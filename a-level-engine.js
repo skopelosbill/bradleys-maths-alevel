@@ -51,6 +51,9 @@ const ALevelHub = {
     // ---------------------------------------------
     // CREATE A LEVEL PROBLEM CARD
     // ---------------------------------------------
+    // ---------------------------------------------
+    // CREATE A LEVEL PROBLEM CARD (WITH PI AUDIT)
+    // ---------------------------------------------
     createProblemCard(prob) {
         const card = document.createElement('div');
         card.className = 'daily-widget';
@@ -67,12 +70,33 @@ const ALevelHub = {
             imgHTML = `<img src="${prob.img}" class="question-img" style="margin:20px auto; display:block;">`;
         }
 
+        // Build the PI Options preview HTML
+        let piAuditHTML = '';
+        if (prob.pi_options && Array.isArray(prob.pi_options)) {
+            piAuditHTML = `
+                <div class="pi-audit-container" style="margin-top: 20px; padding: 15px; background: #fff5f5; border-left: 4px solid #ef4444; border-radius: 6px; text-align: left;">
+                    <h4 style="margin: 0 0 10px 0; color: #b91c1c; font-family: 'Merriweather', serif;">Plausibly Incorrect (PI) Options Audit</h4>
+                    ${prob.pi_options.map((opt, idx) => `
+                        <div style="margin-bottom: 12px; font-size: 0.95rem;">
+                            <strong>Distractor ${idx + 1}:</strong> ${opt.ans}
+                            <div style="margin-top: 4px; font-size: 0.85rem; color: #4b5563; font-style: italic; padding-left: 10px; border-left: 2px solid #fca5a5;">
+                                <strong>Feedback:</strong> ${opt.feedback}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
         card.innerHTML = `
             <span class="widget-header">${headerText}</span>
 
             <div class="question-box">${prob.question}</div>
 
             ${imgHTML}
+
+            <!-- Render the PI Options with their feedback right below the question -->
+            ${piAuditHTML}
 
             <div id="action-${prob.id}" style="margin-top:20px;">
                 <button class="reveal-btn" onclick="ALevelHub.revealSolution('${prob.id}')">
