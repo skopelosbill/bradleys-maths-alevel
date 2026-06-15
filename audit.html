@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- OVERRIDES -->
+<meta name="page-title" content="Bradley's Maths – A Level Audit">
+<meta name="page-description" content="Teacher audit page for A Level Maths questions.">
+<meta name="page-url" content="https://alevel.bradleysmaths.co.uk/audit.html">
+<meta name="page-og-image" content="/images/social-preview.png">
+<meta name="page-type" content="webpage">
+<meta name="robots" content="noindex, nofollow">
+
+<head>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Basic SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DEFAULTS -->
+    <title>Bradley's Maths</title>
+    <meta name="description" content="A Level Maths resources and audit tools.">
+
+    <!-- Canonical -->
+    <link id="canonical-link" rel="canonical" href="">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Bradley's Maths">
+    <meta property="og:image" content="">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- MathJax -->
+    <script>
+      window.MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\`\(^\prime, ^\prime\\)`']] },
+        svg: { fontCache: 'global' }
+      };
+    </script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+    <!-- JSON-LD -->
+    <script id="jsonld-block" type="application/ld+json"></script>
+
+    <!-- META SCRIPT -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const title = document.querySelector('meta[name="page-title"]')?.content || "Bradley's Maths";
+        const desc = document.querySelector('meta[name="page-description"]')?.content || "";
+        const url = document.querySelector('meta[name="page-url"]')?.content || window.location.href;
+        const img = document.querySelector('meta[name="page-og-image"]')?.content || "/images/social-preview.png";
+        const type = document.querySelector('meta[name="page-type"]')?.content || "webpage";
+
+        document.title = title;
+        document.querySelector('meta[name="description"]').setAttribute("content", desc);
+        document.getElementById("canonical-link").setAttribute("href", url);
+
+        document.querySelector('meta[property="og:title"]').setAttribute("content", title);
+        document.querySelector('meta[property="og:description"]').setAttribute("content", desc);
+        document.querySelector('meta[property="og:url"]').setAttribute("content", url);
+        document.querySelector('meta[property="og:image"]').setAttribute("content", img);
+        document.querySelector('meta[property="og:type"]').setAttribute("content", type);
+
+        document.getElementById("jsonld-block").textContent = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": title,
+          "url": url
+        }, null, 2);
+      });
+    </script>
+</head>
+
+<body>
+
+    <div class="audit-header" style="background:#e8f0fe; padding:20px; border-bottom:3px solid #3367d6; text-align:center;">
+        <h1 style="margin:0; color:#1a3d8f;">A Level Teacher Audit Mode</h1>
+    </div>
+
+    <main id="audit-container" class="container" style="margin-top:30px;">
+        <!-- A Level questions will appear here -->
+    </main>
+
+    <!-- ENGINE -->
+    <script src="a-level-engine.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            ALevelHub.init();
+        });
+    </script>
+
+</body>
+</html>
