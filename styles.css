@@ -1,0 +1,1394 @@
+/* ========================= */
+/* BASE STYLES */
+/* ========================= */
+:root {
+    /* PRIMARY COLORS */
+    --brand-purple: #7c3aed;       /* The strong button purple */
+    --brand-purple-dark: #4c1d95;  /* The deep navbar purple */
+    --brand-purple-light: #e9d5ff; /* Soft lavender for nav links */
+    
+    /* THE GREEN EQUIVALENT */
+    --brand-green: #10b981;        /* A vivid emerald that matches the purple weight */
+    --brand-green-light: #e8f8f5;  /* For the 'Free' row backgrounds */
+
+    /* AUBERGINE WHITE */
+    --aubergine-white: #f9f8ff;    /* White with the mearest hint of purple */
+    
+    /* TEXT & SURFACES */
+    --text-main: #1f1f1f;
+    --text-muted: #6b6475;
+    --card-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+    --aubergine-white: #12101a;  /* Deep Aubergine Black */
+    --text-main: #f9f8ff;        /* Text becomes Aubergine White */
+    --card-bg: #1e1b29;          /* Slightly lighter black for cards */
+    --brand-purple: #a78bfa;     /* Lighter purple for readability */
+    --brand-purple-dark: #c4b5fd;
+    --brand-green-light: #064e3b; /* Deep forest green for dark mode free rows */
+}
+
+/* Invert all diagrams and thumbnails so they don't glow white */
+[data-theme="dark"] img {
+    filter: invert(0.9) hue-rotate(180deg);
+}
+
+/* THE MAGIC INVERTER: This handles your maths diagrams and thumbnails */
+[data-theme="dark"] img:not(.nav-brand img) {
+    filter: invert(0.9) hue-rotate(180deg) brightness(1.1);
+}
+
+/* Ensure the navbar stays dark and distinct */
+[data-theme="dark"] .navbar {
+    background-color: #0a090f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* ========================= */
+/* BASE STYLES */
+/* ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-main);
+    background-color: var(--aubergine-white); /* Replaces the gradient for consistency */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* ========================= */
+/* NAVIGATION BAR */
+/* ========================= */
+
+.navbar {
+    background-color: #4c1d95;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.5px;
+    color: var(--aubergine-white);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--aubergine-white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.nav-links a.primary,
+.dropbtn.primary {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+/* ========================= */
+/* DROPDOWNS */
+/* ========================= */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: #e9d5ff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 10px 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 5px;
+    overflow: visible;
+    top: 40px;
+}
+
+.dropdown-content a {
+    color: #4c1d95;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #f3f4f6;
+    color: #3b82f6;
+}
+
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+.dropdown .dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown .dropdown-content {
+    left: 100%;
+    top: 0 !important;
+    margin-left: 1px; /* prevents overlap */
+
+}
+
+.dropdown .dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+
+/* ========================= */
+/* MOBILE NAVIGATION */
+/* ========================= */
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--aubergine-white);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #4c1d95;
+        padding: 20px 0;
+        gap: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+        z-index: 1001;
+    }
+
+    .nav-links a,
+    .dropbtn {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        display: block;
+    }
+
+    .dropdown {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        background-color: #4c1d95;
+    }
+
+    .dropdown-content a {
+        color: #e9d5ff;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}
+
+
+/* ========================= */
+/* PAGE CONTENT */
+/* ========================= */
+
+.container {
+    max-width: 900px;
+    padding: 40px 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container p {
+    line-height: 1.6;
+    color: #3b2f4a;
+    font-size: 1rem;
+}
+
+/* Bradley's Maths - Professional Credential Bar */
+.credential-bar {
+    background-color: var(--aubergine-white);
+    border-bottom: 2px solid #e2e8f0;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.85rem;
+    color: #334155;
+    letter-spacing: 0.5px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.05); /* Subtle depth */
+}
+
+.credential-bar span {
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .credential-bar span {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+.section-intro {
+    margin-bottom: 40px;
+}
+
+.info-panel {
+    margin-top: 30px;
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.info-panel h3 {
+    margin-top: 0;
+}
+
+.trust-badge {
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+    color: #6b6475;
+    display: block;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.question {
+    background-color: #f3f0ff;
+    border-left: 5px solid #4b1c95;
+    padding: 20px;
+    margin: 25px 0;
+}
+
+.solution {
+    background-color: #ebe6ff;
+    border-left: 5px solid #4b1c95;
+    padding: 20px;
+    margin: 25px 0;
+}
+
+.video {
+    text-align: center;
+}
+
+.video iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  text-align: center;
+}
+
+.content a {
+  color: #6a0dad; /* your purple theme */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* HEADINGS */
+/* ========================= */
+
+h1 {
+    font-size: 3rem;
+    margin: 40px 0 10px;
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+    color: var(--brand-purple-dark);
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #4c1d95;
+    font-family: 'Merriweather', serif;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 300;
+    
+    padding-bottom: 6px;
+    font-family: 'Merriweather', serif;
+    color: #4c1d95;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+.headcenter {
+    text-align:center;
+}
+
+.gold-heading {
+    color: #ffd700;
+    border-bottom: 1px solid #ffd700;
+}
+
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+
+
+
+.btn-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.btn{
+    display:inline-block;
+    background:#7c3aed;
+    color:white;
+    padding:18px 34px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    text-align:center;
+    transition:all 0.2s ease;
+}
+
+.btn:hover{
+    background:#6d28d9;
+    transform:translateY(-2px);
+}
+
+.btn-large{
+    font-size:1.2rem;
+    padding:22px 40px;
+}
+
+.btn-sub{
+    display:block;
+    font-size:0.85rem;
+    margin-top:4px;
+    opacity:0.85;
+}
+
+.button-feature {
+    margin-top: 15px;
+}
+
+.btn-gcse{
+    background:#7c3aed;
+}
+
+.btn-igcse {
+    background: var(--brand-purple); /* Changed from Orange to Purple */
+}
+
+/* The 'Master This Topic' Button */
+.btn-buy {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: var(--brand-purple-dark); /* Changed from Blue to Purple */
+    color: #ffffff !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+}
+
+.btn-buy:hover {
+    background-color: #1e3a8a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-theme {
+    background: none;
+    border: 1px solid var(--brand-purple-light);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-theme:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+}
+
+/* In Dark Mode, adjust the button border color */
+[data-theme="dark"] .btn-theme {
+    border-color: var(--brand-purple);
+}
+
+/* Container for centering the button */
+.nudge-container {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* GCSE BUTTONS */
+
+.btn-number { background-color: #00e30b; color: white; border: 2px solid #00e30b; }
+.btn-algebra { background-color: #0404e0; color: white; border: 2px solid #0404e0; }
+.btn-geometry { background-color: #dee019; color: #575739; border: 2px solid #dee019; }
+.btn-prob-and-stats { background-color: #00FFFF; color: #575739; border: 2px solid #00FFFF; }
+.btn-complete { background-color: #000000; color: #ffd700; border: 2px solid #ffd700; }
+
+.btn-exam-a { background-color: #ffffff; color: #4c1d95; border: 2px solid #4c1d95; }
+.btn-exam-b { background-color: #e9d5ff; color: #4c1d95; border: 2px solid #4c1d95; }
+.btn-exam-c { background-color: #4c1d95; color: #ffffff; border: 2px solid #ffffff; }
+.btn-exam-bundle { background-color: #ffd700; color: #000000; border: 2px solid #000000; font-size: 1.1rem; }
+
+
+/* IGCSE BUTTONS */
+
+.btn-primary { background-color: #f59e0b; color: white; border: 2px solid #f59e0b; }
+.btn-free { background-color: transparent; color: #4c1d95; border: 2px solid #4c1d95; width: 280px; font-size: 0.9rem; }
+.btn-shop { background-color: #ffffff; color: #4c1d95; }
+.btn-youtube { background-color: #cc0000; color: white; }
+
+
+/* ========================= */
+/* DAILY QUESTION WIDGET */
+/* ========================= */
+
+.daily-widget {
+    background-color: white;
+    color: #2a2233;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px 0 20px;
+    box-shadow: 0 10px 28px rgba(76, 29, 149, 0.10);
+    text-align: left;
+    min-height: 200px;
+}
+
+.widget-header {
+    background-color: #fbfaff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.question-box {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.question-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.step-container {
+    margin-top: 15px;
+    border-top: 1px dashed #ccc;
+    padding-top: 15px;
+}
+
+.step {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.step-text {
+    font-weight: bold;
+    color: #4c1d95;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.reveal-btn {
+    background: #4c1d95;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.reveal-btn:hover {
+    background: #3b1674;
+}
+
+.topics {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.topics h3 {
+    margin-top: 0;
+}
+
+.topics ul {
+    margin: 10px 0 0 20px;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 700px;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+.video {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.diagram {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.diagram img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: white;
+  padding: 10px;
+}
+
+.buy-button:hover {
+    background-color: #1e3a8a;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/*========================= */
+/*  Resource Grid */
+/*========================= */
+
+.resource-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+    margin-top:40px;
+}
+
+.resource-card {
+    background: white;
+    border-radius: 10px;
+    border-top: 4px solid #5b3a8e;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.btn-purple{
+    background:#7c3aed;
+    color:white;
+    padding:12px 24px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.btn-purple:hover {
+    background-color: #4b2f75;
+}
+
+.btn-outline:hover {
+    background-color: #5b3a8e;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .resource-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+/* Pink-purple small titles */
+.topic-toggle {
+    background: none;
+    border: none;
+    color: #5b3a8e;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 6px 0;
+    text-align: left;
+    width: 100%;
+}
+
+/* Dropdown panel styled like a mini-card */
+.dropdown-panel {
+    display: none;
+    background: #faf7ff;
+    padding: 14px 16px;
+    margin-top: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+
+/* Slide-down animation */
+.topic-section.open .dropdown-panel {
+    display: block;
+    animation: slideDown 0.25s ease-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dropdown list */
+.dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-list li {
+    margin: 6px 0;
+}
+
+.dropdown-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-list a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+
+    .blog-container {
+        padding: 0 12px;
+        gap: 20px;
+    }
+
+    .question,
+    .solution {
+        padding: 16px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+}
+
+/* ========================= */
+/*insight boxes*/
+/* ========================= */
+
+/* Bradley's Maths - Expert Insight Boxes */
+.bradley-insight-box {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 6px solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+/* Pro-Tip (Blue) */
+.insight-pro-tip {
+    background-color: #b8d2fc;
+    border-color: #4169e1;
+    color: #0d47a1;
+}
+
+/* Caution/Warning (Yellow) */
+.insight-caution {
+    background-color: #fffde7;
+    border-color: #ffb300;
+    color: #f57f17;
+}
+
+/* Deeper Insight (Violet) */
+.insight-deeper {
+    background-color: #f3e5f5;
+    border-color: #7b1fa2;
+    color: #4a148c;
+}
+
+.insight-title {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+}
+
+/* ========================= */
+/* Mastery-Library */
+/* ========================= */
+
+ .library-container { 
+     max-width: 1100px; 
+     margin: 40px auto; 
+     padding: 0 20px; 
+     font-family: 'Merriweather', 
+         serif; 
+ }
+
+section[id] {
+    scroll-margin-top: 100px; /* Adjust this value to match the height of your header */
+}
+
+    .bundle-upsell { 
+        background: #fdf2e9; 
+        border: 2px solid #e67e22; 
+        padding: 25px; 
+        border-radius: 8px; 
+        margin-bottom: 50px; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+    }
+        .upsell-text h3 { 
+        margin: 0; 
+        color: #d35400; 
+        font-size: 1.4em; 
+    }
+
+        .mastery-table { 
+        width: 100%; 
+        border-collapse: collapse; 
+        margin-top: 20px; 
+        font-size: 0.95em; 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    }
+
+        .mastery-table thead tr { 
+        background: #7c3aed;
+        color: #ffffff; 
+        text-align: left; 
+    }
+
+        .mastery-table th, .mastery-table td { 
+        padding: 12px 15px; 
+        border-bottom: 1px solid #eee; 
+    }
+
+        .mastery-table tbody tr:nth-of-type(even) { 
+        background-color: #f9f9f9; 
+    }
+
+        .mastery-table tbody tr:hover { 
+        background-color: #f1f1f1; 
+        transition: 0.2s; 
+    }
+
+        .dl-btn { 
+        background: #7c3aed; 
+        color: white; 
+        padding: 6px 12px; 
+        border-radius: 4px; 
+        text-decoration: none; 
+        font-weight: bold; 
+        font-size: 0.85em; 
+        display: inline-block; 
+    }
+
+        .dl-btn:hover { 
+        background: #2980b9; 
+    }
+
+        .free-tag { 
+        background: #27ae60; 
+        color: white; 
+        padding: 2px 8px; 
+        border-radius: 3px; 
+        font-size: 0.7em; 
+        vertical-align: middle;
+        margin-left: 8px; 
+        text-transform: uppercase; 
+    }
+        
+        @media screen and (max-width: 600px) {
+            .mastery-table thead { 
+            display: none; 
+        }
+            
+            .mastery-table, .mastery-table tbody, .mastery-table tr, .mastery-table td { 
+            display: block; width: 100%; 
+        }
+            
+            .mastery-table tr { 
+            margin-bottom: 15px; 
+            border: 1px solid #ddd; 
+        }
+            
+            .mastery-table td { 
+            text-align: right; 
+            padding-left: 50%; 
+            position: relative; 
+        }
+            
+            .mastery-table td::before { 
+            content: attr(data-label); 
+            position: absolute; 
+            left: 15px; 
+            width: 45%; 
+            font-weight: bold; 
+            text-align: left; 
+        }
+    }
+
+/* Smooth Scrolling for Anchor Links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Library Navigation Bar */
+.library-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    font-family: 'Merriweather', serif;
+}
+
+.library-nav-label {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-right: 10px;
+}
+
+.library-nav a {
+    text-decoration: none;
+    color: var(--brand-purple);
+    border: 1px solid var(--brand-purple);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.library-nav a:hover {
+     background-color: var(--brand-purple);
+    color: #ffffff;
+}
+
+/* Offset for Anchor Links (prevents the header from covering the title) */
+h2[id] {
+    scroll-margin-top: 40px;
+}
+
+/* ========================= */
+/* IPHONE & SMALL MOBILE OPTIMIZATION */
+/* ========================= */
+
+@media (max-width: 480px) {
+    /* Reduce the massive heading size for mobile */
+    h1 {
+        font-size: 2rem; 
+        margin: 30px 0 10px;
+    }
+
+    /* Ensure the brand name doesn't wrap or overlap the hamburger */
+    .nav-brand {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+
+    /* Tighten padding slightly to give text more room to flow */
+    .content {
+        padding: 15px;
+    }
+
+    /* Adjust the spacing in lists for better readability */
+    .content ul {
+        padding-left: 20px;
+    }
+
+    .content li {
+        margin-bottom: 12px;
+    }
+
+    /* Ensure the Navbar height remains consistent */
+    .navbar {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    /* Align the mobile menu trigger with the new navbar height */
+    @media (max-width: 768px) {
+        .nav-links {
+            top: 60px;
+        }
+    }
+}
+
+/* ========================= */
+/* IPHONE & MOBILE POST OPTIMIZATION */
+/* ========================= */
+
+/* Fix the typo from the previous block first */
+.headcenter {
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    /* 1. Scale headings for smaller screens */
+    h1 {
+        font-size: 1.8rem; /* Scaled down slightly more for long post titles */
+        margin: 20px 0 10px;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    /* 2. Fix MathJax Overflow - THE MOST IMPORTANT PART */
+    /* This prevents long equations from pushing the whole page sideways */
+    .question, 
+    .solution, 
+    .bradley-insight-box {
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 15px; /* Slightly tighter padding on mobile */
+        margin: 15px 0;
+    }
+
+    /* 3. Adjust Navigation for narrow phones */
+    .nav-brand {
+        font-size: 1.1rem;
+    }
+    
+    .navbar {
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    .nav-links {
+        top: 60px;
+    }
+
+    /* 4. Blog Container Spacing */
+    .blog-container {
+        margin: 10px auto;
+        padding: 0 10px;
+    }
+
+    /* 5. Ensure images in posts don't overflow */
+    .diagram img {
+        padding: 5px;
+    }
+
+    /* 6. Nudge buttons for thumb-tapping */
+    .btn-buy {
+        width: 100%; /* Make button full width on small phones */
+        text-align: center;
+    }
+}
+
+/* ========================= */
+/* Hub */
+/* ========================= */
+/* Revision Hub Specific Styling */
+.hub-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hub-stats {
+    background: #e8f4fd;
+    color: #2c3e50;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.menu-btn {
+    background: #f8f9fa;
+    border: 2px solid #2c3e50;
+    color: #2c3e50;
+    padding: 20px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.menu-btn:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+.menu-btn.random {
+    background: #2c3e50;
+    color: white;
+    grid-column: 1 / -1; /* Makes the random button full width */
+}
+
+.arena-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 4px;
+}
+
+.secondary {
+    background: #95a5a6 !important;
+    border-color: #7f8c8d !important;
+}
+.problem-card {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+.card-q {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.toggle-btn {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.card-sol {
+    margin-top: 20px;
+    background: #fdfdfd;
+    padding: 15px;
+}
+
+.step-text {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.insight-box {
+    background: #fff9c4; /* Soft teacher-yellow */
+    border-left: 4px solid #fbc02d;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 0.95rem;
+}
+
+.hub-buy-btn {
+    display: block;
+    text-align: center;
+    background: #27ae60;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+/* ========================= */
+/* REVISION HUB */
+/* ========================= */
+/* Half-width card layout */
+.resource-card.half-width {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Pink-purple title buttons */
+.topic-toggle.small-purple {
+    background: none;
+    border: none;
+    color: #b041c6; /* your pinky-purple */
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 6px 0;
+    text-align: left;
+    width: 100%;
+}
+
+/* Dropdown panel (hidden by default) */
+.dropdown-panel {
+    display: none;
+    padding-left: 10px;
+    margin-top: 4px;
+}
+
+/* Dropdown list */
+.dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-list li {
+    margin: 4px 0;
+}
+
+.dropdown-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-list a:hover {
+    text-decoration: underline;
+}
+
+/* Slide-down animation */
+.topic-section.open .dropdown-panel {
+    display: block;
+    animation: slideDown 0.25s ease-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========================= */
+/* MCQ BUTTONS */
+/* ========================= */
+
+/* --- MCQ BUTTONS --- */
+.mcq-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.mcq-btn {
+    padding: 12px 16px;
+    background: #f3f4f6;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.mcq-btn:hover {
+    background: #e5e7eb;
+}
+
+/* --- FEEDBACK BOX --- */
+.feedback-box {
+    margin-top: 20px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* --- REVEAL BUTTON --- */
+.reveal-btn {
+    margin-top: 20px;
+    padding: 12px 16px;
+    background: var(--brand-purple);
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.reveal-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer {
+    margin-top: 50px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: #a78bfa;
+}
+
+.footer .btn {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+}
