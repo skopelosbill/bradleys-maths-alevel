@@ -183,5 +183,181 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Two-Step Simplification",
             "content": "With multiple terms containing your target constant (both $3px^2$ and $-3p$), group all constant terms together and all variable terms together before attempting to solve. Keeping your workspaces separate prevents simple algebraic slips."
         }
+    },
+    {
+  "id": "004006",
+  "major_area": "Algebra & Functions",
+  "topic": "Small Angle Approximations",
+  "subtopics": ["Small Angle Approximation"],
+  "img": "/image/p1/004006.png"
+  "q": "Figure A shows a sketch of the curve $y = \\sin x$, where $x$ is measured in radians.<br>A copy of the sketch is provided in Diagram A.<br><br>(a) Use Diagram A to explain why the equation $$\\sin x - 2x + \\tfrac14 = 0$$ has exactly one real root.<br>(b) Let the root be $\\beta$. Given that $\\beta$ is small, use the small-angle approximation for $\\sin x$ to estimate the value of $\\beta$ to 3 decimal places.",
+  "steps": [
+    "From the diagram, the curve $y = \\sin x$ starts at the origin with gradient 1, while the line $y = 2x - \\tfrac14$ starts below the curve and has a steeper gradient.",
+    "Because the line is steeper, it crosses the curve once for a small positive value of $x$, and afterwards the line increases without bound while $\\sin x$ remains between $-1$ and $1$.",
+    "Therefore the equation has exactly one real root.",
+    "Using the small-angle approximation $\\sin x \\approx x$, substitute into the equation: $$x - 2x + \\tfrac14 = 0.$$",
+    "Simplifying gives $$-x + \\tfrac14 = 0 \\implies x = \\tfrac14.$$",
+    "Final Answer: $$\\beta \\approx 0.250.$$"
+  ],
+  "pi_options": [
+    {
+      "ans": "$$\\beta = 0.125$$",
+      "feedback": "You halved the constant term incorrectly. The equation becomes $-x + \\tfrac14 = 0$, not $-2x + \\tfrac14 = 0$."
+    },
+    {
+      "ans": "$$\\beta = 0.500$$",
+      "feedback": "You added the $x$ terms instead of subtracting them. The expression is $x - 2x$, which equals $-x$."
+    },
+    {
+      "ans": "$$\\beta = -0.250$$",
+      "feedback": "A negative root would require the line to start above the curve, which the diagram shows is not the case."
     }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Keep the Linear Terms Alive",
+    "content": "When using small-angle approximations, ensure the linear terms do not cancel. If they do, the approximation becomes useless and you must include higher-order terms."
+  }
+},
+{
+  "id": "004007",
+  "major_area": "Algebra & Functions",
+  "topic": "Small Angle Approximations",
+  "subtopics": ["Small Angle Approximation"],
+  "img":   "img": "/image/p1/004007.png"
+  "q": "Figure B shows a sketch of the curve $y = \\tan x$ for values of $x$ close to zero.<br>A copy of the sketch is provided in Diagram B.<br><br>(a) Use Diagram B to explain why the equation $$\\tan x - 3x + 0.2 = 0$$ has exactly one real root in the interval $-0.5 < x < 0.5$.<br>(b) Let the root be $\\gamma$. Given that $\\gamma$ is small, use the small-angle approximation for $\\tan x$ to estimate the value of $\\gamma$ to 3 decimal places.",
+  "steps": [
+    "From the diagram, $y = \\tan x$ is increasing and passes through the origin with gradient 1.",
+    "The line $y = 3x - 0.2$ is steeper and starts below the curve at $x = 0$.",
+    "The two graphs cross exactly once in the interval shown, so the equation has exactly one real root.",
+    "Using the small-angle approximation $\\tan x \\approx x$, substitute into the equation: $$x - 3x + 0.2 = 0.$$",
+    "Simplifying gives $$-2x + 0.2 = 0 \\implies x = 0.1.$$",
+    "Final Answer: $$\\gamma \\approx 0.100.$$"
+  ],
+  "pi_options": [
+    {
+      "ans": "$$\\gamma = 0.200$$",
+      "feedback": "You solved $-x + 0.2 = 0$ instead of $-2x + 0.2 = 0$."
+    },
+    {
+      "ans": "$$\\gamma = -0.100$$",
+      "feedback": "A negative root contradicts the diagram, where the line crosses the curve for a positive $x$."
+    },
+    {
+      "ans": "$$\\gamma = 0.050$$",
+      "feedback": "You divided by 4 instead of 2 when rearranging the equation."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Trust the Gradient",
+    "content": "When comparing a curve and a straight line, the relative steepness near the origin often tells you how many intersections to expect."
+  }
+},
+{
+  "id": "004008",
+  "major_area": "Algebra & Functions",
+  "topic": "Small Angle Approximations",
+  "subtopics": ["Small Angle Approximation"],
+  "img":   "img": "/image/p1/004008.png",
+  "q": "Figure C shows a sketch of the curve $y = \\cos(2x)$, where $x$ is measured in radians.<br>A copy of the sketch is provided in Diagram C.<br><br>(a) Use Diagram C to explain why the equation $$\\cos(2x) - x - \\tfrac13 = 0$$ has exactly one real root.<br>(b) Let the root be $\\delta$. Given that $\\delta$ is small, use the small-angle approximation for $\\cos(2x)$ to estimate the value of $\\delta$ to 3 decimal places.",
+  "steps": [
+    "From the diagram, $y = \\cos(2x)$ starts at 1 when $x = 0$, while the line $y = x + \\tfrac13$ starts at $\\tfrac13$ and increases.",
+    "The curve decreases while the line increases, so they cross once near the origin.",
+    "After this, the line grows without bound while the cosine curve remains between -1 and 1, so there are no further intersections.",
+    "Using the small-angle approximation $\\cos(2x) \\approx 1 - 2x^2$, substitute into the equation: $$1 - 2x^2 - x - \\tfrac13 = 0.$$",
+    "Simplifying gives $$2x^2 + x - \\tfrac23 = 0.$$",
+    "Solving the quadratic gives $$x = \\frac{-1 + \\sqrt{19/3}}{4} \\approx 0.379.$$",
+    "Final Answer: $$\\delta \\approx 0.379.$$"
+  ],
+  "pi_options": [
+    {
+      "ans": "$$\\delta = 0.189$$",
+      "feedback": "You halved the quadratic coefficient incorrectly when applying the quadratic formula."
+    },
+    {
+      "ans": "$$\\delta = -0.379$$",
+      "feedback": "The negative root is not valid because the diagram shows the intersection occurring for positive $x$."
+    },
+    {
+      "ans": "$$\\delta = 0.500$$",
+      "feedback": "You used $\\cos(2x) \\approx 1$ and ignored the $x$ and $x^2$ terms, which is not appropriate here."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Quadratics from Approximations",
+    "content": "When approximating cosine near zero, the resulting equation often becomes quadratic. Solving it carefully is essential for an accurate estimate."
+  }
+},
+{
+  "id": "004009",
+  "major_area": "Algebra & Functions",
+  "topic": "Small Angle Approximations",
+  "subtopics": ["Small Angle Approximation"],
+  "img":   "img": "/image/p1/004009.png",
+  "q": "Figure D shows a sketch of the curve $y = e^{-x}$, where $x$ is measured in radians.<br>A copy of the sketch is provided in Diagram D.<br><br>(a) Use Diagram D to explain why the equation $$e^{-x} - 1.5x - 0.8 = 0$$ has exactly one real root.<br>(b) Let the root be $\\varepsilon$. Given that $\\varepsilon$ is small, use the small-angle approximation for $e^{-x}$ to estimate the value of $\\varepsilon$ to 3 decimal places.",
+  "steps": [
+    "From the diagram, $y = e^{-x}$ decreases from 1 as $x$ increases, while the line $y = 1.5x + 0.8$ increases.",
+    "The two graphs cross once near the origin and do not meet again because the exponential decays while the line grows without bound.",
+    "Using the small-angle approximation $e^{-x} \\approx 1 - x$, substitute into the equation: $$1 - x - 1.5x - 0.8 = 0.$$",
+    "Simplifying gives $$0.2 - 2.5x = 0 \\implies x = 0.08.$$",
+    "Final Answer: $$\\varepsilon \\approx 0.080.$$"
+  ],
+  "pi_options": [
+    {
+      "ans": "$$\\varepsilon = 0.040$$",
+      "feedback": "You divided by 5 instead of 2.5 when rearranging the equation."
+    },
+    {
+      "ans": "$$\\varepsilon = -0.080$$",
+      "feedback": "A negative root contradicts the diagram, where the line crosses the curve for positive $x$."
+    },
+    {
+      "ans": "$$\\varepsilon = 0.200$$",
+      "feedback": "You forgot to combine the $x$ terms correctly: $-x - 1.5x = -2.5x$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Exponentials Behave Nicely",
+    "content": "Near zero, $e^{-x}$ is almost perfectly linear. This makes small-angle approximations extremely effective for estimating roots."
+  }
+},
+{
+  "id": "004010",
+  "major_area": "Algebra & Functions",
+  "topic": "Small Angle Approximations",
+  "subtopics": ["Small Angle Approximation"],
+  "img":   "img": "/image/p1/004010,png",
+  "q": "Figure E shows a sketch of the curve $y = \\sin(3x) + 0.5$, where $x$ is measured in radians.<br>A copy of the sketch is provided in Diagram E.<br><br>(a) Use Diagram E to explain why the equation $$\\sin(3x) + 0.5 - 2x = 0$$ has exactly one real root.<br>(b) Let the root be $\\zeta$. Given that $\\zeta$ is small, use the small-angle approximation for $\\sin(3x)$ to estimate the value of $\\zeta$ to 3 decimal places.",
+  "steps": [
+    "From the diagram, $y = \\sin(3x) + 0.5$ starts at 0.5 with initial gradient about 3, while the line $y = 2x$ starts at the origin with gradient 2.",
+    "The curve begins above the line and crosses it once for a small negative value of $x$.",
+    "After this, the line continues to increase while the curve oscillates, so there are no further intersections.",
+    "Using the small-angle approximation $\\sin(3x) \\approx 3x$, substitute into the equation: $$3x + 0.5 - 2x = 0.$$",
+    "Simplifying gives $$x + 0.5 = 0 \\implies x = -0.5.$$",
+    "Final Answer: $$\\zeta \\approx -0.500.$$"
+  ],
+  "pi_options": [
+    {
+      "ans": "$$\\zeta = 0.500$$",
+      "feedback": "The diagram shows the intersection occurring for a negative value of $x$, not a positive one."
+    },
+    {
+      "ans": "$$\\zeta = -0.250$$",
+      "feedback": "You halved the constant term incorrectly. The equation is $x + 0.5 = 0$, not $2x + 0.5 = 0$."
+    },
+    {
+      "ans": "$$\\zeta = -1.000$$",
+      "feedback": "You doubled the constant term incorrectly when rearranging the equation."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Oscillation vs Linearity",
+    "content": "When a sinusoidal curve is shifted vertically, its first intersection with a straight line often occurs very close to the origin. Small-angle approximations capture this behaviour neatly."
+  }
+}
+
 ];
