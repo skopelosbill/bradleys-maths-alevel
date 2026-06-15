@@ -4,8 +4,7 @@ const problemBank = [
         "major_area": "Algebra & Functions",
         "topic": "Polynomials",
         "subtopics": [
-            "Factor Theorem",
-            "Linear Equations"
+            "Factor Theorem"
         ],
         "img": false,
         "q": "Let $\\text{f}(x) = 2x^3 - kx^2 + 5x + 3k$.<br>Given that $(x - 2)$ is a factor of $\\text{f}(x)$, find the value of the constant $k$.",
@@ -42,8 +41,7 @@ const problemBank = [
         "major_area": "Algebra & Functions",
         "topic": "Polynomials",
         "subtopics": [
-            "Factor Theorem",
-            "Linear Equations"
+            "Factor Theorem"
         ],
         "img": false,
         "q": "Let $\\text{f}(x) = 4x^3 + ax^2 - 7x + 2a$.<br>Given that $(x + 2)$ is a factor of $\\text{f}(x)$, find the value of the constant $a$.",
@@ -81,7 +79,6 @@ const problemBank = [
         "topic": "Polynomials",
         "subtopics": [
             "Factor Theorem",
-            "Linear Equations"
         ],
         "img": false,
         "q": "Let $\\text{f}(x) = 3x^3 - 2kx^2 + 5x + 4k$.<br>Given that $(x - 1)$ is a factor of $\\text{f}(x)$, find the value of the constant $k$.",
@@ -118,8 +115,7 @@ const problemBank = [
         "major_area": "Algebra & Functions",
         "topic": "Polynomials",
         "subtopics": [
-            "Factor Theorem",
-            "Linear Equations"
+            "Factor Theorem"
         ],
         "img": false,
         "q": "Let $\\text{f}(x) = 2x^3 - ax^2 - 8x + 3a$.<br>Given that $(x - 3)$ is a factor of $\\text{f}(x)$, find the value of the constant $a$.",
@@ -156,8 +152,7 @@ const problemBank = [
         "major_area": "Algebra & Functions",
         "topic": "Polynomials",
         "subtopics": [
-            "Factor Theorem",
-            "Linear Equations"
+            "Factor Theorem"
         ],
         "img": false,
         "q": "Let $\\text{f}(x) = 2x^3 + 3px^2 - 2x - 3p$.<br>Given that $(x + 3)$ is a factor of $\\text{f}(x)$, find the value of the constant $p$.",
