@@ -3,11 +3,11 @@ window.ALEVEL_QUESTIONS = [
         "id": "004001",
         "major_area": "Algebra & Functions",
         "topic": "Polynomials",
-        "subtopics": [
+        "subtopic": [
             "Factor Theorem"
         ],
         "img": false,
-        "q": "Let $\\text{f}(x) = 2x^3 - kx^2 + 5x + 3k$.<br>Given that $(x - 2)$ is a factor of $\\text{f}(x)$, find the value of the constant $k$.",
+        "question": "Let $\\text{f}(x) = 2x^3 - kx^2 + 5x + 3k$.<br>Given that $(x - 2)$ is a factor of $\\text{f}(x)$, find the value of the constant $k$.",
         "steps": [
             "According to the **Factor Theorem**, if $(x - 2)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = 2$ must equal zero: $\\text{f}(2) = 0$.",
             "We substitute $x = 2$ into the expression for $\\text{f}(x)$:<br>$$\\text{f}(2) = 2(2)^3 - k(2)^2 + 5(2) + 3k$$",
@@ -40,13 +40,13 @@ window.ALEVEL_QUESTIONS = [
         "id": "004002",
         "major_area": "Algebra & Functions",
         "topic": "Polynomials",
-        "subtopics": [
+        "subtopic": [
             "Factor Theorem"
         ],
         "img": false,
-        "q": "Let $\\text{f}(x) = 4x^3 + ax^2 - 7x + 2a$.<br>Given that $(x + 2)$ is a factor of $\\text{f}(x)$, find the value of the constant $a$.",
+        "question": "Let $\\text{f}(x) = 4x^3 + ax^2 - 7x + 2a$.<br>Given that $(x + 2)$ is a factor of $\\text{f}(x)$, find the value of the constant $a$.",
         "steps": [
-            "According to the <strong>Factor Theorem</strong>, if $(x + 2)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = -2$ must equal zero: $\\text{f}(-2) = 0$.",
+            "According to the **Factor Theorem**, if $(x + 2)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = -2$ must equal zero: $\\text{f}(-2) = 0$.",
             "We substitute $x = -2$ into the expression for $\\text{f}(x)$:<br>$$\\text{f}(-2) = 4(-2)^3 + a(-2)^2 - 7(-2) + 2a$$",
             "Evaluating the powers and simplifying each term (keeping close track of negative signs) gives:<br>$$\\text{f}(-2) = 4(-8) + a(4) + 14 + 2a$$<br>$$\\text{f}(-2) = -32 + 4a + 14 + 2a$$",
             "Combining the numerical terms and the $a$ terms yields:<br>$$(-32 + 14) + (4a + 2a) = 0$$<br>$$-18 + 6a = 0$$",
@@ -77,11 +77,11 @@ window.ALEVEL_QUESTIONS = [
         "id": "004003",
         "major_area": "Algebra & Functions",
         "topic": "Polynomials",
-        "subtopics": [
-            "Factor Theorem",
+        "subtopic": [
+            "Factor Theorem"
         ],
         "img": false,
-        "q": "Let $\\text{f}(x) = 3x^3 - 2kx^2 + 5x + 4k$.<br>Given that $(x - 1)$ is a factor of $\\text{f}(x)$, find the value of the constant $k$.",
+        "question": "Let $\\text{f}(x) = 3x^3 - 2kx^2 + 5x + 4k$.<br>Given that $(x - 1)$ is a factor of $\\text{f}(x)$, find the value of the constant $k$.",
         "steps": [
             "According to the **Factor Theorem**, if $(x - 1)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = 1$ must equal zero: $\\text{f}(1) = 0$.",
             "We substitute $x = 1$ into the expression for $\\text{f}(x)$:<br>$$\\text{f}(1) = 3(1)^3 - 2k(1)^2 + 5(1) + 4k$$",
@@ -114,11 +114,11 @@ window.ALEVEL_QUESTIONS = [
         "id": "004004",
         "major_area": "Algebra & Functions",
         "topic": "Polynomials",
-        "subtopics": [
+        "subtopic": [
             "Factor Theorem"
         ],
         "img": false,
-        "q": "Let $\\text{f}(x) = 2x^3 - ax^2 - 8x + 3a$.<br>Given that $(x - 3)$ is a factor of $\\text{f}(x)$, find the value of the constant $a$.",
+        "question": "Let $\\text{f}(x) = 2x^3 - ax^2 - 8x + 3a$.<br>Given that $(x - 3)$ is a factor of $\\text{f}(x)$, find the value of the constant $a$.",
         "steps": [
             "According to the **Factor Theorem**, if $(x - 3)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = 3$ must equal zero: $\\text{f}(3) = 0$.",
             "We substitute $x = 3$ into the expression for $\\text{f}(x)$:<br>$$\\text{f}(3) = 2(3)^3 - a(3)^2 - 8(3) + 3a$$",
@@ -151,11 +151,11 @@ window.ALEVEL_QUESTIONS = [
         "id": "004005",
         "major_area": "Algebra & Functions",
         "topic": "Polynomials",
-        "subtopics": [
+        "subtopic": [
             "Factor Theorem"
         ],
         "img": false,
-        "q": "Let $\\text{f}(x) = 2x^3 + 3px^2 - 2x - 3p$.<br>Given that $(x + 3)$ is a factor of $\\text{f}(x)$, find the value of the constant $p$.",
+        "question": "Let $\\text{f}(x) = 2x^3 + 3px^2 - 2x - 3p$.<br>Given that $(x + 3)$ is a factor of $\\text{f}(x)$, find the value of the constant $p$.",
         "steps": [
             "According to the **Factor Theorem**, if $(x + 3)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = -3$ must equal zero: $\\text{f}(-3) = 0$.",
             "We substitute $x = -3$ into the expression for $\\text{f}(x)$:<br>$$\\text{f}(-3) = 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p$$",
@@ -184,5 +184,4 @@ window.ALEVEL_QUESTIONS = [
             "content": "With multiple terms containing your target constant (both $3px^2$ and $-3p$), group all constant terms together and all variable terms together before attempting to solve. Keeping your workspaces separate prevents simple algebraic slips."
         }
     }
-
 ];
