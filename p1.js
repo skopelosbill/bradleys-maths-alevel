@@ -1,4 +1,4 @@
-const problemBank = [
+window.ALEVEL_QUESTIONS = [
     {
         "id": "004001",
         "major_area": "Algebra & Functions",
