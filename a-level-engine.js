@@ -21,7 +21,7 @@ const ALevelHub = {
     // ---------------------------------------------
     async loadQuestionBank() {
         try {
-            // p1-questions.js must define: window.ALEVEL_QUESTIONS = [ ... ]
+            // p1.js must define: window.ALEVEL_QUESTIONS = [ ... ]
             if (window.ALEVEL_QUESTIONS && Array.isArray(window.ALEVEL_QUESTIONS)) {
                 this.state.masterVault = window.ALEVEL_QUESTIONS;
             } else {
