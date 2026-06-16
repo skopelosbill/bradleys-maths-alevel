@@ -358,6 +358,201 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: Oscillation vs Linearity",
     "content": "When a sinusoidal curve is shifted vertically, its first intersection with a straight line often occurs very close to the origin. Small-angle approximations capture this behaviour neatly."
   }
-}
+},
+    {
+        "id": "004011",
+        "major_area": "Differentiation",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Quotient Rule"
+        ],
+        "img": false,
+        "question": "A curve has the equation:<br>$$y = \\dfrac{3x^2 + 12x}{(x+2)^2}, \\quad x \\ne -2$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+2)^n}$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for $x$ for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
+        "steps": [
+            "<strong>Part (a):</strong> We begin by identifying the numerator as $u = 3x^2 + 12x$ and the denominator as $v = (x+2)^2$.",
+            "Differentiating both terms with respect to $x$ gives:<br>$$u' = 6x + 12 = 6(x+2)$$<br>$$v' = 2(x+2)$$",
+            "Using the **Quotient Rule**, $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{u'v - uv'}{v^2}$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(6x+12)(x+2)^2 - (3x^2+12x) \\cdot 2(x+2)}{(x+2)^4}$$",
+            "We can factorise out a common term of $(x+2)$ from the numerator to simplify:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(x+2) \\left[ (6x+12)(x+2) - 2(3x^2+12x) \\right]}{(x+2)^4}$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(6x+12)(x+2) - 2(3x^2+12x)}{(x+2)^3}$$",
+            "Expanding and simplifying the remaining terms in the numerator:<br>$$(6x+12)(x+2) = 6x^2 + 24x + 24$$<br>$$2(3x^2+12x) = 6x^2 + 24x$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(6x^2 + 24x + 24) - (6x^2 + 24x)}{(x+2)^3}$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{24}{(x+2)^3}$$<br>Therefore, the constants are $A = 24$ and $n = 3$.",
+            "<strong>Part (b):</strong> For $\\dfrac{\\text{d}y}{\\text{d}x} < 0$:<br>$$\\dfrac{24}{(x+2)^3} < 0$$",
+            "Since the numerator is a positive constant ($24 > 0$), the sign of the fraction is determined entirely by the denominator. Therefore, we require the denominator to be negative:<br>$$(x+2)^3 < 0 \\implies x + 2 < 0 \\implies x < -2$$",
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{24}{(x+2)^3}$$ <strong>(b)</strong> $$x < -2$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{24}{(x+2)^3}$$ <strong>(b)</strong> $$x > -2$$",
+                "feedback": "You probably made an inequality error in Part (b). For the fraction to be negative, the denominator $(x+2)^3$ must be negative. Since an odd power preserves the negative sign, this requires $x + 2 < 0$, which simplifies to $x < -2$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{12x^2 + 48x + 24}{(x+2)^3}$$ <strong>(b)</strong> $$x < -2$$",
+                "feedback": "You probably used the Product Rule formula (adding the two terms in your numerator) instead of the Quotient Rule formula (subtracting them). Check your formula sheet: the numerator must be $u'v - uv'$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{24}{(x+2)^4}$$ <strong>(b)</strong> $$x < -2$$",
+                "feedback": "You forgot to decrease the power of the denominator when cancelling out the common factor of $(x + 2)$ from your numerator. The denominator should be $(x+2)^3$, not $(x+2)^4$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Quotient Rule Cancelling",
+            "content": "When applying the Quotient Rule to functions with a squared denominator like $(x+a)^2$, both terms in your numerator will always contain a common factor of $(x+a)$. Always factorise and cancel this term out first before expanding the rest of the numerator. It saves significant time and prevents algebraic errors."
+        }
+    },
+    {
+        "id": "004012",
+        "major_area": "Differentiation",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Quotient Rule"
+        ],
+        "img": false,
+        "question": "A curve has the equation:<br>$$y = \\dfrac{-4x^2 - 8x}{(x+1)^2}, \\quad x \\ne -1$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+1)^n}$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for $x$ for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
+        "steps": [
+            "<strong>Part (a):</strong> Let $u = -4x^2 - 8x$ and $v = (x+1)^2$.",
+            "Differentiating both terms with respect to $x$ gives:<br>$$u' = -8x - 8 = -8(x+1)$$<br>$$v' = 2(x+1)$$",
+            "Using the **Quotient Rule**, $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{u'v - uv'}{v^2}$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(-8x-8)(x+1)^2 - (-4x^2-8x) \\cdot 2(x+1)}{(x+1)^4}$$",
+            "Factorising out $(x+1)$ from the numerator to simplify:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(x+1) \\left[ (-8x-8)(x+1) - 2(-4x^2-8x) \\right]}{(x+1)^4}$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(-8x-8)(x+1) - 2(-4x^2-8x)}{(x+1)^3}$$",
+            "Expanding and simplifying the remaining terms in the numerator:<br>$$(-8x-8)(x+1) = -8x^2 - 16x - 8$$<br>$$2(-4x^2-8x) = -8x^2 - 16x$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(-8x^2 - 16x - 8) - (-8x^2 - 16x)}{(x+1)^3}$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{-8}{(x+1)^3}$$<br>Therefore, the constants are $A = -8$ and $n = 3$.",
+            "<strong>Part (b):</strong> For $\\dfrac{\\text{d}y}{\\text{d}x} < 0$:<br>$$\\dfrac{-8}{(x+1)^3} < 0$$",
+            "Since the numerator is a negative constant ($-8 < 0$), the fraction will only be negative when the denominator is positive. Therefore, we require:<br>$$(x+1)^3 > 0 \\implies x + 1 > 0 \\implies x > -1$$",
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{-8}{(x+1)^3}$$ <strong>(b)</strong> $$x > -1$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{-8}{(x+1)^3}$$ <strong>(b)</strong> $$x < -1$$",
+                "feedback": "You probably forgot to account for the negative sign in your numerator when setting up your inequality in Part (b). Because $-8$ is negative, the fraction is only negative when the denominator is positive: $(x+1)^3 > 0$, which yields $x > -1$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{-8(2x+1)}{(x+1)^3}$$ <strong>(b)</strong> $$x > -1$$",
+                "feedback": "Check your expanding and signs. When expanding $- (-8x^2 - 16x)$ in the numerator, the double negative turns both terms positive, which cancels out your quadratic and linear terms perfectly."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{8}{(x+1)^3}$$ <strong>(b)</strong> $$x < -1$$",
+                "feedback": "Check your differentiation of $u = -4x^2 - 8x$. The derivative must be $u' = -8x - 8$, not $+8x + 8$. This sign error changed the sign of your constant $A$ from negative to positive."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Negative Inequality Flip",
+            "content": "In Part (b), be exceptionally careful when the numerator is negative. A fraction $\\frac{\\text{numerator}}{\\text{denominator}} < 0$ means the numerator and denominator must have opposite signs. Since the numerator is $-8$ (negative), the denominator must be positive to ensure the overall value is negative."
+        }
+    },
+    {
+        "id": "004013",
+        "major_area": "Differentiation",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Quotient Rule"
+        ],
+        "img": false,
+        "question": "A curve has the equation:<br>$$y = \\dfrac{2x^2 + 12x}{(x+3)^2}, \\quad x \\ne -3$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+3)^n}$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for $x$ for which $\\dfrac{\\text{d}y}{\\text{d}x} > 0$.",
+        "steps": [
+            "<strong>Part (a):</strong> Let $u = 2x^2 + 12x$ and $v = (x+3)^2$.",
+            "Differentiating both terms with respect to $x$ gives:<br>$$u' = 4x + 12 = 4(x+3)$$<br>$$v' = 2(x+3)$$",
+            "Using the **Quotient Rule**, $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{u'v - uv'}{v^2}$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(4x+12)(x+3)^2 - (2x^2+12x) \\cdot 2(x+3)}{(x+3)^4}$$",
+            "Factorising out $(x+3)$ from the numerator to simplify:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(x+3) \\left[ (4x+12)(x+3) - 2(2x^2+12x) \\right]}{(x+3)^4}$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(4x+12)(x+3) - 2(2x^2+12x)}{(x+3)^3}$$",
+            "Expanding and simplifying the remaining terms in the numerator:<br>$$(4x+12)(x+3) = 4x^2 + 24x + 36$$<br>$$2(2x^2+12x) = 4x^2 + 24x$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(4x^2 + 24x + 36) - (4x^2 + 24x)}{(x+3)^3}$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{36}{(x+3)^3}$$<br>Therefore, the constants are $A = 36$ and $n = 3$.",
+            "<strong>Part (b):</strong> For $\\dfrac{\\text{d}y}{\\text{d}x} > 0$:<br>$$\\dfrac{36}{(x+3)^3} > 0$$",
+            "Since the numerator is a positive constant ($36 > 0$), the fraction will only be positive when the denominator is positive. Therefore, we require:<br>$$(x+3)^3 > 0 \\implies x + 3 > 0 \\implies x > -3$$",
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{36}{(x+3)^3}$$ <strong>(b)</strong> $$x > -3$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{36}{(x+3)^3}$$ <strong>(b)</strong> $$x < -3$$",
+                "feedback": "You probably set up your inequality incorrectly in Part (b). For the fraction to be positive ($> 0$), both the numerator and the denominator must have the same sign. Since $36 > 0$, the denominator must be positive: $x + 3 > 0$, which yields $x > -3$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{18}{(x+3)^3}$$ <strong>(b)</strong> $$x > -3$$",
+                "feedback": "Check your expansion of $(4x+12)(x+3)$. The constant term is $12 \\times 3 = 36$, not $18$. Remember to multiply the constants together during your expansion."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{36}{(x+3)^2}$$ <strong>(b)</strong> $$x > -3$$",
+                "feedback": "You forgot to decrease the power of the denominator when cancelling out the common factor of $(x + 3)$ from your numerator. The denominator should be $(x+3)^3$, not $(x+3)^2$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Odd vs Even Powers in Inequalities",
+            "content": "Unlike squared denominators like $(x+3)^2$ which are always positive, cubed denominators like $(x+3)^3$ preserve the sign of their base. This means $(x+3)^3$ will be positive when $x > -3$, and negative when $x < -3$. Always look at the exponent first!"
+        }
+    },
+    {
+        "id": "004014",
+        "major_area": "Differentiation",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Quotient Rule"
+        ],
+        "img": false,
+        "question": "A curve has the equation:<br>$$y = \\dfrac{-3x^2 - 12x}{(x+2)^2}, \\quad x \\ne -2$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+2)^n}$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for $x$ for which $\\dfrac{\\text{d}y}{\\text{d}x} > 0$.",
+        "steps": [
+            "<strong>Part (a):</strong> Let $u = -3x^2 - 12x$ and $v = (x+2)^2$.",
+            "Differentiating both terms with respect to $x$ gives:<br>$$u' = -6x - 12 = -6(x+2)$$<br>$$v' = 2(x+2)$$",
+            "Using the **Quotient Rule**, $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{u'v - uv'}{v^2}$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(-6x-12)(x+2)^2 - (-3x^2-12x) \\cdot 2(x+2)}{(x+2)^4}$$",
+            "Factorising out $(x+2)$ from the numerator to simplify:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(x+2) \\left[ (-6x-12)(x+2) - 2(-3x^2-12x) \\right]}{(x+2)^4}$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(-6x-12)(x+2) - 2(-3x^2-12x)}{(x+2)^3}$$",
+            "Expanding and simplifying the remaining terms in the numerator:<br>$$(-6x-12)(x+2) = -6x^2 - 24x - 24$$<br>$$2(-3x^2-12x) = -6x^2 - 24x$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(-6x^2 - 24x - 24) - (-6x^2 - 24x)}{(x+2)^3}$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{-24}{(x+2)^3}$$<br>Therefore, the constants are $A = -24$ and $n = 3$.",
+            "<strong>Part (b):</strong> For $\\dfrac{\\text{d}y}{\\text{d}x} > 0$:<br>$$\\dfrac{-24}{(x+2)^3} > 0$$",
+            "Since the numerator is a negative constant ($-24 < 0$), the fraction will only be positive when the denominator is negative to produce a positive quotient. Therefore, we require:<br>$$(x+2)^3 < 0 \\implies x + 2 < 0 \\implies x < -2$$",
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{-24}{(x+2)^3}$$ <strong>(b)</strong> $$x < -2$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{-24}{(x+2)^3}$$ <strong>(b)</strong> $$x > -2$$",
+                "feedback": "You probably made a sign error in Part (b). Because your numerator $-24$ is negative, the fraction is only positive when the denominator is negative (since a negative divided by a negative yields a positive quotient). Therefore, $(x+2)^3 < 0$, which yields $x < -2$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{24}{(x+2)^3}$$ <strong>(b)</strong> $$x > -2$$",
+                "feedback": "Check your differentiation of $u = -3x^2 - 12x$. The derivative is $u' = -6x - 12$, not $+6x + 12$. This sign error changed the sign of your constant $A$ from negative to positive."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{-12}{(x+2)^3}$$ <strong>(b)</strong> $$x < -2$$",
+                "feedback": "Check your expansion of $(-6x-12)(x+2)$. The constant term is $-12 \\times 2 = -24$. Make sure you multiply all components of your binomial brackets correctly."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Positive Fraction Logic",
+            "content": "For a fraction to be strictly positive ($> 0$), both the numerator and the denominator must have the same sign. If you find your numerator is negative (like $-24$), your denominator must also be negative. Remembering this basic algebraic sign rule prevents simple mistakes in part (b)."
+        }
+    },
+    {
+        "id": "004015",
+        "major_area": "Differentiation",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Quotient Rule"
+        ],
+        "img": false,
+        "question": "A curve has the equation:<br>$$y = \\dfrac{4x^2 + 8x}{(x+1)^2}, \\quad x \\ne -1$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+1)^n}$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for $x$ for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
+        "steps": [
+            "<strong>Part (a):</strong> Let $u = 4x^2 + 8x$ and $v = (x+1)^2$.",
+            "Differentiating both terms with respect to $x$ gives:<br>$$u' = 8x + 8 = 8(x+1)$$<br>$$v' = 2(x+1)$$",
+            "Using the **Quotient Rule**, $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{u'v - uv'}{v^2}$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(8x+8)(x+1)^2 - (4x^2+8x) \\cdot 2(x+1)}{(x+1)^4}$$",
+            "Factorising out $(x+1)$ from the numerator to simplify:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(x+1) \\left[ (8x+8)(x+1) - 2(4x^2+8x) \\right]}{(x+1)^4}$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(8x+8)(x+1) - 2(4x^2+8x)}{(x+1)^3}$$",
+            "Expanding and simplifying the remaining terms in the numerator:<br>$$(8x+8)(x+1) = 8x^2 + 16x + 8$$<br>$$2(4x^2+8x) = 8x^2 + 16x$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{(8x^2 + 16x + 8) - (8x^2 + 16x)}{(x+1)^3}$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{8}{(x+1)^3}$$<br>Therefore, the constants are $A = 8$ and $n = 3$.",
+            "<strong>Part (b):</strong> For $\\dfrac{\\text{d}y}{\\text{d}x} < 0$:<br>$$\\dfrac{8}{(x+1)^3} < 0$$",
+            "Since the numerator is a positive constant ($8 > 0$), the fraction will only be negative when the denominator is negative. Therefore, we require:<br>$$(x+1)^3 < 0 \\implies x + 1 < 0 \\implies x < -1$$",
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{8}{(x+1)^3}$$ <strong>(b)</strong> $$x < -1$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{8}{(x+1)^3}$$ <strong>(b)</strong> $$x > -1$$",
+                "feedback": "You probably made an inequality boundary error in Part (b). For the fraction to be negative ($< 0$), the denominator $(x+1)^3$ must be negative. Since an odd power preserves the negative sign, this requires $x + 1 < 0$, which yields $x < -1$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{8(2x+1)}{(x+1)^3}$$ <strong>(b)</strong> $$x < -1$$",
+                "feedback": "Check your expanding and term cancellations. When subtracting $2(4x^2 + 8x)$ from your left term expansion ($8x^2 + 16x + 8$), both the $8x^2$ and $16x$ cancel out completely, leaving only the constant $8$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{8}{(x+1)^4}$$ <strong>(b)</strong> $$x < -1$$",
+                "feedback": "You forgot to decrease the power of the denominator when cancelling out the common factor of $(x + 1)$ from your numerator. The denominator should be $(x+1)^3$, not $(x+1)^4$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Spotting algebraic cancellations",
+            "content": "In problems like this, the quadratic and linear terms in your numerator will always cancel out perfectly during expansion, leaving only the constant integer $A$. If you find yourself left with an $x$ or $x^2$ term in the numerator, go back and check your expansion signs immediately!"
+        }
+    }
 
 ];
