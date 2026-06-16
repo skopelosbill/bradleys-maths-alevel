@@ -197,7 +197,7 @@ window.ALEVEL_QUESTIONS = [
     "Therefore the equation has exactly one real root.",
     "Using the small-angle approximation $\\sin x \\approx x$, substitute into the equation: $$x - 2x + \\tfrac14 = 0.$$",
     "Simplifying gives $$-x + \\tfrac14 = 0 \\implies x = \\tfrac14.$$",
-    "Final Answer: $$\\beta \\approx 0.250.$$"
+    "Final Answer: $$\\beta \\approx 0.250.$$ <img src='images/p1/004006_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
   ],
   "pi_options": [
     {
@@ -225,14 +225,14 @@ window.ALEVEL_QUESTIONS = [
   "topic": "Small Angle Approximations",
   "subtopics": ["Small Angle Approximation"],
   "img": "images/p1/004007.png",
-  "question": "Figure B shows a sketch of the curve $y = \\tan x$ for values of $x$ close to zero.<br>A copy of the sketch is provided in Diagram B.<br><br>(a) Use Diagram B to explain why the equation $$\\tan x - 3x + 0.2 = 0$$ has exactly one real root in the interval $-0.5 < x < 0.5$.<br>(b) Let the root be $\\gamma$. Given that $\\gamma$ is small, use the small-angle approximation for $\\tan x$ to estimate the value of $\\gamma$ to 3 decimal places.",
+  "question": "The diagram shows a sketch of the curve $y = \\tan x$ for values of $x$ close to zero.<br>(a) Use the diagram to explain why the equation $$\\tan x - 3x + 0.2 = 0$$ has exactly one real root in the interval $-0.5 < x < 0.5$.<br>(b) Let the root be $\\gamma$. Given that $\\gamma$ is small, use the small-angle approximation for $\\tan x$ to estimate the value of $\\gamma$ to 3 decimal places.",
   "steps": [
     "From the diagram, $y = \\tan x$ is increasing and passes through the origin with gradient 1.",
     "The line $y = 3x - 0.2$ is steeper and starts below the curve at $x = 0$.",
     "The two graphs cross exactly once in the interval shown, so the equation has exactly one real root.",
     "Using the small-angle approximation $\\tan x \\approx x$, substitute into the equation: $$x - 3x + 0.2 = 0.$$",
     "Simplifying gives $$-2x + 0.2 = 0 \\implies x = 0.1.$$",
-    "Final Answer: $$\\gamma \\approx 0.100.$$"
+    "Final Answer: $$\\gamma \\approx 0.100.$$ <img src='images/p1/004007_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
   ],
   "pi_options": [
     {
@@ -260,7 +260,7 @@ window.ALEVEL_QUESTIONS = [
   "topic": "Small Angle Approximations",
   "subtopics": ["Small Angle Approximation"],
   "img": "images/p1/004008.png",
-  "question": "Figure C shows a sketch of the curve $y = \\cos(2x)$, where $x$ is measured in radians.<br>A copy of the sketch is provided in Diagram C.<br><br>(a) Use Diagram C to explain why the equation $$\\cos(2x) - x - \\tfrac13 = 0$$ has exactly one real root.<br>(b) Let the root be $\\delta$. Given that $\\delta$ is small, use the small-angle approximation for $\\cos(2x)$ to estimate the value of $\\delta$ to 3 decimal places.",
+  "question": "The diagram shows a sketch of the curve $y = \\cos(2x)$, where $x$ is measured in radians.<br>.(a) Use the diagram to explain why the equation $$\\cos(2x) - x - \\tfrac13 = 0$$ has exactly one real root.<br>(b) Let the root be $\\delta$. Given that $\\delta$ is small, use the small-angle approximation for $\\cos(2x)$ to estimate the value of $\\delta$ to 3 decimal places.",
   "steps": [
     "From the diagram, $y = \\cos(2x)$ starts at 1 when $x = 0$, while the line $y = x + \\tfrac13$ starts at $\\tfrac13$ and increases.",
     "The curve decreases while the line increases, so they cross once near the origin.",
@@ -268,7 +268,7 @@ window.ALEVEL_QUESTIONS = [
     "Using the small-angle approximation $\\cos(2x) \\approx 1 - 2x^2$, substitute into the equation: $$1 - 2x^2 - x - \\tfrac13 = 0.$$",
     "Simplifying gives $$2x^2 + x - \\tfrac23 = 0.$$",
     "Solving the quadratic gives $$x = \\frac{-1 + \\sqrt{19/3}}{4} \\approx 0.379.$$",
-    "Final Answer: $$\\delta \\approx 0.379.$$"
+    "Final Answer: $$\\delta \\approx 0.379.$$ <img src='images/p1/004008_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
   ],
   "pi_options": [
     {
@@ -296,13 +296,13 @@ window.ALEVEL_QUESTIONS = [
   "topic": "Small Angle Approximations",
   "subtopics": ["Small Angle Approximation"],
   "img": "images/p1/004009.png",
-  "question": "Figure D shows a sketch of the curve $y = e^{-x}$, where $x$ is measured in radians.<br>A copy of the sketch is provided in Diagram D.<br><br>(a) Use Diagram D to explain why the equation $$e^{-x} - 1.5x - 0.8 = 0$$ has exactly one real root.<br>(b) Let the root be $\\varepsilon$. Given that $\\varepsilon$ is small, use the small-angle approximation for $e^{-x}$ to estimate the value of $\\varepsilon$ to 3 decimal places.",
+  "question": "The diagram shows a sketch of the curve $y = e^{-x}$, where $x$ is measured in radians.<br>(a) Use the diagram to explain why the equation $$e^{-x} - 1.5x - 0.8 = 0$$ has exactly one real root.<br>(b) Let the root be $\\varepsilon$. Given that $\\varepsilon$ is small, use the small-angle approximation for $e^{-x}$ to estimate the value of $\\varepsilon$ to 3 decimal places.",
   "steps": [
     "From the diagram, $y = e^{-x}$ decreases from 1 as $x$ increases, while the line $y = 1.5x + 0.8$ increases.",
     "The two graphs cross once near the origin and do not meet again because the exponential decays while the line grows without bound.",
     "Using the small-angle approximation $e^{-x} \\approx 1 - x$, substitute into the equation: $$1 - x - 1.5x - 0.8 = 0.$$",
     "Simplifying gives $$0.2 - 2.5x = 0 \\implies x = 0.08.$$",
-    "Final Answer: $$\\varepsilon \\approx 0.080.$$"
+    "Final Answer: $$\\varepsilon \\approx 0.080.$$ <img src='images/p1/004009_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
   ],
   "pi_options": [
     {
@@ -330,14 +330,14 @@ window.ALEVEL_QUESTIONS = [
   "topic": "Small Angle Approximations",
   "subtopics": ["Small Angle Approximation"],
   "img": "images/p1/004010,png",
-  "question": "Figure E shows a sketch of the curve $y = \\sin(3x) + 0.5$, where $x$ is measured in radians.<br>A copy of the sketch is provided in Diagram E.<br><br>(a) Use Diagram E to explain why the equation $$\\sin(3x) + 0.5 - 2x = 0$$ has exactly one real root.<br>(b) Let the root be $\\zeta$. Given that $\\zeta$ is small, use the small-angle approximation for $\\sin(3x)$ to estimate the value of $\\zeta$ to 3 decimal places.",
+  "question": "The diagram shows a sketch of the curve $y = \\sin(3x) + 0.5$, where $x$ is measured in radians.<br>(a) Use the diagram to explain why the equation $$\\sin(3x) + 0.5 - 2x = 0$$ has exactly one real root.<br>(b) Let the root be $\\zeta$. Given that $\\zeta$ is small, use the small-angle approximation for $\\sin(3x)$ to estimate the value of $\\zeta$ to 3 decimal places.",
   "steps": [
     "From the diagram, $y = \\sin(3x) + 0.5$ starts at 0.5 with initial gradient about 3, while the line $y = 2x$ starts at the origin with gradient 2.",
     "The curve begins above the line and crosses it once for a small negative value of $x$.",
     "After this, the line continues to increase while the curve oscillates, so there are no further intersections.",
     "Using the small-angle approximation $\\sin(3x) \\approx 3x$, substitute into the equation: $$3x + 0.5 - 2x = 0.$$",
     "Simplifying gives $$x + 0.5 = 0 \\implies x = -0.5.$$",
-    "Final Answer: $$\\zeta \\approx -0.500.$$"
+    "Final Answer: $$\\zeta \\approx -0.500.$$ <img src='images/p1/004010_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
   ],
   "pi_options": [
     {
