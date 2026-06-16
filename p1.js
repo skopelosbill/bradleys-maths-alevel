@@ -553,6 +553,207 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Spotting algebraic cancellations",
             "content": "In problems like this, the quadratic and linear terms in your numerator will always cancel out perfectly during expansion, leaving only the constant integer $A$. If you find yourself left with an $x$ or $x^2$ term in the numerator, go back and check your expansion signs immediately!"
         }
+    },
+  {
+    "id": "004016",
+    "major_area": "Binomial Expansion",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+      "Negative fractional indices",
+      "Interval of validity",
+      "Approximations"
+    ],
+    "img": false,
+    "question": "A function is defined by:<br>$$f(x) = \\dfrac{1}{\\sqrt{9 - 2x}}.$$<br><strong>(a)</strong> Find the first three terms, in ascending powers of $x$, of the binomial expansion of $f(x)$, giving each coefficient in its simplest form.<br>The expansion can be used to approximate $\\sqrt{3}$. Possible values of $x$ that could be substituted into this expansion are:<br>\\[x = -6, \\quad x = 3, \\quad x = -\\tfrac{1}{2}.\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to an approximation of $\\sqrt{3}$.",
+    "steps": [
+      "<strong>Part (a):</strong> Rewrite $f(x)$ in binomial form by factorising the constant inside the square root:<br>$$f(x) = (9 - 2x)^{-1/2} = \\left[9\\left(1 - \\tfrac{2}{9}x\\right)\\right]^{-1/2} = 9^{-1/2}\\left(1 - \\tfrac{2}{9}x\\right)^{-1/2} = \\tfrac{1}{3}\\left(1 - \\tfrac{2}{9}x\\right)^{-1/2}.$$",
+      "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = -\\tfrac{2}{9}x$:<br>$$\\left(1 - \\tfrac{2}{9}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(-\\tfrac{2}{9}x\\right) + \\tfrac{3}{8}\\left(-\\tfrac{2}{9}x\\right)^2 + \\dots$$<br>$$= 1 + \\tfrac{1}{9}x + \\tfrac{1}{54}x^2 + \\dots$$",
+      "Multiply by the factor $\\tfrac{1}{3}$:<br>$$f(x) \\approx \\tfrac{1}{3}\\left(1 + \\tfrac{1}{9}x + \\tfrac{1}{54}x^2\\right) = \\tfrac{1}{3} + \\tfrac{1}{27}x + \\tfrac{1}{162}x^2.$$<br>So the first three terms are $$\\dfrac{1}{3} + \\dfrac{1}{27}x + \\dfrac{1}{162}x^2.$$",
+      "<strong>Part (b)(i):</strong> The binomial expansion for $(1 - \\tfrac{2}{9}x)^{-1/2}$ is valid when $$\\left|\\tfrac{2}{9}x\\right| < 1 \\implies |x| < 4.5.$$",
+      "Among the given values, $x = -6$ has $|-6| = 6 > 4.5$, so it lies outside the interval of validity. Therefore, $x = -6$ should not be used.",
+      "<strong>Part (b)(ii):</strong> To approximate $\\sqrt{3}$, we need $$f(x) = \\dfrac{1}{\\sqrt{9 - 2x}} = \\dfrac{1}{\\sqrt{3}}.$$ This occurs when $9 - 2x = 3$, so $2x = 6$ and $x = 3$. Thus $x = 3$ is the value that leads to an approximation of $\\sqrt{3}$.",
+      "Final Answer: <strong>(a)</strong> $$f(x) \\approx \\dfrac{1}{3} + \\dfrac{1}{27}x + \\dfrac{1}{162}x^2.$$ <strong>(b)(i)</strong> $x = -6$ should not be used. <strong>(b)(ii)</strong> $x = 3$ gives an approximation of $\\sqrt{3}$."
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $$f(x) \\approx \\dfrac{1}{3} + \\dfrac{1}{27}x + \\dfrac{1}{162}x^2.$$ <strong>(b)(i)</strong> $x = 3$ <strong>(b)(ii)</strong> $x = -\\tfrac{1}{2}$",
+        "feedback": "In part (b)(i), the restriction $|x| < 4.5$ rules out $x = -6$, not $x = 3$. In part (b)(ii), $x = 3$ is the value that makes $9 - 2x = 3$, so it is the one that approximates $\\sqrt{3}$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $$f(x) \\approx \\dfrac{1}{3} + \\dfrac{2}{27}x + \\dfrac{1}{162}x^2.$$ <strong>(b)(i)</strong> $x = -6$ <strong>(b)(ii)</strong> $x = 3$",
+        "feedback": "Your linear coefficient is incorrect. When expanding $(1 - \\tfrac{2}{9}x)^{-1/2}$, the first-order term is $+\\tfrac{1}{9}x$, which becomes $+\\tfrac{1}{27}x$ after multiplying by $\\tfrac{1}{3}$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $$f(x) \\approx \\dfrac{1}{3} + \\dfrac{1}{27}x + \\dfrac{1}{81}x^2.$$ <strong>(b)(i)</strong> $x = -6$ <strong>(b)(ii)</strong> $x = 3$",
+        "feedback": "The quadratic coefficient is too large. Carefully square $-\\tfrac{2}{9}x$ and multiply by $\\tfrac{3}{8}$, then apply the factor $\\tfrac{1}{3}$ to obtain $\\tfrac{1}{162}x^2$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Interval of validity versus target value",
+      "content": "Two separate ideas are at work here: the interval of validity, which controls whether the binomial series converges, and the choice of $x$ that actually produces the number you want to approximate. First check $|x|$ against the convergence condition, then solve the algebraic equation that links your function value to the target number."
     }
+  },
+  {
+    "id": "004017",
+    "major_area": "Binomial Expansion",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+      "Negative fractional indices",
+      "Interval of validity",
+      "Approximations"
+    ],
+    "img": false,
+    "question": "Consider the function:<br>$$g(x) = (5 - x)^{-1/2}.$$<br><strong>(a)</strong> Rewrite $g(x)$ in the form $k(1 + mx)^n$ and hence find the first three terms of its binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{5.2}}$. Possible values of $x$ that could be substituted are:<br>\\[x = -0.2, \\quad x = 1, \\quad x = -6.\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ is outside the interval of validity.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{5.2}}$.",
+    "steps": [
+      "<strong>Part (a):</strong> Factorise the constant from the bracket:<br>$$g(x) = (5 - x)^{-1/2} = \\left[5\\left(1 - \\tfrac{1}{5}x\\right)\\right]^{-1/2} = 5^{-1/2}\\left(1 - \\tfrac{1}{5}x\\right)^{-1/2} = \\dfrac{1}{\\sqrt{5}}\\left(1 - \\tfrac{1}{5}x\\right)^{-1/2}.$$",
+      "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = -\\tfrac{1}{5}x$:<br>$$\\left(1 - \\tfrac{1}{5}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(-\\tfrac{1}{5}x\\right) + \\tfrac{3}{8}\\left(-\\tfrac{1}{5}x\\right)^2 + \\dots$$<br>$$= 1 + \\tfrac{1}{10}x + \\tfrac{3}{200}x^2 + \\dots$$",
+      "Multiply by $\\dfrac{1}{\\sqrt{5}} = \\dfrac{\\sqrt{5}}{5}$:<br>$$g(x) \\approx \\dfrac{\\sqrt{5}}{5}\\left(1 + \\tfrac{1}{10}x + \\tfrac{3}{200}x^2\\right) = \\dfrac{\\sqrt{5}}{5} + \\dfrac{\\sqrt{5}}{50}x + \\dfrac{3\\sqrt{5}}{1000}x^2.$$",
+      "<strong>Part (b)(i):</strong> The binomial expansion for $(1 - \\tfrac{1}{5}x)^{-1/2}$ is valid when $$\\left|\\tfrac{1}{5}x\\right| < 1 \\implies |x| < 5.$$",
+      "Among the given values, $x = -6$ has $|-6| = 6 > 5$, so it lies outside the interval of validity. Therefore, $x = -6$ is not valid for the expansion.",
+      "<strong>Part (b)(ii):</strong> To approximate $\\dfrac{1}{\\sqrt{5.2}}$, we need $$g(x) = \\dfrac{1}{\\sqrt{5 - x}} = \\dfrac{1}{\\sqrt{5.2}}.$$ This occurs when $5 - x = 5.2$, so $x = -0.2$. Also, $|-0.2|$ is small, so the series converges rapidly. Thus $x = -0.2$ gives the most accurate approximation.",
+      "Final Answer: <strong>(a)</strong> $$g(x) \\approx \\dfrac{\\sqrt{5}}{5} + \\dfrac{\\sqrt{5}}{50}x + \\dfrac{3\\sqrt{5}}{1000}x^2.$$ <strong>(b)(i)</strong> $x = -6$ is outside the interval of validity. <strong>(b)(ii)</strong> $x = -0.2$ gives the most accurate approximation to $\\dfrac{1}{\\sqrt{5.2}}$."
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $$g(x) \\approx \\dfrac{\\sqrt{5}}{5} + \\dfrac{\\sqrt{5}}{50}x + \\dfrac{3\\sqrt{5}}{1000}x^2.$$ <strong>(b)(i)</strong> $x = 1$ <strong>(b)(ii)</strong> $x = 1$",
+        "feedback": "For the interval of validity, the condition is $|x| < 5$, so $x = 1$ is valid but $x = -6$ is not. For the approximation, $x = -0.2$ is the value that actually produces $\\dfrac{1}{\\sqrt{5.2}}$ and is closest to zero."
+      },
+      {
+        "ans": "<strong>(a)</strong> $$g(x) \\approx \\dfrac{\\sqrt{5}}{5} + \\dfrac{\\sqrt{5}}{25}x + \\dfrac{3\\sqrt{5}}{1000}x^2.$$ <strong>(b)(i)</strong> $x = -6$ <strong>(b)(ii)</strong> $x = -0.2$",
+        "feedback": "Your linear coefficient is too large. The first-order term from $(1 - \\tfrac{1}{5}x)^{-1/2}$ is $+\\tfrac{1}{10}x$, which becomes $\\dfrac{\\sqrt{5}}{50}x$ after multiplying by $\\dfrac{\\sqrt{5}}{5}$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $$g(x) \\approx \\dfrac{\\sqrt{5}}{5} + \\dfrac{\\sqrt{5}}{50}x + \\dfrac{3\\sqrt{5}}{500}x^2.$$ <strong>(b)(i)</strong> $x = -6$ <strong>(b)(ii)</strong> $x = -0.2$",
+        "feedback": "The quadratic coefficient is incorrect. Carefully square $-\\tfrac{1}{5}x$, multiply by $\\tfrac{3}{8}$, and then apply the factor $\\dfrac{\\sqrt{5}}{5}$ to obtain $\\dfrac{3\\sqrt{5}}{1000}x^2$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Matching the function to the target number",
+      "content": "When a question links a binomial expansion to a numerical approximation, always solve the simple equation that makes the inside of the bracket equal to the target value. Only then worry about which of the candidate $x$ values lies closest to zero for the best accuracy."
+    }
+  },
+  {
+    "id": "004018",
+    "major_area": "Binomial Expansion",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+      "Negative fractional indices",
+      "Interval of validity",
+      "Approximations"
+    ],
+    "img": false,
+    "question": "A function is defined by:<br>$$h(x) = \\dfrac{1}{(3 + x)^{1/2}}.$$<br><strong>(a)</strong> Express $h(x)$ in the form $A(1 + Bx)^n$ and find the first three terms of its binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{2.7}}$. Possible values of $x$ are:<br>\\[x = -0.3, \\quad x = 3, \\quad x = -6.\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{2.7}}$.",
+    "steps": [
+      "<strong>Part (a):</strong> Rewrite $h(x)$ in binomial form by factorising the constant:<br>$$h(x) = (3 + x)^{-1/2} = \\left[3\\left(1 + \\tfrac{1}{3}x\\right)\\right]^{-1/2} = 3^{-1/2}\\left(1 + \\tfrac{1}{3}x\\right)^{-1/2} = \\dfrac{1}{\\sqrt{3}}\\left(1 + \\tfrac{1}{3}x\\right)^{-1/2}.$$",
+      "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = \\tfrac{1}{3}x$:<br>$$\\left(1 + \\tfrac{1}{3}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(\\tfrac{1}{3}x\\right) + \\tfrac{3}{8}\\left(\\tfrac{1}{3}x\\right)^2 + \\dots$$<br>$$= 1 - \\tfrac{1}{6}x + \\tfrac{1}{24}x^2 + \\dots$$",
+      "Multiply by $\\dfrac{1}{\\sqrt{3}} = \\dfrac{\\sqrt{3}}{3}$:<br>$$h(x) \\approx \\dfrac{\\sqrt{3}}{3}\\left(1 - \\tfrac{1}{6}x + \\tfrac{1}{24}x^2\\right) = \\dfrac{\\sqrt{3}}{3} - \\dfrac{\\sqrt{3}}{18}x + \\dfrac{\\sqrt{3}}{72}x^2.$$",
+      "<strong>Part (b)(i):</strong> The binomial expansion for $(1 + \\tfrac{1}{3}x)^{-1/2}$ is valid when $$\\left|\\tfrac{1}{3}x\\right| < 1 \\implies |x| < 3.$$",
+      "Among the given values, $x = -6$ has $|-6| = 6 > 3$, so it lies outside the interval of validity. The boundary value $x = 3$ also does not satisfy $|x| < 3$. Thus $x = -6$ (and $x = 3$) should not be used.",
+      "<strong>Part (b)(ii):</strong> To approximate $\\dfrac{1}{\\sqrt{2.7}}$, we need $$h(x) = \\dfrac{1}{\\sqrt{3 + x}} = \\dfrac{1}{\\sqrt{2.7}}.$$ This occurs when $3 + x = 2.7$, so $x = -0.3$. Also, $|-0.3|$ is small, so the series converges quickly. Therefore, $x = -0.3$ gives the most accurate approximation.",
+      "Final Answer: <strong>(a)</strong> $$h(x) \\approx \\dfrac{\\sqrt{3}}{3} - \\dfrac{\\sqrt{3}}{18}x + \\dfrac{\\sqrt{3}}{72}x^2.$$ <strong>(b)(i)</strong> $x = -6$ is outside the interval of validity. <strong>(b)(ii)</strong> $x = -0.3$ gives the most accurate approximation to $\\dfrac{1}{\\sqrt{2.7}}$."
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $$h(x) \\approx \\dfrac{\\sqrt{3}}{3} - \\dfrac{\\sqrt{3}}{18}x + \\dfrac{\\sqrt{3}}{72}x^2.$$ <strong>(b)(i)</strong> $x = 3$ <strong>(b)(ii)</strong> $x = 3$",
+        "feedback": "For the interval of validity, the strict inequality $|x| < 3$ rules out $x = -6$ and also excludes the boundary $x = 3$. For the approximation, $x = -0.3$ is the value that actually produces $\\dfrac{1}{\\sqrt{2.7}}$ and is closest to zero."
+      },
+      {
+        "ans": "<strong>(a)</strong> $$h(x) \\approx \\dfrac{\\sqrt{3}}{3} - \\dfrac{\\sqrt{3}}{9}x + \\dfrac{\\sqrt{3}}{72}x^2.$$ <strong>(b)(i)</strong> $x = -6$ <strong>(b)(ii)</strong> $x = -0.3$",
+        "feedback": "Your linear coefficient is too large in magnitude. The first-order term from $(1 + \\tfrac{1}{3}x)^{-1/2}$ is $-\\tfrac{1}{6}x$, which becomes $-\\dfrac{\\sqrt{3}}{18}x$ after multiplying by $\\dfrac{\\sqrt{3}}{3}$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $$h(x) \\approx \\dfrac{\\sqrt{3}}{3} - \\dfrac{\\sqrt{3}}{18}x + \\dfrac{\\sqrt{3}}{36}x^2.$$ <strong>(b)(i)</strong> $x = -6$ <strong>(b)(ii)</strong> $x = -0.3$",
+        "feedback": "The quadratic coefficient is incorrect. Carefully square $\\tfrac{1}{3}x$, multiply by $\\tfrac{3}{8}$, and then apply the factor $\\dfrac{\\sqrt{3}}{3}$ to obtain $\\dfrac{\\sqrt{3}}{72}x^2$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Boundary points and strict inequalities",
+      "content": "When you see a condition like $|x| < a$, remember that the endpoints $x = \\pm a$ are excluded. It is common for exam questions to include a boundary value as a tempting but invalid option, so always check whether the inequality is strict or not."
+    }
+  },
+  {
+    "id": "004019",
+    "major_area": "Binomial Expansion",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+      "Negative fractional indices",
+      "Interval of validity",
+      "Approximations"
+    ],
+    "img": false,
+    "question": "A function is defined by:<br>$$y = (4 + 3x)^{-1/2}.$$<br><strong>(a)</strong> Rewrite $y$ in the form $C(1 + Dx)^n$ and hence find the first three terms of the binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{3.1}}$. Possible values of $x$ are:<br>\\[x = -0.3, \\quad x = 1, \\quad x = -2.\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ is invalid for the expansion.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{3.1}}$.",
+    "steps": [
+      "<strong>Part (a):</strong> Factorise the constant from the bracket:<br>$$y = (4 + 3x)^{-1/2} = \\left[4\\left(1 + \\tfrac{3}{4}x\\right)\\right]^{-1/2} = 4^{-1/2}\\left(1 + \\tfrac{3}{4}x\\right)^{-1/2} = \\dfrac{1}{2}\\left(1 + \\tfrac{3}{4}x\\right)^{-1/2}.$$",
+      "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = \\tfrac{3}{4}x$:<br>$$\\left(1 + \\tfrac{3}{4}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(\\tfrac{3}{4}x\\right) + \\tfrac{3}{8}\\left(\\tfrac{3}{4}x\\right)^2 + \\dots$$<br>$$= 1 - \\tfrac{3}{8}x + \\tfrac{27}{128}x^2 + \\dots$$",
+      "Multiply by $\\dfrac{1}{2}$:<br>$$y \\approx \\dfrac{1}{2}\\left(1 - \\tfrac{3}{8}x + \\tfrac{27}{128}x^2\\right) = \\dfrac{1}{2} - \\dfrac{3}{16}x + \\dfrac{27}{256}x^2.$$",
+      "<strong>Part (b)(i):</strong> The binomial expansion for $(1 + \\tfrac{3}{4}x)^{-1/2}$ is valid when $$\\left|\\tfrac{3}{4}x\\right| < 1 \\implies |x| < \\dfrac{4}{3}.$$",
+      "Among the given values, $x = -2$ has $|-2| = 2 > \\dfrac{4}{3}$, so it lies outside the interval of validity. Therefore, $x = -2$ is invalid for the expansion.",
+      "<strong>Part (b)(ii):</strong> To approximate $\\dfrac{1}{\\sqrt{3.1}}$, we need $$y = \\dfrac{1}{\\sqrt{4 + 3x}} = \\dfrac{1}{\\sqrt{3.1}}.$$ This occurs when $4 + 3x = 3.1$, so $3x = -0.9$ and $x = -0.3$. Also, $|-0.3|$ is smaller than $|1|$, so the series converges more rapidly. Thus $x = -0.3$ gives the most accurate approximation.",
+      "Final Answer: <strong>(a)</strong> $$y \\approx \\dfrac{1}{2} - \\dfrac{3}{16}x + \\dfrac{27}{256}x^2.$$ <strong>(b)(i)</strong> $x = -2$ is invalid. <strong>(b)(ii)</strong> $x = -0.3$ gives the most accurate approximation to $\\dfrac{1}{\\sqrt{3.1}}$."
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $$y \\approx \\dfrac{1}{2} - \\dfrac{3}{16}x + \\dfrac{27}{256}x^2.$$ <strong>(b)(i)</strong> $x = 1$ <strong>(b)(ii)</strong> $x = 1$",
+        "feedback": "For the interval of validity, the condition $|x| < \\dfrac{4}{3}$ excludes $x = -2$, not $x = 1$. For the approximation, $x = -0.3$ is the value that actually produces $\\dfrac{1}{\\sqrt{3.1}}$ and is closer to zero than $x = 1$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $$y \\approx \\dfrac{1}{2} - \\dfrac{3}{8}x + \\dfrac{27}{256}x^2.$$ <strong>(b)(i)</strong> $x = -2$ <strong>(b)(ii)</strong> $x = -0.3$",
+        "feedback": "Your linear coefficient is too large in magnitude. The first-order term from $(1 + \\tfrac{3}{4}x)^{-1/2}$ is $-\\tfrac{3}{8}x$, which becomes $-\\dfrac{3}{16}x$ after multiplying by $\\dfrac{1}{2}$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $$y \\approx \\dfrac{1}{2} - \\dfrac{3}{16}x + \\dfrac{27}{128}x^2.$$ <strong>(b)(i)</strong> $x = -2$ <strong>(b)(ii)</strong> $x = -0.3$",
+        "feedback": "The quadratic coefficient is incorrect. Carefully square $\\tfrac{3}{4}x$, multiply by $\\tfrac{3}{8}$, and then apply the factor $\\dfrac{1}{2}$ to obtain $\\dfrac{27}{256}x^2$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Scaling before expanding",
+      "content": "Always factor out the constant from the bracket before applying the binomial expansion. This keeps the expression in the clean form $(1 + kx)^n$ and makes it much easier to see both the interval of validity and the structure of the coefficients."
+    }
+  },
+  {
+    "id": "004020",
+    "major_area": "Binomial Expansion",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+      "Negative fractional indices",
+      "Interval of validity",
+      "Approximations"
+    ],
+    "img": false,
+    "question": "A function is defined by:<br>$$F(x) = \\dfrac{1}{\\sqrt{16 - x}}.$$<br><strong>(a)</strong> Find the first three terms of the binomial expansion of $F(x)$ in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{15.5}}$. Possible values of $x$ are:<br>\\[x = 0.5, \\quad x = -18, \\quad x = 3.\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{15.5}}$.",
+    "steps": [
+      "<strong>Part (a):</strong> Rewrite $F(x)$ in binomial form by factorising the constant inside the square root:<br>$$F(x) = (16 - x)^{-1/2} = \\left[16\\left(1 - \\tfrac{1}{16}x\\right)\\right]^{-1/2} = 16^{-1/2}\\left(1 - \\tfrac{1}{16}x\\right)^{-1/2} = \\dfrac{1}{4}\\left(1 - \\tfrac{1}{16}x\\right)^{-1/2}.$$",
+      "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = -\\tfrac{1}{16}x$:<br>$$\\left(1 - \\tfrac{1}{16}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(-\\tfrac{1}{16}x\\right) + \\tfrac{3}{8}\\left(-\\tfrac{1}{16}x\\right)^2 + \\dots$$<br>$$= 1 + \\tfrac{1}{32}x + \\tfrac{3}{2048}x^2 + \\dots$$",
+      "Multiply by $\\dfrac{1}{4}$:<br>$$F(x) \\approx \\dfrac{1}{4}\\left(1 + \\tfrac{1}{32}x + \\tfrac{3}{2048}x^2\\right) = \\dfrac{1}{4} + \\dfrac{1}{128}x + \\dfrac{3}{8192}x^2.$$",
+      "<strong>Part (b)(i):</strong> The binomial expansion for $(1 - \\tfrac{1}{16}x)^{-1/2}$ is valid when $$\\left|\\tfrac{1}{16}x\\right| < 1 \\implies |x| < 16.$$",
+      "Among the given values, $x = -18$ has $|-18| = 18 > 16$, so it lies outside the interval of validity. Therefore, $x = -18$ should not be used.",
+      "<strong>Part (b)(ii):</strong> To approximate $\\dfrac{1}{\\sqrt{15.5}}$, we need $$F(x) = \\dfrac{1}{\\sqrt{16 - x}} = \\dfrac{1}{\\sqrt{15.5}}.$$ This occurs when $16 - x = 15.5$, so $x = 0.5$. Also, $|0.5|$ is smaller than $|3|$, so the series converges more rapidly. Thus $x = 0.5$ gives the most accurate approximation.",
+      "Final Answer: <strong>(a)</strong> $$F(x) \\approx \\dfrac{1}{4} + \\dfrac{1}{128}x + \\dfrac{3}{8192}x^2.$$ <strong>(b)(i)</strong> $x = -18$ should not be used. <strong>(b)(ii)</strong> $x = 0.5$ gives the most accurate approximation to $\\dfrac{1}{\\sqrt{15.5}}$."
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $$F(x) \\approx \\dfrac{1}{4} + \\dfrac{1}{128}x + \\dfrac{3}{8192}x^2.$$ <strong>(b)(i)</strong> $x = 3$ <strong>(b)(ii)</strong> $x = 3$",
+        "feedback": "For the interval of validity, the condition $|x| < 16$ excludes $x = -18$, not $x = 3$. For the approximation, $x = 0.5$ is the value that actually produces $\\dfrac{1}{\\sqrt{15.5}}$ and is closer to zero than $x = 3$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $$F(x) \\approx \\dfrac{1}{4} + \\dfrac{1}{64}x + \\dfrac{3}{8192}x^2.$$ <strong>(b)(i)</strong> $x = -18$ <strong>(b)(ii)</strong> $x = 0.5$",
+        "feedback": "Your linear coefficient is too large. The first-order term from $(1 - \\tfrac{1}{16}x)^{-1/2}$ is $+\\tfrac{1}{32}x$, which becomes $\\dfrac{1}{128}x$ after multiplying by $\\dfrac{1}{4}$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $$F(x) \\approx \\dfrac{1}{4} + \\dfrac{1}{128}x + \\dfrac{3}{4096}x^2.$$ <strong>(b)(i)</strong> $x = -18$ <strong>(b)(ii)</strong> $x = 0.5$",
+        "feedback": "The quadratic coefficient is incorrect. Carefully square $-\\tfrac{1}{16}x$, multiply by $\\tfrac{3}{8}$, and then apply the factor $\\dfrac{1}{4}$ to obtain $\\dfrac{3}{8192}x^2$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Tiny $x$ means tiny error",
+      "content": "Once you have the binomial form $(1 + kx)^n$, the size of $kx$ controls how quickly the series converges. For a fixed number of terms, the smaller $|kx|$ is, the smaller the neglected terms will be, and the more accurate your approximation becomes."
+    }
+  }
+
 
 ];
