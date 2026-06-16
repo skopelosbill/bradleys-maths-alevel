@@ -190,7 +190,7 @@ window.ALEVEL_QUESTIONS = [
   "topic": "Small Angle Approximations",
   "subtopics": ["Small Angle Approximation"],
   "img": "images/p1/004006.png",
-  "question": "Figure A shows a sketch of the curve $y = \\sin x$, where $x$ is measured in radians.<br>A copy of the sketch is provided in Diagram A.<br><br>(a) Use Diagram A to explain why the equation $$\\sin x - 2x + \\tfrac14 = 0$$ has exactly one real root.<br>(b) Let the root be $\\beta$. Given that $\\beta$ is small, use the small-angle approximation for $\\sin x$ to estimate the value of $\\beta$ to 3 decimal places.",
+  "question": "The diagram shows a sketch of the curve $y = \\sin x$, where $x$ is measured in radians.<br>(a) Use the diagram to explain why the equation $$\\sin x - 2x + \\tfrac14 = 0$$ has exactly one real root.<br>(b) Let the root be $\\beta$. Given that $\\beta$ is small, use the small-angle approximation for $\\sin x$ to estimate the value of $\\beta$ to 3 decimal places.",
   "steps": [
     "From the diagram, the curve $y = \\sin x$ starts at the origin with gradient 1, while the line $y = 2x - \\tfrac14$ starts below the curve and has a steeper gradient.",
     "Because the line is steeper, it crosses the curve once for a small positive value of $x$, and afterwards the line increases without bound while $\\sin x$ remains between $-1$ and $1$.",
