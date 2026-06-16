@@ -189,7 +189,7 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Algebra & Functions",
   "topic": "Small Angle Approximations",
   "subtopics": ["Small Angle Approximation"],
-  "img": "/image/p1/004006.png",
+  "img": "images/p1/004006.png",
   "question": "Figure A shows a sketch of the curve $y = \\sin x$, where $x$ is measured in radians.<br>A copy of the sketch is provided in Diagram A.<br><br>(a) Use Diagram A to explain why the equation $$\\sin x - 2x + \\tfrac14 = 0$$ has exactly one real root.<br>(b) Let the root be $\\beta$. Given that $\\beta$ is small, use the small-angle approximation for $\\sin x$ to estimate the value of $\\beta$ to 3 decimal places.",
   "steps": [
     "From the diagram, the curve $y = \\sin x$ starts at the origin with gradient 1, while the line $y = 2x - \\tfrac14$ starts below the curve and has a steeper gradient.",
@@ -224,7 +224,7 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Algebra & Functions",
   "topic": "Small Angle Approximations",
   "subtopics": ["Small Angle Approximation"],
-  "img": "/image/p1/004007.png",
+  "img": "images/p1/004007.png",
   "question": "Figure B shows a sketch of the curve $y = \\tan x$ for values of $x$ close to zero.<br>A copy of the sketch is provided in Diagram B.<br><br>(a) Use Diagram B to explain why the equation $$\\tan x - 3x + 0.2 = 0$$ has exactly one real root in the interval $-0.5 < x < 0.5$.<br>(b) Let the root be $\\gamma$. Given that $\\gamma$ is small, use the small-angle approximation for $\\tan x$ to estimate the value of $\\gamma$ to 3 decimal places.",
   "steps": [
     "From the diagram, $y = \\tan x$ is increasing and passes through the origin with gradient 1.",
@@ -259,7 +259,7 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Algebra & Functions",
   "topic": "Small Angle Approximations",
   "subtopics": ["Small Angle Approximation"],
-  "img": "/image/p1/004008.png",
+  "img": "images/p1/004008.png",
   "question": "Figure C shows a sketch of the curve $y = \\cos(2x)$, where $x$ is measured in radians.<br>A copy of the sketch is provided in Diagram C.<br><br>(a) Use Diagram C to explain why the equation $$\\cos(2x) - x - \\tfrac13 = 0$$ has exactly one real root.<br>(b) Let the root be $\\delta$. Given that $\\delta$ is small, use the small-angle approximation for $\\cos(2x)$ to estimate the value of $\\delta$ to 3 decimal places.",
   "steps": [
     "From the diagram, $y = \\cos(2x)$ starts at 1 when $x = 0$, while the line $y = x + \\tfrac13$ starts at $\\tfrac13$ and increases.",
@@ -295,7 +295,7 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Algebra & Functions",
   "topic": "Small Angle Approximations",
   "subtopics": ["Small Angle Approximation"],
-  "img": "/image/p1/004009.png",
+  "img": "images/p1/004009.png",
   "question": "Figure D shows a sketch of the curve $y = e^{-x}$, where $x$ is measured in radians.<br>A copy of the sketch is provided in Diagram D.<br><br>(a) Use Diagram D to explain why the equation $$e^{-x} - 1.5x - 0.8 = 0$$ has exactly one real root.<br>(b) Let the root be $\\varepsilon$. Given that $\\varepsilon$ is small, use the small-angle approximation for $e^{-x}$ to estimate the value of $\\varepsilon$ to 3 decimal places.",
   "steps": [
     "From the diagram, $y = e^{-x}$ decreases from 1 as $x$ increases, while the line $y = 1.5x + 0.8$ increases.",
@@ -329,7 +329,7 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Algebra & Functions",
   "topic": "Small Angle Approximations",
   "subtopics": ["Small Angle Approximation"],
-  "img": "/image/p1/004010,png",
+  "img": "images/p1/004010,png",
   "question": "Figure E shows a sketch of the curve $y = \\sin(3x) + 0.5$, where $x$ is measured in radians.<br>A copy of the sketch is provided in Diagram E.<br><br>(a) Use Diagram E to explain why the equation $$\\sin(3x) + 0.5 - 2x = 0$$ has exactly one real root.<br>(b) Let the root be $\\zeta$. Given that $\\zeta$ is small, use the small-angle approximation for $\\sin(3x)$ to estimate the value of $\\zeta$ to 3 decimal places.",
   "steps": [
     "From the diagram, $y = \\sin(3x) + 0.5$ starts at 0.5 with initial gradient about 3, while the line $y = 2x$ starts at the origin with gradient 2.",
