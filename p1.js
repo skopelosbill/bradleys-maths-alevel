@@ -329,7 +329,7 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Algebra & Functions",
   "topic": "Small Angle Approximations",
   "subtopics": ["Small Angle Approximation"],
-  "img": "images/p1/004010,png",
+  "img": "images/p1/004010.png",
   "question": "The diagram shows a sketch of the curve $y = \\sin(3x) + 0.5$, where $x$ is measured in radians.<br>(a) Use the diagram to explain why the equation $$\\sin(3x) + 0.5 - 2x = 0$$ has exactly one real root.<br>(b) Let the root be $\\zeta$. Given that $\\zeta$ is small, use the small-angle approximation for $\\sin(3x)$ to estimate the value of $\\zeta$ to 3 decimal places.",
   "steps": [
     "From the diagram, $y = \\sin(3x) + 0.5$ starts at 0.5 with initial gradient about 3, while the line $y = 2x$ starts at the origin with gradient 2.",
