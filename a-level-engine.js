@@ -48,9 +48,7 @@ const ALevelHub = {
         if (window.MathJax) MathJax.typesetPromise();
     },
 
-    // ---------------------------------------------
-    // CREATE A LEVEL PROBLEM CARD
-    // ---------------------------------------------
+    
     // ---------------------------------------------
     // CREATE A LEVEL PROBLEM CARD (WITH PI AUDIT)
     // ---------------------------------------------
