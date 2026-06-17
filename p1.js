@@ -943,7 +943,192 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Leading Coefficient Factorising",
             "content": "When completing the square with a leading coefficient like $2x^2$, only factorise the coefficient out of the quadratic and linear terms ($2[x^2+2x]$). Leaving the constant $+7$ outside the bracket prevents you from accidentally multiplying it, which is the most common source of calculation errors."
         }
+    },
+  {
+    "id": "004026",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Equations",
+    "subtopic": [
+      "Trigonometric Equations",
+      "Trigonometric Identities",
+      "Double Angle Formulae"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$4\\sin 2\\theta = 7\\cos\\theta.$$Give your answers, where necessary, to one decimal place. Solutions based entirely on graphical or numerical methods are not acceptable.<br><br><strong>(b)</strong> Hence deduce the smallest positive solution of:<br>$$4\\sin(2x + 20^\\circ) = 7\\cos(x + 10^\\circ).$$",
+    "steps": [
+      "<strong>Part (a):</strong> Use the identity $$\\sin 2\\theta = 2\\sin\\theta\\cos\\theta.$$<br>$$4(2\\sin\\theta\\cos\\theta) = 7\\cos\\theta$$<br>$$8\\sin\\theta\\cos\\theta - 7\\cos\\theta = 0$$<br>Factorise:<br>$$\\cos\\theta(8\\sin\\theta - 7) = 0.$$<br>This gives two branches:<br><em>Branch 1:</em> $$\\cos\\theta = 0 \\Rightarrow \\theta = -90^\\circ,\\ 90^\\circ.$$<br><em>Branch 2:</em> $$\\sin\\theta = \\frac{7}{8} \\Rightarrow \\theta \\approx 61.0^\\circ,\\ 119.0^\\circ.$$",
+      "<strong>Part (b):</strong> Note that $$2x + 20^\\circ = 2(x + 10^\\circ).$$ Let $$\\theta = x + 10^\\circ.$$ Then the equation becomes the same as in Part (a).<br>Thus the smallest positive solution is:<br>$$x = 61.0^\\circ - 10^\\circ = 51.0^\\circ.$$",
+      "Final Answer: $$\\theta = -90^\\circ,\\ 61.0^\\circ,\\ 90^\\circ,\\ 119.0^\\circ; \\quad x = 51.0^\\circ.$$"
+    ],
+    "pi_options": [
+      {
+        "ans": "Smallest positive x = 41.0°",
+        "feedback": "You subtracted 20° instead of 10°. Remember: θ = x + 10°, so x = θ − 10°."
+      },
+      {
+        "ans": "Smallest positive x = 80.0°",
+        "feedback": "This corresponds to the θ = 90° branch, but it is not the smallest positive solution."
+      },
+      {
+        "ans": "Smallest positive x = 260.0°",
+        "feedback": "This comes from the negative θ branch. It is positive, but not the smallest positive solution."
+      }
+    ],
+    "bradley_insight": {
+      "type": "tip",
+      "title": "Factorisation First",
+      "content": "When both sides contain products of trig functions, factorising early often reveals clean solution branches and prevents unnecessary algebra."
     }
+  },
+
+  {
+    "id": "004027",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Equations",
+    "subtopic": [
+      "Trigonometric Equations",
+      "Trigonometric Identities",
+      "Double Angle Formulae"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$3\\tan\\theta = 2\\sin 2\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Deduce the smallest positive solution of:<br>$$3\\tan(x - 15^\\circ) = 2\\sin(2x - 30^\\circ).$$",
+    "steps": [
+      "<strong>Part (a):</strong> Use $$\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}, \\quad \\sin 2\\theta = 2\\sin\\theta\\cos\\theta.$$<br>Substitute:<br>$$3\\frac{\\sin\\theta}{\\cos\\theta} = 4\\sin\\theta\\cos\\theta$$<br>Multiply by cosθ:<br>$$3\\sin\\theta = 4\\sin\\theta\\cos^2\\theta$$<br>Factorise:<br>$$\\sin\\theta(3 - 4\\cos^2\\theta) = 0.$$<br>Solutions:<br>• $$\\sin\\theta = 0 \\Rightarrow \\theta = -180^\\circ, 0^\\circ, 180^\\circ.$$<br>• $$\\cos^2\\theta = \\frac{3}{4} \\Rightarrow \\theta = \\pm 30^\\circ, \\pm 150^\\circ.$$",
+      "<strong>Part (b):</strong> Note that $$2x - 30^\\circ = 2(x - 15^\\circ).$$ Let $$\\theta = x - 15^\\circ.$$<br>Smallest positive solution:<br>$$x = 0^\\circ + 15^\\circ = 15^\\circ.$$",
+      "Final Answer: $$\\theta = -180^\\circ, -150^\\circ, -30^\\circ, 0^\\circ, 30^\\circ, 150^\\circ, 180^\\circ; \\quad x = 15^\\circ.$$"
+    ],
+    "pi_options": [
+      {
+        "ans": "x = 45°",
+        "feedback": "This corresponds to θ = 30°, but it is not the smallest positive solution."
+      },
+      {
+        "ans": "x = 345°",
+        "feedback": "This comes from the negative θ branch. It is positive, but not the smallest positive solution."
+      },
+      {
+        "ans": "x = 0°",
+        "feedback": "Remember to add 15° because θ = x − 15°."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "Watch for Restricted Domains",
+      "content": "When tanθ appears, always check for excluded angles such as ±90°. They cannot be solutions even if they appear algebraically."
+    }
+  },
+
+  {
+    "id": "004028",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Equations",
+    "subtopic": [
+      "Trigonometric Equations",
+      "Trigonometric Identities",
+      "Double Angle Formulae"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$5\\cos 2\\theta = 8\\sin\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence find the smallest positive solution of:<br>$$5\\cos(2x - 40^\\circ) = 8\\sin(x - 20^\\circ).$$",
+    "steps": [
+      "<strong>Part (a):</strong> Use $$\\cos 2\\theta = 1 - 2\\sin^2\\theta.$$<br>Substitute:<br>$$5(1 - 2\\sin^2\\theta) = 8\\sin\\theta$$<br>$$5 - 10\\sin^2\\theta = 8\\sin\\theta$$<br>Rearrange:<br>$$10\\sin^2\\theta + 8\\sin\\theta - 5 = 0.$$<br>Solve the quadratic:<br>$$\\sin\\theta = \\frac{-8 \\pm \\sqrt{264}}{20}.$$<br>Only the positive root is valid: $$\\sin\\theta \\approx 0.4124.$$<br>Thus: $$\\theta \\approx 24.4^\\circ,\\ 155.6^\\circ.$$",
+      "<strong>Part (b):</strong> Note that $$2x - 40^\\circ = 2(x - 20^\\circ).$$ Let $$\\theta = x - 20^\\circ.$$<br>Smallest positive solution:<br>$$x = 24.4^\\circ + 20^\\circ = 44.4^\\circ.$$",
+      "Final Answer: $$\\theta \\approx 24.4^\\circ,\\ 155.6^\\circ; \\quad x \\approx 44.4^\\circ.$$"
+    ],
+    "pi_options": [
+      {
+        "ans": "x = 64.4°",
+        "feedback": "You added 40° instead of 20°. The substitution is θ = x − 20°."
+      },
+      {
+        "ans": "x = 175.6°",
+        "feedback": "This corresponds to the second θ value, but it is not the smallest positive solution."
+      },
+      {
+        "ans": "x = 20°",
+        "feedback": "This assumes θ = 0°, which is not a solution of the original equation."
+      }
+    ],
+    "bradley_insight": {
+      "type": "tip",
+      "title": "Quadratics in Disguise",
+      "content": "Whenever you see cos2θ or sin2θ, try rewriting everything in terms of sinθ or cosθ. It often collapses into a clean quadratic."
+    }
+  },
+
+  {
+    "id": "004029",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Equations",
+    "subtopic": [
+      "Trigonometric Equations",
+      "Trigonometric Identities",
+      "Double Angle Formulae"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$6\\sin\\theta = 2\\cos 2\\theta.$$<br><br><strong>(b)</strong> Deduce the smallest positive solution of:<br>$$6\\sin(x + 30^\\circ) = 2\\cos(2x + 60^\\circ).$$",
+    "steps": [
+      "<strong>Part (a):</strong> Use $$\\cos 2\\theta = 1 - 2\\sin^2\\theta.$$<br>Substitute:<br>$$6\\sin\\theta = 2(1 - 2\\sin^2\\theta)$$<br>$$3\\sin\\theta = 1 - 2\\sin^2\\theta$$<br>Rearrange:<br>$$2\\sin^2\\theta + 3\\sin\\theta - 1 = 0.$$<br>Solve the quadratic:<br>$$\\sin\\theta = \\frac{-3 \\pm \\sqrt{17}}{4}.$$<br>Only the positive root is valid: $$\\sin\\theta \\approx 0.2808.$$<br>Thus: $$\\theta \\approx 16.3^\\circ,\\ 163.7^\\circ.$$",
+      "<strong>Part (b):</strong> Note that $$2x + 60^\\circ = 2(x + 30^\\circ).$$ Let $$\\theta = x + 30^\\circ.$$<br>Smallest positive solution:<br>$$x = 163.7^\\circ - 30^\\circ = 133.7^\\circ.$$",
+      "Final Answer: $$\\theta \\approx 16.3^\\circ,\\ 163.7^\\circ; \\quad x \\approx 133.7^\\circ.$$"
+    ],
+    "pi_options": [
+      {
+        "ans": "x = 346.3°",
+        "feedback": "This comes from the negative θ branch. It is positive, but not the smallest positive solution."
+      },
+      {
+        "ans": "x = 16.3°",
+        "feedback": "You forgot to subtract 30°. Remember: x = θ − 30°."
+      },
+      {
+        "ans": "x = 30°",
+        "feedback": "This assumes θ = 60°, which is not a solution of the original equation."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "Check Validity of Roots",
+      "content": "Quadratics in sinθ or cosθ often produce invalid roots outside the range −1 to 1. Always check before taking inverse trig values."
+    }
+  },
+
+  {
+    "id": "004030",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Equations",
+    "subtopic": [
+      "Trigonometric Equations",
+      "Trigonometric Identities",
+      "Double Angle Formulae"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$9\\sin 2\\theta = 4\\tan\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence deduce the smallest positive solution of:<br>$$9\\sin(2x - 10^\\circ) = 4\\tan(x - 5^\\circ).$$",
+    "steps": [
+      "<strong>Part (a):</strong> Use $$\\sin 2\\theta = 2\\sin\\theta\\cos\\theta, \\quad \\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}.$$<br>Substitute:<br>$$18\\sin\\theta\\cos^2\\theta = 4\\sin\\theta$$<br>Factorise:<br>$$2\\sin\\theta(9\\cos^2\\theta - 2) = 0.$$<br>Solutions:<br>• $$\\sin\\theta = 0 \\Rightarrow \\theta = -180^\\circ, 0^\\circ, 180^\\circ.$$<br>• $$\\cos^2\\theta = \\frac{2}{9} \\Rightarrow \\theta \\approx \\pm 61.9^\\circ, \\pm 118.1^\\circ.$$",
+      "<strong>Part (b):</strong> Note that $$2x - 10^\\circ = 2(x - 5^\\circ).$$ Let $$\\theta = x - 5^\\circ.$$<br>Smallest positive solution:<br>$$x = 0^\\circ + 5^\\circ = 5^\\circ.$$",
+      "Final Answer: $$\\theta = -180^\\circ, -118.1^\\circ, -61.9^\\circ, 0^\\circ, 61.9^\\circ, 118.1^\\circ, 180^\\circ; \\quad x = 5^\\circ.$$"
+    ],
+    "pi_options": [
+      {
+        "ans": "x = 66.9°",
+        "feedback": "This corresponds to θ = 61.9°, but it is not the smallest positive solution."
+      },
+      {
+        "ans": "x = 185°",
+        "feedback": "This comes from the θ = −180° branch. It is positive, but not the smallest positive solution."
+      },
+      {
+        "ans": "x = 0°",
+        "feedback": "Remember: x = θ + 5°, and θ = 0° gives x = 5°."
+      }
+    ],
+    "bradley_insight": {
+      "type": "tip",
+      "title": "Spot the Structure",
+      "content": "When the transformed equation in Part (b) mirrors the structure of Part (a), a simple substitution often collapses the problem instantly."
+    }
+  }
+
 
 
 
