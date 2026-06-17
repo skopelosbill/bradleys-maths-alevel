@@ -1522,7 +1522,216 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Definite Integral Bounds",
             "content": "Always remember that the definite integral of a function between $a$ and $b$ calculates the <strong>net</strong> area. If your curve lies both below and above the axis over your interval, the positive and negative regions will actively cancel each other out in the final result."
         }
+    },
+    {
+        "id": "004041",
+        "major_area": "Exponentials & Logarithms",
+        "topic": "Logarithms",
+        "subtopic": [
+            "Logarithm Laws",
+            "Algebraic Proof"
+        ],
+        "img": false,
+        "question": "Given that $a > 0$ and $b > 0$, and that $a$ and $b$ satisfy the equation:<br>$$\\log a + \\log b = \\log(a + b)$$<br><strong>(a)</strong> Show that:<br>$$a = \\dfrac{b}{b - 1}$$<br><strong>(b)</strong> Write down the full restriction on the value of $b$, explaining the reason for this restriction.",
+        "steps": [
+            "<strong>Part (a):</strong> We begin by applying the logarithm addition law, $\\log(x) + \\log(y) = \\log(xy)$, to the left-hand side of our equation:<br>$$\\log(ab) = \\log(a + b)$$,",
+            "Since the logarithmic function is one-to-one, we can remove the logarithms from both sides of the equation:<br>$$ab = a + b$$",
+            "Next, we rearrange the equation to group all terms containing the variable $a$ together on one side:<br>$$ab - a = b$$",
+            "Factorising out $a$ from the left-hand side:<br>$$a(b - 1) = b$$",
+            "Dividing both sides of the equation by $(b - 1)$ gives our target proof:<br>$$a = \\dfrac{b}{b - 1}$$",
+            "<strong>Part (b):</strong> For the logarithmic terms to be defined in the original equation, we are given that $a > 0$ and $b > 0$.",
+            "Looking at our equation $a = \\dfrac{b}{b - 1}$, since $a$ must be strictly positive ($a > 0$) and the numerator is positive ($b > 0$), the denominator must also be positive to ensure a positive quotient:<br>$$b - 1 > 0 \\implies b > 1$$",
+            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b}{b - 1}\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{b}{b - 1}$$ <strong>(b)</strong> $$b > 0$$",
+                "feedback": "You probably forgot to account for the positiveness of $a$ when setting your restriction in Part (b). If $b > 0$ but $b < 1$, then the denominator $(b-1)$ would be negative, making $a$ negative. This violates the original condition that $a > 0$ for $\\log a$ to be defined."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{b}{1 - b}$$ <strong>(b)</strong> $$b > 1$$",
+                "feedback": "Check your algebraic signs when grouping your $a$ terms in Part (a). Moving $a$ to the left-hand side yields $ab - a = b \\implies a(b - 1) = b$. Be careful not to swap the subtraction order."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{b}{b - 1}$$ <strong>(b)</strong> $$b \\ge 1$$",
+                "feedback": "Check your inequality boundary in Part (b). If $b = 1$ exactly, the denominator $(b-1)$ becomes $0$, making the fraction undefined. Therefore, the restriction must be a strict inequality: $b > 1$, not $b \\ge 1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Base Restrictions",
+            "content": "In this question, always look back at the original parameters. Logarithmic inputs must be strictly positive. When finding restrictions on a variable in algebraic proofs, your final value must satisfy both the general domain of the function and the specific inequalities of the question."
+        }
+    },
+    {
+        "id": "004042",
+        "major_area": "Exponentials & Logarithms",
+        "topic": "Logarithms",
+        "subtopic": [
+            "Logarithm Laws",
+            "Algebraic Proof"
+        ],
+        "img": false,
+        "question": "Given that $a > b > 0$, and that $a$ and $b$ satisfy the equation:<br>$$\\log a - 2\\log b = \\log(a - b)$$<br><strong>(a)</strong> Show that:<br>$$a = \\dfrac{b^3}{b^2 - 1}$$<br><strong>(b)</strong> Write down the full restriction on the value of $b$, explaining the reason for this restriction.",
+        "steps": [
+            "<strong>Part (a):</strong> We begin by applying the logarithm power law, $c\\log(x) = \\log(x^c)$, to the second term on the left-hand side:<br>$$\\log a - \\log(b^2) = \\log(a - b)$$",
+            "Applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\frac{x}{y}\\right)$:<br>$$\\log\\left(\\dfrac{a}{b^2}\\right) = \\log(a - b)$$",
+            "Removing the logarithms from both sides of the equation:<br>$$\\dfrac{a}{b^2} = a - b$$",
+            "Multiplying both sides by $b^2$ to eliminate the fraction:<br>$$a = b^2(a - b) \\implies a = ab^2 - b^3$$",
+            "Rearranging to group all terms containing the variable $a$ together on the right-hand side:<br>$$b^3 = ab^2 - a$$",
+            "Factorising out $a$ from the right-hand side:<br>$$b^3 = a(b^2 - 1)$$",
+            "Dividing both sides of the equation by $(b^2 - 1)$ gives our target proof:<br>$$a = \\dfrac{b^3}{b^2 - 1}$$",
+            "<strong>Part (b):</strong> For the logarithmic terms to be defined, we require $a > b > 0$ and $a - b > 0$.",
+            "Looking at our equation $a = \\dfrac{b^3}{b^2 - 1}$, since $a$ must be strictly positive ($a > 0$) and the numerator is positive ($b^3 > 0$, as $b > 0$), the denominator must also be positive to ensure a positive quotient:<br>$$b^2 - 1 > 0 \\implies b^2 > 1$$<br>Since $b > 0$, this yields the strict restriction:<br>$$b > 1$$",
+            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b^3}{b^2 - 1}\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{b^3}{b^2 - 1}$$ <strong>(b)</strong> $$b > 0$$",
+                "feedback": "You probably forgot to account for the positiveness of $a$ when setting your restriction in Part (b). If $b > 0$ but $b < 1$, then $b^2 - 1$ would be negative, making $a$ negative. This violates the original condition that $a > 0$ for $\\log a$ to be defined."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{b^3}{1 - b^2}$$ <strong>(b)</strong> $$b > 1$$",
+                "feedback": "Check your algebraic signs when grouping your $a$ terms in Part (a). Rearranging $a = ab^2 - b^3$ yields $b^3 = ab^2 - a \\implies b^3 = a(b^2 - 1)$. Be careful not to swap the subtraction order of your factor."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{b^3}{b^2 - 1}$$ <strong>(b)</strong> $$b > -1$$",
+                "feedback": "Check your inequality restrictions in Part (b). Although solving $b^2 - 1 > 0$ mathematically yields $b > 1$ or $b < -1$, we are given the initial constraint $b > 0$ for $\\log b$ to be defined. Therefore, the negative region is completely invalid, leaving only $b > 1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Dual Constraints",
+            "content": "In this question, when solving quadratic inequalities like $b^2 - 1 > 0$, remember that math rules yield two regions: $b > 1$ or $b < -1$. However, because the original equation contains $\\log b$, $b$ must be strictly positive. This instantly discards the negative region, leaving only $b > 1$."
+        }
+    },
+    {
+        "id": "004043",
+        "major_area": "Exponentials & Logarithms",
+        "topic": "Logarithms",
+        "subtopic": [
+            "Logarithm Laws",
+            "Algebraic Proof"
+        ],
+        "img": false,
+        "question": "Given that $a > b > 0$, and that $a$ and $b$ satisfy the equation:<br>$$\\log a - \\log b = \\log(2a - b)$$<br><strong>(a)</strong> Show that:<br>$$a = \\dfrac{b^2}{2b - 1}$$<br><strong>(b)</strong> Write down the full restriction on the value of $b$, explaining the reason for this restriction.",
+        "steps": [
+            "<strong>Part (a):</strong> We begin by applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\frac{x}{y}\\right)$, to the left-hand side of our equation:<br>$$\\log\\left(\\dfrac{a}{b}\\right) = \\log(2a - b)$$",
+            "Removing the logarithms from both sides of the equation:<br>$$\\dfrac{a}{b} = 2a - b$$",
+            "Multiplying both sides by $b$ to eliminate the fraction:<br>$$a = b(2a - b) \\implies a = 2ab - b^2$$",
+            "Rearranging to group all terms containing the variable $a$ together on the right-hand side:<br>$$b^2 = 2ab - a$$",
+            "Factorising out $a$ from the right-hand side:<br>$$b^2 = a(2b - 1)$$",
+            "Dividing both sides of the equation by $(2b - 1)$ gives our target proof:<br>$$a = \\dfrac{b^2}{2b - 1}$$",
+            "<strong>Part (b):</strong> For the logarithmic terms to be defined, we are given that $a > b > 0$.",
+            "First, since $a > 0$ and the numerator is positive ($b^2 > 0$), our denominator must be strictly positive to ensure a positive quotient:<br>$$2b - 1 > 0 \\implies b > 0.5$$",
+            "Second, we must satisfy the initial condition that $a > b$:<br>$$\\dfrac{b^2}{2b - 1} > b$$<br>Since $2b-1 > 0$, we can multiply both sides by $(2b-1)$ safely without swapping the inequality sign:<br>$$b^2 > b(2b - 1) \\implies b^2 > 2b^2 - b$$<br>$$b > b^2$$<br>Since $b > 0$, we can divide by $b$:<br>$$1 > b \\implies b < 1$$",
+            "Combining both inequalities yields our full, strict restriction on $b$:<br>$$\\frac{1}{2} < b < 1$$",
+            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b^2}{2b - 1}\\ \\text{is verified}$$ <strong>(b)</strong> $$\\dfrac{1}{2} < b < 1$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{b^2}{2b - 1}$$ <strong>(b)</strong> $$b > 0.5$$",
+                "feedback": "You probably forgot to account for the second half of the restriction in Part (b). While $b > 0.5$ guarantees that $a$ is positive, we are also given that $a > b$. Solving $\\frac{b^2}{2b-1} > b$ yields $b < 1$, which tightens the restriction to $\\frac{1}{2} < b < 1$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{b^2}{1 - 2b}$$ <strong>(b)</strong> $$\\dfrac{1}{2} < b < 1$$",
+                "feedback": "Check your algebraic signs when grouping your $a$ terms in Part (a). Rearranging $a = 2ab - b^2$ yields $b^2 = 2ab - a \\implies b^2 = a(2b - 1)$. Be careful not to swap the subtraction order of your factor."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{b^2}{2b - 1}$$ <strong>(b)</strong> $$b < 1$$",
+                "feedback": "Check your lower-bound constraint in Part (b). If $b < 0.5$, then the denominator $(2b-1)$ would be negative, making $a$ negative. This violates the original condition $a > 0$ required for $\\log a$ to be defined."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Hidden Inequalities",
+            "content": "This question contains a classic algebraic trap. Many students only check that the denominator is positive ($b > 0.5$), forgetting that the condition $a > b$ is also a functional inequality. Always test both constraints to see if they restrict your variable from both above and below."
+        }
+    },
+    {
+        "id": "004044",
+        "major_area": "Exponentials & Logarithms",
+        "topic": "Logarithms",
+        "subtopic": [
+            "Logarithm Laws",
+            "Algebraic Proof"
+        ],
+        "img": false,
+        "question": "Given that $a > 2b > 0$, and that $a$ and $b$ satisfy the equation:<br>$$\\log a - \\log b = \\log(a - 2b)$$<br><strong>(a)</strong> Show that:<br>$$a = \\dfrac{2b^2}{b - 1}$$<br><strong>(b)</strong> Write down the full restriction on the value of $b$, explaining the reason for this restriction.",
+        "steps": [
+            "<strong>Part (a):</strong> We begin by applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\frac{x}{y}\\right)$, to the left-hand side of our equation:<br>$$\\log\\left(\\dfrac{a}{b}\\right) = \\log(a - 2b)$$",
+            "Removing the logarithms from both sides of the equation:<br>$$\\dfrac{a}{b} = a - 2b$$",
+            "Multiplying both sides by $b$ to eliminate the fraction:<br>$$a = b(a - 2b) \\implies a = ab - 2b^2$$",
+            "Rearranging to group all terms containing the variable $a$ together on the right-hand side:<br>$$2b^2 = ab - a$$",
+            "Factorising out $a$ from the right-hand side:<br>$$2b^2 = a(b - 1)$$",
+            "Dividing both sides of the equation by $(b - 1)$ gives our target proof:<br>$$a = \\dfrac{2b^2}{b - 1}$$",
+            "<strong>Part (b):</strong> For the logarithmic terms to be defined, we are given that $a > 2b > 0$.",
+            "Looking at our equation $a = \\dfrac{2b^2}{b - 1}$, since $a$ must be strictly positive ($a > 0$) and the numerator is positive ($2b^2 > 0$), the denominator must also be positive to ensure a positive quotient:<br>$$b - 1 > 0 \\implies b > 1$$",
+            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{2b^2}{b - 1}\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{2b^2}{b - 1}$$ <strong>(b)</strong> $$b > 0$$",
+                "feedback": "You probably forgot to account for the positiveness of $a$ when setting your restriction in Part (b). If $b > 0$ but $b < 1$, then $b - 1$ would be negative, making $a$ negative. This violates the original condition that $a > 0$ for $\\log a$ to be defined."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{2b^2}{1 - b}$$ <strong>(b)</strong> $$b > 1$$",
+                "feedback": "Check your algebraic signs when grouping your $a$ terms in Part (a). Rearranging $a = ab - 2b^2$ yields $2b^2 = ab - a \\implies 2b^2 = a(b - 1)$. Be careful not to swap the subtraction order of your factor."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{2b^2}{b - 1}$$ <strong>(b)</strong> $$b \\ge 1$$",
+                "feedback": "Check your inequality boundary in Part (b). If $b = 1$ exactly, the denominator $(b-1)$ becomes $0$, making the fraction undefined. Therefore, the restriction must be a strict inequality: $b > 1$, not $b \\ge 1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Subtraction Order",
+            "content": "In algebraic proofs of this type, when factorising terms, pay close attention to the order of subtraction. If you have $2b^2 = ab - a$, dividing by the factor $(b-1)$ is mathematically correct, whereas writing $(1-b)$ would introduce an incorrect sign change."
+        }
+    },
+    {
+        "id": "004045",
+        "major_area": "Exponentials & Logarithms",
+        "topic": "Logarithms",
+        "subtopic": [
+            "Logarithm Laws",
+            "Algebraic Proof"
+        ],
+        "img": false,
+        "question": "Given that $a > b^2 > 0$ and $b > 0$, and that $a$ and $b$ satisfy the equation:<br>$$\\log a - 3\\log b = \\log(a - b^2)$$<br><strong>(a)</strong> Show that:<br>$$a = \\dfrac{b^5}{b^3 - 1}$$<br><strong>(b)</strong> Write down the full restriction on the value of $b$, explaining the reason for this restriction.",
+        "steps": [
+            "<strong>Part (a):</strong> We begin by applying the logarithm power law, $c\\log(x) = \\log(x^c)$, to the second term on the left-hand side:<br>$$\\log a - \\log(b^3) = \\log(a - b^2)$$",
+            "Applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\frac{x}{y}\\right)$:<br>$$\\log\\left(\\dfrac{a}{b^3}\\right) = \\log(a - b^2)$$",
+            "Removing the logarithms from both sides of the equation:<br>$$\\dfrac{a}{b^3} = a - b^2$$",
+            "Multiplying both sides by $b^3$ to eliminate the fraction:<br>$$a = b^3(a - b^2) \\implies a = ab^3 - b^5$$",
+            "Rearranging to group all terms containing the variable $a$ together on the right-hand side:<br>$$b^5 = ab^3 - a$$",
+            "Factorising out $a$ from the right-hand side:<br>$$b^5 = a(b^3 - 1)$$",
+            "Dividing both sides of the equation by $(b^3 - 1)$ gives our target proof:<br>$$a = \\dfrac{b^5}{b^3 - 1}$$",
+            "<strong>Part (b):</strong> For the logarithmic terms to be defined, we are given $a > b^2 > 0$ and $b > 0$.",
+            "Looking at our equation $a = \\dfrac{b^5}{b^3 - 1}$, since $a$ must be strictly positive ($a > 0$) and the numerator is positive ($b^5 > 0$, as $b > 0$), the denominator must also be positive to ensure a positive quotient:<br>$$b^3 - 1 > 0 \\implies b^3 > 1 \\implies b > 1$$",
+            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b^5}{b^3 - 1}\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{b^5}{b^3 - 1}$$ <strong>(b)</strong> $$b > 0$$",
+                "feedback": "You probably forgot to account for the positiveness of $a$ when setting your restriction in Part (b). If $b > 0$ but $b < 1$, then $b^3 - 1$ would be negative, making $a$ negative. This violates the original condition that $a > 0$ for $\\log a$ to be defined."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{b^5}{1 - b^3}$$ <strong>(b)</strong> $$b > 1$$",
+                "feedback": "Check your algebraic signs when grouping your $a$ terms in Part (a). Rearranging $a = ab^3 - b^5$ yields $b^5 = ab^3 - a \\implies b^5 = a(b^3 - 1)$. Be careful not to swap the subtraction order of your factor."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$a = \\dfrac{b^5}{b^3 - 1}$$ <strong>(b)</strong> $$b \\ge 1$$",
+                "feedback": "Check your inequality boundary in Part (b). If $b = 1$ exactly, the denominator $(b^3-1)$ becomes $0$, making the fraction undefined. Therefore, the restriction must be a strict inequality: $b > 1$, not $b \\ge 1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: High Power Limits",
+            "content": "Do not let high powers like $b^5$ or $b^3$ intimidate you. The algebraic rules for logarithm subtraction, factoring, and inequality boundaries remain completely identical to simple linear cases. Trust your core algebraic rules."
+        }
     }
+
 
 
 
