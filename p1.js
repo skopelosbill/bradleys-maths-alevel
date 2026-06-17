@@ -1127,7 +1127,203 @@ window.ALEVEL_QUESTIONS = [
       "title": "Spot the Structure",
       "content": "When the transformed equation in Part (b) mirrors the structure of Part (a), a simple substitution often collapses the problem instantly."
     }
-  }
+  },
+    {
+        "id": "004031",
+        "major_area": "Exponentials & Logarithms",
+        "topic": "Exponentials",
+        "subtopic": [
+            "Exponential Modelling"
+        ],
+        "img": false,
+        "question": "In a simple model, the value, £$V$, of a motorcycle depends on its age, $t$, in years.<br>The following information is available for motorcycle $A$:<br><ul><li>its value when new is £15,000</li><li>its value after one year is £12,000</li></ul><strong>(a)</strong> Use an exponential model to form, for motorcycle $A$, a possible equation linking $V$ with $t$.<br>The value of motorcycle $A$ is monitored over an 8-year period. Its value after 8 years is £2,500.<br><strong>(b)</strong> Evaluate the reliability of your model in light of this information.<br>The following information is available for motorcycle $B$:<br><ul><li>it has the same value, when new, as motorcycle $A$</li><li>its value depreciates more slowly than that of motorcycle $A$</li></ul><strong>(c)</strong> Explain how you would adapt the equation found in <strong>(a)</strong> so that it could be used to model the value of motorcycle $B$.",
+        "steps": [
+            "<strong>Part (a):</strong> We define our exponential model in the standard form $V = A b^t$, where $A$ is the initial value and $b$ is the annual multiplier.",
+            "Using the initial condition when the motorcycle is new ($t = 0$):<br>$$15000 = A b^0 \\implies A = 15000$$",
+            "Using the value after one year ($t = 1$):<br>$$12000 = 15000 b^1 \\implies b = \\dfrac{12000}{15000} = 0.8$$",
+            "This gives our final exponential equation linking $V$ with $t$:<br>$$V = 15000(0.8)^t$$",
+            "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>$$V = 15000(0.8)^8 \\approx 15000 \\times 0.16777 \\approx £2,517$$",
+            "The actual monitored value after 8 years is £2,500. Since our model's prediction of £2,517 is extremely close to the actual value, the model is highly reliable over this 8-year period.",
+            "<strong>Part (c):</strong> For motorcycle $B$, which depreciates more slowly, the value must decrease at a slower rate than $20\\%$ per year.<br>Therefore, the base of the exponent (currently $0.8$) must be increased to a value closer to $1$ (for example, $0.85$ or some multiplier $r > 0.8$). The initial value remains at $15000$.",
+            "Final Answer: <strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £2,517\\ vs\\ £2,500)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 15000(r)^t\\ where\\ r > 0.8)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$V = 15000 - 3000t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £2,517\\ vs\\ £2,500)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 15000(r)^t\\ where\\ r > 0.8)$$对外",
+                "feedback": "You formed a linear depreciation model ($V = 15000 - 3000t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$ or $V = A \\text{e}^{-kt}$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £2,517\\ vs\\ £2,500)$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\ (e.g.\\ V = 15000(r)^t\\ where\\ r < 0.8)$$",
+                "feedback": "Check your reasoning for Part (c). If motorcycle $B$ depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier $r$ must be larger (closer to $1$) than $0.8$, not smaller."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$V = 15000(0.2)^t$$ <strong>(b)</strong> $$Model\\ is\\ completely\\ unreliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 15000(r)^t\\ where\\ r > 0.8)$$",
+                "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($20\\% = 0.2$) instead of the remaining value multiplier ($1 - 0.2 = 0.8$). This sign error caused your model to predict the motorcycle's value as almost zero after 8 years."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Base Multipliers",
+            "content": "In GCE exponential modeling, the base of the exponent ($b$ in $A b^t$) always represents the proportion of value retained each year. If an asset depreciates by $20\\%$, it retains $80\\%$ of its value, so $b = 0.8$. If it depreciates more slowly, it retains more value, so $b$ must increase closer to $1$."
+        }
+    },
+    {
+        "id": "004032",
+        "major_area": "Exponentials & Logarithms",
+        "topic": "Exponentials",
+        "subtopic": [
+            "Exponential Modelling"
+        ],
+        "img": false,
+        "question": "In a simple model, the value, £$V$, of an industrial machine depends on its age, $t$, in years.<br>The following information is available for machine $A$:<br><ul><li>its value when new is £50,000</li><li>its value after one year is £42,500</li></ul><strong>(a)</strong> Use an exponential model to form, for machine $A$, a possible equation linking $V$ with $t$.<br>The value of machine $A$ is monitored over a 12-year period. Its value after 12 years is £10,000.<br><strong>(b)</strong> Evaluate the reliability of your model in light of this information.<br>The following information is available for machine $B$:<br><ul><li>it has the same value, when new, as machine $A$</li><li>its value depreciates more slowly than that of machine $A$</li></ul><strong>(c)</strong> Explain how you would adapt the equation found in <strong>(a)</strong> so that it could be used to model the value of machine $B$.",
+        "steps": [
+            "<strong>Part (a):</strong> We define our exponential model in the form $V = A b^t$, where $A$ is the initial value and $b$ is the annual multiplier.",
+            "Using the initial condition when the machine is new ($t = 0$):<br>$$50000 = A b^0 \\implies A = 50000$$",
+            "Using the value after one year ($t = 1$):<br>$$42500 = 50000 b^1 \\implies b = \\dfrac{42500}{50000} = 0.85$$",
+            "This gives our final exponential equation linking $V$ with $t$:<br>$$V = 50000(0.85)^t$$",
+            "<strong>Part (b):</strong> We substitute $t = 12$ into our model to find the predicted value:<br>$$V = 50000(0.85)^{12} \\approx 50000 \\times 0.14224 \\approx £7,112$$",
+            "The actual monitored value after 12 years is £10,000. Since our model's prediction of £7,112 significantly underestimates the actual value, the model has weaker reliability over this longer 12-year period (depreciation in reality is slower than the model predicts).",
+            "<strong>Part (c):</strong> For machine $B$, which depreciates more slowly, the value must decrease at a slower rate than $15\\%$ per year.<br>Therefore, the base of the exponent (currently $0.85$) must be increased to a value closer to $1$ (for example, $0.90$ or some multiplier $r > 0.85$). The initial value remains at $50000$.",
+            "Final Answer: <strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$Model\\ is\\ less\\ reliable\\ (underestimates\\ value\\ by\\ \\approx £2,888)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 50000(r)^t\\ where\\ r > 0.85)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 50000(r)^t\\ where\\ r > 0.85)$$",
+                "feedback": "You probably evaluated the model's reliability incorrectly in Part (b). Our model's prediction is £7,112, which is significantly lower than the actual value of £10,000. An underestimation of almost $30\\%$ indicates that the model's reliability over this 12-year period is weaker."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$V = 50000 - 7500t$$ <strong>(b)</strong> $$Model\\ is\\ less\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 50000(r)^t\\ where\\ r > 0.85)$$",
+                "feedback": "You formed a linear depreciation model ($V = 50000 - 7500t$) instead of an exponential model in Part (a). Make sure you use the standard exponential structure $V = A b^t$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$Model\\ is\\ less\\ reliable$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\ (e.g.\\ V = 50000(r)^t\\ where\\ r < 0.85)$$",
+                "feedback": "Check your reasoning for Part (c). If machine $B$ depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier $r$ must be larger (closer to $1$) than $0.85$, not smaller."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Evaluating Reliability",
+            "content": "In applied modeling, evaluate reliability objectively by comparing the model's prediction with real-world data. If there is a substantial gap (like the underestimation in this question), state clearly that the model's reliability is weak over that timescale and explain whether it overestimates or underestimates reality."
+        }
+    },
+    {
+        "id": "004033",
+        "major_area": "Exponentials & Logarithms",
+        "topic": "Exponentials",
+        "subtopic": [
+            "Exponential Modelling"
+        ],
+        "img": false,
+        "question": "In a simple model, the value, £$V$, of a luxury yacht depends on its age, $t$, in years.<br>The following information is available for yacht $A$:<br><ul><li>its value when new is £100,000</li><li>its value after one year is £90,000</li></ul><strong>(a)</strong> Use an exponential model to form, for yacht $A$, a possible equation linking $V$ with $t$.<br>The value of yacht $A$ is monitored over a 10-year period. Its value after 10 years is £35,000.<br><strong>(b)</strong> Evaluate the reliability of your model in light of this information.<br>The following information is available for yacht $B$:<br><ul><li>it has the same value, when new, as yacht $A$</li><li>its value depreciates more slowly than that of yacht $A$</li></ul><strong>(c)</strong> Explain how you would adapt the equation found in <strong>(a)</strong> so that it could be used to model the value of yacht $B$.",
+        "steps": [
+            "<strong>Part (a):</strong> We define our exponential model in the form $V = A b^t$, where $A$ is the initial value and $b$ is the annual multiplier.",
+            "Using the initial condition when the yacht is new ($t = 0$):<br>$$100000 = A b^0 \\implies A = 100000$$",
+            "Using the value after one year ($t = 1$):<br>$$90000 = 100000 b^1 \\implies b = \\dfrac{90000}{100000} = 0.9$$",
+            "This gives our final exponential equation linking $V$ with $t$:<br>$$V = 100000(0.9)^t$$",
+            "<strong>Part (b):</strong> We substitute $t = 10$ into our model to find the predicted value:<br>$$V = 100000(0.9)^{10} \\approx 100000 \\times 0.34868 \\approx £34,868$$",
+            "The actual monitored value after 10 years is £35,000. Since our model's prediction of £34,868 is extremely close to the actual value, the model is highly reliable over this 10-year period.",
+            "<strong>Part (c):</strong> For yacht $B$, which depreciates more slowly, the value must decrease at a slower rate than $10\\%$ per year.<br>Therefore, the base of the exponent (currently $0.9$) must be increased to a value closer to $1$ (for example, $0.93$ or some multiplier $r > 0.9$). The initial value remains at $100000$.",
+            "Final Answer: <strong>(a)</strong> $$V = 100000(0.9)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £34,868\\ vs\\ £35,000)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 100000(r)^t\\ where\\ r > 0.9)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$V = 100000(0.9)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £34,868\\ vs\\ £35,000)$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\ (e.g.\\ V = 100000(r)^t\\ where\\ r < 0.9)$$",
+                "feedback": "Check your reasoning for Part (c). If yacht $B$ depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier $r$ must be larger (closer to $1$) than $0.9$, not smaller."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$V = 100000 - 10000t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 100000(r)^t\\ where\\ r > 0.9)$$",
+                "feedback": "You formed a linear depreciation model ($V = 100000 - 10000t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$V = 100000(0.1)^t$$ <strong>(b)</strong> $$Model\\ is\\ completely\\ unreliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 100000(r)^t\\ where\\ r > 0.9)$$",
+                "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($10\\% = 0.1$) instead of the remaining value multiplier ($1 - 0.1 = 0.9$). This error caused your model to predict the yacht's value as almost zero after 10 years."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Percentage Depreciation",
+            "content": "Always remember that an annual depreciation of $P\\%$ corresponds to an exponential multiplier of $r = 1 - \\frac{P}{100}$. For a luxury yacht depreciating at $10\\%$ per year, the multiplier is $r = 0.9$. This allows you to construct and adapt these models rapidly."
+        }
+    },
+    {
+        "id": "004034",
+        "major_area": "Exponentials & Logarithms",
+        "topic": "Exponentials",
+        "subtopic": [
+            "Exponential Modelling"
+        ],
+        "img": false,
+        "question": "In a simple model, the value, £$V$, of an agricultural tractor depends on its age, $t$, in years.<br>The following information is available for tractor $A$:<br><ul><li>its value when new is £40,000</li><li>its value after one year is £30,000</li></ul><strong>(a)</strong> Use an exponential model to form, for tractor $A$, a possible equation linking $V$ with $t$.<br>The value of tractor $A$ is monitored over an 8-year period. Its value after 8 years is £4,000.<br><strong>(b)</strong> Evaluate the reliability of your model in light of this information.<br>The following information is available for tractor $B$:<br><ul><li>it has the same value, when new, as tractor $A$</li><li>its value depreciates more slowly than that of tractor $A$</li></ul><strong>(c)</strong> Explain how you would adapt the equation found in <strong>(a)</strong> so that it could be used to model the value of tractor $B$.",
+        "steps": [
+            "<strong>Part (a):</strong> We define our exponential model in the form $V = A b^t$, where $A$ is the initial value and $b$ is the annual multiplier.",
+            "Using the initial condition when the tractor is new ($t = 0$):<br>$$40000 = A b^0 \\implies A = 40000$$",
+            "Using the value after one year ($t = 1$):<br>$$30000 = 40000 b^1 \\implies b = \\dfrac{30000}{40000} = 0.75$$",
+            "This gives our final exponential equation linking $V$ with $t$:<br>$$V = 40000(0.75)^t$$",
+            "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>$$V = 40000(0.75)^8 \\approx 40000 \\times 0.10011 \\approx £4,005$$",
+            "The actual monitored value after 8 years is £4,000. Since our model's prediction of £4,005 is extremely close to the actual value, the model is highly reliable over this 8-year period.",
+            "<strong>Part (c):</strong> For tractor $B$, which depreciates more slowly, the value must decrease at a slower rate than $25\\%$ per year.<br>Therefore, the base of the exponent (currently $0.75$) must be increased to a value closer to $1$ (for example, $0.80$ or some multiplier $r > 0.75$). The initial value remains at $40000$.",
+            "Final Answer: <strong>(a)</strong> $$V = 40000(0.75)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £4,005\\ vs\\ £4,000)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 40000(r)^t\\ where\\ r > 0.75)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$V = 40000(0.75)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £4,005\\ vs\\ £4,000)$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\ (e.g.\\ V = 40000(r)^t\\ where\\ r < 0.75)$$",
+                "feedback": "Check your reasoning for Part (c). If tractor $B$ depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier $r$ must be larger (closer to $1$) than $0.75$, not smaller."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$V = 40000(0.25)^t$$ <strong>(b)</strong> $$Model\\ is\\ completely\\ unreliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 40000(r)^t\\ where\\ r > 0.75)$$",
+                "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($25\\% = 0.25$) instead of the remaining value multiplier ($1 - 0.25 = 0.75$). This error caused your model to predict the tractor's value as almost zero after 8 years."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$V = 40000 - 1250t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 40000(r)^t\\ where\\ r > 0.75)$$",
+                "feedback": "You formed a linear depreciation model ($V = 40000 - 1250t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Exponential decay curves",
+            "content": "In real-world engineering and agricultural economics, assets like tractors depreciate much faster in their first year than in subsequent years. Exponential curves capture this behavior mathematically far better than linear equations, which is why GCE exams heavily favor exponential models."
+        }
+    },
+    {
+        "id": "004035",
+        "major_area": "Exponentials & Logarithms",
+        "topic": "Exponentials",
+        "subtopic": [
+            "Exponential Modelling"
+        ],
+        "img": false,
+        "question": "In a simple model, the value, £$V$, of an electric vehicle (EV) depends on its age, $t$, in years.<br>The following information is available for EV $A$:<br><ul><li>its value when new is £30,000</li><li>its value after one year is £24,000</li></ul><strong>(a)</strong> Use an exponential model to form, for EV $A$, a possible equation linking $V$ with $t$.<br>The value of EV $A$ is monitored over a 6-year period. Its value after 6 years is £7,800.<br><strong>(b)</strong> Evaluate the reliability of your model in light of this information.<br>The following information is available for EV $B$:<br><ul><li>it has the same value, when new, as EV $A$</li><li>its value depreciates more slowly than that of EV $A$</li></ul><strong>(c)</strong> Explain how you would adapt the equation found in <strong>(a)</strong> so that it could be used to model the value of EV $B$.",
+        "steps": [
+            "<strong>Part (a):</strong> We define our exponential model in the form $V = A b^t$, where $A$ is the initial value and $b$ is the annual multiplier.",
+            "Using the initial condition when the EV is new ($t = 0$):<br>$$30000 = A b^0 \\implies A = 30000$$",
+            "Using the value after one year ($t = 1$):<br>$$24000 = 30000 b^1 \\implies b = \\dfrac{24000}{30000} = 0.8$$",
+            "This gives our final exponential equation linking $V$ with $t$:<br>$$V = 30000(0.8)^t$$",
+            "<strong>Part (b):</strong> We substitute $t = 6$ into our model to find the predicted value:<br>$$V = 30000(0.8)^6 \\approx 30000 \\times 0.26214 \\approx £7,864$$",
+            "The actual monitored value after 6 years is £7,800. Since our model's prediction of £7,864 is extremely close to the actual value, the model is highly reliable over this 6-year period.",
+            "<strong>Part (c):</strong> For EV $B$, which depreciates more slowly, the value must decrease at a slower rate than $20\\%$ per year.<br>Therefore, the base of the exponent (currently $0.8$) must be increased to a value closer to $1$ (for example, $0.85$ or some multiplier $r > 0.8$). The initial value remains at $30000$.",
+            "Final Answer: <strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £7,864\\ vs\\ £7,800)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 30000(r)^t\\ where\\ r > 0.8)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £7,864\\ vs\\ £7,800)$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\ (e.g.\\ V = 30000(r)^t\\ where\\ r < 0.8)$$",
+                "feedback": "Check your reasoning for Part (c). If EV $B$ depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier $r$ must be larger (closer to $1$) than $0.8$, not smaller."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$V = 30000(0.2)^t$$ <strong>(b)</strong> $$Model\\ is\\ completely\\ unreliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 30000(r)^t\\ where\\ r > 0.8)$$",
+                "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($20\\% = 0.2$) instead of the remaining value multiplier ($1 - 0.2 = 0.8$). This error caused your model to predict the EV's value as almost zero after 6 years."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$V = 30000 - 6000t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 30000(r)^t\\ where\\ r > 0.8)$$",
+                "feedback": "You formed a linear depreciation model ($V = 30000 - 6000t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Generalizing Models",
+            "content": "In advanced applications, instead of changing the base $b$, you might see models written as $V = A \\text{e}^{-kt}$. To model slower depreciation in this form, you would decrease the value of the decay constant $k$. Both approaches are mathematically equivalent and widely accepted."
+        }
+    }
+
 
 
 
