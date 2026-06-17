@@ -1360,7 +1360,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Net Area Cancellation",
-            "content": "When integrating past a root (like $x = 2$ in this question), the curve changes sign. Definite integration calculates **signed area**, meaning regions above the axis are positive, and regions below are negative. The root $2.721$ is simply the algebraic point where these positive and negative lobes balance out."
+            "content": "When integrating past a root (like $x = 2$ in this question), the curve changes sign. Definite integration calculates <strong>signed area</strong>, meaning regions above the axis are positive, and regions below are negative. The root $2.721$ is simply the algebraic point where these positive and negative lobes balance out."
         }
     },
     {
@@ -1440,7 +1440,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Beautiful Exact Roots",
-            "content": "Notice how Question 004038 resolves to perfectly exact rational and integer roots ($\\frac{4}{3}$ and $4$). In exam conditions, when your calculations collapse into clean integers rather than long decimals, you can have high confidence that your algebraic working is correct."
+            "content": "Notice how this question resolves to perfectly exact rational and integer roots ($\\frac{4}{3}$ and $4$). In exam conditions, when your calculations collapse into clean integers rather than long decimals, you can have high confidence that your algebraic working is correct."
         }
     },
     {
@@ -1520,7 +1520,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Definite Integral Bounds",
-            "content": "Always remember that the definite integral of a function between $a$ and $b$ calculates the **net** area. If your curve lies both below and above the axis over your interval, the positive and negative regions will actively cancel each other out in the final result."
+            "content": "Always remember that the definite integral of a function between $a$ and $b$ calculates the <strong>net</strong> area. If your curve lies both below and above the axis over your interval, the positive and negative regions will actively cancel each other out in the final result."
         }
     }
 
