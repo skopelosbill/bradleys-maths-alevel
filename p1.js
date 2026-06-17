@@ -1730,7 +1730,211 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: High Power Limits",
             "content": "Do not let high powers like $b^5$ or $b^3$ intimidate you. The algebraic rules for logarithm subtraction, factoring, and inequality boundaries remain completely identical to simple linear cases. Trust your core algebraic rules."
         }
+    },
+    {
+        "id": "004046",
+        "major_area": "Proof",
+        "topic": "Proof",
+        "subtopic": [
+            "Proof by Exhaustion",
+            "Inequalities"
+        ],
+        "img": false,
+        "question": "<strong>(i)</strong> Prove that for all $n \\in \\mathbb{N}$, $n^2 + 1$ is not divisible by $3$.<br><br><strong>(ii)</strong> \"Given $x \\in \\mathbb{R}$, the value of $|2x - 12|$ is greater than or equal to the value of $(x - 5)$.\"<br>State, giving a reason, if the above statement is always true, sometimes true, or never true.",
+        "steps": [
+            "<strong>Part (i):</strong> We use <strong>proof by exhaustion</strong> by splitting the natural numbers into three cases based on their divisibility by $3$. Any natural number $n$ can be written as $3k$, $3k+1$, or $3k+2$ for some non-negative integer $k$.",
+            "<strong>Case 1: $n = 3k$ (multiples of 3)</strong><br>$$n^2 + 1 = (3k)^2 + 1 = 9k^2 + 1 = 3(3k^2) + 1$$<br>Since $3(3k^2)$ is divisible by $3$, $n^2+1$ leaves a remainder of $1$ when divided by $3$, so it is not divisible.",
+            "<strong>Case 2: $n = 3k + 1$</strong><br>$$n^2 + 1 = (3k+1)^2 + 1 = 9k^2 + 6k + 1 + 1 = 3(3k^2 + 2k) + 2$$<br>This leaves a remainder of $2$ when divided by $3$, so it is not divisible.",
+            "<strong>Case 3: $n = 3k + 2$</strong><br>$$n^2 + 1 = (3k+2)^2 + 1 = 9k^2 + 12k + 4 + 1 = 9k^2 + 12k + 5 = 3(3k^2 + 4k + 1) + 2$$<br>This also leaves a remainder of $2$ when divided by $3$, so it is not divisible.<br>Therefore, since all possible cases have been exhausted, $n^2 + 1$ is never divisible by $3$ for any $n \\in \\mathbb{N}$.",
+            "<strong>Part (ii):</strong> To determine the validity of the statement $|2x - 12| \\ge x - 5$, we analyze the critical values by splitting the absolute value into two intervals at the boundary $x = 6$:",
+            "<strong>Case A: For $x \\ge 6$</strong>, the term inside the absolute value is positive, so $|2x - 12| = 2x - 12$. Our inequality becomes:<br>$$2x - 12 \\ge x - 5 \\implies x \\ge 7$$<br>This means that in the interval $6 \\le x < 7$, the inequality is <strong>false</strong> (for example, at $x = 6$, we get $0 \\ge 1$, which is false).",
+            "<strong>Case B: For $x < 6$</strong>, the term inside the absolute value is negative, so $|2x - 12| = -(2x - 12) = 12 - 2x$. Our inequality becomes:<br>$$12 - 2x \\ge x - 5 \\implies 17 \\ge 3x \\implies x \\le 5.67$$<br>This means the inequality is true for $x \\le 5.67$ and $x \\ge 7$, but fails in the gap $5.67 < x < 7$.",
+            "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $12 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 6$, where $|2(6)-12| = 0$ is not greater than or equal to $6-5 = 1$).",
+            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\ (fails\\ in\\ the\\ interval\\ 5.67 < x < 7)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Always\\ true$$",
+                "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $5.67 < x < 7$, the value of the linear expression $x-5$ is actually larger than the absolute value $|2x-12|$, making the statement false in this range."
+            },
+            {
+                "ans": "<strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Never\\ true$$",
+                "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-12| \\ge -5 \\implies 12 \\ge -5$, which is a true statement."
+            },
+            {
+                "ans": "<strong>(i)</strong> $$Proof\\ by\\ algebraic\\ induction\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true$$",
+                "feedback": "Part (i) is a proof by exhaustion (cases), not mathematical induction. Induction is used when a statement depends on $n$ and $n+1$ sequences, whereas here we exhaust all possible algebraic remainders of $n$ directly."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Absolute Value Gaps",
+            "content": "For this question, when evaluating inequalities of the form $|Ax - B| \\ge x - C$, always check if the line $y = x - C$ passes above the vertex of the absolute value graph. If it does, there will always be a small 'gap' interval where the absolute value function dips below the line, rendering the statement only sometimes true."
+        }
+    },
+    {
+        "id": "004047",
+        "major_area": "Proof",
+        "topic": "Proof",
+        "subtopic": [
+            "Proof by Exhaustion",
+            "Inequalities"
+        ],
+        "img": false,
+        "question": "<strong>(i)</strong> Prove that for all $n \\in \\mathbb{N}$, $n^2 + 1$ is not divisible by $4$.<br><br><strong>(ii)</strong> \"Given $x \\in \\mathbb{R}$, the value of $|3x - 14|$ is greater than or equal to the value of $(x - 4)$.\"<br>State, giving a reason, if the above statement is always true, sometimes true, or never true.",
+        "steps": [
+            "<strong>Part (i):</strong> We use <strong>proof by exhaustion</strong> by splitting the natural numbers into two cases: even numbers ($n = 2k$) and odd numbers ($n = 2k + 1$) for some non-negative integer $k$.",
+            "<strong>Case 1: $n$ is even ($n = 2k$)</strong><br>$$n^2 + 1 = (2k)^2 + 1 = 4k^2 + 1 = 4(k^2) + 1$$<br>Since $4(k^2)$ is divisible by $4$, $n^2+1$ leaves a remainder of $1$ when divided by $4$, so it is not divisible.",
+            "<strong>Case 2: $n$ is odd ($n = 2k + 1$)</strong><br>$$n^2 + 1 = (2k+1)^2 + 1 = 4k^2 + 4k + 1 + 1 = 4(k^2 + k) + 2$$<br>This leaves a remainder of $2$ when divided by $4$, so it is not divisible.<br>Therefore, since all possible cases have been exhausted, $n^2 + 1$ is never divisible by $4$ for any $n \\in \\mathbb{N}$.",
+            "<strong>Part (ii):</strong> To determine the validity of the statement $|3x - 14| \\ge x - 4$, we analyze the critical values by splitting the absolute value into two intervals at the boundary $x = \\frac{14}{3} \\approx 4.67$:",
+            "<strong>Case A: For $x \\ge 4.67$</strong>, the term inside the absolute value is positive, so $|3x - 14| = 3x - 14$. Our inequality becomes:<br>$$3x - 14 \\ge x - 4 \\implies 2x \\ge 10 \\implies x \\ge 5$$<br>This means that in the interval $4.67 \\le x < 5$, the inequality is <strong>false</strong> (for example, at $x = 4.8$, we get $0.4 \\ge 0.8$, which is false).",
+            "<strong>Case B: For $x < 4.67$</strong>, the term inside the absolute value is negative, so $|3x - 14| = 14 - 3x$. Our inequality becomes:<br>$$14 - 3x \\ge x - 4 \\implies 18 \\ge 4x \\implies x \\le 4.5$$<br>This means the inequality is true for $x \\le 4.5$ and $x \\ge 5$, but fails in the gap $4.5 < x < 5$.",
+            "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $14 \\ge -4$), but fails for a small range of values (with a counterexample of $x = 4.8$, where $|3(4.8)-14| = 0.4$ is not greater than or equal to $4.8-4 = 0.8$).",
+            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\ (fails\\ in\\ the\\ interval\\ 4.5 < x < 5)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Always\\ true$$",
+                "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $4.5 < x < 5$, the value of the linear expression $x-4$ is actually larger than the absolute value $|3x-14|$, making the statement false in this range."
+            },
+            {
+                "ans": "<strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Never\\ true$$",
+                "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-14| \\ge -4 \\implies 14 \\ge -4$, which is a true statement."
+            },
+            {
+                "ans": "<strong>(i)</strong> $$Proof\\ by\\ contradiction\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true$$",
+                "feedback": "Part (i) is a proof by exhaustion (cases), not a proof by contradiction. A proof by contradiction starts by assuming the opposite statement is true and finding a mathematical impossibility, whereas here we systematically test all even and odd possibilities."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Divisibility by 4",
+            "content": "For this question, when proving divisibility or non-divisibility by $4$, splitting your integers into even ($2k$) and odd ($2k+1$) is the most efficient method. This is because any even number squared yields a term strictly divisible by $4$, and any odd number squared yields $4(k^2+k)+1$, making the remainder analysis very straightforward."
+        }
+    },
+    {
+        "id": "004048",
+        "major_area": "Proof",
+        "topic": "Proof",
+        "subtopic": [
+            "Proof by Exhaustion",
+            "Inequalities"
+        ],
+        "img": false,
+        "question": "<strong>(i)</strong> Prove that for all $n \\in \\mathbb{N}$, $n^2 + 5$ is not divisible by $4$.<br><br><strong>(ii)</strong> \"Given $x \\in \\mathbb{R}$, the value of $|2x - 8|$ is greater than or equal to the value of $(x - 3)$.\"<br>State, giving a reason, if the above statement is always true, sometimes true, or never true.",
+        "steps": [
+            "<strong>Part (i):</strong> We use <strong>proof by exhaustion</strong> by splitting the natural numbers into two cases: even numbers ($n = 2k$) and odd numbers ($n = 2k + 1$) for some non-negative integer $k$.",
+            "<strong>Case 1: $n$ is even ($n = 2k$)</strong><br>$$n^2 + 5 = (2k)^2 + 5 = 4k^2 + 5 = 4(k^2 + 1) + 1$$<br>Since $4(k^2+1)$ is divisible by $4$, $n^2+5$ leaves a remainder of $1$ when divided by $4$, so it is not divisible.",
+            "<strong>Case 2: $n$ is odd ($n = 2k + 1$)</strong><br>$$n^2 + 5 = (2k+1)^2 + 5 = 4k^2 + 4k + 1 + 5 = 4k^2 + 4k + 6 = 4(k^2 + k + 1) + 2$$<br>This leaves a remainder of $2$ when divided by $4$, so it is not divisible.<br>Therefore, since all possible cases have been exhausted, $n^2 + 5$ is never divisible by $4$ for any $n \\in \\mathbb{N}$.",
+            "<strong>Part (ii):</strong> To determine the validity of the statement $|2x - 8| \\ge x - 3$, we analyze the critical values by splitting the absolute value into two intervals at the boundary $x = 4$:",
+            "<strong>Case A: For $x \\ge 4$</strong>, the term inside the absolute value is positive, so $|2x - 8| = 2x - 8$. Our inequality becomes:<br>$$2x - 8 \\ge x - 3 \\implies x \\ge 5$$<br>This means that in the interval $4 \\le x < 5$, the inequality is <strong>false</strong> (for example, at $x = 4$, we get $0 \\ge 1$, which is false).",
+            "<strong>Case B: For $x < 4$</strong>, the term inside the absolute value is negative, so $|2x - 8| = 8 - 2x$. Our inequality becomes:<br>$$8 - 2x \\ge x - 3 \\implies 11 \\ge 3x \\implies x \\le 3.67$$<br>This means the inequality is true for $x \\le 3.67$ and $x \\ge 5$, but fails in the gap $3.67 < x < 5$.",
+            "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $8 \\ge -3$), but fails for a small range of values (with a counterexample of $x = 4$, where $|2(4)-8| = 0$ is not greater than or equal to $4-3 = 1$).",
+            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\ (fails\\ in\\ the\\ interval\\ 3.67 < x < 5)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(b)</strong> $$Always\\ true$$",
+                "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $3.67 < x < 5$, the value of the linear expression $x-3$ is actually larger than the absolute value $|2x-8|$, making the statement false in this range."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(b)</strong> $$Never\\ true$$",
+                "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-8| \\ge -3 \\implies 8 \\ge -3$, which is a true statement."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$Proof\\ by\\ counterexample\\ is\\ completed$$ <strong>(b)</strong> $$Sometimes\\ true$$",
+                "feedback": "Part (i) requires a general proof showing the statement is true for *all* $n \\in \\mathbb{N}$, which requires a proof by exhaustion (cases). A proof by counterexample is only used to disprove a statement, not to prove one."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Remainder Equivalents",
+            "content": "In this question, when working with $n^2 + 5$ and dividing by $4$, remember that you can simplify the math by rewriting $5$ as $4 + 1$. This makes $n^2 + 5$ equivalent to $n^2 + 1 \\pmod 4$, meaning the remainders will be identical to those found when expanding $n^2+1$."
+        }
+    },
+    {
+        "id": "004049",
+        "major_area": "Proof",
+        "topic": "Proof",
+        "subtopic": [
+            "Proof by Exhaustion",
+            "Inequalities"
+        ],
+        "img": false,
+        "question": "<strong>(i)</strong> Prove that for all $n \\in \\mathbb{N}$, $n^2 + 2$ is not divisible by $5$.<br><br><strong>(ii)</strong> \"Given $x \\in \\mathbb{R}$, the value of $|4x - 22|$ is greater than or equal to the value of $(x - 5)$.\"<br>State, giving a reason, if the above statement is always true, sometimes true, or never true.",
+        "steps": [
+            "<strong>Part (i):</strong> We use <strong>proof by exhaustion</strong> by splitting the natural numbers into five cases based on their divisibility by $5$. Any natural number $n$ can be written as $5k$, $5k \\pm 1$, or $5k \\pm 2$ for some non-negative integer $k$.",
+            "<strong>Case 1: $n = 5k$ (multiples of 5)</strong><br>$$n^2 + 2 = (5k)^2 + 2 = 25k^2 + 2 = 5(5k^2) + 2$$<br>This leaves a remainder of $2$ when divided by $5$, so it is not divisible.",
+            "<strong>Case 2: $n = 5k \\pm 1$</strong><br>$$n^2 + 2 = (5k \\pm 1)^2 + 2 = 25k^2 \\pm 10k + 1 + 2 = 5(5k^2 \\pm 2k) + 3$$<br>This leaves a remainder of $3$ when divided by $5$, so it is not divisible.",
+            "<strong>Case 3: $n = 5k \\pm 2$</strong><br>$$n^2 + 2 = (5k \\pm 2)^2 + 2 = 25k^2 \\pm 20k + 4 + 2 = 25k^2 \\pm 20k + 6 = 5(5k^2 \\pm 4k + 1) + 1$$<br>This leaves a remainder of $1$ when divided by $5$, so it is not divisible.<br>Therefore, since all possible cases have been exhausted, $n^2 + 2$ is never divisible by $5$ for any $n \\in \\mathbb{N}$.",
+            "<strong>Part (ii):</strong> To determine the validity of the statement $|4x - 22| \\ge x - 5$, we analyze the critical values by splitting the absolute value into two intervals at the boundary $x = 5.5$:",
+            "<strong>Case A: For $x \\ge 5.5$</strong>, the term inside the absolute value is positive, so $|4x - 22| = 4x - 22$. Our inequality becomes:<br>$$4x - 22 \\ge x - 5 \\implies 3x \\ge 17 \\implies x \\ge 5.67$$<br>This means that in the interval $5.5 \\le x < 5.67$, the inequality is <strong>false</strong> (for example, at $x = 5.5$, we get $2 \\ge 0.5$, which is true, but at $x = 5.6$ we get $0.4 \\ge 0.6$, which is false).",
+            "<strong>Case B: For $x < 5.5$</strong>, the term inside the absolute value is negative, so $|4x - 22| = 22 - 4x$. Our inequality becomes:<br>$$22 - 4x \\ge x - 5 \\implies 27 \\ge 5x \\implies x \\le 5.4$$<br>This means the inequality is true for $x \\le 5.4$ and $x \\ge 5.67$, but fails in the gap $5.4 < x < 5.67$.",
+            "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $22 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 5.55$, where $|4(5.55)-22| = 0.2$ is not greater than or equal to $5.55-5 = 0.55$).",
+            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\ (fails\\ in\\ the\\ interval\\ 5.4 < x < 5.67)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(b)</strong> $$Always\\ true$$",
+                "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $5.4 < x < 5.67$, the value of the linear expression $x-5$ is actually larger than the absolute value $|4x-22|$, making the statement false in this range."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(b)</strong> $$Never\\ true$$",
+                "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-22| \\ge -5 \\implies 22 \\ge -5$, which is a true statement."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$Proof\\ by\\ deduction\\ is\\ completed$$ <strong>(b)</strong> $$Sometimes\\ true$$",
+                "feedback": "Part (i) requires a general proof for all $n$, which must be handled by exhaustion (testing all possible remainder cases). A simple algebraic deduction is not enough because $n$ is discrete and can have various remainder properties."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Modulo 5 Groupings",
+            "content": "In this question, when proving divisibility by $5$, we can group our cases into $5k \\pm 1$ and $5k \\pm 2$. Because squaring negative terms yields positive terms, this grouping handles two cases at once, saving you significant time and writing on your exam paper."
+        }
+    },
+    {
+        "id": "004050",
+        "major_area": "Proof",
+        "topic": "Proof",
+        "subtopic": [
+            "Proof by Exhaustion",
+            "Inequalities"
+        ],
+        "img": false,
+        "question": "<strong>(i)</strong> Prove that for all $n \\in \\mathbb{N}$, $n^2 + 3$ is not divisible by $5$.<br><br><strong>(ii)</strong> \"Given $x \\in \\mathbb{R}$, the value of $|3x - 17|$ is greater than or equal to the value of $(x - 5)$.\"<br>State, giving a reason, if the above statement is always true, sometimes true, or never true.",
+        "steps": [
+            "<strong>Part (i):</strong> We use <strong>proof by exhaustion</strong> by splitting the natural numbers into five cases based on their divisibility by $5$. Any natural number $n$ can be written as $5k$, $5k \\pm 1$, or $5k \\pm 2$ for some non-negative integer $k$.",
+            "<strong>Case 1: $n = 5k$ (multiples of 5)</strong><br>$$n^2 + 3 = (5k)^2 + 3 = 25k^2 + 3 = 5(5k^2) + 3$$<br>This leaves a remainder of $3$ when divided by $5$, so it is not divisible.",
+            "<strong>Case 2: $n = 5k \\pm 1$</strong><br>$$n^2 + 3 = (5k \\pm 1)^2 + 3 = 25k^2 \\pm 10k + 1 + 3 = 5(5k^2 \\pm 2k) + 4$$<br>This leaves a remainder of $4$ when divided by $5$, so it is not divisible.",
+            "<strong>Case 3: $n = 5k \\pm 2$</strong><br>$$n^2 + 3 = (5k \\pm 2)^2 + 3 = 25k^2 \\pm 20k + 4 + 3 = 25k^2 \\pm 20k + 7 = 5(5k^2 \\pm 4k + 1) + 2$$<br>This leaves a remainder of $2$ when divided by $5$, so it is not divisible.<br>Therefore, since all possible cases have been exhausted, $n^2 + 3$ is never divisible by $5$ for any $n \\in \\mathbb{N}$.",
+            "<strong>Part (ii):</strong> To determine the validity of the statement $|3x - 17| \\ge x - 5$, we analyze the critical values by splitting the absolute value into two intervals at the boundary $x = 5.67$:",
+            "<strong>Case A: For $x \\ge 5.67$</strong>, the term inside the absolute value is positive, so $|3x - 17| = 3x - 17$. Our inequality becomes:<br>$$3x - 17 \\ge x - 5 \\implies 2x \\ge 12 \\implies x \\ge 6$$<br>This means that in the interval $5.67 \\le x < 6$, the inequality is <strong>false</strong> (for example, at $x = 5.8$, we get $0.4 \\ge 0.8$, which is false).",
+            "<strong>Case B: For $x < 5.67$</strong>, the term inside the absolute value is negative, so $|3x - 17| = 17 - 3x$. Our inequality becomes:<br>$$17 - 3x \\ge x - 5 \\implies 22 \\ge 4x \\implies x \\le 5.5$$<br>This means the inequality is true for $x \\le 5.5$ and $x \\ge 6$, but fails in the gap $5.5 < x < 6$.",
+            "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $17 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 5.8$, where $|3(5.8)-17| = 0.4$ is not greater than or equal to $5.8-5 = 0.8$).",
+            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\ (fails\\ in\\ the\\ interval\\ 5.5 < x < 6)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(b)</strong> $$Always\\ true$$",
+                "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $5.5 < x < 6$, the value of the linear expression $x-5$ is actually larger than the absolute value $|3x-17|$, making the statement false in this range."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(b)</strong> $$Never\\ true$$",
+                "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-17| \\ge -5 \\implies 17 \\ge -5$, which is a true statement."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$Proof\\ by\\ exhaustion\\ of\\ bounds\\ is\\ completed$$ <strong>(b)</strong> $$Sometimes\\ true$$",
+                "feedback": "The standard mathematical name for testing integer remainder cases is a proof by exhaustion (or proof by cases). Avoid using non-standard terms like 'exhaustion of bounds' on your exam script."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Visualising Inequalities",
+            "content": "When analyzing whether an absolute value statement is always, sometimes, or never true, a quick mental sketch of the two functions $y = |Ax - B|$ and $y = x - C$ is incredibly helpful. It instantly reveals if the linear function ever crosses above the v-shaped absolute value boundary."
+        }
     }
+
 
 
 
