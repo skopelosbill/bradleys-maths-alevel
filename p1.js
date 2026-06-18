@@ -2328,7 +2328,233 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Product Rule Fractional Derivatives",
             "content": "When applying the Product Rule to exponential functions with fractional coefficients like $20\\text{e}^{-\\frac{1}{6}x}$, keep your derivatives in exact fraction form ($u' = -\\frac{10}{3}\\text{e}^{-\\frac{1}{6}x}$) rather than decimals. This allows you to factorise the common term cleanly and secures your algebraic proofs."
         }
+    },
+    {
+        "id": "004061",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Area Under a Curve",
+            "Partial Fractions"
+        ],
+        "img": "images/p1/004061.png",
+        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 2x}{(2x - q)(x + 2)} \\quad x \\in \\mathbb{R}, \\ x \\ne -2, \\ x \\ne 3$$<br>where $p$ and $q$ are constants, passes through the point $(4, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 3$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 14$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 4$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3 + c\\ln 7$, where $a$, $b$, and $c$ are rational constants to be found.",
+        "steps": [
+            "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>$$(2x - q)(x + 2) = 0 \\implies x = \\frac{q}{2} \\quad \\text{and} \\quad x = -2$$",
+            "Since we are given that the vertical asymptotes have equations $x = 3$ and $x = -2$, we can equate the root terms:<br>$$\\frac{q}{2} = 3 \\implies q = 6$$",
+            "<strong>Part (a)(ii):</strong> Substituting our calculated value of $q = 6$ into the curve's equation gives:<br>$$y = \\dfrac{p - 2x}{(2x - 6)(x + 2)}$$",
+            "Since the curve passes through the point $(4, \\frac{1}{2})$, we substitute $x = 4$ and $y = \\frac{1}{2}$ into the equation to solve for $p$:<br>$$\\frac{1}{2} = \\dfrac{p - 2(4)}{(2(4) - 6)(4 + 2)} \\implies \\frac{1}{2} = \\dfrac{p - 8}{(2)(6)}$$<br>$$\\frac{1}{2} = \\dfrac{p - 8}{12} \\implies 6 = p - 8 \\implies p = 14$$",
+            "<strong>Part (b):</strong> To find the area of the region $R$, we must find where the curve crosses the $x$-axis (the $x$-intercept). Setting $y = 0$ in the numerator gives:<br>$$14 - 2x = 0 \\implies 2x = 14 \\implies x = 7$$",
+            "Therefore, the region $R$ is bounded on the $x$-axis between $x = 4$ and $x = 7$.<br><br>Here is the completed diagram showing these key features and the vertical asymptote at $x = 3$:<br><img src='images/p1/004061_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'><br>Since the curve lies above the $x$-axis in this interval ($y > 0$), the area of $R$ is given by the definite integral:<br>$$\\text{Area} = \\int_{4}^{7} \\dfrac{14 - 2x}{(2x - 6)(x + 2)} \\text{ d}x$$",
+            "We simplify the integrand by factorising and cancelling a common factor of $2$:<br>$$\\dfrac{14 - 2x}{(2x - 6)(x + 2)} = \\dfrac{-2(x - 7)}{2(x - 3)(x + 2)} = -\\dfrac{x - 7}{(x - 3)(x + 2)}$$",
+            "Now, we express this integrand in **partial fractions**:<br>$$-\\dfrac{x - 7}{(x - 3)(x + 2)} = \\dfrac{A}{x - 3} + \\dfrac{B}{x + 2}$$<br>$$14 - 2x = A(x + 2) + B(x - 3)$$",
+            "Using the substitution method to solve for the coefficients:<br>1. Setting $x = 3 \\implies 14 - 2(3) = A(3 + 2) \\implies 8 = 5A \\implies A = \\frac{4}{5}$ (noting the scale factor of $2$ cancelled earlier).<br>2. Setting $x = -2 \\implies 14 - 2(-2) = B(-2 - 3) \\implies 18 = -5B \\implies B = -\\frac{9}{5}$",
+            "Substituting these coefficients back into our integral gives:<br>$$\\text{Area} = \\int_{4}^{7} \\left( \\dfrac{4/5}{x - 3} - \\dfrac{9/5}{x + 2} \\right) \\text{ d}x = \\left[ \\frac{4}{5}\\ln|x - 3| - \\frac{9}{5}\\ln|x + 2| \\right]_{4}^{7}$$",
+            "Evaluating this expression at our upper limit ($7$) and lower limit ($4$):<br>$$\\text{Value at 7} = \\frac{4}{5}\\ln(4) - \\frac{9}{5}\\ln(9) = \\frac{8}{5}\\ln(2) - \\frac{18}{5}\\ln(3)$$<br>$$\\text{Value at 4} = \\frac{4}{5}\\ln(1) - \\frac{9}{5}\\ln(6) = 0 - \\frac{9}{5}(\\ln 2 + \\ln 3) = -\\frac{9}{5}\\ln(2) - \\frac{9}{5}\\ln(3)$$",
+            "Subtracting the lower limit value from the upper limit value yields:<br>$$\\text{Area} = \\left( \\frac{8}{5}\\ln 2 - \\frac{18}{5}\\ln 3 \\right) - \\left( -\\frac{9}{5}\\ln 2 - \\frac{9}{5}\\ln 3 \\right)$$<br>$$\\text{Area} = \\left( \\frac{8 + 9}{5} \\right)\\ln 2 + \\left( \\frac{-18 + 9}{5} \\right)\\ln 3 = \\frac{17}{5}\\ln 2 - \\frac{9}{5}\\ln 3$$<br>Therefore, the constants are $a = \\frac{17}{5}$, $b = -\\frac{9}{5}$, and $c = 0$.",
+            "Final Answer: <strong>(a)(i)</strong> $$q = 6$$ <strong>(a)(ii)</strong> $$p = 14$$ <strong>(b)</strong> $$\\dfrac{17}{5}\\ln 2 - \\dfrac{9}{5}\\ln 3$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 3$$ <strong>(a)(ii)</strong> $$p = 14$$ <strong>(b)</strong> $$\\dfrac{17}{5}\\ln 2 - \\dfrac{9}{5}\\ln 3$$",
+                "feedback": "You probably made a division slip in Part (a)(i). The denominator term $2x - q = 0$ yields $x = \\frac{q}{2}$. Equating this to the asymptote $x = 3$ gives $\\frac{q}{2} = 3 \\implies q = 6$, not $q = 3$."
+            },
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 6$$ <strong>(a)(ii)</strong> $$p = 14$$ <strong>(b)</strong> $$\\dfrac{17}{5}\\ln 2 + \\dfrac{9}{5}\\ln 3$$",
+                "feedback": "Check your signs in Part (b). When subtracting the lower limit term, the double negative becomes a positive, yielding $-\\frac{18}{5}\\ln 3 - (-\\frac{9}{5}\\ln 3) = -\\frac{9}{5}\\ln 3$. Be careful when combining logarithm terms."
+            },
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 6$$ <strong>(a)(ii)</strong> $$p = 14$$ <strong>(b)</strong> $$\\dfrac{8}{5}\\ln 2 - \\dfrac{18}{5}\\ln 3$$",
+                "feedback": "You probably forgot to subtract the lower limit value ($x=4$) at the end of Part (b). Remember to substitute both limits into your integrated function: $\\text{Area} = \\text{F}(7) - \\text{F}(4)$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Simplifying Integrands",
+            "content": "In this question, before starting your partial fractions, always look for common numerical factors in your numerator and denominator. Factorising and cancelling out the $2$ from $14-2x$ and $2x-6$ simplifies the algebra of your partial fractions significantly, reducing your chance of calculation errors."
+        }
+    },
+    {
+        "id": "004062",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Area Under a Curve",
+            "Partial Fractions"
+        ],
+        "img": "images/p1/004062.png",
+        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 3x}{(3x - q)(x + 2)} \\quad x \\in \\mathbb{R}, \\ x \\ne -2, \\ x \\ne 1$$<br>where $p$ and $q$ are constants, passes through the point $(2, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 1$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 3$.<br><strong>(a)(ii)</strong> Show that $p = 12$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 2$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3$, where $a$ and $b$ are rational constants to be found.",
+        "steps": [
+            "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>$$(3x - q)(x + 2) = 0 \\implies x = \\frac{q}{3} \\quad \\text{and} \\quad x = -2$$",
+            "Since we are given that the vertical asymptotes have equations $x = 1$ and $x = -2$, we can equate the root terms:<br>$$\\frac{q}{3} = 1 \\implies q = 3$$",
+            "<strong>Part (a)(ii):</strong> Substituting our calculated value of $q = 3$ into the curve's equation gives:<br>$$y = \\dfrac{p - 3x}{(3x - 3)(x + 2)}$$",
+            "Since the curve passes through the point $(2, \\frac{1}{2})$, we substitute $x = 2$ and $y = \\frac{1}{2}$ into the equation to solve for $p$:<br>$$\\frac{1}{2} = \\dfrac{p - 3(2)}{(3(2) - 3)(2 + 2)} \\implies \\frac{1}{2} = \\dfrac{p - 6}{(3)(4)}$$<br>$$\\frac{1}{2} = \\dfrac{p - 6}{12} \\implies 6 = p - 6 \\implies p = 12$$",
+            "<strong>Part (b):</strong> To find the area of the region $R$, we must find where the curve crosses the $x$-axis (the $x$-intercept). Setting $y = 0$ in the numerator gives:<br>$$12 - 3x = 0 \\implies 3x = 12 \\implies x = 4$$",
+            "Therefore, the region $R$ is bounded on the $x$-axis between $x = 2$ and $x = 4$.<br><br>Here is the completed diagram showing these key features and the vertical asymptote at $x = 1$:<br><img src='images/p1/004062_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'><br>Since the curve lies above the $x$-axis in this interval ($y > 0$), the area of $R$ is given by the definite integral:<br>$$\\text{Area} = \\int_{2}^{4} \\dfrac{12 - 3x}{(3x - 3)(x + 2)} \\text{ d}x$$",
+            "We simplify the integrand by factorising and cancelling a common factor of $3$:<br>$$\\dfrac{12 - 3x}{(3x - 3)(x + 2)} = \\dfrac{-3(x - 4)}{3(x - 1)(x + 2)} = -\\dfrac{x - 4}{(x - 1)(x + 2)}$$",
+            "Now, we express this integrand in **partial fractions**:<br>$$-\\dfrac{x - 4}{(x - 1)(x + 2)} = \\dfrac{A}{x - 1} + \\dfrac{B}{x + 2}$$<br>$$4 - x = A(x + 2) + B(x - 1)$$",
+            "Using the substitution method to solve for the coefficients:<br>1. Setting $x = 1 \\implies 4 - (1) = A(1 + 2) \\implies 3 = 3A \\implies A = 1$.<br>2. Setting $x = -2 \\implies 4 - (-2) = B(-2 - 1) \\implies 6 = -3B \\implies B = -2$.",
+            "Substituting these coefficients back into our integral gives:<br>$$\\text{Area} = \\int_{2}^{4} \\left( \\dfrac{1}{x - 1} - \\dfrac{2}{x + 2} \\right) \\text{ d}x = \\left[ \\ln|x - 1| - 2\\ln|x + 2| \\right]_{2}^{4}$$",
+            "Evaluating this expression at our upper limit ($4$) and lower limit ($2$):<br>$$\\text{Value at 4} = \\ln(3) - 2\\ln(6) = \\ln(3) - 2(\\ln 2 + \\ln 3) = -2\\ln(2) - \\ln(3)$$<br>$$\\text{Value at 2} = \\ln(1) - 2\\ln(4) = 0 - 2(2\\ln 2) = -4\\ln(2)$$",
+            "Subtracting the lower limit value from the upper limit value yields:<br>$$\\text{Area} = \\left( -2\\ln 2 - \\ln 3 \\right) - \\left( -4\\ln 2 \\right)$$<br>$$\\text{Area} = 2\\ln 2 - \\ln 3$$<br>Therefore, the constants are $a = 2$ and $b = -1$.",
+            "Final Answer: <strong>(a)(i)</strong> $$q = 3$$ <strong>(a)(ii)</strong> $$p = 12$$ <strong>(b)</strong> $$2\\ln 2 - \\ln 3$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 1$$ <strong>(a)(ii)</strong> $$p = 12$$ <strong>(b)</strong> $$2\\ln 2 - \\ln 3$$",
+                "feedback": "You probably made a division slip in Part (a)(i). The denominator term $3x - q = 0$ yields $x = \\frac{q}{3}$. Equating this to the asymptote $x = 1$ gives $\\frac{q}{3} = 1 \\implies q = 3$, not $q = 1$."
+            },
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 3$$ <strong>(a)(ii)</strong> $$p = 12$$ <strong>(b)</strong> $$2\\ln 2 + \\ln 3$$",
+                "feedback": "Check your signs in Part (b). When subtracting the lower limit term, the double negative becomes a positive, yielding $-\\ln 3 - (-4\\ln 2) = 2\\ln 2 - \ln 3$. Be careful when combining logarithm terms."
+            },
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 3$$ <strong>(a)(ii)</strong> $$p = 12$$ <strong>(b)</strong> $$-2\\ln 2 - \\ln 3$$",
+                "feedback": "You probably forgot to subtract the lower limit value ($x=2$) at the end of Part (b). Remember to substitute both limits into your integrated function: $\\text{Area} = \\text{F}(4) - \\text{F}(2)$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Simplifications of Log 6",
+            "content": "In GCE integration questions, terms like $\\ln 6$ can always be split into $\\ln 2 + \\ln 3$. Expressing your log terms in their prime bases allows you to combine coefficients cleanly and secures your final proof forms."
+        }
+    },
+    {
+        "id": "004063",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Area Under a Curve",
+            "Partial Fractions"
+        ],
+        "img": "images/p1/004063.png",
+        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 4x}{(2x - q)(x + 1)} \\quad x \\in \\mathbb{R}, \\ x \\ne -1, \\ x \\ne 2$$<br>where $p$ and $q$ are constants, passes through the point $(3, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 2$ and $x = -1$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 4$.<br><strong>(a)(ii)</strong> Show that $p = 16$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 3$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 5$, where $a$ and $b$ are rational constants to be found.",
+        "steps": [
+            "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>$$(2x - q)(x + 1) = 0 \\implies x = \\frac{q}{2} \\quad \\text{and} \\quad x = -1$$",
+            "Since we are given that the vertical asymptotes have equations $x = 2$ and $x = -1$, we can equate the root terms:<br>$$\\frac{q}{2} = 2 \\implies q = 4$$",
+            "<strong>Part (a)(ii):</strong> Substituting our calculated value of $q = 4$ into the curve's equation gives:<br>$$y = \\dfrac{p - 4x}{(2x - 4)(x + 1)}$$",
+            "Since the curve passes through the point $(3, \\frac{1}{2})$, we substitute $x = 3$ and $y = \\frac{1}{2}$ into the equation to solve for $p$:<br>$$\\frac{1}{2} = \\dfrac{p - 4(3)}{(2(3) - 4)(3 + 1)} \\implies \\frac{1}{2} = \\dfrac{p - 12}{(2)(4)}$$<br>$$\\frac{1}{2} = \\dfrac{p - 12}{8} \\implies 4 = p - 12 \\implies p = 16$$",
+            "<strong>Part (b):</strong> To find the area of the region $R$, we must find where the curve crosses the $x$-axis (the $x$-intercept). Setting $y = 0$ in the numerator gives:<br>$$16 - 4x = 0 \\implies 4x = 16 \\implies x = 4$$",
+            "Therefore, the region $R$ is bounded on the $x$-axis between $x = 3$ and $x = 4$.<br><br>Here is the completed diagram showing these key features and the vertical asymptote at $x = 2$:<br><img src='images/p1/004063_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'><br>Since the curve lies above the $x$-axis in this interval ($y > 0$), the area of $R$ is given by the definite integral:<br>$$\\text{Area} = \\int_{3}^{4} \\dfrac{16 - 4x}{(2x - 4)(x + 1)} \\text{ d}x$$",
+            "We simplify the integrand by factorising and cancelling a common factor of $2$:<br>$$\\dfrac{16 - 4x}{(2x - 4)(x + 1)} = \\dfrac{-4(x - 4)}{2(x - 2)(x + 1)} = -2\\dfrac{x - 4}{(x - 2)(x + 1)}$$",
+            "Now, we express this integrand in **partial fractions**:<br>$$-2\\dfrac{x - 4}{(x - 2)(x + 1)} = \\dfrac{A}{x - 2} + \\dfrac{B}{x + 1}$$<br>$$8 - 2x = A(x + 1) + B(x - 2)$$",
+            "Using the substitution method to solve for the coefficients:<br>1. Setting $x = 2 \\implies 8 - 2(2) = A(2 + 1) \\implies 4 = 3A \\implies A = \\frac{4}{3}$.<br>2. Setting $x = -1 \\implies 8 - 2(-1) = B(-1 - 2) \\implies 10 = -3B \\implies B = -\\frac{10}{3}$.",
+            "Substituting these coefficients back into our integral gives:<br>$$\\text{Area} = \\int_{3}^{4} \\left( \\dfrac{4/3}{x - 2} - \\dfrac{10/3}{x + 1} \\right) \\text{ d}x = \\left[ \\frac{4}{3}\\ln|x - 2| - \\frac{10}{3}\\ln|x + 1| \\right]_{3}^{4}$$",
+            "Evaluating this expression at our upper limit ($4$) and lower limit ($3$):<br>$$\\text{Value at 4} = \\frac{4}{3}\\ln(2) - \\frac{10}{3}\\ln(5)$$<br>$$\\text{Value at 3} = \\frac{4}{3}\\ln(1) - \\frac{10}{3}\\ln(4) = 0 - \\frac{10}{3}(2\\ln 2) = -\\frac{20}{3}\\ln(2)$$",
+            "Subtracting the lower limit value from the upper limit value yields:<br>$$\\text{Area} = \\left( \\frac{4}{3}\\ln 2 - \\frac{10}{3}\\ln 5 \\right) - \\left( -\\frac{20}{3}\\ln 2 \\right)$$<br>$$\\text{Area} = \\left( \\frac{4 + 20}{3} \\right)\\ln 2 - \\frac{10}{3}\\ln 5 = 8\\ln 2 - \\frac{10}{3}\\ln 5$$<br>Therefore, the constants are $a = 8$ and $b = -\\frac{10}{3}$.",
+            "Final Answer: <strong>(a)(i)</strong> $$q = 4$$ <strong>(a)(ii)</strong> $$p = 16$$ <strong>(b)</strong> $$8\\ln 2 - \\dfrac{10}{3}\\ln 5$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 2$$ <strong>(a)(ii)</strong> $$p = 16$$ <strong>(b)</strong> $$8\\ln 2 - \\dfrac{10}{3}\\ln 5$$",
+                "feedback": "You probably made a division slip in Part (a)(i). The denominator term $2x - q = 0$ yields $x = \\frac{q}{2}$. Equating this to the asymptote $x = 2$ gives $\\frac{q}{2} = 2 \\implies q = 4$, not $q = 2$."
+            },
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 4$$ <strong>(a)(ii)</strong> $$p = 16$$ <strong>(b)</strong> $$8\\ln 2 + \\dfrac{10}{3}\\ln 5$$",
+                "feedback": "Check your signs in Part (b). The negative sign attached to the coefficient of $\\ln 5$ remains negative upon subtraction because the lower limit evaluated to $0$ for that term: $-\\frac{10}{3}\\ln 5 - 0 = -\\frac{10}{3}\\ln 5$."
+            },
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 4$$ <strong>(a)(ii)</strong> $$p = 16$$ <strong>(b)</strong> $$\\dfrac{22}{3}\\ln 2 - \\dfrac{10}{3}\\ln 5$$",
+                "feedback": "Check your fraction addition at the end of Part (b). When combining your $\\ln 2$ terms, you must add $\\frac{4}{3} + \\frac{20}{3} = \\frac{24}{3}$, which simplifies perfectly to the integer $8$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Power Laws",
+            "content": "When evaluating terms like $\\ln 4$ at the lower limit, always apply the power law to rewrite it as $2\\ln 2$ before combining. Failing to reduce composite bases like $4$ to prime bases like $2$ is the most common reason students fail to match the target form of the proof."
+        }
+    },
+    {
+        "id": "004064",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Area Under a Curve",
+            "Partial Fractions"
+        ],
+        "img": "images/p1/004064.png",
+        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 2x}{(3x - q)(x + 1)} \\quad x \\in \\mathbb{R}, \\ x \\ne -1, \\ x \\ne 2$$<br>where $p$ and $q$ are constants, passes through the point $(3, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 2$ and $x = -1$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 12$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 3$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 7$, where $a$ and $b$ are rational constants to be found.",
+        "steps": [
+            "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>$$(3x - q)(x + 1) = 0 \\implies x = \\frac{q}{3} \\quad \\text{and} \\quad x = -1$$",
+            "Since we are given that the vertical asymptotes have equations $x = 2$ and $x = -1$, we can equate the root terms:<br>$$\\frac{q}{3} = 2 \\implies q = 6$$",
+            "<strong>Part (a)(ii):</strong> Substituting our calculated value of $q = 6$ into the curve's equation gives:<br>$$y = \\dfrac{p - 2x}{(3x - 6)(x + 1)}$$",
+            "Since the curve passes through the point $(3, \\frac{1}{2})$, we substitute $x = 3$ and $y = \\frac{1}{2}$ into the equation to solve for $p$:<br>$$\\frac{1}{2} = \\dfrac{p - 2(3)}{(3(3) - 6)(3 + 1)} \\implies \\frac{1}{2} = \\dfrac{p - 6}{(3)(4)}$$<br>$$\\frac{1}{2} = \\dfrac{p - 6}{12} \\implies 6 = p - 6 \\implies p = 12$$",
+            "<strong>Part (b):</strong> To find the area of the region $R$, we must find where the curve crosses the $x$-axis (the $x$-intercept). Setting $y = 0$ in the numerator gives:<br>$$12 - 2x = 0 \\implies 2x = 12 \\implies x = 6$$",
+            "Therefore, the region $R$ is bounded on the $x$-axis between $x = 3$ and $x = 6$.<br><br>Here is the completed diagram showing these key features and the vertical asymptote at $x = 2$:<br><img src='images/p1/004064_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'><br>Since the curve lies above the $x$-axis in this interval ($y > 0$), the area of $R$ is given by the definite integral:<br>$$\\text{Area} = \\int_{3}^{6} \\dfrac{12 - 2x}{(3x - 6)(x + 1)} \\text{ d}x$$",
+            "We simplify the integrand by factorising:<br>$$\\dfrac{12 - 2x}{(3x - 6)(x + 1)} = \\dfrac{2(6 - x)}{3(x - 2)(x + 1)} = \\dfrac{2}{3} \\dfrac{6 - x}{(x - 2)(x + 1)}$$",
+            "Now, we express this integrand in **partial fractions**:<br>$$\\dfrac{2}{3} \\dfrac{6 - x}{(x - 2)(x + 1)} = \\dfrac{A}{x - 2} + \\dfrac{B}{x + 1}$$<br>$$12 - 2x = 3A(x + 1) + 3B(x - 2) = 3(A + B)x + 3(A - 2B)$$",
+            "Using the substitution method to solve for the coefficients:<br>1. Setting $x = 2 \\implies 12 - 2(2) = 3A(2 + 1) \\implies 8 = 9A \\implies A = \\frac{8}{9}$.<br>2. Setting $x = -1 \\implies 12 - 2(-1) = 3B(-1 - 2) \\implies 14 = -9B \\implies B = -\\frac{14}{9}$.",
+            "Substituting these coefficients back into our integral gives:<br>$$\\text{Area} = \\int_{3}^{6} \\left( \\dfrac{8/9}{x - 2} - \\dfrac{14/9}{x + 1} \\right) \\text{ d}x = \\left[ \\frac{8}{9}\\ln|x - 2| - \\frac{14}{9}\\ln|x + 1| \\right]_{3}^{6}$$",
+            "Evaluating this expression at our upper limit ($6$) and lower limit ($3$):<br>$$\\text{Value at 6} = \\frac{8}{9}\\ln(4) - \\frac{14}{9}\\ln(7) = \\frac{16}{9}\\ln(2) - \\frac{14}{9}\\ln(7)$$<br>$$\\text{Value at 3} = \\frac{8}{9}\\ln(1) - \\frac{14}{9}\\ln(4) = 0 - \\frac{14}{9}(2\\ln 2) = -\\frac{28}{9}\\ln(2)$$",
+            "Subtracting the lower limit value from the upper limit value yields:<br>$$\\text{Area} = \\left( \\frac{16}{9}\\ln 2 - \\frac{14}{9}\\ln 7 \\right) - \\left( -\\frac{28}{9}\\ln 2 \\right)$$<br>$$\\text{Area} = \\left( \\frac{16 + 28}{9} \\right)\\ln 2 - \\frac{14}{9}\\ln 7 = \\frac{44}{9}\\ln 2 - \\frac{14}{9}\\ln 7$$<br>Therefore, the constants are $a = \\frac{44}{9}$ and $b = -\\frac{14}{9}$.",
+            "Final Answer: <strong>(a)(i)</strong> $$q = 6$$ <strong>(a)(ii)</strong> $$p = 12$$ <strong>(b)</strong> $$\\dfrac{44}{9}\\ln 2 - \\dfrac{14}{9}\\ln 7$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 2$$ <strong>(a)(ii)</strong> $$p = 12$$ <strong>(b)</strong> $$\\dfrac{44}{9}\\ln 2 - \\dfrac{14}{9}\\ln 7$$",
+                "feedback": "You probably made a division slip in Part (a)(i). The denominator term $3x - q = 0$ yields $x = \\frac{q}{3}$. Equating this to the asymptote $x = 2$ gives $\\frac{q}{3} = 2 \\implies q = 6$, not $q = 2$."
+            },
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 6$$ <strong>(a)(ii)</strong> $$p = 12$$ <strong>(b)</strong> $$\\dfrac{44}{9}\\ln 2 + \\dfrac{14}{9}\\ln 7$$",
+                "feedback": "Check your signs in Part (b). The negative sign attached to the coefficient of $\\ln 7$ remains negative upon subtraction because the lower limit evaluated to $0$ for that term: $-\\frac{14}{9}\\ln 7 - 0 = -\\frac{14}{9}\\ln 7$."
+            },
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 6$$ <strong>(a)(ii)</strong> $$p = 12$$ <strong>(b)</strong> $$\\dfrac{16}{9}\\ln 2 - \\dfrac{14}{9}\\ln 7$$",
+                "feedback": "You probably forgot to subtract the lower limit value ($x=3$) at the end of Part (b). Remember to substitute both limits into your integrated function: $\\text{Area} = \\text{F}(6) - \\text{F}(3)$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Integral Limits",
+            "content": "In GCE questions, finding the upper limit of your shaded region is an active step. Even if it is not explicitly labeled on the diagram, you must determine it yourself by finding the $x$-intercept where the curve cuts the $x$-axis (setting $y=0$)."
+        }
+    },
+    {
+        "id": "004065",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Area Under a Curve",
+            "Partial Fractions"
+        ],
+        "img": "images/p1/004065.png",
+        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 3x}{(2x - q)(x + 2)} \\quad x \\in \\mathbb{R}, \\ x \\ne -2, \\ x \\ne 3$$<br>where $p$ and $q$ are constants, passes through the point $(4, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 3$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 18$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 4$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3$, where $a$ and $b$ are rational constants to be found.",
+        "steps": [
+            "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>$$(2x - q)(x + 2) = 0 \\implies x = \\frac{q}{2} \\quad \\text{and} \\quad x = -2$$",
+            "Since we are given that the vertical asymptotes have equations $x = 3$ and $x = -2$, we can equate the root terms:<br>$$\\frac{q}{2} = 3 \\implies q = 6$$",
+            "<strong>Part (a)(ii):</strong> Substituting our calculated value of $q = 6$ into the curve's equation gives:<br>$$y = \\dfrac{p - 3x}{(2x - 6)(x + 2)}$$",
+            "Since the curve passes through the point $(4, \\frac{1}{2})$, we substitute $x = 4$ and $y = \\frac{1}{2}$ into the equation to solve for $p$:<br>$$\\frac{1}{2} = \\dfrac{p - 3(4)}{(2(4) - 6)(4 + 2)} \\implies \\frac{1}{2} = \\dfrac{p - 12}{(2)(6)}$$<br>$$\\frac{1}{2} = \\dfrac{p - 12}{12} \\implies 6 = p - 12 \\implies p = 18$$",
+            "<strong>Part (b):</strong> To find the area of the region $R$, we must find where the curve crosses the $x$-axis (the $x$-intercept). Setting $y = 0$ in the numerator gives:<br>$$18 - 3x = 0 \\implies 3x = 18 \\implies x = 6$$",
+            "Therefore, the region $R$ is bounded on the $x$-axis between $x = 4$ and $x = 6$.<br><br>Here is the completed diagram showing these key features and the vertical asymptote at $x = 3$:<br><img src='images/p1/004065_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'><br>Since the curve lies above the $x$-axis in this interval ($y > 0$), the area of $R$ is given by the definite integral:<br>$$\\text{Area} = \\int_{4}^{6} \\dfrac{18 - 3x}{(2x - 6)(x + 2)} \\text{ d}x$$",
+            "We simplify the integrand by factorising:<br>$$\\dfrac{18 - 3x}{(2x - 6)(x + 2)} = \\dfrac{3(6 - x)}{2(x - 3)(x + 2)} = \\dfrac{3}{2} \\dfrac{6 - x}{(x - 3)(x + 2)}$$",
+            "Now, we express this integrand in **partial fractions**:<br>$$\\dfrac{3}{2} \\dfrac{6 - x}{(x - 3)(x + 2)} = \\dfrac{A}{x - 3} + \\dfrac{B}{x + 2}$$<br>$$18 - 3x = 2A(x + 2) + 2B(x - 3) = 2(A + B)x + 2(2A - 3B)$$",
+            "Using the substitution method to solve for the coefficients:<br>1. Setting $x = 3 \\implies 18 - 3(3) = 2A(3 + 2) \\implies 9 = 10A \\implies A = \\frac{9}{10}$.<br>2. Setting $x = -2 \\implies 18 - 3(-2) = 2B(-2 - 3) \\implies 24 = -10B \\implies B = -\\frac{12}{5}$.",
+            "Substituting these coefficients back into our integral gives:<br>$$\\text{Area} = \\int_{4}^{6} \\left( \\dfrac{9/10}{x - 3} - \\dfrac{12/5}{x + 2} \\right) \\text{ d}x = \\left[ \\frac{9}{10}\\ln|x - 3| - \\frac{12}{5}\\ln|x + 2| \\right]_{4}^{6}$$",
+            "Evaluating this expression at our upper limit ($6$) and lower limit ($4$):<br>$$\\text{Value at 6} = \\frac{9}{10}\\ln(3) - \\frac{12}{5}\\ln(8) = \\frac{9}{10}\\ln(3) - \\frac{12}{5}(3\\ln 2) = -\\frac{36}{5}\\ln(2) + \\frac{9}{10}\\ln(3)$$<br>$$\\text{Value at 4} = \\frac{9}{10}\\ln(1) - \\frac{12}{5}\\ln(6) = 0 - \\frac{12}{5}(\\ln 2 + \\ln 3) = -\\frac{12}{5}\\ln(2) - \\frac{12}{5}\\ln(3)$$",
+            "Subtracting the lower limit value from the upper limit value yields:<br>$$\\text{Area} = \\left( -\\frac{36}{5}\\ln 2 + \\frac{9}{10}\\ln 3 \\right) - \\left( -\\frac{12}{5}\\ln 2 - \\frac{12}{5}\\ln 3 \\right)$$<br>$$\\text{Area} = \\left( -\\frac{36}{5} + \\frac{12}{5} \\right)\\ln 2 + \\left( \\frac{9}{10} + \\frac{24}{10} \\right)\\ln 3 = -\\frac{24}{5}\\ln 2 + \\frac{33}{10}\\ln 3$$<br>Therefore, the constants are $a = -\\frac{24}{5}$ and $b = \\frac{33}{10}$.",
+            "Final Answer: <strong>(a)(i)</strong> $$q = 6$$ <strong>(a)(ii)</strong> $$p = 18$$ <strong>(b)</strong> $$-\\dfrac{24}{5}\\ln 2 + \\dfrac{33}{10}\\ln 3$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 3$$ <strong>(a)(ii)</strong> $$p = 18$$ <strong>(b)</strong> $$-\\dfrac{24}{5}\\ln 2 + \\dfrac{33}{10}\\ln 3$$",
+                "feedback": "You probably made a division slip in Part (a)(i). The denominator term $2x - q = 0$ yields $x = \\frac{q}{2}$. Equating this to the asymptote $x = 3$ gives $\\frac{q}{2} = 3 \\implies q = 6$, not $q = 3$."
+            },
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 6$$ <strong>(a)(ii)</strong> $$p = 18$$ <strong>(b)</strong> $$-\\dfrac{24}{5}\\ln 2 - \\dfrac{33}{10}\\ln 3$$",
+                "feedback": "Check your signs in Part (b). When subtracting the lower limit term, the double negative becomes a positive, yielding $\\frac{9}{10}\\ln 3 - (-\\frac{12}{5}\\ln 3) = \\frac{9}{10}\\ln 3 + \\frac{24}{10}\\ln 3 = \\frac{33}{10}\\ln 3$. Be careful when combining logarithm terms."
+            },
+            {
+                "ans": "<strong>(a)(i)</strong> $$q = 6$$ <strong>(a)(ii)</strong> $$p = 18$$ <strong>(b)</strong> $$-\\dfrac{36}{5}\\ln 2 + \\dfrac{9}{10}\\ln 3$$",
+                "feedback": "You probably forgot to subtract the lower limit value ($x=4$) at the end of Part (b). Remember to substitute both limits into your integrated function: $\\text{Area} = \\text{F}(6) - \\text{F}(4)$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Combining Fractions",
+            "content": "To combine fractional log coefficients cleanly, always express them with a common denominator first. For example, converting $-\\frac{36}{5} + \\frac{12}{5}$ directly yields $-\\frac{24}{5}$ without any risk of fractional addition errors."
+        }
     }
+
 
 
 
