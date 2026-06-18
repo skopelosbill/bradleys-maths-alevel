@@ -2347,7 +2347,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (b):</strong> To find the area of the region $R$, we must find where the curve crosses the $x$-axis (the $x$-intercept). Setting $y = 0$ in the numerator gives:<br>$$14 - 2x = 0 \\implies 2x = 14 \\implies x = 7$$",
             "Therefore, the region $R$ is bounded on the $x$-axis between $x = 4$ and $x = 7$.<br><br>Here is the completed diagram showing these key features and the vertical asymptote at $x = 3$:<br><img src='images/p1/004061_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'><br>Since the curve lies above the $x$-axis in this interval ($y > 0$), the area of $R$ is given by the definite integral:<br>$$\\text{Area} = \\int_{4}^{7} \\dfrac{14 - 2x}{(2x - 6)(x + 2)} \\text{ d}x$$",
             "We simplify the integrand by factorising and cancelling a common factor of $2$:<br>$$\\dfrac{14 - 2x}{(2x - 6)(x + 2)} = \\dfrac{-2(x - 7)}{2(x - 3)(x + 2)} = -\\dfrac{x - 7}{(x - 3)(x + 2)}$$",
-            "Now, we express this integrand in **partial fractions**:<br>$$-\\dfrac{x - 7}{(x - 3)(x + 2)} = \\dfrac{A}{x - 3} + \\dfrac{B}{x + 2}$$<br>$$14 - 2x = A(x + 2) + B(x - 3)$$",
+            "Now, we express this integrand in <strong>partial fractions</strong>:<br>$$-\\dfrac{x - 7}{(x - 3)(x + 2)} = \\dfrac{A}{x - 3} + \\dfrac{B}{x + 2}$$<br>$$14 - 2x = A(x + 2) + B(x - 3)$$",
             "Using the substitution method to solve for the coefficients:<br>1. Setting $x = 3 \\implies 14 - 2(3) = A(3 + 2) \\implies 8 = 5A \\implies A = \\frac{4}{5}$ (noting the scale factor of $2$ cancelled earlier).<br>2. Setting $x = -2 \\implies 14 - 2(-2) = B(-2 - 3) \\implies 18 = -5B \\implies B = -\\frac{9}{5}$",
             "Substituting these coefficients back into our integral gives:<br>$$\\text{Area} = \\int_{4}^{7} \\left( \\dfrac{4/5}{x - 3} - \\dfrac{9/5}{x + 2} \\right) \\text{ d}x = \\left[ \\frac{4}{5}\\ln|x - 3| - \\frac{9}{5}\\ln|x + 2| \\right]_{4}^{7}$$",
             "Evaluating this expression at our upper limit ($7$) and lower limit ($4$):<br>$$\\text{Value at 7} = \\frac{4}{5}\\ln(4) - \\frac{9}{5}\\ln(9) = \\frac{8}{5}\\ln(2) - \\frac{18}{5}\\ln(3)$$<br>$$\\text{Value at 4} = \\frac{4}{5}\\ln(1) - \\frac{9}{5}\\ln(6) = 0 - \\frac{9}{5}(\\ln 2 + \\ln 3) = -\\frac{9}{5}\\ln(2) - \\frac{9}{5}\\ln(3)$$",
@@ -2392,7 +2392,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (b):</strong> To find the area of the region $R$, we must find where the curve crosses the $x$-axis (the $x$-intercept). Setting $y = 0$ in the numerator gives:<br>$$12 - 3x = 0 \\implies 3x = 12 \\implies x = 4$$",
             "Therefore, the region $R$ is bounded on the $x$-axis between $x = 2$ and $x = 4$.<br><br>Here is the completed diagram showing these key features and the vertical asymptote at $x = 1$:<br><img src='images/p1/004062_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'><br>Since the curve lies above the $x$-axis in this interval ($y > 0$), the area of $R$ is given by the definite integral:<br>$$\\text{Area} = \\int_{2}^{4} \\dfrac{12 - 3x}{(3x - 3)(x + 2)} \\text{ d}x$$",
             "We simplify the integrand by factorising and cancelling a common factor of $3$:<br>$$\\dfrac{12 - 3x}{(3x - 3)(x + 2)} = \\dfrac{-3(x - 4)}{3(x - 1)(x + 2)} = -\\dfrac{x - 4}{(x - 1)(x + 2)}$$",
-            "Now, we express this integrand in **partial fractions**:<br>$$-\\dfrac{x - 4}{(x - 1)(x + 2)} = \\dfrac{A}{x - 1} + \\dfrac{B}{x + 2}$$<br>$$4 - x = A(x + 2) + B(x - 1)$$",
+            "Now, we express this integrand in <strong>partial fractions</strong>:<br>$$-\\dfrac{x - 4}{(x - 1)(x + 2)} = \\dfrac{A}{x - 1} + \\dfrac{B}{x + 2}$$<br>$$4 - x = A(x + 2) + B(x - 1)$$",
             "Using the substitution method to solve for the coefficients:<br>1. Setting $x = 1 \\implies 4 - (1) = A(1 + 2) \\implies 3 = 3A \\implies A = 1$.<br>2. Setting $x = -2 \\implies 4 - (-2) = B(-2 - 1) \\implies 6 = -3B \\implies B = -2$.",
             "Substituting these coefficients back into our integral gives:<br>$$\\text{Area} = \\int_{2}^{4} \\left( \\dfrac{1}{x - 1} - \\dfrac{2}{x + 2} \\right) \\text{ d}x = \\left[ \\ln|x - 1| - 2\\ln|x + 2| \\right]_{2}^{4}$$",
             "Evaluating this expression at our upper limit ($4$) and lower limit ($2$):<br>$$\\text{Value at 4} = \\ln(3) - 2\\ln(6) = \\ln(3) - 2(\\ln 2 + \\ln 3) = -2\\ln(2) - \\ln(3)$$<br>$$\\text{Value at 2} = \\ln(1) - 2\\ln(4) = 0 - 2(2\\ln 2) = -4\\ln(2)$$",
@@ -2437,7 +2437,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (b):</strong> To find the area of the region $R$, we must find where the curve crosses the $x$-axis (the $x$-intercept). Setting $y = 0$ in the numerator gives:<br>$$16 - 4x = 0 \\implies 4x = 16 \\implies x = 4$$",
             "Therefore, the region $R$ is bounded on the $x$-axis between $x = 3$ and $x = 4$.<br><br>Here is the completed diagram showing these key features and the vertical asymptote at $x = 2$:<br><img src='images/p1/004063_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'><br>Since the curve lies above the $x$-axis in this interval ($y > 0$), the area of $R$ is given by the definite integral:<br>$$\\text{Area} = \\int_{3}^{4} \\dfrac{16 - 4x}{(2x - 4)(x + 1)} \\text{ d}x$$",
             "We simplify the integrand by factorising and cancelling a common factor of $2$:<br>$$\\dfrac{16 - 4x}{(2x - 4)(x + 1)} = \\dfrac{-4(x - 4)}{2(x - 2)(x + 1)} = -2\\dfrac{x - 4}{(x - 2)(x + 1)}$$",
-            "Now, we express this integrand in **partial fractions**:<br>$$-2\\dfrac{x - 4}{(x - 2)(x + 1)} = \\dfrac{A}{x - 2} + \\dfrac{B}{x + 1}$$<br>$$8 - 2x = A(x + 1) + B(x - 2)$$",
+            "Now, we express this integrand in <strong>partial fractions</strong>:<br>$$-2\\dfrac{x - 4}{(x - 2)(x + 1)} = \\dfrac{A}{x - 2} + \\dfrac{B}{x + 1}$$<br>$$8 - 2x = A(x + 1) + B(x - 2)$$",
             "Using the substitution method to solve for the coefficients:<br>1. Setting $x = 2 \\implies 8 - 2(2) = A(2 + 1) \\implies 4 = 3A \\implies A = \\frac{4}{3}$.<br>2. Setting $x = -1 \\implies 8 - 2(-1) = B(-1 - 2) \\implies 10 = -3B \\implies B = -\\frac{10}{3}$.",
             "Substituting these coefficients back into our integral gives:<br>$$\\text{Area} = \\int_{3}^{4} \\left( \\dfrac{4/3}{x - 2} - \\dfrac{10/3}{x + 1} \\right) \\text{ d}x = \\left[ \\frac{4}{3}\\ln|x - 2| - \\frac{10}{3}\\ln|x + 1| \\right]_{3}^{4}$$",
             "Evaluating this expression at our upper limit ($4$) and lower limit ($3$):<br>$$\\text{Value at 4} = \\frac{4}{3}\\ln(2) - \\frac{10}{3}\\ln(5)$$<br>$$\\text{Value at 3} = \\frac{4}{3}\\ln(1) - \\frac{10}{3}\\ln(4) = 0 - \\frac{10}{3}(2\\ln 2) = -\\frac{20}{3}\\ln(2)$$",
@@ -2482,7 +2482,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (b):</strong> To find the area of the region $R$, we must find where the curve crosses the $x$-axis (the $x$-intercept). Setting $y = 0$ in the numerator gives:<br>$$12 - 2x = 0 \\implies 2x = 12 \\implies x = 6$$",
             "Therefore, the region $R$ is bounded on the $x$-axis between $x = 3$ and $x = 6$.<br><br>Here is the completed diagram showing these key features and the vertical asymptote at $x = 2$:<br><img src='images/p1/004064_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'><br>Since the curve lies above the $x$-axis in this interval ($y > 0$), the area of $R$ is given by the definite integral:<br>$$\\text{Area} = \\int_{3}^{6} \\dfrac{12 - 2x}{(3x - 6)(x + 1)} \\text{ d}x$$",
             "We simplify the integrand by factorising:<br>$$\\dfrac{12 - 2x}{(3x - 6)(x + 1)} = \\dfrac{2(6 - x)}{3(x - 2)(x + 1)} = \\dfrac{2}{3} \\dfrac{6 - x}{(x - 2)(x + 1)}$$",
-            "Now, we express this integrand in **partial fractions**:<br>$$\\dfrac{2}{3} \\dfrac{6 - x}{(x - 2)(x + 1)} = \\dfrac{A}{x - 2} + \\dfrac{B}{x + 1}$$<br>$$12 - 2x = 3A(x + 1) + 3B(x - 2) = 3(A + B)x + 3(A - 2B)$$",
+            "Now, we express this integrand in <strong>partial fractions</strong>:<br>$$\\dfrac{2}{3} \\dfrac{6 - x}{(x - 2)(x + 1)} = \\dfrac{A}{x - 2} + \\dfrac{B}{x + 1}$$<br>$$12 - 2x = 3A(x + 1) + 3B(x - 2) = 3(A + B)x + 3(A - 2B)$$",
             "Using the substitution method to solve for the coefficients:<br>1. Setting $x = 2 \\implies 12 - 2(2) = 3A(2 + 1) \\implies 8 = 9A \\implies A = \\frac{8}{9}$.<br>2. Setting $x = -1 \\implies 12 - 2(-1) = 3B(-1 - 2) \\implies 14 = -9B \\implies B = -\\frac{14}{9}$.",
             "Substituting these coefficients back into our integral gives:<br>$$\\text{Area} = \\int_{3}^{6} \\left( \\dfrac{8/9}{x - 2} - \\dfrac{14/9}{x + 1} \\right) \\text{ d}x = \\left[ \\frac{8}{9}\\ln|x - 2| - \\frac{14}{9}\\ln|x + 1| \\right]_{3}^{6}$$",
             "Evaluating this expression at our upper limit ($6$) and lower limit ($3$):<br>$$\\text{Value at 6} = \\frac{8}{9}\\ln(4) - \\frac{14}{9}\\ln(7) = \\frac{16}{9}\\ln(2) - \\frac{14}{9}\\ln(7)$$<br>$$\\text{Value at 3} = \\frac{8}{9}\\ln(1) - \\frac{14}{9}\\ln(4) = 0 - \\frac{14}{9}(2\\ln 2) = -\\frac{28}{9}\\ln(2)$$",
@@ -2527,7 +2527,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (b):</strong> To find the area of the region $R$, we must find where the curve crosses the $x$-axis (the $x$-intercept). Setting $y = 0$ in the numerator gives:<br>$$18 - 3x = 0 \\implies 3x = 18 \\implies x = 6$$",
             "Therefore, the region $R$ is bounded on the $x$-axis between $x = 4$ and $x = 6$.<br><br>Here is the completed diagram showing these key features and the vertical asymptote at $x = 3$:<br><img src='images/p1/004065_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'><br>Since the curve lies above the $x$-axis in this interval ($y > 0$), the area of $R$ is given by the definite integral:<br>$$\\text{Area} = \\int_{4}^{6} \\dfrac{18 - 3x}{(2x - 6)(x + 2)} \\text{ d}x$$",
             "We simplify the integrand by factorising:<br>$$\\dfrac{18 - 3x}{(2x - 6)(x + 2)} = \\dfrac{3(6 - x)}{2(x - 3)(x + 2)} = \\dfrac{3}{2} \\dfrac{6 - x}{(x - 3)(x + 2)}$$",
-            "Now, we express this integrand in **partial fractions**:<br>$$\\dfrac{3}{2} \\dfrac{6 - x}{(x - 3)(x + 2)} = \\dfrac{A}{x - 3} + \\dfrac{B}{x + 2}$$<br>$$18 - 3x = 2A(x + 2) + 2B(x - 3) = 2(A + B)x + 2(2A - 3B)$$",
+            "Now, we express this integrand in <strong>partial fractions</strong>:<br>$$\\dfrac{3}{2} \\dfrac{6 - x}{(x - 3)(x + 2)} = \\dfrac{A}{x - 3} + \\dfrac{B}{x + 2}$$<br>$$18 - 3x = 2A(x + 2) + 2B(x - 3) = 2(A + B)x + 2(2A - 3B)$$",
             "Using the substitution method to solve for the coefficients:<br>1. Setting $x = 3 \\implies 18 - 3(3) = 2A(3 + 2) \\implies 9 = 10A \\implies A = \\frac{9}{10}$.<br>2. Setting $x = -2 \\implies 18 - 3(-2) = 2B(-2 - 3) \\implies 24 = -10B \\implies B = -\\frac{12}{5}$.",
             "Substituting these coefficients back into our integral gives:<br>$$\\text{Area} = \\int_{4}^{6} \\left( \\dfrac{9/10}{x - 3} - \\dfrac{12/5}{x + 2} \\right) \\text{ d}x = \\left[ \\frac{9}{10}\\ln|x - 3| - \\frac{12}{5}\\ln|x + 2| \\right]_{4}^{6}$$",
             "Evaluating this expression at our upper limit ($6$) and lower limit ($4$):<br>$$\\text{Value at 6} = \\frac{9}{10}\\ln(3) - \\frac{12}{5}\\ln(8) = \\frac{9}{10}\\ln(3) - \\frac{12}{5}(3\\ln 2) = -\\frac{36}{5}\\ln(2) + \\frac{9}{10}\\ln(3)$$<br>$$\\text{Value at 4} = \\frac{9}{10}\\ln(1) - \\frac{12}{5}\\ln(6) = 0 - \\frac{12}{5}(\\ln 2 + \\ln 3) = -\\frac{12}{5}\\ln(2) - \\frac{12}{5}\\ln(3)$$",
@@ -2553,13 +2553,218 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Combining Fractions",
             "content": "To combine fractional log coefficients cleanly, always express them with a common denominator first. For example, converting $-\\frac{36}{5} + \\frac{12}{5}$ directly yields $-\\frac{24}{5}$ without any risk of fractional addition errors."
         }
+    },
+    {
+        "id": "004066",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Implicit Differentiation",
+            "Small Angle Approximations"
+        ],
+        "img": false,
+        "question": "The curve $C$, in the standard Cartesian plane, is defined by the equation:<br>$$x = 3\\sin 2y \\quad -\\frac{\\pi}{4} < y < \\frac{\\pi}{4}$$<br>The curve $C$ passes through the origin $O$.<br><br><strong>(a)</strong> Find the value of $\\dfrac{\\text{d}y}{\\text{d}x}$ at the origin.<br><br><strong>(b)(i)</strong> Use the small-angle approximation for $\\sin 2y$ to find an equation linking $x$ and $y$ for points close to the origin.<br><strong>(b)(ii)</strong> Explain the relationship between the answers to <strong>(a)</strong> and <strong>(b)(i)</strong>.<br><br><strong>(c)</strong> Show that, for all points $(x, y)$ lying on $C$,<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{a\\sqrt{b - x^2}}$$<br>where $a$ and $b$ are constants to be found.",
+        "steps": [
+            "<strong>Part (a):</strong> We differentiate the equation of our curve, $x = 3\\sin 2y$, implicitly with respect to $x$:<br>$$\\dfrac{\\text{d}}{\\text{d}x}(x) = \\dfrac{\\text{d}}{\\text{d}x}(3\\sin 2y)$$<br>$$1 = 3\\cos 2y \\cdot \\left(2\\dfrac{\\text{d}y}{\\text{d}x}\\right)$$<br>$$1 = 6\\cos 2y \\cdot \\dfrac{\\text{d}y}{\\text{d}x} \\implies \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{6\\cos 2y}$$",
+            "At the origin, the coordinates are $(0,0)$, which means $y = 0$. Substituting $y = 0$ into our derivative gives:<br>$$\\left. \\dfrac{\\text{d}y}{\\text{d}x} \\right|_{O} = \\dfrac{1}{6\\cos(0)} = \\dfrac{1}{6}$$",
+            "<strong>Part (b)(i):</strong> The small-angle approximation for sine is $\\sin\\theta \\approx \\theta$ when $\\theta$ is small and measured in radians.<br>Applying this approximation with $\\theta = 2y$ gives:<br>$$\\sin 2y \\approx 2y$$",
+            "Substituting this into the curve's equation:<br>$$x \\approx 3(2y) = 6y \\implies y \\approx \\dfrac{1}{6}x$$",
+            "<strong>Part (b)(ii):</strong> The linear equation $y \\approx \\frac{1}{6}x$ represents the tangent line to the curve at the origin. The gradient of this straight line is $\\frac{1}{6}$, which is exactly equal to the value of the exact derivative $\\dfrac{\\text{d}y}{\\text{d}x}$ at the origin found in Part (a).",
+            "<strong>Part (c):</strong> We start with our derivative expression from Part (a):<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{6\\cos 2y}$$",
+            "Using the fundamental identity $\\sin^2 2y + \\cos^2 2y = 1$, we can express $\\cos 2y$ in terms of sine:<br>$$\\cos 2y = \\sqrt{1 - \\sin^2 2y}$$<br>*(Note: Since $-\\frac{\\pi}{4} < y < \\frac{\\pi}{4}$, the angle lies in the interval $-\\frac{\\pi}{2} < 2y < \\frac{\\pi}{2}$, where cosine is strictly positive, so the positive root is correct).* ",
+            "From the original curve equation, we have $\\sin 2y = \\frac{x}{3}$. Substituting this into our expression for $\\cos 2y$ gives:<br>$$\\cos 2y = \\sqrt{1 - \\left(\\frac{x}{3}\right)^2} = \\sqrt{1 - \\frac{x^2}{9}} = \\sqrt{\\dfrac{9 - x^2}{9}} = \\dfrac{\\sqrt{9 - x^2}}{3}$$",
+            "Now, we substitute this back into our derivative expression:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{6 \\left( \\frac{\\sqrt{9 - x^2}}{3} \\right)} = \\dfrac{1}{2\\sqrt{9 - x^2}}$$<br>Comparing this with the target form gives the constants as $a = 2$ and $b = 9$.",
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{6}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{6}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 2,\\ b = 9$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{6}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{6}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 6,\\ b = 9$$",
+                "feedback": "You probably made an algebraic cancellation error at the very end of Part (c). When substituting the cosine term, you must simplify the denominator: $6 \\cdot \\frac{\\sqrt{9-x^2}}{3} = 2\\sqrt{9-x^2}$. This yields $a = 2$, not $a = 6$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{3}$$ <strong>(b)(i)</strong> $$y \\approx 3x$$ <strong>(b)(ii)</strong> $$The\\ values\\ are\\ unrelated$$",
+                "feedback": "Check your differentiation in Part (a). When differentiating $3\\sin 2y$ implicitly, you must apply the Chain Rule to $2y$, which yields a coefficient of $6$, not $3$. This error also affected your linear approximation in Part (b)(i)."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{6}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{6}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 2,\\ b = 3$$",
+                "feedback": "Check your square root algebra in Part (c). When substituting $\\sin 2y = \\frac{x}{3}$ into $\\sqrt{1 - \\sin^2 2y}$, you must square the denominator: $\\left(\\frac{x}{3}\right)^2 = \\frac{x^2}{9}$. When factorised out of the square root, this yields the constant $b = 9$, not $b = 3$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Tangents as Approximations",
+            "content": "In this question, the relationship in Part (b)(ii) is a beautiful highlight of core calculus. The small-angle approximation of any trigonometric function close to the origin is always identical to the equation of the tangent line to the curve at the origin. Spotting this geometric connection acts as an instant sanity check for your maths."
+        }
+    },
+    {
+        "id": "004067",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Implicit Differentiation",
+            "Small Angle Approximations"
+        ],
+        "img": false,
+        "question": "The curve $C$, in the standard Cartesian plane, is defined by the equation:<br>$$x = 5\\sin 3y \\quad -\\frac{\\pi}{6} < y < \\frac{\\pi}{6}$$<br>The curve $C$ passes through the origin $O$.<br><br><strong>(a)</strong> Find the value of $\\dfrac{\\text{d}y}{\\text{d}x}$ at the origin.<br><br><strong>(b)(i)</strong> Use the small-angle approximation for $\\sin 3y$ to find an equation linking $x$ and $y$ for points close to the origin.<br><strong>(b)(ii)</strong> Explain the relationship between the answers to <strong>(a)</strong> and <strong>(b)(i)</strong>.<br><br><strong>(c)</strong> Show that, for all points $(x, y)$ lying on $C$,<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{a\\sqrt{b - x^2}}$$<br>$$\\text{where } a \\text{ and } b \\text{ are rational constants to be found.}$$",
+        "steps": [
+            "<strong>Part (a):</strong> We find the derivative of $\\text{f}(x)$ with respect to $x$ using the <strong>Product Rule</strong>, where $u = 5\\text{e}^{-0.2x}$ and $v = \\sin x$:<br>$$u' = -1.6\\text{e}^{-0.2x}$$<br>$$v' = \\cos x$$<br>$$\\text{f}'(x) = u'v + uv' = -1.6\\text{e}^{-0.2x}\\sin x + 8\\text{e}^{-0.2x}\\cos x$$" ,
+            "Wait! Let's correct this. This step is: We find the derivative of $x$ with respect to $x$ implicitly:<br>$$\\dfrac{\\text{d}}{\\text{d}x}(x) = \\dfrac{\\text{d}}{\\text{d}x}(5\\sin 3y)$$<br>$$1 = 5\\cos 3y \\cdot \\left(3\\dfrac{\\text{d}y}{\\text{d}x}\\right)$$<br>$$1 = 15\\cos 3y \\cdot \\dfrac{\\text{d}y}{\\text{d}x} \\implies \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{15\\cos 3y}$$",
+            "At the origin, the coordinates are $(0,0)$, which means $y = 0$. Substituting $y = 0$ into our derivative gives:<br>$$\\left. \\dfrac{\\text{d}y}{\\text{d}x} \\right|_{O} = \\dfrac{1}{15\\cos(0)} = \\dfrac{1}{15}$$",
+            "<strong>Part (b)(i):</strong> The small-angle approximation for sine is $\\sin\\theta \\approx \\theta$ when $\\theta$ is small and measured in radians.<br>Applying this approximation with $\\theta = 3y$ gives:<br>$$\\sin 3y \\approx 3y$$",
+            "Substituting this into the curve's equation:<br>$$x \\approx 5(3y) = 15y \\implies y \\approx \\dfrac{1}{15}x$$",
+            "<strong>Part (b)(ii):</strong> The linear equation $y \\approx \\frac{1}{15}x$ represents the tangent line to the curve at the origin. The gradient of this straight line is $\\frac{1}{15}$, which is exactly equal to the value of the exact derivative $\\dfrac{\\text{d}y}{\\text{d}x}$ at the origin found in Part (a).",
+            "<strong>Part (c):</strong> We start with our derivative expression from Part (a):<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{15\\cos 3y}$$",
+            "Using the fundamental identity $\\sin^2 3y + \\cos^2 3y = 1$, we can express $\\cos 3y$ in terms of sine:<br>$$\\cos 3y = \\sqrt{1 - \\sin^2 3y}$$<br>*(Note: Since $-\\frac{\\pi}{6} < y < \\frac{\\pi}{6}$, the angle lies in the interval $-\\frac{\\pi}{2} < 3y < \\frac{\\pi}{2}$, where cosine is strictly positive, so the positive root is correct).* ",
+            "From the original curve equation, we have $\\sin 3y = \\frac{x}{5}$. Substituting this into our expression for $\\cos 3y$ gives:<br>$$\\cos 3y = \\sqrt{1 - \\left(\\frac{x}{5}\right)^2} = \\sqrt{1 - \\frac{x^2}{25}} = \\sqrt{\\dfrac{25 - x^2}{25}} = \\dfrac{\\sqrt{25 - x^2}}{5}$$",
+            "Now, we substitute this back into our derivative expression:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{15 \\left( \\frac{\\sqrt{25 - x^2}}{5} \\right)} = \\dfrac{1}{3\\sqrt{25 - x^2}}$$<br>Comparing this with the target form gives the constants as $a = 3$ and $b = 25$.",
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{15}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{15}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 3,\\ b = 25$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{15}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{15}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 15,\\ b = 25$$",
+                "feedback": "You probably made an algebraic cancellation error at the very end of Part (c). When substituting the cosine term, you must simplify the denominator: $15 \\cdot \\frac{\\sqrt{25-x^2}}{5} = 3\\sqrt{25-x^2}$. This yields $a = 3$, not $a = 15$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{5}$$ <strong>(b)(i)</strong> $$y \\approx 5x$$ <strong>(b)(ii)</strong> $$The\\ values\\ are\\ unrelated$$",
+                "feedback": "Check your differentiation in Part (a). When differentiating $5\\sin 3y$ implicitly, you must apply the Chain Rule to $3y$, which yields a coefficient of $15$, not $5$. This error also affected your linear approximation in Part (b)(i)."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{15}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{15}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 3,\\ b = 5$$",
+                "feedback": "Check your square root algebra in Part (c). When substituting $\\sin 3y = \\frac{x}{5}$ into $\\sqrt{1 - \\sin^2 3y}$, you must square the denominator: $\\left(\\frac{x}{5}\right)^2 = \\frac{x^2}{25}$. When factorised out of the square root, this yields the constant $b = 25$, not $b = 5$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Tangents as Approximations",
+            "content": "In this question, the relationship in Part (b)(ii) is a beautiful highlight of core calculus. The small-angle approximation of any trigonometric function close to the origin is always identical to the equation of the tangent line to the curve at the origin. Spotting this geometric connection acts as an instant sanity check for your maths."
+        }
+    },
+    {
+        "id": "004068",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Implicit Differentiation",
+            "Small Angle Approximations"
+        ],
+        "img": false,
+        "question": "The curve $C$, in the standard Cartesian plane, is defined by the equation:<br>$$x = 2\\sin 4y \\quad -\\frac{\\pi}{8} < y < \\frac{\\pi}{8}$$<br>The curve $C$ passes through the origin $O$.<br><br><strong>(a)</strong> Find the value of $\\dfrac{\\text{d}y}{\\text{d}x}$ at the origin.<br><br><strong>(b)(i)</strong> Use the small-angle approximation for $\\sin 4y$ to find an equation linking $x$ and $y$ for points close to the origin.<br><strong>(b)(ii)</strong> Explain the relationship between the answers to <strong>(a)</strong> and <strong>(b)(i)</strong>.<br><br><strong>(c)</strong> Show that, for all points $(x, y)$ lying on $C$,<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{a\\sqrt{b - x^2}}$$<br>$$\\text{where } a \\text{ and } b \\text{ are rational constants to be found.}$$",
+        "steps": [
+            "<strong>Part (a):</strong> We differentiate the equation of our curve, $x = 2\\sin 4y$, implicitly with respect to $x$:<br>$$\\dfrac{\\text{d}}{\\text{d}x}(x) = \\dfrac{\\text{d}}{\\text{d}x}(2\\sin 4y)$$<br>$$1 = 2\\cos 4y \\cdot \\left(4\\dfrac{\\text{d}y}{\\text{d}x}\\right)$$<br>$$1 = 8\\cos 4y \\cdot \\dfrac{\\text{d}y}{\\text{d}x} \\implies \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{8\\cos 4y}$$",
+            "At the origin, the coordinates are $(0,0)$, which means $y = 0$. Substituting $y = 0$ into our derivative gives:<br>$$\\left. \\dfrac{\\text{d}y}{\\text{d}x} \\right|_{O} = \\dfrac{1}{8\\cos(0)} = \\dfrac{1}{8}$$",
+            "<strong>Part (b)(i):</strong> The small-angle approximation for sine is $\\sin\\theta \\approx \\theta$ when $\\theta$ is small and measured in radians.<br>Applying this approximation with $\\theta = 4y$ gives:<br>$$\\sin 4y \\approx 4y$$",
+            "Substituting this into the curve's equation:<br>$$x \\approx 2(4y) = 8y \\implies y \\approx \\dfrac{1}{8}x$$",
+            "<strong>Part (b)(ii):</strong> The linear equation $y \\approx \\frac{1}{8}x$ represents the tangent line to the curve at the origin. The gradient of this straight line is $\\frac{1}{8}$, which is exactly equal to the value of the exact derivative $\\dfrac{\\text{d}y}{\\text{d}x}$ at the origin found in Part (a).",
+            "<strong>Part (c):</strong> We start with our derivative expression from Part (a):<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{8\\cos 4y}$$",
+            "Using the fundamental identity $\\sin^2 4y + \\cos^2 4y = 1$, we can express $\\cos 4y$ in terms of sine:<br>$$\\cos 4y = \\sqrt{1 - \\sin^2 4y}$$<br>*(Note: Since $-\\frac{\\pi}{8} < y < \\frac{\\pi}{8}$, the angle lies in the interval $-\\frac{\\pi}{2} < 4y < \\frac{\\pi}{2}$, where cosine is strictly positive, so the positive root is correct).* ",
+            "From the original curve equation, we have $\\sin 4y = \\frac{x}{2}$. Substituting this into our expression for $\\cos 4y$ gives:<br>$$\\cos 4y = \\sqrt{1 - \\left(\\frac{x}{2}\right)^2} = \\sqrt{1 - \\frac{x^2}{4}} = \\sqrt{\\dfrac{4 - x^2}{4}} = \\dfrac{\\sqrt{4 - x^2}}{2}$$",
+            "Now, we substitute this back into our derivative expression:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{8 \\left( \\frac{\\sqrt{4 - x^2}}{2} \\right)} = \\dfrac{1}{4\\sqrt{4 - x^2}}$$<br>Comparing this with the target form gives the constants as $a = 4$ and $b = 4$.",
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{8}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{8}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 4,\\ b = 4$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{8}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{8}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 8,\\ b = 4$$",
+                "feedback": "You probably made an algebraic cancellation error at the very end of Part (c). When substituting the cosine term, you must simplify the denominator: $8 \\cdot \\frac{\\sqrt{4-x^2}}{2} = 4\\sqrt{4-x^2}$. This yields $a = 4$, not $a = 8$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{2}$$ <strong>(b)(i)</strong> $$y \\approx 2x$$ <strong>(b)(ii)</strong> $$The\\ values\\ are\\ unrelated$$",
+                "feedback": "Check your differentiation in Part (a). When differentiating $2\\sin 4y$ implicitly, you must apply the Chain Rule to $4y$, which yields a coefficient of $8$, not $2$. This error also affected your linear approximation in Part (b)(i)."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{8}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{8}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 4,\\ b = 2$$",
+                "feedback": "Check your square root algebra in Part (c). When substituting $\\sin 4y = \\frac{x}{2}$ into $\\sqrt{1 - \\sin^2 4y}$, you must square the denominator: $\\left(\\frac{x}{2}\right)^2 = \\frac{x^2}{4}$. When factorised out of the square root, this yields the constant $b = 4$, not $b = 2$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Tangents as Approximations",
+            "content": "In this question, the relationship in Part (b)(ii) is a beautiful highlight of core calculus. The small-angle approximation of any trigonometric function close to the origin is always identical to the equation of the tangent line to the curve at the origin. Spotting this geometric connection acts as an instant sanity check for your maths."
+        }
+    },
+    {
+        "id": "004069",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Implicit Differentiation",
+            "Small Angle Approximations"
+        ],
+        "img": false,
+        "question": "The curve $C$, in the standard Cartesian plane, is defined by the equation:<br>$$x = 6\\sin 2y \\quad -\\frac{\\pi}{4} < y < \\frac{\\pi}{4}$$<br>The curve $C$ passes through the origin $O$.<br><br><strong>(a)</strong> Find the value of $\\dfrac{\\text{d}y}{\\text{d}x}$ at the origin.<br><br><strong>(b)(i)</strong> Use the small-angle approximation for $\\sin 2y$ to find an equation linking $x$ and $y$ for points close to the origin.<br><strong>(b)(ii)</strong> Explain the relationship between the answers to <strong>(a)</strong> and <strong>(b)(i)</strong>.<br><br><strong>(c)</strong> Show that, for all points $(x, y)$ lying on $C$,<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{a\\sqrt{b - x^2}}$$<br>$$\\text{where } a \\text{ and } b \\text{ are rational constants to be found.}$$",
+        "steps": [
+            "<strong>Part (a):</strong> We differentiate the equation of our curve, $x = 6\\sin 2y$, implicitly with respect to $x$:<br>$$\\dfrac{\\text{d}}{\\text{d}x}(x) = \\dfrac{\\text{d}}{\\text{d}x}(6\\sin 2y)$$<br>$$1 = 6\\cos 2y \\cdot \\left(2\\dfrac{\\text{d}y}{\\text{d}x}\\right)$$<br>$$1 = 12\\cos 2y \\cdot \\dfrac{\\text{d}y}{\\text{d}x} \\implies \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{12\\cos 2y}$$",
+            "At the origin, the coordinates are $(0,0)$, which means $y = 0$. Substituting $y = 0$ into our derivative gives:<br>$$\\left. \\dfrac{\\text{d}y}{\\text{d}x} \\right|_{O} = \\dfrac{1}{12\\cos(0)} = \\dfrac{1}{12}$$",
+            "<strong>Part (b)(i):</strong> The small-angle approximation for sine is $\\sin\\theta \\approx \\theta$ when $\\theta$ is small and measured in radians.<br>Applying this approximation with $\\theta = 2y$ gives:<br>$$\\sin 2y \\approx 2y$$",
+            "Substituting this into the curve's equation:<br>$$x \\approx 6(2y) = 12y \\implies y \\approx \\dfrac{1}{12}x$$",
+            "<strong>Part (b)(ii):</strong> The linear equation $y \\approx \\frac{1}{12}x$ represents the tangent line to the curve at the origin. The gradient of this straight line is $\\frac{1}{12}$, which is exactly equal to the value of the exact derivative $\\dfrac{\\text{d}y}{\\text{d}x}$ at the origin found in Part (a).",
+            "<strong>Part (c):</strong> We start with our derivative expression from Part (a):<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{12\\cos 2y}$$",
+            "Using the fundamental identity $\\sin^2 2y + \\cos^2 2y = 1$, we can express $\\cos 2y$ in terms of sine:<br>$$\\cos 2y = \\sqrt{1 - \\sin^2 2y}$$<br>*(Note: Since $-\\frac{\\pi}{4} < y < \\frac{\\pi}{4}$, the angle lies in the interval $-\\frac{\\pi}{2} < 2y < \\frac{\\pi}{2}$, where cosine is strictly positive, so the positive root is correct).* ",
+            "From the original curve equation, we have $\\sin 2y = \\frac{x}{6}$. Substituting this into our expression for $\\cos 2y$ gives:<br>$$\\cos 2y = \\sqrt{1 - \\left(\\frac{x}{6}\right)^2} = \\sqrt{1 - \\frac{x^2}{36}} = \\sqrt{\\dfrac{36 - x^2}{36}} = \\dfrac{\\sqrt{36 - x^2}}{6}$$",
+            "Now, we substitute this back into our derivative expression:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{12 \\left( \\frac{\\sqrt{36 - x^2}}{6} \\right)} = \\dfrac{1}{2\\sqrt{36 - x^2}}$$<br>Comparing this with the target form gives the constants as $a = 2$ and $b = 36$.",
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 2,\\ b = 36$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 12,\\ b = 36$$",
+                "feedback": "You probably made an algebraic cancellation error at the very end of Part (c). When substituting the cosine term, you must simplify the denominator: $12 \\cdot \\frac{\\sqrt{36-x^2}}{6} = 2\\sqrt{36-x^2}$. This yields $a = 2$, not $a = 12$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{6}$$ <strong>(b)(i)</strong> $$y \\approx 6x$$ <strong>(b)(ii)</strong> $$The\\ values\\ are\\ unrelated$$",
+                "feedback": "Check your differentiation in Part (a). When differentiating $6\\sin 2y$ implicitly, you must apply the Chain Rule to $2y$, which yields a coefficient of $12$, not $6$. This error also affected your linear approximation in Part (b)(i)."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 2,\\ b = 6$$",
+                "feedback": "Check your square root algebra in Part (c). When substituting $\\sin 2y = \\frac{x}{6}$ into $\\sqrt{1 - \\sin^2 2y}$, you must square the denominator: $\\left(\\frac{x}{6}\right)^2 = \\frac{x^2}{36}$. When factorised out of the square root, this yields the constant $b = 36$, not $b = 6$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Tangents as Approximations",
+            "content": "In this question, the relationship in Part (b)(ii) is a beautiful highlight of core calculus. The small-angle approximation of any trigonometric function close to the origin is always identical to the equation of the tangent line to the curve at the origin. Spotting this geometric connection acts as an instant sanity check for your maths."
+        }
+    },
+    {
+        "id": "004070",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Implicit Differentiation",
+            "Small Angle Approximations"
+        ],
+        "img": false,
+        "question": "The curve $C$, in the standard Cartesian plane, is defined by the equation:<br>$$x = 4\\sin 3y \\quad -\\frac{\\pi}{6} < y < \\frac{\\pi}{6}$$<br>The curve $C$ passes through the origin $O$.<br><br><strong>(a)</strong> Find the value of $\\dfrac{\\text{d}y}{\\text{d}x}$ at the origin.<br><br><strong>(b)(i)</strong> Use the small-angle approximation for $\\sin 3y$ to find an equation linking $x$ and $y$ for points close to the origin.<br><strong>(b)(ii)</strong> Explain the relationship between the answers to <strong>(a)</strong> and <strong>(b)(i)</strong>.<br><br><strong>(c)</strong> Show that, for all points $(x, y)$ lying on $C$,<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{a\\sqrt{b - x^2}}$$<br>$$\\text{where } a \\text{ and } b \\text{ are rational constants to be found.}$$",
+        "steps": [
+            "<strong>Part (a):</strong> We differentiate the equation of our curve, $x = 4\\sin 3y$, implicitly with respect to $x$:<br>$$\\dfrac{\\text{d}}{\\text{d}x}(x) = \\dfrac{\\text{d}}{\\text{d}x}(4\\sin 3y)$$<br>$$1 = 4\\cos 3y \\cdot \\left(3\\dfrac{\\text{d}y}{\\text{d}x}\\right)$$<br>$$1 = 12\\cos 3y \\cdot \\dfrac{\\text{d}y}{\\text{d}x} \\implies \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{12\\cos 3y}$$",
+            "At the origin, the coordinates are $(0,0)$, which means $y = 0$. Substituting $y = 0$ into our derivative gives:<br>$$\\left. \\dfrac{\\text{d}y}{\\text{d}x} \\right|_{O} = \\dfrac{1}{12\\cos(0)} = \\dfrac{1}{12}$$",
+            "<strong>Part (b)(i):</strong> The small-angle approximation for sine is $\\sin\\theta \\approx \\theta$ when $\\theta$ is small and measured in radians.<br>Applying this approximation with $\\theta = 3y$ gives:<br>$$\\sin 3y \\approx 3y$$",
+            "Substituting this into the curve's equation:<br>$$x \\approx 4(3y) = 12y \\implies y \\approx \\dfrac{1}{12}x$$",
+            "<strong>Part (b)(ii):</strong> The linear equation $y \\approx \\frac{1}{12}x$ represents the tangent line to the curve at the origin. The gradient of this straight line is $\\frac{1}{12}$, which is exactly equal to the value of the exact derivative $\\dfrac{\\text{d}y}{\\text{d}x}$ at the origin found in Part (a).",
+            "<strong>Part (c):</strong> We start with our derivative expression from Part (a):<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{12\\cos 3y}$$",
+            "Using the fundamental identity $\\sin^2 3y + \\cos^2 3y = 1$, we can express $\\cos 3y$ in terms of sine:<br>$$\\cos 3y = \\sqrt{1 - \\sin^2 3y}$$<br>*(Note: Since $-\\frac{\\pi}{6} < y < \\frac{\\pi}{6}$, the angle lies in the interval $-\\frac{\\pi}{2} < 3y < \\frac{\\pi}{2}$, where cosine is strictly positive, so the positive root is correct).* ",
+            "From the original curve equation, we have $\\sin 3y = \\frac{x}{4}$. Substituting this into our expression for $\\cos 3y$ gives:<br>$$\\cos 3y = \\sqrt{1 - \\left(\\frac{x}{4}\right)^2} = \\sqrt{1 - \\frac{x^2}{16}} = \\sqrt{\\dfrac{16 - x^2}{16}} = \\dfrac{\\sqrt{16 - x^2}}{4}$$",
+            "Now, we substitute this back into our derivative expression:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{12 \\left( \\frac{\\sqrt{16 - x^2}}{4} \\right)} = \\dfrac{1}{3\\sqrt{16 - x^2}}$$<br>Comparing this with the target form gives the constants as $a = 3$ and $b = 16$.",
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 3,\\ b = 16$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 12,\\ b = 16$$",
+                "feedback": "You probably made an algebraic cancellation error at the very end of Part (c). When substituting the cosine term, you must simplify the denominator: $12 \\cdot \\frac{\\sqrt{16-x^2}}{4} = 3\\sqrt{16-x^2}$. This yields $a = 3$, not $a = 12$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{4}$$ <strong>(b)(i)</strong> $$y \\approx 4x$$ <strong>(b)(ii)</strong> $$The\\ values\\ are\\ unrelated$$",
+                "feedback": "Check your differentiation in Part (a). When differentiating $4\\sin 3y$ implicitly, you must apply the Chain Rule to $3y$, which yields a coefficient of $12$, not $4$. This error also affected your linear approximation in Part (b)(i)."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 3,\\ b = 4$$",
+                "feedback": "Check your square root algebra in Part (c). When substituting $\\sin 3y = \\frac{x}{4}$ into $\\sqrt{1 - \\sin^2 3y}$, you must square the denominator: $\\left(\\frac{x}{4}\right)^2 = \\frac{x^2}{16}$. When factorised out of the square root, this yields the constant $b = 16$, not $b = 4$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Tangents as Approximations",
+            "content": "In this question, the relationship in Part (b)(ii) is a beautiful highlight of core calculus. The small-angle approximation of any trigonometric function close to the origin is always identical to the equation of the tangent line to the curve at the origin. Spotting this geometric connection acts as an instant sanity check for your maths."
+        }
     }
-
-
-
-
-
-
 
 
 
