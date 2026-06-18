@@ -1849,7 +1849,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Remainder Equivalents",
-            "content": "In this question, when working with $n^2 + 5$ and dividing by $4$, remember that you can simplify the math by rewriting $5$ as $4 + 1$. This makes $n^2 + 5$ equivalent to $n^2 + 1 \\pmod 4$, meaning the remainders will be identical to those found when expanding $n^2+1$."
+            "content": "In this question, when working with $n^2 + 5$ and dividing by $4$, remember that you can simplify the maths by rewriting $5$ as $4 + 1$. This makes $n^2 + 5$ equivalent to $n^2 + 1 \\pmod 4$, meaning the remainders will be identical to those found when expanding $n^2+1$."
         }
     },
     {
@@ -1933,7 +1933,208 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Visualising Inequalities",
             "content": "When analyzing whether an absolute value statement is always, sometimes, or never true, a quick mental sketch of the two functions $y = |Ax - B|$ and $y = x - C$ is incredibly helpful. It instantly reveals if the linear function ever crosses above the v-shaped absolute value boundary."
         }
+    },
+    {
+        "id": "004051",
+        "major_area": "Sequences & Series",
+        "topic": "Series",
+        "subtopic": [
+            "Geometric Series"
+        ],
+        "img": false,
+        "question": "A competitor is swimming a 15-kilometre marathon swim.<br>She swims each of the first 3 kilometres at a steady pace of 20 minutes per kilometre.<br>After the first 3 kilometres, she begins to slow down.<br>In order to estimate her finishing time, the time that she will take to complete each subsequent kilometre is modelled to be 4% greater than the time that she took to complete the previous kilometre.<br>Using the model,<br><strong>(a)</strong> show that her time to swim the first 5 kilometres is estimated to be 102 minutes 26 seconds,<br><strong>(b)</strong> show that her estimated time, in minutes, to swim the $r$th kilometre, for $4 \\le r \\le 15$, is:<br>$$20 \\times 1.04^{r-3}$$<br><strong>(c)</strong> estimate the total time, in hours, minutes, and seconds, that she will take to complete the marathon swim.",
+        "steps": [
+            "<strong>Part (a):</strong> The time for the first 3 kilometres is run at a steady pace of $20\\text{ min/km}$:<br>$$\\text{Time}_{1-3} = 3 \\times 20 = 60\\text{ minutes}$$",
+            "The 4th kilometre takes 4% longer than the 3rd kilometre ($20\\text{ minutes}$):<br>$$\\text{Time}_{4} = 20 \\times 1.04 = 20.8\\text{ minutes}$$",
+            "The 5th kilometre takes 4% longer than the 4th kilometre:<br>$$\\text{Time}_{5} = 20.8 \\times 1.04 = 20 \\times 1.04^2 = 21.632\\text{ minutes}$$",
+            "Adding these times together gives the total estimated time for the first 5 kilometres:<br>$$\\text{Total Time} = 60 + 20.8 + 21.632 = 102.432\\text{ minutes}$$<br>Converting $0.432$ minutes into seconds: $0.432 \\times 60 = 25.92 \\approx 26\\text{ seconds}$.<br>Therefore, the time is <strong>102 minutes 26 seconds</strong> (to the nearest second).",
+            "<strong>Part (b):</strong> For $r \\ge 4$, each subsequent kilometre is 4% slower than the previous one, forming a geometric progression where the first term after the steady phase (at $r=4$) is $20 \\times 1.04^1$.<br>In general, for the $r$th kilometre, the time has been multiplied by $1.04$ a total of $r-3$ times starting from the base pace of $20\\text{ minutes}$.<br>Therefore, the time for the $r$th kilometre is:<br>$$\\text{Time}_{r} = 20 \\times 1.04^{r-3}$$",
+            "<strong>Part (c):</strong> The total time is the sum of the first 3 steady kilometres ($60\\text{ minutes}$) and the geometric series from $r=4$ to $r=15$.<br>For $r=4$ to $15$, there are $15 - 4 + 1 = 12$ kilometres.<br>This is a geometric series with first term $a = 20 \\times 1.04 = 20.8$ and common ratio $r_{\\text{gp}} = 1.04$.",
+            "Using the sum formula, $S_N = \\dfrac{a(r_{\\text{gp}}^N - 1)}{r_{\\text{gp}} - 1}$:<br>$$S_{12} = \\dfrac{20.8(1.04^{12} - 1)}{1.04 - 1} = \\dfrac{20.8(1.04^{12} - 1)}{0.04} = 520(1.04^{12} - 1)$$<br>$$S_{12} \\approx 520(1.601032 - 1) \\approx 312.537\\text{ minutes}$$",
+            "Adding the initial $60\\text{ minutes}$ gives the total estimated time:<br>$$\\text{Total Time} = 60 + 312.537 = 372.537\\text{ minutes}$$<br>Converting to hours, minutes, and seconds:<br>$$\\dfrac{372.537}{60} = 6\\text{ hours and } 12.537\\text{ minutes}$$<br>$$0.537 \\times 60 = 32.22 \\approx 32\\text{ seconds}$$<br>Therefore, the total estimated time is <strong>6 hours, 12 minutes, and 32 seconds</strong>.",
+            "Final Answer: <strong>(a)</strong> $$102\\text{ min } 26\\text{ s}$$ <strong>(b)</strong> $$20 \\times 1.04^{r-3}$$ <strong>(c)</strong> $$6\\text{ h } 12\\text{ min } 32\\text{ s}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$102\\text{ min } 26\\text{ s}$$ <strong>(b)</strong> $$20 \\times 1.04^{r-3}$$ <strong>(c)</strong> $$6\\text{ h } 12\\text{ min } 54\\text{ s}$$",
+                "feedback": "You probably made an arithmetic rounding error in Part (c) by rounding the sum of your geometric series to $312.5$ minutes prematurely. Retaining full calculator precision during your summation yields a total time of $372.537$ minutes, which converts to $6\\text{ h } 12\\text{ min } 32\\text{ s}$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$102\\text{ min } 26\\text{ s}$$ <strong>(b)</strong> $$20 \\times 1.04^{r-4}$$ <strong>(c)</strong> $$6\\text{ h } 12\\text{ min } 32\\text{ s}$$",
+                "feedback": "Check your exponent index in Part (b). Since the steady phase ends after the 3rd kilometre, the first 4% increase occurs on the 4th kilometre ($r=4$). This requires an exponent of $r-3$ so that $T_4 = 20 \\times 1.04^1$. An exponent of $r-4$ would incorrectly mean the 4th kilometre had no slow-down."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$102\\text{ min } 26\\text{ s}$$ <strong>(b)</strong> $$20 \\times 1.04^{r-3}$$ <strong>(c)</strong> $$6\\text{ h } 15\\text{ min } 12\\text{ s}$$",
+                "feedback": "Check your value for $N$ (the number of terms in your geometric series) in Part (c). The slow-down phase runs from $r=4$ to $r=15$, which contains $15-4+1 = 12$ terms, not $11$ terms."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Counting Terms",
+            "content": "When calculating the sum of a series over a specific range like $r=4$ to $r=15$, a common pitfall is subtracting the limits ($15 - 4 = 11$) and using $11$ as the number of terms ($N$). Always remember the inclusive rule: $N = \\text{upper limit} - \\text{lower limit} + 1$. In this case, $15 - 4 + 1 = 12$ terms."
+        }
+    },
+    {
+        "id": "004052",
+        "major_area": "Sequences & Series",
+        "topic": "Series",
+        "subtopic": [
+            "Geometric Series"
+        ],
+        "img": false,
+        "question": "An engineering firm is drilling a 100-metre deep borehole.<br>The team drills each of the first 20 metres at a steady rate of 15 minutes per metre.<br>After the first 20 metres, the drilling speed begins to decrease due to harder rock layers.<br>In order to estimate the completion time, the time taken to drill each subsequent metre is modelled to be 2% greater than the time taken to drill the previous metre.<br>Using the model,<br><strong>(a)</strong> show that the time to drill the first 22 metres is estimated to be 330 minutes 54 seconds,<br><strong>(b)</strong> show that the estimated time, in minutes, to drill the $r$th metre, for $21 \\le r \\le 100$, is:<br>$$15 \\times 1.02^{r-20}$$<br><strong>(c)</strong> estimate the total time, in hours, minutes, and seconds, to complete the 100-metre borehole.",
+        "steps": [
+            "<strong>Part (a):</strong> The time for the first 20 metres is drilled at a steady rate of $15\\text{ min/m}$:<br>$$\\text{Time}_{1-20} = 20 \\times 15 = 300\\text{ minutes}$$",
+            "The 21st metre takes 2% longer than the 20th metre ($15\\text{ minutes}$):<br>$$\\text{Time}_{21} = 15 \\times 1.02 = 15.3\\text{ minutes}$$",
+            "The 22nd metre takes 2% longer than the 21st metre:<br>$$\\text{Time}_{22} = 15.3 \\times 1.02 = 15 \\times 1.02^2 = 15.606\\text{ minutes}$$",
+            "Adding these times together gives the total estimated time for the first 22 metres:<br>$$\\text{Total Time} = 300 + 15.3 + 15.606 = 330.906\\text{ minutes}$$<br>Converting $0.906$ minutes into seconds: $0.906 \\times 60 = 54.36 \\approx 54\\text{ seconds}$.<br>Therefore, the time is <strong>330 minutes 54 seconds</strong> (to the nearest second).",
+            "<strong>Part (b):</strong> For $r \\ge 21$, each subsequent metre is 2% slower than the previous one, forming a geometric progression where the first term after the steady phase (at $r=21$) is $15 \\times 1.02^1$.<br>In general, for the $r$th metre, the time has been multiplied by $1.02$ a total of $r-20$ times starting from the base pace of $15\\text{ minutes}$.<br>Therefore, the time for the $r$th metre is:<br>$$\\text{Time}_{r} = 15 \\times 1.02^{r-20}$$",
+            "<strong>Part (c):</strong> The total time is the sum of the first 20 steady metres ($300\\text{ minutes}$) and the geometric series from $r=21$ to $r=100$.<br>For $r=21$ to $100$, there are $100 - 21 + 1 = 80$ metres.<br>This is a geometric series with first term $a = 15 \\times 1.02 = 15.3$ and common ratio $r_{\\text{gp}} = 1.02$.",
+            "Using the sum formula, $S_N = \\dfrac{a(r_{\\text{gp}}^N - 1)}{r_{\\text{gp}} - 1}$:<br>$$S_{80} = \\dfrac{15.3(1.02^{80} - 1)}{1.02 - 1} = \\dfrac{15.3(1.02^{80} - 1)}{0.02} = 765(1.02^{80} - 1)$$<br>$$S_{80} \\approx 765(4.875439 - 1) \\approx 2964.711\\text{ minutes}$$",
+            "Adding the initial $300\\text{ minutes}$ gives the total estimated time:<br>$$\\text{Total Time} = 300 + 2964.711 = 3264.711\\text{ minutes}$$<br>Converting to hours, minutes, and seconds:<br>$$\\dfrac{3264.711}{60} = 54\\text{ hours and } 24.711\\text{ minutes}$$<br>$$0.711 \\times 60 = 42.66 \\approx 43\\text{ seconds}$$<br>Therefore, the total estimated time is <strong>54 hours, 24 minutes, and 43 seconds</strong>.",
+            "Final Answer: <strong>(a)</strong> $$330\\text{ min } 54\\text{ s}$$ <strong>(b)</strong> $$15 \\times 1.02^{r-20}$$ <strong>(c)</strong> $$54\\text{ h } 24\\text{ min } 43\\text{ s}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$330\\text{ min } 54\\text{ s}$$ <strong>(b)</strong> $$15 \\times 1.02^{r-20}$$ <strong>(c)</strong> $$54\\text{ h } 28\\text{ min } 12\\text{ s}$$",
+                "feedback": "You probably made an arithmetic rounding error in Part (c) by rounding the sum of your geometric series to $2968.2$ minutes prematurely. Retaining full calculator precision during your summation yields a total time of $3264.711$ minutes, which converts to $54\\text{ h } 24\\text{ min } 43\\text{ s}$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$330\\text{ min } 54\\text{ s}$$ <strong>(b)</strong> $$15 \\times 1.02^{r-21}$$ <strong>(c)</strong> $$54\\text{ h } 24\\text{ min } 43\\text{ s}$$",
+                "feedback": "Check your exponent index in Part (b). Since the steady phase ends after the 20th metre, the first 2% increase occurs on the 21st metre ($r=21$). This requires an exponent of $r-20$ so that $T_{21} = 15 \\times 1.02^1$. An exponent of $r-21$ would incorrectly mean the 21st metre had no slow-down."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$330\\text{ min } 54\\text{ s}$$ <strong>(b)</strong> $$15 \\times 1.02^{r-20}$$ <strong>(c)</strong> $$54\\text{ h } 20\\text{ min } 18\\text{ s}$$",
+                "feedback": "Check your value for $N$ (the number of terms in your geometric series) in Part (c). The slow-down phase runs from $r=21$ to $r=100$, which contains $100-21+1 = 80$ terms, not $79$ terms."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Avoid Early Rounding",
+            "content": "In multi-step GCE questions, never round your intermediate values on your calculator. Keeping the exact values stored in memory until the very final conversion prevents tiny rounding errors from compounding and throwing off your final seconds value."
+        }
+    },
+    {
+        "id": "004053",
+        "major_area": "Sequences & Series",
+        "topic": "Series",
+        "subtopic": [
+            "Geometric Series"
+        ],
+        "img": false,
+        "question": "A cyclist is completing a 50-kilometre long-distance ride.<br>He cycles each of the first 10 kilometres at a steady pace of 3 minutes per kilometre.<br>After the first 10 kilometres, he begins to slow down due to fatigue.<br>In order to estimate his finishing time, the time taken to complete each subsequent kilometre is modelled to be 3% greater than the time taken to complete the previous kilometre.<br>Using the model,<br><strong>(a)</strong> show that his time to cycle the first 12 kilometres is estimated to be 36 minutes 16 seconds,<br><strong>(b)</strong> show that his estimated time, in minutes, to cycle the $r$th kilometre, for $11 \\le r \\le 50$, is:<br>$$3 \\times 1.03^{r-10}$$<br><strong>(c)</strong> estimate the total time, in hours, minutes, and seconds, that he will take to complete the ride.",
+        "steps": [
+            "<strong>Part (a):</strong> The time for the first 10 kilometres is cycled at a steady pace of $3\\text{ min/km}$:<br>$$\\text{Time}_{1-10} = 10 \\times 3 = 30\\text{ minutes}$$",
+            "The 11th kilometre takes 3% longer than the 10th kilometre ($3\\text{ minutes}$):<br>$$\\text{Time}_{11} = 3 \\times 1.03 = 3.09\\text{ minutes}$$",
+            "The 12th kilometre takes 3% longer than the 11th kilometre:<br>$$\\text{Time}_{12} = 3.09 \\times 1.03 = 3 \\times 1.03^2 = 3.1827\\text{ minutes}$$",
+            "Adding these times together gives the total estimated time for the first 12 kilometres:<br>$$\\text{Total Time} = 30 + 3.09 + 3.1827 = 36.2727\\text{ minutes}$$<br>Converting $0.2727$ minutes into seconds: $0.2727 \\times 60 = 16.362 \\approx 16\\text{ seconds}$.<br>Therefore, the time is <strong>36 minutes 16 seconds</strong> (to the nearest second).",
+            "<strong>Part (b):</strong> For $r \\ge 11$, each subsequent kilometre is 3% slower than the previous one, forming a geometric progression where the first term after the steady phase (at $r=11$) is $3 \\times 1.03^1$.<br>In general, for the $r$th kilometre, the time has been multiplied by $1.03$ a total of $r-10$ times starting from the base pace of $3\\text{ minutes}$.<br>Therefore, the time for the $r$th kilometre is:<br>$$\\text{Time}_{r} = 3 \\times 1.03^{r-10}$$",
+            "<strong>Part (c):</strong> The total time is the sum of the first 10 steady kilometres ($30\\text{ minutes}$) and the geometric series from $r=11$ to $r=50$.<br>For $r=11$ to $50$, there are $50 - 11 + 1 = 40$ kilometres.<br>This is a geometric series with first term $a = 3 \\times 1.03 = 3.09$ and common ratio $r_{\\text{gp}} = 1.03$.",
+            "Using the sum formula, $S_N = \\dfrac{a(r_{\\text{gp}}^N - 1)}{r_{\\text{gp}} - 1}$:<br>$$S_{40} = \\dfrac{3.09(1.03^{40} - 1)}{1.03 - 1} = \\dfrac{3.09(1.03^{40} - 1)}{0.03} = 103(1.03^{40} - 1)$$<br>$$S_{40} \\approx 103(3.262038 - 1) \\approx 232.990\\text{ minutes}$$",
+            "Adding the initial $300\\text{ minutes}$ gives the total estimated time:<br>$$\\text{Total Time} = 30 + 232.990 = 262.990\\text{ minutes}$$<br>Converting to hours, minutes, and seconds:<br>$$\\dfrac{262.990}{60} = 4\\text{ hours and } 22.990\\text{ minutes}$$<br>$$0.990 \\times 60 = 59.4 \\approx 59\\text{ seconds}$$<br>Therefore, the total estimated time is <strong>4 hours, 22 minutes, and 59 seconds</strong>.",
+            "Final Answer: <strong>(a)</strong> $$36\\text{ min } 16\\text{ s}$$ <strong>(b)</strong> $$3 \\times 1.03^{r-10}$$ <strong>(c)</strong> $$4\\text{ h } 22\\text{ min } 59\\text{ s}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$36\\text{ min } 16\\text{ s}$$ <strong>(b)</strong> $$3 \\times 1.03^{r-10}$$ <strong>(c)</strong> $$4\\text{ h } 22\\text{ min } 54\\text{ s}$$",
+                "feedback": "You probably made an arithmetic rounding error in Part (c) by rounding the sum of your geometric series to $232.9$ minutes prematurely. Retaining full calculator precision during your summation yields a total time of $262.990$ minutes, which converts to $4\\text{ h } 22\\text{ min } 59\\text{ s}$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$36\\text{ min } 16\\text{ s}$$ <strong>(b)</strong> $$3 \\times 1.03^{r-11}$$ <strong>(c)</strong> $$4\\text{ h } 22\\text{ min } 59\\text{ s}$$",
+                "feedback": "Check your exponent index in Part (b). Since the steady phase ends after the 10th kilometre, the first 3% increase occurs on the 11th kilometre ($r=11$). This requires an exponent of $r-10$ so that $T_{11} = 3 \\times 1.03^1$. An exponent of $r-11$ would incorrectly mean the 11th kilometre had no slow-down."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$36\\text{ min } 16\\text{ s}$$ <strong>(b)</strong> $$3 \\times 1.03^{r-10}$$ <strong>(c)</strong> $$4\\text{ h } 18\\text{ min } 12\\text{ s}$$",
+                "feedback": "Check your value for $N$ (the number of terms in your geometric series) in Part (c). The slow-down phase runs from $r=11$ to $r=50$, which contains $50-11+1 = 40$ terms, not $39$ terms."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Shifted Exponents",
+            "content": "In series modeling, when the geometric phase starts at an offset index (like $r=11$ in this question), the exponent must be shifted back to align properly. Always test your boundary case: substituting your first term index ($r=11$) into your formula must yield the single 3% multiplier increase ($r-10 = 1$)."
+        }
+    },
+    {
+        "id": "004054",
+        "major_area": "Sequences & Series",
+        "topic": "Series",
+        "subtopic": [
+            "Geometric Series"
+        ],
+        "img": false,
+        "question": "A hiker is walking a 12-kilometre uphill trail.<br>She hikes each of the first 3 kilometres at a steady pace of 12 minutes per kilometre.<br>After the first 3 kilometres, the trail becomes steeper and she begins to slow down.<br>In order to estimate her arrival time, the time taken to complete each subsequent kilometre is modelled to be 6% greater than the time taken to complete the previous kilometre.<br>Using the model,<br><strong>(a)</strong> show that her time to hike the first 5 kilometres is estimated to be 62 minutes 12 seconds,<br><strong>(b)</strong> show that her estimated time, in minutes, to hike the $r$th kilometre, for $4 \\le r \\le 12$, is:<br>$$12 \\times 1.06^{r-3}$$<br><strong>(c)</strong> estimate the total time, in hours, minutes, and seconds, that she will take to complete the uphill trail.",
+        "steps": [
+            "<strong>Part (a):</strong> The time for the first 3 kilometres is hiked at a steady pace of $12\\text{ min/km}$:<br>$$\\text{Time}_{1-3} = 3 \\times 12 = 36\\text{ minutes}$$",
+            "The 4th kilometre takes 6% longer than the 3rd kilometre ($12\\text{ minutes}$):<br>$$\\text{Time}_{4} = 12 \\times 1.06 = 12.72\\text{ minutes}$$",
+            "The 5th kilometre takes 6% longer than the 4th kilometre:<br>$$\\text{Time}_{5} = 12.72 \\times 1.06 = 12 \\times 1.06^2 = 13.4832\\text{ minutes}$$",
+            "Adding these times together gives the total estimated time for the first 5 kilometres:<br>$$\\text{Total Time} = 36 + 12.72 + 13.4832 = 62.2032\\text{ minutes}$$<br>Converting $0.2032$ minutes into seconds: $0.2032 \\times 60 = 12.192 \\approx 12\\text{ seconds}$.<br>Therefore, the time is <strong>62 minutes 12 seconds</strong> (to the nearest second).",
+            "<strong>Part (b):</strong> For $r \\ge 4$, each subsequent kilometre is 6% slower than the previous one, forming a geometric progression where the first term after the steady phase (at $r=4$) is $12 \\times 1.06^1$.<br>In general, for the $r$th kilometre, the time has been multiplied by $1.06$ a total of $r-3$ times starting from the base pace of $12\\text{ minutes}$.<br>Therefore, the time for the $r$th kilometre is:<br>$$\\text{Time}_{r} = 12 \\times 1.06^{r-3}$$",
+            "<strong>Part (c):</strong> The total time is the sum of the first 3 steady kilometres ($36\\text{ minutes}$) and the geometric series from $r=4$ to $r=12$.<br>For $r=4$ to $12$, there are $12 - 4 + 1 = 9$ kilometres.<br>This is a geometric series with first term $a = 12 \\times 1.06 = 12.72$ and common ratio $r_{\\text{gp}} = 1.06$.",
+            "Using the sum formula, $S_N = \\dfrac{a(r_{\\text{gp}}^N - 1)}{r_{\\text{gp}} - 1}$:<br>$$S_9 = \\dfrac{12.72(1.06^9 - 1)}{1.06 - 1} = \\dfrac{12.72(1.06^9 - 1)}{0.06} = 212(1.06^9 - 1)$$<br>$$S_9 \\approx 212(1.689479 - 1) \\approx 146.169\\text{ minutes}$$",
+            "Adding the initial $36\\text{ minutes}$ gives the total estimated time:<br>$$\\text{Total Time} = 36 + 146.169 = 182.169\\text{ minutes}$$<br>Converting to hours, minutes, and seconds:<br>$$\\dfrac{182.169}{60} = 3\\text{ hours and } 2.169\\text{ minutes}$$<br>$$2.169 \\times 60 = 10.14 \\approx 10\\text{ seconds}$$<br>Therefore, the total estimated time is <strong>3 hours, 2 minutes, and 10 seconds</strong>.",
+            "Final Answer: <strong>(a)</strong> $$62\\text{ min } 12\\text{ s}$$ <strong>(b)</strong> $$12 \\times 1.06^{r-3}$$ <strong>(c)</strong> $$3\\text{ h } 2\\text{ min } 10\\text{ s}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$62\\text{ min } 12\\text{ s}$$ <strong>(b)</strong> $$12 \\times 1.06^{r-3}$$ <strong>(c)</strong> $$3\\text{ h } 2\\text{ min } 0\\text{ s}$$",
+                "feedback": "Check your final seconds conversion in Part (c). $182.169$ minutes converts to $3$ hours, $2$ minutes, and $10$ seconds. Make sure you don't drop the fractional minutes when performing your division."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$62\\text{ min } 12\\text{ s}$$ <strong>(b)</strong> $$12 \\times 1.06^{r-4}$$ <strong>(c)</strong> $$3\\text{ h } 2\\text{ min } 10\\text{ s}$$",
+                "feedback": "Check your exponent index in Part (b). Since the steady phase ends after the 3rd kilometre, the first 6% increase occurs on the 4th kilometre ($r=4$). This requires an exponent of $r-3$ so that $T_4 = 12 \\times 1.06^1$. An exponent of $r-4$ would incorrectly mean the 4th kilometre had no slow-down."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$62\\text{ min } 12\\text{ s}$$ <strong>(b)</strong> $$12 \\times 1.06^{r-3}$$ <strong>(c)</strong> $$3\\text{ h } 0\\text{ min } 48\\text{ s}$$",
+                "feedback": "Check your value for $N$ (the number of terms in your geometric series) in Part (c). The slow-down phase runs from $r=4$ to $r=12$, which contains $12-4+1 = 9$ terms, not $8$ terms."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Time Conversions",
+            "content": "When converting a large decimal number of minutes into hours, minutes, and seconds, divide by $60$ first to isolate the whole hours. Take the remainder and multiply it by $60$ to isolate the whole minutes, and then multiply the final remaining decimal fraction by $60$ to secure your seconds."
+        }
+    },
+    {
+        "id": "004055",
+        "major_area": "Sequences & Series",
+        "topic": "Series",
+        "subtopic": [
+            "Geometric Series"
+        ],
+        "img": false,
+        "question": "A rower is crossing a 10-kilometre lake.<br>She rows each of the first 2 kilometres at a steady pace of 8 minutes per kilometre.<br>After the first 2 kilometres, she begins to slow down.<br>In order to estimate her crossing time, the time taken to complete each subsequent kilometre is modelled to be 4% greater than the time taken to complete the previous kilometre.<br>Using the model,<br><strong>(a)</strong> show that her time to row the first 4 kilometres is estimated to be 32 minutes 58 seconds,<br><strong>(b)</strong> show that her estimated time, in minutes, to row the $r$th kilometre, for $3 \\le r \\le 10$, is:<br>$$8 \\times 1.04^{r-2}$$<br><strong>(c)</strong> estimate the total time, in minutes and seconds, that she will take to complete the 10-kilometre crossing.",
+        "steps": [
+            "<strong>Part (a):</strong> The time for the first 2 kilometres is rowed at a steady pace of $8\\text{ min/km}$:<br>$$\\text{Time}_{1-2} = 2 \\times 8 = 16\\text{ minutes}$$",
+            "The 3rd kilometre takes 4% longer than the 2nd kilometre ($8\\text{ minutes}$):<br>$$\\text{Time}_{3} = 8 \\times 1.04 = 8.32\\text{ minutes}$$",
+            "The 4th kilometre takes 4% longer than the 3rd kilometre:<br>$$\\text{Time}_{4} = 8.32 \\times 1.04 = 8 \\times 1.04^2 = 8.6528\\text{ minutes}$$",
+            "Adding these times together gives the total estimated time for the first 4 kilometres:<br>$$\\text{Total Time} = 16 + 8.32 + 8.6528 = 32.9728\\text{ minutes}$$<br>Converting $0.9728$ minutes into seconds: $0.9728 \\times 60 = 58.368 \\approx 58\\text{ seconds}$.<br>Therefore, the time is <strong>32 minutes 58 seconds</strong> (to the nearest second).",
+            "<strong>Part (b):</strong> For $r \\ge 3$, each subsequent kilometre is 4% slower than the previous one, forming a geometric progression where the first term after the steady phase (at $r=3$) is $8 \\times 1.04^1$.<br>In general, for the $r$th kilometre, the time has been multiplied by $1.04$ a total of $r-2$ times starting from the base pace of $8\\text{ minutes}$.<br>Therefore, the time for the $r$th kilometre is:<br>$$\\text{Time}_{r} = 8 \\times 1.04^{r-2}$$",
+            "<strong>Part (c):</strong> The total time is the sum of the first 2 steady kilometres ($16\\text{ minutes}$) and the geometric series from $r=3$ to $r=10$.<br>For $r=3$ to $10$, there are $10 - 3 + 1 = 8$ kilometres.<br>This is a geometric series with first term $a = 8 \\times 1.04 = 8.32$ and common ratio $r_{\\text{gp}} = 1.04$.",
+            "Using the sum formula, $S_N = \\dfrac{a(r_{\\text{gp}}^N - 1)}{r_{\\text{gp}} - 1}$:<br>$$S_8 = \\dfrac{8.32(1.04^8 - 1)}{1.04 - 1} = \\dfrac{8.32(1.04^8 - 1)}{0.04} = 208(1.04^8 - 1)$$<br>$$S_8 \\approx 208(1.368569 - 1) \\approx 76.662\\text{ minutes}$$",
+            "Adding the initial $16\\text{ minutes}$ gives the total estimated time:<br>$$\\text{Total Time} = 16 + 76.662 = 92.662\\text{ minutes}$$<br>Converting to minutes and seconds:<br>$$\\text{Total Time} = 92\\text{ minutes and } 0.662\\text{ minutes}$$<br>$$0.662 \\times 60 = 39.72 \\approx 40\\text{ seconds}$$<br>Therefore, the total estimated time is <strong>92 minutes 40 seconds</strong>.",
+            "Final Answer: <strong>(a)</strong> $$32\\text{ min } 58\\text{ s}$$ <strong>(b)</strong> $$8 \\times 1.04^{r-2}$$ <strong>(c)</strong> $$92\\text{ min } 40\\text{ s}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$32\\text{ min } 58\\text{ s}$$ <strong>(b)</strong> $$8 \\times 1.04^{r-2}$$ <strong>(c)</strong> $$92\\text{ min } 12\\text{ s}$$",
+                "feedback": "Check your decimal minutes conversion in Part (c). $92.662$ minutes is not $92\\text{ min } 12\\text{ s}$. You must multiply the fractional part ($0.662$) by $60$ to get the correct seconds value ($40\\text{ s}$)."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$32\\text{ min } 58\\text{ s}$$ <strong>(b)</strong> $$8 \\times 1.04^{r-3}$$ <strong>(c)</strong> $$92\\text{ min } 40\\text{ s}$$",
+                "feedback": "Check your exponent index in Part (b). Since the steady phase ends after the 2nd kilometre, the first 4% increase occurs on the 3rd kilometre ($r=3$). This requires an exponent of $r-2$ so that $T_3 = 8 \\times 1.04^1$. An exponent of $r-3$ would incorrectly mean the 3rd kilometre had no slow-down."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$32\\text{ min } 58\\text{ s}$$ <strong>(b)</strong> $$8 \\times 1.04^{r-2}$$ <strong>(c)</strong> $$84\\text{ min } 0\\text{ s}$$",
+                "feedback": "Check your value for $N$ (the number of terms in your geometric series) in Part (c). The slow-down phase runs from $r=3$ to $r=10$, which contains $10-3+1 = 8$ terms, not $7$ terms."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Checking Calculations",
+            "content": "For this question, when converting fractional minutes to seconds, always make sure you multiply the decimal by $60$ rather than simply reading the decimal directly as seconds. A value of $0.662$ minutes is roughly two-thirds of a minute, which is exactly $40$ seconds."
+        }
     }
+
 
 
 
