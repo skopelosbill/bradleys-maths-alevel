@@ -2133,7 +2133,203 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Checking Calculations",
             "content": "For this question, when converting fractional minutes to seconds, always make sure you multiply the decimal by $60$ rather than simply reading the decimal directly as seconds. A value of $0.662$ minutes is roughly two-thirds of a minute, which is exactly $40$ seconds."
         }
+    },
+    {
+        "id": "004056",
+        "major_area": "Differentiation",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Product Rule",
+            "Calculus Modelling"
+        ],
+        "img": "images/p1/004056.png",
+        "question": "A curve has the equation:<br>$$\\text{f}(x) = 15\\text{e}^{-0.5x}\\sin x, \\quad x \\ge 0$$<br><strong>(a)</strong> Show that the $x$-coordinates of the turning points of the curve satisfy the equation $\\tan x = 2$.<br><br>The diagram shows a sketch of part of the curve with equation $y = \\text{f}(x)$.<br><strong>(b)</strong> Sketch the graph of $H$ against $t$ where:<br>$$H(t) = \\left|15\\text{e}^{-0.5t}\\sin t\\right|, \\quad t \\ge 0$$<br>showing the long-term behaviour of this curve.<br><br>The function $H(t)$ is used to model the height, in metres, of a ball above the ground $t$ seconds after it has been kicked. Using this model, find:<br><strong>(c)</strong> the maximum height of the ball above the ground between the first and second bounce, giving your answer to 3 significant figures.<br><strong>(d)</strong> Explain why this model should not be used to predict the time of each bounce.",
+        "steps": [
+            "<strong>Part (a):</strong> We find the derivative of $\\text{f}(x)$ with respect to $x$ using the <strong>Product Rule</strong>, where $u = 15\\text{e}^{-0.5x}$ and $v = \\sin x$:<br>$$u' = -7.5\\text{e}^{-0.5x}$$<br>$$v' = \\cos x$$<br>$$\\text{f}'(x) = u'v + uv' = -7.5\\text{e}^{-0.5x}\\sin x + 15\\text{e}^{-0.5x}\\cos x$$",
+            "Factorising out the exponential term:<br>$$\\text{f}'(x) = 7.5\\text{e}^{-0.5x} \\left( 2\\cos x - \\sin x \\right)$$<br>At turning points, $\\text{f}'(x) = 0$. Since $\\text{e}^{-0.5x} \\ne 0$ for all real $x$, we require:<br>$$2\\cos x - \\sin x = 0 \\implies 2\\cos x = \\sin x \\implies \\tan x = 2$$",
+            "<strong>Part (b):</strong> The graph of $H(t) = \\left|15\\text{e}^{-0.5t}\\sin t\\right|$ is a damped sine wave with all its negative lobes reflected above the $t$-axis. This models the successive decreasing bounces of the ball tending to $0$ as $t \\to \\infty$.<br><br>Here is the completed sketch showing this long-term behaviour:<br><img src='images/p1/004056_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 2$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(2) \\approx 3.14159 + 1.10715 \\approx 4.24874\\text{ seconds}$$",
+            "Substituting this value into the model to find the maximum height:<br>$$H(4.24874) = \\left|15\\text{e}^{-0.5(4.24874)}\\sin(4.24874)\\right| \\approx \\left|15(0.119508)(-0.894427)\\right| \\approx 1.6033\\text{ m}$$<br>Therefore, the maximum height is <strong>$1.60\\text{ m}$</strong> (to 3 significant figures).",
+            "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 2\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$1.60\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\ \\pi\\ \\text{seconds}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = 2$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$1.59\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "feedback": "You probably made an arithmetic rounding error in Part (c) by evaluating the expression using rounded intermediate values. Retaining full calculator precision yields $H(4.24874) = 1.6033\\text{ m}$, which rounds to $1.60\\text{ m}$ to 3 significant figures."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = 0.5$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$1.60\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "feedback": "Check your division in Part (a). When dividing $2\\cos x = \\sin x$ by $\\cos x$ on both sides, you obtain $2 = \\frac{\\sin x}{\\cos x}$, which simplifies to $\\tan x = 2$, not $\\tan x = 0.5$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = 2$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$0.802\\text{ m}$$ <strong>(d)</strong> $$The\\ model\\ is\\ completely\\ accurate$$",
+                "feedback": "Check your quadrant value in Part (c). The interval between the first and second bounce is $\\pi < t < 2\\pi$, which is the third quadrant. It appears you calculated the turning point in the first quadrant ($t = \\tan^{-1}(2) \\approx 1.11\\text{ s}$), which represents the peak of the first lobe before the first bounce."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Real-world Limitations",
+            "content": "This question is a classic example of evaluating the limitations of a mathematical model. While the exponential multiplier successfully models the decay in height, the trigonometric term enforces a constant period, which contradicts the real-world physics of decreasing bounce periods. Always look for these simplified assumptions in modelling tasks."
+        }
+    },
+    {
+        "id": "004057",
+        "major_area": "Differentiation",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Product Rule",
+            "Calculus Modelling"
+        ],
+        "img": "images/p1/004057.png",
+        "question": "A curve has the equation:<br>$$\\text{f}(x) = 8\\text{e}^{-0.2x}\\sin x, \\quad x \\ge 0$$<br><strong>(a)</strong> Show that the $x$-coordinates of the turning points of the curve satisfy the equation $\\tan x = 5$.<br><br>The diagram shows a sketch of part of the curve with equation $y = \\text{f}(x)$.<br><strong>(b)</strong> Sketch the graph of $H$ against $t$ where:<br>$$H(t) = \\left|8\\text{e}^{-0.2t}\\sin t\\right|, \\quad t \\ge 0$$<br>showing the long-term behaviour of this curve.<br><br>The function $H(t)$ is used to model the height, in metres, of a ball above the ground $t$ seconds after it has been kicked. Using this model, find:<br><strong>(c)</strong> the maximum height of the ball above the ground between the first and second bounce, giving your answer to 3 significant figures.<br><strong>(d)</strong> Explain why this model should not be used to predict the time of each bounce.",
+        "steps": [
+            "<strong>Part (a):</strong> We find the derivative of $\\text{f}(x)$ with respect to $x$ using the <strong>Product Rule</strong>, where $u = 8\\text{e}^{-0.2x}$ and $v = \\sin x$:<br>$$u' = -1.6\\text{e}^{-0.2x}$$<br>$$v' = \\cos x$$<br>$$\\text{f}'(x) = u'v + uv' = -1.6\\text{e}^{-0.2x}\\sin x + 8\\text{e}^{-0.2x}\\cos x$$",
+            "Factorising out the exponential term:<br>$$\\text{f}'(x) = 1.6\\text{e}^{-0.2x} \\left( 5\\cos x - \\sin x \\right)$$<br>At turning points, $\\text{f}'(x) = 0$. Since $\\text{e}^{-0.2x} \\ne 0$ for all real $x$, we require:<br>$$5\\cos x - \\sin x = 0 \\implies 5\\cos x = \\sin x \\implies \\tan x = 5$$",
+            "<strong>Part (b):</strong> The graph of $H(t) = \\left|8\\text{e}^{-0.2t}\\sin t\\right|$ is a damped sine wave with all its negative lobes reflected above the $t$-axis. This models the successive decreasing bounces of the ball tending to $0$ as $t \\to \\infty$.<br><br>Here is the completed sketch showing this long-term behaviour:<br><img src='images/p1/004057_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 5$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(5) \\approx 3.14159 + 1.37340 \\approx 4.51499\\text{ seconds}$$",
+            "Substituting this value into the model to find the maximum height:<br>$$H(4.51499) = \\left|8\\text{e}^{-0.2(4.51499)}\\sin(4.51499)\\right| \\approx \\left|8(0.40535)(-0.980581)\\right| \\approx 3.180\\text{ m}$$<br>Therefore, the maximum height is <strong>$3.18\\text{ m}$</strong> (to 3 significant figures).",
+            "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 5\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$3.18\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\ \\pi\\ \\text{seconds}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = 5$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$3.18\\text{ m}$$ <strong>(d)</strong> $$The\\ model\\ is\\ highly\\ physically\\ accurate$$",
+                "feedback": "Check your reasoning for Part (d). The model is strictly periodic and forces bounces at fixed multiples of $\\pi$ seconds, ignoring the natural physical decay in the bounce period. Therefore, it is physically inaccurate for predicting bounce times."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = 0.2$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$3.18\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "feedback": "Check your division in Part (a). When dividing $5\\cos x = \\sin x$ by $\\cos x$ on both sides, you obtain $5 = \\frac{\\sin x}{\\cos x}$, which simplifies to $\\tan x = 5$, not $\\tan x = 0.2$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = 5$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$1.59\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "feedback": "Check your quadrant value in Part (c). The interval between the first and second bounce is $\\pi < t < 2\\pi$, which is the third quadrant. It appears you calculated the turning point in the first quadrant ($t = \\tan^{-1}(5) \\approx 1.37\\text{ s}$), which represents the peak of the first lobe before the first bounce."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Product Rule Coefficients",
+            "content": "In this question, when factorising the exponential term $\\text{e}^{-0.2x}$ from the derivative, you can factorise out its coefficient ($1.6$) as well. This reduces the brackets to $5\\cos x - \\sin x$, making the division to obtain $\\tan x = 5$ exceptionally clean."
+        }
+    },
+    {
+        "id": "004058",
+        "major_area": "Differentiation",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Product Rule",
+            "Calculus Modelling"
+        ],
+        "img": "images/p1/004058.png",
+        "question": "A curve has the equation:<br>$$\\text{f}(x) = 12\\text{e}^{-\\frac{1}{3}x}\\sin x, \\quad x \\ge 0$$<br><strong>(a)</strong> Show that the $x$-coordinates of the turning points of the curve satisfy the equation $\\tan x = 3$.<br><br>The diagram shows a sketch of part of the curve with equation $y = \\text{f}(x)$.<br><strong>(b)</strong> Sketch the graph of $H$ against $t$ where:<br>$$H(t) = \\left|12\\text{e}^{-\\frac{1}{3}t}\\sin t\\right|, \\quad t \\ge 0$$<br>showing the long-term behaviour of this curve.<br><br>The function $H(t)$ is used to model the height, in metres, of a ball above the ground $t$ seconds after it has been kicked. Using this model, find:<br><strong>(c)</strong> the maximum height of the ball above the ground between the first and second bounce, giving your answer to 3 significant figures.<br><strong>(d)</strong> Explain why this model should not be used to predict the time of each bounce.",
+        "steps": [
+            "<strong>Part (a):</strong> We find the derivative of $\\text{f}(x)$ with respect to $x$ using the <strong>Product Rule</strong>, where $u = 12\\text{e}^{-\\frac{1}{3}x}$ and $v = \\sin x$:<br>$$u' = -4\\text{e}^{-\\frac{1}{3}x}$$<br>$$v' = \\cos x$$<br>$$\\text{f}'(x) = u'v + uv' = -4\\text{e}^{-\\frac{1}{3}x}\\sin x + 12\\text{e}^{-\\frac{1}{3}x}\\cos x$$",
+            "Factorising out the exponential term:<br>$$\\text{f}'(x) = 4\\text{e}^{-\\frac{1}{3}x} \\left( 3\\cos x - \\sin x \\right)$$<br>At turning points, $\\text{f}'(x) = 0$. Since $\\text{e}^{-\\frac{1}{3}x} \\ne 0$ for all real $x$, we require:<br>$$3\\cos x - \\sin x = 0 \\implies 3\\cos x = \\sin x \\implies \\tan x = 3$$",
+            "<strong>Part (b):</strong> The graph of $H(t) = \\left|12\\text{e}^{-\\frac{1}{3}t}\\sin t\\right|$ is a damped sine wave with all its negative lobes reflected above the $t$-axis. This models the successive decreasing bounces of the ball tending to $0$ as $t \\to \\infty$.<br><br>Here is the completed sketch showing this long-term behaviour:<br><img src='images/p1/004058_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 3$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(3) \\approx 3.14159 + 1.24905 \\approx 4.39064\\text{ seconds}$$",
+            "Substituting this value into the model to find the maximum height:<br>$$H(4.39064) = \\left|12\\text{e}^{-\\frac{1}{3}(4.39064)}\\sin(4.39064)\\right| \\approx \\left|12(0.231415)(-0.948683)\\right| \\approx 2.634\\text{ m}$$<br>Therefore, the maximum height is <strong>$2.63\\text{ m}$</strong> (to 3 significant figures).",
+            "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 3\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$2.63\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\ \\pi\\ \\text{seconds}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = 3$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$2.63\\text{ m}$$ <strong>(d)</strong> $$Air\\ resistance\\ makes\\ the\\ model\\ highly\\ accurate$$",
+                "feedback": "Check your reasoning for Part (d). Air resistance would actually cause the ball to lose energy and bounce more frequently, meaning the intervals would decrease. The model's rigid periodicity is its main limitation."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = \\dfrac{1}{3}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$2.63\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "feedback": "Check your division in Part (a). When dividing $3\\cos x = \\sin x$ by $\\cos x$ on both sides, you obtain $3 = \\frac{\\sin x}{\\cos x}$, which simplifies to $\\tan x = 3$, not $\\tan x = \\frac{1}{3}$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = 3$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$1.14\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "feedback": "Check your quadrant value in Part (c). The interval between the first and second bounce is $\\pi < t < 2\\pi$, which is the third quadrant. It appears you calculated the turning point in the first quadrant ($t = \\tan^{-1}(3) \\approx 1.25\\text{ s}$), which represents the peak of the first lobe before the first bounce."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Damped Oscillations",
+            "content": "Damped oscillations of the form $A\\text{e}^{-kx}\\sin x$ are used extensively in physics to model real-world decay systems. While the mathematical envelope decays smoothly, always remember that trigonometric components assume a constant frequency, which is often the primary limitation of such models in physical sciences."
+        }
+    },
+    {
+        "id": "004059",
+        "major_area": "Differentiation",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Product Rule",
+            "Calculus Modelling"
+        ],
+        "img": "images/p1/004059.png",
+        "question": "A curve has the equation:<br>$$\\text{f}(x) = 6\\text{e}^{-0.125x}\\sin x, \\quad x \\ge 0$$<br><strong>(a)</strong> Show that the $x$-coordinates of the turning points of the curve satisfy the equation $\\tan x = 8$.<br><br>The diagram shows a sketch of part of the curve with equation $y = \\text{f}(x)$.<br><strong>(b)</strong> Sketch the graph of $H$ against $t$ where:<br>$$H(t) = \\left|6\\text{e}^{-0.125t}\\sin t\\right|, \\quad t \\ge 0$$<br>showing the long-term behaviour of this curve.<br><br>The function $H(t)$ is used to model the height, in metres, of a ball above the ground $t$ seconds after it has been kicked. Using this model, find:<br><strong>(c)</strong> the maximum height of the ball above the ground between the first and second bounce, giving your answer to 3 significant figures.<br><strong>(d)</strong> Explain why this model should not be used to predict the time of each bounce.",
+        "steps": [
+            "<strong>Part (a):</strong> We find the derivative of $\\text{f}(x)$ with respect to $x$ using the <strong>Product Rule</strong>, where $u = 6\\text{e}^{-0.125x}$ and $v = \\sin x$:<br>$$u' = -0.75\\text{e}^{-0.125x}$$<br>$$v' = \\cos x$$<br>$$\\text{f}'(x) = u'v + uv' = -0.75\\text{e}^{-0.125x}\\sin x + 6\\text{e}^{-0.125x}\\cos x$$",
+            "Factorising out the exponential term:<br>$$\\text{f}'(x) = 0.75\\text{e}^{-0.125x} \\left( 8\\cos x - \\sin x \\right)$$<br>At turning points, $\\text{f}'(x) = 0$. Since $\\text{e}^{-0.125x} \\ne 0$ for all real $x$, we require:<br>$$8\\cos x - \\sin x = 0 \\implies 8\\cos x = \\sin x \\implies \\tan x = 8$$",
+            "<strong>Part (b):</strong> The graph of $H(t) = \\left|6\\text{e}^{-0.125t}\\sin t\\right|$ is a damped sine wave with all its negative lobes reflected above the $t$-axis. This models the successive decreasing bounces of the ball tending to $0$ as $t \\to \\infty$.<br><br>Here is the completed sketch showing this long-term behaviour:<br><img src='images/p1/004059_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 8$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(8) \\approx 3.14159 + 1.44644 \\approx 4.58803\\text{ seconds}$$",
+            "Substituting this value into the model to find the maximum height:<br>$$H(4.58803) = \\left|6\\text{e}^{-0.125(4.58803)}\\sin(4.58803)\\right| \\approx \\left|6(0.563546)(-0.992278)\\right| \\approx 3.3551\\text{ m}$$<br>Therefore, the maximum height is <strong>$3.36\\text{ m}$</strong> (to 3 significant figures).",
+            "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 8\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$3.36\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\ \\pi\\ \\text{seconds}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = 8$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$3.36\\text{ m}$$ <strong>(d)</strong> $$The\\ bounce\\ intervals\\ will\\ get\\ progressively\\ shorter$$",
+                "feedback": "Check your reasoning for Part (d). While real-world bounce intervals do get shorter, this mathematical model uses a strictly periodic $\\sin t$ term, which forces the bounce intervals to remain completely constant."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = 0.125$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$3.36\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "feedback": "Check your division in Part (a). When dividing $8\\cos x = \\sin x$ by $\\cos x$ on both sides, you obtain $8 = \\frac{\\sin x}{\\cos x}$, which simplifies to $\\tan x = 8$, not $\\tan x = 0.125$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = 8$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$1.98\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "feedback": "Check your quadrant value in Part (c). The interval between the first and second bounce is $\\pi < t < 2\\pi$, which is the third quadrant. It appears you calculated the turning point in the first quadrant ($t = \\tan^{-1}(8) \\approx 1.45\\text{ s}$), which represents the peak of the first lobe before the first bounce."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: High Value Tangents",
+            "content": "When $\\tan x = 8$, the angle is very close to $90^\\circ$ ($\\frac{\\pi}{2}$ radians). This means the peak of the bounce is shifted slightly to the left compared to a standard un-damped sine wave. This horizontal shift is a natural consequence of exponential damping."
+        }
+    },
+    {
+        "id": "004060",
+        "major_area": "Differentiation",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Product Rule",
+            "Calculus Modelling"
+        ],
+        "img": "images/p1/004060.png",
+        "question": "A curve has the equation:<br>$$\\text{f}(x) = 20\\text{e}^{-\\frac{1}{6}x}\\sin x, \\quad x \\ge 0$$<br><strong>(a)</strong> Show that the $x$-coordinates of the turning points of the curve satisfy the equation $\\tan x = 6$.<br><br>The diagram shows a sketch of part of the curve with equation $y = \\text{f}(x)$.<br><strong>(b)</strong> Sketch the graph of $H$ against $t$ where:<br>$$H(t) = \\left|20\\text{e}^{-\\frac{1}{6}t}\\sin t\\right|, \\quad t \\ge 0$$<br>showing the long-term behaviour of this curve.<br><br>The function $H(t)$ is used to model the height, in metres, of a ball above the ground $t$ seconds after it has been kicked. Using this model, find:<br><strong>(c)</strong> the maximum height of the ball above the ground between the first and second bounce, giving your answer to 3 significant figures.<br><strong>(d)</strong> Explain why this model should not be used to predict the time of each bounce.",
+        "steps": [
+            "<strong>Part (a):</strong> We find the derivative of $\\text{f}(x)$ with respect to $x$ using the <strong>Product Rule</strong>, where $u = 20\\text{e}^{-\\frac{1}{6}x}$ and $v = \\sin x$:<br>$$u' = -\\frac{10}{3}\\text{e}^{-\\frac{1}{6}x}$$<br>$$v' = \\cos x$$<br>$$\\text{f}'(x) = u'v + uv' = -\\frac{10}{3}\\text{e}^{-\\frac{1}{6}x}\\sin x + 20\\text{e}^{-\\frac{1}{6}x}\\cos x$$",
+            "Factorising out the exponential term:<br>$$\\text{f}'(x) = \\frac{10}{3}\\text{e}^{-\\frac{1}{6}x} \\left( 6\\cos x - \\sin x \\right)$$<br>At turning points, $\\text{f}'(x) = 0$. Since $\\text{e}^{-\\frac{1}{6}x} \\ne 0$ for all real $x$, we require:<br>$$6\\cos x - \\sin x = 0 \\implies 6\\cos x = \\sin x \\implies \\tan x = 6$$",
+            "<strong>Part (b):</strong> The graph of $H(t) = \\left|20\\text{e}^{-\\frac{1}{6}t}\\sin t\\right|$ is a damped sine wave with all its negative lobes reflected above the $t$-axis. This models the successive decreasing bounces of the ball tending to $0$ as $t \\to \\infty$.<br><br>Here is the completed sketch showing this long-term behaviour:<br><img src='images/p1/004060_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 6$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(6) \\approx 3.14159 + 1.40565 \\approx 4.54724\\text{ seconds}$$",
+            "Substituting this value into the model to find the maximum height:<br>$$H(4.54724) = \\left|20\\text{e}^{-\\frac{1}{6}(4.54724)}\\sin(4.54724)\\right| \\approx \\left|20(0.468656)(-0.986394)\\right| \\approx 9.2464\\text{ m}$$<br>Therefore, the maximum height is <strong>$9.25\\text{ m}$</strong> (to 3 significant figures).",
+            "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 6\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$9.25\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\ \\pi\\ \\text{seconds}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = 6$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$9.26\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals$$",
+                "feedback": "You probably made an arithmetic rounding error in Part (c) by evaluating the expression using rounded intermediate values. Retaining full calculator precision yields $H(4.54724) = 9.2464\\text{ m}$, which rounds to $9.25\\text{ m}$ to 3 significant figures."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = \\dfrac{1}{6}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$9.25\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals$$",
+                "feedback": "Check your division in Part (a). When dividing $6\\cos x = \\sin x$ by $\\cos x$ on both sides, you obtain $6 = \\frac{\\sin x}{\\cos x}$, which simplifies to $\\tan x = 6$, not $\\tan x = \\frac{1}{6}$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $$\\tan x = 6$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$1.54\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals$$",
+                "feedback": "Check your quadrant value in Part (c). The interval between the first and second bounce is $\\pi < t < 2\\pi$, which is the third quadrant. It appears you calculated the turning point in the first quadrant ($t = \\tan^{-1}(6) \\approx 1.41\\text{ s}$), which represents the peak of the first lobe before the first bounce."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Product Rule Fractional Derivatives",
+            "content": "When applying the Product Rule to exponential functions with fractional coefficients like $20\\text{e}^{-\\frac{1}{6}x}$, keep your derivatives in exact fraction form ($u' = -\\frac{10}{3}\\text{e}^{-\\frac{1}{6}x}$) rather than decimals. This allows you to factorise the common term cleanly and secures your algebraic proofs."
+        }
     }
+
 
 
 
