@@ -361,7 +361,7 @@ window.ALEVEL_QUESTIONS = [
 },
     {
         "id": "004011",
-        "major_area": "Differentiation",
+        "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
             "Quotient Rule"
@@ -400,7 +400,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004012",
-        "major_area": "Differentiation",
+        "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
             "Quotient Rule"
@@ -439,7 +439,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004013",
-        "major_area": "Differentiation",
+        "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
             "Quotient Rule"
@@ -478,7 +478,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004014",
-        "major_area": "Differentiation",
+        "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
             "Quotient Rule"
@@ -517,7 +517,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004015",
-        "major_area": "Differentiation",
+        "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
             "Quotient Rule"
@@ -1325,7 +1325,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004036",
-        "major_area": "Integration",
+        "major_area": "Calculus",
         "topic": "Integration",
         "subtopic": [
             "Area Under a Curve",
@@ -1365,7 +1365,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004037",
-        "major_area": "Integration",
+        "major_area": "Calculus",
         "topic": "Integration",
         "subtopic": [
             "Area Under a Curve",
@@ -1405,7 +1405,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004038",
-        "major_area": "Integration",
+        "major_area": "Calculus",
         "topic": "Integration",
         "subtopic": [
             "Area Under a Curve",
@@ -1445,7 +1445,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004039",
-        "major_area": "Integration",
+        "major_area": "Calculus",
         "topic": "Integration",
         "subtopic": [
             "Area Under a Curve",
@@ -1485,7 +1485,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004040",
-        "major_area": "Integration",
+        "major_area": "Calculus",
         "topic": "Integration",
         "subtopic": [
             "Area Under a Curve",
@@ -2136,7 +2136,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004056",
-        "major_area": "Differentiation",
+        "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
             "Product Rule",
@@ -2175,7 +2175,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004057",
-        "major_area": "Differentiation",
+        "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
             "Product Rule",
@@ -2214,7 +2214,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004058",
-        "major_area": "Differentiation",
+        "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
             "Product Rule",
@@ -2253,7 +2253,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004059",
-        "major_area": "Differentiation",
+        "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
             "Product Rule",
@@ -2292,7 +2292,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004060",
-        "major_area": "Differentiation",
+        "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
             "Product Rule",
