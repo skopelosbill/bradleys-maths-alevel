@@ -3025,7 +3025,7 @@ window.ALEVEL_QUESTIONS = [
         "img": false,
         "question": "The graph of $$y = 3^x$$ is transformed by a stretch in the $y$-direction, scale factor 3.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 3^{3x}\\ (b)\\ y = \\dfrac{1}{3} \\times 3^x\\ (c)\\ y = 3^{\\frac{x}{3}}\\ (d)\\ y = 3 \\times 3^x$$",     "steps": [
             "First, identify the original function: $$y = f(x) = 3^x$$",
-            "Next, recall that a stretch in the $$y$$-direction with scale factor $$k$$ transforms the function $$f(x)$$ to $$k \\times f(x)$$. Here, $$k = 3$$.",
+            "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 3$$",
             "Finally, apply this rule to scale the entire function.",
             "Final Answer: $$(d) y = 3 \\times 3^x$$"
         ],
@@ -3058,10 +3058,10 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 4^x$$ is transformed by a stretch in the $$y$$-direction, scale factor 4.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 4 \\times 4^x\\ (b)\\ y = 4^{\\frac{x}{4}}\\ (c)\\ y = \\dfrac{1}{4} \\times 4^x\\ (d)\\ y = 4^{4x}$$",
+        "question": "The graph of $$y = 4^x$$ is transformed by a stretch in the $y$-direction, scale factor 4.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 4 \\times 4^x\\ (b)\\ y = 4^{\\frac{x}{4}}\\ (c)\\ y = \\dfrac{1}{4} \\times 4^x\\ (d)\\ y = 4^{4x}$$",
         "steps": [
             "First, identify the original function: $$y = f(x) = 4^x$$",
-            "Next, recall that a stretch in the $$y$$-direction with scale factor $$k$$ transforms the function $$f(x)$$ to $$k \\times f(x)$$. Here, $$k = 4$$.",
+            "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 4$$",
             "Finally, apply this rule to scale the entire function.",
             "Final Answer: $$(a) y = 4 \\times 4^x$$"
         ],
@@ -3094,10 +3094,10 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 2^x$$ is transformed by a stretch in the $$y$$-direction, scale factor 2.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 2^{2x}\\ (b)\\ y = 2 \\times 2^x\\ (c)\\ y = 2^{\\frac{x}{2}}\\ (d)\\ y = \\dfrac{1}{2} \\times 2^x$$",
+        "question": "The graph of $$y = 2^x$$ is transformed by a stretch in the $y$-direction, scale factor 2.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 2^{2x}\\ (b)\\ y = 2 \\times 2^x\\ (c)\\ y = 2^{\\frac{x}{2}}\\ (d)\\ y = \\dfrac{1}{2} \\times 2^x$$",
         "steps": [
             "First, identify the original function: $$y = f(x) = 2^x$$",
-            "Next, recall that a stretch in the $$y$$-direction with scale factor $$k$$ transforms the function $$f(x)$$ to $$k \\times f(x)$$. Here, $$k = 2$$.",
+            "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 2$$",
             "Finally, apply this rule to scale the entire function.",
             "Final Answer: $$(b) y = 2 × 2^x$$"
         ],
@@ -3130,10 +3130,10 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 6^x$$ is transformed by a stretch in the $$y$$-direction, scale factor 6.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 6^{\\frac{x}{6}}\\ (b)\\ y = \\dfrac{1}{6} \\times 6^x\\ (c)\\ y = 6^{6x}\\ (d)\\ y = 6 \\times 6^x$$",
+        "question": "The graph of $$y = 6^x$$ is transformed by a stretch in the $y$-direction, scale factor 6.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 6^{\\frac{x}{6}}\\ (b)\\ y = \\dfrac{1}{6} \\times 6^x\\ (c)\\ y = 6^{6x}\\ (d)\\ y = 6 \\times 6^x$$",
         "steps": [
             "First, identify the original function: $$y = f(x) = 6^x$$",
-            "Next, recall that a stretch in the $$y$$-direction with scale factor $$k$$ transforms the function $$f(x)$$ to $$k \\times f(x)$$. Here, $$k = 6$$.",
+            "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 6$$",
             "Finally, apply this rule to scale the entire function.",
             "Final Answer: $$(d) y = 6 \\times 6^x$$"
         ],
@@ -3166,10 +3166,10 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 7^x$$ is transformed by a stretch in the $$y$$-direction, scale factor 7.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 7 \\times 7^x\\ (b)\\ y = 7^{\\frac{x}{7}}\\ (c)\\ y = \\dfrac{1}{7} \\times 7^x\\ (d)\\ y = 7^{7x}$$",
+        "question": "The graph of $$y = 7^x$$ is transformed by a stretch in the $y$-direction, scale factor 7.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 7 \\times 7^x\\ (b)\\ y = 7^{\\frac{x}{7}}\\ (c)\\ y = \\dfrac{1}{7} \\times 7^x\\ (d)\\ y = 7^{7x}$$",
         "steps": [
             "First, identify the original function: $$y = f(x) = 7^x$$",
-            "Next, recall that a stretch in the $$y$$-direction with scale factor $$k$$ transforms the function $$f(x)$$ to $$k \\times f(x)$$. Here, $$k = 7$$.",
+            "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 7$$",
             "Finally, apply this rule to scale the entire function.",
             "Final Answer: $$(a) y = 7 \\times 7^x$$"
         ],
