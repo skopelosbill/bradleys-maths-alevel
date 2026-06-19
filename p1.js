@@ -3382,12 +3382,12 @@ window.ALEVEL_QUESTIONS = [
             "Inverse Functions"
         ],
         "img": false,
-        "question": "The function $$f$$ is defined by $$f(x) = e^{x-3},\\ x \\in \\mathbb{R}$$<br><br>Find $$f^{-1}(x)$$ and state its domain.",
+        "question": "The function $f$ is defined by $$f(x) = e^{x-3},\\ x \\in \\mathbb{R}$$<br><br>Find $f^{-1}(x)$ and state its domain.",
         "steps": [
             "Set $$y = e^{x-3}$$.",
             "Take the natural logarithm of both sides to rearrange for $x$: $$\\ln(y) = x - 3 \\implies x = \\ln(y) + 3$$",
             "Swap $x$ and $y$ to write the inverse function: $$f^{-1}(x) = \\ln(x) + 3$$",
-            "Since the domain of the inverse function is equal to the range of the original function, and the range of $$f(x) = e^{x-3}$$ is $$y > 0$$, the domain of $$f^{-1}(x)$$ is $$x > 0$$.",
+            "Since the domain of the inverse function is equal to the range of the original function, and the range of $$f(x) = e^{x-3}$$ is $$y > 0$$, the domain of $f^{-1}(x)$ is $$x > 0$$.",
             "Final Answer: $$f^{-1}(x) = \\ln(x) + 3,\\quad \\text{domain: } x > 0$$"
         ],
         "pi_options": [],
@@ -3406,12 +3406,12 @@ window.ALEVEL_QUESTIONS = [
             "Inverse Functions"
         ],
         "img": false,
-        "question": "The function $$f$$ is defined by $$f(x) = e^{x+5},\\ x \\in \\mathbb{R}$$<br><br>Find $$f^{-1}(x)$$ and state its domain.",
+        "question": "The function $f$ is defined by $$f(x) = e^{x+5},\\ x \\in \\mathbb{R}$$<br><br>Find $f^{-1}(x)$ and state its domain.",
         "steps": [
             "Set $$y = e^{x+5}$$.",
             "Take the natural logarithm of both sides to rearrange for $x$: $$\\ln(y) = x + 5 \\implies x = \\ln(y) - 5$$",
             "Swap $x$ and $y$ to write the inverse function: $$f^{-1}(x) = \\ln(x) - 5$$",
-            "Since the domain of the inverse function is equal to the range of the original function, and the range of $$f(x) = e^{x+5}$$ is $$y > 0$$, the domain of $$f^{-1}(x)$$ is $$x > 0$$.",
+            "Since the domain of the inverse function is equal to the range of the original function, and the range of $$f(x) = e^{x+5}$$ is $$y > 0$$, the domain of $f^{-1}(x)$ is $$x > 0$$.",
             "Final Answer: $$f^{-1}(x) = \\ln(x) - 5,\\quad \\text{domain: } x > 0$$"
         ],
         "pi_options": [],
@@ -3430,7 +3430,7 @@ window.ALEVEL_QUESTIONS = [
             "Inverse Functions"
         ],
         "img": false,
-        "question": "The function $$f$$ is defined by $$f(x) = e^{2x-4},\\ x \\in \\mathbb{R}$$<br><br>Find $$f^{-1}(x)$$ and state its domain.",
+        "question": "The function $f$ is defined by $$f(x) = e^{2x-4},\\ x \\in \\mathbb{R}$$<br><br>Find $f^{-1}(x)$ and state its domain.",
         "steps": [
             "Set $$y = e^{2x-4}$$.",
             "Take the natural logarithm of both sides to rearrange for $x$: $$\\ln(y) = 2x - 4 \\implies 2x = \\ln(y) + 4$$",
@@ -3454,7 +3454,7 @@ window.ALEVEL_QUESTIONS = [
             "Inverse Functions"
         ],
         "img": false,
-        "question": "The function $$f$$ is defined by $$f(x) = e^{2x+6},\\ x \\in \\mathbb{R}$$<br><br>Find $$f^{-1}(x)$$ and state its domain.",
+        "question": "The function $f$ is defined by $$f(x) = e^{2x+6},\\ x \\in \\mathbb{R}$$<br><br>Find $f^{-1}(x)$ and state its domain.",
         "steps": [
             "Set $$y = e^{2x+6}$$.",
             "Take the natural logarithm of both sides to rearrange for $x$: $$\\ln(y) = 2x + 6 \\implies 2x = \\ln(y) - 6$$",
@@ -3478,7 +3478,7 @@ window.ALEVEL_QUESTIONS = [
             "Inverse Functions"
         ],
         "img": false,
-        "question": "The function $$f$$ is defined by $$f(x) = e^{2x-1},\\ x \\in \\mathbb{R}$$<br><br>Find $$f^{-1}(x)$$ and state its domain.",
+        "question": "The function $f$ is defined by $$f(x) = e^{2x-1},\\ x \\in \\mathbb{R}$$<br><br>Find $f^{-1}(x)$ and state its domain.",
         "steps": [
             "Set $$y = e^{2x-1}$$.",
             "Take the natural logarithm of both sides to rearrange for $x$: $$\\ln(y) = 2x - 1 \\implies 2x = \\ln(y) + 1$$",
