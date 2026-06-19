@@ -2843,7 +2843,7 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{1}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>(a) $$\\dfrac{dy}{dx} = -\\dfrac{3}{x^2}$$<br>(b) $$\\dfrac{dy}{dx} = x^{-3}$$<br>(c) $$\\dfrac{dy}{dx} = -\\dfrac{3}{x^4}$$<br>(d) $$\\dfrac{dy}{dx} = -\\dfrac{3}{x^3}$$",
+        "question": "$$y = \\dfrac{1}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^2}\\ (b)\\ \\dfrac{dy}{dx} = x^{-3}\\ (c)\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^4}\\ (d) \\dfrac{dy}{dx} = -\\dfrac{3}{x^3}$$",
         "steps": [
             "First, rewrite the expression in index form: $$y = x^{-3}$$",
             "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$. Here, $$n = -3$$: $$\\dfrac{dy}{dx} = -3x^{-3-1} = -3x^{-4}$$",
