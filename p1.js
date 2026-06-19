@@ -2833,7 +2833,183 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Tangents as Approximations",
             "content": "In this question, the relationship in Part (b)(ii) is a beautiful highlight of core calculus. The small-angle approximation of any trigonometric function close to the origin is always identical to the equation of the tangent line to the curve at the origin. Spotting this geometric connection acts as an instant sanity check for your maths."
         }
+    },
+    {
+        "id": "004071",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Power Rule"
+        ],
+        "img": false,
+        "question": "Given that $$y = \\dfrac{1}{x^3}$$, find an expression for $$\\dfrac{dy}{dx}$$. Choose the correct answer from the options below:",
+        "steps": [
+            "First, rewrite the expression in index form: $$y = x^{-3}$$",
+            "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$. Here, $$n = -3$$: $$\\dfrac{dy}{dx} = -3x^{-3-1} = -3x^{-4}$$",
+            "Finally, convert the derivative back into fractional form: Final Answer: $$\\dfrac{dy}{dx} = -\\dfrac{3}{x^4}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{dy}{dx} = -\\dfrac{3}{x^2}$$",
+                "feedback": "This is a common error where the power in the denominator has been decreased by one. When differentiating, you must subtract one from the exponent in index form: $$-3 - 1 = -4$$, meaning the power of <em>x</em> in the denominator becomes 4."
+            },
+            {
+                "ans": "$$\\dfrac{dy}{dx} = x^{-3}$$",
+                "feedback": "This is simply the original function rewritten in index form. Remember that you must apply the power rule to differentiate."
+            },
+            {
+                "ans": "$$\\dfrac{dy}{dx} = -\\dfrac{3}{x^3}$$",
+                "feedback": "You have multiplied by the negative power but forgotten to decrease the exponent of <em>x</em> by one. The index in index form decreases from $$-3$$ to $$-4$$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Negative Exponents",
+            "content": "Students preparing for exams often make errors by subtracting one from the denominator's power directly (e.g., changing the denominator power from 3 to 2). Always convert the term to index form first to ensure your arithmetic with negative indices remains clear and correct."
+        }
+    },
+    {
+        "id": "004072",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Power Rule"
+        ],
+        "img": false,
+        "question": "Given that $$y = \\dfrac{1}{x^4}$$, find an expression for $$\\dfrac{dy}{dx}$$. Choose the correct answer from the options below:",
+        "steps": [
+            "First, convert the expression into index form: $$y = x^{-4}$$",
+            "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$. Here, $$n = -4$$: $$\\dfrac{dy}{dx} = -4x^{-4-1} = -4x^{-5}$$",
+            "Finally, express the answer with a positive index: Final Answer: $$\\dfrac{dy}{dx} = -\\dfrac{4}{x^5}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{dy}{dx} = -\\dfrac{4}{x^3}$$",
+                "feedback": "This is a common error where the power in the denominator has been decreased by one. When differentiating, you must subtract one from the negative exponent: $$-4 - 1 = -5$$, so the power of <em>x</em> in the denominator becomes 5."
+            },
+            {
+                "ans": "$$\\dfrac{dy}{dx} = x^{-4}$$",
+                "feedback": "This is the original function expressed in index form. You still need to apply the power rule to find the derivative."
+            },
+            {
+                "ans": "$$\\dfrac{dy}{dx} = -\\dfrac{4}{x^4}$$",
+                "feedback": "You multiplied by the power but did not decrease the exponent of <em>x</em> by one. The index decreases from $$-4$$ to $$-5$$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Power Rule",
+            "content": "Forgetting to decrease the exponent is a typical slip under exam pressure. When dealing with fractions, writing out the index form stage explicitly is probably the safest way to avoid arithmetic slips with negative numbers."
+        }
+    },
+    {
+        "id": "004073",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Power Rule"
+        ],
+        "img": false,
+        "question": "Given that $$y = \\dfrac{1}{x^5}$$, find an expression for $$\\dfrac{dy}{dx}$$. Choose the correct answer from the options below:",
+        "steps": [
+            "First, rewrite the function in index form: $$y = x^{-5}$$",
+            "Next, apply the differentiation power rule, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$. Here, $$n = -5$$: $$\\dfrac{dy}{dx} = -5x^{-5-1} = -5x^{-6}$$",
+            "Finally, rewrite the derivative in fractional form: Final Answer: $$\\dfrac{dy}{dx} = -\\dfrac{5}{x^6}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{dy}{dx} = -\\dfrac{5}{x^4}$$",
+                "feedback": "This error occurs if you decrease the power in the denominator. Subtracting one from the negative index gives $$-5 - 1 = -6$$, so the power of <em>x</em> in the denominator should be 6."
+            },
+            {
+                "ans": "$$\\dfrac{dy}{dx} = x^{-5}$$",
+                "feedback": "This is only the function in index form. You still need to differentiate by multiplying by the power and reducing the exponent by one."
+            },
+            {
+                "ans": "$$\\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
+                "feedback": "You have multiplied by the exponent but did not decrease the power of <em>x</em>. The power must change from $$-5$$ to $$-6$$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Systematic Differentiation",
+            "content": "A systematic approach is essential. Write down the function in index form, perform the differentiation on paper, and only then simplify back into fraction form. Trying to do this mentally leads to sign and index errors."
+        }
+    },
+    {
+        "id": "004074",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Power Rule"
+        ],
+        "img": false,
+        "question": "Given that $$y = \\dfrac{2}{x^3}$$, find an expression for $$\\dfrac{dy}{dx}$$. Choose the correct answer from the options below:",
+        "steps": [
+            "First, convert the function into index form: $$y = 2x^{-3}$$",
+            "Next, apply the differentiation power rule, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$. Here, $$a = 2$$ and $$n = -3$$: $$\\dfrac{dy}{dx} = 2 \\times \\left(-3\\right)x^{-3-1} = -6x^{-4}$$",
+            "Finally, express the result with a positive index: Final Answer: $$\\dfrac{dy}{dx} = -\\dfrac{6}{x^4}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{dy}{dx} = -\\dfrac{6}{x^2}$$",
+                "feedback": "This incorrect answer arises from reducing the power in the denominator. When differentiating, subtracting one from the negative exponent of $$-3$$ gives $$-4$$, resulting in a denominator power of 4."
+            },
+            {
+                "ans": "$$\\dfrac{dy}{dx} = -\\dfrac{2}{x^4}$$",
+                "feedback": "It seems you differentiated the $$x^{-3}$$ component to get $$-3x^{-4}$$ but forgot to multiply by the original constant coefficient of 2."
+            },
+            {
+                "ans": "$$\\dfrac{dy}{dx} = 2x^{-3}$$",
+                "feedback": "This is the original function written in index form. It has not yet been differentiated."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Coefficient Handling",
+            "content": "When there is a constant coefficient in the numerator, make sure it is multiplied by the exponent brought down. It is a common mistake to either replace the constant or completely ignore it during the power rule application."
+        }
+    },
+    {
+        "id": "004075",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Power Rule"
+        ],
+        "img": false,
+        "question": "Given that $$y = \\dfrac{1}{2x^2}$$, find an expression for $$\\dfrac{dy}{dx}$$. Choose the correct answer from the options below:",
+        "steps": [
+            "First, convert the expression into index form, keeping the constant in the denominator as a coefficient: $$y = \\dfrac{1}{2}x^{-2}$$",
+            "Next, apply the standard differentiation rule, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$. Here, $$a = \\dfrac{1}{2}$$ and $$n = -2$$: $$\\dfrac{dy}{dx} = \\dfrac{1}{2} \\times \\left(-2\\right)x^{-2-1} = -1x^{-3}$$",
+            "Finally, simplify and convert back into fractional form: Final Answer: $$\\dfrac{dy}{dx} = -\\dfrac{1}{x^3}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{dy}{dx} = -\\dfrac{1}{x^2}$$",
+                "feedback": "This error is caused by decreasing the denominator power. Remember that differentiating $$x^{-2}$$ decreases the power to $$-3$$, which means the power in the denominator becomes 3."
+            },
+            {
+                "ans": "$$\\dfrac{dy}{dx} = -\\dfrac{1}{4x^3}$$",
+                "feedback": "This error probably arises from trying to differentiate the denominator directly, which is incorrect. Always convert the entire term to index form first."
+            },
+            {
+                "ans": "$$\\dfrac{dy}{dx} = \\dfrac{1}{2}x^{-2}$$",
+                "feedback": "This is simply the original function written in index form. You must apply the power rule to differentiate."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Separating Coefficients",
+            "content": "When a constant is in the denominator of an algebraic term, rewrite it clearly as a fractional coefficient (such as 1/2) rather than keeping it grouped with the variable. This prevents differentiation mistakes in the denominator."
+        }
     }
+
 
 
 
