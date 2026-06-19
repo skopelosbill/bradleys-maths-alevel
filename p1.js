@@ -3013,6 +3013,187 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Separating Coefficients",
             "content": "When a constant is in the denominator of an algebraic term, rewrite it clearly as a fractional coefficient (such as 1/2) rather than keeping it grouped with the variable. This prevents differentiation mistakes in the denominator."
         }
+    },
+    {
+        "id": "004076",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Graph transformations",
+        "subtopic": [
+            "Transformations of Graphs"
+        ],
+        "img": false,
+        "question": "The graph of $$y = 3^x$$ is transformed by a stretch in the $$y$$-direction, scale factor 3.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 3^{3x}\\ (b)\\ y = \\\\dfrac{1}{3} \\\\times 3^x\\ (c)\\ y = 3^{\\\\frac{x}{3}}\\ (d)\\ y = 3 \\\\times 3^x$$",
+        "steps": [
+            "First, identify the original function: $$y = f(x) = 3^x$$",
+            "Next, recall that a stretch in the $$y$$-direction with scale factor $$k$$ transforms the function $$f(x)$$ to $$k \\times f(x)$$. Here, $$k = 3$$.",
+            "Finally, apply this rule to scale the entire function.",
+            "Final Answer: $$(d) y = 3 \\times 3^x$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$(a) y = 3^{3x}$$",
+                "feedback": "This is a common error where a horizontal stretch with scale factor $1/3$ is applied to the input variable $x$. A vertical stretch affects the entire function from the outside, not just the exponent."
+            },
+            {
+                "ans": "$$(b) y = \\\\dfrac{1}{3} \\\\times 3^x$$",
+                "feedback": "This incorrect answer represents a vertical stretch with scale factor $1/3$. Remember that a stretch of scale factor $3$ in the $y$-direction scales the function by a factor of $3$ directly."
+            },
+            {
+                "ans": "$$(c) y = 3^{\\\\frac{x}{3}}$$",
+                "feedback": "This error occurs when attempting a stretch in the $x$-direction with scale factor $3$ instead of the $y$-direction. A stretch in the $y$-direction scale factor $3$ is a vertical change and multiplies the entire function by $3$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Inside vs Outside Transformations",
+            "content": "Remembering that changes 'outside' the main function affect the $y$-direction directly (e.g. $k f(x)$) while changes 'inside' the function affect the $x$-direction inversely (e.g. $f(kx)$) is probably the safest rule of thumb for graph transformations. Always write down the general formula $y = k f(x)$ first to guide your steps."
+        }
+    },
+    {
+        "id": "004077",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Graph transformations",
+        "subtopic": [
+            "Transformations of Graphs"
+        ],
+        "img": false,
+        "question": "The graph of $$y = 4^x$$ is transformed by a stretch in the $$y$$-direction, scale factor 4.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 4 \\\\times 4^x\\ (b)\\ y = 4^{\\\\frac{x}{4}}\\ (c)\\ y = \\\\dfrac{1}{4} \\\\times 4^x\\ (d)\\ y = 4^{4x}$$",
+        "steps": [
+            "First, identify the original function: $$y = f(x) = 4^x$$",
+            "Next, recall that a stretch in the $$y$$-direction with scale factor $$k$$ transforms the function $$f(x)$$ to $$k \\times f(x)$$. Here, $$k = 4$$.",
+            "Finally, apply this rule to scale the entire function.",
+            "Final Answer: $$(a) y = 4 \\times 4^x$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$(b) y = 4^{\\\\frac{x}{4}}$$",
+                "feedback": "This error occurs when attempting a stretch in the $x$-direction with scale factor $4$ instead of the $y$-direction. A stretch in the $y$-direction scale factor $4$ multiplies the entire function by $4$."
+            },
+            {
+                "ans": "$$(c) y = \\\\dfrac{1}{4} \\\\times 4^x$$",
+                "feedback": "This incorrect answer represents a vertical stretch with scale factor $1/4$. Remember that a stretch of scale factor $4$ in the $y$-direction scales the function by a factor of $4$ directly."
+            },
+            {
+                "ans": "$$(d) y = 4^{4x}$$",
+                "feedback": "This is a common error where a horizontal stretch with scale factor $1/4$ is applied to the input variable $x$. A vertical stretch affects the entire function from the outside, not just the exponent."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Inside vs Outside Transformations",
+            "content": "Remembering that changes 'outside' the main function affect the $y$-direction directly (e.g. $k f(x)$) while changes 'inside' the function affect the $x$-direction inversely (e.g. $f(kx)$) is probably the safest rule of thumb for graph transformations. Always write down the general formula $y = k f(x)$ first to guide your steps."
+        }
+    },
+    {
+        "id": "004078",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Graph transformations",
+        "subtopic": [
+            "Transformations of Graphs"
+        ],
+        "img": false,
+        "question": "The graph of $$y = 2^x$$ is transformed by a stretch in the $$y$$-direction, scale factor 2.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 2^{2x}\\ (b)\\ y = 2 \\\\times 2^x\\ (c)\\ y = 2^{\\\\frac{x}{2}}\\ (d)\\ y = \\\\dfrac{1}{2} \\\\times 2^x$$",
+        "steps": [
+            "First, identify the original function: $$y = f(x) = 2^x$$",
+            "Next, recall that a stretch in the $$y$$-direction with scale factor $$k$$ transforms the function $$f(x)$$ to $$k \\times f(x)$$. Here, $$k = 2$$.",
+            "Finally, apply this rule to scale the entire function.",
+            "Final Answer: $$(b) y = 2 × 2^x$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$(a) y = 2^{2x}$$",
+                "feedback": "This is a common error where a horizontal stretch with scale factor $1/2$ is applied to the input variable $x$. A vertical stretch affects the entire function from the outside, not just the exponent."
+            },
+            {
+                "ans": "$$(c) y = 2^{\\\\frac{x}{2}}$$",
+                "feedback": "This error occurs when attempting a stretch in the $x$-direction with scale factor $2$ instead of the $y$-direction. A stretch in the $y$-direction scale factor $2$ is a vertical change and multiplies the entire function by $2$."
+            },
+            {
+                "ans": "$$(d) y = \\\\dfrac{1}{2} \\\\times 2^x$$",
+                "feedback": "This incorrect answer represents a vertical stretch with scale factor $1/2$. Remember that a stretch of scale factor $2$ in the $y$-direction scales the function by a factor of $2$ directly."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Inside vs Outside Transformations",
+            "content": "Remembering that changes 'outside' the main function affect the $y$-direction directly (e.g. $k f(x)$) while changes 'inside' the function affect the $x$-direction inversely (e.g. $f(kx)$) is probably the safest rule of thumb for graph transformations. Always write down the general formula $y = k f(x)$ first to guide your steps."
+        }
+    },
+    {
+        "id": "004079",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Graph transformations",
+        "subtopic": [
+            "Transformations of Graphs"
+        ],
+        "img": false,
+        "question": "The graph of $$y = 6^x$$ is transformed by a stretch in the $$y$$-direction, scale factor 6.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 6^{\\\\frac{x}{6}}\\ (b)\\ y = \\\\dfrac{1}{6} \\\\times 6^x\\ (c)\\ y = 6^{6x}\\ (d)\\ y = 6 \\\\times 6^x$$",
+        "steps": [
+            "First, identify the original function: $$y = f(x) = 6^x$$",
+            "Next, recall that a stretch in the $$y$$-direction with scale factor $$k$$ transforms the function $$f(x)$$ to $$k \\times f(x)$$. Here, $$k = 6$$.",
+            "Finally, apply this rule to scale the entire function.",
+            "Final Answer: $$(d) y = 6 \\times 6^x$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$(a) y = 6^{\\\\frac{x}{6}}$$",
+                "feedback": "This error occurs when attempting a stretch in the $x$-direction with scale factor $6$ instead of the $y$-direction. A stretch in the $y$-direction scale factor $6$ is a vertical change and multiplies the entire function by $6$."
+            },
+            {
+                "ans": "$$(b) y = \\\\dfrac{1}{6} \\\\times 6^x$$",
+                "feedback": "This incorrect answer represents a vertical stretch with scale factor $1/6$. Remember that a stretch of scale factor $6$ in the $y$-direction scales the function by a factor of $6$ directly."
+            },
+            {
+                "ans": "$$(c) y = 6^{6x}$$",
+                "feedback": "This is a common error where a horizontal stretch with scale factor $1/6$ is applied to the input variable $x$. A vertical stretch affects the entire function from the outside, not just the exponent."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Inside vs Outside Transformations",
+            "content": "Remembering that changes 'outside' the main function affect the $y$-direction directly (e.g. $k f(x)$) while changes 'inside' the function affect the $x$-direction inversely (e.g. $f(kx)$) is probably the safest rule of thumb for graph transformations. Always write down the general formula $y = k f(x)$ first to guide your steps."
+        }
+    },
+    {
+        "id": "004080",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Graph transformations",
+        "subtopic": [
+            "Transformations of Graphs"
+        ],
+        "img": false,
+        "question": "The graph of $$y = 7^x$$ is transformed by a stretch in the $$y$$-direction, scale factor 7.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 7 \\\\times 7^x\\ (b)\\ y = 7^{\\\\frac{x}{7}}\\ (c)\\ y = \\\\dfrac{1}{7} \\\\times 7^x\\ (d)\\ y = 7^{7x}$$",
+        "steps": [
+            "First, identify the original function: $$y = f(x) = 7^x$$",
+            "Next, recall that a stretch in the $$y$$-direction with scale factor $$k$$ transforms the function $$f(x)$$ to $$k \\times f(x)$$. Here, $$k = 7$$.",
+            "Finally, apply this rule to scale the entire function.",
+            "Final Answer: $$(a) y = 7 \\times 7^x$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$(b) y = 7^{\\\\frac{x}{7}}$$",
+                "feedback": "This error occurs when attempting a stretch in the $x$-direction with scale factor $7$ instead of the $y$-direction. A stretch in the $y$-direction scale factor $7$ multiplies the entire function by $7$."
+            },
+            {
+                "ans": "$$(c) y = \\\\dfrac{1}{7} \\\\times 7^x$$",
+                "feedback": "This incorrect answer represents a vertical stretch with scale factor $1/7$. Remember that a stretch of scale factor $7$ in the $y$-direction scales the function by a factor of $7$ directly."
+            },
+            {
+                "ans": "$$(d) y = 7^{7x}$$",
+                "feedback": "This is a common error where a horizontal stretch with scale factor $1/7$ is applied to the input variable $x$. A vertical stretch affects the entire function from the outside, not just the exponent."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Inside vs Outside Transformations",
+            "content": "Remembering that changes 'outside' the main function affect the $y$-direction directly (e.g. $k f(x)$) while changes 'inside' the function affect the $x$-direction inversely (e.g. $f(kx)$) is probably the safest rule of thumb for graph transformations. Always write down the general formula $y = k f(x)$ first to guide your steps."
+        }
     }
+
 
 ];
