@@ -3372,7 +3372,128 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Simple Formula Strategy",
             "content": "For any sequence defined by $U_n = \\sin(\\omega n)$ or $\\cos(\\omega n)$ where $\\omega = \\frac{\\pi}{d}$, the period is simply given by $\\frac{2\\pi}{\\omega} = 2d$. Memorising this relation is probably the most efficient shortcut for these direct exam questions."
         }
+    },
+    {
+        "id": "004086",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Inverse Functions"
+        ],
+        "img": false,
+        "question": "The function $$f$$ is defined by $$f(x) = e^{x-3},\\ x \\in \\mathbb{R}$$<br><br>Find $$f^{-1}(x)$$ and state its domain.",
+        "steps": [
+            "Set $$y = e^{x-3}$$.",
+            "Take the natural logarithm of both sides to rearrange for $x$: $$\\ln(y) = x - 3 \\implies x = \\ln(y) + 3$$",
+            "Swap $x$ and $y$ to write the inverse function: $$f^{-1}(x) = \\ln(x) + 3$$",
+            "Since the domain of the inverse function is equal to the range of the original function, and the range of $$f(x) = e^{x-3}$$ is $$y > 0$$, the domain of $$f^{-1}(x)$$ is $$x > 0$$.",
+            "Final Answer: $$f^{-1}(x) = \\ln(x) + 3,\\quad \\text{domain: } x > 0$$"
+        ],
+        "pi_options": [],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: The Domain Trap",
+            "content": "A very common error in exam papers is to state the domain of the inverse function as $x \\in \\mathbb{R}$, simply copying the domain of the original function. Remember that the domain of $f^{-1}$ is always strictly equal to the range of $f$. Since an exponential term $e^{x-3}$ is always strictly positive, the range is $y > 0$, making the inverse domain $x > 0$."
+        }
+    },
+    {
+        "id": "004087",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Inverse Functions"
+        ],
+        "img": false,
+        "question": "The function $$f$$ is defined by $$f(x) = e^{x+5},\\ x \\in \\mathbb{R}$$<br><br>Find $$f^{-1}(x)$$ and state its domain.",
+        "steps": [
+            "Set $$y = e^{x+5}$$.",
+            "Take the natural logarithm of both sides to rearrange for $x$: $$\\ln(y) = x + 5 \\implies x = \\ln(y) - 5$$",
+            "Swap $x$ and $y$ to write the inverse function: $$f^{-1}(x) = \\ln(x) - 5$$",
+            "Since the domain of the inverse function is equal to the range of the original function, and the range of $$f(x) = e^{x+5}$$ is $$y > 0$$, the domain of $$f^{-1}(x)$$ is $$x > 0$$.",
+            "Final Answer: $$f^{-1}(x) = \\ln(x) - 5,\\quad \\text{domain: } x > 0$$"
+        ],
+        "pi_options": [],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Verifying Your Inverse",
+            "content": "To quickly check if your algebraic transposition is correct, pick a simple value for $x$ in the original function, say $x = -5$ for $f(x) = e^{x+5}$, giving $f(-5) = 1$. Substitute $1$ into your inverse function: $f^{-1}(1) = \\ln(1) - 5 = -5$. Since you get your original input back, you can be confident your inverse is correct."
+        }
+    },
+    {
+        "id": "004088",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Inverse Functions"
+        ],
+        "img": false,
+        "question": "The function $$f$$ is defined by $$f(x) = e^{2x-4},\\ x \\in \\mathbb{R}$$<br><br>Find $$f^{-1}(x)$$ and state its domain.",
+        "steps": [
+            "Set $$y = e^{2x-4}$$.",
+            "Take the natural logarithm of both sides to rearrange for $x$: $$\\ln(y) = 2x - 4 \\implies 2x = \\ln(y) + 4$$",
+            "Divide by $2$ and swap $x$ and $y$ to write the inverse function: $$f^{-1}(x) = \\dfrac{\\ln(x) + 4}{2}$$",
+            "Since the domain of $f^{-1}(x)$ is equal to the range of the original function $f(x)$, and $e^{2x-4} > 0$ for all real $x$, the domain of $f^{-1}(x)$ is $$x > 0$$.",
+            "Final Answer: $$f^{-1}(x) = \\dfrac{\\ln(x) + 4}{2},\\quad \\text{domain: } x > 0$$"
+        ],
+        "pi_options": [],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Inverse Logarithmic Properties",
+            "content": "When finding the inverse of $f(x) = e^{2x-4}$, taking natural logs yields $\\ln(y) = 2x - 4$. Rearranging gives $x = \\frac{1}{2}\\ln(y) + 2$. Mathematically, this can also be written as $x = \\ln(\\sqrt{y}) + 2$ using the power law of logarithms. While both forms are entirely correct, keeping the fractional coefficient of $\\frac{1}{2}$ in front of the log is probably the most standard way to present your final answer."
+        }
+    },
+    {
+        "id": "004089",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Inverse Functions"
+        ],
+        "img": false,
+        "question": "The function $$f$$ is defined by $$f(x) = e^{2x+6},\\ x \\in \\mathbb{R}$$<br><br>Find $$f^{-1}(x)$$ and state its domain.",
+        "steps": [
+            "Set $$y = e^{2x+6}$$.",
+            "Take the natural logarithm of both sides to rearrange for $x$: $$\\ln(y) = 2x + 6 \\implies 2x = \\ln(y) - 6$$",
+            "Divide by $2$ and swap $x$ and $y$ to write the inverse function: $$f^{-1}(x) = \\dfrac{\\ln(x) - 6}{2}$$",
+            "Since the domain of $f^{-1}(x)$ is equal to the range of the original function $f(x)$, and $e^{2x+6} > 0$ for all real $x$, the domain of $f^{-1}(x)$ is $$x > 0$$.",
+            "Final Answer: $$f^{-1}(x) = \\dfrac{\\ln(x) - 6}{2},\\quad \\text{domain: } x > 0$$"
+        ],
+        "pi_options": [],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Order of Operations in Rearranging",
+            "content": "When rearranging $y = e^{2x+6}$, always take the natural logarithm of both sides before attempting to divide by the coefficient of $2$. Trying to divide by $2$ first is a major order of operations error because the coefficient is inside the exponent. The exponential function must be isolated first."
+        }
+    },
+    {
+        "id": "004090",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Inverse Functions"
+        ],
+        "img": false,
+        "question": "The function $$f$$ is defined by $$f(x) = e^{2x-1},\\ x \\in \\mathbb{R}$$<br><br>Find $$f^{-1}(x)$$ and state its domain.",
+        "steps": [
+            "Set $$y = e^{2x-1}$$.",
+            "Take the natural logarithm of both sides to rearrange for $x$: $$\\ln(y) = 2x - 1 \\implies 2x = \\ln(y) + 1$$",
+            "Divide by $2$ and swap $x$ and $y$ to write the inverse function: $$f^{-1}(x) = \\dfrac{\\ln(x) + 1}{2}$$",
+            "Since the domain of $f^{-1}(x)$ is equal to the range of the original function $f(x)$, and $e^{2x-1} > 0$ for all real $x$, the domain of $f^{-1}(x)$ is $$x > 0$$.",
+            "Final Answer: $$f^{-1}(x) = \\dfrac{\\ln(x) + 1}{2},\\quad \\text{domain: } x > 0$$"
+        ],
+        "pi_options": [],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Fractional Exponent Shortcuts",
+            "content": "When finding the inverse of functions with coefficients in the exponent like $e^{2x-1}$, the inverse will always involve a division by that coefficient (e.g., dividing by 2). Recognizing this pattern is probably the best way to mentally verify your steps as you write them down."
+        }
     }
+
 
 
 
