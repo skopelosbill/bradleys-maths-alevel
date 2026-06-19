@@ -2846,7 +2846,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "$$y = \\dfrac{1}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^2}\\ (b)\\ \\dfrac{dy}{dx} = x^{-3}\\ (c)\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^4}\\ (d) \\dfrac{dy}{dx} = -\\dfrac{3}{x^3}$$",
         "steps": [
             "First, rewrite the expression in index form: $$y = x^{-3}$$",
-            "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$. Here, $$n = -3$$: $$\\dfrac{dy}{dx} = -3x^{-3-1} = -3x^{-4}$$",
+            "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -3$$ $$\\dfrac{dy}{dx} = -3x^{-3-1} = -3x^{-4}$$",
             "Finally, convert the derivative back into fractional form.",
             "Final Answer: $$(c) \\dfrac{dy}{dx} = -\\dfrac{3}{x^4}$$"
         ],
@@ -2879,24 +2879,25 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{1}{x^4}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>(a) $$\\dfrac{dy}{dx} = -\\dfrac{4}{x^5}$$<br>(b) $$\\dfrac{dy}{dx} = -\\dfrac{4}{x^3}$$<br>(c) $$\\dfrac{dy}{dx} = x^{-4}$$<br>(d) $$\\dfrac{dy}{dx} = -\\dfrac{4}{x^4}$$",
+        "question": "$$y = \\dfrac{1}{x^4}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^5}\\ (b)\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^3}\\ (c)\\ \\dfrac{dy}{dx} = x^{-4}\\ (d) \\dfrac{dy}{dx} = -\\dfrac{4}{x^4}$$",
         "steps": [
-            "First, convert the expression into index form: $$y = x^{-4}$$",
-            "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$. Here, $$n = -4$$: $$\\dfrac{dy}{dx} = -4x^{-4-1} = -4x^{-5}$$",
-            "Finally, express the answer with a positive index: Final Answer: $$(a) \\dfrac{dy}{dx} = -\\dfrac{4}{x^5}$$"
+            "First, rewrite the expression in index form: $$y = x^{-4}$$",
+            "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -4$$ $$\\dfrac{dy}{dx} = -4x^{-4-1} = -4x^{-5}$$",
+            "Finally, convert the derivative back into fractional form.",
+            "Final Answer: $$(a) \\dfrac{dy}{dx} = -\\dfrac{4}{x^5}$$"
         ],
         "pi_options": [
             {
                 "ans": "$$(b) \\dfrac{dy}{dx} = -\\dfrac{4}{x^3}$$",
-                "feedback": "This is a common error where the power in the denominator has been decreased by one. When differentiating, you must subtract one from the negative exponent: $$-4 - 1 = -5$$, so the power of <em>x</em> in the denominator becomes 5."
+                "feedback": "This is a common error where the power in the denominator has been decreased by one. When differentiating, you must subtract one from the exponent in index form: $-4 - 1 = -5$, meaning the power of $x$ in the denominator becomes 5."
             },
             {
                 "ans": "$$(c) \\dfrac{dy}{dx} = x^{-4}$$",
-                "feedback": "This is the original function expressed in index form. You still need to apply the power rule to find the derivative."
+                "feedback": "This is simply the original function rewritten in index form. Remember that you must apply the power rule to differentiate."
             },
             {
                 "ans": "$$(d) \\dfrac{dy}{dx} = -\\dfrac{4}{x^4}$$",
-                "feedback": "You multiplied by the power but did not decrease the exponent of <em>x</em> by one. The index decreases from $$-4$$ to $$-5$$."
+                "feedback": "You have multiplied by the negative power but forgotten to decrease the exponent of $x$ by one. The index in index form decreases from $-4$ to $-5$."
             }
         ],
         "bradley_insight": {
@@ -2914,24 +2915,25 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{1}{x^5}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>(a) $$\\dfrac{dy}{dx} = x^{-5}$$<br>(b) $$\\dfrac{dy}{dx} = -\\dfrac{5}{x^6}$$<br>(c) $$\\dfrac{dy}{dx} = -\\dfrac{5}{x^4}$$<br>(d) $$\\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
+        "question": "$$y = \\dfrac{1}{x^5}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\ \\dfrac{dy}{dx} = x^{-5}\\ (b)\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}\\ (c)\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^4}\\ (d) \\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
         "steps": [
-            "First, rewrite the function in index form: $$y = x^{-5}$$",
-            "Next, apply the differentiation power rule, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$. Here, $$n = -5$$: $$\\dfrac{dy}{dx} = -5x^{-5-1} = -5x^{-6}$$",
-            "Finally, rewrite the derivative in fractional form: Final Answer: $$(b) \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}$$"
+            "First, rewrite the expression in index form: $$y = x^{-5}$$",
+            "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -5$$ $$\\dfrac{dy}{dx} = -5x^{-5-1} = -5x^{-6}$$",
+            "Finally, convert the derivative back into fractional form.",
+            "Final Answer: $$(b) \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}$$"
         ],
         "pi_options": [
             {
                 "ans": "$$(a) \\dfrac{dy}{dx} = x^{-5}$$",
-                "feedback": "This is only the function in index form. You still need to differentiate by multiplying by the power and reducing the exponent by one."
+                "feedback": "This is simply the original function rewritten in index form. Remember that you must apply the power rule to differentiate."
             },
             {
                 "ans": "$$(c) \\dfrac{dy}{dx} = -\\dfrac{5}{x^4}$$",
-                "feedback": "This error occurs if you decrease the power in the denominator. Subtracting one from the negative index gives $$-5 - 1 = -6$$, so the power of <em>x</em> in the denominator should be 6."
+                "feedback": "This error occurs if you decrease the power in the denominator. Subtracting one from the negative index gives $-5 - 1 = -6$, so the power of $x$ in the denominator should be 6."
             },
             {
                 "ans": "$$(d) \\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
-                "feedback": "You have multiplied by the exponent but did not decrease the power of <em>x</em>. The power must change from $$-5$$ to $$-6$$."
+                "feedback": "You have multiplied by the exponent but did not decrease the power of $x$. The power must change from $-5$ to $-6$."
             }
         ],
         "bradley_insight": {
@@ -2949,20 +2951,21 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{2}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>(a) $$\\dfrac{dy}{dx} = -\\dfrac{6}{x^2}$$<br>(b) $$\\dfrac{dy}{dx} = -\\dfrac{6}{x^4}$$<br>(c) $$\\dfrac{dy}{dx} = -\\dfrac{2}{x^4}$$<br>(d) $$\\dfrac{dy}{dx} = 2x^{-3}$$",
+        "question": "$$y = \\dfrac{2}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^2}\\ (b)\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^4}\\ (c)\\ \\dfrac{dy}{dx} = -\\dfrac{2}{x^4}\\ (d) \\dfrac{dy}{dx} = 2x^{-3}$$",
         "steps": [
-            "First, convert the function into index form: $$y = 2x^{-3}$$",
-            "Next, apply the differentiation power rule, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$. Here, $$a = 2$$ and $$n = -3$$: $$\\dfrac{dy}{dx} = 2 \\times \\left(-3\\right)x^{-3-1} = -6x^{-4}$$",
-            "Finally, express the result with a positive index: Final Answer: $$(b) \\dfrac{dy}{dx} = -\\dfrac{6}{x^4}$$"
+            "First, rewrite the expression in index form: $$y = 2x^{-3}$$",
+            "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$ where, $$a = 2$$ and $$n = -3$$ $$\\dfrac{dy}{dx} = 2 \\times \\left(-3\\right)x^{-3-1} = -6x^{-4}$$",
+            "Finally, convert the derivative back into fractional form.",
+            "Final Answer: $$(b) \\dfrac{dy}{dx} = -\\dfrac{6}{x^4}$$"
         ],
         "pi_options": [
             {
                 "ans": "$$(a) \\dfrac{dy}{dx} = -\\dfrac{6}{x^2}$$",
-                "feedback": "This incorrect answer arises from reducing the power in the denominator. When differentiating, subtracting one from the negative exponent of $$-3$$ gives $$-4$$, resulting in a denominator power of 4."
+                "feedback": "This incorrect answer arises from reducing the power in the denominator. When differentiating, subtracting one from the negative exponent of $-3$ gives $-4$, resulting in a denominator power of 4."
             },
             {
                 "ans": "$$(c) \\dfrac{dy}{dx} = -\\dfrac{2}{x^4}$$",
-                "feedback": "It seems you differentiated the $$x^{-3}$$ component to get $$-3x^{-4}$$ but forgot to multiply by the original constant coefficient of 2."
+                "feedback": "It seems you differentiated the $x^{-3}$ component to get $-3x^{-4}$ but forgot to multiply by the original constant coefficient of 2."
             },
             {
                 "ans": "$$(d) \\dfrac{dy}{dx} = 2x^{-3}$$",
@@ -2984,11 +2987,12 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{1}{2x^2}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>(a) $$\\dfrac{dy}{dx} = -\\dfrac{1}{4x^3}$$<br>(b) $$\\dfrac{dy}{dx} = -\\dfrac{1}{x^2}$$<br>(c) $$\\dfrac{dy}{dx} = -\\dfrac{1}{x^3}$$<br>(d) $$\\dfrac{dy}{dx} = \\dfrac{1}{2}x^{-2}$$",
+        "question": "$$y = \\dfrac{1}{2x^2}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\ \\dfrac{dy}{dx} = -\\dfrac{1}{4x^3}\\ (b)\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^2}\\ (c)\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^3}\\ (d) \\dfrac{dy}{dx} = \\dfrac{1}{2}x^{-2}$$",
         "steps": [
-            "First, convert the expression into index form, keeping the constant in the denominator as a coefficient: $$y = \\dfrac{1}{2}x^{-2}$$",
-            "Next, apply the standard differentiation rule, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$. Here, $$a = \\dfrac{1}{2}$$ and $$n = -2$$: $$\\dfrac{dy}{dx} = \\dfrac{1}{2} \\times \\left(-2\\right)x^{-2-1} = -1x^{-3}$$",
-            "Finally, simplify and convert back into fractional form: Final Answer: $$(c) \\dfrac{dy}{dx} = -\\dfrac{1}{x^3}$$"
+            "First, rewrite the expression in index form: $$y = \\dfrac{1}{2}x^{-2}$$",
+            "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$ where, $$a = \\dfrac{1}{2}$$ and $$n = -2$$ $$\\dfrac{dy}{dx} = \\dfrac{1}{2} \\times \\left(-2\\right)x^{-2-1} = -1x^{-3}$$",
+            "Finally, convert the derivative back into fractional form.",
+            "Final Answer: $$(c) \\dfrac{dy}{dx} = -\\dfrac{1}{x^3}$$"
         ],
         "pi_options": [
             {
@@ -2997,7 +3001,7 @@ window.ALEVEL_QUESTIONS = [
             },
             {
                 "ans": "$$(b) \\dfrac{dy}{dx} = -\\dfrac{1}{x^2}$$",
-                "feedback": "This error is caused by decreasing the denominator power. Remember that differentiating $$x^{-2}$$ decreases the power to $$-3$$, which means the power in the denominator becomes 3."
+                "feedback": "This error is caused by decreasing the denominator power. Remember that differentiating $x^{-2}$ decreases the power to $-3$, which means the power in the denominator becomes 3."
             },
             {
                 "ans": "$$(d) \\dfrac{dy}{dx} = \\dfrac{1}{2}x^{-2}$$",
@@ -3010,6 +3014,5 @@ window.ALEVEL_QUESTIONS = [
             "content": "When a constant is in the denominator of an algebraic term, rewrite it clearly as a fractional coefficient (such as 1/2) rather than keeping it grouped with the variable. This prevents differentiation mistakes in the denominator."
         }
     }
-
 
 ];
