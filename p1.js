@@ -3346,7 +3346,7 @@ window.ALEVEL_QUESTIONS = [
             "Periodic Sequences"
         ],
         "img": false,
-        "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ 8\\ \\ (b)\\ 2\\pi\\ \ \ (c)\\ 4\\ \\ (d)\\ 4\\pi$$",
+        "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ 8\\ \\ (b)\\ 2\\pi\\ \ \ (c)\\ 4\\ \\ (d)\\ 4\\pi$$",
         "steps": [
             "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.",
             "Next, calculate the first few terms of the sequence: $$U_1 = \\dfrac{1}{\\sqrt{2}},\\ U_2 = 1,\\ U_3 = \\dfrac{1}{\\sqrt{2}},\\ U_4 = 0,\\ U_5 = -\\dfrac{1}{\\sqrt{2}},\\ U_6 = -1,\\ U_7 = -\\dfrac{1}{\\sqrt{2}},\\ U_8 = 0,\\ U_9 = \\dfrac{1}{\\sqrt{2}}$$",
