@@ -2847,12 +2847,13 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "First, rewrite the expression in index form: $$y = x^{-3}$$",
             "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$. Here, $$n = -3$$: $$\\dfrac{dy}{dx} = -3x^{-3-1} = -3x^{-4}$$",
-            "Finally, convert the derivative back into fractional form: Final Answer: $$(c) \\dfrac{dy}{dx} = -\\dfrac{3}{x^4}$$"
+            "Finally, convert the derivative back into fractional form.",
+            "Final Answer: $$(c) \\dfrac{dy}{dx} = -\\dfrac{3}{x^4}$$"
         ],
         "pi_options": [
             {
                 "ans": "$$(a) \\dfrac{dy}{dx} = -\\dfrac{3}{x^2}$$",
-                "feedback": "This is a common error where the power in the denominator has been decreased by one. When differentiating, you must subtract one from the exponent in index form: $$-3 - 1 = -4$$, meaning the power of <em>x</em> in the denominator becomes 4."
+                "feedback": "This is a common error where the power in the denominator has been decreased by one. When differentiating, you must subtract one from the exponent in index form: $-3 - 1 = -4$, meaning the power of $x$ in the denominator becomes 4."
             },
             {
                 "ans": "$$(b) \\dfrac{dy}{dx} = x^{-3}$$",
@@ -2860,7 +2861,7 @@ window.ALEVEL_QUESTIONS = [
             },
             {
                 "ans": "$$(d) \\dfrac{dy}{dx} = -\\dfrac{3}{x^3}$$",
-                "feedback": "You have multiplied by the negative power but forgotten to decrease the exponent of <em>x</em> by one. The index in index form decreases from $$-3$$ to $$-4$$."
+                "feedback": "You have multiplied by the negative power but forgotten to decrease the exponent of $x$ by one. The index in index form decreases from $-3$ to $-4$."
             }
         ],
         "bradley_insight": {
