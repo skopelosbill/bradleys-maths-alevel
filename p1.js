@@ -3557,7 +3557,198 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Fractional Exponent Shortcuts",
             "content": "When finding the inverse of functions with coefficients in the exponent like $e^{2x-1}$, the inverse will always involve a division by that coefficient (e.g., dividing by 2). Recognizing this pattern is probably the best way to mentally verify your steps as you write them down."
         }
+    },
+    {
+        "id": "004091",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Parametric Differentiation",
+            "Parametric Equations"
+        ],
+        "img": false,
+        "question": "A curve is defined by the parametric equations:<br>$$x = 2 \\times 2^{-t} + 4$$<br>$$y = 5 \\times 2^t - 1$$<br><br>Find an expression for $\\dfrac{dy}{dx}$ and find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
+        "steps": [
+            "First, differentiate $y = 5 \\times 2^t - 1$ and $x = 2 \\times 2^{-t} + 4$ with respect to $t$: $$\\dfrac{dy}{dt} = 5 \\ln(2) 2^t$$ and $$\\dfrac{dx}{dt} = -2 \\ln(2) 2^{-t}$$",
+            "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): $$\\dfrac{dy}{dx} = \\dfrac{5 \\ln(2) 2^t}{-2 \\ln(2) 2^{-t}} = -\\dfrac{5}{2} \\times 2^{2t}$$",
+            "To find Part (b), rearrange the parametric equations to isolate the exponential terms: $$2^{-t} = \\dfrac{x-4}{2} \\implies 2^t = \\dfrac{2}{x-4}$$",
+            "Substitute this into the $y$ equation and expand: $$y + 1 = 5 \\times \\dfrac{2}{x-4} \\implies (y + 1)(x - 4) = 10 \\implies xy + x - 4y = 14$$",
+            "Final Answer: $$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{5}{2} \\times 2^{2t},\\quad \\text{(b) } xy + x - 4y = 14$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{5}{2} \\times 2^{t},\\quad \\text{(b) } xy + x - 4y = 14$$",
+                "feedback": "In Part (a), you probably made a mistake with index division laws. Dividing $2^t$ by $2^{-t}$ yields $2^{t - (-t)} = 2^{2t}$ rather than $2^t$. Part (b) is correct."
+            },
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{5}{2} \\times 2^{2t},\\quad \\text{(b) } xy - 4x + y = 14$$",
+                "feedback": "In Part (b), you probably made a sign error when expanding $(y + 1)(x - 4) = 10$. The expansion yields $xy - 4y + x - 4 = 10$, which rearranges to $xy + x - 4y = 14$. Part (a) is correct."
+            },
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{5}{2} \\times 2^{2t},\\quad \\text{(b) } xy + x - 4y = 6$$",
+                "feedback": "In Part (a), you probably forgot the negative sign from the derivative of $2^{-t}$. In Part (b), you probably forgot to subtract $4$ from $10$ or made a transposition mistake."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Exponential Chain Rule",
+            "content": "A very common trap when differentiating parametric equations with negative exponential powers like $2^{-t}$ is forgetting to multiply by the negative coefficient from the inner chain rule. Always write out $\\frac{d}{dt}(a^{-t}) = -a^{-t} \\ln(a)$ explicitly to avoid sign errors."
+        }
+    },
+    {
+        "id": "004092",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Parametric Differentiation",
+            "Parametric Equations"
+        ],
+        "img": false,
+        "question": "A curve is defined by the parametric equations:<br>$$x = 3 \\times 3^{-t} + 2$$<br>$$y = 2 \\times 3^t - 4$$<br><br>Find an expression for $\\dfrac{dy}{dx}$ and find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
+        "steps": [
+            "First, differentiate $y = 2 \\times 3^t - 4$ and $x = 3 \\times 3^{-t} + 2$ with respect to $t$: $$\\dfrac{dy}{dt} = 2 \\ln(3) 3^t$$ and $$\\dfrac{dx}{dt} = -3 \\ln(3) 3^{-t}$$",
+            "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): $$\\dfrac{dy}{dx} = \\dfrac{2 \\ln(3) 3^t}{-3 \\ln(3) 3^{-t}} = -\\dfrac{2}{3} \\times 3^{2t}$$",
+            "To find Part (b), rearrange the parametric equations to isolate the exponential terms: $$3^{-t} = \\dfrac{x-2}{3} \\implies 3^t = \\dfrac{3}{x-2}$$",
+            "Substitute this into the $y$ equation and expand: $$y + 4 = 2 \\times \\dfrac{3}{x-2} \\implies (y + 4)(x - 2) = 6 \\implies xy + 4x - 2y = 14$$",
+            "Final Answer: $$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 3^{2t},\\quad \\text{(b) } xy + 4x - 2y = 14$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 3^{t},\\quad \\text{(b) } xy + 4x - 2y = 14$$",
+                "feedback": "In Part (a), you probably made an index error during division. Since $3^t \\div 3^{-t} = 3^{t - (-t)} = 3^{2t}$, the power of the exponential term becomes $2t$. Part (b) is correct."
+            },
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 3^{2t},\\quad \\text{(b) } xy - 2x + 4y = 14$$",
+                "feedback": "In Part (b), you probably made a sign error or transposed the coefficients when expanding $(y + 4)(x - 2) = 6$. The correct expansion yields $xy - 2y + 4x - 8 = 6$, which simplifies to $xy + 4x - 2y = 14$. Part (a) is correct."
+            },
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{2}{3} \\times 3^{2t},\\quad \\text{(b) } xy + 4x - 2y = 6$$",
+                "feedback": "In Part (a), you probably missed the negative sign from the derivative of $3^{-t}$. In Part (b), you probably made a sign error during transposition or expansion of the bracket constant."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Simplifying Exponential Transpositions",
+            "content": "When rearranging equations like $x - 2 = 3 \\times 3^{-t}$, write $3^{-t}$ as $\\frac{1}{3^t}$ to isolate the term easily. Taking the reciprocal of both sides is probably the fastest way to get $3^t = \\frac{3}{x-2}$ without sign or fraction slips."
+        }
+    },
+    {
+        "id": "004093",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Parametric Differentiation",
+            "Parametric Equations"
+        ],
+        "img": false,
+        "question": "A curve is defined by the parametric equations:<br>$$x = 5 \\times 2^{-t} + 1$$<br>$$y = 4 \\times 2^t - 3$$<br><br>Find an expression for $\\dfrac{dy}{dx}$ and find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
+        "steps": [
+            "First, differentiate $y = 4 \\times 2^t - 3$ and $x = 5 \\times 2^{-t} + 1$ with respect to $t$: $$\\dfrac{dy}{dt} = 4 \\ln(2) 2^t$$ and $$\\dfrac{dx}{dt} = -5 \\ln(2) 2^{-t}$$",
+            "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): $$\\dfrac{dy}{dx} = \\dfrac{4 \\ln(2) 2^t}{-5 \\ln(2) 2^{-t}} = -\\dfrac{4}{5} \\times 2^{2t}$$",
+            "To find Part (b), rearrange the parametric equations to isolate the exponential terms: $$2^{-t} = \\dfrac{x-1}{5} \\implies 2^t = \\dfrac{5}{x-1}$$",
+            "Substitute this into the $y$ equation and expand: $$y + 3 = 4 \\times \\dfrac{5}{x-1} \\implies (y + 3)(x - 1) = 20 \\implies xy + 3x - y = 23$$",
+            "Final Answer: $$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{4}{5} \\times 2^{2t},\\quad \\text{(b) } xy + 3x - y = 23$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{4}{5} \\times 2^{t},\\quad \\text{(b) } xy + 3x - y = 23$$",
+                "feedback": "In Part (a), you probably made an index calculation slip during division. Dividing $2^t$ by $2^{-t}$ results in $2^{t - (-t)} = 2^{2t}$, not $2^t$. Part (b) is correct."
+            },
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{4}{5} \\times 2^{2t},\\quad \\text{(b) } xy + 3x - y = 17$$",
+                "feedback": "In Part (b), you probably made a sign error when expanding $(y + 3)(x - 1) = 20$. The expansion yields $xy - y + 3x - 3 = 20$, which rearranges to $xy + 3x - y = 23$. Part (a) is correct."
+            },
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{4}{5} \\times 2^{2t},\\quad \\text{(b) } xy - y + 3x = 17$$",
+                "feedback": "In Part (a), you probably missed the negative sign from the derivative of $2^{-t}$. In Part (b), you probably made transposition or expansion constant sign errors."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Logarithm Elimination",
+            "content": "A deeper look at the Cartesian elimination method shows why it is so effective here. Since $2^{-t}$ and $2^t$ are multiplicative inverses, their product is exactly $1$. Multiplying $(x-1)/5$ by $(y+3)/4$ is probably the most elegant way to see that $\\frac{x-1}{5} \\times \\frac{y+3}{4} = 1 \\implies (x-1)(y+3) = 20$ directly."
+        }
+    },
+    {
+        "id": "004094",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Parametric Differentiation",
+            "Parametric Equations"
+        ],
+        "img": false,
+        "question": "A curve is defined by the parametric equations:<br>$$x = 2 \\times 3^{-t} + 5$$<br>$$y = 4 \\times 3^t - 1$$<br><br>Find an expression for $\\dfrac{dy}{dx}$ and find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
+        "steps": [
+            "First, differentiate $y = 4 \\times 3^t - 1$ and $x = 2 \\times 3^{-t} + 5$ with respect to $t$: $$\\dfrac{dy}{dt} = 4 \\ln(3) 3^t$$ and $$\\dfrac{dx}{dt} = -2 \\ln(3) 3^{-t}$$",
+            "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): $$\\dfrac{dy}{dx} = \\dfrac{4 \\ln(3) 3^t}{-2 \\ln(3) 3^{-t}} = -2 \\times 3^{2t}$$",
+            "To find Part (b), rearrange the parametric equations to isolate the exponential terms: $$3^{-t} = \\dfrac{x-5}{2} \\implies 3^t = \\dfrac{2}{x-5}$$",
+            "Substitute this into the $y$ equation and expand: $$y + 1 = 4 \\times \\dfrac{2}{x-5} \\implies (y + 1)(x - 5) = 8 \\implies xy + x - 5y = 13$$",
+            "Final Answer: $$\\text{(a) } \\dfrac{dy}{dx} = -2 \\times 3^{2t},\\quad \\text{(b) } xy + x - 5y = 13$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -2 \\times 3^{t},\\quad \\text{(b) } xy + x - 5y = 13$$",
+                "feedback": "In Part (a), you probably made an index division error. Since $3^t \\div 3^{-t} = 3^{t - (-t)} = 3^{2t}$, the exponent must be $2t$. Part (b) is correct."
+            },
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -2 \\times 3^{2t},\\quad \\text{(b) } xy + x - 5y = 3$$",
+                "feedback": "In Part (b), you probably made a sign error when expanding $(y + 1)(x - 5) = 8$. The expansion yields $xy - 5y + x - 5 = 8$, which simplifies to $xy + x - 5y = 13$. Part (a) is correct."
+            },
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = 2 \\times 3^{2t},\\quad \\text{(b) } xy + x - 5y = 3$$",
+                "feedback": "In Part (a), you probably missed the negative sign from the derivative of $3^{-t}$. In Part (b), you probably made sign transposition errors when expanding and simplifying the constant."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Expanding Algebraic Fractions",
+            "content": "A common error is to try to expand $(y+1)(x-5) = 8$ and get a negative term in $xy$. Make sure you expand each term in the brackets carefully: $y \\times x = xy$, $y \\times (-5) = -5y$, $1 \\times x = x$, and $1 \\times (-5) = -5$."
+        }
+    },
+    {
+        "id": "004095",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Parametric Differentiation",
+            "Parametric Equations"
+        ],
+        "img": false,
+        "question": "A curve is defined by the parametric equations:<br>$$x = 3 \\times 2^{-t} + 2$$<br>$$y = 2 \\times 2^t - 6$$<br><br>Find an expression for $\\dfrac{dy}{dx}$ and find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
+        "steps": [
+            "First, differentiate $y = 2 \\times 2^t - 6$ and $x = 3 \\times 2^{-t} + 2$ with respect to $t$: $$\\dfrac{dy}{dt} = 2 \\ln(2) 2^t$$ and $$\\dfrac{dx}{dt} = -3 \\ln(2) 2^{-t}$$",
+            "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): $$\\dfrac{dy}{dx} = \\dfrac{2 \\ln(2) 2^t}{-3 \\ln(2) 2^{-t}} = -\\dfrac{2}{3} \\times 2^{2t}$$",
+            "To find Part (b), rearrange the parametric equations to isolate the exponential terms: $$2^{-t} = \\dfrac{x-2}{3} \\implies 2^t = \\dfrac{3}{x-2}$$",
+            "Substitute this into the $y$ equation and expand: $$y + 6 = 2 \\times \\dfrac{3}{x-2} \\implies (y + 6)(x - 2) = 6 \\implies xy + 6x - 2y = 18$$",
+            "Final Answer: $$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 2^{2t},\\quad \\text{(b) } xy + 6x - 2y = 18$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 2^{t},\\quad \\text{(b) } xy + 6x - 2y = 18$$",
+                "feedback": "In Part (a), you probably made an index division error. Since $2^t \\div 2^{-t} = 2^{t - (-t)} = 2^{2t}$, the exponent must be $2t$. Part (b) is correct."
+            },
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 2^{2t},\\quad \\text{(b) } xy + 6x - 2y = 6$$",
+                "feedback": "In Part (b), you probably made a sign error when expanding $(y + 6)(x - 2) = 6$. The expansion yields $xy - 2y + 6x - 12 = 6$, which simplifies to $xy + 6x - 2y = 18$. Part (a) is correct."
+            },
+            {
+                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{2}{3} \\times 2^{2t},\\quad \\text{(b) } xy - 2y + 6x = 6$$",
+                "feedback": "In Part (a), you probably missed the negative sign from the derivative of $2^{-t}$. In Part (b), you probably made a sign transposition error when simplifying the constant terms."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Sanity Checking the Cartesian Equation",
+            "content": "A quick sanity check for your final Cartesian equation is probably to substitute a simple value for $t$, like $t=0$, back into the original equations. This yields $x = 5$ and $y = -4$. Substitute $(5, -4)$ into your Cartesian equation: $5(-4) + 6(5) - 2(-4) = -20 + 30 + 8 = 18$, which correctly matches."
+        }
     }
+
 
 
 
