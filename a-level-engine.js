@@ -77,11 +77,10 @@ const ALevelHub = {
             container.appendChild(this.createProblemCard(prob));
         });
 
-        if (window.MathJax && MathJax.typesetPromise) {
-            MathJax.typesetClear();
+        // Safe MathJax rendering execution
+        if (window.MathJax && typeof MathJax.typesetPromise === "function") {
             MathJax.typesetPromise();
         }
-
     },
 
     // ---------------------------------------------
@@ -165,12 +164,8 @@ const ALevelHub = {
         const btn = document.getElementById(`action-${id}`);
         if (btn) btn.style.display = "none";
 
-        if (typeof MathJax !== "undefined") {
-            if (typeof MathJax.typesetPromise === "function") {
-                MathJax.typesetPromise();
-            } else if (MathJax.Hub && typeof MathJax.Hub.Queue === "function") {
-                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-            }
+        if (typeof MathJax !== "undefined" && typeof MathJax.typesetPromise === "function") {
+            MathJax.typesetPromise();
         }
     }
 };

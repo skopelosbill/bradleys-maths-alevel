@@ -38,7 +38,7 @@
     <!-- MathJax -->
     <script>
       window.MathJax = {
-        tex: { inlineMath: [['$', '$'], ['\`\(^\prime, ^\prime\\)`']] },
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
         svg: { fontCache: 'global' }
       };
     </script>
@@ -129,29 +129,20 @@
     <!-- ENGINE -->
     <script src="a-level-engine.js"></script>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+          // Initialize default dataset (P1 Set 1) directly
+          ALevelHub.init();
 
-    function startAudit() {
-        ALevelHub.init();
-        document.getElementById("setSelect").addEventListener("change", (e) => {
-            ALevelHub.loadSet(e.target.value);
-        });
-    }
-
-    // Case 1: MathJax has already initialised
-    if (window.MathJax && MathJax.startup && MathJax.startup.promise) {
-        MathJax.startup.promise.then(startAudit);
-    } 
-    // Case 2: MathJax is still loading — wait for it
-    else {
-        document.addEventListener("mathjax:startup", startAudit);
-    }
-
-});
-</script>
-
-
+          // Bind dropdown select listener
+          const setSelect = document.getElementById("setSelect");
+          if (setSelect) {
+              setSelect.addEventListener("change", (e) => {
+                  ALevelHub.loadSet(e.target.value);
+              });
+          }
+      });
+    </script>
 
 </body>
 </html>
