@@ -1,39 +1,71 @@
 // =====================================================
-// A LEVEL AUDIT ENGINE
+// A LEVEL AUDIT ENGINE — MODULAR VERSION
 // =====================================================
 
 const ALevelHub = {
 
     state: {
-        masterVault: []   // all loaded questions
+        masterVault: [],
+        currentScript: null
     },
 
     // ---------------------------------------------
-    // INIT
+    // INIT — load default set (P1_1)
     // ---------------------------------------------
     async init() {
-        await this.loadQuestionBank();
-        this.renderAuditList();
+        await this.loadSet("p1_1");
     },
 
     // ---------------------------------------------
-    // LOAD P1 QUESTIONS
+    // LOAD ANY SET (p1_1, p1_2, p1_3, ...)
     // ---------------------------------------------
-    async loadQuestionBank() {
-        try {
-            // p1.js must define: window.ALEVEL_QUESTIONS = [ ... ]
+    async loadSet(setName) {
+        this.state.masterVault = [];
+
+        // Remove previous script if it exists
+        if (this.state.currentScript) {
+            document.body.removeChild(this.state.currentScript);
+            this.state.currentScript = null;
+        }
+
+        // Create new script tag
+        const script = document.createElement("script");
+        script.src = `${setName}.js`;
+        script.async = true;
+
+        this.state.currentScript = script;
+
+        script.onload = () => {
             if (window.ALEVEL_QUESTIONS && Array.isArray(window.ALEVEL_QUESTIONS)) {
                 this.state.masterVault = window.ALEVEL_QUESTIONS;
+                this.renderAuditList();
             } else {
-                console.error("A Level question bank not found.");
+                this.renderError(`No questions found in ${setName}.js`);
             }
-        } catch (err) {
-            console.error("Error loading A Level questions:", err);
-        }
+        };
+
+        script.onerror = () => {
+            this.renderError(`Could not load ${setName}.js`);
+        };
+
+        document.body.appendChild(script);
     },
 
     // ---------------------------------------------
-    // RENDER ALL QUESTIONS (AUDIT MODE)
+    // RENDER ERROR MESSAGE
+    // ---------------------------------------------
+    renderError(msg) {
+        const container = document.getElementById('audit-container');
+        container.innerHTML = `
+            <div style="padding:20px; background:#ffecec; border-left:5px solid #d9534f; border-radius:6px;">
+                <h3 style="color:#b52b27;">Error</h3>
+                <p>${msg}</p>
+            </div>
+        `;
+    },
+
+    // ---------------------------------------------
+    // RENDER ALL QUESTIONS
     // ---------------------------------------------
     renderAuditList() {
         const container = document.getElementById('audit-container');
@@ -45,18 +77,17 @@ const ALevelHub = {
             container.appendChild(this.createProblemCard(prob));
         });
 
-       if (typeof MathJax !== "undefined") {
-    if (typeof MathJax.typesetPromise === "function") {
-        MathJax.typesetPromise(); // MathJax v3
-    } else if (MathJax.Hub && typeof MathJax.Hub.Queue === "function") {
-        MathJax.Hub.Queue(["Typeset", MathJax.Hub]); // MathJax v2
-    }
-}
+        if (typeof MathJax !== "undefined") {
+            if (typeof MathJax.typesetPromise === "function") {
+                MathJax.typesetPromise();
+            } else if (MathJax.Hub && typeof MathJax.Hub.Queue === "function") {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            }
+        }
     },
 
-    
     // ---------------------------------------------
-    // CREATE A LEVEL PROBLEM CARD (WITH PI AUDIT)
+    // CREATE PROBLEM CARD
     // ---------------------------------------------
     createProblemCard(prob) {
         const card = document.createElement('div');
@@ -74,7 +105,6 @@ const ALevelHub = {
             imgHTML = `<img src="${prob.img}" class="question-img" style="margin:20px auto; display:block;">`;
         }
 
-        // Build the PI Options preview HTML
         let piAuditHTML = '';
         if (prob.pi_options && Array.isArray(prob.pi_options)) {
             piAuditHTML = `
@@ -99,7 +129,6 @@ const ALevelHub = {
 
             ${imgHTML}
 
-            <!-- Render the PI Options with their feedback right below the question -->
             ${piAuditHTML}
 
             <div id="action-${prob.id}" style="margin-top:20px;">
@@ -138,12 +167,12 @@ const ALevelHub = {
         const btn = document.getElementById(`action-${id}`);
         if (btn) btn.style.display = "none";
 
-       if (typeof MathJax !== "undefined") {
-    if (typeof MathJax.typesetPromise === "function") {
-        MathJax.typesetPromise(); // MathJax v3
-    } else if (MathJax.Hub && typeof MathJax.Hub.Queue === "function") {
-        MathJax.Hub.Queue(["Typeset", MathJax.Hub]); // MathJax v2
-    }
-}
+        if (typeof MathJax !== "undefined") {
+            if (typeof MathJax.typesetPromise === "function") {
+                MathJax.typesetPromise();
+            } else if (MathJax.Hub && typeof MathJax.Hub.Queue === "function") {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            }
+        }
     }
 };
