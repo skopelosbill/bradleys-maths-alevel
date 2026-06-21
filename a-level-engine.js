@@ -77,13 +77,11 @@ const ALevelHub = {
             container.appendChild(this.createProblemCard(prob));
         });
 
-        if (typeof MathJax !== "undefined") {
-            if (typeof MathJax.typesetPromise === "function") {
-                MathJax.typesetPromise();
-            } else if (MathJax.Hub && typeof MathJax.Hub.Queue === "function") {
-                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-            }
+        if (window.MathJax && MathJax.typesetPromise) {
+            MathJax.typesetClear();
+            MathJax.typesetPromise();
         }
+
     },
 
     // ---------------------------------------------
