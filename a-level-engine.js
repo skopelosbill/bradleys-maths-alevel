@@ -77,10 +77,13 @@ const ALevelHub = {
             container.appendChild(this.createProblemCard(prob));
         });
 
-        if (window.MathJax && MathJax.typesetPromise) {
-            MathJax.typesetClear();
-            MathJax.typesetPromise();
-        }
+        if (window.MathJax && MathJax.startup && MathJax.startup.promise) {
+            MathJax.startup.promise.then(() => {
+                if (MathJax.typesetClear) MathJax.typesetClear();
+                if (MathJax.typesetPromise) MathJax.typesetPromise();
+    });
+}
+
 
     },
 
