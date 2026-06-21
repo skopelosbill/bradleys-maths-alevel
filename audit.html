@@ -139,17 +139,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Case 1: MathJax has already initialised
-    if (window.MathJax && MathJax.startup && MathJax.startup.promise) {
-        MathJax.startup.promise.then(startAudit);
-    } 
-    // Case 2: MathJax is still loading — wait for it
-    else {
-        document.addEventListener("mathjax:startup", startAudit);
-    }
+    // Always start the audit; MathJax will catch up
+    startAudit();
 
 });
 </script>
+
 
 
 
