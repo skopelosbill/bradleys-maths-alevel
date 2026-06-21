@@ -129,15 +129,25 @@
     <!-- ENGINE -->
     <script src="a-level-engine.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            ALevelHub.init();
+<script>
+document.addEventListener("DOMContentLoaded", () => {
 
-            document.getElementById("setSelect").addEventListener("change", (e) => {
-                ALevelHub.loadSet(e.target.value);
-            });
+    // Wait for MathJax to finish initialising
+    MathJax.startup.promise.then(() => {
+
+        // Now safe to load the first set
+        ALevelHub.init();
+
+        // And safe to switch sets
+        document.getElementById("setSelect").addEventListener("change", (e) => {
+            ALevelHub.loadSet(e.target.value);
         });
-    </script>
+
+    });
+
+});
+</script>
+
 
 </body>
 </html>
