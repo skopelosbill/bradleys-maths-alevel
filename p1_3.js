@@ -41,7 +41,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "004092",
+        "id": "004102",
         "board": "AQA",
         "major_area": "Coordinate geometry",
         "topic": "Circles",
@@ -57,7 +57,7 @@ window.ALEVEL_QUESTIONS = [
             "Next, calculate the side lengths of triangle $ABC$ to find $\\angle ABC$: $$BA = \\sqrt{(8-0)^2 + (6 - (-10))^2} = \\sqrt{320}$$ and $$BC = \\sqrt{(-8-0)^2 + (6 - (-10))^2} = \\sqrt{320}$$, with $$AC = 16$$",
             "Apply the Cosine Rule on triangle $ABC$: $$16^2 = 320 + 320 - 2(\\sqrt{320})(\\sqrt{320})\\cos(\\angle ABC) \\implies 256 = 640 - 640\\cos(\\angle ABC) \\implies \\cos(\\angle ABC) = 0.6 \\implies \\angle ABC \\approx 53.13^\\circ$$",
             "Since $$2 \\times 53.13^\\circ = 106.26^\\circ$$, the angle at the center $\\angle AOC$ is exactly twice the angle at the circumference $\\angle ABC$.",
-            "For Part (b)(i), find the midpoint of the chord $AC$: $$K = \\left(\\dfrac{8+(-8)}{2}, \\dfrac{6+6}{2}\\right) = (0, 6)$$",
+            "For Part (b)(i), find the midpoint of the chord $AC$: $$K = \\left(\\dfrac{8+(-8)}{2}, \\dfrac{6+6}{2}\right) = (0, 6)$$",
             "Since the midpoint of $AC$ lies on the line $x = 0$ (the $y$-axis), the chord $AC$ is bisected by the $y$-axis.",
             "For Part (b)(ii), calculate the distance squared from point $D(3, -9)$ to the center $O(0, 0)$: $$OD^2 = 3^2 + (-9)^2 = 9 + 81 = 90$$",
             "Since the distance squared $$90 < R^2 = 100$$, the distance from the point to the center of the circle is less than the radius. Thus, the point $D$ lies inside the circle.",
@@ -169,7 +169,7 @@ window.ALEVEL_QUESTIONS = [
             "content": "When finding the gradient of a perpendicular bisector, remember that $m_1 \\times m_2 = -1$. If the gradient of the chord is negative, the perpendicular bisector's gradient must be strictly positive. Forgetting this sign change is probably the most common way students lose marks on this topic."
         }
     },
-     {
+    {
         "id": "004105",
         "board": "AQA",
         "major_area": "Coordinate geometry",
@@ -255,7 +255,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "004097",
+        "id": "004107",
         "board": "AQA",
         "major_area": "Calculus",
         "topic": "Numerical methods",
@@ -299,7 +299,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "004088",
+        "id": "004108",
         "board": "AQA",
         "major_area": "Calculus",
         "topic": "Numerical methods",
@@ -395,7 +395,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A point $C$ lies on $OB$ such that $OC = \\frac{1}{3}r$.<br><br>(a) Given that the area of the triangle $OAC$ is equal to one-fifth of the area of the sector $OAB$, show that $3\\theta = 5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 2.0$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.65215$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
             "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the sector $OAB$ is: $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
-            "Since $OC = \\dfrac{1}{3}r$, the area of the triangle $OAC$ is: $$\\text{Area of triangle } OAC = \\dfrac{1}{2}(r)\\left(\\dfrac{1}{3}r\right)\\sin\\theta = \\dfrac{r^2}{6}\\sin\\theta$$",
+            "Since $OC = \\dfrac{1}{3}r$, the area of the triangle $OAC$ is: $$\\text{Area of triangle } OAC = \\dfrac{1}{2}(r)\\left(\\dfrac{1}{3}r\\right)\\sin\\theta = \\dfrac{r^2}{6}\\sin\\theta$$",
             "Set the triangle area equal to one-fifth of the sector area: $$\\dfrac{r^2}{6}\\sin\\theta = \\dfrac{1}{5}\\left(\\dfrac{1}{2}r^2\\theta\\right) \\implies \\dfrac{r^2}{6}\\sin\\theta = \\dfrac{r^2}{10}\\theta$$",
             "Divide both sides by $r^2$ and multiply by $30$ to clear the fractions and obtain the target equation: $$\\dfrac{1}{6}\\sin\\theta = \\dfrac{1}{10}\\theta \\implies 5\\sin\\theta = 3\\theta \\implies 3\\theta = 5\\sin\\theta$$",
             "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin\\theta_n}{3 - 5\\cos\\theta_n}$$",
@@ -424,5 +424,4 @@ window.ALEVEL_QUESTIONS = [
             "content": "When evaluating multi-step numerical methods like Newton-Raphson, rounding your intermediate values (like $\\theta_2$) too early is probably the easiest way to lose precision in your final answer. Always keep the full unrounded value stored in your calculator's memory."
         }
     }
-
 ];
