@@ -211,6 +211,7 @@ window.ALEVEL_QUESTIONS = [
             "content": "Integrating coordinate geometry with trigonometry (like using the Cosine Rule to verify tangent lengths) is probably the most common way AQA stretches students. Keep your coordinate calculations clear on paper before substituting them into geometric formulas."
         }
     },
+    [
     {
         "id": "004106",
         "board": "AQA",
@@ -223,11 +224,15 @@ window.ALEVEL_QUESTIONS = [
         "img": "images/p1/004106.png",
         "question": "The diagram shows a sector of a circle $OAB$. $C$ is the midpoint of $OB$. Angle $AOB$ is $\\theta$ radians.<br><br>(a) Given that the area of the triangle $OAC$ is equal to one-third of the area of the sector $OAB$, show that $\\theta = 1.5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = \\pi$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.49579$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
-            "For Part (a), express the areas: $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$ and $$\\text{Area of triangle } OAC = \\dfrac{1}{2}(r)\\left(\\dfrac{1}{2}r\\right)\\sin\\theta = \\dfrac{r^2}{4}\\sin\\theta$$",
-            "Set the triangle area to $\\dfrac{1}{3}$ of the sector area: $$\\dfrac{1}{4}r^2\\sin\\theta = \\dfrac{1}{12}r^2\\theta \\implies \\theta = 2\\sin\\theta$$",
-            "For Part (b), define $f(\\theta) = \\theta - 2\\sin\\theta$ and its derivative $f'(\\theta) = 1 - 2\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{\\theta_n - 2\\sin\\theta_n}{1 - 2\\cos\\theta_n}$$",
-            "With $\\theta_1 = \\pi$, calculate the iterations: $$\\theta_2 = \\pi - \\dfrac{\\pi - 0}{1 - (-2)} = \\pi - \\dfrac{\\pi}{3} = \\dfrac{2\\pi}{3} \\approx 2.09440$$ and $$\\theta_3 = 2.09440 - \\dfrac{2.09440 - 2\\sin(2.09440)}{1 - 2\\cos(2.09440)} \\approx 1.57176$$",
-            "For Part (c), calculate the percentage error using $\\theta \\approx 1.49579$: $$\\text{Percentage Error} = \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\approx 5.08\\%$$",
+            "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the sector $OAB$ is: $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
+            "Since $C$ is the midpoint of $OB$, $OC = \\dfrac{1}{2}r$. The area of triangle $OAC$ is: $$\\text{Area of triangle } OAC = \\dfrac{1}{2}(r)\\left(\\dfrac{1}{2}r\\right)\\sin\\theta = \\dfrac{r^2}{4}\\sin\\theta$$",
+            "Next, set the area of the triangle equal to one-third of the area of the sector: $$\\dfrac{r^2}{4}\\sin\\theta = \\dfrac{1}{3} \\left(\\dfrac{1}{2}r^2\\theta\\right) \\implies \\dfrac{r^2}{4}\\sin\\theta = \\dfrac{r^2}{6}\\theta$$",
+            "Divide both sides by $r^2$ (since $r > 0$) to eliminate the radius variable: $$\\dfrac{1}{4}\\sin\\theta = \\dfrac{1}{6}\\theta$$",
+            "Multiply both sides by $6$ to isolate $\\theta$, and simplify the resulting fraction to reach the target equation: $$\\theta = \\dfrac{6}{4}\\sin\\theta \\implies \\theta = 1.5\\sin\\theta$$",
+            "For Part (b), define $f(\\theta) = \\theta - 1.5\\sin\\theta$ and its derivative $f'(\\theta) = 1 - 1.5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{\\theta_n - 1.5\\sin\\theta_n}{1 - 1.5\\cos\\theta_n}$$",
+            "With $\\theta_1 = \\pi$, calculate the iterations. In the first iteration: $$\\theta_2 = \\pi - \\dfrac{\\pi - 1.5\\sin\\pi}{1 - 1.5\\cos\\pi} = \\pi - \\dfrac{\\pi}{1 - 1.5(-1)} = \\pi - \\dfrac{\\pi}{2.5} = 0.6\\pi \\approx 1.88496$$",
+            "In the second iteration: $$\\theta_3 = 1.88496 - \\dfrac{1.88496 - 1.5\\sin(1.88496)}{1 - 1.5\\cos(1.88496)} \\approx 1.57176$$",
+            "For Part (c), calculate the percentage error by comparing the approximation $\\theta_3 \\approx 1.57176$ with the actual root $\\theta = 1.49579$: $$\\text{Percentage Error} = \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\approx 5.08\\%$$",
             "Final Answer: $$\\text{Part (b): } 1.57176,\\quad \\text{Part (c): } 5.08\\%$$"
         ],
         "pi_options": [
@@ -259,14 +264,19 @@ window.ALEVEL_QUESTIONS = [
             "Newton-Raphson Method",
             "Radian Measure"
         ],
-        "img": "images/p1/004107.png",
+        "img": "images/p1/004097.png",
         "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A chord $AB$ divides the sector into a segment and a triangle $OAB$.<br><br>(a) Given that the area of the segment is equal to one-third of the area of the triangle $OAB$, show that $4\\sin\\theta = 3\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 1.5$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.27570$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
-            "For Part (a), write the areas: $$\\text{Area of segment} = \\dfrac{1}{2}r^2\\theta - \\dfrac{1}{2}r^2\\sin\\theta$$ and $$\\text{Area of triangle } OAB = \\dfrac{1}{2}r^2\\sin\\theta$$",
-            "Set the segment area to $\\dfrac{1}{3}$ of the triangle area: $$\\dfrac{1}{2}r^2(\\theta - \\sin\\theta) = \\dfrac{1}{6}r^2\\sin\\theta \\implies \\theta - \\sin\\theta = \\dfrac{1}{3}\\sin\\theta \\implies 4\\sin\\theta = 3\\theta$$",
+            "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the triangle $OAB$ is: $$\\text{Area of triangle } OAB = \\dfrac{1}{2}r^2\\sin\\theta$$",
+            "The area of the sector $OAB$ is: $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
+            "Find the area of the segment by subtracting the area of the triangle from the area of the sector: $$\\text{Area of segment} = \\dfrac{1}{2}r^2\\theta - \\dfrac{1}{2}r^2\\sin\\theta = \\dfrac{1}{2}r^2(\\theta - \\sin\\theta)$$",
+            "Set the segment area equal to one-third of the triangle area: $$\\dfrac{1}{2}r^2(\\theta - \\sin\\theta) = \\dfrac{1}{3}\\left(\\dfrac{1}{2}r^2\\sin\\theta\\right)$$",
+            "Divide both sides by $\\dfrac{1}{2}r^2$ to simplify: $$\\theta - \\sin\\theta = \\dfrac{1}{3}\\sin\\theta$$",
+            "Add $\\sin\\theta$ to both sides and multiply by $3$ to obtain the target equation: $$\\theta = \\dfrac{4}{3}\\sin\\theta \\implies 3\\theta = 4\\sin\\theta \\implies 4\\sin\\theta = 3\\theta$$",
             "For Part (b), define $f(\\theta) = 3\\theta - 4\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 4\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 4\\sin\\theta_n}{3 - 4\\cos\\theta_n}$$",
-            "With $\\theta_1 = 1.5$, calculate the iterations: $$\\theta_2 = 1.5 - \\dfrac{3(1.5) - 4\\sin(1.5)}{3 - 4\\cos(1.5)} \\approx 1.31229$$ and $$\\theta_3 = 1.31229 - \\dfrac{3(1.31229) - 4\\sin(1.31229)}{3 - 4\\cos(1.31229)} \\approx 1.27741$$",
-            "For Part (c), calculate the percentage error using $\\theta \\approx 1.27570$: $$\\text{Percentage Error} = \\dfrac{|1.27741 - 1.27570|}{1.27570} \\times 100 \\approx 0.13\\%$$",
+            "With $\\theta_1 = 1.5$, calculate the iterations. In the first iteration: $$\\theta_2 = 1.5 - \\dfrac{3(1.5) - 4\\sin(1.5)}{3 - 4\\cos(1.5)} \\approx 1.31229$$",
+            "In the second iteration: $$\\theta_3 = 1.31229 - \\dfrac{3(1.31229) - 4\\sin(1.31229)}{3 - 4\\cos(1.31229)} \\approx 1.27741$$",
+            "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.27741$ against the true root $\\theta = 1.27570$: $$\\text{Percentage Error} = \\dfrac{|1.27741 - 1.27570|}{1.27570} \\times 100 \\approx 0.13\\%$$",
             "Final Answer: $$\\text{Part (b): } 1.27741,\\quad \\text{Part (c): } 0.13\\%$$"
         ],
         "pi_options": [
@@ -290,7 +300,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "004108",
+        "id": "004088",
         "board": "AQA",
         "major_area": "Calculus",
         "topic": "Numerical methods",
@@ -298,14 +308,17 @@ window.ALEVEL_QUESTIONS = [
             "Newton-Raphson Method",
             "Radian Measure"
         ],
-        "img": "images/p1/004108.png",
+        "img": "images/p1/004088.png",
         "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A line is drawn from $A$ perpendicular to $OB$, meeting $OB$ at $C$ to form a right-angled triangle $OAC$.<br><br>(a) Given that the area of the right-angled triangle $OAC$ is equal to three-tenths of the area of the sector $OAB$, show that $5\\sin(2\\theta) = 3\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 1.0$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.17243$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
-            "For Part (a), express the areas: $$AC = r\\sin\\theta,\\ OC = r\\cos\\theta \\implies \\text{Area of right-angled triangle } OAC = \\dfrac{1}{2}r^2\\sin\\theta\\cos\\theta = \\dfrac{1}{4}r^2\\sin(2\\theta)$$ and $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
-            "Set the triangle area to $\\dfrac{3}{10}$ of the sector area: $$\\dfrac{1}{4}r^2\\sin(2\\theta) = \\dfrac{3}{20}r^2\\theta \\implies 5\\sin(2\\theta) = 3\\theta$$",
+            "First, state the formulas for the areas in terms of $r$ and $\\theta$. In the right-angled triangle $OAC$, the sides are $OC = r\\cos\\theta$ and $AC = r\\sin\\theta$. The area of this triangle is: $$\\text{Area of triangle } OAC = \\dfrac{1}{2}r^2\\sin\\theta\\cos\\theta = \\dfrac{1}{4}r^2\\sin(2\\theta)$$",
+            "The area of the sector $OAB$ is: $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
+            "Set the triangle area equal to three-tenths of the sector area: $$\\dfrac{1}{4}r^2\\sin(2\\theta) = \\dfrac{3}{10} \\left(\\dfrac{1}{2}r^2\\theta\\right) \\implies \\dfrac{1}{4}r^2\\sin(2\\theta) = \\dfrac{3}{20}r^2\\theta$$",
+            "Divide both sides by $r^2$ and multiply by $20$ to clear the fractions and obtain the target equation: $$\\dfrac{1}{4}\\sin(2\\theta) = \\dfrac{3}{20}\\theta \\implies 5\\sin(2\\theta) = 3\\theta$$",
             "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin(2\\theta)$ and its derivative $f'(\\theta) = 3 - 10\\cos(2\\theta)$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin(2\\theta_n)}{3 - 10\\cos(2\\theta_n)}$$",
-            "With $\\theta_1 = 1.0$, calculate the iterations: $$\\theta_2 = 1.0 - \\dfrac{3(1.0) - 5\\sin(2)}{3 - 10\\cos(2)} \\approx 1.21594$$ and $$\\theta_3 = 1.21594 - \\dfrac{3(1.21594) - 5\\sin(2.43188)}{3 - 10\\cos(2.43188)} \\approx 1.17911$$",
-            "For Part (c), calculate the percentage error using $\\theta \\approx 1.17243$: $$\\text{Percentage Error} = \\dfrac{|1.17911 - 1.17243|}{1.17243} \\times 100 \\approx 0.57\\%$$",
+            "With $\\theta_1 = 1.0$, calculate the iterations. In the first iteration: $$\\theta_2 = 1.0 - \\dfrac{3(1.0) - 5\\sin(2)}{3 - 10\\cos(2)} \\approx 1.21594$$",
+            "In the second iteration: $$\\theta_3 = 1.21594 - \\dfrac{3(1.21594) - 5\\sin(2.43188)}{3 - 10\\cos(2.43188)} \\approx 1.17911$$",
+            "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.17911$ against the true root $\\theta = 1.17243$: $$\\text{Percentage Error} = \\dfrac{|1.17911 - 1.17243|}{1.17243} \\times 100 \\approx 0.57\\%$$",
             "Final Answer: $$\\text{Part (b): } 1.17911,\\quad \\text{Part (c): } 0.57\\%$$"
         ],
         "pi_options": [
@@ -337,14 +350,17 @@ window.ALEVEL_QUESTIONS = [
             "Newton-Raphson Method",
             "Radian Measure"
         ],
-        "img": "images/p1/004109.png",
+        "img": "images/p1/004099.png",
         "question": "The diagram shows two concentric sectors of circles $OAB$ and $OCD$ sharing the same angle $\\theta$ radians. The larger sector $OAB$ has radius $r$, and the smaller sector $OCD$ has radius $R = 0.6r$.<br><br>(a) Given that the area of the smaller sector $OCD$ is equal to $\\frac{9}{25}$ of the area of the triangle $OAB$ formed inside the larger sector, show that $2\\theta = 5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 2.5$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 2.12463$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
-            "For Part (a), express the areas: $$\\text{Area of smaller sector } OCD = \\dfrac{1}{2}R^2\\theta = \\dfrac{1}{2}(0.6r)^2\\theta = 0.18r^2\\theta$$ and $$\\text{Area of triangle } OAB = \\dfrac{1}{2}r^2\\sin\\theta$$",
-            "Set the smaller sector area to $\\dfrac{9}{25}$ of the triangle area: $$0.18r^2\\theta = \\dfrac{9}{25}\\left(\\dfrac{1}{2}r^2\\sin\\theta\\right) \\implies 0.18\\theta = 0.18\\sin\\theta$$? No, $$0.18\\theta = 0.45\\sin\\theta \\implies \\theta = 2.5\\sin\\theta \\implies 2\\theta = 5\\sin\\theta$$",
+            "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the triangle $OAB$ inside the larger sector is: $$\\text{Area of triangle } OAB = \\dfrac{1}{2}r^2\\sin\\theta$$",
+            "Since the smaller sector has a radius of $R = 0.6r$, its area is: $$\\text{Area of sector } OCD = \\dfrac{1}{2}(0.6r)^2\\theta = \\dfrac{1}{2}(0.36r^2)\\theta = 0.18r^2\\theta$$",
+            "Set the smaller sector area equal to nine-tenths of the area of the triangle $OAB$: $$0.18r^2\\theta = \\dfrac{9}{10}\\left(\\dfrac{1}{2}r^2\\sin\\theta\\right) \\implies 0.18r^2\\theta = 0.45r^2\\sin\\theta$$",
+            "Divide both sides by $r^2$ and simplify the decimal ratio to obtain the target equation: $$0.18\\theta = 0.45\\sin\\theta \\implies \\theta = \\dfrac{0.45}{0.18}\\sin\\theta \\implies \\theta = 2.5\\sin\\theta \\implies 2\\theta = 5\\sin\\theta$$",
             "For Part (b), define $f(\\theta) = 2\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 2 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{2\\theta_n - 5\\sin\\theta_n}{2 - 5\\cos\\theta_n}$$",
-            "With $\\theta_1 = 2.5$, calculate the iterations: $$\\theta_2 = 2.5 - \\dfrac{2(2.5) - 5\\sin(2.5)}{2 - 5\\cos(2.5)} \\approx 2.16571$$ and $$\\theta_3 = 2.16571 - \\dfrac{2(2.16571) - 5\\sin(2.16571)}{2 - 5\\cos(2.16571)} \\approx 2.12654$$",
-            "For Part (c), calculate the percentage error using $\\theta \\approx 2.12463$: $$\\text{Percentage Error} = \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100 \\approx 0.09\\%$$",
+            "With $\\theta_1 = 2.5$, calculate the iterations. In the first iteration: $$\\theta_2 = 2.5 - \\dfrac{2(2.5) - 5\\sin(2.5)}{2 - 5\\cos(2.5)} \\approx 2.16571$$",
+            "In the second iteration: $$\\theta_3 = 2.16571 - \\dfrac{2(2.16571) - 5\\sin(2.16571)}{2 - 5\\cos(2.16571)} \\approx 2.12654$$",
+            "For Part (c), calculate the percentage error of $\\theta_3 \\approx 2.12654$ against the true root $\\theta = 2.12463$: $$\\text{Percentage Error} = \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100 \\approx 0.09\\%$$",
             "Final Answer: $$\\text{Part (b): } 2.12654,\\quad \\text{Part (c): } 0.09\\%$$"
         ],
         "pi_options": [
@@ -376,14 +392,17 @@ window.ALEVEL_QUESTIONS = [
             "Newton-Raphson Method",
             "Radian Measure"
         ],
-        "img": "images/p1/004106.png",
+        "img": "images/p1/004110.png",
         "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A point $C$ lies on $OB$ such that $OC = \\frac{1}{3}r$.<br><br>(a) Given that the area of the triangle $OAC$ is equal to one-fifth of the area of the sector $OAB$, show that $3\\theta = 5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 2.0$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.65215$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
-            "For Part (a), express the areas: $$\\text{Area of triangle } OAC = \\dfrac{1}{2}(r)\\left(\\dfrac{1}{3}r\right)\\sin\\theta = \\dfrac{r^2}{6}\\sin\\theta$$ and $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
-            "Set the triangle area to $\\dfrac{1}{5}$ of the sector area: $$\\dfrac{1}{6}r^2\\sin\\theta = \\dfrac{1}{10}r^2\\theta \\implies 5\\sin\\theta = 3\\theta \\implies 3\\theta = 5\\sin\\theta$$",
+            "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the sector $OAB$ is: $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
+            "Since $OC = \\dfrac{1}{3}r$, the area of the triangle $OAC$ is: $$\\text{Area of triangle } OAC = \\dfrac{1}{2}(r)\\left(\\dfrac{1}{3}r\right)\\sin\\theta = \\dfrac{r^2}{6}\\sin\\theta$$",
+            "Set the triangle area equal to one-fifth of the sector area: $$\\dfrac{r^2}{6}\\sin\\theta = \\dfrac{1}{5}\\left(\\dfrac{1}{2}r^2\\theta\\right) \\implies \\dfrac{r^2}{6}\\sin\\theta = \\dfrac{r^2}{10}\\theta$$",
+            "Divide both sides by $r^2$ and multiply by $30$ to clear the fractions and obtain the target equation: $$\\dfrac{1}{6}\\sin\\theta = \\dfrac{1}{10}\\theta \\implies 5\\sin\\theta = 3\\theta \\implies 3\\theta = 5\\sin\\theta$$",
             "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin\\theta_n}{3 - 5\\cos\\theta_n}$$",
-            "With $\\theta_1 = 2.0$, calculate the iterations: $$\\theta_2 = 2.0 - \\dfrac{3(2.0) - 5\\sin(2.0)}{3 - 5\\cos(2.0)} \\approx 1.71392$$ and $$\\theta_3 = 1.71392 - \\dfrac{3(1.71392) - 5\\sin(1.71392)}{3 - 5\\cos(1.71392)} \\approx 1.66164$$",
-            "For Part (c), calculate the percentage error using $\\theta \\approx 1.65215$: $$\\text{Percentage Error} = \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100 \\approx 0.57\\%$$",
+            "With $\\theta_1 = 2.0$, calculate the iterations. In the first iteration: $$\\theta_2 = 2.0 - \\dfrac{3(2.0) - 5\\sin(2.0)}{3 - 5\\cos(2.0)} \\approx 1.71392$$",
+            "In the second iteration: $$\\theta_3 = 1.71392 - \\dfrac{3(1.71392) - 5\\sin(1.71392)}{3 - 5\\cos(1.71392)} \\approx 1.66164$$",
+            "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.66164$ against the true root $\\theta = 1.65215$: $$\\text{Percentage Error} = \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100 \\approx 0.57\\%$$",
             "Final Answer: $$\\text{Part (b): } 1.66164,\\quad \\text{Part (c): } 0.57\\%$$"
         ],
         "pi_options": [
@@ -406,6 +425,6 @@ window.ALEVEL_QUESTIONS = [
             "content": "When evaluating multi-step numerical methods like Newton-Raphson, rounding your intermediate values (like $\\theta_2$) too early is probably the easiest way to lose precision in your final answer. Always keep the full unrounded value stored in your calculator's memory."
         }
     }
-
+]
 
 ];
