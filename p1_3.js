@@ -263,7 +263,7 @@ window.ALEVEL_QUESTIONS = [
             "Newton-Raphson Method",
             "Radian Measure"
         ],
-        "img": "images/p1/004097.png",
+        "img": "images/p1/004107.png",
         "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A chord $AB$ divides the sector into a segment and a triangle $OAB$.<br><br>(a) Given that the area of the segment is equal to one-third of the area of the triangle $OAB$, show that $4\\sin\\theta = 3\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 1.5$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.27570$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
             "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the triangle $OAB$ is: $$\\text{Area of triangle } OAB = \\dfrac{1}{2}r^2\\sin\\theta$$",
@@ -307,7 +307,7 @@ window.ALEVEL_QUESTIONS = [
             "Newton-Raphson Method",
             "Radian Measure"
         ],
-        "img": "images/p1/004088.png",
+        "img": "images/p1/004108.png",
         "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A line is drawn from $A$ perpendicular to $OB$, meeting $OB$ at $C$ to form a right-angled triangle $OAC$.<br><br>(a) Given that the area of the right-angled triangle $OAC$ is equal to three-tenths of the area of the sector $OAB$, show that $5\\sin(2\\theta) = 3\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 1.0$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.17243$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
             "First, state the formulas for the areas in terms of $r$ and $\\theta$. In the right-angled triangle $OAC$, the sides are $OC = r\\cos\\theta$ and $AC = r\\sin\\theta$. The area of this triangle is: $$\\text{Area of triangle } OAC = \\dfrac{1}{2}r^2\\sin\\theta\\cos\\theta = \\dfrac{1}{4}r^2\\sin(2\\theta)$$",
@@ -341,7 +341,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "004099",
+        "id": "004109",
         "board": "AQA",
         "major_area": "Calculus",
         "topic": "Numerical methods",
@@ -349,7 +349,7 @@ window.ALEVEL_QUESTIONS = [
             "Newton-Raphson Method",
             "Radian Measure"
         ],
-        "img": "images/p1/004099.png",
+        "img": "images/p1/004109.png",
         "question": "The diagram shows two concentric sectors of circles $OAB$ and $OCD$ sharing the same angle $\\theta$ radians. The larger sector $OAB$ has radius $r$, and the smaller sector $OCD$ has radius $R = 0.6r$.<br><br>(a) Given that the area of the smaller sector $OCD$ is equal to $\\frac{9}{25}$ of the area of the triangle $OAB$ formed inside the larger sector, show that $2\\theta = 5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 2.5$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 2.12463$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
             "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the triangle $OAB$ inside the larger sector is: $$\\text{Area of triangle } OAB = \\dfrac{1}{2}r^2\\sin\\theta$$",
