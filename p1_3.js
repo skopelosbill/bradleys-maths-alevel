@@ -211,7 +211,6 @@ window.ALEVEL_QUESTIONS = [
             "content": "Integrating coordinate geometry with trigonometry (like using the Cosine Rule to verify tangent lengths) is probably the most common way AQA stretches students. Keep your coordinate calculations clear on paper before substituting them into geometric formulas."
         }
     },
-    [
     {
         "id": "004106",
         "board": "AQA",
@@ -425,6 +424,5 @@ window.ALEVEL_QUESTIONS = [
             "content": "When evaluating multi-step numerical methods like Newton-Raphson, rounding your intermediate values (like $\\theta_2$) too early is probably the easiest way to lose precision in your final answer. Always keep the full unrounded value stored in your calculator's memory."
         }
     }
-]
 
 ];
