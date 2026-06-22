@@ -423,5 +423,225 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Intermediate Rounding Caution",
             "content": "When evaluating multi-step numerical methods like Newton-Raphson, rounding your intermediate values (like $\\theta_2$) too early is probably the easiest way to lose precision in your final answer. Always keep the full unrounded value stored in your calculator's memory."
         }
+    },
+    {
+        "id": "004111",
+        "board": "AQA",
+        "major_area": "Sequences and series",
+        "topic": "Arithmetic progressions",
+        "subtopic": [
+            "Arithmetic Progressions",
+            "Quadratic Equations in Sequences"
+        ],
+        "img": false,
+        "question": "An arithmetic sequence has first term $a$ and common difference $d$.<br><br>The sum of the first 16 terms of the sequence is equal to the square of the sum of the first 4 terms.<br><br>(a) Show that $4a + 30d = 4a^2 + 12ad + 9d^2$.<br><br>(b) Given that the fourth term of the sequence is 10, find the smallest possible value of $a$.",
+        "steps": [
+            "First, state the formulas for both sums. The sum of the first 16 terms is: $$S_{16} = \\dfrac{16}{2}\\left(2a + 15d\\right) = 8(2a + 15d) = 16a + 120d$$",
+            "The sum of the first 4 terms is: $$S_4 = \\dfrac{4}{2}\\left(2a + 3d\\right) = 2(2a + 3d) = 4a + 6d$$",
+            "Next, set the sum of the first 16 terms equal to the square of the sum of the first 4 terms: $$16a + 120d = (4a + 6d)^2$$",
+            "Expand the perfect square on the right-hand side: $$16a + 120d = 16a^2 + 48ad + 36d^2$$",
+            "Divide both sides of the equation by $4$ to reach the target relation: $$4a + 30d = 4a^2 + 12ad + 9d^2$$",
+            "For Part (b), state the formula for the fourth term and rearrange for $d$: $$u_4 = a + 3d = 10 \\implies 3d = 10 - a \\implies d = \\dfrac{10-a}{3}$$",
+            "Notice that the right-hand side of the Part (a) relation can be factored as a perfect square: $$4a + 30d = (2a + 3d)^2$$",
+            "Substitute $3d = 10 - a$ into both sides of the factored equation: $$4a + 10(3d) = (2a + 10 - a)^2 \\implies 4a + 10(10-a) = (a + 10)^2$$",
+            "Expand and simplify the resulting quadratic equation: $$4a + 100 - 10a = a^2 + 20a + 100 \\implies 100 - 6a = a^2 + 20a + 100 \\implies a^2 + 26a = 0$$",
+            "Factor the quadratic to find the two possible values of $a$: $$a(a + 26) = 0 \\implies a = 0 \\quad \\text{or} \\quad a = -26$$",
+            "Comparing the two roots, the smallest possible value of $a$ is $-26$.",
+            "Final Answer: $$\\text{Part (b): } a = -26$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } a = 0$$",
+                "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($0$ and $-26$) and select $-26$."
+            },
+            {
+                "ans": "$$\\text{Part (b): } a = -10$$",
+                "feedback": "This incorrect answer probably arises from forgetting the middle term $48ad$ when expanding $(4a + 6d)^2$. Always write out the expansion of a perfect square step-by-step to prevent this common slip."
+            },
+            {
+                "ans": "$$\\text{Part (b): } a = 26$$",
+                "feedback": "This incorrect answer results from a sign error when factoring the quadratic $a^2 + 26a = 0$ or when transposing the root. The factorization gives $a(a+26) = 0$, so the roots are $a = 0$ and $a = -26$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Expanding Perfect Squares",
+            "content": "When expanding the squared sum term like $(4a + 6d)^2$, always write out the expansion step-by-step. A very common slip under exam pressure is to write $(4a+6d)^2 = 16a^2 + 36d^2$, completely forgetting the middle term $48ad$. This error is probably the most frequent way students lose easy marks on this topic."
+        }
+    },
+    {
+        "id": "004102",
+        "board": "AQA",
+        "major_area": "Sequences and series",
+        "topic": "Arithmetic progressions",
+        "subtopic": [
+            "Arithmetic Progressions",
+            "Quadratic Equations in Sequences"
+        ],
+        "img": false,
+        "question": "An arithmetic sequence has first term $a$ and common difference $d$.<br><br>The sum of the first 4 terms of the sequence is equal to the square of the sum of the first 2 terms.<br><br>(a) Show that $4a + 6d = 4a^2 + 4ad + d^2$.<br><br>(b) Given that the second term of the sequence is 3, find the smallest possible value of $a$.",
+        "steps": [
+            "First, state the formulas for both sums. The sum of the first 4 terms is: $$S_4 = \\dfrac{4}{2}\\left(2a + 3d\\right) = 2(2a + 3d) = 4a + 6d$$",
+            "The sum of the first 2 terms is: $$S_2 = \\dfrac{2}{2}\\left(2a + d\\right) = 2a + d$$",
+            "Next, set the sum of the first 4 terms equal to the square of the sum of the first 2 terms to reach the target relation: $$4a + 6d = (2a + d)^2 \\implies 4a + 6d = 4a^2 + 4ad + d^2$$",
+            "For Part (b), state the formula for the second term and rearrange for $d$: $$u_2 = a + d = 3 \\implies d = 3 - a$$",
+            "Notice that the right-hand side of the Part (a) relation can be factored as a perfect square: $$4a + 6d = (2a + d)^2$$",
+            "Substitute $d = 3 - a$ into both sides of the factored equation: $$4a + 6(3-a) = (2a + 3 - a)^2 \\implies 4a + 18 - 6a = (a + 3)^2$$",
+            "Expand and simplify the resulting quadratic equation: $$18 - 2a = a^2 + 6a + 9 \\implies a^2 + 8a - 9 = 0$$",
+            "Factor the quadratic to find the two possible values of $a$: $$(a - 1)(a + 9) = 0 \\implies a = 1 \\quad \\text{or} \\quad a = -9$$",
+            "Comparing the two roots, the smallest possible value of $a$ is $-9$.",
+            "Final Answer: $$\\text{Part (b): } a = -9$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } a = 1$$",
+                "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($1$ and $-9$) and select $-9$."
+            },
+            {
+                "ans": "$$\\text{Part (b): } a = -3$$",
+                "feedback": "This error probably arises from forgetting the middle term $4ad$ when expanding $(2a + d)^2$. Double-check your algebraic expansions carefully."
+            },
+            {
+                "ans": "$$\\text{Part (b): } a = 9$$",
+                "feedback": "This incorrect answer results from a sign error when transposing the roots of $a^2 + 8a - 9 = 0$. Since the quadratic factors to $(a-1)(a+9) = 0$, the roots are $a = 1$ and $a = -9$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Factoring Perfect Squares",
+            "content": "Notice that the quadratic expression $4a^2 + 4ad + d^2$ can be factored directly back into $(2a + d)^2$. Spotting this algebraic perfect square is probably the quickest shortcut to simplifying your steps, as it allows you to substitute the second term value $u_2$ directly into the squared term."
+        }
+    },
+    {
+        "id": "004113",
+        "board": "AQA",
+        "major_area": "Sequences and series",
+        "topic": "Arithmetic progressions",
+        "subtopic": [
+            "Arithmetic Progressions",
+            "Quadratic Equations in Sequences"
+        ],
+        "img": false,
+        "question": "An arithmetic sequence has first term $a$ and common difference $d$.<br><br>The sum of the first 8 terms of the sequence is equal to the square of the sum of the first 2 terms.<br><br>(a) Show that $8a + 28d = 4a^2 + 4ad + d^2$.<br><br>(b) Given that the second term of the sequence is 2, find the smallest possible value of $a$.",
+        "steps": [
+            "First, state the formulas for both sums. The sum of the first 8 terms is: $$S_8 = \\dfrac{8}{2}\\left(2a + 7d\\right) = 4(2a + 7d) = 8a + 28d$$",
+            "The sum of the first 2 terms is: $$S_2 = \\dfrac{2}{2}\\left(2a + d\\right) = 2a + d$$",
+            "Next, set the sum of the first 8 terms equal to the square of the sum of the first 2 terms to reach the target relation: $$8a + 28d = (2a + d)^2 \\implies 8a + 28d = 4a^2 + 4ad + d^2$$",
+            "For Part (b), state the formula for the second term and rearrange for $d$: $$u_2 = a + d = 2 \\implies d = 2 - a$$",
+            "Notice that the right-hand side of the Part (a) relation can be factored as a perfect square: $$8a + 28d = (2a + d)^2$$",
+            "Substitute $d = 2 - a$ into both sides of the factored equation: $$8a + 28(2-a) = (2a + 2 - a)^2 \\implies 8a + 56 - 28a = (a + 2)^2$$",
+            "Expand and simplify the resulting quadratic equation: $$56 - 20a = a^2 + 4a + 4 \\implies a^2 + 24a - 52 = 0$$",
+            "Factor the quadratic to find the two possible values of $a$: $$(a - 2)(a + 26) = 0 \\implies a = 2 \\quad \\text{or} \\quad a = -26$$",
+            "Comparing the two roots, the smallest possible value of $a$ is $-26$.",
+            "Final Answer: $$\\text{Part (b): } a = -26$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } a = 2$$",
+                "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($2$ and $-26$) and select $-26$."
+            },
+            {
+                "ans": "$$\\text{Part (b): } a = -12$$",
+                "feedback": "This incorrect answer probably arises from forgetting the middle term $4ad$ when expanding $(2a + d)^2$ in Part (a), which leads to an incorrect quadratic in Part (b)."
+            },
+            {
+                "ans": "$$\\text{Part (b): } a = 26$$",
+                "feedback": "This incorrect answer results from a sign error when transposing the roots of $a^2 + 24a - 52 = 0$. Since the quadratic factors to $(a-2)(a+26) = 0$, the roots are $a = 2$ and $a = -26$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Quadratic Discriminants in Progressions",
+            "content": "In the final step of finding the first term $a$, we solve the quadratic equation $a^2 + 24a - 52 = 0$. Since the discriminant of this quadratic is $24^2 - 4(1)(-52) = 784 = 28^2$, it is a perfect square, meaning our roots are integers. This is a reassuring sign that your algebraic transpositions have probably been performed correctly."
+        }
+    },
+    {
+        "id": "004114",
+        "board": "AQA",
+        "major_area": "Sequences and series",
+        "topic": "Arithmetic progressions",
+        "subtopic": [
+            "Arithmetic Progressions",
+            "Quadratic Equations in Sequences"
+        ],
+        "img": false,
+        "question": "An arithmetic sequence has first term $a$ and common difference $d$.<br><br>The sum of the first 9 terms of the sequence is equal to the square of the sum of the first 3 terms.<br><br>(a) Show that $a + 4d = a^2 + 2ad + d^2$.<br><br>(b) Given that the third term of the sequence is 8, find the smallest possible value of $a$.",
+        "steps": [
+            "First, state the formulas for both sums. The sum of the first 9 terms is: $$S_9 = \\dfrac{9}{2}\\left(2a + 8d\\right) = 9a + 36d$$",
+            "The sum of the first 3 terms is: $$S_3 = \\dfrac{3}{2}\\left(2a + 2d\\right) = 3a + 3d$$",
+            "Next, set the sum of the first 9 terms equal to the square of the sum of the first 3 terms: $$9a + 36d = (3a + 3d)^2 \\implies 9a + 36d = 9(a + d)^2$$",
+            "Divide both sides of the equation by $9$ to reach the target relation: $$a + 4d = (a + d)^2 \\implies a + 4d = a^2 + 2ad + d^2$$",
+            "For Part (b), state the formula for the third term and rearrange for $d$: $$u_3 = a + 2d = 8 \\implies 2d = 8 - a \\implies d = \\dfrac{8-a}{2}$$",
+            "Substitute $d = \\dfrac{8-a}{2}$ into both sides of the simplified relation: $$a + 4\\left(\\dfrac{8-a}{2}\\right) = \\left(a + \\dfrac{8-a}{2}\\right)^2$$",
+            "Simplify both sides of the equation: $$a + 2(8-a) = \\left(\\dfrac{2a + 8 - a}{2}\\right)^2 \\implies 16 - a = \\dfrac{(a+8)^2}{4}$$",
+            "Clear the fraction by multiplying both sides by $4$: $$64 - 4a = a^2 + 16a + 64 \\implies a^2 + 20a = 0$$",
+            "Factor the quadratic to find the two possible values of $a$: $$a(a + 20) = 0 \\implies a = 0 \\quad \\text{or} \\quad a = -20$$",
+            "Comparing the two roots, the smallest possible value of $a$ is $-20$.",
+            "Final Answer: $$\\text{Part (b): } a = -20$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } a = 0$$",
+                "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($0$ and $-20$) and select $-20$."
+            },
+            {
+                "ans": "$$\\text{Part (b): } a = -5$$",
+                "feedback": "This incorrect answer probably arises from forgetting to square the denominator when substituting $d = \\frac{8-a}{2}$ into $d^2$ in Part (b)."
+            },
+            {
+                "ans": "$$\\text{Part (b): } a = 20$$",
+                "feedback": "This incorrect answer results from a sign error when transposing the roots of $a^2 + 20a = 0$. Since the quadratic factors to $a(a+20) = 0$, the roots are $a = 0$ and $a = -20$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Fractional Exponent Handling",
+            "content": "When substituting $d = \\frac{8-a}{2}$ into the term $d^2$, you must square both the numerator and the denominator, yielding $\\frac{(8-a)^2}{4}$. Forgetting to square the denominator is a major slip that will prevent you from reaching the correct quadratic equation. Always expand brackets deliberately on your page."
+        }
+    },
+    {
+        "id": "004115",
+        "board": "AQA",
+        "major_area": "Sequences and series",
+        "topic": "Arithmetic progressions",
+        "subtopic": [
+            "Arithmetic Progressions",
+            "Quadratic Equations in Sequences"
+        ],
+        "img": false,
+        "question": "An arithmetic sequence has first term $a$ and common difference $d$.<br><br>The sum of the first 16 terms of the sequence is equal to the square of the sum of the first 2 terms.<br><br>(a) Show that $16a + 120d = 4a^2 + 4ad + d^2$.<br><br>(b) Given that the second term of the sequence is 4, find the smallest possible value of $a$.",
+        "steps": [
+            "First, state the formulas for both sums. The sum of the first 16 terms is: $$S_{16} = \\dfrac{16}{2}\\left(2a + 15d\\right) = 8(2a + 15d) = 16a + 120d$$",
+            "The sum of the first 2 terms is: $$S_2 = \\dfrac{2}{2}\\left(2a + d\\right) = 2a + d$$",
+            "Next, set the sum of the first 16 terms equal to the square of the sum of the first 2 terms to reach the target relation: $$16a + 120d = (2a + d)^2 \\implies 16a + 120d = 4a^2 + 4ad + d^2$$",
+            "For Part (b), state the formula for the second term and rearrange for $d$: $$u_2 = a + d = 4 \\implies d = 4 - a$$",
+            "Notice that the right-hand side of the Part (a) relation can be factored as a perfect square: $$16a + 120d = (2a + d)^2$$",
+            "Substitute $d = 4 - a$ into both sides of the factored equation: $$16a + 120(4-a) = (2a + 4 - a)^2 \\implies 16a + 480 - 120a = (a + 4)^2$$",
+            "Expand and simplify the resulting quadratic equation: $$480 - 104a = a^2 + 8a + 16 \\implies a^2 + 112a - 464 = 0$$",
+            "Factor the quadratic to find the two possible values of $a$: $$(a - 4)(a + 116) = 0 \\implies a = 4 \\quad \\text{or} \\quad a = -116$$",
+            "Comparing the two roots, the smallest possible value of $a$ is $-116$.",
+            "Final Answer: $$\\text{Part (b): } a = -116$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } a = 4$$",
+                "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($4$ and $-116$) and select $-116$."
+            },
+            {
+                "ans": "$$\\text{Part (b): } a = -16$$",
+                "feedback": "This incorrect answer probably arises from forgetting the middle term $4ad$ when expanding $(2a+d)^2$ in Part (a), which leads to an incorrect quadratic in Part (b)."
+            },
+            {
+                "ans": "$$\\text{Part (b): } a = 116$$",
+                "feedback": "This incorrect answer results from a sign error when transposing the roots of $a^2 + 112a - 464 = 0$. Since the quadratic factors to $(a-4)(a+116) = 0$, the roots are $a = 4$ and $a = -116$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Double-Checking Quadratic Factors",
+            "content": "To solve high-coefficient quadratics like $a^2 + 112a - 464 = 0$, we look for two numbers that multiply to $-464$ and add to $112$. If factoring is not immediately obvious, utilizing the quadratic formula is probably the most reliable and stress-free strategy to secure your marks."
+        }
     }
+
+
 ];
