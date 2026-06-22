@@ -169,24 +169,27 @@ window.ALEVEL_QUESTIONS = [
             "content": "When finding the gradient of a perpendicular bisector, remember that $m_1 \\times m_2 = -1$. If the gradient of the chord is negative, the perpendicular bisector's gradient must be strictly positive. Forgetting this sign change is probably the most common way students lose marks on this topic."
         }
     },
-    {
+     {
         "id": "004105",
         "board": "AQA",
-        "major_area": "Calculus",
-        "topic": "Differentiation",
+        "major_area": "Coordinate geometry",
+        "topic": "Circles",
         "subtopic": [
-            "Parametric Differentiation",
-            "Parametric Equations"
+            "Equations of Circles",
+            "Tangents and Chords"
         ],
         "img": false,
-        "question": "A circle has center $O(0, 0)$ and radius $R = 6$. A tangent is drawn to the circle from an external point $P(10, 0)$, touching the circle at $T(3.6, 4.8)$.<br><br>(a) Show that the tangent line $PT$ is perpendicular to the radius $OT$.<br><br>(b) (i) Find the cosine of angle $POT$ using the vectors $OP$ and $OT$, and hence use the Cosine Rule on triangle $OPT$ to show that $PT = 8$.<br><br>(b) (ii) Determine whether the point $D(5, -4)$ lies inside the circle, on the circle, or outside the circle. Fully justify your answer.",
+        "question": "A circle has center $O(0, 0)$ and radius $R = 6$. A tangent is drawn to the circle from an external point $P(10, 0)$, touching the circle at $T(3.6, 4.8)$.<br><br>(a) Show that the tangent line $PT$ is perpendicular to the radius $OT$.<br><br>(b) (i) Find the cosine of angle $POT$ using the side lengths of triangle $OPT$, and hence use the Cosine Rule on triangle $OPT$ to show that $PT = 8$.<br><br>(b) (ii) Determine whether the point $D(5, -4)$ lies inside the circle, on the circle, or outside the circle. Fully justify your answer.",
         "steps": [
-            "For Part (a), find the vectors $OT$ and $PT$: $$OT = \\left(\\begin{matrix} 3.6 \\\\ 4.8 \\end{matrix}\\right)$$ and $$PT = \\left(\\begin{array}{c} 3.6-10 \\\\ 4.8 \\end{array}\\right) = \\left(\\dfrac{-32}{5}, \\dfrac{24}{5}\\right)$$",
-            "Calculate their dot product: $$OT \\cdot PT = 3.6 \\times (-6.4) + 4.8 \\times 4.8 = -23.04 + 23.04 = 0$$. Since the dot product is $0$, the radius and tangent are perpendicular.",
-            "For Part (b)(i), find $\\cos(POT)$: $$\\cos(POT) = \\dfrac{OT \\cdot OP}{|OT||OP|} = \\dfrac{3.6 \\times 10}{60} = 0.6$$. Now apply the Cosine Rule on triangle $OPT$: $$PT^2 = OP^2 + OT^2 - 2(OP)(OT)\\cos(POT) = 100 + 36 - 2(10)(6)(0.6) = 136 - 72 = 64 \\implies PT = 8$$",
+            "For Part (a), calculate the gradients of the radius $OT$ and the tangent line $PT$: $$m_{OT} = \\dfrac{4.8-0}{3.6-0} = \\dfrac{4}{3}$$ and $$m_{PT} = \\dfrac{4.8-0}{3.6-10} = \\dfrac{4.8}{-6.4} = -\\dfrac{3}{4}$$",
+            "Since the product of their gradients is $$m_{OT} \\times m_{PT} = \\dfrac{4}{3} \\times \\left(-\\dfrac{3}{4}\\right) = -1$$, the radius $OT$ and the tangent $PT$ are perpendicular.",
+            "For Part (b)(i), calculate the side lengths of triangle $OPT$: $$OT = 6,\\ OP = 10$$, and $$PT = \\sqrt{(3.6 - 10)^2 + 4.8^2} = \\sqrt{(-6.4)^2 + 23.04} = \\sqrt{40.96 + 23.04} = 8$$",
+            "Apply the Cosine Rule to find $\\cos(POT)$: $$PT^2 = OP^2 + OT^2 - 2(OP)(OT)\\cos(POT) \\implies 8^2 = 10^2 + 6^2 - 2(10)(6)\\cos(POT)$$",
+            "Simplify to find the cosine value: $$64 = 100 + 36 - 120\\cos(POT) \\implies 64 = 136 - 120\\cos(POT) \\implies \\cos(POT) = 0.6$$",
+            "Using the Cosine Rule with $\\cos(POT) = 0.6$ verifies the length of the tangent: $$PT = \\sqrt{10^2 + 6^2 - 2(10)(6)(0.6)} = \\sqrt{64} = 8$$, as required.",
             "For Part (b)(ii), calculate the distance squared from $D(5, -4)$ to the center $O(0, 0)$: $$OD^2 = 5^2 + (-4)^2 = 25 + 16 = 41$$",
             "Since the distance squared $$41 > R^2 = 36$$, the distance from the point to the center of the circle is greater than the radius. Thus, the point $D$ lies outside the circle.",
-            "Final Answer: $$\\text{Part (b)(i): } PT^2 = 100 + 36 - 72 = 64 \\implies PT = 8,\\quad \\text{Part (b)(ii): Outside the circle}$$"
+            "Final Answer: $$\\text{Part (b)(i): } PT = 8 \\text{ is verified using the Cosine Rule},\\quad \\text{Part (b)(ii): Outside the circle}$$"
         ],
         "pi_options": [
             {
@@ -199,7 +202,7 @@ window.ALEVEL_QUESTIONS = [
             },
             {
                 "ans": "$$\\text{Part (b)(i): } \\cos(POT) = 0.8,\\quad \\text{Part (b)(ii): Outside the circle}$$",
-                "feedback": "In Part (b)(i), the cosine of angle $POT$ is $0.6$, which probably arises from $36 \\div 60 = 0.6$. A value of $0.8$ is incorrect and will affect the subsequent Cosine Rule calculation."
+                "feedback": "In Part (b)(i), the cosine of angle $POT$ is $0.6$, which arises from $72 \\div 120 = 0.6$. A value of $0.8$ is incorrect and will affect the subsequent Cosine Rule calculation."
             }
         ],
         "bradley_insight": {
@@ -207,6 +210,202 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Integrating Coordinate and Trig Methods",
             "content": "Integrating coordinate geometry with trigonometry (like using the Cosine Rule to verify tangent lengths) is probably the most common way AQA stretches students. Keep your coordinate calculations clear on paper before substituting them into geometric formulas."
         }
+    },
+    {
+        "id": "004106",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Numerical methods",
+        "subtopic": [
+            "Newton-Raphson Method",
+            "Radian Measure"
+        ],
+        "img": "images/p1/004106.png",
+        "question": "The diagram shows a sector of a circle $OAB$. $C$ is the midpoint of $OB$. Angle $AOB$ is $\\theta$ radians.<br><br>(a) Given that the area of the triangle $OAC$ is equal to one-third of the area of the sector $OAB$, show that $\\theta = 1.5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = \\pi$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.49579$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
+        "steps": [
+            "For Part (a), express the areas: $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$ and $$\\text{Area of triangle } OAC = \\dfrac{1}{2}(r)\\left(\\dfrac{1}{2}r\\right)\\sin\\theta = \\dfrac{r^2}{4}\\sin\\theta$$",
+            "Set the triangle area to $\\dfrac{1}{3}$ of the sector area: $$\\dfrac{1}{4}r^2\\sin\\theta = \\dfrac{1}{12}r^2\\theta \\implies \\theta = 2\\sin\\theta$$",
+            "For Part (b), define $f(\\theta) = \\theta - 2\\sin\\theta$ and its derivative $f'(\\theta) = 1 - 2\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{\\theta_n - 2\\sin\\theta_n}{1 - 2\\cos\\theta_n}$$",
+            "With $\\theta_1 = \\pi$, calculate the iterations: $$\\theta_2 = \\pi - \\dfrac{\\pi - 0}{1 - (-2)} = \\pi - \\dfrac{\\pi}{3} = \\dfrac{2\\pi}{3} \\approx 2.09440$$ and $$\\theta_3 = 2.09440 - \\dfrac{2.09440 - 2\\sin(2.09440)}{1 - 2\\cos(2.09440)} \\approx 1.57176$$",
+            "For Part (c), calculate the percentage error using $\\theta \\approx 1.49579$: $$\\text{Percentage Error} = \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\approx 5.08\\%$$",
+            "Final Answer: $$\\text{Part (b): } 1.57176,\\quad \\text{Part (c): } 5.08\\%$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } 1.57176,\\quad \\text{Part (c): } 5.06\\%$$",
+                "feedback": "This error probably results from a minor rounding slip during your multi-digit division steps. Ensure you carry at least six decimal places in your intermediate steps before rounding to five."
+            },
+            {
+                "ans": "$$\\text{Part (b): } 1.57156,\\quad \\text{Part (c): } 5.06\\%$$",
+                "feedback": "You probably rounded $\\theta_2$ prematurely, or made a subtraction error in your second iteration. Double-check your values for $f(\\theta_2)$ and $f'(\\theta_2)$ on your page."
+            },
+            {
+                "ans": "$$\\text{Part (b): } 1.88496,\\quad \\text{Part (c): } 26.02\\%$$",
+                "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Newton-Raphson Radians Trap",
+            "content": "When evaluating trigonometric terms like $\\sin\\theta$ or $\\cos\\theta$ inside the Newton-Raphson iterations, your calculator must be set to Radians mode. Working in Degrees is probably the single most common way students score zero on these questions."
+        }
+    },
+    {
+        "id": "004097",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Numerical methods",
+        "subtopic": [
+            "Newton-Raphson Method",
+            "Radian Measure"
+        ],
+        "img": "images/p1/004107.png",
+        "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A chord $AB$ divides the sector into a segment and a triangle $OAB$.<br><br>(a) Given that the area of the segment is equal to one-third of the area of the triangle $OAB$, show that $4\\sin\\theta = 3\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 1.5$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.27570$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
+        "steps": [
+            "For Part (a), write the areas: $$\\text{Area of segment} = \\dfrac{1}{2}r^2\\theta - \\dfrac{1}{2}r^2\\sin\\theta$$ and $$\\text{Area of triangle } OAB = \\dfrac{1}{2}r^2\\sin\\theta$$",
+            "Set the segment area to $\\dfrac{1}{3}$ of the triangle area: $$\\dfrac{1}{2}r^2(\\theta - \\sin\\theta) = \\dfrac{1}{6}r^2\\sin\\theta \\implies \\theta - \\sin\\theta = \\dfrac{1}{3}\\sin\\theta \\implies 4\\sin\\theta = 3\\theta$$",
+            "For Part (b), define $f(\\theta) = 3\\theta - 4\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 4\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 4\\sin\\theta_n}{3 - 4\\cos\\theta_n}$$",
+            "With $\\theta_1 = 1.5$, calculate the iterations: $$\\theta_2 = 1.5 - \\dfrac{3(1.5) - 4\\sin(1.5)}{3 - 4\\cos(1.5)} \\approx 1.31229$$ and $$\\theta_3 = 1.31229 - \\dfrac{3(1.31229) - 4\\sin(1.31229)}{3 - 4\\cos(1.31229)} \\approx 1.27741$$",
+            "For Part (c), calculate the percentage error using $\\theta \\approx 1.27570$: $$\\text{Percentage Error} = \\dfrac{|1.27741 - 1.27570|}{1.27570} \\times 100 \\approx 0.13\\%$$",
+            "Final Answer: $$\\text{Part (b): } 1.27741,\\quad \\text{Part (c): } 0.13\\%$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } 1.27510,\\quad \\text{Part (c): } 0.05\\%$$",
+                "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(1.31229)$ and $f'(1.31229)$ on your page."
+            },
+            {
+                "ans": "$$\\text{Part (b): } 1.27741,\\quad \\text{Part (c): } 0.05\\%$$",
+                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.13\\%$, not $0.05\\%$."
+            },
+            {
+                "ans": "$$\\text{Part (b): } 1.31229,\\quad \\text{Part (c): } 2.87\\%$$",
+                "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Tracking Multiple Terms",
+            "content": "When dealing with segment and triangle area ratios, always write out the full algebraic forms on your page before cancelling terms. It is probably easiest to cancel the $r^2$ coefficients first so you are left with a simple relationship in $\\theta$ and $\\sin\\theta$."
+        }
+    },
+    {
+        "id": "004108",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Numerical methods",
+        "subtopic": [
+            "Newton-Raphson Method",
+            "Radian Measure"
+        ],
+        "img": "images/p1/004108.png",
+        "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A line is drawn from $A$ perpendicular to $OB$, meeting $OB$ at $C$ to form a right-angled triangle $OAC$.<br><br>(a) Given that the area of the right-angled triangle $OAC$ is equal to three-tenths of the area of the sector $OAB$, show that $5\\sin(2\\theta) = 3\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 1.0$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.17243$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
+        "steps": [
+            "For Part (a), express the areas: $$AC = r\\sin\\theta,\\ OC = r\\cos\\theta \\implies \\text{Area of right-angled triangle } OAC = \\dfrac{1}{2}r^2\\sin\\theta\\cos\\theta = \\dfrac{1}{4}r^2\\sin(2\\theta)$$ and $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
+            "Set the triangle area to $\\dfrac{3}{10}$ of the sector area: $$\\dfrac{1}{4}r^2\\sin(2\\theta) = \\dfrac{3}{20}r^2\\theta \\implies 5\\sin(2\\theta) = 3\\theta$$",
+            "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin(2\\theta)$ and its derivative $f'(\\theta) = 3 - 10\\cos(2\\theta)$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin(2\\theta_n)}{3 - 10\\cos(2\\theta_n)}$$",
+            "With $\\theta_1 = 1.0$, calculate the iterations: $$\\theta_2 = 1.0 - \\dfrac{3(1.0) - 5\\sin(2)}{3 - 10\\cos(2)} \\approx 1.21594$$ and $$\\theta_3 = 1.21594 - \\dfrac{3(1.21594) - 5\\sin(2.43188)}{3 - 10\\cos(2.43188)} \\approx 1.17911$$",
+            "For Part (c), calculate the percentage error using $\\theta \\approx 1.17243$: $$\\text{Percentage Error} = \\dfrac{|1.17911 - 1.17243|}{1.17243} \\times 100 \\approx 0.57\\%$$",
+            "Final Answer: $$\\text{Part (b): } 1.17911,\\quad \\text{Part (c): } 0.57\\%$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } 1.17880,\\quad \\text{Part (c): } 0.54\\%$$",
+                "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(1.21594)$ and $f'(1.21594)$ on your page."
+            },
+            {
+                "ans": "$$\\text{Part (b): } 1.17911,\\quad \\text{Part (c): } 0.54\\%$$",
+                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.57\\%$, not $0.54\\%$."
+            },
+            {
+                "ans": "$$\\text{Part (b): } 1.21594,\\quad \\text{Part (c): } 3.71\\%$$",
+                "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Trigonometric Identity Shortcuts",
+            "content": "Recall the double-angle identity $\\sin(2\\theta) = 2\\sin\\theta\\cos\\theta$. Rewriting the right-angled triangle area using this identity is probably the most elegant way to simplify the expression and match the target equation directly."
+        }
+    },
+    {
+        "id": "004099",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Numerical methods",
+        "subtopic": [
+            "Newton-Raphson Method",
+            "Radian Measure"
+        ],
+        "img": "images/p1/004109.png",
+        "question": "The diagram shows two concentric sectors of circles $OAB$ and $OCD$ sharing the same angle $\\theta$ radians. The larger sector $OAB$ has radius $r$, and the smaller sector $OCD$ has radius $R = 0.6r$.<br><br>(a) Given that the area of the smaller sector $OCD$ is equal to $\\frac{9}{25}$ of the area of the triangle $OAB$ formed inside the larger sector, show that $2\\theta = 5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 2.5$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 2.12463$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
+        "steps": [
+            "For Part (a), express the areas: $$\\text{Area of smaller sector } OCD = \\dfrac{1}{2}R^2\\theta = \\dfrac{1}{2}(0.6r)^2\\theta = 0.18r^2\\theta$$ and $$\\text{Area of triangle } OAB = \\dfrac{1}{2}r^2\\sin\\theta$$",
+            "Set the smaller sector area to $\\dfrac{9}{25}$ of the triangle area: $$0.18r^2\\theta = \\dfrac{9}{25}\\left(\\dfrac{1}{2}r^2\\sin\\theta\\right) \\implies 0.18\\theta = 0.18\\sin\\theta$$? No, $$0.18\\theta = 0.45\\sin\\theta \\implies \\theta = 2.5\\sin\\theta \\implies 2\\theta = 5\\sin\\theta$$",
+            "For Part (b), define $f(\\theta) = 2\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 2 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{2\\theta_n - 5\\sin\\theta_n}{2 - 5\\cos\\theta_n}$$",
+            "With $\\theta_1 = 2.5$, calculate the iterations: $$\\theta_2 = 2.5 - \\dfrac{2(2.5) - 5\\sin(2.5)}{2 - 5\\cos(2.5)} \\approx 2.16571$$ and $$\\theta_3 = 2.16571 - \\dfrac{2(2.16571) - 5\\sin(2.16571)}{2 - 5\\cos(2.16571)} \\approx 2.12654$$",
+            "For Part (c), calculate the percentage error using $\\theta \\approx 2.12463$: $$\\text{Percentage Error} = \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100 \\approx 0.09\\%$$",
+            "Final Answer: $$\\text{Part (b): } 2.12654,\\quad \\text{Part (c): } 0.09\\%$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } 2.12680,\\quad \\text{Part (c): } 0.10\\%$$",
+                "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(2.16571)$ and $f'(2.16571)$ on your page."
+            },
+            {
+                "ans": "$$\\text{Part (b): } 2.12654,\\quad \\text{Part (c): } 0.10\\%$$",
+                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.09\\%$, not $0.10\\%$."
+            },
+            {
+                "ans": "$$\\text{Part (b): } 2.16571,\\quad \\text{Part (c): } 1.93\\%$$",
+                "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Concentric Radius Pitfalls",
+            "content": "When dealing with concentric sectors, remember that area scales with the square of the radius. If $R = 0.6r$, the area scales by $0.36r^2$. Forgetting to square the scale factor is probably the most common way students lose marks on this topic."
+        }
+    },
+    {
+        "id": "004110",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Numerical methods",
+        "subtopic": [
+            "Newton-Raphson Method",
+            "Radian Measure"
+        ],
+        "img": "images/p1/004106.png",
+        "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A point $C$ lies on $OB$ such that $OC = \\frac{1}{3}r$.<br><br>(a) Given that the area of the triangle $OAC$ is equal to one-fifth of the area of the sector $OAB$, show that $3\\theta = 5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 2.0$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.65215$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
+        "steps": [
+            "For Part (a), express the areas: $$\\text{Area of triangle } OAC = \\dfrac{1}{2}(r)\\left(\\dfrac{1}{3}r\right)\\sin\\theta = \\dfrac{r^2}{6}\\sin\\theta$$ and $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
+            "Set the triangle area to $\\dfrac{1}{5}$ of the sector area: $$\\dfrac{1}{6}r^2\\sin\\theta = \\dfrac{1}{10}r^2\\theta \\implies 5\\sin\\theta = 3\\theta \\implies 3\\theta = 5\\sin\\theta$$",
+            "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin\\theta_n}{3 - 5\\cos\\theta_n}$$",
+            "With $\\theta_1 = 2.0$, calculate the iterations: $$\\theta_2 = 2.0 - \\dfrac{3(2.0) - 5\\sin(2.0)}{3 - 5\\cos(2.0)} \\approx 1.71392$$ and $$\\theta_3 = 1.71392 - \\dfrac{3(1.71392) - 5\\sin(1.71392)}{3 - 5\\cos(1.71392)} \\approx 1.66164$$",
+            "For Part (c), calculate the percentage error using $\\theta \\approx 1.65215$: $$\\text{Percentage Error} = \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100 \\approx 0.57\\%$$",
+            "Final Answer: $$\\text{Part (b): } 1.66164,\\quad \\text{Part (c): } 0.57\\%$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } 1.66120,\\quad \\text{Part (c): } 0.55\\%$$",
+                "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(1.71392)$ and $f'(1.71392)$ on your page."
+            },
+            {
+                "ans": "$$\\text{Part (b): } 1.66164,\\quad \\text{Part (c): } 0.55\\%$$",
+                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.57\\%$, not $0.55\\%$."
+            },
+            {
+                "ans": "$$\\text{Part (b): } 1.71392,\\quad \\text{Part (c): } 3.74\\%$$",
+                "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Intermediate Rounding Caution",
+            "content": "When evaluating multi-step numerical methods like Newton-Raphson, rounding your intermediate values (like $\\theta_2$) too early is probably the easiest way to lose precision in your final answer. Always keep the full unrounded value stored in your calculator's memory."
+        }
     }
+
 
 ];
