@@ -641,7 +641,220 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Double-Checking Quadratic Factors",
             "content": "To solve high-coefficient quadratics like $a^2 + 112a - 464 = 0$, we look for two numbers that multiply to $-464$ and add to $112$. If factoring is not immediately obvious, utilizing the quadratic formula is probably the most reliable and stress-free strategy to secure your marks."
         }
+    },
+    {
+        "id": "004116",
+        "board": "AQA",
+        "major_area": "Exponentials and logarithms",
+        "topic": "Exponential modelling",
+        "subtopic": [
+            "Exponential Growth and Decay",
+            "Logarithmic Rearrangement"
+        ],
+        "img": false,
+        "question": "A patient takes a dose of a prescribed drug. A doctor models the mass of the drug in the patient's body using<br>$$m = m_0 \\text{e}^{-kt}$$<br>where $m_0$ milligrams is the initial mass of the drug in the body and $m$ milligrams is the mass of the drug in the body after $t$ hours.<br><br>On average, it takes 4.5 hours for the mass of the drug in the body to halve. One standard dose contains 150 mg of the drug.<br><br>(a) The patient takes two standard doses at 9 am. Use the model to estimate the mass of the drug remaining in the patient's body at 2 pm.<br><br>(b) To prevent toxicity, the patient must ensure the mass of the drug in her body remains below 350 mg. Use the model to find the earliest time after 9 am that she can take another single standard dose of 150 mg. Give your answer to the nearest minute.<br><br>(c) State a biological reason why the mass of the drug remaining in the patient's body predicted by the model may not be completely accurate.",
+        "steps": [
+            "First, calculate the decay constant $k$ by setting $m = \\dfrac{1}{2}m_0$ when $t = 4.5$: $$\\dfrac{1}{2}m_0 = m_0\\text{e}^{-4.5k} \\implies \\text{e}^{-4.5k} = 0.5 \\implies -4.5k = \\ln(0.5) \\implies k = \\dfrac{\\ln(2)}{4.5} \\approx 0.15403$$",
+            "For Part (a), calculate the initial mass $m_0$ for two standard doses of 150 mg: $$m_0 = 2 \\times 150 = 300\\text{ mg}$$",
+            "Calculate the time elapsed between 9 am and 2 pm, which is $t = 5$ hours. Substitute $m_0 = 300$ and $t = 5$ into the model: $$m = 300\\text{e}^{-0.15403 \\times 5} = 300\\text{e}^{-0.77015} \\approx 138.93\\text{ mg} \\approx 139\\text{ mg}$$",
+            "For Part (b), to stay below 350 mg immediately after taking a new 150 mg dose, the mass remaining in the body just before the dose must satisfy: $$\\text{Mass remaining} + 150 \\le 350 \\implies \\text{Mass remaining} \\le 200\\text{ mg}$$",
+            "Set $m = 200$ and solve for $t$: $$200 = 300\\text{e}^{-kt} \\implies \\text{e}^{-kt} = \\dfrac{200}{300} = \\dfrac{2}{3}$$",
+            "Take the natural logarithm of both sides to isolate the exponent: $$-kt = \\ln\\left(\\dfrac{2}{3}\right) \\implies kt = \\ln(1.5) \\approx 0.40547$$",
+            "Divide by the decay constant $k = 0.15403$ to find the time $t$ in hours: $$t = \\dfrac{0.40547}{0.15403} \\approx 2.63233\\text{ hours}$$",
+            "Convert the decimal hours to minutes: $$2\\text{ hours and } (0.63233 \\times 60)\\text{ minutes} \\approx 2\\text{ hours and } 38\\text{ minutes}$$",
+            "Add this time elapsed to 9 am: $$9\\text{ am} + 2\\text{ hours } 38\\text{ minutes} = 11\\text{:}38\\text{ am}$$",
+            "For Part (c), identify a biological limitation: the elimination rate of a drug is not perfectly constant. It varies based on individual liver and kidney function, metabolic speed, hydration levels, and other physiological factors.",
+            "Final Answer: $$\\text{Part (a): } 139\\text{ mg},\\quad \\text{Part (b): } 11\\text{:}38\\text{ am}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (a): } 139\\text{ mg},\\quad \\text{Part (b): } 11\\text{:}38\\text{ am}$$",
+                "feedback": "This is the correct answer. You have successfully resolved all parts of the drug elimination model."
+            },
+            {
+                "ans": "$$\\text{Part (a): } 139\\text{ mg},\\quad \\text{Part (b): } 11\\text{:}25\\text{ am}$$",
+                "feedback": "In Part (b), you probably made an error when setting up the limit. Remember that she can only take a 150 mg dose once the remaining mass drops to $350 - 150 = 200\\text{ mg}$, not $150\\text{ mg}$."
+            },
+            {
+                "ans": "$$\\text{Part (a): } 139\\text{ mg},\\quad \\text{Part (b): } 12\\text{:}08\\text{ pm}$$",
+                "feedback": "In Part (b), you probably made a sign error during your logarithmic rearrangement, calculating $kt = \\ln(2.5)$ instead of $kt = \\ln(1.5)$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Dosage Boundary Thresholds",
+            "content": "For dose safety questions, pay close attention to the wording. The patient must decay down to $350 - 150 = 200\\text{ mg}$ before taking the next dose. Setting the decay target directly to $150\\text{ mg}$ is probably the most common threshold slip on these papers."
+        }
+    },
+    {
+        "id": "004117",
+        "board": "AQA",
+        "major_area": "Exponentials and logarithms",
+        "topic": "Exponential modelling",
+        "subtopic": [
+            "Exponential Growth and Decay",
+            "Logarithmic Rearrangement"
+        ],
+        "img": false,
+        "question": "A hot cup of tea is left to cool in a room held at a constant temperature of $20^\\circ\\text{C}$. The temperature of the tea, $\\theta$ (in $^\\circ\\text{C}$), after $t$ minutes is modelled by<br>$$\\theta = 20 + 70\\text{e}^{-kt}$$<br>On average, the temperature difference between the tea and the room halves every 12 minutes.<br><br>(a) The tea is poured at 1 pm. Use the model to estimate the temperature of the tea at 1:30 pm.<br><br>(b) The tea is considered comfortable to drink once its temperature drops below $55^\\circ\\text{C}$. Find the earliest time after 1 pm that the tea is comfortable to drink. Give your answer to the nearest minute.<br><br>(c) State a physical reason why the temperature of the tea predicted by the model may not be completely accurate.",
+        "steps": [
+            "First, identify the term representing the temperature difference: $$\\theta - 20 = 70\\text{e}^{-kt}$$",
+            "Calculate the decay constant $k$ using the fact that this difference halves every 12 minutes: $$\\dfrac{1}{2} \\times 70 = 70\\text{e}^{-12k} \\implies \\text{e}^{-12k} = 0.5 \\implies -12k = \\ln(0.5) \\implies k = \\dfrac{\\ln(2)}{12} \\approx 0.05776$$",
+            "For Part (a), calculate the time elapsed between 1 pm and 1:30 pm, which is $t = 30$ minutes. Substitute $t = 30$ into the model: $$\\theta = 20 + 70\\text{e}^{-0.05776 \\times 30} = 20 + 70\\text{e}^{-1.7328} \\approx 20 + 12.37 \\approx 32.4^\\circ\\text{C}$$",
+            "For Part (b), set $\\theta = 55$ and solve for $t$: $$55 = 20 + 70\\text{e}^{-kt} \\implies 70\\text{e}^{-kt} = 35 \\implies \\text{e}^{-kt} = 0.5$$",
+            "Take the natural logarithm of both sides to isolate the exponent: $$-kt = \\ln(0.5) \\implies kt = \\ln(2) \\implies t = \\dfrac{\\ln(2)}{k}$$",
+            "Substitute $k = \\dfrac{\\ln(2)}{12}$ into the equation: $$t = \\dfrac{\\ln(2)}{\\ln(2)/12} = 12\\text{ minutes}$$",
+            "Add this elapsed time to 1 pm: $$1\\text{ pm} + 12\\text{ minutes} = 1\\text{:}12\\text{ pm}$$",
+            "For Part (c), identify a physical limitation: the ambient room temperature may not remain perfectly constant. Stirring the tea, draft currents, or the thermal properties of the mug can also accelerate or slow down the cooling rate.",
+            "Final Answer: $$\\text{Part (a): } 32.4^\\circ\\text{C},\\quad \\text{Part (b): } 1\\text{:}12\\text{ pm}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (a): } 32.4^\\circ\\text{C},\\quad \\text{Part (b): } 1\\text{:}24\\text{ pm}$$",
+                "feedback": "In Part (b), you probably made a calculation error. Since the initial temperature difference of $70^\\circ\\text{C}$ needs to drop to $35^\\circ\\text{C}$ (which is exactly half), it must take exactly one half-life cycle of $12$ minutes, not $24$."
+            },
+            {
+                "ans": "$$\\text{Part (a): } 35.0^\\circ\\text{C},\\quad \\text{Part (b): } 1\\text{:}12\\text{ pm}$$",
+                "feedback": "In Part (a), you probably forgot to add the ambient room temperature of $20^\\circ\\text{C}$ back to your cooling difference value, or forgot that the exponent was a negative term."
+            },
+            {
+                "ans": "$$\\text{Part (a): } 32.4^\\circ\\text{C},\\quad \\text{Part (b): } 1\\text{:}08\\text{ pm}$$",
+                "feedback": "In Part (b), check your transposition of the cooling threshold. The comfortable drinking threshold is $55^\\circ\\text{C}$, meaning the difference must halve once, taking exactly 12 minutes."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Newton's Law of Cooling Constants",
+            "content": "For cooling models written as $\\theta = T_{\\text{ambient}} + C\\text{e}^{-kt}$, always isolate the exponential term first by subtracting $T_{\\text{ambient}}$. If the threshold is exactly half of the initial difference, the time required will always be exactly one half-life period, which is probably the fastest mental verification shortcut on the exam."
+        }
+    },
+    {
+        "id": "004118",
+        "board": "AQA",
+        "major_area": "Exponentials and logarithms",
+        "topic": "Exponential modelling",
+        "subtopic": [
+            "Exponential Growth and Decay",
+            "Logarithmic Rearrangement"
+        ],
+        "img": false,
+        "question": "A biologist is researching the growth of a bacterial culture. She models the population of the bacteria, $P$, using<br>$$P = P_0\\text{e}^{kt}$$<br>where $P_0$ is the initial population of the culture and $t$ is the time in hours. On average, the population of the bacteria doubles every 4.2 hours.<br><br>(a) The biologist starts a culture with an initial population of 5000 bacteria at 10 am. Use the model to estimate the population of the culture at 4 pm. Give your answer to 3 significant figures.<br><br>(b) The culture must be transferred to a larger container once the population exceeds 30,000 bacteria. Find the earliest time after 10 am that the transfer must take place. Give your answer to the nearest minute.<br><br>(c) State a biological reason why this exponential growth model is unlikely to remain accurate over a long period of time.",
+        "steps": [
+            "First, calculate the growth constant $k$ using the doubling time of 4.2 hours: $$2P_0 = P_0\\text{e}^{4.2k} \\implies \\text{e}^{4.2k} = 2 \\implies 4.2k = \\ln(2) \\implies k = \\dfrac{\\ln(2)}{4.2} \\approx 0.16504$$",
+            "For Part (a), calculate the time elapsed between 10 am and 4 pm, which is $t = 6$ hours. Substitute $P_0 = 5000$ and $t = 6$ into the model: $$P = 5000\\text{e}^{0.16504 \\times 6} = 5000\\text{e}^{0.99024} \\approx 13459 \\approx 13500\\text{ bacteria}$$",
+            "For Part (b), set $P = 30000$ and solve for $t$: $$30000 = 5000\\text{e}^{kt} \\implies \\text{e}^{kt} = \\dfrac{30000}{5000} = 6$$",
+            "Take the natural logarithm of both sides to isolate the exponent: $$kt = \\ln(6) \\approx 1.79176$$",
+            "Divide by the growth constant $k = 0.16504$ to find the time $t$ in hours: $$t = \\dfrac{1.79176}{0.16504} \\approx 10.8568\\text{ hours}$$",
+            "Convert the decimal hours to minutes: $$10\\text{ hours and } (0.8568 \\times 60)\\text{ minutes} \\approx 10\\text{ hours and } 51\\text{ minutes}$$",
+            "Add this elapsed time to 10 am: $$10\\text{ am} + 10\\text{ hours } 51\\text{ minutes} = 8\\text{:}51\\text{ pm}$$",
+            "For Part (c), identify a biological limitation: in the real world, nutrient resources become depleted, space becomes limited, and toxic metabolic waste products accumulate, which will eventually slow down the reproduction rate.",
+            "Final Answer: $$\\text{Part (a): } 13500\\text{ bacteria},\\quad \\text{Part (b): } 8\\text{:}51\\text{ pm}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (a): } 13500\\text{ bacteria},\\quad \\text{Part (b): } 8\\text{:}52\\text{ pm}$$",
+                "feedback": "In Part (b), you probably used a prematurely rounded value of the growth constant $k \\approx 0.165$. Carrying the full calculator accuracy of $k \\approx 0.16504$ yields $10$ hours and $51$ minutes, leading to $8:51\\text{ pm}$."
+            },
+            {
+                "ans": "$$\\text{Part (a): } 10000\\text{ bacteria},\\quad \\text{Part (b): } 8\\text{:}51\\text{ pm}$$",
+                "feedback": "In Part (a), you probably assumed that the population only doubles once. Over $6$ hours, which is longer than the $4.2$ hour doubling time, the population must grow by a factor of $2^{6/4.2} \\approx 2.69$."
+            },
+            {
+                "ans": "$$\\text{Part (a): } 13500\\text{ bacteria},\\quad \\text{Part (b): } 9\\text{:}12\\text{ pm}$$",
+                "feedback": "In Part (b), check your division steps. Solving $\\text{e}^{kt} = 6$ requires dividing $\\ln(6)$ by $k$, not $\\ln(5)$ or other incorrect constants."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Limits of Exponential Growth",
+            "content": "Exponential growth models are highly accurate in early phases but fail over long periods. Mentioning nutrient depletion, space limitations, or waste buildup are probably the most accepted ecological explanations to secure these reasoning marks."
+        }
+    },
+    {
+        "id": "004119",
+        "board": "AQA",
+        "major_area": "Exponentials and logarithms",
+        "topic": "Exponential modelling",
+        "subtopic": [
+            "Exponential Growth and Decay",
+            "Logarithmic Rearrangement"
+        ],
+        "img": false,
+        "question": "A physics laboratory is storing a sample of a radioactive isotope. The activity of the sample, $A$ (in Becquerels, Bq), is modelled by<br>$$A = A_0\\text{e}^{-\\lambda t}$$<br>where $A_0$ is the initial activity of the sample and $t$ is the time in days. The half-life of this radioactive isotope is 8.1 days.<br><br>(a) A sample of the isotope has an initial activity of 800 Bq on Monday at 12 pm. Use the model to estimate the remaining activity exactly 12 days later. Give your answer to 3 significant figures.<br><br>(b) The sample is considered safe to handle without special shielding once its activity drops below 100 Bq. Find the minimum storage time required before the sample is safe, giving your answer in days and hours (to the nearest hour).<br><br>(c) State a physical reason why the measured activity of the sample at any given moment might differ slightly from the model's prediction.",
+        "steps": [
+            "First, calculate the decay constant $\\lambda$ using the half-life of 8.1 days: $$\\dfrac{1}{2}A_0 = A_0\\text{e}^{-8.1\\lambda} \\implies \\text{e}^{-8.1\\lambda} = 0.5 \\implies -8.1\\lambda = \\ln(0.5) \\implies \\lambda = \\dfrac{\\ln(2)}{8.1} \\approx 0.08557$$",
+            "For Part (a), substitute $A_0 = 800$, $\\lambda = 0.08557$, and $t = 12$ days into the model: $$A = 800\\text{e}^{-0.08557 \\times 12} = 800\\text{e}^{-1.02684} \\approx 286.49 \\approx 286\\text{ Bq}$$",
+            "For Part (b), set $A = 100$ and solve for $t$: $$100 = 800\\text{e}^{-\\lambda t} \\implies \\text{e}^{-\\lambda t} = \\dfrac{100}{800} = \\dfrac{1}{8} = 2^{-3}$$",
+            "Take the natural logarithm of both sides to isolate the exponent: $$-\\lambda t = \\ln(2^{-3}) \\implies -\\lambda t = -3\\ln(2) \\implies t = \\dfrac{3\\ln(2)}{\\lambda}$$",
+            "Substitute $\\lambda = \\dfrac{\\ln(2)}{8.1}$ into the equation: $$t = 3 \\times 8.1 = 24.3\\text{ days}$$",
+            "Convert the decimal days to hours: $$24\\text{ days and } (0.3 \\times 24)\\text{ hours} = 24\\text{ days and } 7.2\\text{ hours} \\approx 24\\text{ days and } 7\\text{ hours}$$",
+            "For Part (c), identify a physical limitation: radioactive decay is a random, stochastic quantum process. The model predicts the average expected decay, but the actual measurements will fluctuate statistically around this smooth curve.",
+            "Final Answer: $$\\text{Part (a): } 286\\text{ Bq},\\quad \\text{Part (b): } 24\\text{ days and } 7\\text{ hours}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (a): } 225\\text{ Bq},\\quad \\text{Part (b): } 24\\text{ days and } 7\\text{ hours}$$",
+                "feedback": "In Part (a), you probably made a calculation slip in your fractional indices or exponent multiplications. Double-check your calculator entry for $800 \\times \\text{e}^{-12\\lambda}$."
+            },
+            {
+                "ans": "$$\\text{Part (a): } 286\\text{ Bq},\\quad \\text{Part (b): } 24\\text{ days and } 12\\text{ hours}$$",
+                "feedback": "In Part (b), when converting $0.3$ days to hours, remember that a day has 24 hours. Therefore, $0.3 \\times 24 = 7.2\\text{ hours}$, which rounds to $7\\text{ hours}$ (not $12$)."
+            },
+            {
+                "ans": "$$\\text{Part (a): } 286\\text{ Bq},\\quad \\text{Part (b): } 8\\text{ days and } 3\\text{ hours}$$",
+                "feedback": "In Part (b), you probably solved for 1 half-life instead of 3. Since the activity must drop to $\\frac{1}{8}$ of the initial value, it must undergo exactly three half-lives."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Integer Half-Life Shortcut",
+            "content": "When a target value is an exact fractional power of 2 (like $\\frac{1}{8} = 2^{-3}$), the time required is exactly $3$ half-lives. Recognising this is probably the quickest way to skip complex log rearrangements in Part (b) and secure full marks instantly."
+        }
+    },
+    {
+        "id": "004120",
+        "board": "AQA",
+        "major_area": "Exponentials and logarithms",
+        "topic": "Exponential modelling",
+        "subtopic": [
+            "Exponential Growth and Decay",
+            "Logarithmic Rearrangement"
+        ],
+        "img": false,
+        "question": "A meteorologist models the atmospheric pressure, $P$ (in kilopascals, kPa), at an altitude of $h$ kilometres above sea level using<br>$$P = P_0\\text{e}^{-kh}$$<br>where $P_0$ kPa is the pressure at sea level. On average, the atmospheric pressure halves for every 5.5 km increase in altitude.<br><br>(a) Given that the atmospheric pressure at sea level is 101.3 kPa, use the model to estimate the pressure at the summit of Mount Kilimanjaro, which is at an altitude of 5895 metres. Give your answer to 3 significant figures.<br><br>(b) A weather balloon is designed to transmit data until the surrounding pressure drops below 15 kPa. Use the model to find the maximum altitude the balloon can reach before it stops transmitting. Give your answer to the nearest 10 metres.<br><br>(c) State a meteorological reason why this pressure model may not be perfectly accurate.",
+        "steps": [
+            "First, convert the altitude of Mount Kilimanjaro from metres to kilometres to match the variable unit of $h$: $$5895\\text{ metres} = 5.895\\text{ km}$$",
+            "Calculate the decay constant $k$ by setting $P = \\dfrac{1}{2}P_0$ when $h = 5.5$: $$\\dfrac{1}{2}P_0 = P_0\\text{e}^{-5.5k} \\implies \\text{e}^{-5.5k} = 0.5 \\implies -5.5k = \\ln(0.5) \\implies k = \\dfrac{\\ln(2)}{5.5} \\approx 0.12603$$",
+            "For Part (a), substitute $P_0 = 101.3$, $k = 0.12603$, and $h = 5.895$ into the model: $$P = 101.3\\text{e}^{-0.12603 \\times 5.895} = 101.3\\text{e}^{-0.74295} \\approx 48.19 \\approx 48.2\\text{ kPa}$$",
+            "For Part (b), set $P = 15$ to find the altitude limit: $$15 = 101.3\\text{e}^{-kh} \\implies \\text{e}^{-kh} = \\dfrac{15}{101.3} \\approx 0.14808$$",
+            "Take the natural logarithm of both sides to isolate the exponent: $$-kh = \\ln(0.14808) \\approx -1.91006 \\implies kh \\approx 1.91006$$",
+            "Divide by the decay constant $k = 0.12603$ to solve for $h$: $$h = \\dfrac{1.91006}{0.12603} \\approx 15.1555\\text{ km}$$",
+            "Convert this altitude back to metres: $$15.1555\\text{ km} = 15,155.5\\text{ metres}$$",
+            "Round to the nearest 10 metres: $$15,155.5\\text{ metres} \\approx 15,160\\text{ metres}$$",
+            "For Part (c), identify a meteorological limitation: the model assumes a uniform, static atmosphere. Real-world atmospheric pressure is dynamically affected by local temperature profiles, humidity, and weather fronts independently of altitude.",
+            "Final Answer: $$\\text{Part (a): } 48.2\\text{ kPa},\\quad \\text{Part (b): } 15,160\\text{ metres}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (a): } 47.9\\text{ kPa},\\quad \\text{Part (b): } 15,050\\text{ metres}$$",
+                "feedback": "This incorrect option probably results from a minor rounding slip when calculating $k$. Carrying the rounded value $k \\approx 0.1269$ instead of $0.12603$ shifts your results. Use full calculator accuracy for $k$."
+            },
+            {
+                "ans": "$$\\text{Part (a): } 48.2\\text{ kPa},\\quad \\text{Part (b): } 15,160\\text{ km}$$",
+                "feedback": "In Part (b), you probably forgot to convert your final answer back from kilometres to metres. An altitude of $15,160\\text{ km}$ would extend into outer space; the target unit is metres."
+            },
+            {
+                "ans": "$$\\text{Part (a): } 48.2\\text{ kPa},\\quad \\text{Part (b): } 15,120\\text{ metres}$$",
+                "feedback": "In Part (b), check your division steps. Solving $\\text{e}^{-kh} = 0.14808$ requires dividing the natural log of this term by $k$, carrying full decimal precision."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Variable Unit Consistency",
+            "content": "Always check the units of your variables before substituting them. Since the height model is defined with $h$ in kilometres, substituting $h = 5895\\text{ metres}$ directly is a major trap. Converting metres to kilometres first is probably the safest way to avoid losing all accuracy marks on this question."
+        }
     }
+
 
 
 ];
