@@ -53,9 +53,9 @@ window.ALEVEL_QUESTIONS = [
         "question": "A circle has center $O(0, 0)$ and radius $R = 10$. Three points lie on the circle: $A(8, 6)$, $B(0, -10)$, and $C(-8, 6)$.<br><br>(a) Show that the angle at the center, $\\angle AOC$, is exactly twice the size of the angle at the circumference, $\\angle ABC$.<br><br>(b) (i) Show that the chord $AC$ is bisected by the $y$-axis.<br>(ii) Determine whether the point $D(3, -9)$ lies inside the circle, on the circle, or outside the circle. Fully justify your answer.",
         "steps": [
             "For Part (a), calculate the side lengths of triangle $AOC$ to find $\\angle AOC$: $$OA = 10,\\ OC = 10,\\ AC = \\sqrt{(-8-8)^2 + (6-6)^2} = 16$$",
-            "Apply the Cosine Rule to find $\\angle AOC$: $$16^2 = 10^2 + 10^2 - 2(10)(10)\\cos(\\angle AOC) \\implies 256 = 200 - 200\\cos(\\angle AOC)$$ <br>$$\\implies \\cos(\\angle AOC) = -0.28 \\implies \\angle AOC \\approx 106.26^\\circ$$",
+            "Apply the Cosine Rule to find $\\angle AOC$: $$16^2 = 10^2 + 10^2 - 2(10)(10)\\cos(\\angle AOC) \\implies 256 = 200 - 200\\cos(\\angle AOC)$$<br>$$\\implies \\cos(\\angle AOC) = -0.28 \\implies \\angle AOC \\approx 106.26^\\circ$$",
             "Next, calculate the side lengths of triangle $ABC$ to find $\\angle ABC$: $$BA = \\sqrt{(8-0)^2 + (6 - (-10))^2} = \\sqrt{320}$$ and $$BC = \\sqrt{(-8-0)^2 + (6 - (-10))^2} = \\sqrt{320}$$, with $$AC = 16$$",
-            "Apply the Cosine Rule on triangle $ABC$: $$16^2 = 320 + 320 - 2(\\sqrt{320})(\\sqrt{320})\\cos(\\angle ABC) \\implies 256 = 640 - 640\\cos(\\angle ABC) \\implies \\cos(\\angle ABC) = 0.6 \\implies \\angle ABC \\approx 53.13^\\circ$$",
+            "Apply the Cosine Rule on triangle $ABC$: $$16^2 = 320 + 320 - 2(\\sqrt{320})(\\sqrt{320})\\cos(\\angle ABC) \\implies 256 = 640 - 640\\cos(\\angle ABC))$$<br>$$ \\implies \\cos(\\angle ABC) = 0.6 \\implies \\angle ABC \\approx 53.13^\\circ$$",
             "Since $$2 \\times 53.13^\\circ = 106.26^\\circ$$, the angle at the center $\\angle AOC$ is exactly twice the angle at the circumference $\\angle ABC$.",
             "For Part (b)(i), find the midpoint of the chord $AC$: $$K = \\left(\\dfrac{8+(-8)}{2}, \\dfrac{6+6}{2}\\right) = (0, 6)$$",
             "Since the midpoint of $AC$ lies on the line $x = 0$ (the $y$-axis), the chord $AC$ is bisected by the $y$-axis.",
