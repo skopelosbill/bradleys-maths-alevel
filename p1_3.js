@@ -900,7 +900,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "004102",
+        "id": "004122",
         "board": "AQA",
         "major_area": "Exponentials and logarithms",
         "topic": "Exponential modelling",
@@ -990,7 +990,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "004104",
+        "id": "004124",
         "board": "AQA",
         "major_area": "Calculus",
         "topic": "Numerical methods",
@@ -1078,7 +1078,237 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Sanity Checking Your Boundaries",
             "content": "When performing interval analysis, always write out the decimal values of both models at the boundary endpoints. Showing a clear sign change in your difference function is probably the most reliable way to secure full reasoning marks."
         }
+    },
+    {
+        "id": "004126",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Factor Theorem",
+            "Trigonometric Proofs"
+        ],
+        "img": false,
+        "question": "Let $p(x) = 24x^3 - 22x^2 - x + 3$.<br><br>(a) Prove that $(3x+1)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:<br>$$\\dfrac{24\\sec^2 x + 3\\cos x}{22} = \\sec x + \\dfrac{1}{22}$$",
+        "steps": [
+            "For Part (a), apply the Factor Theorem. If $(3x+1)$ is a factor of $p(x)$, then $p\\left(-\\dfrac{1}{3}\\right) = 0$. Evaluate the polynomial at $x = -\\dfrac{1}{3}$:",
+            "$$p\\left(-\\dfrac{1}{3}\\right) = 24\\left(-\\dfrac{1}{3}\\right)^3 - 22\\left(-\\dfrac{1}{3}\\right)^2 - \\left(-\\dfrac{1}{3}\\right) + 3$$",
+            "$$p\\left(-\\dfrac{1}{3}\\right) = 24\\left(-\\dfrac{1}{27}\\right) - 22\\left(\\dfrac{1}{9}\\right) + \\dfrac{1}{3} + 3 = -\\dfrac{8}{9} - \\dfrac{22}{9} + \\dfrac{3}{9} + \\dfrac{27}{9} = \\dfrac{0}{9} = 0$$",
+            "Since $p\\left(-\\dfrac{1}{3}\\right) = 0$, by the Factor Theorem, $(3x+1)$ is indeed a factor of $p(x)$.",
+            "For Part (b), perform polynomial division to divide $24x^3 - 22x^2 - x + 3$ by $(3x+1)$: $$\\dfrac{24x^3 - 22x^2 - x + 3}{3x+1} = 8x^2 - 10x + 3$$",
+            "Factorise the quadratic quotient completely: $$8x^2 - 10x + 3 = (2x-1)(4x-3)$$",
+            "Combine the linear factors to write the complete factorisation of $p(x)$: $$p(x) = (3x+1)(2x-1)(4x-3)$$",
+            "For Part (c), multiply both sides of the equation by $22$ to clear the denominators: $$24\\sec^2 x + 3\\cos x = 22\\sec x + 1$$",
+            "Substitute $y = \\sec x$ into the equation, noting that $\\cos x = \\dfrac{1}{y}$: $$24y^2 + \\dfrac{3}{y} = 22y + 1$$",
+            "Multiply both sides by $y$ to clear the fraction and rearrange to form a cubic equation: $$24y^3 + 3 = 22y^2 + y \\implies 24y^3 - 22y^2 - y + 3 = 0$$",
+            "Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: $$y = -\\dfrac{1}{3},\\quad y = \\dfrac{1}{2},\\quad y = \\dfrac{3}{4}$$",
+            "Since $y = \\sec x$, we must have $\\sec x = -\\dfrac{1}{3}$, $\\sec x = \\dfrac{1}{2}$, or $\\sec x = \\dfrac{3}{4}$.",
+            "Recall that the range of the secant function is strictly restricted to $|\\sec x| \\ge 1$. Since all three roots have absolute values strictly less than $1$ ($|-\\frac{1}{3}| < 1$, $|\\frac{1}{2}| < 1$, and $|\\frac{3}{4}| < 1$), there are no real values of $x$ that satisfy these equations.",
+            "Final Answer: $$\\text{Part (b): } p(x) = (3x+1)(2x-1)(4x-3),\\quad \\text{Part (c): } |\\sec x| \\ge 1 \\implies \\text{No real solutions}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } p(x) = (3x+1)(2x-1)(4x-3),\\quad \\text{Part (c): } x = -\\dfrac{1}{3}$$",
+                "feedback": "In Part (c), you probably solved for the variable $y = \\sec x$ but forgot that we are solving for $x$. Since $\\sec x = -1/3$ has no real solutions (as $|-1/3| < 1$), $x = -1/3$ is not a valid solution for the trigonometric equation."
+            },
+            {
+                "ans": "$$\\text{Part (b): } p(x) = (3x+1)(2x+1)(4x-3),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                "feedback": "Check your signs in Part (b). Factoring the quadratic quotient $8x^2 - 10x + 3$ yields $(2x-1)(4x-3)$. Having a factor of $(2x+1)$ is incorrect."
+            },
+            {
+                "ans": "$$\\text{Part (b): } p(x) = 3(3x+1)(2x-1)(4x-3),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                "feedback": "In Part (b), you probably introduced an extra factor of $3$ when factoring the quadratic. Since $(3x+1)(2x-1)(4x-3)$ expands to exactly $24x^3 - 22x^2 - x + 3$, no additional scalar multiplier is needed."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Synthetic Division of Fractional Roots",
+            "content": "When using synthetic division with a fractional root like $-\\frac{1}{3}$, the resulting quotient coefficients must be divided by the denominator $3$ to find the true quotient polynomial. Forgetting this step is probably the most common way students introduce incorrect constant factors into their final factorisations."
+        }
+    },
+    {
+        "id": "004127",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Factor Theorem",
+            "Trigonometric Proofs"
+        ],
+        "img": false,
+        "question": "Let $q(x) = 6x^2 - 5x + 1$.<br><br>(a) Prove that $(2x-1)$ is a factor of $q(x)$.<br><br>(b) Factorise $q(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:<br>$$6\\csc x + \\sin x = 5$$",
+        "steps": [
+            "For Part (a), apply the Factor Theorem. If $(2x-1)$ is a factor of $q(x)$, then $q\\left(\\dfrac{1}{2}\\right) = 0$. Evaluate the polynomial at $x = \\dfrac{1}{2}$:",
+            "$$q\\left(\\dfrac{1}{2}\\right) = 6\\left(\\dfrac{1}{2}\\right)^2 - 5\\left(\\dfrac{1}{2}\\right) + 1$$",
+            "$$q\\left(\\dfrac{1}{2}\\right) = 6\\left(\\dfrac{1}{4}\\right) - \\dfrac{5}{2} + 1 = \\dfrac{3}{2} - \\dfrac{5}{2} + 1 = -1 + 1 = 0$$",
+            "Since $q\\left(\\dfrac{1}{2}\\right) = 0$, by the Factor Theorem, $(2x-1)$ is indeed a factor of $q(x)$.",
+            "For Part (b), perform polynomial division to divide $6x^2 - 5x + 1$ by $(2x-1)$: $$\\dfrac{6x^2 - 5x + 1}{2x-1} = 3x - 1$$",
+            "Combine the linear factors to write the complete factorisation of $q(x)$: $$q(x) = (2x-1)(3x-1)$$",
+            "For Part (c), let $y = \\sin x$, noting that $\\csc x = \\dfrac{1}{y}$ (where $y \\ne 0$): $$6\\left(\\dfrac{1}{y}\\right) + y = 5$$",
+            "Multiply both sides by $y$ to clear the fraction and rearrange to form a quadratic equation: $$6 + y^2 = 5y \\implies y^2 - 5y + 6 = 0$$",
+            "Factorise the quadratic equation: $$(y-2)(y-3) = 0 \\implies y = 2 \\quad \\text{or} \\quad y = 3$$",
+            "Since $y = \\sin x$, we must have $\\sin x = 2$ or $\\sin x = 3$.",
+            "Recall that the range of the sine function is strictly restricted to $-1 \\le \\sin x \\le 1$. Since both roots are strictly greater than $1$ ($2 > 1$ and $3 > 1$), there are no real values of $x$ that satisfy these equations.",
+            "Final Answer: $$\\text{Part (b): } q(x) = (2x-1)(3x-1),\\quad \\text{Part (c): } -1 \\le \\sin x \\le 1 \\implies \\text{No real solutions}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } q(x) = (2x-1)(3x-1),\\quad \\text{Part (c): } x = 2 \\text{ or } x = 3$$",
+                "feedback": "In Part (c), you have stated the roots of the quadratic in $y$. However, the original equation is in terms of $\\sin x$. Since $\\sin x = 2$ has no real solutions, $x=2$ is not a valid solution."
+            },
+            {
+                "ans": "$$\\text{Part (b): } q(x) = (2x-1)(3x+1),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                "feedback": "Check your signs in Part (b). Expanding $(2x-1)(3x+1)$ yields $6x^2 - x - 1$, which does not match our quadratic $q(x) = 6x^2 - 5x + 1$."
+            },
+            {
+                "ans": "$$\\text{Part (b): } q(x) = (2x+1)(3x-1),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                "feedback": "Check your factor signs in Part (b). Since we proved $(2x-1)$ is a factor in Part (a), having a factor of $(2x+1)$ is mathematically incorrect."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Cosecant Boundary Conditions",
+            "content": "To prove that a cosecant equation has no real solutions, always state the standard range of the cosecant function clearly on your page: $|\\csc x| \\ge 1$. Since any roots with absolute values strictly less than 1 lie outside this range, this is probably the most concise way to secure your final reasoning marks."
+        }
+    },
+    {
+        "id": "004128",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Factor Theorem",
+            "Trigonometric Proofs"
+        ],
+        "img": false,
+        "question": "Let $p(x) = 2x^3 - 5x^2 - 9x + 18$.<br><br>(a) Prove that $(x+2)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:<br>$$2\\sin^2 x + 18\\csc x = 5\\sin x + 9$$",
+        "steps": [
+            "For Part (a), apply the Factor Theorem. If $(x+2)$ is a factor of $p(x)$, then $p(-2) = 0$. Evaluate the polynomial at $x = -2$:",
+            "$$p(-2) = 2(-2)^3 - 5(-2)^2 - 9(-2) + 18$$",
+            "$$p(-2) = 2(-8) - 5(4) + 18 + 18 = -16 - 20 + 36 = 0$$",
+            "Since $p(-2) = 0$, by the Factor Theorem, $(x+2)$ is indeed a factor of $p(x)$.",
+            "For Part (b), perform polynomial division to divide $2x^3 - 5x^2 - 9x + 18$ by $(x+2)$: $$\\dfrac{2x^3 - 5x^2 - 9x + 18}{x+2} = 2x^2 - 9x + 9$$",
+            "Factorise the quadratic quotient completely: $$2x^2 - 9x + 9 = (x-3)(2x-3)$$",
+            "Combine the linear factors to write the complete factorisation of $p(x)$: $$p(x) = (x+2)(x-3)(2x-3)$$",
+            "For Part (c), let $y = \\sin x$, noting that $\\csc x = \\dfrac{1}{y}$ (where $y \\ne 0$): $$2y^2 + 18\\left(\\dfrac{1}{y}\\right) = 5y + 9$$",
+            "Multiply both sides by $y$ to clear the fraction and rearrange to form a cubic equation: $$2y^3 + 18 = 5y^2 + 9y \\implies 2y^3 - 5y^2 - 9y + 18 = 0$$",
+            "Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: $$y = -2,\\quad y = 3,\\quad y = \\dfrac{3}{2}$$",
+            "Since $y = \\sin x$, we must have $\\sin x = -2$, $\\sin x = 3$, or $\\sin x = \\dfrac{3}{2}$.",
+            "Recall that the range of the sine function is strictly restricted to $-1 \\le \\sin x \\le 1$. Since all three roots have absolute values strictly greater than $1$ ($|-2| > 1$, $|3| > 1$, and $|\\frac{3}{2}| > 1$), there are no real values of $x$ that satisfy these equations.",
+            "Final Answer: $$\\text{Part (b): } p(x) = (x+2)(x-3)(2x-3),\\quad \\text{Part (c): } -1 \\le \\sin x \\le 1 \\implies \\text{No real solutions}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } p(x) = (x+2)(x-3)(2x-3),\\quad \\text{Part (c): } x = 3$$",
+                "feedback": "In Part (c), you have stated the roots of the cubic in $y = \\sin x$. However, the original equation is in terms of $x$. Since $\\sin x = 3$ has no real solutions, $x=3$ is not a valid solution."
+            },
+            {
+                "ans": "$$\\text{Part (b): } p(x) = (x+2)(x+3)(2x-3),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                "feedback": "Check your signs in Part (b). Factoring the quadratic quotient $2x^2 - 9x + 9$ yields $(x-3)(2x-3)$. Having a factor of $(x+3)$ is incorrect."
+            },
+            {
+                "ans": "$$\\text{Part (b): } p(x) = (x-2)(x-3)(2x-3),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                "feedback": "Check your factor signs in Part (b). Since we proved $(x+2)$ is a factor in Part (a), having a factor of $(x-2)$ is mathematically incorrect."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Sine and Cosecant Inversions",
+            "content": "In this question, we substitute $y = \\sin x$ into a cosecant equation, which leads to a cubic in $y$. Since the range of the sine function is $-1 \\le \\sin x \\le 1$, any roots outside this interval (such as $y = -2, 1.5, 3$) automatically yield no real solutions for $x$. This is an elegant way of using coordinate range boundaries to solve complex trigonometric proofs."
+        }
+    },
+    {
+        "id": "004129",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Factor Theorem",
+            "Trigonometric Proofs"
+        ],
+        "img": false,
+        "question": "Let $p(x) = 2x^3 - 9x^2 - 2x + 24$.<br><br>(a) Prove that $(2x+3)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:<br>$$2\\cos^2 x + 24\\sec x = 9\\cos x + 2$$",
+        "steps": [
+            "For Part (a), apply the Factor Theorem. If $(2x+3)$ is a factor of $p(x)$, then $p\\left(-\\dfrac{3}{2}\\right) = 0$. Evaluate the polynomial at $x = -\\dfrac{3}{2}$:",
+            "$$p\\left(-\\dfrac{3}{2}\\right) = 2\\left(-\\dfrac{3}{2}\\right)^3 - 9\\left(-\\dfrac{3}{2}\\right)^2 - 2\\left(-\\dfrac{3}{2}\\right) + 24$$",
+            "$$p\\left(-\\dfrac{3}{2}\\right) = 2\\left(-\\dfrac{27}{8}\\right) - 9\\left(\\dfrac{9}{4}\\right) + 3 + 24 = -\\dfrac{27}{4} - \\dfrac{81}{4} + 27 = -\\dfrac{108}{4} + 27 = -27 + 27 = 0$$",
+            "Since $p\\left(-\\dfrac{3}{2}\\right) = 0$, by the Factor Theorem, $(2x+3)$ is indeed a factor of $p(x)$.",
+            "For Part (b), perform polynomial division to divide $2x^3 - 9x^2 - 2x + 24$ by $(2x+3)$: $$\\dfrac{2x^3 - 9x^2 - 2x + 24}{2x+3} = x^2 - 6x + 8$$",
+            "Factorise the quadratic quotient completely: $$x^2 - 6x + 8 = (x-2)(x-4)$$",
+            "Combine the linear factors to write the complete factorisation of $p(x)$: $$p(x) = (2x+3)(x-2)(x-4)$$",
+            "For Part (c), let $y = \\cos x$, noting that $\\sec x = \\dfrac{1}{y}$ (where $y \\ne 0$): $$2y^2 + 24\\left(\\dfrac{1}{y}\\right) = 9y + 2$$",
+            "Multiply both sides by $y$ to clear the fraction and rearrange to form a cubic equation: $$2y^3 + 24 = 9y^2 + 2y \\implies 2y^3 - 9y^2 - 2y + 24 = 0$$",
+            "Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: $$y = -\\dfrac{3}{2},\\quad y = 2,\\quad y = 4$$",
+            "Since $y = \\cos x$, we must have $\\cos x = -\\dfrac{3}{2}$, $\\cos x = 2$, or $\\cos x = 4$.",
+            "Recall that the range of the cosine function is strictly restricted to $-1 \\le \\cos x \\le 1$. Since all three roots have absolute values strictly greater than $1$ ($|-\\frac{3}{2}| > 1$, $|2| > 1$, and $|4| > 1$), there are no real values of $x$ that satisfy these equations.",
+            "Final Answer: $$\\text{Part (b): } p(x) = (2x+3)(x-2)(x-4),\\quad \\text{Part (c): } -1 \\le \\cos x \\le 1 \\implies \\text{No real solutions}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } p(x) = 2(2x+3)(x-2)(x-4),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                "feedback": "In Part (b), you probably made a division slip when factoring. Note that $(2x+3)(x-2)(x-4)$ expands directly to our cubic $2x^3 - 9x^2 - 2x + 24$, so no additional scalar multiplier of $2$ is needed."
+            },
+            {
+                "ans": "$$\\text{Part (b): } p(x) = (2x+3)(x-2)(x-4),\\quad \\text{Part (c): } x = 2 \\text{ or } x = 4$$",
+                "feedback": "In Part (c), you have stated the roots of the cubic in $y = \\cos x$. However, the original equation is in terms of $x$. Since $\\cos x = 2$ has no real solutions, $x=2$ is not a valid solution."
+            },
+            {
+                "ans": "$$\\text{Part (b): } p(x) = (2x+3)(x+2)(x-4),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                "feedback": "Check your signs in Part (b). Factoring the quadratic quotient $x^2 - 6x + 8$ yields $(x-2)(x-4)$. Having a factor of $(x+2)$ is incorrect."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Linear Divisor Division Rules",
+            "content": "When dividing a polynomial by $(2x+3)$ using synthetic division with root $-1.5$, your raw coefficients will be $(2, -12, 16)$, which represents $2x^2 - 12x + 16$. You must divide these coefficients by the leading coefficient $2$ to find the true quotient $x^2 - 6x + 8$. Forgetting this division step is a classic error that leads to an extra factor of $2$ in your final product."
+        }
+    },
+    {
+        "id": "004130",
+        "board": "AQA",
+        "major_area": "Algebra and functions",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Factor Theorem",
+            "Trigonometric Proofs"
+        ],
+        "img": false,
+        "question": "Let $q(x) = 12x^2 - 8x + 1$.<br><br>(a) Prove that $(2x-1)$ is a factor of $q(x)$.<br><br>(b) Factorise $q(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:<br>$$12\\sec x + \\cos x = 8$$",
+        "steps": [
+            "For Part (a), apply the Factor Theorem. If $(2x-1)$ is a factor of $q(x)$, then $q\\left(\\dfrac{1}{2}\\right) = 0$. Evaluate the polynomial at $x = \\dfrac{1}{2}$:",
+            "$$q\\left(\\dfrac{1}{2}\\right) = 12\\left(\\dfrac{1}{2}\\right)^2 - 8\\left(\\dfrac{1}{2}\\right) + 1$$",
+            "$$q\\left(\\dfrac{1}{2}\\right) = 12\\left(\\dfrac{1}{4}\\right) - 4 + 1 = 3 - 4 + 1 = 0$$",
+            "Since $q\\left(\\dfrac{1}{2}\\right) = 0$, by the Factor Theorem, $(2x-1)$ is indeed a factor of $q(x)$.",
+            "For Part (b), perform polynomial division to divide $12x^2 - 8x + 1$ by $(2x-1)$: $$\\dfrac{12x^2 - 8x + 1}{2x-1} = 6x - 1$$",
+            "Combine the linear factors to write the complete factorisation of $q(x)$: $$q(x) = (2x-1)(6x-1)$$",
+            "For Part (c), let $y = \\cos x$, noting that $\\sec x = \\dfrac{1}{y}$ (where $y \\ne 0$): $$12\\left(\\dfrac{1}{y}\\right) + y = 8$$",
+            "Multiply both sides by $y$ to clear the fraction and rearrange to form a quadratic equation: $$12 + y^2 = 8y \\implies y^2 - 8y + 12 = 0$$",
+            "Factorise the quadratic equation: $$(y-2)(y-6) = 0 \\implies y = 2 \\quad \\text{or} \\quad y = 6$$",
+            "Since $y = \\cos x$, we must have $\\cos x = 2$ or $\\cos x = 6$.",
+            "Recall that the range of the cosine function is strictly restricted to $-1 \\le \\cos x \\le 1$. Since both roots are strictly greater than $1$ ($2 > 1$ and $6 > 1$), there are no real values of $x$ that satisfy these equations.",
+            "Final Answer: $$\\text{Part (b): } q(x) = (2x-1)(6x-1),\\quad \\text{Part (c): } -1 \\le \\cos x \\le 1 \\implies \\text{No real solutions}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (b): } q(x) = (2x-1)(6x-1),\\quad \\text{Part (c): } x = 2 \\text{ or } x = 6$$",
+                "feedback": "In Part (c), you have stated the roots of the quadratic in $y = \\cos x$. However, the original equation is in terms of $x$. Since $\\cos x = 2$ has no real solutions, $x=2$ is not a valid solution."
+            },
+            {
+                "ans": "$$\\text{Part (b): } q(x) = (2x-1)(6x+1),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                "feedback": "Check your signs in Part (b). Expanding $(2x-1)(6x+1)$ yields $12x^2 - 4x - 1$, which does not match our quadratic $q(x) = 12x^2 - 8x + 1$."
+            },
+            {
+                "ans": "$$\\text{Part (b): } q(x) = (2x+1)(6x-1),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                "feedback": "Check your factor signs in Part (b). Since we proved $(2x-1)$ is a factor in Part (a), having a factor of $(2x+1)$ is mathematically incorrect."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Secant Boundary Ranges",
+            "content": "To show that $\\cos x = y$ has no real solutions when $y > 1$, always refer directly to the bounded range $-1 \\le \\cos x \\le 1$. Stating this boundary is probably the quickest and safest way to complete your trigonometric proofs under exam conditions."
+        }
     }
+
 
 
 
