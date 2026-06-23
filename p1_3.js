@@ -470,7 +470,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "004102",
+        "id": "004112",
         "board": "AQA",
         "major_area": "Sequences and series",
         "topic": "Arithmetic progressions",
