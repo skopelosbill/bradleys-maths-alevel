@@ -853,7 +853,233 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Variable Unit Consistency",
             "content": "Always check the units of your variables before substituting them. Since the height model is defined with $h$ in kilometres, substituting $h = 5895\\text{ metres}$ directly is a major trap. Converting metres to kilometres first is probably the safest way to avoid losing all accuracy marks on this question."
         }
+    },
+    {
+        "id": "004121",
+        "board": "AQA",
+        "major_area": "Exponentials and logarithms",
+        "topic": "Exponential modelling",
+        "subtopic": [
+            "Exponential Growth and Decay",
+            "Numerical Iteration"
+        ],
+        "img": false,
+        "question": "The daily world production of natural gas can be modelled using:<br>$$V = 20 + 200\\left(\\dfrac{t}{40}\right)^3 - 100\\left(\\dfrac{t}{40}\right)^4$$<br>where $V$ is the volume of gas in billions of cubic metres, and $t$ is the time in years since 1 January 1990.<br><br>(a) (i) The model is used to predict the time, $T$, when gas production will fall to zero. Show that $T$ satisfies the equation:<br>$$T = \\sqrt[3]{80T^2 + \\dfrac{512\\,000}{T}}$$ <br>(a) (ii) Use the iterative formula $T_{n+1} = \\sqrt[3]{80T_n^2 + \\dfrac{512\\,000}{T_n}}$, with $T_0 = 50$, to find the values of $T_1$, $T_2$, and $T_3$, giving your answers to three decimal places.<br><br>(a) (iii) Explain the relevance of using $T_0 = 50$.<br><br>(b) From 1 January 1990, the daily use of natural gas by one technologically developing country can be modelled as:<br>$$V = 8.5 \\times 1.058^t$$<br>Use the models to show that the country's use of gas and the world production of gas will be equal during the year 2044.",
+        "steps": [
+            "For Part (a)(i), set the volume $V$ equal to $0$ and expand the exponents: $$0 = 20 + 200\\left(\\dfrac{T}{40}\\right)^3 - 100\\left(\\dfrac{T}{40}\right)^4 \\implies 0 = 20 + 200\\left(\\dfrac{T^3}{64\\,000}\\right) - 100\\left(\\dfrac{T^4}{2\\,560\\,000}\\right)$$, which simplifies to: $$0 = 20 + \\dfrac{T^3}{320} - \\dfrac{T^4}{25\\,600}$$",
+            "Multiply the entire equation by $25\\,600$ to clear the fractions: $$0 = 512\\,000 + 80T^3 - T^4$$",
+            "Rearrange the terms and divide both sides by $T$ (since $T > 0$): $$T^4 = 80T^3 + 512\\,000 \\implies T^3 = 80T^2 + \\dfrac{512\\,000}{T}$$",
+            "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{80T^2 + \\dfrac{512\\,000}{T}}$$ as required.",
+            "For Part (a)(ii), substitute $T_0 = 50$ into the formula to find the successive iterations: $$T_1 = \\sqrt[3]{80(50)^2 + \\dfrac{512\\,000}{50}} = \\sqrt[3]{200\\,000 + 10\\,240} = \\sqrt[3]{210\\,240} \\approx 59.464$$",
+            "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{80(59.4643)^2 + \\dfrac{512\\,000}{59.4643}} \\approx \\sqrt[3]{291\\,491.0} \\approx 66.305$$ and $$T_3 = \\sqrt[3]{80(66.3051)^2 + \\dfrac{512\\,000}{66.3051}} \\approx \\sqrt[3]{359\\,430.4} \\approx 71.099$$",
+            "For Part (a)(iii), explain the relevance: $T = 50$ corresponds to the year 2040 (since $1990 + 50 = 2040$). This provides a realistic starting estimate that is close to the expected root, which improves the speed of convergence.",
+            "For Part (b), find the intersection interval by evaluating the difference between production and consumption. Let $f(t) = V_{\\text{prod}} - V_{\\text{use}}$. The year 2044 corresponds to $t = 54$ (since $1990 + 54 = 2044$).",
+            "Evaluate both models at $t = 54$: $$V_{\\text{prod}} = 20 + 200\\left(\\dfrac{54}{40}\\right)^3 - 100\\left(\\dfrac{54}{40}\\right)^4 \\approx 180.12\\text{ Bcm}$$ and $$V_{\\text{use}} = 8.5 \\times 1.058^{54} \\approx 178.53\\text{ Bcm}$$. Since $180.12 > 178.53$, production exceeds consumption.",
+            "Evaluate both models at $t = 55$: $$V_{\\text{prod}} = 20 + 200\\left(\\dfrac{55}{40}\\right)^3 - 100\\left(\\dfrac{55}{40}\\right)^4 \\approx 182.44\\text{ Bcm}$$ and $$V_{\\text{use}} = 8.5 \\times 1.058^{55} \\approx 188.88\\text{ Bcm}$$. Since $182.44 < 188.88$, consumption now exceeds production.",
+            "Since the difference $V_{\\text{prod}} - V_{\\text{use}}$ changes sign from positive to negative between $t = 54$ and $t = 55$, the curves must intersect during this interval (which corresponds exactly to the calendar year 2044).",
+            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 59.464,\\ T_2 = 66.305,\\ T_3 = 71.099,\\quad \\text{Part (b): } 54 < t < 55 \\implies 2044$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 59.452,\\ T_2 = 66.292,\\ T_3 = 70.987,\\quad \\text{Part (b): } 54 < t < 55 \\implies 2044$$",
+                "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $210,240$. Carrying the rounded value $T_1 \\approx 59.452$ instead of $59.464$ caused your subsequent iterations to drift. Use full calculator accuracy."
+            },
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 59.464,\\ T_2 = 66.305,\\ T_3 = 71.099,\\quad \\text{Part (b): } 50 < t < 51 \\implies 2040$$",
+                "feedback": "In Part (b), check your interval analysis. While $t = 50$ is your starting iteration value, evaluating the production and consumption curves shows that they do not cross until $t$ is between $54$ and $55$, which corresponds to the year 2044."
+            },
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 59.464,\\ T_2 = 66.305,\\ T_3 = 71.099,\\quad \\text{Part (b): } 53 < t < 54 \\implies 2043$$",
+                "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 54$. Since $V_{\\text{prod}} \\approx 180.12$ and $V_{\\text{use}} \\approx 178.53$, production is still greater than consumption, meaning they have not crossed yet."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Intermediate Calculation Accuracy",
+            "content": "When evaluating nested iterations like cube roots, never round your intermediate values on your page before performing the next step. Carrying unrounded values stored in your calculator memory is probably the safest way to prevent rounding drift in your final decimal places."
+        }
+    },
+    {
+        "id": "004102",
+        "board": "AQA",
+        "major_area": "Exponentials and logarithms",
+        "topic": "Exponential modelling",
+        "subtopic": [
+            "Exponential Growth and Decay",
+            "Numerical Iteration"
+        ],
+        "img": false,
+        "question": "A technology company models its annual revenue, $R$ (in millions of pounds), using:<br>$$R = 5 + 30\\left(\\dfrac{t}{10}\\right)^2 - 10\\left(\\dfrac{t}{10}\\right)^3$$<br>where $t$ is the number of years since 1 January 2010.<br><br>(a) (i) The model is used to predict the time, $T$, when annual revenue will drop to zero. Show that $T$ satisfies the equation:<br>$$T = \\sqrt{30T + \\dfrac{500}{T}}$$ <br>(a) (ii) Use the iterative formula $T_{n+1} = \\sqrt{30T_n + \\dfrac{500}{T_n}}$, with $T_0 = 31$, to find the values of $T_1$, $T_2$, and $T_3$, giving your answers to three decimal places.<br><br>(a) (iii) Explain the relevance of using $T_0 = 31$.<br><br>(b) The company's annual operating cost, $C$ (in millions of pounds), is modelled by:<br>$$C = 1.2 \\times 1.09^t$$<br>Use the models to show that the company's annual costs and annual revenue will be equal during the year 2038.",
+        "steps": [
+            "For Part (a)(i), set the revenue $R$ equal to $0$ and expand the exponents: $$0 = 5 + 30\\left(\\dfrac{T}{10}\\right)^2 - 10\\left(\\dfrac{T}{10}\\right)^3 \\implies 0 = 5 + 30\\left(\\dfrac{T^2}{100}\\right) - 10\\left(\\dfrac{T^3}{1\\,000}\\right)$$, which simplifies to: $$0 = 5 + \\dfrac{3T^2}{10} - \\dfrac{T^3}{100}$$",
+            "Multiply the entire equation by $100$ to clear the fractions: $$0 = 500 + 30T^2 - T^3$$",
+            "Rearrange the terms and divide both sides by $T$ (since $T > 0$): $$T^3 = 30T^2 + 500 \\implies T^2 = 30T + \\dfrac{500}{T}$$",
+            "Take the square root of both sides to obtain the target iterative relation: $$T = \\sqrt{30T + \\dfrac{500}{T}}$$ as required.",
+            "For Part (a)(ii), substitute $T_0 = 31$ into the formula to find the successive iterations: $$T_1 = \\sqrt{30(31) + \\dfrac{500}{31}} = \\sqrt{930 + 16.129} = \\sqrt{946.129} \\approx 30.759$$",
+            "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt{30(30.7592) + \\dfrac{500}{30.7592}} \\approx \\sqrt{939.031} \\approx 30.644$$ and $$T_3 = \\sqrt{30(30.6436) + \\dfrac{500}{30.6436}} \\approx \\sqrt{935.625} \\approx 30.588$$",
+            "For Part (a)(iii), explain the relevance: $T = 31$ corresponds to the year 2041 (since $2010 + 31 = 2041$). This provides a realistic starting estimate that is close to the expected root, which improves the speed of convergence.",
+            "For Part (b), find the intersection interval by evaluating the difference between revenue and costs. Let $f(t) = R - C$. The year 2038 corresponds to $t = 28$ (since $2010 + 28 = 2038$).",
+            "Evaluate both models at $t = 28$: $$R = 5 + 30\\left(\\dfrac{28}{10}\\right)^2 - 10\\left(\\dfrac{28}{10}\\right)^3 \\approx 20.68\\text{ million}$$ and $$C = 1.2 \\times 1.09^{28} \\approx 13.40\\text{ million}$$. Since $20.68 > 13.40$, revenue exceeds operating costs.",
+            "Evaluate both models at $t = 29$: $$R = 5 + 30\\left(\\dfrac{29}{10}\\right)^2 - 10\\left(\\dfrac{29}{10}\\right)^3 \\approx 13.41\\text{ million}$$ and $$C = 1.2 \\times 1.09^{29} \\approx 14.61\\text{ million}$$. Since $13.41 < 14.61$, costs now exceed revenue.",
+            "Since the difference $R - C$ changes sign from positive to negative between $t = 28$ and $t = 29$, the curves must intersect during this interval (which corresponds exactly to the calendar year 2038).",
+            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 30.759,\\ T_2 = 30.644,\\ T_3 = 30.588,\\quad \\text{Part (b): } 28 < t < 29 \\implies 2038$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 30.763,\\ T_2 = 30.642,\\ T_3 = 30.593,\\quad \\text{Part (b): } 28 < t < 29 \\implies 2038$$",
+                "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the square root of $946.129$. Carrying the rounded value $T_1 \\approx 30.763$ instead of $30.759$ caused your subsequent iterations to drift. Use full calculator accuracy."
+            },
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 30.759,\\ T_2 = 30.644,\\ T_3 = 30.588,\\quad \\text{Part (b): } 27 < t < 28 \\implies 2037$$",
+                "feedback": "In Part (b), check your interval analysis. While $t = 28$ is your target value, evaluating both models shows that they do not cross until $t$ is between $28$ and $29$, which corresponds to the year 2038."
+            },
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 30.759,\\ T_2 = 30.644,\\ T_3 = 30.588,\\quad \\text{Part (b): } 29 < t < 30 \\implies 2039$$",
+                "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 28$. Since $R \\approx 20.68$ and $C \\approx 13.40$, revenue is still greater than costs, meaning they have not crossed yet."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Variable Rearrangements",
+            "content": "When manipulating polynomial equations to isolate $T^2$ or $T^3$, always check which index power you are dividing by. A common slip under exam pressure is to divide by the wrong power, which completely prevents you from matching the target iterative formula."
+        }
+    },
+    {
+        "id": "004123",
+        "board": "AQA",
+        "major_area": "Exponentials and logarithms",
+        "topic": "Exponential modelling",
+        "subtopic": [
+            "Exponential Growth and Decay",
+            "Numerical Iteration"
+        ],
+        "img": false,
+        "question": "The volume of water, $V$ (in thousands of cubic metres), in a reservoir $t$ months after a prolonged dry spell begins is modelled by:<br>$$V = 8 + 48\\left(\\dfrac{t}{12}\right)^2 - 8\\left(\\dfrac{t}{12}\right)^3$$<br>(a) (i) The model is used to predict the time, $T$, when the reservoir will be completely empty. Show that $T$ satisfies the equation:<br>$$T = \\sqrt[3]{72T^2 + 1728}$$ <br>(a) (ii) Use the iterative formula $T_{n+1} = \\sqrt[3]{72T_n^2 + 1728}$, with $T_0 = 73$, to find the values of $T_1$, $T_2$, and $T_3$, giving your answers to three decimal places.<br><br>(a) (iii) Explain the relevance of using $T_0 = 73$.<br><br>(b) The constant inflow of water from a small feeding stream, $V_{\\text{in}}$ (in thousands of cubic metres per month), is modelled by:<br>$$V_{\\text{in}} = 0.5 \\times 1.07^t$$<br>Use the models to show that the inflow of water and the volume of water in the reservoir will be equal during the 70th month.",
+        "steps": [
+            "For Part (a)(i), set the volume $V$ equal to $0$ and expand the exponents: $$0 = 8 + 48\\left(\\dfrac{T}{12}\right)^2 - 8\\left(\\dfrac{T}{12}\right)^3 \\implies 0 = 8 + 48\\left(\\dfrac{T^2}{144}\\right) - 8\\left(\\dfrac{T^3}{1728}\\right)$$, which simplifies to: $$0 = 8 + \\dfrac{T^2}{3} - \\dfrac{T^3}{216}$$",
+            "Multiply the entire equation by $216$ to clear the fractions: $$0 = 1728 + 72T^2 - T^3$$",
+            "Rearrange the terms and isolate $T^3$: $$T^3 = 72T^2 + 1728$$",
+            "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{72T^2 + 1728}$$ as required.",
+            "For Part (a)(ii), substitute $T_0 = 73$ into the formula to find the successive iterations: $$T_1 = \\sqrt[3]{72(73)^2 + 1728} = \\sqrt[3]{383\\,688 + 1728} = \\sqrt[3]{385\\,416} \\approx 72.775$$",
+            "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{72(72.7749)^2 + 1728} \\approx \\sqrt[3]{383\\,052.9} \\approx 72.626$$ and $$T_3 = \\sqrt[3]{72(72.6256)^2 + 1728} \\approx \\sqrt[3]{381\\,489.3} \\approx 72.527$$",
+            "For Part (a)(iii), explain the relevance: $T = 73$ months corresponds to just over 6 years ($6 \\times 12 = 72$ months). This provides a realistic starting estimate that is close to the expected root, which improves the speed of convergence.",
+            "For Part (b), find the intersection interval by evaluating the difference between reservoir volume and inflow. Let $f(t) = V - V_{\\text{in}}$.",
+            "Evaluate both models at $t = 69$: $$V = 8 + 48\\left(\\dfrac{69}{12}\right)^2 - 8\\left(\\dfrac{69}{12}\right)^3 \\approx 74.13\\text{ thousand}$$ and $$V_{\\text{in}} = 0.5 \\times 1.07^{69} \\approx 53.20\\text{ thousand}$$. Since $74.13 > 53.20$, reservoir volume exceeds inflow.",
+            "Evaluate both models at $t = 70$: $$V = 8 + 48\\left(\\dfrac{70}{12}\right)^2 - 8\\left(\\dfrac{70}{12}\right)^3 \\approx 53.37\\text{ thousand}$$ and $$V_{\\text{in}} = 0.5 \\times 1.07^{70} \\approx 56.92\\text{ thousand}$$. Since $53.37 < 56.92$, inflow now exceeds reservoir volume.",
+            "Since the difference $V - V_{\\text{in}}$ changes sign from positive to negative between $t = 69$ and $t = 70$, the curves must intersect during this interval (which corresponds exactly to the 70th month).",
+            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 72.775,\\ T_2 = 72.626,\\ T_3 = 72.527,\\quad \\text{Part (b): } 69 < t < 70 \\implies \\text{70th month}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 72.700,\\ T_2 = 72.400,\\ T_3 = 72.200,\\quad \\text{Part (b): } 69 < t < 70 \\implies \\text{70th month}$$",
+                "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $385,416$. Carrying the rounded value $T_1 \\approx 72.700$ instead of $72.775$ caused your subsequent iterations to drift. Use full calculator accuracy."
+            },
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 72.775,\\ T_2 = 72.626,\\ T_3 = 72.527,\\quad \\text{Part (b): } 68 < t < 69 \\implies \\text{69th month}$$",
+                "feedback": "In Part (b), check your interval analysis. While $t = 69$ is your target value, evaluating both models shows that they do not cross until $t$ is between $69$ and $70$, which corresponds to the 70th month."
+            },
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 72.775,\\ T_2 = 72.626,\\ T_3 = 72.527,\\quad \\text{Part (b): } 70 < t < 71 \\implies \\text{71st month}$$",
+                "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 69$. Since $V \\approx 74.13$ and $V_{\\text{in}} \\approx 53.20$, reservoir volume is still greater than inflow, meaning they have not crossed yet."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Tracking Fractional Exponents",
+            "content": "When expanding and simplifying terms like $(t/12)^3$, write out the denominator power clearly as $1728$. Cancelling the coefficient factors systematically is probably the safest way to avoid arithmetic slips during your algebraic rearrangments."
+        }
+    },
+    {
+        "id": "004104",
+        "board": "AQA",
+        "major_area": "Calculus",
+        "topic": "Numerical methods",
+        "subtopic": [
+            "Newton-Raphson Method",
+            "Radian Measure"
+        ],
+        "img": false,
+        "question": "The rate of a primary chemical reaction, $R$ (in moles per second), is modelled by<br>$$R = 5 + 50\\left(\dfrac{t}{10}\right)^3 - 25\\left(\dfrac{t}{10}\right)^4$$<br>where $t$ is the time in minutes.<br><br>(a) (i) The model is used to predict the time, $T$, when the primary reaction stops. Show that $T$ satisfies the equation:<br>$$T = \sqrt[3]{20T^2 + \\dfrac{2000}{T}}$$<br>(a) (ii) Use the iterative formula $T_{n+1} = \\sqrt[3]{20T_n^2 + \\dfrac{2000}{T_n}}$, with $T_0 = 21$, to find the values of $T_1$, $T_2$, and $T_3$, giving your answers to three decimal places.<br><br>(a) (iii) Explain the relevance of using $T_0 = 21$.<br><br>(b) A secondary chemical inhibitor is introduced, and its reaction rate, $R_{\\text{inh}}$ (in moles per second), is modelled by:<br>$$R_{\\text{inh}} = 0.8 \\times 1.15^t$$<br>Use the models to show that the inhibitor's reaction rate and the primary reaction rate will be equal during the 20th minute.",
+        "steps": [
+            "For Part (a)(i), set the rate $R$ equal to $0$ and expand the exponents: $$0 = 5 + 50\\left(\dfrac{T}{10}\right)^3 - 25\\left(\dfrac{T}{10}\right)^4 \\implies 0 = 5 + 50\\left(\dfrac{T^3}{1\\,000}\\right) - 25\\left(\dfrac{T^4}{10\\,000}\\right)$$, which simplifies to: $$0 = 5 + \\dfrac{T^3}{20} - \\dfrac{T^4}{400}$$",
+            "Multiply the entire equation by $400$ to clear the fractions: $$0 = 2\\,000 + 20T^3 - T^4$$",
+            "Rearrange the terms and divide both sides by $T$ (since $T > 0$): $$T^4 = 20T^3 + 2\\,000 \\implies T^3 = 20T^2 + \\dfrac{2\\,000}{T}$$",
+            "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{20T^2 + \\dfrac{2\\,000}{T}}$$ as required.",
+            "For Part (a)(ii), substitute $T_0 = 21$ into the formula to find the successive iterations: $$T_1 = \\sqrt[3]{20(21)^2 + \\dfrac{2\\,000}{21}} = \\sqrt[3]{8\\,820 + 95.238} = \\sqrt[3]{8\\,915.238} \\approx 20.735$$",
+            "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{20(20.7352)^2 + \\dfrac{2\\,000}{20.7352}} \\approx \\sqrt[3]{8\\,695.45} \\approx 20.563$$ and $$T_3 = \\sqrt[3]{20(20.5631)^2 + \\dfrac{2\\,000}{20.5631}} \\approx \\sqrt[3]{8\\,554.16} \\approx 20.451$$",
+            "For Part (a)(iii), explain the relevance: $T = 21$ minutes is a realistic starting estimate that is close to the expected root (since the reaction stops just over 20 minutes), which improves the speed of convergence.",
+            "For Part (b), find the intersection interval by evaluating the difference between reaction rates. Let $f(t) = R - R_{\\text{inh}}$.",
+            "Evaluate both models at $t = 19$: $$R = 5 + 50\\left(\dfrac{19}{10}\right)^3 - 25\\left(\dfrac{19}{10}\right)^4 \\approx 22.15\\text{ moles/s}$$ and $$R_{\\text{inh}} = 0.8 \\times 1.15^{19} \\approx 11.39\\text{ moles/s}$$. Since $22.15 > 11.39$, primary reaction rate exceeds the inhibitor rate.",
+            "Evaluate both models at $t = 20$: $$R = 5 + 50\\left(\dfrac{20}{10}\right)^3 - 25\\left(\dfrac{20}{10}\right)^4 = 5\\text{ moles/s}$$ and $$R_{\\text{inh}} = 0.8 \\times 1.15^{20} \\approx 13.09\\text{ moles/s}$$. Since $5 < 13.09$, the inhibitor rate now exceeds the primary reaction rate.",
+            "Since the difference $R - R_{\\text{inh}}$ changes sign from positive to negative between $t = 19$ and $t = 20$, the curves must intersect during this interval (which corresponds exactly to the 20th minute).",
+            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 20.735,\\ T_2 = 20.563,\\ T_3 = 20.451,\\quad \\text{Part (b): } 19 < t < 20 \\implies \\text{20th minute}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 20.730,\\ T_2 = 20.610,\\ T_3 = 20.540,\\quad \\text{Part (b): } 19 < t < 20 \\implies \\text{20th minute}$$",
+                "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $8,915.24$. Carrying the rounded value $T_1 \\approx 20.730$ instead of $20.735$ caused your subsequent iterations to drift. Use full calculator accuracy."
+            },
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 20.735,\\ T_2 = 20.563,\\ T_3 = 20.451,\\quad \\text{Part (b): } 18 < t < 19 \\implies \\text{19th minute}$$",
+                "feedback": "In Part (b), check your interval analysis. While $t = 19$ is your target value, evaluating both models shows that they do not cross until $t$ is between $19$ and $20$, which corresponds to the 20th minute."
+            },
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 20.735,\\ T_2 = 20.563,\\ T_3 = 20.451,\\quad \\text{Part (b): } 20 < t < 21 \\implies \\text{21st minute}$$",
+                "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 19$. Since $R \\approx 22.15$ and $R_{\\text{inh}} \\approx 11.39$, primary rate is still greater than inhibitor rate, meaning they have not crossed yet."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Intermediate Step Preservation",
+            "content": "When performing iterative operations like cube roots, always keep the unrounded value in your calculator. Rounding too early is probably the most common way students lose accuracy marks on these numerical sequences."
+        }
+    },
+    {
+        "id": "004125",
+        "board": "AQA",
+        "major_area": "Exponentials and logarithms",
+        "topic": "Exponential modelling",
+        "subtopic": [
+            "Exponential Growth and Decay",
+            "Numerical Iteration"
+        ],
+        "img": false,
+        "question": "The total value of a corporate delivery fleet, $V$ (in millions of pounds), $t$ years after purchase is modelled by:<br>$$V = 4 + 40\\left(\\dfrac{t}{20}\\right)^3 - 20\\left(\\dfrac{t}{20}\\right)^4$$<br>(a) (i) The model is used to predict the time, $T$, when the total value of the fleet will depreciate to zero. Show that $T$ satisfies the equation:<br>$$T = \\sqrt[3]{40T^2 + \\dfrac{32\\,000}{T}}$$ <br>(a) (ii) Use the iterative formula $T_{n+1} = \\sqrt[3]{40T_n^2 + \\dfrac{32\\,000}{T_n}}$, with $T_0 = 41$, to find the values of $T_1$, $T_2$, and $T_3$, giving your answers to three decimal places.<br><br>(a) (iii) Explain the relevance of using $T_0 = 41$.<br><br>(b) The company's annual fleet maintenance cost, $C$ (in millions of pounds), is modelled by:<br>$$C = 0.2 \\times 1.085^t$$<br>Use the models to show that the annual maintenance cost and the total fleet value will be equal during the 40th year.",
+        "steps": [
+            "For Part (a)(i), set the value $V$ equal to $0$ and expand the exponents: $$0 = 4 + 40\\left(\\dfrac{T}{20}\\right)^3 - 20\\left(\\dfrac{T}{20}\\right)^4 \\implies 0 = 4 + 40\\left(\\dfrac{T^3}{8\\,000}\\right) - 20\\left(\\dfrac{T^4}{160\\,000}\\right)$$, which simplifies to: $$0 = 4 + \\dfrac{T^3}{200} - \\dfrac{T^4}{8\\,000}$$",
+            "Multiply the entire equation by $8\\,000$ to clear the fractions: $$0 = 32\\,000 + 40T^3 - T^4$$",
+            "Rearrange the terms and divide both sides by $T$ (since $T > 0$): $$T^4 = 40T^3 + 32\\,000 \\implies T^3 = 40T^2 + \\dfrac{32\\,000}{T}$$",
+            "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{40T^2 + \\dfrac{32\\,000}{T}}$$ as required.",
+            "For Part (a)(ii), substitute $T_0 = 41$ into the formula to find the successive iterations: $$T_1 = \\sqrt[3]{40(41)^2 + \\dfrac{32\\,000}{41}} = \\sqrt[3]{67\\,240 + 780.487} = \\sqrt[3]{68\\,020.487} \\approx 40.821$$",
+            "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{40(40.8205)^2 + \\dfrac{32\\,000}{40.8205}} \\approx \\sqrt[3]{67\\,436.4} \\approx 40.704$$ and $$T_3 = \\sqrt[3]{40(40.7037)^2 + \\dfrac{32\\,000}{40.7037}} \\approx \\sqrt[3]{67\\,057.5} \\approx 40.627$$",
+            "For Part (a)(iii), explain the relevance: $T = 41$ years corresponds to a realistic starting estimate that is close to the expected root (since the fleet value depreciates to zero just over 40 years), which improves the speed of convergence.",
+            "For Part (b), find the intersection interval by evaluating the difference between fleet value and maintenance costs. Let $f(t) = V - C$.",
+            "Evaluate both models at $t = 39$: $$V = 4 + 40\\left(\\dfrac{39}{20}\\right)^3 - 20\\left(\\dfrac{39}{20}\\right)^4 \\approx 11.42\\text{ million}$$ and $$C = 0.2 \times 1.085^{39} \\approx 4.82\\text{ million}$$. Since $11.42 > 4.82$, fleet value exceeds maintenance costs.",
+            "Evaluate both models at $t = 40$: $$V = 4 + 40\\left(\\dfrac{40}{20}\\right)^3 - 20\\left(\\dfrac{40}{20}\\right)^4 = 4\\text{ million}$$ and $$C = 0.2 \times 1.085^{40} \\approx 5.23\\text{ million}$$. Since $4 < 5.23$, maintenance costs now exceed the fleet value.",
+            "Since the difference $V - C$ changes sign from positive to negative between $t = 39$ and $t = 40$, the curves must intersect during this interval (which corresponds exactly to the 40th year).",
+            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 40.821,\\ T_2 = 40.704,\\ T_3 = 40.627,\\quad \\text{Part (b): } 39 < t < 40 \\implies \\text{40th year}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 40.820,\\ T_2 = 40.730,\\ T_3 = 40.670,\\quad \\text{Part (b): } 39 < t < 40 \\implies \\text{40th year}$$",
+                "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $68,020.5$. Carrying the rounded value $T_1 \\approx 40.820$ instead of $40.821$ caused your subsequent iterations to drift. Use full calculator accuracy."
+            },
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 40.821,\\ T_2 = 40.704,\\ T_3 = 40.627,\\quad \\text{Part (b): } 38 < t < 39 \\implies \\text{39th year}$$",
+                "feedback": "In Part (b), check your interval analysis. While $t = 39$ is your target value, evaluating both models shows that they do not cross until $t$ is between $39$ and $40$, which corresponds to the 40th year."
+            },
+            {
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 40.821,\\ T_2 = 40.704,\\ T_3 = 40.627,\\quad \\text{Part (b): } 40 < t < 41 \\implies \\text{41st year}$$",
+                "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 39$. Since $V \\approx 11.42$ and $C \\approx 4.82$, fleet value is still greater than maintenance costs, meaning they have not crossed yet."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Sanity Checking Your Boundaries",
+            "content": "When performing interval analysis, always write out the decimal values of both models at the boundary endpoints. Showing a clear sign change in your difference function is probably the most reliable way to secure full reasoning marks."
+        }
     }
+
 
 
 
