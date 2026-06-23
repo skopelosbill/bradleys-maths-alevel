@@ -659,7 +659,7 @@ window.ALEVEL_QUESTIONS = [
             "Calculate the time elapsed between 9 am and 2 pm, which is $t = 5$ hours. Substitute $m_0 = 300$ and $t = 5$ into the model: $$m = 300\\text{e}^{-0.15403 \\times 5} = 300\\text{e}^{-0.77015} \\approx 138.93\\text{ mg} \\approx 139\\text{ mg}$$",
             "For Part (b), to stay below 350 mg immediately after taking a new 150 mg dose, the mass remaining in the body just before the dose must satisfy: $$\\text{Mass remaining} + 150 \\le 350 \\implies \\text{Mass remaining} \\le 200\\text{ mg}$$",
             "Set $m = 200$ and solve for $t$: $$200 = 300\\text{e}^{-kt} \\implies \\text{e}^{-kt} = \\dfrac{200}{300} = \\dfrac{2}{3}$$",
-            "Take the natural logarithm of both sides to isolate the exponent: $$-kt = \\ln\\left(\\dfrac{2}{3}\right) \\implies kt = \\ln(1.5) \\approx 0.40547$$",
+            "Take the natural logarithm of both sides to isolate the exponent: $$-kt = \\ln\\left(\\dfrac{2}{3}\\right) \\implies kt = \\ln(1.5) \\approx 0.40547$$",
             "Divide by the decay constant $k = 0.15403$ to find the time $t$ in hours: $$t = \\dfrac{0.40547}{0.15403} \\approx 2.63233\\text{ hours}$$",
             "Convert the decimal hours to minutes: $$2\\text{ hours and } (0.63233 \\times 60)\\text{ minutes} \\approx 2\\text{ hours and } 38\\text{ minutes}$$",
             "Add this time elapsed to 9 am: $$9\\text{ am} + 2\\text{ hours } 38\\text{ minutes} = 11\\text{:}38\\text{ am}$$",
@@ -668,8 +668,8 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "$$\\text{Part (a): } 139\\text{ mg},\\quad \\text{Part (b): } 11\\text{:}38\\text{ am}$$",
-                "feedback": "This is the correct answer. You have successfully resolved all parts of the drug elimination model."
+                "ans": "$$\\text{Part (a): } 75\\text{ mg},\\quad \\text{Part (b): } 11\\text{:}38\\text{ am}$$",
+                "feedback": "In Part (a), you probably assumed the drug halves twice because 5 hours is close to two half-lives of 4.5 hours (which would divide 300 mg by 4 to get 75 mg). However, you must use the continuous exponential decay model with the decay constant $k$ to get the precise remaining mass of $139\\text{ mg}$."
             },
             {
                 "ans": "$$\\text{Part (a): } 139\\text{ mg},\\quad \\text{Part (b): } 11\\text{:}25\\text{ am}$$",
