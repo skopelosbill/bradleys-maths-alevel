@@ -2,6 +2,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004051",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Sequences & Series",
         "topic": "Series",
         "subtopic": [
@@ -43,6 +44,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004052",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Sequences & Series",
         "topic": "Series",
         "subtopic": [
@@ -84,6 +86,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004053",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Sequences & Series",
         "topic": "Series",
         "subtopic": [
@@ -125,6 +128,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004054",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Sequences & Series",
         "topic": "Series",
         "subtopic": [
@@ -166,6 +170,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004055",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Sequences & Series",
         "topic": "Series",
         "subtopic": [
@@ -207,6 +212,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004056",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -247,6 +253,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004057",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -287,6 +294,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004058",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -327,6 +335,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004059",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -368,6 +377,7 @@ window.ALEVEL_QUESTIONS = [
         "id": "004060",
         "board": "Pearson Edexcel",
         "major_area": "Calculus",
+        "level": "A",
         "topic": "Differentiation",
         "subtopic": [
             "Product Rule",
@@ -407,6 +417,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004061",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Integration",
         "subtopic": [
@@ -453,6 +464,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004062",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Integration",
         "subtopic": [
@@ -499,6 +511,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004063",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Integration",
         "subtopic": [
@@ -545,6 +558,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004064",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Integration",
         "subtopic": [
@@ -591,6 +605,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004065",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Integration",
         "subtopic": [
@@ -637,6 +652,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004066",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -680,6 +696,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004067",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -723,6 +740,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004068",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -766,6 +784,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004069",
         "board": "Pearson Edexcel",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -808,7 +827,8 @@ window.ALEVEL_QUESTIONS = [
     },
     {
         "id": "004070",
-        "board": "Pearson Edexcel",    
+        "board": "Pearson Edexcel",
+        "level": "A",    
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -852,6 +872,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004071",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -888,6 +909,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004072",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -924,6 +946,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004073",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -960,6 +983,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004074",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -996,6 +1020,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004075",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -1032,6 +1057,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004076",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Algebra and functions",
         "topic": "Graph transformations",
         "subtopic": [
@@ -1067,6 +1093,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004077",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Algebra and functions",
         "topic": "Graph transformations",
         "subtopic": [
@@ -1103,6 +1130,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004078",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Algebra and functions",
         "topic": "Graph transformations",
         "subtopic": [
@@ -1139,6 +1167,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004079",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Algebra and functions",
         "topic": "Graph transformations",
         "subtopic": [
@@ -1175,6 +1204,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004080",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Algebra and functions",
         "topic": "Graph transformations",
         "subtopic": [
@@ -1211,6 +1241,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004081",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Sequences",
         "subtopic": [
@@ -1247,6 +1278,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004082",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Sequences",
         "subtopic": [
@@ -1283,6 +1315,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004083",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Sequences",
         "subtopic": [
@@ -1319,6 +1352,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004084",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Sequences",
         "subtopic": [
@@ -1355,6 +1389,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004085",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Sequences",
         "subtopic": [
@@ -1391,6 +1426,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004086",
         "board": "AQA",
+        "level": "A",
         "major_area": "Algebra and functions",
         "topic": "Functions",
         "subtopic": [
@@ -1428,6 +1464,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004087",
         "board": "AQA",
+        "level": "A",
         "major_area": "Algebra and functions",
         "topic": "Functions",
         "subtopic": [
@@ -1465,6 +1502,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004088",
         "board": "AQA",
+        "level": "A",
         "major_area": "Algebra and functions",
         "topic": "Functions",
         "subtopic": [
@@ -1502,6 +1540,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004089",
         "board": "AQA",
+        "level": "A",
         "major_area": "Algebra and functions",
         "topic": "Functions",
         "subtopic": [
@@ -1539,6 +1578,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004090",
         "board": "AQA",
+        "level": "A",
         "major_area": "Algebra and functions",
         "topic": "Functions",
         "subtopic": [
@@ -1576,6 +1616,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004091",
         "board": "AQA",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -1614,6 +1655,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004092",
         "board": "AQA",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -1652,6 +1694,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004093",
         "board": "AQA",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -1690,6 +1733,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004094",
         "board": "AQA",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -1728,6 +1772,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004095",
         "board": "AQA",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Differentiation",
         "subtopic": [
@@ -1766,6 +1811,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004096",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Binomial expansion",
         "subtopic": [
@@ -1805,6 +1851,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004097",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Binomial expansion",
         "subtopic": [
@@ -1844,6 +1891,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004098",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Binomial expansion",
         "subtopic": [
@@ -1883,6 +1931,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004099",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Binomial expansion",
         "subtopic": [
@@ -1922,6 +1971,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004100",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Binomial expansion",
         "subtopic": [

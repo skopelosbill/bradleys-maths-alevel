@@ -2,6 +2,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004101",
         "board": "AQA",
+        "level": "A",
         "major_area": "Coordinate geometry",
         "topic": "Circles",
         "subtopic": [
@@ -43,6 +44,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004102",
         "board": "AQA",
+        "level": "A",
         "major_area": "Coordinate geometry",
         "topic": "Circles",
         "subtopic": [
@@ -86,6 +88,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004103",
         "board": "AQA",
+        "level": "A",
         "major_area": "Coordinate geometry",
         "topic": "Circles",
         "subtopic": [
@@ -129,6 +132,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004104",
         "board": "AQA",
+        "level": "A",
         "major_area": "Coordinate geometry",
         "topic": "Circles",
         "subtopic": [
@@ -172,6 +176,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004105",
         "board": "AQA",
+        "level": "A",
         "major_area": "Coordinate geometry",
         "topic": "Circles",
         "subtopic": [
@@ -214,6 +219,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004106",
         "board": "AQA",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Numerical methods",
         "subtopic": [
@@ -257,6 +263,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004107",
         "board": "AQA",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Numerical methods",
         "subtopic": [
@@ -301,6 +308,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004108",
         "board": "AQA",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Numerical methods",
         "subtopic": [
@@ -343,6 +351,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004109",
         "board": "AQA",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Numerical methods",
         "subtopic": [
@@ -385,6 +394,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004110",
         "board": "AQA",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Numerical methods",
         "subtopic": [
@@ -427,6 +437,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004111",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Arithmetic progressions",
         "subtopic": [
@@ -472,6 +483,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004112",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Arithmetic progressions",
         "subtopic": [
@@ -515,6 +527,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004113",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Arithmetic progressions",
         "subtopic": [
@@ -558,6 +571,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004114",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Arithmetic progressions",
         "subtopic": [
@@ -602,6 +616,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004115",
         "board": "AQA",
+        "level": "A",
         "major_area": "Sequences and series",
         "topic": "Arithmetic progressions",
         "subtopic": [
@@ -645,6 +660,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004116",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Exponentials and logarithms",
         "topic": "Exponential modelling",
         "subtopic": [
@@ -689,6 +705,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004117",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Exponentials and logarithms",
         "topic": "Exponential modelling",
         "subtopic": [
@@ -731,6 +748,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004118",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Exponentials and logarithms",
         "topic": "Exponential modelling",
         "subtopic": [
@@ -773,6 +791,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004119",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Exponentials and logarithms",
         "topic": "Exponential modelling",
         "subtopic": [
@@ -814,6 +833,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004120",
         "board": "AQA",
+        "level": "AS",
         "major_area": "Exponentials and logarithms",
         "topic": "Exponential modelling",
         "subtopic": [
@@ -857,6 +877,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004121",
         "board": "AQA",
+        "level": "A",
         "major_area": "Exponentials and logarithms",
         "topic": "Exponential modelling",
         "subtopic": [
@@ -902,6 +923,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004122",
         "board": "AQA",
+        "level": "A",
         "major_area": "Exponentials and logarithms",
         "topic": "Exponential modelling",
         "subtopic": [
@@ -947,6 +969,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004123",
         "board": "AQA",
+        "level": "A",
         "major_area": "Exponentials and logarithms",
         "topic": "Exponential modelling",
         "subtopic": [
@@ -992,6 +1015,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004124",
         "board": "AQA",
+        "level": "A",
         "major_area": "Calculus",
         "topic": "Numerical methods",
         "subtopic": [
@@ -1037,6 +1061,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004125",
         "board": "AQA",
+        "level": "A",
         "major_area": "Exponentials and logarithms",
         "topic": "Exponential modelling",
         "subtopic": [
@@ -1082,6 +1107,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004126",
         "board": "AQA",
+        "level": "A",
         "major_area": "Algebra and functions",
         "topic": "Polynomials",
         "subtopic": [
@@ -1129,6 +1155,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004127",
         "board": "AQA",
+        "level": "A",
         "major_area": "Algebra and functions",
         "topic": "Polynomials",
         "subtopic": [
@@ -1174,6 +1201,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004128",
         "board": "AQA",
+        "level": "A",
         "major_area": "Algebra and functions",
         "topic": "Polynomials",
         "subtopic": [
@@ -1220,6 +1248,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004129",
         "board": "AQA",
+        "level": "A",
         "major_area": "Algebra and functions",
         "topic": "Polynomials",
         "subtopic": [
@@ -1266,6 +1295,7 @@ window.ALEVEL_QUESTIONS = [
     {
         "id": "004130",
         "board": "AQA",
+        "level": "A",
         "major_area": "Algebra and functions",
         "topic": "Polynomials",
         "subtopic": [
