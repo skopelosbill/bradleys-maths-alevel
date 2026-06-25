@@ -1546,7 +1546,208 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Radian Mode Always",
             "content": "When doing calculus with trigonometric functions, you must work in radians. If you use degrees, the derivative of $\\sin\\theta$ is not simply $\\cos\\theta$, but has a scale factor of $\\dfrac{\\pi}{180}$. Always verify your calculator is in radian mode before evaluating trigonometric values."
         }
+    },
+    {
+        "id": "004136",
+        "board": "AQA",
+        "level": "A",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Identities",
+        "subtopic": [
+            "Trigonometric Proofs",
+            "Compound Angle Formulae"
+        ],
+        "img": "images/p1/004131.png",
+        "question": "Some students are trying to prove an identity for $\\cos(A+B)$. They start by drawing two right-angled triangles $ODE$ and $OEF$ as shown in the diagram. Let angle $DOE = A$ and angle $EOF = B$. In triangle $OFR$, the horizontal line is $OD$, and $FR$ is perpendicular to $OD$ at $R$. The line $EP$ is perpendicular to $FR$ at $P$.<br><br>The students' incomplete proof continues:<br>* **Line 1:** $\\cos(A+B) = \\dfrac{OR}{OF}$<br>* **Line 2:** $= \\dfrac{OD - RD}{OF}$<br>* **Line 3:** $= \\dfrac{OD - EP}{OF}$ since $RD = EP$<br>* **Line 4:** $= \\dfrac{OD}{OF} - \\dfrac{EP}{OF}$<br>* **Line 4 (expanded):** $= \\dfrac{OD}{OE} \\times \\dfrac{OE}{OF} - \\dfrac{EP}{EF} \\times \\dfrac{EF}{OF}$<br><br>1. Explain why $\\dfrac{EP}{EF} \\times \\dfrac{EF}{OF}$ in Line 4 leads to $\\sin A \\sin B$ in Line 5.<br>2. Complete Line 4 and Line 5 to prove the identity $\\cos(A+B) = \\cos A \\cos B - \\sin A \\sin B$.<br>3. Explain why the argument used only proves the identity when $A$ and $B$ are acute angles.<br>4. Show how to prove the identity for $\\cos(A-B)$ by substituting $-B$ into the identity for $\\cos(A+B)$, stating any properties of trigonometric functions that you use.",
+        "steps": [
+            "To show why $\\dfrac{EP}{EF} \\times \\dfrac{EF}{OF} = \\sin A \\sin B$, we first identify the angles in our coordinate setup:<br>Since $EP \\parallel OD$ (both are horizontal), the alternate angle $\\angle OEP = \\angle DOE = A$.<br>Since the triangle $OEF$ is right-angled at $E$, $\\angle OEF = 90^\\circ$. This gives:<br>$$\\angle PEF = 90^\\circ - \\angle OEP = 90^\\circ - A$$<br>Inside the right-angled triangle $EPF$, the angles must sum to $180^\\circ$, meaning:<br>$$\\angle EFP = 90^\\circ - \\angle PEF = 90^\\circ - (90^\\circ - A) = A$$",
+            "Now we use our identified angle $A$ inside the right-angled triangle $EPF$:<br>$$\\sin A = \\dfrac{\\text{Opposite}}{\\text{Hypotenuse}} = \\dfrac{EP}{EF}$$<br>Next, looking at the right-angled triangle $OEF$ (with right angle at $E$):<br>$$\\sin B = \\dfrac{\\text{Opposite}}{\\text{Hypotenuse}} = \\dfrac{EF}{OF}$$<br>Multiplying these two ratios together gives:<br>$$\\dfrac{EP}{EF} \\times \\dfrac{EF}{OF} = \\sin A \\sin B$$",
+            "To complete the proof, we interpret the first term in the expanded expression of Line 4:<br>$$\\dfrac{OD}{OE} \\times \\dfrac{OE}{OF}$$<br>In the right-angled triangle $ODE$:<br>$$\\cos A = \\dfrac{\\text{Adjacent}}{\\text{Hypotenuse}} = \\dfrac{OD}{OE}$$<br>In the right-angled triangle $OEF$:<br>$$\\cos B = \\dfrac{\\text{Adjacent}}{\\text{Hypotenuse}} = \\dfrac{OE}{OF}$$",
+            "Substituting these trigonometric ratios back into the expanded expression of Line 4 completed in Line 5 yields:<br>$$\\cos(A+B) = \\cos A \\cos B - \\sin A \\sin B$$",
+            "This geometric argument only proves the identity when $A$ and $B$ are acute because it relies on the physical lengths of sides inside right-angled triangles. In this geometric context, angles must satisfy $0^\\circ < A < 90^\\circ$, $0^\\circ < B < 90^\\circ$, and $A+B < 90^\\circ$. For obtuse or negative angles, these triangles cannot exist, and we must define trigonometric functions using coordinates on a unit circle.",
+            "To prove the identity for $\\cos(A-B)$, we substitute $-B$ into our newly proven identity:<br>$$\\cos(A + (-B)) = \\cos A \\cos(-B) - \\sin A \\sin(-B)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\cos(A-B) = \\cos A \\cos B - \\sin A \\sin B$$",
+                "feedback": "Remember that substituting $-B$ into $\\cos(A+B)$ changes the sign of the second term because $\\sin(-B) = -\\sin B$, which changes the minus sign in the formula to a plus sign."
+            },
+            {
+                "ans": "$$\\cos(A-B) = \\sin A \\cos B - \\cos A \\sin B$$",
+                "feedback": "Be careful not to confuse the sine and cosine subtraction formulas. The cosine subtraction formula consists of products of like functions (cosine-cosine and sine-sine)."
+            },
+            {
+                "ans": "$$\\cos(A-B) = -\\cos A \\cos B + \\sin A \\sin B$$",
+                "feedback": "Remember that cosine is an even function, which means $\\cos(-B) = \\cos B$. It does not change its sign to negative like sine does."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Tracking Triangles",
+            "content": "When explaining geometric proofs, never guess which triangles contain which ratios. It is highly common to mix up your hypotenuses. Always trace the triangle vertices carefully and identify which vertex contains the right angle before defining your sine and cosine ratios."
+        }
+    },
+    {
+        "id": "004137",
+        "board": "AQA",
+        "level": "A",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Identities",
+        "subtopic": [
+            "Trigonometric Proofs",
+            "Compound Angle Formulae"
+        ],
+        "img": "false",
+        "question": "A student is trying to prove the identity for $\\tan(A+B)$ using the known identities for $\\sin(A+B)$ and $\\cos(A+B)$. The student's proof starts:<br>$$\\tan(A+B) = \\dfrac{\\sin(A+B)}{\\cos(A+B)} = \\dfrac{\\sin A \\cos B + \\cos A \\sin B}{\\cos A \\cos B - \\sin A \\sin B}$$<br>To convert this expression into terms of $\\tan A$ and $\\tan B$, the student decides to divide both the numerator and the denominator by $\\cos A \\cos B$.<br><br>1. Show that this division leads to the identity:<br>$$\\tan(A+B) = \\dfrac{\\tan A + \\tan B}{1 - \\tan A \\tan B}$$<br>2. Explain why this identity is not valid if $\\cos A \\cos B = 0$ or if $\\tan A \\tan B = 1$. State the geometric meaning of these restrictions.<br>3. Given that $\\tan A = 2$ and $\\tan B = 3$, find the exact value of $\\tan(A+B)$ and deduce the value of the angle $(A+B)$ in degrees, where $A$ and $B$ are acute angles.",
+        "steps": [
+            "Dividing each term in the numerator of the expression by $\\cos A \\cos B$ gives:<br>$$\\dfrac{\\sin A \\cos B + \\cos A \\sin B}{\\cos A \\cos B} = \\dfrac{\\sin A \\cos B}{\\cos A \\cos B} + \\dfrac{\\cos A \\sin B}{\\cos A \\cos B} = \\dfrac{\\sin A}{\\cos A} + \\dfrac{\\sin B}{\\cos B} = \\tan A + \\tan B$$",
+            "Dividing each term in the denominator of the expression by $\\cos A \\cos B$ gives:<br>$$\\dfrac{\\cos A \\cos B - \\sin A \\sin B}{\\cos A \\cos B} = \\dfrac{\\cos A \\cos B}{\\cos A \\cos B} - \\dfrac{\\sin A \\sin B}{\\cos A \\cos B} = 1 - \\left(\\dfrac{\\sin A}{\\cos A}\\right)\\left(\\dfrac{\\sin B}{\\cos B}\\right) = 1 - \\tan A \\tan B$$",
+            "Combining these two results into the original fraction yields the required identity:<br>$$\\tan(A+B) = \\dfrac{\\tan A + \\tan B}{1 - \\tan A \\tan B}$$",
+            "If $\\cos A \\cos B = 0$, then either $\\cos A = 0$ or $\\cos B = 0$. This implies that either $A$ or $B$ is an odd multiple of $90^\\circ$ (such as $90^\\circ$ or $270^\\circ$), where the tangent function itself is undefined, which makes the division step mathematically invalid.<br><br>If $\\tan A \\tan B = 1$, the denominator becomes $1 - 1 = 0$, resulting in division by zero. Geometrically, this occurs when $A+B$ is an odd multiple of $90^\\circ$, which is where $\\tan(A+B)$ is undefined.",
+            "To find the value when $\\tan A = 2$ and $\\tan B = 3$, we substitute these into the identity:<br>$$\\tan(A+B) = \\dfrac{2 + 3}{1 - (2)(3)} = \\dfrac{5}{1 - 6} = \\dfrac{5}{-5} = -1$$",
+            "Since $A$ and $B$ are acute angles ($0^\\circ < A, B < 90^\\circ$), their sum must lie in the range $0^\\circ < A+B < 180^\\circ$. Within this interval, the only angle satisfying $\\tan(A+B) = -1$ is in the second quadrant:<br>$$A+B = 180^\\circ - 45^\\circ = 135^\\circ$$<br><br>Final Answer: $$\\tan(A+B) = -1, \\quad A+B = 135^\\circ$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\tan(A+B) = 1, \\quad A+B = 45^\\circ$$",
+                "feedback": "Be careful with the sign in the denominator. The denominator is $1 - \\tan A \\tan B$, which gives $1 - 6 = -5$. This results in a value of $-1$, not $+1$."
+            },
+            {
+                "ans": "$$\\tan(A+B) = -1, \\quad A+B = 45^\\circ$$",
+                "feedback": "You have correctly found $\\tan(A+B) = -1$, but $45^\\circ$ is the reference angle. Since tangent is negative, the angle $A+B$ must be in the second quadrant, making it $135^\\circ$."
+            },
+            {
+                "ans": "$$\\tan(A+B) = -1, \\quad A+B = 315^\\circ$$",
+                "feedback": "Although $\\tan(315^\\circ) = -1$, this angle is outside the possible range for the sum of two acute angles. The sum of two acute angles must be less than $180^\\circ$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Quadrant Check",
+            "content": "When working with the tangent of a sum of angles, always consider the quadrants of the individual angles. If $A$ and $B$ are both acute, their sum can easily exceed $90^\\circ$, pushing the result into the second quadrant where tangent is negative."
+        }
+    },
+    {
+        "id": "004138",
+        "board": "AQA",
+        "level": "AS",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Identities",
+        "subtopic": [
+            "Trigonometric Proofs",
+            "Solving Equations"
+        ],
+        "img": "false",
+        "question": "A student attempts to prove the trigonometric identity:<br>$$\\dfrac{1}{\\cos\\theta} - \\cos\\theta = \\sin\\theta\\tan\\theta$$<br>Their written proof is shown below:<br>* **Line 1:** $\\text{LHS} = \\dfrac{1}{\\cos\\theta} - \\cos\\theta$<br>* **Line 2:** $= \\dfrac{1 - \\cos^2\\theta}{\\cos\\theta}$<br>* **Line 3:** $= \\dfrac{\\sin^2\\theta}{\\cos\\theta}$<br>* **Line 4:** $= \\sin\\theta \\left(\\dfrac{\\sin\\theta}{\\cos\\theta}\right)$<br>* **Line 5:** $= \\sin\\theta\\tan\\theta = \\text{RHS}$<br><br>1. State the name of the fundamental trigonometric identity used to transition from Line 2 to Line 3.<br>2. Explain why this proof is invalid for $\\theta = 90^\\circ$ and $\\theta = 270^\\circ$.<br>3. Hence, or otherwise, solve the equation:<br>$$\\dfrac{1}{\\cos\\theta} - \\cos\\theta = 3\\sin\\theta$$<br>for $0^\\circ \\le \\theta \\le 180^\\circ$.",
+        "steps": [
+            "The identity used to transition from Line 2 to Line 3 is $\\sin^2\\theta + \\cos^2\\theta = 1$ (known as the Pythagorean identity), rearranged to $1 - \\cos^2\\theta = \\sin^2\\theta$.",
+            "For $\\theta = 90^\\circ$ and $\\theta = 270^\\circ$, we have $\\cos\\theta = 0$. This makes both the fraction $\\dfrac{1}{\\cos\\theta}$ and the tangent function $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$ undefined due to division by zero. Thus, the algebraic steps in this proof are invalid at these specific angles.",
+            "To solve the equation $\\dfrac{1}{\\cos\\theta} - \\cos\\theta = 3\\sin\\theta$, we substitute our simplified identity for the left-hand side:<br>$$\\dfrac{\\sin^2\\theta}{\\cos\\theta} = 3\\sin\\theta$$",
+            "We must consider two cases to solve this equation without losing solutions by dividing by zero:<br><br>**Case 1:** $\\sin\\theta = 0$<br>Within the domain $0^\\circ \\le \\theta \\le 180^\\circ$, this yields:<br>$$\\theta = 0^\\circ \\quad \\text{and} \\quad \\theta = 180^\\circ$$<br>Both of these are valid solutions because $\\cos(0^\\circ) = 1 \\ne 0$ and $\\cos(180^\\circ) = -1 \\ne 0$.",
+            "**Case 2:** $\\sin\\theta \\ne 0$<br>Since $\\sin\\theta \\ne 0$, we can safely divide both sides of the equation by $\\sin\\theta$:<br>$$\\dfrac{\\sin\\theta}{\\cos\\theta} = 3 \\implies \\tan\\theta = 3$$",
+            "Find the principal value within the range $0^\\circ \\le \\theta \\le 180^\\circ$ using a calculator:<br>$$\\theta = \\tan^{-1}(3) \\approx 71.6^\\circ$$<br>Combining both cases, our complete set of solutions is:<br>$$\\theta = 0^\\circ, \\quad \\theta \\approx 71.6^\\circ, \\quad \\theta = 180^\\circ$$<br><br>Final Answer: $$\\theta = 0^\\circ, \\quad 71.6^\\circ, \\quad 180^\\circ$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\theta = 71.6^\\circ$$",
+                "feedback": "Be careful when dividing both sides of an equation by $\\sin\\theta$. You must check if $\\sin\\theta = 0$ is a solution first, otherwise you lose the solutions $\\theta = 0^\\circ$ and $\\theta = 180^\\circ$."
+            },
+            {
+                "ans": "$$\\theta = 0^\\circ, \\quad 180^\\circ$$",
+                "feedback": "You have correctly identified the boundary solutions where $\\sin\\theta = 0$, but you also need to solve the case where $\\sin\\theta \\ne 0$, which leads to $\\tan\\theta = 3$."
+            },
+            {
+                "ans": "$$\\theta = 0^\\circ, \\quad 71.6^\\circ, \\quad 108.4^\\circ, \\quad 180^\\circ$$",
+                "feedback": "Tangent is positive in the first quadrant and negative in the second quadrant. Since $\\tan\\theta = 3$ is positive, there is only one solution ($71.6^\\circ$) in the range $0^\\circ \\le \\theta \\le 180^\\circ$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Division Pitfalls",
+            "content": "Dividing both sides of a trigonometric equation by a variable expression like $\\sin\\theta$ is one of the most common ways to lose valid solutions. Always factorise instead, or separate the equation into explicit cases."
+        }
+    },
+    {
+        "id": "004139",
+        "board": "AQA",
+        "level": "A",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Identities",
+        "subtopic": [
+            "Trigonometric Proofs",
+            "Double Angle Formulae"
+        ],
+        "img": "false",
+        "question": "A student is trying to prove the triple-angle identity:<br>$$\\cos(3\\theta) = 4\\cos^3\\theta - 3\\cos\\theta$$<br>The student begins by writing $3\\theta$ as $(2\\theta + \\theta)$.<br><br>1. Use the compound angle formula for cosine to express $\\cos(3\\theta)$ in terms of $\\cos(2\\theta)$, $\\sin(2\\theta)$, $\\cos\\theta$, and $\\sin\\theta$.<br>2. By substituting the double-angle formulas for $\\cos(2\\theta)$ and $\\sin(2\\theta)$, complete the proof to show that $\\cos(3\\theta) = 4\\cos^3\\theta - 3\\cos\\theta$.<br>3. Explain why this algebraic proof is valid for all real values of $\\theta$, unlike geometric proofs that rely on right-angled triangles.",
+        "steps": [
+            "Using the compound angle formula $\\cos(A+B) = \\cos A \\cos B - \\sin A \\sin B$ with $A = 2\\theta$ and $B = \\theta$, we expand $\\cos(3\\theta)$ as:<br>$$\\cos(3\\theta) = \\cos(2\\theta + \\theta) = \\cos(2\\theta)\\cos\\theta - \\sin(2\\theta)\\sin\\theta$$",
+            "To express the entire formula in terms of $\\cos\\theta$, we substitute the relevant double-angle formulas:<br>$$\\cos(2\\theta) = 2\\cos^2\\theta - 1$$<br>$$\\sin(2\\theta) = 2\\sin\\theta\\cos\\theta$$<br>Substituting these in gives:<br>$$\\cos(3\\theta) = (2\\cos^2\\theta - 1)\\cos\\theta - (2\\sin\\theta\\cos\\theta)\\sin\\theta$$",
+            "Expand the terms in our expression:<br>$$\\cos(3\\theta) = 2\\cos^3\\theta - \\cos\\theta - 2\\sin^2\\theta\\cos\\theta$$",
+            "Use the Pythagorean identity $\\sin^2\\theta = 1 - \\cos^2\\theta$ to replace the sine term:<br>$$\\cos(3\\theta) = 2\\cos^3\\theta - \\cos\\theta - 2(1 - \\cos^2\\theta)\\cos\\theta$$<br>$$\\cos(3\\theta) = 2\\cos^3\\theta - \\cos\\theta - 2\\cos\\theta + 2\\cos^3\\theta$$",
+            "Collect like terms to complete the algebraic proof:<br>$$\\cos(3\\theta) = (2\\cos^3\\theta + 2\\cos^3\\theta) + (-\\cos\\theta - 2\\cos\\theta) = 4\\cos^3\\theta - 3\\cos\\theta$$",
+            "Unlike geometric proofs that require right-angled triangles where angles are strictly acute (between $0^\\circ$ and $90^\\circ$), this algebraic proof relies solely on identities derived from the unit circle definition of trigonometric functions. Because these core identities are valid for all real angles, this proof is also valid for all real values of $\\theta$.<br><br>Final Answer: $$\\cos(3\\theta) = 4\\cos^3\\theta - 3\\cos\\theta$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\cos(3\\theta) = 3\\cos^3\\theta - 4\\cos\\theta$$",
+                "feedback": "Watch your coefficients. The final formula has $4\\cos^3\\theta$ and $-3\\cos\\theta$. Double-check your final collection of terms."
+            },
+            {
+                "ans": "$$\\cos(3\\theta) = 4\\cos^3\\theta + 3\\cos\\theta$$",
+                "feedback": "Be careful when expanding. $-1\\cos\\theta - 2\\cos\\theta$ simplifies to $-3\\cos\\theta$, not $+3\\cos\\theta$."
+            },
+            {
+                "ans": "$$\\cos(3\\theta) = 4\\cos^3\\theta - \\cos\\theta$$",
+                "feedback": "Ensure you expand $-2(1-\\cos^2\\theta)\\cos\\theta$ fully to $-2\\cos\\theta + 2\\cos^3\\theta$ before gathering terms."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Choosing the Double Angle Formula",
+            "content": "When expanding $\\cos(2\\theta)$, there are three common identities to choose from. Since the target expression is entirely in terms of cosine, choosing the version $2\\cos^2\\theta - 1$ saves you the extra step of converting sines to cosines later."
+        }
+    },
+    {
+        "id": "004140",
+        "board": "AQA",
+        "level": "A",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Identities",
+        "subtopic": [
+            "Trigonometric Proofs",
+            "Compound Angle Formulae"
+        ],
+        "img": "false",
+        "question": "A student is investigating the formula for $\\sin(A-B)$.<br><br>1. Assuming the compound angle identity $\\sin(A+B) = \\sin A \\cos B + \\cos A \\sin B$ is valid for all real angles, prove that:<br>$$\\sin(A-B) = \\sin A \\cos B - \\cos A \\sin B$$<br>State clearly any properties of even and odd trigonometric functions used in your proof.<br>2. By choosing suitable values for $A$ and $B$, use this identity to show that:<br>$$\\sin(15^\\circ) = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$$<br>3. A second student claims that since $\\sin(15^\\circ) > 0$, then $\\sin(-15^\\circ)$ must also be positive. Explain why this claim is incorrect, referencing the symmetry of the sine function.",
+        "steps": [
+            "To prove the identity for $\\sin(A-B)$, we substitute $-B$ into our identity for $\\sin(A+B)$:<br>$$\\sin(A + (-B)) = \\sin A \\cos(-B) + \\cos A \\sin(-B)$$",
+            "We apply the symmetry properties of sine and cosine:<br>Cosine is an even function, so $\\cos(-B) = \\cos B$.<br>Sine is an odd function, so $\\sin(-B) = -\\sin B$.<br><br>Substituting these yields:<br>$$\\sin(A-B) = \\sin A (\\cos B) + \\cos A (-\\sin B) = \\sin A \\cos B - \\cos A \\sin B$$",
+            "To evaluate $\\sin(15^\\circ)$, we choose $A = 45^\\circ$ and $B = 30^\\circ$ because we know their exact trigonometric values:<br>$$\\sin(15^\\circ) = \\sin(45^\\circ - 30^\\circ) = \\sin(45^\\circ)\\cos(30^\\circ) - \\cos(45^\\circ)\\sin(30^\\circ)$$",
+            "Substitute the exact values into the formula:<br>$$\\sin(45^\\circ) = \\dfrac{\\sqrt{2}}{2}, \\quad \\cos(45^\\circ) = \\dfrac{\\sqrt{2}}{2}, \\quad \\cos(30^\\circ) = \\dfrac{\\sqrt{3}}{2}, \\quad \\sin(30^\\circ) = \\dfrac{1}{2}$$<br>$$\\sin(15^\\circ) = \\left(\\dfrac{\\sqrt{2}}{2}\\right)\\left(\\dfrac{\\sqrt{3}}{2}\\right) - \\left(\\dfrac{\\sqrt{2}}{2}\\right)\\left(\\dfrac{1}{2}\\right)$$",
+            "Simplify the fractions:<br>$$\\sin(15^\\circ) = \\dfrac{\\sqrt{6}}{4} - \\dfrac{\\sqrt{2}}{4} = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$$",
+            "The second student's claim that $\\sin(-15^\\circ)$ is positive is incorrect. Because sine is an odd function, it has rotational symmetry about the origin, which means:<br>$$\\sin(-\\theta) = -\\sin(\\theta)$$<br>Therefore, $\\sin(-15^\\circ) = -\\sin(15^\\circ)$. Since $\\sin(15^\\circ) > 0$, $\\sin(-15^\\circ)$ must be negative.<br><br>Final Answer: $$\\sin(15^\\circ) = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\sin(15^\\circ) = \\dfrac{\\sqrt{6} + \\sqrt{2}}{4}$$",
+                "feedback": "The subtraction formula for sine contains a minus sign: $\\sin(A-B) = \\sin A\\cos B - \\cos A\\sin B$. Be careful not to use a plus sign."
+            },
+            {
+                "ans": "$$\\sin(15^\\circ) = \\dfrac{\\sqrt{2} - \\sqrt{6}}{4}$$",
+                "feedback": "Ensure you follow the correct order of the terms in the formula. It is $\\sin A\\cos B - \\cos A\\sin B$, which gives $\\dfrac{\\sqrt{6}}{4} - \\dfrac{\\sqrt{2}}{4}$."
+            },
+            {
+                "ans": "$$\\sin(15^\\circ) = \\dfrac{\\sqrt{3} - 1}{2}$$",
+                "feedback": "Check your exact value multiplications. Remember that $\\dfrac{\\sqrt{2}}{2} \\times \\dfrac{\\sqrt{3}}{2} = \\dfrac{\\sqrt{6}}{4}$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Odd and Even Symmetry",
+            "content": "Always remember the physical, graphical meaning of symmetry: an odd function like sine is symmetrical about the origin (rotational symmetry of $180^\\circ$), while an even function like cosine is symmetrical about the $y$-axis (reflectional symmetry)."
+        }
     }
+
 
 
 
