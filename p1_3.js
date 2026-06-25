@@ -1337,7 +1337,217 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Secant Boundary Ranges",
             "content": "To show that $\\cos x = y$ has no real solutions when $y > 1$, always refer directly to the bounded range $-1 \\le \\cos x \\le 1$. Stating this boundary is probably the quickest and safest way to complete your trigonometric proofs under exam conditions."
         }
+    },
+    {
+        "id": "004131",
+        "board": "AQA",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Stationary Points",
+            "Modelling",
+            "Coordinate Geometry"
+        ],
+        "img": "images/p1/004131.png",
+        "question": "A company is designing a logo. The logo is a circle of radius $6\\text{ inches}$ with an inscribed rectangle. The rectangle must be as large as possible. The company models the logo on an $x$-$y$ coordinate plane with the circle centred at the origin.<br><br>Use calculus to find the maximum area of the rectangle, in square inches. Fully justify your answer.",
+        "steps": [
+            "Let the circle be centred at the origin $(0,0)$. Since the radius is $6$, the equation of the circle is:<br>$$x^2 + y^2 = 36$$",
+            "Let $P(x,y)$ be a vertex of the rectangle in the first quadrant, so that $x > 0$ and $y > 0$. By symmetry, the total width of the inscribed rectangle is $2x$ and its total height is $2y$.<br><br>The area, $A$, of the rectangle is given by:<br>$$A = 2x \\times 2y = 4xy$$",
+            "Using the equation of the circle, we can express $y$ in terms of $x$ as:<br>$$y = \\sqrt{36 - x^2}$$<br>Substituting this into our area formula gives:<br>$$A = 4x\\sqrt{36 - x^2}$$",
+            "To find the stationary points, we differentiate $A$ with respect to $x$ using the product rule and chain rule:<br>$$\\dfrac{\\text{d}A}{\\text{d}x} = 4\\sqrt{36 - x^2} + 4x \\cdot \\left(\\dfrac{-2x}{2\\sqrt{36 - x^2}}\\right)$$<br>$$\\dfrac{\\text{d}A}{\\text{d}x} = 4\\sqrt{36 - x^2} - \\dfrac{4x^2}{\\sqrt{36 - x^2}}$$<br>Combine these over a common denominator:<br>$$\\dfrac{\\text{d}A}{\\text{d}x} = \\dfrac{4(36 - x^2) - 4x^2}{\\sqrt{36 - x^2}} = \\dfrac{144 - 8x^2}{\\sqrt{36 - x^2}}$$",
+            "Set $\\dfrac{\\text{d}A}{\\text{d}x} = 0$ to find the stationary points:<br>$$\\dfrac{144 - 8x^2}{\\sqrt{36 - x^2}} = 0 \\implies 144 - 8x^2 = 0 \\implies 8x^2 = 144 \\implies x^2 = 18$$<br>Since $x > 0$, we choose the positive square root:<br>$$x = \\sqrt{18} = 3\\sqrt{2}$$",
+            "To fully justify that this stationary point is a maximum, we can examine the sign of the first derivative $\\dfrac{\\text{d}A}{\\text{d}x}$ around $x = 3\\sqrt{2}$:<br>For $x < 3\\sqrt{2}$, the numerator $(144 - 8x^2)$ is positive, so $\\dfrac{\\text{d}A}{\\text{d}x} > 0$.<br>For $x > 3\\sqrt{2}$, the numerator $(144 - 8x^2)$ is negative, so $\\dfrac{\\text{d}A}{\\text{d}x} < 0$.<br>Since the gradient changes from positive to negative, $x = 3\\sqrt{2}$ is a local maximum.",
+            "Calculate the maximum area by substituting $x = 3\\sqrt{2}$ back into the area formula:<br>$$A = 4(3\\sqrt{2})\\sqrt{36 - (3\\sqrt{2})^2} = 12\\sqrt{2}\\sqrt{18} = 12\\sqrt{2}(3\\sqrt{2}) = 72$$<br><br>Final Answer: $$72\\text{ in}^2$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$18\\text{ in}^2$$",
+                "feedback": "You may have defined the area as $xy$ instead of $4xy$. Remember that the rectangle spans across all four quadrants, so its width is $2x$ and its height is $2y$."
+            },
+            {
+                "ans": "$$36\\text{ in}^2$$",
+                "feedback": "This is probably because you assumed the rectangle has dimensions $x$ by $y$ and used a different radius, or incorrectly simplified the area. Ensure your dimensions are $2x$ by $2y$."
+            },
+            {
+                "ans": "$$144\\text{ in}^2$$",
+                "feedback": "You may have doubled the correct dimensions or made an arithmetic error in your final substitution. Carefully verify the area formula $A = 4xy$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Differentiating the Square",
+            "content": "When maximising an area expression like $A = 4x\\sqrt{36 - x^2}$, a neat shortcut is to maximise its square instead, let us call it $S = A^2 = 16x^2(36 - x^2) = 576x^2 - 16x^4$. This is a simple polynomial that is much easier to differentiate and yields the exact same critical point, saving valuable time in an exam."
+        }
+    },
+    {
+        "id": "004132",
+        "board": "AQA",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Stationary Points",
+            "Modelling",
+            "Coordinate Geometry"
+        ],
+        "img": "images/p1/004132.png",
+        "question": "A window designer is creating a rectangular window pane inscribed inside a semicircular archway of radius $4\\text{ m}$. The base of the window lies along the diameter of the semicircle, and the upper two vertices touch the curved boundary.<br><br>The archway is modelled on a coordinate grid as the upper half of the circle $x^2 + y^2 = 16$ for $y \\ge 0$, with the centre of the flat base at the origin.<br><br>Use calculus to find the maximum area of the rectangular window pane. Fully justify your answer.",
+        "steps": [
+            "Let the top-right vertex of the rectangle touching the semicircle be $P(x,y)$ where $x > 0$ and $y > 0$. The semicircle has equation:<br>$$x^2 + y^2 = 16 \\quad \\text{for} \\quad y \\ge 0$$",
+            "Since the base of the rectangle lies along the horizontal diameter from $-x$ to $x$, the total width of the window is $2x$. The height of the window is simply the $y$-coordinate of the curve.<br><br>The area, $A$, of the rectangular pane is given by:<br>$$A = 2x \\times y = 2xy$$",
+            "Using the equation of the semicircle, express $y$ in terms of $x$ as:<br>$$y = \\sqrt{16 - x^2}$$<br>Substituting this into our area formula gives:<br>$$A = 2x\\sqrt{16 - x^2}$$",
+            "To find the stationary points, we differentiate $A$ with respect to $x$ using the product rule and chain rule:<br>$$\\dfrac{\\text{d}A}{\\text{d}x} = 2\\sqrt{16 - x^2} + 2x \\cdot \\left(\\dfrac{-2x}{2\\sqrt{16 - x^2}}\\right)$$<br>$$\\dfrac{\\text{d}A}{\\text{d}x} = 2\\sqrt{16 - x^2} - \\dfrac{2x^2}{\\sqrt{16 - x^2}}$$<br>Combine these over a common denominator:<br>$$\\dfrac{\\text{d}A}{\\text{d}x} = \\dfrac{2(16 - x^2) - 2x^2}{\\sqrt{16 - x^2}} = \\dfrac{32 - 4x^2}{\\sqrt{16 - x^2}}$$",
+            "Set $\\dfrac{\\text{d}A}{\\text{d}x} = 0$ to find the stationary points:<br>$$\\dfrac{32 - 4x^2}{\\sqrt{16 - x^2}} = 0 \\implies 32 - 4x^2 = 0 \\implies 4x^2 = 32 \\implies x^2 = 8$$<br>Since $x > 0$, we choose the positive square root:<br>$$x = \\sqrt{8} = 2\\sqrt{2}$$",
+            "To justify that this stationary point is a maximum, we can examine the sign of the first derivative $\\dfrac{\\text{d}A}{\\text{d}x}$:<br>For $x < 2\\sqrt{2}$, the numerator $(32 - 4x^2)$ is positive, so $\\dfrac{\\text{d}A}{\\text{d}x} > 0$.<br>For $x > 2\\sqrt{2}$, the numerator $(32 - 4x^2)$ is negative, so $\\dfrac{\\text{d}A}{\\text{d}x} < 0$.<br>Since the gradient changes from positive to negative, $x = 2\\sqrt{2}$ represents a local maximum.",
+            "Calculate the maximum area by substituting $x = 2\\sqrt{2}$ back into the area equation:<br>$$A = 2(2\\sqrt{2})\\sqrt{16 - (2\\sqrt{2})^2} = 4\\sqrt{2}\\sqrt{8} = 4\\sqrt{2}(2\\sqrt{2}) = 16$$<br>At this maximum, the dimensions of the rectangular pane are width $2x = 4\\sqrt{2}\\text{ m}$ and height $y = 2\\sqrt{2}\\text{ m}$.<br><br>Final Answer: $$16\\text{ m}^2$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$8\\text{ m}^2$$",
+                "feedback": "You may have defined the area as $xy$ instead of $2xy$. Note that because the base lies along the diameter and spans from $-x$ to $x$, its total width is $2x$."
+            },
+            {
+                "ans": "$$32\\text{ m}^2$$",
+                "feedback": "This occurs if you defined the area as $4xy$, which is the area formula for a rectangle inscribed in a full circle. Since the window is inscribed in a semicircle, its height only spans up from the $x$-axis, meaning the height is $y$, not $2y$."
+            },
+            {
+                "ans": "$$12\\text{ m}^2$$",
+                "feedback": "This is probably due to an arithmetic error during substitution or differentiation. Double-check that $x^2 = 8$ and carefully compute the product $2xy$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Symmetry and Boundaries",
+            "content": "Pay careful attention to whether a shape is inscribed inside a full circle or a semicircle. In a full circle, the rectangle spans all four quadrants, leading to dimensions of $2x$ by $2y$. In a semicircle with its base along the horizontal axis, the height of the rectangle is only $y$, not $2y$. Always sketch the coordinate setup to avoid this distinction trap."
+        }
+    },
+    {
+        "id": "004133",
+        "board": "AQA",
+        "level": "AS",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Stationary Points",
+            "Modelling",
+            "Polynomials"
+        ],
+        "img": "images/p1/004133.png",
+        "question": "A ventilation duct with a rectangular cross-section is to be installed under a parabolic archway. The archway is modelled by the curve $y = 12 - x^2$ for $y \\ge 0$, where $x$ and $y$ are measured in metres. The base of the duct lies along the $x$-axis, and the two upper vertices of the duct touch the parabola.<br><br>Use calculus to find the maximum possible cross-sectional area of the ventilation duct. Fully justify your answer.",
+        "steps": [
+            "Let the width of the rectangular duct extend from $-x$ to $x$ along the horizontal axis, where $x > 0$. The total width of the duct is $2x$.<br><br>The height of the duct is given by the $y$-coordinate on the parabola: $y = 12 - x^2$.",
+            "The cross-sectional area, $A$, of the duct is the product of its width and height:<br>$$A = 2x(12 - x^2) = 24x - 2x^3$$",
+            "To find the value of $x$ that maximises this area, we differentiate $A$ with respect to $x$:<br>$$\\dfrac{\\text{d}A}{\\text{d}x} = 24 - 6x^2$$",
+            "Set the derivative equal to zero to locate the stationary points:<br>$$24 - 6x^2 = 0 \\implies 6x^2 = 24 \\implies x^2 = 4$$<br>Since $x$ represents a physical half-width, $x > 0$. Therefore, we have $x = 2$.",
+            "To fully justify that this stationary point is a maximum, we find the second derivative:<br>$$\\dfrac{\\text{d}^2A}{\\text{d}x^2} = -12x$$<br>At $x = 2$, the second derivative is:<br>$$\\dfrac{\\text{d}^2A}{\\text{d}x^2} = -12(2) = -24$$<br>Since $-24 < 0$, the point $x = 2$ is indeed a local maximum.",
+            "Finally, calculate the maximum area by substituting $x = 2$ back into the area equation:<br>$$A = 24(2) - 2(2^3) = 48 - 16 = 32$$<br><br>Final Answer: $$32\\text{ m}^2$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$16\\text{ m}^2$$",
+                "feedback": "You probably modelled the width as $x$ instead of $2x$. The base of the duct lies between $-x$ and $x$ on the coordinate axes, so its full width is $2x$."
+            },
+            {
+                "ans": "$$48\\text{ m}^2$$",
+                "feedback": "This value is probably due to an arithmetic slip when evaluating $24x - 2x^3$ at $x = 2$. Double-check that $2(2^3) = 16$."
+            },
+            {
+                "ans": "$$24\\text{ m}^2$$",
+                "feedback": "You might have calculated the height as $12 - 2^2 = 8$, but then incorrectly multiplied by a width of $3$ or made a slip. The maximum area occurs when $x=2$, giving width $4$ and height $8$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Sketching the Setup",
+            "content": "Even when a diagram is not provided, sketching the parabola $y = 12 - x^2$ and the inscribed rectangle on scrap paper will save you from the classic trap of using $x$ as the width instead of $2x$. Always identify your variables and write down their physical domains."
+        }
+    },
+    {
+        "id": "004134",
+        "board": "AQA",
+        "level": "AS",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Stationary Points",
+            "Modelling",
+            "Polynomials"
+        ],
+        "img": "images/p1/004134.png",
+        "question": "An open-topped box is to be constructed from a square sheet of cardboard with a side length of $12\\text{ cm}$. Equal square corners of side length $x\\text{ cm}$ are cut out from each corner, and the remaining sides are folded upwards to form the box.<br><br>Use calculus to find the value of $x$ that maximises the volume of the box, and calculate this maximum volume. Fully justify your answer.",
+        "steps": [
+            "When we cut a square of side $x$ from each of the four corners of a $12\\text{ cm}$ square sheet, the dimensions of the base of the box become $(12 - 2x)$ by $(12 - 2x)$.<br><br>The height of the box is $x$.",
+            "The volume, $V$, of the box is given by:<br>$$V = x(12 - 2x)^2 = x(144 - 48x + 4x^2) = 4x^3 - 48x^2 + 144x$$<br>Note that since $x > 0$ and $12 - 2x > 0$, the domain of $x$ is $0 < x < 6$.",
+            "To find the value of $x$ that maximises the volume, we differentiate $V$ with respect to $x$:<br>$$\\dfrac{\\text{d}V}{\\text{d}x} = 12x^2 - 96x + 144$$",
+            "Set the derivative to zero:<br>$$12x^2 - 96x + 144 = 0 \\implies 12(x^2 - 8x + 12) = 0$$<br>Factoring the quadratic equation gives:<br>$$12(x - 2)(x - 6) = 0$$",
+            "This yields two solutions: $x = 2$ and $x = 6$.<br><br>Since $x = 6$ is outside our domain $0 < x < 6$ (and would leave zero base area), the only valid stationary point is $x = 2$.",
+            "To justify that $x = 2$ is a maximum, we use the second derivative test:<br>$$\\dfrac{\\text{d}^2V}{\\text{d}x^2} = 24x - 96$$<br>At $x = 2$:<br>$$\\dfrac{\\text{d}^2V}{\\text{d}x^2} = 24(2) - 96 = -48$$<br>Since the second derivative is negative ($-48 < 0$), $x = 2$ is a local maximum.",
+            "Substitute $x = 2$ back into the volume formula to find the maximum volume:<br>$$V = 4(2)^3 - 48(2)^2 + 144(2) = 32 - 192 + 288 = 128$$<br><br>Final Answer: $$x = 2\\text{ cm}, V = 128\\text{ cm}^3$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x = 4\\text{ cm}, V = 64\\text{ cm}^3$$",
+                "feedback": "You might have assumed the side of the base is $12-x$ instead of $12-2x$. Remember that cutting squares of side $x$ from both ends reduces the length by $2x$."
+            },
+            {
+                "ans": "$$x = 6\\text{ cm}, V = 0\\text{ cm}^3$$",
+                "feedback": "An $x$ value of $6$ is the upper boundary of the domain. This actually yields a minimum volume of zero because no cardboard is left for the base."
+            },
+            {
+                "ans": "$$x = 2\\text{ cm}, V = 72\\text{ cm}^3$$",
+                "feedback": "This is probably due to a minor calculation error in your final volume step. The dimensions at $x = 2$ are $8\\text{ cm}$ by $8\\text{ cm}$ for the base and $2\\text{ cm}$ for the height."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Boundary Conditions",
+            "content": "Always state the domain of your variable. Here, $x$ must lie in the interval $0 < x < 6$ because a fold cannot be of negative length and you cannot cut away more than half the sheet's width. This allows you to immediately dismiss the stationary point at $x = 6$."
+        }
+    },
+    {
+        "id": "004135",
+        "board": "AQA",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Stationary Points",
+            "Trigonometric Identities",
+            "Modelling"
+        ],
+        "img": "images/p1/004135.png",
+        "question": "A circular medallion has a radius of $5\\text{ cm}$. A rectangle is inscribed inside the medallion. Let the angle between the diagonal of the rectangle and the horizontal coordinate axis be $\\theta$, where $0 < \\theta < \\dfrac{\\pi}{2}$ radians.<br><br>1. Show that the area, $A$, of the rectangle is given by $A = 50\\sin(2\\theta)$.<br>2. Use calculus to find the value of $\\theta$ that maximises the area of the rectangle, and state this maximum area. Fully justify your answer.",
+        "steps": [
+            "By modelling the medallion as a circle centred at the origin with radius $5$, any point on the boundary in the first quadrant has coordinates $(5\\cos\\theta, 5\\sin\\theta)$.<br><br>The width of the inscribed rectangle is $2x = 10\\cos\\theta$, and the height is $2y = 10\\sin\\theta$.",
+            "The area, $A$, of the rectangle can be written as:<br>$$A = \\text{width} \\times \\text{height} = (10\\cos\\theta)(10\\sin\\theta) = 100\\sin\\theta\\cos\\theta$$",
+            "Using the double-angle identity $\\sin(2\\theta) = 2\\sin\\theta\\cos\\theta$, we simplify the expression for $A$ to:<br>$$A = 50(2\\sin\\theta\\cos\\theta) = 50\\sin(2\\theta)$$",
+            "To find the stationary points, we differentiate $A$ with respect to $\\theta$:<br>$$\\dfrac{\\text{d}A}{\\text{d}\\theta} = 100\\cos(2\\theta)$$",
+            "Set $\\dfrac{\\text{d}A}{\\text{d}\\theta} = 0$:<br>$$100\\cos(2\\theta) = 0 \\implies \\cos(2\\theta) = 0$$<br>Given that $0 < \\theta < \\dfrac{\\pi}{2}$, we have $0 < 2\\theta < \\pi$. Within this range:<br>$$2\\theta = \\dfrac{\\pi}{2} \\implies \\theta = \\dfrac{\\pi}{4}$$",
+            "To justify that this value of $\\theta$ yields a maximum, we find the second derivative of $A$:<br>$$\\dfrac{\\text{d}^2A}{\\text{d}\\theta^2} = -200\\sin(2\\theta)$$<br>Substituting $\\theta = \\dfrac{\\pi}{4}$ into the second derivative gives:<br>$$\\dfrac{\\text{d}^2A}{\\text{d}\\theta^2} = -200\\sin\\left(\\dfrac{\\pi}{2}\\right) = -200(1) = -200$$<br>Since the second derivative is negative ($-200 < 0$), $\\theta = \\dfrac{\\pi}{4}$ is indeed a maximum.",
+            "Substitute $\\theta = \\dfrac{\\pi}{4}$ back into the area equation to find the maximum area:<br>$$A = 50\\sin\\left(2 \\cdot \\dfrac{\\pi}{4}\\right) = 50\\sin\\left(\\dfrac{\\pi}{2}\\right) = 50$$<br><br>Final Answer: $$\\theta = \\dfrac{\\pi}{4}, A = 50\\text{ cm}^2$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\theta = \\dfrac{\\pi}{4}, A = 100\\text{ cm}^2$$",
+                "feedback": "Check your double-angle conversion. Since $\\sin(2\\theta) = 2\\sin\\theta\\cos\\theta$, the expression $100\\sin\\theta\\cos\\theta$ simplifies to $50\\sin(2\\theta)$, not $100\\sin(2\\theta)$."
+            },
+            {
+                "ans": "$$\\theta = \\dfrac{\\pi}{2}, A = 0\\text{ cm}^2$$",
+                "feedback": "An angle of $\\dfrac{\\pi}{2}$ yields a flat line with zero area. This is the minimum possible area, not the maximum."
+            },
+            {
+                "ans": "$$\\theta = \\dfrac{\\pi}{4}, A = 25\\text{ cm}^2$$",
+                "feedback": "This is probably because you calculated the area of only one quadrant. The entire inscribed rectangle spans across all four quadrants, meaning you need to multiply your single-quadrant area by $4$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Radian Mode Always",
+            "content": "When doing calculus with trigonometric functions, you must work in radians. If you use degrees, the derivative of $\\sin\\theta$ is not simply $\\cos\\theta$, but has a scale factor of $\\dfrac{\\pi}{180}$. Always verify your calculator is in radian mode before evaluating trigonometric values."
+        }
     }
+
 
 
 
