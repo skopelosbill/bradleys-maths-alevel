@@ -194,6 +194,214 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Modelling Limitations",
             "content": "In applied modeling questions, always link your 'limitation' statement directly to the geometric assumptions of the model. Here, the core limitation is that the model replaces a smooth, curved physical bed with flat, linear segments."
         }
+    },
+    {
+        "id": "004156",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Algebra and functions",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Disguised Quadratics",
+            "Quartic Equations",
+            "Detailed Reasoning"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning. Find the two real roots of the equation:<br>$$x^4 - 12 = 4x^2$$<br>Give the roots in an exact form.",
+        "steps": [
+            "Rearrange the equation to bring all terms to one side of the equals sign:<br>$$x^4 - 4x^2 - 12 = 0$$",
+            "This is a quartic equation in a quadratic form. We can introduce a substitution parameter, letting $y = x^2$. This transforms our equation into a quadratic in terms of $y$:<br>$$y^2 - 4y - 12 = 0$$",
+            "Factorise the quadratic expression by finding two numbers that multiply to $-12$ and add to $-4$. These numbers are $-6$ and $2$:<br>$$(y - 6)(y + 2) = 0$$",
+            "Solve for $y$:<br>$$y = 6 \\quad \\text{or} \\quad y = -2$$",
+            "Substitute $x^2$ back in place of $y$ to solve for our original variable $x$:<br>$$x^2 = 6 \\quad \\text{or} \\quad x^2 = -2$$",
+            "Since $x$ must be a real root, $x^2$ must be greater than or equal to $0$. The equation $x^2 = -2$ has no real solutions. Therefore, we only solve:<br>$$x^2 = 6 \\implies x = \\pm\\sqrt{6}$$<br><br>Final Answer: $$x = \\pm\\sqrt{6}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x = \\pm\\sqrt{6}, \\quad x = \\pm\\sqrt{2}i$$",
+                "feedback": "The question specifically asks for the real roots of the equation. Complex roots containing imaginary numbers must be discarded."
+            },
+            {
+                "ans": "$$x = \\pm 6$$",
+                "feedback": "You may have forgotten to take the square root after substituting $x^2$ back into your solutions. Remember that $x^2 = 6 \\implies x = \\pm\\sqrt{6}$, not $x = \\pm 6$."
+            },
+            {
+                "ans": "$$x = \\pm\\sqrt{12}$$",
+                "feedback": "Check your factorisation steps. It looks like you may have set up the quadratic incorrectly or solved $x^2 = 12$. Verify that $(y-6)(y+2) = 0$ is the correct factorization of $y^2 - 4y - 12 = 0$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Explaining Your Steps",
+            "content": "When an exam paper states 'you must show detailed reasoning', examiners are legally prohibited from awarding marks for answers written down without working. You must explicitly show the substitution step and state why any roots (like $x^2 = -2$) are discarded."
+        }
+    },
+    {
+        "id": "004157",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Algebra and functions",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Disguised Quadratics",
+            "Surd Equations",
+            "Detailed Reasoning"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning. Find the real roots of the equation:<br>$$x - 5\\sqrt{x} + 6 = 0$$<br>Give the roots in an exact form.",
+        "steps": [
+            "This equation is a disguised quadratic. Let $t = \\sqrt{x}$, which implies $x = t^2$ (for $x \\ge 0$). Substitute these into the equation:<br>$$t^2 - 5t + 6 = 0$$",
+            "Factorise the quadratic equation by finding two numbers that multiply to $6$ and add to $-5$. These numbers are $-2$ and $-3$:<br>$$(t - 2)(t - 3) = 0$$",
+            "Solve for $t$:<br>$$t = 2 \\quad \\text{or} \\quad t = 3$$",
+            "Substitute $\\sqrt{x}$ back in place of $t$ to find our original variable $x$:<br>$$\\sqrt{x} = 2 \\implies x = 2^2 = 4$$<br>$$\\sqrt{x} = 3 \\implies x = 3^2 = 9$$",
+            "Verify that both solutions are valid by substituting them back into the original equation:<br>For $x = 4$: $4 - 5\\sqrt{4} + 6 = 4 - 10 + 6 = 0$ (Valid).<br>For $x = 9$: $9 - 5\\sqrt{9} + 6 = 9 - 15 + 6 = 0$ (Valid).<br><br>Final Answer: $$x = 4, \\quad 9$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x = 2, \\quad 3$$",
+                "feedback": "You have found the values for the substitution variable $t = \\sqrt{x}$. Remember to square these values to find the actual roots for $x$."
+            },
+            {
+                "ans": "$$x = 1.41, \\quad 1.73$$",
+                "feedback": "It looks like you took the square root of $t$ instead of squaring it. If $\\sqrt{x} = 2$, then $x = 2^2 = 4$, not $\\sqrt{2}$."
+            },
+            {
+                "ans": "$$x = 4$$",
+                "feedback": "You have only found one of the two real roots. Make sure to complete the calculations for both factors $(t-2)$ and $(t-3)$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Extraneous Solutions",
+            "content": "When solving equations involving surds, always substitute your final answers back into the original equation. Some algebraic steps can introduce 'extraneous' (invalid) roots, though in this particular question, both roots are entirely valid."
+        }
+    },
+    {
+        "id": "004158",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Algebra and functions",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Disguised Quadratics",
+            "Rational Equations",
+            "Detailed Reasoning"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning. Find the four real roots of the equation:<br>$$x^2 + \\dfrac{4}{x^2} = 5$$<br>Give the roots in an exact form.",
+        "steps": [
+            "Multiply every term in the equation by $x^2$ (where $x \\ne 0$) to eliminate the fraction:<br>$$x^2\\left(x^2\\right) + x^2\\left(\\dfrac{4}{x^2}\\right) = 5\\left(x^2\\right)$$<br>$$x^4 + 4 = 5x^2$$",
+            "Rearrange the terms into a standard polynomial form:<br>$$x^4 - 5x^2 + 4 = 0$$",
+            "This is a quartic equation in a quadratic form. Let $y = x^2$, which gives us:<br>$$y^2 - 5y + 4 = 0$$",
+            "Factorise the quadratic equation:<br>$$(y - 1)(y - 4) = 0$$",
+            "Solve for $y$:<br>$$y = 1 \\quad \\text{or} \\quad y = 4$$",
+            "Substitute $x^2$ back into our equations to solve for $x$:<br>$$x^2 = 1 \\implies x = \\pm 1$$<br>$$x^2 = 4 \\implies x = \\pm 2$$<br><br>Final Answer: $$x = -2, \\quad -1, \\quad 1, \\quad 2$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x = 1, \\quad 2$$",
+                "feedback": "Remember that taking the square root of a positive number yields both a positive and a negative root (e.g., $x^2 = 4 \\implies x = \\pm 2$). Do not lose the negative solutions."
+            },
+            {
+                "ans": "$$x = 1, \\quad 4$$",
+                "feedback": "These are the values for your substitution parameter $y = x^2$. You must take the square root of these values to find the roots of $x$."
+            },
+            {
+                "ans": "$$x = \\pm 1$$",
+                "feedback": "You have only solved one half of the factorised quadratic equation. Ensure you solve for both $y = 1$ and $y = 4$ to obtain all four real roots."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Symmetry in Quartics",
+            "content": "Quartics that contain only even powers of $x$ (such as $x^4$ and $x^2$) are completely symmetric about the $y$-axis. This means that if $x = k$ is a root, then $x = -k$ must also be a root, which is a great way to verify your answers."
+        }
+    },
+    {
+        "id": "004159",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Algebra and functions",
+        "topic": "Exponentials and logarithms",
+        "subtopic": [
+            "Disguised Quadratics",
+            "Exponential Equations",
+            "Detailed Reasoning"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning. Find the unique real root of the equation:<br>$$e^{2x} - 2e^x - 3 = 0$$<br>Give the root in an exact form, using natural logarithms.",
+        "steps": [
+            "This equation is a disguised quadratic because $e^{2x} = \\left(e^x\\right)^2$. Let $u = e^x$ (where $u > 0$). Substituting this into the equation yields:<br>$$u^2 - 2u - 3 = 0$$",
+            "Factorise the quadratic equation:<br>$$(u - 3)(u + 1) = 0$$",
+            "Solve for $u$:<br>$$u = 3 \\quad \\text{or} \\quad u = -1$$",
+            "Now substitute $e^x$ back in place of $u$:<br>$$e^x = 3 \\quad \\text{or} \\quad e^x = -1$$",
+            "Since the exponential function $e^x$ is strictly positive for all real values of $x$ ($e^x > 0$), the equation $e^x = -1$ has no real solutions and is discarded.",
+            "Solve the remaining equation by taking the natural logarithm of both sides:<br>$$e^x = 3 \\implies x = \\ln 3$$<br><br>Final Answer: $$x = \\ln 3$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x = \\ln 3, \\quad x = \\ln(-1)$$",
+                "feedback": "You cannot take the logarithm of a negative number in the real domain. The solution $e^x = -1$ must be explicitly discarded."
+            },
+            {
+                "ans": "$$x = 3, \\quad x = -1$$",
+                "feedback": "These are the solutions for your substitution variable $u = e^x$. You must apply natural logarithms to solve for $x$."
+            },
+            {
+                "ans": "$$x = 1.10$$",
+                "feedback": "The question asks for the root in an 'exact form'. Keep your answer as the natural logarithm $\\ln 3$ instead of converting it to a decimal."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Logarithm Domains",
+            "content": "Always remember that the domain of $y = \\ln x$ is strictly $x > 0$. Any algebraic step that requires you to evaluate the log of a negative number or zero must be rejected when working within the real number system."
+        }
+    },
+    {
+        "id": "004160",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric identities",
+        "subtopic": [
+            "Disguised Quadratics",
+            "Trigonometric Equations",
+            "Detailed Reasoning"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning. Find all real solutions to the equation:<br>$$2\\sin^2\\theta + 3\\cos\\theta - 3 = 0$$<br>for $0^\\circ \\le \\theta \\le 360^\\circ$.",
+        "steps": [
+            "To solve this equation, we must express all trigonometric terms in terms of a single function. Use the Pythagorean identity $\\sin^2\\theta = 1 - \\cos^2\\theta$:<br>$$2\\left(1 - \\cos^2\\theta\\right) + 3\\cos\\theta - 3 = 0$$",
+            "Expand and simplify the expression:<br>$$2 - 2\\cos^2\\theta + 3\\cos\\theta - 3 = 0$$<br>$$-2\\cos^2\\theta + 3\\cos\\theta - 1 = 0$$",
+            "Multiply the entire equation by $-1$ to make the leading coefficient positive:<br>$$2\\cos^2\\theta - 3\\cos\\theta + 1 = 0$$",
+            "This is a disguised quadratic. Let $u = \\cos\\theta$, which gives us:<br>$$2u^2 - 3u + 1 = 0$$",
+            "Factorise the quadratic expression:<br>$$(2u - 1)(u - 1) = 0$$",
+            "Solve for $u$:<br>$$u = \\dfrac{1}{2} \\quad \\text{or} \\quad u = 1$$",
+            "Substitute $\\cos\\theta$ back into our solutions:<br>$$\\cos\\theta = \\dfrac{1}{2} \\quad \\text{or} \\quad \\cos\\theta = 1$$",
+            "Find all solutions for $\\theta$ within the specified domain $0^\\circ \\le \\theta \\le 360^\\circ$:<br>For $\\cos\\theta = 1$: $\\theta = 0^\\circ$ and $\\theta = 360^\\circ$ (both endpoints are inclusive).<br>For $\\cos\\theta = \\dfrac{1}{2}$: $\\theta = 60^\\circ$ and $\\theta = 360^\\circ - 60^\\circ = 300^\\circ$.",
+            "Combine all solutions in ascending order:<br>$$\\theta = 0^\\circ, \\quad 60^\\circ, \\quad 300^\\circ, \\quad 360^\\circ$$<br><br>Final Answer: $$\\theta = 0^\\circ, \\quad 60^\\circ, \\quad 300^\\circ, \\quad 360^\\circ$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\theta = 0^\\circ, \\quad 60^\\circ, \\quad 300^\\circ$$",
+                "feedback": "Check your domain boundaries. The interval is $0^\\circ \\le \\theta \\le 360^\\circ$, which means the upper limit $360^\\circ$ is inclusive. Since $\\cos(360^\\circ) = 1$, this boundary value must be included in your final solutions."
+            },
+            {
+                "ans": "$$\\theta = 60^\\circ, \\quad 120^\\circ$$",
+                "feedback": "Be careful with the signs of your trigonometric quadrants. Cosine is positive in the first and fourth quadrants. Since $\\cos\\theta = \\dfrac{1}{2}$ is positive, the solutions are $60^\\circ$ and $300^\\circ$, not $120^\\circ$ (where cosine is negative)."
+            },
+            {
+                "ans": "$$\\theta = 0^\\circ, \\quad 60^\\circ$$",
+                "feedback": "You have only found the principal values from your calculator. Remember that trigonometric equations usually have multiple solutions within a full circle domain of $360^\\circ$ due to periodic symmetry."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Inclusive Boundaries",
+            "content": "Always read the inequality signs in the domain interval carefully. If the sign is $\\le 360^\\circ$ (inclusive), you must include $360^\\circ$ if it is a valid solution. If the sign is $< 360^\\circ$ (exclusive), you must omit it. This single distinction is a highly common point-loser."
+        }
     }
+
 
 ];
