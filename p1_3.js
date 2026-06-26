@@ -1638,7 +1638,7 @@ window.ALEVEL_QUESTIONS = [
             "Solving Equations"
         ],
         "img": false,
-        "question": "A student attempts to prove the trigonometric identity:<br>$$\\dfrac{1}{\\cos\\theta} - \\cos\\theta = \\sin\\theta\\tan\\theta$$<br>Their written proof is shown below:<br>* **Line 1:** $\\text{LHS} = \\dfrac{1}{\\cos\\theta} - \\cos\\theta$<br>* **Line 2:** $= \\dfrac{1 - \\cos^2\\theta}{\\cos\\theta}$<br>* **Line 3:** $= \\dfrac{\\sin^2\\theta}{\\cos\\theta}$<br>* **Line 4:** $= \\sin\\theta \\left(\\dfrac{\\sin\\theta}{\\cos\\theta}\right)$<br>* **Line 5:** $= \\sin\\theta\\tan\\theta = \\text{RHS}$<br><br>1. State the name of the fundamental trigonometric identity used to transition from Line 2 to Line 3.<br>2. Explain why this proof is invalid for $\\theta = 90^\\circ$ and $\\theta = 270^\\circ$.<br>3. Hence, or otherwise, solve the equation:<br>$$\\dfrac{1}{\\cos\\theta} - \\cos\\theta = 3\\sin\\theta$$<br>for $0^\\circ \\le \\theta \\le 180^\\circ$.",
+        "question": "A student attempts to prove the trigonometric identity:<br>$$\\dfrac{1}{\\cos\\theta} - \\cos\\theta = \\sin\\theta\\tan\\theta$$<br>Their written proof is shown below:<br>* **Line 1:** $\\text{LHS} = \\dfrac{1}{\\cos\\theta} - \\cos\\theta$<br>* **Line 2:** $= \\dfrac{1 - \\cos^2\\theta}{\\cos\\theta}$<br>* **Line 3:** $= \\dfrac{\\sin^2\\theta}{\\cos\\theta}$<br>* **Line 4:** $= \\sin\\theta \\left(\\dfrac{\\sin\\theta}{\\cos\\theta}\\right)$<br>* **Line 5:** $= \\sin\\theta\\tan\\theta = \\text{RHS}$<br><br>1. State the name of the fundamental trigonometric identity used to transition from Line 2 to Line 3.<br>2. Explain why this proof is invalid for $\\theta = 90^\\circ$ and $\\theta = 270^\\circ$.<br>3. Hence, or otherwise, solve the equation:<br>$$\\dfrac{1}{\\cos\\theta} - \\cos\\theta = 3\\sin\\theta$$<br>for $0^\\circ \\le \\theta \\le 180^\\circ$.",
         "steps": [
             "The identity used to transition from Line 2 to Line 3 is $\\sin^2\\theta + \\cos^2\\theta = 1$ (known as the Pythagorean identity), rearranged to $1 - \\cos^2\\theta = \\sin^2\\theta$.",
             "For $\\theta = 90^\\circ$ and $\\theta = 270^\\circ$, we have $\\cos\\theta = 0$. This makes both the fraction $\\dfrac{1}{\\cos\\theta}$ and the tangent function $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$ undefined due to division by zero. Thus, the algebraic steps in this proof are invalid at these specific angles.",
@@ -1947,7 +1947,208 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Rationalising to Clear Limits",
             "content": "When dealing with radical limits of the form $\\dfrac{0}{0}$ as $h \\to 0$, standard substitution fails. Rationalising the numerator is a vital algebraic technique that isolates the troublesome factor of $h$ in the denominator so it can be canceled out."
         }
+    },
+    {
+        "id": "004146",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Coordinate geometry",
+        "topic": "Equations of straight lines",
+        "subtopic": [
+            "Perpendicular Lines",
+            "Linear Equations"
+        ],
+        "img": "false",
+        "question": "The points $A$ and $B$ have coordinates $(2, 7)$ and $(5, 19)$ respectively.<br><br>Find the equation of the straight line which passes through the point $(3, 10)$ and is perpendicular to $AB$. Give your answer in the form $ax + by = c$, where $a$, $b$, and $c$ are integers.",
+        "steps": [
+            "Calculate the gradient of the line segment $AB$ using $m = \\dfrac{y_2 - y_1}{x_2 - x_1}$:<br>$$m_{AB} = \\dfrac{19 - 7}{5 - 2} = \\dfrac{12}{3} = 4$$",
+            "Find the gradient of the line perpendicular to $AB$ using the negative reciprocal relationship $m_{\\perp} = -\\dfrac{1}{m_{AB}}$:<br>$$m_{\\perp} = -\\dfrac{1}{4}$$",
+            "Write the equation of the perpendicular line passing through the point $(3, 10)$ using the point-slope formula $y - y_1 = m(x - x_1)$:<br>$$y - 10 = -\\dfrac{1}{4}(x - 3)$$",
+            "Multiply the entire equation by $4$ to eliminate the fraction:<br>$$4(y - 10) = -(x - 3)$$<br>$$4y - 40 = -x + 3$$",
+            "Rearrange the terms into the form $ax + by = c$ where $a$, $b$, and $c$ are integers:<br>$$x + 4y = 43$$<br><br>Final Answer: $$x + 4y = 43$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x - 4y = -37$$",
+                "feedback": "You may have forgotten to change the sign of the perpendicular gradient. The perpendicular gradient is the negative reciprocal, so it should be $-\\dfrac{1}{4}$, not $\\dfrac{1}{4}$."
+            },
+            {
+                "ans": "$$4x - y = 2$$",
+                "feedback": "It looks like you used the gradient of $AB$ directly instead of finding the perpendicular gradient. Remember that perpendicular lines have gradients that multiply to $-1$."
+            },
+            {
+                "ans": "$$x + 4y = 13$$",
+                "feedback": "Check your expansion of the right-hand side. Multiplying $-\\dfrac{1}{4}$ by $-3$ yields $+\\dfrac{3}{4}$. Multiplying by $4$ should give $+3$, not $-3$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Spotting Perpendicular Gradients",
+            "content": "A very common slip in straight-line questions is changing only the sign or only taking the reciprocal. To be safe, always write down the check $m_1 \\times m_2 = -1$ before proceeding with your line equation."
+        }
+    },
+    {
+        "id": "004147",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Coordinate geometry",
+        "topic": "Equations of straight lines",
+        "subtopic": [
+            "Perpendicular Lines",
+            "Intersection of Lines"
+        ],
+        "img": "false",
+        "question": "The line $L_1$ passes through the points $P(-1, 4)$ and $Q(3, 12)$. The line $L_2$ is perpendicular to $L_1$ and intersects the $y$-axis at $(0, 5)$.<br><br>Find the coordinates of the point of intersection of the lines $L_1$ and $L_2$.",
+        "steps": [
+            "Find the gradient of line $L_1$ using the coordinates of $P$ and $Q$:<br>$$m_{L_1} = \\dfrac{12 - 4}{3 - (-1)} = \\dfrac{8}{4} = 2$$",
+            "Find the equation of line $L_1$ using the point-slope form with $P(-1, 4)$:<br>$$y - 4 = 2(x + 1) \\implies y = 2x + 6$$",
+            "Since $L_2$ is perpendicular to $L_1$, its gradient is the negative reciprocal of $2$:<br>$$m_{L_2} = -\\dfrac{1}{2}$$",
+            "Since $L_2$ intersects the $y$-axis at $(0, 5)$, its $y$-intercept is $5$. Write its equation in slope-intercept form $y = mx + c$:<br>$$y = -\\dfrac{1}{2}x + 5$$",
+            "To find the intersection point, set the two linear equations equal to each other:<br>$$2x + 6 = -\\dfrac{1}{2}x + 5$$<br>Multiply the entire equation by $2$ to clear the fraction:<br>$$4x + 12 = -x + 10$$",
+            "Solve for $x$ by collecting like terms:<br>$$5x = -2 \\implies x = -\\dfrac{2}{5}$$",
+            "Substitute $x = -\\dfrac{2}{5}$ back into the equation for $L_1$ to find the $y$-coordinate:<br>$$y = 2\\left(-\\dfrac{2}{5}\\right) + 6 = -\\dfrac{4}{5} + \\dfrac{30}{5} = \\dfrac{26}{5}$$<br><br>Final Answer: $$\\left(-\\dfrac{2}{5}, \\, \\dfrac{26}{5}\right)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\left(\\dfrac{2}{5}, \\, \\dfrac{34}{5}\right)$$",
+                "feedback": "This is probably because you made a sign error when solving $4x + 12 = -x + 10$. Adding $x$ to both sides gives $5x$, and subtracting $12$ gives $-2$, which yields a negative $x$ value."
+            },
+            {
+                "ans": "$$\\left(-\\dfrac{2}{3}, \\, \\dfrac{14}{3}\right)$$",
+                "feedback": "You may have used a gradient of $-\\dfrac{1}{2}$ for $L_1$ instead of perpendicular $L_2$. Ensure you associate the correct gradients with the respective lines before finding the intersection."
+            },
+            {
+                "ans": "$$\\left(-\\dfrac{2}{5}, \\, 5\\right)$$",
+                "feedback": "It looks like you found the correct $x$-coordinate, but made an error during substitution. Ensure you substitute $x$ back into the full equation $y = 2x + 6$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Clear Fraction Work",
+            "content": "When solving simultaneous equations containing fractional coordinates, multiplying through by the lowest common multiple of the denominators (in this case, 2) is a highly reliable way to prevent arithmetic errors."
+        }
+    },
+    {
+        "id": "004148",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Coordinate geometry",
+        "topic": "Equations of straight lines",
+        "subtopic": [
+            "Perpendicular Lines",
+            "Triangles in Coordinate Geometry"
+        ],
+        "img": "false",
+        "question": "A triangle has vertices at $X(1, 2)$, $Y(5, 10)$, and $Z(-1, 3)$.<br><br>1. Show that the triangle is right-angled at $X$ by comparing the gradients of its sides.<br>2. Find the equation of the altitude of the triangle drawn from vertex $X$ to the side $YZ$. Give your answer in the form $ax + by = c$, where $a$, $b$, and $c$ are integers.",
+        "steps": [
+            "Calculate the gradients of the sides meeting at vertex $X$, which are $XY$ and $XZ$:<br>$$m_{XY} = \\dfrac{10 - 2}{5 - 1} = \\dfrac{8}{4} = 2$$<br>$$m_{XZ} = \\dfrac{3 - 2}{-1 - 1} = \\dfrac{1}{-2} = -0.5$$",
+            "Compare the product of these gradients to test for perpendicularity:<br>$$m_{XY} \\times m_{XZ} = 2 \\times (-0.5) = -1$$<br>Since the product of the gradients of $XY$ and $XZ$ is $-1$, the lines are perpendicular, proving that the triangle is right-angled at $X$.",
+            "To find the equation of the altitude from $X$ to $YZ$, we first need the gradient of the side $YZ$:<br>$$m_{YZ} = \\dfrac{3 - 10}{-1 - 5} = \\dfrac{-7}{-6} = \\dfrac{7}{6}$$",
+            "The altitude is a line perpendicular to $YZ$, so its gradient is the negative reciprocal of $m_{YZ}$:<br>$$m_{\\text{alt}} = -\\dfrac{6}{7}$$",
+            "Write the equation of this altitude passing through $X(1, 2)$ using the point-slope formula:<br>$$y - 2 = -\\dfrac{6}{7}(x - 1)$$",
+            "Multiply by $7$ to clear the fraction and rearrange into the form $ax + by = c$:<br>$$7(y - 2) = -6(x - 1)$$<br>$$7y - 14 = -6x + 6 \\implies 6x + 7y = 20$$<br><br>Final Answer: $$6x + 7y = 20$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$7x - 6y = -5$$",
+                "feedback": "You may have used the gradient of $YZ$ directly as the gradient of the altitude. Remember that the altitude is perpendicular to the base, so you must use the negative reciprocal gradient $-\\dfrac{6}{7}$."
+            },
+            {
+                "ans": "$$6x + 7y = 13$$",
+                "feedback": "Check your expansion of the right-hand side. Multiplying $-\\dfrac{6}{7}$ by $-1$ yields $+\\dfrac{6}{7}$, which becomes $+6$ when multiplied through by $7$. Your constant term should be $20$, not $13$."
+            },
+            {
+                "ans": "$$x + 2y = 5$$",
+                "feedback": "This is the equation of the line $XZ$. While $XZ$ is perpendicular to $XY$ at vertex $X$, it is not perpendicular to the base $YZ$. Make sure you use the base $YZ$ to find the altitude gradient."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Altitude Definition",
+            "content": "An altitude of a triangle is a line segment from a vertex perpendicular to the opposite side. Do not confuse it with a perpendicular bisector, which must also pass through the midpoint of the base."
+        }
+    },
+    {
+        "id": "004149",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Coordinate geometry",
+        "topic": "Equations of straight lines",
+        "subtopic": [
+            "Perpendicular Lines",
+            "Distance Formulae"
+        ],
+        "img": "false",
+        "question": "The straight line $L$ passes through the point $M(4, -1)$ and has a gradient of $-\\dfrac{2}{3}$. A second line, $K$, passes through the origin $O(0,0)$ and is perpendicular to $L$.<br><br>Find the shortest distance from the origin $O$ to the line $L$.",
+        "steps": [
+            "Find the equation of line $L$ using the point $M(4, -1)$ and gradient $-\\dfrac{2}{3}$:<br>$$y - (-1) = -\\dfrac{2}{3}(x - 4) \\implies y + 1 = -\\dfrac{2}{3}x + \\dfrac{8}{3}$$",
+            "Multiply the entire equation by $3$ to eliminate the fraction:<br>$$3y + 3 = -2x + 8 \\implies 2x + 3y - 5 = 0$$",
+            "The shortest distance from a point $(x_1, y_1)$ to a line $Ax + By + C = 0$ is given by the formula:<br>$$d = \\dfrac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}$$",
+            "Substitute the coordinates of the origin $(0, 0)$ and the coefficients of line $L$ ($A=2, B=3, C=-5$) into the distance formula:<br>$$d = \\dfrac{|2(0) + 3(0) - 5|}{\\sqrt{2^2 + 3^2}}$$",
+            "Evaluate the numerator and denominator to find the distance:<br>$$d = \\dfrac{|-5|}{\\sqrt{4 + 9}} = \\dfrac{5}{\\sqrt{13}}$$<br><br>Final Answer: $$\\dfrac{5}{\\sqrt{13}}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{11}{\\sqrt{13}}$$",
+                "feedback": "You may have made a sign error when expanding $y + 1 = -\\dfrac{2}{3}(x-4)$, leading to $3y + 3 = -2x - 8$ and a constant of $-11$. Double-check that $-\\dfrac{2}{3} \\times -4 = +\\dfrac{8}{3}$."
+            },
+            {
+                "ans": "$$\\dfrac{5}{13}$$",
+                "feedback": "Remember that the denominator of the distance formula contains a square root: $\\sqrt{A^2 + B^2}$. Make sure you do not forget to take the root of $13$."
+            },
+            {
+                "ans": "$$\\sqrt{13}$$",
+                "feedback": "It looks like you found the length of the vector representing the gradient but did not use the distance-to-line formula correctly. Re-evaluate the ratio carefully."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Distance to Origin",
+            "content": "The shortest distance from any point to a line always lies along the perpendicular. While you can solve this by finding the equation of $K$ ($y = \\dfrac{3}{2}x$), finding the intersection point, and using the distance between two points, the standard formula $d = \\dfrac{|C|}{\\sqrt{A^2+B^2}}$ is much faster and less prone to errors."
+        }
+    },
+    {
+        "id": "004150",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Coordinate geometry",
+        "topic": "Equations of straight lines",
+        "subtopic": [
+            "Perpendicular Bisectors",
+            "Intersection of Lines"
+        ],
+        "img": "false",
+        "question": "The perpendicular bisector of the line segment joining $C(-2, 3)$ and $D(4, 11)$ intersects the line $y = 3x - 1$ at point $E$.<br><br>Find the coordinates of point $E$.",
+        "steps": [
+            "Find the coordinates of the midpoint, $M$, of the line segment $CD$:<br>$$M = \\left(\\dfrac{-2 + 4}{2}, \\, \\dfrac{3 + 11}{2}\right) = (1, 7)$$,",
+            "Calculate the gradient of the line segment $CD$:<br>$$m_{CD} = \\dfrac{11 - 3}{4 - (-2)} = \\dfrac{8}{6} = \\dfrac{4}{3}$$",
+            "The perpendicular bisector has a gradient that is the negative reciprocal of $m_{CD}$:<br>$$m_{\\perp} = -\\dfrac{3}{4}$$",
+            "Write the equation of the perpendicular bisector passing through the midpoint $M(1, 7)$:<br>$$y - 7 = -\\dfrac{3}{4}(x - 1)$$<br>Multiply by $4$ to clear the fraction:<br>$$4y - 28 = -3x + 3 \\implies 3x + 4y = 31$$",
+            "Solve the simultaneous equations to find the intersection point $E$. Substitute $y = 3x - 1$ into our perpendicular bisector equation:<br>$$3x + 4(3x - 1) = 31$$<br>$$3x + 12x - 4 = 31 \\implies 15x = 35$$",
+            "Simplify to find the $x$-coordinate:<br>$$x = \\dfrac{35}{15} = \\dfrac{7}{3}$$",
+            "Substitute $x = \\dfrac{7}{3}$ back into the equation $y = 3x - 1$ to find the $y$-coordinate:<br>$$y = 3\\left(\\dfrac{7}{3}\\right) - 1 = 7 - 1 = 6$$<br><br>Final Answer: $$\\left(\\dfrac{7}{3}, \\, 6\\right)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\left(\\dfrac{1}{3}, \\, 0\\right)$$",
+                "feedback": "This is the intersection of $y = 3x - 1$ with the $x$-axis. Ensure you are setting up the simultaneous equations using the perpendicular bisector line, not coordinates from the axes."
+            },
+            {
+                "ans": "$$\\left(2, \\, 5\\right)$$",
+                "feedback": "You may have found the equation of a line passing through $C$ or $D$ instead of their midpoint. A perpendicular bisector must strictly pass through the midpoint $(1, 7)$."
+            },
+            {
+                "ans": "$$\\left(\\dfrac{31}{15}, \\, \\dfrac{26}{5}\right)$$",
+                "feedback": "This occurs if you used a gradient of $-\\dfrac{4}{3}$ instead of $-\\dfrac{3}{4}$ for the perpendicular bisector. Remember to take the negative reciprocal of the original gradient."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Breaking Down Multi-Step Problems",
+            "content": "When a question mentions a 'perpendicular bisector', immediately break it down into two distinct tasks: find the midpoint (for the 'bisector' part) and find the negative reciprocal gradient (for the 'perpendicular' part). Never attempt to merge these steps mentally."
+        }
     }
+
 
 
 
