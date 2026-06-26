@@ -1746,7 +1746,209 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Odd and Even Symmetry",
             "content": "Always remember the physical, graphical meaning of symmetry: an odd function like sine is symmetrical about the origin (rotational symmetry of $180^\\circ$), while an even function like cosine is symmetrical about the $y$-axis (reflectional symmetry)."
         }
+    },
+    {
+        "id": "004141",
+        "board": "AQA",
+        "level": "AS",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "First Principles",
+            "Stationary Points",
+            "Cubic Functions"
+        ],
+        "img": "images/p1/004136.png",
+        "question": "A curve has equation $y = x^3 - 27x$.<br><br>The point $A$ on the curve has $x$-coordinate $-3$.<br>The point $B$ on the curve has $x$-coordinate $-3 + h$.<br><br>1. Show that the gradient of the line $AB$ is $h^2 - 9h$.<br>2. Explain how the result of part (1) can be used to show that $A$ is a stationary point on the curve.",
+        "steps": [
+            "Find the $y$-coordinate of point $A$ by substituting $x = -3$ into the curve's equation:<br>$$y_A = (-3)^3 - 27(-3) = -27 + 81 = 54$$<br>So, the coordinates of $A$ are $(-3, 54)$.",
+            "Find the $y$-coordinate of point $B$ by substituting $x = -3 + h$ into the curve's equation:<br>$$y_B = (-3 + h)^3 - 27(-3 + h)$$<br>Using the binomial expansion for $(-3+h)^3$, we expand this expression as:<br>$$y_B = (h^3 - 9h^2 + 27h - 27) + 81 - 27h$$<br>$$y_B = h^3 - 9h^2 + 54$$<br>So, the coordinates of $B$ are $(-3 + h, \\, h^3 - 9h^2 + 54)$.",
+            "Calculate the gradient of the chord $AB$ using the gradient formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>$$m_{AB} = \\dfrac{(h^3 - 9h^2 + 54) - 54}{(-3 + h) - (-3)}$$<br>$$m_{AB} = \\dfrac{h^3 - 9h^2}{h}$$<br>Dividing each term in the numerator by $h$ (where $h \\ne 0$) gives the required gradient:<br>$$m_{AB} = h^2 - 9h$$",
+            "To show that $A$ is a stationary point, we consider the limit of the chord gradient $m_{AB}$ as $h \\to 0$. As $h$ approaches $0$, the chord $AB$ becomes the tangent to the curve at point $A$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\lim_{h \\to 0} (h^2 - 9h) = 0^2 - 9(0) = 0$$",
+            "Since the derivative (gradient of the tangent) at $x = -3$ is $0$, the tangent line is completely horizontal. Therefore, point $A$ is a stationary point on the curve.<br><br>Final Answer: $$h^2 - 9h, \\quad \\lim_{h \\to 0} (h^2 - 9h) = 0$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$h^2 - 27h, \\quad \\lim_{h \\to 0} (h^2 - 27h) = 0$$",
+                "feedback": "This is probably because you made an error while expanding the cubic term $(-3+h)^3$. Remember that the expansion is $h^3 - 9h^2 + 27h - 27$. Double-check that your linear $h$ terms cancel out with the linear term from $-27(-3+h)$."
+            },
+            {
+                "ans": "$$h^3 - 9h^2, \\quad \\lim_{h \\to 0} (h^3 - 9h^2) = 0$$",
+                "feedback": "You may have forgotten to divide the numerator $y_B - y_A$ by the denominator $x_B - x_A = h$. Always ensure you apply the full gradient formula."
+            },
+            {
+                "ans": "$$h^2 - 9h, \\quad \\lim_{h \\to 0} (h^2 - 9h) = -9$$",
+                "feedback": "Your gradient expression is correct, but your limit evaluation as $h \\to 0$ has a slip. Substituting $h=0$ into $h^2 - 9h$ yields $0$, not $-9$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Checking with Rules",
+            "content": "Even though a question requires differentiation from first principles, always check your final answer using the standard power rule. Differentiating $y = x^3 - 27x$ directly yields $\\dfrac{\\text{d}y}{\\text{d}x} = 3x^2 - 27$. Evaluating this at $x = -3$ gives $3(-3)^2 - 27 = 27 - 27 = 0$, confirming your limit is correct."
+        }
+    },
+    {
+        "id": "004142",
+        "board": "AQA",
+        "level": "AS",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "First Principles",
+            "Tangents and Normals",
+            "Quadratic Functions"
+        ],
+        "img": "images/p1/004137.png",
+        "question": "A curve has equation $y = 2x^2 - 5x$.<br><br>The point $P$ on the curve has $x$-coordinate $2$.<br>The point $Q$ on the curve has $x$-coordinate $2 + h$.<br><br>1. Show that the gradient of the chord $PQ$ is $2h + 3$.<br>2. Explain how this result can be used to show that the gradient of the tangent to the curve at $P$ is $3$.",
+        "steps": [
+            "Find the $y$-coordinate of point $P$ by substituting $x = 2$ into the curve's equation:<br>$$y_P = 2(2)^2 - 5(2) = 8 - 10 = -2$$<br>So, the coordinates of $P$ are $(2, -2)$.",
+            "Find the $y$-coordinate of point $Q$ by substituting $x = 2 + h$ into the curve's equation:<br>$$y_Q = 2(2 + h)^2 - 5(2 + h)$$<br>Expand the quadratic term and simplify:<br>$$y_Q = 2(4 + 4h + h^2) - 10 - 5h$$<br>$$y_Q = 8 + 8h + 2h^2 - 10 - 5h = 2h^2 + 3h - 2$$<br>So, the coordinates of $Q$ are $(2 + h, \\, 2h^2 + 3h - 2)$.",
+            "Calculate the gradient of the chord $PQ$ using the formula $m = \\dfrac{y_Q - y_P}{x_Q - x_P}$:<br>$$m_{PQ} = \\dfrac{(2h^2 + 3h - 2) - (-2)}{(2 + h) - 2}$$<br>$$m_{PQ} = \\dfrac{2h^2 + 3h}{h}$$<br>Divide the numerator by $h$ (where $h \\ne 0$):<br>$$m_{PQ} = 2h + 3$$",
+            "To find the gradient of the tangent to the curve at $P$, we evaluate the limit of the chord gradient $m_{PQ}$ as the point $Q$ moves infinitely close to $P$, which corresponds to $h \\to 0$:<br>$$\\text{Gradient at } P = \\lim_{h \\to 0} (2h + 3) = 2(0) + 3 = 3$$<br><br>Final Answer: $$2h + 3, \\quad \\lim_{h \\to 0} (2h + 3) = 3$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$2h - 5, \\quad \\lim_{h \\to 0} (2h - 5) = -5$$",
+                "feedback": "This is probably because you made a sign error during expansion. Ensure you carefully expand the term $-5(2+h)$ to $-10 - 5h$, rather than $-10 + 5h$."
+            },
+            {
+                "ans": "$$2h^2 + 3h, \\quad \\lim_{h \\to 0} (2h^2 + 3h) = 0$$",
+                "feedback": "You may have forgotten to divide the change in $y$ by the change in $x$, which is $h$. Remember that the chord gradient is a ratio of changes in coordinates."
+            },
+            {
+                "ans": "$$2h + 3, \\quad \\lim_{h \\to 0} (2h + 3) = 2$$",
+                "feedback": "Your algebraic derivation is correct, but your limit step has a slip. Evaluating $2h+3$ as $h \\to 0$ leaves only the constant term $3$, not $2$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: The Concept of a Chord",
+            "content": "Always remember that a chord is a secant line connecting two distinct points on a curve. This is why we must state $h \\ne 0$ when simplifying the gradient algebraically. It is only when we take the limit as $h \\to 0$ that the chord transforms conceptually into a tangent line at a single point."
+        }
+    },
+    {
+        "id": "004143",
+        "board": "AQA",
+        "level": "AS",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "First Principles",
+            "Stationary Points",
+            "Cubic Functions"
+        ],
+        "img": "images/p1/004138.png",
+        "question": "A curve has equation $y = 2x^3 - 6x$.<br><br>The point $A$ on the curve has $x$-coordinate $1$.<br>The point $B$ on the curve has $x$-coordinate $1 + h$.<br><br>1. Show that the gradient of the line $AB$ is $2h^2 + 6h$.<br>2. Explain how the result of part (1) can be used to show that $A$ is a stationary point on the curve.",
+        "steps": [
+            "Find the $y$-coordinate of point $A$ by substituting $x = 1$ into the curve's equation:<br>$$y_A = 2(1)^3 - 6(1) = 2 - 6 = -4$$<br>So, the coordinates of $A$ are $(1, -4)$.",
+            "Find the $y$-coordinate of point $B$ by substituting $x = 1 + h$ into the curve's equation:<br>$$y_B = 2(1 + h)^3 - 6(1 + h)$$<br>Expand the cubic term and simplify:<br>$$y_B = 2(1 + 3h + 3h^2 + h^3) - 6 - 6h$$<br>$$y_B = 2 + 6h + 6h^2 + 2h^3 - 6 - 6h = 2h^3 + 6h^2 - 4$$<br>So, the coordinates of $B$ are $(1 + h, \\, 2h^3 + 6h^2 - 4)$.",
+            "Calculate the gradient of the line $AB$ using $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>$$m_{AB} = \\dfrac{(2h^3 + 6h^2 - 4) - (-4)}{(1 + h) - 1}$$<br>$$m_{AB} = \\dfrac{2h^3 + 6h^2}{h}$$<br>Divide the numerator by $h$ (where $h \\ne 0$):<br>$$m_{AB} = 2h^2 + 6h$$",
+            "To show that $A$ is a stationary point, we find the gradient of the tangent at $A$ by taking the limit of the chord gradient $m_{AB}$ as $h \\to 0$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\lim_{h \\to 0} (2h^2 + 6h) = 2(0)^2 + 6(0) = 0$$",
+            "Since the derivative at $x = 1$ is $0$, the curve has a horizontal tangent line at $A$. Therefore, point $A$ is a stationary point on the curve.<br><br>Final Answer: $$2h^2 + 6h, \\quad \\lim_{h \\to 0} (2h^2 + 6h) = 0$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$2h^2 - 6h, \\quad \\lim_{h \\to 0} (2h^2 - 6h) = 0$$",
+                "feedback": "This is probably due to a sign error during your algebraic simplification. Double-check that your linear $h$ terms $+6h$ and $-6h$ cancel out cleanly, leaving only the positive quadratic terms."
+            },
+            {
+                "ans": "$$2h^2 + 6h, \\quad \\lim_{h \\to 0} (2h^2 + 6h) = 6$$",
+                "feedback": "You simplified the gradient expression correctly, but you made a slip in the limit step. Substituting $h = 0$ into $2h^2 + 6h$ results in $0$, not $6$."
+            },
+            {
+                "ans": "$$2h^3 + 6h^2, \\quad \\lim_{h \\to 0} (2h^3 + 6h^2) = 0$$",
+                "feedback": "You may have forgotten to divide by the horizontal distance $x_B - x_A = h$. Remember that the chord gradient requires dividing the difference in $y$-values by $h$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Defining Stationary Points",
+            "content": "A stationary point is formally defined as any point on a smooth curve where the first derivative $\\dfrac{\\text{d}y}{\\text{d}x} = 0$. Showing that the limiting gradient of a chord is $0$ is the most mathematically rigorous way to establish this without using standard differentiation shortcut rules."
+        }
+    },
+    {
+        "id": "004144",
+        "board": "AQA",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "First Principles",
+            "Tangents and Normals",
+            "Rational Functions"
+        ],
+        "img": "images/p1/004139.png",
+        "question": "A curve has equation $y = \\dfrac{4}{x}$ for $x > 0$.<br><br>The point $A$ on the curve has $x$-coordinate $2$.<br>The point $B$ on the curve has $x$-coordinate $2 + h$.<br><br>1. Show that the gradient of the line $AB$ is $-\\dfrac{2}{2+h}$.<br>2. State the gradient of the tangent to the curve at $A$ by considering the limit of this expression as $h \\to 0$.",
+        "steps": [
+            "Find the $y$-coordinate of point $A$ by substituting $x = 2$ into the curve's equation:<br>$$y_A = \\dfrac{4}{2} = 2$$<br>So, the coordinates of $A$ are $(2, 2)$.",
+            "Find the $y$-coordinate of point $B$ by substituting $x = 2 + h$ into the curve's equation:<br>$$y_B = \\dfrac{4}{2 + h}$$<br>So, the coordinates of $B$ are $\\left(2 + h, \\, \\dfrac{4}{2+h}\\right)$.",
+            "Calculate the gradient of the line $AB$ using the formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>$$m_{AB} = \\dfrac{\\dfrac{4}{2 + h} - 2}{(2 + h) - 2} = \\dfrac{\\dfrac{4}{2 + h} - 2}{h}$$",
+            "Simplify the numerator by finding a common denominator of $(2+h)$:<br>$$\\dfrac{4}{2 + h} - 2 = \\dfrac{4 - 2(2 + h)}{2 + h} = \\dfrac{4 - 4 - 2h}{2 + h} = \\dfrac{-2h}{2 + h}$$",
+            "Substitute this simplified fraction back into the gradient expression:<br>$$m_{AB} = \\dfrac{\\dfrac{-2h}{2 + h}}{h} = \\dfrac{-2h}{h(2 + h)}$$<br>Cancel the factor of $h$ in the numerator and denominator (where $h \\ne 0$):<br>$$m_{AB} = -\\dfrac{2}{2 + h}$$",
+            "To find the gradient of the tangent to the curve at $A$, we evaluate the limit of $m_{AB}$ as $h \\to 0$:<br>$$\\text{Gradient at } A = \\lim_{h \\to 0} \\left(-\\dfrac{2}{2 + h}\\right) = -\\dfrac{2}{2 + 0} = -1$$<br><br>Final Answer: $$-\\dfrac{2}{2 + h}, \\quad \\lim_{h \\to 0} \\left(-\\dfrac{2}{2 + h}\\right) = -1$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{2}{2+h}, \\quad \\lim_{h \\to 0} \\left(\\dfrac{2}{2+h}\\right) = 1$$",
+                "feedback": "This is probably due to a sign error when expanding the numerator. Be careful: $4 - 2(2+h) = 4 - 4 - 2h = -2h$. Ensure you do not lose the negative sign."
+            },
+            {
+                "ans": "$$-\\dfrac{2}{2+h}, \\quad \\lim_{h \\to 0} \\left(-\\dfrac{2}{2+h}\\right) = 0$$",
+                "feedback": "You simplified the gradient of the chord correctly, but you made a slip in the limit calculation. Substituting $h = 0$ into $-\\dfrac{2}{2+h}$ yields $-\\dfrac{2}{2} = -1$, not $0$."
+            },
+            {
+                "ans": "$$-\\dfrac{4}{2+h}, \\quad \\lim_{h \\to 0} \\left(-\\dfrac{4}{2+h}\\right) = -2$$",
+                "feedback": "This occurs if you forgot to multiply the entire term by $2$ when finding the common denominator in the numerator. Carefully verify that $-2(2+h) = -4 - 2h$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Working with Algebraic Fractions",
+            "content": "When doing first-principles differentiation on rational functions, the algebraic algebra can get messy. Always simplify the numerator into a single unified fraction before dividing by $h$ to avoid complex, nested fractions."
+        }
+    },
+    {
+        "id": "004145",
+        "board": "AQA",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "First Principles",
+            "Tangents and Normals",
+            "Radical Functions"
+        ],
+        "img": "images/p1/004140.png",
+        "question": "A curve has equation $y = \\sqrt{x}$ for $x \\ge 0$.<br><br>The point $A$ on the curve has $x$-coordinate $4$.<br>The point $B$ on the curve has $x$-coordinate $4 + h$.<br><br>1. Show that the gradient of the line $AB$ can be written as $\\dfrac{1}{\\sqrt{4+h} + 2}$.<br>2. Explain how this result can be used to show that the gradient of the curve at $A$ is $0.25$.",
+        "steps": [
+            "Find the $y$-coordinate of point $A$ by substituting $x = 4$ into the curve's equation:<br>$$y_A = \\sqrt{4} = 2$$<br>So, the coordinates of $A$ are $(4, 2)$.",
+            "Find the $y$-coordinate of point $B$ by substituting $x = 4 + h$ into the curve's equation:<br>$$y_B = \\sqrt{4 + h}$$<br>So, the coordinates of $B$ are $(4 + h, \\, \\sqrt{4 + h})$.",
+            "Calculate the gradient of the line $AB$ using the formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>$$m_{AB} = \\dfrac{\\sqrt{4 + h} - 2}{(4 + h) - 4} = \\dfrac{\\sqrt{4 + h} - 2}{h}$$",
+            "To eliminate the $h$ in the denominator and simplify, we rationalise the numerator by multiplying both the numerator and the denominator by the conjugate expression $(\\sqrt{4 + h} + 2)$:<br>$$m_{AB} = \\dfrac{(\\sqrt{4 + h} - 2)(\\sqrt{4 + h} + 2)}{h(\\sqrt{4 + h} + 2)}$$",
+            "Expand the numerator using the difference of two squares identity, $(a-b)(a+b) = a^2 - b^2$:<br>$$m_{AB} = \\dfrac{(4 + h) - 4}{h(\\sqrt{4 + h} + 2)} = \\dfrac{h}{h(\\sqrt{4 + h} + 2)}$$<br>Cancel the factor of $h$ (where $h \\ne 0$) to obtain the required expression:<br>$$m_{AB} = \\dfrac{1}{\\sqrt{4 + h} + 2}$$",
+            "To find the gradient of the curve at $A$, we evaluate the limit of the simplified chord gradient $m_{AB}$ as $h \\to 0$:<br>$$\\text{Gradient at } A = \\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4 + h} + 2}\\right) = \\dfrac{1}{\\sqrt{4 + 0} + 2} = \\dfrac{1}{2 + 2} = \\dfrac{1}{4} = 0.25$$<br><br>Final Answer: $$\\dfrac{1}{\\sqrt{4+h} + 2}, \\quad \\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4+h} + 2}\\right) = 0.25$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{1}{\\sqrt{4+h} - 2}, \\quad \\text{gradient is undefined}$$",
+                "feedback": "This is probably because you multiplied by the wrong conjugate. To rationalise the numerator $(\\sqrt{4+h}-2)$, you must multiply both top and bottom by $(\\sqrt{4+h}+2)$."
+            },
+            {
+                "ans": "$$\\dfrac{1}{\\sqrt{4+h} + 2}, \\quad \\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4+h} + 2}\\right) = 0.5$$",
+                "feedback": "Your algebraic rationalisation is correct, but your final limit evaluation has a slip. Substituting $h = 0$ yields $\\dfrac{1}{\\sqrt{4}+2} = \\dfrac{1}{2+2} = \\dfrac{1}{4} = 0.25$, not $0.5$."
+            },
+            {
+                "ans": "$$\\dfrac{1}{\\sqrt{4+h} + 4}, \\quad \\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4+h} + 4}\\right) = 0.167$$",
+                "feedback": "Check your difference of squares expansion in the numerator. Squaring the term $2$ gives $4$, which cancels the $+4$ term inside the radical perfectly."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Rationalising to Clear Limits",
+            "content": "When dealing with radical limits of the form $\\dfrac{0}{0}$ as $h \\to 0$, standard substitution fails. Rationalising the numerator is a vital algebraic technique that isolates the troublesome factor of $h$ in the denominator so it can be canceled out."
+        }
     }
+
 
 
 
