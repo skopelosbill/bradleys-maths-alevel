@@ -1597,7 +1597,7 @@ window.ALEVEL_QUESTIONS = [
             "Trigonometric Proofs",
             "Compound Angle Formulae"
         ],
-        "img": "false",
+        "img": false,
         "question": "A student is trying to prove the identity for $\\tan(A+B)$ using the known identities for $\\sin(A+B)$ and $\\cos(A+B)$. The student's proof starts:<br>$$\\tan(A+B) = \\dfrac{\\sin(A+B)}{\\cos(A+B)} = \\dfrac{\\sin A \\cos B + \\cos A \\sin B}{\\cos A \\cos B - \\sin A \\sin B}$$<br>To convert this expression into terms of $\\tan A$ and $\\tan B$, the student decides to divide both the numerator and the denominator by $\\cos A \\cos B$.<br><br>1. Show that this division leads to the identity:<br>$$\\tan(A+B) = \\dfrac{\\tan A + \\tan B}{1 - \\tan A \\tan B}$$<br>2. Explain why this identity is not valid if $\\cos A \\cos B = 0$ or if $\\tan A \\tan B = 1$. State the geometric meaning of these restrictions.<br>3. Given that $\\tan A = 2$ and $\\tan B = 3$, find the exact value of $\\tan(A+B)$ and deduce the value of the angle $(A+B)$ in degrees, where $A$ and $B$ are acute angles.",
         "steps": [
             "Dividing each term in the numerator of the expression by $\\cos A \\cos B$ gives:<br>$$\\dfrac{\\sin A \\cos B + \\cos A \\sin B}{\\cos A \\cos B} = \\dfrac{\\sin A \\cos B}{\\cos A \\cos B} + \\dfrac{\\cos A \\sin B}{\\cos A \\cos B} = \\dfrac{\\sin A}{\\cos A} + \\dfrac{\\sin B}{\\cos B} = \\tan A + \\tan B$$",
@@ -1637,7 +1637,7 @@ window.ALEVEL_QUESTIONS = [
             "Trigonometric Proofs",
             "Solving Equations"
         ],
-        "img": "false",
+        "img": false,
         "question": "A student attempts to prove the trigonometric identity:<br>$$\\dfrac{1}{\\cos\\theta} - \\cos\\theta = \\sin\\theta\\tan\\theta$$<br>Their written proof is shown below:<br>* **Line 1:** $\\text{LHS} = \\dfrac{1}{\\cos\\theta} - \\cos\\theta$<br>* **Line 2:** $= \\dfrac{1 - \\cos^2\\theta}{\\cos\\theta}$<br>* **Line 3:** $= \\dfrac{\\sin^2\\theta}{\\cos\\theta}$<br>* **Line 4:** $= \\sin\\theta \\left(\\dfrac{\\sin\\theta}{\\cos\\theta}\right)$<br>* **Line 5:** $= \\sin\\theta\\tan\\theta = \\text{RHS}$<br><br>1. State the name of the fundamental trigonometric identity used to transition from Line 2 to Line 3.<br>2. Explain why this proof is invalid for $\\theta = 90^\\circ$ and $\\theta = 270^\\circ$.<br>3. Hence, or otherwise, solve the equation:<br>$$\\dfrac{1}{\\cos\\theta} - \\cos\\theta = 3\\sin\\theta$$<br>for $0^\\circ \\le \\theta \\le 180^\\circ$.",
         "steps": [
             "The identity used to transition from Line 2 to Line 3 is $\\sin^2\\theta + \\cos^2\\theta = 1$ (known as the Pythagorean identity), rearranged to $1 - \\cos^2\\theta = \\sin^2\\theta$.",
@@ -1677,7 +1677,7 @@ window.ALEVEL_QUESTIONS = [
             "Trigonometric Proofs",
             "Double Angle Formulae"
         ],
-        "img": "false",
+        "img": false,
         "question": "A student is trying to prove the triple-angle identity:<br>$$\\cos(3\\theta) = 4\\cos^3\\theta - 3\\cos\\theta$$<br>The student begins by writing $3\\theta$ as $(2\\theta + \\theta)$.<br><br>1. Use the compound angle formula for cosine to express $\\cos(3\\theta)$ in terms of $\\cos(2\\theta)$, $\\sin(2\\theta)$, $\\cos\\theta$, and $\\sin\\theta$.<br>2. By substituting the double-angle formulas for $\\cos(2\\theta)$ and $\\sin(2\\theta)$, complete the proof to show that $\\cos(3\\theta) = 4\\cos^3\\theta - 3\\cos\\theta$.<br>3. Explain why this algebraic proof is valid for all real values of $\\theta$, unlike geometric proofs that rely on right-angled triangles.",
         "steps": [
             "Using the compound angle formula $\\cos(A+B) = \\cos A \\cos B - \\sin A \\sin B$ with $A = 2\\theta$ and $B = \\theta$, we expand $\\cos(3\\theta)$ as:<br>$$\\cos(3\\theta) = \\cos(2\\theta + \\theta) = \\cos(2\\theta)\\cos\\theta - \\sin(2\\theta)\\sin\\theta$$",
@@ -1717,7 +1717,7 @@ window.ALEVEL_QUESTIONS = [
             "Trigonometric Proofs",
             "Compound Angle Formulae"
         ],
-        "img": "false",
+        "img": false,
         "question": "A student is investigating the formula for $\\sin(A-B)$.<br><br>1. Assuming the compound angle identity $\\sin(A+B) = \\sin A \\cos B + \\cos A \\sin B$ is valid for all real angles, prove that:<br>$$\\sin(A-B) = \\sin A \\cos B - \\cos A \\sin B$$<br>State clearly any properties of even and odd trigonometric functions used in your proof.<br>2. By choosing suitable values for $A$ and $B$, use this identity to show that:<br>$$\\sin(15^\\circ) = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$$<br>3. A second student claims that since $\\sin(15^\\circ) > 0$, then $\\sin(-15^\\circ)$ must also be positive. Explain why this claim is incorrect, referencing the symmetry of the sine function.",
         "steps": [
             "To prove the identity for $\\sin(A-B)$, we substitute $-B$ into our identity for $\\sin(A+B)$:<br>$$\\sin(A + (-B)) = \\sin A \\cos(-B) + \\cos A \\sin(-B)$$",
