@@ -1758,7 +1758,7 @@ window.ALEVEL_QUESTIONS = [
             "Stationary Points",
             "Cubic Functions"
         ],
-        "img": "images/p1/004136.png",
+        "img": false,
         "question": "A curve has equation $y = x^3 - 27x$.<br><br>The point $A$ on the curve has $x$-coordinate $-3$.<br>The point $B$ on the curve has $x$-coordinate $-3 + h$.<br><br>1. Show that the gradient of the line $AB$ is $h^2 - 9h$.<br>2. Explain how the result of part (1) can be used to show that $A$ is a stationary point on the curve.",
         "steps": [
             "Find the $y$-coordinate of point $A$ by substituting $x = -3$ into the curve's equation:<br>$$y_A = (-3)^3 - 27(-3) = -27 + 81 = 54$$<br>So, the coordinates of $A$ are $(-3, 54)$.",
@@ -1798,7 +1798,7 @@ window.ALEVEL_QUESTIONS = [
             "Tangents and Normals",
             "Quadratic Functions"
         ],
-        "img": "images/p1/004137.png",
+        "img": false,
         "question": "A curve has equation $y = 2x^2 - 5x$.<br><br>The point $P$ on the curve has $x$-coordinate $2$.<br>The point $Q$ on the curve has $x$-coordinate $2 + h$.<br><br>1. Show that the gradient of the chord $PQ$ is $2h + 3$.<br>2. Explain how this result can be used to show that the gradient of the tangent to the curve at $P$ is $3$.",
         "steps": [
             "Find the $y$-coordinate of point $P$ by substituting $x = 2$ into the curve's equation:<br>$$y_P = 2(2)^2 - 5(2) = 8 - 10 = -2$$<br>So, the coordinates of $P$ are $(2, -2)$.",
@@ -1837,7 +1837,7 @@ window.ALEVEL_QUESTIONS = [
             "Stationary Points",
             "Cubic Functions"
         ],
-        "img": "images/p1/004138.png",
+        "img": false,
         "question": "A curve has equation $y = 2x^3 - 6x$.<br><br>The point $A$ on the curve has $x$-coordinate $1$.<br>The point $B$ on the curve has $x$-coordinate $1 + h$.<br><br>1. Show that the gradient of the line $AB$ is $2h^2 + 6h$.<br>2. Explain how the result of part (1) can be used to show that $A$ is a stationary point on the curve.",
         "steps": [
             "Find the $y$-coordinate of point $A$ by substituting $x = 1$ into the curve's equation:<br>$$y_A = 2(1)^3 - 6(1) = 2 - 6 = -4$$<br>So, the coordinates of $A$ are $(1, -4)$.",
@@ -1877,7 +1877,7 @@ window.ALEVEL_QUESTIONS = [
             "Tangents and Normals",
             "Rational Functions"
         ],
-        "img": "images/p1/004139.png",
+        "img": false,
         "question": "A curve has equation $y = \\dfrac{4}{x}$ for $x > 0$.<br><br>The point $A$ on the curve has $x$-coordinate $2$.<br>The point $B$ on the curve has $x$-coordinate $2 + h$.<br><br>1. Show that the gradient of the line $AB$ is $-\\dfrac{2}{2+h}$.<br>2. State the gradient of the tangent to the curve at $A$ by considering the limit of this expression as $h \\to 0$.",
         "steps": [
             "Find the $y$-coordinate of point $A$ by substituting $x = 2$ into the curve's equation:<br>$$y_A = \\dfrac{4}{2} = 2$$<br>So, the coordinates of $A$ are $(2, 2)$.",
@@ -1918,7 +1918,7 @@ window.ALEVEL_QUESTIONS = [
             "Tangents and Normals",
             "Radical Functions"
         ],
-        "img": "images/p1/004140.png",
+        "img": false,
         "question": "A curve has equation $y = \\sqrt{x}$ for $x \\ge 0$.<br><br>The point $A$ on the curve has $x$-coordinate $4$.<br>The point $B$ on the curve has $x$-coordinate $4 + h$.<br><br>1. Show that the gradient of the line $AB$ can be written as $\\dfrac{1}{\\sqrt{4+h} + 2}$.<br>2. Explain how this result can be used to show that the gradient of the curve at $A$ is $0.25$.",
         "steps": [
             "Find the $y$-coordinate of point $A$ by substituting $x = 4$ into the curve's equation:<br>$$y_A = \\sqrt{4} = 2$$<br>So, the coordinates of $A$ are $(4, 2)$.",
