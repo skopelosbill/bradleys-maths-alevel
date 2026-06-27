@@ -233,7 +233,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Explaining Your Steps",
-            "content": "When an exam paper states 'you must show detailed reasoning', examiners are legally prohibited from awarding marks for answers written down without working. You must explicitly show the substitution step and state why any roots (like $x^2 = -2$) are discarded."
+            "content": "When an exam paper states 'you must show detailed reasoning', examiners will award zero marks for answers written down without working. You must explicitly show the substitution step and state why any roots (like $x^2 = -2$) are discarded."
         }
     },
     {
@@ -401,7 +401,212 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Inclusive Boundaries",
             "content": "Always read the inequality signs in the domain interval carefully. If the sign is $\\le 360^\\circ$ (inclusive), you must include $360^\\circ$ if it is a valid solution. If the sign is $< 360^\\circ$ (exclusive), you must omit it. This single distinction is a highly common point-loser."
         }
+    },
+    {
+        "id": "004161",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Algebra and functions",
+        "topic": "Mathematical proof",
+        "subtopic": [
+            "Proof by Cases",
+            "Algebraic Proof"
+        ],
+        "img": false,
+        "question": "Prove algebraically that $n^3 + 5n - 1$ is odd for all positive integers $n$.",
+        "steps": [
+            "Any positive integer $n$ must be either even or odd. We can prove the claim is true for all integers by testing both cases separately.",
+            "<strong>Case 1:</strong> $n$ is even.<br>Let $n = 2k$, where $k$ is an integer. Substitute this into our expression:<br>$$n^3 + 5n - 1 = (2k)^3 + 5(2k) - 1$$<br>$$= 8k^3 + 10k - 1$$",
+            "Factorise out a $2$ from the first two terms of the expression:<br>$$= 2(4k^3 + 5k) - 1$$<br>Since $k$ is an integer, $(4k^3 + 5k)$ is also an integer. Any integer in the form $2m - 1$ is odd, so the expression is odd when $n$ is even.",
+            "<strong>Case 2:</strong> $n$ is odd.<br>Let $n = 2k + 1$, where $k$ is an integer. Substitute this into our expression:<br>$$n^3 + 5n - 1 = (2k + 1)^3 + 5(2k + 1) - 1$$",
+            "Expand the cubic and linear terms:<br>$$= (8k^3 + 12k^2 + 6k + 1) + 10k + 5 - 1$$<br>$$= 8k^3 + 12k^2 + 16k + 5$$",
+            "Rewrite the constant term $5$ as $4 + 1$ to allow factorisation:<br>$$= 8k^3 + 12k^2 + 16k + 4 + 1$$<br>$$= 2(4k^3 + 6k^2 + 8k + 2) + 1$$<br>Since $k$ is an integer, the bracketed term is an integer. Any integer in the form $2p + 1$ is odd, so the expression is odd when $n$ is odd.",
+            "Since the expression is odd in both the even and odd cases, $n^3 + 5n - 1$ is odd for all positive integers $n$.<br><br>Final Answer: $$2(4k^3 + 5k) - 1 \\text{ and } 2(4k^3 + 6k^2 + 8k + 2) + 1 \\text{ are odd}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$n^3 + 5n - 1 = 2(4k^3 + 5k) - 1$$",
+                "feedback": "This is incomplete. Proving the expression is odd only for the case where $n$ is even ($n=2k$) does not prove the claim for all positive integers. You must also prove the case where $n$ is odd."
+            },
+            {
+                "ans": "$$8k^3 + 12k^2 + 16k + 5 \\implies \\text{even}$$",
+                "feedback": "Be careful with your parity reasoning. While $8k^3$, $12k^2$, and $16k$ are even terms, adding $5$ (which is odd) to an even sum results in an odd number, not an even number."
+            },
+            {
+                "ans": "$$2(4k^3 + 6k^2 + 8k) + 5$$",
+                "feedback": "While mathematically equivalent, this is not a fully completed proof. To rigorously show an expression is odd, you should manipulate the constant term so that the expression can be written cleanly in the standard form $2m + 1$ or $2m - 1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Standard Parity Forms",
+            "content": "To score full marks on parity proofs, always write your final expressions in the standard forms of $2m$ for even numbers and $2m + 1$ (or $2m - 1$) for odd numbers, explicitly stating that $m$ is an integer."
+        }
+    },
+    {
+        "id": "004162",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Algebra and functions",
+        "topic": "Mathematical proof",
+        "subtopic": [
+            "Consecutive Integers",
+            "Algebraic Proof"
+        ],
+        "img": false,
+        "question": "Prove algebraically that $n^2 + 3n + 2$ is even for all positive integers $n$.",
+        "steps": [
+            "We can prove this claim elegantly by factorising the quadratic expression. Find two numbers that multiply to $2$ and add to $3$, which are $1$ and $2$:<br>$$n^2 + 3n + 2 = (n + 1)(n + 2)$$",
+            "Observe the two factors: $(n + 1)$ and $(n + 2)$ are consecutive positive integers.",
+            "For any two consecutive positive integers, one of the numbers must be even and the other must be odd.",
+            "Since one of the factors is even, it can be written in the form $2k$, where $k$ is an integer. The product of the two factors can therefore be written as:<br>$$\\text{Product} = 2k \\times (\\text{the other factor})$$<br>$$= 2 \\left[ k \\times (\\text{the other factor}) \\right]$$",
+            "Since the product has a factor of $2$, the expression $(n + 1)(n + 2)$ must be even for all positive integers $n$.<br><br>Final Answer: $$(n+1)(n+2) \\text{ contains an even factor}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$(n + 1)(n + 2) = \\text{odd}$$",
+                "feedback": "Consecutive integers can never both be odd. Since one of the factors must be even, their product must be even."
+            },
+            {
+                "ans": "$$n^2 + 3n + 2 = n(n + 3) + 2$$",
+                "feedback": "While this factorisation is mathematically correct, it does not easily show that the expression is even. Factorising the quadratic into $(n+1)(n+2)$ is a much more direct way to prove that an even factor exists."
+            },
+            {
+                "ans": "$$(2k)^2 + 3(2k) + 2$$",
+                "feedback": "This is only the first step of a proof by cases where $n$ is even. To complete a proof by cases, you must also prove the case where $n$ is odd ($n = 2k + 1$). Factorising the expression is a much faster, single-step alternative."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Consecutive Integers Shortcut",
+            "content": "Using properties of consecutive integers is a highly elegant alternative to a proof by cases. Proving that an expression factorises into a product of consecutive integers is a standard and widely accepted proof method."
+        }
+    },
+    {
+        "id": "004163",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Algebra and functions",
+        "topic": "Mathematical proof",
+        "subtopic": [
+            "Proof by Cases",
+            "Divisibility Proofs"
+        ],
+        "img": false,
+        "question": "Prove algebraically that $n^2 + 2$ is not divisible by 4 for any positive integer $n$.",
+        "steps": [
+            "We can prove this claim by examining the two possible cases for any positive integer $n$: either $n$ is even or $n$ is odd.",
+            "<strong>Case 1:</strong> $n$ is even.<br>Let $n = 2k$, where $k$ is an integer. Substitute this into our expression:<br>$$n^2 + 2 = (2k)^2 + 2$$<br>$$= 4k^2 + 2$$",
+            "Since $k^2$ is an integer, $4k^2$ is a multiple of $4$. Adding $2$ to a multiple of $4$ leaves a remainder of $2$ when divided by $4$. Therefore, $n^2 + 2$ is not divisible by $4$ when $n$ is even.",
+            "<strong>Case 2:</strong> $n$ is odd.<br>Let $n = 2k + 1$, where $k$ is an integer. Substitute this into our expression:<br>$$n^2 + 2 = (2k + 1)^2 + 2$$",
+            "Expand and simplify the expression:<br>$$= (4k^2 + 4k + 1) + 2$$<br>$$= 4k^2 + 4k + 3$$",
+            "Factorise out a $4$ from the first two terms:<br>$$= 4(k^2 + k) + 3$$<br>Since $k$ is an integer, $(k^2 + k)$ is an integer. This expression is in the form $4m + 3$, which leaves a remainder of $3$ when divided by $4$. Therefore, $n^2 + 2$ is not divisible by $4$ when $n$ is odd.",
+            "Since $n^2 + 2$ is not divisible by $4$ in either case, the expression is not divisible by $4$ for any positive integer $n$.<br><br>Final Answer: $$4k^2 + 2 \\text{ and } 4(k^2 + k) + 3 \\text{ leave remainders}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$4k^2 + 2 \\implies \\text{divisible by 2}$$",
+                "feedback": "While the expression is divisible by $2$, the question asks you to prove that it is not divisible by $4$. A remainder of $2$ when divided by $4$ confirms it is not a multiple of $4$."
+            },
+            {
+                "ans": "$$4(k^2 + k + 1) - 1$$",
+                "feedback": "This is equivalent, but writing the expression in the form $4m + 3$ makes the positive remainder of $3$ much more explicit and easier for the examiner to follow."
+            },
+            {
+                "ans": "$$n^2 + 2 = 4m$$",
+                "feedback": "This is the setup for a proof by contradiction. If you choose this route, you must show that $n^2 = 4m - 2 = 2(2m - 1)$, which means $n^2$ has an odd number of prime factors of $2$, which is impossible for a perfect square."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Divisibility and Remainders",
+            "content": "To prove that an expression is not divisible by an integer $d$, show that the expression can be written in the form $dm + r$, where the remainder $r$ satisfies $0 < r < d$. For division by $4$, your valid remainders are $1$, $2$, or $3$."
+        }
+    },
+    {
+        "id": "004164",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Algebra and functions",
+        "topic": "Mathematical proof",
+        "subtopic": [
+            "Proof by Exhaustion",
+            "Prime Numbers"
+        ],
+        "img": false,
+        "question": "Prove by exhaustion that $n^2 + n + 11$ is a prime number for all integers $n$ such that $1 \\le n \\le 5$.",
+        "steps": [
+            "A proof by exhaustion requires us to test every individual value of $n$ within the given domain, which is $n \\in \\{1, 2, 3, 4, 5\\}$.",
+            "Test $n = 1$:<br>$$1^2 + 1 + 11 = 1 + 1 + 11 = 13$$<br>Since $13$ is only divisible by $1$ and itself, it is a prime number.",
+            "Test $n = 2$:<br>$$2^2 + 2 + 11 = 4 + 2 + 11 = 17$$<br>Since $17$ is only divisible by $1$ and itself, it is a prime number.",
+            "Test $n = 3$:<br>$$3^2 + 3 + 11 = 9 + 3 + 11 = 23$$<br>Since $23$ is only divisible by $1$ and itself, it is a prime number.",
+            "Test $n = 4$:<br>$$4^2 + 4 + 11 = 16 + 4 + 11 = 31$$<br>Since $31$ is only divisible by $1$ and itself, it is a prime number.",
+            "Test $n = 5$:<br>$$5^2 + 5 + 11 = 25 + 5 + 11 = 41$$<br>Since $41$ is only divisible by $1$ and itself, it is a prime number.",
+            "Since we have tested every single integer in the domain $1 \\le n \\le 5$ and obtained a prime number in each case, the claim is proven by exhaustion.<br><br>Final Answer: $$13, \\, 17, \\, 23, \\, 31, \\, 41 \\text{ are prime}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$n^2 + n + 11 = n(n + 1) + 11$$",
+                "feedback": "While this factorisation is mathematically correct, it does not constitute a proof by exhaustion. A proof by exhaustion strictly requires you to calculate and verify the numerical result for every single value of $n$ in the domain."
+            },
+            {
+                "ans": "$$n = 11 \\implies 11^2 + 11 + 11 = 143 \\implies \\text{not prime}$$",
+                "feedback": "This is a valid counterexample showing that the formula does not work for all integers $n$. However, the question only asks you to prove the claim for the specific domain $1 \\le n \\le 5$. Counterexamples outside this domain are irrelevant to the proof."
+            },
+            {
+                "ans": "$$13, \\, 17, \\, 23, \\, 31$$",
+                "feedback": "Your working is incomplete. You have missed the final case $n = 5$. To complete a proof by exhaustion, you must show the calculation for every single value in the specified domain."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Limits of Exhaustion",
+            "content": "Proof by exhaustion is only practical when the domain contains a small, finite number of cases. For larger or infinite domains, you must use algebraic proofs. Be aware that algebraic patterns that seem to hold for small numbers (like this formula) often fail for larger values."
+        }
+    },
+    {
+        "id": "004165",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Algebra and functions",
+        "topic": "Mathematical proof",
+        "subtopic": [
+            "Proof by Contradiction",
+            "Rational and Irrational Numbers"
+        ],
+        "img": false,
+        "question": "Prove by contradiction that the sum of a rational number and an irrational number is irrational.",
+        "steps": [
+            "To prove this claim by contradiction, we begin by assuming the opposite of our claim is true:<br>Assume that the sum of a rational number $r$ and an irrational number $x$ is a rational number, which we will call $q$.",
+            "Write this assumption as an equation:<br>$$r + x = q$$",
+            "Since $r$ and $q$ are rational numbers, they can be written as ratios of integers. Let $r = \\dfrac{a}{b}$ (where $a, b \\in \\mathbb{Z}, \\, b \\ne 0$) and $q = \\dfrac{c}{d}$ (where $c, d \\in \\mathbb{Z}, \\, d \\ne 0$):<br>$$\\dfrac{a}{b} + x = \\dfrac{c}{d}$$",
+            "Rearrange the equation to isolate the irrational number $x$:<br>$$x = q - r$$<br>$$x = \\dfrac{c}{d} - \\dfrac{a}{b}$$",
+            "Combine the rational fractions over a common denominator:<br>$$x = \\dfrac{bc - ad}{bd}$$",
+            "Since $a, b, c,$ and $d$ are integers, both $(bc - ad)$ and $bd$ must be integers. Additionally, since $b \\ne 0$ and $d \\ne 0$, their product $bd \\ne 0$.",
+            "This implies that $x$ can be written as a ratio of two integers, which means $x$ must be a rational number. This directly contradicts our initial definition that $x$ is an irrational number.",
+            "Since our assumption that the sum is rational leads to a contradiction, the assumption must be false. Therefore, the sum of a rational number and an irrational number must be irrational.<br><br>Final Answer: $$x = q - r \\implies \\text{contradiction}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$r + x = x$$",
+                "feedback": "This is not the setup for a proof by contradiction. To prove a claim by contradiction, you must assume that the sum is equal to a rational number, which can be expressed as a ratio of integers."
+            },
+            {
+                "ans": "$$\\dfrac{a}{b} + \\sqrt{2} = \\text{irrational}$$",
+                "feedback": "This is only an example using a specific irrational number ($\\sqrt{2}$). A formal proof must be general and apply to any irrational number $x$."
+            },
+            {
+                "ans": "$$x = q - r \\implies x = \\text{rational}$$",
+                "feedback": "This is a correct step, but you must complete the proof by explicitly stating that this result contradicts the fact that $x$ is irrational, thereby making your original assumption false."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: The Contradiction Setup",
+            "content": "When starting a proof by contradiction, always write down your initial assumption clearly. The standard structure is: 'Assume for contradiction that [the opposite of the claim] is true.' Every step that follows must be logically sound until you hit a clear mathematical contradiction."
+        }
     }
+
 
 
 ];
