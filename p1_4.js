@@ -1020,7 +1020,210 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Order of Transformations",
             "content": "When describing horizontal transformations, the order matters immensely. If you translate first by $a$ and then stretch by $s$, the function becomes $f(sx - a)$. If you stretch first by $s$ and then translate by $a$, the function becomes $f(s(x-a)) = f(sx - sa)$."
         }
+    },
+    {
+        "id": "004176",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Algebra and functions",
+        "topic": "Sequences and series",
+        "subtopic": [
+            "Geometric Progressions",
+            "Modelling"
+        ],
+        "img": false,
+        "question": "Sarah runs half marathons and is following a training programme to improve her times. Her time for her first half marathon is 160 minutes, and her time for her second half marathon is 156.8 minutes. Sarah believes that her times can be modelled by a geometric progression.<br><br>1. Sarah sets herself a target of completing a half marathon in less than 130 minutes. Show that this model predicts she will achieve her target on her twelfth half marathon.<br>2. After several months, Sarah has spent a total of 2091 minutes, to the nearest minute, running half marathons. Use this model to find how many half marathons she has run.<br>3. Give two reasons why this model may not be appropriate when predicting the time for a half marathon.",
+        "steps": [
+            "To model Sarah's times using a geometric progression, we find the first term $a$ and the common ratio $r$.<br>The first term is the time for her first run: $a = 160$ minutes.<br>The second term is $ar = 156.8$ minutes, so:<br>$$r = \\dfrac{156.8}{160} = 0.98$$",
+            "Write the formula for the time of her $n$-th half marathon, $T_n = a r^{n-1}$:<br>$$T_n = 160\\left(0.98\\right)^{n-1}$$",
+            "To find when her time falls below $130$ minutes, set up the inequality $T_n < 130$:<br>$$160\\left(0.98\\right)^{n-1} < 130 \\implies \\left(0.98\\right)^{n-1} < \\dfrac{130}{160} = 0.8125$$",
+            "Take natural logarithms of both sides to solve for $n$. Note that because $\\ln\\left(0.98\\right) < 0$, dividing by it reverses the inequality sign:<br>$$(n - 1)\\ln\\left(0.98\\right) < \\ln\\left(0.8125\\right) \\implies n - 1 > \\dfrac{\\ln\\left(0.8125\\right)}{\\ln\\left(0.98\\right)}$$<br>$$n - 1 > \\dfrac{-0.20764}{-0.02020} \\approx 10.28 \\implies n > 11.28$$<br>Since $n$ must be an integer, the smallest valid value is $n = 12$. This proves she achieves her target on her twelfth half marathon.",
+            "To find the number of runs $n$ completed for a total time of $2091$ minutes, apply the geometric series sum formula $S_n = \\dfrac{a\\left(1 - r^n\\right)}{1 - r}$:<br>$$S_n = \\dfrac{160\\left(1 - 0.98^n\\right)}{1 - 0.98} = \\dfrac{160\\left(1 - 0.98^n\\right)}{0.02} = 8000\\left(1 - 0.98^n\\right)$$,",
+            "Set $S_n = 2091$ and solve for $n$:<br>$$8000\\left(1 - 0.98^n\\right) = 2091 \\implies 1 - 0.98^n = \\dfrac{2091}{8000} \\approx 0.261375$$<br>$$0.98^n = 1 - 0.261375 = 0.738625$$",
+            "Take logarithms to solve for $n$:<br>$$n\\ln\\left(0.98\\right) = \\ln\\left(0.738625\\right) \\implies n = \\dfrac{\\ln\\left(0.738625\\right)}{\\ln\\left(0.98\\right)}$$<br>$$n = \\dfrac{-0.30296}{-0.02020} \\approx 14.996$$<br>Rounding to the nearest integer, Sarah has run $15$ half marathons.",
+            "There are two main reasons why this model may not be appropriate in the long term:<br>1. Human athletic performance eventually plateaus. A geometric model predicts that her times will decrease infinitely toward $0$ minutes, which is physically impossible.<br>2. It does not account for real-world variables such as injury, aging, illness, changing weather conditions, or variations in motivation.<br><br>Final Answer: $$12, \\quad 15, \\quad \\text{athletic plateau and weather/injury}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$11, \\quad 15, \\quad \\text{athletic plateau}$$",
+                "feedback": "Check your inequality step. Solving $n-1 > 10.28$ yields $n > 11.28$. Since $n$ must be an integer, the first term to fall below $130$ minutes is the $12$-th, not the $11$-th."
+            },
+            {
+                "ans": "$$12, \\quad 13, \\quad \\text{athletic plateau}$$",
+                "feedback": "It looks like you made an error when dividing to solve for $n$ in the sum step. Ensure you set up the equation as $8000\\left(1-0.98^n\\right) = 2091$ and solve for $0.98^n = 0.738625$."
+            },
+            {
+                "ans": "$$12, \\quad 15, \\quad \\text{Sarah runs faster in rain}$$",
+                "feedback": "Your numerical answers are correct, but your limitation is not a valid modelling criticism. A proper limitation must describe a systemic failure of the geometric mathematical structure, such as predicting impossible times as $n \\to \\infty$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Division by Negative Logs",
+            "content": "When solving inequalities involving terms like $r^{n-1}$ where $0 < r < 1$, taking the logarithm of both sides will yield a negative number (since $\\ln\\left(r\\right) < 0$). Always remember to flip the inequality sign when dividing both sides by a negative logarithm."
+        }
+    },
+    {
+        "id": "004177",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Algebra and functions",
+        "topic": "Sequences and series",
+        "subtopic": [
+            "Arithmetic Progressions",
+            "Modelling"
+        ],
+        "img": false,
+        "question": "James is training for a marathon. In his first week of training, he runs a total distance of $25\\text{ km}$. He decides to increase his weekly distance by a constant amount, $d\\text{ km}$, each week. In his tenth week of training, his weekly distance is $52\\text{ km}$.<br><br>1. Show that $d = 3$.<br>2. Find the total distance James runs during his first $20$ weeks of training.<br>3. State one practical reason why James cannot continue this training pattern indefinitely.",
+        "steps": [
+            "We model James's weekly distances using an arithmetic progression with first term $a = 25$ and common difference $d$. The formula for the $n$-th term is $u_n = a + (n-1)d$.",
+            "For the tenth week, we are given $u_{10} = 52$:<br>$$25 + \\left(10 - 1\\right)d = 52 \\implies 25 + 9d = 52$$",
+            "Solve for $d$:<br>$$9d = 52 - 25 = 27 \\implies d = 3$$<br>This confirms that the weekly increase is $3\\text{ km}$.",
+            "To find the total distance run over $20$ weeks, apply the arithmetic series sum formula $S_n = \\dfrac{n}{2}\\left[2a + \\left(n-1\\right)d\\right]$ with $n=20, a=25, d=3$:<br>$$S_{20} = \\dfrac{20}{2} \\left[ 2\\left(25\\right) + \\left(20 - 1\\right)3 \\right]$$",
+            "Simplify inside the brackets and calculate:<br>$$S_{20} = 10 \\left[ 50 + 19\\left(3\\right) \\right]$$<br>$$S_{20} = 10 \\left[ 50 + 57 \\right] = 10 \\left[ 107 \\right] = 1070$$<br>So, James runs a total of $1070\\text{ km}$ over the first $20$ weeks.",
+            "James cannot continue this pattern indefinitely because it is physically impossible to continuously increase mileage. Within a couple of years, his weekly distances would exceed human physical limits and inevitably lead to severe injury, extreme fatigue, or overtraining syndrome.<br><br>Final Answer: $$d = 3, \\quad 1070\\text{ km}, \\quad \\text{physical limits and risk of injury}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$d = 3, \\quad 1070\\text{ km}, \\quad \\text{running is boring}$$",
+                "feedback": "Your numerical answers are correct, but your limitation is subjective. A valid modelling limitation must address the biological or physical constraints that prevent the mathematical progression from continuing indefinitely."
+            },
+            {
+                "ans": "$$d = 3, \\quad 1540\\text{ km}, \\quad \\text{physical limits}$$",
+                "feedback": "Check your sum formula. It looks like you may have used $20$ instead of $19$ inside the brackets, calculating $2a + nd$ instead of $2a + \\left(n-1\\right)d$."
+            },
+            {
+                "ans": "$$d = 2.7, \\quad 1070\\text{ km}, \\quad \\text{physical limits}$$",
+                "feedback": "Be careful with your term index. The tenth week is $u_{10} = a + 9d$, not $a + 10d$. This leads to $9d = 27$, yielding the integer difference $d = 3$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Term Indices",
+            "content": "A very common slip in arithmetic progressions is using $a + nd$ for the $n$-th term. Always write out $a + (n-1)d$ explicitly to remind yourself that the first term does not contain the common difference."
+        }
+    },
+    {
+        "id": "004178",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Algebra and functions",
+        "topic": "Sequences and series",
+        "subtopic": [
+            "Geometric Progressions",
+            "Modelling"
+        ],
+        "img": false,
+        "question": "An investor deposits £2000 into a savings account on the first day of each year. The account pays a compound interest rate of $4\\%$ per annum, paid on the last day of each year.<br><br>1. Show that the total value of the investment, in pounds, on the last day of the third year (after interest has been added) is $2000(1.04) + 2000(1.04)^2 + 2000(1.04)^3$.<br>2. Use this model to find the total value of the investment immediately after interest is added at the end of the $10\\text{th}$ year, giving your answer to the nearest pound.<br>3. State one assumption made by this model that might not be realistic in the long term.",
+        "steps": [
+            "Trace each deposit to the end of the third year:<br>The first £2000 deposit has been in the account for $3$ full years and has earned compound interest $3$ times, so its value is $2000\\left(1.04\\right)^3$.<br>The second £2000 deposit has been in the account for $2$ full years, so its value is $2000\\left(1.04\\right)^2$.<br>The third £2000 deposit has been in the account for $1$ full year, so its value is $2000\\left(1.04\\right)^1$.",
+            "Summing these three components gives the total value of the investment on the last day of the third year:<br>$$\\text{Total} = 2000\\left(1.04\\right) + 2000\\left(1.04\\right)^2 + 2000\\left(1.04\\right)^3$$",
+            "This series is a geometric progression where:<br>The first term $a = 2000\\left(1.04\\right) = 2080$<br>The common ratio $r = 1.04$<br>The number of terms $n = 10$",
+            "To find the value of the investment at the end of $10$ years, apply the geometric series sum formula $S_n = \\dfrac{a\\left(r^n - 1\\right)}{r - 1}$:<br>$$S_{10} = \\dfrac{2080\\left(1.04^{10} - 1\\right)}{1.04 - 1} = \\dfrac{2080\\left(1.04^{10} - 1\\right)}{0.04}$$",
+            "Calculate using high-precision intermediate steps to avoid rounding errors:<br>$$1.04^{10} \\approx 1.480244$$<br>$$S_{10} = \\dfrac{2080\\left(0.480244\\right)}{0.04} = 52000 \\times 0.480244 = 24972.70$$<br>Rounding to the nearest pound, the total value is £24,973.",
+            "One key assumption made by this model is that the interest rate remains constant at $4\\%$ for the entire $10$ years. In reality, savings rates are variable and subject to economic fluctuations. Alternatively, the model assumes the investor never misses a payment and consistently deposits exactly £2000 every single year.<br><br>Final Answer: $$£24,973, \\quad \\text{constant interest rate and fixed annual deposits}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$£24,962, \\quad \\text{constant interest rate}$$",
+                "feedback": "You may have rounded $(1.04)^{10}$ prematurely to $1.480$ during your intermediate steps. Always keep your full calculator display figures active until the final rounding to avoid drifting off by several pounds."
+            },
+            {
+                "ans": "$$£24,012, \\quad \\text{constant interest rate}$$",
+                "feedback": "It looks like you defined your first term $a = 2000$ instead of $2080$. Remember that the deposits are made on the first day of the year, so every single deposit (including the last one) has been in the account for at least one full year and has earned interest before the year-end calculation."
+            },
+            {
+                "ans": "$$£26,080, \\quad \\text{constant interest rate}$$",
+                "feedback": "Check your sum formula. Ensure you did not use the arithmetic series sum formula by mistake. Compound interest accumulates geometrically."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: First Term in Savings",
+            "content": "In financial geometric series, always look at the timing of the deposits. Since the deposits are made at the start of each year and evaluated at the end of the year, the first term of your geometric series is $2000\\left(1.04\\right) = 2080$, not $2000$."
+        }
+    },
+    {
+        "id": "004179",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Algebra and functions",
+        "topic": "Sequences and series",
+        "subtopic": [
+            "Geometric Progressions",
+            "Modelling"
+        ],
+        "img": false,
+        "question": "The mass of a radioactive sample is monitored daily. On the first day of monitoring, the mass is $80\\text{ grams}$. On the second day, the mass is $76\\text{ grams}$. The mass is modelled as a geometric progression.<br><br>1. Show that the mass of the sample is predicted to fall below $40\\text{ grams}$ for the first day on the fifteenth day of monitoring.<br>2. Find the total mass loss over the first 30 days, giving your answer to the nearest gram.<br>3. Why might a discrete geometric progression model be highly appropriate for radioactive decay over short periods, but why might a continuous exponential model be preferred in physics?",
+        "steps": [
+            "First, determine the first term $a$ and common ratio $r$ of the geometric progression:<br>The mass on the first day is $a = 80$ grams.<br>The mass on the second day is $ar = 76$ grams, so:<br>$$r = \\dfrac{76}{80} = 0.95$$",
+            "Write the formula for the mass on the $n$-th day, $M_n = a r^{n-1}$:<br>$$M_n = 80\\left(0.95\\right)^{n-1}$$",
+            "Set up the inequality $M_n < 40$ to find when the mass falls below $40$ grams:<br>$$80\\left(0.95\\right)^{n-1} < 40 \\implies \\left(0.95\\right)^{n-1} < \\dfrac{40}{80} = 0.5$$",
+            "Take natural logarithms of both sides to solve for $n$. Note that because $\\ln\\left(0.95\\right) < 0$, dividing by it reverses the inequality sign:<br>$0.95^{n-1} < 0.5 \\implies \\left(n - 1\\right)\\ln\\left(0.95\\right) < \\ln\\left(0.5\\right)$<br>$$n - 1 > \\dfrac{\\ln\\left(0.5\\right)}{\\ln\\left(0.95\\right)}$$<br>$$n - 1 > \\dfrac{-0.69315}{-0.05129} \\approx 13.52 \\implies n > 14.52$$<br>Since $n$ must be an integer, the smallest valid value is $n = 15$. This proves the mass falls below $40$ grams on the fifteenth day.",
+            "To find the total mass loss over the first $30$ days, calculate the mass remaining on the $30$-th day, $M_{30}$:<br>$$M_{30} = 80\\left(0.95\\right)^{29} \\approx 80\\left(0.225927\\right) = 18.07\\text{ grams}$$",
+            "Subtract the remaining mass on the $30$-th day from the initial mass of $80$ grams to find the total loss:<br>$$\\text{Total Loss} = 80 - 18.07 = 61.93\\text{ grams}$$<br>Rounding to the nearest gram, the total mass loss is $62\\text{ grams}$.",
+            "A discrete geometric model is appropriate for short periods because measurements are taken at set daily intervals, and the daily decay factor is easily calculated. However, radioactive decay is fundamentally a continuous physical process. A continuous exponential model $M(t) = M_0 e^{-\\lambda t}$ is preferred in physics because it allows calculations at any fraction of a second and integrates naturally with other physical rate models.<br><br>Final Answer: $$15, \\quad 62\\text{ grams}, \\quad \\text{discrete daily sampling vs continuous physical rates}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$14, \\quad 62\\text{ grams}, \\quad \\text{discrete vs continuous}$$",
+                "feedback": "Check your inequality step. Solving $n-1 > 13.52$ yields $n > 14.52$. The first day the mass falls below $40$ grams is the $15$-th day, not the $14$-th."
+            },
+            {
+                "ans": "$$15, \\quad 18\\text{ grams}, \\quad \\text{discrete vs continuous}$$",
+                "feedback": "You have calculated the mass remaining on the $30$-th day, which is $18$ grams. The question asks for the total mass lost, which is the initial mass minus the remaining mass ($80 - 18 = 62$ grams)."
+            },
+            {
+                "ans": "$$15, \\quad 62\\text{ grams}, \\quad \\text{geometric models are always better}$$",
+                "feedback": "Your numerical answers are correct, but your physics explanation is conceptually flawed. Exponential decay models are mathematically superior in physics because they model physical rates continuously without relying on arbitrary daily time divisions."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Loss vs Remaining",
+            "content": "Always read the final command of a question with extreme care. If the question asks for 'total loss', 'depreciation', or 'decay', you must calculate the difference between your initial value and your final value ($a - u_n$)."
+        }
+    },
+    {
+        "id": "004180",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Algebra and functions",
+        "topic": "Sequences and series",
+        "subtopic": [
+            "Geometric Progressions",
+            "Modelling"
+        ],
+        "img": false,
+        "question": "A company buys a piece of machinery for £50,000. At the end of each year, the value of the machinery depreciates by $15\\%$ of its value at the start of that year.<br><br>1. Show that the value of the machinery at the end of the fourth year is £26,100 to the nearest pound.<br>2. Find the total depreciation of the machinery over the first 8 years, giving your answer to the nearest pound.",
+        "steps": [
+            "The initial value of the machinery is $V_0 = 50000$. Since it depreciates by $15\\%$ each year, its value is multiplied by a factor of $(1 - 0.15) = 0.85$ at the end of each year.",
+            "Write the formula for the value of the machinery at the end of year $n$, $V_n = V_0 \\left(0.85\\right)^n$:<br>$$V_n = 50000\\left(0.85\\right)^n$$",
+            "To find the value at the end of the fourth year, calculate $V_4$:<br>$$V_4 = 50000\\left(0.85\\right)^4$$<br>$$V_4 = 50000\\left(0.522006\\right) = 26100.31$$<br>Rounding to the nearest pound, the value is £26,100.",
+            "To find the total depreciation over the first $8$ years, calculate the remaining value of the machinery at the end of the eighth year, $V_8$:<br>$$V_8 = 50000\\left(0.85\\right)^8$$<br>$$V_8 = 50000\\left(0.272490\\right) = 13624.52$$",
+            "Subtract this remaining value from the initial purchase price of £50,000 to find the total depreciation:<br>$$\\text{Total Depreciation} = 50000 - 13624.52 = 36375.48$$<br>Rounding to the nearest pound, the total depreciation is £36,375.<br><br>Final Answer: $$£26,100, \\quad £36,375$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$£26,100, \\quad £13,625$$",
+                "feedback": "You have calculated the remaining value of the machinery at the end of $8$ years (£13,625). To find the total depreciation, you must subtract this remaining value from the initial value (£50,000)."
+            },
+            {
+                "ans": "$$£26,100, \\quad £36,375$$",
+                "feedback": "Your numerical answers are correct. Ensure you show all intermediate calculation steps on your sheet to score full marks for 'detailed reasoning'."
+            },
+            {
+                "ans": "$$£30,700, \\quad £36,375$$",
+                "feedback": "It looks like you calculated $V_3$ instead of $V_4$ for the value at the end of the fourth year. Remember that the machinery depreciates at the end of each year, so it has depreciated $4$ times by the end of year $4$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Depreciation Indexing",
+            "content": "Unlike standard geometric term indexing where $u_n = a r^{n-1}$, depreciation starts after the first year. The initial value is $V_0$, meaning the value after $n$ years of depreciation is $V_n = V_0 r^n$."
+        }
     }
+
 
 
 
