@@ -605,7 +605,218 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: The Contradiction Setup",
             "content": "When starting a proof by contradiction, always write down your initial assumption clearly. The standard structure is: 'Assume for contradiction that [the opposite of the claim] is true.' Every step that follows must be logically sound until you hit a clear mathematical contradiction."
         }
+    },
+    {
+        "id": "004166",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Coordinate geometry",
+        "topic": "Circles",
+        "subtopic": [
+            "Equations of Circles",
+            "Line and Circle Intersections",
+            "Tangents"
+        ],
+        "img": false,
+        "question": "The equation of a circle is $x^2 + y^2 + 4x - 6y + 3 = 0$.<br><br>1. Find the centre and radius of the circle.<br>2. Find the coordinates of any points where the line $y = -3x + 7$ meets the circle $x^2 + y^2 + 4x - 6y + 3 = 0$.<br>3. State what can be deduced from your answer to part (2) about the line $y = -3x + 7$ and the circle.",
+        "steps": [
+            "To find the centre and radius of the circle, we rearrange the terms and complete the square for both $x$ and $y$:<br>$$x^2 + 4x + y^2 - 6y + 3 = 0$$",
+            "Complete the square for the $x$ terms and the $y$ terms separately:<br>$$x^2 + 4x = \\left(x + 2\\right)^2 - 4$$<br>$$y^2 - 6y = \\left(y - 3\\right)^2 - 9$$",
+            "Substitute these completed squares back into the original equation and simplify:<br>$$\\left(x + 2\\right)^2 - 4 + \\left(y - 3\\right)^2 - 9 + 3 = 0$$<br>$$\\left(x + 2\\right)^2 + \\left(y - 3\\right)^2 - 10 = 0$$<br>$$\\left(x + 2\\right)^2 + \\left(y - 3\\right)^2 = 10$$<br>So, the centre of the circle is $(-2, 3)$ and the radius is $\\sqrt{10}$.",
+            "To find the points of intersection, substitute the line equation $y = -3x + 7$ into the original equation of the circle:<br>$$x^2 + \\left(-3x + 7\\right)^2 + 4x - 6\\left(-3x + 7\\right) + 3 = 0$$",
+            "Expand and simplify the algebraic terms:<br>$$x^2 + \\left(9x^2 - 42x + 49\\right) + 4x + 18x - 42 + 3 = 0$$<br>$$10x^2 - 20x + 10 = 0$$",
+            "Divide the quadratic equation by $10$ to simplify factorisation:<br>$$x^2 - 2x + 1 = 0 \\implies \\left(x - 1\\right)^2 = 0$$<br>This quadratic equation has a single repeated real root:<br>$$x = 1$$",
+            "Substitute $x = 1$ back into the line equation to find the corresponding $y$-coordinate:<br>$$y = -3\\left(1\\right) + 7 = 4$$<br>So, the line meets the circle at the single coordinate point $(1, 4)$.",
+            "Since there is exactly one point of intersection, we can deduce that the line $y = -3x + 7$ is a tangent to the circle at the point $(1, 4)$.<br><br>Final Answer: $$(-2, 3), \\quad \\sqrt{10}, \\quad (1, 4), \\quad \\text{tangent}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$(2, -3), \\quad \\sqrt{10}, \\quad (1, 4), \\quad \\text{tangent}$$",
+                "feedback": "Be careful with the signs of your coordinates when extracting the centre from standard form. The equation $\\left(x+2\\right)^2 + \\left(y-3\\right)^2 = 10$ means the centre is $(-2, 3)$, not $(2, -3)$."
+            },
+            {
+                "ans": "$$(-2, 3), \\quad 10, \\quad (1, 4), \\quad \\text{secant}$$",
+                "feedback": "Remember that the right-hand side of the circle equation represents $r^2$, so the radius is $\\sqrt{10}$, not $10$. Additionally, a line with exactly one intersection point is a tangent, not a secant."
+            },
+            {
+                "ans": "$$(-2, 3), \\quad \\sqrt{10}, \\quad (1, 4) \\text{ and } (-1, 10), \\quad \\text{secant}$$",
+                "feedback": "Check your quadratic expansion steps. It looks like you may have had a sign error which led to a positive discriminant and two intersection points. Verify that $10x^2 - 20x + 10 = 0$ simplifies to $\\left(x-1\\right)^2 = 0$, yielding only one repeated root."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Repeated Roots meaning Tangency",
+            "content": "Finding intersections between a line and a curve is algebraically identical to solving a quadratic equation. If the resulting quadratic has a discriminant $\\Delta = 0$ (a repeated root), the line touches the curve at exactly one point, confirming it is a tangent."
+        }
+    },
+    {
+        "id": "004167",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Coordinate geometry",
+        "topic": "Circles",
+        "subtopic": [
+            "Equations of Circles",
+            "Line and Circle Intersections",
+            "Secants"
+        ],
+        "img": false,
+        "question": "The equation of a circle is $x^2 + y^2 - 6x - 4y - 12 = 0$.<br><br>1. Show that the circle has centre $(3, 2)$ and find its radius.<br>2. Find the coordinates of the points of intersection of the line $y = x + 4$ and the circle.<br>3. State what can be deduced from your answer to part (2) about the relationship between the line and the circle.",
+        "steps": [
+            "Rearrange the terms and complete the square for both variables to find the centre and radius of the circle:<br>$$x^2 - 6x + y^2 - 4y - 12 = 0$$",
+            "Complete the square for $x$ and $y$ separately:<br>$$x^2 - 6x = \\left(x - 3\\right)^2 - 9$$<br>$$y^2 - 4y = \\left(y - 2\\right)^2 - 4$$",
+            "Substitute these back into the original equation and simplify:<br>$$\\left(x - 3\\right)^2 - 9 + \\left(y - 2\\right)^2 - 4 - 12 = 0$$<br>$$\\left(x - 3\\right)^2 + \\left(y - 2\\right)^2 - 25 = 0$$<br>$$\\left(x - 3\\right)^2 + \\left(y - 2\\right)^2 = 25$$<br>This confirms the centre is $(3, 2)$, and the radius is $\\sqrt{25} = 5$.",
+            "To find the points of intersection, substitute the line equation $y = x + 4$ into the original circle equation:<br>$$x^2 + \\left(x + 4\\right)^2 - 6x - 4\\left(x + 4\\right) - 12 = 0$$",
+            "Expand the brackets and simplify the quadratic expression:<br>$$x^2 + \\left(x^2 + 8x + 16\\right) - 6x - 4x - 16 - 12 = 0$$<br>$$2x^2 - 2x - 12 = 0$$",
+            "Divide the entire equation by $2$ to simplify factorisation:<br>$$x^2 - x - 6 = 0 \\implies \\left(x - 3\\right)\\left(x + 2\\right) = 0$$<br>This yields two distinct real solutions for the $x$-coordinates:<br>$$x = 3 \\quad \\text{or} \\quad x = -2$$",
+            "Substitute these $x$ values back into the line equation $y = x + 4$ to find the corresponding $y$-coordinates:<br>For $x = 3$: $y = 3 + 4 = 7 \\implies (3, 7)$<br>For $x = -2$: $y = -2 + 4 = 2 \\implies (-2, 2)$",
+            "Since there are two distinct points of intersection, we can deduce that the line $y = x + 4$ is a secant line that cuts through the circle at $(3, 7)$ and $(-2, 2)$.<br><br>Final Answer: $$5, \\quad (3, 7) \\text{ and } (-2, 2), \\quad \\text{secant}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$5, \\quad (3, 7) \\text{ and } (-2, 2), \\quad \\text{tangent}$$",
+                "feedback": "Your coordinates are correct, but a line that intersects a circle at two distinct points cannot be a tangent. It is a secant."
+            },
+            {
+                "ans": "$$\\sqrt{12}, \\quad (3, 7) \\text{ and } (-2, 2), \\quad \\text{secant}$$",
+                "feedback": "Check your radius calculation. In the simplified form, you have $-9 - 4 - 12 = -25$. Moving this to the right-hand side yields $+25$, so the radius is $\\sqrt{25} = 5$, not $\\sqrt{12}$."
+            },
+            {
+                "ans": "$$5, \\quad (3, 7) \\text{ and } (2, 6), \\quad \\text{secant}$$",
+                "feedback": "It looks like you made a sign error when solving the quadratic equation. Double-check that $x^2-x-6=0$ factorises to $\\left(x-3\\right)\\left(x+2\\right)=0$, which yields $x=3$ and $x=-2$ as your $x$-coordinates."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Naming Relationships",
+            "content": "A straight line can only have three possible geometric relationships with a circle: it can be a tangent (exactly 1 intersection), a secant (exactly 2 intersections), or it can have no intersections at all."
+        }
+    },
+    {
+        "id": "004168",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Coordinate geometry",
+        "topic": "Circles",
+        "subtopic": [
+            "Equations of Circles",
+            "Line and Circle Intersections",
+            "Discriminants"
+        ],
+        "img": false,
+        "question": "The equation of a circle is $x^2 + y^2 - 2x - 8y + 12 = 0$.<br><br>1. Find the centre and radius of the circle.<br>2. Show algebraically that the line $y = x + 8$ does not meet the circle.<br>3. State what can be deduced from your answer to part (2) about the relationship between the line and the circle.",
+        "steps": [
+            "Complete the square for both $x$ and $y$ to write the circle in standard form:<br>$$x^2 - 2x + y^2 - 8y + 12 = 0$$<br>$$\\left(x - 1\\right)^2 - 1 + \\left(y - 4\\right)^2 - 16 + 12 = 0$$<br>$$\\left(x - 1\\right)^2 + \\left(y - 4\\right)^2 = 5$$<br>So, the centre of the circle is $(1, 4)$ and the radius is $\\sqrt{5}$.",
+            "To show that the line $y = x + 8$ does not meet the circle, substitute $y = x + 8$ into the original circle equation:<br>$$x^2 + \\left(x + 8\\right)^2 - 2x - 8\\left(x + 8\\right) + 12 = 0$$",
+            "Expand and collect like terms to form a quadratic equation in terms of $x$:<br>$$x^2 + \\left(x^2 + 16 x + 64\\right) - 2x - 8x - 64 + 12 = 0$$<br>$$2x^2 + 6x + 12 = 0$$",
+            "Divide the quadratic equation by $2$ to simplify:<br>$$x^2 + 3x + 6 = 0$$",
+            "To prove there are no real roots (no intersection points), calculate the discriminant $\\Delta = b^2 - 4ac$ of this quadratic equation, where $a = 1, b = 3, c = 6$:<br>$$\\Delta = 3^2 - 4\\left(1\\right)\\left(6\\right) = 9 - 24 = -15$$",
+            "Since the discriminant is negative ($\\Delta < 0$), the quadratic equation has no real solutions. This proves algebraically that the line does not meet the circle.",
+            "From this, we can deduce that the line $y = x + 8$ has no points in common with the circle and lies entirely outside the circle.<br><br>Final Answer: $$(1, 4), \\quad \\sqrt{5}, \\quad \\Delta = -15 < 0$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$(1, 4), \\quad 5, \\quad \\Delta = -15 < 0$$",
+                "feedback": "Remember that the right-hand side of your simplified circle equation represents $r^2$. The radius of the circle is $\\sqrt{5}$, not $5$."
+            },
+            {
+                "ans": "$$(-1, -4), \\quad \\sqrt{5}, \\quad \\Delta = -15 < 0$$",
+                "feedback": "Check your signs. The completed square form is $\\left(x-1\\right)^2 + \\left(y-4\\right)^2 = 5$, which means the coordinates of the centre are $(1, 4)$, not $(-1, -4)$."
+            },
+            {
+                "ans": "$$(1, 4), \\quad \\sqrt{5}, \\quad \\Delta = 57 > 0$$",
+                "feedback": "You may have made an expansion error when substituting the line. Be careful with signs: $-8\\left(x+8\\right) = -8x - 64$. Ensure all terms are correctly expanded before finding the discriminant."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Proving Non-Intersection",
+            "content": "To show that a line does not intersect a curve, the most robust algebraic method is to set up the quadratic intersection equation and show that its discriminant is strictly negative ($b^2 - 4ac < 0$)."
+        }
+    },
+    {
+        "id": "004169",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Coordinate geometry",
+        "topic": "Circles",
+        "subtopic": [
+            "Equations of Circles",
+            "Tangents",
+            "Distance Formulae"
+        ],
+        "img": false,
+        "question": "The circle $C$ has equation $x^2 + y^2 = 5$.<br><br>1. Write down the coordinates of the centre of the circle and state its radius.<br>2. The line $L$ has equation $y = 2x + k$, where $k$ is a constant. Show that if $L$ is a tangent to the circle, then $k = \\pm 5$.",
+        "steps": [
+            "The equation $x^2 + y^2 = 5$ is already in the standard form of a circle centred at the origin $(0, 0)$. The radius is given by $\\sqrt{5}$.",
+            "For the line $y = 2x + k$ to be a tangent to the circle, the perpendicular distance from the centre of the circle $(0, 0)$ to the line must be exactly equal to the radius of the circle, which is $\\sqrt{5}$.",
+            "Rearrange the line equation into the general straight-line form $Ax + By + C = 0$:<br>$$2x - y + k = 0$$",
+            "Recall the formula for the perpendicular distance $d$ from a point $(x_1, y_1)$ to a line $Ax + By + C = 0$:<br>$$d = \\dfrac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}$$",
+            "Substitute the coordinates of the centre $(0, 0)$ and the coefficients of our line ($A = 2, B = -1, C = k$) into the formula:<br>$$d = \\dfrac{|2\\left(0\\right) - 0 + k|}{\\sqrt{2^2 + \\left(-1\\right)^2}} = \\dfrac{|k|}{\\sqrt{5}}$$",
+            "Set this distance equal to the radius $\\sqrt{5}$ and solve for $k$:<br>$$\\dfrac{|k|}{\\sqrt{5}} = \\sqrt{5} \\implies |k| = 5 \\implies k = \\pm 5$$<br><br>Final Answer: $$k = \\pm 5$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$k = \\pm \\sqrt{5}$$",
+                "feedback": "It looks like you forgot to multiply by the denominator when solving. Multiplying $\\dfrac{|k|}{\\sqrt{5}} = \\sqrt{5}$ by $\\sqrt{5}$ yields $|k| = 5$, not $|k| = \\sqrt{5}$."
+            },
+            {
+                "ans": "$$k = \\pm 1$$",
+                "feedback": "You may have made an error when finding the length of the normal vector in the denominator. The denominator is $\\sqrt{2^2 + \\left(-1\\right)^2} = \\sqrt{5}$. Ensure you do not use $\\sqrt{2^2 + 1} = \\sqrt{3}$ or similar by mistake."
+            },
+            {
+                "ans": "$$k = 5$$",
+                "feedback": "Remember that solving $|k| = 5$ yields two possible values: a positive and a negative constant ($k = \\pm 5$), both of which represent valid parallel tangent lines on opposite sides of the circle."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Parallel Tangents",
+            "content": "For any given gradient, there are always exactly two parallel lines that are tangent to a circle. This is why our absolute value equation yields two symmetric solutions ($k = \\pm 5$)."
+        }
+    },
+    {
+        "id": "004170",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Coordinate geometry",
+        "topic": "Circles",
+        "subtopic": [
+            "Equations of Circles",
+            "Tangents",
+            "Equations of straight lines"
+        ],
+        "img": false,
+        "question": "The circle $C$ has equation $x^2 + y^2 - 6x - 8y + 15 = 0$.<br><br>1. Find the centre and radius of the circle.<br>2. Show that the point $P(2, 1)$ lies on the circle.<br>3. Find the equation of the tangent to the circle at the point $P$. Give your answer in the form $ax + by = c$, where $a$, $b$, and $c$ are integers.",
+        "steps": [
+            "Complete the square for the circle equation to find its centre and radius:<br>$$x^2 - 6x + y^2 - 8y + 15 = 0$$<br>$$\\left(x - 3\\right)^2 - 9 + \\left(y - 4\\right)^2 - 16 + 15 = 0$$<br>$$\\left(x - 3\\right)^2 + \\left(y - 4\\right)^2 = 10$$<br>So, the centre of the circle is $C(3, 4)$ and the radius is $\\sqrt{10}$.",
+            "To show that point $P(2, 1)$ lies on the circle, substitute $x = 2$ and $y = 1$ into the original equation:<br>$$2^2 + 1^2 - 6\\left(2\\right) - 8\\left(1\\right) + 15 = 4 + 1 - 12 - 8 + 15 = 0$$<br>Since the point satisfies the equation, $P(2, 1)$ lies on the circle.",
+            "Find the gradient of the radius line connecting the centre $C(3, 4)$ and the point $P(2, 1)$ using $m = \\dfrac{y_2 - y_1}{x_2 - x_1}$:<br>$$m_{\\text{radius}} = \\dfrac{1 - 4}{2 - 3} = \\dfrac{-3}{-1} = 3$$",
+            "The tangent line is perpendicular to the radius at the point of contact. Find the gradient of the tangent using the negative reciprocal relationship:<br>$$m_{\\text{tangent}} = -\\dfrac{1}{m_{\\text{radius}}} = -\\dfrac{1}{3}$$",
+            "Write the equation of the tangent line passing through $P(2, 1)$ using the point-slope formula:<br>$$y - 1 = -\\dfrac{1}{3}\\left(x - 2\\right)$$",
+            "Multiply by $3$ to clear the fraction and rearrange into the form $ax + by = c$ where $a, b, c \\in \\mathbb{Z}$:<br>$$3(y - 1) = -(x - 2)$$<br>$$3y - 3 = -x + 2 \\implies x + 3y = 5$$<br><br>Final Answer: $$x + 3y = 5$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$3x - y = 5$$",
+                "feedback": "You may have used the gradient of the radius ($3$) directly instead of finding the perpendicular gradient of the tangent. Tangents are perpendicular to radii, so the gradient must be $-\\dfrac{1}{3}$."
+            },
+            {
+                "ans": "$$x + 3y = 7$$",
+                "feedback": "Check your expansion of the right-hand side. Multiplying $-\\dfrac{1}{3}$ by $-2$ yields $+\\dfrac{2}{3}$, which becomes $+2$ when multiplied through by $3$. Your constant term should be $5$, not $7$."
+            },
+            {
+                "ans": "$$3x + y = 7$$",
+                "feedback": "This is the equation of the normal line (the radius extended). Remember that the normal line has the same gradient as the radius ($3$), while the tangent has the negative reciprocal gradient ($-\\dfrac{1}{3}$)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Tangents and Normals",
+            "content": "In circle geometry, the normal to a circle at any point always passes through the centre of the circle. This fact is key for finding the gradient of the tangent line, which is always perpendicular to the normal."
+        }
     }
+
 
 
 
