@@ -999,19 +999,19 @@ window.ALEVEL_QUESTIONS = [
             "To sketch the graph of the quartic $y = g(x)$, determine the axes intercepts:<br>The $x$-intercepts occur where $g(x) = 0 \\implies x = 2$ (repeated root), $x = 3$, and $x = -3$. These are the points $(2, 0)$, $(3, 0)$, and $(-3, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies g(0) = (-2)^2(0^2 - 9) = 4(-9) = -36$. This is the point $(0, -36)$.<br><br>Since the leading coefficient of $x^4$ is positive ($+1$), the curve is positive on both ends (heads up to the far-left and far-right). It touches the axis and turns around at $(2, 0)$:<br><br><img src='images/p1/004171_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
             "To solve the inequality $g(x) \\le 0$, find where the curve lies on or below the $x$-axis. From our sketch, the curve lies below the axis between $x = -3$ and $x = 3$. The isolated touching point at $x = 2$ also satisfies $g(2) = 0 \\le 0$ and is naturally included in this continuous interval.<br><br>Write this solution in set notation:<br>$$\\{x : -3 \\le x \\le 3\\}$$",
             "To map $y = x^4$ onto $y = (2x - 6)^4$, we can rewrite the target equation as $y = \\left[2\\left(x - 3\\right)\\right]^4 = 16\\left(x - 3\\right)^4$.<br><br>This can be achieved by the following sequence of two transformations:<br>1. A horizontal translation $3$ units to the right (vector $\\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix}$), which transforms $y = x^4$ into $y = (x - 3)^4$.<br>2. A vertical stretch with scale factor $16$ parallel to the $y$-axis, which transforms $y = (x - 3)^4$ into $y = 16(x - 3)^4 = (2x - 6)^4$.<br><br><em>Alternative Sequence:</em> First apply a horizontal stretch parallel to the $x$-axis with scale factor $\\dfrac{1}{2}$ (transforming $x \\to 2x$), followed by a horizontal translation $3$ units to the right (transforming $2x \\to 2(x - 3) = 2x - 6$).",
-            "Final Answer: $$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad \\{x : -3 \\le x \\le 3\\}, \\quad \\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$"
+            "Final Answer: $$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad \\{x : -3 \\le x \\le 3\\},$$<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad \\{x : -3 \\le x \\le 2\\} \\cup \\{x : 2 \\le x \\le 3\\}, \\quad \\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
+                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad \\{x : -3 \\le x \\le 2\\} \\cup \\{x : 2 \\le x \\le 3\\},$$<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
                 "feedback": "Your inequality intervals are correct, but they can be simplified. Since the point $x = 2$ is included in both parts and satisfies the inequality, the two intervals merge into a single continuous interval: $-3 \\le x \\le 3$."
             },
             {
-                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad \\{x : -3 \\le x \\le 3\\}, \\quad \\text{Horizontal stretch sf } 2 \\text{ then horizontal translation right by } 6$$",
+                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad \\{x : -3 \\le x \\le 3\\},$$<br>$$ \\text{Horizontal stretch sf } 2 \\text{ then horizontal translation right by } 6$$",
                 "feedback": "Be careful with your scale factors and vector order. A stretch parallel to the $x$-axis with a multiplier of $2$ corresponds to a scale factor of $\\dfrac{1}{2}$, not $2$. Additionally, stretching first and then translating right by $6$ would yield $\\left(2\\left(x-6\\right)\\right)^4 = \\left(2x - 12\\right)^4$, which is incorrect."
             },
             {
-                "ans": "$$\\left(x - 2\\right)^2 \\left(x^2 - 9\\right), \\quad \\{x : -3 \\le x \\le 3\\}, \\quad \\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
+                "ans": "$$\\left(x - 2\\right)^2 \\left(x^2 - 9\\right), \\quad \\{x : -3 \\le x \\le 3\\},$$<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
                 "feedback": "The question asks for the polynomial in a 'fully factorised form as the product of linear factors'. You must expand the quadratic term $\\left(x^2 - 9\\right)$ into its linear components $\\left(x-3\\right)\\left(x+3\\right)$ to score full marks."
             }
         ],
