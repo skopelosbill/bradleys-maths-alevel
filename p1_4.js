@@ -1423,7 +1423,216 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Combining Expansions",
             "content": "For composite expansion questions involving two different brackets, expand both brackets separately first up to the required power. This isolating method keeps your algebra clean and dramatically reduces sign slips."
         }
+    },
+    {
+        "id": "004186",
+        "board": "OCR",
+        "level": "AS",
+        "major_area": "Algebra and functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Composite Functions",
+            "Quadratic Functions",
+            "Range"
+        ],
+        "img": false,
+        "question": "The function $f$ is defined for all real values of $x$ as $f(x) = c + 6x - x^2$, where $c$ is a constant.<br><br>1. Given that the range of $f$ is $f(x) \\le 14$, find the value of $c$.<br>2. Given instead that $ff(3) = 3$, find the possible values of $c$.",
+        "steps": [
+            "The function $f(x) = c + 6x - x^2$ can be rearranged into a standard quadratic form: $-x^2 + 6x + c$. Since the leading coefficient $-1$ is negative, this is a downward-facing parabola with a maximum value at its vertex.",
+            "Complete the square to find the coordinates of the vertex:<br>$$f(x) = -\\left(x^2 - 6x\\right) + c = -\\left[\\left(x - 3\\right)^2 - 9\\right] + c$$<br>$$f(x) = -\\left(x - 3\\right)^2 + 9 + c$$<br>The maximum value occurs at the vertex where $x = 3$, giving a maximum value of $9 + c$.",
+            "Since the range of the function is $f(x) \\le 14$, the maximum value must equal $14$:<br>$$9 + c = 14 \\implies c = 5$$",
+            "For the second part of the question, we are given instead that $ff(3) = 3$. First, find an expression for $f(3)$ in terms of $c$:<br>$$f(3) = c + 6\\left(3\\right) - 3^2 = c + 18 - 9 = c + 9$$",
+            "Now substitute this result back into $f(x)$ to evaluate the composite function $f(f(3))$:<br>$$f(f(3)) = f\\left(c + 9\\right) = c + 6\\left(c + 9\\right) - \\left(c + 9\\right)^2$$<br>$$f(f(3)) = c + 6c + 54 - \\left(c^2 + 18c + 81\\right)$$<br>$$f(f(3)) = -c^2 - 11c - 27$$",
+            "Set this expression equal to $3$ and rearrange to form a standard quadratic equation in terms of $c$:<br>$$-c^2 - 11c - 27 = 3 \\implies c^2 + 11c + 30 = 0$$",
+            "Factorise and solve the quadratic equation for $c$:<br>$$\\left(c + 5\\right)\\left(c + 6\\right) = 0 \\implies c = -5 \\quad \\text{or} \\quad c = -6$$<br><br>Final Answer: $$c = 5, \\quad c = -5 \\text{ or } c = -6$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$c = 8, \\quad c = -5 \\text{ or } c = -6$$",
+                "feedback": "Check your completing the square steps. It looks like you may have subtracted $6$ instead of $9$ when completing the square for $x^2-6x$. Remember that the constant term is $\\left(\\dfrac{b}{2}\\right)^2 = \\left(-3\\right)^2 = 9$."
+            },
+            {
+                "ans": "$$c = 5, \\quad c = 5 \\text{ or } c = 6$$",
+                "feedback": "Be careful with your signs when factorising the quadratic $c^2 + 11c + 30 = 0$. Since all coefficients are positive, the factorisation is $\\left(c+5\\right)\\left(c+6\\right) = 0$, which yields negative roots $c = -5$ and $c = -6$."
+            },
+            {
+                "ans": "$$c = 5, \\quad c = -5$$",
+                "feedback": "You have only found one of the two possible values of $c$ for the second part. Ensure you solve for both linear factors of the quadratic equation."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Parabola Vertices",
+            "content": "For a quadratic function $f(x) = ax^2 + bx + c$, the $x$-coordinate of the vertex always lies at $x = -\\dfrac{b}{2a}$. This is a highly reliable shortcut for finding the maximum or minimum of a quadratic function without completing the square."
+        }
+    },
+    {
+        "id": "004172",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Algebra and functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Composite Functions",
+            "Domain and Range",
+            "Rational Functions"
+        ],
+        "img": false,
+        "question": "The functions $g$ and $h$ are defined for all real values of $x$ (with $x \\ne 1$ for $g(x)$) by:<br>$$g(x) = \\dfrac{2x + 3}{x - 1}, \\quad h(x) = x^2 - 2$$<br>1. Find the range of $g(x)$.<br>2. Find the expression for the composite function $gh(x)$, and state the values of $x$ for which $gh(x)$ is not defined.",
+        "steps": [
+            "To find the range of the rational function $g(x)$, let $y = g(x)$ and rearrange the equation to express $x$ in terms of $y$:<br>$$y = \\dfrac{2x + 3}{x - 1}$$<br>$$y\\left(x - 1\\right) = 2x + 3 \\implies yx - y = 2x + 3$$",
+            "Group the $x$ terms on one side of the equation:<br>$$yx - 2x = y + 3 \\implies x\\left(y - 2\\right) = y + 3$$<br>$$x = \\dfrac{y + 3}{y - 2}$$",
+            "For $x$ to be defined as a real number, the denominator of this fraction cannot be zero:<br>$$y - 2 \\ne 0 \\implies y \\ne 2$$<br>So, the range of $g(x)$ is all real numbers except $2$. In set notation, this is $\\{y \\in \\mathbb{R} : y \\ne 2\\}$.",
+            "To find the composite function $gh(x)$, substitute $h(x) = x^2 - 2$ in place of $x$ inside the function $g(x)$:<br>$$gh(x) = g\\left(h\\left(x\\right)\\right) = g\\left(x^2 - 2\\right) = \\dfrac{2\\left(x^2 - 2\\right) + 3}{\\left(x^2 - 2\\right) - 1}$$",
+            "Expand and simplify the numerator and denominator:<br>$$gh(x) = \\dfrac{2x^2 - 4 + 3}{x^2 - 3} = \\dfrac{2x^2 - 1}{x^2 - 3}$$",
+            "The composite function $gh(x)$ is not defined when the denominator is zero:<br>$$x^2 - 3 = 0 \\implies x^2 = 3 \\implies x = \\pm\\sqrt{3}$$<br>Additionally, the domain of $gh(x)$ requires that the output of $h(x)$ is within the domain of $g(x)$. Since $g(x)$ is undefined at $x = 1$, we must also exclude $h(x) = 1 \\implies x^2 - 2 = 1 \\implies x = \\pm\\sqrt{3}$, which yields the exact same restriction.<br><br>Final Answer: $$y \\ne 2, \\quad gh(x) = \\dfrac{2x^2 - 1}{x^2 - 3} \\text{ for } x \\ne \\pm\\sqrt{3}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$y \\ne 1, \\quad gh(x) = \\dfrac{2x^2 - 1}{x^2 - 3} \\text{ for } x \\ne \\pm\\sqrt{3}$$",
+                "feedback": "You may have confused the vertical asymptote with the horizontal asymptote. The horizontal asymptote of $g(x) = \\dfrac{2x+3}{x-1}$ is determined by the ratio of the leading coefficients, which is $\\dfrac{2}{1} = 2$. Thus, $y \\ne 2$, not $y \\ne 1$."
+            },
+            {
+                "ans": "$$y \\ne 2, \\quad gh(x) = \\dfrac{2x^2 - 1}{x^2 - 3} \\text{ for } x \\ne 3$$",
+                "feedback": "Check your denominator solving. Setting $x^2-3 = 0$ yields $x^2 = 3$, so $x = \\pm\\sqrt{3}$, not $x = 3$. You must exclude both the positive and negative roots."
+            },
+            {
+                "ans": "$$y \\ne 2, \\quad gh(x) = \\dfrac{2x^2 + 1}{x^2 - 1} \\text{ for } x \\ne \\pm 1$$",
+                "feedback": "It looks like you made a sign error when substituting $h(x)$ into the numerator. Be careful: $2\\left(x^2-2\\right) + 3 = 2x^2 - 4 + 3 = 2x^2 - 1$, not $2x^2 + 1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Horizontal Asymptote Shortcut",
+            "content": "For a rational function of the form $f(x) = \\dfrac{ax + b}{cx + d}$, the range will always exclude the value $\\dfrac{a}{c}$. This corresponds to the horizontal asymptote of the hyperbola as $x \\to \\pm\\infty$."
+        }
+    },
+    {
+        "id": "004188",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Algebra and functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Modulus Functions",
+            "Composite Functions",
+            "Domain and Range"
+        ],
+        "img": false,
+        "question": "The function $f$ is defined for all real values of $x$ by:<br>$$f(x) = |2x - 5| - 3$$<br>1. Write down the range of $f$.<br>2. Solve the equation $ff(x) = 2$.",
+        "steps": [
+            "Since the absolute value expression is always non-negative, we have:<br>$$|2x - 5| \\ge 0$$<br>Subtracting $3$ from both sides gives:<br>$$|2x - 5| - 3 \\ge -3 \\implies f(x) \\ge -3$$<br>So, the range of $f(x)$ is $y \\ge -3$.",
+            "To solve the composite equation $ff(x) = 2$, let $y = f(x)$. This transforms the equation into:<br>$$f(y) = 2 \\implies |2y - 5| - 3 = 2$$",
+            "Solve this basic modulus equation for $y$:<br>$$|2y - 5| = 5$$<br>This splits into two linear cases:<br>$$2y - 5 = 5 \\implies 2y = 10 \\implies y = 5$$<br>$$2y - 5 = -5 \\implies 2y = 0 \\implies y = 0$$",
+            "Substitute $f(x)$ back in place of $y$, which gives us two separate modulus equations to solve for $x$:<br>$$\\text{Case 1: } f(x) = 0 \\quad \\text{and} \\quad \\text{Case 2: } f(x) = 5$$",
+            "Solve **Case 1**: $f(x) = 0$:<br>$$|2x - 5| - 3 = 0 \\implies |2x - 5| = 3$$<br>$$2x - 5 = 3 \\implies 2x = 8 \\implies x = 4$$<br>$$2x - 5 = -3 \\implies 2x = 2 \\implies x = 1$$",
+            "Solve **Case 2**: $f(x) = 5$:<br>$$|2x - 5| - 3 = 5 \\implies |2x - 5| = 8$$<br>$$2x - 5 = 8 \\implies 2x = 13 \\implies x = \\dfrac{13}{2} = 6.5$$<br>$$2x - 5 = -8 \\implies 2x = -3 \\implies x = -\\dfrac{3}{2} = -1.5$$",
+            "Combine all solutions to obtain our final set of roots:<br>$$x = -1.5, \\quad 1, \\quad 4, \\quad 6.5$$<br><br>Final Answer: $$y \\ge -3, \\quad x = -1.5, \\, 1, \\, 4, \\, 6.5$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$y \\ge 3, \\quad x = 1, \\, 4, \\, 6.5, \\, -1.5$$",
+                "feedback": "Check the range of your modulus function. The vertical shift is $-3$, which means the minimum value of $f(x)$ is $-3$, not $+3$. Thus, the range must be $y \\ge -3$."
+            },
+            {
+                "ans": "$$y \\ge -3, \\quad x = 4, \\, 6.5$$",
+                "feedback": "You have only solved the positive cases for your modulus equations. Remember that a modulus equation of the form $|Ax+B| = C$ must be solved for both $Ax+B = C$ and $Ax+B = -C$ to capture all valid real roots."
+            },
+            {
+                "ans": "$$y \\ge -3, \\quad x = 1, \\, 4$$",
+                "feedback": "It looks like you only solved the first case $f(x) = 0$. You must also solve the second case $f(x) = 5$ to get the complete set of four real roots."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Multi-layered Modulus Equations",
+            "content": "When solving composite modulus equations like $f(f(x)) = k$, introducing a substitution variable like $y = f(x)$ keeps the algebra clean and prevents you from making sign errors during the nested expansions."
+        }
+    },
+    {
+        "id": "004189",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Algebra and functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Inverse Functions",
+            "Domain and Range",
+            "Equations"
+        ],
+        "img": false,
+        "question": "The function $f$ is defined for $x \\ge 2$ by:<br>$$f(x) = x^2 - 4x + 4$$<br>1. Show that $f$ has an inverse function $f^{-1}$, stating its domain and range.<br>2. Find an expression for $f^{-1}(x)$.<br>3. Solve the equation $f(x) = f^{-1}(x)$.",
+        "steps": [
+            "First, rewrite $f(x)$ by completing the square:<br>$$f(x) = x^2 - 4x + 4 = \\left(x - 2\\right)^2$$<br>For $x \\ge 2$, the gradient $f'(x) = 2(x - 2) \\ge 0$, which means the function is strictly increasing. Because it is a one-to-one function on this restricted domain, it has a valid inverse function.",
+            "For $x \\ge 2$, the value of $\\left(x-2\\right)^2$ is always greater than or equal to $0$, so the range of $f$ is $y \\ge 0$.<br>The domain of $f^{-1}$ is the range of $f$: $x \\ge 0$.<br>The range of $f^{-1}$ is the domain of $f$: $y \\ge 2$.",
+            "To find $f^{-1}(x)$, let $y = \\left(x - 2\\right)^2$ and solve for $x$ in terms of $y$:<br>$$\\sqrt{y} = x - 2 \\implies x = 2 + \\sqrt{y}$$<br>Since our domain is $x \\ge 2$, we choose the positive square root. Replace variables to write the inverse function:<br>$$f^{-1}(x) = 2 + \\sqrt{x} \\quad \\text{for} \\quad x \\ge 0$$",
+            "To solve the equation $f(x) = f^{-1}(x)$, we use the mathematical identity that any intersection between a function and its inverse must lie along the line of symmetry $y = x$. Therefore, we solve:<br>$$f(x) = x \\implies x^2 - 4x + 4 = x$$",
+            "Rearrange to form a standard quadratic equation:<br>$$x^2 - 5x + 4 = 0$$<br>Factorise the quadratic:<br>$$\\left(x - 1\\right)\\left(x - 4\\right) = 0 \\implies x = 1 \\quad \\text{or} \\quad x = 4$$",
+            "Verify our solutions against the original domain constraints. Since the domain of $f(x)$ is strictly $x \\ge 2$, we must discard $x = 1$. This leaves the unique real solution:<br>$$x = 4$$<br><br>Final Answer: $$f^{-1}(x) = 2 + \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x = 4$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$f^{-1}(x) = 2 + \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x = 1 \\text{ or } x = 4$$",
+                "feedback": "You have forgotten to check your solutions against the domain of the original function. Since $f(x)$ is only defined for $x \\ge 2$, the solution $x = 1$ is invalid and must be discarded."
+            },
+            {
+                "ans": "$$f^{-1}(x) = 2 \\pm \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x = 4$$",
+                "feedback": "An inverse function must be strictly single-valued to be a valid function. Since the range of $f^{-1}$ is $y \\ge 2$, you must only select the positive root, $2 + \\sqrt{x}$."
+            },
+            {
+                "ans": "$$f^{-1}(x) = \\sqrt{x} - 2, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x = 4$$",
+                "feedback": "It looks like you made a sign error when isolating $x$. Since $x - 2 = \\sqrt{y}$, adding $2$ to both sides yields $x = 2 + \\sqrt{y}$, not $\\sqrt{y} - 2$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Intersections with Inverses",
+            "content": "Solving $f(x) = f^{-1}(x)$ directly can often lead to difficult non-linear equations (in this case, $\\left(x-2\\right)^2 = 2+\\sqrt{x}$). Always simplify your work by solving the equivalent, much simpler equation $f(x) = x$ instead."
+        }
+    },
+    {
+        "id": "004190",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Algebra and functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Inverse Functions",
+            "Self-Inverse Functions",
+            "Periodic Functions"
+        ],
+        "img": false,
+        "question": "The function $f$ is defined for all real values of $x$ except $x = a$ by:<br>$$f(x) = \\dfrac{3x + 1}{x - 3}$$<br>1. Write down the value of the constant $a$.<br>2. Show that $f(x)$ is a self-inverse function, meaning $f(x) = f^{-1}(x)$ for all $x \\ne 3$.<br>3. Evaluate $f^{2026}(5)$, showing your working clearly.",
+        "steps": [
+            "The function $f(x) = \\dfrac{3x + 1}{x - 3}$ is undefined when its denominator is equal to zero:<br>$$x - 3 = 0 \\implies x = 3$$<br>Therefore, the constant restriction value is $a = 3$.",
+            "To prove $f(x)$ is a self-inverse function, let $y = f(x)$ and solve for $x$ in terms of $y$:<br>$$y = \\dfrac{3x + 1}{x - 3} \\implies y\\left(x - 3\\right) = 3x + 1$$",
+            "Expand and isolate the $x$ terms:<br>$$yx - 3y = 3x + 1 \\implies yx - 3x = 3y + 1$$<br>$$x\\left(y - 3\\right) = 3y + 1 \\implies x = \\dfrac{3y + 1}{y - 3}$$",
+            "Replace the variables to write the expression for $f^{-1}(x)$:<br>$$f^{-1}(x) = \\dfrac{3x + 1}{x - 3}$$<br>Since $f^{-1}(x)$ is identical to our original function $f(x)$, the function is proven to be self-inverse.",
+            "Because $f(x)$ is self-inverse, applying the function twice returns the original input variable:<br>$$f^2(x) = f\\left(f\\left(x\\right)\\right) = x$$",
+            "From this, we can deduce that any even number of compositions will simplify to the identity function, while any odd number of compositions simplifies to $f(x)$:<br>$$f^{2n}(x) = x \\quad \\text{and} \\quad f^{2n+1}(x) = f(x)$$",
+            "Since $2026$ is an even integer, the composite function $f^{2026}(x)$ is equivalent to the identity function:<br>$$f^{2026}(5) = 5$$<br><br>Final Answer: $$a = 3, \\quad f(f(x)) = x \\implies f^{-1}(x) = f(x), \\quad 5$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$a = -3, \\quad f^{-1}(x) = f(x), \\quad 5$",
+                "feedback": "Check your denominator restriction. The denominator is $x-3$, which is equal to zero at $x = 3$, not $x = -3$. Therefore, $a = 3$."
+            },
+            {
+                "ans": "$a = 3, \\quad f^{-1}(x) = f(x), \\quad \\dfrac{8}{1}$",
+                "feedback": "You may have evaluated $f(5)$ instead of $f^{2026}(5)$. Since $2026$ is an even number, the composite function simplifies to the identity, meaning $f^{2026}(x) = x$, so the output is exactly $5$."
+            },
+            {
+                "ans": "$a = 3, \\quad f^{-1}(x) = \\dfrac{3x - 1}{x + 3}, \\quad 5$",
+                "feedback": "It looks like you made a sign error when finding the inverse function. Double-check your algebraic isolation to ensure you get $x = \\dfrac{3y+1}{y-3}$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: High-order Compositions",
+            "content": "When asked to evaluate high-order compositions like $f^{2026}(x)$, never calculate them term by term. Instead, evaluate the first few terms—$f^2(x)$, $f^3(x)$, etc.—to identify the periodic or self-inverse pattern."
+        }
     }
+
 
 
 
