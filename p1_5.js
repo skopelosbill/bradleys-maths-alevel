@@ -1,5 +1,5 @@
 window.ALEVEL_QUESTIONS = [
-    [
+    
     {
         "id": "004201",
         "board": "OCR",
@@ -214,6 +214,6 @@ window.ALEVEL_QUESTIONS = [
             "content": "When evaluating $\\int x\\ln(2x)\\text{d}x$ by parts, be extremely cautious with the lower limit. Since $\\ln 1 = 0$, evaluating the term $2x^2\\ln(2x)$ at the lower limit $x = 1/2$ results in $0$, but the companion term $-x^2$ evaluates to $-1/4$. Since this term is subtracted, it becomes a positive $+1/4$ in your final area calculation."
         }
     }
-]
+
 
 ];
