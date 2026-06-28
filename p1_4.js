@@ -1940,7 +1940,7 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "$$$800, \\quad 4.62 \\text{ hours}, \\quad 120 \\text{ bacteria per hour}$$",
+                "ans": "$$800, \\quad 4.62 \\text{ hours}, \\quad 120 \\text{ bacteria per hour}$$",
                 "feedback": "It looks like you forgot to substitute $t = 4$ into your rate of change expression. The value $120$ is only the rate of change at the start ($t=0$)."
             },
             {
