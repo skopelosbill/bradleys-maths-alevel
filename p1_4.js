@@ -2038,13 +2038,4 @@ window.ALEVEL_QUESTIONS = [
         }
     }
 
-
-
-
-
-
-
-
-
-
 ];
