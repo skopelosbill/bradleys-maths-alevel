@@ -1835,7 +1835,209 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Conjugate Elimination",
             "content": "For parametric curves featuring reciprocal terms (like $t$ and $\\dfrac{k}{t}$), using algebraic conjugates $(x+y)$ and $(x-y)$ is the most robust and elegant way to eliminate the parameter, leading directly to a hyperbola."
         }
+    },
+    {
+        "id": "004196",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Exponential Decay",
+            "Rates of Change",
+            "Natural Logarithms"
+        ],
+        "img": false,
+        "question": "In a science experiment, a substance is decaying exponentially. Its mass, $M$ grams, at time $t$ minutes is given by $M = 200e^{-0.04t}$.<br><br>1. Find the time taken for the mass to decrease to half of its original value, giving your answer to 3 significant figures.<br><br>A second substance is also decaying exponentially. Initially its mass was 500 grams and, after 10 minutes, its mass was 400 grams.<br><br>2. Find the time at which both substances are decaying at the same rate, giving your answer correct to 3 significant figures.",
+        "steps": [
+            "To find when the mass of the first substance decreases to half of its original value, first identify the initial mass: at $t = 0$, $M = 200e^0 = 200$ grams. Half of this original mass is $100$ grams.",
+            "Set $M = 100$ and solve for $t$ using natural logarithms:<br>$$200e^{-0.04t} = 100 \\implies e^{-0.04t} = 0.5$$<br>$$-0.04t = \\ln\\left(0.5\\right) = -\\ln\\left(2\\right) \\implies t = \\dfrac{\\ln\\left(2\\right)}{0.04} = 25\\ln\\left(2\\right) \\approx 17.3 \\text{ minutes}$$",
+            "For the second substance, its mass $N$ at time $t$ can be modelled by $N = 500e^{-kt}$, where $k$ is the positive decay constant. Since $N = 400$ at $t = 10$:<br>$$400 = 500e^{-10k} \\implies e^{-10k} = 0.8$$<br>$$-10k = \\ln\\left(0.8\\right) \\implies k = -0.1\\ln\\left(0.8\\right) = 0.1\\ln\\left(1.25\\right) \\approx 0.022314$$",
+            "To find when both substances are decaying at the same rate, find the derivatives $\\dfrac{\\text{d}M}{\\text{d}t}$ and $\\dfrac{\\text{d}N}{\\text{d}t}$:<br>$$\\dfrac{\\text{d}M}{\\text{d}t} = 200\\left(-0.04\\right)e^{-0.04t} = -8e^{-0.04t}$$<br>$$\\dfrac{\\text{d}N}{\\text{d}t} = 500\\left(-k\\right)e^{-kt} = -500ke^{-kt}$$",
+            "Equate the rates of decay (the positive magnitudes of the derivatives) and substitute $k \\approx 0.022314$:<br>$$8e^{-0.04t} = 500\\left(0.022314\\right)e^{-0.022314t}$$<br>$$8e^{-0.04t} = 11.157e^{-0.022314t}$$",
+            "Rearrange to solve for $t$:<br>$$\\dfrac{e^{-0.022314t}}{e^{-0.04t}} = \\dfrac{8}{11.157} \\implies e^{0.017686t} = 0.71704$$<br>$$0.017686t = \\ln\\left(0.71704\\right) = -0.33266$$<br>$$t = \\dfrac{-0.33266}{-0.017686} \\approx 18.8 \\text{ minutes}$$<br><br>Final Answer: $$17.3 \\text{ minutes}, \\quad 18.8 \\text{ minutes}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$17.3 \\text{ minutes}, \\quad 21.4 \\text{ minutes}$$",
+                "feedback": "You may have made an error when calculating the decay constant $k$ of the second substance. Ensure you use $k = -0.1\\ln\\left(0.8\\right) = 0.1\\ln\\left(1.25\\right) \\approx 0.022314$."
+            },
+            {
+                "ans": "$$17.3 \\text{ minutes}, \\quad 18.8 \\text{ minutes}$$",
+                "feedback": "Your numerical answers are correct. Double-check that your work clearly shows the differentiation of both exponential functions to earn full method marks."
+            },
+            {
+                "ans": "$$8.66 \\text{ minutes}, \\quad 18.8 \\text{ minutes}$$",
+                "feedback": "It looks like you defined half of the original mass as $50$ grams instead of $100$ grams in your first step. Since the initial mass is $200$ grams, the half-life is reached when the mass is $100$ grams."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Rates of Decay",
+            "content": "A 'rate of decay' is physically a positive quantity representing loss, which corresponds to the magnitude of the negative derivative (i.e., $-\\dfrac{\\text{d}M}{\\text{d}t}$). When equating rates of change, always ensure you are equating positive values to avoid sign conflicts."
+        }
+    },
+    {
+        "id": "004197",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Exponential Decay",
+            "Rates of Change",
+            "Newton's Law of Cooling"
+        ],
+        "img": false,
+        "question": "A cup of coffee is cooling in a room with a constant temperature of $20^\\circ\\text{C}$. The temperature, $\\theta^\\circ\\text{C}$, of the coffee at time $t$ minutes is modelled by the equation:<br>$$\\theta = 20 + 65e^{-0.08t}$$<br>1. Write down the initial temperature of the coffee.<br>2. Find the time taken for the temperature of the coffee to fall to $50^\\circ\\text{C}$, giving your answer correct to 3 significant figures.<br>3. Differentiate the equation to find the rate of change of temperature, $\\dfrac{\\text{d}\\theta}{\\text{d}t}$, at the instant when $t = 15$ minutes, giving your answer to 3 significant figures.",
+        "steps": [
+            "To find the initial temperature, substitute $t = 0$ into the temperature equation:<br>$$\\theta = 20 + 65e^{-0.08\\left(0\\right)} = 20 + 65e^0 = 20 + 65\\left(1\\right) = 85^\\circ\\text{C}$$",
+            "To find the time taken to cool to $50^\\circ\\text{C}$, set $\\theta = 50$ and solve for $t$:<br>$$50 = 20 + 65e^{-0.08t} \\implies 30 = 65e^{-0.08t}$$",
+            "Isolate the exponential term and take natural logarithms:<br>$$e^{-0.08t} = \\dfrac{30}{65} \\approx 0.461538$$<br>$$-0.08t = \\ln\\left(0.461538\\right) = -0.773190$$",
+            "Solve for $t$:<br>$$t = \\dfrac{-0.773190}{-0.08} \\approx 9.6648$$<br>Rounding to 3 significant figures gives $9.66$ minutes.",
+            "To find the rate of change of temperature, differentiate $\\theta$ with respect to $t$ using the chain rule:<br>$$\\dfrac{\\text{d}\\theta}{\\text{d}t} = 65\\left(-0.08\\right)e^{-0.08t} = -5.2e^{-0.08t}$$",
+            "Substitute $t = 15$ into the derivative expression to find the rate at that instant:<br>$$\\dfrac{\\text{d}\\theta}{\\text{d}t} = -5.2e^{-0.08\\left(15\\right)} = -5.2e^{-1.2}$$<br>$$\\dfrac{\\text{d}\\theta}{\\text{d}t} \\approx -5.2\\left(0.301194\\right) \\approx -1.57^\\circ\\text{C per minute}$$<br><br>Final Answer: $$85^\\circ\\text{C}, \\quad 9.66 \\text{ minutes}, \\quad -1.57^\\circ\\text{C per minute}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$65^\\circ\\text{C}, \\quad 9.66 \\text{ minutes}, \\quad -1.57^\\circ\\text{C per minute}$$",
+                "feedback": "You may have forgotten to add the ambient room temperature of $20^\\circ\\text{C}$ to your initial calculation. At $t=0$, $\\theta = 20 + 65 = 85^\\circ\\text{C}$."
+            },
+            {
+                "ans": "$$85^\\circ\\text{C}, \\quad 14.1 \\text{ minutes}, \\quad -1.57^\\circ\\text{C per minute}$$",
+                "feedback": "Check your algebraic step when isolating the exponential term. It looks like you solved $50 = 65e^{-0.08t}$ and forgot to subtract the constant $20$ from $50$ first."
+            },
+            {
+                "ans": "$$85^\\circ\\text{C}, \\quad 9.66 \\text{ minutes}, \\quad -5.2^\\circ\\text{C per minute}$$",
+                "feedback": "It looks like you forgot to substitute $t = 15$ into your derivative. The expression $-5.2e^{-0.08t}$ must be evaluated at the specific instant $t = 15$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Newton's Law Constant",
+            "content": "In cooling models of the form $\\theta = T_{\\text{ambient}} + Ae^{-kt}$, the constant term represents the temperature of the surrounding medium. As $t \\to \\infty$, the exponential term decays to $0$, meaning the temperature of the object asymptotically approaches the room temperature."
+        }
+    },
+    {
+        "id": "004198",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Exponential Growth",
+            "Rates of Change",
+            "Doubling Time"
+        ],
+        "img": false,
+        "question": "The population of a species of bacteria, $P$, in a laboratory culture at time $t$ hours is modelled by the equation:<br>$$P = 800e^{0.15t}$$<br>1. State the initial population of the bacteria.<br>2. Find the time taken for the population of the bacteria to double, giving your answer correct to 3 significant figures.<br>3. Find the rate of change of the population at the instant when $t = 4$ hours, giving your answer to the nearest integer.",
+        "steps": [
+            "To find the initial population, substitute $t = 0$ into the population model:<br>$$P = 800e^{0.15\\left(0\\right)} = 800e^0 = 800$$",
+            "To find the doubling time, we set the population $P$ equal to double the initial value ($2 \\times 800 = 1600$) and solve for $t$:<br>$$1600 = 800e^{0.15t} \\implies e^{0.15t} = 2$$",
+            "Take the natural logarithm of both sides to isolate $t$:<br>$$0.15t = \\ln\\left(2\\right) \\approx 0.693147$$<br>$$t = \\dfrac{\\ln\\left(2\\right)}{0.15} \\approx 4.6209 \\text{ hours}$$<br>Rounding to 3 significant figures gives $4.62$ hours.",
+            "To find the rate of change of the population, differentiate $P$ with respect to $t$ using the chain rule:<br>$$\\dfrac{\\text{d}P}{\\text{d}t} = 800\\left(0.15\\right)e^{0.15t} = 120e^{0.15t}$$",
+            "Substitute $t = 4$ into the derivative expression to find the rate at that instant:<br>$$\\dfrac{\\text{d}P}{\\text{d}t} = 120e^{0.15\\left(4\\right)} = 120e^{0.6}$$<br>$$\\dfrac{\\text{d}P}{\\text{d}t} \\approx 120\\left(1.822118\\right) \\approx 218.65$$<br>Rounding to the nearest integer gives $219$ bacteria per hour.<br><br>Final Answer: $$800, \\quad 4.62 \\text{ hours}, \\quad 219 \\text{ bacteria per hour}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$$800, \\quad 4.62 \\text{ hours}, \\quad 120 \\text{ bacteria per hour}$$",
+                "feedback": "It looks like you forgot to substitute $t = 4$ into your rate of change expression. The value $120$ is only the rate of change at the start ($t=0$)."
+            },
+            {
+                "ans": "$$800, \\quad 9.24 \\text{ hours}, \\quad 219 \\text{ bacteria per hour}$$",
+                "feedback": "Check your doubling equation. Setting $e^{0.15t} = 2$ means $0.15t = \\ln\\left(2\\right)$, not $0.15t = 2\\ln\\left(2\\right)$."
+            },
+            {
+                "ans": "$$800, \\quad 4.62 \\text{ hours}, \\quad 1458 \\text{ bacteria per hour}$$",
+                "feedback": "You may have made an error when differentiating. The derivative of $800e^{0.15t}$ is $800\\left(0.15\\right)e^{0.15t} = 120e^{0.15t}$, not $800e^{0.15t}$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Doubling Time Rule",
+            "content": "For any exponential growth model of the form $P = P_0 e^{kt}$, the doubling time is completely independent of the starting population $P_0$. It is always given by the simple exact formula $t = \\dfrac{\\ln\\left(2\\right)}{k}$."
+        }
+    },
+    {
+        "id": "004199",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Exponential Decay",
+            "Rates of Change"
+        ],
+        "img": false,
+        "question": "The concentration of a drug in a patient's bloodstream, $C\\text{ mg/L}$, at time $t$ hours after injection is modelled by the equation $C = 50e^{-0.25t}$ for $t \\ge 0$.<br><br>1. Find the time at which the concentration has decreased to $10\\%$ of its initial value, giving your answer correct to 3 significant figures.<br>2. Differentiate the equation to find the rate of change of concentration, $\\dfrac{\\text{d}C}{\\text{d}t}$, and calculate the magnitude of this rate when $t = 4$ hours, giving your answer correct to 3 significant figures.",
+        "steps": [
+            "First, determine the initial concentration: at $t = 0$, $C = 50e^0 = 50\\text{ mg/L}$. A concentration that is $10\\%$ of this value is $5\\text{ mg/L}$.",
+            "Set $C = 5$ and solve for $t$ using natural logarithms:<br>$$5 = 50e^{-0.25t} \\implies e^{-0.25t} = 0.1$$<br>$$-0.25t = \\ln\\left(0.1\\right) = -\\ln\\left(10\\right)$$$$t = \\dfrac{\\ln\\left(10\\right)}{0.25} = 4\\ln\\left(10\\right) \\approx 9.2103 \\text{ hours}$$<br>Rounding to 3 significant figures gives $9.21$ hours.",
+            "To find the rate of change of concentration, differentiate $C$ with respect to $t$ using the chain rule:<br>$$\\dfrac{\\text{d}C}{\\text{d}t} = 50\\left(-0.25\\right)e^{-0.25t} = -12.5e^{-0.25t}$$",
+            "Evaluate this derivative at the instant when $t = 4$ hours:<br>$$\\dfrac{\\text{d}C}{\\text{d}t} = -12.5e^{-0.25\\left(4\\right)} = -12.5e^{-1}$$<br>$$\\dfrac{\\text{d}C}{\\text{d}t} \\approx -12.5\\left(0.367879\\right) \\approx -4.5985\\text{ mg/L per hour}$$",
+            "The magnitude represents the absolute value (the positive rate of decrease):<br>$$\\text{Magnitude} = |-4.5985| \\approx 4.60\\text{ mg/L per hour}$$<br><br>Final Answer: $$9.21 \\text{ hours}, \\quad 4.60\\text{ mg/L per hour}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$9.21 \\text{ hours}, \\quad -4.60\\text{ mg/L per hour}$$",
+                "feedback": "The question specifically asks for the magnitude of the rate of change. Magnitude is always a positive scalar quantity, so you must write your final answer as $4.60$, not $-4.60$."
+            },
+            {
+                "ans": "$$4.00 \\text{ hours}, \\quad 4.60\\text{ mg/L per hour}$$",
+                "feedback": "Check your percentage calculation. It looks like you solved for when the concentration falls by $10\\%$ (leaving $90\\%$ remaining), instead of when it has decreased to $10\\%$ of its initial value."
+            },
+            {
+                "ans": "$$9.21 \\text{ hours}, \\quad 1.15\\text{ mg/L per hour}$$",
+                "feedback": "You may have made an error when differentiating. The derivative of $50e^{-0.25t}$ is $-12.5e^{-0.25t}$, not $-12.5e^{-0.5t}$ or similar."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Magnitude of Change",
+            "content": "In calculus modelling, be careful to distinguish between the rate of change (which can be negative to indicate a decrease) and its magnitude (which represents the absolute speed of that change and is always positive)."
+        }
+    },
+    {
+        "id": "004200",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Exponential Growth",
+            "Rates of Change",
+            "Natural Logarithms"
+        ],
+        "img": false,
+        "question": "The populations of two different insects, $X$ and $Y$, in a controlled greenhouse are modelled by the equations:<br>$$X(t) = 300e^{0.06t} \\quad \\text{and} \\quad Y(t) = 100e^{0.10t}$$<br>where $t$ is the number of days after monitoring begins.<br><br>1. Differentiate both equations to find expressions for the rates of increase, $\\dfrac{\\text{d}X}{\\text{d}t}$ and $\\dfrac{\\text{d}Y}{\\text{d}t}$.<br>2. Find the exact time $t$ at which both populations are increasing at the same rate. Give your answer in the form $t = a\\ln b$, where $a$ is an integer and $b$ is a rational number.",
+        "steps": [
+            "Differentiate $X(t)$ and $Y(t)$ with respect to $t$ using the chain rule:<br>$$\\dfrac{\\text{d}X}{\\text{d}t} = 300\\left(0.06\\right)e^{0.06t} = 18e^{0.06t}$$<br>$$\\dfrac{\\text{d}Y}{\\text{d}t} = 100\\left(0.10\\right)e^{0.10t} = 10e^{0.10t}$$",
+            "Set these two rates of increase equal to each other to find when they are equal:<br>$$18e^{0.06t} = 10e^{0.10t}$$",
+            "Isolate the exponential terms on one side of the equation:<br>$$\\dfrac{18}{10} = \\dfrac{e^{0.10t}}{e^{0.06t}} \\implies \\dfrac{9}{5} = e^{0.10t - 0.06t}$$<br>$$e^{0.04t} = \\dfrac{9}{5}$$",
+            "Take the natural logarithm of both sides to solve for $t$:<br>$$0.04t = \\ln\\left(\\dfrac{9}{5}\\right)$$",
+            "Express the decimal coefficient $0.04$ as a fraction, $0.04 = \\dfrac{1}{25}$:<br>$$\\dfrac{1}{25}t = \\ln\\left(\\dfrac{9}{5}\\right) \\implies t = 25\\ln\\left(\\dfrac{9}{5}\\right)$$<br>This is exactly in the required form $a\\ln b$, where $a = 25$ is an integer and $b = \\dfrac{9}{5}$ is a rational number.<br><br>Final Answer: $$\\dfrac{\\text{d}X}{\\text{d}t} = 18e^{0.06t}, \\, \\dfrac{\\text{d}Y}{\\text{d}t} = 10e^{0.10t}, \\quad t = 25\\ln\\left(\\dfrac{9}{5}\\right)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{\\text{d}X}{\\text{d}t} = 18e^{0.06t}, \\, \\dfrac{\\text{d}Y}{\\text{d}t} = 10e^{0.10t}, \\quad t = 10\\ln\\left(\\dfrac{9}{5}\right)$$",
+                "feedback": "Check your final coefficient. The equation is $0.04t = \\ln\\left(\\dfrac{9}{5}\\right)$. Since $0.04 = \\dfrac{1}{25}$, multiplying both sides by $25$ gives $t = 25\\ln\\left(\\dfrac{9}{5}\\right)$, not $10\\ln\\left(\\dfrac{9}{5}\\right)$."
+            },
+            {
+                "ans": "$$\\dfrac{\\text{d}X}{\\text{d}t} = 18e^{0.06t}, \\, \\dfrac{\\text{d}Y}{\\text{d}t} = 10e^{0.10t}, \\quad t = 25\\ln\\left(1.8\\right)$$",
+                "feedback": "Your numerical answer is mathematically correct, but the question specifically asks for $b$ to be a 'rational number' (which is defined as a ratio of integers). You must write $1.8$ as the fraction $\\dfrac{9}{5}$ to satisfy the required exact form."
+            },
+            {
+                "ans": "$$\\dfrac{\\text{d}X}{\\text{d}t} = 300e^{0.06t}, \\, \\dfrac{\\text{d}Y}{\\text{d}t} = 100e^{0.10t}, \\quad t = 25\\ln\\left(3\\right)$$",
+                "feedback": "You may have forgotten to differentiate before setting the equations equal. The question asks when the populations are 'increasing at the same rate', which refers to their derivatives, not their raw populations."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Rational Notation",
+            "content": "In GCE exams, if a final exact form requires a 'rational number', always represent decimals as fully simplified fractions (such as $\\dfrac{9}{5}$ instead of $1.8$) to satisfy the strict definition of rational numbers."
+        }
     }
+
 
 
 
