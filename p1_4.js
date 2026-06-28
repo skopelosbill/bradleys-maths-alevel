@@ -1690,9 +1690,9 @@ window.ALEVEL_QUESTIONS = [
             "Apply the parametric differentiation formula:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{\\dfrac{\\text{d}y}{\\text{d}\\theta}}{\\dfrac{\\text{d}x}{\\text{d}\\theta}} = \\dfrac{4\\cos\\theta}{-3\\sin\\theta} = -\\dfrac{4}{3}\\cot\\theta$$",
             "To find the tangent at $\\theta = \\dfrac{\\pi}{4}$, first evaluate the coordinates of the point of contact:<br>$$x_1 = 3\\cos\\left(\\dfrac{\\pi}{4}\\right) = \\dfrac{3\\sqrt{2}}{2}$$<br>$$y_1 = 4\\sin\\left(\\dfrac{\\pi}{4}\\right) = 4\\left(\\dfrac{\\sqrt{2}}{2}\\right) = 2\\sqrt{2}$$",
             "Evaluate the gradient of the tangent at $\\theta = \\dfrac{\\pi}{4}$:<br>$$m = -\\dfrac{4}{3}\\cot\\left(\\dfrac{\\pi}{4}\\right) = -\\dfrac{4}{3}\\left(1\\right) = -\\dfrac{4}{3}$$",
-            "Write the equation of the tangent line passing through $\\left(\\dfrac{3\\sqrt{2}}{2}, \\, 2\\sqrt{2}\\right)$ using the point-slope formula:<br>$$y - 2\\sqrt{2} = -\\dfrac{4}{3}\\left(x - \\dfrac{3\\sqrt{2}}{2}\right)$$",
-            "Multiply by $3$ and collect terms to rearrange into the form $ax + by = c$:<br>$$3\\left(y - 2\\sqrt{2}\\right) = -4\\left(x - \\dfrac{3\\sqrt{2}}{2}\right)$$<br>$$3y - 6\\sqrt{2} = -4x + 6\\sqrt{2} \\implies 4x + 3y = 12\\sqrt{2}$$",
-            "To find the Cartesian equation, rearrange the parametric equations to isolate the trigonometric functions:<br>$$\\cos\\theta = \\dfrac{x}{3} \\quad \\text{and} \\quad \\sin\\theta = \\dfrac{y}{4}$$<br>Substitute these into the fundamental Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$:<br>$$\\left(\\dfrac{x}{3}\\right)^2 + \\left(\\dfrac{y}{4}\right)^2 = 1 \\implies \\dfrac{x^2}{9} + \\dfrac{y^2}{16} = 1$$<br><br>Final Answer: $$-\\dfrac{4}{3}\\cot\\theta, \\quad 4x + 3y = 12\\sqrt{2}, \\quad \\dfrac{x^2}{9} + \\dfrac{y^2}{16} = 1$$"
+            "Write the equation of the tangent line passing through $\\left(\\dfrac{3\\sqrt{2}}{2}, \\, 2\\sqrt{2}\\right)$ using the point-slope formula:<br>$$y - 2\\sqrt{2} = -\\dfrac{4}{3}\\left(x - \\dfrac{3\\sqrt{2}}{2}\\right)$$",
+            "Multiply by $3$ and collect terms to rearrange into the form $ax + by = c$:<br>$$3\\left(y - 2\\sqrt{2}\\right) = -4\\left(x - \\dfrac{3\\sqrt{2}}{2}\\right)$$<br>$$3y - 6\\sqrt{2} = -4x + 6\\sqrt{2} \\implies 4x + 3y = 12\\sqrt{2}$$",
+            "To find the Cartesian equation, rearrange the parametric equations to isolate the trigonometric functions:<br>$$\\cos\\theta = \\dfrac{x}{3} \\quad \\text{and} \\quad \\sin\\theta = \\dfrac{y}{4}$$<br>Substitute these into the fundamental Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$:<br>$$\\left(\\dfrac{x}{3}\\right)^2 + \\left(\\dfrac{y}{4}\\right)^2 = 1 \\implies \\dfrac{x^2}{9} + \\dfrac{y^2}{16} = 1$$<br><br>Final Answer: $$-\\dfrac{4}{3}\\cot\\theta, \\quad 4x + 3y = 12\\sqrt{2}, \\quad \\dfrac{x^2}{9} + \\dfrac{y^2}{16} = 1$$"
         ],
         "pi_options": [
             {
@@ -1705,7 +1705,7 @@ window.ALEVEL_QUESTIONS = [
             },
             {
                 "ans": "$$-\\dfrac{4}{3}\\cot\\theta, \\quad 4x - 3y = 0, \\quad \\dfrac{x^2}{9} + \\dfrac{y^2}{16} = 1$$",
-                "feedback": "It looks like you made a sign error when expanding the right-hand side of your tangent equation. Be careful: $-4\\left(x - \\dfrac{3\\sqrt{2}}{2}\right) = -4x + 6\\sqrt{2}$. Adding $4x$ and adding $6\\sqrt{2}$ across gives $4x + 3y = 12\\sqrt{2}$."
+                "feedback": "It looks like you made a sign error when expanding the right-hand side of your tangent equation. Be careful: $-4\\left(x - \\dfrac{3\\sqrt{2}}{2}\\right) = -4x + 6\\sqrt{2}$. Adding $4x$ and adding $6\\sqrt{2}$ across gives $4x + 3y = 12\\sqrt{2}$."
             }
         ],
         "bradley_insight": {
