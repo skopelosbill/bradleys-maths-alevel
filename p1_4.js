@@ -2019,7 +2019,7 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "$$\\dfrac{\\text{d}X}{\\text{d}t} = 18e^{0.06t}, \\, \\dfrac{\\text{d}Y}{\\text{d}t} = 10e^{0.10t}, \\quad t = 10\\ln\\left(\\dfrac{9}{5}\right)$$",
+                "ans": "$$\\dfrac{\\text{d}X}{\\text{d}t} = 18e^{0.06t}, \\, \\dfrac{\\text{d}Y}{\\text{d}t} = 10e^{0.10t}, \\quad t = 10\\ln\\left(\\dfrac{9}{5}\\right)$$",
                 "feedback": "Check your final coefficient. The equation is $0.04t = \\ln\\left(\\dfrac{9}{5}\\right)$. Since $0.04 = \\dfrac{1}{25}$, multiplying both sides by $25$ gives $t = 25\\ln\\left(\\dfrac{9}{5}\\right)$, not $10\\ln\\left(\\dfrac{9}{5}\\right)$."
             },
             {
