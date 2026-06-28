@@ -1467,7 +1467,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "004172",
+        "id": "004187",
         "board": "OCR",
         "level": "A",
         "major_area": "Algebra and functions",
