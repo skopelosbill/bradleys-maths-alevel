@@ -831,8 +831,8 @@ window.ALEVEL_QUESTIONS = [
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Root Signs in the Factor Theorem",
-            "content": "To secure full marks in root-locating questions, you must explicitly state two criteria: first, that there is a change of sign between the boundary values, and second, that the function $f(x)$ is continuous over that interval."
+            "title": "The Head Teacher's Eye: Quadrant Analysis of Negatives",
+            "content": "When solving trig equations yielding negative values (like $\\tan \\theta = -4$), always sketch a CAST diagram or tangent curve to help locate the correct quadrants. Tangent is negative in the second and fourth quadrants, which dictates performing $180^\\circ - |\\theta_{PV}|$ and $360^\\circ - |\\theta_{PV}|$ to find the correct angles within the positive domain."
         }
     },
     {
