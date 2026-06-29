@@ -993,7 +993,202 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Never Divide by Variable Trig Terms",
             "content": "A very common error in A-Level exams is dividing both sides of an equation by a function like $\\cos \\theta$. This is algebraically illegal because it assumes $\\cos \\theta \\ne 0$, resulting in the loss of major valid branches of solutions. Always bring all terms to one side and factorise."
         }
+    },
+    {
+        "id": "004226",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Algebra",
+        "topic": "Sequences and Series",
+        "subtopic": [
+            "Arithmetic Progressions",
+            "Geometric Progressions",
+            "Modelling Sequences"
+        ],
+        "img": false,
+        "question": "Clara and Dan are saving up for a holiday. Clara saves £80 in the first month, and increases the amount she saves by £15 each month.<br><br>1. Calculate how much Clara saves in total over 2 years (24 months).<br><br>Dan also saves £80 in the first month. The amount he saves each month is 8% more than the amount he saved in the previous month.<br><br>2. Explain why the amounts Dan saves each month form a geometric progression.<br>3. Calculate how much Dan saves in total over 2 years (24 months), giving your answer to the nearest pound.<br>4. Determine the month in which Dan's monthly savings first exceed Clara's monthly savings.",
+        "steps": [
+            "Clara's monthly savings form an arithmetic progression with first term $a = 80$, common difference $d = 15$, and number of terms $n = 24$ months. Use the arithmetic sum formula:<br>$$S_n = \\dfrac{n}{2}\\left(2a + (n-1)d\\right)$$<br>Substitute the values to find the total sum:<br>$$\\begin{aligned} S_{24} &= \\dfrac{24}{2}\\left(2(80) + (24-1)15\\right) \\\\ &= 12\\left(160 + 23(15)\\right) \\\\ &= 12\\left(160 + 345\\right) \\\\ &= 12(505) \\\\ &= 6060 \\end{aligned}$$<br>Clara saves £6060 in total.",
+            "Dan's monthly savings increase by a constant percentage of $8\\%$ each month. This means each month's savings is a constant multiplier of $1.08$ times the previous month's savings:<br>$$\\text{Month}_{n+1} = 1.08 \\times \\text{Month}_n$$<br>Because there is a constant common ratio of $r = 1.08$, the savings form a geometric progression.",
+            "Dan's savings form a geometric progression with first term $a = 80$, common ratio $r = 1.08$, and $n = 24$ months. Use the geometric sum formula:<br>$$S_n = \\dfrac{a\\left(r^n - 1\\right)}{r - 1}$$$<br>Substitute the values to calculate the total sum:<br>$$\\begin{aligned} S_{24} &= \\dfrac{80\\left(1.08^{24} - 1\\right)}{1.08 - 1} \\\\ &\\approx \\dfrac{80\\left(6.3412 - 1\\right)}{0.08} \\\\ &= 1000(5.3412) \\\\ &\\approx 5341 \\end{aligned}$$<br>Dan saves £5341 to the nearest pound (or £5349 if using the rounded value $1.08^{24} \\approx 6.35$ during calculation).",
+            "Write the expressions for the savings in month $n$ for both Clara ($C_n$) and Dan ($D_n$):<br>$$\\begin{aligned} C_n &= a + (n-1)d = 80 + 15(n-1) \\\\ D_n &= a r^{n-1} = 80(1.08)^{n-1} \\end{aligned}$$<br>We seek the smallest integer $n$ such that $D_n > C_n$. Let's test values near $n = 21$ and $n = 22$:<br>$$\\begin{aligned} \\text{For } n = 21: \\quad C_{21} &= 80 + 15(20) = 380 \\\\ D_{21} &= 80(1.08)^{20} \\approx 372.88 \\quad (< 380) \\\\ \\text{For } n = 22: \\quad C_{22} &= 80 + 15(21) = 395 \\\\ D_{22} &= 80(1.08)^{21} \\approx 402.71 \\quad (> 395) \\end{aligned}$$<br>Therefore, Dan's monthly savings first exceed Clara's monthly savings in month 22.<br><br>Final Answer: $$S_{\\text{Clara}} = 6060, \\quad S_{\\text{Dan}} = 5341, \\quad \\text{Month } 22$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$S_{\\text{Clara}} = 6060, \\quad S_{\\text{Dan}} = 5341, \\quad \\text{Month } 21$$",
+                "feedback": "Check your calculations for month 21. In month 21, Clara saves $80 + 15(20) = 380$, while Dan saves $80(1.08)^{20} \\approx 372.88$, which is still less than Clara. Dan first exceeds Clara in month 22."
+            },
+            {
+                "ans": "$$S_{\\text{Clara}} = 5820, \\quad S_{\\text{Dan}} = 5341, \\quad \\text{Month } 22$$",
+                "feedback": "Check your term index in the arithmetic sum formula. The formula uses $(n-1)d$. For $n = 24$, this is $23d$, which is $345$. Using $24d = 360$ gives an incorrect sum of $5820$ or $6120$."
+            },
+            {
+                "ans": "$$S_{\\text{Clara}} = 6060, \\quad S_{\\text{Dan}} = 5050, \\quad \\text{Month } 22$$",
+                "feedback": "Check your calculation for Dan's geometric sum. The formula is $\\dfrac{80(1.08^{24} - 1)}{0.08} = 1000(1.08^{24} - 1)$. Make sure you evaluate the exponent power first before subtracting $1$ and multiplying."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Track Term Indices Carefully",
+            "content": "When working with series word problems, be extremely careful with indices. The sum formula uses $(n-1)d$ and the $n$-th term formula uses $a r^{n-1}$. It is very common under pressure to use $nd$ or $a r^n$, which will shift all your calculations by a month and result in lost marks."
+        }
+    },
+    {
+        "id": "004207",
+        "board": "OCR MEI",
+        "level": "AS",
+        "major_area": "Algebra",
+        "topic": "Sequences and Series",
+        "subtopic": [
+            "Arithmetic Progressions"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>An athlete is training for a marathon. On day 1, they run $5$ km. Each day they increase their distance by $d$ km.<br><br>1. Write down an expression in terms of $d$ for the distance run on day $20$.<br>2. Given that the total distance run over the first $20$ days is $195$ km, find the value of $d$.<br>3. Hence, calculate the distance the athlete runs on day $30$.",
+        "steps": [
+            "Use the standard $n$-th term formula for an arithmetic progression, $u_n = a + (n-1)d$, with first term $a = 5$:<br>$$u_{20} = 5 + (20 - 1)d = 5 + 19d$$",
+            "Set up the sum equation over the first $20$ days using $S_n = \\dfrac{n}{2}\\left(2a + (n-1)d\\right)$:<br>$$\\begin{aligned} S_{20} &= \\dfrac{20}{2}\\left(2(5) + (20-1)d\\right) \\\\ 195 &= 10\\left(10 + 19d\\right) \\end{aligned}$$",
+            "Solve for the common difference $d$:<br>$$\\begin{aligned} 19.5 &= 10 + 19d \\\\ 19d &= 9.5 \\\\ d &= 0.5 \\end{aligned}$$<br>So the common daily increase is $0.5$ km.",
+            "Calculate the distance run on day $30$ using $a = 5$ and $d = 0.5$:<br>$$\\begin{aligned} u_{30} &= a + 29d \\\\ &= 5 + 29(0.5) \\\\ &= 5 + 14.5 \\\\ &= 19.5 \\end{aligned}$$<br>The athlete runs $19.5$ km on day $30$.<br><br>Final Answer: $$u_{20} = 5 + 19d, \\quad d = 0.5, \\quad u_{30} = 19.5$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$u_{20} = 5 + 20d, \\quad d = 0.5, \\quad u_{30} = 19.5$$",
+                "feedback": "Remember that the $n$-th term formula is $u_n = a + (n-1)d$. The distance on day 20 must be $5 + 19d$, not $5 + 20d$."
+            },
+            {
+                "ans": "$$u_{20} = 5 + 19d, \\quad d = 0.45, \\quad u_{30} = 18.05$$",
+                "feedback": "Check your expansion of the sum formula. $S_{20} = 10(2a + 19d)$. Since $a = 5$, $2a = 10$, giving $10(10 + 19d) = 195$. If you used $a = 5$ instead of $2a = 10$, you would get an incorrect value of $d$."
+            },
+            {
+                "ans": "$$u_{20} = 5 + 19d, \\quad d = 0.5, \\quad u_{30} = 20.0$$",
+                "feedback": "Check your calculation for day 30. The distance is $a + 29d$. Since $d = 0.5$, this evaluates to $5 + 14.5 = 19.5$ km, not $20.0$ km."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: AS Level Foundations",
+            "content": "Arithmetic sequences are classified as AS-Level material, meaning they form the foundation of series questions. Always ensure you distinguish between the $n$-th term formula $a+(n-1)d$ and the sum formula $\\dfrac{n}{2}(2a+(n-1)d)$; mixing these up is a very common source of lost marks."
+        }
+    },
+    {
+        "id": "004228",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Algebra",
+        "topic": "Sequences and Series",
+        "subtopic": [
+            "Geometric Progressions",
+            "Sum to Infinity",
+            "Parameter Solving"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A geometric series has a first term $a$ and a common ratio $r$.<br><br>1. Given that the second term of the series is $6$ and the sum to infinity is $25$, show that:<br>$$25r^2 - 25r + 6 = 0$$<br>2. Find the two possible values of $r$, and the corresponding values of $a$.",
+        "steps": [
+            "Write down expressions for the second term and the sum to infinity:<br>$$\\begin{aligned} u_2 &= ar = 6 \\\\ S_{\\infty} &= \\dfrac{a}{1 - r} = 25 \\end{aligned}$$",
+            "Isolate $a$ in both equations and equate them to eliminate $a$:<br>$$\\begin{aligned} a &= \\dfrac{6}{r} \\\\ a &= 25\\left(1 - r\\right) \\\\ \\dfrac{6}{r} &= 25\\left(1 - r\\right) \\end{aligned}$$",
+            "Rearrange the equation into the required quadratic form:<br>$$\\begin{aligned} 6 &= 25r\\left(1 - r\\right) \\\\ 6 &= 25r - 25r^2 \\\\ 25r^2 - 25r + 6 &= 0 \\end{aligned}$$",
+            "Solve the quadratic equation using factorisation or the quadratic formula:<br>$$\\begin{aligned} (5r - 2)(5r - 3) &= 0 \\\\ r &= \\dfrac{2}{5} \\quad \\text{or} \\quad r = \\dfrac{3}{5} \\end{aligned}$$<br>Both ratios are valid because they satisfy the convergence condition $|r| < 1$.",
+            "Find the corresponding values of $a$ for each value of $r$:<br>$$\\begin{aligned} \\text{If } r = \\dfrac{2}{5}: \\quad a &= \\dfrac{6}{2/5} = 15 \\\\ \\text{If } r = \\dfrac{3}{5}: \\quad a &= \\dfrac{6}{3/5} = 10 \\end{aligned}$$<br><br>Final Answer: $$r = \\dfrac{2}{5}, \\, a = 15 \\quad \\text{and} \\quad r = \\dfrac{3}{5}, \\, a = 10$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$r = -\\dfrac{2}{5}, \\, a = -15 \\quad \\text{and} \\quad r = -\\dfrac{3}{5}, \\, a = -10$$",
+                "feedback": "Check your signs when factorising the quadratic equation $25r^2 - 25r + 6 = 0$. Since the middle term is negative and the constant term is positive, both roots must be positive: $(5r - 2)(5r - 3) = 0 \\implies r = 0.4, \\, 0.6$."
+            },
+            {
+                "ans": "$$r = \\dfrac{2}{5}, \\, a = 2.4 \\quad \\text{and} \\quad r = \\dfrac{3}{5}, \\, a = 3.6$$",
+                "feedback": "When calculating the first term $a$, remember that $a = \\dfrac{6}{r}$. Dividing $6$ by a fraction $\\dfrac{2}{5}$ is equivalent to $6 \\times \\dfrac{5}{2} = 15$, not $6 \\times 0.4 = 2.4$."
+            },
+            {
+                "ans": "$$r = \\dfrac{2}{5}, \\, a = 15$$",
+                "feedback": "The quadratic equation yields two distinct positive roots, both of which are strictly less than $1$ (convergent). You must evaluate and write down both valid coordinate pairs of $(a, r)$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Convergence Restrictions on Infinity",
+            "content": "Whenever a question refers to the 'sum to infinity', keep the convergence condition $|r| < 1$ in mind. If your quadratic equation produces any root $|r| \\ge 1$, you must reject it immediately because a geometric series only converges when the common ratio lies strictly between $-1$ and $1$."
+        }
+    },
+    {
+        "id": "004229",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Algebra",
+        "topic": "Sequences and Series",
+        "subtopic": [
+            "Sigma Notation",
+            "Arithmetic Progressions",
+            "Geometric Progressions"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Evaluate the following sums:<br>1. $$\\sum_{r=1}^{50} (3r + 2)$$<br>2. $$\\sum_{k=1}^{10} \\left(5\\cdot 2^k\\right)$$",
+        "steps": [
+            "Identify the first sum $\\sum_{r=1}^{50} (3r + 2)$ as an arithmetic series with $n = 50$ terms. Calculate the first term $a$ and last term $L$:<br>$$\\begin{aligned} a &= 3(1) + 2 = 5 \\\\ L &= 3(50) + 2 = 152 \\end{aligned}$$",
+            "Use the arithmetic sum formula $S_n = \\dfrac{n}{2}(a + L)$ to find the total:<br>$$\\begin{aligned} S_{50} &= \\dfrac{50}{2}(5 + 152) \\\\ &= 25(157) \\\\ &= 3925 \\end{aligned}$$",
+            "Identify the second sum $\\sum_{k=1}^{10} \\left(5\\cdot 2^k\\right)$ as a geometric series. Write out the first few terms to find $a$ and $r$:<br>$$\\begin{aligned} \\text{Term 1 } (k=1): \\quad u_1 &= 5\\cdot 2^1 = 10 \\\\ \\text{Term 2 } (k=2): \\quad u_2 &= 5\\cdot 2^2 = 20 \\end{aligned}$$<br>This gives a first term of $a = 10$, a common ratio of $r = 2$, and $n = 10$ terms.",
+            "Use the geometric sum formula $S_n = \\dfrac{a\\left(r^n - 1\\right)}{r - 1}$ to calculate the total sum:<br>$$\\begin{aligned} S_{10} &= \\dfrac{10\\left(2^{10} - 1\\right)}{2 - 1} \\\\ &= 10(1024 - 1) \\\\ &= 10(1023) \\\\ &= 10230 \\end{aligned}$$<br><br>Final Answer: $$\\sum_{r=1}^{50} (3r + 2) = 3925, \\quad \\sum_{k=1}^{10} \\left(5\\cdot 2^k\\right) = 10230$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\sum_{r=1}^{50} (3r + 2) = 3925, \\quad \\sum_{k=1}^{10} \\left(5\\cdot 2^k\\right) = 5115$$",
+                "feedback": "Be careful when identifying the first term $a$ of the geometric series. Since the lower limit is $k = 1$, the first term is $5 \\cdot 2^1 = 10$, not $5$. Using $a = 5$ yields an incorrect sum of $5115$."
+            },
+            {
+                "ans": "$$\\sum_{r=1}^{50} (3r + 2) = 3850, \\quad \\sum_{k=1}^{10} \\left(5\\cdot 2^k\\right) = 10230$$",
+                "feedback": "Check your arithmetic on Clara's sum. Make sure you add the constant $2$ to the first and last term calculation: $a = 5$ and $L = 152$. Forgetting to add $2$ to the terms will lead to an incorrect sum."
+            },
+            {
+                "ans": "$$\\sum_{r=1}^{50} (3r + 2) = 3925, \\quad \\sum_{k=1}^{10} \\left(5\\cdot 2^k\\right) = 5110$$",
+                "feedback": "Check your geometric sum power index. The series has exactly $10$ terms ($k=1$ to $10$). Using $n=9$ instead of $10$ in the formula will produce an incorrect total."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Identifying First Terms in Sigma",
+            "content": "Never assume the coefficient of a term is the first term $a$ in sigma notation. Always substitute the lower limit of the sum (such as $k=1$ or $r=1$) directly into the expression to find the true first term of the series."
+        }
+    },
+    {
+        "id": "004230",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Algebra",
+        "topic": "Sequences and Series",
+        "subtopic": [
+            "Linear Recurrence Relations",
+            "Simultaneous Equations"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A sequence is defined by the recurrence relation:<br>$$u_{n+1} = p u_n + q, \\quad \\text{for } n \\ge 1$$<br>where $p$ and $q$ are constants.<br><br>Given that $u_1 = 4$, $u_2 = 14$, and $u_3 = 44$:<br>1. Find the values of $p$ and $q$.<br>2. Calculate the value of $u_4$.",
+        "steps": [
+            "Use the recurrence relation to set up a linear equation for $u_2$ in terms of $u_1$:<br>$$\\begin{aligned} u_2 &= p u_1 + q \\\\ 14 &= 4p + q \\quad \\text{--- (Equation 1)} \\end{aligned}$$",
+            "Set up a second linear equation for $u_3$ in terms of $u_2$:<br>$$\\begin{aligned} u_3 &= p u_2 + q \\\\ 44 &= 14p + q \\quad \\text{--- (Equation 2)} \\end{aligned}$$",
+            "Solve the simultaneous equations by subtracting Equation 1 from Equation 2:<br>$$\\begin{aligned} (14p + q) - (4p + q) &= 44 - 14 \\\\ 10p &= 30 \\\\ p &= 3 \\end{aligned}$$",
+            "Substitute $p = 3$ back into Equation 1 to find $q$:<br>$$\\begin{aligned} 4(3) + q &= 14 \\\\ 12 + q &= 14 \\\\ q &= 2 \\end{aligned}$$",
+            "Use the solved relation $u_{n+1} = 3u_n + 2$ with $u_3 = 44$ to calculate the value of $u_4$:<br>$$\\begin{aligned} u_4 &= 3u_3 + 2 \\\\ &= 3(44) + 2 \\\\ &= 132 + 2 \\\\ &= 134 \\end{aligned}$$<br><br>Final Answer: $$p = 3, \\, q = 2, \\, u_4 = 134$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$p = 3, \\, q = 2, \\, u_4 = 132$$",
+                "feedback": "Don't forget to add the constant term $q = 2$ in the final step. $u_4 = 3(44) + 2 = 134$, not $132$."
+            },
+            {
+                "ans": "$$p = -3, \\, q = 26, \\, u_4 = -106$$",
+                "feedback": "Check your signs during subtraction. Subtracting $(4p+q)$ from $(14p+q)$ yields $+10p$, not $-10p$. Similarly, $44-14 = +30$, which gives $p = 3$."
+            },
+            {
+                "ans": "$$p = 3, \\, q = 2, \\, u_4 = 44$$",
+                "feedback": "You wrote down the value of $u_3$ instead of calculating the next term $u_4$. Make sure to run the recurrence relation once more using $u_3 = 44$ to find $u_4$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Recurrence Linear Systems",
+            "content": "Recurrence relation problems are highly structured. Subtracting adjacent terms (such as $u_3 - u_2$) directly eliminates the additive constant $q$, immediately yielding a single-variable equation in the common multiplier $p$. This is always the most efficient path to solve these systems."
+        }
     }
+
 
 
 
