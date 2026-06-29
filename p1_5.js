@@ -418,7 +418,195 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Master Partial Fractions in ODEs",
             "content": "For logistic growth differential equations, decomposing the expression using partial fractions is a staple GCE topic. Always remember to divide by the carrying capacity multiplier (such as $500$) outside of the logarithmic brackets. Forgetting this coefficient causes incorrect constant values when applying initial conditions."
         }
+    },
+    {
+        "id": "004211",
+        "board": "OCR MEI",
+        "level": "AS",
+        "major_area": "Algebra",
+        "topic": "Polynomials",
+        "subtopic": [
+            "The Factor Theorem",
+            "Cubic Polynomials"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Show that $(x - 3)$ is a factor of:<br>$$2x^3 - 5x^2 - 4x + 3$$",
+        "steps": [
+            "Define the polynomial as a function $f(x)$:<br>$$f(x) = 2x^3 - 5x^2 - 4x + 3$$<br>According to the Factor Theorem, a linear term $(x - a)$ is a factor of a polynomial $f(x)$ if and only if $f(a) = 0$. Therefore, $(x - 3)$ is a factor if $f(3) = 0$.",
+            "Substitute $x = 3$ into the polynomial and evaluate step-by-step:<br>$$\\begin{aligned} f(3) &= 2(3)^3 - 5(3)^2 - 4(3) + 3 \\\\ &= 2(27) - 5(9) - 12 + 3 \\\\ &= 54 - 45 - 12 + 3 \\\\ &= 9 - 12 + 3 \\\\ &= 0 \\end{aligned}$$",
+            "Conclude the proof based on the result:<br>Since $f(3) = 0$, by the Factor Theorem, $(x - 3)$ is indeed a factor of $2x^3 - 5x^2 - 4x + 3$.<br><br>Final Answer: $$f(3) = 0 \\implies (x - 3) \\text{ is a factor}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$f(-3) = 0 \\implies (x - 3) \\text{ is a factor}$$",
+                "feedback": "Be careful with the sign when using the Factor Theorem. For a factor of $(x - a)$, you must test the root $x = a$, which means evaluating $f(3)$, not $f(-3)$."
+            },
+            {
+                "ans": "$$f(3) = 12 \\implies (x - 3) \\text{ is a factor}$$",
+                "feedback": "For $(x - 3)$ to be a factor, evaluating the polynomial at $x = 3$ must result in exactly $0$. Any non-zero remainder means it is not a factor."
+            },
+            {
+                "ans": "$$f(3) = 0 \\implies (x + 3) \\text{ is a factor}$$",
+                "feedback": "The root $x = 3$ corresponds to the factor $(x - 3)$, not $(x + 3)$. If $f(-3) = 0$, then $(x + 3)$ would be a factor."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Root Signs in the Factor Theorem",
+            "content": "A frequent error under pressure is substituting the wrong sign into the polynomial. Remember that the linear factor $(x - a)$ corresponds to the root $x = a$. For $(x - 3)$, always evaluate $f(3)$, whereas for $(x + 3)$, you would evaluate $f(-3)$."
+        }
+    },
+    {
+        "id": "004212",
+        "board": "OCR MEI",
+        "level": "AS",
+        "major_area": "Algebra",
+        "topic": "Polynomials",
+        "subtopic": [
+            "The Factor Theorem",
+            "Finding Coefficients"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The polynomial $f(x)$ is defined by:<br>$$f(x) = 3x^3 + kx^2 - 4x + 12$$<br>where $k$ is a constant.<br><br>Given that $(x + 2)$ is a factor of $f(x)$, find the value of $k$.",
+        "steps": [
+            "According to the Factor Theorem, since $(x + 2)$ is a factor of $f(x)$, the polynomial evaluated at the root $x = -2$ must equal $0$. That is:<br>$$f(-2) = 0$$",
+            "Substitute $x = -2$ into the expression for $f(x)$:<br>$$\\begin{aligned} f(-2) &= 3(-2)^3 + k(-2)^2 - 4(-2) + 12 \\\\ &= 3(-8) + 4k + 8 + 12 \\\\ &= -24 + 4k + 20 \\\\ &= 4k - 4 \\end{aligned}$$",
+            "Set $f(-2)$ equal to $0$ and solve for the constant $k$:<br>$$\\begin{aligned} 4k - 4 &= 0 \\\\ 4k &= 4 \\\\ k &= 1 \\end{aligned}$$<br><br>Final Answer: $$k = 1$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$k = -11$$",
+                "feedback": "Check your evaluation of $(-2)^3$. It is $-8$, not $+8$. Using $+8$ gives $24 + 4k + 20 = 0 \\implies 4k = -44 \\implies k = -11$."
+            },
+            {
+                "ans": "$$k = -1$$",
+                "feedback": "Check your signs during the final solving steps. When setting $4k - 4 = 0$, adding $4$ to both sides gives $4k = 4$, which leads to $k = 1$, not $k = -1$."
+            },
+            {
+                "ans": "$$k = -4$$",
+                "feedback": "You may have evaluated $f(2) = 0$ instead of $f(-2) = 0$. Remember that for a factor of $(x + 2)$, the root to substitute is $x = -2$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Power of Negative Numbers",
+            "content": "When evaluating cubic powers of negative numbers like $(-2)^3$, ensure you preserve the negative sign, giving $-8$. It is highly common to accidentally write positive values when substituting, leading to completely incorrect algebraic systems."
+        }
+    },
+    {
+    "id": "004213",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Algebra",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Algebraic Division",
+        "Polynomial Remainders"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Find the remainder when the polynomial:<br>$$2x^3 - 3x^2 - 5x + 8$$<br>is divided by $(x - 2)$ using algebraic division.",
+    "steps": [
+        "To find the remainder, we perform polynomial division on $2x^3 - 3x^2 - 5x + 8$ using the divisor $(x - 2)$.<br><br>First, divide the leading term $2x^3$ by $x$ to get $2x^2$. Multiply $2x^2$ by the divisor $(x - 2)$:<br>$$2x^2(x - 2) = 2x^3 - 4x^2$$<br>Subtract this from the original polynomial to find the first partial remainder:<br>$$\\left(2x^3 - 3x^2 - 5x + 8\\right) - \\left(2x^3 - 4x^2\\right) = x^2 - 5x + 8$$",
+        "Next, divide the leading term of the partial remainder, $x^2$, by $x$ to get $x$. Multiply $x$ by the divisor $(x - 2)$:<br>$$x(x - 2) = x^2 - 2x$$<br>Subtract this from the current partial remainder:<br>$$\\left(x^2 - 5x + 8\\right) - \\left(x^2 - 2x\\right) = -3x + 8$$",
+        "Finally, divide the leading term of the new partial remainder, $-3x$, by $x$ to get $-3$. Multiply $-3$ by the divisor $(x - 2)$:<br>$$-3(x - 2) = -3x + 6$$<br>Subtract this to find the final numerical remainder:<br>$$\\left(-3x + 8\\right) - \\left(-3x + 6\\right) = 2$$<br><br>Final Answer: $$\\text{Remainder} = 2$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\text{Remainder} = -30$$",
+            "feedback": "Be very careful with your signs during subtraction at each step. For example, during the first subtraction, we compute $-3x^2 - (-4x^2)$, which is $-3x^2 + 4x^2 = x^2$. A sign error here will propagate through the remaining steps and yield an incorrect remainder."
+        },
+        {
+            "ans": "$$\\text{Remainder} = 10$$",
+            "feedback": "Check your final subtraction step. We have $(-3x + 8) - (-3x + 6)$. This evaluates to $8 - 6 = 2$, not $8 + 6 = 14$ or any other addition error."
+        },
+        {
+            "ans": "$$\\text{Remainder} = 0$$",
+            "feedback": "A remainder of $0$ would mean that $(x - 2)$ is a perfect factor of the polynomial. Double-check your subtraction steps; after dividing all terms, we are left with a constant remainder of $2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Subtraction of Negatives",
+        "content": "When performing algebraic long division, the single most common error is a sign slip during subtraction. Always write out the subtraction of negative terms explicitly (such as $-3x^2 - (-4x^2) = x^2$) to avoid making easy mental arithmetic mistakes."
     }
+},
+    {
+        "id": "004214",
+        "board": "OCR MEI",
+        "level": "AS",
+        "major_area": "Algebra",
+        "topic": "Polynomials",
+        "subtopic": [
+            "The Factor Theorem",
+            "Cubic Factorisation"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The cubic polynomial $f(x)$ is given by:<br>$$f(x) = 2x^3 - x^2 - 13x - 6$$<br>1. Use the Factor Theorem to show that $(x - 3)$ is a linear factor of $f(x)$.<br>2. Hence, express $f(x)$ as the product of three linear factors.",
+        "steps": [
+            "To prove that $(x - 3)$ is a factor of $f(x) = 2x^3 - x^2 - 13x - 6$, apply the Factor Theorem and evaluate $f(3)$:<br>$$\\begin{aligned} f(3) &= 2(3)^3 - (3)^2 - 13(3) - 6 \\\\ &= 2(27) - 9 - 39 - 6 \\\\ &= 54 - 9 - 39 - 6 \\\\ &= 0 \\end{aligned}$$<br>Since $f(3) = 0$, by the Factor Theorem, $(x - 3)$ is a linear factor of $f(x)$.",
+            "Perform polynomial division or equate coefficients to divide $f(x)$ by $(x - 3)$ and find the quadratic quotient:<br>$$2x^3 - x^2 - 13x - 6 = (x - 3)(2x^2 + ax + 2)$$<br>Compare the $x^2$ coefficient on both sides:<br>$$\\begin{aligned} -1 &= -3(2) + a \\\\ -1 &= -6 + a \\\\ a &= 5 \\end{aligned}$$<br>So, the quadratic quotient is $2x^2 + 5x + 2$.",
+            "Fully factorise the quadratic quotient $2x^2 + 5x + 2$ into two linear factors:<br>$$2x^2 + 5x + 2 = (2x + 1)(x + 2)$$<br>Combine all three factors to express $f(x)$ in its fully factorised form:<br>$$f(x) = (x - 3)(2x + 1)(x + 2)$$<br><br>Final Answer: $$f(x) = (x - 3)(2x + 1)(x + 2)$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$f(x) = (x - 3)(2x - 1)(x - 2)$$",
+                "feedback": "Check your quadratic factorization. Factoring the positive terms of $2x^2 + 5x + 2$ must yield $(2x + 1)(x + 2)$, not $(2x - 1)(x - 2)$."
+            },
+            {
+                "ans": "$$f(x) = (x - 3)(2x^2 + 5x + 2)$$",
+                "feedback": "The question asks you to express $f(x)$ as the product of 'three linear factors'. You must fully factorise the quadratic quotient $2x^2 + 5x + 2$ to complete the problem."
+            },
+            {
+                "ans": "$$f(x) = (x + 3)(2x + 1)(x + 2)$$",
+                "feedback": "Be careful with your signs. Since $f(3) = 0$, the corresponding factor is $(x - 3)$, not $(x + 3)$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Equating Coefficients over Long Division",
+            "content": "For factorising cubic polynomials once a root is known, equating coefficients is much faster than running a full synthetic or polynomial division. Since $2x^3$ requires the lead quadratic term to be $2x^2$, and $-6$ requires the constant term to be $+2$ when divided by $-3$, you only need a single comparison to find the middle coefficient $a$."
+        }
+    },
+    {
+        "id": "004215",
+        "board": "OCR MEI",
+        "level": "AS",
+        "major_area": "Algebra",
+        "topic": "Polynomials",
+        "subtopic": [
+            "The Factor Theorem",
+            "Simultaneous Equations"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The polynomial $f(x)$ is defined by:<br>$$f(x) = ax^3 + bx^2 - 11x - 6$$<br>where $a$ and $b$ are constants.<br><br>Given that both $(x - 2)$ and $(x + 3)$ are factors of $f(x)$, find the values of $a$ and $b$.",
+        "steps": [
+            "According to the Factor Theorem, because $(x - 2)$ and $(x + 3)$ are factors, evaluating $f(x)$ at their roots $x = 2$ and $x = -3$ must result in $0$:<br>$$f(2) = 0 \\quad \\text{and} \\quad f(-3) = 0$$",
+            "Evaluate $f(2) = 0$ to set up the first equation:<br>$$\\begin{aligned} f(2) &= a(2)^3 + b(2)^2 - 11(2) - 6 \\\\ &= 8a + 4b - 22 - 6 \\\\ &= 8a + 4b - 28 \\end{aligned}$$<br>Setting this to $0$ and dividing by $4$ gives:<br>$$2a + b = 7 \\quad \\implies \\quad b = 7 - 2a \\quad \\text{--- (Equation 1)}$$",
+            "Evaluate $f(-3) = 0$ to set up the second equation:<br>$$\\begin{aligned} f(-3) &= a(-3)^3 + b(-3)^2 - 11(-3) - 6 \\\\ &= -27a + 9b + 33 - 6 \\\\ &= -27a + 9b + 27 \\end{aligned}$$<br>Setting this to $0$ and dividing by $9$ gives:<br>$$-3a + b = -3 \\quad \\implies \\quad b = 3a - 3 \\quad \\text{--- (Equation 2)}$$",
+            "Solve the simultaneous equations by equating the two expressions for $b$:<br>$$\\begin{aligned} 7 - 2a &= 3a - 3 \\\\ 10 &= 5a \\\\ a &= 2 \\end{aligned}$$",
+            "Substitute $a = 2$ back into Equation 1 to find $b$:<br>$$\\begin{aligned} b &= 7 - 2(2) \\\\ b &= 3 \\end{aligned}$$<br><br>Final Answer: $$a = 2, \\quad b = 3$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$a = -2, \\quad b = 11$$",
+                "feedback": "You may have made a sign error when expanding $(-3)^3$. $(-3)^3 = -27$, not $+27$. This changes your second equation and leads to incorrect values for $a$ and $b$."
+            },
+            {
+                "ans": "$$a = 3, \\quad b = 2$$",
+                "feedback": "Double check your final substitution. Make sure you solve for $a$ first and substitute its value back to find $b$. It seems you may have reversed the values of $a$ and $b$."
+            },
+            {
+                "ans": "$$a = 2, \\quad b = -3$$",
+                "feedback": "Check your signs in Equation 1. Since $b = 7 - 2a$, substituting $a = 2$ yields $b = 7 - 4 = 3$, not $-3$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Simplifying Simultaneous Coefficients",
+            "content": "When solving simultaneous equations from factor evaluations, always search for common factors to simplify the linear equations before equating or using elimination. Reducing $8a + 4b = 28$ directly to $2a + b = 7$ keeps the mental arithmetic simple and highly resistant to minor division errors."
+        }
+    }
+
 
 
 
