@@ -605,7 +605,197 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Simplifying Simultaneous Coefficients",
             "content": "When solving simultaneous equations from factor evaluations, always search for common factors to simplify the linear equations before equating or using elimination. Reducing $8a + 4b = 28$ directly to $2a + b = 7$ keeps the mental arithmetic simple and highly resistant to minor division errors."
         }
+    },
+    {
+        "id": "004216",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Numerical Methods",
+        "subtopic": [
+            "Change of Sign",
+            "Intervals of Roots"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>By considering a change of sign, show that the equation:<br>$$e^x - 4x^3 = 0$$<br>has a root, $\\alpha$, in the interval $[0.5, 1.0]$.",
+        "steps": [
+            "Define the equation as a function $f(x)$:<br>$$f(x) = e^x - 4x^3$$<br>According to the Change of Sign rule, if a continuous function $f(x)$ changes sign over an interval $[a, b]$, then there must be at least one root of the equation $f(x) = 0$ in the interval $a < x < b$.",
+            "Evaluate the function at the lower boundary $x = 0.5$:<br>$$\\begin{aligned} f(0.5) &= e^{0.5} - 4(0.5)^3 \\\\ &\\approx 1.6487 - 4(0.125) \\\\ &\\approx 1.6487 - 0.5 \\\\ &= 1.1487 \\end{aligned}$$<br>Since $1.1487 > 0$, the function is positive at $x = 0.5$.",
+            "Evaluate the function at the upper boundary $x = 1.0$:<br>$$\\begin{aligned} f(1.0) &= e^{1.0} - 4(1.0)^3 \\\\ &\\approx 2.7183 - 4 \\\\ &= -1.2817 \\end{aligned}$$<br>Since $-1.2817 < 0$, the function is negative at $x = 1.0$.",
+            "Conclude based on the change of sign:<br>Since $f(x)$ is continuous on the interval $[0.5, 1.0]$, and there is a change of sign between $x = 0.5$ ($f(0.5) > 0$) and $x = 1.0$ ($f(1.0) < 0$), there must be a root $\\alpha$ in the interval $0.5 < \\alpha < 1.0$.<br><br>Final Answer: $$f(0.5) = 1.1487 > 0, \\quad f(1.0) = -1.2817 < 0 \\implies 0.5 < \\alpha < 1.0$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$f(0.5) = -1.1487 < 0, \\quad f(1.0) = 1.2817 > 0 \\implies 0.5 < \\alpha < 1.0$$",
+                "feedback": "Check your signs during the evaluation steps. Since $e^{0.5} \\approx 1.6487$ and $4(0.5)^3 = 0.5$, the value is $1.6487 - 0.5 = 1.1487$, which is positive. At $x = 1.0$, $e^{1.0} \\approx 2.7183 < 4$, which yields a negative result."
+            },
+            {
+                "ans": "$$f(0.5) = 1.1487 > 0, \\quad f(1.0) = -1.2817 < 0 \\implies \\alpha = 0.5$$",
+                "feedback": "The change of sign rule only shows that a root lies *between* the boundaries of the interval, $0.5 < \\alpha < 1.0$. It does not mean the root itself is equal to one of the boundaries."
+            },
+            {
+                "ans": "$$f(0) = 1 > 0, \\quad f(1.0) = -1.2817 < 0 \\implies 0.5 < \\alpha < 1.0$$",
+                "feedback": "While evaluating $f(0) = 1$ is mathematically correct, the question specifically asks to show that the root lies in the interval $[0.5, 1.0]$. You must use $x = 0.5$ as your lower bound rather than $x = 0$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Intermediate Value Theorem",
+            "content": "To secure full marks in root-locating questions, you must explicitly state two criteria: first, that there is a change of sign between the boundary values, and second, that the function $f(x)$ is continuous over that interval."
+        }
+    },
+    {
+        "id": "004217",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Numerical Methods",
+        "subtopic": [
+            "Change of Sign",
+            "Interval Bisection"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The equation $x^3 - 5x + 3 = 0$ has a real root, $\\alpha$, in the interval $[0.5, 1.0]$.<br><br>1. Show that $\\alpha$ lies in the interval $[0.6, 0.7]$.<br>2. By considering the sign of the function at a suitable boundary, show that the value of $\\alpha$ is $0.66$ correct to $2$ decimal places.",
+        "steps": [
+            "Define the function $f(x) = x^3 - 5x + 3$. To show that the root $\\alpha$ lies in the interval $[0.6, 0.7]$, evaluate $f(x)$ at the boundaries $x = 0.6$ and $x = 0.7$:<br>$$\\begin{aligned} f(0.6) &= 0.6^3 - 5(0.6) + 3 \\\\ &= 0.216 - 3 + 3 \\\\ &= 0.216 \\quad ( > 0 ) \\\\ f(0.7) &= 0.7^3 - 5(0.7) + 3 \\\\ &= 0.343 - 3.5 + 3 \\\\ &= -0.157 \\quad ( < 0 ) \\end{aligned}$$<br>Since $f(0.6) > 0$ and $f(0.7) < 0$, the change of sign confirms that $0.6 < \\alpha < 0.7$.",
+            "To prove that the root is $0.66$ correct to $2$ decimal places, we must establish that it lies within the rounding boundary interval $[0.655, 0.665]$. Let's test the lower rounding boundary $x = 0.655$:<br>$$\\begin{aligned} f(0.655) &= 0.655^3 - 5(0.655) + 3 \\\\ &\\approx 0.2809 - 3.2750 + 3 \\\\ &= 0.0059 \\quad ( > 0 ) \\end{aligned}$$",
+            "Now evaluate the function at the target value $x = 0.66$:<br>$$\\begin{aligned} f(0.66) &= 0.66^3 - 5(0.66) + 3 \\\\ &\\approx 0.2875 - 3.3000 + 3 \\\\ &= -0.0125 \\quad ( < 0 ) \\end{aligned}$$",
+            "Conclude based on the sign change:<br>Since $f(0.655) > 0$ and $f(0.66) < 0$, the root $\\alpha$ must lie in the interval $0.655 < \\alpha < 0.66$. Because any value within this narrow interval rounds directly to $0.66$ to $2$ decimal places, the proof is complete.<br><br>Final Answer: $$0.655 < \\alpha < 0.66 \\implies \\alpha \\approx 0.66 \\text{ (to 2 d.p.)}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$0.65 < \\alpha < 0.66 \\implies \\alpha \\approx 0.66 \\text{ (to 2 d.p.)}$$",
+                "feedback": "Testing $0.65$ is not sufficient to guarantee that the root rounds to $0.66$. Values between $0.65$ and $0.655$ round down to $0.65$. You must test the exact rounding boundary of $0.655$ to complete the proof."
+            },
+            {
+                "ans": "$$f(0.6) = -0.216, \\quad f(0.7) = 0.157 \\implies 0.6 < \\alpha < 0.7$$",
+                "feedback": "Check your evaluations. Since $0.6^3 = 0.216$ and $-5(0.6) + 3 = 0$, $f(0.6) = 0.216$, which is positive. At $x = 0.7$, $f(0.7) = -0.157$, which is negative."
+            },
+            {
+                "ans": "$$0.66 < \\alpha < 0.665 \\implies \\alpha \\approx 0.66 \\text{ (to 2 d.p.)}$$",
+                "feedback": "While values in this interval do round to $0.66$, your evaluation showed $f(0.66) < 0$ and $f(0.655) > 0$. This confirms the root is in the interval $0.655 < \\alpha < 0.66$, not above $0.66$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Root Rounding Boundaries",
+            "content": "When an exam asks you to show a root is equal to a value to $d$ decimal places, do not just evaluate the rounded values. You must always test the midpoints of the rounding boundaries (i.e., ending in $5$ at the next decimal place) to prove the root is trapped within the correct rounding region."
+        }
+    },
+    {
+        "id": "004218",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Numerical Methods",
+        "subtopic": [
+            "Fixed-Point Iteration",
+            "Rearranging Equations"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The equation $x^3 - 3x - 1 = 0$ has a root, $\\alpha$, in the interval $[1.5, 2.0]$.<br><br>1. Show that the equation can be rearranged into the iterative formula:<br>$$x_{n+1} = \\sqrt{3 + \\dfrac{1}{x_n}}$$<br>2. Using this iterative formula with a starting value of $x_1 = 1.8$, find the values of $x_2$, $x_3$, and $x_4$, giving your answers to $4$ decimal places.",
+        "steps": [
+            "Rearrange the equation $x^3 - 3x - 1 = 0$ to isolate $x$ on one side:<br>$$\\begin{aligned} x^3 &= 3x + 1 \\\\ x^2 &= 3 + \\dfrac{1}{x} \\quad \\text{(dividing both sides by } x \\ne 0) \\\\ x &= \\sqrt{3 + \\dfrac{1}{x}} \\end{aligned}$$<br>Writing this in iterative form yields the required formula:<br>$$x_{n+1} = \\sqrt{3 + \\dfrac{1}{x_n}}$$",
+            "Calculate $x_2$ by substituting $x_1 = 1.8$ into the formula:<br>$$\\begin{aligned} x_2 &= \\sqrt{3 + \\dfrac{1}{1.8}} \\\\ &= \\sqrt{3 + 0.5556} \\\\ &= \\sqrt{3.5556} \\\\ &\\approx 1.8856 \\end{aligned}$$",
+            "Calculate $x_3$ by substituting $x_2 \\approx 1.885618$ (using full calculator precision to prevent intermediate rounding errors):<br>$$\\begin{aligned} x_3 &= \\sqrt{3 + \\dfrac{1}{1.885618}} \\\\ &\\approx \\sqrt{3 + 0.5303} \\\\ &= \\sqrt{3.5303} \\\\ &\\approx 1.8789 \\end{aligned}$$",
+            "Calculate $x_4$ by substituting $x_3 \\approx 1.878916$:<br>$$\\begin{aligned} x_4 &= \\sqrt{3 + \\dfrac{1}{1.878917}} \\\\ &\\approx \\sqrt{3 + 0.5322} \\\\ &= \\sqrt{3.5322} \\\\ &\\approx 1.8794 \\end{aligned}$$<br><br>Final Answer: $$x_2 \\approx 1.8856, \\quad x_3 \\approx 1.8789, \\quad x_4 \\approx 1.8794$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x_2 \\approx 1.8878, \\quad x_3 \\approx 1.8790, \\quad x_4 \\approx 1.8800$$",
+                "feedback": "You may have made an arithmetic slip when evaluating $x_2 = \\sqrt{3.5556}$. $\\sqrt{3.5555...} \\approx 1.8856$, not $1.8878$. This initial rounding slip cascaded into your calculations for $x_3$ and $x_4$."
+            },
+            {
+                "ans": "$$x_2 \\approx 1.8856, \\quad x_3 \\approx 1.8789, \\quad x_4 \\approx 1.8812$$",
+                "feedback": "Check your calculations for $x_4$. Substituting $x_3 \\approx 1.8789$ back into the formula yields $\\sqrt{3 + 1/1.8789} \\approx \\sqrt{3.5322} \\approx 1.8794$, not $1.8812$."
+            },
+            {
+                "ans": "$$x_2 \\approx 1.8856, \\quad x_3 \\approx 1.8924, \\quad x_4 \\approx 1.8794$$",
+                "feedback": "Check your calculation steps for $x_3$. Substituting $x_2 \\approx 1.8856$ yields $\\sqrt{3 + 1/1.8856} \\approx 1.8789$. Make sure you divide $1$ by $x_n$ before adding $3$ and taking the square root."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Avoid Intermediate Rounding",
+            "content": "When evaluating iterative formulas, never clear your calculator screen or use rounded 4 d.p. values for subsequent steps. Always store the full value in your calculator memory and run the formula on the exact decimal to ensure your final rounded answers are precise."
+        }
+    },
+    {
+        "id": "004219",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Numerical Methods",
+        "subtopic": [
+            "Fixed-Point Iteration",
+            "Rearranging Equations"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A curve has the equation $y = e^{-x} + x^2 - 3$.<br><br>1. Show that the equation $e^{-x} + x^2 - 3 = 0$ can be rearranged into the iterative form:<br>$$x_{n+1} = \\sqrt{3 - e^{-x_n}}$$<br>2. Using this iterative form with $x_1 = 1.5$, find the values of $x_2$, $x_3$, and $x_4$, giving your answers to $4$ decimal places.",
+        "steps": [
+            "Set $y = 0$ to find the $x$-intercept root of the equation:<br>$$\\begin{aligned} e^{-x} + x^2 - 3 &= 0 \\\\ x^2 &= 3 - e^{-x} \\\\ x &= \\sqrt{3 - e^{-x}} \\end{aligned}$$<br>Writing this in iterative form yields the required equation:<br>$$x_{n+1} = \\sqrt{3 - e^{-x_n}}$$",
+            "Calculate $x_2$ by substituting $x_1 = 1.5$ into the formula:<br>$$\\begin{aligned} x_2 &= \\sqrt{3 - e^{-1.5}} \\\\ &\\approx \\sqrt{3 - 0.2231} \\\\ &= \\sqrt{2.7769} \\\\ &\\approx 1.6664 \\end{aligned}$$",
+            "Calculate $x_3$ by substituting $x_2 \\approx 1.666394$ (using full calculator precision):<br>$$\\begin{aligned} x_3 &= \\sqrt{3 - e^{-1.666394}} \\\\ &\\approx \\sqrt{3 - 0.1889} \\\\ &= \\sqrt{2.8111} \\\\ &\\approx 1.6766 \\end{aligned}$$",
+            "Calculate $x_4$ by substituting $x_3 \\approx 1.676626$:<br>$$\\begin{aligned} x_4 &= \\sqrt{3 - e^{-1.676626}} \\\\ &\\approx \\sqrt{3 - 0.1870} \\\\ &= \\sqrt{2.8130} \\\\ &\\approx 1.6772 \\end{aligned}$$<br><br>Final Answer: $$x_2 \\approx 1.6664, \\quad x_3 \\approx 1.6766, \\quad x_4 \\approx 1.6772$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x_2 \\approx 1.6664, \\quad x_3 \\approx 1.6772, \\quad x_4 \\approx 1.6775$$",
+                "feedback": "You may have made a rounding error in $x_3$. $e^{-1.6664} \\approx 0.1889$, which yields $x_3 = \\sqrt{3 - 0.1889} \\approx 1.6766$, not $1.6772$. Be careful not to skip an iteration step."
+            },
+            {
+                "ans": "$$x_2 \\approx 1.6664, \\quad x_3 \\approx 1.6766, \\quad x_4 \\approx 1.6912$$",
+                "feedback": "Check your calculations for $x_4$. Substituting $x_3 \\approx 1.6766$ into the formula yields $\\sqrt{3 - e^{-1.6766}} \\approx \\sqrt{3 - 0.1870} = \\sqrt{2.8130} \\approx 1.6772$, not $1.6912$."
+            },
+            {
+                "ans": "$$x_2 \\approx 1.6664, \\quad x_3 \\approx 1.5831, \\quad x_4 \\approx 1.6772$$",
+                "feedback": "Check your exponent sign in $x_3$. Remember that the term is $e^{-x_n}$. A positive exponent $e^{x_n}$ will yield a completely incorrect series of iterative approximations."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Exponential Sign Care",
+            "content": "When evaluating terms of the form $e^{-x_n}$ on a calculator, always be careful with the negative sign in the exponent. Dropping this sign changes the decay term into an exponential growth term, causing the iteration to rapidly diverge."
+        }
+    },
+    {
+        "id": "004220",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Numerical Methods",
+        "subtopic": [
+            "The Newton-Raphson Method"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The equation $f(x) = 0$ is to be solved, where $f(x) = e^x - 5x^3$.<br><br>1. Show that the Newton-Raphson formula for this equation can be written in the form:<br>$$x_{n+1} = \\dfrac{e^{x_n}(x_n - 1) - 10x_n^3}{e^{x_n} - 15x_n^2}$$<br>2. Using the starting value $x_1 = 0.8$, find the values of $x_2$ and $x_3$ correct to $4$ decimal places.",
+        "steps": [
+            "Find the derivative of $f(x) = e^x - 5x^3$:<br>$$f'(x) = e^x - 15x^2$$<br>The general Newton-Raphson formula is:<br>$$x_{n+1} = x_n - \\dfrac{f(x_n)}{f'(x_n)}$$",
+            "Substitute $f(x_n)$ and $f'(x_n)$ into the formula and simplify into a single fraction:<br>$$\\begin{aligned} x_{n+1} &= x_n - \\dfrac{e^{x_n} - 5x_n^3}{e^{x_n} - 15x_n^2} \\\\ &= \\dfrac{x_n\\left(e^{x_n} - 15x_n^2\\right) - \\left(e^{x_n} - 5x_n^3\\right)}{e^{x_n} - 15x_n^2} \\\\ &= \\dfrac{x_n e^{x_n} - 15x_n^3 - e^{x_n} + 5x_n^3}{e^{x_n} - 15x_n^2} \\\\ &= \\dfrac{e^{x_n}(x_n - 1) - 10x_n^3}{e^{x_n} - 15x_n^2} \\end{aligned}$$<br>This is exactly the required form.",
+            "Calculate $x_2$ using the starting value $x_1 = 0.8$:<br>$$\\begin{aligned} f(0.8) &= e^{0.8} - 5(0.8)^3 \\\\ &\\approx 2.2255 - 2.5600 \\\\ &= -0.3345 \\\\ f'(0.8) &= e^{0.8} - 15(0.8)^2 \\\\ &\\approx 2.2255 - 9.6000 \\\\ &= -7.3745 \\\\ x_2 &= 0.8 - \\dfrac{-0.3345}{-7.3745} \\\\ &\\approx 0.8 - 0.0454 \\\\ &= 0.7546 \\end{aligned}$$",
+            "Calculate $x_3$ using $x_2 = 0.7546$:<br>$$\\begin{aligned} f(0.7546) &= e^{0.7546} - 5(0.7546)^3 \\\\ &\\approx 2.1267 - 2.1465 \\\\ &= -0.0198 \\\\ f'(0.7546) &= e^{0.7546} - 15(0.7546)^2 \\\\ &\\approx 2.1267 - 8.5410 \\\\ &= -6.4143 \\\\ x_3 &= 0.7546 - \\dfrac{-0.0198}{-6.4143} \\\\ &\\approx 0.7546 - 0.0031 \\\\ &= 0.7515 \\end{aligned}$$<br><br>Final Answer: $$x_2 \\approx 0.7546, \\quad x_3 \\approx 0.7515$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x_2 \\approx 0.7546, \\quad x_3 \\approx 0.7577$$",
+                "feedback": "Check your division sign when computing $x_3$. Since both $f(x_2)$ and $f'(x_2)$ are negative, their division yields a positive value: $\\dfrac{-0.0198}{-6.4143} \\approx +0.0031$. Subtracting this positive value gives $0.7546 - 0.0031 = 0.7515$, not $0.7546 + 0.0031 = 0.7577$."
+            },
+            {
+                "ans": "$$x_2 \\approx 0.8454, \\quad x_3 \\approx 0.7515$$",
+                "feedback": "Be careful with signs during division in the step for $x_2$. We have $0.8 - \\dfrac{-0.3345}{-7.3745}$. Since the fraction evaluates to positive $+0.0454$, we are subtracting a positive number, yielding $0.8 - 0.0454 = 0.7546$, not $0.8 + 0.0454 = 0.8454$."
+            },
+            {
+                "ans": "$$x_2 \\approx 0.7546, \\quad x_3 \\approx 0.7512$$",
+                "feedback": "This value of $x_3$ is extremely close and corresponds to keeping full calculator precision ($x_3 \\approx 0.7512$). However, if using the standard classroom method of substituting the rounded 4 d.p. value $x_2 = 0.7546$ back into the formula, the result resolves to $0.7515$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Newton-Raphson Sign Clashes",
+            "content": "The Newton-Raphson method is a major, high-yield A-Level topic, but it is highly prone to sign errors. Since the formula is $x_{n+1} = x_n - \\dfrac{f(x_n)}{f'(x_n)}$, you must track three separate negative signs: the minus in the formula, the sign of $f(x_n)$, and the sign of $f'(x_n)$. Writing each evaluation step out clearly is key to preventing mistakes."
+        }
     }
+]
 
 
 
