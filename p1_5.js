@@ -941,8 +941,7 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "Remember to evaluate the validity of both branches of your quadratic formula result. The branch $\\cos \\theta = \\dfrac{-2 - \\sqrt{7}}{2} \\approx -2.32$ is strictly outside the defined range of cosine, $-1 \\le \\cos \\theta \\le 1$, and produces no real solutions."
             },
             {
-                "ans": "$$\\theta = \\arccos\\left(\\dfrac{-2 + \\sqrt{7}}{2}\\right), \\, \\pi - \\arccos\\left(\\dfrac{-2 + \\sqrt{7}}{2}$$",
-                "feedback": "Check your quadrant adjustments for a positive cosine value. Cosine is positive in the first and fourth quadrants. The fourth quadrant solution is $2\\pi - \\theta_{PV}$, not $\\pi - \\theta_{PV}$ (which is in the second quadrant)."
+                "ans": "$$\\theta = \\arccos\\left(\\dfrac{-2 + \\sqrt{7}}{2}\\right), \\, \\pi - \\arccos\\left(\\dfrac{-2 + \\sqrt{7}}{2}\\right)$$",           "feedback": "Check your quadrant adjustments for a positive cosine value. Cosine is positive in the first and fourth quadrants. The fourth quadrant solution is $2\\pi - \\theta_{PV}$, not $\\pi - \\theta_{PV}$ (which is in the second quadrant)."
             },
             {
                 "ans": "$$\\theta = \\arccos\\left(\\dfrac{-2 + \\sqrt{7}}{2}\\right)$$",
