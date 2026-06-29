@@ -795,7 +795,7 @@ window.ALEVEL_QUESTIONS = [
             "content": "The Newton-Raphson method is a major, high-yield A-Level topic, but it is highly prone to sign errors. Since the formula is $x_{n+1} = x_n - \\dfrac{f(x_n)}{f'(x_n)}$, you must track three separate negative signs: the minus in the formula, the sign of $f(x_n)$, and the sign of $f'(x_n)$. Writing each evaluation step out clearly is key to preventing mistakes."
         }
     }
-]
+
 
 
 
