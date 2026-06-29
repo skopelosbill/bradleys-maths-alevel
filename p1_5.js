@@ -212,7 +212,214 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Integration by Parts Limits",
             "content": "When evaluating $\\int x\\ln(2x)\\text{d}x$ by parts, be extremely cautious with the lower limit. Since $\\ln 1 = 0$, evaluating the term $2x^2\\ln(2x)$ at the lower limit $x = 1/2$ results in $0$, but the companion term $-x^2$ evaluates to $-1/4$. Since this term is subtracted, it becomes a positive $+1/4$ in your final area calculation."
         }
+    },
+    {
+        "id": "004206",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differential Equations",
+        "subtopic": [
+            "Separation of Variables",
+            "Exponential Growth",
+            "Proportionality Models"
+        ],
+        "img": false,
+        "question": "A biologist is attempting to model the population of a yeast colony, $P$, at time $t$ hours. When $t = 0$ there are $100$ cells, and when $t = 2$ there are $150$ cells.<br><br>1. The biologist first assumes that the rate of increase of the yeast population is inversely proportional to the population size present at time $t$.<br>&nbsp;&nbsp;&nbsp;&nbsp;(a) Write down a differential equation to model this situation.<br>&nbsp;&nbsp;&nbsp;&nbsp;(b) Solve this differential equation to find $P$ in terms of $t$.<br>2. In a revised model, it is assumed that:<br>$$\\dfrac{\\text{d}P}{\\text{d}t} = \\dfrac{P^2}{300e^{0.5t}}$$<br>Solve this differential equation to find $P$ in terms of $t$, using the same initial population of $100$ cells at $t = 0$.<br>3. Compare the long-term behaviour of the two models.",
+        "steps": [
+            "Write the rate of increase as a differential equation representing inverse proportionality:<br>$$\\dfrac{\\text{d}P}{\\text{d}t} = \\dfrac{k}{P}$$<br>where $k > 0$ is a constant of proportionality.",
+            "Solve the differential equation by separating the variables and integrating both sides:<br>$$\\begin{aligned} P \\,\\text{d}P &= k \\,\\text{d}t \\\\ \\int P \\,\\text{d}P &= \\int k \\,\\text{d}t \\\\ \\dfrac{1}{2}P^2 &= kt + C \\\\ P^2 &= 2kt + D \\end{aligned}$$<br>where $D = 2C$ is a constant of integration.",
+            "Apply the boundary conditions to find the constant values $D$ and $2k$:<br>Substitute $t = 0, \\, P = 100$ into the equation:<br>$$\\begin{aligned} 100^2 &= 2k(0) + D \\\\ D &= 10000 \\end{aligned}$$<br>Now substitute $t = 2, \\, P = 150$ and $D = 10000$ to find $2k$:<br>$$\\begin{aligned} 150^2 &= 2k(2) + 10000 \\\\ 22500 &= 4k + 10000 \\\\ 4k &= 12500 \\\\ 2k &= 6250 \\end{aligned}$$<br>Substitute $2k = 6250$ and $D = 10000$ back into the solved equation and take the positive square root as $P \\ge 0$:<br>$$P(t) = \\sqrt{6250t + 10000}$$",
+            "For the revised model, separate the variables and integrate both sides:<br>$$\\begin{aligned} \\dfrac{\\text{d}P}{\\text{d}t} &= \\dfrac{P^2}{300e^{0.5t}} \\\\ \\dfrac{1}{P^2} \\,\\text{d}P &= \\dfrac{1}{300}e^{-0.5t} \\,\\text{d}t \\\\ \\int P^{-2} \\,\\text{d}P &= \\int \\dfrac{1}{300}e^{-0.5t} \\,\\text{d}t \\\\ -\\dfrac{1}{P} &= -\\dfrac{1}{150}e^{-0.5t} + A \\end{aligned}$$",
+            "Clean up the equation by multiplying both sides by $-1$:<br>$$\\dfrac{1}{P} = \\dfrac{1}{150}e^{-0.5t} + A'$$<br>where $A' = -A$. Substitute the initial condition $t = 0, \\, P = 100$ to find $A'$:<br>$$\\begin{aligned} \\dfrac{1}{100} &= \\dfrac{1}{150}e^{0} + A' \\\\ \\dfrac{1}{100} &= \\dfrac{1}{150} + A' \\\\ A' &= \\dfrac{1}{100} - \\dfrac{1}{150} = \\dfrac{1}{300} \\end{aligned}$$<br>Combine the fractions and solve for $P$:<br>$$\\begin{aligned} \\dfrac{1}{P} &= \\dfrac{1}{150}e^{-0.5t} + \\dfrac{1}{300} \\\\ \\dfrac{1}{P} &= \\dfrac{2e^{-0.5t} + 1}{300} \\\\ P(t) &= \\dfrac{300}{2e^{-0.5t} + 1} \\end{aligned}$$",
+            "Evaluate and compare the long-term behaviour as $t \\to \\infty$:<br>For the first model:<br>$$\\text{As } t \\to \\infty, \\quad P(t) = \\sqrt{6250t + 10000} \\to \\infty$$<br>For the revised model:<br>$$\\text{As } t \\to \\infty, \\quad e^{-0.5t} \\to 0 \\implies P(t) \\to \\dfrac{300}{1} = 300$$<br>The first model predicts unbounded growth, while the revised model predicts the population will level off and saturate at $300$ cells.<br><br>Final Answer: $$P(t) = \\sqrt{6250t + 10000}, \\quad P(t) = \\dfrac{300}{2e^{-0.5t} + 1}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$P(t) = \\sqrt{6250t + 10000}, \\quad P(t) = \\dfrac{300}{e^{-0.5t} + 2}$$",
+                "feedback": "You may have made an integration error on the exponential term. The integral of $\\dfrac{1}{300}e^{-0.5t}$ is $-\\dfrac{1}{150}e^{-0.5t}$, not $-\\dfrac{1}{300}e^{-0.5t}$."
+            },
+            {
+                "ans": "$$P(t) = \\sqrt{6250t + 10000}, \\quad P(t) = \\dfrac{300}{2e^{-0.5t} - 1}$$",
+                "feedback": "Check the sign of your constant of integration. Substituting $P = 100$ at $t = 0$ gives $\\dfrac{1}{100} = \\dfrac{1}{150} + A'$, which yields $A' = +\\dfrac{1}{300}$, not $-\\dfrac{1}{300}$."
+            },
+            {
+                "ans": "$$P(t) = 6250t + 10000, \\quad P(t) = \\dfrac{300}{2e^{-0.5t} + 1}$$",
+                "feedback": "Don't forget to take the square root of both sides at the end of the first model. Since the solved equation is $P^2 = 6250t + 10000$, taking the square root yields $P(t) = \\sqrt{6250t + 10000}$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Proportionality Integration Steps",
+            "content": "For standard separable differential equations of inverse proportionality (like $P \\,\\text{d}P = k \\,\\text{d}t$), always group the numeric multipliers with the linear constant $2k$ first. This avoids dragging fractions of $\\dfrac{1}{2}$ through the algebra and eliminates minor arithmetic slips when applying the boundary conditions."
+        }
+    },
+    {
+        "id": "004207",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differential Equations",
+        "subtopic": [
+            "Separation of Variables",
+            "Logarithmic Integration",
+            "Medical Modelling"
+        ],
+        "img": false,
+        "question": "A clinical researcher is studying the concentration of a newly administered drug in a patient's bloodstream. Let $x$ represent the concentration of the drug (in units/L) at time $t$ hours. Initially, when $t = 0$, the concentration is $x = 0$. After $1$ hour, the concentration is $2$ units/L.<br><br>1. The researcher first assumes that the rate of increase of the drug concentration is proportional to the difference between a maximum saturation level of $10$ units/L and the current concentration $x$.<br>&nbsp;&nbsp;&nbsp;&nbsp;(a) Write down a differential equation to model this situation.<br>&nbsp;&nbsp;&nbsp;&nbsp;(b) Solve this differential equation to find $x$ in terms of $t$.<br>2. In a revised model, it is assumed that:<br>$$\\dfrac{\\text{d}x}{\\text{d}t} = \\dfrac{3(10 - x)^2}{100(t + 1)}$$<br>Solve this differential equation to find $x$ in terms of $t$, using the same initial condition of $x = 0$ at $t = 0$.<br>3. Compare the long-term behaviour of the two models as $t \\to \\infty$.",
+        "steps": [
+            "Write the rate of increase for the first model as a differential equation:<br>$$\\dfrac{\\text{d}x}{\\text{d}t} = k(10 - x)$$<br>where $k > 0$ is a constant of proportionality.",
+            "Solve the differential equation by separating the variables and integrating both sides:<br>$$\\begin{aligned} \\dfrac{1}{10 - x} \\,\\text{d}x &= k \\,\\text{d}t \\\\ \\int \\dfrac{1}{10 - x} \\,\\text{d}x &= \\int k \\,\\text{d}t \\\\ -\\ln(10 - x) &= kt + C \\\\ \\ln(10 - x) &= -kt - C \\\\ 10 - x &= Ae^{-kt} \\end{aligned}$$<br>where $A = e^{-C}$ is a constant of integration.",
+            "Apply the boundary conditions to find the values of $A$ and $k$:<br>Substitute $t = 0, \\, x = 0$ into the equation:<br>$$\\begin{aligned} 10 - 0 &= Ae^{0} \\\\ A &= 10 \\end{aligned}$$<br>This gives $x(t) = 10\\left(1 - e^{-kt}\\right)$. Now substitute $t = 1, \\, x = 2$ to find $k$:<br>$$\\begin{aligned} 2 &= 10\\left(1 - e^{-k}\\right) \\\\ 0.2 &= 1 - e^{-k} \\\\ e^{-k} &= 0.8 \\\\ -k &= \\ln 0.8 \\\\ k &= -\\ln 0.8 \\end{aligned}$$<br>Substituting $e^{-kt} = (e^{-k})^t = 0.8^t$ yields:<br>$$x(t) = 10\\left(1 - 0.8^t\\right)$$",
+            "For the revised model, separate the variables and integrate both sides:<br>$$\\begin{aligned} \\dfrac{\\text{d}x}{\\text{d}t} &= \\dfrac{3(10 - x)^2}{100(t + 1)} \\\\ \\dfrac{1}{(10 - x)^2} \\,\\text{d}x &= \\dfrac{3}{100(t + 1)} \\,\\text{d}t \\\\ \\int (10 - x)^{-2} \\,\\text{d}x &= \\int \\dfrac{3}{100(t + 1)} \\,\\text{d}t \\\\ \\dfrac{1}{10 - x} &= \\dfrac{3}{100}\\ln(t + 1) + C' \\end{aligned}$$",
+            "Apply the initial condition $t = 0, \\, x = 0$ to find $C'$:<br>$$\\begin{aligned} \\dfrac{1}{10 - 0} &= \\dfrac{3}{100}\\ln(1) + C' \\\\ \\dfrac{1}{10} &= 0 + C' \\\\ C' &= \\dfrac{1}{10} \\end{aligned}$$<br>Now substitute $C' = \\dfrac{1}{10}$ back and isolate $x$:<br>$$\\begin{aligned} \\dfrac{1}{10 - x} &= \\dfrac{3}{100}\\ln(t + 1) + \\dfrac{1}{10} \\\\ \\dfrac{1}{10 - x} &= \\dfrac{3\\ln(t + 1) + 10}{100} \\\\ 10 - x &= \\dfrac{100}{3\\ln(t + 1) + 10} \\\\ x(t) &= 10 - \\dfrac{100}{3\\ln(t + 1) + 10} \\end{aligned}$$",
+            "Analyze the long-term behaviour as $t \\to \\infty$:<br>For the first model:<br>$$\\text{As } t \\to \\infty, \\quad 0.8^t \\to 0 \\implies x(t) \\to 10\\left(1 - 0\\right) = 10$$<br>For the revised model:<br>$$\\text{As } t \\to \\infty, \\quad \\ln(t + 1) \\to \\infty \\implies \\dfrac{100}{3\\ln(t + 1) + 10} \\to 0 \\implies x(t) \\to 10$$<br>Both models predict that the concentration will saturate at a limit of $10$ units/L. However, the first model approaches this limit much faster (exponential decay of the remaining concentration gap) compared to the slow logarithmic decay of the revised model.<br><br>Final Answer: $$x(t) = 10\\left(1 - 0.8^t\\right), \\quad x(t) = 10 - \\dfrac{100}{3\\ln(t + 1) + 10}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x(t) = 10\\left(1 - 0.8^t\\right), \\quad x(t) = 10 - \\dfrac{100}{3\\ln(t + 1) - 10}$$",
+                "feedback": "Check the sign of your constant of integration $C'$. Substituting the boundary condition $t = 0, \\, x = 0$ into the expression $\\dfrac{1}{10 - x} = \\dfrac{3}{100}\\ln(t + 1) + C'$ yields $C' = +\\dfrac{1}{10}$, not $-\\dfrac{1}{10}$."
+            },
+            {
+                "ans": "$$x(t) = 10\\left(1 - 0.8^t\\right), \\quad x(t) = 10 + \\dfrac{100}{3\\ln(t + 1) + 10}$$",
+                "feedback": "Double check your algebraic rearrangements when isolating $x$. Since $10 - x = \\dfrac{100}{3\\ln(t + 1) + 10}$, subtracting $10$ and multiplying by $-1$ results in subtracting the fraction from $10$, not adding it."
+            },
+            {
+                "ans": "$$x(t) = 10\\left(1 - 0.2^t\\right), \\quad x(t) = 10 - \\dfrac{100}{3\\ln(t + 1) + 10}$$",
+                "feedback": "Check your exponential growth base in the first model. Since $e^{-k} = 0.8$, the function should contain $0.8^t$. It seems you may have mistakenly written $1 - e^{-k} = 0.2$ as the base itself."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Watch Your Signs in Log Integrals",
+            "content": "A very common error in GCE examinations is forgetting to apply the chain rule when integrating reciprocal linear functions. Integrating $\\int \\dfrac{1}{10 - x} \\,\\text{d}x$ must result in $-\\ln(10 - x) + C$. Forgetting this negative sign completely skews the exponential growth behaviour of the concentration."
+        }
+    },
+    {
+        "id": "004208",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differential Equations",
+        "subtopic": [
+            "Newton's Law of Cooling",
+            "Separation of Variables",
+            "Fractional Calculus"
+        ],
+        "img": false,
+        "question": "A liquid is cooling in a temperature-controlled laboratory. Let $\\theta$ be the temperature of the liquid in $^\\circ\\text{C}$ at time $t$ minutes. The ambient room temperature is kept constant at $20^\\circ\\text{C}$. At $t = 0$, the liquid is at $84^\\circ\\text{C}$, and at $t = 10$ minutes, it has cooled to $52^\\circ\\text{C}$.<br><br>1. A classic model assumes that the rate of decrease of the liquid's temperature is proportional to the difference between its current temperature $\\theta$ and the ambient room temperature.<br>&nbsp;&nbsp;&nbsp;&nbsp;(a) Write down a differential equation to model this situation.<br>&nbsp;&nbsp;&nbsp;&nbsp;(b) Solve this differential equation to find $\\theta$ in terms of $t$.<br>2. In a revised model, the rate of cooling is assumed to be governed by:<br>$$\\dfrac{\\text{d}\\theta}{\\text{d}t} = -\\dfrac{(\\theta - 20)^{3/2}}{30\\sqrt{t + 4}}$$<br>Solve this differential equation to find $\\theta$ in terms of $t$, using the same initial temperature of $84^\\circ\\text{C}$ at $t = 0$.<br>3. State, with a brief reason, what both models predict about the temperature of the liquid in the long term.",
+        "steps": [
+            "Represent Newton's Law of Cooling as a differential equation, writing the rate of decrease as a negative rate of change:<br>$$\\dfrac{\\text{d}\\theta}{\\text{d}t} = -k(\\theta - 20)$$<br>where $k > 0$ is a constant of proportionality.",
+            "Separate the variables and integrate to solve the equation:<br>$$\\begin{aligned} \\dfrac{1}{\\theta - 20} \\,\\text{d}\\theta &= -k \\,\\text{d}t \\\\ \\int \\dfrac{1}{\\theta - 20} \\,\\text{d}\\theta &= \\int -k \\,\\text{d}t \\\\ \\ln(\\theta - 20) &= -kt + C \\\\ \\theta - 20 &= Ae^{-kt} \\\\ \\theta(t) &= 20 + Ae^{-kt} \\end{aligned}$$",
+            "Apply the initial conditions to find the constants $A$ and $k$:<br>Substitute $t = 0, \\, \\theta = 84$:<br>$$\\begin{aligned} 84 &= 20 + Ae^{0} \\\\ A &= 64 \\end{aligned}$$<br>This gives $\\theta(t) = 20 + 64e^{-kt}$. Substitute $t = 10, \\, \\theta = 52$:<br>$$\\begin{aligned} 52 &= 20 + 64e^{-10k} \\\\ 32 &= 64e^{-10k} \\\\ e^{-10k} &= 0.5 \\\\ -10k &= \\ln 0.5 \\\\ k &= \\dfrac{\\ln 2}{10} \\end{aligned}$$<br>Substituting $e^{-kt} = (e^{-10k})^{t/10} = 0.5^{t/10} = 2^{-t/10}$ yields:<br>$$\\theta(t) = 20 + 64\\cdot 2^{-t/10}$$",
+            "For the revised model, separate variables and integrate:<br>$$\\begin{aligned} \\dfrac{\\text{d}\\theta}{\\text{d}t} &= -\\dfrac{(\\theta - 20)^{3/2}}{30\\sqrt{t + 4}} \\\\ (\\theta - 20)^{-3/2} \\,\\text{d}\\theta &= -\\dfrac{1}{30}(t + 4)^{-1/2} \\,\\text{d}t \\\\ \\int (\\theta - 20)^{-3/2} \\,\\text{d}\\theta &= -\\dfrac{1}{30}\\int (t + 4)^{-1/2} \\,\\text{d}t \\\\ -2(\\theta - 20)^{-1/2} &= -\\dfrac{1}{30}\\left(2\\sqrt{t + 4}\\right) + C \\\\ 2(\\theta - 20)^{-1/2} &= \\dfrac{1}{15}\\sqrt{t + 4} - C \\end{aligned}$$",
+            "Multiply both sides by $\\dfrac{1}{2}$ to simplify:<br>$$(\\theta - 20)^{-1/2} = \\dfrac{1}{30}\\sqrt{t + 4} + C'$$<br>where $C' = -\\dfrac{1}{2}C$. Use the initial condition $t = 0, \\, \\theta = 84$ to find $C'$:<br>$$\\begin{aligned} (84 - 20)^{-1/2} &= \\dfrac{1}{30}\\sqrt{0 + 4} + C' \\\\ 64^{-1/2} &= \\dfrac{1}{30}(2) + C' \\\\ \\dfrac{1}{8} &= \\dfrac{1}{15} + C' \\\\ C' &= \\dfrac{1}{8} - \\dfrac{1}{15} = \\dfrac{15 - 8}{120} = \\dfrac{7}{120} \\end{aligned}$$",
+            "Substitute $C'$ and isolate $\\theta$:<br>$$\\begin{aligned} (\\theta - 20)^{-1/2} &= \\dfrac{1}{30}\\sqrt{t + 4} + \\dfrac{7}{120} \\\\ \\theta(t) - 20 &= \\left( \\dfrac{1}{30}\\sqrt{t + 4} + \\dfrac{7}{120} \\right)^{-2} \\\\ \\theta(t) &= 20 + \\left( \\dfrac{1}{30}\\sqrt{t + 4} + \\dfrac{7}{120} \\right)^{-2} \n\\end{aligned}$$",
+            "Examine the long-term behaviour as $t \\to \\infty$:<br>For the first model:<br>$$\\text{As } t \\to \\infty, \\quad 2^{-t/10} \\to 0 \\implies \\theta(t) \\to 20 + 0 = 20$$<br>For the revised model:<br>$$\\text{As } t \\to \\infty, \\quad \\sqrt{t + 4} \\to \\infty \\implies \\left( \\dfrac{1}{30}\\sqrt{t + 4} + \\dfrac{7}{120} \\right)^{-2} \\to 0 \\implies \\theta(t) \\to 20 + 0 = 20$$<br>Both models predict that the liquid will cool down to approach the room temperature of $20^\\circ\\text{C}$ in the long term, and neither model projects that the temperature will fall below this ambient level.<br><br>Final Answer: $$\\theta(t) = 20 + 64\\cdot 2^{-t/10}, \\quad \\theta(t) = 20 + \\left( \\dfrac{1}{30}\\sqrt{t + 4} + \\dfrac{7}{120} \\right)^{-2}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\theta(t) = 20 + 64\\cdot 2^{-t/10}, \\quad \\theta(t) = 20 + \\left( \\dfrac{1}{30}\\sqrt{t + 4} + \\dfrac{1}{15} \\right)^{-2}$$",
+                "feedback": "Check your calculation for $C'$. When substituting $t = 0, \\, \\theta = 84$, the equation is $\\dfrac{1}{8} = \\dfrac{1}{15} + C'$. This yields $C' = \\dfrac{1}{8} - \\dfrac{1}{15} = \\dfrac{7}{120}$, not $\\dfrac{1}{15}$."
+            },
+            {
+                "ans": "$$\\theta(t) = 20 + 64\\cdot 2^{-t/10}, \\quad \\theta(t) = 20 + \\left( \\dfrac{1}{30}\\sqrt{t + 4} + \\dfrac{7}{120} \\right)^{2}$$",
+                "feedback": "Note the sign of your power when isolating the expression. Since $(\\theta - 20)^{-1/2} = X$, taking the reciprocal of the square of both sides gives $\\theta - 20 = X^{-2}$, not $X^2$."
+            },
+            {
+                "ans": "$$\\theta(t) = 20 + 84\\cdot 2^{-t/10}, \\quad \\theta(t) = 20 + \\left( \\dfrac{1}{30}\\sqrt{t + 4} + \\dfrac{7}{120} \\right)^{-2}$$",
+                "feedback": "Make sure you subtract the ambient temperature of $20$ before solving for the multiplier $A$. At $t = 0$, $84 = 20 + A \\implies A = 64$, not $84$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Fractional Integration Tricks",
+            "content": "When integrating powers of functions like $\\int (\\theta - 20)^{-3/2} \\,\\text{d}\\theta$, be very precise with the fractional arithmetic. Increasing the power by $1$ gives a new power of $-1/2$. Dividing by this new power introduces a multiplier of $-2$, which must be handled cleanly before applying any substitutions."
+        }
+    },
+    {
+        "id": "004209",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differential Equations",
+        "subtopic": [
+            "Separation of Variables",
+            "Linear First Order",
+            "Financial Modelling"
+        ],
+        "img": false,
+        "question": "An investor establishes a retirement fund. Let $V$ represent the value of the fund (in thousands of pounds) at time $t$ years. Initially, when $t = 0$, the fund has a value of $V = 10$. After $5$ years, the value of the fund is $V = 20$.<br><br>1. A simple model assumes that the rate of increase of the fund's value is directly proportional to its current value.<br>&nbsp;&nbsp;&nbsp;&nbsp;(a) Write down a differential equation to model this situation.<br>&nbsp;&nbsp;&nbsp;&nbsp;(b) Solve this differential equation to find $V$ in terms of $t$.<br>2. In a revised model, the investor makes continuous annual withdrawals, and the rate of change of the fund's value is given by:<br>$$\\dfrac{\\text{d}V}{\\text{d}t} = 0.1V - 2$$<br>Solve this differential equation to find $V$ in terms of $t$, using the same initial value of $V = 10$ at $t = 0$.<br>3. Compare the long-term behaviour predicted by the two models. Determine the exact time at which the fund is projected to run out under the revised model.",
+        "steps": [
+            "Represent the rate of change for direct proportionality as a differential equation:<br>$$\\dfrac{\\text{d}V}{\\text{d}t} = kV$$<br>where $k > 0$ is a constant of proportionality.",
+            "Integrate the separable differential equation:<br>$$\\begin{aligned} \\int \\dfrac{1}{V} \\,\\text{d}V &= \\int k \\,\\text{d}t \\\\ \\ln V &= kt + C \\\\ V(t) &= Ae^{kt} \\end{aligned}$$<br>where $A = e^C$. Substitute the boundary conditions:<br>Substitute $t = 0, \\, V = 10 \\implies A = 10$.<br>Now substitute $t = 5, \\, V = 20$ into $V(t) = 10e^{kt}$:<br>$$\\begin{aligned} 20 &= 10e^{5k} \\\\ 2 &= e^{5k} \\\\ 5k &= \\ln 2 \\\\ k &= \\dfrac{\\ln 2}{5} \\end{aligned}$$<br>Substituting $k$ back into the model gives:<br>$$V(t) = 10e^{\\frac{\\ln 2}{5}t} = 10\\cdot 2^{t/5}$$",
+            "For the revised model, separate variables and integrate:<br>$$\\begin{aligned} \\dfrac{\\text{d}V}{\\text{d}t} &= 0.1V - 2 \\\\ \\dfrac{1}{0.1V - 2} \\,\\text{d}V &= \\text{d}t \\\\ \\int \\dfrac{1}{0.1V - 2} \\,\\text{d}V &= \\int \\text{d}t \\\\ 10\\ln|0.1V - 2| &= t + C' \\end{aligned}$$",
+            "Solve for $V(t)$:<br>$$\\begin{aligned} \\ln|0.1V - 2| &= 0.1t + 0.1C' \\\\ 0.1V - 2 &= Be^{0.1t} \\\\ 0.1V &= 2 + Be^{0.1t} \\\\ V(t) &= 20 + A'e^{0.1t} \\end{aligned}$$<br>where $A' = 10B$. Substitute the initial condition $t = 0, \\, V = 10$ to find $A'$:<br>$$\\begin{aligned} 10 &= 20 + A'e^{0} \\\\ A' &= -10 \\end{aligned}$$<br>So the value of the fund under the revised model is:<br>$$V(t) = 20 - 10e^{0.1t}$$",
+            "Compare the long-term behaviour and find the depletion point:<br>For the first model, $V(t) = 10\\cdot 2^{t/5} \\to \\infty$ as $t \\to \\infty$, representing unbounded compound growth.<br>For the revised model, $V(t) = 20 - 10e^{0.1t}$ eventually decreases because the withdrawal term exceeds the growth term. The fund is exhausted when $V(t) = 0$:<br>$$\\begin{aligned} 20 - 10e^{0.1t} &= 0 \\\\ 10e^{0.1t} &= 20 \\\\ e^{0.1t} &= 2 \\\\ 0.1t &= \\ln 2 \\\\ t &= 10\\ln 2 \\end{aligned}$$<br>The fund runs out after exactly $10\\ln 2$ years (approximately $6.93$ years).<br><br>Final Answer: $$V(t) = 10\\cdot 2^{t/5}, \\quad V(t) = 20 - 10e^{0.1t}, \\quad t = 10\\ln 2 \\text{ years}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$V(t) = 10\\cdot 2^{t/5}, \\quad V(t) = 20 - 10e^{0.1t}, \\quad t = 5\\ln 2 \\text{ years}$$",
+                "feedback": "Check the final coefficient when solving for depletion time. The equation is $0.1t = \\ln 2$, which means $t = 10\\ln 2$ years, not $5\\ln 2$ years."
+            },
+            {
+                "ans": "$$V(t) = 10\\cdot 2^{t/5}, \\quad V(t) = 20 + 10e^{0.1t}, \\quad t = 10\\ln 2 \\text{ years}$$",
+                "feedback": "Check the sign of your constant of integration. Since the initial value is $V = 10$ and $V(t) = 20 + A'e^{0.1t}$, substituting $t = 0$ gives $10 = 20 + A' \\implies A' = -10$, not $+10$."
+            },
+            {
+                "ans": "$$V(t) = 10\\cdot 2^{t/5}, \\quad V(t) = 20 - 10e^{t}, \\quad t = \\ln 2 \\text{ years}$$",
+                "feedback": "Be careful when integrating $\\int \\dfrac{1}{0.1V - 2} \\,\\text{d}V$. Because of the linear coefficient of $0.1$, the integral is $10\\ln|0.1V - 2|$, which introduces the $0.1$ exponent factor in the exponential, not $1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Watch Linear coefficients",
+            "content": "When integrating reciprocal linear expressions of the form $\\int \\dfrac{1}{aV - b} \\,\\text{d}V$, always remember the factor of $\\dfrac{1}{a}$ that arises from reversing the chain rule. Omitting this multiplier leads to incorrect scale factors in the exponential exponent during subsequent rearrangements."
+        }
+    },
+    {
+        "id": "004210",
+        "board": "OCR",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differential Equations",
+        "subtopic": [
+            "Separation of Variables",
+            "Logistic Growth",
+            "Partial Fractions"
+        ],
+        "img": false,
+        "question": "An environmental scientist is monitoring a bird population, $B$, on an isolated island. When monitoring begins at $t = 0$, there are $100$ birds, and at $t = 1$ year, there are $150$ birds.<br><br>1. A simple geometric model assumes that the rate of increase of the bird population is directly proportional to the number of birds present.<br>&nbsp;&nbsp;&nbsp;&nbsp;(a) Write down a differential equation to model this situation.<br>&nbsp;&nbsp;&nbsp;&nbsp;(b) Solve this differential equation to find $B$ in terms of $t$.<br>2. A more realistic logistic model assumes that the island has a maximum carrying capacity of $500$ birds, and that the rate of growth is modeled by the differential equation:<br>$$\\dfrac{\\text{d}B}{\\text{d}t} = \\dfrac{B(500 - B)}{2000}$$<br>Solve this differential equation to find $B$ in terms of $t$, using the same initial population of $100$ birds at $t = 0$.<br>3. Compare the long-term behaviour predicted by the two models as $t \\to \\infty$.",
+        "steps": [
+            "Represent exponential growth as a differential equation:<br>$$\\dfrac{\\text{d}B}{\\text{d}t} = kB$$<br>where $k > 0$ is a constant of proportionality.",
+            "Solve by separating the variables and integrating both sides:<br>$$\\begin{aligned} \\int \\dfrac{1}{B} \\,\\text{d}B &= \\int k \\,\\text{d}t \\\\ \\ln B &= kt + C \\\\ B(t) &= Ae^{kt} \\end{aligned}$$<br>where $A = e^C$. Substitute $t = 0, \\, B = 100 \\implies A = 100$.<br>Substitute $t = 1, \\, B = 150$ into $B(t) = 100e^{kt}$:<br>$$\\begin{aligned} 150 &= 100e^{k} \\\\ e^k &= 1.5 \\\\ k &= \\ln 1.5 \\end{aligned}$$<br>So the first model is:<br>$$B(t) = 100e^{(\\ln 1.5)t} = 100\\cdot 1.5^t$$",
+            "For the logistic model, separate the variables:<br>$$\\dfrac{1}{B(500 - B)} \\,\\text{d}B = \\dfrac{1}{2000} \\,\\text{d}t$$<br>Decompose the left-hand fraction using partial fractions:<br>$$\\dfrac{1}{B(500 - B)} = \\dfrac{X}{B} + \\dfrac{Y}{500 - B} \\implies 1 = X(500 - B) + YB$$<br>By substituting $B = 0 \\implies X = \\dfrac{1}{500}$, and $B = 500 \\implies Y = \\dfrac{1}{500}$.<br>So the decomposed expression is:<br>$$\\dfrac{1}{B(500 - B)} = \\dfrac{1}{500}\\left( \\dfrac{1}{B} + \\dfrac{1}{500 - B} \\right)$$,",
+            "Integrate both sides using the partial fraction decomposition:<br>$$\\begin{aligned} \\dfrac{1}{500} \\int \\left( \\dfrac{1}{B} + \\dfrac{1}{500 - B} \\right) \\,\\text{d}B &= \\int \\dfrac{1}{2000} \\,\\text{d}t \\\\ \\dfrac{1}{500}\\left( \\ln|B| - \\ln|500 - B| \\right) &= \\dfrac{t}{2000} + C_1 \\\\ \\ln\\left( \\dfrac{B}{500 - B} \\right) &= \\dfrac{t}{4} + C' \\end{aligned}$$<br>where $C' = 500C_1$. Taking exponentials of both sides:<br>$$\\dfrac{B}{500 - B} = Ke^{t/4}$$",
+            "Substitute the initial condition $t = 0, \\, B = 100$ to find $K$:<br>$$\\begin{aligned} \\dfrac{100}{500 - 100} &= Ke^{0} \\\\ \\dfrac{100}{400} &= K \\\\ K &= \\dfrac{1}{4} \\end{aligned}$$<br>This gives:<br>$$\\dfrac{B}{500 - B} = \\dfrac{1}{4}e^{t/4}$$",
+            "Rearrange to isolate $B(t)$:<br>$$\\begin{aligned} B &= (500 - B)\\left(\\dfrac{1}{4}e^{t/4}\\right) \\\\ B &= 125e^{t/4} - \\dfrac{1}{4}Be^{t/4} \\\\ B\\left(1 + \\dfrac{1}{4}e^{t/4}\\right) &= 125e^{t/4} \\\\ B(t) &= \\dfrac{125e^{t/4}}{1 + \\dfrac{1}{4}e^{t/4}} \\\\ B(t) &= \\dfrac{500e^{t/4}}{4 + e^{t/4}} \\end{aligned}$$",
+            "Examine the long-term behaviour as $t \\to \\infty$:<br>For the simple geometric model, $B(t) = 100\\cdot 1.5^t \\to \\infty$, which predicts unbounded population expansion.<br>For the logistic model, divide numerator and denominator by $e^{t/4}$:<br>$$B(t) = \\dfrac{500}{4e^{-t/4} + 1}$$<br>As $t \\to \\infty, \\, e^{-t/4} \\to 0$. Therefore:<br>$$B(t) \\to \\dfrac{500}{0 + 1} = 500$$<br>The simple model assumes infinite growth, whereas the logistic model predicts the population is bounded and will level off at the carrying capacity of $500$ birds.<br><br>Final Answer: $$B(t) = 100\\cdot 1.5^t, \\quad B(t) = \\dfrac{500e^{t/4}}{4 + e^{t/4}}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$B(t) = 100\\cdot 1.5^t, \\quad B(t) = \\dfrac{500e^{t/4}}{4 - e^{t/4}}$$",
+                "feedback": "Be careful with signs during your algebraic isolation steps. Rearranging $B\\left(1 + \\dfrac{1}{4}e^{t/4}\\right) = 125e^{t/4}$ leads to addition in the denominator: $B(t) = \\dfrac{500e^{t/4}}{4 + e^{t/4}}$, not subtraction."
+            },
+            {
+                "ans": "$$B(t) = 100\\cdot 1.5^t, \\quad B(t) = \\dfrac{125e^{t/4}}{4 + e^{t/4}}$$",
+                "feedback": "Check your scaling factor when multiplying numerator and denominator by $4$. The numerator $125e^{t/4}$ multiplied by $4$ becomes $500e^{t/4}$, not $125e^{t/4}$."
+            },
+            {
+                "ans": "$$B(t) = 100\\cdot 1.5^t, \\quad B(t) = \\dfrac{500}{e^{-t/4} + 4}$$",
+                "feedback": "Check your division steps when evaluating limits. Dividing the numerator and denominator of $\\dfrac{500e^{t/4}}{4 + e^{t/4}}$ by $e^{t/4}$ yields $\\dfrac{500}{4e^{-t/4} + 1}$, not $\\dfrac{500}{e^{-t/4} + 4}$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Master Partial Fractions in ODEs",
+            "content": "For logistic growth differential equations, decomposing the expression using partial fractions is a staple GCE topic. Always remember to divide by the carrying capacity multiplier (such as $500$) outside of the logarithmic brackets. Forgetting this coefficient causes incorrect constant values when applying initial conditions."
+        }
     }
+
 
 
 ];
