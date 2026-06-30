@@ -1186,7 +1186,204 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Recurrence Linear Systems",
             "content": "Recurrence relation problems are highly structured. Subtracting adjacent terms (such as $u_3 - u_2$) directly eliminates the additive constant $q$, immediately yielding a single-variable equation in the common multiplier $p$. This is always the most efficient path to solve these systems."
         }
+    },
+    {
+        "id": "004231",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Trigonometric Proof",
+            "Reciprocal Trigonometry",
+            "Trigonometric Integration"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>1. Show that the expression:<br>$$\\dfrac{\\cos^2 x - \\sin^2 x}{\\sin^2 x \\cos^2 x}$$<br>can be written as $\\csc^2 x - \\sec^2 x$.<br>2. Hence find:<br>$$\\int \\dfrac{\\cos^2 x - \\sin^2 x}{\\sin^2 x \\cos^2 x} \\,\\text{d}x$$",
+        "steps": [
+            "To prove the identity, split the algebraic fraction into two separate terms over the common denominator:<br>\\begin{aligned} \\dfrac{\\cos^2 x - \\sin^2 x}{\\sin^2 x \\cos^2 x} &= \\dfrac{\\cos^2 x}{\\sin^2 x \\cos^2 x} - \\dfrac{\\sin^2 x}{\\sin^2 x \\cos^2 x} \\\\ &= \\dfrac{1}{\\sin^2 x} - \\dfrac{1}{\\cos^2 x} \\end{aligned}",
+            "Apply the reciprocal identities $\\csc x = \\dfrac{1}{\\sin x}$ and $\\sec x = \\dfrac{1}{\\cos x}$ to complete the proof:<br>$$\\dfrac{1}{\\sin^2 x} - \\dfrac{1}{\\cos^2 x} = \\csc^2 x - \\sec^2 x$$",
+            "Use the simplified identity to rewrite the integral in terms of standard integrable functions:<br>$$\\int \\dfrac{\\cos^2 x - \\sin^2 x}{\\sin^2 x \\cos^2 x} \\,\\text{d}x = \\int \\left( \\csc^2 x - \\sec^2 x \\right) \\,\\text{d}x$$",
+            "Integrate each term individually using standard trigonometric integrals, remembering to add the constant of integration $C$:<br>\\begin{aligned} \\int \\csc^2 x \\,\\text{d}x &= -\\cot x \\\\ \\int \\sec^2 x \\,\\text{d}x &= \\tan x \\\\ \\int \\left( \\csc^2 x - \\sec^2 x \\right) \\,\\text{d}x &= -\\cot x - \\tan x + C \\end{aligned}<br><br>Final Answer: $$-\\cot x - \\tan x + C$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\cot x - \\tan x + C$$",
+                "feedback": "Check your standard integrals carefully. The integral of $\\csc^2 x \\,\\text{d}x$ is $-\\cot x + C$, not positive $\\cot x + C$."
+            },
+            {
+                "ans": "$$-\\cot x + \\tan x + C$$",
+                "feedback": "Be careful with your signs during integration. The integral of $-\\sec^2 x \\,\\text{d}x$ is $-\\tan x + C$. It seems you may have mistakenly integrated it as a positive tangent."
+            },
+            {
+                "ans": "$$-\\cot x - \\tan x$$",
+                "feedback": "This is algebraically correct, but do not forget to include the arbitrary constant of integration, $+ C$, for an indefinite integral."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Splitting Complex Fractions",
+            "content": "When simplifying trigonometric quotients with a single term in the denominator, split the fraction into individual terms immediately. This frequently reduces the expression to basic reciprocal functions like $\\sec^2 x$ or $\\csc^2 x$, which have standard, easily integrable forms."
+        }
+    },
+    {
+        "id": "004232",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Trigonometric Proof",
+            "Pythagorean Identities",
+            "Trigonometric Integration"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>1. Show that:<br>$$\\dfrac{1 - \\sin^2 x}{\\cos^2 x \\sin^2 x}$$<br>can be written as $\\csc^2 x$.<br>2. Hence find:<br>$$\\int \\dfrac{1 - \\sin^2 x}{\\cos^2 x \\sin^2 x} \\,\\text{d}x$$",
+        "steps": [
+            "Substitute the Pythagorean identity $1 - \\sin^2 x = \\cos^2 x$ into the numerator of the expression:<br>$$\\dfrac{1 - \\sin^2 x}{\\cos^2 x \\sin^2 x} = \\dfrac{\\cos^2 x}{\\cos^2 x \\sin^2 x}$$",
+            "Cancel the common term $\\cos^2 x$ from both the numerator and the denominator, and apply the reciprocal identity $\\csc x = \\dfrac{1}{\\sin x}$:<br>$$\\dfrac{1}{\\sin^2 x} = \\csc^2 x$$",
+            "Rewrite the integral using the proven identity:<br>$$\\int \\dfrac{1 - \\sin^2 x}{\\cos^2 x \\sin^2 x} \\,\\text{d}x = \\int \\csc^2 x \\,\\text{d}x$$",
+            "Perform the integration using the standard trigonometric derivative rule, where the derivative of $\\cot x$ is $-\\csc^2 x$:<br>$$\\int \\csc^2 x \\,\\text{d}x = -\\cot x + C$$<br><br>Final Answer: $$-\\cot x + C$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\cot x + C$$",
+                "feedback": "Remember that the derivative of $\\cot x$ is $-\\csc^2 x$. Therefore, the indefinite integral of $\\csc^2 x \\,\\text{d}x$ must be $-\\cot x + C$, not positive $\\cot x + C$."
+            },
+            {
+                "ans": "$$-\\tan x + C$$",
+                "feedback": "Double check your reciprocal identities. Since $\\csc x = \\dfrac{1}{\\sin x}$, the integral simplifies to $\\int \\csc^2 x \\,\\text{d}x$, which integrates to $-\\cot x + C$. It seems you may have integrated as if it simplified to $\\sec^2 x$."
+            },
+            {
+                "ans": "$$-\\cot x$$",
+                "feedback": "Your integration is correct, but always remember to add the arbitrary constant of integration, $+ C$, to complete any indefinite integration problem."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Spotting Pythagorean Identities",
+            "content": "Always look out for the standard identity $1 - \\sin^2 x = \\cos^2 x$ in algebraic fractions. Substituting this identity simplifies the quotient instantly, leaving a single reciprocal function that can be integrated using basic standard formulas."
+        }
+    },
+    {
+        "id": "004233",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Trigonometric Proof",
+            "Double Angle Formula",
+            "Trigonometric Integration"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>1. Show that:<br>$$\\dfrac{\\cos 2x}{\\sin^2 2x}$$<br>can be written as $\\csc 2x \\cot 2x$.<br>2. Hence find:<br>$$\\int \\dfrac{\\cos 2x}{\\sin^2 2x} \\,\\text{d}x$$",
+        "steps": [
+            "Separate the fraction into a product of two distinct trigonometric ratios:<br>\\begin{aligned} \\dfrac{\\cos 2x}{\\sin^2 2x} &= \\dfrac{\\cos 2x}{\\sin 2x \\cdot \\sin 2x} \\\\ &= \\dfrac{\\cos 2x}{\\sin 2x} \\cdot \\dfrac{1}{\\sin 2x} \\end{aligned}",
+            "Use the standard definitions $\\cot 2x = \\dfrac{\\cos 2x}{\\sin 2x}$ and $\\csc 2x = \\dfrac{1}{\\sin 2x}$ to complete the proof:<br>$$\\dfrac{\\cos 2x}{\\sin 2x} \\cdot \\dfrac{1}{\\sin 2x} = \\cot 2x \\csc 2x = \\csc 2x \\cot 2x$$",
+            "Rewrite the integral using the simplified identity:<br>$$\\int \\dfrac{\\cos 2x}{\\sin^2 2x} \\,\\text{d}x = \\int \\csc 2x \\cot 2x \\,\\text{d}x$$",
+            "Apply the standard integral $\\int \\csc u \\cot u \\,\\text{d}u = -\\csc u + C$. Since $u = 2x$, use the reverse chain rule and divide the result by the linear coefficient $2$:<br>$$\\int \\csc 2x \\cot 2x \\,\\text{d}x = -\\dfrac{1}{2}\\csc 2x + C$$<br><br>Final Answer: $$-\\dfrac{1}{2}\\csc 2x + C$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$-2\\csc 2x + C$$",
+                "feedback": "When applying the reverse chain rule to composite functions of the form $f(kx)$, you must divide by the derivative of the inner function (which is $k = 2$), yielding $-\\dfrac{1}{2}\\csc 2x + C$. It seems you multiplied by $2$ instead of dividing."
+            },
+            {
+                "ans": "$$-\\dfrac{1}{2}\\cot 2x + C$$",
+                "feedback": "Check your standard trigonometric integration formulas. The integral of $\\csc u \\cot u \\,\\text{d}u$ evaluates to $-\\csc u + C$, not $-\\cot u + C$."
+            },
+            {
+                "ans": "$$\\dfrac{1}{2}\\csc 2x + C$$",
+                "feedback": "Be careful with your signs during integration. Since the derivative of $\\csc u$ is $-\\csc u \\cot u$, the integral of $\\csc u \\cot u \\,\\text{d}u$ must be negative: $-\\dfrac{1}{2}\\csc 2x + C$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Reversing the Chain Rule",
+            "content": "Integrating composite trigonometric functions of the form $\\csc kx \\cot kx$ requires applying the reverse chain rule. Do not forget to divide the final standard integral $-\\csc kx$ by the linear coefficient $k$ (which is $2$ in this question) to yield $-\\dfrac{1}{2}\\csc 2x + C$."
+        }
+    },
+    {
+        "id": "004234",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Trigonometric Proof",
+            "Double Angle Formula",
+            "Trigonometric Integration"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>1. Use the double-angle identity for $\\cos 2A$ to show that:<br>$$\\cos^2 3x = \\dfrac{1}{2}\\left(1 + \\cos 6x\\right)$$<br>2. Hence find:<br>$$\\int \\cos^2 3x \\,\\text{d}x$$",
+        "steps": [
+            "Write down the standard double-angle cosine identity that expresses $\\cos^2 A$ as a linear term:<br>$$\\cos 2A = 2\\cos^2 A - 1 \\implies \\cos^2 A = \\dfrac{1}{2}\\left(1 + \\cos 2A\\right)$$",
+            "Substitute $A = 3x$ into the identity to complete the proof, doubling the angle from $3x$ to $6x$:<br>$$\\cos^2 3x = \\dfrac{1}{2}\\left(1 + \\cos 6x\\right)$$$",
+            "Rewrite the integral using the power-reduction identity:<br>$$\\int \\cos^2 3x \\,\\text{d}x = \\int \\dfrac{1}{2}\\left(1 + \\cos 6x\\right) \\,\\text{d}x$$",
+            "Integrate term-by-step. Remember to apply the reverse chain rule to the $\\cos 6x$ term, dividing it by the linear coefficient $6$:<br>\\begin{aligned} \\int \\cos^2 3x \\,\\text{d}x &= \\dfrac{1}{2} \\int \\left( 1 + \\cos 6x \\right) \\,\\text{d}x \\\\ &= \\dfrac{1}{2}\\left( x + \\dfrac{1}{6}\\sin 6x \\right) + C \\\\ &= \\dfrac{1}{2}x + \\dfrac{1}{12}\\sin 6x + C \\end{aligned}<br><br>Final Answer: $$\\dfrac{1}{2}x + \\dfrac{1}{12}\\sin 6x + C$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{1}{2}x + 3\\sin 6x + C$$",
+                "feedback": "When integrating composite trigonometric terms of the form $\\cos(kx)$, you must divide by the derivative of the inner function ($k = 6$), which yields $\\dfrac{1}{12}\\sin 6x + C$. It seems you multiplied by $6$ instead of dividing."
+            },
+            {
+                "ans": "$$\\dfrac{1}{2}x - \\dfrac{1}{12}\\sin 6x + C$$",
+                "feedback": "Check your integration signs. The derivative of $\\sin(kx)$ is positive $k\\cos(kx)$, which means the integral of $\\cos(kx)$ is positive $\\dfrac{1}{k}\\sin(kx)$. The sign of the $\\sin 6x$ term must remain positive."
+            },
+            {
+                "ans": "$$x + \\dfrac{1}{6}\\sin 6x + C$$",
+                "feedback": "Don't forget to distribute the common factor of $\\dfrac{1}{2}$ from outside the integration brackets to both terms inside during your final expansion."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Power-Reduction Substitutions",
+            "content": "You cannot integrate terms like $\\cos^2 kx$ directly. You must first apply the double-angle power-reduction identity $\\cos^2 A = \\dfrac{1}{2}(1 + \\cos 2A)$. Remember that doubling the angle $3x$ yields $6x$, and do not forget to divide by $6$ when integrating the $\\cos 6x$ term."
+        }
+    },
+    {
+        "id": "004235",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Trigonometric Proof",
+            "Pythagorean Identities",
+            "Trigonometric Integration"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>1. Show that the expression:<br>$$\\dfrac{\\sec^2 x - 1}{\\sin^2 x}$$<br>can be written as $\\sec^2 x$.<br>2. Hence find:<br>$$\\int \\dfrac{\\sec^2 x - 1}{\\sin^2 x} \\,\\text{d}x$$",
+        "steps": [
+            "Substitute the standard Pythagorean identity $\\sec^2 x - 1 = \\tan^2 x$ into the numerator of the expression:<br>$$\\dfrac{\\sec^2 x - 1}{\\sin^2 x} = \\dfrac{\\tan^2 x}{\\sin^2 x}$$",
+            "Use the definition $\\tan x = \\dfrac{\\sin x}{\\cos x}$ to rewrite $\\tan^2 x$, and expand the compound fraction:<br>\\begin{aligned} \\dfrac{\\tan^2 x}{\\sin^2 x} &= \\dfrac{\\sin^2 x / \\cos^2 x}{\\sin^2 x} \\\\ &= \\dfrac{\\sin^2 x}{\\cos^2 x \\cdot \\sin^2 x} \\end{aligned}",
+            "Cancel the common term $\\sin^2 x$ from both the numerator and the denominator, and apply the definition of secant to complete the proof:<br>$$\\dfrac{1}{\\cos^2 x} = \\sec^2 x$$",
+            "Rewrite the integral using the simplified identity:<br>$$\\int \\dfrac{\\sec^2 x - 1}{\\sin^2 x} \\,\\text{d}x = \\int \\sec^2 x \\,\\text{d}x$$",
+            "Integrate using the standard trigonometric derivative rule, where the derivative of $\\tan x$ is exactly $\\sec^2 x$:<br>$$\\int \\sec^2 x \\,\\text{d}x = \\tan x + C$$<br><br>Final Answer: $$\\tan x + C$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$-\\tan x + C$$",
+                "feedback": "Recall that the derivative of $\\tan x$ is positive $\\sec^2 x$. Therefore, integrating $\\sec^2 x \\,\\text{d}x$ must yield a positive $\\tan x + C$, not a negative tangent."
+            },
+            {
+                "ans": "$$\\sec x + C$$",
+                "feedback": "Check your standard integration formulas. The derivative of $\\sec x$ is $\\sec x \\tan x$, but the integral of $\\sec^2 x \\,\\text{d}x$ is $\\tan x + C$."
+            },
+            {
+                "ans": "$$\\tan x$$",
+                "feedback": "While your integration steps are algebraically correct, always remember to add the constant of integration, $+ C$, to complete any indefinite integral."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Simplifying Compound Ratios",
+            "content": "When confronted with mixed trigonometric ratios such as secant, tangent, and sine, convert all terms into their fundamental sine and cosine forms. This often leads to dramatic algebraic cancellations, leaving a simple, standard integrable term."
+        }
     }
+
 
 
 
