@@ -1608,14 +1608,14 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$$C(2,1), \\quad B(5,-3), \\quad \\text{Area} = 25\\arccos\\left(\\dfrac{4}{5}\\right)$$",
-                "feedback": "Check your sector area formula. The formula is $\\dfrac{1}{2}r^2 \\theta$. Since $r = 5$, $r^2 = 25$, which yields $\\dfrac{25}{2}\\arccos\\left(\\dfrac{4}{5}\\right)$, not $25\\arccos\\left(\\dfrac{4}{5}\right)$."
+                "feedback": "Check your sector area formula. The formula is $\\dfrac{1}{2}r^2 \\theta$. Since $r = 5$, $r^2 = 25$, which yields $\\dfrac{25}{2}\\arccos\\left(\\dfrac{4}{5}\\right)$, not $25\\arccos\\left(\\dfrac{4}{5}\\right)$."
             },
             {
                 "ans": "$$C(2,1), \\quad B(5,3), \\quad \\text{Area} = \\dfrac{25}{2}\\arccos\\left(\\dfrac{4}{5}\\right)$$",
                 "feedback": "Check your $y$-coordinate of the point of contact $B$. Substituting $x = 5$ into $y = \\dfrac{3x - 27}{4}$ yields $y = \\dfrac{15 - 27}{4} = -3$, not $+3$."
             },
             {
-                "ans": "$$C(-2,-1), \\quad B(5,-3), \\quad \\text{Area} = \\dfrac{25}{2}\\arccos\\left(\\dfrac{4}{5}\right)$$",
+                "ans": "$$C(-2,-1), \\quad B(5,-3), \\quad \\text{Area} = \\dfrac{25}{2}\\arccos\\left(\\dfrac{4}{5}\\right)$$",
                 "feedback": "Be careful with signs when writing down the centre from the circle equation $(x - 2)^2 + (y - 1)^2 = 25$. This corresponds to a centre of $(2, 1)$, not $(-2, -1)$."
             }
         ],
