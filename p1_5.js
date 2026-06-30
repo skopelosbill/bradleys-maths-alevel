@@ -1382,7 +1382,206 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Simplifying Compound Ratios",
             "content": "When confronted with mixed trigonometric ratios such as secant, tangent, and sine, convert all terms into their fundamental sine and cosine forms. This often leads to dramatic algebraic cancellations, leaving a simple, standard integrable term."
         }
+    },
+    {
+        "id": "004236",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Integration by Parts",
+            "Area Under a Curve",
+            "Logarithmic Integration"
+        ],
+        "img": "images/p1/004236.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The curve $C$ has equation:<br>$$y = (c - x)\\ln x, \\quad \\text{where } c \\text{ is a constant } (c > 1)$$<br>The curve intersects the $x$-axis at the points $(1,0)$ and $(c,0)$.<br><br>Find, in terms of $c$, the exact area of the finite region bounded by the curve $C$ and the $x$-axis.",
+        "steps": [
+            "The curve intersects the $x$-axis at the boundaries $x = 1$ and $x = c$. To find the exact area, set up the definite integral of the function over this interval:<br>$$A = \\int_{1}^{c} (c - x)\\ln x \\,\\text{d}x$$<br>We can split this into two separate integrals to simplify the integration by parts:<br>$$A = c \\int_{1}^{c} \\ln x \\,\\text{d}x - \\int_{1}^{c} x\\ln x \\,\\text{d}x = c I_1 - I_2$$",
+            "Evaluate the first integral $I_1 = \\int_{1}^{c} \\ln x \\,\\text{d}x$ using integration by parts, where $u = \\ln x$ and $v' = 1$:<br>\\begin{aligned} u = \\ln x &\\implies u' = \\dfrac{1}{x} \\\\ v' = 1 &\\implies v = x \\\\ \\int \\ln x \\,\\text{d}x &= x\\ln x - \\int 1 \\,\\text{d}x = x\\ln x - x + C \\end{aligned}",
+            "Evaluate the definite limits for $I_1$ from $1$ to $c$:<br>\\begin{aligned} I_1 = \\Big[ x\\ln x - x \\Big]_{1}^{c} &= (c\\ln c - c) - (1\\ln 1 - 1) \\\\ &= c\\ln c - c + 1 \\end{aligned}",
+            "Evaluate the second integral $I_2 = \\int_{1}^{c} x\\ln x \\,\\text{d}x$ using integration by parts, where $u = \\ln x$ and $v' = x$:<br>\\begin{aligned} u = \\ln x &\\implies u' = \\dfrac{1}{x} \\\\ v' = x &\\implies v = \\dfrac{x^2}{2} \\\\ \\int x\\ln x \\,\\text{d}x &= \\dfrac{x^2}{2}\\ln x - \\int \\dfrac{x}{2} \\,\\text{d}x = \\dfrac{x^2}{2}\\ln x - \\dfrac{x^2}{4} + C \\end{aligned}",
+            "Evaluate the definite limits for $I_2$ from $1$ to $c$:<br>\\begin{aligned} I_2 = \\left[ \\dfrac{x^2}{2}\\ln x - \\dfrac{x^2}{4} \\right]_{1}^{c} &= \\left( \\dfrac{c^2}{2}\\ln c - \\dfrac{c^2}{4} \\right) - \\left( \\dfrac{1}{2}\\ln 1 - \\dfrac{1}{4} \\right) \\\\ &= \\dfrac{c^2}{2}\\ln c - \\dfrac{c^2}{4} + \\dfrac{1}{4} \\end{aligned}",
+            "Assemble and simplify the terms to find the total area $A = c I_1 - I_2$:<br>\\begin{aligned} A &= c(c\\ln c - c + 1) - \\left( \\dfrac{c^2}{2}\\ln c - \\dfrac{c^2}{4} + \\dfrac{1}{4} \\right) \\\\ &= c^2\\ln c - c^2 + c - \\dfrac{c^2}{2}\\ln c + \\dfrac{c^2}{4} - \\dfrac{1}{4} \\\\ &= \\dfrac{c^2}{2}\\ln c - \\dfrac{3c^2}{4} + c - \\dfrac{1}{4} \\end{aligned}<br><br>Final Answer: $$\\dfrac{c^2}{2}\\ln c - \\dfrac{3c^2}{4} + c - \\dfrac{1}{4}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{c^2}{2}\\ln c - \\dfrac{c^2}{4} + c - \\dfrac{1}{4}$$",
+                "feedback": "Check your collection of the $-c^2$ terms. Combining $-c^2 + \\dfrac{c^2}{4}$ yields $-\\dfrac{3c^2}{4}$, not $-\\dfrac{c^2}{4}$."
+            },
+            {
+                "ans": "$$\\dfrac{c^2}{2}\\ln c - \\dfrac{3c^2}{4} + c + \\dfrac{1}{4}$$",
+                "feedback": "Be very careful with your signs when subtracting $I_2$. The lower limit of $I_2$ evaluates to $-\\dfrac{1}{4}$. Since we are subtracting $I_2$, we have $-\\left(-\\dfrac{1}{4}\\right) = +\\dfrac{1}{4}$ inside the brackets, which becomes $-\\dfrac{1}{4}$ when the negative sign is distributed."
+            },
+            {
+                "ans": "$$c^2\\ln c - \\dfrac{3c^2}{4} + c - \\dfrac{1}{4}$$",
+                "feedback": "Don't forget to combine the $\\ln c$ terms. We have $c^2\\ln c - \\dfrac{c^2}{2}\\ln c$, which simplifies to $\\dfrac{c^2}{2}\\ln c$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Tracking Constants in Integration",
+            "content": "When integrating products involving algebraic terms and logarithms, such as $\\int (c - x)\\ln x \\,\\text{d}x$, perform the integration by parts on the general components first. Carefully track the constant $c$ during subtraction of the upper and lower limits to avoid sign errors."
+        }
+    },
+    {
+        "id": "004237",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Integration by Parts",
+            "Area Under a Curve",
+            "Logarithmic Integration"
+        ],
+        "img": "images/p1/004237.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = 3x^2 \\ln x$. The finite region $R$ is bounded by the curve, the $x$-axis, and the vertical lines $x = 1$ and $x = e$.<br><br>Find the exact area of the region $R$.",
+        "steps": [
+            "Set up the definite integral for the area bounded by the curve, $x = 1$, and $x = e$:<br>$$A = \\int_{1}^{e} 3x^2 \\ln x \\,\\text{d}x = 3 \\int_{1}^{e} x^2 \\ln x \\,\\text{d}x$$",
+            "Evaluate the indefinite integral $\\int x^2 \\ln x \\,\\text{d}x$ using integration by parts, where $u = \\ln x$ and $v' = x^2$:<br>\\begin{aligned} u = \\ln x &\\implies u' = \\dfrac{1}{x} \\\\ v' = x^2 &\\implies v = \\dfrac{x^3}{3} \\\\ \\int x^2 \\ln x \\,\\text{d}x &= \\dfrac{x^3}{3}\\ln x - \\int \\dfrac{x^2}{3} \\,\\text{d}x \\\\ &= \\dfrac{x^3}{3}\\ln x - \\dfrac{x^3}{9} + C \\end{aligned}",
+            "Multiply the indefinite integral by the coefficient $3$ before substituting the limits:<br>$$3 \\int x^2 \\ln x \\,\\text{d}x = 3\\left( \\dfrac{x^3}{3}\\ln x - \\dfrac{x^3}{9} \\right) = x^3\\ln x - \\dfrac{x^3}{3}$$",
+            "Evaluate the definite integral using the upper limit $x = e$ and the lower limit $x = 1$:<br>\\begin{aligned} A = \\left[ x^3\\ln x - \\dfrac{x^3}{3} \\right]_{1}^{e} &= \\left( e^3\\ln e - \\dfrac{e^3}{3} \\right) - \\left( 1^3\\ln 1 - \\dfrac{1}{3} \\right) \\\\ &= \\left( e^3 - \\dfrac{e^3}{3} \\right) - \\left( 0 - \\dfrac{1}{3} \\right) \\\\ &= \\dfrac{2e^3}{3} + \\dfrac{1}{3} \\\\ &= \\dfrac{2e^3 + 1}{3} \\end{aligned}<br><br>Final Answer: $$\\dfrac{2e^3 + 1}{3}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{2e^3 - 1}{3}$$",
+                "feedback": "Check your evaluation of the lower limit. The lower limit is $x = 1$, which gives $-\\dfrac{1}{3}$. Since we subtract the lower limit, this becomes $-\\left(-\\dfrac{1}{3}\\right) = +\\dfrac{1}{3}$. This results in addition, not subtraction."
+            },
+            {
+                "ans": "$$\\dfrac{2e^3 + 1}{9}$$",
+                "feedback": "You may have forgotten to multiply by the coefficient $3$ from the original equation. The integral of $x^2 \\ln x$ is indeed $\\dfrac{2e^3 + 1}{9}$, but multiplying by $3$ yields $\\dfrac{2e^3 + 1}{3}$."
+            },
+            {
+                "ans": "$$e^3\\ln e - \\dfrac{e^3}{3}$$",
+                "feedback": "This is only the evaluation at the upper limit $x = e$. You must also subtract the evaluation at the lower limit $x = 1$ to find the complete area of the region."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Limits of Integration with e",
+            "content": "When evaluating definite integrals with limits containing $e$, use the standard properties $\\ln e = 1$ and $\\ln 1 = 0$ to simplify your calculations early. This prevents cluttered algebraic terms and makes it easier to combine fractions."
+        }
+    },
+    {
+        "id": "004238",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Integration by Parts",
+            "Area Under a Curve",
+            "Exponential Integration"
+        ],
+        "img": "images/p1/004238.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The curve has equation:<br>$$y = (x - 2)e^{-x}$$<br>1. Show that the curve intersects the $x$-axis at the point $(2,0)$.<br>2. The finite region $R$ is bounded by the curve, the $x$-axis, and the vertical line $x = 4$. Find the exact area of the region $R$.",
+        "steps": [
+            "Find the $x$-intercept by setting $y = 0$:<br>$$(x - 2)e^{-x} = 0$$<br>Since $e^{-x} \\ne 0$ for all real $x$, we must have:<br>$$x - 2 = 0 \\implies x = 2$$<br>This confirms the curve intersects the $x$-axis at the point $(2,0)$.",
+            "The finite region $R$ lies between $x = 2$ and $x = 4$. Set up the definite integral for the area:<br>$$A = \\int_{2}^{4} (x - 2)e^{-x} \\,\\text{d}x$$",
+            "Evaluate the indefinite integral $\\int (x - 2)e^{-x} \\,\\text{d}x$ using integration by parts, where $u = x - 2$ and $v' = e^{-x}$:<br>\\begin{aligned} u = x - 2 &\\implies u' = 1 \\\\ v' = e^{-x} &\\implies v = -e^{-x} \\\\ \\int (x - 2)e^{-x} \\,\\text{d}x &= (x - 2)\\left(-e^{-x}\\right) - \\int \\left(-e^{-x}\\right) \\,\\text{d}x \\\\ &= -(x - 2)e^{-x} - e^{-x} + C \\\\ &= -(x - 1)e^{-x} + C \\end{aligned}",
+            "Evaluate the definite integral using the upper limit $x = 4$ and the lower limit $x = 2$:<br>\\begin{aligned} A = \\Big[ -(x - 1)e^{-x} \\Big]_{2}^{4} &= \\left( -(4 - 1)e^{-4} \\right) - \\left( -(2 - 1)e^{-2} \\right) \\\\ &= -3e^{-4} - \\left( -e^{-2} \\right) \\\\ &= e^{-2} - 3e^{-4} \\end{aligned}<br><br>Final Answer: $$e^{-2} - 3e^{-4}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$-3e^{-4} - e^{-2}$$",
+                "feedback": "Check your signs at the lower limit. The lower limit is $x = 2$, which evaluates to $-1e^{-2} = -e^{-2}$. Since we subtract the lower limit, this becomes $-\\left(-e^{-2}\\right) = +e^{-2}$."
+            },
+            {
+                "ans": "$$e^{-2} + 3e^{-4}$$",
+                "feedback": "Check the evaluation of the upper limit $x = 4$. Substituting $x = 4$ into $-(x-1)e^{-x}$ yields $-3e^{-4}$. The term must remain negative."
+            },
+            {
+                "ans": "$$(x - 1)e^{-x}$$",
+                "feedback": "This is only the indefinite integral expression. You must evaluate this expression at the limits $x = 4$ and $x = 2$ to find the exact numerical area."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Tracking Negative Exponents",
+            "content": "When integrating expressions of the form $(x - a)e^{-x}$ by parts, the derivative of $e^{-x}$ introduces a negative sign. Consistently group and factorise the $e^{-x}$ terms at each stage of the integration to prevent simple algebraic slips."
+        }
+    },
+    {
+        "id": "004239",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Integration by Parts",
+            "Area Under a Curve",
+            "Trigonometric Integration"
+        ],
+        "img": "images/p1/004239.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = x \\cos x$. The finite region $R$ is bounded by the curve, the $x$-axis, and the vertical lines $x = 0$ and $x = \\dfrac{1}{2}\\pi$.<br><br>Find the exact area of the region $R$.",
+        "steps": [
+            "Set up the definite integral for the area under the curve from $x = 0$ to $x = \\dfrac{1}{2}\\pi$:<br>$$A = \\int_{0}^{\\frac{1}{2}\\pi} x \\cos x \\,\\text{d}x$$",
+            "Evaluate the indefinite integral $\\int x \\cos x \\,\\text{d}x$ using integration by parts, where $u = x$ and $v' = \\cos x$:<br>\\begin{aligned} u = x &\\implies u' = 1 \\\\ v' = \\cos x &\\implies v = \\sin x \\\\ \\int x \\cos x \\,\\text{d}x &= x\\sin x - \\int \\sin x \\,\\text{d}x \\\\ &= x\\sin x + \\cos x + C \\end{aligned}",
+            "Evaluate the definite integral using the upper limit $x = \\dfrac{1}{2}\\pi$ and the lower limit $x = 0$:<br>\\begin{aligned} A = \\Big[ x\\sin x + \\cos x \\Big]_{0}^{\\frac{1}{2}\\pi} &= \\left( \\dfrac{1}{2}\\pi\\sin\\left(\\dfrac{1}{2}\\pi\\right) + \\cos\\left(\\dfrac{1}{2}\\pi\\right) \\right) - \\left( 0\\sin 0 + \\cos 0 \\right) \\\\ &= \\left( \\dfrac{1}{2}\\pi(1) + 0 \\right) - \\left( 0 + 1 \\right) \\\\ &= \\dfrac{1}{2}\\pi - 1 \\end{aligned}<br><br>Final Answer: $$\\dfrac{1}{2}\\pi - 1$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{1}{2}\\pi + 1$$",
+                "feedback": "Check your evaluation of the lower limit. The lower limit is $x = 0$, which evaluates to $\\cos 0 = 1$. Since we subtract the lower limit, this must be subtracted from the upper limit, yielding $\\dfrac{1}{2}\\pi - 1$, not $\\dfrac{1}{2}\\pi + 1$."
+            },
+            {
+                "ans": "$$\\dfrac{1}{2}\\pi$$",
+                "feedback": "You may have forgotten to evaluate the lower limit or assumed that substituting $x = 0$ into $x\\sin x + \\cos x$ yields $0$. While $0\\sin 0 = 0$, the term $\\cos 0$ is equal to $1$, which must be subtracted."
+            },
+            {
+                "ans": "$$x\\sin x - \\cos x + C$$",
+                "feedback": "Check your integration steps. The derivative of $\\sin x$ is $\\cos x$, so integrating $-\\sin x$ gives positive $\\cos x$, not negative $\\cos x$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Trigonometric Integration by Parts",
+            "content": "When integrating $x \\cos x$ by parts, ensure you select $u = x$ to reduce the degree of the polynomial term, and $v' = \\cos x$ to integrate. This reduces the problem to a basic standard integral, $\\int \\sin x \\,\\text{d}x = -\\cos x$, which is straightforward to evaluate."
+        }
+    },
+    {
+        "id": "004240",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Equations of Tangents",
+            "Integration by Parts",
+            "Area Under a Curve"
+        ],
+        "img": "images/p1/004240.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = \\ln x$ for $x > 0$.<br><br>1. Find the equation of the tangent to the curve at the point $P(e, 1)$.<br>2. Show that this tangent passes through the origin $(0,0)$.<br>3. Find the exact area of the region bounded by the curve $y = \\ln x$, the tangent at $P$, and the $x$-axis.",
+        "steps": [
+            "Find the derivative of $y = \\ln x$ to determine the gradient at $P$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{x}$$<br>At $x = e$, the gradient of the tangent is $m = \\dfrac{1}{e}$. Use the point-gradient formula with $P(e, 1)$:<br>$$\\begin{aligned} y - 1 &= \\dfrac{1}{e}(x - e) \\\\ y &= \\dfrac{1}{e}x - 1 + 1 \\\\ y &= \\dfrac{x}{e} \\end{aligned}$$",
+            "Show that the tangent passes through the origin by substituting $x = 0$ into its equation:<br>$$y = \\dfrac{0}{e} = 0$$<br>This confirms that the tangent passes through the origin $(0,0)$.",
+            "Set up the area of the region. The tangent line is $y = \\dfrac{x}{e}$ and the curve is $y = \\ln x$. The $x$-axis is $y = 0$.<br>The region is bounded above by the tangent from $x = 0$ to $x = e$. Underneath, the lower boundary switches at $x = 1$:<br>• From $x = 0$ to $x = 1$, the lower boundary is the $x$-axis ($y = 0$).<br>• From $x = 1$ to $x = e$, the lower boundary is the curve ($y = \\ln x$).<br>Therefore, the area of the region is most easily calculated as the area under the tangent line minus the area under the curve:<br>$$A = \\int_{0}^{e} \\dfrac{x}{e} \\,\\text{d}x - \\int_{1}^{e} \\ln x \\,\\text{d}x$$",
+            "Evaluate the first part, which is a right-angled triangle of base $e$ and height $1$:<br>$$\\int_{0}^{e} \\dfrac{x}{e} \\,\\text{d}x = \\left[ \\dfrac{x^2}{2e} \\right]_{0}^{e} = \\dfrac{e^2}{2e} - 0 = \\dfrac{e}{2}$$",
+            "Evaluate the second part, $\\int_{1}^{e} \\ln x \\,\\text{d}x$, using integration by parts:<br>\\begin{aligned} \\int_{1}^{e} \\ln x \\,\\text{d}x &= \\Big[ x\\ln x - x \\Big]_{1}^{e} \\\\ &= (e\\ln e - e) - (1\\ln 1 - 1) \\\\ &= (e - e) - (0 - 1) \\\\ &= 1 \\end{aligned}",
+            "Subtract the area under the curve from the area under the tangent to find the exact area of the region:<br>$$A = \\dfrac{e}{2} - 1$$<br><br>Final Answer: $$y = \\dfrac{x}{e}, \\quad \\text{Area} = \\dfrac{e}{2} - 1$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$y = \\dfrac{x}{e}, \\quad \\text{Area} = 1 - \\dfrac{e}{2} + \\dfrac{1}{e}$$",
+                "feedback": "Be very careful with your boundary subtraction order. On the interval $[1, e]$, the tangent line $y = \\dfrac{x}{e}$ lies strictly above the curve $y = \\ln x$. Subtracting the lower curve from the upper curve is essential to get a positive, geometrically valid area."
+            },
+            {
+                "ans": "$$y = \\dfrac{x}{e}, \\quad \\text{Area} = \\dfrac{e}{2}$$",
+                "feedback": "You calculated the area under the tangent line, but you forgot to subtract the area under the curve $y = \\ln x$ from $x = 1$ to $x = e$."
+            },
+            {
+                "ans": "$$y = \\dfrac{x}{e}, \\quad \\text{Area} = \\dfrac{e}{2} + 1$$",
+                "feedback": "Check your signs. The area under the curve is subtracted from the area under the tangent. This must result in $\\dfrac{e}{2} - 1$, not $\\dfrac{e}{2} + 1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Boundary Order in Area Integrals",
+            "content": "When finding the area bounded by multiple curves, always determine which curve is higher over each interval. On the interval $[1, e]$, the tangent line $y = \\dfrac{x}{e}$ lies strictly above the curve $y = \\ln x$. Subtracting the lower curve from the upper curve is essential to obtain a positive, geometrically valid area."
+        }
     }
+
 
 
 
