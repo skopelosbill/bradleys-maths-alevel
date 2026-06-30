@@ -1807,8 +1807,8 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "Check your simplification of $\\sqrt{80}$. Since $80 = 16 \\cdot 5$, $\\sqrt{80} = 4\\sqrt{5}$, not $2\\sqrt{5}$. This gives the sum $3\\sqrt{5} + 4\\sqrt{5} = 7\\sqrt{5}$, not $5\\sqrt{5}$."
             },
             {
-                "ans": "$$a = 35, \\quad b = 1$$",
-                "feedback": "Be careful when simplifying. You cannot multiply the numbers under the square roots directly to add them. $\\sqrt{45} + \\sqrt{80}$ is not equal to $\\sqrt{125}$."
+                "ans": "$$a = 25, \\quad b = 5$$",
+                "feedback": "Check your simplification of the individual surds. When simplifying $\\sqrt{45} = \\sqrt{9 \\cdot 5}$, you must take the square root of $9$, which is $3$, to get $3\\sqrt{5}$. It seems you forgot to take the square root of the extracted factors and left them as $9\\sqrt{5}$ and $16\\sqrt{5}$ respectively, leading to $25\\sqrt{5}$."
             },
             {
                 "ans": "$$a = 7, \\quad b = 25$$",
