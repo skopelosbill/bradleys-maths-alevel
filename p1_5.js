@@ -1783,7 +1783,198 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Solving for Parametric Tangents",
             "content": "When finding the possible values of $c$ for which $y = mx + c$ is a tangent to a circle, setting the perpendicular distance from the centre to the line equal to the radius is significantly faster than expanding a substituted quadratic. It cleanly isolates $|c + k| = r\\sqrt{m^2 + 1}$, yielding the exact values instantly."
         }
+    },
+    {
+        "id": "004246",
+        "board": "OCR MEI",
+        "level": "AS",
+        "major_area": "Algebra",
+        "topic": "Surds and Indices",
+        "subtopic": [
+            "Simplifying Surds",
+            "Prime Bases"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Show that:<br>$$\\sqrt{45} + \\sqrt{80} = a\\sqrt{b}$$<br>where $a$ and $b$ are prime numbers to be determined.",
+        "steps": [
+            "Simplify each surd individually by finding the largest perfect square factor for both $45$ and $80$:<br>\\begin{aligned} \\sqrt{45} &= \\sqrt{9 \\cdot 5} = 3\\sqrt{5} \\\\ \\sqrt{80} &= \\sqrt{16 \\cdot 5} = 4\\sqrt{5} \\end{aligned}",
+            "Substitute these simplified expressions back into the original sum and collect like terms:<br>$$\\sqrt{45} + \\sqrt{80} = 3\\sqrt{5} + 4\\sqrt{5} = 7\\sqrt{5}$$",
+            "Identify the values of the constants $a$ and $b$ from the expression $7\\sqrt{5}$ and confirm they are both prime numbers:<br>$$a = 7 \\quad \\text{and} \\quad b = 5$$<br>Since $7$ and $5$ are both prime, the conditions are satisfied.<br><br>Final Answer: $$a = 7, \\quad b = 5$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$a = 5, \\quad b = 5$$",
+                "feedback": "Check your simplification of $\\sqrt{80}$. Since $80 = 16 \\cdot 5$, $\\sqrt{80} = 4\\sqrt{5}$, not $2\\sqrt{5}$. This gives the sum $3\\sqrt{5} + 4\\sqrt{5} = 7\\sqrt{5}$, not $5\\sqrt{5}$."
+            },
+            {
+                "ans": "$$a = 35, \\quad b = 1$$",
+                "feedback": "Be careful when simplifying. You cannot multiply the numbers under the square roots directly to add them. $\\sqrt{45} + \\sqrt{80}$ is not equal to $\\sqrt{125}$."
+            },
+            {
+                "ans": "$$a = 7, \\quad b = 25$$",
+                "feedback": "Remember to take the square root of your squared factor when simplifying. The term inside the square root must be the remaining prime factor, $b = 5$, not the squared term $25$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Prime Base Simplification",
+            "content": "When simplifying surds into prime components, always look for the largest perfect square factor ($9$ in $\\sqrt{45}$ and $16$ in $\\sqrt{80}$). Factoring these out leaves a common radical base $\\sqrt{5}$, which allows the terms to be collected easily into the form $a\\sqrt{b}$."
+        }
+    },
+    {
+        "id": "004247",
+        "board": "OCR MEI",
+        "level": "AS",
+        "major_area": "Algebra",
+        "topic": "Surds and Indices",
+        "subtopic": [
+            "Rationalising Denominators",
+            "Surd Expressions"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Show that the expression:<br>$$\\dfrac{4 + \\sqrt{5}}{3 - \\sqrt{5}}$$<br>can be written in the form $x + y\\sqrt{5}$, where $x$ and $y$ are rational numbers to be determined.",
+        "steps": [
+            "To rationalise the denominator, multiply both the numerator and the denominator by the conjugate of the denominator, which is $3 + \\sqrt{5}$:<br>$$\\dfrac{4 + \\sqrt{5}}{3 - \\sqrt{5}} = \\dfrac{(4 + \\sqrt{5})(3 + \\sqrt{5})}{(3 - \\sqrt{5})(3 + \\sqrt{5})}$$",
+            "Expand and simplify the denominator using the difference of two squares identity, $(a-b)(a+b) = a^2 - b^2$:<br>$$\\left(3 - \\sqrt{5}\\right)\\left(3 + \\sqrt{5}\\right) = 3^2 - \\left(\\sqrt{5}\\right)^2 = 9 - 5 = 4$$",
+            "Expand the numerator step-by-step:<br>$$\\begin{aligned} \\left(4 + \\sqrt{5}\\right)\\left(3 + \\sqrt{5}\\right) &= 12 + 4\\sqrt{5} + 3\\sqrt{5} + \\left(\\sqrt{5}\\right)^2 \\\\ &= 12 + 7\\sqrt{5} + 5 \\\\ &= 17 + 7\\sqrt{5} \\end{aligned}$$",
+            "Combine the simplified numerator and denominator into a single fraction and split it into individual terms:<br>$$\\dfrac{17 + 7\\sqrt{5}}{4} = \\dfrac{17}{4} + \\dfrac{7}{4}\\sqrt{5}$$<br>This matches the required form $x + y\\sqrt{5}$, where $x = \\dfrac{17}{4}$ and $y = \\dfrac{7}{4}$ are both rational numbers.<br><br>Final Answer: $$x = \\dfrac{17}{4}, \\quad y = \\dfrac{7}{4}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x = \\dfrac{17}{14}, \\quad y = \\dfrac{7}{14}$$",
+                "feedback": "Check your denominator expansion. Using the difference of two squares, $(3-\\sqrt{5})(3+\\sqrt{5})$ is $9 - 5 = 4$, not $9 + 5 = 14$."
+            },
+            {
+                "ans": "$$x = \\dfrac{7}{4}, \\quad y = \\dfrac{17}{4}$$",
+                "feedback": "Be careful when identifying the constants $x$ and $y$. The rational term is $x = \\dfrac{17}{4}$ and the coefficient of the surd is $y = \\dfrac{7}{4}$. It seems you may have reversed their values."
+            },
+            {
+                "ans": "$$x = \\dfrac{13}{4}, \\quad y = \\dfrac{7}{4}$$",
+                "feedback": "Check your expansion of the constant term in the numerator. The product $(\\sqrt{5})(\\sqrt{5})$ evaluates to $+5$, not $-5$. Adding this to $12$ gives $12 + 5 = 17$, not $12 - 5 = 7$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Rationalising Denominators",
+            "content": "To rationalise the denominator of a fraction containing a surd, multiply both the numerator and the denominator by the conjugate of the denominator (changing the sign between the terms). This exploits the difference of two squares to eliminate all square roots from the denominator."
+        }
+    },
+    {
+        "id": "004248",
+        "board": "OCR MEI",
+        "level": "AS",
+        "major_area": "Algebra",
+        "topic": "Surds and Indices",
+        "subtopic": [
+            "Solving Surd Equations",
+            "Simplifying Surds"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:<br>$$x\\sqrt{8} - \\sqrt{18} = x\\sqrt{2} + \\sqrt{32}$$<br>giving your answer for $x$ in exact simplified form.",
+        "steps": [
+            "Simplify all the surds in the equation to express them in terms of their simplest radical components:<br>\\begin{aligned} \\sqrt{8} &= \\sqrt{4 \\cdot 2} = 2\\sqrt{2} \\\\ \\sqrt{18} &= \\sqrt{9 \\cdot 2} = 3\\sqrt{2} \\\\ \\sqrt{32} &= \\sqrt{16 \\cdot 2} = 4\\sqrt{2} \\end{aligned}",
+            "Substitute these simplified expressions back into the original equation:<br>$$2x\\sqrt{2} - 3\\sqrt{2} = x\\sqrt{2} + 4\\sqrt{2}$$",
+            "Factorise out the common term $\\sqrt{2}$ from both sides of the equation:<br>$$\\left(2x - 3\\right)\\sqrt{2} = \\left(x + 4\\right)\\sqrt{2}$$",
+            "Divide both sides of the equation by $\\sqrt{2}$ and solve the resulting linear equation for $x$:<br>$$\\begin{aligned} 2x - 3 &= x + 4 \\\\ x &= 7 \\end{aligned}$$<br><br>Final Answer: $$x = 7$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x = 1$$",
+                "feedback": "Check your signs when isolating $x$. From $2x - 3 = x + 4$, subtracting $x$ from both sides gives $x - 3 = 4$, and adding $3$ to both sides yields $x = 7$, not $x = 1$."
+            },
+            {
+                "ans": "$$x = -7$$",
+                "feedback": "Be careful when moving variables and constants. When simplifying $2x - 3 = x + 4$, both sides reduce to positive $x = 7$. Check your sign steps."
+            },
+            {
+                "ans": "$$x = \\dfrac{7}{3}$$",
+                "feedback": "Check your expansion of the $x\\sqrt{8}$ term. Since $\\sqrt{8} = 2\\sqrt{2}$, the coefficient is $2x$, not $4x$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Factoring Common Radicals",
+            "content": "When solving linear equations with surds, simplify each individual radical first. Factoring out the common term $\\sqrt{2}$ allows you to divide the entire equation by $\\sqrt{2}$ instantly, reducing a complex-looking surd equation to a simple linear system."
+        }
+    },
+    {
+        "id": "004249",
+        "board": "OCR MEI",
+        "level": "AS",
+        "major_area": "Algebra",
+        "topic": "Surds and Indices",
+        "subtopic": [
+            "Geometric Applications",
+            "Rationalising Denominators"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A rectangle has an area of $12\\sqrt{3} \\text{ cm}^2$ and a width of $3 - \\sqrt{3} \\text{ cm}$.<br><br>Show that the length of the rectangle can be written in the form $p + q\\sqrt{3}$, where $p$ and $q$ are integers to be determined.",
+        "steps": [
+            "The length of the rectangle is found by dividing the area by the width:<br>$$\\text{Length} = \\dfrac{12\\sqrt{3}}{3 - \\sqrt{3}}$$",
+            "Rationalise the denominator by multiplying both the numerator and the denominator by the conjugate $3 + \\sqrt{3}$:<br>$$\\text{Length} = \\dfrac{12\\sqrt{3}\\left(3 + \\sqrt{3}\\right)}{\\left(3 - \\sqrt{3}\\right)\\left(3 + \\sqrt{3}\\right)}$$",
+            "Simplify the denominator using the difference of two squares:<br>$$\\left(3 - \\sqrt{3}\\right)\\left(3 + \\sqrt{3}\\right) = 3^2 - \\left(\\sqrt{3}\\right)^2 = 9 - 3 = 6$$",
+            "Expand the numerator step-by-step:<br>$$12\\sqrt{3}\\left(3 + \\sqrt{3}\\right) = 36\\sqrt{3} + 12\\left(3\\right) = 36\\sqrt{3} + 36$$",
+            "Divide the expanded numerator by the simplified denominator, and write it in the required form $p + q\\sqrt{3}$:<br>$$\\text{Length} = \\dfrac{36 + 36\\sqrt{3}}{6} = 6 + 6\\sqrt{3}$$<br>This matches the required form where $p = 6$ and $q = 6$ are both integers.<br><br>Final Answer: $$p = 6, \\quad q = 6$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$p = 6, \\quad q = -6$$",
+                "feedback": "Check your signs in the numerator expansion. Multiplying $12\\sqrt{3}$ by positive $\\sqrt{3}$ yields $+36$, not $-36$."
+            },
+            {
+                "ans": "$$p = 3, \\quad q = 3$$",
+                "feedback": "Check your denominator evaluation. The denominator $(3-\\sqrt{3})(3+\\sqrt{3})$ is $9 - 3 = 6$, not $12$. Dividing by $6$ gives $6 + 6\\sqrt{3}$."
+            },
+            {
+                "ans": "$$p = 12, \\quad q = 12$$",
+                "feedback": "Don't forget to divide your expanded terms by the simplified denominator. You must divide both $36$ and $36\\sqrt{3}$ by $6$ to get the correct coefficients."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Reversing Multiplication with Conjugates",
+            "content": "In geometric word problems involving surds, find the required length by dividing the exact area by the width. Multiplying both parts by the conjugate of the width's surd expression eliminates fractional denominators, leaving integer coefficients."
+        }
+    },
+    {
+        "id": "004250",
+        "board": "OCR MEI",
+        "level": "AS",
+        "major_area": "Algebra",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Simultaneous Equations",
+            "Surd Coefficients"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Solve the simultaneous equations:<br>$$\\begin{aligned} x + y\\sqrt{3} &= 11 \\\\ x\\sqrt{3} - 3y &= 5\\sqrt{3} \\end{aligned}$$<br>giving your answers for $x$ and $y$ in exact simplified form.",
+        "steps": [
+            "Rearrange the first equation to express $x$ in terms of $y$:<br>$$x = 11 - y\\sqrt{3}$$",
+            "Substitute the expression for $x$ into the second equation:<br>\\begin{aligned} \\left(11 - y\\sqrt{3}\\right)\\sqrt{3} - 3y &= 5\\sqrt{3} \\\\ 11\\sqrt{3} - 3y - 3y &= 5\\sqrt{3} \\\\ 11\\sqrt{3} - 6y &= 5\\sqrt{3} \\end{aligned}",
+            "Isolate the term in $y$ to solve the equation:<br>$$\\begin{aligned} -6y &= 5\\sqrt{3} - 11\\sqrt{3} \\\\ -6y &= -6\\sqrt{3} \\\\ y &= \\sqrt{3} \\end{aligned}$$",
+            "Substitute $y = \\sqrt{3}$ back into the expression for $x$ to find its value:<br>$$\\begin{aligned} x &= 11 - \\left(\\sqrt{3}\\right)\\sqrt{3} \\\\ x &= 11 - 3 \\\\ x &= 8 \\end{aligned}$$<br><br>Final Answer: $$x = 8, \\quad y = \\sqrt{3}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x = 8, \\quad y = -\\sqrt{3}$$",
+                "feedback": "Check your signs when simplifying the $y$-terms. On the left side, we have $11\\sqrt{3} - 6y = 5\\sqrt{3}$, which simplifies to $-6y = -6\\sqrt{3}$, leading to positive $y = \\sqrt{3}$."
+            },
+            {
+                "ans": "$$x = 5, \\quad y = \\sqrt{3}$$",
+                "feedback": "Check your final calculation for $x$. When substituting $y = \\sqrt{3}$, we have $x = 11 - (\\sqrt{3})(\\sqrt{3}) = 11 - 3 = 8$, not $11 - 6 = 5$."
+            },
+            {
+                "ans": "$$x = 11, \\quad y = 0$$",
+                "feedback": "While $x = 11, \\, y = 0$ satisfies the first equation, it does not satisfy the second equation. You must solve the system simultaneously to find the correct coordinates."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Substitution with Surds",
+            "content": "When solving simultaneous equations containing surds, substitution is often more direct than elimination. Isolate the linear variable $x$ first and substitute it into the second equation; the resulting terms in $y$ will collapse into integers once $\\sqrt{3} \\cdot \\sqrt{3}$ is evaluated."
+        }
     }
+
 
 
 
