@@ -440,7 +440,7 @@ window.ALEVEL_QUESTIONS = [
             "Bring all terms to one side of the equation:<br>$$6\\sin x \\cos x - 2\\sin x = 0$$",
             "Factorise out the common term $2\\sin x$ to set up two solvable branches:<br>$$2\\sin x\\left(3\\cos x - 1\\right) = 0 \\implies \\sin x = 0 \\quad \\text{or} \\quad \\cos x = \\dfrac{1}{3}$$",
             "Solve the first branch, $\\sin x = 0$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>$$x = 0.0^\\circ, \\, 180.0^\\circ$$<br>Because the inequality is inclusive of the boundaries, both solutions are valid.",
-            "Solve the second branch, $\\cos x = \\dfrac{1}{3}$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}\\left(\\dfrac{1}{3}\\right) \\\\ x &\\approx 70.5^\\circ \\end{aligned}$<br>Since cosine is negative in the second quadrant, there are no other solutions for $\\cos x = \\dfrac{1}{3}$ in the interval $[0^circ, 180^circ]$. Combining all branches yields the final set of answers.<br><br>Final Answer: $$x = 0.0^\\circ, \\, 70.5^\\circ, \\, 180.0^\\circ$$"
+            "Solve the second branch, $\\cos x = \\dfrac{1}{3}$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}\\left(\\dfrac{1}{3}\\right) \\\\ x &\\approx 70.5^\\circ \\end{aligned}<br>Since cosine is negative in the second quadrant, there are no other solutions for $\\cos x = \\dfrac{1}{3}$ in the interval $[0^circ, 180^circ]$. Combining all branches yields the final set of answers.<br><br>Final Answer: $$x = 0.0^\\circ, \\, 70.5^\\circ, \\, 180.0^\\circ$$"
         ],
         "pi_options": [
             {
