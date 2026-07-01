@@ -583,7 +583,208 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Composite Domain Shifts",
             "content": "When solving equations of the form $\\sin(x + \\alpha) = k$, remember to shift your search domain by $\\alpha$. Since $0^\\circ \\le x \\le 360^\\circ$, your search interval for $u = x + 53.1^\\circ$ is $53.1^\\circ \\le u \\le 413.1^\\circ$. This ensures you correctly identify $u = 390^\\circ$ (which yields $x = 336.9^\\circ$) while discarding $u = 30^\\circ$."
         }
+    },
+    {
+        "id": "004266",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Implicit Differentiation",
+            "Cubic Polynomials",
+            "Product Rule"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The equation of a curve is:<br>$$y^4 - 7xy + x^3 = -5$$<br>Find the gradient of the curve at each of the points where $y = 1$, giving your answers in exact simplified form.",
+        "steps": [
+            "Substitute $y = 1$ into the original equation to find the $x$-coordinates of the points on the curve:<br>\\begin{aligned} 1^4 - 7x(1) + x^3 &= -5 \\\\ 1 - 7x + x^3 &= -5 \\\\ x^3 - 7x + 6 &= 0 \\end{aligned}",
+            "Factorise the cubic equation by testing small integer factors. Since $x = 1$ gives $1 - 7 + 6 = 0$, $(x - 1)$ is a factor. Dividing the cubic yields:<br>$$x^3 - 7x + 6 = (x - 1)(x - 2)(x + 3) = 0$$<br>So the coordinates of the three points on the curve where $y = 1$ are:<br>$$(1, 1), \\quad (2, 1), \\quad (-3, 1)$$",
+            "Differentiate the curve's equation implicitly with respect to $x$ to find $\\dfrac{\\text{d}y}{\\text{d}x}$. Remember to apply the product rule to the $-7xy$ term:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}\\left(y^4\\right) - \\dfrac{\\text{d}}{\\text{d}x}\\left(7xy\\right) + \\dfrac{\\text{d}}{\\text{d}x}\\left(x^3\\right) &= \\dfrac{\\text{d}}{\\text{d}x}(-5) \\\\ 4y^3 \\dfrac{\\text{d}y}{\\text{d}x} - 7\\left(y + x\\dfrac{\\text{d}y}{\\text{d}x}\\right) + 3x^2 &= 0 \\\\ 4y^3 \\dfrac{\\text{d}y}{\\text{d}x} - 7y - 7x\\dfrac{\\text{d}y}{\\text{d}x} + 3x^2 &= 0 \\end{aligned}",
+            "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ as a single fraction:<br>\\begin{aligned} \\left(4y^3 - 7x\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 7y - 3x^2 \\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7y - 3x^2}{4y^3 - 7x} \\end{aligned}",
+            "Substitute $y = 1$ into the gradient expression to simplify it:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{7 - 3x^2}{4 - 7x}$$",
+            "Evaluate the gradient at each of the three points:<br>• At $(1, 1)$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{7 - 3(1)^2}{4 - 7(1)} = \\dfrac{4}{-3} = -\\dfrac{4}{3}$$<br>• At $(2, 1)$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{7 - 3(2)^2}{4 - 7(2)} = \\dfrac{7 - 12}{4 - 14} = \\dfrac{-5}{-10} = \\dfrac{1}{2}$$<br>• At $(-3, 1)$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{7 - 3(-3)^2}{4 - 7(-3)} = \\dfrac{7 - 27}{4 + 21} = \\dfrac{-20}{25} = -\\dfrac{4}{5}$$<br><br>Final Answer: $$-\\dfrac{4}{3}, \\quad \\dfrac{1}{2}, \\quad -\\dfrac{4}{5}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$-\\dfrac{4}{3}, \\quad -\\dfrac{1}{2}, \\quad -\\dfrac{4}{5}$$",
+                "feedback": "Check your signs when evaluating the gradient at $(2, 1)$. Substituting $x = 2$ gives $\\dfrac{7 - 12}{4 - 14} = \\dfrac{-5}{-10}$. Since both terms are negative, their quotient must be positive $\\dfrac{1}{2}$."
+            },
+            {
+                "ans": "$$-\\dfrac{4}{3}, \\quad \\dfrac{1}{2}$$",
+                "feedback": "Remember that the cubic equation $x^3 - 7x + 6 = 0$ has three distinct real roots. You must evaluate the gradient at all three coordinates, including $x = -3$, to complete the solution."
+            },
+            {
+                "ans": "$$-\\dfrac{4}{3}, \\quad \\dfrac{5}{18}, \\quad -\\dfrac{4}{5}$$",
+                "feedback": "Check your evaluation of the denominator for the point $(2, 1)$. The term is $4 - 7x$. Since $x = 2$, this is $4 - 14 = -10$, not $4 - 14 = -18$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Factoring Cubics Systematically",
+            "content": "When simplifying cubic expressions like $x^3 - 7x + 6 = 0$ in an implicit system, always search for simple integer roots ($x = \\pm 1, \\pm 2$) first using the Factor Theorem. This reduces the cubic to a quadratic, letting you find all three intersection points with clean integer coordinates."
+        }
+    },
+    {
+        "id": "004267",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Implicit Differentiation",
+            "Product Rule",
+            "Logarithmic Differentiation"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A curve is defined by the implicit equation:<br>$$y^2 + 2x \\ln y = x^2$$<br>1. Verify that the point $(1, 1)$ lies on the curve.<br>2. By differentiating implicitly, find the exact gradient of the curve at $(1, 1)$.",
+        "steps": [
+            "Verify that $(1, 1)$ lies on the curve by substituting $x = 1$ and $y = 1$ into the implicit equation:<br>\\begin{aligned} 1^2 + 2(1) \\ln(1) &= 1^2 \\\\ 1 + 2(0) &= 1 \\\\ 1 &= 1 \\end{aligned}<br>Since LHS = RHS, the point $(1, 1)$ lies on the curve.",
+            "Differentiate the curve's equation implicitly with respect to $x$. Apply the product rule and chain rule to the $2x \\ln y$ term:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}\\left(y^2\\right) + \\dfrac{\\text{d}}{\\text{d}x}\\left(2x \\ln y\\right) &= \\dfrac{\\text{d}}{\\text{d}x}\\left(x^2\\right) \\\\ 2y \\dfrac{\\text{d}y}{\\text{d}x} + 2\\ln y + 2x \\cdot \\left(\\dfrac{1}{y}\\dfrac{\\text{d}y}{\\text{d}x}\\right) &= 2x \\end{aligned}",
+            "Group and factorise the terms containing $\\dfrac{\\text{d}y}{\\text{d}x}$:<br>\\begin{aligned} \\left(2y + \\dfrac{2x}{y}\\right)\\dfrac{\\text{d}y}{\\text{d}x} + 2\\ln y &= 2x \\\\ \\left(2y + \\dfrac{2x}{y}\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 2x - 2\\ln y \\end{aligned}",
+            "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ as a single fraction:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2x - 2\\ln y}{2y + \\dfrac{2x}{y}}$$",
+            "Substitute $x = 1$ and $y = 1$ into the gradient expression and simplify to find the exact value:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2(1) - 2\\ln(1)}{2(1) + \\dfrac{2(1)}{1}} = \\dfrac{2 - 0}{2 + 2} = \\dfrac{2}{4} = \\dfrac{1}{2}$$<br><br>Final Answer: $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{2}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2}{3}$$",
+                "feedback": "Check your derivative of $2x\\ln y$ with respect to $x$. Applying the product rule gives $2\\ln y + \\dfrac{2x}{y}\\dfrac{\\text{d}y}{\\text{d}x}$. It seems you may have missed the coefficient $2$ in the second term, leading to an incorrect denominator of $3$ instead of $4$."
+            },
+            {
+                "ans": "$$\\dfrac{\\text{d}y}{\\text{d}x} = 1$$",
+                "feedback": "Be careful when differentiating $y^2$ implicitly. The derivative is $2y\\dfrac{\\text{d}y}{\\text{d}x}$, not $2y$. Forgetting the chain rule factor of $\\dfrac{\\text{d}y}{\\text{d}x}$ will distort your final fraction."
+            },
+            {
+                "ans": "$$\\dfrac{\\text{d}y}{\\text{d}x} = 0$$",
+                "feedback": "Recall that $\\ln(1) = 0$. Substituting the coordinates gives a numerator of $2(1) - 2(0) = 2$. It seems you may have mistakenly thought $\\ln(1) = 1$, which would incorrectly make the numerator zero."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Product Rule with Logarithmic Terms",
+            "content": "When differentiating terms like $2x \\ln y$ implicitly, remember to apply both the product rule and the chain rule. The derivative is $2\\ln y + 2x \\left( \\dfrac{1}{y} \\dfrac{\\text{d}y}{\\text{d}x} \\right)$. This is a high-frequency source of lost marks in A-Level exams."
+        }
+    },
+    {
+        "id": "004268",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Implicit Differentiation",
+            "Chain Rule",
+            "Trigonometric Differentiation"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A curve is defined by the implicit equation:<br>$$\\sin(2y) = x - 1$$<br>At the point $P\\left(1.5, \\dfrac{1}{12}\\pi\\right)$ on the curve:<br>1. Show that $P$ lies on the curve.<br>2. Find the exact gradient of the curve at $P$.",
+        "steps": [
+            "Verify that $P\\left(1.5, \\dfrac{1}{12}\\pi\\right)$ lies on the curve by substituting $x = 1.5$ and $y = \\dfrac{1}{12}\\pi$ into the equation:<br>\\begin{aligned} \\sin\\left(2 \\cdot \\dfrac{1}{12}\\pi\\right) &= 1.5 - 1 \\\\ \\sin\\left(\\dfrac{1}{6}\\pi\\right) &= 0.5 \\\\ \\dfrac{1}{2} &= \\dfrac{1}{2} \\end{aligned}<br>Since LHS = RHS, the point $P$ lies on the curve.",
+            "Differentiate both sides of the equation implicitly with respect to $x$. Use the chain rule on the $\\sin(2y)$ term:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}\\left(\\sin(2y)\\right) &= \\dfrac{\\text{d}}{\\text{d}x}(x - 1) \\\\ 2\\cos(2y)\\dfrac{\\text{d}y}{\\text{d}x} &= 1 \\end{aligned}",
+            "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ as a single fraction:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{2\\cos(2y)}$$",
+            "Substitute $y = \\dfrac{1}{12}\\pi$ into the gradient expression and evaluate. Ensure your calculator is set to radians:<br>$$\\begin{aligned} 2y &= 2\\left(\\dfrac{1}{12}\\pi\\right) = \\dfrac{1}{6}\\pi \\\\ \\cos\\left(\\dfrac{1}{6}\\pi\\right) &= \\dfrac{\\sqrt{3}}{2} \\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{1}{2 \\cdot \\dfrac{\\sqrt{3}}{2}} = \\dfrac{1}{\\sqrt{3}} = \\dfrac{\\sqrt{3}}{3} \\end{aligned}$$<br><br>Final Answer: $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{\\sqrt{3}}{3}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2\\sqrt{3}}{3}$$",
+                "feedback": "Check your chain rule application. Differentiating $\\sin(2y)$ yields $2\\cos(2y)\\dfrac{\\text{d}y}{\\text{d}x}$. It seems you may have divided by $2$ incorrectly, leaving a factor of $2$ in the numerator."
+            },
+            {
+                "ans": "$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{\\sqrt{3}}{6}$$",
+                "feedback": "Check your multiplication in the denominator. Since $\\cos(2y) = \\dfrac{\\sqrt{3}}{2}$, the term $2\\cos(2y)$ becomes $2\\left(\\dfrac{\\sqrt{3}}{2}\\right) = \\sqrt{3}$. This gives a gradient of $\\dfrac{1}{\\sqrt{3}}$, not $\\dfrac{1}{2\\sqrt{3}}$."
+            },
+            {
+                "ans": "$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{2}$$",
+                "feedback": "Make sure you evaluate the trigonometric term in radian mode, not degrees. If your calculator is in degree mode, $\\cos(2 \\cdot 1/12\\pi)$ will yield a completely incorrect value near $1$, leading to a wrong gradient."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Implicit Trigonometric Chain Rule",
+            "content": "Differentiating trigonometric composite terms like $\\sin(2y)$ implicitly requires applying the chain rule to the inner function. This yields $2\\cos(2y) \\dfrac{\\text{d}y}{\\text{d}x}$. Always verify your calculator is in radian mode when evaluating trigonometric terms at points containing $\\pi$."
+        }
+    },
+    {
+        "id": "004269",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Implicit Differentiation",
+            "Stationary Points",
+            "Algebraic Rearrangement"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A curve is defined by the implicit equation:<br>$$x^2 + 2y^2 = 4x$$<br>1. Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $x$ and $y$.<br>2. Hence, find the exact coordinates of the stationary points of the curve.",
+        "steps": [
+            "Differentiate both sides of the equation implicitly with respect to $x$:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}\\left(x^2\\right) + \\dfrac{\\text{d}}{\\text{d}x}\\left(2y^2\\right) &= \\dfrac{\\text{d}}{\\text{d}x}(4x) \\\\ 2x + 4y\\dfrac{\\text{d}y}{\\text{d}x} &= 4 \\end{aligned}",
+            "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ and simplify the fraction by dividing numerator and denominator by $2$:<br>\\begin{aligned} 4y\\dfrac{\\text{d}y}{\\text{d}x} &= 4 - 2x \\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{4 - 2x}{4y} = \\dfrac{2 - x}{2y} \\end{aligned}",
+            "To find the stationary points, set the gradient expression $\\dfrac{\\text{d}y}{\\text{d}x} = 0$:<br>$$\\dfrac{2 - x}{2y} = 0 \\implies 2 - x = 0 \\implies x = 2$$<br>(Note that $y \\ne 0$ because the gradient is undefined where $y = 0$.)",
+            "Substitute $x = 2$ back into the original implicit equation of the curve to solve for $y$:<br>\\begin{aligned} x^2 + 2y^2 &= 4x \\\\ 2^2 + 2y^2 &= 4(2) \\\\ 4 + 2y^2 &= 8 \\\\ 2y^2 &= 4 \\\\ y^2 &= 2 \\implies y = \\pm\\sqrt{2} \\end{aligned}",
+            "Write down the exact coordinates of the two stationary points:<br>$$(2, \\sqrt{2}) \\quad \\text{and} \\quad (2, -\\sqrt{2})$$<br><br>Final Answer: $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2 - x}{2y}, \\quad (2, \\pm\\sqrt{2})$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2 - x}{2y}, \\quad (2, 2)$$",
+                "feedback": "Check your final calculation for $y$. Solving $y^2 = 2$ yields $y = \\pm\\sqrt{2}$, not $y = 2$. Remember to take the square root of both sides."
+            },
+            {
+                "ans": "$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{4 - 2x}{y}, \\quad (2, \\pm\\sqrt{2})$$",
+                "feedback": "Check your division steps when isolating $\\dfrac{\\text{d}y}{\\text{d}x}$. Since the term is $4y\\dfrac{\\text{d}y}{\\text{d}x} = 4 - 2x$, dividing by $4y$ gives $\\dfrac{4 - 2x}{4y} = \\dfrac{2 - x}{2y}$, not $\\dfrac{4 - 2x}{y}$."
+            },
+            {
+                "ans": "$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2 - x}{2y}, \\quad (2, 0)$$",
+                "feedback": "A stationary point cannot occur where $y = 0$, as this would make the denominator of your gradient expression zero, causing the derivative to be undefined (a vertical tangent). You must substitute $x = 2$ back into the original curve equation to find $y$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Locating Stationary Points on Implicit Curves",
+            "content": "To find the stationary points of an implicit curve, find the expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ first and set the numerator equal to $0$ to find the corresponding $x$-coordinates. Then, substitute these $x$-values back into the original curve equation to solve for $y$."
+        }
+    },
+    {
+        "id": "004270",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Calculus",
+        "topic": "Differentiation",
+        "subtopic": [
+            "Implicit Differentiation",
+            "Product Rule",
+            "Algebraic Fractions"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A curve is defined by the implicit equation:<br>$$x^2y^2 - 3x + 2y = 6$$<br>1. Find the coordinates of the point on the curve where $y = 1$ and $x > 0$.<br>2. Find the exact gradient of the curve at this point.",
+        "steps": [
+            "Substitute $y = 1$ into the original curve equation to find the $x$-coordinates:<br>\\begin{aligned} x^2(1)^2 - 3x + 2(1) &= 6 \\\\ x^2 - 3x + 2 &= 6 \\\\ x^2 - 3x - 4 &= 0 \\end{aligned}",
+            "Factorise the quadratic equation to find the roots:<br>$$(x - 4)(x + 1) = 0 \\implies x = 4 \\quad \\text{or} \\quad x = -1$$<br>Since the question states $x > 0$, we discard $x = -1$. The coordinates of the point are $(4, 1)$.",
+            "Differentiate the curve's equation implicitly with respect to $x$. Use the product rule on the $x^2y^2$ term:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}\\left(x^2y^2\\right) - \\dfrac{\\text{d}}{\\text{d}x}(3x) + \\dfrac{\\text{d}}{\\text{d}x}(2y) &= 0 \\\\ 2xy^2 + 2x^2y\\dfrac{\\text{d}y}{\\text{d}x} - 3 + 2\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\end{aligned}",
+            "Group and factorise the terms containing $\\dfrac{\\text{d}y}{\\text{d}x}$:<br>\\begin{aligned} \\left(2xy^2 - 3\\right) + \\left(2x^2y + 2\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\\\ \\left(2x^2y + 2\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 3 - 2xy^2 \\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{3 - 2xy^2}{2x^2y + 2} \\end{aligned}",
+            "Substitute $x = 4$ and $y = 1$ into the gradient expression and simplify to find the exact value:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{3 - 2(4)(1)^2}{2(16)(1) + 2} = \\dfrac{3 - 8}{32 + 2} = -\\dfrac{5}{34}$$<br><br>Final Answer: $$(4,1), \\quad \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{5}{34}$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$(4,1), \\quad \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{5}{34}$$",
+                "feedback": "Check your signs in the numerator of your gradient formula. The numerator is $3 - 2xy^2$. Substituting $x=4, \\, y=1$ yields $3 - 8 = -5$. It must be negative $-\\dfrac{5}{34}$, not positive."
+            },
+            {
+                "ans": "$$(-1,1), \\quad \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{5}{34}$$",
+                "feedback": "Check your coordinate domain constraint. The quadratic equation yields $x = 4$ or $x = -1$. Because the question explicitly states $x > 0$, you must choose $x = 4$, making the point $(4,1)$, not $(-1,1)$."
+            },
+            {
+                "ans": "$$(4,1), \\quad \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{5}{32}$$",
+                "feedback": "Check your denominator evaluation. The denominator is $2x^2y + 2$. Since $x = 4, \\, y = 1$, this is $2(16)(1) + 2 = 34$. It seems you may have forgotten to add the constant $2$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Watch Your Signs in Fraction Derivatives",
+            "content": "When differentiating $x^2 y^2$ implicitly, the product rule yields $2x y^2 + 2x^2 y \\dfrac{\\text{d}y}{\\text{d}x}$. When isolating $\\dfrac{\\text{d}y}{\\text{d}x}$ as a single fraction, ensure you carefully distribute the negative signs during transposition to avoid any fractional sign errors."
+        }
     }
+
 
 
 
