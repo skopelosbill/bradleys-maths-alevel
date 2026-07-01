@@ -381,7 +381,210 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Negative Exponents and Decay",
             "content": "The exponential function $y = e^{-x}$ represents exponential decay, which tends to $0$ as $x \\to \\infty$. Therefore, as $x \\to \\infty$, the curve $y = 2 - e^{-x}$ approaches its horizontal asymptote of $y = 2$. When solving for the $x$-intercept, ensure you handle the negative sign in $-x = \\ln 2 \\implies x = -\\ln 2$ correctly."
         }
+    },
+    {
+        "id": "004261",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Equations",
+        "subtopic": [
+            "Double Angle Formula",
+            "Factoring Trigonometric Functions",
+            "Degree Measures"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:<br>$$2\\sin 2x = \\cos x$$<br>for $0^\\circ \\le x \\le 180^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
+        "steps": [
+            "Use the double-angle sine identity $\\sin 2x = 2\\sin x \\cos x$ to expand the left-hand side of the equation:<br>$$2\\left(2\\sin x \\cos x\\right) = \\cos x \\implies 4\\sin x \\cos x = \\cos x$$",
+            "Bring all terms to one side of the equation. Do not divide both sides by $\\cos x$, as doing so assumes $\\cos x \\ne 0$ and leads to the loss of valid roots:<br>$$4\\sin x \\cos x - \\cos x = 0$$",
+            "Factorise out the common term $\\cos x$ to set up two solvable branches:<br>$$\\cos x\\left(4\\sin x - 1\\right) = 0 \\implies \\cos x = 0 \\quad \\text{or} \\quad \\sin x = \\dfrac{1}{4}$$",
+            "Solve the first branch, $\\cos x = 0$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>$$x = 90.0^\\circ$$",
+            "Solve the second branch, $\\sin x = \\dfrac{1}{4} = 0.25$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\sin^{-1}(0.25) \\\\ x &\\approx 14.5^\\circ \\end{aligned}<br>Find the second quadrant solution within the interval:<br>$$x = 180^\\circ - 14.5^\\circ = 165.5^\\circ$$<br>Combining all solutions yields the final set of answers.<br><br>Final Answer: $$x = 14.5^\\circ, \\, 90.0^\\circ, \\, 165.5^\\circ$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x = 14.5^\\circ, \\, 165.5^\\circ$$",
+                "feedback": "You may have made the classic mistake of dividing both sides by $\\cos x$ in the first step. Dividing by a variable term that can equal zero loses the valid solutions where $\\cos x = 0 \\implies x = 90.0^\\circ$. Always bring terms to one side and factorise."
+            },
+            {
+                "ans": "$$x = 14.5^\\circ, \\, 90.0^\\circ, \\, 194.5^\\circ$$",
+                "feedback": "Check your second quadrant calculation for $\\sin x = 0.25$. Sine is positive in the first and second quadrants. The second quadrant solution is $180^\circ - 14.5^\circ = 165.5^\circ$, not $180^\circ + 14.5^\circ = 194.5^\circ$."
+            },
+            {
+                "ans": "$$x = 90.0^\\circ$$",
+                "feedback": "You found the solution for the $\\cos x = 0$ branch, but you must also solve for $4\\sin x - 1 = 0 \\implies \\sin x = 0.25$ to find the complete set of three solutions."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Factoring over Dividing",
+            "content": "A very common student error is dividing both sides of $4\\sin x \\cos x = \\cos x$ by $\\cos x$. Dividing by a variable term that can equal zero results in losing the valid solutions where $\\cos x = 0 \\implies x = 90^\\circ$. Always bring all terms to one side of the equation and factorise."
+        }
+    },
+    {
+        "id": "004262",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Equations",
+        "subtopic": [
+            "Double Angle Formula",
+            "Factoring Trigonometric Functions",
+            "Degree Measures"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:<br>$$3\\sin 2x = 2\\sin x$$<br>for $0^\\circ \\le x \\le 180^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
+        "steps": [
+            "Use the double-angle sine identity $\\sin 2x = 2\\sin x \\cos x$ to expand the left-hand side:<br>$$3\\left(2\\sin x \\cos x\\right) = 2\\sin x \\implies 6\\sin x \\cos x = 2\\sin x$$",
+            "Bring all terms to one side of the equation:<br>$$6\\sin x \\cos x - 2\\sin x = 0$$",
+            "Factorise out the common term $2\\sin x$ to set up two solvable branches:<br>$$2\\sin x\\left(3\\cos x - 1\\right) = 0 \\implies \\sin x = 0 \\quad \\text{or} \\quad \\cos x = \\dfrac{1}{3}$$",
+            "Solve the first branch, $\\sin x = 0$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>$$x = 0.0^\\circ, \\, 180.0^\\circ$$<br>Because the inequality is inclusive of the boundaries, both solutions are valid.",
+            "Solve the second branch, $\\cos x = \\dfrac{1}{3}$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}\\left(\\dfrac{1}{3}\\right) \\\\ x &\\approx 70.5^\\circ \\end{aligned}$<br>Since cosine is negative in the second quadrant, there are no other solutions for $\\cos x = \\dfrac{1}{3}$ in the interval $[0^circ, 180^circ]$. Combining all branches yields the final set of answers.<br><br>Final Answer: $$x = 0.0^\\circ, \\, 70.5^\\circ, \\, 180.0^\\circ$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x = 70.5^\\circ$$",
+                "feedback": "You may have made the mistake of dividing both sides by $\\sin x$ in the first step. Dividing by a variable term that can equal zero loses the valid solutions where $\\sin x = 0 \\implies x = 0.0^\circ, \\, 180.0^\circ$. Always bring terms to one side and factorise."
+            },
+            {
+                "ans": "$$x = 0.0^\\circ, \\, 70.5^\\circ, \\, 109.5^\\circ, \\, 180.0^\\circ$$",
+                "feedback": "Check your quadrant adjustments for $\\cos x = \\dfrac{1}{3}$. Cosine is positive in the first and fourth quadrants. The angle $109.5^\circ$ is in the second quadrant where cosine is negative, and is not a valid solution."
+            },
+            {
+                "ans": "$$x = 70.5^\\circ, \\, 180.0^\\circ$$",
+                "feedback": "Make sure you include all boundary solutions. Since $\\sin x = 0$ is solved over the inclusive interval $0^\circ \\le x \\le 180^\circ$, both $x = 0.0^\circ$ and $x = 180.0^\circ$ are valid roots."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Domain Boundary Roots",
+            "content": "When solving trigonometric equations, always check whether your interval boundaries are inclusive (like $0^\\circ \\le x \\le 180^\\circ$ here). Since the inequality is inclusive, the boundary solutions $x = 0^\\circ$ and $x = 180^\\circ$ from $\\sin x = 0$ must be included in your final answer set."
+        }
+    },
+    {
+        "id": "004263",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Equations",
+        "subtopic": [
+            "Double Angle Formula",
+            "Quadratic Equations in Trig",
+            "Degree Measures"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>1. Show that the equation $2\\cos 2x = \\cos x$ can be written as a quadratic equation in $\cos x$:<br>$$4\\cos^2 x - \\cos x - 2 = 0$$<br>2. Solve the equation $2\\cos 2x = \\cos x$ for $0^\\circ \\le x \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
+        "steps": [
+            "Use the double-angle cosine identity $\\cos 2x = 2\\cos^2 x - 1$ to rewrite the left-hand side of the equation:<br>$$2\\left(2\\cos^2 x - 1\\right) = \\cos x$$",
+            "Expand the brackets and bring all terms to one side to form the required quadratic equation:<br>$$4\\cos^2 x - 2 = \\cos x \\implies 4\\cos^2 x - \\cos x - 2 = 0$$",
+            "Apply the quadratic formula with $a = 4$, $b = -1$, and $c = -2$ to solve for $\\cos x$:<br>\\begin{aligned} \\cos x &= \\dfrac{-(-1) \\pm \\sqrt{(-1)^2 - 4(4)(-2)}}{2(4)} \\\\ &= \\dfrac{1 \\pm \\sqrt{1 + 32}}{8} \\\\ &= \\dfrac{1 \\pm \\sqrt{33}}{8} \\end{aligned}<br>This gives two possible values for $\\cos x$:<br>$$\\cos x \\approx 0.8431 \\quad \\text{or} \\quad \\cos x \\approx -0.5931$$",
+            "Solve the first case, $\\cos x \\approx 0.8431$, in the domain $0^\\circ \\le x \\le 360^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}(0.8431) \\\\ x &\\approx 32.5^\\circ, \\, 360^\\circ - 32.5^\\circ = 327.5^\\circ \\end{aligned}$",
+            "Solve the second case, $\\cos x \\approx -0.5931$, in the domain $0^\\circ \\le x \\le 360^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}(-0.5931) \\\\ x &\\approx 126.4^\\circ, \\, 360^\\circ - 126.4^\\circ = 233.6^\\circ \\end{aligned}$<br>Combining all branches yields the final set of answers.<br><br>Final Answer: $$x = 32.5^\\circ, \\, 126.4^\\circ, \\, 233.6^\\circ, \\, 327.5^\\circ$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x = 32.7^\\circ, \\, 126.4^\\circ, \\, 233.6^\\circ, \\, 327.3^\\circ$$",
+                "feedback": "Check your evaluation of $c_1 = \\dfrac{1 + \\sqrt{33}}{8} \\approx 0.8431$. Taking the inverse cosine of this value gives $32.5^\\circ$, not $32.7^\circ$. Be careful with calculator inputs and rounding slips."
+            },
+            {
+                "ans": "$$x = 32.5^\\circ, \\, 327.5^\\circ$$",
+                "feedback": "Remember to solve for both branches of your quadratic formula result. The negative branch $\\cos x \\approx -0.5931$ yields two valid solutions ($126.4^\circ$ and $233.6^\circ$) within the domain."
+            },
+            {
+                "ans": "$$x = 32.5^\\circ, \\, 126.4^\\circ$$",
+                "feedback": "Each trigonometric branch has two solutions in the full $0^\circ \\le x \\le 360^\circ$ interval. You must find the companion quadrant angles (using $360^\circ - \\theta$) to complete the set."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Double-Angle Cosine Selection",
+            "content": "The double-angle cosine has three forms: $\\cos 2x = \\cos^2 x - \\sin^2 x$, $\\cos 2x = 2\\cos^2 x - 1$, and $\\cos 2x = 1 - 2\\sin^2 x$. Since the other term in this equation is $\\cos x$, using the form $\\cos 2x = 2\\cos^2 x - 1$ is essential to produce a standard quadratic equation in cosine."
+        }
+    },
+    {
+        "id": "004264",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Equations",
+        "subtopic": [
+            "Double Angle Formula",
+            "Factoring Trigonometric Functions",
+            "Radian Measures"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>1. Show that the equation $\\sin 2x = 3\\tan x$ can be written in the form:<br>$$\\tan x(2\\cos^2 x - 3) = 0$$<br>2. Solve the equation $\\sin 2x = 3\\tan x$ for $0 \\le x \\le 2\\pi$, giving your answers in terms of $\\pi$.",
+        "steps": [
+            "Substitute $\\sin 2x = 2\\sin x \\cos x$ and $\\tan x = \\dfrac{\\sin x}{\\cos x}$ into the original equation:<br>$$2\\sin x \\cos x = 3\\dfrac{\\sin x}{\\cos x}$$",
+            "Multiply both sides of the equation by $\\cos x$, noting that $\\cos x \\ne 0$ because $\\tan x$ is undefined where $\\cos x = 0$:<br>$$2\\sin x \\cos^2 x = 3\\sin x$$",
+            "Bring all terms to one side and factorise out the common term $\\sin x$:<br>$$2\\sin x \\cos^2 x - 3\\sin x = 0 \\implies \\sin x\\left(2\\cos^2 x - 3\\right) = 0$$",
+            "Substitute $\\sin x = \\tan x \\cos x$ (as $\\cos x \\ne 0$ in the domain of tangent) to obtain the required form:<br>$$\\tan x \\cos x\\left(2\\cos^2 x - 3\\right) = 0 \\implies \\tan x\\left(2\\cos^2 x - 3\\right) = 0$$",
+            "Set up the two branches to solve:<br>$$\\tan x = 0 \\quad \\text{or} \\quad 2\\cos^2 x - 3 = 0$$",
+            "Solve the first branch, $\\tan x = 0$, in the domain $0 \\le x \\le 2\\pi$:<br>$$x = 0, \\, \\pi, \\, 2\\pi$$",
+            "Solve the second branch, $2\\cos^2 x - 3 = 0 \\implies \\cos^2 x = 1.5$. Since $\\cos^2 x \\le 1$ for all real $x$, there are no real solutions from this branch. Combining the results yields the final answer.<br><br>Final Answer: $$x = 0, \\, \\pi, \\, 2\\pi$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x = 0, \\, \\dfrac{\\pi}{2}, \\, \\pi, \\, \\dfrac{3\\pi}{2}, \\, 2\\pi$$",
+                "feedback": "Be careful with your asymptote boundaries. Although $\\cos x = 0$ would mathematically satisfy $2\\sin x \\cos^2 x = 3\\sin x$, the values $x = \\dfrac{\\pi}{2}$ and $x = \\dfrac{3\\pi}{2}$ make $\\tan x$ in the original equation undefined, so they must be excluded."
+            },
+            {
+                "ans": "$$x = 0, \\, \\pi$$",
+                "feedback": "Check your domain boundaries. Since the interval is inclusive of the upper limit ($0 \\le x \\le 2\\pi$), the root $x = 2\\pi$ is a valid solution and must be included."
+            },
+            {
+                "ans": "$$x = \\pi, \\, 2\\pi$$",
+                "feedback": "Don't forget to include the starting boundary. Since $\\tan 0 = 0$, $x = 0$ is a valid root within the inclusive domain."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Checking Tangent Asymptotes",
+            "content": "When working with tangent in equations, always verify that your solutions do not coincide with the vertical asymptotes of $\\tan x$. For example, while $\\cos x = 0$ would satisfy $2\\sin x \\cos^2 x = 3\\sin x$, the values $x = \\dfrac{\\pi}{2}$ and $x = \\dfrac{3\\pi}{2}$ make $\\tan x$ undefined, so they must be discarded."
+        }
+    },
+    {
+        "id": "004265",
+        "board": "OCR MEI",
+        "level": "A",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Equations",
+        "subtopic": [
+            "The Harmonic Form",
+            "Double Angle Formula",
+            "Degree Measures"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>1. Express $3\\sin x + 4\\cos x$ in the form $R\\sin(x + \\alpha)$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$.<br>2. Hence, solve the equation $3\\sin x + 4\\cos x = 2.5$ for $0^\\circ \\le x \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
+        "steps": [
+            "Use the compound angle expansion to equate the expressions:<br>$$3\\sin x + 4\\cos x = R\\sin x\\cos\\alpha + R\\cos x\\sin\\alpha$$<br>Compare the coefficients of $\\sin x$ and $\\cos x$:<br>$$R\\cos\\alpha = 3 \\quad \\text{and} \\quad R\\sin\\alpha = 4$$",
+            "Find the amplitude $R$ and the phase shift angle $\\alpha$:<br>$$\\begin{aligned} R &= \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5 \\\\ \\tan\\alpha &= \\dfrac{4}{3} \\implies \\alpha = \\tan^{-1}\\left(\\dfrac{4}{3}\\right) \\approx 53.1^\\circ \\end{aligned}$$<br>This gives the harmonic form: $5\\sin(x + 53.1^\\circ)$.",
+            "Substitute this harmonic form into the target equation and solve for the composite angle:<br>$$\\begin{aligned} 5\\sin(x + 53.1^\\circ) &= 2.5 \\\\ \\sin(x + 53.1^\\circ) &= 0.5 \\end{aligned}$$",
+            "Let $u = x + 53.1^\\circ$. Since the domain is $0^\\circ \\le x \\le 360^\\circ$, the search interval for $u$ is shifted to $53.1^\\circ \\le u \\le 413.1^\\circ$. Solve $\\sin u = 0.5$ in this interval:<br>$$u = 150.0^\\circ, \\, 390.0^\\circ$$<br>(Note that $u = 30.0^\\circ$ is outside our shifted search interval.)",
+            "Substitute $u = x + 53.1^\\circ$ back to solve for $x$:<br>\\begin{aligned} x + 53.1^\\circ = 150.0^\\circ &\\implies x = 96.9^\\circ \\\\ x + 53.1^\\circ = 390.0^\\circ &\\implies x = 336.9^\\circ \\end{aligned}<br><br>Final Answer: $$5\\sin(x + 53.1^\\circ), \\quad x = 96.9^\\circ, \\, 336.9^\\circ$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$5\\sin(x + 53.1^\\circ), \\quad x = -23.1^\\circ, \\, 96.9^\\circ$",
+                "feedback": "Be careful with your domain boundaries. While $x = -23.1^\\circ$ is a mathematical solution, it lies outside the required interval $0^\circ \le x \le 360^\circ$. Adding $360^\circ$ to $-23.1^\circ$ yields the correct positive fourth-quadrant solution $336.9^\circ$."
+            },
+            {
+                "ans": "$5\\sin(x + 53.1^\\circ), \\quad x = 96.9^\\circ, \\, 296.9^\\circ$",
+                "feedback": "Check your second family solution. The root is found from $x + 53.1^\circ = 390.0^\circ \\implies x = 336.9^\circ$, not $x = 296.9^\circ$."
+            },
+            {
+                "ans": "$5\\sin(x + 53.1^\\circ), \\quad x = 96.9^\\circ$",
+                "feedback": "You found the first solution, but remember that the shifted domain $53.1^\circ \le u \le 413.1^\circ$ contains two valid angles where $\\sin u = 0.5$. You must also include the solution derived from $u = 390.0^\circ$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Composite Domain Shifts",
+            "content": "When solving equations of the form $\\sin(x + \\alpha) = k$, remember to shift your search domain by $\\alpha$. Since $0^\\circ \\le x \\le 360^\\circ$, your search interval for $u = x + 53.1^\\circ$ is $53.1^\\circ \\le u \\le 413.1^\\circ$. This ensures you correctly identify $u = 390^\\circ$ (which yields $x = 336.9^\\circ$) while discarding $u = 30^\\circ$."
+        }
     }
+
 
 
 ];
