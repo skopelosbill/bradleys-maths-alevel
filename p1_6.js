@@ -1422,7 +1422,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Splitting Complex Fractions",
-            "content": "When integrating terms like $\\dfrac{-x+2}{x^2+4}$, you must split the fraction into two distinct parts: $\\dfrac{-x}{x^2+4}$ and $\\dfrac{2}{x^2+4}$. The first part integrates to a natural logarithm using the standard substitution rule $\\int \\dfrac{f'(x)}{f(x)}\\text{d}x$, while the second part integrates directly to an inverse tangent (arctan) function. Attempting to integrate them as a single entity is a common barrier to progress."
+            "content": "When integrating terms like $\\dfrac{ -x + 2 }{ x^2 + 4 }$, you must split the fraction into two distinct parts: $\\dfrac{-x}{x^2+4}$ and $\\dfrac{2}{x^2+4}$. The first part integrates to a natural logarithm using the standard substitution rule $\\int \\dfrac{f'(x)}{f(x)}\\text{d}x$, while the second part integrates directly to an inverse tangent (arctan) function. Attempting to integrate them as a single entity is a common barrier to progress."
         }
     },
     {
