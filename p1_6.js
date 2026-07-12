@@ -1384,47 +1384,47 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "004286",
-        "board": "OCR MEI",
-        "level": "A Level",
-        "major_area": "Calculus",
-        "topic": "Differential Equations",
-        "subtopic": [
-            "Partial Fractions",
-            "Separation of Variables",
-            "First-Order Differential Equations"
-        ],
-        "img": false,
-        "question": "In this question you must show detailed reasoning.<br><br>It is given that:<br>$$f(x) = \\dfrac{x^2 + 4x + 4}{(x - 2)(x^2 + 4)}$$<br>1. Express $f(x)$ in partial fractions.<br>2. Solve the differential equation:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = y f(x)$$<br>giving your answer in the form $y = g(x)$, subject to the boundary condition $y = 2$ when $x = 0$.",
-        "steps": [
-            "Set up the partial fraction decomposition for a linear factor and an irreducible quadratic factor:<br>\\begin{aligned} \\dfrac{x^2 + 4x + 4}{(x - 2)(x^2 + 4)} &= \\dfrac{A}{x - 2} + \\dfrac{Bx + C}{x^2 + 4} \\end{aligned}<br>Multiply both sides by the common denominator to obtain the identity:<br>\\begin{aligned} x^2 + 4x + 4 &= A(x^2 + 4) + (Bx + C)(x - 2) \\end{aligned}",
-            "To solve for $A$, substitute $x = 2$ into the identity:<br>\\begin{aligned} (2)^2 + 4(2) + 4 &= A((2)^2 + 4) + (2B + C)(0) \\\\ 16 &= 8A \\\\ A &= 2 \\end{aligned}",
-            "Substitute $A = 2$ back into the identity and expand the right-hand side to solve for $B$ and $C$ by equating coefficients:<br>\\begin{aligned} x^2 + 4x + 4 &= 2(x^2 + 4) + (Bx + C)(x - 2) \\\\ x^2 + 4x + 4 &= 2x^2 + 8 + Bx^2 - 2Bx + Cx - 2C \\\\ x^2 + 4x + 4 &= (2 + B)x^2 + (C - 2B)x + (8 - 2C) \\end{aligned}<br>Equating coefficients:<ul><li>For $x^2$: $2 + B = 1 \\implies B = -1$</li><li>For the constant: $8 - 2C = 4 \\implies 2C = 4 \\implies C = 2$</li></ul>Thus, the partial fraction expression is:<br>$$f(x) = \\dfrac{2}{x - 2} + \\dfrac{2 - x}{x^2 + 4}$$",
-            "To solve the differential equation $\\dfrac{\\text{d}y}{\\text{d}x} = y f(x)$, separate the variables and integrate both sides:<br>\\begin{aligned} \\int \\dfrac{1}{y} \\,\\text{d}y &= \\int f(x) \\,\\text{d}x \\\\ \\int \\dfrac{1}{y} \\,\\text{d}y &= \\int \\left( \\dfrac{2}{x - 2} + \\dfrac{2}{x^2 + 4} - \\dfrac{x}{x^2 + 4} \\right) \\,\\text{d}x \\end{aligned}",
-            "Perform the integration on each term on the right-hand side carefully, using the standard log integrals and the inverse tangent rule:<br>\\begin{aligned} \\ln|y| &= 2\\ln|x - 2| + \\arctan\\left(\\dfrac{x}{2}\\right) - \\dfrac{1}{2}\\ln(x^2 + 4) + c \\end{aligned}<br>Combine the logarithmic terms using standard log laws:<br>\\begin{aligned} \\ln|y| &= \\ln\\left( \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\right) + \\arctan\\left(\\dfrac{x}{2}\\right) + c \\end{aligned}",
-            "Exponentiate both sides to write the general solution in terms of a constant $K = \\text{e}^c$:<br>\\begin{aligned} y &= K \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\text{e}^{\\arctan(x/2)} \\end{aligned}",
-            "Apply the boundary condition $y = 2$ when $x = 0$ to solve for $K$:<br>\\begin{aligned} 2 &= K \\dfrac{(0 - 2)^2}{\\sqrt{0^2 + 4}} \\text{e}^{\\arctan(0)} \\\\ 2 &= K \\left( \\dfrac{4}{2} \\right) (1) \\\\ 2 &= 2K \\implies K = 1 \\end{aligned}<br>Substituting $K = 1$ back into the general solution yields:<br>$$y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\text{e}^{\\arctan(x/2)}$$<br><br>Final Answer: $y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\text{e}^{\\arctan(x/2)}$"
-        ],
-        "pi_options": [
-            {
-                "ans": "$$y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\text{e}^{2\\arctan(x/2)}$$",
-                "feedback": "Check your integration of the term $\\dfrac{2}{x^2+4}$. Recall the standard integration formula $\\int \\dfrac{1}{x^2+a^2} \\text{d}x = \\dfrac{1}{a}\\arctan\\left(\\dfrac{x}{a}\\right)$. Since $a = 2$, this integral is $\\dfrac{2}{2}\\arctan\\left(\\dfrac{x}{2}\\right) = \\arctan\\left(\\dfrac{x}{2}\\right)$, not $2\\arctan\\left(\\dfrac{x}{2}\\right)$."
-            },
-            {
-                "ans": "$$y = \\dfrac{x - 2}{\\sqrt{x^2 + 4}} \\text{e}^{\\arctan(x/2)}$$",
-                "feedback": "Check your partial fractions decomposition. Ensure you set up the linear numerator for the quadratic denominator as $Bx + C$. Equating coefficients should yield $A = 2, B = -1, C = 2$, not $A = 1, B = 0, C = 4$."
-            },
-            {
-                "ans": "$$y = 2 \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\text{e}^{\\arctan(x/2)}$$",
-                "feedback": "Check your evaluation of the constant of integration $K$ using the boundary condition $y = 2$ when $x = 0$. Substituting $x = 0$ yields $2 = K \\dfrac{(-2)^2}{\\sqrt{4}} \\text{e}^0 \\implies 2 = 2K \\implies K = 1$. It appears you may have incorrectly evaluated $K = 2$."
-            }
-        ],
-        "bradley_insight": {
-            "type": "deeper",
-            "title": "The Head Teacher's Eye: Splitting Complex Fractions",
-            "content": "When integrating terms like $\\dfrac{ -x + 2 }{ x^2 + 4 }$, you must split the fraction into two distinct parts: $\\dfrac{-x}{x^2+4}$ and $\\dfrac{2}{x^2+4}$. The first part integrates to a natural logarithm using the standard substitution rule $\\int \\dfrac{f'(x)}{f(x)}\\text{d}x$, while the second part integrates directly to an inverse tangent (arctan) function. Attempting to integrate them as a single entity is a common barrier to progress."
+    "id": "004286",
+    "board": "OCR MEI",
+    "level": "A Level",
+    "major_area": "Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Partial Fractions",
+        "Separation of Variables",
+        "First-Order Differential Equations"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>It is given that:<br>$$f(x) = \\dfrac{x^2 + 4x + 4}{(x - 2)(x^2 + 4)}$$<br>1. Express $f(x)$ in partial fractions.<br>2. Solve the differential equation:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = y f(x)$$<br>giving your answer in the form $y = g(x)$, subject to the boundary condition $y = 2$ when $x = 0$.",
+    "steps": [
+        "Set up the partial fraction decomposition for a linear factor and an irreducible quadratic factor:<br>\\begin{aligned} \\dfrac{x^2 + 4x + 4}{(x - 2)(x^2 + 4)} &= \\dfrac{A}{ x - 2 } + \\dfrac{Bx + C}{ x^2 + 4 } \\end{aligned}<br>Multiply both sides by the common denominator to obtain the identity:<br>\\begin{aligned} x^2 + 4x + 4 &= A( x^2 + 4 ) + (Bx + C)( x - 2 ) \\end{aligned}",
+        "To solve for $A$, substitute $x = 2$ into the identity:<br>\\begin{aligned} (2)^2 + 4(2) + 4 &= A((2)^2 + 4) + (2B + C)(0) \\\\ 16 &= 8A \\\\ A &= 2 \\end{aligned}",
+        "Substitute $A = 2$ back into the identity and expand the right-hand side to solve for $B$ and $C$ by equating coefficients:<br>\\begin{aligned} x^2 + 4x + 4 &= 2( x^2 + 4 ) + (Bx + C)( x - 2 ) \\\\ x^2 + 4x + 4 &= 2x^2 + 8 + Bx^2 - 2Bx + Cx - 2C \\\\ x^2 + 4x + 4 &= (2 + B)x^2 + (C - 2B)x + (8 - 2C) \\end{aligned}<br>Equating coefficients:<ul><li>For $x^2$: $2 + B = 1 \\implies B = -1$</li><li>For the constant: $8 - 2C = 4 \\implies 2C = 4 \\implies C = 2$</li></ul>Thus, the partial fraction expression is:<br>$$f(x) = \\dfrac{2}{ x - 2 } + \\dfrac{2 - x}{ x^2 + 4 }$$",
+        "To solve the differential equation $\\dfrac{\\text{d}y}{\\text{d}x} = y f(x)$, separate the variables and integrate both sides:<br>\\begin{aligned} \\int \\dfrac{1}{y} \\,\\text{d}y &= \\int f(x) \\,\\text{d}x \\\\ \\int \\dfrac{1}{y} \\,\\text{d}y &= \\int \\left( \\dfrac{2}{ x - 2 } + \\dfrac{2}{ x^2 + 4 } - \\dfrac{x}{ x^2 + 4 } \\right) \\,\\text{d}x \\end{aligned}",
+        "Perform the integration on each term on the right-hand side carefully, using the standard log integrals and the inverse tangent rule:<br>\\begin{aligned} \\ln|y| &= 2\\ln|x - 2| + \\arctan\\left(\\dfrac{x}{2}\\right) - \\dfrac{1}{2}\\ln( x^2 + 4 ) + c \\end{aligned}<br>Combine the logarithmic terms using standard log laws:<br>\\begin{aligned} \\ln|y| &= \\ln\\left( \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\right) + \\arctan\\left(\\dfrac{x}{2}\\right) + c \\end{aligned}",
+        "Exponentiate both sides to write the general solution in terms of a constant $K = \\text{e}^c$:<br>\\begin{aligned} y &= K \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\text{e}^{\\arctan(x/2)} \\end{aligned}",
+        "Apply the boundary condition $y = 2$ when $x = 0$ to solve for $K$:<br>\\begin{aligned} 2 &= K \\dfrac{(0 - 2)^2}{\\sqrt{ 0^2 + 4 }} \\text{e}^{\\arctan(0)} \\\\ 2 &= K \\left( \\dfrac{4}{2} \\right) (1) \\\\ 2 &= 2K \\implies K = 1 \\end{aligned}<br>Substituting $K = 1$ back into the general solution yields:<br>$$y = \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\text{e}^{\\arctan(x/2)}$$<br><br>Final Answer: $y = \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\text{e}^{\\arctan(x/2)}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$y = \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\text{e}^{2\\arctan(x/2)}$$",
+            "feedback": "Check your integration of the term $\\dfrac{2}{ x^2 + 4 }$. Recall the standard integration formula $\\int \\dfrac{1}{ x^2 + a^2 } \\text{d}x = \\dfrac{1}{a}\\arctan\\left(\\dfrac{x}{a}\\right)$. Since $a = 2$, this integral is $\\dfrac{2}{2}\\arctan\\left(\\dfrac{x}{2}\\right) = \\arctan\\left(\\dfrac{x}{2}\\right)$, not $2\\arctan\\left(\\dfrac{x}{2}\\right)$."
+        },
+        {
+            "ans": "$$y = \\dfrac{x - 2}{\\sqrt{ x^2 + 4 }} \\text{e}^{\\arctan(x/2)}$$",
+            "feedback": "Check your partial fractions decomposition. Ensure you set up the linear numerator for the quadratic denominator as $Bx + C$. Equating coefficients should yield $A = 2, B = -1, C = 2$, not $A = 1, B = 0, C = 4$."
+        },
+        {
+            "ans": "$$y = 2 \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\text{e}^{\\arctan(x/2)}$$",
+            "feedback": "Check your evaluation of the constant of integration $K$ using the boundary condition $y = 2$ when $x = 0$. Substituting $x = 0$ yields $2 = K \\dfrac{(-2)^2}{\\sqrt{4}} \\text{e}^0 \\implies 2 = 2K \\implies K = 1$. It appears you may have incorrectly evaluated $K = 2$."
         }
-    },
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Splitting Complex Fractions",
+        "content": "When integrating terms like $\\dfrac{2 - x}{ x^2 + 4 }$, you must split the fraction into two distinct parts: $\\dfrac{-x}{ x^2 + 4 }$ and $\\dfrac{2}{ x^2 + 4 }$. The first part integrates to a natural logarithm using the standard substitution rule $\\int \\dfrac{f'(x)}{f(x)}\\text{d}x$, while the second part integrates directly to an inverse tangent (arctan) function. Attempting to integrate them as a single entity is a common barrier to progress."
+    }
+},
     {
         "id": "004287",
         "board": "OCR MEI",
