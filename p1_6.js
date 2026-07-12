@@ -1178,7 +1178,212 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Thinking in Terms of dx/dy",
             "content": "To find points where the tangent is parallel to the $y$-axis (vertical tangents), we set the denominator of $\\dfrac{\\text{d}y}{\\text{d}x}$ equal to zero. Alternatively, you can think of this as finding where the reciprocal derivative $\\dfrac{\\text{d}x}{\\text{d}y}$ is equal to zero! Keeping this duality in mind can make handling vertical tangents much more intuitive."
         }
+    },
+    {
+        "id": "004281",
+        "board": "OCR MEI",
+        "level": "A Level",
+        "major_area": "Calculus",
+        "topic": "Algebraic and Exponential Modeling",
+        "subtopic": [
+            "Quadratic Modeling",
+            "Exponential Modeling",
+            "Limiting Values"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>An A-Level Chemistry student, Bethany, records her score $s$ (out of 100) on a weekly practice quiz against $t$ hours of active preparation.<br><br>Over the course of a term, she notices that her score can be modeled by the quadratic formula:<br>$$s = P - Q(t - R)^2, \\quad t \\ge 0$$<br>where $P$, $Q$, and $R$ are positive constants.<br><ul><li>Bethany finds that her maximum score of $80$ is achieved when she spends exactly $3$ hours preparing.</li><li>On a week where she spent no time preparing ($t = 0$), she scored $35$.</li></ul><br>1. Find the values of the constants $P$, $Q$, and $R$.<br>2. According to this model, if Bethany prepares for $1$ hour and $30$ minutes, what score will she achieve?<br>3. Find the maximum amount of time that Bethany could have spent preparing for this quadratic model to remain valid (i.e., for $s \\ge 0$).<br><br>To improve her scores further, Bethany adopts a new study strategy using spaced repetition over several days. She proposes a new exponential model for her quiz score, $s$, after $t$ hours of spaced repetition:<br>$$s = 35 + 55\\left(1 - \\text{e}^{-0.5t}\\right)$$<br>For the next three quizzes, she records her study times and quiz results in the table below:<br><br><table style='width:60%; margin: 10px auto; border-collapse: collapse; text-align: center; border: 1px solid #ccc;'><tr style='border-bottom: 1px solid #ccc; background-color: #f9f9f9;'><th style='padding: 8px;'>$t$ (hours)</th><td style='padding: 8px;'>$2$</td><td style='padding: 8px;'>$4$</td><td style='padding: 8px;'>$6$</td></tr><tr><th style='padding: 8px;'>$s$ (score)</th><td style='padding: 8px;'>$70$</td><td style='padding: 8px;'>$83$</td><td style='padding: 8px;'>$87$</td></tr></table><br>4. Verify that Bethany's recorded data is consistent with her new exponential model.<br>5. Bethany's teacher advises her to spend at least $15$ hours preparing in future. By considering the limiting value of her score as $t$ becomes very large, determine whether this is good advice.",
+        "steps": [
+            "For a quadratic model of the form $s = P - Q(t - R)^2$, the vertex represents the maximum value. The maximum occurs at $t = R$ with value $s = P$.<br>Comparing this to the given information:<br>\\begin{aligned} R &= 3 \\\\ P &= 80 \\end{aligned}",
+            "Substitute these values and the boundary point $(t, s) = (0, 35)$ into the quadratic equation to solve for $Q$:<br>\\begin{aligned} 35 &= 80 - Q(0 - 3)^2 \\\\ 35 &= 80 - 9Q \\\\ 9Q &= 45 \\\\ Q &= 5 \\end{aligned}<br>Thus, the constants are $P = 80$, $Q = 5$, and $R = 3$, giving the model equation:<br>$$s = 80 - 5(t - 3)^2$$",
+            "To find the predicted score for $1$ hour and $30$ minutes, convert the time to hours ($t = 1.5$) and substitute it into the quadratic model:<br>\\begin{aligned} s &= 80 - 5(1.5 - 3)^2 \\\\ &= 80 - 5(-1.5)^2 \\\\ &= 80 - 5(2.25) \\\\ &= 80 - 11.25 = 68.75 \\end{aligned}<br>Bethany's predicted score is $68.75$.",
+            "To find the maximum preparation time for which the quadratic model is valid, find when the predicted score remains non-negative ($s \\ge 0$):<br>\\begin{aligned} 80 - 5(t - 3)^2 &\\ge 0 \\\\ 80 &\\ge 5(t - 3)^2 \\\\ 16 &\\ge (t - 3)^2 \\end{aligned}<br>Taking square roots yields:<br>\\begin{aligned} -4 \\le t - 3 &\\le 4 \\\\ -1 \\le t &\\le 7 \\end{aligned}<br>Since preparation time must be non-negative ($t \\ge 0$), the maximum preparation time for the model to remain valid is $7$ hours.",
+            "Verify the three experimental data points with the new exponential model $s = 35 + 55\\left(1 - \\text{e}^{-0.5t}\\right)$:<br><ul><li>For $t = 2$: $s = 35 + 55\\left(1 - \\text{e}^{-1}\\right) \\approx 35 + 55(1 - 0.3679) \\approx 69.77 \\approx 70$.</li><li>For $t = 4$: $s = 35 + 55\\left(1 - \\text{e}^{-2}\\right) \\approx 35 + 55(1 - 0.1353) \\approx 82.56 \\approx 83$.</li><li>For $t = 6$: $s = 35 + 55\\left(1 - \\text{e}^{-3}\\right) \\approx 35 + 55(1 - 0.0498) \\approx 87.26 \\approx 87$.</li></ul><br>Since all three calculated scores match the table values when rounded to the nearest integer, the recorded data is consistent with the model.",
+            "To evaluate the teacher's advice, find the limiting value of the score as $t \\to \\infty$:<br>\\begin{aligned} \\lim_{t \\to \\infty} s &= \\lim_{t \\to \\infty} \\left[ 35 + 55\\left(1 - \\text{e}^{-0.5t}\\right) \\right] \\\\ &= 35 + 55(1 - 0) \\\\ &= 90 \\end{aligned}<br>At $t = 15$ hours, the predicted score is $s = 35 + 55\\left(1 - \\text{e}^{-7.5}\\right) \\approx 89.97$. This is exceptionally close to the ceiling limit of $90$. Since an extra $9$ hours of revision beyond $6$ hours only increases the score by roughly $3\\%$, the advice to study for at least $15$ hours is excessive and not efficient.<br><br>Final Answer: $P = 80, Q = 5, R = 3$; $t = 1.5 \\implies s = 68.75$; max validity time is $7$ hours; advice is not good due to diminishing returns."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$P = 80, Q = 5, R = 3; \\quad t = 1.5 \\implies s = 77.5; \\quad \\text{Max validity time: } 7 \\text{ hours}$$",
+                "feedback": "Check your substitution of $t = 1.5$ into the quadratic model. The term is $(t - 3)^2 = (-1.5)^2 = 2.25$. Make sure you square the negative difference before multiplying by $Q = 5$ and subtracting from $P = 80$."
+            },
+            {
+                "ans": "$$P = 80, Q = 5, R = 3; \\quad t = 1.5 \\implies s = 68.75; \\quad \\text{Max validity time: } 19 \\text{ hours}$$",
+                "feedback": "Check your step when solving the quadratic inequality $16 \\ge (t - 3)^2$. When taking the square root, you must set $-4 \\le t - 3 \\le 4$, which leads to $t \\le 7$. It seems you may have mistakenly calculated $16 + 3 = 19$."
+            },
+            {
+                "ans": "$$P = 35, Q = 5, R = 3; \\quad t = 1.5 \\implies s = 23.75; \\quad \\text{Max validity time: } 7 \\text{ hours}$$",
+                "feedback": "Check your assignment of the parameters $P$ and $s(0)$. The maximum score is achieved at the vertex, so $P = 80$ (maximum score) and $s(0) = 35$ (score with zero preparation). It seems you swapped these values."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Asymptotes and Limits",
+            "content": "For any model of the form $y = A + B(1 - \\text{e}^{-kt})$ where $k > 0$, as $t \\to \\infty$, the exponential term $\\text{e}^{-kt}$ decays rapidly to $0$. This means the horizontal asymptote or ceiling of the model is always $A + B$. Recognising this structure allows you to immediately identify the limiting value without performing complex calculations."
+        }
+    },
+    {
+        "id": "004282",
+        "board": "OCR MEI",
+        "level": "A Level",
+        "major_area": "Calculus",
+        "topic": "Algebraic and Exponential Modeling",
+        "subtopic": [
+            "Cubic Optimization",
+            "Stationary Points",
+            "Applied Calculus"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A manufacturing business models its daily operating cost, $C$ (in hundreds of pounds), based on producing $x$ thousand units of a specific component:<br>$$C = x^3 - 9x^2 + 24x + 10, \\quad 0 \\le x \\le 5$$<br>1. Write down the daily operating cost of the business when no components are produced.<br>2. Use differentiation to find the production levels, $x$, that correspond to the stationary points on the cost curve, and determine the nature of each stationary point.<br>3. Use your results to find the minimum daily operating cost for the business when it is actively producing components (i.e. $x > 0$).",
+        "steps": [
+            "To find the cost when no components are produced, substitute $x = 0$ into the cost function:<br>\\begin{aligned} C(0) &= (0)^3 - 9(0)^2 + 24(0) + 10 \\\\ &= 10 \\end{aligned}<br>Since $C$ is measured in hundreds of pounds, the daily operating cost is $10 \\times 100 = £1,000$.",
+            "Differentiate the cost function with respect to $x$ to find the first derivative:<br>\\begin{aligned} \\dfrac{\\text{d}C}{\\text{d}x} &= 3x^2 - 18x + 24 \\end{aligned}",
+            "To find the stationary points, set the derivative to $0$ and solve for $x$:<br>\\begin{aligned} 3x^2 - 18x + 24 &= 0 \\\\ x^2 - 6x + 8 &= 0 \\\\ (x - 2)(x - 4) &= 0 \\end{aligned}<br>This yields two stationary production levels: $x = 2$ and $x = 4$.",
+            "Determine the nature of the stationary points using the second derivative:<br>\\begin{aligned} \\dfrac{\\text{d}^2C}{\\text{d}x^2} &= 6x - 18 \\end{aligned}<br>Evaluate this at each stationary point:<ul><li>At $x = 2$: $\\dfrac{\\text{d}^2C}{\\text{d}x^2} = 6(2) - 18 = -6 < 0$ (Local Maximum)</li><li>At $x = 4$: $\\dfrac{\\text{d}^2C}{\\text{d}x^2} = 6(4) - 18 = 6 > 0$ (Local Minimum)</li></ul>",
+            "To find the minimum operating cost when actively producing components ($x > 0$), evaluate the cost function at the local minimum $x = 4$:<br>\\begin{aligned} C(4) &= (4)^3 - 9(4)^2 + 24(4) + 10 \\\\ &= 64 - 144 + 96 + 10 \\\\ &= 26 \\end{aligned}<br>Since $C = 26$ represents hundreds of pounds, the minimum daily operating cost during active production is $26 \\times 100 = £2,600$.<br><br>Final Answer: Cost is £1,000 when $x = 0$; stationary points at $x = 2$ (local max) and $x = 4$ (local min); minimum cost during active production is £2,600."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Initial Cost: } £10; \\quad x = 2 \\text{ (max)}, x = 4 \\text{ (min)}; \\quad \\text{Minimum Cost: } £26$$",
+                "feedback": "Check the units defined in the problem. The cost $C$ is measured in hundreds of pounds, so $C = 10$ and $C = 26$ correspond to £1,000 and £2,600 respectively, not £10 and £26."
+            },
+            {
+                "ans": "$$\\text{Initial Cost: } £1,000; \\quad x = 2 \\text{ (min)}, x = 4 \\text{ (max)}; \\quad \\text{Minimum Cost: } £3,000$$",
+                "feedback": "Check your second derivative evaluation. At $x = 4$, $\\dfrac{\\text{d}^2C}{\\text{d}x^2} = 6 > 0$, which signifies a local minimum. It seems you swapped the classifications of the maximum and minimum points."
+            },
+            {
+                "ans": "$$\\text{Initial Cost: } £1,000; \\quad x = 3 \\text{ and } x = 8; \\quad \\text{Minimum Cost: } £2,600$$",
+                "feedback": "Check your factoring steps for the quadratic equation $3x^2 - 18x + 24 = 0$. After dividing by 3 to get $x^2 - 6x + 8 = 0$, the roots are $x = 2$ and $x = 4$, since $(-2) \\times (-4) = 8$ and $(-2) + (-4) = -6$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Boundaries vs. Local Extrema",
+            "content": "When asked to find the minimum of a real-world modeling function on a closed interval (such as $0 \\le x \\le 5$), mathematically you must check both the local minima and the boundary values. At $x = 0$, the cost is technically lower (£1,000), but this represents zero production. Always read carefully to see if the question restricts active production to $x > 0$."
+        }
+    },
+    {
+        "id": "004283",
+        "board": "OCR MEI",
+        "level": "A Level",
+        "major_area": "Calculus",
+        "topic": "Algebraic and Exponential Modeling",
+        "subtopic": [
+            "Exponential Decay",
+            "Solving with Logarithms",
+            "Newton's Law of Cooling"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The temperature, $\\theta$ (in $^\\circ\\text{C}$), of a cup of coffee left in a room $t$ minutes after being poured is modeled by the equation:<br>$$\\theta = T_R + (\\theta_0 - T_R)\\text{e}^{-kt}, \\quad t \\ge 0$$<br>where $T_R$ is the constant room temperature, $\\theta_0$ is the initial temperature of the coffee, and $k$ is a positive constant.<br><ul><li>The room temperature is constant at $20^\\circ\\text{C}$.</li><li>The coffee is initially poured at $85^\\circ\\text{C}$.</li><li>After $10$ minutes, the coffee has cooled to $55^\\circ\\text{C}$.</li></ul><br>1. Find the exact value of the constant $k$, giving your answer in the form $a \\ln b$ where $a$ and $b$ are rational numbers.<br>2. According to this model, what will the temperature of the coffee be after $20$ minutes?<br>3. Find the time taken, in minutes, for the coffee to cool to $35^\\circ\\text{C}$. Give your answer to $1$ decimal place.",
+        "steps": [
+            "Substitute the known constants $T_R = 20$ and $\\theta_0 = 85$ into the model equation:<br>\\begin{aligned} \\theta &= 20 + (85 - 20)\\text{e}^{-kt} \\\\ \\theta &= 20 + 65\\text{e}^{-kt} \\end{aligned}",
+            "To find $k$, use the point $t = 10$ and $\\theta = 55$, then solve the exponential equation using logarithms:<br>\\begin{aligned} 55 &= 20 + 65\\text{e}^{-10k} \\\\ 35 &= 65\\text{e}^{-10k} \\\\ \\dfrac{7}{13} &= \\text{e}^{-10k} \\\\ \\ln\\left(\\dfrac{7}{13}\\right) &= -10k \\\\ k &= -\\dfrac{1}{10}\\ln\\left(\\dfrac{7}{13}\\right) = \\dfrac{1}{10}\\ln\\left(\\dfrac{13}{7}\\right) \\end{aligned}",
+            "To find the temperature after $20$ minutes, substitute $t = 20$ into the model. Since $e^{-10k} = \\dfrac{7}{13}$, write the exponential term as a power of this known constant:<br>\\begin{aligned} \\theta(20) &= 20 + 65\\text{e}^{-20k} \\\\ &= 20 + 65\\left(\\text{e}^{-10k}\\right)^2 \\\\ &= 20 + 65\\left(\\dfrac{7}{13}\\right)^2 \\\\ &= 20 + 65\\left(\\dfrac{49}{169}\\right) \\end{aligned}",
+            "Simplify this fraction to find the exact temperature after 20 minutes:<br>\\begin{aligned} \\theta(20) &= 20 + 5\\left(\\dfrac{49}{13}\\right) \\\\ &= 20 + \\dfrac{245}{13} \\\\ &= \\dfrac{260}{13} + \\dfrac{245}{13} = \\dfrac{505}{13} \\approx 38.8^\\circ\\text{C} \\end{aligned}",
+            "To find when the coffee cools to $35^\\circ\\text{C}$, set $\\theta = 35$ and solve for $t$:<br>\\begin{aligned} 35 &= 20 + 65\\text{e}^{-kt} \\\\ 15 &= 65\\text{e}^{-kt} \\\\ \\dfrac{3}{13} &= \\text{e}^{-kt} \\\\ \\ln\\left(\\dfrac{3}{13}\\right) &= -kt \\\\ t &= -\\dfrac{1}{k}\\ln\\left(\\dfrac{3}{13}\\right) = \\dfrac{1}{k}\\ln\\left(\\dfrac{13}{3}\\right) \\end{aligned}",
+            "Substitute the exact value $k = \\dfrac{1}{10}\\ln\\left(\\dfrac{13}{7}\\right)$ to compute $t$:<br>\\begin{aligned} t &= \\dfrac{10\\ln\\left(\\dfrac{13}{3}\\right)}{\\ln\\left(\\dfrac{13}{7}\\right)} \\\\ &\\approx \\dfrac{10 \\times 1.4663}{0.6190} \\\\ &\\approx 24.368 \\approx 24.4 \\text{ minutes} \\end{aligned}<br><br>Final Answer: $k = \\dfrac{1}{10}\\ln\\left(\\dfrac{13}{7}\\right)$; temperature is $\\dfrac{505}{13}^\\circ\\text{C} \\approx 38.8^\\circ\\text{C}$; time taken is $24.4$ minutes."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$k = -\\dfrac{1}{10}\\ln\\left(\\dfrac{13}{7}\\right); \\quad \\theta(20) = 38.8^\\circ\\text{C}; \\quad t = 24.4 \\text{ minutes}$$",
+                "feedback": "Check the sign of your constant $k$. Since the model has a negative exponent built in as $-kt$, the decay constant $k$ must be a positive number. Using the identity $-\\ln\\left(\\dfrac{7}{13}\\right) = \\ln\\left(\\dfrac{13}{7}\\right)$, we find $k = \\dfrac{1}{10}\\ln\\left(\\dfrac{13}{7}\\right)$."
+            },
+            {
+                "ans": "$$k = \\dfrac{1}{10}\\ln\\left(\\dfrac{13}{7}\\right); \\quad \\theta(20) = 45.2^\\circ\\text{C}; \\quad t = 24.4 \\text{ minutes}$$",
+                "feedback": "Check your calculation for $\\theta(20)$. Make sure you square the exponential base $\\text{e}^{-10k} = \\dfrac{7}{13}$ because $\\text{e}^{-20k} = (\\text{e}^{-10k})^2 = \\dfrac{49}{169}$. It appears you may have multiplied by $\\dfrac{7}{13}$ directly without squaring."
+            },
+            {
+                "ans": "$$k = \\dfrac{1}{10}\\ln\\left(\\dfrac{13}{7}\\right); \\quad \\theta(20) = 38.8^\\circ\\text{C}; \\quad t = 14.7 \\text{ minutes}$$",
+                "feedback": "Check your calculation when dividing by $k$. Remember that $t = \\dfrac{10 \\ln(13/3)}{\\ln(13/7)}$. Make sure your fraction structure is set up as a division of natural logarithms rather than subtracting them."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Avoiding Mid-Calculation Rounding",
+            "content": "To prevent rounding errors propagating through your answers, avoid converting constants like $k$ to decimal approximations early in your working. Keeping values in their exact form—such as using the relationship $\\text{e}^{-20k} = \\left(\\text{e}^{-10k}\\right)^2 = \\left(\\dfrac{7}{13}\\right)^2$—allows you to compute secondary parts with integer arithmetic, keeping your calculations precise."
+        }
+    },
+    {
+        "id": "004284",
+        "board": "OCR MEI",
+        "level": "A Level",
+        "major_area": "Calculus",
+        "topic": "Algebraic and Exponential Modeling",
+        "subtopic": [
+            "Logistic Models",
+            "Limiting Values",
+            "Algebraic Exponentials"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The population, $P$, of a rare species of bird introduced to a nature reserve $t$ years after introduction is modeled by the formula:<br>$$P = \\dfrac{1200}{1 + 5\\text{e}^{-0.4t}}, \\quad t \\ge 0$$<br>1. Find the initial population of birds introduced to the reserve.<br>2. Show that after $5$ years, the bird population is approximately $715$ birds.<br>3. State the limiting value of the bird population as $t$ becomes very large, and explain briefly what this represents physically.<br>4. Calculate the time, $t$, at which the bird population reaches $1000$. Give your answer to $1$ decimal place.",
+        "steps": [
+            "To find the initial population, substitute $t = 0$ into the logistic formula:<br>\\begin{aligned} P(0) &= \\dfrac{1200}{1 + 5\\text{e}^{0}} \\\\ &= \\dfrac{1200}{1 + 5(1)} \\\\ &= \\dfrac{1200}{6} = 200 \\end{aligned}<br>The initial population introduced is $200$ birds.",
+            "To find the population after $5$ years, substitute $t = 5$:<br>\\begin{aligned} P(5) &= \\dfrac{1200}{1 + 5\\text{e}^{-0.4(5)}} \\\\ &= \\dfrac{1200}{1 + 5\\text{e}^{-2}} \\end{aligned}",
+            "Use the approximation $\\text{e}^{-2} \\approx 0.1353$ to evaluate the expression:<br>\\begin{aligned} P(5) &\\approx \\dfrac{1200}{1 + 5(0.1353)} \\\\ &\\approx \\dfrac{1200}{1 + 0.6765} \\\\ &\\approx \\dfrac{1200}{1.6765} \\approx 715.78 \\end{aligned}<br>Rounding to the nearest whole number gives $716$ birds, which is approximately $715$ birds.",
+            "Find the limiting value of $P$ as $t \\to \\infty$. As $t$ becomes very large, the term $\\text{e}^{-0.4t}$ approaches $0$:<br>\\begin{aligned} \\lim_{t \\to \\infty} P &= \\dfrac{1200}{1 + 5(0)} \\\\ &= \\dfrac{1200}{1} = 1200 \\end{aligned}<br>In a physical context, this carrying capacity of $1,200$ represents the maximum sustainable population of this bird species that the reserve's resources can support.",
+            "To find when the population reaches $1000$ birds, set $P = 1000$ and solve for $t$:<br>\\begin{aligned} 1000 &= \\dfrac{1200}{1 + 5\\text{e}^{-0.4t}} \\\\ 1 + 5\\text{e}^{-0.4t} &= \\dfrac{1200}{1000} = 1.2 \\\\ 5\\text{e}^{-0.4t} &= 0.2 \\\\ \\text{e}^{-0.4t} &= 0.04 \\end{aligned}",
+            "Take natural logarithms of both sides to isolate $t$:<br>\\begin{aligned} -0.4t &= \\ln(0.04) \\\\ t &= -\\dfrac{\\ln(0.04)}{0.4} \\\\ &\\approx -\\dfrac{-3.2189}{0.4} \\\\ &\\approx 8.047 \\approx 8.0 \\text{ years} \\end{aligned}<br><br>Final Answer: Initial population is $200$; population after $5$ years is $\\approx 716$ (approximately $715$); carrying capacity is $1,200$ birds; population reaches $1,000$ after $8.0$ years."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Initial: } 240; \\quad P(5) \\approx 715; \\quad \\text{Limit: } 1,200; \\quad t = 8.0 \\text{ years}$$",
+                "feedback": "Check your evaluation of $P(0)$ when $t = 0$. Since $\\text{e}^0 = 1$, the denominator is $1 + 5(1) = 6$. It seems you may have neglected the $+ 1$ in the denominator and divided by 5, leading to $\\dfrac{1200}{5} = 240$."
+            },
+            {
+                "ans": "$$\\text{Initial: } 200; \\quad P(5) \\approx 715; \\quad \\text{Limit: } 1,200; \\quad t = 3.5 \\text{ years}$$",
+                "feedback": "Check your algebraic rearrangement when isolating $\\text{e}^{-0.4t}$. From $5\\text{e}^{-0.4t} = 0.2$, dividing by 5 yields $\\text{e}^{-0.4t} = 0.04$. It seems you may have subtracted 5 instead of dividing, which led to an incorrect time value."
+            },
+            {
+                "ans": "$$\\text{Initial: } 200; \\quad P(5) \\approx 715; \\quad \\text{Limit: } 200; \\quad t = 8.0 \\text{ years}$$",
+                "feedback": "Check your limiting value. As $t \\to \\infty$, the term $\\text{e}^{-0.4t}$ decays to $0$, meaning the denominator approaches $1 + 0 = 1$. The limit of the fraction is therefore $\\dfrac{1200}{1} = 1200$. It seems you may have mistakenly evaluated the limit as $t \\to 0$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Logistic Growth and Carrying Capacity",
+            "content": "This formula represents a logistic growth curve (or sigmoid function). Unlike simple exponential growth models which increase indefinitely, the denominator of a logistic model grows over time, creating a self-limiting S-shaped curve. The upper limit as $t \\to \\infty$ is known as the environmental carrying capacity, representing the maximum population size that the ecosystem can support."
+        }
+    },
+    {
+        "id": "004285",
+        "board": "OCR MEI",
+        "level": "A Level",
+        "major_area": "Calculus",
+        "topic": "Algebraic and Exponential Modeling",
+        "subtopic": [
+            "Quadratic Functions",
+            "Vertex Form",
+            "Solving Quadratics"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The height, $h$ (in metres), of a small rocket launched vertically from a platform $t$ seconds after launch is modeled by the quadratic function:<br>$$h = h_0 + ut - 5t^2, \\quad t \\ge 0$$<br>where $h_0$ is the launch height of the platform and $u$ is the initial vertical velocity.<br><ul><li>The launch platform has a height of $15$ metres.</li><li>The rocket reaches a maximum height of $35$ metres.</li></ul><br>1. State the value of $h_0$, and show that the initial vertical velocity of the rocket is $u = 20\\text{ m/s}$.<br>2. Write down the time, $t$, at which the rocket reaches its maximum height.<br>3. Find the total time of the rocket's flight before it impacts the ground ($h = 0$). Give your answer in exact surd form.",
+        "steps": [
+            "The launch height is the height at $t = 0$. Since the platform has a height of $15$ metres:<br>\\begin{aligned} h_0 &= 15 \\end{aligned}<br>This gives the height function: $h = 15 + ut - 5t^2$.",
+            "The maximum height of a quadratic curve of the form $h(t) = at^2 + bt + c$ occurs at its vertex, where the time is given by $t = -\\dfrac{b}{2a}$:<br>\\begin{aligned} t_{\\text{max}} &= -\\dfrac{u}{2(-5)} = \\dfrac{u}{10} \\end{aligned}",
+            "Substitute $t = \\dfrac{u}{10}$ and $h = 35$ into the height equation to solve for the initial velocity $u$:<br>\\begin{aligned} 35 &= 15 + u\\left(\\dfrac{u}{10}\\right) - 5\\left(\\dfrac{u}{10}\\right)^2 \\\\ 35 &= 15 + \\dfrac{u^2}{10} - 5\\left(\\dfrac{u^2}{100}\\right) \\\\ 20 &= \\dfrac{u^2}{10} - \\dfrac{u^2}{20} \\\\ 20 &= \\dfrac{u^2}{20} \\\\ u^2 &= 400 \\implies u = 20 \\end{aligned}<br>Thus, the initial velocity is $u = 20\\text{ m/s}$ (taking the positive root for an upward launch).",
+            "Now substitute $u = 20$ back into our expression for the vertex time to find when the rocket reaches its maximum height:<br>\\begin{aligned} t_{\\text{max}} &= \\dfrac{u}{10} \\\\ &= \\dfrac{20}{10} = 2 \\text{ seconds} \\end{aligned}",
+            "To find the total flight time, set the height to zero ($h = 0$) and solve the quadratic equation using the quadratic formula:<br>\\begin{aligned} -5t^2 + 20t + 15 &= 0 \\\\ 5t^2 - 20t - 15 &= 0 \\\\ t^2 - 4t - 3 &= 0 \\end{aligned}",
+            "Apply the quadratic formula to solve for $t$:<br>\\begin{aligned} t &= \\dfrac{-(-4) \\pm \\sqrt{(-4)^2 - 4(1)(-3)}}{2(1)} \\\\ &= \\dfrac{4 \\pm \\sqrt{16 + 12}}{2} \\\\ &= \\dfrac{4 \\pm \\sqrt{28}}{2} \\\\ &= \\dfrac{4 \\pm 2\\sqrt{7}}{2} = 2 \\pm \\sqrt{7} \\end{aligned}<br>Since time must be positive ($t \\ge 0$), we reject $t = 2 - \\sqrt{7} \\approx -0.65$. The total flight time of the rocket is $2 + \\sqrt{7}$ seconds.<br><br>Final Answer: $h_0 = 15$ and $u = 20$; maximum height is reached at $t = 2$ seconds; total flight time is $2 + \\sqrt{7}$ seconds."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$h_0 = 15, u = 20; \\quad t_{\\text{max}} = 2; \\quad t_{\\text{flight}} = 2 + \\sqrt{13} \\text{ seconds}$$",
+                "feedback": "Check your quadratic formula calculation when solving $t^2 - 4t - 3 = 0$. The discriminant is $b^2 - 4ac = (-4)^2 - 4(1)(-3) = 16 + 12 = 28$. It appears you may have made a sign error and calculated $16 - 12 = 4$ or used a different value inside the square root."
+            },
+            {
+                "ans": "$$h_0 = 15, u = 20; \\quad t_{\\text{max}} = 4; \\quad t_{\\text{flight}} = 2 + \\sqrt{7} \\text{ seconds}$$",
+                "feedback": "Check your calculation for the vertex time. The time is given by $t = \\dfrac{u}{10} = \\dfrac{20}{10} = 2$ seconds. It seems you may have calculated $\\dfrac{u}{5} = \\dfrac{20}{5} = 4$ seconds."
+            },
+            {
+                "ans": "$$h_0 = 15, u = 40; \\quad t_{\\text{max}} = 2; \\quad t_{\\text{flight}} = 2 + \\sqrt{7} \\text{ seconds}$$",
+                "feedback": "Check your algebraic step when combining the $u^2$ terms. Note that $\\dfrac{u^2}{10} - \\dfrac{u^2}{20} = \\dfrac{u^2}{20}$. It appears you may have simplified this as $\\dfrac{u^2}{10}$ directly, which would result in $u^2 = 200 \\implies u \\approx 14$ or a different value."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Fast Quadratic Vertices",
+            "content": "For any quadratic height model of the form $h(t) = h_0 + ut - kt^2$ (where $k > 0$ represents half the local gravitational acceleration), the maximum height always occurs at $t = \\dfrac{u}{2k}$. Remembering this simple ratio is an incredibly quick way to find the stationary point without needing to perform formal differentiation or complete the square."
+        }
     }
+
 
 
 
