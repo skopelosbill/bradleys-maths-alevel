@@ -1784,7 +1784,212 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Algebraic Identities with Surds",
             "content": "Notice that the numerator is of the form $(u + v)^2 - (u - v)^2$. Expanding this difference of squared terms always simplifies algebraically to exactly $4uv$. Recognizing this elegant identity allows you to immediately evaluate the numerator of this expression as $4(\\sqrt{x})(2) = 8\\sqrt{x}$, saving you valuable time during the exam!"
         }
+    },
+    {
+        "id": "004296",
+        "board": "WJEC",
+        "level": "AS Level",
+        "major_area": "Coordinate Geometry",
+        "topic": "Straight Lines",
+        "subtopic": [
+            "Line Intersections",
+            "Perpendicular Lines",
+            "Segment Ratios",
+            "Areas of Triangles"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The points $A$ and $B$ have coordinates $(1, 6)$ and $(4, 0)$ respectively. The straight line $L$ has the equation $x - 2y + 6 = 0$.<br><br>1. The line $L$ intersects the line $AB$ at the point $C$. Find the coordinates of $C$.<br>2. Determine the ratio in which the line $L$ divides the line $AB$.<br>3. The line $L$ crosses the $x$-axis at the point $D$. Find the coordinates of $D$.<br>4. Show that $L$ is perpendicular to $AB$, and calculate the exact area of the triangle $ACD$.",
+        "steps": [
+            "First, find the equation of the line passing through $A(1, 6)$ and $B(4, 0)$. Begin by calculating the gradient of $AB$:<br>\\begin{aligned} m_{AB} &= \\dfrac{0 - 6}{ 4 - 1 } \\\\ &= \\dfrac{-6}{ 3 } = -2 \\end{aligned}<br>Using the point-gradient formula with $B(4, 0)$, the equation of $AB$ is:<br>\\begin{aligned} y - 0 &= -2( x - 4 ) \\\\ y &= -2x + 8 \\end{aligned}",
+            "To find the coordinates of the intersection point $C$, solve the equations of $L$ and $AB$ simultaneously by substituting $y = -2x + 8$ into the equation of $L$ ($x - 2y + 6 = 0$):<br>\\begin{aligned} x - 2(-2x + 8) + 6 &= 0 \\\\ x + 4x - 16 + 6 &= 0 \\\\ 5x - 10 &= 0 \\\\ 5x &= 10 \\implies x = 2 \\end{aligned}",
+            "Substitute $x = 2$ back into the equation of $AB$ to find the $y$-coordinate of $C$:<br>\\begin{aligned} y &= -2(2) + 8 = 4 \\end{aligned}<br>Thus, the coordinates of the intersection point are $C(2, 4)$.",
+            "To find the ratio in which $L$ divides $AB$, compare the horizontal or vertical displacements of the segments $AC$ and $CB$:<br>\\begin{aligned} \\text{Horizontal displacement of } AC &= x_C - x_A = 2 - 1 = 1 \\\\ \\text{Horizontal displacement of } CB &= x_B - x_C = 4 - 2 = 2 \\end{aligned}<br>Since the ratio of the horizontal displacements is $1:2$, the line $L$ divides the line segment $AB$ in the ratio $1:2$.",
+            "The line $L$ crosses the $x$-axis at the point $D$. Since any point on the $x$-axis has a $y$-coordinate of $0$, substitute $y = 0$ into the equation of $L$ ($x - 2y + 6 = 0$):<br>\\begin{aligned} x - 2(0) + 6 &= 0 \\\\ x + 6 &= 0 \\implies x = -6 \\end{aligned}<br>Thus, the coordinates of point $D$ are $D(-6, 0)$.",
+            "To show that $L$ and $AB$ are perpendicular, compare their gradients. Rearrange the equation of $L$ into standard form $y = mx + c$:<br>\\begin{aligned} x - 2y + 6 &= 0 \\\\ 2y &= x + 6 \\\\ y &= \\dfrac{1}{ 2 }x + 3 \\end{aligned}<br>Thus, the gradient of $L$ is $m_L = \\dfrac{1}{ 2 }$. Since $m_{AB} \\times m_L = -2 \\times \\dfrac{1}{ 2 } = -1$, the lines are perpendicular.",
+            "Because $L$ is perpendicular to $AB$ at the intersection point $C$, the triangle $ACD$ is right-angled at $C$. Find the lengths of the base $CD$ and the height $AC$ using the distance formula:<br>\\begin{aligned} AC &= \\sqrt{ (2 - 1)^2 + (4 - 6)^2 } \\\\ &= \\sqrt{ 1^2 + (-2)^2 } = \\sqrt{ 5 } \\\\ CD &= \\sqrt{ (2 - (-6))^2 + (4 - 0)^2 } \\\\ &= \\sqrt{ 8^2 + 4^2 } = \\sqrt{ 64 + 16 } = \\sqrt{ 80 } = 4\\sqrt{ 5 } \\end{aligned}",
+            "Calculate the area of the right-angled triangle $ACD$ using $\\text{Area} = \\dfrac{1}{ 2 } \\times \\text{base} \\times \\text{height}$:<br>\\begin{aligned} \\text{Area} &= \\dfrac{1}{ 2 } \\times AC \\times CD \\\\ &= \\dfrac{1}{ 2 } \\times \\sqrt{ 5 } \\times 4\\sqrt{ 5 } \\\\ &= \\dfrac{1}{ 2 } \\times 4 \\times 5 \\\\ &= 10 \\end{aligned}<br><br>Final Answer: $C(2, 4)$; ratio is $1:2$; $D(-6, 0)$; perpendicular product is $-1$ and area is $10$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$C(2, 4); \\quad \\text{Ratio: } 1:3; \\quad D(-6, 0); \\quad \\text{Area: } 10$$",
+                "feedback": "Check your segment ratio calculation. The ratio is between $AC$ and $CB$. The horizontal displacement of $AC$ is $2 - 1 = 1$ and for $CB$ is $4 - 2 = 2$, yielding a ratio of $1:2$. It seems you may have mistakenly compared $AC$ to the total length $AB$, which is $1:3$."
+            },
+            {
+                "ans": "$$C(2, 4); \\quad \\text{Ratio: } 1:2; \\quad D(6, 0); \\quad \\text{Area: } 10$$",
+                "feedback": "Check your coordinates for point $D$. When substituting $y = 0$ into $x - 2y + 6 = 0$, we get $x + 6 = 0 \\implies x = -6$. It seems you made a sign error, resulting in $D(6, 0)$."
+            },
+            {
+                "ans": "$$C(2, 4); \\quad \\text{Ratio: } 1:2; \\quad D(-6, 0); \\quad \\text{Area: } 20$$",
+                "feedback": "Check your triangle area calculation. The area of a triangle is $\\dfrac{1}{ 2 } \\times \\text{base} \\times \\text{height}$. It seems you forgot to multiply by the factor of $\\dfrac{1}{ 2 }$ after multiplying the lengths of $AC$ and $CD$ together."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Right-Angled Triangle Shortcuts",
+            "content": "When a coordinate geometry question guides you to show that two lines are perpendicular (here, $L \\perp AB$ at $C$), any triangle formed by their intersection and intercept points is guaranteed to be right-angled. You can quickly find its area by using the distance formula to find the two perpendicular legs, rather than setting up complex coordinate area formulas."
+        }
+    },
+    {
+        "id": "004297",
+        "board": "WJEC",
+        "level": "AS Level",
+        "major_area": "Coordinate Geometry",
+        "topic": "Straight Lines",
+        "subtopic": [
+            "Parallel Lines",
+            "Perpendicular Lines",
+            "Line Gradients"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The line $L_1$ passes through the points $P(-2, k)$ and $Q(4, 5)$. The straight line $L_2$ is defined by the equation:<br>$$3x - 2y + 8 = 0$$<br>1. Given that the line $L_1$ is parallel to the line $L_2$, find the value of the constant $k$.<br>2. Given instead that the line $L_1$ is perpendicular to the line $L_2$, find the value of the constant $k$.",
+        "steps": [
+            "To find the gradient of the line $L_2$, rearrange its equation into the standard form $y = mx + c$:<br>\\begin{aligned} 3x - 2y + 8 &= 0 \\\\ 2y &= 3x + 8 \\\\ y &= \\dfrac{3}{ 2 }x + 4 \\end{aligned}<br>Thus, the gradient of the line $L_2$ is $m_2 = \\dfrac{3}{ 2 }$.",
+            "Next, write down the algebraic expression for the gradient of $L_1$ passing through $P(-2, k)$ and $Q(4, 5)$:<br>\\begin{aligned} m_1 &= \\dfrac{5 - k}{ 4 - (-2) } \\\\ &= \\dfrac{5 - k}{ 6 } \\end{aligned}",
+            "For part 1, parallel lines have equal gradients ($m_1 = m_2$). Set the gradients equal and solve for $k$:<br>\\begin{aligned} \\dfrac{5 - k}{ 6 } &= \\dfrac{3}{ 2 } \\\\ 2(5 - k) &= 18 \\\\ 10 - 2k &= 18 \\\\ -2k &= 8 \\implies k = -4 \\end{aligned}",
+            "For part 2, perpendicular lines have gradients whose product is $-1$ ($m_1 \\times m_2 = -1$). Set up the product equation and solve for $k$:<br>\\begin{aligned} \\left( \\dfrac{5 - k}{ 6 } \\right) \\times \\left( \\dfrac{3}{ 2 } \\right) &= -1 \\\\ \\dfrac{3(5 - k)}{ 12 } &= -1 \\\\ \\dfrac{5 - k}{ 4 } &= -1 \\\\ 5 - k &= -4 \\implies k = 9 \\end{aligned}<br><br>Final Answer: Parallel $k = -4$; perpendicular $k = 9$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Parallel } k = -4, \\quad \\text{Perpendicular } k = -9$$",
+                "feedback": "Check your algebraic signs when solving the perpendicular equation $5 - k = -4$. Subtracting 5 from both sides gives $-k = -9 \\implies k = 9$. It seems you made a sign error, resulting in $k = -9$."
+            },
+            {
+                "ans": "$$\\text{Parallel } k = 14, \\quad \\text{Perpendicular } k = 9$$",
+                "feedback": "Check your step when solving the parallel equation $\\dfrac{5 - k}{ 6 } = \\dfrac{3}{ 2 }$. Multiplying by 6 gives $5 - k = 9 \\implies -k = 4 \\implies k = -4$. It seems you may have mistakenly added 5 instead of subtracting, leading to $k = 14$."
+            },
+            {
+                "ans": "$$\\text{Parallel } k = -4, \\quad \\text{Perpendicular } k = 1$$",
+                "feedback": "Check your perpendicular gradient relationship. If $m_2 = \\dfrac{3}{ 2 }$, the perpendicular gradient must be the negative reciprocal, which is $-\\dfrac{2}{ 3 }$, not $-\\dfrac{3}{ 2 }$. Ensure you invert the fraction."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Rearranging for Gradients",
+            "content": "When finding the gradient of any line given in general form $ax + by + c = 0$, always take the time to rearrange it into $y = mx + c$. Trying to guess the gradient directly (e.g., assuming $m = a/b$ or $-b/a$) is a very common source of sign errors during exam stress."
+        }
+    },
+    {
+        "id": "004298",
+        "board": "WJEC",
+        "level": "AS Level",
+        "major_area": "Coordinate Geometry",
+        "topic": "Straight Lines",
+        "subtopic": [
+            "Perpendicular Bisectors",
+            "Midpoint Formula",
+            "Line Gradients"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The points $A$ and $B$ have coordinates $(-3, 2)$ and $(5, 6)$ respectively.<br><br>1. Find the coordinates of the midpoint of $AB$.<br>2. Find the gradient of the line segment $AB$.<br>3. Hence, find the equation of the perpendicular bisector of $AB$, giving your answer in the form $ax + by + c = 0$, where $a$, $b$, and $c$ are integers to be found.",
+        "steps": [
+            "To find the coordinates of the midpoint $M$ of $AB$, apply the midpoint formula to the coordinates of $A(-3, 2)$ and $B(5, 6)$:<br>\\begin{aligned} M &= \\left( \\dfrac{-3 + 5}{ 2 }, \\dfrac{2 + 6}{ 2 } \\right) \\\\ &= \\left( \\dfrac{2}{ 2 }, \\dfrac{8}{ 2 } \\right) = (1, 4) \\end{aligned}",
+            "To find the gradient $m_{AB}$ of the line segment $AB$, use the gradient formula:<br>\\begin{aligned} m_{AB} &= \\dfrac{6 - 2}{ 5 - (-3) } \\\\ &= \\dfrac{4}{ 8 } = \\dfrac{1}{ 2 } \\end{aligned}",
+            "The perpendicular bisector must be perpendicular to $AB$. Find its gradient by taking the negative reciprocal of $m_{AB} = \\dfrac{1}{ 2 }$:<br>\\begin{aligned} m_{\\perp} &= -\\dfrac{1}{ m_{AB} } \\\\ &= -\\dfrac{1}{ 1/2 } = -2 \\end{aligned}",
+            "The perpendicular bisector passes through the midpoint $M(1, 4)$. Set up the straight line equation using the point-gradient formula $y - y_1 = m( x - x_1 )$:<br>\\begin{aligned} y - 4 &= -2( x - 1 ) \\\\ y - 4 &= -2x + 2 \\end{aligned}",
+            "Rearrange the terms into the general form $ax + by + c = 0$ where $a$, $b$, and $c$ are integers:<br>\\begin{aligned} 2x + y - 4 - 2 &= 0 \\\\ 2x + y - 6 &= 0 \\end{aligned}<br><br>Final Answer: Midpoint is $(1, 4)$; gradient is $\\dfrac{1}{ 2 }$; equation is $2x + y - 6 = 0$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Midpoint: } (1, 4); \\quad m = \\dfrac{1}{ 2 }; \\quad 2x + y - 2 = 0$$",
+                "feedback": "Check your algebraic expansion in the final steps. When expanding $-2(x-1)$, you get $-2x + 2$. Rearranging $y - 4 = -2x + 2$ should yield $2x + y - 6 = 0$. It seems you made a sign error and wrote $+2$ on the left side instead of subtracting it."
+            },
+            {
+                "ans": "$$\\text{Midpoint: } (1, 4); \\quad m = \\dfrac{1}{ 2 }; \\quad x + 2y - 9 = 0$$",
+                "feedback": "Check your perpendicular gradient. The perpendicular bisector is perpendicular to $AB$, so its gradient is $-2$ (the negative reciprocal of $\\dfrac{1}{ 2 }$). It seems you used the original gradient of $\\dfrac{1}{ 2 }$ or its reciprocal $2$ instead of $-2$."
+            },
+            {
+                "ans": "$$\\text{Midpoint: } (1, 4); \\quad m = -2; \\quad 2x + y - 6 = 0$$",
+                "feedback": "Check your answer to part 2. The gradient of the segment $AB$ itself is $m_{AB} = \\dfrac{1}{ 2 }$. The perpendicular gradient is $-2$. Ensure you keep these two steps distinct."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Defining the Perpendicular Bisector",
+            "content": "Geometrically, the perpendicular bisector of a line segment $AB$ is the locus of all points in a plane that are equidistant from the endpoints $A$ and $B$. This coordinates-based algebraic method of finding the midpoint and the negative reciprocal gradient is a direct application of this distance-equality property."
+        }
+    },
+    {
+        "id": "004299",
+        "board": "WJEC",
+        "level": "AS Level",
+        "major_area": "Coordinate Geometry",
+        "topic": "Straight Lines",
+        "subtopic": [
+            "Line-Circle Intersections",
+            "Simultaneous Equations",
+            "Chord Length"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A straight line has the equation $y = x + 3$. A circle has the equation $x^2 + y^2 = 29$.<br><br>1. Find the coordinates of the points where the line intersects the circle.<br>2. Calculate the exact length of the chord joining these two points of intersection, giving your answer in its simplest surd form.",
+        "steps": [
+            "To find the intersection points, substitute the linear equation $y = x + 3$ into the quadratic equation of the circle:<br>\\begin{aligned} x^2 + ( x + 3 )^2 &= 29 \\\\ x^2 + (x^2 + 6x + 9) &= 29 \\\\ 2x^2 + 6x + 9 - 29 &= 0 \\\\ 2x^2 + 6x - 20 &= 0 \\end{aligned}",
+            "Divide the entire quadratic equation by 2 to simplify, and factorise to solve for $x$:<br>\\begin{aligned} x^2 + 3x - 10 &= 0 \\\\ (x + 5)(x - 2) &= 0 \\end{aligned}<br>This yields two solutions: $x = -5$ and $x = 2$.",
+            "Substitute these $x$-values back into the linear equation $y = x + 3$ to find the corresponding $y$-coordinates:<ul><li>For $x = -5$: $y = -5 + 3 = -2 \\implies (-5, -2)$</li><li>For $x = 2$: $y = 2 + 3 = 5 \\implies (2, 5)$</li></ul>Thus, the two points of intersection are $(-5, -2)$ and $(2, 5)$.",
+            "To find the exact length of the chord joining these two points, apply the distance formula:<br>\\begin{aligned} \\text{Chord Length} &= \\sqrt{ (2 - (-5))^2 + (5 - (-2))^2 } \\\\ &= \\sqrt{ 7^2 + 7^2 } \\\\ &= \\sqrt{ 49 + 49 } \\\\ &= \\sqrt{ 98 } \\end{aligned}",
+            "Simplify the surd to its simplest form by extracting the perfect square factor $49$:<br>\\begin{aligned} \\text{Chord Length} &= \\sqrt{ 49 \\times 2 } \\\\ &= 7\\sqrt{ 2 } \\end{aligned}<br><br>Final Answer: Intersections are $(-5, -2)$ and $(2, 5)$; exact chord length is $7\\sqrt{ 2 }$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$(-5, -2) \\text{ and } (2, 5); \\quad \\text{Chord Length: } 98$$",
+                "feedback": "Check your distance formula calculation. The distance formula is $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$. It seems you forgot to take the square root of the sum, leaving the answer as $98$ instead of $\\sqrt{98} = 7\\sqrt{2}$."
+            },
+            {
+                "ans": "$$(5, 8) \\text{ and } (2, 5); \\quad \\text{Chord Length: } 3\\sqrt{ 2 }$$",
+                "feedback": "Check your factorisation of the quadratic equation $x^2 + 3x - 10 = 0$. Since $-10$ is negative and the middle term is $+3$, the factors must be $(x + 5)(x - 2) = 0$, yielding solutions $x = -5$ and $x = 2$ rather than $x = 5$."
+            },
+            {
+                "ans": "$$(-5, -2) \\text{ and } (2, 5); \\quad \\text{Chord Length: } \\sqrt{ 58 }$$",
+                "feedback": "Check your substitution of the coordinates into the distance formula. Ensure you calculate $(2 - (-5))^2 = 7^2 = 49$ and $(5 - (-2))^2 = 7^2 = 49$. It seems you may have made a sign error and calculated $(2 - 5)^2 + (-2 - 5)^2$ or similar."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Complete Intersections",
+            "content": "When solving simultaneous linear-quadratic equations to find intersection points, always remember that an intersection is represented by a complete coordinate pair $(x, y)$. Once you solve the quadratic equation to find the $x$-values, make sure to substitute them back into the linear equation to find the corresponding $y$-values."
+        }
+    },
+    {
+        "id": "004300",
+        "board": "WJEC",
+        "level": "AS Level",
+        "major_area": "Coordinate Geometry",
+        "topic": "Straight Lines",
+        "subtopic": [
+            "Geometric Proofs",
+            "Midpoint Formula",
+            "Perpendicular Lines"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A rhombus $PQRS$ has vertices at $P(1, 2)$, $Q(5, 5)$, and $R(2, 9)$.<br><br>1. Find the coordinates of the midpoint of the diagonal $PR$.<br>2. Since the diagonals of a rhombus bisect each other, find the coordinates of the fourth vertex, $S$.<br>3. Show that the diagonals $PR$ and $QS$ are perpendicular.",
+        "steps": [
+            "To find the coordinates of the midpoint $M$ of the diagonal $PR$, apply the midpoint formula to the coordinates of $P(1, 2)$ and $R(2, 9)$:<br>\\begin{aligned} M &= \\left( \\dfrac{1 + 2}{ 2 }, \\dfrac{2 + 9}{ 2 } \\right) \\\\ &= \\left( \\dfrac{3}{ 2 }, \\dfrac{11}{ 2 } \\right) \\end{aligned}",
+            "Since the diagonals of a rhombus bisect each other, the midpoint of the diagonal $QS$ must be identical to the midpoint of $PR$, which is $\\left( \\dfrac{3}{ 2 }, \\dfrac{11}{ 2 } \\right)$. Let the coordinates of vertex $S$ be $(a, b)$:<br>\\begin{aligned} \\left( \\dfrac{5 + a}{ 2 }, \\dfrac{5 + b}{ 2 } \\right) &= \\left( \\dfrac{3}{ 2 }, \\dfrac{11}{ 2 } \\right) \\end{aligned}",
+            "Equate the individual coordinate components of the midpoint to solve for $a$ and $b$:<br>\\begin{aligned} \\dfrac{5 + a}{ 2 } &= \\dfrac{3}{ 2 } \\\\ 5 + a &= 3 \\implies a = -2 \\\\ \\dfrac{5 + b}{ 2 } &= \\dfrac{11}{ 2 } \\\\ 5 + b &= 11 \\implies b = 6 \\end{aligned}<br>Thus, the coordinates of the fourth vertex are $S(-2, 6)$.",
+            "To show that the diagonals $PR$ and $QS$ are perpendicular, find and compare their gradients. Calculate the gradient of $PR$ using $P(1, 2)$ and $R(2, 9)$:<br>\\begin{aligned} m_{PR} &= \\dfrac{9 - 2}{ 2 - 1 } \\\\ &= \\dfrac{7}{ 1 } = 7 \\end{aligned}",
+            "Calculate the gradient of $QS$ using $Q(5, 5)$ and $S(-2, 6)$:<br>\\begin{aligned} m_{QS} &= \\dfrac{6 - 5}{ -2 - 5 } \\\\ &= \\dfrac{1}{ -7 } = -\\dfrac{1}{ 7 } \\end{aligned}",
+            "Multiply the two gradients to check for perpendicularity:<br>\\begin{aligned} m_{PR} \\times m_{QS} &= 7 \\times \\left( -\\dfrac{1}{ 7 } \\right) \\\\ &= -1 \\end{aligned}<br>Since the product of the gradients is $-1$, the diagonals $PR$ and $QS$ are perpendicular.<br><br>Final Answer: Midpoint is $\\left( \\dfrac{3}{ 2 }, \\dfrac{11}{ 2 } \\right)$; $S(-2, 6)$; gradient product is $-1$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Midpoint: } \\left( \\dfrac{3}{ 2 }, \\dfrac{11}{ 2 } \\right); \\quad S(2, 6); \\quad \\text{Product: } -1$$",
+                "feedback": "Check your algebraic step when solving $5 + a = 3$ for the $x$-coordinate of $S$. Subtracting $5$ from both sides yields $a = 3 - 5 = -2$. It seems you made a sign error, resulting in $a = 2$."
+            },
+            {
+                "ans": "$$\\text{Midpoint: } \\left( \\dfrac{3}{ 2 }, \\dfrac{11}{ 2 } \\right); \\quad S(-2, 6); \\quad \\text{Product: } -\\dfrac{1}{ 7 }$$",
+                "feedback": "Check your perpendicular proof. To prove that two lines are perpendicular, you must show that the product of their gradients is $-1$. Simply stating one of the individual gradients is not a complete proof."
+            },
+            {
+                "ans": "$$\\text{Midpoint: } (3, 11); \\quad S(1, 7); \\quad \\text{Product: } -1$$",
+                "feedback": "Check your midpoint formula. Remember that the midpoint is the average of the coordinates, so you must divide the sum of the coordinates by 2: $\\left( \\dfrac{x_1+x_2}{2}, \\dfrac{y_1+y_2}{2} \\right)$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Diagonals of Quadrilaterals",
+            "content": "In any parallelogram (including rectangles, rhombuses, and squares), the diagonals bisect each other. This means the midpoint of one diagonal is identical to the midpoint of the other, which is an incredibly fast geometric shortcut for finding the coordinates of a missing vertex without needing vectors."
+        }
     }
+
 
 
 
