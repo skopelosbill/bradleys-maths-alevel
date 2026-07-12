@@ -1382,7 +1382,215 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Fast Quadratic Vertices",
             "content": "For any quadratic height model of the form $h(t) = h_0 + ut - kt^2$ (where $k > 0$ represents half the local gravitational acceleration), the maximum height always occurs at $t = \\dfrac{u}{2k}$. Remembering this simple ratio is an incredibly quick way to find the stationary point without needing to perform formal differentiation or complete the square."
         }
+    },
+    {
+        "id": "004286",
+        "board": "OCR MEI",
+        "level": "A Level",
+        "major_area": "Calculus",
+        "topic": "Differential Equations",
+        "subtopic": [
+            "Partial Fractions",
+            "Separation of Variables",
+            "First-Order Differential Equations"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>It is given that:<br>$$f(x) = \\dfrac{x^2 + 4x + 4}{(x - 2)(x^2 + 4)}$$<br>1. Express $f(x)$ in partial fractions.<br>2. Solve the differential equation:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = y f(x)$$<br>giving your answer in the form $y = g(x)$, subject to the boundary condition $y = 2$ when $x = 0$.",
+        "steps": [
+            "Set up the partial fraction decomposition for a linear factor and an irreducible quadratic factor:<br>\\begin{aligned} \\dfrac{x^2 + 4x + 4}{(x - 2)(x^2 + 4)} &= \\dfrac{A}{x - 2} + \\dfrac{Bx + C}{x^2 + 4} \\end{aligned}<br>Multiply both sides by the common denominator to obtain the identity:<br>\\begin{aligned} x^2 + 4x + 4 &= A(x^2 + 4) + (Bx + C)(x - 2) \\end{aligned}",
+            "To solve for $A$, substitute $x = 2$ into the identity:<br>\\begin{aligned} (2)^2 + 4(2) + 4 &= A((2)^2 + 4) + (2B + C)(0) \\\\ 16 &= 8A \\\\ A &= 2 \\end{aligned}",
+            "Substitute $A = 2$ back into the identity and expand the right-hand side to solve for $B$ and $C$ by equating coefficients:<br>\\begin{aligned} x^2 + 4x + 4 &= 2(x^2 + 4) + (Bx + C)(x - 2) \\\\ x^2 + 4x + 4 &= 2x^2 + 8 + Bx^2 - 2Bx + Cx - 2C \\\\ x^2 + 4x + 4 &= (2 + B)x^2 + (C - 2B)x + (8 - 2C) \\end{aligned}<br>Equating coefficients:<ul><li>For $x^2$: $2 + B = 1 \\implies B = -1$</li><li>For the constant: $8 - 2C = 4 \\implies 2C = 4 \\implies C = 2$</li></ul>Thus, the partial fraction expression is:<br>$$f(x) = \\dfrac{2}{x - 2} + \\dfrac{2 - x}{x^2 + 4}$$",
+            "To solve the differential equation $\\dfrac{\\text{d}y}{\\text{d}x} = y f(x)$, separate the variables and integrate both sides:<br>\\begin{aligned} \\int \\dfrac{1}{y} \\,\\text{d}y &= \\int f(x) \\,\\text{d}x \\\\ \\int \\dfrac{1}{y} \\,\\text{d}y &= \\int \\left( \\dfrac{2}{x - 2} + \\dfrac{2}{x^2 + 4} - \\dfrac{x}{x^2 + 4} \\right) \\,\\text{d}x \\end{aligned}",
+            "Perform the integration on each term on the right-hand side carefully, using the standard log integrals and the inverse tangent rule:<br>\\begin{aligned} \\ln|y| &= 2\\ln|x - 2| + \\arctan\\left(\\dfrac{x}{2}\\right) - \\dfrac{1}{2}\\ln(x^2 + 4) + c \\end{aligned}<br>Combine the logarithmic terms using standard log laws:<br>\\begin{aligned} \\ln|y| &= \\ln\\left( \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\right) + \\arctan\\left(\\dfrac{x}{2}\\right) + c \\end{aligned}",
+            "Exponentiate both sides to write the general solution in terms of a constant $K = \\text{e}^c$:<br>\\begin{aligned} y &= K \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\text{e}^{\\arctan(x/2)} \\end{aligned}",
+            "Apply the boundary condition $y = 2$ when $x = 0$ to solve for $K$:<br>\\begin{aligned} 2 &= K \\dfrac{(0 - 2)^2}{\\sqrt{0^2 + 4}} \\text{e}^{\\arctan(0)} \\\\ 2 &= K \\left( \\dfrac{4}{2} \\right) (1) \\\\ 2 &= 2K \\implies K = 1 \\end{aligned}<br>Substituting $K = 1$ back into the general solution yields:<br>$$y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\text{e}^{\\arctan(x/2)}$$<br><br>Final Answer: $y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\text{e}^{\\arctan(x/2)}$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\text{e}^{2\\arctan(x/2)}$$",
+                "feedback": "Check your integration of the term $\\dfrac{2}{x^2+4}$. Recall the standard integration formula $\\int \\dfrac{1}{x^2+a^2} \\text{d}x = \\dfrac{1}{a}\\arctan\\left(\\dfrac{x}{a}\\right)$. Since $a = 2$, this integral is $\\dfrac{2}{2}\\arctan\\left(\\dfrac{x}{2}\\right) = \\arctan\\left(\\dfrac{x}{2}\\right)$, not $2\\arctan\\left(\\dfrac{x}{2}\\right)$."
+            },
+            {
+                "ans": "$$y = \\dfrac{x - 2}{\\sqrt{x^2 + 4}} \\text{e}^{\\arctan(x/2)}$$",
+                "feedback": "Check your partial fractions decomposition. Ensure you set up the linear numerator for the quadratic denominator as $Bx + C$. Equating coefficients should yield $A = 2, B = -1, C = 2$, not $A = 1, B = 0, C = 4$."
+            },
+            {
+                "ans": "$$y = 2 \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\text{e}^{\\arctan(x/2)}$$",
+                "feedback": "Check your evaluation of the constant of integration $K$ using the boundary condition $y = 2$ when $x = 0$. Substituting $x = 0$ yields $2 = K \\dfrac{(-2)^2}{\\sqrt{4}} \\text{e}^0 \\implies 2 = 2K \\implies K = 1$. It appears you may have incorrectly evaluated $K = 2$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Splitting Complex Fractions",
+            "content": "When integrating terms like $\\dfrac{-x+2}{x^2+4}$, you must split the fraction into two distinct parts: $\\dfrac{-x}{x^2+4}$ and $\\dfrac{2}{x^2+4}$. The first part integrates to a natural logarithm using the standard substitution rule $\\int \\dfrac{f'(x)}{f(x)}\\text{d}x$, while the second part integrates directly to an inverse tangent (arctan) function. Attempting to integrate them as a single entity is a common barrier to progress."
+        }
+    },
+    {
+        "id": "004287",
+        "board": "OCR MEI",
+        "level": "A Level",
+        "major_area": "Calculus",
+        "topic": "Differential Equations",
+        "subtopic": [
+            "Partial Fractions",
+            "Repeated Roots",
+            "Separation of Variables"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Let $f(x) = \\dfrac{x^2 - x + 2}{x(x - 1)^2}$.<br><br>1. Express $f(x)$ in partial fractions of the form:<br>$$\\dfrac{A}{x} + \\dfrac{B}{x - 1} + \\dfrac{C}{(x - 1)^2}$$<br>where $A$, $B$, and $C$ are integers to be found.<br>2. Hence, solve the differential equation:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\text{e}^{-y} f(x)$$<br>expressing $y$ in terms of $x$, given that $y = 0$ when $x = 2$.",
+        "steps": [
+            "Write the algebraic identity for the decomposition of repeated linear roots:<br>\\begin{aligned} \\dfrac{x^2 - x + 2}{x(x - 1)^2} &= \\dfrac{A}{x} + \\dfrac{B}{x - 1} + \\dfrac{C}{(x - 1)^2} \\end{aligned}<br>Multiply by the common denominator to obtain:<br>\\begin{aligned} x^2 - x + 2 &= A(x - 1)^2 + Bx(x - 1) + Cx \\end{aligned}",
+            "Find the constants by choosing convenient values for $x$:<ul><li>Set $x = 1$: $(1)^2 - 1 + 2 = C(1) \\implies C = 2$</li><li>Set $x = 0$: $(0)^2 - 0 + 2 = A(-1)^2 \\implies A = 2$</li></ul>Substitute $A = 2$ and equate coefficients of $x^2$ to find $B$:<br>\\begin{aligned} A + B &= 1 \\\\ 2 + B &= 1 \\implies B = -1 \\end{aligned}<br>This gives the partial fractions:<br>$$f(x) = \\dfrac{2}{x} - \\dfrac{1}{x - 1} + \\dfrac{2}{(x - 1)^2}$$",
+            "To solve the differential equation $\\dfrac{\\text{d}y}{\\text{d}x} = \\text{e}^{-y} f(x)$, separate the variables and integrate both sides:<br>\\begin{aligned} \\int \\text{e}^y \\,\\text{d}y &= \\int f(x) \\,\\text{d}x \\\\ \\int \\text{e}^y \\,\\text{d}y &= \\int \\left( \\dfrac{2}{x} - \\dfrac{1}{x - 1} + \\dfrac{2}{(x - 1)^2} \\right) \\,\\text{d}x \\end{aligned}",
+            "Integrate both sides of the equation. Use the power rule for the repeated linear term: $\\int 2(x-1)^{-2} \\,\\text{d}x = -2(x-1)^{-1}$:<br>\\begin{aligned} \\text{e}^y &= 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + c \\end{aligned}",
+            "Apply the boundary condition $y = 0$ when $x = 2$ to find the constant $c$:<br>\\begin{aligned} \\text{e}^0 &= 2\\ln(2) - \\ln(1) - \\dfrac{2}{2 - 1} + c \\\\ 1 &= 2\\ln 2 - 0 - 2 + c \\\\ c &= 3 - 2\\ln 2 \\end{aligned}",
+            "Substitute $c$ back into the equation and solve for $y$ by taking the natural logarithm of both sides:<br>\\begin{aligned} \\text{e}^y &= 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 3 - 2\\ln 2 \\\\ y &= \\ln\\left( 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 3 - 2\\ln 2 \\right) \\end{aligned}<br><br>Final Answer: $y = \\ln\\left( 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 3 - 2\\ln 2 \\right)$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$y = \\ln\\left( 2\\ln|x| - \\ln|x - 1| + \\dfrac{2}{x - 1} + 3 - 2\\ln 2 \\right)$$",
+                "feedback": "Check your integration of the term $\\dfrac{2}{(x-1)^2}$. Since $\\int u^{-2} \\text{d}u = -u^{-1}$, the integral of $2(x-1)^{-2}$ is $-\\dfrac{2}{x-1}$, not $+\\dfrac{2}{x-1}$."
+            },
+            {
+                "ans": "$$y = \\ln\\left( 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 1 - 2\\ln 2 \\right)$$",
+                "feedback": "Check your evaluation of the constant $c$ when applying the boundary condition $y(2) = 0 \\implies \\text{e}^0 = 1$. Substituting $x=2$ gives $1 = 2\\ln 2 - 2 + c \\implies c = 3 - 2\\ln 2$. It seems you may have missed adding the 2 to the left-hand side."
+            },
+            {
+                "ans": "$$y = 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 3 - 2\\ln 2$$",
+                "feedback": "Remember that integrating $\\text{e}^y \\text{d}y$ yields $\\text{e}^y$, not $y$. To find $y$ in terms of $x$, you must take the natural logarithm of both sides of your integrated equation."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Repeated Factors and Log Traps",
+            "content": "A common mistake when integrating rational fractions is assuming that every single fractional term integrates to a natural logarithm. While linear terms like $\\dfrac{1}{x-1}$ integrate to $\\ln|x-1|$, terms with higher powers like $\\dfrac{2}{(x-1)^2}$ must be rewritten using negative indices as $2(x-1)^{-2}$ and integrated using the standard polynomial power rule."
+        }
+    },
+    {
+        "id": "004288",
+        "board": "OCR MEI",
+        "level": "A Level",
+        "major_area": "Calculus",
+        "topic": "Differential Equations",
+        "subtopic": [
+            "Partial Fractions",
+            "Three Linear Factors",
+            "Separation of Variables"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The function $f(x)$ is given by:<br>$$f(x) = \\dfrac{x^2 - 5x}{(x - 1)(x - 2)(x - 3)}$$<br>1. Express $f(x)$ in partial fractions.<br>2. Solve the differential equation:<br>$$y\\dfrac{\\text{d}y}{\\text{d}x} = f(x)$$<br>expressing $y^2$ in terms of $x$, subject to the boundary condition $y = 4$ when $x = 4$.",
+        "steps": [
+            "Set up the partial fraction decomposition for three distinct linear factors:<br>\\begin{aligned} \\dfrac{x^2 - 5x}{(x - 1)(x - 2)(x - 3)} &= \\dfrac{A}{x - 1} + \\dfrac{B}{x - 2} + \\dfrac{C}{x - 3} \\end{aligned}<br>Multiply both sides by the common denominator:<br>\\begin{aligned} x^2 - 5x &= A(x - 2)(x - 3) + B(x - 1)(x - 3) + C(x - 1)(x - 2) \\end{aligned}",
+            "Solve for the parameters $A$, $B$, and $C$ by substituting the roots:<ul><li>Set $x = 1$: $-4 = A(-1)(-2) \\implies 2A = -4 \\implies A = -2$</li><li>Set $x = 2$: $-6 = B(1)(-1) \\implies -B = -6 \\implies B = 6$</li><li>Set $x = 3$: $-6 = C(2)(1) \\implies 2C = -6 \\implies C = -3$</li></ul>Thus, the partial fractions are:<br>$$f(x) = -\\dfrac{2}{x - 1} + \\dfrac{6}{x - 2} - \\dfrac{3}{x - 3}$$",
+            "To solve the differential equation $y\\dfrac{\\text{d}y}{\\text{d}x} = f(x)$, separate the variables and set up the integrals:<br>\\begin{aligned} \\int y \\,\\text{d}y &= \\int f(x) \\,\\text{d}x \\\\ \\int y \\,\\text{d}y &= \\int \\left( -\\dfrac{2}{x - 1} + \\dfrac{6}{x - 2} - \\dfrac{3}{x - 3} \\right) \\,\\text{d}x \\end{aligned}",
+            "Integrate both sides of the equation:<br>\\begin{aligned} \\dfrac{1}{2}y^2 &= -2\\ln|x - 1| + 6\\ln|x - 2| - 3\\ln|x - 3| + C \\end{aligned}",
+            "Multiply the entire equation by 2 to isolate $y^2$, defining a new constant of integration $C' = 2C$:<br>\\begin{aligned} y^2 &= -4\\ln|x - 1| + 12\\ln|x - 2| - 6\\ln|x - 3| + C' \\end{aligned}",
+            "Apply the boundary condition $y = 4$ when $x = 4$ to solve for $C'$:<br>\\begin{aligned} (4)^2 &= -4\\ln(3) + 12\\ln(2) - 6\\ln(1) + C' \\\\ 16 &= -4\\ln 3 + 12\\ln 2 + C' \\\\ C' &= 16 + 4\\ln 3 - 12\\ln 2 \\end{aligned}",
+            "Substitute $C'$ back into the equation for $y^2$:<br>\\begin{aligned} y^2 &= -4\\ln|x - 1| + 12\\ln|x - 2| - 6\\ln|x - 3| + 16 + 4\\ln 3 - 12\\ln 2 \\end{aligned}<br><br>Final Answer: $y^2 = -4\\ln|x - 1| + 12\\ln|x - 2| - 6\\ln|x - 3| + 16 + 4\\ln 3 - 12\\ln 2$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$y^2 = -4\\ln|x - 1| + 12\\ln|x - 2| - 6\\ln|x - 3| + 16$$",
+                "feedback": "Check your application of the boundary condition. When substituting $x = 4$ into $-4\\ln|x-1| + 12\\ln|x-2| - 6\\ln|x-3|$, the terms evaluate to $-4\\ln 3 + 12\\ln 2 - 0$. These log terms do not cancel out, so they must be included in your exact value of the constant of integration $C'$."
+            },
+            {
+                "ans": "$$y^2 = -2\\ln|x - 1| + 6\\ln|x - 2| - 3\\ln|x - 3| + 8 + 2\\ln 3 - 6\\ln 2$$",
+                "feedback": "Check your algebraic steps when multiplying the equation by 2 to isolate $y^2$. You must multiply every term, including the constant of integration $C$, which scales the constant to $C' = 2C$."
+            },
+            {
+                "ans": "$$y^2 = -4\\ln|x - 1| + 12\\ln|x - 2| - 6\\ln|x - 3| + 16 - 4\\ln 3 + 12\\ln 2$$",
+                "feedback": "Check your signs when isolating $C'$. Since $16 = -4\\ln 3 + 12\\ln 2 + C'$, rearranging to solve for $C'$ gives $C' = 16 + 4\\ln 3 - 12\\ln 2$, not $16 - 4\\ln 3 + 12\\ln 2$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Combining Logarithmic Constants",
+            "content": "When dealing with boundary conditions on functions with multiple natural logs, keep your constants in exact form (e.g. $16 + 4\\ln 3 - 12\\ln 2$) rather than converting to decimals. This preserves perfect mathematical accuracy, which is highly valued in GCE A-Level mark schemes."
+        }
+    },
+    {
+        "id": "004289",
+        "board": "OCR MEI",
+        "level": "A Level",
+        "major_area": "Calculus",
+        "topic": "Differential Equations",
+        "subtopic": [
+            "Substitution Method",
+            "Separation of Variables",
+            "First-Order Differential Equations"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A differential equation is given by:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{x + y}{x}, \\quad x > 0$$<br>1. Use the substitution $y = vx$, where $v$ is a function of $x$, to show that the differential equation can be written as:<br>$$x\\dfrac{\\text{d}v}{\\text{d}x} = 1$$<br>2. Hence, solve the differential equation to find the exact equation of the curve, giving your answer in the form $y = g(x)$, subject to the boundary condition $y = 2$ when $x = 1$.",
+        "steps": [
+            "Differentiate the substitution equation $y = vx$ implicitly with respect to $x$ using the product rule:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= v + x\\dfrac{\\text{d}v}{\\text{d}x} \\end{aligned}",
+            "Substitute $y = vx$ and $\\dfrac{\\text{d}y}{\\text{d}x} = v + x\\dfrac{\\text{d}v}{\\text{d}x}$ back into the original differential equation:<br>\\begin{aligned} v + x\\dfrac{\\text{d}v}{\\text{d}x} &= \\dfrac{x + vx}{x} \\\\ v + x\\dfrac{\\text{d}v}{\\text{d}x} &= 1 + v \\end{aligned}",
+            "Subtract $v$ from both sides to obtain the simplified separable equation:<br>\\begin{aligned} x\\dfrac{\\text{d}v}{\\text{d}x} &= 1 \\end{aligned}",
+            "Separate variables and integrate both sides with respect to $x$:<br>\\begin{aligned} \\int 1 \\,\\text{d}v &= \\int \\dfrac{1}{x} \\,\\text{d}x \\\\ v &= \\ln x + C \\end{aligned}",
+            "Substitute $v = \\dfrac{y}{x}$ back into the solution:<br>\\begin{aligned} \\dfrac{y}{x} &= \\ln x + C \\\\ y &= x\\ln x + Cx \\end{aligned}",
+            "Apply the boundary condition $y = 2$ when $x = 1$ to solve for $C$:<br>\\begin{aligned} 2 &= (1)\\ln(1) + C(1) \\\\ 2 &= 0 + C \\implies C = 2 \\end{aligned}<br>Substitute $C = 2$ back into the equation of the curve:<br>$$y = x\\ln x + 2x$$<br><br>Final Answer: $y = x\\ln x + 2x$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$y = x\\ln x + x$$",
+                "feedback": "Check your evaluation of the constant $C$ using the boundary condition $y(1) = 2$. Substituting $x=1$ yields $2 = 1\\ln 1 + C(1) \\implies 2 = 0 + C \\implies C = 2$. It seems you may have incorrectly set $C = 1$."
+            },
+            {
+                "ans": "$$y = \\ln x + 2$$",
+                "feedback": "Remember that $v = \\dfrac{y}{x}$, so the solution is $y = vx = x(\\ln x + C)$. It seems you forgot to multiply the entire right-hand side by $x$ when transforming back to $y$."
+            },
+            {
+                "ans": "$$y = x^2\\ln x + 2x$$",
+                "feedback": "Check your integration of $\\dfrac{\\text{d}v}{\\text{d}x} = \\dfrac{1}{x}$. The integral is $v = \\ln x + C$. It appears you may have introduced an extra factor of $x$ in your integration."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Why Homogeneous Substitution Works",
+            "content": "Using the substitution $y = vx$ is a powerful technique for solving first-order homogeneous differential equations. These equations cannot be separated directly because $x$ and $y$ are algebraically entangled. Substituting $y=vx$ and applying the product rule to the derivative transforms the equation into a separable form in terms of $v$ and $x$, which can then be solved using standard calculus."
+        }
+    },
+    {
+        "id": "004290",
+        "board": "OCR MEI",
+        "level": "A Level",
+        "major_area": "Calculus",
+        "topic": "Differential Equations",
+        "subtopic": [
+            "Practical Modeling",
+            "Separation of Variables",
+            "First-Order Differential Equations"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The volume of water, $V$ (in litres), remaining in a leaking container $t$ minutes after the leak begins is modeled by the differential equation:<br>$$\\dfrac{\\text{d}V}{\\text{d}t} = -k\\sqrt{V}$$<br>where $k$ is a positive constant.<br><ul><li>Initially ($t = 0$), the container contains $100$ litres of water.</li><li>After $20$ minutes, the container contains $64$ litres of water.</li></ul><br>1. Solve the differential equation to express $V$ in terms of $t$ and $k$.<br>2. Show that $k = 0.2$.<br>3. Find the total time taken for the container to empty completely.",
+        "steps": [
+            "Separate the variables and set up the integrals to solve the differential equation:<br>\\begin{aligned} \\int V^{-1/2} \\,\\text{d}V &= \\int -k \\,\\text{d}t \\end{aligned}",
+            "Integrate both sides of the equation using the polynomial power rule:<br>\\begin{aligned} 2\\sqrt{V} &= -kt + C \\end{aligned}",
+            "Apply the initial condition $V = 100$ when $t = 0$ to solve for $C$:<br>\\begin{aligned} 2\\sqrt{100} &= -k(0) + C \\\\ 2(10) &= C \\implies C = 20 \\end{aligned}<br>Substitute $C = 20$ back into the integrated equation and isolate $V$:<br>\\begin{aligned} 2\\sqrt{V} &= 20 - kt \\\\ \\sqrt{V} &= 10 - \\dfrac{k}{2}t \\\\ V &= \\left(10 - \\dfrac{k}{2}t\\right)^2 \\end{aligned}",
+            "Use the condition $V = 64$ when $t = 20$ to solve for the constant $k$:<br>\\begin{aligned} 64 &= \\left(10 - \\dfrac{k}{2}(20)\\right)^2 \\\\ 64 &= (10 - 10k)^2 \\end{aligned}",
+            "Take the positive square root since the term $10 - 10k$ must be positive for the decreasing function:<br>\\begin{aligned} 8 &= 10 - 10k \\\\ 10k &= 2 \\\\ k &= 0.2 \\end{aligned}<br>This confirms $k = 0.2$. Substitute $k = 0.2$ back into our volume formula:<br>$$V = (10 - 0.1t)^2$$",
+            "The container is completely empty when the volume of water is $0$ ($V = 0$):<br>\\begin{aligned} (10 - 0.1t)^2 &= 0 \\\\ 10 - 0.1t &= 0 \\\\ 0.1t &= 10 \\\\ t &= 100 \\text{ minutes} \\end{aligned}<br><br>Final Answer: $V = \\left(10 - \\dfrac{k}{2}t\\right)^2$; $k = 0.2$; total time to empty is $100$ minutes."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$V = (10 - 0.9t)^2 \\text{ and } t = 11.1 \\text{ minutes}$$",
+                "feedback": "Check your sign choice when taking the square root. Although $x^2 = 64 \\implies x = \\pm 8$, physically the volume $V$ is decreasing from $100$ to $64$, so the term $\\sqrt{V} = 10 - 10k$ must be positive, giving $8 = 10 - 10k \\implies k = 0.2$. Using the negative root $-8 = 10 - 10k$ yields $k = 1.8$, which would mean the tank emptied in just $11$ minutes."
+            },
+            {
+                "ans": "$$V = (10 - 0.1t)^2 \\text{ and } t = 20 \\text{ minutes}$$",
+                "feedback": "Check your evaluation of the time taken to empty. The tank is empty when $V = 0 \\implies 10 - 0.1t = 0 \\implies 0.1t = 10 \\implies t = 100$ minutes. Ensure you divide by 0.1 correctly."
+            },
+            {
+                "ans": "$$V = (10 - 0.2t)^2 \\text{ and } t = 50 \\text{ minutes}$$",
+                "feedback": "Check your integration of $V^{-1/2} \\text{d}V = -k \\text{d}t$. This yields $2\\sqrt{V} = -kt + C \\implies \\sqrt{V} = 10 - \\dfrac{k}{2}t$. It appears you may have forgotten to divide the $-kt$ term by 2 when isolating $\\sqrt{V}$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Choosing Physical Roots",
+            "content": "When taking square roots in physical modeling equations (like $(10 - 10k)^2 = 64$), you mathematically get two solutions: $10 - 10k = 8$ or $10 - 10k = -8$. You must choose the root that physically matches the model. Since $V$ decreases over time from $100$, the expression $10 - \\dfrac{k}{2}t$ must remain positive for the domain of interest, forcing us to select the positive root."
+        }
     }
+
 
 
 
