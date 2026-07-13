@@ -142,8 +142,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$$\\theta = 120^\\circ, \\quad 240^\\circ$$",
-                "feedback": "Check your calculations for both factored cases. It seems you solved the Case 2 equation successfully but completely missed the Case 1 equation ($\\cos\\theta = 1 \\implies \\theta = 0^^\\circ, 360^\\circ$)."
-            },
+                "feedback": "Check your calculations for both factored cases. It seems you solved the Case 2 equation successfully but completely missed the Case 1 equation ($\\cos\\theta = 1 \\implies \\theta = 0^\\circ, 360^\\circ$)."            },
             {
                 "ans": "$$\\theta = 0^\\circ, \\quad 60^\\circ, \\quad 300^\\circ, \\quad 360^\\circ$$",
                 "feedback": "Check your sign evaluation for Case 2. Since $\\cos\\theta = -\\dfrac{1}{ 2 }$ is negative, your answers must lie in the second and third quadrants ($120^\\circ$ and $240^\\circ$). It seems you may have mistakenly solved for positive $\\cos\\theta = \\dfrac{1}{ 2 }$."
