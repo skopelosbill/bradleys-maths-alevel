@@ -397,7 +397,205 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Deciphering the Second Derivative",
             "content": "The sign of the second derivative $\\dfrac{\\text{d}^2y}{\\text{d}x^2}$ indicates the concavity of the curve. When $\\dfrac{\\text{d}^2y}{\\text{d}x^2} > 0$, the curve is concave up (holding water like a cup), meaning the stationary point lies at the bottom (a minimum). When $\\dfrac{\\text{d}^2y}{\\text{d}x^2} < 0$, the curve is concave down, indicating the stationary point lies at the top (a maximum)."
         }
+    },
+    {
+        "id": "004311",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Translations",
+            "Reciprocal Curves",
+            "Asymptotes"
+        ],
+        "img": "images/p1/004311.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of $y = f(x)$, which is a reciprocal-type curve with asymptotes $x = 0$ and $y = 0$.<br><br>1. Sketch the graph of $y = f(x) - 3$, clearly indicating the equation of any asymptotes.<br>2. Sketch the graph of $y = f(x + 2)$, clearly indicating the equation of any asymptotes.",
+        "steps": [
+            "For part 1, the transformation $y = f(x) - 3$ represents a vertical translation downwards by $3$ units.<br>This transformation shifts every point on the original curve downwards, which also shifts the horizontal asymptote:<br>\\begin{aligned} \\text{Vertical asymptote} &: x = 0 \\quad \\text{(Unchanged)} \\\\ \\text{Horizontal asymptote} &: y = -3 \\quad \\text{(Shifted from } y = 0 \\text{)} \\end{aligned}",
+            "Using these new asymptotes, sketch the shifted reciprocal curve:<br><br><img src='images/p1/004311_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "For part 2, the transformation $y = f(x + 2)$ represents a horizontal translation to the left by $2$ units.<br>This transformation shifts every point on the original curve to the left, which also shifts the vertical asymptote:<br>\\begin{aligned} \\text{Vertical asymptote} &: x = -2 \\quad \\text{(Shifted from } x = 0 \\text{)} \\\\ \\text{Horizontal asymptote} &: y = 0 \\quad \\text{(Unchanged)} \\end{aligned}",
+            "Using these new asymptotes, sketch the shifted reciprocal curve:<br><br><img src='images/p1/004311_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: Sketches completed with asymptotes $y = -3$ for part 1, and $x = -2$ for part 2."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$y = f(x) - 3 \\implies y = -3, x = 0; \\quad y = f(x+2) \\implies y = 0, x = 2$$",
+                "feedback": "Check the direction of your horizontal translation for $y = f(x + 2)$. A transformation inside the bracket of the form $f(x + c)$ represents a translation to the left by $c$ units, which shifts the vertical asymptote to $x = -2$, not $x = 2$."
+            },
+            {
+                "ans": "$$y = f(x) - 3 \\implies y = 3, x = 0; \\quad y = f(x+2) \\implies y = 0, x = -2$$",
+                "feedback": "Check the direction of your vertical translation for $y = f(x) - 3$. A vertical transformation of the form $f(x) - d$ shifts the entire curve downwards, meaning the horizontal asymptote must be at $y = -3$, not $y = 3$."
+            },
+            {
+                "ans": "$$y = f(x) - 3 \\implies y = 0, x = -3; \\quad y = f(x+2) \\implies y = -2, x = 0$$",
+                "feedback": "Check which asymptotes are affected by each translation. A vertical translation (outside the bracket) only shifts the horizontal asymptote, while a horizontal translation (inside the bracket) only shifts the vertical asymptote. It seems you swapped these effects."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Shifting Asymptotes",
+            "content": "When translating reciprocal curves with asymptotic boundaries: Vertical shifts of the form $f(x) + a$ only affect the horizontal asymptote ($y = a$). Horizontal shifts of the form $f(x + b)$ only affect the vertical asymptote ($x = -b$). Separating these two effects makes sketching translations extremely simple."
+        }
+    },
+    {
+        "id": "004312",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Reflections",
+            "Stretches",
+            "Stationary Points"
+        ],
+        "img": "images/p1/004312.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $y = f(x)$, which has a local maximum at $P(2, 6)$ and a local minimum at $Q(4, -2)$.<br><br>1. Sketch the graph of $y = -f(x)$, clearly indicating the new coordinates and nature of the stationary points.<br>2. Sketch the graph of $y = f(2x)$, clearly indicating the new coordinates and nature of the stationary points.",
+        "steps": [
+            "For part 1, the transformation $y = -f(x)$ represents a vertical reflection of the curve in the $x$-axis.<br>This operation negates all $y$-coordinates of the stationary points while keeping their $x$-coordinates unchanged. It also reverses their mathematical nature:<br>\\begin{aligned} P(2, 6) &\\implies P'( 2, -6 ) \\quad \\text{(New Local Minimum)} \\\\ Q(4, -2) &\\implies Q'( 4, 2 ) \\quad \\text{(New Local Maximum)} \\end{aligned}",
+            "Using these new turning points, sketch the vertically reflected cubic curve:<br><br><img src='images/p1/004312_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "For part 2, the transformation $y = f(2x)$ represents a horizontal stretch by a factor of $\\dfrac{1}{ 2 }$ (horizontal compression).<br>This operation halves the $x$-coordinates of all points on the curve while keeping their $y$-coordinates and mathematical nature completely unchanged:<br>\\begin{aligned} P(2, 6) &\\implies P''( 1, 6 ) \\quad \\text{(Local Maximum)} \\\\ Q(4, -2) &\\implies Q''( 2, -2 ) \\quad \\text{(Local Minimum)} \\end{aligned}",
+            "Using these compressed coordinate points, sketch the horizontally scaled cubic curve:<br><br><img src='images/p1/004312_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: Sketches completed with $P'(2, -6)$ and $Q'(4, 2)$ for part 1, and $P''(1, 6)$ and $Q''(2, -2)$ for part 2."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$y = -f(x) \\implies P'(2, -6) \\text{ max}, Q'(4, 2) \\text{ min}$$",
+                "feedback": "Check the nature of your stationary points after the vertical reflection. Reflecting a peak (local maximum) across the $x$-axis turns it into a trough (local minimum), and vice versa. It seems you forgot to reverse their classifications."
+            },
+            {
+                "ans": "$$y = f(2x) \\implies P''(4, 6), Q''(8, -2)$$",
+                "feedback": "Check your scale factor for the horizontal transformation $f(2x)$. Horizontal transformations inside the function bracket behave as the reciprocal of the coefficient, representing a compression factor of $\\dfrac{1}{ 2 }$. You must divide the $x$-coordinates by 2 rather than multiplying them by 2."
+            },
+            {
+                "ans": "$$y = f(2x) \\implies P''(1, 12), Q''(2, -4)$$",
+                "feedback": "Check which coordinates are affected by the horizontal transformation $f(2x)$. Transformations inside the bracket only affect the $x$-coordinates, leaving the vertical $y$-coordinates of your stationary points completely unchanged."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Horizontal Scale Factor Traps",
+            "content": "Remember that horizontal transformations inside the function bracket (such as $f(kx)$) behave as the reciprocal of the coefficient, representing a horizontal stretch of factor $\\dfrac{1}{ k }$. For $f(2x)$, you must multiply all $x$-coordinates by $\\dfrac{1}{ 2 }$, leaving the $y$-coordinates completely unchanged."
+        }
+    },
+    {
+        "id": "004313",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Translations",
+            "Quadratic Curves",
+            "Vertices"
+        ],
+        "img": "images/p1/004313.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the quadratic curve $y = f(x)$, which has its vertex (minimum point) at $(3, -4)$ and crosses the $x$-axis at $(1, 0)$ and $(5, 0)$.<br><br>1. Sketch the graph of $y = f(x) + 4$, clearly indicating the coordinates of the new vertex and any $x$-intercepts.<br>2. Sketch the graph of $y = f(x - 2)$, clearly indicating the coordinates of the new vertex.",
+        "steps": [
+            "For part 1, the transformation $y = f(x) + 4$ represents a vertical translation upwards by $4$ units.<br>This operation adds $4$ to the $y$-coordinates of all points on the curve while keeping their $x$-coordinates unchanged:<br>\\begin{aligned} \\text{New Vertex} &= ( 3, -4 + 4 ) = (3, 0) \\end{aligned}",
+            "To find the new $x$-intercepts, solve $f(x) + 4 = 0 \\implies f(x) = -4$. The original curve only reaches $y = -4$ at its vertex ($x = 3$), so the new graph has only a single double-root intersection point on the $x$-axis, which occurs at the new vertex $(3, 0)$. Sketch this shifted parabola:<br><br><img src='images/p1/004313_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "For part 2, the transformation $y = f(x - 2)$ represents a horizontal translation to the right by $2$ units.<br>This operation adds $2$ to the $x$-coordinates of all points on the curve while keeping their $y$-coordinates completely unchanged:<br>\\begin{aligned} \\text{New Vertex} &= ( 3 + 2, -4 ) = (5, -4) \\end{aligned}",
+            "Using this new vertex coordinate, sketch the horizontally translated parabola:<br><br><img src='images/p1/004313_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: New vertex at $(3, 0)$ touching the $x$-axis for part 1, and new vertex at $(5, -4)$ for part 2."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$y = f(x) + 4 \\implies \\text{Vertex: } (3, 0), \\quad \\text{Intercepts: } (1, 4) \\text{ and } (5, 4)$$",
+                "feedback": "Check your $x$-intercepts for part 1. Intercepts are defined as the points where the curve crosses the $x$-axis (where $y = 0$). While $(1, 4)$ and $(5, 4)$ are points on the new curve, they are no longer $x$-intercepts. The only $x$-intercept is the new vertex at $(3, 0)$."
+            },
+            {
+                "ans": "$$y = f(x - 2) \\implies \\text{Vertex: } (1, -4)$$",
+                "feedback": "Check the direction of your horizontal translation for $y = f(x - 2)$. A transformation inside the bracket of the form $f(x - c)$ represents a horizontal translation to the right by $c$ units, which adds $2$ to the $x$-coordinate: $(3 + 2, -4) = (5, -4)$, not $(1, -4)$."
+            },
+            {
+                "ans": "$$y = f(x - 2) \\implies \\text{Vertex: } (5, -6)$$",
+                "feedback": "Check which coordinates are affected by the horizontal transformation $f(x - 2)$. Transformations inside the bracket only affect the $x$-coordinates, leaving the vertical $y$-coordinates of your vertex completely unchanged."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Tracking the Vertex",
+            "content": "For any quadratic curve transformation, tracking the vertex (minimum or maximum point) is the absolute best way to orient your sketch. Once you establish the new coordinates of the vertex, the rest of the parabola simply retains its symmetric shape around that central point."
+        }
+    },
+    {
+        "id": "004314",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Translations",
+            "Reflections",
+            "Exponential Curves",
+            "Asymptotes"
+        ],
+        "img": "images/p1/004314.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $y = f(x)$ where $f(x) = 3^x$, which passes through the point $(0, 1)$ and has a horizontal asymptote at $y = 0$.<br><br>1. Sketch the graph of $y = f(x) - 2$, clearly indicating the equation of the new horizontal asymptote and the coordinates of the point where the curve crosses the $y$-axis.<br>2. Sketch the graph of $y = f(-x)$, clearly indicating the coordinates of the point where the curve crosses the $y$-axis.",
+        "steps": [
+            "For part 1, the transformation $y = f(x) - 2$ represents a vertical translation downwards by $2$ units.<br>This operation shifts both the curve and its horizontal asymptote downwards by $2$ units:<br>\\begin{aligned} \\text{New Asymptote} &: y = -2 \\end{aligned}",
+            "To find the new $y$-intercept, substitute $x = 0$ into the translated equation:<br>\\begin{aligned} y(0) &= f(0) - 2 \\\\ &= 3^0 - 2 = 1 - 2 = -1 \\end{aligned}<br>Thus, the new $y$-intercept is $(0, -1)$. Sketch the vertically shifted exponential curve:<br><br><img src='images/p1/004314_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "For part 2, the transformation $y = f(-x)$ represents a horizontal reflection of the curve in the $y$-axis.<br>This reflection does not affect the horizontal asymptote nor the $y$-intercept, because points on the $y$-axis ($x = 0$) are invariant under horizontal reflection:<br>\\begin{aligned} \\text{Asymptote} &: y = 0 \\\\ \\text{y-intercept} &: (0, 1) \\end{aligned}",
+            "Sketch this horizontally reflected exponential decay curve:<br><br><img src='images/p1/004314_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: New asymptote at $y = -2$ with intercept $(0, -1)$ for part 1, and asymptote at $y = 0$ with intercept $(0, 1)$ for part 2."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$y = f(x) - 2 \\implies \\text{Asymptote: } y = 0, \\quad \\text{y-intercept: } (0, -1)$$",
+                "feedback": "Check your horizontal asymptote for part 1. When translating an exponential curve vertically, the horizontal asymptote is shifted along with the curve, meaning it moves from $y = 0$ to $y = -2$."
+            },
+            {
+                "ans": "$$y = f(x) - 2 \\implies \\text{Asymptote: } y = -2, \\quad \\text{y-intercept: } (0, 1)$$",
+                "feedback": "Check your $y$-intercept calculation for part 1. You must shift the entire curve downwards, which moves the $y$-intercept from $(0, 1)$ down by 2 units to $(0, -1)$."
+            },
+            {
+                "ans": "$$y = f(-x) \\implies \\text{Asymptote: } x = 0, \\quad \\text{y-intercept: } (1, 0)$$",
+                "feedback": "Check the nature of your reflection for $y = f(-x)$. This represents a horizontal reflection in the $y$-axis. The horizontal asymptote remains at $y = 0$ and the $y$-intercept remains at $(0, 1)$. It seems you may have mistakenly treated it as an inverse function reflection."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Exponential Limits",
+            "content": "The horizontal asymptote of an exponential growth curve represents its limiting behavior as $x \\to -\\infty$. Translating the curve vertically by $k$ units shifts the entire output range of the function, which is why the horizontal asymptote moves from $y = 0$ directly to $y = k$."
+        }
+    },
+    {
+        "id": "004315",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Functions",
+        "subtopic": [
+            "Translations",
+            "Reflections",
+            "Stretches",
+            "Point Transformations"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The point $P(4, -6)$ lies on the curve with equation $y = f(x)$. Find the coordinates of the corresponding point on the curve with equation:<br><br>1. $y = f(x + 3) - 5$<br>2. $y = -2f(x)$",
+        "steps": [
+            "For part 1, analyze the horizontal and vertical transformations in $y = f(x + 3) - 5$ individually:<br><ul><li>The term $f(x + 3)$ represents a horizontal translation to the left by $3$ units, which affects the $x$-coordinate.</li><li>The term $- 5$ represents a vertical translation downwards by $5$ units, which affects the $y$-coordinate.</li></ul>",
+            "Apply these operations to the coordinates of the original point $P(4, -6)$:<br>\\begin{aligned} x' &= 4 - 3 = 1 \\\\ y' &= -6 - 5 = -11 \\end{aligned}<br>Thus, the coordinates of the corresponding point are $(1, -11)$.",
+            "For part 2, analyze the vertical transformations in $y = -2f(x)$:<br><ul><li>The coefficient $-2$ represents a vertical stretch by a scale factor of $2$ combined with a vertical reflection in the $x$-axis.</li><li>Because there are no horizontal terms inside the bracket, the $x$-coordinate remains completely unchanged.</li></ul>",
+            "Apply these vertical operations to the $y$-coordinate of the original point $P(4, -6)$:<br>\\begin{aligned} x'' &= 4 \\\\ y'' &= -2 \\times (-6) = 12 \\end{aligned}<br>Thus, the coordinates of the corresponding point are $(4, 12)$.<br><br>Final Answer: $(1, -11)$ for part 1, and $(4, 12)$ for part 2."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$(7, -11) \\text{ and } (4, 12)$$",
+                "feedback": "Check the direction of your horizontal transformation in part 1. A transformation inside the bracket of the form $f(x + 3)$ translates the graph to the left, which means you must subtract 3 from the $x$-coordinate: $4 - 3 = 1$, not $4 + 3 = 7$."
+            },
+            {
+                "ans": "$$(1, -11) \\text{ and } (2, -12)$$",
+                "feedback": "Check which coordinates are affected by the vertical transformation $y = -2f(x)$. Since the coefficient is outside the bracket, it only affects the $y$-coordinate. The $x$-coordinate must remain completely unchanged at $4$."
+            },
+            {
+                "ans": "$$(1, -11) \\text{ and } (4, -12)$$",
+                "feedback": "Check your sign operation in the vertical stretch of part 2. Multiplying the negative coordinate $y = -6$ by the negative coefficient $-2$ yields a positive coordinate: $-2 \\times (-6) = 12$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Coordinate Independence",
+            "content": "When transforming individual coordinate points algebraically, horizontal transformations (inside the bracket) only affect the $x$-coordinates, while vertical transformations (outside the bracket) only affect the $y$-coordinates. Keeping these operations independent is key to avoiding mixed-coordinate errors."
+        }
     }
+
 
 
 ];
