@@ -801,7 +801,203 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Fraction Limit Subtraction",
             "content": "When subtracting negative fractional limits (like $-\\left(-\\dfrac{8}{ 27 }\\right)$), be extremely vigilant with double negatives. Expanding them systematically prevents simple sign errors from ruining your final exact fraction."
         }
+    },
+    {
+        "id": "004321",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Identities",
+        "subtopic": [
+            "Identity Proofs",
+            "Pythagorean Identity",
+            "Algebraic Fraction Simplification"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Prove the identity:<br>$$\\dfrac{\\sin\\theta - \\sin^3\\theta}{\\cos^3\\theta} \\equiv \\tan\\theta$$",
+        "steps": [
+            "Start with the left-hand side (LHS) of the identity:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{\\sin\\theta - \\sin^3\\theta}{\\cos^3\\theta} \\end{aligned}",
+            "Factorise out the common term $\\sin\\theta$ from the numerator expression:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{\\sin\\theta\\left(1 - \\sin^2\\theta\\right)}{\\cos^3\\theta} \\end{aligned}",
+            "Apply the fundamental Pythagorean identity $1 - \\sin^2\\theta = \\cos^2\\theta$ to substitute for the term in the brackets:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{\\sin\\theta\\cos^2\\theta}{\\cos^3\\theta} \\end{aligned}",
+            "Simplify the fraction by dividing both the numerator and denominator by $\\cos^2\\theta$, then apply the identity $\\dfrac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{\\sin\\theta}{\\cos\\theta} \\\\ &= \\tan\\theta \\\\ &= \\text{RHS} \\end{aligned}<br>Since the left-hand side simplifies to the right-hand side, the identity is proven."
+        ],
+        "pi_options": [
+            {
+                "ans": "Proof incorrect due to expanding $1 - \\sin^2\\theta$ as $1 - \\cos^2\\theta$",
+                "feedback": "Check your trigonometric identities. Recall that the fundamental identity is $\\sin^2\\theta + \\cos^2\\theta = 1$. Rearranging this gives $1 - \\sin^2\\theta = \\cos^2\\theta$, not $1 - \\cos^2\\theta$."
+            },
+            {
+                "ans": "Proof incorrect due to writing $\\dfrac{\\sin\\theta}{\\cos\\theta} = \\dfrac{1}{\\tan\\theta}$",
+                "feedback": "Check your basic trigonometric definitions. By definition, $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$. The reciprocal identity is $\\dfrac{1}{\\tan\\theta} = \\dfrac{\\cos\\theta}{\\sin\\theta}$."
+            },
+            {
+                "ans": "Proof incorrect due to simplifying $\\dfrac{\\sin\\theta\\cos^2\\theta}{\\cos^3\\theta}$ to $\\sin\\theta\\cos\\theta$",
+                "feedback": "Check your division of powers. When dividing $\\cos^2\\theta$ by $\\cos^3\\theta$, the remaining term is in the denominator: $\\dfrac{\\cos^2\\theta}{\\cos^3\\theta} = \\dfrac{1}{\\cos\\theta}$. It seems you may have mistakenly multiplied them instead."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Initiating Identity Proofs",
+            "content": "When proving trigonometric identities, a reliable strategy is to start with the more algebraically complex side (usually the left-hand side, LHS) and manipulate it systematically using fundamental identities until it simplifies down to the simpler side (RHS)."
+        }
+    },
+    {
+        "id": "004322",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Identities",
+        "subtopic": [
+            "Identity Proofs",
+            "Pythagorean Identity",
+            "Difference of Two Squares"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Prove the identity:<br>$$\\cos^4\\theta - \\sin^4\\theta \\equiv 1 - 2\\sin^2\\theta$$",
+        "steps": [
+            "Start with the left-hand side (LHS) of the identity:<br>\\begin{aligned} \\text{LHS} &= \\cos^4\\theta - \\sin^4\\theta \\end{aligned}",
+            "Treat the quartic expression as a difference of two squares, $a^4 - b^4 = \\left(a^2 - b^2\\right)\\left(a^2 + b^2\\right)$, and factorise:<br>\\begin{aligned} \\text{LHS} &= \\left(\\cos^2\\theta - \\sin^2\\theta\\right)\\left(\\cos^2\\theta + \\sin^2\\theta\\right) \\end{aligned}",
+            "Apply the fundamental Pythagorean identity $\\cos^2\\theta + \\sin^2\\theta = 1$ to simplify the second bracketed term:<br>\\begin{aligned} \\text{LHS} &= \\left(\\cos^2\\theta - \\sin^2\\theta\\right)(1) \\\\ &= \\cos^2\\theta - \\sin^2\\theta \\end{aligned}",
+            "To match the target right-hand side, write the expression entirely in terms of $\\sin^2\\theta$. Substitute $\\cos^2\\theta = 1 - \\sin^2\\theta$:<br>\\begin{aligned} \\text{LHS} &= \\left(1 - \\sin^2\\theta\\right) - \\sin^2\\theta \\\\ &= 1 - 2\\sin^2\\theta \\\\ &= \\text{RHS} \\end{aligned}<br>Since the left-hand side simplifies to the right-hand side, the identity is proven."
+        ],
+        "pi_options": [
+            {
+                "ans": "Proof incorrect due to expanding $\\cos^4\\theta - \\sin^4\\theta$ as $(\\cos^2\\theta - \\sin^2\\theta)^2$",
+                "feedback": "Check your algebraic factorisation. The difference of two squares is factorised as $a^2 - b^2 = (a-b)(a+b)$. The expression $a^2 - b^2$ is not equivalent to $(a-b)^2 = a^2 - 2ab + b^2$."
+            },
+            {
+                "ans": "Proof incorrect due to writing $\\cos^2\\theta - \\sin^2\\theta = 1$",
+                "feedback": "Check your fundamental identity. The Pythagorean identity is $\\cos^2\\theta + \\sin^2\\theta = 1$. The difference of squares, $\\cos^2\\theta - \\sin^2\\theta$, does not equal 1."
+            },
+            {
+                "ans": "Proof incorrect due to substituting $\\cos^2\\theta = \\sin^2\\theta - 1$",
+                "feedback": "Check your rearrangement of the Pythagorean identity. Since $\\sin^2\\theta + \\cos^2\\theta = 1$, isolating $\\cos^2\\theta$ yields $\\cos^2\\theta = 1 - \\sin^2\\theta$, not $\\sin^2\\theta - 1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Factoring in Trigonometry",
+            "content": "The difference of two squares algebraic rule $a^4 - b^4 = (a^2 - b^2)(a^2 + b^2)$ is exceptionally useful when working with trigonometric functions. Because $\\cos^2\\theta + \\sin^2\\theta = 1$, any quartic difference $\\cos^4\\theta - \\sin^4\\theta$ simplifies instantly to a much simpler quadratic difference $\\cos^2\\theta - \\sin^2\\theta$."
+        }
+    },
+    {
+        "id": "004323",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Identities",
+        "subtopic": [
+            "Identity Proofs",
+            "Algebraic Fractions",
+            "Pythagorean Identity"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Prove the identity:<br>$$\\dfrac{1}{1 - \\sin\\theta} + \\dfrac{1}{1 + \\sin\\theta} \\equiv \\dfrac{2}{\\cos^2\\theta}$$",
+        "steps": [
+            "Start with the left-hand side (LHS) of the identity:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{1}{1 - \\sin\\theta} + \\dfrac{1}{1 + \\sin\\theta} \\end{aligned}",
+            "Combine the two fractions by finding a common denominator, which is the product of the two denominators: $(1 - \\sin\\theta)(1 + \\sin\\theta)$:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{(1 + \\sin\\theta) + (1 - \\sin\\theta)}{(1 - \\sin\\theta)(1 + \\sin\\theta)} \\end{aligned}",
+            "Simplify the numerator by combining like terms and expand the denominator using the difference of two squares:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{2}{1 - \\sin^2\\theta} \\end{aligned}",
+            "Apply the fundamental Pythagorean identity $1 - \\sin^2\\theta = \\cos^2\\theta$ to substitute for the denominator:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{2}{\\cos^2\\theta} \\\\ &= \\text{RHS} \\end{aligned}<br>Since the left-hand side simplifies to the right-hand side, the identity is proven."
+        ],
+        "pi_options": [
+            {
+                "ans": "Proof incorrect due to writing $(1 - \\sin\\theta)(1 + \\sin\\theta) = 1 - \\sin\\theta$",
+                "feedback": "Check your expansion of the denominator. By the difference of two squares, $(1 - \\sin\\theta)(1 + \\sin\\theta) = 1 - \\sin^2\\theta$. It seems you forgot to square the trigonometric term during expansion."
+            },
+            {
+                "ans": "Proof incorrect due to simplifying the numerator $(1 + \\sin\\theta) + (1 - \\sin\\theta) = 2\\sin\\theta$",
+                "feedback": "Check your algebraic addition in the numerator. Combining $(1 + \\sin\\theta) + (1 - \\sin\\theta)$ yields $1 + 1 + \\sin\\theta - \\sin\\theta = 2$. It seems you accidentally subtracted the constants and added the sine terms."
+            },
+            {
+                "ans": "Proof incorrect due to substituting $1 - \\sin^2\\theta = \\sin^2\\theta$",
+                "feedback": "Check your Pythagorean identity. Rearranging $\\sin^2\\theta + \\cos^2\\theta = 1$ yields $1 - \\sin^2\\theta = \\cos^2\\theta$. It does not equal $\\sin^2\\theta$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Trigonometric Denominators",
+            "content": "When adding fractions with algebraic trigonometric denominators such as $1 - \\sin\\theta$ and $1 + \\sin\\theta$, multiplying them together to find the common denominator naturally creates a difference of squares: $(1 - \\sin\\theta)(1 + \\sin\\theta) = 1 - \\sin^2\\theta = \\cos^2\\theta$. Always look out for this identity to simplify denominators quickly."
+        }
+    },
+    {
+        "id": "004324",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Identities",
+        "subtopic": [
+            "Identity Proofs",
+            "Tangent Identity",
+            "Fraction Simplification"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Prove the identity:<br>$$\\dfrac{\\tan\\theta}{\\sin\\theta} - \\sin\\theta\\tan\\theta \\equiv \\cos\\theta$$",
+        "steps": [
+            "Start with the left-hand side (LHS) of the identity:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{\\tan\\theta}{\\sin\\theta} - \\sin\\theta\\tan\\theta \\end{aligned}",
+            "Substitute $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$ into both terms of the expression:<br>\\begin{aligned} \\text{First Term} &= \\dfrac{\\sin\\theta/\\cos\\theta}{\\sin\\theta} = \\dfrac{1}{\\cos\\theta} \\\\ \\text{Second Term} &= \\sin\\theta\\left(\\dfrac{\\sin\\theta}{\\cos\\theta}\\right) = \\dfrac{\\sin^2\\theta}{\\cos\\theta} \\end{aligned}",
+            "Combine the two terms over their common denominator $\\cos\\theta$:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{1}{\\cos\\theta} - \\dfrac{\\sin^2\\theta}{\\cos\\theta} \\\\ &= \\dfrac{1 - \\sin^2\\theta}{\\cos\\theta} \\end{aligned}",
+            "Apply the fundamental Pythagorean identity $1 - \\sin^2\\theta = \\cos^2\\theta$ to substitute for the numerator:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{\\cos^2\\theta}{\\cos\\theta} \\\\ &= \\cos\\theta \\\\ &= \\text{RHS} \\end{aligned}<br>Since the left-hand side simplifies to the right-hand side, the identity is proven."
+        ],
+        "pi_options": [
+            {
+                "ans": "Proof incorrect due to simplifying $\\dfrac{\\tan\\theta}{\\sin\\theta}$ as $\\dfrac{1}{\\sin\\theta}$",
+                "feedback": "Check your tangent identity substitution. Since $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$, dividing this by $\\sin\\theta$ cancels out the $\\sin\\theta$, leaving $\\dfrac{1}{\\cos\\theta}$ rather than $\\dfrac{1}{\\sin\\theta}$."
+            },
+            {
+                "ans": "Proof incorrect due to writing $\\sin\\theta\\tan\\theta = \\sin^2\\theta\\cos\\theta$",
+                "feedback": "Check your algebra. Multiplying $\\sin\\theta$ by $\\dfrac{\\sin\\theta}{\\cos\\theta}$ yields $\\dfrac{\\sin^2\\theta}{\\cos\\theta}$. The term $\\cos\\theta$ remains in the denominator."
+            },
+            {
+                "ans": "Proof incorrect due to substituting $1 - \\sin^2\\theta = 1 - \\cos^2\\theta$",
+                "feedback": "Check your fundamental identity. The Pythagorean identity is $1 - \\sin^2\\theta = \\cos^2\\theta$. Do not leave the constant $1$ in the expression after performing the substitution."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Converting to Basic Functions",
+            "content": "A reliable, standard strategy for proving any trigonometric identity is to convert all non-basic functions (like tangent) into terms of sine and cosine: $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$. Once everything is expressed using sines and cosines, standard algebraic fraction rules will lead you to the proof."
+        }
+    },
+    {
+        "id": "004325",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Trigonometry",
+        "topic": "Mathematical Proof",
+        "subtopic": [
+            "Proof by Counterexample",
+            "Trigonometric Addition",
+            "Mathematical Proof"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Show, by means of a counterexample, that the statement:<br>$$\\cos(A + B) \\equiv \\cos A + \\cos B$$<br>is not generally true for all angles $A$ and $B$.",
+        "steps": [
+            "To disprove a universal mathematical statement, find a single specific counterexample (a set of angles $A$ and $B$) where the left-hand side (LHS) is not equal to the right-hand side (RHS). Let $A = 60^\\circ$ and $B = 60^\\circ$.",
+            "Evaluate the left-hand side (LHS) of the statement using these chosen angles:<br>\\begin{aligned} \\text{LHS} &= \\cos\\left(60^\\circ + 60^\\circ\\right) \\\\ &= \\cos\\left(120^\\circ\\right) \\\\ &= -\\dfrac{1}{ 2 } \\end{aligned}",
+            "Evaluate the right-hand side (RHS) of the statement using the same angles:<br>\\begin{aligned} \\text{RHS} &= \\cos\\left(60^\\circ\\right) + \\cos\\left(60^\\circ\\right) \\\\ &= \\dfrac{1}{ 2 } + \\dfrac{1}{ 2 } \\\\ &= 1 \\end{aligned}",
+            "Compare the results of both sides. Since the LHS is not equal to the RHS:<br>\\begin{aligned} \\text{LHS} &\\neq \\text{RHS} \\\\ -\\dfrac{1}{ 2 } &\\neq 1 \\end{aligned}<br>Because a case has been shown where the equation does not hold, the statement has been disproved by counterexample."
+        ],
+        "pi_options": [
+            {
+                "ans": "Proof incorrect due to choosing $A = 0^\\circ$ and $B = 0^\\circ$ as a counterexample",
+                "feedback": "Check your choice of angles. If you choose $A = 0^\\circ$ and $B = 0^\\circ$, then $\\text{LHS} = \\cos(0^\\circ) = 1$ and $\\text{RHS} = \\cos(0^\\circ) + \\cos(0^\\circ) = 1 + 1 = 2$. While this is a valid counterexample because $1 \\neq 2$, choosing non-zero angles is much safer and more illustrative for trigonometric functions."
+            },
+            {
+                "ans": "Attempting to prove the statement algebraically instead of providing a counterexample",
+                "feedback": "Read the question carefully. The question asks you to show that the statement is *not* generally true 'by means of a counterexample'. You must choose specific numerical values for $A$ and $B$ to disprove the statement, rather than attempting an algebraic proof."
+            },
+            {
+                "ans": "Proof incorrect due to stating $\\cos(120^\\circ) = 1$",
+                "feedback": "Check your basic trigonometric values. The value of $\\cos(120^\\circ)$ is equal to $-\\dfrac{1}{2}$ (or $-0.5$), not $1$. Use your calculator or the quadrant rules to verify your exact values."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Disproving Universal Claims",
+            "content": "In mathematics, proving a statement requires showing that it holds true for all possible cases, which requires general algebraic reasoning. However, disproving a statement (showing it is not generally true) only requires finding a single specific instance—a counterexample—where the statement fails."
+        }
     }
+
 
 
 
