@@ -594,7 +594,215 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Coordinate Independence",
             "content": "When transforming individual coordinate points algebraically, horizontal transformations (inside the bracket) only affect the $x$-coordinates, while vertical transformations (outside the bracket) only affect the $y$-coordinates. Keeping these operations independent is key to avoiding mixed-coordinate errors."
         }
+    },
+    {
+        "id": "004316",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Area Under a Curve",
+            "Definite Integration",
+            "Equations of Curves"
+        ],
+        "img": "images/p1/004316.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C$ with equation $y = 5 + 4x - x^2$ and the line $L$ with equation $y = x + 1$. The line intersects the curve at the points $A$ and $B$.<br><br>1. Find the coordinates of $A$ and $B$.<br>2. Calculate the exact area of the region enclosed by the curve $C$ and the line $L$.",
+        "steps": [
+            "To find the coordinates of the intersection points, set the equation of the curve equal to the equation of the line:<br>\\begin{aligned} 5 + 4x - x^2 &= x + 1 \\\\ -x^2 + 3x + 4 &= 0 \\end{aligned}<br>Multiply the entire quadratic equation by $-1$ to make factoring easier:<br>\\begin{aligned} x^2 - 3x - 4 &= 0 \\\\ (x - 4)(x + 1) &= 0 \\end{aligned}",
+            "This yields two $x$-coordinates: $x = 4$ and $x = -1$. Substitute these back into the linear equation $y = x + 1$ to find the corresponding $y$-coordinates:<ul><li>For $x = 4$: $y = 4 + 1 = 5 \\implies B(4, 5)$</li><li>For $x = -1$: $y = -1 + 1 = 0 \\implies A(-1, 0)$</li></ul>Thus, the coordinates of the intersection points are $A(-1, 0)$ and $B(4, 5)$.",
+            "To find the enclosed area, integrate the difference between the upper curve $C$ and the lower line $L$ over the interval $[-1, 4]$:<br>\\begin{aligned} \\text{Area} &= \\int_{ -1 }^{ 4 } \\left[ (5 + 4x - x^2) - (x + 1) \\right] \\,\\text{d}x \\\\ &= \\int_{ -1 }^{ 4 } \\left( 4 + 3x - x^2 \\right) \\,\\text{d}x \\end{aligned}",
+            "Integrate the polynomial expression term by term:<br>\\begin{aligned} \\text{Area} &= \\left[ 4x + \\dfrac{3}{ 2 }x^2 - \\dfrac{1}{ 3 }x^3 \\right]_{ -1 }^{ 4 } \\end{aligned}",
+            "Evaluate the integrated expression at the upper limit $x = 4$:<br>\\begin{aligned} \\text{Upper Limit} &= 4(4) + \\dfrac{3}{ 2 }(16) - \\dfrac{1}{ 3 }(64) \\\\ &= 16 + 24 - \\dfrac{64}{ 3 } \\\\ &= 40 - \\dfrac{64}{ 3 } = \\dfrac{120 - 64}{ 3 } = \\dfrac{56}{ 3 } \\end{aligned}",
+            "Evaluate the integrated expression at the lower limit $x = -1$:<br>\\begin{aligned} \\text{Lower Limit} &= 4(-1) + \\dfrac{3}{ 2 }(-1)^2 - \\dfrac{1}{ 3 }(-1)^3 \\\\ &= -4 + \\dfrac{3}{ 2 } + \\dfrac{1}{ 3 } \\\\ &= -4 + \\dfrac{9}{ 6 } + \\dfrac{2}{ 6 } \\\\ &= -4 + \\dfrac{11}{ 6 } = -\\dfrac{13}{ 6 } \\end{aligned}",
+            "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the enclosed region:<br>\\begin{aligned} \\text{Area} &= \\dfrac{56}{ 3 } - \\left( -\\dfrac{13}{ 6 } \\right) \\\\ &= \\dfrac{112}{ 6 } + \\dfrac{13}{ 6 } = \\dfrac{125}{ 6 } \\end{aligned}<br><br>Final Answer: $A(-1, 0)$ and $B(4, 5)$; exact area is $\\dfrac{125}{ 6 }$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$A(-1, 0), \\quad B(4, 5); \\quad \\text{Area: } \\dfrac{99}{ 6 }$$",
+                "feedback": "Check your sign operation in the final limit subtraction step. The exact area is calculated as $\\text{Upper Limit} - \\text{Lower Limit} = \\dfrac{112}{ 6 } - \\left(-\\dfrac{13}{ 6 }\\right) = \\dfrac{125}{ 6 }$. It seems you may have subtracted the absolute values instead of adding them."
+            },
+            {
+                "ans": "$$A(1, 2), \\quad B(-4, -3); \\quad \\text{Area: } \\dfrac{125}{ 6 }$$",
+                "feedback": "Check your factorisation of the quadratic equation $x^2 - 3x - 4 = 0$. Since the constant term is negative, the signs inside the binomial factors must be opposite, giving $(x - 4)(x + 1) = 0$, yielding solutions $x = 4$ and $x = -1$ rather than $x = -4$ and $x = 1$."
+            },
+            {
+                "ans": "$$A(-1, 0), \\quad B(4, 5); \\quad \\text{Area: } 40$$",
+                "feedback": "Check your limit evaluations. It seems you only evaluated the constant parts of your upper limit terms and forgot to subtract both the fractional power terms and the lower limit evaluation."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Distributing Subtractions",
+            "content": "When calculating the area enclosed between a curve $y = f(x)$ and a line $y = g(x)$, always integrate the difference $\\int [f(x) - g(x)] \\,\\text{d}x$. Ensure you distribute the subtraction sign to every term of the lower function $g(x) = x + 1$ to avoid sign slips."
+        }
+    },
+    {
+        "id": "004317",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Area Under a Curve",
+            "Definite Integration",
+            "Polynomial Curves"
+        ],
+        "img": "images/p1/004317.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C$ with equation $y = x^3 - 3x^2$ and the $x$-axis.<br><br>1. Find the coordinates of the points where the curve intersects the $x$-axis.<br>2. Find the exact area of the finite region bounded by the curve and the $x$-axis.",
+        "steps": [
+            "To find the points where the curve intersects the $x$-axis, set $y = 0$ and factorise the cubic equation:<br>\\begin{aligned} x^3 - 3x^2 &= 0 \\\\ x^2(x - 3) &= 0 \\end{aligned}<br>This yields two solutions: $x = 0$ and $x = 3$.<br>So, the two $x$-intercept points are $(0, 0)$ and $(3, 0)$.",
+            "On the interval $[0, 3]$, the curve lies entirely below the $x$-axis ($y \\le 0$). To find the exact geometric area, take the negative of the definite integral over this interval:<br>\\begin{aligned} \\text{Area} &= -\\int_{ 0 }^{ 3 } \\left( x^3 - 3x^2 \\right) \\,\\text{d}x \\end{aligned}",
+            "Integrate the expression using the power rule:<br>\\begin{aligned} \\text{Area} &= -\\left[ \\dfrac{1}{ 4 }x^4 - x^3 \\right]_{ 0 }^{ 3 } \\end{aligned}",
+            "Evaluate the integrated expression at the upper limit $x = 3$:<br>\\begin{aligned} \\text{Upper Limit} &= \\dfrac{1}{ 4 }(3)^4 - (3)^3 \\\\ &= \\dfrac{81}{ 4 } - 27 \\\\ &= \\dfrac{81}{ 4 } - \\dfrac{108}{ 4 } = -\\dfrac{27}{ 4 } \\end{aligned}",
+            "Substitute the lower limit $x = 0$ into the expression:<br>\\begin{aligned} \\text{Lower Limit} &= \\dfrac{1}{ 4 }(0)^4 - (0)^3 = 0 \\end{aligned}",
+            "Subtract the lower limit from the upper limit and negate the result to find the exact geometric area:<br>\\begin{aligned} \\text{Area} &= -\\left( -\\dfrac{27}{ 4 } - 0 \\right) = \\dfrac{27}{ 4 } \\end{aligned}<br><br>Final Answer: $(0, 0)$ and $(3, 0)$; exact area is $\\dfrac{27}{ 4 }$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$(0, 0) \\text{ and } (3, 0); \\quad \\text{Area: } -\\dfrac{27}{ 4 }$$",
+                "feedback": "Check your final area value. Since area represents a physical geometric quantity, it must always be positive. You must negate your definite integral result if the region lies entirely below the $x$-axis."
+            },
+            {
+                "ans": "$$(0, 0) \\text{ and } (9, 0); \\quad \\text{Area: } \\dfrac{27}{ 4 }$$",
+                "feedback": "Check your factorization of $x^3 - 3x^2 = 0$. Factoring out $x^2$ gives $x^2(x - 3) = 0$, which yields $x = 3$, not $x = 9$."
+            },
+            {
+                "ans": "$$(0, 0) \\text{ and } (3, 0); \\quad \\text{Area: } 27$$",
+                "feedback": "Check your limit evaluation. It seems you forgot to divide the first term $x^4$ by 4 during the integration step, which led to $81 - 27 = 54$ before division."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Negative Integrals",
+            "content": "Since the region lies entirely below the $x$-axis on the interval $[0, 3]$, the definite integral of the function will naturally evaluate to a negative value. To find the geometric area, take the absolute value or negate the integral: $A = -\\int_{0}^{3} y \\,\\text{d}x$."
+        }
+    },
+    {
+        "id": "004318",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Area Under a Curve",
+            "Definite Integration",
+            "Intersecting Curves"
+        ],
+        "img": "images/p1/004318.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C_1$ with equation $y = 8 - x^2$ and the curve $C_2$ with equation $y = x^2$. The two curves intersect at the points $P$ and $Q$.<br><br>1. Find the coordinates of the points of intersection $P$ and $Q$.<br>2. Calculate the exact area of the region enclosed between the two curves.",
+        "steps": [
+            "To find the intersection coordinates, set the equations of the two curves equal to each other:<br>\\begin{aligned} 8 - x^2 &= x^2 \\\\ 2x^2 &= 8 \\\\ x^2 &= 4 \\implies x = \\pm 2 \\end{aligned}",
+            "Substitute these $x$-values back into $y = x^2$ to find the corresponding $y$-coordinates:<ul><li>For $x = 2$: $y = (2)^2 = 4 \\implies Q(2, 4)$</li><li>For $x = -2$: $y = (-2)^2 = 4 \\implies P(-2, 4)$</li></ul>Thus, the coordinates of the intersection points are $P(-2, 4)$ and $Q(2, 4)$.",
+            "On the interval $[-2, 2]$, the curve $C_1$ lies above the curve $C_2$. Integrate the difference between the upper curve and the lower curve:<br>\\begin{aligned} \\text{Area} &= \\int_{ -2 }^{ 2 } \\left[ (8 - x^2) - x^2 \\right] \\,\\text{d}x \\\\ &= \\int_{ -2 }^{ 2 } \\left( 8 - 2x^2 \\right) \\,\\text{d}x \\end{aligned}",
+            "Integrate the expression using the power rule:<br>\\begin{aligned} \\text{Area} &= \\left[ 8x - \\dfrac{2}{ 3 }x^3 \\right]_{ -2 }^{ 2 } \\end{aligned}",
+            "Evaluate the integrated expression at the upper limit $x = 2$:<br>\\begin{aligned} \\text{Upper Limit} &= 8(2) - \\dfrac{2}{ 3 }(2)^3 \\\\ &= 16 - \\dfrac{16}{ 3 } = \\dfrac{48 - 16}{ 3 } = \\dfrac{32}{ 3 } \\end{aligned}",
+            "Evaluate the integrated expression at the lower limit $x = -2$:<br>\\begin{aligned} \\text{Lower Limit} &= 8(-2) - \\dfrac{2}{ 3 }(-2)^3 \\\\ &= -16 + \\dfrac{16}{ 3 } = -\\dfrac{32}{ 3 } \\end{aligned}",
+            "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area:<br>\\begin{aligned} \\text{Area} &= \\dfrac{32}{ 3 } - \\left( -\\dfrac{32}{ 3 } \\right) = \\dfrac{64}{ 3 } \\end{aligned}<br><br>Final Answer: $P(-2, 4)$ and $Q(2, 4)$; exact area is $\\dfrac{64}{ 3 }$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$P(-2, 4), \\quad Q(2, 4); \\quad \\text{Area: } 0$$",
+                "feedback": "Check your subtraction at the final step. Because you are calculating $\\text{Upper Limit} - \\text{Lower Limit}$, the double negative resolves to addition: $\\dfrac{32}{ 3 } - \\left(-\\dfrac{32}{ 3 }\\right) = \\dfrac{64}{ 3 }$. It seems you may have subtracted them directly to get $0$."
+            },
+            {
+                "ans": "$$P(-4, 16), \\quad Q(4, 16); \\quad \\text{Area: } \\dfrac{64}{ 3 }$$",
+                "feedback": "Check your algebraic step when solving $2x^2 = 8$. Dividing by 2 yields $x^2 = 4 \\implies x = \\pm 2$. It seems you may have forgotten to divide by 2 first, leading to $x^2 = 8 \\implies x = \\pm 4$."
+            },
+            {
+                "ans": "$$P(-2, 4), \\quad Q(2, 4); \\quad \\text{Area: } 16$$",
+                "feedback": "Check your integration step. When integrating $2x^2$, the result is $\\dfrac{2}{3}x^3$. It seems you may have omitted the fraction and integrated it as simply $2x^3$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Symmetry Shortcuts",
+            "content": "When integrating a symmetric region across the $y$-axis (such as from $-2$ to $2$ for even functions), you can simplify your calculation by integrating from $0$ to $2$ and doubling the result: $\\text{Area} = 2 \\int_{0}^{2} (8 - 2x^2) \\,\\text{d}x$. This dramatically reduces the risk of arithmetic slips with negative limits!"
+        }
+    },
+    {
+        "id": "004319",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Area Under a Curve",
+            "Definite Integration",
+            "Radical Curves"
+        ],
+        "img": "images/p1/004319.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C$ with equation $y = 4\\sqrt{x}$ and the line $L$ with equation $y = x + 3$. The line intersects the curve at the points $A$ and $B$.<br><br>1. Show that the coordinates of the points of intersection are $A(1, 4)$ and $B(9, 12)$.<br>2. Calculate the exact area of the region enclosed by the curve $C$ and the line $L$.",
+        "steps": [
+            "To verify the coordinates, substitute the points into both equations:<ul><li>For $A(1, 4)$: $y = 4\\sqrt{1} = 4$, and $y = 1 + 3 = 4$. Verified.</li><li>For $B(9, 12)$: $y = 4\\sqrt{9} = 12$, and $y = 9 + 3 = 12$. Verified.</li></ul>Both points lie on both the curve and the line.",
+            "On the interval $[1, 9]$, the curve $C$ lies above the line $L$. Set up the definite integral for the enclosed area:<br>\\begin{aligned} \\text{Area} &= \\int_{ 1 }^{ 9 } \\left( 4\\sqrt{x} - (x + 3) \\right) \\,\\text{d}x \\\\ &= \\int_{ 1 }^{ 9 } \\left( 4x^{1/2} - x - 3 \\right) \\,\\text{d}x \\end{aligned}",
+            "Integrate the expression term by term using the integration power rule:<br>\\begin{aligned} \\text{Area} &= \\left[ 4\\left(\\dfrac{2}{ 3 }x^{3/2}\\right) - \\dfrac{1}{ 2 }x^2 - 3x \\right]_{ 1 }^{ 9 } \\\\ &= \\left[ \\dfrac{8}{ 3 }x^{3/2} - \\dfrac{1}{ 2 }x^2 - 3x \\right]_{ 1 }^{ 9 } \\end{aligned}",
+            "Evaluate the integrated expression at the upper limit $x = 9$, noting that $9^{3/2} = (\\sqrt{9})^3 = 27$:<br>\\begin{aligned} \\text{Upper Limit} &= \\dfrac{8}{ 3 }(27) - \\dfrac{1}{ 2 }(81) - 3(9) \\\\ &= 72 - 40.5 - 27 \\\\ &= 72 - 67.5 = 4.5 = \\dfrac{9}{ 2 } \\end{aligned}",
+            "Evaluate the integrated expression at the lower limit $x = 1$:<br>\\begin{aligned} \\text{Lower Limit} &= \\dfrac{8}{ 3 }(1)^{3/2} - \\dfrac{1}{ 2 }(1)^2 - 3(1) \\\\ &= \\dfrac{8}{ 3 } - \\dfrac{1}{ 2 } - 3 \\\\ &= \\dfrac{8}{ 3 } - \\dfrac{7}{ 2 } \\\\ &= \\dfrac{16}{ 6 } - \\dfrac{21}{ 6 } = -\\dfrac{5}{ 6 } \\end{aligned}",
+            "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the enclosed region:<br>\\begin{aligned} \\text{Area} &= \\dfrac{9}{ 2 } - \\left( -\\dfrac{5}{ 6 } \\right) \\\\ &= \\dfrac{27}{ 6 } + \\dfrac{5}{ 6 } = \\dfrac{32}{ 6 } = \\dfrac{16}{ 3 } \\end{aligned}<br><br>Final Answer: Intersections shown; exact area is $\\dfrac{16}{ 3 }$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$\\text{Area: } \\dfrac{11}{ 3 }$$",
+                "feedback": "Check your sign operation in the final limit subtraction step. The exact area is calculated as $\\text{Upper Limit} - \\text{Lower Limit} = \\dfrac{9}{ 2 } - \\left(-\\dfrac{5}{ 6 }\\right) = \\dfrac{16}{ 3 }$. It seems you may have subtracted the absolute values instead of adding them."
+            },
+            {
+                "ans": "$$\\text{Area: } \\dfrac{22}{ 3 }$$",
+                "feedback": "Check your calculation for the upper limit. Evaluating $\\dfrac{8}{3} \\times 9^{3/2}$ yields $\\dfrac{8}{3} \\times 27 = 72$. It seems you may have evaluated it as $\\dfrac{8}{3} \\times 9 = 24$."
+            },
+            {
+                "ans": "$$\\text{Area: } \\dfrac{16}{ 3 } \\text{ but evaluated on interval } [0, 9]$$",
+                "feedback": "Check the limits of integration. The enclosed region is bounded between the two intersection points $A$ and $B$, which means the integration boundaries are $x = 1$ and $x = 9$, not starting from $x = 0$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Evaluating Fractional Bounds",
+            "content": "When evaluating $x^{3/2}$ at the upper bound $x = 9$, first take the square root of $9$ to get $3$, and then cube it to get $27$. Splitting fractional powers into root-then-power operations keeps your mental arithmetic precise and error-free."
+        }
+    },
+    {
+        "id": "004320",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Calculus",
+        "topic": "Integration",
+        "subtopic": [
+            "Area Under a Curve",
+            "Definite Integration",
+            "Radical Curves"
+        ],
+        "img": "images/p1/004320.png",
+        "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve with equation $y = 3\\sqrt{x} - 2$, which crosses the $x$-axis at the point $A$.<br><br>1. Find the exact coordinates of the point $A$.<br>2. Find the exact area of the region bounded by the curve, the $x$-axis, and the vertical line $x = 4$.",
+        "steps": [
+            "To find the coordinates of point $A$, set the equation of the curve equal to $0$ (since $y = 0$ on the $x$-axis) and solve for $x$:<br>\\begin{aligned} 3\\sqrt{x} - 2 &= 0 \\\\ 3\\sqrt{x} &= 2 \\\\ \\sqrt{x} &= \\dfrac{2}{ 3 } \\\\ x &= \\left(\\dfrac{2}{ 3 }\\right)^2 = \\dfrac{4}{ 9 } \\end{aligned}<br>Thus, the coordinates of point $A$ are $A\\left(\\dfrac{4}{ 9 }, 0\\right)$.",
+            "On the interval $\\left[\\dfrac{4}{ 9 }, 4\\right]$, the curve lies entirely above the $x$-axis. Set up the definite integral for the bounded area:<br>\\begin{aligned} \\text{Area} &= \\int_{ 4/9 }^{ 4 } \\left( 3x^{1/2} - 2 \\right) \\,\\text{d}x \\end{aligned}",
+            "Integrate the expression using the power rule:<br>\\begin{aligned} \\text{Area} &= \\left[ 3\\left(\\dfrac{2}{ 3 }x^{3/2}\\right) - 2x \\right]_{ 4/9 }^{ 4 } \\\\ &= \\left[ 2x^{3/2} - 2x \\right]_{ 4/9 }^{ 4 } \\end{aligned}",
+            "Evaluate the integrated expression at the upper limit $x = 4$, noting that $4^{3/2} = (\\sqrt{4})^3 = 8$:<br>\\begin{aligned} \\text{Upper Limit} &= 2(4)^{3/2} - 2(4) \\\\ &= 2(8) - 8 \\\\ &= 16 - 8 = 8 \\end{aligned}",
+            "Evaluate the integrated expression at the lower limit $x = \\dfrac{4}{ 9 }$, noting that $\\left(\\dfrac{4}{ 9 }\\right)^{3/2} = \\left(\\sqrt{\\dfrac{4}{ 9 }}\\right)^3 = \\dfrac{8}{ 27 }$:<br>\\begin{aligned} \\text{Lower Limit} &= 2\\left(\\dfrac{4}{ 9 }\\right)^{3/2} - 2\\left(\\dfrac{4}{ 9 }\\right) \\\\ &= 2\\left(\\dfrac{8}{ 27 }\\right) - \\dfrac{8}{ 9 } \\\\ &= \\dfrac{16}{ 27 } - \\dfrac{24}{ 27 } = -\\dfrac{8}{ 27 } \\end{aligned}",
+            "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the bounded region:<br>\\begin{aligned} \\text{Area} &= 8 - \\left( -\\dfrac{8}{ 27 } \\right) \\\\ &= \\dfrac{216}{ 27 } + \\dfrac{8}{ 27 } = \\dfrac{224}{ 27 } \\end{aligned}<br><br>Final Answer: $A\\left(\\dfrac{4}{ 9 }, 0\\right)$; exact area is $\\dfrac{224}{ 27 }$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$A\\left(\\dfrac{4}{ 9 }, 0\\right); \\quad \\text{Area: } \\dfrac{208}{ 27 }$$",
+                "feedback": "Check your sign operation in the final limit subtraction step. The exact area is calculated as $\\text{Upper Limit} - \\text{Lower Limit} = 8 - \\left(-\\dfrac{8}{ 27 }\\right) = \\dfrac{224}{ 27 }$. It seems you may have subtracted the absolute values instead of adding them."
+            },
+            {
+                "ans": "$$A\\left(\\dfrac{2}{ 3 }, 0\\right); \\quad \\text{Area: } \\dfrac{224}{ 27 }$$",
+                "feedback": "Check your calculation for point $A$. To isolate $x$ from $\\sqrt{x} = \\dfrac{2}{ 3 }$, you must square both sides of the equation, which yields $x = \\dfrac{4}{ 9 }$, not $x = \\dfrac{2}{ 3 }$."
+            },
+            {
+                "ans": "$$A\\left(\\dfrac{4}{ 9 }, 0\\right); \\quad \\text{Area: } 8$$",
+                "feedback": "Remember to evaluate the definite integral at both limits. Simply substituting $x = 4$ only evaluates the upper limit. You must also evaluate and subtract the lower limit at $x = \\dfrac{4}{ 9 }$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Fraction Limit Subtraction",
+            "content": "When subtracting negative fractional limits (like $-\\left(-\\dfrac{8}{ 27 }\\right)$), be extremely vigilant with double negatives. Expanding them systematically prevents simple sign errors from ruining your final exact fraction."
+        }
     }
+
 
 
 
