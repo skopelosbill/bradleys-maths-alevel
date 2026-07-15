@@ -1399,7 +1399,208 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Quick Radians Substitution",
             "content": "For sector problems involving both area and arc length, you can always use the elegant relation $A = \\dfrac{1}{2}rs$. This bypasses needing to solve for $\\theta$ first, letting you find the radius $r$ instantly through a single, clean division."
         }
+    },
+    {
+        "id": "004336",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Binomial Expansion",
+        "subtopic": [
+            "Binomial Theorem",
+            "Conjugates",
+            "Surds"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>1. Use the Binomial Theorem to expand:<br>$$(x + \\sqrt{y})^4$$<br>2. Hence, write down the expansion of $(x - \\sqrt{y})^4$ and find a simplified expression for:<br>$$(x + \\sqrt{y})^4 + (x - \\sqrt{y})^4$$<br>giving your answer in terms of $x$ and $y$.",
+        "steps": [
+            "Use the Binomial Theorem to expand $(x + \\sqrt{y})^4$ term by term using the binomial coefficients $1, 4, 6, 4, 1$:<br>\\begin{aligned} (x + \\sqrt{y})^4 &= \\binom{4}{0}x^4(\\sqrt{y})^0 + \\binom{4}{1}x^3(\\sqrt{y})^1 + \\binom{4}{2}x^2(\\sqrt{y})^2 + \\binom{4}{3}x(\\sqrt{y})^3 + \\binom{4}{4}x^0(\\sqrt{y})^4 \\end{aligned}",
+            "Simplify each term of the expansion individually, noting that $(\\sqrt{y})^3 = y\\sqrt{y}$:<br>\\begin{aligned} (x + \\sqrt{y})^4 &= 1(x^4)(1) + 4(x^3)(\\sqrt{y}) + 6(x^2)(y) + 4(x)(y\\sqrt{y}) + 1(1)(y^2) \\\\ &= x^4 + 4x^3\\sqrt{y} + 6x^2y + 4xy\\sqrt{y} + y^2 \\end{aligned}",
+            "To write down the expansion of the conjugate term $(x - \\sqrt{y})^4$, simply negate the odd powers of $\\sqrt{y}$ from the previous expansion:<br>\\begin{aligned} (x - \\sqrt{y})^4 &= x^4 - 4x^3\\sqrt{y} + 6x^2y - 4xy\\sqrt{y} + y^2 \\end{aligned}",
+            "Add the two expansions together. Notice that the irrational terms containing $\\sqrt{y}$ have opposite signs and cancel out completely:<br>\\begin{aligned} (x + \\sqrt{y})^4 + (x - \\sqrt{y})^4 &= \\left(x^4 + 4x^3\\sqrt{y} + 6x^2y + 4xy\\sqrt{y} + y^2\\right) \\\\ &\\quad + \\left(x^4 - 4x^3\\sqrt{y} + 6x^2y - 4xy\\sqrt{y} + y^2\\right) \\\\ &= 2x^4 + 12x^2y + 2y^2 \\end{aligned}<br>Factor out the common factor of 2 to write the final simplified expression:<br>\\begin{aligned} (x + \\sqrt{y})^4 + (x - \\sqrt{y})^4 &= 2\\left(x^4 + 6x^2y + y^2\\right) \\end{aligned}<br><br>Final Answer: $x^4 + 4x^3\\sqrt{y} + 6x^2y + 4xy\\sqrt{y} + y^2$ and $2\\left(x^4 + 6x^2y + y^2\\right)$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x^4 + 4x^3\\sqrt{y} + 6x^2y + 4xy\\sqrt{y} + y^2 \\quad \\text{and} \\quad 2x^4 + 2y^2$$",
+                "feedback": "Check your addition step. When combining the two expansions, only the odd-powered irrational terms containing $\\sqrt{y}$ cancel out. The even-powered algebraic term $6x^2y$ exists in both expansions with positive signs, so adding them yields $12x^2y$, not $0$."
+            },
+            {
+                "ans": "$$x^4 + 4x^3\\sqrt{y} + 6x^2y + 4xy^2 + y^2 \\quad \\text{and} \\quad 2\\left(x^4 + 6x^2y + y^2\\right)$$",
+                "feedback": "Check your fourth term in the first expansion. The term is $\\binom{4}{3}x(\\sqrt{y})^3$. Since $(\\sqrt{y})^3 = (\\sqrt{y})^2 \\times \\sqrt{y} = y\\sqrt{y}$, this term simplifies to $4xy\\sqrt{y}$, not $4xy^2$."
+            },
+            {
+                "ans": "$$x^4 + 4x^3\\sqrt{y} + 6x^2y + 4xy\\sqrt{y} + y^2 \\quad \\text{and} \\quad 8x^3\\sqrt{y} + 8xy\\sqrt{y}$$",
+                "feedback": "Check your addition step. The question asks you to find the sum of $(x + \\sqrt{y})^4 + (x - \\sqrt{y})^4$. It seems you may have subtracted them instead, which would have cancelled the rational terms and doubled the irrational terms."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Conjugate Cancellations",
+            "content": "When adding binomial expansions of the form $(x + a)^n + (x - a)^n$, all the odd-powered terms of $a$ (which contain the negative sign in the second expansion) will cancel out completely, while the even-powered terms will double. This conjugate structure is a highly useful algebraic shortcut."
+        }
+    },
+    {
+        "id": "004307",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Binomial Expansion",
+        "subtopic": [
+            "Binomial Theorem",
+            "Isolating Coefficients",
+            "Indices"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Find the coefficient of $x^3$ in the binomial expansion of:<br>$$(2 - 3x)^6$$",
+        "steps": [
+            "Write down the general term formula $T_{r+1}$ for the binomial expansion of $(a + b)^n$:<br>\\begin{aligned} T_{r+1} &= \\binom{n}{r} a^{n-r} b^r \\end{aligned}",
+            "Substitute the given parameters $a = 2$, $b = -3x$, and $n = 6$ into the general term formula:<br>\\begin{aligned} T_{r+1} &= \\binom{6}{r} (2)^{6-r} (-3x)^r \\\\ T_{r+1} &= \\binom{6}{r} (2)^{6-r} (-3)^r x^r \\end{aligned}",
+            "To find the coefficient of the term in $x^3$, we require the exponent of $x$ to be $3$, which means setting $r = 3$:<br>\\begin{aligned} T_{4} &= \\binom{6}{3} (2)^{6-3} (-3)^3 x^3 \\\\ T_{4} &= \\binom{6}{3} (2)^3 (-3)^3 x^3 \\end{aligned}",
+            "Evaluate the constant components of the term individually, taking extreme care with the negative base raised to an odd power:<br>\\begin{aligned} \\binom{6}{3} &= 20 \\\\ (2)^3 &= 8 \\\\ (-3)^3 &= -27 \\end{aligned}",
+            "Multiply these evaluated constants together to find the final coefficient of $x^3$:<br>\\begin{aligned} T_4 &= 20 \\times 8 \\times (-27)x^3 \\\\ &= 160 \\times (-27)x^3 \\\\ &= -4320x^3 \\end{aligned}<br>Thus, the coefficient of $x^3$ in the expansion is $-4320$."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$4320$$",
+                "feedback": "Check your signs. Since the term is $(-3x)^3$, raising the negative coefficient to an odd power preserves the negative sign: $(-3)^3 = -27$. This makes the final coefficient negative."
+            },
+            {
+                "ans": "$$-1440$$",
+                "feedback": "Check your binomial coefficient calculation. The value of $\\binom{6}{3}$ is $\\dfrac{6 \\times 5 \\times 4}{ 3 \\times 2 \\times 1 } = 20$. It seems you may have used $\\binom{6}{1} = 6$ or made an arithmetic slip."
+            },
+            {
+                "ans": "$$-480$$",
+                "feedback": "Check your term evaluations. Ensure you evaluate $(-3)^3 = -27$ and $2^3 = 8$. It seems you may have multiplied the bases by their exponents (e.g., calculating $2 \\times 3 = 6$ and $-3 \\times 3 = -9$) instead of raising them to those powers."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Odd Powers of Negatives",
+            "content": "When isolating coefficients in binomial expansions containing subtraction (like $a - bx$), always include the negative sign with the term: $(-bx)^r$. Raising a negative term to an odd power ($r = 1, 3, 5$) will result in a negative coefficient, which is a very frequent source of sign errors."
+        }
+    },
+    {
+        "id": "004338",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Binomial Expansion",
+        "subtopic": [
+            "Binomial Theorem",
+            "Negative Indices",
+            "Simplifying Fractions"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Use the Binomial Theorem to expand:<br>$$\\left(x^2 - \\dfrac{2}{x}\\right)^4, \\quad x \\neq 0$$<br>giving each term in its simplest form.",
+        "steps": [
+            "Write the binomial expansion of $(a + b)^4$ using the binomial coefficients $1, 4, 6, 4, 1$:<br>\\begin{aligned} (a + b)^4 &= a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4 \\end{aligned}",
+            "Substitute $a = x^2$ and $b = -\\dfrac{2}{ x }$ into the expansion formula:<br>\\begin{aligned} \\left(x^2 - \\dfrac{2}{x}\\right)^4 &= (x^2)^4 + 4(x^2)^3\\left(-\\dfrac{2}{x}\\right) + 6(x^2)^2\\left(-\\dfrac{2}{x}\right)^2 + 4(x^2)\\left(-\\dfrac{2}{x}\right)^3 + \\left(-\\dfrac{2}{x}\right)^4 \\end{aligned}",
+            "Simplify each of the five terms individually by applying the index laws:<ul><li>Term 1: $(x^2)^4 = x^8$</li><li>Term 2: $4(x^6)\\left(-\\dfrac{2}{x}\\right) = -8x^5$</li><li>Term 3: $6(x^4)\\left(\\dfrac{4}{x^2}\\right) = 24x^2$</li><li>Term 4: $4(x^2)\\left(-\\dfrac{8}{x^3}\right) = -\\dfrac{32}{x}$</li><li>Term 5: $\\left(-\\dfrac{2}{x}\\right)^4 = \\dfrac{16}{x^4}$</li></ul>",
+            "Combine the simplified terms to write the final expanded expression in descending powers of $x$:<br>\\begin{aligned} \\left(x^2 - \\dfrac{2}{x}\\right)^4 &= x^8 - 8x^5 + 24x^2 - \\dfrac{32}{x} + \\dfrac{16}{x^4} \\end{aligned}"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x^8 + 8x^5 + 24x^2 + \\dfrac{32}{x} + \\dfrac{16}{x^4}$$",
+                "feedback": "Check your signs. Raising a negative term to an odd power (the second and fourth terms with exponents 1 and 3) must result in a negative term. It seems you lost your negative signs during expansion."
+            },
+            {
+                "ans": "$$x^8 - 8x^6 + 24x^4 - \\dfrac{32}{x^2} + \\dfrac{16}{x^4}$$",
+                "feedback": "Check your division of algebraic indices. When simplifying Term 2, we have $\\dfrac{x^6}{x} = x^5$, not $x^6$. For Term 3, we have $\\dfrac{x^4}{x^2} = x^2$, not $x^4$. Ensure you subtract exponents when dividing variables."
+            },
+            {
+                "ans": "$$x^8 - 2x^5 + 6x^2 - \\dfrac{8}{x} + \\dfrac{16}{x^4}$$",
+                "feedback": "Check your coefficient multiplications. Remember to multiply the binomial coefficients ($1, 4, 6, 4, 1$) by the constants generated from squaring or cubing the base term $-2$ (e.g., $4 \\times (-2) = -8$ and $6 \\times 4 = 24$)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Combining Indices",
+            "content": "When expanding binomials with variable terms in both slots, be highly systematic with index laws. For each term, simplify the constants and the powers of $x$ independently (remembering that $\\left(x^a\\right)^b = x^{ab}$ and $\\dfrac{x^a}{x^b} = x^{a-b}$) to avoid algebraic slips."
+        }
+    },
+    {
+        "id": "004339",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Binomial Expansion",
+        "subtopic": [
+            "Binomial Theorem",
+            "Decimal Approximation",
+            "Truncation"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>1. Find the first four terms in the binomial expansion of $(1 + 2x)^5$ in ascending powers of $x$.<br>2. By substituting an appropriate value of $x$ into your expansion, find an approximate value for $1.02^5$. Show all your working.",
+        "steps": [
+            "Find the first four terms ($r = 0, 1, 2, 3$) of the binomial expansion of $(1 + 2x)^5$ using the binomial coefficients $1, 5, 10, 10$:<br>\\begin{aligned} (1 + 2x)^5 &\\approx \\binom{5}{0}(1)^5(2x)^0 + \\binom{5}{1}(1)^4(2x)^1 + \\binom{5}{2}(1)^3(2x)^2 + \\binom{5}{3}(1)^2(2x)^3 \\end{aligned}",
+            "Simplify each of the four terms individually:<br>\\begin{aligned} \\text{Term 1} &= 1(1)(1) = 1 \\\\ \\text{Term 2} &= 5(1)(2x) = 10x \\\\ \\text{Term 3} &= 10(1)(4x^2) = 40x^2 \\\\ \\text{Term 4} &= 10(1)(8x^3) = 80x^3 \\end{aligned}<br>Thus, the truncated expansion is:<br>$$(1 + 2x)^5 \\approx 1 + 10x + 40x^2 + 80x^3$$",
+            "To approximate $1.02^5$, set the base of our binomial $(1 + 2x)$ equal to the target base $1.02$ to solve for $x$:<br>\\begin{aligned} 1 + 2x &= 1.02 \\\\ 2x &= 0.02 \\implies x = 0.01 \\end{aligned}",
+            "Substitute $x = 0.01$ into the truncated binomial expansion:<br>\\begin{aligned} 1.02^5 &\\approx 1 + 10(0.01) + 40(0.01)^2 + 80(0.01)^3 \\end{aligned}",
+            "Evaluate each decimal term carefully, keeping track of the decimal places:<br>\\begin{aligned} 10(0.01) &= 0.1 \\\\ 40(0.0001) &= 0.004 \\\\ 80(0.000001) &= 0.00008 \\end{aligned}",
+            "Combine the evaluated decimal terms to find the final approximation:<br>\\begin{aligned} 1.02^5 &\\approx 1 + 0.1 + 0.004 + 0.00008 \\\\ &= 1.10408 \\end{aligned}<br><br>Final Answer: $1 + 10x + 40x^2 + 80x^3$ and $1.10408$ (or $1.1041$ to 4 d.p.)"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$1 + 5x + 10x^2 + 10x^3 \\quad \\text{and} \\quad 1.0511$$",
+                "feedback": "Check your expansion terms. Remember to raise the entire term $(2x)$ to the respective powers (e.g., $(2x)^2 = 4x^2$ and $(2x)^3 = 8x^3$). It seems you forgot to square and cube the coefficient 2."
+            },
+            {
+                "ans": "$$1 + 10x + 40x^2 + 80x^3 \\quad \\text{and} \\quad 1.20408$$",
+                "feedback": "Check your substitution value. To match $1 + 2x = 1.02$, you must use $x = 0.01$. It seems you may have used $x = 0.02$ by mistake, which would correspond to approximating $1.04^5$."
+            },
+            {
+                "ans": "$$1 + 10x + 40x^2 + 80x^3 \\quad \\text{and} \\quad 1.14080$$",
+                "feedback": "Check your decimal places during addition. Note that $40(0.01)^2 = 40(0.0001) = 0.0040$. It seems you made an addition alignment slip, placing the 4 in the hundredths place instead of the thousandths place."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Appropriate X Selection",
+            "content": "When approximating decimal values using binomial expansions, always equate the algebraic base $(1 + kx)$ to your target base (such as $1.02$) to find the correct value of $x$. Trying to guess $x$ directly often leads to using $x = 0.02$ by mistake, which ruins the calculation."
+        }
+    },
+    {
+        "id": "004340",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Binomial Expansion",
+        "subtopic": [
+            "Binomial Theorem",
+            "Solving for Parameters",
+            "Quadratic Equations"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>In the binomial expansion of $(1 + kx)^7$, the coefficient of $x^2$ is $189$.<br><br>Given that $k$ is a positive constant ($k > 0$), find the value of $k$.",
+        "steps": [
+            "Write down the general term formula $T_{r+1}$ for the binomial expansion of $(1 + kx)^7$:<br>\\begin{aligned} T_{r+1} &= \\binom{7}{r} (1)^{7-r} (kx)^r \\\\ &= \\binom{7}{r} k^r x^r \\end{aligned}",
+            "To find the coefficient of the term in $x^2$, set $r = 2$ in the general term formula:<br>\\begin{aligned} T_3 &= \\binom{7}{2} k^2 x^2 \\end{aligned}",
+            "Evaluate the binomial coefficient $\\binom{7}{2}$:<br>\\begin{aligned} \\binom{7}{2} &= \\dfrac{7 \\times 6}{ 2 \\times 1 } = 21 \\end{aligned}",
+            "Set the expression for the coefficient of $x^2$ equal to the given value of $189$:<br>\\begin{aligned} 21k^2 &= 189 \\end{aligned}",
+            "Solve the quadratic equation to find the value of $k$:<br>\\begin{aligned} k^2 &= \\dfrac{189}{ 21 } \\\\ k^2 &= 9 \\\\ k &= \\pm 3 \\end{aligned}",
+            "Since the question specifies that $k$ must be a positive constant ($k > 0$), we reject the negative root $k = -3$. Thus, the value of the constant is $k = 3$."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$k = \\pm 3$$",
+                "feedback": "Read the question carefully. The question states that $k$ must be a positive constant ($k > 0$). You must discard the negative root of your quadratic equation, leaving only $k = 3$."
+            },
+            {
+                "ans": "$$k = 9$$",
+                "feedback": "Check your solving steps. From $k^2 = 9$, you must take the square root of both sides to find $k = 3$. It seems you forgot to take the square root."
+            },
+            {
+                "ans": "$$k = 5.2$$",
+                "feedback": "Check your evaluation of the binomial coefficient $\\binom{7}{2}$. It seems you may have calculated $\\binom{7}{2} = 7 \\times 2 = 14$ or made an arithmetic slip."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Squaring Unknown Parameters",
+            "content": "When evaluating terms like $(kx)^2$, ensure you square both the constant parameter and the variable: $k^2 x^2$. Forgetting to square the parameter $k$ is an incredibly common slip that leads to a linear equation ($21k = 189$) instead of the correct quadratic one."
+        }
     }
+
 
 
 
