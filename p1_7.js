@@ -1045,35 +1045,35 @@ window.ALEVEL_QUESTIONS = [
         "major_area": "Algebra and Functions",
         "topic": "Polynomials",
         "subtopic": [
-            "Remainder Theorem",
+            "Factor Theorem",
             "Simultaneous Equations"
         ],
         "img": false,
-        "question": "In this question you must show detailed reasoning.<br><br>The polynomial $f(x) = 2x^3 + ax^2 + bx - 5$ leaves a remainder of $3$ when divided by $(x - 1)$, and a remainder of $-15$ when divided by $(x + 1)$.<br><br>Find the values of the constants $a$ and $b$.",
+        "question": "In this question you must show detailed reasoning.<br><br>Given that $(x - 2)$ and $(x + 3)$ are factors of the polynomial $f(x) = 2x^3 + ax^2 + bx - 12$:<br><br>Find the values of the constants $a$ and $b$.",
         "steps": [
-            "According to the remainder theorem, if $f(x)$ leaves a remainder of $3$ when divided by $(x - 1)$, then $f(1) = 3$. Substitute $x = 1$ into the polynomial expression:<br>\\begin{aligned} 2(1)^3 + a(1)^2 + b(1) - 5 &= 3 \\\\ 2 + a + b - 5 &= 3 \\\\ a + b - 3 &= 3 \\\\ a + b &= 6 \\quad \\text{(Equation 1)} \\end{aligned}",
-            "Similarly, if $f(x)$ leaves a remainder of $-15$ when divided by $(x + 1)$, then $f(-1) = -15$. Substitute $x = -1$ into the polynomial expression:<br>\\begin{aligned} 2(-1)^3 + a(-1)^2 + b(-1) - 5 &= -15 \\\\ -2 + a - b - 5 &= -15 \\\\ a - b - 7 &= -15 \\\\ a - b &= -8 \\quad \\text{(Equation 2)} \\end{aligned}",
-            "Solve the system of equations by adding Equation 1 and Equation 2:<br>\\begin{aligned} (a + b) + (a - b) &= 6 + (-8) \\\\ 2a &= -2 \\implies a = -1 \\end{aligned}",
-            "Substitute $a = -1$ back into Equation 1 to find $b$:<br>\\begin{aligned} -1 + b &= 6 \\implies b = 7 \\end{aligned}<br>Thus, the constants are $a = -1$ and $b = 7$."
+            "According to the factor theorem, if $(x - 2)$ is a factor of the polynomial $f(x)$, then $f(2) = 0$. Substitute $x = 2$ into the polynomial expression:<br>\\begin{aligned} 2(2)^3 + a(2)^2 + b(2) - 12 &= 0 \\\\ 16 + 4a + 2b - 12 &= 0 \\\\ 4a + 2b + 4 &= 0 \\\\ 2a + b &= -2 \\quad \\text{(Equation 1)} \\end{aligned}",
+            "Similarly, if $(x + 3)$ is a factor of the polynomial $f(x)$, then $f(-3) = 0$. Substitute $x = -3$ into the polynomial expression:<br>\\begin{aligned} 2(-3)^3 + a(-3)^2 + b(-3) - 12 &= 0 \\\\ -54 + 9a - 3b - 12 &= 0 \\\\ 9a - 3b - 66 &= 0 \\\\ 3a - b &= 22 \\quad \\text{(Equation 2)} \\end{aligned}",
+            "Solve the system of equations by adding Equation 1 and Equation 2:<br>\\begin{aligned} (2a + b) + (3a - b) &= -2 + 22 \\\\ 5a &= 20 \\implies a = 4 \\end{aligned}",
+            "Substitute $a = 4$ back into Equation 1 to find $b$:<br>\\begin{aligned} 2(4) + b &= -2 \\\\ 8 + b &= -2 \\implies b = -10 \\end{aligned}<br>Thus, the constants are $a = 4$ and $b = -10$."
         ],
         "pi_options": [
             {
-                "ans": "$$a = -1, \\quad b = -7$$",
-                "feedback": "Check your signs in Equation 1. Substituting $a = -1$ into $a + b = 6$ yields $-1 + b = 6 \\implies b = 7$. It seems you made a sign error, resulting in $b = -7$."
+                "ans": "$$a = 4, \\quad b = -2$$",
+                "feedback": "Check your substitution in Equation 1. Substituting $a = 4$ into $2a + b = -2$ yields $8 + b = -2 \\implies b = -10$. It seems you may have mistakenly added 8 to $-2$ instead of subtracting it."
             },
             {
-                "ans": "$$a = 1, \\quad b = 7$$",
-                "feedback": "Check your addition step when combining the equations. Adding $6$ and $-8$ yields $-2$. Therefore, $2a = -2 \\implies a = -1$. It seems you mistakenly calculated $a = 1$."
+                "ans": "$$a = -4, \\quad b = 6$$",
+                "feedback": "Check your addition step when combining the equations. Adding $-2$ and $22$ yields $20$. Therefore, $5a = 20 \\implies a = 4$. It seems you may have made a sign error, resulting in $a = -4$."
             },
             {
-                "ans": "$$a = -1, \\quad b = 5$$",
-                "feedback": "Check your simplification of Equation 1. Substituting $x=1$ yields $2 + a + b - 5 = 3 \\implies a + b - 3 = 3 \\implies a + b = 6$. It seems you may have simplified $3 + 3$ incorrectly as $5$."
+                "ans": "$$a = 4, \\quad b = -6$$",
+                "feedback": "Check your simplification of Equation 1. Substituting $x = 2$ yields $16 + 4a + 2b - 12 = 0 \\implies 4a + 2b = -4 \\implies 2a + b = -2$. It seems you may have made an arithmetic slip in dividing the constants."
             }
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "The Head Teacher's Eye: Remainder vs. Factor",
-            "content": "Ensure you distinguish between the Factor Theorem and the Remainder Theorem. If $(x - a)$ is a factor, then $f(a) = 0$. However, if dividing by $(x - a)$ leaves a remainder $R$, then $f(a) = R$. Double-read the question carefully so you do not set the remainder equal to zero by habit!"
+            "title": "The Head Teacher's Eye: Dual Factor Theorem Solving",
+            "content": "When a polynomial has two unknown constants, you will always be given two factors to create two separate equations. Remember to write both in terms of $f(a) = 0$ using the Factor Theorem, and then solve them systematically using standard simultaneous elimination."
         }
     },
     {
@@ -1198,6 +1198,7 @@ window.ALEVEL_QUESTIONS = [
             "content": "A very frequent slip in AS-level exam papers is forgetting to reverse the inequality sign when dividing by a negative number (such as dividing $-12k < -36$ by $-12$ to get $k > 3$). Always double-check this step to prevent losing easy marks."
         }
     }
+
 
 
 
