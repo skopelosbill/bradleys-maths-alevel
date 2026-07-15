@@ -1440,7 +1440,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "004307",
+        "id": "004337",
         "board": "WJEC",
         "level": "AS",
         "major_area": "Algebra and Functions",
@@ -1494,8 +1494,8 @@ window.ALEVEL_QUESTIONS = [
         "question": "In this question you must show detailed reasoning.<br><br>Use the Binomial Theorem to expand:<br>$$\\left(x^2 - \\dfrac{2}{x}\\right)^4, \\quad x \\neq 0$$<br>giving each term in its simplest form.",
         "steps": [
             "Write the binomial expansion of $(a + b)^4$ using the binomial coefficients $1, 4, 6, 4, 1$:<br>\\begin{aligned} (a + b)^4 &= a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4 \\end{aligned}",
-            "Substitute $a = x^2$ and $b = -\\dfrac{2}{ x }$ into the expansion formula:<br>\\begin{aligned} \\left(x^2 - \\dfrac{2}{x}\\right)^4 &= (x^2)^4 + 4(x^2)^3\\left(-\\dfrac{2}{x}\\right) + 6(x^2)^2\\left(-\\dfrac{2}{x}\right)^2 + 4(x^2)\\left(-\\dfrac{2}{x}\right)^3 + \\left(-\\dfrac{2}{x}\right)^4 \\end{aligned}",
-            "Simplify each of the five terms individually by applying the index laws:<ul><li>Term 1: $(x^2)^4 = x^8$</li><li>Term 2: $4(x^6)\\left(-\\dfrac{2}{x}\\right) = -8x^5$</li><li>Term 3: $6(x^4)\\left(\\dfrac{4}{x^2}\\right) = 24x^2$</li><li>Term 4: $4(x^2)\\left(-\\dfrac{8}{x^3}\right) = -\\dfrac{32}{x}$</li><li>Term 5: $\\left(-\\dfrac{2}{x}\\right)^4 = \\dfrac{16}{x^4}$</li></ul>",
+            "Substitute $a = x^2$ and $b = -\\dfrac{2}{ x }$ into the expansion formula:<br>\\begin{aligned} \\left(x^2 - \\dfrac{2}{x}\\right)^4 &= (x^2)^4 + 4(x^2)^3\\left(-\\dfrac{2}{x}\\right) + 6(x^2)^2\\left(-\\dfrac{2}{x}\\right)^2 + 4(x^2)\\left(-\\dfrac{2}{x}\\right)^3 + \\left(-\\dfrac{2}{x}\\right)^4 \\end{aligned}",
+            "Simplify each of the five terms individually by applying the index laws:<ul><li>Term 1: $(x^2)^4 = x^8$</li><li>Term 2: $4(x^6)\\left(-\\dfrac{2}{x}\\right) = -8x^5$</li><li>Term 3: $6(x^4)\\left(\\dfrac{4}{x^2}\\right) = 24x^2$</li><li>Term 4: $4(x^2)\\left(-\\dfrac{8}{x^3}\\right) = -\\dfrac{32}{x}$</li><li>Term 5: $\\left(-\\dfrac{2}{x}\\right)^4 = \\dfrac{16}{x^4}$</li></ul>",
             "Combine the simplified terms to write the final expanded expression in descending powers of $x$:<br>\\begin{aligned} \\left(x^2 - \\dfrac{2}{x}\\right)^4 &= x^8 - 8x^5 + 24x^2 - \\dfrac{32}{x} + \\dfrac{16}{x^4} \\end{aligned}"
         ],
         "pi_options": [
