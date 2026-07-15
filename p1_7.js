@@ -1197,7 +1197,210 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Inequality Direction flips",
             "content": "A very frequent slip in AS-level exam papers is forgetting to reverse the inequality sign when dividing by a negative number (such as dividing $-12k < -36$ by $-12$ to get $k > 3$). Always double-check this step to prevent losing easy marks."
         }
+    },
+    {
+        "id": "004331",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Equations",
+        "subtopic": [
+            "Sine Rule",
+            "Ambiguous Case",
+            "Area of a Triangle"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The triangle $ABC$ is such that $AC = 12\\text{ cm}$, $AB = 18\\text{ cm}$, and angle $ABC = 35^\\circ$.<br><br>Find the two possible values for the area of triangle $ABC$. Give your answers to $1$ decimal place.",
+        "steps": [
+            "First, sketch a diagram representing the given information. Because side $AC = 12\\text{ cm}$ is shorter than the adjacent side $AB = 18\\text{ cm}$, the side $AC$ can swing into two possible locations, creating an acute triangle ($ABC_2$) and an obtuse triangle ($ABC_1$):<br><br><img src='images/p1/004331.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "Use the Sine Rule to find the two possible values for the angle $C = \\angle ACB$:<br>\\begin{aligned} \\dfrac{\\sin C}{ c } &= \\dfrac{\\sin B}{ b } \\\\ \\dfrac{\\sin C}{ 18 } &= \\dfrac{\\sin 35^\\circ}{ 12 } \\\\ \\sin C &= 1.5\\sin 35^\\circ \\approx 0.860364 \\end{aligned}",
+            "Find the acute angle $C_1$ and the obtuse angle $C_2$ (where $C_2 = 180^\\circ - C_1$):<br>\\begin{aligned} C_1 &= \\arcsin(0.860364) \\approx 59.4^\\circ \\\\ C_2 &= 180^\\circ - 59.4^\\circ = 120.6^\\circ \\end{aligned}",
+            "For each case, calculate the corresponding third angle $A = \\angle BAC$:<br>\\begin{aligned} \\text{Case 1 (Acute C)} &: A_1 = 180^\\circ - 35^\\circ - 59.4^\\circ = 85.6^\\circ \\\\ \\text{Case 2 (Obtuse C)} &: A_2 = 180^\\circ - 35^\\circ - 120.6^\\circ = 24.4^\\circ \\end{aligned}",
+            "Calculate the area for Case 1 using the area formula $\\text{Area} = \\dfrac{1}{ 2 }bc\\sin A$ with $b = 12$ and $c = 18$:<br>\\begin{aligned} \\text{Area}_1 &= \\dfrac{1}{ 2 }(12)(18)\\sin(85.6^\\circ) \\\\ &= 108\\sin(85.6^\\circ) \\approx 107.7\\text{ cm}^2 \\end{aligned}",
+            "Calculate the area for Case 2:<br>\\begin{aligned} \\text{Area}_2 &= \\dfrac{1}{ 2 }(12)(18)\\sin(24.4^\\circ) \\\\ &= 108\\sin(24.4^\\circ) \\approx 44.5\\text{ cm}^2 \\end{aligned}<br><br>Final Answer: The two possible areas are $107.7\\text{ cm}^2$ and $44.5\\text{ cm}^2$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$107.7\\text{ cm}^2 \\text{ and } 54.0\\text{ cm}^2$$",
+                "feedback": "Check your calculations for Case 2. The angle $A_2$ is $180^\\circ - 35^\\circ - 120.6^\\circ = 24.4^\\circ$. It seems you may have mistakenly calculated $A_2 = 30^\\circ$ or made a subtraction slip."
+            },
+            {
+                "ans": "$$107.7\\text{ cm}^2 \\text{ only}$$",
+                "feedback": "Remember that the Sine Rule is ambiguous when the side opposite the given angle is shorter than the adjacent side. This allows two valid, different triangles to be constructed, meaning you must calculate two possible areas."
+            },
+            {
+                "ans": "$$107.7\\text{ cm}^2 \\text{ and } 10.8\\text{ cm}^2$$",
+                "feedback": "Check your area calculations. Make sure you use the correct formula $\\text{Area} = \\dfrac{1}{ 2 }bc\\sin A$. It seems you may have missed multiplying by the constant $108$ in the second case."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: The Ambiguous Case",
+            "content": "The ambiguous case of the Sine Rule (SSA) occurs when you are given two sides and a non-included acute angle, and the side opposite the angle is shorter than the other given side. This allows the opposite side to swing, creating an acute triangle and an obtuse triangle."
+        }
+    },
+    {
+        "id": "004332",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Equations",
+        "subtopic": [
+            "Bearings",
+            "Cosine Rule",
+            "Practical Modeling"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A ship sails from port $P$ on a bearing of $045^\\circ$ for $12\\text{ km}$ to point $A$. It then changes course and sails on a bearing of $130^\\circ$ for $15\\text{ km}$ to point $B$.<br><br>Calculate the direct distance of $B$ from $P$, giving your answer in kilometres to $1$ decimal place.",
+        "steps": [
+            "First, sketch a diagram with North-pointing lines at each vertex to help determine the internal angles of the triangle formed by $P$, $A$, and $B$:<br><br><img src='images/p1/004332.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "Calculate the interior angle $\\angle PAB$ using parallel North lines. The line $PA$ pointing South-West from $A$ makes an angle of $45^\\circ$ with the South line (alternate interior angles with the bearing at $P$). Since the bearing of $B$ from $A$ is $130^\\circ$:<br>\\begin{aligned} \\angle PAB &= (180^\\circ + 45^\\circ) - 130^\\circ \\\\ &= 225^\\circ - 130^\\circ = 95^\\circ \\end{aligned}",
+            "Use the Cosine Rule to find the unknown direct distance $PB$ in triangle $PAB$ with sides $PA = 12$, $AB = 15$, and included angle $\\angle PAB = 95^\\circ$:<br>\\begin{aligned} PB^2 &= PA^2 + AB^2 - 2(PA)(AB)\\cos\\angle PAB \\\\ PB^2 &= 12^2 + 15^2 - 2(12)(15)\\cos(95^\\circ) \\end{aligned}",
+            "Substitute the values and evaluate, noting that $\\cos(95^\\circ) \\approx -0.087156$ is negative:<br>\\begin{aligned} PB^2 &= 144 + 225 - 360(-0.087156) \\\\ &= 369 + 31.376 \\\\ &= 400.376 \\end{aligned}",
+            "Take the square root to find the direct distance $PB$:<br>\\begin{aligned} PB &= \\sqrt{400.376} \\approx 20.0 \\text{ km} \\end{aligned}<br><br>Final Answer: $20.0\\text{ km}$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$18.4\\text{ km}$$",
+                "feedback": "Check your interior angle calculation. Simply subtracting the bearings ($130^\\circ - 45^\\circ = 85^\\circ$) is incorrect because the angle must be measured relative to the parallel North lines. The interior angle is actually $95^\\circ$."
+            },
+            {
+                "ans": "$$19.1\\text{ km}$$",
+                "feedback": "Check your Cosine Rule signs. Because $\\cos(95^\\circ)$ is negative, the last term in the formula becomes positive: $-2bc\\cos A = -360(-0.087) = +31.4$. It seems you may have subtracted this term instead of adding it."
+            },
+            {
+                "ans": "$$27.0\\text{ km}$$",
+                "feedback": "Check your initial values inside the Cosine Rule. Ensure you calculate $12^2 = 144$ and $15^2 = 225$ correctly. It seems you may have neglected to square the side lengths."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Parallel North Lines",
+            "content": "When solving bearings questions, always draw parallel North lines at each vertex. Use the alternate interior angle rule to relate the bearings between points before calculating the internal angles of the triangle."
+        }
+    },
+    {
+        "id": "004333",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Equations",
+        "subtopic": [
+            "Cosine Rule",
+            "Quadratic Equations",
+            "Syllabus Problems"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A triangle has sides of length $x\\text{ cm}$, $(x + 2)\\text{ cm}$, and $10\\text{ cm}$. The angle between the sides of length $x\\text{ cm}$ and $(x + 2)\\text{ cm}$ is $60^\\circ$.<br><br>Use the Cosine Rule to find the value of $x$. Give your answer to $1$ decimal place.",
+        "steps": [
+            "First, sketch the triangle with the given side lengths and the included angle of $60^\\circ$ to visualize the problem:<br><br><img src='images/p1/004333.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "Apply the Cosine Rule, using the opposite side $a = 10$, and the adjacent sides $b = x$ and $c = x + 2$:<br>\\begin{aligned} a^2 &= b^2 + c^2 - 2bc\\cos A \\\\ 10^2 &= x^2 + (x + 2)^2 - 2x(x + 2)\\cos(60^\\circ) \\end{aligned}",
+            "Substitute $\\cos(60^\\circ) = 0.5$ and expand the algebraic terms:<br>\\begin{aligned} 100 &= x^2 + (x^2 + 4x + 4) - 2x(x + 2)(0.5) \\\\ 100 &= 2x^2 + 4x + 4 - (x^2 + 2x) \\\\ 100 &= x^2 + 2x + 4 \\end{aligned}",
+            "Rearrange the terms into a standard quadratic equation of the form $ax^2 + bx + c = 0$:<br>\\begin{aligned} x^2 + 2x - 96 &= 0 \\end{aligned}",
+            "Solve the quadratic equation using the quadratic formula:<br>\\begin{aligned} x &= \\dfrac{-2 \\pm \\sqrt{2^2 - 4(1)(-96)}}{ 2(1) } \\\\ &= \\dfrac{-2 \\pm \\sqrt{4 + 384}}{ 2 } \\\\ &= \\dfrac{-2 \\pm \\sqrt{388}}{ 2 } \\end{aligned}",
+            "Find the positive root since a side length must be positive, noting that $\\sqrt{388} \\approx 19.6977$:<br>\\begin{aligned} x &\\approx \\dfrac{-2 + 19.6977}{ 2 } \\\\ &\\approx \\dfrac{17.6977}{ 2 } \\approx 8.8 \\text{ cm} \\end{aligned}<br><br>Final Answer: $8.8\\text{ cm}$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$8.9\\text{ cm}$$",
+                "feedback": "Check your rounding steps. The exact positive root is $\\dfrac{-2 + \\sqrt{388}}{2} \\approx 8.8488$. When rounding to $1$ decimal place, this evaluates to $8.8\\text{ cm}$, not $8.9\\text{ cm}$. Avoid rounding intermediate roots too early."
+            },
+            {
+                "ans": "$$10.8\\text{ cm}$$",
+                "feedback": "Check your expansion of $(x + 2)^2$. It expands to $x^2 + 4x + 4$. It seems you may have missed the middle term $4x$ during expansion."
+            },
+            {
+                "ans": "$$8.8\\text{ cm} \\text{ and } -10.8\\text{ cm}$$",
+                "feedback": "Since $x$ represents a physical side length of a triangle, it must be strictly positive. You must discard the negative root of your quadratic equation."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Discarding Non-Physical Roots",
+            "content": "When solving coordinate geometry or trigonometry problems that lead to quadratic equations, always verify your roots against real-world constraints. Negative values for physical side lengths must be explicitly discarded."
+        }
+    },
+    {
+        "id": "004334",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Equations",
+        "subtopic": [
+            "3D Trigonometry",
+            "Pyramids",
+            "Right-Angled Triangles"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A right pyramid $VABCD$ has a horizontal square base $ABCD$ of side $8\\text{ cm}$ and a vertical height of $12\\text{ cm}$ centered at $O$.<br><br>Calculate the angle between the sloping edge $VB$ and the base plane $ABCD$. Give your answer to $1$ decimal place.",
+        "steps": [
+            "First, sketch the 3D right pyramid to visualize the vertical height $VO$, the base diagonal $BD$, and the target angle $\\theta$ between the sloping edge $VB$ and the projection $OB$ on the base plane:<br><br><img src='images/p1/004334.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "Find the length of the base diagonal $BD$ using Pythagoras' theorem on the horizontal square base $ABCD$ of side $8\\text{ cm}$:<br>\\begin{aligned} BD &= \\sqrt{8^2 + 8^2} \\\\ &= \\sqrt{64 + 64} = \\sqrt{128} = 8\\sqrt{2} \\text{ cm} \\end{aligned}",
+            "The center $O$ of the square base bisects the diagonal $BD$, so find the length of $OB$:<br>\\begin{aligned} OB &= \\dfrac{BD}{ 2 } \\\\ &= \\dfrac{8\\sqrt{2}}{ 2 } = 4\\sqrt{2} \\text{ cm} \\approx 5.65685 \\text{ cm} \\end{aligned}",
+            "The vertical height $VO = 12\\text{ cm}$ is perpendicular to $OB$. In the right-angled triangle $VOB$, the angle $\\theta = \\angle VBO$ represents the angle of elevation of $VB$ from the base:<br>\\begin{aligned} \\tan\\theta &= \\dfrac{VO}{ OB } \\\\ \\tan\\theta &= \\dfrac{12}{ 4\\sqrt{2} } = \\dfrac{3}{ \\sqrt{2} } \\approx 2.12132 \\end{aligned}",
+            "Solve for the angle $\\theta$ by taking the inverse tangent:<br>\\begin{aligned} \\theta &= \\arctan(2.12132) \\\\ &\\approx 64.76059^\\circ \\approx 64.8^\\circ \\end{aligned}<br><br>Final Answer: $64.8^\\circ$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$64.7^\\circ$$",
+                "feedback": "Check your rounding of the final angle. The exact value of $\\arctan\\left(\\dfrac{3}{\\sqrt{2}}\\right)$ is approximately $64.7606^\\circ$. When rounding to $1$ decimal place, this is $64.8^\\circ$, not $64.7^\\circ$."
+            },
+            {
+                "ans": "$$56.3^\\circ$$",
+                "feedback": "Check your baseline length. The horizontal distance is $OB$ (half the diagonal of the base), which is $4\\sqrt{2} \\approx 5.66\\text{ cm}$. It seems you may have mistakenly used half the side length ($4\\text{ cm}$), leading to $\\tan\\theta = \\dfrac{12}{4} = 3$."
+            },
+            {
+                "ans": "$$71.6^\\circ$$",
+                "feedback": "Check your vertical height. Ensure you use $VO = 12\\text{ cm}$ as the opposite side in your tangent ratio, not the side length of the square base."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Projections in 3D Space",
+            "content": "To find the angle between any sloping line and a horizontal plane in 3D, always find the projection of that line onto the plane first (here, $OB$ is the projection of $VB$). This reduces the problem to a standard, 2D right-angled triangle."
+        }
+    },
+    {
+        "id": "004335",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometric Equations",
+        "subtopic": [
+            "Sector Area",
+            "Arc Length",
+            "Radians"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>A sector of a circle of radius $r\\text{ cm}$ has an arc length of $10\\text{ cm}$ and an area of $40\\text{ cm}^2$.<br><br>Find the value of $r$ and the angle of the sector in radians.",
+        "steps": [
+            "First, sketch the circular sector showing the radius $r$, the arc length of $10\\text{ cm}$, and the central angle $\\theta$ in radians:<br><br><img src='images/p1/004335.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "Write down the formulas for the arc length $s$ and area $A$ of a circular sector in radians:<br>\\begin{aligned} s &= r\\theta \\\\ A &= \\dfrac{1}{ 2 }r^2\\theta \\end{aligned}",
+            "Substitute the given values $s = 10$ and $A = 40$ into the equations:<br>\\begin{aligned} r\\theta &= 10 \\quad \\text{(Equation 1)} \\\\ \\dfrac{1}{ 2 }r^2\\theta &= 40 \\quad \\text{(Equation 2)} \\end{aligned}",
+            "Substitute Equation 1 ($r\\theta = 10$) into Equation 2 by rewriting $r^2\\theta$ as $r(r\\theta)$:<br>\\begin{aligned} \\dfrac{1}{ 2 }r(r\\theta) &= 40 \\\\ \\dfrac{1}{ 2 }r(10) &= 40 \\\\ 5r &= 40 \\implies r = 8 \\text{ cm} \\end{aligned}",
+            "Substitute $r = 8$ back into Equation 1 to find the central angle $\\theta$ in radians:<br>\\begin{aligned} 8\\theta &= 10 \\\\ \\theta &= \\dfrac{10}{ 8 } = 1.25 \\text{ radians} \\end{aligned}<br><br>Final Answer: $r = 8\\text{ cm}$ and $\\theta = 1.25\\text{ radians}$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$r = 4\\text{ cm}, \\quad \\theta = 2.5\\text{ radians}$$",
+                "feedback": "Check your substitution steps. When substituting $r\\theta = 10$ into $\\dfrac{1}{2}r^2\\theta = 40$, we get $\\dfrac{1}{2}r(10) = 40 \\implies 5r = 40 \\implies r = 8$. It seems you may have missed the factor of $\\dfrac{1}{2}$."
+            },
+            {
+                "ans": "$$r = 8\\text{ cm}, \\quad \\theta = 0.8\\text{ radians}$$",
+                "feedback": "Check your division step when isolating $\\theta$. From $8\\theta = 10$, dividing by 8 yields $\\theta = \\dfrac{10}{8} = 1.25$ radians. It seems you may have divided 8 by 10 instead."
+            },
+            {
+                "ans": "$$r = 8\\text{ cm}, \\quad \\theta = 71.6^\\circ$$",
+                "feedback": "Read the question carefully. The question asks for the central angle of the sector 'in radians'. Do not convert your final answer into degrees."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Quick Radians Substitution",
+            "content": "For sector problems involving both area and arc length, you can always use the elegant relation $A = \\dfrac{1}{2}rs$. This bypasses needing to solve for $\\theta$ first, letting you find the radius $r$ instantly through a single, clean division."
+        }
     }
+
 
 
 
