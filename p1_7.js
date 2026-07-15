@@ -1600,198 +1600,197 @@ window.ALEVEL_QUESTIONS = [
             "content": "When evaluating terms like $(kx)^2$, ensure you square both the constant parameter and the variable: $k^2 x^2$. Forgetting to square the parameter $k$ is an incredibly common slip that leads to a linear equation ($21k = 189$) instead of the correct quadratic one."
         }
     },
-    {
-        "id": "04341",
-        "board": "WJEC",
-        "level": "AS",
-        "major_area": "Vectors",
-        "topic": "2D Vectors",
-        "subtopic": [
-            "Magnitude and Direction",
-            "Line Division",
-            "Inequalities"
-        ],
-        "img": false,
-        "question": "<strong>Part (a)</strong><br>The vectors $\\mathbf{ u }$ and $\\mathbf{ v }$ are defined by $\\mathbf{ u } = 8\\mathbf{ i } - 15\\mathbf{ j }$ and $\\mathbf{ v } = 3\\mathbf{ i } + 4\\mathbf{ j }$. Determine the range of values for $\\mu$ such that:<br>$$\\mu|\\mathbf{ v }| > |\\mathbf{ u }|$$<br><strong>Part (b)</strong><br>The point $A$ has position vector $5\\mathbf{ i } - 8\\mathbf{ j }$ and the point $B$ has position vector $17\\mathbf{ i } + 10\\mathbf{ j }$. Determine the position vector of the point $C$, which lies between $A$ and $B$, such that $AC : CB$ is $1 : 2$.",
-        "steps": [
-            "<strong>Part (a): Find the magnitude of each vector</strong><br>To start, compute the magnitudes of $\\mathbf{ u }$ and $\\mathbf{ v }$ using the Pythagorean formula $|x\\mathbf{ i } + y\\mathbf{ j }| = \\sqrt{ x^2 + y^2 }$:<br>\\begin{aligned}\n|\\mathbf{ u }| &= \\sqrt{ 8^2 + (-15)^2 } \\\n&= \\sqrt{ 64 + 225 } \\\n&= \\sqrt{ 289 } \\\n&= 17\n\\end{aligned}<br>Now find the magnitude of $\\mathbf{ v }$:<br>\\begin{aligned}\n|\\mathbf{ v }| &= \\sqrt{ 3^2 + 4^2 } \\\n&= \\sqrt{ 9 + 16 } \\\n&= \\sqrt{ 25 } \\\n&= 5\n\\end{aligned}",
-            "<strong>Part (a): Solve the inequality</strong><br>Substitute the computed magnitudes into the inequality $\\mu|\\mathbf{ v }| > |\\mathbf{ u }|$:<br>\\begin{aligned}\n\\mu \\cdot 5 &> 17 \\\n\\mu &> \\frac{ 17 }{ 5 } \\\n\\mu &> 3.4\n\\end{aligned}",
-            "<strong>Part (b): A sketch is highly recommended</strong><br>Before performing calculations on line division, sketching the points $A$, $C$, and $B$ aligned relative to their parts helps prevent fraction mistakes.<br>Since $AC : CB = 1 : 2$, the total line segment $AB$ consists of $1 + 2 = 3$ equal parts. Therefore, $C$ lies $\\frac{ 1 }{ 3 }$ of the way from $A$ to $B$:<br>$$\\vec{ AC } = \\frac{ 1 }{ 3 }\\vec{ AB }$$<br><br><img src='images/p1/04341_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-            "<strong>Part (b): Calculate vector $\\vec{ AB }$ and find $\\vec{ AC }$</strong><br>Find the displacement vector $\\vec{ AB }$ by subtracting the position vector of $A$ from $B$:<br>\\begin{aligned}\n\\vec{ AB } &= \\mathbf{ b } - \\mathbf{ a } \\\n&= (17\\mathbf{ i } + 10\\mathbf{ j }) - (5\\mathbf{ i } - 8\\mathbf{ j }) \\\n&= 12\\mathbf{ i } + 18\\mathbf{ j }\n\\end{aligned}<br>Now multiply this displacement vector by $\\frac{ 1 }{ 3 }$ to find $\\vec{ AC }$:<br>\\begin{aligned}\n\\vec{ AC } &= \\frac{ 1 }{ 3 }(12\\mathbf{ i } + 18\\mathbf{ j }) \\\n&= 4\\mathbf{ i } + 6\\mathbf{ j }\n\\end{aligned}",
-            "<strong>Part (b): Determine the position vector of point $C$</strong><br>Add the displacement $\\vec{ AC }$ to the starting position vector $\\mathbf{ a }$:<br>\\begin{aligned}\n\\mathbf{ c } &= \\mathbf{ a } + \\vec{ AC } \\\n&= (5\\mathbf{ i } - 8\\mathbf{ j }) + (4\\mathbf{ i } + 6\\mathbf{ j }) \\\n&= 9\\mathbf{ i } - 2\\mathbf{ j }\n\\end{aligned}"
-        ],
-        "pi_options": [
-            {
-                "ans": "$\\mu > 3.4$ and $\\mathbf{ c } = 13\\mathbf{ i } + 4\\mathbf{ j }$",
-                "feedback": "Your range for $\\mu$ is correct, but check how you divided the segment. A position vector of $13\\mathbf{ i } + 4\\mathbf{ j }$ suggests you used a $2 : 1$ ratio from $A$ to $B$ (i.e. multiplying by $\\frac{ 2 }{ 3 }$) instead of the correct $1 : 2$ ratio (which corresponds to $\\frac{ 1 }{ 3 }$)."
-            },
-            {
-                "ans": "$\\mu > 2.125$ and $\\mathbf{ c } = 9\\mathbf{ i } - 2\\mathbf{ j }$",
-                "feedback": "Your position vector $\\mathbf{ c }$ is correct, but check your calculation for $|\\mathbf{ u }|$. Did you compute $|\\mathbf{ u }| = \\sqrt{ 8^2 + (-15)^2 }$ correctly? It looks like you might have added the linear components ($8+15=23$) instead of using the Pythagorean formula, yielding an incorrect magnitude."
-            },
-            {
-                "ans": "$\\mu > 3.4$ and $\\mathbf{ c } = 11\\mathbf{ i } - 2\\mathbf{ j }$",
-                "feedback": "Your range for $\\mu$ is correct, but check your addition or scalar multiplication when finding $\\mathbf{ c }$. Ensure you correctly calculated $\\vec{ AC } = \\frac{ 1 }{ 3 }(12\\mathbf{ i } + 18\\mathbf{ j }) = 4\\mathbf{ i } + 6\\mathbf{ j }$ before adding it to $\\mathbf{ a }$."
-            }
-        ],
-        "bradley_insight": {
-            "type": "caution",
-            "title": "The Head Teacher's Eye: Ratio Partitioning",
-            "content": "Always remember that a ratio of $m : n$ divides a line segment into $m + n$ total parts. For $AC : CB = 1 : 2$, the fraction used to find the displacement of $C$ from $A$ is $\\frac{ 1 }{ 1 + 2 } = \\frac{ 1 }{ 3 }$, not $\\frac{ 1 }{ 2 }$. Drawing a quick 1D sketch will save you from this very common mistake."
-        }
-    },
-    {
-        "id": "04342",
-        "board": "WJEC",
-        "level": "AS",
-        "major_area": "Vectors",
-        "topic": "2D Vectors",
-        "subtopic": [
-            "Magnitude and Direction",
-            "Unit Vectors"
-        ],
-        "img": false,
-        "question": "<strong>Part (a)</strong><br>The vector $\\mathbf{ w }$ is defined by $\\mathbf{ w } = -12\\mathbf{ i } + 5\\mathbf{ j }$. Find the unit vector in the direction of $\\mathbf{ w }$, expressing your answer in the form $a\\mathbf{ i } + b\\mathbf{ j }$.<br><br><strong>Part (b)</strong><br>Given that $\\mathbf{ p } = 4\\mathbf{ i } - 3\\mathbf{ j }$, find the position vector of a point $X$ that lies in the direction of $\\mathbf{ p }$ such that the distance of $X$ from the origin is $35$ units.",
-        "steps": [
-            "<strong>Part (a): Find the magnitude of $\\mathbf{ w }$</strong><br>The magnitude $|\\mathbf{ w }|$ is computed as:<br>\\begin{aligned}\n|\\mathbf{ w }| &= \\sqrt{ (-12)^2 + 5^2 } \\\n&= \\sqrt{ 144 + 25 } \\\n&= \\sqrt{ 169 } \\\n&= 13\n\\end{aligned}",
-            "<strong>Part (a): Construct the unit vector</strong><br>To find the unit vector $\\hat{ \\mathbf{ w } }$ in the direction of $\\mathbf{ w }$, divide $\\mathbf{ w }$ by its magnitude $|\\mathbf{ w }|$:<br>\\begin{aligned}\n\\hat{ \\mathbf{ w } } &= \\frac{ \\mathbf{ w } }{ |\\mathbf{ w }| } \\\n&= \\frac{ -12\\mathbf{ i } + 5\\mathbf{ j } }{ 13 } \\\n&= -\\frac{ 12 }{ 13 }\\mathbf{ i } + \\frac{ 5 }{ 13 }\\mathbf{ j }\n\\end{aligned}",
-            "<strong>Part (b): Find the magnitude and unit vector of $\\mathbf{ p }$</strong><br>First find the magnitude $|\\mathbf{ p }|$:<br>\\begin{aligned}\n|\\mathbf{ p }| &= \\sqrt{ 4^2 + (-3)^2 } \\\n&= \\sqrt{ 16 + 9 } \\\n&= \\sqrt{ 25 } \\\n&= 5\n\\end{aligned}<br>Now find the unit vector $\\hat{ \\mathbf{ p } }$:<br>\\begin{aligned}\n\\hat{ \\mathbf{ p } } &= \\frac{ \\mathbf{ p } }{ |\\mathbf{ p }| } \\\n&= \\frac{ 4 }{ 5 }\\mathbf{ i } - \\frac{ 3 }{ 5 }\\mathbf{ j }\n\\end{aligned}",
-            "<strong>Part (b): Scale to the required distance</strong><br>Since $X$ is at a distance of $35$ units from the origin in the direction of $\\mathbf{ p }$, scale the unit vector $\\hat{ \\mathbf{ p } }$ by a factor of $35$:<br>\\begin{aligned}\n\\mathbf{ x } &= 35 \\hat{ \\mathbf{ p } } \\\n&= 35 \\left( \\frac{ 4 }{ 5 }\\mathbf{ i } - \\frac{ 3 }{ 5 }\\mathbf{ j } \\right) \\\n&= 7(4\\mathbf{ i } - 3\\mathbf{ j }) \\\n&= 28\\mathbf{ i } - 21\\mathbf{ j }\n\\end{aligned}"
-        ],
-        "pi_options": [
-            {
-                "ans": "$\\hat{ \\mathbf{ w } } = -\\frac{ 12 }{ 7 }\\mathbf{ i } + \\frac{ 5 }{ 7 }\\mathbf{ j }$ and $\\mathbf{ x } = 28\\mathbf{ i } - 21\\mathbf{ j }$",
-                "feedback": "Your value for $\\mathbf{ x }$ is correct, but check your magnitude calculation for $\\mathbf{ w }$. The magnitude of a vector is calculated using the Pythagorean formula, which gives $13$, not by summing the individual coordinate values."
-            },
-            {
-                "ans": "$\\hat{ \\mathbf{ w } } = -\\frac{ 12 }{ 13 }\\mathbf{ i } + \\frac{ 5 }{ 13 }\\mathbf{ j }$ and $\\mathbf{ x } = 140\\mathbf{ i } - 105\\mathbf{ j }$",
-                "feedback": "Your unit vector is correct, but you scaled $\\mathbf{ p }$ directly by $35$. Since $\\mathbf{ p }$ already has a magnitude of $5$, multiplying it directly by $35$ yields a vector with a magnitude of $175$. You must first find the unit vector of $\\mathbf{ p }$ before multiplying by $35$."
-            },
-            {
-                "ans": "$\\hat{ \\mathbf{ w } } = \\frac{ 12 }{ 13 }\\mathbf{ i } - \\frac{ 5 }{ 13 }\\mathbf{ j }$ and $\\mathbf{ x } = -28\\mathbf{ i } + 21\\mathbf{ j }$",
-                "feedback": "Be very careful with signs. You have reversed the direction of both vectors. A vector in the direction of $\\mathbf{ w }$ must have the same component signs as $\\mathbf{ w }$."
-            }
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Scaling Vectors",
-            "content": "To find a vector of any specific length $L$ in the direction of a vector $\\mathbf{v}$, always break it into two simple steps: 1) Convert $\\mathbf{v}$ to a unit vector (length 1) by dividing by its magnitude, and 2) Multiply this unit vector by $L$. This prevents accidental double-scaling."
-        }
-    },
-    {
-        "id": "04343",
-        "board": "WJEC",
-        "level": "AS",
-        "major_area": "Vectors",
-        "topic": "2D Vectors",
-        "subtopic": [
-            "Line Division",
-            "Midpoints"
-        ],
-        "img": false,
-        "question": "<strong>Part (a)</strong><br>Points $P$ and $Q$ have position vectors $\\mathbf{ p } = -3\\mathbf{ i } + 10\\mathbf{ j }$ and $\\mathbf{ q } = 7\\mathbf{ i } - 4\\mathbf{ j }$ respectively. Find the position vector of the midpoint of $PQ$.<br><br><strong>Part (b)</strong><br>The point $R$ lies on the line $PQ$ extended such that $Q$ lies between $P$ and $R$, and $PQ : QR$ is $2 : 1$. Find the position vector of $R$.",
-        "steps": [
-            "<strong>Part (a): Find the midpoint of $PQ$</strong><br>The position vector of the midpoint $\\mathbf{ m }$ is the average of the position vectors $\\mathbf{ p }$ and $\\mathbf{ q }$:<br>\\begin{aligned}\n\\mathbf{ m } &= \\frac{ \\mathbf{ p } + \\mathbf{ q } }{ 2 } \\\n&= \\frac{ (-3 + 7)\\mathbf{ i } + (10 - 4)\\mathbf{ j } }{ 2 } \\\n&= \\frac{ 4\\mathbf{ i } + 6\\mathbf{ j } }{ 2 } \\\n&= 2\\mathbf{ i } + 3\\mathbf{ j }\n\\end{aligned}",
-            "<strong>Part (b): Visualize with a sketch</strong><br>Sketching the points along the line segment makes it obvious how the vectors relate. Since $Q$ is between $P$ and $R$, and $PQ : QR = 2 : 1$, this means that the segment $QR$ is half the length of $PQ$, pointing in the same direction:<br>$$\\vec{ QR } = \\frac{ 1 }{ 2 }\\vec{ PQ }$$<br><br><img src='images/p1/04343_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-            "<strong>Part (b): Compute the vector $\\vec{ PQ }$</strong><br>Find the vector $\\vec{ PQ }$ by subtracting the position vector of $P$ from $Q$:<br>\\begin{aligned}\n\\vec{ PQ } &= \\mathbf{ q } - \\mathbf{ p } \\\n&= (7\\mathbf{ i } - 4\\mathbf{ j }) - (-3\\mathbf{ i } + 10\\mathbf{ j }) \\\n&= 10\\mathbf{ i } - 14\\mathbf{ j }\n\\end{aligned}",
-            "<strong>Part (b): Find vector $\\vec{ QR }$ and position vector $\\mathbf{ r }$</strong><br>Now find $\\vec{ QR }$:<br>\\begin{aligned}\n\\vec{ QR } &= \\frac{ 1 }{ 2 }\\vec{ PQ } \\\n&= \\frac{ 1 }{ 2 }(10\\mathbf{ i } - 14\\mathbf{ j }) \\\n&= 5\\mathbf{ i } - 7\\mathbf{ j }\n\\end{aligned}<br>Add this displacement to the position vector of $Q$ to find the position vector of $R$:<br>\\begin{aligned}\n\\mathbf{ r } &= \\mathbf{ q } + \\vec{ QR } \\\n&= (7\\mathbf{ i } - 4\\mathbf{ j }) + (5\\mathbf{ i } - 7\\mathbf{ j }) \\\n&= 12\\mathbf{ i } - 11\\mathbf{ j }\n\\end{aligned}"
-        ],
-        "pi_options": [
-            {
-                "ans": "$\\mathbf{ m } = 4\\mathbf{ i } + 6\\mathbf{ j }$ and $\\mathbf{ r } = 12\\mathbf{ i } - 11\\mathbf{ j }$",
-                "feedback": "Your calculation of $\\mathbf{ r }$ is correct, but check your midpoint. It looks like you added the components of $\\mathbf{ p }$ and $\\mathbf{ q }$ without dividing by $2$. Remember that a midpoint is the average of the coordinates."
-            },
-            {
-                "ans": "$\\mathbf{ m } = 2\\mathbf{ i } + 3\\mathbf{ j }$ and $\\mathbf{ r } = 27\\mathbf{ i } - 32\\mathbf{ j }$",
-                "feedback": "Your midpoint is correct, but check how you interpreted the ratio for $R$. It looks like you calculated $\\vec{ QR } = 2\\vec{ PQ }$ instead of $\\frac{ 1 }{ 2 }\\vec{ PQ }$. The ratio $PQ : QR = 2 : 1$ means $PQ$ is twice the length of $QR$."
-            },
-            {
-                "ans": "$\\mathbf{ m } = 2\\mathbf{ i } + 3\\mathbf{ j }$ and $\\mathbf{ r } = 2\\mathbf{ i } + 3\\mathbf{ j }$",
-                "feedback": "Your midpoint calculation is correct, but the position vector of $R$ cannot be identical to the midpoint of $PQ$. Re-read the definition of $R$, noting that $Q$ lies between $P$ and $R$."
-            }
-        ],
-        "bradley_insight": {
-            "type": "deeper",
-            "title": "The Head Teacher's Eye: External Division",
-            "content": "When a point lies on a line extended (external division), pay close attention to the order of points. 'Q lies between P and R' tells you that the path goes $P \\rightarrow Q \\rightarrow R$. Thus, the vectors $\\vec{PQ}$ and $\\vec{QR}$ point in the same direction, making the relationship $\\vec{QR} = \\frac{ 1 }{ 2 }\\vec{PQ}$ straightforward."
-        }
-    },
-    {
-        "id": "04344",
-        "board": "WJEC",
-        "level": "AS",
-        "major_area": "Vectors",
-        "topic": "2D Vectors",
-        "subtopic": [
-            "Collinear Points",
-            "Line Division"
-        ],
-        "img": false,
-        "question": "<strong>Part (a)</strong><br>Relative to a fixed origin $O$, the points $D$, $E$, and $F$ have position vectors $\\mathbf{ d } = \\mathbf{ i } - 2\\mathbf{ j }$, $\\mathbf{ e } = 5\\mathbf{ i } + 4\\mathbf{ j }$, and $\\mathbf{ f } = k\\mathbf{ i } + 13\\mathbf{ j }$ respectively, where $k$ is a constant.<br>&bull; (i) Express $\\vec{ DE }$ and $\\vec{ EF }$ in terms of $\\mathbf{ i }$, $\\mathbf{ j }$, and $k$.<br>&bull; (ii) Given that the points $D$, $E$, and $F$ are collinear, determine the value of $k$.<br><br><strong>Part (b)</strong><br>Using the value of $k$ found in part (a), find the ratio $DE : EF$.",
-        "steps": [
-            "<strong>Part (a)(i): Express the displacement vectors</strong><br>Find $\\vec{ DE }$ and $\\vec{ EF }$ by subtracting the respective position vectors:<br>\\begin{aligned}\n\\vec{ DE } &= \\mathbf{ e } - \\mathbf{ d } \\\n&= (5\\mathbf{ i } + 4\\mathbf{ j }) - (\\mathbf{ i } - 2\\mathbf{ j }) \\\n&= 4\\mathbf{ i } + 6\\mathbf{ j }\n\\end{aligned}<br>Now find $\\vec{ EF }$:<br>\\begin{aligned}\n\\vec{ EF } &= \\mathbf{ f } - \\mathbf{ e } \\\n&= (k\\mathbf{ i } + 13\\mathbf{ j }) - (5\\mathbf{ i } + 4\\mathbf{ j }) \\\n&= (k - 5)\\mathbf{ i } + 9\\mathbf{ j }\n\\end{aligned}",
-            "<strong>Part (a)(ii): Solve for $k$ using collinearity</strong><br>Since $D$, $E$, and $F$ are collinear, the vectors $\\vec{ DE }$ and $\\vec{ EF }$ must be parallel. Therefore, $\\vec{ EF } = \\lambda \\vec{ DE }$ for some scalar multiplier $\\\\\lambda$:<br>$$(k - 5)\\mathbf{ i } + 9\\mathbf{ j } = \\lambda (4\\mathbf{ i } + 6\\mathbf{ j })$$",
-            "<strong>Part (a)(ii): Equate the components</strong><br>Equate the $\\mathbf{ j }$ components to find $\\lambda$:<br>\\begin{aligned}\n9 &= 6\\lambda \\\n\\lambda &= 1.5\n\\end{aligned}<br>Now equate the $\\mathbf{ i }$ components and substitute $\\lambda = 1.5$:<br>\\begin{aligned}\nk - 5 &= 4\\lambda \\\nk - 5 &= 4(1.5) \\\nk - 5 &= 6 \\\nk &= 11\n\\end{aligned}",
-            "<strong>Part (b): Determine the ratio $DE : EF$</strong><br>From the relation $\\vec{ EF } = 1.5 \\vec{ DE }$ (since $\\lambda = 1.5$), we know that the length of segment $EF$ is $1.5$ times the length of segment $DE$:<br>\\begin{aligned}\nDE : EF &= 1 : 1.5 \\\n&= 2 : 3\n\\end{aligned}"
-        ],
-        "pi_options": [
-            {
-                "ans": "$k = 11$ and $DE : EF = 3 : 2$",
-                "feedback": "Your value for $k$ is correct, but check your ratio order. Since $\\vec{ EF } = 1.5\\vec{ DE }$, segment $EF$ is longer than $DE$. This means the ratio $DE : EF$ must be $1 : 1.5$, which simplifies to $2 : 3$, not $3 : 2$."
-            },
-            {
-                "ans": "$k = 8$ and $DE : EF = 2 : 3$",
-                "feedback": "Your ratio is correct, but check your equation for $k$. Since $k - 5 = 6$, you need to add $5$ to both sides to solve for $k$. It looks like you may have subtracted $5$ or made another arithmetic slip."
-            },
-            {
-                "ans": "$k = 14$ and $DE : EF = 1 : 2$",
-                "feedback": "Check your collinearity components. Equating the $\\mathbf{ j }$ components should yield $9 = 6\\lambda \\implies \\lambda = 1.5$. It looks like you may have miscalculated $\\lambda$, leading to errors in both $k$ and the final ratio."
-            }
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Collinearity Simplification",
-            "content": "To test if three points $D$, $E$, and $F$ are collinear, always select a shared vertex to build two vectors (e.g. $\\vec{DE}$ and $\\vec{EF}$). Since they share the point $E$, if they are parallel (one is a scalar multiple of the other), they must lie on the exact same line."
-        }
-    },
-    {
-        "id": "04345",
-        "board": "WJEC",
-        "level": "AS",
-        "major_area": "Vectors",
-        "topic": "2D Vectors",
-        "subtopic": [
-            "Parallel Vectors",
-            "Resultant Vectors"
-        ],
-        "img": false,
-        "question": "<strong>Part (a)</strong><br>Two vectors $\\mathbf{ a }$ and $\\mathbf{ b }$ are defined by $\\mathbf{ a } = 2\\mathbf{ i } + \\lambda\\mathbf{ j }$ and $\\mathbf{ b } = -6\\mathbf{ i } + 9\\mathbf{ j }$. Given that $\\mathbf{ a }$ and $\\mathbf{ b }$ are parallel, find the value of the constant $\\lambda$.<br><br><strong>Part (b)</strong><br>Using the value of $\\lambda$ found in part (a), find the magnitude of the resultant vector $\\mathbf{ r } = 4\\mathbf{ a } + \\mathbf{ b }$..",
-        "steps": [
-            "<strong>Part (a): Set up the parallel relation</strong><br>If $\\mathbf{ a }$ and $\\mathbf{ b }$ are parallel, then $\\mathbf{ b } = k\\mathbf{ a }$ for some scalar constant $k$:<br>$$-6\\mathbf{ i } + 9\\mathbf{ j } = k(2\\mathbf{ i } + \\lambda\\mathbf{ j })$$",
-            "<strong>Part (a): Equate components to find $\\lambda$</strong><br>Equate the $\\mathbf{ i }$ components:<br>\\begin{aligned}\n-6 &= 2k \\\nk &= -3\n\\end{aligned}<br>Now equate the $\\mathbf{ j }$ components and substitute $k = -3$:<br>\\begin{aligned}\n9 &= k\\lambda \\\n9 &= -3\\lambda \\\n\\lambda &= -3\n\\end{aligned}",
-            "<strong>Part (b): Find the resultant vector $\\mathbf{ r }$</strong><br>Substitute $\\lambda = -3$ into $\\mathbf{ a }$ to get $\\mathbf{ a } = 2\\mathbf{ i } - 3\\mathbf{ j }$. Then calculate the linear combination $\\mathbf{ r } = 4\\mathbf{ a } + \\mathbf{ b }$:<br>\\begin{aligned}\n\\mathbf{ r } &= 4(2\\mathbf{ i } - 3\\mathbf{ j }) + (-6\\mathbf{ i } + 9\\mathbf{ j }) \\\n&= (8\\mathbf{ i } - 12\\mathbf{ j }) + (-6\\mathbf{ i } + 9\\mathbf{ j }) \\\n&= 2\\mathbf{ i } - 3\\mathbf{ j }\n\\end{aligned}",
-            "<strong>Part (b): Calculate the magnitude of $\\mathbf{ r }$</strong><br>Compute the magnitude using the Pythagorean formula:<br>\\begin{aligned}\n|\\mathbf{ r }| &= \\sqrt{ 2^2 + (-3)^2 } \\\n&= \\sqrt{ 4 + 9 } \\\n&= \\sqrt{ 13 }\n\\end{aligned}"
-        ],
-        "pi_options": [
-            {
-                "ans": "$\\lambda = -3$ and $|\\mathbf{ r }| = 13$",
-                "feedback": "Your value for $\\lambda$ is correct, but check your magnitude calculation. To find the magnitude of $2\\mathbf{i} - 3\\mathbf{j}$, you must take the square root of $4 + 9 = 13$."
-            },
-            {
-                "ans": "$\\lambda = -4.5$ and $|\\mathbf{ r }| = \\sqrt{ 13 }$",
-                "feedback": "Your magnitude calculation is correct, but check your value of $\\lambda$. Since the $\\mathbf{ i }$ component of $\\mathbf{ b }$ is $-3$ times that of $\\mathbf{ a }$, the same scale factor must apply to the $\\mathbf{ j }$ components, meaning $9 = -3\\lambda \\implies \\lambda = -3$."
-            },
-            {
-                "ans": "$\\lambda = 3$ and $|\\mathbf{ r }| = \\sqrt{ 205 }$",
-                "feedback": "Be careful with signs. Since the $\\mathbf{ i }$ component of $\\mathbf{ b }$ is negative and $\\mathbf{ a }$ is positive, the scaling constant $k$ must be negative, which makes $\\lambda = -3$."
-            }
-        ],
-        "bradley_insight": {
-            "type": "caution",
-            "title": "The Head Teacher's Eye: Parallel Scaling Direction",
-            "content": "When two vectors are parallel, their components must be in the exact same ratio. If one vector has a positive component and the other has a negative component, the scale factor $k$ is negative, which means the vectors point in opposite directions (antiparallel), though they are still geometrically parallel."
-        }
-    }
+{
+"id": "04341",
+"board": "WJEC",
+"level": "AS",
+"major_area": "Vectors",
+"topic": "2D Vectors",
+"subtopic": [
+"Magnitude and Direction",
+"Line Division",
+"Inequalities"
+],
+"img": false,
+"question": "<strong>Part (a)</strong><br>The vectors <strong>u</strong> and <strong>v</strong> are defined by $\\mathbf{ u } = 8\\mathbf{ i } - 15\\mathbf{ j }$ and $\\mathbf{ v } = 3\\mathbf{ i } + 4\\mathbf{ j }$. Determine the range of values for $\\mu$ such that:<br>$$\\mu|\\mathbf{ v }| > |\\mathbf{ u }|$$<br><strong>Part (b)</strong><br>The point $A$ has position vector $5\\mathbf{ i } - 8\\mathbf{ j }$ and the point $B$ has position vector $17\\mathbf{ i } + 10\\mathbf{ j }$. Determine the position vector of the point $C$, which lies between $A$ and $B$, such that $AC : CB$ is $1 : 2$.",
+"steps": [
+"<strong>Part (a): Find the magnitude of each vector</strong><br>To start, compute the magnitudes of <strong>u</strong> and <strong>v</strong> using the Pythagorean formula $|x\\mathbf{ i } + y\\mathbf{ j }| = \\sqrt{ x^2 + y^2 }$:<br>\\begin{aligned}\n|\\mathbf{ u }| &= \\sqrt{ 8^2 + (-15)^2 } \\\\\n&= \\sqrt{ 64 + 225 } \\\\\n&= \\sqrt{ 289 } \\\\\n&= 17\n\\end{aligned}<br>Now find the magnitude of <strong>v</strong>:<br>\\begin{aligned}\n|\\mathbf{ v }| &= \\sqrt{ 3^2 + 4^2 } \\\\\n&= \\sqrt{ 9 + 16 } \\\\\n&= \\sqrt{ 25 } \\\\\n&= 5\n\\end{aligned}",
+"<strong>Part (a): Solve the inequality</strong><br>Substitute the computed magnitudes into the inequality $\\mu|\\mathbf{ v }| > |\\mathbf{ u }|$:<br>\\begin{aligned}\n\\mu \\cdot 5 &> 17 \\\\\n\\mu &> \\frac{ 17 }{ 5 } \\\\\n\\mu &> 3.4\n\\end{aligned}",
+"<strong>Part (b): Calculate vector $\\vec{ AB }$ and find $\\vec{ AC }$</strong><br>Find the displacement vector $\\vec{ AB }$ by subtracting the position vector of $A$ from $B$:<br>\\begin{aligned}\n\\vec{ AB } &= \\mathbf{ b } - \\mathbf{ a } \\\\\n&= (17\\mathbf{ i } + 10\\mathbf{ j }) - (5\\mathbf{ i } - 8\\mathbf{ j }) \\\\\n&= 12\\mathbf{ i } + 18\\mathbf{ j }\n\\end{aligned}<br>Now multiply this displacement vector by $\\frac{ 1 }{ 3 }$ to find $\\vec{ AC }$:<br>\\begin{aligned}\n\\vec{ AC } &= \\frac{ 1 }{ 3 }(12\\mathbf{ i } + 18\\mathbf{ j }) \\\\\n&= 4\\mathbf{ i } + 6\\mathbf{ j }\n\\end{aligned}",
+"<strong>Part (b): Determine the position vector of point $C$</strong><br>Add the displacement $\\vec{ AC }$ to the starting position vector $\\mathbf{ a }$:<br>\\begin{aligned}\n\\mathbf{ c } &= \\mathbf{ a } + \\vec{ AC } \\\\\n&= (5\\mathbf{ i } - 8\\mathbf{ j }) + (4\\mathbf{ i } + 6\\mathbf{ j }) \\\\\n&= 9\\mathbf{ i } - 2\\mathbf{ j }\n\\end{aligned}"
+],
+"pi_options": [
+{
+"ans": "$\\mu > 3.4$ and $\\mathbf{ c } = 13\\mathbf{ i } + 4\\mathbf{ j }$",
+"feedback": "Your range for $\\mu$ is correct, but check how you divided the segment. A position vector of $13\\mathbf{ i } + 4\\mathbf{ j }$ suggests you used a $2 : 1$ ratio from $A$ to $B$ (i.e. multiplying by $\\frac{ 2 }{ 3 }$) instead of the correct $1 : 2$ ratio (which corresponds to $\\frac{ 1 }{ 3 }$)."
+},
+{
+"ans": "$\\mu > 2.125$ and $\\mathbf{ c } = 9\\mathbf{ i } - 2\\mathbf{ j }$",
+"feedback": "Your position vector $\\mathbf{ c }$ is correct, but check your calculation for $|\\mathbf{ u }|$. Did you compute $|\\mathbf{ u }| = \\sqrt{ 8^2 + (-15)^2 }$ correctly? It looks like you might have added the linear components ($8+15=23$) instead of using the Pythagorean formula, yielding an incorrect magnitude."
+},
+{
+"ans": "$\\mu > 3.4$ and $\\mathbf{ c } = 11\\mathbf{ i } - 2\\mathbf{ j }$",
+"feedback": "Your range for $\\mu$ is correct, but check your addition or scalar multiplication when finding $\\mathbf{ c }$. Ensure you correctly calculated $\\vec{ AC } = \\frac{ 1 }{ 3 }(12\\mathbf{ i } + 18\\mathbf{ j }) = 4\\mathbf{ i } + 6\\mathbf{ j }$ before adding it to $\\mathbf{ a }$."
+}
+],
+"bradley_insight": {
+"type": "caution",
+"title": "The Head Teacher's Eye: Ratio Partitioning",
+"content": "Always remember that a ratio of $m : n$ divides a line segment into $m + n$ total parts. For $AC : CB = 1 : 2$, the fraction used to find the displacement of $C$ from $A$ is $\\frac{ 1 }{ 1 + 2 } = \\frac{ 1 }{ 3 }$, not $\\frac{ 1 }{ 2 }$. Drawing a quick 1D sketch will save you from this very common mistake."
+}
+},
+{
+"id": "04342",
+"board": "WJEC",
+"level": "AS",
+"major_area": "Vectors",
+"topic": "2D Vectors",
+"subtopic": [
+"Magnitude and Direction",
+"Unit Vectors"
+],
+"img": false,
+"question": "<strong>Part (a)</strong><br>The vector <strong>w</strong> is defined by $\\mathbf{ w } = -12\\mathbf{ i } + 5\\mathbf{ j }$. Find the unit vector in the direction of <strong>w</strong>, expressing your answer in the form $a\\mathbf{ i } + b\\mathbf{ j }$.<br><br><strong>Part (b)</strong><br>Given that $\\mathbf{ p } = 4\\mathbf{ i } - 3\\mathbf{ j }$, find the position vector of a point $X$ that lies in the direction of <strong>p</strong> such that the distance of $X$ from the origin is $35$ units.",
+"steps": [
+"<strong>Part (a): Find the magnitude of <strong>w</strong></strong><br>The magnitude $|\\mathbf{ w }|$ is computed as:<br>\\begin{aligned}\n|\\mathbf{ w }| &= \\sqrt{ (-12)^2 + 5^2 } \\\\\n&= \\sqrt{ 144 + 25 } \\\\\n&= \\sqrt{ 169 } \\\\\n&= 13\n\\end{aligned}",
+"<strong>Part (a): Construct the unit vector</strong><br>To find the unit vector $\\hat{ \\mathbf{ w } }$ in the direction of <strong>w</strong>, divide <strong>w</strong> by its magnitude $|\\mathbf{ w }|$:<br>\\begin{aligned}\n\\hat{ \\mathbf{ w } } &= \\frac{ \\mathbf{ w } }{ |\\mathbf{ w }| } \\\\\n&= \\frac{ -12\\mathbf{ i } + 5\\mathbf{ j } }{ 13 } \\\\\n&= -\\frac{ 12 }{ 13 }\\mathbf{ i } + \\frac{ 5 }{ 13 }\\mathbf{ j }\n\\end{aligned}",
+"<strong>Part (b): Find the magnitude and unit vector of <strong>p</strong></strong><br>First find the magnitude $|\\mathbf{ p }|$:<br>\\begin{aligned}\n|\\mathbf{ p }| &= \\sqrt{ 4^2 + (-3)^2 } \\\\\n&= \\sqrt{ 16 + 9 } \\\\\n&= \\sqrt{ 25 } \\\\\n&= 5\n\\end{aligned}<br>Now find the unit vector $\\hat{ \\mathbf{ p } }$:<br>\\begin{aligned}\n\\hat{ \\mathbf{ p } } &= \\frac{ \\mathbf{ p } }{ |\\mathbf{ p }| } \\\\\n&= \\frac{ 4 }{ 5 }\\mathbf{ i } - \\frac{ 3 }{ 5 }\\mathbf{ j }\n\\end{aligned}",
+"<strong>Part (b): Scale to the required distance</strong><br>Since $X$ is at a distance of $35$ units from the origin in the direction of <strong>p</strong>, scale the unit vector $\\hat{ \\mathbf{ p } }$ by a factor of $35$:<br>\\begin{aligned}\n\\mathbf{ x } &= 35 \\hat{\\mathbf{ p } } \\\\\n&= 35 \\left( \\frac{ 4 }{ 5 }\\mathbf{ i } - \\frac{ 3 }{ 5 }\\mathbf{ j } \\right) \\\\\n&= 7(4\\mathbf{ i } - 3\\mathbf{ j }) \\\\\n&= 28\\mathbf{ i } - 21\\mathbf{ j }\n\\end{aligned}"
+],
+"pi_options": [
+{
+"ans": "$\\hat{ \\mathbf{ w } } = -\\frac{ 12 }{ 7 }\\mathbf{ i } + \\frac{ 5 }{ 7 }\\mathbf{ j }$ and $\\mathbf{ x } = 28\\mathbf{ i } - 21\\mathbf{ j }$",
+"feedback": "Your value for $\\mathbf{ x }$ is correct, but check your magnitude calculation for <strong>w</strong>. The magnitude of a vector is calculated using the Pythagorean formula, which gives $13$, not by summing the individual coordinate values."
+},
+{
+"ans": "$\\hat{ \\mathbf{ w } } = -\\frac{ 12 }{ 13 }\\mathbf{ i } + \\frac{ 5 }{ 13 }\\mathbf{ j }$ and $\\mathbf{ x } = 140\\mathbf{ i } - 105\\mathbf{ j }$",
+"feedback": "Your unit vector is correct, but you scaled <strong>p</strong> directly by $35$. Since <strong>p</strong> already has a magnitude of $5$, multiplying it directly by $35$ yields a vector with a magnitude of $175$. You must first find the unit vector of <strong>p</strong> before multiplying by $35$."
+},
+{
+"ans": "$\\hat{ \\mathbf{ w } } = \\frac{ 12 }{ 13 }\\mathbf{ i } - \\frac{ 5 }{ 13 }\\mathbf{ j }$ and $\\mathbf{ x } = -28\\mathbf{ i } + 21\\mathbf{ j }$",
+"feedback": "Be very careful with signs. You have reversed the direction of both vectors. A vector in the direction of <strong>w</strong> must have the same component signs as <strong>w</strong>."
+}
+],
+"bradley_insight": {
+"type": "pro-tip",
+"title": "The Head Teacher's Eye: Scaling Vectors",
+"content": "To find a vector of any specific length $L$ in the direction of a vector $\\mathbf{ v }$, always break it into two simple steps: 1) Convert $\\mathbf{ v }$ to a unit vector (length 1) by dividing by its magnitude, and 2) Multiply this unit vector by $L$. This prevents accidental double-scaling."
+}
+},
+{
+"id": "04343",
+"board": "WJEC",
+"level": "AS",
+"major_area": "Vectors",
+"topic": "2D Vectors",
+"subtopic": [
+"Line Division",
+"Midpoints"
+],
+"img": false,
+"question": "<strong>Part (a)</strong><br>Points $P$ and $Q$ have position vectors $\\mathbf{ p } = -3\\mathbf{ i } + 10\\mathbf{ j }$ and $\\mathbf{ q } = 7\\mathbf{ i } - 4\\mathbf{ j }$ respectively. Find the position vector of the midpoint of $PQ$.<br><br><strong>Part (b)</strong><br>The point $R$ lies on the line $PQ$ extended such that $Q$ lies between $P$ and $R$, and $PQ : QR$ is $2 : 1$. Find the position vector of $R$.",
+"steps": [
+"<strong>Part (a): Find the midpoint of $PQ$</strong><br>The position vector of the midpoint $\\mathbf{ m }$ is the average of the position vectors $\\mathbf{ p }$ and $\\mathbf{ q }$:<br>\\begin{aligned}\n\\mathbf{ m } &= \\frac{ \\mathbf{ p } + \\mathbf{ q } }{ 2 } \\\\\n&= \\frac{ (-3 + 7)\\mathbf{ i } + (10 - 4)\\mathbf{ j } }{ 2 } \\\\\n&= \\frac{ 4\\mathbf{ i } + 6\\mathbf{ j } }{ 2 } \\\\\n&= 2\\mathbf{ i } + 3\\mathbf{ j }\n\\end{aligned}",
+"<strong>Part (b): Compute the vector $\\vec{ PQ }$</strong><br>Find the vector $\\vec{ PQ }$ by subtracting the position vector of $P$ from $Q$:<br>\\begin{aligned}\n\\vec{ PQ } &= \\mathbf{ q } - \\mathbf{ a } \\\\\n&= (7\\mathbf{ i } - 4\\mathbf{ j }) - (-3\\mathbf{ i } + 10\\mathbf{ j }) \\\\\n&= 10\\mathbf{ i } - 14\\mathbf{ j }\n\\end{aligned}",
+"<strong>Part (b): Find vector $\\vec{ QR }$ and position vector $\\mathbf{ r }$</strong><br>Now find $\\vec{ QR }$:<br>\\begin{aligned}\n\\vec{ QR } &= \\frac{ 1 }{ 2 }\\vec{ PQ } \\\\\n&= \\frac{ 1 }{ 2 }(10\\mathbf{ i } - 14\\mathbf{ j }) \\\\\n&= 5\\mathbf{ i } - 7\\mathbf{ j }\n\\end{aligned}<br>Add this displacement to the position vector of $Q$ to find the position vector of $R$:<br>\\begin{aligned}\n\\mathbf{ r } &= \\mathbf{ q } + \\vec{ QR } \\\\\n&= (7\\mathbf{ i } - 4\\mathbf{ j }) + (5\\mathbf{ i } - 7\\mathbf{ j }) \\\\\n&= 12\\mathbf{ i } - 11\\mathbf{ j }\n\\end{aligned}"
+],
+"pi_options": [
+{
+"ans": "$\\mathbf{ m } = 4\\mathbf{ i } + 6\\mathbf{ j }$ and $\\mathbf{ r } = 12\\mathbf{ i } - 11\\mathbf{ j }$",
+"feedback": "Your calculation of $\\mathbf{ r }$ is correct, but check your midpoint. It looks like you added the components of $\\mathbf{ p }$ and $\\mathbf{ q }$ without dividing by $2$. Remember that a midpoint is the average of the coordinates."
+},
+{
+"ans": "$\\mathbf{ m } = 2\\mathbf{ i } + 3\\mathbf{ j }$ and $\\mathbf{ r } = 27\\mathbf{ i } - 32\\mathbf{ j }$",
+"feedback": "Your midpoint is correct, but check how you interpreted the ratio for $R$. It looks like you calculated $\\vec{ QR } = 2\\vec{ PQ }$ instead of $\\frac{ 1 }{ 2 }\\vec{ PQ }$. The ratio $PQ : QR = 2 : 1$ means $PQ$ is twice the length of $QR$."
+},
+{
+"ans": "$\\mathbf{ m } = 2\\mathbf{ i } + 3\\mathbf{ j }$ and $\\mathbf{ r } = 2\\mathbf{ i } + 3\\mathbf{ j }$",
+"feedback": "Your midpoint calculation is correct, but the position vector of $R$ cannot be identical to the midpoint of $PQ$. Re-read the definition of $R$, noting that $Q$ lies between $P$ and $R$."
+}
+],
+"bradley_insight": {
+"type": "deeper",
+"title": "The Head Teacher's Eye: External Division",
+"content": "When a point lies on a line extended (external division), pay close attention to the order of points. 'Q lies between P and R' tells you that the path goes $P \\rightarrow Q \\rightarrow R$. Thus, the vectors $\\vec{ PQ }$ and $\\vec{ QR }$ point in the same direction, making the relationship $\\vec{ QR } = \\frac{ 1 }{ 2 }\\vec{ PQ }$ straightforward."
+}
+},
+{
+"id": "04344",
+"board": "WJEC",
+"level": "AS",
+"major_area": "Vectors",
+"topic": "2D Vectors",
+"subtopic": [
+"Collinear Points",
+"Line Division"
+],
+"img": false,
+"question": "<strong>Part (a)</strong><br>Relative to a fixed origin $O$, the points $D$, $E$, and $F$ have position vectors $\\mathbf{ d } = \\mathbf{ i } - 2\\mathbf{ j }$, $\\mathbf{ e } = 5\\mathbf{ i } + 4\\mathbf{ j }$, and $\\mathbf{ f } = k\\mathbf{ i } + 13\\mathbf{ j }$ respectively, where $k$ is a constant.<br>&bull; (i) Express $\\vec{ DE }$ and $\\vec{ EF }$ in terms of $\\mathbf{ i }$, $\\mathbf{ j }$, and $k$.<br>&bull; (ii) Given that the points $D$, $E$, and $F$ are collinear, determine the value of $k$.<br><br><strong>Part (b)</strong><br>Using the value of $k$ found in part (a), find the ratio $DE : EF$.",
+"steps": [
+"<strong>Part (a)(i): Express the displacement vectors</strong><br>Find $\\vec{ DE }$ and $\\vec{ EF }$ by subtracting the respective position vectors:<br>\\begin{aligned}\n\\vec{ DE } &= \\mathbf{ e } - \\mathbf{ d } \\\\\n&= (5\\mathbf{ i } + 4\\mathbf{ j }) - (\\mathbf{ i } - 2\\mathbf{ j }) \\\\\n&= 4\\mathbf{ i } + 6\\mathbf{ j }\n\\end{aligned}<br>Now find $\\vec{ EF }$:<br>\\begin{aligned}\n\\vec{ EF } &= \\mathbf{ f } - \\mathbf{ e } \\\\\n&= (k\\mathbf{ i } + 13\\mathbf{ j }) - (5\\mathbf{ i } + 4\\mathbf{ j }) \\\\\n&= (k - 5)\\mathbf{ i } + 9\\mathbf{ j }\n\\end{aligned}",
+"<strong>Part (a)(ii): Solve for $k$ using collinearity</strong><br>Since $D$, $E$, and $F$ are collinear, the vectors $\\vec{ DE }$ and $\\vec{ EF }$ must be parallel. Therefore, $\\vec{ EF } = \\lambda \\vec{ DE }$ for some scalar multiplier $\\lambda$:<br>$$(k - 5)\\mathbf{ i } + 9\\mathbf{ j } = \\lambda (4\\mathbf{ i } + 6\\mathbf{ j })$$",
+"<strong>Part (a)(ii): Equate the components</strong><br>Equate the $\\mathbf{ j }$ components to find $\\lambda$:<br>\\begin{aligned}\n9 &= 6\\lambda \\\\\n\\lambda &= 1.5\n\\end{aligned}<br>Now equate the $\\mathbf{ i }$ components and substitute $\\lambda = 1.5$:<br>\\begin{aligned}\nk - 5 &= 4\\lambda \\\\\nk - 5 &= 4(1.5) \\\\\nk - 5 &= 6 \\\\\nk &= 11\n\\end{aligned}",
+"<strong>Part (b): Determine the ratio $DE : EF$</strong><br>From the relation $\\vec{ EF } = 1.5 \\vec{ DE }$ (since $\\lambda = 1.5$), we know that the length of segment $EF$ is $1.5$ times the length of segment $DE$:<br>\\begin{aligned}\nDE : EF &= 1 : 1.5 \\\\\n&= 2 : 3\n\\end{aligned}"
+],
+"pi_options": [
+{
+"ans": "$k = 11$ and $DE : EF = 3 : 2$",
+"feedback": "Your value for $k$ is correct, but check your ratio order. Since $\\vec{ EF } = 1.5\\vec{ DE }$, segment $EF$ is longer than $DE$. This means the ratio $DE : EF$ must be $1 : 1.5$, which simplifies to $2 : 3$, not $3 : 2$."
+},
+{
+"ans": "$k = 8$ and $DE : EF = 2 : 3$",
+"feedback": "Your ratio is correct, but check your equation for $k$. Since $k - 5 = 6$, you need to add $5$ to both sides to solve for $k$. It looks like you may have subtracted $5$ or made another arithmetic slip."
+},
+{
+"ans": "$k = 14$ and $DE : EF = 1 : 2$",
+"feedback": "Check your collinearity components. Equating the $\\mathbf{ j }$ components should yield $9 = 6\\lambda \\implies \\lambda = 1.5$. It looks like you may have miscalculated $\\lambda$, leading to errors in both $k$ and the final ratio."
+}
+],
+"bradley_insight": {
+"type": "pro-tip",
+"title": "The Head Teacher's Eye: Collinearity Simplification",
+"content": "To test if three points $D$, $E$, and $F$ are collinear, always select a shared vertex to build two vectors (e.g. $\\vec{ DE }$ and $\\vec{ EF }$). Since they share the point $E$, if they are parallel (one is a scalar multiple of the other), they must lie on the exact same line."
+}
+},
+{
+"id": "04345",
+"board": "WJEC",
+"level": "AS",
+"major_area": "Vectors",
+"topic": "2D Vectors",
+"subtopic": [
+"Parallel Vectors",
+"Resultant Vectors"
+],
+"img": false,
+"question": "<strong>Part (a)</strong><br>Two vectors <strong>a</strong> and <strong>b</strong> are defined by $\\mathbf{ a } = 2\\mathbf{ i } + \\lambda\\mathbf{ j }$ and $\\mathbf{ b } = -6\\mathbf{ i } + 9\\mathbf{ j }$. Given that <strong>a</strong> and <strong>b</strong> are parallel, find the value of the constant $\\lambda$.<br><br><strong>Part (b)</strong><br>Using the value of $\\lambda$ found in part (a), find the magnitude of the resultant vector $\\mathbf{ r } = 4\\mathbf{ a } + \\mathbf{ b }$.",
+"steps": [
+"<strong>Part (a): Set up the parallel relation</strong><br>If <strong>a</strong> and <strong>b</strong> are parallel, then $\\mathbf{ b } = k\\mathbf{ a }$ for some scalar constant $k$:<br>$$-6\\mathbf{ i } + 9\\mathbf{ j } = k(2\\mathbf{ i } + \\lambda\\mathbf{ j })$$",
+"<strong>Part (a): Equate components to find $\\lambda$</strong><br>Equate the $\\mathbf{ i }$ components:<br>\\begin{aligned}\n-6 &= 2k \\\\\nk &= -3\n\\end{aligned}<br>Now equate the $\\mathbf{ j }$ components and substitute $k = -3$:<br>\\begin{aligned}\n9 &= k\\lambda \\\\\n9 &= -3\\lambda \\\\\n\\lambda &= -3\n\\end{aligned}",
+"<strong>Part (b): Find the resultant vector $\\mathbf{ r }$</strong><br>Substitute $\\lambda = -3$ into <strong>a</strong> to get $\\mathbf{ a } = 2\\mathbf{ i } - 3\\mathbf{ j }$. Then calculate the linear combination $\\mathbf{ r } = 4\\mathbf{ a } + \\mathbf{ b }$:<br>\\begin{aligned}\n\\mathbf{ r } &= 4(2\\mathbf{ i } - 3\\mathbf{ j }) + (-6\\mathbf{ i } + 9\\mathbf{ j }) \\\\\n&= (8\\mathbf{ i } - 12\\mathbf{ j }) + (-6\\mathbf{ i } + 9\\mathbf{ j }) \\\\\n&= 2\\mathbf{ i } - 3\\mathbf{ j }\n\\end{aligned}",
+"<strong>Part (b): Calculate the magnitude of $\\mathbf{ r }$</strong><br>Compute the magnitude using the Pythagorean formula:<br>\\begin{aligned}\n|\\mathbf{ r }| &= \\sqrt{ 2^2 + (-3)^2 } \\\\\n&= \\sqrt{ 4 + 9 } \\\\\n&= \\sqrt{ 13 }\n\\end{aligned}"
+],
+"pi_options": [
+{
+"ans": "$\\lambda = -3$ and $|\\mathbf{ r }| = 13$",
+"feedback": "Your value for $\\lambda$ is correct, but check your magnitude calculation. To find the magnitude of $2\\mathbf{ i } - 3\\mathbf{ j }$, you must take the square root of $4 + 9 = 13$."
+},
+{
+"ans": "$\\lambda = -4.5$ and $|\\mathbf{ r }| = \\sqrt{ 13 }$",
+"feedback": "Your magnitude calculation is correct, but check your value of $\\lambda$. Since the $\\mathbf{ i }$ component of <strong>b</strong> is $-3$ times that of <strong>a</strong>, the same scale factor must apply to the $\\mathbf{ j }$ components, meaning $9 = -3\\lambda \\implies \\lambda = -3$."
+},
+{
+"ans": "$\\lambda = 3$ and $|\\mathbf{ r }| = \\sqrt{ 205 }$",
+"feedback": "Be careful with signs. Since the $\\mathbf{ i }$ component of <strong>b</strong> is negative and <strong>a</strong> is positive, the scaling constant $k$ must be negative, which makes $\\lambda = -3$."
+}
+],
+"bradley_insight": {
+"type": "caution",
+"title": "The Head Teacher's Eye: Parallel Scaling Direction",
+"content": "When two vectors are parallel, their components must be in the exact same ratio. If one vector has a positive component and the other has a negative component, the scale factor $k$ is negative, which means the vectors point in opposite directions (antiparallel), though they are still geometrically parallel."
+}
+}
+
 
 
 
