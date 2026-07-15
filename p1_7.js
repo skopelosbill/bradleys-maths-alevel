@@ -996,7 +996,209 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Disproving Universal Claims",
             "content": "In mathematics, proving a statement requires showing that it holds true for all possible cases, which requires general algebraic reasoning. However, disproving a statement (showing it is not generally true) only requires finding a single specific instance—a counterexample—where the statement fails."
         }
+    },
+    {
+        "id": "004326",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Factor Theorem",
+            "Simultaneous Equations",
+            "Linear Factors"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Given that $(x - 1)$ and $(x + 1)$ are factors of the polynomial $3x^3 + px^2 + qx - 10$:<br><br>1. Find the values of the constants $p$ and $q$.<br>2. Determine the third linear factor of the polynomial.",
+        "steps": [
+            "According to the factor theorem, if $(x - 1)$ is a factor of the polynomial $f(x) = 3x^3 + px^2 + qx - 10$, then $f(1) = 0$. Substitute $x = 1$ into the polynomial:<br>\\begin{aligned} 3(1)^3 + p(1)^2 + q(1) - 10 &= 0 \\\\ 3 + p + q - 10 &= 0 \\\\ p + q &= 7 \\quad \\text{(Equation 1)} \\end{aligned}",
+            "Similarly, if $(x + 1)$ is a factor, then $f(-1) = 0$. Substitute $x = -1$ into the polynomial:<br>\\begin{aligned} 3(-1)^3 + p(-1)^2 + q(-1) - 10 &= 0 \\\\ -3 + p - q - 10 &= 0 \\\\ p - q &= 13 \\quad \\text{(Equation 2)} \\end{aligned}",
+            "Solve the system of equations by adding Equation 1 and Equation 2:<br>\\begin{aligned} (p + q) + (p - q) &= 7 + 13 \\\\ 2p &= 20 \\implies p = 10 \\end{aligned}<br>Substitute $p = 10$ back into Equation 1 to find $q$:<br>\\begin{aligned} 10 + q &= 7 \\implies q = -3 \\end{aligned}<br>Thus, the constants are $p = 10$ and $q = -3$.",
+            "Substitute the constants back to write the full polynomial:<br>\\begin{aligned} f(x) &= 3x^3 + 10x^2 - 3x - 10 \\end{aligned}<br>Since $(x - 1)$ and $(x + 1)$ are factors, their quadratic product $(x - 1)(x + 1) = x^2 - 1$ must also be a factor of the polynomial.",
+            "Write the cubic polynomial as the product of the quadratic factor and the unknown third linear factor $(ax + b)$:<br>\\begin{aligned} 3x^3 + 10x^2 - 3x - 10 &= \\left(x^2 - 1\\right)(ax + b) \\\\ 3x^3 + 10x^2 - 3x - 10 &= ax^3 + bx^2 - ax - b \\end{aligned}",
+            "Equate the coefficients of the terms on both sides of the identity to find $a$ and $b$:<ul><li>For the $x^3$ term: $a = 3$</li><li>For the constant term: $-b = -10 \\implies b = 10$</li></ul>Thus, the third linear factor is $3x + 10$.<br><br>Final Answer: $p = 10, q = -3$; the third factor is $3x + 10$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$p = 10, \\quad q = -3; \\quad \\text{Third factor: } x + 10$$",
+                "feedback": "Check your leading coefficient. The cubic term of the polynomial is $3x^3$. Since the quadratic factor starts with $x^2$, the third linear factor must start with $3x$ to produce $3x^3$, not just $x$."
+            },
+            {
+                "ans": "$$p = 10, \\quad q = 3; \\quad \\text{Third factor: } 3x + 10$$",
+                "feedback": "Check your algebraic addition when solving the system of equations. Substituting $p = 10$ into $p + q = 7$ yields $10 + q = 7 \\implies q = -3$, not $q = 3$."
+            },
+            {
+                "ans": "$$p = 13, \\quad q = -6; \\quad \\text{Third factor: } 3x + 10$$",
+                "feedback": "Check your initial equations. Differentiating between $(x-1)$ and $(x+1)$ factors is critical. For $(x-1)$ we set $f(1)=0$, and for $(x+1)$ we set $f(-1)=0$. It seems you may have swapped the signs during substitution."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Equating Coefficients",
+            "content": "To find the third factor of a cubic when you already know two factors, multiply the two known factors to get a quadratic (here, $x^2 - 1$). You can then write the cubic as $(x^2 - 1)(ax + b)$. This inspection method is extremely fast and much less prone to sign errors than formal polynomial division."
+        }
+    },
+    {
+        "id": "004327",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Remainder Theorem",
+            "Simultaneous Equations"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>The polynomial $f(x) = 2x^3 + ax^2 + bx - 5$ leaves a remainder of $3$ when divided by $(x - 1)$, and a remainder of $-15$ when divided by $(x + 1)$.<br><br>Find the values of the constants $a$ and $b$.",
+        "steps": [
+            "According to the remainder theorem, if $f(x)$ leaves a remainder of $3$ when divided by $(x - 1)$, then $f(1) = 3$. Substitute $x = 1$ into the polynomial expression:<br>\\begin{aligned} 2(1)^3 + a(1)^2 + b(1) - 5 &= 3 \\\\ 2 + a + b - 5 &= 3 \\\\ a + b - 3 &= 3 \\\\ a + b &= 6 \\quad \\text{(Equation 1)} \\end{aligned}",
+            "Similarly, if $f(x)$ leaves a remainder of $-15$ when divided by $(x + 1)$, then $f(-1) = -15$. Substitute $x = -1$ into the polynomial expression:<br>\\begin{aligned} 2(-1)^3 + a(-1)^2 + b(-1) - 5 &= -15 \\\\ -2 + a - b - 5 &= -15 \\\\ a - b - 7 &= -15 \\\\ a - b &= -8 \\quad \\text{(Equation 2)} \\end{aligned}",
+            "Solve the system of equations by adding Equation 1 and Equation 2:<br>\\begin{aligned} (a + b) + (a - b) &= 6 + (-8) \\\\ 2a &= -2 \\implies a = -1 \\end{aligned}",
+            "Substitute $a = -1$ back into Equation 1 to find $b$:<br>\\begin{aligned} -1 + b &= 6 \\implies b = 7 \\end{aligned}<br>Thus, the constants are $a = -1$ and $b = 7$."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$a = -1, \\quad b = -7$$",
+                "feedback": "Check your signs in Equation 1. Substituting $a = -1$ into $a + b = 6$ yields $-1 + b = 6 \\implies b = 7$. It seems you made a sign error, resulting in $b = -7$."
+            },
+            {
+                "ans": "$$a = 1, \\quad b = 7$$",
+                "feedback": "Check your addition step when combining the equations. Adding $6$ and $-8$ yields $-2$. Therefore, $2a = -2 \\implies a = -1$. It seems you mistakenly calculated $a = 1$."
+            },
+            {
+                "ans": "$$a = -1, \\quad b = 5$$",
+                "feedback": "Check your simplification of Equation 1. Substituting $x=1$ yields $2 + a + b - 5 = 3 \\implies a + b - 3 = 3 \\implies a + b = 6$. It seems you may have simplified $3 + 3$ incorrectly as $5$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Remainder vs. Factor",
+            "content": "Ensure you distinguish between the Factor Theorem and the Remainder Theorem. If $(x - a)$ is a factor, then $f(a) = 0$. However, if dividing by $(x - a)$ leaves a remainder $R$, then $f(a) = R$. Double-read the question carefully so you do not set the remainder equal to zero by habit!"
+        }
+    },
+    {
+        "id": "004328",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Factor Theorem",
+            "Factorisation",
+            "Cubic Polynomials"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Let $f(x) = x^3 - 2x^2 - 5x + 6$.<br><br>1. Show that $(x - 3)$ is a factor of the polynomial $f(x)$.<br>2. Hence, factorise the polynomial $f(x)$ completely.",
+        "steps": [
+            "According to the factor theorem, $(x - 3)$ is a factor of $f(x)$ if and only if $f(3) = 0$. Substitute $x = 3$ into the polynomial:<br>\\begin{aligned} f(3) &= (3)^3 - 2(3)^2 - 5(3) + 6 \\\\ &= 27 - 2(9) - 15 + 6 \\\\ &= 27 - 18 - 15 + 6 \\\\ &= 33 - 33 = 0 \\end{aligned}<br>Since $f(3) = 0$, the linear term $(x - 3)$ is verified to be a factor.",
+            "Since $(x - 3)$ is a factor, the cubic polynomial can be written as the product of $(x - 3)$ and a quadratic quotient $(ax^2 + bx + c)$:<br>\\begin{aligned} x^3 - 2x^2 - 5x + 6 &= (x - 3)\\left(ax^2 + bx + c\\right) \\\\ &= ax^3 + bx^2 + cx - 3ax^2 - 3bx - 3c \\\\ &= ax^3 + (b - 3a)x^2 + (c - 3b)x - 3c \\end{aligned}",
+            "Equate the coefficients on both sides of the identity to find the values of $a$, $b$, and $c$:<ul><li>For the $x^3$ term: $a = 1$</li><li>For the constant term: $-3c = 6 \\implies c = -2$</li><li>For the $x^2$ term: $b - 3a = -2 \\implies b - 3(1) = -2 \\implies b = 1$</li></ul>",
+            "Substitute these values to write the quadratic quotient:<br>\\begin{aligned} \\text{Quotient} &= x^2 + x - 2 \\end{aligned}<br>Verify by checking the $x$ term: $c - 3b = -2 - 3(1) = -5$, which matches the $-5x$ term perfectly.",
+            "Factorise this quadratic expression into two linear factors:<br>\\begin{aligned} x^2 + x - 2 &= (x + 2)(x - 1) \\end{aligned}",
+            "Combine all the linear factors to write the completely factorised form of the cubic polynomial:<br>\\begin{aligned} f(x) &= (x - 3)(x + 2)(x - 1) \\end{aligned}"
+        ],
+        "pi_options": [
+            {
+                "ans": "$$f(x) = (x - 3)(x - 2)(x + 1)$$",
+                "feedback": "Check your factorisation of the quadratic quotient $x^2 + x - 2$. The factors must multiply to $-2$ and add to $+1$. This gives $(x + 2)(x - 1) = 0$, not $(x - 2)(x + 1)$."
+            },
+            {
+                "ans": "$$f(x) = (x - 3)\\left(x^2 - x - 2\\right)$$",
+                "feedback": "Check your coefficient matching for the $x^2$ term. From $b - 3a = -2$ with $a = 1$, we get $b - 3 = -2 \\implies b = 1$. It seems you made a sign error, resulting in $b = -1$."
+            },
+            {
+                "ans": "$$f(x) = (x + 3)(x + 2)(x - 1)$$",
+                "feedback": "Check your verified factor. The question states that $(x - 3)$ is a factor since $f(3) = 0$. You cannot replace it with $(x + 3)$, which would correspond to $f(-3) = 0$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Spotting Quadratic Roots",
+            "content": "Using algebraic coefficient matching is an excellent alternative to long division. By setting $x^3 - 2x^2 - 5x + 6 = (x - 3)(ax^2 + bx + c)$, you can easily identify $a$ from the leading term and $c$ from the constant term. This leaves only a simple subtraction to find the middle coefficient $b$."
+        }
+    },
+    {
+        "id": "004329",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Factor Theorem",
+            "Cubic Equations",
+            "Solving Equations"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Use the factor theorem to find an integer root of the cubic equation:<br>$$2x^3 - 5x^2 - 4x + 3 = 0$$<br>Hence, solve the equation completely.",
+        "steps": [
+            "Use the factor theorem to find an integer root. Test small integer factors of the constant term $3$, starting with $x = 1$:<br>\\begin{aligned} f(1) &= 2(1)^3 - 5(1)^2 - 4(1) + 3 \\\\ &= 2 - 5 - 4 + 3 = -4 \\neq 0 \\end{aligned}",
+            "Next, test $x = -1$:<br>\\begin{aligned} f(-1) &= 2(-1)^3 - 5(-1)^2 - 4(-1) + 3 \\\\ &= -2 - 5 + 4 + 3 = 0 \\end{aligned}<br>Since $f(-1) = 0$, $x = -1$ is verified to be an integer root, and $(x + 1)$ is a factor of the polynomial.",
+            "Write the cubic expression as the product of $(x + 1)$ and a quadratic quotient $(ax^2 + bx + c)$:<br>\\begin{aligned} 2x^3 - 5x^2 - 4x + 3 &= (x + 1)\\left(ax^2 + bx + c\\right) \\\\ &= ax^3 + (b + a)x^2 + (c + b)x + c \\end{aligned}",
+            "Equate the coefficients on both sides of the identity to find the values of $a$, $b$, and $c$:<ul><li>For the $x^3$ term: $a = 2$</li><li>For the constant term: $c = 3$</li><li>For the $x^2$ term: $b + a = -5 \\implies b + 2 = -5 \\implies b = -7$</li></ul>",
+            "Substitute these values to write the quadratic quotient expression:<br>\\begin{aligned} \\text{Quotient} &= 2x^2 - 7x + 3 \\end{aligned}<br>Verify by checking the $x$ term: $b + c = -7 + 3 = -4$, which matches the $-4x$ term perfectly.",
+            "Set the quadratic quotient to $0$ and factorise to find the remaining roots of the equation:<br>\\begin{aligned} 2x^2 - 7x + 3 &= 0 \\\\ (2x - 1)(x - 3) &= 0 \\end{aligned}<br>This yields two remaining roots: $x = \\dfrac{1}{ 2 }$ and $x = 3$.<br>Combining these with $x = -1$, the complete set of roots is $x = -1, \\dfrac{1}{ 2 }, 3$."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$x = 1, \\quad \\dfrac{1}{ 2 }, \\quad 3$$",
+                "feedback": "Check your initial root. Testing $x = 1$ yields $f(1) = -4 \\neq 0$. The integer root is $x = -1$ because $f(-1) = 0$."
+            },
+            {
+                "ans": "$$x = -1, \\quad -\\dfrac{1}{ 2 }, \\quad -3$$",
+                "feedback": "Check your factorisation of the quadratic quotient $2x^2 - 7x + 3 = 0$. The factors are $(2x - 1)(x - 3) = 0$. Solving these for $x$ yields positive roots $x = \\dfrac{1}{ 2 }$ and $x = 3$."
+            },
+            {
+                "ans": "$$x = -1, \\quad \\dfrac{1}{ 2 }$$",
+                "feedback": "Check to ensure you have found all roots. A cubic equation can have up to three distinct real roots. It seems you forgot to list the root from the second linear factor $(x - 3) = 0 \\implies x = 3$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Root Hunting Strategy",
+            "content": "When hunting for an initial integer root of a polynomial, always search systematically among the integer factors of the constant term (here, the factors of $3$ are $\\pm 1, \\pm 3$). Starting with $1$ and $-1$ is the most efficient exam strategy."
+        }
+    },
+    {
+        "id": "004330",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Polynomials",
+        "subtopic": [
+            "Quadratics",
+            "Discriminants",
+            "Inequalities"
+        ],
+        "img": false,
+        "question": "In this question you must show detailed reasoning.<br><br>Find the range of values of the constant $k$ for which the quadratic equation:<br>$$3x^2 - 6x + k = 0$$<br>has no real roots.",
+        "steps": [
+            "Write down the coefficients of the quadratic equation $ax^2 + bx + c = 0$:<br>\\begin{aligned} a &= 3 \\\\ b &= -6 \\\\ c &= k \\end{aligned}",
+            "Write the algebraic formula for the discriminant $\\Delta$:<br>\\begin{aligned} \\Delta &= b^2 - 4ac \\end{aligned}",
+            "Substitute the coefficients into the discriminant formula:<br>\\begin{aligned} \\Delta &= (-6)^2 - 4(3)(k) \\\\ &= 36 - 12k \\end{aligned}",
+            "According to the properties of quadratic equations, the equation has no real roots when the discriminant is strictly negative ($\\Delta < 0$):<br>\\begin{aligned} 36 - 12k &< 0 \\end{aligned}",
+            "Solve the linear inequality for the range of the parameter $k$:<br>\\begin{aligned} -12k &< -36 \\end{aligned}<br>Divide both sides of the inequality by $-12$ and reverse the inequality sign:<br>\\begin{aligned} k &> 3 \\end{aligned}<br>Thus, the quadratic equation has no real roots when $k > 3$."
+        ],
+        "pi_options": [
+            {
+                "ans": "$$k < 3$$",
+                "feedback": "Check your inequality operations. When dividing or multiplying both sides of an inequality by a negative number (such as $-12$), you must always reverse the direction of the inequality sign."
+            },
+            {
+                "ans": "$$k \\ge 3$$",
+                "feedback": "Check your boundary condition. For an equation to have 'no real roots', the discriminant must be strictly less than zero ($\\Delta < 0$). The boundary condition $\\Delta \\le 0$ would include $\\Delta = 0$, which corresponds to real, repeated roots."
+            },
+            {
+                "ans": "$$k > 9$$",
+                "feedback": "Check your multiplication steps inside the discriminant. The term is $4ac = 4 \\times 3 \\times k = 12k$. It seems you may have squared the coefficient $a = 3$ or made an arithmetic slip."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Inequality Direction flips",
+            "content": "A very frequent slip in AS-level exam papers is forgetting to reverse the inequality sign when dividing by a negative number (such as dividing $-12k < -36$ by $-12$ to get $k > 3$). Always double-check this step to prevent losing easy marks."
+        }
     }
+
 
 
 
