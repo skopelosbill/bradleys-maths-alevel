@@ -1880,7 +1880,7 @@ window.ALEVEL_QUESTIONS = [
 "img": false,
 "question": "Find the range of values of $k$ for which the quadratic equation $kx^2 + 6x + (k - 8) = 0$ has no real roots.",
 "steps": [
-"<strong>Step 1: Identify the coefficients</strong><br>Identify the coefficients of the quadratic equation $kx^2 + 6x + (k - 8) = 0$:<br>\\begin{aligned}\na &= k \\cr\nb &= 6 \\cr\nc &= k - 8\n\\end{aligned}",
+"<strong>Step 1: Identify the coefficients</strong><br>Identify the coefficients of the quadratic equation $kx^2 + 6x + (k - 8) = 0$:<br>\\begin{aligned}\na &= k \\cr\\nb &= 6 \\cr\nc &= k - 8\n\\end{aligned}",
 "<strong>Step 2: Set up the discriminant condition</strong><br>For the equation to have no real roots, we require the discriminant to be strictly less than zero ($\\Delta < 0$):<br>\\begin{aligned}\nb^2 - 4ac &< 0 \\cr\n6^2 - 4(k)(k - 8) &< 0 \\cr\n36 - 4k^2 + 32k &< 0\n\\end{aligned}",
 "<strong>Step 3: Solve the quadratic inequality</strong><br>Divide the entire inequality by $-4$. Remember that dividing by a negative number reverses the direction of the inequality sign:<br>\\begin{aligned}\nk^2 - 8k - 9 &> 0\n\\end{aligned}<br>Factorise the quadratic expression:<br>\\begin{aligned}\n(k - 9)(k + 1) &> 0\n\\end{aligned}<br>The critical values are $k = -1$ and $k = 9$. Since the inequality is now greater than zero ($> 0$), the solution lies outside the critical values:<br>$$k < -1 \\quad \\text{or} \\quad k > 9$$"
 ],
