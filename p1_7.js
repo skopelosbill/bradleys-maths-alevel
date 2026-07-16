@@ -1790,201 +1790,196 @@ window.ALEVEL_QUESTIONS = [
 "content": "When two vectors are parallel, their components must be in the exact same ratio. If one vector has a positive component and the other has a negative component, the scale factor $k$ is negative, which means the vectors point in opposite directions (antiparallel), though they are still geometrically parallel."
 }
 },
-{
-"id": "04346",
-"board": "WJEC",
-"level": "AS",
-"major_area": "Algebra and Functions",
-"topic": "Equations and Inequalities",
-"subtopic": [
-"Discriminant",
-"Quadratic Equations",
-"No Real Roots"
-],
-"img": false,
-"question": "Find the range of values of $k$ for which the quadratic equation $x^2 + 2kx + 12k = 0$ has no real roots.",
-"steps": [
-"<strong>Step 1: Identify the coefficients of the quadratic equation</strong><br>The standard form of a quadratic equation is $ax^2 + bx + c = 0$. For the given equation $x^2 + 2kx + 12k = 0$, the coefficients are:<br>\\begin{aligned}\na &= 1 \\cr\nb &= 2k \\cr\nc &= 12k\n\\end{aligned}",
-"<strong>Step 2: Set up the discriminant condition</strong><br>For a quadratic equation to have no real roots, the discriminant $\\Delta = b^2 - 4ac$ must be strictly less than zero ($\\Delta < 0$):<br>\\begin{aligned}\nb^2 - 4ac &< 0 \\cr\n(2k)^2 - 4(1)(12k) &< 0 \\cr\n4k^2 - 48k &< 0\n\\end{aligned}",
-"<strong>Step 3: Solve the quadratic inequality</strong><br>First, divide the entire inequality by $4$ to simplify, and then factorise:<br>\\begin{aligned}\nk^2 - 12k &< 0 \\cr\nk(k - 12) &< 0\n\\end{aligned}<br>The critical values where the expression equals zero are $k = 0$ and $k = 12$. Since we are looking for the range where the product is less than zero (negative), the solution lies strictly between the critical values:<br>$$0 < k < 12$$"
-],
-"pi_options": [
-{
-"ans": "$k < 0$ or $k > 12$",
-"feedback": "You identified the correct critical values of $0$ and $12$, but you chose the region where the quadratic is positive. Since we require no real roots, we need $\\Delta < 0$, which corresponds to the region between the critical values."
-},
-{
-"ans": "$0 < k < 48$",
-"feedback": "Check your simplification in the factorisation step. It looks like you forgot to square the $2k$ term as $(2k)^2 = 4k^2$, or you made an arithmetic slip while dividing by the common factor."
-},
-{
-"ans": "$-12 < k < 0$",
-"feedback": "Be careful with signs. Setting the factor $k - 12 = 0$ yields a positive critical value $k = 12$, not $k = -12$."
-}
-],
-"bradley_insight": {
-"type": "caution",
-"title": "The Head Teacher's Eye: Quadratic Inequality Regions",
-"content": "For a quadratic inequality of the form $k(k - c) < 0$ where $c > 0$, the solution region always lies between the critical values: $0 < k < c$. If the inequality were $> 0$, the solution would lie outside the critical values ($k < 0$ or $k > c$)."
-}
-},
-{
-"id": "04347",
-"board": "WJEC",
-"level": "AS",
-"major_area": "Algebra and Functions",
-"topic": "Equations and Inequalities",
-"subtopic": [
-"Discriminant",
-"Quadratic Equations",
-"Distinct Roots"
-],
-"img": false,
-"question": "Find the range of values of $k$ for which the quadratic equation $x^2 + 2kx + (3k + 4) = 0$ has two distinct real roots.",
-"steps": [
-"<strong>Step 1: Identify the coefficients</strong><br>For the quadratic equation $x^2 + 2kx + (3k + 4) = 0$, the coefficients are:<br>\\begin{aligned}\na &= 1 \\cr\nb &= 2k \\cr\nc &= 3k + 4\n\\end{aligned}",
-"<strong>Step 2: Set up the discriminant condition</strong><br>For the quadratic equation to have two distinct real roots, the discriminant $\\Delta = b^2 - 4ac$ must be strictly greater than zero ($\\Delta > 0$):<br>\\begin{aligned}\nb^2 - 4ac &> 0 \\cr\n(2k)^2 - 4(1)(3k + 4) &> 0 \\cr\n4k^2 - 12k - 16 &> 0\n\\end{aligned}",
-"<strong>Step 3: Solve the quadratic inequality</strong><br>Divide the entire inequality by $4$ and factorise the quadratic expression:<br>\\begin{aligned}\nk^2 - 3k - 4 &> 0 \\cr\n(k - 4)(k + 1) &> 0\n\\end{aligned}<br>The critical values are $k = -1$ and $k = 4$. Since we require the product to be strictly positive ($> 0$), the solution lies outside the interval between the critical values:<br>$$k < -1 \\quad \\text{or} \\quad k > 4$$"
-],
-"pi_options": [
-{
-"ans": "$-1 < k < 4$",
-"feedback": "You found the correct critical values of $-1$ and $4$, but you chose the region between them. Since we require two distinct real roots, we need $\\Delta > 0$, which corresponds to the outside regions: $k < -1$ or $k > 4$."
-},
-{
-"ans": "$k < -4$ or $k > 1$",
-"feedback": "Check your factorisation of the quadratic $k^2 - 3k - 4$. Ensure the signs are correct: we need a product of $-4$ and a sum of $-3$, which gives $(k - 4)(k + 1) = 0$, leading to critical values $4$ and $-1$."
-},
-{
-"ans": "$k > 4$",
-"feedback": "You correctly identified the upper region, but do not forget the negative region. Multiplying two negative factors also yields a positive result, so $k < -1$ is also a valid part of the solution."
-}
-],
-"bradley_insight": {
-"type": "pro-tip",
-"title": "The Head Teacher's Eye: Distinct Roots vs Repeated Roots",
-"content": "For distinct real roots, always use a strict inequality $\\Delta > 0$. Only use $\\Delta \\ge 0$ if the question asks for 'real roots' without specifying that they must be distinct."
-}
-},
-{
-"id": "04348",
-"board": "WJEC",
-"level": "AS",
-"major_area": "Algebra and Functions",
-"topic": "Equations and Inequalities",
-"subtopic": [
-"Discriminant",
-"Quadratic Equations",
-"No Real Roots"
-],
-"img": false,
-"question": "Find the range of values of $k$ for which the quadratic equation $kx^2 + 6x + (k - 8) = 0$ has no real roots.",
-"steps": [
-"<strong>Step 1: Identify the coefficients</strong><br>Identify the coefficients of the quadratic equation $kx^2 + 6x + (k - 8) = 0$:<br>\\begin{aligned}\na &= k \\cr\\nb &= 6 \\cr\nc &= k - 8\n\\end{aligned}",
-"<strong>Step 2: Set up the discriminant condition</strong><br>For the equation to have no real roots, we require the discriminant to be strictly less than zero ($\\Delta < 0$):<br>\\begin{aligned}\nb^2 - 4ac &< 0 \\cr\n6^2 - 4(k)(k - 8) &< 0 \\cr\n36 - 4k^2 + 32k &< 0\n\\end{aligned}",
-"<strong>Step 3: Solve the quadratic inequality</strong><br>Divide the entire inequality by $-4$. Remember that dividing by a negative number reverses the direction of the inequality sign:<br>\\begin{aligned}\nk^2 - 8k - 9 &> 0\n\\end{aligned}<br>Factorise the quadratic expression:<br>\\begin{aligned}\n(k - 9)(k + 1) &> 0\n\\end{aligned}<br>The critical values are $k = -1$ and $k = 9$. Since the inequality is now greater than zero ($> 0$), the solution lies outside the critical values:<br>$$k < -1 \\quad \\text{or} \\quad k > 9$$"
-],
-"pi_options": [
-{
-"ans": "$-1 < k < 9$",
-"feedback": "Be careful when dividing an inequality by a negative number. When you divided $36 - 4k^2 + 32k < 0$ by $-4$, you must reverse the inequality sign to $> 0$. This makes the solution region outside the critical values, rather than between them."
-},
-{
-"ans": "$k < -9$ or $k > 1$",
-"feedback": "Check your factorisation of $k^2 - 8k - 9$. We need two numbers that multiply to $-9$ and add to $-8$. These are $-9$ and $+1$, giving $(k-9)(k+1) > 0$, which yields critical values $9$ and $-1$."
-},
-{
-"ans": "$k < -1$ or $k > 9$ (excluding $k=0$)",
-"feedback": "While $k=0$ is indeed the value for which the equation is no longer quadratic, the solved range $k < -1$ or $k > 9$ already completely excludes $0$. Thus, stating the exclusion is mathematically redundant."
-}
-],
-"bradley_insight": {
-"type": "caution",
-"title": "The Head Teacher's Eye: Inequality Sign Reversal",
-"content": "The most common source of lost marks in quadratic inequalities is forgetting to flip the inequality sign when multiplying or dividing by a negative number. Always double-check this step carefully."
-}
-},
-{
-"id": "04349",
-"board": "WJEC",
-"level": "AS",
-"major_area": "Algebra and Functions",
-"topic": "Equations and Inequalities",
-"subtopic": [
-"Discriminant",
-"Quadratic Equations",
-"Equal Roots"
-],
-"img": false,
-"question": "The quadratic equation $(k + 1)x^2 + 4kx + (2k + 3) = 0$ has equal roots. Find the possible values of $k$.",
-"steps": [
-"<strong>Step 1: Identify the coefficients</strong><br>For $(k + 1)x^2 + 4kx + (2k + 3) = 0$, the coefficients are:<br>\\begin{aligned}\na &= k + 1 \\cr\nb &= 4k \\cr\nc &= 2k + 3\n\\end{aligned}",
-"<strong>Step 2: Set up the equal roots condition</strong><br>For a quadratic equation to have equal (repeated) roots, its discriminant must be exactly equal to zero ($\\Delta = 0$):<br>\\begin{aligned}\nb^2 - 4ac &= 0 \\cr\n(4k)^2 - 4(k + 1)(2k + 3) &= 0 \\cr\n16k^2 - 4(2k^2 + 5k + 3) &= 0 \\cr\n16k^2 - 8k^2 - 20k - 12 &= 0 \\cr\n8k^2 - 20k - 12 &= 0\n\\end{aligned}",
-"<strong>Step 3: Solve for $k$</strong><br>Divide the entire equation by $4$ to simplify, and then factorise:<br>\\begin{aligned}\n2k^2 - 5k - 3 &= 0 \\cr\n(2k + 1)(k - 3) &= 0\n\\end{aligned}<br>Solving this equation gives the possible values of $k$:<br>$$k = -0.5 \\quad \\text{or} \\quad k = 3$$"
-],
-"pi_options": [
-{
-"ans": "$k = 0.5$ or $k = -3$",
-"feedback": "You factorised or solved the quadratic incorrectly at the end. Setting $2k + 1 = 0 \\implies k = -0.5$ and setting $k - 3 = 0 \\implies k = 3$. Make sure you solve each bracket correctly for the signs."
-},
-{
-"ans": "$k = -0.5$ or $k = 3$ (excluding $k=-1$)",
-"feedback": "While the original coefficient $a = k+1$ cannot be $0$ (which would make $k = -1$), neither of your solved values is $-1$, so explicitly adding this exclusion is redundant."
-},
-{
-"ans": "$k = -1$ or $k = 3$",
-"feedback": "Check your expansion and simplification. Ensure you expanded $4(k+1)(2k+3)$ correctly as $4(2k^2 + 5k + 3) = 8k^2 + 20k + 12$ before subtracting."
-}
-],
-"bradley_insight": {
-"type": "deeper",
-"title": "The Head Teacher's Eye: Checking the Quadratic Assumption",
-"content": "For any quadratic equation $ax^2 + bx + c = 0$ where the coefficient $a$ depends on $k$, always verify that your solved values of $k$ do not make $a = 0$. If a value of $k$ makes $a = 0$, the equation is no longer quadratic and that specific value of $k$ must be discarded."
-}
-},
-{
-"id": "04350",
-"board": "WJEC",
-"level": "AS",
-"major_area": "Algebra and Functions",
-"topic": "Equations and Inequalities",
-"subtopic": [
-"Discriminant",
-"Line-Curve Intersection",
-"No Real Roots"
-],
-"img": false,
-"question": "Find the range of values of $k$ for which the line $y = kx - 1$ does not intersect the curve $y = x^2 + 4x + 8$.",
-"steps": [
-"<strong>Step 1: Set up the intersection equation</strong><br>To find the points of intersection, set the linear and quadratic equations equal to each other:<br>\\begin{aligned}\nkx - 1 &= x^2 + 4x + 8\n\\end{aligned}<br>Rearrange all terms to one side to form a standard quadratic equation $ax^2 + bx + c = 0$:<br>\\begin{aligned}\nx^2 + (4 - k)x + 9 &= 0\n\\end{aligned}",
-"<strong>Step 2: Identify the coefficients and set up the discriminant</strong><br>For the quadratic equation $x^2 + (4 - k)x + 9 = 0$, the coefficients are:<br>\\begin{aligned}\na &= 1 \\cr\nb &= 4 - k \\cr\nc &= 9\n\\end{aligned}<br>Since the line and the curve do not intersect, the equation has no real solutions. Therefore, the discriminant must be strictly less than zero ($\\Delta < 0$):<br>\\begin{aligned}\nb^2 - 4ac &< 0 \\cr\n(4 - k)^2 - 4(1)(9) &< 0 \\cr\n(4 - k)^2 - 36 &< 0\n\\end{aligned}",
-"<strong>Step 3: Solve the quadratic inequality</strong><br>Solve the inequality $(4 - k)^2 < 36$ directly:<br>\\begin{aligned}\n-6 < 4 - k &< 6\n\\end{aligned}<br>Subtract $4$ from all parts of the inequality:<br>\\begin{aligned}\n-10 < -k &< 2\n\\end{aligned}<br>Multiply by $-1$ and reverse the inequality directions:<br>\\begin{aligned}\n-2 < k &< 10\n\\end{aligned}"
-],
-"pi_options": [
-{
-"ans": "$k < -2$ or $k > 10$",
-"feedback": "You found the correct boundary values of $-2$ and $10$, but you selected the outside regions. Since we want the discriminant to be strictly less than zero (no intersection), the solution must lie within the boundaries: $-2 < k < 10$."
-},
-{
-"ans": "$-10 < k < 2$",
-"feedback": "When solving $-10 < -k < 2$, remember that multiplying by $-1$ reverses the inequality directions and changes the signs of the terms, which results in $-2 < k < 10$."
-},
-{
-"ans": "$-2 < k < 6$",
-"feedback": "Check your discriminant constant. It looks like you computed $4ac = 4(1)(9) = 36$ correctly, but made a slip when taking the square root or adding/subtracting values."
-}
-],
-"bradley_insight": {
-"type": "pro-tip",
-"title": "The Head Teacher's Eye: Line-Curve Intersections",
-"content": "Questions about a line and curve intersecting are secretly discriminant questions in disguise. Always start by equating the two formulas, collect the terms into a single quadratic, and apply the appropriate discriminant condition based on whether they intersect twice (\\Delta > 0), touch once (\\Delta = 0), or do not meet (\\Delta < 0)."
-}
-}
-
-
-
-
-
+    {
+        "id": "04346",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Equations and Inequalities",
+        "subtopic": [
+            "Discriminant",
+            "Quadratic Equations",
+            "No Real Roots"
+        ],
+        "img": false,
+        "question": "Find the range of values of $k$ for which the quadratic equation $x^2 + 2kx + 12k = 0$ has no real roots.",
+        "steps": [
+            "<strong>Step 1: Identify the coefficients of the quadratic equation</strong><br>The standard form of a quadratic equation is $ax^2 + bx + c = 0$. For the given equation $x^2 + 2kx + 12k = 0$, the coefficients are:<br>\\begin{aligned}\na &= 1 \\cr\nb &= 2k \\cr\nc &= 12k\n\\end{aligned}",
+            "<strong>Step 2: Set up the discriminant condition</strong><br>For a quadratic equation to have no real roots, the discriminant $\\Delta = b^2 - 4ac$ must be strictly less than zero ($\\Delta < 0$):<br>\\begin{aligned}\nb^2 - 4ac &< 0 \\cr\n(2k)^2 - 4(1)(12k) &< 0 \\cr\n4k^2 - 48k &< 0\n\\end{aligned}",
+            "<strong>Step 3: Solve the quadratic inequality</strong><br>First, divide the entire inequality by $4$ to simplify, and then factorise:<br>\\begin{aligned}\nk^2 - 12k &< 0 \\cr\nk(k - 12) &< 0\n\\end{aligned}<br>The critical values where the expression equals zero are $k = 0$ and $k = 12$. Since we are looking for the range where the product is less than zero (negative), the solution lies strictly between the critical values:<br>$$0 < k < 12$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$k < 0$ or $k > 12$",
+                "feedback": "You identified the correct critical values of $0$ and $12$, but you chose the region where the quadratic is positive. Since we require no real roots, we need $\\Delta < 0$, which corresponds to the region between the critical values."
+            },
+            {
+                "ans": "$0 < k < 48$",
+                "feedback": "Check your simplification in the factorisation step. It looks like you forgot to square the $2k$ term as $(2k)^2 = 4k^2$, or you made an arithmetic slip while dividing by the common factor."
+            },
+            {
+                "ans": "$-12 < k < 0$",
+                "feedback": "Be careful with signs. Setting the factor $k - 12 = 0$ yields a positive critical value $k = 12$, not $k = -12$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Quadratic Inequality Regions",
+            "content": "For a quadratic inequality of the form $k(k - c) < 0$ where $c > 0$, the solution region always lies between the critical values: $0 < k < c$. If the inequality were $> 0$, the solution would lie outside the critical values ($k < 0$ or $k > c$)."
+        }
+    },
+    {
+        "id": "04347",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Equations and Inequalities",
+        "subtopic": [
+            "Discriminant",
+            "Quadratic Equations",
+            "Distinct Roots"
+        ],
+        "img": false,
+        "question": "Find the range of values of $k$ for which the quadratic equation $x^2 + 2kx + (3k + 4) = 0$ has two distinct real roots.",
+        "steps": [
+            "<strong>Step 1: Identify the coefficients</strong><br>For the quadratic equation $x^2 + 2kx + (3k + 4) = 0$, the coefficients are:<br>\\begin{aligned}\na &= 1 \\cr\nb &= 2k \\cr\nc &= 3k + 4\n\\end{aligned}",
+            "<strong>Step 2: Set up the discriminant condition</strong><br>For the quadratic equation to have two distinct real roots, the discriminant $\\Delta = b^2 - 4ac$ must be strictly greater than zero ($\\Delta > 0$):<br>\\begin{aligned}\nb^2 - 4ac &> 0 \\cr\n(2k)^2 - 4(1)(3k + 4) &> 0 \\cr\n4k^2 - 12k - 16 &> 0\n\\end{aligned}",
+            "<strong>Step 3: Solve the quadratic inequality</strong><br>Divide the entire inequality by $4$ and factorise the quadratic expression:<br>\\begin{aligned}\nk^2 - 3k - 4 &> 0 \\cr\n(k - 4)(k + 1) &> 0\n\\end{aligned}<br>The critical values are $k = -1$ and $k = 4$. Since we require the product to be strictly positive ($> 0$), the solution lies outside the interval between the critical values:<br>$$k < -1 \\quad \\text{or} \\quad k > 4$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$-1 < k < 4$",
+                "feedback": "You found the correct critical values of $-1$ and $4$, but you chose the region between them. Since we require two distinct real roots, we need $\\Delta > 0$, which corresponds to the outside regions: $k < -1$ or $k > 4$."
+            },
+            {
+                "ans": "$k < -4$ or $k > 1$",
+                "feedback": "Check your factorisation of the quadratic $k^2 - 3k - 4$. Ensure the signs are correct: we need a product of $-4$ and a sum of $-3$, which gives $(k - 4)(k + 1) = 0$, leading to critical values $4$ and $-1$."
+            },
+            {
+                "ans": "$k > 4$",
+                "feedback": "You correctly identified the upper region, but do not forget the negative region. Multiplying two negative factors also yields a positive result, so $k < -1$ is also a valid part of the solution."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Distinct Roots vs Repeated Roots",
+            "content": "For distinct real roots, always use a strict inequality $\\Delta > 0$. Only use $\\Delta \\ge 0$ if the question asks for 'real roots' without specifying that they must be distinct."
+        }
+    },
+    {
+        "id": "04348",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Equations and Inequalities",
+        "subtopic": [
+            "Discriminant",
+            "Quadratic Equations",
+            "No Real Roots"
+        ],
+        "img": false,
+        "question": "Find the range of values of $k$ for which the quadratic equation $kx^2 + 6x + (k - 8) = 0$ has no real roots.",
+        "steps": [
+            "<strong>Step 1: Identify the coefficients</strong><br>Identify the coefficients of the quadratic equation $kx^2 + 6x + (k - 8) = 0$:<br>\\begin{aligned}\na &= k \\cr\nb &= 6 \\cr\nc &= k - 8\n\\end{aligned}",
+            "<strong>Step 2: Set up the discriminant condition</strong><br>For the equation to have no real roots, we require the discriminant to be strictly less than zero ($\\Delta < 0$):<br>\\begin{aligned}\nb^2 - 4ac &< 0 \\cr\n6^2 - 4(k)(k - 8) &< 0 \\cr\n36 - 4k^2 + 32k &< 0\n\\end{aligned}",
+            "<strong>Step 3: Solve the quadratic inequality</strong><br>Divide the entire inequality by $-4$. Remember that dividing by a negative number reverses the direction of the inequality sign:<br>\\begin{aligned}\nk^2 - 8k - 9 &> 0\n\\end{aligned}<br>Factorise the quadratic expression:<br>\\begin{aligned}\n(k - 9)(k + 1) &> 0\n\\end{aligned}<br>The critical values are $k = -1$ and $k = 9$. Since the inequality is now greater than zero ($> 0$), the solution lies outside the critical values:<br>$$k < -1 \\quad \\text{or} \\quad k > 9$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$-1 < k < 9$",
+                "feedback": "Be careful when dividing an inequality by a negative number. When you divided $36 - 4k^2 + 32k < 0$ by $-4$, you must reverse the inequality sign to $> 0$. This makes the solution region outside the critical values, rather than between them."
+            },
+            {
+                "ans": "$k < -9$ or $k > 1$",
+                "feedback": "Check your factorisation of $k^2 - 8k - 9$. We need two numbers that multiply to $-9$ and add to $-8$. These are $-9$ and $+1$, giving $(k-9)(k+1) > 0$, which yields critical values $9$ and $-1$."
+            },
+            {
+                "ans": "$k < -1$ or $k > 9$ (excluding $k=0$)",
+                "feedback": "While $k=0$ is indeed the value for which the equation is no longer quadratic, the solved range $k < -1$ or $k > 9$ already completely excludes $0$. Thus, stating the exclusion is mathematically redundant."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Inequality Sign Reversal",
+            "content": "The most common source of lost marks in quadratic inequalities is forgetting to flip the inequality sign when multiplying or dividing by a negative number. Always double-check this step carefully."
+        }
+    },
+    {
+        "id": "04349",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Equations and Inequalities",
+        "subtopic": [
+            "Discriminant",
+            "Quadratic Equations",
+            "Equal Roots"
+        ],
+        "img": false,
+        "question": "The quadratic equation $(k + 1)x^2 + 4kx + (2k + 3) = 0$ has equal roots. Find the possible values of $k$.",
+        "steps": [
+            "<strong>Step 1: Identify the coefficients</strong><br>For $(k + 1)x^2 + 4kx + (2k + 3) = 0$, the coefficients are:<br>\\begin{aligned}\na &= k + 1 \\cr\nb &= 4k \\cr\nc &= 2k + 3\n\\end{aligned}",
+            "<strong>Step 2: Set up the equal roots condition</strong><br>For a quadratic equation to have equal (repeated) roots, its discriminant must be exactly equal to zero ($\\Delta = 0$):<br>\\begin{aligned}\nb^2 - 4ac &= 0 \\cr\n(4k)^2 - 4(k + 1)(2k + 3) &= 0 \\cr\n16k^2 - 4(2k^2 + 5k + 3) &= 0 \\cr\n16k^2 - 8k^2 - 20k - 12 &= 0 \\cr\n8k^2 - 20k - 12 &= 0\n\\end{aligned}",
+            "<strong>Step 3: Solve for $k$</strong><br>Divide the entire equation by $4$ to simplify, and then factorise:<br>\\begin{aligned}\n2k^2 - 5k - 3 &= 0 \\cr\n(2k + 1)(k - 3) &= 0\n\\end{aligned}<br>Solving this equation gives the possible values of $k$:<br>$$k = -0.5 \\quad \\text{or} \\quad k = 3$$"
+        ],
+        "pi_options": [
+            {
+                "ans": "$k = 0.5$ or $k = -3$",
+                "feedback": "You factorised or solved the quadratic incorrectly at the end. Setting $2k + 1 = 0 \\implies k = -0.5$ and setting $k - 3 = 0 \\implies k = 3$. Make sure you solve each bracket correctly for the signs."
+            },
+            {
+                "ans": "$k = -0.5$ or $k = 3$ (excluding $k=-1$)",
+                "feedback": "While the original coefficient $a = k+1$ cannot be $0$ (which would make $k = -1$), neither of your solved values is $-1$, so explicitly adding this exclusion is redundant."
+            },
+            {
+                "ans": "$k = -1$ or $k = 3$",
+                "feedback": "Check your expansion and simplification. Ensure you expanded $4(k+1)(2k+3)$ correctly as $4(2k^2 + 5k + 3) = 8k^2 + 20k + 12$ before subtracting."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Checking the Quadratic Assumption",
+            "content": "For any quadratic equation $ax^2 + bx + c = 0$ where the coefficient $a$ depends on $k$, always verify that your solved values of $k$ do not make $a = 0$. If a value of $k$ makes $a = 0$, the equation is no longer quadratic and that specific value of $k$ must be discarded."
+        }
+    },
+    {
+        "id": "04350",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Equations and Inequalities",
+        "subtopic": [
+            "Discriminant",
+            "Line-Curve Intersection",
+            "No Real Roots"
+        ],
+        "img": false,
+        "question": "Find the range of values of $k$ for which the line $y = kx - 1$ does not intersect the curve $y = x^2 + 4x + 8$.",
+        "steps": [
+            "<strong>Step 1: Set up the intersection equation</strong><br>To find the points of intersection, set the linear and quadratic equations equal to each other:<br>\\begin{aligned}\nkx - 1 &= x^2 + 4x + 8\n\\end{aligned}<br>Rearrange all terms to one side to form a standard quadratic equation $ax^2 + bx + c = 0$:<br>\\begin{aligned}\nx^2 + (4 - k)x + 9 &= 0\n\\end{aligned}",
+            "<strong>Step 2: Identify the coefficients and set up the discriminant</strong><br>For the quadratic equation $x^2 + (4 - k)x + 9 = 0$, the coefficients are:<br>\\begin{aligned}\na &= 1 \\cr\nb &= 4 - k \\cr\nc &= 9\n\\end{aligned}<br>Since the line and the curve do not intersect, the equation has no real solutions. Therefore, the discriminant must be strictly less than zero ($\\Delta < 0$):<br>\\begin{aligned}\nb^2 - 4ac &< 0 \\cr\n(4 - k)^2 - 4(1)(9) &< 0 \\cr\n(4 - k)^2 - 36 &< 0\n\\end{aligned}",
+            "<strong>Step 3: Solve the quadratic inequality</strong><br>Solve the inequality $(4 - k)^2 < 36$ directly:<br>\\begin{aligned}\n-6 < 4 - k &< 6\n\\end{aligned}<br>Subtract $4$ from all parts of the inequality:<br>\\begin{aligned}\n-10 < -k &< 2\n\\end{aligned}<br>Multiply by $-1$ and reverse the inequality directions:<br>\\begin{aligned}\n-2 < k &< 10\n\\end{aligned}"
+        ],
+        "pi_options": [
+            {
+                "ans": "$k < -2$ or $k > 10$",
+                "feedback": "You found the correct boundary values of $-2$ and $10$, but you selected the outside regions. Since we want the discriminant to be strictly less than zero (no intersection), the solution must lie within the boundaries: $-2 < k < 10$."
+            },
+            {
+                "ans": "$-10 < k < 2$",
+                "feedback": "When solving $-10 < -k < 2$, remember that multiplying by $-1$ reverses the inequality directions and changes the signs of the terms, which results in $-2 < k < 10$."
+            },
+            {
+                "ans": "$-2 < k < 6$",
+                "feedback": "Check your discriminant constant. It looks like you computed $4ac = 4(1)(9) = 36$ correctly, but made a slip when taking the square root or adding/subtracting values."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Line-Curve Intersections",
+            "content": "Questions about a line and curve intersecting are secretly discriminant questions in disguise. Always start by equating the two formulas, collect the terms into a single quadratic, and apply the appropriate discriminant condition based on whether they intersect twice ($( \\Delta > 0 )$), touch once ($( \\Delta = 0 )$), or do not meet ($( \\Delta < 0 )$)."
+        }
+    }
 
 
 
