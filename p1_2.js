@@ -228,19 +228,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 2$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(2) \\approx 3.14159 + 1.10715 \\approx 4.24874\\text{ seconds}$$",
             "Substituting this value into the model to find the maximum height:<br>$$H(4.24874) = \\left|15\\text{e}^{-0.5(4.24874)}\\sin(4.24874)\\right| \\approx \\left|15(0.119508)(-0.894427)\\right| \\approx 1.6033\\text{ m}$$<br>Therefore, the maximum height is <strong>$1.60\\text{ m}$</strong> (to 3 significant figures).",
             "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
-            "Final Answer: <strong>(a)</strong> $$\\tan x = 2\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$1.60\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\\\ \\pi\\\\ \\text{seconds}$$"
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 2\\\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched\\\\ above\\\\ the\\\\ t-axis$$ <strong>(c)</strong> $$1.60\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ are\\\\ forced\\\\ at\\\\ constant\\\\ intervals\\\\ of\\\\\\ \\pi\\\\\\ \\text{seconds}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = 2$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$1.59\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = 2$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$1.59\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ occur\\\\ at\\\\ constant\\\\ intervals$$",
                 "feedback": "You probably made an arithmetic rounding error in Part (c) by evaluating the expression using rounded intermediate values. Retaining full calculator precision yields $H(4.24874) = 1.6033\\text{ m}$, which rounds to $1.60\\text{ m}$ to 3 significant figures."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = 0.5$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$1.60\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = 0.5$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$1.60\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ occur\\\\ at\\\\ constant\\\\ intervals$$",
                 "feedback": "Check your division in Part (a). When dividing $2\\cos x = \\sin x$ by $\\cos x$ on both sides, you obtain $2 = \\frac{\\sin x}{\\cos x}$, which simplifies to $\\tan x = 2$, not $\\tan x = 0.5$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = 2$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$0.802\\text{ m}$$ <strong>(d)</strong> $$The\\ model\\ is\\ completely\\ accurate$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = 2$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$0.802\\text{ m}$$ <strong>(d)</strong> $$The\\\\ model\\\\ is\\\\ completely\\\\ accurate$$",
                 "feedback": "Check your quadrant value in Part (c). The interval between the first and second bounce is $\\pi < t < 2\\pi$, which is the third quadrant. It appears you calculated the turning point in the first quadrant ($t = \\tan^{-1}(2) \\approx 1.11\\text{ s}$), which represents the peak of the first lobe before the first bounce."
             }
         ],
@@ -269,19 +269,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 5$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(5) \\approx 3.14159 + 1.37340 \\approx 4.51499\\text{ seconds}$$",
             "Substituting this value into the model to find the maximum height:<br>$$H(4.51499) = \\left|8\\text{e}^{-0.2(4.51499)}\\sin(4.51499)\\right| \\approx \\left|8(0.40535)(-0.980581)\\right| \\approx 3.180\\text{ m}$$<br>Therefore, the maximum height is <strong>$3.18\\text{ m}$</strong> (to 3 significant figures).",
             "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
-            "Final Answer: <strong>(a)</strong> $$\\tan x = 5\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$3.18\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\\\ \\pi\\\\ \\text{seconds}$$"
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 5\\\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched\\\\ above\\\\ the\\\\ t-axis$$ <strong>(c)</strong> $$3.18\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ are\\\\ forced\\\\ at\\\\ constant\\\\ intervals\\\\ of\\\\\\ \\pi\\\\\\ \\text{seconds}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = 5$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$3.18\\text{ m}$$ <strong>(d)</strong> $$The\\ model\\ is\\ highly\\ physically\\ accurate$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = 5$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$3.18\\text{ m}$$ <strong>(d)</strong> $$The\\\\ model\\\\ is\\\\ highly\\\\ physically\\\\ accurate$$",
                 "feedback": "Check your reasoning for Part (d). The model is strictly periodic and forces bounces at fixed multiples of $\\pi$ seconds, ignoring the natural physical decay in the bounce period. Therefore, it is physically inaccurate for predicting bounce times."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = 0.2$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$3.18\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = 0.2$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$3.18\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ occur\\\\ at\\\\ constant\\\\ intervals$$",
                 "feedback": "Check your division in Part (a). When dividing $5\\cos x = \\sin x$ by $\\cos x$ on both sides, you obtain $5 = \\frac{\\sin x}{\\cos x}$, which simplifies to $\\tan x = 5$, not $\\tan x = 0.2$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = 5$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$1.59\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = 5$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$1.59\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ occur\\\\ at\\\\ constant\\\\ intervals$$",
                 "feedback": "Check your quadrant value in Part (c). The interval between the first and second bounce is $\\pi < t < 2\\pi$, which is the third quadrant. It appears you calculated the turning point in the first quadrant ($t = \\tan^{-1}(5) \\approx 1.37\\text{ s}$), which represents the peak of the first lobe before the first bounce."
             }
         ],
@@ -310,19 +310,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 3$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(3) \\approx 3.14159 + 1.24905 \\approx 4.39064\\text{ seconds}$$",
             "Substituting this value into the model to find the maximum height:<br>$$H(4.39064) = \\left|12\\text{e}^{-\\frac{1}{3}(4.39064)}\\sin(4.39064)\\right| \\approx \\left|12(0.231415)(-0.948683)\\right| \\approx 2.634\\text{ m}$$<br>Therefore, the maximum height is <strong>$2.63\\text{ m}$</strong> (to 3 significant figures).",
             "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
-            "Final Answer: <strong>(a)</strong> $$\\tan x = 3\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$2.63\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\\\ \\pi\\\\ \\text{seconds}$$"
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 3\\\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched\\\\ above\\\\ the\\\\ t-axis$$ <strong>(c)</strong> $$2.63\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ are\\\\ forced\\\\ at\\\\ constant\\\\ intervals\\\\ of\\\\\\ \\pi\\\\\\ \\text{seconds}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = 3$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$2.63\\text{ m}$$ <strong>(d)</strong> $$Air\\ resistance\\ makes\\ the\\ model\\ highly\\ accurate$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = 3$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$2.63\\text{ m}$$ <strong>(d)</strong> $$Air\\\\ resistance\\\\ makes\\\\ the\\\\ model\\\\ highly\\\\ accurate$$",
                 "feedback": "Check your reasoning for Part (d). Air resistance would actually cause the ball to lose energy and bounce more frequently, meaning the intervals would decrease. The model's rigid periodicity is its main limitation."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = \\dfrac{1}{3}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$2.63\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = \\dfrac{1}{3}$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$2.63\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ occur\\\\ at\\\\ constant\\\\ intervals$$",
                 "feedback": "Check your division in Part (a). When dividing $3\\cos x = \\sin x$ by $\\cos x$ on both sides, you obtain $3 = \\frac{\\sin x}{\\cos x}$, which simplifies to $\\tan x = 3$, not $\\tan x = \\frac{1}{3}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = 3$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$1.14\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = 3$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$1.14\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ occur\\\\ at\\\\ constant\\\\ intervals$$",
                 "feedback": "Check your quadrant value in Part (c). The interval between the first and second bounce is $\\pi < t < 2\\pi$, which is the third quadrant. It appears you calculated the turning point in the first quadrant ($t = \\tan^{-1}(3) \\approx 1.25\\text{ s}$), which represents the peak of the first lobe before the first bounce."
             }
         ],
@@ -351,19 +351,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 8$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(8) \\approx 3.14159 + 1.44644 \\approx 4.58803\\text{ seconds}$$",
             "Substituting this value into the model to find the maximum height:<br>$$H(4.58803) = \\left|6\\text{e}^{-0.125(4.58803)}\\sin(4.58803)\\right| \\approx \\left|6(0.563546)(-0.992278)\\right| \\approx 3.3551\\text{ m}$$<br>Therefore, the maximum height is <strong>$3.36\\text{ m}$</strong> (to 3 significant figures).",
             "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
-            "Final Answer: <strong>(a)</strong> $$\\tan x = 8\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$3.36\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\\\ \\pi\\\\ \\text{seconds}$$"
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 8\\\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched\\\\ above\\\\ the\\\\ t-axis$$ <strong>(c)</strong> $$3.36\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ are\\\\ forced\\\\ at\\\\ constant\\\\ intervals\\\\ of\\\\\\ \\pi\\\\\\ \\text{seconds}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = 8$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$3.36\\text{ m}$$ <strong>(d)</strong> $$The\\ bounce\\ intervals\\ will\\ get\\ progressively\\ shorter$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = 8$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$3.36\\text{ m}$$ <strong>(d)</strong> $$The\\\\ bounce\\\\ intervals\\\\ will\\\\ get\\\\ progressively\\\\ shorter$$",
                 "feedback": "Check your reasoning for Part (d). While real-world bounce intervals do get shorter, this mathematical model uses a strictly periodic $\\sin t$ term, which forces the bounce intervals to remain completely constant."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = 0.125$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$3.36\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = 0.125$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$3.36\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ occur\\\\ at\\\\ constant\\\\ intervals$$",
                 "feedback": "Check your division in Part (a). When dividing $8\\cos x = \\sin x$ by $\\cos x$ on both sides, you obtain $8 = \\frac{\\sin x}{\\cos x}$, which simplifies to $\\tan x = 8$, not $\\tan x = 0.125$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = 8$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$1.98\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ occur\\ at\\ constant\\ intervals$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = 8$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$1.98\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ occur\\\\ at\\\\ constant\\\\ intervals$$",
                 "feedback": "Check your quadrant value in Part (c). The interval between the first and second bounce is $\\pi < t < 2\\pi$, which is the third quadrant. It appears you calculated the turning point in the first quadrant ($t = \\tan^{-1}(8) \\approx 1.45\\text{ s}$), which represents the peak of the first lobe before the first bounce."
             }
         ],
@@ -392,19 +392,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 6$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(6) \\approx 3.14159 + 1.40565 \\approx 4.54724\\text{ seconds}$$",
             "Substituting this value into the model to find the maximum height:<br>$$H(4.54724) = \\left|20\\text{e}^{-\\frac{1}{6}(4.54724)}\\sin(4.54724)\\right| \\approx \\left|20(0.468656)(-0.986394)\\right| \\approx 9.2464\\text{ m}$$<br>Therefore, the maximum height is <strong>$9.25\\text{ m}$</strong> (to 3 significant figures).",
             "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
-            "Final Answer: <strong>(a)</strong> $$\\tan x = 6\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$9.25\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\\\ \\pi\\\\ \\text{seconds}$$"
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 6\\\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched\\\\ above\\\\ the\\\\ t-axis$$ <strong>(c)</strong> $$9.25\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ are\\\\ forced\\\\ at\\\\ constant\\\\ intervals\\\\ of\\\\\\ \\pi\\\\\\ \\text{seconds}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = 6$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$9.26\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = 6$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$9.26\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ are\\\\ forced\\\\ at\\\\ constant\\\\ intervals$$",
                 "feedback": "You probably made an arithmetic rounding error in Part (c) by evaluating the expression using rounded intermediate values. Retaining full calculator precision yields $H(4.54724) = 9.2464\\text{ m}$, which rounds to $9.25\\text{ m}$ to 3 significant figures."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = \\dfrac{1}{6}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$9.25\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = \\dfrac{1}{6}$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$9.25\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ are\\\\ forced\\\\ at\\\\ constant\\\\ intervals$$",
                 "feedback": "Check your division in Part (a). When dividing $6\\cos x = \\sin x$ by $\\cos x$ on both sides, you obtain $6 = \\frac{\\sin x}{\\cos x}$, which simplifies to $\\tan x = 6$, not $\\tan x = \\frac{1}{6}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\tan x = 6$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched$$ <strong>(c)</strong> $$1.54\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals$$",
+                "ans": "<strong>(a)</strong> $$\\tan x = 6$$ <strong>(b)</strong> $$Bouncing\\\\ curves\\\\ sketched$$ <strong>(c)</strong> $$1.54\\text{ m}$$ <strong>(d)</strong> $$Bounces\\\\ are\\\\ forced\\\\ at\\\\ constant\\\\ intervals$$",
                 "feedback": "Check your quadrant value in Part (c). The interval between the first and second bounce is $\\pi < t < 2\\pi$, which is the third quadrant. It appears you calculated the turning point in the first quadrant ($t = \\tan^{-1}(6) \\approx 1.41\\text{ s}$), which represents the peak of the first lobe before the first bounce."
             }
         ],
@@ -425,7 +425,7 @@ window.ALEVEL_QUESTIONS = [
             "Partial Fractions"
         ],
         "img": "images/p1/004061.png",
-        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 2x}{(2x - q)(x + 2)} \\quad x \\in \\mathbb{R}, \\ x \\ne -2, \\ x \\ne 3$$<br>where $p$ and $q$ are constants, passes through the point $(4, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 3$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 14$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 4$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3 + c\\ln 7$, where $a$, $b$, and $c$ are rational constants to be found.",
+        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 2x}{(2x - q)(x + 2)} \\quad x \\in \\mathbb{R}, \\\\ x \\ne -2, \\\\ x \\ne 3$$<br>where $p$ and $q$ are constants, passes through the point $(4, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 3$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 14$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 4$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3 + c\\ln 7$, where $a$, $b$, and $c$ are rational constants to be found.",
         "steps": [
             "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>$$(2x - q)(x + 2) = 0 \\implies x = \\frac{q}{2} \\quad \\text{and} \\quad x = -2$$",
             "Since we are given that the vertical asymptotes have equations $x = 3$ and $x = -2$, we can equate the root terms:<br>$$\\frac{q}{2} = 3 \\implies q = 6$$",
@@ -472,7 +472,7 @@ window.ALEVEL_QUESTIONS = [
             "Partial Fractions"
         ],
         "img": "images/p1/004062.png",
-        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 3x}{(3x - q)(x + 2)} \\quad x \\in \\mathbb{R}, \\ x \\ne -2, \\ x \\ne 1$$<br>where $p$ and $q$ are constants, passes through the point $(2, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 1$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 3$.<br><strong>(a)(ii)</strong> Show that $p = 12$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 2$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3$, where $a$ and $b$ are rational constants to be found.",
+        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 3x}{(3x - q)(x + 2)} \\quad x \\in \\mathbb{R}, \\\\ x \\ne -2, \\\\ x \\ne 1$$<br>where $p$ and $q$ are constants, passes through the point $(2, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 1$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 3$.<br><strong>(a)(ii)</strong> Show that $p = 12$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 2$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3$, where $a$ and $b$ are rational constants to be found.",
         "steps": [
             "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>$$(3x - q)(x + 2) = 0 \\implies x = \\frac{q}{3} \\quad \\text{and} \\quad x = -2$$",
             "Since we are given that the vertical asymptotes have equations $x = 1$ and $x = -2$, we can equate the root terms:<br>$$\\frac{q}{3} = 1 \\implies q = 3$$",
@@ -519,7 +519,7 @@ window.ALEVEL_QUESTIONS = [
             "Partial Fractions"
         ],
         "img": "images/p1/004063.png",
-        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 4x}{(2x - q)(x + 1)} \\quad x \\in \\mathbb{R}, \\ x \\ne -1, \\ x \\ne 2$$<br>where $p$ and $q$ are constants, passes through the point $(3, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 2$ and $x = -1$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 4$.<br><strong>(a)(ii)</strong> Show that $p = 16$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 3$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 5$, where $a$ and $b$ are rational constants to be found.",
+        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 4x}{(2x - q)(x + 1)} \\quad x \\in \\mathbb{R}, \\\\ x \\ne -1, \\\\ x \\ne 2$$<br>where $p$ and $q$ are constants, passes through the point $(3, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 2$ and $x = -1$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 4$.<br><strong>(a)(ii)</strong> Show that $p = 16$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 3$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 5$, where $a$ and $b$ are rational constants to be found.",
         "steps": [
             "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>$$(2x - q)(x + 1) = 0 \\implies x = \\frac{q}{2} \\quad \\text{and} \\quad x = -1$$",
             "Since we are given that the vertical asymptotes have equations $x = 2$ and $x = -1$, we can equate the root terms:<br>$$\\frac{q}{2} = 2 \\implies q = 4$$",
@@ -566,7 +566,7 @@ window.ALEVEL_QUESTIONS = [
             "Partial Fractions"
         ],
         "img": "images/p1/004064.png",
-        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 2x}{(3x - q)(x + 1)} \\quad x \\in \\mathbb{R}, \\ x \\ne -1, \\ x \\ne 2$$<br>where $p$ and $q$ are constants, passes through the point $(3, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 2$ and $x = -1$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 12$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 3$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 7$, where $a$ and $b$ are rational constants to be found.",
+        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 2x}{(3x - q)(x + 1)} \\quad x \\in \\mathbb{R}, \\\\ x \\ne -1, \\\\ x \\ne 2$$<br>where $p$ and $q$ are constants, passes through the point $(3, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 2$ and $x = -1$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 12$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 3$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 7$, where $a$ and $b$ are rational constants to be found.",
         "steps": [
             "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>$$(3x - q)(x + 1) = 0 \\implies x = \\frac{q}{3} \\quad \\text{and} \\quad x = -1$$",
             "Since we are given that the vertical asymptotes have equations $x = 2$ and $x = -1$, we can equate the root terms:<br>$$\\frac{q}{3} = 2 \\implies q = 6$$",
@@ -613,7 +613,7 @@ window.ALEVEL_QUESTIONS = [
             "Partial Fractions"
         ],
         "img": "images/p1/004065.png",
-        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 3x}{(2x - q)(x + 2)} \\quad x \\in \\mathbb{R}, \\ x \\ne -2, \\ x \\ne 3$$<br>where $p$ and $q$ are constants, passes through the point $(4, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 3$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 18$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 4$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3$, where $a$ and $b$ are rational constants to be found.",
+        "question": "The curve $C$ with equation:<br>$$y = \\dfrac{p - 3x}{(2x - q)(x + 2)} \\quad x \\in \\mathbb{R}, \\\\ x \\ne -2, \\\\ x \\ne 3$$<br>where $p$ and $q$ are constants, passes through the point $(4, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 3$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 18$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 4$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3$, where $a$ and $b$ are rational constants to be found.",
         "steps": [
             "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>$$(2x - q)(x + 2) = 0 \\implies x = \\frac{q}{2} \\quad \\text{and} \\quad x = -2$$",
             "Since we are given that the vertical asymptotes have equations $x = 3$ and $x = -2$, we can equate the root terms:<br>$$\\frac{q}{2} = 3 \\implies q = 6$$",
@@ -671,19 +671,19 @@ window.ALEVEL_QUESTIONS = [
             "Using the fundamental identity $\\sin^2 2y + \\cos^2 2y = 1$, we can express $\\cos 2y$ in terms of sine:<br>$$\\cos 2y = \\sqrt{1 - \\sin^2 2y}$$<br>*(Note: Since $-\\frac{\\pi}{4} < y < \\frac{\\pi}{4}$, the angle lies in the interval $-\\frac{\\pi}{2} < 2y < \\frac{\\pi}{2}$, where cosine is strictly positive, so the positive root is correct).* ",
             "From the original curve equation, we have $\\sin 2y = \\frac{x}{3}$. Substituting this into our expression for $\\cos 2y$ gives:<br>$$\\cos 2y = \\sqrt{1 - \\left(\\frac{x}{3}\\right)^2} = \\sqrt{1 - \\frac{x^2}{9}} = \\sqrt{\\dfrac{9 - x^2}{9}} = \\dfrac{\\sqrt{9 - x^2}}{3}$$",
             "Now, we substitute this back into our derivative expression:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{6 \\left( \\frac{\\sqrt{9 - x^2}}{3} \\right)} = \\dfrac{1}{2\\sqrt{9 - x^2}}$$<br>Comparing this with the target form gives the constants as $a = 2$ and $b = 9$.",
-            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{6}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{6}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 2,\\ b = 9$$"
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{6}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{6}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 2,\\\\ b = 9$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{6}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{6}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 6,\\ b = 9$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{6}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{6}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 6,\\\\ b = 9$$",
                 "feedback": "You probably made an algebraic cancellation error at the very end of Part (c). When substituting the cosine term, you must simplify the denominator: $6 \\cdot \\frac{\\sqrt{9-x^2}}{3} = 2\\sqrt{9-x^2}$. This yields $a = 2$, not $a = 6$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{3}$$ <strong>(b)(i)</strong> $$y \\approx 3x$$ <strong>(b)(ii)</strong> $$The\\ values\\ are\\ unrelated$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{3}$$ <strong>(b)(i)</strong> $$y \\approx 3x$$ <strong>(b)(ii)</strong> $$The\\\\ values\\\\ are\\\\ unrelated$$",
                 "feedback": "Check your differentiation in Part (a). When differentiating $3\\sin 2y$ implicitly, you must apply the Chain Rule to $2y$, which yields a coefficient of $6$, not $3$. This error also affected your linear approximation in Part (b)(i)."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{6}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{6}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 2,\\ b = 3$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{6}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{6}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 2,\\\\ b = 3$$",
                 "feedback": "Check your square root algebra in Part (c). When substituting $\\sin 2y = \\frac{x}{3}$ into $\\sqrt{1 - \\sin^2 2y}$, you must square the denominator: $\\left(\\frac{x}{3}\\right)^2 = \\frac{x^2}{9}$. When factorised out of the square root, this yields the constant $b = 9$, not $b = 3$."
             }
         ],
@@ -715,19 +715,19 @@ window.ALEVEL_QUESTIONS = [
             "Using the fundamental identity $\\sin^2 3y + \\cos^2 3y = 1$, we can express $\\cos 3y$ in terms of sine:<br>$$\\cos 3y = \\sqrt{1 - \\sin^2 3y}$$<br><em>(Note: Since $-\\frac{\\pi}{6} < y < \\frac{\\pi}{6}$, the angle lies in the interval $-\\frac{\\pi}{2} < 3y < \\frac{\\pi}{2}$, where cosine is strictly positive, so the positive root is correct).</em>",
             "From the original curve equation, we have $\\sin 3y = \\frac{x}{5}$. Substituting this into our expression for $\\cos 3y$ gives:<br>$$\\cos 3y = \\sqrt{1 - \\left(\\frac{x}{5}\\right)^2} = \\sqrt{1 - \\frac{x^2}{25}} = \\sqrt{\\dfrac{25 - x^2}{25}} = \\dfrac{\\sqrt{25 - x^2}}{5}$$",
             "Now, we substitute this back into our derivative expression:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{15 \\left( \\frac{\\sqrt{25 - x^2}}{5} \\right)} = \\dfrac{1}{3\\sqrt{25 - x^2}}$$<br>Comparing this with the target form gives the constants as $a = 3$ and $b = 25$.",
-            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{15}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{15}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 3,\\ b = 25$$"
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{15}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{15}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 3,\\\\ b = 25$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{15}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{15}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 15,\\ b = 25$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{15}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{15}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 15,\\\\ b = 25$$",
                 "feedback": "You probably made an algebraic cancellation error at the very end of Part (c). When substituting the cosine term, you must simplify the denominator: $15 \\cdot \\frac{\\sqrt{25-x^2}}{5} = 3\\sqrt{25-x^2}$. This yields $a = 3$, not $a = 15$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{5}$$ <strong>(b)(i)</strong> $$y \\approx 5x$$ <strong>(b)(ii)</strong> $$The\\ values\\ are\\ unrelated$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{5}$$ <strong>(b)(i)</strong> $$y \\approx 5x$$ <strong>(b)(ii)</strong> $$The\\\\ values\\\\ are\\\\ unrelated$$",
                 "feedback": "Check your differentiation in Part (a). When differentiating $5\\sin 3y$ implicitly, you must apply the Chain Rule to $3y$, which yields a coefficient of $15$, not $5$. This error also affected your linear approximation in Part (b)(i)."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{15}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{15}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 3,\\ b = 5$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{15}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{15}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 3,\\\\ b = 5$$",
                 "feedback": "Check your square root algebra in Part (c). When substituting $\\sin 3y = \\frac{x}{5}$ into $\\sqrt{1 - \\sin^2 3y}$, you must square the denominator: $\\left(\\frac{x}{5}\\right)^2 = \\frac{x^2}{25}$. When factorised out of the square root, this yields the constant $b = 25$, not $b = 5$."
             }
         ],
@@ -759,19 +759,19 @@ window.ALEVEL_QUESTIONS = [
             "Using the fundamental identity $\\sin^2 4y + \\cos^2 4y = 1$, we can express $\\cos 4y$ in terms of sine:<br>$$\\cos 4y = \\sqrt{1 - \\sin^2 4y}$$<br>*(Note: Since $-\\frac{\\pi}{8} < y < \\frac{\\pi}{8}$, the angle lies in the interval $-\\frac{\\pi}{2} < 4y < \\frac{\\pi}{2}$, where cosine is strictly positive, so the positive root is correct).* ",
             "From the original curve equation, we have $\\sin 4y = \\frac{x}{2}$. Substituting this into our expression for $\\cos 4y$ gives:<br>$$\\cos 4y = \\sqrt{1 - \\left(\\frac{x}{2}\\right)^2} = \\sqrt{1 - \\frac{x^2}{4}} = \\sqrt{\\dfrac{4 - x^2}{4}} = \\dfrac{\\sqrt{4 - x^2}}{2}$$",
             "Now, we substitute this back into our derivative expression:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{8 \\left( \\frac{\\sqrt{4 - x^2}}{2} \\right)} = \\dfrac{1}{4\\sqrt{4 - x^2}}$$<br>Comparing this with the target form gives the constants as $a = 4$ and $b = 4$.",
-            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{8}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{8}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 4,\\ b = 4$$"
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{8}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{8}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 4,\\\\ b = 4$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{8}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{8}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 8,\\ b = 4$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{8}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{8}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 8,\\\\ b = 4$$",
                 "feedback": "You probably made an algebraic cancellation error at the very end of Part (c). When substituting the cosine term, you must simplify the denominator: $8 \\cdot \\frac{\\sqrt{4-x^2}}{2} = 4\\sqrt{4-x^2}$. This yields $a = 4$, not $a = 8$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{2}$$ <strong>(b)(i)</strong> $$y \\approx 2x$$ <strong>(b)(ii)</strong> $$The\\ values\\ are\\ unrelated$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{2}$$ <strong>(b)(i)</strong> $$y \\approx 2x$$ <strong>(b)(ii)</strong> $$The\\\\ values\\\\ are\\\\ unrelated$$",
                 "feedback": "Check your differentiation in Part (a). When differentiating $2\\sin 4y$ implicitly, you must apply the Chain Rule to $4y$, which yields a coefficient of $8$, not $2$. This error also affected your linear approximation in Part (b)(i)."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{8}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{8}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 4,\\ b = 2$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{8}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{8}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 4,\\\\ b = 2$$",
                 "feedback": "Check your square root algebra in Part (c). When substituting $\\sin 4y = \\frac{x}{2}$ into $\\sqrt{1 - \\sin^2 4y}$, you must square the denominator: $\\left(\\frac{x}{2}\\right)^2 = \\frac{x^2}{4}$. When factorised out of the square root, this yields the constant $b = 4$, not $b = 2$."
             }
         ],
@@ -803,19 +803,19 @@ window.ALEVEL_QUESTIONS = [
             "Using the fundamental identity $\\sin^2 2y + \\cos^2 2y = 1$, we can express $\\cos 2y$ in terms of sine:<br>$$\\cos 2y = \\sqrt{1 - \\sin^2 2y}$$<br>*(Note: Since $-\\frac{\\pi}{4} < y < \\frac{\\pi}{4}$, the angle lies in the interval $-\\frac{\\pi}{2} < 2y < \\frac{\\pi}{2}$, where cosine is strictly positive, so the positive root is correct).* ",
             "From the original curve equation, we have $\\sin 2y = \\frac{x}{6}$. Substituting this into our expression for $\\cos 2y$ gives:<br>$$\\cos 2y = \\sqrt{1 - \\left(\\frac{x}{6}\\right)^2} = \\sqrt{1 - \\frac{x^2}{36}} = \\sqrt{\\dfrac{36 - x^2}{36}} = \\dfrac{\\sqrt{36 - x^2}}{6}$$",
             "Now, we substitute this back into our derivative expression:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{12 \\left( \\frac{\\sqrt{36 - x^2}}{6} \\right)} = \\dfrac{1}{2\\sqrt{36 - x^2}}$$<br>Comparing this with the target form gives the constants as $a = 2$ and $b = 36$.",
-            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 2,\\ b = 36$$"
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 2,\\\\ b = 36$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 12,\\ b = 36$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 12,\\\\ b = 36$$",
                 "feedback": "You probably made an algebraic cancellation error at the very end of Part (c). When substituting the cosine term, you must simplify the denominator: $12 \\cdot \\frac{\\sqrt{36-x^2}}{6} = 2\\sqrt{36-x^2}$. This yields $a = 2$, not $a = 12$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{6}$$ <strong>(b)(i)</strong> $$y \\approx 6x$$ <strong>(b)(ii)</strong> $$The\\ values\\ are\\ unrelated$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{6}$$ <strong>(b)(i)</strong> $$y \\approx 6x$$ <strong>(b)(ii)</strong> $$The\\\\ values\\\\ are\\\\ unrelated$$",
                 "feedback": "Check your differentiation in Part (a). When differentiating $6\\sin 2y$ implicitly, you must apply the Chain Rule to $2y$, which yields a coefficient of $12$, not $6$. This error also affected your linear approximation in Part (b)(i)."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 2,\\ b = 6$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 2,\\\\ b = 6$$",
                 "feedback": "Check your square root algebra in Part (c). When substituting $\\sin 2y = \\frac{x}{6}$ into $\\sqrt{1 - \\sin^2 2y}$, you must square the denominator: $\\left(\\frac{x}{6}\\right)^2 = \\frac{x^2}{36}$. When factorised out of the square root, this yields the constant $b = 36$, not $b = 6$."
             }
         ],
@@ -847,19 +847,19 @@ window.ALEVEL_QUESTIONS = [
             "Using the fundamental identity $\\sin^2 3y + \\cos^2 3y = 1$, we can express $\\cos 3y$ in terms of sine:<br>$$\\cos 3y = \\sqrt{1 - \\sin^2 3y}$$<br>*(Note: Since $-\\frac{\\pi}{6} < y < \\frac{\\pi}{6}$, the angle lies in the interval $-\\frac{\\pi}{2} < 3y < \\frac{\\pi}{2}$, where cosine is strictly positive, so the positive root is correct).* ",
             "From the original curve equation, we have $\\sin 3y = \\frac{x}{4}$. Substituting this into our expression for $\\cos 3y$ gives:<br>$$\\cos 3y = \\sqrt{1 - \\left(\\frac{x}{4}\\right)^2} = \\sqrt{1 - \\frac{x^2}{16}} = \\sqrt{\\dfrac{16 - x^2}{16}} = \\dfrac{\\sqrt{16 - x^2}}{4}$$",
             "Now, we substitute this back into our derivative expression:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{12 \\left( \\frac{\\sqrt{16 - x^2}}{4} \\right)} = \\dfrac{1}{3\\sqrt{16 - x^2}}$$<br>Comparing this with the target form gives the constants as $a = 3$ and $b = 16$.",
-            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 3,\\ b = 16$$"
+            "Final Answer: <strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 3,\\\\ b = 16$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 12,\\ b = 16$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 12,\\\\ b = 16$$",
                 "feedback": "You probably made an algebraic cancellation error at the very end of Part (c). When substituting the cosine term, you must simplify the denominator: $12 \\cdot \\frac{\\sqrt{16-x^2}}{4} = 3\\sqrt{16-x^2}$. This yields $a = 3$, not $a = 12$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{4}$$ <strong>(b)(i)</strong> $$y \\approx 4x$$ <strong>(b)(ii)</strong> $$The\\ values\\ are\\ unrelated$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{4}$$ <strong>(b)(i)</strong> $$y \\approx 4x$$ <strong>(b)(ii)</strong> $$The\\\\ values\\\\ are\\\\ unrelated$$",
                 "feedback": "Check your differentiation in Part (a). When differentiating $4\\sin 3y$ implicitly, you must apply the Chain Rule to $3y$, which yields a coefficient of $12$, not $4$. This error also affected your linear approximation in Part (b)(i)."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\ gradient\\ of\\ the\\ linear\\ approximation\\ equals\\ the\\ exact\\ derivative\\ at\\ the\\ origin$$ <strong>(c)</strong> $$a = 3,\\ b = 4$$",
+                "ans": "<strong>(a)</strong> $$\\dfrac{1}{12}$$ <strong>(b)(i)</strong> $$y \\approx \\dfrac{1}{12}x$$ <strong>(b)(ii)</strong> $$The\\\\ gradient\\\\ of\\\\ the\\\\ linear\\\\ approximation\\\\ equals\\\\ the\\\\ exact\\\\ derivative\\\\ at\\\\ the\\\\ origin$$ <strong>(c)</strong> $$a = 3,\\\\ b = 4$$",
                 "feedback": "Check your square root algebra in Part (c). When substituting $\\sin 3y = \\frac{x}{4}$ into $\\sqrt{1 - \\sin^2 3y}$, you must square the denominator: $\\left(\\frac{x}{4}\\right)^2 = \\frac{x^2}{16}$. When factorised out of the square root, this yields the constant $b = 16$, not $b = 4$."
             }
         ],
@@ -879,7 +879,7 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{1}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^2}\\\\ (b)\\\\ \\dfrac{dy}{dx} = x^{-3}\\\\ (c)\\\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^4}\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{3}{x^3}$$",
+        "question": "$$y = \\dfrac{1}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^2}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = x^{-3}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^4}\\\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{3}{x^3}$$",
         "steps": [
             "First, rewrite the expression in index form: $$y = x^{-3}$$",
             "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -3$$ $$\\dfrac{dy}{dx} = -3x^{-3-1} = -3x^{-4}$$",
@@ -916,7 +916,7 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{1}{x^4}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^5}\\\\ (b)\\\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^3}\\\\ (c)\\\\ \\dfrac{dy}{dx} = x^{-4}\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{4}{x^4}$$",
+        "question": "$$y = \\dfrac{1}{x^4}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^5}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^3}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = x^{-4}\\\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{4}{x^4}$$",
         "steps": [
             "First, rewrite the expression in index form: $$y = x^{-4}$$",
             "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -4$$ $$\\dfrac{dy}{dx} = -4x^{-4-1} = -4x^{-5}$$",
@@ -953,7 +953,7 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{1}{x^5}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ \\dfrac{dy}{dx} = x^{-5}\\\\ (b)\\\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}\\\\ (c)\\\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^4}\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
+        "question": "$$y = \\dfrac{1}{x^5}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = x^{-5}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^4}\\\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
         "steps": [
             "First, rewrite the expression in index form: $$y = x^{-5}$$",
             "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -5$$ $$\\dfrac{dy}{dx} = -5x^{-5-1} = -5x^{-6}$$",
@@ -990,7 +990,7 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{2}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^2}\\\\ (b)\\\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^4}\\\\ (c)\\\\ \\dfrac{dy}{dx} = -\\dfrac{2}{x^4}\\\\ (d) \\dfrac{dy}{dx} = 2x^{-3}$$",
+        "question": "$$y = \\dfrac{2}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^2}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^4}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{2}{x^4}\\\\\\ (d) \\dfrac{dy}{dx} = 2x^{-3}$$",
         "steps": [
             "First, rewrite the expression in index form: $$y = 2x^{-3}$$",
             "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$ where, $$a = 2$$ and $$n = -3$$ $$\\dfrac{dy}{dx} = 2 \\times \\left(-3\\right)x^{-3-1} = -6x^{-4}$$",
@@ -1027,7 +1027,7 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{1}{2x^2}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{4x^3}\\\\ (b)\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^2}\\\\ (c)\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^3}\\\\ (d) \\dfrac{dy}{dx} = \\dfrac{1}{2}x^{-2}$$",
+        "question": "$$y = \\dfrac{1}{2x^2}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{4x^3}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^2}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^3}\\\\\\ (d) \\dfrac{dy}{dx} = \\dfrac{1}{2}x^{-2}$$",
         "steps": [
             "First, rewrite the expression in index form: $$y = \\dfrac{1}{2}x^{-2}$$",
             "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$ where, $$a = \\dfrac{1}{2}$$ and $$n = -2$$ $$\\dfrac{dy}{dx} = \\dfrac{1}{2} \\times \\left(-2\\right)x^{-2-1} = -1x^{-3}$$",
@@ -1064,7 +1064,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 3^x$$ is transformed by a stretch in the $y$-direction, scale factor 3.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 3^{3x}\\\\ (b)\\ y = \\dfrac{1}{3} \\times 3^x\\\\ (c)\\ y = 3^{\\frac{x}{3}}\\\\ (d)\\ y = 3 \\times 3^x$$",     "steps": [
+        "question": "The graph of $$y = 3^x$$ is transformed by a stretch in the $y$-direction, scale factor 3.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 3^{3x}\\\\\\ (b)\\\\ y = \\dfrac{1}{3} \\times 3^x\\\\\\ (c)\\\\ y = 3^{\\frac{x}{3}}\\\\\\ (d)\\\\ y = 3 \\times 3^x$$",     "steps": [
             "First, identify the original function: $$y = f(x) = 3^x$$",
             "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 3$$",
             "Finally, apply this rule to scale the entire function.",
@@ -1100,7 +1100,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 4^x$$ is transformed by a stretch in the $y$-direction, scale factor 4.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 4 \\times 4^x\\\\ (b)\\ y = 4^{\\frac{x}{4}}\\\\ (c)\\ y = \\dfrac{1}{4} \\times 4^x\\\\ (d)\\ y = 4^{4x}$$",
+        "question": "The graph of $$y = 4^x$$ is transformed by a stretch in the $y$-direction, scale factor 4.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 4 \\times 4^x\\\\\\ (b)\\\\ y = 4^{\\frac{x}{4}}\\\\\\ (c)\\\\ y = \\dfrac{1}{4} \\times 4^x\\\\\\ (d)\\\\ y = 4^{4x}$$",
         "steps": [
             "First, identify the original function: $$y = f(x) = 4^x$$",
             "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 4$$",
@@ -1137,7 +1137,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 2^x$$ is transformed by a stretch in the $y$-direction, scale factor 2.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 2^{2x}\\\\ (b)\\ y = 2 \\times 2^x\\\\ (c)\\ y = 2^{\\frac{x}{2}}\\\\ (d)\\ y = \\dfrac{1}{2} \\times 2^x$$",
+        "question": "The graph of $$y = 2^x$$ is transformed by a stretch in the $y$-direction, scale factor 2.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 2^{2x}\\\\\\ (b)\\\\ y = 2 \\times 2^x\\\\\\ (c)\\\\ y = 2^{\\frac{x}{2}}\\\\\\ (d)\\\\ y = \\dfrac{1}{2} \\times 2^x$$",
         "steps": [
             "First, identify the original function: $$y = f(x) = 2^x$$",
             "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 2$$",
@@ -1174,7 +1174,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 6^x$$ is transformed by a stretch in the $y$-direction, scale factor 6.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 6^{\\frac{x}{6}}\\\\ (b)\\ y = \\dfrac{1}{6} \\times 6^x\\\\ (c)\\ y = 6^{6x}\\\\ (d)\\ y = 6 \\times 6^x$$",
+        "question": "The graph of $$y = 6^x$$ is transformed by a stretch in the $y$-direction, scale factor 6.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 6^{\\frac{x}{6}}\\\\\\ (b)\\\\ y = \\dfrac{1}{6} \\times 6^x\\\\\\ (c)\\\\ y = 6^{6x}\\\\\\ (d)\\\\ y = 6 \\times 6^x$$",
         "steps": [
             "First, identify the original function: $$y = f(x) = 6^x$$",
             "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 6$$",
@@ -1211,7 +1211,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 7^x$$ is transformed by a stretch in the $y$-direction, scale factor 7.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 7 \\times 7^x\\\\ (b)\\ y = 7^{\\frac{x}{7}}\\\\ (c)\\ y = \\dfrac{1}{7} \\times 7^x\\\\ (d)\\ y = 7^{7x}$$",
+        "question": "The graph of $$y = 7^x$$ is transformed by a stretch in the $y$-direction, scale factor 7.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 7 \\times 7^x\\\\\\ (b)\\\\ y = 7^{\\frac{x}{7}}\\\\\\ (c)\\\\ y = \\dfrac{1}{7} \\times 7^x\\\\\\ (d)\\\\ y = 7^{7x}$$",
         "steps": [
             "First, identify the original function: $$y = f(x) = 7^x$$",
             "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 7$$",
@@ -1248,10 +1248,10 @@ window.ALEVEL_QUESTIONS = [
             "Periodic Sequences"
         ],
         "img": false,
-        "question": "A periodic sequence is defined by $$U_n = \\cos(n\\pi)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ 2\\pi\\\\ \\\\ (b)\\\\ 2\\\\ \ \ (c)\\\\ \\pi\\\\ \\\\ (d)\\\\ 4$$",
+        "question": "A periodic sequence is defined by $$U_n = \\cos(n\\pi)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ 2\\pi\\\\\\ \\\\\\ (b)\\\\\\ 2\\\\\\ \ \ (c)\\\\\\ \\pi\\\\\\ \\\\\\ (d)\\\\\\ 4$$",
         "steps": [
             "First, write down the sequence formula: $$U_n = \\cos(n\\pi)$$.",
-            "Next, calculate the first few terms of the sequence to see the numerical pattern: $$U_1 = -1,\\ U_2 = 1,\\ U_3 = -1,\\ U_4 = 1$$",
+            "Next, calculate the first few terms of the sequence to see the numerical pattern: $$U_1 = -1,\\\\ U_2 = 1,\\\\ U_3 = -1,\\\\ U_4 = 1$$",
             "Finally, identify the repeating cycle of terms, which is $-1, 1$, and note that the cycle has a length of $2$.",
             "Final Answer: $$(b) 2$$"
         ],
@@ -1285,10 +1285,10 @@ window.ALEVEL_QUESTIONS = [
             "Periodic Sequences"
         ],
         "img": false,
-        "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{n\\pi}{2}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ 2\\pi\\\\ \\\\ (b)\\\\ 8\\\\ \ \ (c)\\\\ 4\\\\ \\\\ (d)\\\\ \\pi$$",
+        "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{n\\pi}{2}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ 2\\pi\\\\\\ \\\\\\ (b)\\\\\\ 8\\\\\\ \ \ (c)\\\\\\ 4\\\\\\ \\\\\\ (d)\\\\\\ \\pi$$",
         "steps": [
             "First, write down the sequence formula: $$U_n = \\cos\\left(\\dfrac{n\\pi}{2}\\right)$$.",
-            "Next, calculate the first few terms of the sequence to identify the pattern: $$U_1 = 0,\\ U_2 = -1,\\ U_3 = 0,\\ U_4 = 1,\\ U_5 = 0$$",
+            "Next, calculate the first few terms of the sequence to identify the pattern: $$U_1 = 0,\\\\ U_2 = -1,\\\\ U_3 = 0,\\\\ U_4 = 1,\\\\ U_5 = 0$$",
             "Finally, identify the repeating cycle, which is $0, -1, 0, 1$, and note that the length of this repeating pattern is $4$.",
             "Final Answer: $$(c) 4$$"
         ],
@@ -1322,10 +1322,10 @@ window.ALEVEL_QUESTIONS = [
             "Periodic Sequences"
         ],
         "img": false,
-        "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ 6\\\\ \\\\ (b)\\\\ 2\\pi\\\\ \ \ (c)\\\\ 3\\\\ \\\\ (d)\\\\ 6\\pi$$",
+        "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ 6\\\\\\ \\\\\\ (b)\\\\\\ 2\\pi\\\\\\ \ \ (c)\\\\\\ 3\\\\\\ \\\\\\ (d)\\\\\\ 6\\pi$$",
         "steps": [
             "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.",
-            "Next, calculate the first few terms of the sequence to observe the periodic pattern: $$U_1 = \\dfrac{\\sqrt{3}}{2},\\ U_2 = \\dfrac{\\sqrt{3}}{2},\\ U_3 = 0,\\ U_4 = -\\dfrac{\\sqrt{3}}{2},\\ U_5 = -\\dfrac{\\sqrt{3}}{2},\\ U_6 = 0,\\ U_7 = \\dfrac{\\sqrt{3}}{2}$$",
+            "Next, calculate the first few terms of the sequence to observe the periodic pattern: $$U_1 = \\dfrac{\\sqrt{3}}{2},\\\\ U_2 = \\dfrac{\\sqrt{3}}{2},\\\\ U_3 = 0,\\\\ U_4 = -\\dfrac{\\sqrt{3}}{2},\\\\ U_5 = -\\dfrac{\\sqrt{3}}{2},\\\\ U_6 = 0,\\\\ U_7 = \\dfrac{\\sqrt{3}}{2}$$",
             "Finally, identify the repeating cycle, which is $\\dfrac{\\sqrt{3}}{2}, \\dfrac{\\sqrt{3}}{2}, 0, -\\dfrac{\\sqrt{3}}{2}, -\\dfrac{\\sqrt{3}}{2}, 0$, and note that the pattern repeats every $6$ terms.",
             "Final Answer: $$(a) 6$$"
         ],
@@ -1359,10 +1359,10 @@ window.ALEVEL_QUESTIONS = [
             "Periodic Sequences"
         ],
         "img": false,
-        "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ 3\\\\ \\\\ (b)\\\\ 2\\pi\\\\ \ \ (c)\\\\ 6\\\\ \\\\ (d)\\\\ \\pi$$",
+        "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ 3\\\\\\ \\\\\\ (b)\\\\\\ 2\\pi\\\\\\ \ \ (c)\\\\\\ 6\\\\\\ \\\\\\ (d)\\\\\\ \\pi$$",
         "steps": [
             "First, write down the sequence formula: $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.",
-            "Next, calculate the first few terms of the sequence: $$U_1 = -\\dfrac{1}{2},\\ U_2 = -\\dfrac{1}{2},\\ U_3 = 1,\\ U_4 = -\\dfrac{1}{2}$$",
+            "Next, calculate the first few terms of the sequence: $$U_1 = -\\dfrac{1}{2},\\\\ U_2 = -\\dfrac{1}{2},\\\\ U_3 = 1,\\\\ U_4 = -\\dfrac{1}{2}$$",
             "Finally, identify the repeating cycle, which is $-\\dfrac{1}{2}, -\\dfrac{1}{2}, 1$, and note that the length of this repeating pattern is $3$.",
             "Final Answer: $$(a) 3$$"
         ],
@@ -1396,10 +1396,10 @@ window.ALEVEL_QUESTIONS = [
             "Periodic Sequences"
         ],
         "img": false,
-        "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ 8\\\\ \\\\ (b)\\\\ 2\\pi\\\\ \ \ (c)\\\\ 4\\\\ \\\\ (d)\\\\ 4\\pi$$",
+        "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ 8\\\\\\ \\\\\\ (b)\\\\\\ 2\\pi\\\\\\ \ \ (c)\\\\\\ 4\\\\\\ \\\\\\ (d)\\\\\\ 4\\pi$$",
         "steps": [
             "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.",
-            "Next, calculate the first few terms of the sequence: $$U_1 = \\dfrac{1}{\\sqrt{2}},\\ U_2 = 1,\\ U_3 = \\dfrac{1}{\\sqrt{2}},\\ U_4 = 0,\\ U_5 = -\\dfrac{1}{\\sqrt{2}},\\ U_6 = -1,\\ U_7 = -\\dfrac{1}{\\sqrt{2}},\\ U_8 = 0,\\ U_9 = \\dfrac{1}{\\sqrt{2}}$$",
+            "Next, calculate the first few terms of the sequence: $$U_1 = \\dfrac{1}{\\sqrt{2}},\\\\ U_2 = 1,\\\\ U_3 = \\dfrac{1}{\\sqrt{2}},\\\\ U_4 = 0,\\\\ U_5 = -\\dfrac{1}{\\sqrt{2}},\\\\ U_6 = -1,\\\\ U_7 = -\\dfrac{1}{\\sqrt{2}},\\\\ U_8 = 0,\\\\ U_9 = \\dfrac{1}{\\sqrt{2}}$$",
             "Finally, identify the repeating cycle of terms and note that the pattern completes its cycle and starts repeating every $8$ terms.",
             "Final Answer: $$(a) 8$$"
         ],

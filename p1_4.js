@@ -869,7 +869,7 @@ window.ALEVEL_QUESTIONS = [
             "Graph Transformations"
         ],
         "img": false,
-        "question": "The cubic polynomial $g(x)$ is defined by $g(x) = x^3 - 6x^2 + 11x - 6$.<br><br>1. Show that $x = 1$ is a root of the equation $g(x) = 0$, and hence express $g(x)$ in a fully factorised form.<br>2. Sketch the graph of $y = g(x)$, indicating the coordinates of any points of intersection with the axes.<br>3. Solve the inequality $g(x) \\ge 0$, giving your answer in set notation.<br>4. The graph of $y = g(x)$ is transformed by a translation of vector $\\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}$. Find the equation of the transformed graph.",
+        "question": "The cubic polynomial $g(x)$ is defined by $g(x) = x^3 - 6x^2 + 11x - 6$.<br><br>1. Show that $x = 1$ is a root of the equation $g(x) = 0$, and hence express $g(x)$ in a fully factorised form.<br>2. Sketch the graph of $y = g(x)$, indicating the coordinates of any points of intersection with the axes.<br>3. Solve the inequality $g(x) \\ge 0$, giving your answer in set notation.<br>4. The graph of $y = g(x)$ is transformed by a translation of vector $\\begin{pmatrix} 2 \\\\\\ -1 \\end{pmatrix}$. Find the equation of the transformed graph.",
         "steps": [
             "To prove $x = 1$ is a root, substitute $1$ into the polynomial $g(x)$:<br>$$g(1) = 1^3 - 6(1)^2 + 11(1) - 6 = 1 - 6 + 11 - 6 = 0$$<br>Since $g(1) = 0$, the factor theorem states that $(x - 1)$ is a factor of $g(x)$.",
             "Divide $x^3 - 6x^2 + 11x - 6$ by $(x - 1)$ to find the quadratic factor:<br>$$g(x) = \\left(x - 1\\right)\\left(x^2 - 5x + 6\\right)$$",
@@ -877,7 +877,7 @@ window.ALEVEL_QUESTIONS = [
             "To sketch the graph of $y = g(x)$, determine the intercepts:<br>The $x$-intercepts occur where $g(x) = 0 \\implies x = 1, \\\\, x = 2, \\\\, x = 3$. This gives the points $(1, 0)$, $(2, 0)$, and $(3, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies g(0) = -6$. This is the point $(0, -6)$.<br><br>Sketch the positive cubic passing through these points:<br><br><img src='images/p1/004172_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
             "To solve the inequality $g(x) \\ge 0$, find where the curve lies on or above the $x$-axis. From our sketch, this occurs on:<br>$$1 \\le x \\le 2 \\quad \\text{and} \\quad x \\ge 3$$",
             "Express this solution in set notation:<br>$$\\\\{x : 1 \\le x \\le 2\\\\} \\cup \\\\{x : x \\ge 3\\\\}$$",
-            "A translation of vector $\\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}$ shifts the graph $2$ units to the right and $1$ unit down. This replaces $x$ with $(x - 2)$ and $y$ with $(y + 1)$:<br>$$y + 1 = g\\left(x - 2\\right) \\implies y = g\\left(x - 2\\right) - 1$$<br>Substituting our factorised expression yields:<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$<br><br>Final Answer: $$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\\\{x : 1 \\le x \\le 2\\\\} \\cup \\\\{x : x \\ge 3\\\\}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$"
+            "A translation of vector $\\begin{pmatrix} 2 \\\\\\ -1 \\end{pmatrix}$ shifts the graph $2$ units to the right and $1$ unit down. This replaces $x$ with $(x - 2)$ and $y$ with $(y + 1)$:<br>$$y + 1 = g\\left(x - 2\\right) \\implies y = g\\left(x - 2\\right) - 1$$<br>Substituting our factorised expression yields:<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$<br><br>Final Answer: $$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\\\{x : 1 \\le x \\le 2\\\\} \\cup \\\\{x : x \\ge 3\\\\}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$"
         ],
         "pi_options": [
             {
@@ -886,7 +886,7 @@ window.ALEVEL_QUESTIONS = [
             },
             {
                 "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\\\{x : 1 \\le x \\le 2\\\\} \\cup \\\\{x : x \\ge 3\\\\}, \\quad y = \\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right) - 1$$",
-                "feedback": "It looks like you forgot to apply the horizontal translation. A translation of vector $\\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}$ requires replacing $x$ with $(x - 2)$ throughout the function."
+                "feedback": "It looks like you forgot to apply the horizontal translation. A translation of vector $\\begin{pmatrix} 2 \\\\\\ -1 \\end{pmatrix}$ requires replacing $x$ with $(x - 2)$ throughout the function."
             },
             {
                 "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\\\{x : 1 \\le x \\le 2\\\\} \\cup \\\\{x : x \\ge 3\\\\}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) + 1$$",
@@ -896,7 +896,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Translational Mapping",
-            "content": "A translation of vector $\\begin{pmatrix} a \\ b \\end{pmatrix}$ transforms the function $y = f(x)$ into $y = f(x - a) + b$. Keep this general form in mind to easily apply translations without expanding the entire polynomial."
+            "content": "A translation of vector $\\begin{pmatrix} a \\\\ b \\end{pmatrix}$ transforms the function $y = f(x)$ into $y = f(x - a) + b$. Keep this general form in mind to easily apply translations without expanding the entire polynomial."
         }
     },
     {
@@ -998,7 +998,7 @@ window.ALEVEL_QUESTIONS = [
             "To express $g(x)$ in fully factorised form, expand the quadratic term $\\left(x^2 - 9\\right)$ using the difference of two squares identity, $a^2 - b^2 = (a-b)(a+b)$:<br>$$x^2 - 9 = \\left(x - 3\\right)\\left(x + 3\\right)$$<br>Substituting this back yields:<br>$$g(x) = \\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right)$$",
             "To sketch the graph of the quartic $y = g(x)$, determine the axes intercepts:<br>The $x$-intercepts occur where $g(x) = 0 \\implies x = 2$ (repeated root), $x = 3$, and $x = -3$. These are the points $(2, 0)$, $(3, 0)$, and $(-3, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies g(0) = (-2)^2(0^2 - 9) = 4(-9) = -36$. This is the point $(0, -36)$.<br><br>Since the leading coefficient of $x^4$ is positive ($+1$), the curve is positive on both ends (heads up to the far-left and far-right). It touches the axis and turns around at $(2, 0)$:<br><br><img src='images/p1/004171_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
             "To solve the inequality $g(x) \\le 0$, find where the curve lies on or below the $x$-axis. From our sketch, the curve lies below the axis between $x = -3$ and $x = 3$. The isolated touching point at $x = 2$ also satisfies $g(2) = 0 \\le 0$ and is naturally included in this continuous interval.<br><br>Write this solution in set notation:<br>$$\\\\{x : -3 \\le x \\le 3\\\\}$$",
-            "To map $y = x^4$ onto $y = (2x - 6)^4$, we can rewrite the target equation as $y = \\left[2\\left(x - 3\\right)\\right]^4 = 16\\left(x - 3\\right)^4$.<br><br>This can be achieved by the following sequence of two transformations:<br>1. A horizontal translation $3$ units to the right (vector $\\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix}$), which transforms $y = x^4$ into $y = (x - 3)^4$.<br>2. A vertical stretch with scale factor $16$ parallel to the $y$-axis, which transforms $y = (x - 3)^4$ into $y = 16(x - 3)^4 = (2x - 6)^4$.<br><br><em>Alternative Sequence:</em> First apply a horizontal stretch parallel to the $x$-axis with scale factor $\\dfrac{1}{2}$ (transforming $x \\to 2x$), followed by a horizontal translation $3$ units to the right (transforming $2x \\to 2(x - 3) = 2x - 6$).",
+            "To map $y = x^4$ onto $y = (2x - 6)^4$, we can rewrite the target equation as $y = \\left[2\\left(x - 3\\right)\\right]^4 = 16\\left(x - 3\\right)^4$.<br><br>This can be achieved by the following sequence of two transformations:<br>1. A horizontal translation $3$ units to the right (vector $\\begin{pmatrix} 3 \\\\\\ 0 \\end{pmatrix}$), which transforms $y = x^4$ into $y = (x - 3)^4$.<br>2. A vertical stretch with scale factor $16$ parallel to the $y$-axis, which transforms $y = (x - 3)^4$ into $y = 16(x - 3)^4 = (2x - 6)^4$.<br><br><em>Alternative Sequence:</em> First apply a horizontal stretch parallel to the $x$-axis with scale factor $\\dfrac{1}{2}$ (transforming $x \\to 2x$), followed by a horizontal translation $3$ units to the right (transforming $2x \\to 2(x - 3) = 2x - 6$).",
             "Final Answer: $$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad \\\\{x : -3 \\le x \\le 3\\\\},$$<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$"
         ],
         "pi_options": [

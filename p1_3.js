@@ -54,7 +54,7 @@ window.ALEVEL_QUESTIONS = [
         "img": false,
         "question": "A circle has center $O(0, 0)$ and radius $R = 10$. Three points lie on the circle: $A(8, 6)$, $B(0, -10)$, and $C(-8, 6)$.<br><br>(a) Show that the angle at the center, $\\angle AOC$, is exactly twice the size of the angle at the circumference, $\\angle ABC$.<br><br>(b) (i) Show that the chord $AC$ is bisected by the $y$-axis.<br>(ii) Determine whether the point $D(3, -9)$ lies inside the circle, on the circle, or outside the circle. Fully justify your answer.",
         "steps": [
-            "For Part (a), calculate the side lengths of triangle $AOC$ to find $\\angle AOC$: $$OA = 10,\\ OC = 10,\\ AC = \\sqrt{(-8-8)^2 + (6-6)^2} = 16$$",
+            "For Part (a), calculate the side lengths of triangle $AOC$ to find $\\angle AOC$: $$OA = 10,\\\\ OC = 10,\\\\ AC = \\sqrt{(-8-8)^2 + (6-6)^2} = 16$$",
             "Apply the Cosine Rule to find $\\angle AOC$: $$16^2 = 10^2 + 10^2 - 2(10)(10)\\cos(\\angle AOC) \\implies 256 = 200 - 200\\cos(\\angle AOC)$$<br>$$\\implies \\cos(\\angle AOC) = -0.28 \\implies \\angle AOC \\approx 106.26^\\circ$$",
             "Next, calculate the side lengths of triangle $ABC$ to find $\\angle ABC$: $$BA = \\sqrt{(8-0)^2 + (6 - (-10))^2} = \\sqrt{320}$$ and $$BC = \\sqrt{(-8-0)^2 + (6 - (-10))^2} = \\sqrt{320}$$, with $$AC = 16$$",
             "Apply the Cosine Rule on triangle $ABC$: $$16^2 = 320 + 320 - 2(\\sqrt{320})(\\sqrt{320})\\cos(\\angle ABC) \\implies 256 = 640 - 640\\cos(\\angle ABC))$$<br>$$ \\implies \\cos(\\angle ABC) = 0.6 \\implies \\angle ABC \\approx 53.13^\\circ$$",
@@ -98,7 +98,7 @@ window.ALEVEL_QUESTIONS = [
         "img": false,
         "question": "Four points lie on a circle centered at the origin: $A(-3, 4)$, $B(3, 4)$, $C(4, -3)$, and $D(-4, -3)$.<br><br>(a) Show that the opposite interior angles of the cyclic quadrilateral $ABCD$ sum to $180^\\circ$ (i.e. show that $\\angle ADC + \\angle ABC = 180^\\circ$).<br><br>(b) (i) Explain why the center of the circle on which $A, B, C, D$ lie must be the origin $(0, 0)$.<br>(ii) Determine whether the point $E(-4, 4)$ lies inside the circle, on the circle, or outside the circle. Fully justify your answer.",
         "steps": [
-            "For Part (a), calculate the side lengths of triangle $ADC$ to find angle $\\angle ADC$: $$DA = \\sqrt{(-3-(-4))^2 + (4-(-3))^2} = \\sqrt{50},\\ DC = \\sqrt{(4-(-4))^2 + (-3-(-3))^2} = 8$$, and $$AC = \\sqrt{(4-(-3))^2 + (-3-4)^2} = \\sqrt{98}$$",
+            "For Part (a), calculate the side lengths of triangle $ADC$ to find angle $\\angle ADC$: $$DA = \\sqrt{(-3-(-4))^2 + (4-(-3))^2} = \\sqrt{50},\\\\ DC = \\sqrt{(4-(-4))^2 + (-3-(-3))^2} = 8$$, and $$AC = \\sqrt{(4-(-3))^2 + (-3-4)^2} = \\sqrt{98}$$",
             "Apply the Cosine Rule to find $\\angle ADC$: $$98 = 50 + 64 - 2(\\sqrt{50})(8)\\cos(\\angle ADC) \\implies 98 = 114 - 16\\sqrt{50}\\cos(\\angle ADC)$$<br>$$ \\implies \\cos(\\angle ADC) = \\dfrac{1}{\\sqrt{50}} \\implies \\angle ADC \\approx 81.87^\\circ$$",
             "Next, calculate the side lengths of triangle $ABC$ to find angle $\\angle ABC$: $$BA = \\sqrt{(-3-3)^2 + (4-4)^2} = 6$$ and $$BC = \\sqrt{(4-3)^2 + (-3-4)^2} = \\sqrt{50}$$, with $$AC = \\sqrt{98}$$",
             "Apply the Cosine Rule to find $\\angle ABC$: $$98 = 36 + 50 - 2(6)(\\sqrt{50})\\cos(\\angle ABC) \\implies 98 = 86 - 12\\sqrt{50}\\cos(\\angle ABC)$$<br>$$ \\implies \\cos(\\angle ABC) = -\\dfrac{1}{\\sqrt{50}} \\implies \\angle ABC \\approx 98.13^\\circ$$",
@@ -188,7 +188,7 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "For Part (a), calculate the gradients of the radius $OT$ and the tangent line $PT$: $$m_{OT} = \\dfrac{4.8-0}{3.6-0} = \\dfrac{4}{3}$$ and $$m_{PT} = \\dfrac{4.8-0}{3.6-10} = \\dfrac{4.8}{-6.4} = -\\dfrac{3}{4}$$",
             "Since the product of their gradients is $$m_{OT} \\times m_{PT} = \\dfrac{4}{3} \\times \\left(-\\dfrac{3}{4}\\right) = -1$$, the radius $OT$ and the tangent $PT$ are perpendicular.",
-            "For Part (b)(i), calculate the side lengths of triangle $OPT$: $$OT = 6,\\ OP = 10$$, and $$PT = \\sqrt{(3.6 - 10)^2 + 4.8^2} = \\sqrt{(-6.4)^2 + 23.04} = \\sqrt{40.96 + 23.04} = 8$$",
+            "For Part (b)(i), calculate the side lengths of triangle $OPT$: $$OT = 6,\\\\ OP = 10$$, and $$PT = \\sqrt{(3.6 - 10)^2 + 4.8^2} = \\sqrt{(-6.4)^2 + 23.04} = \\sqrt{40.96 + 23.04} = 8$$",
             "Apply the Cosine Rule to find $\\cos(POT)$: $$PT^2 = OP^2 + OT^2 - 2(OP)(OT)\\cos(POT) \\implies 8^2 = 10^2 + 6^2 - 2(10)(6)\\cos(POT)$$",
             "Simplify to find the cosine value: $$64 = 100 + 36 - 120\\cos(POT) \\implies 64 = 136 - 120\\cos(POT) \\implies \\cos(POT) = 0.6$$",
             "Using the Cosine Rule with $\\cos(POT) = 0.6$ verifies the length of the tangent: $$PT = \\sqrt{10^2 + 6^2 - 2(10)(6)(0.6)} = \\sqrt{64} = 8$$, as required.",
@@ -898,19 +898,19 @@ window.ALEVEL_QUESTIONS = [
             "Evaluate both models at $t = 54$: $$V_{\\text{prod}} = 20 + 200\\left(\\dfrac{54}{40}\\right)^3 - 100\\left(\\dfrac{54}{40}\\right)^4 \\approx 180.12\\text{ Bcm}$$ and $$V_{\\text{use}} = 8.5 \\times 1.058^{54} \\approx 178.53\\text{ Bcm}$$. Since $180.12 > 178.53$, production exceeds consumption.",
             "Evaluate both models at $t = 55$: $$V_{\\text{prod}} = 20 + 200\\left(\\dfrac{55}{40}\\right)^3 - 100\\left(\\dfrac{55}{40}\\right)^4 \\approx 182.44\\text{ Bcm}$$ and $$V_{\\text{use}} = 8.5 \\times 1.058^{55} \\approx 188.88\\text{ Bcm}$$. Since $182.44 < 188.88$, consumption now exceeds production.",
             "Since the difference $V_{\\text{prod}} - V_{\\text{use}}$ changes sign from positive to negative between $t = 54$ and $t = 55$, the curves must intersect during this interval (which corresponds exactly to the calendar year 2044).",
-            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 59.464,\\ T_2 = 66.305,\\ T_3 = 71.099,\\quad \\text{Part (b): } 54 < t < 55 \\implies 2044$$"
+            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 59.464,\\\\ T_2 = 66.305,\\\\ T_3 = 71.099,\\quad \\text{Part (b): } 54 < t < 55 \\implies 2044$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 59.452,\\ T_2 = 66.292,\\ T_3 = 70.987,\\quad \\text{Part (b): } 54 < t < 55 \\implies 2044$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 59.452,\\\\ T_2 = 66.292,\\\\ T_3 = 70.987,\\quad \\text{Part (b): } 54 < t < 55 \\implies 2044$$",
                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $210,240$. Carrying the rounded value $T_1 \\approx 59.452$ instead of $59.464$ caused your subsequent iterations to drift. Use full calculator accuracy."
             },
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 59.464,\\ T_2 = 66.305,\\ T_3 = 71.099,\\quad \\text{Part (b): } 50 < t < 51 \\implies 2040$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 59.464,\\\\ T_2 = 66.305,\\\\ T_3 = 71.099,\\quad \\text{Part (b): } 50 < t < 51 \\implies 2040$$",
                 "feedback": "In Part (b), check your interval analysis. While $t = 50$ is your starting iteration value, evaluating the production and consumption curves shows that they do not cross until $t$ is between $54$ and $55$, which corresponds to the year 2044."
             },
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 59.464,\\ T_2 = 66.305,\\ T_3 = 71.099,\\quad \\text{Part (b): } 53 < t < 54 \\implies 2043$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 59.464,\\\\ T_2 = 66.305,\\\\ T_3 = 71.099,\\quad \\text{Part (b): } 53 < t < 54 \\implies 2043$$",
                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 54$. Since $V_{\\text{prod}} \\approx 180.12$ and $V_{\\text{use}} \\approx 178.53$, production is still greater than consumption, meaning they have not crossed yet."
             }
         ],
@@ -944,19 +944,19 @@ window.ALEVEL_QUESTIONS = [
             "Evaluate both models at $t = 28$: $$R = 5 + 30\\left(\\dfrac{28}{10}\\right)^2 - 10\\left(\\dfrac{28}{10}\\right)^3 \\approx 20.68\\text{ million}$$ and $$C = 1.2 \\times 1.09^{28} \\approx 13.40\\text{ million}$$. Since $20.68 > 13.40$, revenue exceeds operating costs.",
             "Evaluate both models at $t = 29$: $$R = 5 + 30\\left(\\dfrac{29}{10}\\right)^2 - 10\\left(\\dfrac{29}{10}\\right)^3 \\approx 13.41\\text{ million}$$ and $$C = 1.2 \\times 1.09^{29} \\approx 14.61\\text{ million}$$. Since $13.41 < 14.61$, costs now exceed revenue.",
             "Since the difference $R - C$ changes sign from positive to negative between $t = 28$ and $t = 29$, the curves must intersect during this interval (which corresponds exactly to the calendar year 2038).",
-            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 30.759,\\ T_2 = 30.644,\\ T_3 = 30.588,\\quad \\text{Part (b): } 28 < t < 29 \\implies 2038$$"
+            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 30.759,\\\\ T_2 = 30.644,\\\\ T_3 = 30.588,\\quad \\text{Part (b): } 28 < t < 29 \\implies 2038$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 30.763,\\ T_2 = 30.642,\\ T_3 = 30.593,\\quad \\text{Part (b): } 28 < t < 29 \\implies 2038$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 30.763,\\\\ T_2 = 30.642,\\\\ T_3 = 30.593,\\quad \\text{Part (b): } 28 < t < 29 \\implies 2038$$",
                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the square root of $946.129$. Carrying the rounded value $T_1 \\approx 30.763$ instead of $30.759$ caused your subsequent iterations to drift. Use full calculator accuracy."
             },
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 30.759,\\ T_2 = 30.644,\\ T_3 = 30.588,\\quad \\text{Part (b): } 27 < t < 28 \\implies 2037$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 30.759,\\\\ T_2 = 30.644,\\\\ T_3 = 30.588,\\quad \\text{Part (b): } 27 < t < 28 \\implies 2037$$",
                 "feedback": "In Part (b), check your interval analysis. While $t = 28$ is your target value, evaluating both models shows that they do not cross until $t$ is between $28$ and $29$, which corresponds to the year 2038."
             },
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 30.759,\\ T_2 = 30.644,\\ T_3 = 30.588,\\quad \\text{Part (b): } 29 < t < 30 \\implies 2039$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 30.759,\\\\ T_2 = 30.644,\\\\ T_3 = 30.588,\\quad \\text{Part (b): } 29 < t < 30 \\implies 2039$$",
                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 28$. Since $R \\approx 20.68$ and $C \\approx 13.40$, revenue is still greater than costs, meaning they have not crossed yet."
             }
         ],
@@ -990,19 +990,19 @@ window.ALEVEL_QUESTIONS = [
             "Evaluate both models at $t = 69$: $$V = 8 + 48\\left(\\dfrac{69}{12}\\right)^2 - 8\\left(\\dfrac{69}{12}\\right)^3 \\approx 74.13\\text{ thousand}$$ and $$V_{\\text{in}} = 0.5 \\times 1.07^{69} \\approx 53.20\\text{ thousand}$$. Since $74.13 > 53.20$, reservoir volume exceeds inflow.",
             "Evaluate both models at $t = 70$: $$V = 8 + 48\\left(\\dfrac{70}{12}\\right)^2 - 8\\left(\\dfrac{70}{12}\\right)^3 \\approx 53.37\\text{ thousand}$$ and $$V_{\\text{in}} = 0.5 \\times 1.07^{70} \\approx 56.92\\text{ thousand}$$. Since $53.37 < 56.92$, inflow now exceeds reservoir volume.",
             "Since the difference $V - V_{\\text{in}}$ changes sign from positive to negative between $t = 69$ and $t = 70$, the curves must intersect during this interval (which corresponds exactly to the 70th month).",
-            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 72.775,\\ T_2 = 72.626,\\ T_3 = 72.527,\\quad \\text{Part (b): } 69 < t < 70 \\implies \\text{70th month}$$"
+            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 72.775,\\\\ T_2 = 72.626,\\\\ T_3 = 72.527,\\quad \\text{Part (b): } 69 < t < 70 \\implies \\text{70th month}$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 72.700,\\ T_2 = 72.400,\\ T_3 = 72.200,\\quad \\text{Part (b): } 69 < t < 70 \\implies \\text{70th month}$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 72.700,\\\\ T_2 = 72.400,\\\\ T_3 = 72.200,\\quad \\text{Part (b): } 69 < t < 70 \\implies \\text{70th month}$$",
                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $385,416$. Carrying the rounded value $T_1 \\approx 72.700$ instead of $72.775$ caused your subsequent iterations to drift. Use full calculator accuracy."
             },
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 72.775,\\ T_2 = 72.626,\\ T_3 = 72.527,\\quad \\text{Part (b): } 68 < t < 69 \\implies \\text{69th month}$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 72.775,\\\\ T_2 = 72.626,\\\\ T_3 = 72.527,\\quad \\text{Part (b): } 68 < t < 69 \\implies \\text{69th month}$$",
                 "feedback": "In Part (b), check your interval analysis. While $t = 69$ is your target value, evaluating both models shows that they do not cross until $t$ is between $69$ and $70$, which corresponds to the 70th month."
             },
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 72.775,\\ T_2 = 72.626,\\ T_3 = 72.527,\\quad \\text{Part (b): } 70 < t < 71 \\implies \\text{71st month}$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 72.775,\\\\ T_2 = 72.626,\\\\ T_3 = 72.527,\\quad \\text{Part (b): } 70 < t < 71 \\implies \\text{71st month}$$",
                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 69$. Since $V \\approx 74.13$ and $V_{\\text{in}} \\approx 53.20$, reservoir volume is still greater than inflow, meaning they have not crossed yet."
             }
         ],
@@ -1036,19 +1036,19 @@ window.ALEVEL_QUESTIONS = [
             "Evaluate both models at $t = 19$: $$R = 5 + 50\\left(\dfrac{19}{10}\\right)^3 - 25\\left(\dfrac{19}{10}\\right)^4 \\approx 22.15\\text{ moles/s}$$ and $$R_{\\text{inh}} = 0.8 \\times 1.15^{19} \\approx 11.39\\text{ moles/s}$$. Since $22.15 > 11.39$, primary reaction rate exceeds the inhibitor rate.",
             "Evaluate both models at $t = 20$: $$R = 5 + 50\\left(\dfrac{20}{10}\\right)^3 - 25\\left(\dfrac{20}{10}\\right)^4 = 5\\text{ moles/s}$$ and $$R_{\\text{inh}} = 0.8 \\times 1.15^{20} \\approx 13.09\\text{ moles/s}$$. Since $5 < 13.09$, the inhibitor rate now exceeds the primary reaction rate.",
             "Since the difference $R - R_{\\text{inh}}$ changes sign from positive to negative between $t = 19$ and $t = 20$, the curves must intersect during this interval (which corresponds exactly to the 20th minute).",
-            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 20.735,\\ T_2 = 20.563,\\ T_3 = 20.451,\\quad \\text{Part (b): } 19 < t < 20 \\implies \\text{20th minute}$$"
+            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 20.735,\\\\ T_2 = 20.563,\\\\ T_3 = 20.451,\\quad \\text{Part (b): } 19 < t < 20 \\implies \\text{20th minute}$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 20.730,\\ T_2 = 20.610,\\ T_3 = 20.540,\\quad \\text{Part (b): } 19 < t < 20 \\implies \\text{20th minute}$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 20.730,\\\\ T_2 = 20.610,\\\\ T_3 = 20.540,\\quad \\text{Part (b): } 19 < t < 20 \\implies \\text{20th minute}$$",
                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $8,915.24$. Carrying the rounded value $T_1 \\approx 20.730$ instead of $20.735$ caused your subsequent iterations to drift. Use full calculator accuracy."
             },
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 20.735,\\ T_2 = 20.563,\\ T_3 = 20.451,\\quad \\text{Part (b): } 18 < t < 19 \\implies \\text{19th minute}$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 20.735,\\\\ T_2 = 20.563,\\\\ T_3 = 20.451,\\quad \\text{Part (b): } 18 < t < 19 \\implies \\text{19th minute}$$",
                 "feedback": "In Part (b), check your interval analysis. While $t = 19$ is your target value, evaluating both models shows that they do not cross until $t$ is between $19$ and $20$, which corresponds to the 20th minute."
             },
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 20.735,\\ T_2 = 20.563,\\ T_3 = 20.451,\\quad \\text{Part (b): } 20 < t < 21 \\implies \\text{21st minute}$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 20.735,\\\\ T_2 = 20.563,\\\\ T_3 = 20.451,\\quad \\text{Part (b): } 20 < t < 21 \\implies \\text{21st minute}$$",
                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 19$. Since $R \\approx 22.15$ and $R_{\\text{inh}} \\approx 11.39$, primary rate is still greater than inhibitor rate, meaning they have not crossed yet."
             }
         ],
@@ -1082,19 +1082,19 @@ window.ALEVEL_QUESTIONS = [
             "Evaluate both models at $t = 39$: $$V = 4 + 40\\left(\\dfrac{39}{20}\\right)^3 - 20\\left(\\dfrac{39}{20}\\right)^4 \\approx 11.42\\text{ million}$$ and $$C = 0.2 \times 1.085^{39} \\approx 4.82\\text{ million}$$. Since $11.42 > 4.82$, fleet value exceeds maintenance costs.",
             "Evaluate both models at $t = 40$: $$V = 4 + 40\\left(\\dfrac{40}{20}\\right)^3 - 20\\left(\\dfrac{40}{20}\\right)^4 = 4\\text{ million}$$ and $$C = 0.2 \times 1.085^{40} \\approx 5.23\\text{ million}$$. Since $4 < 5.23$, maintenance costs now exceed the fleet value.",
             "Since the difference $V - C$ changes sign from positive to negative between $t = 39$ and $t = 40$, the curves must intersect during this interval (which corresponds exactly to the 40th year).",
-            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 40.821,\\ T_2 = 40.704,\\ T_3 = 40.627,\\quad \\text{Part (b): } 39 < t < 40 \\implies \\text{40th year}$$"
+            "Final Answer: $$\\text{Part (a)(ii): } T_1 = 40.821,\\\\ T_2 = 40.704,\\\\ T_3 = 40.627,\\quad \\text{Part (b): } 39 < t < 40 \\implies \\text{40th year}$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 40.820,\\ T_2 = 40.730,\\ T_3 = 40.670,\\quad \\text{Part (b): } 39 < t < 40 \\implies \\text{40th year}$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 40.820,\\\\ T_2 = 40.730,\\\\ T_3 = 40.670,\\quad \\text{Part (b): } 39 < t < 40 \\implies \\text{40th year}$$",
                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $68,020.5$. Carrying the rounded value $T_1 \\approx 40.820$ instead of $40.821$ caused your subsequent iterations to drift. Use full calculator accuracy."
             },
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 40.821,\\ T_2 = 40.704,\\ T_3 = 40.627,\\quad \\text{Part (b): } 38 < t < 39 \\implies \\text{39th year}$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 40.821,\\\\ T_2 = 40.704,\\\\ T_3 = 40.627,\\quad \\text{Part (b): } 38 < t < 39 \\implies \\text{39th year}$$",
                 "feedback": "In Part (b), check your interval analysis. While $t = 39$ is your target value, evaluating both models shows that they do not cross until $t$ is between $39$ and $40$, which corresponds to the 40th year."
             },
             {
-                "ans": "$$\\text{Part (a)(ii): } T_1 = 40.821,\\ T_2 = 40.704,\\ T_3 = 40.627,\\quad \\text{Part (b): } 40 < t < 41 \\implies \\text{41st year}$$",
+                "ans": "$$\\text{Part (a)(ii): } T_1 = 40.821,\\\\ T_2 = 40.704,\\\\ T_3 = 40.627,\\quad \\text{Part (b): } 40 < t < 41 \\implies \\text{41st year}$$",
                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 39$. Since $V \\approx 11.42$ and $C \\approx 4.82$, fleet value is still greater than maintenance costs, meaning they have not crossed yet."
             }
         ],
