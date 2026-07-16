@@ -49,13 +49,13 @@ window.ALEVEL_QUESTIONS = [
             "Trigonometric Functions"
         ],
         "img": false,
-        "question": "1. Use the trapezium rule, with four strips each of width $\\dfrac{\\pi}{8}$ radians, to estimate the value of:<br>$$\\int_0^{\\frac{\\pi}{2}} \\sin x \\text{d}x$$<br>giving your answer correct to 3 significant figures.<br><br>2. By considering the geometric shape of the curve $y = \\sin x$ on the interval $\\left[0, \\, \\dfrac{\\pi}{2}\\right]$, explain whether your estimate is an underestimate or an overestimate.",
+        "question": "1. Use the trapezium rule, with four strips each of width $\\dfrac{\\pi}{8}$ radians, to estimate the value of:<br>$$\\int_0^{\\frac{\\pi}{2}} \\sin x \\text{d}x$$<br>giving your answer correct to 3 significant figures.<br><br>2. By considering the geometric shape of the curve $y = \\sin x$ on the interval $\\left[0, \\\\, \\dfrac{\\pi}{2}\\right]$, explain whether your estimate is an underestimate or an overestimate.",
         "steps": [
-            "For four strips of width $h = \\dfrac{\\pi}{8}$ on the interval $\\left[0, \\, \\dfrac{\\pi}{2}\\right]$, the coordinate points are $x_0 = 0$, $x_1 = \\dfrac{\\pi}{8}$, $x_2 = \\dfrac{\\pi}{4}$, $x_3 = \\dfrac{3\\pi}{8}$, and $x_4 = \\dfrac{\\pi}{2}$.",
+            "For four strips of width $h = \\dfrac{\\pi}{8}$ on the interval $\\left[0, \\\\, \\dfrac{\\pi}{2}\\right]$, the coordinate points are $x_0 = 0$, $x_1 = \\dfrac{\\pi}{8}$, $x_2 = \\dfrac{\\pi}{4}$, $x_3 = \\dfrac{3\\pi}{8}$, and $x_4 = \\dfrac{\\pi}{2}$.",
             "Evaluate the function $f(x) = \\sin x$ at each of these coordinate points, keeping high precision:<br>$$y_0 = \\sin(0) = 0$$<br>$$y_1 = \\sin\\left(\\dfrac{\\pi}{8}\\right) \\approx 0.3827$$<br>$$y_2 = \\sin\\left(\\dfrac{\\pi}{4}\\right) \\approx 0.7071$$<br>$$y_3 = \\sin\\left(\\dfrac{\\pi}{3}\\right) \\approx 0.9239$$<br>$$y_4 = \\sin\\left(\\dfrac{\\pi}{2}\\right) = 1$$",
             "Apply the trapezium rule formula:<br>$$\\text{Estimate} = \\dfrac{h}{2} \\left[ y_0 + y_4 + 2(y_1 + y_2 + y_3) \\right]$$<br>$$\\text{Estimate} = \\dfrac{\\pi}{16} \\left[ 0 + 1 + 2(0.3827 + 0.7071 + 0.9239) \\right]$$",
             "Perform the arithmetic steps:<br>$$\\text{Estimate} = \\dfrac{\\pi}{16} \\left[ 1 + 2(2.0137) \\right]$$<br>$$\\text{Estimate} = \\dfrac{\\pi}{16} \\left[ 1 + 4.0274 \\right] = \\dfrac{\\pi}{16} \\left[ 5.0274 \\right] \\approx 0.9871$$<br>Rounding to 3 significant figures gives $0.987$.",
-            "To determine if this is an underestimate or an overestimate, we examine the curvature of $y = \\sin x$. On the interval $\\left[0, \\, \\dfrac{\\pi}{2}\\right]$, the curve is concave down (convex). Because the curve bends downward, the straight-line tops of the four trapezia lie entirely beneath the curve. Thus, the sum of the areas of the trapezia is slightly less than the actual area under the curve, making the estimate an underestimate.<br><br>Final Answer: $$0.987$$"
+            "To determine if this is an underestimate or an overestimate, we examine the curvature of $y = \\sin x$. On the interval $\\left[0, \\\\, \\dfrac{\\pi}{2}\\right]$, the curve is concave down (convex). Because the curve bends downward, the straight-line tops of the four trapezia lie entirely beneath the curve. Thus, the sum of the areas of the trapezia is slightly less than the actual area under the curve, making the estimate an underestimate.<br><br>Final Answer: $$0.987$$"
         ],
         "pi_options": [
             {
@@ -95,19 +95,19 @@ window.ALEVEL_QUESTIONS = [
             "Evaluate $f(x) = \\dfrac{1}{x}$ at each point:<br>$$y_0 = f(1) = 1$$<br>$$y_1 = f(2) = 0.5$$<br>$$y_2 = f(3) \\approx 0.3333$$<br>$$y_3 = f(4) = 0.25$$<br>$$y_4 = f(5) = 0.2$$",
             "Apply the trapezium rule formula:<br>$$\\text{Estimate} = \\dfrac{1}{2} \\left[ 1 + 0.2 + 2(0.5 + 0.3333 + 0.25) \\right]$$<br>$$\\text{Estimate} = 0.5 \\left[ 1.2 + 2(1.0833) \\right] = 0.5 \\left[ 1.2 + 2.1667 \\right] = 0.5 \\left[ 3.3667 \\right] \\approx 1.6834$$<br>Rounding to 3 significant figures gives $1.68$.",
             "Integrate analytically to find the exact value:<br>$$\\int_1^5 \\dfrac{1}{x} \\text{d}x = \\left[ \\ln x \\right]_1^5 = \\ln 5 - \\ln 1 = \\ln 5 \\approx 1.6094$$",
-            "Calculate the percentage error using the formula $\\text{Percentage Error} = \\dfrac{|\\text{Estimate} - \\text{Exact}|}{\\text{Exact}} \\times 100\\%$:<br>$$\\text{Percentage Error} = \\dfrac{|1.6834 - 1.6094|}{1.6094} \\times 100\\%$$<br>$$\\text{Percentage Error} = \\dfrac{0.0740}{1.6094} \\times 100\\% \\approx 4.598\\%$$<br>Rounding to 3 significant figures gives $4.60\\%$.<br><br>Final Answer: $$1.68, \\quad \\ln 5, \\quad 4.60\\%$$"
+            "Calculate the percentage error using the formula $\\text{Percentage Error} = \\dfrac{|\\text{Estimate} - \\text{Exact}|}{\\text{Exact}} \\times 100\\\\%$:<br>$$\\text{Percentage Error} = \\dfrac{|1.6834 - 1.6094|}{1.6094} \\times 100\\\\%$$<br>$$\\text{Percentage Error} = \\dfrac{0.0740}{1.6094} \\times 100\\\\% \\approx 4.598\\\\%$$<br>Rounding to 3 significant figures gives $4.60\\\\%$.<br><br>Final Answer: $$1.68, \\quad \\ln 5, \\quad 4.60\\\\%$$"
         ],
         "pi_options": [
             {
-                "ans": "$$1.68, \\quad 1.61, \\quad 4.17\\%$$",
+                "ans": "$$1.68, \\quad 1.61, \\quad 4.17\\\\%$$",
                 "feedback": "Check your percentage error calculation. You must use the unrounded values for the intermediate steps of the error formula, otherwise you introduce rounding discrepancies in your final percentage."
             },
             {
-                "ans": "$$1.68, \\quad \\ln 5, \\quad 4.35\\%$$",
+                "ans": "$$1.68, \\quad \\ln 5, \\quad 4.35\\\\%$$",
                 "feedback": "It looks like you divided by the estimated value in the denominator of your percentage error formula. Remember that the base of the percentage error is always the exact (true) value, which is $\\ln 5$."
             },
             {
-                "ans": "$$0.842, \\quad \\ln 5, \\quad 47.7\\%$$",
+                "ans": "$$0.842, \\quad \\ln 5, \\quad 47.7\\\\%$$",
                 "feedback": "You may have forgotten the factor of $2$ on the middle terms when calculating your trapezium estimate, leading to a much lower approximation and a huge percentage error."
             }
         ],
@@ -536,13 +536,13 @@ window.ALEVEL_QUESTIONS = [
         "img": false,
         "question": "Prove by exhaustion that $n^2 + n + 11$ is a prime number for all integers $n$ such that $1 \\le n \\le 5$.",
         "steps": [
-            "A proof by exhaustion requires us to test every individual value of $n$ within the given domain, which is $n \\in \\{1, 2, 3, 4, 5\\}$.",
+            "A proof by exhaustion requires us to test every individual value of $n$ within the given domain, which is $n \\in \\\\{1, 2, 3, 4, 5\\\\}$.",
             "Test $n = 1$:<br>$$1^2 + 1 + 11 = 1 + 1 + 11 = 13$$<br>Since $13$ is only divisible by $1$ and itself, it is a prime number.",
             "Test $n = 2$:<br>$$2^2 + 2 + 11 = 4 + 2 + 11 = 17$$<br>Since $17$ is only divisible by $1$ and itself, it is a prime number.",
             "Test $n = 3$:<br>$$3^2 + 3 + 11 = 9 + 3 + 11 = 23$$<br>Since $23$ is only divisible by $1$ and itself, it is a prime number.",
             "Test $n = 4$:<br>$$4^2 + 4 + 11 = 16 + 4 + 11 = 31$$<br>Since $31$ is only divisible by $1$ and itself, it is a prime number.",
             "Test $n = 5$:<br>$$5^2 + 5 + 11 = 25 + 5 + 11 = 41$$<br>Since $41$ is only divisible by $1$ and itself, it is a prime number.",
-            "Since we have tested every single integer in the domain $1 \\le n \\le 5$ and obtained a prime number in each case, the claim is proven by exhaustion.<br><br>Final Answer: $$13, \\, 17, \\, 23, \\, 31, \\, 41 \\text{ are prime}$$"
+            "Since we have tested every single integer in the domain $1 \\le n \\le 5$ and obtained a prime number in each case, the claim is proven by exhaustion.<br><br>Final Answer: $$13, \\\\, 17, \\\\, 23, \\\\, 31, \\\\, 41 \\text{ are prime}$$"
         ],
         "pi_options": [
             {
@@ -554,7 +554,7 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "This is a valid counterexample showing that the formula does not work for all integers $n$. However, the question only asks you to prove the claim for the specific domain $1 \\le n \\le 5$. Counterexamples outside this domain are irrelevant to the proof."
             },
             {
-                "ans": "$$13, \\, 17, \\, 23, \\, 31$$",
+                "ans": "$$13, \\\\, 17, \\\\, 23, \\\\, 31$$",
                 "feedback": "Your working is incomplete. You have missed the final case $n = 5$. To complete a proof by exhaustion, you must show the calculation for every single value in the specified domain."
             }
         ],
@@ -579,7 +579,7 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "To prove this claim by contradiction, we begin by assuming the opposite of our claim is true:<br>Assume that the sum of a rational number $r$ and an irrational number $x$ is a rational number, which we will call $q$.",
             "Write this assumption as an equation:<br>$$r + x = q$$",
-            "Since $r$ and $q$ are rational numbers, they can be written as ratios of integers. Let $r = \\dfrac{a}{b}$ (where $a, b \\in \\mathbb{Z}, \\, b \\ne 0$) and $q = \\dfrac{c}{d}$ (where $c, d \\in \\mathbb{Z}, \\, d \\ne 0$):<br>$$\\dfrac{a}{b} + x = \\dfrac{c}{d}$$",
+            "Since $r$ and $q$ are rational numbers, they can be written as ratios of integers. Let $r = \\dfrac{a}{b}$ (where $a, b \\in \\mathbb{Z}, \\\\, b \\ne 0$) and $q = \\dfrac{c}{d}$ (where $c, d \\in \\mathbb{Z}, \\\\, d \\ne 0$):<br>$$\\dfrac{a}{b} + x = \\dfrac{c}{d}$$",
             "Rearrange the equation to isolate the irrational number $x$:<br>$$x = q - r$$<br>$$x = \\dfrac{c}{d} - \\dfrac{a}{b}$$",
             "Combine the rational fractions over a common denominator:<br>$$x = \\dfrac{bc - ad}{bd}$$",
             "Since $a, b, c,$ and $d$ are integers, both $(bc - ad)$ and $bd$ must be integers. Additionally, since $b \\ne 0$ and $d \\ne 0$, their product $bd \\ne 0$.",
@@ -832,10 +832,10 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "Since $(x - 3)$ is a factor of $f(x)$, we divide $2x^3 - 5x^2 - 4x + 3$ by $(x - 3)$ using algebraic long division or synthetic division to find the quadratic factor:<br>$$2x^3 - 5x^2 - 4x + 3 = \\left(x - 3\\right)\\left(2x^2 + x - 1\\right)$$Base factors can be checked by expansion.",
             "Factorise the quadratic factor $2x^2 + x - 1$ into linear brackets:<br>$$2x^2 + x - 1 = \\left(2x - 1\\right)\\left(x + 1\\right)$$<br>Combining these yields the fully factorised form of $f(x)$:<br>$$f(x) = \\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right)$$",
-            "To sketch the graph of $y = f(x)$, find the axes intercepts:<br>The $x$-intercepts occur where $f(x) = 0 \\implies x = 3, \\, x = 0.5, \\, x = -1$. These are the points $(3, 0)$, $(0.5, 0)$, and $(-1, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies f(0) = 3$. This is the point $(0, 3)$.<br><br>Since the leading coefficient $2$ is positive, the cubic curve starts in the bottom-left and heads up to the top-right:<br><br><img src='images/p1/004171_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "To sketch the graph of $y = f(x)$, find the axes intercepts:<br>The $x$-intercepts occur where $f(x) = 0 \\implies x = 3, \\\\, x = 0.5, \\\\, x = -1$. These are the points $(3, 0)$, $(0.5, 0)$, and $(-1, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies f(0) = 3$. This is the point $(0, 3)$.<br><br>Since the leading coefficient $2$ is positive, the cubic curve starts in the bottom-left and heads up to the top-right:<br><br><img src='images/p1/004171_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
             "To solve the inequality $f(x) < 0$, determine the intervals where the cubic curve lies below the $x$-axis. The roots partition the $x$-axis into intervals: $x < -1$, $-1 < x < 0.5$, $0.5 < x < 3$, and $x > 3$.<br><br>By testing values or observing our sketch, we see that $f(x) < 0$ on:<br>$$x < -1 \\quad \\text{and} \\quad 0.5 < x < 3$$",
-            "Express this solution in formal set notation:<br>$$\\{x : x < -1\\} \\cup \\{x : 0.5 < x < 3\\}$$",
-            "A stretch parallel to the $x$-axis with a scale factor of $\\dfrac{1}{3}$ replaces $x$ with $3x$ in the equation:<br>$$y = 2\\left(3x\\right)^3 - 5\\left(3x\\right)^2 - 4\\left(3x\\right) + 3$$<br>$$y = 2\\left(27x^3\\right) - 5\\left(9x^2\\right) - 12x + 3$$<br>$$y = 54x^3 - 45x^2 - 12x + 3$$<br><br>Final Answer: $$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad \\{x : x < -1\\} \\cup \\{x : 0.5 < x < 3\\}, \\quad y = 54x^3 - 45x^2 - 12x + 3$$"
+            "Express this solution in formal set notation:<br>$$\\\\{x : x < -1\\\\} \\cup \\\\{x : 0.5 < x < 3\\\\}$$",
+            "A stretch parallel to the $x$-axis with a scale factor of $\\dfrac{1}{3}$ replaces $x$ with $3x$ in the equation:<br>$$y = 2\\left(3x\\right)^3 - 5\\left(3x\\right)^2 - 4\\left(3x\\right) + 3$$<br>$$y = 2\\left(27x^3\\right) - 5\\left(9x^2\\right) - 12x + 3$$<br>$$y = 54x^3 - 45x^2 - 12x + 3$$<br><br>Final Answer: $$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad \\\\{x : x < -1\\\\} \\cup \\\\{x : 0.5 < x < 3\\\\}, \\quad y = 54x^3 - 45x^2 - 12x + 3$$"
         ],
         "pi_options": [
             {
@@ -843,11 +843,11 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "This is a numerical value. Make sure you answer the specific parts of the question, providing set notation for the inequality and the full transformed equation."
             },
             {
-                "ans": "$$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad \\{x : -1 < x < 0.5\\} \\cup \\{x : x > 3\\}, \\quad y = 54x^3 - 45x^2 - 12x + 3$$",
+                "ans": "$$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad \\\\{x : -1 < x < 0.5\\\\} \\cup \\\\{x : x > 3\\\\}, \\quad y = 54x^3 - 45x^2 - 12x + 3$$",
                 "feedback": "Check your inequality signs. The intervals you provided are where $f(x) > 0$. The question asks for $f(x) < 0$, which is where the curve lies below the $x$-axis."
             },
             {
-                "ans": "$$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad \\{x : x < -1\\} \\cup \\{x : 0.5 < x < 3\\}, \\quad y = 6x^3 - 15x^2 - 12x + 3$$",
+                "ans": "$$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad \\\\{x : x < -1\\\\} \\cup \\\\{x : 0.5 < x < 3\\\\}, \\quad y = 6x^3 - 15x^2 - 12x + 3$$",
                 "feedback": "When stretching parallel to the $x$-axis with scale factor $\\dfrac{1}{3}$, you must replace $x$ with $3x$ before applying exponents. Remember that $\\left(3x\\right)^3 = 27x^3$ and $\\left(3x\\right)^2 = 9x^2$."
             }
         ],
@@ -869,27 +869,27 @@ window.ALEVEL_QUESTIONS = [
             "Graph Transformations"
         ],
         "img": false,
-        "question": "The cubic polynomial $g(x)$ is defined by $g(x) = x^3 - 6x^2 + 11x - 6$.<br><br>1. Show that $x = 1$ is a root of the equation $g(x) = 0$, and hence express $g(x)$ in a fully factorised form.<br>2. Sketch the graph of $y = g(x)$, indicating the coordinates of any points of intersection with the axes.<br>3. Solve the inequality $g(x) \\ge 0$, giving your answer in set notation.<br>4. The graph of $y = g(x)$ is transformed by a translation of vector $\\begin{pmatrix} 2 \\ -1 \\end{pmatrix}$. Find the equation of the transformed graph.",
+        "question": "The cubic polynomial $g(x)$ is defined by $g(x) = x^3 - 6x^2 + 11x - 6$.<br><br>1. Show that $x = 1$ is a root of the equation $g(x) = 0$, and hence express $g(x)$ in a fully factorised form.<br>2. Sketch the graph of $y = g(x)$, indicating the coordinates of any points of intersection with the axes.<br>3. Solve the inequality $g(x) \\ge 0$, giving your answer in set notation.<br>4. The graph of $y = g(x)$ is transformed by a translation of vector $\\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}$. Find the equation of the transformed graph.",
         "steps": [
             "To prove $x = 1$ is a root, substitute $1$ into the polynomial $g(x)$:<br>$$g(1) = 1^3 - 6(1)^2 + 11(1) - 6 = 1 - 6 + 11 - 6 = 0$$<br>Since $g(1) = 0$, the factor theorem states that $(x - 1)$ is a factor of $g(x)$.",
             "Divide $x^3 - 6x^2 + 11x - 6$ by $(x - 1)$ to find the quadratic factor:<br>$$g(x) = \\left(x - 1\\right)\\left(x^2 - 5x + 6\\right)$$",
             "Factorise the quadratic factor $x^2 - 5x + 6$ into linear terms:<br>$$x^2 - 5x + 6 = \\left(x - 2\\right)\\left(x - 3\\right)$$<br>This gives the fully factorised form:<br>$$g(x) = \\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right)$$",
-            "To sketch the graph of $y = g(x)$, determine the intercepts:<br>The $x$-intercepts occur where $g(x) = 0 \\implies x = 1, \\, x = 2, \\, x = 3$. This gives the points $(1, 0)$, $(2, 0)$, and $(3, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies g(0) = -6$. This is the point $(0, -6)$.<br><br>Sketch the positive cubic passing through these points:<br><br><img src='images/p1/004172_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "To sketch the graph of $y = g(x)$, determine the intercepts:<br>The $x$-intercepts occur where $g(x) = 0 \\implies x = 1, \\\\, x = 2, \\\\, x = 3$. This gives the points $(1, 0)$, $(2, 0)$, and $(3, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies g(0) = -6$. This is the point $(0, -6)$.<br><br>Sketch the positive cubic passing through these points:<br><br><img src='images/p1/004172_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
             "To solve the inequality $g(x) \\ge 0$, find where the curve lies on or above the $x$-axis. From our sketch, this occurs on:<br>$$1 \\le x \\le 2 \\quad \\text{and} \\quad x \\ge 3$$",
-            "Express this solution in set notation:<br>$$\\{x : 1 \\le x \\le 2\\} \\cup \\{x : x \\ge 3\\}$$",
-            "A translation of vector $\\begin{pmatrix} 2 \\ -1 \\end{pmatrix}$ shifts the graph $2$ units to the right and $1$ unit down. This replaces $x$ with $(x - 2)$ and $y$ with $(y + 1)$:<br>$$y + 1 = g\\left(x - 2\\right) \\implies y = g\\left(x - 2\\right) - 1$$<br>Substituting our factorised expression yields:<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$<br><br>Final Answer: $$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\{x : 1 \\le x \\le 2\\} \\cup \\{x : x \\ge 3\\}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$"
+            "Express this solution in set notation:<br>$$\\\\{x : 1 \\le x \\le 2\\\\} \\cup \\\\{x : x \\ge 3\\\\}$$",
+            "A translation of vector $\\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}$ shifts the graph $2$ units to the right and $1$ unit down. This replaces $x$ with $(x - 2)$ and $y$ with $(y + 1)$:<br>$$y + 1 = g\\left(x - 2\\right) \\implies y = g\\left(x - 2\\right) - 1$$<br>Substituting our factorised expression yields:<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$<br><br>Final Answer: $$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\\\{x : 1 \\le x \\le 2\\\\} \\cup \\\\{x : x \\ge 3\\\\}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\{x : x \\le 1\\} \\cup \\{x : 2 \\le x \\le 3\\}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$",
+                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\\\{x : x \\le 1\\\\} \\cup \\\\{x : 2 \\le x \\le 3\\\\}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$",
                 "feedback": "Check your inequality intervals. The regions you selected are where the cubic curve lies below the $x$-axis ($g(x) \\le 0$). The question asks for $g(x) \\ge 0$."
             },
             {
-                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\{x : 1 \\le x \\le 2\\} \\cup \\{x : x \\ge 3\\}, \\quad y = \\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right) - 1$$",
-                "feedback": "It looks like you forgot to apply the horizontal translation. A translation of vector $\\begin{pmatrix} 2 \\ -1 \\end{pmatrix}$ requires replacing $x$ with $(x - 2)$ throughout the function."
+                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\\\{x : 1 \\le x \\le 2\\\\} \\cup \\\\{x : x \\ge 3\\\\}, \\quad y = \\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right) - 1$$",
+                "feedback": "It looks like you forgot to apply the horizontal translation. A translation of vector $\\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}$ requires replacing $x$ with $(x - 2)$ throughout the function."
             },
             {
-                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\{x : 1 \\le x \\le 2\\} \\cup \\{x : x \\ge 3\\}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) + 1$$",
+                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\\\{x : 1 \\le x \\le 2\\\\} \\cup \\\\{x : x \\ge 3\\\\}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) + 1$$",
                 "feedback": "Be careful with the vertical component of the translation vector. A vertical shift of $-1$ requires subtracting $1$ from the function, not adding $1$."
             }
         ],
@@ -917,20 +917,20 @@ window.ALEVEL_QUESTIONS = [
             "Divide $x^3 - 3x^2 + 4$ by $(x + 1)$ to find the quadratic factor:<br>$$h(x) = \\left(x + 1\\right)\\left(x^2 - 4x + 4\\right)$$",
             "Factorise the quadratic factor $x^2 - 4x + 4$:<br>$$x^2 - 4x + 4 = \\left(x - 2\\right)^2$$<br>Thus, the fully factorised form with a repeated factor is:<br>$$h(x) = \\left(x + 1\\right)\\left(x - 2\\right)^2$$",
             "To sketch the graph of $y = h(x)$, determine the intercepts:<br>The $x$-intercepts occur where $h(x) = 0 \\implies x = -1$ and $x = 2$ (repeated root). The points are $(-1, 0)$ and $(2, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies h(0) = 4$. This is the point $(0, 4)$.<br><br>Sketch the curve. Note that because $x = 2$ is a repeated root of even multiplicity, the curve touches the $x$-axis and turns around at $(2, 0)$ instead of crossing it:<br><br><img src='images/p1/004173_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-            "To solve the inequality $h(x) > 0$, find where the curve lies strictly above the $x$-axis. From our sketch, the curve is strictly positive for $x > -1$, except at the repeated root $x = 2$ where $h(2) = 0$.<br><br>Write this solution in set notation:<br>$$\\{x : -1 < x < 2\\} \\cup \\{x : x > 2\\}$$",
-            "A stretch parallel to the $y$-axis with a scale factor of $3$ multiplies the entire function by $3$:<br>$$y = 3h(x) = 3\\left(x^3 - 3x^2 + 4\\right)$$<br>$$y = 3x^3 - 9x^2 + 12$$<br><br>Final Answer: $$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\{x : -1 < x < 2\\} \\cup \\{x : x > 2\\}, \\quad y = 3x^3 - 9x^2 + 12$$"
+            "To solve the inequality $h(x) > 0$, find where the curve lies strictly above the $x$-axis. From our sketch, the curve is strictly positive for $x > -1$, except at the repeated root $x = 2$ where $h(2) = 0$.<br><br>Write this solution in set notation:<br>$$\\\\{x : -1 < x < 2\\\\} \\cup \\\\{x : x > 2\\\\}$$",
+            "A stretch parallel to the $y$-axis with a scale factor of $3$ multiplies the entire function by $3$:<br>$$y = 3h(x) = 3\\left(x^3 - 3x^2 + 4\\right)$$<br>$$y = 3x^3 - 9x^2 + 12$$<br><br>Final Answer: $$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\\\{x : -1 < x < 2\\\\} \\cup \\\\{x : x > 2\\\\}, \\quad y = 3x^3 - 9x^2 + 12$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\{x : x > -1\\}, \\quad y = 3x^3 - 9x^2 + 12$$",
+                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\\\{x : x > -1\\\\}, \\quad y = 3x^3 - 9x^2 + 12$$",
                 "feedback": "This is a common trap. While the curve is above the $x$-axis for almost all values of $x > -1$, it touches the $x$-axis at $x = 2$, which means $h(2) = 0$. Since the inequality is strictly $h(x) > 0$, $x = 2$ must be excluded from the solution set."
             },
             {
-                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\{x : -1 < x < 2\\} \\cup \\{x : x > 2\\}, \\quad y = 27x^3 - 27x^2 + 4$$",
+                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\\\{x : -1 < x < 2\\\\} \\cup \\\\{x : x > 2\\\\}, \\quad y = 27x^3 - 27x^2 + 4$$",
                 "feedback": "You may have applied the scale factor to the horizontal variable instead of the vertical one. A stretch parallel to the $y$-axis with scale factor $3$ requires multiplying the entire function by $3$, not replacing $x$ with $3x$."
             },
             {
-                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\{x : x > -1\\} \\cup \\{2\\}, \\quad y = 3x^3 - 9x^2 + 12$$",
+                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\\\{x : x > -1\\\\} \\cup \\\\{2\\\\}, \\quad y = 3x^3 - 9x^2 + 12$$",
                 "feedback": "This is the solution set for the inequality $h(x) \\ge 0$. Since the inequality is strictly $h(x) > 0$, you must exclude $x = 2$ instead of including it."
             }
         ],
@@ -958,27 +958,27 @@ window.ALEVEL_QUESTIONS = [
             "Divide $3x^2 - x^3 - 4$ (rearranged as $-x^3 + 3x^2 - 4$) by $(x + 1)$ to find the quadratic factor:<br>$$f(x) = \\left(x + 1\\right)\\left(-x^2 + 4x - 4\\right)$$",
             "Factorise out the negative sign to simplify:<br>$$f(x) = -\\left(x + 1\\right)\\left(x^2 - 4x + 4\\right) = -\\left(x + 1\\right)\\left(x - 2\\right)^2$$<br>This is the fully factorised form.",
             "To sketch the graph of $y = f(x)$, determine the axes intercepts:<br>The $x$-intercepts occur where $f(x) = 0 \\implies x = -1$ and $x = 2$ (repeated root). This gives the points $(-1, 0)$ and $(2, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies f(0) = -4$. This is the point $(0, -4)$.<br><br>Since the leading coefficient is negative ($-1$), the curve starts in the top-left and heads down to the bottom-right. It touches the axis and turns around at $(2, 0)$:<br><br><img src='images/p1/004174_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-            "To solve the inequality $f(x) \\ge 0$, find where the curve lies on or above the $x$-axis. From our sketch, this occurs for $x \\le -1$. The curve also touches the axis at $x = 2$, which satisfies $f(2) = 0 \\ge 0$.<br><br>Write this combined solution in set notation:<br>$$\\{x : x \\le -1\\} \\cup \\{2\\}$$",
-            "A reflection in the $x$-axis replaces $y$ with $-y$:<br>$$-y = f(x) \\implies y = -f(x)$$<br>$$y = -\\left(3x^2 - x^3 - 4\\right) = x^3 - 3x^2 + 4$$<br><br>Final Answer: $$-\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\{x : x \\le -1\\} \\cup \\{2\\}, \\quad y = x^3 - 3x^2 + 4$$"
+            "To solve the inequality $f(x) \\ge 0$, find where the curve lies on or above the $x$-axis. From our sketch, this occurs for $x \\le -1$. The curve also touches the axis at $x = 2$, which satisfies $f(2) = 0 \\ge 0$.<br><br>Write this combined solution in set notation:<br>$$\\\\{x : x \\le -1\\\\} \\cup \\\\{2\\\\}$$",
+            "A reflection in the $x$-axis replaces $y$ with $-y$:<br>$$-y = f(x) \\implies y = -f(x)$$<br>$$y = -\\left(3x^2 - x^3 - 4\\right) = x^3 - 3x^2 + 4$$<br><br>Final Answer: $$-\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\\\{x : x \\le -1\\\\} \\cup \\\\{2\\\\}, \\quad y = x^3 - 3x^2 + 4$$"
         ],
         "pi_options": [
             {
-                "ans": "$$-\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\{x : x \\le -1\\}, \\quad y = x^3 - 3x^2 + 4$$",
-                "feedback": "Do not forget the repeated root. Because the inequality is non-strict ($f(x) \\ge 0$), the touching point $x = 2$ satisfies $f(2) = 0$ and must be included in your solution set as the single-element set $\\{2\\}$."
+                "ans": "$$-\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\\\{x : x \\le -1\\\\}, \\quad y = x^3 - 3x^2 + 4$$",
+                "feedback": "Do not forget the repeated root. Because the inequality is non-strict ($f(x) \\ge 0$), the touching point $x = 2$ satisfies $f(2) = 0$ and must be included in your solution set as the single-element set $\\\\{2\\\\}$."
             },
             {
-                "ans": "$$-\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\{x : x \\le -1\\} \\cup \\{2\\}, \\quad y = -x^3 + 3x^2 - 4$$",
+                "ans": "$$-\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\\\{x : x \\le -1\\\\} \\cup \\\\{2\\\\}, \\quad y = -x^3 + 3x^2 - 4$$",
                 "feedback": "It looks like you forgot to apply the reflection. A reflection in the $x$-axis requires negating the entire function, which should flip all the signs of your terms."
             },
             {
-                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\{x : x \\ge -1\\}, \\quad y = x^3 - 3x^2 + 4$$",
+                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\\\{x : x \\ge -1\\\\}, \\quad y = x^3 - 3x^2 + 4$$",
                 "feedback": "Check your factorisation and expansion. The leading coefficient of the original cubic is negative, so there must be a negative sign in front of your factorised expression: $-\\left(x+1\\right)\\left(x-2\\right)^2$."
             }
         ],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Disjoint Single Points",
-            "content": "When solving non-strict inequalities involving negative cubics with repeated roots, keep an eye out for disjoint single-point solutions. The point where the curve touches and turns around from the axis is a single isolated solution that must be represented in set notation using curly brackets: $\\{a\\}$."
+            "content": "When solving non-strict inequalities involving negative cubics with repeated roots, keep an eye out for disjoint single-point solutions. The point where the curve touches and turns around from the axis is a single isolated solution that must be represented in set notation using curly brackets: $\\\\{a\\\\}$."
         }
     },
     {
@@ -997,21 +997,21 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "To express $g(x)$ in fully factorised form, expand the quadratic term $\\left(x^2 - 9\\right)$ using the difference of two squares identity, $a^2 - b^2 = (a-b)(a+b)$:<br>$$x^2 - 9 = \\left(x - 3\\right)\\left(x + 3\\right)$$<br>Substituting this back yields:<br>$$g(x) = \\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right)$$",
             "To sketch the graph of the quartic $y = g(x)$, determine the axes intercepts:<br>The $x$-intercepts occur where $g(x) = 0 \\implies x = 2$ (repeated root), $x = 3$, and $x = -3$. These are the points $(2, 0)$, $(3, 0)$, and $(-3, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies g(0) = (-2)^2(0^2 - 9) = 4(-9) = -36$. This is the point $(0, -36)$.<br><br>Since the leading coefficient of $x^4$ is positive ($+1$), the curve is positive on both ends (heads up to the far-left and far-right). It touches the axis and turns around at $(2, 0)$:<br><br><img src='images/p1/004171_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-            "To solve the inequality $g(x) \\le 0$, find where the curve lies on or below the $x$-axis. From our sketch, the curve lies below the axis between $x = -3$ and $x = 3$. The isolated touching point at $x = 2$ also satisfies $g(2) = 0 \\le 0$ and is naturally included in this continuous interval.<br><br>Write this solution in set notation:<br>$$\\{x : -3 \\le x \\le 3\\}$$",
-            "To map $y = x^4$ onto $y = (2x - 6)^4$, we can rewrite the target equation as $y = \\left[2\\left(x - 3\\right)\\right]^4 = 16\\left(x - 3\\right)^4$.<br><br>This can be achieved by the following sequence of two transformations:<br>1. A horizontal translation $3$ units to the right (vector $\\begin{pmatrix} 3 \\ 0 \\end{pmatrix}$), which transforms $y = x^4$ into $y = (x - 3)^4$.<br>2. A vertical stretch with scale factor $16$ parallel to the $y$-axis, which transforms $y = (x - 3)^4$ into $y = 16(x - 3)^4 = (2x - 6)^4$.<br><br><em>Alternative Sequence:</em> First apply a horizontal stretch parallel to the $x$-axis with scale factor $\\dfrac{1}{2}$ (transforming $x \\to 2x$), followed by a horizontal translation $3$ units to the right (transforming $2x \\to 2(x - 3) = 2x - 6$).",
-            "Final Answer: $$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad \\{x : -3 \\le x \\le 3\\},$$<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$"
+            "To solve the inequality $g(x) \\le 0$, find where the curve lies on or below the $x$-axis. From our sketch, the curve lies below the axis between $x = -3$ and $x = 3$. The isolated touching point at $x = 2$ also satisfies $g(2) = 0 \\le 0$ and is naturally included in this continuous interval.<br><br>Write this solution in set notation:<br>$$\\\\{x : -3 \\le x \\le 3\\\\}$$",
+            "To map $y = x^4$ onto $y = (2x - 6)^4$, we can rewrite the target equation as $y = \\left[2\\left(x - 3\\right)\\right]^4 = 16\\left(x - 3\\right)^4$.<br><br>This can be achieved by the following sequence of two transformations:<br>1. A horizontal translation $3$ units to the right (vector $\\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix}$), which transforms $y = x^4$ into $y = (x - 3)^4$.<br>2. A vertical stretch with scale factor $16$ parallel to the $y$-axis, which transforms $y = (x - 3)^4$ into $y = 16(x - 3)^4 = (2x - 6)^4$.<br><br><em>Alternative Sequence:</em> First apply a horizontal stretch parallel to the $x$-axis with scale factor $\\dfrac{1}{2}$ (transforming $x \\to 2x$), followed by a horizontal translation $3$ units to the right (transforming $2x \\to 2(x - 3) = 2x - 6$).",
+            "Final Answer: $$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad \\\\{x : -3 \\le x \\le 3\\\\},$$<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad \\{x : -3 \\le x \\le 2\\} \\cup \\{x : 2 \\le x \\le 3\\},$$<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
+                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad \\\\{x : -3 \\le x \\le 2\\\\} \\cup \\\\{x : 2 \\le x \\le 3\\\\},$$<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
                 "feedback": "Your inequality intervals are correct, but they can be simplified. Since the point $x = 2$ is included in both parts and satisfies the inequality, the two intervals merge into a single continuous interval: $-3 \\le x \\le 3$."
             },
             {
-                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad \\{x : -3 \\le x \\le 3\\},$$<br>$$ \\text{Horizontal stretch sf } 2 \\text{ then horizontal translation right by } 6$$",
+                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad \\\\{x : -3 \\le x \\le 3\\\\},$$<br>$$ \\text{Horizontal stretch sf } 2 \\text{ then horizontal translation right by } 6$$",
                 "feedback": "Be careful with your scale factors and vector order. A stretch parallel to the $x$-axis with a multiplier of $2$ corresponds to a scale factor of $\\dfrac{1}{2}$, not $2$. Additionally, stretching first and then translating right by $6$ would yield $\\left(2\\left(x-6\\right)\\right)^4 = \\left(2x - 12\\right)^4$, which is incorrect."
             },
             {
-                "ans": "$$\\left(x - 2\\right)^2 \\left(x^2 - 9\\right), \\quad \\{x : -3 \\le x \\le 3\\},$$<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
+                "ans": "$$\\left(x - 2\\right)^2 \\left(x^2 - 9\\right), \\quad \\\\{x : -3 \\le x \\le 3\\\\},$$<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
                 "feedback": "The question asks for the polynomial in a 'fully factorised form as the product of linear factors'. You must expand the quadratic term $\\left(x^2 - 9\\right)$ into its linear components $\\left(x-3\\right)\\left(x+3\\right)$ to score full marks."
             }
         ],
@@ -1114,14 +1114,14 @@ window.ALEVEL_QUESTIONS = [
             "Modelling"
         ],
         "img": false,
-        "question": "An investor deposits £2000 into a savings account on the first day of each year. The account pays a compound interest rate of $4\\%$ per annum, paid on the last day of each year.<br><br>1. Show that the total value of the investment, in pounds, on the last day of the third year (after interest has been added) is $2000(1.04) + 2000(1.04)^2 + 2000(1.04)^3$.<br>2. Use this model to find the total value of the investment immediately after interest is added at the end of the $10\\text{th}$ year, giving your answer to the nearest pound.<br>3. State one assumption made by this model that might not be realistic in the long term.",
+        "question": "An investor deposits £2000 into a savings account on the first day of each year. The account pays a compound interest rate of $4\\\\%$ per annum, paid on the last day of each year.<br><br>1. Show that the total value of the investment, in pounds, on the last day of the third year (after interest has been added) is $2000(1.04) + 2000(1.04)^2 + 2000(1.04)^3$.<br>2. Use this model to find the total value of the investment immediately after interest is added at the end of the $10\\text{th}$ year, giving your answer to the nearest pound.<br>3. State one assumption made by this model that might not be realistic in the long term.",
         "steps": [
             "Trace each deposit to the end of the third year:<br>The first £2000 deposit has been in the account for $3$ full years and has earned compound interest $3$ times, so its value is $2000\\left(1.04\\right)^3$.<br>The second £2000 deposit has been in the account for $2$ full years, so its value is $2000\\left(1.04\\right)^2$.<br>The third £2000 deposit has been in the account for $1$ full year, so its value is $2000\\left(1.04\\right)^1$.",
             "Summing these three components gives the total value of the investment on the last day of the third year:<br>$$\\text{Total} = 2000\\left(1.04\\right) + 2000\\left(1.04\\right)^2 + 2000\\left(1.04\\right)^3$$",
             "This series is a geometric progression where:<br>The first term $a = 2000\\left(1.04\\right) = 2080$<br>The common ratio $r = 1.04$<br>The number of terms $n = 10$",
             "To find the value of the investment at the end of $10$ years, apply the geometric series sum formula $S_n = \\dfrac{a\\left(r^n - 1\\right)}{r - 1}$:<br>$$S_{10} = \\dfrac{2080\\left(1.04^{10} - 1\\right)}{1.04 - 1} = \\dfrac{2080\\left(1.04^{10} - 1\\right)}{0.04}$$",
             "Calculate using high-precision intermediate steps to avoid rounding errors:<br>$$1.04^{10} \\approx 1.480244$$<br>$$S_{10} = \\dfrac{2080\\left(0.480244\\right)}{0.04} = 52000 \\times 0.480244 = 24972.70$$<br>Rounding to the nearest pound, the total value is £24,973.",
-            "One key assumption made by this model is that the interest rate remains constant at $4\\%$ for the entire $10$ years. In reality, savings rates are variable and subject to economic fluctuations. Alternatively, the model assumes the investor never misses a payment and consistently deposits exactly £2000 every single year.<br><br>Final Answer: $$£24,973, \\quad \\text{constant interest rate and fixed annual deposits}$$"
+            "One key assumption made by this model is that the interest rate remains constant at $4\\\\%$ for the entire $10$ years. In reality, savings rates are variable and subject to economic fluctuations. Alternatively, the model assumes the investor never misses a payment and consistently deposits exactly £2000 every single year.<br><br>Final Answer: $$£24,973, \\quad \\text{constant interest rate and fixed annual deposits}$$"
         ],
         "pi_options": [
             {
@@ -1195,9 +1195,9 @@ window.ALEVEL_QUESTIONS = [
             "Modelling"
         ],
         "img": false,
-        "question": "A company buys a piece of machinery for £50,000. At the end of each year, the value of the machinery depreciates by $15\\%$ of its value at the start of that year.<br><br>1. Show that the value of the machinery at the end of the fourth year is £26,100 to the nearest pound.<br>2. Find the total depreciation of the machinery over the first 8 years, giving your answer to the nearest pound.",
+        "question": "A company buys a piece of machinery for £50,000. At the end of each year, the value of the machinery depreciates by $15\\\\%$ of its value at the start of that year.<br><br>1. Show that the value of the machinery at the end of the fourth year is £26,100 to the nearest pound.<br>2. Find the total depreciation of the machinery over the first 8 years, giving your answer to the nearest pound.",
         "steps": [
-            "The initial value of the machinery is $V_0 = 50000$. Since it depreciates by $15\\%$ each year, its value is multiplied by a factor of $(1 - 0.15) = 0.85$ at the end of each year.",
+            "The initial value of the machinery is $V_0 = 50000$. Since it depreciates by $15\\\\%$ each year, its value is multiplied by a factor of $(1 - 0.15) = 0.85$ at the end of each year.",
             "Write the formula for the value of the machinery at the end of year $n$, $V_n = V_0 \\left(0.85\\right)^n$:<br>$$V_n = 50000\\left(0.85\\right)^n$$",
             "To find the value at the end of the fourth year, calculate $V_4$:<br>$$V_4 = 50000\\left(0.85\\right)^4$$<br>$$V_4 = 50000\\left(0.522006\\right) = 26100.31$$<br>Rounding to the nearest pound, the value is £26,100.",
             "To find the total depreciation over the first $8$ years, calculate the remaining value of the machinery at the end of the eighth year, $V_8$:<br>$$V_8 = 50000\\left(0.85\\right)^8$$<br>$$V_8 = 50000\\left(0.272490\\right) = 13624.52$$",
@@ -1242,19 +1242,19 @@ window.ALEVEL_QUESTIONS = [
             "Multiply the entire expansion by the constant factor of $\\dfrac{1}{3}$:<br>$$\\dfrac{1}{3}\\left(1 + \\dfrac{x}{18} + \\dfrac{x^2}{216} + \\dots\\right) = \\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648} + \\dots$$",
             "To find the constants $a$ and $b$, write the rational expression as a product of $(a+bx)$ and the binomial expansion:<br>$$\\dfrac{a + bx}{\\sqrt{9 - x}} = \\left(a + bx\\right)\\left(9 - x\\right)^{-1/2}$$<br>$$\\approx \\left(a + bx\\right)\\left(\\dfrac{1}{3} + \\dfrac{x}{54} + \\dots\\right)$$<br>Expand the terms up to the $x$ term:<br>$$\\text{Expansion} = \\dfrac{a}{3} + \\left(\\dfrac{a}{54} + \\dfrac{b}{3}\\right)x + \\dots$$",
             "Equate this expansion to the given expression $12 - x \\dots$:<br>By comparing the constant terms:<br>$$\\dfrac{a}{3} = 12 \\implies a = 36$$",
-            "By comparing the coefficients of the $x$ terms and substituting $a = 36$:<br>$$\\dfrac{a}{54} + \\dfrac{b}{3} = -1 \\implies \\dfrac{36}{54} + \\dfrac{b}{3} = -1$$<br>$$\\dfrac{2}{3} + \\dfrac{b}{3} = -1 \\implies 2 + b = -3 \\implies b = -5$$<br><br>Final Answer: $$\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a = 36, \\, b = -5$$"
+            "By comparing the coefficients of the $x$ terms and substituting $a = 36$:<br>$$\\dfrac{a}{54} + \\dfrac{b}{3} = -1 \\implies \\dfrac{36}{54} + \\dfrac{b}{3} = -1$$<br>$$\\dfrac{2}{3} + \\dfrac{b}{3} = -1 \\implies 2 + b = -3 \\implies b = -5$$<br><br>Final Answer: $$\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a = 36, \\\\, b = -5$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\dfrac{1}{3} - \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a = 36, \\, b = -5$$",
+                "ans": "$$\\dfrac{1}{3} - \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a = 36, \\\\, b = -5$$",
                 "feedback": "Be careful with signs. Since both $n = -\\dfrac{1}{2}$ and the horizontal variable $-\\dfrac{x}{9}$ are negative, their product in the second term is positive: $\\left(-\\dfrac{1}{2}\\right)\\left(-\\dfrac{x}{9}\\right) = +\\dfrac{x}{18}$. Your second term must be positive."
             },
             {
-                "ans": "$$\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a = 12, \\, b = -5$$",
+                "ans": "$$\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a = 12, \\\\, b = -5$$",
                 "feedback": "It looks like you forgot to apply the factor of $\\dfrac{1}{3}$ when equating the constant term. The constant term of your expansion is $\\dfrac{a}{3}$, so $\\dfrac{a}{3} = 12 \\implies a = 36$, not $12$."
             },
             {
-                "ans": "$$\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a = 36, \\, b = -11$$",
+                "ans": "$$\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a = 36, \\\\, b = -11$$",
                 "feedback": "You may have made an error when solving the simultaneous equation for $b$. Verify that $\\dfrac{2}{3} + \\dfrac{b}{3} = -1 \\implies 2 + b = -3$, which yields $b = -5$."
             }
         ],
@@ -1283,19 +1283,19 @@ window.ALEVEL_QUESTIONS = [
             "To find $a$ and $b$, multiply the linear factor by our binomial expansion series up to the quadratic term:<br>$$\\left(1 + ax\\right)\\left(1 + 2x\\right)^{-1} \\approx \\left(1 + ax\\right)\\left(1 - 2x + 4x^2\\right)$$",
             "Expand the brackets and group terms by powers of $x$:<br>$$= 1\\left(1 - 2x + 4x^2\\right) + ax\\left(1 - 2x\\right)$$<br>$$= 1 - 2x + 4x^2 + ax - 2ax^2$$<br>$$= 1 + \\left(a - 2\\right)x + \\left(4 - 2a\\right)x^2$$",
             "Compare this result with the given expansion $1 + 5x + bx^2 \\dots$:<br>By comparing the coefficients of the $x$ terms:<br>$$a - 2 = 5 \\implies a = 7$$",
-            "By comparing the coefficients of the $x^2$ terms and substituting $a = 7$:<br>$$b = 4 - 2a \\implies b = 4 - 2\\left(7\\right) = 4 - 14 = -10$$<br><br>Final Answer: $$1 - 2x + 4x^2, \\quad |x| < \\dfrac{1}{2}, \\quad a = 7, \\, b = -10$$"
+            "By comparing the coefficients of the $x^2$ terms and substituting $a = 7$:<br>$$b = 4 - 2a \\implies b = 4 - 2\\left(7\\right) = 4 - 14 = -10$$<br><br>Final Answer: $$1 - 2x + 4x^2, \\quad |x| < \\dfrac{1}{2}, \\quad a = 7, \\\\, b = -10$$"
         ],
         "pi_options": [
             {
-                "ans": "$$1 - 2x + 4x^2, \\quad |x| < 2, \\quad a = 7, \\, b = -10$$",
+                "ans": "$$1 - 2x + 4x^2, \\quad |x| < 2, \\quad a = 7, \\\\, b = -10$$",
                 "feedback": "Check your interval of validity. The condition is $|2x| < 1$, which requires dividing $1$ by $2$, yielding $|x| < \\dfrac{1}{2}$, not $|x| < 2$."
             },
             {
-                "ans": "$$1 - 2x + 4x^2, \\quad |x| < \\dfrac{1}{2}, \\quad a = 7, \\, b = 18$$",
+                "ans": "$$1 - 2x + 4x^2, \\quad |x| < \\dfrac{1}{2}, \\quad a = 7, \\\\, b = 18$$",
                 "feedback": "Be careful with the signs in your algebraic expansion. The coefficient of the $x^2$ term is $4 - 2a$. Substituting $a = 7$ yields $4 - 14 = -10$, not $18$."
             },
             {
-                "ans": "$$1 + 2x + 4x^2, \\quad |x| < \\dfrac{1}{2}, \\quad a = 3, \\, b = -2$$",
+                "ans": "$$1 + 2x + 4x^2, \\quad |x| < \\dfrac{1}{2}, \\quad a = 3, \\\\, b = -2$$",
                 "feedback": "Ensure you apply the correct alternating signs for the negative index expansion. The expansion of $(1+y)^{-1}$ is $1 - y + y^2 - \\dots$, which yields $1 - 2x + 4x^2$, not $1 + 2x + 4x^2$."
             }
         ],
@@ -1482,7 +1482,7 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "To find the range of the rational function $g(x)$, let $y = g(x)$ and rearrange the equation to express $x$ in terms of $y$:<br>$$y = \\dfrac{2x + 3}{x - 1}$$<br>$$y\\left(x - 1\\right) = 2x + 3 \\implies yx - y = 2x + 3$$",
             "Group the $x$ terms on one side of the equation:<br>$$yx - 2x = y + 3 \\implies x\\left(y - 2\\right) = y + 3$$<br>$$x = \\dfrac{y + 3}{y - 2}$$",
-            "For $x$ to be defined as a real number, the denominator of this fraction cannot be zero:<br>$$y - 2 \\ne 0 \\implies y \\ne 2$$<br>So, the range of $g(x)$ is all real numbers except $2$. In set notation, this is $\\{y \\in \\mathbb{R} : y \\ne 2\\}$.",
+            "For $x$ to be defined as a real number, the denominator of this fraction cannot be zero:<br>$$y - 2 \\ne 0 \\implies y \\ne 2$$<br>So, the range of $g(x)$ is all real numbers except $2$. In set notation, this is $\\\\{y \\in \\mathbb{R} : y \\ne 2\\\\}$.",
             "To find the composite function $gh(x)$, substitute $h(x) = x^2 - 2$ in place of $x$ inside the function $g(x)$:<br>$$gh(x) = g\\left(h\\left(x\\right)\\right) = g\\left(x^2 - 2\\right) = \\dfrac{2\\left(x^2 - 2\\right) + 3}{\\left(x^2 - 2\\right) - 1}$$",
             "Expand and simplify the numerator and denominator:<br>$$gh(x) = \\dfrac{2x^2 - 4 + 3}{x^2 - 3} = \\dfrac{2x^2 - 1}{x^2 - 3}$$",
             "The composite function $gh(x)$ is not defined when the denominator is zero:<br>$$x^2 - 3 = 0 \\implies x^2 = 3 \\implies x = \\pm\\sqrt{3}$$<br>Additionally, the domain of $gh(x)$ requires that the output of $h(x)$ is within the domain of $g(x)$. Since $g(x)$ is undefined at $x = 1$, we must also exclude $h(x) = 1 \\implies x^2 - 2 = 1 \\implies x = \\pm\\sqrt{3}$, which yields the exact same restriction.<br><br>Final Answer: $$y \\ne 2, \\quad gh(x) = \\dfrac{2x^2 - 1}{x^2 - 3} \\text{ for } x \\ne \\pm\\sqrt{3}$$"
@@ -1527,19 +1527,19 @@ window.ALEVEL_QUESTIONS = [
             "Substitute $f(x)$ back in place of $y$, which gives us two separate modulus equations to solve for $x$:<br>$$\\text{Case 1: } f(x) = 0 \\quad \\text{and} \\quad \\text{Case 2: } f(x) = 5$$",
             "Solve **Case 1**: $f(x) = 0$:<br>$$|2x - 5| - 3 = 0 \\implies |2x - 5| = 3$$<br>$$2x - 5 = 3 \\implies 2x = 8 \\implies x = 4$$<br>$$2x - 5 = -3 \\implies 2x = 2 \\implies x = 1$$",
             "Solve **Case 2**: $f(x) = 5$:<br>$$|2x - 5| - 3 = 5 \\implies |2x - 5| = 8$$<br>$$2x - 5 = 8 \\implies 2x = 13 \\implies x = \\dfrac{13}{2} = 6.5$$<br>$$2x - 5 = -8 \\implies 2x = -3 \\implies x = -\\dfrac{3}{2} = -1.5$$",
-            "Combine all solutions to obtain our final set of roots:<br>$$x = -1.5, \\quad 1, \\quad 4, \\quad 6.5$$<br><br>Final Answer: $$y \\ge -3, \\quad x = -1.5, \\, 1, \\, 4, \\, 6.5$$"
+            "Combine all solutions to obtain our final set of roots:<br>$$x = -1.5, \\quad 1, \\quad 4, \\quad 6.5$$<br><br>Final Answer: $$y \\ge -3, \\quad x = -1.5, \\\\, 1, \\\\, 4, \\\\, 6.5$$"
         ],
         "pi_options": [
             {
-                "ans": "$$y \\ge 3, \\quad x = 1, \\, 4, \\, 6.5, \\, -1.5$$",
+                "ans": "$$y \\ge 3, \\quad x = 1, \\\\, 4, \\\\, 6.5, \\\\, -1.5$$",
                 "feedback": "Check the range of your modulus function. The vertical shift is $-3$, which means the minimum value of $f(x)$ is $-3$, not $+3$. Thus, the range must be $y \\ge -3$."
             },
             {
-                "ans": "$$y \\ge -3, \\quad x = 4, \\, 6.5$$",
+                "ans": "$$y \\ge -3, \\quad x = 4, \\\\, 6.5$$",
                 "feedback": "You have only solved the positive cases for your modulus equations. Remember that a modulus equation of the form $|Ax+B| = C$ must be solved for both $Ax+B = C$ and $Ax+B = -C$ to capture all valid real roots."
             },
             {
-                "ans": "$$y \\ge -3, \\quad x = 1, \\, 4$$",
+                "ans": "$$y \\ge -3, \\quad x = 1, \\\\, 4$$",
                 "feedback": "It looks like you only solved the first case $f(x) = 0$. You must also solve the second case $f(x) = 5$ to get the complete set of four real roots."
             }
         ],
@@ -1568,19 +1568,19 @@ window.ALEVEL_QUESTIONS = [
             "To find $f^{-1}(x)$, let $y = \\left(x - 2\\right)^2$ and solve for $x$ in terms of $y$:<br>$$\\sqrt{y} = x - 2 \\implies x = 2 + \\sqrt{y}$$<br>Since our domain is $x \\ge 2$, we choose the positive square root. Replace variables to write the inverse function:<br>$$f^{-1}(x) = 2 + \\sqrt{x} \\quad \\text{for} \\quad x \\ge 0$$",
             "To solve the equation $f(x) = f^{-1}(x)$, we use the mathematical identity that any intersection between a function and its inverse must lie along the line of symmetry $y = x$. Therefore, we solve:<br>$$f(x) = x \\implies x^2 - 4x + 4 = x$$",
             "Rearrange to form a standard quadratic equation:<br>$$x^2 - 5x + 4 = 0$$<br>Factorise the quadratic:<br>$$\\left(x - 1\\right)\\left(x - 4\\right) = 0 \\implies x = 1 \\quad \\text{or} \\quad x = 4$$",
-            "Verify our solutions against the original domain constraints. Since the domain of $f(x)$ is strictly $x \\ge 2$, we must discard $x = 1$. This leaves the unique real solution:<br>$$x = 4$$<br><br>Final Answer: $$f^{-1}(x) = 2 + \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x = 4$$"
+            "Verify our solutions against the original domain constraints. Since the domain of $f(x)$ is strictly $x \\ge 2$, we must discard $x = 1$. This leaves the unique real solution:<br>$$x = 4$$<br><br>Final Answer: $$f^{-1}(x) = 2 + \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\\\, \\text{range } y \\ge 2, \\quad x = 4$$"
         ],
         "pi_options": [
             {
-                "ans": "$$f^{-1}(x) = 2 + \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x = 1 \\text{ or } x = 4$$",
+                "ans": "$$f^{-1}(x) = 2 + \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\\\, \\text{range } y \\ge 2, \\quad x = 1 \\text{ or } x = 4$$",
                 "feedback": "You have forgotten to check your solutions against the domain of the original function. Since $f(x)$ is only defined for $x \\ge 2$, the solution $x = 1$ is invalid and must be discarded."
             },
             {
-                "ans": "$$f^{-1}(x) = 2 \\pm \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x = 4$$",
+                "ans": "$$f^{-1}(x) = 2 \\pm \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\\\, \\text{range } y \\ge 2, \\quad x = 4$$",
                 "feedback": "An inverse function must be strictly single-valued to be a valid function. Since the range of $f^{-1}$ is $y \\ge 2$, you must only select the positive root, $2 + \\sqrt{x}$."
             },
             {
-                "ans": "$$f^{-1}(x) = \\sqrt{x} - 2, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x = 4$$",
+                "ans": "$$f^{-1}(x) = \\sqrt{x} - 2, \\quad \\text{domain } x \\ge 0, \\\\, \\text{range } y \\ge 2, \\quad x = 4$$",
                 "feedback": "It looks like you made a sign error when isolating $x$. Since $x - 2 = \\sqrt{y}$, adding $2$ to both sides yields $x = 2 + \\sqrt{y}$, not $\\sqrt{y} - 2$."
             }
         ],
@@ -1690,7 +1690,7 @@ window.ALEVEL_QUESTIONS = [
             "Apply the parametric differentiation formula:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{\\dfrac{\\text{d}y}{\\text{d}\\theta}}{\\dfrac{\\text{d}x}{\\text{d}\\theta}} = \\dfrac{4\\cos\\theta}{-3\\sin\\theta} = -\\dfrac{4}{3}\\cot\\theta$$",
             "To find the tangent at $\\theta = \\dfrac{\\pi}{4}$, first evaluate the coordinates of the point of contact:<br>$$x_1 = 3\\cos\\left(\\dfrac{\\pi}{4}\\right) = \\dfrac{3\\sqrt{2}}{2}$$<br>$$y_1 = 4\\sin\\left(\\dfrac{\\pi}{4}\\right) = 4\\left(\\dfrac{\\sqrt{2}}{2}\\right) = 2\\sqrt{2}$$",
             "Evaluate the gradient of the tangent at $\\theta = \\dfrac{\\pi}{4}$:<br>$$m = -\\dfrac{4}{3}\\cot\\left(\\dfrac{\\pi}{4}\\right) = -\\dfrac{4}{3}\\left(1\\right) = -\\dfrac{4}{3}$$",
-            "Write the equation of the tangent line passing through $\\left(\\dfrac{3\\sqrt{2}}{2}, \\, 2\\sqrt{2}\\right)$ using the point-slope formula:<br>$$y - 2\\sqrt{2} = -\\dfrac{4}{3}\\left(x - \\dfrac{3\\sqrt{2}}{2}\\right)$$",
+            "Write the equation of the tangent line passing through $\\left(\\dfrac{3\\sqrt{2}}{2}, \\\\, 2\\sqrt{2}\\right)$ using the point-slope formula:<br>$$y - 2\\sqrt{2} = -\\dfrac{4}{3}\\left(x - \\dfrac{3\\sqrt{2}}{2}\\right)$$",
             "Multiply by $3$ and collect terms to rearrange into the form $ax + by = c$:<br>$$3\\left(y - 2\\sqrt{2}\\right) = -4\\left(x - \\dfrac{3\\sqrt{2}}{2}\\right)$$<br>$$3y - 6\\sqrt{2} = -4x + 6\\sqrt{2} \\implies 4x + 3y = 12\\sqrt{2}$$",
             "To find the Cartesian equation, rearrange the parametric equations to isolate the trigonometric functions:<br>$$\\cos\\theta = \\dfrac{x}{3} \\quad \\text{and} \\quad \\sin\\theta = \\dfrac{y}{4}$$<br>Substitute these into the fundamental Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$:<br>$$\\left(\\dfrac{x}{3}\\right)^2 + \\left(\\dfrac{y}{4}\\right)^2 = 1 \\implies \\dfrac{x^2}{9} + \\dfrac{y^2}{16} = 1$$<br><br>Final Answer: $$-\\dfrac{4}{3}\\cot\\theta, \\quad 4x + 3y = 12\\sqrt{2}, \\quad \\dfrac{x^2}{9} + \\dfrac{y^2}{16} = 1$$"
         ],
@@ -1969,9 +1969,9 @@ window.ALEVEL_QUESTIONS = [
             "Rates of Change"
         ],
         "img": false,
-        "question": "The concentration of a drug in a patient's bloodstream, $C\\text{ mg/L}$, at time $t$ hours after injection is modelled by the equation $C = 50e^{-0.25t}$ for $t \\ge 0$.<br><br>1. Find the time at which the concentration has decreased to $10\\%$ of its initial value, giving your answer correct to 3 significant figures.<br>2. Differentiate the equation to find the rate of change of concentration, $\\dfrac{\\text{d}C}{\\text{d}t}$, and calculate the magnitude of this rate when $t = 4$ hours, giving your answer correct to 3 significant figures.",
+        "question": "The concentration of a drug in a patient's bloodstream, $C\\text{ mg/L}$, at time $t$ hours after injection is modelled by the equation $C = 50e^{-0.25t}$ for $t \\ge 0$.<br><br>1. Find the time at which the concentration has decreased to $10\\\\%$ of its initial value, giving your answer correct to 3 significant figures.<br>2. Differentiate the equation to find the rate of change of concentration, $\\dfrac{\\text{d}C}{\\text{d}t}$, and calculate the magnitude of this rate when $t = 4$ hours, giving your answer correct to 3 significant figures.",
         "steps": [
-            "First, determine the initial concentration: at $t = 0$, $C = 50e^0 = 50\\text{ mg/L}$. A concentration that is $10\\%$ of this value is $5\\text{ mg/L}$.",
+            "First, determine the initial concentration: at $t = 0$, $C = 50e^0 = 50\\text{ mg/L}$. A concentration that is $10\\\\%$ of this value is $5\\text{ mg/L}$.",
             "Set $C = 5$ and solve for $t$ using natural logarithms:<br>$$5 = 50e^{-0.25t} \\implies e^{-0.25t} = 0.1$$<br>$$-0.25t = \\ln\\left(0.1\\right) = -\\ln\\left(10\\right)$$$$t = \\dfrac{\\ln\\left(10\\right)}{0.25} = 4\\ln\\left(10\\right) \\approx 9.2103 \\text{ hours}$$<br>Rounding to 3 significant figures gives $9.21$ hours.",
             "To find the rate of change of concentration, differentiate $C$ with respect to $t$ using the chain rule:<br>$$\\dfrac{\\text{d}C}{\\text{d}t} = 50\\left(-0.25\\right)e^{-0.25t} = -12.5e^{-0.25t}$$",
             "Evaluate this derivative at the instant when $t = 4$ hours:<br>$$\\dfrac{\\text{d}C}{\\text{d}t} = -12.5e^{-0.25\\left(4\\right)} = -12.5e^{-1}$$<br>$$\\dfrac{\\text{d}C}{\\text{d}t} \\approx -12.5\\left(0.367879\\right) \\approx -4.5985\\text{ mg/L per hour}$$",
@@ -1984,7 +1984,7 @@ window.ALEVEL_QUESTIONS = [
             },
             {
                 "ans": "$$4.00 \\text{ hours}, \\quad 4.60\\text{ mg/L per hour}$$",
-                "feedback": "Check your percentage calculation. It looks like you solved for when the concentration falls by $10\\%$ (leaving $90\\%$ remaining), instead of when it has decreased to $10\\%$ of its initial value."
+                "feedback": "Check your percentage calculation. It looks like you solved for when the concentration falls by $10\\\\%$ (leaving $90\\\\%$ remaining), instead of when it has decreased to $10\\\\%$ of its initial value."
             },
             {
                 "ans": "$$9.21 \\text{ hours}, \\quad 1.15\\text{ mg/L per hour}$$",
@@ -2015,19 +2015,19 @@ window.ALEVEL_QUESTIONS = [
             "Set these two rates of increase equal to each other to find when they are equal:<br>$$18e^{0.06t} = 10e^{0.10t}$$",
             "Isolate the exponential terms on one side of the equation:<br>$$\\dfrac{18}{10} = \\dfrac{e^{0.10t}}{e^{0.06t}} \\implies \\dfrac{9}{5} = e^{0.10t - 0.06t}$$<br>$$e^{0.04t} = \\dfrac{9}{5}$$",
             "Take the natural logarithm of both sides to solve for $t$:<br>$$0.04t = \\ln\\left(\\dfrac{9}{5}\\right)$$",
-            "Express the decimal coefficient $0.04$ as a fraction, $0.04 = \\dfrac{1}{25}$:<br>$$\\dfrac{1}{25}t = \\ln\\left(\\dfrac{9}{5}\\right) \\implies t = 25\\ln\\left(\\dfrac{9}{5}\\right)$$<br>This is exactly in the required form $a\\ln b$, where $a = 25$ is an integer and $b = \\dfrac{9}{5}$ is a rational number.<br><br>Final Answer: $$\\dfrac{\\text{d}X}{\\text{d}t} = 18e^{0.06t}, \\, \\dfrac{\\text{d}Y}{\\text{d}t} = 10e^{0.10t}, \\quad t = 25\\ln\\left(\\dfrac{9}{5}\\right)$$"
+            "Express the decimal coefficient $0.04$ as a fraction, $0.04 = \\dfrac{1}{25}$:<br>$$\\dfrac{1}{25}t = \\ln\\left(\\dfrac{9}{5}\\right) \\implies t = 25\\ln\\left(\\dfrac{9}{5}\\right)$$<br>This is exactly in the required form $a\\ln b$, where $a = 25$ is an integer and $b = \\dfrac{9}{5}$ is a rational number.<br><br>Final Answer: $$\\dfrac{\\text{d}X}{\\text{d}t} = 18e^{0.06t}, \\\\, \\dfrac{\\text{d}Y}{\\text{d}t} = 10e^{0.10t}, \\quad t = 25\\ln\\left(\\dfrac{9}{5}\\right)$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\dfrac{\\text{d}X}{\\text{d}t} = 18e^{0.06t}, \\, \\dfrac{\\text{d}Y}{\\text{d}t} = 10e^{0.10t}, \\quad t = 10\\ln\\left(\\dfrac{9}{5}\\right)$$",
+                "ans": "$$\\dfrac{\\text{d}X}{\\text{d}t} = 18e^{0.06t}, \\\\, \\dfrac{\\text{d}Y}{\\text{d}t} = 10e^{0.10t}, \\quad t = 10\\ln\\left(\\dfrac{9}{5}\\right)$$",
                 "feedback": "Check your final coefficient. The equation is $0.04t = \\ln\\left(\\dfrac{9}{5}\\right)$. Since $0.04 = \\dfrac{1}{25}$, multiplying both sides by $25$ gives $t = 25\\ln\\left(\\dfrac{9}{5}\\right)$, not $10\\ln\\left(\\dfrac{9}{5}\\right)$."
             },
             {
-                "ans": "$$\\dfrac{\\text{d}X}{\\text{d}t} = 18e^{0.06t}, \\, \\dfrac{\\text{d}Y}{\\text{d}t} = 10e^{0.10t}, \\quad t = 25\\ln\\left(1.8\\right)$$",
+                "ans": "$$\\dfrac{\\text{d}X}{\\text{d}t} = 18e^{0.06t}, \\\\, \\dfrac{\\text{d}Y}{\\text{d}t} = 10e^{0.10t}, \\quad t = 25\\ln\\left(1.8\\right)$$",
                 "feedback": "Your numerical answer is mathematically correct, but the question specifically asks for $b$ to be a 'rational number' (which is defined as a ratio of integers). You must write $1.8$ as the fraction $\\dfrac{9}{5}$ to satisfy the required exact form."
             },
             {
-                "ans": "$$\\dfrac{\\text{d}X}{\\text{d}t} = 300e^{0.06t}, \\, \\dfrac{\\text{d}Y}{\\text{d}t} = 100e^{0.10t}, \\quad t = 25\\ln\\left(3\\right)$$",
+                "ans": "$$\\dfrac{\\text{d}X}{\\text{d}t} = 300e^{0.06t}, \\\\, \\dfrac{\\text{d}Y}{\\text{d}t} = 100e^{0.10t}, \\quad t = 25\\ln\\left(3\\right)$$",
                 "feedback": "You may have forgotten to differentiate before setting the equations equal. The question asks when the populations are 'increasing at the same rate', which refers to their derivatives, not their raw populations."
             }
         ],

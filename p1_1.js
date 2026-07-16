@@ -596,7 +596,7 @@ window.ALEVEL_QUESTIONS = [
       "Approximations"
     ],
     "img": false,
-    "question": "A function is defined by:<br>$$f(x) = \\dfrac{1}{\\sqrt{9 - 2x}}.$$<br><strong>(a)</strong> Find the first three terms, in ascending powers of $x$, of the binomial expansion of $f(x)$, giving each coefficient in its simplest form.<br>The expansion can be used to approximate $\\sqrt{3}$. Possible values of $x$ that could be substituted into this expansion are:<br>\\[x = -6, \\quad x = 3, \\quad x = -\\tfrac{1}{2}.\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to an approximation of $\\sqrt{3}$.",
+    "question": "A function is defined by:<br>$$f(x) = \\dfrac{1}{\\sqrt{9 - 2x}}.$$<br><strong>(a)</strong> Find the first three terms, in ascending powers of $x$, of the binomial expansion of $f(x)$, giving each coefficient in its simplest form.<br>The expansion can be used to approximate $\\sqrt{3}$. Possible values of $x$ that could be substituted into this expansion are:<br>\\\\[x = -6, \\quad x = 3, \\quad x = -\\tfrac{1}{2}.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to an approximation of $\\sqrt{3}$.",
     "steps": [
       "<strong>Part (a):</strong> Rewrite $f(x)$ in binomial form by factorising the constant inside the square root:<br>$$f(x) = (9 - 2x)^{-1/2} = \\left[9\\left(1 - \\tfrac{2}{9}x\\right)\\right]^{-1/2} = 9^{-1/2}\\left(1 - \\tfrac{2}{9}x\\right)^{-1/2} = \\tfrac{1}{3}\\left(1 - \\tfrac{2}{9}x\\right)^{-1/2}.$$",
       "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = -\\tfrac{2}{9}x$:<br>$$\\left(1 - \\tfrac{2}{9}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(-\\tfrac{2}{9}x\\right) + \\tfrac{3}{8}\\left(-\\tfrac{2}{9}x\\right)^2 + \\dots$$<br>$$= 1 + \\tfrac{1}{9}x + \\tfrac{1}{54}x^2 + \\dots$$",
@@ -638,7 +638,7 @@ window.ALEVEL_QUESTIONS = [
       "Approximations"
     ],
     "img": false,
-    "question": "Consider the function:<br>$$g(x) = (5 - x)^{-1/2}.$$<br><strong>(a)</strong> Rewrite $g(x)$ in the form $k(1 + mx)^n$ and hence find the first three terms of its binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{5.2}}$. Possible values of $x$ that could be substituted are:<br>\\[x = -0.2, \\quad x = 1, \\quad x = -6.\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ is outside the interval of validity.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{5.2}}$.",
+    "question": "Consider the function:<br>$$g(x) = (5 - x)^{-1/2}.$$<br><strong>(a)</strong> Rewrite $g(x)$ in the form $k(1 + mx)^n$ and hence find the first three terms of its binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{5.2}}$. Possible values of $x$ that could be substituted are:<br>\\\\[x = -0.2, \\quad x = 1, \\quad x = -6.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ is outside the interval of validity.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{5.2}}$.",
     "steps": [
       "<strong>Part (a):</strong> Factorise the constant from the bracket:<br>$$g(x) = (5 - x)^{-1/2} = \\left[5\\left(1 - \\tfrac{1}{5}x\\right)\\right]^{-1/2} = 5^{-1/2}\\left(1 - \\tfrac{1}{5}x\\right)^{-1/2} = \\dfrac{1}{\\sqrt{5}}\\left(1 - \\tfrac{1}{5}x\\right)^{-1/2}.$$",
       "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = -\\tfrac{1}{5}x$:<br>$$\\left(1 - \\tfrac{1}{5}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(-\\tfrac{1}{5}x\\right) + \\tfrac{3}{8}\\left(-\\tfrac{1}{5}x\\right)^2 + \\dots$$<br>$$= 1 + \\tfrac{1}{10}x + \\tfrac{3}{200}x^2 + \\dots$$",
@@ -680,7 +680,7 @@ window.ALEVEL_QUESTIONS = [
       "Approximations"
     ],
     "img": false,
-    "question": "A function is defined by:<br>$$h(x) = \\dfrac{1}{(3 + x)^{1/2}}.$$<br><strong>(a)</strong> Express $h(x)$ in the form $A(1 + Bx)^n$ and find the first three terms of its binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{2.7}}$. Possible values of $x$ are:<br>\\[x = -0.3, \\quad x = 3, \\quad x = -6.\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{2.7}}$.",
+    "question": "A function is defined by:<br>$$h(x) = \\dfrac{1}{(3 + x)^{1/2}}.$$<br><strong>(a)</strong> Express $h(x)$ in the form $A(1 + Bx)^n$ and find the first three terms of its binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{2.7}}$. Possible values of $x$ are:<br>\\\\[x = -0.3, \\quad x = 3, \\quad x = -6.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{2.7}}$.",
     "steps": [
       "<strong>Part (a):</strong> Rewrite $h(x)$ in binomial form by factorising the constant:<br>$$h(x) = (3 + x)^{-1/2} = \\left[3\\left(1 + \\tfrac{1}{3}x\\right)\\right]^{-1/2} = 3^{-1/2}\\left(1 + \\tfrac{1}{3}x\\right)^{-1/2} = \\dfrac{1}{\\sqrt{3}}\\left(1 + \\tfrac{1}{3}x\\right)^{-1/2}.$$",
       "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = \\tfrac{1}{3}x$:<br>$$\\left(1 + \\tfrac{1}{3}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(\\tfrac{1}{3}x\\right) + \\tfrac{3}{8}\\left(\\tfrac{1}{3}x\\right)^2 + \\dots$$<br>$$= 1 - \\tfrac{1}{6}x + \\tfrac{1}{24}x^2 + \\dots$$",
@@ -722,7 +722,7 @@ window.ALEVEL_QUESTIONS = [
       "Approximations"
     ],
     "img": false,
-    "question": "A function is defined by:<br>$$y = (4 + 3x)^{-1/2}.$$<br><strong>(a)</strong> Rewrite $y$ in the form $C(1 + Dx)^n$ and hence find the first three terms of the binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{3.1}}$. Possible values of $x$ are:<br>\\[x = -0.3, \\quad x = 1, \\quad x = -2.\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ is invalid for the expansion.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{3.1}}$.",
+    "question": "A function is defined by:<br>$$y = (4 + 3x)^{-1/2}.$$<br><strong>(a)</strong> Rewrite $y$ in the form $C(1 + Dx)^n$ and hence find the first three terms of the binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{3.1}}$. Possible values of $x$ are:<br>\\\\[x = -0.3, \\quad x = 1, \\quad x = -2.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ is invalid for the expansion.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{3.1}}$.",
     "steps": [
       "<strong>Part (a):</strong> Factorise the constant from the bracket:<br>$$y = (4 + 3x)^{-1/2} = \\left[4\\left(1 + \\tfrac{3}{4}x\\right)\\right]^{-1/2} = 4^{-1/2}\\left(1 + \\tfrac{3}{4}x\\right)^{-1/2} = \\dfrac{1}{2}\\left(1 + \\tfrac{3}{4}x\\right)^{-1/2}.$$",
       "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = \\tfrac{3}{4}x$:<br>$$\\left(1 + \\tfrac{3}{4}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(\\tfrac{3}{4}x\\right) + \\tfrac{3}{8}\\left(\\tfrac{3}{4}x\\right)^2 + \\dots$$<br>$$= 1 - \\tfrac{3}{8}x + \\tfrac{27}{128}x^2 + \\dots$$",
@@ -764,7 +764,7 @@ window.ALEVEL_QUESTIONS = [
       "Approximations"
     ],
     "img": false,
-    "question": "A function is defined by:<br>$$F(x) = \\dfrac{1}{\\sqrt{16 - x}}.$$<br><strong>(a)</strong> Find the first three terms of the binomial expansion of $F(x)$ in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{15.5}}$. Possible values of $x$ are:<br>\\[x = 0.5, \\quad x = -18, \\quad x = 3.\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{15.5}}$.",
+    "question": "A function is defined by:<br>$$F(x) = \\dfrac{1}{\\sqrt{16 - x}}.$$<br><strong>(a)</strong> Find the first three terms of the binomial expansion of $F(x)$ in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{15.5}}$. Possible values of $x$ are:<br>\\\\[x = 0.5, \\quad x = -18, \\quad x = 3.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{15.5}}$.",
     "steps": [
       "<strong>Part (a):</strong> Rewrite $F(x)$ in binomial form by factorising the constant inside the square root:<br>$$F(x) = (16 - x)^{-1/2} = \\left[16\\left(1 - \\tfrac{1}{16}x\\right)\\right]^{-1/2} = 16^{-1/2}\\left(1 - \\tfrac{1}{16}x\\right)^{-1/2} = \\dfrac{1}{4}\\left(1 - \\tfrac{1}{16}x\\right)^{-1/2}.$$",
       "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = -\\tfrac{1}{16}x$:<br>$$\\left(1 - \\tfrac{1}{16}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(-\\tfrac{1}{16}x\\right) + \\tfrac{3}{8}\\left(-\\tfrac{1}{16}x\\right)^2 + \\dots$$<br>$$= 1 + \\tfrac{1}{32}x + \\tfrac{3}{2048}x^2 + \\dots$$",
@@ -810,21 +810,21 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (a):</strong> We complete the square by first factorising out the $3$ from the quadratic and linear terms:<br>$$\\text{f}(x) = 3(x^2 + 2x) + 8$$<br>$$\\text{f}(x) = 3\\left[(x+1)^2 - 1^2\\right] + 8$$<br>$$\\text{f}(x) = 3(x+1)^2 - 3 + 8$$<br>$$\\text{f}(x) = 3(x+1)^2 + 5$$<br>Therefore, the constants are $a = 3$, $b = 1$, and $c = 5$.",
             "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $\\text{f}(0) = 8$, so the curve crosses the $y$-axis at $(0, 8)$.<br>3. <strong>$x$-intercepts:</strong> Setting $3x^2+6x+8 = 0$, the discriminant is $\\Delta = 6^2 - 4(3)(8) = -60 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/p1/004021_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x)$ to find its vertex:<br>$$\\text{g}(x) = 3(x^2 - 4x + 4) + 6x - 7$$<br>$$\\text{g}(x) = 3x^2 - 12x + 12 + 6x - 7 = 3x^2 - 6x + 5$$<br>$$\\text{g}(x) = 3(x^2 - 2x) + 5 = 3\\left[(x-1)^2 - 1\\right] + 5$$<br>$$\\text{g}(x) = 3(x-1)^2 + 2$$",
-            "The vertex of $\\text{f}(x)$ is at $(-1, 5)$ and the vertex of $\\text{g}(x)$ is at $(1, 2)$.<br>To map $(-1, 5)$ onto $(1, 2)$, we shift $+2$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 2 \\ -3 \\end{pmatrix}$</strong>.",
+            "The vertex of $\\text{f}(x)$ is at $(-1, 5)$ and the vertex of $\\text{g}(x)$ is at $(1, 2)$.<br>To map $(-1, 5)$ onto $(1, 2)$, we shift $+2$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x)$ using our completed square form of the denominator:<br>$$\\text{h}(x) = \\dfrac{15}{3(x+1)^2 + 5}$$<br>Since the minimum value of the denominator is $5$ (when $x = -1$), the maximum value of the fraction is $\\frac{15}{5} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 3$</strong>.",
-            "Final Answer: <strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\ Point: (-1,5),\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 2 \\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$"
+            "Final Answer: <strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\ Point: (-1,5),\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\ Point: (-1,5),\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} -2 \\ 3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+2$. Moving from $y = 5$ to $y = 2$ is a vertical shift of $-3$. This gives the vector $\\begin{pmatrix} 2 \\ -3 \\end{pmatrix}$."
+                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\ Point: (-1,5),\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} -2 \\\\ 3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$",
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+2$. Moving from $y = 5$ to $y = 2$ is a vertical shift of $-3$. This gives the vector $\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\ Point: (-1,5),\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 2 \\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 3$$",
+                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\ Point: (-1,5),\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 3$$",
                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $3x^2+6x+8$ has a minimum value of $5$ and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < \\text{h}(x) \\le 3$, not $0 \\le \\text{h}(x) \\le 3$."
             },
             {
-                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 11$$ <strong>(b)</strong> $$Turning\\ Point: (-1,11),\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 2 \\ -9 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le \\dfrac{15}{11}$$",
+                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 11$$ <strong>(b)</strong> $$Turning\\ Point: (-1,11),\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 2 \\\\ -9 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le \\dfrac{15}{11}$$",
                 "feedback": "You probably made a sign error when expanding your completed square in Part (a), adding the $3$ instead of subtracting it: $3[(x+1)^2 - 1] + 8 = 3(x+1)^2 - 3 + 8 = 3(x+1)^2 + 5$, not $+11$. This error affected all your subsequent coordinates and calculations."
             }
         ],
@@ -850,21 +850,21 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (a):</strong> We complete the square by first factorising out the $2$ from the quadratic and linear terms:<br>$$\\text{f}(x) = 2(x^2 + 4x) + 12$$<br>$$\\text{f}(x) = 2\\left[(x+2)^2 - 2^2\\right] + 12$$<br>$$\\text{f}(x) = 2(x+2)^2 - 8 + 12$$<br>$$\\text{f}(x) = 2(x+2)^2 + 4$$<br>Therefore, the constants are $a = 2$, $b = 2$, and $c = 4$.",
             "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-2, 4)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $\\text{f}(0) = 12$, so the curve crosses the $y$-axis at $(0, 12)$.<br>3. <strong>$x$-intercepts:</strong> Setting $2x^2+8x+12 = 0$, the discriminant is $\\Delta = 8^2 - 4(2)(12) = -32 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/p1/004022_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x)$ to find its vertex:<br>$$\\text{g}(x) = 2(x^2 - 6x + 9) + 8x - 15$$<br>$$\\text{g}(x) = 2x^2 - 12x + 18 + 8x - 15 = 2x^2 - 4x + 3$$<br>$$\\text{g}(x) = 2(x^2 - 2x) + 3 = 2\\left[(x-1)^2 - 1\\right] + 3$$<br>$$\\text{g}(x) = 2(x-1)^2 + 1$$",
-            "The vertex of $\\text{f}(x)$ is at $(-2, 4)$ and the vertex of $\\text{g}(x)$ is at $(1, 1)$.<br>To map $(-2, 4)$ onto $(1, 1)$, we shift $+3$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\ -3 \\end{pmatrix}$</strong>.",
+            "The vertex of $\\text{f}(x)$ is at $(-2, 4)$ and the vertex of $\\text{g}(x)$ is at $(1, 1)$.<br>To map $(-2, 4)$ onto $(1, 1)$, we shift $+3$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\ -3 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x)$ using our completed square form of the denominator:<br>$$\\text{h}(x) = \\dfrac{12}{2(x+2)^2 + 4}$$<br>Since the minimum value of the denominator is $4$ (when $x = -2$), the maximum value of the fraction is $\\frac{12}{4} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 3$</strong>.",
-            "Final Answer: <strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$Turning\\ Point: (-2,4),\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 3 \\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$"
+            "Final Answer: <strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$Turning\\ Point: (-2,4),\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 3 \\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$Turning\\ Point: (-2,4),\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} -3 \\ 3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -2$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+3$. Moving from $y = 4$ to $y = 1$ is a vertical shift of $-3$. This gives the vector $\\begin{pmatrix} 3 \\ -3 \\end{pmatrix}$."
+                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$Turning\\ Point: (-2,4),\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} -3 \\\\ 3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$",
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -2$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+3$. Moving from $y = 4$ to $y = 1$ is a vertical shift of $-3$. This gives the vector $\\begin{pmatrix} 3 \\\\ -3 \\end{pmatrix}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$Turning\\ Point: (-2,4),\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 3 \\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 3$$",
+                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$Turning\\ Point: (-2,4),\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 3 \\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 3$$",
                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $2x^2+8x+12$ has a minimum value of $4$ and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < \\text{h}(x) \\le 3$, not $0 \\le \\text{h}(x) \\le 3$."
             },
             {
-                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 20$$ <strong>(b)</strong> $$Turning\\ Point: (-2,20),\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 3 \\ -19 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le \\dfrac{3}{5}$$",
+                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 20$$ <strong>(b)</strong> $$Turning\\ Point: (-2,20),\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 3 \\\\ -19 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le \\dfrac{3}{5}$$",
                 "feedback": "You probably made an error when completing the square in Part (a), adding the $8$ instead of subtracting it: $2[(x+2)^2 - 4] + 12 = 2(x+2)^2 - 8 + 12 = 2(x+2)^2 + 4$, not $+20$. This error affected all your subsequent coordinates and calculations."
             }
         ],
@@ -890,21 +890,21 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (a):</strong> We complete the square by first factorising out the $4$ from the quadratic and linear terms:<br>$$\\text{f}(x) = 4(x^2 + 2x) + 7$$<br>$$\\text{f}(x) = 4\\left[(x+1)^2 - 1^2\\right] + 7$$<br>$$\\text{f}(x) = 4(x+1)^2 - 4 + 7$$<br>$$\\text{f}(x) = 4(x+1)^2 + 3$$<br>Therefore, the constants are $a = 4$, $b = 1$, and $c = 3$.",
             "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 3)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $\\text{f}(0) = 7$, so the curve crosses the $y$-axis at $(0, 7)$.<br>3. <strong>$x$-intercepts:</strong> Setting $4x^2+8x+7 = 0$, the discriminant is $\\Delta = 8^2 - 4(4)(7) = -48 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/p1/004023_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x)$ to find its vertex:<br>$$\\text{g}(x) = 4(x^2 - 6x + 9) + 8x - 19$$<br>$$\\text{g}(x) = 4x^2 - 24x + 36 + 8x - 19 = 4x^2 - 16x + 17$$<br>$$\\text{g}(x) = 4(x^2 - 4x) + 17 = 4\\left[(x-2)^2 - 4\\right] + 17$$<br>$$\\text{g}(x) = 4(x-2)^2 - 16 + 17$$<br>$$\\text{g}(x) = 4(x-2)^2 + 1$$",
-            "The vertex of $\\text{f}(x)$ is at $(-1, 3)$ and the vertex of $\\text{g}(x)$ is at $(2, 1)$.<br>To map $(-1, 3)$ onto $(2, 1)$, we shift $+3$ units horizontally and $-2$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\ -2 \\end{pmatrix}$</strong>.",
+            "The vertex of $\\text{f}(x)$ is at $(-1, 3)$ and the vertex of $\\text{g}(x)$ is at $(2, 1)$.<br>To map $(-1, 3)$ onto $(2, 1)$, we shift $+3$ units horizontally and $-2$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\ -2 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x)$ using our completed square form of the denominator:<br>$$\\text{h}(x) = \\dfrac{15}{4(x+1)^2 + 3}$$<br>Since the minimum value of the denominator is $3$ (when $x = -1$), the maximum value of the fraction is $\\frac{15}{3} = 5$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 5$</strong>.",
-            "Final Answer: <strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$Turning\\ Point: (-1,3),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 3 \\ -2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 5$$"
+            "Final Answer: <strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$Turning\\ Point: (-1,3),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 3 \\\\ -2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 5$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$Turning\\ Point: (-1,3),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} -3 \\ 2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 5$$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 2$ is a horizontal shift of $+3$. Moving from $y = 3$ to $y = 1$ is a vertical shift of $-2$. This gives the vector $\\begin{pmatrix} 3 \\ -2 \\end{pmatrix}$."
+                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$Turning\\ Point: (-1,3),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} -3 \\\\ 2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 5$$",
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 2$ is a horizontal shift of $+3$. Moving from $y = 3$ to $y = 1$ is a vertical shift of $-2$. This gives the vector $\\begin{pmatrix} 3 \\\\ -2 \\end{pmatrix}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$Turning\\ Point: (-1,3),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 3 \\ -2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 5$$",
+                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$Turning\\ Point: (-1,3),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 3 \\\\ -2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 5$$",
                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $4x^2+8x+7$ has a minimum value of $3$ and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < \\text{h}(x) \\le 5$, not $0 \\le \\text{h}(x) \\le 5$."
             },
             {
-                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 11$$ <strong>(b)</strong> $$Turning\\ Point: (-1,11),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 3 \\ -10 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le \\dfrac{15}{11}$$",
+                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 11$$ <strong>(b)</strong> $$Turning\\ Point: (-1,11),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 3 \\\\ -10 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le \\dfrac{15}{11}$$",
                 "feedback": "You probably made a sign error when completing the square in Part (a), adding the $4$ instead of subtracting it: $4[(x+1)^2 - 1] + 7 = 4(x+1)^2 - 4 + 7 = 4(x+1)^2 + 3$, not $+11$. This error affected all your subsequent coordinates and calculations."
             }
         ],
@@ -930,21 +930,21 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (a):</strong> We complete the square by first factorising out the $3$ from the quadratic and linear terms:<br>$$\\text{f}(x) = 3(x^2 + 4x) + 18$$<br>$$\\text{f}(x) = 3\\left[(x+2)^2 - 2^2\\right] + 18$$<br>$$\\text{f}(x) = 3(x+2)^2 - 12 + 18$$<br>$$\\text{f}(x) = 3(x+2)^2 + 6$$<br>Therefore, the constants are $a = 3$, $b = 2$, and $c = 6$.",
             "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-2, 6)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $\\text{f}(0) = 18$, so the curve crosses the $y$-axis at $(0, 18)$.<br>3. <strong>$x$-intercepts:</strong> Setting $3x^2+12x+18 = 0$, the discriminant is $\\Delta = 12^2 - 4(3)(18) = -72 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/p1/004024_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x)$ to find its vertex:<br>$$\\text{g}(x) = 3(x^2 - 6x + 9) + 12x - 22$$<br>$$\\text{g}(x) = 3x^2 - 18x + 27 + 12x - 22 = 3x^2 - 6x + 5$$<br>$$\\text{g}(x) = 3(x^2 - 2x) + 5 = 3\\left[(x-1)^2 - 1\\right] + 5$$<br>$$\\text{g}(x) = 3(x-1)^2 - 3 + 5$$<br>$$\\text{g}(x) = 3(x-1)^2 + 2$$",
-            "The vertex of $\\text{f}(x)$ is at $(-2, 6)$ and the vertex of $\\text{g}(x)$ is at $(1, 2)$.<br>To map $(-2, 6)$ onto $(1, 2)$, we shift $+3$ units horizontally and $-4$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\ -4 \\end{pmatrix}$</strong>.",
+            "The vertex of $\\text{f}(x)$ is at $(-2, 6)$ and the vertex of $\\text{g}(x)$ is at $(1, 2)$.<br>To map $(-2, 6)$ onto $(1, 2)$, we shift $+3$ units horizontally and $-4$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x)$ using our completed square form of the denominator:<br>$$\\text{h}(x) = \\dfrac{24}{3(x+2)^2 + 6}$$<br>Since the minimum value of the denominator is $6$ (when $x = -2$), the maximum value of the fraction is $\\frac{24}{6} = 4$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 4$</strong>.",
-            "Final Answer: <strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$Turning\\ Point: (-2,6),\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 3 \\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 4$$"
+            "Final Answer: <strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$Turning\\ Point: (-2,6),\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 4$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$Turning\\ Point: (-2,6),\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} -3 \\ 4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 4$$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -2$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+3$. Moving from $y = 6$ to $y = 2$ is a vertical shift of $-4$. This gives the vector $\\begin{pmatrix} 3 \\ -4 \\end{pmatrix}$."
+                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$Turning\\ Point: (-2,6),\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} -3 \\\\ 4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 4$$",
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -2$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+3$. Moving from $y = 6$ to $y = 2$ is a vertical shift of $-4$. This gives the vector $\\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$Turning\\ Point: (-2,6),\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 3 \\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 4$$",
+                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$Turning\\ Point: (-2,6),\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 4$$",
                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $3x^2+12x+18$ has a minimum value of $6$ and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < \\text{h}(x) \\le 4$, not $0 \\le \\text{h}(x) \\le 4$."
             },
             {
-                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 30$$ <strong>(b)</strong> $$Turning\\ Point: (-2,30),\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 3 \\ -28 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le \\dfrac{4}{5}$$",
+                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 30$$ <strong>(b)</strong> $$Turning\\ Point: (-2,30),\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 3 \\\\ -28 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le \\dfrac{4}{5}$$",
                 "feedback": "You probably made a sign error when completing the square in Part (a), adding the $12$ instead of subtracting it: $3[(x+2)^2 - 4] + 18 = 3(x+2)^2 - 12 + 18 = 3(x+2)^2 + 6$, not $+30$. This error affected all your subsequent coordinates and calculations."
             }
         ],
@@ -970,21 +970,21 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (a):</strong> We complete the square by first factorising out the $2$ from the quadratic and linear terms:<br>$$\\text{f}(x) = 2(x^2 + 2x) + 7$$<br>$$\\text{f}(x) = 2\\left[(x+1)^2 - 1^2\\right] + 7$$<br>$$\\text{f}(x) = 2(x+1)^2 - 2 + 7$$<br>$$\\text{f}(x) = 2(x+1)^2 + 5$$<br>Therefore, the constants are $a = 2$, $b = 1$, and $c = 5$.",
             "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $\\text{f}(0) = 7$, so the curve crosses the $y$-axis at $(0, 7)$.<br>3. <strong>$x$-intercepts:</strong> Setting $2x^2+4x+7 = 0$, the discriminant is $\\Delta = 4^2 - 4(2)(7) = -40 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/p1/004025_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x)$ to find its vertex:<br>$$\\text{g}(x) = 2(x^2 - 6x + 9) + 4x - 9$$<br>$$\\text{g}(x) = 2x^2 - 12x + 18 + 4x - 9 = 2x^2 - 8x + 9$$<br>$$\\text{g}(x) = 2(x^2 - 4x) + 9 = 2\\left[(x-2)^2 - 4\\right] + 9$$<br>$$\\text{g}(x) = 2(x-2)^2 - 8 + 9$$<br>$$\\text{g}(x) = 2(x-2)^2 + 1$$",
-            "The vertex of $\\text{f}(x)$ is at $(-1, 5)$ and the vertex of $\\text{g}(x)$ is at $(2, 1)$.<br>To map $(-1, 5)$ onto $(2, 1)$, we shift $+3$ units horizontally and $-4$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\ -4 \\end{pmatrix}$</strong>.",
+            "The vertex of $\\text{f}(x)$ is at $(-1, 5)$ and the vertex of $\\text{g}(x)$ is at $(2, 1)$.<br>To map $(-1, 5)$ onto $(2, 1)$, we shift $+3$ units horizontally and $-4$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x)$ using our completed square form of the denominator:<br>$$\\text{h}(x) = \\dfrac{10}{2(x+1)^2 + 5}$$<br>Since the minimum value of the denominator is $5$ (when $x = -1$), the maximum value of the fraction is $\\frac{10}{5} = 2$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 2$</strong>.",
-            "Final Answer: <strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\ Point: (-1,5),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 3 \\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 2$$"
+            "Final Answer: <strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\ Point: (-1,5),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 2$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\ Point: (-1,5),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} -3 \\ 4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 2$$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 2$ is a horizontal shift of $+3$. Moving from $y = 5$ to $y = 1$ is a vertical shift of $-4$. This gives the vector $\\begin{pmatrix} 3 \\ -4 \\end{pmatrix}$."
+                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\ Point: (-1,5),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} -3 \\\\ 4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 2$$",
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 2$ is a horizontal shift of $+3$. Moving from $y = 5$ to $y = 1$ is a vertical shift of $-4$. This gives the vector $\\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\ Point: (-1,5),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 3 \\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 2$$",
+                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\ Point: (-1,5),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 2$$",
                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $2x^2+4x+7$ has a minimum value of $5$ and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < \\text{h}(x) \\le 2$, not $0 \\le \\text{h}(x) \\le 2$."
             },
             {
-                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 9$$ <strong>(b)</strong> $$Turning\\ Point: (-1,9),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\ \\begin{pmatrix} 3 \\ -8 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le \\dfrac{10}{9}$$",
+                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 9$$ <strong>(b)</strong> $$Turning\\ Point: (-1,9),\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\ by\\\\ \\begin{pmatrix} 3 \\\\ -8 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le \\dfrac{10}{9}$$",
                 "feedback": "You probably made a sign error when completing the square in Part (a), adding the $2$ instead of subtracting it: $2[(x+1)^2 - 1] + 7 = 2(x+1)^2 - 2 + 7 = 2(x+1)^2 + 5$, not $+9$. This error affected all your subsequent coordinates and calculations."
             }
         ],
@@ -1008,9 +1008,9 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$4\\sin 2\\theta = 7\\cos\\theta.$$Give your answers, where necessary, to one decimal place. Solutions based entirely on graphical or numerical methods are not acceptable.<br><br><strong>(b)</strong> Hence deduce the smallest positive solution of:<br>$$4\\sin(2x + 20^\\circ) = 7\\cos(x + 10^\\circ).$$",
     "steps": [
-      "<strong>Part (a):</strong> Use the identity $$\\sin 2\\theta = 2\\sin\\theta\\cos\\theta.$$<br>$$4(2\\sin\\theta\\cos\\theta) = 7\\cos\\theta$$<br>$$8\\sin\\theta\\cos\\theta - 7\\cos\\theta = 0$$<br>Factorise:<br>$$\\cos\\theta(8\\sin\\theta - 7) = 0.$$<br>This gives two branches:<br><em>Branch 1:</em> $$\\cos\\theta = 0 \\Rightarrow \\theta = -90^\\circ,\\ 90^\\circ.$$<br><em>Branch 2:</em> $$\\sin\\theta = \\frac{7}{8} \\Rightarrow \\theta \\approx 61.0^\\circ,\\ 119.0^\\circ.$$",
+      "<strong>Part (a):</strong> Use the identity $$\\sin 2\\theta = 2\\sin\\theta\\cos\\theta.$$<br>$$4(2\\sin\\theta\\cos\\theta) = 7\\cos\\theta$$<br>$$8\\sin\\theta\\cos\\theta - 7\\cos\\theta = 0$$<br>Factorise:<br>$$\\cos\\theta(8\\sin\\theta - 7) = 0.$$<br>This gives two branches:<br><em>Branch 1:</em> $$\\cos\\theta = 0 \\Rightarrow \\theta = -90^\\circ,\\\\ 90^\\circ.$$<br><em>Branch 2:</em> $$\\sin\\theta = \\frac{7}{8} \\Rightarrow \\theta \\approx 61.0^\\circ,\\\\ 119.0^\\circ.$$",
       "<strong>Part (b):</strong> Note that $$2x + 20^\\circ = 2(x + 10^\\circ).$$ Let $$\\theta = x + 10^\\circ.$$ Then the equation becomes the same as in Part (a).<br>Thus the smallest positive solution is:<br>$$x = 61.0^\\circ - 10^\\circ = 51.0^\\circ.$$",
-      "Final Answer: $$\\theta = -90^\\circ,\\ 61.0^\\circ,\\ 90^\\circ,\\ 119.0^\\circ; \\quad x = 51.0^\\circ.$$"
+      "Final Answer: $$\\theta = -90^\\circ,\\\\ 61.0^\\circ,\\\\ 90^\\circ,\\\\ 119.0^\\circ; \\quad x = 51.0^\\circ.$$"
     ],
     "pi_options": [
       {
@@ -1086,9 +1086,9 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$5\\cos 2\\theta = 8\\sin\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence find the smallest positive solution of:<br>$$5\\cos(2x - 40^\\circ) = 8\\sin(x - 20^\\circ).$$",
     "steps": [
-      "<strong>Part (a):</strong> Use $$\\cos 2\\theta = 1 - 2\\sin^2\\theta.$$<br>Substitute:<br>$$5(1 - 2\\sin^2\\theta) = 8\\sin\\theta$$<br>$$5 - 10\\sin^2\\theta = 8\\sin\\theta$$<br>Rearrange:<br>$$10\\sin^2\\theta + 8\\sin\\theta - 5 = 0.$$<br>Solve the quadratic:<br>$$\\sin\\theta = \\frac{-8 \\pm \\sqrt{264}}{20}.$$<br>Only the positive root is valid: $$\\sin\\theta \\approx 0.4124.$$<br>Thus: $$\\theta \\approx 24.4^\\circ,\\ 155.6^\\circ.$$",
+      "<strong>Part (a):</strong> Use $$\\cos 2\\theta = 1 - 2\\sin^2\\theta.$$<br>Substitute:<br>$$5(1 - 2\\sin^2\\theta) = 8\\sin\\theta$$<br>$$5 - 10\\sin^2\\theta = 8\\sin\\theta$$<br>Rearrange:<br>$$10\\sin^2\\theta + 8\\sin\\theta - 5 = 0.$$<br>Solve the quadratic:<br>$$\\sin\\theta = \\frac{-8 \\pm \\sqrt{264}}{20}.$$<br>Only the positive root is valid: $$\\sin\\theta \\approx 0.4124.$$<br>Thus: $$\\theta \\approx 24.4^\\circ,\\\\ 155.6^\\circ.$$",
       "<strong>Part (b):</strong> Note that $$2x - 40^\\circ = 2(x - 20^\\circ).$$ Let $$\\theta = x - 20^\\circ.$$<br>Smallest positive solution:<br>$$x = 24.4^\\circ + 20^\\circ = 44.4^\\circ.$$",
-      "Final Answer: $$\\theta \\approx 24.4^\\circ,\\ 155.6^\\circ; \\quad x \\approx 44.4^\\circ.$$"
+      "Final Answer: $$\\theta \\approx 24.4^\\circ,\\\\ 155.6^\\circ; \\quad x \\approx 44.4^\\circ.$$"
     ],
     "pi_options": [
       {
@@ -1125,9 +1125,9 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$6\\sin\\theta = 2\\cos 2\\theta.$$<br><br><strong>(b)</strong> Deduce the smallest positive solution of:<br>$$6\\sin(x + 30^\\circ) = 2\\cos(2x + 60^\\circ).$$",
     "steps": [
-      "<strong>Part (a):</strong> Use $$\\cos 2\\theta = 1 - 2\\sin^2\\theta.$$<br>Substitute:<br>$$6\\sin\\theta = 2(1 - 2\\sin^2\\theta)$$<br>$$3\\sin\\theta = 1 - 2\\sin^2\\theta$$<br>Rearrange:<br>$$2\\sin^2\\theta + 3\\sin\\theta - 1 = 0.$$<br>Solve the quadratic:<br>$$\\sin\\theta = \\frac{-3 \\pm \\sqrt{17}}{4}.$$<br>Only the positive root is valid: $$\\sin\\theta \\approx 0.2808.$$<br>Thus: $$\\theta \\approx 16.3^\\circ,\\ 163.7^\\circ.$$",
+      "<strong>Part (a):</strong> Use $$\\cos 2\\theta = 1 - 2\\sin^2\\theta.$$<br>Substitute:<br>$$6\\sin\\theta = 2(1 - 2\\sin^2\\theta)$$<br>$$3\\sin\\theta = 1 - 2\\sin^2\\theta$$<br>Rearrange:<br>$$2\\sin^2\\theta + 3\\sin\\theta - 1 = 0.$$<br>Solve the quadratic:<br>$$\\sin\\theta = \\frac{-3 \\pm \\sqrt{17}}{4}.$$<br>Only the positive root is valid: $$\\sin\\theta \\approx 0.2808.$$<br>Thus: $$\\theta \\approx 16.3^\\circ,\\\\ 163.7^\\circ.$$",
       "<strong>Part (b):</strong> Note that $$2x + 60^\\circ = 2(x + 30^\\circ).$$ Let $$\\theta = x + 30^\\circ.$$<br>Smallest positive solution:<br>$$x = 163.7^\\circ - 30^\\circ = 133.7^\\circ.$$",
-      "Final Answer: $$\\theta \\approx 16.3^\\circ,\\ 163.7^\\circ; \\quad x \\approx 133.7^\\circ.$$"
+      "Final Answer: $$\\theta \\approx 16.3^\\circ,\\\\ 163.7^\\circ; \\quad x \\approx 133.7^\\circ.$$"
     ],
     "pi_options": [
       {
@@ -1206,27 +1206,27 @@ window.ALEVEL_QUESTIONS = [
             "This gives our final exponential equation linking $V$ with $t$:<br>$$V = 15000(0.8)^t$$",
             "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>$$V = 15000(0.8)^8 \\approx 15000 \\times 0.16777 \\approx £2,517$$",
             "The actual monitored value after 8 years is £2,500. Since our model's prediction of £2,517 is extremely close to the actual value, the model is highly reliable over this 8-year period.",
-            "<strong>Part (c):</strong> For motorcycle $B$, which depreciates more slowly, the value must decrease at a slower rate than $20\\%$ per year.<br>Therefore, the base of the exponent (currently $0.8$) must be increased to a value closer to $1$ (for example, $0.85$ or some multiplier $r > 0.8$). The initial value remains at $15000$.",
-            "Final Answer: <strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £2,517\\ vs\\ £2,500)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 15000(r)^t\\ where\\ r > 0.8)$$"
+            "<strong>Part (c):</strong> For motorcycle $B$, which depreciates more slowly, the value must decrease at a slower rate than $20\\\\%$ per year.<br>Therefore, the base of the exponent (currently $0.8$) must be increased to a value closer to $1$ (for example, $0.85$ or some multiplier $r > 0.8$). The initial value remains at $15000$.",
+            "Final Answer: <strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\\\ (\\approx £2,517\\ vs\\\\ £2,500)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 15000(r)^t\\ where\\ r > 0.8)$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$V = 15000 - 3000t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £2,517\\ vs\\ £2,500)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 15000(r)^t\\ where\\ r > 0.8)$$对外",
+                "ans": "<strong>(a)</strong> $$V = 15000 - 3000t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\\\ (\\approx £2,517\\ vs\\\\ £2,500)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 15000(r)^t\\ where\\ r > 0.8)$$对外",
                 "feedback": "You formed a linear depreciation model ($V = 15000 - 3000t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$ or $V = A \\text{e}^{-kt}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £2,517\\ vs\\ £2,500)$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\ (e.g.\\ V = 15000(r)^t\\ where\\ r < 0.8)$$",
+                "ans": "<strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\\\ (\\approx £2,517\\ vs\\\\ £2,500)$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\\\ (e.g.\\ V = 15000(r)^t\\ where\\ r < 0.8)$$",
                 "feedback": "Check your reasoning for Part (c). If motorcycle $B$ depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier $r$ must be larger (closer to $1$) than $0.8$, not smaller."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 15000(0.2)^t$$ <strong>(b)</strong> $$Model\\ is\\ completely\\ unreliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 15000(r)^t\\ where\\ r > 0.8)$$",
-                "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($20\\% = 0.2$) instead of the remaining value multiplier ($1 - 0.2 = 0.8$). This sign error caused your model to predict the motorcycle's value as almost zero after 8 years."
+                "ans": "<strong>(a)</strong> $$V = 15000(0.2)^t$$ <strong>(b)</strong> $$Model\\ is\\ completely\\ unreliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 15000(r)^t\\ where\\ r > 0.8)$$",
+                "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($20\\\\% = 0.2$) instead of the remaining value multiplier ($1 - 0.2 = 0.8$). This sign error caused your model to predict the motorcycle's value as almost zero after 8 years."
             }
         ],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Base Multipliers",
-            "content": "In GCE exponential modeling, the base of the exponent ($b$ in $A b^t$) always represents the proportion of value retained each year. If an asset depreciates by $20\\%$, it retains $80\\%$ of its value, so $b = 0.8$. If it depreciates more slowly, it retains more value, so $b$ must increase closer to $1$."
+            "content": "In GCE exponential modeling, the base of the exponent ($b$ in $A b^t$) always represents the proportion of value retained each year. If an asset depreciates by $20\\\\%$, it retains $80\\\\%$ of its value, so $b = 0.8$. If it depreciates more slowly, it retains more value, so $b$ must increase closer to $1$."
         }
     },
     {
@@ -1247,20 +1247,20 @@ window.ALEVEL_QUESTIONS = [
             "This gives our final exponential equation linking $V$ with $t$:<br>$$V = 50000(0.85)^t$$",
             "<strong>Part (b):</strong> We substitute $t = 12$ into our model to find the predicted value:<br>$$V = 50000(0.85)^{12} \\approx 50000 \\times 0.14224 \\approx £7,112$$",
             "The actual monitored value after 12 years is £10,000. Since our model's prediction of £7,112 significantly underestimates the actual value, the model has weaker reliability over this longer 12-year period (depreciation in reality is slower than the model predicts).",
-            "<strong>Part (c):</strong> For machine $B$, which depreciates more slowly, the value must decrease at a slower rate than $15\\%$ per year.<br>Therefore, the base of the exponent (currently $0.85$) must be increased to a value closer to $1$ (for example, $0.90$ or some multiplier $r > 0.85$). The initial value remains at $50000$.",
-            "Final Answer: <strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$Model\\ is\\ less\\ reliable\\ (underestimates\\ value\\ by\\ \\approx £2,888)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 50000(r)^t\\ where\\ r > 0.85)$$"
+            "<strong>Part (c):</strong> For machine $B$, which depreciates more slowly, the value must decrease at a slower rate than $15\\\\%$ per year.<br>Therefore, the base of the exponent (currently $0.85$) must be increased to a value closer to $1$ (for example, $0.90$ or some multiplier $r > 0.85$). The initial value remains at $50000$.",
+            "Final Answer: <strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$Model\\ is\\ less\\ reliable\\\\ (underestimates\\ value\\ by\\\\ \\approx £2,888)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 50000(r)^t\\ where\\ r > 0.85)$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 50000(r)^t\\ where\\ r > 0.85)$$",
-                "feedback": "You probably evaluated the model's reliability incorrectly in Part (b). Our model's prediction is £7,112, which is significantly lower than the actual value of £10,000. An underestimation of almost $30\\%$ indicates that the model's reliability over this 12-year period is weaker."
+                "ans": "<strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 50000(r)^t\\ where\\ r > 0.85)$$",
+                "feedback": "You probably evaluated the model's reliability incorrectly in Part (b). Our model's prediction is £7,112, which is significantly lower than the actual value of £10,000. An underestimation of almost $30\\\\%$ indicates that the model's reliability over this 12-year period is weaker."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 50000 - 7500t$$ <strong>(b)</strong> $$Model\\ is\\ less\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 50000(r)^t\\ where\\ r > 0.85)$$",
+                "ans": "<strong>(a)</strong> $$V = 50000 - 7500t$$ <strong>(b)</strong> $$Model\\ is\\ less\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 50000(r)^t\\ where\\ r > 0.85)$$",
                 "feedback": "You formed a linear depreciation model ($V = 50000 - 7500t$) instead of an exponential model in Part (a). Make sure you use the standard exponential structure $V = A b^t$."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$Model\\ is\\ less\\ reliable$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\ (e.g.\\ V = 50000(r)^t\\ where\\ r < 0.85)$$",
+                "ans": "<strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$Model\\ is\\ less\\ reliable$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\\\ (e.g.\\ V = 50000(r)^t\\ where\\ r < 0.85)$$",
                 "feedback": "Check your reasoning for Part (c). If machine $B$ depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier $r$ must be larger (closer to $1$) than $0.85$, not smaller."
             }
         ],
@@ -1288,27 +1288,27 @@ window.ALEVEL_QUESTIONS = [
             "This gives our final exponential equation linking $V$ with $t$:<br>$$V = 100000(0.9)^t$$",
             "<strong>Part (b):</strong> We substitute $t = 10$ into our model to find the predicted value:<br>$$V = 100000(0.9)^{10} \\approx 100000 \\times 0.34868 \\approx £34,868$$",
             "The actual monitored value after 10 years is £35,000. Since our model's prediction of £34,868 is extremely close to the actual value, the model is highly reliable over this 10-year period.",
-            "<strong>Part (c):</strong> For yacht $B$, which depreciates more slowly, the value must decrease at a slower rate than $10\\%$ per year.<br>Therefore, the base of the exponent (currently $0.9$) must be increased to a value closer to $1$ (for example, $0.93$ or some multiplier $r > 0.9$). The initial value remains at $100000$.",
-            "Final Answer: <strong>(a)</strong> $$V = 100000(0.9)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £34,868\\ vs\\ £35,000)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 100000(r)^t\\ where\\ r > 0.9)$$"
+            "<strong>Part (c):</strong> For yacht $B$, which depreciates more slowly, the value must decrease at a slower rate than $10\\\\%$ per year.<br>Therefore, the base of the exponent (currently $0.9$) must be increased to a value closer to $1$ (for example, $0.93$ or some multiplier $r > 0.9$). The initial value remains at $100000$.",
+            "Final Answer: <strong>(a)</strong> $$V = 100000(0.9)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\\\ (\\approx £34,868\\ vs\\\\ £35,000)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 100000(r)^t\\ where\\ r > 0.9)$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$V = 100000(0.9)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £34,868\\ vs\\ £35,000)$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\ (e.g.\\ V = 100000(r)^t\\ where\\ r < 0.9)$$",
+                "ans": "<strong>(a)</strong> $$V = 100000(0.9)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\\\ (\\approx £34,868\\ vs\\\\ £35,000)$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\\\ (e.g.\\ V = 100000(r)^t\\ where\\ r < 0.9)$$",
                 "feedback": "Check your reasoning for Part (c). If yacht $B$ depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier $r$ must be larger (closer to $1$) than $0.9$, not smaller."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 100000 - 10000t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 100000(r)^t\\ where\\ r > 0.9)$$",
+                "ans": "<strong>(a)</strong> $$V = 100000 - 10000t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 100000(r)^t\\ where\\ r > 0.9)$$",
                 "feedback": "You formed a linear depreciation model ($V = 100000 - 10000t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 100000(0.1)^t$$ <strong>(b)</strong> $$Model\\ is\\ completely\\ unreliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 100000(r)^t\\ where\\ r > 0.9)$$",
-                "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($10\\% = 0.1$) instead of the remaining value multiplier ($1 - 0.1 = 0.9$). This error caused your model to predict the yacht's value as almost zero after 10 years."
+                "ans": "<strong>(a)</strong> $$V = 100000(0.1)^t$$ <strong>(b)</strong> $$Model\\ is\\ completely\\ unreliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 100000(r)^t\\ where\\ r > 0.9)$$",
+                "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($10\\\\% = 0.1$) instead of the remaining value multiplier ($1 - 0.1 = 0.9$). This error caused your model to predict the yacht's value as almost zero after 10 years."
             }
         ],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Percentage Depreciation",
-            "content": "Always remember that an annual depreciation of $P\\%$ corresponds to an exponential multiplier of $r = 1 - \\frac{P}{100}$. For a luxury yacht depreciating at $10\\%$ per year, the multiplier is $r = 0.9$. This allows you to construct and adapt these models rapidly."
+            "content": "Always remember that an annual depreciation of $P\\\\%$ corresponds to an exponential multiplier of $r = 1 - \\frac{P}{100}$. For a luxury yacht depreciating at $10\\\\%$ per year, the multiplier is $r = 0.9$. This allows you to construct and adapt these models rapidly."
         }
     },
     {
@@ -1329,20 +1329,20 @@ window.ALEVEL_QUESTIONS = [
             "This gives our final exponential equation linking $V$ with $t$:<br>$$V = 40000(0.75)^t$$",
             "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>$$V = 40000(0.75)^8 \\approx 40000 \\times 0.10011 \\approx £4,005$$",
             "The actual monitored value after 8 years is £4,000. Since our model's prediction of £4,005 is extremely close to the actual value, the model is highly reliable over this 8-year period.",
-            "<strong>Part (c):</strong> For tractor $B$, which depreciates more slowly, the value must decrease at a slower rate than $25\\%$ per year.<br>Therefore, the base of the exponent (currently $0.75$) must be increased to a value closer to $1$ (for example, $0.80$ or some multiplier $r > 0.75$). The initial value remains at $40000$.",
-            "Final Answer: <strong>(a)</strong> $$V = 40000(0.75)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £4,005\\ vs\\ £4,000)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 40000(r)^t\\ where\\ r > 0.75)$$"
+            "<strong>Part (c):</strong> For tractor $B$, which depreciates more slowly, the value must decrease at a slower rate than $25\\\\%$ per year.<br>Therefore, the base of the exponent (currently $0.75$) must be increased to a value closer to $1$ (for example, $0.80$ or some multiplier $r > 0.75$). The initial value remains at $40000$.",
+            "Final Answer: <strong>(a)</strong> $$V = 40000(0.75)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\\\ (\\approx £4,005\\ vs\\\\ £4,000)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 40000(r)^t\\ where\\ r > 0.75)$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$V = 40000(0.75)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £4,005\\ vs\\ £4,000)$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\ (e.g.\\ V = 40000(r)^t\\ where\\ r < 0.75)$$",
+                "ans": "<strong>(a)</strong> $$V = 40000(0.75)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\\\ (\\approx £4,005\\ vs\\\\ £4,000)$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\\\ (e.g.\\ V = 40000(r)^t\\ where\\ r < 0.75)$$",
                 "feedback": "Check your reasoning for Part (c). If tractor $B$ depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier $r$ must be larger (closer to $1$) than $0.75$, not smaller."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 40000(0.25)^t$$ <strong>(b)</strong> $$Model\\ is\\ completely\\ unreliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 40000(r)^t\\ where\\ r > 0.75)$$",
-                "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($25\\% = 0.25$) instead of the remaining value multiplier ($1 - 0.25 = 0.75$). This error caused your model to predict the tractor's value as almost zero after 8 years."
+                "ans": "<strong>(a)</strong> $$V = 40000(0.25)^t$$ <strong>(b)</strong> $$Model\\ is\\ completely\\ unreliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 40000(r)^t\\ where\\ r > 0.75)$$",
+                "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($25\\\\% = 0.25$) instead of the remaining value multiplier ($1 - 0.25 = 0.75$). This error caused your model to predict the tractor's value as almost zero after 8 years."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 40000 - 1250t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 40000(r)^t\\ where\\ r > 0.75)$$",
+                "ans": "<strong>(a)</strong> $$V = 40000 - 1250t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 40000(r)^t\\ where\\ r > 0.75)$$",
                 "feedback": "You formed a linear depreciation model ($V = 40000 - 1250t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$."
             }
         ],
@@ -1370,20 +1370,20 @@ window.ALEVEL_QUESTIONS = [
             "This gives our final exponential equation linking $V$ with $t$:<br>$$V = 30000(0.8)^t$$",
             "<strong>Part (b):</strong> We substitute $t = 6$ into our model to find the predicted value:<br>$$V = 30000(0.8)^6 \\approx 30000 \\times 0.26214 \\approx £7,864$$",
             "The actual monitored value after 6 years is £7,800. Since our model's prediction of £7,864 is extremely close to the actual value, the model is highly reliable over this 6-year period.",
-            "<strong>Part (c):</strong> For EV $B$, which depreciates more slowly, the value must decrease at a slower rate than $20\\%$ per year.<br>Therefore, the base of the exponent (currently $0.8$) must be increased to a value closer to $1$ (for example, $0.85$ or some multiplier $r > 0.8$). The initial value remains at $30000$.",
-            "Final Answer: <strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £7,864\\ vs\\ £7,800)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 30000(r)^t\\ where\\ r > 0.8)$$"
+            "<strong>Part (c):</strong> For EV $B$, which depreciates more slowly, the value must decrease at a slower rate than $20\\\\%$ per year.<br>Therefore, the base of the exponent (currently $0.8$) must be increased to a value closer to $1$ (for example, $0.85$ or some multiplier $r > 0.8$). The initial value remains at $30000$.",
+            "Final Answer: <strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\\\ (\\approx £7,864\\ vs\\\\ £7,800)$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 30000(r)^t\\ where\\ r > 0.8)$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\ (\\approx £7,864\\ vs\\ £7,800)$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\ (e.g.\\ V = 30000(r)^t\\ where\\ r < 0.8)$$",
+                "ans": "<strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable\\\\ (\\approx £7,864\\ vs\\\\ £7,800)$$ <strong>(c)</strong> $$Decrease\\ the\\ base\\\\ (e.g.\\ V = 30000(r)^t\\ where\\ r < 0.8)$$",
                 "feedback": "Check your reasoning for Part (c). If EV $B$ depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier $r$ must be larger (closer to $1$) than $0.8$, not smaller."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 30000(0.2)^t$$ <strong>(b)</strong> $$Model\\ is\\ completely\\ unreliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 30000(r)^t\\ where\\ r > 0.8)$$",
-                "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($20\\% = 0.2$) instead of the remaining value multiplier ($1 - 0.2 = 0.8$). This error caused your model to predict the EV's value as almost zero after 6 years."
+                "ans": "<strong>(a)</strong> $$V = 30000(0.2)^t$$ <strong>(b)</strong> $$Model\\ is\\ completely\\ unreliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 30000(r)^t\\ where\\ r > 0.8)$$",
+                "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($20\\\\% = 0.2$) instead of the remaining value multiplier ($1 - 0.2 = 0.8$). This error caused your model to predict the EV's value as almost zero after 6 years."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 30000 - 6000t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\ (e.g.\\ V = 30000(r)^t\\ where\\ r > 0.8)$$",
+                "ans": "<strong>(a)</strong> $$V = 30000 - 6000t$$ <strong>(b)</strong> $$Model\\ is\\ highly\\ reliable$$ <strong>(c)</strong> $$Increase\\ the\\ base\\\\ (e.g.\\ V = 30000(r)^t\\ where\\ r > 0.8)$$",
                 "feedback": "You formed a linear depreciation model ($V = 30000 - 6000t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$."
             }
         ],
@@ -1413,19 +1413,19 @@ window.ALEVEL_QUESTIONS = [
             "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>$$\\frac{5}{12} = -\\left( \\frac{b^4}{4} - \\frac{b^3}{3} - b^2 \\right) \\implies \\frac{b^4}{4} - \\frac{b^3}{3} - b^2 + \\frac{5}{12} = 0$$<br>Multiplying the entire equation by $12$ to clear the fractions:<br>$$3b^4 - 4b^3 - 12b^2 + 5 = 0$$",
             "We can verify that this factorises to $(b+1)^2(3b^2 - 10b + 5) = 0$ by expanding the brackets:<br>$$(b^2 + 2b + 1)(3b^2 - 10b + 5) = b^2(3b^2 - 10b + 5) + 2b(3b^2 - 10b + 5) + 1(3b^2 - 10b + 5)$$<br>$$= 3b^4 - 10b^3 + 5b^2 + 6b^3 - 20b^2 + 10b + 3b^2 - 10b + 5$$<br>$$= 3b^4 - 4b^3 - 12b^2 + 5 = 0 \\quad \\text{(verified)}$$",
             "<strong>Part (c):</strong> The root $b \\approx 2.721$ lies to the right of the root $x = 2$, which is outside our interval of validity $0 < b < 2$.<br>Geometrically, this value represents an upper limit where the total net signed area from $0$ to $2.721$ integrates to $-\\frac{5}{12}$. This occurs because the negative area of the lower lobe (between $0$ and $2$) is partially cancelled out by the positive area of the upper lobe (between $2$ and $2.721$).<br><br>Here is the diagram showing this relationship:<br><img src='images/p1/004036_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-            "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b \\approx 2.721\\ \\text{represents the point of signed area cancellation}$$"
+            "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b \\approx 2.721\\\\ \\text{represents the point of signed area cancellation}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0$$ <strong>(c)</strong> $$b \\approx 2.721\\ \\text{represents a turning point}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0$$ <strong>(c)</strong> $$b \\approx 2.721\\\\ \\text{represents a turning point}$$",
                 "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the $x$-axis, its area must be a positive value: $\\frac{5}{12}$, not $-\\frac{5}{12}$. Area is a physical quantity and cannot be negative."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b-1)^2(3b^2 - 10b + 5) = 0$$ <strong>(c)</strong> $$b \\approx 2.721\\ \\text{represents area cancellation}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b-1)^2(3b^2 - 10b + 5) = 0$$ <strong>(c)</strong> $$b \\approx 2.721\\\\ \\text{represents area cancellation}$$",
                 "feedback": "You probably made a sign error in the double-root factor in Part (b). Since the double root originates from the negative root of the cubic ($x = -1$), the factor must be $(b + 1)^2$, not $(b - 1)^2$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0$$ <strong>(c)</strong> $$b \\approx 2.721\\ \\text{is the local minimum of the curve}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0$$ <strong>(c)</strong> $$b \\approx 2.721\\\\ \\text{is the local minimum of the curve}$$",
                 "feedback": "Check your explanation in Part (c). The value $2.721$ is a root of our quartic area equation; it has no relation to the turning points of the curve. It represents the point where the positive area above the axis cancels the excess negative area below the axis."
             }
         ],
@@ -1455,19 +1455,19 @@ window.ALEVEL_QUESTIONS = [
             "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>$$\\frac{7}{12} = -\\left( \\frac{b^4}{4} - \\frac{2b^3}{3} - \\frac{3b^2}{2} \\right) \\implies \\frac{b^4}{4} - \\frac{2b^3}{3} - \\frac{3b^2}{2} + \\frac{7}{12} = 0$$<br>Multiplying the entire equation by $12$ to clear the fractions:<br>$$3b^4 - 8b^3 - 18b^2 + 7 = 0$$",
             "We can verify that this factorises to $(b+1)^2(3b^2 - 14b + 7) = 0$ by expanding the brackets:<br>$$(b^2 + 2b + 1)(3b^2 - 14b + 7) = b^2(3b^2 - 14b + 7) + 2b(3b^2 - 14b + 7) + 1(3b^2 - 14b + 7)$$<br>$$= 3b^4 - 14b^3 + 7b^2 + 6b^3 - 28b^2 + 14b + 3b^2 - 14b + 7$$<br>$$= 3b^4 - 8b^3 - 18b^2 + 7 = 0 \\quad \\text{(verified)}$$",
             "<strong>Part (c):</strong> The root $b \\approx 4.097$ lies to the right of the root $x = 3$, which is outside our interval of validity $0 < b < 3$.<br>Geometrically, this value represents an upper limit where the total net signed area from $0$ to $4.097$ integrates to $-\\frac{7}{12}$. This occurs because the negative area of the lower lobe (between $0$ and $3$) is partially cancelled out by the positive area of the upper lobe (between $3$ and $4.097$).<br><br>Here is the diagram showing this relationship:<br><img src='images/p1/004037_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-            "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b \\approx 4.097\\ \\text{represents the point of signed area cancellation}$$"
+            "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b \\approx 4.097\\\\ \\text{represents the point of signed area cancellation}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0$$ <strong>(c)</strong> $$b \\approx 4.097\\ \\text{represents a turning point}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0$$ <strong>(c)</strong> $$b \\approx 4.097\\\\ \\text{represents a turning point}$$",
                 "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the $x$-axis, its area must be positive: $\\frac{7}{12}$, not $-\\frac{7}{12}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b-1)^2(3b^2 - 14b + 7) = 0$$ <strong>(c)</strong> $$b \\approx 4.097\\ \\text{represents area cancellation}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b-1)^2(3b^2 - 14b + 7) = 0$$ <strong>(c)</strong> $$b \\approx 4.097\\\\ \\text{represents area cancellation}$$",
                 "feedback": "You probably made a sign error in the double-root factor in Part (b). Since the double root originates from the negative root of the cubic ($x = -1$), the factor must be $(b + 1)^2$, not $(b - 1)^2$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0$$ <strong>(c)</strong> $$b \\approx 4.097\\ \\text{is the local minimum of the curve}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0$$ <strong>(c)</strong> $$b \\approx 4.097\\\\ \\text{is the local minimum of the curve}$$",
                 "feedback": "Check your explanation in Part (c). The value $4.097$ is a root of our quartic area equation; it has no relation to the turning points of the curve."
             }
         ],
@@ -1497,19 +1497,19 @@ window.ALEVEL_QUESTIONS = [
             "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>$$\\frac{16}{3} = -\\left( \\frac{b^4}{4} - \\frac{b^3}{3} - 3b^2 \\right) \\implies \\frac{b^4}{4} - \\frac{b^3}{3} - 3b^2 + \\frac{16}{3} = 0$$<br>Multiplying the entire equation by $12$ to clear the fractions:<br>$$3b^4 - 4b^3 - 36b^2 + 64 = 0$$",
             "We can verify that this factorises to $(b+2)^2(3b^2 - 16b + 16) = 0$ by expanding the brackets:<br>$$(b^2 + 4b + 4)(3b^2 - 16b + 16) = b^2(3b^2 - 16b + 16) + 4b(3b^2 - 16b + 16) + 4(3b^2 - 16b + 16)$$<br>$$= 3b^4 - 16b^3 + 16b^2 + 12b^3 - 64b^2 + 64b + 12b^2 - 64b + 64$$<br>$$= 3b^4 - 4b^3 - 36b^2 + 64 = 0 \\quad \\text{(verified)}$$",
             "<strong>Part (c):</strong> The root $b = 4$ lies to the right of the root $x = 3$, which is outside our interval of validity $0 < b < 3$.<br>Geometrically, this value represents an upper limit where the total net signed area from $0$ to $4$ integrates to $-\\frac{16}{3}$. This occurs because the negative area of the lower lobe (between $0$ and $3$) is partially cancelled out by the positive area of the upper lobe (between $3$ and $4$).<br><br>Here is the diagram showing this relationship:<br><img src='images/p1/004038_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-            "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b = 4\\ \\text{represents the point of signed area cancellation}$$"
+            "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b = 4\\\\ \\text{represents the point of signed area cancellation}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0$$ <strong>(c)</strong> $$b = 4\\ \\text{represents a turning point}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0$$ <strong>(c)</strong> $$b = 4\\\\ \\text{represents a turning point}$$",
                 "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the $x$-axis, its area must be positive: $\\frac{16}{3}$, not $-\\frac{16}{3}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b-2)^2(3b^2 - 16b + 16) = 0$$ <strong>(c)</strong> $$b = 4\\ \\text{represents area cancellation}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b-2)^2(3b^2 - 16b + 16) = 0$$ <strong>(c)</strong> $$b = 4\\\\ \\text{represents area cancellation}$$",
                 "feedback": "You probably made a sign error in the double-root factor in Part (b). Since the double root originates from the negative root of the cubic ($x = -2$), the factor must be $(b + 2)^2$, not $(b - 2)^2$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0$$ <strong>(c)</strong> $$b = 4\\ \\text{is the local minimum of the curve}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0$$ <strong>(c)</strong> $$b = 4\\\\ \\text{is the local minimum of the curve}$$",
                 "feedback": "Check your explanation in Part (c). The value $4$ is a root of our quartic area equation; it has no relation to the turning points of the curve."
             }
         ],
@@ -1539,19 +1539,19 @@ window.ALEVEL_QUESTIONS = [
             "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>$$\\frac{81}{4} = -\\left( \\frac{b^4}{4} - \\frac{9b^2}{2} \\right) \\implies \\frac{b^4}{4} - \\frac{9b^2}{2} + \\frac{81}{4} = 0$$<br>Multiplying the entire equation by $4$ to clear the fractions:<br>$$b^4 - 18b^2 + 81 = 0$$",
             "We can verify that this factorises to $(b+3)^2(b-3)^2 = 0$ (which is $(b^2 - 9)^2 = 0$) by expanding the brackets:<br>$$(b^2 - 9)^2 = (b^2)^2 - 2(9)(b^2) + 81 = b^4 - 18b^2 + 81 = 0 \\quad \\text{(verified)}$$",
             "<strong>Part (c):</strong> The root $b = 3$ is exactly the second positive root of the cubic equation.<br>Geometrically, choosing $b = 3$ means that $R_2$ is the entire negative lobe of the curve between $0$ and $3$. Because $y = x^3 - 9x$ is an odd function, it is perfectly symmetric about the origin, meaning the area of the positive lobe $R_1$ is identical to the area of the negative lobe $R_2$.<br><br>Here is the diagram showing this symmetry:<br><img src='images/p1/004039_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-            "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b = 3\\ \\text{represents the symmetric opposite lobe boundary}$$"
+            "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b = 3\\\\ \\text{represents the symmetric opposite lobe boundary}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0$$ <strong>(c)</strong> $$b = 3\\ \\text{represents a turning point}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0$$ <strong>(c)</strong> $$b = 3\\\\ \\text{represents a turning point}$$",
                 "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the $x$-axis, its area must be positive: $\\frac{81}{4}$, not $-\\frac{81}{4}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b-3)^4 = 0$$ <strong>(c)</strong> $$b = 3\\ \\text{is the local minimum of the curve}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b-3)^4 = 0$$ <strong>(c)</strong> $$b = 3\\\\ \\text{is the local minimum of the curve}$$",
                 "feedback": "You probably made an expansion error in Part (b). $b^4 - 18b^2 + 81$ is a quadratic in $b^2$, which factorises to $(b^2 - 9)^2 = (b+3)^2(b-3)^2 = 0$, not $(b-3)^4$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0$$ <strong>(c)</strong> $$b = 3\\ \\text{is the turning point of the curve}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0$$ <strong>(c)</strong> $$b = 3\\\\ \\text{is the turning point of the curve}$$",
                 "feedback": "Check your explanation in Part (c). The value $3$ is the $x$-intercept of the cubic, not its turning point. It represents the boundary where the two identical lobes are symmetric."
             }
         ],
@@ -1581,19 +1581,19 @@ window.ALEVEL_QUESTIONS = [
             "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>$$8 = -\\left( \\frac{b^4}{4} - b^3 - 5b^2 \\right) \\implies \\frac{b^4}{4} - b^3 - 5b^2 + 8 = 0$$<br>Multiplying the entire equation by $4$ to clear the fractions:<br>$$b^4 - 4b^3 - 20b^2 + 32 = 0$$",
             "We can verify that this factorises to $(b+2)^2(b^2 - 8b + 8) = 0$ (which is equivalent to $(b+2)^2(3b^2 - 24b + 24) = 0$ upon multiplying the quadratic by $3$) by expanding the brackets:<br>$$(b^2 + 4b + 4)(3b^2 - 24b + 24) = b^2(3b^2 - 24b + 24) + 4b(3b^2 - 24b + 24) + 4(3b^2 - 24b + 24)$$<br>$$= 3b^4 - 24b^3 + 24b^2 + 12b^3 - 96b^2 + 96b + 12b^2 - 96b + 94$$<br>Wait! Let's check the constants:<br>$$4 \\times 24 = 96$$. So the expansion yields:<br>$$3b^4 - 12b^3 - 60b^2 + 96 = 0 \\implies 3(b^4 - 4b^3 - 20b^2 + 32) = 0 \\quad \\text{(verified)}$$",
             "<strong>Part (c):</strong> The root $b \\approx 6.828$ lies to the right of the root $x = 5$, which is outside our interval of validity $0 < b < 5$.<br>Geometrically, this value represents an upper limit where the total net signed area from $0$ to $6.828$ integrates to $-8$. This occurs because the negative area of the lower lobe (between $0$ and $5$) is partially cancelled out by the positive area of the upper lobe (between $5$ and $6.828$).<br><br>Here is the diagram showing this relationship:<br><img src='images/p1/004040_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-            "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b \\approx 6.828\\ \\text{represents the point of signed area cancellation}$$"
+            "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b \\approx 6.828\\\\ \\text{represents the point of signed area cancellation}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0$$ <strong>(c)</strong> $$b \\approx 6.828\\ \\text{represents a turning point}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0$$ <strong>(c)</strong> $$b \\approx 6.828\\\\ \\text{represents a turning point}$$",
                 "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the $x$-axis, its area must be positive: $8$, not $-8$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b-2)^2(3b^2 - 24b + 24) = 0$$ <strong>(c)</strong> $$b \\approx 6.828\\ \\text{represents area cancellation}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b-2)^2(3b^2 - 24b + 24) = 0$$ <strong>(c)</strong> $$b \\approx 6.828\\\\ \\text{represents area cancellation}$$",
                 "feedback": "You probably made a sign error in the double-root factor in Part (b). Since the double root originates from the negative root of the cubic ($x = -2$), the factor must be $(b + 2)^2$, not $(b - 2)^2$."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0$$ <strong>(c)</strong> $$b \\approx 6.828\\ \\text{is the local minimum of the curve}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0$$ <strong>(c)</strong> $$b \\approx 6.828\\\\ \\text{is the local minimum of the curve}$$",
                 "feedback": "Check your explanation in Part (c). The value $6.828$ is a root of our quartic area equation; it has no relation to the turning points of the curve."
             }
         ],
@@ -1623,7 +1623,7 @@ window.ALEVEL_QUESTIONS = [
             "Dividing both sides of the equation by $(b - 1)$ gives our target proof:<br>$$a = \\dfrac{b}{b - 1}$$",
             "<strong>Part (b):</strong> For the logarithmic terms to be defined in the original equation, we are given that $a > 0$ and $b > 0$.",
             "Looking at our equation $a = \\dfrac{b}{b - 1}$, since $a$ must be strictly positive ($a > 0$) and the numerator is positive ($b > 0$), the denominator must also be positive to ensure a positive quotient:<br>$$b - 1 > 0 \\implies b > 1$$",
-            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b}{b - 1}\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
+            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b}{b - 1}\\\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
         ],
         "pi_options": [
             {
@@ -1667,7 +1667,7 @@ window.ALEVEL_QUESTIONS = [
             "Dividing both sides of the equation by $(b^2 - 1)$ gives our target proof:<br>$$a = \\dfrac{b^3}{b^2 - 1}$$",
             "<strong>Part (b):</strong> For the logarithmic terms to be defined, we require $a > b > 0$ and $a - b > 0$.",
             "Looking at our equation $a = \\dfrac{b^3}{b^2 - 1}$, since $a$ must be strictly positive ($a > 0$) and the numerator is positive ($b^3 > 0$, as $b > 0$), the denominator must also be positive to ensure a positive quotient:<br>$$b^2 - 1 > 0 \\implies b^2 > 1$$<br>Since $b > 0$, this yields the strict restriction:<br>$$b > 1$$",
-            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b^3}{b^2 - 1}\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
+            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b^3}{b^2 - 1}\\\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
         ],
         "pi_options": [
             {
@@ -1712,7 +1712,7 @@ window.ALEVEL_QUESTIONS = [
             "First, since $a > 0$ and the numerator is positive ($b^2 > 0$), our denominator must be strictly positive to ensure a positive quotient:<br>$$2b - 1 > 0 \\implies b > 0.5$$",
             "Second, we must satisfy the initial condition that $a > b$:<br>$$\\dfrac{b^2}{2b - 1} > b$$<br>Since $2b-1 > 0$, we can multiply both sides by $(2b-1)$ safely without swapping the inequality sign:<br>$$b^2 > b(2b - 1) \\implies b^2 > 2b^2 - b$$<br>$$b > b^2$$<br>Since $b > 0$, we can divide by $b$:<br>$$1 > b \\implies b < 1$$",
             "Combining both inequalities yields our full, strict restriction on $b$:<br>$$\\frac{1}{2} < b < 1$$",
-            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b^2}{2b - 1}\\ \\text{is verified}$$ <strong>(b)</strong> $$\\dfrac{1}{2} < b < 1$$"
+            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b^2}{2b - 1}\\\\ \\text{is verified}$$ <strong>(b)</strong> $$\\dfrac{1}{2} < b < 1$$"
         ],
         "pi_options": [
             {
@@ -1755,7 +1755,7 @@ window.ALEVEL_QUESTIONS = [
             "Dividing both sides of the equation by $(b - 1)$ gives our target proof:<br>$$a = \\dfrac{2b^2}{b - 1}$$",
             "<strong>Part (b):</strong> For the logarithmic terms to be defined, we are given that $a > 2b > 0$.",
             "Looking at our equation $a = \\dfrac{2b^2}{b - 1}$, since $a$ must be strictly positive ($a > 0$) and the numerator is positive ($2b^2 > 0$), the denominator must also be positive to ensure a positive quotient:<br>$$b - 1 > 0 \\implies b > 1$$",
-            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{2b^2}{b - 1}\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
+            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{2b^2}{b - 1}\\\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
         ],
         "pi_options": [
             {
@@ -1799,7 +1799,7 @@ window.ALEVEL_QUESTIONS = [
             "Dividing both sides of the equation by $(b^3 - 1)$ gives our target proof:<br>$$a = \\dfrac{b^5}{b^3 - 1}$$",
             "<strong>Part (b):</strong> For the logarithmic terms to be defined, we are given $a > b^2 > 0$ and $b > 0$.",
             "Looking at our equation $a = \\dfrac{b^5}{b^3 - 1}$, since $a$ must be strictly positive ($a > 0$) and the numerator is positive ($b^5 > 0$, as $b > 0$), the denominator must also be positive to ensure a positive quotient:<br>$$b^3 - 1 > 0 \\implies b^3 > 1 \\implies b > 1$$",
-            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b^5}{b^3 - 1}\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
+            "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b^5}{b^3 - 1}\\\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
         ],
         "pi_options": [
             {
@@ -1842,7 +1842,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Case A: For $x \\ge 6$</strong>, the term inside the absolute value is positive, so $|2x - 12| = 2x - 12$. Our inequality becomes:<br>$$2x - 12 \\ge x - 5 \\implies x \\ge 7$$<br>This means that in the interval $6 \\le x < 7$, the inequality is <strong>false</strong> (for example, at $x = 6$, we get $0 \\ge 1$, which is false).",
             "<strong>Case B: For $x < 6$</strong>, the term inside the absolute value is negative, so $|2x - 12| = -(2x - 12) = 12 - 2x$. Our inequality becomes:<br>$$12 - 2x \\ge x - 5 \\implies 17 \\ge 3x \\implies x \\le 5.67$$<br>This means the inequality is true for $x \\le 5.67$ and $x \\ge 7$, but fails in the gap $5.67 < x < 7$.",
             "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $12 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 6$, where $|2(6)-12| = 0$ is not greater than or equal to $6-5 = 1$).",
-            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\ (fails\\ in\\ the\\ interval\\ 5.67 < x < 7)$$"
+            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\\\ (fails\\ in\\ the\\ interval\\\\ 5.67 < x < 7)$$"
         ],
         "pi_options": [
             {
@@ -1884,7 +1884,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Case A: For $x \\ge 4.67$</strong>, the term inside the absolute value is positive, so $|3x - 14| = 3x - 14$. Our inequality becomes:<br>$$3x - 14 \\ge x - 4 \\implies 2x \\ge 10 \\implies x \\ge 5$$<br>This means that in the interval $4.67 \\le x < 5$, the inequality is <strong>false</strong> (for example, at $x = 4.8$, we get $0.4 \\ge 0.8$, which is false).",
             "<strong>Case B: For $x < 4.67$</strong>, the term inside the absolute value is negative, so $|3x - 14| = 14 - 3x$. Our inequality becomes:<br>$$14 - 3x \\ge x - 4 \\implies 18 \\ge 4x \\implies x \\le 4.5$$<br>This means the inequality is true for $x \\le 4.5$ and $x \\ge 5$, but fails in the gap $4.5 < x < 5$.",
             "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $14 \\ge -4$), but fails for a small range of values (with a counterexample of $x = 4.8$, where $|3(4.8)-14| = 0.4$ is not greater than or equal to $4.8-4 = 0.8$).",
-            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\ (fails\\ in\\ the\\ interval\\ 4.5 < x < 5)$$"
+            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\\\ (fails\\ in\\ the\\ interval\\\\ 4.5 < x < 5)$$"
         ],
         "pi_options": [
             {
@@ -1926,7 +1926,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Case A: For $x \\ge 4$</strong>, the term inside the absolute value is positive, so $|2x - 8| = 2x - 8$. Our inequality becomes:<br>$$2x - 8 \\ge x - 3 \\implies x \\ge 5$$<br>This means that in the interval $4 \\le x < 5$, the inequality is <strong>false</strong> (for example, at $x = 4$, we get $0 \\ge 1$, which is false).",
             "<strong>Case B: For $x < 4$</strong>, the term inside the absolute value is negative, so $|2x - 8| = 8 - 2x$. Our inequality becomes:<br>$$8 - 2x \\ge x - 3 \\implies 11 \\ge 3x \\implies x \\le 3.67$$<br>This means the inequality is true for $x \\le 3.67$ and $x \\ge 5$, but fails in the gap $3.67 < x < 5$.",
             "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $8 \\ge -3$), but fails for a small range of values (with a counterexample of $x = 4$, where $|2(4)-8| = 0$ is not greater than or equal to $4-3 = 1$).",
-            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\ (fails\\ in\\ the\\ interval\\ 3.67 < x < 5)$$"
+            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\\\ (fails\\ in\\ the\\ interval\\\\ 3.67 < x < 5)$$"
         ],
         "pi_options": [
             {
@@ -1969,7 +1969,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Case A: For $x \\ge 5.5$</strong>, the term inside the absolute value is positive, so $|4x - 22| = 4x - 22$. Our inequality becomes:<br>$$4x - 22 \\ge x - 5 \\implies 3x \\ge 17 \\implies x \\ge 5.67$$<br>This means that in the interval $5.5 \\le x < 5.67$, the inequality is <strong>false</strong> (for example, at $x = 5.5$, we get $2 \\ge 0.5$, which is true, but at $x = 5.6$ we get $0.4 \\ge 0.6$, which is false).",
             "<strong>Case B: For $x < 5.5$</strong>, the term inside the absolute value is negative, so $|4x - 22| = 22 - 4x$. Our inequality becomes:<br>$$22 - 4x \\ge x - 5 \\implies 27 \\ge 5x \\implies x \\le 5.4$$<br>This means the inequality is true for $x \\le 5.4$ and $x \\ge 5.67$, but fails in the gap $5.4 < x < 5.67$.",
             "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $22 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 5.55$, where $|4(5.55)-22| = 0.2$ is not greater than or equal to $5.55-5 = 0.55$).",
-            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\ (fails\\ in\\ the\\ interval\\ 5.4 < x < 5.67)$$"
+            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\\\ (fails\\ in\\ the\\ interval\\\\ 5.4 < x < 5.67)$$"
         ],
         "pi_options": [
             {
@@ -2012,7 +2012,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Case A: For $x \\ge 5.67$</strong>, the term inside the absolute value is positive, so $|3x - 17| = 3x - 17$. Our inequality becomes:<br>$$3x - 17 \\ge x - 5 \\implies 2x \\ge 12 \\implies x \\ge 6$$<br>This means that in the interval $5.67 \\le x < 6$, the inequality is <strong>false</strong> (for example, at $x = 5.8$, we get $0.4 \\ge 0.8$, which is false).",
             "<strong>Case B: For $x < 5.67$</strong>, the term inside the absolute value is negative, so $|3x - 17| = 17 - 3x$. Our inequality becomes:<br>$$17 - 3x \\ge x - 5 \\implies 22 \\ge 4x \\implies x \\le 5.5$$<br>This means the inequality is true for $x \\le 5.5$ and $x \\ge 6$, but fails in the gap $5.5 < x < 6$.",
             "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $17 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 5.8$, where $|3(5.8)-17| = 0.4$ is not greater than or equal to $5.8-5 = 0.8$).",
-            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\ (fails\\ in\\ the\\ interval\\ 5.5 < x < 6)$$"
+            "Final Answer: <strong>(i)</strong> $$Proof\\ by\\ cases\\ is\\ completed$$ <strong>(ii)</strong> $$Sometimes\\ true\\\\ (fails\\ in\\ the\\ interval\\\\ 5.5 < x < 6)$$"
         ],
         "pi_options": [
             {

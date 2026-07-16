@@ -228,7 +228,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 2$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(2) \\approx 3.14159 + 1.10715 \\approx 4.24874\\text{ seconds}$$",
             "Substituting this value into the model to find the maximum height:<br>$$H(4.24874) = \\left|15\\text{e}^{-0.5(4.24874)}\\sin(4.24874)\\right| \\approx \\left|15(0.119508)(-0.894427)\\right| \\approx 1.6033\\text{ m}$$<br>Therefore, the maximum height is <strong>$1.60\\text{ m}$</strong> (to 3 significant figures).",
             "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
-            "Final Answer: <strong>(a)</strong> $$\\tan x = 2\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$1.60\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\ \\pi\\ \\text{seconds}$$"
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 2\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$1.60\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\\\ \\pi\\\\ \\text{seconds}$$"
         ],
         "pi_options": [
             {
@@ -269,7 +269,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 5$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(5) \\approx 3.14159 + 1.37340 \\approx 4.51499\\text{ seconds}$$",
             "Substituting this value into the model to find the maximum height:<br>$$H(4.51499) = \\left|8\\text{e}^{-0.2(4.51499)}\\sin(4.51499)\\right| \\approx \\left|8(0.40535)(-0.980581)\\right| \\approx 3.180\\text{ m}$$<br>Therefore, the maximum height is <strong>$3.18\\text{ m}$</strong> (to 3 significant figures).",
             "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
-            "Final Answer: <strong>(a)</strong> $$\\tan x = 5\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$3.18\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\ \\pi\\ \\text{seconds}$$"
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 5\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$3.18\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\\\ \\pi\\\\ \\text{seconds}$$"
         ],
         "pi_options": [
             {
@@ -310,7 +310,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 3$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(3) \\approx 3.14159 + 1.24905 \\approx 4.39064\\text{ seconds}$$",
             "Substituting this value into the model to find the maximum height:<br>$$H(4.39064) = \\left|12\\text{e}^{-\\frac{1}{3}(4.39064)}\\sin(4.39064)\\right| \\approx \\left|12(0.231415)(-0.948683)\\right| \\approx 2.634\\text{ m}$$<br>Therefore, the maximum height is <strong>$2.63\\text{ m}$</strong> (to 3 significant figures).",
             "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
-            "Final Answer: <strong>(a)</strong> $$\\tan x = 3\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$2.63\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\ \\pi\\ \\text{seconds}$$"
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 3\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$2.63\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\\\ \\pi\\\\ \\text{seconds}$$"
         ],
         "pi_options": [
             {
@@ -351,7 +351,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 8$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(8) \\approx 3.14159 + 1.44644 \\approx 4.58803\\text{ seconds}$$",
             "Substituting this value into the model to find the maximum height:<br>$$H(4.58803) = \\left|6\\text{e}^{-0.125(4.58803)}\\sin(4.58803)\\right| \\approx \\left|6(0.563546)(-0.992278)\\right| \\approx 3.3551\\text{ m}$$<br>Therefore, the maximum height is <strong>$3.36\\text{ m}$</strong> (to 3 significant figures).",
             "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
-            "Final Answer: <strong>(a)</strong> $$\\tan x = 8\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$3.36\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\ \\pi\\ \\text{seconds}$$"
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 8\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$3.36\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\\\ \\pi\\\\ \\text{seconds}$$"
         ],
         "pi_options": [
             {
@@ -392,7 +392,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c):</strong> Bounces occur when $H(t) = 0 \\implies \\sin t = 0 \\implies t = n\\pi$.<br>The interval between the first bounce ($t = \\pi$) and the second bounce ($t = 2\\pi$) is $\\pi < t < 2\\pi$.<br>The turning point in this interval occurs where $\\tan t = 6$, which in the third quadrant is:<br>$$t = \\pi + \\tan^{-1}(6) \\approx 3.14159 + 1.40565 \\approx 4.54724\\text{ seconds}$$",
             "Substituting this value into the model to find the maximum height:<br>$$H(4.54724) = \\left|20\\text{e}^{-\\frac{1}{6}(4.54724)}\\sin(4.54724)\\right| \\approx \\left|20(0.468656)(-0.986394)\\right| \\approx 9.2464\\text{ m}$$<br>Therefore, the maximum height is <strong>$9.25\\text{ m}$</strong> (to 3 significant figures).",
             "<strong>Part (d):</strong> Under this model, the bounces are forced to occur at fixed intervals of exactly $\\pi$ seconds because of the $\\sin t$ term.<br>In reality, as the ball loses energy, the time between consecutive bounces decreases. Therefore, this model is physically unrealistic and must not be used to predict bounce times.",
-            "Final Answer: <strong>(a)</strong> $$\\tan x = 6\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$9.25\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\ \\pi\\ \\text{seconds}$$"
+            "Final Answer: <strong>(a)</strong> $$\\tan x = 6\\\\ \\text{is verified}$$ <strong>(b)</strong> $$Bouncing\\ curves\\ sketched\\ above\\ the\\ t-axis$$ <strong>(c)</strong> $$9.25\\text{ m}$$ <strong>(d)</strong> $$Bounces\\ are\\ forced\\ at\\ constant\\ intervals\\ of\\\\ \\pi\\\\ \\text{seconds}$$"
         ],
         "pi_options": [
             {
@@ -879,7 +879,7 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{1}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^2}\\ (b)\\ \\dfrac{dy}{dx} = x^{-3}\\ (c)\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^4}\\ (d) \\dfrac{dy}{dx} = -\\dfrac{3}{x^3}$$",
+        "question": "$$y = \\dfrac{1}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^2}\\\\ (b)\\\\ \\dfrac{dy}{dx} = x^{-3}\\\\ (c)\\\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^4}\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{3}{x^3}$$",
         "steps": [
             "First, rewrite the expression in index form: $$y = x^{-3}$$",
             "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -3$$ $$\\dfrac{dy}{dx} = -3x^{-3-1} = -3x^{-4}$$",
@@ -916,7 +916,7 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{1}{x^4}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^5}\\ (b)\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^3}\\ (c)\\ \\dfrac{dy}{dx} = x^{-4}\\ (d) \\dfrac{dy}{dx} = -\\dfrac{4}{x^4}$$",
+        "question": "$$y = \\dfrac{1}{x^4}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^5}\\\\ (b)\\\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^3}\\\\ (c)\\\\ \\dfrac{dy}{dx} = x^{-4}\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{4}{x^4}$$",
         "steps": [
             "First, rewrite the expression in index form: $$y = x^{-4}$$",
             "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -4$$ $$\\dfrac{dy}{dx} = -4x^{-4-1} = -4x^{-5}$$",
@@ -953,7 +953,7 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{1}{x^5}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\ \\dfrac{dy}{dx} = x^{-5}\\ (b)\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}\\ (c)\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^4}\\ (d) \\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
+        "question": "$$y = \\dfrac{1}{x^5}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ \\dfrac{dy}{dx} = x^{-5}\\\\ (b)\\\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}\\\\ (c)\\\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^4}\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
         "steps": [
             "First, rewrite the expression in index form: $$y = x^{-5}$$",
             "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -5$$ $$\\dfrac{dy}{dx} = -5x^{-5-1} = -5x^{-6}$$",
@@ -990,7 +990,7 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{2}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^2}\\ (b)\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^4}\\ (c)\\ \\dfrac{dy}{dx} = -\\dfrac{2}{x^4}\\ (d) \\dfrac{dy}{dx} = 2x^{-3}$$",
+        "question": "$$y = \\dfrac{2}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^2}\\\\ (b)\\\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^4}\\\\ (c)\\\\ \\dfrac{dy}{dx} = -\\dfrac{2}{x^4}\\\\ (d) \\dfrac{dy}{dx} = 2x^{-3}$$",
         "steps": [
             "First, rewrite the expression in index form: $$y = 2x^{-3}$$",
             "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$ where, $$a = 2$$ and $$n = -3$$ $$\\dfrac{dy}{dx} = 2 \\times \\left(-3\\right)x^{-3-1} = -6x^{-4}$$",
@@ -1027,7 +1027,7 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "$$y = \\dfrac{1}{2x^2}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\ \\dfrac{dy}{dx} = -\\dfrac{1}{4x^3}\\ (b)\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^2}\\ (c)\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^3}\\ (d) \\dfrac{dy}{dx} = \\dfrac{1}{2}x^{-2}$$",
+        "question": "$$y = \\dfrac{1}{2x^2}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{4x^3}\\\\ (b)\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^2}\\\\ (c)\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^3}\\\\ (d) \\dfrac{dy}{dx} = \\dfrac{1}{2}x^{-2}$$",
         "steps": [
             "First, rewrite the expression in index form: $$y = \\dfrac{1}{2}x^{-2}$$",
             "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$ where, $$a = \\dfrac{1}{2}$$ and $$n = -2$$ $$\\dfrac{dy}{dx} = \\dfrac{1}{2} \\times \\left(-2\\right)x^{-2-1} = -1x^{-3}$$",
@@ -1064,7 +1064,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 3^x$$ is transformed by a stretch in the $y$-direction, scale factor 3.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 3^{3x}\\ (b)\\ y = \\dfrac{1}{3} \\times 3^x\\ (c)\\ y = 3^{\\frac{x}{3}}\\ (d)\\ y = 3 \\times 3^x$$",     "steps": [
+        "question": "The graph of $$y = 3^x$$ is transformed by a stretch in the $y$-direction, scale factor 3.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 3^{3x}\\\\ (b)\\ y = \\dfrac{1}{3} \\times 3^x\\\\ (c)\\ y = 3^{\\frac{x}{3}}\\\\ (d)\\ y = 3 \\times 3^x$$",     "steps": [
             "First, identify the original function: $$y = f(x) = 3^x$$",
             "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 3$$",
             "Finally, apply this rule to scale the entire function.",
@@ -1100,7 +1100,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 4^x$$ is transformed by a stretch in the $y$-direction, scale factor 4.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 4 \\times 4^x\\ (b)\\ y = 4^{\\frac{x}{4}}\\ (c)\\ y = \\dfrac{1}{4} \\times 4^x\\ (d)\\ y = 4^{4x}$$",
+        "question": "The graph of $$y = 4^x$$ is transformed by a stretch in the $y$-direction, scale factor 4.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 4 \\times 4^x\\\\ (b)\\ y = 4^{\\frac{x}{4}}\\\\ (c)\\ y = \\dfrac{1}{4} \\times 4^x\\\\ (d)\\ y = 4^{4x}$$",
         "steps": [
             "First, identify the original function: $$y = f(x) = 4^x$$",
             "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 4$$",
@@ -1137,7 +1137,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 2^x$$ is transformed by a stretch in the $y$-direction, scale factor 2.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 2^{2x}\\ (b)\\ y = 2 \\times 2^x\\ (c)\\ y = 2^{\\frac{x}{2}}\\ (d)\\ y = \\dfrac{1}{2} \\times 2^x$$",
+        "question": "The graph of $$y = 2^x$$ is transformed by a stretch in the $y$-direction, scale factor 2.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 2^{2x}\\\\ (b)\\ y = 2 \\times 2^x\\\\ (c)\\ y = 2^{\\frac{x}{2}}\\\\ (d)\\ y = \\dfrac{1}{2} \\times 2^x$$",
         "steps": [
             "First, identify the original function: $$y = f(x) = 2^x$$",
             "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 2$$",
@@ -1174,7 +1174,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 6^x$$ is transformed by a stretch in the $y$-direction, scale factor 6.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 6^{\\frac{x}{6}}\\ (b)\\ y = \\dfrac{1}{6} \\times 6^x\\ (c)\\ y = 6^{6x}\\ (d)\\ y = 6 \\times 6^x$$",
+        "question": "The graph of $$y = 6^x$$ is transformed by a stretch in the $y$-direction, scale factor 6.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 6^{\\frac{x}{6}}\\\\ (b)\\ y = \\dfrac{1}{6} \\times 6^x\\\\ (c)\\ y = 6^{6x}\\\\ (d)\\ y = 6 \\times 6^x$$",
         "steps": [
             "First, identify the original function: $$y = f(x) = 6^x$$",
             "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 6$$",
@@ -1211,7 +1211,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations of Graphs"
         ],
         "img": false,
-        "question": "The graph of $$y = 7^x$$ is transformed by a stretch in the $y$-direction, scale factor 7.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 7 \\times 7^x\\ (b)\\ y = 7^{\\frac{x}{7}}\\ (c)\\ y = \\dfrac{1}{7} \\times 7^x\\ (d)\\ y = 7^{7x}$$",
+        "question": "The graph of $$y = 7^x$$ is transformed by a stretch in the $y$-direction, scale factor 7.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ y = 7 \\times 7^x\\\\ (b)\\ y = 7^{\\frac{x}{7}}\\\\ (c)\\ y = \\dfrac{1}{7} \\times 7^x\\\\ (d)\\ y = 7^{7x}$$",
         "steps": [
             "First, identify the original function: $$y = f(x) = 7^x$$",
             "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 7$$",
@@ -1248,7 +1248,7 @@ window.ALEVEL_QUESTIONS = [
             "Periodic Sequences"
         ],
         "img": false,
-        "question": "A periodic sequence is defined by $$U_n = \\cos(n\\pi)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ 2\\pi\\ \\ (b)\\ 2\\ \ \ (c)\\ \\pi\\ \\ (d)\\ 4$$",
+        "question": "A periodic sequence is defined by $$U_n = \\cos(n\\pi)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ 2\\pi\\\\ \\\\ (b)\\\\ 2\\\\ \ \ (c)\\\\ \\pi\\\\ \\\\ (d)\\\\ 4$$",
         "steps": [
             "First, write down the sequence formula: $$U_n = \\cos(n\\pi)$$.",
             "Next, calculate the first few terms of the sequence to see the numerical pattern: $$U_1 = -1,\\ U_2 = 1,\\ U_3 = -1,\\ U_4 = 1$$",
@@ -1285,7 +1285,7 @@ window.ALEVEL_QUESTIONS = [
             "Periodic Sequences"
         ],
         "img": false,
-        "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{n\\pi}{2}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ 2\\pi\\ \\ (b)\\ 8\\ \ \ (c)\\ 4\\ \\ (d)\\ \\pi$$",
+        "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{n\\pi}{2}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ 2\\pi\\\\ \\\\ (b)\\\\ 8\\\\ \ \ (c)\\\\ 4\\\\ \\\\ (d)\\\\ \\pi$$",
         "steps": [
             "First, write down the sequence formula: $$U_n = \\cos\\left(\\dfrac{n\\pi}{2}\\right)$$.",
             "Next, calculate the first few terms of the sequence to identify the pattern: $$U_1 = 0,\\ U_2 = -1,\\ U_3 = 0,\\ U_4 = 1,\\ U_5 = 0$$",
@@ -1322,7 +1322,7 @@ window.ALEVEL_QUESTIONS = [
             "Periodic Sequences"
         ],
         "img": false,
-        "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ 6\\ \\ (b)\\ 2\\pi\\ \ \ (c)\\ 3\\ \\ (d)\\ 6\\pi$$",
+        "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ 6\\\\ \\\\ (b)\\\\ 2\\pi\\\\ \ \ (c)\\\\ 3\\\\ \\\\ (d)\\\\ 6\\pi$$",
         "steps": [
             "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.",
             "Next, calculate the first few terms of the sequence to observe the periodic pattern: $$U_1 = \\dfrac{\\sqrt{3}}{2},\\ U_2 = \\dfrac{\\sqrt{3}}{2},\\ U_3 = 0,\\ U_4 = -\\dfrac{\\sqrt{3}}{2},\\ U_5 = -\\dfrac{\\sqrt{3}}{2},\\ U_6 = 0,\\ U_7 = \\dfrac{\\sqrt{3}}{2}$$",
@@ -1359,7 +1359,7 @@ window.ALEVEL_QUESTIONS = [
             "Periodic Sequences"
         ],
         "img": false,
-        "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ 3\\ \\ (b)\\ 2\\pi\\ \ \ (c)\\ 6\\ \\ (d)\\ \\pi$$",
+        "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ 3\\\\ \\\\ (b)\\\\ 2\\pi\\\\ \ \ (c)\\\\ 6\\\\ \\\\ (d)\\\\ \\pi$$",
         "steps": [
             "First, write down the sequence formula: $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.",
             "Next, calculate the first few terms of the sequence: $$U_1 = -\\dfrac{1}{2},\\ U_2 = -\\dfrac{1}{2},\\ U_3 = 1,\\ U_4 = -\\dfrac{1}{2}$$",
@@ -1396,7 +1396,7 @@ window.ALEVEL_QUESTIONS = [
             "Periodic Sequences"
         ],
         "img": false,
-        "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\ 8\\ \\ (b)\\ 2\\pi\\ \ \ (c)\\ 4\\ \\ (d)\\ 4\\pi$$",
+        "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ 8\\\\ \\\\ (b)\\\\ 2\\pi\\\\ \ \ (c)\\\\ 4\\\\ \\\\ (d)\\\\ 4\\pi$$",
         "steps": [
             "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.",
             "Next, calculate the first few terms of the sequence: $$U_1 = \\dfrac{1}{\\sqrt{2}},\\ U_2 = 1,\\ U_3 = \\dfrac{1}{\\sqrt{2}},\\ U_4 = 0,\\ U_5 = -\\dfrac{1}{\\sqrt{2}},\\ U_6 = -1,\\ U_7 = -\\dfrac{1}{\\sqrt{2}},\\ U_8 = 0,\\ U_9 = \\dfrac{1}{\\sqrt{2}}$$",

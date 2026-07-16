@@ -237,20 +237,20 @@ window.ALEVEL_QUESTIONS = [
             "For Part (b), define $f(\\theta) = \\theta - 1.5\\sin\\theta$ and its derivative $f'(\\theta) = 1 - 1.5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{\\theta_n - 1.5\\sin\\theta_n}{1 - 1.5\\cos\\theta_n}$$",
             "With $\\theta_1 = \\pi$, calculate the iterations. In the first iteration: $$\\theta_2 = \\pi - \\dfrac{\\pi - 1.5\\sin\\pi}{1 - 1.5\\cos\\pi} = \\pi - \\dfrac{\\pi}{1 - 1.5(-1)} = \\pi - \\dfrac{\\pi}{2.5} = 0.6\\pi \\approx 1.88496$$",
             "In the second iteration: $$\\theta_3 = 1.88496 - \\dfrac{1.88496 - 1.5\\sin(1.88496)}{1 - 1.5\\cos(1.88496)} \\approx 1.57176$$",
-            "For Part (c), calculate the percentage error by comparing the approximation $\\theta_3 \\approx 1.57176$ with the actual root $\\theta = 1.49579$: $$\\text{Percentage Error} = \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\approx 5.08\\%$$",
-            "Final Answer: $$\\text{Part (b): } 1.57176,\\quad \\text{Part (c): } 5.08\\%$$"
+            "For Part (c), calculate the percentage error by comparing the approximation $\\theta_3 \\approx 1.57176$ with the actual root $\\theta = 1.49579$: $$\\text{Percentage Error} = \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\approx 5.08\\\\%$$",
+            "Final Answer: $$\\text{Part (b): } 1.57176,\\quad \\text{Part (c): } 5.08\\\\%$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\text{Part (b): } 1.57176,\\quad \\text{Part (c): } 5.06\\%$$",
+                "ans": "$$\\text{Part (b): } 1.57176,\\quad \\text{Part (c): } 5.06\\\\%$$",
                 "feedback": "This error probably results from a minor rounding slip during your multi-digit division steps. Ensure you carry at least six decimal places in your intermediate steps before rounding to five."
             },
             {
-                "ans": "$$\\text{Part (b): } 1.57156,\\quad \\text{Part (c): } 5.06\\%$$",
+                "ans": "$$\\text{Part (b): } 1.57156,\\quad \\text{Part (c): } 5.06\\\\%$$",
                 "feedback": "You probably rounded $\\theta_2$ prematurely, or made a subtraction error in your second iteration. Double-check your values for $f(\\theta_2)$ and $f'(\\theta_2)$ on your page."
             },
             {
-                "ans": "$$\\text{Part (b): } 1.88496,\\quad \\text{Part (c): } 26.02\\%$$",
+                "ans": "$$\\text{Part (b): } 1.88496,\\quad \\text{Part (c): } 26.02\\\\%$$",
                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
             }
         ],
@@ -282,20 +282,20 @@ window.ALEVEL_QUESTIONS = [
             "For Part (b), define $f(\\theta) = 3\\theta - 4\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 4\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 4\\sin\\theta_n}{3 - 4\\cos\\theta_n}$$",
             "With $\\theta_1 = 1.5$, calculate the iterations. In the first iteration: $$\\theta_2 = 1.5 - \\dfrac{3(1.5) - 4\\sin(1.5)}{3 - 4\\cos(1.5)} \\approx 1.31229$$",
             "In the second iteration: $$\\theta_3 = 1.31229 - \\dfrac{3(1.31229) - 4\\sin(1.31229)}{3 - 4\\cos(1.31229)} \\approx 1.27741$$",
-            "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.27741$ against the true root $\\theta = 1.27570$: $$\\text{Percentage Error} = \\dfrac{|1.27741 - 1.27570|}{1.27570} \\times 100 \\approx 0.13\\%$$",
-            "Final Answer: $$\\text{Part (b): } 1.27741,\\quad \\text{Part (c): } 0.13\\%$$"
+            "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.27741$ against the true root $\\theta = 1.27570$: $$\\text{Percentage Error} = \\dfrac{|1.27741 - 1.27570|}{1.27570} \\times 100 \\approx 0.13\\\\%$$",
+            "Final Answer: $$\\text{Part (b): } 1.27741,\\quad \\text{Part (c): } 0.13\\\\%$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\text{Part (b): } 1.27510,\\quad \\text{Part (c): } 0.05\\%$$",
+                "ans": "$$\\text{Part (b): } 1.27510,\\quad \\text{Part (c): } 0.05\\\\%$$",
                 "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(1.31229)$ and $f'(1.31229)$ on your page."
             },
             {
-                "ans": "$$\\text{Part (b): } 1.27741,\\quad \\text{Part (c): } 0.05\\%$$",
-                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.13\\%$, not $0.05\\%$."
+                "ans": "$$\\text{Part (b): } 1.27741,\\quad \\text{Part (c): } 0.05\\\\%$$",
+                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.13\\\\%$, not $0.05\\\\%$."
             },
             {
-                "ans": "$$\\text{Part (b): } 1.31229,\\quad \\text{Part (c): } 2.87\\%$$",
+                "ans": "$$\\text{Part (b): } 1.31229,\\quad \\text{Part (c): } 2.87\\\\%$$",
                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
             }
         ],
@@ -325,20 +325,20 @@ window.ALEVEL_QUESTIONS = [
             "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin(2\\theta)$ and its derivative $f'(\\theta) = 3 - 10\\cos(2\\theta)$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin(2\\theta_n)}{3 - 10\\cos(2\\theta_n)}$$",
             "With $\\theta_1 = 1.0$, calculate the iterations. In the first iteration: $$\\theta_2 = 1.0 - \\dfrac{3(1.0) - 5\\sin(2)}{3 - 10\\cos(2)} \\approx 1.21594$$",
             "In the second iteration: $$\\theta_3 = 1.21594 - \\dfrac{3(1.21594) - 5\\sin(2.43188)}{3 - 10\\cos(2.43188)} \\approx 1.17911$$",
-            "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.17911$ against the true root $\\theta = 1.17243$: $$\\text{Percentage Error} = \\dfrac{|1.17911 - 1.17243|}{1.17243} \\times 100 \\approx 0.57\\%$$",
-            "Final Answer: $$\\text{Part (b): } 1.17911,\\quad \\text{Part (c): } 0.57\\%$$"
+            "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.17911$ against the true root $\\theta = 1.17243$: $$\\text{Percentage Error} = \\dfrac{|1.17911 - 1.17243|}{1.17243} \\times 100 \\approx 0.57\\\\%$$",
+            "Final Answer: $$\\text{Part (b): } 1.17911,\\quad \\text{Part (c): } 0.57\\\\%$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\text{Part (b): } 1.17880,\\quad \\text{Part (c): } 0.54\\%$$",
+                "ans": "$$\\text{Part (b): } 1.17880,\\quad \\text{Part (c): } 0.54\\\\%$$",
                 "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(1.21594)$ and $f'(1.21594)$ on your page."
             },
             {
-                "ans": "$$\\text{Part (b): } 1.17911,\\quad \\text{Part (c): } 0.54\\%$$",
-                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.57\\%$, not $0.54\\%$."
+                "ans": "$$\\text{Part (b): } 1.17911,\\quad \\text{Part (c): } 0.54\\\\%$$",
+                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.57\\\\%$, not $0.54\\\\%$."
             },
             {
-                "ans": "$$\\text{Part (b): } 1.21594,\\quad \\text{Part (c): } 3.71\\%$$",
+                "ans": "$$\\text{Part (b): } 1.21594,\\quad \\text{Part (c): } 3.71\\\\%$$",
                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
             }
         ],
@@ -368,20 +368,20 @@ window.ALEVEL_QUESTIONS = [
             "For Part (b), define $f(\\theta) = 2\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 2 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{2\\theta_n - 5\\sin\\theta_n}{2 - 5\\cos\\theta_n}$$",
             "With $\\theta_1 = 2.5$, calculate the iterations. In the first iteration: $$\\theta_2 = 2.5 - \\dfrac{2(2.5) - 5\\sin(2.5)}{2 - 5\\cos(2.5)} \\approx 2.16571$$",
             "In the second iteration: $$\\theta_3 = 2.16571 - \\dfrac{2(2.16571) - 5\\sin(2.16571)}{2 - 5\\cos(2.16571)} \\approx 2.12654$$",
-            "For Part (c), calculate the percentage error of $\\theta_3 \\approx 2.12654$ against the true root $\\theta = 2.12463$: $$\\text{Percentage Error} = \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100 \\approx 0.09\\%$$",
-            "Final Answer: $$\\text{Part (b): } 2.12654,\\quad \\text{Part (c): } 0.09\\%$$"
+            "For Part (c), calculate the percentage error of $\\theta_3 \\approx 2.12654$ against the true root $\\theta = 2.12463$: $$\\text{Percentage Error} = \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100 \\approx 0.09\\\\%$$",
+            "Final Answer: $$\\text{Part (b): } 2.12654,\\quad \\text{Part (c): } 0.09\\\\%$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\text{Part (b): } 2.12680,\\quad \\text{Part (c): } 0.10\\%$$",
+                "ans": "$$\\text{Part (b): } 2.12680,\\quad \\text{Part (c): } 0.10\\\\%$$",
                 "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(2.16571)$ and $f'(2.16571)$ on your page."
             },
             {
-                "ans": "$$\\text{Part (b): } 2.12654,\\quad \\text{Part (c): } 0.10\\%$$",
-                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.09\\%$, not $0.10\\%$."
+                "ans": "$$\\text{Part (b): } 2.12654,\\quad \\text{Part (c): } 0.10\\\\%$$",
+                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.09\\\\%$, not $0.10\\\\%$."
             },
             {
-                "ans": "$$\\text{Part (b): } 2.16571,\\quad \\text{Part (c): } 1.93\\%$$",
+                "ans": "$$\\text{Part (b): } 2.16571,\\quad \\text{Part (c): } 1.93\\\\%$$",
                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
             }
         ],
@@ -411,20 +411,20 @@ window.ALEVEL_QUESTIONS = [
             "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin\\theta_n}{3 - 5\\cos\\theta_n}$$",
             "With $\\theta_1 = 2.0$, calculate the iterations. In the first iteration: $$\\theta_2 = 2.0 - \\dfrac{3(2.0) - 5\\sin(2.0)}{3 - 5\\cos(2.0)} \\approx 1.71392$$",
             "In the second iteration: $$\\theta_3 = 1.71392 - \\dfrac{3(1.71392) - 5\\sin(1.71392)}{3 - 5\\cos(1.71392)} \\approx 1.66164$$",
-            "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.66164$ against the true root $\\theta = 1.65215$: $$\\text{Percentage Error} = \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100 \\approx 0.57\\%$$",
-            "Final Answer: $$\\text{Part (b): } 1.66164,\\quad \\text{Part (c): } 0.57\\%$$"
+            "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.66164$ against the true root $\\theta = 1.65215$: $$\\text{Percentage Error} = \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100 \\approx 0.57\\\\%$$",
+            "Final Answer: $$\\text{Part (b): } 1.66164,\\quad \\text{Part (c): } 0.57\\\\%$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\text{Part (b): } 1.66120,\\quad \\text{Part (c): } 0.55\\%$$",
+                "ans": "$$\\text{Part (b): } 1.66120,\\quad \\text{Part (c): } 0.55\\\\%$$",
                 "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(1.71392)$ and $f'(1.71392)$ on your page."
             },
             {
-                "ans": "$$\\text{Part (b): } 1.66164,\\quad \\text{Part (c): } 0.55\\%$$",
-                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.57\\%$, not $0.55\\%$."
+                "ans": "$$\\text{Part (b): } 1.66164,\\quad \\text{Part (c): } 0.55\\\\%$$",
+                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.57\\\\%$, not $0.55\\\\%$."
             },
             {
-                "ans": "$$\\text{Part (b): } 1.71392,\\quad \\text{Part (c): } 3.74\\%$$",
+                "ans": "$$\\text{Part (b): } 1.71392,\\quad \\text{Part (c): } 3.74\\\\%$$",
                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
             }
         ],
@@ -885,14 +885,14 @@ window.ALEVEL_QUESTIONS = [
             "Numerical Iteration"
         ],
         "img": false,
-        "question": "The daily world production of natural gas can be modelled using:<br>$$V = 20 + 200\\left(\\dfrac{t}{40}\\right)^3 - 100\\left(\\dfrac{t}{40}\\right)^4$$<br>where $V$ is the volume of gas in billions of cubic metres, and $t$ is the time in years since 1 January 1990.<br><br>(a) (i) The model is used to predict the time, $T$, when gas production will fall to zero. Show that $T$ satisfies the equation:<br>$$T = \\sqrt[3]{80T^2 + \\dfrac{512\\,000}{T}}$$ <br>(a) (ii) Use the iterative formula $T_{n+1} = \\sqrt[3]{80T_n^2 + \\dfrac{512\\,000}{T_n}}$, with $T_0 = 50$, to find the values of $T_1$, $T_2$, and $T_3$, giving your answers to three decimal places.<br><br>(a) (iii) Explain the relevance of using $T_0 = 50$.<br><br>(b) From 1 January 1990, the daily use of natural gas by one technologically developing country can be modelled as:<br>$$V = 8.5 \\times 1.058^t$$<br>Use the models to show that the country's use of gas and the world production of gas will be equal during the year 2044.",
+        "question": "The daily world production of natural gas can be modelled using:<br>$$V = 20 + 200\\left(\\dfrac{t}{40}\\right)^3 - 100\\left(\\dfrac{t}{40}\\right)^4$$<br>where $V$ is the volume of gas in billions of cubic metres, and $t$ is the time in years since 1 January 1990.<br><br>(a) (i) The model is used to predict the time, $T$, when gas production will fall to zero. Show that $T$ satisfies the equation:<br>$$T = \\sqrt[3]{80T^2 + \\dfrac{512\\\\,000}{T}}$$ <br>(a) (ii) Use the iterative formula $T_{n+1} = \\sqrt[3]{80T_n^2 + \\dfrac{512\\\\,000}{T_n}}$, with $T_0 = 50$, to find the values of $T_1$, $T_2$, and $T_3$, giving your answers to three decimal places.<br><br>(a) (iii) Explain the relevance of using $T_0 = 50$.<br><br>(b) From 1 January 1990, the daily use of natural gas by one technologically developing country can be modelled as:<br>$$V = 8.5 \\times 1.058^t$$<br>Use the models to show that the country's use of gas and the world production of gas will be equal during the year 2044.",
         "steps": [
-            "For Part (a)(i), set the volume $V$ equal to $0$ and expand the exponents: $$0 = 20 + 200\\left(\\dfrac{T}{40}\\right)^3 - 100\\left(\\dfrac{T}{40}\\right)^4 \\implies 0 = 20 + 200\\left(\\dfrac{T^3}{64\\,000}\\right) - 100\\left(\\dfrac{T^4}{2\\,560\\,000}\\right)$$, which simplifies to: $$0 = 20 + \\dfrac{T^3}{320} - \\dfrac{T^4}{25\\,600}$$",
-            "Multiply the entire equation by $25\\,600$ to clear the fractions: $$0 = 512\\,000 + 80T^3 - T^4$$",
-            "Rearrange the terms and divide both sides by $T$ (since $T > 0$): $$T^4 = 80T^3 + 512\\,000 \\implies T^3 = 80T^2 + \\dfrac{512\\,000}{T}$$",
-            "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{80T^2 + \\dfrac{512\\,000}{T}}$$ as required.",
-            "For Part (a)(ii), substitute $T_0 = 50$ into the formula to find the successive iterations: $$T_1 = \\sqrt[3]{80(50)^2 + \\dfrac{512\\,000}{50}} = \\sqrt[3]{200\\,000 + 10\\,240} = \\sqrt[3]{210\\,240} \\approx 59.464$$",
-            "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{80(59.4643)^2 + \\dfrac{512\\,000}{59.4643}} \\approx \\sqrt[3]{291\\,491.0} \\approx 66.305$$ and $$T_3 = \\sqrt[3]{80(66.3051)^2 + \\dfrac{512\\,000}{66.3051}} \\approx \\sqrt[3]{359\\,430.4} \\approx 71.099$$",
+            "For Part (a)(i), set the volume $V$ equal to $0$ and expand the exponents: $$0 = 20 + 200\\left(\\dfrac{T}{40}\\right)^3 - 100\\left(\\dfrac{T}{40}\\right)^4 \\implies 0 = 20 + 200\\left(\\dfrac{T^3}{64\\\\,000}\\right) - 100\\left(\\dfrac{T^4}{2\\\\,560\\\\,000}\\right)$$, which simplifies to: $$0 = 20 + \\dfrac{T^3}{320} - \\dfrac{T^4}{25\\\\,600}$$",
+            "Multiply the entire equation by $25\\\\,600$ to clear the fractions: $$0 = 512\\\\,000 + 80T^3 - T^4$$",
+            "Rearrange the terms and divide both sides by $T$ (since $T > 0$): $$T^4 = 80T^3 + 512\\\\,000 \\implies T^3 = 80T^2 + \\dfrac{512\\\\,000}{T}$$",
+            "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{80T^2 + \\dfrac{512\\\\,000}{T}}$$ as required.",
+            "For Part (a)(ii), substitute $T_0 = 50$ into the formula to find the successive iterations: $$T_1 = \\sqrt[3]{80(50)^2 + \\dfrac{512\\\\,000}{50}} = \\sqrt[3]{200\\\\,000 + 10\\\\,240} = \\sqrt[3]{210\\\\,240} \\approx 59.464$$",
+            "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{80(59.4643)^2 + \\dfrac{512\\\\,000}{59.4643}} \\approx \\sqrt[3]{291\\\\,491.0} \\approx 66.305$$ and $$T_3 = \\sqrt[3]{80(66.3051)^2 + \\dfrac{512\\\\,000}{66.3051}} \\approx \\sqrt[3]{359\\\\,430.4} \\approx 71.099$$",
             "For Part (a)(iii), explain the relevance: $T = 50$ corresponds to the year 2040 (since $1990 + 50 = 2040$). This provides a realistic starting estimate that is close to the expected root, which improves the speed of convergence.",
             "For Part (b), find the intersection interval by evaluating the difference between production and consumption. Let $f(t) = V_{\\text{prod}} - V_{\\text{use}}$. The year 2044 corresponds to $t = 54$ (since $1990 + 54 = 2044$).",
             "Evaluate both models at $t = 54$: $$V_{\\text{prod}} = 20 + 200\\left(\\dfrac{54}{40}\\right)^3 - 100\\left(\\dfrac{54}{40}\\right)^4 \\approx 180.12\\text{ Bcm}$$ and $$V_{\\text{use}} = 8.5 \\times 1.058^{54} \\approx 178.53\\text{ Bcm}$$. Since $180.12 > 178.53$, production exceeds consumption.",
@@ -933,7 +933,7 @@ window.ALEVEL_QUESTIONS = [
         "img": false,
         "question": "A technology company models its annual revenue, $R$ (in millions of pounds), using:<br>$$R = 5 + 30\\left(\\dfrac{t}{10}\\right)^2 - 10\\left(\\dfrac{t}{10}\\right)^3$$<br>where $t$ is the number of years since 1 January 2010.<br><br>(a) (i) The model is used to predict the time, $T$, when annual revenue will drop to zero. Show that $T$ satisfies the equation:<br>$$T = \\sqrt{30T + \\dfrac{500}{T}}$$ <br>(a) (ii) Use the iterative formula $T_{n+1} = \\sqrt{30T_n + \\dfrac{500}{T_n}}$, with $T_0 = 31$, to find the values of $T_1$, $T_2$, and $T_3$, giving your answers to three decimal places.<br><br>(a) (iii) Explain the relevance of using $T_0 = 31$.<br><br>(b) The company's annual operating cost, $C$ (in millions of pounds), is modelled by:<br>$$C = 1.2 \\times 1.09^t$$<br>Use the models to show that the company's annual costs and annual revenue will be equal during the year 2038.",
         "steps": [
-            "For Part (a)(i), set the revenue $R$ equal to $0$ and expand the exponents: $$0 = 5 + 30\\left(\\dfrac{T}{10}\\right)^2 - 10\\left(\\dfrac{T}{10}\\right)^3 \\implies 0 = 5 + 30\\left(\\dfrac{T^2}{100}\\right) - 10\\left(\\dfrac{T^3}{1\\,000}\\right)$$, which simplifies to: $$0 = 5 + \\dfrac{3T^2}{10} - \\dfrac{T^3}{100}$$",
+            "For Part (a)(i), set the revenue $R$ equal to $0$ and expand the exponents: $$0 = 5 + 30\\left(\\dfrac{T}{10}\\right)^2 - 10\\left(\\dfrac{T}{10}\\right)^3 \\implies 0 = 5 + 30\\left(\\dfrac{T^2}{100}\\right) - 10\\left(\\dfrac{T^3}{1\\\\,000}\\right)$$, which simplifies to: $$0 = 5 + \\dfrac{3T^2}{10} - \\dfrac{T^3}{100}$$",
             "Multiply the entire equation by $100$ to clear the fractions: $$0 = 500 + 30T^2 - T^3$$",
             "Rearrange the terms and divide both sides by $T$ (since $T > 0$): $$T^3 = 30T^2 + 500 \\implies T^2 = 30T + \\dfrac{500}{T}$$",
             "Take the square root of both sides to obtain the target iterative relation: $$T = \\sqrt{30T + \\dfrac{500}{T}}$$ as required.",
@@ -983,8 +983,8 @@ window.ALEVEL_QUESTIONS = [
             "Multiply the entire equation by $216$ to clear the fractions: $$0 = 1728 + 72T^2 - T^3$$",
             "Rearrange the terms and isolate $T^3$: $$T^3 = 72T^2 + 1728$$",
             "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{72T^2 + 1728}$$ as required.",
-            "For Part (a)(ii), substitute $T_0 = 73$ into the formula to find the successive iterations: $$T_1 = \\sqrt[3]{72(73)^2 + 1728} = \\sqrt[3]{383\\,688 + 1728} = \\sqrt[3]{385\\,416} \\approx 72.775$$",
-            "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{72(72.7749)^2 + 1728} \\approx \\sqrt[3]{383\\,052.9} \\approx 72.626$$ and $$T_3 = \\sqrt[3]{72(72.6256)^2 + 1728} \\approx \\sqrt[3]{381\\,489.3} \\approx 72.527$$",
+            "For Part (a)(ii), substitute $T_0 = 73$ into the formula to find the successive iterations: $$T_1 = \\sqrt[3]{72(73)^2 + 1728} = \\sqrt[3]{383\\\\,688 + 1728} = \\sqrt[3]{385\\\\,416} \\approx 72.775$$",
+            "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{72(72.7749)^2 + 1728} \\approx \\sqrt[3]{383\\\\,052.9} \\approx 72.626$$ and $$T_3 = \\sqrt[3]{72(72.6256)^2 + 1728} \\approx \\sqrt[3]{381\\\\,489.3} \\approx 72.527$$",
             "For Part (a)(iii), explain the relevance: $T = 73$ months corresponds to just over 6 years ($6 \\times 12 = 72$ months). This provides a realistic starting estimate that is close to the expected root, which improves the speed of convergence.",
             "For Part (b), find the intersection interval by evaluating the difference between reservoir volume and inflow. Let $f(t) = V - V_{\\text{in}}$.",
             "Evaluate both models at $t = 69$: $$V = 8 + 48\\left(\\dfrac{69}{12}\\right)^2 - 8\\left(\\dfrac{69}{12}\\right)^3 \\approx 74.13\\text{ thousand}$$ and $$V_{\\text{in}} = 0.5 \\times 1.07^{69} \\approx 53.20\\text{ thousand}$$. Since $74.13 > 53.20$, reservoir volume exceeds inflow.",
@@ -1025,12 +1025,12 @@ window.ALEVEL_QUESTIONS = [
         "img": false,
         "question": "The rate of a primary chemical reaction, $R$ (in moles per second), is modelled by<br>$$R = 5 + 50\\left(\dfrac{t}{10}\\right)^3 - 25\\left(\dfrac{t}{10}\\right)^4$$<br>where $t$ is the time in minutes.<br><br>(a) (i) The model is used to predict the time, $T$, when the primary reaction stops. Show that $T$ satisfies the equation:<br>$$T = \sqrt[3]{20T^2 + \\dfrac{2000}{T}}$$<br>(a) (ii) Use the iterative formula $T_{n+1} = \\sqrt[3]{20T_n^2 + \\dfrac{2000}{T_n}}$, with $T_0 = 21$, to find the values of $T_1$, $T_2$, and $T_3$, giving your answers to three decimal places.<br><br>(a) (iii) Explain the relevance of using $T_0 = 21$.<br><br>(b) A secondary chemical inhibitor is introduced, and its reaction rate, $R_{\\text{inh}}$ (in moles per second), is modelled by:<br>$$R_{\\text{inh}} = 0.8 \\times 1.15^t$$<br>Use the models to show that the inhibitor's reaction rate and the primary reaction rate will be equal during the 20th minute.",
         "steps": [
-            "For Part (a)(i), set the rate $R$ equal to $0$ and expand the exponents: $$0 = 5 + 50\\left(\dfrac{T}{10}\\right)^3 - 25\\left(\dfrac{T}{10}\\right)^4 \\implies 0 = 5 + 50\\left(\dfrac{T^3}{1\\,000}\\right) - 25\\left(\dfrac{T^4}{10\\,000}\\right)$$, which simplifies to: $$0 = 5 + \\dfrac{T^3}{20} - \\dfrac{T^4}{400}$$",
-            "Multiply the entire equation by $400$ to clear the fractions: $$0 = 2\\,000 + 20T^3 - T^4$$",
-            "Rearrange the terms and divide both sides by $T$ (since $T > 0$): $$T^4 = 20T^3 + 2\\,000 \\implies T^3 = 20T^2 + \\dfrac{2\\,000}{T}$$",
-            "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{20T^2 + \\dfrac{2\\,000}{T}}$$ as required.",
-            "For Part (a)(ii), substitute $T_0 = 21$ into the formula to find the successive iterations: $$T_1 = \\sqrt[3]{20(21)^2 + \\dfrac{2\\,000}{21}} = \\sqrt[3]{8\\,820 + 95.238} = \\sqrt[3]{8\\,915.238} \\approx 20.735$$",
-            "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{20(20.7352)^2 + \\dfrac{2\\,000}{20.7352}} \\approx \\sqrt[3]{8\\,695.45} \\approx 20.563$$ and $$T_3 = \\sqrt[3]{20(20.5631)^2 + \\dfrac{2\\,000}{20.5631}} \\approx \\sqrt[3]{8\\,554.16} \\approx 20.451$$",
+            "For Part (a)(i), set the rate $R$ equal to $0$ and expand the exponents: $$0 = 5 + 50\\left(\dfrac{T}{10}\\right)^3 - 25\\left(\dfrac{T}{10}\\right)^4 \\implies 0 = 5 + 50\\left(\dfrac{T^3}{1\\\\,000}\\right) - 25\\left(\dfrac{T^4}{10\\\\,000}\\right)$$, which simplifies to: $$0 = 5 + \\dfrac{T^3}{20} - \\dfrac{T^4}{400}$$",
+            "Multiply the entire equation by $400$ to clear the fractions: $$0 = 2\\\\,000 + 20T^3 - T^4$$",
+            "Rearrange the terms and divide both sides by $T$ (since $T > 0$): $$T^4 = 20T^3 + 2\\\\,000 \\implies T^3 = 20T^2 + \\dfrac{2\\\\,000}{T}$$",
+            "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{20T^2 + \\dfrac{2\\\\,000}{T}}$$ as required.",
+            "For Part (a)(ii), substitute $T_0 = 21$ into the formula to find the successive iterations: $$T_1 = \\sqrt[3]{20(21)^2 + \\dfrac{2\\\\,000}{21}} = \\sqrt[3]{8\\\\,820 + 95.238} = \\sqrt[3]{8\\\\,915.238} \\approx 20.735$$",
+            "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{20(20.7352)^2 + \\dfrac{2\\\\,000}{20.7352}} \\approx \\sqrt[3]{8\\\\,695.45} \\approx 20.563$$ and $$T_3 = \\sqrt[3]{20(20.5631)^2 + \\dfrac{2\\\\,000}{20.5631}} \\approx \\sqrt[3]{8\\\\,554.16} \\approx 20.451$$",
             "For Part (a)(iii), explain the relevance: $T = 21$ minutes is a realistic starting estimate that is close to the expected root (since the reaction stops just over 20 minutes), which improves the speed of convergence.",
             "For Part (b), find the intersection interval by evaluating the difference between reaction rates. Let $f(t) = R - R_{\\text{inh}}$.",
             "Evaluate both models at $t = 19$: $$R = 5 + 50\\left(\dfrac{19}{10}\\right)^3 - 25\\left(\dfrac{19}{10}\\right)^4 \\approx 22.15\\text{ moles/s}$$ and $$R_{\\text{inh}} = 0.8 \\times 1.15^{19} \\approx 11.39\\text{ moles/s}$$. Since $22.15 > 11.39$, primary reaction rate exceeds the inhibitor rate.",
@@ -1069,14 +1069,14 @@ window.ALEVEL_QUESTIONS = [
             "Numerical Iteration"
         ],
         "img": false,
-        "question": "The total value of a corporate delivery fleet, $V$ (in millions of pounds), $t$ years after purchase is modelled by:<br>$$V = 4 + 40\\left(\\dfrac{t}{20}\\right)^3 - 20\\left(\\dfrac{t}{20}\\right)^4$$<br>(a) (i) The model is used to predict the time, $T$, when the total value of the fleet will depreciate to zero. Show that $T$ satisfies the equation:<br>$$T = \\sqrt[3]{40T^2 + \\dfrac{32\\,000}{T}}$$ <br>(a) (ii) Use the iterative formula $T_{n+1} = \\sqrt[3]{40T_n^2 + \\dfrac{32\\,000}{T_n}}$, with $T_0 = 41$, to find the values of $T_1$, $T_2$, and $T_3$, giving your answers to three decimal places.<br><br>(a) (iii) Explain the relevance of using $T_0 = 41$.<br><br>(b) The company's annual fleet maintenance cost, $C$ (in millions of pounds), is modelled by:<br>$$C = 0.2 \\times 1.085^t$$<br>Use the models to show that the annual maintenance cost and the total fleet value will be equal during the 40th year.",
+        "question": "The total value of a corporate delivery fleet, $V$ (in millions of pounds), $t$ years after purchase is modelled by:<br>$$V = 4 + 40\\left(\\dfrac{t}{20}\\right)^3 - 20\\left(\\dfrac{t}{20}\\right)^4$$<br>(a) (i) The model is used to predict the time, $T$, when the total value of the fleet will depreciate to zero. Show that $T$ satisfies the equation:<br>$$T = \\sqrt[3]{40T^2 + \\dfrac{32\\\\,000}{T}}$$ <br>(a) (ii) Use the iterative formula $T_{n+1} = \\sqrt[3]{40T_n^2 + \\dfrac{32\\\\,000}{T_n}}$, with $T_0 = 41$, to find the values of $T_1$, $T_2$, and $T_3$, giving your answers to three decimal places.<br><br>(a) (iii) Explain the relevance of using $T_0 = 41$.<br><br>(b) The company's annual fleet maintenance cost, $C$ (in millions of pounds), is modelled by:<br>$$C = 0.2 \\times 1.085^t$$<br>Use the models to show that the annual maintenance cost and the total fleet value will be equal during the 40th year.",
         "steps": [
-            "For Part (a)(i), set the value $V$ equal to $0$ and expand the exponents: $$0 = 4 + 40\\left(\\dfrac{T}{20}\\right)^3 - 20\\left(\\dfrac{T}{20}\\right)^4 \\implies 0 = 4 + 40\\left(\\dfrac{T^3}{8\\,000}\\right) - 20\\left(\\dfrac{T^4}{160\\,000}\\right)$$, which simplifies to: $$0 = 4 + \\dfrac{T^3}{200} - \\dfrac{T^4}{8\\,000}$$",
-            "Multiply the entire equation by $8\\,000$ to clear the fractions: $$0 = 32\\,000 + 40T^3 - T^4$$",
-            "Rearrange the terms and divide both sides by $T$ (since $T > 0$): $$T^4 = 40T^3 + 32\\,000 \\implies T^3 = 40T^2 + \\dfrac{32\\,000}{T}$$",
-            "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{40T^2 + \\dfrac{32\\,000}{T}}$$ as required.",
-            "For Part (a)(ii), substitute $T_0 = 41$ into the formula to find the successive iterations: $$T_1 = \\sqrt[3]{40(41)^2 + \\dfrac{32\\,000}{41}} = \\sqrt[3]{67\\,240 + 780.487} = \\sqrt[3]{68\\,020.487} \\approx 40.821$$",
-            "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{40(40.8205)^2 + \\dfrac{32\\,000}{40.8205}} \\approx \\sqrt[3]{67\\,436.4} \\approx 40.704$$ and $$T_3 = \\sqrt[3]{40(40.7037)^2 + \\dfrac{32\\,000}{40.7037}} \\approx \\sqrt[3]{67\\,057.5} \\approx 40.627$$",
+            "For Part (a)(i), set the value $V$ equal to $0$ and expand the exponents: $$0 = 4 + 40\\left(\\dfrac{T}{20}\\right)^3 - 20\\left(\\dfrac{T}{20}\\right)^4 \\implies 0 = 4 + 40\\left(\\dfrac{T^3}{8\\\\,000}\\right) - 20\\left(\\dfrac{T^4}{160\\\\,000}\\right)$$, which simplifies to: $$0 = 4 + \\dfrac{T^3}{200} - \\dfrac{T^4}{8\\\\,000}$$",
+            "Multiply the entire equation by $8\\\\,000$ to clear the fractions: $$0 = 32\\\\,000 + 40T^3 - T^4$$",
+            "Rearrange the terms and divide both sides by $T$ (since $T > 0$): $$T^4 = 40T^3 + 32\\\\,000 \\implies T^3 = 40T^2 + \\dfrac{32\\\\,000}{T}$$",
+            "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{40T^2 + \\dfrac{32\\\\,000}{T}}$$ as required.",
+            "For Part (a)(ii), substitute $T_0 = 41$ into the formula to find the successive iterations: $$T_1 = \\sqrt[3]{40(41)^2 + \\dfrac{32\\\\,000}{41}} = \\sqrt[3]{67\\\\,240 + 780.487} = \\sqrt[3]{68\\\\,020.487} \\approx 40.821$$",
+            "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{40(40.8205)^2 + \\dfrac{32\\\\,000}{40.8205}} \\approx \\sqrt[3]{67\\\\,436.4} \\approx 40.704$$ and $$T_3 = \\sqrt[3]{40(40.7037)^2 + \\dfrac{32\\\\,000}{40.7037}} \\approx \\sqrt[3]{67\\\\,057.5} \\approx 40.627$$",
             "For Part (a)(iii), explain the relevance: $T = 41$ years corresponds to a realistic starting estimate that is close to the expected root (since the fleet value depreciates to zero just over 40 years), which improves the speed of convergence.",
             "For Part (b), find the intersection interval by evaluating the difference between fleet value and maintenance costs. Let $f(t) = V - C$.",
             "Evaluate both models at $t = 39$: $$V = 4 + 40\\left(\\dfrac{39}{20}\\right)^3 - 20\\left(\\dfrac{39}{20}\\right)^4 \\approx 11.42\\text{ million}$$ and $$C = 0.2 \times 1.085^{39} \\approx 4.82\\text{ million}$$. Since $11.42 > 4.82$, fleet value exceeds maintenance costs.",
@@ -1762,7 +1762,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "A curve has equation $y = x^3 - 27x$.<br><br>The point $A$ on the curve has $x$-coordinate $-3$.<br>The point $B$ on the curve has $x$-coordinate $-3 + h$.<br><br>1. Show that the gradient of the line $AB$ is $h^2 - 9h$.<br>2. Explain how the result of part (1) can be used to show that $A$ is a stationary point on the curve.",
         "steps": [
             "Find the $y$-coordinate of point $A$ by substituting $x = -3$ into the curve's equation:<br>$$y_A = (-3)^3 - 27(-3) = -27 + 81 = 54$$<br>So, the coordinates of $A$ are $(-3, 54)$.",
-            "Find the $y$-coordinate of point $B$ by substituting $x = -3 + h$ into the curve's equation:<br>$$y_B = (-3 + h)^3 - 27(-3 + h)$$<br>Using the binomial expansion for $(-3+h)^3$, we expand this expression as:<br>$$y_B = (h^3 - 9h^2 + 27h - 27) + 81 - 27h$$<br>$$y_B = h^3 - 9h^2 + 54$$<br>So, the coordinates of $B$ are $(-3 + h, \\, h^3 - 9h^2 + 54)$.",
+            "Find the $y$-coordinate of point $B$ by substituting $x = -3 + h$ into the curve's equation:<br>$$y_B = (-3 + h)^3 - 27(-3 + h)$$<br>Using the binomial expansion for $(-3+h)^3$, we expand this expression as:<br>$$y_B = (h^3 - 9h^2 + 27h - 27) + 81 - 27h$$<br>$$y_B = h^3 - 9h^2 + 54$$<br>So, the coordinates of $B$ are $(-3 + h, \\\\, h^3 - 9h^2 + 54)$.",
             "Calculate the gradient of the chord $AB$ using the gradient formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>$$m_{AB} = \\dfrac{(h^3 - 9h^2 + 54) - 54}{(-3 + h) - (-3)}$$<br>$$m_{AB} = \\dfrac{h^3 - 9h^2}{h}$$<br>Dividing each term in the numerator by $h$ (where $h \\ne 0$) gives the required gradient:<br>$$m_{AB} = h^2 - 9h$$",
             "To show that $A$ is a stationary point, we consider the limit of the chord gradient $m_{AB}$ as $h \\to 0$. As $h$ approaches $0$, the chord $AB$ becomes the tangent to the curve at point $A$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\lim_{h \\to 0} (h^2 - 9h) = 0^2 - 9(0) = 0$$",
             "Since the derivative (gradient of the tangent) at $x = -3$ is $0$, the tangent line is completely horizontal. Therefore, point $A$ is a stationary point on the curve.<br><br>Final Answer: $$h^2 - 9h, \\quad \\lim_{h \\to 0} (h^2 - 9h) = 0$$"
@@ -1802,7 +1802,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "A curve has equation $y = 2x^2 - 5x$.<br><br>The point $P$ on the curve has $x$-coordinate $2$.<br>The point $Q$ on the curve has $x$-coordinate $2 + h$.<br><br>1. Show that the gradient of the chord $PQ$ is $2h + 3$.<br>2. Explain how this result can be used to show that the gradient of the tangent to the curve at $P$ is $3$.",
         "steps": [
             "Find the $y$-coordinate of point $P$ by substituting $x = 2$ into the curve's equation:<br>$$y_P = 2(2)^2 - 5(2) = 8 - 10 = -2$$<br>So, the coordinates of $P$ are $(2, -2)$.",
-            "Find the $y$-coordinate of point $Q$ by substituting $x = 2 + h$ into the curve's equation:<br>$$y_Q = 2(2 + h)^2 - 5(2 + h)$$<br>Expand the quadratic term and simplify:<br>$$y_Q = 2(4 + 4h + h^2) - 10 - 5h$$<br>$$y_Q = 8 + 8h + 2h^2 - 10 - 5h = 2h^2 + 3h - 2$$<br>So, the coordinates of $Q$ are $(2 + h, \\, 2h^2 + 3h - 2)$.",
+            "Find the $y$-coordinate of point $Q$ by substituting $x = 2 + h$ into the curve's equation:<br>$$y_Q = 2(2 + h)^2 - 5(2 + h)$$<br>Expand the quadratic term and simplify:<br>$$y_Q = 2(4 + 4h + h^2) - 10 - 5h$$<br>$$y_Q = 8 + 8h + 2h^2 - 10 - 5h = 2h^2 + 3h - 2$$<br>So, the coordinates of $Q$ are $(2 + h, \\\\, 2h^2 + 3h - 2)$.",
             "Calculate the gradient of the chord $PQ$ using the formula $m = \\dfrac{y_Q - y_P}{x_Q - x_P}$:<br>$$m_{PQ} = \\dfrac{(2h^2 + 3h - 2) - (-2)}{(2 + h) - 2}$$<br>$$m_{PQ} = \\dfrac{2h^2 + 3h}{h}$$<br>Divide the numerator by $h$ (where $h \\ne 0$):<br>$$m_{PQ} = 2h + 3$$",
             "To find the gradient of the tangent to the curve at $P$, we evaluate the limit of the chord gradient $m_{PQ}$ as the point $Q$ moves infinitely close to $P$, which corresponds to $h \\to 0$:<br>$$\\text{Gradient at } P = \\lim_{h \\to 0} (2h + 3) = 2(0) + 3 = 3$$<br><br>Final Answer: $$2h + 3, \\quad \\lim_{h \\to 0} (2h + 3) = 3$$"
         ],
@@ -1841,7 +1841,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "A curve has equation $y = 2x^3 - 6x$.<br><br>The point $A$ on the curve has $x$-coordinate $1$.<br>The point $B$ on the curve has $x$-coordinate $1 + h$.<br><br>1. Show that the gradient of the line $AB$ is $2h^2 + 6h$.<br>2. Explain how the result of part (1) can be used to show that $A$ is a stationary point on the curve.",
         "steps": [
             "Find the $y$-coordinate of point $A$ by substituting $x = 1$ into the curve's equation:<br>$$y_A = 2(1)^3 - 6(1) = 2 - 6 = -4$$<br>So, the coordinates of $A$ are $(1, -4)$.",
-            "Find the $y$-coordinate of point $B$ by substituting $x = 1 + h$ into the curve's equation:<br>$$y_B = 2(1 + h)^3 - 6(1 + h)$$<br>Expand the cubic term and simplify:<br>$$y_B = 2(1 + 3h + 3h^2 + h^3) - 6 - 6h$$<br>$$y_B = 2 + 6h + 6h^2 + 2h^3 - 6 - 6h = 2h^3 + 6h^2 - 4$$<br>So, the coordinates of $B$ are $(1 + h, \\, 2h^3 + 6h^2 - 4)$.",
+            "Find the $y$-coordinate of point $B$ by substituting $x = 1 + h$ into the curve's equation:<br>$$y_B = 2(1 + h)^3 - 6(1 + h)$$<br>Expand the cubic term and simplify:<br>$$y_B = 2(1 + 3h + 3h^2 + h^3) - 6 - 6h$$<br>$$y_B = 2 + 6h + 6h^2 + 2h^3 - 6 - 6h = 2h^3 + 6h^2 - 4$$<br>So, the coordinates of $B$ are $(1 + h, \\\\, 2h^3 + 6h^2 - 4)$.",
             "Calculate the gradient of the line $AB$ using $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>$$m_{AB} = \\dfrac{(2h^3 + 6h^2 - 4) - (-4)}{(1 + h) - 1}$$<br>$$m_{AB} = \\dfrac{2h^3 + 6h^2}{h}$$<br>Divide the numerator by $h$ (where $h \\ne 0$):<br>$$m_{AB} = 2h^2 + 6h$$",
             "To show that $A$ is a stationary point, we find the gradient of the tangent at $A$ by taking the limit of the chord gradient $m_{AB}$ as $h \\to 0$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\lim_{h \\to 0} (2h^2 + 6h) = 2(0)^2 + 6(0) = 0$$",
             "Since the derivative at $x = 1$ is $0$, the curve has a horizontal tangent line at $A$. Therefore, point $A$ is a stationary point on the curve.<br><br>Final Answer: $$2h^2 + 6h, \\quad \\lim_{h \\to 0} (2h^2 + 6h) = 0$$"
@@ -1881,7 +1881,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "A curve has equation $y = \\dfrac{4}{x}$ for $x > 0$.<br><br>The point $A$ on the curve has $x$-coordinate $2$.<br>The point $B$ on the curve has $x$-coordinate $2 + h$.<br><br>1. Show that the gradient of the line $AB$ is $-\\dfrac{2}{2+h}$.<br>2. State the gradient of the tangent to the curve at $A$ by considering the limit of this expression as $h \\to 0$.",
         "steps": [
             "Find the $y$-coordinate of point $A$ by substituting $x = 2$ into the curve's equation:<br>$$y_A = \\dfrac{4}{2} = 2$$<br>So, the coordinates of $A$ are $(2, 2)$.",
-            "Find the $y$-coordinate of point $B$ by substituting $x = 2 + h$ into the curve's equation:<br>$$y_B = \\dfrac{4}{2 + h}$$<br>So, the coordinates of $B$ are $\\left(2 + h, \\, \\dfrac{4}{2+h}\\right)$.",
+            "Find the $y$-coordinate of point $B$ by substituting $x = 2 + h$ into the curve's equation:<br>$$y_B = \\dfrac{4}{2 + h}$$<br>So, the coordinates of $B$ are $\\left(2 + h, \\\\, \\dfrac{4}{2+h}\\right)$.",
             "Calculate the gradient of the line $AB$ using the formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>$$m_{AB} = \\dfrac{\\dfrac{4}{2 + h} - 2}{(2 + h) - 2} = \\dfrac{\\dfrac{4}{2 + h} - 2}{h}$$",
             "Simplify the numerator by finding a common denominator of $(2+h)$:<br>$$\\dfrac{4}{2 + h} - 2 = \\dfrac{4 - 2(2 + h)}{2 + h} = \\dfrac{4 - 4 - 2h}{2 + h} = \\dfrac{-2h}{2 + h}$$",
             "Substitute this simplified fraction back into the gradient expression:<br>$$m_{AB} = \\dfrac{\\dfrac{-2h}{2 + h}}{h} = \\dfrac{-2h}{h(2 + h)}$$<br>Cancel the factor of $h$ in the numerator and denominator (where $h \\ne 0$):<br>$$m_{AB} = -\\dfrac{2}{2 + h}$$",
@@ -1922,7 +1922,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "A curve has equation $y = \\sqrt{x}$ for $x \\ge 0$.<br><br>The point $A$ on the curve has $x$-coordinate $4$.<br>The point $B$ on the curve has $x$-coordinate $4 + h$.<br><br>1. Show that the gradient of the line $AB$ can be written as $\\dfrac{1}{\\sqrt{4+h} + 2}$.<br>2. Explain how this result can be used to show that the gradient of the curve at $A$ is $0.25$.",
         "steps": [
             "Find the $y$-coordinate of point $A$ by substituting $x = 4$ into the curve's equation:<br>$$y_A = \\sqrt{4} = 2$$<br>So, the coordinates of $A$ are $(4, 2)$.",
-            "Find the $y$-coordinate of point $B$ by substituting $x = 4 + h$ into the curve's equation:<br>$$y_B = \\sqrt{4 + h}$$<br>So, the coordinates of $B$ are $(4 + h, \\, \\sqrt{4 + h})$.",
+            "Find the $y$-coordinate of point $B$ by substituting $x = 4 + h$ into the curve's equation:<br>$$y_B = \\sqrt{4 + h}$$<br>So, the coordinates of $B$ are $(4 + h, \\\\, \\sqrt{4 + h})$.",
             "Calculate the gradient of the line $AB$ using the formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>$$m_{AB} = \\dfrac{\\sqrt{4 + h} - 2}{(4 + h) - 4} = \\dfrac{\\sqrt{4 + h} - 2}{h}$$",
             "To eliminate the $h$ in the denominator and simplify, we rationalise the numerator by multiplying both the numerator and the denominator by the conjugate expression $(\\sqrt{4 + h} + 2)$:<br>$$m_{AB} = \\dfrac{(\\sqrt{4 + h} - 2)(\\sqrt{4 + h} + 2)}{h(\\sqrt{4 + h} + 2)}$$",
             "Expand the numerator using the difference of two squares identity, $(a-b)(a+b) = a^2 - b^2$:<br>$$m_{AB} = \\dfrac{(4 + h) - 4}{h(\\sqrt{4 + h} + 2)} = \\dfrac{h}{h(\\sqrt{4 + h} + 2)}$$<br>Cancel the factor of $h$ (where $h \\ne 0$) to obtain the required expression:<br>$$m_{AB} = \\dfrac{1}{\\sqrt{4 + h} + 2}$$",
@@ -2006,19 +2006,19 @@ window.ALEVEL_QUESTIONS = [
             "Since $L_2$ intersects the $y$-axis at $(0, 5)$, its $y$-intercept is $5$. Write its equation in slope-intercept form $y = mx + c$:<br>$$y = -\\dfrac{1}{2}x + 5$$",
             "To find the intersection point, set the two linear equations equal to each other:<br>$$2x + 6 = -\\dfrac{1}{2}x + 5$$<br>Multiply the entire equation by $2$ to clear the fraction:<br>$$4x + 12 = -x + 10$$",
             "Solve for $x$ by collecting like terms:<br>$$5x = -2 \\implies x = -\\dfrac{2}{5}$$",
-            "Substitute $x = -\\dfrac{2}{5}$ back into the equation for $L_1$ to find the $y$-coordinate:<br>$$y = 2\\left(-\\dfrac{2}{5}\\right) + 6 = -\\dfrac{4}{5} + \\dfrac{30}{5} = \\dfrac{26}{5}$$<br><br>Final Answer: $$\\left(-\\dfrac{2}{5}, \\, \\dfrac{26}{5}\\right)$$"
+            "Substitute $x = -\\dfrac{2}{5}$ back into the equation for $L_1$ to find the $y$-coordinate:<br>$$y = 2\\left(-\\dfrac{2}{5}\\right) + 6 = -\\dfrac{4}{5} + \\dfrac{30}{5} = \\dfrac{26}{5}$$<br><br>Final Answer: $$\\left(-\\dfrac{2}{5}, \\\\, \\dfrac{26}{5}\\right)$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\left(\\dfrac{2}{5}, \\, \\dfrac{34}{5}\\right)$$",
+                "ans": "$$\\left(\\dfrac{2}{5}, \\\\, \\dfrac{34}{5}\\right)$$",
                 "feedback": "This is probably because you made a sign error when solving $4x + 12 = -x + 10$. Adding $x$ to both sides gives $5x$, and subtracting $12$ gives $-2$, which yields a negative $x$ value."
             },
             {
-                "ans": "$$\\left(-\\dfrac{2}{3}, \\, \\dfrac{14}{3}\\right)$$",
+                "ans": "$$\\left(-\\dfrac{2}{3}, \\\\, \\dfrac{14}{3}\\right)$$",
                 "feedback": "You may have used a gradient of $-\\dfrac{1}{2}$ for $L_1$ instead of perpendicular $L_2$. Ensure you associate the correct gradients with the respective lines before finding the intersection."
             },
             {
-                "ans": "$$\\left(-\\dfrac{2}{5}, \\, 5\\right)$$",
+                "ans": "$$\\left(-\\dfrac{2}{5}, \\\\, 5\\right)$$",
                 "feedback": "It looks like you found the correct $x$-coordinate, but made an error during substitution. Ensure you substitute $x$ back into the full equation $y = 2x + 6$."
             }
         ],
@@ -2120,25 +2120,25 @@ window.ALEVEL_QUESTIONS = [
         "img": false,
         "question": "The perpendicular bisector of the line segment joining $C(-2, 3)$ and $D(4, 11)$ intersects the line $y = 3x - 1$ at point $E$.<br><br>Find the coordinates of point $E$.",
         "steps": [
-            "Find the coordinates of the midpoint, $M$, of the line segment $CD$:<br>$$M = \\left(\\dfrac{-2 + 4}{2}, \\, \\dfrac{3 + 11}{2}\\right) = (1, 7)$$,",
+            "Find the coordinates of the midpoint, $M$, of the line segment $CD$:<br>$$M = \\left(\\dfrac{-2 + 4}{2}, \\\\, \\dfrac{3 + 11}{2}\\right) = (1, 7)$$,",
             "Calculate the gradient of the line segment $CD$:<br>$$m_{CD} = \\dfrac{11 - 3}{4 - (-2)} = \\dfrac{8}{6} = \\dfrac{4}{3}$$",
             "The perpendicular bisector has a gradient that is the negative reciprocal of $m_{CD}$:<br>$$m_{\\perp} = -\\dfrac{3}{4}$$",
             "Write the equation of the perpendicular bisector passing through the midpoint $M(1, 7)$:<br>$$y - 7 = -\\dfrac{3}{4}(x - 1)$$<br>Multiply by $4$ to clear the fraction:<br>$$4y - 28 = -3x + 3 \\implies 3x + 4y = 31$$",
             "Solve the simultaneous equations to find the intersection point $E$. Substitute $y = 3x - 1$ into our perpendicular bisector equation:<br>$$3x + 4(3x - 1) = 31$$<br>$$3x + 12x - 4 = 31 \\implies 15x = 35$$",
             "Simplify to find the $x$-coordinate:<br>$$x = \\dfrac{35}{15} = \\dfrac{7}{3}$$",
-            "Substitute $x = \\dfrac{7}{3}$ back into the equation $y = 3x - 1$ to find the $y$-coordinate:<br>$$y = 3\\left(\\dfrac{7}{3}\\right) - 1 = 7 - 1 = 6$$<br><br>Final Answer: $$\\left(\\dfrac{7}{3}, \\, 6\\right)$$"
+            "Substitute $x = \\dfrac{7}{3}$ back into the equation $y = 3x - 1$ to find the $y$-coordinate:<br>$$y = 3\\left(\\dfrac{7}{3}\\right) - 1 = 7 - 1 = 6$$<br><br>Final Answer: $$\\left(\\dfrac{7}{3}, \\\\, 6\\right)$$"
         ],
         "pi_options": [
             {
-                "ans": "$$\\left(\\dfrac{1}{3}, \\, 0\\right)$$",
+                "ans": "$$\\left(\\dfrac{1}{3}, \\\\, 0\\right)$$",
                 "feedback": "This is the intersection of $y = 3x - 1$ with the $x$-axis. Ensure you are setting up the simultaneous equations using the perpendicular bisector line, not coordinates from the axes."
             },
             {
-                "ans": "$$\\left(2, \\, 5\\right)$$",
+                "ans": "$$\\left(2, \\\\, 5\\right)$$",
                 "feedback": "You may have found the equation of a line passing through $C$ or $D$ instead of their midpoint. A perpendicular bisector must strictly pass through the midpoint $(1, 7)$."
             },
             {
-                "ans": "$$\\left(\\dfrac{31}{15}, \\, \\dfrac{26}{5}\\right)$$",
+                "ans": "$$\\left(\\dfrac{31}{15}, \\\\, \\dfrac{26}{5}\\right)$$",
                 "feedback": "This occurs if you used a gradient of $-\\dfrac{4}{3}$ instead of $-\\dfrac{3}{4}$ for the perpendicular bisector. Remember to take the negative reciprocal of the original gradient."
             }
         ],
