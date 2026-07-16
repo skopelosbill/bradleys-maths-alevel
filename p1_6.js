@@ -400,15 +400,15 @@ window.ALEVEL_QUESTIONS = [
             "Bring all terms to one side of the equation. Do not divide both sides by $\\cos x$, as doing so assumes $\\cos x \\ne 0$ and leads to the loss of valid roots:<br>$$4\\sin x \\cos x - \\cos x = 0$$",
             "Factorise out the common term $\\cos x$ to set up two solvable branches:<br>$$\\cos x\\left(4\\sin x - 1\\right) = 0 \\implies \\cos x = 0 \\quad \\text{or} \\quad \\sin x = \\dfrac{1}{4}$$",
             "Solve the first branch, $\\cos x = 0$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>$$x = 90.0^\\circ$$",
-            "Solve the second branch, $\\sin x = \\dfrac{1}{4} = 0.25$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\sin^{-1}(0.25) \\\\ x &\\approx 14.5^\\circ \\end{aligned}<br>Find the second quadrant solution within the interval:<br>$$x = 180^\\circ - 14.5^\\circ = 165.5^\\circ$$<br>Combining all solutions yields the final set of answers.<br><br>Final Answer: $$x = 14.5^\\circ, \\\\, 90.0^\\circ, \\\\, 165.5^\\circ$$"
+            "Solve the second branch, $\\sin x = \\dfrac{1}{4} = 0.25$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\sin^{-1}(0.25) \\\\ x &\\approx 14.5^\\circ \\end{aligned}<br>Find the second quadrant solution within the interval:<br>$$x = 180^\\circ - 14.5^\\circ = 165.5^\\circ$$<br>Combining all solutions yields the final set of answers.<br><br>Final Answer: $$x = 14.5^\\circ, \\, 90.0^\\circ, \\, 165.5^\\circ$$"
         ],
         "pi_options": [
             {
-                "ans": "$$x = 14.5^\\circ, \\\\, 165.5^\\circ$$",
+                "ans": "$$x = 14.5^\\circ, \\, 165.5^\\circ$$",
                 "feedback": "You may have made the classic mistake of dividing both sides by $\\cos x$ in the first step. Dividing by a variable term that can equal zero loses the valid solutions where $\\cos x = 0 \\implies x = 90.0^\\circ$. Always bring terms to one side and factorise."
             },
             {
-                "ans": "$$x = 14.5^\\circ, \\\\, 90.0^\\circ, \\\\, 194.5^\\circ$$",
+                "ans": "$$x = 14.5^\\circ, \\, 90.0^\\circ, \\, 194.5^\\circ$$",
                 "feedback": "Check your second quadrant calculation for $\\sin x = 0.25$. Sine is positive in the first and second quadrants. The second quadrant solution is $180^\circ - 14.5^\circ = 165.5^\circ$, not $180^\circ + 14.5^\circ = 194.5^\circ$."
             },
             {
@@ -439,20 +439,20 @@ window.ALEVEL_QUESTIONS = [
             "Use the double-angle sine identity $\\sin 2x = 2\\sin x \\cos x$ to expand the left-hand side:<br>$$3\\left(2\\sin x \\cos x\\right) = 2\\sin x \\implies 6\\sin x \\cos x = 2\\sin x$$",
             "Bring all terms to one side of the equation:<br>$$6\\sin x \\cos x - 2\\sin x = 0$$",
             "Factorise out the common term $2\\sin x$ to set up two solvable branches:<br>$$2\\sin x\\left(3\\cos x - 1\\right) = 0 \\implies \\sin x = 0 \\quad \\text{or} \\quad \\cos x = \\dfrac{1}{3}$$",
-            "Solve the first branch, $\\sin x = 0$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>$$x = 0.0^\\circ, \\\\, 180.0^\\circ$$<br>Because the inequality is inclusive of the boundaries, both solutions are valid.",
-            "Solve the second branch, $\\cos x = \\dfrac{1}{3}$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}\\left(\\dfrac{1}{3}\\right) \\\\ x &\\approx 70.5^\\circ \\end{aligned}<br>Since cosine is negative in the second quadrant, there are no other solutions for $\\cos x = \\dfrac{1}{3}$ in the interval $[0^circ, 180^circ]$. Combining all branches yields the final set of answers.<br><br>Final Answer: $$x = 0.0^\\circ, \\\\, 70.5^\\circ, \\\\, 180.0^\\circ$$"
+            "Solve the first branch, $\\sin x = 0$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>$$x = 0.0^\\circ, \\, 180.0^\\circ$$<br>Because the inequality is inclusive of the boundaries, both solutions are valid.",
+            "Solve the second branch, $\\cos x = \\dfrac{1}{3}$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}\\left(\\dfrac{1}{3}\\right) \\\\ x &\\approx 70.5^\\circ \\end{aligned}<br>Since cosine is negative in the second quadrant, there are no other solutions for $\\cos x = \\dfrac{1}{3}$ in the interval $[0^circ, 180^circ]$. Combining all branches yields the final set of answers.<br><br>Final Answer: $$x = 0.0^\\circ, \\, 70.5^\\circ, \\, 180.0^\\circ$$"
         ],
         "pi_options": [
             {
                 "ans": "$$x = 70.5^\\circ$$",
-                "feedback": "You may have made the mistake of dividing both sides by $\\sin x$ in the first step. Dividing by a variable term that can equal zero loses the valid solutions where $\\sin x = 0 \\implies x = 0.0^\circ, \\\\, 180.0^\circ$. Always bring terms to one side and factorise."
+                "feedback": "You may have made the mistake of dividing both sides by $\\sin x$ in the first step. Dividing by a variable term that can equal zero loses the valid solutions where $\\sin x = 0 \\implies x = 0.0^\circ, \\, 180.0^\circ$. Always bring terms to one side and factorise."
             },
             {
-                "ans": "$$x = 0.0^\\circ, \\\\, 70.5^\\circ, \\\\, 109.5^\\circ, \\\\, 180.0^\\circ$$",
+                "ans": "$$x = 0.0^\\circ, \\, 70.5^\\circ, \\, 109.5^\\circ, \\, 180.0^\\circ$$",
                 "feedback": "Check your quadrant adjustments for $\\cos x = \\dfrac{1}{3}$. Cosine is positive in the first and fourth quadrants. The angle $109.5^\circ$ is in the second quadrant where cosine is negative, and is not a valid solution."
             },
             {
-                "ans": "$$x = 70.5^\\circ, \\\\, 180.0^\\circ$$",
+                "ans": "$$x = 70.5^\\circ, \\, 180.0^\\circ$$",
                 "feedback": "Make sure you include all boundary solutions. Since $\\sin x = 0$ is solved over the inclusive interval $0^\circ \\le x \\le 180^\circ$, both $x = 0.0^\circ$ and $x = 180.0^\circ$ are valid roots."
             }
         ],
@@ -479,20 +479,20 @@ window.ALEVEL_QUESTIONS = [
             "Use the double-angle cosine identity $\\cos 2x = 2\\cos^2 x - 1$ to rewrite the left-hand side of the equation:<br>$$2\\left(2\\cos^2 x - 1\\right) = \\cos x$$",
             "Expand the brackets and bring all terms to one side to form the required quadratic equation:<br>$$4\\cos^2 x - 2 = \\cos x \\implies 4\\cos^2 x - \\cos x - 2 = 0$$",
             "Apply the quadratic formula with $a = 4$, $b = -1$, and $c = -2$ to solve for $\\cos x$:<br>\\begin{aligned} \\cos x &= \\dfrac{-(-1) \\pm \\sqrt{(-1)^2 - 4(4)(-2)}}{2(4)} \\\\\\ &= \\dfrac{1 \\pm \\sqrt{1 + 32}}{8} \\\\\\ &= \\dfrac{1 \\pm \\sqrt{33}}{8} \\end{aligned}<br>This gives two possible values for $\\cos x$:<br>$$\\cos x \\approx 0.8431 \\quad \\text{or} \\quad \\cos x \\approx -0.5931$$",
-            "Solve the first case, $\\cos x \\approx 0.8431$, in the domain $0^\\circ \\le x \\le 360^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}(0.8431) \\\\ x &\\approx 32.5^\\circ, \\\\, 360^\\circ - 32.5^\\circ = 327.5^\\circ \\end{aligned}",
-            "Solve the second case, $\\cos x \\approx -0.5931$, in the domain $0^\\circ \\le x \\le 360^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}(-0.5931) \\\\ x &\\approx 126.4^\\circ, \\\\, 360^\\circ - 126.4^\\circ = 233.6^\\circ \\end{aligned}<br>Combining all branches yields the final set of answers.<br><br>Final Answer: $$x = 32.5^\\circ, \\\\, 126.4^\\circ, \\\\, 233.6^\\circ, \\\\, 327.5^\\circ$$"
+            "Solve the first case, $\\cos x \\approx 0.8431$, in the domain $0^\\circ \\le x \\le 360^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}(0.8431) \\\\ x &\\approx 32.5^\\circ, \\, 360^\\circ - 32.5^\\circ = 327.5^\\circ \\end{aligned}",
+            "Solve the second case, $\\cos x \\approx -0.5931$, in the domain $0^\\circ \\le x \\le 360^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}(-0.5931) \\\\ x &\\approx 126.4^\\circ, \\, 360^\\circ - 126.4^\\circ = 233.6^\\circ \\end{aligned}<br>Combining all branches yields the final set of answers.<br><br>Final Answer: $$x = 32.5^\\circ, \\, 126.4^\\circ, \\, 233.6^\\circ, \\, 327.5^\\circ$$"
         ],
         "pi_options": [
             {
-                "ans": "$$x = 32.7^\\circ, \\\\, 126.4^\\circ, \\\\, 233.6^\\circ, \\\\, 327.3^\\circ$$",
+                "ans": "$$x = 32.7^\\circ, \\, 126.4^\\circ, \\, 233.6^\\circ, \\, 327.3^\\circ$$",
                 "feedback": "Check your evaluation of $c_1 = \\dfrac{1 + \\sqrt{33}}{8} \\approx 0.8431$. Taking the inverse cosine of this value gives $32.5^\\circ$, not $32.7^\circ$. Be careful with calculator inputs and rounding slips."
             },
             {
-                "ans": "$$x = 32.5^\\circ, \\\\, 327.5^\\circ$$",
+                "ans": "$$x = 32.5^\\circ, \\, 327.5^\\circ$$",
                 "feedback": "Remember to solve for both branches of your quadratic formula result. The negative branch $\\cos x \\approx -0.5931$ yields two valid solutions ($126.4^\circ$ and $233.6^\circ$) within the domain."
             },
             {
-                "ans": "$$x = 32.5^\\circ, \\\\, 126.4^\\circ$$",
+                "ans": "$$x = 32.5^\\circ, \\, 126.4^\\circ$$",
                 "feedback": "Each trigonometric branch has two solutions in the full $0^\circ \\le x \\le 360^\circ$ interval. You must find the companion quadrant angles (using $360^\circ - \\theta$) to complete the set."
             }
         ],
@@ -521,20 +521,20 @@ window.ALEVEL_QUESTIONS = [
             "Bring all terms to one side and factorise out the common term $\\sin x$:<br>$$2\\sin x \\cos^2 x - 3\\sin x = 0 \\implies \\sin x\\left(2\\cos^2 x - 3\\right) = 0$$",
             "Substitute $\\sin x = \\tan x \\cos x$ (as $\\cos x \\ne 0$ in the domain of tangent) to obtain the required form:<br>$$\\tan x \\cos x\\left(2\\cos^2 x - 3\\right) = 0 \\implies \\tan x\\left(2\\cos^2 x - 3\\right) = 0$$",
             "Set up the two branches to solve:<br>$$\\tan x = 0 \\quad \\text{or} \\quad 2\\cos^2 x - 3 = 0$$",
-            "Solve the first branch, $\\tan x = 0$, in the domain $0 \\le x \\le 2\\pi$:<br>$$x = 0, \\\\, \\pi, \\\\, 2\\pi$$",
-            "Solve the second branch, $2\\cos^2 x - 3 = 0 \\implies \\cos^2 x = 1.5$. Since $\\cos^2 x \\le 1$ for all real $x$, there are no real solutions from this branch. Combining the results yields the final answer.<br><br>Final Answer: $$x = 0, \\\\, \\pi, \\\\, 2\\pi$$"
+            "Solve the first branch, $\\tan x = 0$, in the domain $0 \\le x \\le 2\\pi$:<br>$$x = 0, \\, \\pi, \\, 2\\pi$$",
+            "Solve the second branch, $2\\cos^2 x - 3 = 0 \\implies \\cos^2 x = 1.5$. Since $\\cos^2 x \\le 1$ for all real $x$, there are no real solutions from this branch. Combining the results yields the final answer.<br><br>Final Answer: $$x = 0, \\, \\pi, \\, 2\\pi$$"
         ],
         "pi_options": [
             {
-                "ans": "$$x = 0, \\\\, \\dfrac{\\pi}{2}, \\\\, \\pi, \\\\, \\dfrac{3\\pi}{2}, \\\\, 2\\pi$$",
+                "ans": "$$x = 0, \\, \\dfrac{\\pi}{2}, \\, \\pi, \\, \\dfrac{3\\pi}{2}, \\, 2\\pi$$",
                 "feedback": "Be careful with your asymptote boundaries. Although $\\cos x = 0$ would mathematically satisfy $2\\sin x \\cos^2 x = 3\\sin x$, the values $x = \\dfrac{\\pi}{2}$ and $x = \\dfrac{3\\pi}{2}$ make $\\tan x$ in the original equation undefined, so they must be excluded."
             },
             {
-                "ans": "$$x = 0, \\\\, \\pi$$",
+                "ans": "$$x = 0, \\, \\pi$$",
                 "feedback": "Check your domain boundaries. Since the interval is inclusive of the upper limit ($0 \\le x \\le 2\\pi$), the root $x = 2\\pi$ is a valid solution and must be included."
             },
             {
-                "ans": "$$x = \\pi, \\\\, 2\\pi$$",
+                "ans": "$$x = \\pi, \\, 2\\pi$$",
                 "feedback": "Don't forget to include the starting boundary. Since $\\tan 0 = 0$, $x = 0$ is a valid root within the inclusive domain."
             }
         ],
@@ -561,16 +561,16 @@ window.ALEVEL_QUESTIONS = [
             "Use the compound angle expansion to equate the expressions:<br>$$3\\sin x + 4\\cos x = R\\sin x\\cos\\alpha + R\\cos x\\sin\\alpha$$<br>Compare the coefficients of $\\sin x$ and $\\cos x$:<br>$$R\\cos\\alpha = 3 \\quad \\text{and} \\quad R\\sin\\alpha = 4$$",
             "Find the amplitude $R$ and the phase shift angle $\\alpha$:<br>$$\\begin{aligned} R &= \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5 \\\\\\ \\tan\\alpha &= \\dfrac{4}{3} \\implies \\alpha = \\tan^{-1}\\left(\\dfrac{4}{3}\\right) \\approx 53.1^\\circ \\end{aligned}$$<br>This gives the harmonic form: $5\\sin(x + 53.1^\\circ)$.",
             "Substitute this harmonic form into the target equation and solve for the composite angle:<br>$$\\begin{aligned} 5\\sin(x + 53.1^\\circ) &= 2.5 \\\\\\ \\sin(x + 53.1^\\circ) &= 0.5 \\end{aligned}$$",
-            "Let $u = x + 53.1^\\circ$. Since the domain is $0^\\circ \\le x \\le 360^\\circ$, the search interval for $u$ is shifted to $53.1^\\circ \\le u \\le 413.1^\\circ$. Solve $\\sin u = 0.5$ in this interval:<br>$$u = 150.0^\\circ, \\\\, 390.0^\\circ$$<br>(Note that $u = 30.0^\\circ$ is outside our shifted search interval.)",
-            "Substitute $u = x + 53.1^\\circ$ back to solve for $x$:<br>\\begin{aligned} x + 53.1^\\circ = 150.0^\\circ &\\implies x = 96.9^\\circ \\\\ x + 53.1^\\circ = 390.0^\\circ &\\implies x = 336.9^\\circ \\end{aligned}<br><br>Final Answer: $$5\\sin(x + 53.1^\\circ), \\quad x = 96.9^\\circ, \\\\, 336.9^\\circ$$"
+            "Let $u = x + 53.1^\\circ$. Since the domain is $0^\\circ \\le x \\le 360^\\circ$, the search interval for $u$ is shifted to $53.1^\\circ \\le u \\le 413.1^\\circ$. Solve $\\sin u = 0.5$ in this interval:<br>$$u = 150.0^\\circ, \\, 390.0^\\circ$$<br>(Note that $u = 30.0^\\circ$ is outside our shifted search interval.)",
+            "Substitute $u = x + 53.1^\\circ$ back to solve for $x$:<br>\\begin{aligned} x + 53.1^\\circ = 150.0^\\circ &\\implies x = 96.9^\\circ \\\\ x + 53.1^\\circ = 390.0^\\circ &\\implies x = 336.9^\\circ \\end{aligned}<br><br>Final Answer: $$5\\sin(x + 53.1^\\circ), \\quad x = 96.9^\\circ, \\, 336.9^\\circ$$"
         ],
         "pi_options": [
             {
-                "ans": "$5\\sin(x + 53.1^\\circ), \\quad x = -23.1^\\circ, \\\\, 96.9^\\circ$",
+                "ans": "$5\\sin(x + 53.1^\\circ), \\quad x = -23.1^\\circ, \\, 96.9^\\circ$",
                 "feedback": "Be careful with your domain boundaries. While $x = -23.1^\\circ$ is a mathematical solution, it lies outside the required interval $0^\circ \le x \le 360^\circ$. Adding $360^\circ$ to $-23.1^\circ$ yields the correct positive fourth-quadrant solution $336.9^\circ$."
             },
             {
-                "ans": "$5\\sin(x + 53.1^\\circ), \\quad x = 96.9^\\circ, \\\\, 296.9^\\circ$",
+                "ans": "$5\\sin(x + 53.1^\\circ), \\quad x = 96.9^\\circ, \\, 296.9^\\circ$",
                 "feedback": "Check your second family solution. The root is found from $x + 53.1^\circ = 390.0^\circ \\implies x = 336.9^\circ$, not $x = 296.9^\circ$."
             },
             {
@@ -767,7 +767,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$$(4,1), \\quad \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{5}{34}$$",
-                "feedback": "Check your signs in the numerator of your gradient formula. The numerator is $3 - 2xy^2$. Substituting $x=4, \\\\, y=1$ yields $3 - 8 = -5$. It must be negative $-\\dfrac{5}{34}$, not positive."
+                "feedback": "Check your signs in the numerator of your gradient formula. The numerator is $3 - 2xy^2$. Substituting $x=4, \\, y=1$ yields $3 - 8 = -5$. It must be negative $-\\dfrac{5}{34}$, not positive."
             },
             {
                 "ans": "$$(-1,1), \\quad \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{5}{34}$$",
@@ -775,7 +775,7 @@ window.ALEVEL_QUESTIONS = [
             },
             {
                 "ans": "$$(4,1), \\quad \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{5}{32}$$",
-                "feedback": "Check your denominator evaluation. The denominator is $2x^2y + 2$. Since $x = 4, \\\\, y = 1$, this is $2(16)(1) + 2 = 34$. It seems you may have forgotten to add the constant $2$."
+                "feedback": "Check your denominator evaluation. The denominator is $2x^2y + 2$. Since $x = 4, \\, y = 1$, this is $2(16)(1) + 2 = 34$. It seems you may have forgotten to add the constant $2$."
             }
         ],
         "bradley_insight": {
@@ -796,10 +796,10 @@ window.ALEVEL_QUESTIONS = [
             "Fractional and Negative Powers"
         ],
         "img": false,
-        "question": "In this question you must show detailed reasoning.<br><br>Find the indefinite integral:<br>$$\\int \\left( 6\\sqrt{x} - \\dfrac{4}{x^3} \\right) \\\\,\\text{d}x$$",
+        "question": "In this question you must show detailed reasoning.<br><br>Find the indefinite integral:<br>$$\\int \\left( 6\\sqrt{x} - \\dfrac{4}{x^3} \\right) \\,\\text{d}x$$",
         "steps": [
             "Convert the surd and the reciprocal fraction into standard index form using $x^{1/2} = \\sqrt{x}$ and $x^{-n} = \\dfrac{1}{x^n}$:<br>$$6\\sqrt{x} = 6x^{1/2} \\quad \\text{and} \\quad \\dfrac{4}{x^3} = 4x^{-3}$$",
-            "Substitute these index forms into the integral and integrate term-by-term using the power rule $\\int x^n \\\\,\\text{d}x = \\dfrac{x^{n+1}}{n+1}$:<br>\\begin{aligned} \\int \\left( 6x^{1/2} - 4x^{-3} \\right) \\\\,\\text{d}x &= 6\\int x^{1/2} \\\\,\\text{d}x - 4\\int x^{-3} \\\\,\\text{d}x \\\\\\ &= 6 \\cdot \\left( \\dfrac{2}{3}x^{3/2} \\right) - 4 \\cdot \\left( \\dfrac{x^{-2}}{-2} \\right) + C \\\\\\ &= 4x^{3/2} + 2x^{-2} + C \\end{aligned}<br>where $C$ is the constant of integration.",
+            "Substitute these index forms into the integral and integrate term-by-term using the power rule $\\int x^n \\,\\text{d}x = \\dfrac{x^{n+1}}{n+1}$:<br>\\begin{aligned} \\int \\left( 6x^{1/2} - 4x^{-3} \\right) \\,\\text{d}x &= 6\\int x^{1/2} \\,\\text{d}x - 4\\int x^{-3} \\,\\text{d}x \\\\\\ &= 6 \\cdot \\left( \\dfrac{2}{3}x^{3/2} \\right) - 4 \\cdot \\left( \\dfrac{x^{-2}}{-2} \\right) + C \\\\\\ &= 4x^{3/2} + 2x^{-2} + C \\end{aligned}<br>where $C$ is the constant of integration.",
             "Write the final result with simplified positive exponents if required:<br>$$4x^{3/2} + \\dfrac{2}{x^2} + C$$<br><br>Final Answer: $$4x^{3/2} + \\dfrac{2}{x^2} + C$$"
         ],
         "pi_options": [
@@ -834,10 +834,10 @@ window.ALEVEL_QUESTIONS = [
             "Fractional and Negative Powers"
         ],
         "img": false,
-        "question": "In this question you must show detailed reasoning.<br><br>Evaluate the definite integral:<br>$$\\int_{1}^{4} \\left( \\dfrac{3}{\\sqrt{x}} + \\dfrac{2}{x^2} \\right) \\\\,\\text{d}x$$",
+        "question": "In this question you must show detailed reasoning.<br><br>Evaluate the definite integral:<br>$$\\int_{1}^{4} \\left( \\dfrac{3}{\\sqrt{x}} + \\dfrac{2}{x^2} \\right) \\,\\text{d}x$$",
         "steps": [
             "Convert the fractional terms into standard index form using $x^{-1/2} = \\dfrac{1}{\\sqrt{x}}$ and $x^{-2} = \\dfrac{1}{x^2}$:<br>$$\\dfrac{3}{\\sqrt{x}} = 3x^{-1/2} \\quad \\text{and} \\quad \\dfrac{2}{x^2} = 2x^{-2}$$",
-            "Integrate the terms step-by-step using the power rule:<br>\\begin{aligned} \\int_{1}^{4} \\left( 3x^{-1/2} + 2x^{-2} \\right) \\\\,\\text{d}x &= \\left[ 3 \\cdot \\left( 2x^{1/2} \\right) + 2 \\cdot \\left( \\dfrac{x^{-1}}{-1} \\right) \\right]_{1}^{4} \\\\\\ &= \\left[ 6x^{1/2} - 2x^{-1} \\right]_{1}^{4} \\\\\\ &= \\left[ 6\\sqrt{x} - \\dfrac{2}{x} \\right]_{1}^{4} \\end{aligned}",
+            "Integrate the terms step-by-step using the power rule:<br>\\begin{aligned} \\int_{1}^{4} \\left( 3x^{-1/2} + 2x^{-2} \\right) \\,\\text{d}x &= \\left[ 3 \\cdot \\left( 2x^{1/2} \\right) + 2 \\cdot \\left( \\dfrac{x^{-1}}{-1} \\right) \\right]_{1}^{4} \\\\\\ &= \\left[ 6x^{1/2} - 2x^{-1} \\right]_{1}^{4} \\\\\\ &= \\left[ 6\\sqrt{x} - \\dfrac{2}{x} \\right]_{1}^{4} \\end{aligned}",
             "Substitute the upper limit $x = 4$ into the integrated expression:<br>$$\\text{Upper Limit} = 6\\sqrt{4} - \\dfrac{2}{4} = 6(2) - \\dfrac{1}{2} = 12 - \\dfrac{1}{2} = \\dfrac{23}{2}$$",
             "Substitute the lower limit $x = 1$ into the integrated expression:<br>$$\\text{Lower Limit} = 6\\sqrt{1} - \\dfrac{2}{1} = 6(1) - 2 = 4$$",
             "Subtract the lower limit evaluation from the upper limit evaluation to find the final value:<br>$$\\text{Value} = \\dfrac{23}{2} - 4 = \\dfrac{23}{2} - \\dfrac{8}{2} = \\dfrac{15}{2}$$<br><br>Final Answer: $$\\dfrac{15}{2}$$"
@@ -877,7 +877,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "In this question you must show detailed reasoning.<br><br>A curve has a gradient function given by:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = 2\\sqrt{x} + \\dfrac{3}{x^2}$$<br>Given that the curve passes through the point $(1, 5)$, find the equation of the curve.",
         "steps": [
             "Express the gradient function in standard index form to prepare for integration:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = 2x^{1/2} + 3x^{-2}$$",
-            "Integrate the gradient function with respect to $x$ to find the general equation of the curve, adding the constant of integration $C$:<br>\\begin{aligned} y &= \\int \\left( 2x^{1/2} + 3x^{-2} \\right) \\\\,\\text{d}x \\\\\\ &= 2 \\cdot \\left( \\dfrac{2}{3}x^{3/2} \\right) + 3 \\cdot \\left( \\dfrac{x^{-1}}{-1} \\right) + C \\\\\\ &= \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + C \\end{aligned}",
+            "Integrate the gradient function with respect to $x$ to find the general equation of the curve, adding the constant of integration $C$:<br>\\begin{aligned} y &= \\int \\left( 2x^{1/2} + 3x^{-2} \\right) \\,\\text{d}x \\\\\\ &= 2 \\cdot \\left( \\dfrac{2}{3}x^{3/2} \\right) + 3 \\cdot \\left( \\dfrac{x^{-1}}{-1} \\right) + C \\\\\\ &= \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + C \\end{aligned}",
             "Substitute the coordinates of the point $(1, 5)$ into the general equation to solve for the constant $C$:<br>\\begin{aligned} 5 &= \\dfrac{4}{3}(1)^{3/2} - \\dfrac{3}{1} + C \\\\\\ 5 &= \\dfrac{4}{3} - 3 + C \\\\\\ 5 &= -\\dfrac{5}{3} + C \\\\ C &= 5 + \\dfrac{5}{3} = \\dfrac{20}{3} \\end{aligned}",
             "Substitute $C = \\dfrac{20}{3}$ back into the equation to obtain the final equation of the curve:<br>$$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + \\dfrac{20}{3}$$<br><br>Final Answer: $$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + \\dfrac{20}{3}$$"
         ],
@@ -913,11 +913,11 @@ window.ALEVEL_QUESTIONS = [
             "Algebraic Indices"
         ],
         "img": false,
-        "question": "In this question you must show detailed reasoning.<br><br>Find the indefinite integral:<br>$$\\int \\dfrac{3x^3 - 2\\sqrt{x}}{x} \\\\,\\text{d}x$$",
+        "question": "In this question you must show detailed reasoning.<br><br>Find the indefinite integral:<br>$$\\int \\dfrac{3x^3 - 2\\sqrt{x}}{x} \\,\\text{d}x$$",
         "steps": [
             "Simplify the integrand first by dividing each term in the numerator by the denominator $x$ independently:<br>\\begin{aligned} \\dfrac{3x^3 - 2\\sqrt{x}}{x} &= \\dfrac{3x^3}{x} - \\dfrac{2x^{1/2}}{x} \\\\\\ &= 3x^2 - 2x^{-1/2} \\end{aligned}",
-            "Substitute this simplified expression into the integral:<br>$$\\int \\dfrac{3x^3 - 2\\sqrt{x}}{x} \\\\,\\text{d}x = \\int \\left( 3x^2 - 2x^{-1/2} \\right) \\\\,\\text{d}x$$",
-            "Integrate term-by-term using the standard power rule, adding the constant of integration $C$ at the end:<br>\\begin{aligned} \\int \\left( 3x^2 - 2x^{-1/2} \\right) \\\\,\\text{d}x &= 3\\int x^2 \\\\,\\text{d}x - 2\\int x^{-1/2} \\\\,\\text{d}x \\\\\\ &= 3 \\cdot \\left( \\dfrac{x^3}{3} \\right) - 2 \\cdot \\left( 2x^{1/2} \\right) + C \\\\\\ &= x^3 - 4x^{1/2} + C \\end{aligned}",
+            "Substitute this simplified expression into the integral:<br>$$\\int \\dfrac{3x^3 - 2\\sqrt{x}}{x} \\,\\text{d}x = \\int \\left( 3x^2 - 2x^{-1/2} \\right) \\,\\text{d}x$$",
+            "Integrate term-by-term using the standard power rule, adding the constant of integration $C$ at the end:<br>\\begin{aligned} \\int \\left( 3x^2 - 2x^{-1/2} \\right) \\,\\text{d}x &= 3\\int x^2 \\,\\text{d}x - 2\\int x^{-1/2} \\,\\text{d}x \\\\\\ &= 3 \\cdot \\left( \\dfrac{x^3}{3} \\right) - 2 \\cdot \\left( 2x^{1/2} \\right) + C \\\\\\ &= x^3 - 4x^{1/2} + C \\end{aligned}",
             "Write the final expression using standard surd form if required:<br>$$x^3 - 4\\sqrt{x} + C$$<br><br>Final Answer: $$x^3 - 4\\sqrt{x} + C$$"
         ],
         "pi_options": [
@@ -955,7 +955,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = 3\\sqrt{x} - x$.<br><br>1. Find the coordinates of the points where the curve intersects the $x$-axis.<br>2. Find the exact area of the finite region bounded by the curve and the $x$-axis.",
         "steps": [
             "To find the $x$-intercepts, set $y = 0$ and factorise the equation:<br>\\begin{aligned} 3x^{1/2} - x &= 0 \\\\ x^{1/2}\\left(3 - x^{1/2}\\right) &= 0 \\end{aligned}<br>This yields two possible solutions:<br>$$x^{1/2} = 0 \\implies x = 0 \\quad \\text{and} \\quad 3 - x^{1/2} = 0 \\implies x^{1/2} = 3 \\implies x = 9$$<br>So, the two $x$-intercept points are $(0, 0)$ and $(9, 0)$.",
-            "Set up the definite integral for the area under the curve between these two boundaries:<br>$$A = \\int_{0}^{9} \\left( 3x^{1/2} - x \\right) \\\\,\\text{d}x$$",
+            "Set up the definite integral for the area under the curve between these two boundaries:<br>$$A = \\int_{0}^{9} \\left( 3x^{1/2} - x \\right) \\,\\text{d}x$$",
             "Integrate the expression using the power rule:<br>\\begin{aligned} A &= \\left[ 3 \\cdot \\left( \\dfrac{2}{3}x^{3/2} \\right) - \\dfrac{x^2}{2} \\right]_{0}^{9} \\\\\\ &= \\left[ 2x^{3/2} - \\dfrac{1}{2}x^2 \\right]_{0}^{9} \\end{aligned}",
             "Substitute the upper limit $x = 9$ into the integrated expression:<br>$$\\text{Upper Limit} = 2(9)^{3/2} - \\dfrac{9^2}{2} = 2(27) - \\dfrac{81}{2} = 54 - \\dfrac{81}{2} = \\dfrac{108}{2} - \\dfrac{81}{2} = \\dfrac{27}{2}$$",
             "Substitute the lower limit $x = 0$ into the integrated expression:<br>$$\\text{Lower Limit} = 2(0)^{3/2} - \\dfrac{0^2}{2} = 0$$<br>Subtracting the lower limit from the upper limit gives the exact area of the region:<br>$$A = \\dfrac{27}{2} - 0 = \\dfrac{27}{2}$$<br><br>Final Answer: $$(0,0), \\quad (9,0), \\quad \\text{Area} = \\dfrac{27}{2}$$"
@@ -1400,7 +1400,7 @@ window.ALEVEL_QUESTIONS = [
         "Set up the partial fraction decomposition for a linear factor and an irreducible quadratic factor:<br>\\begin{aligned} \\dfrac{x^2 + 4x + 4}{(x - 2)(x^2 + 4)} &= \\dfrac{A}{ x - 2 } + \\dfrac{Bx + C}{ x^2 + 4 } \\end{aligned}<br>Multiply both sides by the common denominator to obtain the identity:<br>\\begin{aligned} x^2 + 4x + 4 &= A( x^2 + 4 ) + (Bx + C)( x - 2 ) \\end{aligned}",
         "To solve for $A$, substitute $x = 2$ into the identity:<br>\\begin{aligned} (2)^2 + 4(2) + 4 &= A((2)^2 + 4) + (2B + C)(0) \\\\\\ 16 &= 8A \\\\ A &= 2 \\end{aligned}",
         "Substitute $A = 2$ back into the identity and expand the right-hand side to solve for $B$ and $C$ by equating coefficients:<br>\\begin{aligned} x^2 + 4x + 4 &= 2( x^2 + 4 ) + (Bx + C)( x - 2 ) \\\\ x^2 + 4x + 4 &= 2x^2 + 8 + Bx^2 - 2Bx + Cx - 2C \\\\ x^2 + 4x + 4 &= (2 + B)x^2 + (C - 2B)x + (8 - 2C) \\end{aligned}<br>Equating coefficients:<ul><li>For $x^2$: $2 + B = 1 \\implies B = -1$</li><li>For the constant: $8 - 2C = 4 \\implies 2C = 4 \\implies C = 2$</li></ul>Thus, the partial fraction expression is:<br>$$f(x) = \\dfrac{2}{ x - 2 } + \\dfrac{2 - x}{ x^2 + 4 }$$",
-        "To solve the differential equation $\\dfrac{\\text{d}y}{\\text{d}x} = y f(x)$, separate the variables and integrate both sides:<br>\\begin{aligned} \\int \\dfrac{1}{y} \\\\,\\text{d}y &= \\int f(x) \\\\,\\text{d}x \\\\\\ \\int \\dfrac{1}{y} \\\\,\\text{d}y &= \\int \\left( \\dfrac{2}{ x - 2 } + \\dfrac{2}{ x^2 + 4 } - \\dfrac{x}{ x^2 + 4 } \\right) \\\\,\\text{d}x \\end{aligned}",
+        "To solve the differential equation $\\dfrac{\\text{d}y}{\\text{d}x} = y f(x)$, separate the variables and integrate both sides:<br>\\begin{aligned} \\int \\dfrac{1}{y} \\,\\text{d}y &= \\int f(x) \\,\\text{d}x \\\\\\ \\int \\dfrac{1}{y} \\,\\text{d}y &= \\int \\left( \\dfrac{2}{ x - 2 } + \\dfrac{2}{ x^2 + 4 } - \\dfrac{x}{ x^2 + 4 } \\right) \\,\\text{d}x \\end{aligned}",
         "Perform the integration on each term on the right-hand side carefully, using the standard log integrals and the inverse tangent rule:<br>\\begin{aligned} \\ln|y| &= 2\\ln|x - 2| + \\arctan\\left(\\dfrac{x}{2}\\right) - \\dfrac{1}{2}\\ln( x^2 + 4 ) + c \\end{aligned}<br>Combine the logarithmic terms using standard log laws:<br>\\begin{aligned} \\ln|y| &= \\ln\\left( \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\right) + \\arctan\\left(\\dfrac{x}{2}\\right) + c \\end{aligned}",
         "Exponentiate both sides to write the general solution in terms of a constant $K = \\text{e}^c$:<br>\\begin{aligned} y &= K \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\text{e}^{\\arctan(x/2)} \\end{aligned}",
         "Apply the boundary condition $y = 2$ when $x = 0$ to solve for $K$:<br>\\begin{aligned} 2 &= K \\dfrac{(0 - 2)^2}{\\sqrt{ 0^2 + 4 }} \\text{e}^{\\arctan(0)} \\\\\\ 2 &= K \\left( \\dfrac{4}{2} \\right) (1) \\\\\\ 2 &= 2K \\implies K = 1 \\end{aligned}<br>Substituting $K = 1$ back into the general solution yields:<br>$$y = \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\text{e}^{\\arctan(x/2)}$$<br><br>Final Answer: $y = \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\text{e}^{\\arctan(x/2)}$"
@@ -1441,8 +1441,8 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "Write the algebraic identity for the decomposition of repeated linear roots:<br>\\begin{aligned} \\dfrac{x^2 - x + 2}{x(x - 1)^2} &= \\dfrac{A}{x} + \\dfrac{B}{x - 1} + \\dfrac{C}{(x - 1)^2} \\end{aligned}<br>Multiply by the common denominator to obtain:<br>\\begin{aligned} x^2 - x + 2 &= A(x - 1)^2 + Bx(x - 1) + Cx \\end{aligned}",
             "Find the constants by choosing convenient values for $x$:<ul><li>Set $x = 1$: $(1)^2 - 1 + 2 = C(1) \\implies C = 2$</li><li>Set $x = 0$: $(0)^2 - 0 + 2 = A(-1)^2 \\implies A = 2$</li></ul>Substitute $A = 2$ and equate coefficients of $x^2$ to find $B$:<br>\\begin{aligned} A + B &= 1 \\\\\\ 2 + B &= 1 \\implies B = -1 \\end{aligned}<br>This gives the partial fractions:<br>$$f(x) = \\dfrac{2}{x} - \\dfrac{1}{x - 1} + \\dfrac{2}{(x - 1)^2}$$",
-            "To solve the differential equation $\\dfrac{\\text{d}y}{\\text{d}x} = \\text{e}^{-y} f(x)$, separate the variables and integrate both sides:<br>\\begin{aligned} \\int \\text{e}^y \\\\,\\text{d}y &= \\int f(x) \\\\,\\text{d}x \\\\\\ \\int \\text{e}^y \\\\,\\text{d}y &= \\int \\left( \\dfrac{2}{x} - \\dfrac{1}{x - 1} + \\dfrac{2}{(x - 1)^2} \\right) \\\\,\\text{d}x \\end{aligned}",
-            "Integrate both sides of the equation. Use the power rule for the repeated linear term: $\\int 2(x-1)^{-2} \\\\,\\text{d}x = -2(x-1)^{-1}$:<br>\\begin{aligned} \\text{e}^y &= 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + c \\end{aligned}",
+            "To solve the differential equation $\\dfrac{\\text{d}y}{\\text{d}x} = \\text{e}^{-y} f(x)$, separate the variables and integrate both sides:<br>\\begin{aligned} \\int \\text{e}^y \\,\\text{d}y &= \\int f(x) \\,\\text{d}x \\\\\\ \\int \\text{e}^y \\,\\text{d}y &= \\int \\left( \\dfrac{2}{x} - \\dfrac{1}{x - 1} + \\dfrac{2}{(x - 1)^2} \\right) \\,\\text{d}x \\end{aligned}",
+            "Integrate both sides of the equation. Use the power rule for the repeated linear term: $\\int 2(x-1)^{-2} \\,\\text{d}x = -2(x-1)^{-1}$:<br>\\begin{aligned} \\text{e}^y &= 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + c \\end{aligned}",
             "Apply the boundary condition $y = 0$ when $x = 2$ to find the constant $c$:<br>\\begin{aligned} \\text{e}^0 &= 2\\ln(2) - \\ln(1) - \\dfrac{2}{2 - 1} + c \\\\\\ 1 &= 2\\ln 2 - 0 - 2 + c \\\\ c &= 3 - 2\\ln 2 \\end{aligned}",
             "Substitute $c$ back into the equation and solve for $y$ by taking the natural logarithm of both sides:<br>\\begin{aligned} \\text{e}^y &= 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 3 - 2\\ln 2 \\\\ y &= \\ln\\left( 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 3 - 2\\ln 2 \\right) \\end{aligned}<br><br>Final Answer: $y = \\ln\\left( 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 3 - 2\\ln 2 \\right)$"
         ],
@@ -1482,7 +1482,7 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "Set up the partial fraction decomposition for three distinct linear factors:<br>\\begin{aligned} \\dfrac{x^2 - 5x}{(x - 1)(x - 2)(x - 3)} &= \\dfrac{A}{x - 1} + \\dfrac{B}{x - 2} + \\dfrac{C}{x - 3} \\end{aligned}<br>Multiply both sides by the common denominator:<br>\\begin{aligned} x^2 - 5x &= A(x - 2)(x - 3) + B(x - 1)(x - 3) + C(x - 1)(x - 2) \\end{aligned}",
             "Solve for the parameters $A$, $B$, and $C$ by substituting the roots:<ul><li>Set $x = 1$: $-4 = A(-1)(-2) \\implies 2A = -4 \\implies A = -2$</li><li>Set $x = 2$: $-6 = B(1)(-1) \\implies -B = -6 \\implies B = 6$</li><li>Set $x = 3$: $-6 = C(2)(1) \\implies 2C = -6 \\implies C = -3$</li></ul>Thus, the partial fractions are:<br>$$f(x) = -\\dfrac{2}{x - 1} + \\dfrac{6}{x - 2} - \\dfrac{3}{x - 3}$$",
-            "To solve the differential equation $y\\dfrac{\\text{d}y}{\\text{d}x} = f(x)$, separate the variables and set up the integrals:<br>\\begin{aligned} \\int y \\\\,\\text{d}y &= \\int f(x) \\\\,\\text{d}x \\\\\\ \\int y \\\\,\\text{d}y &= \\int \\left( -\\dfrac{2}{x - 1} + \\dfrac{6}{x - 2} - \\dfrac{3}{x - 3} \\right) \\\\,\\text{d}x \\end{aligned}",
+            "To solve the differential equation $y\\dfrac{\\text{d}y}{\\text{d}x} = f(x)$, separate the variables and set up the integrals:<br>\\begin{aligned} \\int y \\,\\text{d}y &= \\int f(x) \\,\\text{d}x \\\\\\ \\int y \\,\\text{d}y &= \\int \\left( -\\dfrac{2}{x - 1} + \\dfrac{6}{x - 2} - \\dfrac{3}{x - 3} \\right) \\,\\text{d}x \\end{aligned}",
             "Integrate both sides of the equation:<br>\\begin{aligned} \\dfrac{1}{2}y^2 &= -2\\ln|x - 1| + 6\\ln|x - 2| - 3\\ln|x - 3| + C \\end{aligned}",
             "Multiply the entire equation by 2 to isolate $y^2$, defining a new constant of integration $C' = 2C$:<br>\\begin{aligned} y^2 &= -4\\ln|x - 1| + 12\\ln|x - 2| - 6\\ln|x - 3| + C' \\end{aligned}",
             "Apply the boundary condition $y = 4$ when $x = 4$ to solve for $C'$:<br>\\begin{aligned} (4)^2 &= -4\\ln(3) + 12\\ln(2) - 6\\ln(1) + C' \\\\\\ 16 &= -4\\ln 3 + 12\\ln 2 + C' \\\\ C' &= 16 + 4\\ln 3 - 12\\ln 2 \\end{aligned}",
@@ -1525,7 +1525,7 @@ window.ALEVEL_QUESTIONS = [
             "Differentiate the substitution equation $y = vx$ implicitly with respect to $x$ using the product rule:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= v + x\\dfrac{\\text{d}v}{\\text{d}x} \\end{aligned}",
             "Substitute $y = vx$ and $\\dfrac{\\text{d}y}{\\text{d}x} = v + x\\dfrac{\\text{d}v}{\\text{d}x}$ back into the original differential equation:<br>\\begin{aligned} v + x\\dfrac{\\text{d}v}{\\text{d}x} &= \\dfrac{x + vx}{x} \\\\ v + x\\dfrac{\\text{d}v}{\\text{d}x} &= 1 + v \\end{aligned}",
             "Subtract $v$ from both sides to obtain the simplified separable equation:<br>\\begin{aligned} x\\dfrac{\\text{d}v}{\\text{d}x} &= 1 \\end{aligned}",
-            "Separate variables and integrate both sides with respect to $x$:<br>\\begin{aligned} \\int 1 \\\\,\\text{d}v &= \\int \\dfrac{1}{x} \\\\,\\text{d}x \\\\ v &= \\ln x + C \\end{aligned}",
+            "Separate variables and integrate both sides with respect to $x$:<br>\\begin{aligned} \\int 1 \\,\\text{d}v &= \\int \\dfrac{1}{x} \\,\\text{d}x \\\\ v &= \\ln x + C \\end{aligned}",
             "Substitute $v = \\dfrac{y}{x}$ back into the solution:<br>\\begin{aligned} \\dfrac{y}{x} &= \\ln x + C \\\\ y &= x\\ln x + Cx \\end{aligned}",
             "Apply the boundary condition $y = 2$ when $x = 1$ to solve for $C$:<br>\\begin{aligned} 2 &= (1)\\ln(1) + C(1) \\\\\\ 2 &= 0 + C \\implies C = 2 \\end{aligned}<br>Substitute $C = 2$ back into the equation of the curve:<br>$$y = x\\ln x + 2x$$<br><br>Final Answer: $y = x\\ln x + 2x$"
         ],
@@ -1563,7 +1563,7 @@ window.ALEVEL_QUESTIONS = [
         "img": false,
         "question": "In this question you must show detailed reasoning.<br><br>The volume of water, $V$ (in litres), remaining in a leaking container $t$ minutes after the leak begins is modeled by the differential equation:<br>$$\\dfrac{\\text{d}V}{\\text{d}t} = -k\\sqrt{V}$$<br>where $k$ is a positive constant.<br><ul><li>Initially ($t = 0$), the container contains $100$ litres of water.</li><li>After $20$ minutes, the container contains $64$ litres of water.</li></ul><br>1. Solve the differential equation to express $V$ in terms of $t$ and $k$.<br>2. Show that $k = 0.2$.<br>3. Find the total time taken for the container to empty completely.",
         "steps": [
-            "Separate the variables and set up the integrals to solve the differential equation:<br>\\begin{aligned} \\int V^{-1/2} \\\\,\\text{d}V &= \\int -k \\\\,\\text{d}t \\end{aligned}",
+            "Separate the variables and set up the integrals to solve the differential equation:<br>\\begin{aligned} \\int V^{-1/2} \\,\\text{d}V &= \\int -k \\,\\text{d}t \\end{aligned}",
             "Integrate both sides of the equation using the polynomial power rule:<br>\\begin{aligned} 2\\sqrt{V} &= -kt + C \\end{aligned}",
             "Apply the initial condition $V = 100$ when $t = 0$ to solve for $C$:<br>\\begin{aligned} 2\\sqrt{100} &= -k(0) + C \\\\\\ 2(10) &= C \\implies C = 20 \\end{aligned}<br>Substitute $C = 20$ back into the integrated equation and isolate $V$:<br>\\begin{aligned} 2\\sqrt{V} &= 20 - kt \\\\\\ \\sqrt{V} &= 10 - \\dfrac{k}{2}t \\\\ V &= \\left(10 - \\dfrac{k}{2}t\\right)^2 \\end{aligned}",
             "Use the condition $V = 64$ when $t = 20$ to solve for the constant $k$:<br>\\begin{aligned} 64 &= \\left(10 - \\dfrac{k}{2}(20)\\right)^2 \\\\\\ 64 &= (10 - 10k)^2 \\end{aligned}",

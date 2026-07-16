@@ -210,13 +210,13 @@ window.ALEVEL_QUESTIONS = [
             "Power Rule"
         ],
         "img": false,
-        "question": "In this question you must show detailed reasoning.<br><br>Showing all your working, solve the following:<br>1. Given that $y = \\dfrac{4}{3x^2} + 10\\sqrt{x}$, find the value of $\\dfrac{\\text{d}y}{\\text{d}x}$ when $x = 8$.<br>2. Find $\\int \\left( 3x^{5/2} + 15x^{-4} + 8 \\right) \\\\,\\text{d}x$.",
+        "question": "In this question you must show detailed reasoning.<br><br>Showing all your working, solve the following:<br>1. Given that $y = \\dfrac{4}{3x^2} + 10\\sqrt{x}$, find the value of $\\dfrac{\\text{d}y}{\\text{d}x}$ when $x = 8$.<br>2. Find $\\int \\left( 3x^{5/2} + 15x^{-4} + 8 \\right) \\,\\text{d}x$.",
         "steps": [
             "First, rewrite the terms of the equation for $y$ using fractional and negative indices so they are ready to be differentiated:<br>\\begin{aligned} y &= \\dfrac{4}{ 3 }x^{-2} + 10x^{1/2} \\end{aligned}",
             "Differentiate each term with respect to $x$ using the standard power rule $\\dfrac{\\text{d}}{\\text{d}x}(x^n) = nx^{n-1}$:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{4}{ 3 }(-2)x^{-3} + 10\\left(\\dfrac{1}{ 2 }\\right)x^{-1/2} \\\\\\ &= -\\dfrac{8}{ 3 }x^{-3} + 5x^{-1/2} \\\\\\ &= -\\dfrac{8}{ 3x^3 } + \\dfrac{5}{ \\sqrt{x} } \\end{aligned}",
             "To evaluate the derivative at $x = 8$, substitute $x = 8$ into the derivative expression:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x}\\Big|_{x=8} &= -\\dfrac{8}{ 3(8)^3 } + \\dfrac{5}{ \\sqrt{8} } \\\\\\ &= -\\dfrac{8}{ 3(512) } + \\dfrac{5}{ 2\\sqrt{2} } \\\\\\ &= -\\dfrac{1}{ 192 } + \\dfrac{5}{ 2\\sqrt{2} } \\end{aligned}",
             "Rationalise the denominator of the second term and combine:<br>\\begin{aligned} \\dfrac{5}{ 2\\sqrt{2} } &= \\dfrac{5\\sqrt{2}}{ 4 } \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x}\\Big|_{x=8} &= \\dfrac{5\\sqrt{2}}{ 4 } - \\dfrac{1}{ 192 } \\end{aligned}",
-            "For part 2, integrate the expression term by term using the integration power rule $\\int x^n \\\\,\\text{d}x = \\dfrac{x^{n+1}}{ n+1 }$:<br>\\begin{aligned} \\int \\left( 3x^{5/2} + 15x^{-4} + 8 \\right) \\\\,\\text{d}x &= \\dfrac{3x^{7/2}}{ 7/2 } + \\dfrac{15x^{-3}}{ -3 } + 8x + C \\\\\\ &= \\dfrac{6}{ 7 }x^{7/2} - 5x^{-3} + 8x + C \\end{aligned}<br><br>Final Answer: $\\dfrac{5\\sqrt{2}}{ 4 } - \\dfrac{1}{ 192 }$ and $\\dfrac{6}{ 7 }x^{7/2} - 5x^{-3} + 8x + C$"
+            "For part 2, integrate the expression term by term using the integration power rule $\\int x^n \\,\\text{d}x = \\dfrac{x^{n+1}}{ n+1 }$:<br>\\begin{aligned} \\int \\left( 3x^{5/2} + 15x^{-4} + 8 \\right) \\,\\text{d}x &= \\dfrac{3x^{7/2}}{ 7/2 } + \\dfrac{15x^{-3}}{ -3 } + 8x + C \\\\\\ &= \\dfrac{6}{ 7 }x^{7/2} - 5x^{-3} + 8x + C \\end{aligned}<br><br>Final Answer: $\\dfrac{5\\sqrt{2}}{ 4 } - \\dfrac{1}{ 192 }$ and $\\dfrac{6}{ 7 }x^{7/2} - 5x^{-3} + 8x + C$"
         ],
         "pi_options": [
             {
@@ -332,8 +332,8 @@ window.ALEVEL_QUESTIONS = [
         "img": false,
         "question": "In this question you must show detailed reasoning.<br><br>Find the exact area of the finite region bounded by the curve $y = 3x^2 + 2x$, the $x$-axis, and the vertical lines $x = 1$ and $x = 3$.",
         "steps": [
-            "Set up the definite integral for the area of the region bounded by the curve between the lower boundary $x = 1$ and the upper boundary $x = 3$:<br>$$\\text{Area} = \\int_{1}^{3} \\left( 3x^2 + 2x \\right) \\\\,\\text{d}x$$",
-            "Integrate the polynomial expression using the integration power rule:<br>\\begin{aligned} \\int \\left( 3x^2 + 2x \\right) \\\\,\\text{d}x &= \\left[ \\dfrac{3x^3}{ 3 } + \\dfrac{2x^2}{ 2 } \\right]_{1}^{3} \\\\\\ &= \\left[ x^3 + x^2 \\right]_{1}^{3} \\end{aligned}",
+            "Set up the definite integral for the area of the region bounded by the curve between the lower boundary $x = 1$ and the upper boundary $x = 3$:<br>$$\\text{Area} = \\int_{1}^{3} \\left( 3x^2 + 2x \\right) \\,\\text{d}x$$",
+            "Integrate the polynomial expression using the integration power rule:<br>\\begin{aligned} \\int \\left( 3x^2 + 2x \\right) \\,\\text{d}x &= \\left[ \\dfrac{3x^3}{ 3 } + \\dfrac{2x^2}{ 2 } \\right]_{1}^{3} \\\\\\ &= \\left[ x^3 + x^2 \\right]_{1}^{3} \\end{aligned}",
             "Evaluate the definite integral by substituting the upper limit $x = 3$ into the integrated expression:<br>\\begin{aligned} \\text{Upper Limit} &= (3)^3 + (3)^2 \\\\\\ &= 27 + 9 = 36 \\end{aligned}",
             "Substitute the lower limit $x = 1$ into the integrated expression:<br>\\begin{aligned} \\text{Lower Limit} &= (1)^3 + (1)^2 \\\\\\ &= 1 + 1 = 2 \\end{aligned}",
             "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the region:<br>\\begin{aligned} \\text{Area} &= \\text{Upper Limit} - \\text{Lower Limit} \\\\\\ &= 36 - 2 = 34 \\end{aligned}<br><br>Final Answer: $34$"
@@ -611,7 +611,7 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "To find the coordinates of the intersection points, set the equation of the curve equal to the equation of the line:<br>\\begin{aligned} 5 + 4x - x^2 &= x + 1 \\\\\\ -x^2 + 3x + 4 &= 0 \\end{aligned}<br>Multiply the entire quadratic equation by $-1$ to make factoring easier:<br>\\begin{aligned} x^2 - 3x - 4 &= 0 \\\\\\ (x - 4)(x + 1) &= 0 \\end{aligned}",
             "This yields two $x$-coordinates: $x = 4$ and $x = -1$. Substitute these back into the linear equation $y = x + 1$ to find the corresponding $y$-coordinates:<ul><li>For $x = 4$: $y = 4 + 1 = 5 \\implies B(4, 5)$</li><li>For $x = -1$: $y = -1 + 1 = 0 \\implies A(-1, 0)$</li></ul>Thus, the coordinates of the intersection points are $A(-1, 0)$ and $B(4, 5)$.",
-            "To find the enclosed area, integrate the difference between the upper curve $C$ and the lower line $L$ over the interval $[-1, 4]$:<br>\\begin{aligned} \\text{Area} &= \\int_{ -1 }^{ 4 } \\left[ (5 + 4x - x^2) - (x + 1) \\right] \\\\,\\text{d}x \\\\\\ &= \\int_{ -1 }^{ 4 } \\left( 4 + 3x - x^2 \\right) \\\\,\\text{d}x \\end{aligned}",
+            "To find the enclosed area, integrate the difference between the upper curve $C$ and the lower line $L$ over the interval $[-1, 4]$:<br>\\begin{aligned} \\text{Area} &= \\int_{ -1 }^{ 4 } \\left[ (5 + 4x - x^2) - (x + 1) \\right] \\,\\text{d}x \\\\\\ &= \\int_{ -1 }^{ 4 } \\left( 4 + 3x - x^2 \\right) \\,\\text{d}x \\end{aligned}",
             "Integrate the polynomial expression term by term:<br>\\begin{aligned} \\text{Area} &= \\left[ 4x + \\dfrac{3}{ 2 }x^2 - \\dfrac{1}{ 3 }x^3 \\right]_{ -1 }^{ 4 } \\end{aligned}",
             "Evaluate the integrated expression at the upper limit $x = 4$:<br>\\begin{aligned} \\text{Upper Limit} &= 4(4) + \\dfrac{3}{ 2 }(16) - \\dfrac{1}{ 3 }(64) \\\\\\ &= 16 + 24 - \\dfrac{64}{ 3 } \\\\\\ &= 40 - \\dfrac{64}{ 3 } = \\dfrac{120 - 64}{ 3 } = \\dfrac{56}{ 3 } \\end{aligned}",
             "Evaluate the integrated expression at the lower limit $x = -1$:<br>\\begin{aligned} \\text{Lower Limit} &= 4(-1) + \\dfrac{3}{ 2 }(-1)^2 - \\dfrac{1}{ 3 }(-1)^3 \\\\\\ &= -4 + \\dfrac{3}{ 2 } + \\dfrac{1}{ 3 } \\\\\\ &= -4 + \\dfrac{9}{ 6 } + \\dfrac{2}{ 6 } \\\\\\ &= -4 + \\dfrac{11}{ 6 } = -\\dfrac{13}{ 6 } \\end{aligned}",
@@ -634,7 +634,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Distributing Subtractions",
-            "content": "When calculating the area enclosed between a curve $y = f(x)$ and a line $y = g(x)$, always integrate the difference $\\int [f(x) - g(x)] \\\\,\\text{d}x$. Ensure you distribute the subtraction sign to every term of the lower function $g(x) = x + 1$ to avoid sign slips."
+            "content": "When calculating the area enclosed between a curve $y = f(x)$ and a line $y = g(x)$, always integrate the difference $\\int [f(x) - g(x)] \\,\\text{d}x$. Ensure you distribute the subtraction sign to every term of the lower function $g(x) = x + 1$ to avoid sign slips."
         }
     },
     {
@@ -652,7 +652,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C$ with equation $y = x^3 - 3x^2$ and the $x$-axis.<br><br>1. Find the coordinates of the points where the curve intersects the $x$-axis.<br>2. Find the exact area of the finite region bounded by the curve and the $x$-axis.",
         "steps": [
             "To find the points where the curve intersects the $x$-axis, set $y = 0$ and factorise the cubic equation:<br>\\begin{aligned} x^3 - 3x^2 &= 0 \\\\ x^2(x - 3) &= 0 \\end{aligned}<br>This yields two solutions: $x = 0$ and $x = 3$.<br>So, the two $x$-intercept points are $(0, 0)$ and $(3, 0)$.",
-            "On the interval $[0, 3]$, the curve lies entirely below the $x$-axis ($y \\le 0$). To find the exact geometric area, take the negative of the definite integral over this interval:<br>\\begin{aligned} \\text{Area} &= -\\int_{ 0 }^{ 3 } \\left( x^3 - 3x^2 \\right) \\\\,\\text{d}x \\end{aligned}",
+            "On the interval $[0, 3]$, the curve lies entirely below the $x$-axis ($y \\le 0$). To find the exact geometric area, take the negative of the definite integral over this interval:<br>\\begin{aligned} \\text{Area} &= -\\int_{ 0 }^{ 3 } \\left( x^3 - 3x^2 \\right) \\,\\text{d}x \\end{aligned}",
             "Integrate the expression using the power rule:<br>\\begin{aligned} \\text{Area} &= -\\left[ \\dfrac{1}{ 4 }x^4 - x^3 \\right]_{ 0 }^{ 3 } \\end{aligned}",
             "Evaluate the integrated expression at the upper limit $x = 3$:<br>\\begin{aligned} \\text{Upper Limit} &= \\dfrac{1}{ 4 }(3)^4 - (3)^3 \\\\\\ &= \\dfrac{81}{ 4 } - 27 \\\\\\ &= \\dfrac{81}{ 4 } - \\dfrac{108}{ 4 } = -\\dfrac{27}{ 4 } \\end{aligned}",
             "Substitute the lower limit $x = 0$ into the expression:<br>\\begin{aligned} \\text{Lower Limit} &= \\dfrac{1}{ 4 }(0)^4 - (0)^3 = 0 \\end{aligned}",
@@ -675,7 +675,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Negative Integrals",
-            "content": "Since the region lies entirely below the $x$-axis on the interval $[0, 3]$, the definite integral of the function will naturally evaluate to a negative value. To find the geometric area, take the absolute value or negate the integral: $A = -\\int_{0}^{3} y \\\\,\\text{d}x$."
+            "content": "Since the region lies entirely below the $x$-axis on the interval $[0, 3]$, the definite integral of the function will naturally evaluate to a negative value. To find the geometric area, take the absolute value or negate the integral: $A = -\\int_{0}^{3} y \\,\\text{d}x$."
         }
     },
     {
@@ -694,7 +694,7 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "To find the intersection coordinates, set the equations of the two curves equal to each other:<br>\\begin{aligned} 8 - x^2 &= x^2 \\\\\\ 2x^2 &= 8 \\\\ x^2 &= 4 \\implies x = \\pm 2 \\end{aligned}",
             "Substitute these $x$-values back into $y = x^2$ to find the corresponding $y$-coordinates:<ul><li>For $x = 2$: $y = (2)^2 = 4 \\implies Q(2, 4)$</li><li>For $x = -2$: $y = (-2)^2 = 4 \\implies P(-2, 4)$</li></ul>Thus, the coordinates of the intersection points are $P(-2, 4)$ and $Q(2, 4)$.",
-            "On the interval $[-2, 2]$, the curve $C_1$ lies above the curve $C_2$. Integrate the difference between the upper curve and the lower curve:<br>\\begin{aligned} \\text{Area} &= \\int_{ -2 }^{ 2 } \\left[ (8 - x^2) - x^2 \\right] \\\\,\\text{d}x \\\\\\ &= \\int_{ -2 }^{ 2 } \\left( 8 - 2x^2 \\right) \\\\,\\text{d}x \\end{aligned}",
+            "On the interval $[-2, 2]$, the curve $C_1$ lies above the curve $C_2$. Integrate the difference between the upper curve and the lower curve:<br>\\begin{aligned} \\text{Area} &= \\int_{ -2 }^{ 2 } \\left[ (8 - x^2) - x^2 \\right] \\,\\text{d}x \\\\\\ &= \\int_{ -2 }^{ 2 } \\left( 8 - 2x^2 \\right) \\,\\text{d}x \\end{aligned}",
             "Integrate the expression using the power rule:<br>\\begin{aligned} \\text{Area} &= \\left[ 8x - \\dfrac{2}{ 3 }x^3 \\right]_{ -2 }^{ 2 } \\end{aligned}",
             "Evaluate the integrated expression at the upper limit $x = 2$:<br>\\begin{aligned} \\text{Upper Limit} &= 8(2) - \\dfrac{2}{ 3 }(2)^3 \\\\\\ &= 16 - \\dfrac{16}{ 3 } = \\dfrac{48 - 16}{ 3 } = \\dfrac{32}{ 3 } \\end{aligned}",
             "Evaluate the integrated expression at the lower limit $x = -2$:<br>\\begin{aligned} \\text{Lower Limit} &= 8(-2) - \\dfrac{2}{ 3 }(-2)^3 \\\\\\ &= -16 + \\dfrac{16}{ 3 } = -\\dfrac{32}{ 3 } \\end{aligned}",
@@ -717,7 +717,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Symmetry Shortcuts",
-            "content": "When integrating a symmetric region across the $y$-axis (such as from $-2$ to $2$ for even functions), you can simplify your calculation by integrating from $0$ to $2$ and doubling the result: $\\text{Area} = 2 \\int_{0}^{2} (8 - 2x^2) \\\\,\\text{d}x$. This dramatically reduces the risk of arithmetic slips with negative limits!"
+            "content": "When integrating a symmetric region across the $y$-axis (such as from $-2$ to $2$ for even functions), you can simplify your calculation by integrating from $0$ to $2$ and doubling the result: $\\text{Area} = 2 \\int_{0}^{2} (8 - 2x^2) \\,\\text{d}x$. This dramatically reduces the risk of arithmetic slips with negative limits!"
         }
     },
     {
@@ -735,7 +735,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C$ with equation $y = 4\\sqrt{x}$ and the line $L$ with equation $y = x + 3$. The line intersects the curve at the points $A$ and $B$.<br><br>1. Show that the coordinates of the points of intersection are $A(1, 4)$ and $B(9, 12)$.<br>2. Calculate the exact area of the region enclosed by the curve $C$ and the line $L$.",
         "steps": [
             "To verify the coordinates, substitute the points into both equations:<ul><li>For $A(1, 4)$: $y = 4\\sqrt{1} = 4$, and $y = 1 + 3 = 4$. Verified.</li><li>For $B(9, 12)$: $y = 4\\sqrt{9} = 12$, and $y = 9 + 3 = 12$. Verified.</li></ul>Both points lie on both the curve and the line.",
-            "On the interval $[1, 9]$, the curve $C$ lies above the line $L$. Set up the definite integral for the enclosed area:<br>\\begin{aligned} \\text{Area} &= \\int_{ 1 }^{ 9 } \\left( 4\\sqrt{x} - (x + 3) \\right) \\\\,\\text{d}x \\\\\\ &= \\int_{ 1 }^{ 9 } \\left( 4x^{1/2} - x - 3 \\right) \\\\,\\text{d}x \\end{aligned}",
+            "On the interval $[1, 9]$, the curve $C$ lies above the line $L$. Set up the definite integral for the enclosed area:<br>\\begin{aligned} \\text{Area} &= \\int_{ 1 }^{ 9 } \\left( 4\\sqrt{x} - (x + 3) \\right) \\,\\text{d}x \\\\\\ &= \\int_{ 1 }^{ 9 } \\left( 4x^{1/2} - x - 3 \\right) \\,\\text{d}x \\end{aligned}",
             "Integrate the expression term by term using the integration power rule:<br>\\begin{aligned} \\text{Area} &= \\left[ 4\\left(\\dfrac{2}{ 3 }x^{3/2}\\right) - \\dfrac{1}{ 2 }x^2 - 3x \\right]_{ 1 }^{ 9 } \\\\\\ &= \\left[ \\dfrac{8}{ 3 }x^{3/2} - \\dfrac{1}{ 2 }x^2 - 3x \\right]_{ 1 }^{ 9 } \\end{aligned}",
             "Evaluate the integrated expression at the upper limit $x = 9$, noting that $9^{3/2} = (\\sqrt{9})^3 = 27$:<br>\\begin{aligned} \\text{Upper Limit} &= \\dfrac{8}{ 3 }(27) - \\dfrac{1}{ 2 }(81) - 3(9) \\\\\\ &= 72 - 40.5 - 27 \\\\\\ &= 72 - 67.5 = 4.5 = \\dfrac{9}{ 2 } \\end{aligned}",
             "Evaluate the integrated expression at the lower limit $x = 1$:<br>\\begin{aligned} \\text{Lower Limit} &= \\dfrac{8}{ 3 }(1)^{3/2} - \\dfrac{1}{ 2 }(1)^2 - 3(1) \\\\\\ &= \\dfrac{8}{ 3 } - \\dfrac{1}{ 2 } - 3 \\\\\\ &= \\dfrac{8}{ 3 } - \\dfrac{7}{ 2 } \\\\\\ &= \\dfrac{16}{ 6 } - \\dfrac{21}{ 6 } = -\\dfrac{5}{ 6 } \\end{aligned}",
@@ -776,7 +776,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve with equation $y = 3\\sqrt{x} - 2$, which crosses the $x$-axis at the point $A$.<br><br>1. Find the exact coordinates of the point $A$.<br>2. Find the exact area of the region bounded by the curve, the $x$-axis, and the vertical line $x = 4$.",
         "steps": [
             "To find the coordinates of point $A$, set the equation of the curve equal to $0$ (since $y = 0$ on the $x$-axis) and solve for $x$:<br>\\begin{aligned} 3\\sqrt{x} - 2 &= 0 \\\\\\ 3\\sqrt{x} &= 2 \\\\\\ \\sqrt{x} &= \\dfrac{2}{ 3 } \\\\ x &= \\left(\\dfrac{2}{ 3 }\\right)^2 = \\dfrac{4}{ 9 } \\end{aligned}<br>Thus, the coordinates of point $A$ are $A\\left(\\dfrac{4}{ 9 }, 0\\right)$.",
-            "On the interval $\\left[\\dfrac{4}{ 9 }, 4\\right]$, the curve lies entirely above the $x$-axis. Set up the definite integral for the bounded area:<br>\\begin{aligned} \\text{Area} &= \\int_{ 4/9 }^{ 4 } \\left( 3x^{1/2} - 2 \\right) \\\\,\\text{d}x \\end{aligned}",
+            "On the interval $\\left[\\dfrac{4}{ 9 }, 4\\right]$, the curve lies entirely above the $x$-axis. Set up the definite integral for the bounded area:<br>\\begin{aligned} \\text{Area} &= \\int_{ 4/9 }^{ 4 } \\left( 3x^{1/2} - 2 \\right) \\,\\text{d}x \\end{aligned}",
             "Integrate the expression using the power rule:<br>\\begin{aligned} \\text{Area} &= \\left[ 3\\left(\\dfrac{2}{ 3 }x^{3/2}\\right) - 2x \\right]_{ 4/9 }^{ 4 } \\\\\\ &= \\left[ 2x^{3/2} - 2x \\right]_{ 4/9 }^{ 4 } \\end{aligned}",
             "Evaluate the integrated expression at the upper limit $x = 4$, noting that $4^{3/2} = (\\sqrt{4})^3 = 8$:<br>\\begin{aligned} \\text{Upper Limit} &= 2(4)^{3/2} - 2(4) \\\\\\ &= 2(8) - 8 \\\\\\ &= 16 - 8 = 8 \\end{aligned}",
             "Evaluate the integrated expression at the lower limit $x = \\dfrac{4}{ 9 }$, noting that $\\left(\\dfrac{4}{ 9 }\\right)^{3/2} = \\left(\\sqrt{\\dfrac{4}{ 9 }}\\right)^3 = \\dfrac{8}{ 27 }$:<br>\\begin{aligned} \\text{Lower Limit} &= 2\\left(\\dfrac{4}{ 9 }\\right)^{3/2} - 2\\left(\\dfrac{4}{ 9 }\\right) \\\\\\ &= 2\\left(\\dfrac{8}{ 27 }\\right) - \\dfrac{8}{ 9 } \\\\\\ &= \\dfrac{16}{ 27 } - \\dfrac{24}{ 27 } = -\\dfrac{8}{ 27 } \\end{aligned}",
