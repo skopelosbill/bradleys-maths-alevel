@@ -1,6 +1,6 @@
 window.ALEVEL_QUESTIONS = [
     {
-        "id": "04351",
+        "id": "004351",
         "board": "WJEC",
         "level": "AS",
         "major_area": "Algebra and Functions",
@@ -16,7 +16,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Step 1: Find the first derivative of the function</strong><br>To find the stationary points, we first differentiate $f(x) = x^3 - 6x^2$ with respect to $x$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= 3x^2 - 12x\n\\end{aligned}",
             "<strong>Step 2: Solve for the stationary points</strong><br>Set the first derivative equal to zero to find the critical values of $x$:<br>\\begin{aligned}\n3x^2 - 12x &= 0 \\cr\n3x(x - 4) &= 0 \\cr\nx = 0 \\quad &\\text{or} \\quad x = 4\n\\end{aligned}<br>Substitute these values of $x$ back into the original equation to find their corresponding $y$-coordinates:<ul><li>For $x = 0$: $y = 0^3 - 6(0)^2 = 0 \\implies (0, 0)$</li><li>For $x = 4$: $y = 4^3 - 6(4)^2 = 64 - 96 = -32 \\implies (4, -32)$</li></ul>",
             "<strong>Step 3: Determine the nature of the stationary points</strong><br>Find the second derivative of the function:<br>\\begin{aligned}\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 6x - 12\n\\end{aligned}<br>Evaluate the second derivative at each critical point:<ul><li>At $x = 0$: $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = 6(0) - 12 = -12 < 0$, which indicates that $(0, 0)$ is a <strong>local maximum</strong>.</li><li>At $x = 4$: $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = 6(4) - 12 = 12 > 0$, which indicates that $(4, -32)$ is a <strong>local minimum</strong>.</li></ul>",
-            "<strong>Step 4: Find the coordinate intercepts and sketch the curve</strong><br>Find where the curve crosses the axes:<ul><li>$y$-intercept: Setting $x = 0 \\implies y = 0 \\implies (0, 0)$</li><li>$x$-intercepts: Setting $y = 0 \\implies x^3 - 6x^2 = 0 \\implies x^2(x - 6) = 0 \\implies x = 0 \\text{ (touching point)} \\text{ and } x = 6 \\text{ (crossing point)}.$</li></ul>Using these key features, the sketch of the curve $C$ is shown below:<br><br><img src='images/p1/04351_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "<strong>Step 4: Find the coordinate intercepts and sketch the curve</strong><br>Find where the curve crosses the axes:<ul><li>$y$-intercept: Setting $x = 0 \\implies y = 0 \\implies (0, 0)$</li><li>$x$-intercepts: Setting $y = 0 \\implies x^3 - 6x^2 = 0 \\implies x^2(x - 6) = 0 \\implies x = 0 \\text{ (touching point)} \\text{ and } x = 6 \\text{ (crossing point)}.$</li></ul>Using these key features, the sketch of the curve $C$ is shown below:<br><br><img src='images/p1/004351_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
             "<strong>Step 5: Determine the sign of the definite integral</strong><br>Over the interval $[2, 6]$, the curve lies entirely on or below the $x$-axis (since the intercepts are at $0$ and $6$, and the local minimum is at $(4, -32)$). Since the area is located entirely beneath the $x$-axis, the value of the integral must be <strong>negative</strong>."
         ],
         "pi_options": [
@@ -40,7 +40,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "04352",
+        "id": "004352",
         "board": "WJEC",
         "level": "AS",
         "major_area": "Algebra and Functions",
@@ -56,7 +56,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Step 1: Differentiate the function</strong><br>Find the first derivative of $y = 2x^3 - 3x^2 - 12x + 8$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= 6x^2 - 6x - 12\n\\end{aligned}",
             "<strong>Step 2: Solve for the stationary points</strong><br>Set the derivative equal to zero and factorise to find the critical values of $x$:<br>\\begin{aligned}\n6(x^2 - x - 2) &= 0 \\cr\n6(x - 2)(x + 1) &= 0\n\\end{aligned}<br>This yields $x = 2$ and $x = -1$. Now find the corresponding $y$-coordinates:<ul><li>For $x = -1$: $y = 2(-1)^3 - 3(-1)^2 - 12(-1) + 8 = -2 - 3 + 12 + 8 = 15 \\implies (-1, 15)$</li><li>For $x = 2$: $y = 2(2)^3 - 3(2)^2 - 12(2) + 8 = 16 - 12 - 24 + 8 = -12 \\implies (2, -12)$</li></ul>",
             "<strong>Step 3: Determine the nature of the stationary points</strong><br>Find the second derivative:<br>\\begin{aligned}\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 12x - 6\n\\end{aligned}<br>Evaluate the second derivative at each critical value:<ul><li>At $x = -1$: $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = 12(-1) - 6 = -18 < 0 \\implies (-1, 15)$ is a <strong>local maximum</strong>.</li><li>At $x = 2$: $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = 12(2) - 6 = 18 > 0 \\implies (2, -12)$ is a <strong>local minimum</strong>.</li></ul>",
-            "<strong>Step 4: Sketch the curve</strong><br>Find the $y$-intercept by setting $x = 0 \\implies y = 8 \\implies (0, 8)$. Sketch the positive cubic shape passing through $(-1, 15)$ as a maximum, $(0,8)$ as the intercept, and $(2, -12)$ as a minimum:<br><br><img src='images/p1/04352_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "<strong>Step 4: Sketch the curve</strong><br>Find the $y$-intercept by setting $x = 0 \\implies y = 8 \\implies (0, 8)$. Sketch the positive cubic shape passing through $(-1, 15)$ as a maximum, $(0,8)$ as the intercept, and $(2, -12)$ as a minimum:<br><br><img src='images/p1/004352_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
             "<strong>Step 5: Determine the number of real roots</strong><br>From the sketch, we observe that the local maximum $y$-value is positive ($15$) and the local minimum $y$-value is negative ($-12$). Since the curve must cross the $x$-axis between these values, it intersects the $x$-axis exactly **three** times. Therefore, there are exactly <strong>three distinct real roots</strong>."
         ],
         "pi_options": [
@@ -80,7 +80,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "04353",
+        "id": "004353",
         "board": "WJEC",
         "level": "AS",
         "major_area": "Algebra and Functions",
@@ -96,7 +96,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Step 1: Differentiate the function</strong><br>Differentiate $y = 12x - x^3$ with respect to $x$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= 12 - 3x^2\n\\end{aligned}",
             "<strong>Step 2: Find the stationary points</strong><br>Set the derivative equal to zero to find the critical values of $x$:<br>\\begin{aligned}\n12 - 3x^2 &= 0 \\cr\n3(4 - x^2) &= 0 \\cr\nx = 2 \\quad &\\text{or} \\quad x = -2\n\\end{aligned}<br>Substitute these back into the original equation to find their $y$-coordinates:<ul><li>For $x = 2$: $y = 12(2) - 2^3 = 24 - 8 = 16 \\implies (2, 16)$</li><li>For $x = -2$: $y = 12(-2) - (-2)^3 = -24 - (-8) = -16 \\implies (-2, -16)$</li></ul>",
             "<strong>Step 3: Determine the nature of the stationary points</strong><br>Find the second derivative of the curve:<br>\\begin{aligned}\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= -6x\n\\end{aligned}<br>Evaluate the second derivative at each critical point:<ul><li>At $x = 2$: $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = -6(2) = -12 < 0 \\implies (2, 16)$ is a <strong>local maximum</strong>.</li><li>At $x = -2$: $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = -6(-2) = 12 > 0 \\implies (-2, -16)$ is a <strong>local minimum</strong>.</li></ul>",
-            "<strong>Step 4: Determine coordinate intercepts and sketch</strong><br>Find where the curve crosses the axes:<ul><li>$y$-intercept: Setting $x = 0 \\implies y = 0 \\implies (0, 0)$</li><li>$x$-intercepts: Setting $y = 0 \\implies x(12 - x^2) = 0 \\implies x = 0 \\text{ or } x = \\pm\\sqrt{ 12 } \\approx \\pm 3.46$</li></ul>Using these features, the sketch of the curve $C$ is shown below:<br><br><img src='images/p1/04353_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+            "<strong>Step 4: Determine coordinate intercepts and sketch</strong><br>Find where the curve crosses the axes:<ul><li>$y$-intercept: Setting $x = 0 \\implies y = 0 \\implies (0, 0)$</li><li>$x$-intercepts: Setting $y = 0 \\implies x(12 - x^2) = 0 \\implies x = 0 \\text{ or } x = \\pm\\sqrt{ 12 } \\approx \\pm 3.46$</li></ul>Using these features, the sketch of the curve $C$ is shown below:<br><br><img src='images/p1/004353_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
             "<strong>Step 5: Determine the sign of the definite integral</strong><br>Over the interval $[0, \\sqrt{ 12 }]$, the curve lies entirely on or above the $x$-axis (since the boundary roots are at $0$ and $\\sqrt{ 12 }$, and the local maximum at $x = 2$ is positive). Since the area is located entirely above the $x$-axis, the integral must be <strong>positive</strong>."
         ],
         "pi_options": [
@@ -120,7 +120,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "04354",
+        "id": "004354",
         "board": "WJEC",
         "level": "AS",
         "major_area": "Algebra and Functions",
@@ -135,7 +135,7 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "<strong>Step 1: Identify the asymptotes</strong><br>The vertical asymptote occurs where the denominator of the fraction is equal to zero, causing the function to be undefined:<br>\\begin{aligned}\nx - 1 &= 0 \\implies x = 1\n\\end{aligned}<br>The horizontal asymptote is found by observing the behavior of $y$ as $x \\to \\pm\\infty$. As $x$ becomes extremely large, $\\dfrac{ 1 }{ x - 1 } \\to 0$:<br>\\begin{aligned}\ny &\\to 2 + 0 \\implies y = 2\n\\end{aligned}",
             "<strong>Step 2: Find the axis intercepts</strong><br>Find the coordinates of the intercepts:<ul><li>$y$-intercept: Setting $x = 0 \\implies y = 2 + \\dfrac{ 1 }{ 0 - 1 } = 2 - 1 = 1 \\implies (0, 1)$</li><li>$x$-intercept: Setting $y = 0$:<br>\\begin{aligned}\n0 &= 2 + \\dfrac{ 1 }{ x - 1 } \\cr\n\\dfrac{ 1 }{ x - 1 } &= -2 \\cr\\nx - 1 &= -0.5 \\cr\nx &= 0.5 \\implies (0.5, 0)\\n\\end{aligned}</li></ul>",
-            "<strong>Step 3: Sketch the curve</strong><br>This is a translated reciprocal curve of $y = \\dfrac{ 1 }{ x }$. Draw the asymptotes $x = 1$ and $y = 2$ as dashed lines, and sketch the branches passing through $(0, 1)$ and $(0.5, 0):$<br><br><img src='images/p1/04354_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>"
+            "<strong>Step 3: Sketch the curve</strong><br>This is a translated reciprocal curve of $y = \\dfrac{ 1 }{ x }$. Draw the asymptotes $x = 1$ and $y = 2$ as dashed lines, and sketch the branches passing through $(0, 1)$ and $(0.5, 0):$<br><br><img src='images/p1/004354_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>"
         ],
         "pi_options": [
             {
@@ -158,7 +158,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "04355",
+        "id": "004355",
         "board": "WJEC",
         "level": "AS",
         "major_area": "Algebra and Functions",
@@ -173,7 +173,7 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "<strong>Step 1: Sketch the primary curve $y = f(x)$</strong><br>The function $f(x) = 9 - x^2$ is an inverted parabola (negative quadratic).<ul><li>The maximum turning point lies on the $y$-axis at $(0, 9)$.</li><li>The $y$-intercept is $(0, 9)$.</li><li>The $x$-intercepts occur where $9 - x^2 = 0 \\implies x = \\pm 3 \\implies (3, 0) \\text{ and } (-3, 0).$</li></ul>",
             "<strong>Step 2: Understand the transformations</strong><br>We apply standard function transformation rules:<ul><li>**(i) $y = f(x) - 4$**: This represents a vertical translation downwards by $4$ units. The turning point shifts from $(0, 9)$ down to $(0, 5)$.</li><li><strong>(ii) $y = f(x + 2)$</strong>: This represents a horizontal translation to the left by $2$ units. The turning point shifts from $(0, 9)$ left to $(-2, 9)$.</li></ul>",
-            "<strong>Step 3: Sketch the transformed curves</strong><br>The separate sets of axes for the original function and its two transformations are shown side-by-side below:<br><br><img src='images/p1/04355_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>"
+            "<strong>Step 3: Sketch the transformed curves</strong><br>The separate sets of axes for the original function and its two transformations are shown side-by-side below:<br><br><img src='images/p1/004355_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>"
         ],
         "pi_options": [
             {
