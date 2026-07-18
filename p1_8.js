@@ -171,8 +171,8 @@ window.ALEVEL_QUESTIONS = [
         "img": false,
         "question": "A curve $C$ has equation $y = f(x)$, where $f(x) = 9 - x^2$.<br><br><strong>Part (a)</strong> Sketch the graph of $y = f(x)$, indicating the coordinates of the turning point and the intercepts with the axes.<br><strong>Part (b)</strong> On separate sets of axes, sketch the graphs of:<ul><li>(i) $y = f(x) - 4$</li><li>(ii) $y = f(x + 2)$</li></ul>showing clearly the coordinates of the new turning points in each case.",
         "steps": [
-            "<strong>Step 1: Sketch the primary curve $y = f(x)$</strong><br>The function $f(x) = 9 - x^2$ is an inverted parabola (negative quadratic). To find the intercepts and turning point:<br><br><strong>Maximum Turning Point:</strong><br>The curve is an inverted parabola with its maximum turning point on the $y$-axis at $(0, 9)$.<br><br><strong>$y$-intercept:</strong><br>Setting $x = 0 \\implies y = 9 \\implies (0, 9)$.<br><br><strong>$x$-intercepts:</strong><br>To find the $x$-intercepts, set $y = 0$:<br>\\begin{aligned}\n9 - x^2 &= 0 \\cr\nx^2 &= 9 \\cr\nx &= \\pm 3 \\implies (3, 0) \\quad \\text{and} \\quad (-3, 0)\n\\end{aligned}",
-            "<strong>Step 2: Understand the transformations</strong><br>We apply standard function transformation rules:<ul><li>**(i) $y = f(x) - 4$**: This represents a vertical translation downwards by $4$ units. The turning point shifts from $(0, 9)$ down to $(0, 5)$.</li><li>**(ii) $y = f(x + 2)$**: This represents a horizontal translation to the left by $2$ units. The turning point shifts from $(0, 9)$ left to $(-2, 9)$.</li></ul>",
+            "<strong>Step 1: Sketch the primary curve $y = f(x)$</strong><br>The function $f(x) = 9 - x^2$ is an inverted parabola (negative quadratic). To find the intercepts and turning point:<br><br><strong>Maximum Turning Point:</strong><br>The curve is an inverted parabola with its maximum turning point on the $y$-axis at $(0, 9)$.<br><br><strong>$y$-intercept:</strong><br>Setting $x = 0 \\implies y = 9 \\implies (0, 9)$.<br><br><strong>$x$-intercepts:</strong><br>To find the $x$-intercepts, set $y = 0$:<br>\\begin{aligned}\n9 - x^2 &= 0 \\cr\\nx^2 &= 9 \\cr\\nx &= \\pm 3 \\implies (3, 0) \\quad \\text{and} \\quad (-3, 0)\n\\end{aligned}",
+            "<strong>Step 2: Understand the transformations</strong><br>We apply standard function transformation rules:<ul><li>(i) $y = f(x) - 4$: This represents a vertical translation downwards by $4$ units. The turning point shifts from $(0, 9)$ down to $(0, 5)$.</li><li>(ii) $y = f(x + 2)$: This represents a horizontal translation to the left by $2$ units. The turning point shifts from $(0, 9)$ left to $(-2, 9)$.</li></ul>",
             "<strong>Step 3: Sketch the transformed curves</strong><br>The separate sets of axes for the original function and its two transformations are shown side-by-side below:<br><br><img src='images/p1/004355_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>"
         ],
         "pi_options": [
@@ -194,5 +194,191 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Horizontal Shifting",
             "content": "Horizontal translations often confuse students because they seem counter-intuitive: $f(x + a)$ shifts the graph $a$ units to the left (negative direction), while $f(x - a)$ shifts the graph $a$ units to the right (positive direction). Always double-check your horizontal shift direction."
         }
+    },
+    {
+        "id": "004356",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Proof",
+        "subtopic": [
+            "Proof and Counterexample",
+            "Algebraic Identities"
+        ],
+        "img": false,
+        "question": "In each of the two statements below, $c$ and $d$ are real numbers. One of the statements is true, while the other is false.<br><br>$$\\text{A} : (3c + d)^2 = 9c^2 + d^2\\text{, for all values of } c \\text{ and } d.$$<br>$$\\text{B} : 27c^3 + d^3 = (3c + d)(9c^2 - 3cd + d^2)\\text{, for all values of } c \\text{ and } d.$$<br><br><strong>(a)</strong> Identify the statement which is false. Show, by counterexample, that this statement is in fact false.<br><br><strong>(b)</strong> Identify the statement which is true. Give a proof to show that this statement is in fact true.",
+        "steps": [
+            "To begin, we examine the two statements and determine which is false and which is true.<br><br>Statement A claims that $(3c + d)^2 = 9c^2 + d^2$ for all real $c$ and $d$. This is false because the expansion of a squared binomial always contains a middle term: $(3c + d)^2 = 9c^2 + 6cd + d^2$.<br><br>Statement B claims that $27c^3 + d^3 = (3c + d)(9c^2 - 3cd + d^2)$. This is a standard algebraic identity (the sum of cubes), so it is true.",
+            "<strong>Part (a): Disproving Statement A</strong><br><br>To prove Statement A is false, we must provide a single counterexample where the left-hand side does not equal the right-hand side.<br><br>Let $c = 1$ and $d = 1$.<br><br>The left-hand side (LHS) of Statement A is:<br>\\begin{aligned} (3c + d)^2 &= (3(1) + 1)^2 \\cr &= 4^2 \\cr &= 16 \\end{aligned}<br><br>The right-hand side (RHS) of Statement A is:<br>\\begin{aligned} 9c^2 + d^2 &= 9(1)^2 + 1^2 \\cr &= 9 + 1 \\cr &= 10 \\end{aligned}<br><br>Since $16 \\ne 10$, the identity does not hold for all real numbers $c$ and $d$, confirming Statement A is false.",
+            "<strong>Part (b): Proving Statement B</strong><br><br>To prove Statement B is true for all real numbers $c$ and $d$, we expand the right-hand side of the equation and show that it simplifies to the left-hand side:<br>\\begin{aligned} (3c + d)(9c^2 - 3cd + d^2) &= 3c(9c^2 - 3cd + d^2) + d(9c^2 - 3cd + d^2) \\cr &= 27c^3 - 9c^2d + 3cd^2 + 9c^2d - 3cd^2 + d^3 \\end{aligned}<br><br>Grouping the terms:<br>\\begin{aligned} 27c^3 + (-9c^2d + 9c^2d) + (3cd^2 - 3cd^2) + d^3 &= 27c^3 + d^3 \\end{aligned}<br><br>Since expanding the right-hand side results in the exact expression on the left-hand side, Statement B is proved to be true for all real values of $c$ and $d$."
+        ],
+        "pi_options": [
+            {
+                "ans": "Statement A is true, and Statement B is false.",
+                "feedback": "A student might make the common algebraic error of distributing the exponent, believing that $(3c + d)^2 = 9c^2 + d^2$. However, squaring a binomial always produces a middle term: $(3c + d)^2 = 9c^2 + 6cd + d^2$."
+            },
+            {
+                "ans": "Statement A is false, but the counterexample $c=0, d=0$ proves it.",
+                "feedback": "While Statement A is indeed false, choosing $c=0, d=0$ as a counterexample yields $0 = 0$, which is a true statement. A counterexample must show a case where the equation does not hold, such as $c=1, d=1$."
+            },
+            {
+                "ans": "Both Statement A and Statement B are true.",
+                "feedback": "Statement A is false because $(3c + d)^2 = 9c^2 + 6cd + d^2 \\ne 9c^2 + d^2$ for general non-zero values of $c$ and $d$. Double-check the expansion of the square of a sum."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Freshman's Dream and Difference of Cubes",
+            "content": "Always remember that squaring a binomial is not the same as squaring the individual terms: $(x + y)^2 \\ne x^2 + y^2$. This common algebraic trap is known as the 'Freshman's Dream'. In contrast, the sum and difference of cubes are strict algebraic identities: $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$."
+        }
+    },
+    {
+        "id": "004357",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Proof",
+        "subtopic": [
+            "Proof and Counterexample",
+            "Inequalities"
+        ],
+        "img": false,
+        "question": "In each of the two statements below, $a$ and $b$ are real numbers. One of the statements is true, while the other is false.<br><br>$$\\text{A} : \\sqrt{ a^2 + b^2 } = a + b\\text{, for all positive real numbers } a \\text{ and } b.$$<br>$$\\text{B} : a^2 + b^2 \\ge 2ab\\text{, for all real numbers } a \\text{ and } b.$$<br><br><strong>(a)</strong> Identify the statement which is false. Show, by counterexample, that this statement is in fact false.<br><br><strong>(b)</strong> Identify the statement which is true. Give a proof to show that this statement is in fact true.",
+        "steps": [
+            "First, we analyze both statements.<br><br>Statement A claims that $\\sqrt{ a^2 + b^2 } = a + b$ for all positive real numbers $a$ and $b$. This is false because the square root does not distribute over addition.<br><br>Statement B claims that $a^2 + b^2 \\ge 2ab$ for all real numbers $a$ and $b$. This is a well-known inequality (related to the AM-GM inequality) and is true.",
+            "<strong>Part (a): Disproving Statement A</strong><br><br>To prove Statement A is false, we find a counterexample with positive real numbers $a$ and $b$.<br><br>Let $a = 3$ and $b = 4$.<br><br>The left-hand side (LHS) of Statement A is:<br>\\begin{aligned} \\sqrt{ a^2 + b^2 } &= \\sqrt{ 3^2 + 4^2 } \\cr &= \\sqrt{ 9 + 16 } \\cr &= \\sqrt{ 25 } \\cr &= 5 \\end{aligned}<br><br>The right-hand side (RHS) of Statement A is:<br>\\begin{aligned} a + b &= 3 + 4 \\cr &= 7 \\end{aligned}<br><br>Since $5 \\ne 7$, Statement A is false.",
+            "<strong>Part (b): Proving Statement B</strong><br><br>To prove that $a^2 + b^2 \\ge 2ab$ for all real numbers $a$ and $b$, we start from the fundamental property that the square of any real number is always non-negative:<br>\\begin{aligned} (a - b)^2 \\ge 0 \\end{aligned}<br><br>Expanding the left-hand side of this inequality:<br>\\begin{aligned} a^2 - 2ab + b^2 \\ge 0 \\end{aligned}<br><br>Adding $2ab$ to both sides of the inequality:<br>\\begin{aligned} a^2 + b^2 \\ge 2ab \\end{aligned}<br><br>Since $(a-b)^2 \\ge 0$ is true for all real numbers $a$ and $b$, the derived inequality $a^2 + b^2 \\ge 2ab$ is also true for all real numbers $a$ and $b$."
+        ],
+        "pi_options": [
+            {
+                "ans": "Statement A is true, and Statement B is false.",
+                "feedback": "Remember that the square root of a sum is not equal to the sum of the square roots. For example, $\\sqrt{ 3^2 + 4^2 } = \\sqrt{ 25 } = 5$, whereas $3 + 4 = 7$."
+            },
+            {
+                "ans": "Statement B is false because it does not hold when $a$ and $b$ are negative.",
+                "feedback": "Even if $a$ and $b$ are negative, their product $ab$ is positive, and the inequality $(a-b)^2 \\ge 0$ always holds because the square of any real number is non-negative."
+            },
+            {
+                "ans": "Statement A is false, and the counterexample $a=0, b=0$ proves it.",
+                "feedback": "The question specifies that $a$ and $b$ must be positive real numbers ($a, b > 0$). Therefore, $a=0, b=0$ is not a valid counterexample because it violates the given condition."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Square Roots and Binomial Addition",
+            "content": "A very common error is assuming that the square root distributes over addition, i.e., $\\sqrt{ a^2 + b^2 } = a + b$. Remember that $\\sqrt{ a^2 + b^2 } < a + b$ for all positive real numbers $a$ and $b$ because squaring both sides shows $a^2 + b^2 < a^2 + 2ab + b^2$ since $2ab > 0$."
+        }
+    },
+    {
+        "id": "004358",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Proof",
+        "subtopic": [
+            "Proof and Counterexample",
+            "Number Theory"
+        ],
+        "img": false,
+        "question": "In each of the two statements below, $n$ represents a positive integer. One of the statements is true, while the other is false.<br><br>$$\\text{A} : n^2 + n + 11 \\text{ is a prime number for all positive integers } n.$$<br>$$\\text{B} : n^3 - n \\text{ is a multiple of } 6 \\text{ for all positive integers } n.$$<br><br><strong>(a)</strong> Identify the statement which is false. Show, by counterexample, that this statement is in fact false.<br><br><strong>(b)</strong> Identify the statement which is true. Give a proof to show that this statement is in fact true.",
+        "steps": [
+            "First, we analyze both statements.<br><br>Statement A claims that $n^2 + n + 11$ is prime for all positive integers $n$. This is false because we can find values of $n$ that make the expression composite.<br><br>Statement B claims that $n^3 - n$ is a multiple of 6 for all positive integers $n$. This is a true statement of number theory.",
+            "<strong>Part (a): Disproving Statement A</strong><br><br>To show Statement A is false, we search for a positive integer $n$ that results in a composite number.<br><br>Let $n = 10$.<br><br>Substituting $n = 10$ into the expression:<br>\\begin{aligned} n^2 + n + 11 &= 10^2 + 10 + 11 \\cr &= 100 + 10 + 11 \\cr &= 121 \\end{aligned}<br><br>Since $121 = 11 \\times 11$, it is a composite number (not prime). Therefore, Statement A is false.",
+            "<strong>Part (b): Proving Statement B</strong><br><br>To prove that $n^3 - n$ is always a multiple of 6 for any positive integer $n$, we begin by factoring the expression:<br>\\begin{aligned} n^3 - n &= n(n^2 - 1) \\cr &= (n - 1)n(n + 1) \\cr \\end{aligned}<br><br>The factored expression is the product of three consecutive integers: $(n - 1)$, $n$, and $(n + 1)$.<br><br>We must show this product is divisible by both 2 and 3:<br><br><strong>Divisibility by 2:</strong> In any set of three consecutive integers, at least one of them must be an even number. Therefore, the product must be divisible by 2.<br><br><strong>Divisibility by 3:</strong> In any set of three consecutive integers, exactly one of them must be a multiple of 3. Therefore, the product must be divisible by 3.<br><br>Since 2 and 3 are prime numbers with no common factors, any number that is divisible by both 2 and 3 must also be divisible by their product, which is $2 \\times 3 = 6$. Thus, $n^3 - n$ is always a multiple of 6."
+        ],
+        "pi_options": [
+            {
+                "ans": "Statement A is true, and Statement B is false.",
+                "feedback": "While $n^2 + n + 11$ produces prime numbers for small values of $n$ (such as $n=1, 2, 3$), it fails for $n=10$ or $n=11$. Always test multiple values, especially those related to the constant term."
+            },
+            {
+                "ans": "Statement A is false, and the counterexample $n=1$ proves it.",
+                "feedback": "If we substitute $n=1$ into Statement A, we get $1^2 + 1 + 11 = 13$, which is a prime number. Therefore, $n=1$ is not a valid counterexample because it supports the statement rather than disproving it."
+            },
+            {
+                "ans": "Statement B is false because $n^3 - n$ is 0 when $n=1$, which is not a multiple of 6.",
+                "feedback": "When $n=1$, $n^3 - n = 0$. By definition, 0 is a multiple of any integer since $0 = 6 \\times 0$. Thus, $n=1$ is not a counterexample."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "Consecutive Integers and Divisibility",
+            "content": "A product of $k$ consecutive integers is always divisible by $k!$. For $k=3$ consecutive integers, $(n-1)n(n+1)$ must be divisible by $3! = 6$. This is because at least one of the integers must be even (divisible by 2) and exactly one must be a multiple of 3."
+        }
+    },
+    {
+        "id": "004359",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Proof",
+        "subtopic": [
+            "Proof and Counterexample",
+            "Rationality and Parity"
+        ],
+        "img": false,
+        "question": "In each of the two statements below, we are considering numbers under specific definitions. One of the statements is true, while the other is false.<br><br>$$\\text{A} : \\text{The sum of any two irrational numbers is always irrational.}$$<br>$$\\text{B} : \\text{If } n \\text{ is an odd integer, then } n^2 - 1 \\text{ is always a multiple of } 8.$$<br><br><strong>(a)</strong> Identify the statement which is false. Show, by counterexample, that this statement is in fact false.<br><br><strong>(b)</strong> Identify the statement which is true. Give a proof to show that this statement is in fact true.",
+        "steps": [
+            "First, we analyze both statements.<br><br>Statement A claims that the sum of any two irrational numbers is always irrational. This is false because we can construct two irrational numbers whose irrational parts cancel out upon addition.<br><br>Statement B claims that if $n$ is an odd integer, then $n^2 - 1$ is always a multiple of 8. This is a true statement.",
+            "<strong>Part (a): Disproving Statement A</strong><br><br>To prove Statement A is false, we find two irrational numbers, $x$ and $y$, whose sum $x + y$ is rational.<br><br>Let $x = \\sqrt{ 2 }$ and $y = 2 - \\sqrt{ 2 }$.<br><br>Both $x$ and $y$ are irrational numbers because they cannot be expressed as a fraction of two integers.<br><br>Adding them together:<br>\\begin{aligned} x + y &= \\sqrt{ 2 } + (2 - \\sqrt{ 2 }) \\cr &= 2 \\end{aligned}<br><br>Since 2 is a rational number, we have found two irrational numbers whose sum is rational. This proves Statement A is false.",
+            "<strong>Part (b): Proving Statement B</strong><br><br>To prove Statement B is true, let $n$ be any odd integer. By definition, we can express $n$ as:<br>\\begin{aligned} n = 2k + 1 \\end{aligned}<br>where $k$ is an integer.<br><br>Now, substitute this expression into $n^2 - 1$:<br>\\begin{aligned} n^2 - 1 &= (2k + 1)^2 - 1 \\cr &= (4k^2 + 4k + 1) - 1 \\cr &= 4k^2 + 4k \\cr &= 4k(k + 1) \\end{aligned}<br><br>We now analyze the term $k(k + 1)$, which is the product of two consecutive integers $k$ and $k + 1$. Since one of any two consecutive integers must be even, the product $k(k + 1)$ must be divisible by 2. Thus, we can write:<br>\\begin{aligned} k(k + 1) = 2m \\end{aligned}<br>for some integer $m$.<br><br>Substituting this back into our expression for $n^2 - 1$:<br>\\begin{aligned} n^2 - 1 &= 4(2m) \\cr &= 8m \\end{aligned}<br><br>Since $8m$ is clearly a multiple of 8, Statement B is proved to be true for all odd integers $n$."
+        ],
+        "pi_options": [
+            {
+                "ans": "Statement A is true, and Statement B is false.",
+                "feedback": "The sum of two irrational numbers is not always irrational. For instance, if you add $\\sqrt{ 2 }$ and $-\\sqrt{ 2 }$ (both irrational), the sum is 0 (rational)."
+            },
+            {
+                "ans": "Statement B is false because if $n=1$ (an odd integer), then $n^2 - 1 = 0$, which is not a multiple of 8.",
+                "feedback": "When $n=1$, $n^2 - 1 = 0$. Since $0 = 8 \\times 0$, 0 is a multiple of 8. Therefore, $n=1$ is not a counterexample."
+            },
+            {
+                "ans": "Statement A is false, and the counterexample $x = \\sqrt{ 2 }$ and $y = \\sqrt{ 3 }$ proves it.",
+                "feedback": "The sum $\\sqrt{ 2 } + \\sqrt{ 3 }$ is irrational, so this pair does not serve as a counterexample. To disprove Statement A, you must find a pair of irrational numbers whose sum is rational."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Defining Odd Integers in Proofs",
+            "content": "When proving statements about odd integers, always write $n = 2k + 1$ for some integer $k$. This allows you to expand and factor expressions algebraically. In this case, $4k(k+1)$ contains the product of two consecutive integers $k(k+1)$, which is always even, yielding an extra factor of 2."
+        }
+    },
+    {
+        "id": "004360",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Proof",
+        "subtopic": [
+            "Proof and Counterexample",
+            "Quadratics"
+        ],
+        "img": false,
+        "question": "In each of the two statements below, $x$ is a real number. One of the statements is true, while the other is false.<br><br>$$\\text{A} : x^2 > x \\text{ for all real numbers } x.$$<br>$$\\text{B} : x^2 - 6x + 10 > 0 \\text{ for all real numbers } x.$$<br><br><strong>(a)</strong> Identify the statement which is false. Show, by counterexample, that this statement is in fact false.<br><br><strong>(b)</strong> Identify the statement which is true. Give a proof to show that this statement is in fact true.",
+        "steps": [
+            "First, we analyze both statements.<br><br>Statement A claims that $x^2 > x$ for all real numbers $x$. This is false because squaring real numbers between 0 and 1 (inclusive) does not make them strictly larger.<br><br>Statement B claims that $x^2 - 6x + 10 > 0$ for all real numbers $x$. This is a true quadratic inequality.",
+            "<strong>Part (a): Disproving Statement A</strong><br><br>To prove Statement A is false, we need to find a single real number $x$ for which $x^2$ is not strictly greater than $x$.<br><br>Let $x = 0$.<br><br>Substituting $x = 0$ into the inequality $x^2 > x$:<br>\\begin{aligned} 0^2 &&gt; 0 \\cr 0 &&gt; 0 \\end{aligned}<br><br>Since $0 > 0$ is a false statement, $x = 0$ is a valid counterexample. (Alternatively, choosing $x = 1$ yields $1 > 1$, which is also false, and choosing $x = 0.5$ yields $0.25 > 0.5$, which is false). Thus, Statement A is false.",
+            "<strong>Part (b): Proving Statement B</strong><br><br>To prove Statement B is true for all real numbers $x$, we complete the square for the quadratic expression $x^2 - 6x + 10$:<br>\\begin{aligned} x^2 - 6x + 10 &= (x^2 - 6x + 9) + 1 \\cr &= (x - 3)^2 + 1 \\end{aligned}<br><br>We now analyze the components of this rewritten expression:<br>1. Since the square of any real number is always non-negative, we have:<br>\\begin{aligned} (x - 3)^2 \\ge 0 \\end{aligned}<br>for all real numbers $x$.<br><br>2. Adding 1 to both sides of this inequality:<br>\\begin{aligned} (x - 3)^2 + 1 \\ge 1 \\end{aligned}<br><br>3. Since $1 > 0$, we have:<br>\\begin{aligned} x^2 - 6x + 10 \\ge 1 > 0 \\end{aligned}<br><br>Therefore, $x^2 - 6x + 10 > 0$ for all real numbers $x$, which proves Statement B is true."
+        ],
+        "pi_options": [
+            {
+                "ans": "Statement A is true, and Statement B is false.",
+                "feedback": "Statement A is false because squaring a number does not always make it larger (for example, if $0 \\le x \\le 1$). Statement B is true because the quadratic $(x-3)^2 + 1$ is always positive."
+            },
+            {
+                "ans": "Statement A is false, and the counterexample $x=2$ disproves it.",
+                "feedback": "If $x=2$, then $x^2 = 4$. Since $4 > 2$, $x=2$ satisfies the inequality $x^2 > x$. A counterexample must show a value that makes the statement false, such as $x=0$, $x=1$, or $x=0.5$."
+            },
+            {
+                "ans": "Statement B is false because if $x = 3$, the expression equals 1, which is not greater than 0.",
+                "feedback": "If $x=3$, the expression $x^2 - 6x + 10$ evaluates to $3^2 - 6(3) + 10 = 9 - 18 + 10 = 1$. Since 1 is strictly greater than 0 ($1 > 0$), this value does not make the statement false."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Power of Completing the Square",
+            "content": "Completing the square is one of the most powerful tools for proving quadratic inequalities. By writing a quadratic in the form $(x - p)^2 + q$, you instantly establish its minimum value. Since any real square $(x - p)^2 \\ge 0$, the expression $(x - p)^2 + q$ is guaranteed to be at least $q$."
+        }
     }
+
 ];
