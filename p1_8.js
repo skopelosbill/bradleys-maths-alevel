@@ -1,5 +1,4 @@
 window.ALEVEL_QUESTIONS = [
-    [
     {
         "id": "004351",
         "board": "WJEC",
@@ -196,5 +195,5 @@ window.ALEVEL_QUESTIONS = [
             "content": "Horizontal translations often confuse students because they seem counter-intuitive: $f(x + a)$ shifts the graph $a$ units to the left (negative direction), while $f(x - a)$ shifts the graph $a$ units to the right (positive direction). Always double-check your horizontal shift direction."
         }
     }
-]
+
 ];
