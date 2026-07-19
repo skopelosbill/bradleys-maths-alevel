@@ -749,7 +749,198 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Dual Approaches of Calculus and the Discriminant",
             "content": "A line $y = mx + c$ is tangent to a quadratic curve $y = ax^2 + bx + d$ if and only if they intersect at exactly one point. This can be solved in two ways: by setting the discriminant of their simultaneous quadratic to zero (algebraic), or by setting $\\dfrac{\\mathrm{ d }y}{\\mathrm{ d }x} = m$ (calculus). Both methods lead to the exact same results, showing the deep connection between algebra and calculus."
         }
+    },
+    {
+        "id": "004371",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Solving Logarithmic and Exponential Equations"
+        ],
+        "img": false,
+        "question": "<strong>(a)</strong> Solve the logarithmic equation:<br>$$2\\log_{10} x = 1 + \\log_{10} 8 - \\log_{10} 5$$<br><strong>(b)</strong> Solve the exponential equation:<br>$$5^x = 3e^{0.2x}$$<br>giving your answer correct to 3 decimal places.<br><br><strong>(c)</strong> Express $9^x - 12 \\times 3^x$ in terms of $y$, where $y = 3^x$. <br>Hence, solve the equation:<br>$$9^x - 12 \\times 3^x = -27$$",
+        "steps": [
+            "<strong>Part (a): Solving the logarithmic equation</strong><br><br>To solve the equation, we rewrite the constant 1 as a logarithm in base 10: $1 = \\log_{10} 10$.<br><br>Substitute this into the equation and use the laws of logarithms:<br>\\begin{aligned} 2\\log_{10} x &= \\log_{10} 10 + \\log_{10} 8 - \\log_{10} 5 \\cr \\log_{10} (x^2) &= \\log_{10} \\left( \\dfrac{ 10 \\times 8 }{ 5 } \\right) \\cr \\log_{10} (x^2) &= \\log_{10} 16 \\end{aligned}",
+            "Now, equate the arguments of the logarithms:<br>\\begin{aligned} x^2 &= 16 \\cr x &= \\pm 4 \\end{aligned}<br><br>Since the argument of a logarithm must be strictly positive ($x > 0$), we reject $x = -4$.<br>Thus, the only valid solution is $x = 4$.",
+            "<strong>Part (b): Solving the exponential equation</strong><br><br>Take the natural logarithm ($\\ln$) of both sides of $5^x = 3e^{0.2x}$:<br>\\begin{aligned} \\ln(5^x) &= \\ln(3e^{0.2x}) \\cr x\\ln(5) &= \\ln(3) + 0.2x \\end{aligned}",
+            "Rearrange to group the $x$ terms on one side and solve:<br>\\begin{aligned} x\\ln(5) - 0.2x &= \\ln(3) \\cr x\\left( \\ln(5) - 0.2 \\right) &= \\ln(3) \\cr x &= \\dfrac{ \\ln(3) }{ \\ln(5) - 0.2 } \\end{aligned}<br><br>Evaluate this expression numerically:<br>\\begin{aligned} x &\\approx \\dfrac{ 1.098612 }{ 1.609438 - 0.2 } \\cr x &\\approx \\dfrac{ 1.098612 }{ 1.409438 } \\cr x &\\approx 0.779468 \\end{aligned}<br><br>Rounding to 3 decimal places gives $x \\approx 0.779$.",
+            "<strong>Part (c): Solving the quadratic in exponential form</strong><br><br>Let $y = 3^x$. We can express $9^x$ as $(3^2)^x = (3^x)^2 = y^2$.<br><br>Substituting these into $9^x - 12 \\times 3^x$, our expression in terms of $y$ is $y^2 - 12y$.<br><br>We now solve the equation $y^2 - 12y = -27$:<br>\\begin{aligned} y^2 - 12y + 27 &= 0 \\cr (y - 3)(y - 9) &= 0 \\end{aligned}<br><br>This yields $y = 3$ or $y = 9$.",
+            "Now substitute back $y = 3^x$ and solve for $x$:<br>1. For $y = 3$:<br>\\begin{aligned} 3^x &= 3 \\implies x = 1 \\end{aligned}<br><br>2. For $y = 9$:<br>\\begin{aligned} 3^x &= 9 \\implies x = 2 \\end{aligned}<br><br>Thus, the solutions are $x = 1$ or $x = 2$."
+        ],
+        "pi_options": [
+            {
+                "ans": "(a) x = 4; (b) x = 0.780; (c) x = 1 or x = 2",
+                "feedback": "This is a rounding slip in part (b). Evaluating $\\dfrac{ \\ln(3) }{ \\ln(5) - 0.2 }$ yields $0.779468...$ Since the digit in the ten-thousandths place is 4, this must round down to $0.779$ instead of up to $0.780$."
+            },
+            {
+                "ans": "(a) x = 4; (b) x = 0.779; (c) x = 3 or x = 9",
+                "feedback": "In part (c), $y = 3$ and $y = 9$ are the intermediate solutions for $y$, where $y = 3^x$. You must complete the final step of solving for $x$ by writing $3^x = 3 \\implies x = 1$ and $3^x = 9 \\implies x = 2$."
+            },
+            {
+                "ans": "(a) x = 4 or x = -4; (b) x = 0.779; (c) x = 1 or x = 2",
+                "feedback": "In part (a), the quadratic equation $x^2 = 16$ mathematically yields $x = \\pm 4$. However, you must reject $x = -4$ because the original equation contains $\\log_{10} x$, and the argument of a logarithm must be strictly positive."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Logarithmic Domain Constraints",
+            "content": "Always check your final answers against the domain constraints of the original logarithmic equations. Since $\\log_b(f(x))$ is only defined when $f(x) > 0$, any algebraic solution that causes an argument to be negative or zero must be strictly rejected."
+        }
+    },
+    {
+        "id": "004372",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Solving Logarithmic Equations with Divisibility"
+        ],
+        "img": false,
+        "question": "Solve the following equation for $x$:<br>$$\\log_2 (2x + 1) - \\log_2 (x - 1) = 3$$<br>Show all of your working clearly.",
+        "steps": [
+            "Apply the subtraction law of logarithms ($\\{\\log_b A - \\log_b B = \\log_b \\left( \\dfrac{ A }{ B } \\right)\\}$) to combine the left-hand side into a single logarithmic term:<br>\\begin{aligned} \\log_2 \\left( \\dfrac{ 2x + 1 }{ x - 1 } \\right) = 3 \\end{aligned}",
+            "To remove the logarithm, rewrite the equation in its equivalent exponential form:<br>\\begin{aligned} \\dfrac{ 2x + 1 }{ x - 1 } &= 2^3 \\cr \\dfrac{ 2x + 1 }{ x - 1 } &= 8 \\end{aligned}",
+            "Solve the resulting linear equation for $x$:<br>\\begin{aligned} 2x + 1 &= 8(x - 1) \\cr 2x + 1 &= 8x - 8 \\cr -6x &= -9 \\cr x &= \\dfrac{ -9 }{ -6 } \\cr x &= 1.5 \\text{ (or } \\dfrac{ 3 }{ 2 }\\text{)} \\end{aligned}",
+            "We must verify that $x = 1.5$ satisfies the domain of the original logs:<br>1. For $\\log_2 (2x + 1)$: $2(1.5) + 1 = 4 > 0$. (Valid)<br>2. For $\\log_2 (x - 1)$: $1.5 - 1 = 0.5 > 0$. (Valid)<br><br>Thus, the solution is $x = 1.5$."
+        ],
+        "pi_options": [
+            {
+                "ans": "x = -1.5",
+                "feedback": "This is a sign error during algebraic rearrangement. Moving terms across the equals sign correctly yields $2x - 8x = -8 - 1 \\implies -6x = -9 \\implies x = 1.5$."
+            },
+            {
+                "ans": "x = 1.25",
+                "feedback": "This error occurs if you incorrectly expand $8(x-1)$ as $8x-1$ or $8x-2$, failing to distribute the multiplication to the constant term inside the parentheses."
+            },
+            {
+                "ans": "x = 0.4",
+                "feedback": "This error can occur if you mistake the base of the exponent as $3^2 = 9$ or $2 \\times 3 = 6$ instead of $2^3 = 8$ when converting the logarithmic equation to exponential form."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Verifying Logarithmic Arguments",
+            "content": "Even if your algebraic steps are perfectly correct, you should always check your final values against the original logs. If any solution results in a negative argument, such as $\\log_b(-5)$, it must be discarded immediately."
+        }
+    },
+    {
+        "id": "004373",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Solving Exponential Equations with Different Bases"
+        ],
+        "img": false,
+        "question": "Solve the exponential equation:<br>$$4^{2x - 1} = 5^{x + 2}$$<br>giving your answer correct to 3 decimal places.",
+        "steps": [
+            "Take the natural logarithm ($\\ln$) of both sides of the equation:<br>\\begin{aligned} \\ln\\left( 4^{2x - 1} \\right) &= \\ln\\left( 5^{x + 2} \\right) \\end{aligned}",
+            "Use the power law of logarithms to bring the exponents down as multipliers:<br>\\begin{aligned} (2x - 1)\\ln(4) &= (x + 2)\\ln(5) \\end{aligned}",
+            "Expand the brackets and group all terms containing $x$ on one side of the equation:<br>\\begin{aligned} 2x\\ln(4) - \\ln(4) &= x\\ln(5) + 2\\ln(5) \\cr 2x\\ln(4) - x\\ln(5) &= \\ln(4) + 2\\ln(5) \\end{aligned}",
+            "Factor out $x$ on the left-hand side and solve:<br>\\begin{aligned} x\\left( 2\\ln(4) - \\ln(5) \\right) &= \\ln(4) + 2\\ln(5) \\cr x &= \\dfrac{ \\ln(4) + 2\\ln(5) }{ 2\\ln(4) - \\ln(5) } \\end{aligned}",
+            "Evaluate this expression numerically using a calculator:<br>\\begin{aligned} x &\\approx \\dfrac{ 1.386294 + 2(1.609438) }{ 2(1.386294) - 1.609438 } \\cr x &\\approx \\dfrac{ 1.386294 + 3.218876 }{ 2.772588 - 1.609438 } \\cr x &\\approx \\dfrac{ 4.605170 }{ 1.163150 } \\cr x &\\approx 3.959220 \\end{aligned}<br><br>Rounding to 3 decimal places gives $x \\approx 3.959$."
+        ],
+        "pi_options": [
+            {
+                "ans": "x = 3.961",
+                "feedback": "This is a minor calculation/rounding slip that occurs if you use rounded intermediate values for $\\ln(4) \\approx 1.3863$ and $\\ln(5) \\approx 1.6094$ and make a rounding error during division. Always use full calculator precision before rounding at the very end."
+            },
+            {
+                "ans": "x = 1.000",
+                "feedback": "This error occurs if you attempt to simplify the exponents directly without taking logarithms, such as incorrectly writing $2x - 1 = x + 2$ which ignores the differing base values."
+            },
+            {
+                "ans": "x = 2.454",
+                "feedback": "This error is typically caused by a sign error when grouping the terms, such as subtracting $\\ln(4)$ on the right-hand side instead of adding it, leading to $x = \\dfrac{ 2\\ln(5) - \\ln(4) }{ 2\\ln(4) - \\ln(5) } \\approx 2.454$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Exact Algebraic Rearrangements",
+            "content": "To avoid early rounding errors, do not convert logs to decimals in the intermediate steps. Keep them in their exact form (like $\\ln(4)$ and $\\ln(5)$) as coefficients, factor out $x$ algebraically, and only compute the final fraction at the very end."
+        }
+    },
+    {
+        "id": "004374",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Solving Quadratics in Exponential Form"
+        ],
+        "img": false,
+        "question": "Solve the equation:<br>$$2^{2x} - 2^{x + 2} - 32 = 0$$<br>giving your answer in its simplest exact form.",
+        "steps": [
+            "Use the laws of indices to split and rewrite the exponential terms in terms of a single base $2^x$:<br>1. $2^{2x} = (2^x)^2$<br>2. $2^{x + 2} = 2^x \\times 2^2 = 4(2^x)$<br><br>Substitute these into our equation:<br>\\begin{aligned} (2^x)^2 - 4(2^x) - 32 = 0 \\end{aligned}",
+            "Introduce a substitution variable. Let $y = 2^x$. This transforms the exponential equation into a standard quadratic equation in terms of $y$:<br>\\begin{aligned} y^2 - 4y - 32 = 0 \\end{aligned}",
+            "Solve the quadratic equation by factoring:<br>\\begin{aligned} (y - 8)(y + 4) = 0 \\end{aligned}<br>This gives $y = 8$ or $y = -4$.",
+            "Now substitute $y = 2^x$ back to solve for $x$:<br><br>1. For $y = 8$:<br>\\begin{aligned} 2^x &= 8 \\cr 2^x &= 2^3 \\implies x = 3 \\end{aligned}<br><br>2. For $y = -4$:<br>\\begin{aligned} 2^x &= -4 \\end{aligned}<br>Since $2^x$ must be strictly positive for all real values of $x$ (the range of $a^x$ is $y > 0$), this equation has no real solutions.<br><br>Thus, the only valid solution is $x = 3$."
+        ],
+        "pi_options": [
+            {
+                "ans": "x = 3 or x = -2",
+                "feedback": "This is a very common error where a student attempts to solve $2^x = -4$ by writing $x = -2$. However, $2^{-2} = \\dfrac{ 1 }{ 4 }$, which is positive. An exponential term with a positive base can never equal a negative number."
+            },
+            {
+                "ans": "x = 8 or x = -4",
+                "feedback": "These are the values for the substitution variable $y$, where $y = 2^x$. You must complete the final step of the problem by substituting $2^x$ back in and solving for $x$."
+            },
+            {
+                "ans": "x = 5",
+                "feedback": "This error occurs if you misinterpret the laws of indices, for example, incorrectly expanding $2^{x+2}$ as $2^x + 2$, which changes the quadratic coefficients and leads to incorrect roots."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Exponential Range Limitations",
+            "content": "Always remember that $a^x > 0$ for any real $x$ and any positive base $a$. When solving equations in quadratic form, any negative roots for the substitution variable (such as $y = -4$) must be discarded immediately as they cannot yield any real solutions for $x$."
+        }
+    },
+    {
+        "id": "004375",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Simultaneous Logarithmic Equations"
+        ],
+        "img": false,
+        "question": "Solve the simultaneous equations:<br>$$\\log_3 x + \\log_3 y = 2$$<br>$$\\log_3 (2x - y) = 1$$<br>Show all of your algebraic working clearly, explaining why any solutions must be rejected.",
+        "steps": [
+            "Apply the addition law of logarithms to combine the left-hand side of the first equation:<br>\\begin{aligned} \\log_3(xy) = 2 \\end{aligned}<br><br>Convert this to its equivalent exponential form:<br>\\begin{aligned} xy = 3^2 \\implies xy = 9 \\end{aligned}",
+            "Now convert the second equation to its equivalent exponential form:<br>\\begin{aligned} 2x - y = 3^1 \\implies 2x - y = 3 \\end{aligned}",
+            "We now have a system of simultaneous equations:<br>1. $xy = 9$<br>2. $2x - y = 3 \\implies y = 2x - 3$<br><br>Substitute the expression for $y$ from the second equation into the first equation:<br>\\begin{aligned} x(2x - 3) &= 9 \\cr 2x^2 - 3x - 9 &= 0 \\end{aligned}",
+            "Solve the quadratic equation by factoring:<br>\\begin{aligned} 2x^2 - 6x + 3x - 9 &= 0 \\cr 2x(x - 3) + 3(x - 3) &= 0 \\cr (2x + 3)(x - 3) &= 0 \\end{aligned}<br><br>This gives $x = 3$ or $x = -1.5$ (or $-\\dfrac{ 3 }{ 2 }$).",
+            "Now, calculate the corresponding $y$-values using $y = 2x - 3$:<br><br>1. If $x = 3$:<br>\\begin{aligned} y = 2(3) - 3 = 3 \\end{aligned}<br><br>2. If $x = -1.5$:<br>\\begin{aligned} y = 2(-1.5) - 3 = -6 \\end{aligned}",
+            "Verify both coordinate pairs against the domains of the original logarithmic equations:<br><br>1. For $(3, 3)$: the log arguments are $x = 3 > 0$, $y = 3 > 0$, and $2x - y = 6 - 3 = 3 > 0$. All are positive, so $(3, 3)$ is a valid solution.<br><br>2. For $(-1.5, -6)$: the log arguments are $x = -1.5 < 0$ and $y = -6 < 0$. Since logarithms of negative numbers are undefined, this coordinate pair must be rejected.<br><br>Thus, the only valid solution is $x = 3, y = 3$."
+        ],
+        "pi_options": [
+            {
+                "ans": "x = 3, y = 3 and x = -1.5, y = -6",
+                "feedback": "This is a failure to apply domain restrictions. You must reject the coordinate pair $(-1.5, -6)$ because substituting negative values into $\\log_3 x$ and $\\log_3 y$ results in undefined real values."
+            },
+            {
+                "ans": "x = 1.5, y = 6",
+                "feedback": "This error occurs from a sign mistake during the factoring step, incorrectly factoring $2x^2 - 3x - 9 = 0$ as $(2x - 3)(x + 3) = 0$, leading to incorrect $x$-coordinates."
+            },
+            {
+                "ans": "x = 3, y = -3",
+                "feedback": "This is a basic algebraic slip when substituting $x = 3$ into $y = 2x - 3$, incorrectly performing the subtraction as $6 - 3 = -3$ instead of $+3$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Mandatory Domain Checks in Systems of Equations",
+            "content": "When solving simultaneous logarithmic systems, algebraic manipulations can introduce extraneous solutions. Always check each candidate solution pair $(x, y)$ in every original logarithmic term. If any term has a non-positive argument, that entire coordinate pair must be rejected."
+        }
     }
+
 
 
 
