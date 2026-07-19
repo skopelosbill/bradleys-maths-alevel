@@ -214,15 +214,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "Statement A is true, and Statement B is false.",
+                "ans": "Statement $A$ is true, and Statement $B$ is false.",
                 "feedback": "A student might make the common algebraic error of distributing the exponent, believing that $(3c + d)^2 = 9c^2 + d^2$. However, squaring a binomial always produces a middle term: $(3c + d)^2 = 9c^2 + 6cd + d^2$."
             },
             {
-                "ans": "Statement A is false, but the counterexample $c=0, d=0$ proves it.",
+                "ans": "Statement $A$ is false, but the counterexample $c = 0, d = 0$ proves it.",
                 "feedback": "While Statement A is indeed false, choosing $c=0, d=0$ as a counterexample yields $0 = 0$, which is a true statement. A counterexample must show a case where the equation does not hold, such as $c=1, d=1$."
             },
             {
-                "ans": "Both Statement A and Statement B are true.",
+                "ans": "Both Statement $A$ and Statement $B$ are true.",
                 "feedback": "Statement A is false because $(3c + d)^2 = 9c^2 + 6cd + d^2 \\ne 9c^2 + d^2$ for general non-zero values of $c$ and $d$. Double-check the expansion of the square of a sum."
             }
         ],
@@ -251,15 +251,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "Statement A is true, and Statement B is false.",
+                "ans": "Statement $A$ is true, and Statement $B$ is false.",
                 "feedback": "Remember that the square root of a sum is not equal to the sum of the square roots. For example, $\\sqrt{ 3^2 + 4^2 } = \\sqrt{ 25 } = 5$, whereas $3 + 4 = 7$."
             },
             {
-                "ans": "Statement B is false because it does not hold when $a$ and $b$ are negative.",
+                "ans": "Statement $B$ is false because it does not hold when $a$ and $b$ are negative.",
                 "feedback": "Even if $a$ and $b$ are negative, their product $ab$ is positive, and the inequality $(a-b)^2 \\ge 0$ always holds because the square of any real number is non-negative."
             },
             {
-                "ans": "Statement A is false, and the counterexample $a=0, b=0$ proves it.",
+                "ans": "Statement $A$ is false, and the counterexample $a = 0, b = 0$ proves it.",
                 "feedback": "The question specifies that $a$ and $b$ must be positive real numbers ($a, b > 0$). Therefore, $a=0, b=0$ is not a valid counterexample because it violates the given condition."
             }
         ],
@@ -288,15 +288,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "Statement A is true, and Statement B is false.",
+                "ans": "Statement $A$ is true, and Statement $B$ is false.",
                 "feedback": "While $n^2 + n + 11$ produces prime numbers for small values of $n$ (such as $n=1, 2, 3$), it fails for $n=10$ or $n=11$. Always test multiple values, especially those related to the constant term."
             },
             {
-                "ans": "Statement A is false, and the counterexample $n=1$ proves it.",
+                "ans": "Statement $A$ is false, and the counterexample $n = 1$ proves it.",
                 "feedback": "If we substitute $n=1$ into Statement A, we get $1^2 + 1 + 11 = 13$, which is a prime number. Therefore, $n=1$ is not a valid counterexample because it supports the statement rather than disproving it."
             },
             {
-                "ans": "Statement B is false because $n^3 - n$ is 0 when $n=1$, which is not a multiple of 6.",
+                "ans": "Statement $B$ is false because $n^3 - n$ is $0$ when $n = 1$, which is not a multiple of $6$.",
                 "feedback": "When $n=1$, $n^3 - n = 0$. By definition, 0 is a multiple of any integer since $0 = 6 \\times 0$. Thus, $n=1$ is not a counterexample."
             }
         ],
@@ -325,15 +325,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "Statement A is true, and Statement B is false.",
+                "ans": "Statement $A$ is true, and Statement $B$ is false.",
                 "feedback": "The sum of two irrational numbers is not always irrational. For instance, if you add $\\sqrt{ 2 }$ and $-\\sqrt{ 2 }$ (both irrational), the sum is 0 (rational)."
             },
             {
-                "ans": "Statement B is false because if $n=1$ (an odd integer), then $n^2 - 1 = 0$, which is not a multiple of 8.",
+                "ans": "Statement $B$ is false because if $n = 1$ (an odd integer), then $n^2 - 1 = 0$, which is not a multiple of $8$.",
                 "feedback": "When $n=1$, $n^2 - 1 = 0$. Since $0 = 8 \\times 0$, 0 is a multiple of 8. Therefore, $n=1$ is not a counterexample."
             },
             {
-                "ans": "Statement A is false, and the counterexample $x = \\sqrt{ 2 }$ and $y = \\sqrt{ 3 }$ proves it.",
+                "ans": "Statement $A$ is false, and the counterexample $x = \\sqrt{ 2 }$ and $y = \\sqrt{ 3 }$ proves it.",
                 "feedback": "The sum $\\sqrt{ 2 } + \\sqrt{ 3 }$ is irrational, so this pair does not serve as a counterexample. To disprove Statement A, you must find a pair of irrational numbers whose sum is rational."
             }
         ],
@@ -362,15 +362,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "Statement A is true, and Statement B is false.",
+                "ans": "Statement $A$ is true, and Statement $B$ is false.",
                 "feedback": "Statement A is false because squaring a number does not always make it larger (for example, if $0 \\le x \\le 1$). Statement B is true because the quadratic $(x-3)^2 + 1$ is always positive."
             },
             {
-                "ans": "Statement A is false, and the counterexample $x=2$ disproves it.",
+                "ans": "Statement $A$ is false, and the counterexample $x = 2$ disproves it.",
                 "feedback": "If $x=2$, then $x^2 = 4$. Since $4 > 2$, $x=2$ satisfies the inequality $x^2 > x$. A counterexample must show a value that makes the statement false, such as $x=0$, $x=1$, or $x=0.5$."
             },
             {
-                "ans": "Statement B is false because if $x = 3$, the expression equals 1, which is not greater than 0.",
+                "ans": "Statement $B$ is false because if $x = 3$, the expression equals $1$, which is not greater than $0$.",
                 "feedback": "If $x=3$, the expression $x^2 - 6x + 10$ evaluates to $3^2 - 6(3) + 10 = 9 - 18 + 10 = 1$. Since 1 is strictly greater than 0 ($1 > 0$), this value does not make the statement false."
             }
         ],
@@ -394,19 +394,19 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "To find the value of the constants, we first use the initial condition. When the motorcycle is new, $t = 0$ and $V = 16000$.<br><br>Substitute these values into the model equation:<br>\\begin{aligned} 16000 &= Ae^{k(0)} \\cr 16000 &= A(1) \\cr A &= 16000 \\end{aligned}<br><br>So, the model becomes $V = 16000e^{kt}$.",
             "Next, we use the second condition. When the motorcycle is three years old, $t = 3$ and $V = 12000$.<br><br>Substitute these values into our updated equation:<br>\\begin{aligned} 12000 &= 16000e^{3k} \\cr e^{3k} &= \\dfrac{ 12000 }{ 16000 } \\cr e^{3k} &= \\dfrac{ 3 }{ 4 } \\end{aligned}<br><br>We can leave the expression in this form instead of solving for $k$ as a decimal, which avoids rounding errors in the next step.",
-            "We want to find the value of the motorcycle when it is nine years old, so we set $t = 9$:<br>\\begin{aligned} V &= 16000e^{9k} \\cr V &= 16000\\left( e^{3k} \\right)^3 \\end{aligned}<br><br>Substitute $e^{3k} = \\dfrac{ 3 }{ 4 }$ into this equation:<br>\\begin{aligned} V &= 16000\\left( \\dfrac{ 3 }{ 4 } \\right)^3 \\cr V &= 16000\\left( \\dfrac{ 27 }{ 64 } \\right) \\cr V &= 250 \\times 27 \\cr V &= 6750 \\end{aligned}<br><br>Thus, the predicted value of the motorcycle after nine years is £6,750."
+            "We want to find the value of the motorcycle when it is nine years old, so we set $t = 9$:<br>$$V = 16000e^{9k}$$<br>$$V = 16000\\left( e^{3k} \\right)^3$$<br><br>Substitute $e^{3k} = \\dfrac{ 3 }{ 4 }$ into this equation:<br>\\begin{aligned} V &= 16000\\left( \\dfrac{ 3 }{ 4 } \\right)^3 \\cr V &= 16000\\left( \\dfrac{ 27 }{ 64 } \\right) \\cr V &= 250 \\times 27 \\cr V &= 6750 \\end{aligned}<br><br>Thus, the predicted value of the motorcycle after nine years is £6,750."
         ],
         "pi_options": [
             {
-                "ans": "£4,000",
+                "ans": "£$4{,}000$",
                 "feedback": "This is the result of using a linear depreciation model rather than an exponential model. A linear model assumes the motorcycle loses a constant amount of value each year (linear depreciation of £1,333.33 per year), whereas an exponential model assumes it loses a constant percentage of its value."
             },
             {
-                "ans": "£9,000",
+                "ans": "£$9{,}000$",
                 "feedback": "This error occurs if you incorrectly calculate the value at $t=9$ as $V = 16000 \\times \\left( \\dfrac{ 3 }{ 4 } \\right)^2$ instead of $16000 \\times \\left( \\dfrac{ 3 }{ 4 } \\right)^3$. A power of 2 represents the value after 6 years, not 9 years."
             },
             {
-                "ans": "£10,000",
+                "ans": "£$10{,}000$",
                 "feedback": "This can occur from a combination of algebraic errors in index laws or if you solve for $k$ as a rounded decimal too early, causing a significant loss of precision in the final calculation."
             }
         ],
@@ -434,15 +434,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "14.8 years",
+                "ans": "$14.8$ years",
                 "feedback": "This is a rounding error. Dividing $-\\ln(0.25)$ by $0.0940$ yields approximately $14.748$ years. Since the digit in the hundredths place is 4, this rounds down to $14.7$ years, not up to $14.8$ years."
             },
             {
-                "ans": "15.4 years",
+                "ans": "$15.4$ years",
                 "feedback": "This error occurs if you round the decay constant $k$ too severely to $0.09$ in intermediate steps, leading to $t = \\dfrac{ \\ln(0.25) }{ -0.09 } \\approx 15.4$ years."
             },
             {
-                "ans": "12.5 years",
+                "ans": "$12.5$ years",
                 "feedback": "This error occurs if you use common logarithms (base 10) instead of natural logarithms (base $e$) when solving the exponential equation, or if you make an error in changing the sign during algebraic rearrangement."
             }
         ],
@@ -470,15 +470,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "30°C",
+                "ans": "$30^\\circ\\text{C}$",
                 "feedback": "This is a minor calculation error. Ensure you do not round the exponent or value of $e^{-1.9325}$ too early. The unrounded calculation yields $29.41^\\circ\\text{C}$, which rounds down to $29^\\circ\\text{C}$."
             },
             {
-                "ans": "20°C",
+                "ans": "$20^\\circ\\text{C}$",
                 "feedback": "This represents the limit as $t \\to \\infty$ (the ambient room temperature). While the drink will eventually cool to $20^\\circ\\text{C}$, after only 25 minutes it will still be slightly above room temperature."
             },
             {
-                "ans": "34°C",
+                "ans": "$34^\\circ\\text{C}$",
                 "feedback": "This error can occur if you forget the negative sign in the exponent (evaluating $e^{1.9325}$), or if you make an error in subtracting the constant offset of 20."
             }
         ],
@@ -506,15 +506,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "4,500",
+                "ans": "$4{,}500$",
                 "feedback": "This error occurs if you multiply the population by 3 (calculating $1500 \\times 3$) instead of recognizing that the population triples every 4 hours, which requires cubing the factor of 3 over 12 hours ($3^3 = 27$)."
             },
             {
-                "ans": "1,500",
+                "ans": "$1{,}500$",
                 "feedback": "This is simply the population at $t = 4$ hours. After 12 hours, the population will have undergone two further tripling cycles."
             },
             {
-                "ans": "40,500",
+                "ans": "$40{,}500$",
                 "feedback": "This error occurs if you apply the tripling factor of 27 directly to the $t = 4$ population of 1500 (calculating $1500 \\times 27$) instead of multiplying it by the initial population $A = 500$."
             }
         ],
@@ -542,15 +542,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "12.8 years",
+                "ans": "$12.8$ years",
                 "feedback": "This is a rounding error. The value $t \\approx 12.729$ rounds down to $12.7$ because the digit in the hundredths place is 2."
             },
             {
-                "ans": "38.2 years",
+                "ans": "$38.2$ years",
                 "feedback": "This error occurs if you fail to divide by the combined exponent coefficient of $0.03$, leaving the calculation as $t = \\ln\\left( \\dfrac{ 22 }{ 15 } \\right) / 0.01 \\approx 38.2$ years."
             },
             {
-                "ans": "25.6 years",
+                "ans": "$25.6$ years",
                 "feedback": "This error can occur if you incorrectly subtract the exponents when dividing (calculating $0.02 - 0.01 = 0.01$) instead of correctly adding them when dividing by a negative exponent ($0.02 - (-0.01) = 0.03$)."
             }
         ],
@@ -579,15 +579,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "P(2, -24), c = -28",
+                "ans": "$P(2, -24)$, $c = -28$",
                 "feedback": "This error occurs if you make a sign error when substituting the coordinates of $P(2, -24)$ into $y = -2x + c$, mistakenly calculating $-24 = -4 + c$ as $c = -28$ instead of $c = -20$."
             },
             {
-                "ans": "P(2, -24), c = -24",
+                "ans": "$P(2, -24)$, $c = -24$",
                 "feedback": "This represents a common misconception where the constant $c$ is assumed to be the $y$-coordinate of the point of tangency. This is only true if the tangent line is horizontal (gradient is 0)."
             },
             {
-                "ans": "P(2, 12), c = -16",
+                "ans": "$P(2, 12)$, $c = -16$",
                 "feedback": "This is a calculation slip where the $y$-coordinate of $P$ is evaluated incorrectly (for example, by calculating $12 - 28 - 8$ as positive $12$), which consequently leads to an incorrect value for $c$."
             }
         ],
@@ -617,15 +617,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "Tangent: y = 4x - 9; Area = 20.25",
+                "ans": "Tangent: $y = 4x - 9$; Area $= 20.25$",
                 "feedback": "This is double the correct area. Remember that the area of a right-angled triangle is calculated using $\\dfrac{ 1 }{ 2 } \\times \\text{base} \\times \\text{height}$, not just $\\text{base} \\times \\text{height}$."
             },
             {
-                "ans": "Tangent: y = 4x - 3; Area = 1.125",
+                "ans": "Tangent: $y = 4x - 3$; Area $= 1.125$",
                 "feedback": "This error occurs if you make an algebraic mistake when simplifying the tangent equation, calculating $y - 3 = 4(x - 3)$ as $y = 4x - 3$. This leads to incorrect intercepts and an incorrect area calculation."
             },
             {
-                "ans": "Tangent: y = 4x - 9; Area = 40.5",
+                "ans": "Tangent: $y = 4x - 9$; Area $= 40.5$",
                 "feedback": "This error occurs if you evaluate the base intercept incorrectly as $x = 9$ (confusing it with the value of the $y$-intercept) rather than the correct value of $x = \\dfrac{ 9 }{ 4 }$."
             }
         ],
@@ -655,15 +655,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "Normal: y = -x + 1; Q(1/2, 1/2)",
+                "ans": "Normal: $y = -x + 1$; $Q\\left( \\dfrac{ 1 }{ 2 }, \\dfrac{ 1 }{ 2 } \\right)$",
                 "feedback": "This error occurs from a factoring mistake when solving the simultaneous quadratic equation $3x^2 - 4x + 1 = 0$, incorrectly identifying the factors as $(2x - 1)(x - 1) = 0$ instead of the correct $(3x - 1)(x - 1) = 0$."
             },
             {
-                "ans": "Normal: y = x - 1; Q(1/3, -2/3)",
+                "ans": "Normal: $y = x - 1$; $Q\\left( \\dfrac{ 1 }{ 3 }, -\\dfrac{ 2 }{ 3 } \\right)$",
                 "feedback": "This error stems from using the gradient of the tangent ($m_t = 1$) as the gradient of the normal, or forgetting to apply the negative reciprocal sign ($m_n = -\\dfrac{ 1 }{ m_t }$)."
             },
             {
-                "ans": "Normal: y = -x + 1; Q(1/3, 1/3)",
+                "ans": "Normal: $y = -x + 1$; $Q\\left( \\dfrac{ 1 }{ 3 }, \\dfrac{ 1 }{ 3 } \\right)$",
                 "feedback": "This is a basic calculation slip when evaluating the $y$-coordinate of the point $Q$. Substituting $x = \\dfrac{ 1 }{ 3 }$ into the line equation $y = -x + 1$ yields $y = \\dfrac{ 2 }{ 3 }$, not $\\dfrac{ 1 }{ 3 }$."
             }
         ],
@@ -694,15 +694,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "P(-2, -8), Normal: 2x + 3y - 38 = 0",
+                "ans": "$P(-2, -8)$, Normal: $2x + 3y - 38 = 0$",
                 "feedback": "This error occurs if you ignore the restriction that $P$ must lie in the first quadrant. In the first quadrant, both coordinates must be positive, which means you must choose $x = 2$ instead of $x = -2$."
             },
             {
-                "ans": "P(2, 8), Normal: y = 1.5x + 4",
+                "ans": "$P(2, 8)$, Normal: $y = 1.5x + 4$",
                 "feedback": "This error occurs if you use the gradient of the tangent ($m_t = 1.5$) instead of the perpendicular gradient of the normal ($m_n = -\\dfrac{ 2 }{ 3 }$) to find the equation of the normal."
             },
             {
-                "ans": "P(2, 8), Normal: 2x + 3y - 26 = 0",
+                "ans": "$P(2, 8)$, Normal: $2x + 3y - 26 = 0$",
                 "feedback": "This is the result of using the correct normal gradient but mistakenly using the coordinates of point $P(2, 8)$ instead of the coordinates at $x = 4$ (which are $(4, 10)$) to write the normal equation."
             }
         ],
@@ -732,15 +732,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "m = 4 or m = -4; Points: (2, 3) and (-2, 19)",
+                "ans": "$m = 4$ or $m = -4$; Points: $(2, 3)$ and $(-2, 19)$",
                 "feedback": "This error occurs when solving the quadratic $(m+4)^2 = 16$ as $m+4 = 4 \\implies m = 0$ but incorrectly carrying out the arithmetic for the negative root to get $m = \\pm 4$ instead of $m = 0$ and $m = -8$."
             },
             {
-                "ans": "m = 0 or m = -8; Points: (2, 3) and (2, 19)",
+                "ans": "$m = 0$ or $m = -8$; Points: $(2, 3)$ and $(2, 19)$",
                 "feedback": "This is a slip in finding the points of tangency. Remember that each gradient $m$ yields a distinct repeated root quadratic, resulting in different $x$-coordinates ($x = 2$ and $x = -2$)."
             },
             {
-                "ans": "m = 0 or m = -8; Points: (3, 3) and (-2, 15)",
+                "ans": "$m = 0$ or $m = -8$; Points: $(3, 3)$ and $(-2, 15)$",
                 "feedback": "This error stems from a coordinate calculation slip when substituting the $x$-coordinates back into the equations to find the corresponding $y$-coordinates."
             }
         ],
@@ -771,15 +771,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "(a) x = 4; (b) x = 0.780; (c) x = 1 or x = 2",
+                "ans": "<strong>(a)</strong> $x = 4$; <strong>(b)</strong> $x = 0.780$; <strong>(c)</strong> $x = 1$ or $x = 2$",
                 "feedback": "This is a rounding slip in part (b). Evaluating $\\dfrac{ \\ln(3) }{ \\ln(5) - 0.2 }$ yields $0.779468...$ Since the digit in the ten-thousandths place is 4, this must round down to $0.779$ instead of up to $0.780$."
             },
             {
-                "ans": "(a) x = 4; (b) x = 0.779; (c) x = 3 or x = 9",
+                "ans": "<strong>(a)</strong> $x = 4$; <strong>(b)</strong> $x = 0.779$; <strong>(c)</strong> $x = 3$ or $x = 9$",
                 "feedback": "In part (c), $y = 3$ and $y = 9$ are the intermediate solutions for $y$, where $y = 3^x$. You must complete the final step of solving for $x$ by writing $3^x = 3 \\implies x = 1$ and $3^x = 9 \\implies x = 2$."
             },
             {
-                "ans": "(a) x = 4 or x = -4; (b) x = 0.779; (c) x = 1 or x = 2",
+                "ans": "<strong>(a)</strong> $x = 4$ or $x = -4$; <strong>(b)</strong> $x = 0.779$; <strong>(c)</strong> $x = 1$ or $x = 2$",
                 "feedback": "In part (a), the quadratic equation $x^2 = 16$ mathematically yields $x = \\pm 4$. However, you must reject $x = -4$ because the original equation contains $\\log_{10} x$, and the argument of a logarithm must be strictly positive."
             }
         ],
@@ -808,15 +808,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "x = -1.5",
+                "ans": "$x = -1.5$",
                 "feedback": "This is a sign error during algebraic rearrangement. Moving terms across the equals sign correctly yields $2x - 8x = -8 - 1 \\implies -6x = -9 \\implies x = 1.5$."
             },
             {
-                "ans": "x = 1.25",
+                "ans": "$x = 1.25$",
                 "feedback": "This error occurs if you incorrectly expand $8(x-1)$ as $8x-1$ or $8x-2$, failing to distribute the multiplication to the constant term inside the parentheses."
             },
             {
-                "ans": "x = 0.4",
+                "ans": "$x = 0.4$",
                 "feedback": "This error can occur if you mistake the base of the exponent as $3^2 = 9$ or $2 \\times 3 = 6$ instead of $2^3 = 8$ when converting the logarithmic equation to exponential form."
             }
         ],
@@ -846,15 +846,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "x = 3.961",
+                "ans": "$x = 3.961$",
                 "feedback": "This is a minor calculation/rounding slip that occurs if you use rounded intermediate values for $\\ln(4) \\approx 1.3863$ and $\\ln(5) \\approx 1.6094$ and make a rounding error during division. Always use full calculator precision before rounding at the very end."
             },
             {
-                "ans": "x = 1.000",
+                "ans": "$x = 1.000$",
                 "feedback": "This error occurs if you attempt to simplify the exponents directly without taking logarithms, such as incorrectly writing $2x - 1 = x + 2$ which ignores the differing base values."
             },
             {
-                "ans": "x = 2.454",
+                "ans": "$x = 2.454$",
                 "feedback": "This error is typically caused by a sign error when grouping the terms, such as subtracting $\\ln(4)$ on the right-hand side instead of adding it, leading to $x = \\dfrac{ 2\\ln(5) - \\ln(4) }{ 2\\ln(4) - \\ln(5) } \\approx 2.454$."
             }
         ],
@@ -883,15 +883,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "x = 3 or x = -2",
+                "ans": "$x = 3$ or $x = -2$",
                 "feedback": "This is a very common error where a student attempts to solve $2^x = -4$ by writing $x = -2$. However, $2^{-2} = \\dfrac{ 1 }{ 4 }$, which is positive. An exponential term with a positive base can never equal a negative number."
             },
             {
-                "ans": "x = 8 or x = -4",
+                "ans": "$y = 8$ or $y = -4$",
                 "feedback": "These are the values for the substitution variable $y$, where $y = 2^x$. You must complete the final step of the problem by substituting $2^x$ back in and solving for $x$."
             },
             {
-                "ans": "x = 5",
+                "ans": "$x = 5$",
                 "feedback": "This error occurs if you misinterpret the laws of indices, for example, incorrectly expanding $2^{x+2}$ as $2^x + 2$, which changes the quadratic coefficients and leads to incorrect roots."
             }
         ],
@@ -922,15 +922,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "x = 3, y = 3 and x = -1.5, y = -6",
+                "ans": "$x = 3, y = 3$ and $x = -1.5, y = -6$",
                 "feedback": "This is a failure to apply domain restrictions. You must reject the coordinate pair $(-1.5, -6)$ because substituting negative values into $\\log_3 x$ and $\\log_3 y$ results in undefined real values."
             },
             {
-                "ans": "x = 1.5, y = 6",
+                "ans": "$x = 1.5, y = 6$",
                 "feedback": "This error occurs from a sign mistake during the factoring step, incorrectly factoring $2x^2 - 3x - 9 = 0$ as $(2x - 3)(x + 3) = 0$, leading to incorrect $x$-coordinates."
             },
             {
-                "ans": "x = 3, y = -3",
+                "ans": "$x = 3, y = -3$",
                 "feedback": "This is a basic algebraic slip when substituting $x = 3$ into $y = 2x - 3$, incorrectly performing the subtraction as $6 - 3 = -3$ instead of $+3$."
             }
         ],
@@ -959,15 +959,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "(x - 5)^2 + (y - 7)^2 = 100",
+                "ans": "$(x - 5)^2 + (y - 7)^2 = 100$",
                 "feedback": "This error occurs if you use the diameter squared (or $2r$ squared) instead of the radius squared ($r^2$) in the equation of the circle, incorrectly calculating $r^2 = 100$ instead of $r^2 = 10$."
             },
             {
-                "ans": "(x - 5)^2 + (y - 7)^2 = 40",
+                "ans": "$(x - 5)^2 + (y - 7)^2 = 40$",
                 "feedback": "This is a calculation error in finding the radius squared. Make sure you calculate the distance from the centre $(5, 7)$ to one of the points correctly: $r^2 = (6-5)^2 + (4-7)^2 = 1^2 + (-3)^2 = 1 + 9 = 10$, not $40$."
             },
             {
-                "ans": "(x + 5)^2 + (y + 7)^2 = 10",
+                "ans": "$(x + 5)^2 + (y + 7)^2 = 10$",
                 "feedback": "This error occurs if you forget to flip the signs of the coordinates when writing the equation of the circle. A centre of $(h, k) = (5, 7)$ results in $(x - 5)^2 + (y - 7)^2 = r^2$."
             }
         ],
@@ -996,7 +996,7 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "Centre: $(3, -4)$, Radius: 34, Tangent: $3x + 5y - 23 = 0$",
+                "ans": "Centre: $(3, -4)$, Radius: $34$, Tangent: $3x + 5y - 23 = 0$",
                 "feedback": "Remember that when completing the square, the constant on the right-hand side is $r^2$. Thus, the radius is $\\sqrt{ 34 }$, not $34$."
             },
             {
@@ -1041,7 +1041,7 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "This error occurs if you assume $PQ = 7 + 7 = 14$. You must use the Pythagorean distance formula $PQ = \\sqrt{ \\Delta x^2 + \\Delta y^2 } = \\sqrt{ 49 + 49 } = \\sqrt{ 98 } = 7\\sqrt{ 2 }$."
             },
             {
-                "ans": "$PQ = 7\\sqrt{ 2 }$, but with intersection points $P(6, 4)$ and $Q(1, -1)$",
+                "ans": "$PQ = 7\\sqrt{ 2 }$ (with $P(6, 4)$ and $Q(1, -1)$)",
                 "feedback": "Double check your factorization of the simultaneous quadratic $x^2 - 5x - 6 = 0$. This factors to $(x-6)(x+1) = 0$, giving $x = 6$ and $x = -1$, not $x = 1$."
             }
         ],
@@ -1107,11 +1107,11 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "$k = 100 or k = -100$",
+                "ans": "$k = 100$ or $k = -100$",
                 "feedback": "This is a basic algebraic error where taking the square root is omitted: $k^2 = 100 \\implies k = \\pm 10$, not $\\pm 100$."
             },
             {
-                "ans": "$k = 20 or k = -20$",
+                "ans": "$k = 20$ or $k = -20$",
                 "feedback": "This error occurs if you make a calculation slip in evaluating the discriminant, such as calculating $16k^2 - 20(k^2 - 20) = 0$ as $-4k^2 + 80 = 0 \\implies k^2 = 20$."
             },
             {
@@ -1125,10 +1125,4 @@ window.ALEVEL_QUESTIONS = [
             "content": "Since the circle $x^2 + y^2 = 20$ is centred at the origin, a line of fixed gradient $m = 2$ can be tangent to the circle at two distinct, opposite points. This is why we get two symmetric values of $k$ ($k = 10$ and $k = -10$), representing the upper and lower parallel tangents."
         }
     }
-
-
-
-
-
-
 ];
