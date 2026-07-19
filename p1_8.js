@@ -939,7 +939,193 @@ window.ALEVEL_QUESTIONS = [
             "title": "Mandatory Domain Checks in Systems of Equations",
             "content": "When solving simultaneous logarithmic systems, algebraic manipulations can introduce extraneous solutions. Always check each candidate solution pair $(x, y)$ in every original logarithmic term. If any term has a non-positive argument, that entire coordinate pair must be rejected."
         }
+    },
+    {
+        "id": "004376",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Coordinate Geometry",
+        "topic": "Coordinate Geometry of the Circle",
+        "subtopic": [
+            "Semicircles and Finding Circle Equations"
+        ],
+        "img": false,
+        "question": "The coordinates of three points $A$, $B$, and $C$ are $(2, 6)$, $(4, 10)$, and $(6, 4)$ respectively.<br><br><strong>(a)</strong> Show that $BAC$ is a right angle.<br><br><strong>(b)</strong> A circle passes through all three points $A$, $B$, and $C$. Determine the equation of the circle.",
+        "steps": [
+            "<strong>Part (a): Showing $BAC$ is a right angle</strong><br><br>To show that angle $BAC$ is a right angle, we calculate the gradients of the line segments $AB$ and $AC$ and show that they are perpendicular:<br><br>1. Gradient of $AB$ ($m_{AB}$):<br>\\begin{aligned} m_{AB} &= \\dfrac{ 10 - 6 }{ 4 - 2 } \\cr m_{AB} &= \\dfrac{ 4 }{ 2 } \\cr m_{AB} &= 2 \\end{aligned}<br><br>2. Gradient of $AC$ ($m_{AC}$):<br>\\begin{aligned} m_{AC} &= \\dfrac{ 4 - 6 }{ 6 - 2 } \\cr m_{AC} &= \\dfrac{ -2 }{ 4 } \\cr m_{AC} &= -\\dfrac{ 1 }{ 2 } \\end{aligned}",
+            "Multiply the two gradients to check for perpendicularity:<br>\\begin{aligned} m_{AB} \\times m_{AC} &= 2 \\times \\left( -\\dfrac{ 1 }{ 2 } \\right) \\cr &= -1 \\end{aligned}<br><br>Since the product of the gradients is $-1$, the lines $AB$ and $AC$ are perpendicular, which proves that $BAC$ is a right angle.",
+            "<strong>Part (b): Determining the equation of the circle</strong><br><br>By Thales's Theorem, since $BAC$ is a right angle on the circumference of a circle, the line segment connecting $B(4, 10)$ and $C(6, 4)$ must be a diameter of the circle.<br><br>The centre of the circle is the midpoint of the diameter $BC$:<br>\\begin{aligned} \\text{Centre } (h, k) &= \\left( \\dfrac{ 4 + 6 }{ 2 }, \\dfrac{ 10 + 4 }{ 2 } \\right) \\cr &= (5, 7) \\end{aligned}",
+            "The radius squared ($r^2$) is the distance from the centre $(5, 7)$ to any point on the circle, such as $C(6, 4)$:<br>\\begin{aligned} r^2 &= (6 - 5)^2 + (4 - 7)^2 \\cr r^2 &= 1^2 + (-3)^2 \\cr r^2 &= 1 + 9 \\cr r^2 &= 10 \\end{aligned}<br><br>Now, write the equation of the circle in standard form $(x - h)^2 + (y - k)^2 = r^2$:<br>\\begin{aligned} (x - 5)^2 + (y - 7)^2 = 10 \\end{aligned}"
+        ],
+        "pi_options": [
+            {
+                "ans": "(x - 5)^2 + (y - 7)^2 = 100",
+                "feedback": "This error occurs if you use the diameter squared (or $2r$ squared) instead of the radius squared ($r^2$) in the equation of the circle, incorrectly calculating $r^2 = 100$ instead of $r^2 = 10$."
+            },
+            {
+                "ans": "(x - 5)^2 + (y - 7)^2 = 40",
+                "feedback": "This is a calculation error in finding the radius squared. Make sure you calculate the distance from the centre $(5, 7)$ to one of the points correctly: $r^2 = (6-5)^2 + (4-7)^2 = 1^2 + (-3)^2 = 1 + 9 = 10$, not $40$."
+            },
+            {
+                "ans": "(x + 5)^2 + (y + 7)^2 = 10",
+                "feedback": "This error occurs if you forget to flip the signs of the coordinates when writing the equation of the circle. A centre of $(h, k) = (5, 7)$ results in $(x - 5)^2 + (y - 7)^2 = r^2$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Thales's Theorem in Circle Coordinate Geometry",
+            "content": "According to Thales's Theorem, the angle subtended by a diameter at any point on the circle is a right angle. Conversely, if three points $A$, $B$, and $C$ on a circle form a right angle at $A$, then the line segment $BC$ must be a diameter of the circle. This lets you immediately find the centre of the circle (midpoint of $BC$) and its radius without solving simultaneous equations."
+        }
+    },
+    {
+        "id": "004377",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Coordinate Geometry",
+        "topic": "Coordinate Geometry of the Circle",
+        "subtopic": [
+            "Completing the Square and Tangents to Circles"
+        ],
+        "img": false,
+        "question": "A circle $C$ has the equation:<br>$$x^2 + y^2 - 6x + 8y - 9 = 0$$<br><strong>(a)</strong> Find the coordinates of the centre of $C$ and the exact radius of $C$.<br><br><strong>(b)</strong> Show that the point $P(6, 1)$ lies on the circle.<br><br><strong>(c)</strong> Find the equation of the tangent to $C$ at the point $P$, giving your answer in the form $ax + by + c = 0$, where $a$, $b$, and $c$ are integers.",
+        "steps": [
+            "<strong>Part (a): Finding the centre and radius</strong><br><br>Complete the square for both $x$ and $y$ variables in the equation:<br>\\begin{aligned} x^2 - 6x &= (x - 3)^2 - 9 \\cr y^2 + 8y &= (y + 4)^2 - 16 \\end{aligned}<br><br>Substitute these back into the original equation:<br>\\begin{aligned} (x - 3)^2 - 9 + (y + 4)^2 - 16 - 9 &= 0 \\cr (x - 3)^2 + (y + 4)^2 - 34 &= 0 \\cr (x - 3)^2 + (y + 4)^2 &= 34 \\end{aligned}<br><br>Thus, the centre of $C$ is $(3, -4)$ and the exact radius is $r = \\sqrt{ 34 }$.",
+            "<strong>Part (b): Showing $P(6, 1)$ lies on the circle</strong><br><br>Substitute the coordinates $x = 6, y = 1$ into our completed square equation:<br>\\begin{aligned} (6 - 3)^2 + (1 + 4)^2 &= 3^2 + 5^2 \\cr &= 9 + 25 \\cr &= 34 \\end{aligned}<br><br>Since the substitution satisfies the circle's equation, the point $P(6, 1)$ lies on the circle.",
+            "<strong>Part (c): Finding the equation of the tangent at $P$</strong><br><br>First, find the gradient of the radius connecting the centre $C(3, -4)$ to $P(6, 1)$:<br>\\begin{aligned} m_r = \\dfrac{ 1 - (-4) }{ 6 - 3 } = \\dfrac{ 5 }{ 3 } \\end{aligned}<br><br>Since the tangent is perpendicular to the radius, its gradient ($m_t$) is the negative reciprocal:<br>\\begin{aligned} m_t = -\\dfrac{ 1 }{ m_r } = -\\dfrac{ 3 }{ 5 } \\end{aligned}",
+            "Use the point-slope formula with $P(6, 1)$ and $m_t = -\\dfrac{ 3 }{ 5 }$:<br>\\begin{aligned} y - 1 &= -\\dfrac{ 3 }{ 5 }(x - 6) \\cr 5(y - 1) &= -3(x - 6) \\cr 5y - 5 &= -3x + 18 \\cr 3x + 5y - 23 &= 0 \\end{aligned}<br><br>Thus, the equation of the tangent is $3x + 5y - 23 = 0$."
+        ],
+        "pi_options": [
+            {
+                "ans": "Centre: (3, -4), Radius: 34, Tangent: 3x + 5y - 23 = 0",
+                "feedback": "Remember that when completing the square, the constant on the right-hand side is $r^2$. Thus, the radius is $\\sqrt{ 34 }$, not $34$."
+            },
+            {
+                "ans": "Centre: (-3, 4), Radius: \\sqrt{ 34 }, Tangent: 3x + 5y + 23 = 0",
+                "feedback": "Be careful with signs when completing the square: $x^2 - 6x = (x-3)^2 - 9$ and $y^2 + 8y = (y+4)^2 - 16$. This gives a centre of $(3, -4)$, not $(-3, 4)$."
+            },
+            {
+                "ans": "Centre: (3, -4), Radius: \\sqrt{ 34 }, Tangent: 5x - 3y - 27 = 0",
+                "feedback": "This is the result of using the gradient of the radius ($m_r = \\dfrac{ 5 }{ 3 }$) instead of the perpendicular gradient of the tangent ($m_t = -\\dfrac{ 3 }{ 5 }$) to write the tangent equation."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Finding Tangents via the Radius Gradient",
+            "content": "A tangent to a circle at point $P$ is always perpendicular to the radius connecting the centre to $P$. Therefore, first find the gradient of the radius, $m_r = \\dfrac{ y_P - y_C }{ x_P - x_C }$, and then use the negative reciprocal $m_t = -\\dfrac{ 1 }{ m_r }$ for the tangent's gradient."
+        }
+    },
+    {
+        "id": "004378",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Coordinate Geometry",
+        "topic": "Coordinate Geometry of the Circle",
+        "subtopic": [
+            "Intersection of a Line and a Circle"
+        ],
+        "img": false,
+        "question": "A circle $C$ has the equation:<br>$$(x - 2)^2 + (y - 1)^2 = 25$$<br>The line $L$ has the equation:<br>$$y = x - 2$$<br><strong>(a)</strong> Show that the line $L$ intersects the circle $C$ at the points $P(6, 4)$ and $Q(-1, -3)$.<br><br><strong>(b)</strong> Calculate the exact length of the chord $PQ$, giving your answer in its simplest surd form.",
+        "steps": [
+            "<strong>Part (a): Showing the intersection points</strong><br><br>Substitute the equation of the line $y = x - 2$ into the equation of the circle:<br>\\begin{aligned} (x - 2)^2 + (x - 2 - 1)^2 &= 25 \\cr (x - 2)^2 + (x - 3)^2 &= 25 \\end{aligned}<br><br>Expand both brackets and simplify:<br>\\begin{aligned} (x^2 - 4x + 4) + (x^2 - 6x + 9) &= 25 \\cr 2x^2 - 10x + 13 &= 25 \\cr 2x^2 - 10x - 12 &= 0 \\end{aligned}",
+            "Divide the entire equation by 2 and factor the resulting quadratic:<br>\\begin{aligned} x^2 - 5x - 6 &= 0 \\cr (x - 6)(x + 1) &= 0 \\end{aligned}<br><br>This gives $x = 6$ or $x = -1$.",
+            "Now substitute these $x$-values back into $y = x - 2$ to find the corresponding $y$-coordinates:<br><br>1. For $x = 6$: $y = 6 - 2 = 4 \\implies P(6, 4)$<br>2. For $x = -1$: $y = -1 - 2 = -3 \\implies Q(-1, -3)$<br><br>This confirms that the line intersects the circle at $P(6, 4)$ and $Q(-1, -3)$.",
+            "<strong>Part (b): Calculating the chord length $PQ$</strong><br><br>Use the distance formula between the points $P(6, 4)$ and $Q(-1, -3)$:<br>\\begin{aligned} PQ &= \\sqrt{ (6 - (-1))^2 + (4 - (-3))^2 } \\cr &= \\sqrt{ 7^2 + 7^2 } \\cr &= \\sqrt{ 49 + 49 } \\cr &= \\sqrt{ 98 } \\end{aligned}<br><br>Simplify the surd:<br>\\begin{aligned} PQ &= \\sqrt{ 49 \\times 2 } \\cr &= 7\\sqrt{ 2 } \\end{aligned}<br><br>Thus, the exact length of the chord $PQ$ is $7\\sqrt{ 2 }$ units."
+        ],
+        "pi_options": [
+            {
+                "ans": "PQ = \\sqrt{ 14 }",
+                "feedback": "This error occurs if you subtract the coordinates incorrectly or forget to square the differences before adding, calculating $PQ = \\sqrt{ (6 - (-1)) + (4 - (-3)) } = \\sqrt{ 7 + 7 } = \\sqrt{ 14 }$."
+            },
+            {
+                "ans": "PQ = 14",
+                "feedback": "This error occurs if you assume $PQ = 7 + 7 = 14$. You must use the Pythagorean distance formula $PQ = \\sqrt{ \\Delta x^2 + \\Delta y^2 } = \\sqrt{ 49 + 49 } = \\sqrt{ 98 } = 7\\sqrt{ 2 }$."
+            },
+            {
+                "ans": "PQ = 7\\sqrt{ 2 }, but with intersection points P(6, 4) and Q(1, -1)",
+                "feedback": "Double check your factorization of the simultaneous quadratic $x^2 - 5x - 6 = 0$. This factors to $(x-6)(x+1) = 0$, giving $x = 6$ and $x = -1$, not $x = 1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Symmetric Surds in Diagonal Chords",
+            "content": "When a line has a gradient of $1$ (like $y = x - 2$), the change in $x$ and $y$ between any two points is identical: $\\Delta x = \\Delta y$. Therefore, the chord length will always be in the form $\\sqrt{ d^2 + d^2 } = d\\sqrt{ 2 }$, where $d$ is the difference in $x$-coordinates. This is a quick way to double-check surd calculations."
+        }
+    },
+    {
+        "id": "004379",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Coordinate Geometry",
+        "topic": "Coordinate Geometry of the Circle",
+        "subtopic": [
+            "Circle Diameter Endpoints"
+        ],
+        "img": false,
+        "question": "The points $A(-2, 5)$ and $B(6, 11)$ are the endpoints of a diameter of a circle $C$.<br><br><strong>(a)</strong> Find the coordinates of the centre of $C$.<br><br><strong>(b)</strong> Find the radius of $C$, giving your answer in its simplest surd form.<br><br><strong>(c)</strong> Write down the equation of the circle in the form $x^2 + y^2 + ax + by + c = 0$, where $a$, $b$, and $c$ are integers.",
+        "steps": [
+            "<strong>Part (a): Finding the centre of $C$</strong><br><br>Since $A$ and $B$ are the endpoints of a diameter, the centre of the circle is the midpoint of the line segment $AB$:<br>\\begin{aligned} \\text{Centre } (h, k) &= \\left( \\dfrac{ -2 + 6 }{ 2 }, \\dfrac{ 5 + 11 }{ 2 } \\right) \\cr &= \\left( \\dfrac{ 4 }{ 2 }, \\dfrac{ 16 }{ 2 } \\right) \\cr &= (2, 8) \\end{aligned}",
+            "<strong>Part (b): Finding the radius of $C$</strong><br><br>First, calculate the length of the diameter $AB$ using the distance formula:<br>\\begin{aligned} AB &= \\sqrt{ (6 - (-2))^2 + (11 - 5)^2 } \\cr &= \\sqrt{ 8^2 + 6^2 } \\cr &= \\sqrt{ 64 + 36 } \\cr &= \\sqrt{ 100 } \\cr &= 10 \\end{aligned}<br><br>The radius $r$ is half the length of the diameter:<br>\\begin{aligned} r = \\dfrac{ AB }{ 2 } = \\dfrac{ 10 }{ 2 } = 5 \\end{aligned}",
+            "<strong>Part (c): Determining the expanded equation of the circle</strong><br><br>First, write the equation of the circle in standard centre-radius form:<br>\\begin{aligned} (x - 2)^2 + (y - 8)^2 = 5^2 \\cr (x - 2)^2 + (y - 8)^2 = 25 \\end{aligned}",
+            "Now, fully expand the brackets and group the terms:<br>\\begin{aligned} (x^2 - 4x + 4) + (y^2 - 16y + 64) &= 25 \\cr x^2 + y^2 - 4x - 16y + 68 &= 25 \\end{aligned}<br><br>Subtract 25 from both sides to set the equation to zero in the required standard form:<br>\\begin{aligned} x^2 + y^2 - 4x - 16y + 43 = 0 \\end{aligned}"
+        ],
+        "pi_options": [
+            {
+                "ans": "x^2 + y^2 - 4x - 16y + 93 = 0",
+                "feedback": "This error occurs when expanding $(x-2)^2 + (y-8)^2 = 25$ if you add the constants $+4$ and $+64$ to get $+68$, but fail to subtract the $r^2 = 25$ term correctly (calculating $68 + 25 = 93$ instead of $68 - 25 = 43$)."
+            },
+            {
+                "ans": "x^2 + y^2 + 4x + 16y + 43 = 0",
+                "feedback": "This is a sign error in the expanded form, which happens if you use a centre of $(-2, -8)$ instead of $(2, 8)$."
+            },
+            {
+                "ans": "x^2 + y^2 - 4x - 16y + 68 = 0",
+                "feedback": "This error occurs if you forget to equate the equation of the circle to $r^2 = 25$ on the right-hand side before expanding and grouping terms."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "From Centre-Radius to Expanded Standard Form",
+            "content": "When asked to express a circle equation in the expanded form $x^2 + y^2 + ax + by + c = 0$, start by writing it in the standard centre-radius form $(x - h)^2 + (y - k)^2 = r^2$. Fully expand the brackets, collect the constant terms on the left-hand side, and set the equation equal to zero."
+        }
+    },
+    {
+        "id": "004380",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Coordinate Geometry",
+        "topic": "Coordinate Geometry of the Circle",
+        "subtopic": [
+            "Tangency of a Line to a Circle using Quadratics"
+        ],
+        "img": false,
+        "question": "A circle $C$ has the equation $x^2 + y^2 = 20$ and a line $L$ has the equation $y = 2x + k$, where $k$ is a constant.<br><br><strong>(a)</strong> Show that if the line $L$ is a tangent to the circle $C$, then $k$ must satisfy the equation:<br>$$k^2 - 100 = 0$$<br><strong>(b)</strong> Hence, find the two possible values of the constant $k$.",
+        "steps": [
+            "<strong>Part (a): Setting up the simultaneous equation and discriminant</strong><br><br>Substitute the line equation $y = 2x + k$ into the circle equation:<br>\\begin{aligned} x^2 + (2x + k)^2 &= 20 \\cr x^2 + (4x^2 + 4kx + k^2) &= 20 \\cr 5x^2 + 4kx + k^2 - 20 &= 0 \\end{aligned}",
+            "This is a quadratic equation of the form $ax^2 + bx + c = 0$, where:<br>\\begin{aligned} a &= 5 \\cr b &= 4k \\cr c &= k^2 - 20 \\end{aligned}<br><br>For the line to be tangent to the circle, they must intersect at exactly one point. This means our quadratic equation must have exactly one real root, so its discriminant must equal zero ($\\{ b^2 - 4ac = 0 \\}$):<br>\\begin{aligned} (4k)^2 - 4(5)(k^2 - 20) &= 0 \\cr 16k^2 - 20(k^2 - 20) &= 0 \\cr 16k^2 - 20k^2 + 400 &= 0 \\cr -4k^2 + 400 &= 0 \\end{aligned}",
+            "Divide the entire equation by $-4$ to simplify:<br>\\begin{aligned} k^2 - 100 = 0 \\end{aligned}<br>This is the required equation.",
+            "<strong>Part (b): Solving for $k$</strong><br><br>Solve the equation by taking square roots:<br>\\begin{aligned} k^2 &= 100 \\cr k &= \\pm 10 \\end{aligned}<br><br>Thus, the two possible values of $k$ are $k = 10$ or $k = -10$."
+        ],
+        "pi_options": [
+            {
+                "ans": "k = 100 or k = -100",
+                "feedback": "This is a basic algebraic error where taking the square root is omitted: $k^2 = 100 \\implies k = \\pm 10$, not $\\pm 100$."
+            },
+            {
+                "ans": "k = 20 or k = -20",
+                "feedback": "This error occurs if you make a calculation slip in evaluating the discriminant, such as calculating $16k^2 - 20(k^2 - 20) = 0$ as $-4k^2 + 80 = 0 \\implies k^2 = 20$."
+            },
+            {
+                "ans": "k = 10",
+                "feedback": "Remember that the equation $k^2 = 100$ has two real roots: a positive root $k = 10$ and a negative root $k = -10$. Both are valid and represent parallel tangent lines."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "Geometric Interpretation of Parallel Tangents",
+            "content": "Since the circle $x^2 + y^2 = 20$ is centred at the origin, a line of fixed gradient $m = 2$ can be tangent to the circle at two distinct, opposite points. This is why we get two symmetric values of $k$ ($k = 10$ and $k = -10$), representing the upper and lower parallel tangents."
+        }
     }
+
 
 
 
