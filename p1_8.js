@@ -996,15 +996,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "Centre: (3, -4), Radius: 34, Tangent: 3x + 5y - 23 = 0",
+                "ans": "Centre: $(3, -4)$, Radius: 34, Tangent: $3x + 5y - 23 = 0$",
                 "feedback": "Remember that when completing the square, the constant on the right-hand side is $r^2$. Thus, the radius is $\\sqrt{ 34 }$, not $34$."
             },
             {
-                "ans": "Centre: (-3, 4), Radius: \\sqrt{ 34 }, Tangent: 3x + 5y + 23 = 0",
+                "ans": "Centre: $(-3, 4)$, Radius: $\\sqrt{ 34 }$, Tangent: $3x + 5y + 23 = 0$",
                 "feedback": "Be careful with signs when completing the square: $x^2 - 6x = (x-3)^2 - 9$ and $y^2 + 8y = (y+4)^2 - 16$. This gives a centre of $(3, -4)$, not $(-3, 4)$."
             },
             {
-                "ans": "Centre: (3, -4), Radius: \\sqrt{ 34 }, Tangent: 5x - 3y - 27 = 0",
+                "ans": "Centre: $(3, -4)$, Radius: $\\sqrt{ 34 }$, Tangent: $5x - 3y - 27 = 0$",
                 "feedback": "This is the result of using the gradient of the radius ($m_r = \\dfrac{ 5 }{ 3 }$) instead of the perpendicular gradient of the tangent ($m_t = -\\dfrac{ 3 }{ 5 }$) to write the tangent equation."
             }
         ],
@@ -1033,15 +1033,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "PQ = \\sqrt{ 14 }",
+                "ans": "$PQ = \\sqrt{ 14 }$",
                 "feedback": "This error occurs if you subtract the coordinates incorrectly or forget to square the differences before adding, calculating $PQ = \\sqrt{ (6 - (-1)) + (4 - (-3)) } = \\sqrt{ 7 + 7 } = \\sqrt{ 14 }$."
             },
             {
-                "ans": "PQ = 14",
+                "ans": "$PQ = 14$",
                 "feedback": "This error occurs if you assume $PQ = 7 + 7 = 14$. You must use the Pythagorean distance formula $PQ = \\sqrt{ \\Delta x^2 + \\Delta y^2 } = \\sqrt{ 49 + 49 } = \\sqrt{ 98 } = 7\\sqrt{ 2 }$."
             },
             {
-                "ans": "PQ = 7\\sqrt{ 2 }, but with intersection points P(6, 4) and Q(1, -1)",
+                "ans": "$PQ = 7\\sqrt{ 2 }$, but with intersection points $P(6, 4)$ and $Q(1, -1)$",
                 "feedback": "Double check your factorization of the simultaneous quadratic $x^2 - 5x - 6 = 0$. This factors to $(x-6)(x+1) = 0$, giving $x = 6$ and $x = -1$, not $x = 1$."
             }
         ],
@@ -1070,15 +1070,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "x^2 + y^2 - 4x - 16y + 93 = 0",
+                "ans": "$x^2 + y^2 - 4x - 16y + 93 = 0$",
                 "feedback": "This error occurs when expanding $(x-2)^2 + (y-8)^2 = 25$ if you add the constants $+4$ and $+64$ to get $+68$, but fail to subtract the $r^2 = 25$ term correctly (calculating $68 + 25 = 93$ instead of $68 - 25 = 43$)."
             },
             {
-                "ans": "x^2 + y^2 + 4x + 16y + 43 = 0",
+                "ans": "$x^2 + y^2 + 4x + 16y + 43 = 0$",
                 "feedback": "This is a sign error in the expanded form, which happens if you use a centre of $(-2, -8)$ instead of $(2, 8)$."
             },
             {
-                "ans": "x^2 + y^2 - 4x - 16y + 68 = 0",
+                "ans": "$x^2 + y^2 - 4x - 16y + 68 = 0$",
                 "feedback": "This error occurs if you forget to equate the equation of the circle to $r^2 = 25$ on the right-hand side before expanding and grouping terms."
             }
         ],
@@ -1107,15 +1107,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "k = 100 or k = -100",
+                "ans": "$k = 100 or k = -100$",
                 "feedback": "This is a basic algebraic error where taking the square root is omitted: $k^2 = 100 \\implies k = \\pm 10$, not $\\pm 100$."
             },
             {
-                "ans": "k = 20 or k = -20",
+                "ans": "$k = 20 or k = -20$",
                 "feedback": "This error occurs if you make a calculation slip in evaluating the discriminant, such as calculating $16k^2 - 20(k^2 - 20) = 0$ as $-4k^2 + 80 = 0 \\implies k^2 = 20$."
             },
             {
-                "ans": "k = 10",
+                "ans": "$k = 10$",
                 "feedback": "Remember that the equation $k^2 = 100$ has two real roots: a positive root $k = 10$ and a negative root $k = -10$. Both are valid and represent parallel tangent lines."
             }
         ],
