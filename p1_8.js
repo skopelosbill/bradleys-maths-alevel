@@ -379,6 +379,188 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Power of Completing the Square",
             "content": "Completing the square is one of the most powerful tools for proving quadratic inequalities. By writing a quadratic in the form $(x - p)^2 + q$, you instantly establish its minimum value. Since any real square $(x - p)^2 \\ge 0$, the expression $(x - p)^2 + q$ is guaranteed to be at least $q$."
         }
+    },
+    {
+        "id": "004361",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Exponential Decay Modeling"
+        ],
+        "img": false,
+        "question": "The value of a motorcycle, £$V$, may be modeled as a continuous variable. At time $t$ years, the value of the motorcycle is given by:<br>$$V = Ae^{kt}$$<br>where $A$ and $k$ are constants.<br><br>When the motorcycle is new, it is worth £16,000. When the motorcycle is three years old, it is worth £12,000.<br><br>Determine the predicted value of the motorcycle when it is nine years old.",
+        "steps": [
+            "To find the value of the constants, we first use the initial condition. When the motorcycle is new, $t = 0$ and $V = 16000$.<br><br>Substitute these values into the model equation:<br>\\begin{aligned} 16000 &= Ae^{k(0)} \\cr 16000 &= A(1) \\cr A &= 16000 \\end{aligned}<br><br>So, the model becomes $V = 16000e^{kt}$.",
+            "Next, we use the second condition. When the motorcycle is three years old, $t = 3$ and $V = 12000$.<br><br>Substitute these values into our updated equation:<br>\\begin{aligned} 12000 &= 16000e^{3k} \\cr e^{3k} &= \\dfrac{ 12000 }{ 16000 } \\cr e^{3k} &= \\dfrac{ 3 }{ 4 } \\end{aligned}<br><br>We can leave the expression in this form instead of solving for $k$ as a decimal, which avoids rounding errors in the next step.",
+            "We want to find the value of the motorcycle when it is nine years old, so we set $t = 9$:<br>\\begin{aligned} V &= 16000e^{9k} \\cr V &= 16000\\left( e^{3k} \\right)^3 \\end{aligned}<br><br>Substitute $e^{3k} = \\dfrac{ 3 }{ 4 }$ into this equation:<br>\\begin{aligned} V &= 16000\\left( \\dfrac{ 3 }{ 4 } \\right)^3 \\cr V &= 16000\\left( \\dfrac{ 27 }{ 64 } \\right) \\cr V &= 250 \\times 27 \\cr V &= 6750 \\end{aligned}<br><br>Thus, the predicted value of the motorcycle after nine years is £6,750."
+        ],
+        "pi_options": [
+            {
+                "ans": "£4,000",
+                "feedback": "This is the result of using a linear depreciation model rather than an exponential model. A linear model assumes the motorcycle loses a constant amount of value each year (linear depreciation of £1,333.33 per year), whereas an exponential model assumes it loses a constant percentage of its value."
+            },
+            {
+                "ans": "£9,000",
+                "feedback": "This error occurs if you incorrectly calculate the value at $t=9$ as $V = 16000 \\times \\left( \\dfrac{ 3 }{ 4 } \\right)^2$ instead of $16000 \\times \\left( \\dfrac{ 3 }{ 4 } \\right)^3$. A power of 2 represents the value after 6 years, not 9 years."
+            },
+            {
+                "ans": "£10,000",
+                "feedback": "This can occur from a combination of algebraic errors in index laws or if you solve for $k$ as a rounded decimal too early, causing a significant loss of precision in the final calculation."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Using Powers of the Base Instead of Solving for k",
+            "content": "When the target time ($t = 9$) is an exact multiple of the given time interval ($t = 3$), you do not need to find the numerical decimal value of $k$. Since $V = A(e^{3k})^3$, you can simply substitute the fraction representing $e^{3k}$ directly. This avoids rounding errors and keeps the calculations exact."
+        }
+    },
+    {
+        "id": "004362",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Radioactive Decay"
+        ],
+        "img": false,
+        "question": "The mass, $M$ grams, of a radioactive substance remaining at time $t$ years is modeled by:<br>$$M = M_0 e^{-kt}$$<br>where $M_0$ and $k$ are positive constants.<br><br>Initially, the mass of the substance is $80\\text{ grams}$. After $5$ years, the mass has decayed to $50\\text{ grams}$.<br><br><strong>(a)</strong> Find the value of $M_0$ and show that $k \\approx 0.0940$.<br><br><strong>(b)</strong> Find the time taken, to the nearest tenth of a year, for the mass of the substance to decay to $20\\text{ grams}$.",
+        "steps": [
+            "<strong>Part (a): Finding $M_0$ and $k$</strong><br><br>The initial mass is $80\\text{ grams}$, which means $M = 80$ when $t = 0$.<br>\\begin{aligned} 80 &= M_0 e^{-k(0)} \\cr M_0 &= 80 \\end{aligned}<br><br>Now we use the second condition: $M = 50$ when $t = 5$.<br>\\begin{aligned} 50 &= 80e^{-5k} \\cr e^{-5k} &= \\dfrac{ 50 }{ 80 } \\cr e^{-5k} &= 0.625 \\end{aligned}",
+            "Take the natural logarithm of both sides to solve for $k$:<br>\\begin{aligned} -5k &= \\ln(0.625) \\cr k &= -\\dfrac{ 1 }{ 5 }\\ln(0.625) \\cr k &\\approx 0.0940007 \\cr k &\\approx 0.0940 \\text{ (to 4 d.p.)} \\end{aligned}",
+            "<strong>Part (b): Finding the time to decay to $20\\text{ grams}$</strong><br><br>Set $M = 20$ and solve for $t$ using our model $M = 80e^{-0.0940t}$:<br>\\begin{aligned} 20 &= 80e^{-0.0940t} \\cr e^{-0.0940t} &= \\dfrac{ 20 }{ 80 } \\cr e^{-0.0940t} &= 0.25 \\end{aligned}<br><br>Take the natural logarithm of both sides:<br>\\begin{aligned} -0.0940t &= \\ln(0.25) \\cr t &= \\dfrac{ \\ln(0.25) }{ -0.0940 } \\cr t &\\approx 14.74787 \\end{aligned}<br><br>Rounding $14.74787$ to the nearest tenth of a year gives $14.7$ years."
+        ],
+        "pi_options": [
+            {
+                "ans": "14.8 years",
+                "feedback": "This is a rounding error. Dividing $-\\ln(0.25)$ by $0.0940$ yields approximately $14.748$ years. Since the digit in the hundredths place is 4, this rounds down to $14.7$ years, not up to $14.8$ years."
+            },
+            {
+                "ans": "15.4 years",
+                "feedback": "This error occurs if you round the decay constant $k$ too severely to $0.09$ in intermediate steps, leading to $t = \\dfrac{ \\ln(0.25) }{ -0.09 } \\approx 15.4$ years."
+            },
+            {
+                "ans": "12.5 years",
+                "feedback": "This error occurs if you use common logarithms (base 10) instead of natural logarithms (base $e$) when solving the exponential equation, or if you make an error in changing the sign during algebraic rearrangement."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Rounding of Intermediate Constants",
+            "content": "Be very careful when using rounded intermediate values (like $k \\approx 0.0940$) in subsequent calculations. To ensure maximum accuracy, always store the exact value of $k$ in your calculator's memory and use it for the final calculation before rounding the final answer."
+        }
+    },
+    {
+        "id": "004363",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Newton's Law of Cooling"
+        ],
+        "img": false,
+        "question": "The temperature, $\\theta^\\circ\\text{C}$, of a hot drink in a room at time $t$ minutes after being poured is modeled by:<br>$$\\theta = 20 + Ae^{-kt}$$<br>where $A$ and $k$ are constants.<br><br>The initial temperature of the drink is $85^\\circ\\text{C}$. After $10$ minutes, the temperature has cooled to $50^\\circ\\text{C}$.<br><br><strong>(a)</strong> Find the value of $A$.<br><br><strong>(b)</strong> Find the value of $k$, giving your answer correct to 4 decimal places.<br><br><strong>(c)</strong> Determine the temperature of the drink, to the nearest degree, after $25$ minutes.",
+        "steps": [
+            "<strong>Part (a): Finding $A$</strong><br><br>The initial temperature is $85^\\circ\\text{C}$, so $\\theta = 85$ when $t = 0$.<br>\\begin{aligned} 85 &= 20 + Ae^{-k(0)} \\cr 85 &= 20 + A \\cr A &= 65 \\end{aligned}",
+            "<strong>Part (b): Finding $k$</strong><br><br>We are given that $\\theta = 50$ when $t = 10$. Substitute $A = 65$ and these values into the model:<br>\\begin{aligned} 50 &= 20 + 65e^{-10k} \\cr 30 &= 65e^{-10k} \\cr e^{-10k} &= \\dfrac{ 30 }{ 65 } \\cr e^{-10k} &= \\dfrac{ 6 }{ 13 } \\end{aligned}<br><br>Take the natural logarithm of both sides:<br>\\begin{aligned} -10k &= \\ln\\left( \\dfrac{ 6 }{ 13 } \\right) \\cr k &= -\\dfrac{ 1 }{ 10 }\\ln\\left( \\dfrac{ 6 }{ 13 } \\right) \\cr k &\\approx 0.0773189 \\cr k &\\approx 0.0773 \\text{ (to 4 d.p.)} \\end{aligned}",
+            "<strong>Part (c): Finding the temperature after $25$ minutes</strong><br><br>Substitute $t = 25$, $A = 65$, and $k = 0.0773$ into the model:<br>\\begin{aligned} \\theta &= 20 + 65e^{-0.0773(25)} \\cr \\theta &= 20 + 65e^{-1.9325} \\cr \\theta &\\approx 20 + 65(0.144783) \\cr \\theta &\\approx 20 + 9.4109 \\cr \\theta &\\approx 29.4109 \\end{aligned}<br><br>Rounding to the nearest degree gives $29^\\circ\\text{C}$."
+        ],
+        "pi_options": [
+            {
+                "ans": "30°C",
+                "feedback": "This is a minor calculation error. Ensure you do not round the exponent or value of $e^{-1.9325}$ too early. The unrounded calculation yields $29.41^\\circ\\text{C}$, which rounds down to $29^\\circ\\text{C}$."
+            },
+            {
+                "ans": "20°C",
+                "feedback": "This represents the limit as $t \\to \\infty$ (the ambient room temperature). While the drink will eventually cool to $20^\\circ\\text{C}$, after only 25 minutes it will still be slightly above room temperature."
+            },
+            {
+                "ans": "34°C",
+                "feedback": "This error can occur if you forget the negative sign in the exponent (evaluating $e^{1.9325}$), or if you make an error in subtracting the constant offset of 20."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "Understanding the Room Temperature Offset",
+            "content": "In the model $\\theta = 20 + Ae^{-kt}$, as $t \\to \\infty$, the term $Ae^{-kt} \\to 0$. This means that the temperature $\\theta$ approaches $20^\\circ\\text{C}$ (the ambient room temperature). The constant offset represents this physical lower bound."
+        }
+    },
+    {
+        "id": "004364",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Exponential Growth"
+        ],
+        "img": false,
+        "question": "The number of bacteria, $N$, in a laboratory culture at time $t$ hours is modeled by:<br>$$N = Ae^{kt}$$<br>where $A$ and $k$ are positive constants.<br><br>The initial population of bacteria is $500$. After $4$ hours, the population has grown to $1500$.<br><br><strong>(a)</strong> State the value of $A$.<br><br><strong>(b)</strong> Show that $e^{4k} = 3$, and hence find the exact value of $k$.<br><br><strong>(c)</strong> Determine the population of bacteria in the culture after $12$ hours.",
+        "steps": [
+            "<strong>Part (a): Finding $A$</strong><br><br>The initial population of bacteria is $500$, which means $N = 500$ when $t = 0$.<br>\\begin{aligned} 500 &= Ae^{k(0)} \\cr A &= 500 \\end{aligned}",
+            "<strong>Part (b): Finding $k$</strong><br><br>We are given that $N = 1500$ when $t = 4$. Substitute $A = 500$ into the equation:<br>\\begin{aligned} 1500 &= 500e^{4k} \\cr e^{4k} &= \\dfrac{ 1500 }{ 500 } \\cr e^{4k} &= 3 \\end{aligned}<br><br>Taking the natural logarithm of both sides to find the exact value of $k$:<br>\\begin{aligned} 4k &= \\ln(3) \\cr k &= \\dfrac{ \\ln(3) }{ 4 } \\end{aligned}",
+            "<strong>Part (c): Finding the population after $12$ hours</strong><br><br>We want to evaluate $N$ when $t = 12$. Substitute $A = 500$ and $t = 12$ into our model equation:<br>\\begin{aligned} N &= 500e^{12k} \\cr N &= 500\\left( e^{4k} \\right)^3 \\end{aligned}<br><br>Since we know from Part (b) that $e^{4k} = 3$, we can substitute this directly:<br>\\begin{aligned} N &= 500(3)^3 \\cr N &= 500(27) \\cr N &= 13500 \\end{aligned}<br><br>Thus, the population of bacteria after 12 hours is $13,500$."
+        ],
+        "pi_options": [
+            {
+                "ans": "4,500",
+                "feedback": "This error occurs if you multiply the population by 3 (calculating $1500 \\times 3$) instead of recognizing that the population triples every 4 hours, which requires cubing the factor of 3 over 12 hours ($3^3 = 27$)."
+            },
+            {
+                "ans": "1,500",
+                "feedback": "This is simply the population at $t = 4$ hours. After 12 hours, the population will have undergone two further tripling cycles."
+            },
+            {
+                "ans": "40,500",
+                "feedback": "This error occurs if you apply the tripling factor of 27 directly to the $t = 4$ population of 1500 (calculating $1500 \\times 27$) instead of multiplying it by the initial population $A = 500$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Recognizing Tripling Times",
+            "content": "Since the population triples every 4 hours ($e^{4k} = 3$), the population after 12 hours (which is exactly three 4-hour intervals) must triple three times: $500 \\times 3 \\times 3 \\times 3 = 13500$. Recognizing this scaling factor is a fast way to verify your answers."
+        }
+    },
+    {
+        "id": "004365",
+        "board": "WJEC",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Comparing Exponential Models"
+        ],
+        "img": false,
+        "question": "The population of Town $X$, $P$, is modeled by $P = 15000e^{0.02t}$, and the population of Town $Y$, $Q$, is modeled by $Q = 22000e^{-0.01t}$, where $t$ is the number of years after the year 2020.<br><br><strong>(a)</strong> State which town's population is predicted to grow and which is predicted to decay, justifying your answer.<br><br><strong>(b)</strong> Find the number of years, to the nearest tenth of a year, after 2020 when the populations of the two towns are predicted to be equal.",
+        "steps": [
+            "<strong>Part (a): Growth vs Decay</strong><br><br>The behavior of an exponential model $y = Ae^{kt}$ depends on the sign of the constant exponent coefficient, $k$:<br>1. For Town $X$, $k = 0.02 > 0$. Since the exponent is positive, the population is predicted to **grow**.<br>2. For Town $Y$, $k = -0.01 < 0$. Since the exponent is negative, the population is predicted to **decay**.",
+            "<strong>Part (b): Finding when populations are equal</strong><br><br>To find when the populations are equal, set $P = Q$ and solve for $t$:<br>\\begin{aligned} 15000e^{0.02t} &= 22000e^{-0.01t} \\end{aligned}<br><br>Divide both sides by $15000$:<br>\\begin{aligned} e^{0.02t} &= \\dfrac{ 22000 }{ 15000 }e^{-0.01t} \\cr e^{0.02t} &= \\dfrac{ 22 }{ 15 }e^{-0.01t} \\end{aligned}",
+            "To combine the exponential terms, divide both sides by $e^{-0.01t}$ (which is equivalent to multiplying both sides by $e^{0.01t}$):<br>\\begin{aligned} \\dfrac{ e^{0.02t} }{ e^{-0.01t} } &= \\dfrac{ 22 }{ 15 } \\cr e^{0.02t - (-0.01t)} &= \\dfrac{ 22 }{ 15 } \\cr e^{0.03t} &= \\dfrac{ 22 }{ 15 } \\end{aligned}<br><br>Take the natural logarithm of both sides:<br>\\begin{aligned} 0.03t &= \\ln\\left( \\dfrac{ 22 }{ 15 } \\right) \\cr t &= \\dfrac{ 1 }{ 0.03 }\\ln\\left( \\dfrac{ 22 }{ 15 } \\right) \\cr t &\\approx 12.729 \\end{aligned}<br><br>Rounding to the nearest tenth of a year gives $12.7$ years."
+        ],
+        "pi_options": [
+            {
+                "ans": "12.8 years",
+                "feedback": "This is a rounding error. The value $t \\approx 12.729$ rounds down to $12.7$ because the digit in the hundredths place is 2."
+            },
+            {
+                "ans": "38.2 years",
+                "feedback": "This error occurs if you fail to divide by the combined exponent coefficient of $0.03$, leaving the calculation as $t = \\ln\\left( \\dfrac{ 22 }{ 15 } \\right) / 0.01 \\approx 38.2$ years."
+            },
+            {
+                "ans": "25.6 years",
+                "feedback": "This error can occur if you incorrectly subtract the exponents when dividing (calculating $0.02 - 0.01 = 0.01$) instead of correctly adding them when dividing by a negative exponent ($0.02 - (-0.01) = 0.03$)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Combining Exponentials with Different Bases",
+            "content": "When solving $Ae^{at} = Be^{-bt}$, always divide both sides by $e^{-bt}$ to get $e^{(a+b)t} = \\dfrac{ B }{ A }$. This cleanly combines the exponents into a single positive exponential term, making it simple to take the natural logarithm of both sides."
+        }
     }
+
+
 
 ];
