@@ -1675,7 +1675,192 @@ window.ALEVEL_QUESTIONS = [
             "title": "Reverse-Engineering Graph Transformations",
             "content": "To reverse-engineer a transformation from a coordinates shift, map the operations to their axes. For vertical operations, solve $a \\times y_{\\text{old}} + d = y_{\\text{new}}$. For horizontal operations, solve the input equation $b \\times x_{\\text{new}} + c = x_{\\text{old}}$."
         }
+    },
+    {
+        "id": "004396",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Solving Logarithmic and Exponential Equations"
+        ],
+        "img": false,
+        "question": "<strong>(a)</strong> Given that $\\log_3 a = 2$, state the value of $a$.<br><br><strong>(b)</strong> Hence, solve the equation:<br>$$\\log_3 \\left(\\frac{2x}{x-2}\\right) = 2$$<br><strong>(c)</strong> Solve the exponential equation:<br>$$5e^{3x} = 7$$<br>giving your answer correct to 3 decimal places.",
+        "steps": [
+            "<strong>Part (a): Stating the value of $a$</strong><br><br>To find $a$, rewrite the logarithmic equation in its equivalent exponential form:<br>\\begin{aligned} \\log_3 a &= 2 \\cr a &= 3^2 \\cr a &= 9 \\end{aligned}",
+            "<strong>Part (b): Solving the logarithmic equation</strong><br><br>Since $\\log_3 a = 2 \\implies a = 9$, we can solve the equation $\\log_3 \\left( \\dfrac{ 2x }{ x-2 } \\right) = 2$ by setting the argument equal to $9$:<br>\\begin{aligned} \\dfrac{ 2x }{ x-2 } &= 9 \\cr 2x &= 9(x - 2) \\cr 2x &= 9x - 18 \\cr -7x &= -18 \\cr x &= \\dfrac{ 18 }{ 7 } \\end{aligned}<br><br>Check the domain: since $\\dfrac{ 18 }{ 7 } \\approx 2.57 > 2$, the argument remains positive, so $x = \\dfrac{ 18 }{ 7 }$ is a valid solution.",
+            "<strong>Part (c): Solving the exponential equation</strong><br><br>First, isolate the exponential term by dividing both sides of $5e^{3x} = 7$ by $5$:<br>\\begin{aligned} e^{3x} = \\dfrac{ 7 }{ 5 } = 1.4 \\end{aligned}<br><br>Now, take the natural logarithm ($\\ln$) of both sides to remove the exponential:<br>\\begin{aligned} 3x &= \\ln(1.4) \\cr x &= \\dfrac{ 1 }{ 3 }\\ln(1.4) \\end{aligned}",
+            "Evaluate this expression numerically using a calculator:<br>\\begin{aligned} x &\\approx \\dfrac{ 0.336472 }{ 3 } \\cr x &\\approx 0.112157 \\end{aligned}<br><br>Rounding to 3 decimal places gives $x \\approx 0.112$."
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $a = 6$; <strong>(b)</strong> $x = \\dfrac{ 18 }{ 7 }$; <strong>(c)</strong> $x \\approx 0.112$",
+                "feedback": "In part (a), the equation $\\log_3 a = 2$ converts to exponential form as $a = 3^2 = 9$. Multiplying $3 \\times 2 = 6$ is a basic operational error."
+            },
+            {
+                "ans": "<strong>(a)</strong> $a = 9$; <strong>(b)</strong> $x = \\dfrac{ 18 }{ 7 }$; <strong>(c)</strong> $x \\approx 0.118$",
+                "feedback": "This is a rounding/calculation slip in part (c). Evaluating $\\dfrac{ 1 }{ 3 }\\ln(1.4)$ yields approximately $0.112157...$ which rounds down to $0.112$ to 3 decimal places, not $0.118$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $a = 9$; <strong>(b)</strong> $x = \\dfrac{ 9 }{ 7 }$; <strong>(c)</strong> $x \\approx 0.112$",
+                "feedback": "This error is in part (b). Solving $\\dfrac{ 2x }{ x-2 } = 9 \\implies 2x = 9x - 18 \\implies -7x = -18 \\implies x = \\dfrac{ 18 }{ 7 }$, not $\\dfrac{ 9 }{ 7 }$ (which occurs if you forget to distribute the multiplier 9 to the constant term $-2$)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Making Links Between Sub-parts",
+            "content": "Syllabuses often use 'Hence' to indicate that the result of a previous part must be used directly. Recognizing that $\\log_3 a = 2 \\implies a = 9$ lets you bypass converting the logarithm in part (b) from scratch, saving valuable exam time."
+        }
+    },
+    {
+        "id": "004397",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Solving Logarithmic Equations"
+        ],
+        "img": false,
+        "question": "Solve the logarithmic equation:<br>$$\\log_5 (3x + 1) - \\log_5 (x - 1) = 1$$<br>Show all of your algebraic working clearly.",
+        "steps": [
+            "Apply the subtraction law of logarithms ($\\{\\log_b A - \\log_b B = \\log_b \\left( \\dfrac{ A }{ B } \\right)\\}$) to combine the left-hand side:<br>\\begin{aligned} \\log_5 \\left( \\dfrac{ 3x + 1 }{ x - 1 } \\right) = 1 \\end{aligned}",
+            "Convert the logarithmic equation to its equivalent exponential form to eliminate the log:<br>\\begin{aligned} \\dfrac{ 3x + 1 }{ x - 1 } &= 5^1 \\cr \\dfrac{ 3x + 1 }{ x - 1 } &= 5 \\end{aligned}",
+            "Solve the resulting linear equation for $x$:<br>\\begin{aligned} 3x + 1 &= 5(x - 1) \\cr 3x + 1 &= 5x - 5 \\cr -2x &= -6 \\cr x &= 3 \\end{aligned}",
+            "Verify the solution against the domain of the original logarithms:<br>1. For $\\log_5 (3x + 1)$: $3(3) + 1 = 10 > 0$. (Valid)<br>2. For $\\log_5 (x - 1)$: $3 - 1 = 2 > 0$. (Valid)<br><br>Thus, the solution is $x = 3$."
+        ],
+        "pi_options": [
+            {
+                "ans": "$x = -3$",
+                "feedback": "This is a sign error during algebraic rearrangement. Solving $3x + 1 = 5x - 5 \\implies -2x = -6 \\implies x = 3$, not $-3$."
+            },
+            {
+                "ans": "$x = 2$",
+                "feedback": "This error occurs if you convert the log equation incorrectly, such as writing $\\dfrac{ 3x + 1 }{ x - 1 } = 1$ (forgetting that $\\log_5 A = 1 \\implies A = 5^1 = 5$)."
+            },
+            {
+                "ans": "$x = 3.5$",
+                "feedback": "This is a calculation slip that happens if you fail to distribute the multiplier 5 to all terms of the denominator when multiplying both sides of the equation."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Verifying Logarithmic Domains",
+            "content": "Always substitute your final $x$-values back into the original logarithmic arguments. Since logarithms of negative numbers or zero are undefined, any algebraic solution that makes an argument non-positive must be rejected."
+        }
+    },
+    {
+        "id": "004398",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Solving Exponential Equations with Base 10"
+        ],
+        "img": false,
+        "question": "Solve the exponential equation:<br>$$2 \\times 10^{4x} = 50$$<br>giving your answer correct to 3 decimal places.",
+        "steps": [
+            "First, isolate the exponential term on one side of the equation by dividing both sides by $2$:<br>\\begin{aligned} 10^{4x} = 25 \\end{aligned}",
+            "To solve this base 10 exponential equation, take the common logarithm ($\\log_{10}$) of both sides:<br>\\begin{aligned} 4x = \\log_{10}(25) \\end{aligned}",
+            "Rearrange to solve for $x$:<br>\\begin{aligned} x = \\dfrac{ 1 }{ 4 }\\log_{10}(25) \\end{aligned}",
+            "Evaluate this expression numerically using a calculator:<br>\\begin{aligned} x &\\approx \\dfrac{ 1.397940 }{ 4 } \\cr x &\\approx 0.349485 \\end{aligned}<br><br>Rounding to 3 decimal places gives $x \\approx 0.349$."
+        ],
+        "pi_options": [
+            {
+                "ans": "$x \\approx 0.350$",
+                "feedback": "This is a minor rounding slip. Calculating $x = \\dfrac{ 1 }{ 4 }\\log_{10}(25)$ yields $0.349485...$ Since the digit in the ten-thousandths place is 4, this must round down to $0.349$ to 3 decimal places."
+            },
+            {
+                "ans": "$x \\approx 0.805$",
+                "feedback": "This error occurs if you use natural logarithms ($\\ln$) instead of common logarithms (base 10, $\\log_{10}$) when solving the exponential equation with base 10."
+            },
+            {
+                "ans": "$x \\approx 0.174$",
+                "feedback": "This error happens if you take the log of 50 before dividing by 2, evaluating $4x = \\log_{10}(50) \\implies x = \\dfrac{ \\log_{10}(50) }{ 4 } \\approx 0.174$, which violates algebraic order of operations."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Selecting the Right Logarithm Base",
+            "content": "While you can use natural logarithms ($\\ln$) to solve any exponential equation, using a log base that matches the exponential base (like $\\log_{10}$ for base 10) simplifies the algebra significantly because $\\log_{10}(10^k) = k$ directly."
+        }
+    },
+    {
+        "id": "004399",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Quadratics in Exponential Form"
+        ],
+        "img": false,
+        "question": "Solve the equation:<br>$$e^{2x} - 5e^x + 6 = 0$$<br>giving your answers in their simplest exact form.",
+        "steps": [
+            "Introduce a substitution variable. Let $y = e^x$. Since $e^{2x} = (e^x)^2 = y^2$, the equation becomes a standard quadratic equation in terms of $y$:<br>\\begin{aligned} y^2 - 5y + 6 = 0 \\end{aligned}",
+            "Solve this quadratic equation by factoring:<br>\\begin{aligned} (y - 2)(y - 3) = 0 \\end{aligned}<br>This yields $y = 2$ or $y = 3$. Both are valid since $y = e^x > 0$ for all real $x$.",
+            "Substitute back $y = e^x$ and solve for $x$ by taking natural logarithms:<br><br>1. For $y = 2$:<br>\\begin{aligned} e^x &= 2 \\cr x &= \\ln(2) \\end{aligned}<br><br>2. For $y = 3$:<br>\\begin{aligned} e^x &= 3 \\cr x &= \\ln(3) \\end{aligned}<br><br>Thus, the exact solutions are $x = \\ln(2)$ and $x = \\ln(3)$."
+        ],
+        "pi_options": [
+            {
+                "ans": "$x = 2$ or $x = 3$",
+                "feedback": "These are the solutions for the substitution variable $y$, where $y = e^x$. You must complete the final step by taking the natural logarithm: $e^x = 2 \\implies x = \\ln 2$ and $e^x = 3 \\implies x = \\ln 3$."
+            },
+            {
+                "ans": "$x = \\ln(-2)$ or $x = \\ln(-3)$",
+                "feedback": "This is a sign error when factoring the quadratic $y^2 - 5y + 6 = 0$. Factoring correctly gives $(y-2)(y-3) = 0 \\implies y = 2, 3$, not negative values."
+            },
+            {
+                "ans": "$x = \\ln(6)$",
+                "feedback": "This is an index law misconception, where you incorrectly assume that $e^{2x} - 5e^x + 6 = 0 \\implies e^x = 6$. You must use a substitution variable to solve this quadratic-form equation."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Distinguishing Substitution from Final Solutions",
+            "content": "A very common test-day mistake is stopping once you solve the quadratic for the substitution variable (e.g., writing $y = 2, 3$). Always remind yourself that the original question asks to solve for $x$, so you must carry out the final logarithmic step."
+        }
+    },
+    {
+        "id": "004400",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Exponentials and Logarithms",
+        "subtopic": [
+            "Logarithmic Proofs and Reciprocals"
+        ],
+        "img": false,
+        "question": "<strong>(a)</strong> Prove that:<br>$$\\log_a \\left(\\frac{1}{k}\\right) = -\\log_a k$$<br>for any positive real numbers $a$ and $k$ where $a \\ne 1$.<br><br><strong>(b)</strong> Hence, showing all of your algebraic working, solve the equation:<br>$$\\log_4 (x - 3) + \\log_4 \\left(\\frac{1}{x}\\right) = -1$$",
+        "steps": [
+            "<strong>Part (a): Proving the identity</strong><br><br>We begin with the left-hand side and apply the laws of indices to express the fraction as a negative power:<br>\\begin{aligned} \\log_a \\left( \\dfrac{ 1 }{ k } \\right) &= \\log_a(k^{-1}) \\end{aligned}<br><br>Using the power law of logarithms ($\\log_b (A^r) = r\\log_b A$):<br>\\begin{aligned} \\log_a(k^{-1}) &= -1 \\times \\log_a k \\cr &= -\\log_a k \\end{aligned}<br>This completes the proof.",
+            "<strong>Part (b): Solving the equation</strong><br><br>Using the identity proved in Part (a), we can replace the term $\\log_4 \\left( \\dfrac{ 1 }{ x } \\right)$ with $-\\log_4 x$:<br>\\begin{aligned} \\log_4 (x - 3) - \\log_4 x = -1 \\end{aligned}<br><br>Apply the subtraction law of logarithms:<br>\\begin{aligned} \\log_4 \\left( \\dfrac{ x - 3 }{ x } \\right) = -1 \\end{aligned}",
+            "Convert to exponential form to remove the logarithm:<br>\\begin{aligned} \\dfrac{ x - 3 }{ x } &= 4^{-1} \\cr \\dfrac{ x - 3 }{ x } &= \\dfrac{ 1 }{ 4 } \\end{aligned}",
+            "Solve the resulting linear equation for $x$:<br>\\begin{aligned} 4(x - 3) &= x \\cr 4x - 12 &= x \\cr 3x &= 12 \\cr x &= 4 \\end{aligned}<br><br>Check the domain: for $x = 4$, the arguments are $x - 3 = 1 > 0$ and $x = 4 > 0$. Both are valid. Thus, $x = 4$."
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(b)</strong> $x = 2$",
+                "feedback": "This is a calculation error. Solving $\\dfrac{ x - 3 }{ x } = \\dfrac{ 1 }{ 4 } \\implies 4x - 12 = x \\implies 3x = 12 \\implies x = 4$, not $2$."
+            },
+            {
+                "ans": "<strong>(b)</strong> $x = -1$",
+                "feedback": "This is a sign error that occurs if you set up the division equation incorrectly, or if you fail to reject a negative coordinate that violates the domain of the logarithms ($x > 3$)."
+            },
+            {
+                "ans": "<strong>(b)</strong> $x = 12$",
+                "feedback": "This error occurs if you multiply the terms instead of dividing them, solving $x(x-3) = 4^{-1}$ or another incorrect algebraic configuration."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Using Logarithmic Identities to Simplify Fractions",
+            "content": "The identity $\\log_a \\left( \\dfrac{ 1 }{ x } \\right) = -\\log_a x$ is an extremely powerful simplification shortcut. It allows you to convert division-based logarithmic problems into simple subtraction-based equations, avoiding complex fractional equations in intermediate steps."
+        }
     }
+
 
 
 
