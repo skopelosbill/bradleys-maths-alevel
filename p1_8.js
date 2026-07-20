@@ -1494,7 +1494,189 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Symmetry of Circle Intersections",
             "content": "The equation $|\\vec{AB}| = 5$ represents a circle of radius $5$ centred at $A$. Since the $x$-coordinate of $B$ is fixed at $5$, the line $x = 5$ intersects this circle at exactly two points. This explains why we get two perfectly symmetric values for the vertical component $k$."
         }
+    },
+    {
+        "id": "004391",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Coordinate Geometry",
+        "subtopic": [
+            "Transformations of Graphs"
+        ],
+        "img": "images/p1/004391.png",
+        "question": "A curve has the equation $y = f(x)$. The point $A(0, 2)$ lies on the curve.<br><br><strong>(a)</strong> Write down the coordinates of the point $A$ under the following transformations:<br>*   <strong>(i)</strong> $y = f(x) + 3$<br>*   <strong>(ii)</strong> $y = f(x - 4)$<br>*   <strong>(iii)</strong> $y = f(-x)$<br><br><strong>(b)</strong> Given that the curve $y = f(x)$ has an asymptote given by the equation $y = 1$, write down the equation of the asymptote of the curve under the transformation:<br>$$y + 3 = f(x)$$",
+        "steps": [
+            "<strong>Part (a)(i): Under the transformation $y = f(x) + 3$</strong><br><br>The transformation $+3$ outside the function represents a vertical translation upwards by $3$ units.<br><br>Apply this to the coordinates of $A(0, 2)$:<br>\\begin{aligned} (x, y) &\\to (x, y + 3) \\cr (0, 2) &\\to (0, 2 + 3) \\cr &\\to (0, 5) \\end{aligned}",
+            "<strong>Part (a)(ii): Under the transformation $y = f(x - 4)$</strong><br><br>The transformation $-4$ inside the function arguments represents a horizontal translation to the right by $4$ units.<br><br>Apply this to the coordinates of $A(0, 2)$:<br>\\begin{aligned} (x, y) &\\to (x + 4, y) \\cr (0, 2) &\\to (0 + 4, 2) \\cr &\\to (4, 2) \\end{aligned}",
+            "<strong>Part (a)(iii): Under the transformation $y = f(-x)$</strong><br><br>The negative sign inside the function arguments represents a reflection of the graph in the $y$-axis, which flips the sign of all $x$-coordinates.<br><br>Apply this to the coordinates of $A(0, 2)$:<br>\\begin{aligned} (x, y) &\\to (-x, y) \\cr (0, 2) &\\to (-0, 2) \\cr &\\to (0, 2) \\end{aligned}",
+            "<strong>Part (b): Finding the transformed asymptote</strong><br><br>Rearrange the given transformation equation $y + 3 = f(x)$ to express $y$ explicitly:<br>\\begin{aligned} y = f(x) - 3 \\end{aligned}<br><br>This represents a vertical translation downwards by $3$ units.<br><br>Apply this translation to the original horizontal asymptote equation $y = 1$:<br>\\begin{aligned} y &= 1 - 3 \\cr y &= -2 \\end{aligned}<br><br>Thus, the new horizontal asymptote is $y = -2$."
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> (i) $(0, 5)$, (ii) $(-4, 2)$, (iii) $(0, 2)$; <strong>(b)</strong> $y = 4$",
+                "feedback": "This option contains horizontal translation errors. For part (a)(ii), $y = f(x-4)$ translates the graph 4 units to the right, so the $x$-coordinate increases from $0$ to $+4$, not $-4$. For part (b), $y+3 = f(x) \\implies y = f(x)-3$ shifts the asymptote down to $y = 1 - 3 = -2$."
+            },
+            {
+                "ans": "<strong>(a)</strong> (i) $(3, 2)$, (ii) $(4, 2)$, (iii) $(0, -2)$; <strong>(b)</strong> $y = -2$",
+                "feedback": "This option confuses vertical and horizontal transformations. For part (a)(i), $y = f(x) + 3$ shifts the graph vertically, changing the $y$-coordinate of $A(0, 2)$ to $5$, not the $x$-coordinate."
+            },
+            {
+                "ans": "<strong>(a)</strong> (i) $(0, 5)$, (ii) $(4, 2)$, (iii) $(0, -2)$; <strong>(b)</strong> $y = -2$",
+                "feedback": "This error occurs in part (a)(iii). Reflecting the graph in the $y$-axis ($y = f(-x)$) changes the sign of the $x$-coordinate. Since $x = 0$, the coordinate remains $0$, so the point is $(0, 2)$, not $(0, -2)$ (which would be a reflection in the $x$-axis)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Inside vs. Outside Transformations",
+            "content": "Always remember the golden rule of graph transformations: operations **outside** the function (e.g., $f(x) + a$) affect the $y$-coordinates directly and behave intuitively. Operations **inside** the function (e.g., $f(x + b)$) affect the $x$-coordinates and behave counter-intuitively (opposite to the sign)."
+        }
+    },
+    {
+        "id": "004392",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Coordinate Geometry",
+        "subtopic": [
+            "Stretches and Reflections of Graph Coordinates"
+        ],
+        "img": false,
+        "question": "A curve has the equation $y = f(x)$. The point $A(2, -3)$ lies on the curve.<br><br>Write down the coordinates of the image of point $A$ under each of the following transformations:<br><br><strong>(a)</strong> $y = f(2x)$<br><br><strong>(b)</strong> $y = -f(x)$<br><br><strong>(c)</strong> $y = 3f(x + 1)$",
+        "steps": [
+            "<strong>Part (a): Under the transformation $y = f(2x)$</strong><br><br>A multiplier inside the function represents a horizontal stretch. Because it is inside, it behaves counter-intuitively: we stretch by a scale factor of $\\dfrac{ 1 }{ 2 }$, which divides all $x$-coordinates by $2$ while keeping $y$-coordinates unchanged:<br>\\begin{aligned} (x, y) &\\to \\left( \\dfrac{ x }{ 2 }, y \\right) \\cr (2, -3) &\\to \\left( \\dfrac{ 2 }{ 2 }, -3 \\right) \\cr &\\to (1, -3) \\end{aligned}",
+            "<strong>Part (b): Under the transformation $y = -f(x)$</strong><br><br>A negative sign outside the function represents a vertical reflection in the $x$-axis. This multiplies all $y$-coordinates by $-1$ while keeping $x$-coordinates unchanged:<br>\\begin{aligned} (x, y) &\\to (x, -y) \\cr (2, -3) &\\to (2, -(-3)) \\cr &\\to (2, 3) \\end{aligned}",
+            "<strong>Part (c): Under the transformation $y = 3f(x + 1)$</strong><br><br>This transformation combines two distinct shifts:<br>1. An addition of $+1$ inside ($f(x+1)$) is a horizontal translation left by $1$ unit ($x \\to x - 1$).<br>2. A multiplier of $3$ outside ($3f(x)$) is a vertical stretch by factor $3$ ($y \\to 3y$).<br><br>Apply both transformations to $A(2, -3)$:<br>\\begin{aligned} (x, y) &\\to (x - 1, 3y) \\cr (2, -3) &\\to (2 - 1, 3(-3)) \\cr &\\to (1, -9) \\end{aligned}"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $(4, -3)$, <strong>(b)</strong> $(-2, -3)$, <strong>(c)</strong> $(3, -9)$",
+                "feedback": "This option contains multiple standard scaling and translation errors. For part (a), $y = f(2x)$ compresses the graph horizontally by a factor of $\\dfrac{ 1 }{ 2 }$, meaning the $x$-coordinate is divided by 2 to become $1$, not multiplied to become $4$. For part (b), $y = -f(x)$ reflects the graph in the $x$-axis, changing the $y$-coordinate sign, not the $x$-coordinate."
+            },
+            {
+                "ans": "<strong>(a)</strong> $(1, -3)$, <strong>(b)</strong> $(2, 3)$, <strong>(c)</strong> $(1, -1)$",
+                "feedback": "This is a stretch multiplier error in part (c). Under $y = 3f(x+1)$, the $y$-coordinate is scaled by a factor of 3. Thus, the $y$-coordinate changes from $-3$ to $3 \\times (-3) = -9$, not $-1$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $(1, -3)$, <strong>(b)</strong> $(2, 3)$, <strong>(c)</strong> $(3, -9)$",
+                "feedback": "This is a horizontal translation sign error in part (c). The transformation $f(x+1)$ translates the graph to the left by 1 unit, meaning the $x$-coordinate decreases from $2$ to $1$, not increases to $3$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Sequence of Compound Transformations",
+            "content": "When dealing with multiple compound transformations, such as $y = af(bx + c) + d$, apply horizontal operations first (translations, then stretches) and then vertical operations (stretches, then translations). This systematic order ensures you never miscalculate the final coordinates."
+        }
+    },
+    {
+        "id": "004393",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Coordinate Geometry",
+        "subtopic": [
+            "Completing the Square and Vertex Transformations"
+        ],
+        "img": false,
+        "question": "A quadratic curve $C$ has the equation $y = x^2 - 4x + 7$.<br><br><strong>(a)</strong> By completing the square, write down the coordinates of the vertex of $C$.<br><br><strong>(b)</strong> Find the coordinates of the vertex of the curve after each of the following transformations:<br>*   <strong>(i)</strong> $y = f(x + 2) - 4$<br>*   <strong>(ii)</strong> $y = -f(2x)$",
+        "steps": [
+            "<strong>Part (a): Completing the square to find the vertex</strong><br><br>First, rewrite the quadratic equation in completed square form $(x - h)^2 + k$:<br>\\begin{aligned} y &= x^2 - 4x + 7 \\cr &= (x^2 - 4x + 4) - 4 + 7 \\cr &= (x - 2)^2 + 3 \\end{aligned}<br><br>The vertex (minimum point) of this parabola is $(2, 3)$. We define this function as $f(x) = (x-2)^2 + 3$.",
+            "<strong>Part (b)(i): Under the transformation $y = f(x + 2) - 4$</strong><br><br>This compound transformation shifts the graph:<br>1. Horizontal translation left by $2$ units ($x \\to x - 2$).<br>2. Vertical translation downwards by $4$ units ($y \\to y - 4$).<br><br>Apply these transformations to the vertex $(2, 3)$:<br>\\begin{aligned} (x, y) &\\to (x - 2, y - 4) \\cr (2, 3) &\\to (2 - 2, 3 - 4) \\cr &\\to (0, -1) \\end{aligned}<br><br>Alternatively, substituting algebraically yields $y = (x+2-2)^2 + 3 - 4 \\implies y = x^2 - 1$, which has its vertex at $(0, -1)$.",
+            "<strong>Part (b)(ii): Under the transformation $y = -f(2x)$</strong><br><br>This compound transformation shifts the graph:<br>1. Horizontal compression by factor $\\dfrac{ 1 }{ 2 }$ ($x \\to \\dfrac{ x }{ 2 }$).<br>2. Vertical reflection in the $x$-axis ($y \\to -y$).<br><br>Apply these transformations to the vertex $(2, 3)$:<br>\\begin{aligned} (x, y) &\\to \\left( \\dfrac{ x }{ 2 }, -y \\right) \\cr (2, 3) &\\to \\left( \\dfrac{ 2 }{ 2 }, -3 \\right) \\cr &\\to (1, -3) \\end{aligned}"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $(2, 3)$, <strong>(b)</strong> (i) $(0, -4)$, (ii) $(1, -3)$",
+                "feedback": "This is a common calculation slip in part (b)(i). Simplifying $y = f(x+2) - 4$ yields $y = (x+2-2)^2 + 3 - 4 \\implies y = x^2 - 1$. The vertex of $y = x^2 - 1$ is $(0, -1)$, not $(0, -4)$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $(-2, 3)$, <strong>(b)</strong> (i) $(0, -1)$, (ii) $(2, -3)$",
+                "feedback": "This is an error in completing the square for part (a). The quadratic $x^2 - 4x + 7$ completes to $(x-2)^2 + 3$, which gives a vertex of $(2, 3)$, not $(-2, 3)$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $(2, 3)$, <strong>(b)</strong> (i) $(0, -1)$, (ii) $(1, 3)$",
+                "feedback": "This is a sign error in the vertical reflection of part (b)(ii). The transformation $y = -f(2x)$ reflects the curve in the $x$-axis, so the $y$-coordinate of the vertex must change sign from $+3$ to $-3$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "Connecting Algebra and Geometry through Vertex Forms",
+            "content": "Completing the square exposes the vertex of a parabola directly. Since the completed square form $(x-h)^2 + k$ represents a horizontal shift of $+h$ and vertical shift of $+k$ from the parent graph $y=x^2$, tracking the vertex $(h, k)$ geometric properties is exactly equivalent to applying algebraic transformations."
+        }
+    },
+    {
+        "id": "004394",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Coordinate Geometry",
+        "subtopic": [
+            "Transformations on Trigonometric Graphs"
+        ],
+        "img": false,
+        "question": "The curve $C$ has the equation $y = \\cos x$ for $0^\circ \\le x \\le 360^\circ$. A local minimum of this curve occurs at the point $M(180^\circ, -1)$.<br><br>Find the coordinates of the corresponding local minimum point under the following transformations:<br><br><strong>(a)</strong> $y = 3\\cos x$<br><br><strong>(b)</strong> $y = \\cos(x - 30^\circ)$<br><br><strong>(c)</strong> $y = \\cos(2x) + 1$",
+        "steps": [
+            "<strong>Part (a): Under the transformation $y = 3\\cos x$</strong><br><br>A coefficient of $3$ outside the function represents a vertical stretch by factor $3$. This multiplies all $y$-coordinates by $3$ while keeping $x$-coordinates unchanged:<br>\\begin{aligned} (x, y) &\\to (x, 3y) \\cr (180^\\circ, -1) &\\to (180^\\circ, 3(-1)) \\cr &\\to (180^\\circ, -3) \\end{aligned}",
+            "<strong>Part (b): Under the transformation $y = \\cos(x - 30^\circ)$</strong><br><br>Subtracting $30^\circ$ inside the function represents a horizontal translation to the right by $30^\circ$. This adds $30^\circ$ to all $x$-coordinates while keeping $y$-coordinates unchanged:<br>\\begin{aligned} (x, y) &\\to (x + 30^\\circ, y) \\cr (180^\\circ, -1) &\\to (180^\\circ + 30^\\circ, -1) \\cr &\\to (210^\\circ, -1) \\end{aligned}",
+            "<strong>Part (c): Under the transformation $y = \\cos(2x) + 1$</strong><br><br>This compound transformation contains two shifts:<br>1. A multiplier of $2$ inside ($\\cos(2x)$) is a horizontal compression by factor $\\dfrac{ 1 }{ 2 }$ ($x \\to \\dfrac{ x }{ 2 }$).<br>2. An addition of $+1$ outside ($\\% + 1$) is a vertical translation up by $1$ unit ($y \\to y + 1$).<br><br>Apply both transformations to $M(180^\circ, -1)$:<br>\\begin{aligned} (x, y) &\\to \\left( \\dfrac{ x }{ 2 }, y + 1 \\right) \\cr (180^\\circ, -1) &\\to \\left( \\dfrac{ 180^\\circ }{ 2 }, -1 + 1 \\right) \\cr &\\to (90^\\circ, 0) \\end{aligned}"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $(540^\\circ, -1)$, <strong>(b)</strong> $(150^\\circ, -1)$, <strong>(c)</strong> $(90^\\circ, 1)$",
+                "feedback": "This option applies horizontal and vertical transformations incorrectly. For part (a), $y=3\\cos x$ scales the $y$-coordinates by a factor of 3, leaving the $x$-coordinates unchanged. For part (b), $\\cos(x - 30^\\circ)$ shifts the graph to the right by $30^\\circ$, increasing the $x$-coordinate to $210^\\circ$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $(180^\\circ, -3)$, <strong>(b)</strong> $(210^\\circ, -1)$, <strong>(c)</strong> $(360^\\circ, 0)$",
+                "feedback": "This error is in part (c). The transformation $y = \\cos(2x) + 1$ compresses the graph horizontally by a factor of $\\dfrac{ 1 }{ 2 }$, meaning the $x$-coordinate is divided by 2 ($180^\\circ \\div 2 = 90^\\circ$), not multiplied by 2."
+            },
+            {
+                "ans": "<strong>(a)</strong> $(180^\\circ, -3)$, <strong>(b)</strong> $(150^\\circ, -1)$, <strong>(c)</strong> $(90^\\circ, 0)$",
+                "feedback": "This is a horizontal shift sign error in part (b). The transformation $\\cos(x-30^\\circ)$ translates the graph to the right, so we add $30^\\circ$ to the $x$-coordinate ($180^\\circ + 30^\\circ = 210^\\circ$), rather than subtracting."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Period and Amplitude Transformations",
+            "content": "For trigonometric graphs of the form $y = a\\cos(bx)$, the constant $a$ changes the vertical amplitude (stretching the $y$-axis by $a$), and the constant $b$ changes the period (compressing the horizontal $x$-axis by $\\dfrac{ 1 }{ b }$). Recognizing these parameters makes transforming trigonometric coordinates straightforward."
+        }
+    },
+    {
+        "id": "004395",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Algebra and Functions",
+        "topic": "Coordinate Geometry",
+        "subtopic": [
+            "Determining Transformation Constants from Images"
+        ],
+        "img": false,
+        "question": "A curve has the equation $y = f(x)$. The curve has a local maximum at $P(3, 4)$.<br><br>For each of the following new maximum points, identify the values of the constants $a$ and $b$ for the given transformation function:<br><br><strong>(a)</strong> New maximum at $(3, 9)$ under the transformation $y = f(x) + a$.<br><br><strong>(b)</strong> New maximum at $(1, 4)$ under the transformation $y = f(x + b)$.<br><br><strong>(c)</strong> New maximum at $(6, 12)$ under the transformation $y = af(bx)$.",
+        "steps": [
+            "<strong>Part (a): Under the transformation $y = f(x) + a$</strong><br><br>Since the $x$-coordinate is unchanged ($3 \\to 3$), this is a pure vertical translation.<br><br>Equate the original and new $y$-coordinates to find $a$:<br>\\begin{aligned} 4 + a &= 9 \\cr a &= 5 \\end{aligned}",
+            "<strong>Part (b): Under the transformation $y = f(x + b)$</strong><br><br>Since the $y$-coordinate is unchanged ($4 \\to 4$), this is a pure horizontal translation.<br><br>The original maximum occurs when the input to $f$ is $3$. For the new maximum to occur at $x = 1$, the input $(x + b)$ must evaluate to $3$ when $x = 1$:<br>\\begin{aligned} 1 + b &= 3 \\cr b &= 2 \\end{aligned}<br><br>Thus, $b = 2$, which represents a shift left by $2$ units ($y = f(x + 2)$).",
+            "<strong>Part (c): Under the transformation $y = af(bx)$</strong><br><br>This transformation represents a vertical stretch by factor $a$ and a horizontal stretch by factor $\\dfrac{ 1 }{ b }$.<br><br>1. For the vertical stretch ($y$-coordinates):<br>\\begin{aligned} a \\times 4 &= 12 \\cr a &= 3 \\end{aligned}<br><br>2. For the horizontal stretch ($x$-coordinates): the input $bx$ must evaluate to $3$ when the new $x = 6$:<br>\\begin{aligned} b(6) &= 3 \\cr b &= \\dfrac{ 3 }{ 6 } \\cr b &= 0.5 \\text{ (or } \\dfrac{ 1 }{ 2 }\\text{)} \\end{aligned}<br><br>Thus, the constants are $a = 3$ and $b = 0.5$."
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $a = 5$, <strong>(b)</strong> $b = -2$, <strong>(c)</strong> $a = 3, b = 2$",
+                "feedback": "This option contains sign and scaling reciprocal errors. For part (b), shifting the maximum horizontally from $3$ to $1$ is a shift to the left, which corresponds to $f(x+2)$, so $b = 2$, not $-2$. For part (c), stretching the graph horizontally from $3$ to $6$ is a stretch of factor 2, which corresponds to $f(\\dfrac{ 1 }{ 2 }x)$, so $b = 0.5$, not $2$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $a = 9$, <strong>(b)</strong> $b = 2$, <strong>(c)</strong> $a = 3, b = 0.5$",
+                "feedback": "This error is in part (a). The vertical transformation $y = f(x) + a$ shifts the graph by $a$ units, meaning the new $y$-coordinate is $4 + a = 9 \\implies a = 5$, not $9$."
+            },
+            {
+                "ans": "<strong>(a)</strong> $a = 5$, <strong>(b)</strong> $b = 2$, <strong>(c)</strong> $a = 12, b = 2$",
+                "feedback": "This error is in part (c). Under $y = af(bx)$, the new vertical maximum is $4a = 12 \\implies a = 3$, and the new horizontal maximum is $\\dfrac{ 3 }{ b } = 6 \\implies b = 0.5$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Reverse-Engineering Graph Transformations",
+            "content": "To reverse-engineer a transformation from a coordinates shift, map the operations to their axes. For vertical operations, solve $a \\times y_{\\text{old}} + d = y_{\\text{new}}$. For horizontal operations, solve the input equation $b \\times x_{\\text{new}} + c = x_{\\text{old}}$."
+        }
     }
+
 
 
 
