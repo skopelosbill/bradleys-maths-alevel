@@ -1145,7 +1145,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$x = 2, y = -1, z = 3$",
-                "feedback": "These are the solutions to the original seed exam question. Ensure you solve this specific system of equations instead of recalling the template question's values."
+                "feedback": "This error typically arises if you make a sign error when rearranging the first equation (e.g., writing $y = 5 + 2x - z$ instead of $y = 5 - 2x + z$) and then carry this mistake through the rest of the elimination steps."
             },
             {
                 "ans": "$x = 1, y = 2, z = 1$",
@@ -1220,15 +1220,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                "ans": "$x = \\pounds 5, y = \\pounds 5, z = \\pounds 11$",
+                "ans": "Child: £$5$, Student: £$5$, Adult: £$11$",
                 "feedback": "This is a calculation error that typically occurs if you use early decimal rounding on fractions in intermediate steps or make an algebraic slip when combining the ticket cost equations."
             },
             {
-                "ans": "$x = \\pounds 4, y = \\pounds 6, z = \\pounds 8$",
+                "ans": "Child: £$4$, Student: £$6$, Adult: £$8$",
                 "feedback": "This is a substitution error when solving for the adult ticket price $z$. Substituting $x = 4$ into the third equation $3x + 2z = 32$ yields $12 + 2z = 32 \\implies 2z = 20 \\implies z = 10$, not $8$."
             },
             {
-                "ans": "$x = \\pounds 6, y = \\pounds 4, z = \\pounds 10$",
+                "ans": "Child: £$6$, Student: £$4$, Adult: £$10$",
                 "feedback": "This error occurs if you mix up the pricing variables $x$ (child tickets) and $y$ (student tickets) during the algebraic elimination process."
             }
         ],
@@ -1314,5 +1314,6 @@ window.ALEVEL_QUESTIONS = [
             "content": "When substituting expressions with negative values or subtracting simultaneous equations, always use parentheses: e.g., $17 - (-1) = 18$. Forgetting to distribute negative signs is the single most common cause of error in algebraic elimination."
         }
     }
+
 
 ];
