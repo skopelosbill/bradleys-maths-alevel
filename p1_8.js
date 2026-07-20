@@ -1529,7 +1529,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "caution",
             "title": "Inside vs. Outside Transformations",
-            "content": "Always remember the golden rule of graph transformations: operations **outside** the function (e.g., $f(x) + a$) affect the $y$-coordinates directly and behave intuitively. Operations **inside** the function (e.g., $f(x + b)$) affect the $x$-coordinates and behave counter-intuitively (opposite to the sign)."
+            "content": "Always remember the golden rule of graph transformations: operations <strong>outside</strong> the function (e.g., $f(x) + a$) affect the $y$-coordinates directly and behave intuitively. Operations <strong>outside</strong> the function (e.g., $f(x + b)$) affect the $x$-coordinates and behave counter-intuitively (opposite to the sign)."
         }
     },
     {
