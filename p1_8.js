@@ -1313,7 +1313,189 @@ window.ALEVEL_QUESTIONS = [
             "title": "Sign Distribution with Negative Values",
             "content": "When substituting expressions with negative values or subtracting simultaneous equations, always use parentheses: e.g., $17 - (-1) = 18$. Forgetting to distribute negative signs is the single most common cause of error in algebraic elimination."
         }
+    },
+    {
+        "id": "004386",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Vectors",
+        "topic": "Vectors in 2D",
+        "subtopic": [
+            "Magnitude and Direction of a Vector"
+        ],
+        "img": false,
+        "question": "The position vectors of the points $A$ and $B$ relative to an origin $O$ are given by:<br>$$\\vec{OA} = 3\\mathbf{ i } - 2\\mathbf{ j }$$<br>$$\\vec{OB} = 7\\mathbf{ i } + \\mathbf{ j }$$<br><br>Find:<br><br><strong>(a)</strong> the magnitude of the vector $\\vec{AB}$,<br><br><strong>(b)</strong> the angle $\\vec{AB}$ makes with the positive $x$-axis.",
+        "steps": [
+            "<strong>Part (a): Finding the magnitude of $\\vec{AB}$</strong><br><br>First, we find the vector $\\vec{AB}$ by subtracting the position vector of $A$ from the position vector of $B$:<br>\\begin{aligned} \\vec{AB} &= \\vec{OB} - \\vec{OA} \\cr &= (7\\mathbf{ i } + \\mathbf{ j }) - (3\\mathbf{ i } - 2\\mathbf{ j }) \\cr &= (7 - 3)\\mathbf{ i } + (1 - (-2))\\mathbf{ j } \\cr &= 4\\mathbf{ i } + 3\\mathbf{ j } \\end{aligned}",
+            "Next, calculate the magnitude of the vector $\\vec{AB}$ using Pythagoras' theorem:<br>\\begin{aligned} |\\vec{AB}| &= \\sqrt{ 4^2 + 3^2 } \\cr &= \\sqrt{ 16 + 9 } \\cr &= \\sqrt{ 25 } \\cr &= 5 \\end{aligned}<br><br>Thus, the magnitude of the vector $\\vec{AB}$ is $5$ units.",
+            "<strong>Part (b): Finding the angle with the positive $x$-axis</strong><br><br>The vector $\\vec{AB} = 4\\mathbf{ i } + 3\\mathbf{ j }$ lies in the first quadrant because both the $\\mathbf{ i }$ and $\\mathbf{ j }$ components are positive.<br><br>We find the angle $\\theta$ that the vector makes with the positive $x$-axis using trigonometry:<br>\\begin{aligned} \\tan\\theta &= \\dfrac{ 3 }{ 4 } \\cr \\theta &= \\tan^{-1}\\left( \\dfrac{ 3 }{ 4 } \\right) \\cr \\theta &\\approx 36.9^\\circ \\end{aligned}<br><br>Thus, the angle the vector makes with the positive $x$-axis is approximately $36.9^\\circ$."
+        ],
+        "pi_options": [
+            {
+                "ans": "Magnitude: $5$, Angle: $\\theta \\approx 53.1^\\circ$",
+                "feedback": "This error occurs if you calculate the angle using the $x$-component divided by the $y$-component, evaluating $\\tan\\theta = \\dfrac{ 4 }{ 3 }$ instead of $\\tan\\theta = \\dfrac{ y }{ x } = \\dfrac{ 3 }{ 4 }$."
+            },
+            {
+                "ans": "Magnitude: $\\sqrt{ 7 }$, Angle: $\\theta \\approx 36.9^\\circ$",
+                "feedback": "This is a calculation error in finding the magnitude. Remember to add the squares of the components under the square root ($4^2 + 3^2 = 25$), rather than subtracting them."
+            },
+            {
+                "ans": "Magnitude: $7$, Angle: $\\theta \\approx 36.9^\\circ$",
+                "feedback": "This is the result of adding the components directly ($4 + 3 = 7$) instead of using Pythagoras' theorem to find the magnitude ($|\\vec{AB}| = \\sqrt{ 4^2 + 3^2 } = 5$)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Right-Angled Triangle of a Vector",
+            "content": "A 2D vector $x\\mathbf{ i } + y\\mathbf{ j }$ can always be viewed as the hypotenuse of a right-angled triangle with a base of $x$ and a height of $y$. Finding the magnitude is simply applying Pythagoras ($r = \\sqrt{ x^2 + y^2 }$), and finding the direction angle $\\theta$ is simply applying trigonometry ($\\tan\\theta = \\dfrac{ y }{ x }$)."
+        }
+    },
+    {
+        "id": "004387",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Vectors",
+        "topic": "Vectors in 2D",
+        "subtopic": [
+            "Direction Angle in Different Quadrants"
+        ],
+        "img": false,
+        "question": "The position vectors of the points $A$ and $B$ relative to an origin $O$ are given by:<br>$$\\vec{OA} = 2\\mathbf{ i } + 5\\mathbf{ j }$$<br>$$\\vec{OB} = -2\\mathbf{ i } + 8\\mathbf{ j }$$<br><br>Find:<br><br><strong>(a)</strong> the magnitude of the vector $\\vec{AB}$,<br><br><strong>(b)</strong> the angle $\\vec{AB}$ makes with the positive $x$-axis, giving your answer to the nearest tenth of a degree.",
+        "steps": [
+            "<strong>Part (a): Finding the magnitude of $\\vec{AB}$</strong><br><br>First, find the vector $\\vec{AB}$:<br>\\begin{aligned} \\vec{AB} &= \\vec{OB} - \\vec{OA} \\cr &= (-2\\mathbf{ i } + 8\\mathbf{ j }) - (2\\mathbf{ i } + 5\\mathbf{ j }) \\cr &= (-2 - 2)\\mathbf{ i } + (8 - 5)\\mathbf{ j } \\cr &= -4\\mathbf{ i } + 3\\mathbf{ j } \\end{aligned}",
+            "Next, calculate the magnitude of the vector $\\vec{AB}$:<br>\\begin{aligned} |\\vec{AB}| &= \\sqrt{ (-4)^2 + 3^2 } \\cr &= \\sqrt{ 16 + 9 } \\cr &= \\sqrt{ 25 } \\cr &= 5 \\end{aligned}<br><br>Thus, the magnitude of the vector $\\vec{AB}$ is $5$ units.",
+            "<strong>Part (b): Finding the angle with the positive $x$-axis</strong><br><br>The vector $\\vec{AB} = -4\\mathbf{ i } + 3\\mathbf{ j }$ has a negative $\\mathbf{ i }$ component and a positive $\\mathbf{ j }$ component, which places it in the second quadrant.<br><br>First, calculate the acute base angle $\\alpha$ that the vector makes with the negative $x$-axis:<br>\\begin{aligned} \\tan\\alpha &= \\dfrac{ 3 }{ 4 } \\cr \\alpha &= \\tan^{-1}\\left( \\dfrac{ 3 }{ 4 } \\right) \\cr \\alpha &\\approx 36.87^\\circ \\end{aligned}",
+            "The angle $\\theta$ with the positive $x$-axis (measured counter-clockwise) is found by subtracting the acute base angle from $180^\\circ$:<br>\\begin{aligned} \\theta &= 180^\\circ - 36.87^\\circ \\cr \\theta &\\approx 143.13^\\circ \\end{aligned}<br><br>Rounding to the nearest tenth of a degree gives $\\theta \\approx 143.1^\\circ$."
+        ],
+        "pi_options": [
+            {
+                "ans": "Magnitude: $5$, Angle: $\\theta \\approx 36.9^\\circ$",
+                "feedback": "This is the acute base angle $\\alpha$ with the negative $x$-axis. Since the vector has a negative $x$-component and a positive $y$-component ($-4\\mathbf{ i } + 3\\mathbf{ j }$), it lies in the second quadrant. Therefore, the angle with the positive $x$-axis is $180^\\circ - 36.9^\\circ = 143.1^\\circ$."
+            },
+            {
+                "ans": "Magnitude: $5$, Angle: $\\theta \\approx 126.9^\\circ$",
+                "feedback": "This is a calculation error when working with the quadrant. The base angle is $\\alpha = 36.9^\\circ$. Subtracting this from $180^\\circ$ yields $143.1^\\circ$."
+            },
+            {
+                "ans": "Magnitude: $\\sqrt{ 7 }$, Angle: $\\theta \\approx 143.1^\\circ$",
+                "feedback": "This error occurs if you subtract the squares of the components under the square root when finding the magnitude. Always add them: $(-4)^2 + 3^2 = 16 + 9 = 25$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Direction Angles and Quadrants",
+            "content": "Be careful when finding the direction angle of a vector with a negative component. Since calculators only return the principal value of $\\tan^{-1}\\left( \\dfrac{ y }{ x } \\right)$ in the range $[-90^\\circ, 90^\\circ]$, you must sketch the vector to identify its quadrant and manually adjust the angle (e.g., subtracting the acute base angle from $180^\\circ$ for the second quadrant)."
+        }
+    },
+    {
+        "id": "004388",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Vectors",
+        "topic": "Vectors in 2D",
+        "subtopic": [
+            "Scalar Multiplication and Magnitude"
+        ],
+        "img": false,
+        "question": "Two vectors $\\vec{a}$ and $\\vec{b}$ are defined as:<br>$$\\vec{a} = 5\\mathbf{ i } - 2\\mathbf{ j }$$<br>$$\\vec{b} = -\\mathbf{ i } + 5\\mathbf{ j }$$<br><br>The vector $\\vec{c}$ is given by $\\vec{c} = \\vec{a} + 2\\vec{b}$.<br><br>Find:<br><br><strong>(a)</strong> the vector $\\vec{c}$ in the form $x\\mathbf{ i } + y\\mathbf{ j }$,<br><br><strong>(b)</strong> the magnitude of $\\vec{c}$, giving your answer correct to 3 significant figures,<br><br><strong>(c)</strong> the angle $\\vec{c}$ makes with the positive $x$-axis, to the nearest tenth of a degree.",
+        "steps": [
+            "<strong>Part (a): Finding the vector $\\vec{c}$</strong><br><br>First, multiply the vector $\\vec{b}$ by the scalar $2$:<br>\\begin{aligned} 2\\vec{b} &= 2(-\\mathbf{ i } + 5\\mathbf{ j }) \\cr &= -2\\mathbf{ i } + 10\\mathbf{ j } \\end{aligned}<br><br>Now, add this to vector $\\vec{a}$ to find $\\vec{c}$:<br>\\begin{aligned} \\vec{c} &= \\vec{a} + 2\\vec{b} \\cr &= (5\\mathbf{ i } - 2\\mathbf{ j }) + (-2\\mathbf{ i } + 10\\mathbf{ j }) \\cr &= (5 - 2)\\mathbf{ i } + (-2 + 10)\\mathbf{ j } \\cr &= 3\\mathbf{ i } + 8\\mathbf{ j } \\end{aligned}",
+            "<strong>Part (b): Finding the magnitude of $\\vec{c}$</strong><br><br>Calculate the magnitude using Pythagoras' theorem:<br>\\begin{aligned} |\\vec{c}| &= \\sqrt{ 3^2 + 8^2 } \\cr &= \\sqrt{ 9 + 64 } \\cr &= \\sqrt{ 73 } \\cr &\\approx 8.54400 \\end{aligned}<br><br>Rounding to 3 significant figures gives $|\\vec{c}| \\approx 8.54$ units.",
+            "<strong>Part (c): Finding the angle with the positive $x$-axis</strong><br><br>Since both components of $\\vec{c} = 3\\mathbf{ i } + 8\\mathbf{ j }$ are positive, the vector lies in the first quadrant.<br><br>Calculate the angle $\\theta$:<br>\\begin{aligned} \\tan\\theta &= \\dfrac{ 8 }{ 3 } \\cr \\theta &= \\tan^{-1}\\left( \\dfrac{ 8 }{ 3 } \\right) \\cr \\theta &\\approx 69.44^\\circ \\end{aligned}<br><br>Rounding to the nearest tenth of a degree gives $\\theta \\approx 69.4^\\circ$."
+        ],
+        "pi_options": [
+            {
+                "ans": "Vector: $3\\mathbf{ i } + 8\\mathbf{ j }$, Magnitude: $8.54$, Angle: $\\theta \\approx 20.6^\\circ$",
+                "feedback": "This error occurs if you calculate the angle as $\\tan\\theta = \\dfrac{ x }{ y } = \\dfrac{ 3 }{ 8 }$ instead of $\\tan\\theta = \\dfrac{ y }{ x } = \\dfrac{ 8 }{ 3 }$."
+            },
+            {
+                "ans": "Vector: $4\\mathbf{ i } + 3\\mathbf{ j }$, Magnitude: $5.00$, Angle: $\\theta \\approx 36.9^\\circ$",
+                "feedback": "This is the result of failing to distribute the scalar factor of 2 to both components of $\\vec{b}$, evaluating $\\vec{c} = (5\\mathbf{ i } - 2\\mathbf{ j }) + 2(-\\mathbf{ i }) + 5\\mathbf{ j }$ instead of $(5\\mathbf{ i } - 2\\mathbf{ j }) + (-2\\mathbf{ i } + 10\\mathbf{ j })$."
+            },
+            {
+                "ans": "Vector: $3\\mathbf{ i } + 8\\mathbf{ j }$, Magnitude: $11.0$, Angle: $\\theta \\approx 69.4^\\circ$",
+                "feedback": "This represents adding the components directly ($3 + 8 = 11$) to find the magnitude, rather than using Pythagoras' theorem ($|\\vec{c}| = \\sqrt{ 3^2 + 8^2 } = \\sqrt{ 73 } \\approx 8.54$)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Distributing Scalars in Vector Arithmetic",
+            "content": "When performing vector arithmetic with scalars, such as $\\vec{a} + 2\\vec{b}$, treat the vector components just like terms in algebraic brackets. Multiply both the $\\mathbf{ i }$ and $\\mathbf{ j }$ components of $\\vec{b}$ by $2$ before adding them to the corresponding components of $\\vec{a}$."
+        }
+    },
+    {
+        "id": "004389",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Vectors",
+        "topic": "Vectors in 2D",
+        "subtopic": [
+            "Position Vectors and Ratio Division"
+        ],
+        "img": false,
+        "question": "The position vectors of the points $P$ and $Q$ relative to an origin $O$ are:<br>$$\\vec{OP} = \\mathbf{ i } + 4\\mathbf{ j }$$<br>$$\\vec{OQ} = 9\\mathbf{ i } - 2\\mathbf{ j }$$<br><br>The point $R$ lies on the line segment $PQ$ such that $PR:RQ = 1:3$.<br><br><strong>(a)</strong> Find the vector $\\vec{PQ}$.<br><br><strong>(b)</strong> Calculate the magnitude of $\\vec{PQ}$.<br><br><strong>(c)</strong> Determine the position vector of the point $R$.",
+        "steps": [
+            "<strong>Part (a): Finding the vector $\\vec{PQ}$</strong><br><br>The vector $\\vec{PQ}$ is found by subtracting the position vector of the starting point $P$ from the position vector of the endpoint $Q$:<br>\\begin{aligned} \\vec{PQ} &= \\vec{OQ} - \\vec{OP} \\cr &= (9\\mathbf{ i } - 2\\mathbf{ j }) - (\\mathbf{ i } + 4\\mathbf{ j }) \\cr &= (9 - 1)\\mathbf{ i } + (-2 - 4)\\mathbf{ j } \\cr &= 8\\mathbf{ i } - 6\\mathbf{ j } \\end{aligned}",
+            "<strong>Part (b): Finding the magnitude of $\\vec{PQ}$</strong><br><br>Calculate the magnitude using Pythagoras' theorem:<br>\\begin{aligned} |\\vec{PQ}| &= \\sqrt{ 8^2 + (-6)^2 } \\cr &= \\sqrt{ 64 + 36 } \\cr &= \\sqrt{ 100 } \\cr &= 10 \\end{aligned}<br><br>Thus, the magnitude of $\\vec{PQ}$ is $10$ units.",
+            "<strong>Part (c): Finding the position vector of $R$</strong><br><br>The ratio $PR:RQ = 1:3$ means that the segment is split into $1 + 3 = 4$ equal parts, and point $R$ lies $\\dfrac{ 1 }{ 4 }$ of the way along the vector $\\vec{PQ}$ starting from point $P$:<br>\\begin{aligned} \\vec{OR} &= \\vec{OP} + \\dfrac{ 1 }{ 4 }\\vec{PQ} \\cr &= (\\mathbf{ i } + 4\\mathbf{ j }) + \\dfrac{ 1 }{ 4 }(8\\mathbf{ i } - 6\\mathbf{ j }) \\cr &= \\mathbf{ i } + 4\\mathbf{ j } + 2\\mathbf{ i } - 1.5\\mathbf{ j } \\cr &= 3\\mathbf{ i } + 2.5\\mathbf{ j } \\text{ (or } 3\\mathbf{ i } + \\dfrac{ 5 }{ 2 }\\mathbf{ j }\\text{)} \\end{aligned}"
+        ],
+        "pi_options": [
+            {
+                "ans": "Vector: $8\\mathbf{ i } - 6\\mathbf{ j }$, Magnitude: $10$, Position Vector of $R$: $5\\mathbf{ i } + \\mathbf{ j }$",
+                "feedback": "This is the midpoint of $PQ$, which would correspond to a ratio of $1:1$. For a ratio of $1:3$, the point $R$ lies $\\dfrac{ 1 }{ 4 }$ of the way along the vector $\\vec{PQ}$ starting from $P$."
+            },
+            {
+                "ans": "Vector: $8\\mathbf{ i } - 6\\mathbf{ j }$, Magnitude: $10$, Position Vector of $R$: $3\\mathbf{ i } - 2.5\\mathbf{ j }$",
+                "feedback": "This is a sign error in the $y$-component of $\\vec{OR}$. Calculating $4\\mathbf{ j } - 1.5\\mathbf{ j }$ yields $+2.5\\mathbf{ j }$, not $-2.5\\mathbf{ j }$."
+            },
+            {
+                "ans": "Vector: $10\\mathbf{ i } + 2\\mathbf{ j }$, Magnitude: $10.2$, Position Vector of $R$: $3.5\\mathbf{ i } + 4.5\\mathbf{ j }$",
+                "feedback": "This error occurs if you calculate the vector $\\vec{PQ}$ by adding the position vectors ($\\vec{OP} + \\vec{OQ}$) instead of subtracting them ($\\vec{OQ} - \\vec{OP}$)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "Understanding Ratio Division in Vectors",
+            "content": "If a point $R$ divides a line segment $PQ$ in the ratio $a:b$, then the fraction of the way $R$ lies along the segment from $P$ to $Q$ is $\\dfrac{ a }{ a + b }$. Therefore, the position vector is given by $\\vec{OR} = \\vec{OP} + \\dfrac{ a }{ a + b }\\vec{PQ}$."
+        }
+    },
+    {
+        "id": "004390",
+        "board": "CCEA",
+        "level": "AS",
+        "major_area": "Vectors",
+        "topic": "Vectors in 2D",
+        "subtopic": [
+            "Finding Unknown Constants from Magnitudes"
+        ],
+        "img": false,
+        "question": "The position vectors of points $A$ and $B$ relative to an origin $O$ are given by:<br>$$\\vec{OA} = 2\\mathbf{ i } - 3\\mathbf{ j }$$<br>$$\\vec{OB} = 5\\mathbf{ i } + k\\mathbf{ j }$$<br>where $k$ is a constant.<br><br>Given that the magnitude of the vector $\\vec{AB}$ is $5$ units:<br><br><strong>(a)</strong> Find the vector $\\vec{AB}$ in terms of $k$,<br><br><strong>(b)</strong> Find the two possible values of the constant $k$.",
+        "steps": [
+            "<strong>Part (a): Finding $\\vec{AB}$ in terms of $k$</strong><br><br>Find the vector $\\vec{AB}$ by subtracting position vectors:<br>\\begin{aligned} \\vec{AB} &= \\vec{OB} - \\vec{OA} \\cr &= (5\\mathbf{ i } + k\\mathbf{ j }) - (2\\mathbf{ i } - 3\\mathbf{ j }) \\cr &= (5 - 2)\\mathbf{ i } + (k - (-3))\\mathbf{ j } \\cr &= 3\\mathbf{ i } + (k + 3)\\mathbf{ j } \\end{aligned}",
+            "<strong>Part (b): Finding the two possible values of $k$</strong><br><br>We are given that the magnitude of $\\vec{AB}$ is $5$ units:<br>\\begin{aligned} |\\vec{AB}| &= \\sqrt{ 3^2 + (k + 3)^2 } = 5 \\end{aligned}<br><br>Square both sides of the equation:<br>\\begin{aligned} 3^2 + (k + 3)^2 &= 25 \\cr 9 + (k + 3)^2 &= 25 \\cr (k + 3)^2 &= 16 \\end{aligned}",
+            "Take the square root of both sides, keeping in mind both the positive and negative roots:<br>\\begin{aligned} k + 3 = \\pm 4 \\end{aligned}<br><br>This gives two possible linear equations to solve:<br>1. $k + 3 = 4 \\implies k = 1$<br>2. $k + 3 = -4 \\implies k = -7$<br><br>Thus, the two possible values of $k$ are $k = 1$ and $k = -7$."
+        ],
+        "pi_options": [
+            {
+                "ans": "$k = 1$",
+                "feedback": "This is only one of the possible values. When solving $(k + 3)^2 = 16$, taking the square of both sides yields two equations: $k + 3 = 4 \\implies k = 1$ and $k + 3 = -4 \\implies k = -7$."
+            },
+            {
+                "ans": "$k = 1$ or $k = -1$",
+                "feedback": "This is an error in solving the equation $(k + 3)^2 = 16$. Taking the square root of 16 gives $\\pm 4$, so we must solve $k + 3 = \\pm 4$, which does not yield $k = -1$."
+            },
+            {
+                "ans": "$k = 2$ or $k = -8$",
+                "feedback": "This is a calculation error. Ensure you correctly set up the magnitude equation as $3^2 + (k + 3)^2 = 25 \\implies (k + 3)^2 = 16$, which yields $k = 1$ and $k = -7$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Symmetry of Circle Intersections",
+            "content": "The equation $|\\vec{AB}| = 5$ represents a circle of radius $5$ centred at $A$. Since the $x$-coordinate of $B$ is fixed at $5$, the line $x = 5$ intersects this circle at exactly two points. This explains why we get two perfectly symmetric values for the vertical component $k$."
+        }
     }
+
 
 
 ];
