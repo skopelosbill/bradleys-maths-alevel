@@ -1163,7 +1163,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "004362",
+        "id": "004382",
         "board": "CCEA",
         "level": "AS",
         "major_area": "Algebra and Functions",
@@ -1201,7 +1201,7 @@ window.ALEVEL_QUESTIONS = [
         }
     },
     {
-        "id": "004363",
+        "id": "004383",
         "board": "CCEA",
         "level": "AS",
         "major_area": "Algebra and Functions",
