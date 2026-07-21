@@ -589,5 +589,195 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Three-Sided Fencing Rule",
         "content": "For any rectangular enclosure optimized against a wall (requiring only three sides of fencing), the maximum area is always achieved when the length parallel to the wall is exactly twice the width perpendicular to it ($y = 2x$). Since our width is $30$ m and length is $60$ m, this matches the rule perfectly! Memorising this can help you instantly cross-check your results."
     }
+},
+{
+    "id": "004416",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Factor Theorem",
+        "Cubic Equations"
+    ],
+    "img": false,
+    "question": "Solve the cubic equation:<br>$$2x^3 - 10x^2 + 11x + 3 = 0$$ [8]",
+    "steps": [
+        "<strong>Step 1: Test values using the Factor Theorem</strong><br>We must find an integer value of $x$ that satisfies the equation $2x^3 - 10x^2 + 11x + 3 = 0$. Test potential factors of the constant term $3$ (such as $\\pm 1, \\pm 3$):<br>Let $f(x) = 2x^3 - 10x^2 + 11x + 3$.<br>Test $x = 3$:<br>\\begin{aligned} f( 3 ) &= 2( 3 )^3 - 10( 3 )^2 + 11( 3 ) + 3 \\cr &= 2( 27 ) - 10( 9 ) + 33 + 3 \\cr &= 54 - 90 + 33 + 3 \\cr &= 0 \\end{aligned}<br>Since $f( 3 ) = 0$, the Factor Theorem states that $( x - 3 )$ is a factor of the polynomial.",
+        "<strong>Step 2: Perform polynomial division</strong><br>Divide the cubic polynomial by $( x - 3 )$ to find the remaining quadratic factor. You can use polynomial long division or synthetic division:<br>\\begin{aligned} 2x^3 - 10x^2 + 11x + 3 &= ( x - 3 )( 2x^2 - 4x - 1 ) \\end{aligned}",
+        "<strong>Step 3: Solve the remaining quadratic equation</strong><br>Set the quadratic factor equal to zero to find the other roots:<br>$$2x^2 - 4x - 1 = 0$$<br>Using the quadratic formula where $a=2$, $b=-4$, and $c=-1$:<br>\\begin{aligned} x &= \\dfrac{ -b \\pm \\sqrt{ b^2 - 4ac } }{ 2a } \\cr &= \\dfrac{ -( -4 ) \\pm \\sqrt{ ( -4 )^2 - 4( 2 )( -1 ) } }{ 2( 2 ) } \\cr &= \\dfrac{ 4 \\pm \\sqrt{ 16 + 8 } }{ 4 } \\cr &= \\dfrac{ 4 \\pm \\sqrt{ 24 } }{ 4 } \\cr &= \\dfrac{ 4 \\pm 2\\sqrt{ 6 } }{ 4 } \\cr &= \\dfrac{ 2 \\pm \\sqrt{ 6 } }{ 2 } \\cr \\end{aligned}",
+        "<strong>Step 4: State all solutions</strong><br>The complete set of solutions to the cubic equation is:<br>\\begin{aligned} x &= 3 \\cr x &= \\dfrac{ 2 + \\sqrt{ 6 } }{ 2 } \\cr x &= \\dfrac{ 2 - \\sqrt{ 6 } }{ 2 } \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$x = 3, \\quad x = \\dfrac{ 2 \\pm \\sqrt{ 2 } }{ 2 }$$",
+            "feedback": "You may have made an arithmetic error when calculating the discriminant under the square root. Check that you used $b^2 - 4ac = 16 - 4(2)(-1) = 16 + 8 = 24$, rather than mistakenly subtracting the 8 to get $16 - 8 = 8$."
+        },
+        {
+            "ans": "$$x = -3, \\quad x = \\dfrac{ 2 \\pm \\sqrt{ 6 } }{ 2 }$$",
+            "feedback": "You may have made a sign error when finding your initial linear factor. Since $f( 3 ) = 0$, your linear factor is $( x - 3 )$, which yields a root of $x = 3$ (not $x = -3$)."
+        },
+        {
+            "ans": "$$x = 3, \\quad x = \\dfrac{ 4 \\pm \\sqrt{ 6 } }{ 2 }$$",
+            "feedback": "You may have forgotten to divide the leading term '4' by the denominator when simplifying your fraction, leading to an incorrect cancellation of the common factor."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Selecting Candidates for the Factor Theorem",
+        "content": "When searching for your first root using the Factor Theorem, do not guess randomly! Any rational root of the polynomial $ax^3 + bx^2 + cx + d = 0$ must be a factor of the constant term $d$ divided by a factor of the leading coefficient $a$. For $2x^3 - 10x^2 + 11x + 3 = 0$, the only possible rational candidates are $\\pm 1, \\pm 3, \\pm \\frac{1}{2}, \\pm \\frac{3}{2}$. Testing these first will save you valuable exam time."
+    }
+},
+{
+    "id": "004417",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Factor Theorem",
+        "Cubic Equations"
+    ],
+    "img": false,
+    "question": "Solve the cubic equation:<br>$$3x^3 + 4x^2 - 6x - 4 = 0$$ [8]",
+    "steps": [
+        "<strong>Step 1: Test values using the Factor Theorem</strong><br>Let $f(x) = 3x^3 + 4x^2 - 6x - 4$. Test factors of the constant term $-4$ (such as $\\pm 1, \\pm 2, \\pm 4$):<br>Test $x = -2$:<br>\\begin{aligned} f( -2 ) &= 3( -2 )^3 + 4( -2 )^2 - 6( -2 ) - 4 \\cr &= 3( -8 ) + 4( 4 ) + 12 - 4 \\cr &= -24 + 16 + 12 - 4 \\cr &= 0 \\end{aligned}<br>Since $f( -2 ) = 0$, $( x + 2 )$ is a factor of the polynomial.",
+        "<strong>Step 2: Perform polynomial division</strong><br>Divide the cubic polynomial by $( x + 2 )$ to obtain the remaining quadratic factor:<br>\\begin{aligned} 3x^3 + 4x^2 - 6x - 4 &= ( x + 2 )( 3x^2 - 2x - 2 ) \\end{aligned}",
+        "<strong>Step 3: Solve the remaining quadratic equation</strong><br>Set the quadratic factor equal to zero:<br>$$3x^2 - 2x - 2 = 0$$<br>Apply the quadratic formula with $a=3$, $b=-2$, and $c=-2$:<br>\\begin{aligned} x &= \\dfrac{ -b \\pm \\sqrt{ b^2 - 4ac } }{ 2a } \\cr &= \\dfrac{ -( -2 ) \\pm \\sqrt{ ( -2 )^2 - 4( 3 )( -2 ) } }{ 2( 3 ) } \\cr &= \\dfrac{ 2 \\pm \\sqrt{ 4 + 24 } }{ 6 } \\cr &= \\dfrac{ 2 \\pm \\sqrt{ 28 } }{ 6 } \\cr &= \\dfrac{ 2 \\pm 2\\sqrt{ 7 } }{ 6 } \\cr &= \\dfrac{ 1 \\pm \\sqrt{ 7 } }{ 3 } \\cr \\end{aligned}",
+        "<strong>Step 4: State all solutions</strong><br>The complete solutions are:<br>\\begin{aligned} x &= -2 \\cr x &= \\dfrac{ 1 + \\sqrt{ 7 } }{ 3 } \\cr x &= \\dfrac{ 1 - \\sqrt{ 7 } }{ 3 } \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$x = 2, \\quad x = \\dfrac{ 1 \\pm \\sqrt{ 7 } }{ 3 }$$",
+            "feedback": "You may have made a sign error when finding your initial root. Since $f( -2 ) = 0$, your linear factor is $( x + 2 )$, which gives a root of $x = -2$ (not $x = 2$)."
+        },
+        {
+            "ans": "$$x = -2, \\quad x = \\dfrac{ 1 \\pm \\sqrt{ 5 } }{ 3 }$$",
+            "feedback": "You may have made an arithmetic slip in the quadratic formula's discriminant. Make sure you calculated $b^2 - 4ac = 4 - 4( 3 )( -2 ) = 4 + 24 = 28$, rather than subtracting to get $4 - 24$ (and taking its absolute value)."
+        },
+        {
+            "ans": "$$x = -2, \\quad x = \\dfrac{ 2 \\pm 2\\sqrt{ 7 } }{ 3 }$$",
+            "feedback": "You may have forgotten to divide both terms in the numerator by the denominator when simplifying your surd, leading to an incorrect cancellation of the factor of 2."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Double Check Your Factor Signs",
+        "content": "A very common mistake is confusing the root with the factor. If your root is $x = -2$, then the corresponding factor is $( x + 2 ) = 0$. If you mistakenly write the factor as $( x - 2 )$, your polynomial long division will produce a remainder and fail to resolve. Always perform a quick check: root $\\rightarrow c$, factor $\\rightarrow ( x - c )$."
+    }
+},
+{
+    "id": "004418",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Factor Theorem",
+        "Cubic Equations"
+    ],
+    "img": false,
+    "question": "Solve the cubic equation:<br>$$x^3 - 2x^2 - 5x + 6 = 0$$ [8]",
+    "steps": [
+        "<strong>Step 1: Test values using the Factor Theorem</strong><br>Let $f(x) = x^3 - 2x^2 - 5x + 6$. Test factors of the constant term $6$ (such as $\\pm 1, \\pm 2, \\pm 3, \\pm 6$):<br>Test $x = 1$:<br>\\begin{aligned} f( 1 ) &= ( 1 )^3 - 2( 1 )^2 - 5( 1 ) + 6 \\cr &= 1 - 2 - 5 + 6 \\cr &= 0 \\end{aligned}<br>Since $f( 1 ) = 0$, $( x - 1 )$ is a factor of the polynomial.",
+        "<strong>Step 2: Perform polynomial division</strong><br>Divide the cubic polynomial by $( x - 1 )$ to get the quadratic factor:<br>\\begin{aligned} x^3 - 2x^2 - 5x + 6 &= ( x - 1 )( x^2 - x - 6 ) \\end{aligned}",
+        "<strong>Step 3: Solve the remaining quadratic equation</strong><br>Set the quadratic factor equal to zero:<br>$$x^2 - x - 6 = 0$$<br>This quadratic expression factorises easily. Look for two numbers that multiply to $-6$ and add to $-1$ (which are $-3$ and $2$):<br>\\begin{aligned} ( x - 3 )( x + 2 ) &= 0 \\cr x = 3 \\quad \\text{or} \\quad x &= -2 \\cr \\end{aligned}",
+        "<strong>Step 4: State all solutions</strong><br>The complete set of solutions is:<br>$$x = 1, \\quad x = 3, \\quad x = -2$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$x = 1, \\quad x = -3, \\quad x = 2$$",
+            "feedback": "You may have made a sign error when factorising the quadratic expression $x^2 - x - 6$. It factorises into $( x - 3 )( x + 2 ) = 0$, which yields the roots $x = 3$ and $x = -2$ (not $x = -3$ and $x = 2$)."
+        },
+        {
+            "ans": "$$x = -1, \\quad x = 3, \\quad x = -2$$",
+            "feedback": "You may have made a sign error when interpreting the first root. Since $f( 1 ) = 0$, your root is $x = 1$ and your factor is $( x - 1 )$. Testing $x = -1$ yields $f( -1 ) = 8 \\neq 0$."
+        },
+        {
+            "ans": "$$x = 1, \\quad x = \\dfrac{ 1 \\pm \\sqrt{ 23 } }{ 2 }$$",
+            "feedback": "You may have made a sign mistake when applying the quadratic formula to $x^2 - x - 6 = 0$. Using $c = -6$ gives $b^2 - 4ac = 1 - 4( 1 )( -6 ) = 25$ (which is a perfect square). Make sure you did not calculate $1 - 24 = -23$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Spotting Perfect Square Discriminants",
+        "content": "If you apply the quadratic formula to a quadratic factor and get a discriminant that is a perfect square (such as $25$), it means the quadratic could have been solved much faster by factorisation! Keep an eye out for simple factors before jumping into the quadratic formula."
+    }
+},
+{
+    "id": "004419",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Factor Theorem",
+        "Cubic Equations"
+    ],
+    "img": false,
+    "question": "Solve the cubic equation:<br>$$2x^3 - 9x^2 + 6x - 1 = 0$$ [8]",
+    "steps": [
+        "<strong>Step 1: Test values using the Rational Root Theorem</strong><br>Let $f(x) = 2x^3 - 9x^2 + 6x - 1$. Test potential rational roots of the form $\\pm 1$ or $\\pm \\dfrac{1}{2}$:<br>Test $x = \\dfrac{1}{2}$:<br>\\begin{aligned} f\\left( \\dfrac{ 1 }{ 2 } \\right) &= 2\\left( \\dfrac{ 1 }{ 2 } \\right)^3 - 9\\left( \\dfrac{ 1 }{ 2 } \\right)^2 + 6\\left( \\dfrac{ 1 }{ 2 } \\right) - 1 \\cr &= 2\\left( \\dfrac{ 1 }{ 8 } \\right) - 9\\left( \\dfrac{ 1 }{ 4 } \\right) + 3 - 1 \\cr &= \\dfrac{ 1 }{ 4 } - \\dfrac{ 9 }{ 4 } + 2 \\cr &= -2 + 2 \\cr &= 0 \\end{aligned}<br>Since $f\\left( \\dfrac{1}{2} \\right) = 0$, $\\left( x - \\dfrac{1}{2} \\right)$—or equivalently $( 2x - 1 )$—is a factor of the polynomial.",
+        "<strong>Step 2: Perform polynomial division</strong><br>Divide the cubic polynomial by $\\left( x - \\dfrac{1}{2} \\right)$ to isolate the remaining quadratic factor:<br>\\begin{aligned} 2x^3 - 9x^2 + 6x - 1 &= \\left( x - \\dfrac{ 1 }{ 2 } \\right)( 2x^2 - 8x + 2 ) \\cr &= ( 2x - 1 )( x^2 - 4x + 1 ) \\end{aligned}",
+        "<strong>Step 3: Solve the remaining quadratic equation</strong><br>Set the quadratic factor equal to zero:<br>$$x^2 - 4x + 1 = 0$$<br>Using the quadratic formula with $a=1$, $b=-4$, and $c=1$:<br>\\begin{aligned} x &= \\dfrac{ -b \\pm \\sqrt{ b^2 - 4ac } }{ 2a } \\cr &= \\dfrac{ -( -4 ) \\pm \\sqrt{ ( -4 )^2 - 4( 1 )( 1 ) } }{ 2( 1 ) } \\cr &= \\dfrac{ 4 \\pm \\sqrt{ 16 - 4 } }{ 2 } \\cr &= \\dfrac{ 4 \\pm \\sqrt{ 12 } }{ 2 } \\cr &= \\dfrac{ 4 \\pm 2\\sqrt{ 3 } }{ 2 } \\cr &= 2 \\pm \\sqrt{ 3 } \\end{aligned}",
+        "<strong>Step 4: State all solutions</strong><br>The complete solutions to the cubic equation are:<br>\\begin{aligned} x &= \\dfrac{ 1 }{ 2 } \\cr x &= 2 + \\sqrt{ 3 } \\cr x &= 2 - \\sqrt{ 3 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$x = -\\dfrac{ 1 }{ 2 }, \\quad x = 2 \\pm \\sqrt{ 3 }$$",
+            "feedback": "You may have made a sign error when finding your linear factor. Since $f\\left( \\dfrac{1}{2} \\right) = 0$, your root is positive $x = \\dfrac{1}{2}$ and your factor is $( 2x - 1 )$ (not $2x + 1$)."
+        },
+        {
+            "ans": "$$x = \\dfrac{ 1 }{ 2 }, \\quad x = 2 \\pm \\sqrt{ 5 }$$",
+            "feedback": "You may have made an arithmetic slip in your quadratic formula's discriminant. Check that you calculated $b^2 - 4ac = 16 - 4( 1 )( 1 ) = 12$, rather than mistakenly adding the terms to get $16 + 4 = 20$."
+        },
+        {
+            "ans": "$$x = \\dfrac{ 1 }{ 2 }, \\quad x = 4 \\pm \\sqrt{ 3 }$$",
+            "feedback": "You may have made an error when simplifying your surd expression, forgetting to divide the leading term '4' by the denominator of 2."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Handling Fractional Factors",
+        "content": "If your initial root is a fraction like $x = \\frac{1}{2}$, write your factor as $( 2x - 1 )$ rather than $( x - \\frac{1}{2} )$. This keeps all the coefficients of your remaining quadratic factor as integers, making both your polynomial division and the subsequent quadratic formula calculations much simpler and less prone to fraction errors."
+    }
+},
+{
+    "id": "004420",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Factor Theorem",
+        "Cubic Equations"
+    ],
+    "img": false,
+    "question": "Solve the cubic equation:<br>$$2x^3 - 4x^2 - 3x + 3 = 0$$ [8]",
+    "steps": [
+        "<strong>Step 1: Test values using the Factor Theorem</strong><br>Let $f(x) = 2x^3 - 4x^2 - 3x + 3$. Test factors of the constant term $3$ (such as $\\pm 1, \\pm 3$):<br>Test $x = -1$:<br>\\begin{aligned} f( -1 ) &= 2( -1 )^3 - 4( -1 )^2 - 3( -1 ) + 3 \\cr &= 2( -1 ) - 4( 1 ) + 3 + 3 \\cr &= -2 - 4 + 3 + 3 \\cr &= 0 \\end{aligned}<br>Since $f( -1 ) = 0$, $( x + 1 )$ is a factor of the polynomial.",
+        "<strong>Step 2: Perform polynomial division</strong><br>Divide the cubic polynomial by $( x + 1 )$ to find the remaining quadratic factor:<br>\\begin{aligned} 2x^3 - 4x^2 - 3x + 3 &= ( x + 1 )( 2x^2 - 6x + 3 ) \\end{aligned}",
+        "<strong>Step 3: Solve the remaining quadratic equation</strong><br>Set the quadratic factor equal to zero:<br>$$2x^2 - 6x + 3 = 0$$<br>Using the quadratic formula with $a=2$, $b=-6$, and $c=3$:<br>\\begin{aligned} x &= \\dfrac{ -b \\pm \\sqrt{ b^2 - 4ac } }{ 2a } \\cr &= \\dfrac{ -( -6 ) \\pm \\sqrt{ ( -6 )^2 - 4( 2 )( 3 ) } }{ 2( 2 ) } \\cr &= \\dfrac{ 6 \\pm \\sqrt{ 36 - 24 } }{ 4 } \\cr &= \\dfrac{ 6 \\pm \\sqrt{ 12 } }{ 4 } \\cr &= \\dfrac{ 6 \\pm 2\\sqrt{ 3 } }{ 4 } \\cr &= \\dfrac{ 3 \\pm \\sqrt{ 3 } }{ 2 } \\cr \\end{aligned}",
+        "<strong>Step 4: State all solutions</strong><br>The complete solutions are:<br>\\begin{aligned} x &= -1 \\cr x &= \\dfrac{ 3 + \\sqrt{ 3 } }{ 2 } \\cr x &= \\dfrac{ 3 - \\sqrt{ 3 } }{ 2 } \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$x = 1, \\quad x = \\dfrac{ 3 \\pm \\sqrt{ 3 } }{ 2 }$$",
+            "feedback": "You may have made a sign error when finding your initial root. Since $f( -1 ) = 0$, your root is $x = -1$ (which corresponds to factor $x + 1$). Testing positive $x = 1$ yields $f( 1 ) = -2 \\neq 0$."
+        },
+        {
+            "ans": "$$x = -1, \\quad x = \\dfrac{ 3 \\pm \\sqrt{ 15 } }{ 2 }$$",
+            "feedback": "You may have made an arithmetic slip in your discriminant calculation under the square root. Check that you calculated $b^2 - 4ac = 36 - 4( 2 )( 3 ) = 36 - 24 = 12$, rather than mistakenly adding to get $36 + 24 = 60$."
+        },
+        {
+            "ans": "$$x = -1, \\quad x = \\dfrac{ 6 \\pm 2\\sqrt{ 3 } }{ 2 }$$",
+            "feedback": "You may have made an error when simplifying your surd expression, forgetting to divide the leading term '6' by the denominator when factorising out the 2."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Simplifying Quadratic Fractions",
+        "content": "When simplifying expressions like $\\frac{6 \\pm 2\\sqrt{3}}{4}$, do not cancel terms individually! First, factorise out the greatest common factor from the numerator: $2(3 \\pm \\sqrt{3})$. Then, divide both the numerator GCF and the denominator by 2 to yield $\\frac{3 \\pm \\sqrt{3}}{2}$. This prevents the extremely common error of only dividing one of the terms in the numerator."
+    }
 }
 ];
