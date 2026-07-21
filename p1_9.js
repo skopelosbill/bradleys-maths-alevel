@@ -1057,8 +1057,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Symmetry in Circle Proofs",
-        "content": "Note how this problem is geometrically identical to the twin, but reflected across the vertical axis. The projection of $OA$ onto $OS$ works exactly the same way as $OB$ onto $OS$. Recognizing geometric reflections can help you approach 'new' questions with instant confidence!"
-    }
+         "content": "When proving trigonometric relations on opposite sides of a circle, the horizontal orientation of your diameter does not change the core projection. Whether you are projecting $OA$ or $OB$ onto a radius $OS$, the projection length remains $r \\cos \\theta$. Recognizing that supplementary angles (like $\\angle AOS = \\theta$ and $\\angle BOS = 180^\\circ - \\theta$) share this symmetrical relationship allows you to solve coordinate geometry proofs with confidence, regardless of which side you are working on."   }
 },
 {
     "id": "004428",
