@@ -21,11 +21,11 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "$$k < 12 \\text{ or } k > -12, \\quad \\text{Centre: } (3, -4), \\quad \\text{Area: } 11\\pi$$",
-            "feedback": "This feedback shows a sign error when completing the square for the circle, leading to an incorrect centre and an incorrect radius squared ($r^2 = 11$ instead of $36$). Additionally, writing the inequality as two separate parts without a conjunction or with 'or' is logically incorrect for a 'no real roots' condition."
+            "feedback": "You have made a sign error when completing the square for the circle, leading to an incorrect centre and an incorrect radius squared ($r^2 = 11$ instead of $36$). Additionally, writing the inequality as two separate parts without a conjunction or with 'or' is logically incorrect for a 'no real roots' condition."
         },
         {
             "ans": "$$-12 \\le k \\le 12, \\quad \\text{Centre: } (-3, 4), \\quad \\text{Area: } 36\\pi$$",
-            "feedback": "This option uses weak inequalities ($\\le$) instead of strict inequalities ($<$). Since the question asks for 'no real roots', the discriminant must be strictly less than zero ($\\Delta < 0$). If $\\Delta = 0$, the equation has one repeated real root."
+            "feedback": "You have used weak inequalities ($\\le$) instead of strict inequalities ($<$). Since the question asks for 'no real roots', the discriminant must be strictly less than zero ($\\Delta < 0$). If $\\Delta = 0$, the equation has one repeated real root."
         },
         {
             "ans": "$$-12 < k < 12, \\quad \\text{Centre: } (-3, 4), \\quad \\text{Area: } 6\\pi$$",
@@ -59,7 +59,7 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "$$-8 < p < 8, \\quad x^2 + y^2 - 6x + 4y + 13 = 0$$",
-            "feedback": "This option contains two common errors: first, solving $p^2 - 64 > 0$ as a bounded interval $-8 < p < 8$ (which is the solution for $p^2 - 64 < 0$); second, forgetting to subtract the $r^2 = 25$ term from the constant sum of $13$ when expanding the circle equation."
+            "feedback": "You have two common errors: first, solving $p^2 - 64 > 0$ as a bounded interval $-8 < p < 8$ (which is the solution for $p^2 - 64 < 0$); second, forgetting to subtract the $r^2 = 25$ term from the constant sum of $13$ when expanding the circle equation."
         },
         {
             "ans": "$$p < -8 \\text{ or } p > 8, \\quad x^2 + y^2 + 6x - 4y - 12 = 0$$",
@@ -67,7 +67,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$p \\le -8 \\text{ or } p \\ge 8, \\quad x^2 + y^2 - 6x + 4y - 12 = 0$$",
-            "feedback": "This option uses non-strict inequalities ($\\le$ and $\\ge$). For two distinct real roots, the discriminant must be strictly greater than zero ($\\Delta > 0$). If $\\Delta = 0$, the roots are real but identical, not distinct."
+            "feedback": "You have used non-strict inequalities ($\\le$ and $\\ge$). For two distinct real roots, the discriminant must be strictly greater than zero ($\\Delta > 0$). If $\\Delta = 0$, the roots are real but identical, not distinct."
         }
     ],
     "bradley_insight": {
@@ -97,7 +97,7 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "$$m = 36, \\quad (9, 0) \\text{ and } (-1, 0)$$",
-            "feedback": "This option correctly solves part (b), but in part (a) it incorrectly equates $m^2 = 36$ directly to $m = 36$, forgetting to take the square root of $36$."
+            "feedback": "You have correctly solves part (b), but in part (a) you incorrectly equates $m^2 = 36$ directly to $m = 36$, forgetting to take the square root of $36$."
         },
         {
             "ans": "$$m = \\pm 6, \\quad (0, 9) \\text{ and } (0, -1)$$",
@@ -136,7 +136,7 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "$$m < 1 \\text{ or } m > 9, \\quad (x - 3)^2 + (y - 2)^2 = 100$$",
-            "feedback": "This option has two errors: first, it solves the discriminant inequality $(5-m)^2 < 16$ as outside values rather than a bounded interval; second, it uses the diameter squared ($100$) instead of the radius squared ($r^2 = 25$) in the circle's equation."
+            "feedback": "you made two errors: first, you solved the discriminant inequality $(5-m)^2 < 16$ as outside values rather than a bounded interval; second, you used the diameter squared ($100$) instead of the radius squared ($r^2 = 25$) in the circle's equation."
         },
         {
             "ans": "$$1 < m < 9, \\quad (x + 3)^2 + (y + 2)^2 = 25$$",
@@ -144,7 +144,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$1 \\le m \\le 9, \\quad (x - 3)^2 + (y - 2)^2 = 25$$",
-            "feedback": "This option uses non-strict inequalities ($\\le$ and $\\ge$). For the line and curve to have no points of intersection, they must not touch at all, meaning the discriminant must be strictly less than zero ($\\Delta < 0$). A discriminant of zero means they touch at exactly one point (tangent)."
+            "feedback": "You have used non-strict inequalities ($\\le$ and $\\ge$). For the line and curve to have no points of intersection, they must not touch at all, meaning the discriminant must be strictly less than zero ($\\Delta < 0$). A discriminant of zero means they touch at exactly one point (tangent)."
         }
     ],
     "bradley_insight": {
@@ -175,7 +175,7 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "$$\\Delta = (k-2)^2 - 8k, \\quad P(8, 4) \\text{ lies outside the circle because } 34 < 36$$",
-            "feedback": "This contains two errors: first, a sign error when calculating the discriminant ($-4 \\times 1 \\times -2k$ is $+8k$, not $-8k$); second, concluding that a distance less than the radius ($34 < 36$) means the point lies 'outside' the circle. If the distance to the point is smaller than the radius, it must be inside."
+            "feedback": "You have two errors: first, a sign error when calculating the discriminant ($-4 \\times 1 \\times -2k$ is $+8k$, not $-8k$); second, concluding that a distance less than the radius ($34 < 36$) means the point lies 'outside' the circle. If the distance to the point is smaller than the radius, it must be inside."
         },
         {
             "ans": "$$\\Delta = (k+2)^2, \\quad P(8, 4) \\text{ lies on the circle because the distance is close to 6}$$",
@@ -215,15 +215,15 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "$$k = 22^{ 2/3 }, \\quad \\theta = 0^\\circ, 120^\\circ, 240^\\circ$$",
-            "feedback": "This distractor arises if you forget to subtract the lower limit of integration (1) during step 2. This leads to the equation $2k^{3/2} = 14 \\implies k^{3/2} = 7 \\implies k = 7^{2/3}$."
+            "feedback": "This error arises if you forget to subtract the lower limit of integration (1) during step 2. This leads to the equation $2k^{3/2} = 14 \\implies k^{3/2} = 7 \\implies k = 7^{2/3}$."
         },
         {
             "ans": "$$k = 4, \\quad \\theta = 0^\\circ, 60^\\circ, 300^\\circ$$",
-            "feedback": "This option occurs if you resolved $\\cos \\theta = \\dfrac{1}{2}$ instead of $-\\dfrac{1}{2}$ during step 6, mistakenly placing your acute reference angle in quadrants I and IV instead of II and III where cosine is negative."
+            "feedback": "This error occurs because you resolved $\\cos \\theta = \\dfrac{1}{2}$ instead of $-\\dfrac{1}{2}$ during step 6, mistakenly placing your acute reference angle in quadrants I and IV instead of II and III where cosine is negative."
         },
         {
             "ans": "$$k = 5.29, \\quad \\theta = 0^\\circ, 120^\\circ, 240^\\circ$$",
-            "feedback": "This distractor occurs if you integrated $\\sqrt{x}$ incorrectly as $\\dfrac{2}{3}x^{1/2}$ or similar, leading to incorrect powers when solving for $k$."
+            "feedback": "You have integrated $\\sqrt{x}$ incorrectly as $\\dfrac{2}{3}x^{1/2}$ or similar, leading to incorrect powers when solving for $k$."
         }
     ],
     "bradley_insight": {
@@ -255,15 +255,15 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "$$k = 4, \\quad \\theta \\approx 19.5^\\circ, 90.0^\\circ, 340.5^\\circ$$",
-            "feedback": "This distractor has the second angle in the fourth quadrant ($340.5^\\circ$) instead of the second quadrant ($160.5^\\circ$). Because $\\sin \\theta = \\dfrac{1}{3}$ is positive, the solutions must lie in the first and second quadrants."
+            "feedback": "You have the second angle in the fourth quadrant ($340.5^\\circ$) instead of the second quadrant ($160.5^\\circ$). Because $\\sin \\theta = \\dfrac{1}{3}$ is positive, the solutions must lie in the first and second quadrants."
         },
         {
             "ans": "$$k = \\dfrac{ 4 }{ 7 }, \\quad \\theta \\approx 19.5^\\circ, 90.0^\\circ, 160.5^\\circ$$",
-            "feedback": "This option arises if you made a sign error during step 2 when applying the lower limit of integration, solving $-\\dfrac{4}{k} - 4 = 3 \\implies -\\dfrac{4}{k} = 7 \\implies k = -\\dfrac{4}{7}$ (and then dropping the negative sign)."
+            "feedback": "You made a sign error during step 2 when applying the lower limit of integration, solving $-\\dfrac{4}{k} - 4 = 3 \\implies -\\dfrac{4}{k} = 7 \\implies k = -\\dfrac{4}{7}$ (and then dropping the negative sign)."
         },
         {
             "ans": "$$k = 4, \\quad \\theta \\approx 30.0^\\circ, 90.0^\\circ, 150.0^\\circ$$",
-            "feedback": "This distractor uses the common exact values of $\\sin 30^\\circ = 0.5$ as a mistaken approximation for $\\sin \\theta = \\dfrac{1}{3}$. Be sure to use your calculator to find $\\sin^{-1}\\left(\\dfrac{1}{3}\\right)$ accurately."
+            "feedback": "You have used the common exact values of $\\sin 30^\\circ = 0.5$ as a mistaken approximation for $\\sin \\theta = \\dfrac{1}{3}$. Be sure to use your calculator to find $\\sin^{-1}\\left(\\dfrac{1}{3}\\right)$ accurately."
         }
     ],
     "bradley_insight": {
@@ -294,15 +294,15 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "$$k = 4 \\text{ or } k = -1, \\quad \\theta \\approx 53.1^\\circ, 126.9^\\circ$$",
-            "feedback": "This distractor contains two errors: first, it fails to discard the negative limit $k = -1$ despite the constraint $k > 0$; second, it places the second angle in quadrant II ($126.9^\\circ$) where tangent is negative, instead of quadrant III ($233.1^\\circ$)."
+            "feedback": "You have made two errors: first, you failed to discard the negative limit $k = -1$ despite the constraint $k > 0$; second, you placed the second angle in quadrant II ($126.9^\\circ$) where tangent is negative, instead of quadrant III ($233.1^\\circ$)."
         },
         {
             "ans": "$$k = 4, \\quad \\theta \\approx 36.9^\\circ, 216.9^\\circ$$",
-            "feedback": "This option is formed if you made a reciprocal error when rearranging the trigonometric identity in step 4, mistakenly setting $\\tan \\theta = \\dfrac{3}{4}$ instead of $\\dfrac{4}{3}$."
+            "feedback": "You made a reciprocal error when rearranging the trigonometric identity in step 4, mistakenly setting $\\tan \\theta = \\dfrac{3}{4}$ instead of $\\dfrac{4}{3}$."
         },
         {
             "ans": "$$k = 2, \\quad \\theta \\approx 53.1^\\circ, 233.1^\\circ$$",
-            "feedback": "This distractor arises from a factorization error when solving the quadratic $k^2 - 3k - 4 = 0$ in step 3, mistakenly solving it as $(k-2)(k-2)=0$ or similar."
+            "feedback": "You made a factorization error when solving the quadratic $k^2 - 3k - 4 = 0$ in step 3, mistakenly solving it as $(k-2)(k-2)=0$ or similar."
         }
     ],
     "bradley_insight": {
@@ -338,11 +338,11 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$\\text{Area} = \\dfrac{ 32 }{ 3 }, \\quad \\theta = 10^\\circ, 70^\\circ$$",
-            "feedback": "This distractor arises if you forgot to adjust the range for the substituted angle $\\phi$ in step 5, or if you made a subtraction error when converting $\\phi$ back to $\\theta$ (e.g., dividing by 2 before subtracting 40)."
+            "feedback": "You forgot to adjust the range for the substituted angle $\\phi$ in step 5, or you made a subtraction error when converting $\\phi$ back to $\\theta$ (e.g., dividing by 2 before subtracting 40)."
         },
         {
             "ans": "$$\\text{Area} = 8, \\quad \\theta = 40^\\circ, 100^\\circ$$",
-            "feedback": "This distractor occurs from an integration calculation error during step 3, such as integrating $-4x$ as $-4x$ instead of $-2x^2$, which leads to an incorrect value of $8$."
+            "feedback": "You made an integration calculation error during step 3, such as integrating $-4x$ as $-4x$ instead of $-2x^2$, which leads to an incorrect value of $8$."
         }
     ],
     "bradley_insight": {
@@ -373,21 +373,221 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "$$a = 1.5, \\quad \\theta \\approx 104.5^\\circ, 180.0^\\circ, 255.5^\\circ$$",
-            "feedback": "This distractor arises if you integrated $ax^{-1/2}$ incorrectly as $ax^{1/2}$ instead of $2ax^{1/2}$, forgetting to divide by the new fractional power of $\\dfrac{1}{2}$."
+            "feedback": "You integrated $ax^{-1/2}$ incorrectly as $ax^{1/2}$ instead of $2ax^{1/2}$, forgetting to divide by the new fractional power of $\\dfrac{1}{2}$."
         },
         {
             "ans": "$$a = 3, \\quad \\theta \\approx 75.5^\\circ, 180.0^\\circ, 284.5^\\circ$$",
-            "feedback": "This option is formed if you solved $\\cos \\theta = \\dfrac{1}{4}$ as a positive ratio, placing your solutions in quadrants I and IV instead of the correct quadrants II and III where cosine is negative."
+            "feedback": "You solved $\\cos \\theta = \\dfrac{1}{4}$ as a positive ratio, placing your solutions in quadrants I and IV instead of the correct quadrants II and III where cosine is negative."
         },
         {
             "ans": "$$a = 6, \\quad \\theta \\approx 104.5^\\circ, 180.0^\\circ, 255.5^\\circ$$",
-            "feedback": "This distractor occurs from a simple sign-algebra mistake during step 2, such as expanding $(16 + 4a) - (1 + 2a)$ as $15 + 1a = 21$ or adding terms incorrectly."
+            "feedback": "You made a simple sign-algebra mistake during step 2, such as expanding $(16 + 4a) - (1 + 2a)$ as $15 + 1a = 21$ or adding terms incorrectly."
         }
     ],
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Integrating Reciprocal Square Roots",
         "content": "A very common integration term is $\\dfrac{1}{\\sqrt{x}} = x^{-1/2}$. Integrating this yields $\\dfrac{x^{1/2}}{1/2} = 2\\sqrt{x}$. Memorising that $\\int \\dfrac{1}{\\sqrt{x}} \\, \\mathrm{d}x = 2\\sqrt{x}$ can save you valuable time and prevent division-by-fraction errors in your exam."
+    }
+},
+{
+    "id": "004411",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Optimization",
+    "subtopic": [
+        "Calculus Optimization",
+        "Volumes and Surface Areas of Cylinders"
+    ],
+    "img": false,
+    "question": "An open container in the shape of a cylinder has a base radius $r$ cm and height $h$ cm. The total surface area of the container is $108\\pi \\text{ cm}^2$.<br><br><strong>(a)</strong> Express $h$ in terms of $r$. [4]<br><br><strong>(b)</strong> Hence show that the volume of the container, $V\\text{ cm}^3$, can be expressed as:<br>$$V = 54\\pi r - \\dfrac{1}{2}\\pi r^3$$ [3]<br><br><strong>(c)</strong> Using calculus, find the values of $r$ and $h$ for which the volume of the container is a maximum. [6]",
+    "steps": [
+        "<strong>Step 1: Set up the surface area equation for part (a)</strong><br>The surface area of an open cylinder consists of the area of the circular base and the curved surface area. Setting this equal to $108\\pi$:<br>\\begin{aligned} \\pi r^2 + 2\\pi rh &= 108\\pi \\cr r^2 + 2rh &= 108 \\cr \\end{aligned}",
+        "<strong>Step 2: Express $h$ in terms of $r$</strong><br>Rearrange the surface area equation to isolate $h$:<br>\\begin{aligned} 2rh &= 108 - r^2 \\cr h &= \\dfrac{ 108 - r^2 }{ 2r } \\cr \\end{aligned}",
+        "<strong>Step 3: Substitute $h$ to find the volume in part (b)</strong><br>The volume $V$ of a cylinder is given by $V = \\pi r^2 h$. Substitute the expression for $h$ from Step 2 into the volume formula:<br>\\begin{aligned} V &= \\pi r^2 \\left( \\dfrac{ 108 - r^2 }{ 2r } \\right) \\cr V &= \\dfrac{ \\pi r ( 108 - r^2 ) }{ 2 } \\cr V &= 54\\pi r - \\dfrac{ 1 }{ 2 }\\pi r^3 \\cr \\end{aligned}",
+        "<strong>Step 4: Differentiate the volume function with respect to $r$ in part (c)</strong><br>To find the value of $r$ that maximises the volume, differentiate $V$ with respect to $r$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}V }{ \\mathrm{d}r } &= \\dfrac{ \\mathrm{d} }{ \\mathrm{d}r } \\left( 54\\pi r - \\dfrac{ 1 }{ 2 }\\pi r^3 \\right) \\cr &= 54\\pi - \\dfrac{ 3 }{ 2 }\\pi r^2 \\cr \\end{aligned}",
+        "<strong>Step 5: Set the derivative equal to zero to find stationary points</strong><br>Set $\\dfrac{ \\mathrm{d}V }{ \\mathrm{d}r } = 0$ to find the stationary values of $r$:<br>\\begin{aligned} 54\\pi - \\dfrac{ 3 }{ 2 }\\pi r^2 &= 0 \\cr 54 - \\dfrac{ 3 }{ 2 }r^2 &= 0 \\cr \\dfrac{ 3 }{ 2 }r^2 &= 54 \\cr r^2 &= 36 \\cr r &= 6 \\cr \\end{aligned}<br>Since $r$ is a physical radius, we discard $r = -6$ and keep $r = 6$ cm.",
+        "<strong>Step 6: Find the corresponding height $h$ and verify the maximum</strong><br>Substitute $r = 6$ back into the expression for $h$:<br>\\begin{aligned} h &= \\dfrac{ 108 - 6^2 }{ 2( 6 ) } \\cr h &= \\dfrac{ 72 }{ 12 } \\cr h &= 6 \\text{ cm} \\cr \\end{aligned}<br>To verify that this is a maximum, find the second derivative:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2V }{ \\mathrm{d}r^2 } &= -3\\pi r \\cr \\end{aligned}<br>Substituting $r = 6$ yields $-18\\pi < 0$, which confirms that the volume is indeed a maximum at $r = 6$ cm and $h = 6$ cm."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$r = 6\\text{ cm}, \\quad h = 3\\text{ cm}$$",
+            "feedback": "You made an error when calculating $h$ in Step 6, perhaps by forgetting the factor of 2 in the denominator of the expression $h = \\dfrac{108 - r^2}{2r}$."
+        },
+        {
+            "ans": "$$r = 12\\text{ cm}, \\quad h = -1.5\\text{ cm}$$",
+            "feedback": "You have made an algebraic error in Step 5 when solving $54 - \\dfrac{3}{2}r^2 = 0$. For instance, writing $\\dfrac{3}{2}r^2 = 54 \\implies 3r^2 = 108 \\implies r^2 = 144$ (mistakenly multiplying by 4) yields $r = 12$ and a physically impossible negative height."
+        },
+        {
+            "ans": "$$r = 6\\text{ cm}, \\quad h = 12\\text{ cm}$$",
+            "feedback": "You used the closed cylinder surface area formula $2\\pi r^2 + 2\\pi r h$ instead of the open cylinder formula $\\pi r^2 + 2\\pi r h$ in Step 1, which alters the relationship between $h$ and $r$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Open vs. Closed Containers",
+        "content": "Pay extremely close attention to whether a container is described as 'open' or 'closed'. An open cylinder has only one circular end (the base), so its total surface area is $\\pi r^2 + 2\\pi rh$. A closed cylinder has two circular ends (base and top), making its surface area $2\\pi r^2 + 2\\pi rh$. Using the wrong formula will carry a major penalty from the start."
+    }
+},
+{
+    "id": "004412",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Optimization",
+    "subtopic": [
+        "Calculus Optimization",
+        "Volumes and Surface Areas of Cylinders"
+    ],
+    "img": false,
+    "question": "A closed metal cylinder (with a circular top and bottom) has a base radius $r$ cm and height $h$ cm. The total surface area of the cylinder is $150\\pi \\text{ cm}^2$.<br><br><strong>(a)</strong> Express $h$ in terms of $r$. [4]<br><br><strong>(b)</strong> Hence show that the volume of the cylinder, $V\\text{ cm}^3$, is given by:<br>$$V = 75\\pi r - \\pi r^3$$ [3]<br><br><strong>(c)</strong> Using calculus, find the values of $r$ and $h$ for which the volume of the cylinder is a maximum. [6]",
+    "steps": [
+        "<strong>Step 1: Set up the surface area equation for part (a)</strong><br>Since the cylinder is closed, it has both a base and a top lid. Its total surface area is the sum of the curved surface area and the areas of both circular faces:<br>\\begin{aligned} 2\\pi r^2 + 2\\pi rh &= 150\\pi \\cr 2r^2 + 2rh &= 150 \\cr r^2 + rh &= 75 \\cr \\end{aligned}",
+        "<strong>Step 2: Express $h$ in terms of $r$</strong><br>Isolate $h$ in the simplified equation:<br>\\begin{aligned} rh &= 75 - r^2 \\cr h &= \\dfrac{ 75 - r^2 }{ r } \\cr \\end{aligned}",
+        "<strong>Step 3: Substitute $h$ into the volume formula for part (b)</strong><br>The volume $V$ of a cylinder is $V = \\pi r^2 h$. Substitute the expression for $h$:<br>\\begin{aligned} V &= \\pi r^2 \\left( \\dfrac{ 75 - r^2 }{ r } \\right) \\cr V &= \\pi r ( 75 - r^2 ) \\cr V &= 75\\pi r - \\pi r^3 \\cr \\end{aligned}",
+        "<strong>Step 4: Differentiate the volume function with respect to $r$ in part (c)</strong><br>To find the dimensions that maximise the volume, differentiate $V$ with respect to $r$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}V }{ \\mathrm{d}r } &= \\dfrac{ \\mathrm{d} }{ \\mathrm{d}r } ( 75\\pi r - \\pi r^3 ) \\cr &= 75\\pi - 3\\pi r^2 \\cr \\end{aligned}",
+        "<strong>Step 5: Set the derivative equal to zero to find stationary points</strong><br>Set $\\dfrac{ \\mathrm{d}V }{ \\mathrm{d}r } = 0$ and solve for $r$:<br>\\begin{aligned} 75\\pi - 3\\pi r^2 &= 0 \\cr 75 - 3r^2 &= 0 \\cr 3r^2 &= 75 \\cr r^2 &= 25 \\cr r &= 5 \\cr \\end{aligned}<br>Discard $r = -5$ because the radius must be positive. Thus, $r = 5$ cm.",
+        "<strong>Step 6: Find the height $h$ and verify the maximum</strong><br>Substitute $r = 5$ back into the height equation:<br>\\begin{aligned} h &= \\dfrac{ 75 - 5^2 }{ 5 } \\cr h &= \\dfrac{ 50 }{ 5 } \\cr h &= 10 \\text{ cm} \\cr \\end{aligned}<br>To verify that this point is a maximum, check the sign of the second derivative:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2V }{ \\mathrm{d}r^2 } &= -6\\pi r \\cr \\end{aligned}<br>At $r = 5$, this equals $-30\\pi < 0$, confirming a maximum. Thus, max volume is achieved at $r = 5$ cm and $h = 10$ cm."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$r = 5\\text{ cm}, \\quad h = 5\\text{ cm}$$",
+            "feedback": "You used the open cylinder formula $\\pi r^2 + 2\\pi rh$ in Step 1, which yields the incorrect relationship $h = \\dfrac{150 - r^2}{2r}$ and subsequently an incorrect height of 5 cm."
+        },
+        {
+            "ans": "$$r = 5\\text{ cm}, \\quad h = 20\\text{ cm}$$",
+            "feedback": "You made a sign error when rearranging the surface area equation, writing $rh = 75 + r^2$ in Step 2, leading to $h = 20$ cm instead of $10$ cm."
+        },
+        {
+            "ans": "$$r = 15\\text{ cm}, \\quad h = 10\\text{ cm}$$",
+            "feedback": "You made an arithmetic error in Step 5 when dividing 75 by 3, mistakenly writing $75/3 = 225$ instead of $25$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: The Golden Ratio of Cylinders",
+        "content": "For a closed cylinder of fixed surface area, the maximum volume is always achieved when the height is exactly equal to the diameter of the base ($h = 2r$). Since we calculated $r = 5$ and $h = 10$, this perfectly aligns with the ratio! Knowing this rule of thumb lets you instantly verify your answer during your exam."
+    }
+},
+{
+    "id": "004413",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Optimization",
+    "subtopic": [
+        "Calculus Optimization",
+        "Volumes and Surface Areas of Cuboids"
+    ],
+    "img": false,
+    "question": "An open-topped rectangular storage box is to be constructed with a square base of side length $x$ cm and height $y$ cm. The total surface area of the box is $432\\text{ cm}^2$.<br><br><strong>(a)</strong> Express $y$ in terms of $x$. [4]<br><br><strong>(b)</strong> Hence show that the volume of the box, $V\\text{ cm}^3$, can be expressed as:<br>$$V = 108x - \\dfrac{1}{4}x^3$$ [3]<br><br><strong>(c)</strong> Using calculus, find the values of $x$ and $y$ for which the volume of the box is a maximum. [6]",
+    "steps": [
+        "<strong>Step 1: Set up the surface area equation for part (a)</strong><br>An open-topped box with a square base has 1 square bottom of area $x^2$, and 4 vertical rectangular sides of area $xy$ each. Setting this total area equal to $432$:<br>\\begin{aligned} x^2 + 4xy &= 432 \\cr \\end{aligned}",
+        "<strong>Step 2: Express $y$ in terms of $x$</strong><br>Rearrange this equation to isolate the height $y$:<br>\\begin{aligned} 4xy &= 432 - x^2 \\cr y &= \\dfrac{ 432 - x^2 }{ 4x } \\cr \\end{aligned}",
+        "<strong>Step 3: Substitute $y$ into the volume formula for part (b)</strong><br>The volume $V$ of a cuboid is given by $\\text{base area} \\times \\text{height}$, which is $V = x^2 y$. Substitute the expression for $y$:<br>\\begin{aligned} V &= x^2 \\left( \\dfrac{ 432 - x^2 }{ 4x } \\right) \\cr V &= \\dfrac{ x( 432 - x^2 ) }{ 4 } \\cr V &= 108x - \\dfrac{ 1 }{ 4 }x^3 \\cr \\end{aligned}",
+        "<strong>Step 4: Differentiate the volume function with respect to $x$ in part (c)</strong><br>To find the values of $x$ and $y$ that maximise the volume, differentiate $V$ with respect to $x$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}V }{ \\mathrm{d}x } &= \\dfrac{ \\mathrm{d} }{ \\mathrm{d}x } \\left( 108x - \\dfrac{ 1 }{ 4 }x^3 \\right) \\cr &= 108 - \\dfrac{ 3 }{ 4 }x^2 \\cr \\end{aligned}",
+        "<strong>Step 5: Set the derivative equal to zero to find the stationary base length</strong><br>Set $\\dfrac{ \\mathrm{d}V }{ \\mathrm{d}x } = 0$ to locate the stationary point:<br>\\begin{aligned} 108 - \\dfrac{ 3 }{ 4 }x^2 &= 0 \\cr \\dfrac{ 3 }{ 4 }x^2 &= 108 \\cr 3x^2 &= 432 \\cr x^2 &= 144 \\cr x &= 12 \\cr \\end{aligned}<br>Since a physical length must be positive, we discard $x = -12$ to get $x = 12$ cm.",
+        "<strong>Step 6: Determine the height $y$ and verify the maximum</strong><br>Substitute $x = 12$ back into the expression for $y$:<br>\\begin{aligned} y &= \\dfrac{ 432 - 12^2 }{ 4( 12 ) } \\cr y &= \\dfrac{ 432 - 144 }{ 48 } \\cr y &= \\dfrac{ 288 }{ 48 } \\cr y &= 6 \\text{ cm} \\cr \\end{aligned}<br>To verify that this point yields a maximum volume, calculate the second derivative:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2V }{ \\mathrm{d}x^2 } &= -\\dfrac{ 3 }{ 2 }x \\cr \\end{aligned}<br>At $x = 12$, we have $-18 < 0$, which confirms that the volume is a maximum. Thus, maximum volume is achieved when $x = 12$ cm and $y = 6$ cm."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$x = 12\\text{ cm}, \\quad y = 12\\text{ cm}$$",
+            "feedback": "You used the closed box surface area formula $2x^2 + 4xy$ instead of the open-topped box formula $x^2 + 4xy$ in Step 1, which changes the relationship between $y$ and $x$."
+        },
+        {
+            "ans": "$$x = 6\\text{ cm}, \\quad y = 16.5\\text{ cm}$$",
+            "feedback": "You made a basic differentiation error in Step 4, differentiating $-\\dfrac{1}{4}x^3$ to get $-3x^2$ instead of $-\\dfrac{3}{4}x^2$."
+        },
+        {
+            "ans": "$$x = 12\\text{ cm}, \\quad y = 9\\text{ cm}$$",
+            "feedback": "You made a subtraction or division slip when calculating $y$ in Step 6, perhaps by forgetting to subtract $x^2$ from 432, or using $y = \\dfrac{432}{4x}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Base vs. Side Area Ratio",
+        "content": "For any open-topped box with a square base of side length $x$ and height $y$ that is optimized for maximum volume, the height is always exactly half of the base length ($y = 0.5x$). Since $12 \\times 0.5 = 6$, our results perfectly match this design ratio. Keeping this rule in mind acts as an immediate sanity check during exam conditions."
+    }
+},
+{
+    "id": "004414",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Optimization",
+    "subtopic": [
+        "Calculus Optimization",
+        "Volumes and Surface Areas of Cuboids"
+    ],
+    "img": false,
+    "question": "A closed rectangular packaging box has a square base of side length $x$ cm and height $y$ cm. The volume of the box is fixed at $216\\text{ cm}^3$.<br><br><strong>(a)</strong> Express $y$ in terms of $x$. [3]<br><br><strong>(b)</strong> Hence show that the total surface area of the box, $A\\text{ cm}^2$, can be expressed as:<br>$$A = 2x^2 + \\dfrac{864}{x}$$ [4]<br><br><strong>(c)</strong> Using calculus, find the minimum surface area of the box. [6]",
+    "steps": [
+        "<strong>Step 1: Set up the volume constraint for part (a)</strong><br>The volume of a closed box with a square base is given by $V = x^2 y$. Since the volume is fixed at $216$:<br>\\begin{aligned} x^2 y &= 216 \\cr y &= \\dfrac{ 216 }{ x^2 } \\cr \\end{aligned}",
+        "<strong>Step 2: Express the surface area in terms of $x$ for part (b)</strong><br>The total surface area $A$ of a closed rectangular box is the sum of the top and bottom areas ($2x^2$) and the four rectangular side faces ($4xy$):<br>\\begin{aligned} A &= 2x^2 + 4xy \\cr \\end{aligned}<br>Substitute $y = \\dfrac{ 216 }{ x^2 }$ into this formula:<br>\\begin{aligned} A &= 2x^2 + 4x\\left( \\dfrac{ 216 }{ x^2 } \\right) \\cr A &= 2x^2 + \\dfrac{ 864 }{ x } \\cr \\end{aligned}",
+        "<strong>Step 3: Differentiate the surface area function in part (c)</strong><br>To find the value of $x$ that minimises the surface area, write the function as $A = 2x^2 + 864x^{ -1 }$ and differentiate with respect to $x$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}A }{ \\mathrm{d}x } &= \\dfrac{ \\mathrm{d} }{ \\mathrm{d}x } ( 2x^2 + 864x^{ -1 } ) \\cr &= 4x - 864x^{ -2 } \\cr &= 4x - \\dfrac{ 864 }{ x^2 } \\cr \\end{aligned}",
+        "<strong>Step 4: Set the derivative to zero to find the optimal base length $x$</strong><br>Set $\\dfrac{ \\mathrm{d}A }{ \\mathrm{d}x } = 0$ to find the optimal base length $x$:<br>\\begin{aligned} 4x - \\dfrac{ 864 }{ x^2 } &= 0 \\cr 4x &= \\dfrac{ 864 }{ x^2 } \\cr 4x^3 &= 864 \\cr x^3 &= 216 \\cr x &= 6 \\cr \\end{aligned}<br>So the optimal base length is $x = 6$ cm.",
+        "<strong>Step 5: Verify that this stationary point represents a minimum</strong><br>Find the second derivative of the surface area function:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2A }{ \\mathrm{d}x^2 } &= 4 + 1728x^{ -3 } \\cr &= 4 + \\dfrac{ 1728 }{ x^3 } \\cr \\end{aligned}<br>Substituting $x = 6$ gives $4 + \\dfrac{1728}{216} = 4 + 8 = 12 > 0$. Since the second derivative is positive, this represents a local minimum.",
+        "<strong>Step 6: Calculate the minimum surface area of the box</strong><br>Substitute $x = 6$ back into the surface area equation to find $A_{\\min}$:<br>\\begin{aligned} A_{\\min} &= 2( 6 )^2 + \\dfrac{ 864 }{ 6 } \\cr &= 2( 36 ) + 144 \\cr &= 72 + 144 \\cr &= 216 \\text{ cm}^2 \\cr \\end{aligned}<br>The minimum surface area of the packaging box is $216 \\text{ cm}^2$ (achieved when $x = 6$ cm and $y = 6$ cm)."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$A_{\\min} = 144\\text{ cm}^2$$",
+            "feedback": "You used an open-topped box formula $A = x^2 + 4xy \\implies A = x^2 + \\dfrac{864}{x}$ in Step 2. This would lead to a different minimum area."
+        },
+        {
+            "ans": "$$A_{\\min} = 216\\text{ cm}^2, \\text{ with } x = 3\\text{ cm}$$",
+            "feedback": "You made an algebraic error when solving $4x^3 = 864$. For example, writing $x^3 = 108$ instead of $216$ would lead to a calculation breakdown."
+        },
+        {
+            "ans": "$$A_{\\min} = 180\\text{ cm}^2$$",
+            "feedback": "You found the correct value $x = 6$, but made an arithmetic slip in Step 6 when evaluating $A = 2(36) + \\dfrac{864}{6}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Cube Symmetry in Minimization",
+        "content": "For a closed rectangular box with a square base of side length $x$ and height $y$, the absolute minimum surface area for a fixed volume is always achieved when the box is a perfect cube ($x = y$). Since our calculations show $x = 6$ and $y = \\dfrac{216}{36} = 6$, our result represents a perfect cube, confirming the highest degree of geometric efficiency!"
+    }
+},
+{
+    "id": "004415",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Optimization",
+    "subtopic": [
+        "Calculus Optimization",
+        "2D Area Optimization"
+    ],
+    "img": false,
+    "question": "A rectangular sheep pen is to be constructed against a long, straight stone wall using exactly $120\\text{ m}$ of fencing wire for the remaining three sides. The pen has width $x\\text{ m}$ (perpendicular to the wall) and length $y\\text{ m}$ (parallel to the wall).<br><br><strong>(a)</strong> Express $y$ in terms of $x$. [3]<br><br><strong>(b)</strong> Hence show that the area of the pen, $A\\text{ m}^2$, is given by:<br>$$A = 120x - 2x^2$$ [3]<br><br><strong>(c)</strong> Using calculus, find the maximum possible area of the pen and the dimensions $x$ and $y$ that produce this maximum. [7]",
+    "steps": [
+        "<strong>Step 1: Set up the perimeter constraint for part (a)</strong><br>Since the stone wall forms one of the lengths of the rectangle, only three sides require fencing wire: two widths ($x$) and one length ($y$). Set the total length of fencing equal to $120$:<br>\\begin{aligned} 2x + y &= 120 \\cr \\end{aligned}",
+        "<strong>Step 2: Express $y$ in terms of $x$</strong><br>Isolate $y$ in the linear equation:<br>\\begin{aligned} y &= 120 - 2x \\cr \\end{aligned}",
+        "<strong>Step 3: Find the area formula for part (b)</strong><br>The area $A$ of a rectangle is given by $\\text{width} \\times \\text{length}$, which is $A = xy$. Substitute the expression for $y$ from Step 2 into the area equation:<br>\\begin{aligned} A &= x( 120 - 2x ) \\cr A &= 120x - 2x^2 \\cr \\end{aligned}",
+        "<strong>Step 4: Differentiate the area function with respect to $x$ in part (c)</strong><br>To find the maximum area, differentiate $A$ with respect to $x$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}A }{ \\mathrm{d}x } &= \\dfrac{ \\mathrm{d} }{ \\mathrm{d}x } ( 120x - 2x^2 ) \\cr &= 120 - 4x \\cr \\end{aligned}",
+        "<strong>Step 5: Locate the stationary point</strong><br>Set $\\dfrac{ \\mathrm{d}A }{ \\mathrm{d}x } = 0$ to find the width that produces a stationary area:<br>\\begin{aligned} 120 - 4x &= 0 \\cr 4x &= 120 \\cr x &= 30 \\cr \\end{aligned}<br>To verify that this yields a maximum area, find the second derivative:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2A }{ \\mathrm{d}x^2 } &= -4 \\cr \\end{aligned}<br>Since $-4 < 0$ for all values of $x$, this stationary point is confirmed to be a maximum.",
+        "<strong>Step 6: Find the corresponding dimensions and the maximum area</strong><br>Substitute $x = 30$ back into the linear expression for the length $y$:<br>\\begin{aligned} y &= 120 - 2( 30 ) \\cr &= 120 - 60 \\cr &= 60 \\text{ m} \\cr \\end{aligned}<br>Now calculate the maximum area $A_{\\max}$:<br>\\begin{aligned} A_{\\max} &= xy \\cr &= ( 30 )( 60 ) \\cr &= 1800 \\text{ m}^2 \\cr \\end{aligned}<br>The maximum area of the sheep pen is $1800 \\text{ m}^2$, with dimensions $x = 30$ m and $y = 60$ m."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$A_{\\max} = 1800\\text{ m}^2, \\text{ with } x = 30\\text{ m}, \\ y = 30\\text{ m}$$",
+            "feedback": "You assumed the optimal shape of any rectangular area must be a square ($x = y = 30$), which is only true if all four sides of the pen require fencing wire. Since one side is formed by a stone wall, the optimal length is actually twice the width."
+        },
+        {
+            "ans": "$$A_{\\max} = 900\\text{ m}^2, \\text{ with } x = 30\\text{ m}, \\ y = 30\\text{ m}$$",
+            "feedback": "You used the traditional four-sided perimeter constraint $2x + 2y = 120 \\implies y = 60 - x$, forgetting that the wall acts as one of the boundaries and requires no fencing."
+        },
+        {
+            "ans": "$$A_{\\max} = 1800\\text{ m}^2, \\text{ with } x = 40\\text{ m}, \\ y = 40\\text{ m}$$",
+            "feedback": "You made a differentiation slip in Step 4, such as differentiating $-2x^2$ to get $-3x$ or $-2x$ instead of $-4x$, leading to an incorrect stationary point."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Three-Sided Fencing Rule",
+        "content": "For any rectangular enclosure optimized against a wall (requiring only three sides of fencing), the maximum area is always achieved when the length parallel to the wall is exactly twice the width perpendicular to it ($y = 2x$). Since our width is $30$ m and length is $60$ m, this matches the rule perfectly! Memorising this can help you instantly cross-check your results."
     }
 }
 ];
