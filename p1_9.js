@@ -779,5 +779,205 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Simplifying Quadratic Fractions",
         "content": "When simplifying expressions like $\\frac{6 \\pm 2\\sqrt{3}}{4}$, do not cancel terms individually! First, factorise out the greatest common factor from the numerator: $2(3 \\pm \\sqrt{3})$. Then, divide both the numerator GCF and the denominator by 2 to yield $\\frac{3 \\pm \\sqrt{3}}{2}$. This prevents the extremely common error of only dividing one of the terms in the numerator."
     }
+},
+{
+    "id": "004421",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Coordinate Geometry",
+    "subtopic": [
+        "Perpendicular Lines",
+        "Midpoints",
+        "Quadratic Equations in Surd Form"
+    ],
+    "img": false,
+    "question": "The points $A$ and $B$ have coordinates $(3a, a^2)$ and $(2a + 2, 2a)$ respectively, where $a \\neq 0$ and $a \\neq 2$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $A$, cuts the $x$-axis at the point $P$. Find, in terms of $a$, the coordinates of the point $P$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ has equal $x$ and $y$ ordinates. Find the possible values of $a$ in their simplest surd form. [5]",
+    "steps": [
+        "<strong>Step 1: Find the gradient of the line segment $AB$</strong><br>The gradient $m_{ AB }$ is given by the gradient formula $m = \\dfrac{ y_B - y_A }{ x_B - x_A }$:<br>\\begin{aligned} m_{ AB } &= \\dfrac{ 2a - a^2 }{ ( 2a + 2 ) - 3a } \\cr &= \\dfrac{ 2a - a^2 }{ 2 - a } \\cr &= \\dfrac{ a( 2 - a ) }{ 2 - a } \\cr &= a \\end{aligned}<br>Since $a \\neq 2$, the denominator is non-zero, and the gradient simplifies beautifully to $a$.",
+        "<strong>Step 2: Determine the equation of the perpendicular line</strong><br>Since the required line is perpendicular to $AB$, its gradient is the negative reciprocal of $m_{ AB }$:<br>\\begin{aligned} m_{\\perp} &= -\\dfrac{ 1 }{ a } \\cr \\end{aligned}<br>The equation of the line passing through $A( 3a, a^2 )$ is:<br>\\begin{aligned} y - a^2 &= -\\dfrac{ 1 }{ a }( x - 3a ) \\cr \\end{aligned}",
+        "<strong>Step 3: Solve for the coordinates of $P$</strong><br>The line cuts the $x$-axis at $P$, so we set $y = 0$ to find the $x$-coordinate:<br>\\begin{aligned} 0 - a^2 &= -\\dfrac{ 1 }{ a }( x - 3a ) \\cr -a^2 &= -\\dfrac{ x - 3a }{ a } \\cr a^3 &= x - 3a \\cr x &= a^3 + 3a \\cr \\end{aligned}<br>Thus, the coordinates of the point $P$ are $( a^3 + 3a, 0 )$.",
+        "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br>The coordinates of the midpoint $M( x_M, y_M )$ are given by $M\\left( \\dfrac{ x_A + x_B }{ 2 }, \\dfrac{ y_A + y_B }{ 2 } \\right)$:<br>\\begin{aligned} M &= \\left( \\dfrac{ 3a + ( 2a + 2 ) }{ 2 }, \\dfrac{ a^2 + 2a }{ 2 } \\right) \\cr &= \\left( \\dfrac{ 5a + 2 }{ 2 }, \\dfrac{ a^2 + 2a }{ 2 } \\right) \\cr \\end{aligned}",
+        "<strong>Step 5: Set up and solve the quadratic equation</strong><br>Since the midpoint has equal $x$ and $y$ ordinates, set the $x$-coordinate equal to the $y$-coordinate:<br>\\begin{aligned} \\dfrac{ 5a + 2 }{ 2 } &= \\dfrac{ a^2 + 2a }{ 2 } \\cr 5a + 2 &= a^2 + 2a \\cr a^2 - 3a - 2 &= 0 \\cr \\end{aligned}<br>Solve this quadratic equation using the quadratic formula with $a=1$, $b=-3$, and $c=-2$:<br>\\begin{aligned} a &= \\dfrac{ -b \\pm \\sqrt{ b^2 - 4ac } }{ 2a } \\cr &= \\dfrac{ -( -3 ) \\pm \\sqrt{ ( -3 )^2 - 4( 1 )( -2 ) } }{ 2( 1 ) } \\cr &= \\dfrac{ 3 \\pm \\sqrt{ 9 + 8 } }{ 2 } \\cr &= \\dfrac{ 3 \\pm \\sqrt{ 17 } }{ 2 } \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$P( a^3 + 3a, 0 ), \\quad a = \\dfrac{ 3 \\pm \\sqrt{ 5 } }{ 2 }$$",
+            "feedback": "You may have made a sign error when calculating the discriminant in the quadratic formula. Check that you used $-4ac = -4( 1 )( -2 ) = +8$, which leads to $9 + 8 = 17$, rather than subtracting to get $9 - 8 = 1$."
+        },
+        {
+            "ans": "$$P( a^3 - 3a, 0 ), \\quad a = \\dfrac{ 3 \\pm \\sqrt{ 17 } }{ 2 }$$",
+            "feedback": "You may have made a sign error in Step 3 when rearranging $-a^2 = -\\dfrac{ x - 3 a }{ a }$. Multiplying both sides by $-a$ gives $a^3 = x - 3a$, which rearranges to $x = a^3 + 3a$ (not $a^3 - 3a$)."
+        },
+        {
+            "ans": "$$P( a^3 + 3a, 0 ), \\quad a = \\dfrac{ -3 \\pm \\sqrt{ 17 } }{ 2 }$$",
+            "feedback": "You may have made a sign error in the quadratic formula when substituting $-b$. Since $b = -3$, $-b$ must be $+3$ (not $-3$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Algebraic Simplification of Gradients",
+        "content": "When dealing with coordinates containing variables, always look for factorisation in your gradient calculations. Factoring out $a$ in $2a - a^2 = a( 2 - a )$ allowed us to cleanly cancel $( 2 - a )$. If you had not noticed this factorisation, your perpendicular line equation would have become algebraically unmanageable!"
+    }
+},
+{
+    "id": "004422",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Coordinate Geometry",
+    "subtopic": [
+        "Perpendicular Lines",
+        "Midpoints",
+        "Quadratic Equations in Surd Form"
+    ],
+    "img": false,
+    "question": "The points $A$ and $B$ have coordinates $(4a, a^2)$ and $(3a + 3, 3a)$ respectively, where $a \\neq 0$ and $a \\neq 3$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $B$, cuts the $y$-axis at the point $Q$. Find, in terms of $a$, the coordinates of the point $Q$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ has equal $x$ and $y$ ordinates. Find the possible values of $a$ in their simplest surd form. [5]",
+    "steps": [
+        "<strong>Step 1: Find the gradient of the line segment $AB$</strong><br>The gradient $m_{ AB }$ is given by the gradient formula $m = \\dfrac{ y_B - y_A }{ x_B - x_A }$:<br>\\begin{aligned} m_{ AB } &= \\dfrac{ 3a - a^2 }{ ( 3a + 3 ) - 4a } \\cr &= \\dfrac{ 3a - a^2 }{ 3 - a } \\cr &= \\dfrac{ a( 3 - a ) }{ 3 - a } \\cr &= a \\end{aligned}<br>Since $a \\neq 3$, the denominator is non-zero, and the gradient simplifies to $a$.",
+        "<strong>Step 2: Determine the equation of the perpendicular line</strong><br>Since the required line is perpendicular to $AB$, its gradient is the negative reciprocal of $m_{ AB }$:<br>\\begin{aligned} m_{\\perp} &= -\\dfrac{ 1 }{ a } \\cr \\end{aligned}<br>The equation of the line passing through $B( 3a + 3, 3a )$ is:<br>\\begin{aligned} y - 3a &= -\\dfrac{ 1 }{ a }( x - ( 3a + 3 ) ) \\cr \\end{aligned}",
+        "<strong>Step 3: Solve for the coordinates of $Q$</strong><br>The line cuts the $y$-axis at $Q$, so we set $x = 0$ to find the $y$-coordinate:<br>\\begin{aligned} y - 3a &= -\\dfrac{ 1 }{ a }( 0 - ( 3a + 3 ) ) \\cr y - 3a &= \\dfrac{ 3a + 3 }{ a } \\cr y &= 3a + \\dfrac{ 3a + 3 }{ a } \\cr y &= 3a + 3 + \\dfrac{ 3 }{ a } \\cr \\end{aligned}<br>Thus, the coordinates of the point $Q$ are $\\left( 0, 3a + 3 + \\dfrac{ 3 }{ a } \\right)$.",
+        "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br>The coordinates of the midpoint $M( x_M, y_M )$ are given by $M\\left( \\dfrac{ x_A + x_B }{ 2 }, \\dfrac{ y_A + y_B }{ 2 } \\right)$:<br>\\begin{aligned} M &= \\left( \\dfrac{ 4a + ( 3a + 3 ) }{ 2 }, \\dfrac{ a^2 + 3a }{ 2 } \\right) \\cr &= \\left( \\dfrac{ 7a + 3 }{ 2 }, \\dfrac{ a^2 + 3a }{ 2 } \\right) \\cr \\end{aligned}",
+        "<strong>Step 5: Set up and solve the quadratic equation</strong><br>Since the midpoint has equal $x$ and $y$ ordinates, set the $x$-coordinate equal to the $y$-coordinate:<br>\\begin{aligned} \\dfrac{ 7a + 3 }{ 2 } &= \\dfrac{ a^2 + 3a }{ 2 } \\cr 7a + 3 &= a^2 + 3a \\cr a^2 - 4a - 3 &= 0 \\cr \\end{aligned}<br>Solve this quadratic equation using the quadratic formula with $a=1$, $b=-4$, and $c=-3$:<br>\\begin{aligned} a &= \\dfrac{ -b \\pm \\sqrt{ b^2 - 4ac } }{ 2a } \\cr &= \\dfrac{ -( -4 ) \\pm \\sqrt{ ( -4 )^2 - 4( 1 )( -3 ) } }{ 2( 1 ) } \\cr &= \\dfrac{ 4 \\pm \\sqrt{ 16 + 12 } }{ 2 } \\cr &= \\dfrac{ 4 \\pm \\sqrt{ 28 } }{ 2 } \\cr &= \\dfrac{ 4 \\pm 2\\sqrt{ 7 } }{ 2 } \\cr &= 2 \\pm \\sqrt{ 7 } \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$Q\\left( 0, 3a + 3 + \\dfrac{ 3 }{ a } \\right), \\quad a = 2 \\pm \\sqrt{ 5 }$$",
+            "feedback": "You may have made an arithmetic sign error in Step 5 when calculating the discriminant, writing $-4ac = -4( 1 )( -3 ) = -12$ instead of $+12$, which leads to $\\sqrt{ 16 - 12 } = \\sqrt{ 4 } = 2$."
+        },
+        {
+            "ans": "$$Q\\left( 0, 3a - 3 - \\dfrac{ 3 }{ a } \\right), \\quad a = 2 \\pm \\sqrt{ 7 }$$",
+            "feedback": "You may have made a sign distribution error in Step 3 when simplifying the double negatives. Note that $-\\dfrac{1}{a}( 0 - ( 3a + 3 ) ) = +\\dfrac{ 3a + 3 }{ a }$."
+        },
+        {
+            "ans": "$$Q\\left( 0, 3a + 3 + \\dfrac{ 3 }{ a } \\right), \\quad a = -2 \\pm \\sqrt{ 7 }$$",
+            "feedback": "You may have made a sign error when substituting $-b$ in the quadratic formula. Since $b = -4$, your $-b$ term must be $+4$ (not $-4$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Expanding Brackets with Negative Signs",
+        "content": "In part (a), pay extremely close attention to the negative signs when setting up the perpendicular line. The term $x - ( 3a + 3 )$ has nested brackets. Distributing the negative gradient $-1/a$ across a negative bracket requires careful sign-tracking: the double negatives cancel to produce a clean, positive fraction $\\frac{3a + 3}{a}$. Work slowly on these steps to avoid dropping easy accuracy marks."
+    }
+},
+{
+    "id": "004423",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Coordinate Geometry",
+    "subtopic": [
+        "Perpendicular Lines",
+        "Midpoints",
+        "Rational Solutions"
+    ],
+    "img": false,
+    "question": "The points $A$ and $B$ have coordinates $(2a, 2a^2)$ and $(a + 1, 2a)$ respectively, where $a \\neq 0$ and $a \\neq 1$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $B$, cuts the $x$-axis at the point $P$. Find, in terms of $a$, the coordinates of the point $P$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ has equal $x$ and $y$ ordinates. Find the possible values of $a$. [5]",
+    "steps": [
+        "<strong>Step 1: Find the gradient of the line segment $AB$</strong><br>The gradient $m_{ AB }$ is calculated using the gradient formula:<br>\\begin{aligned} m_{ AB } &= \\dfrac{ 2a - 2a^2 }{ ( a + 1 ) - 2a } \\cr &= \\dfrac{ 2a( 1 - a ) }{ 1 - a } \\cr &= 2a \\end{aligned}<br>Since $a \\neq 1$, the denominator is non-zero, and the gradient simplifies beautifully to $2a$.",
+        "<strong>Step 2: Determine the equation of the perpendicular line</strong><br>Since the required line is perpendicular to $AB$, its gradient is the negative reciprocal of $2a$:<br>\\begin{aligned} m_{\\perp} &= -\\dfrac{ 1 }{ 2a } \\cr \\end{aligned}<br>The equation of the line passing through $B( a + 1, 2a )$ is:<br>\\begin{aligned} y - 2a &= -\\dfrac{ 1 }{ 2a }( x - ( a + 1 ) ) \\cr \\end{aligned}",
+        "<strong>Step 3: Solve for the coordinates of $P$</strong><br>The line cuts the $x$-axis at $P$, so we set $y = 0$ to find the $x$-coordinate:<br>\\begin{aligned} 0 - 2a &= -\\dfrac{ 1 }{ 2a }( x - a - 1 ) \\cr -2a &= -\\dfrac{ x - a - 1 }{ 2a } \\cr 4a^2 &= x - a - 1 \\cr x &= 4a^2 + a + 1 \\cr \\end{aligned}<br>Thus, the coordinates of the point $P$ are $( 4a^2 + a + 1, 0 )$.",
+        "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br>The coordinates of the midpoint $M$ are:<br>\\begin{aligned} M &= \\left( \\dfrac{ 2a + ( a + 1 ) }{ 2 }, \\dfrac{ 2a^2 + 2a }{ 2 } \\right) \\cr &= \\left( \\dfrac{ 3a + 1 }{ 2 }, a^2 + a \\right) \\cr \\end{aligned}",
+        "<strong>Step 5: Set up and solve the quadratic equation</strong><br>Since the midpoint has equal $x$ and $y$ ordinates, set the $x$-coordinate equal to the $y$-coordinate:<br>\\begin{aligned} \\dfrac{ 3a + 1 }{ 2 } &= a^2 + a \\cr 3a + 1 &= 2a^2 + 2a \\cr 2a^2 - a - 1 &= 0 \\cr \\end{aligned}<br>Solve this quadratic equation by factorisation:<br>\\begin{aligned} ( 2a + 1 )( a - 1 ) &= 0 \\cr a = -\\dfrac{ 1 }{ 2 } \\quad \\text{or} \\quad a &= 1 \\cr \\end{aligned}<br>Since the initial conditions of the problem specify that $a \\neq 1$, we must discard $a = 1$. This leaves the only valid solution as $a = -\\dfrac{ 1 }{ 2 }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$P( 4a^2 + a + 1, 0 ), \\quad a = 1 \\text{ or } a = -\\dfrac{ 1 }{ 2 }$$",
+            "feedback": "You did some excellent algebraic work, but you forgot to check the boundary constraints given in the question. Since the problem explicitly states $a \\neq 1$, you must discard the root $a = 1$."
+        },
+        {
+            "ans": "$$P( 4a^2 - a - 1, 0 ), \\quad a = -\\dfrac{ 1 }{ 2 }$$",
+            "feedback": "You may have made a sign error when solving the equation $-2a = -\\dfrac{ x - a - 1 }{ 2a }$. This should simplify to $4a^2 = x - a - 1$, which gives $x = 4a^2 + a + 1$ (not $4a^2 - a - 1$)."
+        },
+        {
+            "ans": "$$P( 4a^2 + a + 1, 0 ), \\quad a = \\dfrac{ 1 }{ 2 }$$",
+            "feedback": "You may have made a sign error when factorising the quadratic equation $2a^2 - a - 1 = 0$. It factorises to $( 2a + 1 )( a - 1 ) = 0$, which yields $a = -\\dfrac{1}{2}$ (not $+\\dfrac{1}{2}$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Discarding Invalid Roots From Constraints",
+        "content": "Always read the first sentence of a coordinate geometry question carefully! The condition $a \\neq 1$ is not just decorative; it is mathematically required because if $a = 1$, the gradient of $AB$ would have a zero in the denominator and be undefined. In part (b), we had to discard $a = 1$ to maintain mathematical consistency. Leaving it in would cost you accuracy marks."
+    }
+},
+{
+    "id": "004424",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Coordinate Geometry",
+    "subtopic": [
+        "Parallel Lines",
+        "Midpoints",
+        "Quadratic Equations in Surd Form"
+    ],
+    "img": false,
+    "question": "The points $A$ and $B$ have coordinates $(2a, a^2)$ and $(a + 1, a)$ respectively, where $a \\neq 0$ and $a \\neq 1$.<br><br><strong>(a)</strong> A straight line, parallel to $AB$ and passing through the origin $O(0,0)$, cuts the vertical line $x = a$ at the point $Q$. Find, in terms of $a$, the coordinates of the point $Q$. [6]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ lies on the line $y = 2x$. Find the possible values of $a$ in their simplest surd form. [7]",
+    "steps": [
+        "<strong>Step 1: Find the gradient of $AB$</strong><br>The gradient $m_{ AB }$ is given by the change in $y$ over change in $x$:<br>\\begin{aligned} m_{ AB } &= \\dfrac{ a - a^2 }{ ( a + 1 ) - 2a } \\cr &= \\dfrac{ a( 1 - a ) }{ 1 - a } \\cr &= a \\end{aligned}<br>Since $a \\neq 1$, the gradient simplifies nicely to $a$.",
+        "<strong>Step 2: Find the equation of the parallel line</strong><br>Since the required line is parallel to $AB$, its gradient is equal to $m_{ AB } = a$. The line passes through the origin $O( 0,0 )$, so its equation is simply:<br>\\begin{aligned} y &= ax \\cr \\end{aligned}",
+        "<strong>Step 3: Solve for the coordinates of $Q$</strong><br>The line cuts the vertical line $x = a$ at the point $Q$. Substitute $x = a$ into your line equation to find $y$:<br>\\begin{aligned} y &= a( a ) \\cr y &= a^2 \\cr \\end{aligned}<br>Thus, the coordinates of the point $Q$ are $( a, a^2 )$.",
+        "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br>The coordinates of the midpoint $M$ are calculated using the midpoint formula:<br>\\begin{aligned} M &= \\left( \\dfrac{ 2a + ( a + 1 ) }{ 2 }, \\dfrac{ a^2 + a }{ 2 } \\right) \\cr &= \\left( \\dfrac{ 3a + 1 }{ 2 }, \\dfrac{ a^2 + a }{ 2 } \\right) \\cr \\end{aligned}",
+        "<strong>Step 5: Set up and solve the equation under the line constraint</strong><br>Since the midpoint lies on $y = 2x$, substitute the coordinates of $M$ directly into this line equation:<br>\\begin{aligned} \\dfrac{ a^2 + a }{ 2 } &= 2\\left( \\dfrac{ 3a + 1 }{ 2 } \\right) \\cr a^2 + a &= 2( 3a + 1 ) \\cr a^2 + a &= 6a + 2 \\cr a^2 - 5a - 2 &= 0 \\cr \\end{aligned}<br>Solve this using the quadratic formula with $a=1$, $b=-5$, and $c=-2$:<br>\\begin{aligned} a &= \\dfrac{ -b \\pm \\sqrt{ b^2 - 4ac } }{ 2a } \\cr &= \\dfrac{ -( -5 ) \\pm \\sqrt{ ( -5 )^2 - 4( 1 )( -2 ) } }{ 2( 1 ) } \\cr &= \\dfrac{ 5 \\pm \\sqrt{ 25 + 8 } }{ 2 } \\cr &= \\dfrac{ 5 \\pm \\sqrt{ 33 } }{ 2 } \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$Q( a, a^2 ), \\quad a = \\dfrac{ 5 \\pm \\sqrt{ 17 } }{ 2 }$$",
+            "feedback": "You may have made an arithmetic sign error in Step 5 when calculating the discriminant, writing $-4ac = -4( 1 )( -2 ) = -8$ instead of $+8$, leading to $25 - 8 = 17$ instead of $25 + 8 = 33$."
+        },
+        {
+            "ans": "$$Q\\left( a, -\\dfrac{ 1 }{ a } \\right), \\quad a = \\dfrac{ 5 \\pm \\sqrt{ 33 } }{ 2 }$$",
+            "feedback": "You may have misread the question and assumed the line was perpendicular to $AB$ rather than parallel. Parallel lines share the exact same gradient, so $m = a$ (not $-1/a$)."
+        },
+        {
+            "ans": "$$Q( a, a^2 ), \\quad a = \\dfrac{ -5 \\pm \\sqrt{ 33 } }{ 2 }$$",
+            "feedback": "You may have made a sign error when substituting $-b$ in the quadratic formula. Since $b = -5$, $-b$ must be $+5$ (not $-5$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Parallel vs. Perpendicular Gradients",
+        "content": "Do not automatically assume coordinate geometry lines are perpendicular! This is a common habit because perpendicular lines are frequently tested. Read carefully: parallel lines have identical gradients $( m_1 = m_2 )$, whereas perpendicular lines have negative reciprocal gradients $( m_1 \\cdot m_2 = -1 )$. A simple misread here will change your entire algebra path."
+    }
+},
+{
+    "id": "004425",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Coordinate Geometry",
+    "subtopic": [
+        "Perpendicular Lines",
+        "Midpoints",
+        "Linear Constraints"
+    ],
+    "img": false,
+    "question": "The points $A$ and $B$ have coordinates $(2a, a^2)$ and $(a + 2, 2a)$ respectively, where $a \\neq 0$ and $a \\neq 2$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $B$, cuts the $y$-axis at the point $Q$. Find, in terms of $a$, the coordinates of the point $Q$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ lies on the line $y = x - 1$. Find the possible value of $a$. [5]",
+    "steps": [
+        "<strong>Step 1: Find the gradient of the line segment $AB$</strong><br>The gradient $m_{ AB }$ is:<br>\\begin{aligned} m_{ AB } &= \\dfrac{ 2a - a^2 }{ ( a + 2 ) - 2a } \\cr &= \\dfrac{ 2a - a^2 }{ 2 - a } \\cr &= \\dfrac{ a( 2 - a ) }{ 2 - a } \\cr &= a \\end{aligned}<br>Since $a \\neq 2$, the gradient simplifies beautifully to $a$.",
+        "<strong>Step 2: Determine the equation of the perpendicular line</strong><br>Since the required line is perpendicular to $AB$, its gradient is negative reciprocal of $m_{ AB }$:<br>\\begin{aligned} m_{\\perp} &= -\\dfrac{ 1 }{ a } \\cr \\end{aligned}<br>The equation of the line passing through $B( a + 2, 2a )$ is:<br>\\begin{aligned} y - 2a &= -\\dfrac{ 1 }{ a }( x - ( a + 2 ) ) \\cr \\end{aligned}",
+        "<strong>Step 3: Solve for the coordinates of $Q$</strong><br>The line cuts the $y$-axis at $Q$, so we set $x = 0$ to find the $y$-coordinate:<br>\\begin{aligned} y - 2a &= -\\dfrac{ 1 }{ a }( 0 - ( a + 2 ) ) \\cr y - 2a &= \\dfrac{ a + 2 }{ a } \\cr y &= 2a + \\dfrac{ a + 2 }{ a } \\cr \\end{aligned}<br>Thus, the coordinates of the point $Q$ are $\\left( 0, 2a + \\dfrac{ a + 2 }{ a } \\right)$.",
+        "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br>The coordinates of the midpoint $M$ are:<br>\\begin{aligned} M &= \\left( \\dfrac{ 2a + ( a + 2 ) }{ 2 }, \\dfrac{ a^2 + 2a }{ 2 } \\right) \\cr &= \\left( \\dfrac{ 3a + 2 }{ 2 }, \\dfrac{ a^2 + 2a }{ 2 } \\right) \\cr \\end{aligned}",
+        "<strong>Step 5: Set up and solve the equation under the line constraint</strong><br>Since the midpoint lies on $y = x - 1$, substitute the coordinates of $M$ directly into this line equation:<br>\\begin{aligned} \\dfrac{ a^2 + 2a }{ 2 } &= \\dfrac{ 3a + 2 }{ 2 } - 1 \\cr \\dfrac{ a^2 + 2a }{ 2 } &= \\dfrac{ 3a + 2 - 2 }{ 2 } \\cr \\dfrac{ a^2 + 2a }{ 2 } &= \\dfrac{ 3a }{ 2 } \\cr a^2 + 2a &= 3a \\cr a^2 - a &= 0 \\cr a( a - 1 ) &= 0 \\cr a = 0 \\quad \\text{or} \\quad a &= 1 \\cr \\end{aligned}<br>Since the initial conditions specify $a \\neq 0$, we discard $a = 0$. This leaves our only valid solution as $a = 1$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$Q\\left( 0, 2a + \\dfrac{ a + 2 }{ a } \\right), \\quad a = 0 \\text{ or } a = 1$$",
+            "feedback": "You successfully solved the algebra, but you forgot to check the boundary constraints stated at the very beginning of the question. Since $a \\neq 0$, you must discard $a = 0$ as an invalid solution."
+        },
+        {
+            "ans": "$$Q\\left( 0, 2a - \\dfrac{ a + 2 }{ a } \\right), \\quad a = 1$$",
+            "feedback": "You may have made a sign error in Step 3 when simplifying $-a - 2$. The term in the brackets is $( x - ( a + 2 ) )$. Substituting $x = 0$ gives $0 - ( a + 2 ) = -a - 2$. Multiplying by $-1/a$ yields $+\\dfrac{a+2}{a}$."
+        },
+        {
+            "ans": "$$Q\\left( 0, 2a + \\dfrac{ a + 2 }{ a } \\right), \\quad a = 5$$",
+            "feedback": "You may have made an algebraic slip when simplifying the line constraint equation in Step 5, perhaps by forgetting to subtract the constant 1 correctly after multiplying both sides by 2."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Checking Initial Conditions",
+        "content": "Always circle or highlight constraints like $a \\neq 0$ at the start of an exam question. It is very easy to solve a quadratic equation like $a( a - 1 ) = 0$, write down both roots, and lose an accuracy mark because you forgot to discard the boundary value. Be disciplined about checking your final answers against the initial conditions."
+    }
 }
 ];
