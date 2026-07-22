@@ -990,7 +990,7 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric Proofs",
         "Circle Theorems"
     ],
-    "img": "images/p1/004426.png",
+    "img": "images/Pure/004426.png",
     "question": "The diagram shows a circle with centre $O$ and radius $r$. $AB$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $B$ to $OS$. The acute angle $\\angle BOS$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> By applying the cosine rule to triangle $AOD$, show that:<br>$$AD^2 = r^2(1 + 3\\cos^2 \\theta)$$ [7]<br><br><strong>(b)</strong> When $BD$ bisects $OS$,<br>$$AD = r\\sqrt{\\dfrac{7}{k}}$$<br>Find the value of $k$, where $k$ is a positive integer. [5]",
     "steps": [
         "<strong>Step 1: Relate the length $OD = x$ to the radius and angle $\\theta$</strong><br>In triangle $BOS$, $BD$ is perpendicular to $OS$, making $OBD$ a right-angled triangle at $D$. The projection of $OB$ onto $OS$ gives:<br>\\begin{aligned} \\cos \\theta &= \\dfrac{ OD }{ OB } \\cr \\cos \\theta &= \\dfrac{ x }{ r } \\cr x &= r \\cos \\theta \\cr \\end{aligned}",
@@ -1030,7 +1030,7 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric Proofs",
         "Circle Theorems"
     ],
-    "img": "images/p1/004427.png",
+    "img": "images/Pure/004427.png",
     "question": "The diagram shows a circle with centre $O$ and radius $r$. $BA$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $A$ to $OS$. The angle $\\angle AOS$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> By applying the cosine rule to triangle $BOD$, show that:<br>$$BD^2 = r^2(1 + 3\\cos^2 \\theta)$$ [7]<br><br><strong>(b)</strong> When $AD$ bisects $OS$,<br>$$BD = r\\sqrt{\\dfrac{7}{k}}$$<br>Find the value of $k$, where $k$ is a positive integer. [5]",
     "steps": [
         "<strong>Step 1: Relate the length $OD = x$ to the radius and angle $\\theta$</strong><br>In right-angled triangle $ADO$, $D$ is the foot of the perpendicular from $A$ to $OS$, making $\\angle ADO = 90^\\circ$. The projection of $OA$ onto $OS$ gives:<br>\\begin{aligned} \\cos \\theta &= \\dfrac{ OD }{ OA } \\cr \\cos \\theta &= \\dfrac{ x }{ r } \\cr x &= r \\cos \\theta \\cr \\end{aligned}",
@@ -1069,7 +1069,7 @@ window.ALEVEL_QUESTIONS = [
         "Coordinate Proofs",
         "Trigonometric Proofs"
     ],
-    "img": "images/p1/004428.png",
+    "img": "images/Pure/004428.png",
     "question": "The diagram shows a circle with centre $O$ and radius $r$. $AB$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $S$ to $AB$. The acute angle $\\angle SOB$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> Show that the length $AS$ and length $AD$ satisfy:<br>$$AS^2 = 2r \\cdot AD$$ [6]<br><br><strong>(b)</strong> When $D$ is the midpoint of $OB$, find the exact value of $\\theta$ in degrees and express the length of $AS$ in terms of $r$. [6]",
     "steps": [
         "<strong>Step 1: Set up coordinates for part (a)</strong><br>For clarity, we place the circle on a Cartesian grid with centre $O$ at the origin $( 0,0 )$ and diameter $AB$ along the $x$-axis. This gives:<br>\\begin{aligned} A &= ( -r, 0 ) \\cr B &= ( r, 0 ) \\cr \\end{aligned}",
@@ -1109,7 +1109,7 @@ window.ALEVEL_QUESTIONS = [
         "Tangent Geometry",
         "Trigonometric Equations"
     ],
-    "img": "images/p1/004429.png",
+    "img": "images/Pure/004429.png",
     "question": "The diagram shows a circle with centre $O$ and radius $r$. $AOB$ is a diameter of the circle. $T$ lies on the circumference. The tangent to the circle at $T$ meets the extension of the diameter $AB$ at $P$. The acute angle $\\angle TOP$ is $\\theta$. $OA = OB = r$ and $OP = x$.<br><br><strong>(a)</strong> Show that the length of the tangent $TP$ satisfies:<br>$$TP^2 = r^2\\tan^2 \\theta$$ [5]<br><br><strong>(b)</strong> When the distance $BP$ is exactly equal to the radius $r$, find the exact value of $\\theta$ in degrees. [7]",
     "steps": [
         "<strong>Step 1: Set up the right-angled triangle relations for part (a)</strong><br>A fundamental circle theorem states that a tangent line is always perpendicular to the radius at the point of contact. Therefore, the radius $OT$ is perpendicular to the tangent $TP$, making $OTP$ a right-angled triangle with $\\angle OTP = 90^\\circ$.",
@@ -1147,7 +1147,7 @@ window.ALEVEL_QUESTIONS = [
         "Angle in a Semicircle",
         "Trigonometric Equations"
     ],
-    "img": "images/p1/004430.png",
+    "img": "images/Pure/004430.png",
     "question": "The diagram shows a sketch of a semicircle with diameter $AB$ and centre $O$. $C$ lies on the circumference of the semicircle. The angle $\\angle CAB$ is $\\theta$ and $OA = OB = r$.<br><br><strong>(a)</strong> By considering the right-angled triangle $ACB$ in the semicircle, show that:<br>$$BC^2 = 4r^2\\sin^2 \\theta$$ [5]<br><br><strong>(b)</strong> When $BC = r$, find the exact value of the angle $\\theta$ in degrees. [7]",
     "steps": [
         "<strong>Step 1: Apply the circle theorem for angles in a semicircle for part (a)</strong><br>A fundamental circle theorem states that the angle subtended by a diameter at any point on the circumference of a circle is a right angle ($90^\\circ$). Since $AB$ is a diameter, we have:<br>$$\\angle ACB = 90^\\circ$$",

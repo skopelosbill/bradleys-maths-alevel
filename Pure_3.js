@@ -226,7 +226,7 @@ window.ALEVEL_QUESTIONS = [
             "Newton-Raphson Method",
             "Radian Measure"
         ],
-        "img": "images/p1/004106.png",
+        "img": "images/Pure/004106.png",
         "question": "The diagram shows a sector of a circle $OAB$. $C$ is the midpoint of $OB$. Angle $AOB$ is $\\theta$ radians.<br><br>(a) Given that the area of the triangle $OAC$ is equal to one-third of the area of the sector $OAB$, show that $\\theta = 1.5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = \\pi$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.49579$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
             "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the sector $OAB$ is: $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
@@ -270,7 +270,7 @@ window.ALEVEL_QUESTIONS = [
             "Newton-Raphson Method",
             "Radian Measure"
         ],
-        "img": "images/p1/004107.png",
+        "img": "images/Pure/004107.png",
         "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A chord $AB$ divides the sector into a segment and a triangle $OAB$.<br><br>(a) Given that the area of the segment is equal to one-third of the area of the triangle $OAB$, show that $4\\sin\\theta = 3\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 1.5$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.27570$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
             "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the triangle $OAB$ is: $$\\text{Area of triangle } OAB = \\dfrac{1}{2}r^2\\sin\\theta$$",
@@ -315,7 +315,7 @@ window.ALEVEL_QUESTIONS = [
             "Newton-Raphson Method",
             "Radian Measure"
         ],
-        "img": "images/p1/004108.png",
+        "img": "images/Pure/004108.png",
         "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A line is drawn from $A$ perpendicular to $OB$, meeting $OB$ at $C$ to form a right-angled triangle $OAC$.<br><br>(a) Given that the area of the right-angled triangle $OAC$ is equal to three-tenths of the area of the sector $OAB$, show that $5\\sin(2\\theta) = 3\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 1.0$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.17243$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
             "First, state the formulas for the areas in terms of $r$ and $\\theta$. In the right-angled triangle $OAC$, the sides are $OC = r\\cos\\theta$ and $AC = r\\sin\\theta$. The area of this triangle is: $$\\text{Area of triangle } OAC = \\dfrac{1}{2}r^2\\sin\\theta\\cos\\theta = \\dfrac{1}{4}r^2\\sin(2\\theta)$$",
@@ -358,7 +358,7 @@ window.ALEVEL_QUESTIONS = [
             "Newton-Raphson Method",
             "Radian Measure"
         ],
-        "img": "images/p1/004109.png",
+        "img": "images/Pure/004109.png",
         "question": "The diagram shows two concentric sectors of circles $OAB$ and $OCD$ sharing the same angle $\\theta$ radians. The larger sector $OAB$ has radius $r$, and the smaller sector $OCD$ has radius $R = 0.6r$.<br><br>(a) Given that the area of the smaller sector $OCD$ is equal to $\\frac{9}{25}$ of the area of the triangle $OAB$ formed inside the larger sector, show that $2\\theta = 5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 2.5$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 2.12463$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
             "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the triangle $OAB$ inside the larger sector is: $$\\text{Area of triangle } OAB = \\dfrac{1}{2}r^2\\sin\\theta$$",
@@ -401,7 +401,7 @@ window.ALEVEL_QUESTIONS = [
             "Newton-Raphson Method",
             "Radian Measure"
         ],
-        "img": "images/p1/004110.png",
+        "img": "images/Pure/004110.png",
         "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A point $C$ lies on $OB$ such that $OC = \\frac{1}{3}r$.<br><br>(a) Given that the area of the triangle $OAC$ is equal to one-fifth of the area of the sector $OAB$, show that $3\\theta = 5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 2.0$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.65215$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
         "steps": [
             "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the sector $OAB$ is: $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
@@ -1349,7 +1349,7 @@ window.ALEVEL_QUESTIONS = [
             "Modelling",
             "Coordinate Geometry"
         ],
-        "img": "images/p1/004131.png",
+        "img": "images/Pure/004131.png",
         "question": "A company is designing a logo. The logo is a circle of radius $6\\text{ inches}$ with an inscribed rectangle. The rectangle must be as large as possible. The company models the logo on an $x$-$y$ coordinate plane with the circle centred at the origin.<br><br>Use calculus to find the maximum area of the rectangle, in square inches. Fully justify your answer.",
         "steps": [
             "Let the circle be centred at the origin $(0,0)$. Since the radius is $6$, the equation of the circle is:<br>$$x^2 + y^2 = 36$$",
@@ -1391,7 +1391,7 @@ window.ALEVEL_QUESTIONS = [
             "Modelling",
             "Coordinate Geometry"
         ],
-        "img": "images/p1/004132.png",
+        "img": "images/Pure/004132.png",
         "question": "A window designer is creating a rectangular window pane inscribed inside a semicircular archway of radius $4\\text{ m}$. The base of the window lies along the diameter of the semicircle, and the upper two vertices touch the curved boundary.<br><br>The archway is modelled on a coordinate grid as the upper half of the circle $x^2 + y^2 = 16$ for $y \\ge 0$, with the centre of the flat base at the origin.<br><br>Use calculus to find the maximum area of the rectangular window pane. Fully justify your answer.",
         "steps": [
             "Let the top-right vertex of the rectangle touching the semicircle be $P(x,y)$ where $x > 0$ and $y > 0$. The semicircle has equation:<br>$$x^2 + y^2 = 16 \\quad \\text{for} \\quad y \\ge 0$$",
@@ -1433,7 +1433,7 @@ window.ALEVEL_QUESTIONS = [
             "Modelling",
             "Polynomials"
         ],
-        "img": "images/p1/004133.png",
+        "img": "images/Pure/004133.png",
         "question": "A ventilation duct with a rectangular cross-section is to be installed under a parabolic archway. The archway is modelled by the curve $y = 12 - x^2$ for $y \\ge 0$, where $x$ and $y$ are measured in metres. The base of the duct lies along the $x$-axis, and the two upper vertices of the duct touch the parabola.<br><br>Use calculus to find the maximum possible cross-sectional area of the ventilation duct. Fully justify your answer.",
         "steps": [
             "Let the width of the rectangular duct extend from $-x$ to $x$ along the horizontal axis, where $x > 0$. The total width of the duct is $2x$.<br><br>The height of the duct is given by the $y$-coordinate on the parabola: $y = 12 - x^2$.",
@@ -1474,7 +1474,7 @@ window.ALEVEL_QUESTIONS = [
             "Modelling",
             "Polynomials"
         ],
-        "img": "images/p1/004134.png",
+        "img": "images/Pure/004134.png",
         "question": "An open-topped box is to be constructed from a square sheet of cardboard with a side length of $12\\text{ cm}$. Equal square corners of side length $x\\text{ cm}$ are cut out from each corner, and the remaining sides are folded upwards to form the box.<br><br>Use calculus to find the value of $x$ that maximises the volume of the box, and calculate this maximum volume. Fully justify your answer.",
         "steps": [
             "When we cut a square of side $x$ from each of the four corners of a $12\\text{ cm}$ square sheet, the dimensions of the base of the box become $(12 - 2x)$ by $(12 - 2x)$.<br><br>The height of the box is $x$.",
@@ -1516,7 +1516,7 @@ window.ALEVEL_QUESTIONS = [
             "Trigonometric Identities",
             "Modelling"
         ],
-        "img": "images/p1/004135.png",
+        "img": "images/Pure/004135.png",
         "question": "A circular medallion has a radius of $5\\text{ cm}$. A rectangle is inscribed inside the medallion. Let the angle between the diagonal of the rectangle and the horizontal coordinate axis be $\\theta$, where $0 < \\theta < \\dfrac{\\pi}{2}$ radians.<br><br>1. Show that the area, $A$, of the rectangle is given by $A = 50\\sin(2\\theta)$.<br>2. Use calculus to find the value of $\\theta$ that maximises the area of the rectangle, and state this maximum area. Fully justify your answer.",
         "steps": [
             "By modelling the medallion as a circle centred at the origin with radius $5$, any point on the boundary in the first quadrant has coordinates $(5\\cos\\theta, 5\\sin\\theta)$.<br><br>The width of the inscribed rectangle is $2x = 10\\cos\\theta$, and the height is $2y = 10\\sin\\theta$.",
@@ -1557,7 +1557,7 @@ window.ALEVEL_QUESTIONS = [
             "Trigonometric Proofs",
             "Compound Angle Formulae"
         ],
-        "img": "images/p1/004136.png",
+        "img": "images/Pure/004136.png",
         "question": "Some students are trying to prove an identity for $\\cos(A+B)$. They start by drawing two right-angled triangles $ODE$ and $OEF$ as shown in the diagram. Let angle $DOE = A$ and angle $EOF = B$. In triangle $OFR$, the horizontal line is $OD$, and $FR$ is perpendicular to $OD$ at $R$. The line $EP$ is perpendicular to $FR$ at $P$.<br><br>The students' incomplete proof continues:<br>* **Line 1:** $\\cos(A+B) = \\dfrac{OR}{OF}$<br>* **Line 2:** $= \\dfrac{OD - RD}{OF}$<br>* **Line 3:** $= \\dfrac{OD - EP}{OF}$ since $RD = EP$<br>* **Line 4:** $= \\dfrac{OD}{OF} - \\dfrac{EP}{OF}$<br>* **Line 4 (expanded):** $= \\dfrac{OD}{OE} \\times \\dfrac{OE}{OF} - \\dfrac{EP}{EF} \\times \\dfrac{EF}{OF}$<br><br>1. Explain why $\\dfrac{EP}{EF} \\times \\dfrac{EF}{OF}$ in Line 4 leads to $\\sin A \\sin B$ in Line 5.<br>2. Complete Line 4 and Line 5 to prove the identity $\\cos(A+B) = \\cos A \\cos B - \\sin A \\sin B$.<br>3. Explain why the argument used only proves the identity when $A$ and $B$ are acute angles.<br>4. Show how to prove the identity for $\\cos(A-B)$ by substituting $-B$ into the identity for $\\cos(A+B)$, stating any properties of trigonometric functions that you use.",
         "steps": [
             "To show why $\\dfrac{EP}{EF} \\times \\dfrac{EF}{OF} = \\sin A \\sin B$, we first identify the angles in our coordinate setup:<br>Since $EP \\parallel OD$ (both are horizontal), the alternate angle $\\angle OEP = \\angle DOE = A$.<br>Since the triangle $OEF$ is right-angled at $E$, $\\angle OEF = 90^\\circ$. This gives:<br>$$\\angle PEF = 90^\\circ - \\angle OEP = 90^\\circ - A$$<br>Inside the right-angled triangle $EPF$, the angles must sum to $180^\\circ$, meaning:<br>$$\\angle EFP = 90^\\circ - \\angle PEF = 90^\\circ - (90^\\circ - A) = A$$",
