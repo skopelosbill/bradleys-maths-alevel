@@ -1011,7 +1011,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$k = 3$$",
-            "feedback": "You may have made an arithmetic slip when simplifying the terms inside the parentheses in Step 6, perhaps by writing $1 + 3\\left(\\dfrac{1}{4}\right) = 1 + \\dfrac{3}{4} = \\dfrac{6}{4}$."
+            "feedback": "You may have made an arithmetic slip when simplifying the terms inside the parentheses in Step 6, perhaps by writing $1 + 3\\left(\\dfrac{1}{4}\\right) = 1 + \\dfrac{3}{4} = \\dfrac{6}{4}$."
         }
     ],
     "bradley_insight": {
@@ -1051,7 +1051,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$k = 3$$",
-            "feedback": "You may have made an arithmetic slip when simplifying the terms inside the parentheses in Step 6, perhaps by writing $1 + 3\\left(\\dfrac{1}{4}\right) = 1 + \\dfrac{3}{4} = \\dfrac{6}{4}$."
+            "feedback": "You may have made an arithmetic slip when simplifying the terms inside the parentheses in Step 6, perhaps by writing $1 + 3\\left(\\dfrac{1}{4}\\right) = 1 + \\dfrac{3}{4} = \\dfrac{6}{4}$."
         }
     ],
     "bradley_insight": {
