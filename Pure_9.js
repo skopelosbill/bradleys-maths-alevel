@@ -1768,5 +1768,204 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Mersenne Primes and Counterexamples",
         "content": "Numbers of the form $M_p = 2^p - 1$ where $p$ is prime are called Mersenne numbers. While many are prime (Mersenne primes), $p = 11$ is the first prime exponent that yields a composite number ($2047 = 23 \\times 89$). Highlighting this famous prime number is a highly classic way to disprove primality hypotheses in exam boards."
     }
+},
+{
+    "id": "004446",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "Sequences and Series",
+    "subtopic": [
+        "Sigma Notation",
+        "Recurrence Relations",
+        "Arithmetic and Geometric Series"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Show that:<br>$$\\sum_{r=1}^{12} (4 + 3r + 2^r) = 8472$$ [4]<br><br><strong>(b)</strong> A sequence $u_1, u_2, u_3, \\dots$ is defined by:<br>$$u_{n+1} = \\dfrac{ 1 }{ u_n }, \\quad u_1 = \\dfrac{ 3 }{ 4 }$$<br>Find the exact value of:<br>$$\\sum_{r=1}^{80} u_r$$ [3]",
+    "steps": [
+        "<strong>Step 1: Decompose the compound summation in part (a)</strong><br>We can split the single summation into three separate parts: a constant sum, an arithmetic sum, and a geometric sum:<br>\\begin{aligned} \\sum_{r=1}^{12} ( 4 + 3r + 2^r ) &= \\sum_{r=1}^{12} 4 + \\sum_{r=1}^{12} 3r + \\sum_{r=1}^{12} 2^r \\cr &= \\sum_{r=1}^{12} 4 + 3\\sum_{r=1}^{12} r + \\sum_{r=1}^{12} 2^r \\cr \\end{aligned}",
+        "<strong>Step 2: Evaluate the constant and arithmetic parts</strong><br>For the constant term, we multiply the constant by the number of terms: $4 \\times 12 = 48$.<br>For the arithmetic part, use the standard natural number sum formula $S_n = \\dfrac{ n( n + 1 ) }{ 2 }$:<br>\\begin{aligned} 3\\sum_{r=1}^{12} r &= 3 \\cdot \\dfrac{ 12( 13 ) }{ 2 } \\cr &= 3 \\cdot 78 \\cr &= 234 \\cr \\end{aligned}",
+        "<strong>Step 3: Evaluate the geometric part and sum all terms to complete part (a)</strong><br>The term $2^r$ defines a geometric series with first term $a = 2$, common ratio $r = 2$, and $n = 12$ terms:<br>\\begin{aligned} \\sum_{r=1}^{12} 2^r &= \\dfrac{ a( r^n - 1 ) }{ r - 1 } \\cr &= \\dfrac{ 2( 2^{12} - 1 ) }{ 2 - 1 } \\cr &= 2( 4096 - 1 ) \\cr &= 8190 \\cr \\end{aligned}<br>Now, add the three evaluated parts together:<br>\\begin{aligned} \\text{Total Sum} &= 48 + 234 + 8190 \\cr &= 8472 \\cr \\end{aligned}",
+        "<strong>Step 4: Find the first few terms of the sequence in part (b)</strong><br>Substitute $u_1 = \\dfrac{ 3 }{ 4 }$ into the recurrence relation to find the sequence's behavior:<br>\\begin{aligned} u_1 &= \\dfrac{ 3 }{ 4 } \\cr u_2 &= \\dfrac{ 1 }{ u_1 } = \\dfrac{ 4 }{ 3 } \\cr u_3 &= \\dfrac{ 1 }{ u_2 } = \\dfrac{ 3 }{ 4 } \\cr \\end{aligned}<br>This shows that the sequence is periodic with a period of $2$, repeating the terms $\\dfrac{ 3 }{ 4 }$ and $\\dfrac{ 4 }{ 3 }$.",
+        "<strong>Step 5: Group the terms into pairs and calculate the total sum</strong><br>Calculate the sum of a single repeating pair:<br>\\begin{aligned} \\text{Pair Sum} &= u_1 + u_2 \\cr &= \\dfrac{ 3 }{ 4 } + \\dfrac{ 4 }{ 3 } \\cr &= \\dfrac{ 9 + 16 }{ 12 } \\cr &= \\dfrac{ 25 }{ 12 } \\cr \\end{aligned}<br>The summation has $80$ terms in total, which forms exactly $40$ complete pairs:<br>\\begin{aligned} \\sum_{r=1}^{80} u_r &= 40 \\cdot \\left( \\dfrac{ 25 }{ 12 } \\right) \\cr &= \\dfrac{ 1000 }{ 12 } \\cr &= \\dfrac{ 250 }{ 3 } \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\text{Total Sum} = 8472, \\quad \\sum_{r=1}^{80} u_r = 80 \\cdot \\dfrac{ 25 }{ 12 } = \\dfrac{ 500 }{ 3 }$$",
+            "feedback": "You may have made an error when counting the number of complete repeating pairs in part (b). Since the sequence repeats every 2 terms, 80 terms contain exactly 40 complete pairs, not 80."
+        },
+        {
+            "ans": "$$\\text{Total Sum} = 8424, \\quad \\sum_{r=1}^{80} u_r = \\dfrac{ 250 }{ 3 }$$",
+            "feedback": "You may have made an error when calculating the constant part of the summation in Step 2, perhaps by writing $\\sum_{r=1}^{12} 4 = 4$ instead of multiplying the constant by the total number of terms ($4 \\times 12 = 48$)."
+        },
+        {
+            "ans": "$$\\text{Total Sum} = 8472, \\quad \\sum_{r=1}^{80} u_r = \\dfrac{ 25 }{ 12 }$$",
+            "feedback": "You may have calculated the sum of only one repeating pair ($u_1 + u_2$) rather than multiplying it by the 40 complete pairs that make up the entire 80-term series."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Summing Constant Terms",
+        "content": "A very common student mistake when decomposing compound summations is evaluating $\\sum_{r=1}^{n} c$ as simply $c$. Remember that $\\sum_{r=1}^{n} c$ means adding the constant $c$ to itself $n$ times, which yields $n \\cdot c$. Forgetting this scaling factor is one of the most frequent reasons for dropped marks in series exams."
+    }
+},
+{
+    "id": "004447",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "Sequences and Series",
+    "subtopic": [
+        "Sigma Notation",
+        "Recurrence Relations",
+        "Arithmetic and Geometric Series"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Show that:<br>$$\\sum_{r=1}^{8} (5 + 2r + 3^r) = 9952$$ [4]<br><br><strong>(b)</strong> A sequence $u_1, u_2, u_3, \\dots$ is defined by:<br>$$u_{n+1} = -\\dfrac{ 1 }{ u_n }, \\quad u_1 = 2$$<br>Find the exact value of:<br>$$\\sum_{r=1}^{100} u_r$$ [3]",
+    "steps": [
+        "<strong>Step 1: Decompose the compound summation in part (a)</strong><br>Split the single summation into three separate components: a constant sum, an arithmetic sum, and a geometric sum:<br>\\begin{aligned} \\sum_{r=1}^{8} ( 5 + 2r + 3^r ) &= \\sum_{r=1}^{8} 5 + \\sum_{r=1}^{8} 2r + \\sum_{r=1}^{8} 3^r \\cr &= \\sum_{r=1}^{8} 5 + 2\\sum_{r=1}^{8} r + \\sum_{r=1}^{8} 3^r \\cr \\end{aligned}",
+        "<strong>Step 2: Evaluate the constant and arithmetic parts</strong><br>Evaluate the constant sum: $5 \\times 8 = 40$.<br>For the arithmetic part, use the natural number sum formula $S_n = \\dfrac{ n( n + 1 ) }{ 2 }$:<br>\\begin{aligned} 2\\sum_{r=1}^{8} r &= 2 \\cdot \\dfrac{ 8( 9 ) }{ 2 } \\cr &= 72 \\cr \\end{aligned}",
+        "<strong>Step 3: Evaluate the geometric part and sum all terms to complete part (a)</strong><br>The term $3^r$ defines a geometric series with first term $a = 3$, common ratio $r = 3$, and $n = 8$ terms:<br>\\begin{aligned} \\sum_{r=1}^{8} 3^r &= \\dfrac{ a( r^n - 1 ) }{ r - 1 } \\cr &= \\dfrac{ 3( 3^{8} - 1 ) }{ 3 - 1 } \\cr &= \\dfrac{ 3( 6561 - 1 ) }{ 2 } \\cr &= 3 \\cdot 3280 \\cr &= 9840 \\cr \\end{aligned}<br>Sum the three parts together to complete the proof:<br>\\begin{aligned} \\text{Total Sum} &= 40 + 72 + 9840 \\cr &= 9952 \\cr \\end{aligned}",
+        "<strong>Step 4: Find the first few terms of the sequence in part (b)</strong><br>Substitute $u_1 = 2$ into the recurrence relation to identify the periodic behavior:<br>\\begin{aligned} u_1 &= 2 \\cr u_2 &= -\\dfrac{ 1 }{ u_1 } = -\\dfrac{ 1 }{ 2 } \\cr u_3 &= -\\dfrac{ 1 }{ u_2 } = 2 \\cr \\end{aligned}<br>This shows that the sequence has a period of $2$, repeating the terms $2$ and $-\\dfrac{ 1 }{ 2 }$.",
+        "<strong>Step 5: Group the terms into pairs and calculate the total sum</strong><br>Find the sum of a single repeating pair:<br>\\begin{aligned} \\text{Pair Sum} &= u_1 + u_2 \\cr &= 2 - \\dfrac{ 1 }{ 2 } \\cr &= \\dfrac{ 3 }{ 2 } \\cr \\end{aligned}<br>The series has $100$ terms in total, which forms exactly $50$ complete pairs:<br>\\begin{aligned} \\sum_{r=1}^{100} u_r &= 50 \\cdot \\left( \\dfrac{ 3 }{ 2 } \\right) \\cr &= 75 \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\text{Total Sum} = 9952, \\quad \\sum_{r=1}^{100} u_r = 150$$",
+            "feedback": "You may have made an error when pairing the terms, multiplying the pair sum of $\\dfrac{3}{2}$ by the total number of terms (100) instead of the number of complete pairs (50)."
+        },
+        {
+            "ans": "$$\\text{Total Sum} = 9917, \\quad \\sum_{r=1}^{100} u_r = 75$$",
+            "feedback": "You may have made an error when calculating the constant part of the summation in Step 2, writing $\\sum_{r=1}^{8} 5 = 5$ instead of $5 \\times 8 = 40$."
+        },
+        {
+            "ans": "$$\\text{Total Sum} = 9952, \\quad \\sum_{r=1}^{100} u_r = \\dfrac{ 3 }{ 2 }$$",
+            "feedback": "You may have calculated the sum of only one repeating pair ($u_1 + u_2$) rather than multiplying it by the 50 complete pairs that make up the entire 100-term series."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Identifying Geometric Sum Parameters",
+        "content": "When evaluating a geometric sum like $\\sum_{r=1}^{n} c^r$, the first term is $a = c^1 = c$ (since $r$ starts at 1), and the ratio is $c$. A common mistake is writing the first term $a = 1$, which is only true if the summation index starts at $r = 0$. Always plug in $r = 1$ to find your correct first term."
+    }
+},
+{
+    "id": "004448",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "Sequences and Series",
+    "subtopic": [
+        "Sigma Notation",
+        "Recurrence Relations",
+        "Arithmetic and Geometric Series"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Show that:<br>$$\\sum_{r=1}^{10} (20 - 3r + 2^r) = 2081$$ [4]<br><br><strong>(b)</strong> A sequence $u_1, u_2, u_3, \\dots$ is defined by:<br>$$u_{n+1} = 1 - u_n, \\quad u_1 = 4$$<br>Find the exact value of:<br>$$\\sum_{r=1}^{50} u_r$$ [3]",
+    "steps": [
+        "<strong>Step 1: Decompose the compound summation in part (a)</strong><br>Split the single summation into three separate parts: a constant sum, an arithmetic sum, and a geometric sum:<br>\\begin{aligned} \\sum_{r=1}^{10} ( 20 - 3r + 2^r ) &= \\sum_{r=1}^{10} 20 - \\sum_{r=1}^{10} 3r + \\sum_{r=1}^{10} 2^r \\cr &= \\sum_{r=1}^{10} 20 - 3\\sum_{r=1}^{10} r + \\sum_{r=1}^{10} 2^r \\cr \\end{aligned}",
+        "<strong>Step 2: Evaluate the constant and arithmetic parts</strong><br>Evaluate the constant sum: $20 \\times 10 = 200$.<br>For the arithmetic part, use the natural number sum formula $S_n = \\dfrac{ n( n + 1 ) }{ 2 }$:<br>\\begin{aligned} 3\\sum_{r=1}^{10} r &= 3 \\cdot \\dfrac{ 10( 11 ) }{ 2 } \\cr &= 3 \\cdot 55 \\cr &= 165 \\cr \\end{aligned}",
+        "<strong>Step 3: Evaluate the geometric part and sum all terms to complete part (a)</strong><br>The term $2^r$ defines a geometric series with first term $a = 2$, common ratio $r = 2$, and $n = 10$ terms:<br>\\begin{aligned} \\sum_{r=1}^{10} 2^r &= \\dfrac{ a( r^n - 1 ) }{ r - 1 } \\cr &= \\dfrac{ 2( 2^{10} - 1 ) }{ 2 - 1 } \\cr &= 2( 1024 - 1 ) \\cr &= 2046 \\cr \\end{aligned}<br>Combine the evaluated parts to complete the proof:<br>\\begin{aligned} \\text{Total Sum} &= 200 - 165 + 2046 \\cr &= 2081 \\cr \\end{aligned}",
+        "<strong>Step 4: Find the first few terms of the sequence in part (b)</strong><br>Substitute $u_1 = 4$ into the recurrence relation to identify the periodic behavior:<br>\\begin{aligned} u_1 &= 4 \\cr u_2 &= 1 - u_1 = 1 - 4 = -3 \\cr u_3 &= 1 - u_2 = 1 - ( -3 ) = 4 \\cr \\end{aligned}<br>This shows that the sequence is periodic with a period of $2$, repeating the terms $4$ and $-3$.",
+        "<strong>Step 5: Group the terms into pairs and calculate the total sum</strong><br>Find the sum of a single repeating pair:<br>\\begin{aligned} \\text{Pair Sum} &= u_1 + u_2 \\cr &= 4 + ( -3 ) \\cr &= 1 \\cr \\end{aligned}<br>The series has $50$ terms in total, which forms exactly $25$ complete pairs:<br>\\begin{aligned} \\sum_{r=1}^{50} u_r &= 25 \\cdot ( 1 ) \\cr &= 25 \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\text{Total Sum} = 2081, \\quad \\sum_{r=1}^{50} u_r = 50$$",
+            "feedback": "You may have multiplied your pair sum (1) by the total number of terms (50) instead of the number of complete pairs (25)."
+        },
+        {
+            "ans": "$$\\text{Total Sum} = 2062, \\quad \\sum_{r=1}^{50} u_r = 25$$",
+            "feedback": "You may have made an error when calculating the constant part of the summation in Step 2, writing $\\sum_{r=1}^{10} 20 = 20$ instead of $20 \\times 10 = 200$."
+        },
+        {
+            "ans": "$$\\text{Total Sum} = 2081, \\quad \\sum_{r=1}^{50} u_r = 2$$",
+            "feedback": "You may have calculated the sum of only one repeating pair ($u_1 + u_2$) rather than multiplying it by the 25 complete pairs that make up the entire 50-term series."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Signs in Arithmetic Progressions",
+        "content": "When evaluating arithmetic summations that have a negative coefficient (like $-3r$), make sure to carry the negative sign strictly through all your intermediate sum stages. A very common exam slip is adding the arithmetic sum ($200 + 165$) instead of subtracting it ($200 - 165$)."
+    }
+},
+{
+    "id": "004449",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "Sequences and Series",
+    "subtopic": [
+        "Arithmetic Progressions",
+        "Recurrence Relations",
+        "Periodic Sequences"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> An arithmetic series has first term $a = 5$ and common difference $d = 3$. Find the sum of the first $n$ terms in terms of $n$, simplifying your answer fully. [3]<br><br><strong>(b)</strong> A sequence $u_1, u_2, u_3, \\dots$ is defined by:<br>$$u_{n+1} = -u_n, \\quad u_1 = 5$$<br>Find the exact value of:<br>$$\\sum_{r=1}^{101} u_r$$ [4]",
+    "steps": [
+        "<strong>Step 1: Set up the arithmetic progression formula for part (a)</strong><br>The sum of the first $n$ terms of an arithmetic progression is given by:<br>$$S_n = \\dfrac{ n }{ 2 }( 2a + ( n - 1 )d )$$<br>Substitute $a = 5$ and $d = 3$ into the formula:<br>\\begin{aligned} S_n &= \\dfrac{ n }{ 2 }( 2( 5 ) + ( n - 1 )3 ) \\cr \\end{aligned}",
+        "<strong>Step 2: Simplify the algebraic expression</strong><br>Expand and simplify the terms inside the parentheses:<br>\\begin{aligned} S_n &= \\dfrac{ n }{ 2 }( 10 + 3n - 3 ) \\cr &= \\dfrac{ n }{ 2 }( 3n + 7 ) \\cr \\end{aligned}",
+        "<strong>Step 3: Identify the behavior of the sequence in part (b)</strong><br>Substitute $u_1 = 5$ into the recurrence relation to find the first few terms:<br>\\begin{aligned} u_1 &= 5 \\cr u_2 &= -u_1 = -5 \\cr u_3 &= -u_2 = 5 \\cr \\end{aligned}<br>This shows that the sequence is periodic with a period of $2$, repeating the terms $5$ and $-5$.",
+        "<strong>Step 4: Solve for the total sum of $101$ terms</strong><br>Calculate the sum of a single repeating pair:<br>\\begin{aligned} \\text{Pair Sum} &= u_1 + u_2 \\cr &= 5 + ( -5 ) \\cr &= 0 \\cr \\end{aligned}<br>The series has $101$ terms in total. This consists of exactly $50$ complete pairs (which sum to $50 \\times 0 = 0$) plus one remaining term at the end, which is the 101st term $u_{101}$:<br>\\begin{aligned} \\sum_{r=1}^{101} u_r &= 50 \\cdot ( 0 ) + u_{101} \\cr \\end{aligned}<br>Since the 101st term has an odd index, $u_{101} = u_1 = 5$. Thus:<br>$$\\sum_{r=1}^{101} u_r = 5$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$S_n = \\dfrac{ n }{ 2 }( 3n + 7 ), \\quad \\sum_{r=1}^{101} u_r = 0$$",
+            "feedback": "You may have assumed that because the pairs sum to 0, the total sum must be 0. Since there is an odd number of terms (101), there is one unpaired term left over at the end ($u_{101} = 5$), which must be added to the sum of the 50 complete pairs."
+        },
+        {
+            "ans": "$$S_n = \\dfrac{ n }{ 2 }( 3n + 10 ), \\quad \\sum_{r=1}^{101} u_r = 5$$",
+            "feedback": "You may have made an error when expanding $(n-1)d$ in Step 2, perhaps by writing it as $3n - 1$ instead of $3n - 3$, resulting in an incorrect constant term of 10 inside the brackets."
+        },
+        {
+            "ans": "$$S_n = \\dfrac{ n }{ 2 }( 3n + 7 ), \\quad \\sum_{r=1}^{101} u_r = -5$$",
+            "feedback": "You may have correctly identified that there is one unpaired term left over, but you mistakenly assumed it was the even-indexed term $u_{102} = -5$. Since 101 is an odd number, the remaining term is $u_{101} = 5$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Boundary Terms in Periodic Sums",
+        "content": "When summing a periodic sequence over an odd number of terms, always separate the sum into complete cycles and the remaining fractional cycle terms. For a sequence of period 2 summed over $2n+1$ terms, there will always be $n$ complete pairs (summing to $n \\times \\text{pair sum}$) plus one final term $u_{2n+1}$, which is identical to the first term $u_1$."
+    }
+},
+{
+    "id": "004450",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "Sequences and Series",
+    "subtopic": [
+        "Geometric Progressions",
+        "Recurrence Relations",
+        "Periodic Sequences"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> A geometric series has first term $a = 6$ and common ratio $r = 3$. Show that the sum of the first $5$ terms of this series is $726$. [3]<br><br><strong>(b)</strong> A sequence $u_1, u_2, u_3, \\dots$ is defined by:<br>$$u_{n+1} = \\cos\\left( \\dfrac{ n\\pi }{ 2 } \\right) u_n, \\quad u_1 = 4$$<br>Find the exact value of:<br>$$\\sum_{r=1}^{10} u_r$$ [4]",
+    "steps": [
+        "<strong>Step 1: Apply the geometric progression sum formula for part (a)</strong><br>The sum of the first $n$ terms of a geometric progression is given by:<br>$$S_n = \\dfrac{ a( r^n - 1 ) }{ r - 1 }$$<br>Substitute $a = 6$, $r = 3$, and $n = 5$ into the formula:<br>\\begin{aligned} S_5 &= \\dfrac{ 6( 3^5 - 1 ) }{ 3 - 1 } \\cr &= \\dfrac{ 6( 243 - 1 ) }{ 2 } \\cr \\end{aligned}",
+        "<strong>Step 2: Simplify to complete the proof in part (a)</strong><br>Evaluate the fraction to find the sum:<br>\\begin{aligned} S_5 &= 3( 242 ) \\cr &= 726 \\cr \\end{aligned}<br>This completes the proof.",
+        "<strong>Step 3: Analyze the first step of the recurrence relation in part (b)</strong><br>Use the recurrence relation with $u_1 = 4$ to calculate $u_2$ (where $n = 1$):<br>\\begin{aligned} u_2 &= \\cos\\left( \\dfrac{ 1\\pi }{ 2 } \\right) u_1 \\cr &= \\cos\\left( \\dfrac{ \\pi }{ 2 } \\right) \\cdot ( 4 ) \\cr &= ( 0 ) \\cdot ( 4 ) \\cr &= 0 \\cr \\end{aligned}",
+        "<strong>Step 4: Determine the subsequent terms of the sequence</strong><br>Evaluate the next term $u_3$ (where $n = 2$) using our value of $u_2 = 0$:<br>\\begin{aligned} u_3 &= \\cos\\left( \\dfrac{ 2\\pi }{ 2 } \\right) u_2 \\cr &= \\cos( \\pi ) \\cdot ( 0 ) \\cr &= ( -1 ) \\cdot ( 0 ) \\cr &= 0 \\cr \\end{aligned}<br>Since $u_2 = 0$ and any subsequent term is found by multiplying the previous term by a cosine factor, all terms from $u_2$ onwards must be identically equal to $0$:<br>$$u_r = 0 \\quad \\text{for all } r \\ge 2$$",
+        "<strong>Step 5: Calculate the final sum</strong><br>Sum all the terms of the series from $r = 1$ to $10$:<br>\\begin{aligned} \\sum_{r=1}^{10} u_r &= u_1 + u_2 + u_3 + \\dots + u_{10} \\cr &= 4 + 0 + 0 + \\dots + 0 \\cr &= 4 \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$S_5 = 726, \\quad \\sum_{r=1}^{10} u_r = 0$$",
+            "feedback": "You may have made an error by assuming that because all terms from $u_2$ onwards are 0, the total sum of the series must also be 0. Remember that the first term $u_1 = 4$ is non-zero, so the sum is $u_1 + 0 = 4$."
+        },
+        {
+            "ans": "$$S_5 = 726, \\quad \\sum_{r=1}^{10} u_r = 40$$",
+            "feedback": "You may have assumed the sequence is a constant sequence where every term is equal to 4, which would yield a sum of $4 \\times 10 = 40$. Remember to evaluate the recurrence relation step-by-step; the $\\cos\\left(\\dfrac{\\pi}{2}\\right) = 0$ multiplier immediately collapses all subsequent terms to 0."
+        },
+        {
+            "ans": "$$S_5 = 726, \\quad \\sum_{r=1}^{10} u_r = -4$$",
+            "feedback": "You may have made a sign or calculation error when evaluating the recurrence relation, perhaps by assuming the sequence alternates signs (like $4, -4, 4, -4, \\dots$) instead of collapsing to 0."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Spotting Collapsing Recurrence Relations",
+        "content": "In advanced sequence questions, always write out the first three or four terms explicitly. Recurrence relations containing multipliers like $\\cos\\left( \\frac{n\\pi}{2} \\right)$ or $( n - 2 )$ will often produce a $0$ at a specific step. Once a multiplicative term in a recurrence relation of the form $u_{n+1} = k_n u_n$ becomes $0$, the entire sequence collapses to $0$ from that point onward."
+    }
 }
 ];
