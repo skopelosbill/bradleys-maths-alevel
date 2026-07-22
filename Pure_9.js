@@ -1573,5 +1573,200 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Simplifying Surds for Perimeters",
         "content": "Whenever an exam question specifies a surd form like $a\\sqrt{14} + b\\sqrt{2}$, it is a strong hint that one of your calculated side lengths (such as $\\sqrt{18}$) can be simplified by factorising out a perfect square: $\\sqrt{18} = \\sqrt{9 \\cdot 2} = 3\\sqrt{2}$. Always simplify your surds fully before summing your perimeter terms."
     }
+},
+{
+    "id": "004441",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebra and Functions",
+    "subtopic": [
+        "Proof by Counterexample",
+        "Modulus Graphs",
+        "Inequalities"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> \"If $m$ and $n$ are irrational numbers, where $m \\neq n$, then $m + n$ is also irrational.\" Disprove this statement by means of a counterexample. [2]<br><br><strong>(b)</strong> (i) Sketch the graph of $y = |x| + 2$. [2]<br><strong>(b)</strong> (ii) Explain why $|x| + 2 \\ge |x + 2|$ for all real values of $x$. [3]",
+    "steps": [
+        "<strong>Step 1: Disprove the statement in part (a) with a counterexample</strong><br>To disprove the statement, we must find two distinct irrational numbers $m$ and $n$ whose sum is rational:<br>Let $m = \\sqrt{ 2 }$ (which is irrational) and let $n = 2 - \\sqrt{ 2 }$ (which is also irrational).<br>Now calculate their sum:<br>\\begin{aligned} m + n &= \\sqrt{ 2 } + ( 2 - \\sqrt{ 2 } ) \\cr &= 2 \\cr \\end{aligned}<br>Since the sum $2$ is a rational number, the statement is disproven.",
+        "<strong>Step 2: Sketch the modulus graph for part (b)(i)</strong><br>The graph of $y = |x| + 2$ is a vertical translation of the basic modulus graph $y = |x|$ upwards by $2$ units:<br>The vertex is located at $( 0, 2 )$. For $x \\ge 0$, the graph behaves like the line $y = x + 2$, and for $x < 0$, it behaves like the line $y = -x + 2$. The graph is symmetrical about the $y$-axis.<br><br><img src='images/Pure/004441_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>Step 3: Analyze the inequality in part (b)(ii) by cases</strong><br>We can prove that $|x| + 2 \\ge |x + 2|$ holds for all real $x$ by examining different intervals:<br><strong>Case 1:</strong> $x \\ge 0$<br>Here, $|x| = x$. Since $x \\ge 0$, we have $x + 2 \\ge 2 > 0$, so $|x + 2| = x + 2$. Substitute these into the inequality:<br>\\begin{aligned} |x| + 2 &= x + 2 \\cr |x + 2| &= x + 2 \\cr \\end{aligned}<br>Thus, $|x| + 2 = |x + 2|$, meaning the inequality holds (as equality).",
+        "<strong>Step 4: Analyze the negative interval cases</strong><br><strong>Case 2:</strong> $x < 0$<br>Here, $|x| = -x$.<br>Sub-case 2a: $-2 \\le x < 0$<br>Here, $x + 2 \\ge 0 \\implies |x + 2| = x + 2$. Compare both sides:<br>\\begin{aligned} |x| + 2 &= -x + 2 \\cr |x + 2| &= x + 2 \\cr \\end{aligned}<br>Since $x < 0$, we have $-x > x \\implies -x + 2 > x + 2 \\implies |x| + 2 > |x + 2|$, which holds true.<br>Sub-case 2b: $x < -2$<br>Here, $x + 2 < 0 \\implies |x + 2| = -( x + 2 ) = -x - 2$. Compare both sides:<br>\\begin{aligned} |x| + 2 &= -x + 2 \\cr |x + 2| &= -x - 2 \\cr \\end{aligned}<br>Since $2 > -2$, it follows that $-x + 2 > -x - 2 \\implies |x| + 2 > |x + 2|$, which holds true.<br>Hence, $|x| + 2 \\ge |x + 2|$ for all real values of $x$.<br><br><em>Alternative Proof:</em> By the Triangle Inequality, $|a + b| \\le |a| + |b|$. Letting $a = x$ and $b = 2$ gives $|x + 2| \\le |x| + |2| = |x| + 2$ directly."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$m = \\sqrt{ 2 }, \\ n = \\sqrt{ 3 }, \\quad |x| + 2 \\ge |x + 2| \\text{ holds because both sides are positive}$$",
+            "feedback": "You may have chosen two irrational numbers whose sum is still irrational ($\\sqrt{2} + \\sqrt{3}$ is irrational). A counterexample must show a case where the premise is true but the conclusion is false (i.e. the sum must be rational). Additionally, simply stating both sides of an inequality are positive does not constitute a rigorous proof."
+        },
+        {
+            "ans": "$$m = \\sqrt{ 2 }, \\ n = -\\sqrt{ 2 }, \\quad |x| + 2 \\ge |x + 2| \\text{ is false because it does not work for } x = -5$$",
+            "feedback": "Your counterexample $m = \\sqrt{2}, n = -\\sqrt{2}$ is correct. However, your assertion that the inequality does not work for $x = -5$ is incorrect. Substituting $x = -5$ yields $|-5| + 2 = 5 + 2 = 7$ on the left, and $|-5 + 2| = |-3| = 3$ on the right. Since $7 \\ge 3$, the inequality holds."
+        },
+        {
+            "ans": "$$m = \\sqrt{ 2 }, \\ n = 2 - \\sqrt{ 2 }, \\quad |x| + 2 \\ge |x + 2| \\text{ is false for } x = 0$$",
+            "feedback": "Your counterexample is correct. However, your evaluation of the inequality at $x = 0$ is incorrect. For $x = 0$, the left-hand side is $|0| + 2 = 2$ and the right-hand side is $|0 + 2| = 2$. Since $2 \\ge 2$ is a true statement, the inequality holds."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Leveraging the Triangle Inequality",
+        "content": "For part (b)(ii), while a case-by-case algebraic analysis is a perfectly rigorous way to earn full marks, the most elegant proof leverages the standard Triangle Inequality: $|a + b| \\le |a| + |b|$. Since $|2| = 2$, substituting $a = x$ and $b = 2$ yields $|x + 2| \\le |x| + 2$ in a single line! Memorising the Triangle Inequality can save you valuable time on modulus proofs."
+    }
+},
+{
+    "id": "004412",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebra and Functions",
+    "subtopic": [
+        "Proof by Counterexample",
+        "Modulus Graphs",
+        "Inequalities"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> \"If $m$ and $n$ are irrational numbers, where $m \\neq n$, then $\\dfrac{ m }{ n }$ is also irrational.\" Disprove this statement by means of a counterexample. [2]<br><br><strong>(b)</strong> (i) Sketch the graph of $y = 3 - |x|$. [3]<br><strong>(b)</strong> (ii) Solve the inequality $3 - |x| > 0$. [2]",
+    "steps": [
+        "<strong>Step 1: Disprove the statement in part (a) with a counterexample</strong><br>We must find two distinct irrational numbers $m$ and $n$ whose quotient $\\dfrac{ m }{ n }$ is rational:<br>Let $m = 2\\sqrt{ 2 }$ (irrational) and let $n = \\sqrt{ 2 }$ (irrational).<br>Calculate their quotient:<br>\\begin{aligned} \\dfrac{ m }{ n } &= \\dfrac{ 2\\sqrt{ 2 } }{ \\sqrt{ 2 } } \\cr &= 2 \\cr \\end{aligned}<br>Since $2$ is a rational number, the statement is disproven.",
+        "<strong>Step 2: Sketch the modulus graph for part (b)(i)</strong><br>The graph of $y = 3 - |x|$ is an inverted V-shape. The basic graph $y = -|x|$ is translated vertically upwards by $3$ units:<br>The vertex is at $( 0, 3 )$. For $x \\ge 0$, the graph is the line $y = 3 - x$. For $x < 0$, the graph is the line $y = 3 + x$. The graph cuts the $x$-axis at $x = \\pm 3$ and is symmetrical about the $y$-axis.<br><br><img src='images/Pure/004442_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>Step 3: Solve the inequality in part (b)(ii)</strong><br>We must solve $3 - |x| > 0$. Rearrange the inequality to isolate the modulus term:<br>\\begin{aligned} 3 - |x| &> 0 \\cr |x| &< 3 \\cr \\end{aligned}",
+        "<strong>Step 4: Write the final interval solution</strong><br>The inequality $|x| < 3$ represents all numbers whose distance from the origin is strictly less than $3$. This defines the bounded interval:<br>$$-3 < x < 3$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$m = \\sqrt{ 2 }, \\ n = 2\\sqrt{ 2 }, \\quad x < 3$$",
+            "feedback": "Your counterexample is correct. However, your inequality solution is incomplete. The inequality $|x| < 3$ limits $x$ from both sides, meaning $x$ must be strictly greater than $-3$ and strictly less than $3$ ($-3 < x < 3$)."
+        },
+        {
+            "ans": "$$m = \\sqrt{ 2 }, \\ n = \\sqrt{ 2 }, \\quad -3 < x < 3$$",
+            "feedback": "You may have forgotten the constraint $m \\neq n$ specified in the statement. Choosing $m = \\sqrt{2}$ and $n = \\sqrt{2}$ is invalid because the two irrational numbers are identical, violating the 'where $m \\neq n$' condition."
+        },
+        {
+            "ans": "$$m = \\sqrt{ 3 }, \\ n = \\sqrt{ 2 }, \\quad -3 < x < 3$$",
+            "feedback": "Your inequality solution is correct. However, your chosen counterexample is invalid because $\\dfrac{\\sqrt{3}}{\\sqrt{2}} = \\sqrt{1.5}$ is still an irrational number, which does not disprove the statement."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Watching Boundary Conditions",
+        "content": "When selecting a counterexample, always read the exact conditions of the statement. The clause 'where $m \\neq n$' is a strict constraint. Choosing identical numbers (like $m = \\sqrt{2}, n = \\sqrt{2}$) to get a quotient of $1$ will earn $0$ marks because it violates the rules of the statement."
+    }
+},
+{
+    "id": "004443",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebra and Functions",
+    "subtopic": [
+        "Proof by Counterexample",
+        "Modulus Graphs",
+        "Inequalities"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> \"If $x$ is a real number, then $x^2 \\ge x$.\" Disprove this statement by means of a counterexample. [2]<br><br><strong>(b)</strong> (i) Sketch the graph of $y = |x - 2| + 1$. [3]<br><strong>(b)</strong> (ii) Explain why $|x - 2| + 1 \\ge 1$ for all real values of $x$. [2]",
+    "steps": [
+        "<strong>Step 1: Disprove the statement in part (a) with a counterexample</strong><br>We must find a real number $x$ such that $x^2 < x$. This occurs for any fractional value strictly between $0$ and $1$:<br>Let $x = \\dfrac{ 1 }{ 2 }$. Calculate $x^2$:<br>\\begin{aligned} x^2 &= \\left( \\dfrac{ 1 }{ 2 } \\right)^2 \\cr &= \\dfrac{ 1 }{ 4 } \\cr \\end{aligned}<br>Since $\\dfrac{ 1 }{ 4 } < \\dfrac{ 1 }{ 2 }$, the statement $x^2 \\ge x$ is disproven.",
+        "<strong>Step 2: Sketch the modulus graph for part (b)(i)</strong><br>The graph of $y = |x - 2| + 1$ is a V-shaped graph translated $2$ units horizontally to the right and $1$ unit vertically upwards:<br>The vertex is located at $( 2, 1 )$. At $x = 0$, the $y$-intercept is $y = |0 - 2| + 1 = 3$. For $x \\ge 2$, it behaves as $y = x - 1$. For $x < 2$, it behaves as $y = -x + 3$.<br><br><img src='images/Pure/004443_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>Step 3: Explain the inequality in part (b)(ii)</strong><br>By definition, the absolute value of any real number is always non-negative:<br>$$|x - 2| \\ge 0 \\quad \\text{for all } x \\in \\mathbb{R}$$",
+        "<strong>Step 4: Conclude the proof</strong><br>Add $1$ to both sides of the inequality $|x - 2| \\ge 0$:<br>\\begin{aligned} |x - 2| + 1 &\\ge 0 + 1 \\cr |x - 2| + 1 &\\ge 1 \\cr \\end{aligned}<br>Therefore, the expression $|x - 2| + 1$ is always greater than or equal to $1$ for all real values of $x$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$x = 2, \\quad |x - 2| + 1 \\ge 1 \\text{ is false because } |2 - 2| + 1 = 1$$",
+            "feedback": "You may have chosen $x = 2$ as a counterexample, which gives $x^2 = 4 \\ge 2$ (so it does not disprove the statement). Additionally, $1 \\ge 1$ is a true statement, so the inequality still holds at $x = 2$."
+        },
+        {
+            "ans": "$$x = -1, \\quad |x - 2| + 1 \\ge 1 \\text{ holds because } |-3| + 1 = 4 \\ge 1$$",
+            "feedback": "You may have chosen $x = -1$ as a counterexample, which gives $( -1 )^2 = 1 \\ge -1$ (so it does not disprove the statement). A counterexample must yield a false conclusion."
+        },
+        {
+            "ans": "$$x = \\dfrac{ 1 }{ 2 }, \\quad |x - 2| + 1 \\ge 1 \\text{ is false because for negative numbers it breaks}$$",
+            "feedback": "Your counterexample is correct. However, your assertion that the inequality breaks for negative numbers is incorrect. For any negative number, say $x = -5$, we have $|-5-2| + 1 = 8 \\ge 1$, which is true."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Domain of Quadratic Squaring Inequalities",
+        "content": "The statement $x^2 \\ge x$ is actually true for almost all real numbers, except for the open interval $( 0, 1 )$. Squaring any fraction between $0$ and $1$ makes the number smaller, which is why any value in this interval (such as $0.5$ or $0.1$) serves as a perfect counterexample."
+    }
+},
+{
+    "id": "004444",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebra and Functions",
+    "subtopic": [
+        "Proof by Counterexample",
+        "Modulus Graphs",
+        "Inequalities"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> \"For any real numbers $a$ and $b$, if $a^2 = b^2$, then $a = b$.\" Disprove this statement by means of a counterexample. [2]<br><br><strong>(b)</strong> (i) Sketch the graph of $y = |2x| - 4$. [3]<br><strong>(b)</strong> (ii) Find the coordinates of the points where the graph of $y = |2x| - 4$ intersects the $x$-axis. [2]",
+    "steps": [
+        "<strong>Step 1: Disprove the statement in part (a) with a counterexample</strong><br>We must find two real numbers $a$ and $b$ such that $a^2 = b^2$, but $a \\neq b$. This occurs if we choose any non-zero number and its negative counterpart:<br>Let $a = 2$ and $b = -2$. Calculate their squares:<br>\\begin{aligned} a^2 &= 2^2 = 4 \\cr b^2 &= ( -2 )^2 = 4 \\cr \\end{aligned}<br>Here, $a^2 = b^2$ is true ($4 = 4$), but $a \\neq b$ ($2 \\neq -2$). Thus, the statement is disproven.",
+        "<strong>Step 2: Sketch the modulus graph for part (b)(i)</strong><br>Since $|2x| = 2|x|$, the graph of $y = |2x| - 4 = 2|x| - 4$ is a V-shaped graph with steeper sides (gradient of $\\pm 2$) translated vertically downwards by $4$ units:<br>The vertex is located at $( 0, -4 )$. For $x \\ge 0$, the graph behaves like the line $y = 2x - 4$. For $x < 0$, it behaves like $y = -2x - 4$.<br><br><img src='images/Pure/004444_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>Step 3: Set up the equation for the $x$-axis intersections in part (b)(ii)</strong><br>To find the coordinates of the points where the graph intersects the $x$-axis, set $y = 0$:<br>\\begin{aligned} |2x| - 4 &= 0 \\cr |2x| &= 4 \\cr \\end{aligned}",
+        "<strong>Step 4: Solve for $x$ and state the coordinate points</strong><br>Solve the absolute value equation:<br>\\begin{aligned} 2x = 4 \\quad &\\text{or} \\quad 2x = -4 \\cr x = 2 \\quad &\\text{or} \\quad x = -2 \\cr \\end{aligned}<br>Thus, the coordinates of the intersection points are $( 2, 0 )$ and $( -2, 0 )$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 0, \\ b = 0, \\quad x = 2 \\text{ and } x = -2$$",
+            "feedback": "You may have chosen $a = 0$ and $b = 0$. While $0^2 = 0^2$, this is not a valid counterexample because $a = b$ ($0 = 0$). A counterexample must satisfy the premise ($a^2 = b^2$) but fail the conclusion ($a \\neq b$)."
+        },
+        {
+            "ans": "$s = 2, \\ b = -2, \\quad \\text{Intersections: } (4, 0) \\text{ and } (-4, 0)$$",
+            "feedback": "Your counterexample is correct. However, you may have made an algebraic error when solving $|2x| = 4$, mistakenly writing $x = \\pm 4$ instead of dividing by the factor of 2."
+        },
+        {
+            "ans": "$$a = 2, \\ b = -2, \\quad \\text{Intersections: } (2, -4) \\text{ and } (-2, -4)$$",
+            "feedback": "Your counterexample is correct. However, the coordinates you provided are not on the $x$-axis. Intersections with the $x$-axis must have a $y$-coordinate of $0$, which gives $(2, 0)$ and $(-2, 0)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Finding Intercepts on Modulus Graphs",
+        "content": "When solving for intercepts on modulus graphs of the form $y = |f(x)| - c = 0$, you must always set up two separate branch equations: $f(x) = c$ and $f(x) = -c$. This ensures you find both symmetric intersection points on the V-shaped graph."
+    }
+},
+{
+    "id": "004445",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebra and Functions",
+    "subtopic": [
+        "Proof by Counterexample",
+        "Modulus Graphs",
+        "Inequalities"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> \"If $p$ is a prime number, then $2^p - 1$ is also a prime number.\" Disprove this statement by means of a counterexample. [2]<br><br><strong>(b)</strong> (i) Sketch the graph of $y = |x - 3|$. [3]<br><strong>(b)</strong> (ii) Solve the inequality $|x - 3| < 2$. [2]",
+    "steps": [
+        "<strong>Step 1: Disprove the statement in part (a) with a counterexample</strong><br>We must find a prime number $p$ such that $2^p - 1$ is a composite number. Test consecutive primes $p = 2, 3, 5, 7, 11$:<br>For $p = 2$: $2^2 - 1 = 3$ (prime).<br>For $p = 3$: $2^3 - 1 = 7$ (prime).<br>For $p = 5$: $2^5 - 1 = 31$ (prime).<br>For $p = 7$: $2^7 - 1 = 127$ (prime).<br>For $p = 11$: Calculate $2^{ 11 } - 1$:<br>\\begin{aligned} 2^{ 11 } - 1 &= 2048 - 1 \\cr &= 2047 \\cr \\end{aligned}<br>Since $2047 = 23 \\times 89$, it is composite. Thus, the prime $p = 11$ serves as a counterexample disproving the statement.",
+        "<strong>Step 2: Sketch the modulus graph for part (b)(i)</strong><br>The graph of $y = |x - 3|$ is a V-shaped graph translated $3$ units horizontally to the right:<br>The vertex is at $( 3, 0 )$. The $y$-intercept is at $y = |0 - 3| = 3$. For $x \\ge 3$, the graph behaves as the line $y = x - 3$. For $x < 3$, it behaves as the line $y = 3 - x$.<br><br><img src='images/Pure/004445_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>Step 3: Set up the inequality in part (b)(ii)</strong><br>To solve the inequality $|x - 3| < 2$, we rewrite the absolute value inequality as a compound inequality:<br>\\begin{aligned} -2 &< x - 3 < 2 \\cr \\end{aligned}",
+        "<strong>Step 4: Solve the compound inequality</strong><br>Add $3$ to all parts of the inequality to isolate $x$:<br>\\begin{aligned} -2 + 3 &< x < 2 + 3 \\cr 1 &< x < 5 \\cr \\end{aligned}<br>Thus, the solution is the open interval $1 < x < 5$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$p = 11, \\quad x < 5$$",
+            "feedback": "Your counterexample is correct. However, your inequality solution is incomplete. The inequality $|x - 3| < 2$ bounds $x$ from both sides. Solving it yields $1 < x < 5$, not just $x < 5$."
+        },
+        {
+            "ans": "$$p = 4, \\quad 1 < x < 5$$",
+            "feedback": "Your inequality solution is correct. However, your chosen counterexample $p = 4$ is invalid because $4$ is not a prime number. A counterexample must strictly satisfy the premise of the statement."
+        },
+        {
+            "ans": "$$p = 11, \\quad 1 \\le x \\le 5$$",
+            "feedback": "You may have made an error with the inequality boundaries. Since the original inequality $|x - 3| < 2$ is strict ($<$), your final boundary solutions must also be strict ($1 < x < 5$ rather than $\\le$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Mersenne Primes and Counterexamples",
+        "content": "Numbers of the form $M_p = 2^p - 1$ where $p$ is prime are called Mersenne numbers. While many are prime (Mersenne primes), $p = 11$ is the first prime exponent that yields a composite number ($2047 = 23 \\times 89$). Highlighting this famous prime number is a highly classic way to disprove primality hypotheses in exam boards."
+    }
 }
 ];
