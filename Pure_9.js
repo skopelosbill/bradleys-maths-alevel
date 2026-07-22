@@ -1379,5 +1379,199 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Restricting Quadratic Inverses",
         "content": "A quadratic function is normally many-to-one, meaning it does not have a unique inverse. However, the inverse $g^{-1}(x) = ( x - 1 )^2 + 3$ is valid here because its domain is strictly restricted to $x \\ge 1$. This restriction ensures that the inverse corresponds exactly to the one-to-one radical branch of our original function."
     }
+},
+{
+    "id": "004436",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Vectors",
+    "topic": "3D Vectors",
+    "subtopic": [
+        "Position Vectors",
+        "Vector Magnitude"
+    ],
+    "img": false,
+    "question": "Relative to a fixed origin $O$, the point $A$ has position vector $(3\\mathbf{ i } + \\mathbf{ j } - 2\\mathbf{ k })$, the point $B$ has position vector $(5\\mathbf{ i } - \\mathbf{ j } + 4\\mathbf{ k })$, and the point $C$ has position vector $(p\\mathbf{ i } + 4\\mathbf{ j } - \\mathbf{ k })$, where $p$ is a constant and $p < 0$. $D$ is the point such that $\\vec{ AB } = \\vec{ BD }$.<br><br><strong>(a)</strong> Find the position vector of $D$. [2]<br><br><strong>(b)</strong> Given that $|\\vec{ AC }| = 5$, find the value of $p$. [3]",
+    "steps": [
+        "<strong>Step 1: Calculate the displacement vector $\\vec{ AB }$ for part (a)</strong><br>Subtract the position vector of $A$ from the position vector of $B$:<br>\\begin{aligned} \\vec{ AB } &= \\mathbf{b} - \\mathbf{a} \\cr &= ( 5\\mathbf{ i } - \\mathbf{ j } + 4\\mathbf{ k } ) - ( 3\\mathbf{ i } + \\mathbf{ j } - 2\\mathbf{ k } ) \\cr &= ( 5 - 3 )\\mathbf{ i } + ( -1 - 1 )\\mathbf{ j } + ( 4 - ( -2 ) )\\mathbf{ k } \\cr &= 2\\mathbf{ i } - 2\\mathbf{ j } + 6\\mathbf{ k } \\cr \\end{aligned}",
+        "<strong>Step 2: Solve for the position vector of $D$</strong><br>Since $\\vec{ AB } = \\vec{ BD }$, the point $B$ is the midpoint of the line segment $AD$. We can find the position vector of $D$ by adding $\\vec{ AB }$ to the position vector of $B$:<br>\\begin{aligned} \\mathbf{d} &= \\mathbf{b} + \\vec{ BD } \\cr &= \\mathbf{b} + \\vec{ AB } \\cr &= ( 5\\mathbf{ i } - \\mathbf{ j } + 4\\mathbf{ k } ) + ( 2\\mathbf{ i } - 2\\mathbf{ j } + 6\\mathbf{ k } ) \\cr &= 7\\mathbf{ i } - 3\\mathbf{ j } + 10\\mathbf{ k } \\cr \\end{aligned}",
+        "<strong>Step 3: Express the displacement vector $\\vec{ AC }$ for part (b)</strong><br>Subtract the position vector of $A$ from the position vector of $C$:<br>\\begin{aligned} \\vec{ AC } &= \\mathbf{c} - \\mathbf{a} \\cr &= ( p\\mathbf{ i } + 4\\mathbf{ j } - \\mathbf{ k } ) - ( 3\\mathbf{ i } + \\mathbf{ j } - 2\\mathbf{ k } ) \\cr &= ( p - 3 )\\mathbf{ i } + ( 4 - 1 )\\mathbf{ j } + ( -1 - ( -2 ) )\\mathbf{ k } \\cr &= ( p - 3 )\\mathbf{ i } + 3\\mathbf{ j } + \\mathbf{ k } \\cr \\end{aligned}",
+        "<strong>Step 4: Set up the magnitude equation</strong><br>The magnitude of a vector $\\mathbf{v} = x\\mathbf{ i } + y\\mathbf{ j } + z\\mathbf{ k }$ is $|\\mathbf{v}| = \\sqrt{ x^2 + y^2 + z^2 }$. Set the squared magnitude of $\\vec{ AC }$ equal to $5^2$:<br>\\begin{aligned} |\\vec{ AC }|^2 &= ( p - 3 )^2 + 3^2 + 1^2 \\cr 5^2 &= ( p - 3 )^2 + 9 + 1 \\cr 25 &= ( p - 3 )^2 + 10 \\cr \\end{aligned}",
+        "<strong>Step 5: Solve the quadratic equation for $p$</strong><br>Isolate the squared term and solve:<br>\\begin{aligned} ( p - 3 )^2 &= 15 \\cr p - 3 &= \\pm \\sqrt{ 15 } \\cr p &= 3 \\pm \\sqrt{ 15 } \\cr \\end{aligned}<br>Since the question specifies that $p < 0$, we must discard the positive root, leaving us with:<br>$$p = 3 - \\sqrt{ 15 }$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\mathbf{d} = 7\\mathbf{ i } - 3\\mathbf{ j } + 10\\mathbf{ k }, \\quad p = 3 + \\sqrt{ 15 }$$",
+            "feedback": "You successfully solved the algebra for part (b), but you may have forgotten to check the initial constraint $p < 0$. Since $\\sqrt{15} \\approx 3.87$, the value $3 + \\sqrt{15}$ is positive, so you must discard it and keep only the negative root $3 - \\sqrt{15}$."
+        },
+        {
+            "ans": "$$\\mathbf{d} = 7\\mathbf{ i } - 3\\mathbf{ j } + 10\\mathbf{ k }, \\quad p = 3 - \\sqrt{ 5 }$$",
+            "feedback": "You may have made an arithmetic slip in Step 4 when squaring the components. Check that you calculated $3^2 + 1^2 = 9 + 1 = 10$, rather than mistakenly writing $3 + 1 = 4$ or subtracting terms incorrectly."
+        },
+        {
+            "ans": "$$\\mathbf{d} = 2\\mathbf{ i } - 2\\mathbf{ j } + 6\\mathbf{ k }, \\quad p = 3 - \\sqrt{ 15 }$$",
+            "feedback": "You may have written the displacement vector $\\vec{AB}$ as your final answer for the position vector of $D$. Remember to add $\\vec{AB}$ to the position vector of $B$ to find the absolute position vector of $D$ relative to the origin."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Displacement vs. Position Vectors",
+        "content": "Always distinguish between a displacement vector (the vector path from one point to another, like $\\vec{ AB }$) and a position vector (the coordinates of a point relative to the origin, like $\\mathbf{ a }$ or $\\mathbf{ d }$). A very common exam slip is writing down $\\vec{ AB }$ as your final answer for point $D$ instead of adding it to the reference point $\\mathbf{ b }$."
+    }
+},
+{
+    "id": "004437",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Vectors",
+    "topic": "3D Vectors",
+    "subtopic": [
+        "Position Vectors",
+        "Vector Magnitude"
+    ],
+    "img": false,
+    "question": "Relative to a fixed origin $O$, the point $A$ has position vector $(\\mathbf{ i } + 4\\mathbf{ j } - 3\\mathbf{ k })$, the point $B$ has position vector $(3\\mathbf{ i } + \\mathbf{ j } + 2\\mathbf{ k })$, and the point $C$ has position vector $(5\\mathbf{ i } + q\\mathbf{ j } + \\mathbf{ k })$, where $q$ is a constant and $q > 0$. $D$ is the point such that $\\vec{ AD } = 3\\vec{ AB }$.<br><br><strong>(a)</strong> Find the position vector of $D$. [2]<br><br><strong>(b)</strong> Given that $|\\vec{ BC }| = \\sqrt{ 21 }$, find the value of $q$. [3]",
+    "steps": [
+        "<strong>Step 1: Calculate the displacement vector $\\vec{ AB }$ for part (a)</strong><br>Subtract the position vector of $A$ from the position vector of $B$:<br>\\begin{aligned} \\vec{ AB } &= \\mathbf{b} - \\mathbf{a} \\cr &= ( 3\\mathbf{ i } + \\mathbf{ j } + 2\\mathbf{ k } ) - ( \\mathbf{ i } + 4\\mathbf{ j } - 3\\mathbf{ k } ) \\cr &= ( 3 - 1 )\\mathbf{ i } + ( 1 - 4 )\\mathbf{ j } + ( 2 - ( -3 ) )\\mathbf{ k } \\cr &= 2\\mathbf{ i } - 3\\mathbf{ j } + 5\\mathbf{ k } \\cr \\end{aligned}",
+        "<strong>Step 2: Find the position vector of $D$</strong><br>Multiply $\\vec{ AB }$ by $3$ to find the displacement vector $\\vec{ AD }$:<br>\\begin{aligned} \\vec{ AD } &= 3\\vec{ AB } \\cr &= 3( 2\\mathbf{ i } - 3\\mathbf{ j } + 5\\mathbf{ k } ) \\cr &= 6\\mathbf{ i } - 9\\mathbf{ j } + 15\\mathbf{ k } \\cr \\end{aligned}<br>Now, add $\\vec{ AD }$ to the position vector of $A$ to obtain the position vector of $D$:<br>\\begin{aligned} \\mathbf{d} &= \\mathbf{a} + \\vec{ AD } \\cr &= ( \\mathbf{ i } + 4\\mathbf{ j } - 3\\mathbf{ k } ) + ( 6\\mathbf{ i } - 9\\mathbf{ j } + 15\\mathbf{ k } ) \\cr &= 7\\mathbf{ i } - 5\\mathbf{ j } + 12\\mathbf{ k } \\cr \\end{aligned}",
+        "<strong>Step 3: Express the displacement vector $\\vec{ BC }$ for part (b)</strong><br>Subtract the position vector of $B$ from the position vector of $C$:<br>\\begin{aligned} \\vec{ BC } &= \\mathbf{c} - \\mathbf{b} \\cr &= ( 5\\mathbf{ i } + q\\mathbf{ j } + \\mathbf{ k } ) - ( 3\\mathbf{ i } + \\mathbf{ j } + 2\\mathbf{ k } ) \\cr &= ( 5 - 3 )\\mathbf{ i } + ( q - 1 )\\mathbf{ j } + ( 1 - 2 )\\mathbf{ k } \\cr &= 2\\mathbf{ i } + ( q - 1 )\\mathbf{ j } - \\mathbf{ k } \\cr \\end{aligned}",
+        "<strong>Step 4: Set up the magnitude equation</strong><br>Use the 3D magnitude formula and square both sides to remove the square root, setting $|\\vec{ BC }|^2 = ( \\sqrt{ 21 } )^2$:<br>\\begin{aligned} |\\vec{ BC }|^2 &= 2^2 + ( q - 1 )^2 + ( -1 )^2 \\cr 21 &= 4 + ( q - 1 )^2 + 1 \\cr 21 &= ( q - 1 )^2 + 5 \\cr \\end{aligned}",
+        "<strong>Step 5: Solve the quadratic equation for $q$</strong><br>Isolate the squared term and solve for $q$:<br>\\begin{aligned} ( q - 1 )^2 &= 16 \\cr q - 1 &= \\pm 4 \\cr q &= 1 \\pm 4 \\cr \\end{aligned}<br>This yields two potential values: $q = 5$ or $q = -3$. Since the question specifies that $q > 0$, we discard $q = -3$ to get:<br>$$q = 5$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\mathbf{d} = 7\\mathbf{ i } - 5\\mathbf{ j } + 12\\mathbf{ k }, \\quad q = 5 \\text{ or } q = -3$$",
+            "feedback": "You successfully solved the quadratic equation, but you may have forgotten to apply the boundary constraint $q > 0$. Since $q$ must be strictly positive, you must discard the negative root $q = -3$."
+        },
+        {
+            "ans": "$$\\mathbf{d} = 6\\mathbf{ i } - 9\\mathbf{ j } + 15\\mathbf{ k }, \\quad q = 5$$",
+            "feedback": "You may have written down the displacement vector $\\vec{AD}$ as your final answer for the position vector of $D$. Remember to add $\\vec{AD}$ to the position vector of $A$ to find the absolute position vector relative to the origin."
+        },
+        {
+            "ans": "$$\\mathbf{d} = 7\\mathbf{ i } - 5\\mathbf{ j } + 12\\mathbf{ k }, \\quad q = 1 + \\sqrt{ 17 }$$",
+            "feedback": "You may have made an arithmetic slip in Step 4 when squaring the components of $\\vec{BC}$. Check that you calculated $2^2 + ( -1 )^2 = 4 + 1 = 5$, rather than writing $2 + 1 = 3$ or another value."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Tracking Scaling Reference Points",
+        "content": "When a vector scaling relation is defined as $\\vec{ AD } = 3\\vec{ AB }$, always remember that the starting point of the path is $A$. Therefore, the position vector of $D$ must be found relative to $A$, which means $\\mathbf{ d } = \\mathbf{ a } + 3\\vec{ AB }$. Adding the scaled vector to $\\mathbf{ b }$ instead of $\\mathbf{ a }$ is a very common source of lost marks."
+    }
+},
+{
+    "id": "004438",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Vectors",
+    "topic": "3D Vectors",
+    "subtopic": [
+        "Displacement Vectors",
+        "Perpendicular Vectors"
+    ],
+    "img": false,
+    "question": "Relative to a fixed origin $O$, the points $A$ and $B$ have position vectors:<br>$$\\begin{aligned} \\mathbf{a} &= 4\\mathbf{ i } - 2\\mathbf{ j } + \\lambda\\mathbf{ k } \\cr \\mathbf{b} &= 2\\mathbf{ i } + 3\\mathbf{ j } - \\mathbf{ k } \\end{aligned}$$<br>where $\\lambda$ is a constant.<br><br><strong>(a)</strong> Find the vector $\\vec{ AB }$ in terms of $\\lambda$. [2]<br><br><strong>(b)</strong> Given that the vector $\\vec{ AB }$ is perpendicular to the vector $\\mathbf{u} = 2\\mathbf{ i } + 2\\mathbf{ j } + 3\\mathbf{ k }$, find the value of $\\lambda$. [3]",
+    "steps": [
+        "<strong>Step 1: Calculate the displacement vector $\\vec{ AB }$ in terms of $\\lambda$</strong><br>Subtract the position vector of $A$ from the position vector of $B$:<br>\\begin{aligned} \\vec{ AB } &= \\mathbf{b} - \\mathbf{a} \\cr &= ( 2\\mathbf{ i } + 3\\mathbf{ j } - \\mathbf{ k } ) - ( 4\\mathbf{ i } - 2\\mathbf{ j } + \\lambda\\mathbf{ k } ) \\cr &= ( 2 - 4 )\\mathbf{ i } + ( 3 - ( -2 ) )\\mathbf{ j } + ( -1 - \\lambda )\\mathbf{ k } \\cr &= -2\\mathbf{ i } + 5\\mathbf{ j } - ( 1 + \\lambda )\\mathbf{ k } \\cr \\end{aligned}",
+        "<strong>Step 2: Understand the condition for perpendicular vectors</strong><br>Two vectors are perpendicular if and only if their scalar (dot) product is exactly equal to zero:<br>$$\\vec{ AB } \\cdot \\mathbf{u} = 0$$",
+        "<strong>Step 3: Calculate the dot product</strong><br>Multiply the corresponding components of $\\vec{ AB }$ and $\\mathbf{u}$ and add them together:<br>\\begin{aligned} \\vec{ AB } \\cdot \\mathbf{u} &= ( -2 )( 2 ) + ( 5 )( 2 ) + ( -( 1 + \\lambda ) )( 3 ) \\cr &= -4 + 10 - 3( 1 + \\lambda ) \\cr &= 6 - 3 - 3\\lambda \\cr &= 3 - 3\\lambda \\cr \\end{aligned}",
+        "<strong>Step 4: Solve for $\\lambda$</strong><br>Set the scalar product equal to zero and solve the linear equation:<br>\\begin{aligned} 3 - 3\\lambda &= 0 \\cr 3\\lambda &= 3 \\cr \\lambda &= 1 \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\vec{ AB } = -2\\mathbf{ i } + 5\\mathbf{ j } - ( 1 + \\lambda )\\mathbf{ k }, \\quad \\lambda = -1$$",
+            "feedback": "You may have made a sign error when solving the equation $3 - 3\\lambda = 0$ in Step 4, leading to the incorrect root of $\\lambda = -1$."
+        },
+        {
+            "ans": "$$\\vec{ AB } = -2\\mathbf{ i } + 5\\mathbf{ j } - ( 1 + \\lambda )\\mathbf{ k }, \\quad \\lambda = 3$$",
+            "feedback": "You may have made an algebraic slip when expanding $-3(1 + \\lambda)$ in Step 3, perhaps writing it as $-3 + 3\\lambda$, which leads to the incorrect linear equation $3 + 3\\lambda = 0$ or another slip."
+        },
+        {
+            "ans": "$$\\vec{ AB } = 2\\mathbf{ i } - 5\\mathbf{ j } + ( 1 + \\lambda )\\mathbf{ k }, \\quad \\lambda = 1$$",
+            "feedback": "You may have subtracted the vectors in the wrong order in part (a), calculating $\\mathbf{a} - \\mathbf{b}$ instead of $\\mathbf{b} - \\mathbf{a}$. Remember that the displacement vector from $A$ to $B$ is always $\\vec{ AB } = \\mathbf{b} - \\mathbf{a}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Perpendicular Dot Product",
+        "content": "The scalar product (dot product) is the most standard tool for proving or utilizing perpendicularity in vector geometry. Always remember: $\\mathbf{ a } \\cdot \\mathbf{ b } = 0 \\iff \\mathbf{ a } \\perp \\mathbf{ b }$. Be extremely careful with signs when multiplying negative coordinates in the dot product summation."
+    }
+},
+{
+    "id": "004439",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Vectors",
+    "topic": "3D Vectors",
+    "subtopic": [
+        "Collinear Points",
+        "Vector Ratio Division"
+    ],
+    "img": false,
+    "question": "The points $A$, $B$, and $C$ have position vectors relative to a fixed origin $O$ given by:<br>$$\\begin{aligned} \\mathbf{a} &= 2\\mathbf{ i } - \\mathbf{ j } + 3\\mathbf{ k } \\cr \\mathbf{b} &= 5\\mathbf{ i } + 5\\mathbf{ j } - 3\\mathbf{ k } \\cr \\mathbf{c} &= \\mu\\mathbf{ i } + 13\\mathbf{ j } - 11\\mathbf{ k } \\end{aligned}$$<br>where $\\mu$ is a constant.<br><br><strong>(a)</strong> Given that the points $A$, $B$, and $C$ lie on a straight line, find the value of the constant $\\mu$. [4]<br><br><strong>(b)</strong> Find the ratio in which the point $B$ divides the line segment $AC$. [2]",
+    "steps": [
+        "<strong>Step 1: Calculate the displacement vectors $\\vec{ AB }$ and $\\vec{ AC }$ for part (a)</strong><br>Subtract the corresponding coordinates to find the vectors:<br>\\begin{aligned} \\vec{ AB } &= \\mathbf{b} - \\mathbf{a} \\cr &= ( 5 - 2 )\\mathbf{ i } + ( 5 - ( -1 ) )\\mathbf{ j } + ( -3 - 3 )\\mathbf{ k } \\cr &= 3\\mathbf{ i } + 6\\mathbf{ j } - 6\\mathbf{ k } \\cr \\end{aligned}<br>and:<br>\\begin{aligned} \\vec{ AC } &= \\mathbf{c} - \\mathbf{a} \\cr &= ( \\mu - 2 )\\mathbf{ i } + ( 13 - ( -1 ) )\\mathbf{ j } + ( -11 - 3 )\\mathbf{ k } \\cr &= ( \\mu - 2 )\\mathbf{ i } + 14\\mathbf{ j } - 14\\mathbf{ k } \\cr \\end{aligned}",
+        "<strong>Step 2: Apply the condition for collinear points</strong><br>For points $A$, $B$, and $C$ to lie on a straight line (collinear), the displacement vectors $\\vec{ AB }$ and $\\vec{ AC }$ must be parallel. This means there exists a scalar constant $k$ such that:<br>$$\\vec{ AC } = k\\vec{ AB }$$",
+        "<strong>Step 3: Solve for $k$ using the known components</strong><br>Compare the $\\mathbf{ j }$ and $\\mathbf{ k }$ components of the two vectors:<br>\\begin{aligned} 14 &= 6k \\implies k = \\dfrac{ 14 }{ 6 } = \\dfrac{ 7 }{ 3 } \\cr -14 &= -6k \\implies k = \\dfrac{ -14 }{ -6 } = \\dfrac{ 7 }{ 3 } \\cr \\end{aligned}<br>This shows consistency, confirming $k = \\dfrac{ 7 }{ 3 }$.",
+        "<strong>Step 4: Solve for the constant $\\mu$</strong><br>Equate the $\\mathbf{ i }$ components using $k = \\dfrac{ 7 }{ 3 }$:<br>\\begin{aligned} \\mu - 2 &= 3k \\cr \\mu - 2 &= 3\\left( \\dfrac{ 7 }{ 3 } \\right) \\cr \\mu - 2 &= 7 \\cr \\mu &= 9 \\cr \\end{aligned}",
+        "<strong>Step 5: Determine the ratio in part (b)</strong><br>From our calculations, we have established that $\\vec{ AC } = \\dfrac{ 7 }{ 3 }\\vec{ AB }$. This means:<br>\\begin{aligned} 3\\vec{ AC } &= 7\\vec{ AB } \\cr \\end{aligned}<br>The total segment length $AC$ is represented by $7$ units of length, while the segment $AB$ is represented by $3$ units. Therefore, the remaining segment $BC$ is:<br>\\begin{aligned} BC &= AC - AB \\cr &= 7 - 3 \\cr &= 4 \\text{ units} \\cr \\end{aligned}<br>Thus, the ratio in which $B$ divides $AC$ is:<br>$$AB : BC = 3 : 4$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\mu = 9, \\quad \\text{Ratio } 3 : 7$$",
+            "feedback": "You may have written the ratio of the segment $AB$ to the entire segment $AC$ ($3 : 7$). The question asks for the ratio in which the point $B$ *divides* the line segment $AC$, which refers to the ratio of the two separate parts, $AB : BC = 3 : 4$."
+        },
+        {
+            "ans": "$$\\mu = 7, \\quad \\text{Ratio } 3 : 4$$",
+            "feedback": "You may have made an algebraic slip in Step 4, equating $\\mu = 7$ directly without adding the 2 from the term $( \\mu - 2 )$ on the left-hand side."
+        },
+        {
+            "ans": "$$\\mu = 9, \\quad \\text{Ratio } 4 : 3$$",
+            "feedback": "You may have written the ratio backwards. Since $AB$ is shorter than $BC$ ($3$ units vs $4$ units), the ratio of division is $3 : 4$ (not $4 : 3$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Collinear Vectors",
+        "content": "To prove that three points $A$, $B$, and $C$ are collinear, you must show two things: first, that two vectors formed by these points are parallel (i.e., $\\vec{ AC } = k\\vec{ AB }$); second, that they share a common point (such as $A$ or $B$). Simply showing parallel gradients is not enough, as parallel lines do not necessarily lie on the same straight line."
+    }
+},
+{
+    "id": "004440",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Vectors",
+    "topic": "3D Vectors",
+    "subtopic": [
+        "Vector Magnitude",
+        "Geometric Triangles"
+    ],
+    "img": false,
+    "question": "Relative to a fixed origin $O$, the points $A$, $B$, and $C$ have position vectors:<br>$$\\begin{aligned} \\mathbf{a} &= \\mathbf{i} + 2\\mathbf{j} \\cr \\mathbf{b} &= 3\\mathbf{i} + \\mathbf{j} + 3\\mathbf{k} \\cr \\mathbf{c} &= 2\\mathbf{i} + 5\\mathbf{j} + 2\\mathbf{k} \\end{aligned}$$<br><br><strong>(a)</strong> Show that the triangle $ABC$ is isosceles. [3]<br><br><strong>(b)</strong> Find the exact perimeter of triangle $ABC$, giving your answer in the form $a\\sqrt{ 14 } + b\\sqrt{ 2 }$, where $a$ and $b$ are integers. [2]",
+    "steps": [
+        "<strong>Step 1: Calculate the displacement vectors representing the sides of the triangle</strong><br>Find the vectors $\\vec{ AB }$, $\\vec{ AC }$, and $\\vec{ BC }$ by subtracting position vectors:<br>\\begin{aligned} \\vec{ AB } &= \\mathbf{b} - \\mathbf{a} \\cr &= ( 3 - 1 )\\mathbf{ i } + ( 1 - 2 )\\mathbf{ j } + ( 3 - 0 )\\mathbf{ k } \\cr &= 2\\mathbf{ i } - \\mathbf{ j } + 3\\mathbf{ k } \\cr \\end{aligned}<br>and:<br>\\begin{aligned} \\vec{ AC } &= \\mathbf{c} - \\mathbf{a} \\cr &= ( 2 - 1 )\\mathbf{ i } + ( 5 - 2 )\\mathbf{ j } + ( 2 - 0 )\\mathbf{ k } \\cr &= \\mathbf{ i } + 3\\mathbf{ j } + 2\\mathbf{ k } \\cr \\end{aligned}<br>and:<br>\\begin{aligned} \\vec{ BC } &= \\mathbf{c} - \\mathbf{b} \\cr &= ( 2 - 3 )\\mathbf{ i } + ( 5 - 1 )\\mathbf{ j } + ( 2 - 3 )\\mathbf{ k } \\cr &= -\\mathbf{ i } + 4\\mathbf{ j } - \\mathbf{ k } \\cr \\end{aligned}",
+        "<strong>Step 2: Calculate the lengths of sides $AB$ and $AC$</strong><br>Using the 3D magnitude formula, find the side lengths of the triangle:<br>\\begin{aligned} |\\vec{ AB }| &= \\sqrt{ 2^2 + ( -1 )^2 + 3^2 } \\cr &= \\sqrt{ 4 + 1 + 9 } \\cr &= \\sqrt{ 14 } \\cr \\end{aligned}<br>and:<br>\\begin{aligned} |\\vec{ AC }| &= \\sqrt{ 1^2 + 3^2 + 2^2 } \\cr &= \\sqrt{ 1 + 9 + 4 } \\cr &= \\sqrt{ 14 } \\cr \\end{aligned}",
+        "<strong>Step 3: Complete the proof for part (a)</strong><br>Since the side lengths $AB$ and $AC$ are exactly equal ($AB = AC = \\sqrt{ 14 }$), the triangle $ABC$ has at least two equal sides. By definition, this proves that triangle $ABC$ is an isosceles triangle.",
+        "<strong>Step 4: Find the length of the third side $BC$ for part (b)</strong><br>Calculate the magnitude of the final displacement vector $\\vec{ BC }$:<br>\\begin{aligned} |\\vec{ BC }| &= \\sqrt{ ( -1 )^2 + 4^2 + ( -1 )^2 } \\cr &= \\sqrt{ 1 + 16 + 1 } \\cr &= \\sqrt{ 18 } \\cr &= \\sqrt{ 9 \\cdot 2 } \\cr &= 3\\sqrt{ 2 } \\cr \\end{aligned}",
+        "<strong>Step 5: Calculate the perimeter of the triangle</strong><br>The perimeter is the sum of all three side lengths:<br>\\begin{aligned} \\text{Perimeter} &= AB + AC + BC \\cr &= \\sqrt{ 14 } + \\sqrt{ 14 } + 3\\sqrt{ 2 } \\cr &= 2\\sqrt{ 14 } + 3\\sqrt{ 2 } \\cr \\end{aligned}<br>This is in the required form $a\\sqrt{ 14 } + b\\sqrt{ 2 }$ with integers $a = 2$ and $b = 3$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$2\\sqrt{ 14 } + 3\\sqrt{ 2 }, \\quad \\text{but failed to show isosceles property}$$",
+            "feedback": "You successfully calculated the correct perimeter, but make sure you wrote a concluding sentence in part (a) explicitly stating that $AB = AC = \\sqrt{14}$ to earn the final communication mark for the proof."
+        },
+        {
+            "ans": "$$\\text{Perimeter} = 2\\sqrt{ 14 } + \\sqrt{ 18 }$$",
+            "feedback": "You calculated the correct lengths, but you did not write the final expression in the exact simplified surd form required. You must simplify $\\sqrt{18}$ to $3\\sqrt{2}$ to match the form $a\\sqrt{14} + b\\sqrt{2}$."
+        },
+        {
+            "ans": "$$\\text{Perimeter} = 2\\sqrt{ 12 } + 3\\sqrt{ 2 }$$",
+            "feedback": "You may have made an arithmetic error when calculating the magnitude of $\\vec{AB}$ or $\\vec{AC}$, perhaps by subtracting the components instead of adding them ($4 - 1 + 9 = 12$ instead of $4 + 1 + 9 = 14$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Simplifying Surds for Perimeters",
+        "content": "Whenever an exam question specifies a surd form like $a\\sqrt{14} + b\\sqrt{2}$, it is a strong hint that one of your calculated side lengths (such as $\\sqrt{18}$) can be simplified by factorising out a perfect square: $\\sqrt{18} = \\sqrt{9 \\cdot 2} = 3\\sqrt{2}$. Always simplify your surds fully before summing your perimeter terms."
+    }
 }
 ];
