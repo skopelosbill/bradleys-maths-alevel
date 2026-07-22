@@ -1174,5 +1174,210 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Semicircle Right Angles",
         "content": "Always remember the theorem: 'The angle in a semicircle is a right angle.' Whenever you see a triangle drawn inside a circle where one side is the diameter, you can instantly assume the opposite vertex has a $90^\\circ$ angle. This simple realization is the key to setting up trigonometric equations for semicircle problems."
     }
+},
+{
+    "id": "004431",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Composite Functions",
+        "Inverse Functions",
+        "Domain and Range"
+    ],
+    "img": false,
+    "question": "The function $g$ is defined by:<br>$$g(x) = \\dfrac{ 3x + 1 }{ x - 1 }, \\quad x \\ge 3$$<br><br><strong>(a)</strong> Find $gg(3)$. [2]<br><br><strong>(b)</strong> State the range of $g$. [1]<br><br><strong>(c)</strong> Find $g^{-1}(x)$, stating its domain. [3]",
+    "steps": [
+        "<strong>Step 1: Evaluate the inner function for part (a)</strong><br>To evaluate the composite function $gg(3)$, first substitute $x = 3$ directly into the definition of $g(x)$:<br>\\begin{aligned} g( 3 ) &= \\dfrac{ 3( 3 ) + 1 }{ 3 - 1 } \\cr &= \\dfrac{ 10 }{ 2 } \\cr &= 5 \\cr \\end{aligned}",
+        "<strong>Step 2: Evaluate the outer function to find $gg(3)$</strong><br>Now, substitute your result $5$ back into the function $g(x)$:<br>\\begin{aligned} gg( 3 ) &= g( 5 ) \\cr &= \\dfrac{ 3( 5 ) + 1 }{ 5 - 1 } \\cr &= \\dfrac{ 16 }{ 4 } \\cr &= 4 \\cr \\end{aligned}",
+        "<strong>Step 3: Analyze the behavior of the function for part (b)</strong><br>As $x \\to \\infty$, the rational function $g(x) = \\dfrac{ 3x + 1 }{ x - 1 }$ approaches its horizontal asymptote:<br>\\begin{aligned} y \\to \\dfrac{ 3 }{ 1 } = 3 \\cr \\end{aligned}<br>Since the function is strictly decreasing for $x \\ge 3$, its maximum value occurs at the starting boundary $x = 3$, where $g( 3 ) = 5$. Therefore, the range of outputs is restricted to:<br>$$3 < g(x) \\le 5$$",
+        "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = g(x)$ and rearrange the equation to make $x$ the subject:<br>\\begin{aligned} y &= \\dfrac{ 3x + 1 }{ x - 1 } \\cr y( x - 1 ) &= 3x + 1 \\cr yx - y &= 3x + 1 \\cr \\end{aligned}",
+        "<strong>Step 5: Isolate and solve for $x$</strong><br>Group all terms containing $x$ on one side and factorise:<br>\\begin{aligned} yx - 3x &= y + 1 \\cr x( y - 3 ) &= y + 1 \\cr x &= \\dfrac{ y + 1 }{ y - 3 } \\cr \\end{aligned}<br>Replacing $y$ with $x$ yields:<br>$$g^{-1}(x) = \\dfrac{ x + 1 }{ x - 3 }$$",
+        "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of the inverse function $g^{-1}(x)$ is identical to the range of the original function $g(x)$ calculated in Step 3:<br>$$\\text{Domain: } 3 < x \\le 5$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$g^{-1}(x) = \\dfrac{ x + 1 }{ x - 3 }, \\quad \\text{Domain: } x \\ge 3$$",
+            "feedback": "You may have made the common mistake of assuming the domain of $g^{-1}(x)$ is the same as the domain of $g(x)$. Remember that the domain of an inverse function is strictly equal to the range of the original function, which is bounded by the restricted domain."
+        },
+        {
+            "ans": "$$g^{-1}(x) = \\dfrac{ x + 1 }{ x - 3 }, \\quad \\text{Domain: } x \\neq 3$$",
+            "feedback": "You may have found the domain of the inverse function by looking only at its algebraic expression, which suggests $x$ cannot be 3. However, because the original function has a restricted domain $x \\ge 3$, the range of $g(x)$ is restricted to $3 < y \\le 5$. Thus, the domain of $g^{-1}(x)$ must be restricted to $3 < x \\le 5$."
+        },
+        {
+            "ans": "$$g^{-1}(x) = \\dfrac{ x + 1 }{ x - 3 }, \\quad \\text{Domain: } 3 \\le x \\le 5$$",
+            "feedback": "You may have used a weak inequality ($\\le$) for the lower bound of the domain. Because $y = 3$ is a horizontal asymptote that the curve approaches but never reaches as $x \\to \\infty$, the lower bound of the range is strictly greater than 3 ($x > 3$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Mapping Domains and Ranges",
+        "content": "Always remember the golden rule of inverse functions: the domain of $g^{-1}(x)$ is exactly equal to the range of $g(x)$, and the range of $g^{-1}(x)$ is exactly equal to the domain of $g(x)$. Never attempt to find the domain of an inverse function simply by looking at its algebraic expression; you must evaluate the output boundaries of your original function."
+    }
+},
+{
+    "id": "004432",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Composite Functions",
+        "Inverse Functions",
+        "Domain and Range"
+    ],
+    "img": false,
+    "question": "The function $h$ is defined by:<br>$$h(x) = \\dfrac{ 4x + 2 }{ x - 2 }, \\quad x \\ge 3$$<br><br><strong>(a)</strong> Find $hh(3)$. [2]<br><br><strong>(b)</strong> State the range of $h$. [1]<br><br><strong>(c)</strong> Find $h^{-1}(x)$, stating its domain. [3]",
+    "steps": [
+        "<strong>Step 1: Evaluate the inner function for part (a)</strong><br>To find the composite function value $hh(3)$, first substitute $x = 3$ into the function $h(x)$:<br>\\begin{aligned} h( 3 ) &= \\dfrac{ 4( 3 ) + 2 }{ 3 - 2 } \\cr &= \\dfrac{ 14 }{ 1 } \\cr &= 14 \\cr \\end{aligned}",
+        "<strong>Step 2: Evaluate the outer function to find $hh(3)$</strong><br>Now, substitute $14$ back into the function $h(x)$:<br>\\begin{aligned} hh( 3 ) &= h( 14 ) \\cr &= \\dfrac{ 4( 14 ) + 2 }{ 14 - 2 } \\cr &= \\dfrac{ 58 }{ 12 } \\cr &= \\dfrac{ 29 }{ 6 } \\cr \\end{aligned}",
+        "<strong>Step 3: Determine the range of $h$ for part (b)</strong><br>As $x \\to \\infty$, the rational function $h(x) = \\dfrac{ 4x + 2 }{ x - 2 }$ approaches its horizontal asymptote:<br>\\begin{aligned} y \\to \\dfrac{ 4 }{ 1 } = 4 \\cr \\end{aligned}<br>Since the function is continuous and decreasing for $x \\ge 3$, its maximum value occurs at the boundary $x = 3$, where $h( 3 ) = 14$. Thus, the range of $h$ is restricted to:<br>$$4 < h(x) \\le 14$$",
+        "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = h(x)$ and rearrange the expression to make $x$ the subject:<br>\\begin{aligned} y &= \\dfrac{ 4x + 2 }{ x - 2 } \\cr y( x - 2 ) &= 4x + 2 \\cr yx - 2y &= 4x + 2 \\cr \\end{aligned}",
+        "<strong>Step 5: Isolate and solve for $x$</strong><br>Move all terms containing $x$ to one side and factorise:<br>\\begin{aligned} yx - 4x &= 2y + 2 \\cr x( y - 4 ) &= 2( y + 1 ) \\cr x &= \\dfrac{ 2y + 2 }{ y - 4 } \\cr \\end{aligned}<br>Replacing $y$ with $x$ gives:<br>$$h^{-1}(x) = \\dfrac{ 2x + 2 }{ x - 4 }$$",
+        "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of $h^{-1}(x)$ is equal to the range of the original function $h(x)$ calculated in Step 3:<br>$$\\text{Domain: } 4 < x \\le 14$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$h^{-1}(x) = \\dfrac{ 2x + 2 }{ x - 4 }, \\quad \\text{Domain: } x \\ge 3$$",
+            "feedback": "You may have incorrectly written the original domain of $h(x)$ as the domain for $h^{-1}(x)$. The domain of an inverse function must always equal the range of the original function, which is bounded by the restricted domain."
+        },
+        {
+            "ans": "$$h^{-1}(x) = \\dfrac{ 2x + 2 }{ x - 4 }, \\quad \\text{Domain: } x \\neq 4$$",
+            "feedback": "You may have found the domain of the inverse function by looking only at its algebraic expression, which suggests $x$ cannot be 4. However, because the original function has a restricted domain $x \\ge 3$, the range of $h(x)$ is restricted to $4 < y \\le 14$. Thus, the domain of $h^{-1}(x)$ must be restricted to $4 < x \\le 14$."
+        },
+        {
+            "ans": "$$h^{-1}(x) = \\dfrac{ 2x + 2 }{ x - 4 }, \\quad \\text{Domain: } 4 \\le x \\le 14$$",
+            "feedback": "You may have used a non-strict inequality for the lower boundary. Because $y = 4$ is a horizontal asymptote that the graph approaches but never touches as $x \\to \\infty$, the lower bound of the range is strictly greater than 4 ($x > 4$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Finding Horizontal Asymptotes",
+        "content": "For a rational function of the form $y = \\dfrac{ax + b}{cx + d}$, the horizontal asymptote as $x \\to \\infty$ is always given by the ratio of the leading coefficients, $y = \\dfrac{a}{c}$. Recognizing this allows you to instantly determine the lower limit (or upper limit) of your range without needing to sketch a complex graph."
+    }
+},
+{
+    "id": "004433",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Composite Functions",
+        "Inverse Functions",
+        "Logarithmic and Exponential Functions"
+    ],
+    "img": false,
+    "question": "The functions $f$ and $g$ are defined by:<br>$$\\begin{aligned} f(x) &= \\ln( x - 2 ), \\quad x > 3 \\cr g(x) &= \\mathrm{e}^{2x} + 2, \\quad x \\in \\mathbb{R} \\end{aligned}$$<br><br><strong>(a)</strong> Find an expression for the composite function $fg(x)$, writing your answer in its simplest form. [2]<br><br><strong>(b)</strong> State the range of $f$. [1]<br><br><strong>(c)</strong> Find $f^{-1}(x)$, stating its domain. [3]",
+    "steps": [
+        "<strong>Step 1: Set up the composite function for part (a)</strong><br>To find the composite function $fg(x)$, substitute the entire expression of $g(x)$ as the input inside $f(x)$:<br>\\begin{aligned} fg(x) &= f( g(x) ) \\cr &= \\ln( ( \\mathrm{e}^{2x} + 2 ) - 2 ) \\cr \\end{aligned}",
+        "<strong>Step 2: Simplify the composite expression</strong><br>Simplify the terms inside the natural logarithm:<br>\\begin{aligned} fg(x) &= \\ln( \\mathrm{e}^{2x} ) \\cr &= 2x \\cr \\end{aligned}",
+        "<strong>Step 3: Determine the range of $f$ for part (b)</strong><br>Since the domain of $f(x) = \\ln( x - 2 )$ is $x > 3$, evaluate the boundary value:<br>\\begin{aligned} f( 3 ) &= \\ln( 3 - 2 ) \\cr &= \\ln( 1 ) \\cr &= 0 \\cr \\end{aligned}<br>Since $\\ln( x - 2 )$ is a strictly increasing function, for all $x > 3$, $f(x)$ will be greater than $0$. Thus, the range of $f$ is:<br>$$f(x) > 0$$",
+        "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = f(x)$ and rearrange the logarithmic equation to solve for $x$:<br>\\begin{aligned} y &= \\ln( x - 2 ) \\cr \\mathrm{e}^y &= x - 2 \\cr \\end{aligned}",
+        "<strong>Step 5: Solve for $x$ to find the inverse</strong><br>Isolate $x$ on one side:<br>\\begin{aligned} x &= \\mathrm{e}^y + 2 \\cr \\end{aligned}<br>Replacing $y$ with $x$ gives:<br>$$f^{-1}(x) = \\mathrm{e}^x + 2$$",
+        "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of $f^{-1}(x)$ is equal to the range of the original function $f(x)$ calculated in Step 3:<br>$$\\text{Domain: } x > 0$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$f^{-1}(x) = \\mathrm{e}^x + 2, \\quad \\text{Domain: } x > 3$$",
+            "feedback": "You may have incorrectly written the original domain of $f(x)$ as the domain of $f^{-1}(x)$. Remember that the domain of $f^{-1}(x)$ must equal the range of $f(x)$, which is $x > 0$."
+        },
+        {
+            "ans": "$$f^{-1}(x) = \\mathrm{e}^{x + 2}, \\quad \\text{Domain: } x > 0$$",
+            "feedback": "You may have made an algebraic error when eliminating the natural logarithm, incorrectly writing $\\mathrm{e}^y = x - 2 \\implies \\mathrm{e}^{y+2} = x$. Make sure you add 2 outside of the exponential power."
+        },
+        {
+            "ans": "$$f^{-1}(x) = \\mathrm{e}^x - 2, \\quad \\text{Domain: } x > 0$$",
+            "feedback": "You may have made a sign error when isolating $x$, writing $\\mathrm{e}^y = x - 2 \\implies x = \\mathrm{e}^y - 2$. Check your sign transposition."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Exponential and Logarithmic Inverses",
+        "content": "Since logarithmic and exponential functions are inverses of each other, applying $\\mathrm{e}$ to both sides of an equation is the standard way to clear a natural logarithm $\\ln$. Always make sure to isolate the $\\ln$ term entirely before raising both sides to the power of $\\mathrm{e}$."
+    }
+},
+{
+    "id": "004434",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Composite Functions",
+        "Inverse Functions",
+        "Quadratic Functions"
+    ],
+    "img": false,
+    "question": "The function $f$ is defined by:<br>$$f(x) = x^2 - 4x + 9, \\quad x \\ge 2$$<br><br><strong>(a)</strong> Find $ff(3)$. [2]<br><br><strong>(b)</strong> State the range of $f$. [1]<br><br><strong>(c)</strong> Find $f^{-1}(x)$, stating its domain. [3]",
+    "steps": [
+        "<strong>Step 1: Evaluate the inner function for part (a)</strong><br>To find the composite function value $ff(3)$, first evaluate the function at $x = 3$:<br>\\begin{aligned} f( 3 ) &= ( 3 )^2 - 4( 3 ) + 9 \\cr &= 9 - 12 + 9 \\cr &= 6 \\cr \\end{aligned}",
+        "<strong>Step 2: Evaluate the outer function to find $ff(3)$</strong><br>Now, substitute your result $6$ back into the function $f(x)$:<br>\\begin{aligned} ff( 3 ) &= f( 6 ) \\cr &= ( 6 )^2 - 4( 6 ) + 9 \\cr &= 36 - 24 + 9 \\cr &= 21 \\cr \\end{aligned}",
+        "<strong>Step 3: Determine the range of $f$ for part (b)</strong><br>To find the range of the quadratic function $f(x) = x^2 - 4x + 9$, complete the square to locate its vertex:<br>\\begin{aligned} f(x) &= ( x - 2 )^2 - 4 + 9 \\cr &= ( x - 2 )^2 + 5 \\cr \\end{aligned}<br>Since $x \\ge 2$, the term $( x - 2 )^2 \\ge 0$, meaning the minimum value of $f(x)$ is $5$. The range of $f$ is:<br>$$f(x) \\ge 5$$",
+        "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = f(x)$ and use the completed square form to rearrange for $x$:<br>\\begin{aligned} y &= ( x - 2 )^2 + 5 \\cr y - 5 &= ( x - 2 )^2 \\cr \\end{aligned}",
+        "<strong>Step 5: Solve for $x$ to find the inverse</strong><br>Take the square root of both sides. Since our domain is restricted to $x \\ge 2$, we take the positive square root:<br>\\begin{aligned} x - 2 &= \\sqrt{ y - 5 } \\cr x &= 2 + \\sqrt{ y - 5 } \\cr \\end{aligned}<br>Replacing $y$ with $x$ yields:<br>$$f^{-1}(x) = 2 + \\sqrt{ x - 5 }$$",
+        "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of $f^{-1}(x)$ is equal to the range of the original function $f(x)$ calculated in Step 3:<br>$$\\text{Domain: } x \\ge 5$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$f^{-1}(x) = 2 + \\sqrt{ x - 5 }, \\quad \\text{Domain: } x \\ge 2$$",
+            "feedback": "You may have incorrectly stated the original domain of $f(x)$ as the domain of $f^{-1}(x)$. Always remember that the domain of $f^{-1}(x)$ must equal the range of $f(x)$."
+        },
+        {
+            "ans": "$$f^{-1}(x) = 2 - \\sqrt{ x - 5 }, \\quad \\text{Domain: } x \\ge 5$$",
+            "feedback": "You may have taken the negative square root in Step 5. Because the original domain is $x \\ge 2$, $x - 2$ must be non-negative, so you must select the positive square root."
+        },
+        {
+            "ans": "$$f^{-1}(x) = 2 + \\sqrt{ x + 5 }, \\quad \\text{Domain: } x \\ge 5$$",
+            "feedback": "You may have made a sign error when rearranging $y = (x-2)^2 + 5$, writing $y + 5 = (x-2)^2$ instead of $y - 5$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Completing the Square for Inverses",
+        "content": "To find the inverse of a quadratic function, you cannot easily rearrange $y = ax^2 + bx + c$ directly. You must first complete the square to write it in the form $y = a( x - h )^2 + k$. This allows you to isolate the squared bracket and cleanly take the square root."
+    }
+},
+{
+    "id": "004435",
+    "board": "Pearson Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Composite Functions",
+        "Inverse Functions",
+        "Radical Functions"
+    ],
+    "img": false,
+    "question": "The function $g$ is defined by:<br>$$g(x) = 1 + \\sqrt{ x - 3 }, \\quad x \\ge 3$$<br><br><strong>(a)</strong> Find $gg(7)$. [2]<br><br><strong>(b)</strong> State the range of $g$. [1]<br><br><strong>(c)</strong> Find $g^{-1}(x)$, stating its domain. [3]",
+    "steps": [
+        "<strong>Step 1: Evaluate the inner function for part (a)</strong><br>To evaluate the composite function $gg(7)$, first find the value of $g( 7 )$ by substituting $x = 7$:<br>\\begin{aligned} g( 7 ) &= 1 + \\sqrt{ 7 - 3 } \\cr &= 1 + \\sqrt{ 4 } \\cr &= 1 + 2 \\cr &= 3 \\cr \\end{aligned}",
+        "<strong>Step 2: Evaluate the outer function to find $gg(7)$</strong><br>Now substitute $3$ back into the function $g(x)$:<br>\\begin{aligned} gg( 7 ) &= g( 3 ) \\cr &= 1 + \\sqrt{ 3 - 3 } \\cr &= 1 + 0 \\cr &= 1 \\cr \\end{aligned}",
+        "<strong>Step 3: Determine the range of $g$ for part (b)</strong><br>For $x \\ge 3$, the square root term $\\sqrt{ x - 3 }$ is always non-negative ($\\ge 0$). Thus, the minimum value of $g(x)$ occurs when $\\sqrt{ x - 3 } = 0$, which yields $g( 3 ) = 1$. The range of $g$ is:<br>$$g(x) \\ge 1$$",
+        "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = g(x)$ and rearrange the radical equation to solve for $x$:<br>\\begin{aligned} y &= 1 + \\sqrt{ x - 3 } \\cr y - 1 &= \\sqrt{ x - 3 } \\cr \\end{aligned}",
+        "<strong>Step 5: Square both sides and isolate $x$</strong><br>Square both sides of the equation to eliminate the radical:<br>\\begin{aligned} ( y - 1 )^2 &= x - 3 \\cr x &= ( y - 1 )^2 + 3 \\cr \\end{aligned}<br>Replacing $y$ with $x$ yields:<br>$$g^{-1}(x) = ( x - 1 )^2 + 3$$",
+        "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of $g^{-1}(x)$ is equal to the range of the original function $g(x)$ calculated in Step 3:<br>$$\\text{Domain: } x \\ge 1$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$g^{-1}(x) = ( x - 1 )^2 + 3, \\quad \\text{Domain: } x \\ge 3$$",
+            "feedback": "You may have incorrectly written the original domain of $g(x)$ as the domain of $g^{-1}(x)$. Always remember that the domain of $g^{-1}(x)$ must equal the range of $g(x)$."
+        },
+        {
+            "ans": "$$g^{-1}(x) = ( x + 1 )^2 + 3, \\quad \\text{Domain: } x \\ge 1$$",
+            "feedback": "You may have made a sign error when subtracting 1 from both sides in Step 4, writing $y + 1 = \\sqrt{x-3}$ instead of $y - 1$."
+        },
+        {
+            "ans": "$$g^{-1}(x) = ( x - 1 )^2 - 3, \\quad \\text{Domain: } x \\ge 1$$",
+            "feedback": "You may have made a sign error when rearranging $(y-1)^2 = x - 3$, writing $x = (y-1)^2 - 3$ instead of adding 3 to both sides."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Restricting Quadratic Inverses",
+        "content": "A quadratic function is normally many-to-one, meaning it does not have a unique inverse. However, the inverse $g^{-1}(x) = ( x - 1 )^2 + 3$ is valid here because its domain is strictly restricted to $x \\ge 1$. This restriction ensures that the inverse corresponds exactly to the one-to-one radical branch of our original function."
+    }
 }
 ];
