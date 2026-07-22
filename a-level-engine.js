@@ -13,11 +13,11 @@ const ALevelHub = {
     // INIT — load default set (P1_1)
     // ---------------------------------------------
     async init() {
-        await this.loadSet("p1_1");
+        await this.loadSet("Pure_1");
     },
 
     // ---------------------------------------------
-    // LOAD ANY SET (p1_1, p1_2, p1_3, ...)
+    // LOAD ANY SET (Pure_1, Pure_2, Pure_3, ...)
     // ---------------------------------------------
     async loadSet(setName) {
         this.state.masterVault = [];
