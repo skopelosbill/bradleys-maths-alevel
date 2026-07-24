@@ -342,11 +342,11 @@ window.ALEVEL_QUESTIONS = [
       },
       {
         "ans": "$$y = \\pm\\dfrac{ \\sqrt{ 2 } }{ 2 }\\text{ and }2\\text{ solutions}$$",
-        "feedback": "This mistake arises from correctly identifying $y = \pm \frac{\sqrt{2}}{2}$ but miscounting the number of real solutions to $\cos\theta = 0.5$ in $0 \le \theta < 4\pi$. Since the interval covers two complete periods and each period has exactly 2 solutions, there must be 4 real solutions."
+        "feedback": "This mistake arises from correctly identifying $y = \\pm \\frac{\\sqrt{2}}{2}$ but miscounting the number of real solutions to $\\cos\\theta = 0.5$ in $0 \\le \\theta < 4\\pi$. Since the interval covers two complete periods and each period has exactly 2 solutions, there must be 4 real solutions."
       },
       {
         "ans": "$$y = \\dfrac{ \\sqrt{ 2 } }{ 2 }\\text{ and }4\\text{ solutions}$$",
-        "feedback": "This occurs if you neglect the negative square root of $y^2 = 0.5$, which yields the valid real solution $-\frac{\sqrt{2}}{2}$ along with the positive one."
+        "feedback": "This occurs if you neglect the negative square root of $y^2 = 0.5$, which yields the valid real solution $-\\frac{\\sqrt{2}}{2}$ along with the positive one."
       }
     ],
     "bradley_insight": {
