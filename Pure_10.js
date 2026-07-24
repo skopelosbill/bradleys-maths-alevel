@@ -220,10 +220,6 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
       {
-        "ans": "$$y = \\pm\\sqrt{ 3 }\\text{ and }4\\text{ solutions}$$",
-        "feedback": "Correct! You successfully factored the cubic, recognized the substitution $x = y^2$ (giving two real roots $y = \\pm\\sqrt{3}$), and deduced that there are exactly 4 tangent solutions across the 4 complete cycles of the interval."
-      },
-      {
         "ans": "$$y = \\pm 3\\text{ and }8\\text{ solutions}$$",
         "feedback": "This error occurs if you mistakenly solve $y^2 = 9$ (perhaps by misidentifying the root of $f(x) = 0$ as $9$ instead of $3$) and double the number of trig solutions by assuming a period of $\\frac{\\pi}{2}$ instead of $\\pi$ for $\\tan\\theta$."
       },
@@ -262,10 +258,6 @@ window.ALEVEL_QUESTIONS = [
       "<strong>Part (c):</strong><br>The equation is:<br>$$2\\sin^3\\theta + \\sin^2\\theta + \\sin\\theta - 4 = 0$$<br>Let $x = \\sin\\theta$. This yields $f(x) = 0 \\implies \\sin\\theta = 1$.<br>We look for solutions in the interval $0 \\le \\theta < 4\\pi$, which represents two complete periods of the sine function.<br>The sine function equals $1$ exactly once per period (at the maximum point of each cycle):<br>$$\\theta = \\dfrac{ \\pi }{ 2 }, \\quad \\theta = \\dfrac{ 5\\pi }{ 2 }$$<br>Thus, there are exactly $2$ real solutions."
     ],
     "pi_options": [
-      {
-        "ans": "$$y = \\pm 1\\text{ and }2\\text{ solutions}$$",
-        "feedback": "Correct! You successfully factored the cubic, identified that $y^4 = 1 \\implies y = \\pm 1$ represents the only real solutions in (b), and correctly determined that the sine function only peaks at 1 twice over the interval $0 \\le \\theta < 4\\pi$."
-      },
       {
         "ans": "$$y = 1\\text{ and }4\\text{ solutions}$$",
         "feedback": "This error occurs if you forget that $y^4 = 1$ has two real solutions ($y = \pm 1$) and also miscalculate the number of solutions to $\sin\theta = 1$ in the interval $[0, 4\pi)$, which has only 2 peaks."
@@ -306,10 +298,6 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
       {
-        "ans": "$$y = -\\sqrt[3]{ 2 }\\text{ and }0\\text{ solutions}$$",
-        "feedback": "Correct! You successfully recognized that $y^3 = -2$ has a single real root of $-\\sqrt[3]{2}$, and identified that $\\cos\\theta = -2$ is mathematically impossible since it lies outside the range $[-1, 1]$."
-      },
-      {
         "ans": "$$y = \\pm\\sqrt[3]{ 2 }\\text{ and }2\\text{ solutions}$$",
         "feedback": "This error occurs if you assume a cubic root equation $y^3 = -2$ has both positive and negative real solutions (which is only true for even powers) and if you mistakenly find solutions to $\\cos\\theta = -2$."
       },
@@ -349,10 +337,6 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
       {
-        "ans": "$$y = \\pm\\dfrac{ \\sqrt{ 2 } }{ 2 }\\text{ and }4\\text{ solutions}$$",
-        "feedback": "Correct! You successfully solved the quadratic substitution $y^2 = 0.5$ as $y = \pm\frac{\sqrt{2}}{2}$ and mapped the solutions of $\cos\theta = 0.5$ over two full cycles of the cosine wave to get exactly 4 solutions."
-      },
-      {
         "ans": "$$y = \\pm\\dfrac{ 1 }{ 2 }\\text{ and }2\\text{ solutions}$$",
         "feedback": "This error occurs if you resolve $y^2 = 0.5$ as $y = \pm 0.5$ (mistaking the square root of $0.5$ for $0.25$) and incorrectly assume there is only 1 solution to $\cos\theta = 0.5$ per period."
       },
@@ -391,10 +375,6 @@ window.ALEVEL_QUESTIONS = [
       "<strong>Part (c):</strong><br>The equation is:<br>$$4\\tan^3(2\\theta) - 2\\tan^2(2\\theta) + \\tan(2\\theta) - 3 = 0$$<br>Let $u = \\tan(2\\theta)$. This equation becomes $f(u) = 0$, which has only one real solution, $u = 1$. Thus:<br>$$\\tan(2\\theta) = 1$$<br>We search for solutions in the interval $0 \\le \\theta < \\pi$. Since the argument of the tangent function is $2\\theta$, we must scale the domain:<br>$$0 \\le 2\\theta < 2\\pi$$<br>The tangent function $\\tan(2\\theta)$ has a period of $\\pi$. Therefore, in the interval $[0, 2\\pi)$, the equation $\\tan(2\\theta) = 1$ has exactly two solutions (at $2\\theta = \\dfrac{ \\pi }{ 4 }$ and $2\\theta = \\dfrac{ 5\\pi }{ 4 }$).<br>Thus, there are exactly $2$ real solutions for $\\theta$."
     ],
     "pi_options": [
-      {
-        "ans": "$$y = 0\\text{ and }2\\text{ solutions}$$",
-        "feedback": "Correct! You successfully evaluated the exponential root as $y = \ln(1) = 0$ and properly scaled the domain to $0 \le 2\theta < 2\pi$ to count exactly 2 solutions to $\tan(2\theta) = 1$."
-      },
       {
         "ans": "$$y = 1\\text{ and }4\\text{ solutions}$$",
         "feedback": "This error occurs if you solve $e^y = 1$ to get $y = 1$ instead of $y = 0$, and if you fail to scale the domain for the double angle $2\theta$, resulting in an incorrect count of solutions."
