@@ -778,6 +778,196 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Standard Form Scaling",
         "content": "Using exact fractions instead of decimals (such as $-\\dfrac{ 1 }{ 100 }$ rather than $-0.01$) keeps the coefficients clean and makes algebra much easier to solve. Decimal forms often hide simple factorizations that become immediately obvious once the fractions are cleared."
     }
+},
+{
+    "id": "004471",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "First Principles",
+        "Trigonometric Differentiation"
+    ],
+    "img": false,
+    "question": "Given that $\\theta$ is measured in radians, we prove from first principles that $\\dfrac{ \\mathrm{d} }{ \\mathrm{d}\\theta }(\\sin \\theta) = \\cos \\theta$ by considering the limit of the difference quotient:<br>$$\\dfrac{ \\sin(\\theta + h) - \\sin \\theta }{ h }$$<br>Which of the following shows the correct algebraic rearrangement of this expression before the limit is taken as $h \\to 0$?",
+    "steps": [
+        "<strong>Step 1: Set up the limit of the difference quotient:</strong><br>By definition, the derivative of $\\sin \\theta$ with respect to $\\theta$ is given by the limit:<br>$$\\dfrac{ \\mathrm{d} }{ \\mathrm{d}\\theta }(\\sin \\theta) = \\lim_{ h \\to 0 } \\dfrac{ \\sin(\\theta + h) - \\sin \\theta }{ h }$$",
+        "<strong>Step 2: Expand the compound angle term:</strong><br>Using the compound angle identity $\\sin(A + B) = \\sin A \\cos B + \\cos A \\sin B$, we expand the numerator:<br>$$\\sin(\\theta + h) = \\sin \\theta \\cos h + \\cos \\theta \\sin h$$<br>Substituting this expansion back into our difference quotient gives:<br>$$\\dfrac{ \\sin \\theta \\cos h + \\cos \\theta \\sin h - \\sin \\theta }{ h }$$",
+        "<strong>Step 3: Group the sines and cosines:</strong><br>We can group the terms containing $\\sin \\theta$ in the numerator to factorise them:<br>\\begin{aligned} \\dfrac{ \\sin \\theta \\cos h + \\cos \\theta \\sin h - \\sin \\theta }{ h } &= \\dfrac{ \\sin \\theta ( \\cos h - 1 ) + \\cos \\theta \\sin h }{ h } \\\\cr &= \\sin \\theta \\left( \\dfrac{ \\cos h - 1 }{ h } \\right) + \\cos \\theta \\left( \\dfrac{ \\sin h }{ h } \\right) \\end{aligned}<br>This is the required algebraic rearrangement before taking limits.",
+        "<strong>Step 4: Take the limit as $h \\to 0$:</strong><br>Using the standard limit results that as $h \\to 0$, $\\dfrac{ \\sin h }{ h } \\to 1$ and $\\dfrac{ \\cos h - 1 }{ h } \\to 0$, we evaluate:<br>\\begin{aligned} \\dfrac{ \\mathrm{d} }{ \\mathrm{d}\\theta }(\\sin \\theta) &= \\sin \\theta ( 0 ) + \\cos \\theta ( 1 ) \\\\cr &= \\cos \\theta \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\sin \\theta \\left( \\dfrac{ \\cos h + 1 }{ h } \\right) - \\cos \\theta \\left( \\dfrac{ \\sin h }{ h } \\right)$",
+            "feedback": "This option contains a sign error in both the compound angle expansion and the grouping of the $\\sin \\theta$ term."
+        },
+        {
+            "ans": "$\\cos \\theta \\left( \\dfrac{ \\cos h - 1 }{ h } \\right) + \\sin \\theta \\left( \\dfrac{ \\sin h }{ h } \\right)$",
+            "feedback": "This error occurs if you incorrectly swap the sine and cosine functions in the compound angle identity expansion."
+        },
+        {
+            "ans": "$\\sin \\theta ( \\cos h - 1 ) + \\cos \\theta \\left( \\dfrac{ \\sin h }{ h } \\right)$",
+            "feedback": "This option fails to divide the first factored term by the denominator $h$, violating the rules of algebraic fractions."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Limit Identification",
+        "content": "When proving trig derivatives from first principles, do not skip the intermediate step of splitting the fraction. The limit results $\\lim_{ h \\to 0 } \\dfrac{ \\sin h }{ h } = 1$ and $\\lim_{ h \\to 0 } \\dfrac{ \\cos h - 1 }{ h } = 0$ must be applied separately to each of the distinct algebraic components."
+    }
+},
+{
+    "id": "004472",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "First Principles",
+        "Trigonometric Differentiation"
+    ],
+    "img": false,
+    "question": "Given that $x$ is measured in radians, we prove from first principles that $\\dfrac{ \\mathrm{d} }{ \\mathrm{d}x }(\\cos(2x)) = -2\\sin(2x)$ by considering the limit of the difference quotient:<br>$$\\dfrac{ \\cos(2x + 2h) - \\cos(2x) }{ h }$$<br>Which of the following shows the correct algebraic rearrangement of this expression before the limit is taken as $h \\to 0$?",
+    "steps": [
+        "<strong>Step 1: Set up the limit of the difference quotient:</strong><br>By definition, the derivative of $\\cos(2x)$ with respect to $x$ is given by the limit:<br>$$\\dfrac{ \\mathrm{d} }{ \\mathrm{d}x }(\\cos(2x)) = \\lim_{ h \\to 0 } \\dfrac{ \\cos(2(x + h)) - \\cos(2x) }{ h } = \\lim_{ h \\to 0 } \\dfrac{ \\cos(2x + 2h) - \\cos(2x) }{ h }$$",
+        "<strong>Step 2: Expand the compound angle term:</strong><br>Using the compound angle identity $\\cos(A + B) = \\cos A \\cos B - \\sin A \\sin B$, we expand $\\cos(2x + 2h)$:<br>$$\\cos(2x + 2h) = \\cos(2x) \\cos(2h) - \\sin(2x) \\sin(2h)$$<br>Substituting this expansion back into our difference quotient gives:<br>$$\\dfrac{ \\cos(2x) \\cos(2h) - \\sin(2x) \\sin(2h) - \\cos(2x) }{ h }$$",
+        "<strong>Step 3: Group the terms:</strong><br>We can group the terms containing $\\cos(2x)$ in the numerator to factorise them:<br>\\begin{aligned} \\dfrac{ \\cos(2x) \\cos(2h) - \\sin(2x) \\sin(2h) - \\cos(2x) }{ h } &= \\dfrac{ \\cos(2x) ( \\cos(2h) - 1 ) - \\sin(2x) \\sin(2h) }{ h } \\\\cr &= \\cos(2x) \\left( \\dfrac{ \\cos(2h) - 1 }{ h } \\right) - \\sin(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right) \\end{aligned}<br>This is the required algebraic rearrangement before taking limits.",
+        "<strong>Step 4: Take the limit as $h \\to 0$:</strong><br>To evaluate the limits, we scale the fractions to match our standard limit forms:<br>\\begin{aligned} \\dfrac{ \\cos(2h) - 1 }{ h } &= 2 \\left( \\dfrac{ \\cos(2h) - 1 }{ 2h } \\right) \\\\cr \\dfrac{ \\sin(2h) }{ h } &= 2 \\left( \\dfrac{ \\sin(2h) }{ 2h } \\right) \\end{aligned}<br>As $h \\to 0$, we have $2h \\to 0$. Therefore:<br>\\begin{aligned} \\lim_{ h \\to 0 } \\left( \\dfrac{ \\cos(2h) - 1 }{ h } \\right) &= 2( 0 ) = 0 \\\\cr \\lim_{ h \\to 0 } \\left( \\dfrac{ \\sin(2h) }{ h } \\right) &= 2( 1 ) = 2 \\end{aligned}<br>Applying these limits gives:<br>\\begin{aligned} \\dfrac{ \\mathrm{d} }{ \\mathrm{d}x }(\\cos(2x)) &= \\cos(2x)( 0 ) - \\sin(2x)( 2 ) \\\\cr &= -2\\sin(2x) \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\cos(2x) \\left( \\dfrac{ \\cos(2h) + 1 }{ h } \\right) + \\sin(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
+            "feedback": "This option contains a sign error in the compound angle expansion for cosine (using addition instead of subtraction) and incorrect sign grouping."
+        },
+        {
+            "ans": "$\\sin(2x) \\left( \\dfrac{ \\cos(2h) - 1 }{ h } \\right) - \\cos(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
+            "feedback": "This error occurs if you incorrectly swap the sine and cosine functions in the compound angle identity expansion."
+        },
+        {
+            "ans": "$\\cos(2x) ( \\cos(2h) - 1 ) - \\sin(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
+            "feedback": "This option fails to divide the first factored term by the denominator $h$, violating the rules of algebraic fractions."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Limit Scaling",
+        "content": "When dealing with multiple angles such as $\\cos(2x)$, the difference quotient contains terms like $\\sin(2h)$ and $\\cos(2h)$. Remember that to apply the standard limits, the denominator must match the angle parameter. Multiply and divide by $2$ to scale the denominator before taking the limits."
+    }
+},
+{
+    "id": "004473",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "First Principles",
+        "Trigonometric Differentiation"
+    ],
+    "img": false,
+    "question": "Given that $x$ is measured in radians, we prove from first principles that $\\dfrac{ \\mathrm{d} }{ \\mathrm{d}x }(\\sin(2x)) = 2\\cos(2x)$ by considering the limit of the difference quotient:<br>$$\\dfrac{ \\sin(2x + 2h) - \\sin(2x) }{ h }$$<br>Which of the following shows the correct algebraic rearrangement of this expression before the limit is taken as $h \\to 0$?",
+    "steps": [
+        "<strong>Step 1: Set up the limit of the difference quotient:</strong><br>By definition, the derivative of $\\sin(2x)$ with respect to $x$ is given by the limit:<br>$$\\dfrac{ \\mathrm{d} }{ \\mathrm{d}x }(\\sin(2x)) = \\lim_{ h \\to 0 } \\dfrac{ \\sin(2(x + h)) - \\sin(2x) }{ h } = \\lim_{ h \\to 0 } \\dfrac{ \\sin(2x + 2h) - \\sin(2x) }{ h }$$",
+        "<strong>Step 2: Expand the compound angle term:</strong><br>Using the compound angle identity $\\sin(A + B) = \\sin A \\cos B + \\cos A \\sin B$, we expand $\\sin(2x + 2h)$:<br>$$\\sin(2x + 2h) = \\sin(2x) \\cos(2h) + \\cos(2x) \\sin(2h)$$<br>Substituting this expansion back into our difference quotient gives:<br>$$\\dfrac{ \\sin(2x) \\cos(2h) + \\cos(2x) \\sin(2h) - \\sin(2x) }{ h }$$",
+        "<strong>Step 3: Group the terms:</strong><br>We can group the terms containing $\\sin(2x)$ in the numerator to factorise them:<br>\\begin{aligned} \\dfrac{ \\sin(2x) \\cos(2h) + \\cos(2x) \\sin(2h) - \\sin(2x) }{ h } &= \\dfrac{ \\sin(2x) ( \\cos(2h) - 1 ) + \\cos(2x) \\sin(2h) }{ h } \\\\cr &= \\sin(2x) \\left( \\dfrac{ \\cos(2h) - 1 }{ h } \\right) + \\cos(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right) \\end{aligned}<br>This is the required algebraic rearrangement before taking limits.",
+        "<strong>Step 4: Take the limit as $h \\to 0$:</strong><br>To evaluate the limits, we scale the fractions to match our standard limit forms:<br>\\begin{aligned} \\dfrac{ \\cos(2h) - 1 }{ h } &= 2 \\left( \\dfrac{ \\cos(2h) - 1 }{ 2h } \\right) \\\\cr \\dfrac{ \\sin(2h) }{ h } &= 2 \\left( \\dfrac{ \\sin(2h) }{ 2h } \\right) \\end{aligned}<br>As $h \\to 0$, we have $2h \\to 0$. Therefore:<br>\\begin{aligned} \\lim_{ h \\to 0 } \\left( \\dfrac{ \\cos(2h) - 1 }{ h } \\right) &= 2( 0 ) = 0 \\\\cr \\lim_{ h \\to 0 } \\left( \\dfrac{ \\sin(2h) }{ h } \\right) &= 2( 1 ) = 2 \\end{aligned}<br>Applying these limits gives:<br>\\begin{aligned} \\dfrac{ \\mathrm{d} }{ \\mathrm{d}x }(\\sin(2x)) &= \\sin(2x)( 0 ) + \\cos(2x)( 2 ) \\\\cr &= 2\\cos(2x) \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\sin(2x) \\left( \\dfrac{ \\cos(2h) + 1 }{ h } \\right) - \\cos(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
+            "feedback": "This option contains a sign error in both the compound angle expansion and the grouping of sines and cosines."
+        },
+        {
+            "ans": "$\\cos(2x) \\left( \\dfrac{ \\cos(2h) - 1 }{ h } \\right) + \\sin(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
+            "feedback": "This error occurs if you incorrectly swap the sine and cosine functions in the compound angle identity expansion."
+        },
+        {
+            "ans": "$\\sin(2x) ( \\cos(2h) - 1 ) + \\cos(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
+            "feedback": "This option fails to divide the first factored term by the denominator $h$, violating the rules of algebraic fractions."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Limit Definition of Derivative",
+        "content": "The limit definition of the derivative, $f'( x ) = \\lim_{ h \\to 0 } \\dfrac{ f( x+h ) - f( x ) }{ h }$, represents the gradient of the chord as the width $h \\to 0$. In A-level calculus, this is the foundational proof for trigonometric derivatives, bridging trigonometry and calculus."
+    }
+},
+{
+    "id": "004474",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "First Principles",
+        "Trigonometric Differentiation"
+    ],
+    "img": false,
+    "question": "Given that $\\theta$ is measured in radians, we prove from first principles that $\\dfrac{ \\mathrm{d} }{ \\mathrm{d}\\theta }(\\cos(3\\theta)) = -3\\sin(3\\theta)$ by considering the limit of the difference quotient:<br>$$\\dfrac{ \\cos(3\\theta + 3h) - \\cos(3\\theta) }{ h }$$<br>Which of the following shows the correct algebraic rearrangement of this expression before the limit is taken as $h \\to 0$?",
+    "steps": [
+        "<strong>Step 1: Set up the limit of the difference quotient:</strong><br>By definition, the derivative of $\\cos(3\\theta)$ with respect to $\\theta$ is given by the limit:<br>$$\\dfrac{ \\mathrm{d} }{ \\mathrm{d}\\theta }(\\cos(3\\theta)) = \\lim_{ h \\to 0 } \\dfrac{ \\cos(3( \\theta + h )) - \\cos(3\\theta) }{ h } = \\lim_{ h \\to 0 } \\dfrac{ \\cos(3\\theta + 3h) - \\cos(3\\theta) }{ h }$$",
+        "<strong>Step 2: Expand the compound angle term:</strong><br>Using the compound angle identity $\\cos(A + B) = \\cos A \\cos B - \\sin A \\sin B$, we expand $\\cos(3\\theta + 3h)$:<br>$$\\cos(3\\theta + 3h) = \\cos(3\\theta) \\cos(3h) - \\sin(3\\theta) \\sin(3h)$$<br>Substituting this expansion back into our difference quotient gives:<br>$$\\dfrac{ \\cos(3\\theta) \\cos(3h) - \\sin(3\\theta) \\sin(3h) - \\cos(3\\theta) }{ h }$$",
+        "<strong>Step 3: Group the terms:</strong><br>We can group the terms containing $\\cos(3\\theta)$ in the numerator to factorise them:<br>\\begin{aligned} \\dfrac{ \\cos(3\\theta) \\cos(3h) - \\sin(3\\theta) \\sin(3h) - \\cos(3\\theta) }{ h } &= \\dfrac{ \\cos(3\\theta) ( \\cos(3h) - 1 ) - \\sin(3\\theta) \\sin(3h) }{ h } \\\\cr &= \\cos(3\\theta) \\left( \\dfrac{ \\cos(3h) - 1 }{ h } \\right) - \\sin(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right) \\end{aligned}<br>This is the required algebraic rearrangement before taking limits.",
+        "<strong>Step 4: Take the limit as $h \\to 0$:</strong><br>To evaluate the limits, we scale the fractions to match our standard limit forms:<br>\\begin{aligned} \\dfrac{ \\cos(3h) - 1 }{ h } &= 3 \\left( \\dfrac{ \\cos(3h) - 1 }{ 3h } \\right) \\\\cr \\dfrac{ \\sin(3h) }{ h } &= 3 \\left( \\dfrac{ \\sin(3h) }{ 3h } \\right) \\end{aligned}<br>As $h \\to 0$, we have $3h \\to 0$. Therefore:<br>\\begin{aligned} \\lim_{ h \\to 0 } \\left( \\dfrac{ \\cos(3h) - 1 }{ h } \\right) &= 3( 0 ) = 0 \\\\cr \\lim_{ h \\to 0 } \\left( \\dfrac{ \\sin(3h) }{ h } \\right) &= 3( 1 ) = 3 \\end{aligned}<br>Applying these limits gives:<br>\\begin{aligned} \\dfrac{ \\mathrm{d} }{ \\mathrm{d}\\theta }(\\cos(3\\theta)) &= \\cos(3\\theta)( 0 ) - \\sin(3\\theta)( 3 ) \\\\cr &= -3\\sin(3\\theta) \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\cos(3\\theta) \\left( \\dfrac{ \\cos(3h) + 1 }{ h } \\right) + \\sin(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
+            "feedback": "This option contains a sign error in both the compound angle identity expansion for cosine and the subsequent grouping."
+        },
+        {
+            "ans": "$\\sin(3\\theta) \\left( \\dfrac{ \\cos(3h) - 1 }{ h } \\right) - \\cos(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
+            "feedback": "This error occurs if you incorrectly swap the sine and cosine functions in the compound angle identity expansion."
+        },
+        {
+            "ans": "$\\cos(3\\theta) ( \\cos(3h) - 1 ) - \\sin(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
+            "feedback": "This option fails to divide the first factored term by the denominator $h$, violating the rules of algebraic fractions."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Function Arguments",
+        "content": "Always ensure the arguments inside your sines and cosines remain consistent throughout the proof. For example, do not confuse $\\cos(3\\theta)$ with $3\\cos\\theta$; the parameter $3$ is bound within the angle, which is why we must use the compound angle identity with $3\\theta$ and $3h$."
+    }
+},
+{
+    "id": "004475",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "First Principles",
+        "Trigonometric Differentiation"
+    ],
+    "img": false,
+    "question": "Given that $\\theta$ is measured in radians, we prove from first principles that $\\dfrac{ \\mathrm{d} }{ \\mathrm{d}\\theta }(\\sin(3\\theta)) = 3\\cos(3\\theta) $ by considering the limit of the difference quotient:<br>$$\\dfrac{ \\sin(3\\theta + 3h) - \\sin(3\\theta) }{ h }$$<br>Which of the following shows the correct algebraic rearrangement of this expression before the limit is taken as $h \\to 0$?",
+    "steps": [
+        "<strong>Step 1: Set up the limit of the difference quotient:</strong><br>By definition, the derivative of $\\sin(3\\theta)$ with respect to $\\theta$ is given by the limit:<br>$$\\dfrac{ \\mathrm{d} }{ \\mathrm{d}\\theta }(\\sin(3\\theta)) = \\lim_{ h \\to 0 } \\dfrac{ \\sin(3( \\theta + h )) - \\sin(3\\theta) }{ h } = \\lim_{ h \\to 0 } \\dfrac{ \\sin(3\\theta + 3h) - \\sin(3\\theta) }{ h }$$",
+        "<strong>Step 2: Expand the compound angle term:</strong><br>Using the compound angle identity $\\sin(A + B) = \\sin A \\cos B + \\cos A \\sin B$, we expand $\\sin(3\\theta + 3h)$:<br>$$\\sin(3\\theta + 3h) = \\sin(3\\theta) \\cos(3h) + \\cos(3\\theta) \\sin(3h)$$<br>Substituting this expansion back into our difference quotient gives:<br>$$\\dfrac{ \\sin(3\\theta) \\cos(3h) + \\cos(3\\theta) \\sin(3h) - \\sin(3\\theta) }{ h }$$",
+        "<strong>Step 3: Group the terms:</strong><br>We can group the terms containing $\\sin(3\\theta)$ in the numerator to factorise them:<br>\\begin{aligned} \\dfrac{ \\sin(3\\theta) \\cos(3h) + \\cos(3\\theta) \\sin(3h) - \\sin(3\\theta) }{ h } &= \\dfrac{ \\sin(3\\theta) ( \\cos(3h) - 1 ) + \\cos(3\\theta) \\sin(3h) }{ h } \\\\cr &= \\sin(3\\theta) \\left( \\dfrac{ \\cos(3h) - 1 }{ h } \\right) + \\cos(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right) \\end{aligned}<br>This is the required algebraic rearrangement before taking limits.",
+        "<strong>Step 4: Take the limit as $h \\to 0$:</strong><br>To evaluate the limits, we scale the fractions to match our standard limit forms:<br>\\begin{aligned} \\dfrac{ \\cos(3h) - 1 }{ h } &= 3 \\left( \\dfrac{ \\cos(3h) - 1 }{ 3h } \\right) \\\\cr \\dfrac{ \\sin(3h) }{ h } &= 3 \\left( \\dfrac{ \\sin(3h) }{ 3h } \\right) \\end{aligned}<br>As $h \\to 0$, we have $3h \\to 0$. Therefore:<br>\\begin{aligned} \\lim_{ h \\to 0 } \\left( \\dfrac{ \\cos(3h) - 1 }{ h } \\right) &= 3( 0 ) = 0 \\\\cr \\lim_{ h \\to 0 } \\left( \\dfrac{ \\sin(3h) }{ h } \\right) &= 3( 1 ) = 3 \\end{aligned}<br>Applying these limits gives:<br>\\begin{aligned} \\dfrac{ \\mathrm{d} }{ \\mathrm{d}\\theta }(\\sin(3\\theta)) &= \\sin(3\\theta)( 0 ) + \\cos(3\\theta)( 3 ) \\\\cr &= 3\\cos(3\\theta) \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\sin(3\\theta) \\left( \\dfrac{ \\cos(3h) + 1 }{ h } \\right) - \\cos(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
+            "feedback": "This option contains a sign error in both the compound angle expansion and the grouping of sines and cosines."
+        },
+        {
+            "ans": "$\\cos(3\\theta) \\left( \\dfrac{ \\cos(3h) - 1 }{ h } \\right) + \\sin(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
+            "feedback": "This error occurs if you incorrectly swap the sine and cosine functions in the compound angle identity expansion."
+        },
+        {
+            "ans": "$\\sin(3\\theta) ( \\cos(3h) - 1 ) + \\cos(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
+            "feedback": "This option fails to divide the first factored term by the denominator $h$, violating the rules of algebraic fractions."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Limit Parameters",
+        "content": "Remember that the limit results $\\lim_{ x \\to 0 } \\dfrac{ \\sin x }{ x } = 1$ and $\\lim_{ x \\to 0 } \\dfrac{ \\cos x - 1 }{ x } = 0$ hold true for any variable parameter $x$. By substituting $x = 3h$, we can see that as $h \\to 0$, $3h \\to 0$, allowing us to evaluate the limits of scaled functions easily."
+    }
 }
 
 ];
