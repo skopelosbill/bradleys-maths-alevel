@@ -968,6 +968,198 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Limit Parameters",
         "content": "Remember that the limit results $\\lim_{ x \\to 0 } \\dfrac{ \\sin x }{ x } = 1$ and $\\lim_{ x \\to 0 } \\dfrac{ \\cos x - 1 }{ x } = 0$ hold true for any variable parameter $x$. By substituting $x = 3h$, we can see that as $h \\to 0$, $3h \\to 0$, allowing us to evaluate the limits of scaled functions easily."
     }
+},
+{
+    "id": "004476",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "First Principles",
+        "Trigonometric Differentiation"
+    ],
+    "img": false,
+    "question": "A spherical sugar candy of radius $6\\text{ mm}$ is placed in water and dissolves. Three minutes later, the radius of the candy is $3\\text{ mm}$.<br><br>In a simple model, the rate of decrease of the radius of the candy is inversely proportional to the square of the radius.<br><br>Using this model, find the total time taken for the candy to completely dissolve (to the nearest second).",
+    "steps": [
+        "<strong>Step 1: Formulate the differential equation:</strong><br>Let $r$ represent the radius of the candy (in mm) at time $t$ (in minutes). Since the rate of decrease of the radius is inversely proportional to $r^2$, we write:<br>$$\\dfrac{ \\mathrm{d}r }{ \\mathrm{d}t } = -\\dfrac{ k }{ r^2 }$$<br>where $k$ is a positive constant of proportionality.",
+        "<strong>Step 2: Separate variables and integrate:</strong><br>We separate the variables and integrate both sides of the equation:<br>\\begin{aligned} r^2 \\mathrm{d}r &= -k \\mathrm{d}t \\\\cr \\int r^2 \\mathrm{d}r &= \\int -k \\mathrm{d}t \\\\cr \\dfrac{ 1 }{ 3 }r^3 &= -kt + C \\\\cr r^3 &= -3kt + 3C \\end{aligned}<br>Let $K = 3k$ and $c = 3C$ to simplify the equation:<br>$$r^3 = -Kt + c$$",
+        "<strong>Step 3: Apply the initial and boundary conditions:</strong><br>At $t = 0$, the initial radius is $r = 6$:<br>$$6^3 = -K( 0 ) + c \\implies c = 216$$<br>This gives the equation:<br>$$r^3 = 216 - Kt$$<br>Three minutes later, at $t = 3$, the radius is $r = 3$:<br>\\begin{aligned} 3^3 &= 216 - K( 3 ) \\\\cr 27 &= 216 - 3K \\\\cr 3K &= 189 \\\\cr K &= 63 \\end{aligned}<br>Thus, the equation linking the radius and time is:<br>$$r^3 = 216 - 63t$$",
+        "<strong>Step 4: Find the total time taken to dissolve:</strong><br>The candy completely dissolves when $r = 0$:<br>\\begin{aligned} 0 &= 216 - 63t \\\\cr 63t &= 216 \\\\cr t &= \\dfrac{ 216 }{ 63 } = \\dfrac{ 24 }{ 7 }\\text{ minutes} \\approx 3.43\\text{ minutes} \\end{aligned}",
+        "<strong>Step 5: Convert the time into minutes and seconds:</strong><br>We convert $\\dfrac{ 24 }{ 7 }$ minutes into minutes and seconds:<br>\\begin{aligned} t &= 3\\text{ minutes} + \\dfrac{ 3 }{ 7 }\\text{ minutes} \\\\cr &= 3\\text{ minutes} + \\left( \\dfrac{ 3 }{ 7 } \\times 60 \\right)\\text{ seconds} \\\\cr &\\approx 3\\text{ minutes and } 26\\text{ seconds} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$3\\text{ minutes and } 43\\text{ seconds}$",
+            "feedback": "This error occurs if you misinterpret the decimal output of $3.43$ minutes directly as $3$ minutes and $43$ seconds. Remember that $0.43$ minutes must be multiplied by $60$ to convert it into seconds."
+        },
+        {
+            "ans": "$4\\text{ minutes and } 12\\text{ seconds}$",
+            "feedback": "This error occurs if you use a linear model where the radius decreases by a constant $1\\text{ mm}$ per minute, which violates the inverse square law of the model."
+        },
+        {
+            "ans": "$3\\text{ minutes and } 15\\text{ seconds}$",
+            "feedback": "This is a rounding error or arithmetic slip in solving for the constant of integration $c$ or the constant $K$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Decimal Time Conversion",
+        "content": "Always be careful when converting decimal times. A common trap is to write a time of $3.43\\text{ minutes}$ as $3\\text{ minutes and } 43\\text{ seconds}$. Always isolate the decimal fraction of the minute and multiply it by $60$ to get the correct number of seconds ($0.43 \\times 60 \\approx 26\\text{ seconds}$)."
+    }
+},
+{
+    "id": "004477",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "First Principles",
+        "Trigonometric Differentiation"
+    ],
+    "img": false,
+    "question": "The mass of a radioactive substance decays at a rate proportional to its mass at that time. The initial mass of the substance is $80\\text{ g}$. Ten hours later, the mass is found to be $40\\text{ g}$.<br><br>In a simple model, the rate of decrease of the mass of the substance is proportional to its mass.<br><br>Using this model, find the time taken for the mass of the substance to decay to $5\\text{ g}$ (to the nearest hour).",
+    "steps": [
+        "<strong>Step 1: Formulate the differential equation:</strong><br>Let $M$ represent the mass of the radioactive substance (in g) at time $t$ (in hours). Since the rate of decrease of the mass is proportional to the mass itself, we write:<br>$$\\dfrac{ \\mathrm{d}M }{ \\mathrm{d}t } = -kM$$<br>where $k$ is a positive constant.",
+        "<strong>Step 2: Separate variables and integrate:</strong><br>Separating the variables and integrating both sides of the equation gives:<br>\\begin{aligned} \\dfrac{ 1 }{ M } \\mathrm{d}M &= -k \\mathrm{d}t \\\\cr \\int \\dfrac{ 1 }{ M } \\mathrm{d}M &= \\int -k \\mathrm{d}t \\\\cr \\ln M &= -kt + C \\\\cr M &= A\\mathrm{e}^{ -kt } \\end{aligned}<br>where $A = \\mathrm{e}^{ C }$ is a constant.",
+        "<strong>Step 3: Apply the initial and boundary conditions:</strong><br>At $t = 0$, the initial mass is $M = 80$:<br>$$80 = A\\mathrm{e}^{ -k( 0 ) } \\implies A = 80$$<br>This gives the equation:<br>$$M = 80\\mathrm{e}^{ -kt }$$<br>Ten hours later, at $t = 10$, the mass is $M = 40$:<br>\\begin{aligned} 40 &= 80\\mathrm{e}^{ -10k } \\\\cr \\mathrm{e}^{ -10k } &= \\dfrac{ 1 }{ 2 } \\\\cr -10k &= \\ln\\left( \\dfrac{ 1 }{ 2 } \\right) = -\\ln 2 \\\\cr k &= \\dfrac{ \\ln 2 }{ 10 } \\end{aligned}<br>Thus, the equation linking the mass and time is:<br>$$M = 80\\mathrm{e}^{ -\\left( \\frac{ \\ln 2 }{ 10 } \\right)t }$$",
+        "<strong>Step 4: Find the time taken to decay to $5\\text{ g}$:</strong><br>Setting $M = 5$, we solve for $t$:<br>\\begin{aligned} 5 &= 80\\mathrm{e}^{ -\\left( \\frac;{ \\ln 2 }{ 10 } \\right)t } \\\\cr \\mathrm{e}^{ -\\left( \\frac{ \\ln 2 }{ 10 } \\right)t } &= \\dfrac{ 5 }{ 80 } = \\dfrac{ 1 }{ 16 } \\\\cr -\\left( \\dfrac{ \\ln 2 }{ 10 } \\right)t &= \\ln\\left( \\dfrac{ 1 }{ 16 } \\right) = -\\ln 16 = -4\\ln 2 \\\\cr \\left( \\dfrac{ \\ln 2 }{ 10 } \\right)t &= 4\\ln 2 \\\\cr t &= 40\\text{ hours} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$30\\text{ hours}$",
+            "feedback": "This error occurs if you incorrectly calculate the decay factor or make an arithmetic error when solving for the time constant."
+        },
+        {
+            "ans": "$20\\text{ hours}$",
+            "feedback": "This is a common mistake resulting from dividing the initial mass directly by the mass difference without applying the exponential decay formula."
+        },
+        {
+            "ans": "$50\\text{ hours}$",
+            "feedback": "This is a calculation slip in evaluating the power of $2$ when equating $\\frac{1}{16}$ to $\\mathrm{e}^{-kt}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Half-Life Constant",
+        "content": "Notice that since the substance halves every $10\\text{ hours}$ (from $80\\text{ g}$ to $40\\text{ g}$), the half-life is exactly $10\\text{ hours}$. To decay from $80\\text{ g}$ to $5\\text{ g}$, the substance must halve exactly $4$ times ($80 \\to 40 \\to 20 \\to 10 \\to 5$). Therefore, the total time is simply $4 \\times 10 = 40\\text{ hours}$. Recognizing half-lives is a great shortcut to verify your algebraic results!"
+    }
+},
+{
+    "id": "004478",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "First Principles",
+        "Trigonometric Differentiation"
+    ],
+    "img": false,
+    "question": "A circular puddle of water on a flat concrete surface is evaporating in the sun. The initial radius of the puddle is $10\\text{ cm}$. After $5$ hours of evaporation, the radius of the puddle has reduced to $8\\text{ cm}$.<br><br>In a simple model, the rate of decrease of the radius of the puddle is inversely proportional to the radius.<br><br>Using this model, find the total time taken for the puddle to dry up completely (to the nearest minute).",
+    "steps": [
+        "<strong>Step 1: Formulate the differential equation:</strong><br>Let $r$ represent the radius of the puddle (in cm) at time $t$ (in hours). Since the rate of decrease of the radius is inversely proportional to the radius itself, we write:<br>$$\\dfrac{ \\mathrm{d}r }{ \\mathrm{d}t } = -\\dfrac{ k }{ r }$$<br>where $k$ is a positive constant.",
+        "<strong>Step 2: Separate variables and integrate:</strong><br>Separating the variables and integrating both sides of the equation gives:<br>\\begin{aligned} r \\mathrm{d}r &= -k \\mathrm{d}t \\\\cr \\int r \\mathrm{d}r &= \\int -k \\mathrm{d}t \\\\cr \\dfrac{ 1 }{ 2 }r^2 &= -kt + C \\\\cr r^2 &= -2kt + 2C \\end{aligned}<br>Let $K = 2k$ and $c = 2C$ to simplify the equation:<br>$$r^2 = -Kt + c$$",
+        "<strong>Step 3: Apply the initial and boundary conditions:</strong><br>At $t = 0$, the initial radius is $r = 10$:<br>$$10^2 = -K( 0 ) + c \\implies c = 100$$<br>This gives the equation:<br>$$r^2 = 100 - Kt$$<br>After $5$ hours, at $t = 5$, the radius is $r = 8$:<br>\\begin{aligned} 8^2 &= 100 - K( 5 ) \\\\cr 64 &= 100 - 5K \\\\cr 5K &= 36 \\\\cr K &= 7.2 \\end{aligned}<br>Thus, the equation linking the radius and time is:<br>$$r^2 = 100 - 7.2t$$",
+        "<strong>Step 4: Find the total time taken to dry up:</strong><br>The puddle dries up completely when $r = 0$:<br>\\begin{aligned} 0 &= 100 - 7.2t \\\\cr 7.2t &= 100 \\\\cr t &= \\dfrac{ 100 }{ 7.2 } = \\dfrac{ 125 }{ 9 }\\text{ hours} \\approx 13.89\\text{ hours} \\end{aligned}",
+        "<strong>Step 5: Convert the time into hours and minutes:</strong><br>We convert $\\dfrac{ 125 }{ 9 }$ hours into hours and minutes:<br>\\begin{aligned} t &= 13\\text{ hours} + \\dfrac{ 8 }{ 9 }\\text{ hours} \\\\cr &= 13\\text{ hours} + \\left( \\dfrac{ 8 }{ 9 } \\times 60 \\right)\\text{ minutes} \\\\cr &\\approx 13\\text{ hours and } 53\\text{ minutes} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$13\\text{ hours and } 89\\text{ minutes}$",
+            "feedback": "This error occurs if you misinterpret the decimal output of $13.89$ hours directly as $13$ hours and $89$ minutes. Remember that $0.89$ hours must be converted to minutes by multiplying by $60$."
+        },
+        {
+            "ans": "$13\\text{ hours and } 30\\text{ minutes}$",
+            "feedback": "This is a rounding error or incorrect approximation made early in the calculations."
+        },
+        {
+            "ans": "$14\\text{ hours and } 12\\text{ minutes}$",
+            "feedback": "This is a calculation slip resulting from an incorrect constant of integration or a sign error during integration."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Early Rounding",
+        "content": "Avoid rounding values too early in your calculations. If you round $K = 7.2$ or $t \\approx 13.89\\text{ hours}$ too aggressively, you may introduce a cumulative rounding error when converting to minutes. Always keep exact fractions (like $\\dfrac{ 125 }{ 9 }$) until the very final conversion step."
+    }
+},
+{
+    "id": "004479",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "First Principles",
+        "Trigonometric Differentiation"
+    ],
+    "img": false,
+    "question": "Water is leaking from a hole at the bottom of a cylindrical water tank. The depth of the water in the tank is $h$ metres at time $t$ minutes. Initially, the depth of the water is $9\\text{ m}$. After $12$ minutes, the depth of the water has reduced to $4\\text{ m}$.<br><br>In a simple model, the rate of decrease of the depth of the water is proportional to the square root of the depth.<br><br>Using this model, find the total time taken for the water tank to empty completely (to the nearest minute).",
+    "steps": [
+        "<strong>Step 1: Formulate the differential equation:</strong><br>Since the rate of decrease of the depth $h$ is proportional to the square root of $h$, we write:<br>$$\\dfrac{ \\mathrm{d}h }{ \\mathrm{d}t } = -k\\sqrt{ h }$$<br>where $k$ is a positive constant.",
+        "<strong>Step 2: Separate variables and integrate:</strong><br>Separating the variables and integrating both sides of the equation gives:<br>\\begin{aligned} \\dfrac{ 1 }{ \\sqrt{ h } } \\mathrm{d}h &= -k \\mathrm{d}t \\\\cr \\int h^{ -1/2 } \\mathrm{d}h &= \\int -k \\mathrm{d}t \\\\cr 2\\sqrt{ h } &= -kt + C \\\\cr \\sqrt{ h } &= -\\dfrac{ k }{ 2 }t + \\dfrac{ C }{ 2 } \\end{aligned}",
+        "<strong>Step 3: Apply the initial and boundary conditions:</strong><br>At $t = 0$, the initial depth is $h = 9$:<br>$$2\\sqrt{ 9 } = -k( 0 ) + C \\implies C = 6$$<br>This gives the equation:<br>$$2\\sqrt{ h } = 6 - kt \\implies \\sqrt{ h } = 3 - \\dfrac{ k }{ 2 }t$$<br>After $12$ minutes, at $t = 12$, the depth is $h = 4$:<br>\\begin{aligned} \\sqrt{ 4 } &= 3 - \\dfrac{ k }{ 2 }( 12 ) \\\\cr 2 &= 3 - 6k \\\\cr 6k &= 1 \\\\cr k &= \\dfrac{ 1 }{ 6 } \\end{aligned}<br>Thus, the equation linking the depth and time is:<br>$$\\sqrt{ h } = 3 - \\dfrac{ t }{ 12 } \\implies h = \\left( 3 - \\dfrac{ t }{ 12 } \\right)^2$$",
+        "<strong>Step 4: Find the total time taken to empty:</strong><br>The water tank is completely empty when $h = 0$:<br>\\begin{aligned} 3 - \\dfrac{ t }{ 12 } &= 0 \\\\cr \\dfrac{ t }{ 12 } &= 3 \\\\cr t &= 36\\text{ minutes} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$24\\text{ minutes}$",
+            "feedback": "This error occurs if you use a linear model where the depth decreases at a constant rate, rather than using a model with a rate of decrease proportional to $\\sqrt{h}$."
+        },
+        {
+            "ans": "$30\\text{ minutes}$",
+            "feedback": "This is a calculation slip in integration, such as forgetting the factor of $2$ when integrating $h^{-1/2}$."
+        },
+        {
+            "ans": "$40\\text{ minutes}$",
+            "feedback": "This is a sign error or arithmetic slip when solving for the constants $C$ and $k$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Fractional Powers Integration",
+        "content": "Remember the power rule for integration: $\\int h^{-1/2} \\mathrm{d}h = \\dfrac{ h^{1/2} }{ 1/2 } = 2\\sqrt{h}$. A common trap is to forget the division by $1/2$ and write it as just $\\sqrt{h}$, which changes the final constants and yields incorrect empty times."
+    }
+},
+{
+    "id": "004480",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "First Principles",
+        "Trigonometric Differentiation"
+    ],
+    "img": false,
+    "question": "A spherical raindrop is falling through a cloud and evaporating. The initial radius of the raindrop is $4\\text{ mm}$. Ten minutes later, the radius has reduced to $2\\text{ mm}$.<br><br>In a simple model, the rate of decrease of the radius of the raindrop is proportional to the radius.<br><br>Using this model, find the time taken for the radius of the raindrop to decrease to $0.5\\text{ mm}$ (to the nearest minute).",
+    "steps": [
+        "<strong>Step 1: Formulate the differential equation:</strong><br>Let $r$ represent the radius of the raindrop (in mm) at time $t$ (in minutes). Since the rate of decrease of the radius is proportional to the radius itself, we write:<br>$$\\dfrac{ \\mathrm{d}r }{ \\mathrm{d}t } = -kr$$<br>where $k$ is a positive constant.",
+        "<strong>Step 2: Separate variables and integrate:</strong><br>Separating the variables and integrating both sides of the equation gives:<br>\\begin{aligned} \\dfrac{ 1 }{ r } \\mathrm{d}r &= -k \\mathrm{d}t \\\\cr \\int \\dfrac{ 1 }{ r } \\mathrm{d}r &= \\int -k \\mathrm{d}t \\\\cr \\ln r &= -kt + C \\\\cr r &= A\\mathrm{e}^{ -kt } \\end{aligned}<br>where $A = \\mathrm{e}^{ C }$ is a constant.",
+        "<strong>Step 3: Apply the initial and boundary conditions:</strong><br>At $t = 0$, the initial radius is $r = 4$:<br>$$4 = A\\mathrm{e}^{ -k( 0 ) } \\implies A = 4$$<br>This gives the equation:<br>$$r = 4\\mathrm{e}^{ -kt }$$<br>Ten minutes later, at $t = 10$, the radius is $r = 2$:<br>\\begin{aligned} 2 &= 4\\mathrm{e}^{ -10k } \\\\cr \\mathrm{e}^{ -10k } &= \\dfrac{ 1 }{ 2 } \\\\cr -10k &= \\ln\\left( \\dfrac{ 1 }{ 2 } \\right) = -\\ln 2 \\\\cr k &= \\dfrac{ \\ln 2 }{ 10 } \\end{aligned}<br>Thus, the equation linking the radius and time is:<br>$$r = 4\\mathrm{e}^{ -\\left( \\frac{ \\ln 2 }{ 10 } \\right)t }$$",
+        "<strong>Step 4: Find the time taken to decrease to $0.5\\text{ mm}$:</strong><br>Setting $r = 0.5$, we solve for $t$:<br>\\begin{aligned} 0.5 &= 4\\mathrm{e}^{ -\\left( \\frac{ \\ln 2 }{ 10 } \\right)t } \\\\cr \\mathrm{e}^{ -\\left( \\frac{ \\ln 2 }{ 10 } \\right)t } &= \\dfrac{ 0.5 }{ 4 } = \\dfrac{ 1 }{ 8 } \\\\cr -\\left( \\dfrac{ \\ln 2 }{ 10 } \\right)t &= \\ln\\left( \\dfrac{ 1 }{ 8 } \\right) = -\\ln 8 = -3\\ln 2 \\\\cr \\left( \\dfrac{ \\ln 2 }{ 10 } \\right)t &= 3\\ln 2 \\\\cr t &= 30\\text{ minutes} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$20\\text{ minutes}$",
+            "feedback": "This error occurs if you use a linear model where the radius decreases by a constant $2\\text{ mm}$ every $10$ minutes (so it would reach $0\\text{ mm}$ at $20$ minutes). Exponential decay does not proceed at a constant rate."
+        },
+        {
+            "ans": "$25\\text{ minutes}$",
+            "feedback": "This is a rounding error or calculation slip when resolving the logarithms in Step 4."
+        },
+        {
+            "ans": "$35\\text{ minutes}$",
+            "feedback": "This is a sign error or algebraic slip when solving for the constants of integration $A$ or the constant $k$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Half-Life Properties",
+        "content": "Since the radius halves every $10\\text{ minutes}$ (from $4\\text{ mm}$ to $2\\text{ mm}$), the half-life of the radius is exactly $10\\text{ minutes}$. To decrease from $4\\text{ mm}$ to $0.5\\text{ mm}$, the radius must halve exactly $3$ times ($4 \\to 2 \\to 1 \\to 0.5$). The total time is simply $3 \\times 10 = 30\\text{ minutes}$. Understanding half-life shortcuts can save you precious time under exam pressure!"
+    }
 }
 
 ];
