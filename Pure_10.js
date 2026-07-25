@@ -578,6 +578,206 @@ window.ALEVEL_QUESTIONS = [
     "title": "Double Angle Cancellation",
     "content": "When expanding and simplifying expressions like $2\\sin(2x)\\tan x = 3$, remember that the division by $\\cos x$ relies on the assumption that $\\cos x \\neq 0$. If any of your final answers include values where $\\cos x = 0$ (such as $x = \\frac{\\pi}{2}$), they must be discarded immediately because the original expression would be undefined."
   }
+},
+{
+    "id": "004466",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Quadratic Functions",
+    "subtopic": [
+        "Quadratic Modeling",
+        "Solving Quadratic Equations"
+    ],
+    "img": "images/Pure/004466.png",
+    "question": "The image <strong>images/Pure/004466.png</strong> shows a graph representing the trajectory of a Gaelic football.<br><br>The height above the ground, $H$ metres, has been plotted against the horizontal distance, $x$ metres, measured from the point $O$ where the ball was kicked. The ball travels in a vertical plane. The ball reaches a maximum height of $16$ metres and hits the ground $48$ metres from where it was kicked.<br><br><strong>(a)</strong> Find a quadratic equation linking $H$ with $x$ that models this situation.<br><br>The ball passes over the horizontal crossbar of a set of goal posts that is perpendicular to the path of the ball. The crossbar is $3$ metres above the ground.<br><br><strong>(b)</strong> Use your equation to find the greatest horizontal distance of the crossbar from $O$.<br><br><strong>(c)</strong> Give one limitation of the model.",
+    "steps": [
+        "<strong>(a) Finding the quadratic model:</strong><br>The trajectory starts at the origin $O(0,0)$ and lands at the point $(48,0)$, which means the roots of the quadratic function are $x = 0$ and $x = 48$. We can express the model in factored form:<br>$$H = kx( 48 - x )$$<br>where $k$ is a constant. The maximum height of $16$ metres occurs at the midpoint of the flight, which is $x = 24$. Therefore, the vertex of the parabola is at the point $(24, 16)$.",
+        "Substituting the vertex coordinates $x = 24$ and $H = 16$ into our factored model allows us to solve for $k$:<br>\\begin{aligned} 16 &= k( 24 )( 48 - 24 ) \\\\cr 16 &= 576k \\\\cr k &= \\dfrac{ 16 }{ 576 } = \\dfrac{ 1 }{ 36 } \\end{aligned}<br>Therefore, the quadratic equation modeling the trajectory is:<br>$$H = -\\dfrac{ 1 }{ 36 }x^2 + \\dfrac{ 4 }{ 3 }x$$",
+        "<strong>(b) Finding the greatest horizontal distance:</strong><br>The horizontal crossbar is $3$ metres above the ground, so we set $H = 3$ and solve for $x$:<br>$$-\\dfrac{ 1 }{ 36 }x^2 + \\dfrac{ 4 }{ 3 }x = 3$$<br>Multiplying the entire equation by $-36$ to clear the fractions and rearranging into standard quadratic form gives:<br>\\begin{aligned} x^2 - 48x &= -108 \\\\cr x^2 - 48x + 108 &= 0 \\end{aligned}",
+        "We can solve this quadratic equation using the quadratic formula $x = \\dfrac{ -b \\pm \\sqrt{ b^2 - 4ac } }{ 2a }$:<br>\\begin{aligned} x &= \\dfrac{ 48 \\pm \\sqrt{ ( -48 )^2 - 4( 1 )( 108 ) } }{ 2 } \\\\cr x &= \\dfrac{ 48 \\pm \\sqrt{ 2304 - 432 } }{ 2 } \\\\cr x &= \\dfrac{ 48 \\pm \\sqrt{ 1872 } }{ 2 } \\\\cr x &= \\dfrac{ 48 \\pm 12\\sqrt{ 13 } }{ 2 } \\\\cr x &= 24 \\pm 6\\sqrt{ 13 } \\end{aligned}",
+        "Calculating the two decimal values:<br>$$x \\approx 24 - 21.63 = 2.37\\text{ m}$$<br>$$x \\approx 24 + 21.63 = 45.63\\text{ m}$$<br>The question asks for the <strong>greatest</strong> horizontal distance where the ball is at crossbar height. This corresponds to the larger root where the ball is on its downward trajectory:<br>$$x = 24 + 6\\sqrt{ 13 }\\text{ m} \\approx 45.6\\text{ m}$$",
+        "<strong>(c) Identifying a limitation:</strong><br>In reality, the model ignores external forces such as air resistance, wind, and any spin on the ball. These physical factors would cause the actual trajectory to deviate from a perfect parabolic path."
+    ],
+    "pi_options": [
+        {
+            "ans": "$24 - 6\\sqrt{ 13 }\\text{ m} \\approx 2.37\\text{ m}$",
+            "feedback": "This represents the least horizontal distance from $O$ where the ball reaches a height of $3$ metres, which occurs on its upward path before reaching the peak."
+        },
+        {
+            "ans": "$48\\text{ m}$",
+            "feedback": "This is the total horizontal distance traveled by the ball when it hits the ground ($H = 0$), rather than the position where it passes over the $3$ metre crossbar."
+        },
+        {
+            "ans": "$50.2\\text{ m}$",
+            "feedback": "This error occurs if you make a sign error when setting up the quadratic equation, solving $x^2 - 48x - 108 = 0$ instead of $x^2 - 48x + 108 = 0$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Selecting the Correct Root",
+        "content": "Always read the wording of the question carefully. Setting the height $H = 3$ yields two valid mathematical solutions because the ball reaches this height twice: once on the way up ($x \\approx 2.37\\text{ m}$) and once on the way down ($x \\approx 45.6\\text{ m}$). Since the question asks for the greatest horizontal distance, you must select the larger value."
+    }
+},
+{
+    "id": "004467",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Quadratic Functions",
+    "subtopic": [
+        "Quadratic Modeling",
+        "Solving Quadratic Equations"
+    ],
+    "img": "images/Pure/004467.png",
+    "question": "The image <strong>images/Pure/004467.png</strong> shows a graph representing the trajectory of a golf ball.<br><br>The height above the ground, $H$ metres, has been plotted against the horizontal distance, $x$ metres, measured from the point $O$ where the ball was hit. The ball travels in a vertical plane. The ball reaches a maximum height of $25$ metres and hits the fairway $200$ metres from where it was struck.<br><br><strong>(a)</strong> Find a quadratic equation linking $H$ with $x$ that models this situation.<br><br>The ball passes over the top of a tall tree that is perpendicular to the path of the ball. The tree is $16$ metres high.<br><br><strong>(b)</strong> Use your equation to find the greatest horizontal distance of the tree from $O$.<br><br><strong>(c)</strong> Give one limitation of the model.",
+    "steps": [
+        "<strong>(a) Finding the quadratic model:</strong><br>The golf ball starts at the origin $O(0,0)$ and lands at the point $(200,0)$, which means the roots of the quadratic function are $x = 0$ and $x = 200$. We can express the model in factored form:<br>$$H = kx( 200 - x )$$<br>where $k$ is a constant. The maximum height of $25$ metres occurs at the midpoint of the flight, which is $x = 100$. Therefore, the vertex of the parabola is at $(100, 25)$.",
+        "Substituting $x = 100$ and $H = 25$ into our factored model allows us to solve for $k$:<br>\\begin{aligned} 25 &= k( 100 )( 200 - 100 ) \\\\cr 25 &= 10000k \\\\cr k &= \\dfrac{ 25 }{ 10000 } = \\dfrac{ 1 }{ 400 } \\end{aligned}<br>Therefore, the quadratic equation modeling the trajectory is:<br>$$H = -\\dfrac{ 1 }{ 400 }x^2 + \\dfrac{ 1 }{ 2 }x$$",
+        "<strong>(b) Finding the greatest horizontal distance:</strong><br>The tree is $16$ metres high, so we set $H = 16$ and solve for $x$:<br>$$-\\dfrac{ 1 }{ 400 }x^2 + \\dfrac{ 1 }{ 2 }x = 16$$<br>Multiplying the entire equation by $-400$ to clear the fractions and rearranging into standard quadratic form gives:<br>\\begin{aligned} x^2 - 200x &= -6400 \\\\cr x^2 - 200x + 6400 &= 0 \\end{aligned}",
+        "We can solve this quadratic equation by factoring. We look for two numbers that multiply to $6400$ and add to $-200$. These numbers are $-40$ and $-160$:<br>\\begin{aligned} ( x - 40 )( x - 160 ) &= 0 \\end{aligned}<br>This gives the roots:<br>$$x = 40\\text{ m} \\quad \\text{and} \\quad x = 160\\text{ m}$$",
+        "The question asks for the <strong>greatest</strong> horizontal distance where the ball is at tree height ($16$ metres). This corresponds to the larger root where the ball is on its downward trajectory:<br>$$x = 160\\text{ m}$$",
+        "<strong>(c) Identifying a limitation:</strong><br>The model assumes a constant gravitational field and completely ignores air resistance. Over a large horizontal distance of $200$ metres, air resistance (drag) would significantly alter the shape of the flight path, making it asymmetrical."
+    ],
+    "pi_options": [
+        {
+            "ans": "$40\\text{ m}$",
+            "feedback": "This represents the least horizontal distance where the ball reaches a height of $16$ metres, which occurs on its upward path before reaching the peak."
+        },
+        {
+            "ans": "$200\\text{ m}$",
+            "feedback": "This is the total horizontal distance traveled by the ball when it lands ($H = 0$), rather than the position where it passes over the $16$ metre tall tree."
+        },
+        {
+            "ans": "$228\\text{ m}$",
+            "feedback": "This error occurs if you make a sign error when setting up the quadratic equation, solving $x^2 - 200x - 6400 = 0$ instead of $x^2 - 200x + 6400 = 0$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Factoring Large Quadratics",
+        "content": "When faced with large constant terms like $6400$ in a quadratic equation, do not panic. Try to scale down the numbers by dividing the coefficients of $x$ and the constant by a power of $10$. Here, $x^2 - 200x + 6400 = 0$ behaves like $u^2 - 20u + 64 = 0$ if we let $x = 10u$. Factoring the scaled version gives $( u - 4 )( u - 16 ) = 0$, which scales back directly to $( x - 40 )( x - 160 ) = 0$."
+    }
+},
+{
+    "id": "004468",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Quadratic Functions",
+    "subtopic": [
+        "Quadratic Modeling",
+        "Solving Quadratic Equations"
+    ],
+    "img": "images/Pure/004468.png",
+    "question": "The image <strong>images/Pure/004468.png</strong> shows a graph representing the trajectory of an arrow shot from the ground.<br><br>The height above the ground, $H$ metres, has been plotted against the horizontal distance, $x$ metres, measured from the point $O$ where the arrow was released. The arrow travels in a vertical plane. The arrow reaches a maximum height of $18$ metres and hits the ground $120$ metres from where it was shot.<br><br><strong>(a)</strong> Find a quadratic equation linking $H$ with $x$ that models this situation.<br><br>The arrow passes over a high boundary wall that is perpendicular to the path of the arrow. The top of the wall is $10$ metres above the ground.<br><br><strong>(b)</strong> Use your equation to find the greatest horizontal distance of the wall from $O$.<br><br><strong>(c)</strong> Give one limitation of the model.",
+    "steps": [
+        "<strong>(a) Finding the quadratic model:</strong><br>The arrow is shot from the origin $O(0,0)$ and lands at $(120,0)$, which means the roots of the quadratic function are $x = 0$ and $x = 120$. We can express the model in factored form:<br>$$H = kx( 120 - x )$$<br>where $k$ is a constant. The maximum height of $18$ metres occurs at the midpoint of the flight, which is $x = 60$. Therefore, the vertex of the parabola is at $(60, 18)$.",
+        "Substituting $x = 60$ and $H = 18$ into our factored model allows us to solve for $k$:<br>\\begin{aligned} 18 &= k( 60 )( 120 - 60 ) \\\\cr 18 &= 3600k \\\\cr k &= \\dfrac{ 18 }{ 3600 } = \\dfrac{ 1 }{ 200 } \\end{aligned}<br>Therefore, the quadratic equation modeling the trajectory is:<br>$$H = -\\dfrac{ 1 }{ 200 }x^2 + \\dfrac{ 3 }{ 5 }x$$",
+        "<strong>(b) Finding the greatest horizontal distance:</strong><br>The wall is $10$ metres tall, so we set $H = 10$ and solve for $x$:<br>$$-\\dfrac{ 1 }{ 200 }x^2 + \\dfrac{ 3 }{ 5 }x = 10$$<br>Multiplying the entire equation by $-200$ to clear the fractions and rearranging into standard quadratic form gives:<br>\\begin{aligned} x^2 - 120x &= -2000 \\\\cr x^2 - 120x + 2000 &= 0 \\end{aligned}",
+        "We can solve this quadratic equation by factoring. We look for two numbers that multiply to $2000$ and add to $-120$. These numbers are $-20$ and $-100$:<br>\\begin{aligned} ( x - 20 )( x - 100 ) &= 0 \\end{aligned}<br>This gives the roots:<br>$$x = 20\\text{ m} \\quad \\text{and} \\quad x = 100\\text{ m}$$",
+        "The question asks for the <strong>greatest</strong> horizontal distance where the arrow is at wall height ($10$ metres). This corresponds to the larger root where the arrow is on its downward trajectory:<br>$$x = 100\\text{ m}$$",
+        "<strong>(c) Identifying a limitation:</strong><br>The model ignores physical factors such as air resistance, arrow spin, and wind currents. Over a distance of $120$ metres, wind drift and drag would reduce the range and skew the perfect parabolic path."
+    ],
+    "pi_options": [
+        {
+            "ans": "$20\\text{ m}$",
+            "feedback": "This represents the least horizontal distance from $O$ where the arrow reaches $10$ metres high, which occurs on its upward path before reaching its peak."
+        },
+        {
+            "ans": "$120\\text{ m}$",
+            "feedback": "This is the total horizontal distance traveled by the arrow when it lands ($H = 0$), rather than the position where it passes over the $10$ metre wall."
+        },
+        {
+            "ans": "$134\\text{ m}$",
+            "feedback": "This error occurs if you make a sign error when setting up the quadratic equation, solving $x^2 - 120x - 2000 = 0$ instead of $x^2 - 120x + 2000 = 0$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Symmetry of Parabolas",
+        "content": "A key property of quadratic curves is their perfect line of symmetry. Since the axis of symmetry is at $x = 60$, any specific height $H$ (less than the maximum height of $18\\text{ m}$) must occur at two horizontal distances that are equidistant from $x = 60$. Notice that the roots $x = 20$ and $x = 100$ are both exactly $40$ units away from $x = 60$. Knowing this symmetry helps you quickly double-check your arithmetic!"
+    }
+},
+{
+    "id": "004469",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Quadratic Functions",
+    "subtopic": [
+        "Quadratic Modeling",
+        "Solving Quadratic Equations"
+    ],
+    "img": "images/Pure/004469.png",
+    "question": "The image <strong>images/Pure/004469.png</strong> shows a graph representing the trajectory of a tennis ball lobbed from the court surface.<br><br>The height above the court, $H$ metres, has been plotted against the horizontal distance, $x$ metres, measured from the point $O$ where the ball was struck. The ball travels in a vertical plane. The ball reaches a maximum height of $9$ metres and hits the court $24$ metres from where it was struck.<br><br><strong>(a)</strong> Find a quadratic equation linking $H$ with $x$ that models this situation.<br><br>The ball passes over a practice net barrier that is perpendicular to the path of the ball. The barrier is $5$ metres high.<br><br><strong>(b)</strong> Use your equation to find the greatest horizontal distance of the barrier from $O$.<br><br><strong>(c)</strong> Give one limitation of the model.",
+    "steps": [
+        "<strong>(a) Finding the quadratic model:</strong><br>The tennis ball starts at the origin $O(0,0)$ and lands at $(24,0)$, which means the roots of the quadratic function are $x = 0$ and $x = 24$. We can express the model in factored form:<br>$$H = kx( 24 - x )$$<br>where $k$ is a constant. The maximum height of $9$ metres occurs at the midpoint of the flight, which is $x = 12$. Therefore, the vertex of the parabola is at $(12, 9)$.",
+        "Substituting $x = 12$ and $H = 9$ into our factored model allows us to solve for $k$:<br>\\begin{aligned} 9 &= k( 12 )( 24 - 12 ) \\\\cr 9 &= 144k \\\\cr k &= \\dfrac{ 9 }{ 144 } = \\dfrac{ 1 }{ 16 } \\end{aligned}<br>Therefore, the quadratic equation modeling the trajectory is:<br>$$H = -\\dfrac{ 1 }{ 16 }x^2 + \\dfrac{ 3 }{ 2 }x$$",
+        "<strong>(b) Finding the greatest horizontal distance:</strong><br>The net barrier is $5$ metres high, so we set $H = 5$ and solve for $x$:<br>$$-\\dfrac{ 1 }{ 16 }x^2 + \\dfrac{ 3 }{ 2 }x = 5$$<br>Multiplying the entire equation by $-16$ to clear the fractions and rearranging into standard quadratic form gives:<br>\\begin{aligned} x^2 - 24x &= -80 \\\\cr x^2 - 24x + 80 &= 0 \\end{aligned}",
+        "We can solve this quadratic equation by factoring. We look for two numbers that multiply to $80$ and add to $-24$. These numbers are $-4$ and $-20$:<br>\\begin{aligned} ( x - 4 )( x - 20 ) &= 0 \\end{aligned}<br>This gives the roots:<br>$$x = 4\\text{ m} \\quad \\text{and} \\quad x = 20\\text{ m}$$",
+        "The question asks for the <strong>greatest</strong> horizontal distance where the ball is at net height ($5$ metres). This corresponds to the larger root where the ball is on its downward trajectory:<br>$$x = 20\\text{ m}$$",
+        "<strong>(c) Identifying a limitation:</strong><br>The model assumes that the ball starts and lands exactly on the flat court surface level ($H = 0$). In a real match, the ball is hit from racket-height (typically around $1$ metre above court level) and might be caught or hit again before landing."
+    ],
+    "pi_options": [
+        {
+            "ans": "$4\\text{ m}$",
+            "feedback": "This represents the least horizontal distance from $O$ where the tennis ball reaches $5$ metres high, which occurs on its upward path before reaching its peak."
+        },
+        {
+            "ans": "$24\\text{ m}$",
+            "feedback": "This is the total horizontal distance traveled by the tennis ball when it lands ($H = 0$), rather than the position where it passes over the $5$ metre barrier."
+        },
+        {
+            "ans": "$27\\text{ m}$",
+            "feedback": "This error occurs if you make a sign error when setting up the quadratic equation, solving $x^2 - 24x - 80 = 0$ instead of $x^2 - 24x + 80 = 0$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Distinguishing Greatest and Least Distance",
+        "content": "A common exam slip is to write down the smaller root ($x = 4\\text{ m}$) because it is the first positive number found. Always re-read the question to check if you need the greatest distance, the least distance, or even the horizontal interval over which the ball remains above the barrier (which would be $4 < x < 20$)."
+    }
+},
+{
+    "id": "004470",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Quadratic Functions",
+    "subtopic": [
+        "Quadratic Modeling",
+        "Solving Quadratic Equations"
+    ],
+    "img": "images/Pure/004470.png",
+    "question": "The image <strong>images/Pure/004470.png</strong> shows a graph representing the trajectory of a cricket ball hit from the ground.<br><br>The height above the ground, $H$ metres, has been plotted against the horizontal distance, $x$ metres, measured from the point $O$ where the ball was hit. The ball travels in a vertical plane. The ball reaches a maximum height of $16$ metres and lands $80$ metres from where it was hit.<br><br><strong>(a)</strong> Find a quadratic equation linking $H$ with $x$ that models this situation.<br><br>The ball passes over a sight screen that is perpendicular to the path of the ball. The top of the sight screen is $7$ metres above the ground.<br><br><strong>(b)</strong> Use your equation to find the greatest horizontal distance of the sight screen from $O$.<br><br><strong>(c)</strong> Give one limitation of the model.",
+    "steps": [
+        "<strong>(a) Finding the quadratic model:</strong><br>The cricket ball starts at the origin $O(0,0)$ and lands at $(80,0)$, which means the roots of the quadratic function are $x = 0$ and $x = 80$. We can express the model in factored form:<br>$$H = kx( 80 - x )$$<br>where $k$ is a constant. The maximum height of $16$ metres occurs at the midpoint of the flight, which is $x = 40$. Therefore, the vertex of the parabola is at $(40, 16)$.",
+        "Substituting $x = 40$ and $H = 16$ into our factored model allows us to solve for $k$:<br>\\begin{aligned} 16 &= k( 40 )( 80 - 40 ) \\\\cr 16 &= 1600k \\\\cr k &= \\dfrac{ 16 }{ 1600 } = \\dfrac{ 1 }{ 100 } \\end{aligned}<br>Therefore, the quadratic equation modeling the trajectory is:<br>$$H = -\\dfrac{ 1 }{ 100 }x^2 + \\dfrac{ 4 }{ 5 }x$$",
+        "<strong>(b) Finding the greatest horizontal distance:</strong><br>The sight screen is $7$ metres tall, so we set $H = 7$ and solve for $x$:<br>$$-\\dfrac{ 1 }{ 100 }x^2 + \\dfrac{ 4 }{ 5 }x = 7$$<br>Multiplying the entire equation by $-100$ to clear the fractions and rearranging into standard quadratic form gives:<br>\\begin{aligned} x^2 - 80x &= -700 \\\\cr x^2 - 80x + 700 &= 0 \\end{aligned}",
+        "We can solve this quadratic equation by factoring. We look for two numbers that multiply to $700$ and add to $-80$. These numbers are $-10$ and $-70$:<br>\\begin{aligned} ( x - 10 )( x - 70 ) &= 0 \\end{aligned}<br>This gives the roots:<br>$$x = 10\\text{ m} \\quad \\text{and} \\quad x = 70\\text{ m}$$",
+        "The question asks for the <strong>greatest</strong> horizontal distance where the cricket ball is at the height of the sight screen ($7$ metres). This corresponds to the larger root where the ball is on its downward trajectory:<br>$$x = 70\\text{ m}$$",
+        "<strong>(c) Identifying a limitation:</strong><br>In reality, the model ignores the effect of air resistance and the spin of the ball. A spinning cricket ball experiences aerodynamic forces (lift/drag) that make the flight asymmetric and slightly non-parabolic."
+    ],
+    "pi_options": [
+        {
+            "ans": "$10\\text{ m}$",
+            "feedback": "This represents the least horizontal distance from $O$ where the cricket ball reaches $7$ metres high, which occurs on its upward path before reaching its peak."
+        },
+        {
+            "ans": "$80\\text{ m}$",
+            "feedback": "This is the total horizontal distance traveled by the cricket ball when it lands ($H = 0$), rather than the position where it passes over the $7$ metre screen."
+        },
+        {
+            "ans": "$88\\text{ m}$",
+            "feedback": "This error occurs if you make a sign error when setting up the quadratic equation, solving $x^2 - 80x - 700 = 0$ instead of $x^2 - 80x + 700 = 0$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Standard Form Scaling",
+        "content": "Using exact fractions instead of decimals (such as $-\\dfrac{ 1 }{ 100 }$ rather than $-0.01$) keeps the coefficients clean and makes algebra much easier to solve. Decimal forms often hide simple factorizations that become immediately obvious once the fractions are cleared."
+    }
 }
 
 ];
