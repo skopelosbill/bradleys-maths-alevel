@@ -1737,6 +1737,201 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: High Power Integration Rules",
         "content": "When integrating higher powers like $x^3 \\ln x$, the denominator on the second term becomes $( n+1 )^2 = 16$. Always run a quick mental differentiation check on your result: $\\dfrac{ \\mathrm{d} }{ \\mathrm{d}x }\\left( \\dfrac{ 1 }{ 4 }x^4 \\ln x - \\dfrac{ 1 }{ 16 }x^4 \\right) = x^3 \\ln x + \\dfrac{ 1 }{ 4 }x^3 - \\dfrac{ 1 }{ 4 }x^3 = x^3 \\ln x$. This quick 5-second sanity check ensures your integration by parts is correct!"
     }
+},
+{
+    "id": "004496",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Exponential Modeling",
+        "Logistic Growth"
+    ],
+    "img": false,
+    "question": "A biologist is studying a population of rare birds on an island. The number of birds, $N$, in the population, $t$ years after the start of the study, is modeled by the equation:<br>$$N = \\dfrac{ 1200 }{ 4 + 6\\mathrm{e}^{ -0.2t } }, \\quad t \\ge 0, \\quad t \\in \\mathbb{R}$$<br><strong>(a)</strong> Find the number of birds in the population at the start of the study.<br><br><strong>(b)</strong> Show that the rate of growth of the bird population, $\\dfrac{ \\mathrm{d}N }{ \\mathrm{d}t }$, is given by:<br>$$\\dfrac{ \\mathrm{d}N }{ \\mathrm{d}t } = \\dfrac{ N( 300 - N ) }{ 1500 }$$<br><strong>(c)</strong> The rate of growth is a maximum after $T$ years. Find, according to the model, the value of $T$ to 2 decimal places.<br><br><strong>(d)</strong> According to the model, the maximum number of birds on the island is $P$. State the value of $P$.",
+    "steps": [
+        "<strong>(a) Finding the initial population:</strong><br>At the start of the study, $t = 0$. Substituting $t = 0$ into the model equation:<br>\\begin{aligned} N &= \\dfrac{ 1200 }{ 4 + 6\\mathrm{e}^{ -0.2( 0 ) } } \\cr &= \\dfrac{ 1200 }{ 4 + 6( 1 ) } \\cr &= \\dfrac{ 1200 }{ 10 } = 120 \\end{aligned}<br>Therefore, there are $120$ birds in the population at the start of the study.",
+        "<strong>(b) Finding the rate of growth $\\dfrac{ \\mathrm{d}N }{ \\mathrm{d}t }$:</strong><br>We rewrite the model as $N = 1200( 4 + 6\\mathrm{e}^{ -0.2t } )^{ -1 }$ and differentiate with respect to $t$ using the chain rule:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}N }{ \\mathrm{d}t } &= -1200( 4 + 6\\mathrm{e}^{ -0.2t } )^{ -2 } \\times \\left( -0.2 \\times 6\\mathrm{e}^{ -0.2t } \\right) \\cr &= \\dfrac{ 1440\\mathrm{e}^{ -0.2t } }{ ( 4 + 6\\mathrm{e}^{ -0.2t } )^2 } \\end{aligned}<br>Now, we rearrange the original model equation to express $6\\mathrm{e}^{ -0.2t }$ in terms of $N$:<br>\\begin{aligned} 4 + 6\\mathrm{e}^{ -0.2t } &= \\dfrac{ 1200 }{ N } \\cr 6\\mathrm{e}^{ -0.2t } &= \\dfrac{ 1200 }{ N } - 4 = \\dfrac{ 4( 300 - N ) }{ N } \\end{aligned}",
+        "We substitute this expression back into our derivative to express $\\dfrac{ \\mathrm{d}N }{ \\mathrm{d}t }$ purely in terms of $N$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}N }{ \\mathrm{d}t } &= 0.2 \\times \\left( \\dfrac{ 1200 }{ 4 + 6\\mathrm{e}^{ -0.2t } } \\right) \\times \\left( \\dfrac{ 6\\mathrm{e}^{ -0.2t } }{ 4 + 6\\mathrm{e}^{ -0.2t } } \\right) \\cr &= 0.2 \\times N \\times \\left( \\dfrac{ \\dfrac{ 4( 300 - N ) }{ N } }{ \\dfrac{ 1200 }{ N } } \\right) \\cr &= 0.2 \\times N \\times \\left( \\dfrac{ 4( 300 - N ) }{ 1200 } \\right) \\cr &= \\dfrac{ 0.8N( 300 - N ) }{ 1200 } = \\dfrac{ N( 300 - N ) }{ 1500 } \\end{aligned}",
+        "<strong>(c) Finding the time $T$ of maximum rate of growth:</strong><br>The rate of growth is modeled by the quadratic equation $R( N ) = \\dfrac{ 300N - N^2 }{ 1500 }$. The maximum of this quadratic occurs at its vertex, which is at:<br>$$N = \\dfrac{ 300 }{ 2 } = 150$$<br>We find the value of $T$ when $N = 150$ using our model equation:<br>\\begin{aligned} 150 &= \\dfrac{ 1200 }{ 4 + 6\\mathrm{e}^{ -0.2T } } \\cr 4 + 6\\mathrm{e}^{ -0.2T } &= \\dfrac{ 1200 }{ 150 } = 8 \\cr 6\\mathrm{e}^{ -0.2T } &= 4 \\cr \\mathrm{e}^{ -0.2T } &= \\dfrac{ 2 }{ 3 } \\cr -0.2T &= \\ln\\left( \\dfrac{ 2 }{ 3 } \\right) = -\\ln( 1.5 ) \\cr T &= 5\\ln( 1.5 ) \\approx 2.03\\text{ years} \\end{aligned}",
+        "<strong>(d) Finding the carrying capacity $P$:</strong><br>The maximum population occurs as $t \\to \\infty$. In this limit, $\\mathrm{e}^{ -0.2t } \\to 0$. Therefore:<br>\\begin{aligned} P &= \\lim_{ t \\to \\infty } \\dfrac{ 1200 }{ 4 + 6\\mathrm{e}^{ -0.2t } } \\cr &= \\dfrac{ 1200 }{ 4 + 6( 0 ) } \\cr &= \\dfrac{ 1200 }{ 4 } = 300 \\end{aligned}<br>Therefore, the maximum number of birds according to the model is $P = 300$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $120$, <strong>(b)</strong> as shown, <strong>(c)</strong> $T \\approx 3.39\\text{ years}$, <strong>(d)</strong> $P = 300$",
+            "feedback": "This error occurs if you use the incorrect time constant from the original model ($0.25$ instead of $0.2$), yielding a larger value of $T \\approx 3.39\\text{ years}$ instead of $2.03\\text{ years}$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $120$, <strong>(b)</strong> as shown, <strong>(c)</strong> $T \\approx 2.03\\text{ years}$, <strong>(d)</strong> $P = 1200$",
+            "feedback": "This is a misinterpretation of the carrying capacity $P$. The value of $P$ is not the numerator of the logistic fraction ($1200$), but rather the limit as $t \\to \\infty$, which is $\\dfrac{ 1200 }{ 4 } = 300$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $300$, <strong>(b)</strong> as shown, <strong>(c)</strong> $T \\approx 2.03\\text{ years}$, <strong>(d)</strong> $P = 120$",
+            "feedback": "This is a basic calculation slip where the initial population and carrying capacity are swapped, setting $N(0) = 300$ and $P = 120$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Vertex of Logistic Growth",
+        "content": "For any standard logistic growth model of the form $\\dfrac{ \\mathrm{d}N }{ \\mathrm{d}t } = k N( P - N )$, the maximum rate of growth always occurs exactly at half of the carrying capacity: $N = \\dfrac{ P }{ 2 }$. Recognizing this shortcut allows you to immediately bypass the quadratic vertex derivation and jump directly to solving the time $T$ when $N = \\dfrac{ P }{ 2 }$."
+    }
+},
+{
+    "id": "004497",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Exponential Modeling",
+        "Logistic Growth"
+    ],
+    "img": false,
+    "question": "A microbiologist is monitoring the growth of a bacterial culture. The number of bacteria, $N$, in thousands, $t$ hours after the experiment begins, is modeled by the equation:<br>$$N = \\dfrac{ 2000 }{ 5 + 15\\mathrm{e}^{ -0.1t } }, \\quad t \\ge 0, \\quad t \\in \\mathbb{R}$$<br><strong>(a)</strong> Find the number of bacteria, in thousands, at the start of the experiment.<br><br><strong>(b)</strong> Show that the rate of growth of the bacterial population, $\\dfrac{ \\mathrm{d}N }{ \\mathrm{d}t }$, is given by:<br>$$\\dfrac{ \\mathrm{d}N }{ \\mathrm{d}t } = \\dfrac{ N( 400 - N ) }{ 4000 }$$<br><strong>(c)</strong> The rate of growth is a maximum after $T$ hours. Find, according to the model, the value of $T$ to 2 decimal places.<br><br><strong>(d)</strong> According to the model, the maximum number of bacteria in the culture is $P$ thousand. State the value of $P$.",
+    "steps": [
+        "<strong>(a) Finding the initial population:</strong><br>At the start of the experiment, $t = 0$. Substituting $t = 0$ into the model equation:<br>\\begin{aligned} N &= \\dfrac{ 2000 }{ 5 + 15\\mathrm{e}^{ -0.1( 0 ) } } \\cr &= \\dfrac{ 2000 }{ 5 + 15( 1 ) } \\cr &= \\dfrac{ 2000 }{ 20 } = 100 \\end{aligned}<br>Therefore, there are $100$ thousand bacteria at the start of the experiment.",
+        "<strong>(b) Finding the rate of growth $\\dfrac{ \\mathrm{d}N }{ \\mathrm{d}t }$:</strong><br>We rewrite the model as $N = 2000( 5 + 15\\mathrm{e}^{ -0.1t } )^{ -1 }$ and differentiate with respect to $t$ using the chain rule:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}N }{ \\mathrm{d}t } &= -2000( 5 + 15\\mathrm{e}^{ -0.1t } )^{ -2 } \\times \\left( -0.1 \\times 15\\mathrm{e}^{ -0.1t } \\right) \\cr &= \\dfrac{ 3000\\mathrm{e}^{ -0.1t } }{ ( 5 + 15\\mathrm{e}^{ -0.1t } )^2 } \\end{aligned}<br>Now, we rearrange the original model equation to express $15\\mathrm{e}^{ -0.1t }$ in terms of $N$:<br>\\begin{aligned} 5 + 15\\mathrm{e}^{ -0.1t } &= \\dfrac{ 2000 }{ N } \\cr 15\\mathrm{e}^{ -0.1t } &= \\dfrac{ 2000 }{ N } - 5 = \\dfrac{ 5( 400 - N ) }{ N } \\end{aligned}",
+        "We substitute this expression back into our derivative to express $\\dfrac{ \\mathrm{d}N }{ \\mathrm{d}t }$ purely in terms of $N$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}N }{ \\mathrm{d}t } &= 0.1 \\times \\left( \\dfrac{ 2000 }{ 5 + 15\\mathrm{e}^{ -0.1t } } \\right) \\times \\left( \\dfrac{ 15\\mathrm{e}^{ -0.1t } }{ 5 + 15\\mathrm{e}^{ -0.1t } } \\right) \\cr &= 0.1 \\times N \\times \\left( \\dfrac{ \\dfrac{ 5( 400 - N ) }{ N } }{ \\dfrac{ 2000 }{ N } } \\right) \\cr &= 0.1 \\times N \\times \\left( \\dfrac{ 5( 400 - N ) }{ 2000 } \\right) \\cr &= \\dfrac{ 0.5N( 400 - N ) }{ 2000 } = \\dfrac{ N( 400 - N ) }{ 4000 } \\end{aligned}",
+        "<strong>(c) Finding the time $T$ of maximum rate of growth:</strong><br>The rate of growth is modeled by the quadratic equation $R( N ) = \\dfrac{ 400N - N^2 }{ 4000 }$. The maximum of this quadratic occurs at its vertex, which is at:<br>$$N = \\dfrac{ 400 }{ 2 } = 200$$<br>We find the value of $T$ when $N = 200$ using our model equation:<br>\\begin{aligned} 200 &= \\dfrac{ 2000 }{ 5 + 15\\mathrm{e}^{ -0.1T } } \\cr 5 + 15\\mathrm{e}^{ -0.1T } &= \\dfrac{ 2000 }{ 200 } = 10 \\cr 15\\mathrm{e}^{ -0.1T } &= 5 \\cr \\mathrm{e}^{ -0.1T } &= \\dfrac{ 1 }{ 3 } \\cr -0.1T &= \\ln\\left( \\dfrac{ 1 }{ 3 } \\right) = -\\ln( 3 ) \\cr T &= 10\\ln( 3 ) \\approx 10.99\\text{ hours} \\end{aligned}",
+        "<strong>(d) Finding the carrying capacity $P$:</strong><br>The maximum population occurs as $t \\to \\infty$. In this limit, $\\mathrm{e}^{ -0.1t } \\to 0$. Therefore:<br>\\begin{aligned} P &= \\lim_{ t \\to \\infty } \\dfrac{ 2000 }{ 5 + 15\\mathrm{e}^{ -0.1t } } \\cr &= \\dfrac{ 2000 }{ 5 + 15( 0 ) } \\cr &= \\dfrac{ 2000 }{ 5 } = 400 \\end{aligned}<br>Therefore, the maximum number of bacteria according to the model is $P = 400$ thousand."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $100$ thousand, <strong>(b)</strong> as shown, <strong>(c)</strong> $T \\approx 10.99\\text{ hours}$, <strong>(d)</strong> $P = 2000$ thousand",
+            "feedback": "This is a misinterpretation of the carrying capacity $P$. The value of $P$ is not the numerator of the logistic fraction ($2000$), but rather the limit as $t \\to \\infty$, which is $\\dfrac{ 2000 }{ 5 } = 400$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $100$ thousand, <strong>(b)</strong> as shown, <strong>(c)</strong> $T \\approx 4.05\\text{ hours}$, <strong>(d)</strong> $P = 400$ thousand",
+            "feedback": "This error occurs if you use an incorrect time constant when solving for the maximum growth rate time $T$, yielding a smaller value of $T \\approx 4.05\\text{ hours}$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $400$ thousand, <strong>(b)</strong> as shown, <strong>(c)</strong> $T \\approx 10.99\\text{ hours}$, <strong>(d)</strong> $P = 100$ thousand",
+            "feedback": "This is a calculation slip where the initial population and carrying capacity are swapped, setting $N(0) = 400$ thousand and $P = 100$ thousand."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Units of Measurement Check",
+        "content": "Always verify the units of measurement used in the question. In this model, $N$ is explicitly defined as the number of bacteria 'in thousands'. When interpreting values like $N( 0 ) = 100$ or carrying capacity $P = 400$, remember that they represent $100,000$ and $400,000$ bacteria respectively. Forgetting to track this scaling is a common source of exam errors!"
+    }
+},
+{
+    "id": "004498",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Exponential Modeling",
+        "Logistic Growth"
+    ],
+    "img": false,
+    "question": "An epidemiologist is tracking the spread of a flu virus through a school. The number of infected students, $I$, at time $t$ days after the tracking begins, is modeled by the equation:<br>$$I = \\dfrac{ 800 }{ 2 + 8\\mathrm{e}^{ -0.4t } }, \\quad t \\ge 0, \\quad t \\in \\mathbb{R}$$<br><strong>(a)</strong> Find the number of infected students at the start of the tracking period.<br><br><strong>(b)</strong> Show that the rate of spread of the virus, $\\dfrac{ \\mathrm{d}I }{ \\mathrm{d}t }$, is given by:<br>$$\\dfrac{ \\mathrm{d}I }{ \\mathrm{d}t } = \\dfrac{ I( 400 - I ) }{ 1000 }$$<br><strong>(c)</strong> The rate of spread is a maximum after $T$ days. Find, according to the model, the value of $T$ to 2 decimal places.<br><br><strong>(d)</strong> According to the model, the maximum number of infected students in the school is $P$. State the value of $P$.",
+    "steps": [
+        "<strong>(a) Finding the initial infected population:</strong><br>At the start of the tracking, $t = 0$. Substituting $t = 0$ into the model equation:<br>\\begin{aligned} I &= \\dfrac{ 800 }{ 2 + 8\\mathrm{e}^{ -0.4( 0 ) } } \\cr &= \\dfrac{ 800 }{ 2 + 8( 1 ) } \\cr &= \\dfrac{ 800 }{ 10 } = 80 \\end{aligned}<br>Therefore, there are $80$ infected students at the start of the tracking period.",
+        "<strong>(b) Finding the rate of spread $\\dfrac{ \\mathrm{d}I }{ \\mathrm{d}t }$:</strong><br>We rewrite the model as $I = 800( 2 + 8\\mathrm{e}^{ -0.4t } )^{ -1 }$ and differentiate with respect to $t$ using the chain rule:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}I }{ \\mathrm{d}t } &= -800( 2 + 8\\mathrm{e}^{ -0.4t } )^{ -2 } \\times \\left( -0.4 \\times 8\\mathrm{e}^{ -0.4t } \\right) \\cr &= \\dfrac{ 2560\\mathrm{e}^{ -0.4t } }{ ( 2 + 8\\mathrm{e}^{ -0.4t } )^2 } \\end{aligned}<br>Now, we rearrange the original model equation to express $8\\mathrm{e}^{ -0.4t }$ in terms of $I$:<br>\\begin{aligned} 2 + 8\\mathrm{e}^{ -0.4t } &= \\dfrac{ 800 }{ I } \\cr 8\\mathrm{e}^{ -0.4t } &= \\dfrac{ 800 }{ I } - 2 = \\dfrac{ 2( 400 - I ) }{ I } \\end{aligned}",
+        "We substitute this expression back into our derivative to express $\\dfrac{ \\mathrm{d}I }{ \\mathrm{d}t }$ purely in terms of $I$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}I }{ \\mathrm{d}t } &= 0.4 \\times \\left( \\dfrac{ 800 }{ 2 + 8\\mathrm{e}^{ -0.4t } } \\right) \\times \\left( \\dfrac{ 8\\mathrm{e}^{ -0.4t } }{ 2 + 8\\mathrm{e}^{ -0.4t } } \\right) \\cr &= 0.4 \\times I \\times \\left( \\dfrac{ \\dfrac{ 2( 400 - I ) }{ I } }{ \\dfrac{ 800 }{ I } } \\right) \\cr &= 0.4 \\times I \\times \\left( \\dfrac{ 2( 400 - I ) }{ 800 } \\right) \\cr &= \\dfrac{ 0.8I( 400 - I ) }{ 800 } = \\dfrac{ I( 400 - I ) }{ 1000 } \\end{aligned}",
+        "<strong>(c) Finding the time $T$ of maximum rate of spread:</strong><br>The rate of spread is modeled by the quadratic equation $R( I ) = \\dfrac{ 400I - I^2 }{ 1000 }$. The maximum of this quadratic occurs at its vertex, which is at:<br>$$I = \\dfrac{ 400 }{ 2 } = 200$$<br>We find the value of $T$ when $I = 200$ using our model equation:<br>\\begin{aligned} 200 &= \\dfrac{ 800 }{ 2 + 8\\mathrm{e}^{ -0.4T } } \\cr 2 + 8\\mathrm{e}^{ -0.4T } &= \\dfrac{ 800 }{ 200 } = 4 \\cr 8\\mathrm{e}^{ -0.4T } &= 2 \\cr \\mathrm{e}^{ -0.4T } &= \\dfrac{ 1 }{ 4 } \\cr -0.4T &= \\ln\\left( \\dfrac{ 1 }{ 4 } \\right) = -\\ln( 4 ) \\cr T &= 2.5\\ln( 4 ) \\approx 3.47\\text{ days} \\end{aligned}",
+        "<strong>(d) Finding the carrying capacity $P$:</strong><br>The maximum infected population occurs as $t \\to \\infty$. In this limit, $\\mathrm{e}^{ -0.4t } \\to 0$. Therefore:<br>\\begin{aligned} P &= \\lim_{ t \\to \\infty } \\dfrac{ 800 }{ 2 + 8\\mathrm{e}^{ -0.4t } } \\cr &= \\dfrac{ 800 }{ 2 + 8( 0 ) } \\cr &= \\dfrac{ 800 }{ 2 } = 400 \\end{aligned}<br>Therefore, the maximum number of infected students is $P = 400$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $80$, <strong>(b)</strong> as shown, <strong>(c)</strong> $T \\approx 3.47\\text{ days}$, <strong>(d)</strong> $P = 800$",
+            "feedback": "This is a misinterpretation of the carrying capacity $P$. The value of $P$ is not the numerator of the fraction ($800$), but rather the limit as $t \\to \\infty$, which is $\\dfrac{ 800 }{ 2 } = 400$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $80$, <strong>(b)</strong> as shown, <strong>(c)</strong> $T \\approx 1.73\\text{ days}$, <strong>(d)</strong> $P = 400$",
+            "feedback": "This error occurs if you make a calculation slip when taking logarithms in Step 4, such as dividing by $0.8$ instead of $0.4$, which yields a smaller value of $T \\approx 1.73\\text{ days}$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $400$, <strong>(b)</strong> as shown, <strong>(c)</strong> $T \\approx 3.47\\text{ days}$, <strong>(d)</strong> $P = 80$",
+            "feedback": "This is a calculation slip where the initial infected population and carrying capacity are swapped, setting $I(0) = 400$ and $P = 80$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Contextual Constraints",
+        "content": "Always remember that mathematical models have physical limitations. While the carrying capacity of the virus is $P = 400$, this model only holds true if the total school population is at least $400$. Always check if the algebraic carrying capacity is realistic relative to the real-world constraints given in the problem context!"
+    }
+},
+{
+    "id": "004499",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Exponential Modeling",
+        "Logistic Growth"
+    ],
+    "img": false,
+    "question": "A conservationist is managing a population of fish in a newly stocked lake. The number of fish, $F$, in the lake, $t$ months after stocking, is modeled by the equation:<br>$$F = \\dfrac{ 3000 }{ 3 + 9\\mathrm{e}^{ -0.15t } }, \\quad t \\ge 0, \\quad t \\in \\mathbb{R}$$<br><strong>(a)</strong> Find the number of fish in the lake at the start of the study.<br><br><strong>(b)</strong> Show that the rate of growth of the fish population, $\\dfrac{ \\mathrm{d}F }{ \\mathrm{d}t }$, is given by:<br>$$\\dfrac{ \\mathrm{d}F }{ \\mathrm{d}t } = \\dfrac{ 3F( 1000 - F ) }{ 20000 }$$<br><strong>(c)</strong> The rate of growth is a maximum after $T$ months. Find, according to the model, the value of $T$ to 2 decimal places.<br><br><strong>(d)</strong> According to the model, the maximum number of fish in the lake is $P$. State the value of $P$.",
+    "steps": [
+        "<strong>(a) Finding the initial fish population:</strong><br>At the start of the study, $t = 0$. Substituting $t = 0$ into the model equation:<br>\\begin{aligned} F &= \\dfrac{ 3000 }{ 3 + 9\\mathrm{e}^{ -0.15( 0 ) } } \\cr &= \\dfrac{ 3000 }{ 3 + 9( 1 ) } \\cr &= \\dfrac{ 3000 }{ 12 } = 250 \\end{aligned}<br>Therefore, there are $250$ fish in the lake at the start of the study.",
+        "<strong>(b) Finding the rate of growth $\\dfrac{ \\mathrm{d}F }{ \\mathrm{d}t }$:</strong><br>We rewrite the model as $F = 3000( 3 + 9\\mathrm{e}^{ -0.15t } )^{ -1 }$ and differentiate with respect to $t$ using the chain rule:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}F }{ \\mathrm{d}t } &= -3000( 3 + 9\\mathrm{e}^{ -0.15t } )^{ -2 } \\times \\left( -0.15 \\times 9\\mathrm{e}^{ -0.15t } \\right) \\cr &= \\dfrac{ 4050\\mathrm{e}^{ -0.15t } }{ ( 3 + 9\\mathrm{e}^{ -0.15t } )^2 } \\end{aligned}<br>Now, we rearrange the original model equation to express $9\\mathrm{e}^{ -0.15t }$ in terms of $F$:<br>\\begin{aligned} 3 + 9\\mathrm{e}^{ -0.15t } &= \\dfrac{ 3000 }{ F } \\cr 9\\mathrm{e}^{ -0.15t } &= \\dfrac{ 3000 }{ F } - 3 = \\dfrac{ 3( 1000 - F ) }{ F } \\end{aligned}",
+        "We substitute this expression back into our derivative to express $\\dfrac{ \\mathrm{d}F }{ \\mathrm{d}t }$ purely in terms of $F$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}F }{ \\mathrm{d}t } &= 0.15 \\times \\left( \\dfrac{ 3000 }{ 3 + 9\\mathrm{e}^{ -0.15t } } \\right) \\times \\left( \\dfrac{ 9\\mathrm{e}^{ -0.15t } }{ 3 + 9\\mathrm{e}^{ -0.15t } } \\right) \\cr &= 0.15 \\times F \\times \\left( \\dfrac{ \\dfrac{ 3( 1000 - F ) }{ F } }{ \\dfrac{ 3000 }{ F } } \\right) \\cr &= 0.15 \\times F \\times \\left( \\dfrac{ 3( 1000 - F ) }{ 3000 } \\right) \\cr &= \\dfrac{ 0.45F( 1000 - F ) }{ 3000 } = \\dfrac{ 3F( 1000 - F ) }{ 20000 } \\end{aligned}",
+        "<strong>(c) Finding the time $T$ of maximum rate of growth:</strong><br>The rate of growth is modeled by the quadratic equation $R( F ) = \\dfrac{ 3000F - 3F^2 }{ 20000 }$. The maximum of this quadratic occurs at its vertex, which is at:<br>$$F = \\dfrac{ 1000 }{ 2 } = 500$$<br>We find the value of $T$ when $F = 500$ using our model equation:<br>\\begin{aligned} 500 &= \\dfrac{ 3000 }{ 3 + 9\\mathrm{e}^{ -0.15T } } \\cr 3 + 9\\mathrm{e}^{ -0.15T } &= \\dfrac{ 3000 }{ 500 } = 6 \\cr 9\\mathrm{e}^{ -0.15T } &= 3 \\cr \\mathrm{e}^{ -0.15T } &= \\dfrac{ 1 }{ 3 } \\cr -0.15T &= \\ln\\left( \\dfrac{ 1 }{ 3 } \\right) = -\\ln( 3 ) \\cr T &= \\dfrac{ \\ln 3 }{ 0.15 } \\approx 7.32\\text{ months} \\end{aligned}",
+        "<strong>(d) Finding the carrying capacity $P$:</strong><br>The maximum fish population occurs as $t \\to \\infty$. In this limit, $\\mathrm{e}^{ -0.15t } \\to 0$. Therefore:<br>\\begin{aligned} P &= \\lim_{ t \\to \\infty } \\dfrac{ 3000 }{ 3 + 9\\mathrm{e}^{ -0.15t } } \\cr &= \\dfrac{ 3000 }{ 3 + 9( 0 ) } \\cr &= \\dfrac{ 3000 }{ 3 } = 1000 \\end{aligned}<br>Therefore, the maximum number of fish according to the model is $P = 1000$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $250$, <strong>(b)</strong> as shown, <strong>(c)</strong> $T \\approx 7.32\\text{ months}$, <strong>(d)</strong> $P = 3000$",
+            "feedback": "This is a misinterpretation of the carrying capacity $P$. The value of $P$ is not the numerator of the fraction ($3000$), but rather the limit as $t \\to \\infty$, which is $\\dfrac{ 3000 }{ 3 } = 1000$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $250$, <strong>(b)</strong> as shown, <strong>(c)</strong> $T \\approx 3.66\\text{ months}$, <strong>(d)</strong> $P = 1000$",
+            "feedback": "This error occurs if you make a calculation slip when taking logarithms in Step 4, such as dividing by $0.3$ instead of $0.15$, which yields a smaller value of $T \\approx 3.66\\text{ months}$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $1000$, <strong>(b)</strong> as shown, <strong>(c)</strong> $T \\approx 7.32\\text{ months}$, <strong>(d)</strong> $P = 250$",
+            "feedback": "This is a calculation slip where the initial population and carrying capacity are swapped, setting $F(0) = 1000$ and $P = 250$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Simplifying Fraction Arithmetic",
+        "content": "When expanding and rearranging derivatives in logistic models, write your intermediate decimals as exact fractions where possible. Converting $0.15$ to $\\dfrac{ 3 }{ 20 }$ or $0.45$ to $\\dfrac{ 9 }{ 20 }$ early in Step 3 helps to easily clear complex rational expressions and keeps the final derivation robust and clean."
+    }
+},
+{
+    "id": "004500",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Exponential Modeling",
+        "Logistic Growth"
+    ],
+    "img": false,
+    "question": "A park ranger is studying a population of red squirrels in a woodland sanctuary. The number of squirrels, $S$, in the woodland, $t$ years after the sanctuary opened, is modeled by the equation:<br>$$S = \\dfrac{ 500 }{ 2 + 3\\mathrm{e}^{ -0.5t } }, \\quad t \\ge 0, \\quad t \\in \\mathbb{R}$$<br><strong>(a)</strong> Find the number of squirrels in the woodland at the start of the study.<br><br><strong>(b)</strong> Show that the rate of growth of the squirrel population, $\\dfrac{ \\mathrm{d}S }{ \\mathrm{d}t }$, is given by:<br>$$\\dfrac{ \\mathrm{d}S }{ \\mathrm{d}t } = \\dfrac{ S( 250 - S ) }{ 500 }$$<br><strong>(c)</strong> The rate of growth is a maximum after $T$ years. Find, according to the model, the value of $T$ to 2 decimal places.<br><br><strong>(d)</strong> According to the model, the maximum number of squirrels in the sanctuary is $P$. State the value of $P$.",
+    "steps": [
+        "<strong>(a) Finding the initial squirrel population:</strong><br>At the start of the study, $t = 0$. Substituting $t = 0$ into the model equation:<br>\\begin{aligned} S &= \\dfrac{ 500 }{ 2 + 3\\mathrm{e}^{ -0.5( 0 ) } } \\cr &= \\dfrac{ 500 }{ 2 + 3( 1 ) } \\cr &= \\dfrac{ 500 }{ 5 } = 100 \\end{aligned}<br>Therefore, there are $100$ squirrels in the woodland at the start of the study.",
+        "<strong>(b) Finding the rate of growth $\\dfrac{ \\mathrm{d}S }{ \\mathrm{d}t }$:</strong><br>We rewrite the model as $S = 500( 2 + 3\\mathrm{e}^{ -0.5t } )^{ -1 }$ and differentiate with respect to $t$ using the chain rule:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}S }{ \\mathrm{d}t } &= -500( 2 + 3\\mathrm{e}^{ -0.5t } )^{ -2 } \\times \\left( -0.5 \\times 3\\mathrm{e}^{ -0.5t } \\right) \\cr &= \\dfrac{ 750\\mathrm{e}^{ -0.5t } }{ ( 2 + 3\\mathrm{e}^{ -0.5t } )^2 } \\end{aligned}<br>Now, we rearrange the original model equation to express $3\\mathrm{e}^{ -0.5t }$ in terms of $S$:<br>\\begin{aligned} 2 + 3\\mathrm{e}^{ -0.5t } &= \\dfrac{ 500 }{ S } \\cr 3\\mathrm{e}^{ -0.5t } &= \\dfrac{ 500 }{ S } - 2 = \\dfrac{ 2( 250 - S ) }{ S } \\end{aligned}",
+        "We substitute this expression back into our derivative to express $\\dfrac{ \\mathrm{d}S }{ \\mathrm{d}t }$ purely in terms of $S$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}S }{ \\mathrm{d}t } &= 0.5 \\times \\left( \\dfrac{ 500 }{ 2 + 3\\mathrm{e}^{ -0.5t } } \\right) \\times \\left( \\dfrac{ 3\\mathrm{e}^{ -0.5t } }{ 2 + 3\\mathrm{e}^{ -0.5t } } \\right) \\cr &= 0.5 \\times S \\times \\left( \\dfrac{ \\dfrac{ 2( 250 - S ) }{ S } }{ \\dfrac{ 500 }{ S } } \\right) \\cr &= 0.5 \\times S \\times \\left( \\dfrac{ 2( 250 - S ) }{ 500 } \\right) \\cr &= \\dfrac{ S( 250 - S ) }{ 500 } \\end{aligned}",
+        "<strong>(c) Finding the time $T$ of maximum rate of growth:</strong><br>The rate of growth is modeled by the quadratic equation $R( S ) = \\dfrac{ 250S - S^2 }{ 500 }$. The maximum of this quadratic occurs at its vertex, which is at:<br>$$S = \\dfrac{ 250 }{ 2 } = 125$$<br>We find the value of $T$ when $S = 125$ using our model equation:<br>\\begin{aligned} 125 &= \\dfrac{ 500 }{ 2 + 3\\mathrm{e}^{ -0.5T } } \\cr 2 + 3\\mathrm{e}^{ -0.5T } &= \\dfrac{ 500 }{ 125 } = 4 \\cr 3\\mathrm{e}^{ -0.5T } &= 2 \\cr \\mathrm{e}^{ -0.5T } &= \\dfrac{ 2 }{ 3 } \\cr -0.5T &= \\ln\\left( \\dfrac{ 2 }{ 3 } \\right) = -\\ln( 1.5 ) \\cr T &= 2\\ln( 1.5 ) \\approx 0.81\\text{ years} \\end{aligned}",
+        "<strong>(d) Finding the carrying capacity $P$:</strong><br>The maximum squirrel population occurs as $t \\to \\infty$. In this limit, $\\mathrm{e}^{ -0.5t } \\to 0$. Therefore:<br>\\begin{aligned} P &= \\lim_{ t \\to \\infty } \\dfrac{ 500 }{ 2 + 3\\mathrm{e}^{ -0.5t } } \\cr &= \\dfrac{ 500 }{ 2 + 3( 0 ) } \\cr &= \\dfrac{ 500 }{ 2 } = 250 \\end{aligned}<br>Therefore, the maximum number of squirrels in the woodland sanctuary is $P = 250$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$S(0) = 100, T \\approx 0.81\\text{ years}, P = 500$",
+            "feedback": "This is a misinterpretation of the carrying capacity $P$. The value of $P$ is not the numerator of the fraction ($500$), but rather the limit as $t \\to \\infty$, which is $\\dfrac{ 500 }{ 2 } = 250$."
+        },
+        {
+            "ans": "$S(0) = 100, T \\approx 1.62\\text{ years}, P = 250$",
+            "feedback": "This error occurs if you make a calculation slip when taking logarithms in Step 4, such as dividing by $0.25$ instead of $0.5$, which yields a larger value of $T \\approx 1.62\\text{ years}$."
+        },
+        {
+            "ans": "$S(0) = 250, T \\approx 0.81\\text{ years}, P = 100$",
+            "feedback": "This is a calculation slip where the initial population and carrying capacity are swapped, setting $S(0) = 250$ and $P = 100$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Vertex of Logistic Growth",
+        "content": "For any standard logistic growth model of the form $\\dfrac{ \\mathrm{d}S }{ \\mathrm{d}t } = k S( P - S )$, the maximum rate of growth always occurs exactly at half of the carrying capacity: $S = \\dfrac{ P }{ 2 }$. Recognizing this shortcut allows you to immediately bypass the quadratic vertex derivation and jump directly to solving the time $T$ when $S = \\dfrac{ P }{ 2 }$."
+    }
 }
 
 ];
