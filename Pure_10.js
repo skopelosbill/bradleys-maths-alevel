@@ -1350,6 +1350,198 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Simplifying Simultaneous Equations",
         "content": "Notice how the equation $-2B - 2C = 4$ was simplified to $B + C = -2$ by dividing all terms by $-2$. Always look for common factors in your simultaneous equations before solving. Simplifying coefficients first prevents trivial arithmetic errors and makes substitution or elimination significantly easier."
     }
+},
+{
+    "id": "004486",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+        "Double Angle Identities",
+        "Trigonometric Equations"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Prove that:<br>$$1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$$<br><strong>(b)</strong> Hence solve, for $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$ where $x \\neq 0$, the equation:<br>$$(\\csc^2 x - 4)(1 + \\cos 2x) = 2\\cot^2 x \\sin 2x$$<br>Give your answers to 3 decimal places where appropriate.",
+    "steps": [
+        "<strong>(a) Proving the identity:</strong><br>We start by expanding the right-hand side (RHS) of the identity using the definitions $\\cot \\theta = \\dfrac{ \\cos \\theta }{ \\sin \\theta }$ and $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$:<br>\\begin{aligned} \\cot \\theta \\sin 2\\theta &= \\dfrac{ \\cos \\theta }{ \\sin \\theta } ( 2\\sin \\theta \\cos \\theta ) \\cr &= 2\\cos^2 \\theta \\end{aligned}<br>Now we expand the left-hand side (LHS) of the identity using the double angle identity $\\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta$ and the Pythagorean identity $\\sin^2 \\theta = 1 - \\cos^2 \\theta$:<br>\\begin{aligned} 1 + \\cos 2\\theta &= 1 + ( \\cos^2 \\theta - \\sin^2 \\theta ) \\cr &= 1 + \\cos^2 \\theta - ( 1 - \\cos^2 \\theta ) \\cr &= 2\\cos^2 \\theta \\end{aligned}<br>Since LHS = RHS, the identity is proven: $1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$.",
+        "<strong>(b) Solving the equation:</strong><br>We substitute our proven identity $1 + \\cos 2x = \\cot x \\sin 2x$ into the given equation:<br>\\begin{aligned} (\\csc^2 x - 4)(1 + \\cos 2x) &= 2\\cot^2 x \\sin 2x \\cr (\\csc^2 x - 4)\\cot x \\sin 2x &= 2\\cot^2 x \\sin 2x \\end{aligned}<br>Since $x \\neq 0$ and $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$, we know that $\\sin 2x \\neq 0$ and $\\cot x \\neq 0$. Therefore, we can safely divide both sides of the equation by $\\cot x \\sin 2x$:<br>$$\\csc^2 x - 4 = 2\\cot x$$",
+        "Using the trigonometric identity $\\csc^2 x = 1 + \\cot^2 x$, we rewrite the equation in terms of $\\cot x$:<br>\\begin{aligned} 1 + \\cot^2 x - 4 &= 2\\cot x \\cr \\cot^2 x - 2\\cot x - 3 &= 0 \\end{aligned}<br>Factorising this quadratic equation gives:<br>\\begin{aligned} ( \\cot x - 3 )( \\cot x + 1 ) &= 0 \\cr \\cot x = 3 \\quad &\\text{or} \\quad \\cot x = -1 \\end{aligned}",
+        "Solving for $x$ by rewriting in terms of $\\tan x$:<br>\\begin{aligned} \\cot x = 3 &\\implies \\tan x = \\dfrac{ 1 }{ 3 } \\implies x = \\arctan\\left( \\dfrac{ 1 }{ 3 } \\right) \\approx 0.322\\text{ radians} \\cr \\cot x = -1 &\\implies \\tan x = -1 \\implies x = \\arctan( -1 ) = -\\dfrac{ \\pi }{ 4 } \\approx -0.785\\text{ radians} \\end{aligned}<br>Therefore, the solutions are $x \\approx 0.322\\text{ radians}$ and $x \\approx -0.785\\text{ radians}$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$x \\approx -0.322\\text{ radians}, x \\approx 0.785\\text{ radians}$",
+            "feedback": "This error occurs if you make a sign error when solving the factorised equations, solving $\\cot x = -3$ and $\\cot x = 1$ instead."
+        },
+        {
+            "ans": "$x \\approx 0.322\\text{ radians}, x \\approx -0.785\\text{ radians}, x = 0$",
+            "feedback": "This error is the result of failing to identify that $x = 0$ must be strictly excluded from the domain because the original function contains the term $\\csc^2 x$, which is undefined at $x = 0$."
+        },
+        {
+            "ans": "$x \\approx 1.249\\text{ radians}, x \\approx -0.785\\text{ radians}$",
+            "feedback": "This occurs if you forget to invert the cotangent when solving $\\cot x = 3$, solving $\\tan x = 3$ instead of $\\tan x = \\dfrac{ 1 }{ 3 }$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Excluded Domain Values",
+        "content": "Always pay close attention to any restriction statements like $x \\neq 0$ or open intervals. Since the original equation features the term $\\csc^2 x$, the function is undefined at $x = 0$ ($1 / \\sin^2( 0 )$ is undefined). Even if $x = 0$ appears as a potential algebraic solution during factoring, it must be strictly excluded from the final solution set."
+    }
+},
+{
+    "id": "004487",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+        "Double Angle Identities",
+        "Trigonometric Equations"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Prove that:<br>$$1 - \\cos 2\\theta \\equiv \\tan \\theta \\sin 2\\theta$$<br><strong>(b)</strong> Hence solve, for $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$, the equation:<br>$$(\\sec^2 x - 3)(1 - \\cos 2x) = 3\\tan^2 x \\sin 2x$$<br>Give your answers to 3 decimal places where appropriate.",
+    "steps": [
+        "<strong>(a) Proving the identity:</strong><br>We start by expanding the right-hand side (RHS) of the identity using the definitions $\\tan \\theta = \\dfrac{ \\sin \\theta }{ \\cos \\theta }$ and $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$:<br>\\begin{aligned} \\tan \\theta \\sin 2\\theta &= \\dfrac{ \\sin \\theta }{ \\cos \\theta } ( 2\\sin \\theta \\cos \\theta ) \\cr &= 2\\sin^2 \\theta \\end{aligned}<br>Now we expand the left-hand side (LHS) using the double angle identity $\\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta$ and the Pythagorean identity $\\cos^2 \\theta = 1 - \\sin^2 \\theta$:<br>\\begin{aligned} 1 - \\cos 2\\theta &= 1 - ( \\cos^2 \\theta - \\sin^2 \\theta ) \\cr &= 1 - \\cos^2 \\theta + \\sin^2 \\theta \\cr &= ( 1 - \\cos^2 \\theta ) + \\sin^2 \\theta \\cr &= \\sin^2 \\theta + \\sin^2 \\theta \\cr &= 2\\sin^2 \\theta \\end{aligned}<br>Since LHS = RHS, the identity is proven: $1 - \\cos 2\\theta \\equiv \\tan \\theta \\sin 2\\theta$.",
+        "<strong>(b) Solving the equation:</strong><br>We substitute our proven identity $1 - \\cos 2x = \\tan x \\sin 2x$ into the given equation:<br>\\begin{aligned} (\\sec^2 x - 3)(1 - \\cos 2x) &= 3\\tan^2 x \\sin 2x \\cr (\\sec^2 x - 3)\\tan x \\sin 2x &= 3\\tan^2 x \\sin 2x \\cr (\\sec^2 x - 3)\\tan x \\sin 2x - 3\\tan^2 x \\sin 2x &= 0 \\cr \\tan x \\sin 2x [ (\\sec^2 x - 3) - 3\\tan x ] &= 0 \\end{aligned}",
+        "This gives two possible cases to solve:<br><strong>Case 1:</strong> $\\tan x \\sin 2x = 0$<br>Since $\\sin 2x = 2\\sin x \\cos x$, this simplifies to $2\\sin^2 x = 0 \\implies \\sin x = 0$, which yields:<br>$$x = 0\\text{ radians}$$<br>This solution lies within our given interval $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$.",
+        "<strong>Case 2:</strong> $(\\sec^2 x - 3) - 3\\tan x = 0$<br>Using the identity $\\sec^2 x = 1 + \\tan^2 x$, we rewrite this in terms of $\\tan x$:<br>\\begin{aligned} 1 + \\tan^2 x - 3 - 3\\tan x &= 0 \\cr \\tan^2 x - 3\\tan x - 2 &= 0 \\end{aligned}<br>Solving this quadratic in $\\tan x$ using the quadratic formula:<br>\\begin{aligned} \\tan x &= \\dfrac{ 3 \\pm \\sqrt{ ( -3 )^2 - 4( 1 )( -2 ) } }{ 2 } \\cr \\tan x &= \\dfrac{ 3 \\pm \\sqrt{ 17 } }{ 2 } \\end{aligned}",
+        "Calculating the numerical values for $x$ in the interval $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$:<br>\\begin{aligned} \\tan x = \\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\approx 3.562 &\\implies x = \\arctan( 3.562 ) \\approx 1.297\\text{ radians} \\cr \\tan x = \\dfrac{ 3 - \\sqrt{ 17 } }{ 2 } \\approx -0.562 &\\implies x = \\arctan( -0.562 ) \\approx -0.512\\text{ radians} \\end{aligned}<br>Therefore, the solutions are $x = 0\\text{ radians}$, $x \\approx 1.297\\text{ radians}$, and $x \\approx -0.512\\text{ radians}$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$x = 0\\text{ radians}, x \\approx 1.300\\text{ radians}, x \\approx -0.510\\text{ radians}$",
+            "feedback": "This is a subtle intermediate rounding error where angles are calculated by rounding the decimal values of $\\tan x$ to fewer decimal places before applying the inverse tangent."
+        },
+        {
+            "ans": "$x \\approx 1.297\\text{ radians}, x \\approx -0.512\\text{ radians}$",
+            "feedback": "This error occurs if you divide both sides of the equation directly by the common factor $\\tan x \\sin 2x$, completely deleting the valid solution branch where $\\tan x \\sin 2x = 0 \\implies x = 0$."
+        },
+        {
+            "ans": "$x = 0\\text{ radians}, x \\approx -1.297\\text{ radians}, x \\approx 0.512\\text{ radians}$",
+            "feedback": "This is a sign error in solving the quadratic equation or applying the inverse tangent function."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Retaining Null Factor Solutions",
+        "content": "A very common trap when solving equations like $A \\cdot B = C \\cdot B$ is dividing both sides directly by $B$ without consideration. Dividing by $B$ completely deletes the solution branch where $B = 0$. Instead, always factorise the equation to the form $B( A - C ) = 0$ to ensure you retain the null solution branch (here, $\\tan x \\sin 2x = 0 \\implies x = 0$)."
+    }
+},
+{
+    "id": "004488",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+        "Double Angle Identities",
+        "Trigonometric Equations"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Prove that:<br>$$1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$$<br><strong>(b)</strong> Hence solve, for $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$ where $x \\neq 0$, the equation:<br>$$(\\csc^2 x - 5)(1 + \\cos 2x) = 2\\cot^2 x \\sin 2x$$<br>Give your answers to 3 decimal places where appropriate.",
+    "steps": [
+        "<strong>(a) Proving the identity:</strong><br>We expand the right-hand side (RHS) of the identity using the definitions $\\cot \\theta = \\dfrac{ \\cos \\theta }{ \\sin \\theta }$ and $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$:<br>\\begin{aligned} \\cot \\theta \\sin 2\\theta &= \\dfrac{ \\cos \\theta }{ \\sin \\theta } ( 2\\sin \\theta \\cos \\theta ) \\cr &= 2\\cos^2 \\theta \\end{aligned}<br>Now we expand the left-hand side (LHS) of the identity using the double angle identity $\\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta$ and the Pythagorean identity $\\sin^2 \\theta = 1 - \\cos^2 \\theta$:<br>\\begin{aligned} 1 + \\cos 2\\theta &= 1 + ( \\cos^2 \\theta - \\sin^2 \\theta ) \\cr &= 1 + \\cos^2 \\theta - ( 1 - \\cos^2 \\theta ) \\cr &= 2\\cos^2 \\theta \\end{aligned}<br>Since LHS = RHS, the identity is proven: $1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$.",
+        "<strong>(b) Solving the equation:</strong><br>We substitute our proven identity $1 + \\cos 2x = \\cot x \\sin 2x$ into the given equation:<br>\\begin{aligned} (\\csc^2 x - 5)(1 + \\cos 2x) &= 2\\cot^2 x \\sin 2x \\cr (\\csc^2 x - 5)\\cot x \\sin 2x &= 2\\cot^2 x \\sin 2x \\end{aligned}<br>Since $x \\neq 0$ and $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$, we know that $\\sin 2x \\neq 0$ and $\\cot x \\neq 0$. Therefore, we can safely divide both sides of the equation by $\\cot x \\sin 2x$:<br>$$\\csc^2 x - 5 = 2\\cot x$$",
+        "Using the trigonometric identity $\\csc^2 x = 1 + \\cot^2 x$, we rewrite the equation in terms of $\\cot x$:<br>\\begin{aligned} 1 + \\cot^2 x - 5 &= 2\\cot x \\cr \\cot^2 x - 2\\cot x - 4 &= 0 \\end{aligned}<br>Solving this quadratic in $\\cot x$ using the quadratic formula:<br>\\begin{aligned} \\cot x &= \\dfrac{ 2 \\pm \\sqrt{ ( -2 )^2 - 4( 1 )( -4 ) } }{ 2 } \\cr \\cot x &= \\dfrac{ 2 \\pm \\sqrt{ 20 } }{ 2 } = 1 \\pm \\sqrt{ 5 } \\end{aligned}",
+        "Solving for $x$ by rewriting in terms of $\\tan x$:<br><strong>Case 1:</strong> $\\cot x = 1 + \\sqrt{ 5 } \\approx 3.236 \\implies \\tan x \\approx 0.309 \\implies x = \\arctan( 0.309 ) \\approx 0.300\\text{ radians}$<br><br><strong>Case 2:</strong> $\\cot x = 1 - \\sqrt{ 5 } \\approx -1.236 \\implies \\tan x \\approx -0.809 \\implies x = \\arctan( -0.809 ) \\approx -0.681\\text{ radians}$<br><br>Therefore, the solutions are $x \\approx 0.300\\text{ radians}$ and $x \\approx -0.681\\text{ radians}$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$x \\approx 0.300\\text{ radians}, x \\approx -0.688\\text{ radians}$",
+            "feedback": "This is a rounding error that occurs if you convert the intermediate quadratic roots of $\\cot x$ into rounded degree values before applying the conversion to radians."
+        },
+        {
+            "ans": "$x \\approx -0.300\\text{ radians}, x \\approx 0.681\\text{ radians}$",
+            "feedback": "This error occurs if you make a sign error when solving the quadratic equation or factorising for the roots."
+        },
+        {
+            "ans": "$x \\approx 0.300\\text{ radians}, x \\approx -0.681\\text{ radians}, x = 0$",
+            "feedback": "This error is the result of failing to exclude $x = 0$ from the final solution set, which is outside the domain of definition of $\\csc^2 x$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Direct Reciprocal Solving",
+        "content": "When you have $\\cot x = K$, you can immediately find $x$ by evaluating $\\arctan\\left( \\dfrac{ 1 }{ K } \\right)$ on your calculator. This avoids rounding $\\cot x$ to a decimal first, which prevents intermediate rounding slips and ensures your final answer is perfectly accurate to 3 d.p."
+    }
+},
+{
+    "id": "004489",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+        "Double Angle Identities",
+        "Trigonometric Equations"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Prove that:<br>$$1 - \\cos 2\\theta \\equiv \\tan \\theta \\sin 2\\theta$$<br><strong>(b)</strong> Hence solve, for $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$, the equation:<br>$$(\\sec^2 x - 6)(1 - \\cos 2x) = 2\\tan^2 x \\sin 2x$$<br>Give your answers to 3 decimal places where appropriate.",
+    "steps": [
+        "<strong>(a) Proving the identity:</strong><br>We start by expanding the right-hand side (RHS) of the identity using the definitions $\\tan \\theta = \\dfrac{ \\sin \\theta }{ \\cos \\theta }$ and $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$:<br>\\begin{aligned} \\tan \\theta \\sin 2\\theta &= \\dfrac{ \\sin \\theta }{ \\cos \\theta } ( 2\\sin \\theta \\cos \\theta ) \\cr &= 2\\sin^2 \\theta \\end{aligned}<br>Now we expand the left-hand side (LHS) using the double angle identity $\\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta$ and the Pythagorean identity $\\cos^2 \\theta = 1 - \\sin^2 \\theta$:<br>\\begin{aligned} 1 - \\cos 2\\theta &= 1 - ( \\cos^2 \\theta - \\sin^2 \\theta ) \\cr &= 1 - \\cos^2 \\theta + \\sin^2 \\theta \\cr &= ( 1 - \\cos^2 \\theta ) + \\sin^2 \\theta \\cr &= \\sin^2 \\theta + \\sin^2 \\theta \\cr &= 2\\sin^2 \\theta \\end{aligned}<br>Since LHS = RHS, the identity is proven: $1 - \\cos 2\\theta \\equiv \\tan \\theta \\sin 2\\theta$.",
+        "<strong>(b) Solving the equation:</strong><br>We substitute our proven identity $1 - \\cos 2x = \\tan x \\sin 2x$ into the given equation:<br>\\begin{aligned} (\\sec^2 x - 6)(1 - \\cos 2x) &= 2\\tan^2 x \\sin 2x \\cr (\\sec^2 x - 6)\\tan x \\sin 2x &= 2\\tan^2 x \\sin 2x \\cr (\\sec^2 x - 6)\\tan x \\sin 2x - 2\\tan^2 x \\sin 2x &= 0 \\cr \\tan x \\sin 2x [ (\\sec^2 x - 6) - 2\\tan x ] &= 0 \\end{aligned}",
+        "This gives two possible cases to solve:<br><strong>Case 1:</strong> $\\tan x \\sin 2x = 0$<br>Since $\\sin 2x = 2\\sin x \\cos x$, this simplifies to $2\\sin^2 x = 0 \\implies \\sin x = 0$, which yields:<br>$$x = 0\\text{ radians}$$<br>This solution lies within our given interval $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$.",
+        "<strong>Case 2:</strong> $(\\sec^2 x - 6) - 2\\tan x = 0$<br>Using the identity $\\sec^2 x = 1 + \\tan^2 x$, we rewrite this in terms of $\\tan x$:<br>\\begin{aligned} 1 + \\tan^2 x - 6 - 2\\tan x &= 0 \\cr \\tan^2 x - 2\\tan x - 5 &= 0 \\end{aligned}<br>Solving this quadratic in $\\tan x$ using the quadratic formula:<br>\\begin{aligned} \\tan x &= \\dfrac{ 2 \\pm \\sqrt{ ( -2 )^2 - 4( 1 )( -5 ) } }{ 2 } \\cr \\tan x &= \\dfrac{ 2 \\pm \\sqrt{ 24 } }{ 2 } = 1 \\pm \\sqrt{ 6 } \\end{aligned}",
+        "Calculating the numerical values for $x$ in the interval $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$:<br>\\begin{aligned} \\tan x = 1 + \\sqrt{ 6 } \\approx 3.449 &\\implies x = \\arctan( 3.449 ) \\approx 1.289\\text{ radians} \\cr \\tan x = 1 - \\sqrt{ 6 } \\approx -1.449 &\\implies x = \\arctan( -1.449 ) \\approx -0.967\\text{ radians} \\end{aligned}<br>Therefore, the solutions are $x = 0\\text{ radians}$, $x \\approx 1.289\\text{ radians}$, and $x \\approx -0.967\\text{ radians}$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$x = 0\\text{ radians}, x \\approx 1.290\\text{ radians}, x \\approx -0.970\\text{ radians}$",
+            "feedback": "This is an intermediate rounding error that occurs if you convert the quadratic roots of $\\tan x$ into rounded degree values before applying the conversion to radians."
+        },
+        {
+            "ans": "$x \\approx 1.289\\text{ radians}, x \\approx -0.967\\text{ radians}$",
+            "feedback": "This error occurs if you divide both sides of the equation directly by the common factor $\\tan x \\sin 2x$, completely deleting the valid solution branch where $\\tan x \\sin 2x = 0 \\implies x = 0$."
+        },
+        {
+            "ans": "$x = 0\\text{ radians}, x \\approx -1.289\\text{ radians}, x \\approx 0.967\\text{ radians}$",
+            "feedback": "This is a sign error in solving the quadratic equation or factorising for the roots."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Quadratic Equation Discriminant Check",
+        "content": "When using the quadratic formula to solve $\\tan^2 x - 2\\tan x - 5 = 0$, verify your discriminant $(\\Delta = b^2 - 4ac)$ very carefully. It evaluates to $( -2 )^2 - 4( 1 )( -5 ) = 4 + 20 = 24$. Since $\\Delta > 0$, we have two distinct real values for $\\tan x$, both of which correspond to valid angles in the interval."
+    }
+},
+{
+    "id": "004490",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+        "Double Angle Identities",
+        "Trigonometric Equations"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Prove that:<br>$$1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$$<br><strong>(b)</strong> Hence solve, for $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$ where $x \\neq 0$, the equation:<br>$$(\\csc^2 x - 3)(1 + \\cos 2x) = 3\\cot^2 x \\sin 2x$$<br>Give your answers to 3 decimal places where appropriate.",
+    "steps": [
+        "<strong>(a) Proving the identity:</strong><br>We expand the right-hand side (RHS) of the identity using the definitions $\\cot \\theta = \\dfrac{ \\cos \\theta }{ \\sin \\theta }$ and $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$:<br>\\begin{aligned} \\cot \\theta \\sin 2\\theta &= \\dfrac{ \\cos \\theta }{ \\sin \\theta } ( 2\\sin \\theta \\cos \\theta ) \\cr &= 2\\cos^2 \\theta \\end{aligned}<br>Now we expand the left-hand side (LHS) of the identity using the double angle identity $\\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta$ and the Pythagorean identity $\\sin^2 \\theta = 1 - \\cos^2 \\theta$:<br>\\begin{aligned} 1 + \\cos 2\\theta &= 1 + ( \\cos^2 \\theta - \\sin^2 \\theta ) \\cr &= 1 + \\cos^2 \\theta - ( 1 - \\cos^2 \\theta ) \\cr &= 2\\cos^2 \\theta \\end{aligned}<br>Since LHS = RHS, the identity is proven: $1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$.",
+        "<strong>(b) Solving the equation:</strong><br>We substitute our proven identity $1 + \\cos 2x = \\cot x \\sin 2x$ into the given equation:<br>\\begin{aligned} (\\csc^2 x - 3)(1 + \\cos 2x) &= 3\\cot^2 x \\sin 2x \\cr (\\csc^2 x - 3)\\cot x \\sin 2x &= 3\\cot^2 x \\sin 2x \\end{aligned}<br>Since $x \\neq 0$ and $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$, we know that $\\sin 2x \\neq 0$ and $\\cot x \\neq 0$. Therefore, we can safely divide both sides of the equation by $\\cot x \\sin 2x$:<br>$$\\csc^2 x - 3 = 3\\cot x$$",
+        "Using the trigonometric identity $\\csc^2 x = 1 + \\cot^2 x$, we rewrite the equation in terms of $\\cot x$:<br>\\begin{aligned} 1 + \\cot^2 x - 3 &= 3\\cot x \\cr \\cot^2 x - 3\\cot x - 2 &= 0 \\end{aligned}<br>Solving this quadratic in $\\cot x$ using the quadratic formula:<br>\\begin{aligned} \\cot x &= \\dfrac{ 3 \\pm \\sqrt{ ( -3 )^2 - 4( 1 )( -2 ) } }{ 2 } \\cr \\cot x &= \\dfrac{ 3 \\pm \\sqrt{ 17 } }{ 2 } \\end{aligned}",
+        "Solving for $x$ by rewriting in terms of $\\tan x$:<br><strong>Case 1:</strong> $\\cot x = \\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\approx 3.562 \\implies \\tan x \\approx 0.281 \\implies x = \\arctan( 0.281 ) \\approx 0.274\\text{ radians}$<br><br><strong>Case 2:</strong> $\\cot x = \\dfrac{ 3 - \\sqrt{ 17 } }{ 2 } \\approx -0.562 \\implies \\tan x \\approx -1.781 \\implies x = \\arctan( -1.781 ) \\approx -1.059\\text{ radians}$<br><br>Therefore, the solutions are $x \\approx 0.274\\text{ radians}$ and $x \\approx -1.059\\text{ radians}$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$x \\approx 0.274\\text{ radians}, x \\approx -1.060\\text{ radians}$",
+            "feedback": "This is a rounding error that occurs if you convert the intermediate quadratic roots of $\\cot x$ into rounded degree values before applying the conversion to radians."
+        },
+        {
+            "ans": "$x \\approx -0.274\\text{ radians}, x \\approx 1.059\\text{ radians}$",
+            "feedback": "This error occurs if you make a sign error when solving the quadratic equation or factorising for the roots."
+        },
+        {
+            "ans": "$x \\approx 0.274\\text{ radians}, x \\approx -1.059\\text{ radians}, x = 0$",
+            "feedback": "This error is the result of failing to exclude $x = 0$ from the final solution set, which is outside the domain of definition of $\\csc^2 x$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Managing Negative Reciprocals",
+        "content": "When solving $\\cot x = K$ for a negative value like $K \\approx -0.562$, inverting to $\\tan x \\approx -1.781$ is completely robust. Just be sure to verify that the resulting angle $x = \\arctan( -1.781 ) \\approx -1.059\\text{ radians}$ falls within the interval $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$, which it does."
+    }
 }
 
 ];
