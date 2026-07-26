@@ -201,7 +201,7 @@ window.ALEVEL_QUESTIONS = [
 },
   {
     "id": "004456",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Polynomials",
@@ -240,7 +240,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004457",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Polynomials",
@@ -279,7 +279,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004458",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Polynomials",
@@ -318,7 +318,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004459",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Polynomials",
@@ -357,7 +357,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004460",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Polynomials",
@@ -396,7 +396,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
   "id": "004461",
-  "board": "Edexcel",
+  "board": "Pearson Edexcel",
   "level": "A",
   "major_area": "Algebra and Functions",
   "topic": "Trigonometry",
@@ -433,7 +433,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004462",
-  "board": "Edexcel",
+  "board": "Pearson Edexcel",
   "level": "A",
   "major_area": "Algebra and Functions",
   "topic": "Trigonometry",
@@ -470,7 +470,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004463",
-  "board": "Edexcel",
+  "board": "Pearson Edexcel",
   "level": "A",
   "major_area": "Algebra and Functions",
   "topic": "Trigonometry",
@@ -507,7 +507,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004464",
-  "board": "Edexcel",
+  "board": "Pearson Edexcel",
   "level": "A",
   "major_area": "Algebra and Functions",
   "topic": "Trigonometry",
@@ -544,7 +544,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004465",
-  "board": "Edexcel",
+  "board": "Pearson Edexcel",
   "level": "A",
   "major_area": "Algebra and Functions",
   "topic": "Trigonometry",
@@ -581,7 +581,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004466",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Quadratic Functions",
@@ -621,7 +621,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004467",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Quadratic Functions",
@@ -661,7 +661,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004468",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Quadratic Functions",
@@ -701,7 +701,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004469",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Quadratic Functions",
@@ -741,7 +741,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004470",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Quadratic Functions",
@@ -781,7 +781,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004471",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -819,7 +819,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004472",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -857,7 +857,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004473",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -895,7 +895,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004474",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -933,7 +933,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004475",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -971,7 +971,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004476",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1010,7 +1010,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004477",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1048,7 +1048,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004478",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1087,7 +1087,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004479",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1125,7 +1125,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004480",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1163,7 +1163,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004481",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Algebraic Fractions",
@@ -1201,7 +1201,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004482",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Algebraic Fractions",
@@ -1239,7 +1239,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004483",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Algebraic Fractions",
@@ -1277,7 +1277,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004484",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Algebraic Fractions",
@@ -1315,7 +1315,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004485",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Algebraic Fractions",
@@ -1353,7 +1353,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004486",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Identities",
@@ -1391,7 +1391,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004487",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Identities",
@@ -1430,7 +1430,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004488",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Identities",
@@ -1468,7 +1468,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004489",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Identities",
@@ -1507,7 +1507,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004490",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Identities",
@@ -1545,7 +1545,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004491",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Integration",
@@ -1584,7 +1584,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004492",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Integration",
@@ -1623,7 +1623,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004493",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Integration",
@@ -1662,7 +1662,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004494",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Integration",
@@ -1701,7 +1701,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004495",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Integration",
@@ -1740,7 +1740,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004496",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1779,7 +1779,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004497",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1818,7 +1818,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004498",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1857,7 +1857,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004499",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1896,7 +1896,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "004500",
-    "board": "Edexcel",
+    "board": "Pearson Edexcel",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
