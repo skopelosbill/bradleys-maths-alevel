@@ -945,5 +945,198 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Factoring Exponential Terms",
         "content": "For solutions involving terms like $-2x\\mathrm{e}^{-x} - 2\\mathrm{e}^{-x}$, it is often considered elegant and clean to factorise the exponential term: $-2(x + 1)\\mathrm{e}^{-x}$. Both forms are mathematically equivalent and fully accepted in examinations."
     }
+},
+{
+    "id": "004526",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Functions",
+    "subtopic": [
+        "R-Addition Formula",
+        "Wave Equations"
+    ],
+    "img": "images/Pure/004526.png",
+    "question": "A curve has the equation: <br>$$y = a \\sin x + b \\cos x$$ <br>where $a$ and $b$ are constants. <br><br>The maximum value of $y$ is $6$ and the curve passes through the point $\\left( \\dfrac{ \\pi }{ 3 }, 3\\sqrt{ 3 } \\right)$ as shown in the diagram. <br><br>Find the exact values of $a$ and $b$.",
+    "steps": [
+        "Apply the amplitude condition. For a trigonometric curve of the form $y = a \\sin x + b \\cos x$, the maximum value is given by $R = \\sqrt{ a^2 + b^2 }$. Given that the maximum value is $6$: <br>\\begin{aligned} \\sqrt{ a^2 + b^2 } &= 6 \\cr a^2 + b^2 &= 36 \\cr \\end{aligned}",
+        "Apply the point condition. The curve passes through $\\left( \\dfrac{ \\pi }{ 3 }, 3\\sqrt{ 3 } \\right)$, so substituting these coordinates gives: <br>\\begin{aligned} 3\\sqrt{ 3 } &= a \\sin\\left( \\dfrac{ \\pi }{ 3 } \\right) + b \\cos\\left( \\dfrac{ \\pi }{ 3 } \\right) \\cr \\end{aligned}",
+        "Substitute the exact values $\\sin\\left( \\dfrac{ \\pi }{ 3 } \\right) = \\dfrac{ \\sqrt{ 3 } }{ 2 }$ and $\\cos\\left( \\dfrac{ \\pi }{ 3 } \\right) = \\dfrac{ 1 }{ 2 }$: <br>\\begin{aligned} 3\\sqrt{ 3 } &= a\\left( \\dfrac{ \\sqrt{ 3 } }{ 2 } \\right) + b\\left( \\dfrac{ 1 }{ 2 } \\right) \\cr \\end{aligned} <br>Multiply the entire equation by $2$ to clear the denominators: <br>\\begin{aligned} 6\\sqrt{ 3 } &= a\\sqrt{ 3 } + b \\cr b &= \\sqrt{ 3 }(6 - a) \\cr \\end{aligned}",
+        "Substitute $b = \\sqrt{ 3 }(6 - a)$ into the amplitude equation $a^2 + b^2 = 36$: <br>\\begin{aligned} a^2 + \\left( \\sqrt{ 3 }(6 - a) \\right)^2 &= 36 \\cr a^2 + 3(36 - 12a + a^2) &= 36 \\cr a^2 + 108 - 36a + 3a^2 &= 36 \\cr 4a^2 - 36a + 72 &= 0 \\cr \\end{aligned} <br>Divide the entire quadratic equation by $4$: <br>\\begin{aligned} a^2 - 9a + 18 &= 0 \\cr (a - 3)(a - 6) &= 0 \\cr \\end{aligned} <br>This yields two algebraic solutions: $a = 3$ or $a = 6$.",
+        "Evaluate the solutions to match the diagram. <br>1. If $a = 6$, substituting this gives $b = \\sqrt{ 3 }(6 - 6) = 0$. This would mean $y = 6 \\sin x$, which passes through the origin $(0, 0)$. However, the diagram shows a curve starting at a positive y-intercept, so we reject $b = 0$. <br>2. If $a = 3$, substituting this gives: <br>\\begin{aligned} b &= \\sqrt{ 3 }(6 - 3) \\cr b &= 3\\sqrt{ 3 } \\cr \\end{aligned} <br>This yields a positive y-intercept $b = 3\\sqrt{ 3 } > 0$, matching the diagram perfectly. <br>Thus, the exact values are $a = 3$ and $b = 3\\sqrt{ 3 }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 6, \\quad b = 0$$",
+            "feedback": "This is incorrect. This is the other algebraic branch from solving the quadratic equation. However, if $b = 0$, the curve passes through the origin $(0,0)$, which contradicts the positive y-intercept shown in the diagram."
+        },
+        {
+            "ans": "$$a = 3\\sqrt{ 3 }, \\quad b = 3$$",
+            "feedback": "This is incorrect. This error occurs if you accidentally swapped the values of $a$ and $b$, which typically arises from swapping the values of the sine and cosine fractions when evaluating at $x = \\dfrac{ \\pi }{ 3 }$."
+        },
+        {
+            "ans": "$$a = 3, \\quad b = 9$$",
+            "feedback": "This is incorrect. This error occurs if you made an arithmetic slip when expanding $b = \\sqrt{ 3 }(6 - a)$, or if you wrote the amplitude equation as $a^2 + b^2 = 6$ (forgetting to square the maximum value of $6$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Boundary Case Rejections",
+        "content": "In trigonometric problems where two algebraic solutions arise, always refer back to the geometric diagram. The y-intercept of $y = a\\sin x + b\\cos x$ occurs at $(0, b)$. If the diagram shows a positive y-intercept, then we must have $b > 0$, which allows us to reject the boundary case $b = 0$."
+    }
+},
+{
+    "id": "004527",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Functions",
+    "subtopic": [
+        "R-Addition Formula",
+        "Wave Equations"
+    ],
+    "img": "images/Pure/004527.png",
+    "question": "A curve has the equation: <br>$$y = a \\sin x - b \\cos x$$ <br>where $a$ and $b$ are positive constants. <br><br>The maximum value of $y$ is $5$ and the curve passes through the point $\\left( \\dfrac{ \\pi }{ 2 }, 4 \\right)$ as shown in the diagram. <br><br>Find the exact values of $a$ and $b$.",
+    "steps": [
+        "Apply the amplitude condition. For a trigonometric curve of the form $y = a \\sin x - b \\cos x$, the maximum value is given by $R = \\sqrt{ a^2 + b^2 }$. Given that the maximum value is $5$: <br>\\begin{aligned} \\sqrt{ a^2 + b^2 } &= 5 \\cr a^2 + b^2 &= 25 \\cr \\end{aligned}",
+        "Apply the point condition. The curve passes through $\\left( \\dfrac{ \\pi }{ 2 }, 4 \\right)$, so substituting these coordinates gives: <br>\\begin{aligned} 4 &= a \\sin\\left( \\dfrac{ \\pi }{ 2 } \\right) - b \\cos\\left( \\dfrac{ \\pi }{ 2 } \\right) \\cr \\end{aligned}",
+        "Substitute the exact values $\\sin\\left( \\dfrac{ \\pi }{ 2 } \\right) = 1$ and $\\cos\\left( \\dfrac{ \\pi }{ 2 } \\right) = 0$: <br>\\begin{aligned} 4 &= a(1) - b(0) \\cr a &= 4 \\cr \\end{aligned}",
+        "Substitute $a = 4$ into the amplitude equation $a^2 + b^2 = 25$ to solve for $b$: <br>\\begin{aligned} (4)^2 + b^2 &= 25 \\cr 16 + b^2 &= 25 \\cr b^2 &= 9 \\cr \\end{aligned} <br>Since the problem states that $b$ is a positive constant, we take the positive square root: <br>\\begin{aligned} b &= 3 \\cr \\end{aligned} <br>Thus, the exact values are $a = 4$ and $b = 3$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 3, \\quad b = 4$$",
+            "feedback": "This is incorrect. This error occurs if you swapped the values of $a$ and $b$, which typically arises from evaluating the trigonometric conditions at $x = \\dfrac{ \\pi }{ 2 }$ incorrectly by writing $\\sin\\left( \\dfrac{ \\pi }{ 2 } \\right) = 0$ and $\\cos\\left( \\dfrac{ \\pi }{ 2 } \\right) = 1$."
+        },
+        {
+            "ans": "$$a = 4, \\quad b = -3$$",
+            "feedback": "This is incorrect. While $-3$ is algebraically a solution to $b^2 = 9$, the problem explicitly states that $b$ must be a positive constant."
+        },
+        {
+            "ans": "$$a = 4, \\quad b = 9$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to take the square root of $b^2 = 9$ to find $b$, or if you incorrectly solved $16 + b^2 = 25$ as $16 + b = 25$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Quadrant Evaluations",
+        "content": "Selecting points on the coordinate axes (such as $x = \\dfrac{ \\pi }{ 2 }$) is highly strategic because one of the trigonometric terms will evaluate to zero, allowing you to instantly isolate and solve for one of the constants."
+    }
+},
+{
+    "id": "004528",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Functions",
+    "subtopic": [
+        "R-Addition Formula",
+        "Wave Equations"
+    ],
+    "img": "images/Pure/004528.png",
+    "question": "A curve has the equation: <br>$$y = a \\sin(2x) + b \\cos(2x)$$ <br>where $a$ and $b$ are constants. <br><br>The maximum value of $y$ is $10$ and the curve passes through the point $\\left( \\dfrac{ \\pi }{ 12 }, 5\\sqrt{ 3 } \\right)$ as shown in the diagram. <br><br>Find the exact values of $a$ and $b$.",
+    "steps": [
+        "Apply the amplitude condition. For a trigonometric curve of the form $y = a \\sin(2x) + b \\cos(2x)$, the maximum value is given by $R = \\sqrt{ a^2 + b^2 }$. Given that the maximum value is $10$: <br>\\begin{aligned} \\sqrt{ a^2 + b^2 } &= 10 \\cr a^2 + b^2 &= 100 \\cr \\end{aligned}",
+        "Apply the point condition. The curve passes through $\\left( \\dfrac{ \\pi }{ 12 }, 5\\sqrt{ 3 } \\right)$, so substituting these coordinates gives: <br>\\begin{aligned} 5\\sqrt{ 3 } &= a \\sin\\left( 2\\left( \\dfrac{ \\pi }{ 12 } \\right) \\right) + b \\cos\\left( 2\\left( \\dfrac{ \\pi }{ 12 } \\right) \\right) \\cr 5\\sqrt{ 3 } &= a \\sin\\left( \\dfrac{ \\pi }{ 6 } \\right) + b \\cos\\left( \\dfrac{ \\pi }{ 6 } \\right) \\cr \\end{aligned}",
+        "Substitute the exact values $\\sin\\left( \\dfrac{ \\pi }{ 6 } \\right) = \\dfrac{ 1 }{ 2 }$ and $\\cos\\left( \\dfrac{ \\pi }{ 6 } \\right) = \\dfrac{ \\sqrt{ 3 } }{ 2 }$: <br>\\begin{aligned} 5\\sqrt{ 3 } &= a\\left( \\dfrac{ 1 }{ 2 } \\right) + b\\left( \\dfrac{ \\sqrt{ 3 } }{ 2 } \\right) \\cr \\end{aligned} <br>Multiply the entire equation by $2$ to clear the denominators: <br>\\begin{aligned} 10\\sqrt{ 3 } &= a + b\\sqrt{ 3 } \\cr a &= \\sqrt{ 3 }(10 - b) \\cr \\end{aligned}",
+        "Substitute $a = \\sqrt{ 3 }(10 - b)$ into the amplitude equation $a^2 + b^2 = 100$: <br>\\begin{aligned} \\left( \\sqrt{ 3 }(10 - b) \\right)^2 + b^2 &= 100 \\cr 3(100 - 20b + b^2) + b^2 &= 100 \\cr 300 - 60b + 3b^2 + b^2 &= 100 \\cr 4b^2 - 60b + 200 &= 0 \\cr \\end{aligned} <br>Divide the entire quadratic equation by $4$: <br>\\begin{aligned} b^2 - 15b + 50 &= 0 \\cr (b - 5)(b - 10) &= 0 \\cr \\end{aligned} <br>This yields two algebraic solutions: $b = 5$ or $b = 10$.",
+        "Evaluate the solutions to match the diagram. <br>1. If $b = 10$, substituting this gives $a = \\sqrt{ 3 }(10 - 10) = 0$. This would mean $y = 10 \\cos(2x)$, but the diagram represents a curve containing both sine and cosine components (meaning $a \\neq 0$). So we reject $a = 0$. <br>2. If $b = 5$, substituting this gives: <br>\\begin{aligned} a &= \\sqrt{ 3 }(10 - 5) \\cr a &= 5\\sqrt{ 3 } \\cr \\end{aligned} <br>This matches our geometric conditions perfectly. <br>Thus, the exact values are $a = 5\\sqrt{ 3 }$ and $b = 5$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 0, \\quad b = 10$$",
+            "feedback": "This is incorrect. This is the other algebraic branch from solving the quadratic equation. However, if $a = 0$, the curve contains no sine component, which contradicts the graph shown in the diagram."
+        },
+        {
+            "ans": "$$a = 5, \\quad b = 5\\sqrt{ 3 }$$",
+            "feedback": "This is incorrect. This error occurs if you swapped the values of $a$ and $b$, which typically arises from swapping the values of the sine and cosine fractions when evaluating at $x = \\dfrac{ \\pi }{ 12 }$."
+        },
+        {
+            "ans": "$$a = 5\\sqrt{ 3 }, \\quad b = 25$$",
+            "feedback": "This is incorrect. This error occurs if you made an arithmetic slip when expanding $a = \\sqrt{ 3 }(10 - b)$, or if you wrote the amplitude equation as $a^2 + b^2 = 10$ (forgetting to square the maximum value of $10$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Frequency Scaling",
+        "content": "Always remember that the frequency term (the $2$ in $2x$) scales the horizontal axis. When substituting coordinates like $x = \\dfrac{ \\pi }{ 12 }$ into $y = a\\sin(2x) + b\\cos(2x)$, you must evaluate the trigonometric functions at the scaled angle $2x = \\dfrac{ \\pi }{ 6 }$."
+    }
+},
+{
+    "id": "004529",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Functions",
+    "subtopic": [
+        "R-Addition Formula",
+        "Wave Equations"
+    ],
+    "img": "images/Pure/004529.png",
+    "question": "A curve has the equation: <br>$$y = a \\sin x + b \\cos x$$ <br>where $a$ and $b$ are constants. <br><br>The maximum value of $y$ is $13$ and the curve passes through the point $\\left( \\dfrac{ \\pi }{ 2 }, 12 \\right)$ as shown in the diagram. <br><br>Find the exact values of $a$ and $b$.",
+    "steps": [
+        "Apply the amplitude condition. For a trigonometric curve of the form $y = a \\sin x + b \\cos x$, the maximum value is given by $R = \\sqrt{ a^2 + b^2 }$. Given that the maximum value is $13$: <br>\\begin{aligned} \\sqrt{ a^2 + b^2 } &= 13 \\cr a^2 + b^2 &= 169 \\cr \\end{aligned}",
+        "Apply the point condition. The curve passes through $\\left( \\dfrac{ \\pi }{ 2 }, 12 \\right)$, so substituting these coordinates gives: <br>\\begin{aligned} 12 &= a \\sin\\left( \\dfrac{ \\pi }{ 2 } \\right) + b \\cos\\left( \\dfrac{ \\pi }{ 2 } \\right) \\cr \\end{aligned}",
+        "Substitute the exact values $\\sin\\left( \\dfrac{ \\pi }{ 2 } \\right) = 1$ and $\\cos\\left( \\dfrac{ \\pi }{ 2 } \\right) = 0$: <br>\\begin{aligned} 12 &= a(1) + b(0) \\cr a &= 12 \\cr \\end{aligned}",
+        "Substitute $a = 12$ into the amplitude equation $a^2 + b^2 = 169$ to solve for $b$: <br>\\begin{aligned} (12)^2 + b^2 &= 169 \\cr 144 + b^2 &= 169 \\cr b^2 &= 25 \\cr \\end{aligned} <br>Since the diagram shows a positive y-intercept $b$ (at $x=0$, $y=b$), we take the positive root: <br>\\begin{aligned} b &= 5 \\cr \\end{aligned} <br>Thus, the exact values are $a = 12$ and $b = 5$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 5, \\quad b = 12$$",
+            "feedback": "This is incorrect. This error occurs if you swapped the values of $a$ and $b$, which typically arises from evaluating the trigonometric conditions at $x = \\dfrac{ \\pi }{ 2 }$ incorrectly by writing $\\sin\\left( \\dfrac{ \\pi }{ 2 } \\right) = 0$ and $\\cos\\left( \\dfrac{ \\pi }{ 2 } \\right) = 1$."
+        },
+        {
+            "ans": "$$a = 12, \\quad b = -5$$",
+            "feedback": "This is incorrect. While $-5$ is algebraically a solution to $b^2 = 25$, this would represent a curve with a negative y-intercept, which contradicts the graph shown in the diagram."
+        },
+        {
+            "ans": "$$a = 12, \\quad b = 25$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to take the square root of $b^2 = 25$ to find $b$, or if you incorrectly solved $144 + b^2 = 169$ as $144 + b = 169$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Pythagorean Triples",
+        "content": "Recognising standard Pythagorean triples (like $5\\text{-}12\\text{-}13$) can instantly verify your calculations in amplitude equations. Since $12^2 + 5^2 = 13^2$, finding $a = 12$ and a maximum of $13$ guarantees that $b = \\pm 5$."
+    }
+},
+{
+    "id": "004530",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Functions",
+    "subtopic": [
+        "R-Addition Formula",
+        "Wave Equations"
+    ],
+    "img": "images/Pure/004530.png",
+    "question": "A curve has the equation: <br>$$y = a \\sin x + b \\cos x$$ <br>where $a$ and $b$ are constants. <br><br>The maximum value of $y$ is $2$ and the curve passes through the point $\\left( \\dfrac{ \\pi }{ 6 }, \\sqrt{ 3 } \\right)$ as shown in the diagram. <br><br>Find the exact values of $a$ and $b$.",
+    "steps": [
+        "Apply the amplitude condition. For a trigonometric curve of the form $y = a \\sin x + b \\cos x$, the maximum value is given by $R = \\sqrt{ a^2 + b^2 }$. Given that the maximum value is $2$: <br>\\begin{aligned} \\sqrt{ a^2 + b^2 } &= 2 \\cr a^2 + b^2 &= 4 \\cr \\end{aligned}",
+        "Apply the point condition. The curve passes through $\\left( \\dfrac{ \\pi }{ 6 }, \\sqrt{ 3 } \\right)$, so substituting these coordinates gives: <br>\\begin{aligned} \\sqrt{ 3 } &= a \\sin\\left( \\dfrac{ \\pi }{ 6 } \\right) + b \\cos\\left( \\dfrac{ \\pi }{ 6 } \\right) \\cr \\end{aligned}",
+        "Substitute the exact values $\\sin\\left( \\dfrac{ \\pi }{ 6 } \\right) = \\dfrac{ 1 }{ 2 }$ and $\\cos\\left( \\dfrac{ \\pi }{ 6 } \\right) = \\dfrac{ \\sqrt{ 3 } }{ 2 }$: <br>\\begin{aligned} \\sqrt{ 3 } &= a\\left( \\dfrac{ 1 }{ 2 } \\right) + b\\left( \\dfrac{ \\sqrt{ 3 } }{ 2 } \\right) \\cr \\end{aligned} <br>Multiply the entire equation by $2$ to clear the denominators: <br>\\begin{aligned} 2\\sqrt{ 3 } &= a + b\\sqrt{ 3 } \\cr a &= \\sqrt{ 3 }(2 - b) \\cr \\end{aligned}",
+        "Substitute $a = \\sqrt{ 3 }(2 - b)$ into the amplitude equation $a^2 + b^2 = 4$: <br>\\begin{aligned} \\left( \\sqrt{ 3 }(2 - b) \\right)^2 + b^2 &= 4 \\cr 3(4 - 4b + b^2) + b^2 &= 4 \\cr 12 - 12b + 3b^2 + b^2 &= 4 \\cr 4b^2 - 12b + 8 &= 0 \\cr \\end{aligned} <br>Divide the entire quadratic equation by $4$: <br>\\begin{aligned} b^2 - 3b + 2 &= 0 \\cr (b - 1)(b - 2) &= 0 \\cr \\end{aligned} <br>This yields two algebraic solutions: $b = 1$ or $b = 2$.",
+        "Evaluate the solutions to match the diagram. <br>1. If $b = 2$, substituting this gives $a = \\sqrt{ 3 }(2 - 2) = 0$. This would mean $y = 2 \\cos x$, which starts at its maximum value at $x = 0$. However, the diagram shows the maximum occurs to the right of the y-axis, so we reject $a = 0$. <br>2. If $b = 1$, substituting this gives: <br>\\begin{aligned} a &= \\sqrt{ 3 }(2 - 1) \\cr a &= \\sqrt{ 3 } \\cr \\end{aligned} <br>This matches our geometric conditions perfectly. <br>Thus, the exact values are $a = \\sqrt{ 3 }$ and $b = 1$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 0, \\quad b = 2$$",
+            "feedback": "This is incorrect. This is the other algebraic branch from solving the quadratic equation. However, if $a = 0$, the curve contains no sine component, which contradicts the graph shown in the diagram."
+        },
+        {
+            "ans": "$$a = 1, \\quad b = \\sqrt{ 3 }$$",
+            "feedback": "This is incorrect. This error occurs if you swapped the values of $a$ and $b$, which typically arises from swapping the values of the sine and cosine fractions when evaluating at $x = \\dfrac{ \\pi }{ 6 }$."
+        },
+        {
+            "ans": "$$a = \\sqrt{ 3 }, \\quad b = 3$$",
+            "feedback": "This is incorrect. This error occurs if you made an arithmetic slip when expanding $a = \\sqrt{ 3 }(2 - b)$, or if you wrote the amplitude equation as $a^2 + b^2 = 2$ (forgetting to square the maximum value of $2$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Complete Wave Forms",
+        "content": "When solving wave equations, always double-check the general form $R\\sin(x+\\alpha)$. Since $a^2+b^2=R^2$, you can quickly use the exact values of $a$ and $b$ to calculate $\\tan \\alpha = \\dfrac{ b }{ a }$ to verify that the phase shift $\\alpha$ matches the horizontal position of the peak."
+    }
 }
 ];
