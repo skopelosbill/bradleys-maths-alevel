@@ -564,5 +564,191 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Increasing Range Composites",
         "content": "If both the inner function $q(x)$ and the outer function $p(x)$ are strictly increasing, finding the range of $pq(x)$ is straightforward: simply find the minimum value of $q(x)$ at its domain boundary and substitute it directly into $p(x)$."
     }
+},
+{
+    "id": "004516",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Factor Theorem",
+        "Algebraic Proof"
+    ],
+    "img": false,
+    "question": "The quadratics $x^2 + px + q$ and $x^2 + rx + s$ have a common factor of $(x + 3)$. <br><br>Show that $3(r - p) = s - q$, fully justifying your answer. <br><br>Which of the following equations represents the correct relationship you have shown? <br><strong>A:</strong> $3(p - r) = s - q$ <br><strong>B:</strong> $3(r - p) = s - q$ <br><strong>C:</strong> $3(r - p) = q - s$ <br><strong>D:</strong> $r - p = 3(s - q)$",
+    "steps": [
+        "Apply the Factor Theorem to both quadratics. If $(x + 3)$ is a factor of a polynomial $P(x)$, then $P(-3) = 0$. <br>For the first quadratic $x^2 + px + q$: <br>\\begin{aligned} (-3)^2 + p(-3) + q &= 0 \\cr 9 - 3p + q &= 0 \\cr q - 3p &= -9 \\cr \\end{aligned}",
+        "Similarly, for the second quadratic $x^2 + rx + s$: <br>\\begin{aligned} (-3)^2 + r(-3) + s &= 0 \\cr 9 - 3r + s &= 0 \\cr s - 3r &= -9 \\cr \\end{aligned}",
+        "Equate the two expressions since both are equal to $-9$: <br>\\begin{aligned} q - 3p &= s - 3r \\cr \\end{aligned} <br>Now, rearrange the terms to group the coefficients of the linear terms on one side and the constant terms on the other: <br>\\begin{aligned} 3r - 3p &= s - q \\cr 3(r - p) &= s - q \\cr \\end{aligned} <br>Therefore, the correct option is <strong>B</strong>."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>A:</strong> $3(p - r) = s - q$",
+            "feedback": "This is incorrect. This sign error occurs if you incorrectly expand or transpose the negative terms when grouping $p$ and $r$ across the equation."
+        },
+        {
+            "ans": "<strong>C:</strong> $3(r - p) = q - s$",
+            "feedback": "This is incorrect. This error arises if you multiply one side of the equation by $-1$ but fail to do so for the other, resulting in a transposition error."
+        },
+        {
+            "ans": "<strong>D:</strong> $r - p = 3(s - q)$",
+            "feedback": "This is incorrect. This error occurs if you divide the coefficient term incorrectly, swapping the multiplication factor to the wrong side of the equation."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Sign Transposition",
+        "content": "When equating constant terms in algebraic proofs, be extremely meticulous with your positive and negative signs. Grouping terms like $-3p$ and $-3r$ requires careful factoring: $-3p - (-3r) = 3(r - p)$."
+    }
+},
+{
+    "id": "004517",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Factor Theorem",
+        "Algebraic Proof"
+    ],
+    "img": false,
+    "question": "The cubic $x^3 + ax + b$ and the quadratic $x^2 + cx + d$ have a common factor of $(x - 2)$. <br><br>Show that $2(a - 2c) = 2d - b$, fully justifying your answer. <br><br>Which of the following equations represents the correct relationship you have shown? <br><strong>A:</strong> $a - 2c = 2d - b$ <br><strong>B:</strong> $2(a - 2c) = b - 2d$ <br><strong>C:</strong> $2(2c - a) = 2d - b$ <br><strong>D:</strong> $2(a - 2c) = 2d - b$",
+    "steps": [
+        "Apply the Factor Theorem. If $(x - 2)$ is a factor, then substituting $x = 2$ must yield zero for both polynomials. <br>For the cubic expression $x^3 + ax + b$: <br>\\begin{aligned} (2)^3 + a(2) + b &= 0 \\cr 8 + 2a + b &= 0 \\cr b &= -8 - 2a \\cr \\end{aligned}",
+        "Similarly, for the quadratic expression $x^2 + cx + d$: <br>\\begin{aligned} (2)^2 + c(2) + d &= 0 \\cr 4 + 2c + d &= 0 \\cr d &= -4 - 2c \\cr \\end{aligned}",
+        "To prove the relationship, we substitute our expressions for $b$ and $d$ into the right-hand side of the target identity, $2d - b$: <br>\\begin{aligned} 2d - b &= 2(-4 - 2c) - (-8 - 2a) \\cr &= -8 - 4c + 8 + 2a \\cr &= 2a - 4c \\cr &= 2(a - 2c) \\cr \\end{aligned} <br>Thus, we have successfully shown that $2(a - 2c) = 2d - b$. <br>Therefore, the correct option is <strong>D</strong>."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>A:</strong> $a - 2c = 2d - b$",
+            "feedback": "This is incorrect. This error occurs if you fail to distribute the multiplication factor of $2$ when factorising $2a - 4c$ into $2(a - 2c)$."
+        },
+        {
+            "ans": "<strong>B:</strong> $2(a - 2c) = b - 2d$",
+            "feedback": "This is incorrect. This represents the negative of the target relation, which arises from a sign transposition error when subtracting the $b$ term."
+        },
+        {
+            "ans": "<strong>C:</strong> $2(2c - a) = 2d - b$",
+            "feedback": "This is incorrect. This occurs if you make a sign error inside the parentheses, swapping the positive $a$ and negative $2c$ terms."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Substitution Proofs",
+        "content": "For algebraic proofs linking different polynomials, isolating the constant terms (like $b$ and $d$) and substituting them into the target identity is often much easier and cleaner than attempting to eliminate variables by equating equations directly."
+    }
+},
+{
+    "id": "004518",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Factor Theorem",
+        "Algebraic Proof"
+    ],
+    "img": false,
+    "question": "The quadratics $2x^2 + ax + b$ and $2x^2 + cx + d$ have a common factor of $(2x - 1)$. <br><br>Show that $a - c = 2(d - b)$, fully justifying your answer. <br><br>Which of the following equations represents the correct relationship you have shown? <br><strong>A:</strong> $a - c = 2(d - b)$ <br><strong>B:</strong> $c - a = 2(d - b)$ <br><strong>C:</strong> $a - c = 2(b - d)$ <br><strong>D:</strong> $2(a - c) = d - b$",
+    "steps": [
+        "First, identify the root corresponding to the linear factor $(2x - 1)$: <br>\\begin{aligned} 2x - 1 &= 0 \\cr x &= \\dfrac{ 1 }{ 2 } \\cr \\end{aligned}",
+        "Apply the Factor Theorem. Substituting $x = \\dfrac{ 1 }{ 2 }$ into both quadratic expressions must yield zero. <br>For the first quadratic $2x^2 + ax + b$: <br>\\begin{aligned} 2\\left( \\dfrac{ 1 }{ 2 } \\right)^2 + a\\left( \\dfrac{ 1 }{ 2 } \\right) + b &= 0 \\cr 2\\left( \\dfrac{ 1 }{ 4 } \\right) + \\dfrac{ a }{ 2 } + b &= 0 \\cr \\dfrac{ 1 }{ 2 } + \\dfrac{ a }{ 2 } + b &= 0 \\cr \\end{aligned} <br>Multiply the entire equation by $2$ to clear the fractional denominators: <br>\\begin{aligned} 1 + a + 2b &= 0 \\cr a + 2b &= -1 \\cr \\end{aligned}",
+        "Similarly, for the second quadratic $2x^2 + cx + d$: <br>\\begin{aligned} 2\\left( \\dfrac{ 1 }{ 2 } \\right)^2 + c\\left( \\dfrac{ 1 }{ 2 } \\right) + d &= 0 \\cr 1 + c + 2d &= 0 \\cr c + 2d &= -1 \\cr \\end{aligned}",
+        "Equate the two expressions since both are equal to $-1$: <br>\\begin{aligned} a + 2b &= c + 2d \\cr \\end{aligned} <br>Rearrange the terms to isolate the variables and group the constant coefficients: <br>\\begin{aligned} a - c &= 2d - 2b \\cr a - c &= 2(d - b) \\cr \\end{aligned} <br>Therefore, the correct option is <strong>A</strong>."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>B:</strong> $c - a = 2(d - b)$",
+            "feedback": "This is incorrect. This sign error occurs if you transpose the variable terms incorrectly when grouping $a$ and $c$ across the equals sign."
+        },
+        {
+            "ans": "<strong>C:</strong> $a - c = 2(b - d)$",
+            "feedback": "This is incorrect. This error arises if you factor out the constant $2$ but reverse the signs of the terms inside the parentheses."
+        },
+        {
+            "ans": "<strong>D:</strong> $2(a - c) = d - b$",
+            "feedback": "This is incorrect. This error occurs if you multiply the wrong side of the equation by $2$ when attempting to factorise the constant coefficients."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Rational Roots",
+        "content": "For a linear factor of the form $(mx - n)$, the root is always the fraction $x = \\dfrac{ n }{ m }$. Substituting fractional roots into polynomials requires clear fractional arithmetic—always clear denominators early to avoid complex algebra."
+    }
+},
+{
+    "id": "004519",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Remainder Theorem",
+        "Algebraic Proof"
+    ],
+    "img": false,
+    "question": "When $x^2 + ax + b$ is divided by $(x - 1)$, the remainder is $R_1$. When $x^2 + cx + d$ is divided by $(x - 1)$, the remainder is $R_2$. <br><br>Given that the two remainders are equal ($R_1 = R_2$), show that $a - c = d - b$, fully justifying your answer. <br><br>Which of the following equations represents the correct relationship you have shown? <br><strong>A:</strong> $a - c = b - d$ <br><strong>B:</strong> $a + c = b + d$ <br><strong>C:</strong> $a - c = d - b$ <br><strong>D:</strong> $a - d = c - b$",
+    "steps": [
+        "Apply the Remainder Theorem. Dividing a polynomial $P(x)$ by $(x - 1)$ yields a remainder equal to $P(1)$. <br>For the first quadratic expression $x^2 + ax + b$: <br>\\begin{aligned} R_1 &= (1)^2 + a(1) + b \\cr &= 1 + a + b \\cr \\end{aligned}",
+        "Similarly, for the second quadratic expression $x^2 + cx + d$: <br>\\begin{aligned} R_2 &= (1)^2 + c(1) + d \\cr &= 1 + c + d \\cr \\end{aligned}",
+        "Since we are given that the remainders are equal ($R_1 = R_2$), we can equate our two expressions: <br>\\begin{aligned} 1 + a + b &= 1 + c + d \\cr \\end{aligned} <br>Subtract $1$ from both sides of the equation: <br>\\begin{aligned} a + b &= c + d \\cr \\end{aligned} <br>Rearrange the terms to group the coefficients: <br>\\begin{aligned} a - c &= d - b \\cr \\end{aligned} <br>Therefore, the correct option is <strong>C</strong>."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>A:</strong> $a - c = b - d$",
+            "feedback": "This is incorrect. This sign error occurs if you subtract $d$ and $b$ incorrectly across the horizontal terms of the equation."
+        },
+        {
+            "ans": "<strong>B:</strong> $a + c = b + d$",
+            "feedback": "This is incorrect. This occurs if you fail to change the positive signs to negative when transposing the coefficients across the equals sign."
+        },
+        {
+            "ans": "<strong>D:</strong> $a - d = c - b$",
+            "feedback": "This is incorrect. This error arises if you group the coefficients of different quadratic expressions incorrectly, pairing $a$ with $d$ instead of $c$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Remainder Equating",
+        "content": "The Remainder Theorem is a powerful generalisation of the Factor Theorem. When remainders are equal, equating the polynomial evaluations allows constant offset terms to cancel out, leaving a pure relationship between the coefficients."
+    }
+},
+{
+    "id": "004520",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Factor Theorem",
+        "Algebraic Proof"
+    ],
+    "img": false,
+    "question": "The quadratics $ax^2 + bx + c$ and $ax^2 + dx + e$ have a common factor of $(x - p)$, where $a \\neq 0$ and $p \\neq 0$. <br><br>Show that $p(b - d) = e - c$, fully justifying your answer. <br><br>Which of the following equations represents the correct relationship you have shown? <br><strong>A:</strong> $p(d - b) = e - c$ <br><strong>B:</strong> $p(b - d) = e - c$ <br><strong>C:</strong> $p(b - d) = c - e$ <br><strong>D:</strong> $b - d = p(e - c)$",
+    "steps": [
+        "Apply the Factor Theorem. If $(x - p)$ is a factor of both quadratics, then substituting $x = p$ must yield zero for both expressions. <br>For the first quadratic $ax^2 + bx + c$: <br>\\begin{aligned} ap^2 + bp + c &= 0 \\cr bp + c &= -ap^2 \\cr \\end{aligned}",
+        "Similarly, for the second quadratic $ax^2 + dx + e$: <br>\\begin{aligned} ap^2 + dp + e &= 0 \\cr dp + e &= -ap^2 \\cr \\end{aligned}",
+        "Equate the two expressions since both are equal to $-ap^2$: <br>\\begin{aligned} bp + c &= dp + e \\cr \\end{aligned} <br>Rearrange the terms to group the coefficients of $p$ on the left and the constant terms on the right: <br>\\begin{aligned} bp - dp &= e - c \\cr p(b - d) &= e - c \\cr \\end{aligned} <br>Therefore, the correct option is <strong>B</strong>."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>A:</strong> $p(d - b) = e - c$",
+            "feedback": "This is incorrect. This sign error occurs if you factorise $bp - dp$ incorrectly, swapping the positive $b$ and negative $d$ terms."
+        },
+        {
+            "ans": "<strong>C:</strong> $p(b - d) = c - e$",
+            "feedback": "This is incorrect. This represents the negative of the target identity, which arises from a transposition error when grouping the constants $c$ and $e$."
+        },
+        {
+            "ans": "<strong>D:</strong> $b - d = p(e - c)$",
+            "feedback": "This is incorrect. This error occurs if you multiply by the parameter $p$ instead of dividing when transposing terms across the equation."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Non-Monic Cancellation",
+        "content": "Even in complex non-monic quadratics, the leading coefficient term (like $ap^2$) completely cancels out when the equations are equated. This isolates a neat, linear relationship between the remaining coefficients."
+    }
 }
 ];
