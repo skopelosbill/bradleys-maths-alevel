@@ -684,15 +684,15 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Algebra and Functions",
     "topic": "Polynomials",
     "subtopic": [
-        "Remainder Theorem",
+        "Factor Theorem",
         "Algebraic Proof"
     ],
     "img": false,
-    "question": "When $x^2 + ax + b$ is divided by $(x - 1)$, the remainder is $R_1$. When $x^2 + cx + d$ is divided by $(x - 1)$, the remainder is $R_2$. <br><br>Given that the two remainders are equal ($R_1 = R_2$), show that $a - c = d - b$, fully justifying your answer. <br><br>Which of the following equations represents the correct relationship you have shown? <br><strong>A:</strong> $a - c = b - d$ <br><strong>B:</strong> $a + c = b + d$ <br><strong>C:</strong> $a - c = d - b$ <br><strong>D:</strong> $a - d = c - b$",
+    "question": "The quadratics $x^2 + ax + b$ and $x^2 + cx + d$ have a common factor of $(x - 1)$. <br><br>Show that $a - c = d - b$, fully justifying your answer. <br><br>Which of the following equations represents the correct relationship you have shown? <br><strong>A:</strong> $a - c = b - d$ <br><strong>B:</strong> $a + c = b + d$ <br><strong>C:</strong> $a - c = d - b$ <br><strong>D:</strong> $a - d = c - b$",
     "steps": [
-        "Apply the Remainder Theorem. Dividing a polynomial $P(x)$ by $(x - 1)$ yields a remainder equal to $P(1)$. <br>For the first quadratic expression $x^2 + ax + b$: <br>\\begin{aligned} R_1 &= (1)^2 + a(1) + b \\cr &= 1 + a + b \\cr \\end{aligned}",
-        "Similarly, for the second quadratic expression $x^2 + cx + d$: <br>\\begin{aligned} R_2 &= (1)^2 + c(1) + d \\cr &= 1 + c + d \\cr \\end{aligned}",
-        "Since we are given that the remainders are equal ($R_1 = R_2$), we can equate our two expressions: <br>\\begin{aligned} 1 + a + b &= 1 + c + d \\cr \\end{aligned} <br>Subtract $1$ from both sides of the equation: <br>\\begin{aligned} a + b &= c + d \\cr \\end{aligned} <br>Rearrange the terms to group the coefficients: <br>\\begin{aligned} a - c &= d - b \\cr \\end{aligned} <br>Therefore, the correct option is <strong>C</strong>."
+        "Apply the Factor Theorem. If $(x - 1)$ is a factor of a polynomial $P(x)$, then $P(1) = 0$. <br>For the first quadratic $x^2 + ax + b$: <br>\\begin{aligned} (1)^2 + a(1) + b &= 0 \\cr 1 + a + b &= 0 \\cr a + b &= -1 \\cr \\end{aligned}",
+        "Similarly, for the second quadratic $x^2 + cx + d$: <br>\\begin{aligned} (1)^2 + c(1) + d &= 0 \\cr 1 + c + d &= 0 \\cr c + d &= -1 \\cr \\end{aligned}",
+        "Equate the two expressions since both are equal to $-1$: <br>\\begin{aligned} a + b &= c + d \\cr \\end{aligned} <br>Now, rearrange the terms to group the coefficients $a$ and $c$ on one side and $b$ and $d$ on the other: <br>\\begin{aligned} a - c &= d - b \\cr \\end{aligned} <br>Therefore, the correct option is <strong>C</strong>."
     ],
     "pi_options": [
         {
@@ -710,8 +710,8 @@ window.ALEVEL_QUESTIONS = [
     ],
     "bradley_insight": {
         "type": "pro-tip",
-        "title": "The Head Teacher's Eye: Remainder Equating",
-        "content": "The Remainder Theorem is a powerful generalisation of the Factor Theorem. When remainders are equal, equating the polynomial evaluations allows constant offset terms to cancel out, leaving a pure relationship between the coefficients."
+        "title": "The Head Teacher's Eye: Unity Factor Equating",
+        "content": "When quadratics have a common factor of $(x - 1)$, evaluating them at $x = 1$ leads to a direct linear relationship between their coefficients. Because the leading coefficients are identical, they cancel out, leaving a pure subtraction mapping: $a - c = d - b$."
     }
 },
 {
@@ -749,6 +749,201 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Non-Monic Cancellation",
         "content": "Even in complex non-monic quadratics, the leading coefficient term (like $ap^2$) completely cancels out when the equations are equated. This isolates a neat, linear relationship between the remaining coefficients."
+    }
+},
+{
+    "id": "004521",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Integration by Parts"
+    ],
+    "img": false,
+    "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}t }{ \\mathrm{d}x } = \\dfrac{ \\ln x }{ x^3 t } \\quad \\text{for } x > 0$$ <br>given that $x = 1$ when $t = 2$. <br><br>Write your answer in the form $t^2 = f(x)$.",
+    "steps": [
+        "Separate the variables by multiplying both sides by $t$ and integrating with respect to $x$: <br>\\begin{aligned} t \\dfrac{ \\mathrm{d}t }{ \\mathrm{d}x } &= \\dfrac{ \\ln x }{ x^3 } \\cr \\int t \\mathrm{d}t &= \\int x^{-3} \\ln x \\mathrm{d}x \\cr \\end{aligned}",
+        "Integrate the left-hand side directly: <br>\\begin{aligned} \\int t \\mathrm{d}t &= \\dfrac{ t^2 }{ 2 } \\cr \\end{aligned}",
+        "Integrate the right-hand side, $\\int x^{-3} \\ln x \\mathrm{d}x$, using integration by parts, where $\\int u \\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } \\mathrm{d}x = uv - \\int v \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } \\mathrm{d}x$: <br>Let $u = \\ln x \\implies \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } = \\dfrac{ 1 }{ x }$ <br>Let $\\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } = x^{-3} \\implies v = -\\dfrac{ 1 }{ 2x^2 }$ <br>Substituting these into the integration by parts formula gives: <br>\\begin{aligned} \\int x^{-3} \\ln x \\mathrm{d}x &= (\\ln x)\\left( -\\dfrac{ 1 }{ 2x^2 } \\right) - \\int \\left( -\\dfrac{ 1 }{ 2x^2 } \\right)\\left( \\dfrac{ 1 }{ x } \\right) \\mathrm{d}x \\cr &= -\\dfrac{ \\ln x }{ 2x^2 } + \\dfrac{ 1 }{ 2 } \\int x^{-3} \\mathrm{d}x \\cr &= -\\dfrac{ \\ln x }{ 2x^2 } - \\dfrac{ 1 }{ 4x^2 } + C \\cr \\end{aligned}",
+        "Equate the integrated left-hand side and right-hand side expressions: <br>\\begin{aligned} \\dfrac{ t^2 }{ 2 } &= -\\dfrac{ \\ln x }{ 2x^2 } - \\dfrac{ 1 }{ 4x^2 } + C \\cr \\end{aligned} <br>Substitute the initial conditions $x = 1$ and $t = 2$ to find the constant of integration $C$: <br>\\begin{aligned} \\dfrac{ (2)^2 }{ 2 } &= -\\dfrac{ \\ln(1) }{ 2(1)^2 } - \\dfrac{ 1 }{ 4(1)^2 } + C \\cr 2 &= 0 - \\dfrac{ 1 }{ 4 } + C \\cr C &= \\dfrac{ 9 }{ 4 } \\cr \\end{aligned}",
+        "Substitute $C = \\dfrac{ 9 }{ 4 }$ back into the general equation: <br>\\begin{aligned} \\dfrac{ t^2 }{ 2 } &= -\\dfrac{ \\ln x }{ 2x^2 } - \\dfrac{ 1 }{ 4x^2 } + \\dfrac{ 9 }{ 4 } \\cr \\end{aligned} <br>Multiply the entire equation by $2$ to write the final solution in the required form: <br>\\begin{aligned} t^2 &= -\\dfrac{ \\ln x }{ x^2 } - \\dfrac{ 1 }{ 2x^2 } + \\dfrac{ 9 }{ 2 } \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$t^2 = -\\dfrac{ \\ln x }{ x^2 } - \\dfrac{ 1 }{ 2x^2 } + 4$$",
+            "feedback": "This is incorrect. This error occurs if you solve for the constant of integration as $C = 2$ because you forgot to divide $(2)^2$ by $2$ on the left-hand side when substituting the initial condition $t = 2$."
+        },
+        {
+            "ans": "$$t^2 = -\\dfrac{ 2\\ln x }{ x^2 } - \\dfrac{ 1 }{ 2x^2 } + 5$$",
+            "feedback": "This is incorrect. This error arises from a sign or coefficient transposition slip during the integration by parts step, failing to correctly distribute the $\\dfrac{ 1 }{ 2 }$ factor to the second integral term."
+        },
+        {
+            "ans": "$$t^2 = -\\dfrac{ \\ln x }{ x^2 } - \\dfrac{ 1 }{ x^2 } + \\dfrac{ 9 }{ 2 }$$",
+            "feedback": "This is incorrect. This error occurs if you integrated $\\int x^{-3} \\mathrm{d}x$ as $-x^{-2}$ instead of $-\\dfrac{ 1 }{ 2 }x^{-2}$, losing the factor of $\\dfrac{ 1 }{ 2 }$ on the second term."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Variable Separation",
+        "content": "Always separate variables carefully before attempting to integrate. Attempting to integrate without separating variables is a critical error that receives zero marks."
+    }
+},
+{
+    "id": "004522",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Integration by Parts"
+    ],
+    "img": false,
+    "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ x \\mathrm{e}^{2x} }{ y } \\quad \\text{for } x \\in \\mathbb{ R }$$ <br>given that $y = 3$ when $x = 0$. <br><br>Write your answer in the form $y^2 = f(x)$.",
+    "steps": [
+        "Separate the variables and set up the integrals on both sides: <br>\\begin{aligned} y \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= x \\mathrm{e}^{2x} \\cr \\int y \\mathrm{d}y &= \\int x \\mathrm{e}^{2x} \\mathrm{d}x \\cr \\end{aligned}",
+        "Integrate the left-hand side: <br>\\begin{aligned} \\int y \\mathrm{d}y &= \\dfrac{ y^2 }{ 2 } \\cr \\end{aligned}",
+        "Integrate the right-hand side using integration by parts, where $\\int u \\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } \\mathrm{d}x = uv - \\int v \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } \\mathrm{d}x$: <br>Let $u = x \\implies \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } = 1$ <br>Let $\\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } = \\mathrm{e}^{2x} \\implies v = \\dfrac{ 1 }{ 2 } \\mathrm{e}^{2x}$ <br>This gives: <br>\\begin{aligned} \\int x \\mathrm{e}^{2x} \\mathrm{d}x &= x\\left( \\dfrac{ 1 }{ 2 } \\mathrm{e}^{2x} \\right) - \\int \\dfrac{ 1 }{ 2 } \\mathrm{e}^{2x} \\mathrm{d}x \\cr &= \\dfrac{ 1 }{ 2 } x \\mathrm{e}^{2x} - \\dfrac{ 1 }{ 4 } \\mathrm{e}^{2x} + C \\cr \\end{aligned}",
+        "Equate the integrated sides: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= \\dfrac{ 1 }{ 2 } x \\mathrm{e}^{2x} - \\dfrac{ 1 }{ 4 } \\mathrm{e}^{2x} + C \\cr \\end{aligned} <br>Apply the boundary conditions $y = 3$ and $x = 0$ to find the constant of integration $C$: <br>\\begin{aligned} \\dfrac{ (3)^2 }{ 2 } &= \\dfrac{ 1 }{ 2 }(0)\\mathrm{e}^{0} - \\dfrac{ 1 }{ 4 }\\mathrm{e}^{0} + C \\cr \\dfrac{ 9 }{ 2 } &= -\\dfrac{ 1 }{ 4 } + C \\cr C &= \\dfrac{ 19 }{ 4 } \\cr \\end{aligned}",
+        "Substitute $C = \\dfrac{ 19 }{ 4 }$ back and multiply by $2$ to write the final equation in the form $y^2 = f(x)$: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= \\dfrac{ 1 }{ 2 } x \\mathrm{e}^{2x} - \\dfrac{ 1 }{ 4 } \\mathrm{e}^{2x} + \\dfrac{ 19 }{ 4 } \\cr y^2 &= x \\mathrm{e}^{2x} - \\dfrac{ 1 }{ 2 } \\mathrm{e}^{2x} + \\dfrac{ 19 }{ 2 } \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$y^2 = x\\mathrm{ e }^{ 2x } - \\dfrac{ 1 }{ 2 }\\mathrm{ e }^{ 2x } + 9$$",
+            "feedback": "This is incorrect. This error occurs if you solved for the constant of integration correctly as $C = \\dfrac{ 19 }{ 4 }$ but forgot to multiply this term by $2$ when converting the general solution $\\dfrac{ y^2 }{ 2 }$ to $y^2$ (instead mistakenly adding $2C$ as $9$)."
+        },
+        {
+            "ans": "$$y^2 = 2x\\mathrm{ e }^{ 2x } - \\dfrac{ 1 }{ 2 }\\mathrm{ e }^{ 2x } + \\dfrac{ 19 }{ 2 }$$",
+            "feedback": "This is incorrect. This error arises if you integrated $\\int x \\mathrm{e}^{2x} \\mathrm{d}x$ by parts incorrectly, multiplying the coefficient by $2$ instead of dividing by $2$ in the first step."
+        },
+        {
+            "ans": "$$y^2 = x\\mathrm{ e }^{ 2x } - \\mathrm{ e }^{ 2x } + 10$$",
+            "feedback": "This is incorrect. This error occurs if you integrated the exponential term $\\mathrm{e}^{2x}$ as $\\mathrm{e}^{2x}$ instead of $\\dfrac{ 1 }{ 2 }\\mathrm{e}^{2x}$ in both integration stages."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Integration by Parts Casing",
+        "content": "When choosing $u$ and $v$ for integration by parts, follow the 'LATE' hierarchy (Logarithmic, Algebraic, Trigonometric, Exponential) to select $u$. For $\\int x \\mathrm{e}^{2x} \\mathrm{d}x$, Algebraic $x$ must be $u$ so that it simplifies to $1$ when differentiated."
+    }
+},
+{
+    "id": "004523",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Integration by Parts"
+    ],
+    "img": false,
+    "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ x \\sin x }{ y } \\quad \\text{for } x \\in \\mathbb{ R }$$ <br>given that $y = 2$ when $x = 0$. <br><br>Write your answer in the form $y^2 = f(x)$.",
+    "steps": [
+        "Separate the variables and set up the integration: <br>\\begin{aligned} y \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= x \\sin x \\cr \\int y \\mathrm{d}y &= \\int x \\sin x \\mathrm{d}x \\cr \\end{aligned}",
+        "Integrate the left-hand side directly: <br>\\begin{aligned} \\int y \\mathrm{d}y &= \\dfrac{ y^2 }{ 2 } \\cr \\end{aligned}",
+        "Integrate the right-hand side using integration by parts, where $\\int u \\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } \\mathrm{d}x = uv - \\int v \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } \\mathrm{d}x$: <br>Let $u = x \\implies \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } = 1$ <br>Let $\\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } = \\sin x \\implies v = -\\cos x$ <br>Substituting these into the integration by parts formula gives: <br>\\begin{aligned} \\int x \\sin x \\mathrm{d}x &= x(-\\cos x) - \\int (-\\cos x) \\mathrm{d}x \\cr &= -x\\cos x + \\sin x + C \\cr \\end{aligned}",
+        "Equate both sides to form the general equation: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= -x\\cos x + \\sin x + C \\cr \\end{aligned} <br>Apply the initial boundary conditions $y = 2$ and $x = 0$ to find the constant of integration $C$: <br>\\begin{aligned} \\dfrac{ (2)^2 }{ 2 } &= -(0)\\cos(0) + \\sin(0) + C \\cr 2 &= 0 + 0 + C \\cr C &= 2 \\cr \\end{aligned}",
+        "Substitute $C = 2$ back and multiply by $2$ to write the final solution in the required form: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= -x\\cos x + \\sin x + 2 \\cr y^2 &= -2x\\cos x + 2\\sin x + 4 \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$y^2 = -2x\\cos x + \\sin x + 4$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to distribute the factor of $2$ to the $\\sin x$ term when multiplying the entire equation by $2$ to convert $\\dfrac{ y^2 }{ 2 }$ to $y^2$."
+        },
+        {
+            "ans": "$$y^2 = 2x\\cos x - 2\\sin x + 4$$",
+            "feedback": "This is incorrect. This error arises from a sign error when integrating $\\sin x$, forgetting that $\\int \\sin x \\mathrm{d}x = -\\cos x$ and that subtracting the second integral introduces another negative sign."
+        },
+        {
+            "ans": "$$y^2 = -x\\cos x + \\sin x + 2$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to multiply any of the right-hand side terms by $2$ when converting the general solution $\\dfrac{ y^2 }{ 2 }$ to $y^2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Trig Integration Signs",
+        "content": "Be extremely vigilant with signs when integrating trigonometric functions. Remember that $\\int \\sin x \\mathrm{d}x = -\\cos x$, whereas $\\int \\cos x \\mathrm{d}x = \\sin x$. A simple sign error here will carry through and corrupt your constant of integration $C$."
+    }
+},
+{
+    "id": "004524",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Integration by Parts"
+    ],
+    "img": false,
+    "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ x \\ln x }{ y } \\quad \\text{for } x > 0$$ <br>given that $y = 4$ when $x = 1$. <br><br>Write your answer in the form $y^2 = f(x)$.",
+    "steps": [
+        "Separate the variables and set up the integrals on both sides: <br>\\begin{aligned} y \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= x \\ln x \\cr \\int y \\mathrm{d}y &= \\int x \\ln x \\mathrm{d}x \\cr \\end{aligned}",
+        "Integrate the left-hand side directly: <br>\\begin{aligned} \\int y \\mathrm{d}y &= \\dfrac{ y^2 }{ 2 } \\cr \\end{aligned}",
+        "Integrate the right-hand side using integration by parts, where $\\int u \\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } \\mathrm{d}x = uv - \\int v \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } \\mathrm{d}x$: <br>Let $u = \\ln x \\implies \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } = \\dfrac{ 1 }{ x }$ <br>Let $\\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } = x \\implies v = \\dfrac{ x^2 }{ 2 }$ <br>Substituting these into the formula gives: <br>\\begin{aligned} \\int x \\ln x \\mathrm{d}x &= (\\ln x)\\left( \\dfrac{ x^2 }{ 2 } \\right) - \\int \\left( \\dfrac{ x^2 }{ 2 } \\right)\\left( \\dfrac{ 1 }{ x } \\right) \\mathrm{d}x \\cr &= \\dfrac{ x^2 }{ 2 } \\ln x - \\dfrac{ 1 }{ 2 } \\int x \\mathrm{d}x \\cr &= \\dfrac{ x^2 }{ 2 } \\ln x - \\dfrac{ x^2 }{ 4 } + C \\cr \\end{aligned}",
+        "Equate the integrated sides to form the general equation: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= \\dfrac{ x^2 }{ 2 } \\ln x - \\dfrac{ x^2 }{ 4 } + C \\cr \\end{aligned} <br>Apply the boundary conditions $y = 4$ and $x = 1$ to calculate the constant of integration $C$: <br>\\begin{aligned} \\dfrac{ (4)^2 }{ 2 } &= \\dfrac{ (1)^2 }{ 2 }\\ln(1) - \\dfrac{ (1)^2 }{ 4 } + C \\cr 8 &= 0 - \\dfrac{ 1 }{ 4 } + C \\cr C &= \\dfrac{ 33 }{ 4 } \\cr \\end{aligned}",
+        "Substitute $C = \\dfrac{ 33 }{ 4 }$ back and multiply by $2$ to write the final equation in the required form: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= \\dfrac{ x^2 }{ 2 } \\ln x - \\dfrac{ x^2 }{ 4 } + \\dfrac{ 33 }{ 4 } \\cr y^2 &= x^2 \\ln x - \\dfrac{ x^2 }{ 2 } + \\dfrac{ 33 }{ 2 } \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$y^2 = x^2\\ln x - \\dfrac{ 1 }{ 2 }x^2 + 16$$",
+            "feedback": "This is incorrect. This error occurs if you solved for the constant of integration correctly as $C = \\dfrac{ 33 }{ 4 }$ but forgot to multiply this term by $2$ when converting $\\dfrac{ y^2 }{ 2 }$ to $y^2$ (instead mistakenly adding $2C$ as $16$)."
+        },
+        {
+            "ans": "$$y^2 = 2x^2\\ln x - \\dfrac{ 1 }{ 2 }x^2 + \\dfrac{ 33 }{ 2 }$$",
+            "feedback": "This is incorrect. This error arises if you integrated $x \\ln x$ by parts incorrectly, multiplying the coefficient by $2$ instead of dividing by $2$ in the first step."
+        },
+        {
+            "ans": "$$y^2 = x^2\\ln x - x^2 + 17$$",
+            "feedback": "This is incorrect. This error occurs if you integrated the algebraic term $x$ as $x^2$ instead of $\\dfrac{ 1 }{ 2 }x^2$ during the integration by parts process."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Logarithm Domain Limits",
+        "content": "When integrating functions involving $\\ln x$, the domain constraint $x > 0$ is mathematically critical. This guarantees that both the logarithm and its derivative $\\dfrac{ 1 }{ x }$ are defined and real over the entire interval of integration."
+    }
+},
+{
+    "id": "004525",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Integration by Parts"
+    ],
+    "img": false,
+    "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ x \\mathrm{e}^{-x} }{ y } \\quad \\text{for } x \\in \\mathbb{ R }$$ <br>given that $y = 2$ when $x = 0$. <br><br>Write your answer in the form $y^2 = f(x)$.",
+    "steps": [
+        "Separate the variables and set up the integration: <br>\\begin{aligned} y \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= x \\mathrm{e}^{-x} \\cr \\int y \\mathrm{d}y &= \\int x \\mathrm{e}^{-x} \\mathrm{d}x \\cr \\end{aligned}",
+        "Integrate the left-hand side directly: <br>\\begin{aligned} \\int y \\mathrm{d}y &= \\dfrac{ y^2 }{ 2 } \\cr \\end{aligned}",
+        "Integrate the right-hand side using integration by parts, where $\\int u \\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } \\mathrm{d}x = uv - \\int v \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } \\mathrm{d}x$: <br>Let $u = x \\implies \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } = 1$ <br>Let $\\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } = \\mathrm{e}^{-x} \\implies v = -\\mathrm{e}^{-x}$ <br>Substituting these into the formula yields: <br>\\begin{aligned} \\int x \\mathrm{e}^{-x} \\mathrm{d}x &= x(-\\mathrm{e}^{-x}) - \\int (-\\mathrm{e}^{-x}) \\mathrm{d}x \\cr &= -x\\mathrm{e}^{-x} + \\int \\mathrm{e}^{-x} \\mathrm{d}x \\cr &= -x\\mathrm{e}^{-x} - \\mathrm{e}^{-x} + C \\cr \\end{aligned}",
+        "Equate the integrated expressions: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= -x\\mathrm{e}^{-x} - \\mathrm{e}^{-x} + C \\cr \\end{aligned} <br>Substitute the boundary conditions $y = 2$ and $x = 0$ to find the constant of integration $C$: <br>\\begin{aligned} \\dfrac{ (2)^2 }{ 2 } &= -(0)\\mathrm{e}^{0} - \\mathrm{e}^{0} + C \\cr 2 &= 0 - 1 + C \\cr C &= 3 \\cr \\end{aligned}",
+        "Substitute $C = 3$ back into the general equation: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= -x\\mathrm{e}^{-x} - \\mathrm{e}^{-x} + 3 \\cr \\end{aligned} <br>Multiply the entire equation by $2$ to write the final equation in the required form (which can optionally be factorised): <br>\\begin{aligned} y^2 &= -2x\\mathrm{e}^{-x} - 2\\mathrm{e}^{-x} + 6 \\cr y^2 &= -2(x + 1)\\mathrm{e}^{-x} + 6 \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$y^2 = -2(x + 1)\\mathrm{ e }^{-x} + 4$$",
+            "feedback": "This is incorrect. This error occurs if you solved for the constant of integration correctly as $C = 3$ but forgot to multiply this term by $2$ when converting the general solution $\\dfrac{ y^2 }{ 2 }$ to $y^2$ (instead mistakenly adding $2C$ as $4$)."
+        },
+        {
+            "ans": "$$y^2 = -x\\mathrm{ e }^{-x} - \\mathrm{ e }^{-x} + 3$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to multiply any of the right-hand side terms by $2$ when converting the general solution $\\dfrac{ y^2 }{ 2 }$ to $y^2$."
+        },
+        {
+            "ans": "$$y^2 = 2(x - 1)\\mathrm{ e }^{-x} + 6$$",
+            "feedback": "This is incorrect. This represents a double sign error in the integration by parts step, resulting in positive exponential products and an incorrect subtraction sign inside the parentheses."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Factoring Exponential Terms",
+        "content": "For solutions involving terms like $-2x\\mathrm{e}^{-x} - 2\\mathrm{e}^{-x}$, it is often considered elegant and clean to factorise the exponential term: $-2(x + 1)\\mathrm{e}^{-x}$. Both forms are mathematically equivalent and fully accepted in examinations."
     }
 }
 ];
