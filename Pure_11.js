@@ -1138,5 +1138,197 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Complete Wave Forms",
         "content": "When solving wave equations, always double-check the general form $R\\sin(x+\\alpha)$. Since $a^2+b^2=R^2$, you can quickly use the exact values of $a$ and $b$ to calculate $\\tan \\alpha = \\dfrac{ b }{ a }$ to verify that the phase shift $\\alpha$ matches the horizontal position of the peak."
     }
+},
+{
+    "id": "004531",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Turning Points",
+    "subtopic": [
+        "Stationary Points",
+        "Cubic Curve Analysis"
+    ],
+    "img": false,
+    "question": "The cubic function $f(x)$ is defined by: <br>$$f(x) = x^3 - 3px^2 + q$$ <br>where $p$ and $q$ are constants and $p > 0$. <br><br>(a) Sketch any cubic function that has both three distinct real roots and a positive coefficient of $x^3$. <br><br>(b)(i) Show that there is a turning point where the curve $y = f(x)$ crosses the $y$-axis. <br><br>(b)(ii) Given that the equation $f(x) = 0$ has three distinct real roots, find, in terms of $p$, the range of possible values of $q$, fully justifying your answer.",
+    "steps": [
+        "For part (a), a cubic curve with a positive coefficient of $x^3$ and three distinct real roots starts in the bottom-left quadrant (as $x \\to -\\infty$, $y \\to -\\infty$) and goes to the top-right quadrant (as $x \\to \\infty$, $y \\to \\infty$). To cross the x-axis exactly three times, it must have two distinct turning points: a local maximum strictly above the x-axis and a local minimum strictly below the x-axis. <br><br>The sketch of the curve should look like this: <br><br><img src='images/Pure/004531_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "For part (b)(i), find the derivative $f'(x)$ of the function $f(x) = x^3 - 3px^2 + q$ and set it to zero to locate the x-coordinates of the turning points: <br>\\begin{aligned} f'(x) &= 3x^2 - 6px \\cr 3x(x - 2p) &= 0 \\cr \\end{aligned} <br>This gives turning points at $x = 0$ and $x = 2p$.",
+        "The curve crosses the y-axis at $x = 0$. Substituting $x = 0$ into the original function gives: <br>\\begin{aligned} y &= f(0) \\cr y &= (0)^3 - 3p(0)^2 + q = q \\cr \\end{aligned} <br>Since the derivative $f'(0) = 0$, there is indeed a stationary turning point at the coordinate $(0, q)$, which lies exactly on the y-axis.",
+        "For part (b)(ii), determine the y-coordinates of both turning points to apply our root conditions from the sketch. <br>1. The first turning point at $x = 0$ has coordinate $(0, q)$. Since $p > 0$, the second derivative $f''(0) = -6p < 0$, making this a local maximum. <br>2. The second turning point at $x = 2p$ has coordinate: <br>\\begin{aligned} f(2p) &= (2p)^3 - 3p(2p)^2 + q \\cr &= 8p^3 - 12p^3 + q \\cr &= q - 4p^3 \\cr \\end{aligned} <br>Since $f''(2p) = 6p > 0$, this is a local minimum.",
+        "To have three distinct real roots, the local maximum must lie above the x-axis and the local minimum must lie below the x-axis: <br>\\begin{aligned} q &> 0 \\cr q - 4p^3 &< 0 \\cr \\end{aligned} <br>Solving these simultaneous inequalities yields the final range of possible values for $q$: <br>\\begin{aligned} 0 < q < 4p^3 \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$-4p^3 < q < 0$$",
+            "feedback": "This is incorrect. This range represents the solution for a cubic with turning points structured such that $x = 0$ is a local minimum and $x = -2p$ is a local maximum (as in $x^3 + 3px^2 + q$), which is the reverse of our function's stationary behaviors."
+        },
+        {
+            "ans": "$$q < 4p^3$$",
+            "feedback": "This is incorrect. This represents only one boundary condition (local minimum below the x-axis). You have forgotten to apply the other boundary condition (local maximum above the x-axis, $q > 0$)."
+        },
+        {
+            "ans": "$$0 < q < 8p^3$$",
+            "feedback": "This is incorrect. This error occurs if you made an algebraic slip when expanding $(2p)^3$ as $8p^3$ but then failed to subtract $12p^3$ when evaluating $f(2p)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Boundary Case Rejections",
+        "content": "For a cubic equation to have three distinct roots, the local maximum and local minimum must be on opposite sides of the x-axis (meaning $y_{\\text{max}} > 0$ and $y_{\\text{min}} < 0$). If they were equal to zero, the equation would have a repeated root, resulting in only two distinct roots."
+    }
+},
+{
+    "id": "004532",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Turning Points",
+    "subtopic": [
+        "Stationary Points",
+        "Cubic Curve Analysis"
+    ],
+    "img": false,
+    "question": "The cubic function $f(x)$ is defined by: <br>$$f(x) = -x^3 + 3px^2 + q$$ <br>where $p$ and $q$ are constants and $p > 0$. <br><br>(a) Sketch any cubic function that has both three distinct real roots and a negative coefficient of $x^3$. <br><br>(b)(i) Show that there is a turning point where the curve $y = f(x)$ crosses the $y$-axis. <br><br>(b)(ii) Given that the equation $f(x) = 0$ has three distinct real roots, find, in terms of $p$, the range of possible values of $q$, fully justifying your answer.",
+    "steps": [
+        "For part (a), a cubic curve with a negative coefficient of $x^3$ and three distinct real roots starts in the top-left quadrant (as $x \\to -\\infty$, $y \\to \\infty$) and goes to the bottom-right quadrant (as $x \\to \\infty$, $y \\to -\\infty$). To cross the x-axis exactly three times, it must have two distinct turning points: a local minimum strictly below the x-axis and a local maximum strictly above the x-axis. <br><br>The sketch of the curve should look like this: <br><br><img src='images/Pure/004532_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "For part (b)(i), find the derivative $f'(x)$ of the function $f(x) = -x^3 + 3px^2 + q$ and set it to zero to locate the x-coordinates of the turning points: <br>\\begin{aligned} f'(x) &= -3x^2 + 6px \\cr -3x(x - 2p) &= 0 \\cr \\end{aligned} <br>This gives turning points at $x = 0$ and $x = 2p$.",
+        "The curve crosses the y-axis at $x = 0$. Substituting $x = 0$ into the original function gives: <br>\\begin{aligned} y &= f(0) \\cr y &= -(0)^3 + 3p(0)^2 + q = q \\cr \\end{aligned} <br>Since the derivative $f'(0) = 0$, there is indeed a stationary turning point at the coordinate $(0, q)$, which lies exactly on the y-axis.",
+        "For part (b)(ii), determine the y-coordinates of both turning points to apply our root conditions from the sketch. <br>1. The first turning point at $x = 0$ has coordinate $(0, q)$. Since $p > 0$, the second derivative $f''(0) = 6p > 0$, making this a local minimum. <br>2. The second turning point at $x = 2p$ has coordinate: <br>\\begin{aligned} f(2p) &= -(2p)^3 + 3p(2p)^2 + q \\cr &= -8p^3 + 12p^3 + q \\cr &= 4p^3 + q \\cr \\end{aligned} <br>Since $f''(2p) = -6p < 0$, this is a local maximum.",
+        "To have three distinct real roots, the local minimum must lie below the x-axis and the local maximum must lie above the x-axis: <br>\\begin{aligned} q &< 0 \\cr 4p^3 + q &> 0 \\cr \\end{aligned} <br>Solving these simultaneous inequalities yields the final range of possible values for $q$: <br>\\begin{aligned} -4p^3 < q < 0 \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$0 < q < 4p^3$$",
+            "feedback": "This is incorrect. This range is the solution for a positive cubic curve. Because our leading coefficient is negative, the positions and natures of our local maximum and local minimum are reversed, resulting in different signs for the range."
+        },
+        {
+            "ans": "$$q > -4p^3$$",
+            "feedback": "This is incorrect. This represents only one boundary condition (local maximum above the x-axis). You have forgotten to apply the other boundary condition (local minimum below the x-axis, $q < 0$)."
+        },
+        {
+            "ans": "$$-8p^3 < q < 0$$",
+            "feedback": "This is incorrect. This error arises from an arithmetic slip when evaluating $-(2p)^3 = -8p^3$, failing to correctly add the $12p^3$ term during expansion."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Leading Coefficients",
+        "content": "A negative leading coefficient completely reverses the end behavior of the graph. Ensure you sketch the curve carefully from top-left to bottom-right to determine the correct inequalities for the turning points."
+    }
+},
+{
+    "id": "004533",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Turning Points",
+    "subtopic": [
+        "Stationary Points",
+        "Cubic Curve Analysis"
+    ],
+    "img": false,
+    "question": "The cubic function $f(x)$ is defined by: <br>$$f(x) = x^3 - 3x^2 + q$$ <br>where $q$ is a constant. <br><br>(a) Sketch any cubic function that has three distinct real roots and a positive coefficient of $x^3$. <br><br>(b)(i) Show that the turning points of the curve $y = f(x)$ occur at $x = 0$ and $x = 2$. <br><br>(b)(ii) Given that the equation $f(x) = 0$ has three distinct real roots, find the range of possible values of $q$, fully justifying your answer.",
+    "steps": [
+        "For part (a), a cubic curve with a positive coefficient of $x^3$ and three distinct real roots starts in the bottom-left quadrant (as $x \\to -\\infty$, $y \\to -\\infty$) and goes to the top-right quadrant (as $x \\to \\infty$, $y \\to \\infty$). To cross the x-axis exactly three times, it must have two distinct turning points: a local maximum strictly above the x-axis and a local minimum strictly below the x-axis. <br><br>The sketch of the curve should look like this: <br><br><img src='images/Pure/004533_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "For part (b)(i), find the derivative $f'(x)$ of the function $f(x) = x^3 - 3x^2 + q$ and set it to zero to locate the x-coordinates of the turning points: <br>\\begin{aligned} f'(x) &= 3x^2 - 6x \\cr 3x(x - 2) &= 0 \\cr \\end{aligned} <br>This confirms turning points occur at $x = 0$ and $x = 2$.",
+        "For part (b)(ii), determine the y-coordinates of both turning points to apply our root conditions from the sketch. <br>1. The first turning point at $x = 0$ has coordinate $(0, q)$. Since the second derivative $f''(0) = -6 < 0$, this is a local maximum. <br>2. The second turning point at $x = 2$ has coordinate: <br>\\begin{aligned} f(2) &= (2)^3 - 3(2)^2 + q \\cr &= 8 - 12 + q \\cr &= q - 4 \\cr \\end{aligned} <br>Since $f''(2) = 6 > 0$, this is a local minimum.",
+        "To have three distinct real roots, the local maximum must lie above the x-axis and the local minimum must lie below the x-axis: <br>\\begin{aligned} q &> 0 \\cr q - 4 &< 0 \\cr \\end{aligned} <br>Solving these simultaneous inequalities yields the final range of possible values for $q$: <br>\\begin{aligned} 0 < q < 4 \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$-4 < q < 0$$",
+            "feedback": "This is incorrect. This range is the solution for a negative cubic curve, or arises if you confused the maximum and minimum coordinates."
+        },
+        {
+            "ans": "$$q < 4$$",
+            "feedback": "This is incorrect. This represents only one boundary condition (local minimum below the x-axis). You have forgotten to apply the other boundary condition (local maximum above the x-axis, $q > 0$)."
+        },
+        {
+            "ans": "$$0 < q < 12$$",
+            "feedback": "This is incorrect. This error occurs if you made an arithmetic slip when evaluating $f(2)$, such as incorrectly evaluating $3(2)^2 = 6$ or failing to subtract the linear components properly."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Numerical Verifications",
+        "content": "For numerical cubics, you can easily test values within your range to verify your solution. For example, if $q = 2$ (which lies in $0 < q < 4$), $f(0) = 2 > 0$ and $f(2) = -2 < 0$. Since the maximum is positive and the minimum is negative, a three-root curve is guaranteed."
+    }
+},
+{
+    "id": "004534",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Turning Points",
+    "subtopic": [
+        "Stationary Points",
+        "Cubic Curve Analysis"
+    ],
+    "img": false,
+    "question": "The cubic function $f(x)$ is defined by: <br>$$f(x) = x^3 - 12x + q$$ <br>where $q$ is a constant. <br><br>(a) Sketch any cubic function that has three distinct real roots and a positive coefficient of $x^3$. <br><br>(b)(i) Find the coordinates of the turning points of the curve $y = f(x)$ in terms of $q$, determining their nature. <br><br>(b)(ii) Given that the equation $f(x) = 0$ has three distinct real roots, find the range of possible values of $q$, fully justifying your answer.",
+    "steps": [
+        "For part (a), a cubic curve with a positive coefficient of $x^3$ and three distinct real roots starts in the bottom-left quadrant (as $x \\to -\\infty$, $y \\to -\\infty$) and goes to the top-right quadrant (as $x \\to \\infty$, $y \\to \\infty$). To cross the x-axis exactly three times, it must have two distinct turning points: a local maximum strictly above the x-axis and a local minimum strictly below the x-axis. <br><br>The sketch of the curve should look like this: <br><br><img src='images/Pure/004534_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "For part (b)(i), find the derivative $f'(x)$ of the function $f(x) = x^3 - 12x + q$ and set it to zero to locate the x-coordinates of the turning points: <br>\\begin{aligned} f'(x) &= 3x^2 - 12 \\cr 3(x^2 - 4) &= 0 \\cr \\end{aligned} <br>This gives turning points at $x = -2$ and $x = 2$.",
+        "Determine the y-coordinates and the nature of the turning points: <br>1. At $x = -2$: <br>\\begin{aligned} f(-2) &= (-2)^3 - 12(-2) + q \\cr &= -8 + 24 + q = q + 16 \\cr \\end{aligned} <br>Since the second derivative $f''(-2) = 6(-2) = -12 < 0$, this is a local maximum at $(-2, q + 16)$. <br>2. At $x = 2$: <br>\\begin{aligned} f(2) &= (2)^3 - 12(2) + q \\cr &= 8 - 24 + q = q - 16 \\cr \\end{aligned} <br>Since the second derivative $f''(2) = 6(2) = 12 > 0$, this is a local minimum at $(2, q - 16)$.",
+        "For part (b)(ii), to have three distinct real roots, the local maximum must lie above the x-axis and the local minimum must lie below the x-axis: <br>\\begin{aligned} q + 16 &> 0 \\cr q - 16 &< 0 \\cr \\end{aligned} <br>Solving these simultaneous inequalities yields the final range of possible values for $q$: <br>\\begin{aligned} -16 < q < 16 \\cr \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$q < 16$$",
+            "feedback": "This is incorrect. This represents only one boundary condition (local minimum below the x-axis). You have forgotten to apply the other boundary condition (local maximum above the x-axis, $q > -16$)."
+        },
+        {
+            "ans": "$$-8 < q < 8$$",
+            "feedback": "This is incorrect. This error occurs from an arithmetic slip when evaluating $12(2) = 24$ or $2^3 = 8$, such as evaluating $f(2) = 2^3 - 12(2) + q = 8 - 16 + q = -8 + q < 0$."
+        },
+        {
+            "ans": "$$-32 < q < 32$$",
+            "feedback": "This is incorrect. This error arises from incorrectly multiplying the constant values by $2$ during the inequality setup."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Symmetric Ranges",
+        "content": "For cubic functions of the form $f(x) = x^3 - kx + q$, the turning points are symmetrically located around the y-axis at $x = \\pm\\sqrt{ \\dfrac{ k }{ 3 } }$. Because of this symmetry, the range of $q$ required to produce three distinct roots will always be symmetrical around zero (i.e., $-M < q < M$)."
+    }
+},
+{
+    "id": "004535",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Turning Points",
+    "subtopic": [
+        "Stationary Points",
+        "Cubic Curve Analysis"
+    ],
+    "img": false,
+    "question": "The cubic function $f(x)$ is defined by: <br>$$f(x) = x^3 - 3px + q$$ <br>where $p$ and $q$ are constants and $p > 0$. <br><br>(a) Sketch any cubic function that has three distinct real roots and a positive coefficient of $x^3$. <br><br>(b)(i) Find the coordinates of the turning points of the curve $y = f(x)$ in terms of $p$ and $q$, determining their nature. <br><br>(b)(ii) Given that the equation $f(x) = 0$ has three distinct real roots, find, in terms of $p$, the range of possible values of $q$, fully justifying your answer.",
+    "steps": [
+        "For part (a), a cubic curve with a positive coefficient of $x^3$ and three distinct real roots starts in the bottom-left quadrant (as $x \\to -\\infty$, $y \\to -\\infty$) and goes to the top-right quadrant (as $x \\to \\infty$, $y \\to \\infty$). To cross the x-axis exactly three times, it must have two distinct turning points: a local maximum strictly above the x-axis and a local minimum strictly below the x-axis. <br><br>The sketch of the curve should look like this: <br><br><img src='images/Pure/004535_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "For part (b)(i), find the derivative $f'(x)$ of the function $f(x) = x^3 - 3px + q$ and set it to zero to locate the x-coordinates of the turning points: <br>\\begin{aligned} f'(x) &= 3x^2 - 3p \\cr 3(x^2 - p) &= 0 \\cr \\end{aligned} <br>Since $p > 0$, we find stationary points at $x = -\\sqrt{ p }$ and $x = \\sqrt{ p }$.",
+        "Determine the y-coordinates and the nature of the turning points: <br>1. At $x = -\\sqrt{ p }$: <br>\\begin{aligned} f(-\\sqrt{ p }) &= (-\\sqrt{ p })^3 - 3p(-\\sqrt{ p }) + q \\cr &= -p\\sqrt{ p } + 3p\\sqrt{ p } + q = 2p\\sqrt{ p } + q \\cr \\end{aligned} <br>Since the second derivative $f''(-\\sqrt{ p }) = -6\\sqrt{ p } < 0$, this is a local maximum at $(-\\sqrt{ p }, 2p\\sqrt{ p } + q)$. <br>2. At $x = \\sqrt{ p }$: <br>\\begin{aligned} f(\\sqrt{ p }) &= (\\sqrt{ p })^3 - 3p(\\sqrt{ p }) + q \\cr &= p\\sqrt{ p } - 3p\\sqrt{ p } + q = -2p\\sqrt{ p } + q \\cr \\end{aligned} <br>Since the second derivative $f''(\\sqrt{ p }) = 6\\sqrt{ p } > 0$, this is a local minimum at $(\\sqrt{ p }, -2p\\sqrt{ p } + q)$.",
+        "For part (b)(ii), to have three distinct real roots, the local maximum must lie above the x-axis and the local minimum must lie below the x-axis: <br>\\begin{aligned} 2p\\sqrt{ p } + q &> 0 \\cr -2p\\sqrt{ p } + q &< 0 \\cr \\end{aligned} <br>Solving these simultaneous inequalities yields the final range of possible values for $q$: <br>\\begin{aligned} -2p\\sqrt{ p } < q < 2p\\sqrt{ p } \\cr \\end{aligned} <br>This can also be written in fractional exponent form as $-2p^{\\frac{ 3 }{ 2 }} < q < 2p^{\\frac{ 3 }{ 2 }}$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$-2p^{\\frac{ 3 }{ 2 }} < q < 0$$",
+            "feedback": "This is incorrect. This range represents only the local maximum boundary, setting the minimum bound arbitrarily to $0$ as if the turning point were on the y-axis."
+        },
+        {
+            "ans": "$$q < 2p\\sqrt{ p }$$",
+            "feedback": "This is incorrect. This represents only one boundary condition (local minimum below the x-axis). You have forgotten to apply the other boundary condition (local maximum above the x-axis, $q > -2p\\sqrt{ p }$)."
+        },
+        {
+            "ans": "$$-4p\\sqrt{ p } < q < 4p\\sqrt{ p }$$",
+            "feedback": "This is incorrect. This error occurs if you made an arithmetic slip when evaluating $f(-\\sqrt{ p })$, incorrectly combining the terms as $-p\\sqrt{ p } + 5p\\sqrt{ p } = 4p\\sqrt{ p }$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Fractional Exponent Notation",
+        "content": "Always be comfortable translating between radical form and index form. The term $p\\sqrt{ p }$ is algebraically equivalent to $p^1 \\times p^{\\frac{ 1 }{ 2 }} = p^{\\frac{ 3 }{ 2 }}$. Both forms are completely identical in examinations."
+    }
 }
 ];
