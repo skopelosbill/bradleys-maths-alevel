@@ -1525,5 +1525,197 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Contextual Model Boundaries",
         "content": "Always read the context of mathematical models carefully. While a mathematical model can extrapolate infinitely, biological and economic systems have real-world limitations (like changing metabolic kinetics or environmental bounds) that disrupt long-term exponential trends."
     }
+},
+{
+    "id": "004541",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Definite Integration",
+    "subtopic": [
+        "Binomial Series",
+        "Small Angle Approximations"
+    ],
+    "img": false,
+    "question": "The function $f(x)$ is defined by $f(x) = \\sqrt{ 9 - 18x^2 }$. <br><br><strong>(a)</strong> Show that the first two terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $3 - 3x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, using the small-angle approximation $\\cos(2x) \\approx 1 - 2x^2$, find an approximation for $\\int_{0}^{0.3} \\sqrt{ \\cos(2x) } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
+    "steps": [
+        "For part <strong>(a)</strong>, factor out the constant $9$ first to write the expression in the standard binomial form $(1 + u)^n$: <br>\\begin{aligned} \\sqrt{ 9 - 18x^2 } &= \\sqrt{ 9\\left( 1 - 2x^2 \\right) } \\cr &= 3\\left( 1 - 2x^2 \\right)^{\\frac{ 1 }{ 2 }} \\cr \\end{aligned}",
+        "Apply the general binomial expansion $(1 + u)^n = 1 + nu + \\dfrac{ n(n - 1 ) }{ 2! }u^2 + \\dots$ for $n = \\dfrac{ 1 }{ 2 }$ and $u = -2x^2$: <br>\\begin{aligned} 3\\left( 1 - 2x^2 \\right)^{\\frac{ 1 }{ 2 }} &\\approx 3\\left( 1 + \\left( \\dfrac{ 1 }{ 2 } \\right)\\left( -2x^2 \\right) \\right) \\cr &= 3\\left( 1 - x^2 \\right) \\cr &= 3 - 3x^2 \\cr \\end{aligned}",
+        "For part <strong>(b)</strong>, recall that the binomial expansion of $(1 + u)^n$ is valid if and only if $|u| < 1$. Substituting $u = -2x^2$ gives: <br>\\begin{aligned} |-2x^2| &< 1 \\cr 2x^2 &< 1 \\cr x^2 &< \\dfrac{ 1 }{ 2 } \\cr \\end{aligned} <br>Taking the square root yields the range of validity: <br>\\begin{aligned} |x| &< \\dfrac{ 1 }{ \\sqrt{ 2 } } \\cr \\end{aligned} <br>This can also be written in interval notation as $-\\dfrac{ 1 }{ \\sqrt{ 2 } } < x < \\dfrac{ 1 }{ \\sqrt{ 2 } }$ (or approximately $-0.707 < x < 0.707$).",
+        "For part <strong>(c)</strong>, use the small-angle approximation $\\cos(2x) \\approx 1 - 2x^2$ to substitute into our integral: <br>\\begin{aligned} \\sqrt{ \\cos(2x) } &\\approx \\sqrt{ 1 - 2x^2 } \\cr \\end{aligned} <br>Notice that from part (a), $f(x) = 3\\sqrt{ 1 - 2x^2 } \\approx 3 - 3x^2$, which means: <br>\\begin{aligned} \\sqrt{ 1 - 2x^2 } &\\approx 1 - x^2 \\cr \\end{aligned}",
+        "Substitute this expansion into the definite integral: <br>\\begin{aligned} \\int_{0}^{0.3} \\sqrt{ \\cos(2x) } \\, \\mathrm{d}x &\\approx \\int_{0}^{0.3} \\left( 1 - x^2 \\right) \\, \\mathrm{d}x \\cr &= \\left[ x - \\dfrac{ x^3 }{ 3 } \\right]_{0}^{0.3} \\cr &= \\left( 0.3 - \\dfrac{ (0.3)^3 }{ 3 } \\right) - (0) \\cr &= 0.3 - 0.009 = 0.29100 \\cr \\end{aligned} <br>Since the upper limit of integration $x = 0.3$ is well within the range of validity $|x| < 0.707$ and $2x = 0.6$ is small enough for the small-angle approximation to remain highly accurate, this is a fully justified approximation."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$0.30000$$",
+            "feedback": "This is incorrect. This error occurs if you integrated your binomial expansion incorrectly by evaluating only the leading linear term $x$ at the upper limit (completely forgetting to integrate or subtract the quadratic component $-x^2$)."
+        },
+        {
+            "ans": "$$0.27300$$",
+            "feedback": "This is incorrect. This represents a minor decimal subtraction error, arising from miscalculating the difference $0.3 - 0.009$ as $0.273$ instead of $0.291$."
+        },
+        {
+            "ans": "$$0.28200$$",
+            "feedback": "This is incorrect. This error occurs if you integrated the quadratic term $-x^2$ incorrectly, such as forgetting to divide by the new power of $3$ (leading to $x - x^3$), which yields $0.3 - 0.027 = 0.273$ plus rounding variances."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Bridging Algebra and Calculus",
+        "content": "This is a classic 'bridging' question. When asked to approximate an integral of a complex function, always look to use your binomial expansion. This transforms a non-integrable root function into a simple polynomial that can be integrated using basic term-by-term calculus."
+    }
+},
+{
+    "id": "004542",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Definite Integration",
+    "subtopic": [
+        "Binomial Series",
+        "Small Angle Approximations"
+    ],
+    "img": false,
+    "question": "The function $f(x)$ is defined by $f(x) = \\sqrt{ 16 - 8x^2 }$. <br><br><strong>(a)</strong> Show that the first two terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $4 - x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, using the small-angle approximation $\\cos x \\approx 1 - \\dfrac{ x^2 }{ 2 }$, find an approximation for $\\int_{0}^{0.5} \\sqrt{ \\cos x } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
+    "steps": [
+        "For part <strong>(a)</strong>, factor out the constant $16$ first to write the expression in the standard binomial form $(1 + u)^n$: <br>\\begin{aligned} \\sqrt{ 16 - 8x^2 } &= \\sqrt{ 16\\left( 1 - \\dfrac{ x^2 }{ 2 } \\right) } \\cr &= 4\\left( 1 - \\dfrac{ x^2 }{ 2 } \\right)^{\\frac{ 1 }{ 2 }} \\cr \\end{aligned}",
+        "Apply the general binomial expansion $(1 + u)^n = 1 + nu + \\dfrac{ n(n - 1 ) }{ 2! }u^2 + \\dots$ for $n = \\dfrac{ 1 }{ 2 }$ and $u = -\\dfrac{ x^2 }{ 2 }$: <br>\\begin{aligned} 4\\left( 1 - \\dfrac{ x^2 }{ 2 } \\right)^{\\frac{ 1 }{ 2 }} &\\approx 4\\left( 1 + \\left( \\dfrac{ 1 }{ 2 } \\right)\\left( -\\dfrac{ x^2 }{ 2 } \\right) \\right) \\cr &= 4\\left( 1 - \\dfrac{ x^2 }{ 4 } \\right) \\cr &= 4 - x^2 \\cr \\end{aligned}",
+        "For part <strong>(b)</strong>, recall that the binomial expansion of $(1 + u)^n$ is valid if and only if $|u| < 1$. Substituting $u = -\\dfrac{ x^2 }{ 2 }$ gives: <br>\\begin{aligned} \\left| -\\dfrac{ x^2 }{ 2 } \\right| &< 1 \\cr \\dfrac{ x^2 }{ 2 } &< 1 \\cr x^2 &< 2 \\cr \\end{aligned} <br>Taking the square root yields the range of validity: <br>\\begin{aligned} |x| &< \\sqrt{ 2 } \\cr \\end{aligned} <br>This can also be written in interval notation as $-\\sqrt{ 2 } < x < \\sqrt{ 2 }$ (or approximately $-1.414 < x < 1.414$).",
+        "For part <strong>(c)</strong>, use the small-angle approximation $\\cos x \\approx 1 - \\dfrac{ x^2 }{ 2 }$ to substitute into our integral: <br>\\begin{aligned} \\sqrt{ \\cos x } &\\approx \\sqrt{ 1 - \\dfrac{ x^2 }{ 2 } } \\cr \\end{aligned} <br>Notice that from part (a), $f(x) = 4\\sqrt{ 1 - \\dfrac{ x^2 }{ 2 } } \\approx 4 - x^2$, which means: <br>\\begin{aligned} \\sqrt{ 1 - \\dfrac{ x^2 }{ 2 } } &\\approx 1 - \\dfrac{ x^2 }{ 4 } \\cr \\end{aligned}",
+        "Substitute this expansion into the definite integral: <br>\\begin{aligned} \\int_{0}^{0.5} \\sqrt{ \\cos x } \\, \\mathrm{d}x &\\approx \\int_{0}^{0.5} \\left( 1 - \\dfrac{ x^2 }{ 4 } \\right) \\, \\mathrm{d}x \\cr &= \\left[ x - \\dfrac{ x^3 }{ 12 } \\right]_{0}^{0.5} \\cr &= \\left( 0.5 - \\dfrac{ (0.5)^3 }{ 12 } \\right) - (0) \\cr &= 0.5 - \\dfrac{ 0.125 }{ 12 } \\approx 0.48958 \\cr \\end{aligned} <br>Since the upper limit of integration $x = 0.5$ is well within the range of validity $|x| < 1.414$ and is small enough for the small-angle approximation to remain highly accurate, this is a fully justified approximation."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$0.50000$$",
+            "feedback": "This is incorrect. This error occurs if you integrated your binomial expansion incorrectly by evaluating only the leading linear term $x$ at the upper limit (completely forgetting to integrate or subtract the quadratic component $-\\dfrac{ x^2 }{ 4 }$)."
+        },
+        {
+            "ans": "$$0.45833$$",
+            "feedback": "This is incorrect. This error arises if you integrated the quadratic term $-\\dfrac{ x^2 }{ 4 }$ incorrectly as $-\\dfrac{ x^3 }{ 3 }$, completely losing the factor of $4$ in the denominator during integration."
+        },
+        {
+            "ans": "$$0.49479$$",
+            "feedback": "This is incorrect. This occurs if you integrated the term $-\\dfrac{ x^2 }{ 4 }$ as $-\\dfrac{ x^3 }{ 24 }$ instead of $-\\dfrac{ x^3 }{ 12 }$, multiplying the denominator incorrectly by $2$ instead of $3$ during power integration."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Validity Range Checks",
+        "content": "Always state and double-check your range of validity. If your upper limit of integration (like $x = 0.5$) lay outside your range of validity, your binomial expansion would diverge, rendering the resulting definite integral approximation completely mathematically invalid."
+    }
+},
+{
+    "id": "004543",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Definite Integration",
+    "subtopic": [
+        "Binomial Series"
+    ],
+    "img": false,
+    "question": "The function $f(x)$ is defined by $f(x) = \\dfrac{ 1 }{ \\sqrt{ 1 - 4x^2 } }$. <br><br><strong>(a)</strong> Show that the first two terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $1 + 2x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, find an approximation for $\\int_{0}^{0.3} \\dfrac{ 1 }{ \\sqrt{ 1 - 4x^2 } } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
+    "steps": [
+        "For part <strong>(a)</strong>, rewrite the expression in index form as $(1 + u)^n$: <br>\\begin{aligned} \\dfrac{ 1 }{ \\sqrt{ 1 - 4x^2 } } &= \\left( 1 - 4x^2 \\right)^{-\\frac{ 1 }{ 2 }} \\cr \\end{aligned}",
+        "Apply the general binomial expansion $(1 + u)^n = 1 + nu + \\dfrac{ n(n - 1 ) }{ 2! }u^2 + \\dots$ for $n = -\\dfrac{ 1 }{ 2 }$ and $u = -4x^2$: <br>\\begin{aligned} \\left( 1 - 4x^2 \\right)^{-\\frac{ 1 }{ 2 }} &\\approx 1 + \\left( -\\dfrac{ 1 }{ 2 } \\right)\\left( -4x^2 \\right) \\cr &= 1 + 2x^2 \\cr \\end{aligned}",
+        "For part <strong>(b)</strong>, recall that the binomial expansion of $(1 + u)^n$ is valid if and only if $|u| < 1$. Substituting $u = -4x^2$ gives: <br>\\begin{aligned} |-4x^2| &< 1 \\cr 4x^2 &< 1 \\cr x^2 &< \\dfrac{ 1 }{ 4 } \\cr \\end{aligned} <br>Taking the square root yields the range of validity: <br>\\begin{aligned} |x| &< \\dfrac{ 1 }{ 2 } \\cr \\end{aligned} <br>This can also be written in interval notation as $-\\dfrac{ 1 }{ 2 } < x < \\dfrac{ 1 }{ 2 }$ (or $-0.5 < x < 0.5$).",
+        "For part <strong>(c)</strong>, substitute our binomial expansion into the definite integral: <br>\\begin{aligned} \\int_{0}^{0.3} \\dfrac{ 1 }{ \\sqrt{ 1 - 4x^2 } } \\, \\mathrm{d}x &\\approx \\int_{0}^{0.3} \\left( 1 + 2x^2 \\right) \\, \\mathrm{d}x \\cr \\end{aligned}",
+        "Integrate the polynomial term-by-term and evaluate: <br>\\begin{aligned} \\int_{0}^{0.3} \\left( 1 + 2x^2 \\right) \\, \\mathrm{d}x &= \\left[ x + \\dfrac{ 2x^3 }{ 3 } \\right]_{0}^{0.3} \\cr &= \\left( 0.3 + \\dfrac{ 2(0.3)^3 }{ 3 } \\right) - (0) \\cr &= 0.3 + \\dfrac{ 2(0.027) }{ 3 } \\cr &= 0.3 + 0.018 = 0.31800 \\cr \\end{aligned} <br>Since the upper limit of integration $x = 0.3$ is well within our range of validity $|x| < 0.5$, truncating the binomial expansion after the quadratic term provides a highly justified, accurate approximation."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$0.30000$$",
+            "feedback": "This is incorrect. This error occurs if you integrated your binomial expansion incorrectly by evaluating only the leading linear term $x$ at the upper limit (completely forgetting to integrate or add the quadratic component $+2x^2$)."
+        },
+        {
+            "ans": "$$0.33600$$",
+            "feedback": "This is incorrect. This error arises if you integrated the term $+2x^2$ incorrectly as $+2x^3$, completely forgetting to divide by the new power of $3$ during integration, yielding $0.3 + 2(0.027) = 0.354$ plus decimal discrepancies."
+        },
+        {
+            "ans": "$$0.30900$$",
+            "feedback": "This is incorrect. This occurs if you integrated $+2x^2$ as $+\\dfrac{ x^3 }{ 3 }$, accidentally losing the factor of $2$ in the numerator."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Negative Rational Powers",
+        "content": "Pay extreme attention to signs when expanding terms with negative rational powers. A negative multiplier $n = -\\dfrac{ 1 }{ 2 }$ combined with a negative variable $u = -4x^2$ must yield a positive quadratic term: $1 + 2x^2$. A single sign error here will corrupt your entire integration."
+    }
+},
+{
+    "id": "004544",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Definite Integration",
+    "subtopic": [
+        "Binomial Series"
+    ],
+    "img": false,
+    "question": "The function $f(x)$ is defined by $f(x) = \\sqrt{ 1 - 3x }$. <br><br><strong>(a)</strong> Show that the first three terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $1 - \\dfrac{ 3 }{ 2 }x - \\dfrac{ 9 }{ 8 }x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, find an approximation for $\\int_{0}^{0.1} \\sqrt{ 1 - 3x } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
+    "steps": [
+        "For part <strong>(a)</strong>, write the expression in index form: <br>\\begin{aligned} \\sqrt{ 1 - 3x } &= \\left( 1 - 3x \\right)^{\\frac{ 1 }{ 2 }} \\cr \\end{aligned}",
+        "Apply the general binomial expansion $(1 + u)^n = 1 + nu + \\dfrac{ n(n - 1 ) }{ 2! }u^2 + \\dots$ for $n = \\dfrac{ 1 }{ 2 }$ and $u = -3x$: <br>\\begin{aligned} \\left( 1 - 3x \\right)^{\\frac{ 1 }{ 2 }} &\\approx 1 + \\left( \\dfrac{ 1 }{ 2 } \\right)\\left( -3x \\right) + \\dfrac{ \\left( \\frac{ 1 }{ 2 } \\right)\\left( -\\frac{ 1 }{ 2 } \\right) }{ 2 }\\left( -3x \\right)^2 \\cr &= 1 - \\dfrac{ 3 }{ 2 }x + \\left( -\\dfrac{ 1 }{ 8 } \\right)\\left( 9x^2 \\right) \\cr &= 1 - \\dfrac{ 3 }{ 2 }x - \\dfrac{ 9 }{ 8 }x^2 \\cr \\end{aligned}",
+        "For part <strong>(b)</strong>, recall that the binomial expansion of $(1 + u)^n$ is valid if and only if $|u| < 1$. Substituting $u = -3x$ gives: <br>\\begin{aligned} |-3x| &< 1 \\cr 3x &< 1 \\cr \\end{aligned} <br>This yields the range of validity: <br>\\begin{aligned} |x| &< \\dfrac{ 1 }{ 3 } \\cr \\end{aligned} <br>This can also be written in interval notation as $-\\dfrac{ 1 }{ 3 } < x < \\dfrac{ 1 }{ 3 }$ (or $-0.333 < x < 0.333$).",
+        "For part <strong>(c)</strong>, substitute our binomial expansion into the definite integral: <br>\\begin{aligned} \\int_{0}^{0.1} \\sqrt{ 1 - 3x } \\, \\mathrm{d}x &\\approx \\int_{0}^{0.1} \\left( 1 - \\dfrac{ 3 }{ 2 }x - \\dfrac{ 9 }{ 8 }x^2 \\right) \\, \\mathrm{d}x \\cr \\end{aligned}",
+        "Integrate the polynomial term-by-term and evaluate: <br>\\begin{aligned} \\int_{0}^{0.1} \\left( 1 - \\dfrac{ 3 }{ 2 }x - \\dfrac{ 9 }{ 8 }x^2 \\right) \\, \\mathrm{d}x &= \\left[ x - \\dfrac{ 3 }{ 4 }x^2 - \\dfrac{ 3 }{ 8 }x^3 \\right]_{0}^{0.1} \\cr &= \\left( 0.1 - \\dfrac{ 3 }{ 4 }(0.1)^2 - \\dfrac{ 3 }{ 8 }(0.1)^3 \\right) - (0) \\cr &= 0.1 - \\dfrac{ 3 }{ 4 }(0.01) - \\dfrac{ 3 }{ 8 }(0.001) \\cr &= 0.1 - 0.0075 - 0.000375 \\cr &= 0.092125 \\approx 0.09213 \\cr \\end{aligned} <br>Since the upper limit of integration $x = 0.1$ is well within our range of validity $|x| < 0.333$, truncating the binomial expansion after the quadratic term provides a highly justified, accurate approximation."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$0.10000$$",
+            "feedback": "This is incorrect. This error occurs if you evaluated only the first integrated term $x$ at the upper limit of $0.1$ and completely neglected the negative quadratic and cubic integration terms."
+        },
+        {
+            "ans": "$$0.09250$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to integrate the third term $-\\dfrac{ 9 }{ 8 }x^2$, evaluating only the first two terms as $x - \\dfrac{ 3 }{ 4 }x^2 = 0.1 - 0.0075 = 0.09250$."
+        },
+        {
+            "ans": "$$0.08838$$",
+            "feedback": "This is incorrect. This error arises from a sign error, integrating the second and third terms with positive signs instead of negative signs, or making a subtraction slip during the decimal arithmetic."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Coefficient Tracking",
+        "content": "When evaluating your definite integral, write down your decimals clearly. For example, $(0.1)^2 = 0.01$ and $(0.1)^3 = 0.001$. A simple decimal place slip when subtracting $0.0075$ and $0.000375$ will easily corrupt your fifth decimal place."
+    }
+},
+{
+    "id": "004545",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Definite Integration",
+    "subtopic": [
+        "Binomial Series"
+    ],
+    "img": false,
+    "question": "The function $f(x)$ is defined by $f(x) = \\dfrac{ 1 }{ 1 + 2x }$. <br><br><strong>(a)</strong> Show that the first three terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $1 - 2x + 4x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, find an approximation for $\\int_{0}^{0.25} \\dfrac{ 1 }{ 1 + 2x } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
+    "steps": [
+        "For part <strong>(a)</strong>, write the expression in index form: <br>\\begin{aligned} \\dfrac{ 1 }{ 1 + 2x } &= \\left( 1 + 2x \\right)^{-1} \\cr \\end{aligned}",
+        "Apply the general binomial expansion $(1 + u)^n = 1 + nu + \\dfrac{ n(n - 1 ) }{ 2! }u^2 + \\dots$ for $n = -1$ and $u = 2x$: <br>\\begin{aligned} \\left( 1 + 2x \\right)^{-1} &\\approx 1 + (-1)(2x) + \\dfrac{ (-1)(-2) }{ 2 }\\left( 2x \\right)^2 \\cr &= 1 - 2x + (1)\\left( 4x^2 \\right) \\cr &= 1 - 2x + 4x^2 \\cr \\end{aligned}",
+        "For part <strong>(b)</strong>, recall that the binomial expansion of $(1 + u)^n$ is valid if and only if $|u| < 1$. Substituting $u = 2x$ gives: <br>\\begin{aligned} |2x| &< 1 \\cr \\end{aligned} <br>This yields the range of validity: <br>\\begin{aligned} |x| &< \\dfrac{ 1 }{ 2 } \\cr \\end{aligned} <br>This can also be written in interval notation as $-\\dfrac{ 1 }{ 2 } < x < \\dfrac{ 1 }{ 2 }$ (or $-0.5 < x < 0.5$).",
+        "For part <strong>(c)</strong>, substitute our binomial expansion into the definite integral: <br>\\begin{aligned} \\int_{0}^{0.25} \\dfrac{ 1 }{ 1 + 2x } \\, \\mathrm{d}x &\\approx \\int_{0}^{0.25} \\left( 1 - 2x + 4x^2 \\right) \\, \\mathrm{d}x \\cr \\end{aligned}",
+        "Integrate the polynomial term-by-term and evaluate: <br>\\begin{aligned} \\int_{0}^{0.25} \\left( 1 - 2x + 4x^2 \\right) \\, \\mathrm{d}x &= \\left[ x - x^2 + \\dfrac{ 4x^3 }{ 3 } \\right]_{0}^{0.25} \\cr &= \\left( 0.25 - (0.25)^2 + \\dfrac{ 4(0.25)^3 }{ 3 } \\right) - (0) \\cr &= 0.25 - 0.0625 + \\dfrac{ 4(0.015625) }{ 3 } \\cr &= 0.1875 + \\dfrac{ 0.0625 }{ 3 } \\cr &\\approx 0.1875 + 0.020833 \\approx 0.20833 \\cr \\end{aligned} <br>Since the upper limit of integration $x = 0.25$ is well within our range of validity $|x| < 0.5$, truncating the binomial expansion after the quadratic term provides a highly justified, accurate approximation (the exact integral evaluates to $\\dfrac{ 1 }{ 2 }\\ln(1.5) \\approx 0.20273$)."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$0.25000$$",
+            "feedback": "This is incorrect. This error occurs if you evaluated only the leading linear term $x$ at the upper limit of $0.25$, neglecting the quadratic and cubic integration components."
+        },
+        {
+            "ans": "$$0.18750$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to integrate the third term $+4x^2$, evaluating only the first two terms as $x - x^2 = 0.25 - 0.0625 = 0.18750$."
+        },
+        {
+            "ans": "$$0.22917$$",
+            "feedback": "This is incorrect. This error arises from a sign error during the expansion or integration step, such as integrating $(1 - 2x + 4x^2)$ with a positive sign on the $2x$ term."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Base Expansion Verification",
+        "content": "For simple rational functions of the form $\\dfrac{ 1 }{ 1 + kx }$, the binomial expansion is equivalent to the sum of a geometric series with common ratio $-kx$. The expansion is strictly $1 - kx + k^2x^2 - k^3x^3 + \\dots$, which allows you to instantly write down and verify your series terms."
+    }
 }
 ];
