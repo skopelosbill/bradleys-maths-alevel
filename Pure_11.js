@@ -1717,5 +1717,194 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Base Expansion Verification",
         "content": "For simple rational functions of the form $\\dfrac{ 1 }{ 1 + kx }$, the binomial expansion is equivalent to the sum of a geometric series with common ratio $-kx$. The expansion is strictly $1 - kx + k^2x^2 - k^3x^3 + \\dots$, which allows you to instantly write down and verify your series terms."
     }
+},
+{
+    "id": "004546",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Completing the Square",
+        "Discriminant"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Express $3x^2 - 24x + 53$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are constants to be found.<br><br><strong>(ii)</strong> Use your result from part (i) to show that the equation $3x^2 - 24x + 53 = 0$ has no real roots.<br><br><strong>(iii)</strong> Given instead that the equation $3x^2 - 24x + k = 0$ has repeated roots, find the value of the constant $k$.",
+    "steps": [
+        "To complete the square for $3x^2 - 24x + 53$, we first factor out the coefficient of $x^2$ from the $x$ terms:<br><br>\\begin{aligned} 3x^2 - 24x + 53 & = 3(x^2 - 8x) + 53 \\end{aligned}<br><br>Next, we complete the square inside the bracket by halving the coefficient of $x$ (which is $-8$), squaring it, and subtracting it:<br><br>\\begin{aligned} 3(x^2 - 8x) + 53 & = 3\\left[ (x - 4)^2 - 4^2 \\right] + 53 \\cr & = 3\\left[ (x - 4)^2 - 16 \\right] + 53 \\cr & = 3(x - 4)^2 - 48 + 53 \\cr & = 3(x - 4)^2 + 5 \\end{aligned}<br><br>Thus, $a = 3$, $b = -4$, and $c = 5$.",
+        "To show that the equation $3x^2 - 24x + 53 = 0$ has no real roots, we set our completed square form from part (i) to $0$:<br><br>\\begin{aligned} 3(x - 4)^2 + 5 & = 0 \\cr 3(x - 4)^2 & = -5 \\cr (x - 4)^2 & = -\\dfrac{ 5 }{ 3 } \\end{aligned}<br><br>Since the square of any real number must be non-negative (i.e., $(x - 4)^2 \\ge 0$ for all real $x$), it can never equal the negative value $-\\dfrac{ 5 }{ 3 }$. Therefore, the equation has no real roots.",
+        "For the quadratic equation $3x^2 - 24x + k = 0$ to have repeated roots, its discriminant must be exactly equal to zero.<br><br>Comparing $3x^2 - 24x + k = 0$ to the standard form $Ax^2 + Bx + C = 0$, we have $A = 3$, $B = -24$, and $C = k$.<br><br>The discriminant $\\Delta$ is:<br><br>\\begin{aligned} \\Delta & = B^2 - 4AC \\cr & = (-24)^2 - 4(3)(k) \\cr & = 576 - 12k \\end{aligned}<br><br>Setting this discriminant to zero:<br><br>\\begin{aligned} 576 - 12k & = 0 \\cr 12k & = 576 \\cr k & = 48 \\end{aligned}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$k = -48$$",
+            "feedback": "This error arises from a sign slip when rearranging $576 - 12k = 0$, leading to $-12k = 576$, which incorrectly yields a negative value for $k$."
+        },
+        {
+            "ans": "$$k = 12$$",
+            "feedback": "This error occurs if you make a major transposition slip during rearrangement, such as simplifying the discriminant equation to $24 - 12k = 0$ instead of using $(-24)^2 = 576$."
+        },
+        {
+            "ans": "$$k = 192$$",
+            "feedback": "This error occurs if you omit the factor of $4$ in the discriminant formula, using $\\Delta = B^2 - AC = 0$, which leads to $576 - 3k = 0$ and $k = 192$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Complete Factorization First",
+        "content": "When completing the square for quadratic expressions with a leading coefficient other than $1$, such as $3x^2 - 24x + 53$, always factor out the leading coefficient $3$ from the variable terms first. A very common student slip is to forget to multiply the subtracted term inside the brackets by this leading factor (e.g., subtracting $16$ instead of $3 \\times 16 = 48$). This is a major source of dropped marks in exams."
+    }
+},
+{
+    "id": "004547",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Completing the Square",
+        "Discriminant",
+        "Maximum/Minimum Points"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Express $17 + 8x - 2x^2$ in the form $p - q(x + r)^2$, where $p$, $q$, and $r$ are constants to be found.<br><br><strong>(ii)</strong> State the coordinates of the maximum point of the curve $y = 17 + 8x - 2x^2$ and explain why the equation $17 + 8x - 2x^2 = 30$ has no real solutions.<br><br><strong>(iii)</strong> Given that the equation $c + 8x - 2x^2 = 0$ has two distinct real roots, find the range of possible values for the constant $c$.",
+    "steps": [
+        "To complete the square for $17 + 8x - 2x^2$, we first rearrange the terms in descending powers of $x$ and factor out $-2$ from the $x$ terms:<br><br>\\begin{aligned} -2x^2 + 8x + 17 & = -2(x^2 - 4x) + 17 \\end{aligned}<br><br>Now, we complete the square for the expression inside the bracket by halving the coefficient of $x$ (which is $-4$), squaring it, and subtracting it:<br><br>\\begin{aligned} -2(x^2 - 4x) + 17 & = -2\\left[ (x - 2)^2 - 2^2 \\right] + 17 \\cr & = -2\\left[ (x - 2)^2 - 4 \\right] + 17 \\cr & = -2(x - 2)^2 + 8 + 17 \\cr & = 25 - 2(x - 2)^2 \\end{aligned}<br><br>Thus, $p = 25$, $q = 2$, and $r = -2$.",
+        "For the curve $y = 25 - 2(x - 2)^2$, since the term $-2(x - 2)^2 \\le 0$ for all real $x$, the maximum possible value of $y$ is $25$, which occurs when $(x - 2)^2 = 0 \\implies x = 2$.<br><br>Therefore, the coordinates of the maximum point are $(2, 25)$.<br><br>To explain why $17 + 8x - 2x^2 = 30$ has no real solutions, we set our completed square form to $30$:<br><br>\\begin{aligned} 25 - 2(x - 2)^2 & = 30 \\cr -2(x - 2)^2 & = 5 \\cr (x - 2)^2 & = -2.5 \\end{aligned}<br><br>Since the square of any real number must be non-negative (i.e., $(x - 2)^2 \\ge 0$), it cannot equal the negative value $-2.5$. Thus, there are no real solutions.",
+        "To find the range of $c$ for which $-2x^2 + 8x + c = 0$ has two distinct real roots, we look at its discriminant $\\Delta$.<br><br>Here, $A = -2$, $B = 8$, and $C = c$. The discriminant is:<br><br>\\begin{aligned} \\Delta & = B^2 - 4AC \\cr & = 8^2 - 4(-2)(c) \\cr & = 64 + 8c \\end{aligned}<br><br>For two distinct real roots, we require $\\Delta > 0$:<br><br>\\begin{aligned} 64 + 8c & > 0 \\cr 8c & > -64 \\cr c & > -8 \\end{aligned}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$c < -8$$",
+            "feedback": "This error occurs if you incorrectly flip the inequality sign when dividing by the positive number $8$ in the final step of rearranging $8c > -64$."
+        },
+        {
+            "ans": "$$c > -2$$",
+            "feedback": "This mistake comes from a calculation slip in the discriminant where the multiplication of $4AC$ is computed as $4(-2)c = -8c$ and the subtraction from $B^2$ is forgotten, leading to $64 - 32c > 0 \\implies c > -2$."
+        },
+        {
+            "ans": "$$c < 8$$",
+            "feedback": "This error occurs if you make a sign error inside the discriminant itself, calculating $\\Delta = 64 - 8c > 0$, which leads to $c < 8$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Max Point of Negative Quadratics",
+        "content": "For a negative quadratic $p - q(x + r)^2$, the maximum value is always $p$ because the term $-q(x + r)^2$ is always less than or equal to zero for all real $x$. Remembering this simple relationship saves valuable time compared to expanding the quadratic and using calculus to find stationary points!"
+    }
+},
+{
+    "id": "004548",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Completing the Square",
+        "Discriminant",
+        "Tangents"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Express $2x^2 - 5x + 6$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are constants to be found.<br><br><strong>(ii)</strong> Hence, find the minimum distance from the curve $y = 2x^2 - 5x + 6$ to the $x$-axis.<br><br><strong>(iii)</strong> The line $y = mx - 2$ is a tangent to the curve $y = 2x^2 - 5x + 6$. Find the possible values of the constant $m$.",
+    "steps": [
+        "To complete the square for $2x^2 - 5x + 6$, we first factor out the coefficient $2$ from the $x$ terms:<br><br>\\begin{aligned} 2x^2 - 5x + 6 & = 2\\left( x^2 - \\dfrac{ 5 }{ 2 }x \\right) + 6 \\end{aligned}$<br><br>Next, we complete the square inside the bracket by halving $-\\dfrac{ 5 }{ 2 }$ to get $-\\dfrac{ 5 }{ 4 }$, squaring it, and subtracting it:<br><br>\\begin{aligned} 2\\left( x^2 - \\dfrac{ 5 }{ 2 }x \\right) + 6 & = 2\\left[ \\left( x - \\dfrac{ 5 }{ 4 } \\right)^2 - \\left( \\dfrac{ 5 }{ 4 } \\right)^2 \\right] + 6 \\cr & = 2\\left[ \\left( x - \\dfrac{ 5 }{ 4 } \\right)^2 - \\dfrac{ 25 }{ 16 } \\right] + 6 \\cr & = 2\\left( x - \\dfrac{ 5 }{ 4 } \\right)^2 - \\dfrac{ 25 }{ 8 } + 6 \\cr & = 2\\left( x - \\dfrac{ 5 }{ 4 } \\right)^2 + \\dfrac{ 23 }{ 8 } \\end{aligned}$<br><br>Thus, $a = 2$, $b = -\\dfrac{ 5 }{ 4 }$, and $c = \\dfrac{ 23 }{ 8 }$.",
+        "The minimum point on the curve $y = 2\\left( x - \\dfrac{ 5 }{ 4 } \\right)^2 + \\dfrac{ 23 }{ 8 }$ occurs where the squared term is zero, which is at $x = \\dfrac{ 5 }{ 4 }$. At this point, the $y$-value is $\\dfrac{ 23 }{ 8 }$.<br><br>Since the minimum $y$-coordinate of the curve is positive, the minimum distance from the curve to the $x$-axis is simply this minimum vertical height:<br><br>\\begin{aligned} \\text{Minimum distance} & = \\dfrac{ 23 }{ 8 } \\end{aligned}$",
+        "To find when the line $y = mx - 2$ is tangent to the curve $y = 2x^2 - 5x + 6$, we set their equations equal to find their intersection points:<br><br>\\begin{aligned} 2x^2 - 5x + 6 & = mx - 2 \\cr 2x^2 - (5 + m)x + 8 & = 0 \\end{aligned}$<br><br>For the line to be a tangent, this combined quadratic equation must have exactly one real solution, meaning its discriminant $\\Delta$ must equal zero.<br><br>Here, $A = 2$, $B = -(5 + m)$, and $C = 8$. The discriminant is:<br><br>\\begin{aligned} \\Delta & = B^2 - 4AC \\cr & = [-(5 + m)]^2 - 4(2)(8) \\cr & = (5 + m)^2 - 64 \\end{aligned}$<br><br>Setting the discriminant to zero:<br><br>\\begin{aligned} (5 + m)^2 - 64 & = 0 \\cr (5 + m)^2 & = 64 \\cr 5 + m & = \\pm 8 \\end{aligned}$<br><br>This gives two possibilities:<br><br>\\begin{aligned} 5 + m = 8 & \\implies m = 3 \\cr 5 + m = -8 & \\implies m = -13 \\end{aligned}$<br><br>Thus, the possible values of $m$ are $m = 3$ or $m = -13$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$m = 3 \\text{ or } m = -3$$",
+            "feedback": "This error typically occurs if you expand $(5+m)^2$ incorrectly, forgetting the linear middle term $10m$, which leads to $m^2 + 25 - 64 = 0$ and yields $\\pm \\sqrt{ 39 }$, or if you confuse the quadratic constant with another term."
+        },
+        {
+            "ans": "$$m = 13 \\text{ or } m = -3$$",
+            "feedback": "This results from a sign slip after correctly getting $5 + m = \\pm 8$, but incorrectly rearranging it to $m = -5 \\pm 8$, giving the opposite signs."
+        },
+        {
+            "ans": "$$m = -3 \\text{ or } m = -13$$",
+            "feedback": "This is a sign transposition mistake where the positive branch $5 + m = 8$ is incorrectly rearranged to $m = -3$ instead of $m = 3$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Tangents and the Discriminant",
+        "content": "When a line is tangent to a quadratic curve, their combined intersection equation has exactly one real solution. This means you must set the discriminant of the combined equation $2x^2 - (5 + m)x + 8 = 0$ to zero. Be extremely careful when working with quadratic brackets like $(5 + m)^2$—it is best to solve directly as $(5 + m)^2 = 64 \\implies 5 + m = \\pm 8$ to avoid expansion errors."
+    }
+},
+{
+    "id": "004549",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Completing the Square",
+        "Trigonometric Substitution",
+        "Discriminant"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> By completing the square on the quadratic expression $4u^2 - 12u + 13$, show that $4u^2 - 12u + 13 \\ge 4$ for all real values of $u$.<br><br><strong>(ii)</strong> Hence, or otherwise, prove that the equation $4\\cos^2\\theta - 12\\cos\\theta + 13 = w$ has no real solutions for any constant $w < 5$.<br><br><strong>(iii)</strong> Given instead that the quadratic equation $4u^2 - 12u + d = 0$ has no real roots, find the range of possible values for the constant $d$.",
+    "steps": [
+        "To complete the square for $4u^2 - 12u + 13$, we can factor out the coefficient $4$ from the $u$ terms:<br><br>\\begin{aligned} 4u^2 - 12u + 13 & = 4\\left( u^2 - 3u \\right) + 13 \\end{aligned}$<br><br>Next, we complete the square inside the bracket by halving the coefficient of $u$ (which is $-3$), squaring it, and subtracting it:<br><br>\\begin{aligned} 4\\left[ \\left( u - \\dfrac{ 3 }{ 2 } \\right)^2 - \\left(\\dfrac{ 3 }{ 2 }\\right)^2 \\right] + 13 & = 4\\left[ \\left( u - \\dfrac{ 3 }{ 2 } \\right)^2 - \\dfrac{ 9 }{ 4 } \\right] + 13 \\cr & = 4\\left( u - \\dfrac{ 3 }{ 2 } \\right)^2 - 9 + 13 \\cr & = 4\\left( u - \\dfrac{ 3 }{ 2 } \\right)^2 + 4 \\end{aligned}$<br><br>Since the squared term $4\\left( u - \\dfrac{ 3 }{ 2 } \\right)^2 \\ge 0$ for all real values of $u$, we have:<br><br>\\begin{aligned} 4\\left( u - \\dfrac{ 3 }{ 2 } \\right)^2 + 4 & \\ge 4 \\end{aligned}$<br><br>Thus, $4u^2 - 12u + 13 \\ge 4$ for all real values of $u$.",
+        "Let $u = \\cos\\theta$. Since $\\theta$ is a real number, the domain of $u$ is strictly restricted to the interval $[-1, 1]$.<br><br>Using our result from part (i), the expression becomes:<br><br>\\begin{aligned} f(u) & = 4\\left( u - \\dfrac{ 3 }{ 2 } \\right)^2 + 4 \\end{aligned}$<br><br>The vertex of this quadratic function is at $\\left( \\dfrac{ 3 }{ 2 }, 4 \\right)$. However, the $u$-coordinate of this vertex is $1.5$, which lies strictly outside the interval $[-1, 1]$.<br><br>Since the quadratic curve opens upwards and its vertex is to the right of the interval $[-1, 1]$, the function is strictly decreasing on the interval $[-1, 1]$.<br><br>Therefore, the minimum value of $f(u)$ on this interval occurs at the right-hand boundary, where $u = 1$:<br><br>\\begin{aligned} f(1) & = 4\\left( 1 - \\dfrac{ 3 }{ 2 } \\right)^2 + 4 \\cr & = 4\\left( -\\dfrac{ 1 }{ 2 } \\right)^2 + 4 \\cr & = 4\\left( \\dfrac{ 1 }{ 4 } \\right) + 4 \\cr & = 5 \\end{aligned}$<br><br>The maximum value occurs at the left-hand boundary, where $u = -1$:<br><br>\\begin{aligned} f(-1) & = 4\\left( -1 - \\dfrac{ 3 }{ 2 } \\right)^2 + 4 \\cr & = 4\\left( -\\dfrac{ 5 }{ 2 } \\right)^2 + 4 \\cr & = 4\\left( \\dfrac{ 25 }{ 4 } \\right) + 4 \\cr & = 29 \\end{aligned}$<br><br>This means that for all real values of $\\theta$, the range of the expression is $5 \\le 4\\cos^2\\theta - 12\\cos\\theta + 13 \\le 29$.<br><br>Since the minimum possible value of the expression is $5$, the equation $4\\cos^2\\theta - 12\\cos\\theta + 13 = w$ can never have any real solutions for any constant $w < 5$.",
+        "For the quadratic equation $4u^2 - 12u + d = 0$ to have no real roots, its discriminant $\\Delta$ must be strictly negative.<br><br>Here, $A = 4$, $B = -12$, and $C = d$. The discriminant is:<br><br>\\begin{aligned} \\Delta & = B^2 - 4AC \\cr & = (-12)^2 - 4(4)(d) \\cr & = 144 - 16d \\end{aligned}$<br><br>We require $\\Delta < 0$:<br><br>\\begin{aligned} 144 - 16d & < 0 \\cr 16d & > 144 \\cr d & > 9 \\end{aligned}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$d < 9$$",
+            "feedback": "This error occurs from an inequality sign slip when rearranging $144 - 16d < 0$, incorrectly maintaining the '<' sign as $d < 9$ instead of flipping it when dividing by the negative coefficient $-16$."
+        },
+        {
+            "ans": "$$d > 3$$",
+            "feedback": "This error arises if the factor of $4$ in the discriminant formula is omitted, or if $A=4$ is substituted incorrectly, leading to an incorrect inequality limit."
+        },
+        {
+            "ans": "$$d < -9$$",
+            "feedback": "This is caused by a sign error inside the discriminant where the expression is written as $144 + 16d < 0$, yielding $16d < -144 \\implies d < -9$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Domain Restrictions and Boundary Values",
+        "content": "In substitution problems like $u = \\cos\\theta$, you must respect the restricted domain $[-1, 1]$. Even though the algebraic vertex of the quadratic lies at $u = 1.5$, this value is impossible for $\\cos\\theta$. The actual minimum of the expression on this domain occurs at the boundary $u = 1$, where the curve is closest to the vertex. Always check your boundaries when working with trigonometric domains!"
+    }
+},
+{
+    "id": "004550",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Polynomials",
+    "subtopic": [
+        "Completing the Square",
+        "Discriminant",
+        "Inequalities"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Express $x^2 + 2kx + (3k + 4)$ in the form $(x + p)^2 + q$, where $p$ and $q$ are expressed in terms of the constant $k$.<br><br><strong>(ii)</strong> Find the values of $k$ for which the minimum value of the quadratic expression $y = x^2 + 2kx + (3k + 4)$ is equal to zero.<br><br><strong>(iii)</strong> Find the set of values of $k$ for which the curve $y = x^2 + 2kx + (3k + 4)$ lies entirely above the $x$-axis.",
+    "steps": [
+        "To complete the square for $x^2 + 2kx + (3k + 4)$, we halve the coefficient of $x$ (which is $2k$) to get $k$, square it, and subtract it:<br><br>\\begin{aligned} x^2 + 2kx + (3k + 4) & = (x + k)^2 - k^2 + 3k + 4 \\end{aligned}<br><br>Thus, $p = k$ and $q = -k^2 + 3k + 4$.",
+        "The minimum value of the quadratic curve $y = (x + k)^2 - k^2 + 3k + 4$ occurs at its vertex, where $(x + k)^2 = 0$. This minimum value is $q = -k^2 + 3k + 4$.<br><br>We want this minimum value to be exactly zero:<br><br>\\begin{aligned} -k^2 + 3k + 4 & = 0 \\cr k^2 - 3k - 4 & = 0 \\end{aligned}$<br><br>Factoring this quadratic equation:<br><br>\\begin{aligned} (k - 4)(k + 1) & = 0 \\end{aligned}$<br><br>This yields:<br><br>\\begin{aligned} k = 4 \\quad \\text{or} \\quad k = -1 \\end{aligned}$",
+        "For the curve to lie entirely above the $x$-axis, its minimum value must be strictly greater than zero (or equivalently, its discriminant must be strictly less than zero).<br><br>Using the minimum value $q = -k^2 + 3k + 4$:<br><br>\\begin{aligned} -k^2 + 3k + 4 & > 0 \\cr k^2 - 3k - 4 & < 0 \\end{aligned}$<br><br>Factoring the expression:<br><br>\\begin{aligned} (k - 4)(k + 1) & < 0 \\end{aligned}$<br><br>For the product to be negative, the value of $k$ must lie strictly between the roots of the corresponding equation. Therefore, the set of values is:<br><br>\\begin{aligned} -1 < k < 4 \\end{aligned}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$k < -1 \\text{ or } k > 4$$",
+            "feedback": "This is a standard inequality region error. This set represents the region where the quadratic is positive ($k^2 - 3k - 4 > 0$), which would correspond to the curve having a minimum value less than zero (meaning it has two distinct real roots)."
+        },
+        {
+            "ans": "$$-4 < k < 1$$",
+            "feedback": "This is caused by factoring the quadratic as $(k + 4)(k - 1) < 0$ due to a sign slip in the linear coefficient $-3k$ during the factorization process."
+        },
+        {
+            "ans": "$$-1 \\le k \\le 4$$",
+            "feedback": "This error uses non-strict inequalities. If $k = -1$ or $k = 4$, the minimum value of the curve is exactly zero, meaning it touches the $x$-axis rather than lying strictly above it."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Strict vs. Non-Strict Inequalities",
+        "content": "When a question states that a curve lies *entirely above* the $x$-axis, the minimum value must be strictly greater than zero ($y > 0$). This corresponds to a strict inequality $-1 < k < 4$. Using non-strict inequalities like $-1 \\le k \\le 4$ is a costly error, as it would allow the curve to touch the $x$-axis."
+    }
 }
 ];
