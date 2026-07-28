@@ -187,4 +187,5 @@ window.ALEVEL_QUESTIONS = [
         "content": "When solving coordinate geometry questions, use your geometric deductions as an automatic sanity check. Since you proved in part (i) that the triangle is equilateral, you already know before starting part (iii) that the internal angle *must* be exactly $60^\\circ$. If your scalar product calculation yields any other angle, you instantly know you made a prior coordinate sign error!"
     }
 }
+
 ];
