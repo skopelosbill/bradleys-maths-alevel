@@ -1330,5 +1330,200 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Fractional Exponent Notation",
         "content": "Always be comfortable translating between radical form and index form. The term $p\\sqrt{ p }$ is algebraically equivalent to $p^1 \\times p^{\\frac{ 1 }{ 2 }} = p^{\\frac{ 3 }{ 2 }}$. Both forms are completely identical in examinations."
     }
+},
+{
+    "id": "004536",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Exponentials and Logarithms",
+    "subtopic": [
+        "Logarithmic Linearisation",
+        "Exponential Modelling"
+    ],
+    "img": "images/Pure/004536.png",
+    "question": "Arthur bought an antique painting on 1 January 1980 for £5000. The painting was valued by an auctioneer on the same date every 10 years up to 2020. The valuations are shown in the following table: <br><br>| Year | 1980 | 1990 | 2000 | 2010 | 2020 | <br>| :--- | :--- | :--- | :--- | :--- | :--- | <br>| <strong>Valuation price ($V$)</strong> | £5000 | £11000 | £24000 | £55000 | £120000 | <br><br>The valuation price of the painting can be modelled by the equation: <br>$$V = p q^t$$ <br>where $V$ pounds is the valuation price $t$ years after 1 January 1980, and $p$ and $q$ are constants. <br><br><strong>(a)</strong> Show that $V = p q^t$ can be written as $\\log_{10} V = \\log_{10} p + t \\log_{10} q$. <br><br><strong>(b)</strong> The values in the table of $\\log_{10} V$ against $t$ have been plotted and a line of best fit has been drawn, as shown in the diagram. <br>Using this line of best fit (which has a vertical intercept of $3.70$ and passes through the point $(40, 5.08)$), find estimates for the values of $p$ and $q$. Give your answers correct to three significant figures. <br><br><strong>(c)</strong> Determine the year in which Arthur's painting will first be valued at over £300,000. <br><br><strong>(d)</strong> Explain whether your answer to part (c) is likely to be reliable.",
+    "steps": [
+        "For part <strong>(a)</strong>, apply the laws of logarithms to linearise the exponential equation: <br>Take the logarithm to base $10$ of both sides of $V = p q^t$: <br>\\begin{aligned} \\log_{10} V &= \\log_{10}(p q^t) \\cr \\log_{10} V &= \\log_{10} p + \\log_{10}(q^t) \\cr \\log_{10} V &= \\log_{10} p + t \\log_{10} q \\cr \\end{aligned} <br>This is a linear equation of the form $Y = mX + c$, where $Y = \\log_{10} V$, $X = t$, the vertical intercept is $c = \\log_{10} p$, and the gradient is $m = \\log_{10} q$.",
+        "For part <strong>(b)</strong>, find the gradient $m$ of the line of best fit using the intercept $(0, 3.70)$ and the point $(40, 5.08)$: <br>\\begin{aligned} m &= \\dfrac{ 5.08 - 3.70 }{ 40 - 0 } \\cr &= \\dfrac{ 1.38 }{ 40 } = 0.0345 \\cr \\end{aligned} <br>This gives the linear regression model: <br>$$\\log_{10} V = 3.70 + 0.0345 t$$",
+        "Equate the regression parameters to find estimates for $p$ and $q$: <br>1. For $p$: <br>\\begin{aligned} \\log_{10} p &= 3.70 \\cr p &= 10^{ 3.70 } \\approx 5012 \\cr \\end{aligned} <br>To three significant figures, $p \\approx 5010$ (or $5.01 \\times 10^3$). <br><br>2. For $q$: <br>\\begin{aligned} \\log_{10} q &= 0.0345 \\cr q &= 10^{ 0.0345 } \\approx 1.0827 \\cr \\end{aligned} <br>To three significant figures, $q \\approx 1.08$.",
+        "For part <strong>(c)</strong>, determine when $V > 300,000$ by substituting this value into the linearised log model: <br>\\begin{aligned} \\log_{10}(300,000) &= 3.70 + 0.0345 t \\cr \\log_{10}(3 \\times 10^5) &= 3.70 + 0.0345 t \\cr 5.4771 &= 3.70 + 0.0345 t \\cr 0.0345 t &= 1.7771 \\cr t &= \\dfrac{ 1.7771 }{ 0.0345 } \\approx 51.5 \\text{ years} \\cr \\end{aligned} <br>Since $t$ is the number of years after 1 January 1980: <br>\\begin{aligned} \\text{Year} &= 1980 + 51.5 \\cr &= 2031.5 \\cr \\end{aligned} <br>Thus, the valuation first exceeds £300,000 during the year $2032$ (or approximately 52 years after 1980).",
+        "For part <strong>(d)</strong>, comment on the reliability: <br>The model is based on only five data points spanning 40 years, and assumes a constant, uninterrupted rate of exponential growth. Antique art markets are highly volatile and influenced by unpredictable factors (such as economic recessions, changing tastes, fashion, or provenance). Extrapolating over a decade beyond the data range introduces substantial uncertainty, making the prediction mathematically consistent with the model but not highly reliable in real life."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$p = 3.70, \\quad q = 0.0345, \\quad \\text{Year: } 2032$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse logarithm (base 10) to the vertical intercept and gradient, mistakenly stating that the parameters $p$ and $q$ are equal to the linear constants themselves."
+        },
+        {
+            "ans": "$$p = 5.01 \\times 10^3, \\quad q = 1.08, \\quad \\text{Year: } 2033$$",
+            "feedback": "This is incorrect. This error arises if you rounded your parameter values to three significant figures ($p \\approx 5010$ and $q \\approx 1.08$) and used them to solve $5010 \\times (1.08)^t = 300,000$ in the exponential equation. This intermediate rounding error yields $t \\approx 53.1$ years, leading incorrectly to the year $2033$."
+        },
+        {
+            "ans": "$$p = 5010, \\quad q = 1.08, \\quad \\text{Year: } 2030$$",
+            "feedback": "This is incorrect. This occurs due to an arithmetic error when calculating the logarithm of $300,000$, or a division error in $t = 1.777 / 0.0345$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Avoid Early Rounding",
+        "content": "When solving logarithmic equations, never use rounded intermediate parameters (like $p = 5010$ and $q = 1.08$) to solve the final exponential equation. Instead, always perform your algebra within the linearised log model (e.g., using $\\log_{10} V = 3.70 + 0.0345 t$) to prevent compounding rounding errors."
+    }
+},
+{
+    "id": "004537",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Exponentials and Logarithms",
+    "subtopic": [
+        "Logarithmic Linearisation",
+        "Exponential Modelling"
+    ],
+    "img": "images/Pure/004537.png",
+    "question": "The population $N$ of a rare species of bird on a restricted island has been monitored every 5 years since the year 2000. The data collected is shown in the table below: <br><br>| Year | 2000 | 2005 | 2010 | 2015 | 2020 | <br>| :--- | :--- | :--- | :--- | :--- | :--- | <br>| <strong>Population ($N$)</strong> | 120 | 200 | 330 | 540 | 900 | <br><br>The population of birds can be modelled by the equation: <br>$$N = a \\mathrm{e}^{b t}$$ <br>where $t$ represents the number of years since the year 2000, and $a$ and $b$ are constants. <br><br><strong>(a)</strong> Show that $N = a \\mathrm{e}^{b t}$ can be written as $\\ln N = \\ln a + b t$. <br><br><strong>(b)</strong> The values in the table of $\\ln N$ against $t$ have been plotted and a line of best fit has been drawn, as shown in the diagram. <br>Using this line of best fit (which has a vertical intercept of $4.79$ and passes through the point $(20, 6.80)$), find estimates for the values of $a$ and $b$. Give your answers correct to three significant figures. <br><br><strong>(c)</strong> Using your model, determine the calendar year in which the bird population is predicted to first exceed 5,000. <br><br><strong>(d)</strong> Comment briefly on the reliability of this projection.",
+    "steps": [
+        "For part <strong>(a)</strong>, take the natural logarithm ($\\ln$) of both sides of the exponential equation $N = a \\mathrm{e}^{b t}$ to linearise it: <br>\\begin{aligned} \\ln N &= \\ln(a \\mathrm{e}^{b t}) \\cr \\ln N &= \\ln a + \\ln(\\mathrm{e}^{b t}) \\cr \\ln N &= \\ln a + b t \\cr \\end{aligned} <br>This is a linear equation of the form $Y = mX + c$, where $Y = \\ln N$, $X = t$, the vertical intercept is $c = \\ln a$, and the gradient is $m = b$.",
+        "For part <strong>(b)</strong>, find the gradient $m$ (which represents the parameter $b$) of the line of best fit using the intercept $(0, 4.79)$ and the point $(20, 6.80)$: <br>\\begin{aligned} b &= \\dfrac{ 6.80 - 4.79 }{ 20 - 0 } \\cr &= \\dfrac{ 2.01 }{ 20 } = 0.1005 \\cr \\end{aligned} <br>To three significant figures, $b \\approx 0.101$.",
+        "Find the estimate for $a$ by equating the vertical intercept of $4.79$ to $\\ln a$: <br>\\begin{aligned} \\ln a &= 4.79 \\cr a &= \\mathrm{e}^{ 4.79 } \\approx 120.3 \\cr \\end{aligned} <br>To three significant figures, $a \\approx 120$.",
+        "For part <strong>(c)</strong>, substitute $N = 5000$ into the linearised natural log model to find $t$: <br>\\begin{aligned} \\ln(5000) &= 4.79 + 0.1005 t \\cr 8.5172 &= 4.79 + 0.1005 t \\cr 0.1005 t &= 3.7272 \\cr t &= \\dfrac{ 3.7272 }{ 0.1005 } \\approx 37.1 \\text{ years} \\cr \\end{aligned} <br>Since $t$ is the number of years after 2000: <br>\\begin{aligned} \\text{Year} &= 2000 + 37.1 \\cr &= 2037.1 \\cr \\end{aligned} <br>Thus, the bird population is predicted to first exceed 5,000 during the year $2037$ (or approximately 37 years after 2000).",
+        "For part <strong>(d)</strong>, comment on the reliability: <br>The model assumes continuous, unchecked exponential growth with no limiting environmental factors. In reality, biological systems are constrained by factors like carrying capacity, food supply, territorial nesting space, disease, and predation (represented by a logistic curve rather than an exponential one). Furthermore, predicting nearly 20 years beyond the available data range introduces significant extrapolation uncertainty."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 4.79, \\quad b = 0.101, \\quad \\text{Year: } 2037$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse natural exponent ($\\mathrm{e}^x$) to the vertical intercept, writing the parameter $a$ as equal to the intercept value of $4.79$ directly."
+        },
+        {
+            "ans": "$$a = 120, \\quad b = 0.101, \\quad \\text{Year: } 2036$$",
+            "feedback": "This is incorrect. This error occurs if you rounded $t \\approx 37.1$ down to $36$ years, or if you used rounded values ($a = 120, b = 0.101$) to solve $120 \\mathrm{e}^{ 0.101 t } = 5000$ in the exponential form, resulting in an intermediate rounding discrepancy."
+        },
+        {
+            "ans": "$$a = 120, \\quad b = 1.11, \\quad \\text{Year: } 2037$$",
+            "feedback": "This is incorrect. This error occurs if you applied the base 10 inverse logarithm ($10^{0.1005}$) to find $b$ instead of preserving the natural exponent base $\\mathrm{e}$ used in the model."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Base Tracking",
+        "content": "Always carefully observe which base is being used in the model. If the equation uses $\\mathrm{e}$ (as in $N = a \\mathrm{e}^{b t}$), you must linearise using natural logarithms ($\\ln$) and use the inverse base $\\mathrm{e}^x$ to find the parameters."
+    }
+},
+{
+    "id": "004538",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Exponentials and Logarithms",
+    "subtopic": [
+        "Logarithmic Linearisation",
+        "Power Law Modelling"
+    ],
+    "img": "images/Pure/004538.png",
+    "question": "An experiment was conducted to measure the period of oscillation, $T$ seconds, of a simple pendulum of length $L$ metres. The results are shown in the table below: <br><br>| Length ($L$) | 0.1 | 0.2 | 0.5 | 1.0 | 2.0 | <br>| :--- | :--- | :--- | :--- | :--- | :--- | <br>| <strong>Period ($T$)</strong> | 0.63 | 0.89 | 1.41 | 2.01 | 2.84 | <br><br>The relationship between $T$ and $L$ is modelled by the power law equation: <br>$$T = a L^b$$ <br>where $a$ and $b$ are constants. <br><br><strong>(a)</strong> Show that $T = a L^b$ can be written as $\\log_{10} T = \\log_{10} a + b \\log_{10} L$. <br><br><strong>(b)</strong> The values of $\\log_{10} T$ against $\\log_{10} L$ have been plotted and a line of best fit has been drawn, as shown in the diagram. <br>Using this line of best fit (which has a vertical intercept of $0.30$ and passes through the point $(-1.0, -0.20)$), find estimates for the values of $a$ and $b$. Give your answers correct to three significant figures. <br><br><strong>(c)</strong> Predict the period of oscillation for a pendulum of length $5.0$ metres. <br><br><strong>(d)</strong> Explain whether this prediction is likely to be reliable.",
+    "steps": [
+        "For part <strong>(a)</strong>, take the logarithm to base $10$ of both sides of the power law equation $T = a L^b$: <br>\\begin{aligned} \\log_{10} T &= \\log_{10}(a L^b) \\cr \\log_{10} T &= \\log_{10} a + \\log_{10}(L^b) \\cr \\log_{10} T &= \\log_{10} a + b \\log_{10} L \\cr \\end{aligned} <br>This is a linear equation of the form $Y = mX + c$, where $Y = \\log_{10} T$, $X = \\log_{10} L$, the vertical intercept is $c = \\log_{10} a$, and the gradient is $m = b$.",
+        "For part <strong>(b)</strong>, find the gradient $m$ (which represents the parameter $b$) of the line of best fit using the intercept $(0, 0.30)$ and the point $(-1.0, -0.20)$: <br>\\begin{aligned} b &= \\dfrac{ -0.20 - 0.30 }{ -1.0 - 0 } \\cr &= \\dfrac{ -0.50 }{ -1.0 } = 0.500 \\cr \\end{aligned} <br>To three significant figures, the power is $b = 0.500$.",
+        "Find the estimate for $a$ by equating the vertical intercept of $0.30$ to $\\log_{10} a$: <br>\\begin{aligned} \\log_{10} a &= 0.30 \\cr a &= 10^{ 0.30 } \\approx 1.995 \\cr \\end{aligned} <br>To three significant figures, $a \\approx 2.00$.",
+        "For part <strong>(c)</strong>, construct the power model using $a = 2.00$ and $b = 0.500$: <br>\\begin{aligned} T &= 2.00 \\times L^{ 0.500 } \\cr T &= 2.00 \\sqrt{ L } \\cr \\end{aligned} <br>Substitute the value $L = 5.0$ into this equation to predict the period $T$: <br>\\begin{aligned} T &= 2.00 \\sqrt{ 5.0 } \\cr T &\\approx 2.00 \\times 2.236 \\approx 4.47 \\text{ seconds} \\cr \\end{aligned}",
+        "For part <strong>(d)</strong>, comment on the reliability: <br>The data covers lengths from $0.1$ m to $2.0$ m, so predicting at $5.0$ m represents a significant extrapolation. For much longer pendulums, real-world factors (such as air resistance, joint friction, and cable weight) may slightly alter the period from the simple power law. However, because $T = 2\\pi \\sqrt{ L/g }$ is a fundamental physical law, the model's form remains physically highly reliable if structural setups are preserved."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 0.30, \\quad b = 0.500, \\quad \\text{Period: } 1.12\\text{ s}$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse base-10 logarithm ($10^x$) to the vertical intercept, mistakenly stating that the parameter $a$ is equal to the intercept value of $0.30$ directly."
+        },
+        {
+            "ans": "$$a = 2.00, \\quad b = 0.500, \\quad \\text{Period: } 10.0\\text{ s}$$",
+            "feedback": "This is incorrect. This error occurs if you evaluated $T = 2.00 \\times 5.0^1$ instead of raising $L$ to the correct power $b = 0.500$, failing to perform the fractional exponent calculation."
+        },
+        {
+            "ans": "$$a = 2.00, \\quad b = 2.00, \\quad \\text{Period: } 50.0\\text{ s}$$",
+            "feedback": "This is incorrect. This error occurs if you calculated the gradient $b$ incorrectly (such as writing $b = 2.00$), leading to a completely incorrect quadratic-length model."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Log-Log Plot Slopes",
+        "content": "In a log-log plot (where $\\log y$ is plotted against $\\log x$), the gradient of the line is exactly equal to the exponent $b$ in $y = a x^b$. Unlike exponential plots where you must apply inverse logs to find the rate parameter, the power can be read directly off the gradient."
+    }
+},
+{
+    "id": "004539",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Exponentials and Logarithms",
+    "subtopic": [
+        "Logarithmic Linearisation",
+        "Exponential Modelling"
+    ],
+    "img": "images/Pure/004539.png",
+    "question": "The mass $M$ grams of a radioactive isotope decays over time $t$ days. The mass is measured every 5 days, and the results are shown in the table below: <br><br>| Time ($t$) | 0 | 5 | 10 | 15 | 20 | <br>| :--- | :--- | :--- | :--- | :--- | :--- | <br>| <strong>Mass ($M$)</strong> | 80 | 48 | 29 | 17 | 10 | <br><br>The decay of the isotope can be modelled by the equation: <br>$$M = a b^t$$ <br>where $a$ and $b$ are constants. <br><br><strong>(a)</strong> Show that $M = a b^t$ can be written as $\\log_{10} M = \\log_{10} a + t \\log_{10} b$. <br><br><strong>(b)</strong> The values of $\\log_{10} M$ against $t$ have been plotted and a line of best fit has been drawn, as shown in the diagram. <br>Using this line of best fit (which has a vertical intercept of $1.90$ and passes through the point $(20, 1.00)$), find estimates for the values of $a$ and $b$. Give your answers correct to three significant figures. <br><br><strong>(c)</strong> Determine the number of days it takes for the mass of the isotope to first drop below $1$ gram. Give your answer to the nearest integer. <br><br><strong>(d)</strong> Discuss briefly whether your calculation in part (c) is likely to be reliable.",
+    "steps": [
+        "For part <strong>(a)</strong>, take the logarithm to base $10$ of both sides of the decay equation $M = a b^t$: <br>\\begin{aligned} \\log_{10} M &= \\log_{10}(a b^t) \\cr \\log_{10} M &= \\log_{10} a + \\log_{10}(b^t) \\cr \\log_{10} M &= \\log_{10} a + t \\log_{10} b \\cr \\end{aligned} <br>This is a linear equation of the form $Y = mX + c$, where $Y = \\log_{10} M$, $X = t$, the vertical intercept is $c = \\log_{10} a$, and the gradient is $m = \\log_{10} b$.",
+        "For part <strong>(b)</strong>, find the gradient $m$ of the line of best fit using the intercept $(0, 1.90)$ and the point $(20, 1.00)$: <br>\\begin{aligned} m &= \\dfrac{ 1.00 - 1.90 }{ 20 - 0 } \\cr &= \\dfrac{ -0.90 }{ 20 } = -0.045 \\cr \\end{aligned} <br>This gives the linearised log model: <br>$$\\log_{10} M = 1.90 - 0.045 t$$",
+        "Equate the linear parameters to find the estimates for $a$ and $b$: <br>1. For $a$: <br>\\begin{aligned} \\log_{10} a &= 1.90 \\cr a &= 10^{ 1.90 } \\approx 79.43 \\cr \\end{aligned} <br>To three significant figures, $a \\approx 79.4$. <br><br>2. For $b$: <br>\\begin{aligned} \\log_{10} b &= -0.045 \\cr b &= 10^{ -0.045 } \\approx 0.9016 \\cr \\end{aligned} <br>To three significant figures, $b \\approx 0.902$ (showing decay since $b < 1$).",
+        "For part <strong>(c)</strong>, determine when the mass drops below $1$ gram by setting $M = 1$, which corresponds to $\\log_{10} M = 0$: <br>\\begin{aligned} 0 &= 1.90 - 0.045 t \\cr 0.045 t &= 1.90 \\cr t &= \\dfrac{ 1.90 }{ 0.045 } \\approx 42.22 \\text{ days} \\cr \\end{aligned} <br>Thus, rounding to the nearest integer, it takes $42$ days for the mass to first drop below $1$ gram.",
+        "For part <strong>(d)</strong>, discuss reliability: <br>Unlike economic or biological systems, radioactive decay is a fundamental physical process governed by stable physical laws (constant half-life). Because there are no external, volatile variables that can shift the decay rate over time, this model's extrapolation is highly mathematically reliable, making the 42-day estimate very accurate in practice."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 1.90, \\quad b = 0.902, \\quad \\text{Time: } 42\\text{ days}$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse base-10 logarithm ($10^x$) to the vertical intercept, stating that the parameter $a$ is equal to the intercept value of $1.90$ directly."
+        },
+        {
+            "ans": "$$a = 79.4, \\quad b = 0.902, \\quad \\text{Time: } 43\\text{ days}$$",
+            "feedback": "This is incorrect. This represents a rounding error. You may have rounded $t \\approx 42.2$ up to $43$ days instead of rounding to the nearest integer of $42$."
+        },
+        {
+            "ans": "$$a = 79.4, \\quad b = -0.045, \\quad \\text{Time: } 42\\text{ days}$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse base-10 logarithm to the gradient, mistakenly writing the parameter $b$ as equal to the negative rate gradient of $-0.045$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Decay Rates and Bases",
+        "content": "When dealing with radioactive decay models of the form $M = a b^t$, because the mass is decreasing, the base $b$ must always lie in the range $0 < b < 1$. Correspondingly, the gradient of the linearised model, $\\log_{10} b$, will always be a negative value."
+    }
+},
+{
+    "id": "004540",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Exponentials and Logarithms",
+    "subtopic": [
+        "Logarithmic Linearisation",
+        "Exponential Modelling"
+    ],
+    "img": "images/Pure/004540.png",
+    "question": "The concentration $C$ mg/L of a drug in a patient's bloodstream $t$ hours after injection is monitored. The data collected is shown in the table below: <br><br>| Time ($t$) | 1 | 2 | 3 | 4 | 5 | <br>| :--- | :--- | :--- | :--- | :--- | :--- | <br>| <strong>Concentration ($C$)</strong> | 45 | 32 | 22 | 16 | 11 | <br><br>The elimination of the drug is modelled by the exponential equation: <br>$$C = a b^t$$ <br>where $a$ and $b$ are constants. <br><br><strong>(a)</strong> Show that $C = a b^t$ can be written as $\\log_{10} C = \\log_{10} a + t \\log_{10} b$. <br><br><strong>(b)</strong> The values of $\\log_{10} C$ against $t$ have been plotted and a line of best fit has been drawn, as shown in the diagram. <br>Using this line of best fit (which has a vertical intercept of $1.80$ and passes through the point $(5, 1.04)$), find estimates for the values of $a$ and $b$. Give your answers correct to three significant figures. <br><br><strong>(c)</strong> Calculate the time, to the nearest hour, when the concentration of the drug in the patient's bloodstream first falls below $1$ mg/L. <br><br><strong>(d)</strong> State one reason, contextual or mathematical, why the drug concentration predicted by this model may not be highly accurate over a long period.",
+    "steps": [
+        "For part <strong>(a)</strong>, take the logarithm to base $10$ of both sides of the drug equation $C = a b^t$: <br>\\begin{aligned} \\log_{10} C &= \\log_{10}(a b^t) \\cr \\log_{10} C &= \\log_{10} a + \\log_{10}(b^t) \\cr \\log_{10} C &= \\log_{10} a + t \\log_{10} b \\cr \\end{aligned} <br>This is a linear equation of the form $Y = mX + c$, where $Y = \\log_{10} C$, $X = t$, the vertical intercept is $c = \\log_{10} a$, and the gradient is $m = \\log_{10} b$.",
+        "For part <strong>(b)</strong>, find the gradient $m$ of the line of best fit using the intercept $(0, 1.80)$ and the point $(5, 1.04)$: <br>\\begin{aligned} m &= \\dfrac{ 1.04 - 1.80 }{ 5 - 0 } \\cr &= \\dfrac{ -0.76 }{ 5 } = -0.152 \\cr \\end{aligned} <br>This gives the linearised log model: <br>$$\\log_{10} C = 1.80 - 0.152 t$$",
+        "Equate the linear parameters to find the estimates for $a$ and $b$: <br>1. For $a$: <br>\\begin{aligned} \\log_{10} a &= 1.80 \\cr a &= 10^{ 1.80 } \\approx 63.09 \\cr \\end{aligned} <br>To three significant figures, $a \\approx 63.1$. <br><br>2. For $b$: <br>\\begin{aligned} \\log_{10} b &= -0.152 \\cr b &= 10^{ -0.152 } \\approx 0.7047 \\cr \\end{aligned} <br>To three significant figures, $b \\approx 0.705$.",
+        "For part <strong>(c)</strong>, find when the concentration falls below $1$ mg/L, which corresponds to setting $C = 1$ and $\\log_{10} C = 0$: <br>\\begin{aligned} 0 &= 1.80 - 0.152 t \\cr 0.152 t &= 1.80 \\cr t &= \\dfrac{ 1.80 }{ 0.152 } \\approx 11.84 \\text{ hours} \\cr \\end{aligned} <br>Thus, rounding to the nearest hour, the drug concentration first falls below $1$ mg/L after $12$ hours.",
+        "For part <strong>(d)</strong>, state a limiting reason: <br>The model assumes a constant rate of exponential clearance (first-order kinetics), but in biological systems, metabolic pathways can saturate or change as concentrations become extremely low, altering the clearance rate. Furthermore, patient-specific factors (such as kidney/liver function or hydration levels) can affect the excretion rate over longer timeframes."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 1.80, \\quad b = 0.705, \\quad \\text{Time: } 12\\text{ hours}$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse base-10 logarithm ($10^x$) to the vertical intercept, stating that the parameter $a$ is equal to the intercept value of $1.80$ directly."
+        },
+        {
+            "ans": "$$a = 63.1, \\quad b = 0.705, \\quad \\text{Time: } 11\\text{ hours}$$",
+            "feedback": "This is incorrect. This represents a rounding error. You may have rounded $t \\approx 11.84$ down to $11$ hours instead of rounding to the nearest hour of $12$ hours."
+        },
+        {
+            "ans": "$$a = 63.1, \\quad b = -0.152, \\quad \\text{Time: } 12\\text{ hours}$$",
+            "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse base-10 logarithm to the gradient, mistakenly writing the parameter $b$ as equal to the negative rate gradient of $-0.152$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Contextual Model Boundaries",
+        "content": "Always read the context of mathematical models carefully. While a mathematical model can extrapolate infinitely, biological and economic systems have real-world limitations (like changing metabolic kinetics or environmental bounds) that disrupt long-term exponential trends."
+    }
 }
 ];
