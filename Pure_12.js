@@ -372,5 +372,189 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Checking Piecewise Continuity",
         "content": "To prove continuity at a boundary point like $d = 5$ in a piecewise function, never just assume the graphs connect. You must mathematically demonstrate that the left-hand limit and the right-hand limit are equal by evaluating both branches at the boundary. If the values differ, the graph has a jump discontinuity."
     }
+},
+{
+    "id": "004561",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Trigonometric Proof",
+        "Compound Angle Formulas",
+        "Double-Angle Identities"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Prove that $2\\sin(\\theta + 45^\\circ)\\cos(\\theta + 45^\\circ) = \\cos 2\\theta$.",
+    "steps": [
+        "We start by recalling the standard double-angle identity for sine:<br><br>\\begin{aligned} 2\\sin A\\cos A & = \\sin 2A \\end{aligned}<br><br>Let $A = \\theta + 45^\\circ$. Substituting this into the identity, we can write the left-hand side (LHS) of our equation as:<br><br>\\begin{aligned} 2\\sin(\\theta + 45^\\circ)\\cos(\\theta + 45^\\circ) & = \\sin\\left[ 2(\\theta + 45^\\circ) \\right] \\cr & = \\sin(2\\theta + 90^\\circ) \\end{aligned}",
+        "Next, we use the compound angle expansion formula for sine, which is:<br><br>\\begin{aligned} \\sin(X + Y) & = \\sin X\\cos Y + \\cos X\\sin Y \\end{aligned}<br><br>Letting $X = 2\\theta$ and $Y = 90^\\circ$, we expand $\\sin(2\\theta + 90^\\circ)$:<br><br>\\begin{aligned} \\sin(2\\theta + 90^\\circ) & = \\sin 2\\theta\\cos 90^\\circ + \\cos 2\\theta\\sin 90^\\circ \\end{aligned}<br><br>Since $\\cos 90^\\circ = 0$ and $\\sin 90^\\circ = 1$, we substitute these values in:<br><br>\\begin{aligned} \\sin(2\\theta + 90^\\circ) & = \\sin 2\\theta(0) + \\cos 2\\theta(1) \\cr & = \\cos 2\\theta \\end{aligned}<br><br>Thus, we have proven that the left-hand side simplifies exactly to the right-hand side:<br><br>\\begin{aligned} 2\\sin(\\theta + 45^\\circ)\\cos(\\theta + 45^\\circ) & = \\cos 2\\theta \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\sin 2\\theta$$",
+            "feedback": "This error occurs if you make a sign error in the compound angle expansion or confuse the shift identity, using $\\sin(2\\theta + 90^\\circ) = \\sin 2\\theta$ instead of $\\cos 2\\theta$."
+        },
+        {
+            "ans": "$$-\\cos 2\\theta$$",
+            "feedback": "This comes from a sign slip in the compound angle formula, incorrectly writing $\\sin(2\\theta + 90^\\circ) = -\\cos 2\\theta$."
+        },
+        {
+            "ans": "$$2\\sin 2\\theta$$",
+            "feedback": "This arises if you forget to apply the double-angle coefficient division when rewriting the product of sine and cosine."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Shifting Sine to Cosine",
+        "content": "Any trigonometric shift of the form $\\sin(x + 90^\\circ)$ can be quickly simplified by visualizing the graphs. The sine graph shifted left by $90^\\circ$ is exactly identical to the standard cosine graph, meaning $\\sin(x + 90^\\circ) \\equiv \\cos x$ without needing the full compound angle expansion!"
+    }
+},
+{
+    "id": "004562",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Trigonometric Proof",
+        "Double-Angle Identities"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Prove the identity: $\\dfrac{ 1 - \\cos 2\\theta }{ \\sin 2\\theta } \\equiv \\tan \\theta$.",
+    "steps": [
+        "We recall the standard double-angle identities for sine and cosine:<br><br>\\begin{aligned} \\cos 2\\theta & = 1 - 2\\sin^2\\theta \\cr \\sin 2\\theta & = 2\\sin\\theta\\cos\\theta \\end{aligned}<br><br>Rearranging the cosine double-angle identity, we can express the numerator as:<br><br>\\begin{aligned} 1 - \\cos 2\\theta & = 2\\sin^2\\theta \\end{aligned}",
+        "Now, we substitute these expressions back into the left-hand side of our identity:<br><br>\\begin{aligned} \\dfrac{ 1 - \\cos 2\\theta }{ \\sin 2\\theta } & = \\dfrac{ 2\\sin^2\\theta }{ 2\\sin\\theta\\cos\\theta } \\end{aligned}<br><br>We can cancel the factor of $2$ and one factor of $\\sin\\theta$ from the numerator and denominator:<br><br>\\begin{aligned} \\dfrac{ 2\\sin^2\\theta }{ 2\\sin\\theta\\cos\\theta } & = \\dfrac{ \\sin^2\\theta }{ \\sin\\theta\\cos\\theta } \\cr & = \\dfrac{ \\sin\\theta }{ \\cos\\theta } \\cr & = \\tan\\theta \\end{aligned}<br><br>Thus, we have proven the identity:<br><br>\\begin{aligned} \\dfrac{ 1 - \\cos 2\\theta }{ \\sin 2\\theta } & \\equiv \\tan\\theta \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\cot \\theta$$",
+            "feedback": "This is the reciprocal of the correct result, which occurs if you invert the fraction or make a reciprocal identity error during algebraic cancellation."
+        },
+        {
+            "ans": "$$\\tan 2\\theta$$",
+            "feedback": "This arises if you make an algebra slip, incorrectly canceling the variables to leave $\\tan 2\\theta$."
+        },
+        {
+            "ans": "$$\\dfrac{ 1 }{ \\cos \\theta }$$",
+            "feedback": "This is caused by a major algebraic simplification error, such as incorrectly canceling terms that are not common factors."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Choosing the Right Double-Angle Form",
+        "content": "Recall that $\\cos 2\\theta$ has three equivalent double-angle forms. When trying to simplify an expression containing $1 - \\cos 2\\theta$ or $1 + \\cos 2\\theta$, always choose the form of $\\cos 2\\theta$ that cancels out the constant $1$. Here, using $1 - 2\\sin^2\\theta$ removes the $1$ from the numerator perfectly."
+    }
+},
+{
+    "id": "004563",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Trigonometric Proof",
+        "Triple-Angle Identities"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Prove the triple-angle identity: $\\cos 3\\theta \\equiv 4\\cos^3\\theta - 3\\cos\\theta$.",
+    "steps": [
+        "We start by splitting the triple angle $3\\theta$ into a sum of a double angle and a single angle, and then applying the cosine compound angle formula:<br><br>\\begin{aligned} \\cos 3\\theta & = \\cos(2\\theta + \\theta) \\cr & = \\cos 2\\theta\\cos\\theta - \\sin 2\\theta\\sin\\theta \\end{aligned}",
+        "Next, we use the double-angle identities for sine and cosine. Since we want our final answer to be written entirely in terms of $\\cos\\theta$, we choose the pure-cosine form for $\\cos 2\\theta$:<br><br>\\begin{aligned} \\cos 2\\theta & = 2\\cos^2\\theta - 1 \\cr \\sin 2\\theta & = 2\\sin\\theta\\cos\\theta \\end{aligned}<br><br>Substituting these into our expanded equation:<br><br>\\begin{aligned} \\cos 3\\theta & = (2\\cos^2\\theta - 1)\\cos\\theta - (2\\sin\\theta\\cos\\theta)\\sin\\theta \\cr & = 2\\cos^3\\theta - \\cos\\theta - 2\\sin^2\\theta\\cos\\theta \\end{aligned}",
+        "To express the entire equation in terms of $\\cos\\theta$, we use the identity $\\sin^2\\theta = 1 - \\cos^2\\theta$ to replace the sine term:<br><br>\\begin{aligned} \\cos 3\\theta & = 2\\cos^3\\theta - \\cos\\theta - 2(1 - \\cos^2\\theta)\\cos\\theta \\cr & = 2\\cos^3\\theta - \\cos\\theta - (2\\cos\\theta - 2\\cos^3\\theta) \\cr & = 2\\cos^3\\theta - \\cos\\theta - 2\\cos\\theta + 2\\cos^3\\theta \\cr & = 4\\cos^3\\theta - 3\\cos\\theta \\end{aligned}<br><br>Thus, the identity is proven:<br><br>\\begin{aligned} \\cos 3\\theta & \\equiv 4\\cos^3\\theta - 3\\cos\\theta \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$3\\cos\\theta - 4\\cos^3\\theta$$",
+            "feedback": "This is the negative of the correct identity, which occurs if you make a sign error when expanding the brackets in the final step."
+        },
+        {
+            "ans": "$$4\\cos^3\\theta + 3\\cos\\theta$$",
+            "feedback": "This results from a sign slip, incorrectly adding $2\\cos\\theta$ instead of subtracting it when combining like terms."
+        },
+        {
+            "ans": "$$3\\cos^3\\theta - 4\\cos\\theta$$",
+            "feedback": "This is caused by transposing the numerical coefficients of the cubed and linear terms."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Structuring Multi-Step Proofs",
+        "content": "For higher-order angle proofs like $\\cos 3\\theta$, always have the target form in mind. Because the right-hand side is written entirely in terms of $\\cos\\theta$, you must proactively eliminate all sine terms using $\\sin^2\\theta = 1 - \\cos^2\\theta$ as early as possible."
+    }
+},
+{
+    "id": "004564",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Trigonometric Proof",
+        "Reciprocal Trigonometry"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Prove the identity: $\\cot \\theta - \\tan \\theta \\equiv 2\\cot 2\\theta$.",
+    "steps": [
+        "We rewrite the left-hand side of our identity using the basic definitions of tangent and cotangent in terms of sine and cosine:<br><br>\\begin{aligned} \\cot\\theta - \\tan\\theta & = \\dfrac{ \\cos\\theta }{ \\sin\\theta } - \\dfrac{ \\sin\\theta }{ \\cos\\theta } \\end{aligned}",
+        "Next, we find a common denominator (which is $\\sin\\theta\\cos\\theta$) to combine these two fractions:<br><br>\\begin{aligned} \\dfrac{ \\cos\\theta }{ \\sin\\theta } - \\dfrac{ \\sin\\theta }{ \\cos\\theta } & = \\dfrac{ \\cos^2\\theta - \\sin^2\\theta }{ \\sin\\theta\\cos\\theta } \\end{aligned}<br><br>We now apply the cosine double-angle identity, $\\cos 2\\theta = \\cos^2\\theta - \\sin^2\\theta$, to simplify the numerator:<br><br>\\begin{aligned} \\dfrac{ \\cos^2\\theta - \\sin^2\\theta }{ \\sin\\theta\\cos\\theta } & = \\dfrac{ \\cos 2\\theta }{ \\sin\\theta\\cos\\theta } \\end{aligned}",
+        "Now, let us rewrite the right-hand side, $2\\cot 2\\theta$, using the double-angle identity for sine, $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$:<br><br>\\begin{aligned} 2\\cot 2\\theta & = 2\\left( \\dfrac{ \\cos 2\\theta }{ \\sin 2\\theta } \\right) \\cr & = 2\\left( \\dfrac{ \\cos 2\\theta }{ 2\\sin\\theta\\cos\\theta } \\right) \\cr & = \\dfrac{ \\cos 2\\theta }{ \\sin\\theta\\cos\\theta } \\end{aligned}<br><br>Since both the left-hand side and the right-hand side simplify to the exact same expression, the identity is proven:<br><br>\\begin{aligned} \\cot \\theta - \\tan \\theta & \\equiv 2\\cot 2\\theta \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\cot 2\\theta$$",
+            "feedback": "This error occurs if you forget the factor of $2$ when rewriting the denominator using the double-angle sine identity."
+        },
+        {
+            "ans": "$$2\\tan 2\\theta$$",
+            "feedback": "This is a reciprocal identity error, incorrectly identifying the cosine-over-sine fraction as tangent instead of cotangent."
+        },
+        {
+            "ans": "$$2\\cot \\theta$$",
+            "feedback": "This results from a major algebraic slip where the double angle is incorrectly simplified to a single angle."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Working from Both Sides",
+        "content": "When proving identities, you do not have to work exclusively from left to right. Often, the easiest path is to simplify the left-hand side and the right-hand side independently until they meet at a common algebraic expression. This is a perfectly valid and robust method for exam proofs!"
+    }
+},
+{
+    "id": "004565",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Quadratic Trigonometric Equations",
+        "Double-Angle Identities"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Show that the equation $3\\cos 2\\theta + 8\\sin\\theta + 5 = 0$ can be written in the form $6\\sin^2\\theta - 8\\sin\\theta - 8 = 0$.<br><br><strong>(ii)</strong> Hence, solve the equation $3\\cos 2\\theta + 8\\sin\\theta + 5 = 0$ for $0^\\circ \\le \\theta \\le 360^\\circ$.",
+    "steps": [
+        "We start with the given equation:<br><br>\\begin{aligned} 3\\cos 2\\theta + 8\\sin\\theta + 5 & = 0 \\end{aligned}<br><br>To express the entire equation in terms of $\\sin\\theta$, we substitute the double-angle identity $\\cos 2\\theta = 1 - 2\\sin^2\\theta$:<br><br>\\begin{aligned} 3(1 - 2\\sin^2\\theta) + 8\\sin\\theta + 5 & = 0 \\cr 3 - 6\\sin^2\\theta + 8\\sin\\theta + 5 & = 0 \\cr -6\\sin^2\\theta + 8\\sin\\theta + 8 & = 0 \\end{aligned}<br><br>Multiplying the entire equation by $-1$ to obtain the desired form:<br><br>\\begin{aligned} 6\\sin^2\\theta - 8\\sin\\theta - 8 & = 0 \\end{aligned}",
+        "To solve this quadratic equation, let $x = \\sin\\theta$. The equation becomes:<br><br>\\begin{aligned} 6x^2 - 8x - 8 & = 0 \\end{aligned}<br><br>Dividing the entire equation by $2$ to simplify:<br><br>\\begin{aligned} 3x^2 - 4x - 4 & = 0 \\end{aligned}<br><br>We can solve this quadratic equation by factoring:<br><br>\\begin{aligned} (3x + 2)(x - 2) & = 0 \\end{aligned}<br><br>This gives two possible solutions for $x$:<br><br>\\begin{aligned} x = 2 \\quad \\text{or} \\quad x = -\\dfrac{ 2 }{ 3 } \\end{aligned}",
+        "Now, we substitute $x = \\sin\\theta$ back into our solutions:<br><br>1. $\\sin\\theta = 2$: Since the range of the sine function is strictly bounded, $-1 \\le \\sin\\theta \\le 1$, this equation has no real solutions.<br><br>2. $\\sin\\theta = -\\dfrac{ 2 }{ 3 }$: We first find the basic acute reference angle $\\alpha$:<br><br>\\begin{aligned} \\alpha & = \\sin^{-1}\\left( \\dfrac{ 2 }{ 3 } \\right) \\cr & \\approx 41.8^\\circ \\end{aligned}<br><br>Since $\\sin\\theta$ is negative, $\\theta$ must lie in Quadrants III and IV within the interval $0^\\circ \\le \\theta \\le 360^\\circ$:<br><br>\\begin{aligned} \\text{Quadrant III:} \\quad \\theta & = 180^\\circ + 41.8^\\circ \\cr & \\approx 221.8^\\circ \\cr \\text{Quadrant IV:} \\quad \\theta & = 360^\\circ - 41.8^\\circ \\cr & \\approx 318.2^\\circ \\end{aligned}<br><br>Thus, the solutions are $\\theta \\approx 221.8^\\circ$ and $\\theta \\approx 318.2^\\circ$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\theta \\approx 41.8^\\circ,\\ 138.2^\\circ$$",
+            "feedback": "This error occurs if you ignore the negative sign of $\\sin\\theta$, solving for the angles in Quadrants I and II instead of III and IV."
+        },
+        {
+            "ans": "$$\\theta \\approx 221.8^\\circ,\\ 318.2^\\circ,\\ 90^\\circ$$",
+            "feedback": "This arises if you make an algebra error solving the quadratic equation, incorrectly keeping a third branch or solving $\\sin\\theta = 1$."
+        },
+        {
+            "ans": "$$\\theta \\approx 138.2^\\circ,\\ 221.8^\\circ$$",
+            "feedback": "This is caused by a quadrant error, incorrectly mixing Quadrant II and Quadrant III solutions."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Discarding Out-of-Range Roots",
+        "content": "When solving quadratic trigonometric equations, you will often find two branches of solutions (such as $\\sin\\theta = 2$ and $\\sin\\theta = -\\frac{2}{3}$). Always remember that sine and cosine are strictly bounded by $[-1, 1]$. Any branch outside this interval yields no real roots and must be explicitly discarded. Leaving it in will cost you a final communication mark!"
+    }
 }
 ];
