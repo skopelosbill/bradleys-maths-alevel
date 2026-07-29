@@ -576,15 +576,15 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "$$S = 997^2$$",
+            "ans": "$S = 997^2$",
             "feedback": "This error occurs if you assume that the square number $S$ must be the square of the prime number itself, rather than setting up and solving the difference of two squares equations."
         },
         {
-            "ans": "$$S = 249001$$",
+            "ans": "$S = 249001$",
             "feedback": "This is a calculation slip where $n$ is incorrectly identified as $499$ (perhaps by halving $997$ incorrectly) before squaring."
         },
         {
-            "ans": "$$S = 247012$$",
+            "ans": "$S = 247012$",
             "feedback": "This arises from an arithmetic addition error in the final step, adding the prime value directly to a squared term without factoring."
         }
     ],
@@ -613,15 +613,15 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "$$n = 41 \\implies 1763 \\text{ which is prime}$$",
+            "ans": "$n = 41 \\implies 1763$ which is prime",
             "feedback": "This is a prime-testing error. The number $1763$ is not prime because it is equal to $41 \\times 43$."
         },
         {
-            "ans": "$$a = \\sqrt{ 2 },\\ b = \\sqrt{ 3 } \\implies \\text{sum is rational}$$",
+            "ans": "$a = \\sqrt{ 2 },\\ b = \\sqrt{ 3 } \\implies$ sum is rational",
             "feedback": "This is a misconception regarding surds. The sum $\\sqrt{ 2 } + \\sqrt{ 3 }$ is irrational, so it cannot serve as a counterexample to the claim."
         },
         {
-            "ans": "$$n = 2k \\implies n^2 = 4k^2 \\text{ which is odd}$$",
+            "ans": "$n = 2k \\implies n^2 = 4k^2$ which is odd",
             "feedback": "This is a parity error. If $n = 2k$, then $n^2 = 4k^2 = 2(2k^2)$, which is even, not odd."
         }
     ],
@@ -650,15 +650,15 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "$$n^3 - n = n^2(n - 1)$$",
+            "ans": "$n^3 - n = n^2(n - 1)$",
             "feedback": "This is a basic factorization error. The term $n^3 - n$ factors to $n(n^2 - 1)$, not $n^2(n - 1)$."
         },
         {
-            "ans": "$$(n + 1)^2 < n^2 + 3n + 1 \\le (n + 2)^2$$",
+            "ans": "$(n + 1)^2 < n^2 + 3n + 1 \\le (n + 2)^2$",
             "feedback": "This is an inequality error. The right-hand boundary is strictly greater than our expression, so the non-strict inequality is incorrect."
         },
         {
-            "ans": "$$n^3 - n \\text{ is odd for all even } n$$",
+            "ans": "$n^3 - n$ is odd for all even $n$",
             "feedback": "This is a parity misconception. If $n$ is even, $n^3$ is even, and an even number minus an even number is always even, never odd."
         }
     ],
@@ -687,15 +687,15 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "$$101 = 52^2 - 49^2$$",
+            "ans": "$101 = 52^2 - 49^2$",
             "feedback": "These are not consecutive square numbers (the base integers are $52$ and $49$, which have a difference of $3$, not $1$)."
         },
         {
-            "ans": "$$m = p + 1,\\ n = p - 1$$",
+            "ans": "$m = p + 1,\\ n = p - 1$",
             "feedback": "This is a formula error. This would lead to a difference of $(p+1)^2 - (p-1)^2 = 4p$, not $p$."
         },
         {
-            "ans": "$$101 = 50.5^2 - 49.5^2$$",
+            "ans": "$101 = 50.5^2 - 49.5^2$",
             "feedback": "These are not integers, so they do not satisfy the definition of square numbers in number theory."
         }
     ],
@@ -724,15 +724,15 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "$$\\sqrt{ 2 } = \\dfrac{ a }{ b } \\implies a^2 = b^2$$",
+            "ans": "$\\sqrt{ 2 } = \\dfrac{ a }{ b } \\implies a^2 = b^2$",
             "feedback": "This is a squaring error. Squaring both sides of $\\sqrt{ 2 } = \\dfrac{ a }{ b }$ yields $2 = \\dfrac{ a^2 }{ b^2 } \\implies a^2 = 2b^2$, not $a^2 = b^2$."
         },
         {
-            "ans": "$$a^2 = 2b^2 \\implies a \\text{ is odd}$$",
+            "ans": "$a^2 = 2b^2 \\implies a$ is odd",
             "feedback": "This is a parity error. If $a^2 = 2b^2$, then $a^2$ is a multiple of $2$ (even), which mathematically guarantees that $a$ is even, not odd."
         },
         {
-            "ans": "$$3 + 2\\sqrt{ 2 } = 5\\sqrt{ 2 }$$",
+            "ans": "$3 + 2\\sqrt{ 2 } = 5\\sqrt{ 2 }$",
             "feedback": "This is an arithmetic error. You cannot add the rational integer $3$ directly to the coefficient of the surd; $3$ and $2\\sqrt{ 2 }$ are not like terms."
         }
     ],
