@@ -741,5 +741,199 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Simplest Form Assumption",
         "content": "The most critical step in proving the irrationality of surds (like $\\sqrt{2}$ or $\\sqrt{3}$) is the initial setup. You must explicitly state that the fraction $\\frac{a}{b}$ is in its simplest form (or that $a$ and $b$ are coprime). Without this boundary assumption, finding that both $a$ and $b$ are even does not lead to a contradiction, and you will lose the majority of the marks!"
     }
+},
+{
+    "id": "004571",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Calculus",
+    "subtopic": [
+        "Differentiation",
+        "Turning Points",
+        "Quotient Rule"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Find the $x$-coordinate of the point where the curve $y = \\dfrac{ \\ln x }{ x^2 }$ crosses the $x$-axis.<br><br><strong>(ii)</strong> The points $A$ and $B$ lie on the curve and have $x$-coordinates $\\sqrt{2}$ and $2$. Show that the line $AB$ is parallel to the $x$-axis.<br><br><strong>(iii)</strong> Find the exact coordinates of the turning point on the curve.<br><br><strong>(iv)</strong> Determine whether this turning point is a maximum or a minimum.",
+    "steps": [
+        "The curve crosses the $x$-axis when $y = 0$. We set our equation to zero and solve for $x$:<br><br>\\begin{aligned} \\dfrac{ \\ln x }{ x^2 } & = 0 \\cr \\ln x & = 0 \\cr x & = e^0 \\cr x & = 1 \\end{aligned}<br><br>Thus, the $x$-coordinate of the crossing point is $1$.",
+        "To show that the straight line connecting $A$ and $B$ is parallel to the $x$-axis, we must demonstrate that their $y$-coordinates are identical, which means the line connecting them is horizontal (having a gradient of zero).<br><br>First, let us calculate the $y$-coordinate of point $A$ where $x = \\sqrt{2}$:<br><br>\\begin{aligned} y_A & = \\dfrac{ \\ln(\\sqrt{2}) }{ (\\sqrt{2})^2 } \\cr & = \\dfrac{ \\ln\\left( 2^{ 1/2 } \\right) }{ 2 } \\cr & = \\dfrac{ \\dfrac{ 1 }{ 2 }\\ln 2 }{ 2 } \\cr & = \\dfrac{ \\ln 2 }{ 4 } \\end{aligned}<br><br>Next, let us calculate the $y$-coordinate of point $B$ where $x = 2$:<br><br>\\begin{aligned} y_B & = \\dfrac{ \\ln 2 }{ 2^2 } \\cr & = \\dfrac{ \\ln 2 }{ 4 } \\end{aligned}<br><br>Since $y_A = y_B = \\dfrac{ \\ln 2 }{ 4 }$, both points lie at the exact same vertical height. Therefore, the straight line $AB$ is horizontal, making it parallel to the $x$-axis.",
+        "To find the turning point of the curve $y = \\dfrac{ \\ln x }{ x^2 }$, we first find the derivative $\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x }$ using the quotient rule, where $u = \\ln x$ and $v = x^2$:<br><br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } & = \\dfrac{ u'v - uv' }{ v^2 } \\cr & = \\dfrac{ \\left( \\dfrac{ 1 }{ x } \\right)(x^2) - (\\ln x)(2x) }{ (x^2)^2 } \\cr & = \\dfrac{ x - 2x\\ln x }{ x^4 } \\cr & = \\dfrac{ x(1 - 2\\ln x) }{ x^4 } \\cr & = \\dfrac{ 1 - 2\\ln x }{ x^3 } \\end{aligned}<br><br>At a turning point, the gradient must be zero:<br><br>\\begin{aligned} \\dfrac{ 1 - 2\\ln x }{ x^3 } & = 0 \\cr 1 - 2\\ln x & = 0 \\cr \\ln x & = \\dfrac{ 1 }{ 2 } \\cr x & = e^{ 1/2 } = \\sqrt{e} \\end{aligned}<br><br>Now we substitute $x = \\sqrt{e}$ back into our original equation to find the corresponding $y$-coordinate:<br><br>\\begin{aligned} y & = \\dfrac{ \\ln(\\sqrt{e}) }{ (\\sqrt{e})^2 } \\cr & = \\dfrac{ \\dfrac{ 1 }{ 2 } }{ e } \\cr & = \\dfrac{ 1 }{ 2e } \\end{aligned}<br><br>Thus, the exact coordinates of the turning point are $\\left( \\sqrt{e}, \\dfrac{ 1 }{ 2e } \\right)$.",
+        "To determine the nature of the turning point, we find the second derivative $\\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 }$ using the quotient rule on $\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ 1 - 2\\ln x }{ x^3 }$:<br><br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 } & = \\dfrac{ \\left( -\\dfrac{ 2 }{ x } \\right)(x^3) - (1 - 2\\ln x)(3x^2) }{ (x^3)^2 } \\cr & = \\dfrac{ -2x^2 - 3x^2(1 - 2\\ln x) }{ x^6 } \\cr & = \\dfrac{ x^2\\left[ -2 - 3 + 6\\ln x \\right] }{ x^6 } \\cr & = \\dfrac{ -5 + 6\\ln x }{ x^4 } \\end{aligned}<br><br>Now, we substitute the $x$-coordinate of our turning point ($x = \\sqrt{e}$, meaning $\\ln x = \\dfrac{ 1 }{ 2 }$) into this expression:<br><br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 } & = \\dfrac{ -5 + 6\\left( \\dfrac{ 1 }{ 2 } \\right) }{ (\\sqrt{e})^4 } \\cr & = \\dfrac{ -5 + 3 }{ e^2 } \\cr & = -\\dfrac{ 2 }{ e^2 } \\end{aligned}<br><br>Since the second derivative $-\\dfrac{ 2 }{ e^2 } < 0$, it is strictly negative. Therefore, the turning point is a local maximum."
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\left( e, \\dfrac{ 1 }{ e^2 } \\right)$ is a local minimum",
+            "feedback": "This arises if you make an algebra error solving $1-2\\ln x = 0$, incorrectly obtaining $\\ln x = 1 \\implies x = e$, and misidentify the nature of the turning point."
+        },
+        {
+            "ans": "$\\left( \\sqrt{e}, \\dfrac{ 1 }{ 2e } \\right)$ is a local minimum",
+            "feedback": "This is a classification error, incorrectly interpreting a negative second derivative as indicating a minimum instead of a maximum."
+        },
+        {
+            "ans": "$\\left( 1, 0 \\right)$ is a local maximum",
+            "feedback": "This is a conceptual error, confusing the $x$-axis crossing point with the turning point of the curve."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Turning Point of Log Fractions",
+        "content": "When differentiating logarithmic fractions like $\\dfrac{\\ln x}{x^2}$, always use the quotient rule carefully. A common mistake is to lose the factors of $x$ when simplifying the numerator. Always factorize the $x$ term in the numerator before canceling it with the denominator power to keep your derivative expression perfectly clean."
+    }
+},
+{
+    "id": "004572",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Calculus",
+    "subtopic": [
+        "Differentiation",
+        "Turning Points",
+        "Cubic Curves"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Write down the coordinates of the point where the curve $y = 2x^3 - 9x^2 + 12x - 3$ crosses the $y$-axis.<br><br><strong>(ii)</strong> Find the coordinates of the two turning points of the curve.<br><br><strong>(iii)</strong> Determine the nature of each turning point using the second derivative.<br><br><strong>(iv)</strong> Show that the line connecting the two turning points has a gradient of exactly $-1$.",
+    "steps": [
+        "The curve crosses the $y$-axis when $x = 0$. Substituting $x = 0$ into our cubic equation:<br><br>\\begin{aligned} y(0) & = 2(0)^3 - 9(0)^2 + 12(0) - 3 \\cr & = -3 \\end{aligned}<br><br>Thus, the coordinates of the $y$-axis crossing point are $(0, -3)$.",
+        "To find the turning points of the curve, we calculate the first derivative and set it to zero:<br><br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } & = 6x^2 - 18x + 12 \\end{aligned}<br><br>Setting the gradient to zero:<br><br>\\begin{aligned} 6x^2 - 18x + 12 & = 0 \\cr 6(x^2 - 3x + 2) & = 0 \\cr 6(x - 1)(x - 2) & = 0 \\end{aligned}<br><br>This gives two stationary values: $x = 1$ or $x = 2$. Next, we substitute these back into our original equation to find their corresponding $y$-coordinates:<br><br>1. For $x = 1$:<br>\\begin{aligned} y & = 2(1)^3 - 9(1)^2 + 12(1) - 3 \\cr & = 2 - 9 + 12 - 3 \\cr & = 2 \\end{aligned}<br><br>2. For $x = 2$:<br>\\begin{aligned} y & = 2(2)^3 - 9(2)^2 + 12(2) - 3 \\cr & = 16 - 36 + 24 - 3 \\cr & = 1 \\end{aligned}<br><br>Thus, the coordinates of the two turning points are $(1, 2)$ and $(2, 1)$.",
+        "To find the nature of each turning point, we calculate the second derivative of our curve:<br><br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 } & = 12x - 18 \\end{aligned}<br><br>Now, we evaluate this second derivative at both turning points:<br><br>1. At $x = 1$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 } & = 12(1) - 18 \\cr & = -6 \\end{aligned}<br><br>Since $-6 < 0$, the turning point $(1, 2)$ is a local maximum.<br><br>2. At $x = 2$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 } & = 12(2) - 18 \\cr & = 6 \\end{aligned}<br><br>Since $6 > 0$, the turning point $(2, 1)$ is a local minimum.",
+        "To find the gradient of the straight line connecting the turning points $T_1(1, 2)$ and $T_2(2, 1)$, we use the standard gradient formula $m = \\dfrac{ y_2 - y_1 }{ x_2 - x_1 }$:<br><br>\\begin{aligned} m & = \\dfrac{ 1 - 2 }{ 2 - 1 } \\cr & = \\dfrac;{ -1 }{ 1 } \\cr & = -1 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$(1, 2)$ and $(2, -3)$",
+            "feedback": "This is caused by an arithmetic sign error when calculating the $y$-coordinate of the second stationary point."
+        },
+        {
+            "ans": "$(1, 3)$ and $(2, 1)$",
+            "feedback": "This arises from a simple addition error when substituting $x = 1$ back into the original cubic equation."
+        },
+        {
+            "ans": "$(1, -1)$ and $(2, -5)$",
+            "feedback": "This is caused by a major sign error where you subtract the linear term instead of adding it when evaluating the $y$-coordinates."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Double Turning Points",
+        "content": "For cubic curves, the second derivative $\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12x - 18$ is a linear expression. Since it has only one root, the second derivative must have opposite signs at the two stationary points. This means a standard cubic curve with two stationary points will always have exactly one local maximum and one local minimum."
+    }
+},
+{
+    "id": "004573",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Calculus",
+    "subtopic": [
+        "Differentiation",
+        "Product Rule",
+        "Limits at Infinity"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Find the coordinates of the point where the curve $y = x^2 e^{-x}$ crosses the coordinate axes.<br><br><strong>(ii)</strong> Find the coordinates of the two stationary points on the curve, giving your answers in exact form.<br><br><strong>(iii)</strong> Use the second derivative to determine the nature of each stationary point.<br><br><strong>(iv)</strong> State what happens to the value of $y$ as $x \\to \\infty$.",
+    "steps": [
+        "The curve crosses the $y$-axis when $x = 0$. Substituting $x = 0$ into our equation:<br><br>\\begin{aligned} y(0) & = (0)^2 e^{-0} \\cr & = 0 \\end{aligned}<br><br>To find where the curve crosses the $x$-axis, we set $y = 0$:<br><br>\\begin{aligned} x^2 e^{-x} & = 0 \\end{aligned}<br><br>Since $e^{-x} \\ne 0$ for all real values of $x$, this equation is satisfied if and only if $x^2 = 0 \\implies x = 0$.<br><br>Therefore, the curve crosses both coordinate axes exactly at the origin, $(0, 0)$.",
+        "To find the stationary points on the curve $y = x^2 e^{-x}$, we use the product rule to find the first derivative, where $u = x^2$ and $v = e^{-x}$:<br><br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } & = u'v + uv' \\cr & = (2x)(e^{-x}) + (x^2)(-e^{-x}) \\cr & = (2x - x^2)e^{-x} \\cr & = x(2 - x)e^{-x} \\end{aligned}<br><br>Setting this gradient to zero to locate our stationary values:<br><br>\\begin{aligned} x(2 - x)e^{-x} & = 0 \\end{aligned}<br><br>Since $e^{-x} \\ne 0$, this yields $x = 0$ or $x = 2$. Next, we find the exact $y$-coordinates of these points:<br><br>1. For $x = 0$: $y = 0 \\implies (0, 0)$.<br>2. For $x = 2$: $y = 2^2 e^{-2} = 4e^{-2} = \\dfrac{ 4 }{ e^2 } \\implies \\left( 2, \\dfrac{ 4 }{ e^2 } \\right)$.<br><br>Thus, the exact coordinates of the stationary points are $(0, 0)$ and $\\left( 2, \\dfrac{ 4 }{ e^2 } \\right)$.",
+        "To find the nature of each stationary point, we find the second derivative using the product rule on $\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = (2x - x^2)e^{-x}$, with $u = 2x - x^2$ and $v = e^{-x}$:<br><br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 } & = (2 - 2x)(e^{-x}) + (2x - x^2)(-e^{-x}) \\cr & = (2 - 2x - 2x + x^2)e^{-x} \\cr & = (x^2 - 4x + 2)e^{-x} \\end{aligned}<br><br>Now, we evaluate this second derivative at both of our stationary values:<br><br>1. At $x = 0$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 } & = (0^2 - 4(0) + 2)e^0 \\cr & = 2 \\end{aligned}<br><br>Since $2 > 0$, the stationary point $(0, 0)$ is a local minimum.<br><br>2. At $x = 2$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 } & = (2^2 - 4(2) + 2)e^{-2} \\cr & = (4 - 8 + 2)e^{-2} \\cr & = -2e^{-2} = -\\dfrac{ 2 }{ e^2 } \\end{aligned}<br><br>Since $-\\dfrac{ 2 }{ e^2 } < 0$, the stationary point $\\left( 2, \\dfrac{ 4 }{ e^2 } \\right)$ is a local maximum.",
+        "We analyze the limiting behavior of the curve as $x \\to \\infty$:<br><br>\\begin{aligned} \\lim_{ x \\to \\infty } y & = \\lim_{ x \\to \\infty } \\dfrac{ x^2 }{ e^x } \\end{aligned}<br><br>As $x$ becomes extremely large, the exponential term $e^x$ grows at an infinitely faster rate than the polynomial term $x^2$. Therefore, the value of the fraction approaches zero:<br><br>\\begin{aligned} y & \\to 0 \\quad \\text{as} \\quad x \\to \\infty \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$y \\to \\infty$ as $x \\to \\infty$",
+            "feedback": "This error occurs if you assume the polynomial term $x^2$ dominates the growth of the expression, ignoring the decaying nature of the exponential divisor $e^x$."
+        },
+        {
+            "ans": "$y \\to 1$ as $x \\to \\infty$",
+            "feedback": "This is a conceptual error, assuming the curve reaches a stable non-zero horizontal asymptote instead of decaying to zero."
+        },
+        {
+            "ans": "$y \\to -\\infty$ as $x \\to \\infty$",
+            "feedback": "This arises from a sign error when evaluating the behavior of the negative exponent as $x$ increases."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Product Rule with e^-x",
+        "content": "When differentiating functions multiplied by $e^{-x}$ (or $e^{kx}$), the exponential term will always appear in every term of the derivative. To keep your work error-free, always factor out the $e^{-x}$ term immediately. This leaves a clean, simple polynomial that is easy to factorize and solve for stationary values."
+    }
+},
+{
+    "id": "004574",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Calculus",
+    "subtopic": [
+        "Differentiation",
+        "Stationary Points",
+        "Rational Functions"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Find the set of values of $x$ for which the curve $y = x + \\dfrac{ 4 }{ x }$ for $x \\ne 0$ is increasing.<br><br><strong>(ii)</strong> Find the coordinates of the stationary points on the curve.<br><br><strong>(iii)</strong> Use the second derivative to determine the nature of each stationary point.<br><br><strong>(iv)</strong> Show that the straight line connecting the two stationary points passes through the origin.",
+    "steps": [
+        "To find where the curve is increasing, we first calculate the derivative $\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x }$:<br><br>\\begin{aligned} y & = x + 4x^{-1} \\cr \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } & = 1 - 4x^{-2} \\cr & = 1 - \\dfrac{ 4 }{ x^2 } \\end{aligned}<br><br>For the curve to be increasing, the gradient must be strictly positive:<br><br>\\begin{aligned} 1 - \\dfrac{ 4 }{ x^2 } & > 0 \\cr 1 & > \\dfrac{ 4 }{ x^2 } \\cr x^2 & > 4 \\end{aligned}<br><br>Taking the square root on both sides (and accounting for both positive and negative branches of the inequality):<br><br>\\begin{aligned} x > 2 \\quad \\text{or} \\quad x < -2 \\end{aligned}<br><br>Thus, the set of values for which the curve is increasing is $\{ x : x < -2 \} \\cup \{ x : x > 2 \}$.",
+        "At a stationary point, the gradient must equal zero:<br><br>\\begin{aligned} 1 - \\dfrac{ 4 }{ x^2 } & = 0 \\cr x^2 & = 4 \\cr x & = \\pm 2 \\end{aligned}<br><br>Next, we substitute $x = 2$ and $x = -2$ back into our original equation to find their corresponding $y$-coordinates:<br><br>1. For $x = 2$: $y = 2 + \\dfrac{ 4 }{ 2 } = 4 \\implies (2, 4)$.<br>2. For $x = -2$: $y = -2 + \\dfrac{ 4 }{ -2 } = -4 \\implies (-2, -4)$.<br><br>Thus, the coordinates of the stationary points are $(2, 4)$ and $(-2, -4)$.",
+        "To determine the nature of each stationary point, we find the second derivative of our function:<br><br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 } & = \\dfrac{ \\mathrm{d} }{ \\mathrm{d}x }\\left( 1 - 4x^{-2} \\right) \\cr & = 8x^{-3} \\cr & = \\dfrac{ 8 }{ x^3 } \\end{aligned}<br><br>Now, we evaluate this second derivative at both stationary points:<br><br>1. At $x = 2$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 } & = \\dfrac{ 8 }{ 2^3 } \\cr & = 1 \\end{aligned}<br><br>Since $1 > 0$, the stationary point $(2, 4)$ is a local minimum.<br><br>2. At $x = -2$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 } & = \\dfrac{ 8 }{ (-2)^3 } \\cr & = -1 \\end{aligned}<br><br>Since $-1 < 0$, the stationary point $(-2, -4)$ is a local maximum.",
+        "The two stationary points are $P(2, 4)$ and $Q(-2, -4)$. The gradient of the line connecting them is:<br><br>\\begin{aligned} m & = \\dfrac{ -4 - 4 }{ -2 - 2 } \\cr & = \\dfrac{ -8 }{ -4 } \\cr & = 2 \\end{aligned}<br><br>Using the point-slope formula $y - y_1 = m(x - x_1)$ to write the equation of the line passing through $P(2, 4)$:<br><br>\\begin{aligned} y - 4 & = 2(x - 2) \\cr y - 4 & = 2x - 4 \\cr y & = 2x \\end{aligned}<br><br>To show that this line passes through the origin, we substitute $x = 0$:<br><br>\\begin{aligned} y & = 2(0) \\cr & = 0 \\end{aligned}<br><br>Since $(0, 0)$ satisfies the equation of the line, the line connecting the two stationary points passes directly through the origin."
+    ],
+    "pi_options": [
+        {
+            "ans": "$-2 < x < 2$",
+            "feedback": "This is an inequality interval reversal, which incorrectly defines the range where the curve is decreasing ($\\frac{\\mathrm{d}y}{\\mathrm{d}x} < 0$)."
+        },
+        {
+            "ans": "$x > 2$ only",
+            "feedback": "This is incomplete because it completely ignores the negative branch of the square root inequality $x^2 > 4$."
+        },
+        {
+            "ans": "$x < -4$ or $x > 4$",
+            "feedback": "This error occurs if you fail to take the square root of $4$ when solving the inequality $x^2 > 4$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Solving Quadratic Inequalities",
+        "content": "When solving basic quadratic inequalities like $x^2 > 4$, be extremely vigilant. A very common student slip is to write $x > \\pm 2$, which is mathematically meaningless. Always split the inequality into its two correct branches: $x > 2$ or $x < -2$."
+    }
+},
+{
+    "id": "004575",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Calculus",
+    "subtopic": [
+        "Differentiation",
+        "Product Rule",
+        "Trigonometric Stationary Points"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Find the $x$-coordinates of the points where the curve $y = e^x \\sin x$ crosses the $x$-axis on the interval $0 \\le x \\le \\pi$.<br><br><strong>(ii)</strong> Find the exact coordinates of the stationary point on the curve within this interval.<br><br><strong>(iii)</strong> Show that this stationary point is a local maximum.",
+    "steps": [
+        "The curve crosses the $x$-axis when $y = 0$. We set our equation to zero on the interval $0 \\le x \\le \\pi$:<br><br>\\begin{aligned} e^x \\sin x & = 0 \\end{aligned}<br><br>Since $e^x > 0$ for all real values of $x$, this equation is satisfied if and only if $\\sin x = 0$. On the interval $0 \\le x \\le \\pi$, the solutions are:<br><br>\\begin{aligned} x = 0 \\quad \\text{or} \\quad x = \\pi \\end{aligned}<br><br>Thus, the $x$-coordinates of the crossings are $0$ and $\\pi$.",
+        "To find the stationary point, we use the product rule to find the derivative $\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x }$, where $u = e^x$ and $v = \\sin x$:<br><br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } & = u'v + uv' \\cr & = (e^x)(\\sin x) + (e^x)(\\cos x) \\cr & = e^x(\\sin x + \\cos x) \\end{aligned}<br><br>We set this gradient to zero to find our stationary value:<br><br>\\begin{aligned} e^x(\\sin x + \\cos x) & = 0 \\end{aligned}<br><br>Since $e^x \\ne 0$, we solve $\\sin x + \\cos x = 0$. Dividing by $\\cos x$ (which is non-zero when the sum is zero):<br><br>\\begin{aligned} \\tan x + 1 & = 0 \\cr \\tan x & = -1 \\end{aligned}<br><br>On the interval $0 \\le x \\le \\pi$, the only solution to $\\tan x = -1$ is in Quadrant II:<br><br>\\begin{aligned} x & = \\pi - \\dfrac{ \\pi }{ 4 } \\cr & = \\dfrac{ 3\\pi }{ 4 } \\end{aligned}<br><br>Now, we substitute $x = \\dfrac{ 3\\pi }{ 4 }$ back into the original equation to find the exact $y$-coordinate:<br><br>\\begin{aligned} y & = e^{ 3\\pi / 4 } \\sin\\left( \\dfrac{ 3\\pi }{ 4 } \\right) \\cr & = e^{ 3\\pi / 4 } \\left( \\dfrac{ \\sqrt{2} }{ 2 } \\right) \\cr & = \\dfrac{ \\sqrt{2} }{ 2 } e^{ 3\\pi / 4 } \\end{aligned}<br><br>Thus, the exact coordinates of the stationary point are $\\left( \\dfrac{ 3\\pi }{ 4 }, \\dfrac{ \\sqrt{2} }{ 2 } e^{ 3\\pi / 4 } \\right)$.",
+        "To prove that this stationary point is a local maximum, we find the second derivative using the product rule on $\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = e^x(\\sin x + \\cos x)$, with $u = e^x$ and $v = \\sin x + \\cos x$:<br><br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 } & = (e^x)(\\sin x + \\cos x) + (e^x)(\\cos x - \\sin x) \\cr & = e^x(\\sin x + \\cos x + \\cos x - \\sin x) \\cr & = 2e^x \\cos x \\end{aligned}<br><br>Now, we evaluate this second derivative at our stationary point $x = \\dfrac{ 3\\pi }{ 4 }$:<br><br>\\begin{aligned} \\dfrac{ \\mathrm{d}^2y }{ \\mathrm{d}x^2 } & = 2e^{ 3\\pi / 4 } \\cos\\left( \\dfrac{ 3\\pi }{ 4 } \\right) \\cr & = 2e^{ 3\\pi / 4 } \\left( -\\dfrac{ \\sqrt{2} }{ 2 } \\right) \\cr & = -\\sqrt{2}e^{ 3\\pi / 4 } \\end{aligned}<br><br>Since $e^{ 3\\pi / 4 } > 0$ and $-\\sqrt{2} < 0$, the second derivative $-\\sqrt{2}e^{ 3\\pi / 4 } < 0$ is strictly negative. Therefore, the stationary point is indeed a local maximum."
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\left( \\dfrac{ \\pi }{ 4 }, \\dfrac{ \\sqrt{2} }{ 2 } e^{ \\pi / 4 } \\right)$ is a local maximum",
+            "feedback": "This is a quadrant error, incorrectly solving $\\tan x = 1$ instead of $\\tan x = -1$, yielding a Quadrant I stationary point."
+        },
+        {
+            "ans": "$$\\left( \\dfrac{ 3\\pi }{ 4 }, \\dfrac{ \\sqrt{2} }{ 2 } e^{ 3\\pi / 4 } \\right)$ is a local minimum",
+            "feedback": "This is a classification error, incorrectly assuming that a negative second derivative indicates a minimum instead of a maximum."
+        },
+        {
+            "ans": "$\\left( \\dfrac{ \\pi }{ 2 }, e^{ \\pi / 2 } \\right)$ is a local maximum",
+            "feedback": "This occurs if you incorrectly differentiate the function or assume the stationary point occurs at the peak of the sine wave."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Restricted Domain Stationary Points",
+        "content": "When solving trigonometric stationary points like $\\tan x = -1$, always pay extreme attention to the interval constraints (here $0 \\le x \\le \\pi$). While tangent has infinitely many solutions, only $x = \\dfrac{3\\pi}{4}$ lies in Quadrant II of this restricted domain. Always check your boundaries first!"
+    }
 }
 ];
