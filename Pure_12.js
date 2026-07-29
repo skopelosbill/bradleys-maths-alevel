@@ -556,5 +556,190 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Discarding Out-of-Range Roots",
         "content": "When solving quadratic trigonometric equations, you will often find two branches of solutions (such as $\\sin\\theta = 2$ and $\\sin\\theta = -\\frac{2}{3}$). Always remember that sine and cosine are strictly bounded by $[-1, 1]$. Any branch outside this interval yields no real roots and must be explicitly discarded. Leaving it in will cost you a final communication mark!"
     }
+},
+{
+    "id": "004566",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Proof",
+    "subtopic": [
+        "Proof by Contradiction",
+        "Number Theory"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Give an example to show that the statement: <em>\"The sum of a square number and three times a prime number cannot be a square number\"</em> is not true.<br><br><strong>(ii)</strong> Ben attempts to prove this statement using contradiction, as shown below:<br><br><em>Assume that the statement is not true.<br>$\\implies$ There exist integers $n$ and $m$ and a prime $p$ such that $n^2 + 3p = m^2$.<br>$\\implies 3p = m^2 - n^2$<br>$\\implies 3p = (m - n)(m + n)$<br>Since $3$ is prime, then $(m - n)$ must be equal to $3$ and $(m + n)$ must be equal to $p$, which means $m$ and $n$ cannot both be integers if $p$ is even. This is a contradiction, so the statement is true.</em><br><br>Explain the mathematical error that Ben has made in his proof.<br><br><strong>(iii)</strong> Given that $997$ is a prime number, find the square number $S$ such that $S + 3 \\times 997$ is also a square number.",
+    "steps": [
+        "To disprove the statement, we need to find a single counterexample consisting of a square number $n^2$, a prime number $p$, and another square number $m^2$ such that $n^2 + 3p = m^2$.<br><br>Let us choose the prime number $p = 5$ and the square number $n^2 = 49$ (which is $7^2$):<br><br>\\begin{aligned} n^2 + 3p & = 49 + 3(5) \\cr & = 49 + 15 \\cr & = 64 \\end{aligned}<br><br>Since $64$ is also a square number ($8^2$), we have found a valid counterexample. Thus, the statement is false.",
+        "Ben made a fundamental logical error in his factorization step. When he wrote $3p = (m - n)(m + n)$, he assumed that the only possible integer factors of $3p$ are $3$ and $p$.<br><br>In reality, since both $3$ and $p$ are prime, the composite number $3p$ has four distinct positive factors: $1, 3, p,$ and $3p$. Therefore, the factor brackets $(m - n)$ and $(m + n)$ could also be equal to $1$ and $3p$ respectively, which Ben completely failed to consider.<br><br>Additionally, Ben's final statement regarding $p$ being even is mathematically flawed because $2$ is the only even prime, and for all other primes, $p$ is odd.",
+        "We want to find a square number $S = n^2$ such that $n^2 + 3(997) = m^2$ for some integer $m$. This can be rearranged as:<br><br>\\begin{aligned} m^2 - n^2 & = 3(997) \\cr (m - n)(m + n) & = 2991 \\end{aligned}<br><br>Since $997$ is prime, the positive integer factor pairs of $2991$ are $(1, 2991)$ and $(3, 997)$. Let us test both cases:<br><br><strong>Case 1: Using the factor pair $(3, 997)$</strong><br>\\begin{aligned} m - n & = 3 \\cr m + n & = 997 \\end{aligned}<br><br>Subtracting the first equation from the second gives:<br><br>\\begin{aligned} 2n & = 994 \\cr n & = 497 \\end{aligned}<br><br>This yields the square number $S = n^2 = 497^2 = 247009$. (Check: $247009 + 2991 = 250000 = 500^2$, which is a square).<br><br><strong>Case 2: Using the factor pair $(1, 2991)$</strong><br>\\begin{aligned} m - n & = 1 \\cr m + n & = 2991 \\end{aligned}<br><br>Subtracting the first equation from the second gives:<br><br>\\begin{aligned} 2n & = 2990 \\cr n & = 1495 \\end{aligned}<br><br>This yields the square number $S = n^2 = 1495^2 = 2235025$. (Check: $2235025 + 2991 = 2238016 = 1496^2$).<br><br>Both $247009$ and $2235025$ are perfectly valid square numbers."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$S = 997^2$$",
+            "feedback": "This error occurs if you assume that the square number $S$ must be the square of the prime number itself, rather than setting up and solving the difference of two squares equations."
+        },
+        {
+            "ans": "$$S = 249001$$",
+            "feedback": "This is a calculation slip where $n$ is incorrectly identified as $499$ (perhaps by halving $997$ incorrectly) before squaring."
+        },
+        {
+            "ans": "$$S = 247012$$",
+            "feedback": "This arises from an arithmetic addition error in the final step, adding the prime value directly to a squared term without factoring."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Factors of Prime Products",
+        "content": "When solving equations of the form $(m - n)(m + n) = q$ where $q$ is the product of two primes $q = ab$, remember that $q$ has four positive factors: $1, a, b,$ and $ab$. A common student error is to only solve for the factor pair $(a, b)$ and completely forget the boundary factor pair $(1, ab)$, which always yields a second valid set of integer solutions!"
+    }
+},
+{
+    "id": "004567",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Proof",
+    "subtopic": [
+        "Proof by Counterexample",
+        "Proof by Contradiction"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> A student claims that <em>\"For all positive integers $n$, the expression $n^2 + n + 41$ always produces a prime number.\"</em> Find a counterexample to show that this claim is false.<br><br><strong>(ii)</strong> Another student claims that <em>\"If $a$ and $b$ are irrational numbers, then the sum $a + b$ must also be irrational.\"</em> Find a counterexample to show that this claim is false.<br><br><strong>(iii)</strong> Prove by contradiction that if $n^2$ is an even integer, then $n$ must be an even integer.",
+    "steps": [
+        "To show that the expression $n^2 + n + 41$ does not always produce a prime number, we only need to find a single positive integer $n$ for which the result is composite.<br><br>Let us substitute $n = 41$ into the expression:<br><br>\\begin{aligned} n^2 + n + 41 & = 41^2 + 41 + 41 \\cr & = 41(41 + 1 + 1) \\cr & = 41(43) \\cr & = 1763 \\end{aligned}<br><br>Since $1763$ is the product of $41$ and $43$, it is a composite number. (Substituting $n = 40$ also works, yielding $40^2 + 40 + 41 = 41^2 = 1681$, which is composite). Thus, the claim is disproven by counterexample.",
+        "To disprove the claim that the sum of two irrational numbers must be irrational, we must find two irrational numbers $a$ and $b$ whose sum is rational.<br><br>Let $a = 3 + \\sqrt{ 2 }$ and $b = 3 - \\sqrt{ 2 }$. Both $a$ and $b$ are irrational because they are the sum/difference of a rational and an irrational number.<br><br>Now, let us find their sum:<br><br>\\begin{aligned} a + b & = (3 + \\sqrt{ 2 }) + (3 - \\sqrt{ 2 }) \\cr & = 6 \\end{aligned}<br><br>Since $6$ is a rational number, we have found a valid counterexample. Thus, the claim is false.",
+        "We prove the statement by contradiction. First, we assume the negation of the statement is true:<br><br><em>Assume that $n^2$ is an even integer AND $n$ is an odd integer.</em><br><br>Since $n$ is an odd integer, it can be written in the form $n = 2k + 1$ for some integer $k$. Squaring both sides:<br><br>\\begin{aligned} n^2 & = (2k + 1)^2 \\cr & = 4k^2 + 4k + 1 \\cr & = 2(2k^2 + 2k) + 1 \\cr & = 2M + 1 \\end{aligned}<br><br>where $M = 2k^2 + 2k$ is an integer. This shows that $n^2$ must be an odd integer.<br><br>However, this directly contradicts our initial assumption that $n^2$ is an even integer. Therefore, our assumption that $n$ is odd must be false, meaning $n$ must be an even integer."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$n = 41 \\implies 1763 \\text{ which is prime}$$",
+            "feedback": "This is a prime-testing error. The number $1763$ is not prime because it is equal to $41 \\times 43$."
+        },
+        {
+            "ans": "$$a = \\sqrt{ 2 },\\ b = \\sqrt{ 3 } \\implies \\text{sum is rational}$$",
+            "feedback": "This is a misconception regarding surds. The sum $\\sqrt{ 2 } + \\sqrt{ 3 }$ is irrational, so it cannot serve as a counterexample to the claim."
+        },
+        {
+            "ans": "$$n = 2k \\implies n^2 = 4k^2 \\text{ which is odd}$$",
+            "feedback": "This is a parity error. If $n = 2k$, then $n^2 = 4k^2 = 2(2k^2)$, which is even, not odd."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Disproving Universal Statements",
+        "content": "In A Level Mathematics, remember that a universal statement (one claiming a property holds <em>for all</em> values) can be completely shattered by a single counterexample. You do not need a general proof to show a statement is false—finding just one value that fails (like $n = 41$ for Euler's polynomial) is mathematically complete and sufficient."
+    }
+},
+{
+    "id": "004568",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Proof",
+    "subtopic": [
+        "Proof by Exhaustion",
+        "Algebraic Proof"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Prove by exhaustion that the expression $n^3 - n$ is a multiple of $3$ for all integers $n$ in the interval $1 \\le n \\le 5$.<br><br><strong>(ii)</strong> Show algebraically that the expression $n^3 - n$ is a multiple of $6$ for all positive integers $n$.<br><br><strong>(iii)</strong> Prove that there is no positive integer $n$ for which the expression $n^2 + 3n + 1$ is a perfect square.",
+    "steps": [
+        "To prove the statement by exhaustion, we must test every single integer $n$ in the defined finite set $n \\in \\{ 1, 2, 3, 4, 5 \\}$ and show the result is always a multiple of $3$:<br><br>1. For $n = 1$: $1^3 - 1 = 0$, which is $3(0)$ (a multiple of $3$).<br>2. For $n = 2$: $2^3 - 2 = 6$, which is $3(2)$ (a multiple of $3$).<br>3. For $n = 3$: $3^3 - 3 = 24$, which is $3(8)$ (a multiple of $3$).<br>4. For $n = 4$: $4^3 - 4 = 60$, which is $3(20)$ (a multiple of $3$).<br>5. For $n = 5$: $5^3 - 5 = 120$, which is $3(40)$ (a multiple of $3$).<br><br>Since the statement holds true for every possible case in the domain, the proof by exhaustion is complete.",
+        "We begin by factoring the expression $n^3 - n$ completely:<br><br>\\begin{aligned} n^3 - n & = n(n^2 - 1) \\cr & = n(n - 1)(n + 1) \\cr & = (n - 1)n(n + 1) \\end{aligned}<br><br>This expression represents the product of three consecutive integers: $(n - 1)$, $n$, and $(n + 1)$. In any set of three consecutive integers:<br><br>1. At least one of the integers must be even (a multiple of $2$).<br>2. Exactly one of the integers must be a multiple of $3$.<br><br>Since $2$ and $3$ are coprime (they share no common factors other than $1$), any integer that is a multiple of both $2$ and $3$ must be a multiple of $2 \\times 3 = 6$. Thus, $n^3 - n$ is always a multiple of $6$.",
+        "We can prove this by bounding our expression between two consecutive perfect squares. Let us expand the consecutive squares $(n + 1)^2$ and $(n + 2)^2$ for $n \\ge 1$:<br><br>\\begin{aligned} (n + 1)^2 & = n^2 + 2n + 1 \\cr (n + 2)^2 & = n^2 + 4n + 4 \\end{aligned}<br><br>Now, let us compare our expression, $n^2 + 3n + 1$, to these consecutive squares. Since $n$ is a positive integer ($n \\ge 1$):<br><br>1. Clearly, $n^2 + 2n + 1 < n^2 + 3n + 1$ (because $2n < 3n$).<br>2. Clearly, $n^2 + 3n + 1 < n^2 + 4n + 4$ (because $3n < 4n$ and $1 < 4$).<br><br>Putting this together, we can write the strict inequality:<br><br>\\begin{aligned} (n + 1)^2 & < n^2 + 3n + 1 < (n + 2)^2 \\end{aligned}<br><br>Since $n^2 + 3n + 1$ lies strictly between two consecutive perfect squares, it can never equal a perfect square itself for any positive integer $n$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$n^3 - n = n^2(n - 1)$$",
+            "feedback": "This is a basic factorization error. The term $n^3 - n$ factors to $n(n^2 - 1)$, not $n^2(n - 1)$."
+        },
+        {
+            "ans": "$$(n + 1)^2 < n^2 + 3n + 1 \\le (n + 2)^2$$",
+            "feedback": "This is an inequality error. The right-hand boundary is strictly greater than our expression, so the non-strict inequality is incorrect."
+        },
+        {
+            "ans": "$$n^3 - n \\text{ is odd for all even } n$$",
+            "feedback": "This is a parity misconception. If $n$ is even, $n^3$ is even, and an even number minus an even number is always even, never odd."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Consecutive Square Bounding",
+        "content": "To prove that an algebraic quadratic expression is never a perfect square, a highly elegant method is to bound it between two consecutive perfect squares: $(A)^2 < f(n) < (A+1)^2$. Since consecutive integers have no squares between them, the expression is immediately proven to never be a square. Keep this technique in your back pocket!"
+    }
+},
+{
+    "id": "004569",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Proof",
+    "subtopic": [
+        "Difference of Two Squares",
+        "Number Theory"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Prove that any prime number $p > 2$ can be written as the difference of two consecutive square numbers.<br><br><strong>(ii)</strong> Hence, write the prime number $101$ as the difference of two consecutive square numbers.<br><br><strong>(iii)</strong> Show that no prime number $p > 2$ can be written as the difference of two <em>even</em> square numbers.",
+    "steps": [
+        "Let the two consecutive square numbers be $n^2$ and $m^2$, where $m = n + 1$. We set their difference equal to $p$:<br><br>\\begin{aligned} m^2 - n^2 & = p \\cr (m - n)(m + n) & = p \\end{aligned}<br><br>Since $p$ is a prime number, its only positive integer factors are $1$ and $p$. Because $m$ and $n$ are positive, we must have:<br><br>\\begin{aligned} m - n & = 1 \\cr m + n & = p \\end{aligned}<br><br>Adding these two equations gives $2m = p + 1 \\implies m = \\dfrac{ p + 1 }{ 2 }$. Subtracting them gives $2n = p - 1 \\implies n = \\dfrac{ p - 1 }{ 2 }$.<br><br>Since $p > 2$ is a prime, $p$ must be an odd number. This guarantees that $p + 1$ and $p - 1$ are even, making both $m$ and $n$ integers. Thus, we can write:<br><br>\\begin{aligned} p & = \\left( \\dfrac{ p + 1 }{ 2 } \\right)^2 - \\left( \\dfrac{ p - 1 }{ 2 } \\right)^2 \\end{aligned}",
+        "Using our formula from part (i) with the prime number $p = 101$:<br><br>\\begin{aligned} m & = \\dfrac{ 101 + 1 }{ 2 } = 51 \\cr n & = \\dfrac{ 101 - 1 }{ 2 } = 50 \\end{aligned}<br><br>Therefore, $101$ can be written as the difference of consecutive squares:<br><br>\\begin{aligned} 101 & = 51^2 - 50^2 \\end{aligned}<br><br>(Check: $51^2 - 50^2 = 2601 - 2500 = 101$, which is correct).",
+        "Let the two even square numbers be $m^2$ and $n^2$, where $m = 2a$ and $n = 2b$ for some integers $a$ and $b$. We write their difference:<br><br>\\begin{aligned} m^2 - n^2 & = (2a)^2 - (2b)^2 \\cr & = 4a^2 - 4b^2 \\cr & = 4(a^2 - b^2) \\end{aligned}<br><br>This shows that the difference of two even square numbers must always be a multiple of $4$.<br><br>However, any prime number $p > 2$ is an odd number, and no odd number can be a multiple of $4$. Therefore, no prime $p > 2$ can be written as the difference of two even square numbers."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$101 = 52^2 - 49^2$$",
+            "feedback": "These are not consecutive square numbers (the base integers are $52$ and $49$, which have a difference of $3$, not $1$)."
+        },
+        {
+            "ans": "$$m = p + 1,\\ n = p - 1$$",
+            "feedback": "This is a formula error. This would lead to a difference of $(p+1)^2 - (p-1)^2 = 4p$, not $p$."
+        },
+        {
+            "ans": "$$101 = 50.5^2 - 49.5^2$$",
+            "feedback": "These are not integers, so they do not satisfy the definition of square numbers in number theory."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Parity of Prime Differences",
+        "content": "Since $2$ is the only even prime, any prime $p > 2$ is odd. The difference of two squares $m^2 - n^2 = (m-n)(m+n)$ can only equal an odd number if the two factors $(m-n)$ and $(m+n)$ are both odd. This requires $m$ and $n$ to have different parities (one even, one odd). Thus, a prime can never be written as the difference of two even squares, nor two odd squares!"
+    }
+},
+{
+    "id": "004570",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Proof",
+    "subtopic": [
+        "Proof by Contradiction",
+        "Irrationality of Surds"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> State the definition of a rational number.<br><br><strong>(ii)</strong> Prove by contradiction that $\\sqrt{2}$ is irrational.<br><br><strong>(iii)</strong> Use your result from part (ii) to prove that $3 + 2\\sqrt{2}$ is also irrational.",
+    "steps": [
+        "A rational number is any number that can be expressed in the form $\\dfrac{ a }{ b }$, where $a$ and $b$ are integers and $b \\ne 0$.",
+        "We prove this by contradiction. First, we assume the negation of the statement is true:<br><br><em>Assume that $\\sqrt{2}$ is a rational number.</em><br><br>This means we can write $\\sqrt{2} = \\dfrac{ a }{ b }$ where $a$ and $b$ are integers, $b \\ne 0$, and the fraction is in its simplest form (meaning $a$ and $b$ are coprime and share no common factors other than $1$). Squaring both sides:<br><br>\\begin{aligned} 2 & = \\dfrac{ a^2 }{ b^2 } \\cr a^2 & = 2b^2 \\end{aligned}<br><br>This implies $a^2$ is an even integer, which means $a$ must be an even integer. Let $a = 2k$ for some integer $k$. Substituting this back:<br><br>\\begin{aligned} (2k)^2 & = 2b^2 \\cr 4k^2 & = 2b^2 \\cr b^2 & = 2k^2 \\end{aligned}<br><br>This implies $b^2$ is an even integer, which means $b$ must be an even integer. If both $a$ and $b$ are even, they share a common factor of $2$. This contradicts our assumption that the fraction was in its simplest form. Thus, $\\sqrt{2}$ is irrational.",
+        "We prove this by contradiction. First, we assume the negation is true:<br><br><em>Assume that $3 + 2\\sqrt{2}$ is a rational number.</em><br><br>This means we can write $3 + 2\\sqrt{2} = q$ for some rational number $q$. Let us rearrange this equation to isolate the surd $\\sqrt{2}$:<br><br>\\begin{aligned} 2\\sqrt{2} & = q - 3 \\cr \\sqrt{2} & = \\dfrac{ q - 3 }{ 2 } \\end{aligned}<br><br>Since $q$ is a rational number, and the set of rational numbers is closed under subtraction and division, the expression $\\dfrac{ q - 3 }{ 2 }$ must also be a rational number.<br><br>However, this equation states that the irrational number $\\sqrt{2}$ is equal to a rational number, which is a direct contradiction of our result from part (ii). Therefore, our initial assumption must be false, proving that $3 + 2\\sqrt{2}$ is indeed irrational."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\sqrt{ 2 } = \\dfrac{ a }{ b } \\implies a^2 = b^2$$",
+            "feedback": "This is a squaring error. Squaring both sides of $\\sqrt{ 2 } = \\dfrac{ a }{ b }$ yields $2 = \\dfrac{ a^2 }{ b^2 } \\implies a^2 = 2b^2$, not $a^2 = b^2$."
+        },
+        {
+            "ans": "$$a^2 = 2b^2 \\implies a \\text{ is odd}$$",
+            "feedback": "This is a parity error. If $a^2 = 2b^2$, then $a^2$ is a multiple of $2$ (even), which mathematically guarantees that $a$ is even, not odd."
+        },
+        {
+            "ans": "$$3 + 2\\sqrt{ 2 } = 5\\sqrt{ 2 }$$",
+            "feedback": "This is an arithmetic error. You cannot add the rational integer $3$ directly to the coefficient of the surd; $3$ and $2\\sqrt{ 2 }$ are not like terms."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Simplest Form Assumption",
+        "content": "The most critical step in proving the irrationality of surds (like $\\sqrt{2}$ or $\\sqrt{3}$) is the initial setup. You must explicitly state that the fraction $\\frac{a}{b}$ is in its simplest form (or that $a$ and $b$ are coprime). Without this boundary assumption, finding that both $a$ and $b$ are even does not lead to a contradiction, and you will lose the majority of the marks!"
+    }
 }
 ];
