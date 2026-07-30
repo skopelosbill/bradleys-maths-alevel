@@ -935,5 +935,200 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Restricted Domain Stationary Points",
         "content": "When solving trigonometric stationary points like $\\tan x = -1$, always pay extreme attention to the interval constraints (here $0 \\le x \\le \\pi$). While tangent has infinitely many solutions, only $x = \\dfrac{3\\pi}{4}$ lies in Quadrant II of this restricted domain. Always check your boundaries first!"
     }
+},
+{
+    "id": "004576",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Circles",
+    "subtopic": [
+        "Circle Equation",
+        "Completing the Square"
+    ],
+    "img": false,
+    "question": "A circle with centre $C$ has equation $x^2 + y^2 + 6x - 10y - 2 = 0$.<br><br>Find:<br><strong>(i)</strong> the coordinates of $C$,<br><strong>(ii)</strong> the radius of the circle.",
+    "steps": [
+        "To find the centre and radius of the circle, we complete the square for both the $x$ and $y$ terms in the given equation:<br>$x^2 + y^2 + 6x - 10y - 2 = 0$",
+        "Group the $x$ terms and $y$ terms together:<br>$(x^2 + 6x) + (y^2 - 10y) - 2 = 0$",
+        "Complete the square for each grouped variable:<br><br>For $x^2 + 6x$:<br>$(x + 3)^2 - 3^2 = (x + 3)^2 - 9$<br><br>For $y^2 - 10y$:<br>$(y - 5)^2 - 5^2 = (y - 5)^2 - 25$",
+        "Substitute these expressions back into the circle's equation and simplify:<br>\\begin{aligned} (x + 3)^2 - 9 + (y - 5)^2 - 25 - 2 &= 0 \\cr (x + 3)^2 + (y - 5)^2 - 36 &= 0 \\cr (x + 3)^2 + (y - 5)^2 &= 36 \\end{aligned}",
+        "<strong>(i)</strong> Compare this to the standard equation of a circle, $(x - a)^2 + (y - b)^2 = r^2$, where $(a, b)$ is the centre and $r$ is the radius:<br>Here, $a = -3$ and $b = 5$. Thus, the coordinates of the centre $C$ are $(-3, 5)$.",
+        "<strong>(ii)</strong> From the completed square equation, we see that $r^2 = 36$. Since the radius must be a positive length:<br>\\begin{aligned} r &= \\sqrt{ 36 } \\cr r &= 6 \\end{aligned}<br>So the radius of the circle is $6$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $(3, -5)$<br><strong>(ii)</strong> $6$",
+            "feedback": "Ensure you use the correct signs when stating the centre from the completed square form. For $(x - a)^2 + (y - b)^2 = r^2$, the centre is $(a, b)$. Since we have $(x + 3)^2$ and $(y - 5)^2$, the centre must be $(-3, 5)$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $(-3, 5)$<br><strong>(ii)</strong> $36$",
+            "feedback": "You have correctly identified the coordinates of the centre, but the right-hand side of the standard equation represents $r^2$, not $r$. Remember to take the square root of $36$ to find the radius."
+        },
+        {
+            "ans": "<strong>(i)</strong> $(-3, 5)$<br><strong>(ii)</strong> $\\sqrt{ 2 }$",
+            "feedback": "Check your arithmetic when completing the square. Ensure you subtract $3^2$ and $5^2$ during the process, then correctly transpose all constants to the right-hand side of the equation."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Don't Slip on Sign Conventions",
+        "content": "Always double-check your signs when stating the centre of a circle. A common mistake is to write the centre as $(a, b)$ directly from $(x + a)^2 + (y + b)^2 = r^2$. Remember that the standard form is $(x - a)^2 + (y - b)^2 = r^2$, so $(x + 3)^2$ corresponds to $a = -3$ and $(y - 5)^2$ corresponds to $b = 5$."
+    }
+},
+{
+    "id": "004577",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Circles",
+    "subtopic": [
+        "Circle Equation",
+        "Completing the Square"
+    ],
+    "img": false,
+    "question": "A circle has equation $x^2 + y^2 - 4x + 12y + k = 0$, where $k$ is a constant. Given that the radius of the circle is $7$,<br><br>find:<br><strong>(i)</strong> the value of $k$,<br><strong>(ii)</strong> the coordinates of the centre of this circle.",
+    "steps": [
+        "First, complete the square for the $x$ and $y$ terms in the given equation to convert it to standard form:<br>$(x^2 - 4x) + (y^2 + 12y) + k = 0$",
+        "Complete the square for each variable:<br><br>For $x^2 - 4x$:<br>$(x - 2)^2 - 4$<br><br>For $y^2 + 12y$:<br>$(y + 6)^2 - 36$",
+        "Substitute these back into the original equation and group the constant terms:<br>\\begin{aligned} (x - 2)^2 - 4 + (y + 6)^2 - 36 + k &= 0 \\cr (x - 2)^2 + (y + 6)^2 - 40 + k &= 0 \\cr (x - 2)^2 + (y + 6)^2 &= 40 - k \\end{aligned}",
+        "<strong>(i)</strong> We are given that the radius of the circle is $r = 7$, which means $r^2 = 49$. Comparing this with the standard equation $(x - a)^2 + (y - b)^2 = r^2$, we set the constant on the right-hand side equal to $49$:<br>\\begin{aligned} 40 - k &= 49 \\cr -k &= 9 \\cr k &= -9 \\end{aligned}",
+        "<strong>(ii)</strong> From the completed square form $(x - 2)^2 + (y + 6)^2 = 49$, compare this with the standard equation $(x - a)^2 + (y - b)^2 = r^2$ to find the centre $(a, b)$:<br>Here, $a = 2$ and $b = -6$. Therefore, the coordinates of the centre of the circle are $(2, -6)$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $k = 33$<br><strong>(ii)</strong> $(-2, 6)$",
+            "feedback": "Ensure you use the square of the radius, $r^2 = 49$, on the right-hand side instead of the radius itself, $r = 7$. Also, check your signs for the centre coordinates."
+        },
+        {
+            "ans": "<strong>(i)</strong> $k = -9$<br><strong>(ii)</strong> $(-2, 6)$",
+            "feedback": "You found the correct value of $k = -9$, but remember that the centre coordinates $(a, b)$ are derived from $(x - a)^2 + (y - b)^2 = r^2$. Since we have $(x - 2)^2$ and $(y + 6)^2$, the centre must be $(2, -6)$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $k = 33$<br><strong>(ii)</strong> $(2, -6)$",
+            "feedback": "The coordinates of the centre are correct, but when setting up the equation to solve for $k$, you must equate the constant term to $r^2 = 49$ rather than the radius $r = 7$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Radius and Constant Relationships",
+        "content": "For any circle represented in general form $x^2 + y^2 + 2gx + 2fy + c = 0$, the radius is given by $r = \\sqrt{ g^2 + f^2 - c }$. This implies $r^2 = g^2 + f^2 - c$. In this question, $g = -2$, $f = 6$, and $c = k$. Substituting these values in gives $7^2 = (-2)^2 + 6^2 - k \\implies 49 = 4 + 36 - k \\implies k = -9$. This formula is a very useful shortcut to remember!"
+    }
+},
+{
+    "id": "004578",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Circles",
+    "subtopic": [
+        "Circle Equation",
+        "Tangents and Normals"
+    ],
+    "img": false,
+    "question": "A circle has equation $x^2 + y^2 - 10x - 4y + 11 = 0$.<br><br><strong>(i)</strong> Show that the point $P(8, 5)$ lies on the circle.<br><strong>(ii)</strong> Find the equation of the tangent to the circle at $P$, giving your answer in the form $ax + by + c = 0$, where $a$, $b$, and $c$ are integers.",
+    "steps": [
+        "<strong>(i)</strong> To show that $P(8, 5)$ lies on the circle, substitute $x = 8$ and $y = 5$ into the left-hand side (LHS) of the circle's equation:<br>\\begin{aligned} \\text{LHS} &= (8)^2 + (5)^2 - 10(8) - 4(5) + 11 \\cr &= 64 + 25 - 80 - 20 + 11 \\cr &= 100 - 100 \\cr &= 0 \\end{aligned}<br>Since $\\text{LHS} = \\text{RHS} = 0$, the point $P(8, 5)$ lies on the circle.",
+        "<strong>(ii)</strong> To find the equation of the tangent at $P$, first determine the coordinates of the centre of the circle by completing the square:<br>\\begin{aligned} (x^2 - 10x) + (y^2 - 4y) + 11 &= 0 \\cr (x - 5)^2 - 25 + (y - 2)^2 - 4 + 11 &= 0 \\cr (x - 5)^2 + (y - 2)^2 &= 18 \\end{aligned}<br>Thus, the centre of the circle is $C(5, 2)$.",
+        "Next, calculate the gradient of the radius line $CP$ connecting the centre $C(5, 2)$ to the contact point $P(8, 5)$:<br>\\begin{aligned} m_{\\text{radius}} &= \\dfrac{ 5 - 2 }{ 8 - 5 } \\cr &= \\dfrac{ 3 }{ 3 } \\cr &= 1 \\end{aligned}",
+        "Since the tangent at any point on a circle is perpendicular to the radius at that point, the gradient of the tangent, $m_{\\text{tangent}}$, is the negative reciprocal of $m_{\\text{radius}}$:<br>\\begin{aligned} m_{\\text{tangent}} &= -\\dfrac{ 1 }{ m_{\\text{radius}} } \\cr &= -1 \\end{aligned}",
+        "Using the straight line equation $y - y_1 = m(x - x_1)$ with point $P(8, 5)$ and gradient $m = -1$, write the equation of the tangent:<br>\\begin{aligned} y - 5 &= -1(x - 8) \\cr y - 5 &= -x + 8 \\cr x + y - 13 &= 0 \\end{aligned}<br>This is in the required form $ax + by + c = 0$ where $a = 1$, $b = 1$, and $c = -13$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$x - y - 3 = 0$",
+            "feedback": "You used a gradient of $1$ for your tangent. Remember that the tangent is perpendicular to the radius line $CP$. Since $m_{\\text{radius}} = 1$, the tangent gradient must be $-1$."
+        },
+        {
+            "ans": "$x + y + 13 = 0$",
+            "feedback": "Check your final algebraic transposition. Rearranging $y - 5 = -x + 8$ by adding $x$ and subtracting $8$ from both sides should lead to $x + y - 13 = 0$."
+        },
+        {
+            "ans": "$x + y - 3 = 0$",
+            "feedback": "The tangent line touches the circle specifically at the point $P(8, 5)$, not at the centre $C(5, 2)$. Ensure you use the coordinates of $P$ when setting up the straight line equation $y - y_1 = m(x - x_1)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Perpendicularity is Key",
+        "content": "A tangent and a radius are always perpendicular at the point of contact. This geometrical property is the core link that allows us to find the tangent's gradient. Always compute the radius gradient first, then find its negative reciprocal: $m_{\\text{tangent}} \\cdot m_{\\text{radius}} = -1$."
+    }
+},
+{
+    "id": "004579",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Circles",
+    "subtopic": [
+        "Intersections",
+        "Chords"
+    ],
+    "img": false,
+    "question": "The line $L$ has equation $y = x + 1$ and the circle $C$ has equation $x^2 + y^2 - 6x - 2y + 5 = 0$.<br><br><strong>(i)</strong> Find the coordinates of the points of intersection, $A$ and $B$, of the line $L$ and the circle $C$.<br><strong>(ii)</strong> Find the exact length of the chord $AB$, writing your answer as a simplified surd.",
+    "steps": [
+        "<strong>(i)</strong> To find the points of intersection, substitute the expression for $y$ from the line equation, $y = x + 1$, into the circle equation:<br>$x^2 + (x + 1)^2 - 6x - 2(x + 1) + 5 = 0$",
+        "Expand the brackets and simplify the quadratic equation:<br>\\begin{aligned} x^2 + (x^2 + 2x + 1) - 6x - 2x - 2 + 5 &= 0 \\cr 2x^2 - 6x + 4 &= 0 \\end{aligned}",
+        "Divide the entire equation by $2$ to simplify, and then factorise:<br>\\begin{aligned} x^2 - 3x + 2 &= 0 \\cr (x - 1)(x - 2) &= 0 \\end{aligned}<br>This yields the $x$-coordinates: $x = 1$ and $x = 2$.",
+        "Substitute these $x$-values back into the linear equation $y = x + 1$ to find the corresponding $y$-coordinates:<br>For $x = 1$:<br>$y = 1 + 1 = 2 \\implies A(1, 2)$<br><br>For $x = 2$:<br>$y = 2 + 1 = 3 \\implies B(2, 3)$<br><br>So the coordinates of the points of intersection are $A(1, 2)$ and $B(2, 3)$.",
+        "<strong>(ii)</strong> To find the exact length of the chord $AB$, apply the distance formula between the points $A(1, 2)$ and $B(2, 3)$:<br>\\begin{aligned} AB &= \\sqrt{ (x_2 - x_1)^2 + (y_2 - y_1)^2 } \\cr &= \\sqrt{ (2 - 1)^2 + (3 - 2)^2 } \\cr &= \\sqrt{ 1^2 + 1^2 } \\cr &= \\sqrt{ 2 } \\end{aligned}<br>The exact length of the chord $AB$ is $\\sqrt{ 2 }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $A(1, 2)$ and $B(2, 3)$<br><strong>(ii)</strong> $2$",
+            "feedback": "The points of intersection are correct, but verify your distance formula. The distance between $(x_1, y_1)$ and $(x_2, y_2)$ is $\\sqrt{ (x_2 - x_1)^2 + (y_2 - y_1)^2 }$, not the sum of the differences."
+        },
+        {
+            "ans": "<strong>(i)</strong> $A(-1, 0)$ and $B(-2, -1)$<br><strong>(ii)</strong> $\\sqrt{ 2 }$",
+            "feedback": "Check your factorisation of $x^2 - 3x + 2 = 0$. Since the middle coefficient is negative and the constant is positive, both factors must have negative signs: $(x - 1)(x - 2) = 0$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $A(1, 2)$ and $B(2, 3)$<br><strong>(ii)</strong> $\\sqrt{ 10 }$",
+            "feedback": "The coordinates of $A$ and $B$ are correct, but verify your substitution into the distance formula. Make sure you calculate $(2 - 1)^2 + (3 - 2)^2$ under the square root."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Choose the Simpler Equation",
+        "content": "Once you have found the $x$-coordinates of the intersection points, always substitute them back into the linear equation ($y = x + 1$) rather than the quadratic circle equation to find the $y$-coordinates. This is faster and reduces the risk of algebraic errors."
+    }
+},
+{
+    "id": "004580",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Circles",
+    "subtopic": [
+        "Circle Equation",
+        "Diameter and Midpoint"
+    ],
+    "img": false,
+    "question": "The points $A(-2, 7)$ and $B(6, 1)$ are the endpoints of a diameter of a circle $C$.<br><br>Find:<br><strong>(i)</strong> the coordinates of the centre of the circle $C$,<br><strong>(ii)</strong> Show that the equation of the circle $C$ can be written in the form $x^2 + y^2 - 4x - 8y - 5 = 0$.",
+    "steps": [
+        "<strong>(i)</strong> Since $A$ and $B$ are the endpoints of the diameter, the centre of the circle is the midpoint of the line segment $AB$. Apply the midpoint formula:<br>\\begin{aligned} \\text{Centre} &= \\left( \\dfrac{ x_1 + x_2 }{ 2 }, \\dfrac{ y_1 + y_2 }{ 2 } \\right) \\cr &= \\left( \\dfrac{ -2 + 6 }{ 2 }, \\dfrac{ 7 + 1 }{ 2 } \\right) \\cr &= \\left( \\dfrac{ 4 }{ 2 }, \\dfrac{ 8 }{ 2 } \\right) \\cr &= (2, 4) \\end{aligned}<br>So the coordinates of the centre of the circle are $(2, 4)$.",
+        "<strong>(ii)</strong> To construct the equation, first find the radius squared, $r^2$, by calculating the squared distance from the centre $(2, 4)$ to one of the endpoints, such as $B(6, 1)$:<br>\\begin{aligned} r^2 &= (6 - 2)^2 + (1 - 4)^2 \\cr &= 4^2 + (-3)^2 \\cr &= 16 + 9 \\cr &= 25 \\end{aligned}<br>Thus, $r^2 = 25$ (which means the radius is $r = 5$).",
+        "Write the equation of the circle using the standard form $(x - a)^2 + (y - b)^2 = r^2$ with centre $(2, 4)$ and $r^2 = 25$:<br>$(x - 2)^2 + (y - 4)^2 = 25$",
+        "Expand the squared brackets and simplify:<br>\\begin{aligned} (x^2 - 4x + 4) + (y^2 - 8y + 16) &= 25 \\cr x^2 + y^2 - 4x - 8y + 20 &= 25 \\cr x^2 + y^2 - 4x - 8y - 5 &= 0 \\end{aligned}<br>This matches the required form."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $(2, 4)$<br><strong>(ii)</strong> $x^2 + y^2 - 4x - 8y + 20 = 0$",
+            "feedback": "You have the correct centre and radius, but remember to subtract $25$ from the left-hand side when transposing to get $0$ on the RHS: $+20 - 25 = -5$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $(4, 8)$<br><strong>(ii)</strong> $x^2 + y^2 - 8x - 16y + 55 = 0$",
+            "feedback": "The midpoint formula is $\\left( \\dfrac{ x_1 + x_2 }{ 2 }, \\dfrac{ y_1 + y_2 }{ 2 } \\right)$. Make sure you divide the sum of the coordinates by $2$ to find the correct coordinates of the centre."
+        },
+        {
+            "ans": "<strong>(i)</strong> $(2, 4)$<br><strong>(ii)</strong> $x^2 + y^2 - 4x - 8y - 95 = 0$",
+            "feedback": "The diameter is $10$, which means the radius is $5$, so $r^2 = 5^2 = 25$. Make sure you use the radius squared, not the diameter squared, in the standard circle equation."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Diameter vs. Radius",
+        "content": "Be extremely vigilant when dealing with diameter endpoints. A common slip is to use the full distance $AB$ as the radius instead of halving it, or to use $r^2 = (AB)^2$ directly. Always write down the midpoint as the centre, compute the radius $r = \\dfrac{ 1 }{ 2 } AB$, and then square it to obtain $r^2$."
+    }
 }
 ];
