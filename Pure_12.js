@@ -1719,5 +1719,206 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Finding the Range of Composites",
         "content": "To find the range of a composite function $fg(x) = f(g(x))$, you must trace the output of the inner function $g(x)$ and use it as the domain for the outer function $f(x)$. Since the inner range is $g(x) \\ge -4$ and the outer function $f(x) = 2x - 3$ is strictly increasing, applying $f$ to the minimum boundary yields $2(-4) - 3 = -11$, which determines the final range boundary."
     }
+},
+{
+    "id": "004596",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Integration",
+    "subtopic": [
+        "Trapezium Rule",
+        "Integration by Substitution"
+    ],
+    "img": false,
+    "question": "Consider the definite integral $I = \\int_{ 0 }^{ 4 } \\dfrac{ 1 }{ 1 + \\sqrt{ x } } \\mathrm{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to show that:<br><br>$I \\approx 2\\sqrt{ 2 } - \\dfrac{ 2 }{ 3 }$<br><br><strong>(ii)</strong> Use the substitution $x = u^2$ to find the exact value of $I$.<br><br><strong>(iii)</strong> Using your answers to parts <strong>(i)</strong> and <strong>(ii)</strong>, show that $\\ln(3) \\approx k - \\sqrt{ 2 }$, where $k$ is a rational number to be determined.",
+    "steps": [
+        "<strong>(i)</strong> The interval is $[0, 4]$. With $2$ strips of equal width, the width of each strip $h$ is:<br>\\begin{aligned} h &= \\dfrac{ 4 - 0 }{ 2 } \\cr h &= 2 \\end{aligned}",
+        "The $x$-coordinates are $x_0 = 0$, $x_1 = 2$, and $x_2 = 4$. Evaluate the function $f(x) = \\dfrac{ 1 }{ 1 + \\sqrt{ x } }$ at each coordinate:<br><br><strong>•</strong> $f(0) = \\dfrac{ 1 }{ 1 + \\sqrt{ 0 } } = 1$<br><strong>•</strong> $f(2) = \\dfrac{ 1 }{ 1 + \\sqrt{ 2 } }$<br><strong>•</strong> $f(4) = \\dfrac{ 1 }{ 1 + \\sqrt{ 4 } } = \\dfrac{ 1 }{ 3 }$",
+        "Apply the trapezium rule formula:<br>\\begin{aligned} I &\\approx \\dfrac{ h }{ 2 } [ f(0) + f(4) + 2f(2) ] \\cr &\\approx \\dfrac{ 2 }{ 2 } \\left[ 1 + \\dfrac{ 1 }{ 3 } + 2\\left( \\dfrac{ 1 }{ 1 + \\sqrt{ 2 } } \\right) \\right] \\cr &\\approx \\dfrac{ 4 }{ 3 } + \\dfrac{ 2 }{ 1 + \\sqrt{ 2 } } \\end{aligned}",
+        "Rationalise the denominator of the fractional term:<br>\\begin{aligned} \\dfrac{ 2 }{ 1 + \\sqrt{ 2 } } &= \\dfrac{ 2(1 - \\sqrt{ 2 }) }{ (1 + \\sqrt{ 2 })(1 - \\sqrt{ 2 }) } \\cr &= \\dfrac{ 2 - 2\\sqrt{ 2 } }{ 1 - 2 } \\cr &= \\dfrac{ 2 - 2\\sqrt{ 2 } }{ -1 } \\cr &= 2\\sqrt{ 2 } - 2 \\end{aligned}",
+        "Substitute this back into the approximation to complete the proof for part <strong>(i)</strong>:<br>\\begin{aligned} I &\\approx \\dfrac{ 4 }{ 3 } + 2\\sqrt{ 2 } - 2 \\cr &\\approx 2\\sqrt{ 2 } - \\dfrac{ 2 }{ 3 } \\end{aligned}",
+        "<strong>(ii)</strong> Use the substitution $x = u^2$, which gives $\\mathrm{d}x = 2u \\mathrm{d}u$ and $\\sqrt{ x } = u$.<br><br>Find the new integration limits:<br><strong>•</strong> When $x = 0$, $u = 0$<br><strong>•</strong> When $x = 4$, $u = 2$",
+        "Substitute these into the integral:<br>\\begin{aligned} I &= \\int_{ 0 }^{ 2 } \\dfrac{ 1 }{ 1 + u } (2u) \\mathrm{d}u \\cr &= \\int_{ 0 }^{ 2 } \\dfrac{ 2u }{ 1 + u } \\mathrm{d}u \\end{aligned}",
+        "Rewrite the integrand by performing algebraic long division (or writing $2u = 2u + 2 - 2$):<br>\\begin{aligned} I &= \\int_{ 0 }^{ 2 } \\left( 2 - \\dfrac{ 2 }{ 1 + u } \\right) \\mathrm{d}u \\cr &= [ 2u - 2\\ln(1 + u) ]_{ 0 }^{ 2 } \\cr &= (4 - 2\\ln(3)) - (0 - 2\\ln(1)) \\cr &= 4 - 2\\ln(3) \\end{aligned}",
+        "<strong>(iii)</strong> Equate the exact value of $I$ and the trapezium rule approximation:<br>\\begin{aligned} 4 - 2\\ln(3) &\\approx 2\\sqrt{ 2 } - \\dfrac{ 2 }{ 3 } \\cr -2\\ln(3) &\\approx 2\\sqrt{ 2 } - \\dfrac{ 14 }{ 3 } \\cr 2\\ln(3) &\\approx \\dfrac{ 14 }{ 3 } - 2\\sqrt{ 2 } \\cr \\ln(3) &\\approx \\dfrac{ 7 }{ 3 } - \\sqrt{ 2 } \\end{aligned}<br>Thus, the rational number is $k = \\dfrac{ 7 }{ 3 }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $I \\approx 2\\sqrt{ 2 } - \\dfrac{ 2 }{ 3 }$<br><strong>(ii)</strong> $I = 4 - 2\\ln(3)$<br><strong>(iii)</strong> $k = \\dfrac{ 5 }{ 3 }$",
+            "feedback": "Check your algebra when transposing the equation to isolate $\\ln(3)$. Adding $\\dfrac{ 2 }{ 3 }$ to $4$ should yield $\\dfrac{ 14 }{ 3 }$, and dividing this by $2$ gives $k = \\dfrac{ 7 }{ 3 }$, not $\\dfrac{ 5 }{ 3 }$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $I \\approx 2\\sqrt{ 2 } - \\dfrac{ 2 }{ 3 }$<br><strong>(ii)</strong> $I = 2 - 2\\ln(3)$<br><strong>(iii)</strong> $k = \\dfrac{ 4 }{ 3 }$",
+            "feedback": "Check your integration steps in part <strong>(ii)</strong>. Evaluating $[2u]_0^2$ yields $2(2) - 0 = 4$, not $2$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $I \\approx 2\\sqrt{ 2 } + \\dfrac{ 4 }{ 3 }$<br><strong>(ii)</strong> $I = 4 - 2\\ln(3)$<br><strong>(iii)</strong> $k = \\dfrac{ 7 }{ 3 }$",
+            "feedback": "Check your rationalisation in part <strong>(i)</strong>. The term $\\dfrac{ 2 }{ 1 + \\sqrt{ 2 } }$ rationalises to $2\\sqrt{ 2 } - 2$. Adding this to $\\dfrac{ 4 }{ 3 }$ yields $2\\sqrt{ 2 } - \\dfrac{ 2 }{ 3 }$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Splitting Integrands",
+        "content": "When integrating an algebraic fraction where the numerator and denominator have the same degree (like $\\dfrac{ 2u }{ u + 1 }$), always use algebraic long division or a clever manipulation like $2u = 2(u + 1) - 2$ first. This allows you to split the fraction into $2 - \\dfrac{ 2 }{ u + 1 }$, which is instantly integrable."
+    }
+},
+{
+    "id": "004597",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Integration",
+    "subtopic": [
+        "Trapezium Rule",
+        "Trigonometric Integration"
+    ],
+    "img": false,
+    "question": "Consider the definite integral $I = \\int_{ 0 }^{ 1 } \\dfrac{ 1 }{ 1 + x^2 } \\mathrm{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to show that:<br><br>$I \\approx \\dfrac{ 31 }{ 40 }$<br><br><strong>(ii)</strong> Find the exact value of $I$ in terms of $\\pi$.<br><br><strong>(iii)</strong> Using your answers to parts <strong>(i)</strong> and <strong>(ii)</strong>, show that $\\pi \\approx k$, where $k$ is a rational number to be determined.",
+    "steps": [
+        "<strong>(i)</strong> The interval is $[0, 1]$. With $2$ strips of equal width, the width of each strip $h$ is:<br>\\begin{aligned} h &= \\dfrac{ 1 - 0 }{ 2 } \\cr h &= 0.5 \\end{aligned}",
+        "The $x$-coordinates are $x_0 = 0$, $x_1 = 0.5$, and $x_2 = 1$. Evaluate the function $f(x) = \\dfrac{ 1 }{ 1 + x^2 }$ at each coordinate:<br><br><strong>•</strong> $f(0) = \\dfrac{ 1 }{ 1 + 0^2 } = 1$<br><strong>•</strong> $f(0.5) = \\dfrac{ 1 }{ 1 + 0.25 } = \\dfrac{ 1 }{ 1.25 } = \\dfrac{ 4 }{ 5 }$<br><strong>•</strong> $f(1) = \\dfrac{ 1 }{ 1 + 1^2 } = \\dfrac{ 1 }{ 2 }$",
+        "Apply the trapezium rule formula:<br>\\begin{aligned} I &\\approx \\dfrac{ h }{ 2 } [ f(0) + f(1) + 2f(0.5) ] \\cr &\\approx \\dfrac{ 0.5 }{ 2 } \\left[ 1 + \\dfrac{ 1 }{ 2 } + 2\\left( \\dfrac{ 4 }{ 5 } \\right) \\right] \\cr &\\approx \\dfrac{ 1 }{ 4 } \\left[ \\dfrac{ 3 }{ 2 } + \\dfrac{ 8 }{ 5 } \\right] \\cr &\\approx \\dfrac{ 1 }{ 4 } \\left[ \\dfrac{ 15 + 16 }{ 10 } \\right] \\cr &\\approx \\dfrac{ 31 }{ 40 } \\end{aligned}",
+        "<strong>(ii)</strong> Integrate $\\dfrac{ 1 }{ 1 + x^2 }$ analytically. The standard integral of this expression is the inverse tangent function:<br>\\begin{aligned} I &= \\int_{ 0 }^{ 1 } \\dfrac{ 1 }{ 1 + x^2 } \\mathrm{d}x \\cr &= [ \\arctan(x) ]_{ 0 }^{ 1 } \\cr &= \\arctan(1) - \\arctan(0) \\cr &= \\dfrac{ \\pi }{ 4 } \\end{aligned}",
+        "<strong>(iii)</strong> Equate the analytical value of $I$ and the numerical approximation:<br>\\begin{aligned} \\dfrac{ \\pi }{ 4 } &\\approx \\dfrac{ 31 }{ 40 } \\cr \\pi &\\approx \\dfrac{ 124 }{ 40 } \\cr \\pi &\\approx \\dfrac{ 31 }{ 10 } \\end{aligned}<br>Thus, the rational number is $k = \\dfrac{ 31 }{ 10 }$ (or $3.1$)."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ 31 }{ 40 }$<br><strong>(ii)</strong> $I = \\dfrac{ \\pi }{ 2 }$<br><strong>(iii)</strong> $k = \\dfrac{ 31 }{ 20 }$",
+            "feedback": "Check your analytical integration. The integral of $\\dfrac{ 1 }{ 1 + x^2 }$ is $\\arctan(x)$. Since $\\arctan(1) = \\dfrac{ \\pi }{ 4 }$, the exact value is $\\dfrac{ \\pi }{ 4 }$, not $\\dfrac{ \\pi }{ 2 }$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ 3 }{ 4 }$<br><strong>(ii)</strong> $I = \\dfrac{ \\pi }{ 4 }$<br><strong>(iii)</strong> $k = 3$",
+            "feedback": "Verify your trapezium rule calculations. The value of the function at the midpoint $x = 0.5$ is $\\dfrac{ 4 }{ 5 } = 0.8$. Ensure you substitute this correct value into the formula."
+        },
+        {
+            "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ 31 }{ 40 }$<br><strong>(ii)</strong> $I = \\dfrac{ \\pi }{ 4 }$<br><strong>(iii)</strong> $k = \\dfrac{ 31 }{ 40 }$",
+            "feedback": "When solving for $\\pi$ in part <strong>(iii)</strong>, remember to multiply both sides of the approximation $\\dfrac{ \\pi }{ 4 } \\approx \\dfrac{ 31 }{ 40 }$ by $4$ to isolate $\\pi$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Historical Approximations of Pi",
+        "content": "This question demonstrates the classical method of using calculus to approximate historical constants. By applying a very simple 2-strip trapezium approximation to $\\int_{ 0 }^{ 1 } \\dfrac{ 1 }{ 1 + x^2 } \\mathrm{d}x$, we successfully approximate the value of $\\pi$ as $3.1$, which is incredibly close for such a low number of strips!"
+    }
+},
+{
+    "id": "004598",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Integration",
+    "subtopic": [
+        "Trapezium Rule",
+        "Logarithmic Integration"
+    ],
+    "img": false,
+    "question": "Consider the definite integral $I = \\int_{ 1 }^{ 3 } \\dfrac{ 1 }{ x } \\mathrm{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to show that:<br><br>$I \\approx \\dfrac{ 7 }{ 6 }$<br><br><strong>(ii)</strong> Find the exact value of $I$ in terms of natural logarithms.<br><br><strong>(iii)</strong> Using your answers to parts <strong>(i)</strong> and <strong>(ii)</strong>, state an approximate rational value for $\\ln(3)$.",
+    "steps": [
+        "<strong>(i)</strong> The interval is $[1, 3]$. With $2$ strips of equal width, the width of each strip $h$ is:<br>\\begin{aligned} h &= \\dfrac{ 3 - 1 }{ 2 } \\cr h &= 1 \\end{aligned}",
+        "The $x$-coordinates are $x_0 = 1$, $x_1 = 2$, and $x_2 = 3$. Evaluate the function $f(x) = \\dfrac{ 1 }{ x }$ at each coordinate:<br><br><strong>•</strong> $f(1) = \\dfrac{ 1 }{ 1 } = 1$<br><strong>•</strong> $f(2) = \\dfrac{ 1 }{ 2 }$<br><strong>•</strong> $f(3) = \\dfrac{ 1 }{ 3 }$",
+        "Apply the trapezium rule formula:<br>\\begin{aligned} I &\\approx \\dfrac{ h }{ 2 } [ f(1) + f(3) + 2f(2) ] \\cr &\\approx \\dfrac{ 1 }{ 2 } \\left[ 1 + \\dfrac{ 1 }{ 3 } + 2\\left( \\dfrac{ 1 }{ 2 } \\right) \\right] \\cr &\\approx \\dfrac{ 1 }{ 2 } \\left[ 2 + \\dfrac{ 1 }{ 3 } \\right] \\cr &\\approx \\dfrac{ 1 }{ 2 } \\left[ \\dfrac{ 7 }{ 3 } \\right] \\cr &\\approx \\dfrac{ 7 }{ 6 } \\end{aligned}",
+        "<strong>(ii)</strong> Integrate $\\dfrac{ 1 }{ x }$ analytically. The standard integral of $\\dfrac{ 1 }{ x }$ is the natural logarithm function:<br>\\begin{aligned} I &= \\int_{ 1 }^{ 3 } \\dfrac{ 1 }{ x } \\mathrm{d}x \\cr &= [ \\ln(x) ]_{ 1 }^{ 3 } \\cr &= \\ln(3) - \\ln(1) \\cr &= \\ln(3) \\end{aligned}",
+        "<strong>(iii)</strong> Directly equate the analytical value and the numerical approximation to find the rational approximation:<br>\\begin{aligned} \\ln(3) &\\approx \\dfrac{ 7 }{ 6 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ 7 }{ 6 }$<br><strong>(ii)</strong> $I = \\ln(2)$<br><strong>(iii)</strong> $\\ln(3) \\approx \\dfrac{ 7 }{ 6 }$",
+            "feedback": "Check your limits when integrating in part <strong>(ii)</strong>. Evaluating $[\\ln(x)]_1^3$ gives $\\ln(3) - \\ln(1) = \\ln(3)$, not $\\ln(2)$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $I \\approx 1.5$<br><strong>(ii)</strong> $I = \\ln(3)$<br><strong>(iii)</strong> $\\ln(3) \\approx 1.5$",
+            "feedback": "Verify your trapezium rule sum. Ensure you only double the middle ordinate $f(2) = 0.5$ and do not double the endpoint ordinates."
+        },
+        {
+            "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ 5 }{ 6 }$<br><strong>(ii)</strong> $I = \\ln(3)$<br><strong>(iii)</strong> $\\ln(3) \\approx \\dfrac{ 5 }{ 6 }$",
+            "feedback": "Check your arithmetic in part <strong>(i)</strong>. The bracket sum is $1 + \\dfrac{ 1 }{ 3 } + 1 = \\dfrac{ 7 }{ 3 }$. Multiplying by $\\dfrac{ 1 }{ 2 }$ yields $\\dfrac{ 7 }{ 6 }$, not $\\dfrac{ 5 }{ 6 }$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Overestimates vs. Underestimates",
+        "content": "Since the graph of $y = \\dfrac{ 1 }{ x }$ is concave up (the curve bends upwards) over the interval $[1, 3]$, the straight chord segments of the trapeziums lie entirely above the curve. Therefore, the trapezium rule will always produce an overestimate. This explains why $\\dfrac{ 7 }{ 6 } \\approx 1.167$ is slightly larger than the actual value of $\\ln(3) \\approx 1.099$."
+    }
+},
+{
+    "id": "004599",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Integration",
+    "subtopic": [
+        "Trapezium Rule",
+        "Integration by Parts"
+    ],
+    "img": false,
+    "question": "Consider the definite integral $I = \\int_{ 0 }^{ 2 } x \\mathrm{e}^{ -x } \\mathrm{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to find an approximation for $I$ in terms of the constant $\\mathrm{e}$.<br><br><strong>(ii)</strong> Use integration by parts to find the exact value of $I$ in terms of the constant $\\mathrm{e}$.<br><br><strong>(iii)</strong> Using your answers to parts <strong>(i)</strong> and <strong>(ii)</strong>, show that $\\mathrm{e}^2 - \\mathrm{e} \\approx k$, where $k$ is an integer to be found.",
+    "steps": [
+        "<strong>(i)</strong> The interval is $[0, 2]$. With $2$ strips of equal width, the width of each strip $h$ is:<br>\\begin{aligned} h &= \\dfrac{ 2 - 0 }{ 2 } \\cr h &= 1 \\end{aligned}",
+        "The $x$-coordinates are $x_0 = 0$, $x_1 = 1$, and $x_2 = 2$. Evaluate the function $f(x) = x \\mathrm{e}^{ -x }$ at each coordinate:<br><br><strong>•</strong> $f(0) = 0 \\times \\mathrm{e}^{ 0 } = 0$<br><strong>•</strong> $f(1) = 1 \\times \\mathrm{e}^{ -1 } = \\mathrm{e}^{ -1 }$<br><strong>•</strong> $f(2) = 2 \\times \\mathrm{e}^{ -2 } = 2\\mathrm{e}^{ -2 }$",
+        "Apply the trapezium rule formula:<br>\\begin{aligned} I &\\approx \\dfrac{ h }{ 2 } [ f(0) + f(2) + 2f(1) ] \\cr &\\approx \\dfrac{ 1 }{ 2 } [ 0 + 2\\mathrm{e}^{ -2 } + 2\\mathrm{e}^{ -1 } ] \\cr &\\approx \\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 } \\end{aligned}",
+        "<strong>(ii)</strong> To find the exact value, integrate $x \\mathrm{e}^{ -x }$ analytically using integration by parts, $\\int u \\mathrm{d}v = u v - \\int v \\mathrm{d}u$.<br>Let $u = x \\implies \\mathrm{d}u = \\mathrm{d}x$, and let $\\mathrm{d}v = \\mathrm{e}^{ -x } \\mathrm{d}x \\implies v = -\\mathrm{e}^{ -x }$:",
+        "Substitute these into the integration by parts formula:<br>\\begin{aligned} I &= [ -x\\mathrm{e}^{ -x } ]_{ 0 }^{ 2 } - \\int_{ 0 }^{ 2 } -\\mathrm{e}^{ -x } \\mathrm{d}x \\cr &= -2\\mathrm{e}^{ -2 } + \\int_{ 0 }^{ 2 } \\mathrm{e}^{ -x } \\mathrm{d}x \\cr &= -2\\mathrm{e}^{ -2 } + [ -\\mathrm{e}^{ -x } ]_{ 0 }^{ 2 } \\cr &= -2\\mathrm{e}^{ -2 } + (-\\mathrm{e}^{ -2 } - (-\\mathrm{e}^{ 0 })) \\cr &= -3\\mathrm{e}^{ -2 } + 1 \\cr &= 1 - 3\\mathrm{e}^{ -2 } \\end{aligned}",
+        "<strong>(iii)</strong> Equate the numerical approximation and the analytical exact value:<br>\\begin{aligned} \\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 } &\\approx 1 - 3\\mathrm{e}^{ -2 } \\cr \\mathrm{e}^{ -1 } &\\approx 1 - 4\\mathrm{e}^{ -2 } \\end{aligned}",
+        "Multiply the entire equation by $\\mathrm{e}^2$ to eliminate the negative powers:<br>\\begin{aligned} \\mathrm{e} &\\approx \\mathrm{e}^2 - 4 \\cr \\mathrm{e}^2 - \\mathrm{e} &\\approx 4 \\end{aligned}<br>Thus, the integer is $k = 4$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $I \\approx \\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 }$<br><strong>(ii)</strong> $I = 1 - 3\\mathrm{e}^{ -2 }$<br><strong>(iii)</strong> $k = 3$",
+            "feedback": "Check your algebra in part <strong>(iii)</strong>. Transposing $\\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 } \\approx 1 - 3\\mathrm{e}^{ -2 }$ gives $\\mathrm{e}^{ -1 } \\approx 1 - 4\\mathrm{e}^{ -2 }$. Multiplying by $\\mathrm{e}^2$ yields $\\mathrm{e} \\approx \\mathrm{e}^2 - 4$, which leads to $k = 4$, not $3$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $I \\approx 2\\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 }$<br><strong>(ii)</strong> $I = 1 - 3\\mathrm{e}^{ -2 }$<br><strong>(iii)</strong> $k = 4$",
+            "feedback": "Check your trapezium ordinate values. The formula is $\\dfrac{ h }{ 2 } [ y_0 + y_n + 2y_1 ]$. Since $y_1 = \\mathrm{e}^{ -1 }$, we double this to get $2\\mathrm{e}^{ -1 }$. Multiplying the whole bracket by $\\dfrac{ 1 }{ 2 }$ yields $\\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 }$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $I \\approx \\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 }$<br><strong>(ii)</strong> $I = 1 - \\mathrm{e}^{ -2 }$<br><strong>(iii)</strong> $k = 2$",
+            "feedback": "Verify your integration by parts. The term $v \\mathrm{d}u = -\\mathrm{e}^{ -x } \\mathrm{d}x$. Integrating this over the limits yields another negative term, resulting in the correct analytical expression $1 - 3\\mathrm{e}^{ -2 }$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Choosing u in Parts",
+        "content": "When using integration by parts for $\\int x \\mathrm{e}^{ -x } \\mathrm{d}x$, always use the LATE rule to choose $u$. Since $x$ is algebraic (A) and $\\mathrm{e}^{ -x }$ is exponential (E), we choose $u = x$. This ensures that differentiating $u$ reduces its degree to $1$, making the remaining integral straightforward to compute."
+    }
+},
+{
+    "id": "004600",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Integration",
+    "subtopic": [
+        "Trapezium Rule",
+        "Trigonometric Integration"
+    ],
+    "img": false,
+    "question": "Consider the definite integral $I = \\int_{ 0 }^{ \\pi } \\sin^2(x) \\mathrm{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to show that:<br><br>$I \\approx \\dfrac{ \\pi }{ 2 }$<br><br><strong>(ii)</strong> Use a suitable double-angle trigonometric identity to find the exact value of $I$.<br><br><strong>(iii)</strong> Explain why the trapezium rule approximation is unusually accurate in this specific case.",
+    "steps": [
+        "<strong>(i)</strong> The interval is $[0, \\pi ]$. With $2$ strips of equal width, the width of each strip $h$ is:<br>\\begin{aligned} h &= \\dfrac{ \\pi - 0 }{ 2 } \\cr h &= \\dfrac{ \\pi }{ 2 } \\end{aligned}",
+        "The $x$-coordinates are $x_0 = 0$, $x_1 = \\dfrac{ \\pi }{ 2 }$, and $x_2 = \\pi $. Evaluate the function $f(x) = \\sin^2(x)$ at each coordinate:<br><br><strong>•</strong> $f(0) = \\sin^2(0) = 0$<br><strong>•</strong> $f\\left( \\dfrac{ \\pi }{ 2 } \\right) = \\sin^2\\left( \\dfrac{ \\pi }{ 2 } \\right) = 1$<br><strong>•</strong> $f(\\pi ) = \\sin^2(\\pi ) = 0$",
+        "Apply the trapezium rule formula:<br>\\begin{aligned} I &\\approx \\dfrac{ h }{ 2 } \\left[ f(0) + f(\\pi ) + 2f\\left( \\dfrac{ \\pi }{ 2 } \\right) \\right] \\cr &\\approx \\dfrac{ \\pi / 2 }{ 2 } [ 0 + 0 + 2(1) ] \\cr &\\approx \\dfrac{ \\pi }{ 4 } [ 2 ] \\cr &\\approx \\dfrac{ \\pi }{ 2 } \\end{aligned}",
+        "<strong>(ii)</strong> To find the exact value, integrate $\\sin^2(x)$ analytically by using the double-angle identity $\\sin^2(x) = \\dfrac{ 1 - \\cos(2x) }{ 2 }$:<br>\\begin{aligned} I &= \\int_{ 0 }^{ \\pi } \\dfrac{ 1 - \\cos(2x) }{ 2 } \\mathrm{d}x \\cr &= \\dfrac{ 1 }{ 2 } \\left[ x - \\dfrac{ \\sin(2x) }{ 2 } \\right]_{ 0 }^{ \\pi } \\cr &= \\dfrac{ 1 }{ 2 } \\left[ \\left( \\pi - \\dfrac{ \\sin(2\\pi ) }{ 2 } \\right) - (0 - 0) \\right] \\cr &= \\dfrac{ \\pi }{ 2 } \\end{aligned}",
+        "<strong>(iii)</strong> The trapezium rule approximation is 100% exact in this case due to the perfect symmetry of the sine-squared curve:<br><br>The curve $y = \\sin^2(x)$ is symmetric about the vertical line $x = \\dfrac{ \\pi }{ 2 }$. On the first half of the interval, $\\left[ 0, \\dfrac{ \\pi }{ 2 } \\right]$, the curve is concave down, which causes the trapezium to underestimate the area under the curve.<br><br>On the second half of the interval, $\\left[ \\dfrac{ \\pi }{ 2 }, \\pi \\right]$, the curve is concave up, which causes the trapezium to overestimate the area under the curve.<br><br>Because the shape of the curve is perfectly symmetric, the underestimate and the overestimate cancel each other out exactly, making the final numerical approximation completely accurate."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ \\pi }{ 2 }$<br><strong>(ii)</strong> $I = \\pi $<br><strong>(iii)</strong> The trapezium rule is exact because $\\sin^2(x)$ is a linear function.",
+            "feedback": "Check your analytical integration in part <strong>(ii)</strong>. Integrating $\\dfrac{ 1 - \\cos(2x) }{ 2 }$ over $[0, \\pi ]$ yields $\\dfrac{ \\pi }{ 2 }$, not $\\pi $. Also, $\\sin^2(x)$ is a quadratic trigonometric curve, not a linear function."
+        },
+        {
+            "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ \\pi }{ 4 }$<br><strong>(ii)</strong> $I = \\dfrac{ \\pi }{ 2 }$<br><strong>(iii)</strong> The trapezium rule is exact because the endpoints are zero.",
+            "feedback": "Check your trapezium rule sum. The midpoint ordinate $f\\left( \\dfrac{ \\pi }{ 2 } \\right) = 1$ is multiplied by $2$ in the formula, which yields $2$. Multiplying by $\\dfrac{ \\pi }{ 4 }$ gives $\\dfrac{ \\pi }{ 2 }$, not $\\dfrac{ \\pi }{ 4 }$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $I \\approx \\pi $<br><strong>(ii)</strong> $I = \\dfrac{ \\pi }{ 2 }$<br><strong>(iii)</strong> The trapezium rule is exact because $\\sin^2(x)$ has no curvature.",
+            "feedback": "Check your ordinate substitutions. The sum of the ordinates is $0 + 0 + 2(1) = 2$. Multiplying by $\\dfrac{ h }{ 2 } = \\dfrac{ \\pi }{ 4 }$ gives $\\dfrac{ \\pi }{ 2 }$. Furthermore, the curve definitely has curvature; the exact match is due to symmetric error cancellation."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Symmetric Error Cancellation",
+        "content": "Normally, the trapezium rule is only an approximation. However, for functions that exhibit symmetric transition from concave-down to concave-up over the intervals (such as a full sine wave arch), the underestimate of one trapezium cancels out the overestimate of the other. This symmetric error cancellation is a highly elegant mathematical property!"
+    }
 }
 ];
