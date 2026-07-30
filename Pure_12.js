@@ -1410,28 +1410,28 @@ window.ALEVEL_QUESTIONS = [
         "Modelling"
     ],
     "img": false,
-    "question": "A cardboard box is designed with a square base of side length $y\\text{ cm}$ and a height of $10\\text{ cm}$. The requirements are:<br><br><strong>•</strong> the volume of the box must be greater than $250\\text{ cm}^3$,<br><strong>•</strong> the total surface area of the box must be at most $350\\text{ cm}^2$.<br><br>Find the set of possible values for $y$.",
+    "question": "A cardboard box is designed with a square base of side length $y\\text{ cm}$ and a height of $8\\text{ cm}$. The requirements are:<br><br><strong>•</strong> the volume of the box must be greater than $128\\text{ cm}^3$,<br><strong>•</strong> the total surface area of the box must be at most $450\\text{ cm}^2$.<br><br>Find the set of possible values for $y$.",
     "steps": [
-        "The base of the box is a square with side length $y\\text{ cm}$, and the height is $10\\text{ cm}$. The volume $V$ of the box is:<br>\\begin{aligned} V &= y^2 \\times 10 \\cr V &= 10y^2 \\end{aligned}",
-        "Since the volume must be greater than $250\\text{ cm}^3$, we write:<br>\\begin{aligned} 10y^2 &> 250 \\cr y^2 &> 25 \\end{aligned}<br>Since $y$ must be positive, this gives:<br>$y > 5$",
-        "The total surface area $SA$ of a closed box with a square base of side $y$ and height $10$ consists of the top and bottom squares ($2y^2$) plus the four vertical side faces ($4 \\times 10y$):<br>\\begin{aligned} SA &= 2y^2 + 40y \\end{aligned}",
-        "Since the total surface area must be at most $350\\text{ cm}^2$, we set up the quadratic inequality:<br>\\begin{aligned} 2y^2 + 40y &\\le 350 \\cr 2y^2 + 40y - 350 &\\le 0 \\cr y^2 + 20y - 175 &\\le 0 \\end{aligned}",
-        "Solve $y^2 + 20y - 175 \\le 0$ by finding the critical values. Factorise the quadratic equation:<br>\\begin{aligned} (y + 25)(y - 7) &= 0 \\end{aligned}<br>This gives critical values of $y = -25$ and $y = 7$.",
-        "The quadratic expression is non-positive between its roots, which gives:<br>$-25 \\le y \\le 7$",
-        "Now, combine our constraints: $y > 5$ and $-25 \\le y \\le 7$. The overlapping region gives our final set of possible values:<br>$5 < y \\le 7$"
+        "The base of the box is a square with side length $y\\text{ cm}$, and the height is $8\\text{ cm}$. The volume $V$ of the box is:<br>\\begin{aligned} V &= y^2 \\times 8 \\cr V &= 8y^2 \\end{aligned}",
+        "Since the volume must be greater than $128\\text{ cm}^3$, we write:<br>\\begin{aligned} 8y^2 &> 128 \\cr y^2 &> 16 \\end{aligned}<br>Since $y$ must be positive, this gives:<br>$y > 4$",
+        "The total surface area $SA$ of a closed box with a square base of side $y$ and height $8$ consists of the top and bottom squares ($2y^2$) plus the four vertical side faces ($4 \\times 8y$):<br>\\begin{aligned} SA &= 2y^2 + 32y \\end{aligned}",
+        "Since the total surface area must be at most $450\\text{ cm}^2$, we set up the quadratic inequality:<br>\\begin{aligned} 2y^2 + 32y &\\le 450 \\cr 2y^2 + 32y - 450 &\\le 0 \\cr y^2 + 16y - 225 &\\le 0 \\end{aligned}",
+        "Solve $y^2 + 16y - 225 \\le 0$ by finding the critical values. Factorise the quadratic equation:<br>\\begin{aligned} (y + 25)(y - 9) &= 0 \\end{aligned}<br>This gives critical values of $y = -25$ and $y = 9$.",
+        "The quadratic expression is non-positive between its roots, which gives:<br>$-25 \\le y \\le 9$",
+        "Now, combine our constraints: $y > 4$ and $-25 \\le y \\le 9$. The overlapping region gives our final set of possible values:<br>$4 < y \\le 9$"
     ],
     "pi_options": [
         {
-            "ans": "$5 \\le y \\le 7$",
-            "feedback": "The volume must be strictly <strong>greater than</strong> $250\\text{ cm}^3$, which yields $y^2 > 25 \\implies y > 5$. This requires a strict inequality ($>$) for the lower boundary."
+            "ans": "$4 \\le y \\le 9$",
+            "feedback": "The volume must be strictly <strong>greater than</strong> $128\\text{ cm}^3$, which yields $y^2 > 16 \\implies y > 4$. This requires a strict inequality ($>$) for the lower boundary."
         },
         {
-            "ans": "$0 < y \\le 7$",
-            "feedback": "Make sure to incorporate all constraints. While the side length must be positive, the volume requirement that $V > 250\\text{ cm}^3$ restricts $y$ to be strictly greater than $5$."
+            "ans": "$0 < y \\le 9$",
+            "feedback": "Make sure to incorporate all constraints. While the side length must be positive, the volume requirement that $V > 128\\text{ cm}^3$ restricts $y$ to be strictly greater than $4$."
         },
         {
-            "ans": "$5 < y < 7$",
-            "feedback": "The total surface area must be <strong>at most</strong> $350\\text{ cm}^2$, which allows the surface area to be exactly $350\\text{ cm}^2$. Therefore, the upper boundary must be a weak inequality ($y \\le 7$)."
+            "ans": "$4 < y < 9$",
+            "feedback": "The total surface area must be <strong>at most</strong> $450\\text{ cm}^2$, which allows the surface area to be exactly $450\\text{ cm}^2$. Therefore, the upper boundary must be a weak inequality ($y \\le 9$)."
         }
     ],
     "bradley_insight": {
