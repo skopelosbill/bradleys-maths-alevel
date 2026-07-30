@@ -1518,5 +1518,206 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Reversing the Inequality Sign",
         "content": "When rearranging $-x^2 + 14x - 40 \\ge 0$ by multiplying the entire inequality by $-1$, you MUST reverse the inequality sign. Multiplying or dividing an inequality by a negative number flips the direction of the sign: $\\ge$ becomes $\\le$."
     }
+},
+{
+    "id": "004591",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Composite Functions"
+    ],
+    "img": false,
+    "question": "The functions $f$ and $g$ are defined for all real values of $x$ by $f(x) = x^3$ and $g(x) = x^2 + 3$.<br><br><strong>(i)</strong> Write down expressions for:<br><strong>(a)</strong> $fg(x)$,<br><strong>(b)</strong> $gf(x)$.<br><br><strong>(ii)</strong> Hence find the real values of $x$ for which $fg(x) - gf(x) = 60$.",
+    "steps": [
+        "<strong>(i)(a)</strong> To find the composite function $fg(x)$, substitute the entire expression for $g(x)$ into $f(x)$:<br>\\begin{aligned} fg(x) &= f(g(x)) \\cr &= f(x^2 + 3) \\cr &= (x^2 + 3)^3 \\end{aligned}",
+        "<strong>(i)(b)</strong> To find the composite function $gf(x)$, substitute the entire expression for $f(x)$ into $g(x)$:<br>\\begin{aligned} gf(x) &= g(f(x)) \\cr &= g(x^3) \\cr &= (x^3)^2 + 3 \\cr &= x^6 + 3 \\end{aligned}",
+        "<strong>(ii)</strong> Set up the equation $fg(x) - gf(x) = 60$ using your answers from part <strong>(i)</strong>:<br>$(x^2 + 3)^3 - (x^6 + 3) = 60$",
+        "Expand $(x^2 + 3)^3$ using binomial expansion:<br>\\begin{aligned} (x^2 + 3)^3 &= (x^2)^3 + 3(x^2)^2(3) + 3(x^2)(3)^2 + 3^3 \\cr &= x^6 + 9x^4 + 27x^2 + 27 \\end{aligned}",
+        "Substitute this expanded expression back into the equation and simplify:<br>\\begin{aligned} (x^6 + 9x^4 + 27x^2 + 27) - (x^6 + 3) &= 60 \\cr 9x^4 + 27x^2 + 24 &= 60 \\cr 9x^4 + 27x^2 - 36 &= 0 \\end{aligned}",
+        "Divide the entire equation by $9$ to simplify the coefficients:<br>$x^4 + 3x^2 - 4 = 0$",
+        "This equation is quadratic in terms of $x^2$. Let $u = x^2$, where $u \\ge 0$:<br>\\begin{aligned} u^2 + 3u - 4 &= 0 \\cr (u + 4)(u - 1) &= 0 \\end{aligned}<br>This yields $u = -4$ or $u = 1$.",
+        "Since $u = x^2 \\ge 0$, we reject the negative root $u = -4$ because $x^2$ cannot be negative for real values of $x$. This leaves:<br>\\begin{aligned} x^2 &= 1 \\cr x &= \\pm 1 \\end{aligned}<br>Thus, the real values of $x$ are $x = 1$ or $x = -1$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$x = 1$, $x = -1$, $x = 2$, $x = -2$",
+            "feedback": "Remember that $x^2$ cannot be negative for real values of $x$. When solving $u = x^2 = -4$, there are no real solutions, so you must reject this root."
+        },
+        {
+            "ans": "$x = 1$ only",
+            "feedback": "While you correctly identified $x = 1$, remember that $x^2 = 1$ has two real solutions: $x = 1$ and $x = -1$."
+        },
+        {
+            "ans": "$x = 2$ or $x = -2$",
+            "feedback": "Verify your division by $9$ and your subsequent factorisation. The simplified equation should be $x^4 + 3x^2 - 4 = 0$, leading to $u = 1 \\implies x = \\pm 1$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Spotting Hidden Quadratics",
+        "content": "Equations of the form $ax^4 + bx^2 + c = 0$ are 'equations in quadratic form'. By using the substitution $u = x^2$, you can solve them using standard quadratic methods. Always remember to filter your final $u$ values, as $u = x^2$ means any negative values of $u$ will yield no real solutions for $x$."
+    }
+},
+{
+    "id": "004592",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Composite Functions"
+    ],
+    "img": false,
+    "question": "The functions $f$ and $g$ are defined for all real values of $x$ by $f(x) = x^2 + 1$ and $g(x) = 3x - 2$.<br><br><strong>(i)</strong> Write down expressions for:<br><strong>(a)</strong> $fg(x)$,<br><strong>(b)</strong> $gf(x)$.<br><br><strong>(ii)</strong> Hence find the values of $x$ for which $fg(x) - gf(x) = 52$.",
+    "steps": [
+        "<strong>(i)(a)</strong> To find the composite function $fg(x)$, substitute $g(x) = 3x - 2$ into $f(x)$:<br>\\begin{aligned} fg(x) &= f(3x - 2) \\cr &= (3x - 2)^2 + 1 \\cr &= (9x^2 - 12x + 4) + 1 \\cr &= 9x^2 - 12x + 5 \\end{aligned}",
+        "<strong>(i)(b)</strong> To find the composite function $gf(x)$, substitute $f(x) = x^2 + 1$ into $g(x)$:<br>\\begin{aligned} gf(x) &= g(x^2 + 1) \\cr &= 3(x^2 + 1) - 2 \\cr &= 3x^2 + 3 - 2 \\cr &= 3x^2 + 1 \\end{aligned}",
+        "<strong>(ii)</strong> Set up the equation $fg(x) - gf(x) = 52$ using your answers from part <strong>(i)</strong>:<br>$(9x^2 - 12x + 5) - (3x^2 + 1) = 52$",
+        "Simplify the quadratic equation:<br>\\begin{aligned} 6x^2 - 12x + 4 &= 52 \\cr 6x^2 - 12x - 48 &= 0 \\end{aligned}",
+        "Divide the entire equation by $6$ to make factorisation easier:<br>\\begin{aligned} x^2 - 2x - 8 &= 0 \\cr (x - 4)(x + 2) &= 0 \\end{aligned}<br>This yields the solutions: $x = 4$ or $x = -2$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$x = 4$ only",
+            "feedback": "A quadratic equation $x^2 - 2x - 8 = 0$ factorises into $(x-4)(x+2) = 0$, which yields two solutions. Make sure you don't lose the negative solution: $x = -2$."
+        },
+        {
+            "ans": "$x = -4$ or $x = 2$",
+            "feedback": "Check your factorisation of $x^2 - 2x - 8 = 0$. Since the middle term is $-2x$, the factors must be $(x - 4)(x + 2) = 0$, which yields solutions of $x = 4$ and $x = -2$, not the other way around."
+        },
+        {
+            "ans": "$x = 6$ or $x = -4$",
+            "feedback": "Make sure you divide all terms of the equation $6x^2 - 12x - 48 = 0$ by $6$ correctly. This should simplify to $x^2 - 2x - 8 = 0$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Order of Composition Matters",
+        "content": "Always remember that composite functions are generally non-commutative, meaning $fg(x) \\neq gf(x)$. In this question, $fg(x) = 9x^2 - 12x + 5$ and $gf(x) = 3x^2 + 1$ are completely different functions. Always apply the inner function first, then substitute that entire result into the outer function."
+    }
+},
+{
+    "id": "004593",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Inverse Functions",
+        "Domain and Range"
+    ],
+    "img": false,
+    "question": "The function $f$ is defined for $x \\ge 1$ by $f(x) = \\sqrt{ x - 1 } + 3$.<br><br><strong>(i)</strong> Find an expression for $f^{ -1 }(x)$, stating its domain.<br><strong>(ii)</strong> Solve the equation $f(x) = f^{ -1 }(x)$.",
+    "steps": [
+        "<strong>(i)</strong> To find the inverse function, set $y = f(x)$ and rearrange the equation to make $x$ the subject:<br>\\begin{aligned} y &= \\sqrt{ x - 1 } + 3 \\cr y - 3 &= \\sqrt{ x - 1 } \\end{aligned}",
+        "Square both sides of the equation and solve for $x$:<br>\\begin{aligned} (y - 3)^2 &= x - 1 \\cr x &= (y - 3)^2 + 1 \\end{aligned}",
+        "Swap the variables to write the final expression for the inverse function:<br>$f^{ -1 }(x) = (x - 3)^2 + 1$",
+        "The domain of the inverse function $f^{ -1 }(x)$ is equal to the range of the original function $f(x)$. Since the square root term $\\sqrt{ x - 1 } \\ge 0$ for all valid $x$, we find:<br>\\begin{aligned} f(x) &\\ge 3 \\end{aligned}<br>Thus, the domain of the inverse function is $x \\ge 3$.",
+        "<strong>(ii)</strong> To solve the equation $f(x) = f^{ -1 }(x)$, we use the mathematical property that any strictly increasing function $f(x)$ intersects its inverse $f^{ -1 }(x)$ only on the line $y = x$. This allows us to simply solve $f(x) = x$:<br>\\begin{aligned} \\sqrt{ x - 1 } + 3 &= x \\cr \\sqrt{ x - 1 } &= x - 3 \\end{aligned}",
+        "Square both sides of the equation (noting that we must have $x - 3 \\ge 0 \\implies x \\ge 3$ for the right-hand side to be non-negative) and solve the resulting quadratic:<br>\\begin{aligned} x - 1 &= (x - 3)^2 \\cr x - 1 &= x^2 - 6x + 9 \\cr x^2 - 7x + 10 &= 0 \\cr (x - 2)(x - 5) &= 0 \\end{aligned}<br>This gives critical values of $x = 2$ and $x = 5$.",
+        "Since the domain of $f^{ -1 }(x)$ is restricted to $x \\ge 3$ (and because substituting $x = 2$ back into $\\sqrt{ x - 1 } = x - 3$ would yield $\\sqrt{ 1 } = -1$, which is invalid), we reject $x = 2$.<br><br>Thus, the only valid real solution is:<br>$x = 5$"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $f^{ -1 }(x) = (x - 3)^2 + 1$ with domain $x \\ge 1$<br><strong>(ii)</strong> $x = 5$",
+            "feedback": "The domain of the inverse function $f^{ -1 }(x)$ is equal to the range of the original function $f(x)$, not its domain. Since $f(x) = \\sqrt{ x - 1 } + 3 \\ge 3$, the domain of $f^{ -1 }(x)$ must be $x \\ge 3$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $f^{ -1 }(x) = (x - 3)^2 + 1$ with domain $x \\ge 3$<br><strong>(ii)</strong> $x = 2$ or $x = 5$",
+            "feedback": "You must check your solutions against the domain restriction. Since the domain of $f^{ -1 }(x)$ is $x \\ge 3$, the value $x = 2$ lies outside the domain and must be rejected as an extraneous solution."
+        },
+        {
+            "ans": "<strong>(i)</strong> $f^{ -1 }(x) = (x + 3)^2 - 1$ with domain $x \\ge 3$<br><strong>(ii)</strong> $x = 5$",
+            "feedback": "Check your algebra when finding the inverse function. Rearranging $y = \\sqrt{ x - 1 } + 3$ starts by subtracting $3$ from both sides, yielding $y - 3 = \\sqrt{ x - 1 }$, not adding $3$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: The y = x Intersection Trick",
+        "content": "For any strictly increasing function $f(x)$, the curves $y = f(x)$ and $y = f^{ -1 }(x)$ only intersect along the line of symmetry $y = x$. This is an incredibly powerful shortcut: instead of equating $f(x) = f^{ -1 }(x)$ (which often leads to a complex quartic equation), simply solve $f(x) = x$."
+    }
+},
+{
+    "id": "004594",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Composite Functions",
+        "Logarithmic Functions"
+    ],
+    "img": false,
+    "question": "The function $f$ is defined for $x > 2$ by $f(x) = \\ln( x - 2 )$, and the function $g$ is defined for all real values of $x$ by $g(x) = \\mathrm{e}^{ 3x } + 2$.<br><br><strong>(i)</strong> Write down expressions for:<br><strong>(a)</strong> $fg(x)$,<br><strong>(b)</strong> $gf(x)$,<br>simplifying your answers as far as possible.<br><br><strong>(ii)</strong> Solve the equation $gf(x) - fg(x) = 10 - 3x$.",
+    "steps": [
+        "<strong>(i)(a)</strong> To find $fg(x)$, substitute $g(x) = \\mathrm{e}^{ 3x } + 2$ into $f(x)$:<br>\\begin{aligned} fg(x) &= f(\\mathrm{e}^{ 3x } + 2) \\cr &= \\ln((\\mathrm{e}^{ 3x } + 2) - 2) \\cr &= \\ln(\\mathrm{e}^{ 3x }) \\cr &= 3x \\end{aligned}",
+        "<strong>(i)(b)</strong> To find $gf(x)$, substitute $f(x) = \\ln( x - 2 )$ into $g(x)$:<br>\\begin{aligned} gf(x) &= g(\\ln( x - 2 )) \\cr &= \\mathrm{e}^{ 3\\ln( x - 2 ) } + 2 \\cr &= \\mathrm{e}^{ \\ln(( x - 2 )^3) } + 2 \\cr &= ( x - 2 )^3 + 2 \\end{aligned}",
+        "<strong>(ii)</strong> Set up the equation $gf(x) - fg(x) = 10 - 3x$ using the simplified expressions from part <strong>(i)</strong>:<br>$(( x - 2 )^3 + 2) - 3x = 10 - 3x$",
+        "Simplify the equation by adding $3x$ to both sides and isolating the cubed term:<br>\\begin{aligned} ( x - 2 )^3 + 2 &= 10 \\cr ( x - 2 )^3 &= 8 \\end{aligned}",
+        "Take the cube root of both sides of the equation and solve for $x$:<br>\\begin{aligned} x - 2 &= 2 \\cr x &= 4 \\end{aligned}<br>Since $x = 4$ satisfies the domain restriction $x > 2$, it is the valid real solution."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $fg(x) = 3x$, $gf(x) = 3x - 4$<br><strong>(ii)</strong> $x = 2.5$",
+            "feedback": "Remember the log power law: $3\\ln( x - 2 ) = \\ln(( x - 2 )^3)$. Thus, $\\mathrm{e}^{ 3\\ln( x - 2 ) } = ( x - 2 )^3$, not $3( x - 2 )$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $fg(x) = 3x$, $gf(x) = ( x - 2 )^3 + 2$<br><strong>(ii)</strong> $x = 2$",
+            "feedback": "The domain of $f(x)$ is $x > 2$, which means $x = 2$ is outside the domain and would make $\\ln( x - 2 )$ undefined. Your algebraic solution of $( x - 2 )^3 = 8$ leads to $x - 2 = 2 \\implies x = 4$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $fg(x) = 3x$, $gf(x) = ( x - 2 )^3 + 2$<br><strong>(ii)</strong> $x = 2 + \\sqrt{ 8 }$",
+            "feedback": "To solve $( x - 2 )^3 = 8$, you need to take the cube root of both sides of the equation, which gives $x - 2 = 2$, not a square root."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Simplifying Log exponentials",
+        "content": "A crucial algebraic identity to master is $\\mathrm{e}^{\\ln( A )} = A$. When simplifying expressions like $\\mathrm{e}^{k\\ln( A )}$, you must first use the power law of logarithms to write it as $\\mathrm{e}^{\\ln( A^k )}$, which simplifies directly to $A^k$. Never write $\\mathrm{e}^{k\\ln( A )} = k A$."
+    }
+},
+{
+    "id": "004595",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Composite Functions",
+        "Domain and Range"
+    ],
+    "img": false,
+    "question": "The functions $f$ and $g$ are defined for all real values of $x$ by $f(x) = 2x - 3$ and $g(x) = x^2 - 4x$.<br><br><strong>(i)</strong> Find the range of $g(x)$.<br><strong>(ii)</strong> Show that the composite function $gf(x)$ can be written in the form $gf(x) = 4( x - a )( x - b )$, where $a$ and $b$ are constants to be found.<br><strong>(iii)</strong> Find the range of the composite function $fg(x)$.",
+    "steps": [
+        "<strong>(i)</strong> To find the range of the quadratic function $g(x) = x^2 - 4x$, complete the square:<br>\\begin{aligned} g(x) &= ( x - 2 )^2 - 2^2 \\cr &= ( x - 2 )^2 - 4 \\end{aligned}",
+        "Since the squared term $( x - 2 )^2 \\ge 0$ for all real $x$, the minimum value of $g(x)$ is $-4$. Thus, the range of $g(x)$ is:<br>$g(x) \\ge -4$",
+        "<strong>(ii)</strong> To find the composite function $gf(x)$, substitute $f(x) = 2x - 3$ into $g(x)$:<br>\\begin{aligned} gf(x) &= g(2x - 3) \\cr &= (2x - 3)^2 - 4(2x - 3) \\end{aligned}",
+        "Expand the brackets and simplify the quadratic expression:<br>\\begin{aligned} gf(x) &= (4x^2 - 12x + 9) - (8x - 12) \\cr &= 4x^2 - 20x + 21 \\end{aligned}",
+        "Factorise the quadratic expression:<br>\\begin{aligned} 4x^2 - 20x + 21 &= (2x - 3)(2x - 7) \\end{aligned}",
+        "Express this in the required form $4( x - a )( x - b )$ by factorising out $2$ from both brackets:<br>\\begin{aligned} (2x - 3)(2x - 7) &= 2\\left( x - 1.5 \\right) \\times 2\\left( x - 3.5 \\right) \\cr &= 4\\left( x - 1.5 \\right)\\left( x - 3.5 \\right) \\end{aligned}<br>Thus, the constants are $a = 1.5$ (or $\\dfrac{ 3 }{ 2 }$) and $b = 3.5$ (or $\\dfrac{ 7 }{ 2 }$).",
+        "<strong>(iii)</strong> To find the range of the composite function $fg(x)$, write out its expression:<br>\\begin{aligned} fg(x) &= f(g(x)) \\cr &= 2(g(x)) - 3 \\end{aligned}",
+        "Since the range of the input function is $g(x) \\ge -4$, substitute this minimum value to find the minimum value of $fg(x)$:<br>\\begin{aligned} fg(x) &\\ge 2(-4) - 3 \\cr fg(x) &\\ge -11 \\end{aligned}<br>So the range of the composite function is $fg(x) \\ge -11$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $g(x) \\ge -4$<br><strong>(ii)</strong> $a = 3$, $b = 1.75$<br><strong>(iii)</strong> $fg(x) \\ge -11$",
+            "feedback": "Check your factorisation of $4x^2 - 20x + 21$. Expanding $4(x - 3)(x - 1.75)$ gives $4x^2 - 19x + 21$, which is incorrect. Factorising $(2x-3)(2x-7)$ gives $4(x - 1.5)(x - 3.5)$, so $a = 1.5$ and $b = 3.5$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $g(x) \\ge -4$<br><strong>(ii)</strong> $a = 1.5$, $b = 3.5$<br><strong>(iii)</strong> $fg(x) \\ge -3$",
+            "feedback": "When finding the range of $fg(x) = 2(g(x)) - 3$, you must use the range of $g(x)$, which is $g(x) \\ge -4$. Substituting the minimum value of $-4$ gives $2(-4) - 3 = -11$, not $-3$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $g(x) \\ge 0$<br><strong>(ii)</strong> $a = 1.5$, $b = 3.5$<br><strong>(iii)</strong> $fg(x) \\ge -11$",
+            "feedback": "Check the range of $g(x) = x^2 - 4x$. Completing the square gives $(x-2)^2 - 4$. Since $(x-2)^2 \\ge 0$, the minimum value is $-4$, so the range of $g(x)$ is $g(x) \\ge -4$, not $g(x) \\ge 0$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Finding the Range of Composites",
+        "content": "To find the range of a composite function $fg(x) = f(g(x))$, you must trace the output of the inner function $g(x)$ and use it as the domain for the outer function $f(x)$. Since the inner range is $g(x) \\ge -4$ and the outer function $f(x) = 2x - 3$ is strictly increasing, applying $f$ to the minimum boundary yields $2(-4) - 3 = -11$, which determines the final range boundary."
+    }
 }
 ];
