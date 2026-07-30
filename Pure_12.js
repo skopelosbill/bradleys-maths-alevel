@@ -1130,5 +1130,193 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Diameter vs. Radius",
         "content": "Be extremely vigilant when dealing with diameter endpoints. A common slip is to use the full distance $AB$ as the radius instead of halving it, or to use $r^2 = (AB)^2$ directly. Always write down the midpoint as the centre, compute the radius $r = \\dfrac{ 1 }{ 2 } AB$, and then square it to obtain $r^2$."
     }
+},
+{
+    "id": "004581",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Modulus Equations"
+    ],
+    "img": false,
+    "question": "Solve the equation $|3x - 2| = |x + 4|$.",
+    "steps": [
+        "To solve an equation of the form $|f(x)| = |g(x)|$, we split the equation into two cases. Since their absolute values are equal, the terms inside must either be equal or have opposite signs:<br><strong>Case 1:</strong> $3x - 2 = x + 4$<br><strong>Case 2:</strong> $3x - 2 = -(x + 4)$",
+        "Solve <strong>Case 1</strong> by grouping the $x$ terms on one side:<br>\\begin{aligned} 3x - 2 &= x + 4 \\cr 2x &= 6 \\cr x &= 3 \\end{aligned}",
+        "Solve <strong>Case 2</strong> by expanding the negative bracket and solving:<br>\\begin{aligned} 3x - 2 &= -(x + 4) \\cr 3x - 2 &= -x - 4 \\cr 4x &= -2 \\cr x &= -\\dfrac{ 1 }{ 2 } \\end{aligned}",
+        "Since both values satisfy the original equation, the complete solution is:<br>$x = 3$ or $x = -\\dfrac{ 1 }{ 2 }$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$x = 3$ or $x = \\dfrac{ 1 }{ 2 }$",
+            "feedback": "Check your signs in the negative case. Setting $3x - 2 = -(x + 4)$ gives $3x - 2 = -x - 4$. Rearranging this correctly should give $4x = -2$, which yields $x = -\\dfrac{ 1 }{ 2 }$, not $\\dfrac{ 1 }{ 2 }$."
+        },
+        {
+            "ans": "$x = 1$ or $x = -1$",
+            "feedback": "Verify your algebraic rearrangement for both cases. For $3x - 2 = x + 4$, subtracting $x$ and adding $2$ to both sides gives $2x = 6 \\implies x = 3$."
+        },
+        {
+            "ans": "$x = 3$ only",
+            "feedback": "When solving $|f(x)| = |g(x)|$, remember that there are two valid cases to consider: $f(x) = g(x)$ and $f(x) = -g(x)$. Both cases yield valid solutions for this equation."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Squaring vs. Signs",
+        "content": "While you can solve $|f(x)| = |g(x)|$ by squaring both sides, this often leads to larger quadratic expressions that are more prone to algebraic errors. Simply splitting the equation into $f(x) = \\pm g(x)$ is much faster, cleaner, and avoids squaring numbers like $3^2$ or $4^2$."
+    }
+},
+{
+    "id": "004582",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Modulus Equations"
+    ],
+    "img": false,
+    "question": "Solve the equation $|2x - 5| = 3x - 1$.",
+    "steps": [
+        "To solve $|2x - 5| = 3x - 1$, we must find the values of $x$ that satisfy the positive and negative branches of the modulus, and then check each solution to ensure it is valid:<br><strong>Case 1 (Positive branch):</strong> $2x - 5 = 3x - 1$<br><strong>Case 2 (Negative branch):</strong> $2x - 5 = -(3x - 1)$",
+        "Solve <strong>Case 1</strong>:<br>\\begin{aligned} 2x - 5 &= 3x - 1 \\cr -x &= 4 \\cr x &= -4 \\end{aligned}",
+        "Solve <strong>Case 2</strong>:<br>\\begin{aligned} 2x - 5 &= -(3x - 1) \\cr 2x - 5 &= -3x + 1 \\cr 5x &= 6 \\cr x &= \\dfrac{ 6 }{ 5 } \\end{aligned}",
+        "Now we must check both solutions. Because the right-hand side is not inside a modulus, it must be non-negative (since an absolute value can never be negative):<br>For $x = -4$, the right-hand side is $3(-4) - 1 = -13 < 0$. Thus, $x = -4$ is an <strong>extraneous solution</strong> and must be rejected.<br><br>For $x = \\dfrac{ 6 }{ 5 }$, the right-hand side is $3\\left( \\dfrac{ 6 }{ 5 } \\right) - 1 = \\dfrac{ 13 }{ 5 } \\ge 0$. Thus, $x = \\dfrac{ 6 }{ 5 }$ is valid.",
+        "Therefore, the only valid solution to the equation is:<br>$x = \\dfrac{ 6 }{ 5 }$ (or $1.2$)"
+    ],
+    "pi_options": [
+        {
+            "ans": "$x = -4$ or $x = \\dfrac{ 6 }{ 5 }$",
+            "feedback": "An absolute value can never be equal to a negative quantity. If you substitute $x = -4$ into the right-hand side, $3x - 1$ becomes $-13$. Since $|2x - 5|$ cannot equal $-13$, $x = -4$ is an extraneous solution and must be rejected."
+        },
+        {
+            "ans": "$x = -4$ only",
+            "feedback": "Be careful! Substituting $x = -4$ into the original equation yields $|-13| = -13$, which is false. You must always solve the negative branch $2x - 5 = -(3x - 1)$ and reject any solutions that make the RHS negative."
+        },
+        {
+            "ans": "$x = \\dfrac{ 4 }{ 5 }$",
+            "feedback": "Verify your expansion of the negative branch. Setting $2x - 5 = -(3x - 1)$ gives $2x - 5 = -3x + 1$. Adding $3x$ and adding $5$ to both sides yields $5x = 6$, so $x = \\dfrac{ 6 }{ 5 }$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Beware of Extraneous Solutions",
+        "content": "When solving an equation of the form $|f(x)| = g(x)$, where $g(x)$ is not inside a modulus, you MUST check your final answers by substituting them back into the original equation (or verifying that $g(x) \\ge 0$). Failing to filter out extraneous solutions is a major source of lost marks in Year 2 A Level exams."
+    }
+},
+{
+    "id": "004583",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Modulus Inequalities"
+    ],
+    "img": false,
+    "question": "Solve the inequality $|2x - 3| < |x + 2|$.",
+    "steps": [
+        "Since both sides of the inequality are non-negative, we can solve it by squaring both sides to eliminate the absolute value brackets:<br>$(2x - 3)^2 < (x + 2)^2$",
+        "Expand both sides of the inequality:<br>\\begin{aligned} 4x^2 - 12x + 9 &< x^2 + 4x + 4 \\cr 4x^2 - 12x + 9 - x^2 - 4x - 4 &< 0 \\cr 3x^2 - 16x + 5 &< 0 \\end{aligned}",
+        "To solve this quadratic inequality, find the critical values by solving the quadratic equation $3x^2 - 16x + 5 = 0$. We can factorise this equation:<br>\\begin{aligned} 3x^2 - 15x - x + 5 &= 0 \\cr 3x(x - 5) - 1(x - 5) &= 0 \\cr (3x - 1)(x - 5) &= 0 \\end{aligned}<br>This gives the critical values $x = \\dfrac{ 1 }{ 3 }$ and $x = 5$.",
+        "Consider the graph of $y = 3x^2 - 16x + 5$, which is a U-shaped parabola. The inequality is satisfied where the curve lies below the $x$-axis (i.e., $< 0$):<br>This occurs between the two roots, so the solution is:<br>$\\dfrac{ 1 }{ 3 } < x < 5$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$x < \\dfrac{ 1 }{ 3 }$ or $x > 5$",
+            "feedback": "The quadratic inequality is $3x^2 - 16x + 5 < 0$. For a positive $x^2$ coefficient, the quadratic expression is negative (less than zero) <strong>between</strong> the roots, not outside them."
+        },
+        {
+            "ans": "$-\\dfrac{ 1 }{ 3 } < x < 5$",
+            "feedback": "Check your factorisation. The factored form is $(3x - 1)(x - 5) = 0$. Setting $3x - 1 = 0$ gives $x = \\dfrac{ 1 }{ 3 }$, not $-\\dfrac{ 1 }{ 3 }$."
+        },
+        {
+            "ans": "$\\dfrac{ 1 }{ 3 } \\le x \\le 5$",
+            "feedback": "Pay close attention to the inequality sign in the question. The original inequality uses strict inequality ($<$), so your final answer must also use strict inequalities ($<$) rather than weak inequalities ($\\le$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Why Squaring Works",
+        "content": "Squaring is highly effective for inequalities of the form $|f(x)| < |g(x)|$ because both sides are guaranteed to be non-negative. It completely avoids having to consider multiple boundary cases for each modulus. Always remember to collect all terms onto one side, find the critical values, and sketch the quadratic curve to identify the correct interval."
+    }
+},
+{
+    "id": "004584",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Modulus Equations"
+    ],
+    "img": false,
+    "question": "Solve the equation $x^2 - 3|x| - 10 = 0$.",
+    "steps": [
+        "To solve this equation, use the identity $x^2 = |x|^2$ to rewrite the equation entirely in terms of $|x|$:<br>$|x|^2 - 3|x| - 10 = 0$",
+        "This is a quadratic equation in terms of $|x|$. Let $y = |x|$, where $y \\ge 0$ since absolute values are always non-negative. This gives:<br>$y^2 - 3y - 10 = 0$",
+        "Factorise the quadratic equation:<br>\\begin{aligned} (y - 5)(y + 2) &= 0 \\end{aligned}<br>So, $y = 5$ or $y = -2$.",
+        "Since $y = |x| \\ge 0$, the solution $y = -2$ is impossible and must be rejected. This leaves:<br>$|x| = 5$",
+        "Solve for $x$:<br>\\begin{aligned} x = 5 \\quad \\text{or} \\quad x = -5 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$x = 5$ or $x = -5$ or $x = 2$ or $x = -2$",
+            "feedback": "Remember that $|x|$ represents the absolute value of $x$, which can never be negative. Therefore, $|x| = -2$ has no real solutions, and you must reject this branch."
+        },
+        {
+            "ans": "$x = 5$ only",
+            "feedback": "While you correctly rejected the negative root for $|x|$, remember that $|x| = 5$ has two solutions: $x = 5$ and $x = -5$, as both have an absolute value of $5$."
+        },
+        {
+            "ans": "$x = 2$ or $x = -2$",
+            "feedback": "Check your factorisation of $y^2 - 3y - 10 = 0$. Since the middle term is $-3$, the factors must be $(y - 5)(y + 2) = 0$, giving $y = 5$ as the valid positive root."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: $x^2$ and $|x|^2$",
+        "content": "The substitution $x^2 = |x|^2$ is an extremely powerful technique for solving equations that mix standard algebraic terms with modulus terms. This allows you to treat the equation as a standard quadratic in terms of $|x|$. Always remember to apply the condition $|x| \\ge 0$ to eliminate any invalid negative roots before solving for $x$."
+    }
+},
+{
+    "id": "004585",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Modulus Inequalities"
+    ],
+    "img": false,
+    "question": "Solve the inequality $|2x - 1| \\ge 5 - x$.",
+    "steps": [
+        "To solve the inequality $|2x - 1| \\ge 5 - x$, we first find the critical intersection points by solving the corresponding equation:<br>$|2x - 1| = 5 - x$",
+        "Split the equation into its positive and negative cases:<br><strong>Case 1:</strong> $2x - 1 = 5 - x$<br><strong>Case 2:</strong> $2x - 1 = -(5 - x)$",
+        "Solve <strong>Case 1</strong>:<br>\\begin{aligned} 2x - 1 &= 5 - x \\cr 3x &= 6 \\cr x &= 2 \\end{aligned}",
+        "Solve <strong>Case 2</strong>:<br>\\begin{aligned} 2x - 1 &= -5 + x \\cr x &= -4 \\end{aligned}<br>This gives us two critical values: $x = -4$ and $x = 2$.",
+        "To find the intervals that satisfy $|2x - 1| \\ge 5 - x$, test a value from each of the three regions defined by our critical values $x = -4$ and $x = 2$:<br><br><strong>Region 1 ($x \\le -4$):</strong> Test $x = -5$.<br>$|2(-5) - 1| = |-11| = 11$, and $5 - (-5) = 10$. Since $11 \\ge 10$, this region is part of the solution.<br><br><strong>Region 2 ($-4 < x < 2$):</strong> Test $x = 0$.<br>$|2(0) - 1| = |-1| = 1$, and $5 - 0 = 5$. Since $1 \\ge 5$ is false, this region is not part of the solution.<br><br><strong>Region 3 ($x \\ge 2$):</strong> Test $x = 3$.<br>$|2(3) - 1| = |5| = 5$, and $5 - 3 = 2$. Since $5 \\ge 2$, this region is part of the solution.<br><br>Combining these results, the final solution set is:<br>$x \\le -4$ or $x \\ge 2$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$-4 \\le x \\le 2$",
+            "feedback": "The inequality $|2x - 1| \\ge 5 - x$ is satisfied in the outer regions. If you test a value in the inner region, like $x = 0$, you get $1 \\ge 5$, which is clearly false."
+        },
+        {
+            "ans": "$x \\le -4$ only",
+            "feedback": "You have only identified one of the boundaries. When solving a modulus equation or inequality, you must consider both positive and negative branches to find all critical points."
+        },
+        {
+            "ans": "$x \\le -2$ or $x \\ge 4$",
+            "feedback": "Check your algebra when finding the critical values. For $2x - 1 = 5 - x$, adding $x$ to both sides gives $3x = 6 \\implies x = 2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Visualising Modulus Inequalities",
+        "content": "Visualising this graphically is incredibly helpful. The graph of $y = |2x - 1|$ is a V-shape with its vertex at $x = 0.5$. The graph of $y = 5 - x$ is a straight line sloping downwards. The two graphs intersect at $x = -4$ and $x = 2$. Looking at the graphs, the V-shape lies on or above the line for $x \\le -4$ and for $x \\ge 2$. This perfectly matches our algebraic test results!"
+    }
 }
 ];
