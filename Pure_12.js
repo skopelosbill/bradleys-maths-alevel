@@ -1318,5 +1318,205 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Visualising Modulus Inequalities",
         "content": "Visualising this graphically is incredibly helpful. The graph of $y = |2x - 1|$ is a V-shape with its vertex at $x = 0.5$. The graph of $y = 5 - x$ is a straight line sloping downwards. The two graphs intersect at $x = -4$ and $x = 2$. Looking at the graphs, the V-shape lies on or above the line for $x \\le -4$ and for $x \\ge 2$. This perfectly matches our algebraic test results!"
     }
+},
+{
+    "id": "004586",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Inequalities",
+    "subtopic": [
+        "Quadratic Inequalities",
+        "Modelling"
+    ],
+    "img": false,
+    "question": "A rectangular courtyard is being planned. The requirements for the design are:<br><br><strong>•</strong> the length of the courtyard is to be $4\\text{ m}$ longer than its width,<br><strong>•</strong> the length of the courtyard must be at least $10\\text{ m}$,<br><strong>•</strong> the area of the courtyard must be less than $96\\text{ m}^2$.<br><br>Find the set of possible values for the width, $w$, of the courtyard.",
+    "steps": [
+        "Let $w$ be the width of the courtyard in metres. Since the length is $4\\text{ m}$ longer than the width, we can write the length $L$ as:<br>$L = w + 4$",
+        "We are given that the length must be at least $10\\text{ m}$. This gives our first linear inequality:<br>\\begin{aligned} w + 4 &\\ge 10 \\cr w &\\ge 6 \\end{aligned}",
+        "Next, the area of the courtyard must be less than $96\\text{ m}^2$. Since $\\text{Area} = \\text{width} \\times \\text{length}$, we set up a quadratic inequality:<br>\\begin{aligned} w(w + 4) &< 96 \\cr w^2 + 4w - 96 &< 0 \\end{aligned}",
+        "To solve $w^2 + 4w - 96 < 0$, find the critical values by factorising the corresponding quadratic equation $w^2 + 4w - 96 = 0$:<br>\\begin{aligned} (w + 12)(w - 8) &= 0 \\end{aligned}<br>This gives critical values of $w = -12$ and $w = 8$.",
+        "The inequality $w^2 + 4w - 96 < 0$ is satisfied where the quadratic expression is negative. Since the $w^2$ coefficient is positive, the curve is a U-shaped parabola, which lies below the $x$-axis between its roots:<br>$-12 < w < 8$",
+        "Finally, combine our constraints. We have $w \\ge 6$ and $-12 < w < 8$ (and physical width $w$ must be positive, which is already satisfied by $w \\ge 6$):<br>The overlapping region gives the final set of possible values for the width:<br>$6 \\le w < 8$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$0 < w < 8$",
+            "feedback": "You have only solved the area inequality. You must also consider the requirement that the length of the courtyard must be at least $10\\text{ m}$, which yields $w \\ge 6$."
+        },
+        {
+            "ans": "$6 \\le w \\le 8$",
+            "feedback": "Check your inequality signs carefully. The area must be strictly <strong>less than</strong> $96\\text{ m}^2$, which means $w^2 + 4w - 96 < 0$. Therefore, the upper boundary must be a strict inequality: $w < 8$, not $w \\le 8$."
+        },
+        {
+            "ans": "$6 < w < 8$",
+            "feedback": "Check the inequality for the length requirement. The length must be <strong>at least</strong> $10\\text{ m}$, which is a weak inequality ($\\ge$). Therefore, the lower boundary must be $w \\ge 6$, not $w > 6$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Combining Inequality Boundaries",
+        "content": "Always list out your boundaries carefully before combining them. A common slip is to write $w < 8$ and forget that the physical width must be positive, or to ignore the other linear constraint. Draw a quick number line to find where all inequalities overlap: here, $w \\ge 6$ and $w < 8$ overlap to give $6 \\le w < 8$."
+    }
+},
+{
+    "id": "004587",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Inequalities",
+    "subtopic": [
+        "Quadratic Inequalities",
+        "Modelling"
+    ],
+    "img": false,
+    "question": "A right-angled triangle has a base of $x\\text{ cm}$ and a height that is $5\\text{ cm}$ shorter than the base. The requirements are:<br><br><strong>•</strong> the height must be at least $4\\text{ cm}$,<br><strong>•</strong> the area of the triangle must be less than $42\\text{ cm}^2$.<br><br>Find the set of possible values for $x$.",
+    "steps": [
+        "Let the base of the triangle be $x\\text{ cm}$. The height $h$ is $5\\text{ cm}$ shorter than the base, so:<br>$h = x - 5$",
+        "We are given that the height must be at least $4\\text{ cm}$. This gives our first inequality:<br>\\begin{aligned} x - 5 &\\ge 4 \\cr x &\\ge 9 \\end{aligned}",
+        "The area of the triangle must be less than $42\\text{ cm}^2$. Using the formula $\\text{Area} = \\dfrac{ 1 }{ 2 } \\times \\text{base} \\times \\text{height}$:<br>\\begin{aligned} \\dfrac{ 1 }{ 2 } x (x - 5) &< 42 \\cr x(x - 5) &< 84 \\cr x^2 - 5x - 84 &< 0 \\end{aligned}",
+        "Solve $x^2 - 5x - 84 < 0$ by finding the critical values. Factorise the quadratic equation:<br>\\begin{aligned} (x - 12)(x + 7) &= 0 \\end{aligned}<br>This gives critical values of $x = 12$ and $x = -7$.",
+        "The quadratic expression is negative between its roots, which gives the interval:<br>$-7 < x < 12$",
+        "Now, combine the conditions $x \\ge 9$ and $-7 < x < 12$. The overlap of these regions gives the final set of possible values for $x$:<br>$9 \\le x < 12$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$5 < x < 12$",
+            "feedback": "The height must be <strong>at least</strong> $4\\text{ cm}$, which gives $x - 5 \\ge 4 \\implies x \\ge 9$. This is a stronger condition than simply requiring the height to be positive ($x > 5$)."
+        },
+        {
+            "ans": "$9 < x < 12$",
+            "feedback": "The requirement is that the height must be <strong>at least</strong> $4\\text{ cm}$, which includes the possibility of it being exactly $4\\text{ cm}$. Therefore, the lower bound must be a weak inequality ($x \\ge 9$)."
+        },
+        {
+            "ans": "$9 \\le x \\le 12$",
+            "feedback": "The area must be strictly <strong>less than</strong> $42\\text{ cm}^2$, which means the upper boundary must be a strict inequality ($x < 12$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Don't Forget the Half",
+        "content": "A very common slip in triangle questions is forgetting the $\\frac{ 1 }{ 2 }$ in the area formula, which would lead to $x(x - 5) < 42$ and messy non-integer roots. Always write out the full geometric formula $\\text{Area} = \\frac{ 1 }{ 2 } b h$ first before substituting algebraic expressions."
+    }
+},
+{
+    "id": "004588",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Inequalities",
+    "subtopic": [
+        "Quadratic Inequalities",
+        "Modelling"
+    ],
+    "img": false,
+    "question": "A cardboard box is designed with a square base of side length $y\\text{ cm}$ and a height of $10\\text{ cm}$. The requirements are:<br><br><strong>•</strong> the volume of the box must be greater than $250\\text{ cm}^3$,<br><strong>•</strong> the total surface area of the box must be at most $350\\text{ cm}^2$.<br><br>Find the set of possible values for $y$.",
+    "steps": [
+        "The base of the box is a square with side length $y\\text{ cm}$, and the height is $10\\text{ cm}$. The volume $V$ of the box is:<br>\\begin{aligned} V &= y^2 \\times 10 \\cr V &= 10y^2 \\end{aligned}",
+        "Since the volume must be greater than $250\\text{ cm}^3$, we write:<br>\\begin{aligned} 10y^2 &> 250 \\cr y^2 &> 25 \\end{aligned}<br>Since $y$ must be positive, this gives:<br>$y > 5$",
+        "The total surface area $SA$ of a closed box with a square base of side $y$ and height $10$ consists of the top and bottom squares ($2y^2$) plus the four vertical side faces ($4 \\times 10y$):<br>\\begin{aligned} SA &= 2y^2 + 40y \\end{aligned}",
+        "Since the total surface area must be at most $350\\text{ cm}^2$, we set up the quadratic inequality:<br>\\begin{aligned} 2y^2 + 40y &\\le 350 \\cr 2y^2 + 40y - 350 &\\le 0 \\cr y^2 + 20y - 175 &\\le 0 \\end{aligned}",
+        "Solve $y^2 + 20y - 175 \\le 0$ by finding the critical values. Factorise the quadratic equation:<br>\\begin{aligned} (y + 25)(y - 7) &= 0 \\end{aligned}<br>This gives critical values of $y = -25$ and $y = 7$.",
+        "The quadratic expression is non-positive between its roots, which gives:<br>$-25 \\le y \\le 7$",
+        "Now, combine our constraints: $y > 5$ and $-25 \\le y \\le 7$. The overlapping region gives our final set of possible values:<br>$5 < y \\le 7$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$5 \\le y \\le 7$",
+            "feedback": "The volume must be strictly <strong>greater than</strong> $250\\text{ cm}^3$, which yields $y^2 > 25 \\implies y > 5$. This requires a strict inequality ($>$) for the lower boundary."
+        },
+        {
+            "ans": "$0 < y \\le 7$",
+            "feedback": "Make sure to incorporate all constraints. While the side length must be positive, the volume requirement that $V > 250\\text{ cm}^3$ restricts $y$ to be strictly greater than $5$."
+        },
+        {
+            "ans": "$5 < y < 7$",
+            "feedback": "The total surface area must be <strong>at most</strong> $350\\text{ cm}^2$, which allows the surface area to be exactly $350\\text{ cm}^2$. Therefore, the upper boundary must be a weak inequality ($y \\le 7$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Identifying Total Surface Area",
+        "content": "A closed cuboid has six faces. For a box with a square base of side $y$ and height $h$, the top and bottom faces are squares of area $y^2$, and the four sides are rectangles of area $y h$. Always read carefully to see if a box is 'closed' or 'open'—if it were open-topped, the surface area would only include one square base: $y^2 + 4yh$."
+    }
+},
+{
+    "id": "004589",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Inequalities",
+    "subtopic": [
+        "Quadratic Inequalities",
+        "Modelling"
+    ],
+    "img": false,
+    "question": "A rectangular paddock is to be enclosed by a fence. The width of the paddock is $x\\text{ m}$ and the length is $2x - 5\\text{ m}$. The requirements are:<br><br><strong>•</strong> the total length of fencing used (the perimeter) must be at least $50\\text{ m}$,<br><strong>•</strong> the area of the paddock must be at most $300\\text{ m}^2$.<br><br>Find the set of possible values for $x$.",
+    "steps": [
+        "The width of the paddock is $x$ and the length is $2x - 5$. The perimeter $P$ is the total sum of all four sides:<br>\\begin{aligned} P &= 2(x + 2x - 5) \\cr P &= 2(3x - 5) \\cr P &= 6x - 10 \\end{aligned}",
+        "We are given that the perimeter must be at least $50\\text{ m}$. This gives our first linear inequality:<br>\\begin{aligned} 6x - 10 &\\ge 50 \\cr 6x &\\ge 60 \\cr x &\\ge 10 \\end{aligned}",
+        "The area of the paddock must be at most $300\\text{ m}^2$. Using the formula $\\text{Area} = \\text{width} \\times \\text{length}$:<br>\\begin{aligned} x(2x - 5) &\\le 300 \\cr 2x^2 - 5x - 300 &\\le 0 \\end{aligned}",
+        "Solve $2x^2 - 5x - 300 \\le 0$ by finding the critical values. We can factorise this quadratic expression by splitting the middle term:<br>\\begin{aligned} 2x^2 - 25x + 24x - 300 &= 0 \\cr x(2x - 25) + 12(2x - 25) &= 0 \\cr (x + 12)(2x - 25) &= 0 \\end{aligned}<br>This gives critical values of $x = -12$ and $x = 12.5$ (or $\\dfrac{ 25 }{ 2 }$).",
+        "Since the quadratic expression is non-positive between its roots, the interval is:<br>$-12 \\le x \\le 12.5$",
+        "Finally, combine the two constraints $x \\ge 10$ and $-12 \\le x \\le 12.5$. The overlapping region gives the final set of possible values for $x$:<br>$10 \\le x \\le 12.5$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$10 \\le x < 12.5$",
+            "feedback": "The area must be <strong>at most</strong> $300\\text{ m}^2$, which means it can be exactly $300\\text{ m}^2$. Thus, the upper boundary must be a weak inequality ($x \\le 12.5$)."
+        },
+        {
+            "ans": "$10 < x \\le 12.5$",
+            "feedback": "The perimeter must be <strong>at least</strong> $50\\text{ m}$, which means it can be exactly $50\\text{ m}$. Thus, the lower boundary must be a weak inequality ($x \\ge 10$)."
+        },
+        {
+            "ans": "$0 < x \\le 12.5$",
+            "feedback": "Remember to apply the perimeter constraint. While the width must be positive, requiring the perimeter to be at least $50\\text{ m}$ restricts $x$ to be at least $10$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Splitting the Middle Term",
+        "content": "To factorise $2x^2 - 5x - 300$, look for two numbers that multiply to $2 \\times (-300) = -600$ and add to $-5$. Since $24 \\times (-25) = -600$ and $24 + (-25) = -5$, we split the middle term as $-25x + 24x$. Grouping terms then makes factorising straightforward."
+    }
+},
+{
+    "id": "004590",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Inequalities",
+    "subtopic": [
+        "Quadratic Inequalities",
+        "Modelling"
+    ],
+    "img": false,
+    "question": "A small company's weekly profit, $P$ (in hundreds of pounds), from producing $x$ units of a product is modelled by $P = 14x - x^2 - 24$. The company wants to ensure that:<br><br><strong>•</strong> the weekly profit is at least $16$ hundred pounds,<br><strong>•</strong> the number of units produced is strictly greater than $5$.<br><br>Find the set of possible values for $x$.",
+    "steps": [
+        "The profit equation is $P = 14x - x^2 - 24$. We require the profit to be at least $16$ (since $P$ is already defined in hundreds of pounds):<br>$14x - x^2 - 24 \\ge 16$",
+        "Rearrange this into standard quadratic inequality form with a positive $x^2$ coefficient:<br>\\begin{aligned} -x^2 + 14x - 40 &\\ge 0 \\cr x^2 - 14x + 40 &\\le 0 \\end{aligned}",
+        "Solve $x^2 - 14x + 40 \\le 0$ by finding the critical values. Factorise the quadratic expression:<br>\\begin{aligned} (x - 4)(x - 10) &= 0 \\end{aligned}<br>This gives critical values of $x = 4$ and $x = 10$.",
+        "The quadratic expression is non-positive between its roots, which gives:<br>$4 \\le x \\le 10$",
+        "Now, combine this with the constraint that the number of units produced is strictly greater than $5$ ($x > 5$):<br>The overlapping region between $4 \\le x \\le 10$ and $x > 5$ is:<br>$5 < x \\le 10$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$4 \\le x \\le 10$",
+            "feedback": "You have correctly solved the profit inequality, but you must also incorporate the requirement that the number of units produced must be strictly greater than $5$ ($x > 5$)."
+        },
+        {
+            "ans": "$5 \\le x \\le 10$",
+            "feedback": "The question specifies that the number of units produced must be <strong>strictly greater than</strong> $5$, which excludes $5$ itself. Therefore, the lower boundary must be a strict inequality ($x > 5$)."
+        },
+        {
+            "ans": "$5 < x < 10$",
+            "feedback": "The profit must be <strong>at least</strong> $16$ hundred pounds, which allows it to be exactly $16$. Therefore, the upper boundary must be a weak inequality ($x \\le 10$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Reversing the Inequality Sign",
+        "content": "When rearranging $-x^2 + 14x - 40 \\ge 0$ by multiplying the entire inequality by $-1$, you MUST reverse the inequality sign. Multiplying or dividing an inequality by a negative number flips the direction of the sign: $\\ge$ becomes $\\le$."
+    }
 }
 ];
