@@ -92,7 +92,7 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric Equations"
     ],
     "img": false,
-    "question": "In this question you must show detailed reasoning.<br><br>Solve the equation $3\\cos 2\\theta + \\sin\\theta = 2$ for $0^\circ \\le \\theta < 360^\circ$, giving your answers to $1$ decimal place where appropriate.",
+    "question": "In this question you must show detailed reasoning.<br><br>Solve the equation $3\\cos 2\\theta + \\sin\\theta = 2$ for $0^\\circ \\le \\theta < 360^\\circ$, giving your answers to $1$ decimal place where appropriate.",
     "steps": [
         "Use the double-angle identity for cosine, $\\cos 2\\theta = 1 - 2\\sin^2\\theta$, to write the entire equation in terms of $\\sin\\theta$:<br>\\begin{aligned} 3(1 - 2\\sin^2\\theta) + \\sin\\theta &= 2 \\cr 3 - 6\\sin^2\\theta + \\sin\\theta &= 2 \\end{aligned}",
         "Rearrange the expression to form a standard quadratic equation with a positive lead coefficient:<br>\\begin{aligned} -6\\sin^2\\theta + \\sin\\theta + 1 &= 0 \\cr 6\\sin^2\\theta - \\sin\\theta - 1 &= 0 \\end{aligned}",
@@ -100,16 +100,16 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "$\\theta = 30.0^\circ$, $150.0^\circ$",
+            "ans": "$\\theta = 30.0^\\circ$, $150.0^\\circ$",
             "feedback": "You have correctly solved for the first branch of solutions, but remember that the quadratic yields a second valid branch of solutions from $\\sin\\theta = -\\dfrac{ 1 }{ 3 }$. You must solve both to find all angles within the domain."
         },
         {
-            "ans": "$\\theta = 30.0^\circ$, $150.0^\circ$, $19.5^\circ$, $340.5^\circ$",
-            "feedback": "Check your signs in Case 2. Since $\\sin\\theta = -\\dfrac{ 1 }{ 3 }$ is negative, your answers must lie in the third and fourth quadrants. The angle $19.5^\circ$ is in the first quadrant where sine is positive."
+            "ans": "$\\theta = 30.0^\\circ$, $150.0^\\circ$, $19.5^\\circ$, $340.5^\\circ$",
+            "feedback": "Check your signs in Case 2. Since $\\sin\\theta = -\\dfrac{ 1 }{ 3 }$ is negative, your answers must lie in the third and fourth quadrants. The angle $19.5^\\circ$ is in the first quadrant where sine is positive."
         },
         {
-            "ans": "$\\theta = 60.0^\circ$, $120.0^\circ$, $199.5^\circ$, $340.5^\circ$",
-            "feedback": "Check your principal solution for Case 1. The angle for which $\\sin\\theta = \\dfrac{ 1 }{ 2 }$ is $30^\circ$, not $60^\circ$ (which corresponds to $\\sin 60^\circ = \\dfrac{ \\sqrt{ 3 } }{ 2 }$)."
+            "ans": "$\\theta = 60.0^\\circ$, $120.0^\\circ$, $199.5^\\circ$, $340.5^\\circ$",
+            "feedback": "Check your principal solution for Case 1. The angle for which $\\sin\\theta = \\dfrac{ 1 }{ 2 }$ is $30^\\circ$, not $60^\\circ$ (which corresponds to $\\sin 60^\\circ = \\dfrac{ \\sqrt{ 3 } }{ 2 }$)."
         }
     ],
     "bradley_insight": {
@@ -129,7 +129,7 @@ window.ALEVEL_QUESTIONS = [
         "Maximum and Minimum Values"
     ],
     "img": false,
-    "question": "The expression $3\\sin\\theta - 4\\cos\\theta$ can be written in the form $R\\sin(\\theta - \\alpha)$, where $R > 0$ and $0^\circ < \\alpha < 90^\circ$.<br><br><strong>(i)</strong> Find the value of $R$ and the value of $\\alpha$, giving $\\alpha$ to $2$ decimal places.<br><br><strong>(ii)</strong> Hence find the greatest and least possible values of the expression:<br>$\\dfrac{ 10 }{ 3\\sin\\theta - 4\\cos\\theta + 7 }$",
+    "question": "The expression $3\\sin\\theta - 4\\cos\\theta$ can be written in the form $R\\sin(\\theta - \\alpha)$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$.<br><br><strong>(i)</strong> Find the value of $R$ and the value of $\\alpha$, giving $\\alpha$ to $2$ decimal places.<br><br><strong>(ii)</strong> Hence find the greatest and least possible values of the expression:<br>$\\dfrac{ 10 }{ 3\\sin\\theta - 4\\cos\\theta + 7 }$",
     "steps": [
         "<strong>(i)</strong> Expand $R\\sin(\\theta - \\alpha)$ using the compound angle identity for sine:<br>\\begin{aligned} R\\sin(\\theta - \\alpha) &= R(\\sin\\theta \\cos\\alpha - \\cos\\theta \\sin\\alpha) \\cr &= (R\\cos\\alpha)\\sin\\theta - (R\\sin\\alpha)\\cos\\theta \\end{aligned}",
         "Compare this expansion with the coefficients of the given expression, $3\\sin\\theta - 4\\cos\\theta$:<br>\\begin{aligned} R\\cos\\alpha &= 3 \\cr R\\sin\\alpha &= 4 \\end{aligned}",
@@ -196,6 +196,212 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Mixed Radian and Degree Modes",
         "content": "Always make sure your calculator is in the correct mode (radians vs degrees) before evaluating inverse trigonometric expressions. When a question specifies the domain in terms of $\\pi$ (like $0 \\le \\theta < 2\\pi$), your calculator MUST be in radian mode. Converting back and forth manually is a major source of rounding and transposition errors."
+    }
+},
+{
+    "id": "004606",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Boundary Conditions"
+    ],
+    "img": false,
+    "question": "The gradient of the curve $y = \\mathrm{f}(x)$ is given by the differential equation:<br><br>$(2x - 1)^3 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 8y^2 = 0$ <br><br>and the curve passes through the point $(1, 1)$.<br><br>By solving this differential equation, show that $\\mathrm{f}(x) = \\dfrac{ ax^2 - ax + 1 }{ bx^2 - bx + 1 }$, where $a$ and $b$ are integers to be determined.",
+    "steps": [
+        "To solve the differential equation, first separate the variables $x$ and $y$:<br>\\begin{aligned} (2x - 1)^3 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -8y^2 \\cr \\dfrac{ 1 }{ y^2 } \\mathrm{d}y &= -\\dfrac{ 8 }{ (2x - 1)^3 } \\mathrm{d}x \\cr y^{ -2 } \\mathrm{d}y &= -8(2x - 1)^{ -3 } \\mathrm{d}x \\end{aligned}",
+        "Integrate both sides of the equation:<br>\\begin{aligned} \\int y^{ -2 } \\mathrm{d}y &= \\int -8(2x - 1)^{ -3 } \\mathrm{d}x \\end{aligned}",
+        "Perform the integration on each side (applying the reverse chain rule to the linear bracket on the right-hand side):<br>\\begin{aligned} -\\dfrac{ 1 }{ y } &= -8 \\left[ \\dfrac{ (2x - 1)^{ -2 } }{ (-2)(2) } \\right] + C \\cr -\\dfrac{ 1 }{ y } &= -8 \\left[ -\\dfrac{ 1 }{ 4(2x - 1)^2 } \\right] + C \\cr -\\dfrac{ 1 }{ y } &= \\dfrac{ 2 }{ (2x - 1)^2 } + C \\end{aligned}",
+        "Multiply the entire equation by $-1$ to simplify (where $K = -C$ is a new constant of integration):<br>\\begin{aligned} \\dfrac{ 1 }{ y } &= -\\dfrac{ 2 }{ (2x - 1)^2 } + K \\end{aligned}",
+        "Apply the boundary condition that the curve passes through $(1, 1)$, substituting $x = 1$ and $y = 1$ into the equation to find $K$:<br>\\begin{aligned} \\dfrac{ 1 }{ 1 } &= -\\dfrac{ 2 }{ (2(1) - 1)^2 } + K \\cr 1 &= -2 + K \\cr K &= 3 \\end{aligned}",
+        "Substitute $K = 3$ back into the expression for $\\dfrac{ 1 }{ y }$:<br>\\begin{aligned} \\dfrac{ 1 }{ y } &= 3 - \\dfrac{ 2 }{ (2x - 1)^2 } \\end{aligned}",
+        "Express the right-hand side over a single common denominator:<br>\\begin{aligned} \\dfrac{ 1 }{ y } &= \\dfrac{ 3(2x - 1)^2 - 2 }{ (2x - 1)^2 } \\cr \\dfrac{ 1 }{ y } &= \\dfrac{ 3(4x^2 - 4x + 1) - 2 }{ 4x^2 - 4x + 1 } \\cr \\dfrac{ 1 }{ y } &= \\dfrac{ 12x^2 - 12x + 3 - 2 }{ 4x^2 - 4x + 1 } \\cr \\dfrac{ 1 }{ y } &= \\dfrac{ 12x^2 - 12x + 1 }{ 4x^2 - 4x + 1 } \\end{aligned}",
+        "Take the reciprocal of both sides to solve for $y = \\mathrm{f}(x)$:<br>\\begin{aligned} y &= \\dfrac{ 4x^2 - 4x + 1 }{ 12x^2 - 12x + 1 } \\end{aligned}<br>This is in the required form $\\mathrm{f}(x) = \\dfrac{ ax^2 - ax + 1 }{ bx^2 - bx + 1 }$ with $a = 4$ and $b = 12$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$a = 4$, $b = 4$",
+            "feedback": "Check your boundary condition. When substituting $x = 1, y = 1$ into $\\dfrac{ 1 }{ y } = -\\dfrac{ 2 }{ (2x - 1)^2 } + K$, you should get $1 = -2 + K \\implies K = 3$, not $K = 1$."
+        },
+        {
+            "ans": "$a = 12$, $b = 4$",
+            "feedback": "Ensure you take the reciprocal of both sides at the final step. Since $\\dfrac{ 1 }{ y } = \\dfrac{ 12x^2 - 12x + 1 }{ 4x^2 - 4x + 1 }$, we find $y = \\dfrac{ 4x^2 - 4x + 1 }{ 12x^2 - 12x + 1 }$, so $a = 4$ and $b = 12$."
+        },
+        {
+            "ans": "$a = 4$, $b = -12$",
+            "feedback": "Check your expansion of $3(2x-1)^2 - 2$. This expands to $12x^2 - 12x + 1$, which gives $b = 12$ as the denominator coefficient."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Chain Rule on Linear Arguments",
+        "content": "When integrating an expression like $(2x - 1)^{ -3 }$, do not forget the chain rule adjustment. You must divide the integral by the derivative of the linear argument (which is $2$). Forgetting to divide by $2$ is one of the most common errors in Year 2 calculus integration."
+    }
+},
+{
+    "id": "004607",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Logarithmic Integration"
+    ],
+    "img": false,
+    "question": "The gradient of the curve $y = \\mathrm{f}(x)$ is given by the differential equation:<br><br>$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ y \\cos x }{ 1 + 2y }$<br><br>and the curve passes through the point $(0, 1)$.<br><br>By solving this differential equation, show that $y \\mathrm{e}^{ 2y } = \\mathrm{e}^{ 2 + \\sin x }$.",
+    "steps": [
+        "First, separate the variables by multiplying both sides of the equation by $\\dfrac{ 1 + 2y }{ y }$ and separating the differentials:<br>\\begin{aligned} \\dfrac{ 1 + 2y }{ y } \\mathrm{d}y &= \\cos x \\mathrm{d}x \\cr \\int \\left( \\dfrac{ 1 }{ y } + 2 \\right) \\mathrm{d}y &= \\int \\cos x \\mathrm{d}x \\end{aligned}",
+        "Integrate both sides of the equation analytically:<br>\\begin{aligned} \\ln y + 2y &= \\sin x + C \\end{aligned}",
+        "Apply the boundary condition $(0, 1)$, substituting $x = 0$ and $y = 1$ into the integrated equation to find the constant $C$:<br>\\begin{aligned} \\ln(1) + 2(1) &= \\sin(0) + C \\cr 0 + 2 &= 0 + C \\cr C &= 2 \\end{aligned}",
+        "Substitute $C = 2$ back into the equation:<br>\\begin{aligned} \\ln y + 2y &= \\sin x + 2 \\end{aligned}",
+        "Exponentiate both sides of the equation to eliminate the natural logarithm and simplify the expression:<br>\\begin{aligned} \\mathrm{e}^{ \\ln y + 2y } &= \\mathrm{e}^{ \\sin x + 2 } \\cr \\mathrm{e}^{ \\ln y } \\times \\mathrm{e}^{ 2y } &= \\mathrm{e}^{ 2 + \\sin x } \\cr y \\mathrm{e}^{ 2y } &= \\mathrm{e}^{ 2 + \\sin x } \\end{aligned}<br>This completes the proof."
+    ],
+    "pi_options": [
+        {
+            "ans": "$y \\mathrm{e}^{ 2y } = \\mathrm{e}^{ \\sin x }$",
+            "feedback": "Do not forget the constant of integration $C$. When substituting the initial conditions $(0, 1)$ into $\\ln y + 2y = \\sin x + C$, you find $C = 2$, which must appear as a term $+2$ in the exponent."
+        },
+        {
+            "ans": "$y \\mathrm{e}^{ y } = \\mathrm{e}^{ 1 + \\sin x }$",
+            "feedback": "Check your integration of the constant term. Integrating $2$ with respect to $y$ yields $2y$, not $y$. This affects both the value of the constant $C$ and the exponential term."
+        },
+        {
+            "ans": "$y \\mathrm{e}^{ 2y } = \\mathrm{e}^{ 2 - \\sin x }$",
+            "feedback": "Verify your trigonometric integration. The integral of $\\cos x$ with respect to $x$ is $\\sin x$, not $-\\sin x$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Power Laws of Exponentials",
+        "content": "Recall the fundamental index law $\\mathrm{e}^{ A + B } = \\mathrm{e}^{ A } \\times \\mathrm{e}^{ B }$. This is the key to simplifying the expression $\\mathrm{e}^{ \\ln y + 2y }$. Writing it as $\\mathrm{e}^{ \\ln y } \\times \\mathrm{e}^{ 2y }$ allows you to replace $\\mathrm{e}^{ \\ln y }$ directly with $y$, simplifying the entire left-hand side to $y \\mathrm{e}^{ 2y }$."
+    }
+},
+{
+    "id": "004608",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Modelling",
+        "Boundary Conditions"
+    ],
+    "img": false,
+    "question": "A tank contains $100$ litres of pure water. Salt water containing $0.2\\text{ kg}$ of salt per litre runs into the tank at a rate of $5$ litres per minute. The well-stirred mixture runs out of the tank at the same rate.<br><br>Let $x\\text{ kg}$ be the amount of salt in the tank at time $t$ minutes.<br><br><strong>(i)</strong> Show that the rate of change of $x$ is given by the differential equation:<br>$\\dfrac{ \\mathrm{d}x }{ \\mathrm{d}t } = \\dfrac{ 20 - x }{ 20 }$<br><br><strong>(ii)</strong> Solve this differential equation, given that initially there is no salt in the tank, to find $x$ in terms of $t$.",
+    "steps": [
+        "<strong>(i)</strong> The rate of change of salt in the tank is given by the difference between the input rate of salt and the output rate of salt:<br>$\\dfrac{ \\mathrm{d}x }{ \\mathrm{d}t } = \\text{Rate In} - \\text{Rate Out}$",
+        "Calculate the input rate of salt:<br>\\begin{aligned} \\text{Rate In} &= 5 \\text{ litres/min} \\times 0.2 \\text{ kg/litre} \\cr &= 1 \\text{ kg/min} \\end{aligned}",
+        "Calculate the output rate of salt. Since the mixture is well-stirred and the volume remains constant at $100$ litres, the concentration of salt is $\\dfrac{ x }{ 100 }\\text{ kg/litre}$. The mixture leaves at $5$ litres/min:<br>\\begin{aligned} \\text{Rate Out} &= 5 \\text{ litres/min} \\times \\dfrac{ x }{ 100 } \\text{ kg/litre} \\cr &= \\dfrac{ x }{ 20 } \\text{ kg/min} \\end{aligned}",
+        "Subtract the rates to find the differential equation:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}x }{ \\mathrm{d}t } &= 1 - \\dfrac{ x }{ 20 } \\cr &= \\dfrac{ 20 - x }{ 20 } \\end{aligned}<br>This matches the required differential equation.",
+        "<strong>(ii)</strong> To solve the differential equation, separate the variables and integrate:<br>\\begin{aligned} \\dfrac{ 1 }{ 20 - x } \\mathrm{d}x &= \\dfrac{ 1 }{ 20 } \\mathrm{d}t \\cr \\int \\dfrac{ 1 }{ 20 - x } \\mathrm{d}x &= \\int \\dfrac{ 1 }{ 20 } \\mathrm{d}t \\end{aligned}",
+        "Integrate both sides (noting that the integral of $\\dfrac{ 1 }{ 20 - x }$ is $-\\ln|20 - x|$ due to the chain rule on the linear term):<br>\\begin{aligned} -\\ln(20 - x) &= \\dfrac{ t }{ 20 } + C \\cr \\ln(20 - x) &= -\\dfrac{ t }{ 20 } + K \\quad (\\text{where } K = -C) \\end{aligned}",
+        "Initially, the tank contains pure water, which means $x = 0$ when $t = 0$. Substitute these conditions into the equation to find $K$:<br>\\begin{aligned} \\ln(20 - 0) &= -\\dfrac{ 0 }{ 20 } + K \\cr K &= \\ln(20) \\end{aligned}",
+        "Substitute $K = \\ln(20)$ back into the equation and isolate $x$ using logarithmic properties:<br>\\begin{aligned} \\ln(20 - x) &= -\\dfrac{ t }{ 20 } + \\ln(20) \\cr \\ln(20 - x) - \\ln(20) &= -\\dfrac{ t }{ 20 } \\cr \\ln\\left( \\dfrac{ 20 - x }{ 20 } \\right) &= -\\dfrac{ t }{ 20 } \\cr \\dfrac{ 20 - x }{ 20 } &= \\mathrm{e}^{ -\\frac{ t }{ 20 } } \\cr 20 - x &= 20\\mathrm{e}^{ -\\frac{ t }{ 20 } } \\cr x &= 20\\left( 1 - \\mathrm{e}^{ -\\frac{ t }{ 20 } } \\right) \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$x = 20\\left( 1 + \\mathrm{e}^{ -\\frac{ t }{ 20 } } \\right)$",
+            "feedback": "Check your algebraic rearrangement in the final step. Solving $20 - x = 20\\mathrm{e}^{ -\\frac{ t }{ 20 } }$ for $x$ should yield $x = 20 - 20\\mathrm{e}^{ -\\frac{ t }{ 20 } } = 20\\left( 1 - \\mathrm{e}^{ -\\frac{ t }{ 20 } } \\right)$."
+        },
+        {
+            "ans": "$x = 20 - \\mathrm{e}^{ -\\frac{ t }{ 20 } }$",
+            "feedback": "Remember to apply the exponential to both sides correctly. Taking the exponential of $\\ln(20 - x) = \\ln(20) - \\dfrac{ t }{ 20 }$ yields $20 - x = \\mathrm{e}^{ \\ln(20) - \\frac{ t }{ 20 } } = 20\\mathrm{e}^{ -\\frac{ t }{ 20 } }$."
+        },
+        {
+            "ans": "$x = 20\\left( 1 - \\mathrm{e}^{ \\frac{ t }{ 20 } } \\right)$",
+            "feedback": "Check your integration of $-\\ln(20 - x) = \\dfrac{ t }{ 20 } + C$. Multiplying the equation by $-1$ to isolate the log term must make the exponent term negative: $-\\dfrac{ t }{ 20 }$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Separability of Modelling Equations",
+        "content": "When setting up rate equations, always ensure your units match perfectly before separating variables. Additionally, notice how $x = 20\\left( 1 - \\mathrm{e}^{ -\\frac{ t }{ 20 } } \\right)$ behaves as $t \\to \\infty$. The exponential term decays to $0$, meaning $x \\to 20\\text{ kg}$. This is the physical saturation limit (since $100\\text{ L} \\times 0.2\\text{ kg/L} = 20\\text{ kg}$), which serves as an excellent conceptual sanity check!"
+    }
+},
+{
+    "id": "004609",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Partial Fractions"
+    ],
+    "img": false,
+    "question": "The variables $x$ and $y$ satisfy the differential equation:<br><br>$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ y(y + 3) }{ x }$<br><br>for $x > 0$ and $y > 0$. It is given that $y = 3$ when $x = 1$.<br><br>By solving this differential equation, show that $y = \\dfrac{ 3x^3 }{ 2 - x^3 }$.",
+    "steps": [
+        "First, separate the variables of the differential equation:<br>\\begin{aligned} \\dfrac{ 1 }{ y(y + 3) } \\mathrm{d}y &= \\dfrac{ 1 }{ x } \\mathrm{d}x \\cr \\int \\dfrac{ 1 }{ y(y + 3) } \\mathrm{d}y &= \\int \\dfrac{ 1 }{ x } \\mathrm{d}x \\end{aligned}",
+        "To integrate the left-hand side, express the integrand in partial fractions:<br>\\begin{aligned} \\dfrac{ 1 }{ y(y + 3) } &= \\dfrac{ A }{ y } + \\dfrac{ B }{ y + 3 } \\cr 1 &= A(y + 3) + B y \\end{aligned}",
+        "Solve for $A$ and $B$ by substituting convenient values of $y$:<br><strong>•</strong> Let $y = 0 \\implies 1 = 3A \\implies A = \\dfrac{ 1 }{ 3 }$<br><strong>•</strong> Let $y = -3 \\implies 1 = -3B \\implies B = -\\dfrac{ 1 }{ 3 }$<br><br>This gives:<br>$\\dfrac{ 1 }{ y(y + 3) } = \\dfrac{ 1 }{ 3 }\\left( \\dfrac{ 1 }{ y } - \\dfrac{ 1 }{ y + 3 } \\right)$",
+        "Substitute this back into the integral equation and multiply both sides by $3$ to simplify:<br>\\begin{aligned} \\int \\dfrac{ 1 }{ 3 }\\left( \\dfrac{ 1 }{ y } - \\dfrac{ 1 }{ y + 3 } \\right) \\mathrm{d}y &= \\int \\dfrac{ 1 }{ x } \\mathrm{d}x \\cr \\int \\left( \\dfrac{ 1 }{ y } - \\dfrac{ 1 }{ y + 3 } \\right) \\mathrm{d}y &= \\int \\dfrac{ 3 }{ x } \\mathrm{d}x \\end{aligned}",
+        "Integrate both sides analytically:<br>\\begin{aligned} \\ln y - \\ln(y + 3) &= 3\\ln x + C \\cr \\ln\\left( \\dfrac{ y }{ y + 3 } \\right) &= \\ln(x^3) + C \\end{aligned}",
+        "Exponentiate both sides of the equation (where $A = \\mathrm{e}^{ C }$ is a new constant of integration):<br>\\begin{aligned} \\dfrac{ y }{ y + 3 } &= A x^3 \\end{aligned}",
+        "Apply the initial conditions, substituting $x = 1$ and $y = 3$ to solve for $A$:<br>\\begin{aligned} \\dfrac{ 3 }{ 3 + 3 } &= A (1)^3 \\cr \\dfrac{ 3 }{ 6 } &= A \\cr A &= \\dfrac{ 1 }{ 2 } \\end{aligned}",
+        "Substitute $A = \\dfrac{ 1 }{ 2 }$ back into the equation and rearrange to make $y$ the subject:<br>\\begin{aligned} \\dfrac{ y }{ y + 3 } &= \\dfrac{ 1 }{ 2 } x^3 \\cr 2y &= x^3(y + 3) \\cr 2y &= x^3 y + 3x^3 \\cr 2y - x^3 y &= 3x^3 \\cr y(2 - x^3) &= 3x^3 \\cr y &= \\dfrac{ 3x^3 }{ 2 - x^3 } \\end{aligned}<br>This completes the proof."
+    ],
+    "pi_options": [
+        {
+            "ans": "$y = \\dfrac{ 3x^3 }{ 1 - x^3 }$",
+            "feedback": "Check your initial condition substitution. Substituting $x = 1$ and $y = 3$ into $\\dfrac{ y }{ y + 3 } = A x^3$ gives $\\dfrac{ 3 }{ 6 } = A \\implies A = \\dfrac{ 1 }{ 2 }$. Using $A = 1$ leads to an incorrect denominator."
+        },
+        {
+            "ans": "$y = \\dfrac{ x^3 }{ 2 - 3x^3 }$",
+            "feedback": "Check your algebraic rearrangement when isolating $y$. Expanding $2y = x^3(y+3)$ gives $2y = x^3 y + 3x^3$. Grouping the $y$ terms on the left yields $y(2 - x^3) = 3x^3$."
+        },
+        {
+            "ans": "$y = \\dfrac{ 3x^3 }{ 2 + x^3 }$",
+            "feedback": "Check your signs when transposing $2y = x^3 y + 3x^3$. Subtracting $x^3 y$ from both sides should yield $2y - x^3 y = 3x^3 \\implies y(2 - x^3) = 3x^3$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Multiplying by the LCM of denominators",
+        "content": "When resolving partial fraction coefficients inside a differential equation, multiplying both sides by the denominator coefficient (here, $3$) before integrating keeps your logarithms incredibly clean and avoids carrying fractional factors inside logarithmic terms."
+    }
+},
+{
+    "id": "004610",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Boundary Conditions"
+    ],
+    "img": false,
+    "question": "The variables $x$ and $y$ satisfy the differential equation:<br><br>$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = x \\mathrm{e}^{ y - x^2 }$<br><br>and $y = 0$ when $x = 0$.<br><br><strong>(i)</strong> Find the general solution of the differential equation, expressing $y$ in terms of $x$.<br><br><strong>(ii)</strong> Hence find the exact value of $y$ when $x = 1$.",
+    "steps": [
+        "<strong>(i)</strong> Rewrite the exponential expression using index laws, $\\mathrm{e}^{ y - x^2 } = \\mathrm{e}^{ y } \\times \\mathrm{e}^{ -x^2 }$, to allow variable separation:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= x \\mathrm{e}^{ y } \\mathrm{e}^{ -x^2 } \\cr \\mathrm{e}^{ -y } \\mathrm{d}y &= x \\mathrm{e}^{ -x^2 } \\mathrm{d}x \\end{aligned}",
+        "Integrate both sides of the equation:<br>\\begin{aligned} \\int \\mathrm{e}^{ -y } \\mathrm{d}y &= \\int x \\mathrm{e}^{ -x^2 } \\mathrm{d}x \\end{aligned}",
+        "Perform the integrations on both sides (using the reverse chain rule/substitution for the right-hand side, letting $u = -x^2 \\implies \\mathrm{d}u = -2x \\mathrm{d}x$):<br>\\begin{aligned} -\\mathrm{e}^{ -y } &= -\\dfrac{ 1 }{ 2 }\\mathrm{e}^{ -x^2 } + C \\cr \\mathrm{e}^{ -y } &= \\dfrac{ 1 }{ 2 }\\mathrm{e}^{ -x^2 } + K \\quad (\\text{where } K = -C) \\end{aligned}",
+        "Apply the initial condition $(0, 0)$, substituting $x = 0$ and $y = 0$ to solve for $K$:<br>\\begin{aligned} \\mathrm{e}^{ 0 } &= \\dfrac{ 1 }{ 2 }\\mathrm{e}^{ 0 } + K \\cr 1 &= \\dfrac{ 1 }{ 2 } + K \\cr K &= \\dfrac{ 1 }{ 2 } \\end{aligned}",
+        "Substitute $K = \\dfrac{ 1 }{ 2 }$ back into the integrated expression:<br>\\begin{aligned} \\mathrm{e}^{ -y } &= \\dfrac{ 1 }{ 2 }\\mathrm{e}^{ -x^2 } + \\dfrac{ 1 }{ 2 } \\cr \\mathrm{e}^{ -y } &= \\dfrac{ \\mathrm{e}^{ -x^2 } + 1 }{ 2 } \\end{aligned}",
+        "Take natural logarithms of both sides and solve for $y$:<br>\\begin{aligned} -y &= \\ln\\left( \\dfrac{ \\mathrm{e}^{ -x^2 } + 1 }{ 2 } \\right) \\cr y &= -\\ln\\left( \\dfrac{ \\mathrm{e}^{ -x^2 } + 1 }{ 2 } \\right) \\cr y &= \\ln\\left( \\dfrac{ 2 }{ \\mathrm{e}^{ -x^2 } + 1 } \\right) \\end{aligned}",
+        "<strong>(ii)</strong> Substitute $x = 1$ into the general solution to find the exact value of $y$:<br>\\begin{aligned} y &= \\ln\\left( \\dfrac{ 2 }{ \\mathrm{e}^{ -1 } + 1 } \\right) \\cr &= \\ln\\left( \\dfrac{ 2 }{ \\dfrac{ 1 }{ \\mathrm{e} } + 1 } \\right) \\cr &= \\ln\\left( \\dfrac{ 2 }{ \\dfrac{ 1 + \\mathrm{e} }{ \\mathrm{e} } } \\right) \\cr &= \\ln\\left( \\dfrac{ 2\\mathrm{e} }{ 1 + \\mathrm{e} } \\right) \\end{aligned}<br>So, the exact value of $y$ is $\\ln\\left( \\dfrac{ 2\\mathrm{e} }{ 1 + \\mathrm{e} } \\right)$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $y = -\\ln\\left( \\dfrac{ \\mathrm{e}^{ -x^2 } + 1 }{ 2 } \\right)$<br><strong>(ii)</strong> $y = \\ln\\left( \\dfrac{ 2 }{ 1 + \\mathrm{e} } \\right)$",
+            "feedback": "Check your fraction simplification in part <strong>(ii)</strong>. Substituting $x = 1$ into $\\dfrac{ 2 }{ \\mathrm{e}^{-1} + 1 }$ gives $\\dfrac{ 2 }{ 1/\\mathrm{e} + 1 }$. Multiplying the numerator and denominator by $\\mathrm{e}$ yields $\\dfrac{ 2\\mathrm{e} }{ 1 + \\mathrm{e} }$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $y = \\ln\\left( \\dfrac{ 2 }{ \\mathrm{e}^{ -x^2 } - 1 } \\right)$<br><strong>(ii)</strong> $y = \\ln\\left( \\dfrac{ 2\\mathrm{e} }{ \\mathrm{e} - 1 } \\right)$",
+            "feedback": "Check your signs in step 5. The equation is $\\mathrm{e}^{-y} = \\dfrac{ \\mathrm{e}^{-x^2} + 1 }{ 2 }$, which has a plus sign in the numerator. A minus sign is incorrect."
+        },
+        {
+            "ans": "<strong>(i)</strong> $y = \\ln\\left( \\dfrac{ 1 }{ \\mathrm{e}^{ -x^2 } + 1 } \\right)$<br><strong>(ii)</strong> $y = \\ln\\left( \\dfrac{ \\mathrm{e} }{ 1 + \\mathrm{e} } \\right)$",
+            "feedback": "Check your boundary condition. When substituting $(0,0)$ into the expression $\\mathrm{e}^{-y} = \\dfrac{ 1 }{ 2 }\\mathrm{e}^{-x^2} + K$, you get $1 = \\dfrac{ 1 }{ 2 } + K \\implies K = \\dfrac{ 1 }{ 2 }$. Forgetting the $+1/2$ term leads to an incorrect numerator."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Exponentials with Negative Arguments",
+        "content": "When dealing with expressions like $\\ln\\left( \\dfrac{ 2 }{ \\mathrm{e}^{ -1 } + 1 } \\right)$, always convert $\\mathrm{e}^{ -1 }$ to $\\dfrac{ 1 }{ \\mathrm{e} }$ and find a common denominator for the bottom fraction. This is the only way to simplify the expression into the clean, single-log form $\\ln\\left( \\dfrac{ 2\\mathrm{e} }{ 1 + \\mathrm{e} } \\right)$ commonly required in A Level exams."
     }
 }
 ];
