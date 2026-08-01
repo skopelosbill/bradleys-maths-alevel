@@ -466,7 +466,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "<strong>(i)</strong> $\\angle YXZ \\approx 48.4^\\circ$<br><strong>(ii)</strong> $\\text{Area} \\approx 59.8\\text{ cm}^2$",
-            "feedback": "Check your application of the Cosine Rule. When setting up the numerator, make sure you subtract the square of the opposite side ($YZ^2 = 100$), not one of the adjacent sides. This error leads to an incorrect angle of $48.4^\circ$."
+            "feedback": "Check your application of the Cosine Rule. When setting up the numerator, make sure you subtract the square of the opposite side ($YZ^2 = 100$), not one of the adjacent sides. This error leads to an incorrect angle of $48.4^\\circ$."
         },
         {
             "ans": "<strong>(i)</strong> $\\angle YXZ \\approx 41.6^\\circ$<br><strong>(ii)</strong> $\\text{Area} \\approx 90.0\\text{ cm}^2$",
@@ -502,7 +502,7 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "<strong>(i)</strong> $\\angle PRQ \\approx 59.0^\\circ$ or $121.0^\\circ$<br><strong>(ii)</strong> $\\text{Area} \\approx 20.6\\text{ cm}^2$",
-            "feedback": "You identified the correct angles, but check your area calculation. It appears you used the acute angle $\\angle PRQ = 59.0^\\circ$ to find the remaining angle as $81.0^\circ$. For part <strong>(ii)</strong>, you must use the obtuse case ($121.0^\circ$), which gives a remaining angle of $19.0^\circ$ and an area of $7.8\\text{ cm}^2$."
+            "feedback": "You identified the correct angles, but check your area calculation. It appears you used the acute angle $\\angle PRQ = 59.0^\\circ$ to find the remaining angle as $81.0^\\circ$. For part <strong>(ii)</strong>, you must use the obtuse case ($121.0^\\circ$), which gives a remaining angle of $19.0^\\circ$ and an area of $7.8\\text{ cm}^2$."
         },
         {
             "ans": "<strong>(i)</strong> $\\angle PRQ \\approx 59.0^\\circ$ only<br><strong>(ii)</strong> $\\text{Area} \\approx 7.8\\text{ cm}^2$",
@@ -510,7 +510,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "<strong>(i)</strong> $\\angle PRQ \\approx 59.0^\\circ$ or $121.0^\\circ$<br><strong>(ii)</strong> $\\text{Area} \\approx 12.0\\text{ cm}^2$",
-            "feedback": "Check your side length calculation for $PR$. Ensure you use the Sine Rule correctly with the angle $\\angle PQR = 19.0^\circ$. This should yield $PR \\approx 3.04\\text{ cm}$, leading to an area of $7.8\\text{ cm}^2$."
+            "feedback": "Check your side length calculation for $PR$. Ensure you use the Sine Rule correctly with the angle $\\angle PQR = 19.0^\\circ$. This should yield $PR \\approx 3.04\\text{ cm}$, leading to an area of $7.8\\text{ cm}^2$."
         }
     ],
     "bradley_insight": {
@@ -546,7 +546,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "<strong>(i)</strong> $AB = 5$, $BC = \\sqrt{ 10 }$, $AC = \\sqrt{ 17 }$<br><strong>(ii)</strong> $\\angle ABC \\approx 35^\\circ$",
-            "feedback": "Check your rearranged Cosine Rule formula. Make sure you subtract the square of the opposite side ($AC^2 = 17$) in the numerator, not one of the adjacent sides. Forgetting this details leads to an incorrect angle of $35^\circ$."
+            "feedback": "Check your rearranged Cosine Rule formula. Make sure you subtract the square of the opposite side ($AC^2 = 17$) in the numerator, not one of the adjacent sides. Forgetting this details leads to an incorrect angle of $35^\\circ$."
         },
         {
             "ans": "<strong>(i)</strong> $AB = 5$, $BC = \\sqrt{ 10 }$, $AC = \\sqrt{ 17 }$<br><strong>(ii)</strong> $\\angle ABC \\approx 45^\\circ$",
@@ -572,22 +572,22 @@ window.ALEVEL_QUESTIONS = [
     "img": "images/Pure/004615.png",
     "question": "The diagram shows the journey of a ship sailing $15\\text{ km}$ from port $P$ on a bearing of $060^\\circ$ to a point $A$. It then changes course and sails $12\\text{ km}$ on a bearing of $130^\\circ$ to a point $B$.<br><br><strong>(i)</strong> Find the distance of the ship from port $P$ when it is at point $B$, giving your answer to $1$ decimal place.<br><strong>(ii)</strong> Find the bearing of $B$ from port $P$, giving your answer to the nearest degree.",
     "steps": [
-        "<strong>(i)</strong> To analyze the triangle $PAB$, first determine the interior angle $\\angle PAB$.<br><br>Using parallel lines on North directions:<br><strong>•</strong> The angle from $AP$ to the South direction at $A$ is equal to the original bearing of $060^\circ$ (alternate angles).<br><strong>•</strong> The bearing of $B$ from $A$ is $130^\circ$, which is $130^\circ - 180^\circ = -50^\circ$ (or $50^\circ$ East of South).<br><br>Adding these angles gives the interior angle $\\angle PAB$:<br>\\begin{aligned} \\angle PAB &= 60^\\circ + (180^\\circ - 130^\\circ) \\cr &= 60^\\circ + 50^\\circ \\cr &= 110^\\circ \\end{aligned}",
+        "<strong>(i)</strong> To analyze the triangle $PAB$, first determine the interior angle $\\angle PAB$.<br><br>Using parallel lines on North directions:<br><strong>•</strong> The angle from $AP$ to the South direction at $A$ is equal to the original bearing of $060^\\circ$ (alternate angles).<br><strong>•</strong> The bearing of $B$ from $A$ is $130^\\circ$, which is $130^\\circ - 180^\\circ = -50^\\circ$ (or $50^\\circ$ East of South).<br><br>Adding these angles gives the interior angle $\\angle PAB$:<br>\\begin{aligned} \\angle PAB &= 60^\\circ + (180^\\circ - 130^\\circ) \\cr &= 60^\\circ + 50^\\circ \\cr &= 110^\\circ \\end{aligned}",
         "Now, find the missing side $PB$ of triangle $PAB$ using the Cosine Rule:<br>\\begin{aligned} PB^2 &= PA^2 + AB^2 - 2(PA)(AB)\\cos(\\angle PAB) \\end{aligned}",
         "Substitute the given lengths and our calculated interior angle into the formula:<br>\\begin{aligned} PB^2 &= 15^2 + 12^2 - 2(15)(12)\\cos(110^\\circ) \\cr &= 225 + 144 - 360\\cos(110^\\circ) \\cr &= 369 - 360(-0.342020) \\cr &= 369 + 123.127 \\cr &= 492.127 \\end{aligned}",
         "Take the square root of both sides to find the distance $PB$ (giving your answer to $1$ decimal place):<br>\\begin{aligned} PB &= \\sqrt{ 492.127 } \\cr &\\approx 22.2 \\text{ km} \\end{aligned}",
         "<strong>(ii)</strong> To find the bearing of $B$ from port $P$, we first need the interior angle $\\angle APB$. Apply the Sine Rule:<br>\\begin{aligned} \\dfrac{ \\sin(\\angle APB) }{ AB } &= \\dfrac{ \\sin(\\angle PAB) }{ PB } \\cr \\dfrac{ \\sin(\\angle APB) }{ 12 } &= \\dfrac{ \\sin(110^\\circ) }{ 22.184 } \\cr \\sin(\\angle APB) &= \\dfrac{ 12\\sin(110^\\circ) }{ 22.184 } \\cr &\\approx \\dfrac{ 12(0.939693) }{ 22.184 } \\cr &\\approx 0.508316 \\end{aligned}",
         "Take the inverse sine to find the angle $\\angle APB$:<br>\\begin{aligned} \\angle APB &= \\arcsin(0.508316) \\cr &\\approx 30.6^\\circ \\end{aligned}",
-        "The bearing of $A$ from port $P$ is $060^\circ$, and point $B$ lies clockwise from line $PA$. Therefore, the total bearing of $B$ from port $P$ is:<br>\\begin{aligned} \\text{Bearing} &= 60^\\circ + 30.6^\\circ \\cr &= 90.6^\\circ \\cr &\\approx 091^\\circ \\quad (\\text{to the nearest degree}) \\end{aligned}"
+        "The bearing of $A$ from port $P$ is $060^\\circ$, and point $B$ lies clockwise from line $PA$. Therefore, the total bearing of $B$ from port $P$ is:<br>\\begin{aligned} \\text{Bearing} &= 60^\\circ + 30.6^\\circ \\cr &= 90.6^\\circ \\cr &\\approx 091^\\circ \\quad (\\text{to the nearest degree}) \\end{aligned}"
     ],
     "pi_options": [
         {
             "ans": "<strong>(i)</strong> $PB \\approx 22.2\\text{ km}$<br><strong>(ii)</strong> $\\text{Bearing} \\approx 031^\\circ$",
-            "feedback": "You correctly calculated the interior angle $\\angle APB = 31.0^\circ$, but remember that bearings are measured clockwise from North. You must add this angle to the initial bearing of $060^\circ$ to get $091^\circ$."
+            "feedback": "You correctly calculated the interior angle $\\angle APB = 31.0^\\circ$, but remember that bearings are measured clockwise from North. You must add this angle to the initial bearing of $060^\\circ$ to get $091^\\circ$."
         },
         {
             "ans": "<strong>(i)</strong> $PB \\approx 15.7\\text{ km}$<br><strong>(ii)</strong> $\\text{Bearing} \\approx 091^\\circ$",
-            "feedback": "Check your interior angle $\\angle PAB$. The angle between the bearings is $110^\circ$. It appears you may have used $\\angle PAB = 70^\circ$, which leads to an incorrect distance of $15.7\\text{ km}$."
+            "feedback": "Check your interior angle $\\angle PAB$. The angle between the bearings is $110^\\circ$. It appears you may have used $\\angle PAB = 70^\\circ$, which leads to an incorrect distance of $15.7\\text{ km}$."
         },
         {
             "ans": "<strong>(i)</strong> $PB \\approx 22.2\\text{ km}$<br><strong>(ii)</strong> $\\text{Bearing} \\approx 029^\\circ$",
