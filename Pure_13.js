@@ -599,5 +599,186 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Drawing Bearings parallel lines",
         "content": "When dealing with bearings, always draw a vertical dashed line representing North at each vertex. This allows you to easily find interior angles of the triangle using parallel line theorems (alternate and co-interior angles). It completely prevents the common slip of misidentifying the interior angle."
     }
+},
+{
+    "id": "004616",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Graphs of Functions",
+    "subtopic": [
+        "Transformations"
+    ],
+    "img": false,
+    "question": "The curve $y = \\dfrac{ 1 }{ x^2 }$ is translated by the vector $\\begin{pmatrix} -3 \\cr 5 \\end{pmatrix}$.<br><br>Write down the equation of the transformed curve.",
+    "steps": [
+        "A translation represented by the vector $\\begin{pmatrix} a \\cr b \\end{pmatrix}$ has the following algebraic effects on a curve $y = \\mathrm{f}(x)$:<br><br><strong>• Horizontal shift:</strong> a shift of $a$ units in the $x$-direction replaces every $x$ with $(x - a)$ in the equation.<br><strong>• Vertical shift:</strong> a shift of $b$ units in the $y$-direction adds $b$ to the overall equation.",
+        "For the translation vector $\\begin{pmatrix} -3 \\cr 5 \\end{pmatrix}$:<br><br><strong>•</strong> The horizontal translation of $-3$ units (3 units to the left) means we replace $x$ with $(x - (-3)) = (x + 3)$.<br><strong>•</strong> The vertical translation of $5$ units (5 units upwards) means we add $5$ to the overall equation.",
+        "Substitute these transformations into the original curve $y = \\dfrac{ 1 }{ x^2 }$:<br>\\begin{aligned} y &= \\dfrac{ 1 }{ (x + 3)^2 } + 5 \\end{aligned}<br>This is the final equation of the transformed curve."
+    ],
+    "pi_options": [
+        {
+            "ans": "$y = \\dfrac{ 1 }{ (x - 3)^2 } + 5$",
+            "feedback": "Check the sign of your horizontal transformation. A translation of $-3$ units in the $x$-direction (to the left) corresponds to replacing $x$ with $(x + 3)$, not $(x - 3)$."
+        },
+        {
+            "ans": "$y = \\dfrac{ 1 }{ (x + 3)^2 } - 5$",
+            "feedback": "Check the sign of your vertical transformation. A translation of $+5$ units in the $y$-direction (upwards) corresponds to adding $5$ to the overall equation, not subtracting $5$."
+        },
+        {
+            "ans": "$y = \\dfrac{ 1 }{ x^2 + 3 } + 5$",
+            "feedback": "When performing a horizontal translation, you must replace the variable $x$ itself with $(x + 3)$. Replacing $x^2$ with $x^2 + 3$ is a common error and is mathematically incorrect."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Horizontal vs. Vertical Signs",
+        "content": "Always remember that horizontal transformations often behave in the opposite way to what you might intuitively expect from the sign of the vector. A shift to the left (negative $x$-direction, $-3$) requires adding to $x$: $(x + 3)$. Vertical transformations, however, match the sign of the vector directly: a shift upwards ($+5$) simply adds $5$ to the overall function."
+    }
+},
+{
+    "id": "004617",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Graphs of Functions",
+    "subtopic": [
+        "Transformations"
+    ],
+    "img": false,
+    "question": "The curve $y = x^3 - 2x$ is translated by the vector $\\begin{pmatrix} 2 \\cr -3 \\end{pmatrix}$.<br><br>Find the equation of the transformed curve, giving your answer in a form not involving expanded brackets.",
+    "steps": [
+        "A translation represented by the vector $\\begin{pmatrix} a \\cr b \\end{pmatrix}$ has the following algebraic effects on a curve $y = \\mathrm{f}(x)$:<br><br><strong>• Horizontal shift:</strong> replaces every $x$ with $(x - a)$ in the equation.<br><strong>• Vertical shift:</strong> adds $b$ to the overall equation.",
+        "For the translation vector $\\begin{pmatrix} 2 \\cr -3 \\end{pmatrix}$:<br><br><strong>•</strong> The horizontal translation of $+2$ units (2 units to the right) means we replace $x$ with $(x - 2)$ everywhere in the equation.<br><strong>•</strong> The vertical translation of $-3$ units (3 units downwards) means we subtract $3$ from the overall equation.",
+        "Apply these transformations to the original equation $y = x^3 - 2x$. Ensure you substitute $(x - 2)$ for *every* single occurrence of $x$:<br>\\begin{aligned} y &= (x - 2)^3 - 2(x - 2) - 3 \\end{aligned}<br>This is the required unexpanded form."
+    ],
+    "pi_options": [
+        {
+            "ans": "$y = (x - 2)^3 - 2x - 3$",
+            "feedback": "When performing a horizontal translation, you must replace *every* single occurrence of the variable $x$ in the equation with $(x - 2)$. Forgetting to replace the $x$ in the $-2x$ term is a common error."
+        },
+        {
+            "ans": "$y = (x + 2)^3 - 2(x + 2) - 3$",
+            "feedback": "Check the sign of your horizontal transformation. A translation of $+2$ units in the $x$-direction (to the right) corresponds to replacing $x$ with $(x - 2)$, not $(x + 2)$."
+        },
+        {
+            "ans": "$y = (x - 2)^3 - 2(x - 2) + 3$",
+            "feedback": "Check the sign of your vertical transformation. A translation of $-3$ units in the $y$-direction (downwards) corresponds to subtracting $3$ from the overall equation, not adding $3$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Replace Every x",
+        "content": "A very frequent mistake in exams is replacing only the first $x$ in a multi-term function (such as translating $x^3$ but leaving $-2x$ untouched). To avoid this, mentally place brackets around every single $x$ in your original function before substituting, e.g., $y = (x)^3 - 2(x)$, and then swap each $(x)$ for $(x - a)$."
+    }
+},
+{
+    "id": "004618",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Graphs of Functions",
+    "subtopic": [
+        "Transformations"
+    ],
+    "img": false,
+    "question": "The curve $y = \\sqrt{ x }$ is transformed by:<br><br><strong>•</strong> a stretch parallel to the $y$-axis with scale factor $3$,<br><strong>•</strong> followed by a translation of vector $\\begin{pmatrix} 4 \\cr 1 \\end{pmatrix}$.<br><br>Find the equation of the transformed curve.",
+    "steps": [
+        "<strong>Step 1:</strong> Apply the first transformation. A stretch parallel to the $y$-axis with scale factor $k$ corresponds to multiplying the entire function by $k$ (i.e. replacing $y$ with $k y$):<br>\\begin{aligned} y &= 3\\sqrt{ x } \\end{aligned}",
+        "<strong>Step 2:</strong> Apply the translation. A translation of vector $\\begin{pmatrix} 4 \\cr 1 \\end{pmatrix}$ corresponds to:<br><br><strong>•</strong> replacing $x$ with $(x - 4)$ (horizontal translation 4 units to the right),<br><strong>•</strong> adding $1$ to the overall function (vertical translation 1 unit upwards).",
+        "Apply these translation steps directly to our equation $y = 3\\sqrt{ x }$:<br>\\begin{aligned} y &= 3\\sqrt{ x - 4 } + 1 \\end{aligned}<br>This is the final equation of the transformed curve."
+    ],
+    "pi_options": [
+        {
+            "ans": "$y = 3\\sqrt{ x + 4 } + 1$",
+            "feedback": "Check the sign of your horizontal translation. A translation of $+4$ units in the $x$-direction (to the right) requires replacing $x$ with $(x - 4)$, not $(x + 4)$."
+        },
+        {
+            "ans": "$y = \\sqrt{ 3(x - 4) } + 1$",
+            "feedback": "Check your stretch type. A stretch parallel to the $y$-axis (vertical stretch) affects the outside of the function, multiplying the entire expression by $3$. Multiplying $x$ inside the square root corresponds to a horizontal stretch, which is incorrect."
+        },
+        {
+            "ans": "$y = 3\\sqrt{ x - 4 } - 1$",
+            "feedback": "Check the sign of your vertical translation. A translation of $+1$ unit in the $y$-direction (upwards) corresponds to adding $1$ to the function, not subtracting $1$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Order of Transformations",
+        "content": "The order in which transformations are applied is critical. If we had translated first and then stretched, the final equation would have been $y = 3(\\sqrt{ x - 4 } + 1) = 3\\sqrt{ x - 4 } + 3$. Since the stretch was applied *before* the translation, the scale factor $3$ only multiplies the square root term, giving $y = 3\\sqrt{ x - 4 } + 1$."
+    }
+},
+{
+    "id": "004619",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Graphs of Functions",
+    "subtopic": [
+        "Transformations"
+    ],
+    "img": false,
+    "question": "The curve $y = 2^x$ is transformed into the curve $y = 2^{x - 3} - 6$.<br><br><strong>(i)</strong> Describe fully the single transformation that maps the first curve onto the second, using vector notation where appropriate.<br><br><strong>(ii)</strong> State the coordinates of the $y$-intercept of the transformed curve.",
+    "steps": [
+        "<strong>(i)</strong> Compare the transformed equation $y = 2^{x - 3} - 6$ to the original equation $y = 2^x$ to identify the individual changes:<br><br><strong>•</strong> The variable $x$ has been replaced with $(x - 3)$, which corresponds to a horizontal translation of $+3$ units (3 units to the right).<br><strong>•</strong> The term $-6$ has been added to the end of the function, which corresponds to a vertical translation of $-6$ units (6 units downwards).",
+        "These two translations can be combined into a single overall translation represented by the column vector:<br>\\begin{aligned} \\begin{pmatrix} 3 \\cr -6 \\end{pmatrix} \\end{aligned}",
+        "<strong>(ii)</strong> To find the $y$-intercept of the transformed curve, substitute $x = 0$ into its equation:<br>\\begin{aligned} y &= 2^{0 - 3} - 6 \\cr &= 2^{ -3 } - 6 \\cr &= \\dfrac{ 1 }{ 8 } - 6 \\cr &= \\dfrac{ 1 - 48 }{ 8 } \\cr &= -\\dfrac{ 47 }{ 8 } \\quad (\\text{or } -5.875) \\end{aligned}",
+        "Therefore, the coordinates of the $y$-intercept are:<br>\\begin{aligned} \\left( 0, -\\dfrac{ 47 }{ 8 } \\right) \\end{aligned} (or $(0, -5.875)$)."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> Translation vector $\\begin{pmatrix} -3 \\cr -6 \\end{pmatrix}$<br><strong>(ii)</strong> $\\left( 0, -\\dfrac{ 47 }{ 8 } \\right)$",
+            "feedback": "Check the sign of your horizontal translation. Replacing $x$ with $(x - 3)$ corresponds to a translation of $+3$ units in the $x$-direction (to the right), so the vector is $\\begin{pmatrix} 3 \\cr -6 \\end{pmatrix}$, not $\\begin{pmatrix} -3 \\cr -6 \\end{pmatrix}$."
+        },
+        {
+            "ans": "<strong>(i)</strong> Translation vector $\\begin{pmatrix} 3 \\cr -6 \\end{pmatrix}$<br><strong>(ii)</strong> $(0, -12)$",
+            "feedback": "Check your calculation for the $y$-intercept. Substituting $x = 0$ into the equation yields $2^{ -3 } - 6 = \\dfrac{ 1 }{ 8 } - 6$. It appears you may have incorrectly calculated $2^{ -3 }$ as $-6$ or made a multiplication slip."
+        },
+        {
+            "ans": "<strong>(i)</strong> Translation vector $\\begin{pmatrix} 3 \\cr -6 \\end{pmatrix}$<br><strong>(ii)</strong> $(0, -5)$",
+            "feedback": "Check your evaluation of the negative exponent. Remember that $2^{ -3 } = \\dfrac{ 1 }{ 2^3 } = \\dfrac{ 1 }{ 8 }$. It appears you may have incorrectly evaluated $2^{ -3 }$ as $1$ (yielding $1 - 6 = -5$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Finding Coordinates of Features",
+        "content": "To find key features of any transformed curve (such as intercepts or stationary points), you can either substitute into the final equation directly or apply the transformation vector to the features of the original curve. For $y = 2^x$, the original $y$-intercept is $(0, 1)$. Applying the translation vector $\\begin{pmatrix} 3 \\cr -6 \\end{pmatrix}$ shifts this point to $(0+3, 1-6) = (3, -5)$, which lies on the new curve, but note that the new $y$-intercept must always have $x = 0$."
+    }
+},
+{
+    "id": "004620",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Graphs of Functions",
+    "subtopic": [
+        "Transformations"
+    ],
+    "img": false,
+    "question": "The curve $y = \\dfrac{ 3 }{ x - 2 } + 1$ is a transformation of the standard curve $y = \\dfrac{ 1 }{ x }$.<br><br>Describe a sequence of two transformations that maps the curve $y = \\dfrac{ 1 }{ x }$ onto the curve $y = \\dfrac{ 3 }{ x - 2 } + 1$.",
+    "steps": [
+        "To map $y = \\dfrac{ 1 }{ x }$ onto the transformed equation $y = \\dfrac{ 3 }{ x - 2 } + 1$, analyze the differences:<br><br><strong>• Multiplication by $3$ on the outside:</strong> this corresponds to a vertical stretch parallel to the $y$-axis with scale factor $3$.<br><strong>• Replacing $x$ with $(x - 2)$ and adding $1$:</strong> this corresponds to a translation of $2$ units to the right and $1$ unit upwards.",
+        "We can structure these observations into a formal sequence of exactly two transformations:<br><br><strong>1. Transformation 1:</strong> A stretch parallel to the $y$-axis with scale factor $3$. This maps $y = \\dfrac{ 1 }{ x }$ onto $y = \\dfrac{ 3 }{ x }$.",
+        "<strong>2. Transformation 2:</strong> A translation represented by the column vector $\\begin{pmatrix} 2 \\cr 1 \\end{pmatrix}$. This maps $y = \\dfrac{ 3 }{ x }$ onto $y = \\dfrac{ 3 }{ x - 2 } + 1$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>1.</strong> Stretch parallel to $y$-axis with scale factor $3$<br><strong>2.</strong> Translation vector $\\begin{pmatrix} -2 \\cr 1 \\end{pmatrix}$",
+            "feedback": "Check the sign of your horizontal translation. Replacing $x$ with $(x - 2)$ corresponds to a translation of $+2$ units (to the right), so the translation vector must be $\\begin{pmatrix} 2 \\cr 1 \\end{pmatrix}$, not $\\begin{pmatrix} -2 \\cr 1 \\end{pmatrix}$."
+        },
+        {
+            "ans": "<strong>1.</strong> Stretch parallel to $x$-axis with scale factor $3$<br><strong>2.</strong> Translation vector $\\begin{pmatrix} 2 \\cr 1 \\end{pmatrix}$",
+            "feedback": "Check your stretch direction. Multiplying on the outside of the function (changing the numerator from $1$ to $3$) is a vertical stretch parallel to the $y$-axis, not a horizontal stretch parallel to the $x$-axis."
+        },
+        {
+            "ans": "<strong>1.</strong> Stretch parallel to $y$-axis with scale factor $\\dfrac{ 1 }{ 3 }$<br><strong>2.</strong> Translation vector $\\begin{pmatrix} 2 \\cr 1 \\end{pmatrix}$",
+            "feedback": "Check your stretch scale factor. Since the function is multiplied by $3$ on the outside, the scale factor is $3$. A scale factor of $\\dfrac{ 1 }{ 3 }$ would correspond to dividing the function by $3$, which is incorrect."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Combining Shifts into Vectors",
+        "content": "When a question asks for a sequence of 'two' transformations but there is a horizontal shift, a vertical shift, and a stretch, you can combine the horizontal and vertical shifts into a single translation vector. A translation represented by $\\begin{pmatrix} a \\cr b \\end{pmatrix}$ counts as a single, combined transformation, keeping your sequence perfectly restricted to two steps."
+    }
 }
 ];
