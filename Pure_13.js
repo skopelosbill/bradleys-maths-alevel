@@ -78,7 +78,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Expanding with Exact Values",
-        "content": "Always write down your exact values for common angles (like $\\sin 60^\circ = \\dfrac{ \\sqrt{ 3 } }{ 2 }$ and $\\cos 30^\circ = \\dfrac{ \\sqrt{ 3 } }{ 2 }$) before expanding. This ensures you can easily factorise and simplify coefficients without making early arithmetic slips."
+        "content": "Always write down your exact values for common angles (like $\\sin 60^\\circ = \\dfrac{ \\sqrt{ 3 } }{ 2 }$ and $\\cos 30^\\circ = \\dfrac{ \\sqrt{ 3 } }{ 2 }$) before expanding. This ensures you can easily factorise and simplify coefficients without making early arithmetic slips."
     }
 },
 {
