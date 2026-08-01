@@ -780,5 +780,192 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Combining Shifts into Vectors",
         "content": "When a question asks for a sequence of 'two' transformations but there is a horizontal shift, a vertical shift, and a stretch, you can combine the horizontal and vertical shifts into a single translation vector. A translation represented by $\\begin{pmatrix} a \\cr b \\end{pmatrix}$ counts as a single, combined transformation, keeping your sequence perfectly restricted to two steps."
     }
+},
+{
+    "id": "004621",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Small Angle Approximations"
+    ],
+    "img": "images/Pure/004621.png",
+    "question": "The diagram shows a circle with centre $O$ and radius $1$ unit. Points $A$ and $B$ lie on the circle such that angle $\\angle AOB = \\theta$ radians, where $\\theta$ is a small angle. Point $C$ lies on $AO$ such that $BC$ is perpendicular to $AO$.<br><br>Show that, when $\\theta$ is small, the length of $AC$ can be approximated by:<br>$$AC \\approx \\dfrac{ 1 }{ 2 }\\theta^2$$",
+    "steps": [
+        "First, write down the geometric relationships along the radius $OA$ of the unit circle:<br>\\begin{aligned} AO &= 1 \\cr OC &= AO \\cos\\theta \\cr OC &= \\cos\\theta \\end{aligned}",
+        "The segment $AC$ is the difference between the full radius $AO$ and the segment $OC$:<br>\\begin{aligned} AC &= AO - OC \\cr &= 1 - \\cos\\theta \\end{aligned}",
+        "For small angles measured in radians, apply the standard small angle approximation for cosine, $\\cos\\theta \\approx 1 - \\dfrac{ 1 }{ 2 }\\theta^2$:<br>\\begin{aligned} AC &\\approx 1 - \\left( 1 - \\dfrac{ 1 }{ 2 }\\theta^2 \\right) \\cr &\\approx 1 - 1 + \\dfrac{ 1 }{ 2 }\\theta^2 \\cr &\\approx \\dfrac{ 1 }{ 2 }\\theta^2 \\end{aligned}<br>This completes the proof."
+    ],
+    "pi_options": [
+        {
+            "ans": "$AC \\approx \\theta$",
+            "feedback": "Check your geometric setup along the radius. The segment $OC = \\cos\\theta$, which yields $AC = 1 - \\cos\\theta$. Applying the approximation $\\cos\\theta \\approx 1 - \\dfrac{ 1 }{ 2 }\\theta^2$ yields a quadratic approximation, not a linear one."
+        },
+        {
+            "ans": "$AC \\approx 1 - \\theta^2$",
+            "feedback": "Check the standard small angle approximation for cosine. The approximation is $\\cos\\theta \\approx 1 - \\dfrac{ 1 }{ 2 }\\theta^2$. Forgetting the factor of $\\dfrac{ 1 }{ 2 }$ leads to an incorrect coefficient of $1$ for the quadratic term."
+        },
+        {
+            "ans": "$AC \\approx \\dfrac{ 1 }{ 2 }\\theta$",
+            "feedback": "Check your algebraic subtraction. Simplifying $1 - \\left( 1 - \\dfrac{ 1 }{ 2 }\\theta^2 \\right)$ results in a term proportional to $\\theta^2$, not $\\theta$. Always check that your powers match during algebraic simplification."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Geometrical Derivations",
+        "content": "When asked to derive a small angle approximation from a diagram, always identify the exact geometric lengths of the segments first using basic right-angled trigonometry (here, $OC = \\cos\\theta$). Only apply the algebraic small angle approximations (like $\\cos\\theta \\approx 1 - \\dfrac{ 1 }{ 2 }\\theta^2$) at the very end of your derivation."
+    }
+},
+{
+    "id": "004622",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Small Angle Approximations"
+    ],
+    "img": false,
+    "question": "When $\\theta$ is small, show that the trigonometric expression:<br><br>$\\dfrac{ 3\\sin\\theta - \\theta\\cos\\theta }{ 4\\theta + \\tan^2\\theta }$<br><br>can be approximated by the constant value $\\dfrac{ 1 }{ 2 }$.",
+    "steps": [
+        "Recall the standard small angle approximations for trigonometric functions (where $\\theta$ is measured in radians):<br>$\\sin\\theta \\approx \\theta$, $\\cos\\theta \\approx 1 - \\dfrac{ 1 }{ 2 }\\theta^2$, and $\\tan\\theta \\approx \\theta$",
+        "Substitute these approximations into the numerator of the expression:<br>\\begin{aligned} 3\\sin\\theta - \\theta\\cos\\theta &\\approx 3(\\theta) - \\theta\\left( 1 - \\dfrac{ 1 }{ 2 }\\theta^2 \\right) \\cr &\\approx 3\\theta - \\theta + \\dfrac{ 1 }{ 2 }\\theta^3 \\cr &\\approx 2\\theta + \\dfrac{ 1 }{ 2 }\\theta^3 \\end{aligned}",
+        "Since $\\theta$ is very small, higher-order terms like $\\theta^3$ are negligible compared to linear terms like $2\\theta$, so we can approximate the numerator as:<br>$3\\sin\\theta - \\theta\\cos\\theta \\approx 2\\theta$",
+        "Substitute the approximations into the denominator of the expression:<br>\\begin{aligned} 4\\theta + \\tan^2\\theta &\\approx 4\\theta + (\\theta)^2 \\cr &\\approx 4\\theta + \\theta^2 \\end{aligned}",
+        "For very small values of $\\theta$, the quadratic term $\\theta^2$ is negligible compared to the linear term $4\\theta$, so the denominator approximates to:<br>$4\\theta + \\tan^2\\theta \\approx 4\\theta$",
+        "Divide the approximated numerator by the approximated denominator:<br>\\begin{aligned} \\dfrac{ 3\\sin\\theta - \\theta\\cos\\theta }{ 4\\theta + \\tan^2\\theta } &\\approx \\dfrac{ 2\\theta }{ 4\\theta } \\cr &\\approx \\dfrac{ 1 }{ 2 } \\end{aligned}<br>This completes the proof."
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\dfrac{ 3 }{ 4 }$",
+            "feedback": "Check your expansion of the numerator. The term $\\theta\\cos\\theta \\approx \\theta(1) = \\theta$. Subtracting this from $3\\sin\\theta \\approx 3\\theta$ yields $2\\theta$ in the numerator, not $3\\theta$. This error leads to an incorrect constant ratio of $\\dfrac{ 3 }{ 4 }$."
+        },
+        {
+            "ans": "$\\dfrac{ 1 }{ 4 }$",
+            "feedback": "Check your numerator subtraction. It appears you calculated $3\\sin\\theta - \\theta\\cos\\theta \\approx 3\\theta - 2\\theta = \\theta$. Note that $\\theta\\cos\\theta \\approx \\theta(1) = \\theta$, so the numerator simplifies to $3\\theta - \\theta = 2\\theta$."
+        },
+        {
+            "ans": "$1$",
+            "feedback": "Ensure you correctly keep the coefficients of your leading linear terms. The ratio simplifies to $\\dfrac{ 2\\theta }{ 4\\theta }$, which reduces to the constant fraction $\\dfrac{ 1 }{ 2 }$, not $1$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Ignoring Higher-Order Terms",
+        "content": "When simplifying small angle fractions, always focus on the lowest-power (leading) terms of the numerator and denominator. For very small values of $\\theta$, higher-power terms (like $\\theta^2$ or $\\theta^3$) shrink much faster than linear terms (like $\\theta$), making them mathematically negligible in the final limit."
+    }
+},
+{
+    "id": "004623",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Small Angle Approximations"
+    ],
+    "img": false,
+    "question": "Show that, when $\\theta$ is small, the expression:<br><br>$2\\cos\\theta + \\sin\\theta\\tan(2\\theta)$<br><br>can be approximated by $a + b\\theta^2$, where $a$ and $b$ are integers to be found.",
+    "steps": [
+        "Recall the standard small angle approximations for the trigonometric terms in the expression:<br>$\\cos\\theta \\approx 1 - \\dfrac{ 1 }{ 2 }\\theta^2$, $\\sin\\theta \\approx \\theta$, and $\\tan(2\\theta) \\approx 2\\theta$",
+        "Substitute these approximations into each term of the expression:<br><br><strong>• First term:</strong><br>\\begin{aligned} 2\\cos\\theta &\\approx 2\\left( 1 - \\dfrac{ 1 }{ 2 }\\theta^2 \\right) \\cr &\\approx 2 - \\theta^2 \\end{aligned}",
+        "<strong>• Second term:</strong><br>\\begin{aligned} \\sin\\theta\\tan(2\\theta) &\\approx (\\theta)(2\\theta) \\cr &\\approx 2\\theta^2 \\end{aligned}",
+        "Add the two term approximations together to simplify the expression:<br>\\begin{aligned} 2\\cos\\theta + \\sin\\theta\\tan(2\\theta) &\\approx (2 - \\theta^2) + 2\\theta^2 \\cr &\\approx 2 + \\theta^2 \\end{aligned}<br>This is in the form $a + b\\theta^2$ with $a = 2$ and $b = 1$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$2 - 3\\theta^2$",
+            "feedback": "Check your signs when combining the quadratic terms. You should calculate $-\\theta^2 + 2\\theta^2 = +\\theta^2$. It appears you may have subtracted $2\\theta^2$ instead of adding it, leading to the incorrect coefficient of $-3$."
+        },
+        {
+            "ans": "$2 - \\theta^2$",
+            "feedback": "Check your second term approximation. Forgetting the second term entirely or assuming its product is negligible leads to the incorrect approximation $2 - \\theta^2$. The product $\\sin\\theta\\tan(2\\theta) \\approx 2\\theta^2$ is quadratic and must be included."
+        },
+        {
+            "ans": "$2 + 2\\theta^2$",
+            "feedback": "Check your expansion of $2\\cos\\theta$. Multiplying $2\\left( 1 - \\dfrac{ 1 }{ 2 }\\theta^2 \\right)$ yields $2 - \\theta^2$. Forgetting to distribute the $2$ to the quadratic term of the cosine approximation leads to an incorrect final sum."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Scaling Trig Arguments",
+        "content": "Be careful when applying approximations to scaled arguments, such as $\\tan(2\\theta)$. Since $\\tan(x) \\approx x$, substituting $x = 2\\theta$ yields $\\tan(2\\theta) \\approx 2\\theta$. Always substitute the entire scaled argument directly into the standard approximation formulas."
+    }
+},
+{
+    "id": "004624",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Small Angle Approximations"
+    ],
+    "img": false,
+    "question": "When $\\theta$ is small, show that the expression:<br><br>$\\dfrac{ 4\\cos(2\\theta) - 4 }{ \\theta\\sin(3\\theta) }$<br><br>approximates to a constant rational value, and state this value.",
+    "steps": [
+        "Recall the standard small angle approximations for the scaled trigonometric terms in the expression:<br>$\\cos(2\\theta) \\approx 1 - \\dfrac{ 1 }{ 2 }(2\\theta)^2$ and $\\sin(3\\theta) \\approx 3\\theta$",
+        "First, simplify the cosine approximation term for the numerator:<br>\\begin{aligned} \\cos(2\\theta) &\\approx 1 - \\dfrac{ 1 }{ 2 }(4\\theta^2) \\cr &\\approx 1 - 2\\theta^2 \\end{aligned}",
+        "Substitute this simplified term into the numerator of the expression:<br>\\begin{aligned} 4\\cos(2\\theta) - 4 &\\approx 4(1 - 2\\theta^2) - 4 \\cr &\\approx 4 - 8\\theta^2 - 4 \\cr &\\approx -8\\theta^2 \\end{aligned}",
+        "Substitute the sine approximation into the denominator of the expression:<br>\\begin{aligned} \\theta\\sin(3\\theta) &\\approx \\theta(3\\theta) \\cr &\\approx 3\\theta^2 \\end{aligned}",
+        "Divide the approximated numerator by the approximated denominator to find the constant rational value:<br>\\begin{aligned} \\dfrac{ 4\\cos(2\\theta) - 4 }{ \\theta\\sin(3\\theta) } &\\approx \\dfrac{ -8\\theta^2 }{ 3\\theta^2 } \\cr &\\approx -\\dfrac{ 8 }{ 3 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$-\\dfrac{ 2 }{ 3 }$",
+            "feedback": "Check your squaring of the scaled argument in the cosine approximation. The term $(2\\theta)^2 = 4\\theta^2$. Forgetting to square the coefficient $2$ leads to $\\cos(2\\theta) \\approx 1 - \\theta^2$, which yields an incorrect numerator of $-4\\theta^2$ and a final ratio of $-\\dfrac{ 2 }{ 3 }$."
+        },
+        {
+            "ans": "$\\dfrac{ 8 }{ 3 }$",
+            "feedback": "Check your signs in the numerator. Expanding $4(1 - 2\\theta^2) - 4$ yields $-8\\theta^2$. Forgetting the negative sign leads to an incorrect positive ratio of $\\dfrac{ 8 }{ 3 }$."
+        },
+        {
+            "ans": "$-\\dfrac{ 4 }{ 3 }$",
+            "feedback": "Check your numerator arithmetic. It appears you may have neglected the multiplier $4$ in front of the cosine term when evaluating the quadratic, leading to $-4\\theta^2$ in the numerator."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Squaring the Bracket",
+        "content": "A very frequent slip in exams is writing $\\cos(kx) \\approx 1 - \\dfrac{ 1 }{ 2 }k x^2$ instead of $1 - \\dfrac{ 1 }{ 2 }(kx)^2$. Remember that the entire scaled argument $kx$ must be squared, which changes the coefficient of $x^2$ by a factor of $k^2$."
+    }
+},
+{
+    "id": "004625",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Small Angle Approximations"
+    ],
+    "img": false,
+    "question": "In a right-angled triangle $ABC$, the angle $\\angle ABC = 90^\\circ$ and the angle $\\angle BAC = \\theta$ radians, where $\\theta$ is small. The hypotenuse $AC$ has a constant length of $10\\text{ cm}$.<br><br><strong>(i)</strong> Show that the difference between the hypotenuse $AC$ and the adjacent side $AB$ is given by $10 - 10\\cos\\theta$.<br><br><strong>(ii)</strong> Hence show that when $\\theta$ is small, this difference can be approximated by $5\\theta^2$.",
+    "steps": [
+        "<strong>(i)</strong> In the right-angled triangle $ABC$, the adjacent side to the angle $\\theta$ is the side $AB$. Write down the basic trigonometric ratio for cosine:<br>\\begin{aligned} \\cos\\theta &= \\dfrac{ \\text{Adjacent} }{ \\text{Hypotenuse} } \\cr \\cos\\theta &= \\dfrac{ AB }{ AC } \\cr \\cos\\theta &= \\dfrac{ AB }{ 10 } \\end{aligned}",
+        "Rearrange this expression to make the adjacent side $AB$ the subject:<br>\\begin{aligned} AB &= 10\\cos\\theta \\end{aligned}",
+        "Find the difference between the hypotenuse $AC$ and the adjacent side $AB$:<br>\\begin{aligned} \\text{Difference} &= AC - AB \\cr &= 10 - 10\\cos\\theta \\end{aligned}<br>This completes the proof for part <strong>(i)</strong>.",
+        "<strong>(ii)</strong> For small angles measured in radians, apply the standard small angle approximation for cosine, $\\cos\\theta \\approx 1 - \\dfrac{ 1 }{ 2 }\\theta^2$:<br>\\begin{aligned} 10 - 10\\cos\\theta &\\approx 10 - 10\\left( 1 - \\dfrac{ 1 }{ 2 }\\theta^2 \\right) \\cr &\\approx 10 - 10 + 5\\theta^2 \\cr &\\approx 5\\theta^2 \\end{aligned}<br>This completes the proof."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $AC - AB = 10 - 10\\sin\\theta$<br><strong>(ii)</strong> $10 - 10\\theta$",
+            "feedback": "Remember that the adjacent side $AB$ is related to the hypotenuse $AC$ via the cosine ratio, not the sine ratio. Using the sine ratio corresponds to the opposite side $BC$, which is incorrect."
+        },
+        {
+            "ans": "<strong>(i)</strong> $AC - AB = 10 - 10\\cos\\theta$<br><strong>(ii)</strong> $10\\theta^2$",
+            "feedback": "Check your expansion in part <strong>(ii)</strong>. When multiplying out $-10\\left( 1 - \\dfrac{ 1 }{ 2 }\\theta^2 \\right)$, you must multiply $\\dfrac{ 1 }{ 2 }$ by $10$ to yield $5\\theta^2$, not $10\\theta^2$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $AC - AB = 10 - 10\\cos\\theta$<br><strong>(ii)</strong> $10 - 5\\theta^2$",
+            "feedback": "Check your signs when distributing the negative multiplier $-10$ across the brackets. The constant term simplifies as $10 - 10 = 0$, which leaves only the positive quadratic term $+5\\theta^2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Right-Angled Small Angles",
+        "content": "This geometric question beautifully illustrates how small angles affect right-angled triangles. When $\\theta$ is very small, the adjacent side $AB$ becomes almost equal in length to the hypotenuse $AC$. The tiny difference between them is a quadratic curve approximated by $5\\theta^2$."
+    }
 }
 ];
