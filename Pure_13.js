@@ -403,5 +403,201 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Exponentials with Negative Arguments",
         "content": "When dealing with expressions like $\\ln\\left( \\dfrac{ 2 }{ \\mathrm{e}^{ -1 } + 1 } \\right)$, always convert $\\mathrm{e}^{ -1 }$ to $\\dfrac{ 1 }{ \\mathrm{e} }$ and find a common denominator for the bottom fraction. This is the only way to simplify the expression into the clean, single-log form $\\ln\\left( \\dfrac{ 2\\mathrm{e} }{ 1 + \\mathrm{e} } \\right)$ commonly required in A Level exams."
     }
+},
+{
+    "id": "004611",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Cosine Rule"
+    ],
+    "img": "images/Pure/004611.png",
+    "question": "The diagram shows a triangle $ABC$ where $AB = 25\\text{ cm}$, $AC = 18\\text{ cm}$, and the included angle is $\\angle BAC = 72^\\circ$.<br><br><strong>(i)</strong> Find the length of $BC$, giving your answer to $2$ decimal places.<br><strong>(ii)</strong> Hence find the perimeter of triangle $ABC$, giving your answer to $2$ decimal places.",
+    "steps": [
+        "<strong>(i)</strong> To find the missing side $BC$ when given two sides and the included angle, use the Cosine Rule:<br>\\begin{aligned} BC^2 &= AB^2 + AC^2 - 2(AB)(AC)\\cos(\\angle BAC) \\end{aligned}",
+        "Substitute the given lengths and angle into the formula:<br>\\begin{aligned} BC^2 &= 25^2 + 18^2 - 2(25)(18)\\cos(72^\\circ) \\cr &= 625 + 324 - 900\\cos(72^\\circ) \\cr &= 949 - 900(0.309017) \\cr &= 949 - 278.115 \\cr &= 670.885 \\end{aligned}",
+        "Take the square root of both sides to find $BC$ (giving your answer to $2$ decimal places):<br>\\begin{aligned} BC &= \\sqrt{ 670.885 } \\cr &\\approx 25.90 \\text{ cm} \\end{aligned}",
+        "<strong>(ii)</strong> The perimeter $P$ of a triangle is the sum of all three side lengths:<br>\\begin{aligned} P &= AB + AC + BC \\cr &\\approx 25 + 18 + 25.90 \\cr &\\approx 68.90 \\text{ cm} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $BC \\approx 25.90\\text{ cm}$<br><strong>(ii)</strong> $P \\approx 43.00\\text{ cm}$",
+            "feedback": "You found the correct length of $BC$, but check your perimeter sum. The perimeter must include all three sides of the triangle ($25 + 18 + 25.90 = 68.90\\text{ cm}$), not just the two given sides."
+        },
+        {
+            "ans": "<strong>(i)</strong> $BC \\approx 30.81\\text{ cm}$<br><strong>(ii)</strong> $P \\approx 73.81\\text{ cm}$",
+            "feedback": "Check your application of the Cosine Rule. Make sure you subtract the term $2(AB)(AC)\\cos(72^\\circ)$ instead of adding it. Adding it leads to $BC^2 = 949 + 278.115 = 1227.115$, which is incorrect."
+        },
+        {
+            "ans": "<strong>(i)</strong> $BC \\approx 25.90\\text{ cm}$<br><strong>(ii)</strong> $P \\approx 68.90\\text{ cm}$",
+            "feedback": "Both values are correct! (Note: Ensure this is matched with the correct option slot during deployment)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Cosine Sign Error",
+        "content": "A very common slip when calculating the Cosine Rule is a sign error in the term $-2bc\\cos A$. If the included angle is obtuse (greater than $90^\\circ$), the cosine of the angle is negative, which turns the subtraction into an addition. Always write out your steps carefully to keep track of negative signs."
+    }
+},
+{
+    "id": "004612",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Cosine Rule",
+        "Area of a Triangle"
+    ],
+    "img": "images/Pure/004612.png",
+    "question": "The diagram shows a triangle $XYZ$ where the side lengths are $XY = 12\\text{ cm}$, $XZ = 15\\text{ cm}$, and $YZ = 10\\text{ cm}$.<br><br><strong>(i)</strong> Find the size of the angle $\\angle YXZ$, giving your answer to $1$ decimal place.<br><strong>(ii)</strong> Find the area of triangle $XYZ$, giving your answer to $1$ decimal place.",
+    "steps": [
+        "<strong>(i)</strong> To find a missing angle when given all three sides of a triangle, rearrange the Cosine Rule to isolate the cosine term:<br>\\begin{aligned} \\cos(\\angle YXZ) &= \\dfrac{ XY^2 + XZ^2 - YZ^2 }{ 2(XY)(XZ) } \\end{aligned}",
+        "Substitute the given side lengths into the rearranged formula:<br>\\begin{aligned} \\cos(\\angle YXZ) &= \\dfrac{ 12^2 + 15^2 - 10^2 }{ 2(12)(15) } \\cr &= \\dfrac{ 144 + 225 - 100 }{ 360 } \\cr &= \\dfrac{ 269 }{ 360 } \\cr &\\approx 0.747222 \\end{aligned}",
+        "Take the inverse cosine of both sides to find the angle (giving your answer to $1$ decimal place):<br>\\begin{aligned} \\angle YXZ &= \\arccos(0.747222) \\cr &\\approx 41.6^\\circ \\end{aligned}",
+        "<strong>(ii)</strong> Use the trigonometric area formula, $\\text{Area} = \\dfrac{ 1 }{ 2 } a b \\sin C$, with the two sides $XY$ and $XZ$ and their included angle $\\angle YXZ$:<br>\\begin{aligned} \\text{Area} &= \\dfrac{ 1 }{ 2 }(XY)(XZ)\\sin(\\angle YXZ) \\cr &= \\dfrac{ 1 }{ 2 }(12)(15)\\sin(41.649^\\circ) \\cr &= 90 \\times 0.66456 \\cr &\\approx 59.8 \\text{ cm}^2 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $\\angle YXZ \\approx 41.6^\\circ$<br><strong>(ii)</strong> $\\text{Area} \\approx 60.1\\text{ cm}^2$",
+            "feedback": "You correctly identified the angle, but check your area calculation. It appears you used $\\sin(41.9^\\circ)$ instead of the correct angle $\\sin(41.6^\\circ)$. Using the precise angle yields an area of $59.8\\text{ cm}^2$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $\\angle YXZ \\approx 48.4^\\circ$<br><strong>(ii)</strong> $\\text{Area} \\approx 59.8\\text{ cm}^2$",
+            "feedback": "Check your application of the Cosine Rule. When setting up the numerator, make sure you subtract the square of the opposite side ($YZ^2 = 100$), not one of the adjacent sides. This error leads to an incorrect angle of $48.4^\circ$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $\\angle YXZ \\approx 41.6^\\circ$<br><strong>(ii)</strong> $\\text{Area} \\approx 90.0\\text{ cm}^2$",
+            "feedback": "Remember that the area of a non-right-angled triangle requires the sine of the included angle. Forgetting the $\\sin(\\angle YXZ)$ term and calculating $\\dfrac{ 1 }{ 2 } b h$ directly as $\\dfrac{ 1 }{ 2 } \\times 12 \\times 15 = 90$ is incorrect."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Rearranging the Cosine Rule",
+        "content": "To find an angle directly, memorising the rearranged form of the Cosine Rule, $\\cos A = \\dfrac{ b^2 + c^2 - a^2 }{ 2bc }$, is a great exam time-saver. Just remember that the side being subtracted in the numerator must always be the side directly opposite the angle you are trying to find."
+    }
+},
+{
+    "id": "004613",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Sine Rule",
+        "Area of a Triangle"
+    ],
+    "img": "images/Pure/004613.png",
+    "question": "The diagram shows a triangle $PQR$ where the side lengths are $PQ = 8\\text{ cm}$ and $QR = 6\\text{ cm}$, and the angle is $\\angle QPR = 40^\\circ$.<br><br><strong>(i)</strong> Show that there are two possible values for the angle $\\angle PRQ$, and find both values to $1$ decimal place.<br><strong>(ii)</strong> Given that the angle $\\angle PRQ$ is obtuse, find the area of triangle $PQR$, giving your answer to $1$ decimal place.",
+    "steps": [
+        "<strong>(i)</strong> To find a missing angle when given an opposite side and another side-angle pair, use the Sine Rule:<br>\\begin{aligned} \\dfrac{ \\sin(\\angle PRQ) }{ PQ } &= \\dfrac{ \\sin(\\angle QPR) }{ QR } \\end{aligned}",
+        "Substitute the given values and rearrange to solve for $\\sin(\\angle PRQ)$:<br>\\begin{aligned} \\dfrac{ \\sin(\\angle PRQ) }{ 8 } &= \\dfrac{ \\sin(40^\\circ) }{ 6 } \\cr \\sin(\\angle PRQ) &= \\dfrac{ 8\\sin(40^\\circ) }{ 6 } \\cr &\\approx \\dfrac{ 8(0.642788) }{ 6 } \\cr &\\approx 0.857051 \\end{aligned}",
+        "Since $\\sin(\\angle PRQ) = 0.857051$ is positive and less than $1$, there are two possible geometric solutions within a triangle:<br><br><strong>• Acute Case:</strong><br>\\begin{aligned} \\angle PRQ &= \\arcsin(0.857051) \\cr &\\approx 59.0^\\circ \\end{aligned}<br><strong>• Obtuse Case:</strong><br>\\begin{aligned} \\angle PRQ &= 180^\\circ - 59.0^\\circ \\cr &\\approx 121.0^\\circ \\end{aligned}",
+        "<strong>(ii)</strong> We are given that $\\angle PRQ$ is obtuse, so we select $\\angle PRQ = 121.0^\\circ$. Find the remaining angle $\\angle PQR$ using the sum of angles in a triangle:<br>\\begin{aligned} \\angle PQR &= 180^\\circ - 40^\\circ - 121.0^\\circ \\cr &= 19.0^\\circ \\end{aligned}",
+        "Now, find the exact length of the side $PR$ using the Sine Rule:<br>\\begin{aligned} \\dfrac{ PR }{ \\sin(\\angle PQR) } &= \\dfrac{ QR }{ \\sin(\\angle QPR) } \\cr \\dfrac{ PR }{ \\sin(19.0^\\circ) } &= \\dfrac{ 6 }{ \\sin(40^\\circ) } \\cr PR &= \\dfrac{ 6\\sin(19.0^\\circ) }{ \\sin(40^\\circ) } \\cr &\\approx \\dfrac{ 6(0.325568) }{ 0.642788 } \\cr &\\approx 3.04 \\text{ cm} \\end{aligned}",
+        "Calculate the area of the triangle using the formula $\\text{Area} = \\dfrac{ 1 }{ 2 } a b \\sin C$ with sides $PQ$ and $PR$ and their included angle $\\angle QPR = 40^\\circ$:<br>\\begin{aligned} \\text{Area} &= \\dfrac{ 1 }{ 2 }(PQ)(PR)\\sin(\\angle QPR) \\cr &= \\dfrac{ 1 }{ 2 }(8)(3.04)\\sin(40^\\circ) \\cr &\\approx 4(3.04)(0.642788) \\cr &\\approx 7.8 \\text{ cm}^2 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $\\angle PRQ \\approx 59.0^\\circ$ or $121.0^\\circ$<br><strong>(ii)</strong> $\\text{Area} \\approx 20.6\\text{ cm}^2$",
+            "feedback": "You identified the correct angles, but check your area calculation. It appears you used the acute angle $\\angle PRQ = 59.0^\\circ$ to find the remaining angle as $81.0^\circ$. For part <strong>(ii)</strong>, you must use the obtuse case ($121.0^\circ$), which gives a remaining angle of $19.0^\circ$ and an area of $7.8\\text{ cm}^2$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $\\angle PRQ \\approx 59.0^\\circ$ only<br><strong>(ii)</strong> $\\text{Area} \\approx 7.8\\text{ cm}^2$",
+            "feedback": "Remember that because $\\sin(\\theta) = \\sin(180^\\circ - \\theta)$, the Sine Rule always has an ambiguous case yielding both an acute and an obtuse solution when finding an angle. You must state both possible solutions for part <strong>(i)</strong>."
+        },
+        {
+            "ans": "<strong>(i)</strong> $\\angle PRQ \\approx 59.0^\\circ$ or $121.0^\\circ$<br><strong>(ii)</strong> $\\text{Area} \\approx 12.0\\text{ cm}^2$",
+            "feedback": "Check your side length calculation for $PR$. Ensure you use the Sine Rule correctly with the angle $\\angle PQR = 19.0^\circ$. This should yield $PR \\approx 3.04\\text{ cm}$, leading to an area of $7.8\\text{ cm}^2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: The Ambiguous Case of the Sine Rule",
+        "content": "Always be on the lookout for the 'ambiguous case' of the Sine Rule. This occurs when you are given two sides and a non-included acute angle (ASS). Since $\\sin(180^\\circ - \\theta) = \\sin\\theta$, there will always be both an acute solution and an obtuse solution. Read the question carefully to see if one is explicitly selected."
+    }
+},
+{
+    "id": "004614",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Coordinate Geometry",
+        "Cosine Rule"
+    ],
+    "img": "images/Pure/004614.png",
+    "question": "The diagram shows a coordinate grid containing triangle $ABC$ with vertices $A(1, 2)$, $B(5, 5)$, and $C(2, 6)$.<br><br><strong>(i)</strong> Find the exact lengths of the sides $AB$, $BC$, and $AC$.<br><strong>(ii)</strong> Hence find the size of the angle $\\angle ABC$, giving your answer to the nearest degree.",
+    "steps": [
+        "<strong>(i)</strong> To find the exact side lengths, apply the coordinate distance formula, $d = \\sqrt{ (x_2 - x_1)^2 + (y_2 - y_1)^2 }$, to each pair of vertices:<br><br><strong>• Side $AB$:</strong><br>\\begin{aligned} AB &= \\sqrt{ (5 - 1)^2 + (5 - 2)^2 } \\cr &= \\sqrt{ 4^2 + 3^2 } \\cr &= \\sqrt{ 16 + 9 } \\cr &= 5 \\end{aligned}",
+        "<strong>• Side $BC$:</strong><br>\\begin{aligned} BC &= \\sqrt{ (2 - 5)^2 + (6 - 5)^2 } \\cr &= \\sqrt{ (-3)^2 + 1^2 } \\cr &= \\sqrt{ 9 + 1 } \\cr &= \\sqrt{ 10 } \\end{aligned}",
+        "<strong>• Side $AC$:</strong><br>\\begin{aligned} AC &= \\sqrt{ (2 - 1)^2 + (6 - 2)^2 } \\cr &= \\sqrt{ 1^2 + 4^2 } \\cr &= \\sqrt{ 1 + 16 } \\cr &= \\sqrt{ 17 } \\end{aligned}<br>So the exact lengths of the sides are $AB = 5$, $BC = \\sqrt{ 10 }$, and $AC = \\sqrt{ 17 }$.",
+        "<strong>(ii)</strong> To find the angle $\\angle ABC$ (which is the angle at vertex $B$ opposite side $AC$), rearrange the Cosine Rule:<br>\\begin{aligned} \\cos(\\angle ABC) &= \\dfrac{ AB^2 + BC^2 - AC^2 }{ 2(AB)(BC) } \\end{aligned}",
+        "Substitute the exact side lengths into this formula and simplify:<br>\\begin{aligned} \\cos(\\angle ABC) &= \\dfrac{ 5^2 + (\\sqrt{ 10 })^2 - (\\sqrt{ 17 })^2 }{ 2(5)(\\sqrt{ 10 }) } \\cr &= \\dfrac{ 25 + 10 - 17 }{ 10\\sqrt{ 10 } } \\cr &= \\dfrac{ 18 }{ 10\\sqrt{ 10 } } \\cr &\\approx 0.569210 \\end{aligned}",
+        "Take the inverse cosine to find the angle (giving your answer to the nearest degree):<br>\\begin{aligned} \\angle ABC &= \\arccos(0.569210) \\cr &\\approx 55^\\circ \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $AB = 5$, $BC = 10$, $AC = 17$<br><strong>(ii)</strong> $\\angle ABC \\approx 55^\\circ$",
+            "feedback": "Check your side lengths in part <strong>(i)</strong>. The distance formula contains a square root. The exact lengths are $BC = \\sqrt{ 10 }$ and $AC = \\sqrt{ 17 }$, not $10$ and $17$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $AB = 5$, $BC = \\sqrt{ 10 }$, $AC = \\sqrt{ 17 }$<br><strong>(ii)</strong> $\\angle ABC \\approx 35^\\circ$",
+            "feedback": "Check your rearranged Cosine Rule formula. Make sure you subtract the square of the opposite side ($AC^2 = 17$) in the numerator, not one of the adjacent sides. Forgetting this details leads to an incorrect angle of $35^\circ$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $AB = 5$, $BC = \\sqrt{ 10 }$, $AC = \\sqrt{ 17 }$<br><strong>(ii)</strong> $\\angle ABC \\approx 45^\\circ$",
+            "feedback": "Check your arithmetic in the Cosine Rule simplification. The numerator is $25 + 10 - 17 = 18$. Forgetting to calculate this correctly can lead to incorrect angle results."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Keep Surds Exact",
+        "content": "When combining coordinate geometry with trigonometry, always keep your side lengths in exact surd form (like $\\sqrt{ 10 }$ and $\\sqrt{ 17 }$). Substituting exact surds into the Cosine Rule makes squaring them trivial and prevents any rounding errors from throwing off your final angle calculation."
+    }
+},
+{
+    "id": "004615",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Bearings",
+        "Sine and Cosine Rules"
+    ],
+    "img": "images/Pure/004615.png",
+    "question": "The diagram shows the journey of a ship sailing $15\\text{ km}$ from port $P$ on a bearing of $060^\\circ$ to a point $A$. It then changes course and sails $12\\text{ km}$ on a bearing of $130^\\circ$ to a point $B$.<br><br><strong>(i)</strong> Find the distance of the ship from port $P$ when it is at point $B$, giving your answer to $1$ decimal place.<br><strong>(ii)</strong> Find the bearing of $B$ from port $P$, giving your answer to the nearest degree.",
+    "steps": [
+        "<strong>(i)</strong> To analyze the triangle $PAB$, first determine the interior angle $\\angle PAB$.<br><br>Using parallel lines on North directions:<br><strong>•</strong> The angle from $AP$ to the South direction at $A$ is equal to the original bearing of $060^\circ$ (alternate angles).<br><strong>•</strong> The bearing of $B$ from $A$ is $130^\circ$, which is $130^\circ - 180^\circ = -50^\circ$ (or $50^\circ$ East of South).<br><br>Adding these angles gives the interior angle $\\angle PAB$:<br>\\begin{aligned} \\angle PAB &= 60^\\circ + (180^\\circ - 130^\\circ) \\cr &= 60^\\circ + 50^\\circ \\cr &= 110^\\circ \\end{aligned}",
+        "Now, find the missing side $PB$ of triangle $PAB$ using the Cosine Rule:<br>\\begin{aligned} PB^2 &= PA^2 + AB^2 - 2(PA)(AB)\\cos(\\angle PAB) \\end{aligned}",
+        "Substitute the given lengths and our calculated interior angle into the formula:<br>\\begin{aligned} PB^2 &= 15^2 + 12^2 - 2(15)(12)\\cos(110^\\circ) \\cr &= 225 + 144 - 360\\cos(110^\\circ) \\cr &= 369 - 360(-0.342020) \\cr &= 369 + 123.127 \\cr &= 492.127 \\end{aligned}",
+        "Take the square root of both sides to find the distance $PB$ (giving your answer to $1$ decimal place):<br>\\begin{aligned} PB &= \\sqrt{ 492.127 } \\cr &\\approx 22.2 \\text{ km} \\end{aligned}",
+        "<strong>(ii)</strong> To find the bearing of $B$ from port $P$, we first need the interior angle $\\angle APB$. Apply the Sine Rule:<br>\\begin{aligned} \\dfrac{ \\sin(\\angle APB) }{ AB } &= \\dfrac{ \\sin(\\angle PAB) }{ PB } \\cr \\dfrac{ \\sin(\\angle APB) }{ 12 } &= \\dfrac{ \\sin(110^\\circ) }{ 22.184 } \\cr \\sin(\\angle APB) &= \\dfrac{ 12\\sin(110^\\circ) }{ 22.184 } \\cr &\\approx \\dfrac{ 12(0.939693) }{ 22.184 } \\cr &\\approx 0.508316 \\end{aligned}",
+        "Take the inverse sine to find the angle $\\angle APB$:<br>\\begin{aligned} \\angle APB &= \\arcsin(0.508316) \\cr &\\approx 30.6^\\circ \\end{aligned}",
+        "The bearing of $A$ from port $P$ is $060^\circ$, and point $B$ lies clockwise from line $PA$. Therefore, the total bearing of $B$ from port $P$ is:<br>\\begin{aligned} \\text{Bearing} &= 60^\\circ + 30.6^\\circ \\cr &= 90.6^\\circ \\cr &\\approx 091^\\circ \\quad (\\text{to the nearest degree}) \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $PB \\approx 22.2\\text{ km}$<br><strong>(ii)</strong> $\\text{Bearing} \\approx 031^\\circ$",
+            "feedback": "You correctly calculated the interior angle $\\angle APB = 31.0^\circ$, but remember that bearings are measured clockwise from North. You must add this angle to the initial bearing of $060^\circ$ to get $091^\circ$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $PB \\approx 15.7\\text{ km}$<br><strong>(ii)</strong> $\\text{Bearing} \\approx 091^\\circ$",
+            "feedback": "Check your interior angle $\\angle PAB$. The angle between the bearings is $110^\circ$. It appears you may have used $\\angle PAB = 70^\circ$, which leads to an incorrect distance of $15.7\\text{ km}$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $PB \\approx 22.2\\text{ km}$<br><strong>(ii)</strong> $\\text{Bearing} \\approx 029^\\circ$",
+            "feedback": "Check your sine rule setup. Make sure you use the opposite side $AB = 12\\text{ km}$ to find the angle at $P$. Forgetting this can lead to incorrect intermediate angle values."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Drawing Bearings parallel lines",
+        "content": "When dealing with bearings, always draw a vertical dashed line representing North at each vertex. This allows you to easily find interior angles of the triangle using parallel line theorems (alternate and co-interior angles). It completely prevents the common slip of misidentifying the interior angle."
+    }
 }
 ];
