@@ -1355,5 +1355,185 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Shifted Log Pitfalls",
         "content": "When dealing with models that have an added vertical displacement constant (like Newton's Law of Cooling, $\\theta = 20 + A \\mathrm{e}^{-kt}$), never take logarithms before isolating the exponential term first. Attempting to write $\\ln \\theta = \\ln(20 + A \\mathrm{e}^{-kt})$ creates an expression that cannot be simplified or linearised. Always subtract the constant first!"
     }
+},
+{
+    "id": "004636",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+        "Finding a Constant Term"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Find the constant term in the binomial expansion of $\\left(x^3 + \\dfrac{ 1 }{ x }\\right)^{12}$.",
+    "steps": [
+        "<strong>Step 1: Write down the general term of the expansion:</strong><br>The general term in the binomial expansion of $(a + b)^n$ is given by $T_{r+1} = \\binom{ n }{ r } a^{n-r} b^r$.<br><br>For the expansion of $\\left(x^3 + \\dfrac{ 1 }{ x }\\right)^{12}$, we substitute $a = x^3$, $b = x^{-1}$, and $n = 12$:<br>\\begin{aligned} T_{r+1} &= \\binom{ 12 }{ r } (x^3)^{12 - r} \\left(x^{-1}\\right)^r \\cr &= \\binom{ 12 }{ r } x^{3(12 - r)} x^{-r} \\cr &= \\binom{ 12 }{ r } x^{36 - 3r - r} \\cr &= \\binom{ 12 }{ r } x^{36 - 4r} \\end{aligned}",
+        "<strong>Step 2: Solve for $r$ to find the constant term:</strong><br>The constant term corresponds to the term where the exponent of $x$ is equal to $0$:<br>\\begin{aligned} 36 - 4r &= 0 \\cr 4r &= 36 \\cr r &= 9 \\end{aligned}",
+        "<strong>Step 3: Calculate the constant term:</strong><br>Substitute $r = 9$ back into our general term formula:<br>\\begin{aligned} T_{10} &= \\binom{ 12 }{ 9 } x^0 \\cr &= \\binom{ 12 }{ 3 } \\cr &= \\dfrac{ 12 \\times 11 \\times 10 }{ 3 \\times 2 \\times 1 } \\cr &= 220 \\end{aligned}<br><br>Thus, the constant term in the expansion is $220$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$495$$",
+            "feedback": "This option results from using the wrong value of $r$. If you incorrectly set $3(12-r) - r = 36 - 2r = 0$, you would get $r = 18$ (which is outside the expansion range) or if you used $36-3r=0 \\implies r=12$ which gives $\\binom{12}{12}=1$, or if you chose $\\binom{12}{4} = 495$, which corresponds to $r = 4$."
+        },
+        {
+            "ans": "$$792$$",
+            "feedback": "This option is equal to $\\binom{12}{5}$ or $\\binom{12}{7}$, which corresponds to setting $r = 5$ or $r = 7$. Check your exponent equation $36 - 4r = 0$ to ensure you solve for $r = 9$."
+        },
+        {
+            "ans": "$$12$$",
+            "feedback": "This option is equal to $\\binom{12}{1}$ or $\\binom{12}{11}$, which occurs if you incorrectly simplify the exponent of $x$ or guess the index."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Power Laws and Fractions",
+        "content": "When expanding expressions like $\\left(x^3 + \\dfrac{ 1 }{ x }\\right)^{12}$, don't forget to write $\\dfrac{ 1 }{ x }$ as $x^{-1}$. If you make a mistake with index laws and write $\\dfrac{ 1 }{ x }$ as $x$ or $x^1$, you will get the incorrect exponent equation for the constant term."
+    }
+},
+{
+    "id": "004637",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+        "Finding a Constant Term with Coefficients"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Find the constant term in the binomial expansion of $\\left(2x^2 - \\dfrac{ 3 }{ x }\\right)^9$.",
+    "steps": [
+        "<strong>Step 1: Write down the general term of the expansion:</strong><br>Using the binomial general term formula $T_{r+1} = \\binom{ n }{ r } a^{n-r} b^r$ with $a = 2x^2$, $b = -3x^{-1}$, and $n = 9$:<br>\\begin{aligned} T_{r+1} &= \\binom{ 9 }{ r } (2x^2)^{9 - r} \\left(-3x^{-1}\\right)^r \\cr &= \\binom{ 9 }{ r } 2^{9 - r} (x^2)^{9 - r} (-3)^r (x^{-1})^r \\cr &= \\binom{ 9 }{ r } 2^{9 - r} (-3)^r x^{2(9 - r)} x^{-r} \\cr &= \\binom{ 9 }{ r } 2^{9 - r} (-3)^r x^{18 - 2r - r} \\cr &= \\binom{ 9 }{ r } 2^{9 - r} (-3)^r x^{18 - 3r} \\end{aligned}",
+        "<strong>Step 2: Solve for $r$ to isolate the constant term:</strong><br>The constant term is the term where the power of $x$ is equal to $0$:<br>\\begin{aligned} 18 - 3r &= 0 \\cr 3r &= 18 \\cr r &= 6 \\end{aligned}",
+        "<strong>Step 3: Calculate the constant term:</strong><br>Substitute $r = 6$ back into our general term expression:<br>\\begin{aligned} T_{7} &= \\binom{ 9 }{ 6 } 2^{9 - 6} (-3)^6 x^0 \\cr &= \\binom{ 9 }{ 3 } 2^3 (-3)^6 \\cr &= \\dfrac{ 9 \\times 8 \\times 7 }{ 3 \\times 2 \\times 1 } \\times 8 \\times 729 \\cr &= 84 \\times 8 \\times 729 \\cr &= 672 \\times 729 \\cr &= 489,888 \\end{aligned}<br><br>Thus, the constant term in the expansion is $489,888$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$-489,888$$",
+            "feedback": "This option is incorrect because of a sign error. Note that $(-3)^6 = 729$, which is positive because raising any real number (including a negative one) to an even power yields a positive result. Always be careful when tracking signs!"
+        },
+        {
+            "ans": "$$61,236$$",
+            "feedback": "This option arises if you forget to apply the power of $2^{9-r} = 2^3 = 8$ to the coefficient, calculating $84 \\times 729 = 61,236$ instead of $84 \\times 8 \\times 729$."
+        },
+        {
+            "ans": "$$5,376$$",
+            "feedback": "This option occurs if you forget to raise the constant $-3$ to the power of $r = 6$, calculating $\\binom{9}{6} 2^3 (-3)^1 = 84 \\times 8 \\times (-3) = -2016$, or forgetting to apply $(-3)^6$ entirely."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Negative Terms inside Brackets",
+        "content": "When dealing with negative terms like $-\\dfrac{ 3 }{ x }$, make sure to carry the negative sign with the coefficient inside the general term: $\\left(-\\dfrac{ 3 }{ x }\\right)^r = (-3)^r x^{-r}$. Omitting the negative sign or applying the power $r$ incorrectly to only the variable is the most common cause of lost marks on binomial expansion questions."
+    }
+},
+{
+    "id": "004638",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+        "Finding a Specific Coefficient"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Find the coefficient of $x^3$ in the binomial expansion of $\\left(2x - \\dfrac{ 1 }{ x^2 }\\right)^9$.",
+    "steps": [
+        "<strong>Step 1: Write down the general term of the expansion:</strong><br>Using the binomial general term formula $T_{r+1} = \\binom{ n }{ r } a^{n-r} b^r$ with $a = 2x$, $b = -x^{-2}$, and $n = 9$:<br>\\begin{aligned} T_{r+1} &= \\binom{ 9 }{ r } (2x)^{9 - r} \\left(-x^{-2}\\right)^r \\cr &= \\binom{ 9 }{ r } 2^{9 - r} x^{9 - r} (-1)^r (x^{-2})^r \\cr &= \\binom{ 9 }{ r } 2^{9 - r} (-1)^r x^{9 - r} x^{-2r} \\cr &= \\binom{ 9 }{ r } 2^{9 - r} (-1)^r x^{9 - 3r} \\end{aligned}",
+        "<strong>Step 2: Solve for $r$ to find the term in $x^3$:</strong><br>We want the power of $x$ to equal $3$, so we set the exponent to $3$:<br>\\begin{aligned} 9 - 3r &= 3 \\cr 3r &= 6 \\cr r &= 2 \\end{aligned}",
+        "<strong>Step 3: Calculate the coefficient:</strong><br>Substitute $r = 2$ back into the general term expression:<br>\\begin{aligned} T_{3} &= \\binom{ 9 }{ 2 } 2^{9 - 2} (-1)^2 x^3 \\cr &= \\binom{ 9 }{ 2 } 2^7 (1) x^3 \\cr &= 36 \\times 128 \\times x^3 \\cr &= 4608x^3 \\end{aligned}<br><br>Thus, the coefficient of $x^3$ is $4608$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$-4608$$",
+            "feedback": "This option has a sign error. Since $r = 2$, the negative sign from the second term is raised to an even power: $(-1)^2 = 1$. The final coefficient must be positive."
+        },
+        {
+            "ans": "$$1152$$",
+            "feedback": "This option is equal to $\\binom{9}{2} 2^5 = 36 \\times 32$, which happens if you calculate the exponent of $2^{9-r}$ incorrectly as $2^5$ instead of $2^7$."
+        },
+        {
+            "ans": "$$576$$",
+            "feedback": "This option is equal to $\\binom{9}{2} 2^4 = 36 \\times 16$, which results from a arithmetic slip on the power of $2$ or a slip in simplifying $9-r$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: General Term Shortcut",
+        "content": "Instead of writing out the entire expansion to find a single term, always use the general term formula $T_{r+1} = \\binom{ n }{ r } a^{n-r} b^r$. This isolates the exponent of $x$ immediately and lets you solve a simple linear equation to find the exact value of $r$ without cluttering your workspace."
+    }
+},
+{
+    "id": "004639",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+        "Multi-bracket Expansion"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Find the coefficient of $x^2$ in the expansion of $(1 + 3x)(2 - x)^6$.",
+    "steps": [
+        "<strong>Step 1: Write out the terms of $(2 - x)^6$ up to $x^2$:</strong><br>We only need the terms of the expansion $(2 - x)^6$ that can contribute to an $x^2$ term when multiplied by $(1 + 3x)$. These are the constant, $x$, and $x^2$ terms.<br><br>Using the binomial theorem:<br>\\begin{aligned} (2 - x)^6 &= \\binom{ 6 }{ 0 } 2^6 (-x)^0 + \\binom{ 6 }{ 1 } 2^5 (-x)^1 + \\binom{ 6 }{ 2 } 2^4 (-x)^2 + \\dots \\cr &= 1 \\times 64 \\times 1 + 6 \\times 32 \\times (-x) + 15 \\times 16 \\times x^2 + \\dots \\cr &= 64 - 192x + 240x^2 + \\dots \\end{aligned}",
+        "<strong>Step 2: Multiply the relevant terms by $(1 + 3x)$:</strong><br>Now we expand $(1 + 3x)(64 - 192x + 240x^2 + \\dots)$ and collect only the terms containing $x^2$:<br>\\begin{aligned} \\text{Term in } x^2 &= 1 \\times (240x^2) + 3x \\times (-192x) \\cr &= 240x^2 - 576x^2 \\cr &= (240 - 576)x^2 \\cr &= -336x^2 \\end{aligned}<br><br>Thus, the coefficient of $x^2$ in the expansion is $-336$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$816$$",
+            "feedback": "This option is equal to $240 + 576$. This results from a sign error when expanding $(2-x)^6$. Since the term is $(-x)^1$, the linear term coefficient is negative ($-192$), so multiplying it by $3x$ yields a negative term: $-576x^2$."
+        },
+        {
+            "ans": "$$240$$",
+            "feedback": "This option is simply the coefficient of $x^2$ inside the standalone expansion of $(2-x)^6$. You must multiply the entire expression by $(1+3x)$ and combine the terms to get the final coefficient of the product."
+        },
+        {
+            "ans": "$$-332$$",
+            "feedback": "This option results from an arithmetic slip when calculating the product of $3 \\times 192$, or when performing the final subtraction $240 - 576$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Product Expansion Strategy",
+        "content": "When asked to find a specific coefficient in a product like $(1 + 3x)(2 - x)^6$, don't waste time multiplying out the entire expansion! Only expand $(2 - x)^6$ up to the power of $x$ that, when multiplied by the terms of $(1 + 3x)$, can produce $x^2$. This means you only need the constant, $x$, and $x^2$ terms of $(2 - x)^6$."
+    }
+},
+{
+    "id": "004640",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+        "Simultaneous Equations with Binomial Coefficients"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>In the binomial expansion of $(1 + kx)^n$, where $n$ is a positive integer and $k$ is a non-zero constant, the coefficient of $x$ is $-30$ and the coefficient of $x^2$ is $400$.<br><br>Determine the value of $n$ and the value of $k$.",
+    "steps": [
+        "<strong>Step 1: Express the coefficients in terms of $n$ and $k$:</strong><br>Using the binomial expansion of $(1 + kx)^n$:<br>\\begin{aligned} (1 + kx)^n &= 1 + \\binom{ n }{ 1 } (kx) + \\binom{ n }{ 2 } (kx)^2 + \\dots \\cr &= 1 + nkx + \\dfrac{ n(n - 1) }{ 2 } k^2 x^2 + \\dots \\end{aligned}<br><br>We are given:<br>1) The coefficient of $x$ is $-30$:<br>\\begin{aligned} nk &= -30 \\end{aligned}<br><br>2) The coefficient of $x^2$ is $400$:<br>\\begin{aligned} \\dfrac{ n(n - 1) k^2 }{ 2 } &= 400 \\end{aligned}",
+        "<strong>Step 2: Set up a simultaneous equation:</strong><br>From the first equation, we can express $k$ in terms of $n$:<br>\\begin{aligned} k &= -\\dfrac{ 30 }{ n } \\end{aligned}<br><br>Substitute this expression for $k$ into our second equation:<br>\\begin{aligned} \\dfrac{ n(n - 1) }{ 2 } \\left(-\\dfrac{ 30 }{ n }\\right)^2 &= 400 \\cr \\dfrac{ n(n - 1) }{ 2 } \\left(\\dfrac{ 900 }{ n^2 }\\right) &= 400 \\cr \\dfrac{ 900 n(n - 1) }{ 2 n^2 } &= 400 \\cr \\dfrac{ 450 (n - 1) }{ n } &= 400 \\end{aligned}",
+        "<strong>Step 3: Solve for $n$:</strong><br>Multiply both sides by $n$ and solve the linear equation:<br>\\begin{aligned} 450(n - 1) &= 400n \\cr 450n - 450 &= 400n \\cr 50n &= 450 \\cr n &= 9 \\end{aligned}",
+        "<strong>Step 4: Solve for $k$:</strong><br>Now, substitute $n = 9$ back into the expression for $k$:<br>\\begin{aligned} k &= -\\dfrac{ 30 }{ 9 } \\cr &= -\\dfrac{ 10 }{ 3 } \\end{aligned}<br><br>Thus, the values are $n = 9$ and $k = -\\dfrac{ 10 }{ 3 }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$n = 9, \\quad k = -30$$",
+            "feedback": "This option arises if you solve for $n = 9$ but then incorrectly assume $k$ is equal to the linear coefficient itself ($-30$), forgetting that the coefficient of $x$ is the product $nk = -30$."
+        },
+        {
+            "ans": "$$n = 8, \\quad k = -\\dfrac{ 15 }{ 4 }$$",
+            "feedback": "This option is caused by an algebraic error when substituting $k = -\\dfrac{30}{n}$ into the $x^2$ coefficient equation, such as failing to square the numerator: $\\left(-\\dfrac{30}{n}\\right)^2 = \\dfrac{900}{n^2}$."
+        },
+        {
+            "ans": "$$n = 9, \\quad k = \\dfrac{ 10 }{ 3 }$$",
+            "feedback": "This option has a sign error on $k$. Since the coefficient of $x$ is $-30$ and $n = 9$ is a positive integer, $nk = -30$ requires $k = -\\dfrac{30}{9} = -\\dfrac{10}{3}$. A positive $k$ would give a positive coefficient for $x$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Exponents of Constants",
+        "content": "When expanding $(1 + kx)^n$, the coefficient of $x^2$ is $\\dfrac{ n(n - 1) }{ 2 } k^2$, not $\\dfrac{ n(n - 1) }{ 2 } k$. A very common student slip is forgetting to square the constant $k$ when squaring the term $(kx)^2$. Always double check that constants inside your variable terms are raised to the same power as the variable!"
+    }
 }
 ];
