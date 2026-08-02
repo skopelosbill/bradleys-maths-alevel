@@ -1165,5 +1165,195 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Trigonometric Turning Points",
         "content": "When solving $\\sec^2 x = 2$, don't forget that this implies $\\cos^2 x = \\dfrac{ 1 }{ 2 }$, which yields $\\cos x = \\pm \\dfrac{ 1 }{ \\sqrt{ 2 } }$. On the interval $0 < x < \\pi$, this produces a solution in the first quadrant ($\\cos x > 0$) and one in the second quadrant ($\\cos x < 0$). Missing the negative root will lead you to lose half of your stationary points!"
     }
+},
+{
+    "id": "004631",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Exponentials and Logarithms",
+    "subtopic": [
+        "Exponential Modelling",
+        "Logarithmic Graphs"
+    ],
+    "img": "images/Pure/004631.png",
+    "question": "In this question you must show detailed reasoning.<br><br>A video-sharing platform launched on 1 September 2020. The owners of the platform report the number of active users, $n$, at the start of each month. They believe that the relationship between $n$ and the number of months after launch, $t$, can be modelled by $n = a \\times 2^{kt}$, where $a$ and $k$ are constants.<br><br><strong>(i)</strong> Show that, according to the model, the graph of $\\log_{10} n$ against $t$ is a straight line.<br><strong>(ii)</strong> The diagram shows a plot of the values of $t$ and $\\log_{10} n$ for the first seven months after launch, along with a line of best fit. Use this line of best fit to find estimates of the values of $a$ and $k$.<br><strong>(iii)</strong> The owners of the platform want to estimate the date on which they would report that the platform has $250,000$ active users. Use the model to estimate this date.<br><strong>(iv)</strong> Give a reason why this model may not be appropriate for large values of $t$.",
+    "steps": [
+        "<strong>(i) Linearising the exponential model:</strong><br>We start with the exponential model equation:<br>\\begin{aligned} n &= a \\times 2^{kt} \\end{aligned}<br><br>Taking the base-$10$ logarithm of both sides:<br>\\begin{aligned} \\log_{10} n &= \\log_{10}(a \\times 2^{kt}) \\cr &= \\log_{10} a + \\log_{10}(2^{kt}) \\cr &= \\log_{10} a + kt \\log_{10} 2 \\end{aligned}<br><br>Rearranging this into the standard linear form $y = mx + c$, where $y = \\log_{10} n$ and $x = t$:<br>\\begin{aligned} \\log_{10} n &= (k \\log_{10} 2)t + \\log_{10} a \\end{aligned}<br><br>Since $k \\log_{10} 2$ and $\\log_{10} a$ are constants, this represents a linear equation in $t$. Thus, the graph of $\\log_{10} n$ against $t$ is a straight line.",
+        "<strong>(ii) Finding estimates of $a$ and $k$:</strong><br>From the diagram, the vertical intercept ($c$) of the line of best fit is at $2.0$, and the line passes through the points $(0, 2.0)$ and $(8, 4.0)$:<br><br>We first find the vertical intercept $c$ and gradient $m$ of this line:<br>\\begin{aligned} c &= 2.0 \\cr m &= \\dfrac{ 4.0 - 2.0 }{ 8 - 0 } \\cr &= 0.25 \\end{aligned}<br><br>Now, we relate these to our linearised model parameters:<br><br>For $a$:<br>\\begin{aligned} \\log_{10} a &= 2.0 \\cr a &= 10^{ 2.0 } \\cr &= 100 \\end{aligned}<br><br>For $k$:<br>\\begin{aligned} k \\log_{10} 2 &= 0.25 \\cr k &= \\dfrac{ 0.25 }{ \\log_{10} 2 } \\cr &\\approx 0.830 \\end{aligned}<br><br>Thus, our estimated parameters are $a = 100$ and $k = 0.830$ (to $3$ significant figures).",
+        "<strong>(iii) Estimating the target date:</strong><br>The owners want to find when the user count reaches $n = 250,000$. Substituting $n = 250,000$ into our linear model equation:<br>\\begin{aligned} \\log_{10}(250,000) &= 0.25t + 2.0 \\cr 5.3979... &= 0.25t + 2.0 \\cr 0.25t &= 3.3979... \\cr t &= \\dfrac{ 3.3979... }{ 0.25 } \\cr &\\approx 13.6 \\text{ months} \\end{aligned}<br><br>Now we convert $13.6$ months after 1 September 2020 into a calendar date:<br><br>$t = 0$ is 1 September 2020<br>$t = 12$ is 1 September 2021<br>$t = 13$ is 1 October 2021<br>$t = 14$ is 1 November 2021<br><br>Since $13.6$ falls between $13$ and $14$ months, the platform is estimated to reach $250,000$ users during <strong>October 2021</strong>.",
+        "<strong>(iv) Discussing the model's limitations:</strong><br>An exponential model assumes continuous, unchecked growth. In reality, the number of potential active users is constrained by market saturation, competitor platform entry, and the finite size of the target population. Therefore, the model will overestimate user growth for large values of $t$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 100, \\quad k = 0.25, \\quad \\text{Date: November 2021}$$",
+            "feedback": "This option confuses the gradient of the log plot ($m = 0.25$) directly with the growth constant $k$. Remember that the gradient represents $k \\log_{10} 2$, so you must divide the gradient by $\\log_{10} 2$ to find $k$."
+        },
+        {
+            "ans": "$$a = 2, \\quad k = 0.830, \\quad \\text{Date: October 2021}$$",
+            "feedback": "This option fails to take the inverse log of the vertical intercept. Since the vertical intercept is $2.0 = \\log_{10} a$, the initial value is $a = 10^{2.0} = 100$, not $a = 2$."
+        },
+        {
+            "ans": "$$a = 100, \\quad k = 0.830, \\quad \\text{Date: September 2021}$$",
+            "feedback": "While the parameters $a$ and $k$ are correctly calculated, the date conversion is off. A value of $t = 13.6$ represents $13$ full months plus a fraction of the $14\\text{th}$ month, which places the target date in October 2021, not September 2021."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Gradient vs. Growth Constant",
+        "content": "A very common slip is writing the gradient of the line of best fit directly as the growth constant $k$. When linearising $n = a \\times 2^{kt}$, the variable on the horizontal axis is $t$, which means the gradient of the line is actually $k \\log_{10} 2$. Always remember to divide your gradient by $\\log_{10} 2$ to extract the true value of $k$!"
+    }
+},
+{
+    "id": "004632",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Exponentials and Logarithms",
+    "subtopic": [
+        "Power Law Modelling",
+        "Log-Log Graphs"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>A biologist researches the relationship between the body mass, $M$ (in kilograms), and the resting metabolic rate, $R$ (in watts), of a group of mammalian species. They believe the relationship can be modelled by $R = a M^b$, where $a$ and $b$ are constants.<br><br><strong>(i)</strong> Show that, according to the model, the graph of $\\log_{10} R$ against $\\log_{10} M$ is a straight line.<br><strong>(ii)</strong> A plot of $\\log_{10} R$ against $\\log_{10} M$ yields a straight line of best fit with a vertical intercept of $1.2$ which passes through the point $(4.0, 4.2)$. Find estimates of the values of $a$ and $b$.<br><strong>(iii)</strong> Use the model to estimate the resting metabolic rate of a mammal with a body mass of $500\\text{ kg}$. Give your answer to the nearest watt.<br><strong>(iv)</strong> Explain why this model may not be appropriate for extremely small organisms, such as single-celled bacteria.",
+    "steps": [
+        "<strong>(i) Linearising the power law model:</strong><br>We begin with the power law equation:<br>\\begin{aligned} R &= a M^b \\end{aligned}<br><br>Taking base-$10$ logarithms of both sides:<br>\\begin{aligned} \\log_{10} R &= \\log_{10}(a M^b) \\cr &= \\log_{10} a + \\log_{10}(M^b) \\cr &= b \\log_{10} M + \\log_{10} a \\end{aligned}<br><br>This is in the linear form $Y = mX + c$, where $Y = \\log_{10} R$, $X = \\log_{10} M$, the gradient $m = b$, and the vertical intercept $c = \\log_{10} a$. Since $b$ and $\\log_{10} a$ are constants, the graph of $\\log_{10} R$ against $\\log_{10} M$ is a straight line.",
+        "<strong>(ii) Estimating the constants $a$ and $b$:</strong><br>We are given that the straight line of best fit has a vertical intercept $c = 1.2$ and passes through $(4.0, 4.2)$:<br><br>First, find the gradient $m$:<br>\\begin{aligned} m &= \\dfrac{ 4.2 - 1.2 }{ 4.0 - 0 } \\cr &= \\dfrac{ 3.0 }{ 4.0 } \\cr &= 0.75 \\end{aligned}<br><br>Since $b = m$, we estimate $b = 0.75$.<br><br>Next, we use the vertical intercept to find $a$:<br>\\begin{aligned} \\log_{10} a &= 1.2 \\cr a &= 10^{ 1.2 } \\cr &\\approx 15.8 \\end{aligned}<br><br>Thus, our estimates are $a = 15.8$ (or $15.9$ to $3$ significant figures depending on intermediate rounding) and $b = 0.75$.",
+        "<strong>(iii) Estimating the metabolic rate for $M = 500\\text{ kg}$:</strong><br>We can calculate this directly using our straight-line relationship where $\\log_{10} M = \\log_{10} 500 \\approx 2.6990$:<br>\\begin{aligned} \\log_{10} R &= 0.75 \\log_{10} M + 1.2 \\cr &= 0.75(2.6990...) + 1.2 \\cr &= 2.0242... + 1.2 \\cr &= 3.2242... \\end{aligned}<br><br>Solving for $R$:<br>\\begin{aligned} R &= 10^{ 3.2242... } \\cr &\\approx 1676 \\text{ W} \\end{aligned}<br><br>(Note: If using the rounded formula $R = 15.85 \\times M^{0.75}$, we obtain $R = 15.85 \\times 500^{0.75} \\approx 1676\\text{ W}$. If using the rounded value $a = 15.8$, we get $R = 15.8 \\times 500^{0.75} \\approx 1671\\text{ W}$. Both approaches are structurally sound.)<br><br>Thus, to the nearest watt, the resting metabolic rate is estimated as $1676\\text{ W}$ (or $1671\\text{ W}$).",
+        "<strong>(iv) Explaining biological limitations:</strong><br>Extremely small organisms like single-celled bacteria have highly different surface-area-to-volume ratios, physiology, and thermal properties compared to multicellular mammals. Extrapolating a mammalian-derived metabolic scaling power law down to single-celled structures is biologically invalid because the underlying metabolic mechanisms do not scale uniformly across such vast differences in biological complexity."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 1.2, \\quad b = 0.75, \\quad R \\approx 127\\text{ W}$$",
+            "feedback": "This option fails to take the inverse log of the vertical intercept. Since $\\log_{10} a = 1.2$, the parameter $a$ must be computed as $10^{1.2} \\approx 15.8$, rather than setting $a$ directly equal to $1.2$."
+        },
+        {
+            "ans": "$$a = 15.8, \\quad b = 1.2, \\quad R \\approx 27,300\\text{ W}$$",
+            "feedback": "This option mistakes the vertical intercept of $1.2$ directly for the exponent $b$. The gradient of the line represents the power constant $b$, which is calculated as $\\dfrac{4.2 - 1.2}{4.0} = 0.75$."
+        },
+        {
+            "ans": "$$a = 15.8, \\quad b = 0.75, \\quad R \\approx 158\\text{ W}$$",
+            "feedback": "This option incorrectly computes $R$ by directly multiplying $a \\times M \\times b$ (i.e. $15.8 \\times 500 \\times 0.75$) instead of evaluating the power law $R = aM^b = 15.8 \\times 500^{0.75}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Power Laws vs. Exponentials",
+        "content": "Make sure you distinguish between a power law ($y = a x^b$) and an exponential model ($y = a b^x$). For power laws, taking logs requires plotting $\\log y$ against $\\log x$, and the gradient yields the constant exponent $b$. For exponentials, taking logs requires plotting $\\log y$ against $t$, where the gradient is related to the growth/decay base."
+    }
+},
+{
+    "id": "004633",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Exponentials and Logarithms",
+    "subtopic": [
+        "Exponential Decay",
+        "Natural Logarithms"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>The mass, $M$ (in grams), of a radioactive isotope remaining after $t$ years is modelled by $M = M_0 \\mathrm{e}^{-kt}$, where $M_0$ and $k$ are positive constants.<br><br><strong>(i)</strong> Show that, according to the model, the graph of $\\ln M$ against $t$ is a straight line.<br><strong>(ii)</strong> A plot of $\\ln M$ against $t$ yields a straight line of best fit which passes through the points $(0, 4.6)$ and $(100, 3.1)$. Find estimates of the values of $M_0$ and $k$.<br><strong>(iii)</strong> Use the model to find the half-life of the isotope (the time taken for the mass of the isotope to reduce to half of its initial mass), giving your answer to the nearest year.<br><strong>(iv)</strong> State a limitation of using a continuous exponential model to represent radioactive decay in the long run.",
+    "steps": [
+        "<strong>(i) Linearising using natural logarithms:</strong><br>We begin with our exponential decay model:<br>\\begin{aligned} M &= M_0 \\mathrm{e}^{-kt} \\end{aligned}<br><br>Taking the natural logarithm of both sides:<br>\\begin{aligned} \\ln M &= \\ln(M_0 \\mathrm{e}^{-kt}) \\cr &= \\ln M_0 + \\ln(\\mathrm{e}^{-kt}) \\cr &= -kt + \\ln M_0 \\end{aligned}<br><br>Rearranging this into the linear form $y = mx + c$, where $y = \\ln M$ and $x = t$:<br>\\begin{aligned} \\ln M &= (-k)t + \\ln M_0 \\end{aligned}<br><br>Since $-k$ and $\\ln M_0$ are constants, the graph of $\\ln M$ against $t$ is a straight line with a gradient of $-k$ and a vertical intercept of $\\ln M_0$.",
+        "<strong>(ii) Finding estimates of $M_0$ and $k$:</strong><br>We use the given coordinate points $(0, 4.6)$ and $(100, 3.1)$ to find the vertical intercept ($c$) and gradient ($m$):<br><br>Vertical intercept:<br>\\begin{aligned} c &= 4.6 \\end{aligned}<br><br>Gradient:<br>\\begin{aligned} m &= \\dfrac{ 3.1 - 4.6 }{ 100 - 0 } \\cr &= \\dfrac{ -1.5 }{ 100 } \\cr &= -0.015 \\end{aligned}<br><br>Now, map these to our linearised model parameters:<br><br>For $M_0$:<br>\\begin{aligned} \\ln M_0 &= 4.6 \\cr M_0 &= \\mathrm{e}^{ 4.6 } \\cr &\\approx 99.5 \\text{ g} \\end{aligned}<br><br>For $k$:<br>\\begin{aligned} -k &= -0.015 \\cr k &= 0.015 \\end{aligned}<br><br>Thus, our estimates are $M_0 = 99.5\\text{ g}$ (or $100\\text{ g}$ to $3$ significant figures) and $k = 0.015$.",
+        "<strong>(iii) Determining the half-life:</strong><br>The half-life, $T$, is the time taken for $M$ to reduce to $\\dfrac{ 1 }{ 2 } M_0$. Substituting this into the model:<br>\\begin{aligned} \\dfrac{ 1 }{ 2 } M_0 &= M_0 \\mathrm{e}^{-0.015T} \\cr \\dfrac{ 1 }{ 2 } &= \\mathrm{e}^{-0.015T} \\end{aligned}<br><br>Taking the natural logarithm of both sides:<br>\\begin{aligned} \\ln\\left(\\dfrac{ 1 }{ 2 }\\right) &= -0.015T \\cr -\\ln 2 &= -0.015T \\cr T &= \\dfrac{ \\ln 2 }{ 0.015 } \\cr &\\approx 46.2 \\text{ years} \\end{aligned}<br><br>To the nearest year, the half-life of the isotope is $46\\text{ years}$.",
+        "<strong>(iv) Identifying limitations in the long run:</strong><br>A continuous exponential decay model predicts that the remaining mass will approach zero asymptotically but will never actually reach it. In reality, radioactive decay is a discrete, probabilistic process consisting of individual atomic nuclei. Once only a small number of atoms remain, a continuous deterministic model breaks down and cannot accurately predict the exact time of the final decays."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$M_0 = 4.6\\text{ g}, \\quad k = 0.015, \\quad \\text{Half-life} \\approx 46\\text{ years}$$",
+            "feedback": "This option fails to take the inverse natural log of the vertical intercept. Since $\\ln M_0 = 4.6$, you must calculate $M_0 = \\mathrm{e}^{4.6} \\approx 99.5\\text{ g}$."
+        },
+        {
+            "ans": "$$M_0 = 99.5\\text{ g}, \\quad k = -0.015, \\quad \\text{Half-life} \\approx 46\\text{ years}$$",
+            "feedback": "The decay constant $k$ must be a positive parameter. Since the gradient of the log plot is $-0.015 = -k$, we have $k = 0.015$. A negative value for $k$ would represent exponential growth instead of decay."
+        },
+        {
+            "ans": "$$M_0 = 99.5\\text{ g}, \\quad k = 0.015, \\quad \\text{Half-life} \\approx 20\\text{ years}$$",
+            "feedback": "The half-life calculation is incorrect. Ensure you set up the equation as $\\mathrm{e}^{-kT} = 0.5$, which yields $T = \\dfrac{\\ln 2}{k} = \\dfrac{\\ln 2}{0.015} \\approx 46\\text{ years}$, rather than dividing by a different factor."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Half-Life Constant",
+        "content": "For any simple exponential decay model of the form $y = y_0 \\mathrm{e}^{-kt}$, the half-life $T$ is completely independent of the starting amount $y_0$. It will always simplify down to the incredibly clean and useful formula: $T = \\dfrac{ \\ln 2 }{ k }$. Memorising this relation can save you valuable steps during exams!"
+    }
+},
+{
+    "id": "004634",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Exponentials and Logarithms",
+    "subtopic": [
+        "Population Modelling",
+        "Logarithmic Equations"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>A scientist monitors the population, $P$, of a bacteria culture in a laboratory experiment. The relationship between $P$ and the time, $t$ (in hours) since the start of the experiment, is modelled by $P = A b^t$, where $A$ and $b$ are constants.<br><br><strong>(i)</strong> Show that, according to the model, the graph of $\\log_{10} P$ against $t$ is a straight line.<br><strong>(ii)</strong> A plot of $\\log_{10} P$ against $t$ yields a straight line of best fit which passes through the points $(1, 2.5)$ and $(5, 3.7)$. Find estimates of the values of $A$ and $b$, giving your answers to $3$ significant figures.<br><strong>(iii)</strong> Estimate the population of the bacteria culture after $10$ hours, giving your answer to the nearest thousand.<br><strong>(iv)</strong> Suggest a biological reason why this model will eventually fail for large values of $t$.",
+    "steps": [
+        "<strong>(i) Showing linearisation:</strong><br>We begin with our exponential population model:<br>\\begin{aligned} P &= A b^t \\end{aligned}<br><br>Taking the base-$10$ logarithm of both sides:<br>\\begin{aligned} \\log_{10} P &= \\log_{10}(A b^t) \\cr &= \\log_{10} A + \\log_{10}(b^t) \\cr &= (\\log_{10} b)t + \\log_{10} A \\end{aligned}<br><br>This is in the linear form $y = mx + c$, where $y = \\log_{10} P$ and $x = t$. The constant gradient is $m = \\log_{10} b$ and the vertical intercept is $c = \\log_{10} A$. Thus, the graph of $\\log_{10} P$ against $t$ is a straight line.",
+        "<strong>(ii) Finding estimates for $A$ and $b$:</strong><br>We calculate the gradient ($m$) of the line of best fit passing through $(1, 2.5)$ and $(5, 3.7)$:<br>\\begin{aligned} m &= \\dfrac{ 3.7 - 2.5 }{ 5 - 1 } \\cr &= \\dfrac{ 1.2 }{ 4 } \\cr &= 0.3 \\end{aligned}<br><br>Since $m = \\log_{10} b$, we have:<br>\\begin{aligned} \\log_{10} b &= 0.3 \\cr b &= 10^{ 0.3 } \\cr &\\approx 2.00 \\end{aligned}<br><br>Now we use one of our points, say $(1, 2.5)$, to find the vertical intercept $c = \\log_{10} A$:<br>\\begin{aligned} \\log_{10} P &= 0.3t + \\log_{10} A \\cr 2.5 &= 0.3(1) + \\log_{10} A \\cr \\log_{10} A &= 2.2 \\end{aligned}<br><br>Solving for $A$:<br>\\begin{aligned} A &= 10^{ 2.2 } \\cr &\\approx 158 \\end{aligned}<br><br>Thus, to $3$ significant figures, our estimates are $A = 158$ and $b = 2.00$.",
+        "<strong>(iii) Estimating the population after $10$ hours:</strong><br>We can substitute $t = 10$ directly into our linear equation $\\log_{10} P = 0.3t + 2.2$:<br>\\begin{aligned} \\log_{10} P &= 0.3(10) + 2.2 \\cr &= 3 + 2.2 \\cr &= 5.2 \\end{aligned}<br><br>Solving for $P$:<br>\\begin{aligned} P &= 10^{ 5.2 } \\cr &\\approx 158,489 \\end{aligned}<br><br>(Alternatively, substituting our rounded parameters $A = 158.49$ and $b = 1.995$ into $P = Ab^t$ gives $P = 158.49 \\times 1.995^{10} \\approx 158,000$. If using the fully rounded parameter model $P = 158 \\times 2^{10}$, we obtain $161,792 \\approx 162,000$. Both methods of calculation are chemically and mathematically valid depending on where rounding is executed.)<br><br>Rounding to the nearest thousand, we estimate the population to be $158,000$ (or $162,000$).",
+        "<strong>(iv) Describing biological failures:</strong><br>An exponential growth model assumes infinite resources. In a real laboratory experiment, as the bacteria population grows, resources (such as nutrients, space, and oxygen) become exhausted, and toxic metabolic waste products accumulate. This limits and eventually halts population growth, meaning the model fails for large values of $t$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$A = 2.2, \\quad b = 0.3, \\quad P \\approx 15,800$$",
+            "feedback": "This option fails to take the inverse base-10 log of both parameters. You must calculate $A = 10^{2.2} \\approx 158$ and $b = 10^{0.3} \\approx 2.00$, rather than treating the intercept and gradient directly as the base constants."
+        },
+        {
+            "ans": "$$A = 158, \\quad b = 2.00, \\quad P \\approx 3,160$$",
+            "feedback": "This option incorrectly computes $P$ after $10$ hours as $A \\times b \\times t$ (i.e. $158 \\times 2 \\times 10 = 3160$) instead of applying the exponent: $P = Ab^t = 158 \\times 2^{10} = 161,792$."
+        },
+        {
+            "ans": "$$A = 158, \\quad b = 2.00, \\quad P \\approx 15,800,000$$",
+            "feedback": "This calculation is off by a factor of 100, which usually stems from a decimal placement error when taking the inverse log of $5.2$. Ensure you evaluate $10^{5.2} \\approx 158,000$ carefully."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Early Rounding Cascades",
+        "content": "When a question has multiple sequential parts, avoid using rounded parameters ($A \\approx 158$ and $b \\approx 2.00$) for calculations in later parts unless explicitly instructed. Working directly with the exact linear equation $\\log_{10} P = 0.3t + 2.2$ keeps your calculations exact and prevents rounding errors from compounding!"
+    }
+},
+{
+    "id": "004635",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Exponentials and Logarithms",
+    "subtopic": [
+        "Shifted Exponential Modelling",
+        "Newton's Law of Cooling"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>The temperature, $\\theta$ (in $^\circ\\text{C}$), of a hot metal component cooling in a laboratory where the ambient room temperature is $20^\circ\\text{C}$ is modelled by $\\theta = 20 + A \\mathrm{e}^{-kt}$, where $t$ is the time in minutes after cooling begins, and $A$ and $k$ are constants.<br><br><strong>(i)</strong> Show that the relationship can be written in the form $\\ln(\theta - 20) = mt + c$, where $m$ and $c$ are constants to be stated in terms of $A$ and $k$.<br><strong>(ii)</strong> A plot of $\\ln(\theta - 20)$ against $t$ yields a straight line of best fit with a vertical intercept of $4.0$ and a gradient of $-0.08$. Find the exact value of $k$ and the value of $A$ to $3$ significant figures.<br><strong>(iii)</strong> Estimate the temperature of the metal component after $15$ minutes of cooling, giving your answer to the nearest degree.<br><strong>(iv)</strong> State the long-term temperature predicted by this model, and comment on whether this prediction is realistic in a physical context.",
+    "steps": [
+        "<strong>(i) Rearranging and taking logarithms:</strong><br>We begin with the cooling equation:<br>\\begin{aligned} \\theta &= 20 + A \\mathrm{e}^{-kt} \\end{aligned}<br><br>To isolate the exponential term, we subtract $20$ from both sides:<br>\\begin{aligned} \\theta - 20 &= A \\mathrm{e}^{-kt} \\end{aligned}<br><br>Now, taking the natural logarithm of both sides:<br>\\begin{aligned} \\ln(\\theta - 20) &= \\ln(A \\mathrm{e}^{-kt}) \\cr &= \\ln A + \\ln(\\mathrm{e}^{-kt}) \\cr &= -kt + \\ln A \\end{aligned}<br><br>This is in the requested form $\\ln(\theta - 20) = mt + c$, where the constants are $m = -k$ and $c = \\ln A$.",
+        "<strong>(ii) Determining $A$ and $k$:</strong><br>We are given that the line of best fit has a vertical intercept $c = 4.0$ and a gradient $m = -0.08$.<br><br>Using our linear relationship $m = -k$:<br>\\begin{aligned} -k &= -0.08 \\cr k &= 0.08 \\end{aligned}<br><br>Using our relationship for the vertical intercept $c = \\ln A$:<br>\\begin{aligned} \\ln A &= 4.0 \\cr A &= \\mathrm{e}^{ 4.0 } \\cr &\\approx 54.6 \\end{aligned}<br><br>Thus, the exact value of $k = 0.08$ and the value of $A = 54.6$ (to $3$ significant figures).",
+        "<strong>(iii) Estimating temperature after $15$ minutes:</strong><br>Substituting $t = 15$, along with our parameters, into our original cooling model equation:<br>\\begin{aligned} \\theta &= 20 + 54.598... \\mathrm{e}^{-0.08(15)} \\cr &= 20 + 54.598... \\mathrm{e}^{-1.2} \\cr &\\approx 20 + 54.598...(0.30119...) \\cr &\\approx 20 + 16.444 \\cr &\\approx 36.44^\circ\\text{C} \\end{aligned}<br><br>Rounding to the nearest degree, the estimated temperature after $15$ minutes is $36^\circ\\text{C}$.",
+        "<strong>(iv) Analyzing long-term predictions:</strong><br>As $t \\to \\infty$, the exponential term $\\mathrm{e}^{-0.08t} \\to 0$.<br><br>Substituting this limit into the temperature model:<br>\\begin{aligned} \\theta \\to 20 + A(0) \\implies \\theta \\to 20^\\circ\\text{C} \\end{aligned}<br><br>This prediction is highly realistic in a physical context, as any hot object left to cool in a room will eventually reach thermal equilibrium with its surrounding environment, meaning its temperature will settle at the ambient room temperature of $20^\circ\\text{C}$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$A = 4.0, \\quad k = 0.08, \\quad \\text{Temperature} \\approx 21^\circ\\text{C}$$",
+            "feedback": "This option fails to take the inverse natural log of the vertical intercept. Since $\\ln A = 4.0$, you must calculate $A = \\mathrm{e}^{4.0} \\approx 54.6$, rather than equating $A$ directly to the intercept."
+        },
+        {
+            "ans": "$$A = 54.6, \\quad k = -0.08, \\quad \\text{Temperature} \\approx 201^\circ\\text{C}$$",
+            "feedback": "This option incorrectly sets $k$ as a negative value. Because the gradient of the log plot is negative ($m = -0.08 = -k$), the constant $k$ is positive ($k = 0.08$). A negative value of $k$ would model heat explosion (unbounded growth) instead of cooling."
+        },
+        {
+            "ans": "$$A = 54.6, \\quad k = 0.08, \\quad \\text{Temperature} \\approx 16^\circ\\text{C}$$",
+            "feedback": "This option computes the cooled portion of the temperature $\\theta - 20 \\approx 16.44^\\circ\\text{C}$ but forgets to add the constant ambient temperature of $20^\\circ\\text{C}$ back onto the final result."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Shifted Log Pitfalls",
+        "content": "When dealing with models that have an added vertical displacement constant (like Newton's Law of Cooling, $\\theta = 20 + A \\mathrm{e}^{-kt}$), never take logarithms before isolating the exponential term first. Attempting to write $\\ln \\theta = \\ln(20 + A \\mathrm{e}^{-kt})$ creates an expression that cannot be simplified or linearised. Always subtract the constant first!"
+    }
 }
 ];
