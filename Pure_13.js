@@ -967,5 +967,203 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Right-Angled Small Angles",
         "content": "This geometric question beautifully illustrates how small angles affect right-angled triangles. When $\\theta$ is very small, the adjacent side $AB$ becomes almost equal in length to the hypotenuse $AC$. The tiny difference between them is a quadratic curve approximated by $5\\theta^2$."
     }
+},
+{
+    "id": "004626",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Curves and Differentiation",
+    "subtopic": [
+        "Stationary Points",
+        "Asymptotes",
+        "Concavity"
+    ],
+    "img": "images/Pure/004626.png",
+    "question": "In this question you must show detailed reasoning.<br><br>A curve has equation $y = x - 3 + \\dfrac{ 1 }{ x - 4 }$.<br>The curve is shown in the diagram.<br><br><strong>(i)</strong> Determine the coordinates of the stationary points on the curve.<br><strong>(ii)</strong> Determine the nature of each stationary point.<br><strong>(iii)</strong> Write down the equation of the vertical asymptote.<br><strong>(iv)</strong> Deduce the set of values of $x$ for which the curve is concave upwards.",
+    "steps": [
+        "<strong>(i) Finding the stationary points:</strong><br>To find the coordinates of the stationary points, we first differentiate the curve equation $y = x - 3 + \\dfrac{ 1 }{ x - 4 }$ with respect to $x$.<br><br>Using the chain rule on the fractional term, we obtain:<br>\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 1 - \\dfrac{ 1 }{ (x - 4)^2 } \\end{aligned}<br><br>At a stationary point, the gradient $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 0$. Setting the derivative to $0$ and solving for $x$:<br>\\begin{aligned} 1 - \\dfrac{ 1 }{ (x - 4)^2 } &= 0 \\cr \\dfrac{ 1 }{ (x - 4)^2 } &= 1 \\cr (x - 4)^2 &= 1 \\cr x - 4 &= \\pm 1 \\end{aligned}<br><br>This gives two possible values for $x$:<br>\\begin{aligned} x - 4 = 1 &\\implies x = 5 \\cr x - 4 = -1 &\\implies x = 3 \\end{aligned}<br><br>Now, we find the corresponding $y$-coordinates by substituting these values back into the original curve equation:<br><br>For $x = 5$:<br>\\begin{aligned} y &= 5 - 3 + \\dfrac{ 1 }{ 5 - 4 } \\cr &= 2 + 1 \\cr &= 3 \\end{aligned}<br><br>For $x = 3$:<br>\\begin{aligned} y &= 3 - 3 + \\dfrac{ 1 }{ 3 - 4 } \\cr &= 0 - 1 \\cr &= -1 \\end{aligned}<br><br>Thus, the coordinates of the stationary points are $(5, 3)$ and $(3, -1)$..",
+        "<strong>(ii) Determining the nature of each stationary point:</strong><br>To determine the nature of the stationary points, we find the second derivative, $\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}$, by differentiating $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 1 - (x - 4)^{-2}$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= \\dfrac{ 2 }{ (x - 4)^3 } \\end{aligned}<br><br>We now evaluate this second derivative at each of our stationary points:<br><br>At $x = 5$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= \\dfrac{ 2 }{ (5 - 4)^3 } \\cr &= 2 \\end{aligned}<br>Since $2 > 0$, the curve is concave upwards at this point, so $(5, 3)$ is a <strong>local minimum</strong>.<br><br>At $x = 3$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= \\dfrac{ 2 }{ (3 - 4)^3 } \\cr &= -2 \\end{aligned}<br>Since $-2 < 0$, the curve is concave downwards at this point, so $(3, -1)$ is a <strong>local maximum</strong>.",
+        "<strong>(iii) Equation of the vertical asymptote:</strong><br>The vertical asymptote occurs where the rational function is undefined. This happens when the denominator of the fractional term is equal to zero:<br>\\begin{aligned} x - 4 &= 0 \\cr x &= 4 \\end{aligned}<br><br>Therefore, the equation of the vertical asymptote is $x = 4$.",
+        "<strong>(iv) Finding where the curve is concave upwards:</strong><br>A curve is concave upwards when the second derivative is strictly positive, $\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} > 0$.<br><br>Using our expression for the second derivative:<br>\\begin{aligned} \\dfrac{ 2 }{ (x - 4)^3 } &> 0 \\end{aligned}<br><br>Since the numerator is a positive constant ($2$), the fraction is positive if and only if the denominator is positive:<br>\\begin{aligned} (x - 4)^3 &> 0 \\cr x - 4 &> 0 \\cr x &> 4 \\end{aligned}<br><br>Thus, the set of values for which the curve is concave upwards is $x > 4$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\text{Local minimum at } (3, -1), \\text{ concave upwards for } x < 4$$",
+            "feedback": "This option confuses the local maximum with the local minimum, and incorrectly identifies the region of concavity by solving for when the second derivative is negative rather than positive."
+        },
+        {
+            "ans": "$$\\text{Local minimum at } (5, 3), \\text{ concave upwards for } x > 3$$",
+            "feedback": "While the coordinates of the local minimum are correct, the boundary for concavity is incorrect. The vertical asymptote is at $x = 4$, which is where the second derivative changes sign, not at the coordinate $x = 3$."
+        },
+        {
+            "ans": "$$\\text{Local minimum at } (5, 3), \\text{ concave upwards for } x < 4$$",
+            "feedback": "The coordinates of the local minimum are correct, but the inequality for concavity is reversed, representing the region where the curve is concave downwards."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Asymptotes and Signs",
+        "content": "When calculating concavity using the second derivative $\\dfrac{ 2 }{ (x - 4)^3 }$, always keep in mind that $x = 4$ is a vertical asymptote where the function is undefined. The curve can never be concave upwards at $x = 4$. Make sure to exclude the asymptote value from your final domain of concavity."
+    }
+},
+{
+    "id": "004627",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Curves and Differentiation",
+    "subtopic": [
+        "Stationary Points",
+        "Asymptotes",
+        "Concavity"
+    ],
+    "img": "images/Pure/004627.png",
+    "question": "In this question you must show detailed reasoning.<br><br>A curve has equation $y = 2x - 1 + \\dfrac{ 8 }{ x - 1 }$.<br>The curve is shown in the diagram.<br><br><strong>(i)</strong> Determine the coordinates of the stationary points on the curve.<br><strong>(ii)</strong> Determine the nature of each stationary point.<br><strong>(iii)</strong> Write down the equation of the vertical asymptote.<br><strong>(iv)</strong> Deduce the set of values of $x$ for which the curve is concave upwards.",
+    "steps": [
+        "<strong>(i) Finding the stationary points:</strong><br>To find the coordinates of the stationary points, we differentiate the curve equation $y = 2x - 1 + \\dfrac{ 8 }{ x - 1 }$ with respect to $x$.<br><br>Using the chain rule on the fraction, we get:<br>\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 2 - \\dfrac{ 8 }{ (x - 1)^2 } \\end{aligned}<br><br>At a stationary point, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 0$. Setting the derivative to $0$ and solving for $x$:<br>\\begin{aligned} 2 - \\dfrac{ 8 }{ (x - 1)^2 } &= 0 \\cr \\dfrac{ 8 }{ (x - 1)^2 } &= 2 \\cr (x - 1)^2 &= 4 \\cr x - 1 &= \\pm 2 \\end{aligned}<br><br>This yields two $x$-values:<br>\\begin{aligned} x - 1 = 2 &\\implies x = 3 \\cr x - 1 = -2 &\\implies x = -1 \\end{aligned}<br><br>Now, substitute these back into the original equation to find the corresponding $y$-coordinates:<br><br>For $x = 3$:<br>\\begin{aligned} y &= 2(3) - 1 + \\dfrac{ 8 }{ 3 - 1 } \\cr &= 5 + 4 \\cr &= 9 \\end{aligned}<br><br>For $x = -1$:<br>\\begin{aligned} y &= 2(-1) - 1 + \\dfrac{ 8 }{ -1 - 1 } \\cr &= -3 - 4 \\cr &= -7 \\end{aligned}<br><br>Thus, the coordinates of the stationary points are $(3, 9)$ and $(-1, -7)$.",
+        "<strong>(ii) Determining the nature of each stationary point:</strong><br>To find the nature, we calculate the second derivative, $\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}$, by differentiating $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 2 - 8(x - 1)^{-2}$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= \\dfrac{ 16 }{ (x - 1)^3 } \\end{aligned}<br><br>We evaluate this at each stationary point:<br><br>At $x = 3$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= \\dfrac{ 16 }{ (3 - 1)^3 } \\cr &= 2 \\end{aligned}<br>Since $2 > 0$, $(3, 9)$ is a <strong>local minimum</strong>.<br><br>At $x = -1$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= \\dfrac{ 16 }{ (-1 - 1)^3 } \\cr &= -2 \\end{aligned}<br>Since $-2 < 0$, $(-1, -7)$ is a <strong>local maximum</strong>.",
+        "<strong>(iii) Equation of the vertical asymptote:</strong><br>The vertical asymptote occurs where the denominator of the fraction is zero:<br>\\begin{aligned} x - 1 &= 0 \\cr x &= 1 \\end{aligned}<br><br>So the vertical asymptote is the line $x = 1$.",
+        "<strong>(iv) Finding where the curve is concave upwards:</strong><br>The curve is concave upwards when the second derivative is positive, $\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} > 0$.<br><br>Using our second derivative expression:<br>\\begin{aligned} \\dfrac{ 16 }{ (x - 1)^3 } &> 0 \\end{aligned}<br><br>Since the numerator ($16$) is positive, the fraction is positive when:<br>\\begin{aligned} (x - 1)^3 &> 0 \\cr x - 1 &> 0 \\cr x &> 1 \\end{aligned}<br><br>Thus, the curve is concave upwards for $x > 1$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\text{Local minimum at } (-1, -7), \\text{ concave upwards for } x < 1$$",
+            "feedback": "This option confuses the local maximum with the local minimum and reverses the inequality of the concavity region."
+        },
+        {
+            "ans": "$$\\text{Local minimum at } (3, 9), \\text{ concave upwards for } x > 2$$",
+            "feedback": "While the stationary point is correct, the concavity interval is incorrect. The vertical asymptote at $x = 1$ is where the second derivative changes sign, not at $x = 2$."
+        },
+        {
+            "ans": "$$\\text{Local minimum at } (3, 9), \\text{ concave upwards for } x < 1$$",
+            "feedback": "The coordinates and nature of the stationary point are correct, but the second derivative is positive when $x - 1 > 0$, which corresponds to $x > 1$, not $x < 1$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Differentiating Efficiently",
+        "content": "When given a function such as $y = 2x - 1 + \\dfrac{ 8 }{ x - 1 }$, differentiating it term-by-term using the chain rule on $8(x - 1)^{-1}$ is much faster and less prone to sign errors than rewriting the equation as a single quotient and using the quotient rule."
+    }
+},
+{
+    "id": "004628",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Curves and Differentiation",
+    "subtopic": [
+        "Algebraic Division",
+        "Stationary Points",
+        "Asymptotes",
+        "Concavity"
+    ],
+    "img": "images/Pure/004628.png",
+    "question": "In this question you must show detailed reasoning.<br><br>A curve has equation $y = \\dfrac{ x^2 + 3 }{ x - 1 }$.<br>The curve is shown in the diagram.<br><br><strong>(i)</strong> Express the equation of the curve in the form $y = ax + b + \\dfrac{ c }{ x - 1 }$, where $a$, $b$, and $c$ are integers.<br><strong>(ii)</strong> Determine the coordinates and nature of the stationary points on the curve.<br><strong>(iii)</strong> State the equation of the vertical asymptote.<br><strong>(iv)</strong> Deduce the set of values of $x$ for which the curve is concave upwards.",
+    "steps": [
+        "<strong>(i) Expressing the curve in the given form:</strong><br>We can rewrite the numerator $x^2 + 3$ to facilitate division by $(x - 1)$:<br>\\begin{aligned} x^2 + 3 &= (x^2 - 1) + 4 \\cr &= (x - 1)(x + 1) + 4 \\end{aligned}<br><br>Now we divide each term by $(x - 1)$:<br>\\begin{aligned} y &= \\dfrac{ (x - 1)(x + 1) + 4 }{ x - 1 } \\cr &= x + 1 + \\dfrac{ 4 }{ x - 1 } \\end{aligned}<br><br>Thus, the equation of the curve in the required form is $y = x + 1 + \\dfrac{ 4 }{ x - 1 }$, where $a = 1$, $b = 1$, and $c = 4$.",
+        "<strong>(ii) Finding coordinates and nature of stationary points:</strong><br>Using the rewritten form, we differentiate $y = x + 1 + 4(x - 1)^{-1}$ with respect to $x$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 1 - \\dfrac{ 4 }{ (x - 1)^2 } \\end{aligned}<br><br>Set the derivative to $0$ to find stationary points:<br>\\begin{aligned} 1 - \\dfrac{ 4 }{ (x - 1)^2 } &= 0 \\cr (x - 1)^2 &= 4 \\cr x - 1 &= \\pm 2 \\end{aligned}<br><br>This gives:<br>\\begin{aligned} x - 1 = 2 &\\implies x = 3 \\cr x - 1 = -2 &\\implies x = -1 \\end{aligned}<br><br>Substitute these into $y = x + 1 + \\dfrac{ 4 }{ x - 1 }$ to find the $y$-coordinates:<br><br>For $x = 3$:<br>\\begin{aligned} y &= 3 + 1 + \\dfrac{ 4 }{ 3 - 1 } \\cr &= 4 + 2 \\cr &= 6 \\end{aligned}<br><br>For $x = -1$:<br>\\begin{aligned} y &= -1 + 1 + \\dfrac{ 4 }{ -1 - 1 } \\cr &= 0 - 2 \\cr &= -2 \\end{aligned}<br><br>Now, find the second derivative to determine their nature:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= \\dfrac{ 8 }{ (x - 1)^3 } \\end{aligned}<br><br>Evaluate at each point:<br><br>At $x = 3$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= \\dfrac{ 8 }{ (3 - 1)^3 } \\cr &= 1 > 0 \\end{aligned}<br>Since $1 > 0$, $(3, 6)$ is a <strong>local minimum</strong>.<br><br>At $x = -1$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= \\dfrac{ 8 }{ (-1 - 1)^3 } \\cr &= -1 < 0 \\end{aligned}<br>Since $-1 < 0$, $(-1, -2)$ is a <strong>local maximum</strong>.",
+        "<strong>(iii) Finding the vertical asymptote:</strong><br>The curve is undefined when the denominator of the fraction is zero:<br>\\begin{aligned} x - 1 &= 0 \\cr x &= 1 \\end{aligned}<br><br>Thus, the equation of the vertical asymptote is $x = 1$.",
+        "<strong>(iv) Finding where the curve is concave upwards:</strong><br>The curve is concave upwards when the second derivative is positive:<br>\\begin{aligned} \\dfrac{ 8 }{ (x - 1)^3 } &> 0 \\end{aligned}<br><br>Since the numerator is positive, this requires:<br>\\begin{aligned} (x - 1)^3 &> 0 \\cr x - 1 &> 0 \\cr x &> 1 \\end{aligned}<br><br>So the curve is concave upwards for $x > 1$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$y = x - 1 + \\dfrac{ 4 }{ x - 1 }$$",
+            "feedback": "This division is incorrect. If you multiply out $(x-1)(x-1) + 4$, you get $x^2 - 2x + 5$, which does not equal the original numerator $x^2 + 3$."
+        },
+        {
+            "ans": "$$\\text{Local minimum at } (3, 6), \\text{ concave upwards for } x < 1$$",
+            "feedback": "The coordinates of the local minimum are correct, but the second derivative is positive only for $x > 1$. Therefore, the curve is concave upwards for $x > 1$ rather than $x < 1$."
+        },
+        {
+            "ans": "$$\\text{Local minimum at } (-1, -2), \\text{ concave upwards for } x > 1$$",
+            "feedback": "This option incorrectly identifies the point $(-1, -2)$ as a local minimum. Since the second derivative at $x = -1$ is negative, it is actually a local maximum."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Splitting Fractions",
+        "content": "When faced with an improper algebraic fraction where the degree of the numerator is exactly one higher than that of the denominator, performing algebraic division first to write the curve as $x + 1 + \\dfrac{ 4 }{ x - 1 }$ is a massive timesaver. It not only makes differentiation incredibly direct but also immediately reveals both the vertical and slant asymptotes."
+    }
+},
+{
+    "id": "004629",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Curves and Differentiation",
+    "subtopic": [
+        "Logarithmic Functions",
+        "Stationary Points",
+        "Asymptotes",
+        "Concavity"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>A curve has equation $y = x - 2\\ln(x - 1)$, defined for $x > 1$.<br><br><strong>(i)</strong> Determine the coordinates of the stationary point on the curve.<br><strong>(ii)</strong> Determine the nature of this stationary point.<br><strong>(iii)</strong> Write down the equation of the vertical asymptote.<br><strong>(iv)</strong> Determine the set of values of $x$ for which the curve is concave upwards.",
+    "steps": [
+        "<strong>(i) Finding the coordinates of the stationary point:</strong><br>We differentiate the equation $y = x - 2\\ln(x - 1)$ with respect to $x$ for the domain $x > 1$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 1 - \\dfrac{ 2 }{ x - 1 } \\end{aligned}<br><br>To find the stationary points, set $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 0$:<br>\\begin{aligned} 1 - \\dfrac{ 2 }{ x - 1 } &= 0 \\cr \\dfrac{ 2 }{ x - 1 } &= 1 \\cr x - 1 &= 2 \\cr x &= 3 \\end{aligned}<br><br>Now, substitute $x = 3$ back into the original curve equation:<br>\\begin{aligned} y &= 3 - 2\\ln(3 - 1) \\cr &= 3 - 2\\ln 2 \\end{aligned}<br><br>Thus, the coordinates of the stationary point are $(3, 3 - 2\\ln 2)$.",
+        "<strong>(ii) Determining the nature of the stationary point:</strong><br>We find the second derivative $\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}$ by differentiating $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 1 - 2(x - 1)^{-1}$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= \\dfrac{ 2 }{ (x - 1)^2 } \\end{aligned}<br><br>Evaluate this at $x = 3$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= \\dfrac{ 2 }{ (3 - 1)^2 } \\cr &= \\dfrac{ 2 }{ 4 } \\cr &= \\dfrac{ 1 }{ 2 } \\end{aligned}<br><br>Since $\\dfrac{ 1 }{ 2 } > 0$, the curve is concave upwards at this point. Thus, the stationary point is a <strong>local minimum</strong>.",
+        "<strong>(iii) Equation of the vertical asymptote:</strong><br>The logarithmic function $\\ln(x - 1)$ is defined only for $x > 1$. As $x$ approaches $1$ from the right ($x \\to 1^+$), $(x - 1) \\to 0^+$, which means $\\ln(x - 1) \\to -\\infty$.<br><br>Consequently:<br>\\begin{aligned} y &= x - 2\\ln(x - 1) \\to +\\infty \\end{aligned}<br><br>Thus, the line $x = 1$ is a vertical asymptote.",
+        "<strong>(iv) Determining where the curve is concave upwards:</strong><br>A curve is concave upwards when its second derivative is strictly positive:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &> 0 \\cr \\dfrac{ 2 }{ (x - 1)^2 } &> 0 \\end{aligned}<br><br>Since $(x - 1)^2 > 0$ for all $x > 1$, the expression $\\dfrac{ 2 }{ (x - 1)^2 }$ is always strictly positive on the entire domain of the function.<br><br>Therefore, the curve is concave upwards for all $x > 1$ (its entire domain)."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\text{Stationary point at } (2, 2), \\text{ concave upwards for all } x > 1$$",
+            "feedback": "This option uses an incorrect x-coordinate for the stationary point. Setting the first derivative to $0$ yields $x - 1 = 2 \\implies x = 3$, not $x = 2$."
+        },
+        {
+            "ans": "$$\\text{Stationary point at } (3, 3 - 2\\ln 2), \\text{ which is a local maximum}$$",
+            "feedback": "This option incorrectly identifies the turning point as a local maximum. At $x = 3$, the second derivative evaluates to a positive value ($0.5 > 0$), confirming the point is a local minimum."
+        },
+        {
+            "ans": "$$\\text{Stationary point at } (3, 3 - 2\\ln 2), \\text{ concave upwards for } x > 3$$",
+            "feedback": "While the coordinates are correct, the interval of concavity is restricted unnecessarily. Since the second derivative is positive on the function's entire domain, the curve is concave upwards for all $x > 1$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Domain Boundaries",
+        "content": "When working with logarithmic functions, always check the domain constraints. The term $\\ln(x - 1)$ requires that $x > 1$. Any turning points or concavity intervals you find must lie strictly within this domain."
+    }
+},
+{
+    "id": "004630",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Curves and Differentiation",
+    "subtopic": [
+        "Trigonometric Calculus",
+        "Stationary Points",
+        "Asymptotes",
+        "Concavity"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>A curve has equation $y = \\tan x - 2x$, defined on the domain $0 < x < \\pi$, $x \\neq \\dfrac{ \\pi }{ 2 }$.<br><br><strong>(i)</strong> Determine the coordinates of the stationary points on the curve, giving your answers in terms of $\\pi$.<br><strong>(ii)</strong> Determine the nature of each stationary point.<br><strong>(iii)</strong> State the equation of the vertical asymptote on this domain.<br><strong>(iv)</strong> Determine the set of values of $x$ on this domain for which the curve is concave upwards.",
+    "steps": [
+        "<strong>(i) Finding the coordinates of the stationary points:</strong><br>We differentiate the equation $y = \\tan x - 2x$ with respect to $x$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\sec^2 x - 2 \\end{aligned}<br><br>Set the first derivative to $0$ to find stationary points:<br>\\begin{aligned} \\sec^2 x - 2 &= 0 \\cr \\sec^2 x &= 2 \\cr \\cos^2 x &= \\dfrac{ 1 }{ 2 } \\cr \\cos x &= \\pm \\dfrac{ 1 }{ \\sqrt{ 2 } } \\end{aligned}<br><br>On the domain $0 < x < \\pi$, there are two solutions:<br>\\begin{aligned} \\cos x = \\dfrac{ 1 }{ \\sqrt{ 2 } } &\\implies x = \\dfrac{ \\pi }{ 4 } \\cr \\cos x = -\\dfrac{ 1 }{ \\sqrt{ 2 } } &\\implies x = \\dfrac{ 3\\pi }{ 4 } \\end{aligned}<br><br>Now, find the corresponding $y$-coordinates by substituting these values back into the original curve equation:<br><br>For $x = \\dfrac{ \\pi }{ 4 }$:<br>\\begin{aligned} y &= \\tan\\left(\\dfrac{ \\pi }{ 4 }\\right) - 2\\left(\\dfrac{ \\pi }{ 4 }\\right) \\cr &= 1 - \\dfrac{ \\pi }{ 2 } \\end{aligned}<br><br>For $x = \\dfrac{ 3\\pi }{ 4 }$:<br>\\begin{aligned} y &= \\tan\\left(\\dfrac{ 3\\pi }{ 4 }\\right) - 2\\left(\\dfrac{ 3\\pi }{ 4 }\\right) \\cr &= -1 - \\dfrac{ 3\\pi }{ 2 } \\end{aligned}<br><br>Thus, the coordinates of the stationary points are:<br>\\begin{aligned} \\left(\\dfrac{ \\pi }{ 4 }, 1 - \\dfrac{ \\pi }{ 2 }\\right) \\quad \\text{and} \\quad \\left(\\dfrac{ 3\\pi }{ 4 }, -1 - \\dfrac{ 3\\pi }{ 2 }\\right) \\end{aligned}",
+        "<strong>(ii) Determining the nature of each stationary point:</strong><br>We find the second derivative $\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}$ by differentiating $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\sec^2 x - 2$ using the chain rule:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= 2\\sec x \\cdot (\\sec x \\tan x) \\cr &= 2\\sec^2 x \\tan x \\end{aligned}<br><br>We now evaluate this at each stationary point:<br><br>At $x = \\dfrac{ \\pi }{ 4 }$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= 2\\sec^2\\left(\\dfrac{ \\pi }{ 4 }\\right) \\tan\\left(\\dfrac{ \\pi }{ 4 }\\right) \\cr &= 2(2)(1) \\cr &= 4 \\end{aligned}<br>Since $4 > 0$, the stationary point $\\left(\\dfrac{ \\pi }{ 4 }, 1 - \\dfrac{ \\pi }{ 2 }\\right)$ is a <strong>local minimum</strong>.<br><br>At $x = \\dfrac{ 3\\pi }{ 4 }$:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &= 2\\sec^2\\left(\\dfrac{ 3\\pi }{ 4 }\\right) \\tan\\left(\\dfrac{ 3\\pi }{ 4 }\\right) \\cr &= 2(2)(-1) \\cr &= -4 \\end{aligned}<br>Since $-4 < 0$, the stationary point $\\left(\\dfrac{ 3\\pi }{ 4 }, -1 - \\dfrac{ 3\\pi }{ 2 }\\right)$ is a <strong>local maximum</strong>.",
+        "<strong>(iii) Stating the equation of the vertical asymptote:</strong><br>On the domain $0 < x < \\pi$, the function $\\tan x$ is undefined at $x = \\dfrac{ \\pi }{ 2 }$, where the curve has a vertical asymptote.<br><br>Therefore, the equation of the vertical asymptote is $x = \\dfrac{ \\pi }{ 2 }$.",
+        "<strong>(iv) Finding where the curve is concave upwards:</strong><br>A curve is concave upwards when its second derivative is strictly positive:<br>\\begin{aligned} \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} &> 0 \\cr 2\\sec^2 x \\tan x &> 0 \\end{aligned}<br><br>Since $\\sec^2 x = \\dfrac{ 1 }{ \\cos^2 x }$ is always positive for all valid values in our domain, we only need:<br>\\begin{aligned} \\tan x &> 0 \\end{aligned}<br><br>On the domain $0 < x < \\pi$, the tangent function is positive only in the first quadrant, which corresponds to the interval:<br>\\begin{aligned} 0 < x < \\dfrac{ \\pi }{ 2 } \\end{aligned}<br><br>Thus, the curve is concave upwards for the set of values $0 < x < \\dfrac{ \\pi }{ 2 }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\text{Local minimum at } \\left(\\dfrac{ \\pi }{ 4 }, 1 - \\dfrac{ \\pi }{ 2 }\\right), \\text{ concave upwards for all } 0 < x < \\pi$$",
+            "feedback": "The local minimum coordinates are correct, but the concavity interval is wrong. The second derivative contains the factor $\\tan x$, which is negative in the second quadrant, meaning the curve becomes concave downwards for $x > \\dfrac{\\pi}{2}$."
+        },
+        {
+            "ans": "$$\\text{Local minimum at } \\left(\\dfrac{ \\pi }{ 4 }, 1 - \\dfrac{ \\pi }{ 2 }\\right), \\text{ concave upwards for } \\dfrac{ \\pi }{ 2 } < x < \\pi$$",
+            "feedback": "This option identifies the wrong quadrant for concavity. On the interval $\\dfrac{\\pi}{2} < x < \\pi$ (the second quadrant), $\\tan x < 0$, which makes the second derivative negative, indicating the curve is concave downwards."
+        },
+        {
+            "ans": "$$\\text{Local maximum at } \\left(\\dfrac{ \\pi }{ 4 }, 1 - \\dfrac{ \\pi }{ 2 }\\right), \\text{ local minimum at } \\left(\\dfrac{ 3\\pi }{ 4 }, -1 - \\dfrac{ 3\\pi }{ 2 }\\right)$$$",
+            "feedback": "This option has the natures of the stationary points reversed. At $x = \\dfrac{\\pi}{4}$, the second derivative is positive, making it a local minimum, while at $x = \\dfrac{3\pi}{4}$, the second derivative is negative, making it a local maximum."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Trigonometric Turning Points",
+        "content": "When solving $\\sec^2 x = 2$, don't forget that this implies $\\cos^2 x = \\dfrac{ 1 }{ 2 }$, which yields $\\cos x = \\pm \\dfrac{ 1 }{ \\sqrt{ 2 } }$. On the interval $0 < x < \\pi$, this produces a solution in the first quadrant ($\\cos x > 0$) and one in the second quadrant ($\\cos x < 0$). Missing the negative root will lead you to lose half of your stationary points!"
+    }
 }
 ];
