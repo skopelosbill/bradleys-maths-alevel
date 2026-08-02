@@ -1535,5 +1535,190 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Exponents of Constants",
         "content": "When expanding $(1 + kx)^n$, the coefficient of $x^2$ is $\\dfrac{ n(n - 1) }{ 2 } k^2$, not $\\dfrac{ n(n - 1) }{ 2 } k$. A very common student slip is forgetting to square the constant $k$ when squaring the term $(kx)^2$. Always double check that constants inside your variable terms are raised to the same power as the variable!"
     }
+},
+{
+    "id": "004641",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Coordinate Geometry",
+    "topic": "Curves and Lines",
+    "subtopic": [
+        "Intersection of Line and Parabola"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>The line $y = 3 - kx$ crosses the curve $y = 4x - x^2$ on the $x$-axis and at one other point.<br><br>Determine the value of the constant $k$ and the coordinates of this other point.",
+    "steps": [
+        "<strong>Step 1: Find where the curve crosses the $x$-axis:</strong><br>The curve crosses the $x$-axis where $y = 0$. We find these points by setting the curve equation to $0$ and solving for $x$:<br>\\begin{aligned} 4x - x^2 &= 0 \\cr x(4 - x) &= 0 \\end{aligned}<br><br>This gives two possible crossing points on the $x$-axis:<br>\\begin{aligned} x = 0 \\quad \\text{and} \\quad x = 4 \\end{aligned}<br><br>So the curve crosses the $x$-axis at $(0, 0)$ and $(4, 0)$..",
+        "<strong>Step 2: Determine which $x$-axis crossing point the line passes through:</strong><br>The line $y = 3 - kx$ must also pass through one of these two $x$-axis crossing points ($y = 0$). Let's test both coordinates:<br><br>If the line passes through $(0, 0)$:<br>\\begin{aligned} 0 &= 3 - k(0) \\cr 0 &= 3 \\end{aligned}<br>This is an impossible statement, so the line cannot pass through $(0, 0)$.<br><br>Therefore, the line must pass through $(4, 0)$. We substitute $x = 4$ and $y = 0$ into the line equation to find $k$:<br>\\begin{aligned} 0 &= 3 - 4k \\cr 4k &= 3 \\cr k &= \\dfrac{ 3 }{ 4 } \\end{aligned}",
+        "<strong>Step 3: Solve for the other point of intersection:</strong><br>Now we substitute $k = \\dfrac{ 3 }{ 4 }$ back into the line equation and set it equal to the curve to find the intersection points:<br>\\begin{aligned} 4x - x^2 &= 3 - \\dfrac{ 3 }{ 4 }x \\cr 16x - 4x^2 &= 12 - 3x \\cr 4x^2 - 19x + 12 &= 0 \\end{aligned}<br><br>Since we already know that $(4, 0)$ is a point of intersection, $x = 4$ must be a root of this quadratic equation. We can factorise the quadratic immediately:<br>\\begin{aligned} (x - 4)(4x - 3) &= 0 \\end{aligned}<br><br>This gives the roots $x = 4$ and $x = \\dfrac{ 3 }{ 4 }$. Thus, the $x$-coordinate of the other point of intersection is $x = \\dfrac{ 3 }{ 4 }$.",
+        "<strong>Step 4: Find the $y$-coordinate of the other point:</strong><br>Substitute $x = \\dfrac{ 3 }{ 4 }$ into the line equation to find the corresponding $y$-coordinate:<br>\\begin{aligned} y &= 3 - \\dfrac{ 3 }{ 4 }\\left(\\dfrac{ 3 }{ 4 }\\right) \\cr &= 3 - \\dfrac{ 9 }{ 16 } \\cr &= \\dfrac{ 39 }{ 16 } \\end{aligned}<br><br>Thus, the coordinates of the other point of intersection are $\\left(\\dfrac{ 3 }{ 4 }, \\dfrac{ 39 }{ 16 }\\right)$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$k = \\dfrac{ 3 }{ 4 }, \\quad \\text{other point } (4, 0)$$",
+            "feedback": "This option lists $(4, 0)$ as the other point of intersection. Remember that $(4, 0)$ is the point on the $x$-axis where the line and curve first cross; the question asks for the other point of intersection, which is $\\left(\\dfrac{3}{4}, \\dfrac{39}{16}\right)$."
+        },
+        {
+            "ans": "$$k = 0, \\quad \\text{other point } (3, 3)$$",
+            "feedback": "This option arises if you incorrectly solve the $x$-axis crossing condition using the point $(0,0)$, which yields the impossible equation $0 = 3$. This case must be rejected."
+        },
+        {
+            "ans": "$$k = \\dfrac{ 3 }{ 4 }, \\quad \\text{other point } \\left(\\dfrac{ 3 }{ 4 }, -\\dfrac{ 9 }{ 16 }\\right)$$",
+            "feedback": "This option has a calculation error in the final step. When substituting $x = \\dfrac{3}{4}$ into the line $y = 3 - \\dfrac{3}{4}x$, you should calculate $3 - \\dfrac{9}{16} = \\dfrac{39}{16}$, not $-\\dfrac{9}{16}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Common Trap of Undefined Roots",
+        "content": "Many students lose easy marks by failing to explicitly justify why $x = 0$ is rejected. When finding where the line crosses the curve on the $x$-axis, you must show that at $(0,0)$, the line's equation $0 = 3 - k(0)$ yields an impossible statement ($0 = 3$). Rigorous coordinate geometry requires verifying all cases!"
+    }
+},
+{
+    "id": "004642",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Coordinate Geometry",
+    "topic": "Curves and Lines",
+    "subtopic": [
+        "Intersection of Line and Parabola (Upward)"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>The line $y = kx - 6$ crosses the curve $y = x^2 - 3x$ on the $x$-axis and at one other point.<br><br>Determine the value of the constant $k$ and the coordinates of this other point.",
+    "steps": [
+        "<strong>Step 1: Find where the curve crosses the $x$-axis:</strong><br>The curve crosses the $x$-axis where $y = 0$. Setting the curve equation to $0$ and factorising:<br>\\begin{aligned} x^2 - 3x &= 0 \\cr x(x - 3) &= 0 \\end{aligned}<br><br>This gives the crossing coordinates $(0, 0)$ and $(3, 0)$..",
+        "<strong>Step 2: Determine which crossing point the line passes through:</strong><br>The line $y = kx - 6$ crosses on the $x$-axis, so it must pass through $(0, 0)$ or $(3, 0)$ where $y = 0$. Let's test both points:<br><br>If the line passes through $(0, 0)$:<br>\\begin{aligned} 0 &= k(0) - 6 \\cr 0 &= -6 \\end{aligned}<br>This is impossible, so the line cannot pass through $(0, 0)$.<br><br>Therefore, the line must pass through $(3, 0)$. Substituting $x = 3$ and $y = 0$ into the line equation:<br>\\begin{aligned} 0 &= 3k - 6 \\cr 3k &= 6 \\cr k &= 2 \\end{aligned}",
+        "<strong>Step 3: Solve for the other point of intersection:</strong><br>Now, substitute $k = 2$ back into the line equation and equate it to the curve:<br>\\begin{aligned} x^2 - 3x &= 2x - 6 \\cr x^2 - 5x + 6 &= 0 \\end{aligned}<br><br>Since we know $x = 3$ is one of the roots of intersection, we can factorise this immediately:<br>\\begin{aligned} (x - 3)(x - 2) &= 0 \\end{aligned}<br><br>This yields the roots $x = 3$ and $x = 2$. The other point of intersection has $x$-coordinate $x = 2$.",
+        "<strong>Step 4: Find the $y$-coordinate of the other point:</strong><br>Substitute $x = 2$ back into the line equation $y = 2x - 6$:<br>\\begin{aligned} y &= 2(2) - 6 \\cr &= -2 \\end{aligned}<br><br>Thus, the coordinates of the other point of intersection are $(2, -2)$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$k = 2, \\quad \\text{other point } (3, 0)$$",
+            "feedback": "This option lists $(3, 0)$ as the other point of intersection. Note that $(3, 0)$ is the point on the $x$-axis where the curve and line first cross; the question asks for the other point of intersection, which is $(2, -2)$."
+        },
+        {
+            "ans": "$$k = 2, \\quad \\text{other point } (2, 2)$$",
+            "feedback": "This option has a sign error in calculating the $y$-coordinate. Substituting $x = 2$ into the line $y = 2x - 6$ yields $y = 4 - 6 = -2$, not $+2$."
+        },
+        {
+            "ans": "$$k = -2, \\quad \\text{other point } (-2, -2)$$",
+            "feedback": "This option is caused by an error in solving for $k$. If you incorrectly set $3k = -6$, you would obtain $k = -2$, which leads to incorrect coordinates."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "Factoring Shortcut",
+        "content": "When solving $x^2 - 5x + 6 = 0$ to find the intersections, remember that you already know one of the roots is $x = 3$ because the line and the curve intersect at $(3,0)$. You can use this to factorise the quadratic immediately as $(x - 3)(x - 2) = 0$ without spending any time on trial-and-improvement or the quadratic formula."
+    }
+},
+{
+    "id": "004643",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Coordinate Geometry",
+    "topic": "Curves and Lines",
+    "subtopic": [
+        "Positive Axis Intersection"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>The line $y = kx + 15$ crosses the curve $y = 9 - x^2$ on the positive $x$-axis and at one other point.<br><br>Determine the value of the constant $k$ and the coordinates of this other point.",
+    "steps": [
+        "<strong>Step 1: Find the positive $x$-axis crossing point of the curve:</strong><br>The curve crosses the $x$-axis where $y = 0$. Setting the curve equation to $0$ and solving for $x$:<br>\\begin{aligned} 9 - x^2 &= 0 \\cr x^2 &= 9 \\cr x &= \\pm 3 \\end{aligned}<br><br>Since the question specifies the crossing occurs on the <strong>positive</strong> $x$-axis, we select $x = 3$. This gives the crossing point $(3, 0)$..",
+        "<strong>Step 2: Determine the value of $k$:</strong><br>The line $y = kx + 15$ must also pass through $(3, 0)$. Substituting $x = 3$ and $y = 0$ into the line equation:<br>\\begin{aligned} 0 &= 3k + 15 \\cr 3k &= -15 \\cr k &= -5 \\end{aligned}",
+        "<strong>Step 3: Solve for the other point of intersection:</strong><br>Substitute $k = -5$ back into the line equation and set it equal to the curve:<br>\\begin{aligned} 9 - x^2 &= -5x + 15 \\cr x^2 - 5x + 6 &= 0 \\end{aligned}<br><br>Since we know $x = 3$ is one of the roots of intersection, we factorise the quadratic equation immediately:<br>\\begin{aligned} (x - 3)(x - 2) &= 0 \\end{aligned}<br><br>This yields the roots $x = 3$ and $x = 2$. The other point of intersection has $x$-coordinate $x = 2$.",
+        "<strong>Step 4: Find the $y$-coordinate of the other point:</strong><br>Substitute $x = 2$ back into the line equation $y = -5x + 15$:<br>\\begin{aligned} y &= -5(2) + 15 \\cr &= 5 \\end{aligned}<br><br>Thus, the coordinates of the other point of intersection are $(2, 5)$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$k = 5, \\quad \\text{other point } (-2, 5)$$",
+            "feedback": "This option results from using the negative crossing point $(-3, 0)$ instead of the positive one. The question explicitly states the crossing occurs on the positive $x$-axis, which requires selecting $(3, 0)$ and finding $k = -5$."
+        },
+        {
+            "ans": "$$k = -5, \\quad \\text{other point } (3, 0)$$",
+            "feedback": "This option lists $(3, 0)$ as the other point of intersection. Note that $(3, 0)$ is the point where they cross on the $x$-axis; the question asks for the other point of intersection, which is $(2, 5)$."
+        },
+        {
+            "ans": "$$k = -5, \\quad \\text{other point } (2, -5)$$",
+            "feedback": "This option has a sign error when calculating the $y$-coordinate of the other point. Substituting $x = 2$ into $y = -5x + 15$ yields $y = -10 + 15 = 5$, not $-5$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "Positive and Negative Roots",
+        "content": "The curve $y = 9 - x^2$ crosses the $x$-axis at two symmetric points: $(3,0)$ and $(-3,0)$. Pay close attention to the word 'positive' in the question text. Substituting the negative point $(-3,0)$ will yield the wrong constant $k = 5$ and lead to cascading errors for the second intersection. Always write down your initial constraints!"
+    }
+},
+{
+    "id": "004644",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Coordinate Geometry",
+    "topic": "Curves and Lines",
+    "subtopic": [
+        "Tangent to a Hyperbola"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>The line $y = kx + 6$ is a tangent to the curve $y = \\dfrac{ 8 }{ x }$.<br><br>Given that $k \\neq 0$, determine the value of the constant $k$ and the coordinates of the point of contact.",
+    "steps": [
+        "<strong>Step 1: Set up the intersection equation:</strong><br>To find where the line and curve intersect, we set their equations equal to each other:<br>\\begin{aligned} kx + 6 &= \\dfrac{ 8 }{ x } \\end{aligned}<br><br>Multiply through by $x$ (since $x \\neq 0$) to form a quadratic equation:<br>\\begin{aligned} kx^2 + 6x &= 8 \\cr kx^2 + 6x - 8 &= 0 \\end{aligned}..",
+        "<strong>Step 2: Use the tangent condition (discriminant $\\Delta = 0$):</strong><br>A line is tangent to a curve if they touch at exactly one point. This means our quadratic equation in $x$ must have a single repeated real root, which corresponds to setting its discriminant to zero:<br>\\begin{aligned} \\Delta &= b^2 - 4ac \\cr &= 6^2 - 4(k)(-8) \\cr &= 36 + 32k \\end{aligned}<br><br>Setting the discriminant to $0$ and solving for $k$:<br>\\begin{aligned} 36 + 32k &= 0 \\cr 32k &= -36 \\cr k &= -\\dfrac{ 9 }{ 8 } \\end{aligned}",
+        "<strong>Step 3: Find the $x$-coordinate of the point of contact:</strong><br>Substitute $k = -\\dfrac{ 9 }{ 8 }$ back into our quadratic equation and solve for $x$:<br>\\begin{aligned} -\\dfrac{ 9 }{ 8 }x^2 + 6x - 8 &= 0 \\cr -9x^2 + 48x - 64 &= 0 \\cr 9x^2 - 48x + 64 &= 0 \\cr (3x - 8)^2 &= 0 \\end{aligned}<br><br>This perfect square yields the repeated root:<br>\\begin{aligned} 3x - 8 = 0 &\\implies x = \\dfrac{ 8 }{ 3 } \\end{aligned}",
+        "<strong>Step 4: Find the $y$-coordinate of the point of contact:</strong><br>Substitute $x = \\dfrac{ 8 }{ 3 }$ back into the curve equation $y = \\dfrac{ 8 }{ x }$:<br>\\begin{aligned} y &= \\dfrac{ 8 }{ \\left(\\dfrac{ 8 }{ 3 }\\right) } \\cr &= 8 \\times \\dfrac{ 3 }{ 8 } \\cr &= 3 \\end{aligned}<br><br>Thus, the value of the constant is $k = -\\dfrac{ 9 }{ 8 }$ and the coordinates of the point of contact are $\\left(\\dfrac{ 8 }{ 3 }, 3\\right)$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$k = \\dfrac{ 9 }{ 8 }, \\quad \\text{point of contact } \\left(-\\dfrac{ 8 }{ 3 }, -3\\right)$$",
+            "feedback": "This option arises if you make a sign error in the discriminant calculation, setting $36 - 32k = 0 \\implies k = \\dfrac{9}{8}$. Since $c = -8$ and $a = k$, $-4ac$ becomes $+32k$, which requires $k = -\\dfrac{9}{8}$."
+        },
+        {
+            "ans": "$$k = -\\dfrac{ 9 }{ 8 }, \\quad \\text{point of contact } \\left(\\dfrac{ 8 }{ 3 }, \\dfrac{ 1 }{ 3 }\\right)$$",
+            "feedback": "This option has a calculation error in the final step. When substituting $x = \\dfrac{8}{3}$ into $y = \\dfrac{8}{x}$, the result is $y = 3$, not $\\dfrac{1}{3}$."
+        },
+        {
+            "ans": "$$k = -\\dfrac{ 9 }{ 8 }, \\quad \\text{point of contact } (8, 1)$$",
+            "feedback": "This option is caused by an algebraic mistake when solving the perfect square quadratic $9x^2 - 48x + 64 = 0$, leading to an incorrect $x$-coordinate of $8$ instead of $\\dfrac{8}{3}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Discriminant and Tangency",
+        "content": "A line is a tangent to a curve if and only if they intersect at exactly one point (or point of contact). Algebraically, this means that the quadratic intersection equation has a single repeated real root, which corresponds to setting the discriminant $\\Delta = b^2 - 4ac = 0$. This powerful technique is a cornerstone of A Level curve sketching and coordinate geometry."
+    }
+},
+{
+    "id": "004645",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Coordinate Geometry",
+    "topic": "Curves and Lines",
+    "subtopic": [
+        "Tangent to a Circle"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>The line $y = 3x - k$ is a tangent to the circle $x^2 + y^2 = 10$.<br><br>Given that $k$ is a positive constant, determine the value of $k$ and the coordinates of the point of contact.",
+    "steps": [
+        "<strong>Step 1: Set up the intersection equation:</strong><br>We find where the line and circle intersect by substituting $y = 3x - k$ into the circle equation $x^2 + y^2 = 10$:<br>\\begin{aligned} x^2 + (3x - k)^2 &= 10 \\cr x^2 + 9x^2 - 6kx + k^2 &= 10 \\cr 10x^2 - 6kx + (k^2 - 10) &= 0 \\end{aligned}..",
+        "<strong>Step 2: Use the tangent condition (discriminant $\\Delta = 0$):</strong><br>For the line to be tangent to the circle, the quadratic intersection equation must have a single repeated real root. Therefore, we set its discriminant to zero:<br>\\begin{aligned} \\Delta &= (-6k)^2 - 4(10)(k^2 - 10) \\cr &= 36k^2 - 40(k^2 - 10) \\cr &= 36k^2 - 40k^2 + 400 \\cr &= -4k^2 + 400 \\end{aligned}<br><br>Setting the discriminant to $0$ and solving for $k$:<br>\\begin{aligned} -4k^2 + 400 &= 0 \\cr 4k^2 &= 400 \\cr k^2 &= 100 \\cr k &= \\pm 10 \\end{aligned}<br><br>Since we are given that $k$ is a positive constant, we select $k = 10$.",
+        "<strong>Step 3: Find the $x$-coordinate of the point of contact:</strong><br>Substitute $k = 10$ back into our quadratic equation in $x$:<br>\\begin{aligned} 10x^2 - 6(10)x + (10^2 - 10) &= 0 \\cr 10x^2 - 60x + 90 &= 0 \\end{aligned}<br><br>Divide the entire equation by $10$ to simplify:<br>\\begin{aligned} x^2 - 6x + 9 &= 0 \\cr (x - 3)^2 &= 0 \\cr x &= 3 \\end{aligned}",
+        "<strong>Step 4: Find the $y$-coordinate of the point of contact:</strong><br>Substitute $x = 3$ and $k = 10$ into the line equation $y = 3x - k$:<br>\\begin{aligned} y &= 3(3) - 10 \\cr &= -1 \\end{aligned}<br><br>Thus, the value of the positive constant is $k = 10$ and the coordinates of the point of contact are $(3, -1)$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$k = 10, \\quad \\text{point of contact } (3, 1)$$",
+            "feedback": "This option has a sign error when calculating the $y$-coordinate. Substituting $x = 3$ and $k = 10$ into $y = 3x - k$ yields $y = 9 - 10 = -1$, not $+1$."
+        },
+        {
+            "ans": "$$k = -10, \\quad \\text{point of contact } (-3, 1)$$",
+            "feedback": "This option uses the negative root $k = -10$. The question explicitly states that $k$ is a positive constant, so you must select $k = 10$."
+        },
+        {
+            "ans": "$$k = 20, \\quad \\text{point of contact } (1, -7)$$",
+            "feedback": "This option arises from an error when setting up the discriminant, such as failing to distribute the $-40$ across the term $(k^2 - 10)$, which yields an incorrect equation for $k$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "Expanding Brackets Safely",
+        "content": "Be extremely meticulous when expanding the squared binomial $(3x - k)^2 = 9x^2 - 6kx + k^2$. A very common algebraic slip is forgetting the middle term and expanding it simply as $9x^2 + k^2$. This will completely ruin your discriminant equation and make solving for $k$ impossible."
+    }
 }
 ];
