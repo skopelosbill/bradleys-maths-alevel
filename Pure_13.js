@@ -1720,7 +1720,7 @@ window.ALEVEL_QUESTIONS = [
         "title": "Expanding Brackets Safely",
         "content": "Be extremely meticulous when expanding the squared binomial $(3x - k)^2 = 9x^2 - 6kx + k^2$. A very common algebraic slip is forgetting the middle term and expanding it simply as $9x^2 + k^2$. This will completely ruin your discriminant equation and make solving for $k$ impossible."
     }
-}
+},
 {
     "id": "004646",
     "board": "OCR MEI",
