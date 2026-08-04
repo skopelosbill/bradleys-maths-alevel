@@ -71,7 +71,8 @@ window.ALEVEL_QUESTIONS = [
             "type": "caution",
             "title": "The Head Teacher's Eye: Negative Bases",
             "content": "When cubing and squaring negative numbers like $-2$, always write them inside brackets on your calculator: $(-2)^3 = -8$ and $(-2)^2 = 4$. Leaving brackets out can cause your calculator to evaluate $-2^2$ as $-4$, introducing a fatal sign error."
-        },
+                }
+            },
         {
         "id": "004003",
         "board": "Pearson Edexcel",
