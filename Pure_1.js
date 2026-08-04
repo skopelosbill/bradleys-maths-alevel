@@ -1,34 +1,33 @@
 window.ALEVEL_QUESTIONS = [
+    [
     {
         "id": "004001",
         "board": "Pearson Edexcel",
         "level": "AS",
-        "major_area": "Algebra & Functions",
+        "major_area": "Algebra and Functions",
         "topic": "Polynomials",
-        "subtopic": [
-            "Factor Theorem"
-        ],
+        "subtopic": ["Factor Theorem"],
         "img": false,
         "question": "Let $\\text{f}(x) = 2x^3 - kx^2 + 5x + 3k$.<br>Given that $(x - 2)$ is a factor of $\\text{f}(x)$, find the value of the constant $k$.",
         "steps": [
             "According to the <strong>Factor Theorem</strong>, if $(x - 2)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = 2$ must equal zero: $\\text{f}(2) = 0$.",
-            "We substitute $x = 2$ into the expression for $\\text{f}(x)$:<br>$$\\text{f}(2) = 2(2)^3 - k(2)^2 + 5(2) + 3k$$",
-            "Evaluating the powers and simplifying each term gives:<br>$$\\text{f}(2) = 2(8) - 4k + 10 + 3k$$<br>$$\\text{f}(2) = 16 - 4k + 10 + 3k$$",
-            "Combining the numerical terms and the $k$ terms yields:<br>$$(16 + 10) + (-4k + 3k) = 0$$<br>$$26 - k = 0$$",
-            "Solving this linear equation gives our final value for $k$:<br>$$k = 26$$",
-            "Final Answer: $$k = 26$$"
+            "Substitute $x = 2$ into the expression for $\\text{f}(x)$:<br>$\\text{f}(2) = 2(2)^3 - k(2)^2 + 5(2) + 3k$",
+            "Evaluating the powers and simplifying each term gives:<br>$\\begin{aligned} \\text{f}(2) &= 2(8) - 4k + 10 + 3k \\cr \\text{f}(2) &= 16 - 4k + 10 + 3k \\end{aligned}$",
+            "Combining the numerical terms and the $k$ terms yields:<br>$\\begin{aligned} (16 + 10) + (-4k + 3k) &= 0 \\cr 26 - k &= 0 \\end{aligned}$",
+            "Solving this linear equation gives our final value for $k$:<br>$k = 26$",
+            "Final Answer: $k = 26$"
         ],
         "pi_options": [
             {
-                "ans": "$$k = -26$$",
+                "ans": "$k = -26$",
                 "feedback": "You evaluated $\\text{f}(-2) = 0$ instead of $\\text{f}(2) = 0$. Since the linear factor is $(x - 2)$, the corresponding root to substitute is $x = 2$, not $x = -2$."
             },
             {
-                "ans": "$$k = -13$$",
+                "ans": "$k = -13$",
                 "feedback": "You forgot to square the $x$-value when multiplying by $k$, evaluating the $-kx^2$ term as simply $-k$. Remember that at $x=2$, $-kx^2$ becomes $-k(2)^2 = -4k$."
             },
             {
-                "ans": "$$k = 24$$",
+                "ans": "$k = 24$",
                 "feedback": "It appears you set $\\text{f}(2) = 2$ instead of $\\text{f}(2) = 0$. Since $(x - 2)$ is a *factor*, the remainder must be exactly zero according to the Factor Theorem."
             }
         ],
@@ -42,32 +41,30 @@ window.ALEVEL_QUESTIONS = [
         "id": "004002",
         "board": "Pearson Edexcel",
         "level": "AS",
-        "major_area": "Algebra & Functions",
+        "major_area": "Algebra and Functions",
         "topic": "Polynomials",
-        "subtopic": [
-            "Factor Theorem"
-        ],
+        "subtopic": ["Factor Theorem"],
         "img": false,
         "question": "Let $\\text{f}(x) = 4x^3 + ax^2 - 7x + 2a$.<br>Given that $(x + 2)$ is a factor of $\\text{f}(x)$, find the value of the constant $a$.",
         "steps": [
             "According to the <strong>Factor Theorem</strong>, if $(x + 2)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = -2$ must equal zero: $\\text{f}(-2) = 0$.",
-            "We substitute $x = -2$ into the expression for $\\text{f}(x)$:<br>$$\\text{f}(-2) = 4(-2)^3 + a(-2)^2 - 7(-2) + 2a$$",
-            "Evaluating the powers and simplifying each term (keeping close track of negative signs) gives:<br>$$\\text{f}(-2) = 4(-8) + a(4) + 14 + 2a$$<br>$$\\text{f}(-2) = -32 + 4a + 14 + 2a$$",
-            "Combining the numerical terms and the $a$ terms yields:<br>$$(-32 + 14) + (4a + 2a) = 0$$<br>$$-18 + 6a = 0$$",
-            "Solving this linear equation gives our final value for $a$:<br>$$6a = 18 \\implies a = 3$$",
-            "Final Answer: $$a = 3$$"
+            "Substitute $x = -2$ into the expression for $\\text{f}(x)$:<br>$\\text{f}(-2) = 4(-2)^3 + a(-2)^2 - 7(-2) + 2a$",
+            "Evaluating the powers and simplifying each term (keeping close track of negative signs) gives:<br>$\\begin{aligned} \\text{f}(-2) &= 4(-8) + a(4) + 14 + 2a \\cr \\text{f}(-2) &= -32 + 4a + 14 + 2a \\end{aligned}$",
+            "Combining the numerical terms and the $a$ terms yields:<br>$\\begin{aligned} (-32 + 14) + (4a + 2a) &= 0 \\cr -18 + 6a &= 0 \\end{aligned}$",
+            "Solving this linear equation gives our final value for $a$:<br>$6a = 18 \\implies a = 3$",
+            "Final Answer: $a = 3$"
         ],
         "pi_options": [
             {
-                "ans": "$$a = -3$$",
+                "ans": "$a = -3$",
                 "feedback": "You evaluated $\\text{f}(2) = 0$ instead of $\\text{f}(-2) = 0$. Since the linear factor is $(x + 2)$, the corresponding root to substitute is $x = -2$, not $x = 2$."
             },
             {
-                "ans": "$$a = \\dfrac{23}{3}$$",
+                "ans": "$a = \\dfrac{23}{3}$",
                 "feedback": "Check your signs during substitution. You likely evaluated the term $-7(-2)$ as $-14$ instead of $+14$. Multiplying two negative numbers yields a positive product."
             },
             {
-                "ans": "$$a = -9$$",
+                "ans": "$a = -9$",
                 "feedback": "Be careful when squaring negative numbers. $(-2)^2 = +4$, not $-4$. Any real number squared is always positive."
             }
         ],
@@ -75,9 +72,8 @@ window.ALEVEL_QUESTIONS = [
             "type": "caution",
             "title": "The Head Teacher's Eye: Negative Bases",
             "content": "When cubing and squaring negative numbers like $-2$, always write them inside brackets on your calculator: $(-2)^3 = -8$ and $(-2)^2 = 4$. Leaving brackets out can cause your calculator to evaluate $-2^2$ as $-4$, introducing a fatal sign error."
-        }
-    },
-    {
+        },
+        
         "id": "004003",
         "board": "Pearson Edexcel",
         "level": "AS",
