@@ -2029,6 +2029,6 @@ window.ALEVEL_QUESTIONS = [
             "title": "The Head Teacher's Eye: Visualising Inequalities",
             "content": "When analyzing whether an absolute value statement is always, sometimes, or never true, a quick mental sketch of the two functions $y = |Ax - B|$ and $y = x - C$ is incredibly helpful. It instantly reveals if the linear function ever crosses above the v-shaped absolute value boundary."
         }
-    },
+    }
 
 ];
