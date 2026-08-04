@@ -198,7 +198,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$\\mathbf{a} = \\begin{pmatrix} 2.5 \\\\ 3.5 \\\\ 0 \\end{pmatrix}$$",
-            "feedback": "This option is equal to the correct coordinates of the original exam paper's seed question. Make sure you use the updated vectors $B$ and $C$ for this Twin question, which yield $a = 1.5$ and $b = 2.5$."
+            "feedback": "This option arises if the midpoint of the base $BC$ is incorrectly calculated as $D(3, 3, 1)$ instead of $D(2, 2, 1)$. Setting up the height vector with this incorrect midpoint yields the squared height $2a^2 - 10a + 14$, which is minimised at $a = 2.5$ and $b = 3.5$."
         },
         {
             "ans": "$$\\mathbf{a} = \\begin{pmatrix} 3 \\\\ 4 \\\\ 0 \\end{pmatrix}$$",
