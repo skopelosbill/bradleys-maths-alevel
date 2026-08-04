@@ -1,5 +1,4 @@
 window.ALEVEL_QUESTIONS = [
-    [
     {
         "id": "004001",
         "board": "Pearson Edexcel",
