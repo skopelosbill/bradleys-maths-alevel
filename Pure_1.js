@@ -9,11 +9,11 @@ window.ALEVEL_QUESTIONS = [
             "Factor Theorem"
         ],
         "img": false,
-        "question": "Let $\\text{f}(x) = 2x^3 - kx^2 + 5x + 3k$.<br>Given that $(x - 2)$ is a factor of $\\text{f}(x)$, find the value of the constant $k$.",
+        "question": "Let $f(x) = 2x^3 - kx^2 + 5x + 3k$.<br>Given that $(x - 2)$ is a factor of $f(x)$, find the value of the constant $k$.",
         "steps": [
-            "According to the <strong>Factor Theorem</strong>, if $(x - 2)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = 2$ must equal zero: $\\text{f}(2) = 0$.",
-            "We substitute $x = 2$ into the expression for $\\text{f}(x)$:<br>$$\\text{f}(2) = 2(2)^3 - k(2)^2 + 5(2) + 3k$$",
-            "Evaluating the powers and simplifying each term gives:<br>$$\\text{f}(2) = 2(8) - 4k + 10 + 3k$$<br>$$\\text{f}(2) = 16 - 4k + 10 + 3k$$",
+            "According to the <strong>Factor Theorem</strong>, if $(x - 2)$ is a factor of $f(x)$, then evaluating the polynomial at $x = 2$ must equal zero: $f(2) = 0$.",
+            "We substitute $x = 2$ into the expression for $f(x)$:<br>$$f(2) = 2(2)^3 - k(2)^2 + 5(2) + 3k$$",
+            "Evaluating the powers and simplifying each term gives:<br>$$f(2) = 2(8) - 4k + 10 + 3k$$<br>$$f(2) = 16 - 4k + 10 + 3k$$",
             "Combining the numerical terms and the $k$ terms yields:<br>$$(16 + 10) + (-4k + 3k) = 0$$<br>$$26 - k = 0$$",
             "Solving this linear equation gives our final value for $k$:<br>$$k = 26$$",
             "Final Answer: $$k = 26$$"
@@ -21,7 +21,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$$k = -26$$",
-                "feedback": "You evaluated $\\text{f}(-2) = 0$ instead of $\\text{f}(2) = 0$. Since the linear factor is $(x - 2)$, the corresponding root to substitute is $x = 2$, not $x = -2$."
+                "feedback": "You evaluated $f(-2) = 0$ instead of $f(2) = 0$. Since the linear factor is $(x - 2)$, the corresponding root to substitute is $x = 2$, not $x = -2$."
             },
             {
                 "ans": "$$k = -13$$",
@@ -29,7 +29,7 @@ window.ALEVEL_QUESTIONS = [
             },
             {
                 "ans": "$$k = 24$$",
-                "feedback": "It appears you set $\\text{f}(2) = 2$ instead of $\\text{f}(2) = 0$. Since $(x - 2)$ is a *factor*, the remainder must be exactly zero according to the Factor Theorem."
+                "feedback": "It appears you set $f(2) = 2$ instead of $f(2) = 0$. Since $(x - 2)$ is a *factor*, the remainder must be exactly zero according to the Factor Theorem."
             }
         ],
         "bradley_insight": {
@@ -48,11 +48,11 @@ window.ALEVEL_QUESTIONS = [
             "Factor Theorem"
         ],
         "img": false,
-        "question": "Let $\\text{f}(x) = 4x^3 + ax^2 - 7x + 2a$.<br>Given that $(x + 2)$ is a factor of $\\text{f}(x)$, find the value of the constant $a$.",
+        "question": "Let $f(x) = 4x^3 + ax^2 - 7x + 2a$.<br>Given that $(x + 2)$ is a factor of $f(x)$, find the value of the constant $a$.",
         "steps": [
-            "According to the <strong>Factor Theorem</strong>, if $(x + 2)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = -2$ must equal zero: $\\text{f}(-2) = 0$.",
-            "We substitute $x = -2$ into the expression for $\\text{f}(x)$:<br>$$\\text{f}(-2) = 4(-2)^3 + a(-2)^2 - 7(-2) + 2a$$",
-            "Evaluating the powers and simplifying each term (keeping close track of negative signs) gives:<br>$$\\text{f}(-2) = 4(-8) + a(4) + 14 + 2a$$<br>$$\\text{f}(-2) = -32 + 4a + 14 + 2a$$",
+            "According to the <strong>Factor Theorem</strong>, if $(x + 2)$ is a factor of $f(x)$, then evaluating the polynomial at $x = -2$ must equal zero: $f(-2) = 0$.",
+            "We substitute $x = -2$ into the expression for $f(x)$:<br>$$f(-2) = 4(-2)^3 + a(-2)^2 - 7(-2) + 2a$$",
+            "Evaluating the powers and simplifying each term (keeping close track of negative signs) gives:<br>$$f(-2) = 4(-8) + a(4) + 14 + 2a$$<br>$$f(-2) = -32 + 4a + 14 + 2a$$",
             "Combining the numerical terms and the $a$ terms yields:<br>$$(-32 + 14) + (4a + 2a) = 0$$<br>$$-18 + 6a = 0$$",
             "Solving this linear equation gives our final value for $a$:<br>$$6a = 18 \\implies a = 3$$",
             "Final Answer: $$a = 3$$"
@@ -60,7 +60,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$$a = -3$$",
-                "feedback": "You evaluated $\\text{f}(2) = 0$ instead of $\\text{f}(-2) = 0$. Since the linear factor is $(x + 2)$, the corresponding root to substitute is $x = -2$, not $x = 2$."
+                "feedback": "You evaluated $f(2) = 0$ instead of $f(-2) = 0$. Since the linear factor is $(x + 2)$, the corresponding root to substitute is $x = -2$, not $x = 2$."
             },
             {
                 "ans": "$$a = \\dfrac{23}{3}$$",
@@ -87,11 +87,11 @@ window.ALEVEL_QUESTIONS = [
             "Factor Theorem"
         ],
         "img": false,
-        "question": "Let $\\text{f}(x) = 3x^3 - 2kx^2 + 5x + 4k$.<br>Given that $(x - 1)$ is a factor of $\\text{f}(x)$, find the value of the constant $k$.",
+        "question": "Let $f(x) = 3x^3 - 2kx^2 + 5x + 4k$.<br>Given that $(x - 1)$ is a factor of $f(x)$, find the value of the constant $k$.",
         "steps": [
-            "According to the <strong>Factor Theorem</strong>, if $(x - 1)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = 1$ must equal zero: $\\text{f}(1) = 0$.",
-            "We substitute $x = 1$ into the expression for $\\text{f}(x)$:<br>$$\\text{f}(1) = 3(1)^3 - 2k(1)^2 + 5(1) + 4k$$",
-            "Simplifying the powers and combining terms gives:<br>$$\\text{f}(1) = 3 - 2k + 5 + 4k$$",
+            "According to the <strong>Factor Theorem</strong>, if $(x - 1)$ is a factor of $f(x)$, then evaluating the polynomial at $x = 1$ must equal zero: $f(1) = 0$.",
+            "We substitute $x = 1$ into the expression for $f(x)$:<br>$$f(1) = 3(1)^3 - 2k(1)^2 + 5(1) + 4k$$",
+            "Simplifying the powers and combining terms gives:<br>$$f(1) = 3 - 2k + 5 + 4k$$",
             "Combining the constant terms and the $k$ terms yields:<br>$$(3 + 5) + (-2k + 4k) = 0$$<br>$$8 + 2k = 0$$",
             "Solving this linear equation gives our final value for $k$:<br>$$2k = -8 \\implies k = -4$$",
             "Final Answer: $$k = -4$$"
@@ -99,7 +99,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$$k = 4$$",
-                "feedback": "You evaluated $\\text{f}(-1) = 0$ instead of $\\text{f}(1) = 0$. Since the linear factor is $(x - 1)$, the root is $x = 1$."
+                "feedback": "You evaluated $f(-1) = 0$ instead of $f(1) = 0$. Since the linear factor is $(x - 1)$, the root is $x = 1$."
             },
             {
                 "ans": "$$k = -\\dfrac{4}{3}$$",
@@ -126,11 +126,11 @@ window.ALEVEL_QUESTIONS = [
             "Factor Theorem"
         ],
         "img": false,
-        "question": "Let $\\text{f}(x) = 2x^3 - ax^2 - 8x + 3a$.<br>Given that $(x - 3)$ is a factor of $\\text{f}(x)$, find the value of the constant $a$.",
+        "question": "Let $f(x) = 2x^3 - ax^2 - 8x + 3a$.<br>Given that $(x - 3)$ is a factor of $f(x)$, find the value of the constant $a$.",
         "steps": [
-            "According to the <strong>Factor Theorem</strong>, if $(x - 3)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = 3$ must equal zero: $\\text{f}(3) = 0$.",
-            "We substitute $x = 3$ into the expression for $\\text{f}(x)$:<br>$$\\text{f}(3) = 2(3)^3 - a(3)^2 - 8(3) + 3a$$",
-            "Evaluating the powers and simplifying each term gives:<br>$$\\text{f}(3) = 2(27) - 9a - 24 + 3a$$<br>$$\\text{f}(3) = 54 - 9a - 24 + 3a$$",
+            "According to the <strong>Factor Theorem</strong>, if $(x - 3)$ is a factor of $f(x)$, then evaluating the polynomial at $x = 3$ must equal zero: $f(3) = 0$.",
+            "We substitute $x = 3$ into the expression for $f(x)$:<br>$$f(3) = 2(3)^3 - a(3)^2 - 8(3) + 3a$$",
+            "Evaluating the powers and simplifying each term gives:<br>$$f(3) = 2(27) - 9a - 24 + 3a$$<br>$$f(3) = 54 - 9a - 24 + 3a$$",
             "Combining the constant terms and the $a$ terms yields:<br>$$(54 - 24) + (-9a + 3a) = 0$$<br>$$30 - 6a = 0$$",
             "Solving this linear equation gives our final value for $a$:<br>$$6a = 30 \\implies a = 5$$",
             "Final Answer: $$a = 5$$"
@@ -138,7 +138,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$$a = -5$$",
-                "feedback": "You evaluated $\\text{f}(-3) = 0$ instead of $\\text{f}(3) = 0$. Since the linear factor is $(x - 3)$, the root is $x = 3$."
+                "feedback": "You evaluated $f(-3) = 0$ instead of $f(3) = 0$. Since the linear factor is $(x - 3)$, the root is $x = 3$."
             },
             {
                 "ans": "$$a = 32$$",
@@ -165,11 +165,11 @@ window.ALEVEL_QUESTIONS = [
             "Factor Theorem"
         ],
         "img": false,
-        "question": "Let $\\text{f}(x) = 2x^3 + 3px^2 - 2x - 3p$.<br>Given that $(x + 3)$ is a factor of $\\text{f}(x)$, find the value of the constant $p$.",
+        "question": "Let $f(x) = 2x^3 + 3px^2 - 2x - 3p$.<br>Given that $(x + 3)$ is a factor of $f(x)$, find the value of the constant $p$.",
         "steps": [
-            "According to the <strong>Factor Theorem</strong>, if $(x + 3)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = -3$ must equal zero: $\\text{f}(-3) = 0$.",
-            "We substitute $x = -3$ into the expression for $\\text{f}(x)$:<br>$$\\text{f}(-3) = 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p$$",
-            "Evaluating the powers and simplifying each term (taking close care with negative signs) gives:<br>$$\\text{f}(-3) = 2(-27) + 3p(9) + 6 - 3p$$<br>$$\\text{f}(-3) = -54 + 27p + 6 - 3p$$",
+            "According to the <strong>Factor Theorem</strong>, if $(x + 3)$ is a factor of $f(x)$, then evaluating the polynomial at $x = -3$ must equal zero: $f(-3) = 0$.",
+            "We substitute $x = -3$ into the expression for $f(x)$:<br>$$f(-3) = 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p$$",
+            "Evaluating the powers and simplifying each term (taking close care with negative signs) gives:<br>$$f(-3) = 2(-27) + 3p(9) + 6 - 3p$$<br>$$f(-3) = -54 + 27p + 6 - 3p$$",
             "Combining the numerical terms and the $p$ terms yields:<br>$$(-54 + 6) + (27p - 3p) = 0$$<br>$$-48 + 24p = 0$$",
             "Solving this linear equation gives our final value for $p$:<br>$$24p = 48 \\implies p = 2$$",
             "Final Answer: $$p = 2$$"
@@ -177,7 +177,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$$p = -2$$",
-                "feedback": "You evaluated $\\text{f}(3) = 0$ instead of $\\text{f}(-3) = 0$. Since the linear factor is $(x + 3)$, you must substitute $x = -3$."
+                "feedback": "You evaluated $f(3) = 0$ instead of $f(-3) = 0$. Since the linear factor is $(x + 3)$, you must substitute $x = -3$."
             },
             {
                 "ans": "$$p = 2.5$$",
@@ -805,19 +805,19 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$$\\text{f}(x) = 3x^2 + 6x + 8 \\quad x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write $\\text{f}(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\text{f}(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\text{f}(x)$ onto the curve with equation $y = \\text{g}(x)$ where:<br>$$\\text{g}(x) = 3(x-2)^2 + 6x - 7 \\quad x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$\\text{h}(x) = \\dfrac{15}{3x^2 + 6x + 8} \\quad x \\in \\mathbb{R}$$",
+        "question": "$$f(x) = 3x^2 + 6x + 8 \\quad x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write $f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = \\text{g}(x)$ where:<br>$$\\text{g}(x) = 3(x-2)^2 + 6x - 7 \\quad x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$\\text{h}(x) = \\dfrac{15}{3x^2 + 6x + 8} \\quad x \\in \\mathbb{R}$$",
         "steps": [
-            "<strong>Part (a):</strong> We complete the square by first factorising out the $3$ from the quadratic and linear terms:<br>$$\\text{f}(x) = 3(x^2 + 2x) + 8$$<br>$$\\text{f}(x) = 3\\left[(x+1)^2 - 1^2\\right] + 8$$<br>$$\\text{f}(x) = 3(x+1)^2 - 3 + 8$$<br>$$\\text{f}(x) = 3(x+1)^2 + 5$$<br>Therefore, the constants are $a = 3$, $b = 1$, and $c = 5$.",
-            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $\\text{f}(0) = 8$, so the curve crosses the $y$-axis at $(0, 8)$.<br>3. <strong>$x$-intercepts:</strong> Setting $3x^2+6x+8 = 0$, the discriminant is $\\Delta = 6^2 - 4(3)(8) = -60 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004021_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (a):</strong> We complete the square by first factorising out the $3$ from the quadratic and linear terms:<br>$$f(x) = 3(x^2 + 2x) + 8$$<br>$$f(x) = 3\\left[(x+1)^2 - 1^2\\right] + 8$$<br>$$f(x) = 3(x+1)^2 - 3 + 8$$<br>$$f(x) = 3(x+1)^2 + 5$$<br>Therefore, the constants are $a = 3$, $b = 1$, and $c = 5$.",
+            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $f(0) = 8$, so the curve crosses the $y$-axis at $(0, 8)$.<br>3. <strong>$x$-intercepts:</strong> Setting $3x^2+6x+8 = 0$, the discriminant is $\\Delta = 6^2 - 4(3)(8) = -60 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004021_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x)$ to find its vertex:<br>$$\\text{g}(x) = 3(x^2 - 4x + 4) + 6x - 7$$<br>$$\\text{g}(x) = 3x^2 - 12x + 12 + 6x - 7 = 3x^2 - 6x + 5$$<br>$$\\text{g}(x) = 3(x^2 - 2x) + 5 = 3\\left[(x-1)^2 - 1\\right] + 5$$<br>$$\\text{g}(x) = 3(x-1)^2 + 2$$",
-            "The vertex of $\\text{f}(x)$ is at $(-1, 5)$ and the vertex of $\\text{g}(x)$ is at $(1, 2)$.<br>To map $(-1, 5)$ onto $(1, 2)$, we shift $+2$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$</strong>.",
+            "The vertex of $f(x)$ is at $(-1, 5)$ and the vertex of $\\text{g}(x)$ is at $(1, 2)$.<br>To map $(-1, 5)$ onto $(1, 2)$, we shift $+2$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x)$ using our completed square form of the denominator:<br>$$\\text{h}(x) = \\dfrac{15}{3(x+1)^2 + 5}$$<br>Since the minimum value of the denominator is $5$ (when $x = -1$), the maximum value of the fraction is $\\frac{15}{5} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 3$</strong>.",
             "Final Answer: <strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} -2 \\\\\\ 3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+2$. Moving from $y = 5$ to $y = 2$ is a vertical shift of $-3$. This gives the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$."
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $f(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+2$. Moving from $y = 5$ to $y = 2$ is a vertical shift of $-3$. This gives the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$."
             },
             {
                 "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 3$$",
@@ -831,7 +831,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Range of Reciprocals",
-            "content": "To find the range of a reciprocal function like $\\text{h}(x) = \\frac{K}{\\text{f}(x)}$, remember that the maximum value of the function occurs when its denominator is at its absolute minimum. Use your completed square form from part (a) to read off the minimum value of $\\text{f}(x)$ instantly."
+            "content": "To find the range of a reciprocal function like $\\text{h}(x) = \\frac{K}{f(x)}$, remember that the maximum value of the function occurs when its denominator is at its absolute minimum. Use your completed square form from part (a) to read off the minimum value of $f(x)$ instantly."
         }
     },
     {
@@ -845,19 +845,19 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$$\\text{f}(x) = 2x^2 + 8x + 12 \\quad x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write $\\text{f}(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\text{f}(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\text{f}(x)$ onto the curve with equation $y = \\text{g}(x)$ where:<br>$$\\text{g}(x) = 2(x-3)^2 + 8x - 15 \\quad x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$\\text{h}(x) = \\dfrac{12}{2x^2 + 8x + 12} \\quad x \\in \\mathbb{R}$$",
+        "question": "$$f(x) = 2x^2 + 8x + 12 \\quad x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write $f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = \\text{g}(x)$ where:<br>$$\\text{g}(x) = 2(x-3)^2 + 8x - 15 \\quad x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$\\text{h}(x) = \\dfrac{12}{2x^2 + 8x + 12} \\quad x \\in \\mathbb{R}$$",
         "steps": [
-            "<strong>Part (a):</strong> We complete the square by first factorising out the $2$ from the quadratic and linear terms:<br>$$\\text{f}(x) = 2(x^2 + 4x) + 12$$<br>$$\\text{f}(x) = 2\\left[(x+2)^2 - 2^2\\right] + 12$$<br>$$\\text{f}(x) = 2(x+2)^2 - 8 + 12$$<br>$$\\text{f}(x) = 2(x+2)^2 + 4$$<br>Therefore, the constants are $a = 2$, $b = 2$, and $c = 4$.",
-            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-2, 4)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $\\text{f}(0) = 12$, so the curve crosses the $y$-axis at $(0, 12)$.<br>3. <strong>$x$-intercepts:</strong> Setting $2x^2+8x+12 = 0$, the discriminant is $\\Delta = 8^2 - 4(2)(12) = -32 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004022_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (a):</strong> We complete the square by first factorising out the $2$ from the quadratic and linear terms:<br>$$f(x) = 2(x^2 + 4x) + 12$$<br>$$f(x) = 2\\left[(x+2)^2 - 2^2\\right] + 12$$<br>$$f(x) = 2(x+2)^2 - 8 + 12$$<br>$$f(x) = 2(x+2)^2 + 4$$<br>Therefore, the constants are $a = 2$, $b = 2$, and $c = 4$.",
+            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-2, 4)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $f(0) = 12$, so the curve crosses the $y$-axis at $(0, 12)$.<br>3. <strong>$x$-intercepts:</strong> Setting $2x^2+8x+12 = 0$, the discriminant is $\\Delta = 8^2 - 4(2)(12) = -32 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004022_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x)$ to find its vertex:<br>$$\\text{g}(x) = 2(x^2 - 6x + 9) + 8x - 15$$<br>$$\\text{g}(x) = 2x^2 - 12x + 18 + 8x - 15 = 2x^2 - 4x + 3$$<br>$$\\text{g}(x) = 2(x^2 - 2x) + 3 = 2\\left[(x-1)^2 - 1\\right] + 3$$<br>$$\\text{g}(x) = 2(x-1)^2 + 1$$",
-            "The vertex of $\\text{f}(x)$ is at $(-2, 4)$ and the vertex of $\\text{g}(x)$ is at $(1, 1)$.<br>To map $(-2, 4)$ onto $(1, 1)$, we shift $+3$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$</strong>.",
+            "The vertex of $f(x)$ is at $(-2, 4)$ and the vertex of $\\text{g}(x)$ is at $(1, 1)$.<br>To map $(-2, 4)$ onto $(1, 1)$, we shift $+3$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x)$ using our completed square form of the denominator:<br>$$\\text{h}(x) = \\dfrac{12}{2(x+2)^2 + 4}$$<br>Since the minimum value of the denominator is $4$ (when $x = -2$), the maximum value of the fraction is $\\frac{12}{4} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 3$</strong>.",
             "Final Answer: <strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,4),\\\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,4),\\\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} -3 \\\\\\ 3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -2$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+3$. Moving from $y = 4$ to $y = 1$ is a vertical shift of $-3$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$."
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $f(x)$ at $x = -2$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+3$. Moving from $y = 4$ to $y = 1$ is a vertical shift of $-3$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$."
             },
             {
                 "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,4),\\\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 3$$",
@@ -885,19 +885,19 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$$\\text{f}(x) = 4x^2 + 8x + 7 \\quad x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write $\\text{f}(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\text{f}(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\text{f}(x)$ onto the curve with equation $y = \\text{g}(x)$ where:<br>$$\\text{g}(x) = 4(x-3)^2 + 8x - 19 \\quad x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$\\text{h}(x) = \\dfrac{15}{4x^2 + 8x + 7} \\quad x \\in \\mathbb{R}$$",
+        "question": "$$f(x) = 4x^2 + 8x + 7 \\quad x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write $f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = \\text{g}(x)$ where:<br>$$\\text{g}(x) = 4(x-3)^2 + 8x - 19 \\quad x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$\\text{h}(x) = \\dfrac{15}{4x^2 + 8x + 7} \\quad x \\in \\mathbb{R}$$",
         "steps": [
-            "<strong>Part (a):</strong> We complete the square by first factorising out the $4$ from the quadratic and linear terms:<br>$$\\text{f}(x) = 4(x^2 + 2x) + 7$$<br>$$\\text{f}(x) = 4\\left[(x+1)^2 - 1^2\\right] + 7$$<br>$$\\text{f}(x) = 4(x+1)^2 - 4 + 7$$<br>$$\\text{f}(x) = 4(x+1)^2 + 3$$<br>Therefore, the constants are $a = 4$, $b = 1$, and $c = 3$.",
-            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 3)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $\\text{f}(0) = 7$, so the curve crosses the $y$-axis at $(0, 7)$.<br>3. <strong>$x$-intercepts:</strong> Setting $4x^2+8x+7 = 0$, the discriminant is $\\Delta = 8^2 - 4(4)(7) = -48 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004023_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (a):</strong> We complete the square by first factorising out the $4$ from the quadratic and linear terms:<br>$$f(x) = 4(x^2 + 2x) + 7$$<br>$$f(x) = 4\\left[(x+1)^2 - 1^2\\right] + 7$$<br>$$f(x) = 4(x+1)^2 - 4 + 7$$<br>$$f(x) = 4(x+1)^2 + 3$$<br>Therefore, the constants are $a = 4$, $b = 1$, and $c = 3$.",
+            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 3)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $f(0) = 7$, so the curve crosses the $y$-axis at $(0, 7)$.<br>3. <strong>$x$-intercepts:</strong> Setting $4x^2+8x+7 = 0$, the discriminant is $\\Delta = 8^2 - 4(4)(7) = -48 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004023_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x)$ to find its vertex:<br>$$\\text{g}(x) = 4(x^2 - 6x + 9) + 8x - 19$$<br>$$\\text{g}(x) = 4x^2 - 24x + 36 + 8x - 19 = 4x^2 - 16x + 17$$<br>$$\\text{g}(x) = 4(x^2 - 4x) + 17 = 4\\left[(x-2)^2 - 4\\right] + 17$$<br>$$\\text{g}(x) = 4(x-2)^2 - 16 + 17$$<br>$$\\text{g}(x) = 4(x-2)^2 + 1$$",
-            "The vertex of $\\text{f}(x)$ is at $(-1, 3)$ and the vertex of $\\text{g}(x)$ is at $(2, 1)$.<br>To map $(-1, 3)$ onto $(2, 1)$, we shift $+3$ units horizontally and $-2$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$</strong>.",
+            "The vertex of $f(x)$ is at $(-1, 3)$ and the vertex of $\\text{g}(x)$ is at $(2, 1)$.<br>To map $(-1, 3)$ onto $(2, 1)$, we shift $+3$ units horizontally and $-2$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x)$ using our completed square form of the denominator:<br>$$\\text{h}(x) = \\dfrac{15}{4(x+1)^2 + 3}$$<br>Since the minimum value of the denominator is $3$ (when $x = -1$), the maximum value of the fraction is $\\frac{15}{3} = 5$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 5$</strong>.",
             "Final Answer: <strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,3),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 5$$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,3),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} -3 \\\\\\ 2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 5$$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 2$ is a horizontal shift of $+3$. Moving from $y = 3$ to $y = 1$ is a vertical shift of $-2$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$."
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $f(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 2$ is a horizontal shift of $+3$. Moving from $y = 3$ to $y = 1$ is a vertical shift of $-2$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$."
             },
             {
                 "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,3),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 5$$",
@@ -925,19 +925,19 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$$\\text{f}(x) = 3x^2 + 12x + 18 \\quad x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write $\\text{f}(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\text{f}(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\text{f}(x)$ onto the curve with equation $y = \\text{g}(x)$ where:<br>$$\\text{g}(x) = 3(x-3)^2 + 12x - 22 \\quad x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$\\text{h}(x) = \\dfrac{24}{3x^2 + 12x + 18} \\quad x \\in \\mathbb{R}$$",
+        "question": "$$f(x) = 3x^2 + 12x + 18 \\quad x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write $f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = \\text{g}(x)$ where:<br>$$\\text{g}(x) = 3(x-3)^2 + 12x - 22 \\quad x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$\\text{h}(x) = \\dfrac{24}{3x^2 + 12x + 18} \\quad x \\in \\mathbb{R}$$",
         "steps": [
-            "<strong>Part (a):</strong> We complete the square by first factorising out the $3$ from the quadratic and linear terms:<br>$$\\text{f}(x) = 3(x^2 + 4x) + 18$$<br>$$\\text{f}(x) = 3\\left[(x+2)^2 - 2^2\\right] + 18$$<br>$$\\text{f}(x) = 3(x+2)^2 - 12 + 18$$<br>$$\\text{f}(x) = 3(x+2)^2 + 6$$<br>Therefore, the constants are $a = 3$, $b = 2$, and $c = 6$.",
-            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-2, 6)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $\\text{f}(0) = 18$, so the curve crosses the $y$-axis at $(0, 18)$.<br>3. <strong>$x$-intercepts:</strong> Setting $3x^2+12x+18 = 0$, the discriminant is $\\Delta = 12^2 - 4(3)(18) = -72 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004024_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (a):</strong> We complete the square by first factorising out the $3$ from the quadratic and linear terms:<br>$$f(x) = 3(x^2 + 4x) + 18$$<br>$$f(x) = 3\\left[(x+2)^2 - 2^2\\right] + 18$$<br>$$f(x) = 3(x+2)^2 - 12 + 18$$<br>$$f(x) = 3(x+2)^2 + 6$$<br>Therefore, the constants are $a = 3$, $b = 2$, and $c = 6$.",
+            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-2, 6)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $f(0) = 18$, so the curve crosses the $y$-axis at $(0, 18)$.<br>3. <strong>$x$-intercepts:</strong> Setting $3x^2+12x+18 = 0$, the discriminant is $\\Delta = 12^2 - 4(3)(18) = -72 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004024_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x)$ to find its vertex:<br>$$\\text{g}(x) = 3(x^2 - 6x + 9) + 12x - 22$$<br>$$\\text{g}(x) = 3x^2 - 18x + 27 + 12x - 22 = 3x^2 - 6x + 5$$<br>$$\\text{g}(x) = 3(x^2 - 2x) + 5 = 3\\left[(x-1)^2 - 1\\right] + 5$$<br>$$\\text{g}(x) = 3(x-1)^2 - 3 + 5$$<br>$$\\text{g}(x) = 3(x-1)^2 + 2$$",
-            "The vertex of $\\text{f}(x)$ is at $(-2, 6)$ and the vertex of $\\text{g}(x)$ is at $(1, 2)$.<br>To map $(-2, 6)$ onto $(1, 2)$, we shift $+3$ units horizontally and $-4$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$</strong>.",
+            "The vertex of $f(x)$ is at $(-2, 6)$ and the vertex of $\\text{g}(x)$ is at $(1, 2)$.<br>To map $(-2, 6)$ onto $(1, 2)$, we shift $+3$ units horizontally and $-4$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x)$ using our completed square form of the denominator:<br>$$\\text{h}(x) = \\dfrac{24}{3(x+2)^2 + 6}$$<br>Since the minimum value of the denominator is $6$ (when $x = -2$), the maximum value of the fraction is $\\frac{24}{6} = 4$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 4$</strong>.",
             "Final Answer: <strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,6),\\\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 4$$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,6),\\\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} -3 \\\\\\ 4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 4$$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -2$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+3$. Moving from $y = 6$ to $y = 2$ is a vertical shift of $-4$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$."
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $f(x)$ at $x = -2$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+3$. Moving from $y = 6$ to $y = 2$ is a vertical shift of $-4$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$."
             },
             {
                 "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,6),\\\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 4$$",
@@ -965,19 +965,19 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$$\\text{f}(x) = 2x^2 + 4x + 7 \\quad x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write $\\text{f}(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\text{f}(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\text{f}(x)$ onto the curve with equation $y = \\text{g}(x)$ where:<br>$$\\text{g}(x) = 2(x-3)^2 + 4x - 9 \\quad x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$\\text{h}(x) = \\dfrac{10}{2x^2 + 4x + 7} \\quad x \\in \\mathbb{R}$$",
+        "question": "$$f(x) = 2x^2 + 4x + 7 \\quad x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write $f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = \\text{g}(x)$ where:<br>$$\\text{g}(x) = 2(x-3)^2 + 4x - 9 \\quad x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$\\text{h}(x) = \\dfrac{10}{2x^2 + 4x + 7} \\quad x \\in \\mathbb{R}$$",
         "steps": [
-            "<strong>Part (a):</strong> We complete the square by first factorising out the $2$ from the quadratic and linear terms:<br>$$\\text{f}(x) = 2(x^2 + 2x) + 7$$<br>$$\\text{f}(x) = 2\\left[(x+1)^2 - 1^2\\right] + 7$$<br>$$\\text{f}(x) = 2(x+1)^2 - 2 + 7$$<br>$$\\text{f}(x) = 2(x+1)^2 + 5$$<br>Therefore, the constants are $a = 2$, $b = 1$, and $c = 5$.",
-            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $\\text{f}(0) = 7$, so the curve crosses the $y$-axis at $(0, 7)$.<br>3. <strong>$x$-intercepts:</strong> Setting $2x^2+4x+7 = 0$, the discriminant is $\\Delta = 4^2 - 4(2)(7) = -40 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004025_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (a):</strong> We complete the square by first factorising out the $2$ from the quadratic and linear terms:<br>$$f(x) = 2(x^2 + 2x) + 7$$<br>$$f(x) = 2\\left[(x+1)^2 - 1^2\\right] + 7$$<br>$$f(x) = 2(x+1)^2 - 2 + 7$$<br>$$f(x) = 2(x+1)^2 + 5$$<br>Therefore, the constants are $a = 2$, $b = 1$, and $c = 5$.",
+            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $f(0) = 7$, so the curve crosses the $y$-axis at $(0, 7)$.<br>3. <strong>$x$-intercepts:</strong> Setting $2x^2+4x+7 = 0$, the discriminant is $\\Delta = 4^2 - 4(2)(7) = -40 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004025_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x)$ to find its vertex:<br>$$\\text{g}(x) = 2(x^2 - 6x + 9) + 4x - 9$$<br>$$\\text{g}(x) = 2x^2 - 12x + 18 + 4x - 9 = 2x^2 - 8x + 9$$<br>$$\\text{g}(x) = 2(x^2 - 4x) + 9 = 2\\left[(x-2)^2 - 4\\right] + 9$$<br>$$\\text{g}(x) = 2(x-2)^2 - 8 + 9$$<br>$$\\text{g}(x) = 2(x-2)^2 + 1$$",
-            "The vertex of $\\text{f}(x)$ is at $(-1, 5)$ and the vertex of $\\text{g}(x)$ is at $(2, 1)$.<br>To map $(-1, 5)$ onto $(2, 1)$, we shift $+3$ units horizontally and $-4$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$</strong>.",
+            "The vertex of $f(x)$ is at $(-1, 5)$ and the vertex of $\\text{g}(x)$ is at $(2, 1)$.<br>To map $(-1, 5)$ onto $(2, 1)$, we shift $+3$ units horizontally and $-4$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x)$ using our completed square form of the denominator:<br>$$\\text{h}(x) = \\dfrac{10}{2(x+1)^2 + 5}$$<br>Since the minimum value of the denominator is $5$ (when $x = -1$), the maximum value of the fraction is $\\frac{10}{5} = 2$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 2$</strong>.",
             "Final Answer: <strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 2$$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} -3 \\\\\\ 4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 2$$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\text{f}(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 2$ is a horizontal shift of $+3$. Moving from $y = 5$ to $y = 1$ is a vertical shift of $-4$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$."
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $f(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 2$ is a horizontal shift of $+3$. Moving from $y = 5$ to $y = 1$ is a vertical shift of $-4$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$."
             },
             {
                 "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 2$$",
