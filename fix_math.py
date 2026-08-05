@@ -3,10 +3,10 @@ import os
 
 # =====================================================
 # DRY_RUN MODE:
-# Set to True to preview the changes in your terminal without writing to the disk.
-# Set to False only when you are 100% happy with the terminal preview!
+# Set to True to generate the audit_report.txt without modifying your original files!
+# Set to False only when you are 100% happy with the report.
 # =====================================================
-DRY_RUN = True
+DRY_RUN = False
 
 def clean_line_by_line(filename):
     print(f"Scanning {filename} (DRY_RUN = {DRY_RUN})...\n")
@@ -22,6 +22,12 @@ def clean_line_by_line(filename):
     lines = content.split('\n')
     fixed_lines = []
     changes_count = 0
+    warnings_count = 0
+    
+    report_output = []
+    report_output.append("=====================================================")
+    report_output.append(f"AUDIT REPORT FOR {filename}")
+    report_output.append("=====================================================\n")
 
     for idx, line in enumerate(lines):
         original_line = line
@@ -29,37 +35,91 @@ def clean_line_by_line(filename):
         # We only process lines containing actual question, step, or distractor data
         if '"' in line or "'" in line:
             
-            # 1. Pull "Turning Point:" out of math mode
-            line = re.sub(r"\$Turning\s+Point:\s*([^$]+?)\$", r"Turning Point: $\1$", line, flags=re.IGNORECASE)
+            # -------------------------------------------------
+            # 1. THE AUTOMATED REPAIRS (Safe substitutions)
+            # -------------------------------------------------
             
-            # 2. Pull "y-intercept:" out of math mode and format 'y' in algebraic italics
+            # Pull "Turning Point:" out of math mode
+            line = re.sub(r"\$Turning\s+Point:\s*([^$]+?)\$", r"Turning Point: $\1$", line, flags=re.IGNORECASE)
+            line = re.sub(r"\$$Turning\s+Point:\s*([^$]+?)\$$", r"Turning Point: $$\1$$", line, flags=re.IGNORECASE)
+            
+            # Pull "y-intercept:" out of math mode
             line = re.sub(r"\$y-intercept:\s*([^$]+?)\$", r"$y$-intercept: $\1$", line, flags=re.IGNORECASE)
+            line = re.sub(r"\$$y-intercept:\s*([^$]+?)\$$", r"$y$-intercept: $$\1$$", line, flags=re.IGNORECASE)
 
-            # 3. Pull "Translation by" out of math mode
+            # Pull "Translation by" out of math mode
             line = re.sub(r"\$Translation\s+by\s*([^$]+?)\$", r"Translation by $\1$", line, flags=re.IGNORECASE)
+            line = re.sub(r"\$$Translation\s+by\s*([^$]+?)\$$", r"Translation by $$\1$$", line, flags=re.IGNORECASE)
 
-            # 4. Pull "Vector" out of math mode
+            # Pull "Vector" out of math mode
             line = re.sub(r"\$Vector\s*([^$]+?)\$", r"Vector $\1$", line, flags=re.IGNORECASE)
+            line = re.sub(r"\$$Vector\s*([^$]+?)\$$", r"Vector $$\1$$", line, flags=re.IGNORECASE)
 
-            # 5. Find loose matrices/binoms not wrapped in $ and wrap them
+            # Find loose matrices/binoms not wrapped in $ and wrap them
             line = re.sub(r"(?<!\$)(\\+begin\{pmatrix\}.*?\\+end\{pmatrix\})(?!\$)", r"$\1$", line)
-            line = re.sub(r"(?<!\$)(\\\\binom\{.*?\}\{.*?\})(?!\$)", r"$\1$", line)
+            line = re.sub(r"(?<!\$)(\\+binom\{.*?\}\{.*?\})(?!\$)", r"$\1$", line)
 
-            # 6. Heal any accidental double dollar signs ($$) created during regex merges
-            line = line.replace("$$", "$")
+            # -------------------------------------------------
+            # RULE F: AUTOMATED PURE-TEXT STRIPPER
+            # -------------------------------------------------
+            # Find all $...$ or $$...$$ blocks on this line
+            math_blocks = re.finditer(r"\${1,2}([^$]+?)\${1,2}", line)
+            for block in math_blocks:
+                math_full = block.group(0)      # e.g., "$Always true$"
+                math_content = block.group(1)   # e.g., "Always true"
+                
+                # We only strip if the math block contains NO mathematical operators, exponents, or backslashes
+                # This guarantees that actual equations like V = 15000(r)^t are kept safe!
+                if not re.search(r"[\^_\\]|==|<=|>=|<|>|=", math_content):
+                    # Strip the $ delimiters from this pure English phrase
+                    line = line.replace(math_full, math_content)
 
-        # If the line was changed, count it and print the diff
+            # -------------------------------------------------
+            # 2. THE TRAPPED TEXT AUDITOR
+            # -------------------------------------------------
+            math_blocks = re.finditer(r"\${1,2}([^$]+?)\${1,2}", line)
+            for block in math_blocks:
+                math_content = block.group(1)
+                
+                # Skip valid LaTeX text formatting environments
+                if '\\text' in math_content or '\\mathrm' in math_content:
+                    continue
+                
+                # Clean up before checking to avoid false positives
+                cleaned = re.sub(r"\\[A-Za-z]+", "", math_content)
+                cleaned = re.sub(r"[^A-Za-z\s]", "", cleaned)
+                
+                # Check for adjacent English words of 2+ letters
+                if re.search(r"\b[A-Za-z]{2,}\s+[A-Za-z]{2,}\b", cleaned):
+                    warnings_count += 1
+                    msg = f"⚠️  WARNING (Line {idx + 1}): Trapped text inside math block!\n" \
+                          f"   FOUND TEXT: {math_content.strip()}\n" \
+                          f"   FULL LINE : {line.strip()}\n"
+                    report_output.append(msg)
+
+        # If the line was changed by an automated repair, count it
         if line != original_line:
             changes_count += 1
-            if DRY_RUN:
-                print(f"--- Line {idx + 1} ---")
-                print(f"BEFORE: {original_line.strip()}")
-                print(f"AFTER : {line.strip()}\n")
+            msg = f"✅ REPAIR (Line {idx + 1})\n" \
+                  f"   BEFORE: {original_line.strip()}\n" \
+                  f"   AFTER : {line.strip()}\n"
+            report_output.append(msg)
 
         fixed_lines.append(line)
 
+    summary = "=====================================================\n" \
+              f"Total automated repairs: {changes_count}\n" \
+              f"Total trapped text warnings: {warnings_count}\n" \
+              "====================================================="
+    report_output.append(summary)
+
+    with open("audit_report.txt", "w", encoding="utf-8") as f_report:
+        f_report.write('\n'.join(report_output))
+
     print("=====================================================")
-    print(f"Total changes detected: {changes_count}")
+    print(f"Scan complete! Created 'audit_report.txt' in your folder.")
+    print(f"It contains all {changes_count} repairs and {warnings_count} warnings.")
+    print("You can open 'audit_report.txt' in VS Code to see every single line.")
     print("=====================================================")
 
     if not DRY_RUN:
