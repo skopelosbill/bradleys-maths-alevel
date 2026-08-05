@@ -2024,7 +2024,7 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-17| \\ge -5 \\implies 17 \\ge -5$, which is a true statement."
             },
             {
-                "ans": "<strong>(a)</strong> $$Proof\\\\ by\\\\ exhaustion\\\\ of\\\\ bounds\\\\ is\\\\ completed$$ <strong>(b)</strong> $$Sometimes\\\\ true$$",
+                "ans": "<strong>(a)</strong> $$\\text{Proof\\\\ by\\\\ exhaustion\\\\ of\\\\ bounds\\\\ is\\\\ completed}$$ <strong>(b)</strong> $$Sometimes\\\\ true$$",
                 "feedback": "The standard mathematical name for testing integer remainder cases is a proof by exhaustion (or proof by cases). Avoid using non-standard terms like 'exhaustion of bounds' on your exam script."
             }
         ],
