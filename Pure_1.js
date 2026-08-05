@@ -10,8 +10,8 @@ window.ALEVEL_QUESTIONS = [
         "question": "Let $\\f(x) = 2x^3 - kx^2 + 5x + 3k$.<br>Given that $(x - 2)$ is a factor of $\\f(x)$, find the value of the constant $k$.",
         "steps": [
             "According to the <strong>Factor Theorem</strong>, if $(x - 2)$ is a factor of $\\f(x)$, then evaluating the polynomial at $x = 2 must equal zero: $ $\\f(2) = 0$.",
-            "Substitute $x = 2$ into the expression for $\\f(x)$:<br>\\begin{aligned} \f(2) = 2(2)^3 - k(2)^2 + 5(2) + 3k \\end{aligned}",
-            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \f(2) &= 2(8) - 4k + 10 + 3k \\cr \f(2) &= 16 - 4k + 10 + 3k \\end{aligned}",
+            "Substitute $x = 2$ into the expression for $\\f(x)$:<br>\\begin{aligned} \\f(2) = 2(2)^3 - k(2)^2 + 5(2) + 3k \\end{aligned}",
+            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \\f(2) &= 2(8) - 4k + 10 + 3k \\cr \\f(2) &= 16 - 4k + 10 + 3k \\end{aligned}",
             "Combining the numerical terms and the $k terms yields: $<br>\\begin{aligned} (16 + 10) + (-4k + 3k) &= 0 \\cr 26 - k &= 0 \\end{aligned}",
             "Solving this linear equation gives our final value for $k$:<br>\\begin{aligned} k = 26 \\end{aligned}",
             "Final Answer: $k = 26$"
@@ -47,8 +47,8 @@ window.ALEVEL_QUESTIONS = [
         "question": "Let $\\f(x) = 4x^3 + ax^2 - 7x + 2a$.<br>Given that $(x + 2)$ is a factor of $\\f(x)$, find the value of the constant $a$.",
         "steps": [
             "According to the <strong>Factor Theorem</strong>, if $(x + 2)$ is a factor of $\\f(x)$, then evaluating the polynomial at $x = -2 must equal zero: $ $\\f(-2) = 0$.",
-            "Substitute $x = -2$ into the expression for $\\f(x)$:<br>\\begin{aligned} \f(-2) = 4(-2)^3 + a(-2)^2 - 7(-2) + 2a \\end{aligned}",
-            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \f(-2) &= 4(-8) + a(4) + 14 + 2a \\cr \f(-2) &= -32 + 4a + 14 + 2a \\end{aligned}",
+            "Substitute $x = -2$ into the expression for $\\f(x)$:<br>\\begin{aligned} \\f(-2) = 4(-2)^3 + a(-2)^2 - 7(-2) + 2a \\end{aligned}",
+            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \\f(-2) &= 4(-8) + a(4) + 14 + 2a \\cr \\f(-2) &= -32 + 4a + 14 + 2a \\end{aligned}",
             "Combining the numerical terms and the $a terms yields: $<br>\\begin{aligned} (-32 + 14) + (4a + 2a) &= 0 \\cr -18 + 6a &= 0 \\end{aligned}",
             "Solving this linear equation gives our final value for $a$:<br>\\begin{aligned} 6a = 18 \\implies a = 3 \\end{aligned}",
             "Final Answer: $a = 3$"
@@ -84,8 +84,8 @@ window.ALEVEL_QUESTIONS = [
         "question": "Let $\\f(x) = 3x^3 - 2kx^2 + 5x + 4k$.<br>Given that $(x - 1)$ is a factor of $\\f(x)$, find the value of the constant $k$.",
         "steps": [
             "According to the <strong>Factor Theorem</strong>, if $(x - 1)$ is a factor of $\\f(x)$, then evaluating the polynomial at $x = 1 must equal zero: $ $\\f(1) = 0$.",
-            "Substitute $x = 1$ into the expression for $\\f(x)$:<br>\\begin{aligned} \f(1) = 3(1)^3 - 2k(1)^2 + 5(1) + 4k \\end{aligned}",
-            "Simplifying the powers and combining terms gives:<br>\\begin{aligned} \f(1) = 3 - 2k + 5 + 4k \\end{aligned}",
+            "Substitute $x = 1$ into the expression for $\\f(x)$:<br>\\begin{aligned} \\f(1) = 3(1)^3 - 2k(1)^2 + 5(1) + 4k \\end{aligned}",
+            "Simplifying the powers and combining terms gives:<br>\\begin{aligned} \\f(1) = 3 - 2k + 5 + 4k \\end{aligned}",
             "Combine the constant terms and the $k terms: $<br>\\begin{aligned} (3 + 5) + (-2k + 4k) &= 0 \\cr 8 + 2k &= 0 \\end{aligned}",
             "Solving this linear equation gives our final value for $k$:<br>\\begin{aligned} 2k = -8 \\implies k = -4 \\end{aligned}",
             "Final Answer: $k = -4$"
@@ -121,8 +121,8 @@ window.ALEVEL_QUESTIONS = [
         "question": "Let $\\f(x) = 2x^3 - ax^2 - 8x + 3a$.<br>Given that $(x - 3)$ is a factor of $\\f(x)$, find the value of the constant $a$.",
         "steps": [
             "According to the <strong>Factor Theorem</strong>, if $(x - 3)$ is a factor of $\\f(x)$, then evaluating the polynomial at $x = 3 must equal zero: $ $\\f(3) = 0$.",
-            "Substitute $x = 3$ into the expression for $\\f(x)$:<br>\\begin{aligned} \f(3) = 2(3)^3 - a(3)^2 - 8(3) + 3a \\end{aligned}",
-            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \f(3) &= 2(27) - 9a - 24 + 3a \\cr \f(3) &= 54 - 9a - 24 + 3a \\end{aligned}",
+            "Substitute $x = 3$ into the expression for $\\f(x)$:<br>\\begin{aligned} \\f(3) = 2(3)^3 - a(3)^2 - 8(3) + 3a \\end{aligned}",
+            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \\f(3) &= 2(27) - 9a - 24 + 3a \\cr \\f(3) &= 54 - 9a - 24 + 3a \\end{aligned}",
             "Combine the constant terms and the $a terms: $<br>\\begin{aligned} (54 - 24) + (-9a + 3a) &= 0 \\cr 30 - 6a &= 0 \\end{aligned}",
             "Solving this linear equation gives our final value for $a$:<br>\\begin{aligned} 6a = 30 \\implies a = 5 \\end{aligned}",
             "Final Answer: $a = 5$"
@@ -158,8 +158,8 @@ window.ALEVEL_QUESTIONS = [
         "question": "Let $\\f(x) = 2x^3 + 3px^2 - 2x - 3p$.<br>Given that $(x + 3)$ is a factor of $\\f(x)$, find the value of the constant $p$.",
         "steps": [
             "According to the <strong>Factor Theorem</strong>, if $(x + 3)$ is a factor of $\\f(x)$, then evaluating the polynomial at $x = -3 must equal zero: $ $\\f(-3) = 0$.",
-            "Substitute $x = -3$ into the expression for $\\f(x)$:<br>\\begin{aligned} \f(-3) = 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p \\end{aligned}",
-            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \f(-3) &= 2(-27) + 3p(9) + 6 - 3p \\cr \f(-3) &= -54 + 27p + 6 - 3p \\end{aligned}",
+            "Substitute $x = -3$ into the expression for $\\f(x)$:<br>\\begin{aligned} \\f(-3) = 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p \\end{aligned}",
+            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \\f(-3) &= 2(-27) + 3p(9) + 6 - 3p \\cr \\f(-3) &= -54 + 27p + 6 - 3p \\end{aligned}",
             "Combine the numerical terms and the $p terms: $<br>\\begin{aligned} (-54 + 6) + (27p - 3p) &= 0 \\cr -48 + 24p &= 0 \\end{aligned}",
             "Solving this linear equation gives our final value for $p$:<br>\\begin{aligned} 24p = 48 \\implies p = 2 \\end{aligned}",
             "Final Answer: $p = 2$"
@@ -795,7 +795,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$\\f(x) = 3x^2 + 6x + 8 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 3(x-2)^2 + 6x - 7 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{15}{3x^2 + 6x + 8} \\quad x \\in \\mathbb{R}$",
+        "question": "$\\f(x) = 3x^2 + 6x + 8 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 3(x-2)^2 + 6x - 7 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{15}{3x^2 + 6x + 8} \\quad x \\in \\mathbb{R}$",
         "steps": [
             "<strong>Part (a):</strong> We complete the square by first factorising out the $3 from the quadratic and linear terms: $<br>$\\f(x) = 3(x^2 + 2x) + 8$<br>$\\f(x) = 3\\left[(x+1)^2 - 1^2\\right] + 8$<br>$\\f(x) = 3(x+1)^2 - 3 + 8$<br>$\\f(x) = 3(x+1)^2 + 5$<br>Therefore, the constants are $a = 3$, $b = 1$, and $c = 5$.",
             "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\f(0) = 8$, so the curve crosses the $y$-axis at $(0, 8)$.<br>3. <strong>$x-intercepts: $</strong> Setting $3x^2+6x+8 = 0$, the discriminant is $\\Delta = 6^2 - 4(3)(8) = -60 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004021_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
@@ -835,7 +835,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$\\f(x) = 2x^2 + 8x + 12 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 2(x-3)^2 + 8x - 15 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{12}{2x^2 + 8x + 12} \\quad x \\in \\mathbb{R}$",
+        "question": "$\\f(x) = 2x^2 + 8x + 12 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 2(x-3)^2 + 8x - 15 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{12}{2x^2 + 8x + 12} \\quad x \\in \\mathbb{R}$",
         "steps": [
             "<strong>Part (a):</strong> We complete the square by first factorising out the $2 from the quadratic and linear terms: $<br>$\\f(x) = 2(x^2 + 4x) + 12$<br>$\\f(x) = 2\\left[(x+2)^2 - 2^2\\right] + 12$<br>$\\f(x) = 2(x+2)^2 - 8 + 12$<br>$\\f(x) = 2(x+2)^2 + 4$<br>Therefore, the constants are $a = 2$, $b = 2$, and $c = 4$.",
             "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-2, 4)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\f(0) = 12$, so the curve crosses the $y$-axis at $(0, 12)$.<br>3. <strong>$x-intercepts: $</strong> Setting $2x^2+8x+12 = 0$, the discriminant is $\\Delta = 8^2 - 4(2)(12) = -32 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004022_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
@@ -875,7 +875,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$\\f(x) = 4x^2 + 8x + 7 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 4(x-3)^2 + 8x - 19 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{15}{4x^2 + 8x + 7} \\quad x \\in \\mathbb{R}$",
+        "question": "$\\f(x) = 4x^2 + 8x + 7 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 4(x-3)^2 + 8x - 19 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{15}{4x^2 + 8x + 7} \\quad x \\in \\mathbb{R}$",
         "steps": [
             "<strong>Part (a):</strong> We complete the square by first factorising out the $4 from the quadratic and linear terms: $<br>$\\f(x) = 4(x^2 + 2x) + 7$<br>$\\f(x) = 4\\left[(x+1)^2 - 1^2\\right] + 7$<br>$\\f(x) = 4(x+1)^2 - 4 + 7$<br>$\\f(x) = 4(x+1)^2 + 3$<br>Therefore, the constants are $a = 4$, $b = 1$, and $c = 3$.",
             "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 3)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\f(0) = 7$, so the curve crosses the $y$-axis at $(0, 7)$.<br>3. <strong>$x-intercepts: $</strong> Setting $4x^2+8x+7 = 0$, the discriminant is $\\Delta = 8^2 - 4(4)(7) = -48 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004023_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
@@ -915,7 +915,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$\\f(x) = 3x^2 + 12x + 18 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 3(x-3)^2 + 12x - 22 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{24}{3x^2 + 12x + 18} \\quad x \\in \\mathbb{R}$",
+        "question": "$\\f(x) = 3x^2 + 12x + 18 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 3(x-3)^2 + 12x - 22 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{24}{3x^2 + 12x + 18} \\quad x \\in \\mathbb{R}$",
         "steps": [
             "<strong>Part (a):</strong> We complete the square by first factorising out the $3 from the quadratic and linear terms: $<br>$\\f(x) = 3(x^2 + 4x) + 18$<br>$\\f(x) = 3\\left[(x+2)^2 - 2^2\\right] + 18$<br>$\\f(x) = 3(x+2)^2 - 12 + 18$<br>$\\f(x) = 3(x+2)^2 + 6$<br>Therefore, the constants are $a = 3$, $b = 2$, and $c = 6$.",
             "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-2, 6)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\f(0) = 18$, so the curve crosses the $y$-axis at $(0, 18)$.<br>3. <strong>$x-intercepts: $</strong> Setting $3x^2+12x+18 = 0$, the discriminant is $\\Delta = 12^2 - 4(3)(18) = -72 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004024_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
@@ -955,7 +955,7 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$\\f(x) = 2x^2 + 4x + 7 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 2(x-3)^2 + 4x - 9 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{10}{2x^2 + 4x + 7} \\quad x \\in \\mathbb{R}$",
+        "question": "$\\f(x) = 2x^2 + 4x + 7 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 2(x-3)^2 + 4x - 9 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{10}{2x^2 + 4x + 7} \\quad x \\in \\mathbb{R}$",
         "steps": [
             "<strong>Part (a):</strong> We complete the square by first factorising out the $2 from the quadratic and linear terms: $<br>$\\f(x) = 2(x^2 + 2x) + 7$<br>$\\f(x) = 2\\left[(x+1)^2 - 1^2\\right] + 7$<br>$\\f(x) = 2(x+1)^2 - 2 + 7$<br>$\\f(x) = 2(x+1)^2 + 5$<br>Therefore, the constants are $a = 2$, $b = 1$, and $c = 5$.",
             "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\f(0) = 7$, so the curve crosses the $y$-axis at $(0, 7)$.<br>3. <strong>$x-intercepts: $</strong> Setting $2x^2+4x+7 = 0$, the discriminant is $\\Delta = 4^2 - 4(2)(7) = -40 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004025_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
