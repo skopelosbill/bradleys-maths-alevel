@@ -1,5 +1,5 @@
 window.ALEVEL_QUESTIONS = [
-            {
+               {
         "id": "004001",
         "board": "Pearson Edexcel",
         "level": "AS",
@@ -48,7 +48,7 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "According to the <strong>Factor Theorem</strong>, if $(x + 2)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = -2$ must equal zero: $\\text{f}(-2) = 0$.",
             "Substitute $x = -2$ into the expression for $\\text{f}(x)$:<br>$\\text{f}(-2) = 4(-2)^3 + a(-2)^2 - 7(-2) + 2a$",
-            "Evaluating the powers and simplifying each term (keeping close track of negative signs) gives:<br>$\\begin{aligned} \\text{f}(-2) &= 4(-8) + a(4) + 14 + 2a \\cr \\text{f}(-2) &= -32 + 4a + 14 + 2a \\end{aligned}$",
+            "Evaluating the powers and simplifying each term gives:<br>$\\begin{aligned} \\text{f}(-2) &= 4(-8) + a(4) + 14 + 2a \\cr \\text{f}(-2) &= -32 + 4a + 14 + 2a \\end{aligned}$",
             "Combining the numerical terms and the $a$ terms yields:<br>$\\begin{aligned} (-32 + 14) + (4a + 2a) &= 0 \\cr -18 + 6a &= 0 \\end{aligned}$",
             "Solving this linear equation gives our final value for $a$:<br>$6a = 18 \\implies a = 3$",
             "Final Answer: $a = 3$"
@@ -159,7 +159,7 @@ window.ALEVEL_QUESTIONS = [
         "steps": [
             "According to the <strong>Factor Theorem</strong>, if $(x + 3)$ is a factor of $\\text{f}(x)$, then evaluating the polynomial at $x = -3$ must equal zero: $\\text{f}(-3) = 0$.",
             "Substitute $x = -3$ into the expression for $\\text{f}(x)$:<br>$\\text{f}(-3) = 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p$",
-            "Evaluating the powers and simplifying each term (taking close care with negative signs) gives:<br>$\\begin{aligned} \\text{f}(-3) &= 2(-27) + 3p(9) + 6 - 3p \\cr \\text{f}(-3) &= -54 + 27p + 6 - 3p \\end{aligned}$",
+            "Evaluating the powers and simplifying each term gives:<br>$\\begin{aligned} \\text{f}(-3) &= 2(-27) + 3p(9) + 6 - 3p \\cr \\text{f}(-3) &= -54 + 27p + 6 - 3p \\end{aligned}$",
             "Combine the numerical terms and the $p$ terms:<br>$\\begin{aligned} (-54 + 6) + (27p - 3p) &= 0 \\cr -48 + 24p &= 0 \\end{aligned}$",
             "Solving this linear equation gives our final value for $p$:<br>$24p = 48 \\implies p = 2$",
             "Final Answer: $p = 2$"
