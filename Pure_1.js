@@ -7,11 +7,11 @@ window.ALEVEL_QUESTIONS = [
         "topic": "Polynomials",
         "subtopic": ["Factor Theorem"],
         "img": false,
-        "question": "Let $\\f(x) = 2x^3 - kx^2 + 5x + 3k$.<br>Given that $(x - 2)$ is a factor of $\\f(x)$, find the value of the constant $k$.",
+        "question": "Let $\\\\f(x) = 2x^3 - kx^2 + 5x + 3k$.<br>Given that $(x - 2)$ is a factor of $\\\\f(x)$, find the value of the constant $k$.",
         "steps": [
-            "According to the <strong>Factor Theorem</strong>, if $(x - 2)$ is a factor of $\\f(x)$, then evaluating the polynomial at $x = 2 must equal zero: $ $\\f(2) = 0$.",
-            "Substitute $x = 2$ into the expression for $\\f(x)$:<br>\\begin{aligned} \\f(2) = 2(2)^3 - k(2)^2 + 5(2) + 3k \\end{aligned}",
-            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \\f(2) &= 2(8) - 4k + 10 + 3k \\cr \\f(2) &= 16 - 4k + 10 + 3k \\end{aligned}",
+            "According to the <strong>Factor Theorem</strong>, if $(x - 2)$ is a factor of $\\\\f(x)$, then evaluating the polynomial at $x = 2 must equal zero: $ $\\\\f(2) = 0$.",
+            "Substitute $x = 2$ into the expression for $\\\\f(x)$:<br>\\begin{aligned} \\\\f(2) = 2(2)^3 - k(2)^2 + 5(2) + 3k \\end{aligned}",
+            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \\\\f(2) &= 2(8) - 4k + 10 + 3k \\cr \\\\f(2) &= 16 - 4k + 10 + 3k \\end{aligned}",
             "Combining the numerical terms and the $k terms yields: $<br>\\begin{aligned} (16 + 10) + (-4k + 3k) &= 0 \\cr 26 - k &= 0 \\end{aligned}",
             "Solving this linear equation gives our final value for $k$:<br>\\begin{aligned} k = 26 \\end{aligned}",
             "Final Answer: $k = 26$"
@@ -19,7 +19,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$k = -26$",
-                "feedback": "You evaluated $\\f(-2) = 0$ instead of $\\f(2) = 0$. Since the linear factor is $(x - 2)$, the corresponding root to substitute is $x = 2$, not $x = -2$."
+                "feedback": "You evaluated $\\\\f(-2) = 0$ instead of $\\\\f(2) = 0$. Since the linear factor is $(x - 2)$, the corresponding root to substitute is $x = 2$, not $x = -2$."
             },
             {
                 "ans": "$k = -13$",
@@ -27,7 +27,7 @@ window.ALEVEL_QUESTIONS = [
             },
             {
                 "ans": "$k = 24$",
-                "feedback": "It appears you set $\\f(2) = 2$ instead of $\\f(2) = 0$. Since $(x - 2)$ is a *factor*, the remainder must be exactly zero according to the Factor Theorem."
+                "feedback": "It appears you set $\\\\f(2) = 2$ instead of $\\\\f(2) = 0$. Since $(x - 2)$ is a *factor*, the remainder must be exactly zero according to the Factor Theorem."
             }
         ],
         "bradley_insight": {
@@ -44,11 +44,11 @@ window.ALEVEL_QUESTIONS = [
         "topic": "Polynomials",
         "subtopic": ["Factor Theorem"],
         "img": false,
-        "question": "Let $\\f(x) = 4x^3 + ax^2 - 7x + 2a$.<br>Given that $(x + 2)$ is a factor of $\\f(x)$, find the value of the constant $a$.",
+        "question": "Let $\\\\f(x) = 4x^3 + ax^2 - 7x + 2a$.<br>Given that $(x + 2)$ is a factor of $\\\\f(x)$, find the value of the constant $a$.",
         "steps": [
-            "According to the <strong>Factor Theorem</strong>, if $(x + 2)$ is a factor of $\\f(x)$, then evaluating the polynomial at $x = -2 must equal zero: $ $\\f(-2) = 0$.",
-            "Substitute $x = -2$ into the expression for $\\f(x)$:<br>\\begin{aligned} \\f(-2) = 4(-2)^3 + a(-2)^2 - 7(-2) + 2a \\end{aligned}",
-            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \\f(-2) &= 4(-8) + a(4) + 14 + 2a \\cr \\f(-2) &= -32 + 4a + 14 + 2a \\end{aligned}",
+            "According to the <strong>Factor Theorem</strong>, if $(x + 2)$ is a factor of $\\\\f(x)$, then evaluating the polynomial at $x = -2 must equal zero: $ $\\\\f(-2) = 0$.",
+            "Substitute $x = -2$ into the expression for $\\\\f(x)$:<br>\\begin{aligned} \\\\f(-2) = 4(-2)^3 + a(-2)^2 - 7(-2) + 2a \\end{aligned}",
+            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \\\\f(-2) &= 4(-8) + a(4) + 14 + 2a \\cr \\\\f(-2) &= -32 + 4a + 14 + 2a \\end{aligned}",
             "Combining the numerical terms and the $a terms yields: $<br>\\begin{aligned} (-32 + 14) + (4a + 2a) &= 0 \\cr -18 + 6a &= 0 \\end{aligned}",
             "Solving this linear equation gives our final value for $a$:<br>\\begin{aligned} 6a = 18 \\implies a = 3 \\end{aligned}",
             "Final Answer: $a = 3$"
@@ -56,7 +56,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$a = -3$",
-                "feedback": "You evaluated $\\f(2) = 0$ instead of $\\f(-2) = 0$. Since the linear factor is $(x + 2)$, the corresponding root to substitute is $x = -2$, not $x = 2$."
+                "feedback": "You evaluated $\\\\f(2) = 0$ instead of $\\\\f(-2) = 0$. Since the linear factor is $(x + 2)$, the corresponding root to substitute is $x = -2$, not $x = 2$."
             },
             {
                 "ans": "$a = \\dfrac{23}{3}$",
@@ -81,11 +81,11 @@ window.ALEVEL_QUESTIONS = [
         "topic": "Polynomials",
         "subtopic": ["Factor Theorem"],
         "img": false,
-        "question": "Let $\\f(x) = 3x^3 - 2kx^2 + 5x + 4k$.<br>Given that $(x - 1)$ is a factor of $\\f(x)$, find the value of the constant $k$.",
+        "question": "Let $\\\\f(x) = 3x^3 - 2kx^2 + 5x + 4k$.<br>Given that $(x - 1)$ is a factor of $\\\\f(x)$, find the value of the constant $k$.",
         "steps": [
-            "According to the <strong>Factor Theorem</strong>, if $(x - 1)$ is a factor of $\\f(x)$, then evaluating the polynomial at $x = 1 must equal zero: $ $\\f(1) = 0$.",
-            "Substitute $x = 1$ into the expression for $\\f(x)$:<br>\\begin{aligned} \\f(1) = 3(1)^3 - 2k(1)^2 + 5(1) + 4k \\end{aligned}",
-            "Simplifying the powers and combining terms gives:<br>\\begin{aligned} \\f(1) = 3 - 2k + 5 + 4k \\end{aligned}",
+            "According to the <strong>Factor Theorem</strong>, if $(x - 1)$ is a factor of $\\\\f(x)$, then evaluating the polynomial at $x = 1 must equal zero: $ $\\\\f(1) = 0$.",
+            "Substitute $x = 1$ into the expression for $\\\\f(x)$:<br>\\begin{aligned} \\\\f(1) = 3(1)^3 - 2k(1)^2 + 5(1) + 4k \\end{aligned}",
+            "Simplifying the powers and combining terms gives:<br>\\begin{aligned} \\\\f(1) = 3 - 2k + 5 + 4k \\end{aligned}",
             "Combine the constant terms and the $k terms: $<br>\\begin{aligned} (3 + 5) + (-2k + 4k) &= 0 \\cr 8 + 2k &= 0 \\end{aligned}",
             "Solving this linear equation gives our final value for $k$:<br>\\begin{aligned} 2k = -8 \\implies k = -4 \\end{aligned}",
             "Final Answer: $k = -4$"
@@ -93,7 +93,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$k = 4$",
-                "feedback": "You evaluated $\\f(-1) = 0$ instead of $\\f(1) = 0$. Since the linear factor is $(x - 1)$, the root is $x = 1$."
+                "feedback": "You evaluated $\\\\f(-1) = 0$ instead of $\\\\f(1) = 0$. Since the linear factor is $(x - 1)$, the root is $x = 1$."
             },
             {
                 "ans": "$k = -\\dfrac{4}{3}$",
@@ -118,11 +118,11 @@ window.ALEVEL_QUESTIONS = [
         "topic": "Polynomials",
         "subtopic": ["Factor Theorem"],
         "img": false,
-        "question": "Let $\\f(x) = 2x^3 - ax^2 - 8x + 3a$.<br>Given that $(x - 3)$ is a factor of $\\f(x)$, find the value of the constant $a$.",
+        "question": "Let $\\\\f(x) = 2x^3 - ax^2 - 8x + 3a$.<br>Given that $(x - 3)$ is a factor of $\\\\f(x)$, find the value of the constant $a$.",
         "steps": [
-            "According to the <strong>Factor Theorem</strong>, if $(x - 3)$ is a factor of $\\f(x)$, then evaluating the polynomial at $x = 3 must equal zero: $ $\\f(3) = 0$.",
-            "Substitute $x = 3$ into the expression for $\\f(x)$:<br>\\begin{aligned} \\f(3) = 2(3)^3 - a(3)^2 - 8(3) + 3a \\end{aligned}",
-            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \\f(3) &= 2(27) - 9a - 24 + 3a \\cr \\f(3) &= 54 - 9a - 24 + 3a \\end{aligned}",
+            "According to the <strong>Factor Theorem</strong>, if $(x - 3)$ is a factor of $\\\\f(x)$, then evaluating the polynomial at $x = 3 must equal zero: $ $\\\\f(3) = 0$.",
+            "Substitute $x = 3$ into the expression for $\\\\f(x)$:<br>\\begin{aligned} \\\\f(3) = 2(3)^3 - a(3)^2 - 8(3) + 3a \\end{aligned}",
+            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \\\\f(3) &= 2(27) - 9a - 24 + 3a \\cr \\\\f(3) &= 54 - 9a - 24 + 3a \\end{aligned}",
             "Combine the constant terms and the $a terms: $<br>\\begin{aligned} (54 - 24) + (-9a + 3a) &= 0 \\cr 30 - 6a &= 0 \\end{aligned}",
             "Solving this linear equation gives our final value for $a$:<br>\\begin{aligned} 6a = 30 \\implies a = 5 \\end{aligned}",
             "Final Answer: $a = 5$"
@@ -130,7 +130,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$a = -5$",
-                "feedback": "You evaluated $\\f(-3) = 0$ instead of $\\f(3) = 0$. Since the linear factor is $(x - 3)$, the root is $x = 3$."
+                "feedback": "You evaluated $\\\\f(-3) = 0$ instead of $\\\\f(3) = 0$. Since the linear factor is $(x - 3)$, the root is $x = 3$."
             },
             {
                 "ans": "$a = 32$",
@@ -155,11 +155,11 @@ window.ALEVEL_QUESTIONS = [
         "topic": "Polynomials",
         "subtopic": ["Factor Theorem"],
         "img": false,
-        "question": "Let $\\f(x) = 2x^3 + 3px^2 - 2x - 3p$.<br>Given that $(x + 3)$ is a factor of $\\f(x)$, find the value of the constant $p$.",
+        "question": "Let $\\\\f(x) = 2x^3 + 3px^2 - 2x - 3p$.<br>Given that $(x + 3)$ is a factor of $\\\\f(x)$, find the value of the constant $p$.",
         "steps": [
-            "According to the <strong>Factor Theorem</strong>, if $(x + 3)$ is a factor of $\\f(x)$, then evaluating the polynomial at $x = -3 must equal zero: $ $\\f(-3) = 0$.",
-            "Substitute $x = -3$ into the expression for $\\f(x)$:<br>\\begin{aligned} \\f(-3) = 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p \\end{aligned}",
-            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \\f(-3) &= 2(-27) + 3p(9) + 6 - 3p \\cr \\f(-3) &= -54 + 27p + 6 - 3p \\end{aligned}",
+            "According to the <strong>Factor Theorem</strong>, if $(x + 3)$ is a factor of $\\\\f(x)$, then evaluating the polynomial at $x = -3 must equal zero: $ $\\\\f(-3) = 0$.",
+            "Substitute $x = -3$ into the expression for $\\\\f(x)$:<br>\\begin{aligned} \\\\f(-3) = 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p \\end{aligned}",
+            "Evaluating the powers and simplifying each term gives:<br>\\begin{aligned} \\\\f(-3) &= 2(-27) + 3p(9) + 6 - 3p \\cr \\\\f(-3) &= -54 + 27p + 6 - 3p \\end{aligned}",
             "Combine the numerical terms and the $p terms: $<br>\\begin{aligned} (-54 + 6) + (27p - 3p) &= 0 \\cr -48 + 24p &= 0 \\end{aligned}",
             "Solving this linear equation gives our final value for $p$:<br>\\begin{aligned} 24p = 48 \\implies p = 2 \\end{aligned}",
             "Final Answer: $p = 2$"
@@ -167,7 +167,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "$p = -2$",
-                "feedback": "You evaluated $\\f(3) = 0$ instead of $\\f(-3) = 0$. Since the linear factor is $(x + 3)$, you must substitute $x = -3$."
+                "feedback": "You evaluated $\\\\f(3) = 0$ instead of $\\\\f(-3) = 0$. Since the linear factor is $(x + 3)$, you must substitute $x = -3$."
             },
             {
                 "ans": "$p = 2.5$",
@@ -273,7 +273,7 @@ window.ALEVEL_QUESTIONS = [
     "After this, the line grows without bound while the cosine curve remains between -1 and 1, so there are no further intersections.",
     "Using the small-angle approximation $\\cos(2x) \\approx 1 - 2x^2$, substitute into the equation: $1 - 2x^2 - x - \\tfrac13 = 0.$",
     "Simplifying gives $2x^2 + x - \\tfrac23 = 0.$",
-    "Solving the quadratic gives $x = \\frac{-1 + \\sqrt{19/3}}{4} \\approx 0.379.$",
+    "Solving the quadratic gives $x = \\\\frac{-1 + \\sqrt{19/3}}{4} \\approx 0.379.$",
     "Final Answer: $\\delta \\approx 0.379.$ <img src='images/Pure/004008_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
   ],
   "pi_options": [
@@ -448,7 +448,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Negative Inequality Flip",
-            "content": "In Part (b), be exceptionally careful when the numerator is negative. A fraction $\\frac{\\text{numerator}}{\\text{denominator}} < 0$ means the numerator and denominator must have opposite signs. Since the numerator is $-8$ (negative), the denominator must be positive to ensure the overall value is negative."
+            "content": "In Part (b), be exceptionally careful when the numerator is negative. A fraction $\\\\frac{\\text{numerator}}{\\text{denominator}} < 0$ means the numerator and denominator must have opposite signs. Since the numerator is $-8$ (negative), the denominator must be positive to ensure the overall value is negative."
         }
     },
     {
@@ -795,19 +795,19 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$\\f(x) = 3x^2 + 6x + 8 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 3(x-2)^2 + 6x - 7 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{15}{3x^2 + 6x + 8} \\quad x \\in \\mathbb{R}$",
+        "question": "$\\\\f(x) = 3x^2 + 6x + 8 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\\\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\\\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 3(x-2)^2 + 6x - 7 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{15}{3x^2 + 6x + 8} \\quad x \\in \\mathbb{R}$",
         "steps": [
-            "<strong>Part (a):</strong> We complete the square by first factorising out the $3 from the quadratic and linear terms: $<br>$\\f(x) = 3(x^2 + 2x) + 8$<br>$\\f(x) = 3\\left[(x+1)^2 - 1^2\\right] + 8$<br>$\\f(x) = 3(x+1)^2 - 3 + 8$<br>$\\f(x) = 3(x+1)^2 + 5$<br>Therefore, the constants are $a = 3$, $b = 1$, and $c = 5$.",
-            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\f(0) = 8$, so the curve crosses the $y$-axis at $(0, 8)$.<br>3. <strong>$x-intercepts: $</strong> Setting $3x^2+6x+8 = 0$, the discriminant is $\\Delta = 6^2 - 4(3)(8) = -60 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004021_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (a):</strong> We complete the square by first factorising out the $3 from the quadratic and linear terms: $<br>$\\\\f(x) = 3(x^2 + 2x) + 8$<br>$\\\\f(x) = 3\\left[(x+1)^2 - 1^2\\right] + 8$<br>$\\\\f(x) = 3(x+1)^2 - 3 + 8$<br>$\\\\f(x) = 3(x+1)^2 + 5$<br>Therefore, the constants are $a = 3$, $b = 1$, and $c = 5$.",
+            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\\\f(0) = 8$, so the curve crosses the $y$-axis at $(0, 8)$.<br>3. <strong>$x-intercepts: $</strong> Setting $3x^2+6x+8 = 0$, the discriminant is $\\Delta = 6^2 - 4(3)(8) = -60 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004021_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x) to find its vertex: $<br>$\\text{g}(x) = 3(x^2 - 4x + 4) + 6x - 7$<br>$\\text{g}(x) = 3x^2 - 12x + 12 + 6x - 7 = 3x^2 - 6x + 5$<br>$\\text{g}(x) = 3(x^2 - 2x) + 5 = 3\\left[(x-1)^2 - 1\\right] + 5$<br>$\\text{g}(x) = 3(x-1)^2 + 2$",
-            "The vertex of $\\f(x)$ is at $(-1, 5)$ and the vertex of $\\text{g}(x)$ is at $(1, 2)$.<br>To map $(-1, 5)$ onto $(1, 2)$, we shift $+2$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$</strong>.",
-            "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x) using our completed square form of the denominator: $<br>$\\text{h}(x) = \\dfrac{15}{3(x+1)^2 + 5}$<br>Since the minimum value of the denominator is $5$ (when $x = -1$), the maximum value of the fraction is $\\frac{15}{5} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 3$</strong>.",
+            "The vertex of $\\\\f(x)$ is at $(-1, 5)$ and the vertex of $\\text{g}(x)$ is at $(1, 2)$.<br>To map $(-1, 5)$ onto $(1, 2)$, we shift $+2$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$</strong>.",
+            "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x) using our completed square form of the denominator: $<br>$\\text{h}(x) = \\dfrac{15}{3(x+1)^2 + 5}$<br>Since the minimum value of the denominator is $5$ (when $x = -1$), the maximum value of the fraction is $\\\\frac{15}{5} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 3$</strong>.",
             "Final Answer: <strong>(a)</strong> $3(x+1)^2 + 5$ <strong>(b)</strong> $Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,8)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 < \\text{h}(x) \\le 3$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $3(x+1)^2 + 5$ <strong>(b)</strong> $Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,8)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} -2 \\\\\\ 3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 < \\text{h}(x) \\le 3$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\f(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+2$. Moving from $y = 5$ to $y = 2$ is a vertical shift of $-3$. This gives the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$."
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\\\f(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+2$. Moving from $y = 5$ to $y = 2$ is a vertical shift of $-3$. This gives the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$."
             },
             {
                 "ans": "<strong>(a)</strong> $3(x+1)^2 + 5$ <strong>(b)</strong> $Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,8)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 \\le \\text{h}(x) \\le 3$",
@@ -821,7 +821,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Range of Reciprocals",
-            "content": "To find the range of a reciprocal function like $\\text{h}(x) = \\frac{K}{\f(x)}$, remember that the maximum value of the function occurs when its denominator is at its absolute minimum. Use your completed square form from part (a) to read off the minimum value of $\\f(x)$ instantly."
+            "content": "To find the range of a reciprocal function like $\\text{h}(x) = \\\\frac{K}{\f(x)}$, remember that the maximum value of the function occurs when its denominator is at its absolute minimum. Use your completed square form from part (a) to read off the minimum value of $\\\\f(x)$ instantly."
         }
     },
     {
@@ -835,19 +835,19 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$\\f(x) = 2x^2 + 8x + 12 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 2(x-3)^2 + 8x - 15 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{12}{2x^2 + 8x + 12} \\quad x \\in \\mathbb{R}$",
+        "question": "$\\\\f(x) = 2x^2 + 8x + 12 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\\\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\\\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 2(x-3)^2 + 8x - 15 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{12}{2x^2 + 8x + 12} \\quad x \\in \\mathbb{R}$",
         "steps": [
-            "<strong>Part (a):</strong> We complete the square by first factorising out the $2 from the quadratic and linear terms: $<br>$\\f(x) = 2(x^2 + 4x) + 12$<br>$\\f(x) = 2\\left[(x+2)^2 - 2^2\\right] + 12$<br>$\\f(x) = 2(x+2)^2 - 8 + 12$<br>$\\f(x) = 2(x+2)^2 + 4$<br>Therefore, the constants are $a = 2$, $b = 2$, and $c = 4$.",
-            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-2, 4)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\f(0) = 12$, so the curve crosses the $y$-axis at $(0, 12)$.<br>3. <strong>$x-intercepts: $</strong> Setting $2x^2+8x+12 = 0$, the discriminant is $\\Delta = 8^2 - 4(2)(12) = -32 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004022_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (a):</strong> We complete the square by first factorising out the $2 from the quadratic and linear terms: $<br>$\\\\f(x) = 2(x^2 + 4x) + 12$<br>$\\\\f(x) = 2\\left[(x+2)^2 - 2^2\\right] + 12$<br>$\\\\f(x) = 2(x+2)^2 - 8 + 12$<br>$\\\\f(x) = 2(x+2)^2 + 4$<br>Therefore, the constants are $a = 2$, $b = 2$, and $c = 4$.",
+            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-2, 4)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\\\f(0) = 12$, so the curve crosses the $y$-axis at $(0, 12)$.<br>3. <strong>$x-intercepts: $</strong> Setting $2x^2+8x+12 = 0$, the discriminant is $\\Delta = 8^2 - 4(2)(12) = -32 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004022_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x) to find its vertex: $<br>$\\text{g}(x) = 2(x^2 - 6x + 9) + 8x - 15$<br>$\\text{g}(x) = 2x^2 - 12x + 18 + 8x - 15 = 2x^2 - 4x + 3$<br>$\\text{g}(x) = 2(x^2 - 2x) + 3 = 2\\left[(x-1)^2 - 1\\right] + 3$<br>$\\text{g}(x) = 2(x-1)^2 + 1$",
-            "The vertex of $\\f(x)$ is at $(-2, 4)$ and the vertex of $\\text{g}(x)$ is at $(1, 1)$.<br>To map $(-2, 4)$ onto $(1, 1)$, we shift $+3$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$</strong>.",
-            "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x) using our completed square form of the denominator: $<br>$\\text{h}(x) = \\dfrac{12}{2(x+2)^2 + 4}$<br>Since the minimum value of the denominator is $4$ (when $x = -2$), the maximum value of the fraction is $\\frac{12}{4} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 3$</strong>.",
+            "The vertex of $\\\\f(x)$ is at $(-2, 4)$ and the vertex of $\\text{g}(x)$ is at $(1, 1)$.<br>To map $(-2, 4)$ onto $(1, 1)$, we shift $+3$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$</strong>.",
+            "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x) using our completed square form of the denominator: $<br>$\\text{h}(x) = \\dfrac{12}{2(x+2)^2 + 4}$<br>Since the minimum value of the denominator is $4$ (when $x = -2$), the maximum value of the fraction is $\\\\frac{12}{4} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 3$</strong>.",
             "Final Answer: <strong>(a)</strong> $2(x+2)^2 + 4$ <strong>(b)</strong> $Turning\\\\ Point: (-2,4),\\\\ y-intercept: (0,12)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 < \\text{h}(x) \\le 3$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $2(x+2)^2 + 4$ <strong>(b)</strong> $Turning\\\\ Point: (-2,4),\\\\ y-intercept: (0,12)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} -3 \\\\\\ 3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 < \\text{h}(x) \\le 3$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\f(x)$ at $x = -2$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+3$. Moving from $y = 4$ to $y = 1$ is a vertical shift of $-3$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$."
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\\\f(x)$ at $x = -2$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+3$. Moving from $y = 4$ to $y = 1$ is a vertical shift of $-3$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$."
             },
             {
                 "ans": "<strong>(a)</strong> $2(x+2)^2 + 4$ <strong>(b)</strong> $Turning\\\\ Point: (-2,4),\\\\ y-intercept: (0,12)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 \\le \\text{h}(x) \\le 3$",
@@ -875,19 +875,19 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$\\f(x) = 4x^2 + 8x + 7 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 4(x-3)^2 + 8x - 19 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{15}{4x^2 + 8x + 7} \\quad x \\in \\mathbb{R}$",
+        "question": "$\\\\f(x) = 4x^2 + 8x + 7 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\\\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\\\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 4(x-3)^2 + 8x - 19 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{15}{4x^2 + 8x + 7} \\quad x \\in \\mathbb{R}$",
         "steps": [
-            "<strong>Part (a):</strong> We complete the square by first factorising out the $4 from the quadratic and linear terms: $<br>$\\f(x) = 4(x^2 + 2x) + 7$<br>$\\f(x) = 4\\left[(x+1)^2 - 1^2\\right] + 7$<br>$\\f(x) = 4(x+1)^2 - 4 + 7$<br>$\\f(x) = 4(x+1)^2 + 3$<br>Therefore, the constants are $a = 4$, $b = 1$, and $c = 3$.",
-            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 3)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\f(0) = 7$, so the curve crosses the $y$-axis at $(0, 7)$.<br>3. <strong>$x-intercepts: $</strong> Setting $4x^2+8x+7 = 0$, the discriminant is $\\Delta = 8^2 - 4(4)(7) = -48 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004023_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (a):</strong> We complete the square by first factorising out the $4 from the quadratic and linear terms: $<br>$\\\\f(x) = 4(x^2 + 2x) + 7$<br>$\\\\f(x) = 4\\left[(x+1)^2 - 1^2\\right] + 7$<br>$\\\\f(x) = 4(x+1)^2 - 4 + 7$<br>$\\\\f(x) = 4(x+1)^2 + 3$<br>Therefore, the constants are $a = 4$, $b = 1$, and $c = 3$.",
+            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 3)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\\\f(0) = 7$, so the curve crosses the $y$-axis at $(0, 7)$.<br>3. <strong>$x-intercepts: $</strong> Setting $4x^2+8x+7 = 0$, the discriminant is $\\Delta = 8^2 - 4(4)(7) = -48 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004023_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x) to find its vertex: $<br>$\\text{g}(x) = 4(x^2 - 6x + 9) + 8x - 19$<br>$\\text{g}(x) = 4x^2 - 24x + 36 + 8x - 19 = 4x^2 - 16x + 17$<br>$\\text{g}(x) = 4(x^2 - 4x) + 17 = 4\\left[(x-2)^2 - 4\\right] + 17$<br>$\\text{g}(x) = 4(x-2)^2 - 16 + 17$<br>$\\text{g}(x) = 4(x-2)^2 + 1$",
-            "The vertex of $\\f(x)$ is at $(-1, 3)$ and the vertex of $\\text{g}(x)$ is at $(2, 1)$.<br>To map $(-1, 3)$ onto $(2, 1)$, we shift $+3$ units horizontally and $-2$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$</strong>.",
-            "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x) using our completed square form of the denominator: $<br>$\\text{h}(x) = \\dfrac{15}{4(x+1)^2 + 3}$<br>Since the minimum value of the denominator is $3$ (when $x = -1$), the maximum value of the fraction is $\\frac{15}{3} = 5$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 5$</strong>.",
+            "The vertex of $\\\\f(x)$ is at $(-1, 3)$ and the vertex of $\\text{g}(x)$ is at $(2, 1)$.<br>To map $(-1, 3)$ onto $(2, 1)$, we shift $+3$ units horizontally and $-2$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$</strong>.",
+            "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x) using our completed square form of the denominator: $<br>$\\text{h}(x) = \\dfrac{15}{4(x+1)^2 + 3}$<br>Since the minimum value of the denominator is $3$ (when $x = -1$), the maximum value of the fraction is $\\\\frac{15}{3} = 5$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 5$</strong>.",
             "Final Answer: <strong>(a)</strong> $4(x+1)^2 + 3$ <strong>(b)</strong> $Turning\\\\ Point: (-1,3),\\\\ y-intercept: (0,7)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 < \\text{h}(x) \\le 5$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $4(x+1)^2 + 3$ <strong>(b)</strong> $Turning\\\\ Point: (-1,3),\\\\ y-intercept: (0,7)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} -3 \\\\\\ 2 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 < \\text{h}(x) \\le 5$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\f(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 2$ is a horizontal shift of $+3$. Moving from $y = 3$ to $y = 1$ is a vertical shift of $-2$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$."
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\\\f(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 2$ is a horizontal shift of $+3$. Moving from $y = 3$ to $y = 1$ is a vertical shift of $-2$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$."
             },
             {
                 "ans": "<strong>(a)</strong> $4(x+1)^2 + 3$ <strong>(b)</strong> $Turning\\\\ Point: (-1,3),\\\\ y-intercept: (0,7)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 \\le \\text{h}(x) \\le 5$",
@@ -915,19 +915,19 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$\\f(x) = 3x^2 + 12x + 18 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 3(x-3)^2 + 12x - 22 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{24}{3x^2 + 12x + 18} \\quad x \\in \\mathbb{R}$",
+        "question": "$\\\\f(x) = 3x^2 + 12x + 18 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\\\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\\\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 3(x-3)^2 + 12x - 22 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{24}{3x^2 + 12x + 18} \\quad x \\in \\mathbb{R}$",
         "steps": [
-            "<strong>Part (a):</strong> We complete the square by first factorising out the $3 from the quadratic and linear terms: $<br>$\\f(x) = 3(x^2 + 4x) + 18$<br>$\\f(x) = 3\\left[(x+2)^2 - 2^2\\right] + 18$<br>$\\f(x) = 3(x+2)^2 - 12 + 18$<br>$\\f(x) = 3(x+2)^2 + 6$<br>Therefore, the constants are $a = 3$, $b = 2$, and $c = 6$.",
-            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-2, 6)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\f(0) = 18$, so the curve crosses the $y$-axis at $(0, 18)$.<br>3. <strong>$x-intercepts: $</strong> Setting $3x^2+12x+18 = 0$, the discriminant is $\\Delta = 12^2 - 4(3)(18) = -72 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004024_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (a):</strong> We complete the square by first factorising out the $3 from the quadratic and linear terms: $<br>$\\\\f(x) = 3(x^2 + 4x) + 18$<br>$\\\\f(x) = 3\\left[(x+2)^2 - 2^2\\right] + 18$<br>$\\\\f(x) = 3(x+2)^2 - 12 + 18$<br>$\\\\f(x) = 3(x+2)^2 + 6$<br>Therefore, the constants are $a = 3$, $b = 2$, and $c = 6$.",
+            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-2, 6)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\\\f(0) = 18$, so the curve crosses the $y$-axis at $(0, 18)$.<br>3. <strong>$x-intercepts: $</strong> Setting $3x^2+12x+18 = 0$, the discriminant is $\\Delta = 12^2 - 4(3)(18) = -72 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004024_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x) to find its vertex: $<br>$\\text{g}(x) = 3(x^2 - 6x + 9) + 12x - 22$<br>$\\text{g}(x) = 3x^2 - 18x + 27 + 12x - 22 = 3x^2 - 6x + 5$<br>$\\text{g}(x) = 3(x^2 - 2x) + 5 = 3\\left[(x-1)^2 - 1\\right] + 5$<br>$\\text{g}(x) = 3(x-1)^2 - 3 + 5$<br>$\\text{g}(x) = 3(x-1)^2 + 2$",
-            "The vertex of $\\f(x)$ is at $(-2, 6)$ and the vertex of $\\text{g}(x)$ is at $(1, 2)$.<br>To map $(-2, 6)$ onto $(1, 2)$, we shift $+3$ units horizontally and $-4$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$</strong>.",
-            "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x) using our completed square form of the denominator: $<br>$\\text{h}(x) = \\dfrac{24}{3(x+2)^2 + 6}$<br>Since the minimum value of the denominator is $6$ (when $x = -2$), the maximum value of the fraction is $\\frac{24}{6} = 4$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 4$</strong>.",
+            "The vertex of $\\\\f(x)$ is at $(-2, 6)$ and the vertex of $\\text{g}(x)$ is at $(1, 2)$.<br>To map $(-2, 6)$ onto $(1, 2)$, we shift $+3$ units horizontally and $-4$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$</strong>.",
+            "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x) using our completed square form of the denominator: $<br>$\\text{h}(x) = \\dfrac{24}{3(x+2)^2 + 6}$<br>Since the minimum value of the denominator is $6$ (when $x = -2$), the maximum value of the fraction is $\\\\frac{24}{6} = 4$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 4$</strong>.",
             "Final Answer: <strong>(a)</strong> $3(x+2)^2 + 6$ <strong>(b)</strong> $Turning\\\\ Point: (-2,6),\\\\ y-intercept: (0,18)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 < \\text{h}(x) \\le 4$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $3(x+2)^2 + 6$ <strong>(b)</strong> $Turning\\\\ Point: (-2,6),\\\\ y-intercept: (0,18)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} -3 \\\\\\ 4 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 < \\text{h}(x) \\le 4$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\f(x)$ at $x = -2$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+3$. Moving from $y = 6$ to $y = 2$ is a vertical shift of $-4$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$."
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\\\f(x)$ at $x = -2$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+3$. Moving from $y = 6$ to $y = 2$ is a vertical shift of $-4$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$."
             },
             {
                 "ans": "<strong>(a)</strong> $3(x+2)^2 + 6$ <strong>(b)</strong> $Turning\\\\ Point: (-2,6),\\\\ y-intercept: (0,18)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 \\le \\text{h}(x) \\le 4$",
@@ -955,19 +955,19 @@ window.ALEVEL_QUESTIONS = [
             "Transformations"
         ],
         "img": false,
-        "question": "$\\f(x) = 2x^2 + 4x + 7 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 2(x-3)^2 + 4x - 9 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{10}{2x^2 + 4x + 7} \\quad x \\in \\mathbb{R}$",
+        "question": "$\\\\f(x) = 2x^2 + 4x + 7 \\quad x \\in \\mathbb{R}$<br><strong>(a)</strong> Write $\\\\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \\\\f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \\\\f(x)$ onto the curve with equation $y = \\text{g}(x) where: $<br>$\\text{g}(x) = 2(x-3)^2 + 4x - 9 \\quad x \\in \\mathbb{R}$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$\\text{h}(x) = \\dfrac{10}{2x^2 + 4x + 7} \\quad x \\in \\mathbb{R}$",
         "steps": [
-            "<strong>Part (a):</strong> We complete the square by first factorising out the $2 from the quadratic and linear terms: $<br>$\\f(x) = 2(x^2 + 2x) + 7$<br>$\\f(x) = 2\\left[(x+1)^2 - 1^2\\right] + 7$<br>$\\f(x) = 2(x+1)^2 - 2 + 7$<br>$\\f(x) = 2(x+1)^2 + 5$<br>Therefore, the constants are $a = 2$, $b = 1$, and $c = 5$.",
-            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\f(0) = 7$, so the curve crosses the $y$-axis at $(0, 7)$.<br>3. <strong>$x-intercepts: $</strong> Setting $2x^2+4x+7 = 0$, the discriminant is $\\Delta = 4^2 - 4(2)(7) = -40 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004025_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (a):</strong> We complete the square by first factorising out the $2 from the quadratic and linear terms: $<br>$\\\\f(x) = 2(x^2 + 2x) + 7$<br>$\\\\f(x) = 2\\left[(x+1)^2 - 1^2\\right] + 7$<br>$\\\\f(x) = 2(x+1)^2 - 2 + 7$<br>$\\\\f(x) = 2(x+1)^2 + 5$<br>Therefore, the constants are $a = 2$, $b = 1$, and $c = 5$.",
+            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y-intercept: $</strong> Setting $x = 0$ gives $\\\\f(0) = 7$, so the curve crosses the $y$-axis at $(0, 7)$.<br>3. <strong>$x-intercepts: $</strong> Setting $2x^2+4x+7 = 0$, the discriminant is $\\Delta = 4^2 - 4(2)(7) = -40 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004025_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x) to find its vertex: $<br>$\\text{g}(x) = 2(x^2 - 6x + 9) + 4x - 9$<br>$\\text{g}(x) = 2x^2 - 12x + 18 + 4x - 9 = 2x^2 - 8x + 9$<br>$\\text{g}(x) = 2(x^2 - 4x) + 9 = 2\\left[(x-2)^2 - 4\\right] + 9$<br>$\\text{g}(x) = 2(x-2)^2 - 8 + 9$<br>$\\text{g}(x) = 2(x-2)^2 + 1$",
-            "The vertex of $\\f(x)$ is at $(-1, 5)$ and the vertex of $\\text{g}(x)$ is at $(2, 1)$.<br>To map $(-1, 5)$ onto $(2, 1)$, we shift $+3$ units horizontally and $-4$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$</strong>.",
-            "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x) using our completed square form of the denominator: $<br>$\\text{h}(x) = \\dfrac{10}{2(x+1)^2 + 5}$<br>Since the minimum value of the denominator is $5$ (when $x = -1$), the maximum value of the fraction is $\\frac{10}{5} = 2$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 2$</strong>.",
+            "The vertex of $\\\\f(x)$ is at $(-1, 5)$ and the vertex of $\\text{g}(x)$ is at $(2, 1)$.<br>To map $(-1, 5)$ onto $(2, 1)$, we shift $+3$ units horizontally and $-4$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$</strong>.",
+            "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x) using our completed square form of the denominator: $<br>$\\text{h}(x) = \\dfrac{10}{2(x+1)^2 + 5}$<br>Since the minimum value of the denominator is $5$ (when $x = -1$), the maximum value of the fraction is $\\\\frac{10}{5} = 2$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 2$</strong>.",
             "Final Answer: <strong>(a)</strong> $2(x+1)^2 + 5$ <strong>(b)</strong> $Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,7)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 < \\text{h}(x) \\le 2$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $2(x+1)^2 + 5$ <strong>(b)</strong> $Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,7)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} -3 \\\\\\ 4 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 < \\text{h}(x) \\le 2$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\f(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 2$ is a horizontal shift of $+3$. Moving from $y = 5$ to $y = 1$ is a vertical shift of $-4$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$."
+                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\\\\f(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 2$ is a horizontal shift of $+3$. Moving from $y = 5$ to $y = 1$ is a vertical shift of $-4$. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$."
             },
             {
                 "ans": "<strong>(a)</strong> $2(x+1)^2 + 5$ <strong>(b)</strong> $Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,7)$ <strong>(c)(i)</strong> $Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 \\le \\text{h}(x) \\le 2$",
@@ -998,7 +998,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "<strong>(a)</strong> Solve, for $-180^\\circ \\le \\theta \\le 180^\\circ,$ the equation: $<br>$4\\sin 2\\theta = 7\\cos\\theta.$Give your answers, where necessary, to one decimal place. Solutions based entirely on graphical or numerical methods are not acceptable.<br><br><strong>(b)</strong> Hence deduce the smallest positive solution of:<br>$4\\sin(2x + 20^\\circ) = 7\\cos(x + 10^\\circ).$",
     "steps": [
-      "<strong>Part (a):</strong> Use the identity $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta.$<br>$4(2\\sin\\theta\\cos\\theta) = 7\\cos\\theta$<br>$8\\sin\\theta\\cos\\theta - 7\\cos\\theta = 0$<br>Factorise:<br>$\\cos\\theta(8\\sin\\theta - 7) = 0.$<br>This gives two branches:<br><em>Branch 1:</em> $\\cos\\theta = 0 \\Rightarrow \\theta = -90^\\circ,\\\\\\ 90^\\circ.$<br><em>Branch 2:</em> $\\sin\\theta = \\frac{7}{8} \\Rightarrow \\theta \\approx 61.0^\\circ,\\\\\\ 119.0^\\circ.$",
+      "<strong>Part (a):</strong> Use the identity $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta.$<br>$4(2\\sin\\theta\\cos\\theta) = 7\\cos\\theta$<br>$8\\sin\\theta\\cos\\theta - 7\\cos\\theta = 0$<br>Factorise:<br>$\\cos\\theta(8\\sin\\theta - 7) = 0.$<br>This gives two branches:<br><em>Branch 1:</em> $\\cos\\theta = 0 \\Rightarrow \\theta = -90^\\circ,\\\\\\ 90^\\circ.$<br><em>Branch 2:</em> $\\sin\\theta = \\\\frac{7}{8} \\Rightarrow \\theta \\approx 61.0^\\circ,\\\\\\ 119.0^\\circ.$",
       "<strong>Part (b):</strong> Note that $2x + 20^\\circ = 2(x + 10^\\circ).$ Let $\\theta = x + 10^\\circ.$ Then the equation becomes the same as in Part (a).<br>Thus the smallest positive solution is:<br>$x = 61.0^\\circ - 10^\\circ = 51.0^\\circ.$",
       "Final Answer: $\\theta = -90^\\circ,\\\\\\ 61.0^\\circ,\\\\\\ 90^\\circ,\\\\\\ 119.0^\\circ; \\quad x = 51.0^\\circ.$"
     ],
@@ -1037,7 +1037,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "<strong>(a)</strong> Solve, for $-180^\\circ \\le \\theta \\le 180^\\circ,$ the equation: $<br>$3\\tan\\theta = 2\\sin 2\\theta.$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Deduce the smallest positive solution of:<br>$3\\tan(x - 15^\\circ) = 2\\sin(2x - 30^\\circ).$",
     "steps": [
-      "<strong>Part (a):</strong> Use $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}, \\quad \\sin 2\\theta = 2\\sin\\theta\\cos\\theta.$<br>Substitute:<br>$3\\frac{\\sin\\theta}{\\cos\\theta} = 4\\sin\\theta\\cos\\theta$<br>Multiply by cosθ:<br>$3\\sin\\theta = 4\\sin\\theta\\cos^2\\theta$<br>Factorise:<br>$\\sin\\theta(3 - 4\\cos^2\\theta) = 0.$<br>Solutions:<br>• $\\sin\\theta = 0 \\Rightarrow \\theta = -180^\\circ, 0^\\circ, 180^\\circ.$<br>• $\\cos^2\\theta = \\frac{3}{4} \\Rightarrow \\theta = \\pm 30^\\circ, \\pm 150^\\circ.$",
+      "<strong>Part (a):</strong> Use $\\tan\\theta = \\\\frac{\\sin\\theta}{\\cos\\theta}, \\quad \\sin 2\\theta = 2\\sin\\theta\\cos\\theta.$<br>Substitute:<br>$3\\\\frac{\\sin\\theta}{\\cos\\theta} = 4\\sin\\theta\\cos\\theta$<br>Multiply by cosθ:<br>$3\\sin\\theta = 4\\sin\\theta\\cos^2\\theta$<br>Factorise:<br>$\\sin\\theta(3 - 4\\cos^2\\theta) = 0.$<br>Solutions:<br>• $\\sin\\theta = 0 \\Rightarrow \\theta = -180^\\circ, 0^\\circ, 180^\\circ.$<br>• $\\cos^2\\theta = \\\\frac{3}{4} \\Rightarrow \\theta = \\pm 30^\\circ, \\pm 150^\\circ.$",
       "<strong>Part (b):</strong> Note that $2x - 30^\\circ = 2(x - 15^\\circ).$ Let $\\theta = x - 15^\\circ.$<br>Smallest positive solution:<br>$x = 0^\\circ + 15^\\circ = 15^\\circ.$",
       "Final Answer: $\\theta = -180^\\circ, -150^\\circ, -30^\\circ, 0^\\circ, 30^\\circ, 150^\\circ, 180^\\circ; \\quad x = 15^\\circ.$"
     ],
@@ -1076,7 +1076,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "<strong>(a)</strong> Solve, for $-180^\\circ \\le \\theta \\le 180^\\circ,$ the equation: $<br>$5\\cos 2\\theta = 8\\sin\\theta.$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence find the smallest positive solution of:<br>$5\\cos(2x - 40^\\circ) = 8\\sin(x - 20^\\circ).$",
     "steps": [
-      "<strong>Part (a):</strong> Use $\\cos 2\\theta = 1 - 2\\sin^2\\theta.$<br>Substitute:<br>$5(1 - 2\\sin^2\\theta) = 8\\sin\\theta$<br>$5 - 10\\sin^2\\theta = 8\\sin\\theta$<br>Rearrange:<br>$10\\sin^2\\theta + 8\\sin\\theta - 5 = 0.$<br>Solve the quadratic:<br>$\\sin\\theta = \\frac{-8 \\pm \\sqrt{264}}{20}.$<br>Only the positive root is valid: $\\sin\\theta \\approx 0.4124.$<br>Thus: $\\theta \\approx 24.4^\\circ,\\\\\\ 155.6^\\circ.$",
+      "<strong>Part (a):</strong> Use $\\cos 2\\theta = 1 - 2\\sin^2\\theta.$<br>Substitute:<br>$5(1 - 2\\sin^2\\theta) = 8\\sin\\theta$<br>$5 - 10\\sin^2\\theta = 8\\sin\\theta$<br>Rearrange:<br>$10\\sin^2\\theta + 8\\sin\\theta - 5 = 0.$<br>Solve the quadratic:<br>$\\sin\\theta = \\\\frac{-8 \\pm \\sqrt{264}}{20}.$<br>Only the positive root is valid: $\\sin\\theta \\approx 0.4124.$<br>Thus: $\\theta \\approx 24.4^\\circ,\\\\\\ 155.6^\\circ.$",
       "<strong>Part (b):</strong> Note that $2x - 40^\\circ = 2(x - 20^\\circ).$ Let $\\theta = x - 20^\\circ.$<br>Smallest positive solution:<br>$x = 24.4^\\circ + 20^\\circ = 44.4^\\circ.$",
       "Final Answer: $\\theta \\approx 24.4^\\circ,\\\\\\ 155.6^\\circ; \\quad x \\approx 44.4^\\circ.$"
     ],
@@ -1115,7 +1115,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "<strong>(a)</strong> Solve, for $-180^\\circ \\le \\theta \\le 180^\\circ,$ the equation: $<br>$6\\sin\\theta = 2\\cos 2\\theta.$<br><br><strong>(b)</strong> Deduce the smallest positive solution of:<br>$6\\sin(x + 30^\\circ) = 2\\cos(2x + 60^\\circ).$",
     "steps": [
-      "<strong>Part (a):</strong> Use $\\cos 2\\theta = 1 - 2\\sin^2\\theta.$<br>Substitute:<br>$6\\sin\\theta = 2(1 - 2\\sin^2\\theta)$<br>$3\\sin\\theta = 1 - 2\\sin^2\\theta$<br>Rearrange:<br>$2\\sin^2\\theta + 3\\sin\\theta - 1 = 0.$<br>Solve the quadratic:<br>$\\sin\\theta = \\frac{-3 \\pm \\sqrt{17}}{4}.$<br>Only the positive root is valid: $\\sin\\theta \\approx 0.2808.$<br>Thus: $\\theta \\approx 16.3^\\circ,\\\\\\ 163.7^\\circ.$",
+      "<strong>Part (a):</strong> Use $\\cos 2\\theta = 1 - 2\\sin^2\\theta.$<br>Substitute:<br>$6\\sin\\theta = 2(1 - 2\\sin^2\\theta)$<br>$3\\sin\\theta = 1 - 2\\sin^2\\theta$<br>Rearrange:<br>$2\\sin^2\\theta + 3\\sin\\theta - 1 = 0.$<br>Solve the quadratic:<br>$\\sin\\theta = \\\\frac{-3 \\pm \\sqrt{17}}{4}.$<br>Only the positive root is valid: $\\sin\\theta \\approx 0.2808.$<br>Thus: $\\theta \\approx 16.3^\\circ,\\\\\\ 163.7^\\circ.$",
       "<strong>Part (b):</strong> Note that $2x + 60^\\circ = 2(x + 30^\\circ).$ Let $\\theta = x + 30^\\circ.$<br>Smallest positive solution:<br>$x = 163.7^\\circ - 30^\\circ = 133.7^\\circ.$",
       "Final Answer: $\\theta \\approx 16.3^\\circ,\\\\\\ 163.7^\\circ; \\quad x \\approx 133.7^\\circ.$"
     ],
@@ -1154,7 +1154,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "<strong>(a)</strong> Solve, for $-180^\\circ \\le \\theta \\le 180^\\circ,$ the equation: $<br>$9\\sin 2\\theta = 4\\tan\\theta.$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence deduce the smallest positive solution of:<br>$9\\sin(2x - 10^\\circ) = 4\\tan(x - 5^\\circ).$",
     "steps": [
-      "<strong>Part (a):</strong> Use $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta, \\quad \\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}.$<br>Substitute:<br>$18\\sin\\theta\\cos^2\\theta = 4\\sin\\theta$<br>Factorise:<br>$2\\sin\\theta(9\\cos^2\\theta - 2) = 0.$<br>Solutions:<br>• $\\sin\\theta = 0 \\Rightarrow \\theta = -180^\\circ, 0^\\circ, 180^\\circ.$<br>• $\\cos^2\\theta = \\frac{2}{9} \\Rightarrow \\theta \\approx \\pm 61.9^\\circ, \\pm 118.1^\\circ.$",
+      "<strong>Part (a):</strong> Use $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta, \\quad \\tan\\theta = \\\\frac{\\sin\\theta}{\\cos\\theta}.$<br>Substitute:<br>$18\\sin\\theta\\cos^2\\theta = 4\\sin\\theta$<br>Factorise:<br>$2\\sin\\theta(9\\cos^2\\theta - 2) = 0.$<br>Solutions:<br>• $\\sin\\theta = 0 \\Rightarrow \\theta = -180^\\circ, 0^\\circ, 180^\\circ.$<br>• $\\cos^2\\theta = \\\\frac{2}{9} \\Rightarrow \\theta \\approx \\pm 61.9^\\circ, \\pm 118.1^\\circ.$",
       "<strong>Part (b):</strong> Note that $2x - 10^\\circ = 2(x - 5^\\circ).$ Let $\\theta = x - 5^\\circ.$<br>Smallest positive solution:<br>$x = 0^\\circ + 5^\\circ = 5^\\circ.$",
       "Final Answer: $\\theta = -180^\\circ, -118.1^\\circ, -61.9^\\circ, 0^\\circ, 61.9^\\circ, 118.1^\\circ, 180^\\circ; \\quad x = 5^\\circ.$"
     ],
@@ -1298,7 +1298,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Percentage Depreciation",
-            "content": "Always remember that an annual depreciation of $P\\\\%$ corresponds to an exponential multiplier of $r = 1 - \\frac{P}{100}$. For a luxury yacht depreciating at $10\\\\%$ per year, the multiplier is $r = 0.9$. This allows you to construct and adapt these models rapidly."
+            "content": "Always remember that an annual depreciation of $P\\\\%$ corresponds to an exponential multiplier of $r = 1 - \\\\frac{P}{100}$. For a luxury yacht depreciating at $10\\\\%$ per year, the multiplier is $r = 0.9$. This allows you to construct and adapt these models rapidly."
         }
     },
     {
@@ -1397,18 +1397,18 @@ window.ALEVEL_QUESTIONS = [
         "question": "The diagram shows a sketch of part of the curve with equation:<br>$y = x(x+1)(x-2)$<br>The region $R_1$, shown shaded in the diagram, is bounded by the curve and the negative $x$-axis.<br><strong>(a)</strong> Show that the exact area of $R_1$ is $\\dfrac{5}{12}$.<br><br>The region $R_2$, also shown shaded in the diagram, is bounded by the curve, the positive $x$-axis, and the line with equation $x = b$, where $b$ is a positive constant and $0 < b < 2$.<br>Given that the area of $R_1$ is equal to the area of $R_2$:<br><strong>(b)</strong> Verify that $b satisfies the equation: $<br>$(b+1)^2(3b^2 - 10b + 5) = 0$<br>The roots of the equation $3b^2 - 10b + 5 = 0$ are $0.613$ and $2.721$ to 3 decimal places. The value of $b$ is therefore $0.613$ to 3 decimal places.<br><strong>(c)</strong> Explain, with the aid of a diagram, the significance of the root $2.721$.",
         "steps": [
             "<strong>Part (a):</strong> First, we expand the cubic equation to make it easy to integrate:<br>$y = x(x+1)(x-2) = x(x^2 - x - 2) = x^3 - x^2 - 2x$",
-            "Since the region $R_1$ lies entirely above the $x$-axis between the roots $x = -1$ and $x = 0$, its exact area is given by the definite integral:<br>$\\text{Area } R_1 = \\int_{-1}^{0} (x^3 - x^2 - 2x) \\text{ d}x$<br>$\\text{Area } R_1 = \\left[ \\frac{x^4}{4} - \\frac{x^3}{3} - x^2 \\right]_{-1}^{0}$",
-            "Evaluating this at the limits $0$ and $-1$:<br>$\\text{Area } R_1 = 0 - \\left( \\frac{(-1)^4}{4} - \\frac{(-1)^3}{3} - (-1)^2 \\right)$<br>$\\text{Area } R_1 = - \\left( \\frac{1}{4} + \\frac{1}{3} - 1 \\right) = - \\left( -\\frac{5}{12} \\right) = \\frac{5}{12}$",
-            "<strong>Part (b):</strong> Since $R_2$ lies entirely below the $x$-axis in the interval $0 < b < 2$, its area is given by the negative integral:<br>$\\text{Area } R_2 = -\\int_{0}^{b} (x^3 - x^2 - 2x) \\text{ d}x = -\\left[ \\frac{x^4}{4} - \\frac{x^3}{3} - x^2 \\right]_{0}^{b}$<br>$\\text{Area } R_2 = -\\left( \\frac{b^4}{4} - \\frac{b^3}{3} - b^2 \\right)$",
-            "Setting $\\text{Area } R_1 = \\text{Area } R_2 gives: $<br>$\\frac{5}{12} = -\\left( \\frac{b^4}{4} - \\frac{b^3}{3} - b^2 \\right) \\implies \\frac{b^4}{4} - \\frac{b^3}{3} - b^2 + \\frac{5}{12} = 0$<br>Multiplying the entire equation by $12 to clear the fractions: $<br>$3b^4 - 4b^3 - 12b^2 + 5 = 0$",
+            "Since the region $R_1$ lies entirely above the $x$-axis between the roots $x = -1$ and $x = 0$, its exact area is given by the definite integral:<br>$\\text{Area } R_1 = \\int_{-1}^{0} (x^3 - x^2 - 2x) \\text{ d}x$<br>$\\text{Area } R_1 = \\left[ \\\\frac{x^4}{4} - \\\\frac{x^3}{3} - x^2 \\right]_{-1}^{0}$",
+            "Evaluating this at the limits $0$ and $-1$:<br>$\\text{Area } R_1 = 0 - \\left( \\\\frac{(-1)^4}{4} - \\\\frac{(-1)^3}{3} - (-1)^2 \\right)$<br>$\\text{Area } R_1 = - \\left( \\\\frac{1}{4} + \\\\frac{1}{3} - 1 \\right) = - \\left( -\\\\frac{5}{12} \\right) = \\\\frac{5}{12}$",
+            "<strong>Part (b):</strong> Since $R_2$ lies entirely below the $x$-axis in the interval $0 < b < 2$, its area is given by the negative integral:<br>$\\text{Area } R_2 = -\\int_{0}^{b} (x^3 - x^2 - 2x) \\text{ d}x = -\\left[ \\\\frac{x^4}{4} - \\\\frac{x^3}{3} - x^2 \\right]_{0}^{b}$<br>$\\text{Area } R_2 = -\\left( \\\\frac{b^4}{4} - \\\\frac{b^3}{3} - b^2 \\right)$",
+            "Setting $\\text{Area } R_1 = \\text{Area } R_2 gives: $<br>$\\\\frac{5}{12} = -\\left( \\\\frac{b^4}{4} - \\\\frac{b^3}{3} - b^2 \\right) \\implies \\\\frac{b^4}{4} - \\\\frac{b^3}{3} - b^2 + \\\\frac{5}{12} = 0$<br>Multiplying the entire equation by $12 to clear the fractions: $<br>$3b^4 - 4b^3 - 12b^2 + 5 = 0$",
             "We can verify that this factorises to $(b+1)^2(3b^2 - 10b + 5) = 0 by expanding the brackets: $<br>$(b^2 + 2b + 1)(3b^2 - 10b + 5) = b^2(3b^2 - 10b + 5) + 2b(3b^2 - 10b + 5) + 1(3b^2 - 10b + 5)$<br>$= 3b^4 - 10b^3 + 5b^2 + 6b^3 - 20b^2 + 10b + 3b^2 - 10b + 5$<br>$= 3b^4 - 4b^3 - 12b^2 + 5 = 0 \\quad \\text{(verified)}$",
-            "<strong>Part (c):</strong> The root $b \\approx 2.721$ lies to the right of the root $x = 2$, which is outside our interval of validity $0 < b < 2$.<br>Geometrically, this value represents an upper limit where the total net signed area from $0$ to $2.721$ integrates to $-\\frac{5}{12}$. This occurs because the negative area of the lower lobe (between $0$ and $2$) is partially cancelled out by the positive area of the upper lobe (between $2$ and $2.721$).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure/004036_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (c):</strong> The root $b \\approx 2.721$ lies to the right of the root $x = 2$, which is outside our interval of validity $0 < b < 2$.<br>Geometrically, this value represents an upper limit where the total net signed area from $0$ to $2.721$ integrates to $-\\\\frac{5}{12}$. This occurs because the negative area of the lower lobe (between $0$ and $2$) is partially cancelled out by the positive area of the upper lobe (between $2$ and $2.721$).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure/004036_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "Final Answer: <strong>(a)</strong> $\\text{Area } R_1 = \\dfrac{5}{12}$ <strong>(b)</strong> $(b+1)^2(3b^2 - 10b + 5) = 0 \\quad \\text{is verified}$ <strong>(c)</strong> $b \\approx 2.721\\\\\\ \\text{represents the point of signed area cancellation}$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $\\text{Area } R_1 = -\\dfrac{5}{12}$ <strong>(b)</strong> $(b+1)^2(3b^2 - 10b + 5) = 0$ <strong>(c)</strong> $b \\approx 2.721\\\\\\ \\text{represents a turning point}$",
-                "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the $x$-axis, its area must be a positive value: $\\frac{5}{12}$, not $-\\frac{5}{12}$. Area is a physical quantity and cannot be negative."
+                "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the $x$-axis, its area must be a positive value: $\\\\frac{5}{12}$, not $-\\\\frac{5}{12}$. Area is a physical quantity and cannot be negative."
             },
             {
                 "ans": "<strong>(a)</strong> $\\text{Area } R_1 = \\dfrac{5}{12}$ <strong>(b)</strong> $(b-1)^2(3b^2 - 10b + 5) = 0$ <strong>(c)</strong> $b \\approx 2.721\\\\\\ \\text{represents area cancellation}$",
@@ -1439,18 +1439,18 @@ window.ALEVEL_QUESTIONS = [
         "question": "The diagram shows a sketch of part of the curve with equation:<br>$y = x(x+1)(x-3)$<br>The region $R_1$, shown shaded in the diagram, is bounded by the curve and the negative $x$-axis.<br><strong>(a)</strong> Show that the exact area of $R_1$ is $\\dfrac{7}{12}$.<br><br>The region $R_2$, also shown shaded in the diagram, is bounded by the curve, the positive $x$-axis, and the line with equation $x = b$, where $b$ is a positive constant and $0 < b < 3$.<br>Given that the area of $R_1$ is equal to the area of $R_2$:<br><strong>(b)</strong> Verify that $b satisfies the equation: $<br>$(b+1)^2(3b^2 - 14b + 7) = 0$<br>The roots of the equation $3b^2 - 14b + 7 = 0$ are $0.570$ and $4.097$ to 3 decimal places. The value of $b$ is therefore $0.570$ to 3 decimal places.<br><strong>(c)</strong> Explain, with the aid of a diagram, the significance of the root $4.097$.",
         "steps": [
             "<strong>Part (a):</strong> First, we expand the cubic equation to make it easy to integrate:<br>$y = x(x+1)(x-3) = x(x^2 - 2x - 3) = x^3 - 2x^2 - 3x$",
-            "Since the region $R_1$ lies entirely above the $x$-axis between $x = -1$ and $x = 0$, its exact area is given by the definite integral:<br>$\\text{Area } R_1 = \\int_{-1}^{0} (x^3 - 2x^2 - 3x) \\text{ d}x$<br>$\\text{Area } R_1 = \\left[ \\frac{x^4}{4} - \\frac{2x^3}{3} - \\frac{3x^2}{2} \\right]_{-1}^{0}$",
-            "Evaluating this at the limits $0$ and $-1$:<br>$\\text{Area } R_1 = 0 - \\left( \\frac{(-1)^4}{4} - \\frac{2(-1)^3}{3} - \\frac{3(-1)^2}{2} \\right)$<br>$\\text{Area } R_1 = - \\left( \\frac{1}{4} + \\frac{2}{3} - \\frac{3}{2} \\right) = - \\left( -\\frac{7}{12} \\right) = \\frac{7}{12}$",
-            "<strong>Part (b):</strong> Since $R_2$ lies entirely below the $x$-axis in the interval $0 < b < 3$, its area is given by the negative integral:<br>$\\text{Area } R_2 = -\\int_{0}^{b} (x^3 - 2x^2 - 3x) \\text{ d}x = -\\left[ \\frac{x^4}{4} - \\frac{2x^3}{3} - \\frac{3x^2}{2} \\right]_{0}^{b}$<br>$\\text{Area } R_2 = -\\left( \\frac{b^4}{4} - \\frac{2b^3}{3} - \\frac{3b^2}{2} \\right)$",
-            "Setting $\\text{Area } R_1 = \\text{Area } R_2 gives: $<br>$\\frac{7}{12} = -\\left( \\frac{b^4}{4} - \\frac{2b^3}{3} - \\frac{3b^2}{2} \\right) \\implies \\frac{b^4}{4} - \\frac{2b^3}{3} - \\frac{3b^2}{2} + \\frac{7}{12} = 0$<br>Multiplying the entire equation by $12 to clear the fractions: $<br>$3b^4 - 8b^3 - 18b^2 + 7 = 0$",
+            "Since the region $R_1$ lies entirely above the $x$-axis between $x = -1$ and $x = 0$, its exact area is given by the definite integral:<br>$\\text{Area } R_1 = \\int_{-1}^{0} (x^3 - 2x^2 - 3x) \\text{ d}x$<br>$\\text{Area } R_1 = \\left[ \\\\frac{x^4}{4} - \\\\frac{2x^3}{3} - \\\\frac{3x^2}{2} \\right]_{-1}^{0}$",
+            "Evaluating this at the limits $0$ and $-1$:<br>$\\text{Area } R_1 = 0 - \\left( \\\\frac{(-1)^4}{4} - \\\\frac{2(-1)^3}{3} - \\\\frac{3(-1)^2}{2} \\right)$<br>$\\text{Area } R_1 = - \\left( \\\\frac{1}{4} + \\\\frac{2}{3} - \\\\frac{3}{2} \\right) = - \\left( -\\\\frac{7}{12} \\right) = \\\\frac{7}{12}$",
+            "<strong>Part (b):</strong> Since $R_2$ lies entirely below the $x$-axis in the interval $0 < b < 3$, its area is given by the negative integral:<br>$\\text{Area } R_2 = -\\int_{0}^{b} (x^3 - 2x^2 - 3x) \\text{ d}x = -\\left[ \\\\frac{x^4}{4} - \\\\frac{2x^3}{3} - \\\\frac{3x^2}{2} \\right]_{0}^{b}$<br>$\\text{Area } R_2 = -\\left( \\\\frac{b^4}{4} - \\\\frac{2b^3}{3} - \\\\frac{3b^2}{2} \\right)$",
+            "Setting $\\text{Area } R_1 = \\text{Area } R_2 gives: $<br>$\\\\frac{7}{12} = -\\left( \\\\frac{b^4}{4} - \\\\frac{2b^3}{3} - \\\\frac{3b^2}{2} \\right) \\implies \\\\frac{b^4}{4} - \\\\frac{2b^3}{3} - \\\\frac{3b^2}{2} + \\\\frac{7}{12} = 0$<br>Multiplying the entire equation by $12 to clear the fractions: $<br>$3b^4 - 8b^3 - 18b^2 + 7 = 0$",
             "We can verify that this factorises to $(b+1)^2(3b^2 - 14b + 7) = 0 by expanding the brackets: $<br>$(b^2 + 2b + 1)(3b^2 - 14b + 7) = b^2(3b^2 - 14b + 7) + 2b(3b^2 - 14b + 7) + 1(3b^2 - 14b + 7)$<br>$= 3b^4 - 14b^3 + 7b^2 + 6b^3 - 28b^2 + 14b + 3b^2 - 14b + 7$<br>$= 3b^4 - 8b^3 - 18b^2 + 7 = 0 \\quad \\text{(verified)}$",
-            "<strong>Part (c):</strong> The root $b \\approx 4.097$ lies to the right of the root $x = 3$, which is outside our interval of validity $0 < b < 3$.<br>Geometrically, this value represents an upper limit where the total net signed area from $0$ to $4.097$ integrates to $-\\frac{7}{12}$. This occurs because the negative area of the lower lobe (between $0$ and $3$) is partially cancelled out by the positive area of the upper lobe (between $3$ and $4.097$).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure/004037_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (c):</strong> The root $b \\approx 4.097$ lies to the right of the root $x = 3$, which is outside our interval of validity $0 < b < 3$.<br>Geometrically, this value represents an upper limit where the total net signed area from $0$ to $4.097$ integrates to $-\\\\frac{7}{12}$. This occurs because the negative area of the lower lobe (between $0$ and $3$) is partially cancelled out by the positive area of the upper lobe (between $3$ and $4.097$).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure/004037_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "Final Answer: <strong>(a)</strong> $\\text{Area } R_1 = \\dfrac{7}{12}$ <strong>(b)</strong> $(b+1)^2(3b^2 - 14b + 7) = 0 \\quad \\text{is verified}$ <strong>(c)</strong> $b \\approx 4.097\\\\\\ \\text{represents the point of signed area cancellation}$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $\\text{Area } R_1 = -\\dfrac{7}{12}$ <strong>(b)</strong> $(b+1)^2(3b^2 - 14b + 7) = 0$ <strong>(c)</strong> $b \\approx 4.097\\\\\\ \\text{represents a turning point}$",
-                "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the $x$-axis, its area must be positive: $\\frac{7}{12}$, not $-\\frac{7}{12}$."
+                "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the $x$-axis, its area must be positive: $\\\\frac{7}{12}$, not $-\\\\frac{7}{12}$."
             },
             {
                 "ans": "<strong>(a)</strong> $\\text{Area } R_1 = \\dfrac{7}{12}$ <strong>(b)</strong> $(b-1)^2(3b^2 - 14b + 7) = 0$ <strong>(c)</strong> $b \\approx 4.097\\\\\\ \\text{represents area cancellation}$",
@@ -1481,18 +1481,18 @@ window.ALEVEL_QUESTIONS = [
         "question": "The diagram shows a sketch of part of the curve with equation:<br>$y = x(x+2)(x-3)$<br>The region $R_1$, shown shaded in the diagram, is bounded by the curve and the negative $x$-axis.<br><strong>(a)</strong> Show that the exact area of $R_1$ is $\\dfrac{16}{3}$.<br><br>The region $R_2$, also shown shaded in the diagram, is bounded by the curve, the positive $x$-axis, and the line with equation $x = b$, where $b$ is a positive constant and $0 < b < 3$.<br>Given that the area of $R_1$ is equal to the area of $R_2$:<br><strong>(b)</strong> Verify that $b satisfies the equation: $<br>$(b+2)^2(3b^2 - 16b + 16) = 0$<br>The roots of the equation $3b^2 - 16b + 16 = 0$ are $\\dfrac{4}{3}$ and $4$. The value of $b$ is therefore $\\dfrac{4}{3}$.<br><strong>(c)</strong> Explain, with the aid of a diagram, the significance of the root $4$.",
         "steps": [
             "<strong>Part (a):</strong> First, we expand the cubic equation to make it easy to integrate:<br>$y = x(x+2)(x-3) = x(x^2 - x - 6) = x^3 - x^2 - 6x$",
-            "Since the region $R_1$ lies entirely above the $x$-axis between $x = -2$ and $x = 0$, its exact area is given by the definite integral:<br>$\\text{Area } R_1 = \\int_{-2}^{0} (x^3 - x^2 - 6x) \\text{ d}x$<br>$\\text{Area } R_1 = \\left[ \\frac{x^4}{4} - \\frac{x^3}{3} - 3x^2 \\right]_{-2}^{0}$",
-            "Evaluating this at the limits $0$ and $-2$:<br>$\\text{Area } R_1 = 0 - \\left( \\frac{(-2)^4}{4} - \\frac{(-2)^3}{3} - 3(-2)^2 \\right)$<br>$\\text{Area } R_1 = - \\left( 4 + \\frac{8}{3} - 12 \\right) = - \\left( -\\frac{16}{3} \\right) = \\frac{16}{3}$",
-            "<strong>Part (b):</strong> Since $R_2$ lies entirely below the $x$-axis in the interval $0 < b < 3$, its area is given by the negative integral:<br>$\\text{Area } R_2 = -\\int_{0}^{b} (x^3 - x^2 - 6x) \\text{ d}x = -\\left[ \\frac{x^4}{4} - \\frac{x^3}{3} - 3x^2 \\right]_{0}^{b}$<br>$\\text{Area } R_2 = -\\left( \\frac{b^4}{4} - \\frac{b^3}{3} - 3b^2 \\right)$",
-            "Setting $\\text{Area } R_1 = \\text{Area } R_2 gives: $<br>$\\frac{16}{3} = -\\left( \\frac{b^4}{4} - \\frac{b^3}{3} - 3b^2 \\right) \\implies \\frac{b^4}{4} - \\frac{b^3}{3} - 3b^2 + \\frac{16}{3} = 0$<br>Multiplying the entire equation by $12 to clear the fractions: $<br>$3b^4 - 4b^3 - 36b^2 + 64 = 0$",
+            "Since the region $R_1$ lies entirely above the $x$-axis between $x = -2$ and $x = 0$, its exact area is given by the definite integral:<br>$\\text{Area } R_1 = \\int_{-2}^{0} (x^3 - x^2 - 6x) \\text{ d}x$<br>$\\text{Area } R_1 = \\left[ \\\\frac{x^4}{4} - \\\\frac{x^3}{3} - 3x^2 \\right]_{-2}^{0}$",
+            "Evaluating this at the limits $0$ and $-2$:<br>$\\text{Area } R_1 = 0 - \\left( \\\\frac{(-2)^4}{4} - \\\\frac{(-2)^3}{3} - 3(-2)^2 \\right)$<br>$\\text{Area } R_1 = - \\left( 4 + \\\\frac{8}{3} - 12 \\right) = - \\left( -\\\\frac{16}{3} \\right) = \\\\frac{16}{3}$",
+            "<strong>Part (b):</strong> Since $R_2$ lies entirely below the $x$-axis in the interval $0 < b < 3$, its area is given by the negative integral:<br>$\\text{Area } R_2 = -\\int_{0}^{b} (x^3 - x^2 - 6x) \\text{ d}x = -\\left[ \\\\frac{x^4}{4} - \\\\frac{x^3}{3} - 3x^2 \\right]_{0}^{b}$<br>$\\text{Area } R_2 = -\\left( \\\\frac{b^4}{4} - \\\\frac{b^3}{3} - 3b^2 \\right)$",
+            "Setting $\\text{Area } R_1 = \\text{Area } R_2 gives: $<br>$\\\\frac{16}{3} = -\\left( \\\\frac{b^4}{4} - \\\\frac{b^3}{3} - 3b^2 \\right) \\implies \\\\frac{b^4}{4} - \\\\frac{b^3}{3} - 3b^2 + \\\\frac{16}{3} = 0$<br>Multiplying the entire equation by $12 to clear the fractions: $<br>$3b^4 - 4b^3 - 36b^2 + 64 = 0$",
             "We can verify that this factorises to $(b+2)^2(3b^2 - 16b + 16) = 0 by expanding the brackets: $<br>$(b^2 + 4b + 4)(3b^2 - 16b + 16) = b^2(3b^2 - 16b + 16) + 4b(3b^2 - 16b + 16) + 4(3b^2 - 16b + 16)$<br>$= 3b^4 - 16b^3 + 16b^2 + 12b^3 - 64b^2 + 64b + 12b^2 - 64b + 64$<br>$= 3b^4 - 4b^3 - 36b^2 + 64 = 0 \\quad \\text{(verified)}$",
-            "<strong>Part (c):</strong> The root $b = 4$ lies to the right of the root $x = 3$, which is outside our interval of validity $0 < b < 3$.<br>Geometrically, this value represents an upper limit where the total net signed area from $0$ to $4$ integrates to $-\\frac{16}{3}$. This occurs because the negative area of the lower lobe (between $0$ and $3$) is partially cancelled out by the positive area of the upper lobe (between $3$ and $4$).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure/004038_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<strong>Part (c):</strong> The root $b = 4$ lies to the right of the root $x = 3$, which is outside our interval of validity $0 < b < 3$.<br>Geometrically, this value represents an upper limit where the total net signed area from $0$ to $4$ integrates to $-\\\\frac{16}{3}$. This occurs because the negative area of the lower lobe (between $0$ and $3$) is partially cancelled out by the positive area of the upper lobe (between $3$ and $4$).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure/004038_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "Final Answer: <strong>(a)</strong> $\\text{Area } R_1 = \\dfrac{16}{3}$ <strong>(b)</strong> $(b+2)^2(3b^2 - 16b + 16) = 0 \\quad \\text{is verified}$ <strong>(c)</strong> $b = 4\\\\\\ \\text{represents the point of signed area cancellation}$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $\\text{Area } R_1 = -\\dfrac{16}{3}$ <strong>(b)</strong> $(b+2)^2(3b^2 - 16b + 16) = 0$ <strong>(c)</strong> $b = 4\\\\\\ \\text{represents a turning point}$",
-                "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the $x$-axis, its area must be positive: $\\frac{16}{3}$, not $-\\frac{16}{3}$."
+                "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the $x$-axis, its area must be positive: $\\\\frac{16}{3}$, not $-\\\\frac{16}{3}$."
             },
             {
                 "ans": "<strong>(a)</strong> $\\text{Area } R_1 = \\dfrac{16}{3}$ <strong>(b)</strong> $(b-2)^2(3b^2 - 16b + 16) = 0$ <strong>(c)</strong> $b = 4\\\\\\ \\text{represents area cancellation}$",
@@ -1506,7 +1506,7 @@ window.ALEVEL_QUESTIONS = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Beautiful Exact Roots",
-            "content": "Notice how this question resolves to perfectly exact rational and integer roots ($\\frac{4}{3}$ and $4$). In exam conditions, when your calculations collapse into clean integers rather than long decimals, you can have high confidence that your algebraic working is correct."
+            "content": "Notice how this question resolves to perfectly exact rational and integer roots ($\\\\frac{4}{3}$ and $4$). In exam conditions, when your calculations collapse into clean integers rather than long decimals, you can have high confidence that your algebraic working is correct."
         }
     },
     {
@@ -1523,10 +1523,10 @@ window.ALEVEL_QUESTIONS = [
         "question": "The diagram shows a sketch of part of the curve with equation:<br>$y = x(x+3)(x-3)$<br>The region $R_1$, shown shaded in the diagram, is bounded by the curve and the negative $x$-axis.<br><strong>(a)</strong> Show that the exact area of $R_1$ is $\\dfrac{81}{4}$.<br><br>The region $R_2$, also shown shaded in the diagram, is bounded by the curve, the positive $x$-axis, and the line with equation $x = b$, where $b$ is a positive constant and $0 < b < 3$.<br>Given that the area of $R_1$ is equal to the area of $R_2$:<br><strong>(b)</strong> Verify that $b satisfies the equation: $<br>$(b+3)^2(b-3)^2 = 0$<br>The root of the equation $(b-3)^2 = 0$ is $3$. The value of $b$ is therefore $3$.<br><strong>(c)</strong> Explain, with the aid of a diagram, the significance of this root.",
         "steps": [
             "<strong>Part (a):</strong> First, we expand the cubic equation to make it easy to integrate:<br>$y = x(x+3)(x-3) = x(x^2 - 9) = x^3 - 9x$",
-            "Since the region $R_1$ lies entirely above the $x$-axis between $x = -3$ and $x = 0$, its exact area is given by the definite integral:<br>$\\text{Area } R_1 = \\int_{-3}^{0} (x^3 - 9x) \\text{ d}x$<br>$\\text{Area } R_1 = \\left[ \\frac{x^4}{4} - \\frac{9x^2}{2} \\right]_{-3}^{0}$",
-            "Evaluating this at the limits $0$ and $-3$:<br>$\\text{Area } R_1 = 0 - \\left( \\frac{(-3)^4}{4} - \\frac{9(-3)^2}{2} \\right)$<br>$\\text{Area } R_1 = - \\left( \\frac{81}{4} - \\frac{81}{2} \\right) = - \\left( -\\frac{81}{4} \\right) = \\frac{81}{4}$",
-            "<strong>Part (b):</strong> Since $R_2$ lies entirely below the $x$-axis in the interval $0 < b < 3$, its area is given by the negative integral:<br>$\\text{Area } R_2 = -\\int_{0}^{b} (x^3 - 9x) \\text{ d}x = -\\left[ \\frac{x^4}{4} - \\frac{9x^2}{2} \\right]_{0}^{b}$<br>$\\text{Area } R_2 = -\\left( \\frac{b^4}{4} - \\frac{9b^2}{2} \\right)$",
-            "Setting $\\text{Area } R_1 = \\text{Area } R_2 gives: $<br>$\\frac{81}{4} = -\\left( \\frac{b^4}{4} - \\frac{9b^2}{2} \\right) \\implies \\frac{b^4}{4} - \\frac{9b^2}{2} + \\frac{81}{4} = 0$<br>Multiplying the entire equation by $4 to clear the fractions: $<br>$b^4 - 18b^2 + 81 = 0$",
+            "Since the region $R_1$ lies entirely above the $x$-axis between $x = -3$ and $x = 0$, its exact area is given by the definite integral:<br>$\\text{Area } R_1 = \\int_{-3}^{0} (x^3 - 9x) \\text{ d}x$<br>$\\text{Area } R_1 = \\left[ \\\\frac{x^4}{4} - \\\\frac{9x^2}{2} \\right]_{-3}^{0}$",
+            "Evaluating this at the limits $0$ and $-3$:<br>$\\text{Area } R_1 = 0 - \\left( \\\\frac{(-3)^4}{4} - \\\\frac{9(-3)^2}{2} \\right)$<br>$\\text{Area } R_1 = - \\left( \\\\frac{81}{4} - \\\\frac{81}{2} \\right) = - \\left( -\\\\frac{81}{4} \\right) = \\\\frac{81}{4}$",
+            "<strong>Part (b):</strong> Since $R_2$ lies entirely below the $x$-axis in the interval $0 < b < 3$, its area is given by the negative integral:<br>$\\text{Area } R_2 = -\\int_{0}^{b} (x^3 - 9x) \\text{ d}x = -\\left[ \\\\frac{x^4}{4} - \\\\frac{9x^2}{2} \\right]_{0}^{b}$<br>$\\text{Area } R_2 = -\\left( \\\\frac{b^4}{4} - \\\\frac{9b^2}{2} \\right)$",
+            "Setting $\\text{Area } R_1 = \\text{Area } R_2 gives: $<br>$\\\\frac{81}{4} = -\\left( \\\\frac{b^4}{4} - \\\\frac{9b^2}{2} \\right) \\implies \\\\frac{b^4}{4} - \\\\frac{9b^2}{2} + \\\\frac{81}{4} = 0$<br>Multiplying the entire equation by $4 to clear the fractions: $<br>$b^4 - 18b^2 + 81 = 0$",
             "We can verify that this factorises to $(b+3)^2(b-3)^2 = 0$ (which is $(b^2 - 9)^2 = 0$) by expanding the brackets:<br>$(b^2 - 9)^2 = (b^2)^2 - 2(9)(b^2) + 81 = b^4 - 18b^2 + 81 = 0 \\quad \\text{(verified)}$",
             "<strong>Part (c):</strong> The root $b = 3$ is exactly the second positive root of the cubic equation.<br>Geometrically, choosing $b = 3$ means that $R_2$ is the entire negative lobe of the curve between $0$ and $3$. Because $y = x^3 - 9x$ is an odd function, it is perfectly symmetric about the origin, meaning the area of the positive lobe $R_1$ is identical to the area of the negative lobe $R_2$.<br><br>Here is the diagram showing this symmetry:<br><img src='images/Pure/004039_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "Final Answer: <strong>(a)</strong> $\\text{Area } R_1 = \\dfrac{81}{4}$ <strong>(b)</strong> $(b+3)^2(b-3)^2 = 0 \\quad \\text{is verified}$ <strong>(c)</strong> $b = 3\\\\\\ \\text{represents the symmetric opposite lobe boundary}$"
@@ -1534,7 +1534,7 @@ window.ALEVEL_QUESTIONS = [
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $\\text{Area } R_1 = -\\dfrac{81}{4}$ <strong>(b)</strong> $(b+3)^2(b-3)^2 = 0$ <strong>(c)</strong> $b = 3\\\\\\ \\text{represents a turning point}$",
-                "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the $x$-axis, its area must be positive: $\\frac{81}{4}$, not $-\\frac{81}{4}$."
+                "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the $x$-axis, its area must be positive: $\\\\frac{81}{4}$, not $-\\\\frac{81}{4}$."
             },
             {
                 "ans": "<strong>(a)</strong> $\\text{Area } R_1 = \\dfrac{81}{4}$ <strong>(b)</strong> $(b-3)^4 = 0$ <strong>(c)</strong> $b = 3\\\\\\ \\text{is the local minimum of the curve}$",
@@ -1565,10 +1565,10 @@ window.ALEVEL_QUESTIONS = [
         "question": "The diagram shows a sketch of part of the curve with equation:<br>$y = x(x+2)(x-5)$<br>The region $R_1$, shown shaded in the diagram, is bounded by the curve and the negative $x$-axis.<br><strong>(a)</strong> Show that the exact area of $R_1$ is $8$.<br><br>The region $R_2$, also shown shaded in the diagram, is bounded by the curve, the positive $x$-axis, and the line with equation $x = b$, where $b$ is a positive constant and $0 < b < 5$.<br>Given that the area of $R_1$ is equal to the area of $R_2$:<br><strong>(b)</strong> Verify that $b satisfies the equation: $<br>$(b+2)^2(3b^2 - 24b + 24) = 0$<br>The roots of the equation $3b^2 - 24b + 24 = 0$ are $1.172$ and $6.828$ to 3 decimal places. The value of $b$ is therefore $1.172$ to 3 decimal places.<br><strong>(c)</strong> Explain, with the aid of a diagram, the significance of the root $6.828$.",
         "steps": [
             "<strong>Part (a):</strong> First, we expand the cubic equation to make it easy to integrate:<br>$y = x(x+2)(x-5) = x(x^2 - 3x - 10) = x^3 - 3x^2 - 10x$",
-            "Since the region $R_1$ lies entirely above the $x$-axis between $x = -2$ and $x = 0$, its exact area is given by the definite integral:<br>$\\text{Area } R_1 = \\int_{-2}^{0} (x^3 - 3x^2 - 10x) \\text{ d}x$<br>$\\text{Area } R_1 = \\left[ \\frac{x^4}{4} - x^3 - 5x^2 \\right]_{-2}^{0}$",
-            "Evaluating this at the limits $0$ and $-2$:<br>$\\text{Area } R_1 = 0 - \\left( \\frac{(-2)^4}{4} - (-2)^3 - 5(-2)^2 \\right)$<br>$\\text{Area } R_1 = - \\left( 4 + 8 - 20 \\right) = - \\left( -8 \\right) = 8$",
-            "<strong>Part (b):</strong> Since $R_2$ lies entirely below the $x$-axis in the interval $0 < b < 5$, its area is given by the negative integral:<br>$\\text{Area } R_2 = -\\int_{0}^{b} (x^3 - 3x^2 - 10x) \\text{ d}x = -\\left[ \\frac{x^4}{4} - x^3 - 5x^2 \\right]_{0}^{b}$<br>$\\text{Area } R_2 = -\\left( \\frac{b^4}{4} - b^3 - 5b^2 \\right)$",
-            "Setting $\\text{Area } R_1 = \\text{Area } R_2 gives: $<br>$8 = -\\left( \\frac{b^4}{4} - b^3 - 5b^2 \\right) \\implies \\frac{b^4}{4} - b^3 - 5b^2 + 8 = 0$<br>Multiplying the entire equation by $4 to clear the fractions: $<br>$b^4 - 4b^3 - 20b^2 + 32 = 0$",
+            "Since the region $R_1$ lies entirely above the $x$-axis between $x = -2$ and $x = 0$, its exact area is given by the definite integral:<br>$\\text{Area } R_1 = \\int_{-2}^{0} (x^3 - 3x^2 - 10x) \\text{ d}x$<br>$\\text{Area } R_1 = \\left[ \\\\frac{x^4}{4} - x^3 - 5x^2 \\right]_{-2}^{0}$",
+            "Evaluating this at the limits $0$ and $-2$:<br>$\\text{Area } R_1 = 0 - \\left( \\\\frac{(-2)^4}{4} - (-2)^3 - 5(-2)^2 \\right)$<br>$\\text{Area } R_1 = - \\left( 4 + 8 - 20 \\right) = - \\left( -8 \\right) = 8$",
+            "<strong>Part (b):</strong> Since $R_2$ lies entirely below the $x$-axis in the interval $0 < b < 5$, its area is given by the negative integral:<br>$\\text{Area } R_2 = -\\int_{0}^{b} (x^3 - 3x^2 - 10x) \\text{ d}x = -\\left[ \\\\frac{x^4}{4} - x^3 - 5x^2 \\right]_{0}^{b}$<br>$\\text{Area } R_2 = -\\left( \\\\frac{b^4}{4} - b^3 - 5b^2 \\right)$",
+            "Setting $\\text{Area } R_1 = \\text{Area } R_2 gives: $<br>$8 = -\\left( \\\\frac{b^4}{4} - b^3 - 5b^2 \\right) \\implies \\\\frac{b^4}{4} - b^3 - 5b^2 + 8 = 0$<br>Multiplying the entire equation by $4 to clear the fractions: $<br>$b^4 - 4b^3 - 20b^2 + 32 = 0$",
             "We can verify that this factorises to $(b+2)^2(b^2 - 8b + 8) = 0$ (which is equivalent to $(b+2)^2(3b^2 - 24b + 24) = 0$ upon multiplying the quadratic by $3$) by expanding the brackets:<br>$(b^2 + 4b + 4)(3b^2 - 24b + 24) = b^2(3b^2 - 24b + 24) + 4b(3b^2 - 24b + 24) + 4(3b^2 - 24b + 24)$<br>$= 3b^4 - 24b^3 + 24b^2 + 12b^3 - 96b^2 + 96b + 12b^2 - 96b + 94$<br>Wait! Let's check the constants:<br>$4 \\times 24 = 96$. So the expansion yields:<br>$3b^4 - 12b^3 - 60b^2 + 96 = 0 \\implies 3(b^4 - 4b^3 - 20b^2 + 32) = 0 \\quad \\text{(verified)}$",
             "<strong>Part (c):</strong> The root $b \\approx 6.828$ lies to the right of the root $x = 5$, which is outside our interval of validity $0 < b < 5$.<br>Geometrically, this value represents an upper limit where the total net signed area from $0$ to $6.828$ integrates to $-8$. This occurs because the negative area of the lower lobe (between $0$ and $5$) is partially cancelled out by the positive area of the upper lobe (between $5$ and $6.828$).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure/004040_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "Final Answer: <strong>(a)</strong> $\\text{Area } R_1 = 8$ <strong>(b)</strong> $(b+2)^2(3b^2 - 24b + 24) = 0 \\quad \\text{is verified}$ <strong>(c)</strong> $b \\approx 6.828\\\\\\ \\text{represents the point of signed area cancellation}$"
@@ -1649,7 +1649,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "Given that $a > b > 0$, and that $a$ and $b satisfy the equation: $<br>$\\log a - 2\\log b = \\log(a - b)$<br><strong>(a)</strong> Show that:<br>$a = \\dfrac{b^3}{b^2 - 1}$<br><strong>(b)</strong> Write down the full restriction on the value of $b$, explaining the reason for this restriction.",
         "steps": [
             "<strong>Part (a):</strong> We begin by applying the logarithm power law, $c\\log(x) = \\log(x^c)$, to the second term on the left-hand side:<br>$\\log a - \\log(b^2) = \\log(a - b)$",
-            "Applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\frac{x}{y}\\right)$:<br>$\\log\\left(\\dfrac{a}{b^2}\\right) = \\log(a - b)$",
+            "Applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\\\frac{x}{y}\\right)$:<br>$\\log\\left(\\dfrac{a}{b^2}\\right) = \\log(a - b)$",
             "Removing the logarithms from both sides of the equation:<br>$\\dfrac{a}{b^2} = a - b$",
             "Multiplying both sides by $b^2 to eliminate the fraction: $<br>$a = b^2(a - b) \\implies a = ab^2 - b^3$",
             "Rearranging to group all terms containing the variable $a together on the right-hand side: $<br>$b^3 = ab^2 - a$",
@@ -1692,7 +1692,7 @@ window.ALEVEL_QUESTIONS = [
         "img": false,
         "question": "Given that $a > b > 0$, and that $a$ and $b satisfy the equation: $<br>$\\log a - \\log b = \\log(2a - b)$<br><strong>(a)</strong> Show that:<br>$a = \\dfrac{b^2}{2b - 1}$<br><strong>(b)</strong> Write down the full restriction on the value of $b$, explaining the reason for this restriction.",
         "steps": [
-            "<strong>Part (a):</strong> We begin by applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\frac{x}{y}\\right)$, to the left-hand side of our equation:<br>$\\log\\left(\\dfrac{a}{b}\\right) = \\log(2a - b)$",
+            "<strong>Part (a):</strong> We begin by applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\\\frac{x}{y}\\right)$, to the left-hand side of our equation:<br>$\\log\\left(\\dfrac{a}{b}\\right) = \\log(2a - b)$",
             "Removing the logarithms from both sides of the equation:<br>$\\dfrac{a}{b} = 2a - b$",
             "Multiplying both sides by $b to eliminate the fraction: $<br>$a = b(2a - b) \\implies a = 2ab - b^2$",
             "Rearranging to group all terms containing the variable $a together on the right-hand side: $<br>$b^2 = 2ab - a$",
@@ -1701,13 +1701,13 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (b):</strong> For the logarithmic terms to be defined, we are given that $a > b > 0$.",
             "First, since $a > 0$ and the numerator is positive ($b^2 > 0$), our denominator must be strictly positive to ensure a positive quotient:<br>$2b - 1 > 0 \\implies b > 0.5$",
             "Second, we must satisfy the initial condition that $a > b$:<br>$\\dfrac{b^2}{2b - 1} > b$<br>Since $2b-1 > 0$, we can multiply both sides by $(2b-1) safely without swapping the inequality sign: $<br>$b^2 > b(2b - 1) \\implies b^2 > 2b^2 - b$<br>$b > b^2$<br>Since $b > 0$, we can divide by $b$:<br>$1 > b \\implies b < 1$",
-            "Combining both inequalities yields our full, strict restriction on $b$:<br>$\\frac{1}{2} < b < 1$",
+            "Combining both inequalities yields our full, strict restriction on $b$:<br>$\\\\frac{1}{2} < b < 1$",
             "Final Answer: <strong>(a)</strong> $a = \\dfrac{b^2}{2b - 1}\\\\\\ \\text{is verified}$ <strong>(b)</strong> $\\dfrac{1}{2} < b < 1$"
         ],
         "pi_options": [
             {
                 "ans": "<strong>(a)</strong> $a = \\dfrac{b^2}{2b - 1}$ <strong>(b)</strong> $b > 0.5$",
-                "feedback": "You probably forgot to account for the second half of the restriction in Part (b). While $b > 0.5$ guarantees that $a$ is positive, we are also given that $a > b$. Solving $\\frac{b^2}{2b-1} > b$ yields $b < 1$, which tightens the restriction to $\\frac{1}{2} < b < 1$."
+                "feedback": "You probably forgot to account for the second half of the restriction in Part (b). While $b > 0.5$ guarantees that $a$ is positive, we are also given that $a > b$. Solving $\\\\frac{b^2}{2b-1} > b$ yields $b < 1$, which tightens the restriction to $\\\\frac{1}{2} < b < 1$."
             },
             {
                 "ans": "<strong>(a)</strong> $a = \\dfrac{b^2}{1 - 2b}$ <strong>(b)</strong> $\\dfrac{1}{2} < b < 1$",
@@ -1737,7 +1737,7 @@ window.ALEVEL_QUESTIONS = [
         "img": false,
         "question": "Given that $a > 2b > 0$, and that $a$ and $b satisfy the equation: $<br>$\\log a - \\log b = \\log(a - 2b)$<br><strong>(a)</strong> Show that:<br>$a = \\dfrac{2b^2}{b - 1}$<br><strong>(b)</strong> Write down the full restriction on the value of $b$, explaining the reason for this restriction.",
         "steps": [
-            "<strong>Part (a):</strong> We begin by applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\frac{x}{y}\\right)$, to the left-hand side of our equation:<br>$\\log\\left(\\dfrac{a}{b}\\right) = \\log(a - 2b)$",
+            "<strong>Part (a):</strong> We begin by applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\\\frac{x}{y}\\right)$, to the left-hand side of our equation:<br>$\\log\\left(\\dfrac{a}{b}\\right) = \\log(a - 2b)$",
             "Removing the logarithms from both sides of the equation:<br>$\\dfrac{a}{b} = a - 2b$",
             "Multiplying both sides by $b to eliminate the fraction: $<br>$a = b(a - 2b) \\implies a = ab - 2b^2$",
             "Rearranging to group all terms containing the variable $a together on the right-hand side: $<br>$2b^2 = ab - a$",
@@ -1781,7 +1781,7 @@ window.ALEVEL_QUESTIONS = [
         "question": "Given that $a > b^2 > 0$ and $b > 0$, and that $a$ and $b satisfy the equation: $<br>$\\log a - 3\\log b = \\log(a - b^2)$<br><strong>(a)</strong> Show that:<br>$a = \\dfrac{b^5}{b^3 - 1}$<br><strong>(b)</strong> Write down the full restriction on the value of $b$, explaining the reason for this restriction.",
         "steps": [
             "<strong>Part (a):</strong> We begin by applying the logarithm power law, $c\\log(x) = \\log(x^c)$, to the second term on the left-hand side:<br>$\\log a - \\log(b^3) = \\log(a - b^2)$",
-            "Applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\frac{x}{y}\\right)$:<br>$\\log\\left(\\dfrac{a}{b^3}\\right) = \\log(a - b^2)$",
+            "Applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\\\frac{x}{y}\\right)$:<br>$\\log\\left(\\dfrac{a}{b^3}\\right) = \\log(a - b^2)$",
             "Removing the logarithms from both sides of the equation:<br>$\\dfrac{a}{b^3} = a - b^2$",
             "Multiplying both sides by $b^3 to eliminate the fraction: $<br>$a = b^3(a - b^2) \\implies a = ab^3 - b^5$",
             "Rearranging to group all terms containing the variable $a together on the right-hand side: $<br>$b^5 = ab^3 - a$",
@@ -1870,7 +1870,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (i):</strong> We use <strong>proof by exhaustion</strong> by splitting the natural numbers into two cases: even numbers ($n = 2k$) and odd numbers ($n = 2k + 1$) for some non-negative integer $k$.",
             "<strong>Case 1: $n$ is even ($n = 2k$)</strong><br>$n^2 + 1 = (2k)^2 + 1 = 4k^2 + 1 = 4(k^2) + 1$<br>Since $4(k^2)$ is divisible by $4$, $n^2+1$ leaves a remainder of $1$ when divided by $4$, so it is not divisible.",
             "<strong>Case 2: $n$ is odd ($n = 2k + 1$)</strong><br>$n^2 + 1 = (2k+1)^2 + 1 = 4k^2 + 4k + 1 + 1 = 4(k^2 + k) + 2$<br>This leaves a remainder of $2$ when divided by $4$, so it is not divisible.<br>Therefore, since all possible cases have been exhausted, $n^2 + 1$ is never divisible by $4$ for any $n \\in \\mathbb{N}$.",
-            "<strong>Part (ii):</strong> To determine the validity of the statement $|3x - 14| \\ge x - 4$, we analyze the critical values by splitting the absolute value into two intervals at the boundary $x = \\frac{14}{3} \\approx 4.67$:",
+            "<strong>Part (ii):</strong> To determine the validity of the statement $|3x - 14| \\ge x - 4$, we analyze the critical values by splitting the absolute value into two intervals at the boundary $x = \\\\frac{14}{3} \\approx 4.67$:",
             "<strong>Case A: For $x \\ge 4.67$</strong>, the term inside the absolute value is positive, so $|3x - 14| = 3x - 14$. Our inequality becomes:<br>$3x - 14 \\ge x - 4 \\implies 2x \\ge 10 \\implies x \\ge 5$<br>This means that in the interval $4.67 \\le x < 5$, the inequality is <strong>false</strong> (for example, at $x = 4.8$, we get $0.4 \\ge 0.8$, which is false).",
             "<strong>Case B: For $x < 4.67$</strong>, the term inside the absolute value is negative, so $|3x - 14| = 14 - 3x$. Our inequality becomes:<br>$14 - 3x \\ge x - 4 \\implies 18 \\ge 4x \\implies x \\le 4.5$<br>This means the inequality is true for $x \\le 4.5$ and $x \\ge 5$, but fails in the gap $4.5 < x < 5$.",
             "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $14 \\ge -4$), but fails for a small range of values (with a counterexample of $x = 4.8$, where $|3(4.8)-14| = 0.4$ is not greater than or equal to $4.8-4 = 0.8$).",
