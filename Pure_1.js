@@ -812,7 +812,7 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for $g(x)$ to find its vertex:<br>$$g(x) = 3(x^2 - 4x + 4) + 6x - 7$$<br>$$g(x) = 3x^2 - 12x + 12 + 6x - 7 = 3x^2 - 6x + 5$$<br>$$g(x) = 3(x^2 - 2x) + 5 = 3\\left[(x-1)^2 - 1\\right] + 5$$<br>$$g(x) = 3(x-1)^2 + 2$$",
             "The vertex of $f(x)$ is at $(-1, 5)$ and the vertex of $g(x)$ is at $(1, 2)$.<br>To map $(-1, 5)$ onto $(1, 2)$, we shift $+2$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite $h(x)$ using our completed square form of the denominator:<br>$$h(x) = \\dfrac{15}{3(x+1)^2 + 5}$$<br>Since the minimum value of the denominator is $5$ (when $x = -1$), the maximum value of the fraction is $\\frac{15}{5} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < h(x) \\le 3$</strong>.",
-            "Final Answer: <strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$"
+            "Final Answer: <strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: }(-1,5),\\\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$"
         ],
         "pi_options": [
             {

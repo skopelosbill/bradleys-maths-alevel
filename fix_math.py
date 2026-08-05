@@ -1,95 +1,72 @@
 import re
 import os
 
-def clean_questions(filename):
-    print(f"Processing {filename}...")
+# =====================================================
+# DRY_RUN MODE:
+# Set to True to preview the changes in your terminal without writing to the disk.
+# Set to False only when you are 100% happy with the terminal preview!
+# =====================================================
+DRY_RUN = True
+
+def clean_line_by_line(filename):
+    print(f"Scanning {filename} (DRY_RUN = {DRY_RUN})...\n")
     
+    if not os.path.exists(filename):
+        print(f"Error: Could not find {filename}")
+        return
+
     with open(filename, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # =====================================================
-    # 1. STANDARDISE ALIGNED & GENERAL TYPOGRAPHY
-    # =====================================================
-    
-    # Fix the 'f' typography: change \text{f} to algebraic f
-    content = re.sub(r"\\text\{\s*f\s*\}", "f", content)
+    # Split the file on standard newlines
+    lines = content.split('\n')
+    fixed_lines = []
+    changes_count = 0
 
-    # Convert standard function notation inside $...$ to italics if needed
-    content = content.replace("$\\text{f}", "$f")
+    for idx, line in enumerate(lines):
+        original_line = line
+        
+        # We only process lines containing actual question, step, or distractor data
+        if '"' in line or "'" in line:
+            
+            # 1. Pull "Turning Point:" out of math mode
+            line = re.sub(r"\$Turning\s+Point:\s*([^$]+?)\$", r"Turning Point: $\1$", line, flags=re.IGNORECASE)
+            
+            # 2. Pull "y-intercept:" out of math mode and format 'y' in algebraic italics
+            line = re.sub(r"\$y-intercept:\s*([^$]+?)\$", r"$y$-intercept: $\1$", line, flags=re.IGNORECASE)
 
-    # Removes '$' or '$$' from around \begin{aligned} and \end{aligned}
-    content = re.sub(r"\$?(\\begin\{aligned\}.*?\\end\{aligned\})\$?", r"\1", content, flags=re.DOTALL)
+            # 3. Pull "Translation by" out of math mode
+            line = re.sub(r"\$Translation\s+by\s*([^$]+?)\$", r"Translation by $\1$", line, flags=re.IGNORECASE)
 
+            # 4. Pull "Vector" out of math mode
+            line = re.sub(r"\$Vector\s*([^$]+?)\$", r"Vector $\1$", line, flags=re.IGNORECASE)
 
-    # =====================================================
-    # 2. SEPARATE MIXED TEXT & MATH MODE (SPACING & ITALICS FIX)
-    # =====================================================
+            # 5. Find loose matrices/binoms not wrapped in $ and wrap them
+            line = re.sub(r"(?<!\$)(\\+begin\{pmatrix\}.*?\\+end\{pmatrix\})(?!\$)", r"$\1$", line)
+            line = re.sub(r"(?<!\$)(\\\\binom\{.*?\}\{.*?\})(?!\$)", r"$\1$", line)
 
-    # Rule A: Pull headers out of math blocks (e.g. "$Turning Point: (-1,5)$" -> "Turning Point: $(-1,5)$")
-    # Matches words followed by a colon inside single dollar signs
-    content = re.sub(r"\$([A-Za-z\s\-]+?):\s*([^$]+?)\$", r"\1: $\2$", content)
+            # 6. Heal any accidental double dollar signs ($$) created during regex merges
+            line = line.replace("$$", "$")
 
-    # Rule B: Pull "Translation by" or "Vector" out of math blocks
-    # Converts: "$Translation by \begin{pmatrix}...$" -> "Translation by $\\begin{pmatrix}...$"
-    content = re.sub(r"\$(Translation\s+by|Vector)\s+([^$]+?)\$", r"\1 $\2$", content, flags=re.IGNORECASE)
+        # If the line was changed, count it and print the diff
+        if line != original_line:
+            changes_count += 1
+            if DRY_RUN:
+                print(f"--- Line {idx + 1} ---")
+                print(f"BEFORE: {original_line.strip()}")
+                print(f"AFTER : {line.strip()}\n")
 
+        fixed_lines.append(line)
 
-    # =====================================================
-    # 3. WRAP UNWRAPPED VECTORS & MATRICES IN INLINE MATH DELIMITERS
-    # =====================================================
+    print("=====================================================")
+    print(f"Total changes detected: {changes_count}")
+    print("=====================================================")
 
-    # Rule C: Find any loose \begin{pmatrix}...\end{pmatrix} not wrapped in $ and wrap them
-    content = re.sub(r"(?<!\$)(\\+begin\{pmatrix\}.*?\\+end\{pmatrix\})(?!\$)", r"$\1$", content)
+    if not DRY_RUN:
+        new_filename = filename.replace(".js", "_FIXED.js")
+        with open(new_filename, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(fixed_lines))
+        print(f"\nSuccess! Saved all corrected changes to {new_filename}!")
+        print("Verify this file, rename it to Pure_1.js, and push when ready.")
 
-    # Rule D: Find any loose \binom{...}{...} not wrapped in $ and wrap them
-    content = re.sub(r"(?<!\$)(\\+binom\{.*?\}\{.*?\})(?!\$)", r"$\1$", content)
-
-
-    # =====================================================
-    # 4. REPAIR NESTED LATEX SYNTAX ERRORS
-    # =====================================================
-
-    # Rule E: Fix \begin{pmatrix} nested inside \text{...} which crashes KaTeX
-    # Converts: \text{Translation by \begin{pmatrix}...}} -> \text{Translation by } \begin{pmatrix}...
-    content = re.sub(
-        r"\\+text\{([^}]+?)\\+(begin\{pmatrix\}.*?\\+end\{pmatrix\})\s*\}",
-        r"\\text{\1} \2",
-        content
-    )
-
-
-    # =====================================================
-    # 5. SANITY CLEANUPS
-    # =====================================================
-
-    # Clean up any accidental double-dollar markers ($$) created during regex substitutions
-    content = content.replace("$$", "$")
-
-    # Cleanup trailing commas in arrays (good for JSON health)
-    content = re.sub(r",\s*([\]}])", r"\1", content)
-
-
-    # =====================================================
-    # 6. WRITE BACK TO FILE
-    # =====================================================
-    
-    # During testing, you write to _FIXED.js
-    # When you are ready to apply this to production, you can change this line to overwrite the original file!
-    new_filename = filename.replace(".js", "_FIXED.js")
-    
-    with open(new_filename, 'w', encoding='utf-8') as f:
-        f.write(content)
-    print(f"Done! Created {new_filename}")
-
-# List the files you want to fix here
-files_to_fix = ['Pure_1.js'] 
-
-# Pro-Tip: To automatically scan and fix ALL your Pure_*.js database files,
-# you can uncomment this line:
-# files_to_fix = [f for f in os.listdir('.') if f.startswith('Pure_') and f.endswith('.js') and '_FIXED' not in f]
-
-for file in files_to_fix:
-    if os.path.exists(file):
-        clean_questions(file)
-    else:
-        print(f"Could not find {file}")
+clean_line_by_line('Pure_1.js')
