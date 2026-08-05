@@ -785,45 +785,45 @@ window.ALEVEL_QUESTIONS = [
     }
   },
     {
-        "id": "004021",
-        "board": "Pearson Edexcel",
-        "level": "AS",
-        "major_area": "Algebra & Functions",
-        "topic": "Coordinate Geometry",
-        "subtopic": [
-            "Quadratics",
-            "Transformations"
-        ],
-        "img": false,
-        "question": "$$\f(x) = 3x^2 + 6x + 8 \\quad x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write $\f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = \f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = \f(x)$ onto the curve with equation $y = \\text{g}(x)$ where:<br>$$\\text{g}(x) = 3(x-2)^2 + 6x - 7 \\quad x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$\\text{h}(x) = \\dfrac{15}{3x^2 + 6x + 8} \\quad x \\in \\mathbb{R}$$",
-        "steps": [
-            "<strong>Part (a):</strong> We complete the square by first factorising out the $3$ from the quadratic and linear terms:<br>$$\f(x) = 3(x^2 + 2x) + 8$$<br>$$\f(x) = 3\\left[(x+1)^2 - 1^2\\right] + 8$$<br>$$\f(x) = 3(x+1)^2 - 3 + 8$$<br>$$\f(x) = 3(x+1)^2 + 5$$<br>Therefore, the constants are $a = 3$, $b = 1$, and $c = 5$.",
-            "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $\f(0) = 8$, so the curve crosses the $y$-axis at $(0, 8)$.<br>3. <strong>$x$-intercepts:</strong> Setting $3x^2+6x+8 = 0$, the discriminant is $\\Delta = 6^2 - 4(3)(8) = -60 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004021_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-            "<strong>Part (c)(i):</strong> First, we expand and complete the square for $\\text{g}(x)$ to find its vertex:<br>$$\\text{g}(x) = 3(x^2 - 4x + 4) + 6x - 7$$<br>$$\\text{g}(x) = 3x^2 - 12x + 12 + 6x - 7 = 3x^2 - 6x + 5$$<br>$$\\text{g}(x) = 3(x^2 - 2x) + 5 = 3\\left[(x-1)^2 - 1\\right] + 5$$<br>$$\\text{g}(x) = 3(x-1)^2 + 2$$",
-            "The vertex of $\f(x)$ is at $(-1, 5)$ and the vertex of $\\text{g}(x)$ is at $(1, 2)$.<br>To map $(-1, 5)$ onto $(1, 2)$, we shift $+2$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$</strong>.",
-            "<strong>Part (c)(ii):</strong> We rewrite $\\text{h}(x)$ using our completed square form of the denominator:<br>$$\\text{h}(x) = \\dfrac{15}{3(x+1)^2 + 5}$$<br>Since the minimum value of the denominator is $5$ (when $x = -1$), the maximum value of the fraction is $\\frac{15}{5} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is <strong>$0 < \\text{h}(x) \\le 3$</strong>.",
-            "Final Answer: <strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$"
-        ],
-        "pi_options": [
-            {
-                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} -2 \\\\\\ 3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le 3$$",
-                "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $\f(x)$ at $x = -1$ to the vertex of $\\text{g}(x)$ at $x = 1$ is a horizontal shift of $+2$. Moving from $y = 5$ to $y = 2$ is a vertical shift of $-3$. This gives the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$."
-            },
-            {
-                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le \\text{h}(x) \\le 3$$",
-                "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $3x^2+6x+8$ has a minimum value of $5$ and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < \\text{h}(x) \\le 3$, not $0 \\le \\text{h}(x) \\le 3$."
-            },
-            {
-                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 11$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,11),\\\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 2 \\\\\\ -9 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < \\text{h}(x) \\le \\dfrac{15}{11}$$",
-                "feedback": "You probably made a sign error when expanding your completed square in Part (a), adding the $3$ instead of subtracting it: $3[(x+1)^2 - 1] + 8 = 3(x+1)^2 - 3 + 8 = 3(x+1)^2 + 5$, not $+11$. This error affected all your subsequent coordinates and calculations."
-            }
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Range of Reciprocals",
-            "content": "To find the range of a reciprocal function like $\\text{h}(x) = \\frac{K}{\f(x)}$, remember that the maximum value of the function occurs when its denominator is at its absolute minimum. Use your completed square form from part (a) to read off the minimum value of $\f(x)$ instantly."
+    "id": "004021",
+    "board": "Pearson Edexcel",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Coordinate Geometry",
+    "subtopic": [
+        "Quadratics",
+        "Transformations"
+    ],
+    "img": false,
+    "question": "\\begin{aligned} f(x) = 3x^2 + 6x + 8 \\quad x \\in \\mathbb{R} \\end{aligned}<br><strong>(a)</strong> Write $f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>\\begin{aligned} g(x) = 3(x-2)^2 + 6x - 7 \\quad x \\in \\mathbb{R} \\end{aligned}<br><strong>(c)(ii)</strong> Find the range of the function:<br>\\begin{aligned} h(x) = \\dfrac{15}{3x^2 + 6x + 8} \\quad x \\in \\mathbb{R} \\end{aligned}",
+    "steps": [
+        "<strong>Part (a):</strong> We complete the square by first factorising out the $3$ from the quadratic and linear terms:<br>\\begin{aligned} f(x) &= 3(x^2 + 2x) + 8 \\cr f(x) &= 3[(x+1)^2 - 1^2] + 8 \\cr f(x) &= 3(x+1)^2 - 3 + 8 \\cr f(x) &= 3(x+1)^2 + 5 \\end{aligned}<br>Therefore, the constants are $a = 3$, $b = 1$, and $c = 5$.",
+        "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at $(-1, 5)$.<br>2. <strong>$y$-intercept:</strong> Setting $x = 0$ gives $f(0) = 8$, so the curve crosses the $y$-axis at $(0, 8)$.<br>3. <strong>$x$-intercepts:</strong> Setting $3x^2+6x+8 = 0$, the discriminant is $\\Delta = 6^2 - 4(3)(8) = -60 < 0$. There are no real roots, so the curve does not cross the $x$-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure/004021_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+        "<strong>Part (c)(i):</strong> First, we expand and complete the square for $g(x)$ to find its vertex:<br>\\begin{aligned} g(x) &= 3(x^2 - 4x + 4) + 6x - 7 \\cr g(x) &= 3x^2 - 12x + 12 + 6x - 7 \\cr g(x) &= 3x^2 - 6x + 5 \\cr g(x) &= 3(x^2 - 2x) + 5 \\cr g(x) &= 3[(x-1)^2 - 1] + 5 \\cr g(x) &= 3(x-1)^2 + 2 \\end{aligned}",
+        "The vertex of $f(x)$ is at $(-1, 5)$ and the vertex of $g(x)$ is at $(1, 2)$.<br>To map $(-1, 5)$ onto $(1, 2)$, we shift $+2$ units horizontally and $-3$ units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$</strong>.",
+        "<strong>Part (c)(ii):</strong> We rewrite $h(x)$ using our completed square form of the denominator:<br>\\begin{aligned} h(x) = \\dfrac{15}{3(x+1)^2 + 5} \\end{aligned}<br>Since the minimum value of the denominator is $5$ (when $x = -1$), the maximum value of the fraction is $\\frac{15}{5} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches $0$ from above.<br>Therefore, the range is $0 < h(x) \\le 3$.",
+        "Final Answer: <strong>(a)</strong> $3(x+1)^2 + 5$ <strong>(b)</strong> Turning Point: $(-1,5)$, $y$-intercept: $(0,8)$ <strong>(c)(i)</strong> Translation by $\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 < h(x) \\le 3$"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $3(x+1)^2 + 5$ <strong>(b)</strong> TP: $(-1,5)$ <strong>(c)(i)</strong> Vector $\\begin{pmatrix} -2 \\\\ 3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 < h(x) \\le 3$",
+            "feedback": "Check your translation vector logic. Moving from $x = -1$ to $x = 1$ is $+2$. Moving from $y = 5$ to $y = 2$ is $-3$. This gives $\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $3(x+1)^2 + 5$ <strong>(b)</strong> TP: $(-1,5)$ <strong>(c)(i)</strong> Vector $\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 \\le h(x) \\le 3$",
+            "feedback": "Check your inequality symbols. Because the denominator is strictly positive, $h(x)$ can never equal zero. The lower bound must be a strict inequality ($>$)."
+        },
+        {
+            "ans": "<strong>(a)</strong> $3(x+1)^2 + 11$ <strong>(b)</strong> TP: $(-1,11)$ <strong>(c)(i)</strong> Vector $\\begin{pmatrix} 2 \\\\ -9 \\end{pmatrix}$ <strong>(c)(ii)</strong> $0 < h(x) \\le \\dfrac{15}{11}$",
+            "feedback": "You added the $3$ instead of subtracting it during completion of the square. This error propagated through all subsequent coordinates."
         }
-    },
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Range of Reciprocals",
+        "content": "To find the range of a reciprocal function like $h(x) = \\frac{K}{f(x)}$, remember that the maximum value of the function occurs when its denominator is at its absolute minimum. Use your completed square form from part (a) to read off the minimum value of $f(x)$ instantly."
+    }
+}
     {
         "id": "004022",
         "board": "Pearson Edexcel",
