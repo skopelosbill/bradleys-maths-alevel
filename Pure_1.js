@@ -2012,19 +2012,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Case A: For $x \\ge 5.67$</strong>, the term inside the absolute value is positive, so $|3x - 17| = 3x - 17$. Our inequality becomes:<br>$$3x - 17 \\ge x - 5 \\implies 2x \\ge 12 \\implies x \\ge 6$$<br>This means that in the interval $5.67 \\le x < 6$, the inequality is <strong>false</strong> (for example, at $x = 5.8$, we get $0.4 \\ge 0.8$, which is false).",
             "<strong>Case B: For $x < 5.67$</strong>, the term inside the absolute value is negative, so $|3x - 17| = 17 - 3x$. Our inequality becomes:<br>$$17 - 3x \\ge x - 5 \\implies 22 \\ge 4x \\implies x \\le 5.5$$<br>This means the inequality is true for $x \\le 5.5$ and $x \\ge 6$, but fails in the gap $5.5 < x < 6$.",
             "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $17 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 5.8$, where $|3(5.8)-17| = 0.4$ is not greater than or equal to $5.8-5 = 0.8$).",
-            "Final Answer: <strong>(i)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(ii)</strong> $$Sometimes\\\\ true\\\\\\ (fails\\\\ in\\\\ the\\\\ interval\\\\\\ 5.5 < x < 6)$$"
+            "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true (fails in the interval } 5.5 < x < 6\\text{)}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(b)</strong> $$Always\\\\ true$$",
+                    "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Always true$$",
                 "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $5.5 < x < 6$, the value of the linear expression x-5 is actually larger than the absolute value |3x-17|, making the statement false in this range."
             },
             {
-                "ans": "<strong>(a)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(b)</strong> $$Never\\\\ true$$",
+                "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Never true}$$",
                 "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-17| \\ge -5 \\implies 17 \\ge -5$, which is a true statement."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\text{Proof\\\\ by\\\\ exhaustion\\\\ of\\\\ bounds\\\\ is\\\\ completed}$$ <strong>(b)</strong> $$Sometimes\\\\ true$$",
+                "ans": "<strong>(a)</strong> $$\\text{Proof by exhaustion of bounds is completed}$$ <strong>(b)</strong> $$\\text{Sometimes true}$$",
                 "feedback": "The standard mathematical name for testing integer remainder cases is a proof by exhaustion (or proof by cases). Avoid using non-standard terms like 'exhaustion of bounds' on your exam script."
             }
         ],
