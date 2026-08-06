@@ -1301,7 +1301,7 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "You formed a linear depreciation model ($V = 100000 - 10000t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 100000(0.1)^t$$ <strong>(b)</strong> $$\\text{Model is completely unreliable)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 100000(r)^t\\text{ where } r > 0.9\\text{)}$$",
+                "ans": "<strong>(a)</strong> $$V = 100000(0.1)^t$$ <strong>(b)</strong> $$\\text{Model is completely unreliable}$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 100000(r)^t\\text{ where } r > 0.9\\text{)}$$",
                 "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($10\\\\% = 0.1$) instead of the remaining value multiplier ($1 - 0.1 = 0.9$). This error caused your model to predict the yacht's value as almost zero after 10 years."
             }
         ],
@@ -1338,7 +1338,7 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "Check your reasoning for Part (c). If tractor B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.75, not smaller."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 40000(0.25)^t$$ <strong>(b)</strong> $$\\text{Model is completely unreliable)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 40000(r)^t\\text{ where } r > 0.75\\text{)}$$",
+                "ans": "<strong>(a)</strong> $$V = 40000(0.25)^t$$ <strong>(b)</strong> $$\\text{Model is completely unreliable}$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 40000(r)^t\\text{ where } r > 0.75\\text{)}$$",
                 "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($25\\\\% = 0.25$) instead of the remaining value multiplier ($1 - 0.25 = 0.75$). This error caused your model to predict the tractor's value as almost zero after 8 years."
             },
             {
@@ -1379,7 +1379,7 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "Check your reasoning for Part (c). If EV B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.8, not smaller."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 30000(0.2)^t$$ <strong>(b)</strong> $$\\text{Model is completely unreliable)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 30000(r)^t\\text{ where } r > 0.8\\text{)}$$",
+                "ans": "<strong>(a)</strong> $$V = 30000(0.2)^t$$ <strong>(b)</strong> $$\\text{Model is completely unreliable}$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 30000(r)^t\\text{ where } r > 0.8\\text{)}$$",
                 "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($20\\\\% = 0.2$) instead of the remaining value multiplier ($1 - 0.2 = 0.8$). This error caused your model to predict the EV's value as almost zero after 6 years."
             },
             {
