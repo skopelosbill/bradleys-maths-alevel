@@ -984,7 +984,7 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $2x^2+4x+7$ has a minimum value of 5 and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < h(x) \\le 2$, not $0 \\le h(x) \\le 2$."
             },
             {
-                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 9$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,9),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -8 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{10}{9}$$",
+                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 9$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,9), }y\\text{-intercept: (0,7)}$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -8 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{10}{9}$$",
                 "feedback": "You probably made a sign error when completing the square in Part (a), adding the 2 instead of subtracting it: $2[(x+1)^2 - 1] + 7 = 2(x+1)^2 - 2 + 7 = 2(x+1)^2 + 5$, not +9. This error affected all your subsequent coordinates and calculations."
             }
         ],
@@ -1014,16 +1014,16 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
       {
-        "ans": "Smallest positive x = 41.0°",
-        "feedback": "You subtracted 20° instead of 10°. Remember: θ = x + 10°, so x = θ − 10°."
+        "ans": "Smallest positive $x = 41.0^\\circ$",
+        "feedback": "You subtracted 20^\\circ$ instead of 10^\\circ$. Remember: $θ = x + 10^\\circ$, so $x = θ − 10^\\circ$."
       },
       {
-        "ans": "Smallest positive x = 80.0°",
-        "feedback": "This corresponds to the θ = 90° branch, but it is not the smallest positive solution."
+        "ans": "Smallest positive $x = 80.0^\\circ$",
+        "feedback": "This corresponds to the $θ = 90^\\circ$ branch, but it is not the smallest positive solution."
       },
       {
-        "ans": "Smallest positive x = 260.0°",
-        "feedback": "This comes from the negative θ branch. It is positive, but not the smallest positive solution."
+        "ans": "Smallest positive $x = 260.0^\\circ$",
+        "feedback": "This comes from the negative $θ$ branch. It is positive, but not the smallest positive solution."
       }
     ],
     "bradley_insight": {
@@ -1053,16 +1053,16 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
       {
-        "ans": "x = 45°",
-        "feedback": "This corresponds to θ = 30°, but it is not the smallest positive solution."
+        "ans": "$x = 45^\\circ$",
+        "feedback": "This corresponds to $θ = 30^\\circ$, but it is not the smallest positive solution."
       },
       {
-        "ans": "x = 345°",
-        "feedback": "This comes from the negative θ branch. It is positive, but not the smallest positive solution."
+        "ans": "$x = 345^\\circ$",
+        "feedback": "This comes from the negative $θ$ branch. It is positive, but not the smallest positive solution."
       },
       {
-        "ans": "x = 0°",
-        "feedback": "Remember to add 15° because θ = x − 15°."
+        "ans": "$x = 0^\\circ$",
+        "feedback": "Remember to add $15^\\circ$ because $θ = x − 15^\\circ$."
       }
     ],
     "bradley_insight": {
@@ -1092,16 +1092,16 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
       {
-        "ans": "x = 64.4°",
-        "feedback": "You added 40° instead of 20°. The substitution is θ = x − 20°."
+        "ans": "$x = 64.4^\\circ$",
+        "feedback": "You added $40^\\circ$ instead of $20^\\circ$. The substitution is $θ = x − 20^\\circ$."
       },
       {
-        "ans": "x = 175.6°",
-        "feedback": "This corresponds to the second θ value, but it is not the smallest positive solution."
+        "ans": "$x = 175.6^\\circ$",
+        "feedback": "This corresponds to the second $θ$ value, but it is not the smallest positive solution."
       },
       {
-        "ans": "x = 20°",
-        "feedback": "This assumes θ = 0°, which is not a solution of the original equation."
+        "ans": "$x = 20^\\circ$",
+        "feedback": "This assumes $θ = 0^\\circ$, which is not a solution of the original equation."
       }
     ],
     "bradley_insight": {
@@ -1131,16 +1131,16 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
       {
-        "ans": "x = 346.3°",
-        "feedback": "This comes from the negative θ branch. It is positive, but not the smallest positive solution."
+        "ans": "$x = 346.3^\\circ$",
+        "feedback": "This comes from the negative $θ$ branch. It is positive, but not the smallest positive solution."
       },
       {
-        "ans": "x = 16.3°",
-        "feedback": "You forgot to subtract 30°. Remember: x = θ − 30°."
+        "ans": "$x = 16.3^\\circ$",
+        "feedback": "You forgot to subtract $30^\\circ$. Remember: $x = θ − 30^\\circ$."
       },
       {
-        "ans": "x = 30°",
-        "feedback": "This assumes θ = 60°, which is not a solution of the original equation."
+        "ans": "$x = 30^\\circ$",
+        "feedback": "This assumes $θ = 60^\\circ$, which is not a solution of the original equation."
       }
     ],
     "bradley_insight": {
@@ -1170,16 +1170,16 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
       {
-        "ans": "x = 66.9°",
-        "feedback": "This corresponds to θ = 61.9°, but it is not the smallest positive solution."
+        "ans": "$x = 66.9^\\circ$",
+        "feedback": "This corresponds to $θ = 61.9^\\circ$, but it is not the smallest positive solution."
       },
       {
-        "ans": "x = 185°",
-        "feedback": "This comes from the θ = −180° branch. It is positive, but not the smallest positive solution."
+        "ans": "$x = 185^\\circ$",
+        "feedback": "This comes from the $θ = −180^\\circ$ branch. It is positive, but not the smallest positive solution."
       },
       {
-        "ans": "x = 0°",
-        "feedback": "Remember: x = θ + 5°, and θ = 0° gives x = 5°."
+        "ans": "$x = 0^\\circ$",
+        "feedback": "Remember: $x = θ + 5^\\circ$, and $θ = 0^\\circ$ gives $x = ^\\circ$."
       }
     ],
     "bradley_insight": {
