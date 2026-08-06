@@ -1842,19 +1842,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Case A: For $x \\ge 6$</strong>, the term inside the absolute value is positive, so $|2x - 12| = 2x - 12$. Our inequality becomes:<br>$$2x - 12 \\ge x - 5 \\implies x \\ge 7$$<br>This means that in the interval $6 \\le x < 7$, the inequality is <strong>false</strong> (for example, at $x = 6$, we get $0 \\ge 1$, which is false).",
             "<strong>Case B: For $x < 6$</strong>, the term inside the absolute value is negative, so $|2x - 12| = -(2x - 12) = 12 - 2x$. Our inequality becomes:<br>$$12 - 2x \\ge x - 5 \\implies 17 \\ge 3x \\implies x \\le 5.67$$<br>This means the inequality is true for $x \\le 5.67$ and $x \\ge 7$, but fails in the gap $5.67 < x < 7$.",
             "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $12 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 6$, where $|2(6)-12| = 0$ is not greater than or equal to $6-5 = 1$).",
-            "Final Answer: <strong>(i)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(ii)</strong> $$Sometimes\\\\ true\\\\\\ (fails\\\\ in\\\\ the\\\\ interval\\\\\\ 5.67 < x < 7)$$"
+            "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\true{Sometimes true (fails in the interval }5.67 < x < 7\\text{)}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(i)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(ii)</strong> $$Always\\\\ true$$",
+                "ans": "<strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Always true}$$",
                 "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $5.67 < x < 7$, the value of the linear expression x-5 is actually larger than the absolute value |2x-12|, making the statement false in this range."
             },
             {
-                "ans": "<strong>(i)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(ii)</strong> $$Never\\\\ true$$",
+                "ans": "<strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$$\\text{Never true}$$",
                 "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-12| \\ge -5 \\implies 12 \\ge -5$, which is a true statement."
             },
             {
-                "ans": "<strong>(i)</strong> $$Proof\\\\ by\\\\ algebraic\\\\ induction\\\\ is\\\\ completed$$ <strong>(ii)</strong> $$Sometimes\\\\ true$$",
+                "ans": "<strong>(i)</strong> $$text{Proof by algebraic induction is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$",
                 "feedback": "Part (i) is a proof by exhaustion (cases), not mathematical induction. Induction is used when a statement depends on n and n+1 sequences, whereas here we exhaust all possible algebraic remainders of n directly."
             }
         ],
@@ -1884,19 +1884,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Case A: For $x \\ge 4.67$</strong>, the term inside the absolute value is positive, so $|3x - 14| = 3x - 14$. Our inequality becomes:<br>$$3x - 14 \\ge x - 4 \\implies 2x \\ge 10 \\implies x \\ge 5$$<br>This means that in the interval $4.67 \\le x < 5$, the inequality is <strong>false</strong> (for example, at $x = 4.8$, we get $0.4 \\ge 0.8$, which is false).",
             "<strong>Case B: For $x < 4.67$</strong>, the term inside the absolute value is negative, so $|3x - 14| = 14 - 3x$. Our inequality becomes:<br>$$14 - 3x \\ge x - 4 \\implies 18 \\ge 4x \\implies x \\le 4.5$$<br>This means the inequality is true for $x \\le 4.5$ and $x \\ge 5$, but fails in the gap $4.5 < x < 5$.",
             "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $14 \\ge -4$), but fails for a small range of values (with a counterexample of $x = 4.8$, where $|3(4.8)-14| = 0.4$ is not greater than or equal to $4.8-4 = 0.8$).",
-            "Final Answer: <strong>(i)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(ii)</strong> $$Sometimes\\\\ true\\\\\\ (fails\\\\ in\\\\ the\\\\ interval\\\\\\ 4.5 < x < 5)$$"
+            "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true (fails in the interval } 4.5 < x < 5\\text{)}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(i)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(ii)</strong> $$Always\\\\ true$$",
+                "ans": "<strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Always true}$$",
                 "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $4.5 < x < 5$, the value of the linear expression x-4 is actually larger than the absolute value |3x-14|, making the statement false in this range."
             },
             {
-                "ans": "<strong>(i)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(ii)</strong> $$Never\\\\ true$$",
+                "ans": "<strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$$\\text{Never true}$$",
                 "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-14| \\ge -4 \\implies 14 \\ge -4$, which is a true statement."
             },
             {
-                "ans": "<strong>(i)</strong> $$Proof\\\\ by\\\\ contradiction\\\\ is\\\\ completed$$ <strong>(ii)</strong> $$Sometimes\\\\ true$$",
+                "ans": "<strong>(i)</strong> $$text{Proof by contradiction is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$",
                 "feedback": "Part (i) is a proof by exhaustion (cases), not a proof by contradiction. A proof by contradiction starts by assuming the opposite statement is true and finding a mathematical impossibility, whereas here we systematically test all even and odd possibilities."
             }
         ],
@@ -1926,19 +1926,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Case A: For $x \\ge 4$</strong>, the term inside the absolute value is positive, so $|2x - 8| = 2x - 8$. Our inequality becomes:<br>$$2x - 8 \\ge x - 3 \\implies x \\ge 5$$<br>This means that in the interval $4 \\le x < 5$, the inequality is <strong>false</strong> (for example, at $x = 4$, we get $0 \\ge 1$, which is false).",
             "<strong>Case B: For $x < 4$</strong>, the term inside the absolute value is negative, so $|2x - 8| = 8 - 2x$. Our inequality becomes:<br>$$8 - 2x \\ge x - 3 \\implies 11 \\ge 3x \\implies x \\le 3.67$$<br>This means the inequality is true for $x \\le 3.67$ and $x \\ge 5$, but fails in the gap $3.67 < x < 5$.",
             "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $8 \\ge -3$), but fails for a small range of values (with a counterexample of $x = 4$, where $|2(4)-8| = 0$ is not greater than or equal to $4-3 = 1$).",
-            "Final Answer: <strong>(i)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(ii)</strong> $$Sometimes\\\\ true\\\\\\ (fails\\\\ in\\\\ the\\\\ interval\\\\\\ 3.67 < x < 5)$$"
+            "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true (fails in the interval } 3.67 < x < 5\\text{)}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(b)</strong> $$Always\\\\ true$$",
+                    "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Always true}$$",
                 "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $3.67 < x < 5$, the value of the linear expression x-3 is actually larger than the absolute value |2x-8|, making the statement false in this range."
             },
             {
-                "ans": "<strong>(a)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(b)</strong> $$Never\\\\ true$$",
+                "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Never true}$$",
                 "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-8| \\ge -3 \\implies 8 \\ge -3$, which is a true statement."
             },
             {
-                "ans": "<strong>(a)</strong> $$Proof\\\\ by\\\\ counterexample\\\\ is\\\\ completed$$ <strong>(b)</strong> $$Sometimes\\\\ true$$",
+                "ans": "<strong>(a)</strong> $$\\text{Proof by counterexample is completed}$ <strong>(b)</strong> $$\\text{Sometimes true}$$",
                 "feedback": "Part (i) requires a general proof showing the statement is true for *all* $n \\in \\mathbb{N}$, which requires a proof by exhaustion (cases). A proof by counterexample is only used to disprove a statement, not to prove one."
             }
         ],
@@ -1969,19 +1969,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Case A: For $x \\ge 5.5$</strong>, the term inside the absolute value is positive, so $|4x - 22| = 4x - 22$. Our inequality becomes:<br>$$4x - 22 \\ge x - 5 \\implies 3x \\ge 17 \\implies x \\ge 5.67$$<br>This means that in the interval $5.5 \\le x < 5.67$, the inequality is <strong>false</strong> (for example, at $x = 5.5$, we get $2 \\ge 0.5$, which is true, but at $x = 5.6$ we get $0.4 \\ge 0.6$, which is false).",
             "<strong>Case B: For $x < 5.5$</strong>, the term inside the absolute value is negative, so $|4x - 22| = 22 - 4x$. Our inequality becomes:<br>$$22 - 4x \\ge x - 5 \\implies 27 \\ge 5x \\implies x \\le 5.4$$<br>This means the inequality is true for $x \\le 5.4$ and $x \\ge 5.67$, but fails in the gap $5.4 < x < 5.67$.",
             "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $22 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 5.55$, where $|4(5.55)-22| = 0.2$ is not greater than or equal to $5.55-5 = 0.55$).",
-            "Final Answer: <strong>(i)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(ii)</strong> $$Sometimes\\\\ true\\\\\\ (fails\\\\ in\\\\ the\\\\ interval\\\\\\ 5.4 < x < 5.67)$$"
+            "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$Sometimes\\\\ true\\\\\\ (fails\\\\ in\\\\ the\\\\ interval\\\\\\ 5.4 < x < 5.67)$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(b)</strong> $$Always\\\\ true$$",
+                "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Always true}$$",
                 "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $5.4 < x < 5.67$, the value of the linear expression x-5 is actually larger than the absolute value |4x-22|, making the statement false in this range."
             },
             {
-                "ans": "<strong>(a)</strong> $$Proof\\\\ by\\\\ cases\\\\ is\\\\ completed$$ <strong>(b)</strong> $$Never\\\\ true$$",
+                "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Never true}$$",
                 "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-22| \\ge -5 \\implies 22 \\ge -5$, which is a true statement."
             },
             {
-                "ans": "<strong>(a)</strong> $$Proof\\\\ by\\\\ deduction\\\\ is\\\\ completed$$ <strong>(b)</strong> $$Sometimes\\\\ true$$",
+                    "ans": "<strong>(a)</strong> $$\\text{Proof by deduction is completed}$$ <strong>(b)</strong> $$\\text{Sometimes true$$",
                 "feedback": "Part (i) requires a general proof for all n, which must be handled by exhaustion (testing all possible remainder cases). A simple algebraic deduction is not enough because n is discrete and can have various remainder properties."
             }
         ],
@@ -2016,7 +2016,7 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
             {
-                    "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Always true$$",
+                    "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Always true}$$",
                 "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $5.5 < x < 6$, the value of the linear expression x-5 is actually larger than the absolute value |3x-17|, making the statement false in this range."
             },
             {
