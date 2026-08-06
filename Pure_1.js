@@ -812,19 +812,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for g(x) to find its vertex:<br>$$g(x) = 3(x^2 - 4x + 4) + 6x - 7$$<br>$$g(x) = 3x^2 - 12x + 12 + 6x - 7 = 3x^2 - 6x + 5$$<br>$$g(x) = 3(x^2 - 2x) + 5 = 3\\left[(x-1)^2 - 1\\right] + 5$$<br>$$g(x) = 3(x-1)^2 + 2$$",
             "The vertex of f(x) is at (-1, 5) and the vertex of g(x) is at (1, 2).<br>To map (-1, 5) onto (1, 2), we shift +2 units horizontally and -3 units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite h(x) using our completed square form of the denominator:<br>$$h(x) = \\dfrac{15}{3(x+1)^2 + 5}$$<br>Since the minimum value of the denominator is 5 (when $x = -1$), the maximum value of the fraction is $\\frac{15}{5} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \\le 3$</strong>.",
-            "Final Answer: <strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$"
+            "Final Answer: <strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{-intercept: (0,8)}$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} -2 \\\\\\ 3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$",
+                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{-intercept: (0,8)}$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} -2 \\\\\\ 3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$",
                 "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of f(x) at $x = -1$ to the vertex of g(x) at $x = 1$ is a horizontal shift of +2. Moving from $y = 5$ to $y = 2$ is a vertical shift of -3. This gives the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,8)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 3$$",
+                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{-intercept: (0,8)}$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 3$$",
                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $3x^2+6x+8$ has a minimum value of 5 and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < h(x) \\le 3$, not $0 \\le h(x) \\le 3$."
             },
             {
-                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 11$$ <strong>(b)</strong> $$\\text{Turning Point: } (-1,11),\\\\ y\\text{-intercept: } (0,8)$$ <strong>(c)(i)</strong> $$\\text{Translation by ) \\begin{pmatrix} 2 \\\\\\ -9 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
+                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 11$$ <strong>(b)</strong> $$\\text{Turning Point: } (-1,11), }y\\text{-intercept: (0,8)}$$ <strong>(c)(i)</strong> $$\\text{Translation by ) \\begin{pmatrix} 2 \\\\\\ -9 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
                 "feedback": "You probably made a sign error when expanding your completed square in Part (a), adding the 3 instead of subtracting it: $3[(x+1)^2 - 1] + 8 = 3(x+1)^2 - 3 + 8 = 3(x+1)^2 + 5$, not +11. This error affected all your subsequent coordinates and calculations."
             }
         ],
@@ -852,19 +852,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for g(x) to find its vertex:<br>$$g(x) = 2(x^2 - 6x + 9) + 8x - 15$$<br>$$g(x) = 2x^2 - 12x + 18 + 8x - 15 = 2x^2 - 4x + 3$$<br>$$g(x) = 2(x^2 - 2x) + 3 = 2\\left[(x-1)^2 - 1\\right] + 3$$<br>$$g(x) = 2(x-1)^2 + 1$$",
             "The vertex of f(x) is at (-2, 4) and the vertex of g(x) is at (1, 1).<br>To map (-2, 4) onto (1, 1), we shift +3 units horizontally and -3 units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite h(x) using our completed square form of the denominator:<br>$$h(x) = \\dfrac{12}{2(x+2)^2 + 4}$$<br>Since the minimum value of the denominator is 4 (when $x = -2$), the maximum value of the fraction is $\\frac{12}{4} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \\le 3$</strong>.",
-            "Final Answer: <strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,4),\\\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$"
+            "Final Answer: <strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,4), }y\\text{-intercept: (0,12)}$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,4),\\\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} -3 \\\\\\ 3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$",
+                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,4), }y\\text{-intercept: (0,12)$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} -3 \\\\\\ 3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$",
                 "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of f(x) at $x = -2$ to the vertex of g(x) at $x = 1$ is a horizontal shift of +3. Moving from $y = 4$ to $y = 1$ is a vertical shift of -3. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,4),\\\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 3$$",
+                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,4), }y\\text{-intercept: (0,12)$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 3$$",
                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $2x^2+8x+12$ has a minimum value of 4 and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < h(x) \\le 3$, not $0 \\le h(x) \\le 3$."
             },
             {
-                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 20$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,20),\\\\ y-intercept: (0,12)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -19 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{3}{5}$$",
+                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 20$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,20), }y\\text{-intercept: (0,12)$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -19 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{3}{5}$$",
                 "feedback": "You probably made an error when completing the square in Part (a), adding the 8 instead of subtracting it: $2[(x+2)^2 - 4] + 12 = 2(x+2)^2 - 8 + 12 = 2(x+2)^2 + 4$, not +20. This error affected all your subsequent coordinates and calculations."
             }
         ],
@@ -892,19 +892,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for g(x) to find its vertex:<br>$$g(x) = 4(x^2 - 6x + 9) + 8x - 19$$<br>$$g(x) = 4x^2 - 24x + 36 + 8x - 19 = 4x^2 - 16x + 17$$<br>$$g(x) = 4(x^2 - 4x) + 17 = 4\\left[(x-2)^2 - 4\\right] + 17$$<br>$$g(x) = 4(x-2)^2 - 16 + 17$$<br>$$g(x) = 4(x-2)^2 + 1$$",
             "The vertex of f(x) is at (-1, 3) and the vertex of g(x) is at (2, 1).<br>To map (-1, 3) onto (2, 1), we shift +3 units horizontally and -2 units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite h(x) using our completed square form of the denominator:<br>$$h(x) = \\dfrac{15}{4(x+1)^2 + 3}$$<br>Since the minimum value of the denominator is 3 (when $x = -1$), the maximum value of the fraction is $\\frac{15}{3} = 5$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \\le 5$</strong>.",
-            "Final Answer: <strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,3),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 5$$"
+            "Final Answer: <strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,3), }y\\text{-intercept: (0,7)$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 5$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,3),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} -3 \\\\\\ 2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 5$$",
+                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,3), }y\\text{-intercept: (0,7)$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} -3 \\\\\\ 2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 5$$",
                 "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of f(x) at $x = -1$ to the vertex of g(x) at $x = 2$ is a horizontal shift of +3. Moving from $y = 3$ to $y = 1$ is a vertical shift of -2. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,3),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 5$$",
+                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,3), }y\\text{-intercept: (0,7)$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 5$$",
                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $4x^2+8x+7$ has a minimum value of 3 and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < h(x) \\le 5$, not $0 \\le h(x) \\le 5$."
             },
             {
-                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 11$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,11),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -10 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
+                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 11$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,11), }y\\text{-intercept: (0,7)$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -10 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
                 "feedback": "You probably made a sign error when completing the square in Part (a), adding the 4 instead of subtracting it: $4[(x+1)^2 - 1] + 7 = 4(x+1)^2 - 4 + 7 = 4(x+1)^2 + 3$, not +11. This error affected all your subsequent coordinates and calculations."
             }
         ],
@@ -932,19 +932,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for g(x) to find its vertex:<br>$$g(x) = 3(x^2 - 6x + 9) + 12x - 22$$<br>$$g(x) = 3x^2 - 18x + 27 + 12x - 22 = 3x^2 - 6x + 5$$<br>$$g(x) = 3(x^2 - 2x) + 5 = 3\\left[(x-1)^2 - 1\\right] + 5$$<br>$$g(x) = 3(x-1)^2 - 3 + 5$$<br>$$g(x) = 3(x-1)^2 + 2$$",
             "The vertex of f(x) is at (-2, 6) and the vertex of g(x) is at (1, 2).<br>To map (-2, 6) onto (1, 2), we shift +3 units horizontally and -4 units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite h(x) using our completed square form of the denominator:<br>$$h(x) = \\dfrac{24}{3(x+2)^2 + 6}$$<br>Since the minimum value of the denominator is 6 (when $x = -2$), the maximum value of the fraction is $\\frac{24}{6} = 4$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \\le 4$</strong>.",
-            "Final Answer: <strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,6),\\\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 4$$"
+            "Final Answer: <strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,6), }y\\text{-intercept: (0,18)$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 4$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,6),\\\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} -3 \\\\\\ 4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 4$$",
+                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,6), }y\\text{-intercept: (0,18)}$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} -3 \\\\\\ 4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 4$$",
                 "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of f(x) at $x = -2$ to the vertex of g(x) at $x = 1$ is a horizontal shift of +3. Moving from $y = 6$ to $y = 2$ is a vertical shift of -4. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,6),\\\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 4$$",
+                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,6), }y\\text{-intercept: (0,18)}$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 4$$",
                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $3x^2+12x+18$ has a minimum value of 6 and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < h(x) \\le 4$, not $0 \\le h(x) \\le 4$."
             },
             {
-                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 30$$ <strong>(b)</strong> $$Turning\\\\ Point: (-2,30),\\\\ y-intercept: (0,18)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -28 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{4}{5}$$",
+                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 30$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,30), }y\\text{-intercept: (0,18)}$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -28 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{4}{5}$$",
                 "feedback": "You probably made a sign error when completing the square in Part (a), adding the 12 instead of subtracting it: $3[(x+2)^2 - 4] + 18 = 3(x+2)^2 - 12 + 18 = 3(x+2)^2 + 6$, not +30. This error affected all your subsequent coordinates and calculations."
             }
         ],
@@ -972,19 +972,19 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (c)(i):</strong> First, we expand and complete the square for g(x) to find its vertex:<br>$$g(x) = 2(x^2 - 6x + 9) + 4x - 9$$<br>$$g(x) = 2x^2 - 12x + 18 + 4x - 9 = 2x^2 - 8x + 9$$<br>$$g(x) = 2(x^2 - 4x) + 9 = 2\\left[(x-2)^2 - 4\\right] + 9$$<br>$$g(x) = 2(x-2)^2 - 8 + 9$$<br>$$g(x) = 2(x-2)^2 + 1$$",
             "The vertex of f(x) is at (-1, 5) and the vertex of g(x) is at (2, 1).<br>To map (-1, 5) onto (2, 1), we shift +3 units horizontally and -4 units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$</strong>.",
             "<strong>Part (c)(ii):</strong> We rewrite h(x) using our completed square form of the denominator:<br>$$h(x) = \\dfrac{10}{2(x+1)^2 + 5}$$<br>Since the minimum value of the denominator is 5 (when $x = -1$), the maximum value of the fraction is $\\frac{10}{5} = 2$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \\le 2$</strong>.",
-            "Final Answer: <strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 2$$"
+            "Final Answer: <strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{-intercept: (0,7}$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 2$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} -3 \\\\\\ 4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 2$$",
+                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{-intercept: (0,7}$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} -3 \\\\\\ 4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 2$$",
                 "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of f(x) at $x = -1$ to the vertex of g(x) at $x = 2$ is a horizontal shift of +3. Moving from $y = 5$ to $y = 1$ is a vertical shift of -4. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$Turning\\\\ Point: (-1,5),\\\\ y-intercept: (0,7)$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 2$$",
+                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{-intercept: (0,7)}$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 2$$",
                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $2x^2+4x+7$ has a minimum value of 5 and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < h(x) \\le 2$, not $0 \\le h(x) \\le 2$."
             },
             {
-                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 9$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,9), }y\\text{-intercept: (0,7)}$$ <strong>(c)(i)</strong> $$Translation\\\\ by\\\\\\ \\begin{pmatrix} 3 \\\\\\ -8 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{10}{9}$$",
+                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 9$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,9), }y\\text{-intercept: (0,7)}$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -8 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{10}{9}$$",
                 "feedback": "You probably made a sign error when completing the square in Part (a), adding the 2 instead of subtracting it: $2[(x+1)^2 - 1] + 7 = 2(x+1)^2 - 2 + 7 = 2(x+1)^2 + 5$, not +9. This error affected all your subsequent coordinates and calculations."
             }
         ],
