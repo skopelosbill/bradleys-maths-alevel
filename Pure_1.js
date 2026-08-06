@@ -824,7 +824,7 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $3x^2+6x+8$ has a minimum value of 5 and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < h(x) \\le 3$, not $0 \\le h(x) \\le 3$."
             },
             {
-                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 11$$ <strong>(b)</strong> $$\\text{Turning Point: } (-1,11), }y\\text{-intercept: (0,8)}$$ <strong>(c)(i)</strong> $$\\text{Translation by ) \\begin{pmatrix} 2 \\\\\\ -9 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
+                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 11$$ <strong>(b)</strong> $$\\text{Turning Point: } (-1,11), }y\\text{-intercept: (0,8)}$$ <strong>(c)(i)</strong> $$\\text{Translation by } \\begin{pmatrix} 2 \\\\\\ -9 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
                 "feedback": "You probably made a sign error when expanding your completed square in Part (a), adding the 3 instead of subtracting it: $3[(x+1)^2 - 1] + 8 = 3(x+1)^2 - 3 + 8 = 3(x+1)^2 + 5$, not +11. This error affected all your subsequent coordinates and calculations."
             }
         ],
