@@ -1850,11 +1850,11 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $5.67 < x < 7$, the value of the linear expression x-5 is actually larger than the absolute value |2x-12|, making the statement false in this range."
             },
             {
-                "ans": "<strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$$\\text{Never true}$$",
+                "ans": "<strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Never true}$$",
                 "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-12| \\ge -5 \\implies 12 \\ge -5$, which is a true statement."
             },
             {
-                "ans": "<strong>(i)</strong> $$text{Proof by algebraic induction is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$",
+                "ans": "<strong>(i)</strong> $$\\text{Proof by algebraic induction is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$",
                 "feedback": "Part (i) is a proof by exhaustion (cases), not mathematical induction. Induction is used when a statement depends on n and n+1 sequences, whereas here we exhaust all possible algebraic remainders of n directly."
             }
         ],
@@ -1892,11 +1892,11 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $4.5 < x < 5$, the value of the linear expression x-4 is actually larger than the absolute value |3x-14|, making the statement false in this range."
             },
             {
-                "ans": "<strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$$\\text{Never true}$$",
+                "ans": "<strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Never true}$$",
                 "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-14| \\ge -4 \\implies 14 \\ge -4$, which is a true statement."
             },
             {
-                "ans": "<strong>(i)</strong> $$text{Proof by contradiction is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$",
+                "ans": "<strong>(i)</strong> $$\\text{Proof by contradiction is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$",
                 "feedback": "Part (i) is a proof by exhaustion (cases), not a proof by contradiction. A proof by contradiction starts by assuming the opposite statement is true and finding a mathematical impossibility, whereas here we systematically test all even and odd possibilities."
             }
         ],
@@ -1938,7 +1938,7 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-8| \\ge -3 \\implies 8 \\ge -3$, which is a true statement."
             },
             {
-                "ans": "<strong>(a)</strong> $$\\text{Proof by counterexample is completed}$ <strong>(b)</strong> $$\\text{Sometimes true}$$",
+                "ans": "<strong>(a)</strong> $$\\text{Proof by counterexample is completed}$$ <strong>(b)</strong> $$\\text{Sometimes true}$$",
                 "feedback": "Part (i) requires a general proof showing the statement is true for *all* $n \\in \\mathbb{N}$, which requires a proof by exhaustion (cases). A proof by counterexample is only used to disprove a statement, not to prove one."
             }
         ],
@@ -1981,7 +1981,7 @@ window.ALEVEL_QUESTIONS = [
                 "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-22| \\ge -5 \\implies 22 \\ge -5$, which is a true statement."
             },
             {
-                    "ans": "<strong>(a)</strong> $$\\text{Proof by deduction is completed}$$ <strong>(b)</strong> $$\\text{Sometimes true$$",
+                    "ans": "<strong>(a)</strong> $$\\text{Proof by deduction is completed}$$ <strong>(b)</strong> $$\\text{Sometimes true}$$",
                 "feedback": "Part (i) requires a general proof for all n, which must be handled by exhaustion (testing all possible remainder cases). A simple algebraic deduction is not enough because n is discrete and can have various remainder properties."
             }
         ],
