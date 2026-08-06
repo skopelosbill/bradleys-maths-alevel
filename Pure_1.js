@@ -1207,15 +1207,15 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>$$V = 15000(0.8)^8 \\approx 15000 \\times 0.16777 \\approx £2,517$$",
             "The actual monitored value after 8 years is £2,500. Since our model's prediction of £2,517 is extremely close to the actual value, the model is highly reliable over this 8-year period.",
             "<strong>Part (c):</strong> For motorcycle B, which depreciates more slowly, the value must decrease at a slower rate than $20\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.8) must be increased to a value closer to 1 (for example, 0.85 or some multiplier $r > 0.8$). The initial value remains at 15000.",
-            "Final Answer: <strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £2,517\\\\ vs\\\\\\ £2,500)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 15000(r)^t\\text{ where } r > 0.8\\text{)}$$"
+            "Final Answer: <strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £2,517\\text{ vs } £2,500)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 15000(r)^t\\text{ where } r > 0.8\\text{)}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$V = 15000 - 3000t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £2,517\\\\ vs\\\\\\ £2,500)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 15000(r)^t\\text{ where } r > 0.8\\text{)}$$对外",
+                "ans": "<strong>(a)</strong> $$V = 15000 - 3000t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £2,517\\text{ vs } £2,500)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 15000(r)^t\\text{ where } r > 0.8\\text{)}$$对外",
                 "feedback": "You formed a linear depreciation model ($V = 15000 - 3000t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$ or $V = A \\text{e}^{-kt}$."
             },
             {
-                "ans": "<strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £2,517\\\\ vs\\\\\\ £2,500)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 15000(r)^t\\text{ where } r < 0.8\\text{)}$$",
+                "ans": "<strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £2,517\\text{ vs } £2,500)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 15000(r)^t\\text{ where } r < 0.8\\text{)}$$",
                 "feedback": "Check your reasoning for Part (c). If motorcycle B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.8, not smaller."
             },
             {
@@ -1289,11 +1289,11 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (b):</strong> We substitute $t = 10$ into our model to find the predicted value:<br>$$V = 100000(0.9)^{10} \\approx 100000 \\times 0.34868 \\approx £34,868$$",
             "The actual monitored value after 10 years is £35,000. Since our model's prediction of £34,868 is extremely close to the actual value, the model is highly reliable over this 10-year period.",
             "<strong>Part (c):</strong> For yacht B, which depreciates more slowly, the value must decrease at a slower rate than $10\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.9) must be increased to a value closer to 1 (for example, 0.93 or some multiplier $r > 0.9$). The initial value remains at 100000.",
-            "Final Answer: <strong>(a)</strong> $$V = 100000(0.9)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £34,868\\\\ vs\\\\\\ £35,000)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 100000(r)^t\\text{ where } r > 0.9\\text{)}$$"
+            "Final Answer: <strong>(a)</strong> $$V = 100000(0.9)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £34,868\\text{ vs } £35,000)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 100000(r)^t\\text{ where } r > 0.9\\text{)}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$V = 100000(0.9)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £34,868\\\\ vs\\\\\\ £35,000)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 100000(r)^t\\text{ where } r < 0.9)$$",
+                "ans": "<strong>(a)</strong> $$V = 100000(0.9)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £34,868\\text{ vs } £35,000)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 100000(r)^t\\text{ where } r < 0.9)$$",
                 "feedback": "Check your reasoning for Part (c). If yacht B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.9, not smaller."
             },
             {
@@ -1330,11 +1330,11 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>$$V = 40000(0.75)^8 \\approx 40000 \\times 0.10011 \\approx £4,005$$",
             "The actual monitored value after 8 years is £4,000. Since our model's prediction of £4,005 is extremely close to the actual value, the model is highly reliable over this 8-year period.",
             "<strong>Part (c):</strong> For tractor B, which depreciates more slowly, the value must decrease at a slower rate than $25\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.75) must be increased to a value closer to 1 (for example, 0.80 or some multiplier $r > 0.75$). The initial value remains at 40000.",
-            "Final Answer: <strong>(a)</strong> $$V = 40000(0.75)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £4,005\\\\ vs\\\\\\ £4,000)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 40000(r)^t\\text{ where } r > 0.75\\text{)}$$"
+            "Final Answer: <strong>(a)</strong> $$V = 40000(0.75)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £4,005\\text{ vs } £4,000)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 40000(r)^t\\text{ where } r > 0.75\\text{)}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$V = 40000(0.75)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £4,005\\\\ vs\\\\\\ £4,000)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 40000(r)^t\\text{ where } r < 0.75\\text{)}$$",
+                "ans": "<strong>(a)</strong> $$V = 40000(0.75)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £4,005\\text{ vs } £4,000)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 40000(r)^t\\text{ where } r < 0.75\\text{)}$$",
                 "feedback": "Check your reasoning for Part (c). If tractor B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.75, not smaller."
             },
             {
@@ -1371,11 +1371,11 @@ window.ALEVEL_QUESTIONS = [
             "<strong>Part (b):</strong> We substitute $t = 6$ into our model to find the predicted value:<br>$$V = 30000(0.8)^6 \\approx 30000 \\times 0.26214 \\approx £7,864$$",
             "The actual monitored value after 6 years is £7,800. Since our model's prediction of £7,864 is extremely close to the actual value, the model is highly reliable over this 6-year period.",
             "<strong>Part (c):</strong> For EV B, which depreciates more slowly, the value must decrease at a slower rate than $20\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.8) must be increased to a value closer to 1 (for example, 0.85 or some multiplier $r > 0.8$). The initial value remains at 30000.",
-            "Final Answer: <strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £7,864\\\\ vs\\\\\\ £7,800)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 30000(r)^t\\text{ where } r > 0.8\\text{)}$$"
+            "Final Answer: <strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £7,864\\text{ vs } £7,800)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 30000(r)^t\\text{ where } r > 0.8\\text{)}$$"
         ],
         "pi_options": [
             {
-                "ans": "<strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £}7,864\\\\ vs\\\\\\ \\text{£}7,800)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 30000(r)^t\\text{ where } r < 0.8\\text{)}$$",
+                "ans": "<strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £}7,864\\text{ vs } \\text{£}7,800)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 30000(r)^t\\text{ where } r < 0.8\\text{)}$$",
                 "feedback": "Check your reasoning for Part (c). If EV B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.8, not smaller."
             },
             {
