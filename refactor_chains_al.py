@@ -4,36 +4,36 @@ import sys
 
 def clean_pseudo_math_text(text):
     """
-    Finds display math blocks $$ ... $$ that contain pseudo-math text
-    (words separated by backslashes) and converts them to standard HTML text
-    with inline math $...$ where appropriate.
+    Finds display math blocks $$ ... $$ that contain pseudo-math spacing text
+    (words separated strictly by double backslashes in memory, which is 4 in the raw JSON)
+    and converts them to standard HTML text.
+    
+    Legitimate LaTeX math commands (like \\tan, which has only 1 backslash in memory)
+    are left completely untouched.
     """
     def convert_block(match):
         inner = match.group(1).strip()
-        # If there are double backslashes in memory (written as \\\\ in raw file)
-        # and it contains alphabetical characters (text words)
-        if "\\" in inner and any(c.isalpha() for c in inner):
-            # Split by backslashes
-            parts = re.split(r'\\+', inner)
+        
+        # r"\\" searches strictly for TWO consecutive backslashes in Python's parsed memory.
+        # This corresponds strictly to the 4-backslash (\\\\) spacing used in the raw JSON.
+        if r"\\" in inner and any(c.isalpha() for c in inner):
+            # Split strictly on double-backslashes or more
+            parts = re.split(r'\\{2,}', inner)
             cleaned_parts = []
             for part in parts:
                 part = part.strip()
                 if not part:
                     continue
-                # If the part is an algebraic expression (contains operators or is a single variable)
+                # If part is an algebraic expression (contains operators or is a single variable)
                 if any(op in part for op in ['=', '+', '-', '*', '/', '^', '<', '>', '\\theta']) or (len(part) == 1 and part.isalpha()):
-                    # Wrap in standard inline math
                     cleaned_parts.append(f"${part}$")
                 else:
-                    # Keep as plain text
                     cleaned_parts.append(part)
             
-            # Join parts with single spaces
-            joined = " ".join(cleaned_parts)
-            return joined
-        return match.group(0)
+            return " ".join(cleaned_parts)
+            
+        return match.group(0) # Keep completely untouched if no double-backslash spacing is present
 
-    # Apply to all display math blocks $$...$$
     return re.sub(r'\$\$(.*?)\$\$', convert_block, text, flags=re.DOTALL)
 
 def verticalize_math_chain(block):
@@ -98,7 +98,7 @@ def audit_and_refactor_chains(filepath, output_filepath=None):
     violations = []
     text_corrections = []
 
-    # Scan for violations and text-in-math corrections
+    # Scan and process
     for q in questions:
         q_id = q.get("id", "UNKNOWN")
         
@@ -205,7 +205,7 @@ def audit_and_refactor_chains(filepath, output_filepath=None):
             f.write("window.ALEVEL_QUESTIONS = ")
             f.write(output_data)
             f.write(";\n")
-        print(f"\nSUCCESS: Pristine database array saved to: '{output_filepath}'")
+        print(f"\nSUCCESS: Pristine database saved to: '{output_filepath}'")
         print("=" * 80)
     else:
         print("\nNo changes written to disk.")
