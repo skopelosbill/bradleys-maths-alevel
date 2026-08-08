@@ -1080,7 +1080,7 @@ AUDIT REPORT FOR Pure_2.js
 
 ✅ REPAIR (Line 1523)
    BEFORE: "feedback": "This error is caused by copying the domain of the original function $f(x)$. The domain of the inverse function is equal to the range of $f(x)$, which is $y > 0$."
-   AFTER : "feedback": "This error is caused by copying the domain of the original function f(x). The domain of the inverse function is equal to the range of f(x), which is $y > 0$."
+   AFTER : "feedback": "This error is caused by copying the domain of the original function f(x). The domain of the inverse function is equal to the range of $f(x)$, which is $y > 0$."
 
 ✅ REPAIR (Line 1527)
    BEFORE: "feedback": "This error probably arises from confusing the domain boundary of the inverse function with the simplified constant term $2$ (from $4/2$). The domain of the inverse is strictly bounded by $x > 0$."
@@ -1120,7 +1120,7 @@ AUDIT REPORT FOR Pure_2.js
 
 ✅ REPAIR (Line 1561)
    BEFORE: "feedback": "This error is caused by copying the domain of the original function. The domain of $f^{-1}(x)$ must equal the range of $f(x)$, which is $y > 0$."
-   AFTER : "feedback": "This error is caused by copying the domain of the original function. The domain of $f^{-1}(x)$ must equal the range of f(x), which is $y > 0$."
+   AFTER : "feedback": "This error is caused by copying the domain of the original function. The domain of $f^{-1}(x)$ must equal the range of $f(x)$, which is $y > 0$."
 
 ✅ REPAIR (Line 1565)
    BEFORE: "feedback": "This error probably comes from confusing the domain boundary with the simplified constant term $-3$ (from $-6/2$). The domain of the inverse is strictly bounded by $x > 0$."
@@ -1160,7 +1160,7 @@ AUDIT REPORT FOR Pure_2.js
 
 ✅ REPAIR (Line 1599)
    BEFORE: "feedback": "This error is caused by copying the domain of the original function $f(x)$. The domain of the inverse function is equal to the range of $f(x)$, which is $y > 0$."
-   AFTER : "feedback": "This error is caused by copying the domain of the original function f(x). The domain of the inverse function is equal to the range of f(x), which is $y > 0$."
+   AFTER : "feedback": "This error is caused by copying the domain of the original function f(x). The domain of the inverse function is equal to the range of $f(x)$, which is $y > 0$."
 
 ✅ REPAIR (Line 1603)
    BEFORE: "feedback": "This error probably arises from confusing the domain boundary of the inverse function with the constant term $0.5$ (from $1/2$). The domain of the inverse is strictly bounded by $x > 0$."
