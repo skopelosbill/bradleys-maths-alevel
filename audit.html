@@ -102,7 +102,7 @@
     </div>
 
     <!-- DROPDOWN SELECTOR -->
-    <div class="set-selector-wrapper">
+<!--    <div class="set-selector-wrapper">
         <label for="setSelect" style="font-size:1.1rem; margin-right:10px; color:#1a3d8f;">
             Select question set:
         </label>
@@ -128,6 +128,37 @@
             <option value="Pure_19">Pure Set 19</option>
         </select>
     </div>
+-->
+
+<!-- DROPDOWN SELECTOR (UPDATED TO ACCESS CORRECTED_PURE SUBFOLDER) -->
+    <div class="set-selector-wrapper">
+        <label for="setSelect" style="font-size:1.1rem; margin-right:10px; color:#1a3d8f;">
+            Select question set:
+        </label>
+        <select id="setSelect" class="set-selector">
+            <option value="corrected_pure/Pure_1">Pure Set 1</option>
+            <option value="corrected_pure/Pure_2">Pure Set 2</option>
+            <option value="corrected_pure/Pure_3">Pure Set 3</option>
+            <option value="corrected_pure/Pure_4">Pure Set 4</option>
+            <option value="corrected_pure/Pure_5">Pure Set 5</option>
+            <option value="corrected_pure/Pure_6">Pure Set 6</option>
+            <option value="corrected_pure/Pure_7">Pure Set 7</option>
+            <option value="corrected_pure/Pure_8">Pure Set 8</option>
+            <option value="corrected_pure/Pure_9">Pure Set 9</option>
+            <option value="corrected_pure/Pure_10">Pure Set 10</option>
+            <option value="corrected_pure/Pure_11">Pure Set 11</option>
+            <option value="corrected_pure/Pure_12">Pure Set 12</option>
+            <option value="corrected_pure/Pure_13">Pure Set 13</option>
+            <option value="corrected_pure/Pure_14">Pure Set 14</option>
+            <option value="corrected_pure/Pure_15">Pure Set 15</option>
+            <option value="corrected_pure/Pure_16">Pure Set 16</option>
+            <option value="corrected_pure/Pure_17">Pure Set 17</option>
+            <option value="corrected_pure/Pure_18">Pure Set 18</option>
+            <option value="corrected_pure/Pure_19">Pure Set 19</option>
+        </select>
+    </div>
+
+
 
     <main id="audit-container" class="container" style="margin-top:30px;">
         <!-- A Level questions will appear here -->
@@ -135,7 +166,7 @@
 
     <!-- ENGINE -->
     <script src="a-level-engine.js"></script>
-
+<!--
     <script>
       document.addEventListener("DOMContentLoaded", () => {
           // Initialize default dataset (Pure Set 1) directly
@@ -150,6 +181,21 @@
           }
       });
     </script>
+-->
 
+<script>
+      document.addEventListener("DOMContentLoaded", () => {
+          // Initialize default dataset (New Pure Set 1) directly
+          ALevelHub.loadSet("corrected_pure/Pure_1");
+
+          // Bind dropdown select listener
+          const setSelect = document.getElementById("setSelect");
+          if (setSelect) {
+              setSelect.addEventListener("change", (e) => {
+                  ALevelHub.loadSet(e.target.value);
+              });
+          }
+      });
+    </script>
 </body>
 </html>
