@@ -204,10 +204,10 @@ window.ALEVEL_QUESTIONS = [
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure/004006.png",
-                "question": "The diagram shows a sketch of the curve $y = \\sin x$, where x is measured in radians.<br>(a) Use the diagram to explain why the equation $$\\sin x - 2x + \\tfrac14 = 0$$ has exactly one real root.<br>(b) Let the root be $\\beta$. Given that $\\beta$ is small, use the small-angle approximation for $\\sin x$ to estimate the value of $\\beta$ to 3 decimal places.",
+                "question": "The diagram shows a sketch of the curve $y = \\sin x$, where $x$ is measured in radians.<br>(a) Use the diagram to explain why the equation $$\\sin x - 2x + \\tfrac14 = 0$$ has exactly one real root.<br>(b) Let the root be $\\beta$. Given that $\\beta$ is small, use the small-angle approximation for $\\sin x$ to estimate the value of $\\beta$ to 3 decimal places.",
                 "steps": [
                         "From the diagram, the curve $y = \\sin x$ starts at the origin with gradient 1, while the line $y = 2x - \\tfrac14$ starts below the curve and has a steeper gradient.",
-                        "Because the line is steeper, it crosses the curve once for a small positive value of x, and afterwards the line increases without bound while $\\sin x$ remains between -1 and 1.",
+                        "Because the line is steeper, it crosses the curve once for a small positive value of $x$, and afterwards the line increases without bound while $\\sin x$ remains between -1 and 1.",
                         "Therefore the equation has exactly one real root.",
                         "Using the small-angle approximation $\\sin x \\approx x$, substitute into the equation: $$x - 2x + \\tfrac14 = 0.$$",
                         "Simplifying gives $$-x + \\tfrac14 = 0 \\implies x = \\tfrac14.$$",
@@ -243,7 +243,7 @@ window.ALEVEL_QUESTIONS = [
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure/004007.png",
-                "question": "The diagram shows a sketch of the curve $y = \\tan x$ for values of x close to zero.<br>(a) Use the diagram to explain why the equation $$\\tan x - 3x + 0.2 = 0$$ has exactly one real root in the interval $-0.5 < x < 0.5$.<br>(b) Let the root be $\\gamma$. Given that $\\gamma$ is small, use the small-angle approximation for $\\tan x$ to estimate the value of $\\gamma$ to 3 decimal places.",
+                "question": "The diagram shows a sketch of the curve $y = \\tan x$ for values of $x$ close to zero.<br>(a) Use the diagram to explain why the equation $$\\tan x - 3x + 0.2 = 0$$ has exactly one real root in the interval $-0.5 < x < 0.5$.<br>(b) Let the root be $\\gamma$. Given that $\\gamma$ is small, use the small-angle approximation for $\\tan x$ to estimate the value of $\\gamma$ to 3 decimal places.",
                 "steps": [
                         "From the diagram, $y = \\tan x$ is increasing and passes through the origin with gradient 1.",
                         "The line $y = 3x - 0.2$ is steeper and starts below the curve at $x = 0$.",
@@ -282,7 +282,7 @@ window.ALEVEL_QUESTIONS = [
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure/004008.png",
-                "question": "The diagram shows a sketch of the curve $y = \\cos(2x)$, where x is measured in radians.<br>.(a) Use the diagram to explain why the equation $$\\cos(2x) - x - \\tfrac13 = 0$$ has exactly one real root.<br>(b) Let the root be $\\delta$. Given that $\\delta$ is small, use the small-angle approximation for $\\cos(2x)$ to estimate the value of $\\delta$ to 3 decimal places.",
+                "question": "The diagram shows a sketch of the curve $y = \\cos(2x)$, where $x$ is measured in radians.<br>.(a) Use the diagram to explain why the equation $$\\cos(2x) - x - \\tfrac13 = 0$$ has exactly one real root.<br>(b) Let the root be $\\delta$. Given that $\\delta$ is small, use the small-angle approximation for $\\cos(2x)$ to estimate the value of $\\delta$ to 3 decimal places.",
                 "steps": [
                         "From the diagram, $y = \\cos(2x)$ starts at 1 when $x = 0$, while the line $y = x + \\tfrac13$ starts at $\\tfrac13$ and increases.",
                         "The curve decreases while the line increases, so they cross once near the origin.",
@@ -322,7 +322,7 @@ window.ALEVEL_QUESTIONS = [
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure/004009.png",
-                "question": "The diagram shows a sketch of the curve $y = e^{-x}$, where x is measured in radians.<br>(a) Use the diagram to explain why the equation $$e^{-x} - 1.5x - 0.8 = 0$$ has exactly one real root.<br>(b) Let the root be $\\varepsilon$. Given that $\\varepsilon$ is small, use the small-angle approximation for $e^{-x}$ to estimate the value of $\\varepsilon$ to 3 decimal places.",
+                "question": "The diagram shows a sketch of the curve $y = e^{-x}$, where $x$ is measured in radians.<br>(a) Use the diagram to explain why the equation $$e^{-x} - 1.5x - 0.8 = 0$$ has exactly one real root.<br>(b) Let the root be $\\varepsilon$. Given that $\\varepsilon$ is small, use the small-angle approximation for $e^{-x}$ to estimate the value of $\\varepsilon$ to 3 decimal places.",
                 "steps": [
                         "From the diagram, $y = e^{-x}$ decreases from 1 as x increases, while the line $y = 1.5x + 0.8$ increases.",
                         "The two graphs cross once near the origin and do not meet again because the exponential decays while the line grows without bound.",
@@ -360,10 +360,10 @@ window.ALEVEL_QUESTIONS = [
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure/004010.png",
-                "question": "The diagram shows a sketch of the curve $y = \\sin(3x) + 0.5$, where x is measured in radians.<br>(a) Use the diagram to explain why the equation $$\\sin(3x) + 0.5 - 2x = 0$$ has exactly one real root.<br>(b) Let the root be $\\zeta$. Given that $\\zeta$ is small, use the small-angle approximation for $\\sin(3x)$ to estimate the value of $\\zeta$ to 3 decimal places.",
+                "question": "The diagram shows a sketch of the curve $y = \\sin(3x) + 0.5$, where $x$ is measured in radians.<br>(a) Use the diagram to explain why the equation $$\\sin(3x) + 0.5 - 2x = 0$$ has exactly one real root.<br>(b) Let the root be $\\zeta$. Given that $\\zeta$ is small, use the small-angle approximation for $\\sin(3x)$ to estimate the value of $\\zeta$ to 3 decimal places.",
                 "steps": [
                         "From the diagram, $y = \\sin(3x) + 0.5$ starts at 0.5 with initial gradient about 3, while the line $y = 2x$ starts at the origin with gradient 2.",
-                        "The curve begins above the line and crosses it once for a small negative value of x.",
+                        "The curve begins above the line and crosses it once for a small negative value of $x$.",
                         "After this, the line continues to increase while the curve oscillates, so there are no further intersections.",
                         "Using the small-angle approximation $\\sin(3x) \\approx 3x$, substitute into the equation: $$3x + 0.5 - 2x = 0.$$",
                         "Simplifying gives $$x + 0.5 = 0 \\implies x = -0.5.$$",
@@ -372,7 +372,7 @@ window.ALEVEL_QUESTIONS = [
                 "pi_options": [
                         {
                                 "ans": "$$\\zeta = 0.500$$",
-                                "feedback": "The diagram shows the intersection occurring for a negative value of x, not a positive one."
+                                "feedback": "The diagram shows the intersection occurring for a negative value of $x$, not a positive one."
                         },
                         {
                                 "ans": "$$\\zeta = -0.250$$",
@@ -399,7 +399,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "A curve has the equation:<br>$$y = \\dfrac{3x^2 + 12x}{(x+2)^2}, \\quad x \\ne -2$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+2)^n}$, where A and n are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
+                "question": "A curve has the equation:<br>$$y = \\dfrac{3x^2 + 12x}{(x+2)^2}, \\quad x \\ne -2$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+2)^n}$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
                 "steps": [
                         "<strong>Part (a):</strong> We begin by identifying the numerator as $u = 3x^2 + 12x$ and the denominator as $v = (x+2)^2$.",
                         "Differentiating both terms with respect to x gives:<br>$$u' = 6x + 12 = 6(x+2)$$<br>$$v' = 2(x+2)$$",
@@ -440,7 +440,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "A curve has the equation:<br>$$y = \\dfrac{-4x^2 - 8x}{(x+1)^2}, \\quad x \\ne -1$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+1)^n}$, where A and n are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
+                "question": "A curve has the equation:<br>$$y = \\dfrac{-4x^2 - 8x}{(x+1)^2}, \\quad x \\ne -1$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+1)^n}$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
                 "steps": [
                         "<strong>Part (a):</strong> Let $u = -4x^2 - 8x$ and $v = (x+1)^2$.",
                         "Differentiating both terms with respect to x gives:<br>$$u' = -8x - 8 = -8(x+1)$$<br>$$v' = 2(x+1)$$",
@@ -481,7 +481,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "A curve has the equation:<br>$$y = \\dfrac{2x^2 + 12x}{(x+3)^2}, \\quad x \\ne -3$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+3)^n}$, where A and n are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} > 0$.",
+                "question": "A curve has the equation:<br>$$y = \\dfrac{2x^2 + 12x}{(x+3)^2}, \\quad x \\ne -3$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+3)^n}$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} > 0$.",
                 "steps": [
                         "<strong>Part (a):</strong> Let $u = 2x^2 + 12x$ and $v = (x+3)^2$.",
                         "Differentiating both terms with respect to x gives:<br>$$u' = 4x + 12 = 4(x+3)$$<br>$$v' = 2(x+3)$$",
@@ -522,7 +522,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "A curve has the equation:<br>$$y = \\dfrac{-3x^2 - 12x}{(x+2)^2}, \\quad x \\ne -2$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+2)^n}$, where A and n are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} > 0$.",
+                "question": "A curve has the equation:<br>$$y = \\dfrac{-3x^2 - 12x}{(x+2)^2}, \\quad x \\ne -2$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+2)^n}$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} > 0$.",
                 "steps": [
                         "<strong>Part (a):</strong> Let $u = -3x^2 - 12x$ and $v = (x+2)^2$.",
                         "Differentiating both terms with respect to x gives:<br>$$u' = -6x - 12 = -6(x+2)$$<br>$$v' = 2(x+2)$$",
@@ -563,7 +563,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "A curve has the equation:<br>$$y = \\dfrac{4x^2 + 8x}{(x+1)^2}, \\quad x \\ne -1$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+1)^n}$, where A and n are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
+                "question": "A curve has the equation:<br>$$y = \\dfrac{4x^2 + 8x}{(x+1)^2}, \\quad x \\ne -1$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{(x+1)^n}$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
                 "steps": [
                         "<strong>Part (a):</strong> Let $u = 4x^2 + 8x$ and $v = (x+1)^2$.",
                         "Differentiating both terms with respect to x gives:<br>$$u' = 8x + 8 = 8(x+1)$$<br>$$v' = 2(x+1)$$",
@@ -605,7 +605,7 @@ window.ALEVEL_QUESTIONS = [
                         "Numerical Methods"
                 ],
                 "img": false,
-                "question": "A function is defined by:<br>$$f(x) = \\dfrac{1}{\\sqrt{9 - 2x}}.$$<br><strong>(a)</strong> Find the first three terms, in ascending powers of x, of the binomial expansion of $f(x)$, giving each coefficient in its simplest form.<br>The expansion can be used to approximate $\\sqrt{3}$. Possible values of x that could be substituted into this expansion are:<br>\\\\[x = -6, \\quad x = 3, \\quad x = -\\tfrac{1}{2}.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of x should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of x would lead to an approximation of $\\sqrt{3}$.",
+                "question": "A function is defined by:<br>$$f(x) = \\dfrac{1}{\\sqrt{9 - 2x}}.$$<br><strong>(a)</strong> Find the first three terms, in ascending powers of $x$, of the binomial expansion of $f(x)$, giving each coefficient in its simplest form.<br>The expansion can be used to approximate $\\sqrt{3}$. Possible values of $x$ that could be substituted into this expansion are:<br>\\\\[x = -6, \\quad x = 3, \\quad x = -\\tfrac{1}{2}.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to an approximation of $\\sqrt{3}$.",
                 "steps": [
                         "<strong>Part (a):</strong> Rewrite f(x) in binomial form by factorising the constant inside the square root:<br>$$f(x) = (9 - 2x)^{-1/2} = \\left[9\\left(1 - \\tfrac{2}{9}x\\right)\\right]^{-1/2} = 9^{-1/2}\\left(1 - \\tfrac{2}{9}x\\right)^{-1/2} = \\tfrac{1}{3}\\left(1 - \\tfrac{2}{9}x\\right)^{-1/2}.$$",
                         "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = -\\tfrac{2}{9}x$:<br>$$\\left(1 - \\tfrac{2}{9}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(-\\tfrac{2}{9}x\\right) + \\tfrac{3}{8}\\left(-\\tfrac{2}{9}x\\right)^2 + \\dots$$<br>$$= 1 + \\tfrac{1}{9}x + \\tfrac{1}{54}x^2 + \\dots$$",
@@ -632,7 +632,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "pro-tip",
                         "title": "The Head Teacher's Eye: Interval of validity versus target value",
-                        "content": "Two separate ideas are at work here: the interval of validity, which controls whether the binomial series converges, and the choice of x that actually produces the number you want to approximate. First check |x| against the convergence condition, then solve the algebraic equation that links your function value to the target number."
+                        "content": "Two separate ideas are at work here: the interval of validity, which controls whether the binomial series converges, and the choice of $x$ that actually produces the number you want to approximate. First check |x| against the convergence condition, then solve the algebraic equation that links your function value to the target number."
                 }
         },
         {
@@ -646,7 +646,7 @@ window.ALEVEL_QUESTIONS = [
                         "Numerical Methods"
                 ],
                 "img": false,
-                "question": "Consider the function:<br>$$g(x) = (5 - x)^{-1/2}.$$<br><strong>(a)</strong> Rewrite g(x) in the form $k(1 + mx)^n$ and hence find the first three terms of its binomial expansion in ascending powers of x.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{5.2}}$. Possible values of x that could be substituted are:<br>\\\\[x = -0.2, \\quad x = 1, \\quad x = -6.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of x is outside the interval of validity.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of x would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{5.2}}$.",
+                "question": "Consider the function:<br>$$g(x) = (5 - x)^{-1/2}.$$<br><strong>(a)</strong> Rewrite g(x) in the form $k(1 + mx)^n$ and hence find the first three terms of its binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{5.2}}$. Possible values of $x$ that could be substituted are:<br>\\\\[x = -0.2, \\quad x = 1, \\quad x = -6.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ is outside the interval of validity.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{5.2}}$.",
                 "steps": [
                         "<strong>Part (a):</strong> Factorise the constant from the bracket:<br>$$g(x) = (5 - x)^{-1/2} = \\left[5\\left(1 - \\tfrac{1}{5}x\\right)\\right]^{-1/2} = 5^{-1/2}\\left(1 - \\tfrac{1}{5}x\\right)^{-1/2} = \\dfrac{1}{\\sqrt{5}}\\left(1 - \\tfrac{1}{5}x\\right)^{-1/2}.$$",
                         "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = -\\tfrac{1}{5}x$:<br>$$\\left(1 - \\tfrac{1}{5}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(-\\tfrac{1}{5}x\\right) + \\tfrac{3}{8}\\left(-\\tfrac{1}{5}x\\right)^2 + \\dots$$<br>$$= 1 + \\tfrac{1}{10}x + \\tfrac{3}{200}x^2 + \\dots$$",
@@ -687,7 +687,7 @@ window.ALEVEL_QUESTIONS = [
                         "Numerical Methods"
                 ],
                 "img": false,
-                "question": "A function is defined by:<br>$$h(x) = \\dfrac{1}{(3 + x)^{1/2}}.$$<br><strong>(a)</strong> Express h(x) in the form $A(1 + Bx)^n$ and find the first three terms of its binomial expansion in ascending powers of x.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{2.7}}$. Possible values of x are:<br>\\\\[x = -0.3, \\quad x = 3, \\quad x = -6.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of x should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of x would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{2.7}}$.",
+                "question": "A function is defined by:<br>$$h(x) = \\dfrac{1}{(3 + x)^{1/2}}.$$<br><strong>(a)</strong> Express h(x) in the form $A(1 + Bx)^n$ and find the first three terms of its binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{2.7}}$. Possible values of $x$ are:<br>\\\\[x = -0.3, \\quad x = 3, \\quad x = -6.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{2.7}}$.",
                 "steps": [
                         "<strong>Part (a):</strong> Rewrite h(x) in binomial form by factorising the constant:<br>$$h(x) = (3 + x)^{-1/2} = \\left[3\\left(1 + \\tfrac{1}{3}x\\right)\\right]^{-1/2} = 3^{-1/2}\\left(1 + \\tfrac{1}{3}x\\right)^{-1/2} = \\dfrac{1}{\\sqrt{3}}\\left(1 + \\tfrac{1}{3}x\\right)^{-1/2}.$$",
                         "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = \\tfrac{1}{3}x$:<br>$$\\left(1 + \\tfrac{1}{3}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(\\tfrac{1}{3}x\\right) + \\tfrac{3}{8}\\left(\\tfrac{1}{3}x\\right)^2 + \\dots$$<br>$$= 1 - \\tfrac{1}{6}x + \\tfrac{1}{24}x^2 + \\dots$$",
@@ -728,7 +728,7 @@ window.ALEVEL_QUESTIONS = [
                         "Numerical Methods"
                 ],
                 "img": false,
-                "question": "A function is defined by:<br>$$y = (4 + 3x)^{-1/2}.$$<br><strong>(a)</strong> Rewrite y in the form $C(1 + Dx)^n$ and hence find the first three terms of the binomial expansion in ascending powers of x.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{3.1}}$. Possible values of x are:<br>\\\\[x = -0.3, \\quad x = 1, \\quad x = -2.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of x is invalid for the expansion.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of x would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{3.1}}$.",
+                "question": "A function is defined by:<br>$$y = (4 + 3x)^{-1/2}.$$<br><strong>(a)</strong> Rewrite y in the form $C(1 + Dx)^n$ and hence find the first three terms of the binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{3.1}}$. Possible values of $x$ are:<br>\\\\[x = -0.3, \\quad x = 1, \\quad x = -2.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ is invalid for the expansion.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{3.1}}$.",
                 "steps": [
                         "<strong>Part (a):</strong> Factorise the constant from the bracket:<br>$$y = (4 + 3x)^{-1/2} = \\left[4\\left(1 + \\tfrac{3}{4}x\\right)\\right]^{-1/2} = 4^{-1/2}\\left(1 + \\tfrac{3}{4}x\\right)^{-1/2} = \\dfrac{1}{2}\\left(1 + \\tfrac{3}{4}x\\right)^{-1/2}.$$",
                         "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = \\tfrac{3}{4}x$:<br>$$\\left(1 + \\tfrac{3}{4}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(\\tfrac{3}{4}x\\right) + \\tfrac{3}{8}\\left(\\tfrac{3}{4}x\\right)^2 + \\dots$$<br>$$= 1 - \\tfrac{3}{8}x + \\tfrac{27}{128}x^2 + \\dots$$",
@@ -769,7 +769,7 @@ window.ALEVEL_QUESTIONS = [
                         "Numerical Methods"
                 ],
                 "img": false,
-                "question": "A function is defined by:<br>$$F(x) = \\dfrac{1}{\\sqrt{16 - x}}.$$<br><strong>(a)</strong> Find the first three terms of the binomial expansion of $f(x)$ in ascending powers of x.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{15.5}}$. Possible values of x are:<br>\\\\[x = 0.5, \\quad x = -18, \\quad x = 3.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of x should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of x would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{15.5}}$.",
+                "question": "A function is defined by:<br>$$F(x) = \\dfrac{1}{\\sqrt{16 - x}}.$$<br><strong>(a)</strong> Find the first three terms of the binomial expansion of $f(x)$ in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{15.5}}$. Possible values of $x$ are:<br>\\\\[x = 0.5, \\quad x = -18, \\quad x = 3.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{15.5}}$.",
                 "steps": [
                         "<strong>Part (a):</strong> Rewrite F(x) in binomial form by factorising the constant inside the square root:<br>$$F(x) = (16 - x)^{-1/2} = \\left[16\\left(1 - \\tfrac{1}{16}x\\right)\\right]^{-1/2} = 16^{-1/2}\\left(1 - \\tfrac{1}{16}x\\right)^{-1/2} = \\dfrac{1}{4}\\left(1 - \\tfrac{1}{16}x\\right)^{-1/2}.$$",
                         "Use the binomial expansion $(1 + y)^{-1/2} = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = -\\tfrac{1}{16}x$:<br>$$\\left(1 - \\tfrac{1}{16}x\\right)^{-1/2} = 1 - \\tfrac{1}{2}\\left(-\\tfrac{1}{16}x\\right) + \\tfrac{3}{8}\\left(-\\tfrac{1}{16}x\\right)^2 + \\dots$$<br>$$= 1 + \\tfrac{1}{32}x + \\tfrac{3}{2048}x^2 + \\dots$$",

@@ -204,10 +204,10 @@ window.ALEVEL_QUESTIONS = [
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure/004006.png",
-                "question": "The diagram shows a sketch of the curve $y = \\sin x$, where x is measured in radians.<br>(a) Use the diagram to explain why the equation $$\\sin x - 2x + \\tfrac14 = 0$$ has exactly one real root.<br>(b) Let the root be $\\beta$. Given that $\\beta$ is small, use the small-angle approximation for $\\sin x$ to estimate the value of $\\beta$ to 3 decimal places.",
+                "question": "The diagram shows a sketch of the curve $y = \\sin x$, where $x$ is measured in radians.<br>(a) Use the diagram to explain why the equation $$\\sin x - 2x + \\tfrac14 = 0$$ has exactly one real root.<br>(b) Let the root be $\\beta$. Given that $\\beta$ is small, use the small-angle approximation for $\\sin x$ to estimate the value of $\\beta$ to 3 decimal places.",
                 "steps": [
                         "From the diagram, the curve $y = \\sin x$ starts at the origin with gradient 1, while the line $y = 2x - \\tfrac14$ starts below the curve and has a steeper gradient.",
-                        "Because the line is steeper, it crosses the curve once for a small positive value of x, and afterwards the line increases without bound while $\\sin x$ remains between -1 and 1.",
+                        "Because the line is steeper, it crosses the curve once for a small positive value of $x$, and afterwards the line increases without bound while $\\sin x$ remains between -1 and 1.",
                         "Therefore the equation has exactly one real root.",
                         "Using the small-angle approximation $\\sin x \\approx x$, substitute into the equation: $$x - 2x + \\tfrac14 = 0.$$",
                         "Simplifying gives \\begin{aligned}\n-x + \\tfrac14 &= 0 \\cr\nx &= \\tfrac14.\n\\end{aligned}",
@@ -243,7 +243,7 @@ window.ALEVEL_QUESTIONS = [
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure/004007.png",
-                "question": "The diagram shows a sketch of the curve $y = \\tan x$ for values of x close to zero.<br>(a) Use the diagram to explain why the equation $$\\tan x - 3x + 0.2 = 0$$ has exactly one real root in the interval $-0.5 < x < 0.5$.<br>(b) Let the root be $\\gamma$. Given that $\\gamma$ is small, use the small-angle approximation for $\\tan x$ to estimate the value of $\\gamma$ to 3 decimal places.",
+                "question": "The diagram shows a sketch of the curve $y = \\tan x$ for values of $x$ close to zero.<br>(a) Use the diagram to explain why the equation $$\\tan x - 3x + 0.2 = 0$$ has exactly one real root in the interval $-0.5 < x < 0.5$.<br>(b) Let the root be $\\gamma$. Given that $\\gamma$ is small, use the small-angle approximation for $\\tan x$ to estimate the value of $\\gamma$ to 3 decimal places.",
                 "steps": [
                         "From the diagram, $y = \\tan x$ is increasing and passes through the origin with gradient 1.",
                         "The line $y = 3x - 0.2$ is steeper and starts below the curve at $x = 0$.",
@@ -282,7 +282,7 @@ window.ALEVEL_QUESTIONS = [
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure/004008.png",
-                "question": "The diagram shows a sketch of the curve $y = \\cos(2x)$, where x is measured in radians.<br>.(a) Use the diagram to explain why the equation $$\\cos(2x) - x - \\tfrac13 = 0$$ has exactly one real root.<br>(b) Let the root be $\\delta$. Given that $\\delta$ is small, use the small-angle approximation for $\\cos(2x)$ to estimate the value of $\\delta$ to 3 decimal places.",
+                "question": "The diagram shows a sketch of the curve $y = \\cos(2x)$, where $x$ is measured in radians.<br>.(a) Use the diagram to explain why the equation $$\\cos(2x) - x - \\tfrac13 = 0$$ has exactly one real root.<br>(b) Let the root be $\\delta$. Given that $\\delta$ is small, use the small-angle approximation for $\\cos(2x)$ to estimate the value of $\\delta$ to 3 decimal places.",
                 "steps": [
                         "From the diagram, $y = \\cos(2x)$ starts at 1 when $x = 0$, while the line $y = x + \\tfrac13$ starts at $\\tfrac13$ and increases.",
                         "The curve decreases while the line increases, so they cross once near the origin.",
@@ -322,7 +322,7 @@ window.ALEVEL_QUESTIONS = [
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure/004009.png",
-                "question": "The diagram shows a sketch of the curve $y = e^{ -x }$, where x is measured in radians.<br>(a) Use the diagram to explain why the equation $$e^{ -x } - 1.5x - 0.8 = 0$$ has exactly one real root.<br>(b) Let the root be $\\varepsilon$. Given that $\\varepsilon$ is small, use the small-angle approximation for $e^{ -x }$ to estimate the value of $\\varepsilon$ to 3 decimal places.",
+                "question": "The diagram shows a sketch of the curve $y = e^{ -x }$, where $x$ is measured in radians.<br>(a) Use the diagram to explain why the equation $$e^{ -x } - 1.5x - 0.8 = 0$$ has exactly one real root.<br>(b) Let the root be $\\varepsilon$. Given that $\\varepsilon$ is small, use the small-angle approximation for $e^{ -x }$ to estimate the value of $\\varepsilon$ to 3 decimal places.",
                 "steps": [
                         "From the diagram, $y = e^{ -x }$ decreases from 1 as x increases, while the line $y = 1.5x + 0.8$ increases.",
                         "The two graphs cross once near the origin and do not meet again because the exponential decays while the line grows without bound.",
@@ -360,10 +360,10 @@ window.ALEVEL_QUESTIONS = [
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure/004010.png",
-                "question": "The diagram shows a sketch of the curve $y = \\sin(3x) + 0.5$, where x is measured in radians.<br>(a) Use the diagram to explain why the equation $$\\sin(3x) + 0.5 - 2x = 0$$ has exactly one real root.<br>(b) Let the root be $\\zeta$. Given that $\\zeta$ is small, use the small-angle approximation for $\\sin(3x)$ to estimate the value of $\\zeta$ to 3 decimal places.",
+                "question": "The diagram shows a sketch of the curve $y = \\sin(3x) + 0.5$, where $x$ is measured in radians.<br>(a) Use the diagram to explain why the equation $$\\sin(3x) + 0.5 - 2x = 0$$ has exactly one real root.<br>(b) Let the root be $\\zeta$. Given that $\\zeta$ is small, use the small-angle approximation for $\\sin(3x)$ to estimate the value of $\\zeta$ to 3 decimal places.",
                 "steps": [
                         "From the diagram, $y = \\sin(3x) + 0.5$ starts at 0.5 with initial gradient about 3, while the line $y = 2x$ starts at the origin with gradient 2.",
-                        "The curve begins above the line and crosses it once for a small negative value of x.",
+                        "The curve begins above the line and crosses it once for a small negative value of $x$.",
                         "After this, the line continues to increase while the curve oscillates, so there are no further intersections.",
                         "Using the small-angle approximation $\\sin(3x) \\approx 3x$, substitute into the equation: $$3x + 0.5 - 2x = 0.$$",
                         "Simplifying gives \\begin{aligned}\nx + 0.5 &= 0 \\cr\nx &= -0.5.\n\\end{aligned}",
@@ -372,7 +372,7 @@ window.ALEVEL_QUESTIONS = [
                 "pi_options": [
                         {
                                 "ans": "$$\\zeta = 0.500$$",
-                                "feedback": "The diagram shows the intersection occurring for a negative value of x, not a positive one."
+                                "feedback": "The diagram shows the intersection occurring for a negative value of $x$, not a positive one."
                         },
                         {
                                 "ans": "$$\\zeta = -0.250$$",
@@ -399,7 +399,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "A curve has the equation:<br>$$y = \\dfrac{ 3x^2 + 12x }{ (x+2)^2 }, \\quad x \\ne -2$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+2)^n }$, where A and n are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
+                "question": "A curve has the equation:<br>$$y = \\dfrac{ 3x^2 + 12x }{ (x+2)^2 }, \\quad x \\ne -2$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+2)^n }$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
                 "steps": [
                         "<strong>Part (a):</strong> We begin by identifying the numerator as $u = 3x^2 + 12x$ and the denominator as $v = (x+2)^2$.",
                         "Differentiating both terms with respect to x gives:<br>\\begin{aligned}\nu' &= 6x + 12 \\cr\n&= 6(x+2)\n\\end{aligned}<br>$$v' = 2(x+2)$$",
@@ -440,7 +440,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "A curve has the equation:<br>$$y = \\dfrac{ -4x^2 - 8x }{ (x+1)^2 }, \\quad x \\ne -1$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+1)^n }$, where A and n are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
+                "question": "A curve has the equation:<br>$$y = \\dfrac{ -4x^2 - 8x }{ (x+1)^2 }, \\quad x \\ne -1$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+1)^n }$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
                 "steps": [
                         "<strong>Part (a):</strong> Let $u = -4x^2 - 8x$ and $v = (x+1)^2$.",
                         "Differentiating both terms with respect to x gives:<br>\\begin{aligned}\nu' &= -8x - 8 \\cr\n&= -8(x+1)\n\\end{aligned}<br>$$v' = 2(x+1)$$",
@@ -481,7 +481,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "A curve has the equation:<br>$$y = \\dfrac{ 2x^2 + 12x }{ (x+3)^2 }, \\quad x \\ne -3$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+3)^n }$, where A and n are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} > 0$.",
+                "question": "A curve has the equation:<br>$$y = \\dfrac{ 2x^2 + 12x }{ (x+3)^2 }, \\quad x \\ne -3$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+3)^n }$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} > 0$.",
                 "steps": [
                         "<strong>Part (a):</strong> Let $u = 2x^2 + 12x$ and $v = (x+3)^2$.",
                         "Differentiating both terms with respect to x gives:<br>\\begin{aligned}\nu' &= 4x + 12 \\cr\n&= 4(x+3)\n\\end{aligned}<br>$$v' = 2(x+3)$$",
@@ -522,7 +522,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "A curve has the equation:<br>$$y = \\dfrac{ -3x^2 - 12x }{ (x+2)^2 }, \\quad x \\ne -2$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+2)^n }$, where A and n are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} > 0$.",
+                "question": "A curve has the equation:<br>$$y = \\dfrac{ -3x^2 - 12x }{ (x+2)^2 }, \\quad x \\ne -2$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+2)^n }$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} > 0$.",
                 "steps": [
                         "<strong>Part (a):</strong> Let $u = -3x^2 - 12x$ and $v = (x+2)^2$.",
                         "Differentiating both terms with respect to x gives:<br>\\begin{aligned}\nu' &= -6x - 12 \\cr\n&= -6(x+2)\n\\end{aligned}<br>$$v' = 2(x+2)$$",
@@ -563,7 +563,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "A curve has the equation:<br>$$y = \\dfrac{ 4x^2 + 8x }{ (x+1)^2 }, \\quad x \\ne -1$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+1)^n }$, where A and n are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
+                "question": "A curve has the equation:<br>$$y = \\dfrac{ 4x^2 + 8x }{ (x+1)^2 }, \\quad x \\ne -1$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+1)^n }$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
                 "steps": [
                         "<strong>Part (a):</strong> Let $u = 4x^2 + 8x$ and $v = (x+1)^2$.",
                         "Differentiating both terms with respect to x gives:<br>\\begin{aligned}\nu' &= 8x + 8 \\cr\n&= 8(x+1)\n\\end{aligned}<br>$$v' = 2(x+1)$$",
@@ -605,7 +605,7 @@ window.ALEVEL_QUESTIONS = [
                         "Numerical Methods"
                 ],
                 "img": false,
-                "question": "A function is defined by:<br>$$f(x) = \\dfrac{1}{ \\sqrt{9 - 2x }}.$$<br><strong>(a)</strong> Find the first three terms, in ascending powers of x, of the binomial expansion of $f(x)$, giving each coefficient in its simplest form.<br>The expansion can be used to approximate $\\sqrt{3}$. Possible values of x that could be substituted into this expansion are:<br>\\\\[x = -6, \\quad x = 3, \\quad x = -\\tfrac{1}{2}.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of x should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of x would lead to an approximation of $\\sqrt{3}$.",
+                "question": "A function is defined by:<br>$$f(x) = \\dfrac{1}{ \\sqrt{9 - 2x }}.$$<br><strong>(a)</strong> Find the first three terms, in ascending powers of $x$, of the binomial expansion of $f(x)$, giving each coefficient in its simplest form.<br>The expansion can be used to approximate $\\sqrt{3}$. Possible values of $x$ that could be substituted into this expansion are:<br>\\\\[x = -6, \\quad x = 3, \\quad x = -\\tfrac{1}{2}.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to an approximation of $\\sqrt{3}$.",
                 "steps": [
                         "<strong>Part (a):</strong> Rewrite f(x) in binomial form by factorising the constant inside the square root:<br>\\begin{aligned}\nf(x) &= (9 - 2x)^{ -1/2 } \\cr\n&= \\left[9\\left(1 - \\tfrac{2}{9}x\\right)\\right]^{ -1/2 } \\cr\n&= 9^{ -1/2 }\\left(1 - \\tfrac{2}{9}x\\right)^{ -1/2 } \\cr\n&= \\tfrac{1}{3}\\left(1 - \\tfrac{2}{9}x\\right)^{ -1/2 }.\n\\end{aligned}",
                         "Use the binomial expansion $(1 + y)^{ -1/2 } = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = -\\tfrac{2}{9}x$:<br>$$\\left(1 - \\tfrac{2}{9}x\\right)^{ -1/2 } = 1 - \\tfrac{1}{2}\\left(-\\tfrac{2}{9}x\\right) + \\tfrac{3}{8}\\left(-\\tfrac{2}{9}x\\right)^2 + \\dots$$<br>$$= 1 + \\tfrac{1}{9}x + \\tfrac{1}{54}x^2 + \\dots$$",
@@ -632,7 +632,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "pro-tip",
                         "title": "The Head Teacher's Eye: Interval of validity versus target value",
-                        "content": "Two separate ideas are at work here: the interval of validity, which controls whether the binomial series converges, and the choice of x that actually produces the number you want to approximate. First check |x| against the convergence condition, then solve the algebraic equation that links your function value to the target number."
+                        "content": "Two separate ideas are at work here: the interval of validity, which controls whether the binomial series converges, and the choice of $x$ that actually produces the number you want to approximate. First check |x| against the convergence condition, then solve the algebraic equation that links your function value to the target number."
                 }
         },
         {
@@ -646,7 +646,7 @@ window.ALEVEL_QUESTIONS = [
                         "Numerical Methods"
                 ],
                 "img": false,
-                "question": "Consider the function:<br>$$g(x) = (5 - x)^{ -1/2 }.$$<br><strong>(a)</strong> Rewrite g(x) in the form $k(1 + mx)^n$ and hence find the first three terms of its binomial expansion in ascending powers of x.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{5.2}}$. Possible values of x that could be substituted are:<br>\\\\[x = -0.2, \\quad x = 1, \\quad x = -6.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of x is outside the interval of validity.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of x would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{5.2}}$.",
+                "question": "Consider the function:<br>$$g(x) = (5 - x)^{ -1/2 }.$$<br><strong>(a)</strong> Rewrite g(x) in the form $k(1 + mx)^n$ and hence find the first three terms of its binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{5.2}}$. Possible values of $x$ that could be substituted are:<br>\\\\[x = -0.2, \\quad x = 1, \\quad x = -6.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ is outside the interval of validity.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{5.2}}$.",
                 "steps": [
                         "<strong>Part (a):</strong> Factorise the constant from the bracket:<br>\\begin{aligned}\ng(x) &= (5 - x)^{ -1/2 } \\cr\n&= \\left[5\\left(1 - \\tfrac{1}{5}x\\right)\\right]^{ -1/2 } \\cr\n&= 5^{ -1/2 }\\left(1 - \\tfrac{1}{5}x\\right)^{ -1/2 } \\cr\n&= \\dfrac{1}{\\sqrt{5}}\\left(1 - \\tfrac{1}{5}x\\right)^{ -1/2 }.\n\\end{aligned}",
                         "Use the binomial expansion $(1 + y)^{ -1/2 } = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = -\\tfrac{1}{5}x$:<br>$$\\left(1 - \\tfrac{1}{5}x\\right)^{ -1/2 } = 1 - \\tfrac{1}{2}\\left(-\\tfrac{1}{5}x\\right) + \\tfrac{3}{8}\\left(-\\tfrac{1}{5}x\\right)^2 + \\dots$$<br>$$= 1 + \\tfrac{1}{10}x + \\tfrac{3}{200}x^2 + \\dots$$",
@@ -687,7 +687,7 @@ window.ALEVEL_QUESTIONS = [
                         "Numerical Methods"
                 ],
                 "img": false,
-                "question": "A function is defined by:<br>$$h(x) = \\dfrac{1}{ (3 + x)^{1/2 }}.$$<br><strong>(a)</strong> Express h(x) in the form $A(1 + Bx)^n$ and find the first three terms of its binomial expansion in ascending powers of x.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{2.7}}$. Possible values of x are:<br>\\\\[x = -0.3, \\quad x = 3, \\quad x = -6.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of x should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of x would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{2.7}}$.",
+                "question": "A function is defined by:<br>$$h(x) = \\dfrac{1}{ (3 + x)^{1/2 }}.$$<br><strong>(a)</strong> Express h(x) in the form $A(1 + Bx)^n$ and find the first three terms of its binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{2.7}}$. Possible values of $x$ are:<br>\\\\[x = -0.3, \\quad x = 3, \\quad x = -6.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{2.7}}$.",
                 "steps": [
                         "<strong>Part (a):</strong> Rewrite h(x) in binomial form by factorising the constant:<br>\\begin{aligned}\nh(x) &= (3 + x)^{ -1/2 } \\cr\n&= \\left[3\\left(1 + \\tfrac{1}{3}x\\right)\\right]^{ -1/2 } \\cr\n&= 3^{ -1/2 }\\left(1 + \\tfrac{1}{3}x\\right)^{ -1/2 } \\cr\n&= \\dfrac{1}{\\sqrt{3}}\\left(1 + \\tfrac{1}{3}x\\right)^{ -1/2 }.\n\\end{aligned}",
                         "Use the binomial expansion $(1 + y)^{ -1/2 } = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = \\tfrac{1}{3}x$:<br>$$\\left(1 + \\tfrac{1}{3}x\\right)^{ -1/2 } = 1 - \\tfrac{1}{2}\\left(\\tfrac{1}{3}x\\right) + \\tfrac{3}{8}\\left(\\tfrac{1}{3}x\\right)^2 + \\dots$$<br>$$= 1 - \\tfrac{1}{6}x + \\tfrac{1}{24}x^2 + \\dots$$",
@@ -728,7 +728,7 @@ window.ALEVEL_QUESTIONS = [
                         "Numerical Methods"
                 ],
                 "img": false,
-                "question": "A function is defined by:<br>$$y = (4 + 3x)^{ -1/2 }.$$<br><strong>(a)</strong> Rewrite y in the form $C(1 + Dx)^n$ and hence find the first three terms of the binomial expansion in ascending powers of x.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{3.1}}$. Possible values of x are:<br>\\\\[x = -0.3, \\quad x = 1, \\quad x = -2.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of x is invalid for the expansion.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of x would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{3.1}}$.",
+                "question": "A function is defined by:<br>$$y = (4 + 3x)^{ -1/2 }.$$<br><strong>(a)</strong> Rewrite y in the form $C(1 + Dx)^n$ and hence find the first three terms of the binomial expansion in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{3.1}}$. Possible values of $x$ are:<br>\\\\[x = -0.3, \\quad x = 1, \\quad x = -2.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ is invalid for the expansion.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{3.1}}$.",
                 "steps": [
                         "<strong>Part (a):</strong> Factorise the constant from the bracket:<br>\\begin{aligned}\ny &= (4 + 3x)^{ -1/2 } \\cr\n&= \\left[4\\left(1 + \\tfrac{3}{4}x\\right)\\right]^{ -1/2 } \\cr\n&= 4^{ -1/2 }\\left(1 + \\tfrac{3}{4}x\\right)^{ -1/2 } \\cr\n&= \\dfrac{1}{2}\\left(1 + \\tfrac{3}{4}x\\right)^{ -1/2 }.\n\\end{aligned}",
                         "Use the binomial expansion $(1 + y)^{ -1/2 } = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = \\tfrac{3}{4}x$:<br>$$\\left(1 + \\tfrac{3}{4}x\\right)^{ -1/2 } = 1 - \\tfrac{1}{2}\\left(\\tfrac{3}{4}x\\right) + \\tfrac{3}{8}\\left(\\tfrac{3}{4}x\\right)^2 + \\dots$$<br>$$= 1 - \\tfrac{3}{8}x + \\tfrac{27}{128}x^2 + \\dots$$",
@@ -769,7 +769,7 @@ window.ALEVEL_QUESTIONS = [
                         "Numerical Methods"
                 ],
                 "img": false,
-                "question": "A function is defined by:<br>$$F(x) = \\dfrac{1}{ \\sqrt{16 - x }}.$$<br><strong>(a)</strong> Find the first three terms of the binomial expansion of $f(x)$ in ascending powers of x.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{15.5}}$. Possible values of x are:<br>\\\\[x = 0.5, \\quad x = -18, \\quad x = 3.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of x should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of x would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{15.5}}$.",
+                "question": "A function is defined by:<br>$$F(x) = \\dfrac{1}{ \\sqrt{16 - x }}.$$<br><strong>(a)</strong> Find the first three terms of the binomial expansion of $f(x)$ in ascending powers of $x$.<br>This expansion can be used to approximate $\\dfrac{1}{\\sqrt{15.5}}$. Possible values of $x$ are:<br>\\\\[x = 0.5, \\quad x = -18, \\quad x = 3.\\\\]<br><strong>(b)(i)</strong> Without evaluating your expansion, state, giving a reason, which of these values of $x$ should not be used.<br><strong>(b)(ii)</strong> State, giving a reason, which of these values of $x$ would lead to the most accurate approximation to $\\dfrac{1}{\\sqrt{15.5}}$.",
                 "steps": [
                         "<strong>Part (a):</strong> Rewrite F(x) in binomial form by factorising the constant inside the square root:<br>\\begin{aligned}\nF(x) &= (16 - x)^{ -1/2 } \\cr\n&= \\left[16\\left(1 - \\tfrac{1}{16}x\\right)\\right]^{ -1/2 } \\cr\n&= 16^{ -1/2 }\\left(1 - \\tfrac{1}{16}x\\right)^{ -1/2 } \\cr\n&= \\dfrac{1}{4}\\left(1 - \\tfrac{1}{16}x\\right)^{ -1/2 }.\n\\end{aligned}",
                         "Use the binomial expansion $(1 + y)^{ -1/2 } = 1 - \\tfrac{1}{2}y + \\tfrac{3}{8}y^2 + \\dots$ with $y = -\\tfrac{1}{16}x$:<br>$$\\left(1 - \\tfrac{1}{16}x\\right)^{ -1/2 } = 1 - \\tfrac{1}{2}\\left(-\\tfrac{1}{16}x\\right) + \\tfrac{3}{8}\\left(-\\tfrac{1}{16}x\\right)^2 + \\dots$$<br>$$= 1 + \\tfrac{1}{32}x + \\tfrac{3}{2048}x^2 + \\dots$$",
@@ -817,19 +817,19 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Part (c)(i):</strong> First, we expand and complete the square for g(x) to find its vertex:<br>$$g(x) = 3(x^2 - 4x + 4) + 6x - 7$$<br>\\begin{aligned}\ng(x) &= 3x^2 - 12x + 12 + 6x - 7 \\cr\n&= 3x^2 - 6x + 5\n\\end{aligned}<br>\\begin{aligned}\ng(x) &= 3(x^2 - 2x) + 5 \\cr\n&= 3\\left[(x-1)^2 - 1\\right] + 5\n\\end{aligned}<br>$$g(x) = 3(x-1)^2 + 2$$",
                         "The vertex of $f(x)$ is at (-1, 5) and the vertex of g(x) is at (1, 2).<br>To map (-1, 5) onto (1, 2), we shift +2 units horizontally and -3 units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$</strong>.",
                         "<strong>Part (c)(ii):</strong> We rewrite h(x) using our completed square form of the denominator:<br>$$h(x) = \\dfrac{15}{ 3(x+1)^2 + 5 }$$<br>Since the minimum value of the denominator is 5 (when $x = -1$), the maximum value of the fraction is $\\frac{15}{5} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \\le 3$</strong>.",
-                        "Final Answer: <strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -intercept: (0,8) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 2 $-3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$"
+                        "Final Answer: <strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -intercept: (0,8) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 2 -3 \\end{pmatrix} <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -intercept: (0,8) }$$ <strong>(c)(i)</strong> $\\text{Translation by }\\begin{pmatrix} -2$ 3 \\end{pmatrix} <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$",
+                                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -intercept: (0,8) }$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} -2 3  \\end{pmatrix}$$<strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$",
                                 "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $f(x)$ at $x = -1$ to the vertex of g(x) at $x = 1$ is a horizontal shift of +2. Moving from $y = 5$ to $y = 2$ is a vertical shift of -3. This gives the vector $\\begin{pmatrix} 2 \\\\\\ -3 \\end{pmatrix}$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -intercept: (0,8) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 2 $-3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 3$$",
+                                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -intercept: (0,8) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 2 -3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 3$$",
                                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $3x^2+6x+8$ has a minimum value of 5 and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < h(x) \\le 3$, not $0 \\le h(x) \\le 3$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 11$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,11), }y\\text{ -intercept: (0,8) }$$ <strong>(c)(i)</strong> \\text{Translation by } \\begin{pmatrix} 2 $-9 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
+                                "ans": "<strong>(a)</strong> $$3(x+1)^2 + 11$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,11), }y\\text{ -intercept: (0,8) }$$ <strong>(c)(i)</strong> \\text{Translation by } \\begin{pmatrix} 2 -9 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
                                 "feedback": "You probably made a sign error when expanding your completed square in Part (a), adding the 3 instead of subtracting it: $3[(x+1)^2 - 1] + 8 = 3(x+1)^2 - 3 + 8 = 3(x+1)^2 + 5$, not +11. This error affected all your subsequent coordinates and calculations."
                         }
                 ],
@@ -857,19 +857,19 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Part (c)(i):</strong> First, we expand and complete the square for g(x) to find its vertex:<br>$$g(x) = 2(x^2 - 6x + 9) + 8x - 15$$<br>\\begin{aligned}\ng(x) &= 2x^2 - 12x + 18 + 8x - 15 \\cr\n&= 2x^2 - 4x + 3\n\\end{aligned}<br>\\begin{aligned}\ng(x) &= 2(x^2 - 2x) + 3 \\cr\n&= 2\\left[(x-1)^2 - 1\\right] + 3\n\\end{aligned}<br>$$g(x) = 2(x-1)^2 + 1$$",
                         "The vertex of $f(x)$ is at (-2, 4) and the vertex of g(x) is at (1, 1).<br>To map (-2, 4) onto (1, 1), we shift +3 units horizontally and -3 units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$</strong>.",
                         "<strong>Part (c)(ii):</strong> We rewrite h(x) using our completed square form of the denominator:<br>$$h(x) = \\dfrac{12}{ 2(x+2)^2 + 4 }$$<br>Since the minimum value of the denominator is 4 (when $x = -2$), the maximum value of the fraction is $\\frac{12}{4} = 3$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \\le 3$</strong>.",
-                        "Final Answer: <strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,4), }y\\text{ -intercept: (0,12) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 $-3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$"
+                        "Final Answer: <strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,4), }y\\text{ -intercept: (0,12) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 -3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,4), }y\\text{ -intercept: (0,12) }$$ <strong>(c)(i)</strong> $\\text{Translation by }\\begin{pmatrix} -3$ 3 \\end{pmatrix} <strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$",
+                                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,4), }y\\text{ -intercept: (0,12) }$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} -3 3  \\end{pmatrix}$$<strong>(c)(ii)</strong> $$0 < h(x) \\le 3$$",
                                 "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $f(x)$ at $x = -2$ to the vertex of g(x) at $x = 1$ is a horizontal shift of +3. Moving from $y = 4$ to $y = 1$ is a vertical shift of -3. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -3 \\end{pmatrix}$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,4), }y\\text{ -intercept: (0,12) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 $-3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 3$$",
+                                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,4), }y\\text{ -intercept: (0,12) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 -3 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 3$$",
                                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $2x^2+8x+12$ has a minimum value of 4 and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < h(x) \\le 3$, not $0 \\le h(x) \\le 3$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 20$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,20), }y\\text{ -intercept: (0,12) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 $-19 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{3}{5}$$",
+                                "ans": "<strong>(a)</strong> $$2(x+2)^2 + 20$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,20), }y\\text{ -intercept: (0,12) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 -19 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{3}{5}$$",
                                 "feedback": "You probably made an error when completing the square in Part (a), adding the 8 instead of subtracting it: $2[(x+2)^2 - 4] + 12 = 2(x+2)^2 - 8 + 12 = 2(x+2)^2 + 4$, not +20. This error affected all your subsequent coordinates and calculations."
                         }
                 ],
@@ -897,19 +897,19 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Part (c)(i):</strong> First, we expand and complete the square for g(x) to find its vertex:<br>$$g(x) = 4(x^2 - 6x + 9) + 8x - 19$$<br>\\begin{aligned}\ng(x) &= 4x^2 - 24x + 36 + 8x - 19 \\cr\n&= 4x^2 - 16x + 17\n\\end{aligned}<br>\\begin{aligned}\ng(x) &= 4(x^2 - 4x) + 17 \\cr\n&= 4\\left[(x-2)^2 - 4\\right] + 17\n\\end{aligned}<br>$$g(x) = 4(x-2)^2 - 16 + 17$$<br>$$g(x) = 4(x-2)^2 + 1$$",
                         "The vertex of $f(x)$ is at (-1, 3) and the vertex of g(x) is at (2, 1).<br>To map (-1, 3) onto (2, 1), we shift +3 units horizontally and -2 units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$</strong>.",
                         "<strong>Part (c)(ii):</strong> We rewrite h(x) using our completed square form of the denominator:<br>$$h(x) = \\dfrac{15}{ 4(x+1)^2 + 3 }$$<br>Since the minimum value of the denominator is 3 (when $x = -1$), the maximum value of the fraction is $\\frac{15}{3} = 5$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \\le 5$</strong>.",
-                        "Final Answer: <strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,3), }y\\text{ -intercept: (0,7) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 $-2 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 5$$"
+                        "Final Answer: <strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,3), }y\\text{ -intercept: (0,7) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 -2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 5$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,3), }y\\text{ -intercept: (0,7) }$$ <strong>(c)(i)</strong> $\\text{Translation by }\\begin{pmatrix} -3$ 2 \\end{pmatrix} <strong>(c)(ii)</strong> $$0 < h(x) \\le 5$$",
+                                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,3), }y\\text{ -intercept: (0,7) }$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} -3 2  \\end{pmatrix}$$<strong>(c)(ii)</strong> $$0 < h(x) \\le 5$$",
                                 "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $f(x)$ at $x = -1$ to the vertex of g(x) at $x = 2$ is a horizontal shift of +3. Moving from $y = 3$ to $y = 1$ is a vertical shift of -2. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -2 \\end{pmatrix}$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,3), }y\\text{ -intercept: (0,7) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 $-2 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 5$$",
+                                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,3), }y\\text{ -intercept: (0,7) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 -2 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 5$$",
                                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $4x^2+8x+7$ has a minimum value of 3 and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < h(x) \\le 5$, not $0 \\le h(x) \\le 5$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 11$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,11), }y\\text{ -intercept: (0,7) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 $-10 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
+                                "ans": "<strong>(a)</strong> $$4(x+1)^2 + 11$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,11), }y\\text{ -intercept: (0,7) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 -10 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
                                 "feedback": "You probably made a sign error when completing the square in Part (a), adding the 4 instead of subtracting it: $4[(x+1)^2 - 1] + 7 = 4(x+1)^2 - 4 + 7 = 4(x+1)^2 + 3$, not +11. This error affected all your subsequent coordinates and calculations."
                         }
                 ],
@@ -937,19 +937,19 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Part (c)(i):</strong> First, we expand and complete the square for g(x) to find its vertex:<br>$$g(x) = 3(x^2 - 6x + 9) + 12x - 22$$<br>\\begin{aligned}\ng(x) &= 3x^2 - 18x + 27 + 12x - 22 \\cr\n&= 3x^2 - 6x + 5\n\\end{aligned}<br>\\begin{aligned}\ng(x) &= 3(x^2 - 2x) + 5 \\cr\n&= 3\\left[(x-1)^2 - 1\\right] + 5\n\\end{aligned}<br>$$g(x) = 3(x-1)^2 - 3 + 5$$<br>$$g(x) = 3(x-1)^2 + 2$$",
                         "The vertex of $f(x)$ is at (-2, 6) and the vertex of g(x) is at (1, 2).<br>To map (-2, 6) onto (1, 2), we shift +3 units horizontally and -4 units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$</strong>.",
                         "<strong>Part (c)(ii):</strong> We rewrite h(x) using our completed square form of the denominator:<br>$$h(x) = \\dfrac{24}{ 3(x+2)^2 + 6 }$$<br>Since the minimum value of the denominator is 6 (when $x = -2$), the maximum value of the fraction is $\\frac{24}{6} = 4$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \\le 4$</strong>.",
-                        "Final Answer: <strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,6), }y\\text{ -intercept: (0,18) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 $-4 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 4$$"
+                        "Final Answer: <strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,6), }y\\text{ -intercept: (0,18) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 4$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,6), }y\\text{ -intercept: (0,18) }$$ <strong>(c)(i)</strong> $\\text{Translation by }\\begin{pmatrix} -3$ 4 \\end{pmatrix} <strong>(c)(ii)</strong> $$0 < h(x) \\le 4$$",
+                                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,6), }y\\text{ -intercept: (0,18) }$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} -3 4  \\end{pmatrix}$$<strong>(c)(ii)</strong> $$0 < h(x) \\le 4$$",
                                 "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $f(x)$ at $x = -2$ to the vertex of g(x) at $x = 1$ is a horizontal shift of +3. Moving from $y = 6$ to $y = 2$ is a vertical shift of -4. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,6), }y\\text{ -intercept: (0,18) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 $-4 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 4$$",
+                                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,6), }y\\text{ -intercept: (0,18) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 -4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 4$$",
                                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $3x^2+12x+18$ has a minimum value of 6 and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < h(x) \\le 4$, not $0 \\le h(x) \\le 4$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 30$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,30), }y\\text{ -intercept: (0,18) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 $-28 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{4}{5}$$",
+                                "ans": "<strong>(a)</strong> $$3(x+2)^2 + 30$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,30), }y\\text{ -intercept: (0,18) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 -28 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{4}{5}$$",
                                 "feedback": "You probably made a sign error when completing the square in Part (a), adding the 12 instead of subtracting it: $3[(x+2)^2 - 4] + 18 = 3(x+2)^2 - 12 + 18 = 3(x+2)^2 + 6$, not +30. This error affected all your subsequent coordinates and calculations."
                         }
                 ],
@@ -977,19 +977,19 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Part (c)(i):</strong> First, we expand and complete the square for g(x) to find its vertex:<br>$$g(x) = 2(x^2 - 6x + 9) + 4x - 9$$<br>\\begin{aligned}\ng(x) &= 2x^2 - 12x + 18 + 4x - 9 \\cr\n&= 2x^2 - 8x + 9\n\\end{aligned}<br>\\begin{aligned}\ng(x) &= 2(x^2 - 4x) + 9 \\cr\n&= 2\\left[(x-2)^2 - 4\\right] + 9\n\\end{aligned}<br>$$g(x) = 2(x-2)^2 - 8 + 9$$<br>$$g(x) = 2(x-2)^2 + 1$$",
                         "The vertex of $f(x)$ is at (-1, 5) and the vertex of g(x) is at (2, 1).<br>To map (-1, 5) onto (2, 1), we shift +3 units horizontally and -4 units vertically.<br>Therefore, the transformation is a <strong>translation by the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$</strong>.",
                         "<strong>Part (c)(ii):</strong> We rewrite h(x) using our completed square form of the denominator:<br>$$h(x) = \\dfrac{10}{ 2(x+1)^2 + 5 }$$<br>Since the minimum value of the denominator is 5 (when $x = -1$), the maximum value of the fraction is $\\frac{10}{5} = 2$. As $x \\to \\pm\\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \\le 2$</strong>.",
-                        "Final Answer: <strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -intercept: (0,7 }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 $-4 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 2$$"
+                        "Final Answer: <strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -intercept: (0,7 }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 -4 \\end{pmatrix}$$<strong>(c)(ii)</strong> $$0 < h(x) \\le 2$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -intercept: (0,7 }$$ <strong>(c)(i)</strong> $\\text{Translation by }\\begin{pmatrix} -3$ 4 \\end{pmatrix} <strong>(c)(ii)</strong> $$0 < h(x) \\le 2$$",
+                                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -intercept: (0,7 }$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} -3 4  \\end{pmatrix}$$<strong>(c)(ii)</strong> $$0 < h(x) \\le 2$$",
                                 "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $f(x)$ at $x = -1$ to the vertex of g(x) at $x = 2$ is a horizontal shift of +3. Moving from $y = 5$ to $y = 1$ is a vertical shift of -4. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -intercept: (0,7) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 $-4 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 2$$",
+                                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -intercept: (0,7) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 -4 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 \\le h(x) \\le 2$$",
                                 "feedback": "Check your inequality symbols in Part (c)(ii). The denominator $2x^2+4x+7$ has a minimum value of 5 and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < h(x) \\le 2$, not $0 \\le h(x) \\le 2$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 9$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,9), }y\\text{ -intercept: (0,7) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 $-8 \\end{pmatrix}$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{10}{9}$$",
+                                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 9$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,9), }y\\text{ -intercept: (0,7) }$$ <strong>(c)(i)</strong> \\text{Translation by }\\begin{pmatrix} 3 $-8 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{10}{9}$$",
                                 "feedback": "You probably made a sign error when completing the square in Part (a), adding the 2 instead of subtracting it: $2[(x+1)^2 - 1] + 7 = 2(x+1)^2 - 2 + 7 = 2(x+1)^2 + 5$, not +9. This error affected all your subsequent coordinates and calculations."
                         }
                 ],
@@ -1030,7 +1030,7 @@ window.ALEVEL_QUESTIONS = [
                         }
                 ],
                 "bradley_insight": {
-                        "type": "tip",
+                        "type": "pro-tip",
                         "title": "Factorisation First",
                         "content": "When both sides contain products of trig functions, factorising early often reveals clean solution branches and prevents unnecessary algebra."
                 }
@@ -1102,7 +1102,7 @@ window.ALEVEL_QUESTIONS = [
                         }
                 ],
                 "bradley_insight": {
-                        "type": "tip",
+                        "type": "pro-tip",
                         "title": "Quadratics in Disguise",
                         "content": "Whenever you see cos2θ or sin2θ, try rewriting everything in terms of sinθ or cosθ. It often collapses into a clean quadratic."
                 }
@@ -1174,7 +1174,7 @@ window.ALEVEL_QUESTIONS = [
                         }
                 ],
                 "bradley_insight": {
-                        "type": "tip",
+                        "type": "pro-tip",
                         "title": "Spot the Structure",
                         "content": "When the transformed equation in Part (b) mirrors the structure of Part (a), a simple substitution often collapses the problem instantly."
                 }
@@ -1366,7 +1366,7 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £}7,864\\text{ vs } \\text{£}7,800)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 30000(r)^t\\text{ where } r < 0.8\\text{)}$$",
+                                "ans": "<strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx \\text{£}7,864\\text{ vs } \\text{£}7,800)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 30000(r)^t\\text{ where } r < 0.8\\text{)}$$",
                                 "feedback": "Check your reasoning for Part (c). If EV B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.8, not smaller."
                         },
                         {
@@ -1403,7 +1403,7 @@ window.ALEVEL_QUESTIONS = [
                         "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}\n\\frac{5}{12} &= -\\left( \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - b^2 \\right) \\cr\n\\frac{ b^4 }{4} - \\frac{ b^3 }{3} - b^2 + \\frac{5}{12} &= 0\n\\end{aligned}<br>Multiplying the entire equation by 12 to clear the fractions:<br>$$3b^4 - 4b^3 - 12b^2 + 5 = 0$$",
                         "We can verify that this factorises to $(b+1)^2(3b^2 - 10b + 5) = 0$ by expanding the brackets:<br>$$(b^2 + 2b + 1)(3b^2 - 10b + 5) = b^2(3b^2 - 10b + 5) + 2b(3b^2 - 10b + 5) + 1(3b^2 - 10b + 5)$$<br>$$= 3b^4 - 10b^3 + 5b^2 + 6b^3 - 20b^2 + 10b + 3b^2 - 10b + 5$$<br>\\begin{aligned}\n &= 3b^4 - 4b^3 - 12b^2 + 5 \\cr\n&= 0 \\quad \\text{(verified)}\n\\end{aligned}",
                         "<strong>Part (c):</strong> The root $b \\approx 2.721$ lies to the right of the root $x = 2$, which is outside our interval of validity $0 < b < 2$.<br>Geometrically, this value represents an upper limit where the total net signed area from 0 to 2.721 integrates to $-\\frac{5}{12}$. This occurs because the negative area of the lower lobe (between 0 and 2) is partially cancelled out by the positive area of the upper lobe (between 2 and 2.721).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure/004036_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> b \\approx 2.721 \\text{represents the point of signed area cancellation}"
+                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$ b\\approx 2.721 \\text{represents the point of signed area cancellation}$$"
                 ],
                 "pi_options": [
                         {
@@ -1444,7 +1444,7 @@ window.ALEVEL_QUESTIONS = [
                         "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}\n\\frac{7}{12} &= -\\left( \\frac{ b^4 }{4} - \\frac{ 2b^3 }{3} - \\frac{ 3b^2 }{2} \\right) \\cr\n\\frac{ b^4 }{4} - \\frac{ 2b^3 }{3} - \\frac{ 3b^2 }{2} + \\frac{7}{12} &= 0\n\\end{aligned}<br>Multiplying the entire equation by 12 to clear the fractions:<br>$$3b^4 - 8b^3 - 18b^2 + 7 = 0$$",
                         "We can verify that this factorises to $(b+1)^2(3b^2 - 14b + 7) = 0$ by expanding the brackets:<br>$$(b^2 + 2b + 1)(3b^2 - 14b + 7) = b^2(3b^2 - 14b + 7) + 2b(3b^2 - 14b + 7) + 1(3b^2 - 14b + 7)$$<br>$$= 3b^4 - 14b^3 + 7b^2 + 6b^3 - 28b^2 + 14b + 3b^2 - 14b + 7$$<br>\\begin{aligned}\n &= 3b^4 - 8b^3 - 18b^2 + 7 \\cr\n&= 0 \\quad \\text{(verified)}\n\\end{aligned}",
                         "<strong>Part (c):</strong> The root $b \\approx 4.097$ lies to the right of the root $x = 3$, which is outside our interval of validity $0 < b < 3$.<br>Geometrically, this value represents an upper limit where the total net signed area from 0 to 4.097 integrates to $-\\frac{7}{12}$. This occurs because the negative area of the lower lobe (between 0 and 3) is partially cancelled out by the positive area of the upper lobe (between 3 and 4.097).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure/004037_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> b \\approx 4.097 \\text{represents the point of signed area cancellation}"
+                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$ b\\approx 4.097 \\text{represents the point of signed area cancellation}$$"
                 ],
                 "pi_options": [
                         {
@@ -1485,7 +1485,7 @@ window.ALEVEL_QUESTIONS = [
                         "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}\n\\frac{16}{3} &= -\\left( \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - 3b^2 \\right) \\cr\n\\frac{ b^4 }{4} - \\frac{ b^3 }{3} - 3b^2 + \\frac{16}{3} &= 0\n\\end{aligned}<br>Multiplying the entire equation by 12 to clear the fractions:<br>$$3b^4 - 4b^3 - 36b^2 + 64 = 0$$",
                         "We can verify that this factorises to $(b+2)^2(3b^2 - 16b + 16) = 0$ by expanding the brackets:<br>$$(b^2 + 4b + 4)(3b^2 - 16b + 16) = b^2(3b^2 - 16b + 16) + 4b(3b^2 - 16b + 16) + 4(3b^2 - 16b + 16)$$<br>$$= 3b^4 - 16b^3 + 16b^2 + 12b^3 - 64b^2 + 64b + 12b^2 - 64b + 64$$<br>\\begin{aligned}\n &= 3b^4 - 4b^3 - 36b^2 + 64 \\cr\n&= 0 \\quad \\text{(verified)}\n\\end{aligned}",
                         "<strong>Part (c):</strong> The root $b = 4$ lies to the right of the root $x = 3$, which is outside our interval of validity $0 < b < 3$.<br>Geometrically, this value represents an upper limit where the total net signed area from 0 to 4 integrates to $-\\frac{16}{3}$. This occurs because the negative area of the lower lobe (between 0 and 3) is partially cancelled out by the positive area of the upper lobe (between 3 and 4).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure/004038_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $b = 4$ \\text{represents the point of signed area cancellation}"
+                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b = 4$ \\text{represents the point of signed area cancellation}$$"
                 ],
                 "pi_options": [
                         {
@@ -1526,7 +1526,7 @@ window.ALEVEL_QUESTIONS = [
                         "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}\n\\frac{81}{4} &= -\\left( \\frac{ b^4 }{4} - \\frac{ 9b^2 }{2} \\right) \\cr\n\\frac{ b^4 }{4} - \\frac{ 9b^2 }{2} + \\frac{81}{4} &= 0\n\\end{aligned}<br>Multiplying the entire equation by 4 to clear the fractions:<br>$$b^4 - 18b^2 + 81 = 0$$",
                         "We can verify that this factorises to $(b+3)^2(b-3)^2 = 0$ (which is $(b^2 - 9)^2 = 0$) by expanding the brackets:<br>\\begin{aligned}\n(b^2 - 9)^2 &= (b^2)^2 - 2(9)(b^2) + 81 \\cr\n&= b^4 - 18b^2 + 81 \\cr\n&= 0 \\quad \\text{(verified)}\n\\end{aligned}",
                         "<strong>Part (c):</strong> The root $b = 3$ is exactly the second positive root of the cubic equation.<br>Geometrically, choosing $b = 3$ means that $R_2$ is the entire negative lobe of the curve between 0 and 3. Because $y = x^3 - 9x$ is an odd function, it is perfectly symmetric about the origin, meaning the area of the positive lobe $R_1$ is identical to the area of the negative lobe $R_2$.<br><br>Here is the diagram showing this symmetry:<br><img src='images/Pure/004039_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $b = 3$ \\text{represents the symmetric opposite lobe boundary}"
+                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b = 3 \\text{represents the symmetric opposite lobe boundary}$$"
                 ],
                 "pi_options": [
                         {
@@ -1567,7 +1567,7 @@ window.ALEVEL_QUESTIONS = [
                         "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}\n8 &= -\\left( \\frac{ b^4 }{4} - b^3 - 5b^2 \\right) \\cr\n\\frac{ b^4 }{4} - b^3 - 5b^2 + 8 &= 0\n\\end{aligned}<br>Multiplying the entire equation by 4 to clear the fractions:<br>$$b^4 - 4b^3 - 20b^2 + 32 = 0$$",
                         "We can verify that this factorises to $(b+2)^2(b^2 - 8b + 8) = 0$ (which is equivalent to $(b+2)^2(3b^2 - 24b + 24) = 0$ upon multiplying the quadratic by 3) by expanding the brackets:<br>$$(b^2 + 4b + 4)(3b^2 - 24b + 24) = b^2(3b^2 - 24b + 24) + 4b(3b^2 - 24b + 24) + 4(3b^2 - 24b + 24)$$<br>$$= 3b^4 - 24b^3 + 24b^2 + 12b^3 - 96b^2 + 96b + 12b^2 - 96b + 94$$<br>Wait! Let's check the constants:<br>$$4 \\times 24 = 96$$. So the expansion yields:<br>\\begin{aligned}\n3b^4 - 12b^3 - 60b^2 + 96 &= 0 \\cr\n3(b^4 - 4b^3 - 20b^2 + 32) &= 0 \\quad \\text{(verified)}\n\\end{aligned}",
                         "<strong>Part (c):</strong> The root $b \\approx 6.828$ lies to the right of the root $x = 5$, which is outside our interval of validity $0 < b < 5$.<br>Geometrically, this value represents an upper limit where the total net signed area from 0 to 6.828 integrates to -8. This occurs because the negative area of the lower lobe (between 0 and 5) is partially cancelled out by the positive area of the upper lobe (between 5 and 6.828).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure/004040_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> b \\approx 6.828 \\text{represents the point of signed area cancellation}"
+                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b\\approx 6.828 \\text{represents the point of signed area cancellation}$$"
                 ],
                 "pi_options": [
                         {
