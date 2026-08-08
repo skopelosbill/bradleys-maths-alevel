@@ -874,7 +874,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "$$y = \\dfrac{1}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>\\begin{aligned}\n  (a)\\\\\\ \\dfrac{dy}{dx} &= -\\dfrac{3}{x^2}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} \\\\ &= x^{-3}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} \\\\ &= -\\dfrac{3}{x^4}\\\\\\ (d) \\dfrac{dy}{dx} \\\\ &= -\\dfrac{3}{x^3}\n\\end{aligned}",
+                "question": "$$y = \\dfrac{1}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^2}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = x^{-3}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^4}\\\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{3}{x^3}$$",
                 "steps": [
                         "First, rewrite the expression in index form: $$y = x^{-3}$$",
                         "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -3$$ $$\\dfrac{dy}{dx} = -3x^{-3-1} = -3x^{-4}$$",
@@ -911,7 +911,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "$$y = \\dfrac{1}{x^4}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>\\begin{aligned}\n  (a)\\\\\\ \\dfrac{dy}{dx} &= -\\dfrac{4}{x^5}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} \\\\ &= -\\dfrac{4}{x^3}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} \\\\ &= x^{-4}\\\\\\ (d) \\dfrac{dy}{dx} \\\\ &= -\\dfrac{4}{x^4}\n\\end{aligned}",
+                "question": "$$y = \\dfrac{1}{x^4}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^5}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^3}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = x^{-4}\\\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{4}{x^4}$$",
                 "steps": [
                         "First, rewrite the expression in index form: $$y = x^{-4}$$",
                         "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -4$$ $$\\dfrac{dy}{dx} = -4x^{-4-1} = -4x^{-5}$$",
@@ -948,7 +948,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "$$y = \\dfrac{1}{x^5}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>\\begin{aligned}\n  (a)\\\\\\ \\dfrac{dy}{dx} &= x^{-5}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} \\\\ &= -\\dfrac{5}{x^6}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} \\\\ &= -\\dfrac{5}{x^4}\\\\\\ (d) \\dfrac{dy}{dx} \\\\ &= -\\dfrac{5}{x^5}\n\\end{aligned}",
+                "question": "$$y = \\dfrac{1}{x^5}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = x^{-5}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^4}\\\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
                 "steps": [
                         "First, rewrite the expression in index form: $$y = x^{-5}$$",
                         "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -5$$ $$\\dfrac{dy}{dx} = -5x^{-5-1} = -5x^{-6}$$",
@@ -985,7 +985,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "$$y = \\dfrac{2}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>\\begin{aligned}\n  (a)\\\\\\ \\dfrac{dy}{dx} &= -\\dfrac{6}{x^2}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} \\\\ &= -\\dfrac{6}{x^4}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} \\\\ &= -\\dfrac{2}{x^4}\\\\\\ (d) \\dfrac{dy}{dx} \\\\ &= 2x^{-3}\n\\end{aligned}",
+                "question": "$$y = \\dfrac{2}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^2}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^4}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{2}{x^4}\\\\\\ (d) \\dfrac{dy}{dx} = 2x^{-3}$$",
                 "steps": [
                         "First, rewrite the expression in index form: $$y = 2x^{-3}$$",
                         "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$ where, $$a = 2$$ and $$n = -3$$ $$\\dfrac{dy}{dx} = 2 \\times \\left(-3\\right)x^{-3-1} = -6x^{-4}$$",
@@ -1022,7 +1022,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation"
                 ],
                 "img": false,
-                "question": "$$y = \\dfrac{1}{2x^2}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>\\begin{aligned}\n  (a)\\\\\\ \\dfrac{dy}{dx} &= -\\dfrac{1}{4x^3}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} \\\\ &= -\\dfrac{1}{x^2}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} \\\\ &= -\\dfrac{1}{x^3}\\\\\\ (d) \\dfrac{dy}{dx} \\\\ &= \\dfrac{1}{2}x^{-2}\n\\end{aligned}",
+                "question": "$$y = \\dfrac{1}{2x^2}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{4x^3}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^2}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^3}\\\\\\ (d) \\dfrac{dy}{dx} = \\dfrac{1}{2}x^{-2}$$",
                 "steps": [
                         "First, rewrite the expression in index form: $$y = \\dfrac{1}{2}x^{-2}$$",
                         "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$ where, $$a = \\dfrac{1}{2}$$ and $$n = -2$$ $$\\dfrac{dy}{dx} = \\dfrac{1}{2} \\times \\left(-2\\right)x^{-2-1} = -1x^{-3}$$",
@@ -1059,7 +1059,7 @@ window.ALEVEL_QUESTIONS = [
                         "Graph Transformations"
                 ],
                 "img": false,
-                "question": "The graph of $$y = 3^x$$ is transformed by a stretch in the $y$-direction, scale factor 3.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>\\begin{aligned}\n  (a)\\\\ y &= 3^{3x}\\\\\\ (b)\\\\ y \\\\ &= \\dfrac{1}{3} \\times 3^x\\\\\\ (c)\\\\ y \\\\ &= 3^{\\frac{x}{3}}\\\\\\ (d)\\\\ y \\\\ &= 3 \\times 3^x\n\\end{aligned}",
+                "question": "The graph of $$y = 3^x$$ is transformed by a stretch in the $y$-direction, scale factor 3.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 3^{3x}\\\\\\ (b)\\\\ y = \\dfrac{1}{3} \\times 3^x\\\\\\ (c)\\\\ y = 3^{\\frac{x}{3}}\\\\\\ (d)\\\\ y = 3 \\times 3^x$$",
                 "steps": [
                         "First, identify the original function: $$y = f(x) = 3^x$$",
                         "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 3$$",
@@ -1096,7 +1096,7 @@ window.ALEVEL_QUESTIONS = [
                         "Graph Transformations"
                 ],
                 "img": false,
-                "question": "The graph of $$y = 4^x$$ is transformed by a stretch in the $y$-direction, scale factor 4.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>\\begin{aligned}\n  (a)\\\\ y &= 4 \\times 4^x\\\\\\ (b)\\\\ y \\\\ &= 4^{\\frac{x}{4}}\\\\\\ (c)\\\\ y \\\\ &= \\dfrac{1}{4} \\times 4^x\\\\\\ (d)\\\\ y \\\\ &= 4^{4x}\n\\end{aligned}",
+                "question": "The graph of $$y = 4^x$$ is transformed by a stretch in the $y$-direction, scale factor 4.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 4 \\times 4^x\\\\\\ (b)\\\\ y = 4^{\\frac{x}{4}}\\\\\\ (c)\\\\ y = \\dfrac{1}{4} \\times 4^x\\\\\\ (d)\\\\ y = 4^{4x}$$",
                 "steps": [
                         "First, identify the original function: $$y = f(x) = 4^x$$",
                         "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 4$$",
@@ -1133,7 +1133,7 @@ window.ALEVEL_QUESTIONS = [
                         "Graph Transformations"
                 ],
                 "img": false,
-                "question": "The graph of $$y = 2^x$$ is transformed by a stretch in the $y$-direction, scale factor 2.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>\\begin{aligned}\n  (a)\\\\ y &= 2^{2x}\\\\\\ (b)\\\\ y \\\\ &= 2 \\times 2^x\\\\\\ (c)\\\\ y \\\\ &= 2^{\\frac{x}{2}}\\\\\\ (d)\\\\ y \\\\ &= \\dfrac{1}{2} \\times 2^x\n\\end{aligned}",
+                "question": "The graph of $$y = 2^x$$ is transformed by a stretch in the $y$-direction, scale factor 2.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 2^{2x}\\\\\\ (b)\\\\ y = 2 \\times 2^x\\\\\\ (c)\\\\ y = 2^{\\frac{x}{2}}\\\\\\ (d)\\\\ y = \\dfrac{1}{2} \\times 2^x$$",
                 "steps": [
                         "First, identify the original function: $$y = f(x) = 2^x$$",
                         "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 2$$",
@@ -1170,7 +1170,7 @@ window.ALEVEL_QUESTIONS = [
                         "Graph Transformations"
                 ],
                 "img": false,
-                "question": "The graph of $$y = 6^x$$ is transformed by a stretch in the $y$-direction, scale factor 6.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>\\begin{aligned}\n  (a)\\\\ y &= 6^{\\frac{x}{6}}\\\\\\ (b)\\\\ y \\\\ &= \\dfrac{1}{6} \\times 6^x\\\\\\ (c)\\\\ y \\\\ &= 6^{6x}\\\\\\ (d)\\\\ y \\\\ &= 6 \\times 6^x\n\\end{aligned}",
+                "question": "The graph of $$y = 6^x$$ is transformed by a stretch in the $y$-direction, scale factor 6.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 6^{\\frac{x}{6}}\\\\\\ (b)\\\\ y = \\dfrac{1}{6} \\times 6^x\\\\\\ (c)\\\\ y = 6^{6x}\\\\\\ (d)\\\\ y = 6 \\times 6^x$$",
                 "steps": [
                         "First, identify the original function: $$y = f(x) = 6^x$$",
                         "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 6$$",
@@ -1207,7 +1207,7 @@ window.ALEVEL_QUESTIONS = [
                         "Graph Transformations"
                 ],
                 "img": false,
-                "question": "The graph of $$y = 7^x$$ is transformed by a stretch in the $y$-direction, scale factor 7.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>\\begin{aligned}\n  (a)\\\\ y &= 7 \\times 7^x\\\\\\ (b)\\\\ y \\\\ &= 7^{\\frac{x}{7}}\\\\\\ (c)\\\\ y \\\\ &= \\dfrac{1}{7} \\times 7^x\\\\\\ (d)\\\\ y \\\\ &= 7^{7x}\n\\end{aligned}",
+                "question": "The graph of $$y = 7^x$$ is transformed by a stretch in the $y$-direction, scale factor 7.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 7 \\times 7^x\\\\\\ (b)\\\\ y = 7^{\\frac{x}{7}}\\\\\\ (c)\\\\ y = \\dfrac{1}{7} \\times 7^x\\\\\\ (d)\\\\ y = 7^{7x}$$",
                 "steps": [
                         "First, identify the original function: $$y = f(x) = 7^x$$",
                         "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 7$$",

@@ -6,7 +6,7 @@ import os
 # Set to True to generate the audit_report.txt without modifying your original files!
 # Set to False only when you are 100% happy with the report.
 # =====================================================
-DRY_RUN = False
+DRY_RUN = True
 
 def clean_line_by_line(filename):
     print(f"Scanning {filename} (DRY_RUN = {DRY_RUN})...\n")
@@ -129,4 +129,4 @@ def clean_line_by_line(filename):
         print(f"\nSuccess! Saved all corrected changes to {new_filename}!")
         print("Verify this file, rename it to Pure_1.js, and push when ready.")
 
-clean_line_by_line('Pure_1.js')
+clean_line_by_line('Pure_2.js')
