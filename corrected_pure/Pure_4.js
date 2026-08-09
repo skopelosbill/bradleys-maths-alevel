@@ -98,15 +98,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "1.68, \\quad 1.61, \\quad 4.17 %",
+                                "ans": "$$1.68, \\quad 1.61, \\quad 4.17 %$$",
                                 "feedback": "Check your percentage error calculation. You must use the unrounded values for the intermediate steps of the error formula, otherwise you introduce rounding discrepancies in your final percentage."
                         },
                         {
-                                "ans": "1.68, \\quad \\ln 5, \\quad 4.35 %",
+                                "ans": "$$1.68, \\quad \\ln 5, \\quad 4.35 %$$",
                                 "feedback": "It looks like you divided by the estimated value in the denominator of your percentage error formula. Remember that the base of the percentage error is always the exact (true) value, which is $\\ln 5$."
                         },
                         {
-                                "ans": "0.842, \\quad \\ln 5, \\quad 47.7 %",
+                                "ans": "$$0.842, \\quad \\ln 5, \\quad 47.7 %$$",
                                 "feedback": "You may have forgotten the factor of $2$ on the middle terms when calculating your trapezium estimate, leading to a much lower approximation and a huge percentage error."
                         }
                 ],
@@ -166,7 +166,7 @@ window.ALEVEL_QUESTIONS = [
                         "Numerical Methods"
                 ],
                 "img": false,
-                "question": "A surveyor measures the depth of a river, $d$ metres, at horizontal distances $x$ metres from one of its banks. The results are recorded in the table below:<br><br>* $x = 0$ metres: $d = 0$ metres<br>* $x = 1.5$ metres: $d = 0.8$ metres<br>* $x = 3.0$ metres: $d = 1.4$ metres<br>* $x = 4.5$ metres: $d = 1.1$ metres<br>* $x = 6.0$ metres: $d = 0$ metres<br><br>1. Use the trapezium rule with 4 strips to estimate the cross-sectional area of the river.<br>2. State one limitation of using this mathematical model to estimate the cross-sectional area of a real river.",
+                "question": "A surveyor measures the depth of a river, $d$ metres, at horizontal distances $x$ metres from one of its banks. The results are recorded in the table below:<br><br><table style='width:100%; max-width:350px; border-collapse:collapse; margin:15px auto; text-align:center; font-family:inherit;'><thead><tr style='background-color:#f8f9fa; border-bottom:2px solid #dee2e6;'><th style='padding:10px; border:1px solid #dee2e6; color:#1a3d8f;'>$x$ (metres)</th><th style='padding:10px; border:1px solid #dee2e6; color:#1a3d8f;'>$d$ (metres)</th></tr></thead><tbody><tr style='border-bottom:1px solid #dee2e6;'><td style='padding:10px; border:1px solid #dee2e6;'>$0$</td><td style='padding:10px; border:1px solid #dee2e6;'>$0$</td></tr><tr style='border-bottom:1px solid #dee2e6;'><td style='padding:10px; border:1px solid #dee2e6;'>$1.5$</td><td style='padding:10px; border:1px solid #dee2e6;'>$0.8$</td></tr><tr style='border-bottom:1px solid #dee2e6;'><td style='padding:10px; border:1px solid #dee2e6;'>$3.0$</td><td style='padding:10px; border:1px solid #dee2e6;'>$1.4$</td></tr><tr style='border-bottom:1px solid #dee2e6;'><td style='padding:10px; border:1px solid #dee2e6;'>$4.5$</td><td style='padding:10px; border:1px solid #dee2e6;'>$1.1$</td></tr><tr style='border-bottom:1px solid #dee2e6;'><td style='padding:10px; border:1px solid #dee2e6;'>$6.0$</td><td style='padding:10px; border:1px solid #dee2e6;'>$0$</td></tr></tbody></table><br><strong>1.</strong> Use the trapezium rule with 4 strips to estimate the cross-sectional area of the river.<br><br><strong>2.</strong> State one limitation of using this mathematical model to estimate the cross-sectional area of a real river.",
                 "steps": [
                         "The horizontal intervals are spaced at equal steps of $1.5$ metres, which means the strip width is $h = 1.5$ metres.",
                         "The corresponding depth coordinates (our $y$-values) are $d_0 = 0$, $d_1 = 0.8$, $d_2 = 1.4$, $d_3 = 1.1$, and $d_4 = 0$.",
