@@ -868,7 +868,7 @@ window.ALEVEL_QUESTIONS = [
                         "To solve the inequality $g(x) \\ge 0$, find where the curve lies on or above the $x$-axis. From our sketch, this occurs on:<br>$$1 \\le x \\le 2 \\quad \\text{and} \\quad x \\ge 3$$",
                         "Express this solution in set notation:<br>$$\\{x : 1 \\le x \\le 2 \\} \\cup \\{x : x \\ge 3 \\}$$",
                         "A translation of vector $\\begin{pmatrix} 2 \\\\\\ -1 \\end{pmatrix}$ shifts the graph $2$ units to the right and $1$ unit down. This replaces $x$ with $(x - 2)$ and $y$ with $(y + 1)$:<br>\\begin{aligned}\ny + 1 &= g\\left(x - 2\\right) \\cr\ny &= g\\left(x - 2\\right) - 1\n\\end{aligned}<br>Substituting our factorised expression yields:<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$",
-                        "Final Answer: 4$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right)$$<br>$$\\{x : 1 \\le x \\le 2 \\} \\cup \\{x : x \\ge 3 \\}$$<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$"
+                        "Final Answer: $$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right)$$<br>$$\\{x : 1 \\le x \\le 2 \\} \\cup \\{x : x \\ge 3 \\}$$<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$"
                 ],
                 "pi_options": [
                         {
@@ -876,7 +876,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "Check your inequality intervals. The regions you selected are where the cubic curve lies below the $x$-axis ($g(x) \\le 0$). The question asks for $g(x) \\ge 0$."
                         },
                         {
-                                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad$ {x : 1 \\le x \\le 2 } \\cup {x : x \\ge 3 $}, \\quad y = \\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right) - 1$",
+                                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right)$$<br>$$ \\{x : 1 \\le x \\le 2 } \\cup {x : x \\ge 3 \\}$$<br>$$ y = \\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right) - 1$$",
                                 "feedback": "It looks like you forgot to apply the horizontal translation. A translation of vector $\\begin{pmatrix} 2 \\\\\\ -1 \\end{pmatrix}$ requires replacing $x$ with $(x - 2)$ throughout the function."
                         },
                         {
@@ -915,7 +915,7 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2$$<br>$$\\{x : x > -1$ \\}$$<br>$$y = 3x^3 - 9x^2 + 12$$",
+                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2$$<br>$$\\{x : x > -1 \\}$$<br>$$y = 3x^3 - 9x^2 + 12$$",
                                 "feedback": "This is a common trap. While the curve is above the $x$-axis for almost all values of $x > -1$, it touches the $x$-axis at $x = 2$, which means $h(2) = 0$. Since the inequality is strictly $h(x) > 0$, $x = 2$ must be excluded from the solution set."
                         },
                         {
@@ -962,7 +962,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "Do not forget the repeated root. Because the inequality is non-strict ($f(x) \\ge 0$), the touching point $x = 2$ satisfies $f(2) = 0$ and must be included in your solution set as the single-element set $\\\\{2\\\\}$."
                         },
                         {
-                                "ans": "$-\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : x \\le -1$ } \\cup {2 $}, \\quad y = -x^3 + 3x^2 - 4$",
+                                "ans": "$$-\\left(x + 1\\right)\\left(x - 2\\right)^2$$<br>$$\\{x : x \\le -1 \\} \\cup {2\\}$$<br>$$ y = -x^3 + 3x^2 - 4$$",
                                 "feedback": "It looks like you forgot to apply the reflection. A reflection in the $x$-axis requires negating the entire function, which should flip all the signs of your terms."
                         },
                         {
@@ -995,7 +995,7 @@ window.ALEVEL_QUESTIONS = [
                         "To solve the inequality $g(x) \\le 0$, find where the curve lies on or below the $x$-axis. From our sketch, the curve lies below the axis between $x = -3$ and $x = 3$. The isolated touching point at $x = 2$ also satisfies $g(2) = 0 \\le 0$ and is naturally included in this continuous interval.",
                         "Write this solution in set notation:<br>$$\\{x : -3 \\le x \\le 3 \\}$$",
                         "To map $y = x^4$ onto $y = (2x - 6)^4$, we can rewrite the target equation as $y = \\left[2\\left(x - 3\\right)\\right]^4 = 16\\left(x - 3\\right)^4$.<br><br>This can be achieved by the following sequence of two transformations:<br>1. A horizontal translation $3$ units to the right (vector $\\begin{pmatrix} 3 \\\\\\ 0 \\end{pmatrix}$), which transforms $y = x^4$ into $y = (x - 3)^4$.<br>2. A vertical stretch with scale factor $16$ parallel to the $y$-axis, which transforms $y = (x - 3)^4$ into $y = 16(x - 3)^4 = (2x - 6)^4$.<br><br><em>Alternative Sequence:</em> First apply a horizontal stretch parallel to the $x$-axis with scale factor $\\dfrac{1}{2}$ (transforming $x \\to 2x$), followed by a horizontal translation $3$ units to the right (transforming $2x \\to 2(x - 3) = 2x - 6$).",
-                        "Final Answer: $$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right)$$<br>$$\\{x : -3 \\le x \\le 3 \\},<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$"
+                        "Final Answer: $$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right)$$<br>$$\\{x : -3 \\le x \\le 3 \\}$$,<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$"
                 ],
                 "pi_options": [
                         {
