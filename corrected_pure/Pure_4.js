@@ -823,9 +823,9 @@ window.ALEVEL_QUESTIONS = [
                         "Factorise the quadratic factor $2x^2 + x - 1$ into linear brackets:<br>$$2x^2 + x - 1 = \\left(2x - 1\\right)\\left(x + 1\\right)$$<br>Combining these yields the fully factorised form of $f(x)$:<br>$$f(x) = \\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right)$$",
                         "To sketch the graph of $y = f(x)$, find the axes intercepts:<br>The $x$-intercepts occur where $f(x) = 0 \\implies x = 3, \\, x = 0.5, \\, x = -1$. These are the points $(3, 0)$, $(0.5, 0)$, and $(-1, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies f(0) = 3$. This is the point $(0, 3)$.<br><br>Since the leading coefficient $2$ is positive, the cubic curve starts in the bottom-left and heads up to the top-right:<br><br><img src='images/Pure/004171_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "To solve the inequality $f(x) < 0$, determine the intervals where the cubic curve lies below the $x$-axis. The roots partition the $x$-axis into intervals: $x < -1$, $-1 < x < 0.5$, $0.5 < x < 3$, and $x > 3$.<br><br>By testing values or observing our sketch, we see that $f(x) < 0$ on:<br>$$x < -1 \\quad \\text{and} \\quad 0.5 < x < 3$$",
-                        "Express this solution in formal set notation:<br>${x : x < -1$ } \\cup ${x : 0.5 < x < 3$ }",
+                        "Express this solution in formal set notation:<br>${x : x < -1 } \\cup {x : 0.5 < x < 3 }$",
                         "A stretch parallel to the $x$-axis with a scale factor of $\\dfrac{1}{3}$ replaces $x$ with $3x$ in the equation:<br>$$y = 2\\left(3x\\right)^3 - 5\\left(3x\\right)^2 - 4\\left(3x\\right) + 3$$<br>$$y = 2\\left(27x^3\\right) - 5\\left(9x^2\\right) - 12x + 3$$<br>$$y = 54x^3 - 45x^2 - 12x + 3$$",
-                        "Final Answer: $$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right)$$<br>$${x : x < -1$ } \\cup {x : 0.5 < x < 3}$$<br>$$y = 54x^3 - 45x^2 - 12x + 3$$"
+                        "Final Answer: $$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right)$$<br>$${x : x < -1 } \\cup {x : 0.5 < x < 3}$$<br>$$y = 54x^3 - 45x^2 - 12x + 3$$"
                 ],
                 "pi_options": [
                         {
@@ -833,11 +833,11 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "This is a numerical value. Make sure you answer the specific parts of the question, providing set notation for the inequality and the full transformed equation."
                         },
                         {
-                                "ans": "$$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad$ ${x : -1 < x < 0.5$ } \\cup ${x : x > 3$ $}, \\quad y = 54x^3 - 45x^2 - 12x + 3$",
+                                "ans": "$$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad$ ${x : -1 < x < 0.5$ } \\cup {x : x > 3$ }, \\quad y = 54x^3 - 45x^2 - 12x + 3$$",
                                 "feedback": "Check your inequality signs. The intervals you provided are where $f(x) > 0$. The question asks for $f(x) < 0$, which is where the curve lies below the $x$-axis."
                         },
                         {
-                                "ans": "$$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad$ ${x : x < -1$ } \\cup ${x : 0.5 < x < 3$ $}, \\quad y = 6x^3 - 15x^2 - 12x + 3$",
+                                "ans": "$$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad$ ${x : x < -1$ } \\cup {x : 0.5 < x < 3$}, \\quad y = 6x^3 - 15x^2 - 12x + 3$$",
                                 "feedback": "When stretching parallel to the $x$-axis with scale factor $\\dfrac{1}{3}$, you must replace $x$ with $3x$ before applying exponents. Remember that $\\left(3x\\right)^3 = 27x^3$ and $\\left(3x\\right)^2 = 9x^2$."
                         }
                 ],
