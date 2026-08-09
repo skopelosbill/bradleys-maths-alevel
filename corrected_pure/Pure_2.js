@@ -425,7 +425,7 @@ window.ALEVEL_QUESTIONS = [
                         "Partial Fractions"
                 ],
                 "img": "images/Pure/004061.png",
-                "question": "The curve $C$ with equation:<br>$y = \\dfrac{p - 2x}{(2x - q)(x + 2)} \\quad x \\in \\mathbb{R},$ $x \\ne -2,$ x \\ne 3<br>where $p$ and $q$ are constants, passes through the point $(4, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 3$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 14$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 4$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3 + c\\ln 7$, where $a$, $b$, and $c$ are rational constants to be found.",
+                "question": "The curve $C$ with equation:<br>$y = \\dfrac{p - 2x}{(2x - q)(x + 2)} \\quad x \\in \\mathbb{R},$ $x \\ne -2,x \\ne 3$<br>where $p$ and $q$ are constants, passes through the point $(4, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 3$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 14$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 4$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3 + c\\ln 7$, where $a$, $b$, and $c$ are rational constants to be found.",
                 "steps": [
                         "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>\\begin{aligned}\n(2x - q)(x + 2) &= 0 \\cr\nx &= \\frac{q}{2} \\quad \\text{and} \\quad x = -2\n\\end{aligned}",
                         "Since we are given that the vertical asymptotes have equations $x = 3$ and $x = -2$, we can equate the root terms:<br>\\begin{aligned}\n\\frac{q}{2} &= 3 \\cr\nq &= 6\n\\end{aligned}",
@@ -472,7 +472,7 @@ window.ALEVEL_QUESTIONS = [
                         "Partial Fractions"
                 ],
                 "img": "images/Pure/004062.png",
-                "question": "The curve $C$ with equation:<br>$y = \\dfrac{p - 3x}{(3x - q)(x + 2)} \\quad x \\in \\mathbb{R},$ $x \\ne -2,$ x \\ne 1<br>where $p$ and $q$ are constants, passes through the point $(2, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 1$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 3$.<br><strong>(a)(ii)</strong> Show that $p = 12$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 2$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3$, where $a$ and $b$ are rational constants to be found.",
+                "question": "The curve $C$ with equation:<br>$y = \\dfrac{p - 3x}{(3x - q)(x + 2)} \\quad x \\in \\mathbb{R}, x \\ne -2, x \\ne 1$<br>where $p$ and $q$ are constants, passes through the point $(2, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 1$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 3$.<br><strong>(a)(ii)</strong> Show that $p = 12$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 2$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3$, where $a$ and $b$ are rational constants to be found.",
                 "steps": [
                         "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>\\begin{aligned}\n(3x - q)(x + 2) &= 0 \\cr\nx &= \\frac{q}{3} \\quad \\text{and} \\quad x = -2\n\\end{aligned}",
                         "Since we are given that the vertical asymptotes have equations $x = 1$ and $x = -2$, we can equate the root terms:<br>\\begin{aligned}\n\\frac{q}{3} &= 1 \\cr\nq &= 3\n\\end{aligned}",
@@ -519,7 +519,7 @@ window.ALEVEL_QUESTIONS = [
                         "Partial Fractions"
                 ],
                 "img": "images/Pure/004063.png",
-                "question": "The curve $C$ with equation:<br>$y = \\dfrac{p - 4x}{(2x - q)(x + 1)} \\quad x \\in \\mathbb{R},$ $x \\ne -1,$ x \\ne 2<br>where $p$ and $q$ are constants, passes through the point $(3, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 2$ and $x = -1$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 4$.<br><strong>(a)(ii)</strong> Show that $p = 16$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 3$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 5$, where $a$ and $b$ are rational constants to be found.",
+                "question": "The curve $C$ with equation:<br>$y = \\dfrac{p - 4x}{(2x - q)(x + 1)} \\quad x \\in \\mathbb{R}, x \\ne -1, x \\ne 2$<br>where $p$ and $q$ are constants, passes through the point $(3, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 2$ and $x = -1$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 4$.<br><strong>(a)(ii)</strong> Show that $p = 16$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 3$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 5$, where $a$ and $b$ are rational constants to be found.",
                 "steps": [
                         "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>\\begin{aligned}\n(2x - q)(x + 1) &= 0 \\cr\nx &= \\frac{q}{2} \\quad \\text{and} \\quad x = -1\n\\end{aligned}",
                         "Since we are given that the vertical asymptotes have equations $x = 2$ and $x = -1$, we can equate the root terms:<br>\\begin{aligned}\n\\frac{q}{2} &= 2 \\cr\nq &= 4\n\\end{aligned}",
@@ -566,7 +566,7 @@ window.ALEVEL_QUESTIONS = [
                         "Partial Fractions"
                 ],
                 "img": "images/Pure/004064.png",
-                "question": "The curve $C$ with equation:<br>$y = \\dfrac{p - 2x}{(3x - q)(x + 1)} \\quad x \\in \\mathbb{R},$ $x \\ne -1,$ x \\ne 2<br>where $p$ and $q$ are constants, passes through the point $(3, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 2$ and $x = -1$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 12$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 3$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 7$, where $a$ and $b$ are rational constants to be found.",
+                "question": "The curve $C$ with equation:<br>$y = \\dfrac{p - 2x}{(3x - q)(x + 1)} \\quad x \\in \\mathbb{R}, x \\ne -1, x \\ne 2$<br>where $p$ and $q$ are constants, passes through the point $(3, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 2$ and $x = -1$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 12$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 3$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 7$, where $a$ and $b$ are rational constants to be found.",
                 "steps": [
                         "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>\\begin{aligned}\n(3x - q)(x + 1) &= 0 \\cr\nx &= \\frac{q}{3} \\quad \\text{and} \\quad x = -1\n\\end{aligned}",
                         "Since we are given that the vertical asymptotes have equations $x = 2$ and $x = -1$, we can equate the root terms:<br>\\begin{aligned}\n\\frac{q}{3} &= 2 \\cr\nq &= 6\n\\end{aligned}",
@@ -613,7 +613,7 @@ window.ALEVEL_QUESTIONS = [
                         "Partial Fractions"
                 ],
                 "img": "images/Pure/004065.png",
-                "question": "The curve $C$ with equation:<br>$y = \\dfrac{p - 3x}{(2x - q)(x + 2)} \\quad x \\in \\mathbb{R},$ $x \\ne -2,$ x \\ne 3<br>where $p$ and $q$ are constants, passes through the point $(4, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 3$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 18$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 4$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3$, where $a$ and $b$ are rational constants to be found.",
+                "question": "The curve $C$ with equation:<br>$y = \\dfrac{p - 3x}{(2x - q)(x + 2)} \\quad x \\in \\mathbb{R}, x \\ne -2, x \\ne 3$<br>where $p$ and $q$ are constants, passes through the point $(4, \\frac{1}{2})$ and has two vertical asymptotes with equations $x = 3$ and $x = -2$.<br><br><strong>(a)(i)</strong> Explain why you can deduce that $q = 6$.<br><strong>(a)(ii)</strong> Show that $p = 18$.<br><br>The diagram shows a sketch of part of the curve $C$. The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the $x$-axis and the line with equation $x = 4$.<br><strong>(b)</strong> Show that the exact value of the area of $R$ is $a\\ln 2 + b\\ln 3$, where $a$ and $b$ are rational constants to be found.",
                 "steps": [
                         "<strong>Part (a)(i):</strong> Vertical asymptotes occur where the denominator of the rational function is equal to zero, which means:<br>\\begin{aligned}\n(2x - q)(x + 2) &= 0 \\cr\nx &= \\frac{q}{2} \\quad \\text{and} \\quad x = -2\n\\end{aligned}",
                         "Since we are given that the vertical asymptotes have equations $x = 3$ and $x = -2$, we can equate the root terms:<br>\\begin{aligned}\n\\frac{q}{2} &= 3 \\cr\nq &= 6\n\\end{aligned}",
@@ -1249,7 +1249,7 @@ window.ALEVEL_QUESTIONS = [
                         "Periodic Sequences"
                 ],
                 "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\cos(n\\pi)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>(a) 2\\pi (b) 2 (c) \\pi (d) 4",
+                "question": "A periodic sequence is defined by $$U_n = \\cos(n\\pi)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$\\text{(a) }2\\pi\\text{  (b) }2\\text{ (c) }\\pi\\text{ (d) }4$$",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\cos(n\\pi)$$.",
                         "Next, calculate the first few terms of the sequence to see the numerical pattern: $U_1 = -1,$ $U_2 = 1,$ $U_3 = -1,$ $U_4 = 1$",
@@ -1323,7 +1323,7 @@ window.ALEVEL_QUESTIONS = [
                         "Periodic Sequences"
                 ],
                 "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>(a) 6 (b) 2\\pi (c) 3 (d) 6\\pi",
+                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$\\text{(a) }6\\text{ (b) }2\\pi\\text{ (c) }3\\text{ (d) }6\\pi$$",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.",
                         "Next, calculate the first few terms of the sequence to observe the periodic pattern: $U_1 = \\dfrac{\\sqrt{3}}{2},$ $U_2 = \\dfrac{\\sqrt{3}}{2},$ $U_3 = 0,$ $U_4 = -\\dfrac{\\sqrt{3}}{2},$ $U_5 = -\\dfrac{\\sqrt{3}}{2},$ $U_6 = 0,$ $U_7 = \\dfrac{\\sqrt{3}}{2}$",
@@ -1360,7 +1360,7 @@ window.ALEVEL_QUESTIONS = [
                         "Periodic Sequences"
                 ],
                 "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>(a) 3 (b) 2\\pi (c) 6 (d) \\pi",
+                "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>\\text{(a) }3\\text{ (b) }2\\pi\\text{ (c) }6\\text{ (d) }\\pi",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.",
                         "Next, calculate the first few terms of the sequence: $U_1 = -\\dfrac{1}{2},$ $U_2 = -\\dfrac{1}{2},$ $U_3 = 1,$ $U_4 = -\\dfrac{1}{2}$",
@@ -1397,7 +1397,7 @@ window.ALEVEL_QUESTIONS = [
                         "Periodic Sequences"
                 ],
                 "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>(a) 8 (b) 2\\pi (c) 4 (d) 4\\pi",
+                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>\\text{(a) }8\\text{ (b) }2\\pi (c) }4\\text{ (d) }4\\pi",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.",
                         "Next, calculate the first few terms of the sequence: $U_1 = \\dfrac{1}{\\sqrt{2}},$ $U_2 = 1,$ $U_3 = \\dfrac{1}{\\sqrt{2}},$ $U_4 = 0,$ $U_5 = -\\dfrac{1}{\\sqrt{2}},$ $U_6 = -1,$ $U_7 = -\\dfrac{1}{\\sqrt{2}},$ $U_8 = 0,$ $U_9 = \\dfrac{1}{\\sqrt{2}}$",
