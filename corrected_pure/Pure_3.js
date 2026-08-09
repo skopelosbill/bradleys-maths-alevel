@@ -18,7 +18,7 @@ window.ALEVEL_QUESTIONS = [
                         "Calculate the radius $R$, which is half the length of the diameter $AC$: \\begin{aligned}\nAC &= \\sqrt{(11 - (-9))^2 + (4-4)^2} = \\sqrt{20^2 + 0} = 20 \\cr\nR &= 10\n\\end{aligned}",
                         "Find the distance squared from point $D(4, 10)$ to the center $M(1, 4)$: \\begin{aligned}\nMD^2 &= (4-1)^2 + (10-4)^2 \\cr\n&= 3^2 + 6^2 \\cr\n&= 9 + 36 \\cr\n&= 45\n\\end{aligned}",
                         "Since the distance squared $$45 < R^2 = 100$$, the distance from the point to the center of the circle is less than the radius. Thus, the point $D$ lies inside the circle.",
-                        "Final Answer: \\begin{aligned}\n\\text{Part (b)(i): } \\angle ABC &= 90^\\circ \\cr\nAC \\text{ is a diameter},\\quad \\text{Part (b)(ii): Inside the circle}\n\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\n\\text{Part (b)(i): } \\angle ABC &= 90^\\circ \\cr\nAC \\text{ is a diameter},\\cr\n \\text{Part (b)(ii): Inside the circle}\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
