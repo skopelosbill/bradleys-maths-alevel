@@ -193,15 +193,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\mathbf{a} = \\begin{pmatrix} 1.5$ 1.5 0 \\end{pmatrix}",
+                                "ans": "$$\\mathbf{a} = \\begin{pmatrix} 1.5$ 1.5 0 \\end{pmatrix}",
                                 "feedback": "This option results from a sign error when finding the coordinate $b$. Since $a - b + 1 = 0 \\implies b = a + 1$, substituting $a = 1.5$ must yield $b = 1.5 + 1 = 2.5$, rather than $b = 1.5$."
                         },
                         {
-                                "ans": "$\\mathbf{a} = \\begin{pmatrix} 2.5$ 3.5 0 \\end{pmatrix}",
+                                "ans": "$$\\mathbf{a} = \\begin{pmatrix} 2.5$ 3.5 0 \\end{pmatrix}",
                                 "feedback": "This option arises if the midpoint of the base $BC$ is incorrectly calculated as $D(3, 3, 1)$ instead of $D(2, 2, 1)$. Setting up the height vector with this incorrect midpoint yields the squared height $2a^2 - 10a + 14$, which is minimised at $a = 2.5$ and $b = 3.5$."
                         },
                         {
-                                "ans": "$\\mathbf{a} = \\begin{pmatrix} 3$ 4 0 \\end{pmatrix}",
+                                "ans": "$$\\mathbf{a} = \\begin{pmatrix} 3$ 4 0 \\end{pmatrix}",
                                 "feedback": "This option occurs if you make an error in setting up the quadratic height equation, such as failing to sum the $a^2$ terms or incorrectly expanding the squared brackets, leading to an incorrect minimum value."
                         }
                 ],
@@ -229,15 +229,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\mathbf{a} = \\begin{pmatrix} 1$ 1 0 \\end{pmatrix}",
+                                "ans": "$$\\mathbf{a} = \\begin{pmatrix} 1$ 1 0 \\end{pmatrix}",
                                 "feedback": "This option is incorrect. Although the coordinates satisfy the relation $a=b$, they do not minimise the height of the triangle. Evaluating the squared height at $a=1$ gives $2(2)^2 + 1 = 9$, which is larger than the minimum squared height of $1$ achieved at $a=3$."
                         },
                         {
-                                "ans": "$\\mathbf{a} = \\begin{pmatrix} 3$ $-3$ 0 \\end{pmatrix}",
+                                "ans": "$$\\mathbf{a} = \\begin{pmatrix} 3$ $-3$ 0 \\end{pmatrix}",
                                 "feedback": "This option contains a sign error on the $b$-coordinate, violating the condition $a - b = 0 \\implies b = a$. The two coordinates must be identical."
                         },
                         {
-                                "ans": "$\\mathbf{a} = \\begin{pmatrix} 5$ 5 0 \\end{pmatrix}",
+                                "ans": "$$\\mathbf{a} = \\begin{pmatrix} 5$ 5 0 \\end{pmatrix}",
                                 "feedback": "This option is a non-minimal point on the line $a=b$. The height vector is minimised at the midpoint of the base's projection, which is $a = 3$."
                         }
                 ],
@@ -301,15 +301,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\mathbf{r} = \\begin{pmatrix} 1$ 2 $3 \\end{pmatrix} + \\lambda \\begin{pmatrix} 1$ 2 $-2 \\end{pmatrix}, \\quad \\text{Closest point } (2, 4, 1)$",
+                                "ans": "$$\\mathbf{r} = \\begin{pmatrix} 1$ 2 $3 \\end{pmatrix} + \\lambda \\begin{pmatrix} 1$ 2 $-2 \\end{pmatrix}, \\quad \\text{Closest point } (2, 4, 1)$",
                                 "feedback": "This option is incorrect because $(2, 4, 1)$ is simply point $C$. While $C$ is on the line (at $\\lambda = 1$), the closest point to $A$ occurs at $\\lambda = 2$, which gives the coordinates $(3, 6, -1)$."
                         },
                         {
-                                "ans": "$\\mathbf{r} = \\begin{pmatrix} 1$ 2 $3 \\end{pmatrix} + \\lambda \\begin{pmatrix} 1$ 2 $-2 \\end{pmatrix}, \\quad \\text{Closest point } (3, 6, 1)$",
+                                "ans": "$$\\mathbf{r} = \\begin{pmatrix} 1$ 2 $3 \\end{pmatrix} + \\lambda \\begin{pmatrix} 1$ 2 $-2 \\end{pmatrix}, \\quad \\text{Closest point } (3, 6, 1)$",
                                 "feedback": "This option has a sign error in the $z$-coordinate. Substituting $\\lambda = 2$ into the $z$-component $3 - 2\\lambda$ yields $3 - 4 = -1$, not $+1$."
                         },
                         {
-                                "ans": "$\\mathbf{r} = \\begin{pmatrix} 1$ 2 $3 \\end{pmatrix} + \\lambda \\begin{pmatrix} 3$ 6 $-2 \\end{pmatrix}, \\quad \\text{Closest point } (3, 6, -1)$",
+                                "ans": "$$\\mathbf{r} = \\begin{pmatrix} 1$ 2 $3 \\end{pmatrix} + \\lambda \\begin{pmatrix} 3$ 6 $-2 \\end{pmatrix}, \\quad \\text{Closest point } (3, 6, -1)$",
                                 "feedback": "This option lists an incorrect direction vector for the line $L$. The direction vector must be $C - B = \\begin{pmatrix} 1 \\\\ 2 \\\\ -2 \\end{pmatrix}$."
                         }
                 ],

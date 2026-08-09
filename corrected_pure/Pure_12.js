@@ -713,7 +713,7 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\sqrt{ 2 } = \\dfrac{ a }{ b } \\implies a^2 = b^2$",
+                                "ans": "$$\\sqrt{ 2 } = \\dfrac{ a }{ b } \\implies a^2 = b^2$",
                                 "feedback": "This is a squaring error. Squaring both sides of $\\sqrt{ 2 } = \\dfrac{ a }{ b }$ yields $2 = \\dfrac{ a^2 }{ b^2 } \\implies a^2 = 2b^2$, not $a^2 = b^2$."
                         },
                         {
@@ -750,15 +750,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\left( e, \\dfrac{ 1 }{ e^2 } \\right)$ is a local minimum",
+                                "ans": "$$\\left( e, \\dfrac{ 1 }{ e^2 } \\right)$ is a local minimum",
                                 "feedback": "This arises if you make an algebra error solving $1-2\\ln x = 0$, incorrectly obtaining $\\ln x = 1 \\implies x = e$, and misidentify the nature of the turning point."
                         },
                         {
-                                "ans": "$\\left( \\sqrt{e}, \\dfrac{ 1 }{ 2e } \\right)$ is a local minimum",
+                                "ans": "$$\\left( \\sqrt{e}, \\dfrac{ 1 }{ 2e } \\right)$ is a local minimum",
                                 "feedback": "This is a classification error, incorrectly interpreting a negative second derivative as indicating a minimum instead of a maximum."
                         },
                         {
-                                "ans": "$\\left( 1, 0 \\right)$ is a local maximum",
+                                "ans": "$$\\left( 1, 0 \\right)$ is a local maximum",
                                 "feedback": "This is a conceptual error, confusing the $x$-axis crossing point with the turning point of the curve."
                         }
                 ],
@@ -899,7 +899,7 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\left( \\dfrac{ \\pi }{ 4 }, \\dfrac{ \\sqrt{2} }{ 2 } e^{ \\pi / 4 } \\right)$ is a local maximum",
+                                "ans": "$$\\left( \\dfrac{ \\pi }{ 4 }, \\dfrac{ \\sqrt{2} }{ 2 } e^{ \\pi / 4 } \\right)$ is a local maximum",
                                 "feedback": "This is a quadrant error, incorrectly solving $\\tan x = 1$ instead of $\\tan x = -1$, yielding a Quadrant I stationary point."
                         },
                         {
@@ -907,7 +907,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "This is a classification error, incorrectly assuming that a negative second derivative indicates a minimum instead of a maximum."
                         },
                         {
-                                "ans": "$\\left( \\dfrac{ \\pi }{ 2 }, e^{ \\pi / 2 } \\right)$ is a local maximum",
+                                "ans": "$$\\left( \\dfrac{ \\pi }{ 2 }, e^{ \\pi / 2 } \\right)$ is a local maximum",
                                 "feedback": "This occurs if you incorrectly differentiate the function or assume the stationary point occurs at the peak of the sine wave."
                         }
                 ],
@@ -1213,7 +1213,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "Check your factorisation. The factored form is $(3x - 1)(x - 5) = 0$. Setting $3x - 1 = 0$ gives $x = \\dfrac{ 1 }{ 3 }$, not $-\\dfrac{ 1 }{ 3 }$."
                         },
                         {
-                                "ans": "$\\dfrac{ 1 }{ 3 } \\le x \\le 5$",
+                                "ans": "$$\\dfrac{ 1 }{ 3 } \\le x \\le 5$",
                                 "feedback": "Pay close attention to the inequality sign in the question. The original inequality uses strict inequality ($<$), so your final answer must also use strict inequalities ($<$) rather than weak inequalities ($\\le$)."
                         }
                 ],

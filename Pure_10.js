@@ -781,15 +781,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\sin \\theta \\left( \\dfrac{ \\cos h + 1 }{ h } \\right) - \\cos \\theta \\left( \\dfrac{ \\sin h }{ h } \\right)$",
+                                "ans": "$$\\sin \\theta \\left( \\dfrac{ \\cos h + 1 }{ h } \\right) - \\cos \\theta \\left( \\dfrac{ \\sin h }{ h } \\right)$",
                                 "feedback": "This option contains a sign error in both the compound angle expansion and the grouping of the $\\sin \\theta$ term."
                         },
                         {
-                                "ans": "$\\cos \\theta \\left( \\dfrac{ \\cos h - 1 }{ h } \\right) + \\sin \\theta \\left( \\dfrac{ \\sin h }{ h } \\right)$",
+                                "ans": "$$\\cos \\theta \\left( \\dfrac{ \\cos h - 1 }{ h } \\right) + \\sin \\theta \\left( \\dfrac{ \\sin h }{ h } \\right)$",
                                 "feedback": "This error occurs if you incorrectly swap the sine and cosine functions in the compound angle identity expansion."
                         },
                         {
-                                "ans": "$\\sin \\theta ( \\cos h - 1 ) + \\cos \\theta \\left( \\dfrac{ \\sin h }{ h } \\right)$",
+                                "ans": "$$\\sin \\theta ( \\cos h - 1 ) + \\cos \\theta \\left( \\dfrac{ \\sin h }{ h } \\right)$",
                                 "feedback": "This option fails to divide the first factored term by the denominator $h$, violating the rules of algebraic fractions."
                         }
                 ],
@@ -818,15 +818,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\cos(2x) \\left( \\dfrac{ \\cos(2h) + 1 }{ h } \\right) + \\sin(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
+                                "ans": "$$\\cos(2x) \\left( \\dfrac{ \\cos(2h) + 1 }{ h } \\right) + \\sin(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
                                 "feedback": "This option contains a sign error in the compound angle expansion for cosine (using addition instead of subtraction) and incorrect sign grouping."
                         },
                         {
-                                "ans": "$\\sin(2x) \\left( \\dfrac{ \\cos(2h) - 1 }{ h } \\right) - \\cos(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
+                                "ans": "$$\\sin(2x) \\left( \\dfrac{ \\cos(2h) - 1 }{ h } \\right) - \\cos(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
                                 "feedback": "This error occurs if you incorrectly swap the sine and cosine functions in the compound angle identity expansion."
                         },
                         {
-                                "ans": "$\\cos(2x) ( \\cos(2h) - 1 ) - \\sin(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
+                                "ans": "$$\\cos(2x) ( \\cos(2h) - 1 ) - \\sin(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
                                 "feedback": "This option fails to divide the first factored term by the denominator $h$, violating the rules of algebraic fractions."
                         }
                 ],
@@ -855,15 +855,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\sin(2x) \\left( \\dfrac{ \\cos(2h) + 1 }{ h } \\right) - \\cos(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
+                                "ans": "$$\\sin(2x) \\left( \\dfrac{ \\cos(2h) + 1 }{ h } \\right) - \\cos(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
                                 "feedback": "This option contains a sign error in both the compound angle expansion and the grouping of sines and cosines."
                         },
                         {
-                                "ans": "$\\cos(2x) \\left( \\dfrac{ \\cos(2h) - 1 }{ h } \\right) + \\sin(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
+                                "ans": "$$\\cos(2x) \\left( \\dfrac{ \\cos(2h) - 1 }{ h } \\right) + \\sin(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
                                 "feedback": "This error occurs if you incorrectly swap the sine and cosine functions in the compound angle identity expansion."
                         },
                         {
-                                "ans": "$\\sin(2x) ( \\cos(2h) - 1 ) + \\cos(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
+                                "ans": "$$\\sin(2x) ( \\cos(2h) - 1 ) + \\cos(2x) \\left( \\dfrac{ \\sin(2h) }{ h } \\right)$",
                                 "feedback": "This option fails to divide the first factored term by the denominator $h$, violating the rules of algebraic fractions."
                         }
                 ],
@@ -892,15 +892,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\cos(3\\theta) \\left( \\dfrac{ \\cos(3h) + 1 }{ h } \\right) + \\sin(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
+                                "ans": "$$\\cos(3\\theta) \\left( \\dfrac{ \\cos(3h) + 1 }{ h } \\right) + \\sin(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
                                 "feedback": "This option contains a sign error in both the compound angle identity expansion for cosine and the subsequent grouping."
                         },
                         {
-                                "ans": "$\\sin(3\\theta) \\left( \\dfrac{ \\cos(3h) - 1 }{ h } \\right) - \\cos(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
+                                "ans": "$$\\sin(3\\theta) \\left( \\dfrac{ \\cos(3h) - 1 }{ h } \\right) - \\cos(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
                                 "feedback": "This error occurs if you incorrectly swap the sine and cosine functions in the compound angle identity expansion."
                         },
                         {
-                                "ans": "$\\cos(3\\theta) ( \\cos(3h) - 1 ) - \\sin(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
+                                "ans": "$$\\cos(3\\theta) ( \\cos(3h) - 1 ) - \\sin(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
                                 "feedback": "This option fails to divide the first factored term by the denominator $h$, violating the rules of algebraic fractions."
                         }
                 ],
@@ -929,15 +929,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\sin(3\\theta) \\left( \\dfrac{ \\cos(3h) + 1 }{ h } \\right) - \\cos(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
+                                "ans": "$$\\sin(3\\theta) \\left( \\dfrac{ \\cos(3h) + 1 }{ h } \\right) - \\cos(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
                                 "feedback": "This option contains a sign error in both the compound angle expansion and the grouping of sines and cosines."
                         },
                         {
-                                "ans": "$\\cos(3\\theta) \\left( \\dfrac{ \\cos(3h) - 1 }{ h } \\right) + \\sin(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
+                                "ans": "$$\\cos(3\\theta) \\left( \\dfrac{ \\cos(3h) - 1 }{ h } \\right) + \\sin(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
                                 "feedback": "This error occurs if you incorrectly swap the sine and cosine functions in the compound angle identity expansion."
                         },
                         {
-                                "ans": "$\\sin(3\\theta) ( \\cos(3h) - 1 ) + \\cos(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
+                                "ans": "$$\\sin(3\\theta) ( \\cos(3h) - 1 ) + \\cos(3\\theta) \\left( \\dfrac{ \\sin(3h) }{ h } \\right)$",
                                 "feedback": "This option fails to divide the first factored term by the denominator $h$, violating the rules of algebraic fractions."
                         }
                 ],

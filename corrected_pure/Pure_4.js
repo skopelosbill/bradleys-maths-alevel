@@ -824,7 +824,8 @@ window.ALEVEL_QUESTIONS = [
                         "To sketch the graph of $y = f(x)$, find the axes intercepts:<br>The $x$-intercepts occur where $f(x) = 0 \\implies x = 3, \\, x = 0.5, \\, x = -1$. These are the points $(3, 0)$, $(0.5, 0)$, and $(-1, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies f(0) = 3$. This is the point $(0, 3)$.<br><br>Since the leading coefficient $2$ is positive, the cubic curve starts in the bottom-left and heads up to the top-right:<br><br><img src='images/Pure/004171_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "To solve the inequality $f(x) < 0$, determine the intervals where the cubic curve lies below the $x$-axis. The roots partition the $x$-axis into intervals: $x < -1$, $-1 < x < 0.5$, $0.5 < x < 3$, and $x > 3$.<br><br>By testing values or observing our sketch, we see that $f(x) < 0$ on:<br>$$x < -1 \\quad \\text{and} \\quad 0.5 < x < 3$$",
                         "Express this solution in formal set notation:<br>${x : x < -1$ } \\cup ${x : 0.5 < x < 3$ }",
-                        "A stretch parallel to the $x$-axis with a scale factor of $\\dfrac{1}{3}$ replaces $x$ with $3x$ in the equation:<br>$$y = 2\\left(3x\\right)^3 - 5\\left(3x\\right)^2 - 4\\left(3x\\right) + 3$$<br>$$y = 2\\left(27x^3\\right) - 5\\left(9x^2\\right) - 12x + 3$$<br>$$y = 54x^3 - 45x^2 - 12x + 3$$<br><br>Final Answer: $\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad$ ${x : x < -1$ } \\cup ${x : 0.5 < x < 3$ $}, \\quad y = 54x^3 - 45x^2 - 12x + 3$"
+                        "A stretch parallel to the $x$-axis with a scale factor of $\\dfrac{1}{3}$ replaces $x$ with $3x$ in the equation:<br>$$y = 2\\left(3x\\right)^3 - 5\\left(3x\\right)^2 - 4\\left(3x\\right) + 3$$<br>$$y = 2\\left(27x^3\\right) - 5\\left(9x^2\\right) - 12x + 3$$<br>$$y = 54x^3 - 45x^2 - 12x + 3$$",
+                        "Final Answer: $$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right)$$<br>$${x : x < -1$ } \\cup {x : 0.5 < x < 3}$$<br>$$y = 54x^3 - 45x^2 - 12x + 3$$"
                 ],
                 "pi_options": [
                         {
@@ -832,11 +833,11 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "This is a numerical value. Make sure you answer the specific parts of the question, providing set notation for the inequality and the full transformed equation."
                         },
                         {
-                                "ans": "$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad$ ${x : -1 < x < 0.5$ } \\cup ${x : x > 3$ $}, \\quad y = 54x^3 - 45x^2 - 12x + 3$",
+                                "ans": "$$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad$ ${x : -1 < x < 0.5$ } \\cup ${x : x > 3$ $}, \\quad y = 54x^3 - 45x^2 - 12x + 3$",
                                 "feedback": "Check your inequality signs. The intervals you provided are where $f(x) > 0$. The question asks for $f(x) < 0$, which is where the curve lies below the $x$-axis."
                         },
                         {
-                                "ans": "$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad$ ${x : x < -1$ } \\cup ${x : 0.5 < x < 3$ $}, \\quad y = 6x^3 - 15x^2 - 12x + 3$",
+                                "ans": "$$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad$ ${x : x < -1$ } \\cup ${x : 0.5 < x < 3$ $}, \\quad y = 6x^3 - 15x^2 - 12x + 3$",
                                 "feedback": "When stretching parallel to the $x$-axis with scale factor $\\dfrac{1}{3}$, you must replace $x$ with $3x$ before applying exponents. Remember that $\\left(3x\\right)^3 = 27x^3$ and $\\left(3x\\right)^2 = 9x^2$."
                         }
                 ],
@@ -870,15 +871,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad$ {x : x \\le 1 } \\cup {x : 2 \\le x \\le 3 $}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$",
+                                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad$ {x : x \\le 1 } \\cup {x : 2 \\le x \\le 3 $}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$",
                                 "feedback": "Check your inequality intervals. The regions you selected are where the cubic curve lies below the $x$-axis ($g(x) \\le 0$). The question asks for $g(x) \\ge 0$."
                         },
                         {
-                                "ans": "$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad$ {x : 1 \\le x \\le 2 } \\cup {x : x \\ge 3 $}, \\quad y = \\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right) - 1$",
+                                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad$ {x : 1 \\le x \\le 2 } \\cup {x : x \\ge 3 $}, \\quad y = \\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right) - 1$",
                                 "feedback": "It looks like you forgot to apply the horizontal translation. A translation of vector $\\begin{pmatrix} 2 \\\\\\ -1 \\end{pmatrix}$ requires replacing $x$ with $(x - 2)$ throughout the function."
                         },
                         {
-                                "ans": "$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad$ {x : 1 \\le x \\le 2 } \\cup {x : x \\ge 3 $}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) + 1$",
+                                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad$ {x : 1 \\le x \\le 2 } \\cup {x : x \\ge 3 $}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) + 1$",
                                 "feedback": "Be careful with the vertical component of the translation vector. A vertical shift of $-1$ requires subtracting $1$ from the function, not adding $1$."
                         }
                 ],
@@ -911,15 +912,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : x > -1$ $}, \\quad y = 3x^3 - 9x^2 + 12$",
+                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : x > -1$ $}, \\quad y = 3x^3 - 9x^2 + 12$",
                                 "feedback": "This is a common trap. While the curve is above the $x$-axis for almost all values of $x > -1$, it touches the $x$-axis at $x = 2$, which means $h(2) = 0$. Since the inequality is strictly $h(x) > 0$, $x = 2$ must be excluded from the solution set."
                         },
                         {
-                                "ans": "$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : -1 < x < 2$ } \\cup ${x : x > 2$ $}, \\quad y = 27x^3 - 27x^2 + 4$",
+                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : -1 < x < 2$ } \\cup ${x : x > 2$ $}, \\quad y = 27x^3 - 27x^2 + 4$",
                                 "feedback": "You may have applied the scale factor to the horizontal variable instead of the vertical one. A stretch parallel to the $y$-axis with scale factor $3$ requires multiplying the entire function by $3$, not replacing $x$ with $3x$."
                         },
                         {
-                                "ans": "$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : x > -1$ } \\cup {2 $}, \\quad y = 3x^3 - 9x^2 + 12$",
+                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : x > -1$ } \\cup {2 $}, \\quad y = 3x^3 - 9x^2 + 12$",
                                 "feedback": "This is the solution set for the inequality $h(x) \\ge 0$. Since the inequality is strictly $h(x) > 0$, you must exclude $x = 2$ instead of including it."
                         }
                 ],
@@ -960,7 +961,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "It looks like you forgot to apply the reflection. A reflection in the $x$-axis requires negating the entire function, which should flip all the signs of your terms."
                         },
                         {
-                                "ans": "$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : x \\ge -1$ $}, \\quad y = x^3 - 3x^2 + 4$",
+                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : x \\ge -1$ $}, \\quad y = x^3 - 3x^2 + 4$",
                                 "feedback": "Check your factorisation and expansion. The leading coefficient of the original cubic is negative, so there must be a negative sign in front of your factorised expression: $-\\left(x+1\\right)\\left(x-2\\right)^2$."
                         }
                 ],
@@ -992,15 +993,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad$ ${x : -3 \\le x \\le 2$ } \\cup {x : 2 \\le x \\le 3 },<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
+                                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad$ ${x : -3 \\le x \\le 2$ } \\cup {x : 2 \\le x \\le 3 },<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
                                 "feedback": "Your inequality intervals are correct, but they can be simplified. Since the point $x = 2$ is included in both parts and satisfies the inequality, the two intervals merge into a single continuous interval: $-3 \\le x \\le 3$."
                         },
                         {
-                                "ans": "$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad$ ${x : -3 \\le x \\le 3$ },<br>$$ \\text{Horizontal stretch sf } 2 \\text{ then horizontal translation right by } 6$$",
+                                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad$ ${x : -3 \\le x \\le 3$ },<br>$$ \\text{Horizontal stretch sf } 2 \\text{ then horizontal translation right by } 6$$",
                                 "feedback": "Be careful with your scale factors and vector order. A stretch parallel to the $x$-axis with a multiplier of $2$ corresponds to a scale factor of $\\dfrac{1}{2}$, not $2$. Additionally, stretching first and then translating right by $6$ would yield $\\left(2\\left(x-6\\right)\\right)^4 = \\left(2x - 12\\right)^4$, which is incorrect."
                         },
                         {
-                                "ans": "$\\left(x - 2\\right)^2 \\left(x^2 - 9\\right), \\quad$ ${x : -3 \\le x \\le 3$ },<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
+                                "ans": "$$\\left(x - 2\\right)^2 \\left(x^2 - 9\\right), \\quad$ ${x : -3 \\le x \\le 3$ },<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
                                 "feedback": "The question asks for the polynomial in a 'fully factorised form as the product of linear factors'. You must expand the quadratic term $\\left(x^2 - 9\\right)$ into its linear components $\\left(x-3\\right)\\left(x+3\\right)$ to score full marks."
                         }
                 ],

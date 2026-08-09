@@ -1582,15 +1582,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\mu > 3.4$ and $\\mathbf{ c } = 13\\mathbf{ i } + 4\\mathbf{ j }$",
+                                "ans": "$$\\mu > 3.4$ and $\\mathbf{ c } = 13\\mathbf{ i } + 4\\mathbf{ j }$",
                                 "feedback": "Your range for $\\mu$ is correct, but check how you divided the segment. A position vector of $13\\mathbf{ i } + 4\\mathbf{ j }$ suggests you used a $2 : 1$ ratio from $A$ to $B$ (i.e. multiplying by $\\frac{ 2 }{ 3 }$) instead of the correct $1 : 2$ ratio (which corresponds to $\\frac{ 1 }{ 3 }$)."
                         },
                         {
-                                "ans": "$\\mu > 2.125$ and $\\mathbf{ c } = 9\\mathbf{ i } - 2\\mathbf{ j }$",
+                                "ans": "$$\\mu > 2.125$ and $\\mathbf{ c } = 9\\mathbf{ i } - 2\\mathbf{ j }$",
                                 "feedback": "Your position vector $\\mathbf{ c }$ is correct, but check your calculation for $|\\mathbf{ u }|$. Did you compute $|\\mathbf{ u }| = \\sqrt{ 8^2 + (-15)^2 }$ correctly? It looks like you might have added the linear components ($8+15=23$) instead of using the Pythagorean formula, yielding an incorrect magnitude."
                         },
                         {
-                                "ans": "$\\mu > 3.4$ and $\\mathbf{ c } = 11\\mathbf{ i } - 2\\mathbf{ j }$",
+                                "ans": "$$\\mu > 3.4$ and $\\mathbf{ c } = 11\\mathbf{ i } - 2\\mathbf{ j }$",
                                 "feedback": "Your range for $\\mu$ is correct, but check your addition or scalar multiplication when finding $\\mathbf{ c }$. Ensure you correctly calculated $\\vec{ AC } = \\frac{ 1 }{ 3 }(12\\mathbf{ i } + 18\\mathbf{ j }) = 4\\mathbf{ i } + 6\\mathbf{ j }$ before adding it to $\\mathbf{ a }$."
                         }
                 ],
@@ -1619,15 +1619,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\hat{ \\mathbf{ w } } = -\\frac{ 12 }{ 7 }\\mathbf{ i } + \\frac{ 5 }{ 7 }\\mathbf{ j }$ and $\\mathbf{ x } = 28\\mathbf{ i } - 21\\mathbf{ j }$",
+                                "ans": "$$\\hat{ \\mathbf{ w } } = -\\frac{ 12 }{ 7 }\\mathbf{ i } + \\frac{ 5 }{ 7 }\\mathbf{ j }$ and $\\mathbf{ x } = 28\\mathbf{ i } - 21\\mathbf{ j }$",
                                 "feedback": "Your value for $\\mathbf{ x }$ is correct, but check your magnitude calculation for <strong>w</strong>. The magnitude of a vector is calculated using the Pythagorean formula, which gives $13$, not by summing the individual coordinate values."
                         },
                         {
-                                "ans": "$\\hat{ \\mathbf{ w } } = -\\frac{ 12 }{ 13 }\\mathbf{ i } + \\frac{ 5 }{ 13 }\\mathbf{ j }$ and $\\mathbf{ x } = 140\\mathbf{ i } - 105\\mathbf{ j }$",
+                                "ans": "$$\\hat{ \\mathbf{ w } } = -\\frac{ 12 }{ 13 }\\mathbf{ i } + \\frac{ 5 }{ 13 }\\mathbf{ j }$ and $\\mathbf{ x } = 140\\mathbf{ i } - 105\\mathbf{ j }$",
                                 "feedback": "Your unit vector is correct, but you scaled <strong>p</strong> directly by $35$. Since <strong>p</strong> already has a magnitude of $5$, multiplying it directly by $35$ yields a vector with a magnitude of $175$. You must first find the unit vector of <strong>p</strong> before multiplying by $35$."
                         },
                         {
-                                "ans": "$\\hat{ \\mathbf{ w } } = \\frac{ 12 }{ 13 }\\mathbf{ i } - \\frac{ 5 }{ 13 }\\mathbf{ j }$ and $\\mathbf{ x } = -28\\mathbf{ i } + 21\\mathbf{ j }$",
+                                "ans": "$$\\hat{ \\mathbf{ w } } = \\frac{ 12 }{ 13 }\\mathbf{ i } - \\frac{ 5 }{ 13 }\\mathbf{ j }$ and $\\mathbf{ x } = -28\\mathbf{ i } + 21\\mathbf{ j }$",
                                 "feedback": "Be very careful with signs. You have reversed the direction of both vectors. A vector in the direction of <strong>w</strong> must have the same component signs as <strong>w</strong>."
                         }
                 ],
@@ -1656,15 +1656,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\mathbf{ m } = 4\\mathbf{ i } + 6\\mathbf{ j }$ and $\\mathbf{ r } = 12\\mathbf{ i } - 11\\mathbf{ j }$",
+                                "ans": "$$\\mathbf{ m } = 4\\mathbf{ i } + 6\\mathbf{ j }$ and $\\mathbf{ r } = 12\\mathbf{ i } - 11\\mathbf{ j }$",
                                 "feedback": "Your calculation of $\\mathbf{ r }$ is correct, but check your midpoint. It looks like you added the components of $\\mathbf{ p }$ and $\\mathbf{ q }$ without dividing by $2$. Remember that a midpoint is the average of the coordinates."
                         },
                         {
-                                "ans": "$\\mathbf{ m } = 2\\mathbf{ i } + 3\\mathbf{ j }$ and $\\mathbf{ r } = 27\\mathbf{ i } - 32\\mathbf{ j }$",
+                                "ans": "$$\\mathbf{ m } = 2\\mathbf{ i } + 3\\mathbf{ j }$ and $\\mathbf{ r } = 27\\mathbf{ i } - 32\\mathbf{ j }$",
                                 "feedback": "Your midpoint is correct, but check how you interpreted the ratio for $R$. It looks like you calculated $\\vec{ QR } = 2\\vec{ PQ }$ instead of $\\frac{ 1 }{ 2 }\\vec{ PQ }$. The ratio $PQ : QR = 2 : 1$ means $PQ$ is twice the length of $QR$."
                         },
                         {
-                                "ans": "$\\mathbf{ m } = 2\\mathbf{ i } + 3\\mathbf{ j }$ and $\\mathbf{ r } = 2\\mathbf{ i } + 3\\mathbf{ j }$",
+                                "ans": "$$\\mathbf{ m } = 2\\mathbf{ i } + 3\\mathbf{ j }$ and $\\mathbf{ r } = 2\\mathbf{ i } + 3\\mathbf{ j }$",
                                 "feedback": "Your midpoint calculation is correct, but the position vector of $R$ cannot be identical to the midpoint of $PQ$. Re-read the definition of $R$, noting that $Q$ lies between $P$ and $R$."
                         }
                 ],
@@ -1731,15 +1731,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\lambda = -3$ and $|\\mathbf{ r }| = 13$",
+                                "ans": "$$\\lambda = -3$ and $|\\mathbf{ r }| = 13$",
                                 "feedback": "Your value for $\\lambda$ is correct, but check your magnitude calculation. To find the magnitude of $2\\mathbf{ i } - 3\\mathbf{ j }$, you must take the square root of $4 + 9 = 13$."
                         },
                         {
-                                "ans": "$\\lambda = -4.5$ and $|\\mathbf{ r }| = \\sqrt{ 13 }$",
+                                "ans": "$$\\lambda = -4.5$ and $|\\mathbf{ r }| = \\sqrt{ 13 }$",
                                 "feedback": "Your magnitude calculation is correct, but check your value of $\\lambda$. Since the $\\mathbf{ i }$ component of <strong>b</strong> is $-3$ times that of <strong>a</strong>, the same scale factor must apply to the $\\mathbf{ j }$ components, meaning $9 = -3\\lambda \\implies \\lambda = -3$."
                         },
                         {
-                                "ans": "$\\lambda = 3$ and $|\\mathbf{ r }| = \\sqrt{ 205 }$",
+                                "ans": "$$\\lambda = 3$ and $|\\mathbf{ r }| = \\sqrt{ 205 }$",
                                 "feedback": "Be careful with signs. Since the $\\mathbf{ i }$ component of <strong>b</strong> is negative and <strong>a</strong> is positive, the scaling constant $k$ must be negative, which makes $\\lambda = -3$."
                         }
                 ],
