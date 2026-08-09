@@ -866,12 +866,13 @@ window.ALEVEL_QUESTIONS = [
                         "Factorise the quadratic factor $x^2 - 5x + 6$ into linear terms:<br>$$x^2 - 5x + 6 = \\left(x - 2\\right)\\left(x - 3\\right)$$<br>This gives the fully factorised form:<br>$$g(x) = \\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right)$$",
                         "To sketch the graph of $y = g(x)$, determine the intercepts:<br>The $x$-intercepts occur where $g(x) = 0 \\implies x = 1, \\, x = 2, \\, x = 3$. This gives the points $(1, 0)$, $(2, 0)$, and $(3, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies g(0) = -6$. This is the point $(0, -6)$.<br><br>Sketch the positive cubic passing through these points:<br><br><img src='images/Pure/004172_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "To solve the inequality $g(x) \\ge 0$, find where the curve lies on or above the $x$-axis. From our sketch, this occurs on:<br>$$1 \\le x \\le 2 \\quad \\text{and} \\quad x \\ge 3$$",
-                        "Express this solution in set notation:<br>{x : 1 \\le x \\le 2 } \\cup {x : x \\ge 3 }",
-                        "A translation of vector $\\begin{pmatrix} 2 \\\\\\ -1 \\end{pmatrix}$ shifts the graph $2$ units to the right and $1$ unit down. This replaces $x$ with $(x - 2)$ and $y$ with $(y + 1)$:<br>\\begin{aligned}\ny + 1 &= g\\left(x - 2\\right) \\cr\ny &= g\\left(x - 2\\right) - 1\n\\end{aligned}<br>Substituting our factorised expression yields:<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$<br><br>Final Answer: $\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad$ {x : 1 \\le x \\le 2 } \\cup {x : x \\ge 3 $}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$"
+                        "Express this solution in set notation:<br>$$\\{x : 1 \\le x \\le 2 \\} \\cup \\{x : x \\ge 3 \\}$$",
+                        "A translation of vector $\\begin{pmatrix} 2 \\\\\\ -1 \\end{pmatrix}$ shifts the graph $2$ units to the right and $1$ unit down. This replaces $x$ with $(x - 2)$ and $y$ with $(y + 1)$:<br>\\begin{aligned}\ny + 1 &= g\\left(x - 2\\right) \\cr\ny &= g\\left(x - 2\\right) - 1\n\\end{aligned}<br>Substituting our factorised expression yields:<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$",
+                        "Final Answer: 4$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right)$$<br>$$\\{x : 1 \\le x \\le 2 \\} \\cup \\{x : x \\ge 3 \\}$$<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad$ {x : x \\le 1 } \\cup {x : 2 \\le x \\le 3 $}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$",
+                                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right)$$<br>$$\\{x : x \\le 1 \\} \\cup \\{x : 2 \\le x \\le 3 \\}$$<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$",
                                 "feedback": "Check your inequality intervals. The regions you selected are where the cubic curve lies below the $x$-axis ($g(x) \\le 0$). The question asks for $g(x) \\ge 0$."
                         },
                         {
@@ -879,7 +880,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "It looks like you forgot to apply the horizontal translation. A translation of vector $\\begin{pmatrix} 2 \\\\\\ -1 \\end{pmatrix}$ requires replacing $x$ with $(x - 2)$ throughout the function."
                         },
                         {
-                                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad$ {x : 1 \\le x \\le 2 } \\cup {x : x \\ge 3 $}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) + 1$",
+                                "ans": "$$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right)$$<br>$$\\{x : 1 \\le x \\le 2 \\} \\cup \\{x : x \\ge 3 \\}$$<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) + 1$$",
                                 "feedback": "Be careful with the vertical component of the translation vector. A vertical shift of $-1$ requires subtracting $1$ from the function, not adding $1$."
                         }
                 ],
@@ -907,20 +908,22 @@ window.ALEVEL_QUESTIONS = [
                         "Divide $x^3 - 3x^2 + 4$ by $(x + 1)$ to find the quadratic factor:<br>$$h(x) = \\left(x + 1\\right)\\left(x^2 - 4x + 4\\right)$$",
                         "Factorise the quadratic factor $x^2 - 4x + 4$:<br>$$x^2 - 4x + 4 = \\left(x - 2\\right)^2$$<br>Thus, the fully factorised form with a repeated factor is:<br>$$h(x) = \\left(x + 1\\right)\\left(x - 2\\right)^2$$",
                         "To sketch the graph of $y = h(x)$, determine the intercepts:<br>The $x$-intercepts occur where $h(x) = 0 \\implies x = -1$ and $x = 2$ (repeated root). The points are $(-1, 0)$ and $(2, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies h(0) = 4$. This is the point $(0, 4)$.<br><br>Sketch the curve. Note that because $x = 2$ is a repeated root of even multiplicity, the curve touches the $x$-axis and turns around at $(2, 0)$ instead of crossing it:<br><br><img src='images/Pure/004173_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-                        "To solve the inequality $h(x) > 0$, find where the curve lies strictly above the $x$-axis. From our sketch, the curve is strictly positive for $x > -1$, except at the repeated root $x = 2$ where $h(2) = 0$.<br><br>Write this solution in set notation:<br>${x : -1 < x < 2$ } \\cup ${x : x > 2$ }",
-                        "A stretch parallel to the $y$-axis with a scale factor of $3$ multiplies the entire function by $3$:<br>\\begin{aligned}\ny &= 3h(x) \\cr\n&= 3\\left(x^3 - 3x^2 + 4\\right)\n\\end{aligned}<br>$$y = 3x^3 - 9x^2 + 12$$<br><br>Final Answer: $\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : -1 < x < 2$ } \\cup ${x : x > 2$ $}, \\quad y = 3x^3 - 9x^2 + 12$"
+                        "To solve the inequality $h(x) > 0$, find where the curve lies strictly above the $x$-axis. From our sketch, the curve is strictly positive for $x > -1$, except at the repeated root $x = 2$ where $h(2) = 0$.",
+                        "Write this solution in set notation:<br>$$\\{x : -1 < x < 2 } \\cup \\{x : x > 2 }$$",
+                        "A stretch parallel to the $y$-axis with a scale factor of $3$ multiplies the entire function by $3$:<br>\\begin{aligned}\ny &= 3h(x) \\cr\n&= 3\\left(x^3 - 3x^2 + 4\\right)\n\\end{aligned}<br>$$y = 3x^3 - 9x^2 + 12$$",
+                        "Final Answer: $$\\left(x + 1\\right)\\left(x - 2\\right)^2$$<br>$$\\{x : -1 < x < 2 \\} \\cup \\{x : x > 2\\}$$<br>$$y = 3x^3 - 9x^2 + 12$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : x > -1$ $}, \\quad y = 3x^3 - 9x^2 + 12$",
+                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2$$<br>$$\\{x : x > -1$ \\}$$<br>$$y = 3x^3 - 9x^2 + 12$$",
                                 "feedback": "This is a common trap. While the curve is above the $x$-axis for almost all values of $x > -1$, it touches the $x$-axis at $x = 2$, which means $h(2) = 0$. Since the inequality is strictly $h(x) > 0$, $x = 2$ must be excluded from the solution set."
                         },
                         {
-                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : -1 < x < 2$ } \\cup ${x : x > 2$ $}, \\quad y = 27x^3 - 27x^2 + 4$",
+                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2$$<br>$$\\{x : -1 < x < 2 \\} \\cup\\{x : x > 2 \\}$$<br>$$ y = 27x^3 - 27x^2 + 4$$",
                                 "feedback": "You may have applied the scale factor to the horizontal variable instead of the vertical one. A stretch parallel to the $y$-axis with scale factor $3$ requires multiplying the entire function by $3$, not replacing $x$ with $3x$."
                         },
                         {
-                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : x > -1$ } \\cup {2 $}, \\quad y = 3x^3 - 9x^2 + 12$",
+                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2$$<br>$$\\{x : x > -1 \\} \\cup \\{2 \\}$$<br>$$ y = 3x^3 - 9x^2 + 12$$",
                                 "feedback": "This is the solution set for the inequality $h(x) \\ge 0$. Since the inequality is strictly $h(x) > 0$, you must exclude $x = 2$ instead of including it."
                         }
                 ],
@@ -948,12 +951,14 @@ window.ALEVEL_QUESTIONS = [
                         "Divide $3x^2 - x^3 - 4$ (rearranged as $-x^3 + 3x^2 - 4$) by $(x + 1)$ to find the quadratic factor:<br>$$f(x) = \\left(x + 1\\right)\\left(-x^2 + 4x - 4\\right)$$",
                         "Factorise out the negative sign to simplify:<br>\\begin{aligned}\nf(x) &= -\\left(x + 1\\right)\\left(x^2 - 4x + 4\\right) \\cr\n&= -\\left(x + 1\\right)\\left(x - 2\\right)^2\n\\end{aligned}<br>This is the fully factorised form.",
                         "To sketch the graph of $y = f(x)$, determine the axes intercepts:<br>The $x$-intercepts occur where $f(x) = 0 \\implies x = -1$ and $x = 2$ (repeated root). This gives the points $(-1, 0)$ and $(2, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies f(0) = -4$. This is the point $(0, -4)$.<br><br>Since the leading coefficient is negative ($-1$), the curve starts in the top-left and heads down to the bottom-right. It touches the axis and turns around at $(2, 0)$:<br><br><img src='images/Pure/004174_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-                        "To solve the inequality $f(x) \\ge 0$, find where the curve lies on or above the $x$-axis. From our sketch, this occurs for $x \\le -1$. The curve also touches the axis at $x = 2$, which satisfies $f(2) = 0 \\ge 0$.<br><br>Write this combined solution in set notation:<br>${x : x \\le -1$ } \\cup {2 }",
-                        "A reflection in the $x$-axis replaces $y$ with $-y$:<br>\\begin{aligned}\n-y &= f(x) \\cr\ny &= -f(x)\n\\end{aligned}<br>\\begin{aligned}\ny &= -\\left(3x^2 - x^3 - 4\\right) \\cr\n&= x^3 - 3x^2 + 4\n\\end{aligned}<br><br>Final Answer: $-\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : x \\le -1$ } \\cup {2 $}, \\quad y = x^3 - 3x^2 + 4$"
+                        "To solve the inequality $f(x) \\ge 0$, find where the curve lies on or above the $x$-axis. From our sketch, this occurs for $x \\le -1$. The curve also touches the axis at $x = 2$, which satisfies $f(2) = 0 \\ge 0$.",
+                        "Write this combined solution in set notation:<br>$$\\{x : x \\le -1 \\} \\cup \\{2\\}$$",
+                        "A reflection in the $x$-axis replaces $y$ with $-y$:<br>\\begin{aligned}\n-y &= f(x) \\cr\ny &= -f(x)\n\\end{aligned}<br>\\begin{aligned}\ny &= -\\left(3x^2 - x^3 - 4\\right) \\cr\n&= x^3 - 3x^2 + 4\n\\end{aligned}",
+                        "Final Answer: $$-\\left(x + 1\\right)\\left(x - 2\\right)^2$$<br>$$\\{x : x \\le -1 \\} \\cup \\{2\\}$$<br>$$ y = x^3 - 3x^2 + 4$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$-\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : x \\le -1$ $}, \\quad y = x^3 - 3x^2 + 4$",
+                                "ans": "$$-\\left(x + 1\\right)\\left(x - 2\\right)^2$$<br>$$\\{x : x \\le -1\\}$$<br>$$ y = x^3 - 3x^2 + 4$$",
                                 "feedback": "Do not forget the repeated root. Because the inequality is non-strict ($f(x) \\ge 0$), the touching point $x = 2$ satisfies $f(2) = 0$ and must be included in your solution set as the single-element set $\\\\{2\\\\}$."
                         },
                         {
@@ -961,7 +966,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "It looks like you forgot to apply the reflection. A reflection in the $x$-axis requires negating the entire function, which should flip all the signs of your terms."
                         },
                         {
-                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad$ ${x : x \\ge -1$ $}, \\quad y = x^3 - 3x^2 + 4$",
+                                "ans": "$$\\left(x + 1\\right)\\left(x - 2\\right)^2$$<br>$$\\{x : x \\ge -1 \\}$$<br>$$ y = x^3 - 3x^2 + 4$$",
                                 "feedback": "Check your factorisation and expansion. The leading coefficient of the original cubic is negative, so there must be a negative sign in front of your factorised expression: $-\\left(x+1\\right)\\left(x-2\\right)^2$."
                         }
                 ],
@@ -987,21 +992,22 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "To express $g(x)$ in fully factorised form, expand the quadratic term $\\left(x^2 - 9\\right)$ using the difference of two squares identity, $a^2 - b^2 = (a-b)(a+b)$:<br>$$x^2 - 9 = \\left(x - 3\\right)\\left(x + 3\\right)$$<br>Substituting this back yields:<br>$$g(x) = \\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right)$$",
                         "To sketch the graph of the quartic $y = g(x)$, determine the axes intercepts:<br>The $x$-intercepts occur where $g(x) = 0 \\implies x = 2$ (repeated root), $x = 3$, and $x = -3$. These are the points $(2, 0)$, $(3, 0)$, and $(-3, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies g(0) = (-2)^2(0^2 - 9) = 4(-9) = -36$. This is the point $(0, -36)$.<br><br>Since the leading coefficient of $x^4$ is positive ($+1$), the curve is positive on both ends (heads up to the far-left and far-right). It touches the axis and turns around at $(2, 0)$:<br><br><img src='images/Pure/004171_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-                        "To solve the inequality $g(x) \\le 0$, find where the curve lies on or below the $x$-axis. From our sketch, the curve lies below the axis between $x = -3$ and $x = 3$. The isolated touching point at $x = 2$ also satisfies $g(2) = 0 \\le 0$ and is naturally included in this continuous interval.<br><br>Write this solution in set notation:<br>${x : -3 \\le x \\le 3$ }",
+                        "To solve the inequality $g(x) \\le 0$, find where the curve lies on or below the $x$-axis. From our sketch, the curve lies below the axis between $x = -3$ and $x = 3$. The isolated touching point at $x = 2$ also satisfies $g(2) = 0 \\le 0$ and is naturally included in this continuous interval.",
+                        "Write this solution in set notation:<br>$$\\{x : -3 \\le x \\le 3 \\}$$",
                         "To map $y = x^4$ onto $y = (2x - 6)^4$, we can rewrite the target equation as $y = \\left[2\\left(x - 3\\right)\\right]^4 = 16\\left(x - 3\\right)^4$.<br><br>This can be achieved by the following sequence of two transformations:<br>1. A horizontal translation $3$ units to the right (vector $\\begin{pmatrix} 3 \\\\\\ 0 \\end{pmatrix}$), which transforms $y = x^4$ into $y = (x - 3)^4$.<br>2. A vertical stretch with scale factor $16$ parallel to the $y$-axis, which transforms $y = (x - 3)^4$ into $y = 16(x - 3)^4 = (2x - 6)^4$.<br><br><em>Alternative Sequence:</em> First apply a horizontal stretch parallel to the $x$-axis with scale factor $\\dfrac{1}{2}$ (transforming $x \\to 2x$), followed by a horizontal translation $3$ units to the right (transforming $2x \\to 2(x - 3) = 2x - 6$).",
-                        "Final Answer: $\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad$ ${x : -3 \\le x \\le 3$ },<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$"
+                        "Final Answer: $$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right)$$<br>$$\\{x : -3 \\le x \\le 3 \\},<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad$ ${x : -3 \\le x \\le 2$ } \\cup {x : 2 \\le x \\le 3 },<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
+                                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right)$$<br>$$\\{x : -3 \\le x \\le 2\\} \\cup \\{x : 2 \\le x \\le 3 \\}$$<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
                                 "feedback": "Your inequality intervals are correct, but they can be simplified. Since the point $x = 2$ is included in both parts and satisfies the inequality, the two intervals merge into a single continuous interval: $-3 \\le x \\le 3$."
                         },
                         {
-                                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right), \\quad$ ${x : -3 \\le x \\le 3$ },<br>$$ \\text{Horizontal stretch sf } 2 \\text{ then horizontal translation right by } 6$$",
+                                "ans": "$$\\left(x - 2\\right)^2 \\left(x - 3\\right)\\left(x + 3\\right)$$<br>$$\\{x : -3 \\le x \\le 3 \\}$$<br>$$ \\text{Horizontal stretch sf } 2 \\text{ then horizontal translation right by } 6$$",
                                 "feedback": "Be careful with your scale factors and vector order. A stretch parallel to the $x$-axis with a multiplier of $2$ corresponds to a scale factor of $\\dfrac{1}{2}$, not $2$. Additionally, stretching first and then translating right by $6$ would yield $\\left(2\\left(x-6\\right)\\right)^4 = \\left(2x - 12\\right)^4$, which is incorrect."
                         },
                         {
-                                "ans": "$$\\left(x - 2\\right)^2 \\left(x^2 - 9\\right), \\quad$ ${x : -3 \\le x \\le 3$ },<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
+                                "ans": "$$\\left(x - 2\\right)^2 \\left(x^2 - 9\\right)$$<br>$$\\{x : -3 \\le x \\le 3 \\}$$<br>$$\\text{Horizontal translation right by } 3 \\text{ then vertical stretch sf } 16$$",
                                 "feedback": "The question asks for the polynomial in a 'fully factorised form as the product of linear factors'. You must expand the quadratic term $\\left(x^2 - 9\\right)$ into its linear components $\\left(x-3\\right)\\left(x+3\\right)$ to score full marks."
                         }
                 ],
