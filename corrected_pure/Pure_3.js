@@ -233,7 +233,7 @@ window.ALEVEL_QUESTIONS = [
                         "With $\\theta_1 = \\pi$, calculate the iterations. In the first iteration: \\begin{aligned}\n\\theta_2 &= \\pi - \\dfrac{\\pi - 1.5\\sin\\pi}{1 - 1.5\\cos\\pi} \\cr\n&= \\pi - \\dfrac{\\pi}{1 - 1.5(-1)} \\cr\n&= \\pi - \\dfrac{\\pi}{2.5} \\cr\n&= 0.6\\pi \\approx 1.88496\n\\end{aligned}",
                         "In the second iteration: $$\\theta_3 = 1.88496 - \\dfrac{1.88496 - 1.5\\sin(1.88496)}{1 - 1.5\\cos(1.88496)} \\approx 1.57176$$",
                         "For Part (c), calculate the percentage error by comparing the approximation $\\theta_3 \\approx 1.57176$ with the actual root $\\theta = 1.49579$: $\\text{Percentage Error} = \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\approx 5.08$ %",
-                        "Final Answer: \\text{Part (b): } 1.57176,\\quad \\text{Part (c): } 5.08 %"
+                        "Final Answer: $$\\text{Part (b): } 1.57176,\\quad \\text{Part (c): } 5.08 %$$"
                 ],
                 "pi_options": [
                         {
@@ -278,7 +278,7 @@ window.ALEVEL_QUESTIONS = [
                         "With $\\theta_1 = 1.5$, calculate the iterations. In the first iteration: $$\\theta_2 = 1.5 - \\dfrac{3(1.5) - 4\\sin(1.5)}{3 - 4\\cos(1.5)} \\approx 1.31229$$",
                         "In the second iteration: $$\\theta_3 = 1.31229 - \\dfrac{3(1.31229) - 4\\sin(1.31229)}{3 - 4\\cos(1.31229)} \\approx 1.27741$$",
                         "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.27741$ against the true root $\\theta = 1.27570$: $\\text{Percentage Error} = \\dfrac{|1.27741 - 1.27570|}{1.27570} \\times 100 \\approx 0.13$ %",
-                        "Final Answer: \\text{Part (b): } 1.27741,\\quad \\text{Part (c): } 0.13 %"
+                        "Final Answer: $$\\text{Part (b): } 1.27741,\\quad \\text{Part (c): } 0.13 %"
                 ],
                 "pi_options": [
                         {
@@ -321,7 +321,7 @@ window.ALEVEL_QUESTIONS = [
                         "With $\\theta_1 = 1.0$, calculate the iterations. In the first iteration: $$\\theta_2 = 1.0 - \\dfrac{3(1.0) - 5\\sin(2)}{3 - 10\\cos(2)} \\approx 1.21594$$",
                         "In the second iteration: $$\\theta_3 = 1.21594 - \\dfrac{3(1.21594) - 5\\sin(2.43188)}{3 - 10\\cos(2.43188)} \\approx 1.17911$$",
                         "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.17911$ against the true root $\\theta = 1.17243$: $\\text{Percentage Error} = \\dfrac{|1.17911 - 1.17243|}{1.17243} \\times 100 \\approx 0.57$ %",
-                        "Final Answer: \\text{Part (b): } 1.17911,\\quad \\text{Part (c): } 0.57 %"
+                        "Final Answer: $$\\text{Part (b): } 1.17911,\\quad \\text{Part (c): } 0.57 %"
                 ],
                 "pi_options": [
                         {
@@ -364,7 +364,7 @@ window.ALEVEL_QUESTIONS = [
                         "With $\\theta_1 = 2.5$, calculate the iterations. In the first iteration: $$\\theta_2 = 2.5 - \\dfrac{2(2.5) - 5\\sin(2.5)}{2 - 5\\cos(2.5)} \\approx 2.16571$$",
                         "In the second iteration: $$\\theta_3 = 2.16571 - \\dfrac{2(2.16571) - 5\\sin(2.16571)}{2 - 5\\cos(2.16571)} \\approx 2.12654$$",
                         "For Part (c), calculate the percentage error of $\\theta_3 \\approx 2.12654$ against the true root $\\theta = 2.12463$: $\\text{Percentage Error} = \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100 \\approx 0.09$ %",
-                        "Final Answer: \\text{Part (b): } 2.12654,\\quad \\text{Part (c): } 0.09 %"
+                        "Final Answer: $$\\text{Part (b): } 2.12654,\\quad \\text{Part (c): } 0.09 %"
                 ],
                 "pi_options": [
                         {
@@ -407,7 +407,7 @@ window.ALEVEL_QUESTIONS = [
                         "With $\\theta_1 = 2.0$, calculate the iterations. In the first iteration: $$\\theta_2 = 2.0 - \\dfrac{3(2.0) - 5\\sin(2.0)}{3 - 5\\cos(2.0)} \\approx 1.71392$$",
                         "In the second iteration: $$\\theta_3 = 1.71392 - \\dfrac{3(1.71392) - 5\\sin(1.71392)}{3 - 5\\cos(1.71392)} \\approx 1.66164$$",
                         "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.66164$ against the true root $\\theta = 1.65215$: $\\text{Percentage Error} = \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100 \\approx 0.57$ %",
-                        "Final Answer: \\text{Part (b): } 1.66164,\\quad \\text{Part (c): } 0.57 %"
+                        "Final Answer: $$\\text{Part (b): } 1.66164,\\quad \\text{Part (c): } 0.57 %"
                 ],
                 "pi_options": [
                         {
@@ -888,19 +888,19 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate both models at $t = 54$: $$V_{\\text{prod}} = 20 + 200\\left(\\dfrac{54}{40}\\right)^3 - 100\\left(\\dfrac{54}{40}\\right)^4 \\approx 180.12\\text{ Bcm}$$ and $$V_{\\text{use}} = 8.5 \\times 1.058^{54} \\approx 178.53\\text{ Bcm}$$. Since $180.12 > 178.53$, production exceeds consumption.",
                         "Evaluate both models at $t = 55$: $$V_{\\text{prod}} = 20 + 200\\left(\\dfrac{55}{40}\\right)^3 - 100\\left(\\dfrac{55}{40}\\right)^4 \\approx 182.44\\text{ Bcm}$$ and $$V_{\\text{use}} = 8.5 \\times 1.058^{55} \\approx 188.88\\text{ Bcm}$$. Since $182.44 < 188.88$, consumption now exceeds production.",
                         "Since the difference $V_{\\text{prod}} - V_{\\text{use}}$ changes sign from positive to negative between $t = 54$ and $t = 55$, the curves must intersect during this interval (which corresponds exactly to the calendar year 2044).",
-                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 59.464,$ $T_2 = 66.305,$ $T_3 = 71.099,\\quad \\text{Part (b): } 54 < t < 55 \\implies 2044$"
+                        "Final Answer: $$\\text{Part (a)(ii): } T_1 = 59.464,$ $T_2 = 66.305,$ $T_3 = 71.099,\\quad \\text{Part (b): } 54 < t < 55 \\implies 2044$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 59.452,$ $T_2 = 66.292,$ $T_3 = 70.987,\\quad \\text{Part (b): } 54 < t < 55 \\implies 2044$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 59.452,$ $T_2 = 66.292,$ $T_3 = 70.987,\\quad \\text{Part (b): } 54 < t < 55 \\implies 2044$$",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $210,240$. Carrying the rounded value $T_1 \\approx 59.452$ instead of $59.464$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 59.464,$ $T_2 = 66.305,$ $T_3 = 71.099,\\quad \\text{Part (b): } 50 < t < 51 \\implies 2040$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 59.464,$ $T_2 = 66.305,$ $T_3 = 71.099,\\quad \\text{Part (b): } 50 < t < 51 \\implies 2040$$",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 50$ is your starting iteration value, evaluating the production and consumption curves shows that they do not cross until $t$ is between $54$ and $55$, which corresponds to the year 2044."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 59.464,$ $T_2 = 66.305,$ $T_3 = 71.099,\\quad \\text{Part (b): } 53 < t < 54 \\implies 2043$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 59.464,$ $T_2 = 66.305,$ $T_3 = 71.099,\\quad \\text{Part (b): } 53 < t < 54 \\implies 2043$$",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 54$. Since $V_{\\text{prod}} \\approx 180.12$ and $V_{\\text{use}} \\approx 178.53$, production is still greater than consumption, meaning they have not crossed yet."
                         }
                 ],
@@ -934,19 +934,19 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate both models at $t = 28$: $$R = 5 + 30\\left(\\dfrac{28}{10}\\right)^2 - 10\\left(\\dfrac{28}{10}\\right)^3 \\approx 20.68\\text{ million}$$ and $$C = 1.2 \\times 1.09^{28} \\approx 13.40\\text{ million}$$. Since $20.68 > 13.40$, revenue exceeds operating costs.",
                         "Evaluate both models at $t = 29$: $$R = 5 + 30\\left(\\dfrac{29}{10}\\right)^2 - 10\\left(\\dfrac{29}{10}\\right)^3 \\approx 13.41\\text{ million}$$ and $$C = 1.2 \\times 1.09^{29} \\approx 14.61\\text{ million}$$. Since $13.41 < 14.61$, costs now exceed revenue.",
                         "Since the difference $R - C$ changes sign from positive to negative between $t = 28$ and $t = 29$, the curves must intersect during this interval (which corresponds exactly to the calendar year 2038).",
-                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 30.759,$ $T_2 = 30.644,$ $T_3 = 30.588,\\quad \\text{Part (b): } 28 < t < 29 \\implies 2038$"
+                        "Final Answer: $$\\text{Part (a)(ii): } T_1 = 30.759,$ $T_2 = 30.644,$ $T_3 = 30.588,\\quad \\text{Part (b): } 28 < t < 29 \\implies 2038$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 30.763,$ $T_2 = 30.642,$ $T_3 = 30.593,\\quad \\text{Part (b): } 28 < t < 29 \\implies 2038$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 30.763,$ $T_2 = 30.642,$ $T_3 = 30.593,\\quad \\text{Part (b): } 28 < t < 29 \\implies 2038$$",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the square root of $946.129$. Carrying the rounded value $T_1 \\approx 30.763$ instead of $30.759$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 30.759,$ $T_2 = 30.644,$ $T_3 = 30.588,\\quad \\text{Part (b): } 27 < t < 28 \\implies 2037$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 30.759,$ $T_2 = 30.644,$ $T_3 = 30.588,\\quad \\text{Part (b): } 27 < t < 28 \\implies 2037$$",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 28$ is your target value, evaluating both models shows that they do not cross until $t$ is between $28$ and $29$, which corresponds to the year 2038."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 30.759,$ $T_2 = 30.644,$ $T_3 = 30.588,\\quad \\text{Part (b): } 29 < t < 30 \\implies 2039$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 30.759,$ $T_2 = 30.644,$ $T_3 = 30.588,\\quad \\text{Part (b): } 29 < t < 30 \\implies 2039$$",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 28$. Since $R \\approx 20.68$ and $C \\approx 13.40$, revenue is still greater than costs, meaning they have not crossed yet."
                         }
                 ],
@@ -980,19 +980,19 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate both models at $t = 69$: $$V = 8 + 48\\left(\\dfrac{69}{12}\\right)^2 - 8\\left(\\dfrac{69}{12}\\right)^3 \\approx 74.13\\text{ thousand}$$ and $$V_{\\text{in}} = 0.5 \\times 1.07^{69} \\approx 53.20\\text{ thousand}$$. Since $74.13 > 53.20$, reservoir volume exceeds inflow.",
                         "Evaluate both models at $t = 70$: $$V = 8 + 48\\left(\\dfrac{70}{12}\\right)^2 - 8\\left(\\dfrac{70}{12}\\right)^3 \\approx 53.37\\text{ thousand}$$ and $$V_{\\text{in}} = 0.5 \\times 1.07^{70} \\approx 56.92\\text{ thousand}$$. Since $53.37 < 56.92$, inflow now exceeds reservoir volume.",
                         "Since the difference $V - V_{\\text{in}}$ changes sign from positive to negative between $t = 69$ and $t = 70$, the curves must intersect during this interval (which corresponds exactly to the 70th month).",
-                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 72.775,$ $T_2 = 72.626,$ $T_3 = 72.527,\\quad \\text{Part (b): } 69 < t < 70 \\implies \\text{70th month}$"
+                        "Final Answer: $$\\text{Part (a)(ii): } T_1 = 72.775,$ $T_2 = 72.626,$ $T_3 = 72.527,\\quad \\text{Part (b): } 69 < t < 70 \\implies \\text{70th month}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 72.700,$ $T_2 = 72.400,$ $T_3 = 72.200,\\quad \\text{Part (b): } 69 < t < 70 \\implies \\text{70th month}$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 72.700,$ $T_2 = 72.400,$ $T_3 = 72.200,\\quad \\text{Part (b): } 69 < t < 70 \\implies \\text{70th month}$$",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $385,416$. Carrying the rounded value $T_1 \\approx 72.700$ instead of $72.775$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 72.775,$ $T_2 = 72.626,$ $T_3 = 72.527,\\quad \\text{Part (b): } 68 < t < 69 \\implies \\text{69th month}$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 72.775,$ $T_2 = 72.626,$ $T_3 = 72.527,\\quad \\text{Part (b): } 68 < t < 69 \\implies \\text{69th month}$$",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 69$ is your target value, evaluating both models shows that they do not cross until $t$ is between $69$ and $70$, which corresponds to the 70th month."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 72.775,$ $T_2 = 72.626,$ $T_3 = 72.527,\\quad \\text{Part (b): } 70 < t < 71 \\implies \\text{71st month}$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 72.775,$ $T_2 = 72.626,$ $T_3 = 72.527,\\quad \\text{Part (b): } 70 < t < 71 \\implies \\text{71st month}$$",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 69$. Since $V \\approx 74.13$ and $V_{\\text{in}} \\approx 53.20$, reservoir volume is still greater than inflow, meaning they have not crossed yet."
                         }
                 ],
@@ -1026,19 +1026,19 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate both models at $t = 19$: $$R = 5 + 50\\left(\\dfrac{19}{10}\\right)^3 - 25\\left(\\dfrac{19}{10}\\right)^4 \\approx 22.15\\text{ moles/s}$$ and $$R_{\\text{inh}} = 0.8 \\times 1.15^{19} \\approx 11.39\\text{ moles/s}$$. Since $22.15 > 11.39$, primary reaction rate exceeds the inhibitor rate.",
                         "Evaluate both models at $t = 20$: \\begin{aligned}\nR &= 5 + 50\\left(\\dfrac{20}{10}\\right)^3 - 25\\left(\\dfrac{20}{10}\\right)^4 \\cr\n&= 5\\text{ moles/s}\n\\end{aligned} and $$R_{\\text{inh}} = 0.8 \\times 1.15^{20} \\approx 13.09\\text{ moles/s}$$. Since $5 < 13.09$, the inhibitor rate now exceeds the primary reaction rate.",
                         "Since the difference $R - R_{\\text{inh}}$ changes sign from positive to negative between $t = 19$ and $t = 20$, the curves must intersect during this interval (which corresponds exactly to the 20th minute).",
-                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 20.735,$ $T_2 = 20.563,$ $T_3 = 20.451,\\quad \\text{Part (b): } 19 < t < 20 \\implies \\text{20th minute}$"
+                        "Final Answer: $$\\text{Part (a)(ii): } T_1 = 20.735,$ $T_2 = 20.563,$ $T_3 = 20.451,\\quad \\text{Part (b): } 19 < t < 20 \\implies \\text{20th minute}$$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 20.730,$ $T_2 = 20.610,$ $T_3 = 20.540,\\quad \\text{Part (b): } 19 < t < 20 \\implies \\text{20th minute}$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 20.730,$ $T_2 = 20.610,$ $T_3 = 20.540,\\quad \\text{Part (b): } 19 < t < 20 \\implies \\text{20th minute}$$",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $8,915.24$. Carrying the rounded value $T_1 \\approx 20.730$ instead of $20.735$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 20.735,$ $T_2 = 20.563,$ $T_3 = 20.451,\\quad \\text{Part (b): } 18 < t < 19 \\implies \\text{19th minute}$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 20.735,$ $T_2 = 20.563,$ $T_3 = 20.451,\\quad \\text{Part (b): } 18 < t < 19 \\implies \\text{19th minute}$$",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 19$ is your target value, evaluating both models shows that they do not cross until $t$ is between $19$ and $20$, which corresponds to the 20th minute."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 20.735,$ $T_2 = 20.563,$ $T_3 = 20.451,\\quad \\text{Part (b): } 20 < t < 21 \\implies \\text{21st minute}$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 20.735,$ $T_2 = 20.563,$ $T_3 = 20.451,\\quad \\text{Part (b): } 20 < t < 21 \\implies \\text{21st minute}$$",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 19$. Since $R \\approx 22.15$ and $R_{\\text{inh}} \\approx 11.39$, primary rate is still greater than inhibitor rate, meaning they have not crossed yet."
                         }
                 ],
@@ -1072,19 +1072,19 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate both models at $t = 39$: $$V = 4 + 40\\left(\\dfrac{39}{20}\\right)^3 - 20\\left(\\dfrac{39}{20}\\right)^4 \\approx 11.42\\text{ million}$$ and $$C = 0.2 \times 1.085^{39} \\approx 4.82\\text{ million}$$. Since $11.42 > 4.82$, fleet value exceeds maintenance costs.",
                         "Evaluate both models at $t = 40$: \\begin{aligned}\nV &= 4 + 40\\left(\\dfrac{40}{20}\\right)^3 - 20\\left(\\dfrac{40}{20}\\right)^4 \\cr\n&= 4\\text{ million}\n\\end{aligned} and $$C = 0.2 \times 1.085^{40} \\approx 5.23\\text{ million}$$. Since $4 < 5.23$, maintenance costs now exceed the fleet value.",
                         "Since the difference $V - C$ changes sign from positive to negative between $t = 39$ and $t = 40$, the curves must intersect during this interval (which corresponds exactly to the 40th year).",
-                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 40.821,$ $T_2 = 40.704,$ $T_3 = 40.627,\\quad \\text{Part (b): } 39 < t < 40 \\implies \\text{40th year}$"
+                        "Final Answer: $$\\text{Part (a)(ii): } T_1 = 40.821,$ $T_2 = 40.704,$ $T_3 = 40.627,\\quad \\text{Part (b): } 39 < t < 40 \\implies \\text{40th year}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 40.820,$ $T_2 = 40.730,$ $T_3 = 40.670,\\quad \\text{Part (b): } 39 < t < 40 \\implies \\text{40th year}$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 40.820,$ $T_2 = 40.730,$ $T_3 = 40.670,\\quad \\text{Part (b): } 39 < t < 40 \\implies \\text{40th year}$$",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $68,020.5$. Carrying the rounded value $T_1 \\approx 40.820$ instead of $40.821$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 40.821,$ $T_2 = 40.704,$ $T_3 = 40.627,\\quad \\text{Part (b): } 38 < t < 39 \\implies \\text{39th year}$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 40.821,$ $T_2 = 40.704,$ $T_3 = 40.627,\\quad \\text{Part (b): } 38 < t < 39 \\implies \\text{39th year}$$",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 39$ is your target value, evaluating both models shows that they do not cross until $t$ is between $39$ and $40$, which corresponds to the 40th year."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 40.821,$ $T_2 = 40.704,$ $T_3 = 40.627,\\quad \\text{Part (b): } 40 < t < 41 \\implies \\text{41st year}$",
+                                "ans": "$$\\text{Part (a)(ii): } T_1 = 40.821,$ $T_2 = 40.704,$ $T_3 = 40.627,\\quad \\text{Part (b): } 40 < t < 41 \\implies \\text{41st year}$$",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 39$. Since $V \\approx 11.42$ and $C \\approx 4.82$, fleet value is still greater than maintenance costs, meaning they have not crossed yet."
                         }
                 ],
@@ -1546,7 +1546,7 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": "images/Pure/004136.png",
-                "question": "Some students are trying to prove an identity for $\\cos(A+B)$. They start by drawing two right-angled triangles $ODE$ and $OEF$ as shown in the diagram. Let angle $DOE = A$ and angle $EOF = B$. In triangle $OFR$, the horizontal line is $OD$, and $FR$ is perpendicular to $OD$ at $R$. The line $EP$ is perpendicular to $FR$ at $P$.<br><br>The students' incomplete proof continues:<br>* **Line 1:** $\\cos(A+B) = \\dfrac{OR}{OF}$<br>* **Line 2:** $= \\dfrac{OD - RD}{OF}$<br>* **Line 3:** $= \\dfrac{OD - EP}{OF}$ since $RD = EP$<br>* **Line 4:** $= \\dfrac{OD}{OF} - \\dfrac{EP}{OF}$<br>* **Line 4 (expanded):** $= \\dfrac{OD}{OE} \\times \\dfrac{OE}{OF} - \\dfrac{EP}{EF} \\times \\dfrac{EF}{OF}$<br><br>1. Explain why $\\dfrac{EP}{EF} \\times \\dfrac{EF}{OF}$ in Line 4 leads to $\\sin A \\sin B$ in Line 5.<br>2. Complete Line 4 and Line 5 to prove the identity $\\cos(A+B) = \\cos A \\cos B - \\sin A \\sin B$.<br>3. Explain why the argument used only proves the identity when $A$ and $B$ are acute angles.<br>4. Show how to prove the identity for $\\cos(A-B)$ by substituting $-B$ into the identity for $\\cos(A+B)$, stating any properties of trigonometric functions that you use.",
+                "question": "Some students are trying to prove an identity for $\\cos(A+B)$. They start by drawing two right-angled triangles $ODE$ and $OEF$ as shown in the diagram. Let angle $DOE = A$ and angle $EOF = B$. In triangle $OFR$, the horizontal line is $OD$, and $FR$ is perpendicular to $OD$ at $R$. The line $EP$ is perpendicular to $FR$ at $P$.<br><br>The students' incomplete proof continues:<br><em>Line 1:</em> $\\cos(A+B) = \\dfrac{OR}{OF}$<br><em>Line 2:</em> $= \\dfrac{OD - RD}{OF}$<br><em>Line 3:</em> $= \\dfrac{OD - EP}{OF}$ since $RD = EP$<br><em>Line 4:</em> $= \\dfrac{OD}{OF} - \\dfrac{EP}{OF}$<br><em>Line 4 (expanded):</em> $= \\dfrac{OD}{OE} \\times \\dfrac{OE}{OF} - \\dfrac{EP}{EF} \\times \\dfrac{EF}{OF}$<br><br>1. Explain why $\\dfrac{EP}{EF} \\times \\dfrac{EF}{OF}$ in Line 4 leads to $\\sin A \\sin B$ in Line 5.<br>2. Complete Line 4 and Line 5 to prove the identity $\\cos(A+B) = \\cos A \\cos B - \\sin A \\sin B$.<br>3. Explain why the argument used only proves the identity when $A$ and $B$ are acute angles.<br>4. Show how to prove the identity for $\\cos(A-B)$ by substituting $-B$ into the identity for $\\cos(A+B)$, stating any properties of trigonometric functions that you use.",
                 "steps": [
                         "To show why $\\dfrac{EP}{EF} \\times \\dfrac{EF}{OF} = \\sin A \\sin B$, we first identify the angles in our coordinate setup:<br>Since $EP \\parallel OD$ (both are horizontal), the alternate angle $\\angle OEP = \\angle DOE = A$.<br>Since the triangle $OEF$ is right-angled at $E$, $\\angle OEF = 90^\\circ$. This gives:<br>\\begin{aligned}\n\\angle PEF &= 90^\\circ - \\angle OEP \\cr\n&= 90^\\circ - A\n\\end{aligned}<br>Inside the right-angled triangle $EPF$, the angles must sum to $180^\\circ$, meaning:<br>\\begin{aligned}\n\\angle EFP &= 90^\\circ - \\angle PEF \\cr\n&= 90^\\circ - (90^\\circ - A) \\cr\n&= A\n\\end{aligned}",
                         "Now we use our identified angle $A$ inside the right-angled triangle $EPF$:<br>\\begin{aligned}\n\\sin A &= \\dfrac{\\text{Opposite}}{\\text{Hypotenuse}} \\cr\n&= \\dfrac{EP}{EF}\n\\end{aligned}<br>Next, looking at the right-angled triangle $OEF$ (with right angle at $E$):<br>\\begin{aligned}\n\\sin B &= \\dfrac{\\text{Opposite}}{\\text{Hypotenuse}} \\cr\n&= \\dfrac{EF}{OF}\n\\end{aligned}<br>Multiplying these two ratios together gives:<br>$$\\dfrac{EP}{EF} \\times \\dfrac{EF}{OF} = \\sin A \\sin B$$",
@@ -1626,7 +1626,7 @@ window.ALEVEL_QUESTIONS = [
                         "Proof"
                 ],
                 "img": false,
-                "question": "A student attempts to prove the trigonometric identity:<br>$$\\dfrac{1}{\\cos\\theta} - \\cos\\theta = \\sin\\theta\\tan\\theta$$<br>Their written proof is shown below:<br>* **Line 1:** $\\text{LHS} = \\dfrac{1}{\\cos\\theta} - \\cos\\theta$<br>* **Line 2:** $= \\dfrac{1 - \\cos^2\\theta}{\\cos\\theta}$<br>* **Line 3:** $= \\dfrac{\\sin^2\\theta}{\\cos\\theta}$<br>* **Line 4:** $= \\sin\\theta \\left(\\dfrac{\\sin\\theta}{\\cos\\theta}\\right)$<br>* **Line 5:** $= \\sin\\theta\\tan\\theta = \\text{RHS}$<br><br>1. State the name of the fundamental trigonometric identity used to transition from Line 2 to Line 3.<br>2. Explain why this proof is invalid for $\\theta = 90^\\circ$ and $\\theta = 270^\\circ$.<br>3. Hence, or otherwise, solve the equation:<br>$$\\dfrac{1}{\\cos\\theta} - \\cos\\theta = 3\\sin\\theta$$<br>for $0^\\circ \\le \\theta \\le 180^\\circ$.",
+                "question": "A student attempts to prove the trigonometric identity:<br>$$\\dfrac{1}{\\cos\\theta} - \\cos\\theta = \\sin\\theta\\tan\\theta$$<br>Their written proof is shown below:<br><em>Line 1:</em> $\\text{LHS} = \\dfrac{1}{\\cos\\theta} - \\cos\\theta$<br><em>Line 2:</em> $= \\dfrac{1 - \\cos^2\\theta}{\\cos\\theta}$<br><em>Line 3:</em> $= \\dfrac{\\sin^2\\theta}{\\cos\\theta}$<br><em>Line 4:</em> $= \\sin\\theta \\left(\\dfrac{\\sin\\theta}{\\cos\\theta}\\right)$<br>* **Line 5:** $= \\sin\\theta\\tan\\theta = \\text{RHS}$<br><br>1. State the name of the fundamental trigonometric identity used to transition from Line 2 to Line 3.<br>2. Explain why this proof is invalid for $\\theta = 90^\\circ$ and $\\theta = 270^\\circ$.<br>3. Hence, or otherwise, solve the equation:<br>$$\\dfrac{1}{\\cos\\theta} - \\cos\\theta = 3\\sin\\theta$$<br>for $0^\\circ \\le \\theta \\le 180^\\circ$.",
                 "steps": [
                         "The identity used to transition from Line 2 to Line 3 is $\\sin^2\\theta + \\cos^2\\theta = 1$ (known as the Pythagorean identity), rearranged to $1 - \\cos^2\\theta = \\sin^2\\theta$.",
                         "For $\\theta = 90^\\circ$ and $\\theta = 270^\\circ$, we have $\\cos\\theta = 0$. This makes both the fraction $\\dfrac{1}{\\cos\\theta}$ and the tangent function $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$ undefined due to division by zero. Thus, the algebraic steps in this proof are invalid at these specific angles.",
