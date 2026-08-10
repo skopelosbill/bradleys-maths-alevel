@@ -567,7 +567,7 @@ window.ALEVEL_QUESTIONS = [
                 "pi_options": [
                         {
                                 "ans": "$5\\sin(x + 53.1^\\circ), \\quad x = -23.1^\\circ, \\, 96.9^\\circ$",
-                                "feedback": "Be careful with your domain boundaries. While $x = -23.1^\\circ$ is a mathematical solution, it lies outside the required interval $0^\\circx360^\\circ$. Adding $360^\\circ$ to $-23.1^\\circ$ yields the correct positive fourth-quadrant solution $336.9^\\circ$."
+                                "feedback": "Be careful with your domain boundaries. While $x = -23.1^\\circ$ is a mathematical solution, it lies outside the required interval $0^\\circ\\le x\\le 360^\\circ$. Adding $360^\\circ$ to $-23.1^\\circ$ yields the correct positive fourth-quadrant solution $336.9^\\circ$."
                         },
                         {
                                 "ans": "$5\\sin(x + 53.1^\\circ), \\quad x = 96.9^\\circ, \\, 296.9^\\circ$",
