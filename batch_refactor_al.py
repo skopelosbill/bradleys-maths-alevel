@@ -8,11 +8,29 @@ def clean_pseudo_math_text(text):
     Finds display math blocks $$ ... $$ that contain pseudo-math spacing text
     (words separated strictly by double backslashes in memory, which is 4 in the raw JSON)
     and converts them to standard HTML text.
+    
+    If the block contains any standard mathematical LaTeX commands, it is recognized
+    as a legitimate equation and left completely untouched.
     """
     def convert_block(match):
         inner = match.group(1).strip()
+        
+        # Standard LaTeX math commands that indicate this is a real equation
+        # and MUST NOT be treated as a plain text spacing block.
+        math_indicators = [
+            "\\dfrac", "\\frac", "\\int", "\\sin", "\\cos", "\\tan", "\\ln", 
+            "\\pi", "\\begin", "\\end", "\\mathrm", "\\left", "\\right", 
+            "\\Big", "\\bigg", "\\theta", "\\lambda", "\\alpha", "\\beta", 
+            "\\gamma", "\\sigma", "\\delta", "\\Delta", "\\approx", "\\to"
+        ]
+        
+        # If it is a real math equation, exit immediately and change nothing
+        if any(ind in inner for ind in math_indicators):
+            return match.group(0)
+            
         # r"\\" searches strictly for TWO consecutive backslashes in Python's parsed memory.
         if r"\\" in inner and any(c.isalpha() for c in inner):
+            # Split strictly on double-backslashes or more
             parts = re.split(r'\\{2,}', inner)
             cleaned_parts = []
             for part in parts:
@@ -24,7 +42,9 @@ def clean_pseudo_math_text(text):
                     cleaned_parts.append(f"${part}$")
                 else:
                     cleaned_parts.append(part)
+            
             return " ".join(cleaned_parts)
+            
         return match.group(0)
 
     return re.sub(r'\$\$(.*?)\$\$', convert_block, text, flags=re.DOTALL)
@@ -78,7 +98,7 @@ def run_batch_refactor():
     os.makedirs(output_dir, exist_ok=True)
 
     print("=" * 80)
-    print(f"STARTING BATCH REFACTOR OF THE 'al' DATABASE ({len(files)} files found)")
+    print(f"STARTING SAFE BATCH REFACTOR OF THE 'al' DATABASE ({len(files)} files found)")
     print("=" * 80)
 
     summary_stats = []
@@ -87,6 +107,10 @@ def run_batch_refactor():
     for filepath in files:
         filename = os.path.basename(filepath)
         
+        # Skip previously corrected outputs if they are in the same directory
+        if "corrected" in filename:
+            continue
+            
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
                 raw_content = f.read()
@@ -114,7 +138,7 @@ def run_batch_refactor():
         for q in questions:
             q_id = q.get("id", "UNKNOWN")
             
-            # Clean up pseudo-math text
+            # Clean up pseudo-math text safely
             def clean_fields_in_object(obj):
                 nonlocal text_corrections_count
                 if isinstance(obj, dict):
@@ -171,7 +195,7 @@ def run_batch_refactor():
                 f.write(output_data)
                 f.write(";\n")
             
-            print(f"Processed: {filename:<16} | Pseudo-Math Text Fixed: {text_corrections_count:<4} | Horizontal Chains Aligned: {chain_corrections_count:<4}")
+            print(f"Processed: {filename:<16} | Text Fixed: {text_corrections_count:<4} | Chains Aligned: {chain_corrections_count:<4}")
             summary_stats.append({
                 "file": filename,
                 "text_fixes": text_corrections_count,
@@ -205,7 +229,7 @@ def run_batch_refactor():
     print("-" * 80)
     print(f"{'TOTALS':<18} | {total_text:<18} | {total_chains:<25} |")
     print("=" * 80)
-    print(f"Prisinte corrected database copies stored in the directory: './{output_dir}/'")
+    print(f"Pristine corrected database copies stored in the directory: './{output_dir}/'")
     print("=" * 80)
 
 if __name__ == "__main__":
