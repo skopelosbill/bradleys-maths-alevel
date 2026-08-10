@@ -67,7 +67,7 @@ window.ALEVEL_QUESTIONS = [
                 "Evaluate the normal line integral $I_2 = \\int_{0}^{1} \\left( 16x - \\dfrac{ 61 }{ 4 } \\right) \\mathrm{d}x$:<br>\\begin{aligned} I_2 &= \\left[ 8x^2 - \\dfrac{ 61 }{ 4 }x \\right]_{0}^{1} \\cr\n&= 8 - \\dfrac{ 61 }{ 4 } \\cr\n&= -\\dfrac{ 29 }{ 4 } \\end{aligned}",
                 "Subtracting $I_2$ from $I_1$ yields the final exact area:<br>\\begin{aligned} A &= I_1 - I_2 \\cr\n&= \\ln 2 - \\left( -\\dfrac{ 29 }{ 4 } \\right) \\cr\n&= \\ln 2 + \\dfrac{ 29 }{ 4 } \\end{aligned}",
                 "Final Answer: \\begin{aligned} y &= 16x - \\dfrac{ 61 }{ 4 }, \\quad \\text{Area} \\cr\n&= \\ln 2 + \\dfrac{ 29 }{ 4 } \\end{aligned}"
-        ]
+        ],
                 "pi_options": [
                         {
                                 "ans": "$$y = -\\dfrac{1}{16}x + \\dfrac{13}{16}, \\quad \\text{Area} = \\ln 2 + \\dfrac{29}{4}$$",
