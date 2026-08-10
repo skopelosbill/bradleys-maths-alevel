@@ -57,6 +57,7 @@ window.ALEVEL_QUESTIONS = [
                         "Tangents and Normals"
                 ],
                 "img": "images/Pure/004202.png",
+                "question": "The curve $C$ has equation:<br>$$y = \\dfrac{ 2x + 1 }{ x^2 + x + 2 }, \\quad \\text{for } x \\ge 0$$<br><strong>1.</strong> Show that the equation of the normal to the curve $C$ at the point $P$ where $x = 1$ is $y = 16x - \\dfrac{ 61 }{ 4 }$.<br><strong>2.</strong> Find the exact area of the shaded region bounded by the curve $C$, the normal to the curve, and the $y$-axis.",
                 "steps": [
                 "Find the coordinates of the point $P$. Substitute $x = 1$ into the curve's equation:<br>\\begin{aligned} y &= \\dfrac{ 2(1) + 1 }{ 1^2 + 1 + 2 } \\cr\n&= \\dfrac{ 3 }{ 4 } \\end{aligned}<br>So the coordinates of $P$ are $P\\left( 1, \\dfrac{ 3 }{ 4 } \\right)$.",
                 "Differentiate the equation of the curve using the quotient rule, where $u = 2x + 1$ and $v = x^2 + x + 2$:<br>\\begin{aligned} u' &= 2, \\cr\nv' &= 2x + 1 \\end{aligned}<br>\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 2(x^2 + x + 2) - (2x + 1)(2x + 1) }{ (x^2 + x + 2)^2 } \\cr\n&= \\dfrac{ 2x^2 + 2x + 4 - (4x^2 + 4x + 1) }{ (x^2 + x + 2)^2 } \\cr\n&= \\dfrac{ -2x^2 - 2x + 3 }{ (x^2 + x + 2)^2 } \\end{aligned}",
