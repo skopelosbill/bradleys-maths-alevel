@@ -1137,7 +1137,7 @@ window.ALEVEL_QUESTIONS = [
                         "Use the arithmetic sum formula $S_n = \\dfrac{n}{2}(a + L)$ to find the total:<br>$$\\begin{aligned} S_{50} &= \\dfrac{50}{2}(5 + 152) \\\\\\ &= 25(157) \\\\\\ &= 3925 \\end{aligned}$$",
                         "Identify the second sum $\\sum_{k=1}^{10} \\left(5\\cdot 2^k\\right)$ as a geometric series. Write out the first few terms to find $a$ and $r$:<br>$$\\begin{aligned} \\text{Term 1 } (k=1): \\quad u_1 &= 5\\cdot 2^1 = 10 \\\\\\ \\text{Term 2 } (k=2): \\quad u_2 &= 5\\cdot 2^2 = 20 \\end{aligned}$$<br>This gives a first term of $a = 10$, a common ratio of $r = 2$, and $n = 10$ terms.",
                         "Use the geometric sum formula $S_n = \\dfrac{a\\left(r^n - 1\\right)}{r - 1}$ to calculate the total sum:<br>$$\\begin{aligned} S_{10} &= \\dfrac{10\\left(2^{10} - 1\\right)}{2 - 1} \\\\\\ &= 10(1024 - 1) \\\\\\ &= 10(1023) \\\\\\ &= 10230 \\end{aligned}$$",
-                        "Final Answer: \\begin{aligned}\n\\sum_{r &= 1}^{50} (3r + 2) \\cr\n&= 3925, \\quad \\sum_{k = 1}^{10} \\left(5\\cdot 2^k\\right) \\cr\n&= 10230\n\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\n\\sum_{r = 1}^{50} (3r + 2) \\cr\n&= 3925, \\quad \\sum_{k = 1}^{10} \\left(5\\cdot 2^k\\right) \\cr\n&= 10230\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
