@@ -1759,15 +1759,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\lambda = -3\\text{ and }|\\mathbf{ r }| = 13$",
+                                "ans": "$$\\lambda = -3\\text{ and }|\\mathbf{ r }| = 13$4",
                                 "feedback": "Your value for $\\lambda$ is correct, but check your magnitude calculation. To find the magnitude of $2\\mathbf{ i } - 3\\mathbf{ j }$, you must take the square root of $4 + 9 = 13$."
                         },
                         {
-                                "ans": "$$\\lambda = -4.5\\text{ and }|\\mathbf{ r }| = \\sqrt{ 13 }$",
+                                "ans": "$$\\lambda = -4.5\\text{ and }|\\mathbf{ r }| = \\sqrt{ 13 }$4",
                                 "feedback": "Your magnitude calculation is correct, but check your value of $\\lambda$. Since the $\\mathbf{ i }$ component of <strong>b</strong> is $-3$ times that of <strong>a</strong>, the same scale factor must apply to the $\\mathbf{ j }$ components, meaning $9 = -3\\lambda \\implies \\lambda = -3$."
                         },
                         {
-                                "ans": "$$\\lambda = 3\\text{ and }|\\mathbf{ r }| = \\sqrt{ 205 }$",
+                                "ans": "$$\\lambda = 3\\text{ and }|\\mathbf{ r }| = \\sqrt{ 205 }$4",
                                 "feedback": "Be careful with signs. Since the $\\mathbf{ i }$ component of <strong>b</strong> is negative and <strong>a</strong> is positive, the scaling constant $k$ must be negative, which makes $\\lambda = -3$."
                         }
                 ],
