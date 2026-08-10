@@ -1348,7 +1348,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find the stationary points, we differentiate $A$ with respect to $x$ using the product rule and chain rule:<br>$$\\dfrac{\\text{d}A}{\\text{d}x} = 4\\sqrt{36 - x^2} + 4x \\cdot \\left(\\dfrac{-2x}{2\\sqrt{36 - x^2}}\\right)$$<br>$$\\dfrac{\\text{d}A}{\\text{d}x} = 4\\sqrt{36 - x^2} - \\dfrac{4x^2}{\\sqrt{36 - x^2}}$$<br>Combine these over a common denominator:<br>\\begin{aligned}\n\\dfrac{\\text{d}A}{\\text{d}x} &= \\dfrac{4(36 - x^2) - 4x^2}{\\sqrt{36 - x^2}} \\cr\n&= \\dfrac{144 - 8x^2}{\\sqrt{36 - x^2}}\n\\end{aligned}",
                         "Set $\\dfrac{\\text{d}A}{\\text{d}x} = 0$ to find the stationary points:<br>\\begin{aligned}\n\\dfrac{144 - 8x^2}{\\sqrt{36 - x^2}} &= 0 \\cr\n144 - 8x^2 &= 0 \\cr\n8x^2 &= 144 \\cr\nx^2 &= 18\n\\end{aligned}<br>Since $x > 0$, we choose the positive square root:<br>\\begin{aligned}\nx &= \\sqrt{18} \\cr\n&= 3\\sqrt{2}\n\\end{aligned}",
                         "To fully justify that this stationary point is a maximum, we can examine the sign of the first derivative $\\dfrac{\\text{d}A}{\\text{d}x}$ around $x = 3\\sqrt{2}$:<br>For $x < 3\\sqrt{2}$, the numerator $(144 - 8x^2)$ is positive, so $\\dfrac{\\text{d}A}{\\text{d}x} > 0$.<br>For $x > 3\\sqrt{2}$, the numerator $(144 - 8x^2)$ is negative, so $\\dfrac{\\text{d}A}{\\text{d}x} < 0$.<br>Since the gradient changes from positive to negative, $x = 3\\sqrt{2}$ is a local maximum.",
-                        "Calculate the maximum area by substituting $x = 3\\sqrt{2}$ back into the area formula:<br>\\begin{aligned}\nA &= 4(3\\sqrt{2})\\sqrt{36 - (3\\sqrt{2})^2} \\cr\n&= 12\\sqrt{2}\\sqrt{18} \\cr\n&= 12\\sqrt{2}(3\\sqrt{2}) \\cr\n&= 72\n\\end{aligned}<br><br>Final Answer: $$72\\text{ in}^2$$"
+                        "Calculate the maximum area by substituting $x = 3\\sqrt{2}$ back into the area formula:<br>\\begin{aligned}\nA &= 4(3\\sqrt{2})\\sqrt{36 - (3\\sqrt{2})^2} \\cr\n&= 12\\sqrt{2}\\sqrt{18} \\cr\n&= 12\\sqrt{2}(3\\sqrt{2}) \\cr\n&= 72\n\\end{aligned}",
+                "Final Answer: $$72\\text{ in}^2$$"
                 ],
                 "pi_options": [
                         {
@@ -1390,7 +1391,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find the stationary points, we differentiate $A$ with respect to $x$ using the product rule and chain rule:<br>$$\\dfrac{\\text{d}A}{\\text{d}x} = 2\\sqrt{16 - x^2} + 2x \\cdot \\left(\\dfrac{-2x}{2\\sqrt{16 - x^2}}\\right)$$<br>$$\\dfrac{\\text{d}A}{\\text{d}x} = 2\\sqrt{16 - x^2} - \\dfrac{2x^2}{\\sqrt{16 - x^2}}$$<br>Combine these over a common denominator:<br>\\begin{aligned}\n\\dfrac{\\text{d}A}{\\text{d}x} &= \\dfrac{2(16 - x^2) - 2x^2}{\\sqrt{16 - x^2}} \\cr\n&= \\dfrac{32 - 4x^2}{\\sqrt{16 - x^2}}\n\\end{aligned}",
                         "Set $\\dfrac{\\text{d}A}{\\text{d}x} = 0$ to find the stationary points:<br>\\begin{aligned}\n\\dfrac{32 - 4x^2}{\\sqrt{16 - x^2}} &= 0 \\cr\n32 - 4x^2 &= 0 \\cr\n4x^2 &= 32 \\cr\nx^2 &= 8\n\\end{aligned}<br>Since $x > 0$, we choose the positive square root:<br>\\begin{aligned}\nx &= \\sqrt{8} \\cr\n&= 2\\sqrt{2}\n\\end{aligned}",
                         "To justify that this stationary point is a maximum, we can examine the sign of the first derivative $\\dfrac{\\text{d}A}{\\text{d}x}$:<br>For $x < 2\\sqrt{2}$, the numerator $(32 - 4x^2)$ is positive, so $\\dfrac{\\text{d}A}{\\text{d}x} > 0$.<br>For $x > 2\\sqrt{2}$, the numerator $(32 - 4x^2)$ is negative, so $\\dfrac{\\text{d}A}{\\text{d}x} < 0$.<br>Since the gradient changes from positive to negative, $x = 2\\sqrt{2}$ represents a local maximum.",
-                        "Calculate the maximum area by substituting $x = 2\\sqrt{2}$ back into the area equation:<br>\\begin{aligned}\nA &= 2(2\\sqrt{2})\\sqrt{16 - (2\\sqrt{2})^2} \\cr\n&= 4\\sqrt{2}\\sqrt{8} \\cr\n&= 4\\sqrt{2}(2\\sqrt{2}) \\cr\n&= 16\n\\end{aligned}<br>At this maximum, the dimensions of the rectangular pane are width $2x = 4\\sqrt{2}\\text{ m}$ and height $y = 2\\sqrt{2}\\text{ m}$.<br><br>Final Answer: $$16\\text{ m}^2$$"
+                        "Calculate the maximum area by substituting $x = 2\\sqrt{2}$ back into the area equation:<br>\\begin{aligned}\nA &= 2(2\\sqrt{2})\\sqrt{16 - (2\\sqrt{2})^2} \\cr\n&= 4\\sqrt{2}\\sqrt{8} \\cr\n&= 4\\sqrt{2}(2\\sqrt{2}) \\cr\n&= 16\n\\end{aligned}<br>At this maximum, the dimensions of the rectangular pane are width $2x = 4\\sqrt{2}\\text{ m}$ and height $y = 2\\sqrt{2}\\text{ m}$.",
+                "Final Answer: $$16\\text{ m}^2$$"
                 ],
                 "pi_options": [
                         {
@@ -1431,7 +1433,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find the value of $x$ that maximises this area, we differentiate $A$ with respect to $x$:<br>$$\\dfrac{\\text{d}A}{\\text{d}x} = 24 - 6x^2$$",
                         "Set the derivative equal to zero to locate the stationary points:<br>\\begin{aligned}\n24 - 6x^2 &= 0 \\cr\n6x^2 &= 24 \\cr\nx^2 &= 4\n\\end{aligned}<br>Since $x$ represents a physical half-width, $x > 0$. Therefore, we have $x = 2$.",
                         "To fully justify that this stationary point is a maximum, we find the second derivative:<br>$$\\dfrac{\\text{d}^2A}{\\text{d}x^2} = -12x$$<br>At $x = 2$, the second derivative is:<br>\\begin{aligned}\n\\dfrac{\\text{d}^2A}{\\text{d}x^2} &= -12(2) \\cr\n&= -24\n\\end{aligned}<br>Since $-24 < 0$, the point $x = 2$ is indeed a local maximum.",
-                        "Finally, calculate the maximum area by substituting $x = 2$ back into the area equation:<br>\\begin{aligned}\nA &= 24(2) - 2(2^3) \\cr\n&= 48 - 16 \\cr\n&= 32\n\\end{aligned}<br><br>Final Answer: $$32\\text{ m}^2$$"
+                        "Finally, calculate the maximum area by substituting $x = 2$ back into the area equation:<br>\\begin{aligned}\nA &= 24(2) - 2(2^3) \\cr\n&= 48 - 16 \\cr\n&= 32\n\\end{aligned}",
+                "Final Answer: $$32\\text{ m}^2$$"
                 ],
                 "pi_options": [
                         {
@@ -1473,7 +1476,8 @@ window.ALEVEL_QUESTIONS = [
                         "Set the derivative to zero:<br>\\begin{aligned}\n12x^2 - 96x + 144 &= 0 \\cr\n12(x^2 - 8x + 12) &= 0\n\\end{aligned}<br>Factoring the quadratic equation gives:<br>$$12(x - 2)(x - 6) = 0$$",
                         "This yields two solutions: $x = 2$ and $x = 6$.<br><br>Since $x = 6$ is outside our domain $0 < x < 6$ (and would leave zero base area), the only valid stationary point is $x = 2$.",
                         "To justify that $x = 2$ is a maximum, we use the second derivative test:<br>$$\\dfrac{\\text{d}^2V}{\\text{d}x^2} = 24x - 96$$<br>At $x = 2$:<br>\\begin{aligned}\n\\dfrac{\\text{d}^2V}{\\text{d}x^2} &= 24(2) - 96 \\cr\n&= -48\n\\end{aligned}<br>Since the second derivative is negative ($-48 < 0$), $x = 2$ is a local maximum.",
-                        "Substitute $x = 2$ back into the volume formula to find the maximum volume:<br>\\begin{aligned}\nV &= 4(2)^3 - 48(2)^2 + 144(2) \\cr\n&= 32 - 192 + 288 \\cr\n&= 128\n\\end{aligned}<br><br>Final Answer: \\begin{aligned}\nx &= 2\\text{ cm}, V \\cr\n&= 128\\text{ cm}^3\n\\end{aligned}"
+                        "Substitute $x = 2$ back into the volume formula to find the maximum volume:<br>\\begin{aligned}\nV &= 4(2)^3 - 48(2)^2 + 144(2) \\cr\n&= 32 - 192 + 288 \\cr\n&= 128\n\\end{aligned}",
+                "Final Answer: \\begin{aligned}\nx &= 2\\text{ cm}, V \\cr\n&= 128\\text{ cm}^3\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1513,7 +1517,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find the stationary points, we differentiate $A$ with respect to $\\theta$:<br>$$\\dfrac{\\text{d}A}{\\text{d}\\theta} = 100\\cos(2\\theta)$$",
                         "Set $\\dfrac{\\text{d}A}{\\text{d}\\theta} = 0$:<br>\\begin{aligned}\n100\\cos(2\\theta) &= 0 \\cr\n\\cos(2\\theta) &= 0\n\\end{aligned}<br>Given that $0 < \\theta < \\dfrac{\\pi}{2}$, we have $0 < 2\\theta < \\pi$. Within this range:<br>\\begin{aligned}\n2\\theta &= \\dfrac{\\pi}{2} \\cr\n\\theta &= \\dfrac{\\pi}{4}\n\\end{aligned}",
                         "To justify that this value of $\\theta$ yields a maximum, we find the second derivative of $A$:<br>$$\\dfrac{\\text{d}^2A}{\\text{d}\\theta^2} = -200\\sin(2\\theta)$$<br>Substituting $\\theta = \\dfrac{\\pi}{4}$ into the second derivative gives:<br>\\begin{aligned}\n\\dfrac{\\text{d}^2A}{\\text{d}\\theta^2} &= -200\\sin\\left(\\dfrac{\\pi}{2}\\right) \\cr\n&= -200(1) \\cr\n&= -200\n\\end{aligned}<br>Since the second derivative is negative ($-200 < 0$), $\\theta = \\dfrac{\\pi}{4}$ is indeed a maximum.",
-                        "Substitute $\\theta = \\dfrac{\\pi}{4}$ back into the area equation to find the maximum area:<br>\\begin{aligned}\nA &= 50\\sin\\left(2 \\cdot \\dfrac{\\pi}{4}\\right) \\cr\n&= 50\\sin\\left(\\dfrac{\\pi}{2}\\right) \\cr\n&= 50\n\\end{aligned}<br><br>Final Answer: \\begin{aligned}\n\\theta &= \\dfrac{\\pi}{4}, A \\cr\n&= 50\\text{ cm}^2\n\\end{aligned}"
+                        "Substitute $\\theta = \\dfrac{\\pi}{4}$ back into the area equation to find the maximum area:<br>\\begin{aligned}\nA &= 50\\sin\\left(2 \\cdot \\dfrac{\\pi}{4}\\right) \\cr\n&= 50\\sin\\left(\\dfrac{\\pi}{2}\\right) \\cr\n&= 50\n\\end{aligned}",
+                "Final Answer: \\begin{aligned}\n\\theta &= \\dfrac{\\pi}{4}, A \\cr\n&= 50\\text{ cm}^2\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1593,7 +1598,8 @@ window.ALEVEL_QUESTIONS = [
                         "Combining these two results into the original fraction yields the required identity:<br>$$\\tan(A+B) = \\dfrac{\\tan A + \\tan B}{1 - \\tan A \\tan B}$$",
                         "If $\\cos A \\cos B = 0$, then either $\\cos A = 0$ or $\\cos B = 0$. This implies that either $A$ or $B$ is an odd multiple of $90^\\circ$ (such as $90^\\circ$ or $270^\\circ$), where the tangent function itself is undefined, which makes the division step mathematically invalid.<br><br>If $\\tan A \\tan B = 1$, the denominator becomes $1 - 1 = 0$, resulting in division by zero. Geometrically, this occurs when $A+B$ is an odd multiple of $90^\\circ$, which is where $\\tan(A+B)$ is undefined.",
                         "To find the value when $\\tan A = 2$ and $\\tan B = 3$, we substitute these into the identity:<br>\\begin{aligned}\n\\tan(A+B) &= \\dfrac{2 + 3}{1 - (2)(3)} \\cr\n&= \\dfrac{5}{1 - 6} \\cr\n&= \\dfrac{5}{-5} \\cr\n&= -1\n\\end{aligned}",
-                        "Since $A$ and $B$ are acute angles ($0^\\circ < A, B < 90^\\circ$), their sum must lie in the range $0^\\circ < A+B < 180^\\circ$. Within this interval, the only angle satisfying $\\tan(A+B) = -1$ is in the second quadrant:<br>\\begin{aligned}\nA+B &= 180^\\circ - 45^\\circ \\cr\n&= 135^\\circ\n\\end{aligned}<br><br>Final Answer: \\begin{aligned}\n\\tan(A+B) &= -1, \\quad A+B \\cr\n&= 135^\\circ\n\\end{aligned}"
+                        "Since $A$ and $B$ are acute angles ($0^\\circ < A, B < 90^\\circ$), their sum must lie in the range $0^\\circ < A+B < 180^\\circ$. Within this interval, the only angle satisfying $\\tan(A+B) = -1$ is in the second quadrant:<br>\\begin{aligned}\nA+B &= 180^\\circ - 45^\\circ \\cr\n&= 135^\\circ\n\\end{aligned}",
+                "Final Answer: \\begin{aligned}\n\\tan(A+B) &= -1, \\quad A+B \\cr\n&= 135^\\circ\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1633,7 +1639,8 @@ window.ALEVEL_QUESTIONS = [
                         "To solve the equation $\\dfrac{1}{\\cos\\theta} - \\cos\\theta = 3\\sin\\theta$, we substitute our simplified identity for the left-hand side:<br>$$\\dfrac{\\sin^2\\theta}{\\cos\\theta} = 3\\sin\\theta$$",
                         "We must consider two cases to solve this equation without losing solutions by dividing by zero:<br><br>**Case 1:** $\\sin\\theta = 0$<br>Within the domain $0^\\circ \\le \\theta \\le 180^\\circ$, this yields:<br>\\begin{aligned}\n\\theta &= 0^\\circ \\quad \\text{and} \\quad \\theta \\cr\n&= 180^\\circ\n\\end{aligned}<br>Both of these are valid solutions because $\\cos(0^\\circ) = 1 \\ne 0$ and $\\cos(180^\\circ) = -1 \\ne 0$.",
                         "**Case 2:** $\\sin\\theta \\ne 0$<br>Since $\\sin\\theta \\ne 0$, we can safely divide both sides of the equation by $\\sin\\theta$:<br>\\begin{aligned}\n\\dfrac{\\sin\\theta}{\\cos\\theta} &= 3 \\cr\n\\tan\\theta &= 3\n\\end{aligned}",
-                        "Find the principal value within the range $0^\\circ \\le \\theta \\le 180^\\circ$ using a calculator:<br>$$\\theta = \\tan^{-1}(3) \\approx 71.6^\\circ$$<br>Combining both cases, our complete set of solutions is:<br>\\begin{aligned}\n\\theta &= 0^\\circ, \\quad \\theta \\approx 71.6^\\circ, \\quad \\theta \\cr\n&= 180^\\circ\n\\end{aligned}<br><br>Final Answer: $$\\theta = 0^\\circ, \\quad 71.6^\\circ, \\quad 180^\\circ$$"
+                        "Find the principal value within the range $0^\\circ \\le \\theta \\le 180^\\circ$ using a calculator:<br>$$\\theta = \\tan^{-1}(3) \\approx 71.6^\\circ$$<br>Combining both cases, our complete set of solutions is:<br>\\begin{aligned}\n\\theta &= 0^\\circ, \\quad \\theta \\approx 71.6^\\circ, \\quad \\theta \\cr\n&= 180^\\circ\n\\end{aligned}",
+                "Final Answer: $$\\theta = 0^\\circ, \\quad 71.6^\\circ, \\quad 180^\\circ$$"
                 ],
                 "pi_options": [
                         {
@@ -1673,7 +1680,8 @@ window.ALEVEL_QUESTIONS = [
                         "Expand the terms in our expression:<br>$$\\cos(3\\theta) = 2\\cos^3\\theta - \\cos\\theta - 2\\sin^2\\theta\\cos\\theta$$",
                         "Use the Pythagorean identity $\\sin^2\\theta = 1 - \\cos^2\\theta$ to replace the sine term:<br>$$\\cos(3\\theta) = 2\\cos^3\\theta - \\cos\\theta - 2(1 - \\cos^2\\theta)\\cos\\theta$$<br>$$\\cos(3\\theta) = 2\\cos^3\\theta - \\cos\\theta - 2\\cos\\theta + 2\\cos^3\\theta$$",
                         "Collect like terms to complete the algebraic proof:<br>\\begin{aligned}\n\\cos(3\\theta) &= (2\\cos^3\\theta + 2\\cos^3\\theta) + (-\\cos\\theta - 2\\cos\\theta) \\cr\n&= 4\\cos^3\\theta - 3\\cos\\theta\n\\end{aligned}",
-                        "Unlike geometric proofs that require right-angled triangles where angles are strictly acute (between $0^\\circ$ and $90^\\circ$), this algebraic proof relies solely on identities derived from the unit circle definition of trigonometric functions. Because these core identities are valid for all real angles, this proof is also valid for all real values of $\\theta$.<br><br>Final Answer: $$\\cos(3\\theta) = 4\\cos^3\\theta - 3\\cos\\theta$$"
+                        "Unlike geometric proofs that require right-angled triangles where angles are strictly acute (between $0^\\circ$ and $90^\\circ$), this algebraic proof relies solely on identities derived from the unit circle definition of trigonometric functions. Because these core identities are valid for all real angles, this proof is also valid for all real values of $\\theta$.",
+                "Final Answer: $$\\cos(3\\theta) = 4\\cos^3\\theta - 3\\cos\\theta$$"
                 ],
                 "pi_options": [
                         {
@@ -1713,7 +1721,8 @@ window.ALEVEL_QUESTIONS = [
                         "To evaluate $\\sin(15^\\circ)$, we choose $A = 45^\\circ$ and $B = 30^\\circ$ because we know their exact trigonometric values:<br>\\begin{aligned}\n\\sin(15^\\circ) &= \\sin(45^\\circ - 30^\\circ) \\cr\n&= \\sin(45^\\circ)\\cos(30^\\circ) - \\cos(45^\\circ)\\sin(30^\\circ)\n\\end{aligned}",
                         "Substitute the exact values into the formula:<br>\\begin{aligned}\n\\sin(45^\\circ) &= \\dfrac{\\sqrt{2}}{2}, \\quad \\cos(45^\\circ) \\cr\n&= \\dfrac{\\sqrt{2}}{2}, \\quad \\cos(30^\\circ) \\cr\n&= \\dfrac{\\sqrt{3}}{2}, \\quad \\sin(30^\\circ) \\cr\n&= \\dfrac{1}{2}\n\\end{aligned}<br>$$\\sin(15^\\circ) = \\left(\\dfrac{\\sqrt{2}}{2}\\right)\\left(\\dfrac{\\sqrt{3}}{2}\\right) - \\left(\\dfrac{\\sqrt{2}}{2}\\right)\\left(\\dfrac{1}{2}\\right)$$",
                         "Simplify the fractions:<br>\\begin{aligned}\n\\sin(15^\\circ) &= \\dfrac{\\sqrt{6}}{4} - \\dfrac{\\sqrt{2}}{4} \\cr\n&= \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}\n\\end{aligned}",
-                        "The second student's claim that $\\sin(-15^\\circ)$ is positive is incorrect. Because sine is an odd function, it has rotational symmetry about the origin, which means:<br>$$\\sin(-\\theta) = -\\sin(\\theta)$$<br>Therefore, $\\sin(-15^\\circ) = -\\sin(15^\\circ)$. Since $\\sin(15^\\circ) > 0$, $\\sin(-15^\\circ)$ must be negative.<br><br>Final Answer: $$\\sin(15^\\circ) = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$$"
+                        "The second student's claim that $\\sin(-15^\\circ)$ is positive is incorrect. Because sine is an odd function, it has rotational symmetry about the origin, which means:<br>$$\\sin(-\\theta) = -\\sin(\\theta)$$<br>Therefore, $\\sin(-15^\\circ) = -\\sin(15^\\circ)$. Since $\\sin(15^\\circ) > 0$, $\\sin(-15^\\circ)$ must be negative.",
+                "Final Answer: $$\\sin(15^\\circ) = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$$"
                 ],
                 "pi_options": [
                         {
@@ -1752,7 +1761,8 @@ window.ALEVEL_QUESTIONS = [
                         "Find the $y$-coordinate of point $B$ by substituting $x = -3 + h$ into the curve's equation:<br>$$y_B = (-3 + h)^3 - 27(-3 + h)$$<br>Using the binomial expansion for $(-3+h)^3$, we expand this expression as:<br>$$y_B = (h^3 - 9h^2 + 27h - 27) + 81 - 27h$$<br>$$y_B = h^3 - 9h^2 + 54$$<br>So, the coordinates of $B$ are $(-3 + h, \\, h^3 - 9h^2 + 54)$.",
                         "Calculate the gradient of the chord $AB$ using the gradient formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>$$m_{AB} = \\dfrac{(h^3 - 9h^2 + 54) - 54}{(-3 + h) - (-3)}$$<br>$$m_{AB} = \\dfrac{h^3 - 9h^2}{h}$$<br>Dividing each term in the numerator by $h$ (where $h \\ne 0$) gives the required gradient:<br>$$m_{AB} = h^2 - 9h$$",
                         "To show that $A$ is a stationary point, we consider the limit of the chord gradient $m_{AB}$ as $h \\to 0$. As $h$ approaches $0$, the chord $AB$ becomes the tangent to the curve at point $A$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\lim_{h \\to 0} (h^2 - 9h) \\cr\n&= 0^2 - 9(0) \\cr\n&= 0\n\\end{aligned}",
-                        "Since the derivative (gradient of the tangent) at $x = -3$ is $0$, the tangent line is completely horizontal. Therefore, point $A$ is a stationary point on the curve.<br><br>Final Answer: $$h^2 - 9h, \\quad \\lim_{h \\to 0} (h^2 - 9h) = 0$$"
+                        "Since the derivative (gradient of the tangent) at $x = -3$ is $0$, the tangent line is completely horizontal. Therefore, point $A$ is a stationary point on the curve.",
+                "Final Answer: $$h^2 - 9h, \\quad \\lim_{h \\to 0} (h^2 - 9h) = 0$$"
                 ],
                 "pi_options": [
                         {
@@ -1791,7 +1801,8 @@ window.ALEVEL_QUESTIONS = [
                         "Find the $y$-coordinate of point $P$ by substituting $x = 2$ into the curve's equation:<br>\\begin{aligned}\ny_P &= 2(2)^2 - 5(2) \\cr\n&= 8 - 10 \\cr\n&= -2\n\\end{aligned}<br>So, the coordinates of $P$ are $(2, -2)$.",
                         "Find the $y$-coordinate of point $Q$ by substituting $x = 2 + h$ into the curve's equation:<br>$$y_Q = 2(2 + h)^2 - 5(2 + h)$$<br>Expand the quadratic term and simplify:<br>$$y_Q = 2(4 + 4h + h^2) - 10 - 5h$$<br>\\begin{aligned}\ny_Q &= 8 + 8h + 2h^2 - 10 - 5h \\cr\n&= 2h^2 + 3h - 2\n\\end{aligned}<br>So, the coordinates of $Q$ are $(2 + h, \\, 2h^2 + 3h - 2)$.",
                         "Calculate the gradient of the chord $PQ$ using the formula $m = \\dfrac{y_Q - y_P}{x_Q - x_P}$:<br>$$m_{PQ} = \\dfrac{(2h^2 + 3h - 2) - (-2)}{(2 + h) - 2}$$<br>$$m_{PQ} = \\dfrac{2h^2 + 3h}{h}$$<br>Divide the numerator by $h$ (where $h \\ne 0$):<br>$$m_{PQ} = 2h + 3$$",
-                        "To find the gradient of the tangent to the curve at $P$, we evaluate the limit of the chord gradient $m_{PQ}$ as the point $Q$ moves infinitely close to $P$, which corresponds to $h \\to 0$:<br>\\begin{aligned}\n\\text{Gradient at } P &= \\lim_{h \\to 0} (2h + 3) \\cr\n&= 2(0) + 3 \\cr\n&= 3\n\\end{aligned}<br><br>Final Answer: $$2h + 3, \\quad \\lim_{h \\to 0} (2h + 3) = 3$$"
+                        "To find the gradient of the tangent to the curve at $P$, we evaluate the limit of the chord gradient $m_{PQ}$ as the point $Q$ moves infinitely close to $P$, which corresponds to $h \\to 0$:<br>\\begin{aligned}\n\\text{Gradient at } P &= \\lim_{h \\to 0} (2h + 3) \\cr\n&= 2(0) + 3 \\cr\n&= 3\n\\end{aligned}",
+                "Final Answer: $$2h + 3, \\quad \\lim_{h \\to 0} (2h + 3) = 3$$"
                 ],
                 "pi_options": [
                         {
@@ -1830,7 +1841,8 @@ window.ALEVEL_QUESTIONS = [
                         "Find the $y$-coordinate of point $B$ by substituting $x = 1 + h$ into the curve's equation:<br>$$y_B = 2(1 + h)^3 - 6(1 + h)$$<br>Expand the cubic term and simplify:<br>$$y_B = 2(1 + 3h + 3h^2 + h^3) - 6 - 6h$$<br>\\begin{aligned}\ny_B &= 2 + 6h + 6h^2 + 2h^3 - 6 - 6h \\cr\n&= 2h^3 + 6h^2 - 4\n\\end{aligned}<br>So, the coordinates of $B$ are $(1 + h, \\, 2h^3 + 6h^2 - 4)$.",
                         "Calculate the gradient of the line $AB$ using $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>$$m_{AB} = \\dfrac{(2h^3 + 6h^2 - 4) - (-4)}{(1 + h) - 1}$$<br>$$m_{AB} = \\dfrac{2h^3 + 6h^2}{h}$$<br>Divide the numerator by $h$ (where $h \\ne 0$):<br>$$m_{AB} = 2h^2 + 6h$$",
                         "To show that $A$ is a stationary point, we find the gradient of the tangent at $A$ by taking the limit of the chord gradient $m_{AB}$ as $h \\to 0$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\lim_{h \\to 0} (2h^2 + 6h) \\cr\n&= 2(0)^2 + 6(0) \\cr\n&= 0\n\\end{aligned}",
-                        "Since the derivative at $x = 1$ is $0$, the curve has a horizontal tangent line at $A$. Therefore, point $A$ is a stationary point on the curve.<br><br>Final Answer: $$2h^2 + 6h, \\quad \\lim_{h \\to 0} (2h^2 + 6h) = 0$$"
+                        "Since the derivative at $x = 1$ is $0$, the curve has a horizontal tangent line at $A$. Therefore, point $A$ is a stationary point on the curve.",
+                "Final Answer: $$2h^2 + 6h, \\quad \\lim_{h \\to 0} (2h^2 + 6h) = 0$$"
                 ],
                 "pi_options": [
                         {
@@ -1870,7 +1882,8 @@ window.ALEVEL_QUESTIONS = [
                         "Calculate the gradient of the line $AB$ using the formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>\\begin{aligned}\nm_{AB} &= \\dfrac{\\dfrac{4}{2 + h} - 2}{(2 + h) - 2} \\cr\n&= \\dfrac{\\dfrac{4}{2 + h} - 2}{h}\n\\end{aligned}",
                         "Simplify the numerator by finding a common denominator of $(2+h)$:<br>\\begin{aligned}\n\\dfrac{4}{2 + h} - 2 &= \\dfrac{4 - 2(2 + h)}{2 + h} \\cr\n&= \\dfrac{4 - 4 - 2h}{2 + h} \\cr\n&= \\dfrac{-2h}{2 + h}\n\\end{aligned}",
                         "Substitute this simplified fraction back into the gradient expression:<br>\\begin{aligned}\nm_{AB} &= \\dfrac{\\dfrac{-2h}{2 + h}}{h} \\cr\n&= \\dfrac{-2h}{h(2 + h)}\n\\end{aligned}<br>Cancel the factor of $h$ in the numerator and denominator (where $h \\ne 0$):<br>$$m_{AB} = -\\dfrac{2}{2 + h}$$",
-                        "To find the gradient of the tangent to the curve at $A$, we evaluate the limit of $m_{AB}$ as $h \\to 0$:<br>\\begin{aligned}\n\\text{Gradient at } A &= \\lim_{h \\to 0} \\left(-\\dfrac{2}{2 + h}\\right) \\cr\n&= -\\dfrac{2}{2 + 0} \\cr\n&= -1\n\\end{aligned}<br><br>Final Answer: $$-\\dfrac{2}{2 + h}, \\quad \\lim_{h \\to 0} \\left(-\\dfrac{2}{2 + h}\\right) = -1$$"
+                        "To find the gradient of the tangent to the curve at $A$, we evaluate the limit of $m_{AB}$ as $h \\to 0$:<br>\\begin{aligned}\n\\text{Gradient at } A &= \\lim_{h \\to 0} \\left(-\\dfrac{2}{2 + h}\\right) \\cr\n&= -\\dfrac{2}{2 + 0} \\cr\n&= -1\n\\end{aligned}",
+                "Final Answer: $$-\\dfrac{2}{2 + h}, \\quad \\lim_{h \\to 0} \\left(-\\dfrac{2}{2 + h}\\right) = -1$$"
                 ],
                 "pi_options": [
                         {
@@ -1911,7 +1924,8 @@ window.ALEVEL_QUESTIONS = [
                         "Calculate the gradient of the line $AB$ using the formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>\\begin{aligned}\nm_{AB} &= \\dfrac{\\sqrt{4 + h} - 2}{(4 + h) - 4} \\cr\n&= \\dfrac{\\sqrt{4 + h} - 2}{h}\n\\end{aligned}",
                         "To eliminate the $h$ in the denominator and simplify, we rationalise the numerator by multiplying both the numerator and the denominator by the conjugate expression $(\\sqrt{4 + h} + 2)$:<br>$$m_{AB} = \\dfrac{(\\sqrt{4 + h} - 2)(\\sqrt{4 + h} + 2)}{h(\\sqrt{4 + h} + 2)}$$",
                         "Expand the numerator using the difference of two squares identity, $(a-b)(a+b) = a^2 - b^2$:<br>\\begin{aligned}\nm_{AB} &= \\dfrac{(4 + h) - 4}{h(\\sqrt{4 + h} + 2)} \\cr\n&= \\dfrac{h}{h(\\sqrt{4 + h} + 2)}\n\\end{aligned}<br>Cancel the factor of $h$ (where $h \\ne 0$) to obtain the required expression:<br>$$m_{AB} = \\dfrac{1}{\\sqrt{4 + h} + 2}$$",
-                        "To find the gradient of the curve at $A$, we evaluate the limit of the simplified chord gradient $m_{AB}$ as $h \\to 0$:<br>\\begin{aligned}\n\\text{Gradient at } A &= \\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4 + h} + 2}\\right) \\cr\n&= \\dfrac{1}{\\sqrt{4 + 0} + 2} \\cr\n&= \\dfrac{1}{2 + 2} \\cr\n&= \\dfrac{1}{4} \\cr\n&= 0.25\n\\end{aligned}<br><br>Final Answer: $$\\dfrac{1}{\\sqrt{4+h} + 2}, \\quad \\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4+h} + 2}\\right) = 0.25$$"
+                        "To find the gradient of the curve at $A$, we evaluate the limit of the simplified chord gradient $m_{AB}$ as $h \\to 0$:<br>\\begin{aligned}\n\\text{Gradient at } A &= \\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4 + h} + 2}\\right) \\cr\n&= \\dfrac{1}{\\sqrt{4 + 0} + 2} \\cr\n&= \\dfrac{1}{2 + 2} \\cr\n&= \\dfrac{1}{4} \\cr\n&= 0.25\n\\end{aligned}",
+                "Final Answer: $$\\dfrac{1}{\\sqrt{4+h} + 2}, \\quad \\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4+h} + 2}\\right) = 0.25$$"
                 ],
                 "pi_options": [
                         {
@@ -1950,7 +1964,8 @@ window.ALEVEL_QUESTIONS = [
                         "Find the gradient of the line perpendicular to $AB$ using the negative reciprocal relationship $m_{\\perp} = -\\dfrac{1}{m_{AB}}$:<br>$$m_{\\perp} = -\\dfrac{1}{4}$$",
                         "Write the equation of the perpendicular line passing through the point $(3, 10)$ using the point-slope formula $y - y_1 = m(x - x_1)$:<br>$$y - 10 = -\\dfrac{1}{4}(x - 3)$$",
                         "Multiply the entire equation by $4$ to eliminate the fraction:<br>$$4(y - 10) = -(x - 3)$$<br>$$4y - 40 = -x + 3$$",
-                        "Rearrange the terms into the form $ax + by = c$ where $a$, $b$, and $c$ are integers:<br>$$x + 4y = 43$$<br><br>Final Answer: $$x + 4y = 43$$"
+                        "Rearrange the terms into the form $ax + by = c$ where $a$, $b$, and $c$ are integers:<br>$$x + 4y = 43$$",
+                "Final Answer: $$x + 4y = 43$$"
                 ],
                 "pi_options": [
                         {
@@ -1991,7 +2006,8 @@ window.ALEVEL_QUESTIONS = [
                         "Since $L_2$ intersects the $y$-axis at $(0, 5)$, its $y$-intercept is $5$. Write its equation in slope-intercept form $y = mx + c$:<br>$$y = -\\dfrac{1}{2}x + 5$$",
                         "To find the intersection point, set the two linear equations equal to each other:<br>$$2x + 6 = -\\dfrac{1}{2}x + 5$$<br>Multiply the entire equation by $2$ to clear the fraction:<br>$$4x + 12 = -x + 10$$",
                         "Solve for $x$ by collecting like terms:<br>\\begin{aligned}\n5x &= -2 \\cr\nx &= -\\dfrac{2}{5}\n\\end{aligned}",
-                        "Substitute $x = -\\dfrac{2}{5}$ back into the equation for $L_1$ to find the $y$-coordinate:<br>\\begin{aligned}\ny &= 2\\left(-\\dfrac{2}{5}\\right) + 6 \\cr\n&= -\\dfrac{4}{5} + \\dfrac{30}{5} \\cr\n&= \\dfrac{26}{5}\n\\end{aligned}<br><br>Final Answer: $$\\left(-\\dfrac{2}{5}, \\, \\dfrac{26}{5}\\right)$$"
+                        "Substitute $x = -\\dfrac{2}{5}$ back into the equation for $L_1$ to find the $y$-coordinate:<br>\\begin{aligned}\ny &= 2\\left(-\\dfrac{2}{5}\\right) + 6 \\cr\n&= -\\dfrac{4}{5} + \\dfrac{30}{5} \\cr\n&= \\dfrac{26}{5}\n\\end{aligned}",
+                "Final Answer: $$\\left(-\\dfrac{2}{5}, \\, \\dfrac{26}{5}\\right)$$"
                 ],
                 "pi_options": [
                         {
@@ -2030,7 +2046,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find the equation of the altitude from $X$ to $YZ$, we first need the gradient of the side $YZ$:<br>\\begin{aligned}\nm_{YZ} &= \\dfrac{3 - 10}{-1 - 5} \\cr\n&= \\dfrac{-7}{-6} \\cr\n&= \\dfrac{7}{6}\n\\end{aligned}",
                         "The altitude is a line perpendicular to $YZ$, so its gradient is the negative reciprocal of $m_{YZ}$:<br>$$m_{\\text{alt}} = -\\dfrac{6}{7}$$",
                         "Write the equation of this altitude passing through $X(1, 2)$ using the point-slope formula:<br>$$y - 2 = -\\dfrac{6}{7}(x - 1)$$",
-                        "Multiply by $7$ to clear the fraction and rearrange into the form $ax + by = c$:<br>$$7(y - 2) = -6(x - 1)$$<br>\\begin{aligned}\n7y - 14 &= -6x + 6 \\cr\n6x + 7y &= 20\n\\end{aligned}<br><br>Final Answer: $$6x + 7y = 20$$"
+                        "Multiply by $7$ to clear the fraction and rearrange into the form $ax + by = c$:<br>$$7(y - 2) = -6(x - 1)$$<br>\\begin{aligned}\n7y - 14 &= -6x + 6 \\cr\n6x + 7y &= 20\n\\end{aligned}",
+                "Final Answer: $$6x + 7y = 20$$"
                 ],
                 "pi_options": [
                         {
@@ -2068,7 +2085,8 @@ window.ALEVEL_QUESTIONS = [
                         "Multiply the entire equation by $3$ to eliminate the fraction:<br>\\begin{aligned}\n3y + 3 &= -2x + 8 \\cr\n2x + 3y - 5 &= 0\n\\end{aligned}",
                         "The shortest distance from a point $(x_1, y_1)$ to a line $Ax + By + C = 0$ is given by the formula:<br>$$d = \\dfrac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}$$",
                         "Substitute the coordinates of the origin $(0, 0)$ and the coefficients of line $L$ ($A=2, B=3, C=-5$) into the distance formula:<br>$$d = \\dfrac{|2(0) + 3(0) - 5|}{\\sqrt{2^2 + 3^2}}$$",
-                        "Evaluate the numerator and denominator to find the distance:<br>\\begin{aligned}\nd &= \\dfrac{|-5|}{\\sqrt{4 + 9}} \\cr\n&= \\dfrac{5}{\\sqrt{13}}\n\\end{aligned}<br><br>Final Answer: $$\\dfrac{5}{\\sqrt{13}}$$"
+                        "Evaluate the numerator and denominator to find the distance:<br>\\begin{aligned}\nd &= \\dfrac{|-5|}{\\sqrt{4 + 9}} \\cr\n&= \\dfrac{5}{\\sqrt{13}}\n\\end{aligned}",
+                "Final Answer: $$\\dfrac{5}{\\sqrt{13}}$$"
                 ],
                 "pi_options": [
                         {
@@ -2109,7 +2127,8 @@ window.ALEVEL_QUESTIONS = [
                         "Write the equation of the perpendicular bisector passing through the midpoint $M(1, 7)$:<br>$$y - 7 = -\\dfrac{3}{4}(x - 1)$$<br>Multiply by $4$ to clear the fraction:<br>\\begin{aligned}\n4y - 28 &= -3x + 3 \\cr\n3x + 4y &= 31\n\\end{aligned}",
                         "Solve the simultaneous equations to find the intersection point $E$. Substitute $y = 3x - 1$ into our perpendicular bisector equation:<br>$$3x + 4(3x - 1) = 31$$<br>\\begin{aligned}\n3x + 12x - 4 &= 31 \\cr\n15x &= 35\n\\end{aligned}",
                         "Simplify to find the $x$-coordinate:<br>\\begin{aligned}\nx &= \\dfrac{35}{15} \\cr\n&= \\dfrac{7}{3}\n\\end{aligned}",
-                        "Substitute $x = \\dfrac{7}{3}$ back into the equation $y = 3x - 1$ to find the $y$-coordinate:<br>\\begin{aligned}\ny &= 3\\left(\\dfrac{7}{3}\\right) - 1 \\cr\n&= 7 - 1 \\cr\n&= 6\n\\end{aligned}<br><br>Final Answer: $$\\left(\\dfrac{7}{3}, \\, 6\\right)$$"
+                        "Substitute $x = \\dfrac{7}{3}$ back into the equation $y = 3x - 1$ to find the $y$-coordinate:<br>\\begin{aligned}\ny &= 3\\left(\\dfrac{7}{3}\\right) - 1 \\cr\n&= 7 - 1 \\cr\n&= 6\n\\end{aligned}",
+                "Final Answer: $$\\left(\\dfrac{7}{3}, \\, 6\\right)$$"
                 ],
                 "pi_options": [
                         {

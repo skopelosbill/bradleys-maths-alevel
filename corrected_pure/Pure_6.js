@@ -14,7 +14,8 @@ window.ALEVEL_QUESTIONS = [
                         "Rewrite the absolute value inequality as a continuous double inequality to remove the modulus:<br>\\begin{aligned} |3x - 1| \\le 8 \\implies -8 \\le 3x - 1 \\le 8 \\end{aligned}",
                         "Solve the left-hand inequality to find the lower bound for $x$:<br>\\begin{aligned} -8 &\\le 3x - 1 \\\\\\ -7 &\\le 3x \\\\ x &\\ge -\\dfrac{7}{3} \\end{aligned}",
                         "Solve the right-hand inequality to find the upper bound for $x$:<br>\\begin{aligned} 3x - 1 &\\le 8 \\\\\\ 3x &\\le 9 \\\\ x &\\le 3 \\end{aligned}",
-                        "Combine the lower and upper bounds to write the final interval for $x$:<br>$$-\\dfrac{7}{3} \\le x \\le 3$$<br><br>Final Answer: $$-\\dfrac{7}{3} \\le x \\le 3$$"
+                        "Combine the lower and upper bounds to write the final interval for $x$:<br>$$-\\dfrac{7}{3} \\le x \\le 3$$",
+                "Final Answer: $$-\\dfrac{7}{3} \\le x \\le 3$$"
                 ],
                 "pi_options": [
                         {
@@ -51,7 +52,8 @@ window.ALEVEL_QUESTIONS = [
                         "An inequality of the form $|A| > k$ (where $k > 0$) splits into two separate, disjoint linear cases:<br>\\begin{aligned} 2x + 3 &> 7 \\quad \\text{or} \\quad 2x + 3 < -7 \\end{aligned}",
                         "Solve the first case, which represents the positive outer region:<br>\\begin{aligned} 2x + 3 &> 7 \\\\\\ 2x &> 4 \\\\ x &> 2 \\end{aligned}",
                         "Solve the second case, which represents the negative outer region:<br>\\begin{aligned} 2x + 3 &< -7 \\\\\\ 2x &< -10 \\\\ x &< -5 \\end{aligned}",
-                        "Combine the two disjoint intervals with 'or' to write the final solution:<br>$$x < -5 \\quad \\text{or} \\quad x > 2$$<br><br>Final Answer: $$x < -5 \\quad \\text{or} \\quad x > 2$$"
+                        "Combine the two disjoint intervals with 'or' to write the final solution:<br>$$x < -5 \\quad \\text{or} \\quad x > 2$$",
+                "Final Answer: $$x < -5 \\quad \\text{or} \\quad x > 2$$"
                 ],
                 "pi_options": [
                         {
@@ -89,7 +91,8 @@ window.ALEVEL_QUESTIONS = [
                         "Expand both sides of the quadratic inequality:<br>\\begin{aligned} x^2 - 4x + 4 &\\le 4x^2 + 4x + 1 \\end{aligned}",
                         "Rearrange the inequality to bring all terms to the right-hand side, keeping the coefficient of $x^2$ positive:<br>\\begin{aligned} 0 &\\le \\left(4x^2 + 4x + 1\\right) - \\left(x^2 - 4x + 4\\right) \\\\\\ 0 &\\le 3x^2 + 8x - 3 \\\\\\ 3x^2 + 8x - 3 &\\ge 0 \\end{aligned}",
                         "Find the critical values of the quadratic equation by solving $3x^2 + 8x - 3 = 0$ using the quadratic formula:<br>\\begin{aligned} x &= \\dfrac{-8 \\pm \\sqrt{8^2 - 4(3)(-3)}}{2(3)} \\\\\\ &= \\dfrac{-8 \\pm \\sqrt{64 + 36}}{6} \\\\\\ &= \\dfrac{-8 \\pm 10}{6} \\end{aligned}<br>This gives the critical points:<br>\\begin{aligned}\nx &= \\dfrac{1}{3} \\quad \\text{and} \\quad x \\cr\n&= -3\n\\end{aligned}",
-                        "Since the quadratic $3x^2 + 8x - 3$ has a positive leading coefficient, the inequality $3x^2 + 8x - 3 \\ge 0$ is satisfied in the outer regions of these critical points:<br>$$x \\le -3 \\quad \\text{or} \\quad x \\ge \\dfrac{1}{3}$$<br><br>Final Answer: $$x \\le -3 \\quad \\text{or} \\quad x \\ge \\dfrac{1}{3}$$"
+                        "Since the quadratic $3x^2 + 8x - 3$ has a positive leading coefficient, the inequality $3x^2 + 8x - 3 \\ge 0$ is satisfied in the outer regions of these critical points:<br>$$x \\le -3 \\quad \\text{or} \\quad x \\ge \\dfrac{1}{3}$$",
+                "Final Answer: $$x \\le -3 \\quad \\text{or} \\quad x \\ge \\dfrac{1}{3}$$"
                 ],
                 "pi_options": [
                         {
@@ -128,7 +131,8 @@ window.ALEVEL_QUESTIONS = [
                         "Factorise out the negative multiplier in the numerator to simplify the signs:<br>$$\\dfrac{-3(x - 4)}{x - 2} \\le 0$$",
                         "Divide both sides by the negative constant $-3$, remembering that multiplying or dividing by a negative number reverses the direction of the inequality:<br>$$\\dfrac{x - 4}{x - 2} \\ge 0$$",
                         "Identify the critical values of this inequality:<br>• $x = 4$ (where the numerator is zero, which is included because of $\\ge$).<br>• $x = 2$ (where the denominator is zero, which is strictly excluded as it is undefined).",
-                        "Analyse the signs of the fraction over the three regions created by these critical values:<br>• For $x < 2$: both $(x-4)$ and $(x-2)$ are negative, so their quotient is positive (satisfies $\\ge 0$).<br>• For $2 < x < 4$: $(x-4)$ is negative and $(x-2)$ is positive, so their quotient is negative (does not satisfy).<br>• For $x \\ge 4$: both terms are non-negative, so their quotient is positive (satisfies).<br><br>This gives the final solution set:<br>$$x < 2 \\quad \\text{or} \\quad x \\ge 4$$<br><br>Final Answer: $$x < 2 \\quad \\text{or} \\quad x \\ge 4$$"
+                        "Analyse the signs of the fraction over the three regions created by these critical values:<br>• For $x < 2$: both $(x-4)$ and $(x-2)$ are negative, so their quotient is positive (satisfies $\\ge 0$).<br>• For $2 < x < 4$: $(x-4)$ is negative and $(x-2)$ is positive, so their quotient is negative (does not satisfy).<br>• For $x \\ge 4$: both terms are non-negative, so their quotient is positive (satisfies).<br><br>This gives the final solution set:<br>$$x < 2 \\quad \\text{or} \\quad x \\ge 4$$",
+                "Final Answer: $$x < 2 \\quad \\text{or} \\quad x \\ge 4$$"
                 ],
                 "pi_options": [
                         {
@@ -165,7 +169,8 @@ window.ALEVEL_QUESTIONS = [
                         "Rewrite the absolute value inequality as a continuous double inequality to remove the modulus:<br>\\begin{aligned} -4 < x^2 - 5 < 4 \\end{aligned}",
                         "Solve the left-hand inequality to establish the first condition:<br>\\begin{aligned} -4 &< x^2 - 5 \\\\\\ 1 &< x^2 \\\\ x^2 &> 1 \\implies x < -1 \\quad \\text{or} \\quad x > 1 \\end{aligned}",
                         "Solve the right-hand inequality to establish the second condition:<br>\\begin{aligned} x^2 - 5 &< 4 \\\\ x^2 &< 9 \\implies -3 < x < 3 \\end{aligned}",
-                        "Intersect the two sets of intervals to find the values of $x$ that satisfy both conditions simultaneously:<br>• For the negative branch ($x < -1$) intersected with $-3 < x < 3$:<br>$$-3 < x < -1$$<br>• For the positive branch ($x > 1$) intersected with $-3 < x < 3$:<br>$$1 < x < 3$$<br><br>Combine these two disjoint intervals to write the final solution:<br>$$-3 < x < -1 \\quad \\text{or} \\quad 1 < x < 3$$<br><br>Final Answer: $$-3 < x < -1 \\quad \\text{or} \\quad 1 < x < 3$$"
+                        "Intersect the two sets of intervals to find the values of $x$ that satisfy both conditions simultaneously:<br>• For the negative branch ($x < -1$) intersected with $-3 < x < 3$:<br>$$-3 < x < -1$$<br>• For the positive branch ($x > 1$) intersected with $-3 < x < 3$:<br>$$1 < x < 3$$<br><br>Combine these two disjoint intervals to write the final solution:<br>$$-3 < x < -1 \\quad \\text{or} \\quad 1 < x < 3$$",
+                "Final Answer: $$-3 < x < -1 \\quad \\text{or} \\quad 1 < x < 3$$"
                 ],
                 "pi_options": [
                         {
@@ -202,7 +207,8 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "Sketch the exponential growth curve $y = 5^x$, noting that it rises rapidly in the first quadrant and approaches the negative $x$-axis as a horizontal asymptote. The reflection of this curve in the diagonal line $y = x$ represents the logarithmic inverse function $y = f(x)$:<br><br><img src='images/Pure/004256_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "Determine the intercepts of the curve $y = 5^x$ with both coordinate axes:<br>• For the $y$-intercept, substitute $x = 0$ into the equation:<br>\\begin{aligned}\ny &= 5^0 = 1 \\cr\n(0, 1)\n\\end{aligned}<br>• For the $x$-intercept, solve $5^x = 0$. Since $5^x > 0$ for all real $x$, there is no real solution. Thus, the curve does not intersect the $x$-axis.",
-                        "Reflecting a function in the line $y = x$ swaps the roles of $x$ and $y$, which is equivalent to finding its inverse function. Swapping $x$ and $y$ and rearranging to isolate $y$ gives:<br>\\begin{aligned} x &= 5^y \\\\ y &= \\log_5 x \\end{aligned}<br>So, the equation of the reflected curve is $f(x) = \\log_5 x$.<br><br>Final Answer: $$(0,1), \\quad f(x) = \\log_5 x$$"
+                        "Reflecting a function in the line $y = x$ swaps the roles of $x$ and $y$, which is equivalent to finding its inverse function. Swapping $x$ and $y$ and rearranging to isolate $y$ gives:<br>\\begin{aligned} x &= 5^y \\\\ y &= \\log_5 x \\end{aligned}<br>So, the equation of the reflected curve is $f(x) = \\log_5 x$.",
+                "Final Answer: $$(0,1), \\quad f(x) = \\log_5 x$$"
                 ],
                 "pi_options": [
                         {
@@ -240,7 +246,8 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "Sketch the exponential growth curve $y = 2^x - 4$. This is a vertical translation of $y = 2^x$ shifted downwards by $4$ units:<br><br><img src='images/Pure/004257_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "Find the $y$-intercept of the curve by substituting $x = 0$:<br>\\begin{aligned}\ny &= 2^0 - 4 = 1 - 4 = -3 \\cr\n(0, -3)\n\\end{aligned}<br>Find the $x$-intercept of the curve by setting $y = 0$ and solving for $x$:<br>$$\\begin{aligned} 2^x - 4 &= 0 \\\\\\ 2^x &= 4 \\\\\\ 2^x &= 2^2 \\implies x = 2 \\end{aligned}$$<br>This gives the $x$-intercept coordinates of $(2, 0)$.",
-                        "Determine the horizontal asymptote of the translated exponential curve. As $x \\to -\\infty$, the exponential term $2^x \\to 0$, which means:<br>\\begin{aligned}\ny \\to 0 - 4 \\cr\ny &= -4\n\\end{aligned}<br>Therefore, the horizontal asymptote is the line $y = -4$.<br><br>Final Answer: $$(0,-3), \\quad (2,0), \\quad y = -4$$"
+                        "Determine the horizontal asymptote of the translated exponential curve. As $x \\to -\\infty$, the exponential term $2^x \\to 0$, which means:<br>\\begin{aligned}\ny \\to 0 - 4 \\cr\ny &= -4\n\\end{aligned}<br>Therefore, the horizontal asymptote is the line $y = -4$.",
+                "Final Answer: $$(0,-3), \\quad (2,0), \\quad y = -4$$"
                 ],
                 "pi_options": [
                         {
@@ -278,7 +285,8 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "Sketch the logarithmic growth curve $y = \\ln(x + 3)$. This is a horizontal translation of $y = \\ln x$ shifted to the left by $3$ units:<br><br><img src='images/Pure/004258_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "Find the $y$-intercept of the curve by substituting $x = 0$:<br>\\begin{aligned}\ny &= \\ln(0 + 3) = \\ln 3 \\cr\n(0, \\ln 3)\n\\end{aligned}<br>Find the $x$-intercept of the curve by setting $y = 0$ and solving for $x$:<br>$$\\begin{aligned} \\ln(x + 3) &= 0 \\\\ x + 3 &= e^{0} \\\\ x + 3 &= 1 \\implies x = -2 \\end{aligned}$$<br>This gives the exact $x$-intercept coordinates of $(-2, 0)$.",
-                        "Determine the vertical asymptote of the translated logarithmic curve. The argument of the logarithm must be strictly positive, meaning $x + 3 > 0$. The vertical asymptote occurs exactly at the boundary where the argument is zero:<br>\\begin{aligned}\nx + 3 &= 0 \\cr\nx &= -3\n\\end{aligned}<br>Therefore, the vertical asymptote is the line $x = -3$.<br><br>Final Answer: $$(0,\\ln 3), \\quad (-2,0), \\quad x = -3$$"
+                        "Determine the vertical asymptote of the translated logarithmic curve. The argument of the logarithm must be strictly positive, meaning $x + 3 > 0$. The vertical asymptote occurs exactly at the boundary where the argument is zero:<br>\\begin{aligned}\nx + 3 &= 0 \\cr\nx &= -3\n\\end{aligned}<br>Therefore, the vertical asymptote is the line $x = -3$.",
+                "Final Answer: $$(0,\\ln 3), \\quad (-2,0), \\quad x = -3$$"
                 ],
                 "pi_options": [
                         {
@@ -316,7 +324,8 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "Sketch the standard logarithmic curve $y = \\ln x$. Its reflection in the $x$-axis is represented by the curve $y = g(x)$:<br><br><img src='images/Pure/004259_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "Determine the intercepts of the curve $y = \\ln x$ with both coordinate axes:<br>• For the $y$-intercept, we test $x = 0$. Since the domain is strictly $x > 0$, the function is undefined at $x = 0$. Thus, there is no $y$-intercept.<br>• For the $x$-intercept, set $y = 0$ and solve for $x$:<br>\\begin{aligned}\n\\ln x &= 0 \\cr\nx &= e^{0} = 1 \\cr\n(1, 0)\n\\end{aligned}<br>So, the curve has a single intercept at $(1, 0)$.",
-                        "Reflecting a function in the $x$-axis negates all of its $y$-values ($y \\mapsto -y$). Applying this to $y = \\ln x$ gives:<br>\\begin{aligned} -y &= \\ln x \\\\ y &= -\\ln x \\end{aligned}<br>Therefore, the expression for the reflected curve is $g(x) = -\\ln x$.<br><br>Final Answer: $$(1,0), \\quad g(x) = -\\ln x$$"
+                        "Reflecting a function in the $x$-axis negates all of its $y$-values ($y \\mapsto -y$). Applying this to $y = \\ln x$ gives:<br>\\begin{aligned} -y &= \\ln x \\\\ y &= -\\ln x \\end{aligned}<br>Therefore, the expression for the reflected curve is $g(x) = -\\ln x$.",
+                "Final Answer: $$(1,0), \\quad g(x) = -\\ln x$$"
                 ],
                 "pi_options": [
                         {
@@ -354,7 +363,8 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "Sketch the exponential decay and translation curve $y = 2 - e^{-x}$. The negative exponent $-x$ represents decay, and the negative sign in front of the exponential term reflects the graph vertically:<br><br><img src='images/Pure/004260_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "Find the $y$-intercept of the curve by substituting $x = 0$:<br>\\begin{aligned}\ny &= 2 - e^{0} = 2 - 1 = 1 \\cr\n(0, 1)\n\\end{aligned}<br>Find the $x$-intercept of the curve by setting $y = 0$ and solving for $x$:<br>$$\\begin{aligned} 2 - e^{-x} &= 0 \\\\ e^{-x} &= 2 \\\\\\ -x &= \\ln 2 \\implies x = -\\ln 2 \\end{aligned}$$<br>This gives the exact $x$-intercept coordinates of $(-\\ln 2, 0)$.",
-                        "Determine the horizontal asymptote of the curve. As $x \\to \\infty$, the decay term $e^{-x} \\to 0$, which means:<br>\\begin{aligned}\ny \\to 2 - 0 \\cr\ny &= 2\n\\end{aligned}<br>Therefore, the horizontal asymptote is the line $y = 2$.<br><br>Final Answer: $$(0,1), \\quad (-\\ln 2,0), \\quad y = 2$$"
+                        "Determine the horizontal asymptote of the curve. As $x \\to \\infty$, the decay term $e^{-x} \\to 0$, which means:<br>\\begin{aligned}\ny \\to 2 - 0 \\cr\ny &= 2\n\\end{aligned}<br>Therefore, the horizontal asymptote is the line $y = 2$.",
+                "Final Answer: $$(0,1), \\quad (-\\ln 2,0), \\quad y = 2$$"
                 ],
                 "pi_options": [
                         {
@@ -392,7 +402,8 @@ window.ALEVEL_QUESTIONS = [
                         "Bring all terms to one side of the equation. Do not divide both sides by $\\cos x$, as doing so assumes $\\cos x \\ne 0$ and leads to the loss of valid roots:<br>$$4\\sin x \\cos x - \\cos x = 0$$",
                         "Factorise out the common term $\\cos x$ to set up two solvable branches:<br>\\begin{aligned}\n\\cos x\\left(4\\sin x - 1\\right) &= 0 \\cr\n\\cos x &= 0 \\quad \\text{or} \\quad \\sin x = \\dfrac{1}{4}\n\\end{aligned}",
                         "Solve the first branch, $\\cos x = 0$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>$$x = 90.0^\\circ$$",
-                        "Solve the second branch, $\\sin x = \\dfrac{1}{4} = 0.25$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\sin^{-1}(0.25) \\\\ x &\\approx 14.5^\\circ \\end{aligned}<br>Find the second quadrant solution within the interval:<br>\\begin{aligned}\nx &= 180^\\circ - 14.5^\\circ \\cr\n&= 165.5^\\circ\n\\end{aligned}<br>Combining all solutions yields the final set of answers.<br><br>Final Answer: $$x = 14.5^\\circ, \\, 90.0^\\circ, \\, 165.5^\\circ$$"
+                        "Solve the second branch, $\\sin x = \\dfrac{1}{4} = 0.25$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\sin^{-1}(0.25) \\\\ x &\\approx 14.5^\\circ \\end{aligned}<br>Find the second quadrant solution within the interval:<br>\\begin{aligned}\nx &= 180^\\circ - 14.5^\\circ \\cr\n&= 165.5^\\circ\n\\end{aligned}<br>Combining all solutions yields the final set of answers.",
+                "Final Answer: $$x = 14.5^\\circ, \\, 90.0^\\circ, \\, 165.5^\\circ$$"
                 ],
                 "pi_options": [
                         {
@@ -430,7 +441,8 @@ window.ALEVEL_QUESTIONS = [
                         "Bring all terms to one side of the equation:<br>$$6\\sin x \\cos x - 2\\sin x = 0$$",
                         "Factorise out the common term $2\\sin x$ to set up two solvable branches:<br>\\begin{aligned}\n2\\sin x\\left(3\\cos x - 1\\right) &= 0 \\cr\n\\sin x &= 0 \\quad \\text{or} \\quad \\cos x = \\dfrac{1}{3}\n\\end{aligned}",
                         "Solve the first branch, $\\sin x = 0$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>$$x = 0.0^\\circ, \\, 180.0^\\circ$$<br>Because the inequality is inclusive of the boundaries, both solutions are valid.",
-                        "Solve the second branch, $\\cos x = \\dfrac{1}{3}$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}\\left(\\dfrac{1}{3}\\right) \\\\ x &\\approx 70.5^\\circ \\end{aligned}<br>Since cosine is negative in the second quadrant, there are no other solutions for $\\cos x = \\dfrac{1}{3}$ in the interval $[0^circ, 180^circ]$. Combining all branches yields the final set of answers.<br><br>Final Answer: $$x = 0.0^\\circ, \\, 70.5^\\circ, \\, 180.0^\\circ$$"
+                        "Solve the second branch, $\\cos x = \\dfrac{1}{3}$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}\\left(\\dfrac{1}{3}\\right) \\\\ x &\\approx 70.5^\\circ \\end{aligned}<br>Since cosine is negative in the second quadrant, there are no other solutions for $\\cos x = \\dfrac{1}{3}$ in the interval $[0^circ, 180^circ]$. Combining all branches yields the final set of answers.",
+                "Final Answer: $$x = 0.0^\\circ, \\, 70.5^\\circ, \\, 180.0^\\circ$$"
                 ],
                 "pi_options": [
                         {
@@ -469,7 +481,8 @@ window.ALEVEL_QUESTIONS = [
                         "Expand the brackets and bring all terms to one side to form the required quadratic equation:<br>\\begin{aligned}\n4\\cos^2 x - 2 &= \\cos x \\cr\n4\\cos^2 x - \\cos x - 2 &= 0\n\\end{aligned}",
                         "Apply the quadratic formula with $a = 4$, $b = -1$, and $c = -2$ to solve for $\\cos x$:<br>\\begin{aligned} \\cos x &= \\dfrac{-(-1) \\pm \\sqrt{(-1)^2 - 4(4)(-2)}}{2(4)} \\\\\\ &= \\dfrac{1 \\pm \\sqrt{1 + 32}}{8} \\\\\\ &= \\dfrac{1 \\pm \\sqrt{33}}{8} \\end{aligned}<br>This gives two possible values for $\\cos x$:<br>$$\\cos x \\approx 0.8431 \\quad \\text{or} \\quad \\cos x \\approx -0.5931$$",
                         "Solve the first case, $\\cos x \\approx 0.8431$, in the domain $0^\\circ \\le x \\le 360^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}(0.8431) \\\\ x &\\approx 32.5^\\circ, \\, 360^\\circ - 32.5^\\circ = 327.5^\\circ \\end{aligned}",
-                        "Solve the second case, $\\cos x \\approx -0.5931$, in the domain $0^\\circ \\le x \\le 360^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}(-0.5931) \\\\ x &\\approx 126.4^\\circ, \\, 360^\\circ - 126.4^\\circ = 233.6^\\circ \\end{aligned}<br>Combining all branches yields the final set of answers.<br><br>Final Answer: $$x = 32.5^\\circ, \\, 126.4^\\circ, \\, 233.6^\\circ, \\, 327.5^\\circ$$"
+                        "Solve the second case, $\\cos x \\approx -0.5931$, in the domain $0^\\circ \\le x \\le 360^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}(-0.5931) \\\\ x &\\approx 126.4^\\circ, \\, 360^\\circ - 126.4^\\circ = 233.6^\\circ \\end{aligned}<br>Combining all branches yields the final set of answers.",
+                "Final Answer: $$x = 32.5^\\circ, \\, 126.4^\\circ, \\, 233.6^\\circ, \\, 327.5^\\circ$$"
                 ],
                 "pi_options": [
                         {
@@ -509,7 +522,8 @@ window.ALEVEL_QUESTIONS = [
                         "Substitute $\\sin x = \\tan x \\cos x$ (as $\\cos x \\ne 0$ in the domain of tangent) to obtain the required form:<br>\\begin{aligned}\n\\tan x \\cos x\\left(2\\cos^2 x - 3\\right) &= 0 \\cr\n\\tan x\\left(2\\cos^2 x - 3\\right) &= 0\n\\end{aligned}",
                         "Set up the two branches to solve:<br>\\begin{aligned}\n\\tan x &= 0 \\quad \\text{or} \\quad 2\\cos^2 x - 3 \\cr\n&= 0\n\\end{aligned}",
                         "Solve the first branch, $\\tan x = 0$, in the domain $0 \\le x \\le 2\\pi$:<br>$$x = 0, \\, \\pi, \\, 2\\pi$$",
-                        "Solve the second branch, $2\\cos^2 x - 3 = 0 \\implies \\cos^2 x = 1.5$. Since $\\cos^2 x \\le 1$ for all real $x$, there are no real solutions from this branch. Combining the results yields the final answer.<br><br>Final Answer: $$x = 0, \\, \\pi, \\, 2\\pi$$"
+                        "Solve the second branch, $2\\cos^2 x - 3 = 0 \\implies \\cos^2 x = 1.5$. Since $\\cos^2 x \\le 1$ for all real $x$, there are no real solutions from this branch. Combining the results yields the final answer.",
+                "Final Answer: $$x = 0, \\, \\pi, \\, 2\\pi$$"
                 ],
                 "pi_options": [
                         {
@@ -547,7 +561,8 @@ window.ALEVEL_QUESTIONS = [
                         "Find the amplitude $R$ and the phase shift angle $\\alpha$:<br>$$\\begin{aligned} R &= \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5 \\\\\\ \\tan\\alpha &= \\dfrac{4}{3} \\implies \\alpha = \\tan^{-1}\\left(\\dfrac{4}{3}\\right) \\approx 53.1^\\circ \\end{aligned}$$<br>This gives the harmonic form: $5\\sin(x + 53.1^\\circ)$.",
                         "Substitute this harmonic form into the target equation and solve for the composite angle:<br>$$\\begin{aligned} 5\\sin(x + 53.1^\\circ) &= 2.5 \\\\\\ \\sin(x + 53.1^\\circ) &= 0.5 \\end{aligned}$$",
                         "Let $u = x + 53.1^\\circ$. Since the domain is $0^\\circ \\le x \\le 360^\\circ$, the search interval for $u$ is shifted to $53.1^\\circ \\le u \\le 413.1^\\circ$. Solve $\\sin u = 0.5$ in this interval:<br>$$u = 150.0^\\circ, \\, 390.0^\\circ$$<br>(Note that $u = 30.0^\\circ$ is outside our shifted search interval.)",
-                        "Substitute $u = x + 53.1^\\circ$ back to solve for $x$:<br>\\begin{aligned} x + 53.1^\\circ = 150.0^\\circ &\\implies x = 96.9^\\circ \\\\ x + 53.1^\\circ = 390.0^\\circ &\\implies x = 336.9^\\circ \\end{aligned}<br><br>Final Answer: $$5\\sin(x + 53.1^\\circ), \\quad x = 96.9^\\circ, \\, 336.9^\\circ$$"
+                        "Substitute $u = x + 53.1^\\circ$ back to solve for $x$:<br>\\begin{aligned} x + 53.1^\\circ = 150.0^\\circ &\\implies x = 96.9^\\circ \\\\ x + 53.1^\\circ = 390.0^\\circ &\\implies x = 336.9^\\circ \\end{aligned}",
+                "Final Answer: $$5\\sin(x + 53.1^\\circ), \\quad x = 96.9^\\circ, \\, 336.9^\\circ$$"
                 ],
                 "pi_options": [
                         {
@@ -587,7 +602,8 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiate the curve's equation implicitly with respect to $x$ to find $\\dfrac{\\text{d}y}{\\text{d}x}$. Remember to apply the product rule to the $-7xy$ term:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}\\left(y^4\\right) - \\dfrac{\\text{d}}{\\text{d}x}\\left(7xy\\right) + \\dfrac{\\text{d}}{\\text{d}x}\\left(x^3\\right) &= \\dfrac{\\text{d}}{\\text{d}x}(-5) \\\\\\ 4y^3 \\dfrac{\\text{d}y}{\\text{d}x} - 7\\left(y + x\\dfrac{\\text{d}y}{\\text{d}x}\\right) + 3x^2 &= 0 \\\\\\ 4y^3 \\dfrac{\\text{d}y}{\\text{d}x} - 7y - 7x\\dfrac{\\text{d}y}{\\text{d}x} + 3x^2 &= 0 \\end{aligned}",
                         "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ as a single fraction:<br>\\begin{aligned} \\left(4y^3 - 7x\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 7y - 3x^2 \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7y - 3x^2}{4y^3 - 7x} \\end{aligned}",
                         "Substitute $y = 1$ into the gradient expression to simplify it:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{7 - 3x^2}{4 - 7x}$$",
-                        "Evaluate the gradient at each of the three points:<br>• At $(1, 1)$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(1)^2}{4 - 7(1)} \\cr\n&= \\dfrac{4}{-3} \\cr\n&= -\\dfrac{4}{3}\n\\end{aligned}<br>• At $(2, 1)$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(2)^2}{4 - 7(2)} \\cr\n&= \\dfrac{7 - 12}{4 - 14} \\cr\n&= \\dfrac{-5}{-10} \\cr\n&= \\dfrac{1}{2}\n\\end{aligned}<br>• At $(-3, 1)$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(-3)^2}{4 - 7(-3)} \\cr\n&= \\dfrac{7 - 27}{4 + 21} \\cr\n&= \\dfrac{-20}{25} \\cr\n&= -\\dfrac{4}{5}\n\\end{aligned}<br><br>Final Answer: $$-\\dfrac{4}{3}, \\quad \\dfrac{1}{2}, \\quad -\\dfrac{4}{5}$$"
+                        "Evaluate the gradient at each of the three points:<br>• At $(1, 1)$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(1)^2}{4 - 7(1)} \\cr\n&= \\dfrac{4}{-3} \\cr\n&= -\\dfrac{4}{3}\n\\end{aligned}<br>• At $(2, 1)$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(2)^2}{4 - 7(2)} \\cr\n&= \\dfrac{7 - 12}{4 - 14} \\cr\n&= \\dfrac{-5}{-10} \\cr\n&= \\dfrac{1}{2}\n\\end{aligned}<br>• At $(-3, 1)$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(-3)^2}{4 - 7(-3)} \\cr\n&= \\dfrac{7 - 27}{4 + 21} \\cr\n&= \\dfrac{-20}{25} \\cr\n&= -\\dfrac{4}{5}\n\\end{aligned}",
+                "Final Answer: $$-\\dfrac{4}{3}, \\quad \\dfrac{1}{2}, \\quad -\\dfrac{4}{5}$$"
                 ],
                 "pi_options": [
                         {
@@ -626,7 +642,8 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiate the curve's equation implicitly with respect to $x$. Apply the product rule and chain rule to the $2x \\ln y$ term:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}\\left(y^2\\right) + \\dfrac{\\text{d}}{\\text{d}x}\\left(2x \\ln y\\right) &= \\dfrac{\\text{d}}{\\text{d}x}\\left(x^2\\right) \\\\\\ 2y \\dfrac{\\text{d}y}{\\text{d}x} + 2\\ln y + 2x \\cdot \\left(\\dfrac{1}{y}\\dfrac{\\text{d}y}{\\text{d}x}\\right) &= 2x \\end{aligned}",
                         "Group and factorise the terms containing $\\dfrac{\\text{d}y}{\\text{d}x}$:<br>\\begin{aligned} \\left(2y + \\dfrac{2x}{y}\\right)\\dfrac{\\text{d}y}{\\text{d}x} + 2\\ln y &= 2x \\\\\\ \\left(2y + \\dfrac{2x}{y}\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 2x - 2\\ln y \\end{aligned}",
                         "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ as a single fraction:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2x - 2\\ln y}{2y + \\dfrac{2x}{y}}$$",
-                        "Substitute $x = 1$ and $y = 1$ into the gradient expression and simplify to find the exact value:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{2(1) - 2\\ln(1)}{2(1) + \\dfrac{2(1)}{1}} \\cr\n&= \\dfrac{2 - 0}{2 + 2} \\cr\n&= \\dfrac{2}{4} \\cr\n&= \\dfrac{1}{2}\n\\end{aligned}<br><br>Final Answer: $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{2}$$"
+                        "Substitute $x = 1$ and $y = 1$ into the gradient expression and simplify to find the exact value:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{2(1) - 2\\ln(1)}{2(1) + \\dfrac{2(1)}{1}} \\cr\n&= \\dfrac{2 - 0}{2 + 2} \\cr\n&= \\dfrac{2}{4} \\cr\n&= \\dfrac{1}{2}\n\\end{aligned}",
+                "Final Answer: $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{2}$$"
                 ],
                 "pi_options": [
                         {
@@ -663,7 +680,8 @@ window.ALEVEL_QUESTIONS = [
                         "Verify that $P\\left(1.5, \\dfrac{1}{12}\\pi\\right)$ lies on the curve by substituting $x = 1.5$ and $y = \\dfrac{1}{12}\\pi$ into the equation:<br>\\begin{aligned} \\sin\\left(2 \\cdot \\dfrac{1}{12}\\pi\\right) &= 1.5 - 1 \\\\\\ \\sin\\left(\\dfrac{1}{6}\\pi\\right) &= 0.5 \\\\\\ \\dfrac{1}{2} &= \\dfrac{1}{2} \\end{aligned}<br>Since LHS = RHS, the point $P$ lies on the curve.",
                         "Differentiate both sides of the equation implicitly with respect to $x$. Use the chain rule on the $\\sin(2y)$ term:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}\\left(\\sin(2y)\\right) &= \\dfrac{\\text{d}}{\\text{d}x}(x - 1) \\\\\\ 2\\cos(2y)\\dfrac{\\text{d}y}{\\text{d}x} &= 1 \\end{aligned}",
                         "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ as a single fraction:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{2\\cos(2y)}$$",
-                        "Substitute $y = \\dfrac{1}{12}\\pi$ into the gradient expression and evaluate. Ensure your calculator is set to radians:<br>$$\\begin{aligned} 2y &= 2\\left(\\dfrac{1}{12}\\pi\\right) = \\dfrac{1}{6}\\pi \\\\\\ \\cos\\left(\\dfrac{1}{6}\\pi\\right) &= \\dfrac{\\sqrt{3}}{2} \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{1}{2 \\cdot \\dfrac{\\sqrt{3}}{2}} = \\dfrac{1}{\\sqrt{3}} = \\dfrac{\\sqrt{3}}{3} \\end{aligned}$$<br><br>Final Answer: $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{\\sqrt{3}}{3}$$"
+                        "Substitute $y = \\dfrac{1}{12}\\pi$ into the gradient expression and evaluate. Ensure your calculator is set to radians:<br>$$\\begin{aligned} 2y &= 2\\left(\\dfrac{1}{12}\\pi\\right) = \\dfrac{1}{6}\\pi \\\\\\ \\cos\\left(\\dfrac{1}{6}\\pi\\right) &= \\dfrac{\\sqrt{3}}{2} \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{1}{2 \\cdot \\dfrac{\\sqrt{3}}{2}} = \\dfrac{1}{\\sqrt{3}} = \\dfrac{\\sqrt{3}}{3} \\end{aligned}$$",
+                "Final Answer: $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{\\sqrt{3}}{3}$$"
                 ],
                 "pi_options": [
                         {
@@ -702,7 +720,8 @@ window.ALEVEL_QUESTIONS = [
                         "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ and simplify the fraction by dividing numerator and denominator by $2$:<br>\\begin{aligned} 4y\\dfrac{\\text{d}y}{\\text{d}x} &= 4 - 2x \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{4 - 2x}{4y} = \\dfrac{2 - x}{2y} \\end{aligned}",
                         "To find the stationary points, set the gradient expression $\\dfrac{\\text{d}y}{\\text{d}x} = 0$:<br>\\begin{aligned}\n\\dfrac{2 - x}{2y} &= 0 \\cr\n2 - x &= 0 \\cr\nx &= 2\n\\end{aligned}<br>(Note that $y \\ne 0$ because the gradient is undefined where $y = 0$.)",
                         "Substitute $x = 2$ back into the original implicit equation of the curve to solve for $y$:<br>\\begin{aligned} x^2 + 2y^2 &= 4x \\\\\\ 2^2 + 2y^2 &= 4(2) \\\\\\ 4 + 2y^2 &= 8 \\\\\\ 2y^2 &= 4 \\\\ y^2 &= 2 \\implies y = \\pm\\sqrt{2} \\end{aligned}",
-                        "Write down the exact coordinates of the two stationary points:<br>$$(2, \\sqrt{2}) \\quad \\text{and} \\quad (2, -\\sqrt{2})$$<br><br>Final Answer: $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2 - x}{2y}, \\quad (2, \\pm\\sqrt{2})$$"
+                        "Write down the exact coordinates of the two stationary points:<br>$$(2, \\sqrt{2}) \\quad \\text{and} \\quad (2, -\\sqrt{2})$$",
+                "Final Answer: $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2 - x}{2y}, \\quad (2, \\pm\\sqrt{2})$$"
                 ],
                 "pi_options": [
                         {
@@ -740,7 +759,8 @@ window.ALEVEL_QUESTIONS = [
                         "Factorise the quadratic equation to find the roots:<br>\\begin{aligned}\n(x - 4)(x + 1) &= 0 \\cr\nx &= 4 \\quad \\text{or} \\quad x = -1\n\\end{aligned}<br>Since the question states $x > 0$, we discard $x = -1$. The coordinates of the point are $(4, 1)$.",
                         "Differentiate the curve's equation implicitly with respect to $x$. Use the product rule on the $x^2y^2$ term:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}\\left(x^2y^2\\right) - \\dfrac{\\text{d}}{\\text{d}x}(3x) + \\dfrac{\\text{d}}{\\text{d}x}(2y) &= 0 \\\\\\ 2xy^2 + 2x^2y\\dfrac{\\text{d}y}{\\text{d}x} - 3 + 2\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\end{aligned}",
                         "Group and factorise the terms containing $\\dfrac{\\text{d}y}{\\text{d}x}$:<br>\\begin{aligned} \\left(2xy^2 - 3\\right) + \\left(2x^2y + 2\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\\\\\ \\left(2x^2y + 2\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 3 - 2xy^2 \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{3 - 2xy^2}{2x^2y + 2} \\end{aligned}",
-                        "Substitute $x = 4$ and $y = 1$ into the gradient expression and simplify to find the exact value:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{3 - 2(4)(1)^2}{2(16)(1) + 2} \\cr\n&= \\dfrac{3 - 8}{32 + 2} \\cr\n&= -\\dfrac{5}{34}\n\\end{aligned}<br><br>Final Answer: $$(4,1), \\quad \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{5}{34}$$"
+                        "Substitute $x = 4$ and $y = 1$ into the gradient expression and simplify to find the exact value:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{3 - 2(4)(1)^2}{2(16)(1) + 2} \\cr\n&= \\dfrac{3 - 8}{32 + 2} \\cr\n&= -\\dfrac{5}{34}\n\\end{aligned}",
+                "Final Answer: $$(4,1), \\quad \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{5}{34}$$"
                 ],
                 "pi_options": [
                         {
@@ -776,7 +796,8 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "Convert the surd and the reciprocal fraction into standard index form using $x^{1/2} = \\sqrt{x}$ and $x^{-n} = \\dfrac{1}{x^n}$:<br>\\begin{aligned}\n6\\sqrt{x} &= 6x^{1/2} \\quad \\text{and} \\quad \\dfrac{4}{x^3} \\cr\n&= 4x^{-3}\n\\end{aligned}",
                         "Substitute these index forms into the integral and integrate term-by-term using the power rule $\\int x^n \\,\\text{d}x = \\dfrac{x^{n+1}}{n+1}$:<br>\\begin{aligned} \\int \\left( 6x^{1/2} - 4x^{-3} \\right) \\,\\text{d}x &= 6\\int x^{1/2} \\,\\text{d}x - 4\\int x^{-3} \\,\\text{d}x \\\\\\ &= 6 \\cdot \\left( \\dfrac{2}{3}x^{3/2} \\right) - 4 \\cdot \\left( \\dfrac{x^{-2}}{-2} \\right) + C \\\\\\ &= 4x^{3/2} + 2x^{-2} + C \\end{aligned}<br>where $C$ is the constant of integration.",
-                        "Write the final result with simplified positive exponents if required:<br>$$4x^{3/2} + \\dfrac{2}{x^2} + C$$<br><br>Final Answer: $$4x^{3/2} + \\dfrac{2}{x^2} + C$$"
+                        "Write the final result with simplified positive exponents if required:<br>$$4x^{3/2} + \\dfrac{2}{x^2} + C$$",
+                "Final Answer: $$4x^{3/2} + \\dfrac{2}{x^2} + C$$"
                 ],
                 "pi_options": [
                         {
@@ -814,7 +835,8 @@ window.ALEVEL_QUESTIONS = [
                         "Integrate the terms step-by-step using the power rule:<br>\\begin{aligned} \\int_{1}^{4} \\left( 3x^{-1/2} + 2x^{-2} \\right) \\,\\text{d}x &= \\left[ 3 \\cdot \\left( 2x^{1/2} \\right) + 2 \\cdot \\left( \\dfrac{x^{-1}}{-1} \\right) \\right]_{1}^{4} \\\\\\ &= \\left[ 6x^{1/2} - 2x^{-1} \\right]_{1}^{4} \\\\\\ &= \\left[ 6\\sqrt{x} - \\dfrac{2}{x} \\right]_{1}^{4} \\end{aligned}",
                         "Substitute the upper limit $x = 4$ into the integrated expression:<br>\\begin{aligned}\n\\text{Upper Limit} &= 6\\sqrt{4} - \\dfrac{2}{4} \\cr\n&= 6(2) - \\dfrac{1}{2} \\cr\n&= 12 - \\dfrac{1}{2} \\cr\n&= \\dfrac{23}{2}\n\\end{aligned}",
                         "Substitute the lower limit $x = 1$ into the integrated expression:<br>\\begin{aligned}\n\\text{Lower Limit} &= 6\\sqrt{1} - \\dfrac{2}{1} \\cr\n&= 6(1) - 2 \\cr\n&= 4\n\\end{aligned}",
-                        "Subtract the lower limit evaluation from the upper limit evaluation to find the final value:<br>\\begin{aligned}\n\\text{Value} &= \\dfrac{23}{2} - 4 \\cr\n&= \\dfrac{23}{2} - \\dfrac{8}{2} \\cr\n&= \\dfrac{15}{2}\n\\end{aligned}<br><br>Final Answer: $$\\dfrac{15}{2}$$"
+                        "Subtract the lower limit evaluation from the upper limit evaluation to find the final value:<br>\\begin{aligned}\n\\text{Value} &= \\dfrac{23}{2} - 4 \\cr\n&= \\dfrac{23}{2} - \\dfrac{8}{2} \\cr\n&= \\dfrac{15}{2}\n\\end{aligned}",
+                "Final Answer: $$\\dfrac{15}{2}$$"
                 ],
                 "pi_options": [
                         {
@@ -853,7 +875,8 @@ window.ALEVEL_QUESTIONS = [
                         "Express the gradient function in standard index form to prepare for integration:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = 2x^{1/2} + 3x^{-2}$$",
                         "Integrate the gradient function with respect to $x$ to find the general equation of the curve, adding the constant of integration $C$:<br>\\begin{aligned} y &= \\int \\left( 2x^{1/2} + 3x^{-2} \\right) \\,\\text{d}x \\\\\\ &= 2 \\cdot \\left( \\dfrac{2}{3}x^{3/2} \\right) + 3 \\cdot \\left( \\dfrac{x^{-1}}{-1} \\right) + C \\\\\\ &= \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + C \\end{aligned}",
                         "Substitute the coordinates of the point $(1, 5)$ into the general equation to solve for the constant $C$:<br>\\begin{aligned} 5 &= \\dfrac{4}{3}(1)^{3/2} - \\dfrac{3}{1} + C \\\\\\ 5 &= \\dfrac{4}{3} - 3 + C \\\\\\ 5 &= -\\dfrac{5}{3} + C \\\\ C &= 5 + \\dfrac{5}{3} = \\dfrac{20}{3} \\end{aligned}",
-                        "Substitute $C = \\dfrac{20}{3}$ back into the equation to obtain the final equation of the curve:<br>$$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + \\dfrac{20}{3}$$<br><br>Final Answer: $$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + \\dfrac{20}{3}$$"
+                        "Substitute $C = \\dfrac{20}{3}$ back into the equation to obtain the final equation of the curve:<br>$$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + \\dfrac{20}{3}$$",
+                "Final Answer: $$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + \\dfrac{20}{3}$$"
                 ],
                 "pi_options": [
                         {
@@ -890,7 +913,8 @@ window.ALEVEL_QUESTIONS = [
                         "Simplify the integrand first by dividing each term in the numerator by the denominator $x$ independently:<br>\\begin{aligned} \\dfrac{3x^3 - 2\\sqrt{x}}{x} &= \\dfrac{3x^3}{x} - \\dfrac{2x^{1/2}}{x} \\\\\\ &= 3x^2 - 2x^{-1/2} \\end{aligned}",
                         "Substitute this simplified expression into the integral:<br>$$\\int \\dfrac{3x^3 - 2\\sqrt{x}}{x} \\,\\text{d}x = \\int \\left( 3x^2 - 2x^{-1/2} \\right) \\,\\text{d}x$$",
                         "Integrate term-by-term using the standard power rule, adding the constant of integration $C$ at the end:<br>\\begin{aligned} \\int \\left( 3x^2 - 2x^{-1/2} \\right) \\,\\text{d}x &= 3\\int x^2 \\,\\text{d}x - 2\\int x^{-1/2} \\,\\text{d}x \\\\\\ &= 3 \\cdot \\left( \\dfrac{x^3}{3} \\right) - 2 \\cdot \\left( 2x^{1/2} \\right) + C \\\\\\ &= x^3 - 4x^{1/2} + C \\end{aligned}",
-                        "Write the final expression using standard surd form if required:<br>$$x^3 - 4\\sqrt{x} + C$$<br><br>Final Answer: $$x^3 - 4\\sqrt{x} + C$$"
+                        "Write the final expression using standard surd form if required:<br>$$x^3 - 4\\sqrt{x} + C$$",
+                "Final Answer: $$x^3 - 4\\sqrt{x} + C$$"
                 ],
                 "pi_options": [
                         {
@@ -929,7 +953,8 @@ window.ALEVEL_QUESTIONS = [
                         "Set up the definite integral for the area under the curve between these two boundaries:<br>$$A = \\int_{0}^{9} \\left( 3x^{1/2} - x \\right) \\,\\text{d}x$$",
                         "Integrate the expression using the power rule:<br>\\begin{aligned} A &= \\left[ 3 \\cdot \\left( \\dfrac{2}{3}x^{3/2} \\right) - \\dfrac{x^2}{2} \\right]_{0}^{9} \\\\\\ &= \\left[ 2x^{3/2} - \\dfrac{1}{2}x^2 \\right]_{0}^{9} \\end{aligned}",
                         "Substitute the upper limit $x = 9$ into the integrated expression:<br>\\begin{aligned}\n\\text{Upper Limit} &= 2(9)^{3/2} - \\dfrac{9^2}{2} \\cr\n&= 2(27) - \\dfrac{81}{2} \\cr\n&= 54 - \\dfrac{81}{2} \\cr\n&= \\dfrac{108}{2} - \\dfrac{81}{2} \\cr\n&= \\dfrac{27}{2}\n\\end{aligned}",
-                        "Substitute the lower limit $x = 0$ into the integrated expression:<br>\\begin{aligned}\n\\text{Lower Limit} &= 2(0)^{3/2} - \\dfrac{0^2}{2} \\cr\n&= 0\n\\end{aligned}<br>Subtracting the lower limit from the upper limit gives the exact area of the region:<br>\\begin{aligned}\nA &= \\dfrac{27}{2} - 0 \\cr\n&= \\dfrac{27}{2}\n\\end{aligned}<br><br>Final Answer: $$(0,0), \\quad (9,0), \\quad \\text{Area} = \\dfrac{27}{2}$$"
+                        "Substitute the lower limit $x = 0$ into the integrated expression:<br>\\begin{aligned}\n\\text{Lower Limit} &= 2(0)^{3/2} - \\dfrac{0^2}{2} \\cr\n&= 0\n\\end{aligned}<br>Subtracting the lower limit from the upper limit gives the exact area of the region:<br>\\begin{aligned}\nA &= \\dfrac{27}{2} - 0 \\cr\n&= \\dfrac{27}{2}\n\\end{aligned}",
+                "Final Answer: $$(0,0), \\quad (9,0), \\quad \\text{Area} = \\dfrac{27}{2}$$"
                 ],
                 "pi_options": [
                         {
@@ -969,7 +994,8 @@ window.ALEVEL_QUESTIONS = [
                         "Now, differentiate the equation of the curve implicitly with respect to $x$. Apply the product rule carefully to the term $-xy^2$:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}(x^2) - \\dfrac{\\text{d}}{\\text{d}x}(xy^2) + \\dfrac{\\text{d}}{\\text{d}x}(y^3) &= \\dfrac{\\text{d}}{\\text{d}x}(13) \\\\\\ 2x - \\left( y^2 + 2xy\\dfrac{\\text{d}y}{\\text{d}x} \\right) + 3y^2\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\\\\\ 2x - y^2 - 2xy\\dfrac{\\text{d}y}{\\text{d}x} + 3y^2\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\end{aligned}",
                         "Rearrange the differentiated terms to isolate and make $\\dfrac{\\text{d}y}{\\text{d}x}$ the subject:<br>\\begin{aligned} \\left(3y^2 - 2xy\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= y^2 - 2x \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{y^2 - 2x}{3y^2 - 2xy} \\end{aligned}",
                         "To find the gradient of the curve at the first intersection point $(5, 2)$, substitute $x = 5$ and $y = 2$ into the derivative:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{(2)^2 - 2(5)}{3(2)^2 - 2(5)(2)} \\\\\\ &= \\dfrac{4 - 10}{12 - 20} \\\\\\ &= \\dfrac{-6}{-8} = \\dfrac{3}{4} \\end{aligned}",
-                        "To find the gradient of the curve at the second intersection point $(-1, 2)$, substitute $x = -1$ and $y = 2$ into the derivative:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{(2)^2 - 2(-1)}{3(2)^2 - 2(-1)(2)} \\\\\\ &= \\dfrac{4 + 2}{12 + 4} \\\\\\ &= \\dfrac{6}{16} = \\dfrac{3}{8} \\end{aligned}<br><br>Final Answer: $(5, 2)$ with gradient $\\dfrac{3}{4}$, and $(-1, 2)$ with gradient $\\dfrac{3}{8}$."
+                        "To find the gradient of the curve at the second intersection point $(-1, 2)$, substitute $x = -1$ and $y = 2$ into the derivative:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{(2)^2 - 2(-1)}{3(2)^2 - 2(-1)(2)} \\\\\\ &= \\dfrac{4 + 2}{12 + 4} \\\\\\ &= \\dfrac{6}{16} = \\dfrac{3}{8} \\end{aligned}",
+                "Final Answer: $(5, 2)$ with gradient $\\dfrac{3}{4}$, and $(-1, 2)$ with gradient $\\dfrac{3}{8}$."
                 ],
                 "pi_options": [
                         {
@@ -1009,7 +1035,8 @@ window.ALEVEL_QUESTIONS = [
                         "Since $u = \\text{e}^x > 0$, we must discard the negative root $u = -3$. Thus, the only valid solution is:<br>\\begin{aligned} \\text{e}^x &= 2 \\\\ x &= \\ln 2 \\end{aligned}<br>So, there is exactly one point on the curve where $y = 1$, which is $(\\ln 2, 1)$.",
                         "Next, differentiate the curve's equation implicitly with respect to $x$, applying the product rule to both $y\\text{e}^{2x}$ and $y^2\\text{e}^x$:<br>\\begin{aligned} \\left( \\text{e}^{2x}\\dfrac{\\text{d}y}{\\text{d}x} + 2y\\text{e}^{2x} \\right) + \\left( 2y\\text{e}^x\\dfrac{\\text{d}y}{\\text{d}x} + y^2\\text{e}^x \\right) &= 0 \\end{aligned}",
                         "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ by grouping the derivative terms together:<br>\\begin{aligned} \\left(\\text{e}^{2x} + 2y\\text{e}^x\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= -2y\\text{e}^{2x} - y^2\\text{e}^x \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= -\\dfrac{2y\\text{e}^{2x} + y^2\\text{e}^x}{\\text{e}^{2x} + 2y\\text{e}^x} \\end{aligned}",
-                        "To find the exact gradient at $(\\ln 2, 1)$, substitute $y = 1$, $\\text{e}^x = 2$, and $\\text{e}^{2x} = 4$ into the derivative expression:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= -\\dfrac{2(1)(4) + (1)^2(2)}{4 + 2(1)(2)} \\\\\\ &= -\\dfrac{8 + 2}{4 + 4} \\\\\\ &= -\\dfrac{10}{8} = -\\dfrac{5}{4} \\end{aligned}<br><br>Final Answer: $(\\ln 2, 1)$ with gradient $-\\dfrac{5}{4}$."
+                        "To find the exact gradient at $(\\ln 2, 1)$, substitute $y = 1$, $\\text{e}^x = 2$, and $\\text{e}^{2x} = 4$ into the derivative expression:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= -\\dfrac{2(1)(4) + (1)^2(2)}{4 + 2(1)(2)} \\\\\\ &= -\\dfrac{8 + 2}{4 + 4} \\\\\\ &= -\\dfrac{10}{8} = -\\dfrac{5}{4} \\end{aligned}",
+                "Final Answer: $(\\ln 2, 1)$ with gradient $-\\dfrac{5}{4}$."
                 ],
                 "pi_options": [
                         {
@@ -1047,7 +1074,8 @@ window.ALEVEL_QUESTIONS = [
                         "Group the $\\dfrac{\\text{d}y}{\\text{d}x}$ terms together and make it the subject of the formula:<br>\\begin{aligned} \\left(6y - 2x\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 2y - 2x \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{2y - 2x}{6y - 2x} \\end{aligned}<br>Factor out and divide by 2 to simplify:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{y - x}{3y - x} \\end{aligned}",
                         "A tangent parallel to the $x$-axis is a horizontal tangent, which occurs where the gradient is zero:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\\\\\ \\dfrac{y - x}{3y - x} &= 0 \\\\ y - x &= 0 \\implies y = x \\end{aligned}",
                         "Substitute $y = x$ back into the original curve's equation to find the corresponding coordinates:<br>\\begin{aligned} x^2 - 2x(x) + 3(x)^2 &= 8 \\\\ x^2 - 2x^2 + 3x^2 &= 8 \\\\\\ 2x^2 &= 8 \\\\ x^2 &= 4 \\end{aligned}<br>This gives $x = 2$ or $x = -2$.",
-                        "Since $y = x$, the points corresponding to these $x$-values are:<br>\\begin{aligned} x = 2 &\\implies y = 2 \\\\ x = -2 &\\implies y = -2 \\end{aligned}<br>Thus, the coordinates of the points with horizontal tangents are $(2, 2)$ and $(-2, -2)$.<br><br>Final Answer: $(2, 2)$ and $(-2, -2)$"
+                        "Since $y = x$, the points corresponding to these $x$-values are:<br>\\begin{aligned} x = 2 &\\implies y = 2 \\\\ x = -2 &\\implies y = -2 \\end{aligned}<br>Thus, the coordinates of the points with horizontal tangents are $(2, 2)$ and $(-2, -2)$.",
+                "Final Answer: $(2, 2)$ and $(-2, -2)$"
                 ],
                 "pi_options": [
                         {
@@ -1087,7 +1115,8 @@ window.ALEVEL_QUESTIONS = [
                         "Rearrange the terms to make the gradient expression $\\dfrac{\\text{d}y}{\\text{d}x}$ the subject:<br>\\begin{aligned} \\left( 2x^2y + 3y^2 \\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 3 - 2xy^2 \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{3 - 2xy^2}{2x^2y + 3y^2} \\end{aligned}",
                         "To find the gradient of the tangent at $P(1, 2)$, substitute $x = 1$ and $y = 2$ into the derivative:<br>\\begin{aligned} m_{\\text{tangent}} &= \\dfrac{3 - 2(1)(2)^2}{2(1)^2(2) + 3(2)^2} \\\\\\ &= \\dfrac{3 - 8}{4 + 12} \\\\\\ &= -\\dfrac{5}{16} \\end{aligned}",
                         "The normal line is perpendicular to the tangent line. Find the gradient of the normal by taking the negative reciprocal of the tangent's gradient:<br>\\begin{aligned} m_{\\text{normal}} &= -\\dfrac{1}{m_{\\text{tangent}}} \\\\\\ &= -\\dfrac{1}{-\\frac{5}{16}} = \\dfrac{16}{5} \\end{aligned}",
-                        "Set up the equation of the normal line using the point-gradient formula $y - y_1 = m(x - x_1)$ at $P(1, 2)$:<br>\\begin{aligned} y - 2 &= \\dfrac{16}{5}(x - 1) \\end{aligned}<br>Multiply the entire equation by 5 to remove fractions, then rearrange into the form $ax + by + c = 0$:<br>\\begin{aligned} 5y - 10 &= 16x - 16 \\\\\\ 16x - 5y - 6 &= 0 \\end{aligned}<br><br>Final Answer: $16x - 5y - 6 = 0$"
+                        "Set up the equation of the normal line using the point-gradient formula $y - y_1 = m(x - x_1)$ at $P(1, 2)$:<br>\\begin{aligned} y - 2 &= \\dfrac{16}{5}(x - 1) \\end{aligned}<br>Multiply the entire equation by 5 to remove fractions, then rearrange into the form $ax + by + c = 0$:<br>\\begin{aligned} 5y - 10 &= 16x - 16 \\\\\\ 16x - 5y - 6 &= 0 \\end{aligned}",
+                "Final Answer: $16x - 5y - 6 = 0$"
                 ],
                 "pi_options": [
                         {
@@ -1127,7 +1156,8 @@ window.ALEVEL_QUESTIONS = [
                         "A tangent line parallel to the $y$-axis is a vertical tangent. This occurs where the gradient $\\dfrac{\\text{d}y}{\\text{d}x}$ is undefined, which means setting the denominator to zero:<br>\\begin{aligned} 2 - y^2 &= 0 \\\\ y^2 &= 2 \\implies y = \\pm\\sqrt{2} \\end{aligned}",
                         "To find the $x$-coordinates, substitute $y = \\sqrt{2}$ and $y = -\\sqrt{2}$ back into the original curve's equation. <br><br>Case 1: Substitute $y = \\sqrt{2}$:<br>\\begin{aligned} 2x^3 + (\\sqrt{2})^3 &= 6(\\sqrt{2}) \\\\\\ 2x^3 + 2\\sqrt{2} &= 6\\sqrt{2} \\\\\\ 2x^3 &= 4\\sqrt{2} \\\\ x^3 &= 2\\sqrt{2} \\end{aligned}",
                         "Solve for $x$ by rewriting the term as an index power: $2\\sqrt{2} = 2^1 \\cdot 2^{1/2} = 2^{3/2} = (\\sqrt{2})^3$. Taking the cube root gives:<br>\\begin{aligned} x &= \\sqrt{2} \\end{aligned}<br>This gives our first point of vertical tangency: $(\\sqrt{2}, \\sqrt{2})$.",
-                        "Case 2: Substitute $y = -\\sqrt{2}$ into the curve's equation:<br>\\begin{aligned} 2x^3 + (-\\sqrt{2})^3 &= 6(-\\sqrt{2}) \\\\\\ 2x^3 - 2\\sqrt{2} &= -6\\sqrt{2} \\\\\\ 2x^3 &= -4\\sqrt{2} \\\\ x^3 &= -2\\sqrt{2} \\end{aligned}<br>Taking the cube root gives:<br>\\begin{aligned} x &= -\\sqrt{2} \\end{aligned}<br>This gives our second point of vertical tangency: $(-\\sqrt{2}, -\\sqrt{2})$.<br><br>Final Answer: $(\\sqrt{2}, \\sqrt{2})$ and $(-\\sqrt{2}, -\\sqrt{2})$"
+                        "Case 2: Substitute $y = -\\sqrt{2}$ into the curve's equation:<br>\\begin{aligned} 2x^3 + (-\\sqrt{2})^3 &= 6(-\\sqrt{2}) \\\\\\ 2x^3 - 2\\sqrt{2} &= -6\\sqrt{2} \\\\\\ 2x^3 &= -4\\sqrt{2} \\\\ x^3 &= -2\\sqrt{2} \\end{aligned}<br>Taking the cube root gives:<br>\\begin{aligned} x &= -\\sqrt{2} \\end{aligned}<br>This gives our second point of vertical tangency: $(-\\sqrt{2}, -\\sqrt{2})$.",
+                "Final Answer: $(\\sqrt{2}, \\sqrt{2})$ and $(-\\sqrt{2}, -\\sqrt{2})$"
                 ],
                 "pi_options": [
                         {
@@ -1167,7 +1197,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find the predicted score for $1$ hour and $30$ minutes, convert the time to hours ($t = 1.5$) and substitute it into the quadratic model:<br>\\begin{aligned} s &= 80 - 5(1.5 - 3)^2 \\\\\\ &= 80 - 5(-1.5)^2 \\\\\\ &= 80 - 5(2.25) \\\\\\ &= 80 - 11.25 = 68.75 \\end{aligned}<br>Bethany's predicted score is $68.75$.",
                         "To find the maximum preparation time for which the quadratic model is valid, find when the predicted score remains non-negative ($s \\ge 0$):<br>\\begin{aligned} 80 - 5(t - 3)^2 &\\ge 0 \\\\\\ 80 &\\ge 5(t - 3)^2 \\\\\\ 16 &\\ge (t - 3)^2 \\end{aligned}<br>Taking square roots yields:<br>\\begin{aligned} -4 \\le t - 3 &\\le 4 \\\\\\ -1 \\le t &\\le 7 \\end{aligned}<br>Since preparation time must be non-negative ($t \\ge 0$), the maximum preparation time for the model to remain valid is $7$ hours.",
                         "Verify the three experimental data points with the new exponential model $s = 35 + 55\\left(1 - \\text{e}^{-0.5t}\\right)$:<br><ul><li>For $t = 2$: $s = 35 + 55\\left(1 - \\text{e}^{-1}\\right) \\approx 35 + 55(1 - 0.3679) \\approx 69.77 \\approx 70$.</li><li>For $t = 4$: $s = 35 + 55\\left(1 - \\text{e}^{-2}\\right) \\approx 35 + 55(1 - 0.1353) \\approx 82.56 \\approx 83$.</li><li>For $t = 6$: $s = 35 + 55\\left(1 - \\text{e}^{-3}\\right) \\approx 35 + 55(1 - 0.0498) \\approx 87.26 \\approx 87$.</li></ul><br>Since all three calculated scores match the table values when rounded to the nearest integer, the recorded data is consistent with the model.",
-                        "To evaluate the teacher's advice, find the limiting value of the score as $t \\to \\infty$:<br>\\begin{aligned} \\lim_{t \\to \\infty} s &= \\lim_{t \\to \\infty} \\left[ 35 + 55\\left(1 - \\text{e}^{-0.5t}\\right) \\right] \\\\\\ &= 35 + 55(1 - 0) \\\\\\ &= 90 \\end{aligned}<br>At $t = 15$ hours, the predicted score is $s = 35 + 55\\left(1 - \\text{e}^{-7.5}\\right) \\approx 89.97$. This is exceptionally close to the ceiling limit of $90$. Since an extra $9$ hours of revision beyond $6$ hours only increases the score by roughly $3\\\\%$, the advice to study for at least $15$ hours is excessive and not efficient.<br><br>Final Answer: $P = 80, Q = 5, R = 3$; $t = 1.5 \\implies s = 68.75$; max validity time is $7$ hours; advice is not good due to diminishing returns."
+                        "To evaluate the teacher's advice, find the limiting value of the score as $t \\to \\infty$:<br>\\begin{aligned} \\lim_{t \\to \\infty} s &= \\lim_{t \\to \\infty} \\left[ 35 + 55\\left(1 - \\text{e}^{-0.5t}\\right) \\right] \\\\\\ &= 35 + 55(1 - 0) \\\\\\ &= 90 \\end{aligned}<br>At $t = 15$ hours, the predicted score is $s = 35 + 55\\left(1 - \\text{e}^{-7.5}\\right) \\approx 89.97$. This is exceptionally close to the ceiling limit of $90$. Since an extra $9$ hours of revision beyond $6$ hours only increases the score by roughly $3\\\\%$, the advice to study for at least $15$ hours is excessive and not efficient.",
+                "Final Answer: $P = 80, Q = 5, R = 3$; $t = 1.5 \\implies s = 68.75$; max validity time is $7$ hours; advice is not good due to diminishing returns."
                 ],
                 "pi_options": [
                         {
@@ -1205,7 +1236,8 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiate the cost function with respect to $x$ to find the first derivative:<br>\\begin{aligned} \\dfrac{\\text{d}C}{\\text{d}x} &= 3x^2 - 18x + 24 \\end{aligned}",
                         "To find the stationary points, set the derivative to $0$ and solve for $x$:<br>\\begin{aligned} 3x^2 - 18x + 24 &= 0 \\\\ x^2 - 6x + 8 &= 0 \\\\\\ (x - 2)(x - 4) &= 0 \\end{aligned}<br>This yields two stationary production levels: $x = 2$ and $x = 4$.",
                         "Determine the nature of the stationary points using the second derivative:<br>\\begin{aligned} \\dfrac{\\text{d}^2C}{\\text{d}x^2} &= 6x - 18 \\end{aligned}<br>Evaluate this at each stationary point:<ul><li>At $x = 2$: $\\dfrac{\\text{d}^2C}{\\text{d}x^2} = 6(2) - 18 = -6 < 0$ (Local Maximum)</li><li>At $x = 4$: $\\dfrac{\\text{d}^2C}{\\text{d}x^2} = 6(4) - 18 = 6 > 0$ (Local Minimum)</li></ul>",
-                        "To find the minimum operating cost when actively producing components ($x > 0$), evaluate the cost function at the local minimum $x = 4$:<br>\\begin{aligned} C(4) &= (4)^3 - 9(4)^2 + 24(4) + 10 \\\\\\ &= 64 - 144 + 96 + 10 \\\\\\ &= 26 \\end{aligned}<br>Since $C = 26$ represents hundreds of pounds, the minimum daily operating cost during active production is $26 \\times 100 = £2,600$.<br><br>Final Answer: Cost is £1,000 when $x = 0$; stationary points at $x = 2$ (local max) and $x = 4$ (local min); minimum cost during active production is £2,600."
+                        "To find the minimum operating cost when actively producing components ($x > 0$), evaluate the cost function at the local minimum $x = 4$:<br>\\begin{aligned} C(4) &= (4)^3 - 9(4)^2 + 24(4) + 10 \\\\\\ &= 64 - 144 + 96 + 10 \\\\\\ &= 26 \\end{aligned}<br>Since $C = 26$ represents hundreds of pounds, the minimum daily operating cost during active production is $26 \\times 100 = £2,600$.",
+                "Final Answer: Cost is £1,000 when $x = 0$; stationary points at $x = 2$ (local max) and $x = 4$ (local min); minimum cost during active production is £2,600."
                 ],
                 "pi_options": [
                         {
@@ -1245,7 +1277,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find the temperature after $20$ minutes, substitute $t = 20$ into the model. Since $e^{-10k} = \\dfrac{7}{13}$, write the exponential term as a power of this known constant:<br>\\begin{aligned} \\theta(20) &= 20 + 65\\text{e}^{-20k} \\\\\\ &= 20 + 65\\left(\\text{e}^{-10k}\\right)^2 \\\\\\ &= 20 + 65\\left(\\dfrac{7}{13}\\right)^2 \\\\\\ &= 20 + 65\\left(\\dfrac{49}{169}\\right) \\end{aligned}",
                         "Simplify this fraction to find the exact temperature after 20 minutes:<br>\\begin{aligned} \\theta(20) &= 20 + 5\\left(\\dfrac{49}{13}\\right) \\\\\\ &= 20 + \\dfrac{245}{13} \\\\\\ &= \\dfrac{260}{13} + \\dfrac{245}{13} = \\dfrac{505}{13} \\approx 38.8^\\circ\\text{C} \\end{aligned}",
                         "To find when the coffee cools to $35^\\circ\\text{C}$, set $\\theta = 35$ and solve for $t$:<br>\\begin{aligned} 35 &= 20 + 65\\text{e}^{-kt} \\\\\\ 15 &= 65\\text{e}^{-kt} \\\\\\ \\dfrac{3}{13} &= \\text{e}^{-kt} \\\\\\ \\ln\\left(\\dfrac{3}{13}\\right) &= -kt \\\\ t &= -\\dfrac{1}{k}\\ln\\left(\\dfrac{3}{13}\\right) = \\dfrac{1}{k}\\ln\\left(\\dfrac{13}{3}\\right) \\end{aligned}",
-                        "Substitute the exact value $k = \\dfrac{1}{10}\\ln\\left(\\dfrac{13}{7}\\right)$ to compute $t$:<br>\\begin{aligned} t &= \\dfrac{10\\ln\\left(\\dfrac{13}{3}\\right)}{\\ln\\left(\\dfrac{13}{7}\\right)} \\\\\\ &\\approx \\dfrac{10 \\times 1.4663}{0.6190} \\\\\\ &\\approx 24.368 \\approx 24.4 \\text{ minutes} \\end{aligned}<br><br>Final Answer: $k = \\dfrac{1}{10}\\ln\\left(\\dfrac{13}{7}\\right)$; temperature is $\\dfrac{505}{13}^\\circ\\text{C} \\approx 38.8^\\circ\\text{C}$; time taken is $24.4$ minutes."
+                        "Substitute the exact value $k = \\dfrac{1}{10}\\ln\\left(\\dfrac{13}{7}\\right)$ to compute $t$:<br>\\begin{aligned} t &= \\dfrac{10\\ln\\left(\\dfrac{13}{3}\\right)}{\\ln\\left(\\dfrac{13}{7}\\right)} \\\\\\ &\\approx \\dfrac{10 \\times 1.4663}{0.6190} \\\\\\ &\\approx 24.368 \\approx 24.4 \\text{ minutes} \\end{aligned}",
+                "Final Answer: $k = \\dfrac{1}{10}\\ln\\left(\\dfrac{13}{7}\\right)$; temperature is $\\dfrac{505}{13}^\\circ\\text{C} \\approx 38.8^\\circ\\text{C}$; time taken is $24.4$ minutes."
                 ],
                 "pi_options": [
                         {
@@ -1285,7 +1318,8 @@ window.ALEVEL_QUESTIONS = [
                         "Use the approximation $\\text{e}^{-2} \\approx 0.1353$ to evaluate the expression:<br>\\begin{aligned} P(5) &\\approx \\dfrac{1200}{1 + 5(0.1353)} \\\\\\ &\\approx \\dfrac{1200}{1 + 0.6765} \\\\\\ &\\approx \\dfrac{1200}{1.6765} \\approx 715.78 \\end{aligned}<br>Rounding to the nearest whole number gives $716$ birds, which is approximately $715$ birds.",
                         "Find the limiting value of $P$ as $t \\to \\infty$. As $t$ becomes very large, the term $\\text{e}^{-0.4t}$ approaches $0$:<br>\\begin{aligned} \\lim_{t \\to \\infty} P &= \\dfrac{1200}{1 + 5(0)} \\\\\\ &= \\dfrac{1200}{1} = 1200 \\end{aligned}<br>In a physical context, this carrying capacity of $1,200$ represents the maximum sustainable population of this bird species that the reserve's resources can support.",
                         "To find when the population reaches $1000$ birds, set $P = 1000$ and solve for $t$:<br>\\begin{aligned} 1000 &= \\dfrac{1200}{1 + 5\\text{e}^{-0.4t}} \\\\\\ 1 + 5\\text{e}^{-0.4t} &= \\dfrac{1200}{1000} = 1.2 \\\\\\ 5\\text{e}^{-0.4t} &= 0.2 \\\\\\ \\text{e}^{-0.4t} &= 0.04 \\end{aligned}",
-                        "Take natural logarithms of both sides to isolate $t$:<br>\\begin{aligned} -0.4t &= \\ln(0.04) \\\\ t &= -\\dfrac{\\ln(0.04)}{0.4} \\\\\\ &\\approx -\\dfrac{-3.2189}{0.4} \\\\\\ &\\approx 8.047 \\approx 8.0 \\text{ years} \\end{aligned}<br><br>Final Answer: Initial population is $200$; population after $5$ years is $\\approx 716$ (approximately $715$); carrying capacity is $1,200$ birds; population reaches $1,000$ after $8.0$ years."
+                        "Take natural logarithms of both sides to isolate $t$:<br>\\begin{aligned} -0.4t &= \\ln(0.04) \\\\ t &= -\\dfrac{\\ln(0.04)}{0.4} \\\\\\ &\\approx -\\dfrac{-3.2189}{0.4} \\\\\\ &\\approx 8.047 \\approx 8.0 \\text{ years} \\end{aligned}",
+                "Final Answer: Initial population is $200$; population after $5$ years is $\\approx 716$ (approximately $715$); carrying capacity is $1,200$ birds; population reaches $1,000$ after $8.0$ years."
                 ],
                 "pi_options": [
                         {
@@ -1324,7 +1358,8 @@ window.ALEVEL_QUESTIONS = [
                         "Substitute $t = \\dfrac{u}{10}$ and $h = 35$ into the height equation to solve for the initial velocity $u$:<br>\\begin{aligned} 35 &= 15 + u\\left(\\dfrac{u}{10}\\right) - 5\\left(\\dfrac{u}{10}\\right)^2 \\\\\\ 35 &= 15 + \\dfrac{u^2}{10} - 5\\left(\\dfrac{u^2}{100}\\right) \\\\\\ 20 &= \\dfrac{u^2}{10} - \\dfrac{u^2}{20} \\\\\\ 20 &= \\dfrac{u^2}{20} \\\\ u^2 &= 400 \\implies u = 20 \\end{aligned}<br>Thus, the initial velocity is $u = 20\\text{ m/s}$ (taking the positive root for an upward launch).",
                         "Now substitute $u = 20$ back into our expression for the vertex time to find when the rocket reaches its maximum height:<br>\\begin{aligned} t_{\\text{max}} &= \\dfrac{u}{10} \\\\\\ &= \\dfrac{20}{10} = 2 \\text{ seconds} \\end{aligned}",
                         "To find the total flight time, set the height to zero ($h = 0$) and solve the quadratic equation using the quadratic formula:<br>\\begin{aligned} -5t^2 + 20t + 15 &= 0 \\\\\\ 5t^2 - 20t - 15 &= 0 \\\\ t^2 - 4t - 3 &= 0 \\end{aligned}",
-                        "Apply the quadratic formula to solve for $t$:<br>\\begin{aligned} t &= \\dfrac{-(-4) \\pm \\sqrt{(-4)^2 - 4(1)(-3)}}{2(1)} \\\\\\ &= \\dfrac{4 \\pm \\sqrt{16 + 12}}{2} \\\\\\ &= \\dfrac{4 \\pm \\sqrt{28}}{2} \\\\\\ &= \\dfrac{4 \\pm 2\\sqrt{7}}{2} = 2 \\pm \\sqrt{7} \\end{aligned}<br>Since time must be positive ($t \\ge 0$), we reject $t = 2 - \\sqrt{7} \\approx -0.65$. The total flight time of the rocket is $2 + \\sqrt{7}$ seconds.<br><br>Final Answer: $h_0 = 15$ and $u = 20$; maximum height is reached at $t = 2$ seconds; total flight time is $2 + \\sqrt{7}$ seconds."
+                        "Apply the quadratic formula to solve for $t$:<br>\\begin{aligned} t &= \\dfrac{-(-4) \\pm \\sqrt{(-4)^2 - 4(1)(-3)}}{2(1)} \\\\\\ &= \\dfrac{4 \\pm \\sqrt{16 + 12}}{2} \\\\\\ &= \\dfrac{4 \\pm \\sqrt{28}}{2} \\\\\\ &= \\dfrac{4 \\pm 2\\sqrt{7}}{2} = 2 \\pm \\sqrt{7} \\end{aligned}<br>Since time must be positive ($t \\ge 0$), we reject $t = 2 - \\sqrt{7} \\approx -0.65$. The total flight time of the rocket is $2 + \\sqrt{7}$ seconds.",
+                "Final Answer: $h_0 = 15$ and $u = 20$; maximum height is reached at $t = 2$ seconds; total flight time is $2 + \\sqrt{7}$ seconds."
                 ],
                 "pi_options": [
                         {
@@ -1364,7 +1399,8 @@ window.ALEVEL_QUESTIONS = [
                         "To solve the differential equation $\\dfrac{\\text{d}y}{\\text{d}x} = y f(x)$, separate the variables and integrate both sides:<br>\\begin{aligned} \\int \\dfrac{1}{y} \\,\\text{d}y &= \\int f(x) \\,\\text{d}x \\\\\\ \\int \\dfrac{1}{y} \\,\\text{d}y &= \\int \\left( \\dfrac{2}{ x - 2 } + \\dfrac{2}{ x^2 + 4 } - \\dfrac{x}{ x^2 + 4 } \\right) \\,\\text{d}x \\end{aligned}",
                         "Perform the integration on each term on the right-hand side carefully, using the standard log integrals and the inverse tangent rule:<br>\\begin{aligned} \\ln|y| &= 2\\ln|x - 2| + \\arctan\\left(\\dfrac{x}{2}\\right) - \\dfrac{1}{2}\\ln( x^2 + 4 ) + c \\end{aligned}<br>Combine the logarithmic terms using standard log laws:<br>\\begin{aligned} \\ln|y| &= \\ln\\left( \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\right) + \\arctan\\left(\\dfrac{x}{2}\\right) + c \\end{aligned}",
                         "Exponentiate both sides to write the general solution in terms of a constant $K = \\text{e}^c$:<br>\\begin{aligned} y &= K \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\text{e}^{\\arctan(x/2)} \\end{aligned}",
-                        "Apply the boundary condition $y = 2$ when $x = 0$ to solve for $K$:<br>\\begin{aligned} 2 &= K \\dfrac{(0 - 2)^2}{\\sqrt{ 0^2 + 4 }} \\text{e}^{\\arctan(0)} \\\\\\ 2 &= K \\left( \\dfrac{4}{2} \\right) (1) \\\\\\ 2 &= 2K \\implies K = 1 \\end{aligned}<br>Substituting $K = 1$ back into the general solution yields:<br>$$y = \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\text{e}^{\\arctan(x/2)}$$<br><br>Final Answer: $y = \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\text{e}^{\\arctan(x/2)}$"
+                        "Apply the boundary condition $y = 2$ when $x = 0$ to solve for $K$:<br>\\begin{aligned} 2 &= K \\dfrac{(0 - 2)^2}{\\sqrt{ 0^2 + 4 }} \\text{e}^{\\arctan(0)} \\\\\\ 2 &= K \\left( \\dfrac{4}{2} \\right) (1) \\\\\\ 2 &= 2K \\implies K = 1 \\end{aligned}<br>Substituting $K = 1$ back into the general solution yields:<br>$$y = \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\text{e}^{\\arctan(x/2)}$$",
+                "Final Answer: $y = \\dfrac{(x - 2)^2}{\\sqrt{ x^2 + 4 }} \\text{e}^{\\arctan(x/2)}$"
                 ],
                 "pi_options": [
                         {
@@ -1403,7 +1439,8 @@ window.ALEVEL_QUESTIONS = [
                         "To solve the differential equation $\\dfrac{\\text{d}y}{\\text{d}x} = \\text{e}^{-y} f(x)$, separate the variables and integrate both sides:<br>\\begin{aligned} \\int \\text{e}^y \\,\\text{d}y &= \\int f(x) \\,\\text{d}x \\\\\\ \\int \\text{e}^y \\,\\text{d}y &= \\int \\left( \\dfrac{2}{x} - \\dfrac{1}{x - 1} + \\dfrac{2}{(x - 1)^2} \\right) \\,\\text{d}x \\end{aligned}",
                         "Integrate both sides of the equation. Use the power rule for the repeated linear term: $\\int 2(x-1)^{-2} \\,\\text{d}x = -2(x-1)^{-1}$:<br>\\begin{aligned} \\text{e}^y &= 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + c \\end{aligned}",
                         "Apply the boundary condition $y = 0$ when $x = 2$ to find the constant $c$:<br>\\begin{aligned} \\text{e}^0 &= 2\\ln(2) - \\ln(1) - \\dfrac{2}{2 - 1} + c \\\\\\ 1 &= 2\\ln 2 - 0 - 2 + c \\\\ c &= 3 - 2\\ln 2 \\end{aligned}",
-                        "Substitute $c$ back into the equation and solve for $y$ by taking the natural logarithm of both sides:<br>\\begin{aligned} \\text{e}^y &= 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 3 - 2\\ln 2 \\\\ y &= \\ln\\left( 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 3 - 2\\ln 2 \\right) \\end{aligned}<br><br>Final Answer: $y = \\ln\\left( 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 3 - 2\\ln 2 \\right)$"
+                        "Substitute $c$ back into the equation and solve for $y$ by taking the natural logarithm of both sides:<br>\\begin{aligned} \\text{e}^y &= 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 3 - 2\\ln 2 \\\\ y &= \\ln\\left( 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 3 - 2\\ln 2 \\right) \\end{aligned}",
+                "Final Answer: $y = \\ln\\left( 2\\ln|x| - \\ln|x - 1| - \\dfrac{2}{x - 1} + 3 - 2\\ln 2 \\right)$"
                 ],
                 "pi_options": [
                         {
@@ -1444,7 +1481,8 @@ window.ALEVEL_QUESTIONS = [
                         "Integrate both sides of the equation:<br>\\begin{aligned} \\dfrac{1}{2}y^2 &= -2\\ln|x - 1| + 6\\ln|x - 2| - 3\\ln|x - 3| + C \\end{aligned}",
                         "Multiply the entire equation by 2 to isolate $y^2$, defining a new constant of integration $C' = 2C$:<br>\\begin{aligned} y^2 &= -4\\ln|x - 1| + 12\\ln|x - 2| - 6\\ln|x - 3| + C' \\end{aligned}",
                         "Apply the boundary condition $y = 4$ when $x = 4$ to solve for $C'$:<br>\\begin{aligned} (4)^2 &= -4\\ln(3) + 12\\ln(2) - 6\\ln(1) + C' \\\\\\ 16 &= -4\\ln 3 + 12\\ln 2 + C' \\\\ C' &= 16 + 4\\ln 3 - 12\\ln 2 \\end{aligned}",
-                        "Substitute $C'$ back into the equation for $y^2$:<br>\\begin{aligned} y^2 &= -4\\ln|x - 1| + 12\\ln|x - 2| - 6\\ln|x - 3| + 16 + 4\\ln 3 - 12\\ln 2 \\end{aligned}<br><br>Final Answer: $y^2 = -4\\ln|x - 1| + 12\\ln|x - 2| - 6\\ln|x - 3| + 16 + 4\\ln 3 - 12\\ln 2$"
+                        "Substitute $C'$ back into the equation for $y^2$:<br>\\begin{aligned} y^2 &= -4\\ln|x - 1| + 12\\ln|x - 2| - 6\\ln|x - 3| + 16 + 4\\ln 3 - 12\\ln 2 \\end{aligned}",
+                "Final Answer: $y^2 = -4\\ln|x - 1| + 12\\ln|x - 2| - 6\\ln|x - 3| + 16 + 4\\ln 3 - 12\\ln 2$"
                 ],
                 "pi_options": [
                         {
@@ -1483,7 +1521,8 @@ window.ALEVEL_QUESTIONS = [
                         "Subtract $v$ from both sides to obtain the simplified separable equation:<br>\\begin{aligned} x\\dfrac{\\text{d}v}{\\text{d}x} &= 1 \\end{aligned}",
                         "Separate variables and integrate both sides with respect to $x$:<br>\\begin{aligned} \\int 1 \\,\\text{d}v &= \\int \\dfrac{1}{x} \\,\\text{d}x \\\\ v &= \\ln x + C \\end{aligned}",
                         "Substitute $v = \\dfrac{y}{x}$ back into the solution:<br>\\begin{aligned} \\dfrac{y}{x} &= \\ln x + C \\\\ y &= x\\ln x + Cx \\end{aligned}",
-                        "Apply the boundary condition $y = 2$ when $x = 1$ to solve for $C$:<br>\\begin{aligned} 2 &= (1)\\ln(1) + C(1) \\\\\\ 2 &= 0 + C \\implies C = 2 \\end{aligned}<br>Substitute $C = 2$ back into the equation of the curve:<br>$$y = x\\ln x + 2x$$<br><br>Final Answer: $y = x\\ln x + 2x$"
+                        "Apply the boundary condition $y = 2$ when $x = 1$ to solve for $C$:<br>\\begin{aligned} 2 &= (1)\\ln(1) + C(1) \\\\\\ 2 &= 0 + C \\implies C = 2 \\end{aligned}<br>Substitute $C = 2$ back into the equation of the curve:<br>$$y = x\\ln x + 2x$$",
+                "Final Answer: $y = x\\ln x + 2x$"
                 ],
                 "pi_options": [
                         {
@@ -1523,7 +1562,8 @@ window.ALEVEL_QUESTIONS = [
                         "Apply the initial condition $V = 100$ when $t = 0$ to solve for $C$:<br>\\begin{aligned} 2\\sqrt{100} &= -k(0) + C \\\\\\ 2(10) &= C \\implies C = 20 \\end{aligned}<br>Substitute $C = 20$ back into the integrated equation and isolate $V$:<br>\\begin{aligned} 2\\sqrt{V} &= 20 - kt \\\\\\ \\sqrt{V} &= 10 - \\dfrac{k}{2}t \\\\ V &= \\left(10 - \\dfrac{k}{2}t\\right)^2 \\end{aligned}",
                         "Use the condition $V = 64$ when $t = 20$ to solve for the constant $k$:<br>\\begin{aligned} 64 &= \\left(10 - \\dfrac{k}{2}(20)\\right)^2 \\\\\\ 64 &= (10 - 10k)^2 \\end{aligned}",
                         "Take the positive square root since the term $10 - 10k$ must be positive for the decreasing function:<br>\\begin{aligned} 8 &= 10 - 10k \\\\\\ 10k &= 2 \\\\ k &= 0.2 \\end{aligned}<br>This confirms $k = 0.2$. Substitute $k = 0.2$ back into our volume formula:<br>$$V = (10 - 0.1t)^2$$",
-                        "The container is completely empty when the volume of water is $0$ ($V = 0$):<br>\\begin{aligned} (10 - 0.1t)^2 &= 0 \\\\\\ 10 - 0.1t &= 0 \\\\\\ 0.1t &= 10 \\\\ t &= 100 \\text{ minutes} \\end{aligned}<br><br>Final Answer: $V = \\left(10 - \\dfrac{k}{2}t\\right)^2$; $k = 0.2$; total time to empty is $100$ minutes."
+                        "The container is completely empty when the volume of water is $0$ ($V = 0$):<br>\\begin{aligned} (10 - 0.1t)^2 &= 0 \\\\\\ 10 - 0.1t &= 0 \\\\\\ 0.1t &= 10 \\\\ t &= 100 \\text{ minutes} \\end{aligned}",
+                "Final Answer: $V = \\left(10 - \\dfrac{k}{2}t\\right)^2$; $k = 0.2$; total time to empty is $100$ minutes."
                 ],
                 "pi_options": [
                         {
@@ -1562,7 +1602,8 @@ window.ALEVEL_QUESTIONS = [
                         "Substitute this back into the original fraction and simplify:<br>\\begin{aligned} \\dfrac{60\\sqrt{b}}{ (\\sqrt{b} + 5)^2 - (\\sqrt{b} - 5)^2 } &= \\dfrac{60\\sqrt{b}}{ 20\\sqrt{b} } \\\\\\ &= 3 \\end{aligned}",
                         "To simplify the second expression, multiply both the numerator and the denominator by the conjugate of the denominator, which is $\\sqrt{6} - \\sqrt{2}$:<br>\\begin{aligned} \\dfrac{5\\sqrt{6} + 2\\sqrt{2}}{ \\sqrt{6} + \\sqrt{2} } &= \\dfrac{(5\\sqrt{6} + 2\\sqrt{2})(\\sqrt{6} - \\sqrt{2})}{ (\\sqrt{6} + \\sqrt{2})(\\sqrt{6} - \\sqrt{2}) } \\end{aligned}",
                         "Expand the numerator and denominator terms individually:<br>\\begin{aligned} \\text{Numerator} &= 5(6) - 5\\sqrt{12} + 2\\sqrt{12} - 2(2) \\\\\\ &= 30 - 3\\sqrt{12} - 4 \\\\\\ &= 26 - 3(2\\sqrt{3}) = 26 - 6\\sqrt{3} \\\\\\ \\text{Denominator} &= 6 - 2 = 4 \\end{aligned}",
-                        "Divide the expanded numerator by the expanded denominator and simplify the resulting fraction:<br>\\begin{aligned} \\dfrac{26 - 6\\sqrt{3}}{ 4 } &= \\dfrac{26}{ 4 } - \\dfrac{6\\sqrt{3}}{ 4 } \\\\\\ &= \\dfrac{13}{ 2 } - \\dfrac{3}{ 2 }\\sqrt{3} \\end{aligned}<br><br>Final Answer: $3$ and $\\dfrac{13}{ 2 } - \\dfrac{3}{ 2 }\\sqrt{3}$"
+                        "Divide the expanded numerator by the expanded denominator and simplify the resulting fraction:<br>\\begin{aligned} \\dfrac{26 - 6\\sqrt{3}}{ 4 } &= \\dfrac{26}{ 4 } - \\dfrac{6\\sqrt{3}}{ 4 } \\\\\\ &= \\dfrac{13}{ 2 } - \\dfrac{3}{ 2 }\\sqrt{3} \\end{aligned}",
+                "Final Answer: $3$ and $\\dfrac{13}{ 2 } - \\dfrac{3}{ 2 }\\sqrt{3}$"
                 ],
                 "pi_options": [
                         {
@@ -1598,7 +1639,8 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "First, expand the squared binomial term using double brackets:<br>\\begin{aligned} (3 - 2\\sqrt{5})^2 &= (3 - 2\\sqrt{5})(3 - 2\\sqrt{5}) \\\\\\ &= 9 - 6\\sqrt{5} - 6\\sqrt{5} + (4 \\times 5) \\\\\\ &= 9 - 12\\sqrt{5} + 20 \\\\\\ &= 29 - 12\\sqrt{5} \\end{aligned}",
                         "Next, rationalise the denominator of the fractional term by multiplying the numerator and denominator by $\\sqrt{5}$:<br>\\begin{aligned} \\dfrac{30}{ \\sqrt{5} } &= \\dfrac{30 \\times \\sqrt{5}}{ \\sqrt{5} \\times \\sqrt{5} } \\\\\\ &= \\dfrac{30\\sqrt{5}}{ 5 } \\\\\\ &= 6\\sqrt{5} \\end{aligned}",
-                        "Substitute both simplified parts back into the original expression and combine the terms:<br>\\begin{aligned} (3 - 2\\sqrt{5})^2 + \\dfrac{30}{ \\sqrt{5} } &= (29 - 12\\sqrt{5}) + 6\\sqrt{5} \\\\\\ &= 29 - 6\\sqrt{5} \\end{aligned}<br><br>Final Answer: $29 - 6\\sqrt{5}$"
+                        "Substitute both simplified parts back into the original expression and combine the terms:<br>\\begin{aligned} (3 - 2\\sqrt{5})^2 + \\dfrac{30}{ \\sqrt{5} } &= (29 - 12\\sqrt{5}) + 6\\sqrt{5} \\\\\\ &= 29 - 6\\sqrt{5} \\end{aligned}",
+                "Final Answer: $29 - 6\\sqrt{5}$"
                 ],
                 "pi_options": [
                         {
@@ -1635,7 +1677,8 @@ window.ALEVEL_QUESTIONS = [
                         "To rationalise the denominator, multiply both the numerator and the denominator by the conjugate of the denominator, which is $2\\sqrt{2} - \\sqrt{3}$:<br>\\begin{aligned} \\dfrac{3\\sqrt{2} - \\sqrt{3}}{ 2\\sqrt{2} + \\sqrt{3} } &= \\dfrac{(3\\sqrt{2} - \\sqrt{3})(2\\sqrt{2} - \\sqrt{3})}{ (2\\sqrt{2} + \\sqrt{3})(2\\sqrt{2} - \\sqrt{3}) } \\end{aligned}",
                         "Expand the denominator using the difference of two squares identity, $(a+b)(a-b) = a^2 - b^2$:<br>\\begin{aligned} (2\\sqrt{2} + \\sqrt{3})(2\\sqrt{2} - \\sqrt{3}) &= (2\\sqrt{2})^2 - (\\sqrt{3})^2 \\\\\\ &= (4 \\times 2) - 3 \\\\\\ &= 8 - 3 = 5 \\end{aligned}",
                         "Expand the numerator using double brackets:<br>\\begin{aligned} (3\\sqrt{2} - \\sqrt{3})(2\\sqrt{2} - \\sqrt{3}) &= (3\\sqrt{2})(2\\sqrt{2}) - 3\\sqrt{6} - 2\\sqrt{6} + (\\sqrt{3})^2 \\\\\\ &= (6 \\times 2) - 5\\sqrt{6} + 3 \\\\\\ &= 12 - 5\\sqrt{6} + 3 \\\\\\ &= 15 - 5\\sqrt{6} \\end{aligned}",
-                        "Combine the expanded numerator and denominator back into the fraction, and simplify by dividing both terms by 5:<br>\\begin{aligned} \\dfrac{15 - 5\\sqrt{6}}{ 5 } &= \\dfrac{15}{ 5 } - \\dfrac{5\\sqrt{6}}{ 5 } \\\\\\ &= 3 - \\sqrt{6} \\end{aligned}<br><br>Final Answer: $3 - \\sqrt{6}$"
+                        "Combine the expanded numerator and denominator back into the fraction, and simplify by dividing both terms by 5:<br>\\begin{aligned} \\dfrac{15 - 5\\sqrt{6}}{ 5 } &= \\dfrac{15}{ 5 } - \\dfrac{5\\sqrt{6}}{ 5 } \\\\\\ &= 3 - \\sqrt{6} \\end{aligned}",
+                "Final Answer: $3 - \\sqrt{6}$"
                 ],
                 "pi_options": [
                         {
@@ -1673,7 +1716,8 @@ window.ALEVEL_QUESTIONS = [
                         "Rationalise the denominator by multiplying the numerator and denominator by the conjugate $2 - \\sqrt{3}$:<br>\\begin{aligned} \\text{Length} &= \\dfrac{(5 + 2\\sqrt{3})(2 - \\sqrt{3})}{ (2 + \\sqrt{3})(2 - \\sqrt{3}) } \\end{aligned}",
                         "Expand the denominator using the difference of two squares:<br>\\begin{aligned} (2 + \\sqrt{3})(2 - \\sqrt{3}) &= (2)^2 - (\\sqrt{3})^2 \\\\\\ &= 4 - 3 = 1 \\end{aligned}",
                         "Expand the numerator using double brackets:<br>\\begin{aligned} (5 + 2\\sqrt{3})(2 - \\sqrt{3}) &= 5(2) - 5\\sqrt{3} + 2(2)\\sqrt{3} - (2 \\times 3) \\\\\\ &= 10 - 5\\sqrt{3} + 4\\sqrt{3} - 6 \\\\\\ &= 4 - \\sqrt{3} \\end{aligned}<br>Since the denominator is 1, the length of the rectangle is $4 - \\sqrt{3}$ cm.",
-                        "To find the perimeter, use the formula $\\text{Perimeter} = 2(\\text{Length} + \\text{Width})$:<br>\\begin{aligned} \\text{Perimeter} &= 2\\left( (4 - \\sqrt{3}) + (2 + \\sqrt{3}) \\right) \\\\\\ &= 2(4 + 2 - \\sqrt{3} + \\sqrt{3}) \\\\\\ &= 2(6) \\\\\\ &= 12 \\text{ cm} \\end{aligned}<br><br>Final Answer: $\\text{Length} = 4 - \\sqrt{3}\\text{ cm}$ and $\\text{Perimeter} = 12\\text{ cm}$"
+                        "To find the perimeter, use the formula $\\text{Perimeter} = 2(\\text{Length} + \\text{Width})$:<br>\\begin{aligned} \\text{Perimeter} &= 2\\left( (4 - \\sqrt{3}) + (2 + \\sqrt{3}) \\right) \\\\\\ &= 2(4 + 2 - \\sqrt{3} + \\sqrt{3}) \\\\\\ &= 2(6) \\\\\\ &= 12 \\text{ cm} \\end{aligned}",
+                "Final Answer: $\\text{Length} = 4 - \\sqrt{3}\\text{ cm}$ and $\\text{Perimeter} = 12\\text{ cm}$"
                 ],
                 "pi_options": [
                         {
@@ -1711,7 +1755,8 @@ window.ALEVEL_QUESTIONS = [
                         "Adjust the numerators accordingly and set up the single fraction subtraction over the common denominator:<br>\\begin{aligned} \\text{New Expression} &= \\dfrac{(\\sqrt{x} + 2)(\\sqrt{x} + 2) - (\\sqrt{x} - 2)(\\sqrt{x} - 2)}{ x - 4 } \\\\\\ &= \\dfrac{(\\sqrt{x} + 2)^2 - (\\sqrt{x} - 2)^2}{ x - 4 } \\end{aligned}",
                         "Expand the two squared binomial terms in the numerator:<br>\\begin{aligned} (\\sqrt{x} + 2)^2 &= x + 4\\sqrt{x} + 4 \\\\\\ (\\sqrt{x} - 2)^2 &= x - 4\\sqrt{x} + 4 \\end{aligned}",
                         "Subtract the second numerator expansion from the first inside the fraction:<br>\\begin{aligned} \\text{Numerator} &= (x + 4\\sqrt{x} + 4) - (x - 4\\sqrt{x} + 4) \\\\\\ &= x - x + 4\\sqrt{x} - (-4\\sqrt{x}) + 4 - 4 \\\\\\ &= 8\\sqrt{x} \\end{aligned}",
-                        "Combine the simplified numerator and denominator to form the single simplified fraction:<br>\\begin{aligned} \\text{Simplified Fraction} &= \\dfrac{8\\sqrt{x}}{ x - 4 } \\end{aligned}<br><br>Final Answer: $\\dfrac{8\\sqrt{x}}{ x - 4 }$"
+                        "Combine the simplified numerator and denominator to form the single simplified fraction:<br>\\begin{aligned} \\text{Simplified Fraction} &= \\dfrac{8\\sqrt{x}}{ x - 4 } \\end{aligned}",
+                "Final Answer: $\\dfrac{8\\sqrt{x}}{ x - 4 }$"
                 ],
                 "pi_options": [
                         {
@@ -1755,7 +1800,8 @@ window.ALEVEL_QUESTIONS = [
                         "The line $L$ crosses the $x$-axis at the point $D$. Since any point on the $x$-axis has a $y$-coordinate of $0$, substitute $y = 0$ into the equation of $L$ ($x - 2y + 6 = 0$):<br>\\begin{aligned} x - 2(0) + 6 &= 0 \\\\ x + 6 &= 0 \\implies x = -6 \\end{aligned}<br>Thus, the coordinates of point $D$ are $D(-6, 0)$.",
                         "To show that $L$ and $AB$ are perpendicular, compare their gradients. Rearrange the equation of $L$ into standard form $y = mx + c$:<br>\\begin{aligned} x - 2y + 6 &= 0 \\\\\\ 2y &= x + 6 \\\\ y &= \\dfrac{1}{ 2 }x + 3 \\end{aligned}<br>Thus, the gradient of $L$ is $m_L = \\dfrac{1}{ 2 }$. Since $m_{AB} \\times m_L = -2 \\times \\dfrac{1}{ 2 } = -1$, the lines are perpendicular.",
                         "Because $L$ is perpendicular to $AB$ at the intersection point $C$, the triangle $ACD$ is right-angled at $C$. Find the lengths of the base $CD$ and the height $AC$ using the distance formula:<br>\\begin{aligned} AC &= \\sqrt{ (2 - 1)^2 + (4 - 6)^2 } \\\\\\ &= \\sqrt{ 1^2 + (-2)^2 } = \\sqrt{ 5 } \\\\ CD &= \\sqrt{ (2 - (-6))^2 + (4 - 0)^2 } \\\\\\ &= \\sqrt{ 8^2 + 4^2 } = \\sqrt{ 64 + 16 } = \\sqrt{ 80 } = 4\\sqrt{ 5 } \\end{aligned}",
-                        "Calculate the area of the right-angled triangle $ACD$ using $\\text{Area} = \\dfrac{1}{ 2 } \\times \\text{base} \\times \\text{height}$:<br>\\begin{aligned} \\text{Area} &= \\dfrac{1}{ 2 } \\times AC \\times CD \\\\\\ &= \\dfrac{1}{ 2 } \\times \\sqrt{ 5 } \\times 4\\sqrt{ 5 } \\\\\\ &= \\dfrac{1}{ 2 } \\times 4 \\times 5 \\\\\\ &= 10 \\end{aligned}<br><br>Final Answer: $C(2, 4)$; ratio is $1:2$; $D(-6, 0)$; perpendicular product is $-1$ and area is $10$"
+                        "Calculate the area of the right-angled triangle $ACD$ using $\\text{Area} = \\dfrac{1}{ 2 } \\times \\text{base} \\times \\text{height}$:<br>\\begin{aligned} \\text{Area} &= \\dfrac{1}{ 2 } \\times AC \\times CD \\\\\\ &= \\dfrac{1}{ 2 } \\times \\sqrt{ 5 } \\times 4\\sqrt{ 5 } \\\\\\ &= \\dfrac{1}{ 2 } \\times 4 \\times 5 \\\\\\ &= 10 \\end{aligned}",
+                "Final Answer: $C(2, 4)$; ratio is $1:2$; $D(-6, 0)$; perpendicular product is $-1$ and area is $10$"
                 ],
                 "pi_options": [
                         {
@@ -1793,7 +1839,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find the gradient of the line $L_2$, rearrange its equation into the standard form $y = mx + c$:<br>\\begin{aligned} 3x - 2y + 8 &= 0 \\\\\\ 2y &= 3x + 8 \\\\ y &= \\dfrac{3}{ 2 }x + 4 \\end{aligned}<br>Thus, the gradient of the line $L_2$ is $m_2 = \\dfrac{3}{ 2 }$.",
                         "Next, write down the algebraic expression for the gradient of $L_1$ passing through $P(-2, k)$ and $Q(4, 5)$:<br>\\begin{aligned} m_1 &= \\dfrac{5 - k}{ 4 - (-2) } \\\\\\ &= \\dfrac{5 - k}{ 6 } \\end{aligned}",
                         "For part 1, parallel lines have equal gradients ($m_1 = m_2$). Set the gradients equal and solve for $k$:<br>\\begin{aligned} \\dfrac{5 - k}{ 6 } &= \\dfrac{3}{ 2 } \\\\\\ 2(5 - k) &= 18 \\\\\\ 10 - 2k &= 18 \\\\\\ -2k &= 8 \\implies k = -4 \\end{aligned}",
-                        "For part 2, perpendicular lines have gradients whose product is $-1$ ($m_1 \\times m_2 = -1$). Set up the product equation and solve for $k$:<br>\\begin{aligned} \\left( \\dfrac{5 - k}{ 6 } \\right) \\times \\left( \\dfrac{3}{ 2 } \\right) &= -1 \\\\\\ \\dfrac{3(5 - k)}{ 12 } &= -1 \\\\\\ \\dfrac{5 - k}{ 4 } &= -1 \\\\\\ 5 - k &= -4 \\implies k = 9 \\end{aligned}<br><br>Final Answer: Parallel $k = -4$; perpendicular $k = 9$"
+                        "For part 2, perpendicular lines have gradients whose product is $-1$ ($m_1 \\times m_2 = -1$). Set up the product equation and solve for $k$:<br>\\begin{aligned} \\left( \\dfrac{5 - k}{ 6 } \\right) \\times \\left( \\dfrac{3}{ 2 } \\right) &= -1 \\\\\\ \\dfrac{3(5 - k)}{ 12 } &= -1 \\\\\\ \\dfrac{5 - k}{ 4 } &= -1 \\\\\\ 5 - k &= -4 \\implies k = 9 \\end{aligned}",
+                "Final Answer: Parallel $k = -4$; perpendicular $k = 9$"
                 ],
                 "pi_options": [
                         {
@@ -1832,7 +1879,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find the gradient $m_{AB}$ of the line segment $AB$, use the gradient formula:<br>\\begin{aligned} m_{AB} &= \\dfrac{6 - 2}{ 5 - (-3) } \\\\\\ &= \\dfrac{4}{ 8 } = \\dfrac{1}{ 2 } \\end{aligned}",
                         "The perpendicular bisector must be perpendicular to $AB$. Find its gradient by taking the negative reciprocal of $m_{AB} = \\dfrac{1}{ 2 }$:<br>\\begin{aligned} m_{\\perp} &= -\\dfrac{1}{ m_{AB} } \\\\\\ &= -\\dfrac{1}{ 1/2 } = -2 \\end{aligned}",
                         "The perpendicular bisector passes through the midpoint $M(1, 4)$. Set up the straight line equation using the point-gradient formula $y - y_1 = m( x - x_1 )$:<br>\\begin{aligned} y - 4 &= -2( x - 1 ) \\\\ y - 4 &= -2x + 2 \\end{aligned}",
-                        "Rearrange the terms into the general form $ax + by + c = 0$ where $a$, $b$, and $c$ are integers:<br>\\begin{aligned} 2x + y - 4 - 2 &= 0 \\\\\\ 2x + y - 6 &= 0 \\end{aligned}<br><br>Final Answer: Midpoint is $(1, 4)$; gradient is $\\dfrac{1}{ 2 }$; equation is $2x + y - 6 = 0$"
+                        "Rearrange the terms into the general form $ax + by + c = 0$ where $a$, $b$, and $c$ are integers:<br>\\begin{aligned} 2x + y - 4 - 2 &= 0 \\\\\\ 2x + y - 6 &= 0 \\end{aligned}",
+                "Final Answer: Midpoint is $(1, 4)$; gradient is $\\dfrac{1}{ 2 }$; equation is $2x + y - 6 = 0$"
                 ],
                 "pi_options": [
                         {
@@ -1871,7 +1919,8 @@ window.ALEVEL_QUESTIONS = [
                         "Divide the entire quadratic equation by 2 to simplify, and factorise to solve for $x$:<br>\\begin{aligned} x^2 + 3x - 10 &= 0 \\\\\\ (x + 5)(x - 2) &= 0 \\end{aligned}<br>This yields two solutions: $x = -5$ and $x = 2$.",
                         "Substitute these $x$-values back into the linear equation $y = x + 3$ to find the corresponding $y$-coordinates:<ul><li>For $x = -5$: $y = -5 + 3 = -2 \\implies (-5, -2)$</li><li>For $x = 2$: $y = 2 + 3 = 5 \\implies (2, 5)$</li></ul>Thus, the two points of intersection are $(-5, -2)$ and $(2, 5)$.",
                         "To find the exact length of the chord joining these two points, apply the distance formula:<br>\\begin{aligned} \\text{Chord Length} &= \\sqrt{ (2 - (-5))^2 + (5 - (-2))^2 } \\\\\\ &= \\sqrt{ 7^2 + 7^2 } \\\\\\ &= \\sqrt{ 49 + 49 } \\\\\\ &= \\sqrt{ 98 } \\end{aligned}",
-                        "Simplify the surd to its simplest form by extracting the perfect square factor $49$:<br>\\begin{aligned} \\text{Chord Length} &= \\sqrt{ 49 \\times 2 } \\\\\\ &= 7\\sqrt{ 2 } \\end{aligned}<br><br>Final Answer: Intersections are $(-5, -2)$ and $(2, 5)$; exact chord length is $7\\sqrt{ 2 }$"
+                        "Simplify the surd to its simplest form by extracting the perfect square factor $49$:<br>\\begin{aligned} \\text{Chord Length} &= \\sqrt{ 49 \\times 2 } \\\\\\ &= 7\\sqrt{ 2 } \\end{aligned}",
+                "Final Answer: Intersections are $(-5, -2)$ and $(2, 5)$; exact chord length is $7\\sqrt{ 2 }$"
                 ],
                 "pi_options": [
                         {
@@ -1912,7 +1961,8 @@ window.ALEVEL_QUESTIONS = [
                         "Equate the individual coordinate components of the midpoint to solve for $a$ and $b$:<br>\\begin{aligned} \\dfrac{5 + a}{ 2 } &= \\dfrac{3}{ 2 } \\\\\\ 5 + a &= 3 \\implies a = -2 \\\\\\ \\dfrac{5 + b}{ 2 } &= \\dfrac{11}{ 2 } \\\\\\ 5 + b &= 11 \\implies b = 6 \\end{aligned}<br>Thus, the coordinates of the fourth vertex are $S(-2, 6)$.",
                         "To show that the diagonals $PR$ and $QS$ are perpendicular, find and compare their gradients. Calculate the gradient of $PR$ using $P(1, 2)$ and $R(2, 9)$:<br>\\begin{aligned} m_{PR} &= \\dfrac{9 - 2}{ 2 - 1 } \\\\\\ &= \\dfrac{7}{ 1 } = 7 \\end{aligned}",
                         "Calculate the gradient of $QS$ using $Q(5, 5)$ and $S(-2, 6)$:<br>\\begin{aligned} m_{QS} &= \\dfrac{6 - 5}{ -2 - 5 } \\\\\\ &= \\dfrac{1}{ -7 } = -\\dfrac{1}{ 7 } \\end{aligned}",
-                        "Multiply the two gradients to check for perpendicularity:<br>\\begin{aligned} m_{PR} \\times m_{QS} &= 7 \\times \\left( -\\dfrac{1}{ 7 } \\right) \\\\\\ &= -1 \\end{aligned}<br>Since the product of the gradients is $-1$, the diagonals $PR$ and $QS$ are perpendicular.<br><br>Final Answer: Midpoint is $\\left( \\dfrac{3}{ 2 }, \\dfrac{11}{ 2 } \\right)$; $S(-2, 6)$; gradient product is $-1$"
+                        "Multiply the two gradients to check for perpendicularity:<br>\\begin{aligned} m_{PR} \\times m_{QS} &= 7 \\times \\left( -\\dfrac{1}{ 7 } \\right) \\\\\\ &= -1 \\end{aligned}<br>Since the product of the gradients is $-1$, the diagonals $PR$ and $QS$ are perpendicular.",
+                "Final Answer: Midpoint is $\\left( \\dfrac{3}{ 2 }, \\dfrac{11}{ 2 } \\right)$; $S(-2, 6)$; gradient product is $-1$"
                 ],
                 "pi_options": [
                         {

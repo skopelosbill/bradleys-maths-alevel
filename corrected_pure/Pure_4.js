@@ -16,7 +16,8 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate the function $f(x) = e^{\\frac{1}{2}x^2}$ at each of these coordinate points:<br>\\begin{aligned}\ny_0 &= f(0) \\cr\n&= e^0 \\cr\n&= 1\n\\end{aligned}<br>\\begin{aligned}\ny_1 &= f(0.5) \\cr\n&= e^{0.125} \\approx 1.1331\n\\end{aligned}<br>\\begin{aligned}\ny_2 &= f(1.0) \\cr\n&= e^{0.5} \\approx 1.6487\n\\end{aligned}<br>\\begin{aligned}\ny_3 &= f(1.5) \\cr\n&= e^{1.125} \\approx 3.0802\n\\end{aligned}<br>\\begin{aligned}\ny_4 &= f(2.0) \\cr\n&= e^2 \\approx 7.3891\n\\end{aligned}",
                         "Apply the trapezium rule formula:<br>$$\\text{Estimate} = \\dfrac{h}{2} \\left[ y_0 + y_4 + 2(y_1 + y_2 + y_3) \\right]$$<br>$$\\text{Estimate} = \\dfrac{0.5}{2} \\left[ 1 + 7.3891 + 2(1.1331 + 1.6487 + 3.0802) \\right]$$",
                         "Perform the internal arithmetic steps:<br>$$\\text{Estimate} = 0.25 \\left[ 8.3891 + 2(5.8620) \\right]$$<br>\\begin{aligned}\n\\text{Estimate} &= 0.25 \\left[ 8.3891 + 11.7240 \\right] \\cr\n&= 0.25 \\left[ 20.1131 \\right] \\approx 5.028\n\\end{aligned}<br>Rounding to 3 significant figures gives $5.03$.",
-                        "To obtain a more accurate estimate of this integral, we could use more strips (increasing $n$). This reduces the width of each strip ($h$), meaning the straight-line tops of the trapezia will fit the actual curve of $y = e^{\\frac{1}{2}x^2}$ much more closely, reducing the error.<br><br>Final Answer: $$5.03$$"
+                        "To obtain a more accurate estimate of this integral, we could use more strips (increasing $n$). This reduces the width of each strip ($h$), meaning the straight-line tops of the trapezia will fit the actual curve of $y = e^{\\frac{1}{2}x^2}$ much more closely, reducing the error.",
+                "Final Answer: $$5.03$$"
                 ],
                 "pi_options": [
                         {
@@ -55,7 +56,8 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate the function $f(x) = \\sin x$ at each of these coordinate points, keeping high precision:<br>\\begin{aligned}\ny_0 &= \\sin(0) \\cr\n&= 0\n\\end{aligned}<br>$$y_1 = \\sin\\left(\\dfrac{\\pi}{8}\\right) \\approx 0.3827$$<br>$$y_2 = \\sin\\left(\\dfrac{\\pi}{4}\\right) \\approx 0.7071$$<br>$$y_3 = \\sin\\left(\\dfrac{\\pi}{3}\\right) \\approx 0.9239$$<br>\\begin{aligned}\ny_4 &= \\sin\\left(\\dfrac{\\pi}{2}\\right) \\cr\n&= 1\n\\end{aligned}",
                         "Apply the trapezium rule formula:<br>$$\\text{Estimate} = \\dfrac{h}{2} \\left[ y_0 + y_4 + 2(y_1 + y_2 + y_3) \\right]$$<br>$$\\text{Estimate} = \\dfrac{\\pi}{16} \\left[ 0 + 1 + 2(0.3827 + 0.7071 + 0.9239) \\right]$$",
                         "Perform the arithmetic steps:<br>$$\\text{Estimate} = \\dfrac{\\pi}{16} \\left[ 1 + 2(2.0137) \\right]$$<br>\\begin{aligned}\n\\text{Estimate} &= \\dfrac{\\pi}{16} \\left[ 1 + 4.0274 \\right] \\cr\n&= \\dfrac{\\pi}{16} \\left[ 5.0274 \\right] \\approx 0.9871\n\\end{aligned}<br>Rounding to 3 significant figures gives $0.987$.",
-                        "To determine if this is an underestimate or an overestimate, we examine the curvature of $y = \\sin x$. On the interval $\\left[0, \\, \\dfrac{\\pi}{2}\\right]$, the curve is concave down (convex). Because the curve bends downward, the straight-line tops of the four trapezia lie entirely beneath the curve. Thus, the sum of the areas of the trapezia is slightly less than the actual area under the curve, making the estimate an underestimate.<br><br>Final Answer: $$0.987$$"
+                        "To determine if this is an underestimate or an overestimate, we examine the curvature of $y = \\sin x$. On the interval $\\left[0, \\, \\dfrac{\\pi}{2}\\right]$, the curve is concave down (convex). Because the curve bends downward, the straight-line tops of the four trapezia lie entirely beneath the curve. Thus, the sum of the areas of the trapezia is slightly less than the actual area under the curve, making the estimate an underestimate.",
+                "Final Answer: $$0.987$$"
                 ],
                 "pi_options": [
                         {
@@ -94,7 +96,8 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate $f(x) = \\dfrac{1}{x}$ at each point:<br>\\begin{aligned}\ny_0 &= f(1) \\cr\n&= 1\n\\end{aligned}<br>\\begin{aligned}\ny_1 &= f(2) \\cr\n&= 0.5\n\\end{aligned}<br>$$y_2 = f(3) \\approx 0.3333$$<br>\\begin{aligned}\ny_3 &= f(4) \\cr\n&= 0.25\n\\end{aligned}<br>\\begin{aligned}\ny_4 &= f(5) \\cr\n&= 0.2\n\\end{aligned}",
                         "Apply the trapezium rule formula:<br>$$\\text{Estimate} = \\dfrac{1}{2} \\left[ 1 + 0.2 + 2(0.5 + 0.3333 + 0.25) \\right]$$<br>\\begin{aligned}\n\\text{Estimate} &= 0.5 \\left[ 1.2 + 2(1.0833) \\right] \\cr\n&= 0.5 \\left[ 1.2 + 2.1667 \\right] \\cr\n&= 0.5 \\left[ 3.3667 \\right] \\approx 1.6834\n\\end{aligned}<br>Rounding to 3 significant figures gives $1.68$.",
                         "Integrate analytically to find the exact value:<br>\\begin{aligned}\n\\int_1^5 \\dfrac{1}{x} \\text{d}x &= \\left[ \\ln x \\right]_1^5 \\cr\n&= \\ln 5 - \\ln 1 \\cr\n&= \\ln 5 \\approx 1.6094\n\\end{aligned}",
-                        "Calculate the percentage error using the formula $\\text{Percentage Error} = \\dfrac{|\\text{Estimate} - \\text{Exact}|}{\\text{Exact}} \\times 100\\\\%$:<br>$$\\text{Percentage Error} = \\dfrac{|1.6834 - 1.6094|}{1.6094} \\times 100\\\\%$$<br>$$\\text{Percentage Error} = \\dfrac{0.0740}{1.6094} \\times 100\\\\% \\approx 4.598\\\\%$$<br>Rounding to 3 significant figures gives $4.60\\\\%$.<br><br>Final Answer: $$1.68, \\quad \\ln 5, \\quad 4.60\\\\%$$"
+                        "Calculate the percentage error using the formula $\\text{Percentage Error} = \\dfrac{|\\text{Estimate} - \\text{Exact}|}{\\text{Exact}} \\times 100\\\\%$:<br>$$\\text{Percentage Error} = \\dfrac{|1.6834 - 1.6094|}{1.6094} \\times 100\\\\%$$<br>$$\\text{Percentage Error} = \\dfrac{0.0740}{1.6094} \\times 100\\\\% \\approx 4.598\\\\%$$<br>Rounding to 3 significant figures gives $4.60\\\\%$.",
+                "Final Answer: $$1.68, \\quad \\ln 5, \\quad 4.60\\\\%$$"
                 ],
                 "pi_options": [
                         {
@@ -133,7 +136,8 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate $f(x) = \\ln(2x - 1)$ at each of these points:<br>\\begin{aligned}\ny_0 &= \\ln(2(1) - 1) \\cr\n&= \\ln(1) \\cr\n&= 0\n\\end{aligned}<br>\\begin{aligned}\ny_1 &= \\ln(2(1.5) - 1) \\cr\n&= \\ln(2) \\approx 0.6931\n\\end{aligned}<br>\\begin{aligned}\ny_2 &= \\ln(2(2.0) - 1) \\cr\n&= \\ln(3) \\approx 1.0986\n\\end{aligned}<br>\\begin{aligned}\ny_3 &= \\ln(2(2.5) - 1) \\cr\n&= \\ln(4) \\approx 1.3863\n\\end{aligned}<br>\\begin{aligned}\ny_4 &= \\ln(2(3.0) - 1) \\cr\n&= \\ln(5) \\approx 1.6094\n\\end{aligned}",
                         "Apply the trapezium rule formula:<br>$$\\text{Estimate} = \\dfrac{0.5}{2} \\left[ 0 + 1.6094 + 2(0.6931 + 1.0986 + 1.3863) \\right]$$",
                         "Perform the arithmetic steps:<br>$$\\text{Estimate} = 0.25 \\left[ 1.6094 + 2(3.1780) \\right]$$<br>\\begin{aligned}\n\\text{Estimate} &= 0.25 \\left[ 1.6094 + 6.3560 \\right] \\cr\n&= 0.25 \\left[ 7.9654 \\right] \\approx 1.9913\n\\end{aligned}<br>Rounding to 3 significant figures gives $1.99$.",
-                        "Using more strips (increasing $n$) would decrease the width of each strip ($h$), because $h = \\dfrac{b-a}{n}$. As the width of the strips decreases, the straight-line tops of the trapezia follow the curve of $y = \\ln(2x-1)$ more closely, thereby increasing the accuracy of the approximation.<br><br>Final Answer: $$1.99$$"
+                        "Using more strips (increasing $n$) would decrease the width of each strip ($h$), because $h = \\dfrac{b-a}{n}$. As the width of the strips decreases, the straight-line tops of the trapezia follow the curve of $y = \\ln(2x-1)$ more closely, thereby increasing the accuracy of the approximation.",
+                "Final Answer: $$1.99$$"
                 ],
                 "pi_options": [
                         {
@@ -172,7 +176,8 @@ window.ALEVEL_QUESTIONS = [
                         "The corresponding depth coordinates (our $y$-values) are $d_0 = 0$, $d_1 = 0.8$, $d_2 = 1.4$, $d_3 = 1.1$, and $d_4 = 0$.",
                         "Apply the trapezium rule to estimate the area:<br>$$\\text{Area} \\approx \\dfrac{h}{2} \\left[ d_0 + d_4 + 2(d_1 + d_2 + d_3) \\right]$$<br>$$\\text{Area} \\approx \\dfrac{1.5}{2} \\left[ 0 + 0 + 2(0.8 + 1.4 + 1.1) \\right]$$",
                         "Simplify the terms within the bracket:<br>\\begin{aligned}\n\\text{Area} \\approx 0.75 \\left[ 2(3.3) \\right] &= 0.75 \\left[ 6.6 \\right] \\cr\n&= 4.95\n\\end{aligned}<br>So the estimated cross-sectional area is $4.95\\text{ m}^2$.",
-                        "One limitation of this model is that the trapezium rule assumes the riverbed consists of straight, flat slopes between the measured depths (represented by the straight top edges of the trapezia). In reality, riverbeds are smooth, irregular curves, so this straight-line approximation introduces a modeling error.<br><br>Final Answer: $$4.95\\text{ m}^2$$"
+                        "One limitation of this model is that the trapezium rule assumes the riverbed consists of straight, flat slopes between the measured depths (represented by the straight top edges of the trapezia). In reality, riverbeds are smooth, irregular curves, so this straight-line approximation introduces a modeling error.",
+                "Final Answer: $$4.95\\text{ m}^2$$"
                 ],
                 "pi_options": [
                         {
@@ -213,7 +218,8 @@ window.ALEVEL_QUESTIONS = [
                         "Factorise the quadratic expression by finding two numbers that multiply to $-12$ and add to $-4$. These numbers are $-6$ and $2$:<br>$$(y - 6)(y + 2) = 0$$",
                         "Solve for $y$:<br>\\begin{aligned}\ny &= 6 \\quad \\text{or} \\quad y \\cr\n&= -2\n\\end{aligned}",
                         "Substitute $x^2$ back in place of $y$ to solve for our original variable $x$:<br>\\begin{aligned}\nx^2 &= 6 \\quad \\text{or} \\quad x^2 \\cr\n&= -2\n\\end{aligned}",
-                        "Since $x$ must be a real root, $x^2$ must be greater than or equal to $0$. The equation $x^2 = -2$ has no real solutions. Therefore, we only solve:<br>\\begin{aligned}\nx^2 &= 6 \\cr\nx &= \\pm\\sqrt{6}\n\\end{aligned}<br><br>Final Answer: $$x = \\pm\\sqrt{6}$$"
+                        "Since $x$ must be a real root, $x^2$ must be greater than or equal to $0$. The equation $x^2 = -2$ has no real solutions. Therefore, we only solve:<br>\\begin{aligned}\nx^2 &= 6 \\cr\nx &= \\pm\\sqrt{6}\n\\end{aligned}",
+                "Final Answer: $$x = \\pm\\sqrt{6}$$"
                 ],
                 "pi_options": [
                         {
@@ -252,7 +258,8 @@ window.ALEVEL_QUESTIONS = [
                         "Factorise the quadratic equation by finding two numbers that multiply to $6$ and add to $-5$. These numbers are $-2$ and $-3$:<br>$$(t - 2)(t - 3) = 0$$",
                         "Solve for $t$:<br>\\begin{aligned}\nt &= 2 \\quad \\text{or} \\quad t \\cr\n&= 3\n\\end{aligned}",
                         "Substitute $\\sqrt{x}$ back in place of $t$ to find our original variable $x$:<br>\\begin{aligned}\n\\sqrt{x} &= 2 \\cr\nx &= 2^2 = 4\n\\end{aligned}<br>\\begin{aligned}\n\\sqrt{x} &= 3 \\cr\nx &= 3^2 = 9\n\\end{aligned}",
-                        "Verify that both solutions are valid by substituting them back into the original equation:<br>For $x = 4$: $4 - 5\\sqrt{4} + 6 = 4 - 10 + 6 = 0$ (Valid).<br>For $x = 9$: $9 - 5\\sqrt{9} + 6 = 9 - 15 + 6 = 0$ (Valid).<br><br>Final Answer: $$x = 4, \\quad 9$$"
+                        "Verify that both solutions are valid by substituting them back into the original equation:<br>For $x = 4$: $4 - 5\\sqrt{4} + 6 = 4 - 10 + 6 = 0$ (Valid).<br>For $x = 9$: $9 - 5\\sqrt{9} + 6 = 9 - 15 + 6 = 0$ (Valid).",
+                "Final Answer: $$x = 4, \\quad 9$$"
                 ],
                 "pi_options": [
                         {
@@ -292,7 +299,8 @@ window.ALEVEL_QUESTIONS = [
                         "This is a quartic equation in a quadratic form. Let $y = x^2$, which gives us:<br>$$y^2 - 5y + 4 = 0$$",
                         "Factorise the quadratic equation:<br>$$(y - 1)(y - 4) = 0$$",
                         "Solve for $y$:<br>\\begin{aligned}\ny &= 1 \\quad \\text{or} \\quad y \\cr\n&= 4\n\\end{aligned}",
-                        "Substitute $x^2$ back into our equations to solve for $x$:<br>\\begin{aligned}\nx^2 &= 1 \\cr\nx &= \\pm 1\n\\end{aligned}<br>\\begin{aligned}\nx^2 &= 4 \\cr\nx &= \\pm 2\n\\end{aligned}<br><br>Final Answer: $$x = -2, \\quad -1, \\quad 1, \\quad 2$$"
+                        "Substitute $x^2$ back into our equations to solve for $x$:<br>\\begin{aligned}\nx^2 &= 1 \\cr\nx &= \\pm 1\n\\end{aligned}<br>\\begin{aligned}\nx^2 &= 4 \\cr\nx &= \\pm 2\n\\end{aligned}",
+                "Final Answer: $$x = -2, \\quad -1, \\quad 1, \\quad 2$$"
                 ],
                 "pi_options": [
                         {
@@ -333,7 +341,8 @@ window.ALEVEL_QUESTIONS = [
                         "Solve for $u$:<br>\\begin{aligned}\nu &= 3 \\quad \\text{or} \\quad u \\cr\n&= -1\n\\end{aligned}",
                         "Now substitute $e^x$ back in place of $u$:<br>\\begin{aligned}\ne^x &= 3 \\quad \\text{or} \\quad e^x \\cr\n&= -1\n\\end{aligned}",
                         "Since the exponential function $e^x$ is strictly positive for all real values of $x$ ($e^x > 0$), the equation $e^x = -1$ has no real solutions and is discarded.",
-                        "Solve the remaining equation by taking the natural logarithm of both sides:<br>\\begin{aligned}\ne^x &= 3 \\cr\nx &= \\ln 3\n\\end{aligned}<br><br>Final Answer: $$x = \\ln 3$$"
+                        "Solve the remaining equation by taking the natural logarithm of both sides:<br>\\begin{aligned}\ne^x &= 3 \\cr\nx &= \\ln 3\n\\end{aligned}",
+                "Final Answer: $$x = \\ln 3$$"
                 ],
                 "pi_options": [
                         {
@@ -377,7 +386,8 @@ window.ALEVEL_QUESTIONS = [
                         "Solve for $u$:<br>\\begin{aligned}\nu &= \\dfrac{1}{2} \\quad \\text{or} \\quad u \\cr\n&= 1\n\\end{aligned}",
                         "Substitute $\\cos\\theta$ back into our solutions:<br>\\begin{aligned}\n\\cos\\theta &= \\dfrac{1}{2} \\quad \\text{or} \\quad \\cos\\theta \\cr\n&= 1\n\\end{aligned}",
                         "Find all solutions for $\\theta$ within the specified domain $0^\\circ \\le \\theta \\le 360^\\circ$:<br>For $\\cos\\theta = 1$: $\\theta = 0^\\circ$ and $\\theta = 360^\\circ$ (both endpoints are inclusive).<br>For $\\cos\\theta = \\dfrac{1}{2}$: $\\theta = 60^\\circ$ and $\\theta = 360^\\circ - 60^\\circ = 300^\\circ$.",
-                        "Combine all solutions in ascending order:<br>$$\\theta = 0^\\circ, \\quad 60^\\circ, \\quad 300^\\circ, \\quad 360^\\circ$$<br><br>Final Answer: $$\\theta = 0^\\circ, \\quad 60^\\circ, \\quad 300^\\circ, \\quad 360^\\circ$$"
+                        "Combine all solutions in ascending order:<br>$$\\theta = 0^\\circ, \\quad 60^\\circ, \\quad 300^\\circ, \\quad 360^\\circ$$",
+                "Final Answer: $$\\theta = 0^\\circ, \\quad 60^\\circ, \\quad 300^\\circ, \\quad 360^\\circ$$"
                 ],
                 "pi_options": [
                         {
@@ -417,7 +427,8 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Case 2:</strong> $n$ is odd.<br>Let $n = 2k + 1$, where $k$ is an integer. Substitute this into our expression:<br>$$n^3 + 5n - 1 = (2k + 1)^3 + 5(2k + 1) - 1$$",
                         "Expand the cubic and linear terms:<br>$$= (8k^3 + 12k^2 + 6k + 1) + 10k + 5 - 1$$<br>$$= 8k^3 + 12k^2 + 16k + 5$$",
                         "Rewrite the constant term $5$ as $4 + 1$ to allow factorisation:<br>$$= 8k^3 + 12k^2 + 16k + 4 + 1$$<br>$$= 2(4k^3 + 6k^2 + 8k + 2) + 1$$<br>Since $k$ is an integer, the bracketed term is an integer. Any integer in the form $2p + 1$ is odd, so the expression is odd when $n$ is odd.",
-                        "Since the expression is odd in both the even and odd cases, $n^3 + 5n - 1$ is odd for all positive integers $n$.<br><br>Final Answer: $$2(4k^3 + 5k) - 1 \\text{ and } 2(4k^3 + 6k^2 + 8k + 2) + 1 \\text{ are odd}$$"
+                        "Since the expression is odd in both the even and odd cases, $n^3 + 5n - 1$ is odd for all positive integers $n$.",
+                "Final Answer: $$2(4k^3 + 5k) - 1 \\text{ and } 2(4k^3 + 6k^2 + 8k + 2) + 1 \\text{ are odd}$$"
                 ],
                 "pi_options": [
                         {
@@ -455,7 +466,8 @@ window.ALEVEL_QUESTIONS = [
                         "Observe the two factors: $(n + 1)$ and $(n + 2)$ are consecutive positive integers.",
                         "For any two consecutive positive integers, one of the numbers must be even and the other must be odd.",
                         "Since one of the factors is even, it can be written in the form $2k$, where $k$ is an integer. The product of the two factors can therefore be written as:<br>$$\\text{Product} = 2k \\times (\\text{the other factor})$$<br>$$= 2 \\left[ k \\times (\\text{the other factor}) \\right]$$",
-                        "Since the product has a factor of $2$, the expression $(n + 1)(n + 2)$ must be even for all positive integers $n$.<br><br>Final Answer: $$(n+1)(n+2) \\text{ contains an even factor}$$"
+                        "Since the product has a factor of $2$, the expression $(n + 1)(n + 2)$ must be even for all positive integers $n$.",
+                "Final Answer: $$(n+1)(n+2) \\text{ contains an even factor}$$"
                 ],
                 "pi_options": [
                         {
@@ -495,7 +507,8 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Case 2:</strong> $n$ is odd.<br>Let $n = 2k + 1$, where $k$ is an integer. Substitute this into our expression:<br>$$n^2 + 2 = (2k + 1)^2 + 2$$",
                         "Expand and simplify the expression:<br>$$= (4k^2 + 4k + 1) + 2$$<br>$$= 4k^2 + 4k + 3$$",
                         "Factorise out a $4$ from the first two terms:<br>$$= 4(k^2 + k) + 3$$<br>Since $k$ is an integer, $(k^2 + k)$ is an integer. This expression is in the form $4m + 3$, which leaves a remainder of $3$ when divided by $4$. Therefore, $n^2 + 2$ is not divisible by $4$ when $n$ is odd.",
-                        "Since $n^2 + 2$ is not divisible by $4$ in either case, the expression is not divisible by $4$ for any positive integer $n$.<br><br>Final Answer: $$4k^2 + 2 \\text{ and } 4(k^2 + k) + 3 \\text{ leave remainders}$$"
+                        "Since $n^2 + 2$ is not divisible by $4$ in either case, the expression is not divisible by $4$ for any positive integer $n$.",
+                "Final Answer: $$4k^2 + 2 \\text{ and } 4(k^2 + k) + 3 \\text{ leave remainders}$$"
                 ],
                 "pi_options": [
                         {
@@ -536,7 +549,8 @@ window.ALEVEL_QUESTIONS = [
                         "Test $n = 3$:<br>\\begin{aligned}\n3^2 + 3 + 11 &= 9 + 3 + 11 \\cr\n&= 23\n\\end{aligned}<br>Since $23$ is only divisible by $1$ and itself, it is a prime number.",
                         "Test $n = 4$:<br>\\begin{aligned}\n4^2 + 4 + 11 &= 16 + 4 + 11 \\cr\n&= 31\n\\end{aligned}<br>Since $31$ is only divisible by $1$ and itself, it is a prime number.",
                         "Test $n = 5$:<br>\\begin{aligned}\n5^2 + 5 + 11 &= 25 + 5 + 11 \\cr\n&= 41\n\\end{aligned}<br>Since $41$ is only divisible by $1$ and itself, it is a prime number.",
-                        "Since we have tested every single integer in the domain $1 \\le n \\le 5$ and obtained a prime number in each case, the claim is proven by exhaustion.<br><br>Final Answer: $$13, \\, 17, \\, 23, \\, 31, \\, 41 \\text{ are prime}$$"
+                        "Since we have tested every single integer in the domain $1 \\le n \\le 5$ and obtained a prime number in each case, the claim is proven by exhaustion.",
+                "Final Answer: $$13, \\, 17, \\, 23, \\, 31, \\, 41 \\text{ are prime}$$"
                 ],
                 "pi_options": [
                         {
@@ -577,7 +591,8 @@ window.ALEVEL_QUESTIONS = [
                         "Combine the rational fractions over a common denominator:<br>$$x = \\dfrac{bc - ad}{bd}$$",
                         "Since $a, b, c,$ and $d$ are integers, both $(bc - ad)$ and $bd$ must be integers. Additionally, since $b \\ne 0$ and $d \\ne 0$, their product $bd \\ne 0$.",
                         "This implies that $x$ can be written as a ratio of two integers, which means $x$ must be a rational number. This directly contradicts our initial definition that $x$ is an irrational number.",
-                        "Since our assumption that the sum is rational leads to a contradiction, the assumption must be false. Therefore, the sum of a rational number and an irrational number must be irrational.<br><br>Final Answer: \\begin{aligned}\nx &= q - r \\cr\n\\text{contradiction}\n\\end{aligned}"
+                        "Since our assumption that the sum is rational leads to a contradiction, the assumption must be false. Therefore, the sum of a rational number and an irrational number must be irrational.",
+                "Final Answer: \\begin{aligned}\nx &= q - r \\cr\n\\text{contradiction}\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -619,7 +634,8 @@ window.ALEVEL_QUESTIONS = [
                         "Expand and simplify the algebraic terms:<br>$$x^2 + \\left(9x^2 - 42x + 49\\right) + 4x + 18x - 42 + 3 = 0$$<br>$$10x^2 - 20x + 10 = 0$$",
                         "Divide the quadratic equation by $10$ to simplify factorisation:<br>\\begin{aligned}\nx^2 - 2x + 1 &= 0 \\cr\n\\left(x - 1\\right)^2 &= 0\n\\end{aligned}<br>This quadratic equation has a single repeated real root:<br>$$x = 1$$",
                         "Substitute $x = 1$ back into the line equation to find the corresponding $y$-coordinate:<br>\\begin{aligned}\ny &= -3\\left(1\\right) + 7 \\cr\n&= 4\n\\end{aligned}<br>So, the line meets the circle at the single coordinate point $(1, 4)$.",
-                        "Since there is exactly one point of intersection, we can deduce that the line $y = -3x + 7$ is a tangent to the circle at the point $(1, 4)$.<br><br>Final Answer: $$(-2, 3), \\quad \\sqrt{10}, \\quad (1, 4), \\quad \\text{tangent}$$"
+                        "Since there is exactly one point of intersection, we can deduce that the line $y = -3x + 7$ is a tangent to the circle at the point $(1, 4)$.",
+                "Final Answer: $$(-2, 3), \\quad \\sqrt{10}, \\quad (1, 4), \\quad \\text{tangent}$$"
                 ],
                 "pi_options": [
                         {
@@ -661,7 +677,8 @@ window.ALEVEL_QUESTIONS = [
                         "Expand the brackets and simplify the quadratic expression:<br>$$x^2 + \\left(x^2 + 8x + 16\\right) - 6x - 4x - 16 - 12 = 0$$<br>$$2x^2 - 2x - 12 = 0$$",
                         "Divide the entire equation by $2$ to simplify factorisation:<br>\\begin{aligned}\nx^2 - x - 6 &= 0 \\cr\n\\left(x - 3\\right)\\left(x + 2\\right) &= 0\n\\end{aligned}<br>This yields two distinct real solutions for the $x$-coordinates:<br>\\begin{aligned}\nx &= 3 \\quad \\text{or} \\quad x \\cr\n&= -2\n\\end{aligned}",
                         "Substitute these $x$ values back into the line equation $y = x + 4$ to find the corresponding $y$-coordinates:<br>For $x = 3$: $y = 3 + 4 = 7 \\implies (3, 7)$<br>For $x = -2$: $y = -2 + 4 = 2 \\implies (-2, 2)$",
-                        "Since there are two distinct points of intersection, we can deduce that the line $y = x + 4$ is a secant line that cuts through the circle at $(3, 7)$ and $(-2, 2)$.<br><br>Final Answer: $$5, \\quad (3, 7) \\text{ and } (-2, 2), \\quad \\text{secant}$$"
+                        "Since there are two distinct points of intersection, we can deduce that the line $y = x + 4$ is a secant line that cuts through the circle at $(3, 7)$ and $(-2, 2)$.",
+                "Final Answer: $$5, \\quad (3, 7) \\text{ and } (-2, 2), \\quad \\text{secant}$$"
                 ],
                 "pi_options": [
                         {
@@ -701,7 +718,8 @@ window.ALEVEL_QUESTIONS = [
                         "Divide the quadratic equation by $2$ to simplify:<br>$$x^2 + 3x + 6 = 0$$",
                         "To prove there are no real roots (no intersection points), calculate the discriminant $\\Delta = b^2 - 4ac$ of this quadratic equation, where $a = 1, b = 3, c = 6$:<br>\\begin{aligned}\n\\Delta &= 3^2 - 4\\left(1\\right)\\left(6\\right) \\cr\n&= 9 - 24 \\cr\n&= -15\n\\end{aligned}",
                         "Since the discriminant is negative ($\\Delta < 0$), the quadratic equation has no real solutions. This proves algebraically that the line does not meet the circle.",
-                        "From this, we can deduce that the line $y = x + 8$ has no points in common with the circle and lies entirely outside the circle.<br><br>Final Answer: $$(1, 4), \\quad \\sqrt{5}, \\quad \\Delta = -15 < 0$$"
+                        "From this, we can deduce that the line $y = x + 8$ has no points in common with the circle and lies entirely outside the circle.",
+                "Final Answer: $$(1, 4), \\quad \\sqrt{5}, \\quad \\Delta = -15 < 0$$"
                 ],
                 "pi_options": [
                         {
@@ -742,7 +760,8 @@ window.ALEVEL_QUESTIONS = [
                         "Rearrange the line equation into the general straight-line form $Ax + By + C = 0$:<br>$$2x - y + k = 0$$",
                         "Recall the formula for the perpendicular distance $d$ from a point $(x_1, y_1)$ to a line $Ax + By + C = 0$:<br>$$d = \\dfrac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}$$",
                         "Substitute the coordinates of the centre $(0, 0)$ and the coefficients of our line ($A = 2, B = -1, C = k$) into the formula:<br>\\begin{aligned}\nd &= \\dfrac{|2\\left(0\\right) - 0 + k|}{\\sqrt{2^2 + \\left(-1\\right)^2}} \\cr\n&= \\dfrac{|k|}{\\sqrt{5}}\n\\end{aligned}",
-                        "Set this distance equal to the radius $\\sqrt{5}$ and solve for $k$:<br>\\begin{aligned}\n\\dfrac{|k|}{\\sqrt{5}} &= \\sqrt{5} \\cr\n|k| &= 5 \\cr\nk &= \\pm 5\n\\end{aligned}<br><br>Final Answer: $$k = \\pm 5$$"
+                        "Set this distance equal to the radius $\\sqrt{5}$ and solve for $k$:<br>\\begin{aligned}\n\\dfrac{|k|}{\\sqrt{5}} &= \\sqrt{5} \\cr\n|k| &= 5 \\cr\nk &= \\pm 5\n\\end{aligned}",
+                "Final Answer: $$k = \\pm 5$$"
                 ],
                 "pi_options": [
                         {
@@ -783,7 +802,8 @@ window.ALEVEL_QUESTIONS = [
                         "Find the gradient of the radius line connecting the centre $C(3, 4)$ and the point $P(2, 1)$ using $m = \\dfrac{y_2 - y_1}{x_2 - x_1}$:<br>\\begin{aligned}\nm_{\\text{radius}} &= \\dfrac{1 - 4}{2 - 3} \\cr\n&= \\dfrac{-3}{-1} \\cr\n&= 3\n\\end{aligned}",
                         "The tangent line is perpendicular to the radius at the point of contact. Find the gradient of the tangent using the negative reciprocal relationship:<br>\\begin{aligned}\nm_{\\text{tangent}} &= -\\dfrac{1}{m_{\\text{radius}}} \\cr\n&= -\\dfrac{1}{3}\n\\end{aligned}",
                         "Write the equation of the tangent line passing through $P(2, 1)$ using the point-slope formula:<br>$$y - 1 = -\\dfrac{1}{3}\\left(x - 2\\right)$$",
-                        "Multiply by $3$ to clear the fraction and rearrange into the form $ax + by = c$ where $a, b, c \\in \\mathbb{Z}$:<br>$$3(y - 1) = -(x - 2)$$<br>\\begin{aligned}\n3y - 3 &= -x + 2 \\cr\nx + 3y &= 5\n\\end{aligned}<br><br>Final Answer: $$x + 3y = 5$$"
+                        "Multiply by $3$ to clear the fraction and rearrange into the form $ax + by = c$ where $a, b, c \\in \\mathbb{Z}$:<br>$$3(y - 1) = -(x - 2)$$<br>\\begin{aligned}\n3y - 3 &= -x + 2 \\cr\nx + 3y &= 5\n\\end{aligned}",
+                "Final Answer: $$x + 3y = 5$$"
                 ],
                 "pi_options": [
                         {
@@ -824,7 +844,8 @@ window.ALEVEL_QUESTIONS = [
                         "To sketch the graph of $y = f(x)$, find the axes intercepts:<br>The $x$-intercepts occur where $f(x) = 0 \\implies x = 3, \\, x = 0.5, \\, x = -1$. These are the points $(3, 0)$, $(0.5, 0)$, and $(-1, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies f(0) = 3$. This is the point $(0, 3)$.<br><br>Since the leading coefficient $2$ is positive, the cubic curve starts in the bottom-left and heads up to the top-right:<br><br><img src='images/Pure/004171_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "To solve the inequality $f(x) < 0$, determine the intervals where the cubic curve lies below the $x$-axis. The roots partition the $x$-axis into intervals: $x < -1$, $-1 < x < 0.5$, $0.5 < x < 3$, and $x > 3$.<br><br>By testing values or observing our sketch, we see that $f(x) < 0$ on:<br>$$x < -1 \\quad \\text{and} \\quad 0.5 < x < 3$$",
                         "Express this solution in formal set notation:<br>${x : x < -1$ } \\cup ${x : 0.5 < x < 3$ }",
-                        "A stretch parallel to the $x$-axis with a scale factor of $\\dfrac{1}{3}$ replaces $x$ with $3x$ in the equation:<br>$$y = 2\\left(3x\\right)^3 - 5\\left(3x\\right)^2 - 4\\left(3x\\right) + 3$$<br>$$y = 2\\left(27x^3\\right) - 5\\left(9x^2\\right) - 12x + 3$$<br>$$y = 54x^3 - 45x^2 - 12x + 3$$<br><br>Final Answer: $$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad \\\\{x : x < -1\\\\} \\cup \\\\{x : 0.5 < x < 3\\\\}, \\quad y = 54x^3 - 45x^2 - 12x + 3$$"
+                        "A stretch parallel to the $x$-axis with a scale factor of $\\dfrac{1}{3}$ replaces $x$ with $3x$ in the equation:<br>$$y = 2\\left(3x\\right)^3 - 5\\left(3x\\right)^2 - 4\\left(3x\\right) + 3$$<br>$$y = 2\\left(27x^3\\right) - 5\\left(9x^2\\right) - 12x + 3$$<br>$$y = 54x^3 - 45x^2 - 12x + 3$$",
+                "Final Answer: $$\\left(x - 3\\right)\\left(2x - 1\\right)\\left(x + 1\\right), \\quad \\\\{x : x < -1\\\\} \\cup \\\\{x : 0.5 < x < 3\\\\}, \\quad y = 54x^3 - 45x^2 - 12x + 3$$"
                 ],
                 "pi_options": [
                         {
@@ -866,7 +887,8 @@ window.ALEVEL_QUESTIONS = [
                         "To sketch the graph of $y = g(x)$, determine the intercepts:<br>The $x$-intercepts occur where $g(x) = 0 \\implies x = 1, \\, x = 2, \\, x = 3$. This gives the points $(1, 0)$, $(2, 0)$, and $(3, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies g(0) = -6$. This is the point $(0, -6)$.<br><br>Sketch the positive cubic passing through these points:<br><br><img src='images/Pure/004172_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "To solve the inequality $g(x) \\ge 0$, find where the curve lies on or above the $x$-axis. From our sketch, this occurs on:<br>$$1 \\le x \\le 2 \\quad \\text{and} \\quad x \\ge 3$$",
                         "Express this solution in set notation:<br>{x : 1 \\le x \\le 2 } \\cup {x : x \\ge 3 }",
-                        "A translation of vector $\\begin{pmatrix} 2 \\\\\\ -1 \\end{pmatrix}$ shifts the graph $2$ units to the right and $1$ unit down. This replaces $x$ with $(x - 2)$ and $y$ with $(y + 1)$:<br>\\begin{aligned}\ny + 1 &= g\\left(x - 2\\right) \\cr\ny &= g\\left(x - 2\\right) - 1\n\\end{aligned}<br>Substituting our factorised expression yields:<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$<br><br>Final Answer: $$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\\\{x : 1 \\le x \\le 2\\\\} \\cup \\\\{x : x \\ge 3\\\\}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$"
+                        "A translation of vector $\\begin{pmatrix} 2 \\\\\\ -1 \\end{pmatrix}$ shifts the graph $2$ units to the right and $1$ unit down. This replaces $x$ with $(x - 2)$ and $y$ with $(y + 1)$:<br>\\begin{aligned}\ny + 1 &= g\\left(x - 2\\right) \\cr\ny &= g\\left(x - 2\\right) - 1\n\\end{aligned}<br>Substituting our factorised expression yields:<br>$$y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$",
+                "Final Answer: $$\\left(x - 1\\right)\\left(x - 2\\right)\\left(x - 3\\right), \\quad \\\\{x : 1 \\le x \\le 2\\\\} \\cup \\\\{x : x \\ge 3\\\\}, \\quad y = \\left(x - 3\\right)\\left(x - 4\\right)\\left(x - 5\\right) - 1$$"
                 ],
                 "pi_options": [
                         {
@@ -907,7 +929,8 @@ window.ALEVEL_QUESTIONS = [
                         "Factorise the quadratic factor $x^2 - 4x + 4$:<br>$$x^2 - 4x + 4 = \\left(x - 2\\right)^2$$<br>Thus, the fully factorised form with a repeated factor is:<br>$$h(x) = \\left(x + 1\\right)\\left(x - 2\\right)^2$$",
                         "To sketch the graph of $y = h(x)$, determine the intercepts:<br>The $x$-intercepts occur where $h(x) = 0 \\implies x = -1$ and $x = 2$ (repeated root). The points are $(-1, 0)$ and $(2, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies h(0) = 4$. This is the point $(0, 4)$.<br><br>Sketch the curve. Note that because $x = 2$ is a repeated root of even multiplicity, the curve touches the $x$-axis and turns around at $(2, 0)$ instead of crossing it:<br><br><img src='images/Pure/004173_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "To solve the inequality $h(x) > 0$, find where the curve lies strictly above the $x$-axis. From our sketch, the curve is strictly positive for $x > -1$, except at the repeated root $x = 2$ where $h(2) = 0$.<br><br>Write this solution in set notation:<br>${x : -1 < x < 2$ } \\cup ${x : x > 2$ }",
-                        "A stretch parallel to the $y$-axis with a scale factor of $3$ multiplies the entire function by $3$:<br>\\begin{aligned}\ny &= 3h(x) \\cr\n&= 3\\left(x^3 - 3x^2 + 4\\right)\n\\end{aligned}<br>$$y = 3x^3 - 9x^2 + 12$$<br><br>Final Answer: $$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\\\{x : -1 < x < 2\\\\} \\cup \\\\{x : x > 2\\\\}, \\quad y = 3x^3 - 9x^2 + 12$$"
+                        "A stretch parallel to the $y$-axis with a scale factor of $3$ multiplies the entire function by $3$:<br>\\begin{aligned}\ny &= 3h(x) \\cr\n&= 3\\left(x^3 - 3x^2 + 4\\right)\n\\end{aligned}<br>$$y = 3x^3 - 9x^2 + 12$$",
+                "Final Answer: $$\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\\\{x : -1 < x < 2\\\\} \\cup \\\\{x : x > 2\\\\}, \\quad y = 3x^3 - 9x^2 + 12$$"
                 ],
                 "pi_options": [
                         {
@@ -948,7 +971,8 @@ window.ALEVEL_QUESTIONS = [
                         "Factorise out the negative sign to simplify:<br>\\begin{aligned}\nf(x) &= -\\left(x + 1\\right)\\left(x^2 - 4x + 4\\right) \\cr\n&= -\\left(x + 1\\right)\\left(x - 2\\right)^2\n\\end{aligned}<br>This is the fully factorised form.",
                         "To sketch the graph of $y = f(x)$, determine the axes intercepts:<br>The $x$-intercepts occur where $f(x) = 0 \\implies x = -1$ and $x = 2$ (repeated root). This gives the points $(-1, 0)$ and $(2, 0)$.<br>The $y$-intercept occurs where $x = 0 \\implies f(0) = -4$. This is the point $(0, -4)$.<br><br>Since the leading coefficient is negative ($-1$), the curve starts in the top-left and heads down to the bottom-right. It touches the axis and turns around at $(2, 0)$:<br><br><img src='images/Pure/004174_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "To solve the inequality $f(x) \\ge 0$, find where the curve lies on or above the $x$-axis. From our sketch, this occurs for $x \\le -1$. The curve also touches the axis at $x = 2$, which satisfies $f(2) = 0 \\ge 0$.<br><br>Write this combined solution in set notation:<br>${x : x \\le -1$ } \\cup {2 }",
-                        "A reflection in the $x$-axis replaces $y$ with $-y$:<br>\\begin{aligned}\n-y &= f(x) \\cr\ny &= -f(x)\n\\end{aligned}<br>\\begin{aligned}\ny &= -\\left(3x^2 - x^3 - 4\\right) \\cr\n&= x^3 - 3x^2 + 4\n\\end{aligned}<br><br>Final Answer: $$-\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\\\{x : x \\le -1\\\\} \\cup \\\\{2\\\\}, \\quad y = x^3 - 3x^2 + 4$$"
+                        "A reflection in the $x$-axis replaces $y$ with $-y$:<br>\\begin{aligned}\n-y &= f(x) \\cr\ny &= -f(x)\n\\end{aligned}<br>\\begin{aligned}\ny &= -\\left(3x^2 - x^3 - 4\\right) \\cr\n&= x^3 - 3x^2 + 4\n\\end{aligned}",
+                "Final Answer: $$-\\left(x + 1\\right)\\left(x - 2\\right)^2, \\quad \\\\{x : x \\le -1\\\\} \\cup \\\\{2\\\\}, \\quad y = x^3 - 3x^2 + 4$$"
                 ],
                 "pi_options": [
                         {
@@ -1030,7 +1054,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find the number of runs $n$ completed for a total time of $2091$ minutes, apply the geometric series sum formula $S_n = \\dfrac{a\\left(1 - r^n\\right)}{1 - r}$:<br>\\begin{aligned}\nS_n &= \\dfrac{160\\left(1 - 0.98^n\\right)}{1 - 0.98} \\cr\n&= \\dfrac{160\\left(1 - 0.98^n\\right)}{0.02} \\cr\n&= 8000\\left(1 - 0.98^n\\right)\n\\end{aligned},",
                         "Set $S_n = 2091$ and solve for $n$:<br>\\begin{aligned}\n8000\\left(1 - 0.98^n\\right) &= 2091 \\cr\n1 - 0.98^n &= \\dfrac{2091}{8000} \\approx 0.261375\n\\end{aligned}<br>\\begin{aligned}\n0.98^n &= 1 - 0.261375 \\cr\n&= 0.738625\n\\end{aligned}",
                         "Take logarithms to solve for $n$:<br>\\begin{aligned}\nn\\ln\\left(0.98\\right) &= \\ln\\left(0.738625\\right) \\cr\nn &= \\dfrac{\\ln\\left(0.738625\\right)}{\\ln\\left(0.98\\right)}\n\\end{aligned}<br>$$n = \\dfrac{-0.30296}{-0.02020} \\approx 14.996$$<br>Rounding to the nearest integer, Sarah has run $15$ half marathons.",
-                        "There are two main reasons why this model may not be appropriate in the long term:<br>1. Human athletic performance eventually plateaus. A geometric model predicts that her times will decrease infinitely toward $0$ minutes, which is physically impossible.<br>2. It does not account for real-world variables such as injury, aging, illness, changing weather conditions, or variations in motivation.<br><br>Final Answer: $$12, \\quad 15, \\quad \\text{athletic plateau and weather/injury}$$"
+                        "There are two main reasons why this model may not be appropriate in the long term:<br>1. Human athletic performance eventually plateaus. A geometric model predicts that her times will decrease infinitely toward $0$ minutes, which is physically impossible.<br>2. It does not account for real-world variables such as injury, aging, illness, changing weather conditions, or variations in motivation.",
+                "Final Answer: $$12, \\quad 15, \\quad \\text{athletic plateau and weather/injury}$$"
                 ],
                 "pi_options": [
                         {
@@ -1070,7 +1095,8 @@ window.ALEVEL_QUESTIONS = [
                         "Solve for $d$:<br>\\begin{aligned}\n9d &= 52 - 25 = 27 \\cr\nd &= 3\n\\end{aligned}<br>This confirms that the weekly increase is $3\\text{ km}$.",
                         "To find the total distance run over $20$ weeks, apply the arithmetic series sum formula $S_n = \\dfrac{n}{2}\\left[2a + \\left(n-1\\right)d\\right]$ with $n=20, a=25, d=3$:<br>$$S_{20} = \\dfrac{20}{2} \\left[ 2\\left(25\\right) + \\left(20 - 1\\right)3 \\right]$$",
                         "Simplify inside the brackets and calculate:<br>$$S_{20} = 10 \\left[ 50 + 19\\left(3\\right) \\right]$$<br>\\begin{aligned}\nS_{20} &= 10 \\left[ 50 + 57 \\right] \\cr\n&= 10 \\left[ 107 \\right] \\cr\n&= 1070\n\\end{aligned}<br>So, James runs a total of $1070\\text{ km}$ over the first $20$ weeks.",
-                        "James cannot continue this pattern indefinitely because it is physically impossible to continuously increase mileage. Within a couple of years, his weekly distances would exceed human physical limits and inevitably lead to severe injury, extreme fatigue, or overtraining syndrome.<br><br>Final Answer: $$d = 3, \\quad 1070\\text{ km}, \\quad \\text{physical limits and risk of injury}$$"
+                        "James cannot continue this pattern indefinitely because it is physically impossible to continuously increase mileage. Within a couple of years, his weekly distances would exceed human physical limits and inevitably lead to severe injury, extreme fatigue, or overtraining syndrome.",
+                "Final Answer: $$d = 3, \\quad 1070\\text{ km}, \\quad \\text{physical limits and risk of injury}$$"
                 ],
                 "pi_options": [
                         {
@@ -1110,7 +1136,8 @@ window.ALEVEL_QUESTIONS = [
                         "This series is a geometric progression where:<br>The first term $a = 2000\\left(1.04\\right) = 2080$<br>The common ratio $r = 1.04$<br>The number of terms $n = 10$",
                         "To find the value of the investment at the end of $10$ years, apply the geometric series sum formula $S_n = \\dfrac{a\\left(r^n - 1\\right)}{r - 1}$:<br>\\begin{aligned}\nS_{10} &= \\dfrac{2080\\left(1.04^{10} - 1\\right)}{1.04 - 1} \\cr\n&= \\dfrac{2080\\left(1.04^{10} - 1\\right)}{0.04}\n\\end{aligned}",
                         "Calculate using high-precision intermediate steps to avoid rounding errors:<br>$$1.04^{10} \\approx 1.480244$$<br>\\begin{aligned}\nS_{10} &= \\dfrac{2080\\left(0.480244\\right)}{0.04} \\cr\n&= 52000 \\times 0.480244 \\cr\n&= 24972.70\n\\end{aligned}<br>Rounding to the nearest pound, the total value is £24,973.",
-                        "One key assumption made by this model is that the interest rate remains constant at $4\\\\%$ for the entire $10$ years. In reality, savings rates are variable and subject to economic fluctuations. Alternatively, the model assumes the investor never misses a payment and consistently deposits exactly £2000 every single year.<br><br>Final Answer: $$£24,973, \\quad \\text{constant interest rate and fixed annual deposits}$$"
+                        "One key assumption made by this model is that the interest rate remains constant at $4\\\\%$ for the entire $10$ years. In reality, savings rates are variable and subject to economic fluctuations. Alternatively, the model assumes the investor never misses a payment and consistently deposits exactly £2000 every single year.",
+                "Final Answer: $$£24,973, \\quad \\text{constant interest rate and fixed annual deposits}$$"
                 ],
                 "pi_options": [
                         {
@@ -1151,7 +1178,8 @@ window.ALEVEL_QUESTIONS = [
                         "Take natural logarithms of both sides to solve for $n$. Note that because $\\ln\\left(0.95\\right) < 0$, dividing by it reverses the inequality sign:<br>$0.95^{n-1} < 0.5 \\implies \\left(n - 1\\right)\\ln\\left(0.95\\right) < \\ln\\left(0.5\\right)$<br>$$n - 1 > \\dfrac{\\ln\\left(0.5\\right)}{\\ln\\left(0.95\\right)}$$<br>$$n - 1 > \\dfrac{-0.69315}{-0.05129} \\approx 13.52 \\implies n > 14.52$$<br>Since $n$ must be an integer, the smallest valid value is $n = 15$. This proves the mass falls below $40$ grams on the fifteenth day.",
                         "To find the total mass loss over the first $30$ days, calculate the mass remaining on the $30$-th day, $M_{30}$:<br>\\begin{aligned}\nM_{30} &= 80\\left(0.95\\right)^{29} \\approx 80\\left(0.225927\\right) \\cr\n&= 18.07\\text{ grams}\n\\end{aligned}",
                         "Subtract the remaining mass on the $30$-th day from the initial mass of $80$ grams to find the total loss:<br>\\begin{aligned}\n\\text{Total Loss} &= 80 - 18.07 \\cr\n&= 61.93\\text{ grams}\n\\end{aligned}<br>Rounding to the nearest gram, the total mass loss is $62\\text{ grams}$.",
-                        "A discrete geometric model is appropriate for short periods because measurements are taken at set daily intervals, and the daily decay factor is easily calculated. However, radioactive decay is fundamentally a continuous physical process. A continuous exponential model $M(t) = M_0 e^{-\\lambda t}$ is preferred in physics because it allows calculations at any fraction of a second and integrates naturally with other physical rate models.<br><br>Final Answer: $$15, \\quad 62\\text{ grams}, \\quad \\text{discrete daily sampling vs continuous physical rates}$$"
+                        "A discrete geometric model is appropriate for short periods because measurements are taken at set daily intervals, and the daily decay factor is easily calculated. However, radioactive decay is fundamentally a continuous physical process. A continuous exponential model $M(t) = M_0 e^{-\\lambda t}$ is preferred in physics because it allows calculations at any fraction of a second and integrates naturally with other physical rate models.",
+                "Final Answer: $$15, \\quad 62\\text{ grams}, \\quad \\text{discrete daily sampling vs continuous physical rates}$$"
                 ],
                 "pi_options": [
                         {
@@ -1190,7 +1218,8 @@ window.ALEVEL_QUESTIONS = [
                         "Write the formula for the value of the machinery at the end of year $n$, $V_n = V_0 \\left(0.85\\right)^n$:<br>$$V_n = 50000\\left(0.85\\right)^n$$",
                         "To find the value at the end of the fourth year, calculate $V_4$:<br>$$V_4 = 50000\\left(0.85\\right)^4$$<br>\\begin{aligned}\nV_4 &= 50000\\left(0.522006\\right) \\cr\n&= 26100.31\n\\end{aligned}<br>Rounding to the nearest pound, the value is £26,100.",
                         "To find the total depreciation over the first $8$ years, calculate the remaining value of the machinery at the end of the eighth year, $V_8$:<br>$$V_8 = 50000\\left(0.85\\right)^8$$<br>\\begin{aligned}\nV_8 &= 50000\\left(0.272490\\right) \\cr\n&= 13624.52\n\\end{aligned}",
-                        "Subtract this remaining value from the initial purchase price of £50,000 to find the total depreciation:<br>\\begin{aligned}\n\\text{Total Depreciation} &= 50000 - 13624.52 \\cr\n&= 36375.48\n\\end{aligned}<br>Rounding to the nearest pound, the total depreciation is £36,375.<br><br>Final Answer: $$£26,100, \\quad £36,375$$"
+                        "Subtract this remaining value from the initial purchase price of £50,000 to find the total depreciation:<br>\\begin{aligned}\n\\text{Total Depreciation} &= 50000 - 13624.52 \\cr\n&= 36375.48\n\\end{aligned}<br>Rounding to the nearest pound, the total depreciation is £36,375.",
+                "Final Answer: $$£26,100, \\quad £36,375$$"
                 ],
                 "pi_options": [
                         {
@@ -1229,7 +1258,8 @@ window.ALEVEL_QUESTIONS = [
                         "Multiply the entire expansion by the constant factor of $\\dfrac{1}{3}$:<br>$$\\dfrac{1}{3}\\left(1 + \\dfrac{x}{18} + \\dfrac{x^2}{216} + \\dots\\right) = \\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648} + \\dots$$",
                         "To find the constants $a$ and $b$, write the rational expression as a product of $(a+bx)$ and the binomial expansion:<br>$$\\dfrac{a + bx}{\\sqrt{9 - x}} = \\left(a + bx\\right)\\left(9 - x\\right)^{-1/2}$$<br>$$\\approx \\left(a + bx\\right)\\left(\\dfrac{1}{3} + \\dfrac{x}{54} + \\dots\\right)$$<br>Expand the terms up to the $x$ term:<br>$$\\text{Expansion} = \\dfrac{a}{3} + \\left(\\dfrac{a}{54} + \\dfrac{b}{3}\\right)x + \\dots$$",
                         "Equate this expansion to the given expression $12 - x \\dots$:<br>By comparing the constant terms:<br>\\begin{aligned}\n\\dfrac{a}{3} &= 12 \\cr\na &= 36\n\\end{aligned}",
-                        "By comparing the coefficients of the $x$ terms and substituting $a = 36$:<br>\\begin{aligned}\n\\dfrac{a}{54} + \\dfrac{b}{3} &= -1 \\cr\n\\dfrac{36}{54} + \\dfrac{b}{3} &= -1\n\\end{aligned}<br>\\begin{aligned}\n\\dfrac{2}{3} + \\dfrac{b}{3} &= -1 \\cr\n2 + b &= -3 \\cr\nb &= -5\n\\end{aligned}<br><br>Final Answer: \\begin{aligned}\n\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a &= 36, \\, b \\cr\n&= -5\n\\end{aligned}"
+                        "By comparing the coefficients of the $x$ terms and substituting $a = 36$:<br>\\begin{aligned}\n\\dfrac{a}{54} + \\dfrac{b}{3} &= -1 \\cr\n\\dfrac{36}{54} + \\dfrac{b}{3} &= -1\n\\end{aligned}<br>\\begin{aligned}\n\\dfrac{2}{3} + \\dfrac{b}{3} &= -1 \\cr\n2 + b &= -3 \\cr\nb &= -5\n\\end{aligned}",
+                "Final Answer: \\begin{aligned}\n\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a &= 36, \\, b \\cr\n&= -5\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1269,7 +1299,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find $a$ and $b$, multiply the linear factor by our binomial expansion series up to the quadratic term:<br>$$\\left(1 + ax\\right)\\left(1 + 2x\\right)^{-1} \\approx \\left(1 + ax\\right)\\left(1 - 2x + 4x^2\\right)$$",
                         "Expand the brackets and group terms by powers of $x$:<br>$$= 1\\left(1 - 2x + 4x^2\\right) + ax\\left(1 - 2x\\right)$$<br>$$= 1 - 2x + 4x^2 + ax - 2ax^2$$<br>$$= 1 + \\left(a - 2\\right)x + \\left(4 - 2a\\right)x^2$$",
                         "Compare this result with the given expansion $1 + 5x + bx^2 \\dots$:<br>By comparing the coefficients of the $x$ terms:<br>\\begin{aligned}\na - 2 &= 5 \\cr\na &= 7\n\\end{aligned}",
-                        "By comparing the coefficients of the $x^2$ terms and substituting $a = 7$:<br>\\begin{aligned}\nb &= 4 - 2a \\cr\nb &= 4 - 2\\left(7\\right) = 4 - 14 = -10\n\\end{aligned}<br><br>Final Answer: \\begin{aligned}\n1 - 2x + 4x^2, \\quad |x| < \\dfrac{1}{2}, \\quad a &= 7, \\, b \\cr\n&= -10\n\\end{aligned}"
+                        "By comparing the coefficients of the $x^2$ terms and substituting $a = 7$:<br>\\begin{aligned}\nb &= 4 - 2a \\cr\nb &= 4 - 2\\left(7\\right) = 4 - 14 = -10\n\\end{aligned}",
+                "Final Answer: \\begin{aligned}\n1 - 2x + 4x^2, \\quad |x| < \\dfrac{1}{2}, \\quad a &= 7, \\, b \\cr\n&= -10\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1308,7 +1339,8 @@ window.ALEVEL_QUESTIONS = [
                         "To approximate $\\sqrt{1.04}$, we substitute $x = 0.01$ into both the left-hand and right-hand sides of our expansion:<br>\\begin{aligned}\n\\text{LHS} &= \\left(1 + 4\\left(0.01\\right)\\right)^{1/2} \\cr\n&= \\sqrt{1.04}\n\\end{aligned}",
                         "Substitute $x = 0.01$ into our simplified binomial expansion:<br>$$\\text{RHS} = 1 + 2\\left(0.01\\right) - 2\\left(0.01\\right)^2$$<br>$$= 1 + 0.02 - 2\\left(0.0001\\right)$$<br>$$= 1 + 0.02 - 0.0002$$",
                         "Evaluate the arithmetic expression:<br>\\begin{aligned}\n\\text{RHS} &= 1.02 - 0.0002 \\cr\n&= 1.0198\n\\end{aligned}",
-                        "Write the final answer correct to $5$ decimal places:<br>$$\\sqrt{1.04} \\approx 1.01980$$<br><br>Final Answer: $$1 + 2x - 2x^2, \\quad 1.01980$$"
+                        "Write the final answer correct to $5$ decimal places:<br>$$\\sqrt{1.04} \\approx 1.01980$$",
+                "Final Answer: $$1 + 2x - 2x^2, \\quad 1.01980$$"
                 ],
                 "pi_options": [
                         {
@@ -1346,7 +1378,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find the coefficient of the rational expression, rewrite it as a product:<br>$$\\dfrac{2 + x}{\\left(1 - 3x\\right)^2} = \\left(2 + x\\right)\\left(1 - 3x\\right)^{-2}$$",
                         "Substitute our binomial expansion into the product:<br>$$\\approx \\left(2 + x\\right)\\left(1 + 6x + 27x^2\\right)$$",
                         "To find the coefficient of $x^2$, identify only the terms in the expansion that will result in an $x^2$ term after multiplying out the brackets:<br>$$\\text{Term } 1: 2 \\times 27x^2 = 54x^2$$<br>$$\\text{Term } 2: x \\times 6x = 6x^2$$",
-                        "Sum these two components to find the total $x^2$ term:<br>\\begin{aligned}\n\\text{Total } x^2 \\text{ term} &= 54x^2 + 6x^2 \\cr\n&= 60x^2\n\\end{aligned}<br>The coefficient of $x^2$ is indeed $60$.<br><br>Final Answer: $$1 + 6x + 27x^2, \\quad 60$$"
+                        "Sum these two components to find the total $x^2$ term:<br>\\begin{aligned}\n\\text{Total } x^2 \\text{ term} &= 54x^2 + 6x^2 \\cr\n&= 60x^2\n\\end{aligned}<br>The coefficient of $x^2$ is indeed $60$.",
+                "Final Answer: $$1 + 6x + 27x^2, \\quad 60$$"
                 ],
                 "pi_options": [
                         {
@@ -1384,7 +1417,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find the composite expansion, we first expand $(1 + 4x)^3$ fully using the standard binomial theorem:<br>$$\\left(1 + 4x\\right)^3 = 1^3 + 3\\left(1\\right)^2\\left(4x\\right) + 3\\left(1\\right)\\left(4x\\right)^2 + \\left(4x\\right)^3$$<br>$$\\left(1 + 4x\\right)^3 = 1 + 12x + 48x^2 + 64x^3$$",
                         "Write the composite product as a multiplication of these two expansion series up to the $x^2$ terms:<br>$$\\text{Product} \\approx \\left(1 + 12x + 48x^2\\right)\\left(1 + 4x + 24x^2\\right)$$",
                         "Identify the cross-multiplications that yield an $x^2$ term:<br>$$\\text{Term } 1: 1 \\times 24x^2 = 24x^2$$<br>$$\\text{Term } 2: 12x \\times 4x = 48x^2$$<br>$$\\text{Term } 3: 48x^2 \\times 1 = 48x^2$$",
-                        "Sum these three components to obtain the final coefficient of $x^2$:<br>\\begin{aligned}\n\\text{Total } x^2 \\text{ term} &= 24x^2 + 48x^2 + 48x^2 \\cr\n&= 120x^2\n\\end{aligned}<br>So the coefficient of $x^2$ is $120$.<br><br>Final Answer: $$1 + 4x + 24x^2, \\quad 120$$"
+                        "Sum these three components to obtain the final coefficient of $x^2$:<br>\\begin{aligned}\n\\text{Total } x^2 \\text{ term} &= 24x^2 + 48x^2 + 48x^2 \\cr\n&= 120x^2\n\\end{aligned}<br>So the coefficient of $x^2$ is $120$.",
+                "Final Answer: $$1 + 4x + 24x^2, \\quad 120$$"
                 ],
                 "pi_options": [
                         {
@@ -1425,7 +1459,8 @@ window.ALEVEL_QUESTIONS = [
                         "For the second part of the question, we are given instead that $ff(3) = 3$. First, find an expression for $f(3)$ in terms of $c$:<br>\\begin{aligned}\nf(3) &= c + 6\\left(3\\right) - 3^2 \\cr\n&= c + 18 - 9 \\cr\n&= c + 9\n\\end{aligned}",
                         "Now substitute this result back into $f(x)$ to evaluate the composite function $f(f(3))$:<br>\\begin{aligned}\nf(f(3)) &= f\\left(c + 9\\right) \\cr\n&= c + 6\\left(c + 9\\right) - \\left(c + 9\\right)^2\n\\end{aligned}<br>$$f(f(3)) = c + 6c + 54 - \\left(c^2 + 18c + 81\\right)$$<br>$$f(f(3)) = -c^2 - 11c - 27$$",
                         "Set this expression equal to $3$ and rearrange to form a standard quadratic equation in terms of $c$:<br>\\begin{aligned}\n-c^2 - 11c - 27 &= 3 \\cr\nc^2 + 11c + 30 &= 0\n\\end{aligned}",
-                        "Factorise and solve the quadratic equation for $c$:<br>\\begin{aligned}\n\\left(c + 5\\right)\\left(c + 6\\right) &= 0 \\cr\nc &= -5 \\quad \\text{or} \\quad c = -6\n\\end{aligned}<br><br>Final Answer: \\begin{aligned}\nc &= 5, \\quad c \\cr\n&= -5 \\text{ or } c \\cr\n&= -6\n\\end{aligned}"
+                        "Factorise and solve the quadratic equation for $c$:<br>\\begin{aligned}\n\\left(c + 5\\right)\\left(c + 6\\right) &= 0 \\cr\nc &= -5 \\quad \\text{or} \\quad c = -6\n\\end{aligned}",
+                "Final Answer: \\begin{aligned}\nc &= 5, \\quad c \\cr\n&= -5 \\text{ or } c \\cr\n&= -6\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1464,7 +1499,8 @@ window.ALEVEL_QUESTIONS = [
                         "For $x$ to be defined as a real number, the denominator of this fraction cannot be zero:<br>$$y - 2 \\ne 0 \\implies y \\ne 2$$<br>So, the range of $g(x)$ is all real numbers except $2$. In set notation, this is $\\\\{y \\in \\mathbb{R} : y \\ne 2\\\\}$.",
                         "To find the composite function $gh(x)$, substitute $h(x) = x^2 - 2$ in place of $x$ inside the function $g(x)$:<br>\\begin{aligned}\ngh(x) &= g\\left(h\\left(x\\right)\\right) \\cr\n&= g\\left(x^2 - 2\\right) \\cr\n&= \\dfrac{2\\left(x^2 - 2\\right) + 3}{\\left(x^2 - 2\\right) - 1}\n\\end{aligned}",
                         "Expand and simplify the numerator and denominator:<br>\\begin{aligned}\ngh(x) &= \\dfrac{2x^2 - 4 + 3}{x^2 - 3} \\cr\n&= \\dfrac{2x^2 - 1}{x^2 - 3}\n\\end{aligned}",
-                        "The composite function $gh(x)$ is not defined when the denominator is zero:<br>\\begin{aligned}\nx^2 - 3 &= 0 \\cr\nx^2 &= 3 \\cr\nx &= \\pm\\sqrt{3}\n\\end{aligned}<br>Additionally, the domain of $gh(x)$ requires that the output of $h(x)$ is within the domain of $g(x)$. Since $g(x)$ is undefined at $x = 1$, we must also exclude $h(x) = 1 \\implies x^2 - 2 = 1 \\implies x = \\pm\\sqrt{3}$, which yields the exact same restriction.<br><br>Final Answer: $$y \\ne 2, \\quad gh(x) = \\dfrac{2x^2 - 1}{x^2 - 3} \\text{ for } x \\ne \\pm\\sqrt{3}$$"
+                        "The composite function $gh(x)$ is not defined when the denominator is zero:<br>\\begin{aligned}\nx^2 - 3 &= 0 \\cr\nx^2 &= 3 \\cr\nx &= \\pm\\sqrt{3}\n\\end{aligned}<br>Additionally, the domain of $gh(x)$ requires that the output of $h(x)$ is within the domain of $g(x)$. Since $g(x)$ is undefined at $x = 1$, we must also exclude $h(x) = 1 \\implies x^2 - 2 = 1 \\implies x = \\pm\\sqrt{3}$, which yields the exact same restriction.",
+                "Final Answer: $$y \\ne 2, \\quad gh(x) = \\dfrac{2x^2 - 1}{x^2 - 3} \\text{ for } x \\ne \\pm\\sqrt{3}$$"
                 ],
                 "pi_options": [
                         {
@@ -1504,7 +1540,8 @@ window.ALEVEL_QUESTIONS = [
                         "Substitute $f(x)$ back in place of $y$, which gives us two separate modulus equations to solve for $x$:<br>\\begin{aligned}\n\\text{Case 1: } f(x) &= 0 \\quad \\text{and} \\quad \\text{Case 2: } f(x) \\cr\n&= 5\n\\end{aligned}",
                         "Solve **Case 1**: $f(x) = 0$:<br>\\begin{aligned}\n|2x - 5| - 3 &= 0 \\cr\n|2x - 5| &= 3\n\\end{aligned}<br>\\begin{aligned}\n2x - 5 &= 3 \\cr\n2x &= 8 \\cr\nx &= 4\n\\end{aligned}<br>\\begin{aligned}\n2x - 5 &= -3 \\cr\n2x &= 2 \\cr\nx &= 1\n\\end{aligned}",
                         "Solve **Case 2**: $f(x) = 5$:<br>\\begin{aligned}\n|2x - 5| - 3 &= 5 \\cr\n|2x - 5| &= 8\n\\end{aligned}<br>\\begin{aligned}\n2x - 5 &= 8 \\cr\n2x &= 13 \\cr\nx &= \\dfrac{13}{2} = 6.5\n\\end{aligned}<br>\\begin{aligned}\n2x - 5 &= -8 \\cr\n2x &= -3 \\cr\nx &= -\\dfrac{3}{2} = -1.5\n\\end{aligned}",
-                        "Combine all solutions to obtain our final set of roots:<br>$$x = -1.5, \\quad 1, \\quad 4, \\quad 6.5$$<br><br>Final Answer: $$y \\ge -3, \\quad x = -1.5, \\, 1, \\, 4, \\, 6.5$$"
+                        "Combine all solutions to obtain our final set of roots:<br>$$x = -1.5, \\quad 1, \\quad 4, \\quad 6.5$$",
+                "Final Answer: $$y \\ge -3, \\quad x = -1.5, \\, 1, \\, 4, \\, 6.5$$"
                 ],
                 "pi_options": [
                         {
@@ -1544,7 +1581,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find $f^{-1}(x)$, let $y = \\left(x - 2\\right)^2$ and solve for $x$ in terms of $y$:<br>\\begin{aligned}\n\\sqrt{y} &= x - 2 \\cr\nx &= 2 + \\sqrt{y}\n\\end{aligned}<br>Since our domain is $x \\ge 2$, we choose the positive square root. Replace variables to write the inverse function:<br>$$f^{-1}(x) = 2 + \\sqrt{x} \\quad \\text{for} \\quad x \\ge 0$$",
                         "To solve the equation $f(x) = f^{-1}(x)$, we use the mathematical identity that any intersection between a function and its inverse must lie along the line of symmetry $y = x$. Therefore, we solve:<br>\\begin{aligned}\nf(x) &= x \\cr\nx^2 - 4x + 4 &= x\n\\end{aligned}",
                         "Rearrange to form a standard quadratic equation:<br>$$x^2 - 5x + 4 = 0$$<br>Factorise the quadratic:<br>\\begin{aligned}\n\\left(x - 1\\right)\\left(x - 4\\right) &= 0 \\cr\nx &= 1 \\quad \\text{or} \\quad x = 4\n\\end{aligned}",
-                        "Verify our solutions against the original domain constraints. Since the domain of $f(x)$ is strictly $x \\ge 2$, we must discard $x = 1$. This leaves the unique real solution:<br>$$x = 4$$<br><br>Final Answer: \\begin{aligned}\nf^{-1}(x) &= 2 + \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x \\cr\n&= 4\n\\end{aligned}"
+                        "Verify our solutions against the original domain constraints. Since the domain of $f(x)$ is strictly $x \\ge 2$, we must discard $x = 1$. This leaves the unique real solution:<br>$$x = 4$$",
+                "Final Answer: \\begin{aligned}\nf^{-1}(x) &= 2 + \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x \\cr\n&= 4\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1584,7 +1622,8 @@ window.ALEVEL_QUESTIONS = [
                         "Replace the variables to write the expression for $f^{-1}(x)$:<br>$$f^{-1}(x) = \\dfrac{3x + 1}{x - 3}$$<br>Since $f^{-1}(x)$ is identical to our original function $f(x)$, the function is proven to be self-inverse.",
                         "Because $f(x)$ is self-inverse, applying the function twice returns the original input variable:<br>\\begin{aligned}\nf^2(x) &= f\\left(f\\left(x\\right)\\right) \\cr\n&= x\n\\end{aligned}",
                         "From this, we can deduce that any even number of compositions will simplify to the identity function, while any odd number of compositions simplifies to $f(x)$:<br>\\begin{aligned}\nf^{2n}(x) &= x \\quad \\text{and} \\quad f^{2n+1}(x) \\cr\n&= f(x)\n\\end{aligned}",
-                        "Since $2026$ is an even integer, the composite function $f^{2026}(x)$ is equivalent to the identity function:<br>$$f^{2026}(5) = 5$$<br><br>Final Answer: \\begin{aligned}\na &= 3, \\quad f(f(x)) = x \\cr\nf^{-1}(x) &= f(x), \\quad 5\n\\end{aligned}"
+                        "Since $2026$ is an even integer, the composite function $f^{2026}(x)$ is equivalent to the identity function:<br>$$f^{2026}(5) = 5$$",
+                "Final Answer: \\begin{aligned}\na &= 3, \\quad f(f(x)) = x \\cr\nf^{-1}(x) &= f(x), \\quad 5\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1623,7 +1662,8 @@ window.ALEVEL_QUESTIONS = [
                         "Apply the parametric chain rule $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{\\dfrac{\\text{d}y}{\\text{d}t}}{\\dfrac{\\text{d}x}{\\text{d}t}}$ and simplify the compound fraction:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{t^2 + 4}{t^2}}{\\dfrac{t^2 - 4}{t^2}} \\cr\n&= \\dfrac{t^2 + 4}{t^2 - 4}\n\\end{aligned}",
                         "Stationary points require the derivative $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which occurs when the numerator of the derivative is equal to zero:<br>\\begin{aligned}\nt^2 + 4 &= 0 \\cr\nt^2 &= -4\n\\end{aligned}<br>Since the square of any real number must be non-negative ($t^2 \\ge 0$), the equation $t^2 = -4$ has no real solutions. Since $\\dfrac{\\text{d}y}{\\text{d}t}$ is never zero, the curve has no stationary points.",
                         "To eliminate the parameter $t$ and find the Cartesian equation, calculate $x + y$ and $x - y$:<br>\\begin{aligned}\nx + y &= \\left(t + \\dfrac{4}{t}\\right) + \\left(t - \\dfrac{4}{t}\\right) = 2t \\cr\nt &= \\dfrac{x + y}{2}\n\\end{aligned}<br>\\begin{aligned}\nx - y &= \\left(t + \\dfrac{4}{t}\\right) - \\left(t - \\dfrac{4}{t}\\right) = \\dfrac{8}{t} \\cr\nt &= \\dfrac{8}{x - y}\n\\end{aligned}",
-                        "Equate the two expressions for $t$ to eliminate the parameter:<br>\\begin{aligned}\n\\dfrac{x + y}{2} &= \\dfrac{8}{x - y} \\cr\n\\left(x + y\\right)\\left(x - y\\right) &= 16\n\\end{aligned}<br>Expand the difference of two squares to obtain the Cartesian equation:<br>$$x^2 - y^2 = 16$$<br><br>Final Answer: \\begin{aligned}\n\\dfrac{t^2 + 4}{t^2 - 4}, \\quad t^2 + 4 \\ne 0 \\cr\n\\text{no stationary points}, \\quad x^2 - y^2 &= 16\n\\end{aligned}"
+                        "Equate the two expressions for $t$ to eliminate the parameter:<br>\\begin{aligned}\n\\dfrac{x + y}{2} &= \\dfrac{8}{x - y} \\cr\n\\left(x + y\\right)\\left(x - y\\right) &= 16\n\\end{aligned}<br>Expand the difference of two squares to obtain the Cartesian equation:<br>$$x^2 - y^2 = 16$$",
+                "Final Answer: \\begin{aligned}\n\\dfrac{t^2 + 4}{t^2 - 4}, \\quad t^2 + 4 \\ne 0 \\cr\n\\text{no stationary points}, \\quad x^2 - y^2 &= 16\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1665,7 +1705,8 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate the gradient of the tangent at $\\theta = \\dfrac{\\pi}{4}$:<br>\\begin{aligned}\nm &= -\\dfrac{4}{3}\\cot\\left(\\dfrac{\\pi}{4}\\right) \\cr\n&= -\\dfrac{4}{3}\\left(1\\right) \\cr\n&= -\\dfrac{4}{3}\n\\end{aligned}",
                         "Write the equation of the tangent line passing through $\\left(\\dfrac{3\\sqrt{2}}{2}, \\, 2\\sqrt{2}\\right)$ using the point-slope formula:<br>$$y - 2\\sqrt{2} = -\\dfrac{4}{3}\\left(x - \\dfrac{3\\sqrt{2}}{2}\\right)$$",
                         "Multiply by $3$ and collect terms to rearrange into the form $ax + by = c$:<br>$$3\\left(y - 2\\sqrt{2}\\right) = -4\\left(x - \\dfrac{3\\sqrt{2}}{2}\\right)$$<br>\\begin{aligned}\n3y - 6\\sqrt{2} &= -4x + 6\\sqrt{2} \\cr\n4x + 3y &= 12\\sqrt{2}\n\\end{aligned}",
-                        "To find the Cartesian equation, rearrange the parametric equations to isolate the trigonometric functions:<br>\\begin{aligned}\n\\cos\\theta &= \\dfrac{x}{3} \\quad \\text{and} \\quad \\sin\\theta \\cr\n&= \\dfrac{y}{4}\n\\end{aligned}<br>Substitute these into the fundamental Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$:<br>\\begin{aligned}\n\\left(\\dfrac{x}{3}\\right)^2 + \\left(\\dfrac{y}{4}\\right)^2 &= 1 \\cr\n\\dfrac{x^2}{9} + \\dfrac{y^2}{16} &= 1\n\\end{aligned}<br><br>Final Answer: \\begin{aligned}\n-\\dfrac{4}{3}\\cot\\theta, \\quad 4x + 3y &= 12\\sqrt{2}, \\quad \\dfrac{x^2}{9} + \\dfrac{y^2}{16} \\cr\n&= 1\n\\end{aligned}"
+                        "To find the Cartesian equation, rearrange the parametric equations to isolate the trigonometric functions:<br>\\begin{aligned}\n\\cos\\theta &= \\dfrac{x}{3} \\quad \\text{and} \\quad \\sin\\theta \\cr\n&= \\dfrac{y}{4}\n\\end{aligned}<br>Substitute these into the fundamental Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$:<br>\\begin{aligned}\n\\left(\\dfrac{x}{3}\\right)^2 + \\left(\\dfrac{y}{4}\\right)^2 &= 1 \\cr\n\\dfrac{x^2}{9} + \\dfrac{y^2}{16} &= 1\n\\end{aligned}",
+                "Final Answer: \\begin{aligned}\n-\\dfrac{4}{3}\\cot\\theta, \\quad 4x + 3y &= 12\\sqrt{2}, \\quad \\dfrac{x^2}{9} + \\dfrac{y^2}{16} \\cr\n&= 1\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1705,7 +1746,8 @@ window.ALEVEL_QUESTIONS = [
                         "For a stationary point, we require $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which implies:<br>$$2e^t = 0$$<br>The exponential function $e^t$ is strictly positive for all real values of $t$ ($e^t > 0$). Therefore, the derivative $2e^t$ can never equal zero, meaning the curve has no stationary points.",
                         "To find the Cartesian equation, isolate $e^t$ in the equation for $x$:<br>\\begin{aligned}\nx &= e^t + 2 \\cr\ne^t &= x - 2\n\\end{aligned}",
                         "Substitute $e^t = x - 2$ into the parametric equation for $y$ using the identity $e^{2t} = \\left(e^t\\right)^2$:<br>\\begin{aligned}\ny &= \\left(e^t\\right)^2 - 3 \\cr\ny &= \\left(x - 2\\right)^2 - 3\n\\end{aligned}",
-                        "To state the domain of our Cartesian equation, consider the range of $x$ in terms of the parameter $t$. Since $e^t > 0$ for all real $t$, we have:<br>\\begin{aligned}\nx &= e^t + 2 > 2 \\cr\nx > 2\n\\end{aligned}<br><br>Final Answer: \\begin{aligned}\n2e^t, \\quad 2e^t \\ne 0 \\cr\n\\text{no stationary points}, \\quad y &= \\left(x - 2\\right)^2 - 3 \\text{ for } x > 2\n\\end{aligned}"
+                        "To state the domain of our Cartesian equation, consider the range of $x$ in terms of the parameter $t$. Since $e^t > 0$ for all real $t$, we have:<br>\\begin{aligned}\nx &= e^t + 2 > 2 \\cr\nx > 2\n\\end{aligned}",
+                "Final Answer: \\begin{aligned}\n2e^t, \\quad 2e^t \\ne 0 \\cr\n\\text{no stationary points}, \\quad y &= \\left(x - 2\\right)^2 - 3 \\text{ for } x > 2\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1745,7 +1787,8 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiate the parametric equations with respect to the parameter $t$:<br>\\begin{aligned}\n\\dfrac{\\text{d}x}{\\text{d}t} &= 2t \\quad \\text{and} \\quad \\dfrac{\\text{d}y}{\\text{d}t} \\cr\n&= 3t^2 - 3\n\\end{aligned}",
                         "Apply the parametric chain rule to find $\\dfrac{\\text{d}y}{\\text{d}x}$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{\\text{d}y}{\\text{d}t}}{\\dfrac{\\text{d}x}{\\text{d}t}} \\cr\n&= \\dfrac{3t^2 - 3}{2t}\n\\end{aligned}",
                         "Stationary points occur when the derivative $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which requires the numerator to be zero (where the denominator is non-zero):<br>\\begin{aligned}\n3t^2 - 3 &= 0 \\cr\nt^2 &= 1 \\cr\nt &= \\pm 1\n\\end{aligned}",
-                        "Find the Cartesian coordinates corresponding to these two parameter values:<br>For $t = 1$: $x = 1^2 = 1$ and $y = 1^3 - 3(1) = -2 \\implies (1, -2)$<br>For $t = -1$: $x = (-1)^2 = 1$ and $y = (-1)^3 - 3(-1) = 2 \\implies (1, 2)$<br>This confirms there are exactly two stationary points on the curve: $(1, -2)$ and $(1, 2)$.<br><br>Final Answer: $$(0,0) \\text{ and } (3,0), \\quad \\dfrac{3t^2 - 3}{2t}, \\quad (1, -2) \\text{ and } (1, 2)$$"
+                        "Find the Cartesian coordinates corresponding to these two parameter values:<br>For $t = 1$: $x = 1^2 = 1$ and $y = 1^3 - 3(1) = -2 \\implies (1, -2)$<br>For $t = -1$: $x = (-1)^2 = 1$ and $y = (-1)^3 - 3(-1) = 2 \\implies (1, 2)$<br>This confirms there are exactly two stationary points on the curve: $(1, -2)$ and $(1, 2)$.",
+                "Final Answer: $$(0,0) \\text{ and } (3,0), \\quad \\dfrac{3t^2 - 3}{2t}, \\quad (1, -2) \\text{ and } (1, 2)$$"
                 ],
                 "pi_options": [
                         {
@@ -1784,7 +1827,8 @@ window.ALEVEL_QUESTIONS = [
                         "Apply the parametric differentiation rule $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{\\dfrac{\\text{d}y}{\\text{d}t}}{\\dfrac{\\text{d}x}{\\text{d}t}}$ and simplify:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{2t^2 + 1}{t^2}}{\\dfrac{2t^2 - 1}{t^2}} \\cr\n&= \\dfrac{2t^2 + 1}{2t^2 - 1}\n\\end{aligned}",
                         "Stationary points require $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which occurs when the numerator is zero:<br>\\begin{aligned}\n2t^2 + 1 &= 0 \\cr\nt^2 &= -0.5\n\\end{aligned}<br>Since $t^2 \\ge 0$ for all real values of $t$, the equation $t^2 = -0.5$ has no real solutions. Thus, the derivative can never be zero, and there are no stationary points.",
                         "To find the Cartesian equation, eliminate the parameter $t$ by evaluating the linear combinations $x + y$ and $x - y$:<br>\\begin{aligned}\nx + y &= \\left(2t + \\dfrac{1}{t}\\right) + \\left(2t - \\dfrac{1}{t}\\right) = 4t \\cr\nt &= \\dfrac{x + y}{4}\n\\end{aligned}<br>\\begin{aligned}\nx - y &= \\left(2t + \\dfrac{1}{t}\\right) - \\left(2t - \\dfrac{1}{t}\\right) = \\dfrac{2}{t} \\cr\nt &= \\dfrac{2}{x - y}\n\\end{aligned}",
-                        "Equate these two expressions for $t$ to eliminate the parameter:<br>$$\\dfrac{x + y}{4} = \\dfrac{2}{x - y}$$<br>Multiply across to remove fractions:<br>\\begin{aligned}\n\\left(x + y\\right)\\left(x - y\\right) &= 8 \\cr\nx^2 - y^2 &= 8\n\\end{aligned}<br><br>Final Answer: \\begin{aligned}\n\\dfrac{2t^2 + 1}{2t^2 - 1}, \\quad 2t^2 + 1 \\ne 0 \\cr\n\\text{no stationary points}, \\quad x^2 - y^2 &= 8\n\\end{aligned}"
+                        "Equate these two expressions for $t$ to eliminate the parameter:<br>$$\\dfrac{x + y}{4} = \\dfrac{2}{x - y}$$<br>Multiply across to remove fractions:<br>\\begin{aligned}\n\\left(x + y\\right)\\left(x - y\\right) &= 8 \\cr\nx^2 - y^2 &= 8\n\\end{aligned}",
+                "Final Answer: \\begin{aligned}\n\\dfrac{2t^2 + 1}{2t^2 - 1}, \\quad 2t^2 + 1 \\ne 0 \\cr\n\\text{no stationary points}, \\quad x^2 - y^2 &= 8\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1825,7 +1869,8 @@ window.ALEVEL_QUESTIONS = [
                         "For the second substance, its mass $N$ at time $t$ can be modelled by $N = 500e^{-kt}$, where $k$ is the positive decay constant. Since $N = 400$ at $t = 10$:<br>\\begin{aligned}\n400 &= 500e^{-10k} \\cr\ne^{-10k} &= 0.8\n\\end{aligned}<br>\\begin{aligned}\n-10k &= \\ln\\left(0.8\\right) \\cr\nk &= -0.1\\ln\\left(0.8\\right) = 0.1\\ln\\left(1.25\\right) \\approx 0.022314\n\\end{aligned}",
                         "To find when both substances are decaying at the same rate, find the derivatives $\\dfrac{\\text{d}M}{\\text{d}t}$ and $\\dfrac{\\text{d}N}{\\text{d}t}$:<br>\\begin{aligned}\n\\dfrac{\\text{d}M}{\\text{d}t} &= 200\\left(-0.04\\right)e^{-0.04t} \\cr\n&= -8e^{-0.04t}\n\\end{aligned}<br>\\begin{aligned}\n\\dfrac{\\text{d}N}{\\text{d}t} &= 500\\left(-k\\right)e^{-kt} \\cr\n&= -500ke^{-kt}\n\\end{aligned}",
                         "Equate the rates of decay (the positive magnitudes of the derivatives) and substitute $k \\approx 0.022314$:<br>$$8e^{-0.04t} = 500\\left(0.022314\\right)e^{-0.022314t}$$<br>$$8e^{-0.04t} = 11.157e^{-0.022314t}$$",
-                        "Rearrange to solve for $t$:<br>\\begin{aligned}\n\\dfrac{e^{-0.022314t}}{e^{-0.04t}} &= \\dfrac{8}{11.157} \\cr\ne^{0.017686t} &= 0.71704\n\\end{aligned}<br>\\begin{aligned}\n0.017686t &= \\ln\\left(0.71704\\right) \\cr\n&= -0.33266\n\\end{aligned}<br>$$t = \\dfrac{-0.33266}{-0.017686} \\approx 18.8 \\text{ minutes}$$<br><br>Final Answer: $$17.3 \\text{ minutes}, \\quad 18.8 \\text{ minutes}$$"
+                        "Rearrange to solve for $t$:<br>\\begin{aligned}\n\\dfrac{e^{-0.022314t}}{e^{-0.04t}} &= \\dfrac{8}{11.157} \\cr\ne^{0.017686t} &= 0.71704\n\\end{aligned}<br>\\begin{aligned}\n0.017686t &= \\ln\\left(0.71704\\right) \\cr\n&= -0.33266\n\\end{aligned}<br>$$t = \\dfrac{-0.33266}{-0.017686} \\approx 18.8 \\text{ minutes}$$",
+                "Final Answer: $$17.3 \\text{ minutes}, \\quad 18.8 \\text{ minutes}$$"
                 ],
                 "pi_options": [
                         {
@@ -1865,7 +1910,8 @@ window.ALEVEL_QUESTIONS = [
                         "Isolate the exponential term and take natural logarithms:<br>$$e^{-0.08t} = \\dfrac{30}{65} \\approx 0.461538$$<br>\\begin{aligned}\n-0.08t &= \\ln\\left(0.461538\\right) \\cr\n&= -0.773190\n\\end{aligned}",
                         "Solve for $t$:<br>$$t = \\dfrac{-0.773190}{-0.08} \\approx 9.6648$$<br>Rounding to 3 significant figures gives $9.66$ minutes.",
                         "To find the rate of change of temperature, differentiate $\\theta$ with respect to $t$ using the chain rule:<br>\\begin{aligned}\n\\dfrac{\\text{d}\\theta}{\\text{d}t} &= 65\\left(-0.08\\right)e^{-0.08t} \\cr\n&= -5.2e^{-0.08t}\n\\end{aligned}",
-                        "Substitute $t = 15$ into the derivative expression to find the rate at that instant:<br>\\begin{aligned}\n\\dfrac{\\text{d}\\theta}{\\text{d}t} &= -5.2e^{-0.08\\left(15\\right)} \\cr\n&= -5.2e^{-1.2}\n\\end{aligned}<br>$$\\dfrac{\\text{d}\\theta}{\\text{d}t} \\approx -5.2\\left(0.301194\\right) \\approx -1.57^\\circ\\text{C per minute}$$<br><br>Final Answer: $$85^\\circ\\text{C}, \\quad 9.66 \\text{ minutes}, \\quad -1.57^\\circ\\text{C per minute}$$"
+                        "Substitute $t = 15$ into the derivative expression to find the rate at that instant:<br>\\begin{aligned}\n\\dfrac{\\text{d}\\theta}{\\text{d}t} &= -5.2e^{-0.08\\left(15\\right)} \\cr\n&= -5.2e^{-1.2}\n\\end{aligned}<br>$$\\dfrac{\\text{d}\\theta}{\\text{d}t} \\approx -5.2\\left(0.301194\\right) \\approx -1.57^\\circ\\text{C per minute}$$",
+                "Final Answer: $$85^\\circ\\text{C}, \\quad 9.66 \\text{ minutes}, \\quad -1.57^\\circ\\text{C per minute}$$"
                 ],
                 "pi_options": [
                         {
@@ -1905,7 +1951,8 @@ window.ALEVEL_QUESTIONS = [
                         "To find the doubling time, we set the population $P$ equal to double the initial value ($2 \\times 800 = 1600$) and solve for $t$:<br>\\begin{aligned}\n1600 &= 800e^{0.15t} \\cr\ne^{0.15t} &= 2\n\\end{aligned}",
                         "Take the natural logarithm of both sides to isolate $t$:<br>$$0.15t = \\ln\\left(2\\right) \\approx 0.693147$$<br>$$t = \\dfrac{\\ln\\left(2\\right)}{0.15} \\approx 4.6209 \\text{ hours}$$<br>Rounding to 3 significant figures gives $4.62$ hours.",
                         "To find the rate of change of the population, differentiate $P$ with respect to $t$ using the chain rule:<br>\\begin{aligned}\n\\dfrac{\\text{d}P}{\\text{d}t} &= 800\\left(0.15\\right)e^{0.15t} \\cr\n&= 120e^{0.15t}\n\\end{aligned}",
-                        "Substitute $t = 4$ into the derivative expression to find the rate at that instant:<br>\\begin{aligned}\n\\dfrac{\\text{d}P}{\\text{d}t} &= 120e^{0.15\\left(4\\right)} \\cr\n&= 120e^{0.6}\n\\end{aligned}<br>$$\\dfrac{\\text{d}P}{\\text{d}t} \\approx 120\\left(1.822118\\right) \\approx 218.65$$<br>Rounding to the nearest integer gives $219$ bacteria per hour.<br><br>Final Answer: $$800, \\quad 4.62 \\text{ hours}, \\quad 219 \\text{ bacteria per hour}$$"
+                        "Substitute $t = 4$ into the derivative expression to find the rate at that instant:<br>\\begin{aligned}\n\\dfrac{\\text{d}P}{\\text{d}t} &= 120e^{0.15\\left(4\\right)} \\cr\n&= 120e^{0.6}\n\\end{aligned}<br>$$\\dfrac{\\text{d}P}{\\text{d}t} \\approx 120\\left(1.822118\\right) \\approx 218.65$$<br>Rounding to the nearest integer gives $219$ bacteria per hour.",
+                "Final Answer: $$800, \\quad 4.62 \\text{ hours}, \\quad 219 \\text{ bacteria per hour}$$"
                 ],
                 "pi_options": [
                         {
@@ -1944,7 +1991,8 @@ window.ALEVEL_QUESTIONS = [
                         "Set $C = 5$ and solve for $t$ using natural logarithms:<br>\\begin{aligned}\n5 &= 50e^{-0.25t} \\cr\ne^{-0.25t} &= 0.1\n\\end{aligned}<br>\\begin{aligned}\n-0.25t &= \\ln\\left(0.1\\right) \\cr\n&= -\\ln\\left(10\\right)\n\\end{aligned}\\begin{aligned}\nt &= \\dfrac{\\ln\\left(10\\right)}{0.25} \\cr\n&= 4\\ln\\left(10\\right) \\approx 9.2103 \\text{ hours}\n\\end{aligned}<br>Rounding to 3 significant figures gives $9.21$ hours.",
                         "To find the rate of change of concentration, differentiate $C$ with respect to $t$ using the chain rule:<br>\\begin{aligned}\n\\dfrac{\\text{d}C}{\\text{d}t} &= 50\\left(-0.25\\right)e^{-0.25t} \\cr\n&= -12.5e^{-0.25t}\n\\end{aligned}",
                         "Evaluate this derivative at the instant when $t = 4$ hours:<br>\\begin{aligned}\n\\dfrac{\\text{d}C}{\\text{d}t} &= -12.5e^{-0.25\\left(4\\right)} \\cr\n&= -12.5e^{-1}\n\\end{aligned}<br>$$\\dfrac{\\text{d}C}{\\text{d}t} \\approx -12.5\\left(0.367879\\right) \\approx -4.5985\\text{ mg/L per hour}$$",
-                        "The magnitude represents the absolute value (the positive rate of decrease):<br>$$\\text{Magnitude} = |-4.5985| \\approx 4.60\\text{ mg/L per hour}$$<br><br>Final Answer: $$9.21 \\text{ hours}, \\quad 4.60\\text{ mg/L per hour}$$"
+                        "The magnitude represents the absolute value (the positive rate of decrease):<br>$$\\text{Magnitude} = |-4.5985| \\approx 4.60\\text{ mg/L per hour}$$",
+                "Final Answer: $$9.21 \\text{ hours}, \\quad 4.60\\text{ mg/L per hour}$$"
                 ],
                 "pi_options": [
                         {
@@ -1984,7 +2032,8 @@ window.ALEVEL_QUESTIONS = [
                         "Set these two rates of increase equal to each other to find when they are equal:<br>$$18e^{0.06t} = 10e^{0.10t}$$",
                         "Isolate the exponential terms on one side of the equation:<br>\\begin{aligned}\n\\dfrac{18}{10} &= \\dfrac{e^{0.10t}}{e^{0.06t}} \\cr\n\\dfrac{9}{5} &= e^{0.10t - 0.06t}\n\\end{aligned}<br>$$e^{0.04t} = \\dfrac{9}{5}$$",
                         "Take the natural logarithm of both sides to solve for $t$:<br>$$0.04t = \\ln\\left(\\dfrac{9}{5}\\right)$$",
-                        "Express the decimal coefficient $0.04$ as a fraction, $0.04 = \\dfrac{1}{25}$:<br>\\begin{aligned}\n\\dfrac{1}{25}t &= \\ln\\left(\\dfrac{9}{5}\\right) \\cr\nt &= 25\\ln\\left(\\dfrac{9}{5}\\right)\n\\end{aligned}<br>This is exactly in the required form $a\\ln b$, where $a = 25$ is an integer and $b = \\dfrac{9}{5}$ is a rational number.<br><br>Final Answer: \\begin{aligned}\n\\dfrac{\\text{d}X}{\\text{d}t} &= 18e^{0.06t}, \\, \\dfrac{\\text{d}Y}{\\text{d}t} \\cr\n&= 10e^{0.10t}, \\quad t \\cr\n&= 25\\ln\\left(\\dfrac{9}{5}\\right)\n\\end{aligned}"
+                        "Express the decimal coefficient $0.04$ as a fraction, $0.04 = \\dfrac{1}{25}$:<br>\\begin{aligned}\n\\dfrac{1}{25}t &= \\ln\\left(\\dfrac{9}{5}\\right) \\cr\nt &= 25\\ln\\left(\\dfrac{9}{5}\\right)\n\\end{aligned}<br>This is exactly in the required form $a\\ln b$, where $a = 25$ is an integer and $b = \\dfrac{9}{5}$ is a rational number.",
+                "Final Answer: \\begin{aligned}\n\\dfrac{\\text{d}X}{\\text{d}t} &= 18e^{0.06t}, \\, \\dfrac{\\text{d}Y}{\\text{d}t} \\cr\n&= 10e^{0.10t}, \\quad t \\cr\n&= 25\\ln\\left(\\dfrac{9}{5}\\right)\n\\end{aligned}"
                 ],
                 "pi_options": [
                         {

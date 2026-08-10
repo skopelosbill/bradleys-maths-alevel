@@ -17,7 +17,8 @@ window.ALEVEL_QUESTIONS = [
                         "This is a quadratic equation in terms of $\\sin\\theta$. Let $s = \\sin\\theta$ to write the quadratic as:<br>\\begin{aligned} 6s^2 - s - 1 &= 0 \\end{aligned}<br>Factorise this quadratic equation:<br>\\begin{aligned} (3s + 1)(2s - 1) &= 0 \\end{aligned}<br>This yields two solutions: $s = \\dfrac{1}{ 2 }$ and $s = -\\dfrac{1}{ 3 }$.",
                         "Case 1: Solve for $\\sin\\theta = \\dfrac{1}{ 2 }$ in the range $0^\\circ \\le \\theta \\le 360^\\circ$. Since sine is positive, the solutions are in the first and second quadrants:<br>\\begin{aligned} \\theta &= 30^\\circ \\\\\\ \\theta &= 180^\\circ - 30^\\circ = 150^\\circ \\end{aligned}",
                         "Case 2: Solve for $\\sin\\theta = -\\dfrac{1}{ 3 }$ in the range $0^\\circ \\le \\theta \\le 360^\\circ$. Since sine is negative, the solutions are in the third and fourth quadrants. First, find the acute reference angle $\\alpha$:<br>\\begin{aligned} \\alpha &= \\arcsin\\left(\\dfrac{1}{ 3 }\\right) \\approx 19.5^\\circ \\end{aligned}",
-                        "Find the principal angles in the third and fourth quadrants using the reference angle $\\alpha \\approx 19.5^\\circ$:<br>\\begin{aligned} \\theta &= 180^\\circ + 19.5^\\circ = 199.5^\\circ \\\\\\ \\theta &= 360^\\circ - 19.5^\\circ = 340.5^\\circ \\end{aligned}<br>Combining all solutions yields:<br>$$\\theta = 30^\\circ, \\quad 150^\\circ, \\quad 199.5^\\circ, \\quad 340.5^\\circ$$<br><br>Final Answer: $30^\\circ, 150^\\circ, 199.5^\\circ, 340.5^\\circ$ (approx)"
+                        "Find the principal angles in the third and fourth quadrants using the reference angle $\\alpha \\approx 19.5^\\circ$:<br>\\begin{aligned} \\theta &= 180^\\circ + 19.5^\\circ = 199.5^\\circ \\\\\\ \\theta &= 360^\\circ - 19.5^\\circ = 340.5^\\circ \\end{aligned}<br>Combining all solutions yields:<br>$$\\theta = 30^\\circ, \\quad 150^\\circ, \\quad 199.5^\\circ, \\quad 340.5^\\circ$$",
+                "Final Answer: $30^\\circ, 150^\\circ, 199.5^\\circ, 340.5^\\circ$ (approx)"
                 ],
                 "pi_options": [
                         {
@@ -57,7 +58,8 @@ window.ALEVEL_QUESTIONS = [
                         "Find the principal solutions for $\\sin\\phi = \\dfrac{\\sqrt{3}}{2}$ in the first and second quadrants:<br>\\begin{aligned} \\phi &= 60^\\circ \\\\\\ \\phi &= 180^\\circ - 60^\\circ = 120^\\circ \\end{aligned}",
                         "Check for any secondary solutions within the translated range $30^\\circ \\le \\phi \\le 390^\\circ$ by adding multiples of $360^\\circ$:<br>\\begin{aligned} \\phi &= 60^\\circ + 360^\\circ = 420^\\circ \\quad \\text{(Outside range)} \\\\\\ \\phi &= 120^\\circ + 360^\\circ = 480^\\circ \\quad \\text{(Outside range)} \\end{aligned}<br>Thus, the only valid values of $\\phi$ are $60^\\circ$ and $120^\\circ$.",
                         "Set the expression $2\\theta + 30^\\circ$ equal to these values of $\\phi$ to solve for $\\theta$:<br>\\begin{aligned} 2\\theta + 30^\\circ &= 60^\\circ \\\\\\ 2\\theta &= 30^\\circ \\\\\\ \\theta &= 15^\\circ \\end{aligned}",
-                        "Solve for the second value of $\\phi$:<br>\\begin{aligned} 2\\theta + 30^\\circ &= 120^\\circ \\\\\\ 2\\theta &= 90^\\circ \\\\\\ \\theta &= 45^\\circ \\end{aligned}<br>Both values lie within the original domain of $0^\\circ \\le \\theta \\le 180^\\circ$.<br><br>Final Answer: $15^\\circ, 45^\\circ$"
+                        "Solve for the second value of $\\phi$:<br>\\begin{aligned} 2\\theta + 30^\\circ &= 120^\\circ \\\\\\ 2\\theta &= 90^\\circ \\\\\\ \\theta &= 45^\\circ \\end{aligned}<br>Both values lie within the original domain of $0^\\circ \\le \\theta \\le 180^\\circ$.",
+                "Final Answer: $15^\\circ, 45^\\circ$"
                 ],
                 "pi_options": [
                         {
@@ -98,7 +100,8 @@ window.ALEVEL_QUESTIONS = [
                         "Bring all terms to one side of the equation. Do not divide both sides by $\\sin\\theta$, as this will eliminate valid solutions. Instead, factorise:<br>\\begin{aligned} 3\\sin\\theta\\cos\\theta - 2\\sin\\theta &= 0 \\\\\\ \\sin\\theta(3\\cos\\theta - 2) &= 0 \\end{aligned}",
                         "This gives two independent trigonometric equations to solve:<ul><li>Case 1: $\\sin\\theta = 0$</li><li>Case 2: $3\\cos\\theta - 2 = 0 \\implies \\cos\\theta = \\dfrac{2}{ 3 }$</li></ul>",
                         "Solve Case 1 for $\\sin\\theta = 0$ in the range $0^\\circ \\le \\theta \\le 360^\\circ$:<br>\\begin{aligned} \\theta &= 0^\\circ, \\quad 180^\\circ, \\quad 360^\\circ \\end{aligned}",
-                        "Solve Case 2 for $\\cos\\theta = \\dfrac{2}{ 3 }$ in the range $0^\\circ \\le \\theta \\le 360^\\circ$. Since cosine is positive, find solutions in the first and fourth quadrants:<br>\\begin{aligned} \\theta &= \\arccos\\left(\\dfrac{2}{ 3 }\\right) \\approx 48.2^\\circ \\\\\\ \\theta &= 360^\\circ - 48.2^\\circ = 311.8^\\circ \\end{aligned}<br>Combining all five valid solutions yields:<br>$$\\theta = 0^\\circ, \\quad 48.2^\\circ, \\quad 180^\\circ, \\quad 311.8^\\circ, \\quad 360^\\circ$$<br><br>Final Answer: $0^\\circ, 48.2^\\circ, 180^\\circ, 311.8^\\circ, 360^\\circ$ (approx)"
+                        "Solve Case 2 for $\\cos\\theta = \\dfrac{2}{ 3 }$ in the range $0^\\circ \\le \\theta \\le 360^\\circ$. Since cosine is positive, find solutions in the first and fourth quadrants:<br>\\begin{aligned} \\theta &= \\arccos\\left(\\dfrac{2}{ 3 }\\right) \\approx 48.2^\\circ \\\\\\ \\theta &= 360^\\circ - 48.2^\\circ = 311.8^\\circ \\end{aligned}<br>Combining all five valid solutions yields:<br>$$\\theta = 0^\\circ, \\quad 48.2^\\circ, \\quad 180^\\circ, \\quad 311.8^\\circ, \\quad 360^\\circ$$",
+                "Final Answer: $0^\\circ, 48.2^\\circ, 180^\\circ, 311.8^\\circ, 360^\\circ$ (approx)"
                 ],
                 "pi_options": [
                         {
@@ -137,7 +140,8 @@ window.ALEVEL_QUESTIONS = [
                         "Use the fundamental identity $\\sin^2\\theta = 1 - \\cos^2\\theta$ to write the entire quadratic equation in terms of $\\cos\\theta$:<br>\\begin{aligned} 1 - 2\\left(1 - \\cos^2\\theta\\right) &= \\cos\\theta \\\\\\ 1 - 2 + 2\\cos^2\\theta &= \\cos\\theta \\\\\\ 2\\cos^2\\theta - \\cos\\theta - 1 &= 0 \\end{aligned}",
                         "This is a quadratic equation in terms of $\\cos\\theta$. Factorise the quadratic:<br>\\begin{aligned} (2\\cos\\theta + 1)(\\cos\\theta - 1) &= 0 \\end{aligned}<br>This yields two independent solutions: $\\cos\\theta = -\\dfrac{1}{ 2 }$ and $\\cos\\theta = 1$.",
                         "Case 1: Solve for $\\cos\\theta = 1$ in the range $0^\\circ \\le \\theta \\le 360^\\circ$. Since cosine is 1 at the boundaries of the interval:<br>\\begin{aligned} \\theta &= 0^\\circ, \\quad 360^\\circ \\end{aligned}",
-                        "Case 2: Solve for $\\cos\\theta = -\\dfrac{1}{ 2 }$ in the range $0^\\circ \\le \\theta \\le 360^\\circ$. Since cosine is negative, find the solutions in the second and third quadrants using the reference angle $\\alpha = 60^\\circ$:<br>\\begin{aligned} \\theta &= 180^\\circ - 60^\\circ = 120^\\circ \\\\\\ \\theta &= 180^\\circ + 60^\\circ = 240^\\circ \\end{aligned}<br>Combining all four valid solutions yields:<br>$$\\theta = 0^\\circ, \\quad 120^\\circ, \\quad 240^\\circ, \\quad 360^\\circ$$<br><br>Final Answer: $0^\\circ, 120^\\circ, 240^\\circ, 360^\\circ$"
+                        "Case 2: Solve for $\\cos\\theta = -\\dfrac{1}{ 2 }$ in the range $0^\\circ \\le \\theta \\le 360^\\circ$. Since cosine is negative, find the solutions in the second and third quadrants using the reference angle $\\alpha = 60^\\circ$:<br>\\begin{aligned} \\theta &= 180^\\circ - 60^\\circ = 120^\\circ \\\\\\ \\theta &= 180^\\circ + 60^\\circ = 240^\\circ \\end{aligned}<br>Combining all four valid solutions yields:<br>$$\\theta = 0^\\circ, \\quad 120^\\circ, \\quad 240^\\circ, \\quad 360^\\circ$$",
+                "Final Answer: $0^\\circ, 120^\\circ, 240^\\circ, 360^\\circ$"
                 ],
                 "pi_options": [
                         {
@@ -177,7 +181,8 @@ window.ALEVEL_QUESTIONS = [
                         "Substitute $\\sin^2\\theta = 1 - \\cos^2\\theta$ to write the equation entirely in terms of $\\cos\\theta$:<br>\\begin{aligned} 2\\left( \\dfrac{1 - \\cos^2\\theta}{ \\cos\\theta } \\right) &= 3 \\\\\\ 2\\left(1 - \\cos^2\\theta\\right) &= 3\\cos\\theta \\\\\\ 2 - 2\\cos^2\\theta &= 3\\cos\\theta \\\\\\ 2\\cos^2\\theta + 3\\cos\\theta - 2 &= 0 \\end{aligned}",
                         "This is a quadratic equation in terms of $\\cos\\theta$. Factorise the quadratic expression:<br>\\begin{aligned} (2\\cos\\theta - 1)(\\cos\\theta + 2) &= 0 \\end{aligned}<br>This yields two mathematical solutions: $\\cos\\theta = \\dfrac{1}{ 2 }$ and $\\cos\\theta = -2$.",
                         "Evaluate Case 2: $\\cos\\theta = -2$. Since the range of the cosine function is strictly bounded between $-1$ and $1$ ($-1 \\le \\cos\\theta \\le 1$), the equation $\\cos\\theta = -2$ has no real solutions and is discarded.",
-                        "Evaluate Case 1: Solve $\\cos\\theta = \\dfrac{1}{ 2 }$ in the range $0^\\circ \\le \\theta \\le 360^\\circ$. Since cosine is positive, the solutions are in the first and fourth quadrants:<br>\\begin{aligned} \\theta &= \\arccos\\left(\\dfrac{1}{ 2 }\\right) = 60^\\circ \\\\\\ \\theta &= 360^\\circ - 60^\\circ = 300^\\circ \\end{aligned}<br>Combining these gives the only two valid solutions:<br>$$\\theta = 60^\\circ, \\quad 300^\\circ$$<br><br>Final Answer: $60^\\circ, 300^\\circ$"
+                        "Evaluate Case 1: Solve $\\cos\\theta = \\dfrac{1}{ 2 }$ in the range $0^\\circ \\le \\theta \\le 360^\\circ$. Since cosine is positive, the solutions are in the first and fourth quadrants:<br>\\begin{aligned} \\theta &= \\arccos\\left(\\dfrac{1}{ 2 }\\right) = 60^\\circ \\\\\\ \\theta &= 360^\\circ - 60^\\circ = 300^\\circ \\end{aligned}<br>Combining these gives the only two valid solutions:<br>$$\\theta = 60^\\circ, \\quad 300^\\circ$$",
+                "Final Answer: $60^\\circ, 300^\\circ$"
                 ],
                 "pi_options": [
                         {
@@ -216,7 +221,8 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiate each term with respect to $x$ using the standard power rule $\\dfrac{\\text{d}}{\\text{d}x}(x^n) = nx^{n-1}$:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{4}{ 3 }(-2)x^{-3} + 10\\left(\\dfrac{1}{ 2 }\\right)x^{-1/2} \\\\\\ &= -\\dfrac{8}{ 3 }x^{-3} + 5x^{-1/2} \\\\\\ &= -\\dfrac{8}{ 3x^3 } + \\dfrac{5}{ \\sqrt{x} } \\end{aligned}",
                         "To evaluate the derivative at $x = 8$, substitute $x = 8$ into the derivative expression:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x}\\Big|_{x=8} &= -\\dfrac{8}{ 3(8)^3 } + \\dfrac{5}{ \\sqrt{8} } \\\\\\ &= -\\dfrac{8}{ 3(512) } + \\dfrac{5}{ 2\\sqrt{2} } \\\\\\ &= -\\dfrac{1}{ 192 } + \\dfrac{5}{ 2\\sqrt{2} } \\end{aligned}",
                         "Rationalise the denominator of the second term and combine:<br>\\begin{aligned} \\dfrac{5}{ 2\\sqrt{2} } &= \\dfrac{5\\sqrt{2}}{ 4 } \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x}\\Big|_{x=8} &= \\dfrac{5\\sqrt{2}}{ 4 } - \\dfrac{1}{ 192 } \\end{aligned}",
-                        "For part 2, integrate the expression term by term using the integration power rule $\\int x^n \\,\\text{d}x = \\dfrac{x^{n+1}}{ n+1 }$:<br>\\begin{aligned} \\int \\left( 3x^{5/2} + 15x^{-4} + 8 \\right) \\,\\text{d}x &= \\dfrac{3x^{7/2}}{ 7/2 } + \\dfrac{15x^{-3}}{ -3 } + 8x + C \\\\\\ &= \\dfrac{6}{ 7 }x^{7/2} - 5x^{-3} + 8x + C \\end{aligned}<br><br>Final Answer: $\\dfrac{5\\sqrt{2}}{ 4 } - \\dfrac{1}{ 192 }$ and $\\dfrac{6}{ 7 }x^{7/2} - 5x^{-3} + 8x + C$"
+                        "For part 2, integrate the expression term by term using the integration power rule $\\int x^n \\,\\text{d}x = \\dfrac{x^{n+1}}{ n+1 }$:<br>\\begin{aligned} \\int \\left( 3x^{5/2} + 15x^{-4} + 8 \\right) \\,\\text{d}x &= \\dfrac{3x^{7/2}}{ 7/2 } + \\dfrac{15x^{-3}}{ -3 } + 8x + C \\\\\\ &= \\dfrac{6}{ 7 }x^{7/2} - 5x^{-3} + 8x + C \\end{aligned}",
+                "Final Answer: $\\dfrac{5\\sqrt{2}}{ 4 } - \\dfrac{1}{ 192 }$ and $\\dfrac{6}{ 7 }x^{7/2} - 5x^{-3} + 8x + C$"
                 ],
                 "pi_options": [
                         {
@@ -255,7 +261,8 @@ window.ALEVEL_QUESTIONS = [
                         "Substitute the function $f(x) = 5x^2 - 3x$ into the expression for $f(x + h)$ and expand:<br>\\begin{aligned} f(x + h) &= 5(x + h)^2 - 3(x + h) \\\\\\ &= 5\\left(x^2 + 2xh + h^2\\right) - 3x - 3h \\\\\\ &= 5x^2 + 10xh + 5h^2 - 3x - 3h \\end{aligned}",
                         "Substitute $f(x + h)$ and $f(x)$ into the numerator of our limit definition and simplify:<br>\\begin{aligned} f(x + h) - f(x) &= \\left(5x^2 + 10xh + 5h^2 - 3x - 3h\\right) - \\left(5x^2 - 3x\\right) \\\\\\ &= 5x^2 - 5x^2 + 10xh + 5h^2 - 3x + 3x - 3h \\\\\\ &= 10xh + 5h^2 - 3h \\end{aligned}",
                         "Divide each term in the simplified numerator expression by $h$:<br>\\begin{aligned} \\dfrac{f(x + h) - f(x)}{ h } &= \\dfrac{10xh + 5h^2 - 3h}{ h } \\\\\\ &= \\dfrac{h(10x + 5h - 3)}{ h } \\\\\\ &= 10x + 5h - 3 \\end{aligned}",
-                        "Evaluate the limit of this expression as $h \\to 0$ to find the derivative:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\lim_{h \\to 0} \\left(10x + 5h - 3\\right) \\\\\\ &= 10x + 5(0) - 3 \\\\\\ &= 10x - 3 \\end{aligned}<br><br>Final Answer: $10x - 3$"
+                        "Evaluate the limit of this expression as $h \\to 0$ to find the derivative:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\lim_{h \\to 0} \\left(10x + 5h - 3\\right) \\\\\\ &= 10x + 5(0) - 3 \\\\\\ &= 10x - 3 \\end{aligned}",
+                "Final Answer: $10x - 3$"
                 ],
                 "pi_options": [
                         {
@@ -295,7 +302,8 @@ window.ALEVEL_QUESTIONS = [
                         "Rewrite the equation of the curve using negative indices so that it is ready to be differentiated:<br>\\begin{aligned} y &= 3x^2 - 4x^{-1} + 2 \\end{aligned}",
                         "Differentiate the curve's equation with respect to $x$ using the standard power rule:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 6x - 4(-1)x^{-2} \\\\\\ &= 6x + 4x^{-2} \\\\\\ &= 6x + \\dfrac{4}{ x^2 } \\end{aligned}",
                         "Find the gradient $m$ of the tangent line by substituting $x = 2$ into the derivative expression:<br>\\begin{aligned} m &= 6(2) + \\dfrac{4}{ (2)^2 } \\\\\\ &= 12 + \\dfrac{4}{ 4 } \\\\\\ &= 12 + 1 = 13 \\end{aligned}",
-                        "Use the point-gradient formula $y - y_1 = m(x - x_1)$ with the point $P(2, 12)$ and gradient $m = 13$ to find the equation of the tangent:<br>\\begin{aligned} y - 12 &= 13(x - 2) \\\\ y - 12 &= 13x - 26 \\\\ y &= 13x - 14 \\end{aligned}<br><br>Final Answer: $y = 13x - 14$"
+                        "Use the point-gradient formula $y - y_1 = m(x - x_1)$ with the point $P(2, 12)$ and gradient $m = 13$ to find the equation of the tangent:<br>\\begin{aligned} y - 12 &= 13(x - 2) \\\\ y - 12 &= 13x - 26 \\\\ y &= 13x - 14 \\end{aligned}",
+                "Final Answer: $y = 13x - 14$"
                 ],
                 "pi_options": [
                         {
@@ -333,7 +341,8 @@ window.ALEVEL_QUESTIONS = [
                         "Integrate the polynomial expression using the integration power rule:<br>\\begin{aligned} \\int \\left( 3x^2 + 2x \\right) \\,\\text{d}x &= \\left[ \\dfrac{3x^3}{ 3 } + \\dfrac{2x^2}{ 2 } \\right]_{1}^{3} \\\\\\ &= \\left[ x^3 + x^2 \\right]_{1}^{3} \\end{aligned}",
                         "Evaluate the definite integral by substituting the upper limit $x = 3$ into the integrated expression:<br>\\begin{aligned} \\text{Upper Limit} &= (3)^3 + (3)^2 \\\\\\ &= 27 + 9 = 36 \\end{aligned}",
                         "Substitute the lower limit $x = 1$ into the integrated expression:<br>\\begin{aligned} \\text{Lower Limit} &= (1)^3 + (1)^2 \\\\\\ &= 1 + 1 = 2 \\end{aligned}",
-                        "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the region:<br>\\begin{aligned} \\text{Area} &= \\text{Upper Limit} - \\text{Lower Limit} \\\\\\ &= 36 - 2 = 34 \\end{aligned}<br><br>Final Answer: $34$"
+                        "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the region:<br>\\begin{aligned} \\text{Area} &= \\text{Upper Limit} - \\text{Lower Limit} \\\\\\ &= 36 - 2 = 34 \\end{aligned}",
+                "Final Answer: $34$"
                 ],
                 "pi_options": [
                         {
@@ -372,7 +381,8 @@ window.ALEVEL_QUESTIONS = [
                         "Set the first derivative to $0$ and solve the quadratic equation to find the stationary $x$-coordinates:<br>\\begin{aligned} 6x^2 - 6x - 12 &= 0 \\\\ x^2 - x - 2 &= 0 \\\\\\ (x - 2)(x + 1) &= 0 \\end{aligned}<br>This yields two stationary values: $x = 2$ and $x = -1$.",
                         "Substitute these $x$-values back into the original curve's equation to find their corresponding $y$-coordinates:<ul><li>For $x = 2$: $y = 2(2)^3 - 3(2)^2 - 12(2) + 5 = 16 - 12 - 24 + 5 = -15 \\implies (2, -15)$</li><li>For $x = -1$: $y = 2(-1)^3 - 3(-1)^2 - 12(-1) + 5 = -2 - 3 + 12 + 5 = 12 \\implies (-1, 12)$</li></ul>",
                         "Find the second derivative of the curve's equation to help determine the nature of these points:<br>\\begin{aligned} \\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 12x - 6 \\end{aligned}",
-                        "Evaluate the second derivative at each stationary point:<ul><li>At $x = 2$: $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = 12(2) - 6 = 18 > 0$ (Local Minimum)</li><li>At $x = -1$: $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = 12(-1) - 6 = -18 < 0$ (Local Maximum)</li></ul><br><br>Final Answer: Stationary points are $(2, -15)$ (local minimum) and $(-1, 12)$ (local maximum)"
+                        "Evaluate the second derivative at each stationary point:<ul><li>At $x = 2$: $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = 12(2) - 6 = 18 > 0$ (Local Minimum)</li><li>At $x = -1$: $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = 12(-1) - 6 = -18 < 0$ (Local Maximum)</li></ul>",
+                "Final Answer: Stationary points are $(2, -15)$ (local minimum) and $(-1, 12)$ (local maximum)"
                 ],
                 "pi_options": [
                         {
@@ -410,7 +420,8 @@ window.ALEVEL_QUESTIONS = [
                         "For part 1, the transformation $y = f(x) - 3$ represents a vertical translation downwards by $3$ units.<br>This transformation shifts every point on the original curve downwards, which also shifts the horizontal asymptote:<br>\\begin{aligned} \\text{Vertical asymptote} &: x = 0 \\quad \\text{(Unchanged)} \\\\\\ \\text{Horizontal asymptote} &: y = -3 \\quad \\text{(Shifted from } y = 0 \\text{)} \\end{aligned}",
                         "Using these new asymptotes, sketch the shifted reciprocal curve:<br><br><img src='images/Pure/004311_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "For part 2, the transformation $y = f(x + 2)$ represents a horizontal translation to the left by $2$ units.<br>This transformation shifts every point on the original curve to the left, which also shifts the vertical asymptote:<br>\\begin{aligned} \\text{Vertical asymptote} &: x = -2 \\quad \\text{(Shifted from } x = 0 \\text{)} \\\\\\ \\text{Horizontal asymptote} &: y = 0 \\quad \\text{(Unchanged)} \\end{aligned}",
-                        "Using these new asymptotes, sketch the shifted reciprocal curve:<br><br><img src='images/Pure/004311_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: Sketches completed with asymptotes $y = -3$ for part 1, and $x = -2$ for part 2."
+                        "Using these new asymptotes, sketch the shifted reciprocal curve:<br><br><img src='images/Pure/004311_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+                "Final Answer: Sketches completed with asymptotes $y = -3$ for part 1, and $x = -2$ for part 2."
                 ],
                 "pi_options": [
                         {
@@ -448,7 +459,8 @@ window.ALEVEL_QUESTIONS = [
                         "For part 1, the transformation $y = -f(x)$ represents a vertical reflection of the curve in the $x$-axis.<br>This operation negates all $y$-coordinates of the stationary points while keeping their $x$-coordinates unchanged. It also reverses their mathematical nature:<br>\\begin{aligned} P(2, 6) &\\implies P'( 2, -6 ) \\quad \\text{(New Local Minimum)} \\\\ Q(4, -2) &\\implies Q'( 4, 2 ) \\quad \\text{(New Local Maximum)} \\end{aligned}",
                         "Using these new turning points, sketch the vertically reflected cubic curve:<br><br><img src='images/Pure/004312_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "For part 2, the transformation $y = f(2x)$ represents a horizontal stretch by a factor of $\\dfrac{1}{ 2 }$ (horizontal compression).<br>This operation halves the $x$-coordinates of all points on the curve while keeping their $y$-coordinates and mathematical nature completely unchanged:<br>\\begin{aligned} P(2, 6) &\\implies P''( 1, 6 ) \\quad \\text{(Local Maximum)} \\\\ Q(4, -2) &\\implies Q''( 2, -2 ) \\quad \\text{(Local Minimum)} \\end{aligned}",
-                        "Using these compressed coordinate points, sketch the horizontally scaled cubic curve:<br><br><img src='images/Pure/004312_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: Sketches completed with $P'(2, -6)$ and $Q'(4, 2)$ for part 1, and $P''(1, 6)$ and $Q''(2, -2)$ for part 2."
+                        "Using these compressed coordinate points, sketch the horizontally scaled cubic curve:<br><br><img src='images/Pure/004312_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+                "Final Answer: Sketches completed with $P'(2, -6)$ and $Q'(4, 2)$ for part 1, and $P''(1, 6)$ and $Q''(2, -2)$ for part 2."
                 ],
                 "pi_options": [
                         {
@@ -487,7 +499,8 @@ window.ALEVEL_QUESTIONS = [
                         "For part 1, the transformation $y = f(x) + 4$ represents a vertical translation upwards by $4$ units.<br>This operation adds $4$ to the $y$-coordinates of all points on the curve while keeping their $x$-coordinates unchanged:<br>\\begin{aligned} \\text{New Vertex} &= ( 3, -4 + 4 ) = (3, 0) \\end{aligned}",
                         "To find the new $x$-intercepts, solve $f(x) + 4 = 0 \\implies f(x) = -4$. The original curve only reaches $y = -4$ at its vertex ($x = 3$), so the new graph has only a single double-root intersection point on the $x$-axis, which occurs at the new vertex $(3, 0)$. Sketch this shifted parabola:<br><br><img src='images/Pure/004313_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "For part 2, the transformation $y = f(x - 2)$ represents a horizontal translation to the right by $2$ units.<br>This operation adds $2$ to the $x$-coordinates of all points on the curve while keeping their $y$-coordinates completely unchanged:<br>\\begin{aligned} \\text{New Vertex} &= ( 3 + 2, -4 ) = (5, -4) \\end{aligned}",
-                        "Using this new vertex coordinate, sketch the horizontally translated parabola:<br><br><img src='images/Pure/004313_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: New vertex at $(3, 0)$ touching the $x$-axis for part 1, and new vertex at $(5, -4)$ for part 2."
+                        "Using this new vertex coordinate, sketch the horizontally translated parabola:<br><br><img src='images/Pure/004313_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+                "Final Answer: New vertex at $(3, 0)$ touching the $x$-axis for part 1, and new vertex at $(5, -4)$ for part 2."
                 ],
                 "pi_options": [
                         {
@@ -526,7 +539,8 @@ window.ALEVEL_QUESTIONS = [
                         "For part 1, the transformation $y = f(x) - 2$ represents a vertical translation downwards by $2$ units.<br>This operation shifts both the curve and its horizontal asymptote downwards by $2$ units:<br>\\begin{aligned} \\text{New Asymptote} &: y = -2 \\end{aligned}",
                         "To find the new $y$-intercept, substitute $x = 0$ into the translated equation:<br>\\begin{aligned} y(0) &= f(0) - 2 \\\\\\ &= 3^0 - 2 = 1 - 2 = -1 \\end{aligned}<br>Thus, the new $y$-intercept is $(0, -1)$. Sketch the vertically shifted exponential curve:<br><br><img src='images/Pure/004314_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "For part 2, the transformation $y = f(-x)$ represents a horizontal reflection of the curve in the $y$-axis.<br>This reflection does not affect the horizontal asymptote nor the $y$-intercept, because points on the $y$-axis ($x = 0$) are invariant under horizontal reflection:<br>\\begin{aligned} \\text{Asymptote} &: y = 0 \\\\\\ \\text{y-intercept} &: (0, 1) \\end{aligned}",
-                        "Sketch this horizontally reflected exponential decay curve:<br><br><img src='images/Pure/004314_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: New asymptote at $y = -2$ with intercept $(0, -1)$ for part 1, and asymptote at $y = 0$ with intercept $(0, 1)$ for part 2."
+                        "Sketch this horizontally reflected exponential decay curve:<br><br><img src='images/Pure/004314_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+                "Final Answer: New asymptote at $y = -2$ with intercept $(0, -1)$ for part 1, and asymptote at $y = 0$ with intercept $(0, 1)$ for part 2."
                 ],
                 "pi_options": [
                         {
@@ -563,7 +577,8 @@ window.ALEVEL_QUESTIONS = [
                         "For part 1, analyze the horizontal and vertical transformations in $y = f(x + 3) - 5$ individually:<br><ul><li>The term $f(x + 3)$ represents a horizontal translation to the left by $3$ units, which affects the $x$-coordinate.</li><li>The term $- 5$ represents a vertical translation downwards by $5$ units, which affects the $y$-coordinate.</li></ul>",
                         "Apply these operations to the coordinates of the original point $P(4, -6)$:<br>\\begin{aligned} x' &= 4 - 3 = 1 \\\\ y' &= -6 - 5 = -11 \\end{aligned}<br>Thus, the coordinates of the corresponding point are $(1, -11)$.",
                         "For part 2, analyze the vertical transformations in $y = -2f(x)$:<br><ul><li>The coefficient $-2$ represents a vertical stretch by a scale factor of $2$ combined with a vertical reflection in the $x$-axis.</li><li>Because there are no horizontal terms inside the bracket, the $x$-coordinate remains completely unchanged.</li></ul>",
-                        "Apply these vertical operations to the $y$-coordinate of the original point $P(4, -6)$:<br>\\begin{aligned} x'' &= 4 \\\\ y'' &= -2 \\times (-6) = 12 \\end{aligned}<br>Thus, the coordinates of the corresponding point are $(4, 12)$.<br><br>Final Answer: $(1, -11)$ for part 1, and $(4, 12)$ for part 2."
+                        "Apply these vertical operations to the $y$-coordinate of the original point $P(4, -6)$:<br>\\begin{aligned} x'' &= 4 \\\\ y'' &= -2 \\times (-6) = 12 \\end{aligned}<br>Thus, the coordinates of the corresponding point are $(4, 12)$.",
+                "Final Answer: $(1, -11)$ for part 1, and $(4, 12)$ for part 2."
                 ],
                 "pi_options": [
                         {
@@ -604,7 +619,8 @@ window.ALEVEL_QUESTIONS = [
                         "Integrate the polynomial expression term by term:<br>\\begin{aligned} \\text{Area} &= \\left[ 4x + \\dfrac{3}{ 2 }x^2 - \\dfrac{1}{ 3 }x^3 \\right]_{ -1 }^{ 4 } \\end{aligned}",
                         "Evaluate the integrated expression at the upper limit $x = 4$:<br>\\begin{aligned} \\text{Upper Limit} &= 4(4) + \\dfrac{3}{ 2 }(16) - \\dfrac{1}{ 3 }(64) \\\\\\ &= 16 + 24 - \\dfrac{64}{ 3 } \\\\\\ &= 40 - \\dfrac{64}{ 3 } = \\dfrac{120 - 64}{ 3 } = \\dfrac{56}{ 3 } \\end{aligned}",
                         "Evaluate the integrated expression at the lower limit $x = -1$:<br>\\begin{aligned} \\text{Lower Limit} &= 4(-1) + \\dfrac{3}{ 2 }(-1)^2 - \\dfrac{1}{ 3 }(-1)^3 \\\\\\ &= -4 + \\dfrac{3}{ 2 } + \\dfrac{1}{ 3 } \\\\\\ &= -4 + \\dfrac{9}{ 6 } + \\dfrac{2}{ 6 } \\\\\\ &= -4 + \\dfrac{11}{ 6 } = -\\dfrac{13}{ 6 } \\end{aligned}",
-                        "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the enclosed region:<br>\\begin{aligned} \\text{Area} &= \\dfrac{56}{ 3 } - \\left( -\\dfrac{13}{ 6 } \\right) \\\\\\ &= \\dfrac{112}{ 6 } + \\dfrac{13}{ 6 } = \\dfrac{125}{ 6 } \\end{aligned}<br><br>Final Answer: $A(-1, 0)$ and $B(4, 5)$; exact area is $\\dfrac{125}{ 6 }$"
+                        "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the enclosed region:<br>\\begin{aligned} \\text{Area} &= \\dfrac{56}{ 3 } - \\left( -\\dfrac{13}{ 6 } \\right) \\\\\\ &= \\dfrac{112}{ 6 } + \\dfrac{13}{ 6 } = \\dfrac{125}{ 6 } \\end{aligned}",
+                "Final Answer: $A(-1, 0)$ and $B(4, 5)$; exact area is $\\dfrac{125}{ 6 }$"
                 ],
                 "pi_options": [
                         {
@@ -644,7 +660,8 @@ window.ALEVEL_QUESTIONS = [
                         "Integrate the expression using the power rule:<br>\\begin{aligned} \\text{Area} &= -\\left[ \\dfrac{1}{ 4 }x^4 - x^3 \\right]_{ 0 }^{ 3 } \\end{aligned}",
                         "Evaluate the integrated expression at the upper limit $x = 3$:<br>\\begin{aligned} \\text{Upper Limit} &= \\dfrac{1}{ 4 }(3)^4 - (3)^3 \\\\\\ &= \\dfrac{81}{ 4 } - 27 \\\\\\ &= \\dfrac{81}{ 4 } - \\dfrac{108}{ 4 } = -\\dfrac{27}{ 4 } \\end{aligned}",
                         "Substitute the lower limit $x = 0$ into the expression:<br>\\begin{aligned} \\text{Lower Limit} &= \\dfrac{1}{ 4 }(0)^4 - (0)^3 = 0 \\end{aligned}",
-                        "Subtract the lower limit from the upper limit and negate the result to find the exact geometric area:<br>\\begin{aligned} \\text{Area} &= -\\left( -\\dfrac{27}{ 4 } - 0 \\right) = \\dfrac{27}{ 4 } \\end{aligned}<br><br>Final Answer: $(0, 0)$ and $(3, 0)$; exact area is $\\dfrac{27}{ 4 }$"
+                        "Subtract the lower limit from the upper limit and negate the result to find the exact geometric area:<br>\\begin{aligned} \\text{Area} &= -\\left( -\\dfrac{27}{ 4 } - 0 \\right) = \\dfrac{27}{ 4 } \\end{aligned}",
+                "Final Answer: $(0, 0)$ and $(3, 0)$; exact area is $\\dfrac{27}{ 4 }$"
                 ],
                 "pi_options": [
                         {
@@ -685,7 +702,8 @@ window.ALEVEL_QUESTIONS = [
                         "Integrate the expression using the power rule:<br>\\begin{aligned} \\text{Area} &= \\left[ 8x - \\dfrac{2}{ 3 }x^3 \\right]_{ -2 }^{ 2 } \\end{aligned}",
                         "Evaluate the integrated expression at the upper limit $x = 2$:<br>\\begin{aligned} \\text{Upper Limit} &= 8(2) - \\dfrac{2}{ 3 }(2)^3 \\\\\\ &= 16 - \\dfrac{16}{ 3 } = \\dfrac{48 - 16}{ 3 } = \\dfrac{32}{ 3 } \\end{aligned}",
                         "Evaluate the integrated expression at the lower limit $x = -2$:<br>\\begin{aligned} \\text{Lower Limit} &= 8(-2) - \\dfrac{2}{ 3 }(-2)^3 \\\\\\ &= -16 + \\dfrac{16}{ 3 } = -\\dfrac{32}{ 3 } \\end{aligned}",
-                        "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area:<br>\\begin{aligned} \\text{Area} &= \\dfrac{32}{ 3 } - \\left( -\\dfrac{32}{ 3 } \\right) = \\dfrac{64}{ 3 } \\end{aligned}<br><br>Final Answer: $P(-2, 4)$ and $Q(2, 4)$; exact area is $\\dfrac{64}{ 3 }$"
+                        "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area:<br>\\begin{aligned} \\text{Area} &= \\dfrac{32}{ 3 } - \\left( -\\dfrac{32}{ 3 } \\right) = \\dfrac{64}{ 3 } \\end{aligned}",
+                "Final Answer: $P(-2, 4)$ and $Q(2, 4)$; exact area is $\\dfrac{64}{ 3 }$"
                 ],
                 "pi_options": [
                         {
@@ -725,7 +743,8 @@ window.ALEVEL_QUESTIONS = [
                         "Integrate the expression term by term using the integration power rule:<br>\\begin{aligned} \\text{Area} &= \\left[ 4\\left(\\dfrac{2}{ 3 }x^{3/2}\\right) - \\dfrac{1}{ 2 }x^2 - 3x \\right]_{ 1 }^{ 9 } \\\\\\ &= \\left[ \\dfrac{8}{ 3 }x^{3/2} - \\dfrac{1}{ 2 }x^2 - 3x \\right]_{ 1 }^{ 9 } \\end{aligned}",
                         "Evaluate the integrated expression at the upper limit $x = 9$, noting that $9^{3/2} = (\\sqrt{9})^3 = 27$:<br>\\begin{aligned} \\text{Upper Limit} &= \\dfrac{8}{ 3 }(27) - \\dfrac{1}{ 2 }(81) - 3(9) \\\\\\ &= 72 - 40.5 - 27 \\\\\\ &= 72 - 67.5 = 4.5 = \\dfrac{9}{ 2 } \\end{aligned}",
                         "Evaluate the integrated expression at the lower limit $x = 1$:<br>\\begin{aligned} \\text{Lower Limit} &= \\dfrac{8}{ 3 }(1)^{3/2} - \\dfrac{1}{ 2 }(1)^2 - 3(1) \\\\\\ &= \\dfrac{8}{ 3 } - \\dfrac{1}{ 2 } - 3 \\\\\\ &= \\dfrac{8}{ 3 } - \\dfrac{7}{ 2 } \\\\\\ &= \\dfrac{16}{ 6 } - \\dfrac{21}{ 6 } = -\\dfrac{5}{ 6 } \\end{aligned}",
-                        "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the enclosed region:<br>\\begin{aligned} \\text{Area} &= \\dfrac{9}{ 2 } - \\left( -\\dfrac{5}{ 6 } \\right) \\\\\\ &= \\dfrac{27}{ 6 } + \\dfrac{5}{ 6 } = \\dfrac{32}{ 6 } = \\dfrac{16}{ 3 } \\end{aligned}<br><br>Final Answer: Intersections shown; exact area is $\\dfrac{16}{ 3 }$"
+                        "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the enclosed region:<br>\\begin{aligned} \\text{Area} &= \\dfrac{9}{ 2 } - \\left( -\\dfrac{5}{ 6 } \\right) \\\\\\ &= \\dfrac{27}{ 6 } + \\dfrac{5}{ 6 } = \\dfrac{32}{ 6 } = \\dfrac{16}{ 3 } \\end{aligned}",
+                "Final Answer: Intersections shown; exact area is $\\dfrac{16}{ 3 }$"
                 ],
                 "pi_options": [
                         {
@@ -765,7 +784,8 @@ window.ALEVEL_QUESTIONS = [
                         "Integrate the expression using the power rule:<br>\\begin{aligned} \\text{Area} &= \\left[ 3\\left(\\dfrac{2}{ 3 }x^{3/2}\\right) - 2x \\right]_{ 4/9 }^{ 4 } \\\\\\ &= \\left[ 2x^{3/2} - 2x \\right]_{ 4/9 }^{ 4 } \\end{aligned}",
                         "Evaluate the integrated expression at the upper limit $x = 4$, noting that $4^{3/2} = (\\sqrt{4})^3 = 8$:<br>\\begin{aligned} \\text{Upper Limit} &= 2(4)^{3/2} - 2(4) \\\\\\ &= 2(8) - 8 \\\\\\ &= 16 - 8 = 8 \\end{aligned}",
                         "Evaluate the integrated expression at the lower limit $x = \\dfrac{4}{ 9 }$, noting that $\\left(\\dfrac{4}{ 9 }\\right)^{3/2} = \\left(\\sqrt{\\dfrac{4}{ 9 }}\\right)^3 = \\dfrac{8}{ 27 }$:<br>\\begin{aligned} \\text{Lower Limit} &= 2\\left(\\dfrac{4}{ 9 }\\right)^{3/2} - 2\\left(\\dfrac{4}{ 9 }\\right) \\\\\\ &= 2\\left(\\dfrac{8}{ 27 }\\right) - \\dfrac{8}{ 9 } \\\\\\ &= \\dfrac{16}{ 27 } - \\dfrac{24}{ 27 } = -\\dfrac{8}{ 27 } \\end{aligned}",
-                        "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the bounded region:<br>\\begin{aligned} \\text{Area} &= 8 - \\left( -\\dfrac{8}{ 27 } \\right) \\\\\\ &= \\dfrac{216}{ 27 } + \\dfrac{8}{ 27 } = \\dfrac{224}{ 27 } \\end{aligned}<br><br>Final Answer: $A\\left(\\dfrac{4}{ 9 }, 0\\right)$; exact area is $\\dfrac{224}{ 27 }$"
+                        "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the bounded region:<br>\\begin{aligned} \\text{Area} &= 8 - \\left( -\\dfrac{8}{ 27 } \\right) \\\\\\ &= \\dfrac{216}{ 27 } + \\dfrac{8}{ 27 } = \\dfrac{224}{ 27 } \\end{aligned}",
+                "Final Answer: $A\\left(\\dfrac{4}{ 9 }, 0\\right)$; exact area is $\\dfrac{224}{ 27 }$"
                 ],
                 "pi_options": [
                         {
@@ -993,7 +1013,8 @@ window.ALEVEL_QUESTIONS = [
                         "Solve the system of equations by adding Equation 1 and Equation 2:<br>\\begin{aligned} (p + q) + (p - q) &= 7 + 13 \\\\\\ 2p &= 20 \\implies p = 10 \\end{aligned}<br>Substitute $p = 10$ back into Equation 1 to find $q$:<br>\\begin{aligned} 10 + q &= 7 \\implies q = -3 \\end{aligned}<br>Thus, the constants are $p = 10$ and $q = -3$.",
                         "Substitute the constants back to write the full polynomial:<br>\\begin{aligned} f(x) &= 3x^3 + 10x^2 - 3x - 10 \\end{aligned}<br>Since $(x - 1)$ and $(x + 1)$ are factors, their quadratic product $(x - 1)(x + 1) = x^2 - 1$ must also be a factor of the polynomial.",
                         "Write the cubic polynomial as the product of the quadratic factor and the unknown third linear factor $(ax + b)$:<br>\\begin{aligned} 3x^3 + 10x^2 - 3x - 10 &= \\left(x^2 - 1\\right)(ax + b) \\\\\\ 3x^3 + 10x^2 - 3x - 10 &= ax^3 + bx^2 - ax - b \\end{aligned}",
-                        "Equate the coefficients of the terms on both sides of the identity to find $a$ and $b$:<ul><li>For the $x^3$ term: $a = 3$</li><li>For the constant term: $-b = -10 \\implies b = 10$</li></ul>Thus, the third linear factor is $3x + 10$.<br><br>Final Answer: $p = 10, q = -3$; the third factor is $3x + 10$"
+                        "Equate the coefficients of the terms on both sides of the identity to find $a$ and $b$:<ul><li>For the $x^3$ term: $a = 3$</li><li>For the constant term: $-b = -10 \\implies b = 10$</li></ul>Thus, the third linear factor is $3x + 10$.",
+                "Final Answer: $p = 10, q = -3$; the third factor is $3x + 10$"
                 ],
                 "pi_options": [
                         {
@@ -1190,7 +1211,8 @@ window.ALEVEL_QUESTIONS = [
                         "Find the acute angle $C_1$ and the obtuse angle $C_2$ (where $C_2 = 180^\\circ - C_1$):<br>\\begin{aligned} C_1 &= \\arcsin(0.860364) \\approx 59.4^\\circ \\\\ C_2 &= 180^\\circ - 59.4^\\circ = 120.6^\\circ \\end{aligned}",
                         "For each case, calculate the corresponding third angle $A = \\angle BAC$:<br>\\begin{aligned} \\text{Case 1 (Acute C)} &: A_1 = 180^\\circ - 35^\\circ - 59.4^\\circ = 85.6^\\circ \\\\\\ \\text{Case 2 (Obtuse C)} &: A_2 = 180^\\circ - 35^\\circ - 120.6^\\circ = 24.4^\\circ \\end{aligned}",
                         "Calculate the area for Case 1 using the area formula $\\text{Area} = \\dfrac{1}{ 2 }bc\\sin A$ with $b = 12$ and $c = 18$:<br>\\begin{aligned} \\text{Area}_1 &= \\dfrac{1}{ 2 }(12)(18)\\sin(85.6^\\circ) \\\\\\ &= 108\\sin(85.6^\\circ) \\approx 107.7\\text{ cm}^2 \\end{aligned}",
-                        "Calculate the area for Case 2:<br>\\begin{aligned} \\text{Area}_2 &= \\dfrac{1}{ 2 }(12)(18)\\sin(24.4^\\circ) \\\\\\ &= 108\\sin(24.4^\\circ) \\approx 44.5\\text{ cm}^2 \\end{aligned}<br><br>Final Answer: The two possible areas are $107.7\\text{ cm}^2$ and $44.5\\text{ cm}^2$"
+                        "Calculate the area for Case 2:<br>\\begin{aligned} \\text{Area}_2 &= \\dfrac{1}{ 2 }(12)(18)\\sin(24.4^\\circ) \\\\\\ &= 108\\sin(24.4^\\circ) \\approx 44.5\\text{ cm}^2 \\end{aligned}",
+                "Final Answer: The two possible areas are $107.7\\text{ cm}^2$ and $44.5\\text{ cm}^2$"
                 ],
                 "pi_options": [
                         {
@@ -1229,7 +1251,8 @@ window.ALEVEL_QUESTIONS = [
                         "Calculate the interior angle $\\angle PAB$ using parallel North lines. The line $PA$ pointing South-West from $A$ makes an angle of $45^\\circ$ with the South line (alternate interior angles with the bearing at $P$). Since the bearing of $B$ from $A$ is $130^\\circ$:<br>\\begin{aligned} \\angle PAB &= (180^\\circ + 45^\\circ) - 130^\\circ \\\\\\ &= 225^\\circ - 130^\\circ = 95^\\circ \\end{aligned}",
                         "Use the Cosine Rule to find the unknown direct distance $PB$ in triangle $PAB$ with sides $PA = 12$, $AB = 15$, and included angle $\\angle PAB = 95^\\circ$:<br>\\begin{aligned} PB^2 &= PA^2 + AB^2 - 2(PA)(AB)\\cos\\angle PAB \\\\ PB^2 &= 12^2 + 15^2 - 2(12)(15)\\cos(95^\\circ) \\end{aligned}",
                         "Substitute the values and evaluate, noting that $\\cos(95^\\circ) \\approx -0.087156$ is negative:<br>\\begin{aligned} PB^2 &= 144 + 225 - 360(-0.087156) \\\\\\ &= 369 + 31.376 \\\\\\ &= 400.376 \\end{aligned}",
-                        "Take the square root to find the direct distance $PB$:<br>\\begin{aligned} PB &= \\sqrt{400.376} \\approx 20.0 \\text{ km} \\end{aligned}<br><br>Final Answer: $20.0\\text{ km}$"
+                        "Take the square root to find the direct distance $PB$:<br>\\begin{aligned} PB &= \\sqrt{400.376} \\approx 20.0 \\text{ km} \\end{aligned}",
+                "Final Answer: $20.0\\text{ km}$"
                 ],
                 "pi_options": [
                         {
@@ -1270,7 +1293,8 @@ window.ALEVEL_QUESTIONS = [
                         "Substitute $\\cos(60^\\circ) = 0.5$ and expand the algebraic terms:<br>\\begin{aligned} 100 &= x^2 + (x^2 + 4x + 4) - 2x(x + 2)(0.5) \\\\\\ 100 &= 2x^2 + 4x + 4 - (x^2 + 2x) \\\\\\ 100 &= x^2 + 2x + 4 \\end{aligned}",
                         "Rearrange the terms into a standard quadratic equation of the form $ax^2 + bx + c = 0$:<br>\\begin{aligned} x^2 + 2x - 96 &= 0 \\end{aligned}",
                         "Solve the quadratic equation using the quadratic formula:<br>\\begin{aligned} x &= \\dfrac{-2 \\pm \\sqrt{2^2 - 4(1)(-96)}}{ 2(1) } \\\\\\ &= \\dfrac{-2 \\pm \\sqrt{4 + 384}}{ 2 } \\\\\\ &= \\dfrac{-2 \\pm \\sqrt{388}}{ 2 } \\end{aligned}",
-                        "Find the positive root since a side length must be positive, noting that $\\sqrt{388} \\approx 19.6977$:<br>\\begin{aligned} x &\\approx \\dfrac{-2 + 19.6977}{ 2 } \\\\\\ &\\approx \\dfrac{17.6977}{ 2 } \\approx 8.8 \\text{ cm} \\end{aligned}<br><br>Final Answer: $8.8\\text{ cm}$"
+                        "Find the positive root since a side length must be positive, noting that $\\sqrt{388} \\approx 19.6977$:<br>\\begin{aligned} x &\\approx \\dfrac{-2 + 19.6977}{ 2 } \\\\\\ &\\approx \\dfrac{17.6977}{ 2 } \\approx 8.8 \\text{ cm} \\end{aligned}",
+                "Final Answer: $8.8\\text{ cm}$"
                 ],
                 "pi_options": [
                         {
@@ -1308,7 +1332,8 @@ window.ALEVEL_QUESTIONS = [
                         "Find the length of the base diagonal $BD$ using Pythagoras' theorem on the horizontal square base $ABCD$ of side $8\\text{ cm}$:<br>\\begin{aligned} BD &= \\sqrt{8^2 + 8^2} \\\\\\ &= \\sqrt{64 + 64} = \\sqrt{128} = 8\\sqrt{2} \\text{ cm} \\end{aligned}",
                         "The center $O$ of the square base bisects the diagonal $BD$, so find the length of $OB$:<br>\\begin{aligned} OB &= \\dfrac{BD}{ 2 } \\\\\\ &= \\dfrac{8\\sqrt{2}}{ 2 } = 4\\sqrt{2} \\text{ cm} \\approx 5.65685 \\text{ cm} \\end{aligned}",
                         "The vertical height $VO = 12\\text{ cm}$ is perpendicular to $OB$. In the right-angled triangle $VOB$, the angle $\\theta = \\angle VBO$ represents the angle of elevation of $VB$ from the base:<br>\\begin{aligned} \\tan\\theta &= \\dfrac{VO}{ OB } \\\\\\ \\tan\\theta &= \\dfrac{12}{ 4\\sqrt{2} } = \\dfrac{3}{ \\sqrt{2} } \\approx 2.12132 \\end{aligned}",
-                        "Solve for the angle $\\theta$ by taking the inverse tangent:<br>\\begin{aligned} \\theta &= \\arctan(2.12132) \\\\\\ &\\approx 64.76059^\\circ \\approx 64.8^\\circ \\end{aligned}<br><br>Final Answer: $64.8^\\circ$"
+                        "Solve for the angle $\\theta$ by taking the inverse tangent:<br>\\begin{aligned} \\theta &= \\arctan(2.12132) \\\\\\ &\\approx 64.76059^\\circ \\approx 64.8^\\circ \\end{aligned}",
+                "Final Answer: $64.8^\\circ$"
                 ],
                 "pi_options": [
                         {
@@ -1347,7 +1372,8 @@ window.ALEVEL_QUESTIONS = [
                         "Write down the formulas for the arc length $s$ and area $A$ of a circular sector in radians:<br>\\begin{aligned} s &= r\\theta \\\\ A &= \\dfrac{1}{ 2 }r^2\\theta \\end{aligned}",
                         "Substitute the given values $s = 10$ and $A = 40$ into the equations:<br>\\begin{aligned} r\\theta &= 10 \\quad \\text{(Equation 1)} \\\\\\ \\dfrac{1}{ 2 }r^2\\theta &= 40 \\quad \\text{(Equation 2)} \\end{aligned}",
                         "Substitute Equation 1 ($r\\theta = 10$) into Equation 2 by rewriting $r^2\\theta$ as $r(r\\theta)$:<br>\\begin{aligned} \\dfrac{1}{ 2 }r(r\\theta) &= 40 \\\\\\ \\dfrac{1}{ 2 }r(10) &= 40 \\\\\\ 5r &= 40 \\implies r = 8 \\text{ cm} \\end{aligned}",
-                        "Substitute $r = 8$ back into Equation 1 to find the central angle $\\theta$ in radians:<br>\\begin{aligned} 8\\theta &= 10 \\\\\\ \\theta &= \\dfrac{10}{ 8 } = 1.25 \\text{ radians} \\end{aligned}<br><br>Final Answer: $r = 8\\text{ cm}$ and $\\theta = 1.25\\text{ radians}$"
+                        "Substitute $r = 8$ back into Equation 1 to find the central angle $\\theta$ in radians:<br>\\begin{aligned} 8\\theta &= 10 \\\\\\ \\theta &= \\dfrac{10}{ 8 } = 1.25 \\text{ radians} \\end{aligned}",
+                "Final Answer: $r = 8\\text{ cm}$ and $\\theta = 1.25\\text{ radians}$"
                 ],
                 "pi_options": [
                         {
@@ -1384,7 +1410,8 @@ window.ALEVEL_QUESTIONS = [
                         "Use the Binomial Theorem to expand $(x + \\sqrt{y})^4$ term by term using the binomial coefficients $1, 4, 6, 4, 1$:<br>\\begin{aligned} (x + \\sqrt{y})^4 &= \\binom{4}{0}x^4(\\sqrt{y})^0 + \\binom{4}{1}x^3(\\sqrt{y})^1 + \\binom{4}{2}x^2(\\sqrt{y})^2 + \\binom{4}{3}x(\\sqrt{y})^3 + \\binom{4}{4}x^0(\\sqrt{y})^4 \\end{aligned}",
                         "Simplify each term of the expansion individually, noting that $(\\sqrt{y})^3 = y\\sqrt{y}$:<br>\\begin{aligned} (x + \\sqrt{y})^4 &= 1(x^4)(1) + 4(x^3)(\\sqrt{y}) + 6(x^2)(y) + 4(x)(y\\sqrt{y}) + 1(1)(y^2) \\\\\\ &= x^4 + 4x^3\\sqrt{y} + 6x^2y + 4xy\\sqrt{y} + y^2 \\end{aligned}",
                         "To write down the expansion of the conjugate term $(x - \\sqrt{y})^4$, simply negate the odd powers of $\\sqrt{y}$ from the previous expansion:<br>\\begin{aligned} (x - \\sqrt{y})^4 &= x^4 - 4x^3\\sqrt{y} + 6x^2y - 4xy\\sqrt{y} + y^2 \\end{aligned}",
-                        "Add the two expansions together. Notice that the irrational terms containing $\\sqrt{y}$ have opposite signs and cancel out completely:<br>\\begin{aligned} (x + \\sqrt{y})^4 + (x - \\sqrt{y})^4 &= \\left(x^4 + 4x^3\\sqrt{y} + 6x^2y + 4xy\\sqrt{y} + y^2\\right) \\\\\\ &\\quad + \\left(x^4 - 4x^3\\sqrt{y} + 6x^2y - 4xy\\sqrt{y} + y^2\\right) \\\\\\ &= 2x^4 + 12x^2y + 2y^2 \\end{aligned}<br>Factor out the common factor of 2 to write the final simplified expression:<br>\\begin{aligned} (x + \\sqrt{y})^4 + (x - \\sqrt{y})^4 &= 2\\left(x^4 + 6x^2y + y^2\\right) \\end{aligned}<br><br>Final Answer: $x^4 + 4x^3\\sqrt{y} + 6x^2y + 4xy\\sqrt{y} + y^2$ and $2\\left(x^4 + 6x^2y + y^2\\right)$"
+                        "Add the two expansions together. Notice that the irrational terms containing $\\sqrt{y}$ have opposite signs and cancel out completely:<br>\\begin{aligned} (x + \\sqrt{y})^4 + (x - \\sqrt{y})^4 &= \\left(x^4 + 4x^3\\sqrt{y} + 6x^2y + 4xy\\sqrt{y} + y^2\\right) \\\\\\ &\\quad + \\left(x^4 - 4x^3\\sqrt{y} + 6x^2y - 4xy\\sqrt{y} + y^2\\right) \\\\\\ &= 2x^4 + 12x^2y + 2y^2 \\end{aligned}<br>Factor out the common factor of 2 to write the final simplified expression:<br>\\begin{aligned} (x + \\sqrt{y})^4 + (x - \\sqrt{y})^4 &= 2\\left(x^4 + 6x^2y + y^2\\right) \\end{aligned}",
+                "Final Answer: $x^4 + 4x^3\\sqrt{y} + 6x^2y + 4xy\\sqrt{y} + y^2$ and $2\\left(x^4 + 6x^2y + y^2\\right)$"
                 ],
                 "pi_options": [
                         {
@@ -1499,7 +1526,8 @@ window.ALEVEL_QUESTIONS = [
                         "To approximate $1.02^5$, set the base of our binomial $(1 + 2x)$ equal to the target base $1.02$ to solve for $x$:<br>\\begin{aligned} 1 + 2x &= 1.02 \\\\\\ 2x &= 0.02 \\implies x = 0.01 \\end{aligned}",
                         "Substitute $x = 0.01$ into the truncated binomial expansion:<br>\\begin{aligned} 1.02^5 &\\approx 1 + 10(0.01) + 40(0.01)^2 + 80(0.01)^3 \\end{aligned}",
                         "Evaluate each decimal term carefully, keeping track of the decimal places:<br>\\begin{aligned} 10(0.01) &= 0.1 \\\\\\ 40(0.0001) &= 0.004 \\\\\\ 80(0.000001) &= 0.00008 \\end{aligned}",
-                        "Combine the evaluated decimal terms to find the final approximation:<br>\\begin{aligned} 1.02^5 &\\approx 1 + 0.1 + 0.004 + 0.00008 \\\\\\ &= 1.10408 \\end{aligned}<br><br>Final Answer: $1 + 10x + 40x^2 + 80x^3$ and $1.10408$ (or $1.1041$ to 4 d.p.)"
+                        "Combine the evaluated decimal terms to find the final approximation:<br>\\begin{aligned} 1.02^5 &\\approx 1 + 0.1 + 0.004 + 0.00008 \\\\\\ &= 1.10408 \\end{aligned}",
+                "Final Answer: $1 + 10x + 40x^2 + 80x^3$ and $1.10408$ (or $1.1041$ to 4 d.p.)"
                 ],
                 "pi_options": [
                         {
