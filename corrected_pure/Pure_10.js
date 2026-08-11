@@ -767,7 +767,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Pearson Edexcel",
                 "level": "A",
                 "major_area": "Differentiation",
-                "topic": "Differentiation",
+                "topic": "First Principles",
                 "subtopic": [
                         "Trigonometry"
                 ],
@@ -804,7 +804,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Pearson Edexcel",
                 "level": "A",
                 "major_area": "Differentiation",
-                "topic": "Differentiation",
+                "topic": "First Principles",
                 "subtopic": [
                         "Trigonometry"
                 ],
@@ -841,7 +841,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Pearson Edexcel",
                 "level": "A",
                 "major_area": "Differentiation",
-                "topic": "Differentiation",
+                "topic": "First Principles",
                 "subtopic": [
                         "Trigonometry"
                 ],
@@ -878,7 +878,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Pearson Edexcel",
                 "level": "A",
                 "major_area": "Differentiation",
-                "topic": "Differentiation",
+                "topic": "First Principles",
                 "subtopic": [
                         "Trigonometry"
                 ],
@@ -914,8 +914,9 @@ window.ALEVEL_QUESTIONS = [
                 "id": "004475",
                 "board": "Pearson Edexcel",
                 "level": "A",
+                "major_area": "Integration",
                 "major_area": "Differentiation",
-                "topic": "Differentiation",
+                "topic": "First Principles",
                 "subtopic": [
                         "Trigonometry"
                 ],
@@ -951,10 +952,10 @@ window.ALEVEL_QUESTIONS = [
                 "id": "004476",
                 "board": "Pearson Edexcel",
                 "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
+                "major_area": "Integration",
+                "topic": "Differentiatial Equations",
                 "subtopic": [
-                        "Trigonometry"
+                        "differentiation"
                 ],
                 "img": false,
                 "question": "A spherical sugar candy of radius $6\\text{ mm}$ is placed in water and dissolves. Three minutes later, the radius of the candy is $3\\text{ mm}$.<br><br>In a simple model, the rate of decrease of the radius of the candy is inversely proportional to the square of the radius.<br><br>Using this model, find the total time taken for the candy to completely dissolve (to the nearest second).",
@@ -989,10 +990,10 @@ window.ALEVEL_QUESTIONS = [
                 "id": "004477",
                 "board": "Pearson Edexcel",
                 "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
+                "major_area": "Integration",
+                "topic": "Differentiatial Equations",
                 "subtopic": [
-                        "Trigonometry"
+                        "differentiation"
                 ],
                 "img": false,
                 "question": "The mass of a radioactive substance decays at a rate proportional to its mass at that time. The initial mass of the substance is $80\\text{ g}$. Ten hours later, the mass is found to be $40\\text{ g}$.<br><br>In a simple model, the rate of decrease of the mass of the substance is proportional to its mass.<br><br>Using this model, find the time taken for the mass of the substance to decay to $5\\text{ g}$ (to the nearest hour).",
@@ -1026,10 +1027,10 @@ window.ALEVEL_QUESTIONS = [
                 "id": "004478",
                 "board": "Pearson Edexcel",
                 "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
+               "major_area": "Integration",
+                "topic": "Differentiatial Equations",
                 "subtopic": [
-                        "Trigonometry"
+                        "differentiation"
                 ],
                 "img": false,
                 "question": "A circular puddle of water on a flat concrete surface is evaporating in the sun. The initial radius of the puddle is $10\\text{ cm}$. After $5$ hours of evaporation, the radius of the puddle has reduced to $8\\text{ cm}$.<br><br>In a simple model, the rate of decrease of the radius of the puddle is inversely proportional to the radius.<br><br>Using this model, find the total time taken for the puddle to dry up completely (to the nearest minute).",
@@ -1064,10 +1065,10 @@ window.ALEVEL_QUESTIONS = [
                 "id": "004479",
                 "board": "Pearson Edexcel",
                 "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
+                "major_area": "Integration",
+                "topic": "Differentiatial Equations",
                 "subtopic": [
-                        "Trigonometry"
+                        "differentiation"
                 ],
                 "img": false,
                 "question": "Water is leaking from a hole at the bottom of a cylindrical water tank. The depth of the water in the tank is $h$ metres at time $t$ minutes. Initially, the depth of the water is $9\\text{ m}$. After $12$ minutes, the depth of the water has reduced to $4\\text{ m}$.<br><br>In a simple model, the rate of decrease of the depth of the water is proportional to the square root of the depth.<br><br>Using this model, find the total time taken for the water tank to empty completely (to the nearest minute).",
@@ -1101,10 +1102,10 @@ window.ALEVEL_QUESTIONS = [
                 "id": "004480",
                 "board": "Pearson Edexcel",
                 "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
+                "major_area": "Integration",
+                "topic": "Differentiatial Equations",
                 "subtopic": [
-                        "Trigonometry"
+                        "differentiation"
                 ],
                 "img": false,
                 "question": "A spherical raindrop is falling through a cloud and evaporating. The initial radius of the raindrop is $4\\text{ mm}$. Ten minutes later, the radius has reduced to $2\\text{ mm}$.<br><br>In a simple model, the rate of decrease of the radius of the raindrop is proportional to the radius.<br><br>Using this model, find the time taken for the radius of the raindrop to decrease to $0.5\\text{ mm}$ (to the nearest minute).",
