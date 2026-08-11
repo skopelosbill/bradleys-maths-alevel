@@ -1142,7 +1142,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
                 "subtopic": [
-                        "Algebraic Methods"
+                        "Partial Fractions"
                 ],
                 "img": false,
                 "question": "Given that:<br>$$\\dfrac{ 6x^2 + 11x + 1 }{ (x + 2)(2x + 1) } \\equiv A + \\dfrac{ B }{ x + 2 } + \\dfrac{ C }{ 2x + 1 }$$<br>Find the values of the constants $A$, $B$, and $C$.",
@@ -1179,7 +1179,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
                 "subtopic": [
-                        "Algebraic Methods"
+                        "Partial Fractions"
                 ],
                 "img": false,
                 "question": "Given that:<br>$$\\dfrac{ 2x^2 - x + 5 }{ (x - 1)(x + 2) } \\equiv A + \\dfrac{ B }{ x - 1 } + \\dfrac{ C }{ x + 2 }$$<br>Find the values of the constants $A$, $B$, and $C$.",
@@ -1216,7 +1216,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
                 "subtopic": [
-                        "Algebraic Methods"
+                        "Partial Fractions"
                 ],
                 "img": false,
                 "question": "Given that:<br>$$\\dfrac{ 4x^2 + 6x - 1 }{ (2x - 1)(x + 1) } \\equiv A + \\dfrac{ B }{ 2x - 1 } + \\dfrac{ C }{ x + 1 }$$<br>Find the values of the constants $A$, $B$, and $C$.",
@@ -1253,7 +1253,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
                 "subtopic": [
-                        "Algebraic Methods"
+                        "Partial Fractions"
                 ],
                 "img": false,
                 "question": "Given that:<br>$$\\dfrac{ 3x^2 - 6x + 2 }{ (x - 4)(3x + 1) } \\equiv A + \\dfrac{ B }{ x - 4 } + \\dfrac{ C }{ 3x + 1 }$$<br>Find the values of the constants $A$, $B$, and $C$.",
@@ -1290,7 +1290,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
                 "subtopic": [
-                        "Algebraic Methods"
+                        "Partial Fractions"
                 ],
                 "img": false,
                 "question": "Given that:<br>$$\\dfrac{ 6x^2 - 16x + 12 }{ (x - 2)(3x - 2) } \\equiv A + \\dfrac{ B }{ x - 2 } + \\dfrac{ C }{ 3x - 2 }$$<br>Find the values of the constants $A$, $B$, and $C$.",
@@ -1327,7 +1327,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Identities",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric Equations"
                 ],
                 "img": false,
                 "question": "<strong>(a)</strong> Prove that:<br>$$1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$$<br><strong>(b)</strong> Hence solve, for $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$ where $x \\neq 0$, the equation:<br>$$(\\csc^2 x - 4)(1 + \\cos 2x) = 2\\cot^2 x \\sin 2x$$<br>Give your answers to 3 decimal places where appropriate.",
@@ -1364,7 +1364,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Identities",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric Equations"
                 ],
                 "img": false,
                 "question": "<strong>(a)</strong> Prove that:<br>$$1 - \\cos 2\\theta \\equiv \\tan \\theta \\sin 2\\theta$$<br><strong>(b)</strong> Hence solve, for $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$, the equation:<br>$$(\\sec^2 x - 3)(1 - \\cos 2x) = 3\\tan^2 x \\sin 2x$$<br>Give your answers to 3 decimal places where appropriate.",
@@ -1402,7 +1402,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Identities",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric Equations"
                 ],
                 "img": false,
                 "question": "<strong>(a)</strong> Prove that:<br>$$1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$$<br><strong>(b)</strong> Hence solve, for $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$ where $x \\neq 0$, the equation:<br>$$(\\csc^2 x - 5)(1 + \\cos 2x) = 2\\cot^2 x \\sin 2x$$<br>Give your answers to 3 decimal places where appropriate.",
@@ -1439,7 +1439,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Identities",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric Equations"
                 ],
                 "img": false,
                 "question": "<strong>(a)</strong> Prove that:<br>$$1 - \\cos 2\\theta \\equiv \\tan \\theta \\sin 2\\theta$$<br><strong>(b)</strong> Hence solve, for $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$, the equation:<br>$$(\\sec^2 x - 6)(1 - \\cos 2x) = 2\\tan^2 x \\sin 2x$$<br>Give your answers to 3 decimal places where appropriate.",
@@ -1477,7 +1477,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Identities",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric Equations"
                 ],
                 "img": false,
                 "question": "<strong>(a)</strong> Prove that:<br>$$1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$$<br><strong>(b)</strong> Hence solve, for $-\\dfrac{ \\pi }{ 2 } < x < \\dfrac{ \\pi }{ 2 }$ where $x \\neq 0$, the equation:<br>$$(\\csc^2 x - 3)(1 + \\cos 2x) = 3\\cot^2 x \\sin 2x$$<br>Give your answers to 3 decimal places where appropriate.",
@@ -1512,9 +1512,9 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Pearson Edexcel",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Integration and Logarithms",
                 "subtopic": [
-                        "Integration"
+                        "Differentiation and Logarithms"
                 ],
                 "img": "images/Pure/004491.png",
                 "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = 2x \\ln x, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, 2\\mathrm{e} )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^2 + B$, where $A$ and $B$ are rational constants to be found. Find the values of $A$ and $B$.",
@@ -1550,9 +1550,9 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Pearson Edexcel",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Integration and Logarithms",
                 "subtopic": [
-                        "Integration"
+                        "Differentiation and Logarithms"
                 ],
                 "img": "images/Pure/004492.png",
                 "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = x^2 \\ln x, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, \\mathrm{e}^2 )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^5 + B\\mathrm{e}^3 + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
@@ -1588,9 +1588,9 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Pearson Edexcel",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Integration and Logarithms",
                 "subtopic": [
-                        "Integration"
+                        "Differentiation and Logarithms"
                 ],
                 "img": "images/Pure/004493.png",
                 "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = 3\\sqrt{x} \\ln x, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, 3\\sqrt{ \\mathrm{e} } )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^{1/2} + B\\mathrm{e}^{3/2} + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
@@ -1626,9 +1626,9 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Pearson Edexcel",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Integration and Logarithms",
                 "subtopic": [
-                        "Integration"
+                        "Differentiation and Logarithms"
                 ],
                 "img": "images/Pure/004494.png",
                 "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = \\dfrac{ \\ln x }{ \\sqrt{x} }, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, \\mathrm{e}^{-1/2} )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^{-5/2} + B\\mathrm{e}^{1/2} + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
@@ -1664,9 +1664,9 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Pearson Edexcel",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Integration and Logarithms",
                 "subtopic": [
-                        "Integration"
+                        "Differentiation and Logarithms"
                 ],
                 "img": "images/Pure/004495.png",
                 "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = x^3 \\ln x, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, \\mathrm{e}^3 )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^8 + B\\mathrm{e}^4 + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
