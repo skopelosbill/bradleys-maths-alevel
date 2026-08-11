@@ -713,7 +713,7 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\sqrt{ 2 } = \\dfrac{ a }{ b } \\implies a^2 = b^2$",
+                                "ans": "$\\sqrt{ 2 } = \\dfrac{ a }{ b } \\implies a^2 = b^2$",
                                 "feedback": "This is a squaring error. Squaring both sides of $\\sqrt{ 2 } = \\dfrac{ a }{ b }$ yields $2 = \\dfrac{ a^2 }{ b^2 } \\implies a^2 = 2b^2$, not $a^2 = b^2$."
                         },
                         {
@@ -736,9 +736,9 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR",
                 "level": "A",
                 "major_area": "Differentiation",
-                "topic": "Differentiation",
+                "topic": "logarithms",
                 "subtopic": [
-                        "Differentiation"
+                        "Quotient Rule"
                 ],
                 "img": false,
                 "question": "<strong>(i)</strong> Find the $x$-coordinate of the point where the curve $y = \\dfrac{ \\ln x }{ x^2 }$ crosses the $x$-axis.<br><br><strong>(ii)</strong> The points $A$ and $B$ lie on the curve and have $x$-coordinates $\\sqrt{2}$ and $2$. Show that the line $AB$ is parallel to the $x$-axis.<br><br><strong>(iii)</strong> Find the exact coordinates of the turning point on the curve.<br><br><strong>(iv)</strong> Determine whether this turning point is a maximum or a minimum.",
@@ -750,15 +750,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\left( e, \\dfrac{ 1 }{ e^2 } \\right)$ is a local minimum",
+                                "ans": "$\\left( e, \\dfrac{ 1 }{ e^2 } \\right)$ is a local minimum",
                                 "feedback": "This arises if you make an algebra error solving $1-2\\ln x = 0$, incorrectly obtaining $\\ln x = 1 \\implies x = e$, and misidentify the nature of the turning point."
                         },
                         {
-                                "ans": "$$\\left( \\sqrt{e}, \\dfrac{ 1 }{ 2e } \\right)$ is a local minimum",
+                                "ans": "$\\left( \\sqrt{e}, \\dfrac{ 1 }{ 2e } \\right)$ is a local minimum",
                                 "feedback": "This is a classification error, incorrectly interpreting a negative second derivative as indicating a minimum instead of a maximum."
                         },
                         {
-                                "ans": "$$\\left( 1, 0 \\right)$ is a local maximum",
+                                "ans": "$\\left( 1, 0 \\right)$ is a local maximum",
                                 "feedback": "This is a conceptual error, confusing the $x$-axis crossing point with the turning point of the curve."
                         }
                 ],
@@ -775,8 +775,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
-                        "Curved Graphs",
-                        "Differentiation"
+                        "Turning Points",
                 ],
                 "img": false,
                 "question": "<strong>(i)</strong> Write down the coordinates of the point where the curve $y = 2x^3 - 9x^2 + 12x - 3$ crosses the $y$-axis.<br><br><strong>(ii)</strong> Find the coordinates of the two turning points of the curve.<br><br><strong>(iii)</strong> Determine the nature of each turning point using the second derivative.<br><br><strong>(iv)</strong> Show that the line connecting the two turning points has a gradient of exactly $-1$.",
@@ -811,9 +810,8 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR",
                 "level": "A",
                 "major_area": "Differentiation",
-                "topic": "Differentiation",
+                "topic": "Product rule",
                 "subtopic": [
-                        "Differentiation",
                         "Limits"
                 ],
                 "img": false,
@@ -851,7 +849,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
-                        "Differentiation"
+                        "Turning Points"
                 ],
                 "img": false,
                 "question": "<strong>(i)</strong> Find the set of values of $x$ for which the curve $y = x + \\dfrac{ 4 }{ x }$ for $x \\ne 0$ is increasing.<br><br><strong>(ii)</strong> Find the coordinates of the stationary points on the curve.<br><br><strong>(iii)</strong> Use the second derivative to determine the nature of each stationary point.<br><br><strong>(iv)</strong> Show that the straight line connecting the two stationary points passes through the origin.",
@@ -886,9 +884,10 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR",
                 "level": "A",
                 "major_area": "Differentiation",
-                "topic": "Differentiation",
+                "topic": "Product Rule",
                 "subtopic": [
-                        "Differentiation"
+                        "Exponential",
+                        "Trigonometric"
                 ],
                 "img": false,
                 "question": "<strong>(i)</strong> Find the $x$-coordinates of the points where the curve $y = e^x \\sin x$ crosses the $x$-axis on the interval $0 \\le x \\le \\pi$.<br><br><strong>(ii)</strong> Find the exact coordinates of the stationary point on the curve within this interval.<br><br><strong>(iii)</strong> Show that this stationary point is a local maximum.",
@@ -899,15 +898,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\left( \\dfrac{ \\pi }{ 4 }, \\dfrac{ \\sqrt{2} }{ 2 } e^{ \\pi / 4 } \\right)$ is a local maximum",
+                                "ans": "$\\left( \\dfrac{ \\pi }{ 4 }, \\dfrac{ \\sqrt{2} }{ 2 } e^{ \\pi / 4 } \\right)$ is a local maximum",
                                 "feedback": "This is a quadrant error, incorrectly solving $\\tan x = 1$ instead of $\\tan x = -1$, yielding a Quadrant I stationary point."
                         },
                         {
-                                "ans": "$$\\left( \\dfrac{ 3\\pi }{ 4 }, \\dfrac{ \\sqrt{2} }{ 2 } e^{ 3\\pi / 4 } \\right)$ is a local minimum",
+                                "ans": "$\\left( \\dfrac{ 3\\pi }{ 4 }, \\dfrac{ \\sqrt{2} }{ 2 } e^{ 3\\pi / 4 } \\right)$ is a local minimum",
                                 "feedback": "This is a classification error, incorrectly assuming that a negative second derivative indicates a minimum instead of a maximum."
                         },
                         {
-                                "ans": "$$\\left( \\dfrac{ \\pi }{ 2 }, e^{ \\pi / 2 } \\right)$ is a local maximum",
+                                "ans": "$\\left( \\dfrac{ \\pi }{ 2 }, e^{ \\pi / 2 } \\right)$ is a local maximum",
                                 "feedback": "This occurs if you incorrectly differentiate the function or assume the stationary point occurs at the peak of the sine wave."
                         }
                 ],
@@ -930,9 +929,9 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "A circle with centre $C$ has equation $x^2 + y^2 + 6x - 10y - 2 = 0$.<br><br>Find:<br><strong>(i)</strong> the coordinates of $C$,<br><strong>(ii)</strong> the radius of the circle.",
                 "steps": [
-                        "To find the centre and radius of the circle, we complete the square for both the $x$ and $y$ terms in the given equation:<br>$x^2 + y^2 + 6x - 10y - 2 = 0$",
-                        "Group the $x$ terms and $y$ terms together:<br>$(x^2 + 6x) + (y^2 - 10y) - 2 = 0$",
-                        "Complete the square for each grouped variable:<br><br>For $x^2 + 6x$:<br>$(x + 3)^2 - 3^2 = (x + 3)^2 - 9$<br><br>For $y^2 - 10y$:<br>$(y - 5)^2 - 5^2 = (y - 5)^2 - 25$",
+                        "To find the centre and radius of the circle, we complete the square for both the $x$ and $y$ terms in the given equation:<br>$$x^2 + y^2 + 6x - 10y - 2 = 0$$",
+                        "Group the $x$ terms and $y$ terms together:<br>$$(x^2 + 6x) + (y^2 - 10y) - 2 = 0$$",
+                        "Complete the square for each grouped variable:<br><br>For $x^2 + 6x$:<br>$$(x + 3)^2 - 3^2 = (x + 3)^2 - 9$$<br><br>For $y^2 - 10y$:<br>$$(y - 5)^2 - 5^2 = (y - 5)^2 - 25$$",
                         "Substitute these expressions back into the circle's equation and simplify:<br>\\begin{aligned} (x + 3)^2 - 9 + (y - 5)^2 - 25 - 2 &= 0 \\cr (x + 3)^2 + (y - 5)^2 - 36 &= 0 \\cr (x + 3)^2 + (y - 5)^2 &= 36 \\end{aligned}",
                         "<strong>(i)</strong> Compare this to the standard equation of a circle, $(x - a)^2 + (y - b)^2 = r^2$, where $(a, b)$ is the centre and $r$ is the radius:<br>Here, $a = -3$ and $b = 5$. Thus, the coordinates of the centre $C$ are $(-3, 5)$.",
                         "<strong>(ii)</strong> From the completed square equation, we see that $r^2 = 36$. Since the radius must be a positive length:<br>\\begin{aligned} r &= \\sqrt{ 36 } \\cr r &= 6 \\end{aligned}<br>So the radius of the circle is $6$."
@@ -970,8 +969,8 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "A circle has equation $x^2 + y^2 - 4x + 12y + k = 0$, where $k$ is a constant. Given that the radius of the circle is $7$,<br><br>find:<br><strong>(i)</strong> the value of $k$,<br><strong>(ii)</strong> the coordinates of the centre of this circle.",
                 "steps": [
-                        "First, complete the square for the $x$ and $y$ terms in the given equation to convert it to standard form:<br>$(x^2 - 4x) + (y^2 + 12y) + k = 0$",
-                        "Complete the square for each variable:<br><br>For $x^2 - 4x$:<br>$(x - 2)^2 - 4$<br><br>For $y^2 + 12y$:<br>$(y + 6)^2 - 36$",
+                        "First, complete the square for the $x$ and $y$ terms in the given equation to convert it to standard form:<br>$$(x^2 - 4x) + (y^2 + 12y) + k = 0$$",
+                        "Complete the square for each variable:<br><br>For $x^2 - 4x$:<br>$$(x - 2)^2 - 4$$<br><br>For $y^2 + 12y$:<br>$$(y + 6)^2 - 36$$",
                         "Substitute these back into the original equation and group the constant terms:<br>\\begin{aligned} (x - 2)^2 - 4 + (y + 6)^2 - 36 + k &= 0 \\cr (x - 2)^2 + (y + 6)^2 - 40 + k &= 0 \\cr (x - 2)^2 + (y + 6)^2 &= 40 - k \\end{aligned}",
                         "<strong>(i)</strong> We are given that the radius of the circle is $r = 7$, which means $r^2 = 49$. Comparing this with the standard equation $(x - a)^2 + (y - b)^2 = r^2$, we set the constant on the right-hand side equal to $49$:<br>\\begin{aligned} 40 - k &= 49 \\cr -k &= 9 \\cr k &= -9 \\end{aligned}",
                         "<strong>(ii)</strong> From the completed square form $(x - 2)^2 + (y + 6)^2 = 49$, compare this with the standard equation $(x - a)^2 + (y - b)^2 = r^2$ to find the centre $(a, b)$:<br>Here, $a = 2$ and $b = -6$. Therefore, the coordinates of the centre of the circle are $(2, -6)$."
@@ -1048,10 +1047,10 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "The line $L$ has equation $y = x + 1$ and the circle $C$ has equation $x^2 + y^2 - 6x - 2y + 5 = 0$.<br><br><strong>(i)</strong> Find the coordinates of the points of intersection, $A$ and $B$, of the line $L$ and the circle $C$.<br><strong>(ii)</strong> Find the exact length of the chord $AB$, writing your answer as a simplified surd.",
                 "steps": [
-                        "<strong>(i)</strong> To find the points of intersection, substitute the expression for $y$ from the line equation, $y = x + 1$, into the circle equation:<br>$x^2 + (x + 1)^2 - 6x - 2(x + 1) + 5 = 0$",
+                        "<strong>(i)</strong> To find the points of intersection, substitute the expression for $y$ from the line equation, $y = x + 1$, into the circle equation:<br>$$x^2 + (x + 1)^2 - 6x - 2(x + 1) + 5 = 0$$",
                         "Expand the brackets and simplify the quadratic equation:<br>\\begin{aligned} x^2 + (x^2 + 2x + 1) - 6x - 2x - 2 + 5 &= 0 \\cr 2x^2 - 6x + 4 &= 0 \\end{aligned}",
                         "Divide the entire equation by $2$ to simplify, and then factorise:<br>\\begin{aligned} x^2 - 3x + 2 &= 0 \\cr (x - 1)(x - 2) &= 0 \\end{aligned}<br>This yields the $x$-coordinates: $x = 1$ and $x = 2$.",
-                        "Substitute these $x$-values back into the linear equation $y = x + 1$ to find the corresponding $y$-coordinates:<br>For $x = 1$:<br>$y = 1 + 1 = 2 \\implies A(1, 2)$<br><br>For $x = 2$:<br>$y = 2 + 1 = 3 \\implies B(2, 3)$<br><br>So the coordinates of the points of intersection are $A(1, 2)$ and $B(2, 3)$.",
+                        "Substitute these $x$-values back into the linear equation $y = x + 1$ to find the corresponding $y$-coordinates:<br>For $x = 1$:<br>$$y = 1 + 1 = 2 \\implies A(1, 2)$$<br><br>For $x = 2$:<br>£$y = 2 + 1 = 3 \\implies B(2, 3)$$<br><br>So the coordinates of the points of intersection are $A(1, 2)$ and $B(2, 3)$.",
                         "<strong>(ii)</strong> To find the exact length of the chord $AB$, apply the distance formula between the points $A(1, 2)$ and $B(2, 3)$:<br>\\begin{aligned} AB &= \\sqrt{ (x_2 - x_1)^2 + (y_2 - y_1)^2 } \\cr &= \\sqrt{ (2 - 1)^2 + (3 - 2)^2 } \\cr &= \\sqrt{ 1^2 + 1^2 } \\cr &= \\sqrt{ 2 } \\end{aligned}<br>The exact length of the chord $AB$ is $\\sqrt{ 2 }$."
                 ],
                 "pi_options": [
@@ -1088,7 +1087,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "<strong>(i)</strong> Since $A$ and $B$ are the endpoints of the diameter, the centre of the circle is the midpoint of the line segment $AB$. Apply the midpoint formula:<br>\\begin{aligned} \\text{Centre} &= \\left( \\dfrac{ x_1 + x_2 }{ 2 }, \\dfrac{ y_1 + y_2 }{ 2 } \\right) \\cr &= \\left( \\dfrac{ -2 + 6 }{ 2 }, \\dfrac{ 7 + 1 }{ 2 } \\right) \\cr &= \\left( \\dfrac{ 4 }{ 2 }, \\dfrac{ 8 }{ 2 } \\right) \\cr &= (2, 4) \\end{aligned}<br>So the coordinates of the centre of the circle are $(2, 4)$.",
                         "<strong>(ii)</strong> To construct the equation, first find the radius squared, $r^2$, by calculating the squared distance from the centre $(2, 4)$ to one of the endpoints, such as $B(6, 1)$:<br>\\begin{aligned} r^2 &= (6 - 2)^2 + (1 - 4)^2 \\cr &= 4^2 + (-3)^2 \\cr &= 16 + 9 \\cr &= 25 \\end{aligned}<br>Thus, $r^2 = 25$ (which means the radius is $r = 5$).",
-                        "Write the equation of the circle using the standard form $(x - a)^2 + (y - b)^2 = r^2$ with centre $(2, 4)$ and $r^2 = 25$:<br>$(x - 2)^2 + (y - 4)^2 = 25$",
+                        "Write the equation of the circle using the standard form $(x - a)^2 + (y - b)^2 = r^2$ with centre $(2, 4)$ and $r^2 = 25$:<br>$$(x - 2)^2 + (y - 4)^2 = 25$$",
                         "Expand the squared brackets and simplify:<br>\\begin{aligned} (x^2 - 4x + 4) + (y^2 - 8y + 16) &= 25 \\cr x^2 + y^2 - 4x - 8y + 20 &= 25 \\cr x^2 + y^2 - 4x - 8y - 5 &= 0 \\end{aligned}<br>This matches the required form."
                 ],
                 "pi_options": [
@@ -1198,10 +1197,10 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "Solve the inequality $|2x - 3| < |x + 2|$.",
                 "steps": [
-                        "Since both sides of the inequality are non-negative, we can solve it by squaring both sides to eliminate the absolute value brackets:<br>$(2x - 3)^2 < (x + 2)^2$",
+                        "Since both sides of the inequality are non-negative, we can solve it by squaring both sides to eliminate the absolute value brackets:<br>$$(2x - 3)^2 < (x + 2)^2$$",
                         "Expand both sides of the inequality:<br>\\begin{aligned} 4x^2 - 12x + 9 &< x^2 + 4x + 4 \\cr 4x^2 - 12x + 9 - x^2 - 4x - 4 &< 0 \\cr 3x^2 - 16x + 5 &< 0 \\end{aligned}",
                         "To solve this quadratic inequality, find the critical values by solving the quadratic equation $3x^2 - 16x + 5 = 0$. We can factorise this equation:<br>\\begin{aligned} 3x^2 - 15x - x + 5 &= 0 \\cr 3x(x - 5) - 1(x - 5) &= 0 \\cr (3x - 1)(x - 5) &= 0 \\end{aligned}<br>This gives the critical values $x = \\dfrac{ 1 }{ 3 }$ and $x = 5$.",
-                        "Consider the graph of $y = 3x^2 - 16x + 5$, which is a U-shaped parabola. The inequality is satisfied where the curve lies below the $x$-axis (i.e., $< 0$):<br>This occurs between the two roots, so the solution is:<br>$\\dfrac{ 1 }{ 3 } < x < 5$"
+                        "Consider the graph of $y = 3x^2 - 16x + 5$, which is a U-shaped parabola. The inequality is satisfied where the curve lies below the $x$-axis (i.e., $< 0$):<br>This occurs between the two roots, so the solution is:<br>$$\\dfrac{ 1 }{ 3 } < x < 5$$"
                 ],
                 "pi_options": [
                         {
@@ -1235,8 +1234,8 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "Solve the equation $x^2 - 3|x| - 10 = 0$.",
                 "steps": [
-                        "To solve this equation, use the identity $x^2 = |x|^2$ to rewrite the equation entirely in terms of $|x|$:<br>$|x|^2 - 3|x| - 10 = 0$",
-                        "This is a quadratic equation in terms of $|x|$. Let $y = |x|$, where $y \\ge 0$ since absolute values are always non-negative. This gives:<br>$y^2 - 3y - 10 = 0$",
+                        "To solve this equation, use the identity $x^2 = |x|^2$ to rewrite the equation entirely in terms of $|x|$:<br>$$|x|^2 - 3|x| - 10 = 0$$",
+                        "This is a quadratic equation in terms of $|x|$. Let $y = |x|$, where $y \\ge 0$ since absolute values are always non-negative. This gives:<br>$$y^2 - 3y - 10 = 0$$",
                         "Factorise the quadratic equation:<br>\\begin{aligned} (y - 5)(y + 2) &= 0 \\end{aligned}<br>So, $y = 5$ or $y = -2$.",
                         "Since $y = |x| \\ge 0$, the solution $y = -2$ is impossible and must be rejected. This leaves:<br>$|x| = 5$",
                         "Solve for $x$:<br>\\begin{aligned} x = 5 \\quad \\text{or} \\quad x = -5 \\end{aligned}"
@@ -1273,7 +1272,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "Solve the inequality $|2x - 1| \\ge 5 - x$.",
                 "steps": [
-                        "To solve the inequality $|2x - 1| \\ge 5 - x$, we first find the critical intersection points by solving the corresponding equation:<br>$|2x - 1| = 5 - x$",
+                        "To solve the inequality $|2x - 1| \\ge 5 - x$, we first find the critical intersection points by solving the corresponding equation:<br>$$|2x - 1| = 5 - x$$",
                         "Split the equation into its positive and negative cases:<br><strong>Case 1:</strong> $2x - 1 = 5 - x$<br><strong>Case 2:</strong> $2x - 1 = -(5 - x)$",
                         "Solve <strong>Case 1</strong>:<br>\\begin{aligned} 2x - 1 &= 5 - x \\cr 3x &= 6 \\cr x &= 2 \\end{aligned}",
                         "Solve <strong>Case 2</strong>:<br>\\begin{aligned} 2x - 1 &= -5 + x \\cr x &= -4 \\end{aligned}<br>This gives us two critical values: $x = -4$ and $x = 2$.",
@@ -1703,9 +1702,8 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Integration by Substitution",
                 "subtopic": [
-                        "Integration",
                         "Numerical Methods"
                 ],
                 "img": false,
@@ -1826,7 +1824,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Integration",
                 "topic": "Integration",
                 "subtopic": [
-                        "Integration",
+                        "Exponential and Logarithmic Functions and Graphs",
                         "Numerical Methods"
                 ],
                 "img": false,
