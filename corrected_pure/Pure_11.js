@@ -740,10 +740,10 @@ window.ALEVEL_QUESTIONS = [
                 "id": "004521",
                 "board": "AQA",
                 "level": "A",
-                "major_area": "Differentiation",
+                "major_area": "Integration",
                 "topic": "Differential Equations",
                 "subtopic": [
-                        "Integration"
+                        "Integration by parts"
                 ],
                 "img": false,
                 "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}t }{ \\mathrm{d}x } = \\dfrac{ \\ln x }{ x^3 t } \\quad \\text{for } x > 0$$ <br>given that $x = 1$ when $t = 2$. <br><br>Write your answer in the form $t^2 = f(x)$.",
@@ -778,10 +778,10 @@ window.ALEVEL_QUESTIONS = [
                 "id": "004522",
                 "board": "AQA",
                 "level": "A",
-                "major_area": "Differentiation",
+                "major_area": "Integration",
                 "topic": "Differential Equations",
                 "subtopic": [
-                        "Integration"
+                        "Integration by parts"
                 ],
                 "img": false,
                 "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ x \\mathrm{e}^{2x} }{ y } \\quad \\text{for } x \\in \\mathbb{ R }$$ <br>given that $y = 3$ when $x = 0$. <br><br>Write your answer in the form $y^2 = f(x)$.",
@@ -816,10 +816,10 @@ window.ALEVEL_QUESTIONS = [
                 "id": "004523",
                 "board": "AQA",
                 "level": "A",
-                "major_area": "Differentiation",
+                "major_area": "Integration",
                 "topic": "Differential Equations",
                 "subtopic": [
-                        "Integration"
+                        "Integration by parts"
                 ],
                 "img": false,
                 "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ x \\sin x }{ y } \\quad \\text{for } x \\in \\mathbb{ R }$$ <br>given that $y = 2$ when $x = 0$. <br><br>Write your answer in the form $y^2 = f(x)$.",
@@ -854,10 +854,10 @@ window.ALEVEL_QUESTIONS = [
                 "id": "004524",
                 "board": "AQA",
                 "level": "A",
-                "major_area": "Differentiation",
+                "major_area": "Integration",
                 "topic": "Differential Equations",
                 "subtopic": [
-                        "Integration"
+                        "Integration by parts"
                 ],
                 "img": false,
                 "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ x \\ln x }{ y } \\quad \\text{for } x > 0$$ <br>given that $y = 4$ when $x = 1$. <br><br>Write your answer in the form $y^2 = f(x)$.",
@@ -892,10 +892,10 @@ window.ALEVEL_QUESTIONS = [
                 "id": "004525",
                 "board": "AQA",
                 "level": "A",
-                "major_area": "Differentiation",
+                "major_area": "Integration",
                 "topic": "Differential Equations",
                 "subtopic": [
-                        "Integration"
+                        "Integration by parts"
                 ],
                 "img": false,
                 "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ x \\mathrm{e}^{-x} }{ y } \\quad \\text{for } x \\in \\mathbb{ R }$$ <br>given that $y = 2$ when $x = 0$. <br><br>Write your answer in the form $y^2 = f(x)$.",
@@ -933,7 +933,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Functions",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric equations"
                 ],
                 "img": "images/Pure/004526.png",
                 "question": "A curve has the equation: <br>$$y = a \\sin x + b \\cos x$$ <br>where $a$ and $b$ are constants. <br><br>The maximum value of $y$ is $6$ and the curve passes through the point $\\left( \\dfrac{ \\pi }{ 3 }, 3\\sqrt{ 3 } \\right)$ as shown in the diagram. <br><br>Find the exact values of $a$ and $b$.",
@@ -971,7 +971,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Functions",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric equations"
                 ],
                 "img": "images/Pure/004527.png",
                 "question": "A curve has the equation: <br>$$y = a \\sin x - b \\cos x$$ <br>where $a$ and $b$ are positive constants. <br><br>The maximum value of $y$ is $5$ and the curve passes through the point $\\left( \\dfrac{ \\pi }{ 2 }, 4 \\right)$ as shown in the diagram. <br><br>Find the exact values of $a$ and $b$.",
@@ -1008,7 +1008,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Functions",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric equations"
                 ],
                 "img": "images/Pure/004528.png",
                 "question": "A curve has the equation: <br>$$y = a \\sin(2x) + b \\cos(2x)$$ <br>where $a$ and $b$ are constants. <br><br>The maximum value of $y$ is $10$ and the curve passes through the point $\\left( \\dfrac{ \\pi }{ 12 }, 5\\sqrt{ 3 } \\right)$ as shown in the diagram. <br><br>Find the exact values of $a$ and $b$.",
@@ -1046,7 +1046,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Functions",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric equations"
                 ],
                 "img": "images/Pure/004529.png",
                 "question": "A curve has the equation: <br>$$y = a \\sin x + b \\cos x$$ <br>where $a$ and $b$ are constants. <br><br>The maximum value of $y$ is $13$ and the curve passes through the point $\\left( \\dfrac{ \\pi }{ 2 }, 12 \\right)$ as shown in the diagram. <br><br>Find the exact values of $a$ and $b$.",
@@ -1083,7 +1083,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Functions",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric equations"
                 ],
                 "img": "images/Pure/004530.png",
                 "question": "A curve has the equation: <br>$$y = a \\sin x + b \\cos x$$ <br>where $a$ and $b$ are constants. <br><br>The maximum value of $y$ is $2$ and the curve passes through the point $\\left( \\dfrac{ \\pi }{ 6 }, \\sqrt{ 3 } \\right)$ as shown in the diagram. <br><br>Find the exact values of $a$ and $b$.",
@@ -1506,9 +1506,9 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Numerical Methods",
                 "subtopic": [
-                        "Numerical Methods"
+                   "Binomial Exppansion"     
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\sqrt{ 9 - 18x^2 }$. <br><br><strong>(a)</strong> Show that the first two terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $3 - 3x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, using the small-angle approximation $\\cos(2x) \\approx 1 - 2x^2$, find an approximation for $\\int_{0}^{0.3} \\sqrt{ \\cos(2x) } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
@@ -1544,9 +1544,9 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Numerical Methods",
                 "subtopic": [
-                        "Numerical Methods"
+                   "Binomial Exppansion"     
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\sqrt{ 16 - 8x^2 }$. <br><br><strong>(a)</strong> Show that the first two terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $4 - x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, using the small-angle approximation $\\cos x \\approx 1 - \\dfrac{ x^2 }{ 2 }$, find an approximation for $\\int_{0}^{0.5} \\sqrt{ \\cos x } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
@@ -1582,9 +1582,9 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Numerical Methods",
                 "subtopic": [
-                        "Algebraic Methods"
+                   "Binomial Exppansion"     
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\dfrac{ 1 }{ \\sqrt{ 1 - 4x^2 } }$. <br><br><strong>(a)</strong> Show that the first two terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $1 + 2x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, find an approximation for $\\int_{0}^{0.3} \\dfrac{ 1 }{ \\sqrt{ 1 - 4x^2 } } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
@@ -1620,9 +1620,9 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Numerical Methods",
                 "subtopic": [
-                        "Algebraic Methods"
+                   "Binomial Exppansion"     
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\sqrt{ 1 - 3x }$. <br><br><strong>(a)</strong> Show that the first three terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $1 - \\dfrac{ 3 }{ 2 }x - \\dfrac{ 9 }{ 8 }x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, find an approximation for $\\int_{0}^{0.1} \\sqrt{ 1 - 3x } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
@@ -1658,9 +1658,9 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Numerical Methods",
                 "subtopic": [
-                        "Algebraic Methods"
+                   "Binomial Exppansion"     
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\dfrac{ 1 }{ 1 + 2x }$. <br><br><strong>(a)</strong> Show that the first three terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $1 - 2x + 4x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, find an approximation for $\\int_{0}^{0.25} \\dfrac{ 1 }{ 1 + 2x } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
@@ -1734,7 +1734,6 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
                 "subtopic": [
-                        "Differentiation",
                         "Quadratics"
                 ],
                 "img": false,
@@ -1772,7 +1771,6 @@ window.ALEVEL_QUESTIONS = [
                 "topic": "Algebraic Methods",
                 "subtopic": [
                         "Quadratics",
-                        "Tangents and Normals"
                 ],
                 "img": false,
                 "question": "<strong>(i)</strong> Express $2x^2 - 5x + 6$ in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are constants to be found.<br><br><strong>(ii)</strong> Hence, find the minimum distance from the curve $y = 2x^2 - 5x + 6$ to the $x$-axis.<br><br><strong>(iii)</strong> The line $y = mx - 2$ is a tangent to the curve $y = 2x^2 - 5x + 6$. Find the possible values of the constant $m$.",
@@ -1805,10 +1803,9 @@ window.ALEVEL_QUESTIONS = [
                 "id": "004549",
                 "board": "OCR",
                 "level": "AS",
-                "major_area": "Integration",
+                "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
                 "subtopic": [
-                        "Integration",
                         "Quadratics"
                 ],
                 "img": false,
