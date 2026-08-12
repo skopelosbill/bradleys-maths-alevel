@@ -542,4 +542,5 @@ window.ALEVEL_QUESTIONS = [
         "content": "When solving equations with multiple moduli, the interval (or critical point) method is the safest route. However, you must always verify that your final algebraic solutions fall inside the specific interval they were derived from."
     }
 }
+
 ];
