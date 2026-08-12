@@ -354,5 +354,192 @@ window.ALEVEL_QUESTIONS = [
                         "title": "Proving Collinearity",
                         "content": "To prove that three points $A$, $B$, and $C$ are collinear, showing that $\\vec{ AB }$ and $\\vec{ AC }$ are parallel (scalar multiples) is only half the battle. You must explicitly state that they also share a common point (such as $A$ or $B$) to guarantee they lie on the exact same line, rather than on two parallel lines. Don't omit this crucial final sentence!"
                 }
+        },
+        {
+    "id": "004661",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Equations",
+    "subtopic": [
+        "Absolute Value Equations"
+    ],
+    "img": false,
+    "question": "Solve the equation: $5|3x - 1| = 10|x + 4|$",
+    "steps": [
+        "To solve the absolute value equation, we can first simplify it by dividing both sides of the equation by $5$ to obtain: <br> $|3x - 1| = 2|x + 4|$",
+        "Since both $|3x - 1|$ and $2|x + 4|$ are non-negative for all real values of $x$, we can square both sides to eliminate the absolute value signs: <br> \\begin{aligned} (3x - 1)^2 &= (2(x + 4))^2 \\\\cr (3x - 1)^2 &= 4(x + 4)^2 \\end{aligned}",
+        "Next, we expand both sides and simplify the resulting quadratic equation: <br> \\begin{aligned} 9x^2 - 6x + 1 &= 4(x^2 + 8x + 16) \\\\cr 9x^2 - 6x + 1 &= 4x^2 + 32x + 64 \\\\cr 5x^2 - 38x - 63 &= 0 \\end{aligned}",
+        "Now, we can solve this quadratic equation by factoring: <br> \\begin{aligned} (5x + 7)(x - 9) &= 0 \\end{aligned} <br> This yields the two exact real solutions: <br> \\begin{aligned} x = 9 \\quad \\text{or} \\quad x = -\\dfrac{ 7 }{ 5 } \\end{aligned} <br> Both solutions satisfy the original equation, which can be verified by direct substitution."
+    ],
+    "pi_options": [
+        {
+            "ans": "$x = 9$ and $x = -\\dfrac{ 5 }{ 7 }$",
+            "feedback": "This error occurs if you invert the fraction when solving the linear component $5x + 7 = 0$, leading to $x = -\\dfrac{ 5 }{ 7 }$ instead of the correct value of $-\\dfrac{ 7 }{ 5 }$."
+        },
+        {
+            "ans": "$x = -9$ and $x = \\dfrac{ 7 }{ 5 }$",
+            "feedback": "This mistake arises from a sign error when factoring the simplified quadratic equation, which results in the factored form $(5x - 7)(x + 9) = 0$ instead of $(5x + 7)(x - 9) = 0$."
+        },
+        {
+            "ans": "$x = 9$ only",
+            "feedback": "This happens if you only solve the positive linear case $3x - 1 = 2(x + 4)$ and completely omit the negative case $3x - 1 = -2(x + 4)$, which is a critical step in absolute value equations."
         }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Expanding Coefficients",
+        "content": "When squaring both sides of an equation like $|3x - 1| = 2|x + 4|$, a very common student mistake is to forget to square the constant multiplier on the right-hand side. Remember that $(2|x + 4|)^2$ becomes $4(x + 4)^2$. Forgetting to square this coefficient will lead to an incorrect quadratic equation."
+    }
+},
+{
+    "id": "004662",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Inequalities",
+    "subtopic": [
+        "Absolute Value Inequalities"
+    ],
+    "img": false,
+    "question": "Solve the inequality: $|2x - 3| \\ge |x + 3|$",
+    "steps": [
+        "Since both sides of the inequality represent absolute values, they are guaranteed to be non-negative. This allows us to square both sides of the inequality without changing the direction of the inequality sign: <br> \\begin{aligned} (2x - 3)^2 &\\ge (x + 3)^2 \\end{aligned}",
+        "We now expand both quadratic terms and collect like terms on one side: <br> \\begin{aligned} 4x^2 - 12x + 9 &\\ge x^2 + 6x + 9 \\\\cr 3x^2 - 18x &\\ge 0 \\end{aligned}",
+        "Factorising the quadratic inequality gives: <br> \\begin{aligned} 3x(x - 6) &\\ge 0 \\end{aligned}",
+        "The critical values are $x = 0$ and $x = 6$. For the product of $3x$ and $(x - 6)$ to be greater than or equal to zero, the variable $x$ must lie outside or on the boundaries of these critical values. <br> Therefore, the solution set is: <br> \\begin{aligned} x \\le 0 \\quad \\text{or} \\quad x \\ge 6 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$0 \\le x \\le 6$",
+            "feedback": "This error occurs if you correctly determine the critical values of $x = 0$ and $x = 6$ but choose the region between them rather than the regions outside of them."
+        },
+        {
+            "ans": "$x \\le -3$ or $x \\ge 3$",
+            "feedback": "This is a common error resulting from a miscalculation of the boundary points, sometimes caused by incorrectly handling the absolute value bounds under interval testing."
+        },
+        {
+            "ans": "$x \\ge 6$ only",
+            "feedback": "This happens if you only solve the linear inequality $2x - 3 \\ge x + 3$ without considering the other case where the signs of the absolute values differ."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Squaring Inequalities",
+        "content": "Squaring both sides of an inequality is only safe when both sides are guaranteed to be non-negative, which is always true for absolute value expressions like $|A| \\ge |B|$. It is a highly efficient way to find the boundary points without having to solve multiple separate linear inequalities."
+    }
+},
+{
+    "id": "004663",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Equations",
+    "subtopic": [
+        "Absolute Value Equations",
+        "Quadratic Equations"
+    ],
+    "img": false,
+    "question": "Solve the equation: $|x^2 - 3| = 2x$",
+    "steps": [
+        "First, we establish the domain constraint. Since the left-hand side is an absolute value (which is always non-negative), the right-hand side must also be non-negative: <br> \\begin{aligned} 2x &\\ge 0 \\\\cr x &\\ge 0 \\end{aligned}",
+        "Next, we split the absolute value equation into two cases. <br> <strong>Case 1:</strong> $x^2 - 3 \\ge 0$ <br> \\begin{aligned} x^2 - 3 &= 2x \\\\cr x^2 - 2x - 3 &= 0 \\\\cr (x - 3)(x + 1) &= 0 \\end{aligned} <br> This gives $x = 3$ or $x = -1$. Because our domain requires $x \\ge 0$, we must reject $x = -1$. Thus, $x = 3$ is our first valid solution.",
+        "<strong>Case 2:</strong> $x^2 - 3 < 0$ <br> \\begin{aligned} -(x^2 - 3) &= 2x \\\\cr 3 - x^2 &= 2x \\\\cr x^2 + 2x - 3 &= 0 \\\\cr (x + 3)(x - 1) &= 0 \\end{aligned} <br> This gives $x = 1$ or $x = -3$. Because our domain requires $x \\ge 0$, we must reject $x = -3$. Thus, $x = 1$ is our second valid solution.",
+        "Combining the valid solutions from both cases, we find the final solution set: <br> \\begin{aligned} x = 1 \\quad \\text{or} \\quad x = 3 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$x = -1$, $x = 1$, and $x = 3$",
+            "feedback": "This error occurs if you fail to check the domain condition $x \\ge 0$ and incorrectly include the negative root $x = -1$ while rejecting only $x = -3$."
+        },
+        {
+            "ans": "$x = -3$, $x = -1$, $x = 1$, and $x = 3$",
+            "feedback": "This happens if you do not check for extraneous solutions at all. In absolute value equations where the variable is outside the modulus, negative values can create invalid mathematical statements."
+        },
+        {
+            "ans": "$x = 3$ only",
+            "feedback": "This occurs if you only consider the positive case $x^2 - 3 = 2x$ and completely omit the negative case $-(x^2 - 3) = 2x$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Extraneous Solution Trap",
+        "content": "Always check your solutions against the original equation. Since the right-hand side is $2x$, any negative solution is automatically extraneous because $|x^2 - 3|$ cannot equal a negative number."
+    }
+},
+{
+    "id": "004664",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Equations",
+    "subtopic": [
+        "Absolute Value Equations",
+        "Exponentials"
+    ],
+    "img": false,
+    "question": "Find the exact real solutions to the equation: $|e^x - 3| = 2e^{-x}$",
+    "steps": [
+        "To simplify the equation, we define a substitution variable $t = e^x$. Since $e^x > 0$ for all real values of $x$, we must have $t > 0$. Rewriting the equation in terms of $t$ gives: <br> \\begin{aligned} |t - 3| &= \\dfrac{ 2 }{ t } \\end{aligned}",
+        "We split this into two cases based on the argument of the absolute value. <br> <strong>Case 1:</strong> $t \\ge 3$ <br> \\begin{aligned} t - 3 &= \\dfrac{ 2 }{ t } \\\\cr t^2 - 3t - 2 &= 0 \\end{aligned} <br> Using the quadratic formula, we find: <br> \\begin{aligned} t &= \\dfrac{ 3 \\pm \\sqrt{ (-3)^2 - 4(1)(-2) } }{ 2 } \\\\cr t &= \\dfrac{ 3 \\pm \\sqrt{ 17 } }{ 2 } \\end{aligned} <br> Since we require $t \\ge 3$, and $\\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\approx 3.56 \\ge 3$, this positive root is valid: <br> \\begin{aligned} e^x &= \\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\\\cr x &= \\ln \\left( \\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\right) \\end{aligned}",
+        "<strong>Case 2:</strong> $0 < t < 3$ <br> \\begin{aligned} -(t - 3) &= \\dfrac{ 2 }{ t } \\\\cr 3 - t &= \\dfrac{ 2 }{ t } \\\\cr 3t - t^2 &= 2 \\\\cr t^2 - 3t + 2 &= 0 \\\\cr (t - 1)(t - 2) &= 0 \\end{aligned} <br> This yields $t = 1$ and $t = 2$. Both values satisfy the constraint $0 < t < 3$.",
+        "Converting these values of $t$ back to $x$: <br> \\begin{aligned} e^x = 1 &\\implies x = 0 \\\\cr e^x = 2 &\\implies x = \\ln 2 \\end{aligned} <br> Thus, the complete set of exact real solutions is: <br> \\begin{aligned} x = 0, \\quad x = \\ln 2, \\quad x = \\ln \\left( \\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\right) \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$x = 0$ and $x = \\ln 2$",
+            "feedback": "This error is common if you solve Case 2 correctly but fail to identify the valid solution from the Case 1 quadratic equation."
+        },
+        {
+            "ans": "$x = 0$, $x = \\ln 2$, and $x = \\ln 3$",
+            "feedback": "This error occurs from mistakenly substituting the boundary value $t = 3$ as a solution instead of using the actual root $t = \\dfrac{ 3 + \\sqrt{ 17 } }{ 2 }$ from the quadratic formula."
+        },
+        {
+            "ans": "$x = 0$ and $x = \\ln 3$",
+            "feedback": "This results from a combination of algebraic slips, incorrectly solving the quadratic for $t$, and confusing the boundaries of the absolute value function."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Exponential Substitutions",
+        "content": "Substituting $t = e^x$ is a powerful tool to reduce transcendental equations to algebraic ones. Always remember that because $e^x > 0$, any negative values of $t$ must be discarded immediately before converting back to $x$."
+    }
+},
+{
+    "id": "004665",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Equations",
+    "subtopic": [
+        "Absolute Value Equations"
+    ],
+    "img": false,
+    "question": "Solve the equation: $|2x - 1| = |x + 5| - 3$",
+    "steps": [
+        "To solve an equation containing multiple absolute value terms, we identify the critical points where the arguments equal zero: $x = -5$ and $x = 0.5$. These points divide the real number line into three intervals: <br> <strong>Interval 1:</strong> $x < -5$ <br> <strong>Interval 2:</strong> $-5 \\le x < 0.5$ <br> <strong>Interval 3:</strong> $x \\ge 0.5$",
+        "We solve the equation in <strong>Interval 1</strong> ($x < -5$). In this region, $|2x - 1| = 1 - 2x$ and $|x + 5| = -x - 5$: <br> \\begin{aligned} 1 - 2x &= -x - 5 - 3 \\\\cr 1 - 2x &= -x - 8 \\\\cr x &= 9 \\end{aligned} <br> Since $x = 9$ does not lie in the interval $x < -5$, this solution is extraneous and is rejected.",
+        "We solve the equation in <strong>Interval 2</strong> ($-5 \\le x < 0.5$). In this region, $|2x - 1| = 1 - 2x$ and $|x + 5| = x + 5$: <br> \\begin{aligned} 1 - 2x &= x + 5 - 3 \\\\cr 1 - 2x &= x + 2 \\\\cr -3x &= 1 \\\\cr x &= -\\dfrac{ 1 }{ 3 } \\end{aligned} <br> Since $-\\dfrac{ 1 }{ 3 }$ lies in the interval $[-5, 0.5)$, this is a valid solution.",
+        "We solve the equation in <strong>Interval 3</strong> ($x \\ge 0.5$). In this region, $|2x - 1| = 2x - 1$ and $|x + 5| = x + 5$: <br> \\begin{aligned} 2x - 1 &= x + 5 - 3 \\\\cr 2x - 1 &= x + 2 \\\\cr x &= 3 \\end{aligned} <br> Since $3 \\ge 0.5$, this is a valid solution. <br> Combining the valid solutions, the final solution set is: <br> \\begin{aligned} x = -\\dfrac{ 1 }{ 3 } \\quad \\text{or} \\quad x = 3 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$x = -2$ and $x = 4$",
+            "feedback": "This represents an error caused by incorrect interval boundary setup and sign slips during linear algebraic consolidation."
+        },
+        {
+            "ans": "$x = -\\dfrac{ 1 }{ 3 }$, $x = 3$, and $x = 9$",
+            "feedback": "This happens if you solve the algebraic casework but forget to verify whether each solution actually lies within its corresponding interval domain."
+        },
+        {
+            "ans": "$x = 3$ only",
+            "feedback": "This occurs if you only consider the case where both absolute value expressions are positive, neglecting the interval where one is positive and the other is negative."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Interval Casework Verification",
+        "content": "When solving equations with multiple moduli, the interval (or critical point) method is the safest route. However, you must always verify that your final algebraic solutions fall inside the specific interval they were derived from."
+    }
+}
 ];
