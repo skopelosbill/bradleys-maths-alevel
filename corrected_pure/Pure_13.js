@@ -97,15 +97,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\theta = 30.0^\\circ$, $150.0^\\circ$",
+                                "ans": "$$\\theta = 30.0^\\circ$, $150.0^\\circ$$",
                                 "feedback": "You have correctly solved for the first branch of solutions, but remember that the quadratic yields a second valid branch of solutions from $\\sin\\theta = -\\dfrac{ 1 }{ 3 }$. You must solve both to find all angles within the domain."
                         },
                         {
-                                "ans": "$$\\theta = 30.0^\\circ$, $150.0^\\circ$, $19.5^\\circ$, $340.5^\\circ$",
+                                "ans": "$$\\theta = 30.0^\\circ$, $150.0^\\circ$, $19.5^\\circ$, $340.5^\\circ$$",
                                 "feedback": "Check your signs in Case 2. Since $\\sin\\theta = -\\dfrac{ 1 }{ 3 }$ is negative, your answers must lie in the third and fourth quadrants. The angle $19.5^\\circ$ is in the first quadrant where sine is positive."
                         },
                         {
-                                "ans": "$$\\theta = 60.0^\\circ$, $120.0^\\circ$, $199.5^\\circ$, $340.5^\\circ$",
+                                "ans": "$$\\theta = 60.0^\\circ$, $120.0^\\circ$, $199.5^\\circ$, $340.5^\\circ$$",
                                 "feedback": "Check your principal solution for Case 1. The angle for which $\\sin\\theta = \\dfrac{ 1 }{ 2 }$ is $30^\\circ$, not $60^\\circ$ (which corresponds to $\\sin 60^\\circ = \\dfrac{ \\sqrt{ 3 } }{ 2 }$)."
                         }
                 ],
@@ -175,15 +175,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\theta \\approx 0.98$, $4.12$, $\\dfrac{ \\pi }{ 4 }$, $\\dfrac{ 5\\pi }{ 4 }$",
+                                "ans": "$$\\theta \\approx 0.98$, $4.12$, $\\dfrac{ \\pi }{ 4 }$, $\\dfrac{ 5\\pi }{ 4 }$£",
                                 "feedback": "Check your quadrant boundaries for Case 2. Since $\\tan\\theta = -1$ is negative, your answers must lie in the second and fourth quadrants. The angles $\\dfrac{ \\pi }{ 4 }$ and $\\dfrac{ 5\\pi }{ 4 }$ correspond to $\\tan\\theta = +1$, which is incorrect."
                         },
                         {
-                                "ans": "$$\\theta \\approx 0.98$, $\\dfrac{ 3\\pi }{ 4 }$",
+                                "ans": "$$\\theta \\approx 0.98$, $\\dfrac{ 3\\pi }{ 4 }$£",
                                 "feedback": "You have correctly solved for the principal angles of both cases, but remember that the interval is $0 \\le \\theta < 2\\pi$. Since the tangent function repeats every $\\pi$ radians, you must add $\\pi$ to both principal values to find all valid solutions."
                         },
                         {
-                                "ans": "$$\\theta \\approx 0.59$, $3.73$, $\\dfrac{ 3\\pi }{ 4 }$, $\\dfrac{ 7\\pi }{ 4 }$",
+                                "ans": "$$\\theta \\approx 0.59$, $3.73$, $\\dfrac{ 3\\pi }{ 4 }$, $\\dfrac{ 7\\pi }{ 4 }$$",
                                 "feedback": "Check your calculation for Case 1. The principal solution is $\\theta = \\arctan(1.5) \\approx 0.98$ rad. It appears you may have used $\\arcsin(1.5)$ incorrectly or made a radian/degree conversion slip."
                         }
                 ],
@@ -829,11 +829,11 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\dfrac{ 3 }{ 4 }$",
+                                "ans": "$\\dfrac{ 3 }{ 4 }$",
                                 "feedback": "Check your expansion of the numerator. The term $\\theta\\cos\\theta \\approx \\theta(1) = \\theta$. Subtracting this from $3\\sin\\theta \\approx 3\\theta$ yields $2\\theta$ in the numerator, not $3\\theta$. This error leads to an incorrect constant ratio of $\\dfrac{ 3 }{ 4 }$."
                         },
                         {
-                                "ans": "$$\\dfrac{ 1 }{ 4 }$",
+                                "ans": "$\\dfrac{ 1 }{ 4 }$",
                                 "feedback": "Check your numerator subtraction. It appears you calculated $3\\sin\\theta - \\theta\\cos\\theta \\approx 3\\theta - 2\\theta = \\theta$. Note that $\\theta\\cos\\theta \\approx \\theta(1) = \\theta$, so the numerator simplifies to $3\\theta - \\theta = 2\\theta$."
                         },
                         {
