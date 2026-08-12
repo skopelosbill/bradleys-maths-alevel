@@ -368,8 +368,8 @@ window.ALEVEL_QUESTIONS = [
     "question": "Solve the equation: $5|3x - 1| = 10|x + 4|$",
     "steps": [
         "To solve the absolute value equation, we can first simplify it by dividing both sides of the equation by $5$ to obtain: <br> $|3x - 1| = 2|x + 4|$",
-        "Since both $|3x - 1|$ and $2|x + 4|$ are non-negative for all real values of $x$, we can square both sides to eliminate the absolute value signs: <br> \\begin{aligned} (3x - 1)^2 &= (2(x + 4))^2 \\\\cr (3x - 1)^2 &= 4(x + 4)^2 \\end{aligned}",
-        "Next, we expand both sides and simplify the resulting quadratic equation: <br> \\begin{aligned} 9x^2 - 6x + 1 &= 4(x^2 + 8x + 16) \\\\cr 9x^2 - 6x + 1 &= 4x^2 + 32x + 64 \\\\cr 5x^2 - 38x - 63 &= 0 \\end{aligned}",
+        "Since both $|3x - 1|$ and $2|x + 4|$ are non-negative for all real values of $x$, we can square both sides to eliminate the absolute value signs: <br> \\begin{aligned} (3x - 1)^2 &= (2(x + 4))^2 \\cr (3x - 1)^2 &= 4(x + 4)^2 \\end{aligned}",
+        "Next, we expand both sides and simplify the resulting quadratic equation: <br> \\begin{aligned} 9x^2 - 6x + 1 &= 4(x^2 + 8x + 16) \\cr 9x^2 - 6x + 1 &= 4x^2 + 32x + 64 \\cr 5x^2 - 38x - 63 &= 0 \\end{aligned}",
         "Now, we can solve this quadratic equation by factoring: <br> \\begin{aligned} (5x + 7)(x - 9) &= 0 \\end{aligned} <br> This yields the two exact real solutions: <br> \\begin{aligned} x = 9 \\quad \\text{or} \\quad x = -\\dfrac{ 7 }{ 5 } \\end{aligned} <br> Both solutions satisfy the original equation, which can be verified by direct substitution."
     ],
     "pi_options": [
@@ -405,7 +405,7 @@ window.ALEVEL_QUESTIONS = [
     "question": "Solve the inequality: $|2x - 3| \\ge |x + 3|$",
     "steps": [
         "Since both sides of the inequality represent absolute values, they are guaranteed to be non-negative. This allows us to square both sides of the inequality without changing the direction of the inequality sign: <br> \\begin{aligned} (2x - 3)^2 &\\ge (x + 3)^2 \\end{aligned}",
-        "We now expand both quadratic terms and collect like terms on one side: <br> \\begin{aligned} 4x^2 - 12x + 9 &\\ge x^2 + 6x + 9 \\\\cr 3x^2 - 18x &\\ge 0 \\end{aligned}",
+        "We now expand both quadratic terms and collect like terms on one side: <br> \\begin{aligned} 4x^2 - 12x + 9 &\\ge x^2 + 6x + 9 \\cr 3x^2 - 18x &\\ge 0 \\end{aligned}",
         "Factorising the quadratic inequality gives: <br> \\begin{aligned} 3x(x - 6) &\\ge 0 \\end{aligned}",
         "The critical values are $x = 0$ and $x = 6$. For the product of $3x$ and $(x - 6)$ to be greater than or equal to zero, the variable $x$ must lie outside or on the boundaries of these critical values. <br> Therefore, the solution set is: <br> \\begin{aligned} x \\le 0 \\quad \\text{or} \\quad x \\ge 6 \\end{aligned}"
     ],
@@ -442,9 +442,9 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "Solve the equation: $|x^2 - 3| = 2x$",
     "steps": [
-        "First, we establish the domain constraint. Since the left-hand side is an absolute value (which is always non-negative), the right-hand side must also be non-negative: <br> \\begin{aligned} 2x &\\ge 0 \\\\cr x &\\ge 0 \\end{aligned}",
-        "Next, we split the absolute value equation into two cases. <br> <strong>Case 1:</strong> $x^2 - 3 \\ge 0$ <br> \\begin{aligned} x^2 - 3 &= 2x \\\\cr x^2 - 2x - 3 &= 0 \\\\cr (x - 3)(x + 1) &= 0 \\end{aligned} <br> This gives $x = 3$ or $x = -1$. Because our domain requires $x \\ge 0$, we must reject $x = -1$. Thus, $x = 3$ is our first valid solution.",
-        "<strong>Case 2:</strong> $x^2 - 3 < 0$ <br> \\begin{aligned} -(x^2 - 3) &= 2x \\\\cr 3 - x^2 &= 2x \\\\cr x^2 + 2x - 3 &= 0 \\\\cr (x + 3)(x - 1) &= 0 \\end{aligned} <br> This gives $x = 1$ or $x = -3$. Because our domain requires $x \\ge 0$, we must reject $x = -3$. Thus, $x = 1$ is our second valid solution.",
+        "First, we establish the domain constraint. Since the left-hand side is an absolute value (which is always non-negative), the right-hand side must also be non-negative: <br> \\begin{aligned} 2x &\\ge 0 \\cr x &\\ge 0 \\end{aligned}",
+        "Next, we split the absolute value equation into two cases. <br> <strong>Case 1:</strong> $x^2 - 3 \\ge 0$ <br> \\begin{aligned} x^2 - 3 &= 2x \\cr x^2 - 2x - 3 &= 0 \\cr (x - 3)(x + 1) &= 0 \\end{aligned} <br> This gives $x = 3$ or $x = -1$. Because our domain requires $x \\ge 0$, we must reject $x = -1$. Thus, $x = 3$ is our first valid solution.",
+        "<strong>Case 2:</strong> $x^2 - 3 < 0$ <br> \\begin{aligned} -(x^2 - 3) &= 2x \\cr 3 - x^2 &= 2x \\cr x^2 + 2x - 3 &= 0 \\cr (x + 3)(x - 1) &= 0 \\end{aligned} <br> This gives $x = 1$ or $x = -3$. Because our domain requires $x \\ge 0$, we must reject $x = -3$. Thus, $x = 1$ is our second valid solution.",
         "Combining the valid solutions from both cases, we find the final solution set: <br> \\begin{aligned} x = 1 \\quad \\text{or} \\quad x = 3 \\end{aligned}"
     ],
     "pi_options": [
@@ -481,9 +481,9 @@ window.ALEVEL_QUESTIONS = [
     "question": "Find the exact real solutions to the equation: $|e^x - 3| = 2e^{-x}$",
     "steps": [
         "To simplify the equation, we define a substitution variable $t = e^x$. Since $e^x > 0$ for all real values of $x$, we must have $t > 0$. Rewriting the equation in terms of $t$ gives: <br> \\begin{aligned} |t - 3| &= \\dfrac{ 2 }{ t } \\end{aligned}",
-        "We split this into two cases based on the argument of the absolute value. <br> <strong>Case 1:</strong> $t \\ge 3$ <br> \\begin{aligned} t - 3 &= \\dfrac{ 2 }{ t } \\\\cr t^2 - 3t - 2 &= 0 \\end{aligned} <br> Using the quadratic formula, we find: <br> \\begin{aligned} t &= \\dfrac{ 3 \\pm \\sqrt{ (-3)^2 - 4(1)(-2) } }{ 2 } \\\\cr t &= \\dfrac{ 3 \\pm \\sqrt{ 17 } }{ 2 } \\end{aligned} <br> Since we require $t \\ge 3$, and $\\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\approx 3.56 \\ge 3$, this positive root is valid: <br> \\begin{aligned} e^x &= \\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\\\cr x &= \\ln \\left( \\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\right) \\end{aligned}",
-        "<strong>Case 2:</strong> $0 < t < 3$ <br> \\begin{aligned} -(t - 3) &= \\dfrac{ 2 }{ t } \\\\cr 3 - t &= \\dfrac{ 2 }{ t } \\\\cr 3t - t^2 &= 2 \\\\cr t^2 - 3t + 2 &= 0 \\\\cr (t - 1)(t - 2) &= 0 \\end{aligned} <br> This yields $t = 1$ and $t = 2$. Both values satisfy the constraint $0 < t < 3$.",
-        "Converting these values of $t$ back to $x$: <br> \\begin{aligned} e^x = 1 &\\implies x = 0 \\\\cr e^x = 2 &\\implies x = \\ln 2 \\end{aligned} <br> Thus, the complete set of exact real solutions is: <br> \\begin{aligned} x = 0, \\quad x = \\ln 2, \\quad x = \\ln \\left( \\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\right) \\end{aligned}"
+        "We split this into two cases based on the argument of the absolute value. <br> <strong>Case 1:</strong> $t \\ge 3$ <br> \\begin{aligned} t - 3 &= \\dfrac{ 2 }{ t } \\cr t^2 - 3t - 2 &= 0 \\end{aligned} <br> Using the quadratic formula, we find: <br> \\begin{aligned} t &= \\dfrac{ 3 \\pm \\sqrt{ (-3)^2 - 4(1)(-2) } }{ 2 } \\cr t &= \\dfrac{ 3 \\pm \\sqrt{ 17 } }{ 2 } \\end{aligned} <br> Since we require $t \\ge 3$, and $\\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\approx 3.56 \\ge 3$, this positive root is valid: <br> \\begin{aligned} e^x &= \\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\cr x &= \\ln \\left( \\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\right) \\end{aligned}",
+        "<strong>Case 2:</strong> $0 < t < 3$ <br> \\begin{aligned} -(t - 3) &= \\dfrac{ 2 }{ t } \\cr 3 - t &= \\dfrac{ 2 }{ t } \\cr 3t - t^2 &= 2 \\cr t^2 - 3t + 2 &= 0 \\cr (t - 1)(t - 2) &= 0 \\end{aligned} <br> This yields $t = 1$ and $t = 2$. Both values satisfy the constraint $0 < t < 3$.",
+        "Converting these values of $t$ back to $x$: <br> \\begin{aligned} e^x = 1 &\\implies x = 0 \\cr e^x = 2 &\\implies x = \\ln 2 \\end{aligned} <br> Thus, the complete set of exact real solutions is: <br> \\begin{aligned} x = 0, \\quad x = \\ln 2, \\quad x = \\ln \\left( \\dfrac{ 3 + \\sqrt{ 17 } }{ 2 } \\right) \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -518,9 +518,9 @@ window.ALEVEL_QUESTIONS = [
     "question": "Solve the equation: $|2x - 1| = |x + 5| - 3$",
     "steps": [
         "To solve an equation containing multiple absolute value terms, we identify the critical points where the arguments equal zero: $x = -5$ and $x = 0.5$. These points divide the real number line into three intervals: <br> <strong>Interval 1:</strong> $x < -5$ <br> <strong>Interval 2:</strong> $-5 \\le x < 0.5$ <br> <strong>Interval 3:</strong> $x \\ge 0.5$",
-        "We solve the equation in <strong>Interval 1</strong> ($x < -5$). In this region, $|2x - 1| = 1 - 2x$ and $|x + 5| = -x - 5$: <br> \\begin{aligned} 1 - 2x &= -x - 5 - 3 \\\\cr 1 - 2x &= -x - 8 \\\\cr x &= 9 \\end{aligned} <br> Since $x = 9$ does not lie in the interval $x < -5$, this solution is extraneous and is rejected.",
-        "We solve the equation in <strong>Interval 2</strong> ($-5 \\le x < 0.5$). In this region, $|2x - 1| = 1 - 2x$ and $|x + 5| = x + 5$: <br> \\begin{aligned} 1 - 2x &= x + 5 - 3 \\\\cr 1 - 2x &= x + 2 \\\\cr -3x &= 1 \\\\cr x &= -\\dfrac{ 1 }{ 3 } \\end{aligned} <br> Since $-\\dfrac{ 1 }{ 3 }$ lies in the interval $[-5, 0.5)$, this is a valid solution.",
-        "We solve the equation in <strong>Interval 3</strong> ($x \\ge 0.5$). In this region, $|2x - 1| = 2x - 1$ and $|x + 5| = x + 5$: <br> \\begin{aligned} 2x - 1 &= x + 5 - 3 \\\\cr 2x - 1 &= x + 2 \\\\cr x &= 3 \\end{aligned} <br> Since $3 \\ge 0.5$, this is a valid solution. <br> Combining the valid solutions, the final solution set is: <br> \\begin{aligned} x = -\\dfrac{ 1 }{ 3 } \\quad \\text{or} \\quad x = 3 \\end{aligned}"
+        "We solve the equation in <strong>Interval 1</strong> ($x < -5$). In this region, $|2x - 1| = 1 - 2x$ and $|x + 5| = -x - 5$: <br> \\begin{aligned} 1 - 2x &= -x - 5 - 3 \\cr 1 - 2x &= -x - 8 \\cr x &= 9 \\end{aligned} <br> Since $x = 9$ does not lie in the interval $x < -5$, this solution is extraneous and is rejected.",
+        "We solve the equation in <strong>Interval 2</strong> ($-5 \\le x < 0.5$). In this region, $|2x - 1| = 1 - 2x$ and $|x + 5| = x + 5$: <br> \\begin{aligned} 1 - 2x &= x + 5 - 3 \\cr 1 - 2x &= x + 2 \\cr -3x &= 1 \\cr x &= -\\dfrac{ 1 }{ 3 } \\end{aligned} <br> Since $-\\dfrac{ 1 }{ 3 }$ lies in the interval $[-5, 0.5)$, this is a valid solution.",
+        "We solve the equation in <strong>Interval 3</strong> ($x \\ge 0.5$). In this region, $|2x - 1| = 2x - 1$ and $|x + 5| = x + 5$: <br> \\begin{aligned} 2x - 1 &= x + 5 - 3 \\cr 2x - 1 &= x + 2 \\cr x &= 3 \\end{aligned} <br> Since $3 \\ge 0.5$, this is a valid solution. <br> Combining the valid solutions, the final solution set is: <br> \\begin{aligned} x = -\\dfrac{ 1 }{ 3 } \\quad \\text{or} \\quad x = 3 \\end{aligned}"
     ],
     "pi_options": [
         {
