@@ -541,6 +541,199 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Interval Casework Verification",
         "content": "When solving equations with multiple moduli, the interval (or critical point) method is the safest route. However, you must always verify that your final algebraic solutions fall inside the specific interval they were derived from."
     }
+},
+{
+    "id": "004666",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Geometry",
+    "topic": "Circular Measure",
+    "subtopic": [
+        "Arc Length and Sector Area"
+    ],
+    "img": false,
+    "question": "A circle has centre $O$ and radius $6\\text{ cm}$. Points $P$ and $Q$ lie on the circumference of the circle such that the arc length $PQ$ is $9\\text{ cm}$. <br><br><strong>(a)</strong> Calculate the angle, in radians, subtended at $O$ by the arc $PQ$. <br><br><strong>(b)</strong> Determine the area of the sector $OPQ$.",
+    "steps": [
+        "To find the angle $\\theta$ (in radians) subtended at the centre of a circle by an arc of length $s$, we use the formula: <br> \\begin{aligned} s &= r\\theta \\end{aligned} <br> where $r$ is the radius of the circle.",
+        "We substitute $s = 9$ and $r = 6$ into the formula and solve for $\\theta$: <br> \\begin{aligned} 9 &= 6\\theta \\cr \\theta &= \\dfrac{ 9 }{ 6 } = 1.5 \\quad \\text{radians} \\end{aligned}",
+        "To find the area $A$ of the sector $OPQ$, we use the sector area formula: <br> \\begin{aligned} A &= \\dfrac{ 1 }{ 2 } r^2 \\theta \\end{aligned}",
+        "We substitute our radius $r = 6$ and our calculated angle $\\theta = 1.5$ into the area formula: <br> \\begin{aligned} A &= \\dfrac{ 1 }{ 2 } (6)^2 (1.5) \\cr A &= \\dfrac{ 1 }{ 2 } (36) (1.5) \\cr A &= 27 \\quad \\text{cm}^2 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $\\theta = 1.5$ rad, <strong>(b)</strong> $A = 54\\text{ cm}^2$",
+            "feedback": "This error occurs if you forget the factor of $\\dfrac{ 1 }{ 2 }$ in the sector area formula $A = \\dfrac{ 1 }{ 2 }r^2\\theta$, calculating $r^2\\theta$ instead."
+        },
+        {
+            "ans": "<strong>(a)</strong> $\\theta = 0.67$ rad, <strong>(b)</strong> $A = 12\\text{ cm}^2$",
+            "feedback": "This mistake arises from incorrectly dividing the radius by the arc length to find the angle, writing $\\theta = \\dfrac{ r }{ s } = \\dfrac{ 6 }{ 9 } = \\dfrac{ 2 }{ 3 }$ instead of $\\theta = \\dfrac{ s }{ r }$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $\\theta = 1.5$ rad, <strong>(b)</strong> $A = 18\\text{ cm}^2$",
+            "feedback": "This mistake is caused by incorrectly applying the formula $A = \\dfrac{ 1 }{ 2 }r^2\\theta$, such as failing to square the radius and using a linear calculation instead."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Radians Simplicity",
+        "content": "Using radians makes circular measure calculations incredibly clean. The simple formula $s = r\\theta$ only holds true when $\\theta$ is measured in radians. If the angle were in degrees, you would have to carry around the factor $\\dfrac{ \\pi }{ 180 }$."
+    }
+},
+{
+    "id": "004667",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Geometry",
+    "topic": "Circular Measure",
+    "subtopic": [
+        "Sector Perimeter and Area"
+    ],
+    "img": false,
+    "question": "A sector of a circle of radius $r\\text{ cm}$ has an angle of $\\theta$ radians at its centre. <br><br>Given that the perimeter of the sector is $20\\text{ cm}$ and its area is $24\\text{ cm}^2$, find the possible values of $r$ and the corresponding values of $\\theta$.",
+    "steps": [
+        "The perimeter $P$ of a sector consists of two straight radial boundaries and one curved arc length: <br> \\begin{aligned} P &= 2r + r\\theta = 20 \\end{aligned} <br> The area $A$ of the sector is given by: <br> \\begin{aligned} A &= \\dfrac{ 1 }{ 2 } r^2 \\theta = 24 \\end{aligned}",
+        "We can express the angle $\\theta$ in terms of the radius $r$ using the area equation: <br> \\begin{aligned} \\dfrac{ 1 }{ 2 } r^2 \\theta &= 24 \\cr r^2 \\theta &= 48 \\cr \\theta &= \\dfrac{ 48 }{ r^2 } \\end{aligned}",
+        "We substitute our expression for $\\theta$ into the perimeter equation: <br> \\begin{aligned} 2r + r\\left( \\dfrac{ 48 }{ r^2 } \\right) &= 20 \\cr 2r + \\dfrac{ 48 }{ r } &= 20 \\end{aligned}",
+        "To clear the fraction, we multiply the entire equation by $r$ and rearrange it into a standard quadratic form: <br> \\begin{aligned} 2r^2 + 48 &= 20r \\cr 2r^2 - 20r + 48 &= 0 \\cr r^2 - 10r + 24 &= 0 \\end{aligned}",
+        "We solve this quadratic equation by factorisation: <br> \\begin{aligned} (r - 6)(r - 4) &= 0 \\end{aligned} <br> This yields two possible values for the radius: <br> \\begin{aligned} r = 4 \\quad \\text{or} \\quad r = 6 \\end{aligned}",
+        "Finally, we find the corresponding values of $\\theta$ for each radius: <br> For $r = 4$: <br> \\begin{aligned} \\theta &= \\dfrac{ 48 }{ 4^2 } = 3 \\quad \\text{radians} \\end{aligned} <br> For $r = 6$: <br> \\begin{aligned} \\theta &= \\dfrac{ 48 }{ 6^2 } = \\dfrac{ 4 }{ 3 } \\quad \\text{radians} \\end{aligned} <br> Thus, the possible pairs are $(r = 4\\text{ cm}, \\theta = 3\\text{ rad})$ or $(r = 6\\text{ cm}, \\theta = \\dfrac{ 4 }{ 3 }\\text{ rad})$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$r = 4\\text{ cm}, \\theta = 1.5\\text{ rad}$ or $r = 6\\text{ cm}, \\theta = 1.33\\text{ rad}$",
+            "feedback": "This mistake occurs if you forget to double the area in the first step when expressing $\\theta$, writing $\\theta = \\dfrac{ 24 }{ r^2 }$ instead of $\\theta = \\dfrac{ 48 }{ r^2 }$."
+        },
+        {
+            "ans": "$r = 4\\text{ cm}, \\theta = 4\\text{ rad}$ or $r = 6\\text{ cm}, \\theta = \\dfrac{ 8 }{ 3 }\\text{ rad}$",
+            "feedback": "This error occurs if you express the perimeter as $r + r\\theta = 20$ (forgetting that a sector has two radial boundaries, not one), which alters the quadratic coefficient when solving."
+        },
+        {
+            "ans": "$r = 8\\text{ cm}, \\theta = 0.75\\text{ rad}$ or $r = 3\\text{ cm}, \\theta = 5.33\\text{ rad}$",
+            "feedback": "This arises from a factorisation error of the quadratic equation, such as misidentifying the factors of $24$ that sum to $-10$ (e.g. using $-8$ and $-3$ incorrectly instead of $-6$ and $-4$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Boundaries of a Sector",
+        "content": "A very frequent student error is writing the perimeter of a sector as $P = r + r\\theta$ or $P = r\\theta$. Remember that a sector is a closed slice of a circle bounded by two straight radii and one curved arc, so its perimeter must always be $P = 2r + r\\theta$."
+    }
+},
+{
+    "id": "004668",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Geometry",
+    "topic": "Circular Measure",
+    "subtopic": [
+        "Chord Length and Segment Area"
+    ],
+    "img": false,
+    "question": "A sector of a circle with centre $O$ and radius $8\\text{ cm}$ has a central angle of $\\theta = \\dfrac{ 2\\pi }{ 3 }$ radians. Let $A$ and $B$ be the points on the circumference bounding the sector. <br><br><strong>(a)</strong> Find the exact length of the chord $AB$. <br><br><strong>(b)</strong> Determine the exact area of the segment bounded by the chord $AB$ and the arc $AB$.",
+    "steps": [
+        "We can find the exact length of the chord $AB$ by splitting the isosceles triangle $OAB$ into two congruent right-angled triangles with an angle of $\\dfrac{ \\theta }{ 2 } = \\dfrac{ \\pi }{ 3 }$ radians: <br> \\begin{aligned} AB &= 2r \\sin \\left( \\dfrac{ \\theta }{ 2 } \\right) \\end{aligned}",
+        "Substituting $r = 8$ and the angle into our chord formula yields: <br> \\begin{aligned} AB &= 2(8) \\sin \\left( \\dfrac{ \\pi }{ 3 } \\right) \\cr AB &= 16 \\left( \\dfrac{ \\sqrt{ 3 } }{ 2 } \\right) \\cr AB &= 8\\sqrt{ 3 } \\quad \\text{cm} \\end{aligned}",
+        "The area of the segment is calculated by subtracting the area of the triangle $OAB$ from the area of the sector $OAB$: <br> \\begin{aligned} A_{\\text{segment}} &= A_{\\text{sector}} - A_{\\text{triangle}} \\end{aligned}",
+        "First, we calculate the area of the sector: <br> \\begin{aligned} A_{\\text{sector}} &= \\dfrac{ 1 }{ 2 } r^2 \\theta \\cr A_{\\text{sector}} &= \\dfrac{ 1 }{ 2 } (8)^2 \\left( \\dfrac{ 2\\pi }{ 3 } \\right) \\cr A_{\\text{sector}} &= \\dfrac{ 64\\pi }{ 3 } \\quad \\text{cm}^2 \\end{aligned}",
+        "Next, we calculate the area of the triangle using the sine area formula: <br> \\begin{aligned} A_{\\text{triangle}} &= \\dfrac{ 1 }{ 2 } r^2 \\sin \\theta \\cr A_{\\text{triangle}} &= \\dfrac{ 1 }{ 2 } (8)^2 \\sin \\left( \\dfrac{ 2\\pi }{ 3 } \\right) \\cr A_{\\text{triangle}} &= 32 \\left( \\dfrac{ \\sqrt{ 3 } }{ 2 } \\right) = 16\\sqrt{ 3 } \\quad \\text{cm}^2 \\end{aligned}",
+        "Finally, we subtract the triangle area from the sector area to obtain the exact area of the segment: <br> \\begin{aligned} A_{\\text{segment}} &= \\dfrac{ 64\\pi }{ 3 } - 16\\sqrt{ 3 } \\quad \\text{cm}^2 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $8\\text{ cm}$, <strong>(b)</strong> $\\dfrac{ 64\\pi }{ 3 } - 16\\sqrt{ 3 }\\text{ cm}^2$",
+            "feedback": "This error occurs in part (a) if you assume the triangle $OAB$ is equilateral because of the presence of $\\pi/3$ components, leading to a chord length equal to the radius ($8\\text{ cm}$)."
+        },
+        {
+            "ans": "<strong>(a)</strong> $8\\sqrt{ 3 }\\text{ cm}$, <strong>(b)</strong> $\\dfrac{ 64\\pi }{ 3 } - 32\\sqrt{ 3 }\\text{ cm}^2$",
+            "feedback": "This error arises in part (b) if you forget the factor of $\\dfrac{ 1 }{ 2 }$ in the triangle area formula $\\dfrac{ 1 }{ 2 }r^2\\sin\\theta$, subtracting $32\\sqrt{ 3 }$ instead of $16\\sqrt{ 3 }$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $4\\sqrt{ 3 }\\text{ cm}$, <strong>(b)</strong> $\\dfrac{ 32\\pi }{ 3 } - 16\\sqrt{ 3 }\\text{ cm}^2$",
+            "feedback": "This mistake occurs if you use a radius of $4\\text{ cm}$ instead of $8\\text{ cm}$ in your calculations, perhaps from confusing the radius with half of its value."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Chord Length Shortcut",
+        "content": "For any isosceles triangle formed by a sector, the chord length formula $2r \\sin \\left( \\dfrac{ \\theta }{ 2 } \\right)$ is a massive timesaver. It bypasses the need to write out the full Cosine Rule $a^2 = b^2 + c^2 - 2bc \\cos A$, although both methods yield the exact same simplified result."
+    }
+},
+{
+    "id": "004669",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Geometry",
+    "topic": "Circular Measure",
+    "subtopic": [
+        "Cone Geometry",
+        "Sector to Cone Mapping"
+    ],
+    "img": false,
+    "question": "A sector of a circle of radius $12\\text{ cm}$ with sector angle $\\theta = \\dfrac{ 4\\pi }{ 3 }$ radians is bent to form the curved surface of a right circular cone. <br><br><strong>(a)</strong> Find the radius of the base of the cone. <br><br><strong>(b)</strong> Determine the height of the cone, giving your answer in exact surd form.",
+    "steps": [
+        "When a sector of a circle of radius $R$ is bent to form a cone, the arc length $s$ of the sector becomes the circumference of the circular base of the cone (which has radius $r$): <br> \\begin{aligned} s &= 2\\pi r \\end{aligned}",
+        "We calculate the arc length $s$ using the radius of the sector $R = 12\\text{ cm}$ and angle $\\theta = \\dfrac{ 4\\pi }{ 3 }$: <br> \\begin{aligned} s &= R\\theta \\cr s &= 12 \\left( \\dfrac{ 4\\pi }{ 3 } \\right) = 16\\pi \\quad \\text{cm} \\end{aligned}",
+        "We set the base circumference of the cone equal to this arc length and solve for $r$: <br> \\begin{aligned} 2\\pi r &= 16\\pi \\cr r &= 8 \\quad \\text{cm} \\end{aligned}",
+        "The radius of the original sector ($R = 12\\text{ cm}$) becomes the slant height of the formed cone. The base radius of the cone is $r = 8\\text{ cm}$. By Pythagoras' theorem, the vertical height $h$ is: <br> \\begin{aligned} h^2 + r^2 &= R^2 \\cr h &= \\sqrt{ R^2 - r^2 } \\end{aligned}",
+        "We substitute our values into the theorem to find the exact vertical height: <br> \\begin{aligned} h &= \\sqrt{ 12^2 - 8^2 } \\cr h &= \\sqrt{ 144 - 64 } \\cr h &= \\sqrt{ 80 } = 4\\sqrt{ 5 } \\quad \\text{cm} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $8\\text{ cm}$, <strong>(b)</strong> $10\\text{ cm}$",
+            "feedback": "This error occurs in part (b) if you mistakenly assume a $3-4-5$ Pythagorean triple structure, resulting in a height of $10\\text{ cm}$ from a base radius of $8\\text{ cm}$ and a slant height of $12\\text{ cm}$ (which is mathematically invalid since $8^2 + 10^2 \\neq 12^2$)."
+        },
+        {
+            "ans": "<strong>(a)</strong> $4\\text{ cm}$, <strong>(b)</strong> $8\\sqrt{ 2 }\\text{ cm}$",
+            "feedback": "This mistake occurs in part (a) if you forget the factor of $2\\pi$ in the circumference formula, writing $r = \\dfrac{ s }{ \\pi } = 16$ or making an arithmetic division slip."
+        },
+        {
+            "ans": "<strong>(a)</strong> $8\\text{ cm}$, <strong>(b)</strong> $4\\sqrt{ 13 }\\text{ cm}$",
+            "feedback": "This error occurs in part (b) if you add the squares of the base radius and slant height instead of subtracting them, calculating $h = \\sqrt{ 12^2 + 8^2 } = \\sqrt{ 208 } = 4\\sqrt{ 13 }$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Sector-to-Cone Mapping",
+        "content": "Visualizing 3D transformations is a key skill. Always remember the two fundamental rules of sector-to-cone mapping: <br> 1. The arc length of the sector becomes the base circumference of the cone ($s = 2\\pi r$). <br> 2. The radius of the sector becomes the slant height of the cone ($l = R$)."
+    }
+},
+{
+    "id": "004670",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Geometry",
+    "topic": "Circular Measure",
+    "subtopic": [
+        "Intersecting Circles",
+        "Area of Common Region"
+    ],
+    "img": false,
+    "question": "Two identical circles, each of radius $6\\text{ cm}$, have their centres at $O_1$ and $O_2$. The distance between the centres is also $6\\text{ cm}$, so that the circumference of each circle passes through the centre of the other. <br><br>Find the exact area of the region common to both circles.",
+    "steps": [
+        "Let $A$ and $B$ be the two points where the circumferences of the two circles intersect. Since the distance between centres is equal to the radius ($6\\text{ cm}$), we observe that: <br> \\begin{aligned} O_1 O_2 &= 6 \\cr O_1 A &= O_2 A = 6 \\end{aligned} <br> Therefore, the triangle $O_1 A O_2$ is equilateral, and the angle $\\angle A O_1 O_2 = \\dfrac{ \\pi }{ 3 }$ radians.",
+        "By symmetry, the total angle of the sector $A O_1 B$ is double the angle of triangle $O_1 A O_2$: <br> \\begin{aligned} \\theta &= 2 \\times \\angle A O_1 O_2 \\cr \\theta &= 2 \\times \\dfrac{ \\pi }{ 3 } = \\dfrac{ 2\\pi }{ 3 } \\quad \\text{radians} \\end{aligned}",
+        "The common region consists of two identical circular segments separated by the common chord $AB$. The area of one such segment in circle $O_1$ is: <br> \\begin{aligned} A_{\\text{segment}} &= A_{\\text{sector}} - A_{\\text{triangle}} \\cr A_{\\text{segment}} &= \\dfrac{ 1 }{ 2 } r^2 \\theta - \\dfrac{ 1 }{ 2 } r^2 \\sin \\theta \\end{aligned}",
+        "Substituting $r = 6$ and $\\theta = \\dfrac{ 2\\pi }{ 3 }$ into the segment formula: <br> \\begin{aligned} A_{\\text{segment}} &= \\dfrac{ 1 }{ 2 } (6)^2 \\left( \\dfrac{ 2\\pi }{ 3 } \\right) - \\dfrac{ 1 }{ 2 } (6)^2 \\sin \\left( \\dfrac{ 2\\pi }{ 3 } \\right) \\cr A_{\\text{segment}} &= 12\\pi - 18 \\left( \\dfrac{ \\sqrt{ 3 } }{ 2 } \\right) = 12\\pi - 9\\sqrt{ 3 } \\end{aligned}",
+        "We double the area of this single segment to find the total area of the common region: <br> \\begin{aligned} A_{\\text{total}} &= 2 \\times A_{\\text{segment}} \\cr A_{\\text{total}} &= 2(12\\pi - 9\\sqrt{ 3 }) \\cr A_{\\text{total}} &= 24\\pi - 18\\sqrt{ 3 } \\quad \\text{cm}^2 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$12\\pi - 9\\sqrt{ 3 }\\text{ cm}^2$",
+            "feedback": "This represents the area of only one segment. You must double this result because the overlapping region consists of two identical segments joined along the common chord."
+        },
+        {
+            "ans": "$24\\pi - 9\\sqrt{ 3 }\\text{ cm}^2$",
+            "feedback": "This error occurs if you only subtract the area of one triangle instead of two when combining the sector areas, or make a scaling slip when doubling."
+        },
+        {
+            "ans": "$18\\pi - 12\\sqrt{ 3 }\\text{ cm}^2$",
+            "feedback": "This represents an algebraic simplification error where the coefficients are miscalculated during the expansion of the segment subtraction."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Overlapping Circles Symmetry",
+        "content": "When two identical circles of radius $r$ intersect such that each passes through the other's centre, they form a symmetric lens shape. This shape is exactly double the area of a segment of a circle with a sector angle of $\\dfrac{ 2\\pi }{ 3 }$ radians."
+    }
 }
 
 ];
