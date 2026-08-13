@@ -1300,6 +1300,205 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Combining Logarithms for Exact Areas",
         "content": "When evaluating definite integrals that yield multiple logarithmic terms, always simplify your answer into a single logarithm using the laws of logarithms: $a\\ln x - b\\ln y = \\ln\\left( \\dfrac{ x^a }{ y^b } \\right)$. This is not only standard practice in A-Level examinations, but it is also essential to prove that a calculated area is positive."
     }
+},
+{
+    "id": "004686",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+        "Negative Fractional Indices",
+        "Approximations"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Find the first three terms in the binomial expansion of $(1 - 8x)^{ -\\dfrac{ 1 }{ 2 } }$ in ascending powers of $x$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion is valid. <br><br><strong>(c)</strong> By substituting $x = \\dfrac{ 1 }{ 100 }$ into your expansion, find an approximate value for $\\sqrt{ 23 }$ in the form $\\dfrac{ a }{ b }$, where $a$ and $b$ are integers.",
+    "steps": [
+        "To find the binomial expansion of $(1 - 8x)^{ -\\dfrac{ 1 }{ 2 } }$, we apply the general binomial theorem $(1 + u)^n = 1 + nu + \\dfrac{ n(n - 1) }{ 2! } u^2 + \\dots$ where $u = -8x$ and $n = -\\dfrac{ 1 }{ 2 }$: <br> \\begin{aligned} (1 - 8x)^{ -\\dfrac{ 1 }{ 2 } } &\\approx 1 + \\left( -\\dfrac{ 1 }{ 2 } \\right)(-8x) + \\dfrac{ \\left( -\\dfrac{ 1 }{ 2 } \\right)\\left( -\\dfrac{ 3 }{ 2 } \\right) }{ 2 } (-8x)^2 \\end{aligned}",
+        "We simplify each term of the expansion: <br> \\begin{aligned} \\text{Term 1: } &1 \\cr \\text{Term 2: } &4x \\cr \\text{Term 3: } &\\dfrac{ 3/4 }{ 2 } (64x^2) = \\dfrac{ 3 }{ 8 } (64x^2) = 24x^2 \\end{aligned} <br> Thus, the first three terms of the expansion are: <br> \\begin{aligned} 1 + 4x + 24x^2 \\end{aligned}",
+        "To find the range of validity for part (b), the absolute value of the variable term in the expansion must be strictly less than $1$: <br> \\begin{aligned} |-8x| < 1 &\\implies 8|x| < 1 \\cr &\\implies |x| < \\dfrac{ 1 }{ 8 } \\end{aligned}",
+        "To solve part (c), we substitute $x = \\dfrac{ 1 }{ 100 } = 0.01$ into the left-hand side of our binomial expression: <br> \\begin{aligned} \\left( 1 - 8\\left( \\dfrac{ 1 }{ 100 } \\right) \\right)^{ -\\dfrac{ 1 }{ 2 } } &= \\left( 1 - \\dfrac{ 8 }{ 100 } \\right)^{ -\\dfrac{ 1 }{ 2 } } \\cr &= \\left( \\dfrac{ 92 }{ 100 } \\right)^{ -\\dfrac{ 1 }{ 2 } } \\cr &= \\sqrt{ \\dfrac{ 100 }{ 92 } } = \\sqrt{ \\dfrac{ 25 }{ 23 } } = \\dfrac{ 5 }{ \\sqrt{ 23 } } \\end{aligned}",
+        "Next, we substitute $x = 0.01$ into our three-term binomial expansion from part (a): <br> \\begin{aligned} 1 + 4(0.01) + 24(0.01)^2 &= 1 + 0.04 + 0.0024 \\cr &= 1.0424 \\end{aligned} <br> Expressing $1.0424$ as an exact simplified fraction: <br> \\begin{aligned} 1.0424 = \\dfrac{ 10424 }{ 10000 } = \\dfrac{ 1303 }{ 1250 } \\end{aligned}",
+        "We equate our two results to approximate $\\sqrt{ 23 }$: <br> \\begin{aligned} \\dfrac{ 5 }{ \\sqrt{ 23 } } &\\approx \\dfrac{ 1303 }{ 1250 } \\cr \\sqrt{ 23 } &\\approx \\dfrac{ 5 \\times 1250 }{ 1303 } \\cr \\sqrt{ 23 } &\\approx \\dfrac{ 6250 }{ 1303 } \\end{aligned} <br> Thus, the approximate value of $\\sqrt{ 23 }$ is $\\dfrac{ 6250 }{ 1303 }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(c)</strong> $\\dfrac{ 2606 }{ 2500 }$",
+            "feedback": "This is a severe error caused by failing to recognise that substituting $x = 0.01$ into $(1-8x)^{-1/2}$ yields $\\dfrac{ 5 }{ \\sqrt{ 23 } }$ rather than $\\sqrt{ 23 }$, resulting in an approximation that is incorrect by a factor of nearly five."
+        },
+        {
+            "ans": "<strong>(c)</strong> $\\dfrac{ 1250 }{ 1303 }$",
+            "feedback": "This mistake occurs if you solve the algebraic relationship between the expansion and $\\sqrt{ 23 }$ correctly but omit the numerator factor of $5$ during final isolation, calculating $\\sqrt{ 23 } \\approx \\dfrac{ 1250 }{ 1303 }$."
+        },
+        {
+            "ans": "<strong>(c)</strong> $\\dfrac{ 1303 }{ 6250 }$",
+            "feedback": "This error occurs if you invert the final fractional relationship, evaluating $\\sqrt{ 23 }$ as $\\dfrac{ 1303 }{ 6250 }$ instead of $\\dfrac{ 6250 }{ 1303 }$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: The Approximation Conversion Trap",
+        "content": "When using binomial expansions to approximate roots, students almost always make the mistake of assuming that substituting a small value of $x$ yields the root directly (e.g. assuming $(1-8x)^{-1/2} = \\sqrt{23}$). Always write out the left-hand side calculation in full, find its exact relation to the required root, and then rearrange the final fraction carefully."
+    }
+},
+{
+    "id": "004687",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+        "Fractional Indices",
+        "Leading Constants"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Find the first three terms in the binomial expansion of $(8 - 3x)^{ \\dfrac{ 1 }{ 3 } }$ in ascending powers of $x$, giving each coefficient as a simplified fraction. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion is valid.",
+    "steps": [
+        "To expand a binomial expression of the form $(a + bx)^n$ where the leading term is not $1$, we must first factorise the leading constant out of the brackets: <br> \\begin{aligned} (8 - 3x)^{ \\dfrac{ 1 }{ 3 } } &= \\left[ 8 \\left( 1 - \\dfrac{ 3 }{ 8 } x \\right) \\right]^{ \\dfrac{ 1 }{ 3 } } \\cr &= 8^{ \\dfrac{ 1 }{ 3 } } \\left( 1 - \\dfrac{ 3 }{ 8 } x \\right)^{ \\dfrac{ 1 }{ 3 } } \\cr &= 2 \\left( 1 - \\dfrac{ 3 }{ 8 } x \\right)^{ \\dfrac{ 1 }{ 3 } } \\end{aligned}",
+        "We apply the general binomial theorem to the term inside the parentheses with $u = -\\dfrac{ 3 }{ 8 } x$ and $n = \\dfrac{ 1 }{ 3 }$: <br> \\begin{aligned} \\left( 1 - \\dfrac{ 3 }{ 8 } x \\right)^{ \\dfrac{ 1 }{ 3 } } &\\approx 1 + \\left( \\dfrac{ 1 }{ 3 } \\right)\\left( -\\dfrac{ 3 }{ 8 } x \\right) + \\dfrac{ \\left( \\dfrac{ 1 }{ 3 } \\right)\\left( -\\dfrac{ 2 }{ 3 } \\right) }{ 2 } \\left( -\\dfrac{ 3 }{ 8 } x \\right)^2 \\end{aligned}",
+        "We expand and simplify each term inside the bracket: <br> \\begin{aligned} \\text{Term 1: } &1 \\cr \\text{Term 2: } &-\\dfrac{ 1 }{ 8 } x \\cr \\text{Term 3: } &\\left( -\\dfrac{ 1 }{ 9 } \\right) \\left( \\dfrac{ 9 }{ 64 } x^2 \\right) = -\\dfrac{ 1 }{ 64 } x^2 \\end{aligned} <br> Substituting these back into our expression: <br> \\begin{aligned} 2 \\left( 1 - \\dfrac{ 1 }{ 8 } x - \\dfrac{ 1 }{ 64 } x^2 \\right) \\end{aligned}",
+        "We distribute the factor of $2$ across the terms to get our final expansion: <br> \\begin{aligned} 2 - \\dfrac{ 1 }{ 4 } x - \\dfrac{ 1 }{ 32 } x^2 \\end{aligned}",
+        "To solve part (b), the range of validity requires the absolute value of the variable term in the parenthetical expression to be strictly less than $1$: <br> \\begin{aligned} \\left| -\\dfrac{ 3 }{ 8 } x \\right| < 1 &\\implies \\dfrac{ 3 }{ 8 } |x| < 1 \\cr &\\implies |x| < \\dfrac{ 8 }{ 3 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $1 - \\dfrac{ 1 }{ 8 } x - \\dfrac{ 1 }{ 64 } x^2$, <strong>(b)</strong> $|x| < \\dfrac{ 8 }{ 3 }$",
+            "feedback": "This error occurs if you forget to multiply the final terms of the binomial expansion by the factor of $2$ that was extracted from the leading constant $8^{1/3}$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $2 - \\dfrac{ 1 }{ 4 } x - \\dfrac{ 1 }{ 32 } x^2$, <strong>(b)</strong> $|x| < 1$",
+            "feedback": "This error occurs in part (b) if you assume the range of validity is always $|x| < 1$ regardless of the horizontal coefficients, neglecting the scale factor of the variable."
+        },
+        {
+            "ans": "<strong>(a)</strong> $2 - \\dfrac{ 1 }{ 4 } x + \\dfrac{ 1 }{ 32 } x^2$, <strong>(b)</strong> $|x| < \\dfrac{ 8 }{ 3 }$",
+            "feedback": "This mistake is caused by a sign error in evaluating Term 3, failing to recognise that the product of the terms $\\dfrac{ 1 }{ 3 } \\left( -\\dfrac{ 2 }{ 3 } \\right)$ is negative, resulting in a positive quadratic term."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Leading Term Factorisation",
+        "content": "For any binomial expansion where the index $n$ is not a positive integer, the first term inside the bracket *must* be exactly $1$ to apply the standard binomial formula. Always extract the leading constant first, making sure to apply the index $n$ to the extracted constant (e.g. $8^{1/3} = 2$)."
+    }
+},
+{
+    "id": "004688",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+        "Negative Indices",
+        "Combined Expressions"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Find the binomial expansion of: <br> $f(x) = \\dfrac{ 3 + x }{ (1 - 2x)^2 }$ <br><br>in ascending powers of $x$, up to and including the term in $x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which this expansion is valid.",
+    "steps": [
+        "We rewrite the rational function as a product involving a negative integer index: <br> \\begin{aligned} f(x) &= (3 + x)(1 - 2x)^{ -2 } \\end{aligned}",
+        "We expand the term $(1 - 2x)^{ -2 }$ using the binomial theorem with $u = -2x$ and $n = -2$: <br> \\begin{aligned} (1 - 2x)^{ -2 } &\\approx 1 + (-2)(-2x) + \\dfrac{ (-2)(-3) }{ 2 } (-2x)^2 \\end{aligned}",
+        "We simplify each term of this expansion: <br> \\begin{aligned} \\text{Term 1: } &1 \\cr \\text{Term 2: } &4x \\cr \\text{Term 3: } &3(4x^2) = 12x^2 \\end{aligned} <br> Thus, the expansion of the denominator term is: <br> \\begin{aligned} (1 - 2x)^{ -2 } &\\approx 1 + 4x + 12x^2 \\end{aligned}",
+        "We multiply this expansion by the numerator $(3 + x)$, ignoring terms of degree $3$ or higher: <br> \\begin{aligned} f(x) &\\approx (3 + x)(1 + 4x + 12x^2) \\cr &= 3(1 + 4x + 12x^2) + x(1 + 4x) \\cr &= 3 + 12x + 36x^2 + x + 4x^2 \\cr &= 3 + 13x + 40x^2 \\end{aligned}",
+        "To solve part (b), the range of validity depends on the variable term inside the binomial bracket: <br> \\begin{aligned} |-2x| < 1 &\\implies 2|x| < 1 \\cr &\\implies |x| < \\dfrac{ 1 }{ 2 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $3 + 13x + 36x^2$, <strong>(b)</strong> $|x| < \\dfrac{ 1 }{ 2 }$",
+            "feedback": "This error occurs if you forget to include the term $x \\times 4x = 4x^2$ when distributing the multiplication of $(3 + x)$ across the quadratic term."
+        },
+        {
+            "ans": "<strong>(a)</strong> $3 + 13x + 16x^2$, <strong>(b)</strong> $|x| < 1$",
+            "feedback": "This mistake is caused by using an incorrect expansion for $(1 - 2x)^{-2}$, such as evaluating the quadratic term coefficient as $4x^2$ instead of $12x^2$ due to an index division slip."
+        },
+        {
+            "ans": "<strong>(a)</strong> $3 + 11x + 40x^2$, <strong>(b)</strong> $|x| < \\dfrac{ 1 }{ 2 }$",
+            "feedback": "This arises from a sign slip when evaluating Term 2 of the binomial expansion, calculating $-4x$ instead of $+4x$, which leads to $3 - 12x + 36x^2 + x - 4x^2 = 3 - 11x + 32x^2$ or other sign errors."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Limit Polynomial Multiplication",
+        "content": "When multiplying a linear polynomial like $(3 + x)$ by an infinite series expansion, there is no need to calculate every term. Only compute the product terms that contribute up to the required power (in this case, $x^2$). Any higher-order products (like $x \\times 12x^2 = 12x^3$) can be immediately ignored."
+    }
+},
+{
+    "id": "004689",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+        "Partial Fractions",
+        "Negative Indices"
+    ],
+    "img": false,
+    "question": "A function $f$ is defined by: <br> $f(x) = \\dfrac{ 3x - 5 }{ (1 - x)(1 - 2x) }$ <br><br><strong>(a)</strong> Express $f(x)$ in terms of partial fractions. <br><br><strong>(b)</strong> Find the binomial expansion of $f(x)$ in ascending powers of $x$ up to and including the term in $x^2$. <br><br><strong>(c)</strong> State the set of values of $x$ for which this combined expansion is valid.",
+    "steps": [
+        "To express $f(x)$ in partial fractions, we write the decomposition template for non-repeated linear factors: <br> \\begin{aligned} \\dfrac{ 3x - 5 }{ (1 - x)(1 - 2x) } &= \\dfrac{ A }{ 1 - x } + \\dfrac{ B }{ 1 - 2x } \\end{aligned}",
+        "We clear the fractions by multiplying by the common denominator: <br> \\begin{aligned} 3x - 5 &= A(1 - 2x) + B(1 - x) \\end{aligned} <br> We solve for $A$ and $B$ by substituting $x$ values: <br> Set $x = 1$: <br> \\begin{aligned} 3(1) - 5 &= A(1 - 2) \\cr -2 &= -A \\implies A = 2 \\end{aligned} <br> Set $x = 0.5$: <br> \\begin{aligned} 3(0.5) - 5 &= B(1 - 0.5) \\cr -3.5 &= 0.5B \\implies B = -7 \\end{aligned} <br> Thus, the partial fractions decomposition is: <br> \\begin{aligned} f(x) &= \\dfrac{ 2 }{ 1 - x } - \\dfrac{ 7 }{ 1 - 2x } \\end{aligned}",
+        "To solve part (b), we express the partial fractions using negative integer indices: <br> \\begin{aligned} f(x) &= 2(1 - x)^{ -1 } - 7(1 - 2x)^{ -1 } \\end{aligned}",
+        "We expand each term up to the $x^2$ term using the binomial theorem: <br> \\begin{aligned} 2(1 - x)^{ -1 } &\\approx 2(1 + x + x^2) = 2 + 2x + 2x^2 \\cr -7(1 - 2x)^{ -1 } &\\approx -7(1 + 2x + (2x)^2) = -7(1 + 2x + 4x^2) = -7 - 14x - 28x^2 \\end{aligned}",
+        "We combine these expansions together: <br> \\begin{aligned} f(x) &\\approx (2 - 7) + (2 - 14)x + (2 - 28)x^2 \\cr &= -5 - 12x - 26x^2 \\end{aligned}",
+        "To solve part (c), we find the range of validity for each individual expansion: <br> For $(1 - x)^{ -1 }$: <br> \\begin{aligned} |x| < 1 \\end{aligned} <br> For $(1 - 2x)^{ -1 }$: <br> \\begin{aligned} |2x| < 1 &\\implies |x| < \\dfrac{ 1 }{ 2 } \\end{aligned} <br> For the combined expansion to be valid, both series must converge. We choose the stricter of the two intervals, which is the intersection: <br> \\begin{aligned} |x| < \\dfrac{ 1 }{ 2 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(b)</strong> $-1 - 3x - 7x^2$, <strong>(c)</strong> $|x| < \\dfrac{ 1 }{ 2 }$",
+            "feedback": "This error occurs if you use incorrect partial fractions constants ($A = 1, B = -2$), leading to a completely corrupted binomial expansion."
+        },
+        {
+            "ans": "<strong>(b)</strong> $-5 - 12x - 26x^2$, <strong>(c)</strong> $|x| < 1$",
+            "feedback": "This mistake occurs in part (c) if you choose the larger interval of convergence $|x| < 1$ instead of the stricter, overlapping interval $|x| < \\dfrac{ 1 }{ 2 }$."
+        },
+        {
+            "ans": "<strong>(b)</strong> $-5 - 12x - 30x^2$, <strong>(c)</strong> $|x| < \\dfrac{ 1 }{ 2 }$",
+            "feedback": "This mistake is caused by a failure to square the variable term correctly in the second expansion, evaluating $-7(1 - 2x)^{-1}$ as $-7(1 + 2x + 2x^2) = -7 - 14x - 14x^2$ instead."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Overlapping Validity Sets",
+        "content": "When expanding multiple binomial brackets in a single expression, each bracket has its own independent range of validity. For the combined final expansion to be valid, both expansions must converge simultaneously. Therefore, the overall range of validity is always the *strictest* (smallest) of the individual intervals."
+    }
+},
+{
+    "id": "004690",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+        "Negative Indices",
+        "Equating Coefficients"
+    ],
+    "img": false,
+    "question": "In the binomial expansion of $(1 + ax)^n$, where $n$ is a negative integer and $a$ is a real constant, the first three non-zero terms in ascending powers of $x$ are: <br> $1 - 12x + 78x^2$ <br><br><strong>(a)</strong> Find the values of the constants $a$ and $n$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion is valid.",
+    "steps": [
+        "We write the general binomial expansion of $(1 + ax)^n$: <br> \\begin{aligned} (1 + ax)^n &\\approx 1 + n(ax) + \\dfrac{ n(n - 1) }{ 2! } (ax)^2 \\cr &= 1 + anx + \\dfrac{ n(n - 1)a^2 }{ 2 } x^2 \\end{aligned}",
+        "We equate the coefficients of our general expansion to the coefficients of the given series $1 - 12x + 78x^2$: <br> For the $x$ term: <br> \\begin{aligned} an &= -12 \\end{aligned} <br> For the $x^2$ term: <br> \\begin{aligned} \\dfrac{ n(n - 1)a^2 }{ 2 } &= 78 \\end{aligned}",
+        "We express $a$ in terms of $n$ from the first equation: <br> \\begin{aligned} a &= -\\dfrac{ 12 }{ n } \\end{aligned}",
+        "We substitute our expression for $a$ into the second equation: <br> \\begin{aligned} \\dfrac{ n(n - 1) }{ 2 } \\left( -\\dfrac{ 12 }{ n } \\right)^2 &= 78 \\cr \\dfrac{ n(n - 1) }{ 2 } \\left( \\dfrac{ 144 }{ n^2 } \\right) &= 78 \\cr \\dfrac{ 72(n - 1) }{ n } &= 78 \\end{aligned}",
+        "We solve this equation for $n$: <br> \\begin{aligned} 72(n - 1) &= 78n \\cr 72n - 72 &= 78n \\cr -72 &= 6n \\implies n = -12 \\end{aligned}",
+        "Now, we substitute $n = -12$ back to find the value of $a$: <br> \\begin{aligned} a &= -\\dfrac{ 12 }{ -12 } = 1 \\end{aligned} <br> Thus, the constants are $a = 1$ and $n = -12$.",
+        "To solve part (b), we find the range of validity for $(1 + x)^{-12}$: <br> \\begin{aligned} |ax| < 1 &\\implies |(1)x| < 1 \\cr &\\implies |x| < 1 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $a = -1$, $n = 12$, <strong>(b)</strong> $|x| < 1$",
+            "feedback": "This error occurs if you make a sign error when solving for $n$, concluding that $n$ is positive ($12$) instead of a negative integer ($-12$), which violates the premise of the question."
+        },
+        {
+            "ans": "<strong>(a)</strong> $a = 2$, $n = -6$, <strong>(b)</strong> $|x| < \\dfrac{ 1 }{ 2 }$",
+            "feedback": "This mistake is caused by an arithmetic division error when simplifying the quadratic substitution equation, leading to incorrect values of $a$ and $n$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $a = 1$, $n = -12$, <strong>(b)</strong> $|x| < \\dfrac{ 1 }{ 12 }$",
+            "feedback": "This error occurs in part (b) if you mistakenly use the coefficient of the linear term ($12$) instead of the value of $a$ ($1$) to determine the range of validity."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Systems of Binomial Equations",
+        "content": "Reverse-engineering a binomial expansion by equating coefficients always results in a system of non-linear equations. Isolating the linear scale factor $a = -\\dfrac{ k }{ n }$ and substituting it into the quadratic term is the most reliable way to eliminate $a$ and solve for $n$ directly."
+    }
 }
 
 ];
