@@ -1103,6 +1103,203 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Small-Angle Limits",
         "content": "Small-angle approximations are extremely powerful but only hold true when $\\theta$ is small (generally, $-0.5 < \\theta < 0.5$ radians is highly accurate). While our positive solution $\\theta \\approx 0.860$ mathematically satisfies the quadratic approximation, it is slightly outside this highly accurate physical bound, whereas $\\theta \\approx -0.194$ represents a highly accurate, physically realistic small angle."
     }
+},
+{
+    "id": "004681",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Integration",
+    "topic": "Partial Fractions",
+    "subtopic": [
+        "Definite Integration",
+        "Repeated Linear Factors"
+    ],
+    "img": false,
+    "question": "A function $f$ is defined for $x > 3$ by: <br> $f(x) = \\dfrac{ x + 3 }{ (x - 1)(x - 3)^2 }$ <br><br><strong>(a)</strong> Express $f(x)$ in terms of partial fractions. <br><br><strong>(b)</strong> Evaluate the definite integral: <br> $\\int_{ 4 }^{ 5 } f(x) \\mathrm{d}x$ <br><br>giving your answer to three decimal places.",
+    "steps": [
+        "To express $f(x)$ in terms of partial fractions, we set up the decomposition template for a repeated linear factor in the denominator: <br> \\begin{aligned} \\dfrac{ x + 3 }{ (x - 1)(x - 3)^2 } &= \\dfrac{ A }{ x - 1 } + \\dfrac{ B }{ x - 3 } + \\dfrac{ C }{ (x - 3)^2 } \\end{aligned}",
+        "We clear the fractions by multiplying both sides of the identity by $(x - 1)(x - 3)^2$: <br> \\begin{aligned} x + 3 &= A(x - 3)^2 + B(x - 1)(x - 3) + C(x - 1) \\end{aligned}",
+        "We solve for the constants $A$, $B$, and $C$ by substituting convenient values of $x$: <br> Set $x = 3$: <br> \\begin{aligned} 3 + 3 &= C(3 - 1) \\cr 6 &= 2C \\implies C = 3 \\end{aligned} <br> Set $x = 1$: <br> \\begin{aligned} 1 + 3 &= A(1 - 3)^2 \\cr 4 &= 4A \\implies A = 1 \\end{aligned} <br> Comparing the coefficients of $x^2$ on both sides: <br> \\begin{aligned} 0 &= A + B \\cr 0 &= 1 + B \\implies B = -1 \\end{aligned} <br> Thus, the partial fractions decomposition is: <br> \\begin{aligned} f(x) &= \\dfrac{ 1 }{ x - 1 } - \\dfrac{ 1 }{ x - 3 } + \\dfrac{ 3 }{ (x - 3)^2 } \\end{aligned}",
+        "To solve part (b), we evaluate the definite integral by integrating each term separately: <br> \\begin{aligned} \\int_{ 4 }^{ 5 } f(x) \\mathrm{d}x &= \\int_{ 4 }^{ 5 } \\left( \\dfrac{ 1 }{ x - 1 } - \\dfrac{ 1 }{ x - 3 } + \\dfrac{ 3 }{ (x - 3)^2 } \\right) \\mathrm{d}x \\cr &= \\left[ \\ln|x - 1| - \\ln|x - 3| - \\dfrac{ 3 }{ x - 3 } \\right]_{ 4 }^{ 5 } \\end{aligned}",
+        "We substitute the upper limit $x = 5$ and the lower limit $x = 4$: <br> At $x = 5$: <br> \\begin{aligned} \\ln|4| - \\ln|2| - \\dfrac{ 3 }{ 2 } &= \\ln\\left( \\dfrac{ 4 }{ 2 } \\right) - 1.5 = \\ln 2 - 1.5 \\end{aligned} <br> At $x = 4$: <br> \\begin{aligned} \\ln|3| - \\ln|1| - \\dfrac{ 3 }{ 1 } &= \\ln 3 - 0 - 3 = \\ln 3 - 3 \\end{aligned}",
+        "We subtract the lower limit evaluation from the upper limit evaluation: <br> \\begin{aligned} \\int_{ 4 }^{ 5 } f(x) \\mathrm{d}x &= (\\ln 2 - 1.5) - (\\ln 3 - 3) \\cr &= \\ln\\left( \\dfrac{ 2 }{ 3 } \\right) + 1.5 \\cr &\\approx -0.405465 + 1.5 \\cr &\\approx 1.095 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$1.500$",
+            "feedback": "This mistake occurs if you evaluate $\\ln\\left( \\dfrac{ 2 }{ 3 } \\right)$ incorrectly as $0$, or omit the logarithmic terms completely during integration."
+        },
+        {
+            "ans": "$1.905$",
+            "feedback": "This error is caused by a sign slip during limit subtraction, calculating $1.5 + \\ln 2 + \\ln 3$ instead of $1.5 + \\ln 2 - \\ln 3$."
+        },
+        {
+            "ans": "$2.695$",
+            "feedback": "This arises if you make an integration error with the repeated linear factor, evaluating $\\int \\dfrac{ 3 }{ (x - 3)^2 } \\mathrm{d}x = 3\\ln(x - 3)^2$ instead of $-\\dfrac{ 3 }{ x - 3 }$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Repeated Linear Integrals",
+        "content": "A very common student trap is integrating a repeated linear factor like $\\dfrac{ C }{ (x-a)^2 }$ as if it were a simple reciprocal function, writing $C\\ln(x-a)^2$. Always remember that reciprocal terms with exponents greater than $1$ must be integrated using the power rule: $\\int (x-a)^{-2} \\mathrm{d}x = -(x-a)^{-1}$."
+    }
+},
+{
+    "id": "004682",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Integration",
+    "topic": "Partial Fractions",
+    "subtopic": [
+        "Definite Integration",
+        "Linear Factors"
+    ],
+    "img": false,
+    "question": "A function $f$ is defined for $x > 0$ by: <br> $f(x) = \\dfrac{ 2x + 3 }{ (x + 1)(2x + 1) }$ <br><br><strong>(a)</strong> Express $f(x)$ in terms of partial fractions. <br><br><strong>(b)</strong> Evaluate the definite integral: <br> $\\int_{ 0 }^{ 1 } f(x) \\mathrm{d}x$ <br><br>giving your answer as a single logarithm in exact form.",
+    "steps": [
+        "To express $f(x)$ in terms of partial fractions, we decompose the algebraic fraction into two linear terms: <br> \\begin{aligned} \\dfrac{ 2x + 3 }{ (x + 1)(2x + 1) } &= \\dfrac{ A }{ x + 1 } + \\dfrac{ B }{ 2x + 1 } \\end{aligned}",
+        "We clear the fractions by multiplying both sides of the identity by $(x + 1)(2x + 1)$: <br> \\begin{aligned} 2x + 3 &= A(2x + 1) + B(x + 1) \\end{aligned}",
+        "We solve for the constants $A$ and $B$ by substituting convenient values of $x$: <br> Set $x = -1$: <br> \\begin{aligned} 2(-1) + 3 &= A(2(-1) + 1) \\cr 1 &= -A \\implies A = -1 \\end{aligned} <br> Set $x = -0.5$: <br> \\begin{aligned} 2(-0.5) + 3 &= B(-0.5 + 1) \\cr 2 &= 0.5B \\implies B = 4 \\end{aligned} <br> Thus, the partial fractions decomposition is: <br> \\begin{aligned} f(x) &= -\\dfrac{ 1 }{ x + 1 } + \\dfrac{ 4 }{ 2x + 1 } \\end{aligned}",
+        "To solve part (b), we integrate the partial fractions decomposition term by term over the interval $[0, 1]$: <br> \\begin{aligned} \\int_{ 0 }^{ 1 } f(x) \\mathrm{d}x &= \\int_{ 0 }^{ 1 } \\left( -\\dfrac{ 1 }{ x + 1 } + \\dfrac{ 4 }{ 2x + 1 } \\right) \\mathrm{d}x \\cr &= \\left[ -\\ln|x + 1| + 2\\ln|2x + 1| \\right]_{ 0 }^{ 1 } \\end{aligned}",
+        "We substitute the limits $x = 1$ and $x = 0$: <br> At $x = 1$: <br> \\begin{aligned} -\\ln|2| + 2\\ln|3| &= \\ln 9 - \\ln 2 = \\ln\\left( \\dfrac{ 9 }{ 2 } \\right) \\end{aligned} <br> At $x = 0$: <br> \\begin{aligned} -\\ln|1| + 2\\ln|1| &= 0 \\end{aligned} <br> Thus, the exact value of the definite integral is: <br> \\begin{aligned} \\ln\\left( \\dfrac{ 9 }{ 2 } \\right) \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\ln\\left( \\dfrac{ 81 }{ 2 } \\right)$",
+            "feedback": "This error occurs if you fail to divide by $2$ when integrating $\\dfrac{ 4 }{ 2x + 1 }$, leading to an incorrect coefficient of $4\\ln|2x + 1|$ instead of $2\\ln|2x + 1|$."
+        },
+        {
+            "ans": "$\\ln\\left( \\dfrac{ 3 }{ 2 } \\right)$",
+            "feedback": "This mistake arises from a sign error when solving the partial fractions for $A$, finding $A = 1$ instead of $A = -1$."
+        },
+        {
+            "ans": "$\\ln 9$",
+            "feedback": "This happens if you evaluate the lower limit $x = 0$ incorrectly, forgetting that subtracting $-\\ln(1) + 2\\ln(1)$ equals $0$ and instead subtracting another value."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Reciprocal Integration Coefficients",
+        "content": "When integrating terms of the form $\\dfrac{ B }{ ax + b }$, a very common student mistake is forgetting to divide by the coefficient $a$ of the $x$ term. Always verify that $\\int \\dfrac{ 4 }{ 2x + 1 } \\mathrm{d}x = \\dfrac{ 4 }{ 2 }\\ln|2x + 1| = 2\\ln|2x + 1|$."
+    }
+},
+{
+    "id": "004683",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Integration",
+    "topic": "Partial Fractions",
+    "subtopic": [
+        "Definite Integration",
+        "Improper Fractions"
+    ],
+    "img": false,
+    "question": "A function $f$ is defined for $x > -1$ by the improper fraction: <br> $f(x) = \\dfrac{ x^2 + 5x + 7 }{ (x + 1)(x + 2) }$ <br><br><strong>(a)</strong> Express $f(x)$ in the form $P + \\dfrac{ Q }{ x + 1 } + \\dfrac{ R }{ x + 2 }$, where $P$, $Q$, and $R$ are real constants. <br><br><strong>(b)</strong> Find the exact value of the definite integral: <br> $\\int_{ 0 }^{ 1 } f(x) \\mathrm{d}x$ <br><br>giving your answer in the form $a + \\ln b$.",
+    "steps": [
+        "Because the degree of the numerator polynomial is equal to the degree of the denominator polynomial, this is an improper fraction. We first expand the denominator: <br> \\begin{aligned} (x + 1)(x + 2) &= x^2 + 3x + 2 \\end{aligned}",
+        "We perform algebraic division (or rewrite the numerator) to separate the constant term: <br> \\begin{aligned} \\dfrac{ x^2 + 5x + 7 }{ x^2 + 3x + 2 } &= \\dfrac{ (x^2 + 3x + 2) + 2x + 5 }{ x^2 + 3x + 2 } \\cr &= 1 + \\dfrac{ 2x + 5 }{ (x + 1)(x + 2) } \\end{aligned} <br> This gives $P = 1$.",
+        "We now decompose the remaining proper fraction into partial fractions: <br> \\begin{aligned} \\dfrac{ 2x + 5 }{ (x + 1)(x + 2) } &= \\dfrac{ Q }{ x + 1 } + \\dfrac{ R }{ x + 2 } \\end{aligned}",
+        "Multiplying by the common denominator yields: <br> \\begin{aligned} 2x + 5 &= Q(x + 2) + R(x + 1) \\end{aligned} <br> We substitute $x$ values to solve for the constants: <br> Set $x = -1$: <br> \\begin{aligned} 2(-1) + 5 &= Q(-1 + 2) \\cr 3 &= Q \\end{aligned} <br> Set $x = -2$: <br> \\begin{aligned} 2(-2) + 5 &= R(-2 + 1) \\cr 1 &= -R \\implies R = -1 \\end{aligned} <br> Thus, the complete decomposition is: <br> \\begin{aligned} f(x) &= 1 + \\dfrac{ 3 }{ x + 1 } - \\dfrac{ 1 }{ x + 2 } \\end{aligned}",
+        "To solve part (b), we integrate $f(x)$ over the interval $[0, 1]$: <br> \\begin{aligned} \\int_{ 0 }^{ 1 } f(x) \\mathrm{d}x &= \\int_{ 0 }^{ 1 } \\left( 1 + \\dfrac{ 3 }{ x + 1 } - \\dfrac{ 1 }{ x + 2 } \\right) \\mathrm{d}x \\cr &= \\left[ x + 3\\ln|x + 1| - \\ln|x + 2| \\right]_{ 0 }^{ 1 } \\end{aligned}",
+        "We evaluate the limits: <br> At the upper limit $x = 1$: <br> \\begin{aligned} 1 + 3\\ln(2) - \\ln(3) \\end{aligned} <br> At the lower limit $x = 0$: <br> \\begin{aligned} 0 + 3\\ln(1) - \\ln(2) &= -\\ln 2 \\end{aligned} <br> Subtracting the lower limit evaluation from the upper limit evaluation: <br> \\begin{aligned} \\int_{ 0 }^{ 1 } f(x) \\mathrm{d}x &= (1 + 3\\ln 2 - \\ln 3) - (-\\ln 2) \\cr &= 1 + 4\\ln 2 - \\ln 3 \\cr &= 1 + \\ln 16 - \\ln 3 \\cr &= 1 + \\ln\\left( \\dfrac{ 16 }{ 3 } \\right) \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$1 + \\ln\\left( \\dfrac{ 8 }{ 3 } \\right)$",
+            "feedback": "This error occurs if you evaluate the lower limit of the integration as $0$ instead of $-\\ln 2$, failing to subtract the lower limit correctly."
+        },
+        {
+            "ans": "$\\ln\\left( \\dfrac{ 16 }{ 3 } \\right)$",
+            "feedback": "This mistake happens if you completely forget to integrate the constant term $P = 1$ over the interval $[0, 1]$, which should yield $1$."
+        },
+        {
+            "ans": "$1 + \\ln\\left( \\dfrac{ 16 }{ 9 } \\right)$",
+            "feedback": "This results from a sign error when determining the partial fraction constants $Q$ or $R$, leading to incorrect logarithmic combinations."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Improper Algebraic Fractions",
+        "content": "Before attempting partial fractions, always compare the highest degree of the numerator and the denominator. If the degree of the numerator is greater than or equal to the denominator, the fraction is improper, and you must perform algebraic division first to extract the polynomial/constant terms."
+    }
+},
+{
+    "id": "004684",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Integration",
+    "topic": "Partial Fractions",
+    "subtopic": [
+        "Integration by Substitution",
+        "Definite Integration"
+    ],
+    "img": false,
+    "question": "Consider the definite integral: <br> $I = \\int_{ 0 }^{ \\ln 2 } \\dfrac{ e^x }{ e^{2x} + 3e^x + 2 } \\mathrm{d}x$ <br><br><strong>(a)</strong> Use the substitution $u = e^x$ to show that $I$ can be written as: <br> $\\int_{ 1 }^{ 2 } \\dfrac{ 1 }{ (u + 1)(u + 2) } \\mathrm{d}u$ <br><br><strong>(b)</strong> Express the integrand $\\dfrac{ 1 }{ (u + 1)(u + 2) }$ in terms of partial fractions. <br><br><strong>(c)</strong> Hence, evaluate the exact value of $I$, giving your answer in the form $\\ln\\left(\\dfrac{ a }{ b }\\right)$ where $a$ and $b$ are integers.",
+    "steps": [
+        "To solve part (a), we apply the substitution $u = e^x$: <br> \\begin{aligned} \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } = e^x &\\implies \\mathrm{d}u = e^x \\mathrm{d}x \\cr &\\implies \\mathrm{d}x = \\dfrac{ \\mathrm{d}u }{ e^x } = \\dfrac{ \\mathrm{d}u }{ u } \\end{aligned} <br> We transform the limits of integration: <br> When $x = 0$: $u = e^0 = 1$ <br> When $x = \\ln 2$: $u = e^{\\ln 2} = 2$",
+        "Substituting $u$, $\\mathrm{d}x$, and the new limits into the integral: <br> \\begin{aligned} I &= \\int_{ 1 }^{ 2 } \\dfrac{ u }{ u^2 + 3u + 2 } \\left( \\dfrac{ \\mathrm{d}u }{ u } \\right) \\cr &= \\int_{ 1 }^{ 2 } \\dfrac{ 1 }{ u^2 + 3u + 2 } \\mathrm{d}u \\cr &= \\int_{ 1 }^{ 2 } \\dfrac{ 1 }{ (u + 1)(u + 2) } \\mathrm{d}u \\end{aligned} <br> as required.",
+        "To solve part (b), we decompose the integrand into partial fractions: <br> \\begin{aligned} \\dfrac{ 1 }{ (u + 1)(u + 2) } &= \\dfrac{ A }{ u + 1 } + \\dfrac{ B }{ u + 2 } \\end{aligned} <br> Multiplying by the common denominator: <br> \\begin{aligned} 1 &= A(u + 2) + B(u + 1) \\end{aligned} <br> Substituting $u = -1$ gives $A = 1$. Substituting $u = -2$ gives $B = -1$. <br> Thus: <br> \\begin{aligned} \\dfrac{ 1 }{ (u + 1)(u + 2) } &= \\dfrac{ 1 }{ u + 1 } - \\dfrac{ 1 }{ u + 2 } \\end{aligned}",
+        "To solve part (c), we evaluate the integral of the decomposed fractions: <br> \\begin{aligned} I &= \\int_{ 1 }^{ 2 } \\left( \\dfrac{ 1 }{ u + 1 } - \\dfrac{ 1 }{ u + 2 } \\right) \\mathrm{d}u \\cr &= \\left[ \\ln|u + 1| - \\ln|u + 2| \\right]_{ 1 }^{ 2 } \\end{aligned}",
+        "We substitute the limits $u = 2$ and $u = 1$: <br> At $u = 2$: <br> \\begin{aligned} \\ln 3 - \\ln 4 = \\ln\\left( \\dfrac{ 3 }{ 4 } \\right) \\end{aligned} <br> At $u = 1$: <br> \\begin{aligned} \\ln 2 - \\ln 3 = \\ln\\left( \\dfrac{ 2 }{ 3 } \\right) \\end{aligned} <br> Subtracting the limit evaluations: <br> \\begin{aligned} I &= \\ln\\left( \\dfrac{ 3 }{ 4 } \\right) - \\ln\\left( \\dfrac{ 2 }{ 3 } \\right) \\cr &= \\ln\\left( \\dfrac{ 3/4 }{ 2/3 } \\right) \\cr &= \\ln\\left( \\dfrac{ 9 }{ 8 } \\right) \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\ln\\left( \\dfrac{ 3 }{ 4 } \\right)$",
+            "feedback": "This occurs if you only evaluate the upper limit at $u = 2$ and forget to subtract the lower limit evaluated at $u = 1$."
+        },
+        {
+            "ans": "$\\ln\\left( \\dfrac{ 9 }{ 4 } \\right)$",
+            "feedback": "This error is caused by a sign error when evaluating the limits, adding the lower limit evaluation instead of subtracting it."
+        },
+        {
+            "ans": "$\\ln\\left( \\dfrac{ 3 }{ 2 } \\right)$",
+            "feedback": "This happens if you forget to apply the substitution to the integration limits, incorrectly integrating over the original limits $[0, \\ln 2]$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Substitution and Limit Transformations",
+        "content": "A crucial step in definite integration by substitution is transforming the limits. Changing the limits to match the substitution variable ($u = e^x$) means you do not need to convert back to the original variable ($x$) after integrating, allowing you to evaluate the integral directly."
+    }
+},
+{
+    "id": "004685",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Integration",
+    "topic": "Partial Fractions",
+    "subtopic": [
+        "Areas Under Curves",
+        "Definite Integration"
+    ],
+    "img": false,
+    "question": "The curve $C$ has the equation: <br> $y = \\dfrac{ 3x + 1 }{ (x + 1)(3x + 2)^2 }$ <br><br><strong>(a)</strong> Express $y$ in terms of partial fractions. <br><br><strong>(b)</strong> Find the exact area of the finite region bounded by the curve $C$, the $x$-axis, and the vertical lines $x = 0$ and $x = 1$.",
+    "steps": [
+        "To decompose $y$ into partial fractions, we set up the template for a repeated linear factor: <br> \\begin{aligned} \\dfrac{ 3x + 1 }{ (x + 1)(3x + 2)^2 } &= \\dfrac{ A }{ x + 1 } + \\dfrac{ B }{ 3x + 2 } + \\dfrac{ C }{ (3x + 2)^2 } \\end{aligned}",
+        "We multiply both sides of the identity by the denominator $(x + 1)(3x + 2)^2$: <br> \\begin{aligned} 3x + 1 &= A(3x + 2)^2 + B(x + 1)(3x + 2) + C(x + 1) \\end{aligned}",
+        "We solve for the constants by substituting convenient values of $x$: <br> Set $x = -1$: <br> \\begin{aligned} 3(-1) + 1 &= A(3(-1) + 2)^2 \\cr -2 &= A(-1)^2 \\implies A = -2 \\end{aligned} <br> Set $x = -\\dfrac{ 2 }{ 3 }$: <br> \\begin{aligned} 3\\left( -\\dfrac{ 2 }{ 3 } \\right) + 1 &= C\\left( -\\dfrac{ 2 }{ 3 } + 1 \\right) \\cr -1 &= \\dfrac{ 1 }{ 3 } C \\implies C = -3 \\end{aligned} <br> Compare the coefficients of $x^2$ on both sides: <br> \\begin{aligned} 0 &= 9A + 3B \\cr 0 &= 9(-2) + 3B \\cr 18 &= 3B \\implies B = 6 \\end{aligned} <br> Thus, the partial fractions decomposition is: <br> \\begin{aligned} y &= -\\dfrac{ 2 }{ x + 1 } + \\dfrac{ 6 }{ 3x + 2 } - \\dfrac{ 3 }{ (3x + 2)^2 } \\end{aligned}",
+        "To find the area of the finite region, we integrate $y$ from $x = 0$ to $x = 1$: <br> \\begin{aligned} \\text{Area} &= \\int_{ 0 }^{ 1 } \\left( -\\dfrac{ 2 }{ x + 1 } + \\dfrac{ 6 }{ 3x + 2 } - \\dfrac{ 3 }{ (3x + 2)^2 } \\right) \\mathrm{d}x \\cr &= \\left[ -2\\ln|x + 1| + 2\\ln|3x + 2| + \\dfrac{ 1 }{ 3x + 2 } \\right]_{ 0 }^{ 1 } \\end{aligned}",
+        "We evaluate this antiderivative at the limits $x = 1$ and $x = 0$: <br> At the upper limit $x = 1$: <br> \\begin{aligned} -2\\ln 2 + 2\\ln 5 + \\dfrac{ 1 }{ 5 } \\end{aligned} <br> At the lower limit $x = 0$: <br> \\begin{aligned} -2\\ln 1 + 2\\ln 2 + \\dfrac{ 1 }{ 2 } &= 2\\ln 2 + \\dfrac{ 1 }{ 2 } \\end{aligned} <br> Subtracting the lower limit evaluation from the upper limit evaluation: <br> \\begin{aligned} \\text{Area} &= \\left( -2\\ln 2 + 2\\ln 5 + \\dfrac{ 1 }{ 5 } \\right) - \\left( 2\\ln 2 + \\dfrac{ 1 }{ 2 } \\right) \\cr &= 2\\ln 5 - 4\\ln 2 - \\dfrac{ 3 }{ 10 } \\cr &= \\ln 25 - \\ln 16 - \\dfrac{ 3 }{ 10 } \\cr &= \\ln\\left( \\dfrac{ 25 }{ 16 } \\right) - \\dfrac{ 3 }{ 10 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\ln\\left( \\dfrac{ 25 }{ 16 } \\right) + \\dfrac{ 7 }{ 10 }$",
+            "feedback": "This error occurs due to an arithmetic sign slip when evaluating the limits of the repeated linear term, calculating $\\dfrac{ 1 }{ 5 } + \\dfrac{ 1 }{ 2 } = \\dfrac{ 7 }{ 10 }$ instead of $\\dfrac{ 1 }{ 5 } - \\dfrac{ 1 }{ 2 } = -\\dfrac{ 3 }{ 10 }$."
+        },
+        {
+            "ans": "$\\ln\\left( \\dfrac{ 5 }{ 4 } \\right) - \\dfrac{ 3 }{ 10 }$",
+            "feedback": "This mistake happens if you lose the factor of $2$ on the logarithmic terms during integration, evaluating $-2\\ln|x+1| + 2\\ln|3x+2|$ as $-\\ln|x+1| + \\ln|3x+2|$ instead."
+        },
+        {
+            "ans": "$\\ln\\left( \\dfrac{ 25 }{ 16 } \\right)$",
+            "feedback": "This occurs if you omit the integration of the repeated quadratic factor term, completely leaving out the fractional constants."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Combining Logarithms for Exact Areas",
+        "content": "When evaluating definite integrals that yield multiple logarithmic terms, always simplify your answer into a single logarithm using the laws of logarithms: $a\\ln x - b\\ln y = \\ln\\left( \\dfrac{ x^a }{ y^b } \\right)$. This is not only standard practice in A-Level examinations, but it is also essential to prove that a calculated area is positive."
+    }
 }
 
 ];
