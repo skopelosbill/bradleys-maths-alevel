@@ -917,6 +917,192 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Asymptote Transformation Rules",
         "content": "Horizontal asymptotes are horizontal lines of the form $y = c$. Because they are completely independent of horizontal coordinates, they are completely unaffected by horizontal transformations like shifts ($x \\to x-2$) or stretches. They only scale and translate under vertical transformations."
     }
+},
+{
+    "id": "004676",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Equations",
+    "subtopic": [
+        "Pythagorean Identities"
+    ],
+    "img": false,
+    "question": "Solve the equation: <br> $2\\tan^2\\theta - \\tan\\theta - \\sec^2\\theta = 1$ <br><br>for values of $\\theta$ in the interval $0^\\circ \\le \\theta \\le 360^\\circ$. Give your answers to two decimal places where appropriate.",
+    "steps": [
+        "We use the Pythagorean identity $\\sec^2\\theta = 1 + \\tan^2\\theta$ to express the entire equation in terms of $\\tan\\theta$: <br> \\begin{aligned} 2\\tan^2\\theta - \\tan\\theta - (1 + \\tan^2\\theta) &= 1 \\end{aligned}",
+        "We expand and simplify the expression to obtain a quadratic equation in terms of $\\tan\\theta$: <br> \\begin{aligned} 2\\tan^2\\theta - \\tan\\theta - 1 - \\tan^2\\theta &= 1 \\cr \\tan^2\\theta - \\tan\\theta - 2 &= 0 \\end{aligned}",
+        "We factorise the quadratic equation to find the values of $\\tan\\theta$: <br> \\begin{aligned} (\\tan\\theta - 2)(\\tan\\theta + 1) &= 0 \\end{aligned} <br> This gives two linear trigonometric branches to solve: <br> \\begin{aligned} \\tan\\theta = 2 \\quad \\text{or} \\quad \\tan\\theta = -1 \\end{aligned}",
+        "We solve each branch separately to find all values of $\\theta$ in the interval $0^\\circ \\le \\theta \\le 360^\\circ$: <br> <strong>Branch 1:</strong> $\\tan\\theta = 2$ <br> \\begin{aligned} \\theta &= \\tan^{ -1 }(2) \\approx 63.43^\\circ \\cr \\theta &= 63.43^\\circ + 180^\\circ = 243.43^\\circ \\end{aligned} <br> <strong>Branch 2:</strong> $\\tan\\theta = -1$ <br> \\begin{aligned} \\theta &= \\tan^{ -1 }(-1) = -45^\\circ \\cr \\theta &= -45^\\circ + 180^\\circ = 135^\\circ \\cr \\theta &= -45^\\circ + 360^\\circ = 315^\\circ \\end{aligned} <br> Thus, the complete set of solutions in the interval is: <br> \\begin{aligned} \\theta \\approx 63.43^\\circ, \\quad 135^\\circ, \\quad 243.43^\\circ, \\quad 315^\\circ \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\theta \\approx 63.43^\\circ$, $45^\\circ$, $243.43^\\circ$, $225^\\circ$",
+            "feedback": "This error occurs if you make a sign error when solving the quadratic branch $\\tan\\theta = -1$, solving $\\tan\\theta = 1$ instead and finding the quadrant solutions $45^\\circ$ and $225^\\circ$."
+        },
+        {
+            "ans": "$\\theta \\approx 63.43^\\circ$, $135^\\circ$",
+            "feedback": "This mistake occurs if you forget that the tangent function is periodic with a period of $180^\\circ$, completely omitting the second-quadrant and fourth-quadrant solutions that lie between $180^\\circ$ and $360^\\circ$."
+        },
+        {
+            "ans": "$\\theta \\approx 26.57^\\circ$, $135^\\circ$, $206.57^\\circ$, $315^\\circ$",
+            "feedback": "This error is caused by a calculator division slip or inverting the tangent value when evaluating the principal value, writing $\\tan\\theta = 0.5$ (which yields $26.57^\\circ$) instead of $\\tan\\theta = 2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Pythagorean Identity Sign Traps",
+        "content": "When substituting $\\sec^2\\theta = 1 + \\tan^2\\theta$ into a term preceded by a negative sign, always place the identity inside parentheses first: $-(\\sec^2\\theta) = -(1 + \\tan^2\\theta) = -1 - \\tan^2\\theta$. Forgetting to distribute the negative sign is a very common source of algebraic errors."
+    }
+},
+{
+    "id": "004677",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Equations",
+    "subtopic": [
+        "Pythagorean Identities"
+    ],
+    "img": false,
+    "question": "Solve the equation: <br> $2\\cot^2\\theta - \\cot\\theta - \\csc^2\\theta = 5$ <br><br>for values of $\\theta$ in the interval $0^\\circ \\le \\theta \\le 360^\\circ$. Give your answers to two decimal places where appropriate.",
+    "steps": [
+        "We use the Pythagorean identity $\\csc^2\\theta = 1 + \\cot^2\\theta$ to rewrite the entire equation in terms of $\\cot\\theta$: <br> \\begin{aligned} 2\\cot^2\\theta - \\cot\\theta - (1 + \\cot^2\\theta) &= 5 \\end{aligned}",
+        "We expand and simplify the terms to form a standard quadratic equation: <br> \\begin{aligned} 2\\cot^2\\theta - \\cot\\theta - 1 - \\cot^2\\theta &= 5 \\cr \\cot^2\\theta - \\cot\\theta - 6 &= 0 \\end{aligned}",
+        "We factorise the quadratic equation: <br> \\begin{aligned} (\\cot\\theta - 3)(\\cot\\theta + 2) &= 0 \\end{aligned} <br> This yields two branches for $\\cot\\theta$, which we then convert to their primary reciprocal counterparts: <br> \\begin{aligned} \\cot\\theta = 3 \\quad &\\implies \\quad \\tan\\theta = \\dfrac{ 1 }{ 3 } \\cr \\cot\\theta = -2 \\quad &\\implies \\quad \\tan\\theta = -\\dfrac{ 1 }{ 2 } \\end{aligned}",
+        "We solve for $\\theta$ in the interval $0^\\circ \\le \\theta \\le 360^\\circ$: <br> <strong>Branch 1:</strong> $\\tan\\theta = \\dfrac{ 1 }{ 3 }$ <br> \\begin{aligned} \\theta &= \\tan^{ -1 }\\left( \\dfrac{ 1 }{ 3 } \\right) \\approx 18.43^\\circ \\cr \\theta &= 18.43^\\circ + 180^\\circ = 198.43^\\circ \\end{aligned} <br> <strong>Branch 2:</strong> $\\tan\\theta = -\\dfrac{ 1 }{ 2 }$ <br> \\begin{aligned} \\theta &= \\tan^{ -1 }\\left( -\\dfrac{ 1 }{ 2 } \\right) = -26.57^\\circ \\cr \\theta &= -26.57^\\circ + 180^\\circ = 153.43^\\circ \\cr \\theta &= -26.57^\\circ + 360^\\circ = 333.43^\\circ \\end{aligned} <br> Combining these results, the complete solution set is: <br> \\begin{aligned} \\theta \\approx 18.43^\\circ, \\quad 153.43^\\circ, \\quad 198.43^\\circ, \\quad 333.43^\\circ \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\theta \\approx 71.57^\\circ$, $116.57^\\circ$, $251.57^\\circ$, $296.57^\\circ$",
+            "feedback": "This error occurs if you mistakenly think $\\cot\\theta = \\dfrac{ 1 }{ \\tan\\theta }$ implies you should invert the angle rather than the ratio, calculating $\\theta = \\tan^{ -1 }(3)$ and $\\theta = \\tan^{ -1 }(-2)$."
+        },
+        {
+            "ans": "$\\theta \\approx 18.43^\\circ$, $198.43^\\circ$",
+            "feedback": "This mistake occurs if you solve the first quadratic branch correctly but discard the second branch, perhaps thinking that a negative cotangent ratio has no valid solutions."
+        },
+        {
+            "ans": "$\\theta \\approx 18.43^\\circ$, $153.43^\\circ$, $161.57^\\circ$, $333.43^\\circ$",
+            "feedback": "This arises from a quadrant mapping error in Branch 1, using $180^\\circ - 18.43^\\circ = 161.57^\\circ$ instead of the correct third-quadrant angle $180^\\circ + 18.43^\\circ = 198.43^\\circ$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Reciprocal Trigonometric Conversions",
+        "content": "When solving equations with reciprocal trigonometric functions like $\\cot\\theta$, $\\sec\\theta$, or $\\csc\\theta$, the safest first step is always to isolate the function and then convert it to its primary counterpart (e.g., $\\cot\\theta = k \\implies \\tan\\theta = \\dfrac{ 1 }{ k }$). This allows you to safely use your calculator's standard inverse trigonometric functions."
+    }
+},
+{
+    "id": "004678",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Equations",
+    "subtopic": [
+        "Double-Angle Identities"
+    ],
+    "img": false,
+    "question": "Solve the equation: <br> $3\\cos 2\\theta + 8\\sin\\theta = 5$ <br><br>for values of $\\theta$ in the interval $0^\\circ \\le \\theta \\le 360^\\circ$. Give your answers to two decimal places where appropriate.",
+    "steps": [
+        "We use the double-angle identity $\\cos 2\\theta = 1 - 2\\sin^2\\theta$ to express the entire equation in terms of a single trigonometric function: <br> \\begin{aligned} 3(1 - 2\\sin^2\\theta) + 8\\sin\\theta &= 5 \\end{aligned}",
+        "We expand the terms and collect them on one side to form a standard quadratic equation: <br> \\begin{aligned} 3 - 6\\sin^2\\theta + 8\\sin\\theta &= 5 \\cr 6\\sin^2\\theta - 8\\sin\\theta + 2 &= 0 \\end{aligned} <br> Dividing all terms by $2$ simplifies the equation to: <br> \\begin{aligned} 3\\sin^2\\theta - 4\\sin\\theta + 1 &= 0 \\end{aligned}",
+        "We factorise the simplified quadratic equation: <br> \\begin{aligned} (3\\sin\\theta - 1)(\\sin\\theta - 1) &= 0 \\end{aligned} <br> This yields two linear branches to solve: <br> \\begin{aligned} \\sin\\theta = 1 \\quad \\text{or} \\quad \\sin\\theta = \\dfrac{ 1 }{ 3 } \\end{aligned}",
+        "We solve for $\\theta$ in the interval $0^\\circ \\le \\theta \\le 360^\\circ$ for each branch: <br> <strong>Branch 1:</strong> $\\sin\\theta = 1$ <br> \\begin{aligned} \\theta &= 90^\\circ \\end{aligned} <br> <strong>Branch 2:</strong> $\\sin\\theta = \\dfrac{ 1 }{ 3 }$ <br> \\begin{aligned} \\theta &= \\sin^{ -1 }\\left( \\dfrac{ 1 }{ 3 } \\right) \\approx 19.47^\\circ \\cr \\theta &= 180^\\circ - 19.47^\\circ = 160.53^\\circ \\end{aligned} <br> Thus, the complete solution set in the interval is: <br> \\begin{aligned} \\theta = 90^\\circ, \\quad \\theta \\approx 19.47^\\circ, \\quad 160.53^\\circ \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\theta = 90^\\circ$, $\\theta \\approx 19.47^\\circ$, $340.53^\\circ$",
+            "feedback": "This error occurs if you make a quadrant error when solving the $\\sin\\theta = \\dfrac{ 1 }{ 3 }$ branch, mapping the second solution to the fourth quadrant ($360^\\circ - 19.47^\\circ = 340.53^\\circ$) instead of the second quadrant ($180^\\circ - \\theta$)."
+        },
+        {
+            "ans": "$\\theta = 90^\\circ$, $\\theta \\approx 19.47^\\circ$, $160.53^\\circ$, $199.47^\\circ$, $340.53^\\circ$",
+            "feedback": "This happens if you mistakenly solve for both positive and negative values of $\\sin\\theta = \\pm \\dfrac{ 1 }{ 3 }$, generating extraneous third-quadrant and fourth-quadrant solutions."
+        },
+        {
+            "ans": "$\\theta \\approx 19.47^\\circ$, $160.53^\\circ$",
+            "feedback": "This error occurs if you fail to solve the branch $\\sin\\theta = 1$, or discard its solution $\\theta = 90^\\circ$ because it is a boundary/axis angle."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Choosing the Right Double-Angle Identity",
+        "content": "The double-angle identity for cosine has three equivalent forms: $\\cos^2\\theta - \\sin^2\\theta$, $2\\cos^2\\theta - 1$, and $1 - 2\\sin^2\\theta$. Always look at the other terms in the equation to decide which form to use. Since the other term is $8\\sin\\theta$, choosing $1 - 2\\sin^2\\theta$ is the only path that results in a solvable single-variable quadratic."
+    }
+},
+{
+    "id": "004679",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Equations",
+    "subtopic": [
+        "Harmonic Form"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Express $3\\sin\\theta + 4\\cos\\theta$ in the form $R\\sin(\\theta + \\alpha)$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$. Give the value of $\\alpha$ to two decimal places. <br><br><strong>(b)</strong> Hence, solve the equation $3\\sin\\theta + 4\\cos\\theta = 2.5$ for values of $\\theta$ in the interval $0^\\circ \\le \\theta \\le 360^\\circ$. Give your answers to two decimal places.",
+    "steps": [
+        "We expand $R\\sin(\\theta + \\alpha)$ using the compound angle identity: <br> \\begin{aligned} R\\sin(\\theta + \\alpha) &= R(\\sin\\theta\\cos\\alpha + \\cos\\theta\\sin\\alpha) \\end{aligned} <br> Matching this with the expression $3\\sin\\theta + 4\\cos\\theta$, we equate the coefficients of $\\sin\\theta$ and $\\cos\\theta$: <br> \\begin{aligned} R\\cos\\alpha &= 3 \\cr R\\sin\\alpha &= 4 \\end{aligned}",
+        "To find $R$, we square and add the coefficients: <br> \\begin{aligned} R^2\\cos^2\\alpha + R^2\\sin^2\\alpha &= 3^2 + 4^2 \\cr R^2 &= 25 \\cr R &= 5 \\end{aligned} <br> To find $\\alpha$, we divide the coefficients: <br> \\begin{aligned} \\tan\\alpha &= \\dfrac{ R\\sin\\alpha }{ R\\cos\\alpha } = \\dfrac{ 4 }{ 3 } \\cr \\alpha &= \\tan^{ -1 }\\left( \\dfrac{ 4 }{ 3 } \\right) \\approx 53.13^\\circ \\end{aligned} <br> Thus, the expression can be written in harmonic form as: <br> \\begin{aligned} 3\\sin\\theta + 4\\cos\\theta &= 5\\sin(\\theta + 53.13^\\circ) \\end{aligned}",
+        "We substitute our harmonic form into the equation to solve it: <br> \\begin{aligned} 5\\sin(\\theta + 53.13^\\circ) &= 2.5 \\cr \\sin(\\theta + 53.13^\\circ) &= 0.5 \\end{aligned}",
+        "We solve for the compound angle $(\\theta + 53.13^\\circ)$, identifying all possible angles within the shifted interval boundaries: <br> \\begin{aligned} \\theta + 53.13^\\circ &= 30^\\circ, \\quad 150^\\circ, \\quad 390^\\circ \\end{aligned} <br> Solving for $\\theta$ in each case: <br> \\begin{aligned} \\theta &= 30^\\circ - 53.13^\\circ = -23.13^\\circ \\cr \\theta &= 150^\\circ - 53.13^\\circ = 96.87^\\circ \\cr \\theta &= 390^\\circ - 53.13^\\circ = 336.87^\\circ \\end{aligned} <br> Since we require $0^\\circ \\le \\theta \\le 360^\\circ$, we discard $-23.13^\\circ$. The complete set of valid solutions is: <br> \\begin{aligned} \\theta \\approx 96.87^\\circ, \\quad 336.87^\\circ \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $5\\sin(\\theta + 53.13^\\circ)$, <strong>(b)</strong> $\\theta \\approx 96.87^\\circ$, $203.13^\\circ$",
+            "feedback": "This error occurs in part (b) if you subtract $53.13^\\circ$ from the incorrect quadrant angle $256.26^\\circ$ or make an arithmetic slip when mapping standard principal values."
+        },
+        {
+            "ans": "<strong>(a)</strong> $5\\sin(\\theta + 36.87^\\circ)$, <strong>(b)</strong> $\\theta \\approx 113.13^\\circ$, $353.13^\\circ$",
+            "feedback": "This mistake occurs if you swap the definitions of the coefficients, writing $\\tan\\alpha = \\dfrac{ 3 }{ 4 }$ to get $\\alpha \\approx 36.87^\\circ$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $5\\sin(\\theta + 53.13^\\circ)$, <strong>(b)</strong> $\\theta \\approx -23.13^\\circ$, $96.87^\\circ$",
+            "feedback": "This error occurs if you forget to adjust the boundary range of the intermediate angle $\\theta + 53.13^\\circ$, resulting in keeping the negative angle $-23.13^\\circ$ instead of adding $360^\\circ$ to find its co-terminal solution in the interval."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Shifting the Interval Boundaries",
+        "content": "When solving compound equations like $\\sin(\\theta + \\alpha) = k$, always write down the shifted interval boundary first: if $0^\\circ \\le \\theta \\le 360^\\circ$, then $\\alpha \\le \\theta + \\alpha \\le 360^\\circ + \\alpha$. This ensures that you don't miss solutions that overflow past $360^\\circ$ (like $390^\\circ - \\alpha$) or keep invalid negative solutions."
+    }
+},
+{
+    "id": "004680",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Equations",
+    "subtopic": [
+        "Small-Angle Approximations"
+    ],
+    "img": false,
+    "question": "Given that $\\theta$ is small and measured in radians: <br><br><strong>(a)</strong> Show that the equation: <br> $\\cos\\theta - \\sin\\theta + 2\\theta^2 = 1.25$ <br><br>can be approximated by the quadratic equation: <br> $3\\theta^2 - 2\\theta - 0.5 = 0$ <br><br><strong>(b)</strong> Solve this quadratic equation to find the possible values of $\\theta$, giving your answers to three decimal places.",
+    "steps": [
+        "For small values of $\\theta$ measured in radians, we apply the standard small-angle approximations: <br> \\begin{aligned} \\cos\\theta &\\approx 1 - \\dfrac{ \\theta^2 }{ 2 } \\cr \\sin\\theta &\\approx \\theta \\end{aligned}",
+        "We substitute these approximations into the original equation: <br> \\begin{aligned} \\left(1 - \\dfrac{ \\theta^2 }{ 2 }\\right) - \\theta + 2\\theta^2 &\\approx 1.25 \\end{aligned}",
+        "We collect like terms and simplify the equation: <br> \\begin{aligned} 1 - \\theta + 1.5\\theta^2 &= 1.25 \\cr 1.5\\theta^2 - \\theta - 0.25 &= 0 \\end{aligned} <br> Multiplying the entire equation by $2$ clears the decimal coefficients and yields the required quadratic equation: <br> \\begin{aligned} 3\\theta^2 - 2\\theta - 0.5 &= 0 \\end{aligned}",
+        "To solve part (b), we apply the quadratic formula to our derived equation: <br> \\begin{aligned} \\theta &= \\dfrac{ -(-2) \\pm \\sqrt{ (-2)^2 - 4(3)(-0.5) } }{ 2(3) } \\cr \\theta &= \\dfrac{ 2 \\pm \\sqrt{ 4 + 6 } }{ 6 } \\cr \\theta &= \\dfrac{ 2 \\pm \\sqrt{ 10 } }{ 6 } \\end{aligned}",
+        "We evaluate the roots numerically using $\\sqrt{ 10 } \\approx 3.16228$: <br> \\begin{aligned} \\theta_1 &\\approx \\dfrac{ 2 + 3.16228 }{ 6 } \\approx 0.860 \\cr \\theta_2 &\\approx \\dfrac{ 2 - 3.16228 }{ 6 } \\approx -0.194 \\end{aligned} <br> Thus, to three decimal places, the possible values of $\\theta$ are $\\theta \\approx 0.860$ and $\\theta \\approx -0.194$ radians."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(b)</strong> $\\theta \\approx 0.430$, $-0.097$ radians",
+            "feedback": "This error occurs if you forget to multiply by the factor of $2$ in the denominator when evaluating the quadratic formula, dividing by $12$ instead of $6$."
+        },
+        {
+            "ans": "<strong>(b)</strong> $\\theta \\approx 0.768$, $-0.101$ radians",
+            "feedback": "This mistake arises from a sign error under the discriminant, calculating $4 - 6 = -2$ (or another incorrect decimal sign combination) instead of $4 + 6 = 10$."
+        },
+        {
+            "ans": "<strong>(b)</strong> $\\theta \\approx 0.860$ radians only",
+            "feedback": "This mistake occurs if you discard the negative root $\\theta \\approx -0.194$ because you assume that small angles must be strictly positive, whereas negative values in radians are fully valid."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Small-Angle Limits",
+        "content": "Small-angle approximations are extremely powerful but only hold true when $\\theta$ is small (generally, $-0.5 < \\theta < 0.5$ radians is highly accurate). While our positive solution $\\theta \\approx 0.860$ mathematically satisfies the quadratic approximation, it is slightly outside this highly accurate physical bound, whereas $\\theta \\approx -0.194$ represents a highly accurate, physically realistic small angle."
+    }
 }
 
 ];
