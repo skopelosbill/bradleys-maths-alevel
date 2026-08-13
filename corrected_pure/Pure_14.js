@@ -1631,7 +1631,7 @@ window.ALEVEL_QUESTIONS = [
         "We first calculate the approximated value of $\\cos(0.3)$ using the small-angle formula: <br> \\begin{aligned} \\cos(0.3) &\\approx 1 - \\dfrac{ 0.3^2 }{ 2 } \\cr &= 1 - 0.045 \\cr &= 0.955 \\end{aligned}",
         "Next, we determine the exact value of $\\cos(0.3)$ using a calculator set in radian mode: <br> \\begin{aligned} \\cos(0.3) &\\approx 0.955336489 \\end{aligned}",
         "We find the percentage error using the standard formula: <br> \\begin{aligned} \\text{Percentage Error} &= \\left| \\dfrac{ \\text{Approximate} - \\text{Exact} }{ \\text{Exact} } \\right| \\times 100 \\cr &= \\left| \\dfrac{ 0.955 - 0.955336489 }{ 0.955336489 } \\right| \\times 100 \\cr &\\approx \\left( \\dfrac{ 0.000336489 }{ 0.955336489 } \\right) \\times 100 \\cr &\\approx 0.0352\\% \\end{aligned}",
-        "To solve part (b), we compare the two values. Since our approximated value ($0.955$) is strictly less than the exact value ($0.955336489$), the approximation is an **underestimate**.",
+        "To solve part (b), we compare the two values. Since our approximated value ($0.955$) is strictly less than the exact value ($0.955336489$), the approximation is an <strong>underestimate</strong>.",
         "We can also justify this theoretically using the Taylor series expansion for cosine: <br> \\begin{aligned} \\cos x &= 1 - \\dfrac{ x^2 }{ 2 } + \\dfrac{ x^4 }{ 24 } - \\dfrac{ x^6 }{ 720 } + \\dots \\end{aligned} <br> Because the next term in the series ($+\\dfrac{ x^4 }{ 24 }$) is positive, truncating the series at $1 - \\dfrac{ x^2 }{ 2 }$ omits a positive quantity, making the approximation smaller than the true value."
     ],
     "pi_options": [
@@ -1690,6 +1690,196 @@ window.ALEVEL_QUESTIONS = [
         "type": "deeper",
         "title": "The Head Teacher's Eye: Higher-Order Approximations",
         "content": "While the first-order approximation $\\sin\\theta \\approx \\theta$ is standard, it is sometimes insufficient. If we had used $\\sin\\theta \\approx \\theta$ here, the difference between the sector and triangle area would simplify to $0$. We must use the higher-order cubic term $-\\dfrac{ \\theta^3 }{ 6 }$ to capture the tiny non-zero gap between the curved arc and the straight chord."
+    }
+},
+{
+    "id": "004696",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Sequences and Series",
+    "subtopic": [
+        "Arithmetic Progressions"
+    ],
+    "img": false,
+    "question": "Find five numbers which are in arithmetic progression such that the last term is $43$ and the sum of all of the numbers is $135$.",
+    "steps": [
+        "Let the arithmetic progression have a first term $a$, a common difference $d$, and a number of terms $n = 5$. We are given the last term $L = a + 4d = 43$ and the sum of the terms $S_5 = 135$.",
+        "We use the arithmetic series sum formula $S_n = \\dfrac{ n }{ 2 } (a + L)$ to find the first term $a$: <br> \\begin{aligned} 135 &= \\dfrac{ 5 }{ 2 } (a + 43) \\cr 270 &= 5(a + 43) \\cr 54 &= a + 43 \\cr a &= 11 \\end{aligned}",
+        "We substitute our first term $a = 11$ into our expression for the last term to find the common difference $d$: <br> \\begin{aligned} 11 + 4d &= 43 \\cr 4d &= 32 \\cr d &= 8 \\end{aligned}",
+        "We generate the five numbers of our progression starting with $a = 11$ and repeatedly adding our common difference $d = 8$: <br> \\begin{aligned} \\text{Term 1: } &11 \\cr \\text{Term 2: } &11 + 8 = 19 \\cr \\text{Term 3: } &19 + 8 = 27 \\cr \\text{Term 4: } &27 + 8 = 35 \\cr \\text{Term 5: } &35 + 8 = 43 \\end{aligned} <br> Thus, the five numbers in arithmetic progression are $11$, $19$, $27$, $35$, $43$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$11, 20, 29, 38, 47$",
+            "feedback": "This error occurs if you make an algebraic slip when determining the common difference $d$, calculating $d = 9$ instead of $d = 8$."
+        },
+        {
+            "ans": "$3, 11, 19, 27, 35$",
+            "feedback": "This mistake arises if you set up the last term incorrectly as $a + 5d = 43$ instead of $a + 4d = 43$, which alters the calculations for both $a$ and $d$."
+        },
+        {
+            "ans": "$13, 21, 29, 37, 45$",
+            "feedback": "This error is caused by a sign slip when calculating the first term, concluding that $a = 13$ instead of $a = 11$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Choosing the Right Sum Formula",
+        "content": "There are two standard sum formulas for an arithmetic series: $S_n = \\dfrac{ n }{ 2 } [ 2a + (n - 1)d ]$ and $S_n = \\dfrac{ n }{ 2 } (a + L)$. When you are given the last term $L$ directly, always use the second formula first. This allows you to solve for the first term $a$ immediately in one clean algebraic step, bypassing a system of simultaneous equations."
+    }
+},
+{
+    "id": "004697",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Sequences and Series",
+    "subtopic": [
+        "Arithmetic Progressions",
+        "Common Differences"
+    ],
+    "img": false,
+    "question": "The first three terms of an arithmetic progression are given by $2k + 1$, $4k - 3$, and $5k - 2$ respectively, where $k$ is a constant. <br><br><strong>(a)</strong> Find the value of $k$. <br><br><strong>(b)</strong> Hence, find the sum of the first $20$ terms of this progression.",
+    "steps": [
+        "For any arithmetic progression, the difference between consecutive terms is a constant common difference $d$. Therefore: <br> \\begin{aligned} \\text{Term 2} - \\text{Term 1} &= \\text{Term 3} - \\text{Term 2} \\end{aligned}",
+        "We substitute our algebraic terms into this relationship to solve for $k$: <br> \\begin{aligned} (4k - 3) - (2k + 1) &= (5k - 2) - (4k - 3) \\cr 2k - 4 &= k + 1 \\cr k &= 5 \\end{aligned}",
+        "To solve part (b), we substitute $k = 5$ back into our terms to find the parameters of our progression. <br> First term $a$: <br> \\begin{aligned} a &= 2(5) + 1 \\cr &= 11 \\end{aligned} <br> Second term: <br> \\begin{aligned} 4(5) - 3 &= 17 \\end{aligned} <br> Common difference $d$: <br> \\begin{aligned} d &= 17 - 11 \\cr &= 6 \\end{aligned}",
+        "We use the arithmetic series sum formula $S_n = \\dfrac{ n }{ 2 } [ 2a + (n - 1)d ]$ to find the sum of the first $20$ terms: <br> \\begin{aligned} S_{ 20 } &= \\dfrac{ 20 }{ 2 } [ 2(11) + (20 - 1)(6) ] \\cr S_{ 20 } &= 10 [ 22 + 19(6) ] \\cr &= 10 [ 22 + 114 ] \\cr &= 10 [ 136 ] \\cr &= 1360 \\end{aligned} <br> Thus, the sum of the first $20$ terms of the progression is $1360$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $k = 4$, <strong>(b)</strong> Sum = $1080$",
+            "feedback": "This error occurs if you make an algebraic sign slip when solving the linear equation for $k$, calculating $k = 4$ instead of $k = 5$, which corrupts the subsequent sum calculation."
+        },
+        {
+            "ans": "<strong>(a)</strong> $k = 5$, <strong>(b)</strong> Sum = $1250$",
+            "feedback": "This mistake is caused by using an incorrect common difference $d = 5$ instead of $d = 6$ when calculating the sum of the first $20$ terms."
+        },
+        {
+            "ans": "<strong>(a)</strong> $k = 5$, <strong>(b)</strong> Sum = $2720$",
+            "feedback": "This arises if you forget to divide by $2$ in the outer coefficient of the sum formula, evaluating the multiplier as $20$ instead of $10$, which doubles your final answer."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Defining Common Differences Algebraically",
+        "content": "Whenever you are given three terms of an arithmetic progression in terms of an unknown variable, always set up the difference equation $u_2 - u_1 = u_3 - u_2$. This is a highly reliable way to construct a single linear equation and solve for the unknown constant immediately."
+    }
+},
+{
+    "id": "004698",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Sequences and Series",
+    "subtopic": [
+        "Arithmetic Progressions",
+        "Simultaneous Equations"
+    ],
+    "img": false,
+    "question": "An arithmetic progression has its 5th term equal to $18$ and the sum of its first $10$ terms equal to $210$. <br><br><strong>(a)</strong> Find the first term $a$ and the common difference $d$ of this progression. <br><br><strong>(b)</strong> Determine the value of $n$ for which the sum of the first $n$ terms of this progression is equal to $540$.",
+    "steps": [
+        "To solve part (a), we write down the equations representing our given terms. <br> Using the $n$th term formula $u_n = a + (n - 1)d$: <br> \\begin{aligned} a + 4d &= 18 \\end{aligned}",
+        "Using the sum formula $S_n = \\dfrac{ n }{ 2 } [ 2a + (n - 1)d ]$: <br> \\begin{aligned} S_{ 10 } &= 210 \\cr \\dfrac{ 10 }{ 2 } [ 2a + 9d ] &= 210 \\cr 5(2a + 9d) &= 210 \\cr 2a + 9d &= 42 \\end{aligned}",
+        "We solve this system of simultaneous equations. From the first equation, we isolate $a$: <br> \\begin{aligned} a &= 18 - 4d \\end{aligned} <br> Substituting this expression into our second equation: <br> \\begin{aligned} 2(18 - 4d) + 9d &= 42 \\cr 36 - 8d + 9d &= 42 \\cr d &= 6 \\end{aligned}",
+        "We substitute our common difference $d = 6$ back to find the first term $a$: <br> \\begin{aligned} a + 4(6) &= 18 \\cr a + 24 &= 18 \\cr a &= -6 \\end{aligned} <br> Thus, the first term is $a = -6$ and the common difference is $d = 6$.",
+        "To solve part (b), we set up our sum equation for $S_n = 540$: <br> \\begin{aligned} 540 &= \\dfrac{ n }{ 2 } [ 2(-6) + (n - 1)6 ] \\cr 1080 &= n [ -12 + 6n - 6 ] \\cr 1080 &= n [ 6n - 18 ] \\cr 180 &= n^2 - 3n \\cr n^2 - 3n - 180 &= 0 \\cr (n - 15)(n + 12) &= 0 \\end{aligned} <br> Since the number of terms $n$ must be a positive integer ($n > 0$), we reject $n = -12$. Thus, the required value of $n$ is $n = 15$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $a = -6$, $d = 6$, <strong>(b)</strong> $n = 12$",
+            "feedback": "This error occurs in part (b) if you incorrectly keep the negative algebraic root of the quadratic factorisation, neglecting the boundary condition that the number of terms $n$ must be strictly positive."
+        },
+        {
+            "ans": "<strong>(a)</strong> $a = 6$, $d = 3$, <strong>(b)</strong> $n = 15$",
+            "feedback": "This mistake arises from an algebraic error when solving the simultaneous equations in part (a), resulting in incorrect values of $a$ and $d$."
+        },
+        {
+            "ans": "<strong>(a)</strong> $a = -6$, $d = 6$, <strong>(b)</strong> $n = 18$",
+            "feedback": "This is caused by a quadratic coefficient division slip or a factorisation mistake when solving the quadratic equation $n^2 - 3n - 180 = 0$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Validating Quadratic Term Values",
+        "content": "When solving for the number of terms $n$ in an arithmetic series, you will often obtain a quadratic equation with both a positive and a negative root. Always remember that because the term index $n$ represents a physical count of elements, it *must* be a positive integer ($n \\in \\mathbb{Z}^+$). You must explicitly reject any negative roots as mathematically extraneous."
+    }
+},
+{
+    "id": "004699",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Sequences and Series",
+    "subtopic": [
+        "Arithmetic Progressions",
+        "Modelling"
+    ],
+    "img": false,
+    "question": "A woman starts a new job with an initial annual salary of £$24,000$. Under her contract, her annual salary increases by a fixed amount of £$1,200$ at the start of each subsequent year. <br><br><strong>(a)</strong> Find her annual salary in her 10th year of employment. <br><br><strong>(b)</strong> Calculate the total amount of money she earns from this job during her first 15 years of employment.",
+    "steps": [
+        "We model her salary increases as an arithmetic progression where the first term is the starting salary $a = 24000$, and the common difference is the fixed annual increase $d = 1200$.",
+        "To solve part (a), we find her annual salary in her 10th year of employment ($T_{ 10 }$) using the general term formula $u_n = a + (n - 1)d$: <br> \\begin{aligned} T_{ 10 } &= a + 9d \\cr T_{ 10 } &= 24000 + 9(1200) \\cr &= 24000 + 10800 \\cr &= 34800 \\end{aligned} <br> Thus, her annual salary in her 10th year is £$34,800$.",
+        "To solve part (b), we calculate her total cumulative earnings during her first 15 years ($S_{ 15 }$) using the sum formula $S_n = \\dfrac{ n }{ 2 } [ 2a + (n - 1)d ]$: <br> \\begin{aligned} S_{ 15 } &= \\dfrac{ 15 }{ 2 } [ 2(24000) + 14(1200) ] \\cr S_{ 15 } &= 7.5 [ 48000 + 16800 ] \\cr &= 7.5 [ 64800 ] \\cr &= 486000 \\end{aligned} <br> Thus, her total earnings during her first 15 years of employment is £$486,000$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> £$36,000$, <strong>(b)</strong> £$486,000$",
+            "feedback": "This error occurs in part (a) if you use $u_{10} = a + 10d$ instead of $a + 9d$. Remember that in the first year her salary is $a$ (with zero increases applied), so in the $n$th year there are only $n-1$ increases applied."
+        },
+        {
+            "ans": "<strong>(a)</strong> £$34,800$, <strong>(b)</strong> £$450,000$",
+            "feedback": "This mistake is caused by using an incorrect number of terms $n = 14$ instead of $n = 15$ when calculating her total earnings over the 15-year period."
+        },
+        {
+            "ans": "<strong>(a)</strong> £$34,800$, <strong>(b)</strong> £$502,800$",
+            "feedback": "This error arises in part (b) if you apply the formula $S_{15} = \\dfrac{15}{2}(a + T_{10})$ incorrectly, combining the first year's salary with the 10th year's salary instead of the 15th year's salary."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Starting Value Modeling",
+        "content": "When modeling real-world progression problems (such as salaries, rents, or savings), always remember that the initial state is represented by the first term $a$ ($n = 1$). No increase is applied in the first interval. Therefore, the salary in the 10th year must be calculated using $u_{10} = a + 9d$, not $a + 10d$."
+    }
+},
+{
+    "id": "004700",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Sequences and Series",
+    "subtopic": [
+        "Arithmetic Progressions",
+        "Sigma Notation"
+    ],
+    "img": false,
+    "question": "Evaluate the arithmetic series: <br> $\\sum_{ r = 5 }^{ 35 } (4r + 7)$ <br><br>showing all of your working.",
+    "steps": [
+        "A series represented in sigma notation $\\sum_{ r = p }^{ q } f(r)$ is arithmetic if the general term $f(r)$ is a linear expression. To evaluate the series, we first determine the parameters of our progression.",
+        "We find the first term $a$ by substituting the lower boundary value $r = 5$ into the expression: <br> \\begin{aligned} a &= 4(5) + 7 \\cr &= 27 \\end{aligned}",
+        "We find the last term $L$ by substituting the upper boundary value $r = 35$ into the expression: <br> \\begin{aligned} L &= 4(35) + 7 \\cr &= 147 \\end{aligned}",
+        "We determine the total number of terms $n$ in our series: <br> \\begin{aligned} n &= (35 - 5) + 1 \\cr &= 31 \\end{aligned}",
+        "We apply the arithmetic series sum formula $S_n = \\dfrac{ n }{ 2 } (a + L)$ to find the total sum: <br> \\begin{aligned} S_{ 31 } &= \\dfrac{ 31 }{ 2 } (27 + 147) \\cr S_{ 31 } &= \\dfrac{ 31 }{ 2 } (174) \\cr &= 31 \\times 87 \\cr &= 2697 \\end{aligned} <br> Thus, the value of the arithmetic series is $2697$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$2610$",
+            "feedback": "This error occurs if you calculate the number of terms incorrectly as $n = 35 - 5 = 30$, failing to add the inclusive constant $+1$ when evaluating the boundaries of the sigma notation."
+        },
+        {
+            "ans": "$2784$",
+            "feedback": "This mistake is caused by using $n = 32$ terms, perhaps from a boundary counting error or arithmetic slip."
+        },
+        {
+            "ans": "$5394$",
+            "feedback": "This error arises if you forget to divide by $2$ when evaluating the arithmetic series sum formula, resulting in a sum that is exactly double the correct value."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Inclusive Sigma Boundaries",
+        "content": "When evaluating series defined in sigma notation $\\sum_{r = a}^{b} f(r)$, always remember that the number of terms $n$ is calculated using the inclusive formula $n = (b - a) + 1$. Simply subtracting the boundaries ($b - a$) is a very common student mistake that will omit the first term of the series, leading to an incorrect sum."
     }
 }
 
