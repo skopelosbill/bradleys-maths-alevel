@@ -1366,7 +1366,7 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £}7,864\\text{ vs } \\text{£}7,800)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 30000(r)^t\\text{ where } r < 0.8\\text{)}$$",
+                                "ans": "<strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx\\text{£}7,864\\text{ vs } \\text{£}7,800)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 30000(r)^t\\text{ where } r < 0.8\\text{)}$$",
                                 "feedback": "Check your reasoning for Part (c). If EV B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.8, not smaller."
                         },
                         {
