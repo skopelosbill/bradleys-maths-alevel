@@ -393,5 +393,202 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Parametric Integration Steps",
         "content": "When calculating the area under a parametric curve, never integrate $y$ directly with respect to $t$. You must always multiply the $y$ function by $\\dfrac{ \\mathrm{d}x }{ \\mathrm{d}t }$ and rewrite the differential as $\\mathrm{d}x = \\dfrac{ \\mathrm{d}x }{ \\mathrm{d}t } \\mathrm{d}t$ before performing any integration."
     }
+},
+{
+    "id": "004711",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Proof",
+    "topic": "Proof by Contradiction",
+    "subtopic": [
+        "Trigonometry",
+        "Inequalities"
+    ],
+    "img": false,
+    "question": "Prove by contradiction that, for every real number $x$ such that $0 < x < \\frac{ \\pi }{ 2 }$,\n$$\\tan x + \\cot x \\ge 2$$",
+    "steps": [
+        "We begin by assuming the negation of the statement we wish to prove.<br><br>Assume that there exists a real number $x$ in the interval $0 < x < \\frac{ \\pi }{ 2 }$ such that:<br>$$\\tan x + \\cot x < 2$$",
+        "Since $0 < x < \\frac{ \\pi }{ 2 }$, both $\\tan x$ and $\\cot x$ are strictly positive. We can substitute $\\cot x = \\frac{ 1 }{ \\tan x }$ into our inequality:<br>$$\\tan x + \\frac{ 1 }{ \\tan x } < 2$$",
+        "Since $\\tan x > 0$ for all $x$ in the given interval, we can multiply both sides of the inequality by $\\tan x$ without changing the direction of the inequality sign:<br>\\begin{aligned} \\tan^2 x + 1 &< 2\\tan x \\\\cr \\tan^2 x - 2\\tan x + 1 &< 0 \\end{aligned}",
+        "Now, we can factorise the quadratic expression on the left-hand side:<br>$$(\\tan x - 1)^2 < 0$$",
+        "This is a contradiction. The square of any real number must be greater than or equal to zero, meaning $(\\tan x - 1)^2 \\ge 0$ for all real $x$. Therefore, our original assumption must be false, and it follows that:<br>$$\\tan x + \\cot x \\ge 2$$<br>for all real $x$ such that $0 < x < \\frac{ \\pi }{ 2 }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\tan x + \\cot x > 2$$",
+            "feedback": "This is incorrect. When starting a proof by contradiction, we must assume the negation of the statement. The negation of $\\ge 2$ is strictly $< 2$, not $> 2$."
+        },
+        {
+            "ans": "$$(\\tan x - 1)^2 > 0$$",
+            "feedback": "This is incorrect. A squared term being greater than zero is mathematically true for most real numbers and does not provide the required negative square contradiction."
+        },
+        {
+            "ans": "$$(\\tan x + 1)^2 < 0$$",
+            "feedback": "This is incorrect. Expanding this expression yields $\\tan^2 x + 2\\tan x + 1 < 0$. Our inequality rearranged to $\\tan^2 x - 2\\tan x + 1 < 0$, which factorises to $(\\tan x - 1)^2 < 0$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Perfecting the Assumption",
+        "content": "Always begin a proof by contradiction by writing down a clear, explicit assumption. For a statement of the form $P \\implies Q$, we assume $P$ and the negation of $Q$. In this case, the negation of $\\ge 2$ is strictly $< 2$. Do not forget to state why multiplying by $\\tan x$ is valid; we must state that $\\tan x > 0$ for $0 < x < \\frac{ \\pi }{ 2 }$ to ensure the inequality sign is not reversed."
+    }
+},
+{
+    "id": "004712",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Proof",
+    "topic": "Proof by Contradiction",
+    "subtopic": [
+        "Logarithms",
+        "Irrational Numbers"
+    ],
+    "img": false,
+    "question": "Prove by contradiction that $\\log_{ 2 } 5$ is an irrational number.",
+    "steps": [
+        "We begin by assuming the negation of the statement we wish to prove.<br><br>Assume that $\\log_{ 2 } 5$ is a rational number. By definition, a rational number can be written in the form:<br>$$\\log_{ 2 } 5 = \\frac{ p }{ q }$$<br>where $p$ and $q$ are positive integers with no common factors, and $q \\ne 0$.",
+        "Using the definition of logarithms, we can rewrite the logarithmic equation in exponential form:<br>$$2^{ \\frac{ p }{ q } } = 5$$",
+        "To eliminate the fraction in the exponent, we raise both sides of the equation to the power of $q$:<br>\\begin{aligned} \\left(2^{ \\frac{ p }{ q } }\\right)^{ q } &= 5^{ q } \\\\cr 2^{ p } &= 5^{ q } \\end{aligned}",
+        "Let us analyze the parity of both sides of this equation:<br>Since $\\log_{ 2 } 5 > 0$, both $p$ and $q$ must be positive integers ($p \\ge 1$ and $q \\ge 1$).<br>Therefore, the left-hand side ($2^{ p }$) is a power of $2$ and must be an even integer.<br>The right-hand side ($5^{ q }$) is a power of $5$ and must be an odd integer.",
+        "This is a contradiction. An even integer can never equal an odd integer ($2^{ p } \\ne 5^{ q }$ for any positive integers $p$ and $q$). Therefore, our original assumption that $\\log_{ 2 } 5$ is rational must be false. It follows that $\\log_{ 2 } 5$ is an irrational number."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$2^{ q } = 5^{ p }$$",
+            "feedback": "This is incorrect. When raising $2^{ \\frac{ p }{ q } } = 5$ to the power of $q$, we obtain $2^{ p } = 5^{ q }$. Reversing the powers of $p$ and $q$ is an algebraic error."
+        },
+        {
+            "ans": "$$\\log_{ 2 } 5 = \\frac{ p }{ q } \\implies 5^{ p } = 2^{ q }$$",
+            "feedback": "This is incorrect. The definition of logarithms states that $y = \\log_{ a } x \\implies a^{ y } = x$. Therefore, $\\log_{ 2 } 5 = \\frac{ p }{ q } \\implies 2^{ \\frac{ p }{ q } } = 5$, which leads to $2^{ p } = 5^{ q }$, not $5^{ p } = 2^{ q }$."
+        },
+        {
+            "ans": "$$2^{ p } = 5^{ q } \\implies p = q = 0$$",
+            "feedback": "This is incorrect. While $2^{ 0 } = 5^{ 0 } = 1$ is mathematically true, we established that $p$ and $q$ must be positive integers because $\\log_{ 2 } 5 > 0$. Therefore, $p$ and $q$ cannot be zero."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Fundamental Parity Arguments",
+        "content": "When proving that a logarithm is irrational, the proof almost always reduces to an equation of the form $a^{ p } = b^{ q }$. By showing that one side is strictly even and the other is strictly odd (or by using prime factorisation uniqueness), you can construct an elegant and mathematically bulletproof contradiction."
+    }
+},
+{
+    "id": "004713",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Proof",
+    "topic": "Proof by Contradiction",
+    "subtopic": [
+        "Algebraic Inequalities",
+        "Algebraic Fractions"
+    ],
+    "img": false,
+    "question": "Prove by contradiction that, for all positive real numbers $a$ and $b$,\n$$\\frac{ a }{ b } + \\frac{ b }{ a } \\ge 2$$",
+    "steps": [
+        "We begin by assuming the negation of the statement we wish to prove.<br><br>Assume that there exist positive real numbers $a$ and $b$ such that:<br>$$\\frac{ a }{ b } + \\frac{ b }{ a } < 2$$",
+        "Since $a$ and $b$ are positive, their product $ab$ is also strictly positive ($ab > 0$). We can multiply both sides of the inequality by $ab$ without reversing the inequality sign:<br>\\begin{aligned} ab \\left( \\frac{ a }{ b } + \\frac{ b }{ a } \\right) &< 2ab \\\\cr a^2 + b^2 &< 2ab \\end{aligned}",
+        "Rearranging all terms to the left-hand side of the inequality gives:<br>$$a^2 - 2ab + b^2 < 0$$",
+        "Now, we can factorise this expression as a perfect square:<br>$$(a - b)^2 < 0$$",
+        "This is a contradiction. For any real numbers $a$ and $b$, the term $(a - b)^2$ must be greater than or equal to zero. It is impossible for a real square to be strictly negative. Therefore, our original assumption is false, and it follows that:<br>$$\\frac{ a }{ b } + \\frac{ b }{ a } \\ge 2$$<br>for all positive real numbers $a$ and $b$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$(a + b)^2 < 0$$",
+            "feedback": "This is incorrect. Expanding this expression yields $a^2 + 2ab + b^2 < 0$. However, our inequality rearranged to $a^2 - 2ab + b^2 < 0$, which factorises to $(a - b)^2 < 0$."
+        },
+        {
+            "ans": "$$a^2 + b^2 > 2ab$$",
+            "feedback": "This is incorrect. This inequality is mathematically true for any distinct real numbers $a$ and $b$ (since $a^2 - 2ab + b^2 = (a-b)^2 > 0$), and therefore does not lead to a contradiction."
+        },
+        {
+            "ans": "$$\\frac{ a }{ b } + \\frac{ b }{ a } > 2$$",
+            "feedback": "This is incorrect. The negation of $\\ge 2$ is strictly $< 2$, not $> 2$. Assuming this would mean starting with an incorrect mathematical premise for a proof by contradiction."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Connection to AM-GM",
+        "content": "This classic inequality is a special case of the Arithmetic Mean-Geometric Mean (AM-GM) inequality, which states that for any non-negative real numbers, $\\frac{ x + y }{ 2 } \\ge \\sqrt{ xy }$. By letting $x = \\frac{ a }{ b }$ and $y = \\frac{ b }{ a }$, we find $\\sqrt{ xy } = \\sqrt{ 1 } = 1$, which immediately yields $\\frac{ a }{ b } + \\frac{ b }{ a } \\ge 2$. Proof by contradiction is a standard way to verify this fundamental property."
+    }
+},
+{
+    "id": "004714",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Proof",
+    "topic": "Proof by Contradiction",
+    "subtopic": [
+        "Number Theory",
+        "Even and Odd Integers"
+    ],
+    "img": false,
+    "question": "Prove by contradiction that, for all integers $n$, if $n^2 - 4n + 7$ is even, then $n$ must be odd.",
+    "steps": [
+        "We begin by assuming the negation of the conditional statement.<br><br>The negation of 'if $P$, then $Q$' is '$P$ and not $Q$'. Therefore, we assume that:<br>$n^2 - 4n + 7$ is even AND $n$ is even.",
+        "Since $n$ is assumed to be an even integer, we can write it in the form:<br>$$n = 2k$$<br>where $k$ is an integer.",
+        "We now substitute $n = 2k$ into our expression $n^2 - 4n + 7$:<br>\\begin{aligned} n^2 - 4n + 7 &= (2k)^2 - 4(2k) + 7 \\\\cr &= 4k^2 - 8k + 7 \\end{aligned}",
+        "Let us rewrite this quadratic expression to investigate its parity:<br>\\begin{aligned} 4k^2 - 8k + 7 &= 4k^2 - 8k + 6 + 1 \\\\cr &= 2(2k^2 - 4k + 3) + 1 \\end{aligned}",
+        "Since $k$ is an integer, the expression $2k^2 - 4k + 3$ is also an integer. Let this integer be $m$. Thus, we can write:<br>$$n^2 - 4n + 7 = 2m + 1$$<br>By definition, $2m + 1$ is an odd integer.",
+        "This is a contradiction. We assumed that $n^2 - 4n + 7$ is even, but we have proven that it must be odd. Therefore, our original assumption is false, and it follows that if $n^2 - 4n + 7$ is even, $n$ must be odd."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$n^2 - 4n + 7 = 2(2k^2 - 4k) + 7$$",
+            "feedback": "This is not fully rigorous. To prove a number is odd, we must express it strictly in the standard algebraic form $2m + 1$, where $m$ is an integer. Simply having a $+ 7$ at the end does not immediately fit the standard definition until factorised as $2(2k^2 - 4k + 3) + 1$."
+        },
+        {
+            "ans": "$$n = 2k + 1$$",
+            "feedback": "This is incorrect. This represents the assumption that $n$ is odd. In a proof by contradiction for this statement, we must assume that $n^2 - 4n + 7$ is even and $n$ is NOT odd (meaning $n$ is even, which is $n = 2k$)."
+        },
+        {
+            "ans": "$$n^2 - 4n + 7 = 4k^2 - 8k + 7$$ is even",
+            "feedback": "This is incorrect. While $4k^2$ and $8k$ are multiples of $2$, the constant term $7$ is odd, making the sum of these terms odd. An even number plus an odd number is always odd."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Negating Conditional Statements",
+        "content": "A common student slip is misinterpreting how to negate an implication 'if $P$ then $Q$'. Many write 'assume if $P$ is even then $n$ is even' or 'assume if $P$ is odd then $n$ is even'. The correct contradiction setup is to assume that the premise $P$ is true AND the conclusion $Q$ is false (i.e., $P \\land \\neg Q$)."
+    }
+},
+{
+    "id": "004715",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Proof",
+    "topic": "Proof by Contradiction",
+    "subtopic": [
+        "Number Theory",
+        "Diophantine Equations",
+        "Difference of Two Squares"
+    ],
+    "img": false,
+    "question": "Prove by contradiction that there are no positive integers $m$ and $n$ such that\n$$m^2 - n^2 = 14$$",
+    "steps": [
+        "We begin by assuming the negation of the statement we wish to prove.<br><br>Assume that there exist positive integers $m$ and $n$ such that:<br>$$m^2 - n^2 = 14$$",
+        "We can factorise the left-hand side of the equation using the difference of two squares:<br>$$(m - n)(m + n) = 14$$",
+        "Since $m$ and $n$ are positive integers, both $(m - n)$ and $(m + n)$ must be integers. Furthermore, since $m > 0$ and $n > 0$, we know that $(m + n) > (m - n)$ and $(m + n) \\ge 2$. Thus, both factors must be positive integers.<br><br>The only positive factor pairs of $14$ are $(1, 14)$ and $(2, 7)$.",
+        "Let us analyze each possible case to find integer values for $m$ and $n$:<br><br><strong>Case 1:</strong> $m - n = 1$ and $m + n = 14$<br>Adding these two equations gives:<br>\\begin{aligned} (m - n) + (m + n) &= 1 + 14 \\\\cr 2m &= 15 \\\\cr m &= 7.5 \\end{aligned}<br>This is a contradiction because $m$ must be an integer.<br><br><strong>Case 2:</strong> $m - n = 2$ and $m + n = 7$<br>Adding these two equations gives:<br>\\begin{aligned} (m - n) + (m + n) &= 2 + 7 \\\\cr 2m &= 9 \\\\cr m &= 4.5 \\end{aligned}<br>This is also a contradiction because $m$ must be an integer.",
+        "Since all possible cases yield a contradiction, no such positive integers $m$ and $n$ can exist. Therefore, our original assumption is false, and there are no positive integers $m$ and $n$ such that $m^2 - n^2 = 14$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$m = 8, n = 5$$",
+            "feedback": "This is incorrect. Substituting these values into the expression gives $8^2 - 5^2 = 64 - 25 = 39 \\ne 14$. No positive integer pairs can satisfy the equation."
+        },
+        {
+            "ans": "$$m - n = 2$$ and $$m + n = 7 \\implies m = 5, n = 3$$",
+            "feedback": "This is incorrect. If $m = 5$ and $n = 3$, then $m - n = 2$ but $m + n = 8 \\ne 7$. Solving the system $m - n = 2$ and $m + n = 7$ yields non-integer values $m = 4.5, n = 2.5$."
+        },
+        {
+            "ans": "$$(m - n)(m + n) = 14 \\implies m^2 + n^2 = 14$$",
+            "feedback": "This is incorrect. This expands the factored form incorrectly. The difference of two squares factorises as $(m-n)(m+n) = m^2 - n^2$. Expanding $(m-n)(m+n)$ does not yield $m^2 + n^2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: The Parity of Difference of Squares",
+        "content": "A beautiful shortcut to this problem relies on parity. Note that $(m - n) + (m + n) = 2m$, which is always even. This means the two factors $(m - n)$ and $(m + n)$ must have the same parity (either both even or both odd). If they are both odd, their product is odd (which $14$ is not). If they are both even, their product must be a multiple of $4$. Since $14$ is even but not a multiple of $4$, no integer solution can exist!"
+    }
 }
 ];
