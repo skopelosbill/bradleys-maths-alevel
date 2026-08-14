@@ -409,7 +409,7 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
         "We begin by assuming the negation of the statement we wish to prove.<br><br>Assume that there exists a real number $x$ in the interval $0 < x < \\frac{ \\pi }{ 2 }$ such that:<br>$$\\tan x + \\cot x < 2$$",
         "Since $0 < x < \\frac{ \\pi }{ 2 }$, both $\\tan x$ and $\\cot x$ are strictly positive. We can substitute $\\cot x = \\frac{ 1 }{ \\tan x }$ into our inequality:<br>$$\\tan x + \\frac{ 1 }{ \\tan x } < 2$$",
-        "Since $\\tan x > 0$ for all $x$ in the given interval, we can multiply both sides of the inequality by $\\tan x$ without changing the direction of the inequality sign:<br>\\begin{aligned} \\tan^2 x + 1 &< 2\\tan x \\\\cr \\tan^2 x - 2\\tan x + 1 &< 0 \\end{aligned}",
+        "Since $\\tan x > 0$ for all $x$ in the given interval, we can multiply both sides of the inequality by $\\tan x$ without changing the direction of the inequality sign:<br>\\begin{aligned} \\tan^2 x + 1 &< 2\\tan x \\cr \\tan^2 x - 2\\tan x + 1 &< 0 \\end{aligned}",
         "Now, we can factorise the quadratic expression on the left-hand side:<br>$$(\\tan x - 1)^2 < 0$$",
         "This is a contradiction. The square of any real number must be greater than or equal to zero, meaning $(\\tan x - 1)^2 \\ge 0$ for all real $x$. Therefore, our original assumption must be false, and it follows that:<br>$$\\tan x + \\cot x \\ge 2$$<br>for all real $x$ such that $0 < x < \\frac{ \\pi }{ 2 }$."
     ],
@@ -448,7 +448,7 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
         "We begin by assuming the negation of the statement we wish to prove.<br><br>Assume that $\\log_{ 2 } 5$ is a rational number. By definition, a rational number can be written in the form:<br>$$\\log_{ 2 } 5 = \\frac{ p }{ q }$$<br>where $p$ and $q$ are positive integers with no common factors, and $q \\ne 0$.",
         "Using the definition of logarithms, we can rewrite the logarithmic equation in exponential form:<br>$$2^{ \\frac{ p }{ q } } = 5$$",
-        "To eliminate the fraction in the exponent, we raise both sides of the equation to the power of $q$:<br>\\begin{aligned} \\left(2^{ \\frac{ p }{ q } }\\right)^{ q } &= 5^{ q } \\\\cr 2^{ p } &= 5^{ q } \\end{aligned}",
+        "To eliminate the fraction in the exponent, we raise both sides of the equation to the power of $q$:<br>\\begin{aligned} \\left(2^{ \\frac{ p }{ q } }\\right)^{ q } &= 5^{ q } \\cr 2^{ p } &= 5^{ q } \\end{aligned}",
         "Let us analyze the parity of both sides of this equation:<br>Since $\\log_{ 2 } 5 > 0$, both $p$ and $q$ must be positive integers ($p \\ge 1$ and $q \\ge 1$).<br>Therefore, the left-hand side ($2^{ p }$) is a power of $2$ and must be an even integer.<br>The right-hand side ($5^{ q }$) is a power of $5$ and must be an odd integer.",
         "This is a contradiction. An even integer can never equal an odd integer ($2^{ p } \\ne 5^{ q }$ for any positive integers $p$ and $q$). Therefore, our original assumption that $\\log_{ 2 } 5$ is rational must be false. It follows that $\\log_{ 2 } 5$ is an irrational number."
     ],
@@ -486,7 +486,7 @@ window.ALEVEL_QUESTIONS = [
     "question": "Prove by contradiction that, for all positive real numbers $a$ and $b$,\n$$\\frac{ a }{ b } + \\frac{ b }{ a } \\ge 2$$",
     "steps": [
         "We begin by assuming the negation of the statement we wish to prove.<br><br>Assume that there exist positive real numbers $a$ and $b$ such that:<br>$$\\frac{ a }{ b } + \\frac{ b }{ a } < 2$$",
-        "Since $a$ and $b$ are positive, their product $ab$ is also strictly positive ($ab > 0$). We can multiply both sides of the inequality by $ab$ without reversing the inequality sign:<br>\\begin{aligned} ab \\left( \\frac{ a }{ b } + \\frac{ b }{ a } \\right) &< 2ab \\\\cr a^2 + b^2 &< 2ab \\end{aligned}",
+        "Since $a$ and $b$ are positive, their product $ab$ is also strictly positive ($ab > 0$). We can multiply both sides of the inequality by $ab$ without reversing the inequality sign:<br>\\begin{aligned} ab \\left( \\frac{ a }{ b } + \\frac{ b }{ a } \\right) &< 2ab \\cr a^2 + b^2 &< 2ab \\end{aligned}",
         "Rearranging all terms to the left-hand side of the inequality gives:<br>$$a^2 - 2ab + b^2 < 0$$",
         "Now, we can factorise this expression as a perfect square:<br>$$(a - b)^2 < 0$$",
         "This is a contradiction. For any real numbers $a$ and $b$, the term $(a - b)^2$ must be greater than or equal to zero. It is impossible for a real square to be strictly negative. Therefore, our original assumption is false, and it follows that:<br>$$\\frac{ a }{ b } + \\frac{ b }{ a } \\ge 2$$<br>for all positive real numbers $a$ and $b$."
@@ -526,8 +526,8 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
         "We begin by assuming the negation of the conditional statement.<br><br>The negation of 'if $P$, then $Q$' is '$P$ and not $Q$'. Therefore, we assume that:<br>$n^2 - 4n + 7$ is even AND $n$ is even.",
         "Since $n$ is assumed to be an even integer, we can write it in the form:<br>$$n = 2k$$<br>where $k$ is an integer.",
-        "We now substitute $n = 2k$ into our expression $n^2 - 4n + 7$:<br>\\begin{aligned} n^2 - 4n + 7 &= (2k)^2 - 4(2k) + 7 \\\\cr &= 4k^2 - 8k + 7 \\end{aligned}",
-        "Let us rewrite this quadratic expression to investigate its parity:<br>\\begin{aligned} 4k^2 - 8k + 7 &= 4k^2 - 8k + 6 + 1 \\\\cr &= 2(2k^2 - 4k + 3) + 1 \\end{aligned}",
+        "We now substitute $n = 2k$ into our expression $n^2 - 4n + 7$:<br>\\begin{aligned} n^2 - 4n + 7 &= (2k)^2 - 4(2k) + 7 \\cr &= 4k^2 - 8k + 7 \\end{aligned}",
+        "Let us rewrite this quadratic expression to investigate its parity:<br>\\begin{aligned} 4k^2 - 8k + 7 &= 4k^2 - 8k + 6 + 1 \\cr &= 2(2k^2 - 4k + 3) + 1 \\end{aligned}",
         "Since $k$ is an integer, the expression $2k^2 - 4k + 3$ is also an integer. Let this integer be $m$. Thus, we can write:<br>$$n^2 - 4n + 7 = 2m + 1$$<br>By definition, $2m + 1$ is an odd integer.",
         "This is a contradiction. We assumed that $n^2 - 4n + 7$ is even, but we have proven that it must be odd. Therefore, our original assumption is false, and it follows that if $n^2 - 4n + 7$ is even, $n$ must be odd."
     ],
@@ -548,7 +548,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Negating Conditional Statements",
-        "content": "A common student slip is misinterpreting how to negate an implication 'if $P$ then $Q$'. Many write 'assume if $P$ is even then $n$ is even' or 'assume if $P$ is odd then $n$ is even'. The correct contradiction setup is to assume that the premise $P$ is true AND the conclusion $Q$ is false (i.e., $P \\land \\neg Q$)."
+        "content": "A common student slip is misinterpreting how to negate an implication 'if $P$ then $Q$'. Many write 'assume if $P$ is even then $n$ is even' or 'assume if $P$ is odd then $n$ is even'. The correct contradiction setup is to assume that the premise $P$ is true AND the conclusion $Q$ is false (i.e., $P \\text{ AND NOT } Q$)."
     }
 },
 {
@@ -568,7 +568,7 @@ window.ALEVEL_QUESTIONS = [
         "We begin by assuming the negation of the statement we wish to prove.<br><br>Assume that there exist positive integers $m$ and $n$ such that:<br>$$m^2 - n^2 = 14$$",
         "We can factorise the left-hand side of the equation using the difference of two squares:<br>$$(m - n)(m + n) = 14$$",
         "Since $m$ and $n$ are positive integers, both $(m - n)$ and $(m + n)$ must be integers. Furthermore, since $m > 0$ and $n > 0$, we know that $(m + n) > (m - n)$ and $(m + n) \\ge 2$. Thus, both factors must be positive integers.<br><br>The only positive factor pairs of $14$ are $(1, 14)$ and $(2, 7)$.",
-        "Let us analyze each possible case to find integer values for $m$ and $n$:<br><br><strong>Case 1:</strong> $m - n = 1$ and $m + n = 14$<br>Adding these two equations gives:<br>\\begin{aligned} (m - n) + (m + n) &= 1 + 14 \\\\cr 2m &= 15 \\\\cr m &= 7.5 \\end{aligned}<br>This is a contradiction because $m$ must be an integer.<br><br><strong>Case 2:</strong> $m - n = 2$ and $m + n = 7$<br>Adding these two equations gives:<br>\\begin{aligned} (m - n) + (m + n) &= 2 + 7 \\\\cr 2m &= 9 \\\\cr m &= 4.5 \\end{aligned}<br>This is also a contradiction because $m$ must be an integer.",
+        "Let us analyze each possible case to find integer values for $m$ and $n$:<br><br><strong>Case 1:</strong> $m - n = 1$ and $m + n = 14$<br>Adding these two equations gives:<br>\\begin{aligned} (m - n) + (m + n) &= 1 + 14 \\cr 2m &= 15 \\cr m &= 7.5 \\end{aligned}<br>This is a contradiction because $m$ must be an integer.<br><br><strong>Case 2:</strong> $m - n = 2$ and $m + n = 7$<br>Adding these two equations gives:<br>\\begin{aligned} (m - n) + (m + n) &= 2 + 7 \\cr 2m &= 9 \\cr m &= 4.5 \\end{aligned}<br>This is also a contradiction because $m$ must be an integer.",
         "Since all possible cases yield a contradiction, no such positive integers $m$ and $n$ can exist. Therefore, our original assumption is false, and there are no positive integers $m$ and $n$ such that $m^2 - n^2 = 14$."
     ],
     "pi_options": [
@@ -589,6 +589,205 @@ window.ALEVEL_QUESTIONS = [
         "type": "deeper",
         "title": "The Head Teacher's Eye: The Parity of Difference of Squares",
         "content": "A beautiful shortcut to this problem relies on parity. Note that $(m - n) + (m + n) = 2m$, which is always even. This means the two factors $(m - n)$ and $(m + n)$ must have the same parity (either both even or both odd). If they are both odd, their product is odd (which $14$ is not). If they are both even, their product must be a multiple of $4$. Since $14$ is even but not a multiple of $4$, no integer solution can exist!"
+    }
+},
+{
+    "id": "004716",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Inverse Functions",
+        "Composite Functions",
+        "Graph Sketching"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Given that $f$ is a function:\n<strong>(i)</strong> State the condition for $f^{-1}$ to exist.\n<strong>(ii)</strong> Find $f^{-1}f(x)$.\n\n<strong>(b)</strong> The functions $g$ and $h$ are given by:\n$$\\begin{aligned} g(x) &= x^2 - 4 \\cr h(x) &= \\mathrm{e}^{ 2x } + 2 \\end{aligned}$$\n<strong>(i)</strong> Suggest a domain for $g$ such that $g^{-1}$ exists.\n<strong>(ii)</strong> Given that the domain of $h$ is $(-\\infty, \\infty)$, find an expression for $h^{-1}(x)$. Sketch, using the same axes, the graphs of $h(x)$ and $h^{-1}(x)$, indicating clearly any asymptotes and the points where the graphs cross the coordinate axes.\n<strong>(iii)</strong> Determine an expression for $gh(x)$ in its simplest form.",
+    "steps": [
+        "<strong>(a)(i)</strong> For the inverse function $f^{-1}$ to exist, the function $f$ must be <strong>one-to-one</strong> (or injective). This means that each output value in the range corresponds to exactly one input value in the domain.<br><br><strong>(a)(ii)</strong> By definition, applying a function and then its inverse (or vice versa) returns the original input: $$f^{-1}f(x) = x$$",
+        "<strong>(b)(i)</strong> The quadratic function $g(x) = x^2 - 4$ is many-to-one over its natural domain. To make it one-to-one so that an inverse exists, we must restrict the domain to one side of its vertex $(0, -4)$. A standard restriction is:<br>$$x \\ge 0$$<br>(Note: $x \\le 0$ is also a valid alternative).",
+        "<strong>(b)(ii)</strong> To find an expression for the inverse function $h^{-1}(x)$, we set $y = h(x)$ and rearrange to make $x$ the subject:<br>\\begin{aligned} y &= \\mathrm{e}^{ 2x } + 2 \\cr y - 2 &= \\mathrm{e}^{ 2x } \\cr 2x &= \\ln(y - 2) \\cr x &= 0.5\\ln(y - 2) \\end{aligned}<br>Swapping $x$ and $y$ gives:<br>$$h^{-1}(x) = 0.5\\ln(x - 2)$$<br>with a domain of $x > 2$.",
+        "To sketch the graphs of $h(x)$ and $h^{-1}(x)$ on the same axes, we locate their key features:<br>• The exponential curve $h(x) = \\mathrm{e}^{ 2x } + 2$ has a horizontal asymptote at $y = 2$ and crosses the $y$-axis at $(0, 3)$.<br>• The logarithmic curve $h^{-1}(x) = 0.5\\ln(x - 2)$ has a vertical asymptote at $x = 2$ and crosses the $x$-axis at $(3, 0)$.<br>The curves are reflections of each other across the line of symmetry $y = x$.<br><br><img src='images/Pure/004716_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b)(iii)</strong> To find the composite function $gh(x)$, we substitute $h(x)$ into $g(x)$:<br>\\begin{aligned} gh(x) &= g(h(x)) \\cr &= (\\mathrm{e}^{ 2x } + 2)^2 - 4 \\cr &= \\mathrm{e}^{ 4x } + 4\\mathrm{e}^{ 2x } + 4 - 4 \\cr &= \\mathrm{e}^{ 4x } + 4\\mathrm{e}^{ 2x } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$h^{-1}(x) = \\ln(x - 2)^2$$ and $$gh(x) = \\mathrm{e}^{ 4x }$$",
+            "feedback": "This is incorrect. When rearranging $2x = \\ln(y - 2)$, dividing by $2$ yields $0.5\\ln(y - 2)$, which is equivalent to $\\ln\\sqrt{ y - 2 }$, not $\\ln(y - 2)^2$. Additionally, when expanding $(\\mathrm{e}^{ 2x } + 2)^2$, you must include the middle term $4\\mathrm{e}^{ 2x }$ rather than just squaring the individual terms."
+        },
+        {
+            "ans": "$$h^{-1}(x) = 0.5\\ln(x + 2)$$ and $$gh(x) = \\mathrm{e}^{ 4x } + 4\\mathrm{e}^{ 2x } + 8$$",
+            "feedback": "This is incorrect. Rearranging $y = \\mathrm{e}^{ 2x } + 2$ gives $y - 2 = \\mathrm{e}^{ 2x }$, which leads to a minus sign inside the logarithm: $0.5\\ln(x - 2)$. Also, when evaluating $gh(x)$, the $+4$ from the expanded quadratic cancels with the $-4$ from the function $g(x)$, leaving no constant term."
+        },
+        {
+            "ans": "$$h^{-1}(x) = 2\\ln(x - 2)$$ and $$gh(x) = \\mathrm{e}^{ 4x } + 4$$",
+            "feedback": "This is incorrect. When isolating $x$ from $2x = \\ln(y - 2)$, you must divide by $2$ (which is a coefficient of $0.5$), not multiply by $2$. For the composite function, expanding the brackets yields intermediate terms that must be fully simplified."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Expanding Exponential Quadratics",
+        "content": "A very common student slip is expanding $(\\mathrm{e}^{ 2x } + 2)^2$ as $\\mathrm{e}^{ 4x } + 4$. Remember that $(\\mathrm{e}^{ 2x } + 2)^2$ is a perfect square expansion of the form $(a+b)^2 = a^2 + 2ab + b^2$. Always write out the double brackets if you are prone to forgetting the middle term, which in this case is $2(\\mathrm{e}^{ 2x })(2) = 4\\mathrm{e}^{ 2x }$."
+    }
+},
+{
+    "id": "004717",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Inverse Functions",
+        "Composite Functions",
+        "Graph Sketching"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Explain why the function $f(x) = x^2 - 6x + 9$ with domain $(-\\infty, \\infty)$ does not have an inverse.\n\n<strong>(b)</strong> The functions $g$ and $h$ are defined by:\n$$\\begin{aligned} g(x) &= \\frac{ x + 3 }{ x - 3 } \\quad \\text{for } x \\ne 3 \\cr h(x) &= x^2 - 6x + 14 \\end{aligned}$$\n<strong>(i)</strong> Suggest a domain of the form $x \\ge k$ for $h$ such that $h^{-1}$ exists.\n<strong>(ii)</strong> Find an expression for $g^{-1}(x)$. Sketch, using the same axes, the graphs of $y = g(x)$ and $y = g^{-1}(x)$, showing clearly their vertical and horizontal asymptotes and any points where the graphs cross the coordinate axes.\n<strong>(iii)</strong> Find an expression for the composite function $hg(x)$ for $x \\ne 3$.",
+    "steps": [
+        "<strong>(a)</strong> By factorising the expression, we can rewrite the function as:<br>$$f(x) = (x - 3)^2$$<br>This represents a parabola with its vertex at $x = 3$. Over the unrestricted domain $(-\\infty, \\infty)$, the function is <strong>many-to-one</strong> (for example, $f(2) = f(4) = 1$). Because an inverse function only exists for one-to-one functions, $f$ does not have an inverse.",
+        "<strong>(b)(i)</strong> We can complete the square for $h(x)$ to find its vertex form:<br>\\begin{aligned} h(x) &= x^2 - 6x + 14 \\cr &= (x - 3)^2 - 9 + 14 \\cr &= (x - 3)^2 + 5 \\end{aligned}<br>The vertex is at $(3, 5)$. To restrict the domain of the quadratic function so it becomes one-to-one, we must start at the vertex. Thus, for a domain of the form $x \\ge k$, we choose:<br>$$k = 3$$",
+        "<strong>(b)(ii)</strong> To find $g^{-1}(x)$, we set $y = g(x)$ and rearrange to make $x$ the subject:<br>\\begin{aligned} y &= \\frac{ x + 3 }{ x - 3 } \\cr y(x - 3) &= x + 3 \\cr xy - 3y &= x + 3 \\cr xy - x &= 3y + 3 \\cr x(y - 1) &= 3(y + 1) \\cr x &= \\frac{ 3(y + 1) }{ y - 1 } \\end{aligned}<br>Swapping $x$ and $y$ gives:<br>$$g^{-1}(x) = \\frac{ 3(x + 1) }{ x - 1 }$$<br>(or $\\frac{ 3x + 3 }{ x - 1 }$) for $x \\ne 1$.",
+        "To sketch both curves, we identify their key features:<br>• $g(x) = \\frac{ x + 3 }{ x - 3 }$ has a vertical asymptote at $x = 3$ and a horizontal asymptote at $y = 1$. Its intercepts are $(-3, 0)$ and $(0, -1)$.<br>• $g^{-1}(x) = \\frac{ 3x + 3 }{ x - 1 }$ has a vertical asymptote at $x = 1$ and a horizontal asymptote at $y = 3$. Its intercepts are $(-1, 0)$ and $(0, -3)$.<br>Both curves are perfectly symmetric across the line $y = x$.<br><br><img src='images/Pure/004717_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b)(iii)</strong> To find $hg(x)$, we substitute $g(x)$ into $h(x)$:<br>\\begin{aligned} hg(x) &= h(g(x)) \\cr &= \\left(\\frac{ x + 3 }{ x - 3 }\\right)^2 - 6\\left(\\frac{ x + 3 }{ x - 3 }\\right) + 14 \\cr &= \\frac{ (x + 3)^2 - 6(x + 3)(x - 3) + 14(x - 3)^2 }{ (x - 3)^2 } \\cr &= \\frac{ (x^2 + 6x + 9) - 6(x^2 - 9) + 14(x^2 - 6x + 9) }{ (x - 3)^2 } \\cr &= \\frac{ x^2 + 6x + 9 - 6x^2 + 54 + 14x^2 - 84x + 126 }{ (x - 3)^2 } \\cr &= \\frac{ 9x^2 - 78x + 189 }{ (x - 3)^2 } \\cr &= \\frac{ 3(3x^2 - 26x + 63) }{ (x - 3)^2 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$g^{-1}(x) = \\frac{ 3x - 3 }{ x + 1 }$$ and $$hg(x) = \\frac{ 9x^2 - 18x + 189 }{ (x - 3)^2 }$$",
+            "feedback": "This is incorrect. When factorising $xy - x = 3y + 3$, you get $x(y-1) = 3(y+1)$, which leads to a minus sign in the denominator of the inverse: $x-1$, not $x+1$. For the composite function expansion, ensure you expand $-6(x+3)(x-3)$ as $-6(x^2 - 9) = -6x^2 + 54$ and distribute all negative signs carefully."
+        },
+        {
+            "ans": "$$g^{-1}(x) = \\frac{ x + 3 }{ 3x - 1 }$$ and $$hg(x) = \\frac{ 9x^2 - 78x + 144 }{ (x - 3)^2 }$$",
+            "feedback": "This is incorrect. Reorganising the algebraic fraction requires grouping the $x$ terms on one side and $y$ terms on the other. It appears there was a division error in finding the inverse. For $hg(x)$, ensure that $14(x-3)^2$ is correctly expanded as $14x^2 - 84x + 126$ and added to the numerator."
+        },
+        {
+            "ans": "$$g^{-1}(x) = \\frac{ 3x + 3 }{ x - 1 }$$ and $$hg(x) = \\frac{ 9x^2 - 6x + 189 }{ (x - 3)^2 }$$",
+            "feedback": "This is incorrect. While the expression for $g^{-1}(x)$ is correct, the algebraic simplification of $hg(x)$ contains an error in collecting the $x$ terms. The $x$ terms are $+6x$ (from $(x+3)^2$) and $-84x$ (from $14(x-3)^2$), which combine to $-78x$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Symmetry of Inverse Asymptotes",
+        "content": "Since an inverse function $f^{-1}(x)$ is a reflection of $f(x)$ across the line $y = x$, all coordinates and features swap places. This means if a rational function has a vertical asymptote at $x = a$ and a horizontal asymptote at $y = b$, its inverse is guaranteed to have a vertical asymptote at $x = b$ and a horizontal asymptote at $y = a$. Spotting this symmetry is an excellent way to self-audit your sketch!"
+    }
+},
+{
+    "id": "004718",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Proof",
+    "topic": "Functions",
+    "subtopic": [
+        "Domain and Range",
+        "Inverse Functions",
+        "Composite Equations"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Given that $f(x) = \\ln(x - 2)$ for $x > 2$:\n<strong>(i)</strong> Write down the range of $f$.\n<strong>(ii)</strong> Find an expression for $f^{-1}(x)$, stating its domain.\n\n<strong>(b)</strong> The functions $g$ and $h$ are defined by:\n$$\\begin{aligned} g(x) &= 3x - 2 \\quad \\text{for } x \\in \\mathbb{R} \\cr h(x) &= \\ln(x + 1) \\quad \\text{for } x > -1 \\end{aligned}$$\n<strong>(i)</strong> Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$. Indicate clearly any asymptotes and axis intercepts.\n<strong>(ii)</strong> Find an expression for the composite function $gh(x)$, stating its domain and range.\n<strong>(iii)</strong> Solve the equation $gh(x) = 4$.",
+    "steps": [
+        "<strong>(a)(i)</strong> The natural logarithmic function $\\ln(X)$ takes all real values as its argument increases. Thus, the range of $f(x) = \\ln(x - 2)$ is:<br>$$f(x) \\in \\mathbb{R}$$",
+        "<strong>(a)(ii)</strong> To find $f^{-1}(x)$, we set $y = \\ln(x - 2)$ and make $x$ the subject:<br>\\begin{aligned} y &= \\ln(x - 2) \\cr \\mathrm{e}^{ y } &= x - 2 \\cr x &= \\mathrm{e}^{ y } + 2 \\end{aligned}<br>Swapping variables gives:<br>$$f^{-1}(x) = \\mathrm{e}^{ x } + 2$$<br>The domain of $f^{-1}$ is the range of $f$, which is:<br>$$x \\in \\mathbb{R}$$",
+        "<strong>(b)(i)</strong> Key features for the sketches:<br>• $h(x) = \\ln(x + 1)$ has a vertical asymptote at $x = -1$ and crosses the coordinate axes at the origin $(0, 0)$.<br>• $h^{-1}(x) = \\mathrm{e}^{ x } - 1$ has a horizontal asymptote at $y = -1$ and also crosses at the origin $(0, 0)$.<br>These curves are symmetrical reflections across the diagonal $y = x$.<br><br><img src='images/Pure/004718_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b)(ii)</strong> To find the composite function $gh(x)$, we substitute $h(x)$ into $g(x)$:<br>$$gh(x) = 3\\ln(x + 1) - 2$$<br>• The domain of $gh$ is the same as the domain of $h$, which is:<br>$$x > -1$$<br>• Since the range of $h$ is $\\mathbb{R}$ and $g$ is a linear function defined on all reals, the range of $gh$ is:<br>$$gh(x) \\in \\mathbb{R}$$",
+        "<strong>(b)(iii)</strong> To solve $gh(x) = 4$, we set our composite expression equal to $4$:<br>\\begin{aligned} 3\\ln(x + 1) - 2 &= 4 \\cr 3\\ln(x + 1) &= 6 \\cr \\ln(x + 1) &= 2 \\cr x + 1 &= \\mathrm{e}^{ 2 } \\cr x &= \\mathrm{e}^{ 2 } - 1 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$f^{-1}(x) = \\mathrm{e}^{ x - 2 }$$ and $$x = \\mathrm{e}^{ 2 }$$",
+            "feedback": "This is incorrect. When raising $y = \\ln(x-2)$ to the base of $\\mathrm{e}$, you get $\\mathrm{e}^{ y } = x - 2$, which means $x = \\mathrm{e}^{ y } + 2$, not $\\mathrm{e}^{ y-2 }$. In part (b)(iii), when solving $x+1 = \\mathrm{e}^{ 2 }$, you must subtract $1$ from both sides, yielding $\\mathrm{e}^{ 2 } - 1$."
+        },
+        {
+            "ans": "$$f^{-1}(x) = \\mathrm{e}^{ x } - 2$$ and $$x = \\mathrm{e}^{ 6 } - 1$$",
+            "feedback": "This is incorrect. Isolating $x$ from $\\mathrm{e}^{ y } = x - 2$ requires adding $2$ to both sides, which yields $\\mathrm{e}^{ x } + 2$. Additionally, when solving $3\\ln(x+1) = 6$, you must divide by $3$ first to get $\\ln(x+1) = 2$ before taking exponentials, rather than exponentiating immediately."
+        },
+        {
+            "ans": "$$f^{-1}(x) = \\ln(x + 2)$$ and $$x = \\mathrm{e}^{ 2 } + 1$$",
+            "feedback": "This is incorrect. The inverse of a natural log function is an exponential function, not another log. For part (b)(iii), the final step of $x+1 = \\mathrm{e}^{ 2 }$ requires subtracting $1$ from both sides, not adding."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Composite Domain and Range Rules",
+        "content": "Always remember the golden rules for composite functions $gh(x)$:\n1. The **domain** of $gh$ is strictly a subset of the domain of the inner function, $h(x)$.\n2. The **range** of $gh$ is found by evaluating the outer function, $g(x)$, over the active range of the inner function, $h(x)$."
+    }
+},
+{
+    "id": "004719",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Trigonometric Inverses",
+        "Composite Functions",
+        "Range"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> State why a domain restriction is necessary for the function $f(x) = \\sin x$ to have an inverse, and write down the standard restricted domain used to define $f^{-1}(x) = \\arcsin x$.\n\n<strong>(b)</strong> The functions $g$ and $h$ are defined by:\n$$\\begin{aligned} g(x) &= 2x^2 + 1 \\quad \\text{for } x \\in \\mathbb{R} \\cr h(x) &= \\cos x \\quad \\text{for } 0 \\le x \\le \\pi \\end{aligned}$$\n<strong>(i)</strong> Find an expression for $h^{-1}(x)$, stating its domain and range. Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$.\n<strong>(ii)</strong> Determine an expression for the composite function $gh(x)$, expressing your answer in terms of $\\cos 2x$.\n<strong>(iii)</strong> Find the range of the composite function $gh$.",
+    "steps": [
+        "<strong>(a)</strong> The function $f(x) = \\sin x$ is periodic and therefore <strong>many-to-one</strong> (for example, $\\sin(0) = \\sin(\\pi) = 0$). An inverse function only exists if a function is one-to-one. To define $\\arcsin x$, the standard restricted domain used is:<br>$$-\\frac{ \\pi }{ 2 } \\le x \\le \\frac{ \\pi }{ 2 }$$",
+        "<strong>(b)(i)</strong> The inverse of the restricted cosine function $h(x) = \\cos x$ is:<br>$$h^{-1}(x) = \\arccos x$$<br>• The domain of $h^{-1}$ is the range of $h$, which is:<br>$$-1 \\le x \\le 1$$<br>• The range of $h^{-1}$ is the domain of $h$, which is:<br>$$0 \\le y \\le \\pi$$<br>The curves of $h(x)$ and $h^{-1}(x)$ are shown below:<br><br><img src='images/Pure/004719_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b)(ii)</strong> To find $gh(x)$, we substitute $h(x)$ into $g(x)$:<br>$$gh(x) = 2\\cos^2 x + 1$$<br>We can rewrite this in terms of the double-angle identity for cosine, $\\cos 2x = 2\\cos^2 x - 1$, which gives $2\\cos^2 x = \\cos 2x + 1$. Substituting this in:<br>\\begin{aligned} gh(x) &= (\\cos 2x + 1) + 1 \\cr &= \\cos 2x + 2 \\end{aligned}",
+        "<strong>(b)(iii)</strong> Since the domain of $h$ is $0 \\le x \\le \\pi$, the argument of our double-angle expression, $2x$, spans $0 \\le 2x \\le 2\\pi$. Over a full period, the range of the cosine function is:<br>$$-1 \\le \\cos 2x \\le 1$$<br>Adding $2$ to all parts of the inequality gives:<br>$$1 \\le \\cos 2x + 2 \\le 3$$<br>Thus, the range of the composite function $gh$ is:<br>$$1 \\le gh(x) \\le 3$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$gh(x) = \\cos 2x + 1$$ and Range: $$[0, 2]$$",
+            "feedback": "This is incorrect. The double-angle identity is $2\\cos^2 x = \\cos 2x + 1$. Since $gh(x) = 2\\cos^2 x + 1$, substituting the identity gives $(\\cos 2x + 1) + 1 = \\cos 2x + 2$. It looks like the extra $+1$ in the function definition was omitted."
+        },
+        {
+            "ans": "$$gh(x) = \\cos 2x + 3$$ and Range: $$[2, 4]$$",
+            "feedback": "This is incorrect. Applying the identity $2\\cos^2 x = \\cos 2x + 1$ directly leads to $gh(x) = \\cos 2x + 2$. An error in double-angle substitution led to an incorrect constant term, shifting the range upwards."
+        },
+        {
+            "ans": "$$gh(x) = \\cos 2x$$ and Range: $$[-1, 1]$$",
+            "feedback": "This is incorrect. The expression has not been substituted using the correct double-angle identity. Substituting $2\\cos^2 x = \\cos 2x + 1$ is required to simplify $gh(x)$ down to a single trigonometric term."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Range of Periodic Composites",
+        "content": "When finding the range of a composite function like $gh(x) = \\cos 2x + 2$, always check the active domain of the input. Because $0 \\le x \\le \\pi$, the argument $2x$ covers the interval $[0, 2\\pi]$. This is a full period, meaning $\\cos 2x$ will achieve its absolute maximum of $1$ and absolute minimum of $-1$. Hence, the range is fully $[1, 3]$."
+    }
+},
+{
+    "id": "004720",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+        "Square Root Functions",
+        "Domain Restriction",
+        "Solving Composite Equations"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> A function $f$ is defined by $f(x) = \\sqrt{ x - 3 } + 2$ for $x \\ge 3$.\n<strong>(i)</strong> State the range of $f$.\n<strong>(ii)</strong> Find an expression for $f^{-1}(x)$, stating its domain.\n\n<strong>(b)</strong> The functions $g$ and $h$ are defined by:\n$$\\begin{aligned} g(x) &= 2x - 5 \\quad \\text{for } x \\in \\mathbb{R} \\cr h(x) &= \\sqrt{ 2x + 1 } \\quad \\text{for } x \\ge -0.5 \\end{aligned}$$\n<strong>(i)</strong> Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$. Indicate clearly the coordinates of any points of intersection with the axes and any end-points.\n<strong>(ii)</strong> Determine an expression for the composite function $hg(x)$, and find the domain of $hg$.\n<strong>(iii)</strong> Solve the equation $hg(x) = g(x)$.",
+    "steps": [
+        "<strong>(a)(i)</strong> For the domain $x \\ge 3$, the square root term $\\sqrt{ x - 3 }$ is always greater than or equal to $0$. Therefore, $f(x) = \\sqrt{ x - 3 } + 2 \\ge 2$. The range is:<br>$$f(x) \\ge 2$$",
+        "<strong>(a)(ii)</strong> To find $f^{-1}(x)$, we set $y = \\sqrt{ x - 3 } + 2$ and make $x$ the subject:<br>\\begin{aligned} y &= \\sqrt{ x - 3 } + 2 \\cr y - 2 &= \\sqrt{ x - 3 } \\cr (y - 2)^2 &= x - 3 \\cr x &= (y - 2)^2 + 3 \\end{aligned}<br>Swapping variables gives:<br>$$f^{-1}(x) = (x - 2)^2 + 3$$<br>The domain of $f^{-1}$ is the range of $f$, which is:<br>$$x \\ge 2$$",
+        "<strong>(b)(i)</strong> Key features for the sketches:<br>• $h(x) = \\sqrt{ 2x + 1 }$ starts at its end-point $(-0.5, 0)$ and crosses the $y$-axis at $(0, 1)$.<br>• $h^{-1}(x) = 0.5(x^2 - 1)$ for $x \\ge 0$ starts at its end-point $(0, -0.5)$ and crosses the $x$-axis at $(1, 0)$.<br>Both curves intersect each other precisely on the line $y = x$ at the point $(1+\\sqrt{ 2 }, 1+\\sqrt{ 2 })$.<br><br><img src='images/Pure/004720_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b)(ii)</strong> To find the composite function $hg(x)$, we substitute $g(x)$ into $h(x)$:<br>\\begin{aligned} hg(x) &= \\sqrt{ 2(2x - 5) + 1 } \\cr &= \\sqrt{ 4x - 9 } \\end{aligned}<br>For the square root to be defined, the term inside must be non-negative:<br>$$4x - 9 \\ge 0 \\implies x \\ge 2.25$$<br>Thus, the domain of $hg$ is:<br>$$x \\ge 2.25$$",
+        "<strong>(b)(iii)</strong> To solve $hg(x) = g(x)$, we set the two expressions equal:<br>$$\\sqrt{ 4x - 9 } = 2x - 5$$<br>Squaring both sides gives:<br>\\begin{aligned} 4x - 9 &= (2x - 5)^2 \\cr 4x - 9 &= 4x^2 - 20x + 25 \\cr 4x^2 - 24x + 34 &= 0 \\cr 2x^2 - 12x + 17 &= 0 \\end{aligned}<br>Applying the quadratic formula:<br>$$x = \\frac{ 12 \\pm \\sqrt{ (-12)^2 - 4(2)(17) } }{ 2(2) } = \\frac{ 12 \\pm \\sqrt{ 8 } }{ 4 } = 3 \\pm \\frac{ \\sqrt{ 2 } }{ 2 }$$<br>Since $g(x) = 2x - 5$ must be non-negative for the square root equality to hold (as $\\sqrt{ 4x - 9 } \\ge 0$), we require $2x - 5 \\ge 0 \\implies x \\ge 2.5$.<br>• For $3 + \\frac{ \\sqrt{ 2 } }{ 2 } \\approx 3.71 \\ge 2.5$ (Valid)<br>• For $3 - \\frac{ \\sqrt{ 2 } }{ 2 } \\approx 2.29 < 2.5$ (Invalid, yields a negative value for the RHS).<br>Thus, the only valid solution is:<br>$$x = 3 + \\frac{ \\sqrt{ 2 } }{ 2 }$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$x = 3 - \\frac{ \\sqrt{ 2 } }{ 2 }$$ and $$x = 3 + \\frac{ \\sqrt{ 2 } }{ 2 }$$",
+            "feedback": "This is incorrect. While both are algebraic roots of the quadratic equation $2x^2 - 12x + 17 = 0$, you must verify them in the original non-linear equation. Since a principal square root is non-negative, the right-hand side $2x-5$ must be $\\ge 0 \\implies x \\ge 2.5$. The root $3 - 0.5\\sqrt{ 2 } \\approx 2.29$ fails this restriction and is extraneous."
+        },
+        {
+            "ans": "$$x = \\frac{ 12 \\pm \\sqrt{ 10 } }{ 4 }$$",
+            "feedback": "This is incorrect. When evaluating the discriminant $\\Delta = b^2 - 4ac$ for the quadratic $2x^2 - 12x + 17 = 0$, we have $(-12)^2 - 4(2)(17) = 144 - 136 = 8$. Simplifying $\\sqrt{ 8 }$ yields $2\\sqrt{ 2 }$, which leads to $3 \\pm 0.5\\sqrt{ 2 }$. It seems an arithmetic slip occurred in the discriminant calculation."
+        },
+        {
+            "ans": "$$x = 3 - \\frac{ \\sqrt{ 2 } }{ 2 }$$",
+            "feedback": "This is incorrect. This is the extraneous root which must be rejected because substituting it back into the original equation results in a negative value on the right-hand side, which is impossible for a real principal square root."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Extraneous Roots in Radical Equations",
+        "content": "Whenever you solve an equation by squaring both sides (such as $\\sqrt{ f(x) } = g(x)$), you are introducing the possibility of **extraneous roots**. Squaring eliminates the sign of the expression, meaning that solutions to $-\\sqrt{ f(x) } = g(x)$ will also appear. Always substitute your algebraic answers back into the original un-squared equation to verify their validity."
     }
 }
 ];
