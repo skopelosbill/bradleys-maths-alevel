@@ -247,7 +247,7 @@ window.ALEVEL_QUESTIONS = [
         "Parametric Curve Tangents"
     ],
     "img": false,
-    "question": "A curve $C$ is defined by the parametric equations: <br> $x = t^2 + 2t, \quad y = t^3 - 3t$ <br><br><strong>(a)</strong> Find $\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x }$ in terms of $t$, simplifying your expression as far as possible. <br><br><strong>(b)</strong> Find the equation of the tangent to $C$ at the point where $t = 2$. Give your answer in the form $ax + by + c = 0$, where $a$, $b$, and $c$ are integers.",
+    "question": "A curve $C$ is defined by the parametric equations: <br> $x = t^2 + 2t, \\quad y = t^3 - 3t$ <br><br><strong>(a)</strong> Find $\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x }$ in terms of $t$, simplifying your expression as far as possible. <br><br><strong>(b)</strong> Find the equation of the tangent to $C$ at the point where $t = 2$. Give your answer in the form $ax + by + c = 0$, where $a$, $b$, and $c$ are integers.",
     "steps": [
         "To find the gradient function for part (a), we first find the derivatives of $x$ and $y$ with respect to the parameter $t$: <br> \\begin{aligned} \\dfrac{ \\mathrm{d}x }{ \\mathrm{d}t } &= 2t + 2 \\cr \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}t } &= 3t^2 - 3 \\end{aligned}",
         "We divide our derivatives and factorise to simplify the expression for $\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x }$: <br> \\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= \\dfrac{ 3t^2 - 3 }{ 2t + 2 } \\cr &= \\dfrac{ 3(t - 1)(t + 1) }{ 2(t + 1) } \\cr &= \\dfrac{ 3(t - 1) }{ 2 } \\end{aligned}",
@@ -286,7 +286,7 @@ window.ALEVEL_QUESTIONS = [
         "Parametric Normals"
     ],
     "img": false,
-    "question": "The curve $C$ has the parametric equations: <br> $x = 3\\sec\\theta, \quad y = 2\\tan\\theta \quad \\text{for} \quad 0 \\le \\theta < \\dfrac{ \\pi }{ 2 }$ <br><br><strong>(a)</strong> Find the Cartesian equation of $C$. <br><br><strong>(b)</strong> Find the equation of the normal to $C$ at the point where $\\theta = \\dfrac{ \\pi }{ 6 }$. Give your answer in the form $ax + by + c\\sqrt{ 3 } = 0$, where $a$, $b$, and $c$ are integers.",
+    "question": "The curve $C$ has the parametric equations: <br> $x = 3\\sec\\theta, \\quad y = 2\\tan\\theta \\quad \\text{for} \\quad 0 \\le \\theta < \\dfrac{ \\pi }{ 2 }$ <br><br><strong>(a)</strong> Find the Cartesian equation of $C$. <br><br><strong>(b)</strong> Find the equation of the normal to $C$ at the point where $\\theta = \\dfrac{ \\pi }{ 6 }$. Give your answer in the form $ax + by + c\\sqrt{ 3 } = 0$, where $a$, $b$, and $c$ are integers.",
     "steps": [
         "To find the Cartesian equation for part (a), we isolate the trigonometric terms: <br> \\begin{aligned} \\sec\\theta &= \\dfrac{ x }{ 3 } \\cr \\tan\\theta &= \\dfrac{ y }{ 2 } \\end{aligned}",
         "We substitute these expressions into the fundamental trigonometric identity $\\sec^2\\theta - \\tan^2\\theta = 1$: <br> \\begin{aligned} \\dfrac{ x^2 }{ 9 } - \\dfrac{ y^2 }{ 4 } &= 1 \\end{aligned}",
@@ -327,7 +327,7 @@ window.ALEVEL_QUESTIONS = [
         "Tangents Parallel to Axes"
     ],
     "img": false,
-    "question": "A curve $C$ is defined parametrically by: <br> $x = t^3 - 3t, \quad y = t^2 + 4t$ <br><br><strong>(a)</strong> Find the coordinates of any points on $C$ where the tangent is parallel to the $y$-axis (vertical tangents). <br><br><strong>(b)</strong> Find the coordinates of any points on $C$ where the tangent is parallel to the $x$-axis (horizontal tangents).",
+    "question": "A curve $C$ is defined parametrically by: <br> $x = t^3 - 3t, \\quad y = t^2 + 4t$ <br><br><strong>(a)</strong> Find the coordinates of any points on $C$ where the tangent is parallel to the $y$-axis (vertical tangents). <br><br><strong>(b)</strong> Find the coordinates of any points on $C$ where the tangent is parallel to the $x$-axis (horizontal tangents).",
     "steps": [
         "To analyze the behavior of the tangents, we find the derivatives of $x$ and $y$ with respect to the parameter $t$: <br> \\begin{aligned} \\dfrac{ \\mathrm{d}x }{ \\mathrm{d}t } &= 3t^2 - 3 \\cr \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}t } &= 2t + 4 \\end{aligned}",
         "To solve part (a), a tangent is parallel to the $y$-axis (vertical) when the horizontal rate of change is zero, meaning $\\dfrac{ \\mathrm{d}x }{ \\mathrm{d}t } = 0$ (and $\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}t } \\neq 0$): <br> \\begin{aligned} 3t^2 - 3 &= 0 \\cr 3(t - 1)(t + 1) &= 0 \\cr t &= \\pm 1 \\end{aligned}",
@@ -366,7 +366,7 @@ window.ALEVEL_QUESTIONS = [
         "Area Under Curves"
     ],
     "img": false,
-    "question": "A curve $C$ is defined parametrically by: <br> $x = t^2, \quad y = 3t - t^2 \quad \\text{for} \quad 0 \\le t \\le 3$ <br><br>Find the exact area of the finite region bounded by the curve $C$ and the $x$-axis.",
+    "question": "A curve $C$ is defined parametrically by: <br> $x = t^2, \\quad y = 3t - t^2 \\quad \\text{for} \\quad 0 \\le t \\le 3$ <br><br>Find the exact area of the finite region bounded by the curve $C$ and the $x$-axis.",
     "steps": [
         "We first find the values of our parameter $t$ where the curve meets the $x$-axis (since the boundary is $y = 0$): <br> \\begin{aligned} y &= 0 \\cr 3t - t^2 &= 0 \\cr t(3 - t) &= 0 \\cr t = 0 \\quad &\\text{or} \\quad t = 3 \\end{aligned}",
         "The formula for the area of a region bounded by a parametric curve and the $x$-axis is given by: <br> \\begin{aligned} \\text{Area} &= \\int_{ x(0) }^{ x(3) } y \\mathrm{d}x \\cr &= \\int_{ 0 }^{ 3 } y \\dfrac{ \\mathrm{d}x }{ \\mathrm{d}t } \\mathrm{d}t \\end{aligned}",
