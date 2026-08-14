@@ -132,7 +132,7 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
         "We are given the parameters $a = 5$ and $r = 1.2$. We set up our inequality for the sum $S_n$ to exceed $1000$ using the sum formula: <br> \\begin{aligned} S_n &> 1000 \\cr \\dfrac{ a(r^n - 1) }{ r - 1 } &> 1000 \\end{aligned}",
         "We substitute our values into this inequality and simplify it algebraically: <br> \\begin{aligned} \\dfrac{ 5(1.2^n - 1) }{ 1.2 - 1 } &> 1000 \\cr \\dfrac{ 5(1.2^n - 1) }{ 0.2 } &> 1000 \\cr 25(1.2^n - 1) &> 1000 \\cr 1.2^n - 1 &> 40 \\cr 1.2^n &> 41 \\end{aligned}",
-        "To isolate $n$, we take natural logarithms on both sides of the inequality: <br> \\begin{aligned} \\ln(1.2^n) &&> \\ln(41) \\cr n\\ln(1.2) &> \\ln(41) \\cr n &> \\dfrac{ \\ln(41) }{ \\ln(1.2) } \\end{aligned} <br> Since $r = 1.2 > 1$, we have $\\ln(1.2) > 0$. Therefore, dividing by $\\ln(1.2)$ does not reverse the direction of our inequality sign.",
+        "To isolate $n$, we take natural logarithms on both sides of the inequality: <br> \\begin{aligned} \\ln(1.2^n) &> \\ln(41) \\cr n\\ln(1.2) &> \\ln(41) \\cr n &> \\dfrac{ \\ln(41) }{ \\ln(1.2) } \\end{aligned} <br> Since $r = 1.2 > 1$, we have $\\ln(1.2) > 0$. Therefore, dividing by $\\ln(1.2)$ does not reverse the direction of our inequality sign.",
         "We evaluate the logarithmic values numerically: <br> \\begin{aligned} \\dfrac{ \\ln(41) }{ \\ln(1.2) } &\\approx \\dfrac{ 3.71357 }{ 0.18232 } \\cr &\\approx 20.368 \\end{aligned} <br> Since $n$ must be an integer, the minimum number of terms required is $21$."
     ],
     "pi_options": [
