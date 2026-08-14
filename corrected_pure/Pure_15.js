@@ -1130,7 +1130,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$1 - \\frac{ 2 }{ \\mathrm{e} }$$ and $$\\frac{ 1 }{ 3 }$$",
-            "feedback": "This is incorrect. When evaluating the definite integral in part (b), the limits of integration are $4$ and $12$. The evaluation is $-\\frac{1}{12} - (-\\frac{1}{4}) = \\frac{1}{4} - \\frac{1}{12} = \frac{2}{12}$, which simplifies to $\\frac{1}{6}$, not $\\frac{1}{3}$."
+            "feedback": "This is incorrect. When evaluating the definite integral in part (b), the limits of integration are $4$ and $12$. The evaluation is $-\\frac{1}{12} - (-\\frac{1}{4}) = \\frac{1}{4} - \\frac{1}{12} = \\frac{2}{12}$, which simplifies to $\\frac{1}{6}$, not $\\frac{1}{3}$."
         },
         {
             "ans": "$$-\\frac{ 2 }{ \\mathrm{e} }$$ and $$\\ln 3$$",
@@ -1150,7 +1150,7 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Integration",
     "topic": "Definite Integration",
     "subtopic": [
-        "Looping Integration by Parts",
+        "Integration by Parts(Looping/Recurring)",
         "Trigonometric Substitution"
     ],
     "img": false,
@@ -1169,7 +1169,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$\\frac{ 1 }{ 2 }(\\mathrm{e}^{ \\frac{ \\pi }{ 2 } } - 1)$$ and $$\\frac{ 8 }{ 15 }$$",
-            "feedback": "This is incorrect. While the first parts result is correct, you appear to have made an arithmetic slip in evaluating $\\frac{1}{3} - \frac{1}{5}$ for the substitution integral. The common denominator is $15$, yielding $\\frac{5}{15} - \\frac{3}{15} = \\frac{2}{15}$, not $\\frac{8}{15}$."
+            "feedback": "This is incorrect. While the first parts result is correct, you appear to have made an arithmetic slip in evaluating $\\frac{1}{3} - \\frac{1}{5}$ for the substitution integral. The common denominator is $15$, yielding $\\frac{5}{15} - \\frac{3}{15} = \\frac{2}{15}$, not $\\frac{8}{15}$."
         },
         {
             "ans": "$$\\mathrm{e}^{ \\frac{ \\pi }{ 2 } } - 1$$ and $$\\frac{ 1 }{ 15 }$$",
@@ -1179,7 +1179,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Looping Integration by Parts",
-        "content": "When integrating products of exponential and trigonometric functions (like $\\mathrm{e}^x \\cos x$), the process is 'looping'—meaning you will never reach a zero term by differentiating. Instead, you must apply integration by parts twice to reproduce the original integral $I$, group the $I$ terms together on one side of the equation (yielding $2I$), and then divide by $2$ as your final step."
+        "content": "When integrating products of exponential and trigonometric functions (like $\\mathrm{e}^x \\cos x$), the process is 'looping'or 'recurring' — meaning you will never reach a zero term by differentiating. Instead, you must apply integration by parts twice to reproduce the original integral $I$, group the $I$ terms together on one side of the equation (yielding $2I$), and then divide by $2$ as your final step."
     }
 }
 ];
