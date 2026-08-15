@@ -1371,5 +1371,199 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Trigonometric Integration Chain Rule",
         "content": "When integrating trig functions of the form $\\cos(kx)$ or $\\sin(kx)$, always remember to divide by the derivative of the angle, which is $k$. That is, $\\int \\cos(2x) \\,\\mathrm{d}x = \\dfrac{1}{2}\\sin(2x) + C$. Forgetting this is one of the most common calculus slips at A level."
     }
+},
+{
+    "id": "004736",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Implicit Differentiation",
+        "Equation of the Normal"
+    ],
+    "img": false,
+    "question": "A curve is defined implicitly by:\n$$2x^2y + y^2 - 3x = 27$$\n\nFind the equation of the normal to the curve at the point $(2, 3)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "steps": [
+        "Differentiate the implicit equation with respect to $x$, applying the product rule to the term $2x^2y$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 2x^2y + y^2 - 3x \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(27) \\cr \\left( 4xy + 2x^2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + 2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\end{aligned}",
+        "Substitute the coordinates of the point $(2, 3)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} 4(2)(3) + 2\\left( 2^2 \\right)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2(3)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr 24 + 8\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 6\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr 14\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 21 &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{3}{2} \\end{aligned}",
+        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\n\\begin{aligned} m_n &= -\\dfrac{1}{-\\frac{3}{2}} \\cr m_n &= \\dfrac{2}{3} \\end{aligned}",
+        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(2, 3)$ and gradient $m_n = \\dfrac{2}{3}$ to find the equation of the normal:\n\\begin{aligned} y - 3 &= \\dfrac{2}{3}(x - 2) \\cr 3(y - 3) &= 2(x - 2) \\cr 3y - 9 &= 2x - 4 \\cr 2x - 3y + 5 &= 0 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$2x - 3y - 5 = 0$$",
+            "feedback": "This error is caused by a sign mistake when expanding the brackets on the right-hand side, leading to $2x - 4$ being incorrectly rearranged with a sign error."
+        },
+        {
+            "ans": "$$3x + 2y - 12 = 0$$",
+            "feedback": "This error arises if you use the tangent gradient $m_t = -\\dfrac{3}{2}$ instead of the normal gradient $m_n = \\dfrac{2}{3}$ when formulating the straight-line equation."
+        },
+        {
+            "ans": "$$2x + 3y - 13 = 0$$",
+            "feedback": "This mistake occurs if the normal gradient is incorrectly calculated as $-\\dfrac{2}{3}$ instead of $\\dfrac{2}{3}$ due to a sign error when finding the negative reciprocal of the tangent gradient."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Product Rule in Implicit Differentiation",
+        "content": "A very common pitfall in implicit differentiation is failing to apply the product rule to terms like $2x^2y$. Remember that both $x$ and $y$ are variables, so $\\dfrac{\\mathrm{d}}{\\mathrm{d}x}(2x^2y) = 4xy + 2x^2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$. Write down the terms clearly before differentiating."
+    }
+},
+{
+    "id": "004737",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Implicit Differentiation",
+        "Equation of the Normal",
+        "Product Rule"
+    ],
+    "img": false,
+    "question": "A curve is defined implicitly by:\n$$x^2y^2 - 2x + 3y = 3$$\n\nFind the equation of the normal to the curve at the point $(2, 1)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "steps": [
+        "Differentiate the implicit equation with respect to $x$, applying the product rule to the term $x^2y^2$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^2y^2 - 2x + 3y \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(3) \\cr \\left( 2xy^2 + 2x^2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) - 2 + 3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
+        "Substitute the coordinates of the point $(2, 1)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} 2(2)\\left( 1^2 \\right) + 2\\left( 2^2 \\right)(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 2 + 3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 4 + 8\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 2 + 3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 11\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2 &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{2}{11} \\end{aligned}",
+        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\n\\begin{aligned} m_n &= -\\dfrac{1}{-\\frac{2}{11}} \\cr m_n &= \\dfrac{11}{2} \\end{aligned}",
+        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(2, 1)$ and gradient $m_n = \\dfrac{11}{2}$ to find the equation of the normal:\n\\begin{aligned} y - 1 &= \\dfrac{11}{2}(x - 2) \\cr 2(y - 1) &= 11(x - 2) \\cr 2y - 2 &= 11x - 22 \\cr 11x - 2y - 20 &= 0 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$11x - 2y - 24 = 0$$",
+            "feedback": "This error is caused by a sign slip when expanding the brackets on the right-hand side, writing $-24$ instead of $-22$ before moving all terms to one side."
+        },
+        {
+            "ans": "$$2x + 11y - 15 = 0$$",
+            "feedback": "This error arises if you use the tangent gradient $m_t = -\\dfrac{2}{11}$ instead of the normal gradient $m_n = \\dfrac{11}{2}$ when constructing the linear equation."
+        },
+        {
+            "ans": "$$11x + 2y - 24 = 0$$",
+            "feedback": "This mistake occurs if the normal gradient is incorrectly calculated as $-\\dfrac{11}{2}$ due to a sign error when computing the negative reciprocal."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Substituting Before Isolating dy/dx",
+        "content": "When performing implicit differentiation to find gradients at a specific point, it is almost always easier to substitute the coordinates $(x, y)$ immediately after differentiating, rather than algebraically rearranging the equation to make $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ the subject. This saves time and avoids algebraic mistakes."
+    }
+},
+{
+    "id": "004738",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Implicit Differentiation",
+        "Equation of the Normal",
+        "Exponential Functions"
+    ],
+    "img": false,
+    "question": "A curve is defined implicitly by:\n$$y^2 e^{x - 1} + 3x - 2y = 3$$\n\nFind the equation of the normal to the curve at the point $(1, 2)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "steps": [
+        "Differentiate the implicit equation with respect to $x$, applying the product rule and chain rule to the term $y^2 e^{x - 1}$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( y^2 e^{x - 1} + 3x - 2y \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(3) \\cr \\left( y^2 e^{x - 1} + 2y e^{x - 1}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + 3 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
+        "Substitute the coordinates of the point $(1, 2)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} \\left( 2^2 \\right) e^{ 1 - 1 } + 2(2) e^{ 1 - 1 }\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 3 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 4(1) + 4(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 3 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 7 + 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{7}{2} \\end{aligned}",
+        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\n\\begin{aligned} m_n &= -\\dfrac{1}{-\\frac{7}{2}} \\cr m_n &= \\dfrac{2}{7} \\end{aligned}",
+        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(1, 2)$ and gradient $m_n = \\dfrac{2}{7}$ to find the equation of the normal:\n\\begin{aligned} y - 2 &= \\dfrac{2}{7}(x - 1) \\cr 7(y - 2) &= 2(x - 1) \\cr 7y - 14 &= 2x - 2 \\cr 2x - 7y + 12 &= 0 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$2x - 7y + 16 = 0$$",
+            "feedback": "This error is caused by expanding the brackets incorrectly as $2x - 1$ instead of $2x - 2$ on the right-hand side, or a similar transposition slip."
+        },
+        {
+            "ans": "$$7x + 2y - 11 = 0$$",
+            "feedback": "This error arises if you use the tangent gradient $m_t = -\\dfrac{7}{2}$ instead of the normal gradient $m_n = \\dfrac{2}{7}$ when constructing the straight line."
+        },
+        {
+            "ans": "$$2x + 7y - 16 = 0$$",
+            "feedback": "This mistake occurs if the normal gradient is incorrectly calculated as $-\\dfrac{2}{7}$ instead of $\\dfrac{2}{7}$ due to a sign error."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Exponential Chain Rule with Implicit Terms",
+        "content": "When differentiating a term like $y^2 e^{x - 1}$, do not forget that $y$ is a function of $x$. Differentiating $y^2$ with respect to $x$ yields $2y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$, while $e^{x-1}$ differentiates to $e^{x-1}$. Keep these separate as factors $u$ and $v$ to successfully execute the product rule."
+    }
+},
+{
+    "id": "004739",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Implicit Differentiation",
+        "Equation of the Normal",
+        "Logarithmic Functions"
+    ],
+    "img": false,
+    "question": "A curve is defined implicitly by:\n$$x^2 \\ln y + 4xy + y^2 = 5$$\n\nFind the equation of the normal to the curve at the point $(1, 1)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "steps": [
+        "Differentiate the implicit equation with respect to $x$, applying the product rule to the terms $x^2 \\ln y$ and $4xy$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^2 \\ln y + 4xy + y^2 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(5) \\cr \\left( 2x\\ln y + x^2\\dfrac{1}{y}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + \\left( 4y + 4x\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + 2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
+        "Substitute the coordinates of the point $(1, 1)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} 2(1)\\ln(1) + 1^2\\left( \\dfrac{1}{1} \\right)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 4(1) + 4(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 0 + \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 4 + 4\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 4 + 7\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{4}{7} \\end{aligned}",
+        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\n\\begin{aligned} m_n &= -\\dfrac{1}{-\\frac{4}{7}} \\cr m_n &= \\dfrac{7}{4} \\end{aligned}",
+        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(1, 1)$ and gradient $m_n = \\dfrac{7}{4}$ to find the equation of the normal:\n\\begin{aligned} y - 1 &= \\dfrac{7}{4}(x - 1) \\cr 4(y - 1) &= 7(x - 1) \\cr 4y - 4 &= 7x - 7 \\cr 7x - 4y - 3 &= 0 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$7x - 4y + 3 = 0$$",
+            "feedback": "This error is caused by a sign slip when expanding the brackets on the right-hand side, leading to an incorrect constant in the final linear equation."
+        },
+        {
+            "ans": "$$4x + 7y - 11 = 0$$",
+            "feedback": "This error arises if you use the tangent gradient $m_t = -\\dfrac{4}{7}$ instead of the normal gradient $m_n = \\dfrac{7}{4}$ when constructing the linear equation."
+        },
+        {
+            "ans": "$$7x + 4y - 11 = 0$$",
+            "feedback": "This mistake occurs if the normal gradient is incorrectly calculated as $-\\dfrac{7}{4}$ instead of $\\dfrac{7}{4}$ due to a sign error."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Logarithmic Derivative Checklist",
+        "content": "When differentiating a logarithmic term with an implicit variable, such as $\\ln y$, the chain rule applies: $\\dfrac{\\mathrm{d}}{\\mathrm{d}x}(\\ln y) = \\dfrac{1}{y} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$. If there is a product like $x^2 \\ln y$, do not skip terms in the expansion: $(2x)\\ln y + x^2\\left(\\dfrac{1}{y} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\right)$."
+    }
+},
+{
+    "id": "004740",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Implicit Differentiation",
+        "Equation of the Normal",
+        "Rational Expressions"
+    ],
+    "img": false,
+    "question": "A curve is defined implicitly by:\n$$\\dfrac{x}{y} + y^2 - 3x = -1$$\n\nFind the equation of the normal to the curve at the point $(2, 2)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "steps": [
+        "Differentiate the implicit equation with respect to $x$, applying the quotient rule (or product rule with negative exponents) to the term $\\dfrac{x}{y}$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( \\dfrac{x}{y} + y^2 - 3x \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(-1) \\cr \\dfrac{y - x\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}}{y^2} + 2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\end{aligned}",
+        "Substitute the coordinates of the point $(2, 2)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} \\dfrac{2 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}}{2^2} + 2(2)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr \\dfrac{2 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}}{4} + 4\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr \\dfrac{1}{2} - \\dfrac{1}{2}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 4\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr \\dfrac{7}{2}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - \\dfrac{5}{2} &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{5}{7} \\end{aligned}",
+        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\n\\begin{aligned} m_n &= -\\dfrac{1}{\\frac{5}{7}} \\cr m_n &= -\\dfrac{7}{5} \\end{aligned}",
+        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(2, 2)$ and gradient $m_n = -\\dfrac{7}{5}$ to find the equation of the normal:\n\\begin{aligned} y - 2 &= -\\dfrac{7}{5}(x - 2) \\cr 5(y - 2) &= -7(x - 2) \\cr 5y - 10 &= -7x + 14 \\cr 7x + 5y - 24 &= 0 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$7x + 5y + 4 = 0$$",
+            "feedback": "This error is caused by a sign mistake when expanding $-7(x - 2)$ to $-7x - 14$ instead of $-7x + 14$ on the right-hand side."
+        },
+        {
+            "ans": "$$5x - 7y + 4 = 0$$",
+            "feedback": "This error arises if you use the tangent gradient $m_t = \\dfrac{5}{7}$ instead of the normal gradient $m_n = -\\dfrac{7}{5}$ when constructing the linear equation."
+        },
+        {
+            "ans": "$$7x - 5y - 4 = 0$$",
+            "feedback": "This mistake occurs if the normal gradient is incorrectly calculated as $\\dfrac{7}{5}$ instead of $-\\dfrac{7}{5}$ due to a sign error when finding the negative reciprocal."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Quotient Rule vs. Product Rule in Calculus",
+        "content": "When differentiating a term like $\\dfrac{x}{y}$, using the product rule on $x y^{-1}$ can sometimes be less error-prone than the quotient rule. For $x y^{-1}$, the derivative is $y^{-1} - x y^{-2} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$. Both methods yield the exact same result, so choose the one you feel more confident with!"
+    }
 }
 ];
