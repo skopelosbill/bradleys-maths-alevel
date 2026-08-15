@@ -1181,5 +1181,195 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Looping Integration by Parts",
         "content": "When integrating products of exponential and trigonometric functions (like $\\mathrm{e}^x \\cos x$), the process is 'looping'or 'recurring' — meaning you will never reach a zero term by differentiating. Instead, you must apply integration by parts twice to reproduce the original integral $I$, group the $I$ terms together on one side of the equation (yielding $2I$), and then divide by $2$ as your final step."
     }
+},
+{
+    "id": "004731",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Linear Equations"
+    ],
+    "img": false,
+    "question": "The variable $y$ satisfies the differential equation:\n$$3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 4 - 3y$$\n\nGiven that $y = 1$ when $x = 0$, find an expression for $y$ in terms of $x$.",
+    "steps": [
+        "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\n\\begin{aligned} \\dfrac{3}{4 - 3y} \\,\\mathrm{d}y = 1 \\,\\mathrm{d}x \\end{aligned}",
+        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int \\dfrac{3}{4 - 3y} \\,\\mathrm{d}y &= \\int 1 \\,\\mathrm{d}x \\cr -\\ln|4 - 3y| &= x + C \\end{aligned}",
+        "Apply the initial condition that $y = 1$ when $x = 0$ to find the value of the constant $C$:\n\\begin{aligned} -\\ln|4 - 3(1)| &= 0 + C \\cr -\\ln|1| &= C \\cr C &= 0 \\end{aligned}",
+        "Substitute $C = 0$ back into the equation and rearrange to express $y$ explicitly in terms of $x$:\n\\begin{aligned} -\\ln|4 - 3y| &= x \\cr \\ln|4 - 3y| &= -x \\cr 4 - 3y &= e^{ -x } \\cr 3y &= 4 - e^{ -x } \\cr y &= \\dfrac{1}{3}\\left( 4 - e^{ -x } \\right) \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$y = \\dfrac{1}{3}\\left( 4 - e^{ -3x } \\right)$$",
+            "feedback": "This error arises from failing to divide the coefficient of $y$ correctly when integrating the left-hand side, leading to a factor of $3$ remaining in the exponent of the exponential term."
+        },
+        {
+            "ans": "$$y = \\dfrac{1}{3}\\left( 4 + e^{ -x } \\right)$$",
+            "feedback": "This occurs due to a sign error when removing the logarithm. Removing the logarithm with a negative sign on the left-hand side incorrectly produces $+e^{ -x }$ instead of $-e^{ -x }$ on the right-hand side when isolating $y$."
+        },
+        {
+            "ans": "$$y = 4 - 3e^{ -x }$$",
+            "feedback": "This mistake occurs if the constant multiplier $3$ on the left-hand side of the differential equation is completely ignored during integration and algebraic rearrangement."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: The Natural Log Derivative Trap",
+        "content": "When integrating an expression of the form $\\int \\dfrac{a}{b + cy} \\,\\mathrm{d}y$, always remember to divide by the coefficient $c$ of the variable $y$. In this case, $\\int \\dfrac{3}{4 - 3y} \\,\\mathrm{d}y = -\\ln|4 - 3y| + C$. A common slip is forgetting the negative sign arising from the $-3y$ term."
+    }
+},
+{
+    "id": "004732",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Exponential Integration"
+    ],
+    "img": false,
+    "question": "The variable $y$ satisfies the differential equation:\n$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = y^2 e^{2x}$$\n\nGiven that $y = 1$ when $x = 0$, find an expression for $y$ in terms of $x$.",
+    "steps": [
+        "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\n\\begin{aligned} y^{-2} \\,\\mathrm{d}y = e^{2x} \\,\\mathrm{d}x \\end{aligned}",
+        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int y^{-2} \\,\\mathrm{d}y &= \\int e^{2x} \\,\\mathrm{d}x \\cr -\\dfrac{1}{y} &= \\dfrac{1}{2}e^{2x} + C \\end{aligned}",
+        "Apply the initial condition that $y = 1$ when $x = 0$ to find the value of the constant $C$:\n\\begin{aligned} -\\dfrac{1}{1} &= \\dfrac{1}{2}e^{0} + C \\cr -1 &= \\dfrac{1}{2} + C \\cr C &= -\\dfrac{3}{2} \\end{aligned}",
+        "Substitute $C = -\\dfrac{3}{2}$ back into the equation and rearrange to express $y$ explicitly in terms of $x$:\n\\begin{aligned} -\\dfrac{1}{y} &= \\dfrac{1}{2}e^{2x} - \\dfrac{3}{2} \\cr -\\dfrac{1}{y} &= \\dfrac{e^{2x} - 3}{2} \\cr \\dfrac{1}{y} &= \\dfrac{3 - e^{2x}}{2} \\cr y &= \\dfrac{2}{3 - e^{2x}} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$y = \\dfrac{2}{1 - 3e^{2x}}$$",
+            "feedback": "This error is caused by a mistake in the algebraic rearrangement after substituting the initial conditions, incorrectly pairing the constant of integration with the exponential's coefficient."
+        },
+        {
+            "ans": "$$y = \\dfrac{2}{e^{2x} + 1}$$",
+            "feedback": "This mistake occurs if the constant of integration $C$ is incorrectly calculated as $-\\dfrac{1}{2}$ instead of $-\\dfrac{3}{2}$ when evaluating the initial boundary conditions."
+        },
+        {
+            "ans": "$$y = -\\dfrac{2}{e^{2x} + 3}$$",
+            "feedback": "This error arises from failing to distribute the negative sign on the left-hand side across both terms on the right-hand side when reciprocating to solve for $y$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Fractions and Reciprocals",
+        "content": "When you have an equation like $-\\dfrac{1}{y} = \\dfrac{e^{2x} - 3}{2}$, combine the right-hand side into a single fraction before reciprocating. This prevents algebraic slips and makes finding $y$ straightforward: $\\dfrac{1}{y} = \\dfrac{3 - e^{2x}}{2} \\implies y = \\dfrac{2}{3 - e^{2x}}$."
+    }
+},
+{
+    "id": "004733",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Logarithmic Integration"
+    ],
+    "img": false,
+    "question": "The variable $y$ satisfies the differential equation:\n$$x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 2y - 4, \\quad x > 0$$\n\nGiven that $y = 3$ when $x = 1$, find an expression for $y$ in terms of $x$.",
+    "steps": [
+        "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\n\\begin{aligned} \\dfrac{1}{2y - 4} \\,\\mathrm{d}y = \\dfrac{1}{x} \\,\\mathrm{d}x \\end{aligned}",
+        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int \\dfrac{1}{2y - 4} \\,\\mathrm{d}y &= \\int \\dfrac{1}{x} \\,\\mathrm{d}x \\cr \\dfrac{1}{2}\\ln|2y - 4| &= \\ln x + C \\end{aligned}",
+        "Apply the initial condition that $y = 3$ when $x = 1$ to find the value of the constant $C$:\n\\begin{aligned} \\dfrac{1}{2}\\ln|2(3) - 4| &= \\ln(1) + C \\cr \\dfrac{1}{2}\\ln(2) &= 0 + C \\cr C &= \\dfrac{1}{2}\\ln 2 \\end{aligned}",
+        "Substitute $C = \\dfrac{1}{2}\\ln 2$ back into the equation, multiply by $2$, and use logarithm laws to solve for $y$ in terms of $x$:\n\\begin{aligned} \\dfrac{1}{2}\\ln(2y - 4) &= \\ln x + \\dfrac{1}{2}\\ln 2 \\cr \\ln(2y - 4) &= 2\\ln x + \\ln 2 \\cr \\ln(2y - 4) &= \\ln\\left( x^2 \\right) + \\ln 2 \\cr \\ln(2y - 4) &= \\ln\\left( 2x^2 \\right) \\cr 2y - 4 &= 2x^2 \\cr 2y &= 2x^2 + 4 \\cr y &= x^2 + 2 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$y = 2x^2 + 1$$",
+            "feedback": "This error occurs if you forget to divide the final constant by $2$ when dividing the entire equation $2y = 2x^2 + 4$ by $2$, or if you made a slip while evaluating the constant of integration."
+        },
+        {
+            "ans": "$$y = x + 2$$",
+            "feedback": "This error is caused by a mistake in applying logarithm laws, where $2\\ln x$ is incorrectly simplified to $\\ln(2x)$ instead of $\\ln(x^2)$ before exponentiating."
+        },
+        {
+            "ans": "$$y = x^2 + 1$$",
+            "feedback": "This arises from a calculation error when applying the initial conditions, leading to $C = 0$ or an incorrect constant of integration that fails to produce the $+2$ constant term."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Master Logarithm Rules First",
+        "content": "When you have $\\ln(2y - 4) = 2\\ln x + \\ln 2$, do not exponentiate term-by-term! You must first combine the right-hand side into a single logarithm using the power and product rules: $2\\ln x + \\ln 2 = \\ln(x^2) + \\ln 2 = \\ln(2x^2)$. Then, you can safely equate the arguments: $2y - 4 = 2x^2$."
+    }
+},
+{
+    "id": "004734",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Temperature Modelling"
+    ],
+    "img": false,
+    "question": "An object is cooling in a room of constant temperature. The temperature of the object, $\\theta^\\circ\\text{C}$, $t$ minutes after cooling begins, is modelled by the differential equation:\n$$\\dfrac{\\mathrm{d}\\theta}{\\mathrm{d}t} = -0.1(\\theta - 20)$$\n\nGiven that the initial temperature of the object is $80^\\circ\\text{C}$ (so $\\theta = 80$ at $t = 0$), solve the differential equation to find $\\theta$ in terms of $t$.",
+    "steps": [
+        "Separate the variables to group the terms in $\\theta$ on the left-hand side and the terms in $t$ on the right-hand side:\n\\begin{aligned} \\dfrac{1}{\\theta - 20} \\,\\mathrm{d}\\theta = -0.1 \\,\\mathrm{d}t \\end{aligned}",
+        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int \\dfrac{1}{\\theta - 20} \\,\\mathrm{d}\\theta &= \\int -0.1 \\,\\mathrm{d}t \\cr \\ln|\\theta - 20| &= -0.1t + C \\end{aligned}",
+        "Apply the initial condition that $\\theta = 80$ when $t = 0$ to find the value of the constant $C$:\n\\begin{aligned} \\ln|80 - 20| &= -0.1(0) + C \\cr C &= \\ln 60 \\end{aligned}",
+        "Substitute $C = \\ln 60$ back into the equation, exponentiate, and solve for $\\theta$ in terms of $t$:\n\\begin{aligned} \\ln(\\theta - 20) &= -0.1t + \\ln 60 \\cr \\ln\\left( \\dfrac{\\theta - 20}{60} \\right) &= -0.1t \\cr \\dfrac{\\theta - 20}{60} &= e^{ -0.1t } \\cr \\theta - 20 &= 60e^{ -0.1t } \\cr \\theta &= 20 + 60e^{ -0.1t } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\theta = 20 + 80e^{ -0.1t }$$",
+            "feedback": "This error occurs if the initial temperature of $80^\\circ\\text{C}$ is directly used as the pre-exponential coefficient without accounting for the constant room temperature offset of $20^\\circ\\text{C}$."
+        },
+        {
+            "ans": "$$\\theta = 20 - 60e^{ -0.1t }$$",
+            "feedback": "This results from a sign error when removing the absolute value bars or solving the linear equation, leading to a negative temperature difference."
+        },
+        {
+            "ans": "$$\\theta = 60e^{ -0.1t }$$",
+            "feedback": "This mistake happens if you completely forget to add the room temperature offset of $20^\\circ\\text{C}$ back when isolating $\\theta$ at the end of the calculation."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Newton's Law of Cooling Limits",
+        "content": "A great way to verify your final equation $\\theta = 20 + 60e^{ -0.1t }$ is to check its physical limits. At $t = 0$, we get $\\theta = 20 + 60(1) = 80^\\circ\\text{C}$, which matches the initial condition. As $t \\to \\infty$, the term $60e^{ -0.1t } \\to 0$, leaving $\\theta \\to 20^\\circ\\text{C}$, which correctly shows the object cools down to room temperature."
+    }
+},
+{
+    "id": "004735",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Trigonometric Integration"
+    ],
+    "img": false,
+    "question": "The variable $y$ satisfies the differential equation:\n$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3y \\cos(2x)$$\n\nGiven that $y = e$ when $x = 0$, find an expression for $y$ in terms of $x$.",
+    "steps": [
+        "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\n\\begin{aligned} \\dfrac{1}{y} \\,\\mathrm{d}y = 3 \\cos(2x) \\,\\mathrm{d}x \\end{aligned}",
+        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int \\dfrac{1}{y} \\,\\mathrm{d}y &= \\int 3 \\cos(2x) \\,\\mathrm{d}x \\cr \\ln|y| &= \\dfrac{3}{2}\\sin(2x) + C \\end{aligned}",
+        "Apply the initial condition that $y = e$ when $x = 0$ to find the value of the constant $C$:\n\\begin{aligned} \\ln e &= \\dfrac{3}{2}\\sin(0) + C \\cr 1 &= 0 + C \\cr C &= 1 \\end{aligned}",
+        "Substitute $C = 1$ back into the equation and exponentiate to solve for $y$ explicitly in terms of $x$:\n\\begin{aligned} \\ln y &= \\dfrac{3}{2}\\sin(2x) + 1 \\cr y &= e^{ \\frac{3}{2}\\sin(2x) + 1 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$y = e^{ 6\\sin(2x) + 1 }$$",
+            "feedback": "This error is caused by multiplying by $2$ instead of dividing by $2$ when integrating $\\cos(2x)$ on the right-hand side, leading to an incorrect coefficient of $6$ in front of the sine term."
+        },
+        {
+            "ans": "$$y = e^{ 1.5\\sin(2x) }$$",
+            "feedback": "This mistake occurs if the constant of integration $C$ is incorrectly assumed to be $0$ instead of $1$ because $\\sin(0) = 0$ was misapplied to the entire boundary equation."
+        },
+        {
+            "ans": "$$y = e^{ -1.5\\sin(2x) + 1 }$$",
+            "feedback": "This error arises from a sign mistake during the integration of $\\cos(2x)$, incorrectly integrating it to a negative sine function."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Trigonometric Integration Chain Rule",
+        "content": "When integrating trig functions of the form $\\cos(kx)$ or $\\sin(kx)$, always remember to divide by the derivative of the angle, which is $k$. That is, $\\int \\cos(2x) \\,\\mathrm{d}x = \\dfrac{1}{2}\\sin(2x) + C$. Forgetting this is one of the most common calculus slips at A level."
+    }
 }
 ];
