@@ -1193,7 +1193,7 @@ window.ALEVEL_QUESTIONS = [
         "Linear Equations"
     ],
     "img": false,
-    "question": "The variable $y$ satisfies the differential equation:\n$$3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 4 - 3y$$\n\nGiven that $y = 1$ when $x = 0$, find an expression for $y$ in terms of $x$.",
+    "question": "The variable $y$ satisfies the differential equation:\n$$3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 4 - 3y$$<br>Given that $y = 1$ when $x = 0$, find an expression for $y$ in terms of $x$.",
     "steps": [
         "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\n\\begin{aligned} \\dfrac{3}{4 - 3y} \\,\\mathrm{d}y = 1 \\,\\mathrm{d}x \\end{aligned}",
         "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int \\dfrac{3}{4 - 3y} \\,\\mathrm{d}y &= \\int 1 \\,\\mathrm{d}x \\cr -\\ln|4 - 3y| &= x + C \\end{aligned}",
@@ -1231,7 +1231,7 @@ window.ALEVEL_QUESTIONS = [
         "Exponential Integration"
     ],
     "img": false,
-    "question": "The variable $y$ satisfies the differential equation:\n$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = y^2 e^{2x}$$\n\nGiven that $y = 1$ when $x = 0$, find an expression for $y$ in terms of $x$.",
+    "question": "The variable $y$ satisfies the differential equation:\n$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = y^2 e^{2x}$$<br>Given that $y = 1$ when $x = 0$, find an expression for $y$ in terms of $x$.",
     "steps": [
         "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\n\\begin{aligned} y^{-2} \\,\\mathrm{d}y = e^{2x} \\,\\mathrm{d}x \\end{aligned}",
         "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int y^{-2} \\,\\mathrm{d}y &= \\int e^{2x} \\,\\mathrm{d}x \\cr -\\dfrac{1}{y} &= \\dfrac{1}{2}e^{2x} + C \\end{aligned}",
@@ -1269,7 +1269,7 @@ window.ALEVEL_QUESTIONS = [
         "Logarithmic Integration"
     ],
     "img": false,
-    "question": "The variable $y$ satisfies the differential equation:\n$$x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 2y - 4, \\quad x > 0$$\n\nGiven that $y = 3$ when $x = 1$, find an expression for $y$ in terms of $x$.",
+    "question": "The variable $y$ satisfies the differential equation:\n$$x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 2y - 4, \\quad x > 0$$<br>Given that $y = 3$ when $x = 1$, find an expression for $y$ in terms of $x$.",
     "steps": [
         "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\n\\begin{aligned} \\dfrac{1}{2y - 4} \\,\\mathrm{d}y = \\dfrac{1}{x} \\,\\mathrm{d}x \\end{aligned}",
         "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int \\dfrac{1}{2y - 4} \\,\\mathrm{d}y &= \\int \\dfrac{1}{x} \\,\\mathrm{d}x \\cr \\dfrac{1}{2}\\ln|2y - 4| &= \\ln x + C \\end{aligned}",
@@ -1307,7 +1307,7 @@ window.ALEVEL_QUESTIONS = [
         "Temperature Modelling"
     ],
     "img": false,
-    "question": "An object is cooling in a room of constant temperature. The temperature of the object, $\\theta^\\circ\\text{C}$, $t$ minutes after cooling begins, is modelled by the differential equation:\n$$\\dfrac{\\mathrm{d}\\theta}{\\mathrm{d}t} = -0.1(\\theta - 20)$$\n\nGiven that the initial temperature of the object is $80^\\circ\\text{C}$ (so $\\theta = 80$ at $t = 0$), solve the differential equation to find $\\theta$ in terms of $t$.",
+    "question": "An object is cooling in a room of constant temperature. The temperature of the object, $\\theta^\\circ\\text{C}$, $t$ minutes after cooling begins, is modelled by the differential equation:\n$$\\dfrac{\\mathrm{d}\\theta}{\\mathrm{d}t} = -0.1(\\theta - 20)$$<br>Given that the initial temperature of the object is $80^\\circ\\text{C}$ (so $\\theta = 80$ at $t = 0$), solve the differential equation to find $\\theta$ in terms of $t$.",
     "steps": [
         "Separate the variables to group the terms in $\\theta$ on the left-hand side and the terms in $t$ on the right-hand side:\n\\begin{aligned} \\dfrac{1}{\\theta - 20} \\,\\mathrm{d}\\theta = -0.1 \\,\\mathrm{d}t \\end{aligned}",
         "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int \\dfrac{1}{\\theta - 20} \\,\\mathrm{d}\\theta &= \\int -0.1 \\,\\mathrm{d}t \\cr \\ln|\\theta - 20| &= -0.1t + C \\end{aligned}",
@@ -1345,7 +1345,7 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric Integration"
     ],
     "img": false,
-    "question": "The variable $y$ satisfies the differential equation:\n$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3y \\cos(2x)$$\n\nGiven that $y = e$ when $x = 0$, find an expression for $y$ in terms of $x$.",
+    "question": "The variable $y$ satisfies the differential equation:\n$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3y \\cos(2x)$$<br>Given that $y = e$ when $x = 0$, find an expression for $y$ in terms of $x$.",
     "steps": [
         "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\n\\begin{aligned} \\dfrac{1}{y} \\,\\mathrm{d}y = 3 \\cos(2x) \\,\\mathrm{d}x \\end{aligned}",
         "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int \\dfrac{1}{y} \\,\\mathrm{d}y &= \\int 3 \\cos(2x) \\,\\mathrm{d}x \\cr \\ln|y| &= \\dfrac{3}{2}\\sin(2x) + C \\end{aligned}",
@@ -1383,7 +1383,7 @@ window.ALEVEL_QUESTIONS = [
         "Equation of the Normal"
     ],
     "img": false,
-    "question": "A curve is defined implicitly by:\n$$2x^2y + y^2 - 3x = 27$$\n\nFind the equation of the normal to the curve at the point $(2, 3)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "question": "A curve is defined implicitly by:\n$$2x^2y + y^2 - 3x = 27$$<br>Find the equation of the normal to the curve at the point $(2, 3)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
     "steps": [
         "Differentiate the implicit equation with respect to $x$, applying the product rule to the term $2x^2y$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 2x^2y + y^2 - 3x \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(27) \\cr \\left( 4xy + 2x^2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + 2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\end{aligned}",
         "Substitute the coordinates of the point $(2, 3)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} 4(2)(3) + 2\\left( 2^2 \\right)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2(3)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr 24 + 8\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 6\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr 14\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 21 &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{3}{2} \\end{aligned}",
@@ -1422,7 +1422,7 @@ window.ALEVEL_QUESTIONS = [
         "Product Rule"
     ],
     "img": false,
-    "question": "A curve is defined implicitly by:\n$$x^2y^2 - 2x + 3y = 3$$\n\nFind the equation of the normal to the curve at the point $(2, 1)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "question": "A curve is defined implicitly by:\n$$x^2y^2 - 2x + 3y = 3$$<br>Find the equation of the normal to the curve at the point $(2, 1)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
     "steps": [
         "Differentiate the implicit equation with respect to $x$, applying the product rule to the term $x^2y^2$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^2y^2 - 2x + 3y \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(3) \\cr \\left( 2xy^2 + 2x^2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) - 2 + 3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
         "Substitute the coordinates of the point $(2, 1)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} 2(2)\\left( 1^2 \\right) + 2\\left( 2^2 \\right)(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 2 + 3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 4 + 8\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 2 + 3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 11\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2 &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{2}{11} \\end{aligned}",
@@ -1461,7 +1461,7 @@ window.ALEVEL_QUESTIONS = [
         "Exponential Functions"
     ],
     "img": false,
-    "question": "A curve is defined implicitly by:\n$$y^2 e^{x - 1} + 3x - 2y = 3$$\n\nFind the equation of the normal to the curve at the point $(1, 2)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "question": "A curve is defined implicitly by:\n$$y^2 e^{x - 1} + 3x - 2y = 3$$<br>Find the equation of the normal to the curve at the point $(1, 2)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
     "steps": [
         "Differentiate the implicit equation with respect to $x$, applying the product rule and chain rule to the term $y^2 e^{x - 1}$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( y^2 e^{x - 1} + 3x - 2y \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(3) \\cr \\left( y^2 e^{x - 1} + 2y e^{x - 1}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + 3 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
         "Substitute the coordinates of the point $(1, 2)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} \\left( 2^2 \\right) e^{ 1 - 1 } + 2(2) e^{ 1 - 1 }\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 3 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 4(1) + 4(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 3 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 7 + 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{7}{2} \\end{aligned}",
@@ -1500,7 +1500,7 @@ window.ALEVEL_QUESTIONS = [
         "Logarithmic Functions"
     ],
     "img": false,
-    "question": "A curve is defined implicitly by:\n$$x^2 \\ln y + 4xy + y^2 = 5$$\n\nFind the equation of the normal to the curve at the point $(1, 1)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "question": "A curve is defined implicitly by:\n$$x^2 \\ln y + 4xy + y^2 = 5$$<br>Find the equation of the normal to the curve at the point $(1, 1)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
     "steps": [
         "Differentiate the implicit equation with respect to $x$, applying the product rule to the terms $x^2 \\ln y$ and $4xy$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^2 \\ln y + 4xy + y^2 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(5) \\cr \\left( 2x\\ln y + x^2\\dfrac{1}{y}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + \\left( 4y + 4x\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + 2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
         "Substitute the coordinates of the point $(1, 1)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} 2(1)\\ln(1) + 1^2\\left( \\dfrac{1}{1} \\right)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 4(1) + 4(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 0 + \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 4 + 4\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 4 + 7\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{4}{7} \\end{aligned}",
@@ -1539,7 +1539,7 @@ window.ALEVEL_QUESTIONS = [
         "Rational Expressions"
     ],
     "img": false,
-    "question": "A curve is defined implicitly by:\n$$\\dfrac{x}{y} + y^2 - 3x = -1$$\n\nFind the equation of the normal to the curve at the point $(2, 2)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "question": "A curve is defined implicitly by:\n$$\\dfrac{x}{y} + y^2 - 3x = -1$$<br>Find the equation of the normal to the curve at the point $(2, 2)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
     "steps": [
         "Differentiate the implicit equation with respect to $x$, applying the quotient rule (or product rule with negative exponents) to the term $\\dfrac{x}{y}$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( \\dfrac{x}{y} + y^2 - 3x \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(-1) \\cr \\dfrac{y - x\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}}{y^2} + 2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\end{aligned}",
         "Substitute the coordinates of the point $(2, 2)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} \\dfrac{2 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}}{2^2} + 2(2)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr \\dfrac{2 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}}{4} + 4\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr \\dfrac{1}{2} - \\dfrac{1}{2}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 4\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr \\dfrac{7}{2}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - \\dfrac{5}{2} &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{5}{7} \\end{aligned}",
@@ -1577,7 +1577,7 @@ window.ALEVEL_QUESTIONS = [
         "Newton-Raphson Method"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$x - 2 = \\sin x$$\nhas only one root.\n\n<strong>(b)</strong> Starting with $x_0 = 2.5$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$x - 2 = \\sin x$$\nhas only one root.<br><strong>(b)</strong> Starting with $x_0 = 2.5$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
     "steps": [
         "To show that the equation has only one root, rewrite it as $x - 2 = \\sin x$ and sketch the curves $y = x - 2$ and $y = \\sin x$:\n<br><br><img src='images/Pure/004741_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>\nThe line $y = x - 2$ has a gradient of $1$ and crosses the $y$-axis at $(0, -2)$. The wave $y = \\sin x$ has a maximum gradient of $1$ (at $x = 0$) and oscillates between $-1$ and $1$. As shown in the sketch, the graphs intersect at exactly one point, so there is only one root, $\\alpha$.",
         "Define $\\mathrm{f}(x) = x - 2 - \\sin x$. To apply the Newton-Raphson method, we first find the derivative, $\\mathrm{f}'(x)$:\n\\begin{aligned} \\mathrm{f}'(x) &= 1 - \\cos x \\end{aligned}\nNow set up the Newton-Raphson iteration formula:\n\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ \\mathrm{f}(x_{ n }) }{ \\mathrm{f}'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ x_{ n } - 2 - \\sin x_{ n } }{ 1 - \\cos x_{ n } } \\end{aligned}",
@@ -1616,7 +1616,7 @@ window.ALEVEL_QUESTIONS = [
         "Exponential Functions"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$e^x + x = 3$$\nhas only one root.\n\n<strong>(b)</strong> Starting with $x_0 = 1$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$e^x + x = 3$$\nhas only one root.<br><strong>(b)</strong> Starting with $x_0 = 1$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
     "steps": [
         "To show that the equation has only one root, rewrite it as $e^x = 3 - x$ and sketch the curves $y = e^x$ and $y = 3 - x$:\n<br><br><img src='images/Pure/004742_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>\nThe curve $y = e^x$ is strictly increasing, while the straight line $y = 3 - x$ has a gradient of $-1$ and is strictly decreasing. As shown in the sketch, they intersect at exactly one point, proving that there is only one root, $\\alpha$.",
         "Define $\\mathrm{f}(x) = e^x + x - 3$. To apply the Newton-Raphson method, we first find the derivative, $\\mathrm{f}'(x)$:\n\\begin{aligned} \\mathrm{f}'(x) &= e^x + 1 \\end{aligned}\nNow set up the Newton-Raphson iteration formula:\n\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ \\mathrm{f}(x_{ n }) }{ \\mathrm{f}'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ e^{ x_{ n } } + x_{ n } - 3 }{ e^{ x_{ n } } + 1 } \\end{aligned}",
@@ -1655,7 +1655,7 @@ window.ALEVEL_QUESTIONS = [
         "Logarithmic Functions"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$\\ln x = 2 - x$$\nhas only one root.\n\n<strong>(b)</strong> Starting with $x_0 = 1.5$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$\\ln x = 2 - x$$\nhas only one root.<br><strong>(b)</strong> Starting with $x_0 = 1.5$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
     "steps": [
         "To show that the equation has only one root, sketch the curves $y = \\ln x$ and $y = 2 - x$ for $x > 0$:\n<br><br><img src='images/Pure/004743_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>\nThe logarithmic curve $y = \\ln x$ is strictly increasing, while the straight line $y = 2 - x$ is strictly decreasing. They intersect at exactly one point, proving that there is only one root, $\\alpha$.",
         "Define $\\mathrm{f}(x) = \\ln x + x - 2$. To apply the Newton-Raphson method, we first find the derivative, $\\mathrm{f}'(x)$:\n\\begin{aligned} \\mathrm{f}'(x) &= \\dfrac{1}{x} + 1 \\end{aligned}\nNow set up the Newton-Raphson iteration formula:\n\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ \\mathrm{f}(x_{ n }) }{ \\mathrm{f}'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ \\ln x_{ n } + x_{ n } - 2 }{ \\dfrac{1}{x_{ n }} + 1 } \\end{aligned}",
@@ -1694,7 +1694,7 @@ window.ALEVEL_QUESTIONS = [
         "Reciprocal Functions"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$\\dfrac{1}{x} = x^2 - 1$$\nhas only one positive root.\n\n<strong>(b)</strong> Starting with $x_0 = 1.3$, apply the Newton-Raphson method to $\\mathrm{f}(x) = x^2 - 1 - \\dfrac{1}{x}$ to find the value of this root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$\\dfrac{1}{x} = x^2 - 1$$\nhas only one positive root.<br><strong>(b)</strong> Starting with $x_0 = 1.3$, apply the Newton-Raphson method to $\\mathrm{f}(x) = x^2 - 1 - \\dfrac{1}{x}$ to find the value of this root correct to two decimal places.",
     "steps": [
         "To show that the equation has only one positive root, sketch the curves $y = \\dfrac{1}{x}$ and $y = x^2 - 1$ for $x > 0$:\n<br><br><img src='images/Pure/004744_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>\nFor $x > 0$, the reciprocal curve $y = \\dfrac{1}{x}$ is strictly decreasing, while the parabola $y = x^2 - 1$ is strictly increasing. As shown in the sketch, they intersect at exactly one positive point, proving that there is only one positive root, $\\alpha$.",
         "We are given $\\mathrm{f}(x) = x^2 - 1 - \\dfrac{1}{x} = x^2 - 1 - x^{-1}$. Differentiate with respect to $x$ to find $\\mathrm{f}'(x)$:\n\\begin{aligned} \\mathrm{f}'(x) &= 2x + x^{-2} \\cr \\mathrm{f}'(x) &= 2x + \\dfrac{1}{x^2} \\end{aligned}\nNow set up the Newton-Raphson iteration formula:\n\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ \\mathrm{f}(x_{ n }) }{ \\mathrm{f}'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ x_{ n }^2 - 1 - \\dfrac{1}{x_{ n }} }{ 2x_{ n } + \\dfrac{1}{x_{ n }^2} } \\end{aligned}",
@@ -1733,7 +1733,7 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric Equations"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$x^2 = \\cos x$$\nhas only one positive root.\n\n<strong>(b)</strong> Starting with $x_0 = 0.8$, use the Newton-Raphson method to find the value of this positive root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$x^2 = \\cos x$$\nhas only one positive root.<br><strong>(b)</strong> Starting with $x_0 = 0.8$, use the Newton-Raphson method to find the value of this positive root correct to two decimal places.",
     "steps": [
         "To show that the equation has only one positive root, sketch the curves $y = x^2$ and $y = \\cos x$:\n<br><br><img src='images/Pure/004745_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>\nThe parabola $y = x^2$ is symmetric about the $y$-axis and strictly increasing for $x > 0$. The curve $y = \\cos x$ starts at $(0, 1)$ and decreases to $0$ at $x = \\dfrac{\\pi}{2}$. As shown in the sketch, they intersect at exactly one positive point, proving there is only one positive root, $\\alpha$.",
         "Define $\\mathrm{f}(x) = x^2 - \\cos x$. Differentiate with respect to $x$ to find $\\mathrm{f}'(x)$:\n\\begin{aligned} \\mathrm{f}'(x) &= 2x - (-\\sin x) \\cr \\mathrm{f}'(x) &= 2x + \\sin x \\end{aligned}\nNow set up the Newton-Raphson iteration formula:\n\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ \\mathrm{f}(x_{ n }) }{ \\mathrm{f}'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ x_{ n }^2 - \\cos x_{ n } }{ 2x_{ n } + \\sin x_{ n } } \\end{aligned}",
@@ -1770,7 +1770,7 @@ window.ALEVEL_QUESTIONS = [
         "Implicit Differentiation"
     ],
     "img": false,
-    "question": "A curve is given by the equation:\n$$2x^4 + 5y^3 = 10$$\n\nBy using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "question": "A curve is given by the equation:\n$$2x^4 + 5y^3 = 10$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
     "steps": [
         "Differentiate both sides of the equation with respect to $x$. When differentiating terms in $y$, apply the chain rule by multiplying by $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 2x^4 \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 5y^3 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(10) \\cr 8x^3 + 15y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
         "Rearrange the equation to isolate the derivative term $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} 15y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -8x^3 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{ 8x^3 }{ 15y^2 } \\end{aligned}"
@@ -1806,7 +1806,7 @@ window.ALEVEL_QUESTIONS = [
         "Product Rule"
     ],
     "img": false,
-    "question": "A curve is given by the equation:\n$$y^2 + 2xy - x^3 = 7$$\n\nBy using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "question": "A curve is given by the equation:\n$$y^2 + 2xy - x^3 = 7$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
     "steps": [
         "Differentiate both sides of the equation with respect to $x$. Apply the product rule to the term $2xy$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( y^2 \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(2xy) - \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^3 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(7) \\cr 2y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + \\left( 2y + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) - 3x^2 &= 0 \\end{aligned}",
         "Group the terms containing $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ on one side and move the other terms to the opposite side:\n\\begin{aligned} 2y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 3x^2 - 2y \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}(2x + 2y) &= 3x^2 - 2y \\end{aligned}",
@@ -1844,7 +1844,7 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric and Exponential Functions"
     ],
     "img": false,
-    "question": "A curve is given by the equation:\n$$y \\sin x + e^y = 5$$\n\nBy using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "question": "A curve is given by the equation:\n$$y \\sin x + e^y = 5$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
     "steps": [
         "Differentiate both sides with respect to $x$, applying the product rule to $y \\sin x$ and the chain rule to $e^y$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(y \\sin x) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( e^y \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(5) \\cr \\left( \\sin x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + y \\cos x \\right) + e^y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
         "Factor out $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ from the relevant terms and rearrange to solve for the derivative:\n\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\sin x + e^y \\right) + y \\cos x &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\sin x + e^y \\right) &= -y \\cos x \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{ y \\cos x }{ \\sin x + e^y } \\end{aligned}"
@@ -1880,7 +1880,7 @@ window.ALEVEL_QUESTIONS = [
         "Logarithmic Functions"
     ],
     "img": false,
-    "question": "A curve is given by the equation:\n$$x^2 \\ln y + y = 3x$$\n\nBy using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "question": "A curve is given by the equation:\n$$x^2 \\ln y + y = 3x$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
     "steps": [
         "Differentiate both sides with respect to $x$, applying the product rule to $x^2 \\ln y$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^2 \\ln y \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(y) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(3x) \\cr \\left( 2x \\ln y + x^2 \\cdot \\dfrac{1}{y} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 3 \\end{aligned}",
         "Factor out $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ on the left-hand side and move the other terms to the right-hand side:\n\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\dfrac{x^2}{y} + 1 \\right) &= 3 - 2x \\ln y \\end{aligned}",
@@ -1917,7 +1917,7 @@ window.ALEVEL_QUESTIONS = [
         "Coordinate Gradients"
     ],
     "img": false,
-    "question": "A curve is defined implicitly by the equation:\n$$3x^2 - y^3 + 2xy = 12$$\n\nFind the gradient of the curve at the point $(2, 2)$..",
+    "question": "A curve is defined implicitly by the equation:\n$$3x^2 - y^3 + 2xy = 12$$<br>Find the gradient of the curve at the point $(2, 2)$..",
     "steps": [
         "Differentiate the implicit equation with respect to $x$, using the chain rule for $y^3$ and the product rule for $2xy$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 3x^2 - y^3 + 2xy \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(12) \\cr 6x - 3y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + \\left( 2y + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) &= 0 \\end{aligned}",
         "Group the terms containing $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ and express $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$:\n\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( 2x - 3y^2 \\right) + 6x + 2y &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( 2x - 3y^2 \\right) &= -6x - 2y \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 6x + 2y }{ 3y^2 - 2x } \\end{aligned}",
