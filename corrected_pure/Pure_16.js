@@ -561,4 +561,5 @@ window.ALEVEL_QUESTIONS = [
         "content": "To simplify $1 - \\cos(2\\theta)$, we choose the double-angle identity $\\cos(2\\theta) = 1 - 2\\sin^2\\theta$. This yields $1 - (1 - 2\\sin^2\\theta) = 2\\sin^2\\theta$, effectively eliminating the constant $1$. Choosing either of the other two forms for $\\cos(2\\theta)$ would keep a constant term in the denominator, making simplification much more difficult."
     }
 }
+
 ];
