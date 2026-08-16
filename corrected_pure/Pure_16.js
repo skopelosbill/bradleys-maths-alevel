@@ -182,5 +182,197 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Order of Operations with Coefficients",
         "content": "When substituting into $y = 3t^2 + 1$, always follow the order of operations (BIDMAS/BODMAS). You must square the term $t = \\dfrac{2}{x}$ *before* multiplying by the coefficient of $3$. A very common mistake is attempting to multiply by the coefficient first."
     }
+},
+{
+    "id": "004756",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Circular Measure",
+        "Arc Length and Sector Area"
+    ],
+    "img": "images/Pure/004756.png",
+    "question": "The diagram shows a design for a symmetrical mirror, $ABCDE$, consisting of a sector of a circle $EBD$ centred at $B$, together with two congruent right-angled triangles, $BAE$ and $BCD$, which are right-angled at $A$ and $C$ respectively.\n\nThe straight line $AC$ has a length of $60\\text{ cm}$, and $AE = CD = 40\\text{ cm}$.\n\n<strong>(a)</strong> Find the angle $EBD$ in radians.\n\n<strong>(b)</strong> Find the total area of the mirror.",
+    "steps": [
+        "By symmetry, $B$ is the midpoint of $AC$, so the adjacent side $AB = BC = \\dfrac{60}{2} = 30\\text{ cm}$. In the right-angled triangle $BAE$, use the tangent ratio to find the angle $\\angle ABE$:\n\\begin{aligned} \\tan(\\angle ABE) &= \\dfrac{ AE }{ AB } \\cr \\tan(\\angle ABE) &= \\dfrac{ 40 }{ 30 } \\cr \\angle ABE &= \\arctan\\left( \\dfrac{4}{3} \\right) \\cr \\angle ABE &\\approx 0.92730\\text{ rad} \\end{aligned}",
+        "Since the shape is symmetrical, $\\angle CBD = \\angle ABE \\approx 0.92730\\text{ rad}$. The points $A$, $B$, and $C$ lie on a straight horizontal line, so the angles sum to $\\pi$ radians. Calculate the angle $EBD$:\n\\begin{aligned} \\angle EBD &= \\pi - 2\\angle ABE \\cr \\angle EBD &= \\pi - 2\\arctan\\left( \\dfrac{4}{3} \\right) \\cr \\angle EBD &\\approx 3.14159 - 1.85459 \\cr \\angle EBD &\\approx 1.287\\text{ rad} \\end{aligned}\nThis is $1.29\\text{ radians}$ to three significant figures.",
+        "Find the radius $R$ of the sector $EBD$, which is the hypotenuse $BE$ of the right-angled triangle $BAE$, using Pythagoras' theorem:\n\\begin{aligned} BE^2 &= AB^2 + AE^2 \\cr R^2 &= 30^2 + 40^2 \\cr R^2 &= 900 + 1600 \\cr R^2 &= 2500 \\cr R &= 50\\text{ cm} \\end{aligned}",
+        "Calculate the area of the sector $EBD$ and the two congruent right-angled triangles to find the total area of the mirror:\n\\begin{aligned} \\text{Area of Sector } EBD &= \\dfrac{1}{2} R^2 \\theta \\cr \\text{Area of Sector } EBD &= \\dfrac{1}{2} \\left( 50^2 \\right) \\left( 1.28700 \\right) \\cr \\text{Area of Sector } EBD &\\approx 1250 \\times 1.28700 \\cr \\text{Area of Sector } EBD &\\approx 1608.75\\text{ cm}^2 \\cr\\cr \\text{Area of Triangle } BAE &= \\dfrac{1}{2} \\times 30 \\times 40 = 600\\text{ cm}^2 \\cr \\text{Area of Triangle } BCD &= 600\\text{ cm}^2 \\cr\\cr \\text{Total Area} &= 1608.75 + 600 + 600 \\cr \\text{Total Area} &\\approx 2808.75\\text{ cm}^2 \\end{aligned}\nThis is $2810\\text{ cm}^2$ to three significant figures (or $2809\\text{ cm}^2$ using the rounded angle $1.287\\text{ rad}$)."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$2209\\text{ cm}^2$$",
+            "feedback": "This error occurs if the area of the two congruent triangles is omitted, leaving only the area of the circular sector."
+        },
+        {
+            "ans": "$$4019\\text{ cm}^2$$",
+            "feedback": "This mistake is caused by using the incorrect angle $EBD \\approx 2.25\\text{ rad}$, which occurs if you subtract $\\angle ABE$ only once instead of twice from $\\pi$."
+        },
+        {
+            "ans": "$$2850\\text{ cm}^2$$",
+            "feedback": "This arises if degrees are used instead of radians to compute the sector area, or if the radians value was miscalculated."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Symmetry Angle Double Subtraction",
+        "content": "A very common slip in symmetrical geometry problems is calculating $\\angle EBD = \\pi - \\angle ABE$. Always remember that there are two congruent right-angled triangles flanking the central sector, so you must subtract the base angle twice: $\\angle EBD = \\pi - 2\\angle ABE$."
+    }
+},
+{
+    "id": "004757",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Circular Measure",
+        "Pythagorean Triples",
+        "Sector Area"
+    ],
+    "img": "images/Pure/004757.png",
+    "question": "The diagram shows a decorative symmetrical plaque, $ABCDE$, consisting of a sector of a circle $BCD$ centred at $C$, together with two congruent right-angled triangles, $CAB$ and $CDE$, which are right-angled at $A$ and $E$ respectively.\n\nThe straight horizontal base $AE$ has a length of $32\\text{ cm}$, and $C$ is the midpoint of $AE$. The vertical edges are $AB = ED = 12\\text{ cm}$.\n\n<strong>(a)</strong> Find the angle $BCD$ in radians.\n\n<strong>(b)</strong> Find the total area of the plaque.",
+    "steps": [
+        "Since $C$ is the midpoint of $AE$, the adjacent base side is $AC = CE = \\dfrac{32}{2} = 16\\text{ cm}$. In the right-angled triangle $CAB$, use the tangent ratio to calculate the angle $\\angle ACB$:\n\\begin{aligned} \\tan(\\angle ACB) &= \\dfrac{ AB }{ AC } \\cr \\tan(\\angle ACB) &= \\dfrac{ 12 }{ 16 } \\cr \\angle ACB &= \\arctan\\left( \\dfrac{3}{4} \\right) \\cr \\angle ACB &\\approx 0.64350\\text{ rad} \\end{aligned}",
+        "The horizontal base $AE$ is a straight line, so the angles sum to $\\pi$ radians. By symmetry, $\\angle DCE = \\angle ACB \\approx 0.64350\\text{ rad}$. Calculate the angle $BCD$:\n\\begin{aligned} \\angle BCD &= \\pi - 2\\angle ACB \\cr \\angle BCD &= \\pi - 2\\arctan\\left( \\dfrac{3}{4} \\right) \\cr \\angle BCD &\\approx 3.14159 - 1.28700 \\cr \\angle BCD &\\approx 1.855\\text{ rad} \\end{aligned}\nThis is $1.85\\text{ radians}$ to three significant figures.",
+        "Find the radius $R$ of the sector $BCD$, which is the hypotenuse $BC$ of the right-angled triangle $CAB$, using Pythagoras' theorem (yielding a $12, 16, 20$ Pythagorean triple):\n\\begin{aligned} BC^2 &= AC^2 + AB^2 \\cr R^2 &= 16^2 + 12^2 \\cr R^2 &= 256 + 144 \\cr R^2 &= 400 \\cr R &= 20\\text{ cm} \\end{aligned}",
+        "Calculate the area of the sector $BCD$ and the two congruent right-angled triangles to find the total area of the plaque:\n\\begin{aligned} \\text{Area of Sector } BCD &= \\dfrac{1}{2} R^2 \\theta \\cr \\text{Area of Sector } BCD &= \\dfrac{1}{2} \\left( 20^2 \\right) \\left( 1.85459 \\right) \\cr \\text{Area of Sector } BCD &\\approx 200 \\times 1.85459 \\cr \\text{Area of Sector } BCD &\\approx 370.92\\text{ cm}^2 \\cr\\cr \\text{Area of Triangle } CAB &= \\dfrac{1}{2} \\times 16 \\times 12 = 96\\text{ cm}^2 \\cr \\text{Area of Triangle } CDE &= 96\\text{ cm}^2 \\cr\\cr \\text{Total Area} &= 370.92 + 96 + 96 \\cr \\text{Total Area} &\\approx 562.92\\text{ cm}^2 \\end{aligned}\nThis is $563\\text{ cm}^2$ to three significant figures."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$371\\text{ cm}^2$$",
+            "feedback": "This error occurs if the area of the two flanking right-angled triangles is forgotten, leaving only the area of the circular sector."
+        },
+        {
+            "ans": "$$692\\text{ cm}^2$$",
+            "feedback": "This mistake is caused by using the incorrect angle $BCD \\approx 2.50\\text{ rad}$, which occurs if you subtract $\\angle ACB$ only once instead of twice from $\\pi$."
+        },
+        {
+            "ans": "$$590\\text{ cm}^2$$",
+            "feedback": "This arises from an arithmetic error during the sector area calculation, or if the radius $R$ was incorrectly calculated as $20.8\\text{ cm}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Spotting Pythagorean Triples",
+        "content": "Pythagorean triples are extremely common in A-level geometry. Recognising that the sides $12$ and $16$ are multiples of the famous $3, 4, 5$ triple ($3 \\times 4 = 12$ and $4 \\times 4 = 16$) allows you to immediately deduce that the hypotenuse is $5 \\times 4 = 20\\text{ cm}$ without running through Pythagoras' theorem."
+    }
+},
+{
+    "id": "004758",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Circular Measure",
+        "Asymmetric Layouts",
+        "Sector Area"
+    ],
+    "img": "images/Pure/004758.png",
+    "question": "The diagram shows a metal template, $OABC$, consisting of a sector of a circle $OAB$ of radius $15\\text{ cm}$ centred at $O$, and a right-angled triangle $OAC$ which is right-angled at $A$.\n\nThe vertical edge $AC$ has a length of $8\\text{ cm}$. The total angle of the template $\\angle BOC$ is $1.8$ radians.\n\n<strong>(a)</strong> Find the angle $AOB$ of the sector in radians.\n\n<strong>(b)</strong> Find the total area of the template.",
+    "steps": [
+        "In the right-angled triangle $OAC$, the adjacent side is the radius $OA = 15\\text{ cm}$ and the opposite side is $AC = 8\\text{ cm}$. Use the tangent ratio to find the angle $\\angle AOC$:\n\\begin{aligned} \\tan(\\angle AOC) &= \\dfrac{ AC }{ OA } \\cr \\tan(\\angle AOC) &= \\dfrac{ 8 }{ 15 } \\cr \\angle AOC &= \\arctan\\left( \\dfrac{8}{15} \\right) \\cr \\angle AOC &\\approx 0.48996\\text{ rad} \\end{aligned}",
+        "The total angle of the template is given as $\\angle BOC = 1.8\\text{ rad}$. Subtract the angle $\\angle AOC$ to find the angle $AOB$ of the sector:\n\\begin{aligned} \\angle AOB &= \\angle BOC - \\angle AOC \\cr \\angle AOB &= 1.8 - 0.48996 \\cr \\angle AOB &\\approx 1.31004\\text{ rad} \\end{aligned}\nThis is $1.31\\text{ radians}$ to three significant figures.",
+        "Calculate the area of the right-angled triangle $OAC$ and the sector $OAB$, then sum them to find the total area:\n\\begin{aligned} \\text{Area of Triangle } OAC &= \\dfrac{1}{2} \\times OA \\times AC \\cr \\text{Area of Triangle } OAC &= \\dfrac{1}{2} \\times 15 \\times 8 = 60\\text{ cm}^2 \\cr\\cr \\text{Area of Sector } OAB &= \\dfrac{1}{2} R^2 \\theta \\cr \\text{Area of Sector } OAB &= \\dfrac{1}{2} \\left( 15^2 \\right) \\left( 1.31004 \\right) \\cr \\text{Area of Sector } OAB &\\approx 112.5 \\times 1.31004 \\cr \\text{Area of Sector } OAB &\\approx 147.38\\text{ cm}^2 \\cr\\cr \\text{Total Area} &= 60 + 147.38 \\cr \\text{Total Area} &\\approx 207.38\\text{ cm}^2 \\end{aligned}\nThis is $207\\text{ cm}^2$ to three significant figures."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$147\\text{ cm}^2$$",
+            "feedback": "This error occurs if the area of the right-angled triangle $OAC$ is omitted, leaving only the area of the circular sector."
+        },
+        {
+            "ans": "$$263\\text{ cm}^2$$",
+            "feedback": "This mistake is caused by using the total angle of $1.8\\text{ rad}$ as the angle of the sector, failing to subtract the triangle angle $\\angle AOC$."
+        },
+        {
+            "ans": "$$195\\text{ cm}^2$$",
+            "feedback": "This arises if the sector angle is incorrectly rounded too early or if a sign error occurs during angle subtraction."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Asymmetric Sector Subtractions",
+        "content": "Unlike symmetrical layouts, asymmetric designs require you to find the component angles step-by-step. Defining the total boundary angle as $\\angle BOC = \\angle AOB + \\angle AOC$ is the key. Finding the right-angled triangle angle first using standard trigonometric ratios allows you to easily isolate the sector angle."
+    }
+},
+{
+    "id": "004759",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Circular Measure",
+        "Asymmetric Layouts",
+        "Sector Area"
+    ],
+    "img": "images/Pure/004759.png",
+    "question": "The diagram shows a logo, $OABC$, consisting of a sector of a circle $OAB$ of radius $10\\text{ cm}$ centred at $O$, and a right-angled triangle $OBC$ which is right-angled at $B$.\n\nThe vertical edge $BC$ has a length of $24\\text{ cm}$. The total angle of the logo $\\angle AOC$ is $3.0$ radians.\n\n<strong>(a)</strong> Find the angle $AOB$ of the sector in radians.\n\n<strong>(b)</strong> Find the total area of the logo.",
+    "steps": [
+        "In the right-angled triangle $OBC$, the adjacent side is the radius $OB = 10\\text{ cm}$ and the opposite side is $BC = 24\\text{ cm}$. Use the tangent ratio to find the angle $\\angle BOC$:\n\\begin{aligned} \\tan(\\angle BOC) &= \\dfrac{ BC }{ OB } \\cr \\tan(\\angle BOC) &= \\dfrac{ 24 }{ 10 } \\cr \\angle BOC &= \\arctan(2.4) \\cr \\angle BOC &\\approx 1.17601\\text{ rad} \\end{aligned}",
+        "The total angle of the logo is given as $\\angle AOC = 3.0\\text{ rad}$. Subtract the angle $\\angle BOC$ to find the angle $AOB$ of the sector:\n\\begin{aligned} \\angle AOB &= \\angle AOC - \\angle BOC \\cr \\angle AOB &= 3.0 - 1.17601 \\cr \\angle AOB &\\approx 1.82399\\text{ rad} \\end{aligned}\nThis is $1.82\\text{ radians}$ to three significant figures.",
+        "Calculate the area of the right-angled triangle $OBC$ and the sector $OAB$, then sum them to find the total area:\n\\begin{aligned} \\text{Area of Triangle } OBC &= \\dfrac{1}{2} \\times OB \\times BC \\cr \\text{Area of Triangle } OBC &= \\dfrac{1}{2} \\times 10 \\times 24 = 120\\text{ cm}^2 \\cr\\cr \\text{Area of Sector } OAB &= \\dfrac{1}{2} R^2 \\theta \\cr \\text{Area of Sector } OAB &= \\dfrac{1}{2} \\left( 10^2 \\right) \\left( 1.82399 \\right) \\cr \\text{Area of Sector } OAB &\\approx 50 \\times 1.82399 \\cr \\text{Area of Sector } OAB &\\approx 91.20\\text{ cm}^2 \\cr\\cr \\text{Total Area} &= 120 + 91.20 \\cr \\text{Total Area} &\\approx 211.20\\text{ cm}^2 \\end{aligned}\nThis is $211\\text{ cm}^2$ to three significant figures."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$91\\text{ cm}^2$$",
+            "feedback": "This error occurs if the area of the right-angled triangle $OBC$ is completely omitted, leaving only the area of the circular sector."
+        },
+        {
+            "ans": "$$270\\text{ cm}^2$$",
+            "feedback": "This mistake is caused by using the total angle of $3.0\\text{ rad}$ as the angle of the sector, failing to subtract the triangle angle $\\angle BOC$."
+        },
+        {
+            "ans": "$$218\\text{ cm}^2$$",
+            "feedback": "This is caused by an arithmetic slip in the sector area calculation, or if the radius was incorrectly assumed to be the hypotenuse $OC = 26\\text{ cm}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Identifying Radius vs. Hypotenuse",
+        "content": "Always make sure you identify which edge represents the radius of the sector. In this diagram, the sector is $OAB$, so the lines $OA$ and $OB$ are the radii ($10\\text{ cm}$). The line $OC$ is the hypotenuse of the right-angled triangle $OBC$ and is not equal to the radius. Confusing these two is a very common source of lost marks."
+    }
+},
+{
+    "id": "004760",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Geometry",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Circular Measure",
+        "Symmetrical layouts",
+        "Perimeter"
+    ],
+    "img": "images/Pure/004760.png",
+    "question": "The diagram shows a shield-shaped logo, $ABCDE$, consisting of a sector of a circle $EBD$ centred at $B$, together with two congruent right-angled triangles, $BAE$ and $BCD$, which are right-angled at $A$ and $C$ respectively.\n\nThe straight horizontal base $AC$ has a length of $160\\text{ cm}$, and the vertical edges are $AE = CD = 60\\text{ cm}$.\n\n<strong>(a)</strong> Find the angle $EBD$ in radians.\n\n<strong>(b)</strong> Find the outer perimeter of the shield (boundary $AE + AC + CD + \\text{arc } ED$).",
+    "steps": [
+        "By symmetry, $B$ is the midpoint of $AC$, so the adjacent side $AB = BC = \\dfrac{160}{2} = 80\\text{ cm}$. In the right-angled triangle $BAE$, use the tangent ratio to find the angle $\\angle ABE$:\n\\begin{aligned} \\tan(\\angle ABE) &= \\dfrac{ AE }{ AB } \\cr \\tan(\\angle ABE) &= \\dfrac{ 60 }{ 80 } \\cr \\angle ABE &= \\arctan(0.75) \\cr \\angle ABE &\\approx 0.64350\\text{ rad} \\end{aligned}",
+        "The horizontal base $AC$ is a straight line, so the angles sum to $\\pi$ radians. By symmetry, $\\angle CBD = \\angle ABE \\approx 0.64350\\text{ rad}$. Calculate the angle $EBD$:\n\\begin{aligned} \\angle EBD &= \\pi - 2\\angle ABE \\cr \\angle EBD &= \\pi - 2(0.64350) \\cr \\angle EBD &\\approx 3.14159 - 1.28700 \\cr \\angle EBD &\\approx 1.855\\text{ rad} \\end{aligned}\nThis is $1.85\\text{ radians}$ to three significant figures.",
+        "Find the radius $R$ of the sector $EBD$, which is the hypotenuse $BE$ of the right-angled triangle $BAE$, using Pythagoras' theorem (yielding a $60, 80, 100$ Pythagorean triple):\n\\begin{aligned} BE^2 &= AB^2 + AE^2 \\cr R^2 &= 80^2 + 60^2 \\cr R^2 &= 6400 + 3600 \\cr R^2 &= 10000 \\cr R &= 100\\text{ cm} \\end{aligned}",
+        "Calculate the circular arc length $ED$ and sum the outer edges to find the total perimeter of the shield:\n\\begin{aligned} \\text{Arc Length } ED &= R\\theta \\cr \\text{Arc Length } ED &= 100 \\times 1.85459 \\cr \\text{Arc Length } ED &\\approx 185.46\\text{ cm} \\cr\\cr \\text{Total Perimeter} &= AE + AC + CD + \\text{Arc Length } ED \\cr \\text{Total Perimeter} &= 60 + 160 + 60 + 185.46 \\cr \\text{Total Perimeter} &\\approx 465.46\\text{ cm} \\end{aligned}\nThis is $465\\text{ cm}$ to three significant figures."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$305\\text{ cm}$$",
+            "feedback": "This error is caused by using the sector angle of $1.25\\text{ rad}$ instead of the correct $1.85\\text{ rad}$ to calculate the arc length, which occurs if you subtract $\\angle ABE$ only once from $\\pi$."
+        },
+        {
+            "ans": "$$445\\text{ cm}$$",
+            "feedback": "This mistake occurs if the horizontal base $AC = 160\\text{ cm}$ is incorrectly omitted or replaced by $AB + BC$ being counted differently during final boundary summation."
+        },
+        {
+            "ans": "$$485\\text{ cm}$$",
+            "feedback": "This arises if the straight line edges $AE$ and $CD$ are incorrectly added to the internal lines $BE$ and $BD$ instead of the base $AC$ during perimeter evaluation."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Boundary Perimeter Definitions",
+        "content": "When calculating the outer perimeter of a composite shape, be careful not to include any internal lines. Here, $BE$ and $BD$ are internal construction lines (the radii of the sector). The outer boundary consists solely of the two vertical sides, the horizontal base, and the circular arc: $AE + AC + CD + \\text{arc } ED$."
+    }
 }
 ];
