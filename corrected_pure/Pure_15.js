@@ -1759,5 +1759,188 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Differentiating Negative Trigonometric Terms",
         "content": "Differentiating $-\\cos x$ involves two negative signs: $\\dfrac{\\mathrm{d}}{\\mathrm{d}x}(-\\cos x) = -(-\\sin x) = +\\sin x$. Forgetting that the derivative of cosine is negative is one of the most common sign mistakes made by students."
     }
+},
+{
+    "id": "004746",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Implicit Differentiation"
+    ],
+    "img": false,
+    "question": "A curve is given by the equation:\n$$2x^4 + 5y^3 = 10$$\n\nBy using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "steps": [
+        "Differentiate both sides of the equation with respect to $x$. When differentiating terms in $y$, apply the chain rule by multiplying by $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 2x^4 \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 5y^3 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(10) \\cr 8x^3 + 15y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
+        "Rearrange the equation to isolate the derivative term $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} 15y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -8x^3 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{ 8x^3 }{ 15y^2 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = -\\dfrac{ 15y^2 }{ 8x^3 }$$",
+            "feedback": "This error occurs if the fraction is inverted when dividing to isolate the derivative term."
+        },
+        {
+            "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\dfrac{ 8x^3 }{ 15y^2 }$$",
+            "feedback": "This mistake is caused by a sign error, forgetting to make the term negative when moving $8x^3$ to the right-hand side of the equation."
+        },
+        {
+            "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = -\\dfrac{ 8x^3 }{ 15y }$$",
+            "feedback": "This arises from a differentiation slip where $5y^3$ is incorrectly differentiated as $15y$ instead of $15y^2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: The Chain Rule Multiplier",
+        "content": "The most fundamental rule of implicit differentiation is that whenever you differentiate a term containing $y$ with respect to $x$, you must multiply by $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ because $y$ is an implicit function of $x$. For instance, $\\dfrac{\\mathrm{d}}{\\mathrm{d}x}(y^3) = 3y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$."
+    }
+},
+{
+    "id": "004747",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Implicit Differentiation",
+        "Product Rule"
+    ],
+    "img": false,
+    "question": "A curve is given by the equation:\n$$y^2 + 2xy - x^3 = 7$$\n\nBy using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "steps": [
+        "Differentiate both sides of the equation with respect to $x$. Apply the product rule to the term $2xy$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( y^2 \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(2xy) - \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^3 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(7) \\cr 2y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + \\left( 2y + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) - 3x^2 &= 0 \\end{aligned}",
+        "Group the terms containing $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ on one side and move the other terms to the opposite side:\n\\begin{aligned} 2y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 3x^2 - 2y \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}(2x + 2y) &= 3x^2 - 2y \\end{aligned}",
+        "Isolate $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ by dividing by the factor $(2x + 2y)$:\n\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 3x^2 - 2y }{ 2x + 2y } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\dfrac{ 3x^2 - 2y }{ 2y }$$",
+            "feedback": "This error occurs if the product rule is not applied to $2xy$, completely omitting the $+ 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ term during differentiation."
+        },
+        {
+            "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\dfrac{ 3x^2 }{ 2x + 2y }$$",
+            "feedback": "This mistake happens if the $2y$ term from the product rule is forgotten or incorrectly omitted during differentiation."
+        },
+        {
+            "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\dfrac{ 3x^2 + 2y }{ 2x + 2y }$$",
+            "feedback": "This is caused by a sign error when moving the $+2y$ term from the left-hand side to the right-hand side of the equation."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Product Rule Sign and Variable Splitting",
+        "content": "When differentiating a mixed term like $2xy$, always treat it as a product of $2x$ and $y$. Let $u = 2x$ and $v = y$. Since $\\dfrac{\\mathrm{d}u}{\\mathrm{d}x} = 2$ and $\\dfrac{\\mathrm{d}v}{\\mathrm{d}x} = \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$, the product rule yields $2y + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$. Be careful with signs if the term has a leading negative coefficient."
+    }
+},
+{
+    "id": "004748",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Implicit Differentiation",
+        "Product Rule",
+        "Trigonometric and Exponential Functions"
+    ],
+    "img": false,
+    "question": "A curve is given by the equation:\n$$y \\sin x + e^y = 5$$\n\nBy using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "steps": [
+        "Differentiate both sides with respect to $x$, applying the product rule to $y \\sin x$ and the chain rule to $e^y$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(y \\sin x) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( e^y \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(5) \\cr \\left( \\sin x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + y \\cos x \\right) + e^y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
+        "Factor out $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ from the relevant terms and rearrange to solve for the derivative:\n\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\sin x + e^y \\right) + y \\cos x &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\sin x + e^y \\right) &= -y \\cos x \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{ y \\cos x }{ \\sin x + e^y } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = -\\dfrac{ y \\cos x }{ \\sin x + 1 }$$",
+            "feedback": "This error occurs if the derivative of $e^y$ with respect to $x$ is incorrectly written as $1 \\cdot \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ or if $e^y$ is misidentified as $e^x$."
+        },
+        {
+            "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\dfrac{ y \\cos x }{ \\sin x + e^y }$$",
+            "feedback": "This mistake is caused by a sign error when moving the $+y \\cos x$ term to the right-hand side of the equation."
+        },
+        {
+            "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = -\\dfrac{ y \\sin x }{ \\cos x + e^y }$$",
+            "feedback": "This arises from a differentiation slip where the derivative of $\sin x$ is incorrectly taken as $-\\sin x$ or swapped with $\\cos x$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Differentiating Transcendental Implicit Functions",
+        "content": "Transcendental functions such as exponential and trigonometric terms follow standard rules but must incorporate the implicit chain rule. Differentiating $e^y$ with respect to $x$ gives $e^y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$, not just $e^y$. Similarly, differentiating $\\sin y$ would yield $\\cos y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$."
+    }
+},
+{
+    "id": "004749",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Implicit Differentiation",
+        "Logarithmic Functions"
+    ],
+    "img": false,
+    "question": "A curve is given by the equation:\n$$x^2 \\ln y + y = 3x$$\n\nBy using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "steps": [
+        "Differentiate both sides with respect to $x$, applying the product rule to $x^2 \\ln y$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^2 \\ln y \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(y) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(3x) \\cr \\left( 2x \\ln y + x^2 \\cdot \\dfrac{1}{y} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 3 \\end{aligned}",
+        "Factor out $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ on the left-hand side and move the other terms to the right-hand side:\n\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\dfrac{x^2}{y} + 1 \\right) &= 3 - 2x \\ln y \\end{aligned}",
+        "Multiply the entire equation by $y$ to clear the fraction and solve for $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( x^2 + y \\right) &= y(3 - 2x \\ln y) \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 3y - 2xy \\ln y }{ x^2 + y } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\dfrac{ 3 - 2x \\ln y }{ x^2 + 1 }$$",
+            "feedback": "This error occurs if the $y$-denominator of the differentiated log term is forgotten or omitted, treating $\\ln y$ as if its derivative with respect to $y$ was $1$ instead of $\\dfrac{1}{y}$."
+        },
+        {
+            "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\dfrac{ 3y - 2xy \\ln y }{ x^2 }$$",
+            "feedback": "This mistake is caused by failing to include the $+ y$ term in the denominator, which arises from forgetting to differentiate the standalone $+y$ term to $+\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$."
+        },
+        {
+            "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\dfrac{ 3y + 2xy \\ln y }{ x^2 + y }$$",
+            "feedback": "This arises from a sign error when moving the $+2x \\ln y$ term over to the right-hand side of the equation."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Clearing Fractional Algebra",
+        "content": "When separating variables in implicit equations containing algebraic fractions, like $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\dfrac{x^2}{y} + 1 \\right) = 3 - 2x \\ln y$, multiplying both sides by the denominator $y$ first is a highly efficient way to simplify the expression and avoid complex fractions within fractions."
+    }
+},
+{
+    "id": "004750",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Calculus",
+    "topic": "Differentiation",
+    "subtopic": [
+        "Implicit Differentiation",
+        "Coordinate Gradients"
+    ],
+    "img": false,
+    "question": "A curve is defined implicitly by the equation:\n$$3x^2 - y^3 + 2xy = 12$$\n\nFind the gradient of the curve at the point $(2, 2)$..",
+    "steps": [
+        "Differentiate the implicit equation with respect to $x$, using the chain rule for $y^3$ and the product rule for $2xy$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 3x^2 - y^3 + 2xy \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(12) \\cr 6x - 3y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + \\left( 2y + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) &= 0 \\end{aligned}",
+        "Group the terms containing $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ and express $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$:\n\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( 2x - 3y^2 \\right) + 6x + 2y &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( 2x - 3y^2 \\right) &= -6x - 2y \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 6x + 2y }{ 3y^2 - 2x } \\end{aligned}",
+        "Substitute the coordinates $(2, 2)$ into the derivative formula to calculate the numerical gradient:\n\\begin{aligned} \\text{Gradient} &= \\dfrac{ 6(2) + 2(2) }{ 3\\left(2^2\\right) - 2(2) } \\cr \\text{Gradient} &= \\dfrac{ 12 + 4 }{ 12 - 4 } \\cr \\text{Gradient} &= \\dfrac{ 16 }{ 8 } \\cr \\text{Gradient} &= 2 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$-2$$",
+            "feedback": "This error is caused by a sign error when dividing or factoring, leading to a negative gradient."
+        },
+        {
+            "ans": "$$1$$",
+            "feedback": "This mistake occurs if the product rule is omitted on the term $2xy$, leading to a derivative of $\\dfrac{ 6x }{ 3y^2 }$, which evaluates to $1$ at $(2, 2)$."
+        },
+        {
+            "ans": "$$\\dfrac{4}{3}$$",
+            "feedback": "This arises from a differentiation slip on $-y^3$, differentiating it as $-3y$ instead of $-3y^2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Early Evaluation vs. Algebraic Rearrangement",
+        "content": "For gradient evaluation questions at a specific point, you can substitute the numerical values of $x$ and $y$ directly into the differentiated equation *before* rearranging it algebraically to isolate $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$. This often reduces the risk of making transposition errors."
+    }
 }
 ];
