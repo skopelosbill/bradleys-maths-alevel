@@ -272,32 +272,32 @@ window.ALEVEL_QUESTIONS = [
         "Sector Area"
     ],
     "img": "images/Pure/004758.png",
-    "question": "The diagram shows a metal template, $OABC$, consisting of a sector of a circle $OAB$ of radius $15\\text{ cm}$ centred at $O$, and a right-angled triangle $OAC$ which is right-angled at $A$.\n\nThe vertical edge $AC$ has a length of $8\\text{ cm}$. The total angle of the template $\\angle BOC$ is $1.8$ radians.\n\n<strong>(a)</strong> Find the angle $AOB$ of the sector in radians.\n\n<strong>(b)</strong> Find the total area of the template.",
+    "question": "The diagram shows an emblem, $OABC$, consisting of a sector of a circle $OAB$ of radius $10\\text{ cm}$ centred at $O$, and a right-angled triangle $OAC$ which is right-angled at $A$.<br><br>The vertical edge $AC$ has a length of $10\\text{ cm}$. The total angle of the emblem $\\angle BOC$ is $2.0$ radians.<br><br><strong>(a)</strong> Find the angle $AOB$ of the sector in radians.<br><br><strong>(b)</strong> Find the total area of the emblem.",
     "steps": [
-        "In the right-angled triangle $OAC$, the adjacent side is the radius $OA = 15\\text{ cm}$ and the opposite side is $AC = 8\\text{ cm}$. Use the tangent ratio to find the angle $\\angle AOC$:\n\\begin{aligned} \\tan(\\angle AOC) &= \\dfrac{ AC }{ OA } \\cr \\tan(\\angle AOC) &= \\dfrac{ 8 }{ 15 } \\cr \\angle AOC &= \\arctan\\left( \\dfrac{8}{15} \\right) \\cr \\angle AOC &\\approx 0.48996\\text{ rad} \\end{aligned}",
-        "The total angle of the template is given as $\\angle BOC = 1.8\\text{ rad}$. Subtract the angle $\\angle AOC$ to find the angle $AOB$ of the sector:\n\\begin{aligned} \\angle AOB &= \\angle BOC - \\angle AOC \\cr \\angle AOB &= 1.8 - 0.48996 \\cr \\angle AOB &\\approx 1.31004\\text{ rad} \\end{aligned}\nThis is $1.31\\text{ radians}$ to three significant figures.",
-        "Calculate the area of the right-angled triangle $OAC$ and the sector $OAB$, then sum them to find the total area:\n\\begin{aligned} \\text{Area of Triangle } OAC &= \\dfrac{1}{2} \\times OA \\times AC \\cr \\text{Area of Triangle } OAC &= \\dfrac{1}{2} \\times 15 \\times 8 = 60\\text{ cm}^2 \\cr\\cr \\text{Area of Sector } OAB &= \\dfrac{1}{2} R^2 \\theta \\cr \\text{Area of Sector } OAB &= \\dfrac{1}{2} \\left( 15^2 \\right) \\left( 1.31004 \\right) \\cr \\text{Area of Sector } OAB &\\approx 112.5 \\times 1.31004 \\cr \\text{Area of Sector } OAB &\\approx 147.38\\text{ cm}^2 \\cr\\cr \\text{Total Area} &= 60 + 147.38 \\cr \\text{Total Area} &\\approx 207.38\\text{ cm}^2 \\end{aligned}\nThis is $207\\text{ cm}^2$ to three significant figures."
+        "In the right-angled triangle $OAC$, the adjacent side is the radius $OA = 10\\text{ cm}$ and the opposite side is $AC = 10\\text{ cm}$. Use the tangent ratio to find the angle $\\angle AOC$:\n\\begin{aligned} \\tan(\\angle AOC) &= \\dfrac{ AC }{ OA } \\cr \\tan(\\angle AOC) &= \\dfrac{ 10 }{ 10 } \\cr \\angle AOC &= \\arctan(1) \\cr \\angle AOC &= \\dfrac{\\pi}{4} \\approx 0.78540\\text{ rad} \\end{aligned}",
+        "The total angle of the emblem is given as $\\angle BOC = 2.0\\text{ rad}$. Subtract the angle $\\angle AOC$ to find the angle $AOB$ of the sector:\n\\begin{aligned} \\angle AOB &= \\angle BOC - \\angle AOC \\cr \\angle AOB &= 2.0 - 0.78540 \\cr \\angle AOB &\\approx 1.21460\\text{ rad} \\end{aligned}\nThis is $1.21\\text{ radians}$ to three significant figures.",
+        "Calculate the area of the right-angled triangle $OAC$ and the sector $OAB$, then sum them to find the total area:\n\\begin{aligned} \\text{Area of Triangle } OAC &= \\dfrac{1}{2} \\times OA \\times AC \\cr \\text{Area of Triangle } OAC &= \\dfrac{1}{2} \\times 10 \\times 10 = 50\\text{ cm}^2 \\cr\\cr \\text{Area of Sector } OAB &= \\dfrac{1}{2} R^2 \\theta \\cr \\text{Area of Sector } OAB &= \\dfrac{1}{2} \\left( 10^2 \\right) \\left( 1.21460 \\right) \\cr \\text{Area of Sector } OAB &\\approx 50 \\times 1.21460 \\cr \\text{Area of Sector } OAB &\\approx 60.73\\text{ cm}^2 \\cr\\cr \\text{Total Area} &= 50 + 60.73 \\cr \\text{Total Area} &\\approx 110.73\\text{ cm}^2 \\end{aligned}\nThis is $111\\text{ cm}^2$ to three significant figures."
     ],
     "pi_options": [
         {
-            "ans": "$$147\\text{ cm}^2$$",
-            "feedback": "This error occurs if the area of the right-angled triangle $OAC$ is omitted, leaving only the area of the circular sector."
+            "ans": "$$61\\text{ cm}^2$$",
+            "feedback": "This error occurs if the area of the right-angled triangle $OAC$ is completely omitted, leaving only the area of the circular sector."
         },
         {
-            "ans": "$$263\\text{ cm}^2$$",
-            "feedback": "This mistake is caused by using the total angle of $1.8\\text{ rad}$ as the angle of the sector, failing to subtract the triangle angle $\\angle AOC$."
+            "ans": "$$150\\text{ cm}^2$$",
+            "feedback": "This mistake is caused by using the total angle of $2.0\\text{ rad}$ as the angle of the sector, failing to subtract the triangle angle $\\angle AOC$."
         },
         {
-            "ans": "$$195\\text{ cm}^2$$",
+            "ans": "$$115\\text{ cm}^2$$",
             "feedback": "This arises if the sector angle is incorrectly rounded too early or if a sign error occurs during angle subtraction."
         }
     ],
     "bradley_insight": {
-        "type": "deeper",
-        "title": "The Head Teacher's Eye: Asymmetric Sector Subtractions",
-        "content": "Unlike symmetrical layouts, asymmetric designs require you to find the component angles step-by-step. Defining the total boundary angle as $\\angle BOC = \\angle AOB + \\angle AOC$ is the key. Finding the right-angled triangle angle first using standard trigonometric ratios allows you to easily isolate the sector angle."
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Isosceles Right-Angled Triangle Angle",
+        "content": "When a right-angled triangle is isosceles (having both perpendicular sides equal, such as $OA = AC = 10\\text{ cm}$), the base angle is always exactly $45^\\circ$ or $\\dfrac{\\pi}{4}$ radians. Recognising this immediately saves you from needing to use a calculator to find the angle."
     }
-},
+},   
 {
     "id": "004759",
     "board": "CCEA",
