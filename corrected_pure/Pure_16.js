@@ -194,7 +194,7 @@ window.ALEVEL_QUESTIONS = [
         "Arc Length and Sector Area"
     ],
     "img": "images/Pure/004756.png",
-    "question": "The diagram shows a design for a symmetrical mirror, $ABCDE$, consisting of a sector of a circle $EBD$ centred at $B$, together with two congruent right-angled triangles, $BAE$ and $BCD$, which are right-angled at $A$ and $C$ respectively.<br>The straight line $AC$ has a length of $60\\text{ cm}$, and $AE = CD = 40\\text{ cm}$.<br><strong>(a)</strong> Find the angle $EBD$ in radians.<br><strong>(b)</strong> Find the total area of the mirror.",
+    "question": "The diagram shows a design for a symmetrical mirror, $ABCDE$, consisting of a sector of a circle $EBD$ centred at $B$, together with two congruent right-angled triangles, $BAE$ and $BCD$, which are right-angled at $A$ and $C$ respectively.<br><br>The straight line $AC$ has a length of $60\\text{ cm}$, and $AE = CD = 40\\text{ cm}$.<br><br><strong>(a)</strong> Find the angle $EBD$ in radians.<br><strong>(b)</strong> Find the total area of the mirror.",
     "steps": [
         "By symmetry, $B$ is the midpoint of $AC$, so the adjacent side $AB = BC = \\dfrac{60}{2} = 30\\text{ cm}$. In the right-angled triangle $BAE$, use the tangent ratio to find the angle $\\angle ABE$:\n\\begin{aligned} \\tan(\\angle ABE) &= \\dfrac{ AE }{ AB } \\cr \\tan(\\angle ABE) &= \\dfrac{ 40 }{ 30 } \\cr \\angle ABE &= \\arctan\\left( \\dfrac{4}{3} \\right) \\cr \\angle ABE &\\approx 0.92730\\text{ rad} \\end{aligned}",
         "Since the shape is symmetrical, $\\angle CBD = \\angle ABE \\approx 0.92730\\text{ rad}$. The points $A$, $B$, and $C$ lie on a straight horizontal line, so the angles sum to $\\pi$ radians. Calculate the angle $EBD$:\n\\begin{aligned} \\angle EBD &= \\pi - 2\\angle ABE \\cr \\angle EBD &= \\pi - 2\\arctan\\left( \\dfrac{4}{3} \\right) \\cr \\angle EBD &\\approx 3.14159 - 1.85459 \\cr \\angle EBD &\\approx 1.287\\text{ rad} \\end{aligned}\nThis is $1.29\\text{ radians}$ to three significant figures.",
@@ -233,7 +233,7 @@ window.ALEVEL_QUESTIONS = [
         "Sector Area"
     ],
     "img": "images/Pure/004757.png",
-    "question": "The diagram shows a decorative symmetrical plaque, $ABCDE$, consisting of a sector of a circle $BCD$ centred at $C$, together with two congruent right-angled triangles, $CAB$ and $CDE$, which are right-angled at $A$ and $E$ respectively.<br>The straight horizontal base $AE$ has a length of $32\\text{ cm}$, and $C$ is the midpoint of $AE$. The vertical edges are $AB = ED = 12\\text{ cm}$.<br><strong>(a)</strong> Find the angle $BCD$ in radians.<br><strong>(b)</strong> Find the total area of the plaque.",
+    "question": "The diagram shows a decorative symmetrical plaque, $ABCDE$, consisting of a sector of a circle $BCD$ centred at $C$, together with two congruent right-angled triangles, $CAB$ and $CDE$, which are right-angled at $A$ and $E$ respectively.<br>The straight horizontal base $AE$ has a length of $32\\text{ cm}$, and $C$ is the midpoint of $AE$. The vertical edges are $AB = ED = 12\\text{ cm}$.<br><br><strong>(a)</strong> Find the angle $BCD$ in radians.<br><br><strong>(b)</strong> Find the total area of the plaque.",
     "steps": [
         "Since $C$ is the midpoint of $AE$, the adjacent base side is $AC = CE = \\dfrac{32}{2} = 16\\text{ cm}$. In the right-angled triangle $CAB$, use the tangent ratio to calculate the angle $\\angle ACB$:\n\\begin{aligned} \\tan(\\angle ACB) &= \\dfrac{ AB }{ AC } \\cr \\tan(\\angle ACB) &= \\dfrac{ 12 }{ 16 } \\cr \\angle ACB &= \\arctan\\left( \\dfrac{3}{4} \\right) \\cr \\angle ACB &\\approx 0.64350\\text{ rad} \\end{aligned}",
         "The horizontal base $AE$ is a straight line, so the angles sum to $\\pi$ radians. By symmetry, $\\angle DCE = \\angle ACB \\approx 0.64350\\text{ rad}$. Calculate the angle $BCD$:\n\\begin{aligned} \\angle BCD &= \\pi - 2\\angle ACB \\cr \\angle BCD &= \\pi - 2\\arctan\\left( \\dfrac{3}{4} \\right) \\cr \\angle BCD &\\approx 3.14159 - 1.28700 \\cr \\angle BCD &\\approx 1.855\\text{ rad} \\end{aligned}\nThis is $1.85\\text{ radians}$ to three significant figures.",
@@ -310,7 +310,7 @@ window.ALEVEL_QUESTIONS = [
         "Sector Area"
     ],
     "img": "images/Pure/004759.png",
-    "question": "The diagram shows a logo, $OABC$, consisting of a sector of a circle $OAB$ of radius $10\\text{ cm}$ centred at $O$, and a right-angled triangle $OBC$ which is right-angled at $B$.<br>The vertical edge $BC$ has a length of $24\\text{ cm}$. The total angle of the logo $\\angle AOC$ is $3.0$ radians.<br><strong>(a)</strong> Find the angle $AOB$ of the sector in radians.<br><strong>(b)</strong> Find the total area of the logo.",
+    "question": "The diagram shows a logo, $OABC$, consisting of a sector of a circle $OAB$ of radius $10\\text{ cm}$ centred at $O$, and a right-angled triangle $OBC$ which is right-angled at $B$.<br>The vertical edge $BC$ has a length of $24\\text{ cm}$. The total angle of the logo $\\angle AOC$ is $3.0$ radians.<br><br><strong>(a)</strong> Find the angle $AOB$ of the sector in radians.<br><br><strong>(b)</strong> Find the total area of the logo.",
     "steps": [
         "In the right-angled triangle $OBC$, the adjacent side is the radius $OB = 10\\text{ cm}$ and the opposite side is $BC = 24\\text{ cm}$. Use the tangent ratio to find the angle $\\angle BOC$:\n\\begin{aligned} \\tan(\\angle BOC) &= \\dfrac{ BC }{ OB } \\cr \\tan(\\angle BOC) &= \\dfrac{ 24 }{ 10 } \\cr \\angle BOC &= \\arctan(2.4) \\cr \\angle BOC &\\approx 1.17601\\text{ rad} \\end{aligned}",
         "The total angle of the logo is given as $\\angle AOC = 3.0\\text{ rad}$. Subtract the angle $\\angle BOC$ to find the angle $AOB$ of the sector:\n\\begin{aligned} \\angle AOB &= \\angle AOC - \\angle BOC \\cr \\angle AOB &= 3.0 - 1.17601 \\cr \\angle AOB &\\approx 1.82399\\text{ rad} \\end{aligned}\nThis is $1.82\\text{ radians}$ to three significant figures.",
@@ -348,7 +348,7 @@ window.ALEVEL_QUESTIONS = [
         "Perimeter"
     ],
     "img": "images/Pure/004760.png",
-    "question": "The diagram shows a shield-shaped logo, $ABCDE$, consisting of a sector of a circle $EBD$ centred at $B$, together with two congruent right-angled triangles, $BAE$ and $BCD$, which are right-angled at $A$ and $C$ respectively.<br>The straight horizontal base $AC$ has a length of $160\\text{ cm}$, and the vertical edges are $AE = CD = 60\\text{ cm}$.<br><strong>(a)</strong> Find the angle $EBD$ in radians.<br><strong>(b)</strong> Find the outer perimeter of the shield (boundary $AE + AC + CD + \\text{arc } ED$).",
+    "question": "The diagram shows a shield-shaped logo, $ABCDE$, consisting of a sector of a circle $EBD$ centred at $B$, together with two congruent right-angled triangles, $BAE$ and $BCD$, which are right-angled at $A$ and $C$ respectively.<br>The straight horizontal base $AC$ has a length of $160\\text{ cm}$, and the vertical edges are $AE = CD = 60\\text{ cm}$.<br><br><strong>(a)</strong> Find the angle $EBD$ in radians.<br><br><strong>(b)</strong> Find the outer perimeter of the shield (boundary $AE + AC + CD + \\text{arc } ED$).",
     "steps": [
         "By symmetry, $B$ is the midpoint of $AC$, so the adjacent side $AB = BC = \\dfrac{160}{2} = 80\\text{ cm}$. In the right-angled triangle $BAE$, use the tangent ratio to find the angle $\\angle ABE$:\n\\begin{aligned} \\tan(\\angle ABE) &= \\dfrac{ AE }{ AB } \\cr \\tan(\\angle ABE) &= \\dfrac{ 60 }{ 80 } \\cr \\angle ABE &= \\arctan(0.75) \\cr \\angle ABE &\\approx 0.64350\\text{ rad} \\end{aligned}",
         "The horizontal base $AC$ is a straight line, so the angles sum to $\\pi$ radians. By symmetry, $\\angle CBD = \\angle ABE \\approx 0.64350\\text{ rad}$. Calculate the angle $EBD$:\n\\begin{aligned} \\angle EBD &= \\pi - 2\\angle ABE \\cr \\angle EBD &= \\pi - 2(0.64350) \\cr \\angle EBD &\\approx 3.14159 - 1.28700 \\cr \\angle EBD &\\approx 1.855\\text{ rad} \\end{aligned}\nThis is $1.85\\text{ radians}$ to three significant figures.",
@@ -373,6 +373,192 @@ window.ALEVEL_QUESTIONS = [
         "type": "caution",
         "title": "The Head Teacher's Eye: Boundary Perimeter Definitions",
         "content": "When calculating the outer perimeter of a composite shape, be careful not to include any internal lines. Here, $BE$ and $BD$ are internal construction lines (the radii of the sector). The outer boundary consists solely of the two vertical sides, the horizontal base, and the circular arc: $AE + AC + CD + \\text{arc } ED$."
+    }
+},
+{
+    "id": "004761",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Pure Mathematics",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Double-Angle Identities",
+        "Trigonometric Proofs"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Prove the identity:\n$$\\csc(2\\theta) + \\cot(2\\theta) \\equiv \\cot\\theta$$<br><br><strong>(b)</strong> Hence find the exact value of $\\cot\\left( \\dfrac{\\pi}{8} \\right)$.",
+    "steps": [
+        "Express the reciprocal trigonometric terms on the left-hand side (LHS) in terms of sine and cosine:\n\\begin{aligned} \\text{LHS} &= \\csc(2\\theta) + \\cot(2\\theta) \\cr \\text{LHS} &= \\dfrac{1}{ \\sin(2\\theta) } + \\dfrac{ \\cos(2\\theta) }{ \\sin(2\\theta) } \\cr \\text{LHS} &= \\dfrac{ 1 + \\cos(2\\theta) }{ \\sin(2\\theta) } \\end{aligned}",
+        "Apply the double-angle identities $1 + \\cos(2\\theta) = 2\\cos^2\\theta$ and $\\sin(2\\theta) = 2\\sin\\theta\\cos\\theta$ to simplify the fraction:\n\\begin{aligned} \\text{LHS} &= \\dfrac{ 2\\cos^2\\theta }{ 2\\sin\\theta\\cos\\theta } \\cr \\text{LHS} &= \\dfrac{ \\cos\\theta }{ \\sin\\theta } \\cr \\text{LHS} &= \\cot\\theta \\quad \\text{(RHS)} \\end{aligned}\nTherefore, the identity is proven.",
+        "To find the exact value of $\\cot\\left( \\dfrac{\\pi}{8} \\right)$, let $\\theta = \\dfrac{\\pi}{8}$, which means $2\\theta = \\dfrac{\\pi}{4}$. Substitute these into the proven identity:\n\\begin{aligned} \\cot\\left( \\dfrac{\\pi}{8} \\right) &= \\csc\\left( \\dfrac{\\pi}{4} \\right) + \\cot\\left( \\dfrac{\\pi}{4} \\right) \\cr \\cot\\left( \\dfrac{\\pi}{8} \\right) &= \\dfrac{1}{ \\sin\\left( \\dfrac{\\pi}{4} \\right) } + \\dfrac{1}{ \\tan\\left( \\dfrac{\\pi}{4} \\right) } \\cr \\cot\\left( \\dfrac{\\pi}{8} \\right) &= \\dfrac{1}{ \\dfrac{1}{\\sqrt{2}} } + \\dfrac{1}{1} \\cr \\cot\\left( \\dfrac{\\pi}{8} \\right) &= \\sqrt{2} + 1 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\sqrt{2} - 1$$",
+            "feedback": "This error is caused by using the subtraction identity $\\csc(2\\theta) - \\cot(2\\theta) \\equiv \\tan\\theta$ instead of the addition identity, resulting in the exact value for tangent instead of cotangent."
+        },
+        {
+            "ans": "$$\\sqrt{3} + 1$$",
+            "feedback": "This mistake occurs if the trigonometric values of $\\dfrac{\\pi}{4}$ are confused with those of $\\dfrac{\\pi}{6}$ or $\\dfrac{\\pi}{3}$ during evaluation."
+        },
+        {
+            "ans": "$$1 - \\sqrt{2}$$",
+            "feedback": "This is caused by a sign error when reciprocating the fraction $\\dfrac{1}{\\sqrt{2}}$, incorrectly yielding $-\\sqrt{2}$ instead of $+\\sqrt{2}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Choosing the Right Cosine Double-Angle Form",
+        "content": "There are three double-angle identities for $\\cos(2\\theta)$. When simplifying $1 + \\cos(2\\theta)$, always select $\\cos(2\\theta) = 2\\cos^2\\theta - 1$ because the $-1$ and $+1$ cancel out perfectly. Likewise, for $1 - \\cos(2\\theta)$, select $\\cos(2\\theta) = 1 - 2\\sin^2\\theta$ to cancel the constant."
+    }
+},
+{
+    "id": "004762",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Pure Mathematics",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Double-Angle Identities",
+        "Reciprocal Trigonometric Proofs"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Prove the identity:\n$$\\sec(2\\theta) + \\tan(2\\theta) \\equiv \\dfrac{\\cos\\theta + \\sin\\theta}{\\cos\\theta - \\sin\\theta}$<br><br><strong>(b)</strong> Hence find the exact value of:\n$$\\dfrac{\\cos\\left( \\dfrac{\\pi}{12} \\right) + \\sin\\left( \\dfrac{\\pi}{12} \\right)}{\\cos\\left( \\dfrac{\\pi}{12} \\right) - \\sin\\left( \\dfrac{\\pi}{12} \\right)}$$",
+    "steps": [
+        "Express the reciprocal and tangent terms on the left-hand side (LHS) in terms of sine and cosine:\n\\begin{aligned} \\text{LHS} &= \\sec(2\\theta) + \\tan(2\\theta) \\cr \\text{LHS} &= \\dfrac{1}{ \\cos(2\\theta) } + \\dfrac{ \\sin(2\\theta) }{ \\cos(2\\theta) } \\cr \\text{LHS} &= \\dfrac{ 1 + \\sin(2\\theta) }{ \\cos(2\\theta) } \\end{aligned}",
+        "Rewrite the numerator and denominator using trigonometric identities. Replace $1$ with $\\cos^2\\theta + \\sin^2\\theta$ and expand $\\sin(2\\theta)$ to factorise the expression:\n\\begin{aligned} 1 + \\sin(2\\theta) &= \\cos^2\\theta + \\sin^2\\theta + 2\\sin\\theta\\cos\\theta \\cr 1 + \\sin(2\\theta) &= \\left( \\cos\\theta + \\sin\\theta \\right)^2 \\cr\\cr \\cos(2\\theta) &= \\cos^2\\theta - \\sin^2\\theta \\cr \\cos(2\\theta) &= \\left( \\cos\\theta - \\sin\\theta \\right)\\left( \\cos\\theta + \\sin\\theta \\right) \\end{aligned}",
+        "Substitute these factorised forms back into the fraction and cancel the common factor $(\\cos\\theta + \\sin\\theta)$:\n\\begin{aligned} \\text{LHS} &= \\dfrac{ \\left( \\cos\\theta + \\sin\\theta \\right)^2 }{ \\left( \\cos\\theta - \\sin\\theta \\right)\\left( \\cos\\theta + \\sin\\theta \\right) } \\cr \\text{LHS} &= \\dfrac{ \\cos\\theta + \\sin\\theta }{ \\cos\\theta - \\sin\\theta } \\quad \\text{(RHS)} \\end{aligned}\nTherefore, the identity is proven.",
+        "To find the exact value of the given expression, let $\\theta = \\dfrac{\\pi}{12}$, which means $2\\theta = \\dfrac{\\pi}{6}$. Use the proven identity:\n\\begin{aligned} \\dfrac{\\cos\\left( \\dfrac{\\pi}{12} \\right) + \\sin\\left( \\dfrac{\\pi}{12} \\right)}{\\cos\\left( \\dfrac{\\pi}{12} \\right) - \\sin\\left( \\dfrac{\\pi}{12} \\right)} &= \\sec\\left( \\dfrac{\\pi}{6} \\right) + \\tan\\left( \\dfrac{\\pi}{6} \\right) \\cr &= \\dfrac{1}{ \\cos\\left( \\dfrac{\\pi}{6} \\right) } + \\tan\\left( \\dfrac{\\pi}{6} \\right) \\cr &= \\dfrac{1}{ \\dfrac{\\sqrt{3}}{2} } + \\dfrac{1}{\\sqrt{3}} \\cr &= \\dfrac{2}{\\sqrt{3}} + \\dfrac{1}{\\sqrt{3}} \\cr &= \\dfrac{3}{\\sqrt{3}} \\cr &= \\sqrt{3} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\dfrac{\\sqrt{3}}{3}$$",
+            "feedback": "This error occurs if the final fraction $\\dfrac{3}{\\sqrt{3}}$ is simplified incorrectly as its reciprocal $\\dfrac{1}{\\sqrt{3}}$."
+        },
+        {
+            "ans": "$$2 + \\sqrt{3}$$",
+            "feedback": "This mistake is caused by using the incorrect angle $\\theta = \\dfrac{\\pi}{12}$ as the input of the double-angle side, evaluating $\\sec\\left( \\dfrac{\\pi}{12} \\right)$ incorrectly or performing an incorrect half-angle expansion."
+        },
+        {
+            "ans": "$$\\sqrt{2}$$",
+            "feedback": "This arises from an arithmetic error when adding the fractions, or if the exact trigonometric values of $30^\\circ$ were confused with those of $45^\\circ$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Spotting Perfect Square Trigonometric Quadratics",
+        "content": "The expression $1 + \\sin(2\\theta)$ is a hidden perfect square quadratic that appears frequently in advanced A-level trigonometry. Since $1 \\equiv \\cos^2\\theta + \\sin^2\\theta$ and $\\sin(2\\theta) \\equiv 2\\sin\\theta\\cos\\theta$, we can always rewrite it as $(\\cos\\theta + \\sin\\theta)^2$. Memorising this pattern saves a significant amount of algebraic derivation."
+    }
+},
+{
+    "id": "004763",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Pure Mathematics",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Trigonometric Identities",
+        "Double-Angle Formulae"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Prove the identity:\n$$\\dfrac{2\\tan\\theta}{1 + \\tan^2\\theta} \\equiv \\sin(2\\theta)$$<br><br><strong>(b)</strong> Hence find the exact value of:\n$$\\dfrac{2\\tan\\left( \\dfrac{\\pi}{12} \\right)}{1 + \\tan^2\\left( \\dfrac{\\pi}{12} \\right)}$$",
+    "steps": [
+        "Express the left-hand side (LHS) using the Pythagorean identity $1 + \\tan^2\\theta \\equiv \\sec^2\\theta$:\n\\begin{aligned} \\text{LHS} &= \\dfrac{2\\tan\\theta}{ 1 + \\tan^2\\theta } \\cr \\text{LHS} &= \\dfrac{2\\tan\\theta}{ \\sec^2\\theta } \\end{aligned}",
+        "Convert the tangent and secant terms into sine and cosine expressions to simplify the fraction:\n\\begin{aligned} \\text{LHS} &= \\dfrac{ 2\\left( \\dfrac{\\sin\\theta}{\\cos\\theta} \\right) }{ \\dfrac{1}{\\cos^2\\theta} } \\cr \\text{LHS} &= 2\\left( \\dfrac{\\sin\\theta}{\\cos\\theta} \\right) \\times \\cos^2\\theta \\cr \\text{LHS} &= 2\\sin\\theta\\cos\\theta \\cr \\text{LHS} &= \\sin(2\\theta) \\quad \\text{(RHS)} \\end{aligned}\nTherefore, the identity is proven.",
+        "To find the exact value of the given expression, let $\\theta = \\dfrac{\\pi}{12}$, which means $2\\theta = \\dfrac{\\pi}{6}$. Substitute this into our proven identity:\n\\begin{aligned} \\dfrac{2\\tan\\left( \\dfrac{\\pi}{12} \\right)}{1 + \\tan^2\\left( \\dfrac{\\pi}{12} \\right)} &= \\sin\\left( 2 \\times \\dfrac{\\pi}{12} \\right) \\cr &= \\sin\\left( \\dfrac{\\pi}{6} \\right) \\cr &= \\dfrac{1}{2} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\dfrac{\\sqrt{3}}{2}$$",
+            "feedback": "This error occurs if you evaluate $\\cos\\left( \\dfrac{\\pi}{6} \\right)$ instead of $\\sin\\left( \\dfrac{\\pi}{6} \\right)$ during final evaluation."
+        },
+        {
+            "ans": "$$1$$",
+            "feedback": "This mistake is caused by confusing $\\dfrac{\\pi}{6}$ with $\\dfrac{\\pi}{2}$ or making an algebraic slip during the division of sines and cosines."
+        },
+        {
+            "ans": "$$\\dfrac{\\sqrt{2}}{2}$$",
+            "feedback": "This is caused by confusing the exact trigonometric values of $\\dfrac{\\pi}{6}$ ($30^\\circ$) with those of $\\dfrac{\\pi}{4}$ ($45^\\circ$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: The Rational Sine Identity",
+        "content": "This identity represents the rational parameterisation of the sine function, expressing $\\sin(2\\theta)$ purely in terms of $\\tan\\theta$. Knowing this and its cosine counterpart, $\\cos(2\\theta) \\equiv \\dfrac{1 - \\tan^2\\theta}{1 + \\tan^2\\theta}$, is extremely useful for solving calculus problems involving Weierstrass substitutions."
+    }
+},
+{
+    "id": "004764",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Pure Mathematics",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Trigonometric Identities",
+        "Double-Angle Formulae"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Prove the identity:\n$$\\dfrac{1 - \\tan^2\\theta}{1 + \\tan^2\\theta} \\equiv \\cos(2\\theta)$$<br><br><strong>(b)</strong> Hence find the exact value of:\n$$\\dfrac{1 - \\tan^2\\left( \\dfrac{\\pi}{8} \\right)}{1 + \\tan^2\\left( \\dfrac{\\pi}{8} \\right)}$$",
+    "steps": [
+        "Express the left-hand side (LHS) using the Pythagorean identity $1 + \\tan^2\\theta \\equiv \\sec^2\\theta$:\n\\begin{aligned} \\text{LHS} &= \\dfrac{1 - \\tan^2\\theta}{ 1 + \\tan^2\\theta } \\cr \\text{LHS} &= \\dfrac{1 - \\tan^2\\theta}{ \\sec^2\\theta } \\end{aligned}",
+        "Convert the tangent and secant terms into sine and cosine expressions to simplify the fraction:\n\\begin{aligned} \\text{LHS} &= \\dfrac{ 1 - \\dfrac{\\sin^2\\theta}{\\cos^2\\theta} }{ \\dfrac{1}{\\cos^2\\theta} } \\cr \\text{LHS} &= \\left( 1 - \\dfrac{\\sin^2\\theta}{\\cos^2\\theta} \\right) \\times \\cos^2\\theta \\cr \\text{LHS} &= \\cos^2\\theta - \\sin^2\\theta \\cr \\text{LHS} &= \\cos(2\\theta) \\quad \\text{(RHS)} \\end{aligned}\nTherefore, the identity is proven.",
+        "To find the exact value of the given expression, let $\\theta = \\dfrac{\\pi}{8}$, which means $2\\theta = \\dfrac{\\pi}{4}$. Substitute this into our proven identity:\n\\begin{aligned} \\dfrac{1 - \\tan^2\\left( \\dfrac{\\pi}{8} \\right)}{1 + \\tan^2\\left( \\dfrac{\\pi}{8} \\right)} &= \\cos\\left( 2 \\times \\dfrac{\\pi}{8} \\right) \\cr &= \\cos\\left( \\dfrac{\\pi}{4} \\right) \\cr &= \\dfrac{\\sqrt{2}}{2} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\dfrac{1}{2}$$",
+            "feedback": "This error occurs if you evaluate $\\cos\\left( \\dfrac{\\pi}{3} \\right)$ instead of $\\cos\\left( \\dfrac{\\pi}{4} \\right)$ during final evaluation."
+        },
+        {
+            "ans": "$$\\sqrt{2} - 1$$",
+            "feedback": "This is caused by failing to apply the identity, instead trying to evaluate the numerator and denominator directly and making an algebraic error."
+        },
+        {
+            "ans": "$$\\dfrac{\\sqrt{3}}{2}$$",
+            "feedback": "This arises if the trigonometric angle is incorrectly evaluated as $\\dfrac{\\pi}{6}$ instead of $\\dfrac{\\pi}{4}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Distributing Terms Over Fractions",
+        "content": "When multiplying $\\left( 1 - \\dfrac{\\sin^2\\theta}{\\cos^2\\theta} \\right)$ by $\\cos^2\\theta$, make sure you distribute the $\\cos^2\\theta$ term across both parts inside the bracket: $1 \\times \\cos^2\\theta - \\dfrac{\\sin^2\\theta}{\\cos^2\\theta} \\times \\cos^2\\theta = \\cos^2\\theta - \\sin^2\\theta$. Forgetting to multiply the first constant of $1$ is a very common mistake."
+    }
+},
+{
+    "id": "004765",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Pure Mathematics",
+    "topic": "Trigonometry",
+    "subtopic": [
+        "Trigonometric Identities",
+        "Double-Angle Proofs"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Prove the identity:\n$$\\dfrac{\\sin(2\\theta)}{1 - \\cos(2\\theta)} \\equiv \\cot\\theta$$<br><br><strong>(b)</strong> Hence find the exact value of:\n$$\\dfrac{\\sin\\left( \\dfrac{\\pi}{4} \\right)}{1 - \\cos\\left( \\dfrac{\\pi}{4} \\right)}$$",
+    "steps": [
+        "Express the double-angle terms on the left-hand side (LHS) in terms of single-angle sine and cosine expressions using identities:\n\\begin{aligned} \\text{LHS} &= \\dfrac{ \\sin(2\\theta) }{ 1 - \\cos(2\\theta) } \\cr \\text{LHS} &= \\dfrac{ 2\\sin\\theta\\cos\\theta }{ 1 - \\left( 1 - 2\\sin^2\\theta \\right) } \\cr \\text{LHS} &= \\dfrac{ 2\\sin\\theta\\cos\\theta }{ 2\\sin^2\\theta } \\end{aligned}",
+        "Cancel the common factors of $2$ and $\\sin\\theta$ in the numerator and denominator to simplify the expression:\n\\begin{aligned} \\text{LHS} &= \\dfrac{ \\cos\\theta }{ \\sin\\theta } \\cr \\text{LHS} &= \\cot\\theta \\quad \\text{(RHS)} \\end{aligned}\nTherefore, the identity is proven.",
+        "To find the exact value of the given expression, let $2\\theta = \\dfrac{\\pi}{4}$, which means $\\theta = \\dfrac{\\pi}{8}$. Substitute this into our proven identity:\n\\begin{aligned} \\dfrac{\\sin\\left( \\dfrac{\\pi}{4} \\right)}{1 - \\cos\\left( \\dfrac{\\pi}{4} \\right)} &= \\cot\\left( \\dfrac{\\pi}{8} \\right) \\cr &= \\csc\\left( \\dfrac{\\pi}{4} \\right) + \\cot\\left( \\dfrac{\\pi}{4} \\right) \\cr &= \\sqrt{2} + 1 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\sqrt{2} - 1$$",
+            "feedback": "This error occurs if you evaluate $\\tan\\left( \\dfrac{\\pi}{8} \\right)$ instead of $\\cot\\left( \\dfrac{\\pi}{8} \\right)$, which represents a reciprocal inversion mistake."
+        },
+        {
+            "ans": "$$1 - \\sqrt{2}$$",
+            "feedback": "This is caused by a sign error when rationalising the denominator of the fraction, resulting in a negative coefficient for the root."
+        },
+        {
+            "ans": "$$\\sqrt{3} + 1$$",
+            "feedback": "This mistake occurs if the exact values for $\\dfrac{\\pi}{4}$ are confused with those of $\\dfrac{\\pi}{6}$ or $\\dfrac{\\pi}{3}$ during evaluation."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Eliminating Constants with Double-Angles",
+        "content": "To simplify $1 - \\cos(2\\theta)$, we choose the double-angle identity $\\cos(2\\theta) = 1 - 2\\sin^2\\theta$. This yields $1 - (1 - 2\\sin^2\\theta) = 2\\sin^2\\theta$, effectively eliminating the constant $1$. Choosing either of the other two forms for $\\cos(2\\theta)$ would keep a constant term in the denominator, making simplification much more difficult."
     }
 }
 ];
