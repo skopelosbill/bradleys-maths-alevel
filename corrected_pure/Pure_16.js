@@ -1191,7 +1191,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Ordinates vs Strips",
-        "content": "Always remember that the number of strips ($n$) is always **one less** than the number of ordinates. A common exam slip is to use the number of ordinates directly as the denominator when calculating the strip width $h$."
+        "content": "Always remember that the number of strips ($n$) is always <strong>one less</strong> than the number of ordinates. A common exam slip is to use the number of ordinates directly as the denominator when calculating the strip width $h$."
     }
 },
 {
@@ -1267,7 +1267,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Radian Mode is Mandatory",
-        "content": "In calculus (differentiation and integration), trigonometric inputs are **always** in radians. Always double-check that your calculator shows a little 'R' on screen. A single degree-mode calculation will destroy your entire marks allocation!"
+        "content": "In calculus (differentiation and integration), trigonometric inputs are <strong>always</strong> in radians. Always double-check that your calculator shows a little 'R' on screen. A single degree-mode calculation will destroy your entire marks allocation!"
     }
 },
 {
@@ -1306,7 +1306,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Over vs Underestimates",
-        "content": "To determine whether the Trapezium Rule yields an overestimate or underestimate, always look at the concavity of the curve (the sign of $y''$):<br>1. If $y'' > 0$ (concave up), the straight chords lie **above** the curve, yielding an **overestimate**.<br>2. If $y'' < 0$ (concave down), the straight chords lie **below** the curve, yielding an **underestimate**."
+        "content": "To determine whether the Trapezium Rule yields an overestimate or underestimate, always look at the concavity of the curve (the sign of $y''$):<br>1. If $y'' > 0$ (concave up), the straight chords lie <strong>above</strong> the curve, yielding an <strong>overestimate</strong>.<br>2. If $y'' < 0$ (concave down), the straight chords lie <strong>below</strong> the curve, yielding an <strong>underestimate</strong>."
     }
 },
 {
@@ -1344,6 +1344,203 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Real-World Discrete Data",
         "content": "In real-world engineering or physical applications, we do not have a mathematical equation for the curve. We only have discrete experimental coordinates. The strip width $h$ is simply the constant gap between consecutive $x$-measurements. To increase accuracy, you must physically take more data points at smaller intervals ($h$ decreases)."
+    }
+},
+{
+    "id": "004786",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Differential Equations",
+    "topic": "First Order Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Exponential Growth"
+    ],
+    "img": false,
+    "question": "The population, $P$, of a rare species of birds in a newly established nature reserve grows at a rate proportional to the population at any time $t$ (years). This can be modelled by the differential equation:<br>$$\\dfrac{ \\mathrm{d}P }{ \\mathrm{d}t } = kP$$<br>where $k$ is a constant. The initial population of the birds is $P_0$.<br><br><strong>(i)</strong> Show that $P = P_0 e^{ kt }$.<br><br><strong>(ii)</strong> Given that the initial population doubles in 6 years, find the value of $k$ correct to 4 decimal places.<br><br><strong>(iii)</strong> Find the number of years until the initial population is trebled. Give your answer to the nearest year.<br><br><strong>(iv)</strong> State a limitation of this model.",
+    "steps": [
+        "<strong>Part (i):</strong> We solve the differential equation by separating variables to isolate $P$ on the left and $t$ on the right:<br>$$\\dfrac{ 1 }{ P } \\mathrm{d}P = k \\mathrm{d}t$$<br>Integrate both sides of the equation:<br>\\begin{aligned} \\int \\dfrac{ 1 }{ P } \\mathrm{d}P &= \\int k \\mathrm{d}t \\cr \\ln P &= kt + C \\end{aligned}<br>where $C$ is the constant of integration.",
+        "We rewrite the equation in exponential form:<br>\\begin{aligned} P &= e^{ kt + C } \\cr P &= e^{ C } e^{ kt } \\cr P &= A e^{ kt } \\end{aligned}<br>where $A = e^C$ is a constant.<br><br>Apply the initial condition $P = P_0$ when $t = 0$:<br>\\begin{aligned} P_0 &= A e^{ 0 } \\cr A &= P_0 \\end{aligned}<br>Substituting $A = P_0$ back gives our required solution:<br>$$P = P_0 e^{ kt }$$ <strong>(Shown)</strong>",
+        "<strong>Part (ii):</strong> We are given that the population doubles ($P = 2P_0$) when $t = 6$ years. Substitute these values into the model:<br>\\begin{aligned} 2P_0 &= P_0 e^{ 6k } \\cr 2 &= e^{ 6k } \\cr 6k &= \\ln 2 \\cr k &= \\dfrac{ \\ln 2 }{ 6 } \\approx 0.1155 \\end{aligned}<br>Thus, $k \\approx 0.1155$ (to 4 decimal places).",
+        "<strong>Part (iii):</strong> We seek the time $t$ when the population has trebled ($P = 3P_0$):<br>\\begin{aligned} 3P_0 &= P_0 e^{ 0.115525 t } \\cr 3 &= e^{ 0.115525 t } \\cr 0.115525 t &= \\ln 3 \\cr t &= \\dfrac{ \\ln 3 }{ 0.115525 } \\approx 9.51 \\text{ years} \\end{aligned}<br>To the nearest year, it takes $10$ years for the population to treble.",
+        "<strong>Part (iv):</strong> A limitation of this model is that it assumes unlimited growth. In reality, population growth is constrained by environmental carrying capacity, finite physical space, and limited food or nesting resources in the nature reserve."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(ii)</strong> $k = 0.1155$<br><strong>(iii)</strong> $t = 11\\text{ years}$",
+            "feedback": "Your value of $k$ is correct. However, in part (iii), this error occurs if you made a calculation slip, such as dividing by $0.1$ instead of $k$, or if you rounded $9.51$ up to $11$ instead of rounding to the nearest integer, which is $10$."
+        },
+        {
+            "ans": "<strong>(ii)</strong> $k = 0.0578$<br><strong>(iii)</strong> $t = 19\\text{ years}$",
+            "feedback": "This occurs if you made a factor of 2 error when solving $e^{ 6k } = 2$, solving it as $6k = \\ln 2 \\implies k = \\ln 2 / 12$ by mistakenly doubling the time or halving the logarithm, which then doubles your time estimate in part (iii)."
+        },
+        {
+            "ans": "<strong>(ii)</strong> $k = 0.1155$<br><strong>(iii)</strong> $t = 8\\text{ years}$",
+            "feedback": "While $k$ is correct, this time estimate is wrong. This happens if you mistakenly solved $2 = e^{ kt }$ again for the trebling time or solved $kt = \\ln 2$ instead of $kt = \\ln 3$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Explicit Constant of Integration",
+        "content": "When separating variables, do not just tack $C$ onto the end of the exponential function. The integration constant must be introduced at the integration stage, yielding $\\ln P = kt + C$, which then exponentiates to $P = e^{ kt + C } = A e^{ kt }$, where $A = e^C = P_0$. Skip this, and you will lose full marks for the derivation!"
+    }
+},
+{
+    "id": "004787",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Differential Equations",
+    "topic": "First Order Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Exponential Decay"
+    ],
+    "img": false,
+    "question": "A patient is injected with a dose of a therapeutic drug. The mass, $M$, in milligrams, of the drug remaining in the patient's bloodstream after $t$ hours decreases at a rate proportional to the mass of the drug present at that time. This is modelled by the differential equation:<br>$$\\dfrac{ \\mathrm{d}M }{ \\mathrm{d}t } = -kM$$<br>where $k$ is a positive constant. The initial mass of the drug injected is $M_0$.<br><br><strong>(i)</strong> Show that $M = M_0 e^{ -kt }$.<br><br><strong>(ii)</strong> Given that the mass of the drug halves in 8 hours (a half-life of 8 hours), find the exact value of $k$ in terms of $\\ln 2$.<br><br><strong>(iii)</strong> Find the time taken, in hours, for the mass of the drug in the patient's bloodstream to fall to $15\\%$ of its initial value. Give your answer to the nearest hour.<br><br><strong>(iv)</strong> State a physical reason why this model may not be accurate over an extremely long period.",
+    "steps": [
+        "<strong>Part (i):</strong> We separate variables to group the drug mass terms on the left and the time terms on the right:<br>$$\\dfrac{ 1 }{ M } \\mathrm{d}M = -k \\mathrm{d}t$$<br>Integrate both sides:<br>\\begin{aligned} \\int \\dfrac{ 1 }{ M } \\mathrm{d}M &= \\int -k \\mathrm{d}t \\cr \\ln M &= -kt + C \\end{aligned}<br>where $C$ is the constant of integration.",
+        "Solve for $M$ by exponentiating both sides:<br>\\begin{aligned} M &= e^{ -kt + C } \\cr M &= e^{ C } e^{ -kt } \\cr M &= A e^{ -kt } \\end{aligned}<br>where $A = e^C$ is a constant.<br><br>Apply the initial condition $M = M_0$ when $t = 0$:<br>\\begin{aligned} M_0 &= A e^{ 0 } \\cr A &= M_0 \\end{aligned}<br>Substitute $A = M_0$ back to obtain our solution:<br>$$M = M_0 e^{ -kt }$$ <strong>(Shown)</strong>",
+        "<strong>Part (ii):</strong> We are given that the drug mass halves ($M = 0.5 M_0$) when $t = 8$ hours. Substitute these values into the model:<br>\\begin{aligned} 0.5 M_0 &= M_0 e^{ -8k } \\cr 0.5 &= e^{ -8k } \\cr \\ln(0.5) &= -8k \\cr -\\ln 2 &= -8k \\cr k &= \\dfrac{ \\ln 2 }{ 8 } \\end{aligned}",
+        "<strong>Part (iii):</strong> We seek the time $t$ when the remaining mass of the drug is $15\\%$ of its initial mass ($M = 0.15 M_0$):<br>\\begin{aligned} 0.15 M_0 &= M_0 e^{ -kt } \\cr 0.15 &= e^{ -kt } \\cr \\ln(0.15) &= -kt \\cr t &= -\\dfrac{ \\ln(0.15) }{ k } \\end{aligned}<br><br>Substitute $k = \\dfrac{ \\ln 2 }{ 8 }$ into our equation:<br>\\begin{aligned} t &= -\\dfrac{ 8 \\ln(0.15) }{ \\ln 2 } \\cr t &\\approx -\\dfrac{ 8 \\times (-1.8971) }{ 0.6931 } \\cr t &\\approx 21.90 \\text{ hours} \\end{aligned}<br>To the nearest hour, it takes $22$ hours for the mass of the drug to fall to $15\\%$ of its initial value.",
+        "<strong>Part (iv):</strong> Over an extremely long period, the model may fail because clearance rates change as the drug reaches very low concentrations, metabolic rates can fluctuate, or the body may completely clear the remaining drug molecules, preventing the mass from truly approaching zero asymptotically."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(ii)</strong> $k = \\dfrac{ \\ln 2 }{ 8 }$<br><strong>(iii)</strong> $t = 16\\text{ hours}$",
+            "feedback": "Your value of $k$ is correct. However, in part (iii), this error occurs if you mistakenly calculated the time for the mass to fall to $25\\%$ (which is exactly two half-lives, $2 \\times 8 = 16$ hours) instead of $15\\%$."
+        },
+        {
+            "ans": "<strong>(ii)</strong> $k = 8 \\ln 2$<br><strong>(iii)</strong> $t = 3\\text{ hours}$",
+            "feedback": "This error occurs if you solved $e^{ -8k } = 0.5$ incorrectly, writing $-8k = \\ln 0.5 \\implies k = 8 \\ln 2$ by multiplying by $8$ instead of dividing. This large $k$ value then leads to an unrealistically short clearance time."
+        },
+        {
+            "ans": "<strong>(ii)</strong> $k = \\dfrac{ \\ln 2 }{ 8 }$<br><strong>(iii)</strong> $t = 25\\text{ hours}$",
+            "feedback": "While $k$ is correct, this error occurs in part (iii) if you made a sign error when evaluating the logarithm, such as solving $\\ln(0.15) = 1.897$ and adding it incorrectly, or if you used an incorrect clearance threshold."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Exact Constants vs Decimals",
+        "content": "In multi-part questions, always keep your constant $k$ in its exact logarithmic form, such as $k = \\dfrac{ \\ln 2 }{ 8 }$, rather than using a rounded decimal. Using exact forms in your calculator prevents rounding errors from compounding in later steps."
+    }
+},
+{
+    "id": "004788",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Differential Equations",
+    "topic": "First Order Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Newton's Law of Cooling"
+    ],
+    "img": false,
+    "question": "A hot cup of tea is left to cool in a room with a constant temperature of $20^\\circ\\text{C}$. The temperature, $\\theta$ (in $^\\circ\\text{C}$), of the tea at any time $t$ minutes after being poured satisfies the differential equation:<br>$$\\dfrac{ \\mathrm{d}\\theta }{ \\mathrm{d}t } = -k(\\theta - 20)$$<br>where $k$ is a positive constant. The initial temperature of the tea is $\\theta_0 = 85^\\circ\\text{C}$.<br><br><strong>(i)</strong> Show by integration that $\\theta = 20 + 65e^{ -kt }$.<br><br><strong>(ii)</strong> Given that the tea cools to $55^\\circ\\text{C}$ after 10 minutes, find the value of $k$ correct to 3 decimal places.<br><br><strong>(iii)</strong> Find the temperature of the tea, to the nearest degree, after 25 minutes.<br><br><strong>(iv)</strong> State the limiting temperature of the tea as $t$ becomes very large.",
+    "steps": [
+        "<strong>Part (i):</strong> We separate variables by treating the expression $(\\theta - 20)$ as a single entity:<br>$$\\dfrac{ 1 }{ \\theta - 20 } \\mathrm{d}\\theta = -k \\mathrm{d}t$$<br>Integrate both sides:<br>\\begin{aligned} \\int \\dfrac{ 1 }{ \\theta - 20 } \\mathrm{d}\\theta &= \\int -k \\mathrm{d}t \\cr \\ln(\\theta - 20) &= -kt + C \\end{aligned}<br>where $C$ is the constant of integration.",
+        "Exponentiate both sides of the equation to solve for $\\theta - 20$:<br>\\begin{aligned} \\theta - 20 &= e^{ -kt + C } \\cr \\theta - 20 &= e^{ C } e^{ -kt } \\cr \\theta - 20 &= A e^{ -kt } \\end{aligned}<br>where $A = e^C$ is a constant. Thus, our general solution is:<br>$$\\theta = 20 + A e^{ -kt }$$",
+        "Apply our initial condition $\\theta = 85^\\circ\\text{C}$ when $t = 0$:<br>\\begin{aligned} 85 &= 20 + A e^{ 0 } \\cr 85 &= 20 + A \\cr A &= 65 \\end{aligned}<br>Substitute $A = 65$ back into our equation to obtain the cooling model:<br>$$\\theta = 20 + 65e^{ -kt }$$ <strong>(Shown)</strong>",
+        "<strong>Part (ii):</strong> We are given that $\\theta = 55^\\circ\\text{C}$ when $t = 10$ minutes. Substitute these values to solve for $k$:<br>\\begin{aligned} 55 &= 20 + 65e^{ -10k } \\cr 35 &= 65e^{ -10k } \\cr e^{ -10k } &= \\dfrac{ 35 }{ 65 } = \\dfrac{ 7 }{ 13 } \\cr -10k &= \\ln\\left( \\dfrac{ 7 }{ 13 } \\right) \\cr k &= -\\dfrac{ 1 }{ 10 } \\ln\\left( \\dfrac{ 7 }{ 13 } \\right) \\approx 0.062 \\end{aligned}",
+        "<strong>Part (iii):</strong> We seek the temperature $\\theta$ when $t = 25$ minutes, using $k = 0.0619$:<br>\\begin{aligned} \\theta &= 20 + 65e^{ -0.0619(25) } \\cr \\theta &= 20 + 65e^{ -1.5475 } \\cr \\theta &\\approx 20 + 65(0.2128) \\cr \\theta &\\approx 20 + 13.83 \\approx 33.83^\\circ\\text{C} \\end{aligned}<br>To the nearest degree, the temperature of the tea after 25 minutes is $34^\\circ\\text{C}$.",
+        "<strong>Part (iv):</strong> As $t$ becomes very large ($t \\to \\infty$), the term $e^{ -kt } \\to 0$. Therefore:<br>$$\\theta \\to 20 + 65(0) = 20$$<br>The limiting temperature of the tea is the room temperature of $20^\\circ\\text{C}$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(ii)</strong> $k = 0.062$<br><strong>(iii)</strong> $\\theta = 48^\\circ\\text{C}$",
+            "feedback": "While your value of $k$ is correct, this temperature is incorrect. It occurs if you evaluated the formula in part (iii) but forgot to add the room temperature constant of $20$ to the exponential decay term ($20 + 13.8 = 34$)."
+        },
+        {
+            "ans": "<strong>(ii)</strong> $k = 0.046$<br><strong>(iii)</strong> $\\theta = 41^\\circ\\text{C}$",
+            "feedback": "This occurs if you set up the initial conditions incorrectly in part (i), solving the differential equation as $\\theta = 85 e^{ -kt }$ by neglecting the ambient room temperature boundary of $20$, which propagates to an incorrect $k$ value."
+        },
+        {
+            "ans": "<strong>(ii)</strong> $k = 0.062$<br><strong>(iii)</strong> $\\theta = 31^\\circ\\text{C}$",
+            "feedback": "While $k$ is correct, this error occurs in part (iii) if you used $t = 30$ instead of $t = 25$, or made a minor rounding slip when evaluating the exponential term."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Shifted Separation of Variables",
+        "content": "For Newton's Law of Cooling, the variable to separate is the temperature difference $(\\theta - 20)$. Treat $(\\theta - 20)$ as a single algebraic entity, $\\int \\dfrac{ 1 }{ \\theta - 20 } \\mathrm{d}\\theta = \\ln(\\theta - 20) + C$. Do not split the terms inside the denominator!"
+    }
+},
+{
+    "id": "004789",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Integration",
+    "topic": "First Order Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Non-linear Models"
+    ],
+    "img": false,
+    "question": "A water tank with a small leak at the bottom is being drained. The volume of water, $V$ (in $\\text{m}^3$), remaining in the tank at time $t$ (in hours) decreases at a rate proportional to the square root of the volume of water remaining. This is modelled by the differential equation:<br>$$\\dfrac{ \\mathrm{d}V }{ \\mathrm{d}t } = -k \\sqrt{ V }$$<br>where $k$ is a positive constant. The initial volume of water in the tank is $V_0$.<br><br><strong>(i)</strong> Show by integration that $V = \\left( \\sqrt{ V_0 } - \\dfrac{ 1 }{ 2 }kt \\right)^2$.<br><br><strong><strong>(ii)</strong></strong> Given that the initial volume of water is $16\\text{ m}^3$ and it takes exactly 8 hours to drain the tank completely, find the value of $k$.<br><br><strong>(iii)</strong> Find the volume of water remaining in the tank after 3 hours. Give your answer to 2 decimal places.<br><br><strong>(iv)</strong> State a limitation of this model for values of $t > 8$.",
+    "steps": [
+        "<strong>Part (i):</strong> We solve our differential equation by separating variables:<br>$$V^{ -1/2 } \\mathrm{d}V = -k \\mathrm{d}t$$<br>Integrate both sides:<br>\\begin{aligned} \\int V^{ -1/2 } \\mathrm{d}V &= \\int -k \\mathrm{d}t \\cr 2V^{ 1/2 } &= -kt + C \\end{aligned}<br>where $C$ is the constant of integration.",
+        "We rearrange this equation to solve for $\\sqrt{ V }$:<br>$$\\sqrt{ V } = -\\dfrac{ 1 }{ 2 }kt + \\dfrac{ C }{ 2 }$$<br>Apply the initial condition $V = V_0$ when $t = 0$:<br>\\begin{aligned} \\sqrt{ V_0 } &= -\\dfrac{ 1 }{ 2 }k(0) + \\dfrac{ C }{ 2 } \\cr \\sqrt{ V_0 } &= \\dfrac{ C }{ 2 } \\end{aligned}<br>Substitute $\\dfrac{ C }{ 2 } = \\sqrt{ V_0 }$ back into our expression and square both sides:<br>\\begin{aligned} \\sqrt{ V } &= \\sqrt{ V_0 } - \\dfrac{ 1 }{ 2 }kt \\cr V &= \\left( \\sqrt{ V_0 } - \\dfrac{ 1 }{ 2 }kt \\right)^2 \\end{aligned} <strong>(Shown)</strong>",
+        "<strong>Part (ii):</strong> We are given $V_0 = 16\\text{ m}^3$. The tank is completely empty ($V = 0$) when $t = 8$ hours. Substitute these values to solve for $k$:<br>\\begin{aligned} 0 &= \\left( \\sqrt{ 16 } - \\dfrac{ 1 }{ 2 }k(8) \\right)^2 \\cr 0 &= (4 - 4k)^2 \\cr 4 - 4k &= 0 \\cr k &= 1 \\end{aligned}",
+        "<strong>Part (iii):</strong> We seek the remaining volume $V$ when $t = 3$ hours, using $V_0 = 16$ and $k = 1$:<br>\\begin{aligned} V &= \\left( \\sqrt{ 16 } - \\dfrac{ 1 }{ 2 }(1)(3) \\right)^2 \\cr V &= (4 - 1.5)^2 \\cr V &= (2.5)^2 = 6.25 \\end{aligned}<br>Thus, the remaining volume of water after 3 hours is $6.25\\text{ m}^3$.",
+        "<strong>Part (iv):</strong> For values of $t > 8$, the term $\\left( 4 - 0.5t \\right)$ becomes negative. Squaring a negative number yields a positive, increasing value for $V$ (representing a parabola that turns upward). Physically, this implies the tank would start refilling itself after draining, which is impossible. The model's valid domain is restricted to $0 \\le t \\le 8$."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(ii)</strong> $k = 2$<br><strong>(iii)</strong> $V = 1.00\\text{ m}^3$",
+            "feedback": "This error occurs in part (ii) if you forgot the factor of $\\dfrac{ 1 }{ 2 }$ in the integrated equation, solving $0 = \\sqrt{ 16 } - kt \\implies 4 - 8k = 0 \\implies k = 0.5$, or if you solved $0 = 4 - 2k \\implies k = 2$."
+        },
+        {
+            "ans": "<strong>(ii)</strong> $k = 1$<br><strong>(iii)</strong> $V = 2.50\\text{ m}^3$",
+            "feedback": "While your value of $k$ is correct, this volume is incorrect. It occurs if you evaluated $\\sqrt{ V } = 4 - 1.5 = 2.5$ but forgot to square the result to obtain the volume $V$, leaving the answer in terms of $\\sqrt{ V }$ instead."
+        },
+        {
+            "ans": "<strong>(ii)</strong> $k = 1$<br><strong>(iii)</strong> $V = 6.25\\text{ m}^3$ but model is valid for all $t > 8$",
+            "feedback": "While your calculation values are correct, the claim that the model is valid for $t > 8$ is wrong. For $t > 8$, the term $\\sqrt{ V_0 } - 0.5kt$ becomes negative, and squaring it yields a positive, increasing volume, which violates physical realities."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Physical Domain Boundaries",
+        "content": "A mathematical model is only as good as its physical domain. The square root model $V = ( \\sqrt{ V_0 } - 0.5kt )^2$ is a parabola that turns upward after the vertex at $t = 8$. Since a drained tank cannot refill itself, the model becomes completely invalid for $t > 8$."
+    }
+},
+{
+    "id": "004790",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Integration",
+    "topic": "First Order Differential Equations",
+    "subtopic": [
+        "Separation of Variables",
+        "Variable Growth Models"
+    ],
+    "img": false,
+    "question": "A colony of bacteria is growing in a culture. The population, $P$, at time $t$ (in hours) grows at a rate proportional to the population, but the rate of growth decreases over time due to nutrient depletion. This is modelled by the differential equation:<br>$$\\dfrac{ \\mathrm{d}P }{ \\mathrm{d}t } = \\dfrac{ kP }{ 2t + 3 }$$<br>where $k$ is a positive constant. The initial population of the colony is $P_0$.<br><br><strong>(i)</strong> Show by integration that $P = P_0 \\left( \\dfrac{ 2t + 3 }{ 3 } \\right)^{ k/2 }$.<br><br><strong>(ii)</strong> Given that the population of the colony is $3P_0$ when $t = 6$ hours, find the exact value of $k$.<br><br><strong>(iii)</strong> Find the population of the colony, in terms of $P_0$, when $t = 15$ hours. Give your coefficient correct to 2 decimal places.<br><br><strong>(iv)</strong> State a physical reason why this model may not be realistic for extremely large values of $t$.",
+    "steps": [
+        "<strong>Part (i):</strong> We separate variables by grouping $P$ terms on the left and $t$ terms on the right:<br>$$\\dfrac{ 1 }{ P } \\mathrm{d}P = \\dfrac{ k }{ 2t + 3 } \\mathrm{d}t$$<br>Integrate both sides of our separated equation:<br>\\begin{aligned} \\int \\dfrac{ 1 }{ P } \\mathrm{d}P &= \\int \\dfrac{ k }{ 2t + 3 } \\mathrm{d}t \\cr \\ln P &= \\dfrac{ k }{ 2 } \\ln(2t + 3) + C \\end{aligned}<br>where $C$ is the constant of integration. (Note the factor of $\\dfrac{ 1 }{ 2 }$ from reverse chain rule integration of $2t+3$).",
+        "Apply the laws of logarithms to rewrite our integrated equation:<br>\\begin{aligned} \\ln P &= \\ln\\left( (2t + 3)^{ k/2 } \\right) + C \\cr P &= e^{ C } (2t + 3)^{ k/2 } \\cr P &= A (2t + 3)^{ k/2 } \\end{aligned}<br>where $A = e^C$ is a constant.",
+        "Apply our initial condition $P = P_0$ when $t = 0$:<br>\\begin{aligned} P_0 &= A (2(0) + 3)^{ k/2 } \\cr P_0 &= A (3)^{ k/2 } \\cr A &= P_0 (3)^{ -k/2 } \\end{aligned}<br>Substitute this constant $A$ back into our population equation:<br>\\begin{aligned} P &= P_0 (3)^{ -k/2 } (2t + 3)^{ k/2 } \\cr P &= P_0 \\left( \\dfrac{ 2t + 3 }{ 3 } \\right)^{ k/2 } \\end{aligned} <strong>(Shown)</strong>",
+        "<strong>Part (ii):</strong> We are given that $P = 3P_0$ when $t = 6$ hours. Substitute these values into the model to solve for $k$:<br>\\begin{aligned} 3P_0 &= P_0 \\left( \\dfrac{ 2(6) + 3 }{ 3 } \\right)^{ k/2 } \\cr 3 &= \\left( \\dfrac{ 15 }{ 3 } \\right)^{ k/2 } \\cr 3 &= 5^{ k/2 } \\cr \\ln 3 &= \\dfrac{ k }{ 2 } \\ln 5 \\cr k &= \\dfrac{ 2 \\ln 3 }{ \\ln 5 } \\end{aligned}",
+        "<strong>Part (iii):</strong> We seek the population $P$ when $t = 15$ hours, using $k/2 = \\dfrac{ \\ln 3 }{ \\ln 5 } \\approx 0.6826$:<br>\\begin{aligned} P &= P_0 \\left( \\dfrac{ 2(15) + 3 }{ 3 } \\right)^{ k/2 } \\cr P &= P_0 (11)^{ k/2 } \\cr P &= P_0 (11)^{ 0.6826 } \\cr P &\\approx 5.15 P_0 \\end{aligned}<br>Thus, the population of the colony after 15 hours is approximately $5.15 P_0$.",
+        "<strong>Part (iv):</strong> For extremely large values of $t$, the model predicts that $P \\to \\infty$. In reality, because nutrient supplies are finite and toxic waste accumulates within the culture, the bacteria population cannot grow indefinitely and must eventually level off and decay."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(ii)</strong> $k = \\dfrac{ \\ln 3 }{ \\ln 5 }$<br><strong>(iii)</strong> $P \\approx 2.27 P_0$",
+            "feedback": "This error occurs if you forgot the factor of $\\dfrac{ 1 }{ 2 }$ when integrating $\\dfrac{ k }{ 2t + 3 }$, evaluating it incorrectly as $k \\ln(2t + 3)$ instead of $\\dfrac{ k }{ 2 } \\ln(2t + 3)$. This halves your exponent, resulting in $k = \\dfrac{ \\ln 3 }{ \\ln 5 }$."
+        },
+        {
+            "ans": "<strong>(ii)</strong> $k = \\dfrac{ 2\\ln 3 }{ \\ln 5 }$<br><strong>(iii)</strong> $P \\approx 11.00 P_0$",
+            "feedback": "While $k$ is correct, this population coefficient is wrong. It occurs if you assumed the term $\\left( \\dfrac{ 2t + 3 }{ 3 } \\right)^{ k/2 }$ simplified directly to $(2t + 3)/3 = 11$, forgetting to apply the exponent of $k/2$."
+        },
+        {
+            "ans": "<strong>(ii)</strong> $k = \\dfrac{ \\ln 3 }{ 2\\ln 5 }$<br><strong>(iii)</strong> $P \\approx 1.51 P_0$",
+            "feedback": "This occurs if you inverted the constant factor when solving, setting $k/2 = \\dfrac{ \\ln 5 }{ \\ln 3 }$ or similar when solving the exponential equation in part (ii)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Integrating Rational Functions",
+        "content": "Never forget the chain rule reverse factor when integrating fractions like $\\dfrac{ 1 }{ 2t + 3 }$. The integral is $\\dfrac{ 1 }{ 2 } \\ln(2t + 3)$, not $\\ln(2t + 3)$. Forgetting this constant factor is one of the most common ways to lose derivation marks."
     }
 }
 
