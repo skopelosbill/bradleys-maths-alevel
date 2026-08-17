@@ -571,34 +571,37 @@ window.ALEVEL_QUESTIONS = [
         "Inverse Functions",
         "Domain and Range",
         "Modulus Graphs",
-        "Composites"
+        "Composites",
+        "Curve Transformations"
     ],
     "img": false,
-    "question": "A function $ f$ is defined by:\n$$ f(x) = x^2 - 5, \\quad x \\in \\mathbb{ R }, \\quad x \\ge 0$$<br><br><strong>(a)</strong> State the range of the function $ f(x)$.<br><br><strong>(b)</strong> Find the inverse function $ f^{-1}(x)$, clearly stating its domain.<br><br>A function $ g$ is defined by:\n$$ g(x) = |x - 2|, \\quad x \\in \\mathbb{ R }$$<br><br><strong>(c)</strong> Sketch the graph of $y =  g(x)$.<br><br><strong>(d)</strong> Find the composite function $ g f(x)$.",
+    "question": "<strong>Part (a)</strong><br>A function $f$ is defined by:\n$$f(x) = x^2 - 5, \\quad x \\in \\mathbb{ R }, \\quad x \\ge 0$$<br><strong>(i)</strong> State the range of the function $f(x)$.<br><strong>(ii)</strong> Find the inverse function $f^{-1}(x)$, clearly stating its domain.<br><br><strong>Part (b)</strong><br>A function $g$ is defined by:\n$$g(x) = |x - 2|, \\quad x \\in \\mathbb{ R }$$<br><strong>(i)</strong> Sketch the graph of $y = g(x)$.<br><strong>(ii)</strong> Find the composite function $gf(x)$.<br><br><strong>Part (c)</strong><br>The graph of the function $y = h(x)$ is sketched in the diagram below. Point $Q$ lies on the $y$-axis at $(0, 6)$ and point $P$ lies at $(3, 3)$. For $x \\ge 3$, the graph is a horizontal straight line.<br><br><strong>(i)</strong> On separate axes, sketch the graph of:\n$$y = \\dfrac{1}{3}h(3x)$$\nand clearly label the images of the points $P$ and $Q$.<br><br><strong>(ii)</strong> On separate axes, sketch the graph of:\n$$y = 6 - h(x)$$\nand clearly label the images of the points $P$ and $Q$.",
     "steps": [
-        "Find the range of $ f(x)$ by considering its domain $x \\ge 0$:\n\\begin{aligned} x &\\ge 0 \\cr x^2 &\\ge 0 \\cr x^2 - 5 &\\ge -5 \\end{aligned}\nTerminating this analysis, we conclude the range of the function is $ f(x) \\ge -5$.",
-        "Find the inverse function $ f^{-1}(x)$ by setting $y =  f(x)$ and rearranging to make $x$ the subject:\n\\begin{aligned} y &= x^2 - 5 \\cr x^2 &= y + 5 \\cr x &= \\sqrt{ y + 5 } \\end{aligned}\nSince the domain of $ f(x)$ is restricted to $x \\ge 0$, we select the positive square root. Swap the variables to express the inverse function:\n\\begin{aligned}  f^{-1}(x) &= \\sqrt{ x + 5 } \\end{aligned}\nThe domain of the inverse function $ f^{-1}(x)$ is identical to the range of the original function $ f(x)$, which is $x \\ge -5$.",
-        "To sketch the modulus graph $y = |x - 2|$, start with the linear graph $y = x - 2$ and reflect any negative output values (below the $x$-axis) upwards. This creates a symmetrical V-shape with its vertex at the $x$-intercept $(2, 0)$ and a $y$-intercept at $(0, 2)$:\n<br><br><img src='images/Pure/004766_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-        "Find the composite function $ g f(x)$ by substituting the expression for $ f(x)$ into $ g(x)$:\n\\begin{aligned}  g f(x) &=  g\\left(  f(x) \\right) \\cr  g f(x) &=  g\\left( x^2 - 5 \\right) \\cr  g f(x) &= |\\left( x^2 - 5 \\right) - 2| \\cr  g f(x) &= |x^2 - 7| \\end{aligned}"
+        "Find the range of $f(x)$ by considering its domain $x \\ge 0$:\n\\begin{aligned} x &\\ge 0 \\cr x^2 &\\ge 0 \\cr x^2 - 5 &\\ge -5 \\end{aligned}\nTherefore, the range of the function is $f(x) \\ge -5$.",
+        "Find the inverse function $f^{-1}(x)$ by setting $y = f(x)$ and rearranging to make $x$ the subject:\n\\begin{aligned} y &= x^2 - 5 \\cr x^2 &= y + 5 \\cr x &= \\sqrt{ y + 5 } \\end{aligned}\nSince the domain of $f(x)$ is restricted to $x \\ge 0$, we select the positive square root. Swap the variables to express the inverse function:\n\\begin{aligned} f^{-1}(x) &= \\sqrt{ x + 5 } \\end{aligned}\nThe domain of the inverse function $f^{-1}(x)$ is identical to the range of the original function $f(x)$, which is $x \\ge -5$.",
+        "To sketch the modulus graph $y = g(x) = |x - 2|$, start with the linear graph $y = x - 2$ and reflect any negative output values (below the $x$-axis) upwards. This creates a symmetrical V-shape with its vertex at the $x$-intercept $(2, 0)$ and a $y$-intercept at $(0, 2)$:\n<br><br><img src='images/Pure/004766_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "Find the composite function $gf(x)$ by substituting the expression for $f(x)$ into $g(x)$:\n\\begin{aligned} gf(x) &= g\\left( f(x) \\right) \\cr gf(x) &= g\\left( x^2 - 5 \\right) \\cr gf(x) &= |\\left( x^2 - 5 \\right) - 2| \\cr gf(x) &= |x^2 - 7| \\end{aligned}",
+        "For the transformation $y = \\dfrac{1}{3}h(3x)$, the graph of $h(x)$ undergoes a horizontal compression of scale factor $\\dfrac{1}{3}$ and a vertical compression of scale factor $\\dfrac{1}{3}$. Multiply the $x$-coordinates by $\\dfrac{1}{3}$ and the $y$-coordinates by $\\dfrac{1}{3}$:\n\\begin{aligned} Q(0, 6) &\\to Q'\\left( 0 \\times \\dfrac{1}{3}, 6 \\times \\dfrac{1}{3} \\right) = Q'(0, 2) \\cr P(3, 3) &\\to P'\\left( 3 \\times \\dfrac{1}{3}, 3 \\times \\dfrac{1}{3} \\right) = P'(1, 1) \\end{aligned}\nThe horizontal straight line segment now lies along $y = 1$ for $x \\ge 1$:\n<br><br><img src='images/Pure/004766_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "For the transformation $y = 6 - h(x) = -h(x) + 6$, the graph of $h(x)$ undergoes a reflection in the $x$-axis followed by a vertical translation upwards of $6$ units:\n\\begin{aligned} Q(0, 6) &\\to (0, -6) \\to Q'(0, -6 + 6) = Q'(0, 0) \\cr P(3, 3) &\\to (3, -3) \\to P'(3, -3 + 6) = P'(3, 3) \\end{aligned}\nThe horizontal line segment remains along $y = 3$ for $x \\ge 3$:\n<br><br><img src='images/Pure/004766_ans3.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>"
     ],
     "pi_options": [
         {
-            "ans": "$$ g f(x) = |x^2 - 3|$$",
-            "feedback": "This error occurs if the subtraction inside the modulus is computed incorrectly as $-5 + 2$ instead of $-5 - 2$."
+            "ans": "$$gf(x) = |x^2 - 3|$$",
+            "feedback": "This error occurs if the subtraction inside the modulus is computed incorrectly as -5 + 2 instead of -5 - 2."
         },
         {
-            "ans": "$$ g f(x) = x^2 - 7$$",
-            "feedback": "This mistake is caused by completely omitting the modulus brackets from the composite function $ g f(x)$."
+            "ans": "$$gf(x) = x^2 - 7$$",
+            "feedback": "This mistake is caused by completely omitting the modulus brackets from the composite function gf(x)."
         },
         {
-            "ans": "$$ g f(x) = |x^2 - 5| - 2$$",
-            "feedback": "This arises if the functions are composed in the incorrect order or if the modulus operation is misapplied to $ f(x)$ only."
+            "ans": "$$gf(x) = |x^2 - 5| - 2$$",
+            "feedback": "This arises if the functions are composed in the incorrect order or if the modulus operation is misapplied to f(x) only."
         }
     ],
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Inverse Function Domain Rule",
-        "content": "Always remember the golden rule of inverse functions: the domain of $ f^{-1}(x)$ is exactly equal to the range of $ f(x)$. Never try to find the domain of the inverse by looking at its algebraic formula alone, as this can lead to forgetting critical domain restrictions (like $x \\ge -5$ for $\\sqrt{x+5}$)."
+        "content": "Always remember the golden rule of inverse functions: the domain of $f^{-1}(x)$ is exactly equal to the range of $f(x)$. Never try to find the domain of the inverse by looking at its algebraic formula alone, as this can lead to forgetting critical domain restrictions (like $x \\ge -5$ for $\\sqrt{x+5}$)."
     }
 },
 {
@@ -610,27 +613,30 @@ window.ALEVEL_QUESTIONS = [
     "subtopic": [
         "Rational Functions",
         "Modulus Graph Reflections",
-        "Composites"
+        "Composites",
+        "Triangle Wave Transformations"
     ],
     "img": false,
-    "question": "A function $ f$ is defined by:\n$$ f(x) = \\dfrac{4}{x - 1}, \\quad x \\in \\mathbb{ R }, \\quad x > 1$$<br><br><strong>(a)</strong> State the range of the function $ f(x)$.<br><br><strong>(b)</strong> Find the inverse function $ f^{-1}(x)$, clearly stating its domain.<br><br>A function $ g$ is defined by:\n$$ g(x) = 4 - |x - 2|, \\quad x \\in \\mathbb{ R }$$<br><br><strong>(c)</strong> Sketch the graph of $y =  g(x)$.<br><br><strong>(d)</strong> Find the composite function $ g f(x)$.",
+    "question": "<strong>Part (a)</strong><br>A function $f$ is defined by:\n$$f(x) = \\dfrac{4}{x - 1}, \\quad x \\in \\mathbb{ R }, \\quad x > 1$$<br><strong>(i)</strong> State the range of the function $f(x)$.<br><strong>(ii)</strong> Find the inverse function $f^{-1}(x)$, clearly stating its domain.<br><br><strong>Part (b)</strong><br>A function $g$ is defined by:\n$$g(x) = 4 - |x - 2|, \\quad x \\in \\mathbb{ R }$$<br><strong>(i)</strong> Sketch the graph of $y = g(x)$.<br><strong>(ii)</strong> Find the composite function $gf(x)$.<br><br><strong>Part (c)</strong><br>The graph of the symmetrical function $y = h(x)$ is sketched in the diagram below. The peak of the triangle wave is at point $P(0, 4)$ and the right-hand $x$-intercept is at point $Q(4, 0)$.<br><br><strong>(i)</strong> On separate axes, sketch the graph of:\n$$y = \\dfrac{1}{4}h(2x)$$\nand clearly label the images of the points $P$ and $Q$.<br><br><strong>(ii)</strong> On separate axes, sketch the graph of:\n$$y = 2h(x) - 1$$\nand clearly label the images of the points $P$ and $Q$.",
     "steps": [
-        "Find the range of $ f(x)$ by considering the behavior of the fraction on the domain $x > 1$. As $x \\to 1$ from the right, the denominator $x - 1$ becomes a very small positive number, so $ f(x) \\to \\infty$. As $x \\to \\infty$, the denominator becomes extremely large, so $ f(x) \\to 0$. Since the numerator is positive and $x - 1 > 0$, the function values are always strictly positive:\n\\begin{aligned} \\text{Range: }  f(x) > 0 \\end{aligned}",
-        "Find the inverse function $ f^{-1}(x)$ by setting $y =  f(x)$ and rearranging to make $x$ the subject:\n\\begin{aligned} y &= \\dfrac{4}{ x - 1 } \\cr x - 1 &= \\dfrac{4}{y} \\cr x &= \\dfrac{4}{y} + 1 \\end{aligned}\nSwap the variables to express the inverse function:\n\\begin{aligned}  f^{-1}(x) &= \\dfrac{4}{x} + 1 \\end{aligned}\nThe domain of the inverse function $ f^{-1}(x)$ is the range of the original function $ f(x)$, which is $x > 0$.",
-        "To sketch $y = 4 - |x - 2|$, start with the standard modulus graph $y = |x - 2|$. The negative sign in front of the modulus reflects the V-shape downwards, and the $+4$ translates the entire graph vertically upwards by $4$ units. This results in an inverted V-shape with its vertex at $(2, 4)$, a $y$-intercept at $(0, 2)$, and $x$-intercepts at $(-2, 0)$ and $(6, 0)$:\n<br><br><img src='images/Pure/004767_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-        "Find the composite function $ g f(x)$ by substituting the expression for $ f(x)$ into $ g(x)$ and simplifying the fraction inside the modulus:\n\\begin{aligned}  g f(x) &=  g\\left(  f(x) \\right) \\cr  g f(x) &= 4 - \\left| \\dfrac{4}{ x - 1 } - 2 \\right| \\cr  g f(x) &= 4 - \\left| \\dfrac{ 4 - 2(x - 1) }{ x - 1 } \\right| \\cr  g f(x) &= 4 - \\left| \\dfrac{ 4 - 2x + 2 }{ x - 1 } \\right| \\cr  g f(x) &= 4 - \\left| \\dfrac{ 6 - 2x }{ x - 1 } \\right| \\end{aligned}"
+        "Find the range of $f(x)$ by considering the behavior of the fraction on the domain $x > 1$. As $x \\to 1$ from the right, the denominator $x - 1$ becomes a very small positive number, so $f(x) \\to \\infty$. As $x \\to \\infty$, the denominator becomes extremely large, so $f(x) \\to 0$. Since the numerator is positive and $x - 1 > 0$, the function values are always strictly positive:\n\\begin{aligned} \\text{Range: } f(x) > 0 \\end{aligned}",
+        "Find the inverse function $f^{-1}(x)$ by setting $y = f(x)$ and rearranging to make $x$ the subject:\n\\begin{aligned} y &= \\dfrac{4}{ x - 1 } \\cr x - 1 &= \\dfrac{4}{y} \\cr x &= \\dfrac{4}{y} + 1 \\end{aligned}\nSwap the variables to express the inverse function:\n\\begin{aligned} f^{-1}(x) &= \\dfrac{4}{x} + 1 \\end{aligned}\nThe domain of the inverse function $f^{-1}(x)$ is the range of the original function $f(x)$, which is $x > 0$.",
+        "To sketch $y = 4 - |x - 2|$, start with the standard modulus graph $y = |x - 2|$. The negative sign in front of the modulus reflects the V-shape downwards, and the $+4$ translates the entire graph vertically upwards by $4$ units. This results in an inverted V-shape with its vertex at $(2, 4)$, a $y$-intercept at $(0, 2)$, and $x$-intercepts at $(-2, 0)$ and $(6, 0)$:\n<br><br><img src='images/Pure/004767_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "Find the composite function $gf(x)$ by substituting the expression for $f(x)$ into $g(x)$ and simplifying the fraction inside the modulus:\n\\begin{aligned} gf(x) &= g\\left( f(x) \\right) \\cr gf(x) &= 4 - \\left| \\dfrac{4}{ x - 1 } - 2 \\right| \\cr gf(x) &= 4 - \\left| \\dfrac{ 4 - 2(x - 1) }{ x - 1 } \\right| \\cr gf(x) &= 4 - \\left| \\dfrac{ 4 - 2x + 2 }{ x - 1 } \\right| \\cr gf(x) &= 4 - \\left| \\dfrac{ 6 - 2x }{ x - 1 } \\right| \\end{aligned}",
+        "For the transformation $y = \\dfrac{1}{4}h(2x)$, the graph of $h(x)$ undergoes a horizontal compression of scale factor $\\dfrac{1}{2}$ and a vertical compression of scale factor $\\dfrac{1}{4}$. Multiply the $x$-coordinates by $\\dfrac{1}{2}$ and the $y$-coordinates by $\\dfrac{1}{4}$:\n\\begin{aligned} P(0, 4) &\\to P'\\left( 0 \\times \\dfrac{1}{2}, 4 \\times \\dfrac{1}{4} \\right) = P'(0, 1) \\cr Q(4, 0) &\\to Q'\\left( 4 \\times \\dfrac{1}{2}, 0 \\times \\dfrac{1}{4} \\right) = Q'(2, 0) \\end{aligned}\nThis produces a compressed triangle wave on the domain $[-2, 2]$:\n<br><br><img src='images/Pure/004767_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "For the transformation $y = 2h(x) - 1$, the graph of $h(x)$ undergoes a vertical stretch of scale factor $2$ followed by a vertical translation downwards of $1$ unit:\n\\begin{aligned} P(0, 4) &\\to (0, 8) \\to P'(0, 8 - 1) = P'(0, 7) \\cr Q(4, 0) &\\to (4, 0) \\to Q'(4, 0 - 1) = Q'(4, -1) \\end{aligned}\nThe left-hand intercept similarly moves from $(-4, 0)$ to $(-4, -1)$:\n<br><br><img src='images/Pure/004767_ans3.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>"
     ],
     "pi_options": [
         {
-            "ans": "$$ g f(x) = 4 - \\left| \\dfrac{ 2 - 2x }{ x - 1 } \\right|$$",
-            "feedback": "This error is caused by a sign error when expanding $-2(x - 1)$ inside the numerator as $-2x - 2$ instead of $-2x + 2$."
+            "ans": "$$gf(x) = 4 - \\left| \\dfrac{ 2 - 2x }{ x - 1 } \\right|$$",
+            "feedback": "This error is caused by a sign error when expanding -2(x - 1) inside the numerator as -2x - 2 instead of -2x + 2."
         },
         {
-            "ans": "$$ g f(x) = 4 - \\left| \\dfrac{4}{ x - 1 } \\right| - 2$$",
-            "feedback": "This mistake occurs if the composite structure is misapplied, subtracting $2$ outside of the modulus bracket instead of composing the terms correctly."
+            "ans": "$$gf(x) = 4 - \\left| \\dfrac{4}{ x - 1 } \\right| - 2$$",
+            "feedback": "This mistake occurs if the composite structure is misapplied, subtracting 2 outside of the modulus bracket instead of composing the terms correctly."
         },
         {
-            "ans": "$$ g f(x) = 4 - \\left| \\dfrac{6 - 2x }{ x } \\right|$$",
+            "ans": "$$gf(x) = 4 - \\left| \\dfrac{6 - 2x }{ x } \\right|$$",
             "feedback": "This arises if the denominator of the fraction inside the modulus is incorrectly modified during algebraic simplification."
         }
     ],
@@ -649,28 +655,31 @@ window.ALEVEL_QUESTIONS = [
     "subtopic": [
         "Quadratic Modulus Graphs",
         "Linear Inverses",
-        "Composites"
+        "Composites",
+        "S-Curve Transformations"
     ],
     "img": false,
-    "question": "A function $ f$ is defined by:\n$$ f(x) = 2x - 3, \\quad x \\in \\mathbb{ R }$$<br><br><strong>(a)</strong> State the range of the function $ f(x)$.<br><br><strong>(b)</strong> Find the inverse function $ f^{-1}(x)$, clearly stating its domain.<br><br>A function $ g$ is defined by:\n$$ g(x) = |x^2 - 4|, \\quad x \\in \\mathbb{ R }$$<br><br><strong>(c)</strong> Sketch the graph of $y =  g(x)$.<br><br><strong>(d)</strong> Find the composite function $ g f(x)$.",
+    "question": "<strong>Part (a)</strong><br>A function $f$ is defined by:\n$$f(x) = 2x - 3, \\quad x \\in \\mathbb{ R }$$<br><strong>(i)</strong> State the range of the function $f(x)$.<br><strong>(ii)</strong> Find the inverse function $f^{-1}(x)$, clearly stating its domain.<br><br><strong>Part (b)</strong><br>A function $g$ is defined by:\n$$g(x) = |x^2 - 4|, \\quad x \\in \\mathbb{ R }$$<br><strong>(i)</strong> Sketch the graph of $y = g(x)$.<br><strong>(ii)</strong> Find the composite function $gf(x)$.<br><br><strong>Part (c)</strong><br>The graph of the function $y = h(x)$ is sketched in the diagram below. Point $Q$ lies at $(-3, -2)$ and point $P$ lies at $(3, 4)$. For $x \\ge 3$, the graph is a horizontal straight line.<br><br><strong>(i)</strong> On separate axes, sketch the graph of:\n$$y = h(-x)$$\nand clearly label the images of the points $P$ and $Q$.<br><br><strong>(ii)</strong> On separate axes, sketch the graph of:\n$$y = |h(x)|$$\nand clearly label the images of the points $P$ and $Q$.",
     "steps": [
-        "Since $ f(x)$ is a linear function with a domain of all real numbers ($x \\in \\mathbb{ R }$), its outputs are also unrestricted:\n\\begin{aligned} \\text{Range: }  f(x) \\in \\mathbb{ R } \\end{aligned}",
-        "Find the inverse function $ f^{-1}(x)$ by setting $y =  f(x)$ and rearranging to make $x$ the subject:\n\\begin{aligned} y &= 2x - 3 \\cr 2x &= y + 3 \\cr x &= \\dfrac{ y + 3 }{ 2 } \\end{aligned}\nSwap the variables to express the inverse function:\n\\begin{aligned}  f^{-1}(x) &= \\dfrac{ x + 3 }{ 2 } \\end{aligned}\nThe domain of the inverse function $ f^{-1}(x)$ is identical to the range of the original function, which is $x \\in \\mathbb{ R }$.",
-        "To sketch $y = |x^2 - 4|$, start with the quadratic parabola $y = x^2 - 4$. The modulus operation reflects any negative part of the curve (the section between the $x$-intercepts $-2$ and $2$, which is below the $x$-axis) upwards. This creates a symmetrical W-shaped curve with $x$-intercepts at $(-2, 0)$ and $(2, 0)$, and a local maximum at $(0, 4)$:\n<br><br><img src='images/Pure/004768_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-        "Find the composite function $ g f(x)$ by substituting the expression for $ f(x)$ into $ g(x)$ and expanding the quadratic expression:\n\\begin{aligned}  g f(x) &=  g\\left(  f(x) \\right) \\cr  g f(x) &= |\\left( 2x - 3 \\right)^2 - 4| \\cr  g f(x) &= |\\left( 4x^2 - 12x + 9 \\right) - 4| \\cr  g f(x) &= |4x^2 - 12x + 5| \\end{aligned}"
+        "Since $f(x)$ is a linear function with a domain of all real numbers ($x \\in \\mathbb{ R }$), its outputs are also unrestricted:\n\\begin{aligned} \\text{Range: } f(x) \\in \\mathbb{ R } \\end{aligned}",
+        "Find the inverse function $f^{-1}(x)$ by setting $y = f(x)$ and rearranging to make $x$ the subject:\n\\begin{aligned} y &= 2x - 3 \\cr 2x &= y + 3 \\cr x &= \\dfrac{ y + 3 }{ 2 } \\end{aligned}\nSwap the variables to express the inverse function:\n\\begin{aligned} f^{-1}(x) &= \\dfrac{ x + 3 }{ 2 } \\end{aligned}\nThe domain of the inverse function $f^{-1}(x)$ is identical to the range of the original function, which is $x \\in \\mathbb{ R }$.",
+        "To sketch $y = |x^2 - 4|$, start with the quadratic parabola $y = x^2 - 4$. The modulus operation reflects any negative part of the curve (the section between the $x$-intercepts $-2$ and $2$, which is below the $x$-axis) upwards. This creates a symmetrical W-shaped curve with $x$-intercepts at $(-2, 0)$ and $(2, 0)$, and a local maximum at $(0, 4)$:\n<br><br><img src='images/Pure/004768_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "Find the composite function $gf(x)$ by substituting the expression for $f(x)$ into $g(x)$ and expanding the quadratic expression:\n\\begin{aligned} gf(x) &= g\\left( f(x) \\right) \\cr gf(x) &= |\\left( 2x - 3 \\right)^2 - 4| \\cr gf(x) &= |\\left( 4x^2 - 12x + 9 \\right) - 4| \\cr gf(x) &= |4x^2 - 12x + 5| \\end{aligned}",
+        "For the transformation $y = h(-x)$, the graph of $h(x)$ is reflected horizontally in the $y$-axis. Multiply the $x$-coordinates by $-1$ while keeping the $y$-coordinates the same:\n\\begin{aligned} Q(-3, -2) &\\to Q'(3, -2) \\cr P(3, 4) &\\to P'(-3, 4) \\end{aligned}\nThe horizontal straight line segment now lies along $y = 4$ for $x \\le -3$:\n<br><br><img src='images/Pure/004768_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "For the transformation $y = |h(x)|$, any negative $y$-values on the graph of $h(x)$ are reflected vertically across the $x$-axis into positive $y$-values. The positive portion of the graph remains unchanged, and the negative section (from $x = -3$ to $x = 0$) is reflected upwards:\n\\begin{aligned} Q(-3, -2) &\\to Q'(-3, 2) \\cr P(3, 4) &\\to P'(3, 4) \\quad \\text{(remains unchanged)} \\end{aligned}\nThe horizontal straight line segment remains along $y = 4$ for $x \\ge 3$:\n<br><br><img src='images/Pure/004768_ans3.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>"
     ],
     "pi_options": [
         {
-            "ans": "$$ g f(x) = |4x^2 - 12x + 13|$$",
-            "feedback": "This error occurs if $+9$ and $-4$ are incorrectly added as $+13$ instead of $+5$ inside the modulus brackets."
+            "ans": "$$gf(x) = |4x^2 - 12x + 13|$$",
+            "feedback": "This error occurs if +9 and -4 are incorrectly added as +13 instead of +5 inside the modulus brackets."
         },
         {
-            "ans": "$$ g f(x) = |4x^2 - 6x + 5|$$",
-            "feedback": "This mistake is caused by a quadratic expansion slip, incorrectly writing the middle term of $(2x-3)^2$ as $-6x$ instead of $-12x$."
+            "ans": "$$gf(x) = |4x^2 - 6x + 5|$$",
+            "feedback": "This mistake is caused by a quadratic expansion slip, incorrectly writing the middle term of (2x-3)^2 as -6x instead of -12x."
         },
         {
-            "ans": "$$ g f(x) = |2x^2 - 7|$$",
-            "feedback": "This arises if the binomial term $(2x-3)^2$ is incorrectly expanded as $2x^2 - 9$ or if other basic algebra rules are violated."
+            "ans": "$$gf(x) = |2x^2 - 7|$$",
+            "feedback": "This arises if the binomial term (2x-3)^2 is incorrectly expanded as 2x^2 - 9 or if other basic algebra rules are violated."
         }
     ],
     "bradley_insight": {
@@ -688,27 +697,30 @@ window.ALEVEL_QUESTIONS = [
     "subtopic": [
         "Exponential Modulus Graphs",
         "Logarithmic Inverses",
-        "Composites"
+        "Composites",
+        "Dome Curve Transformations"
     ],
     "img": false,
-    "question": "A function $ f$ is defined by:\n$$ f(x) = 2 + \\ln x, \\quad x \\in \\mathbb{ R }, \\quad x > 0$$<br><br><strong>(a)</strong> State the range of the function $ f(x)$.<br><br><strong>(b)</strong> Find the inverse function $ f^{-1}(x)$, clearly stating its domain.<br><br>A function $ g$ is defined by:\n$$ g(x) = |e^x - 3|, \\quad x \\in \\mathbb{ R }$$<br><br><strong>(c)</strong> Sketch the graph of $y =  g(x)$.<br><br><strong>(d)</strong> Find the composite function $ g f(x)$.",
+    "question": "<strong>Part (a)</strong><br>A function $f$ is defined by:\n$$f(x) = 2 + \\ln x, \\quad x \\in \\mathbb{ R }, \\quad x > 0$$<br><strong>(i)</strong> State the range of the function $f(x)$.<br><strong>(ii)</strong> Find the inverse function $f^{-1}(x)$, clearly stating its domain.<br><br><strong>Part (b)</strong><br>A function $g$ is defined by:\n$$g(x) = |e^x - 3|, \\quad x \\in \\mathbb{ R }$$<br><strong>(i)</strong> Sketch the graph of $y = g(x)$.<br><strong>(ii)</strong> Find the composite function $gf(x)$.<br><br><strong>Part (c)</strong><br>The graph of the function $y = h(x)$ is sketched in the diagram below. Point $Q$ lies at $(-4, 0)$ and point $P$ lies at $(0, 5)$. For $0 \\le x \\le 4$, the graph is a horizontal straight line.<br><br><strong>(i)</strong> On separate axes, sketch the graph of:\n$$y = -h(x)$$\nand clearly label the images of the points $P$ and $Q$.<br><br><strong>(ii)</strong> On separate axes, sketch the graph of:\n$$y = h(2x) + 1$$\nand clearly label the images of the points $P$ and $Q$.",
     "steps": [
-        "The natural logarithm function $\\ln x$ has a range of all real numbers for the domain $x > 0$. Therefore, adding a vertical translation of $2$ does not restrict the outputs:\n\\begin{aligned} \\text{Range: }  f(x) \\in \\mathbb{ R } \\end{aligned}",
-        "Find the inverse function $ f^{-1}(x)$ by setting $y =  f(x)$ and rearranging to make $x$ the subject:\n\\begin{aligned} y &= 2 + \\ln x \\cr \\ln x &= y - 2 \\cr x &= e^{ y - 2 } \\end{aligned}\nSwap the variables to express the inverse function:\n\\begin{aligned}  f^{-1}(x) &= e^{ x - 2 } \\end{aligned}\nThe domain of the inverse function $ f^{-1}(x)$ is identical to the range of the original function, which is $x \\in \\mathbb{ R }$.",
-        "To sketch $y = |e^x - 3|$, start with the exponential curve $y = e^x - 3$. This starting curve has a horizontal asymptote at $y = -3$, a $y$-intercept at $(0, -2)$, and an $x$-intercept at $(\ln 3, 0)$. The modulus operation reflects the negative portion below the $x$-axis upwards. Consequently, the horizontal asymptote reflections to $y = 3$, the $y$-intercept reflects to $(0, 2)$, and the curve pivots upwards from the $x$-intercept $(\ln 3, 0)$:\n<br><br><img src='images/Pure/004769_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-        "Find the composite function $ g f(x)$ by substituting the expression for $ f(x)$ into $ g(x)$ and simplifying using exponential-logarithmic cancellation laws:\n\\begin{aligned}  g f(x) &=  g\\left(  f(x) \\right) \\cr  g f(x) &= |e^{ 2 + \\ln x } - 3| \\cr  g f(x) &= |e^2 \\cdot e^{ \\ln x } - 3| \\cr  g f(x) &= |x e^2 - 3| \\end{aligned}\nThis is valid for the domain $x > 0$."
+        "The natural logarithm function $\\ln x$ has a range of all real numbers for the domain $x > 0$. Therefore, adding a vertical translation of $2$ does not restrict the outputs:\n\\begin{aligned} \\text{Range: } f(x) \\in \\mathbb{ R } \\end{aligned}",
+        "Find the inverse function $f^{-1}(x)$ by setting $y = f(x)$ and rearranging to make $x$ the subject:\n\\begin{aligned} y &= 2 + \\ln x \\cr \\ln x &= y - 2 \\cr x &= e^{ y - 2 } \\end{aligned}\nSwap the variables to express the inverse function:\n\\begin{aligned} f^{-1}(x) &= e^{ x - 2 } \\end{aligned}\nThe domain of the inverse function $f^{-1}(x)$ is identical to the range of the original function, which is $x \\in \\mathbb{ R }$.",
+        "To sketch $y = |e^x - 3|$, start with the exponential curve $y = e^x - 3$. This starting curve has a horizontal asymptote at $y = -3$, a $y$-intercept at $(0, -2)$, and an $x$-intercept at $(\ln 3, 0)$. The modulus operation reflects the negative portion below the $x$-axis upwards. Consequently, the horizontal asymptote reflections to $y = 3$, the $y$-intercept reflects to $(0, 2)$, and the curve pivots upwards from the $x$-intercept $(\ln 3, 0)$:\n<br><br><img src='images/Pure/004769_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "Find the composite function $gf(x)$ by substituting the expression for $f(x)$ into $g(x)$ and simplifying using exponential-logarithmic cancellation laws:\n\\begin{aligned} gf(x) &= g\\left( f(x) \\right) \\cr gf(x) &= |e^{ 2 + \\ln x } - 3| \\cr gf(x) &= |e^2 \\cdot e^{ \\ln x } - 3| \\cr gf(x) &= |x e^2 - 3| \\end{aligned}\nThis is valid for the domain $x > 0$.",
+        "For the transformation $y = -h(x)$, the graph of $h(x)$ is reflected vertically in the $x$-axis. Multiply the $y$-coordinates by $-1$ while keeping the $x$-coordinates the same:\n\\begin{aligned} Q(-4, 0) &\\to Q'(-4, 0) \\cr P(0, 5) &\\to P'(0, -5) \\end{aligned}\nThe horizontal straight line segment now lies along $y = -5$ for $x \\ge 0$:\n<br><br><img src='images/Pure/004769_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "For the transformation $y = h(2x) + 1$, the graph of $h(x)$ undergoes a horizontal compression of scale factor $\\dfrac{1}{2}$ followed by a vertical translation upwards of $1$ unit:\n\\begin{aligned} Q(-4, 0) &\\to (-2, 0) \\to Q'(-2, 1) \\cr P(0, 5) &\\to (0, 5) \\to P'(0, 5 + 1) = P'(0, 6) \\end{aligned}\nThe horizontal line segment now begins at $P'(0, 6)$ and extends to $x = 2$ along the line $y = 6$:\n<br><br><img src='images/Pure/004769_ans3.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>"
     ],
     "pi_options": [
         {
-            "ans": "$$ g f(x) = |e^{2x} - 3|$$",
-            "feedback": "This error occurs if the power rule of exponents is misapplied, incorrectly assuming that $e^{2 + \\ln x} = e^{2x}$."
+            "ans": "$$gf(x) = |e^{2x} - 3|$$",
+            "feedback": "This error occurs if the power rule of exponents is misapplied, incorrectly assuming that e^(2 + ln x) = e^(2x)."
         },
         {
-            "ans": "$$ g f(x) = |(x + 2)e^2 - 3|$$",
-            "feedback": "This mistake is caused by a failure to apply index laws correctly, misinterpreting $e^{2 + \\ln x}$ as $e^2(2 + x)$ or similar."
+            "ans": "$$gf(x) = |(x + 2)e^2 - 3|$$",
+            "feedback": "This mistake is caused by a failure to apply index laws correctly, misinterpreting e^(2 + ln x) as e^2(2 + x) or similar."
         },
         {
-            "ans": "$$ g f(x) = |xe^2| - 3$$",
+            "ans": "$$gf(x) = |xe^2| - 3$$",
             "feedback": "This arises from a failure to keep the entire composed expression inside the modulus brackets."
         }
     ],
@@ -727,28 +739,31 @@ window.ALEVEL_QUESTIONS = [
     "subtopic": [
         "Rational Modulus Graphs",
         "Linear Inverses",
-        "Composites"
+        "Composites",
+        "Segmented Curve Transformations"
     ],
     "img": false,
-    "question": "A function $ f$ is defined by:\n$$ f(x) = 3x - 1, \\quad x \\in \\mathbb{ R }$$<br><br><strong>(a)</strong> State the range of the function $ f(x)$.<br><br><strong>(b)</strong> Find the inverse function $ f^{-1}(x)$, clearly stating its domain.<br><br>A function $ g$ is defined by:\n$$ g(x) = \\left| \\dfrac{2}{x} - 1 \\right|, \\quad x \\in \\mathbb{ R }, \\quad x \\ne 0$$<br><br><strong>(c)</strong> Sketch the graph of $y =  g(x)$.<br><br><strong>(d)</strong> Find the composite function $ g f(x)$.",
+    "question": "<strong>Part (a)</strong><br>A function $f$ is defined by:\n$$f(x) = 3x - 1, \\quad x \\in \\mathbb{ R }$$<br><strong>(i)</strong> State the range of the function $f(x)$.<br><strong>(ii)</strong> Find the inverse function $f^{-1}(x)$, clearly stating its domain.<br><br><strong>Part (b)</strong><br>A function $g$ is defined by:\n$$g(x) = \\left| \\dfrac{2}{x} - 1 \\right|, \\quad x \\in \\mathbb{ R }, \\quad x \\ne 0$$<br><strong>(i)</strong> Sketch the graph of $y = g(x)$.<br><strong>(ii)</strong> Find the composite function $gf(x)$.<br><br><strong>Part (c)</strong><br>The graph of the function $y = h(x)$ is sketched in the diagram below. Point $Q$ lies on the $y$-axis at $(0, 2)$ and point $P$ lies at $(4, -2)$. For $x \\ge 4$, the graph is a horizontal straight line.<br><br><strong>(i)</strong> On separate axes, sketch the graph of:\n$$y = h(x - 3)$$\nand clearly label the images of the points $P$ and $Q$.<br><br><strong>(ii)</strong> On separate axes, sketch the graph of:\n$$y = |h(x)|$$\nand clearly label the images of the points $P$ and $Q$.",
     "steps": [
-        "Since $ f(x)$ is a linear function with a domain of all real numbers ($x \\in \\mathbb{ R }$), its outputs are also unrestricted:\n\\begin{aligned} \\text{Range: }  f(x) \\in \\mathbb{ R } \\end{aligned}",
-        "Find the inverse function $ f^{-1}(x)$ by setting $y =  f(x)$ and rearranging to make $x$ the subject:\n\\begin{aligned} y &= 3x - 1 \\cr 3x &= y + 1 \\cr x &= \\dfrac{ y + 1 }{ 3 } \\end{aligned}\nSwap the variables to express the inverse function:\n\\begin{aligned}  f^{-1}(x) &= \\dfrac{ x + 1 }{ 3 } \\end{aligned}\nThe domain of the inverse function $ f^{-1}(x)$ is identical to the range of the original function, which is $x \\in \\mathbb{ R }$.",
-        "To sketch $y = \\left| \\dfrac{2}{x} - 1 \\right|$, start with the rational reciprocal curve $y = \\dfrac{2}{x} - 1$. This starting curve has a vertical asymptote at $x = 0$, a horizontal asymptote at $y = -1$, and an $x$-intercept at $(2, 0)$. The modulus operation reflects any negative portions (the parts below the $x$-axis) upwards. This reflects the horizontal asymptote to $y = 1$, while the vertical asymptote at $x = 0$ remains unchanged. The curve then pivots upwards from the $x$-intercept at $(2, 0)$:\n<br><br><img src='images/Pure/004770_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-        "Find the composite function $ g f(x)$ by substituting the expression for $ f(x)$ into $ g(x)$ and writing it over a common denominator:\n\\begin{aligned}  g f(x) &=  g\\left(  f(x) \\right) \\cr  g f(x) &= \\left| \\dfrac{2}{ 3x - 1 } - 1 \\right| \\cr  g f(x) &= \\left| \\dfrac{ 2 - (3x - 1) }{ 3x - 1 } \\right| \\cr  g f(x) &= \\left| \\dfrac{ 2 - 3x + 1 }{ 3x - 1 } \\right| \\cr  g f(x) &= \\left| \\dfrac{ 3 - 3x }{ 3x - 1 } \\right| \\end{aligned}\nThis is valid for the domain $x \\ne \\dfrac{1}{3}$."
+        "Since $f(x)$ is a linear function with a domain of all real numbers ($x \\in \\mathbb{ R }$), its outputs are also unrestricted:\n\\begin{aligned} \\text{Range: } f(x) \\in \\mathbb{ R } \\end{aligned}",
+        "Find the inverse function $f^{-1}(x)$ by setting $y = f(x)$ and rearranging to make $x$ the subject:\n\\begin{aligned} y &= 3x - 1 \\cr 3x &= y + 1 \\cr x &= \\dfrac{ x + 1 }{ 3 } \\end{aligned}\nSwap the variables to express the inverse function:\n\\begin{aligned} f^{-1}(x) &= \\dfrac{ x + 1 }{ 3 } \\end{aligned}\nThe domain of the inverse function $f^{-1}(x)$ is identical to the range of the original function, which is $x \\in \\mathbb{ R }$.",
+        "To sketch $y = \\left| \\dfrac{2}{x} - 1 \\right|$, start with the rational reciprocal curve $y = \\dfrac{2}{x} - 1$. This starting curve has a vertical asymptote at $x = 0$, a horizontal asymptote at $y = -1$, and an $x$-intercept at $(2, 0)$. The modulus operation reflects any negative portions (the parts below the $x$-axis) upwards. This reflects the horizontal asymptote to $y = 1$, while the vertical asymptote at $x = 0$ remains unchanged. The curve then pivots upwards from the $x$-intercept at $(2, 0)$:\n<br><br><img src='images/Pure/004770_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "Find the composite function $gf(x)$ by substituting the expression for $f(x)$ into $g(x)$ and writing it over a common denominator:\n\\begin{aligned} gf(x) &= g\\left( f(x) \\right) \\cr gf(x) &= \\left| \\dfrac{2}{ 3x - 1 } - 1 \\right| \\cr gf(x) &= \\left| \\dfrac{ 2 - (3x - 1) }{ 3x - 1 } \\right| \\cr gf(x) &= \\left| \\dfrac{ 2 - 3x + 1 }{ 3x - 1 } \\right| \\cr gf(x) &= \\left| \\dfrac{ 3 - 3x }{ 3x - 1 } \\right| \\end{aligned}\nThis is valid for the domain $x \\ne \\dfrac{1}{3}$.",
+        "For the transformation $y = h(x - 3)$, the graph of $h(x)$ is translated horizontally to the right by $3$ units. Add $3$ to the $x$-coordinates while keeping the $y$-coordinates the same:\n\\begin{aligned} Q(0, 2) &\\to Q'(3, 2) \\cr P(4, -2) &\\to P'(7, -2) \\end{aligned}\nThe horizontal straight line segment now lies along $y = -2$ for $x \\ge 7$:\n<br><br><img src='images/Pure/004770_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "For the transformation $y = |h(x)|$, any negative $y$-values on the graph of $h(x)$ are reflected vertically across the $x$-axis into positive $y$-values. The positive portion of the graph (from $x = 0$ to $x = 3$) remains unchanged, while the negative portion (from $x = 3$ to $x \to \\infty$) is reflected upwards:\n\\begin{aligned} Q(0, 2) &\\to Q'(0, 2) \\quad \\text{(remains unchanged)} \\cr P(4, -2) &\\to P'(4, 2) \\end{aligned}\nThe horizontal straight line segment now lies along $y = 2$ for $x \\ge 4$:\n<br><br><img src='images/Pure/004770_ans3.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>"
     ],
     "pi_options": [
         {
-            "ans": "$$ g f(x) = \\left| \\dfrac{ 1 - 3x }{ 3x - 1 } \\right|$$",
-            "feedback": "This error is caused by a sign mistake when expanding the numerator, incorrectly subtracting the $+1$ term instead of adding it when subtracting the fraction."
+            "ans": "$$gf(x) = \\left| \\dfrac{ 1 - 3x }{ 3x - 1 } \\right|$$",
+            "feedback": "This error is caused by a sign mistake when expanding the numerator, incorrectly subtracting the +1 term instead of adding it when subtracting the fraction."
         },
         {
-            "ans": "$$ g f(x) = \\left| \\dfrac{2}{ 3x - 2 } \\right|$$",
-            "feedback": "This mistake occurs if the subtraction of $1$ is applied inside the fraction's denominator directly instead of finding a common denominator."
+            "ans": "$$gf(x) = \\left| \\dfrac{2}{ 3x - 2 } \\right|$$",
+            "feedback": "This mistake occurs if the subtraction of 1 is applied inside the fraction's denominator directly instead of finding a common denominator."
         },
         {
-            "ans": "$$ g f(x) = \\left| \\dfrac{ 3 - 3x }{ 3x } \\right|$$",
-            "feedback": "This arises from a simplification error where the denominator $3x - 1$ is incorrectly reduced to $3x$."
+            "ans": "$$gf(x) = \\left| \\dfrac{ 3 - 3x }{ 3x } \\right|$$",
+            "feedback": "This arises from a simplification error where the denominator 3x - 1 is incorrectly reduced to 3x."
         }
     ],
     "bradley_insight": {
