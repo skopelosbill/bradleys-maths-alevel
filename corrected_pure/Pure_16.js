@@ -771,6 +771,200 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Reciprocal Graph Modulus Asymptotes",
         "content": "When applying a modulus transformation to rational curves of the form $y = \\left| \\dfrac{a}{x} + b \\right|$, always sketch the asymptotes first. If $b < 0$, the horizontal asymptote at $y = b$ is reflected across the $x$-axis to become $y = |b|$. The vertical asymptote at $x = 0$ is unaffected because it does not cross the $y$-axis."
     }
+},
+{
+    "id": "004771",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+        "R-formula",
+        "Trigonometric Optimisation"
+    ],
+    "img": false,
+    "question": "The expression $5 \\sin x + 12 \\cos x$ can be written in the form $R \\sin(x + \\alpha)$, where $R$ is an integer and $0^\\circ < \\alpha < 90^\\circ$.<br><br><strong>(i)</strong> Find the values of $R$ and $\\alpha$.<br><br><strong>(ii)</strong> Hence, find the maximum value of $g(x) = \\dfrac{ 24 }{ 5 \\sin x + 12 \\cos x + 15 }$ and the smallest positive value of $x$ at which this maximum occurs.",
+    "steps": [
+        "To write $5 \\sin x + 12 \\cos x$ in the form $R \\sin(x + \\alpha)$, we expand using the compound angle identity:<br>$R \\sin(x + \\alpha) \\equiv R \\sin x \\cos \\alpha + R \\cos x \\sin \\alpha$<br><br>By comparing the coefficients of $\\sin x$ and $\\cos x$ with our original expression, we set up the simultaneous equations:<br>\\begin{aligned} R \\cos \\alpha &= 5 \\cr R \\sin \\alpha &= 12 \\end{aligned}",
+        "To find the value of $R$, square and add both equations:<br>\\begin{aligned} R^2 \\cos^2 \\alpha + R^2 \\sin^2 \\alpha &= 5^2 + 12^2 \\cr R^2(\\cos^2 \\alpha + \\sin^2 \\alpha) &= 25 + 144 \\cr R^2 &= 169 \\cr R &= 13 \\end{aligned}<br><br>To find the value of $\\alpha$, divide the second equation by the first equation:<br>\\begin{aligned} \\dfrac{ R \\sin \\alpha }{ R \\cos \\alpha } &= \\dfrac{ 12 }{ 5 } \\cr \\tan \\alpha &= 2.4 \\cr \\alpha &= \\arctan(2.4) \\approx 67.4^\\circ \\end{aligned}<br>Thus, our expression can be rewritten as:<br>$5 \\sin x + 12 \\cos x \\equiv 13 \\sin(x + 67.38^\\circ)$",
+        "We now substitute this $R$-formula result into our function $g(x)$:<br>$g(x) = \\dfrac{ 24 }{ 13 \\sin(x + 67.38^\\circ) + 15 }$<br><br>To find the maximum value of $g(x)$, we must find the minimum possible value of the denominator. Since the minimum value of any sine function is $-1$, we set $\\sin(x + 67.38^\\circ) = -1$.<br><br>This gives a minimum denominator of:<br>\\begin{aligned} \\text{Minimum Denominator} &= 13(-1) + 15 \\cr &= 2 \\end{aligned}<br><br>Substituting this minimum denominator back into $g(x)$ gives the maximum value:<br>\\begin{aligned} g_{\\text{max}} &= \\dfrac{ 24 }{ 2 } \\cr &= 12 \\end{aligned}",
+        "To find the smallest positive value of $x$ where this maximum occurs, we solve the minimum condition:<br>\\begin{aligned} \\sin(x + 67.38^\\circ) &= -1 \\cr x + 67.38^\\circ &= 270^\\circ \\cr x &= 270^\\circ - 67.38^\\circ \\cr x &= 202.6^\\circ \\end{aligned}<br>Since $202.6^\\circ$ is positive and falls within the interval $0^\\circ \\le x < 360^\\circ$, this is the smallest positive value of $x$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$g_{\\text{max}} = 24,\\ x = 22.6^\\circ$$",
+            "feedback": "This error occurs if you assume the minimum value of the sine term is $0$ instead of $-1$, which yields a minimum denominator of $15$ and a maximum value of $24/15$, or if you solved the angle equation as $x + 67.38^\\circ = 90^\\circ$ instead of $270^\\circ$."
+        },
+        {
+            "ans": "$$g_{\\text{max}} = 0.857,\\ x = 22.6^\\circ$$",
+            "feedback": "This error occurs if you mistakenly seek the maximum of the denominator instead of its minimum. A maximum denominator of $13(1) + 15 = 28$ gives a minimum function value of $24/28 \\approx 0.857$. Solving the maximum condition $x + 67.38^\\circ = 90^\\circ$ yields $x = 22.6^\\circ$."
+        },
+        {
+            "ans": "$$g_{\\text{max}} = 12,\\ x = 22.6^\\circ$$",
+            "feedback": "While your maximum value of $12$ is correct, the angle $x = 22.6^\\circ$ is incorrect. It is obtained by solving the maximum condition of the sine function ($x + 67.38^\\circ = 90^\\circ$) instead of the minimum condition ($x + 67.38^\\circ = 270^\\circ$) which is required to minimize the denominator."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Reciprocal Optimisation Signs",
+        "content": "To maximize a fraction with a constant numerator, you must *minimize* its denominator. Students often mistakenly search for the maximum of the trigonometric term ($13$ instead of $-13$), resulting in the minimum of the overall function rather than its maximum."
+    }
+},
+{
+    "id": "004772",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+        "R-formula",
+        "Trigonometric Optimisation"
+    ],
+    "img": false,
+    "question": "The expression $3 \\sin x - 4 \\cos x$ can be written in the form $R \\sin(x - \\alpha)$, where $R > 0$ and $0 < \\alpha < \\dfrac{ \\pi }{ 2 }$.<br><br><strong>(i)</strong> Find the exact value of $R$ and the value of $\\alpha$ correct to 4 significant figures.<br><br><strong>(ii)</strong> Hence, find the minimum value of $h(x) = \\dfrac{ 10 }{ 3 \\sin x - 4 \\cos x + 7 }$ and the smallest positive value of $x$, in radians, at which this minimum occurs. Give your answer for $x$ correct to 3 significant figures.",
+    "steps": [
+        "To write $3 \\sin x - 4 \\cos x$ in the form $R \\sin(x - \\alpha)$, we expand using the compound angle subtraction identity:<br>$R \\sin(x - \\alpha) \\equiv R \\sin x \\cos \\alpha - R \\cos x \\sin \\alpha$<br><br>By comparing coefficients with our original expression, we establish the simultaneous equations:<br>\\begin{aligned} R \\cos \\alpha &= 3 \\cr R \\sin \\alpha &= 4 \\end{aligned}",
+        "To find the exact value of $R$:<br>\\begin{aligned} R^2 &= 3^2 + 4^2 \\cr R^2 &= 9 + 16 = 25 \\cr R &= 5 \\end{aligned}<br><br>To find the value of $\\alpha$ in radians, divide the second equation by the first equation:<br>\\begin{aligned} \\tan \\alpha &= \\dfrac{ 4 }{ 3 } \\cr \\alpha &= \\arctan\\left( \\dfrac{ 4 }{ 3 } \\right) \\approx 0.9273 \\text{ rad} \\end{aligned}<br>Thus, our expression can be written as:<br>$3 \\sin x - 4 \\cos x \\equiv 5 \\sin(x - 0.9273)$",
+        "Substituting this $R$-formula result into our function $h(x)$ gives:<br>$h(x) = \\dfrac{ 10 }{ 5 \\sin(x - 0.9273) + 7 }$<br><br>To find the minimum value of $h(x)$, we must maximize its denominator. The maximum value of any sine function is $1$, which occurs when $\\sin(x - 0.9273) = 1$.<br><br>This yields a maximum denominator of:<br>\\begin{aligned} \\text{Maximum Denominator} &= 5(1) + 7 \\cr &= 12 \\end{aligned}<br><br>Therefore, the minimum value of the function is:<br>\\begin{aligned} h_{\\text{min}} &= \\dfrac{ 10 }{ 12 } = \\dfrac{ 5 }{ 6 } \\approx 0.833 \\end{aligned}",
+        "To find the smallest positive value of $x$ where this minimum occurs, we solve the maximum condition:<br>\\begin{aligned} \\sin(x - 0.9273) &= 1 \\cr x - 0.9273 &= \\dfrac{ \\pi }{ 2 } \\cr x &= \\dfrac{ \\pi }{ 2 } + 0.9273 \\cr x &\\approx 1.571 + 0.9273 \\cr x &\\approx 2.50 \\text{ rad} \\end{aligned}<br>Since $2.50 > 0$, this is the smallest positive value of $x$ in radians."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$h_{\\text{min}} = 5,\\ x = 2.50\\text{ rad}$$",
+            "feedback": "This error occurs if you mistakenly identify the value of the maximized denominator ($12 - 7 = 5$) as the final minimum value of the function, rather than dividing $10$ by the total maximized denominator of $12$."
+        },
+        {
+            "ans": "$$h_{\\text{min}} = 0.833,\\ x = 0.644\\text{ rad}$$",
+            "feedback": "While your minimum value of $0.833$ is correct, the angle is wrong. This happens if you mistakenly subtracted $0.9273$ from $\\pi/2$ instead of adding it when solving $x - 0.9273 = \\pi/2$."
+        },
+        {
+            "ans": "$$h_{\\text{min}} = 5,\\ x = 4.07\\text{ rad}$$",
+            "feedback": "This is a dual error. You minimized the denominator ($7 - 5 = 2$) to find the function's maximum ($10/2 = 5$) instead of its minimum. You also solved the angle equation as $x - 0.9273 = 3\\pi/2 \\approx 4.712$, incorrectly subtracting $0.9273$ to get $4.07$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Radians Mode and Domain Limits",
+        "content": "Ensure your calculator is set to **Radian** mode! A very common exam slip is to write $\\alpha$ in degrees even when the question specifies the interval using fractions of $\\pi$. Always verify that your final value of $x$ is positive and falls within the required domain."
+    }
+},
+{
+    "id": "004773",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+        "R-formula",
+        "Quadratic Trigonometric Expressions"
+    ],
+    "img": false,
+    "question": "The expression $24 \\cos \\theta - 7 \\sin \\theta$ can be written in the form $R \\cos(\\theta + \\alpha)$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$.<br><br><strong>(i)</strong> Find the value of $R$ and the value of $\\alpha$ correct to 1 decimal place.<br><br><strong>(ii)</strong> Hence, find the maximum and minimum values of the quadratic expression:<br>$$f(\\theta) = (24 \\cos \\theta - 7 \\sin \\theta)^2 + 6(24 \\cos \\theta - 7 \\sin \\theta) + 12$$",
+    "steps": [
+        "To write $24 \\cos \\theta - 7 \\sin \\theta$ in the form $R \\cos(\\theta + \\alpha)$, we expand using the compound angle identity:<br>$R \\cos(\\theta + \\alpha) \\equiv R \\cos \\theta \\cos \\alpha - R \\sin \\theta \\sin \\alpha$<br><br>Comparing the coefficients of $\\cos \\theta$ and $\\sin \\theta$ with our expression gives:<br>\\begin{aligned} R \\cos \\alpha &= 24 \\cr R \\sin \\alpha &= 7 \\end{aligned}",
+        "To find the value of $R$:<br>\\begin{aligned} R^2 &= 24^2 + 7^2 \\cr R^2 &= 576 + 49 = 625 \\cr R &= 25 \\end{aligned}<br><br>To find the value of $\\alpha$, divide the second equation by the first equation:<br>\\begin{aligned} \\tan \\alpha &= \\dfrac{ 7 }{ 24 } \\cr \\alpha &= \\arctan\\left( \\dfrac{ 7 }{ 24 } \\right) \\approx 16.3^\\circ \\end{aligned}<br>Thus, our expression can be written as:<br>$24 \\cos \\theta - 7 \\sin \\theta \\equiv 25 \\cos(\\theta + 16.3^\\circ)$",
+        "We can now substitute $u = 24 \\cos \\theta - 7 \\sin \\theta = 25 \\cos(\\theta + 16.3^\\circ)$ into the quadratic function.<br><br>Since the range of $\\cos(\\theta + 16.3^\\circ)$ is $[-1, 1]$, the range of $u$ is constrained to:<br>$-25 \\le u \\le 25$<br><br>Substituting $u$ into our quadratic expression $f(\\theta)$ yields:<br>$f(u) = u^2 + 6u + 12$",
+        "To find the minimum value, we complete the square on our quadratic in $u$:<br>\\begin{aligned} f(u) &= (u^2 + 6u + 9) - 9 + 12 \\cr &= (u + 3)^2 + 3 \\end{aligned}<br><br>The vertex of this upward-opening parabola is at $u = -3$. Since the value $u = -3$ falls within our valid domain $[-25, 25]$, the absolute minimum of the expression is simply the $y$-value of the vertex:<br>\\begin{aligned} f_{\\text{min}} &= 3 \\end{aligned}",
+        "The maximum of our quadratic function must occur at the boundary value of $u$ that is furthest from the vertex at $u = -3$.<br><br>Comparing the distances from the vertex, $u = 25$ is further away than $u = -25$. We evaluate $f(u)$ at both endpoints to confirm:<br><br>At $u = -25$:<br>\\begin{aligned} f(-25) &= (-25 + 3)^2 + 3 \\cr &= (-22)^2 + 3 \\cr &= 484 + 3 = 487 \\end{aligned}<br><br>At $u = 25$:<br>\\begin{aligned} f(25) &= (25 + 3)^2 + 3 \\cr &= (28)^2 + 3 \\cr &= 784 + 3 = 787 \\end{aligned}<br><br>Thus, the maximum value of the expression is $787$ and the minimum value is $3$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\text{Max} = 787,\\ \\text{Min} = 487$$",
+            "feedback": "This error occurs if you mistakenly assume that the minimum value must occur at one of the physical boundaries ($u = -25$ or $u = 25$). Because the vertex of the parabola ($u = -3$) falls within your valid domain $[-25, 25]$, the absolute minimum occurs at the vertex itself, giving $3$."
+        },
+        {
+            "ans": "$$\\text{Max} = 637,\\ \\text{Min} = 3$$",
+            "feedback": "Your minimum value is correct. However, this maximum error occurs if you make an arithmetic error during the evaluation of $f(25)$, such as squaring $25$ to $625$ but subtracting $6(25)$ or miscalculating the squared term $(-25)^2$ as negative."
+        },
+        {
+            "ans": "$$\\text{Max} = 787,\\ \\text{Min} = 12$$",
+            "feedback": "While your maximum is correct, the minimum is incorrect. This happens if you set $u = 0$ to find the minimum of the expression, yielding $f(0) = 12$. Always check the vertex of the quadratic ($u = -3$) rather than simply setting the variable to zero."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Boundaries of Quadratic Trig Functions",
+        "content": "When dealing with quadratic expressions of a trigonometric function $f(u)$, don't just test the endpoints! If the vertex of the completed square ($u = -3$) lies inside the interval $[-25, 25]$, the absolute minimum is exactly the $y$-value at that vertex. The maximum will always be at whichever boundary is furthest from the vertex."
+    }
+},
+{
+    "id": "004774",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+        "R-formula",
+        "Solving Trigonometric Equations"
+    ],
+    "img": false,
+    "question": "The expression $\\sqrt{3} \\sin 2\\theta - \\cos 2\\theta$ can be written in the form $R \\sin(2\\theta - \\alpha)$, where $R > 0$ and $0 < \\alpha < \\dfrac{ \\pi }{ 2 }$.<br><br><strong>(i)</strong> Find the value of $R$ and the exact value of $\\alpha$ in radians.<br><br><strong>(ii)</strong> Hence, solve the trigonometric equation:<br>$$\\sqrt{3} \\sin 2\\theta - \\cos 2\\theta = \\sqrt{2}$$<br>in the interval $0 \\le \\theta \\le \\pi$, giving your answers in terms of $\\pi$.",
+    "steps": [
+        "To express $\\sqrt{3} \\sin 2\\theta - \\cos 2\\theta$ in the form $R \\sin(2\\theta - \\alpha)$, we expand using the compound subtraction identity:<br>$R \\sin(2\\theta - \\alpha) \\equiv R \\sin 2\\theta \\cos \\alpha - R \\cos 2\\theta \\sin \\alpha$<br><br>Comparing coefficients with our expression yields:<br>\\begin{aligned} R \\cos \\alpha &= \\sqrt{3} \\cr R \\sin \\alpha &= 1 \\end{aligned}",
+        "To find the value of $R$:<br>\\begin{aligned} R^2 &= (\\sqrt{3})^2 + (-1)^2 \\cr R^2 &= 3 + 1 = 4 \\cr R &= 2 \\end{aligned}<br><br>To find the exact value of $\\alpha$ in radians:<br>\\begin{aligned} \\tan \\alpha &= \\dfrac{ 1 }{ \\sqrt{3} } \\cr \\alpha &= \\dfrac{ \\pi }{ 6 } \\end{aligned}<br>Thus, our expression can be written as:<br>$\\sqrt{3} \\sin 2\\theta - \\cos 2\\theta \\equiv 2 \\sin\\left( 2\\theta - \\dfrac{ \\pi }{ 6 } \\right)$",
+        "We now substitute this form back into our equation to solve it:<br>\\begin{aligned} 2 \\sin\\left( 2\\theta - \\dfrac{ \\pi }{ 6 } \\right) &= \\sqrt{2} \\cr \\sin\\left( 2\\theta - \\dfrac{ \\pi }{ 6 } \\right) &= \\dfrac{ \\sqrt{ 2 } }{ 2 } \\end{aligned}",
+        "To solve within the domain $0 \\le \\theta \\le \\pi$, we must find the valid interval for the transformed variable $u = 2\\theta - \\dfrac{ \\pi }{ 6 }$:<br>\\begin{aligned} 0 &\\le \\theta \\le \\pi \\cr 0 &\\le 2\\theta \\le 2\\pi \\cr -\\dfrac{ \\pi }{ 6 } &\\le 2\\theta - \\dfrac{ \\pi }{ 6 } \\le \\dfrac{ 11\\pi }{ 6 } \\end{aligned}<br>So, we seek solutions for $\\sin u = \\dfrac{ \\sqrt{ 2 } }{ 2 }$ in the interval $-\\dfrac{ \\pi }{ 6 } \\le u \\le \\dfrac{ 11\\pi }{ 6 }$.",
+        "Since the sine value is positive, $u$ lies in the first or second quadrant. The principal value is $\\dfrac{ \\pi }{ 4 }$.<br><br>Our solutions for $u$ are:<br>\\begin{aligned} u &= \\dfrac{ \\pi }{ 4 } \\cr u &= \\pi - \\dfrac{ \\pi }{ 4 } = \\dfrac{ 3\\pi }{ 4 } \\end{aligned}<br>Both values lie comfortably within the transformed interval.",
+        "We now solve back for $\\theta$:<br><br>For $u = \\dfrac{ \\pi }{ 4 }$:<br>\\begin{aligned} 2\\theta - \\dfrac{ \\pi }{ 6 } &= \\dfrac{ \\pi }{ 4 } \\cr 2\\theta &= \\dfrac{ \\pi }{ 4 } + \\dfrac{ \\pi }{ 6 } \\cr 2\\theta &= \\dfrac{ 3\\pi }{ 12 } + \\dfrac{ 2\\pi }{ 12 } = \\dfrac{ 5\\pi }{ 12 } \\cr \\theta &= \\dfrac{ 5\\pi }{ 24 } \\end{aligned}<br><br>For $u = \\dfrac{ 3\\pi }{ 4 }$:<br>\\begin{aligned} 2\\theta - \\dfrac{ \\pi }{ 6 } &= \\dfrac{ 3\\pi }{ 4 } \\cr 2\\theta &= \\dfrac{ 3\\pi }{ 4 } + \\dfrac{ \\pi }{ 6 } \\cr 2\\theta &= \\dfrac{ 9\\pi }{ 12 } + \\dfrac{ 2\\pi }{ 12 } = \\dfrac{ 11\\pi }{ 12 } \\cr \\theta &= \\dfrac{ 11\\pi }{ 24 } \\end{aligned}<br><br>Thus, the solutions are $\\theta = \\dfrac{ 5\\pi }{ 24 }$ and $\\theta = \\dfrac{ 11\\pi }{ 24 }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\theta = \\dfrac{ 5\\pi }{ 24 },\\ \\theta = \\dfrac{ 13\\pi }{ 24 }$$",
+            "feedback": "This error occurs if you make an arithmetic error when calculating the second quadrant angle, or mistakenly write the second solution of the sine equation as $\\pi - \\pi/6$ (from the phase shift) instead of working with the principal value $\\pi - \\pi/4$."
+        },
+        {
+            "ans": "$$\\theta = \\dfrac{ \\pi }{ 24 },\\ \\theta = \\dfrac{ 7\\pi }{ 24 }$$",
+            "feedback": "This occurs if you incorrectly subtract the phase angle $\\pi/6$ from the primary solutions instead of adding it when solving for $2\\theta$, resulting in $2\\theta = \\pi/4 - \\pi/6$ and $2\\theta = 3\\pi/4 - \\pi/6$."
+        },
+        {
+            "ans": "$$\\theta = \\dfrac{ 5\\pi }{ 12 },\\ \\theta = \\dfrac{ 11\\pi }{ 12 }$$",
+            "feedback": "This error occurs if you successfully carry out the algebraic steps to solve for the expression $2\\theta$ but forget to divide by $2$ at the very last step to find the final values of $\\theta$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Interval Shifts for $2\\theta$",
+        "content": "When solving $2\\theta - \\alpha = u$, always map out the shifted interval for $u$ before writing down solutions. Finding solutions for $\\theta$ outside the interval $0 \\le \\theta \\le \\pi$, or missing solutions entirely, is usually caused by failing to transform the boundaries first."
+    }
+},
+{
+    "id": "004775",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+        "R-formula",
+        "Trigonometric Modelling",
+        "Optimisation"
+    ],
+    "img": "images/Pure/004775.png",
+    "question": "A rectangular sign $ABCD$ has side lengths $AB = 6\\text{ m}$ and $BC = 2\\text{ m}$. The sign is tilted such that the corner $A$ rests on horizontal ground, and the side $AB$ makes an angle $\\theta$ with the horizontal, where $0^\\circ < \\theta < 90^\\circ$, as shown in the diagram.<br><br><strong>(i)</strong> Show that the vertical height, $H$, in metres, of the highest point $C$ above the ground is given by:<br>$$H = 6 \\sin \\theta + 2 \\cos \\theta$$<br><strong>(ii)</strong> Express $6 \\sin \\theta + 2 \\cos \\theta$ in the form $R \\sin(\\theta + \\alpha)$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$. Give $R$ in exact simplified surd form and $\\alpha$ correct to 1 decimal place.<br><br><strong>(iii)</strong> Find the maximum possible height of point $C$ above the ground, and the angle $\\theta$ at which this occurs. Give the height to 3 significant figures and the angle to 1 decimal place.",
+    "steps": [
+        "Let us represent point $A$ on the ground as the origin $(0,0)$. Since side $AB$ has length $6\\text{ m}$ and is inclined at angle $\\theta$ to the horizontal ground, we can find the vertical height of point $B$ above the ground by constructing a right-angled triangle:<br>\\begin{aligned} y_B &= 6 \\sin \\theta \\end{aligned}<br><br>Now, side $BC$ has length $2\\text{ m}$ and is perpendicular to $AB$. Since $AB$ is at angle $\\theta$ to the horizontal, $BC$ must make an angle of $\\theta$ with the vertical line passing through $B$ (tilted back to the left).<br><br>The additional vertical distance $\\Delta y$ from $B$ up to $C$ is given by:<br>\\begin{aligned} \\Delta y &= 2 \\cos \\theta \\end{aligned}<br><br>Thus, the overall vertical height $H$ of the highest point $C$ above the ground is:<br>\\begin{aligned} H &= y_B + \\Delta y \\cr H &= 6 \\sin \\theta + 2 \\cos \\theta \\end{aligned}<br><strong>(Shown)</strong>",
+        "To write $6 \\sin \\theta + 2 \\cos \\theta$ in the form $R \\sin(\\theta + \\alpha)$, expand using the compound angle identity:<br>$R \\sin(\\theta + \\alpha) \\equiv R \\sin \\theta \\cos \\alpha + R \\cos \\theta \\sin \\alpha$<br><br>Comparing the coefficients of $\\sin \\theta$ and $\\cos \\theta$ gives us:<br>\\begin{aligned} R \\cos \\alpha &= 6 \\cr R \\sin \\alpha &= 2 \\end{aligned}",
+        "To find the exact surd value of $R$:<br>\\begin{aligned} R^2 &= 6^2 + 2^2 \\cr R^2 &= 36 + 4 = 40 \\cr R &= \\sqrt{ 40 } = 2\\sqrt{ 10 } \\end{aligned}<br><br>To find the value of $\\alpha$, divide the equations:<br>\\begin{aligned} \\tan \\alpha &= \\dfrac{ 2 }{ 6 } = \\dfrac{ 1 }{ 3 } \\cr \\alpha &= \\arctan\\left( \\dfrac{ 1 }{ 3 } \\right) \\approx 18.4^\\circ \\end{aligned}<br>Thus, our expression can be written as:<br>$H \\equiv 2\\sqrt{ 10 } \\sin(\\theta + 18.4^\\circ)$",
+        "The maximum value of the height $H$ occurs when the sine term reaches its maximum value of $1$, which occurs when $\\sin(\\theta + 18.43^\\circ) = 1$.<br><br>The maximum height is:<br>\\begin{aligned} H_{\\text{max}} &= 2\\sqrt{ 10 } \\approx 6.32\\text{ m} \\end{aligned} (to 3 significant figures).<br><br>This maximum occurs when:<br>\\begin{aligned} \\theta + 18.43^\\circ &= 90^\\circ \\cr \\theta &= 90^\\circ - 18.43^\\circ \\cr \\theta &\\approx 71.6^\\circ \\end{aligned} (to 1 decimal place).<br>Since $71.6^\\circ$ is within our physical boundaries ($0^\\circ < \\theta < 90^\\circ$), this is our optimal angle."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$H_{\\text{max}} = 6.32\\text{ m},\\ \\theta = 18.4^\\circ$$",
+            "feedback": "This error occurs if you mistakenly identify the phase angle $\\alpha = 18.4^\\circ$ as the physical angle of tilt $\\theta$ at which the maximum height occurs, rather than subtracting it from the complement angle ($90^\\circ - \\alpha$)."
+        },
+        {
+            "ans": "$$H_{\\text{max}} = 8.00\\text{ m},\\ \\theta = 71.6^\\circ$$",
+            "feedback": "While the angle is correct, the maximum height of $8.00\\text{ m}$ is wrong. This happens if you mistakenly add the two coefficient values directly ($6 + 2 = 8$) to find the maximum instead of using the vector addition rule $R = \\sqrt{ a^2 + b^2 }$."
+        },
+        {
+            "ans": "$$H_{\\text{max}} = 6.32\\text{ m},\\ \\theta = 108.4^\\circ$$",
+            "feedback": "This occurs if you incorrectly solve the angle equation as $\\theta = 90^\\circ + 18.43^\\circ = 108.4^\\circ$ by adding instead of subtracting $\\alpha$. Note that an angle of $108.4^\\circ$ also violates the physical boundary $0^\\circ < \\theta < 90^\\circ$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Physical Angle vs Phase Angle",
+        "content": "In physical modelling scenarios, the maximum height of $R$ occurs when the sine term equals $1$, which yields $\\theta + \\alpha = 90^\\circ$. The angle of tilt is therefore the *complement* of the phase angle ($\\theta = 90^\\circ - \\alpha$). Don't confuse the two!"
+    }
 }
 
 ];
