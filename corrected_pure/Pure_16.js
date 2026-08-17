@@ -941,10 +941,10 @@ window.ALEVEL_QUESTIONS = [
     "img": "images/Pure/004775.png",
     "question": "A rectangular sign $ABCD$ has side lengths $AB = 6\\text{ m}$ and $BC = 2\\text{ m}$. The sign is tilted such that the corner $A$ rests on horizontal ground, and the side $AB$ makes an angle $\\theta$ with the horizontal, where $0^\\circ < \\theta < 90^\\circ$, as shown in the diagram.<br><br><strong>(i)</strong> Show that the vertical height, $H$, in metres, of the highest point $C$ above the ground is given by:<br>$$H = 6 \\sin \\theta + 2 \\cos \\theta$$<br><strong>(ii)</strong> Express $6 \\sin \\theta + 2 \\cos \\theta$ in the form $R \\sin(\\theta + \\alpha)$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$. Give $R$ in exact simplified surd form and $\\alpha$ correct to 1 decimal place.<br><br><strong>(iii)</strong> Find the maximum possible height of point $C$ above the ground, and the angle $\\theta$ at which this occurs. Give the height to 3 significant figures and the angle to 1 decimal place.",
     "steps": [
-        "Let us represent point $A$ on the ground as the origin $(0,0)$. Since side $AB$ has length $6\\text{ m}$ and is inclined at angle $\\theta$ to the horizontal ground, we can find the vertical height of point $B$ above the ground by constructing a right-angled triangle:<br>\\begin{aligned} y_B &= 6 \\sin \\theta \\end{aligned}<br><br>Now, side $BC$ has length $2\\text{ m}$ and is perpendicular to $AB$. Since $AB$ is at angle $\\theta$ to the horizontal, $BC$ must make an angle of $\\theta$ with the vertical line passing through $B$ (tilted back to the left).<br><br>The additional vertical distance $\\Delta y$ from $B$ up to $C$ is given by:<br>\\begin{aligned} \\Delta y &= 2 \\cos \\theta \\end{aligned}<br><br>Thus, the overall vertical height $H$ of the highest point $C$ above the ground is:<br>\\begin{aligned} H &= y_B + \\Delta y \\cr H &= 6 \\sin \\theta + 2 \\cos \\theta \\end{aligned}<br><strong>(Shown)</strong>",
+        "Let us represent point $A$ on the ground as the origin $(0,0)$. Since side $AB$ has length $6\\text{ m}$ and is inclined at angle $\\theta$ to the horizontal ground, we can find the vertical height of point $B$ above the ground by constructing a right-angled triangle:<br>\\begin{aligned} y_B &= 6 \\sin \\theta \\end{aligned}<br><br>Now, side $BC$ has length $2\\text{ m}$ and is perpendicular to $AB$. Since $AB$ is at angle $\\theta$ to the horizontal, $BC$ must make an angle of $\\theta$ with the vertical line passing through $B$ (tilted back to the left).<br><br>The additional vertical distance $\\Delta y$ from $B$ up to $C$ is given by:<br>\\begin{aligned} \\Delta y &= 2 \\cos \\theta \\end{aligned}<br><br>Thus, the overall vertical height $H$ of the highest point $C$ above the ground is:<br>\\begin{aligned} H &= y_B + \\Delta y \\cr H &= 6 \\sin \\theta + 2 \\cos \\theta \\end{aligned}",
         "To write $6 \\sin \\theta + 2 \\cos \\theta$ in the form $R \\sin(\\theta + \\alpha)$, expand using the compound angle identity:<br>$R \\sin(\\theta + \\alpha) \\equiv R \\sin \\theta \\cos \\alpha + R \\cos \\theta \\sin \\alpha$<br><br>Comparing the coefficients of $\\sin \\theta$ and $\\cos \\theta$ gives us:<br>\\begin{aligned} R \\cos \\alpha &= 6 \\cr R \\sin \\alpha &= 2 \\end{aligned}",
         "To find the exact surd value of $R$:<br>\\begin{aligned} R^2 &= 6^2 + 2^2 \\cr R^2 &= 36 + 4 = 40 \\cr R &= \\sqrt{ 40 } = 2\\sqrt{ 10 } \\end{aligned}<br><br>To find the value of $\\alpha$, divide the equations:<br>\\begin{aligned} \\tan \\alpha &= \\dfrac{ 2 }{ 6 } = \\dfrac{ 1 }{ 3 } \\cr \\alpha &= \\arctan\\left( \\dfrac{ 1 }{ 3 } \\right) \\approx 18.4^\\circ \\end{aligned}<br>Thus, our expression can be written as:<br>$H \\equiv 2\\sqrt{ 10 } \\sin(\\theta + 18.4^\\circ)$",
-        "The maximum value of the height $H$ occurs when the sine term reaches its maximum value of $1$, which occurs when $\\sin(\\theta + 18.43^\\circ) = 1$.<br><br>The maximum height is:<br>\\begin{aligned} H_{\\text{max}} &= 2\\sqrt{ 10 } \\approx 6.32\\text{ m} \\end{aligned} (to 3 significant figures).<br><br>This maximum occurs when:<br>\\begin{aligned} \\theta + 18.43^\\circ &= 90^\\circ \\cr \\theta &= 90^\\circ - 18.43^\\circ \\cr \\theta &\\approx 71.6^\\circ \\end{aligned} (to 1 decimal place).<br>Since $71.6^\\circ$ is within our physical boundaries ($0^\\circ < \\theta < 90^\\circ$), this is our optimal angle."
+        "The maximum value of the height $H$ occurs when the sine term reaches its maximum value of $1$, which occurs when $\\sin(\\theta + 18.43^\\circ) = 1$.<br><br>The maximum height is:<br>\\begin{aligned} H_{\\text{max}} &= 2\\sqrt{ 10 } \\approx 6.32\\text{ m (to 3 significant figures).} \\end{aligned} <br><br>This maximum occurs when:<br>\\begin{aligned} \\theta + 18.43^\\circ &= 90^\\circ \\cr \\theta &= 90^\\circ - 18.43^\\circ \\cr \\theta &\\approx 71.6^\\circ \\text{ (to 1 decimal place).} \\end{aligned} br>Since $71.6^\\circ$ is within our physical boundaries ($0^\\circ < \\theta < 90^\\circ$), this is our optimal angle."
     ],
     "pi_options": [
         {
@@ -964,6 +964,196 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Physical Angle vs Phase Angle",
         "content": "In physical modelling scenarios, the maximum height of $R$ occurs when the sine term equals $1$, which yields $\\theta + \\alpha = 90^\\circ$. The angle of tilt is therefore the *complement* of the phase angle ($\\theta = 90^\\circ - \\alpha$). Don't confuse the two!"
+    }
+},
+{
+    "id": "004776",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Partial Fractions",
+    "subtopic": [
+        "Linear Denominators"
+    ],
+    "img": false,
+    "question": "Express the following algebraic fraction in partial fractions:<br>$$\\dfrac{ 7x - 1 }{ (x + 3)(x - 1) }$$",
+    "steps": [
+        "We set up the partial fractions identity for distinct linear factors:<br>$$\\dfrac{ 7x - 1 }{ (x + 3)(x - 1) } \\equiv \\dfrac{ A }{ x + 3 } + \\dfrac{ B }{ x - 1 }$$<br>Multiply both sides by $(x + 3)(x - 1)$ to obtain the linear identity:<br>$$7x - 1 \\equiv A(x - 1) + B(x + 3)$$",
+        "To find the constant $B$, substitute $x = 1$ to eliminate the $A$ term:<br>\\begin{aligned} 7(1) - 1 &= B(1 + 3) \\cr 6 &= 4B \\cr B &= 1.5 \\end{aligned}",
+        "To find the constant $A$, substitute $x = -3$ to eliminate the $B$ term:<br>\\begin{aligned} 7(-3) - 1 &= A(-3 - 1) \\cr -22 &= -4A \\cr A &= 5.5 \\end{aligned}",
+        "Substituting the values of $A$ and $B$ back into our initial expression gives the final partial fractions:<br>$$\\dfrac{ 5.5 }{ x + 3 } + \\dfrac{ 1.5 }{ x - 1 }$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\dfrac{ 1.5 }{ x + 3 } + \\dfrac{ 5.5 }{ x - 1 }$$",
+            "feedback": "This error occurs if you solve the coefficients correctly but accidentally swap the positions of $A$ and $B$, placing $A = 5.5$ over $(x - 1)$ and $B = 1.5$ over $(x + 3)$."
+        },
+        {
+            "ans": "$$\\dfrac{ 5.5 }{ x + 3 } - \\dfrac{ 1.5 }{ x - 1 }$$",
+            "feedback": "This mistake occurs if you make a sign slip when solving for $B$, such as evaluating $7(1) - 1$ as $-6$, or forgetting to change the sign when dividing by $4$, which results in a negative coefficient."
+        },
+        {
+            "ans": "$$\\dfrac{ 8 }{ x + 3 } + \\dfrac{ 6 }{ x - 1 }$$",
+            "feedback": "This error occurs if you make arithmetic slips when substituting values. For example, evaluating $7(1) - 1$ incorrectly as $8$ instead of $6$ when $x = 1$, or simplifying $-22 = -4A$ incorrectly."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Checking Partial Fractions",
+        "content": "Always do a quick sanity check by substituting a simple value like $x = 0$ or $x = 2$ back into both the original fraction and your partial fractions. At $x = 0$, the original is $\\frac{ -1 }{ -3 } = \\frac{ 1 }{ 3 }$, and the answer is $\\frac{ 5.5 }{ 3 } - 1.5 = 1.833 - 1.5 = 0.333 = \\frac{ 1 }{ 3 }$. It works!"
+    }
+},
+{
+    "id": "004777",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Partial Fractions",
+    "subtopic": [
+        "Repeated Linear Factors"
+    ],
+    "img": false,
+    "question": "Express the following algebraic fraction in partial fractions:<br>$$\\dfrac{ x + 7 }{ (x + 1)(x - 2)^2 }$$",
+    "steps": [
+        "We set up the partial fractions identity for repeated linear factors in the denominator:<br>$$\\dfrac{ x + 7 }{ (x + 1)(x - 2)^2 } \\equiv \\dfrac{ A }{ x + 1 } + \\dfrac{ B }{ x - 2 } + \\dfrac{ C }{ (x - 2)^2 }$$<br>Multiply both sides by $(x + 1)(x - 2)^2$ to obtain the identity:<br>$$x + 7 \\equiv A(x - 2)^2 + B(x + 1)(x - 2) + C(x + 1)$$",
+        "To find the constant $C$, substitute $x = 2$ to eliminate both the $A$ and $B$ terms:<br>\\begin{aligned} 2 + 7 &= C(2 + 1) \\cr 9 &= 3C \\cr C &= 3 \\end{aligned}",
+        "To find the constant $A$, substitute $x = -1$ to eliminate both the $B$ and $C$ terms:<br>\\begin{aligned} -1 + 7 &= A(-1 - 2)^2 \\cr 6 &= A(-3)^2 \\cr 6 &= 9A \\cr A &= \\dfrac{ 2 }{ 3 } \\end{aligned}",
+        "To find the constant $B$, we equate the coefficients of the $x^2$ terms on both sides of the identity:<br>\\begin{aligned} 0 &= A + B \\cr 0 &= \\dfrac{ 2 }{ 3 } + B \\cr B &= -\\dfrac{ 2 }{ 3 } \\end{aligned}",
+        "Substituting the values of $A$, $B$, and $C$ back into our initial setup gives:<br>$$\\dfrac{ 2 }{ 3(x + 1) } - \\dfrac{ 2 }{ 3(x - 2) } + \\dfrac{ 3 }{ (x - 2)^2 }$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\dfrac{ 2 }{ 3(x + 1) } + \\dfrac{ 2 }{ 3(x - 2) } + \\dfrac{ 3 }{ (x - 2)^2 }$$",
+            "feedback": "This error occurs if you make a sign error when equating the $x^2$ coefficients, setting $A = B$ or $B = A$ instead of $A + B = 0$."
+        },
+        {
+            "ans": "$$\\dfrac{ 2 }{ 3(x + 1) } + \\dfrac{ 3 }{ (x - 2)^2 }$$",
+            "feedback": "This mistake occurs if you forget to include the linear partial fraction term $\\dfrac{ B }{ x - 2 }$ in your initial setup. Repeated factors of the form $(x - a)^2$ always require both the linear term $(x - a)$ and the squared term $(x - a)^2$."
+        },
+        {
+            "ans": "$$\\dfrac{ 1 }{ x + 1 } - \\dfrac{ 1 }{ x - 2 } + \\dfrac{ 3 }{ (x - 2)^2 }$$",
+            "feedback": "This occurs if you make an arithmetic slip when simplifying the equation for $A$, such as simplifying $9A = 6$ to $A = 9/6 = 1.5$ instead of $A = 6/9 = 2/3$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Repeated Factor Setup",
+        "content": "When dealing with repeated linear factors like $(x - 2)^2$, you must include two separate partial fractions: one with the linear denominator $(x - 2)$ and one with the squared denominator $(x - 2)^2$. Leaving out the linear term is a very common exam slip!"
+    }
+},
+{
+    "id": "004778",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Partial Fractions",
+    "subtopic": [
+        "Repeated Linear Factors"
+    ],
+    "img": false,
+    "question": "Express the following algebraic fraction in partial fractions:<br>$$\\dfrac{ 4x^2 - 3x + 5 }{ (x - 1)^2(x + 2) }$$",
+    "steps": [
+        "We set up the partial fractions identity for the repeated linear factor $(x - 1)^2$ and distinct factor $(x + 2)$:<br>$$\\dfrac{ 4x^2 - 3x + 5 }{ (x - 1)^2(x + 2) } \\equiv \\dfrac{ A }{ x - 1 } + \\dfrac{ B }{ (x - 1)^2 } + \\dfrac{ C }{ x + 2 }$$<br>Multiply both sides by the denominator $(x - 1)^2(x + 2)$ to obtain the linear identity:<br>$$4x^2 - 3x + 5 \\equiv A(x - 1)(x + 2) + B(x + 2) + C(x - 1)^2$$",
+        "To find the constant $B$, substitute $x = 1$ to eliminate both the $A$ and $C$ terms:<br>\\begin{aligned} 4(1)^2 - 3(1) + 5 &= B(1 + 2) \\cr 6 &= 3B \\cr B &= 2 \\end{aligned}",
+        "To find the constant $C$, substitute $x = -2$ to eliminate both the $A$ and $B$ terms:<br>\\begin{aligned} 4(-2)^2 - 3(-2) + 5 &= C(-2 - 1)^2 \\cr 16 + 6 + 5 &= 9C \\cr 27 &= 9C \\cr C &= 3 \\end{aligned}",
+        "To find the constant $A$, we equate the coefficients of the $x^2$ terms on both sides of the identity:<br>\\begin{aligned} 4 &= A + C \\cr 4 &= A + 3 \\cr A &= 1 \\end{aligned}",
+        "Substituting the values of $A$, $B$, and $C$ back into our initial setup yields the final partial fractions:<br>$$\\dfrac{ 1 }{ x - 1 } + \\dfrac{ 2 }{ (x - 1)^2 } + \\dfrac{ 3 }{ x + 2 }$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\dfrac{ 7 }{ x - 1 } + \\dfrac{ 2 }{ (x - 1)^2 } + \\dfrac{ 3 }{ x + 2 }$$",
+            "feedback": "This error occurs if you make a sign error when equating the $x^2$ coefficients, solving the equation as $A = 4 + C = 4 + 3 = 7$ instead of $A = 4 - C = 1$."
+        },
+        {
+            "ans": "$$\\dfrac{ 1 }{ x - 1 } + \\dfrac{ 6 }{ (x - 1)^2 } + \\dfrac{ 3 }{ x + 2 }$$",
+            "feedback": "This occurs if you make an arithmetic mistake on the left-hand side when substituting $x = 1$, evaluating $4(1)^2 - 3(1) + 5 = 18$ instead of $6$, which leads to $B = 6$."
+        },
+        {
+            "ans": "$$\\dfrac{ 2 }{ (x - 1)^2 } + \\dfrac{ 3 }{ x + 2 }$$",
+            "feedback": "This error occurs if you completely omit the linear fraction term $\\dfrac{ A }{ x - 1 }$ from your initial setup. This omission is a major algebraic error because the numerator is of degree 2."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Equating $x^2$ Terms",
+        "content": "Once you have found the 'easy' constants ($B$ and $C$) using substitution, equating the coefficients of the highest power ($x^2$) is the fastest and cleanest way to find the remaining constant ($A$). It avoids tedious simultaneous equations!"
+    }
+},
+{
+    "id": "004779",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Partial Fractions",
+    "subtopic": [
+        "Improper Fractions",
+        "Algebraic Division"
+    ],
+    "img": false,
+    "question": "Express the following improper algebraic fraction in partial fractions:<br>$$\\dfrac{ 2x^2 + 5x - 7 }{ (x + 3)(x - 2) }$$",
+    "steps": [
+        "Since the degree of the numerator (2) is equal to the degree of the denominator (2), this is an improper fraction. We must set up our decomposition with a constant term $A$:<br>$$\\dfrac{ 2x^2 + 5x - 7 }{ (x + 3)(x - 2) } \\equiv A + \\dfrac{ B }{ x + 3 } + \\dfrac{ C }{ x - 2 }$$<br>Expanding the denominator gives $(x + 3)(x - 2) = x^2 + x - 6$. By equating the coefficients of $x^2$ (or through algebraic division), we find:<br>$$A = 2$$",
+        "Now, multiply both sides of the identity by the denominator $(x + 3)(x - 2)$ to form the linear identity:<br>$$2x^2 + 5x - 7 \\equiv 2(x^2 + x - 6) + B(x - 2) + C(x + 3)$$<br>Subtract $2(x^2 + x - 6) = 2x^2 + 2x - 12$ from both sides to simplify the identity:<br>$$3x + 5 \\equiv B(x - 2) + C(x + 3)$$",
+        "To find the constant $C$, substitute $x = 2$ to eliminate the $B$ term:<br>\\begin{aligned} 3(2) + 5 &= C(2 + 3) \\cr 11 &= 5C \\cr C &= 2.2 \\end{aligned}",
+        "To find the constant $B$, substitute $x = -3$ to eliminate the $C$ term:<br>\\begin{aligned} 3(-3) + 5 &= B(-3 - 2) \\cr -4 &= -5B \\cr B &= 0.8 \\end{aligned}",
+        "Substituting $A$, $B$, and $C$ back into our initial setup yields the final expression:<br>$$2 + \\dfrac{ 0.8 }{ x + 3 } + \\dfrac{ 2.2 }{ x - 2 }$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\dfrac{ 0.8 }{ x + 3 } + \\dfrac{ 2.2 }{ x - 2 }$$",
+            "feedback": "This mistake occurs if you fail to recognize that the fraction is improper and set up the decomposition without the constant term $A$. Always compare the degrees of the numerator and denominator before starting!"
+        },
+        {
+            "ans": "$$1 + \\dfrac{ 0.8 }{ x + 3 } + \\dfrac{ 2.2 }{ x - 2 }$$",
+            "feedback": "This occurs if you incorrectly divide the leading terms of the numerator and denominator, setting $A = 1$ instead of $A = 2$ ($2x^2 / x^2 = 2$)."
+        },
+        {
+            "ans": "$$2 + \\dfrac{ 2.2 }{ x + 3 } + \\dfrac{ 0.8 }{ x - 2 }$$",
+            "feedback": "This error occurs if you correctly solve for the coefficients but swap the positions of $B$ and $C$ in the final expression."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Spotting Improper Fractions",
+        "content": "Before you write down any partial fraction decomposition, look at the degrees! If the degree of the numerator is **greater than or equal to** the degree of the denominator, the fraction is improper and must be divided first (or written with a polynomial part). Doing standard linear decomposition on an improper fraction will fail completely."
+    }
+},
+{
+    "id": "004780",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Partial Fractions",
+    "subtopic": [
+        "Binomial Expansions",
+        "Linear Denominators"
+    ],
+    "img": false,
+    "question": "Consider the algebraic expression $f(x) = \\dfrac{ x + 5 }{ (1 - x)(1 + x) }$.<br><br><strong>(a)</strong> Express $f(x)$ in partial fractions.<br><br><strong>(b)</strong> Hence, find the binomial expansion of $f(x)$ in ascending powers of $x$, up to and including the term in $x^2$.",
+    "steps": [
+        "<strong>Part (a):</strong> We set up the partial fractions identity for distinct linear factors:<br>$$\\dfrac{ x + 5 }{ (1 - x)(1 + x) } \\equiv \\dfrac{ A }{ 1 - x } + \\dfrac{ B }{ 1 + x }$$<br>Multiply both sides by $(1 - x)(1 + x)$ to form the linear identity:<br>$$x + 5 \\equiv A(1 + x) + B(1 - x)$$",
+        "Find the constants $A$ and $B$ by substitution:<br>Substitute $x = 1$ to find $A$:<br>\\begin{aligned} 1 + 5 &= A(1 + 1) \\cr 6 &= 2A \\cr A &= 3 \\end{aligned}<br>Substitute $x = -1$ to find $B$:<br>\\begin{aligned} -1 + 5 &= B(1 - (-1)) \\cr 4 &= 2B \\cr B &= 2 \\end{aligned}<br>Thus, the partial fractions representation is:<br>$$\\dfrac{ 3 }{ 1 - x } + \\dfrac{ 2 }{ 1 + x }$$",
+        "<strong>Part (b):</strong> We rewrite our partial fractions using negative indices to prepare for binomial expansion:<br>$$f(x) = 3(1 - x)^{ -1 } + 2(1 + x)^{ -1 }$$<br>Using the standard binomial expansions for negative integer powers:<br>\\begin{aligned} (1 - x)^{ -1 } &= 1 + x + x^2 + \\dots \\cr (1 + x)^{ -1 } &= 1 - x + x^2 - \\dots \\end{aligned}",
+        "Substitute these expansions back into our expression for $f(x)$ and combine like terms:<br>\\begin{aligned} f(x) &\\approx 3(1 + x + x^2) + 2(1 - x + x^2) \\cr &\\approx (3 + 3x + 3x^2) + (2 - 2x + 2x^2) \\cr &\\approx 5 + x + 5x^2 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $\\dfrac{ 3 }{ 1 - x } + \\dfrac{ 2 }{ 1 + x }$<br><strong>(b)</strong> $5 + 5x + 5x^2$",
+            "feedback": "This error occurs in part (b) if you forget to apply the alternating sign change in the expansion of $(1 + x)^{ -1 } = 1 - x + x^2$, expanding it incorrectly as $1 + x + x^2$ instead."
+        },
+        {
+            "ans": "<strong>(a)</strong> $\\dfrac{ 3 }{ 1 - x } - \\dfrac{ 2 }{ 1 + x }$<br><strong>(b)</strong> $1 + 5x + x^2$",
+            "feedback": "This happens if you make a sign error when solving for the constants in part (a), yielding $B = -2$. This sign error then propagates into your binomial expansion in part (b)."
+        },
+        {
+            "ans": "<strong>(a)</strong> $\\dfrac{ 3 }{ 1 - x } + \\dfrac{ 2 }{ 1 + x }$<br><strong>(b)</strong> $5 + x + x^2$",
+            "feedback": "This error occurs in part (b) if you forget to distribute the multiplier constants $3$ and $2$ to the quadratic terms ($x^2$), mistakenly adding them as $3x^2 - 2x^2 = x^2$ instead of $3x^2 + 2x^2 = 5x^2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Synoptic Binomial Connections",
+        "content": "Connecting partial fractions with binomial expansions is a classic A-level exam favourite. Remember, expanding the separate simplified terms $3(1 - x)^{ -1 } + 2(1 + x)^{ -1 }$ individually is vastly simpler than trying to expand the original expression $(x + 5)(1 - x^2)^{ -1 }$ using the product rule!"
     }
 }
 
