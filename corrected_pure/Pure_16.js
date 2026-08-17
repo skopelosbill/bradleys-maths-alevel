@@ -1115,7 +1115,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Spotting Improper Fractions",
-        "content": "Before you write down any partial fraction decomposition, look at the degrees! If the degree of the numerator is **greater than or equal to** the degree of the denominator, the fraction is improper and must be divided first (or written with a polynomial part). Doing standard linear decomposition on an improper fraction will fail completely."
+        "content": "Before you write down any partial fraction decomposition, look at the degrees! If the degree of the numerator is <strong>greater than or equal to</strong>> the degree of the denominator, the fraction is improper and must be divided first (or written with a polynomial part). Doing standard linear decomposition on an improper fraction will fail completely."
     }
 },
 {
@@ -1154,6 +1154,196 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Synoptic Binomial Connections",
         "content": "Connecting partial fractions with binomial expansions is a classic A-level exam favourite. Remember, expanding the separate simplified terms $3(1 - x)^{ -1 } + 2(1 + x)^{ -1 }$ individually is vastly simpler than trying to expand the original expression $(x + 5)(1 - x^2)^{ -1 }$ using the product rule!"
+    }
+},
+{
+    "id": "004781",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Integration",
+    "topic": "Numerical Integration",
+    "subtopic": [
+        "Trapezium Rule",
+        "Error Analysis"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Use the Trapezium Rule with 3 ordinates to find an approximate value for the integral:<br>$$\\int_{ 2 }^{ 4 } \\dfrac{ x^2 }{ (x + 2)(x - 1) } \\mathrm{d}x$$<br>Give your answer correct to 3 decimal places.<br><br><strong>(ii)</strong> Explain how the use of the Trapezium Rule in part <strong>(i)</strong> could be modified to obtain a better approximation to the integral.",
+    "steps": [
+        "We identify our integration interval as $[2, 4]$. Since we are using 3 ordinates, the number of strips is $n = 2$.<br><br>First, calculate the strip width $h$:<br>\\begin{aligned} h &= \\dfrac{ b - a }{ n } \\cr h &= \\dfrac{ 4 - 2 }{ 2 } = 1 \\end{aligned}",
+        "Next, determine our coordinates $x_0 = 2$, $x_1 = 3$, $x_2 = 4$ and evaluate our function $f(x) = \\dfrac{ x^2 }{ (x + 2)(x - 1) }$ at each point:<br>\\begin{aligned} y_0 &= f(2) = \\dfrac{ 2^2 }{ (2 + 2)(2 - 1) } = \\dfrac{ 4 }{ 4 \\times 1 } = 1 \\cr y_1 &= f(3) = \\dfrac{ 3^2 }{ (3 + 2)(3 - 1) } = \\dfrac{ 9 }{ 5 \\times 2 } = 0.9 \\cr y_2 &= f(4) = \\dfrac{ 4^2 }{ (4 + 2)(4 - 1) } = \\dfrac{ 16 }{ 6 \\times 3 } = \\dfrac{ 8 }{ 9 } \\approx 0.8889 \\end{aligned}",
+        "Now, apply the Trapezium Rule formula:<br>$$\\text{Area} \\approx \\dfrac{ h }{ 2 } \\left[ y_0 + y_2 + 2(y_1) \\right]$$<br>Substitute our calculated ordinate values into the formula:<br>\\begin{aligned} \\text{Area} &\\approx \\dfrac{ 1 }{ 2 } \\left[ 1 + 0.8889 + 2(0.9) \\right] \\cr &\\approx 0.5 \\left[ 1.8889 + 1.8 \\right] \\cr &\\approx 0.5 \\left[ 3.6889 \\right] \\approx 1.844 \\end{aligned}<br>Thus, our approximate area is $1.844$ (to 3 decimal places).",
+        "To obtain a better approximation to the integral, we can increase the number of ordinates (which increases the number of strips). This decreases the strip width $h$, making the straight boundaries of the trapeziums follow the curvature of the actual graph more closely."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $2.744$<br><strong>(ii)</strong> Increase the width of each strip, $h$.",
+            "feedback": "This error occurs in part (i) if you add all the ordinate values directly without doubling the middle term, or if you mistakenly double the outer terms instead of the middle term. Additionally, in part (ii), increasing the strip width makes the approximation worse, not better."
+        },
+        {
+            "ans": "<strong>(i)</strong> $1.844$<br><strong>(ii)</strong> Decrease the number of strips to make calculations simpler.",
+            "feedback": "Your calculation in part (i) is correct. However, in part (ii), decreasing the number of strips will increase the strip width $h$, which increases the geometric gap between the straight chords of the trapeziums and the actual curve, making the approximation less accurate."
+        },
+        {
+            "ans": "<strong>(i)</strong> $1.394$<br><strong>(ii)</strong> Increase the number of ordinates to decrease the strip width.",
+            "feedback": "While your explanation in part (ii) is correct, your calculation in part (i) is wrong. This occurs if you make an arithmetic slip when evaluating $y_2 = f(4)$, such as mistakenly using $x - 1 = 4$ in the denominator instead of $4 - 1 = 3$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Ordinates vs Strips",
+        "content": "Always remember that the number of strips ($n$) is always **one less** than the number of ordinates. A common exam slip is to use the number of ordinates directly as the denominator when calculating the strip width $h$."
+    }
+},
+{
+    "id": "004782",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Integration",
+    "topic": "Numerical Integration",
+    "subtopic": [
+        "Trapezium Rule",
+        "Error Analysis"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Use the Trapezium Rule with 5 ordinates to find an approximate value for the integral:<br>$$\\int_{ 1 }^{ 5 } \\ln(x^2 + 1) \\mathrm{d}x$$<br>Give your answer correct to 3 decimal places.<br><br><strong>(ii)</strong> Explain how the approximation obtained in part <strong>(i)</strong> could be improved.",
+    "steps": [
+        "We identify our interval as $[1, 5]$. Since we are using 5 ordinates, the number of strips is $n = 4$.<br><br>Calculate the strip width $h$:<br>\\begin{aligned} h &= \\dfrac{ b - a }{ n } \\cr h &= \\dfrac{ 5 - 1 }{ 4 } = 1 \\end{aligned}",
+        "Determine our coordinate values $x_0 = 1$, $x_1 = 2$, $x_2 = 3$, $x_3 = 4$, $x_4 = 5$ and evaluate our function $f(x) = \\ln(x^2 + 1)$ at each coordinate:<br>\\begin{aligned} y_0 &= \\ln(1^2 + 1) = \\ln 2 \\approx 0.6931 \\cr y_1 &= \\ln(2^2 + 1) = \\ln 5 \\approx 1.6094 \\cr y_2 &= \\ln(3^2 + 1) = \\ln 10 \\approx 2.3026 \\cr y_3 &= \\ln(4^2 + 1) = \\ln 17 \\approx 2.8332 \\cr y_4 &= \\ln(5^2 + 1) = \\ln 26 \\approx 3.2581 \\end{aligned}",
+        "Apply the Trapezium Rule formula:<br>$$\\text{Area} \\approx \\dfrac{ h }{ 2 } \\left[ y_0 + y_4 + 2(y_1 + y_2 + y_3) \\right]$$<br>Substitute our calculated ordinate values:<br>\\begin{aligned} \\text{Area} &\\approx \\dfrac{ 1 }{ 2 } \\left[ 0.6931 + 3.2581 + 2(1.6094 + 2.3026 + 2.8332) \\right] \\cr &\\approx 0.5 \\left[ 3.9512 + 2(6.7452) \\right] \\cr &\\approx 0.5 \\left[ 3.9512 + 13.4904 \\right] \\cr &\\approx 0.5 \\left[ 17.4416 \\right] \\approx 8.721 \\end{aligned}<br>Thus, our approximate area is $8.721$ (to 3 decimal places).",
+        "The approximation can be improved by increasing the number of ordinates (or strips). Doing so decreases the strip width $h$ and reduces the geometric error between the straight chords of the trapeziums and the actual curved path of the function."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $10.692$<br><strong>(ii)</strong> Increase the number of ordinates.",
+            "feedback": "While the explanation in part (ii) is correct, the area calculation is incorrect. This error occurs if you forgot to divide by $2$ at the start of the formula, multiplying the sum by $h = 1$ instead of $h/2 = 0.5$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $8.721$<br><strong>(ii)</strong> Increase the width of the strips to reduce calculation errors.",
+            "feedback": "Your area calculation is correct. However, in part (ii), increasing the strip width makes the approximation worse, not better, because it increases the geometric gap between the straight chords and the curved graph."
+        },
+        {
+            "ans": "<strong>(i)</strong> $6.745$<br><strong>(ii)</strong> Use more ordinates.",
+            "feedback": "This area error occurs if you only sum the inner ordinate values ($y_1 + y_2 + y_3$) and completely forget to include the outer boundary ordinates ($y_0$ and $y_4$) in your formula."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: High-Precision Mid-Steps",
+        "content": "When evaluating logarithmic or exponential terms, always keep at least 4 or 5 decimal places in your intermediate steps. Rounding too early (such as to 1 or 2 decimal places) will cause rounding errors to accumulate, leading to an incorrect final 3 decimal place value."
+    }
+},
+{
+    "id": "004783",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Integration",
+    "topic": "Numerical Integration",
+    "subtopic": [
+        "Trapezium Rule",
+        "Trigonometric Functions"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Use the Trapezium Rule with 4 strips to find an approximate value for the integral:<br>$$\\int_{ 0 }^{ \\pi/2 } e^{ \\sin x } \\mathrm{d}x$$<br>Give your answer correct to 3 decimal places.<br><br><strong>(ii)</strong> State how the width of the strips, $h$, could be adjusted to obtain a better approximation, and explain briefly why this adjustment improves the accuracy of the result.",
+    "steps": [
+        "We have $n = 4$ strips over the integration interval $[0, \\pi/2]$.<br><br>First, calculate our strip width $h$ in radians:<br>\\begin{aligned} h &= \\dfrac{ b - a }{ n } \\cr h &= \\dfrac{ \\pi/2 - 0 }{ 4 } = \\dfrac{ \\pi }{ 8 } \\approx 0.3927 \\text{ rad} \\end{aligned}",
+        "Identify our coordinate values $x_0 = 0$, $x_1 = \\pi/8$, $x_2 = \\pi/4$, $x_3 = 3\\pi/8$, $x_4 = \\pi/2$.<br><br>Ensure your calculator is set to **Radian** mode and evaluate the function $f(x) = e^{ \\sin x }$ at each coordinate:<br>\\begin{aligned} y_0 &= e^{ \\sin 0 } = e^0 = 1 \\cr y_1 &= e^{ \\sin(\\pi/8) } \\approx e^{ 0.3827 } \\approx 1.4662 \\cr y_2 &= e^{ \\sin(\\pi/4) } \\approx e^{ 0.7071 } \\approx 2.0281 \\cr y_3 &= e^{ \\sin(3\\pi/8) } \\approx e^{ 0.9239 } \\approx 2.5191 \\cr y_4 &= e^{ \\sin(\\pi/2) } = e^1 \\approx 2.7183 \\end{aligned}",
+        "Apply the Trapezium Rule formula:<br>$$\\text{Area} \\approx \\dfrac{ h }{ 2 } \\left[ y_0 + y_4 + 2(y_1 + y_2 + y_3) \\right]$$<br>Substitute our calculated values into the formula:<br>\\begin{aligned} \\text{Area} &\\approx \\dfrac{ \\pi/8 }{ 2 } \\left[ 1 + 2.7183 + 2(1.4662 + 2.0281 + 2.5191) \\right] \\cr &\\approx \\dfrac{ \\pi }{ 16 } \\left[ 3.7183 + 2(6.0134) \\right] \\cr &\\approx 0.19635 \\left[ 3.7183 + 12.0268 \\right] \\cr &\\approx 0.19635 \\left[ 15.7451 \\right] \\approx 3.092 \\end{aligned}<br>Thus, our approximate area is $3.092$ (to 3 decimal places).",
+        "The width of the strips $h$ should be decreased. Decreasing $h$ (which requires increasing the number of strips) reduces the size of the geometric gaps between the straight top edges of the trapeziums and the actual curve, which increases the accuracy of our approximation."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $3.214$<br><strong>(ii)</strong> Decrease $h$.",
+            "feedback": "This area error occurs if your calculator is set to **Degree** mode instead of **Radian** mode! For example, in degrees, $\\sin(\\pi/8) \\approx \\sin(0.3927^\\circ) \\approx 0.0069$, which leads to completely incorrect ordinate values."
+        },
+        {
+            "ans": "<strong>(i)</strong> $3.092$<br><strong>(ii)</strong> Increase $h$ to make each trapezium wider.",
+            "feedback": "Your area calculation is correct. However, in part (ii), increasing the strip width $h$ will decrease the accuracy because wider trapeziums deviate further from the actual curvature of the graph."
+        },
+        {
+            "ans": "<strong>(i)</strong> $1.546$<br><strong>(ii)</strong> Decrease the strip width $h$.",
+            "feedback": "While your explanation in part (ii) is correct, this area error occurs if you forgot to multiply the sum of the middle terms by $2$ inside the brackets, or if you divided by $h$ instead of multiplying."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Radian Mode is Mandatory",
+        "content": "In calculus (differentiation and integration), trigonometric inputs are **always** in radians. Always double-check that your calculator shows a little 'R' on screen. A single degree-mode calculation will destroy your entire marks allocation!"
+    }
+},
+{
+    "id": "004784",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Integration",
+    "topic": "Numerical Integration",
+    "subtopic": [
+        "Trapezium Rule",
+        "Error Analysis"
+    ],
+    "img": false,
+    "question": "<strong>(i)</strong> Use the Trapezium Rule with 5 ordinates to find an approximate value for the integral:<br>$$\\int_{ 0 }^{ 2 } e^{ -x } \\mathrm{d}x$$<br>Give your answer correct to 3 decimal places.<br><br><strong>(ii)</strong> State, with a brief reason, whether the approximation obtained in part <strong>(i)</strong> is an overestimate or an underestimate of the true value of the integral.<br><br><strong>(iii)</strong> Explain how the setup of the rule in part <strong>(i)</strong> could be modified to obtain a more accurate estimate.",
+    "steps": [
+        "We integrate over $[0, 2]$. With 5 ordinates, the number of strips is $n = 4$.<br><br>First, calculate our strip width $h$:<br>\\begin{aligned} h &= \\dfrac{ b - a }{ n } \\cr h &= \\dfrac{ 2 - 0 }{ 4 } = 0.5 \\end{aligned}",
+        "Identify our coordinates $x_0 = 0$, $x_1 = 0.5$, $x_2 = 1$, $x_3 = 1.5$, $x_4 = 2$ and evaluate $f(x) = e^{ -x }$ at each coordinate:<br>\\begin{aligned} y_0 &= e^{ -0 } = 1 \\cr y_1 &= e^{ -0.5 } \\approx 0.6065 \\cr y_2 &= e^{ -1 } \\approx 0.3679 \\cr y_3 &= e^{ -1.5 } \\approx 0.2231 \\cr y_4 &= e^{ -2 } \\approx 0.1353 \\end{aligned}",
+        "Apply the Trapezium Rule formula:<br>$$\\text{Area} \\approx \\dfrac{ h }{ 2 } \\left[ y_0 + y_4 + 2(y_1 + y_2 + y_3) \\right]$$<br>Substitute our calculated ordinate values:<br>\\begin{aligned} \\text{Area} &\\approx \\dfrac{ 0.5 }{ 2 } \\left[ 1 + 0.1353 + 2(0.6065 + 0.3679 + 0.2231) \\right] \\cr &\\approx 0.25 \\left[ 1.1353 + 2(1.1975) \\right] \\cr &\\approx 0.25 \\left[ 1.1353 + 2.3950 \\right] \\cr &\\approx 0.25 \\left[ 3.5303 \\right] \\approx 0.883 \\end{aligned}<br>Thus, our approximate area is $0.883$ (to 3 decimal places).",
+        "To determine if it is an overestimate or underestimate, we analyze the curvature (concavity) of $y = e^{ -x }$ by finding its second derivative:<br>\\begin{aligned} y' &= -e^{ -x } \\cr y'' &= e^{ -x } \\end{aligned}<br>Since $e^{ -x } > 0$ for all real values of $x$, we have $y'' > 0$ on our interval, which means the curve is concave up (convex).<br><br>Because the curve is concave up, the straight-line chords forming the tops of the trapeziums lie entirely above the actual curve. Therefore, the approximation is an **overestimate**.",
+        "To modify the setup to obtain a more accurate estimate, we can increase the number of ordinates (or strips). This decreases our interval width $h$ and reduces the size of the overestimate gap between our straight lines and the actual curve."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $0.883$<br><strong>(ii)</strong> Underestimate because the curve is decreasing.<br><strong>(iii)</strong> Use more strips.",
+            "feedback": "Your area and explanation for improvement are correct. However, whether the rule over- or under-estimates depends on the curvature (concavity / second derivative $y''$) of the graph, not whether the function is increasing or decreasing. Since $y'' > 0$ (concave up), the straight chords lie above the curve, which results in an overestimate."
+        },
+        {
+            "ans": "<strong>(i)</strong> $0.598$<br><strong>(ii)</strong> Overestimate because the curve is concave up.<br><strong>(iii)</strong> Use more strips.",
+            "feedback": "While your qualitative reasoning is correct, your area calculation contains an error. This occurs if you only evaluate the terms without multiplying the interior terms by $2$ inside the brackets, i.e., evaluating $0.25 \\times (1 + 0.1353 + 0.6065 + 0.3679 + 0.2231)$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $0.883$<br><strong>(ii)</strong> Overestimate because the curve is concave up.<br><strong>(iii)</strong> Increase the strip width $h$.",
+            "feedback": "Your area and overestimate reasoning are correct. However, in part (iii), increasing the strip width $h$ will decrease the accuracy, making the estimate less accurate rather than more accurate."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Over vs Underestimates",
+        "content": "To determine whether the Trapezium Rule yields an overestimate or underestimate, always look at the concavity of the curve (the sign of $y''$):<br>1. If $y'' > 0$ (concave up), the straight chords lie **above** the curve, yielding an **overestimate**.<br>2. If $y'' < 0$ (concave down), the straight chords lie **below** the curve, yielding an **underestimate**."
+    }
+},
+{
+    "id": "004785",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Integration",
+    "topic": "Numerical Integration",
+    "subtopic": [
+        "Trapezium Rule",
+        "Modelling"
+    ],
+    "img": "images/Pure/004785.png",
+    "question": "A civil engineer is estimating the cross-sectional area of a river bed to design a flood barrier. The width of the river is $4\\text{ m}$. At regular $1\\text{ m}$ intervals from one bank ($x = 0$) to the other bank ($x = 4$), the depth of the river $y$ (in metres) is measured. The cross-sectional profile is modelled by the curve shown in the diagram.<br><br>The depth measurements are recorded in the table below:<br><table style='border: 1px solid #000; border-collapse: collapse; text-align: center; margin: 15px auto;'><tr style='background-color: #f2f2f2;'><th style='border: 1px solid #000; padding: 8px;'>Distance, $x$ (m)</th><td style='border: 1px solid #000; padding: 8px;'>0</td><td style='border: 1px solid #000; padding: 8px;'>1</td><td style='border: 1px solid #000; padding: 8px;'>2</td><td style='border: 1px solid #000; padding: 8px;'>3</td><td style='border: 1px solid #000; padding: 8px;'>4</td></tr><tr><th style='border: 1px solid #000; padding: 8px;'>Depth, $y$ (m)</th><td style='border: 1px solid #000; padding: 8px;'>3.0</td><td style='border: 1px solid #000; padding: 8px;'>2.9</td><td style='border: 1px solid #000; padding: 8px;'>2.6</td><td style='border: 1px solid #000; padding: 8px;'>2.1</td><td style='border: 1px solid #000; padding: 8px;'>1.4</td></tr></table><br><strong>(i)</strong> Use the Trapezium Rule with all the measurements in the table to find an approximate value for the cross-sectional area of the river.<br><br><strong>(ii)</strong> Explain how the engineer could modify their measurement methodology to obtain a more accurate estimate of the cross-sectional area.",
+    "steps": [
+        "Since depth measurements are taken at regular intervals of $1\\text{ m}$ from the bank, our constant strip width is $h = 1$.<br><br>Identify our ordinate values directly from the data table:<br>\\begin{aligned} y_0 &= 3.0 \\cr y_1 &= 2.9 \\cr y_2 &= 2.6 \\cr y_3 &= 2.1 \\cr y_4 &= 1.4 \\end{aligned}",
+        "Apply the Trapezium Rule formula to the discrete data:<br>$$\\text{Area} \\approx \\dfrac{ h }{ 2 } \\left[ y_0 + y_4 + 2(y_1 + y_2 + y_3) \\right]$$<br>Substitute our measurements directly into the formula:<br>\\begin{aligned} \\text{Area} &\\approx \\dfrac{ 1 }{ 2 } \\left[ 3.0 + 1.4 + 2(2.9 + 2.6 + 2.1) \\right] \\cr &\\approx 0.5 \\left[ 4.4 + 2(7.6) \\right] \\cr &\\approx 0.5 \\left[ 4.4 + 15.2 \\right] \\cr &\\approx 0.5 \\left[ 19.6 \\right] = 9.8 \\end{aligned}<br>Thus, the approximate cross-sectional area of the river is $9.8\\text{ m}^2$.",
+        "To obtain a more accurate estimate of the cross-sectional area, the engineer should physically take depth measurements at smaller horizontal intervals (for example, measuring the depth every $0.5\\text{ m}$ instead of every $1\\text{ m}$).<br><br>Decreasing the interval width $h$ increases the total number of strips, which reduces the geometric approximation error between the straight lines of the trapeziums and the actual curvature of the river bed profile."
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(i)</strong> $19.6\\text{ m}^2$<br><strong>(ii)</strong> Take measurements at smaller intervals.",
+            "feedback": "While the explanation in part (ii) is correct, your area is incorrect. This error occurs if you forgot to divide by $2$ at the start of the formula, multiplying the sum by $h = 1$ instead of $h/2 = 0.5$."
+        },
+        {
+            "ans": "<strong>(i)</strong> $9.8\\text{ m}^2$<br><strong>(ii)</strong> Extend the total width of the river measurements to obtain more data.",
+            "feedback": "Your area calculation is correct. However, extending the total width of the river changes the physical boundaries of the problem rather than improving the accuracy of the current cross-section approximation. To improve accuracy, the horizontal measurement intervals must be made smaller."
+        },
+        {
+            "ans": "<strong>(i)</strong> $12.0\\text{ m}^2$<br><strong>(ii)</strong> Take measurements at smaller intervals.",
+            "feedback": "While the explanation in part (ii) is correct, the area is wrong. This occurs if you make an arithmetic error when adding the ordinates, such as evaluating the inner sum $2.9 + 2.6 + 2.1$ as $9.8$ instead of $7.6$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Real-World Discrete Data",
+        "content": "In real-world engineering or physical applications, we do not have a mathematical equation for the curve. We only have discrete experimental coordinates. The strip width $h$ is simply the constant gap between consecutive $x$-measurements. To increase accuracy, you must physically take more data points at smaller intervals ($h$ decreases)."
     }
 }
 
