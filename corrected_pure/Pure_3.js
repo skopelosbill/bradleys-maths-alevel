@@ -2,6 +2,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004101",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Circles",
@@ -43,6 +44,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004102",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Coordinate Geometry",
                 "topic": "Circles",
@@ -86,6 +88,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004103",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Coordinate Geometry",
                 "topic": "Circles",
@@ -129,6 +132,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004104",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Coordinate Geometry",
                 "topic": "Circles",
@@ -172,6 +176,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004105",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Circles",
@@ -214,6 +219,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004106",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Numerical Methods",
                 "topic": "Numerical Methods",
@@ -258,6 +264,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004107",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Numerical Methods",
                 "topic": "Numerical Methods",
@@ -303,6 +310,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004108",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Numerical Methods",
                 "topic": "Numerical Methods",
@@ -346,6 +354,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004109",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Numerical Methods",
                 "topic": "Numerical Methods",
@@ -389,6 +398,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004110",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Numerical Methods",
                 "topic": "Numerical Methods",
@@ -432,6 +442,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004111",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
                 "topic": "Sequences and Series",
@@ -477,6 +488,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004112",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
                 "topic": "Sequences and Series",
@@ -520,6 +532,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004113",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
                 "topic": "Sequences and Series",
@@ -563,6 +576,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004114",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
                 "topic": "Sequences and Series",
@@ -607,6 +621,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004115",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
                 "topic": "Sequences and Series",
@@ -650,6 +665,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004116",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -695,6 +711,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004117",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -738,6 +755,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004118",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -781,6 +799,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004119",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -823,6 +842,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004120",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -867,6 +887,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004121",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -913,6 +934,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004122",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -959,6 +981,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004123",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -1005,6 +1028,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004124",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Numerical Methods",
                 "topic": "Numerical Methods",
@@ -1051,6 +1075,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004125",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -1097,6 +1122,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004126",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1145,6 +1171,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004127",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1191,6 +1218,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004128",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1238,6 +1266,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004129",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1285,6 +1314,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004130",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1331,6 +1361,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004131",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1374,6 +1405,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004132",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1417,6 +1449,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004133",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1459,6 +1492,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004134",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1502,6 +1536,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004135",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1543,6 +1578,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004136",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Identities",
@@ -1583,6 +1619,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004137",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Identities",
@@ -1624,6 +1661,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004138",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Identities",
@@ -1665,6 +1703,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004139",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Identities",
@@ -1706,6 +1745,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004140",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Identities",
@@ -1747,6 +1787,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004141",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1787,6 +1828,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004142",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1827,6 +1869,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004143",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1867,6 +1910,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004144",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1908,6 +1952,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004145",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1950,6 +1995,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004146",
                 "board": "OCR",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Straight Lines",
@@ -1990,6 +2036,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004147",
                 "board": "OCR",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Straight Lines",
@@ -2032,6 +2079,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004148",
                 "board": "OCR",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Straight Lines",
@@ -2072,6 +2120,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004149",
                 "board": "OCR",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Straight Lines",
@@ -2111,6 +2160,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004150",
                 "board": "OCR",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Straight Lines",

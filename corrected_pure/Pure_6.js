@@ -2,6 +2,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004251",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Equations and Inequalities",
@@ -40,6 +41,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004252",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Equations and Inequalities",
@@ -78,6 +80,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004253",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Equations and Inequalities",
@@ -117,6 +120,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004254",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Equations and Inequalities",
@@ -157,6 +161,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004255",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Equations and Inequalities",
@@ -195,6 +200,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004256",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Functions",
@@ -233,6 +239,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004257",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Functions",
@@ -272,6 +279,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004258",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Functions",
@@ -311,6 +319,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004259",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Functions",
@@ -350,6 +359,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004260",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Functions",
@@ -389,6 +399,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004261",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -428,6 +439,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004262",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -467,6 +479,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004263",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -507,6 +520,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004264",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -548,6 +562,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004265",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -587,6 +602,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004266",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -628,6 +644,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004267",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -668,6 +685,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004268",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -706,6 +724,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004269",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -746,6 +765,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004270",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -785,6 +805,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004271",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -822,6 +843,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004272",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -861,6 +883,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004273",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -901,6 +924,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004274",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -939,6 +963,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004275",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -979,6 +1004,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004276",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1020,6 +1046,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004277",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1061,6 +1088,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004278",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1100,6 +1128,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004279",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1141,6 +1170,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004280",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -1182,6 +1212,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004281",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Algebraic Methods",
@@ -1223,6 +1254,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004282",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Algebraic Methods",
@@ -1262,6 +1294,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004283",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Algebraic Methods",
@@ -1303,6 +1336,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004284",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Algebraic Methods",
@@ -1344,6 +1378,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004285",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Algebraic Methods",
@@ -1384,6 +1419,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004286",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differential Equations",
@@ -1425,6 +1461,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004287",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differential Equations",
@@ -1465,6 +1502,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004288",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differential Equations",
@@ -1507,6 +1545,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004289",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differential Equations",
@@ -1547,6 +1586,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004290",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differential Equations",
@@ -1588,6 +1628,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004291",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1628,6 +1669,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004292",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1665,6 +1707,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004293",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1703,6 +1746,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004294",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1742,6 +1786,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004295",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1781,6 +1826,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004296",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Straight Lines",
@@ -1826,6 +1872,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004297",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Straight Lines",
@@ -1865,6 +1912,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004298",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Straight Lines",
@@ -1905,6 +1953,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004299",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Straight Lines",
@@ -1945,6 +1994,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004300",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Straight Lines",

@@ -2,6 +2,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004401",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Circles",
@@ -40,6 +41,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004402",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Circles",
@@ -77,6 +79,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004403",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Circles",
@@ -114,6 +117,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004404",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Circles",
@@ -152,6 +156,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004405",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Circles",
@@ -190,6 +195,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004406",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -229,6 +235,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004407",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -268,6 +275,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004408",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -306,6 +314,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004409",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -345,6 +354,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004410",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -383,6 +393,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004411",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Applications of Differentiation",
@@ -423,6 +434,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004412",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Applications of Differentiation",
@@ -463,6 +475,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004413",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Applications of Differentiation",
@@ -503,6 +516,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004414",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Applications of Differentiation",
@@ -543,6 +557,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004415",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Applications of Differentiation",
@@ -582,6 +597,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004416",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -620,6 +636,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004417",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -658,6 +675,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004418",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -696,6 +714,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004419",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -734,6 +753,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004420",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -772,6 +792,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004421",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Coordinate Geometry",
@@ -811,6 +832,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004422",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Coordinate Geometry",
@@ -850,6 +872,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004423",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Coordinate Geometry",
@@ -889,6 +912,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004424",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Coordinate Geometry",
@@ -928,6 +952,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004425",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Coordinate Geometry",
@@ -968,6 +993,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004426",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Circles",
@@ -1008,6 +1034,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004427",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Circles",
@@ -1048,6 +1075,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004428",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Circles",
@@ -1087,6 +1115,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004429",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Circles",
@@ -1125,6 +1154,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004430",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Circles",
@@ -1163,6 +1193,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004431",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -1202,6 +1233,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004432",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -1241,6 +1273,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004433",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Functions",
@@ -1281,6 +1314,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004434",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -1321,6 +1355,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004435",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -1360,6 +1395,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004436",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1398,6 +1434,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004437",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1436,6 +1473,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004438",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1473,6 +1511,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004439",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1511,6 +1550,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004440",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1550,6 +1590,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004441",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -1589,6 +1630,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004442",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -1628,6 +1670,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004443",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -1667,6 +1710,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004444",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -1706,6 +1750,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004445",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -1745,6 +1790,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004446",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
                 "topic": "Sequences and Series",
@@ -1783,6 +1829,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004447",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
                 "topic": "Sequences and Series",
@@ -1821,6 +1868,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004448",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
                 "topic": "Sequences and Series",
@@ -1859,6 +1907,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004449",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
                 "topic": "Sequences and Series",
@@ -1896,6 +1945,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004450",
                 "board": "Pearson Edexcel",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
                 "topic": "Sequences and Series",

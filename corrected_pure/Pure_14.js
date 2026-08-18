@@ -2,6 +2,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004651",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Functions",
@@ -37,6 +38,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004652",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Functions",
@@ -72,6 +74,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004653",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -107,6 +110,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004654",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -142,6 +146,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004655",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -178,6 +183,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004656",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -214,6 +220,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004657",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -250,6 +257,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004658",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -286,6 +294,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004659",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -322,6 +331,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004660",
                 "board": "OCR MEI",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -358,6 +368,7 @@ window.ALEVEL_QUESTIONS = [
         {
     "id": "004661",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Algebraic Equations",
@@ -395,6 +406,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004662",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Algebraic Inequalities",
@@ -432,6 +444,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004663",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Algebraic Equations",
@@ -470,6 +483,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004664",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Algebraic Equations",
@@ -508,6 +522,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004665",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Algebraic Equations",
@@ -545,6 +560,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004666",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Geometry",
     "topic": "Circular Measure",
@@ -582,6 +598,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004667",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Geometry",
     "topic": "Circular Measure",
@@ -621,6 +638,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004668",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Geometry",
     "topic": "Circular Measure",
@@ -660,6 +678,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004669",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Geometry",
     "topic": "Circular Measure",
@@ -699,6 +718,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004670",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Geometry",
     "topic": "Circular Measure",
@@ -738,6 +758,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004671",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Graph Transformations",
@@ -775,6 +796,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004672",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Graph Transformations",
@@ -812,6 +834,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004673",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Graph Transformations",
@@ -848,6 +871,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004674",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Graph Transformations",
@@ -884,6 +908,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004675",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Graph Transformations",
@@ -921,6 +946,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004676",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Equations",
@@ -958,6 +984,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004677",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Equations",
@@ -995,6 +1022,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004678",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Equations",
@@ -1032,6 +1060,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004679",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Equations",
@@ -1069,6 +1098,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004680",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Equations",
@@ -1107,6 +1137,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004681",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Partial Fractions",
@@ -1147,6 +1178,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004682",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Partial Fractions",
@@ -1186,6 +1218,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004683",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Partial Fractions",
@@ -1226,6 +1259,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004684",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Partial Fractions",
@@ -1265,6 +1299,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004685",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Partial Fractions",
@@ -1304,6 +1339,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004686",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Binomial Expansion",
@@ -1344,6 +1380,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004687",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Binomial Expansion",
@@ -1383,6 +1420,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004688",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Binomial Expansion",
@@ -1422,6 +1460,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004689",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Binomial Expansion",
@@ -1462,6 +1501,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004690",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Binomial Expansion",
@@ -1503,6 +1543,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004691",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Small-Angle Approximations",
@@ -1542,6 +1583,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004692",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Small-Angle Approximations",
@@ -1579,6 +1621,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004693",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Small-Angle Approximations",
@@ -1618,6 +1661,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004694",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Small-Angle Approximations",
@@ -1657,6 +1701,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004695",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Small-Angle Approximations",
@@ -1695,6 +1740,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004696",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
@@ -1732,6 +1778,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004697",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
@@ -1770,6 +1817,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004698",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
@@ -1809,6 +1857,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004699",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
@@ -1846,6 +1895,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004700",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",

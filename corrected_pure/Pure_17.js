@@ -2,6 +2,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004801",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Applications of Integration",
@@ -41,6 +42,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004802",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Applications of Integration",
@@ -80,6 +82,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004803",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Applications of Integration",
@@ -118,6 +121,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004804",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Applications of Integration",
@@ -157,6 +161,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004805",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Applications of Integration",
@@ -196,6 +201,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004806",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
@@ -237,6 +243,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004807",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
@@ -278,6 +285,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004808",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
@@ -319,6 +327,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004809",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
@@ -360,6 +369,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004810",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",

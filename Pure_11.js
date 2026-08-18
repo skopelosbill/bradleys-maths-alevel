@@ -2,6 +2,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004501",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -41,6 +42,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004502",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -79,6 +81,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004503",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Functions",
@@ -117,6 +120,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004504",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Trigonometric Functions",
@@ -155,6 +159,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004505",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -193,6 +198,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004506",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -229,6 +235,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004507",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -265,6 +272,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004508",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -301,6 +309,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004509",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -337,6 +346,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004510",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -373,6 +383,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004511",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -410,6 +421,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004512",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -447,6 +459,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004513",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -484,6 +497,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004514",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -521,6 +535,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004515",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -558,6 +573,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004516",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -594,6 +610,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004517",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -630,6 +647,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004518",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -667,6 +685,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004519",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -703,6 +722,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004520",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -739,6 +759,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004521",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differential Equations",
@@ -777,6 +798,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004522",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differential Equations",
@@ -815,6 +837,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004523",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differential Equations",
@@ -853,6 +876,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004524",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differential Equations",
@@ -891,6 +915,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004525",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Differential Equations",
@@ -929,6 +954,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004526",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Functions",
@@ -967,6 +993,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004527",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Functions",
@@ -1004,6 +1031,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004528",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Functions",
@@ -1042,6 +1070,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004529",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Functions",
@@ -1079,6 +1108,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004530",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Functions",
@@ -1117,6 +1147,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004531",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Applications of Differentiation",
@@ -1156,6 +1187,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004532",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Applications of Differentiation",
@@ -1195,6 +1227,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004533",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Applications of Differentiation",
@@ -1233,6 +1266,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004534",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Applications of Differentiation",
@@ -1271,6 +1305,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004535",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
                 "topic": "Applications of Differentiation",
@@ -1309,6 +1344,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004536",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -1348,6 +1384,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004537",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -1387,6 +1424,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004538",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -1426,6 +1464,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004539",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -1465,6 +1504,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004540",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -1504,6 +1544,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004541",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -1542,6 +1583,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004542",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -1580,6 +1622,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004543",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -1618,6 +1661,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004544",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -1656,6 +1700,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004545",
                 "board": "AQA",
+                "branch": "Pure",
                 "level": "A",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -1694,6 +1739,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004546",
                 "board": "OCR",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1730,6 +1776,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004547",
                 "board": "OCR",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1767,6 +1814,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004548",
                 "board": "OCR",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Algebraic Methods",
@@ -1804,6 +1852,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004549",
                 "board": "OCR",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Algebraic Methods",
@@ -1841,6 +1890,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004550",
                 "board": "OCR",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",

@@ -2,6 +2,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004701",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
@@ -43,6 +44,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004702",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
@@ -82,6 +84,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004703",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
@@ -120,6 +123,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004704",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
@@ -158,6 +162,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004705",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
@@ -197,6 +202,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004706",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Coordinate Geometry",
     "topic": "Parametric Curves",
@@ -239,6 +245,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004707",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Coordinate Geometry",
     "topic": "Parametric Curves",
@@ -278,6 +285,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004708",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Coordinate Geometry",
     "topic": "Parametric Curves",
@@ -319,6 +327,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004709",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Coordinate Geometry",
     "topic": "Parametric Curves",
@@ -358,6 +367,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004710",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Parametric Curves",
@@ -397,6 +407,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004711",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Proof",
     "topic": "Proof by Contradiction",
@@ -436,6 +447,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004712",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Proof",
     "topic": "Proof by Contradiction",
@@ -475,6 +487,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004713",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Proof",
     "topic": "Proof by Contradiction",
@@ -514,6 +527,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004714",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Proof",
     "topic": "Proof by Contradiction",
@@ -554,6 +568,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004715",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Proof",
     "topic": "Proof by Contradiction",
@@ -594,6 +609,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004716",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Functions",
@@ -634,6 +650,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004717",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Functions",
@@ -674,6 +691,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004718",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Proof",
     "topic": "Functions",
@@ -714,6 +732,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004719",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Functions",
@@ -753,6 +772,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004720",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Functions",
@@ -793,6 +813,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004721",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Identities",
@@ -833,6 +854,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004722",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Identities",
@@ -873,6 +895,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004723",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Identities",
@@ -913,6 +936,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004724",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Identities",
@@ -952,6 +976,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004725",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Trigonometry",
     "topic": "Trigonometric Identities",
@@ -991,6 +1016,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004726",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Definite Integration",
@@ -1030,6 +1056,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004727",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Definite Integration",
@@ -1069,6 +1096,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004728",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Definite Integration",
@@ -1107,6 +1135,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004729",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Definite Integration",
@@ -1146,6 +1175,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004730",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
     "topic": "Definite Integration",
@@ -1185,6 +1215,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004731",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differential Equations",
@@ -1223,6 +1254,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004732",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differential Equations",
@@ -1261,6 +1293,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004733",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differential Equations",
@@ -1299,6 +1332,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004734",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differential Equations",
@@ -1337,6 +1371,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004735",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differential Equations",
@@ -1375,6 +1410,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004736",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1413,6 +1449,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004737",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1452,6 +1489,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004738",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1491,6 +1529,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004739",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1530,6 +1569,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004740",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1569,6 +1609,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004741",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Numerical Methods",
@@ -1607,6 +1648,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004742",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Numerical Methods",
@@ -1646,6 +1688,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004743",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Numerical Methods",
@@ -1685,6 +1728,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004744",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Numerical Methods",
@@ -1724,6 +1768,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004745",
     "board": "WJEC",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
     "topic": "Numerical Methods",
@@ -1763,6 +1808,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004746",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1798,6 +1844,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004747",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1835,6 +1882,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004748",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1872,6 +1920,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004749",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",
@@ -1909,6 +1958,7 @@ window.ALEVEL_QUESTIONS = [
 {
     "id": "004750",
     "board": "CCEA",
+    "branch": "Pure",
     "level": "A",
     "major_area": "Calculus",
     "topic": "Differentiation",

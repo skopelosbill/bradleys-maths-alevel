@@ -2,6 +2,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004351",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Functions and Graphs",
@@ -42,6 +43,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004352",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Functions and Graphs",
@@ -82,6 +84,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004353",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Functions and Graphs",
@@ -122,6 +125,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004354",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions and Graphs",
@@ -158,6 +162,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004355",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Functions and Graphs",
@@ -196,6 +201,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004356",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Proof",
@@ -232,6 +238,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004357",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Proof",
@@ -269,6 +276,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004358",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Proof",
@@ -305,6 +313,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004359",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Proof",
@@ -341,6 +350,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004360",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Proof",
@@ -378,6 +388,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004361",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -414,6 +425,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004362",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -450,6 +462,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004363",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -486,6 +499,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004364",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -522,6 +536,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004365",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -558,6 +573,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004366",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -595,6 +611,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004367",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -633,6 +650,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004368",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -671,6 +689,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004369",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -710,6 +729,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004370",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -748,6 +768,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004371",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -787,6 +808,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004372",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -824,6 +846,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004373",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Exponentials and Logarithms",
@@ -862,6 +885,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004374",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -899,6 +923,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004375",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -938,6 +963,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004376",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Circles",
@@ -975,6 +1001,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004377",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Circles",
@@ -1012,6 +1039,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004378",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Circles",
@@ -1049,6 +1077,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004379",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Circles",
@@ -1086,6 +1115,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004380",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Coordinate Geometry",
                 "topic": "Circles",
@@ -1123,6 +1153,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004381",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1160,6 +1191,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004382",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1198,6 +1230,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004383",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1236,6 +1269,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004384",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1274,6 +1308,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004385",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1312,6 +1347,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004386",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1348,6 +1384,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004387",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Vectors",
@@ -1385,6 +1422,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004388",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1421,6 +1459,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004389",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1457,6 +1496,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004390",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1493,6 +1533,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004391",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Coordinate Geometry",
@@ -1530,6 +1571,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004392",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Coordinate Geometry",
@@ -1566,6 +1608,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004393",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Coordinate Geometry",
@@ -1602,6 +1645,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004394",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Coordinate Geometry",
@@ -1638,6 +1682,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004395",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Coordinate Geometry",
@@ -1674,6 +1719,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004396",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -1711,6 +1757,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004397",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -1748,6 +1795,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004398",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -1785,6 +1833,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004399",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",
@@ -1821,6 +1870,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004400",
                 "board": "CCEA",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Exponentials and Logarithms",

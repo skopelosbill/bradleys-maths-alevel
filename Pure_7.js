@@ -2,6 +2,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004301",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -42,6 +43,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004302",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -82,6 +84,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004303",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Trigonometric Equations",
@@ -123,6 +126,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004304",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -162,6 +166,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004305",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -202,6 +207,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004306",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -241,6 +247,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004307",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -280,6 +287,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004308",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -320,6 +328,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004309",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -358,6 +367,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004310",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
@@ -397,6 +407,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004311",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -435,6 +446,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004312",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Functions",
@@ -473,6 +485,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004313",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -512,6 +525,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004314",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
                 "topic": "Functions",
@@ -551,6 +565,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004315",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Functions",
@@ -588,6 +603,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004316",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -629,6 +645,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004317",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -669,6 +686,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004318",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -710,6 +728,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004319",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -750,6 +769,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004320",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
                 "topic": "Integration",
@@ -790,6 +810,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004321",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Identities",
@@ -827,6 +848,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004322",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Trigonometric Identities",
@@ -865,6 +887,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004323",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Identities",
@@ -902,6 +925,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004324",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Differentiation",
                 "topic": "Trigonometric Identities",
@@ -940,6 +964,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004325",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Proof",
@@ -978,6 +1003,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004326",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1018,6 +1044,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004327",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1056,6 +1083,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004328",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1096,6 +1124,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004329",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1137,6 +1166,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004330",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
@@ -1176,6 +1206,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004331",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -1215,6 +1246,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004332",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -1254,6 +1286,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004333",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -1295,6 +1328,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004334",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -1333,6 +1367,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004335",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
@@ -1372,6 +1407,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004336",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Sequences and Series",
                 "topic": "Binomial Expansion",
@@ -1409,6 +1445,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004337",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Sequences and Series",
                 "topic": "Binomial Expansion",
@@ -1447,6 +1484,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004338",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Sequences and Series",
                 "topic": "Binomial Expansion",
@@ -1484,6 +1522,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004339",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Sequences and Series",
                 "topic": "Binomial Expansion",
@@ -1524,6 +1563,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004340",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Sequences and Series",
                 "topic": "Binomial Expansion",
@@ -1564,6 +1604,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004341",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1603,6 +1644,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004342",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1640,6 +1682,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004343",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1677,6 +1720,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004344",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1715,6 +1759,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004345",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Vectors",
                 "topic": "Vectors",
@@ -1752,6 +1797,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004346",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Equations and Inequalities",
@@ -1788,6 +1834,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004347",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Equations and Inequalities",
@@ -1824,6 +1871,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004348",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Equations and Inequalities",
@@ -1860,6 +1908,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004349",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Equations and Inequalities",
@@ -1896,6 +1945,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004350",
                 "board": "WJEC",
+                "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
                 "topic": "Equations and Inequalities",
