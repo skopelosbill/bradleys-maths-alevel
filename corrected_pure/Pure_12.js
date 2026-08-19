@@ -198,7 +198,7 @@ window.ALEVEL_QUESTIONS = [
                         "Curved Graphs",
                         "Modelling and Applications"
                 ],
-                "img": "images/Pure/004556.png",
+                "img": "images/Pure_SVGs/004556.svg",
                 "question": "Four athletes—Alex, Beth, Charlie, and Diana—are discussing the relationship between the time, $t$ hours, they spend training per week, and the percentage, $p\\%$, of their peak athletic performance they expect to achieve. Each draws a graph to model this relationship (shown in the diagram):<br><br><strong>(i)</strong> Assuming Alex's model is correct, how many hours would you recommend he spends training per week?<br><br><strong>(ii)</strong> State one feature of Diana's model that is likely to be unrealistic in a real-world physical context.<br><br><strong>(iii)</strong> Suggest a reason in terms of physical biology (such as fatigue or overtraining) for the shape of Beth's graph as compared with Alex's graph.<br><br><strong>(iv)</strong> What does Charlie's model suggest about either his natural athletic ability or his attitude toward training?",
                 "steps": [
                         "According to Alex's model, his performance increases linearly from $40\\%$ at $t = 0$ until it reaches a maximum of $100\\%$ at $t = 10$. For any training time greater than $10$ hours (i.e., $t > 10$), his expected performance remains flat at $100\\%$.<br><br>Therefore, any weekly training time of at least $10$ hours will yield peak performance. The natural recommendation is to spend exactly $10$ hours training per week, as any extra time spent training does not increase his expected performance further.",

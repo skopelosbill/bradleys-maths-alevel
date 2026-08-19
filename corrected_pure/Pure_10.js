@@ -588,7 +588,7 @@ window.ALEVEL_QUESTIONS = [
                         "Modelling and Applications",
                         "Quadratics"
                 ],
-                "img": "images/Pure/004466.png",
+                "img": "images/Pure_SVGs/004466.svg",
                 "question": "The diagram shows a graph representing the trajectory of a Gaelic football.<br><br>The height above the ground, $H$ metres, has been plotted against the horizontal distance, $x$ metres, measured from the point $O$ where the ball was kicked. The ball travels in a vertical plane. The ball reaches a maximum height of $16$ metres and hits the ground $48$ metres from where it was kicked.<br><br><strong>(a)</strong> Find a quadratic equation linking $H$ with $x$ that models this situation.<br><br>The ball passes over the horizontal crossbar of a set of goal posts that is perpendicular to the path of the ball. The crossbar is $3$ metres above the ground.<br><br><strong>(b)</strong> Use your equation to find the greatest horizontal distance of the crossbar from $O$.<br><br><strong>(c)</strong> Give one limitation of the model.",
                 "steps": [
                         "<strong>(a) Finding the quadratic model:</strong><br>The trajectory starts at the origin $O(0,0)$ and lands at the point $(48,0)$, which means the roots of the quadratic function are $x = 0$ and $x = 48$. We can express the model in factored form:<br>$$H = kx( 48 - x )$$<br>where $k$ is a constant. The maximum height of $16$ metres occurs at the midpoint of the flight, which is $x = 24$. Therefore, the vertex of the parabola is at the point $(24, 16)$.",
@@ -629,7 +629,7 @@ window.ALEVEL_QUESTIONS = [
                         "Modelling and Applications",
                         "Quadratics"
                 ],
-                "img": "images/Pure/004467.png",
+                "img": "images/Pure_SVGs/004467.svg",
                 "question": "The diagram shows a graph representing the trajectory of a golf ball.<br><br>The height above the ground, $H$ metres, has been plotted against the horizontal distance, $x$ metres, measured from the point $O$ where the ball was hit. The ball travels in a vertical plane. The ball reaches a maximum height of $25$ metres and hits the fairway $200$ metres from where it was struck.<br><br><strong>(a)</strong> Find a quadratic equation linking $H$ with $x$ that models this situation.<br><br>The ball passes over the top of a tall tree that is perpendicular to the path of the ball. The tree is $16$ metres high.<br><br><strong>(b)</strong> Use your equation to find the greatest horizontal distance of the tree from $O$.<br><br><strong>(c)</strong> Give one limitation of the model.",
                 "steps": [
                         "<strong>(a) Finding the quadratic model:</strong><br>The golf ball starts at the origin $O(0,0)$ and lands at the point $(200,0)$, which means the roots of the quadratic function are $x = 0$ and $x = 200$. We can express the model in factored form:<br>$$H = kx( 200 - x )$$<br>where $k$ is a constant. The maximum height of $25$ metres occurs at the midpoint of the flight, which is $x = 100$. Therefore, the vertex of the parabola is at $(100, 25)$.",
@@ -670,7 +670,7 @@ window.ALEVEL_QUESTIONS = [
                         "Modelling and Applications",
                         "Quadratics"
                 ],
-                "img": "images/Pure/004468.png",
+                "img": "images/Pure_SVGs/004468.svg",
                 "question": "The diagram shows a graph representing the trajectory of an arrow shot from the ground.<br><br>The height above the ground, $H$ metres, has been plotted against the horizontal distance, $x$ metres, measured from the point $O$ where the arrow was released. The arrow travels in a vertical plane. The arrow reaches a maximum height of $18$ metres and hits the ground $120$ metres from where it was shot.<br><br><strong>(a)</strong> Find a quadratic equation linking $H$ with $x$ that models this situation.<br><br>The arrow passes over a high boundary wall that is perpendicular to the path of the arrow. The top of the wall is $10$ metres above the ground.<br><br><strong>(b)</strong> Use your equation to find the greatest horizontal distance of the wall from $O$.<br><br><strong>(c)</strong> Give one limitation of the model.",
                 "steps": [
                         "<strong>(a) Finding the quadratic model:</strong><br>The arrow is shot from the origin $O(0,0)$ and lands at $(120,0)$, which means the roots of the quadratic function are $x = 0$ and $x = 120$. We can express the model in factored form:<br>$$H = kx( 120 - x )$$<br>where $k$ is a constant. The maximum height of $18$ metres occurs at the midpoint of the flight, which is $x = 60$. Therefore, the vertex of the parabola is at $(60, 18)$.",
@@ -711,7 +711,7 @@ window.ALEVEL_QUESTIONS = [
                         "Modelling and Applications",
                         "Quadratics"
                 ],
-                "img": "images/Pure/004469.png",
+                "img": "images/Pure_SVGs/004469.svg",
                 "question": "The diagram shows a graph representing the trajectory of a tennis ball lobbed from the court surface.<br><br>The height above the court, $H$ metres, has been plotted against the horizontal distance, $x$ metres, measured from the point $O$ where the ball was struck. The ball travels in a vertical plane. The ball reaches a maximum height of $9$ metres and hits the court $24$ metres from where it was struck.<br><br><strong>(a)</strong> Find a quadratic equation linking $H$ with $x$ that models this situation.<br><br>The ball passes over a practice net barrier that is perpendicular to the path of the ball. The barrier is $5$ metres high.<br><br><strong>(b)</strong> Use your equation to find the greatest horizontal distance of the barrier from $O$.<br><br><strong>(c)</strong> Give one limitation of the model.",
                 "steps": [
                         "<strong>(a) Finding the quadratic model:</strong><br>The tennis ball starts at the origin $O(0,0)$ and lands at $(24,0)$, which means the roots of the quadratic function are $x = 0$ and $x = 24$. We can express the model in factored form:<br>$$H = kx( 24 - x )$$<br>where $k$ is a constant. The maximum height of $9$ metres occurs at the midpoint of the flight, which is $x = 12$. Therefore, the vertex of the parabola is at $(12, 9)$.",
@@ -752,7 +752,7 @@ window.ALEVEL_QUESTIONS = [
                         "Modelling and Applications",
                         "Quadratics"
                 ],
-                "img": "images/Pure/004470.png",
+                "img": "images/Pure_SVGs/004470.svg",
                 "question": "The diagram shows a graph representing the trajectory of a cricket ball hit from the ground.<br><br>The height above the ground, $H$ metres, has been plotted against the horizontal distance, $x$ metres, measured from the point $O$ where the ball was hit. The ball travels in a vertical plane. The ball reaches a maximum height of $16$ metres and lands $80$ metres from where it was hit.<br><br><strong>(a)</strong> Find a quadratic equation linking $H$ with $x$ that models this situation.<br><br>The ball passes over a sight screen that is perpendicular to the path of the ball. The top of the sight screen is $7$ metres above the ground.<br><br><strong>(b)</strong> Use your equation to find the greatest horizontal distance of the sight screen from $O$.<br><br><strong>(c)</strong> Give one limitation of the model.",
                 "steps": [
                         "<strong>(a) Finding the quadratic model:</strong><br>The cricket ball starts at the origin $O(0,0)$ and lands at $(80,0)$, which means the roots of the quadratic function are $x = 0$ and $x = 80$. We can express the model in factored form:<br>$$H = kx( 80 - x )$$<br>where $k$ is a constant. The maximum height of $16$ metres occurs at the midpoint of the flight, which is $x = 40$. Therefore, the vertex of the parabola is at $(40, 16)$.",
@@ -1557,7 +1557,7 @@ window.ALEVEL_QUESTIONS = [
                 "subtopic": [
                         "Differentiation and Logarithms"
                 ],
-                "img": "images/Pure/004491.png",
+                "img": "images/Pure_SVGs/004491.svg",
                 "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = 2x \\ln x, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, 2\\mathrm{e} )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^2 + B$, where $A$ and $B$ are rational constants to be found. Find the values of $A$ and $B$.",
                 "steps": [
                         "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We first differentiate $y = 2x \\ln x$ using the product rule to find the gradient function of the curve $C$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= 2\\ln x + 2x \\left( \\dfrac{ 1 }{ x } \\right) \\cr &= 2\\ln x + 2 \\end{aligned}<br>At the point $P( \\mathrm{e}, 2\\mathrm{e} )$, the gradient of the tangent is:<br>\\begin{aligned}\nm_T &= 2\\ln \\mathrm{e} + 2 \\cr\n&= 2( 1 ) + 2 \\cr\n&= 4\n\\end{aligned}<br>Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:<br>$$m_N = -\\dfrac{ 1 }{ 4 }$$<br>Using the point-slope formula, the equation of the normal line $l$ is:<br>\\begin{aligned} y - 2\\mathrm{e} &= -\\dfrac{ 1 }{ 4 }( x - \\mathrm{e} ) \\cr y &= -\\dfrac{ 1 }{ 4 }x + \\dfrac{ 9 }{ 4 }\\mathrm{e} \\end{aligned}",
@@ -1596,7 +1596,7 @@ window.ALEVEL_QUESTIONS = [
                 "subtopic": [
                         "Differentiation and Logarithms"
                 ],
-                "img": "images/Pure/004492.png",
+                "img": "images/Pure_SVGs/004492.svg",
                 "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = x^2 \\ln x, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, \\mathrm{e}^2 )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^5 + B\\mathrm{e}^3 + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
                 "steps": [
                         "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We differentiate $y = x^2 \\ln x$ using the product rule to find the gradient function of the curve $C$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= 2x \\ln x + x^2 \\left( \\dfrac{ 1 }{ x } \\right) \\cr &= 2x \\ln x + x \\end{aligned}<br>At the point $P( \\mathrm{e}, \\mathrm{e}^2 )$, the gradient of the tangent is:<br>\\begin{aligned}\nm_T &= 2\\mathrm{e} \\ln \\mathrm{e} + \\mathrm{e} \\cr\n&= 2\\mathrm{e}( 1 ) + \\mathrm{e} \\cr\n&= 3\\mathrm{e}\n\\end{aligned}<br>Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:<br>$$m_N = -\\dfrac{ 1 }{ 3\\mathrm{e} }$$<br>The equation of the normal line $l$ is:<br>\\begin{aligned} y - \\mathrm{e}^2 &= -\\dfrac{ 1 }{ 3\\mathrm{e} }( x - \\mathrm{e} ) \\cr y &= -\\dfrac{ 1 }{ 3\\mathrm{e} }x + \\dfrac{ 1 }{ 3 } + \\mathrm{e}^2 \\end{aligned}",
@@ -1635,7 +1635,7 @@ window.ALEVEL_QUESTIONS = [
                 "subtopic": [
                         "Differentiation and Logarithms"
                 ],
-                "img": "images/Pure/004493.png",
+                "img": "images/Pure_SVGs/004493.svg",
                 "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = 3\\sqrt{x} \\ln x, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, 3\\sqrt{ \\mathrm{e} } )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^{1/2} + B\\mathrm{e}^{3/2} + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
                 "steps": [
                         "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We first differentiate $y = 3x^{ 1/2 } \\ln x$ using the product rule to find the gradient function of the curve $C$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= \\dfrac{ 3 }{ 2 }x^{ -1/2 } \\ln x + 3x^{ 1/2 } \\left( \\dfrac{ 1 }{ x } \\right) \\cr &= \\dfrac{ 3\\ln x + 6 }{ 2\\sqrt{ x } } \\end{aligned}<br>At the point $P( \\mathrm{e}, 3\\sqrt{ \\mathrm{e} } )$, the gradient of the tangent is:<br>\\begin{aligned}\nm_T &= \\dfrac{ 3\\ln \\mathrm{e} + 6 }{ 2\\sqrt{ \\mathrm{e} } } \\cr\n&= \\dfrac{ 9 }{ 2\\sqrt{ \\mathrm{e} } }\n\\end{aligned}<br>Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:<br>$$m_N = -\\dfrac{ 2\\sqrt{ \\mathrm{e} } }{ 9 }$$<br>The equation of the normal line $l$ is:<br>\\begin{aligned} y - 3\\sqrt{ \\mathrm{e} } &= -\\dfrac{ 2\\sqrt{ \\mathrm{e} } }{ 9 }( x - \\mathrm{e} ) \\cr y &= -\\dfrac{ 2\\sqrt{ \\mathrm{e} } }{ 9 }x + \\dfrac{ 2\\mathrm{e}\\sqrt{ \\mathrm{e} } }{ 9 } + 3\\sqrt{ \\mathrm{e} } \\end{aligned}",
@@ -1674,7 +1674,7 @@ window.ALEVEL_QUESTIONS = [
                 "subtopic": [
                         "Differentiation and Logarithms"
                 ],
-                "img": "images/Pure/004494.png",
+                "img": "images/Pure_SVGs/004494.svg",
                 "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = \\dfrac{ \\ln x }{ \\sqrt{x} }, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, \\mathrm{e}^{-1/2} )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^{-5/2} + B\\mathrm{e}^{1/2} + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
                 "steps": [
                         "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We differentiate $y = x^{ -1/2 } \\ln x$ using the product rule to find the gradient function of the curve $C$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= -\\dfrac{ 1 }{ 2 }x^{ -3/2 } \\ln x + x^{ -1/2 } \\left( \\dfrac{ 1 }{ x } \\right) \\cr &= \\dfrac{ 2 - \\ln x }{ 2x^{ 3/2 } } \\end{aligned}<br>At the point $P( \\mathrm{e}, \\mathrm{e}^{-1/2} )$, the gradient of the tangent is:<br>\\begin{aligned}\nm_T &= \\dfrac{ 2 - \\ln \\mathrm{e} }{ 2\\mathrm{e}^{ 3/2 } } \\cr\n&= \\dfrac{ 1 }{ 2\\mathrm{e}^{ 3/2 } }\n\\end{aligned}<br>Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:<br>$$m_N = -2\\mathrm{e}^{ 3/2 }$$<br>The equation of the normal line $l$ is:<br>\\begin{aligned} y - \\mathrm{e}^{-1/2} &= -2\\mathrm{e}^{ 3/2 }( x - \\mathrm{e} ) \\cr y &= -2\\mathrm{e}^{ 3/2 }x + 2\\mathrm{e}^{ 5/2 } + \\mathrm{e}^{-1/2} \\end{aligned}",
@@ -1713,7 +1713,7 @@ window.ALEVEL_QUESTIONS = [
                 "subtopic": [
                         "Differentiation and Logarithms"
                 ],
-                "img": "images/Pure/004495.png",
+                "img": "images/Pure_SVGs/004495.svg",
                 "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = x^3 \\ln x, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, \\mathrm{e}^3 )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^8 + B\\mathrm{e}^4 + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
                 "steps": [
                         "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We first differentiate $y = x^3 \\ln x$ using the product rule to find the gradient function of the curve $C$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= 3x^2 \\ln x + x^3 \\left( \\dfrac{ 1 }{ x } \\right) \\cr &= 3x^2 \\ln x + x^2 \\end{aligned}<br>At the point $P( \\mathrm{e}, \\mathrm{e}^3 )$, the gradient of the tangent is:<br>\\begin{aligned}\nm_T &= 3\\mathrm{e}^2 \\ln \\mathrm{e} + \\mathrm{e}^2 \\cr\n&= 3\\mathrm{e}^2( 1 ) + \\mathrm{e}^2 \\cr\n&= 4\\mathrm{e}^2\n\\end{aligned}<br>Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:<br>$$m_N = -\\dfrac{ 1 }{ 4\\mathrm{e}^2 }$$<br>The equation of the normal line $l$ is:<br>\\begin{aligned} y - \\mathrm{e}^3 &= -\\dfrac{ 1 }{ 4\\mathrm{e}^2 }( x - \\mathrm{e} ) \\cr y &= -\\dfrac{ 1 }{ 4\\mathrm{e}^2 }x + \\dfrac{ 1 }{ 4\\mathrm{e} } + \\mathrm{e}^3 \\end{aligned}",

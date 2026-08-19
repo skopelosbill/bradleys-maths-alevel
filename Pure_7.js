@@ -415,13 +415,13 @@ window.ALEVEL_QUESTIONS = [
                         "Curved Graphs",
                         "Graph Transformations"
                 ],
-                "img": "images/Pure/004311.png",
+                "img": "images/Pure_SVGs/004311.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of $y = f(x)$, which is a reciprocal-type curve with asymptotes $x = 0$ and $y = 0$.<br><br>1. Sketch the graph of $y = f(x) - 3$, clearly indicating the equation of any asymptotes.<br>2. Sketch the graph of $y = f(x + 2)$, clearly indicating the equation of any asymptotes.",
                 "steps": [
                         "For part 1, the transformation $y = f(x) - 3$ represents a vertical translation downwards by $3$ units.<br>This transformation shifts every point on the original curve downwards, which also shifts the horizontal asymptote:<br>\\begin{aligned} \\text{Vertical asymptote} &: x = 0 \\quad \\text{(Unchanged)} \\\\\\ \\text{Horizontal asymptote} &: y = -3 \\quad \\text{(Shifted from } y = 0 \\text{)} \\end{aligned}",
-                        "Using these new asymptotes, sketch the shifted reciprocal curve:<br><br><img src='images/Pure/004311_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+                        "Using these new asymptotes, sketch the shifted reciprocal curve:<br><br><img src='images/Pure_SVGs/004311_ans1.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "For part 2, the transformation $y = f(x + 2)$ represents a horizontal translation to the left by $2$ units.<br>This transformation shifts every point on the original curve to the left, which also shifts the vertical asymptote:<br>\\begin{aligned} \\text{Vertical asymptote} &: x = -2 \\quad \\text{(Shifted from } x = 0 \\text{)} \\\\\\ \\text{Horizontal asymptote} &: y = 0 \\quad \\text{(Unchanged)} \\end{aligned}",
-                        "Using these new asymptotes, sketch the shifted reciprocal curve:<br><br><img src='images/Pure/004311_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: Sketches completed with asymptotes $y = -3$ for part 1, and $x = -2$ for part 2."
+                        "Using these new asymptotes, sketch the shifted reciprocal curve:<br><br><img src='images/Pure_SVGs/004311_ans2.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: Sketches completed with asymptotes $y = -3$ for part 1, and $x = -2$ for part 2."
                 ],
                 "pi_options": [
                         {
@@ -454,13 +454,13 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiation",
                         "Graph Transformations"
                 ],
-                "img": "images/Pure/004312.png",
+                "img": "images/Pure_SVGs/004312.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $y = f(x)$, which has a local maximum at $P(2, 6)$ and a local minimum at $Q(4, -2)$.<br><br>1. Sketch the graph of $y = -f(x)$, clearly indicating the new coordinates and nature of the stationary points.<br>2. Sketch the graph of $y = f(2x)$, clearly indicating the new coordinates and nature of the stationary points.",
                 "steps": [
                         "For part 1, the transformation $y = -f(x)$ represents a vertical reflection of the curve in the $x$-axis.<br>This operation negates all $y$-coordinates of the stationary points while keeping their $x$-coordinates unchanged. It also reverses their mathematical nature:<br>\\begin{aligned} P(2, 6) &\\implies P'( 2, -6 ) \\quad \\text{(New Local Minimum)} \\\\ Q(4, -2) &\\implies Q'( 4, 2 ) \\quad \\text{(New Local Maximum)} \\end{aligned}",
-                        "Using these new turning points, sketch the vertically reflected cubic curve:<br><br><img src='images/Pure/004312_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+                        "Using these new turning points, sketch the vertically reflected cubic curve:<br><br><img src='images/Pure_SVGs/004312_ans1.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "For part 2, the transformation $y = f(2x)$ represents a horizontal stretch by a factor of $\\dfrac{1}{ 2 }$ (horizontal compression).<br>This operation halves the $x$-coordinates of all points on the curve while keeping their $y$-coordinates and mathematical nature completely unchanged:<br>\\begin{aligned} P(2, 6) &\\implies P''( 1, 6 ) \\quad \\text{(Local Maximum)} \\\\ Q(4, -2) &\\implies Q''( 2, -2 ) \\quad \\text{(Local Minimum)} \\end{aligned}",
-                        "Using these compressed coordinate points, sketch the horizontally scaled cubic curve:<br><br><img src='images/Pure/004312_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: Sketches completed with $P'(2, -6)$ and $Q'(4, 2)$ for part 1, and $P''(1, 6)$ and $Q''(2, -2)$ for part 2."
+                        "Using these compressed coordinate points, sketch the horizontally scaled cubic curve:<br><br><img src='images/Pure_SVGs/004312_ans2.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: Sketches completed with $P'(2, -6)$ and $Q'(4, 2)$ for part 1, and $P''(1, 6)$ and $Q''(2, -2)$ for part 2."
                 ],
                 "pi_options": [
                         {
@@ -494,13 +494,13 @@ window.ALEVEL_QUESTIONS = [
                         "Curved Graphs",
                         "Graph Transformations"
                 ],
-                "img": "images/Pure/004313.png",
+                "img": "images/Pure_SVGs/004313.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the quadratic curve $y = f(x)$, which has its vertex (minimum point) at $(3, -4)$ and crosses the $x$-axis at $(1, 0)$ and $(5, 0)$.<br><br>1. Sketch the graph of $y = f(x) + 4$, clearly indicating the coordinates of the new vertex and any $x$-intercepts.<br>2. Sketch the graph of $y = f(x - 2)$, clearly indicating the coordinates of the new vertex.",
                 "steps": [
                         "For part 1, the transformation $y = f(x) + 4$ represents a vertical translation upwards by $4$ units.<br>This operation adds $4$ to the $y$-coordinates of all points on the curve while keeping their $x$-coordinates unchanged:<br>\\begin{aligned} \\text{New Vertex} &= ( 3, -4 + 4 ) = (3, 0) \\end{aligned}",
-                        "To find the new $x$-intercepts, solve $f(x) + 4 = 0 \\implies f(x) = -4$. The original curve only reaches $y = -4$ at its vertex ($x = 3$), so the new graph has only a single double-root intersection point on the $x$-axis, which occurs at the new vertex $(3, 0)$. Sketch this shifted parabola:<br><br><img src='images/Pure/004313_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+                        "To find the new $x$-intercepts, solve $f(x) + 4 = 0 \\implies f(x) = -4$. The original curve only reaches $y = -4$ at its vertex ($x = 3$), so the new graph has only a single double-root intersection point on the $x$-axis, which occurs at the new vertex $(3, 0)$. Sketch this shifted parabola:<br><br><img src='images/Pure_SVGs/004313_ans1.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "For part 2, the transformation $y = f(x - 2)$ represents a horizontal translation to the right by $2$ units.<br>This operation adds $2$ to the $x$-coordinates of all points on the curve while keeping their $y$-coordinates completely unchanged:<br>\\begin{aligned} \\text{New Vertex} &= ( 3 + 2, -4 ) = (5, -4) \\end{aligned}",
-                        "Using this new vertex coordinate, sketch the horizontally translated parabola:<br><br><img src='images/Pure/004313_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: New vertex at $(3, 0)$ touching the $x$-axis for part 1, and new vertex at $(5, -4)$ for part 2."
+                        "Using this new vertex coordinate, sketch the horizontally translated parabola:<br><br><img src='images/Pure_SVGs/004313_ans2.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: New vertex at $(3, 0)$ touching the $x$-axis for part 1, and new vertex at $(5, -4)$ for part 2."
                 ],
                 "pi_options": [
                         {
@@ -534,13 +534,13 @@ window.ALEVEL_QUESTIONS = [
                         "Exponential and Logarithmic Functions and Graphs",
                         "Graph Transformations"
                 ],
-                "img": "images/Pure/004314.png",
+                "img": "images/Pure_SVGs/004314.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $y = f(x)$ where $f(x) = 3^x$, which passes through the point $(0, 1)$ and has a horizontal asymptote at $y = 0$.<br><br>1. Sketch the graph of $y = f(x) - 2$, clearly indicating the equation of the new horizontal asymptote and the coordinates of the point where the curve crosses the $y$-axis.<br>2. Sketch the graph of $y = f(-x)$, clearly indicating the coordinates of the point where the curve crosses the $y$-axis.",
                 "steps": [
                         "For part 1, the transformation $y = f(x) - 2$ represents a vertical translation downwards by $2$ units.<br>This operation shifts both the curve and its horizontal asymptote downwards by $2$ units:<br>\\begin{aligned} \\text{New Asymptote} &: y = -2 \\end{aligned}",
-                        "To find the new $y$-intercept, substitute $x = 0$ into the translated equation:<br>\\begin{aligned} y(0) &= f(0) - 2 \\\\\\ &= 3^0 - 2 = 1 - 2 = -1 \\end{aligned}<br>Thus, the new $y$-intercept is $(0, -1)$. Sketch the vertically shifted exponential curve:<br><br><img src='images/Pure/004314_ans1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+                        "To find the new $y$-intercept, substitute $x = 0$ into the translated equation:<br>\\begin{aligned} y(0) &= f(0) - 2 \\\\\\ &= 3^0 - 2 = 1 - 2 = -1 \\end{aligned}<br>Thus, the new $y$-intercept is $(0, -1)$. Sketch the vertically shifted exponential curve:<br><br><img src='images/Pure_SVGs/004314_ans1.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "For part 2, the transformation $y = f(-x)$ represents a horizontal reflection of the curve in the $y$-axis.<br>This reflection does not affect the horizontal asymptote nor the $y$-intercept, because points on the $y$-axis ($x = 0$) are invariant under horizontal reflection:<br>\\begin{aligned} \\text{Asymptote} &: y = 0 \\\\\\ \\text{y-intercept} &: (0, 1) \\end{aligned}",
-                        "Sketch this horizontally reflected exponential decay curve:<br><br><img src='images/Pure/004314_ans2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: New asymptote at $y = -2$ with intercept $(0, -1)$ for part 1, and asymptote at $y = 0$ with intercept $(0, 1)$ for part 2."
+                        "Sketch this horizontally reflected exponential decay curve:<br><br><img src='images/Pure_SVGs/004314_ans2.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Final Answer: New asymptote at $y = -2$ with intercept $(0, -1)$ for part 1, and asymptote at $y = 0$ with intercept $(0, 1)$ for part 2."
                 ],
                 "pi_options": [
                         {
@@ -611,7 +611,7 @@ window.ALEVEL_QUESTIONS = [
                         "Curved Graphs",
                         "Integration"
                 ],
-                "img": "images/Pure/004316.png",
+                "img": "images/Pure_SVGs/004316.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C$ with equation $y = 5 + 4x - x^2$ and the line $L$ with equation $y = x + 1$. The line intersects the curve at the points $A$ and $B$.<br><br>1. Find the coordinates of $A$ and $B$.<br>2. Calculate the exact area of the region enclosed by the curve $C$ and the line $L$.",
                 "steps": [
                         "To find the coordinates of the intersection points, set the equation of the curve equal to the equation of the line:<br>\\begin{aligned} 5 + 4x - x^2 &= x + 1 \\\\\\ -x^2 + 3x + 4 &= 0 \\end{aligned}<br>Multiply the entire quadratic equation by $-1$ to make factoring easier:<br>\\begin{aligned} x^2 - 3x - 4 &= 0 \\\\\\ (x - 4)(x + 1) &= 0 \\end{aligned}",
@@ -653,7 +653,7 @@ window.ALEVEL_QUESTIONS = [
                         "Curved Graphs",
                         "Integration"
                 ],
-                "img": "images/Pure/004317.png",
+                "img": "images/Pure_SVGs/004317.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C$ with equation $y = x^3 - 3x^2$ and the $x$-axis.<br><br>1. Find the coordinates of the points where the curve intersects the $x$-axis.<br>2. Find the exact area of the finite region bounded by the curve and the $x$-axis.",
                 "steps": [
                         "To find the points where the curve intersects the $x$-axis, set $y = 0$ and factorise the cubic equation:<br>\\begin{aligned} x^3 - 3x^2 &= 0 \\\\ x^2(x - 3) &= 0 \\end{aligned}<br>This yields two solutions: $x = 0$ and $x = 3$.<br>So, the two $x$-intercept points are $(0, 0)$ and $(3, 0)$.",
@@ -694,7 +694,7 @@ window.ALEVEL_QUESTIONS = [
                         "Curved Graphs",
                         "Integration"
                 ],
-                "img": "images/Pure/004318.png",
+                "img": "images/Pure_SVGs/004318.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C_1$ with equation $y = 8 - x^2$ and the curve $C_2$ with equation $y = x^2$. The two curves intersect at the points $P$ and $Q$.<br><br>1. Find the coordinates of the points of intersection $P$ and $Q$.<br>2. Calculate the exact area of the region enclosed between the two curves.",
                 "steps": [
                         "To find the intersection coordinates, set the equations of the two curves equal to each other:<br>\\begin{aligned} 8 - x^2 &= x^2 \\\\\\ 2x^2 &= 8 \\\\ x^2 &= 4 \\implies x = \\pm 2 \\end{aligned}",
@@ -736,7 +736,7 @@ window.ALEVEL_QUESTIONS = [
                         "Curved Graphs",
                         "Integration"
                 ],
-                "img": "images/Pure/004319.png",
+                "img": "images/Pure_SVGs/004319.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C$ with equation $y = 4\\sqrt{x}$ and the line $L$ with equation $y = x + 3$. The line intersects the curve at the points $A$ and $B$.<br><br>1. Show that the coordinates of the points of intersection are $A(1, 4)$ and $B(9, 12)$.<br>2. Calculate the exact area of the region enclosed by the curve $C$ and the line $L$.",
                 "steps": [
                         "To verify the coordinates, substitute the points into both equations:<ul><li>For $A(1, 4)$: $y = 4\\sqrt{1} = 4$, and $y = 1 + 3 = 4$. Verified.</li><li>For $B(9, 12)$: $y = 4\\sqrt{9} = 12$, and $y = 9 + 3 = 12$. Verified.</li></ul>Both points lie on both the curve and the line.",
@@ -777,7 +777,7 @@ window.ALEVEL_QUESTIONS = [
                         "Curved Graphs",
                         "Integration"
                 ],
-                "img": "images/Pure/004320.png",
+                "img": "images/Pure_SVGs/004320.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve with equation $y = 3\\sqrt{x} - 2$, which crosses the $x$-axis at the point $A$.<br><br>1. Find the exact coordinates of the point $A$.<br>2. Find the exact area of the region bounded by the curve, the $x$-axis, and the vertical line $x = 4$.",
                 "steps": [
                         "To find the coordinates of point $A$, set the equation of the curve equal to $0$ (since $y = 0$ on the $x$-axis) and solve for $x$:<br>\\begin{aligned} 3\\sqrt{x} - 2 &= 0 \\\\\\ 3\\sqrt{x} &= 2 \\\\\\ \\sqrt{x} &= \\dfrac{2}{ 3 } \\\\ x &= \\left(\\dfrac{2}{ 3 }\\right)^2 = \\dfrac{4}{ 9 } \\end{aligned}<br>Thus, the coordinates of point $A$ are $A\\left(\\dfrac{4}{ 9 }, 0\\right)$.",
@@ -1216,7 +1216,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>The triangle $ABC$ is such that $AC = 12\\text{ cm}$, $AB = 18\\text{ cm}$, and angle $ABC = 35^\\circ$.<br><br>Find the two possible values for the area of triangle $ABC$. Give your answers to $1$ decimal place.",
                 "steps": [
-                        "First, sketch a diagram representing the given information. Because side $AC = 12\\text{ cm}$ is shorter than the adjacent side $AB = 18\\text{ cm}$, the side $AC$ can swing into two possible locations, creating an acute triangle ($ABC_2$) and an obtuse triangle ($ABC_1$):<br><br><img src='images/Pure/004331.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+                        "First, sketch a diagram representing the given information. Because side $AC = 12\\text{ cm}$ is shorter than the adjacent side $AB = 18\\text{ cm}$, the side $AC$ can swing into two possible locations, creating an acute triangle ($ABC_2$) and an obtuse triangle ($ABC_1$):<br><br><img src='images/Pure_SVGs/004331.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "Use the Sine Rule to find the two possible values for the angle $C = \\angle ACB$:<br>\\begin{aligned} \\dfrac{\\sin C}{ c } &= \\dfrac{\\sin B}{ b } \\\\\\ \\dfrac{\\sin C}{ 18 } &= \\dfrac{\\sin 35^\\circ}{ 12 } \\\\\\ \\sin C &= 1.5\\sin 35^\\circ \\approx 0.860364 \\end{aligned}",
                         "Find the acute angle $C_1$ and the obtuse angle $C_2$ (where $C_2 = 180^\\circ - C_1$):<br>\\begin{aligned} C_1 &= \\arcsin(0.860364) \\approx 59.4^\\circ \\\\ C_2 &= 180^\\circ - 59.4^\\circ = 120.6^\\circ \\end{aligned}",
                         "For each case, calculate the corresponding third angle $A = \\angle BAC$:<br>\\begin{aligned} \\text{Case 1 (Acute C)} &: A_1 = 180^\\circ - 35^\\circ - 59.4^\\circ = 85.6^\\circ \\\\\\ \\text{Case 2 (Obtuse C)} &: A_2 = 180^\\circ - 35^\\circ - 120.6^\\circ = 24.4^\\circ \\end{aligned}",
@@ -1257,7 +1257,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>A ship sails from port $P$ on a bearing of $045^\\circ$ for $12\\text{ km}$ to point $A$. It then changes course and sails on a bearing of $130^\\circ$ for $15\\text{ km}$ to point $B$.<br><br>Calculate the direct distance of $B$ from $P$, giving your answer in kilometres to $1$ decimal place.",
                 "steps": [
-                        "First, sketch a diagram with North-pointing lines at each vertex to help determine the internal angles of the triangle formed by $P$, $A$, and $B$:<br><br><img src='images/Pure/004332.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+                        "First, sketch a diagram with North-pointing lines at each vertex to help determine the internal angles of the triangle formed by $P$, $A$, and $B$:<br><br><img src='images/Pure_SVGs/004332.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "Calculate the interior angle $\\angle PAB$ using parallel North lines. The line $PA$ pointing South-West from $A$ makes an angle of $45^\\circ$ with the South line (alternate interior angles with the bearing at $P$). Since the bearing of $B$ from $A$ is $130^\\circ$:<br>\\begin{aligned} \\angle PAB &= (180^\\circ + 45^\\circ) - 130^\\circ \\\\\\ &= 225^\\circ - 130^\\circ = 95^\\circ \\end{aligned}",
                         "Use the Cosine Rule to find the unknown direct distance $PB$ in triangle $PAB$ with sides $PA = 12$, $AB = 15$, and included angle $\\angle PAB = 95^\\circ$:<br>\\begin{aligned} PB^2 &= PA^2 + AB^2 - 2(PA)(AB)\\cos\\angle PAB \\\\ PB^2 &= 12^2 + 15^2 - 2(12)(15)\\cos(95^\\circ) \\end{aligned}",
                         "Substitute the values and evaluate, noting that $\\cos(95^\\circ) \\approx -0.087156$ is negative:<br>\\begin{aligned} PB^2 &= 144 + 225 - 360(-0.087156) \\\\\\ &= 369 + 31.376 \\\\\\ &= 400.376 \\end{aligned}",
@@ -1298,7 +1298,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>A triangle has sides of length $x\\text{ cm}$, $(x + 2)\\text{ cm}$, and $10\\text{ cm}$. The angle between the sides of length $x\\text{ cm}$ and $(x + 2)\\text{ cm}$ is $60^\\circ$.<br><br>Use the Cosine Rule to find the value of $x$. Give your answer to $1$ decimal place.",
                 "steps": [
-                        "First, sketch the triangle with the given side lengths and the included angle of $60^\\circ$ to visualize the problem:<br><br><img src='images/Pure/004333.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+                        "First, sketch the triangle with the given side lengths and the included angle of $60^\\circ$ to visualize the problem:<br><br><img src='images/Pure_SVGs/004333.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "Apply the Cosine Rule, using the opposite side $a = 10$, and the adjacent sides $b = x$ and $c = x + 2$:<br>\\begin{aligned} a^2 &= b^2 + c^2 - 2bc\\cos A \\\\\\ 10^2 &= x^2 + (x + 2)^2 - 2x(x + 2)\\cos(60^\\circ) \\end{aligned}",
                         "Substitute $\\cos(60^\\circ) = 0.5$ and expand the algebraic terms:<br>\\begin{aligned} 100 &= x^2 + (x^2 + 4x + 4) - 2x(x + 2)(0.5) \\\\\\ 100 &= 2x^2 + 4x + 4 - (x^2 + 2x) \\\\\\ 100 &= x^2 + 2x + 4 \\end{aligned}",
                         "Rearrange the terms into a standard quadratic equation of the form $ax^2 + bx + c = 0$:<br>\\begin{aligned} x^2 + 2x - 96 &= 0 \\end{aligned}",
@@ -1338,7 +1338,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>A right pyramid $VABCD$ has a horizontal square base $ABCD$ of side $8\\text{ cm}$ and a vertical height of $12\\text{ cm}$ centered at $O$.<br><br>Calculate the angle between the sloping edge $VB$ and the base plane $ABCD$. Give your answer to $1$ decimal place.",
                 "steps": [
-                        "First, sketch the 3D right pyramid to visualize the vertical height $VO$, the base diagonal $BD$, and the target angle $\\theta$ between the sloping edge $VB$ and the projection $OB$ on the base plane:<br><br><img src='images/Pure/004334.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+                        "First, sketch the 3D right pyramid to visualize the vertical height $VO$, the base diagonal $BD$, and the target angle $\\theta$ between the sloping edge $VB$ and the projection $OB$ on the base plane:<br><br><img src='images/Pure_SVGs/004334.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "Find the length of the base diagonal $BD$ using Pythagoras' theorem on the horizontal square base $ABCD$ of side $8\\text{ cm}$:<br>\\begin{aligned} BD &= \\sqrt{8^2 + 8^2} \\\\\\ &= \\sqrt{64 + 64} = \\sqrt{128} = 8\\sqrt{2} \\text{ cm} \\end{aligned}",
                         "The center $O$ of the square base bisects the diagonal $BD$, so find the length of $OB$:<br>\\begin{aligned} OB &= \\dfrac{BD}{ 2 } \\\\\\ &= \\dfrac{8\\sqrt{2}}{ 2 } = 4\\sqrt{2} \\text{ cm} \\approx 5.65685 \\text{ cm} \\end{aligned}",
                         "The vertical height $VO = 12\\text{ cm}$ is perpendicular to $OB$. In the right-angled triangle $VOB$, the angle $\\theta = \\angle VBO$ represents the angle of elevation of $VB$ from the base:<br>\\begin{aligned} \\tan\\theta &= \\dfrac{VO}{ OB } \\\\\\ \\tan\\theta &= \\dfrac{12}{ 4\\sqrt{2} } = \\dfrac{3}{ \\sqrt{2} } \\approx 2.12132 \\end{aligned}",
@@ -1378,7 +1378,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>A sector of a circle of radius $r\\text{ cm}$ has an arc length of $10\\text{ cm}$ and an area of $40\\text{ cm}^2$.<br><br>Find the value of $r$ and the angle of the sector in radians.",
                 "steps": [
-                        "First, sketch the circular sector showing the radius $r$, the arc length of $10\\text{ cm}$, and the central angle $\\theta$ in radians:<br><br><img src='images/Pure/004335.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+                        "First, sketch the circular sector showing the radius $r$, the arc length of $10\\text{ cm}$, and the central angle $\\theta$ in radians:<br><br><img src='images/Pure_SVGs/004335.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
                         "Write down the formulas for the arc length $s$ and area $A$ of a circular sector in radians:<br>\\begin{aligned} s &= r\\theta \\\\ A &= \\dfrac{1}{ 2 }r^2\\theta \\end{aligned}",
                         "Substitute the given values $s = 10$ and $A = 40$ into the equations:<br>\\begin{aligned} r\\theta &= 10 \\quad \\text{(Equation 1)} \\\\\\ \\dfrac{1}{ 2 }r^2\\theta &= 40 \\quad \\text{(Equation 2)} \\end{aligned}",
                         "Substitute Equation 1 ($r\\theta = 10$) into Equation 2 by rewriting $r^2\\theta$ as $r(r\\theta)$:<br>\\begin{aligned} \\dfrac{1}{ 2 }r(r\\theta) &= 40 \\\\\\ \\dfrac{1}{ 2 }r(10) &= 40 \\\\\\ 5r &= 40 \\implies r = 8 \\text{ cm} \\end{aligned}",

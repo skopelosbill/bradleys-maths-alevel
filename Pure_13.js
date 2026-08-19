@@ -418,7 +418,7 @@ window.ALEVEL_QUESTIONS = [
                 "subtopic": [
                         "Trigonometry"
                 ],
-                "img": "images/Pure/004611.png",
+                "img": "images/Pure_SVGs/004611.svg",
                 "question": "The diagram shows a triangle $ABC$ where $AB = 25\\text{ cm}$, $AC = 18\\text{ cm}$, and the included angle is $\\angle BAC = 72^\\circ$.<br><br><strong>(i)</strong> Find the length of $BC$, giving your answer to $2$ decimal places.<br><strong>(ii)</strong> Hence find the perimeter of triangle $ABC$, giving your answer to $2$ decimal places.",
                 "steps": [
                         "<strong>(i)</strong> To find the missing side $BC$ when given two sides and the included angle, use the Cosine Rule:<br>\\begin{aligned} BC^2 &= AB^2 + AC^2 - 2(AB)(AC)\\cos(\\angle BAC) \\end{aligned}",
@@ -456,7 +456,7 @@ window.ALEVEL_QUESTIONS = [
                 "subtopic": [
                         "Trigonometry"
                 ],
-                "img": "images/Pure/004612.png",
+                "img": "images/Pure_SVGs/004612.svg",
                 "question": "The diagram shows a triangle $XYZ$ where the side lengths are $XY = 12\\text{ cm}$, $XZ = 15\\text{ cm}$, and $YZ = 10\\text{ cm}$.<br><br><strong>(i)</strong> Find the size of the angle $\\angle YXZ$, giving your answer to $1$ decimal place.<br><strong>(ii)</strong> Find the area of triangle $XYZ$, giving your answer to $1$ decimal place.",
                 "steps": [
                         "<strong>(i)</strong> To find a missing angle when given all three sides of a triangle, rearrange the Cosine Rule to isolate the cosine term:<br>\\begin{aligned} \\cos(\\angle YXZ) &= \\dfrac{ XY^2 + XZ^2 - YZ^2 }{ 2(XY)(XZ) } \\end{aligned}",
@@ -494,7 +494,7 @@ window.ALEVEL_QUESTIONS = [
                 "subtopic": [
                         "Trigonometry"
                 ],
-                "img": "images/Pure/004613.png",
+                "img": "images/Pure_SVGs/004613.svg",
                 "question": "The diagram shows a triangle $PQR$ where the side lengths are $PQ = 8\\text{ cm}$ and $QR = 6\\text{ cm}$, and the angle is $\\angle QPR = 40^\\circ$.<br><br><strong>(i)</strong> Show that there are two possible values for the angle $\\angle PRQ$, and find both values to $1$ decimal place.<br><strong>(ii)</strong> Given that the angle $\\angle PRQ$ is obtuse, find the area of triangle $PQR$, giving your answer to $1$ decimal place.",
                 "steps": [
                         "<strong>(i)</strong> To find a missing angle when given an opposite side and another side-angle pair, use the Sine Rule:<br>\\begin{aligned} \\dfrac{ \\sin(\\angle PRQ) }{ PQ } &= \\dfrac{ \\sin(\\angle QPR) }{ QR } \\end{aligned}",
@@ -535,7 +535,7 @@ window.ALEVEL_QUESTIONS = [
                         "Coordinate Geometry",
                         "Trigonometry"
                 ],
-                "img": "images/Pure/004614.png",
+                "img": "images/Pure_SVGs/004614.svg",
                 "question": "The diagram shows a coordinate grid containing triangle $ABC$ with vertices $A(1, 2)$, $B(5, 5)$, and $C(2, 6)$.<br><br><strong>(i)</strong> Find the exact lengths of the sides $AB$, $BC$, and $AC$.<br><strong>(ii)</strong> Hence find the size of the angle $\\angle ABC$, giving your answer to the nearest degree.",
                 "steps": [
                         "<strong>(i)</strong> To find the exact side lengths, apply the coordinate distance formula, $d = \\sqrt{ (x_2 - x_1)^2 + (y_2 - y_1)^2 }$, to each pair of vertices:<br><br><strong>\u2022 Side $AB$:</strong><br>\\begin{aligned} AB &= \\sqrt{ (5 - 1)^2 + (5 - 2)^2 } \\cr &= \\sqrt{ 4^2 + 3^2 } \\cr &= \\sqrt{ 16 + 9 } \\cr &= 5 \\end{aligned}",
@@ -575,7 +575,7 @@ window.ALEVEL_QUESTIONS = [
                 "subtopic": [
                         "Trigonometry"
                 ],
-                "img": "images/Pure/004615.png",
+                "img": "images/Pure_SVGs/004615.svg",
                 "question": "The diagram shows the journey of a ship sailing $15\\text{ km}$ from port $P$ on a bearing of $060^\\circ$ to a point $A$. It then changes course and sails $12\\text{ km}$ on a bearing of $130^\\circ$ to a point $B$.<br><br><strong>(i)</strong> Find the distance of the ship from port $P$ when it is at point $B$, giving your answer to $1$ decimal place.<br><strong>(ii)</strong> Find the bearing of $B$ from port $P$, giving your answer to the nearest degree.",
                 "steps": [
                         "<strong>(i)</strong> To analyze the triangle $PAB$, first determine the interior angle $\\angle PAB$.<br><br>Using parallel lines on North directions:<br><strong>\u2022</strong> The angle from $AP$ to the South direction at $A$ is equal to the original bearing of $060^\\circ$ (alternate angles).<br><strong>\u2022</strong> The bearing of $B$ from $A$ is $130^\\circ$, which is $130^\\circ - 180^\\circ = -50^\\circ$ (or $50^\\circ$ East of South).<br><br>Adding these angles gives the interior angle $\\angle PAB$:<br>\\begin{aligned} \\angle PAB &= 60^\\circ + (180^\\circ - 130^\\circ) \\cr &= 60^\\circ + 50^\\circ \\cr &= 110^\\circ \\end{aligned}",
@@ -802,7 +802,7 @@ window.ALEVEL_QUESTIONS = [
                 "subtopic": [
                         "Numerical Methods"
                 ],
-                "img": "images/Pure/004621.png",
+                "img": "images/Pure_SVGs/004621.svg",
                 "question": "The diagram shows a circle with centre $O$ and radius $1$ unit. Points $A$ and $B$ lie on the circle such that angle $\\angle AOB = \\theta$ radians, where $\\theta$ is a small angle. Point $C$ lies on $AO$ such that $BC$ is perpendicular to $AO$.<br><br>Show that, when $\\theta$ is small, the length of $AC$ can be approximated by:<br>$$AC \\approx \\dfrac{ 1 }{ 2 }\\theta^2$$",
                 "steps": [
                         "First, write down the geometric relationships along the radius $OA$ of the unit circle:<br>\\begin{aligned} AO &= 1 \\cr OC &= AO \\cos\\theta \\cr OC &= \\cos\\theta \\end{aligned}",
@@ -995,7 +995,7 @@ window.ALEVEL_QUESTIONS = [
                         "Curved Graphs",
                         "Differentiation"
                 ],
-                "img": "images/Pure/004626.png",
+                "img": "images/Pure_SVGs/004626.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>A curve has equation $y = x - 3 + \\dfrac{ 1 }{ x - 4 }$.<br>The curve is shown in the diagram.<br><br><strong>(i)</strong> Determine the coordinates of the stationary points on the curve.<br><strong>(ii)</strong> Determine the nature of each stationary point.<br><strong>(iii)</strong> Write down the equation of the vertical asymptote.<br><strong>(iv)</strong> Deduce the set of values of $x$ for which the curve is concave upwards.",
                 "steps": [
                         "<strong>(i) Finding the stationary points:</strong><br>To find the coordinates of the stationary points, we first differentiate the curve equation $y = x - 3 + \\dfrac{ 1 }{ x - 4 }$ with respect to $x$.<br><br>Using the chain rule on the fractional term, we obtain:<br>\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 1 - \\dfrac{ 1 }{ (x - 4)^2 } \\end{aligned}<br><br>At a stationary point, the gradient $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 0$. Setting the derivative to $0$ and solving for $x$:<br>\\begin{aligned} 1 - \\dfrac{ 1 }{ (x - 4)^2 } &= 0 \\cr \\dfrac{ 1 }{ (x - 4)^2 } &= 1 \\cr (x - 4)^2 &= 1 \\cr x - 4 &= \\pm 1 \\end{aligned}<br><br>This gives two possible values for $x$:<br>\\begin{aligned} x - 4 = 1 &\\implies x = 5 \\cr x - 4 = -1 &\\implies x = 3 \\end{aligned}<br><br>Now, we find the corresponding $y$-coordinates by substituting these values back into the original curve equation:<br><br>For $x = 5$:<br>\\begin{aligned} y &= 5 - 3 + \\dfrac{ 1 }{ 5 - 4 } \\cr &= 2 + 1 \\cr &= 3 \\end{aligned}<br><br>For $x = 3$:<br>\\begin{aligned} y &= 3 - 3 + \\dfrac{ 1 }{ 3 - 4 } \\cr &= 0 - 1 \\cr &= -1 \\end{aligned}<br><br>Thus, the coordinates of the stationary points are $(5, 3)$ and $(3, -1)$..",
@@ -1034,7 +1034,7 @@ window.ALEVEL_QUESTIONS = [
                         "Curved Graphs",
                         "Differentiation"
                 ],
-                "img": "images/Pure/004627.png",
+                "img": "images/Pure_SVGs/004627.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>A curve has equation $y = 2x - 1 + \\dfrac{ 8 }{ x - 1 }$.<br>The curve is shown in the diagram.<br><br><strong>(i)</strong> Determine the coordinates of the stationary points on the curve.<br><strong>(ii)</strong> Determine the nature of each stationary point.<br><strong>(iii)</strong> Write down the equation of the vertical asymptote.<br><strong>(iv)</strong> Deduce the set of values of $x$ for which the curve is concave upwards.",
                 "steps": [
                         "<strong>(i) Finding the stationary points:</strong><br>To find the coordinates of the stationary points, we differentiate the curve equation $y = 2x - 1 + \\dfrac{ 8 }{ x - 1 }$ with respect to $x$.<br><br>Using the chain rule on the fraction, we get:<br>\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 2 - \\dfrac{ 8 }{ (x - 1)^2 } \\end{aligned}<br><br>At a stationary point, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 0$. Setting the derivative to $0$ and solving for $x$:<br>\\begin{aligned} 2 - \\dfrac{ 8 }{ (x - 1)^2 } &= 0 \\cr \\dfrac{ 8 }{ (x - 1)^2 } &= 2 \\cr (x - 1)^2 &= 4 \\cr x - 1 &= \\pm 2 \\end{aligned}<br><br>This yields two $x$-values:<br>\\begin{aligned} x - 1 = 2 &\\implies x = 3 \\cr x - 1 = -2 &\\implies x = -1 \\end{aligned}<br><br>Now, substitute these back into the original equation to find the corresponding $y$-coordinates:<br><br>For $x = 3$:<br>\\begin{aligned} y &= 2(3) - 1 + \\dfrac{ 8 }{ 3 - 1 } \\cr &= 5 + 4 \\cr &= 9 \\end{aligned}<br><br>For $x = -1$:<br>\\begin{aligned} y &= 2(-1) - 1 + \\dfrac{ 8 }{ -1 - 1 } \\cr &= -3 - 4 \\cr &= -7 \\end{aligned}<br><br>Thus, the coordinates of the stationary points are $(3, 9)$ and $(-1, -7)$.",
@@ -1073,7 +1073,7 @@ window.ALEVEL_QUESTIONS = [
                         "Curved Graphs",
                         "Differentiation"
                 ],
-                "img": "images/Pure/004628.png",
+                "img": "images/Pure_SVGs/004628.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>A curve has equation $y = \\dfrac{ x^2 + 3 }{ x - 1 }$.<br>The curve is shown in the diagram.<br><br><strong>(i)</strong> Express the equation of the curve in the form $y = ax + b + \\dfrac{ c }{ x - 1 }$, where $a$, $b$, and $c$ are integers.<br><strong>(ii)</strong> Determine the coordinates and nature of the stationary points on the curve.<br><strong>(iii)</strong> State the equation of the vertical asymptote.<br><strong>(iv)</strong> Deduce the set of values of $x$ for which the curve is concave upwards.",
                 "steps": [
                         "<strong>(i) Expressing the curve in the given form:</strong><br>We can rewrite the numerator $x^2 + 3$ to facilitate division by $(x - 1)$:<br>\\begin{aligned} x^2 + 3 &= (x^2 - 1) + 4 \\cr &= (x - 1)(x + 1) + 4 \\end{aligned}<br><br>Now we divide each term by $(x - 1)$:<br>\\begin{aligned} y &= \\dfrac{ (x - 1)(x + 1) + 4 }{ x - 1 } \\cr &= x + 1 + \\dfrac{ 4 }{ x - 1 } \\end{aligned}<br><br>Thus, the equation of the curve in the required form is $y = x + 1 + \\dfrac{ 4 }{ x - 1 }$, where $a = 1$, $b = 1$, and $c = 4$.",
@@ -1190,7 +1190,7 @@ window.ALEVEL_QUESTIONS = [
                         "Exponential and Logarithmic Functions and Graphs",
                         "Modelling and Applications"
                 ],
-                "img": "images/Pure/004631.png",
+                "img": "images/Pure_SVGs/004631.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>A video-sharing platform launched on 1 September 2020. The owners of the platform report the number of active users, $n$, at the start of each month. They believe that the relationship between $n$ and the number of months after launch, $t$, can be modelled by $n = a \\times 2^{kt}$, where $a$ and $k$ are constants.<br><br><strong>(i)</strong> Show that, according to the model, the graph of $\\log_{10} n$ against $t$ is a straight line.<br><strong>(ii)</strong> The diagram shows a plot of the values of $t$ and $\\log_{10} n$ for the first seven months after launch, along with a line of best fit. Use this line of best fit to find estimates of the values of $a$ and $k$.<br><strong>(iii)</strong> The owners of the platform want to estimate the date on which they would report that the platform has $250,000$ active users. Use the model to estimate this date.<br><strong>(iv)</strong> Give a reason why this model may not be appropriate for large values of $t$.",
                 "steps": [
                         "<strong>(i) Linearising the exponential model:</strong><br>We start with the exponential model equation:<br>\\begin{aligned} n &= a \\times 2^{kt} \\end{aligned}<br><br>Taking the base-$10$ logarithm of both sides:<br>\\begin{aligned} \\log_{10} n &= \\log_{10}(a \\times 2^{kt}) \\cr &= \\log_{10} a + \\log_{10}(2^{kt}) \\cr &= \\log_{10} a + kt \\log_{10} 2 \\end{aligned}<br><br>Rearranging this into the standard linear form $y = mx + c$, where $y = \\log_{10} n$ and $x = t$:<br>\\begin{aligned} \\log_{10} n &= (k \\log_{10} 2)t + \\log_{10} a \\end{aligned}<br><br>Since $k \\log_{10} 2$ and $\\log_{10} a$ are constants, this represents a linear equation in $t$. Thus, the graph of $\\log_{10} n$ against $t$ is a straight line.",

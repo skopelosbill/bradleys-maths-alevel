@@ -11,7 +11,7 @@ window.ALEVEL_QUESTIONS = [
         "Volume of Revolution",
         "Trigonometric Integration"
     ],
-    "img": "images/Pure/004801.png",
+    "img": "images/Pure_SVGs/004801.svg",
     "question": "The diagram shows a sketch of the curves $y = \\sin 3x$ and $y = \\cos 3x$ for $0 \\le x \\le \\dfrac{ \\pi }{ 2 }$. The curves intersect at the points $A$ and $B$, enclosing a region $R$.<br><br><strong>(i)</strong> Show that the x-coordinates of the points $A$ and $B$ are $\\dfrac{ \\pi }{ 12 }$ and $\\dfrac{ 5\\pi }{ 12 }$.<br><br><strong>(ii)</strong> Calculate the exact area of the region $R$.<br><br><strong>(iii)</strong> A company is designing a trophy base. The base can be modelled as the solid formed when the area bounded by the circle $x^2 + y^2 = 9$, the y-axis, and the vertical line $x = 2$ is rotated through $360^\\circ$ about the x-axis. Find the exact volume of this trophy base.",
     "steps": [
         "<strong>Part (i):</strong> To find the points of intersection of the curves $y = \\sin 3x$ and $y = \\cos 3x$, we equate them:<br>\\begin{aligned} \\sin 3x &= \\cos 3x \\cr \\dfrac{ \\sin 3x }{ \\cos 3x } &= 1 \\cr \\tan 3x &= 1 \\end{aligned}<br><br>Solve for $3x$ within the corresponding interval $0 \\le 3x \\le \\dfrac{ 3\\pi }{ 2 }$:<br>\\begin{aligned} 3x &= \\dfrac{ \\pi }{ 4 }, \\ \\dfrac{ 5\\pi }{ 4 } \\cr x &= \\dfrac{ \\pi }{ 12 }, \\ \\dfrac{ 5\\pi }{ 12 } \\end{aligned}<br>Thus, the x-coordinates of $A$ and $B$ are $\\dfrac{ \\pi }{ 12 }$ and $\\dfrac{ 5\\pi }{ 12 }$. <strong>(Shown)</strong>",
@@ -51,7 +51,7 @@ window.ALEVEL_QUESTIONS = [
         "Volume of Revolution",
         "Exponential Integration"
     ],
-    "img": "images/Pure/004802.png",
+    "img": "images/Pure_SVGs/004802.svg",
     "question": "The diagram shows the region $R$ bounded by the curves $y = x^2$ and $y = 8 - x^2$.<br><br><strong>(i)</strong> Find the coordinates of the points of intersection of the two curves.<br><br><strong>(ii)</strong> Calculate the exact area of the region $R$.<br><br><strong>(iii)</strong> The base of a stone pillar can be modelled as the solid formed when the region bounded by the curve $y = e^x$, the x-axis, the y-axis, and the vertical line $x = \\ln 3$ is rotated through $360^\\circ$ about the x-axis. Find the exact volume of this pillar base.",
     "steps": [
         "<strong>Part (i):</strong> To find the points of intersection of the curves $y = x^2$ and $y = 8 - x^2$, we equate them:<br>\\begin{aligned} x^2 &= 8 - x^2 \\cr 2x^2 &= 8 \\cr x^2 &= 4 \\cr x &= \\pm 2 \\end{aligned}<br>Substitute $x = \\pm 2$ back into $y = x^2$ to find the corresponding y-coordinates:<br>$$y = (\\pm 2)^2 = 4$$<br>Thus, the coordinates of the points of intersection are $(-2, 4)$ and $(2, 4)$.",
@@ -90,7 +90,7 @@ window.ALEVEL_QUESTIONS = [
         "Area Between Curves",
         "Volume of Revolution"
     ],
-    "img": "images/Pure/004803.png",
+    "img": "images/Pure_SVGs/004803.svg",
     "question": "The diagram shows the region $R$ bounded by the straight line $y = x$ and the curve $y = 4x - x^2$.<br><br><strong>(i)</strong> Find the coordinates of the points of intersection of the line and the curve.<br><br><strong>(ii)</strong> Calculate the exact area of the region $R$.<br><br><strong>(iii)</strong> A plastic container lid can be modelled as the solid formed when the region bounded by the curve $y = \\sqrt{x}$, the x-axis, and the vertical line $x = 4$ is rotated through $360^\\circ$ about the x-axis. Find the exact volume of the lid.",
     "steps": [
         "<strong>Part (i):</strong> To find the points of intersection of the line $y = x$ and the curve $y = 4x - x^2$, we equate them:<br>\\begin{aligned} x &= 4x - x^2 \\cr x^2 - 3x &= 0 \\cr x(x - 3) &= 0 \\end{aligned}<br>This gives $x = 0$ and $x = 3$.<br><br>Substitute these back into the linear equation $y = x$ to find the corresponding y-coordinates:<br>\\begin{aligned} \\text{When } x &= 0 \\implies y = 0 \\cr \\text{When } x &= 3 \\implies y = 3 \\end{aligned}<br>Thus, the coordinates of the points of intersection are $(0, 0)$ and $(3, 3)$.",

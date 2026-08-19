@@ -11,7 +11,7 @@ window.ALEVEL_QUESTIONS = [
                         "Integration",
                         "Tangents and Normals"
                 ],
-                "img": "images/Pure/004201.png",
+                "img": "images/Pure_SVGs/004201.svg",
                 "question": "The curve $C$ has equation:<br>$$y = \\dfrac{6\\sin 2x}{4 - \\cos 2x}, \\quad \\text{for } x \\ge 0$$<br>1. Find the equation of the normal to the curve $C$ at the point $P\\left(\\dfrac{1}{2}\\pi, 0\\right)$.<br>2. Find the exact area of the shaded region enclosed by the curve $C$, the normal to the curve, and the $y$-axis.",
                 "steps": [
                         "Differentiate the equation of the curve using the quotient rule, where $u = 6\\sin 2x$ and $v = 4 - \\cos 2x$:<br>\\begin{aligned}\nu' &= 12\\cos 2x, \\quad v' \\cr\n&= 2\\sin 2x\n\\end{aligned}<br>We apply the quotient rule to find the derivative:<br>$$\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{12\\cos 2x(4 - \\cos 2x) - 6\\sin 2x(2\\sin 2x)}{(4 - \\cos 2x)^2} \\\\\\ &= \\dfrac{48\\cos 2x - 12\\cos^2 2x - 12\\sin^2 2x}{(4 - \\cos 2x)^2} \\\\\\ &= \\dfrac{48\\cos 2x - 12(\\cos^2 2x + \\sin^2 2x)}{(4 - \\cos 2x)^2} \\\\\\ &= \\dfrac{48\\cos 2x - 12}{(4 - \\cos 2x)^2} \\end{aligned}$$",
@@ -55,7 +55,7 @@ window.ALEVEL_QUESTIONS = [
                         "Integration",
                         "Tangents and Normals"
                 ],
-                "img": "images/Pure/004202.png",
+                "img": "images/Pure_SVGs/004202.svg",
                 "question": "The curve $C$ has equation:<br>$$y = \\dfrac{2x + 1}{x^2 + x + 2}, \\quad \\text{for } x \\ge 0$$<br>1. Show that the equation of the normal to the curve $C$ at the point $P$ where $x = 1$ is $y = 16x - \\dfrac{61}{4}$.<br>2. Find the exact area of the shaded region bounded by the curve $C$, the normal to the curve, and the $y$-axis.",
                 "steps": [
                         "Find the coordinates of the point $P$. Substitute $x = 1$ into the curve's equation:<br>\\begin{aligned}\ny &= \\dfrac{2(1) + 1}{1^2 + 1 + 2} \\cr\n&= \\dfrac{3}{4}\n\\end{aligned}<br>So the coordinates of $P$ are $\\left(1, \\dfrac{3}{4}\\right)$.",
@@ -97,7 +97,7 @@ window.ALEVEL_QUESTIONS = [
                 "subtopic": [
                         "Trigonometry"
                 ],
-                "img": "images/Pure/004203.png",
+                "img": "images/Pure_SVGs/004203.svg",
                 "question": "The curve $C$ has equation:<br>$$y = 8\\sin x \\cos^3 x, \\quad \\text{for } 0 \\le x \\le \\dfrac{1}{2}\\pi$$<br>1. Show that the equation of the normal to the curve $C$ at the point $P$ where $x = \\dfrac{1}{3}\\pi$ is $y = \\dfrac{1}{4}x - \\dfrac{1}{12}\\pi + \\dfrac{\\sqrt{3}}{2}$.<br>2. Find the exact area of the shaded region bounded by the curve $C$, the normal to the curve, and the $y$-axis.",
                 "steps": [
                         "Find the coordinates of the point $P$. Substitute $x = \\dfrac{1}{3}\\pi$ into the curve's equation:<br>\\begin{aligned}\ny &= 8\\sin\\left(\\dfrac{1}{3}\\pi\\right)\\cos^3\\left(\\dfrac{1}{3}\\pi\\right) \\cr\n&= 8\\left(\\dfrac{\\sqrt{3}}{2}\\right)\\left(\\dfrac{1}{2}\\right)^3 \\cr\n&= \\dfrac{\\sqrt{3}}{2}\n\\end{aligned}<br>The coordinates of $P$ are $\\left(\\dfrac{1}{3}\\pi, \\dfrac{\\sqrt{3}}{2}\\right)$.",
@@ -141,7 +141,7 @@ window.ALEVEL_QUESTIONS = [
                         "Integration",
                         "Tangents and Normals"
                 ],
-                "img": "images/Pure/004204.png",
+                "img": "images/Pure_SVGs/004204.svg",
                 "question": "A curve $C$ is defined parametrically by the equations:<br>$$x = \\sin t, \\quad y = \\sin 2t, \\quad \\text{for } 0 \\le t \\le \\dfrac{1}{2}\\pi$$<br>1. Find the equation of the normal to the curve $C$ at the point where $t = \\dfrac{1}{6}\\pi$.<br>2. Find the exact area of the region bounded by the curve $C$, the normal to the curve, and the $x$-axis.",
                 "steps": [
                         "Find the coordinates of the point at $t = \\dfrac{1}{6}\\pi$:<br>\\begin{aligned}\nx &= \\sin\\left(\\dfrac{1}{6}\\pi\\right) \\cr\n&= \\dfrac{1}{2}, \\quad y \\cr\n&= \\sin\\left(\\dfrac{1}{3}\\pi\\right) \\cr\n&= \\dfrac{\\sqrt{3}}{2}\n\\end{aligned}<br>The point is $\\left(\\dfrac{1}{2}, \\dfrac{\\sqrt{3}}{2}\\right)$.",
@@ -185,7 +185,7 @@ window.ALEVEL_QUESTIONS = [
                         "Integration",
                         "Tangents and Normals"
                 ],
-                "img": "images/Pure/004205.png",
+                "img": "images/Pure_SVGs/004205.svg",
                 "question": "The curve $C$ has equation:<br>$$y = 4x \\ln(2x), \\quad \\text{for } x > 0$$<br>1. Find the equation of the normal to the curve $C$ at the point $P$ where $x = \\dfrac{1}{2}e$.<br>2. Find the exact area of the region bounded by the curve $C$, the normal to the curve, and the $x$-axis.",
                 "steps": [
                         "Find the coordinates of the point $P$. Substitute $x = \\dfrac{1}{2}e$ into the curve's equation:<br>\\begin{aligned}\ny &= 4\\left(\\dfrac{1}{2}e\\right)\\ln\\left(2\\left(\\dfrac{1}{2}e\\right)\\right) \\cr\n&= 2e\\ln e \\cr\n&= 2e\n\\end{aligned}<br>So the coordinates of $P$ are $\\left(\\dfrac{1}{2}e, 2e\\right)$.",
@@ -1441,7 +1441,7 @@ window.ALEVEL_QUESTIONS = [
                         "Exponential and Logarithmic Functions and Graphs",
                         "Integration"
                 ],
-                "img": "images/Pure/004236.png",
+                "img": "images/Pure_SVGs/004236.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The curve $C$ has equation:<br>$$y = (c - x)\\ln x, \\quad \\text{where } c \\text{ is a constant } (c > 1)$$<br>The curve intersects the $x$-axis at the points $(1,0)$ and $(c,0)$.<br><br>Find, in terms of $c$, the exact area of the finite region bounded by the curve $C$ and the $x$-axis.",
                 "steps": [
                         "The curve intersects the $x$-axis at the boundaries $x = 1$ and $x = c$. To find the exact area, set up the definite integral of the function over this interval:<br>$$A = \\int_{1}^{c} (c - x)\\ln x \\,\\text{d}x$$<br>We can split this into two separate integrals to simplify the integration by parts:<br>\\begin{aligned}\nA &= c \\int_{1}^{c} \\ln x \\,\\text{d}x - \\int_{1}^{c} x\\ln x \\,\\text{d}x \\cr\n&= c I_1 - I_2\n\\end{aligned}",
@@ -1483,7 +1483,7 @@ window.ALEVEL_QUESTIONS = [
                         "Exponential and Logarithmic Functions and Graphs",
                         "Integration"
                 ],
-                "img": "images/Pure/004237.png",
+                "img": "images/Pure_SVGs/004237.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = 3x^2 \\ln x$. The finite region $R$ is bounded by the curve, the $x$-axis, and the vertical lines $x = 1$ and $x = e$.<br><br>Find the exact area of the region $R$.",
                 "steps": [
                         "Set up the definite integral for the area bounded by the curve, $x = 1$, and $x = e$:<br>\\begin{aligned}\nA &= \\int_{1}^{e} 3x^2 \\ln x \\,\\text{d}x \\cr\n&= 3 \\int_{1}^{e} x^2 \\ln x \\,\\text{d}x\n\\end{aligned}",
@@ -1523,7 +1523,7 @@ window.ALEVEL_QUESTIONS = [
                         "Exponential and Logarithmic Functions and Graphs",
                         "Integration"
                 ],
-                "img": "images/Pure/004238.png",
+                "img": "images/Pure_SVGs/004238.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The curve has equation:<br>$$y = (x - 2)e^{-x}$$<br>1. Show that the curve intersects the $x$-axis at the point $(2,0)$.<br>2. The finite region $R$ is bounded by the curve, the $x$-axis, and the vertical line $x = 4$. Find the exact area of the region $R$.",
                 "steps": [
                         "Find the $x$-intercept by setting $y = 0$:<br>$$(x - 2)e^{-x} = 0$$<br>Since $e^{-x} \\ne 0$ for all real $x$, we must have:<br>\\begin{aligned}\nx - 2 &= 0 \\cr\nx &= 2\n\\end{aligned}<br>This confirms the curve intersects the $x$-axis at the point $(2,0)$.",
@@ -1562,7 +1562,7 @@ window.ALEVEL_QUESTIONS = [
                 "subtopic": [
                         "Trigonometry"
                 ],
-                "img": "images/Pure/004239.png",
+                "img": "images/Pure_SVGs/004239.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = x \\cos x$. The finite region $R$ is bounded by the curve, the $x$-axis, and the vertical lines $x = 0$ and $x = \\dfrac{1}{2}\\pi$.<br><br>Find the exact area of the region $R$.",
                 "steps": [
                         "Set up the definite integral for the area under the curve from $x = 0$ to $x = \\dfrac{1}{2}\\pi$:<br>$$A = \\int_{0}^{\\frac{1}{2}\\pi} x \\cos x \\,\\text{d}x$$",
@@ -1601,7 +1601,7 @@ window.ALEVEL_QUESTIONS = [
                         "Integration",
                         "Tangents and Normals"
                 ],
-                "img": "images/Pure/004240.png",
+                "img": "images/Pure_SVGs/004240.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = \\ln x$ for $x > 0$.<br><br>1. Find the equation of the tangent to the curve at the point $P(e, 1)$.<br>2. Show that this tangent passes through the origin $(0,0)$.<br>3. Find the exact area of the region bounded by the curve $y = \\ln x$, the tangent at $P$, and the $x$-axis.",
                 "steps": [
                         "Find the derivative of $y = \\ln x$ to determine the gradient at $P$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{x}$$<br>At $x = e$, the gradient of the tangent is $m = \\dfrac{1}{e}$. Use the point-gradient formula with $P(e, 1)$:<br>$$\\begin{aligned} y - 1 &= \\dfrac{1}{e}(x - e) \\\\ y &= \\dfrac{1}{e}x - 1 + 1 \\\\ y &= \\dfrac{x}{e} \\end{aligned}$$",
@@ -1643,7 +1643,7 @@ window.ALEVEL_QUESTIONS = [
                         "Circle Geometry",
                         "Tangents and Normals"
                 ],
-                "img": "images/Pure/004241.png",
+                "img": "images/Pure_SVGs/004241.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The circle $C$ has equation:<br>$$(x - 2)^2 + (y - 1)^2 = 25$$<br>The point $A(6, 4)$ lies on the circle. The tangent to the circle at $A$ intersects the line $4y = 3x - 27$ at the point $D$.<br><br>1. Write down the coordinates of $C$, the centre of the circle.<br>2. Show that the line $4y = 3x - 27$ is a tangent to the circle, and find the coordinates of $B$, the point where this line touches the circle.<br>3. Prove that $ADBC$ is a square.<br>4. The point $E$ is the lowest point on the circle. Find the exact area of the sector $ECB$.",
                 "steps": [
                         "Identify the centre and the radius of the circle directly from its standard form $(x - x_0)^2 + (y - y_0)^2 = R^2$:<br>$$\\text{Centre is } C(2, 1) \\quad \\text{and} \\quad \\text{radius is } R = 5$$",
