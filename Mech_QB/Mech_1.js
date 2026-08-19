@@ -1,0 +1,197 @@
+window.ALEVEL_QUESTIONS = [
+{
+    "id": "012001",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Constant Acceleration",
+        "1D Motion"
+    ],
+    "img": false,
+    "question": "A toy train moves along a straight horizontal track. It starts from rest and reaches a speed of $4.5\\text{ cm s}^{-1}$ after $1.5\\text{ seconds}$ of constant acceleration.<br><br>Find the acceleration of the toy train in $\\text{m s}^{-2}$.",
+    "steps": [
+        "First, identify the initial parameters given in the question. The toy train starts from rest, which means its initial velocity is $u = 0\\text{ m s}^{ -1 }$. The time taken is $t = 1.5\\text{ s}$.",
+        "The final velocity is given in centimetres per second ($4.5\\text{ cm s}^{ -1 }$). Before calculating the acceleration in $\\text{m s}^{ -2 }$, we must convert this velocity into metres per second ($\\text{m s}^{ -1 }$) by dividing by $100$:<br><br>$$v = \\dfrac{ 4.5 }{ 100 } = 0.045\\text{ m s}^{ -1 }$$",
+        "Next, recall the constant acceleration formula that connects $u$, $v$, $a$, and $t$:<br><br>$$v = u + at$$",
+        "Substitute the values $u = 0$, $v = 0.045$, and $t = 1.5$ into the formula and solve for $a$:<br><br>\\begin{aligned} 0.045 &= 0 + a(1.5) \\cr 0.045 &= 1.5a \\cr a &= \\dfrac{ 0.045 }{ 1.5 } \\cr a &= 0.03\\text{ m s}^{ -2 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$3.0\\text{ m s}^{ -2 }$$",
+            "feedback": "This error occurs if you do not convert the units of the final speed from $\\text{cm s}^{ -1 }$ to $\\text{m s}^{ -1 }$. Always convert your units to standard SI units before applying kinematic equations."
+        },
+        {
+            "ans": "$$0.3\\text{ m s}^{ -2 }$$",
+            "feedback": "This represents a unit conversion error where you divided the velocity by $10$ instead of $100$. Remember that there are $100\\text{ cm}$ in $1\\text{ metre}$."
+        },
+        {
+            "ans": "$$0.003\\text{ m s}^{ -2 }$$",
+            "feedback": "This error arises from dividing the velocity by $1000$ instead of $100$ during unit conversion. Ensure you check the conversion factor between centimetres and metres."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Unit Conversion Trap",
+        "content": "A classic unit conversion trap. Always convert speed to SI units ($\\text{metres}$ and $\\text{seconds}$) before calculating acceleration, otherwise your final answer will be out by a factor of $100$."
+    }
+},
+{
+    "id": "012002",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Constant Acceleration",
+        "1D Motion"
+    ],
+    "img": false,
+    "question": "An insect crawls along a straight line on a wall. It accelerates at a constant rate from an initial speed of $15\\text{ mm s}^{-1}$ to a final speed of $45\\text{ mm s}^{-1}$ in a time interval of $2.5\\text{ seconds}$.<br><br>Find the acceleration of the insect in $\\text{m s}^{-2}$.",
+    "steps": [
+        "Identify the given parameters from the problem: the initial velocity $u = 15\\text{ mm s}^{ -1 }$, the final velocity $v = 45\\text{ mm s}^{ -1 }$, and the time interval $t = 2.5\\text{ s}$.",
+        "Convert the velocities from millimetres per second ($\\text{mm s}^{ -1 }$) to the SI unit of metres per second ($\\text{m s}^{ -1 }$) by dividing by $1000$:<br><br>\\begin{aligned} u &= \\dfrac{ 15 }{ 1000 } = 0.015\\text{ m s}^{ -1 } \\cr v &= \\dfrac{ 45 }{ 1000 } = 0.045\\text{ m s}^{ -1 } \\end{aligned}",
+        "Recall the constant acceleration formula linking $u$, $v$, $t$, and $a$:<br><br>$$v = u + at$$",
+        "Substitute the converted values into the formula and solve for $a$:<br><br>\\begin{aligned} 0.045 &= 0.015 + a(2.5) \\cr 0.045 - 0.015 &= 2.5a \\cr 0.030 &= 2.5a \\cr a &= \\dfrac{ 0.030 }{ 2.5 } \\cr a &= 0.012\\text{ m s}^{ -2 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$12\\text{ m s}^{ -2 }$$",
+            "feedback": "This error occurs if you completely omit the unit conversion from $\\text{mm s}^{ -1 }$ to $\\text{m s}^{ -1 }$. Always ensure all quantities are in SI units before calculation."
+        },
+        {
+            "ans": "$$0.12\\text{ m s}^{ -2 }$$",
+            "feedback": "This indicates a unit conversion error where you divided by $100$ instead of $1000$. Remember that there are $1000\\text{ mm}$ in $1\\text{ metre}$."
+        },
+        {
+            "ans": "$$0.024\\text{ m s}^{ -2 }$$",
+            "feedback": "This is a calculation slip, likely caused by using an incorrect formula or making an algebraic error when dividing."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Convert First, Calculate Later",
+        "content": "To prevent fractional/decimal slips during algebraic manipulation, convert all quantities to standard SI units ($1\\text{ mm} = 0.001\\text{ m}$) at the very start of the problem."
+    }
+},
+{
+    "id": "012003",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Constant Acceleration",
+        "Multi-Stage Motion"
+    ],
+    "img": false,
+    "question": "A model car travels in a straight line. It is initially moving at a constant speed of $24\\text{ cm s}^{-1}$ for $3\\text{ seconds}$. The brakes are then applied, and the car decelerates uniformly to rest over a distance of $0.36\\text{ metres}$.<br><br>Find the total time, in seconds, from the start of the motion until the car comes to rest.",
+    "steps": [
+        "Divide the motion into two distinct stages: the constant speed stage and the deceleration stage.",
+        "For Stage 1 (constant speed), the car travels at a speed of $24\\text{ cm s}^{ -1 }$ for a duration of $t_1 = 3\\text{ s}$. Since this duration is given, we do not need to calculate the distance of this stage to find the time, but we note $t_1 = 3\\text{ s}$.",
+        "For Stage 2 (deceleration stage), identify the parameters in SI units:<br>Initial velocity of this stage is the speed of the car when the brakes were applied, so $u = 24\\text{ cm s}^{ -1 } = 0.24\\text{ m s}^{ -1 }$.<br>The car comes to rest, so the final velocity $v = 0\\text{ m s}^{ -1 }$.<br>The deceleration distance is $s = 0.36\\text{ m}$.",
+        "To find the deceleration time ($t_2$), we use the constant acceleration kinematic formula:<br><br>$$s = \\left( \\dfrac{ u + v }{ 2 } \\right) t_2$$",
+        "Substitute the known values and solve for $t_2$:<br><br>\\begin{aligned} 0.36 &= \\left( \\dfrac{ 0.24 + 0 }{ 2 } \\right) t_2 \\cr 0.36 &= 0.12t_2 \\cr t_2 &= \\dfrac{ 0.36 }{ 0.12 } \\cr t_2 &= 3\\text{ s} \\end{aligned}",
+        "Calculate the total time, $T$, by adding the times of both stages:<br><br>\\begin{aligned} T &= t_1 + t_2 \\cr T &= 3 + 3 \\cr T &= 6.0\\text{ s} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$4.5\\text{ seconds}$$",
+            "feedback": "This occurs if you fail to convert $24\\text{ cm s}^{ -1 }$ to $0.24\\text{ m s}^{ -1 }$, which leads to an incorrect deceleration time of $1.5\\text{ s}$ instead of $3\\text{ s}$."
+        },
+        {
+            "ans": "$$9.0\\text{ seconds}$$",
+            "feedback": "This is a calculation slip where you might have doubled the deceleration time or added incorrect stage values."
+        },
+        {
+            "ans": "$$3.15\\text{ seconds}$$",
+            "feedback": "This error occurs if you do not convert the units and use the incorrect value of $24$ for $u$, giving $t_2 = 0.15\\text{ s}$, which when added to $3\\text{ s}$ yields $3.15\\text{ s}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Don't Lose a Phase",
+        "content": "Students frequently focus entirely on the deceleration stage and forget to add the initial constant velocity stage. Always read the question carefully and break multi-stage motion down into clearly labeled phases."
+    }
+},
+{
+    "id": "012004",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Constant Acceleration",
+        "1D Motion"
+    ],
+    "img": false,
+    "question": "A small ball is projected vertically upwards from a point $H$ metres above horizontal ground with an initial speed of $14.7\\text{ m s}^{-1}$. It takes $4\\text{ seconds}$ to reach the ground.<br><br>Taking $g = 9.8\\text{ m s}^{-2}$ and modelling the ball as a particle, find the value of $H$.",
+    "steps": [
+        "Let upwards be the positive direction. Identify and write down the given kinematic parameters:<br>Initial velocity $u = 14.7\\text{ m s}^{ -1 }$ (positive as it is projected upwards).<br>Acceleration $a = -g = -9.8\\text{ m s}^{ -2 }$ (negative as gravity acts downwards).<br>Time taken to reach the ground $t = 4\\text{ s}$.",
+        "We want to find the vertical displacement $s$ from the point of projection to the ground. Use the kinematic equation that relates $u$, $a$, $t$, and $s$:<br><br>$$s = ut + \\dfrac{ 1 }{ 2 } at^2$$",
+        "Substitute the known values into the equation:<br><br>\\begin{aligned} s &= (14.7)(4) + \\dfrac{ 1 }{ 2 }(-9.8)(4^2) \\cr s &= 58.8 - 4.9(16) \\cr s &= 58.8 - 78.4 \\cr s &= -19.6\\text{ m} \\end{aligned}",
+        "The vertical displacement is $-19.6\\text{ m}$, which means the ground is $19.6\\text{ m}$ below the point of projection. Since $H$ is a physical distance above the ground, it must be positive:<br><br>$$H = 19.6$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$39.2$$",
+            "feedback": "This error occurs if you use an incorrect value for acceleration or make a calculation mistake in the second term of the kinematic equation."
+        },
+        {
+            "ans": "$$78.4$$",
+            "feedback": "This represents a slip where you only calculated the displacement due to gravity ($4.9 \\times 16 = 78.4$) while completely ignoring the initial upward velocity term $ut$."
+        },
+        {
+            "ans": "$$14.7$$",
+            "feedback": "This is a distractor matching the initial projection velocity. Ensure you complete the displacement calculation rather than selecting one of the initial parameters."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Deciphering Negative Displacement",
+        "content": "A negative displacement ($s = -19.6\\text{ m}$) is a completely correct mathematical outcome! It simply indicates that the final position (the ground) lies below the reference starting point. Since $H$ represents a distance, we take the magnitude of this displacement: $H = |s| = 19.6$."
+    }
+},
+{
+    "id": "012005",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Mechanics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Variable Acceleration",
+        "Calculus"
+    ],
+    "img": false,
+    "question": "A particle moves along a straight line such that its velocity, $v\\text{ m s}^{-1}$, at time $t\\text{ seconds}$ is given by $v = \\dfrac{3}{2}t^2 - 4t + 2$, for $t \\ge 0$.<br><br>Find the magnitude of the acceleration of the particle, in $\\text{m s}^{-2}$, at the instant when the particle is first instantaneously at rest.",
+    "steps": [
+        "To find when the particle is instantaneously at rest, set the velocity function to zero ($v = 0$):<br><br>$$\\dfrac{ 3 }{ 2 } t^2 - 4t + 2 = 0$$",
+        "Multiply the entire equation by $2$ to clear the fraction, and solve the quadratic equation:<br><br>\\begin{aligned} 3t^2 - 8t + 4 &= 0 \\cr (3t - 2)(t - 2) &= 0 \\end{aligned}<br>This yields two solutions: $t = \\dfrac{ 2 }{ 3 }\\text{ s}$ and $t = 2\\text{ s}$.",
+        "The question asks for the acceleration at the instant when the particle is <strong>first</strong> instantaneously at rest, so we select the smaller positive value of time:<br><br>$$t = \\dfrac{ 2 }{ 3 }\\text{ s}$$",
+        "Next, find the acceleration function $a(t)$ by differentiating the velocity function $v(t)$ with respect to $t$:<br><br>\\begin{aligned} a &= \\dfrac{ \\mathrm{d}v }{ \\mathrm{d}t } \\cr a &= \\dfrac{ \\mathrm{d} }{ \\mathrm{d}t } \\left( \\dfrac{ 3 }{ 2 } t^2 - 4t + 2 \\right) \\cr a &= 3t - 4 \\end{aligned}",
+        "Substitute $t = \\dfrac{ 2 }{ 3 }$ into the acceleration function:<br><br>\\begin{aligned} a &= 3\\left( \\dfrac{ 2 }{ 3 } \\right) - 4 \\cr a &= 2 - 4 \\cr a &= -2\\text{ m s}^{ -2 } \\end{aligned}",
+        "The magnitude of a vector quantity is its absolute (positive) value. Therefore, the magnitude of the acceleration is:<br><br>$$|a| = 2\\text{ m s}^{ -2 }$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$4\\text{ m s}^{ -2 }$$",
+            "feedback": "This error occurs if you use the second rest time $t = 2\\text{ s}$ instead of the first ($t = \\dfrac{ 2 }{ 3 }\\text{ s}$)."
+        },
+        {
+            "ans": "$$0\\text{ m s}^{ -2 }$$",
+            "feedback": "This is a conceptual mistake confusing 'instantaneously at rest' ($v=0$) with 'minimum velocity' or 'zero acceleration'."
+        },
+        {
+            "ans": "$$1\\text{ m s}^{ -2 }$$",
+            "feedback": "This is a calculation slip, likely from an error in differentiating or substituting $t = \\dfrac{ 2 }{ 3 }$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Acceleration vs. Velocity",
+        "content": "Do not confuse 'instantaneously at rest' with 'zero acceleration'. A particle can be stationary ($v = 0$) while still accelerating ($a \\neq 0$), which is exactly what happens when it changes direction."
+    }
+}
+
+];
