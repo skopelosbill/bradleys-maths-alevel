@@ -101,71 +101,81 @@
         <h1 style="margin:0; color:#1a3d8f;">A Level Teacher Audit Mode</h1>
     </div>
 
-    <!-- DROPDOWN SELECTOR -->
-<!--    <div class="set-selector-wrapper">
-        <label for="setSelect" style="font-size:1.1rem; margin-right:10px; color:#1a3d8f;">
-            Select question set:
-        </label>
-        <select id="setSelect" class="set-selector">
-            <option value="Pure_1">Pure Set 1</option>
-            <option value="Pure_2_corrected">Pure Set 2</option>
-            <option value="Pure_3">Pure Set 3</option>
-            <option value="Pure_4">Pure Set 4</option>
-            <option value="Pure_5">Pure Set 5</option>
-            <option value="Pure_6">Pure Set 6</option>
-            <option value="Pure_7">Pure Set 7</option>
-            <option value="Pure_8">Pure Set 8</option>
-            <option value="Pure_9">Pure Set 9</option>
-            <option value="Pure_10">Pure Set 10</option>
-            <option value="Pure_11">Pure Set 11</option>
-            <option value="Pure_12">Pure Set 12</option>
-            <option value="Pure_13">Pure Set 13</option>
-            <option value="Pure_14">Pure Set 14</option>
-            <option value="Pure_15">Pure Set 15</option>
-            <option value="Pure_16">Pure Set 16</option>
-            <option value="Pure_17">Pure Set 17</option>
-            <option value="Pure_18">Pure Set 18</option>
-            <option value="Pure_19">Pure Set 19</option>
-        </select>
-    </div>
--->
+        <!-- UPDATED TWO-TIER SELECTOR -->
+    <div class="set-selector-wrapper" style="display: flex; justify-content: center; gap: 20px; align-items: center;">
+        <div>
+            <label for="subjectSelect" style="font-size:1.1rem; margin-right:10px; color:#1a3d8f;">Subject:</label>
+            <select id="subjectSelect" class="set-selector">
+                <option value="Pure_QB">Pure Maths</option>
+                <option value="Mech_QB">Mechanics</option>
+                <option value="Stats_QB">Statistics</option>
+            </select>
+        </div>
 
-<!-- DROPDOWN SELECTOR (UPDATED TO ACCESS CORRECTED_PURE SUBFOLDER) -->
-    <div class="set-selector-wrapper">
-        <label for="setSelect" style="font-size:1.1rem; margin-right:10px; color:#1a3d8f;">
-            Select question set:
-        </label>
-        <select id="setSelect" class="set-selector">
-            <option value="corrected_pure/Pure_1">Pure Set 1</option>
-            <option value="corrected_pure/Pure_2">Pure Set 2</option>
-            <option value="corrected_pure/Pure_3">Pure Set 3</option>
-            <option value="corrected_pure/Pure_4">Pure Set 4</option>
-            <option value="corrected_pure/Pure_5">Pure Set 5</option>
-            <option value="corrected_pure/Pure_6">Pure Set 6</option>
-            <option value="corrected_pure/Pure_7">Pure Set 7</option>
-            <option value="corrected_pure/Pure_8">Pure Set 8</option>
-            <option value="corrected_pure/Pure_9">Pure Set 9</option>
-            <option value="corrected_pure/Pure_10">Pure Set 10</option>
-            <option value="corrected_pure/Pure_11">Pure Set 11</option>
-            <option value="corrected_pure/Pure_12">Pure Set 12</option>
-            <option value="corrected_pure/Pure_13">Pure Set 13</option>
-            <option value="corrected_pure/Pure_14">Pure Set 14</option>
-            <option value="corrected_pure/Pure_15">Pure Set 15</option>
-            <option value="corrected_pure/Pure_16">Pure Set 16</option>
-            <option value="corrected_pure/Pure_17">Pure Set 17</option>
-            <option value="corrected_pure/Pure_18">Pure Set 18</option>
-            <option value="corrected_pure/Pure_19">Pure Set 19</option>
-        </select>
+        <div>
+            <label for="setSelect" style="font-size:1.1rem; margin-right:10px; color:#1a3d8f;">Set:</label>
+            <select id="setSelect" class="set-selector">
+                <!-- Populated by JavaScript -->
+            </select>
+        </div>
     </div>
 
+    <main id="audit-container" class="container" style="margin-top:30px;">
+        <!-- Questions will appear here -->
+    </main>
 
+    <script src="a-level-engine.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+          const subjectSelect = document.getElementById("subjectSelect");
+          const setSelect = document.getElementById("setSelect");
+
+          // Configuration for sets per subject
+          const config = {
+              "Pure_QB": { prefix: "Pure", count: 19 },
+              "Mech_QB": { prefix: "Mech", count: 19 }, // Adjust counts as you seed
+              "Stats_QB": { prefix: "Stats", count: 19 }
+          };
+
+          function populateSets() {
+              const selectedSubject = subjectSelect.value;
+              const details = config[selectedSubject];
+              
+              // Clear existing options
+              setSelect.innerHTML = "";
+
+              // Build new options
+              for (let i = 1; i <= details.count; i++) {
+                  const option = document.createElement("option");
+                  option.value = `${selectedSubject}/${details.prefix}_${i}`;
+                  option.textContent = `${details.prefix} Set ${i}`;
+                  setSelect.appendChild(option);
+              }
+
+              // Load the first set of the new subject
+              ALevelHub.loadSet(setSelect.value);
+          }
+
+          // Initial population
+          populateSets();
+
+          // Listen for subject changes
+          subjectSelect.addEventListener("change", populateSets);
+
+          // Listen for specific set changes
+          setSelect.addEventListener("change", (e) => {
+              ALevelHub.loadSet(e.target.value);
+          });
+      });
+    </script>
 
     <main id="audit-container" class="container" style="margin-top:30px;">
         <!-- A Level questions will appear here -->
     </main>
 
     <!-- ENGINE -->
-    <script src="a-level-engine.js"></script>
+  <!-- <script src="a-level-engine.js"></script>--> 
 <!--
     <script>
       document.addEventListener("DOMContentLoaded", () => {
@@ -182,11 +192,11 @@
       });
     </script>
 -->
-
+<!--
 <script>
       document.addEventListener("DOMContentLoaded", () => {
           // Initialize default dataset (New Pure Set 1) directly
-          ALevelHub.loadSet("corrected_pure/Pure_1");
+          ALevelHub.loadSet("Pure_QB/Pure_1");
 
           // Bind dropdown select listener
           const setSelect = document.getElementById("setSelect");
@@ -196,6 +206,6 @@
               });
           }
       });
-    </script>
+    </script>-->
 </body>
 </html>
