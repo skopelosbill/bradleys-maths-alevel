@@ -203,7 +203,7 @@ window.ALEVEL_QUESTIONS = [
         "Static Equilibrium",
         "Levers"
     ],
-    "img": "images/Pure/012006.png",
+    "img": "images/Mechanics_pngs/012006.png",
     "question": "A uniform rod, $AB$, has a length of $6\\text{ metres}$. The rod is resting in horizontal equilibrium on a support at its midpoint, $C$. A particle of mass $5\\text{ kg}$ is placed $0.8\\text{ metres}$ to the left of $C$. Another particle of mass $2\\text{ kg}$ is placed $y\\text{ metres}$ to the right of $C$, as shown in the diagram.<br><br>Find the value of $y$.",
     "steps": [
         "First, identify the pivot of the system. The rod is supported at its midpoint, $C$. We take moments about $C$ to eliminate the reaction force from our moments equation.",
@@ -241,7 +241,7 @@ window.ALEVEL_QUESTIONS = [
         "Static Equilibrium",
         "Uniform Rods"
     ],
-    "img": "images/Pure/012007.png",
+    "img": "images/Mechanics_pngs/012007.png",
     "question": "A uniform rod $AB$ of mass $4\\text{ kg}$ and length $6\\text{ metres}$ is resting horizontally on a support at a point $C$, where $AC = 2\\text{ metres}$. A particle of mass $6\\text{ kg}$ is attached to the rod at $A$, and another particle of mass $M\\text{ kg}$ is attached to the rod at $B$, as shown in the diagram. The rod is balanced in equilibrium.<br><br>Find the value of $M$.",
     "steps": [
         "Identify the pivot point at $C$ and calculate the distances of all forces from this pivot. Since $AC = 2\\text{ m}$ on a $6\\text{ m}$ rod, the distance from $C$ to $B$ is:<br><br>$$6 - 2 = 4\\text{ metres}$$",
@@ -280,7 +280,7 @@ window.ALEVEL_QUESTIONS = [
         "Static Equilibrium",
         "Levers"
     ],
-    "img": "images/Pure/012008.png",
+    "img": "images/Mechanics_pngs/012008.png",
     "question": "A see-saw consists of a uniform plank $AB$ of length $4\\text{ metres}$ pivot-supported at its midpoint, $C$. A child of mass $32\\text{ kg}$ sits at end $A$, and a second child of mass $40\\text{ kg}$ sits at a distance of $d$ metres from $C$ on the other side of the pivot, as shown in the diagram. The see-saw is balanced horizontally in equilibrium.<br><br>Find the value of $d$.",
     "steps": [
         "Identify the pivot at the midpoint $C$. Since the plank is uniform and pivoted at the center, its weight acts through $C$ and contributes zero moment. Since the plank has a total length of $4\\text{ m}$, the distance from $C$ to end $A$ is $2\\text{ m}$.",
@@ -318,7 +318,7 @@ window.ALEVEL_QUESTIONS = [
         "Static Equilibrium",
         "Non-Midpoint Supports"
     ],
-    "img": "images/Pure/012009.png",
+    "img": "images/Mechanics_pngs/012009.png",
     "question": "A uniform plank $AB$ of length $6\\text{ metres}$ and mass $15\\text{ kg}$ is resting horizontally in equilibrium on two supports at $C$ and $D$, where $AC = 1\\text{ metre}$ and $BD = 1\\text{ metre}$. A person of mass $75\\text{ kg}$ stands on the plank at a distance of $y$ metres from $A$, as shown in the diagram.<br><br>Given that the reaction force at support $C$ is twice the magnitude of the reaction force at support $D$, find the value of $y$.",
     "steps": [
         "First, establish vertical equilibrium by equating the total upward reaction forces to the total downward weight forces:<br><br>$$R_C + R_D = (15 + 75)g = 90g\\text{ N}$$",
@@ -357,7 +357,7 @@ window.ALEVEL_QUESTIONS = [
         "Static Equilibrium",
         "Non-Uniform Rods"
     ],
-    "img": "images/Pure/012010.png",
+    "img": "images/Mechanics_pngs/012010.png",
     "question": "A non-uniform rod $AB$ has a length of $4\\text{ metres}$ and mass $10\\text{ kg}$. The rod is resting horizontally in equilibrium on two supports at $C$ and $D$, where $AC = 1\\text{ metre}$ and $BD = 1\\text{ metre}$. The reaction force at support $C$ has magnitude $6g\\text{ Newtons}$ and the reaction force at support $D$ has magnitude $4g\\text{ Newtons}$, where $g$ is the acceleration due to gravity.<br><br>Find the distance, $\\bar{x}$, of the centre of mass of the rod, $G$, from $A$, as shown in the diagram.",
     "steps": [
         "First, verify vertical translational equilibrium to ensure our values are consistent. The total upward reaction force is $R_C + R_D = 6g + 4g = 10g\\text{ N}$, which matches the downward weight of the $10\\text{ kg}$ rod ($10g\\text{ N}$) exactly.",
