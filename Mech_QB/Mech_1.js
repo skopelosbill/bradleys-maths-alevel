@@ -192,6 +192,199 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Acceleration vs. Velocity",
         "content": "Do not confuse 'instantaneously at rest' with 'zero acceleration'. A particle can be stationary ($v = 0$) while still accelerating ($a \\neq 0$), which is exactly what happens when it changes direction."
     }
+},
+{
+    "id": "012006",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Moments",
+    "subtopic": [
+        "Static Equilibrium",
+        "Levers"
+    ],
+    "img": "images/Pure/012006.png",
+    "question": "A uniform rod, $AB$, has a length of $6\\text{ metres}$. The rod is resting in horizontal equilibrium on a support at its midpoint, $C$. A particle of mass $5\\text{ kg}$ is placed $0.8\\text{ metres}$ to the left of $C$. Another particle of mass $2\\text{ kg}$ is placed $y\\text{ metres}$ to the right of $C$, as shown in the diagram.<br><br>Find the value of $y$.",
+    "steps": [
+        "First, identify the pivot of the system. The rod is supported at its midpoint, $C$. We take moments about $C$ to eliminate the reaction force from our moments equation.",
+        "Identify the anticlockwise moments about $C$. The only force acting on the left of $C$ is the weight of the $5\\text{ kg}$ mass, which acts at a distance of $0.8\\text{ m}$:<br><br>$$\\text{Anticlockwise Moment} = 5g \\times 0.8 = 4g\\text{ N m}$$",
+        "Identify the clockwise moments about $C$. The only force acting on the right of $C$ is the weight of the $2\\text{ kg}$ mass, acting at a distance of $y\\text{ metres}$:<br><br>$$\\text{Clockwise Moment} = 2g \\times y = 2gy\\text{ N m}$$",
+        "Since the rod is uniform and supported at its midpoint, its own weight acts directly through the pivot $C$, meaning it creates zero moment. For the system to remain in static equilibrium, equate the clockwise and anticlockwise moments:<br><br>\\begin{aligned} 4g &= 2gy \\cr 4 &= 2y \\cr y &= \\dfrac{ 4 }{ 2 } \\cr y &= 2 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$1.6$$",
+            "feedback": "This error occurs if you mix up the mass or distance values from the balance formula, such as dividing by $2.5$ instead of $2$. Always ensure you pair each force with its correct distance from the pivot."
+        },
+        {
+            "ans": "$$2.4$$",
+            "feedback": "This represents an algebraic rearrangement slip. Make sure you divide the anticlockwise moment of $4g$ by the mass coefficient of $2g$, rather than multiplying them."
+        },
+        {
+            "ans": "$$1.5$$",
+            "feedback": "This is a calculation slip, likely from using an incorrect pivot distance or making an arithmetic mistake during division."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Pivot at the Midpoint",
+        "content": "Because the rod is uniform, its centre of mass lies exactly at its midpoint $C$. When the pivot is placed at the midpoint, the rod's own weight ($W$) acts directly through the pivot. Since its distance from the pivot is $0$, its moment is $W \\times 0 = 0$, simplifying the calculation to a simple two-body balance!"
+    }
+},
+{
+    "id": "012007",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Moments",
+    "subtopic": [
+        "Static Equilibrium",
+        "Uniform Rods"
+    ],
+    "img": "images/Pure/012007.png",
+    "question": "A uniform rod $AB$ of mass $4\\text{ kg}$ and length $6\\text{ metres}$ is resting horizontally on a support at a point $C$, where $AC = 2\\text{ metres}$. A particle of mass $6\\text{ kg}$ is attached to the rod at $A$, and another particle of mass $M\\text{ kg}$ is attached to the rod at $B$, as shown in the diagram. The rod is balanced in equilibrium.<br><br>Find the value of $M$.",
+    "steps": [
+        "Identify the pivot point at $C$ and calculate the distances of all forces from this pivot. Since $AC = 2\\text{ m}$ on a $6\\text{ m}$ rod, the distance from $C$ to $B$ is:<br><br>$$6 - 2 = 4\\text{ metres}$$",
+        "The rod is uniform, so its weight of $4g\\text{ Newtons}$ acts at its midpoint (which is $3\\text{ m}$ from $A$). The distance from the pivot $C$ to this midpoint is:<br><br>$$3 - 2 = 1\\text{ metre (to the right of } C)$$",
+        "Calculate the total anticlockwise moment about $C$, which is created solely by the $6\\text{ kg}$ mass at $A$ (at a distance of $2\\text{ m}$):<br><br>$$\\text{Anticlockwise Moment} = 6g \\times 2 = 12g\\text{ N m}$$",
+        "Calculate the total clockwise moments about $C$. Both the weight of the rod ($4g$ acting $1\\text{ m}$ to the right) and the mass at $B$ ($Mg$ acting $4\\text{ m}$ to the right) create clockwise moments:<br><br>$$\\text{Clockwise Moment} = (4g \\times 1) + (Mg \\times 4) = 4g + 4Mg\\text{ N m}$$",
+        "For the rod to remain in horizontal equilibrium, the sum of anticlockwise moments must equal the sum of clockwise moments about the pivot $C$. Equate and solve for $M$:<br><br>\\begin{aligned} 12g &= 4g + 4Mg \\cr 12 &= 4 + 4M \\cr 8 &= 4M \\cr M &= \\dfrac{ 8 }{ 4 } \\cr M &= 2 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$3.0$$",
+            "feedback": "This error occurs if you completely omit the weight of the rod from your clockwise moments. Because the pivot $C$ is not at the midpoint of the rod, the rod's own weight creates an active clockwise moment that must be included."
+        },
+        {
+            "ans": "$$2.5$$",
+            "feedback": "This represents a coordinate mistake where you might have placed the rod's centre of mass at $3\\text{ m}$ from the pivot $C$ instead of $3\\text{ m}$ from end $A$. Always sketch the distances clearly from the pivot point."
+        },
+        {
+            "ans": "$$1.5$$",
+            "feedback": "This is a calculation slip, likely caused by making an arithmetic error when rearranging the moments balance equation before dividing."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Don't Forget the Rod's Weight",
+        "content": "Always check if the pivot is at the midpoint of the rod. If it is not, the rod's own weight must be included as an active force in your moments equation, acting vertically downwards through its centre of mass (the midpoint for a uniform rod)."
+    }
+},
+{
+    "id": "012008",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Moments",
+    "subtopic": [
+        "Static Equilibrium",
+        "Levers"
+    ],
+    "img": "images/Pure/012008.png",
+    "question": "A see-saw consists of a uniform plank $AB$ of length $4\\text{ metres}$ pivot-supported at its midpoint, $C$. A child of mass $32\\text{ kg}$ sits at end $A$, and a second child of mass $40\\text{ kg}$ sits at a distance of $d$ metres from $C$ on the other side of the pivot, as shown in the diagram. The see-saw is balanced horizontally in equilibrium.<br><br>Find the value of $d$.",
+    "steps": [
+        "Identify the pivot at the midpoint $C$. Since the plank is uniform and pivoted at the center, its weight acts through $C$ and contributes zero moment. Since the plank has a total length of $4\\text{ m}$, the distance from $C$ to end $A$ is $2\\text{ m}$.",
+        "Calculate the anticlockwise moment about $C$ due to the $32\\text{ kg}$ child sitting at $A$:<br><br>$$\\text{Anticlockwise Moment} = 32g \\times 2 = 64g\\text{ N m}$$",
+        "Calculate the clockwise moment about $C$ due to the $40\\text{ kg}$ child sitting at distance $d$:<br><br>$$\\text{Clockwise Moment} = 40g \\times d = 40gd\\text{ N m}$$",
+        "Set the clockwise and anticlockwise moments equal to maintain static equilibrium and solve for $d$:<br><br>\\begin{aligned} 64g &= 40gd \\cr 64 &= 40d \\cr d &= \\dfrac{ 64 }{ 40 } \\cr d &= 1.6 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$1.28$$",
+            "feedback": "This error arises from a transposition slip during division, such as dividing the mass of the second child ($40$) by the moment ($64$). Ensure you rearrange the equation carefully."
+        },
+        {
+            "ans": "$$1.5$$",
+            "feedback": "This is a general calculation slip. Double-check your division when simplifying the fraction $\\dfrac{ 64 }{ 40 }$."
+        },
+        {
+            "ans": "$$1.8$$",
+            "feedback": "This represents an arithmetic slip. Make sure you do not make division errors when converting the fraction into a decimal."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Measure From the Pivot",
+        "content": "Always ensure that the distances ($d$) used in moments calculations are measured directly from the pivot point itself, rather than from the ends of the beam or see-saw, unless specifically guided otherwise."
+    }
+},
+{
+    "id": "012009",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Moments",
+    "subtopic": [
+        "Static Equilibrium",
+        "Non-Midpoint Supports"
+    ],
+    "img": "images/Pure/012009.png",
+    "question": "A uniform plank $AB$ of length $6\\text{ metres}$ and mass $15\\text{ kg}$ is resting horizontally in equilibrium on two supports at $C$ and $D$, where $AC = 1\\text{ metre}$ and $BD = 1\\text{ metre}$. A person of mass $75\\text{ kg}$ stands on the plank at a distance of $y$ metres from $A$, as shown in the diagram.<br><br>Given that the reaction force at support $C$ is twice the magnitude of the reaction force at support $D$, find the value of $y$.",
+    "steps": [
+        "First, establish vertical equilibrium by equating the total upward reaction forces to the total downward weight forces:<br><br>$$R_C + R_D = (15 + 75)g = 90g\\text{ N}$$",
+        "Use the given relationship $R_C = 2R_D$ to solve for the individual support reaction forces:<br><br>\\begin{aligned} 2R_D + R_D &= 90g \\cr 3R_D &= 90g \\cr R_D &= 30g\\text{ N} \\cr R_C &= 60g\\text{ N} \\end{aligned}",
+        "Next, take moments about point $A$. The clockwise moments are produced by the weight of the uniform plank (acting at its midpoint, $3\\text{ m}$ from $A$) and the person's weight (acting at distance $y$ from $A$):<br><br>$$\\text{Clockwise Moment} = (15g \\times 3) + (75g \\times y) = 45g + 75gy\\text{ N m}$$",
+        "The anticlockwise moments about $A$ are produced by the upward reactions at support $C$ ($1\\text{ m}$ from $A$) and support $D$ ($5\\text{ m}$ from $A$, since $BD = 1\\text{ m}$):<br><br>$$\\text{Anticlockwise Moment} = (R_C \\times 1) + (R_D \\times 5) = 60g(1) + 30g(5) = 210g\\text{ N m}$$",
+        "Equate the clockwise and anticlockwise moments about $A$ to solve for $y$:<br><br>\\begin{aligned} 45g + 75gy &= 210g \\cr 45 + 75y &= 210 \\cr 75y &= 165 \\cr y &= \\dfrac{ 165 }{ 75 } \\cr y &= 2.2 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$2.4$$",
+            "feedback": "This error occurs if you make an arithmetic slip when subtracting the plank's moment, or if you divide $180$ by $75$ instead of $165$. Always double-check your subtraction before dividing."
+        },
+        {
+            "ans": "$$2.5$$",
+            "feedback": "This represents a coordinate slip, likely caused by measuring the support distances incorrectly (such as treating $D$ as being $6\\text{ m}$ from $A$ instead of $5\\text{ m}$)."
+        },
+        {
+            "ans": "$$1.8$$",
+            "feedback": "This indicates a conceptual error, likely from applying the reaction force ratio backwards (setting $R_D = 2R_C$ instead of $R_C = 2R_D$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Upward Forces First",
+        "content": "When a problem features two unknown support reactions but gives a ratio between them, resolve vertical translation equilibrium ($F_{\\text{up}} = F_{\\text{down}}$) first. Finding the individual reactions at the start makes your moments equation simple and clean to solve."
+    }
+},
+{
+    "id": "012010",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Moments",
+    "subtopic": [
+        "Static Equilibrium",
+        "Non-Uniform Rods"
+    ],
+    "img": "images/Pure/012010.png",
+    "question": "A non-uniform rod $AB$ has a length of $4\\text{ metres}$ and mass $10\\text{ kg}$. The rod is resting horizontally in equilibrium on two supports at $C$ and $D$, where $AC = 1\\text{ metre}$ and $BD = 1\\text{ metre}$. The reaction force at support $C$ has magnitude $6g\\text{ Newtons}$ and the reaction force at support $D$ has magnitude $4g\\text{ Newtons}$, where $g$ is the acceleration due to gravity.<br><br>Find the distance, $\\bar{x}$, of the centre of mass of the rod, $G$, from $A$, as shown in the diagram.",
+    "steps": [
+        "First, verify vertical translational equilibrium to ensure our values are consistent. The total upward reaction force is $R_C + R_D = 6g + 4g = 10g\\text{ N}$, which matches the downward weight of the $10\\text{ kg}$ rod ($10g\\text{ N}$) exactly.",
+        "Identify the positions of the supports from $A$:<br>Support $C$ is at distance $1\\text{ m}$ from $A$.<br>Support $D$ is at distance $3\\text{ m}$ from $A$ (calculated as total length $4\\text{ m}$ minus $BD = 1\\text{ m}$)." ,
+        "Take moments about $A$. The clockwise moment is created by the weight of the rod ($10g\\text{ N}$) acting through its centre of mass $G$ at a distance of $\\bar{x}$:<br><br>$$\\text{Clockwise Moment} = 10g \\times \\bar{x}\\text{ N m}$$",
+        "The anticlockwise moments about $A$ are created by the upward reaction forces at $C$ and $D$:<br><br>$$\\text{Anticlockwise Moment} = (R_C \\times 1) + (R_D \\times 3) = 6g(1) + 4g(3) = 18g\\text{ N m}$$",
+        "Equate the clockwise and anticlockwise moments and solve for $\\bar{x}$:<br><br>\\begin{aligned} 10g\\bar{x} &= 18g \\cr 10\\bar{x} &= 18 \\cr \\bar{x} &= \\dfrac{ 18 }{ 10 } \\cr \\bar{x} &= 1.8 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$2.2$$",
+            "feedback": "This is a calculation slip, likely from applying the reaction values backwards or making a transposition error when adding the moments, which incorrectly places the centre of mass past the midpoint."
+        },
+        {
+            "ans": "$$2.0$$",
+            "feedback": "This is a conceptual error where you assumed the rod was uniform. Because the rod is non-uniform, its centre of mass does not lie at the geometric midpoint ($2\\text{ m}$)."
+        },
+        {
+            "ans": "$$1.6$$",
+            "feedback": "This represents an arithmetic error when evaluating the anticlockwise moment sum of $6g(1) + 4g(3)$. Ensure you multiply each reaction force by its proper distance from $A$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Non-Uniform Centre of Mass",
+        "content": "For a non-uniform rod, the centre of mass is not at the geometric midpoint. We model the entire weight of the rod as acting through a single point $G$ at distance $\\bar{x}$. Since the support reaction at $C$ ($6g$) is larger than at $D$ ($4g$), the centre of mass must lie closer to $C$ ($1\\text{ m}$) than to $D$ ($3\\text{ m}$), making $\\bar{x} = 1.8$ mathematically and physically consistent!"
+    }
 }
 
 ];
