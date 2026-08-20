@@ -385,6 +385,205 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Non-Uniform Centre of Mass",
         "content": "For a non-uniform rod, the centre of mass is not at the geometric midpoint. We model the entire weight of the rod as acting through a single point $G$ at distance $\\bar{x}$. Since the support reaction at $C$ ($6g$) is larger than at $D$ ($4g$), the centre of mass must lie closer to $C$ ($1\\text{ m}$) than to $D$ ($3\\text{ m}$), making $\\bar{x} = 1.8$ mathematically and physically consistent!"
     }
+},
+{
+    "id": "012011",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Velocity-Time Graphs",
+        "1D Motion"
+    ],
+    "img": "images/Mechanics_pngs/012011.png",
+    "question": "The graph shows the velocity of an object moving in a straight line over a $19\\text{-second}$ journey.<br><br><strong>(a)</strong> Find the maximum magnitude of the acceleration of the object.<br><br><strong>(b)</strong> The object is at its starting position at times $0$, $t_1$, and $t_2$ seconds. Find $t_1$ and $t_2$.",
+    "steps": [
+        "Recall that acceleration is represented by the gradient (slope) of each straight-line section of a velocity-time graph ($a = \\dfrac{ \\Delta v }{ \\Delta t }$). Calculate the acceleration of each of the six stages:<br><br>\\begin{aligned} \\text{Segment 1 } (0 \\le t \\le 3):& \\quad a = \\dfrac{ -2 - 0 }{ 3 - 0 } = -0.67\\text{ m s}^{ -2 } \\cr \\text{Segment 2 } (3 \\le t \\le 5):& \\quad a = \\dfrac{ 2 - (-2) }{ 5 - 3 } = 2\\text{ m s}^{ -2 } \\cr \\text{Segment 3 } (5 \\le t \\le 10):& \\quad a = 0\\text{ m s}^{ -2 } \\cr \\text{Segment 4 } (10 \\le t \\le 12):& \\quad a = \\dfrac{ -4 - 2 }{ 12 - 10 } = -3\\text{ m s}^{ -2 } \\cr \\text{Segment 5 } (12 \\le t \\le 15):& \\quad a = 0\\text{ m s}^{ -2 } \\cr \\text{Segment 6 } (15 \\le t \\le 19):& \\quad a = \\dfrac{ 0 - (-4) }{ 19 - 15 } = 1\\text{ m s}^{ -2 } \\end{aligned}",
+        "Identify the steepest slope by taking the absolute value (magnitude) of each gradient. The steepest section is Segment 4 (between $t = 10$ and $t = 12$) with a slope of $-3$. Thus, the maximum magnitude of acceleration is:<br><br>$$a_{\\text{max}} = 3\\text{ m s}^{ -2 }$$",
+        "For part <strong>(b)</strong>, being at the starting position means that the net displacement $s$ is zero. On a velocity-time graph, displacement is the signed area under the graph, treating areas above the time axis as positive and areas below as negative.",
+        "Calculate the displacement up to the first crossing point in Segment 2. By looking at the graph, the line crosses the axis at $t = 4$. The negative area under the axis consists of a triangle from $0$ to $3$ and a triangle from $3$ to $4$:<br><br>$$\\text{Area}_{ \\text{below} } = \\dfrac{ 1 }{ 2 }(3)(-2) + \\dfrac{ 1 }{ 2 }(1)(-2) = -4\\text{ m}$$",
+        "As the object moves from $t = 4$ to $t = 5$, it travels in the positive direction. The positive area is a triangle of base $1$ and height $2$:<br><br>$$\\text{Area}_{ \\text{above} } = \\dfrac{ 1 }{ 2 }(1)(2) = 1\\text{ m}$$<br>At $t = 5$, the displacement is $s(5) = -4 + 1 = -3\\text{ m}$.",
+        "During Segment 3 ($5 \\le t \\le 10$), the velocity is constant at $2\\text{ m s}^{-1}$. The displacement $s(t)$ increases linearly. Set the displacement equation to zero to find the first return time, $t_1$:<br><br>\\begin{aligned} s(t_1) = -3 + 2(t_1 - 5) &= 0 \\cr 2(t_1 - 5) &= 3 \\cr t_1 - 5 &= 1.5 \\cr t_1 &= 6.5\\text{ s} \\end{aligned}",
+        "At $t = 10$, the displacement is $s(10) = -3 + 2(10 - 5) = 7\\text{ m}$. In Segment 4 ($10 \\le t \\le 12$), the line crosses the axis at $t = 10.67$. The positive area from $10$ to $10.67$ is:<br><br>$$\\text{Area}_{ \\text{above} } = \\dfrac{ 1 }{ 2 }\\left( \\dfrac{ 2 }{ 3 } \\right)(2) = \\dfrac{ 2 }{ 3 }\\text{ m}$$<br>The negative area from $10.67$ to $12$ is:<br><br>$$\\text{Area}_{ \\text{below} } = \\dfrac{ 1 }{ 2 }\\left( \\dfrac{ 4 }{ 3 } \\right)(-4) = -\\dfrac{ 8 }{ 3 }\\text{ m}$$<br>Thus, the displacement at $t = 12$ is $s(12) = 7 + \\dfrac{ 2 }{ 3 } - \\dfrac{ 8 }{ 3 } = 5\\text{ m}$.",
+        "During Segment 5 ($12 \\le t \\le 15$), the velocity is constant at $-4\\text{ m s}^{-1}$. Set the displacement equation to zero in this interval to find the second return time, $t_2$:<br><br>\\begin{aligned} s(t_2) = 5 - 4(t_2 - 12) &= 0 \\cr 4(t_2 - 12) &= 5 \\cr t_2 - 12 &= 1.25 \\cr t_2 &= 13.25\\text{ s} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a_{\\text{max}} = 2\\text{ m s}^{ -2 }; \\quad t_1 = 6.5\\text{ s}, \\ t_2 = 13.25\\text{ s}$$",
+            "feedback": "This error occurs if you selected Segment 2 as the steepest part of the graph. Segment 4 actually has a steeper gradient of magnitude $3$, even though it is in the negative direction."
+        },
+        {
+            "ans": "$$a_{\\text{max}} = 3\\text{ m s}^{ -2 }; \\quad t_1 = 5.5\\text{ s}, \\ t_2 = 12.25\\text{ s}$$",
+            "feedback": "This error represents a mistake in calculating the initial negative displacement under the time axis, which shifts both crossover times by an incorrect offset."
+        },
+        {
+            "ans": "$$a_{\\text{max}} = 3\\text{ m s}^{ -2 }; \\quad t_1 = 6.5\\text{ s}, \\ t_2 = 14.5\\text{ s}$$",
+            "feedback": "This represents a calculation slip when working out the displacement at $t = 12$, leading to an incorrect duration in the subsequent constant-velocity phase."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Absolute Area vs. Signed Area",
+        "content": "To find when an object is back at its starting position, you are looking for zero displacement. This means the area above the time axis (representing forward motion) must exactly balance the area below the time axis (representing backward motion). Always treat the area under the axis as negative!"
+    }
+},
+{
+    "id": "012012",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Velocity-Time Graphs",
+        "1D Motion"
+    ],
+    "img": "images/Mechanics_pngs/012012.png",
+    "question": "A particle starts from rest and accelerates uniformly for $8\\text{ seconds}$ to a maximum velocity of $V\\text{ m s}^{-1}$. It then travels at this constant velocity for a further $15\\text{ seconds}$ before decelerating uniformly to rest in another $12\\text{ seconds}$. The total distance travelled by the particle is $300\\text{ metres}$.<br><br><strong>(a)</strong> Find the value of $V$.<br><br><strong>(b)</strong> Find the magnitude of the deceleration, in $\\text{m s}^{-2}$, during the final stage of the motion.",
+    "steps": [
+        "Sketching the motion on a velocity-time graph reveals a trapezium. The area of the trapezium represents the total distance travelled ($300\\text{ m}$).",
+        "Identify the dimensions of the trapezium:<br>The top parallel side (constant velocity phase) is $a = 15\\text{ s}$.<br>The bottom parallel side (total journey time) is $b = 8 + 15 + 12 = 35\\text{ s}$.<br>The height of the trapezium is $V$.",
+        "Use the trapezium area formula to solve for $V$:<br><br>\\begin{aligned} \\text{Area} &= \\left( \\dfrac{ a + b }{ 2 } \\right) h \\cr 300 &= \\left( \\dfrac{ 15 + 35 }{ 2 } \\right) V \\cr 300 &= 25V \\cr V &= \\dfrac{ 300 }{ 25 } \\cr V &= 12 \\end{aligned}",
+        "For part <strong>(b)</strong>, find the deceleration during the final stage. The particle decelerates from $u = 12\\text{ m s}^{-1}$ to $v = 0\\text{ m s}^{-1}$ over a time interval of $t = 12\\text{ seconds}$:<br><br>\\begin{aligned} a &= \\dfrac{ v - u }{ t } \\cr a &= \\dfrac{ 0 - 12 }{ 12 } \\cr a &= -1\\text{ m s}^{ -2 } \\end{aligned}",
+        "The magnitude of the deceleration is the positive value of this acceleration, which is $1\\text{ m s}^{-2}$ (or $1$)."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$V = 10; \\quad \\text{deceleration} = 0.833\\text{ m s}^{ -2 }$$",
+            "feedback": "This error occurs if you made a transposition slip in setting up the parallel sides of the trapezium, such as treating the bottom base as $30\\text{ s}$ instead of $35\\text{ s}$."
+        },
+        {
+            "ans": "$$V = 12; \\quad \\text{deceleration} = 1.2\\text{ m s}^{ -2 }$$",
+            "feedback": "This represents a calculation slip where you divided the maximum velocity $V$ by $10$ instead of the deceleration stage duration of $12$ seconds."
+        },
+        {
+            "ans": "$$V = 15; \\quad \\text{deceleration} = 1\\text{ m s}^{ -2 }$$",
+            "feedback": "This is a calculation slip when rearranging the trapezium area equation to find $V$ in the first step."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: The Power of Trapeziums",
+        "content": "Using the single trapezium area formula $\\text{Area} = \\dfrac{ a + b }{ 2 } h$ is far faster and less error-prone than breaking the motion down into three separate phases using SUVAT. Look for geometric short-cuts whenever possible!"
+    }
+},
+{
+    "id": "012013",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Velocity-Time Graphs",
+        "Direction Reversal"
+    ],
+    "img": "images/Mechanics_pngs/012013.png",
+    "question": "The velocity-time graph shows the motion of a particle travelling along a straight line over a $25\\text{-second}$ journey.<br><br><strong>(a)</strong> Find the total distance travelled by the particle.<br><br><strong>(b)</strong> Find the average velocity of the particle over the entire $25\\text{-second}$ journey.",
+    "steps": [
+        "Recall that total distance is the sum of the absolute (positive) areas between the velocity-time curve and the time axis, whereas displacement is the signed (resultant) area.",
+        "Calculate the area of the forward motion phase (above the time axis, $0 \\le t \\le 17.5$):<br>Triangle ($0$ to $5$): $\\dfrac{ 1 }{ 2 } \\times 5 \\times 10 = 25\\text{ m}$<br>Rectangle ($5$ to $15$): $10 \\times 10 = 100\\text{ m}$<br>Triangle ($15$ to $17.5$): $\\dfrac{ 1 }{ 2 } \\times 2.5 \\times 10 = 12.5\\text{ m}$<br><br>$$\\text{Area}_{ \\text{above} } = 25 + 100 + 12.5 = 137.5\\text{ m}$$",
+        "Calculate the area of the backward motion phase (below the time axis, $17.5 \\le t \\le 25$):<br>Triangle ($17.5$ to $20$): $\\dfrac{ 1 }{ 2 } \\times 2.5 \\times 10 = 12.5\\text{ m}$<br>Triangle ($20$ to $25$): $\\dfrac{ 1 }{ 2 } \\times 5 \\times 10 = 25\\text{ m}$<br><br>$$\\text{Area}_{ \\text{below} } = 12.5 + 25 = 37.5\\text{ m}$$",
+        "For part <strong>(a)</strong>, find the total distance by summing the magnitudes of both motion phases:<br><br>\\begin{aligned} \\text{Total Distance} &= \\text{Area}_{ \\text{above} } + \\text{Area}_{ \\text{below} } \\cr &= 137.5 + 37.5 \\cr &= 175\\text{ m} \\end{aligned}",
+        "For part <strong>(b)</strong>, recall that average velocity is defined as total displacement divided by total time. Calculate the net displacement:<br><br>$$\\text{Displacement} = 137.5 - 37.5 = 100\\text{ m}$$",
+        "Divide the net displacement by the total journey time of $25\\text{ seconds}$:<br><br>\\begin{aligned} \\text{Average Velocity} &= \\dfrac{ 100 }{ 25 } \\cr &= 4\\text{ m s}^{ -1 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\text{Distance} = 100\\text{ m}; \\quad \\text{Average Velocity} = 4\\text{ m s}^{ -1 }$$",
+            "feedback": "This error occurs if you confused total distance with displacement in part (a). Distance must sum all areas as positive values."
+        },
+        {
+            "ans": "$$\\text{Distance} = 175\\text{ m}; \\quad \\text{Average Velocity} = 7\\text{ m s}^{ -1 }$$",
+            "feedback": "This represents a conceptual mistake where you divided total distance by time to calculate average velocity (which actually yields average speed, not average velocity)."
+        },
+        {
+            "ans": "$$\\text{Distance} = 137.5\\text{ m}; \\quad \\text{Average Velocity} = 5.5\\text{ m s}^{ -1 }$$",
+            "feedback": "This error occurs if you completely ignored the backward motion phase of the journey below the time axis."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Average Velocity vs. Average Speed",
+        "content": "An important exam distinction! Average Speed is calculated using Total Distance, whereas Average Velocity uses Net Displacement. Ensure you distinguish between these scalar and vector definitions in questions with direction changes."
+    }
+},
+{
+    "id": "012014",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Velocity-Time Graphs",
+        "Multi-Stage Motion"
+    ],
+    "img": "images/Mechanics_pngs/012014.png",
+    "question": "The velocity-time graph shows the motion of two particles, $A$ and $B$, moving along the same straight horizontal road.<br><br>Particle $A$ starts from rest at $t = 0$ and accelerates uniformly to a speed of $15\\text{ m s}^{-1}$ in $6\\text{ seconds}$, before continuing at this constant speed.<br><br>Particle $B$ starts from rest from the same initial point at $t = 2$ and accelerates uniformly to a speed of $24\\text{ m s}^{-1}$ in $8\\text{ seconds}$ (reaching this speed at $t = 10$), before continuing at this constant speed.<br><br><strong>(a)</strong> Find the time $t$, in seconds, at which particle $B$ overtakes particle $A$.<br><br><strong>(b)</strong> Find the distance from the starting point when this overtaking occurs.",
+    "steps": [
+        "Note that overtaking occurs when both particles have covered the same displacement ($s_A = s_B$). Assume this occurs at some time $t > 10$, when both particles have reached their maximum constant velocities.",
+        "Set up the displacement equation for Particle $A$ at $t > 10$. The total distance is the area of the initial acceleration triangle plus the constant-velocity rectangle:<br><br>\\begin{aligned} s_A &= \\dfrac{ 1 }{ 2 }(6)(15) + 15(t - 6) \\cr s_A &= 45 + 15t - 90 \\cr s_A &= 15t - 45 \\end{aligned}",
+        "Set up the displacement equation for Particle $B$ at $t > 10$. Particle $B$ starts at $t = 2$ and reaches max speed at $t = 10$. The total distance is the initial acceleration triangle plus the constant-velocity rectangle:<br><br>\\begin{aligned} s_B &= \\dfrac{ 1 }{ 2 }(8)(24) + 24(t - 10) \\cr s_B &= 96 + 24t - 240 \\cr s_B &= 24t - 144 \\end{aligned}",
+        "Equate the two displacements to find the time of overtaking:<br><br>\\begin{aligned} 15t - 45 &= 24t - 144 \\cr 24t - 15t &= 144 - 45 \\cr 9t &= 99 \\cr t &= 11\\text{ s} \\end{aligned}",
+        "Calculate the distance from the start by substituting $t = 11$ back into the displacement equation for Particle $A$:<br><br>\\begin{aligned} s &= 15(11) - 45 \\cr s &= 165 - 45 \\cr s &= 120\\text{ m} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$t = 12.57\\text{ s}; \\quad \\text{distance} = 153.6\\text{ m}$$",
+            "feedback": "This represents a calculation error when evaluating the initial triangular area under the acceleration phase for one of the particles, leading to incorrect offset constants."
+        },
+        {
+            "ans": "$$t = 11\\text{ s}; \\quad \\text{distance} = 165\\text{ m}$$",
+            "feedback": "This error occurs if you forgot to subtract the offset of $45$ from Particle $A$'s distance equation when substituting the time $t = 11$."
+        },
+        {
+            "ans": "$$t = 9.5\\text{ s}; \\quad \\text{distance} = 105\\text{ m}$$",
+            "feedback": "This indicates a setup slip in handling the time delay for Particle $B$, which started $2\\text{ seconds}$ after Particle $A$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Validating the Time Interval",
+        "content": "When solving multi-stage overtaking problems, always verify that your calculated crossover time ($t = 11\\text{ s}$) lies within the time domain of the constant-velocity equations you used (which require $t > 10\\text{ s}$). If it had been less than $10$, you would have had to solve quadratic equations for the acceleration phases instead!"
+    }
+},
+{
+    "id": "012015",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Mechanics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Variable Acceleration",
+        "Calculus"
+    ],
+    "img": "images/Mechanics_pngs/012015.png",
+    "question": "The velocity, $v\\text{ m s}^{-1}$, of a car during a $6\\text{-second}$ test drive is modelled by the equation $v = -\\dfrac{1}{2}t^3 + 3t^2 + 8t$, where $t$ is the time in seconds.<br><br><strong>(a)</strong> Find the maximum acceleration of the car.<br><br><strong>(b)</strong> Find the total distance travelled by the car in the first $6\\text{ seconds}$ of the motion.",
+    "steps": [
+        "For part <strong>(a)</strong>, recall that acceleration is the derivative of velocity with respect to time ($a = \\dfrac{ \\mathrm{d}v }{ \\mathrm{d}t }$):<br><br>\\begin{aligned} a &= \\dfrac{ \\mathrm{d} }{ \\mathrm{d}t }\\left( -\\dfrac{ 1 }{ 2 } t^3 + 3t^2 + 8t \\right) \\cr a &= -\\dfrac{ 3 }{ 2 } t^2 + 6t + 8 \\end{aligned}",
+        "To find the maximum acceleration, find when its rate of change is zero ($\\dfrac{ \\mathrm{d}a }{ \\mathrm{d}t } = 0$):<br><br>\\begin{aligned} \\dfrac{ \\mathrm{d}a }{ \\mathrm{d}t } = -3t + 6 &= 0 \\cr -3t &= -6 \\cr t &= 2\\text{ s} \\end{aligned}",
+        "Substitute $t = 2$ back into the acceleration equation $a(t)$ to find the maximum acceleration:<br><br>\\begin{aligned} a_{\\text{max}} &= -\\dfrac{ 3 }{ 2 }(2^2) + 6(2) + 8 \\cr a_{\\text{max}} &= -6 + 12 + 8 \\cr a_{\\text{max}} &= 14\\text{ m s}^{ -2 } \\end{aligned}",
+        "For part <strong>(b)</strong>, check if the velocity curve crosses the time axis in the interval $0 \\le t \\le 6$. At $t = 6$, $v = -\\dfrac{1}{2}(6^3) + 3(6^2) + 8(6) = 48\\text{ m s}^{-1}$. Since $v(t) \\ge 0$ throughout the interval, the total distance is the definite integral of velocity from $t = 0$ to $t = 6$:<br><br>$$\\text{Distance} = \\int_{0}^{6} \\left( -\\dfrac{ 1 }{ 2 } t^3 + 3t^2 + 8t \\right) \\mathrm{d}t$$",
+        "Integrate each term individually:<br><br>\\begin{aligned} \\text{Distance} &= \\left[ -\\dfrac{ 1 }{ 8 } t^4 + t^3 + 4t^2 \\right]_{0}^{6} \\cr &= \\left( -\\dfrac{ 1296 }{ 8 } + 6^3 + 4(6^2) \\right) - 0 \\cr &= -162 + 216 + 144 \\cr &= 198\\text{ m} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a_{\\text{max}} = 14\\text{ m s}^{ -2 }; \\quad \\text{distance} = 132\\text{ m}$$",
+            "feedback": "This represents an integration slip, likely caused by making an error when finding the antiderivative coefficients or when evaluating the limits of integration."
+        },
+        {
+            "ans": "$$a_{\\text{max}} = 8\\text{ m s}^{ -2 }; \\quad \\text{distance} = 198\\text{ m}$$",
+            "feedback": "This error occurs if you took the initial acceleration at $t = 0$ ($8\\text{ m s}^{-2}$) instead of finding the maximum value of the quadratic acceleration function."
+        },
+        {
+            "ans": "$$a_{\\text{max}} = 20\\text{ m s}^{ -2 }; \\quad \\text{distance} = 162\\text{ m}$$",
+            "feedback": "This indicates a differentiation slip when finding the acceleration function, leading to an incorrect peak time and integrated distance value."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Graph Limits and Calculus",
+        "content": "Before integrating velocity directly to find distance, always check if the curve crosses the time axis (becomes negative) in your interval. If it did, you would have to find the root and integrate the positive and negative regions separately. Because our velocity remains strictly positive, integrating $v(t)$ directly yields the distance!"
+    }
 }
 
 ];
