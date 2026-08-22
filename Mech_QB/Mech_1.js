@@ -1404,6 +1404,201 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: The Trajectory Equation",
         "content": "The Cartesian trajectory equation is a highly powerful tool because it completely removes time as a variable, leaving a quadratic in $\\tan{ \\theta }$. This proves mathematically that there are almost always two possible launch angles that will hit a specific coordinate point in space!"
     }
+},
+{
+    "id": "012036",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Horizontal Towing",
+        "Newton's Laws"
+    ],
+    "img": false,
+    "question": "A tractor is pulling a heavy trailer in a straight line along a horizontal road by means of a light, inextensible connecting rope.<br><ul><li>The combined mass of the tractor and driver is $1200\\text{ kg}$.</li><li>A constant horizontal driving force of $900\\text{ N}$ and a total resistance force of $400\\text{ N}$ act on the tractor.</li><li>The mass of the trailer is $600\\text{ kg}$.</li><li>A total resistance force of $R$ Newtons acts on the trailer.</li><li>The tractor and the trailer have a constant acceleration of $0.15\\text{ m s}^{-2}$.</li></ul><br><strong>(a) (i)</strong> Find the value of $R$.<br><br><strong>(a) (ii)</strong> Find the tension in the rope.<br><br><strong>(b)</strong> State one modelling assumption that has been made about the rope.<br><br><strong>(c) (i)</strong> The trailer releases the rope at a point $A$, when it reaches a speed of $8\\text{ m s}^{-1}$. It continues to move forward, experiencing the same resistance force, until it comes to rest at a point $B$.<br><br><img src='images/Mechanics_pngs/012036.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Find the distance $AB$, in metres to three significant figures.<br><br><strong>(c) (ii)</strong> State one change that the driver will notice in the motion of the tractor immediately after the trailer releases the rope.",
+    "steps": [
+        "<strong>(a) (i) Find R:</strong><br>We can treat the tractor and trailer as a single combined system. The total mass is $1200 + 600 = 1800\\text{ kg}$. Apply Newton's Second Law ($F = ma$) in the direction of motion, noting that the tension $T$ is internal to the combined system and cancels out:<br><br>\\begin{aligned} F_{\\text{resultant}} &= m_{\\text{total}} a \\cr 900 - 400 - R &= 1800(0.15) \\cr 500 - R &= 270 \\cr R &= 500 - 270 \\cr R &= 230\\text{ N} \\end{aligned}",
+        "<strong>(a) (ii) Find the tension T:</strong><br>Now consider only the trailer as a separate body. The only horizontal forces acting on it are the tension $T$ pulling it forward and the resistance $R = 230\\text{ N}$ opposing it. Apply $F = ma$:<br><br>\\begin{aligned} T - R &= m_{\\text{trailer}} a \\cr T - 230 &= 600(0.15) \\cr T - 230 &= 90 \\cr T &= 320\\text{ N} \\end{aligned}",
+        "<strong>(b) Modelling Assumption:</strong><br>We assume that the connecting rope is: <br>1. <strong>Light</strong> (massless), which means the tension is uniform throughout its length.<br>2. <strong>Inextensible</strong> (does not stretch), which means both the tractor and trailer have the same acceleration.",
+        "<strong>(c) (i) Find the distance AB:</strong><br>When the trailer releases the rope, the tension drops to zero ($T = 0$). The only horizontal force acting on the $600\\text{ kg}$ trailer is the resistance force $R = 230\\text{ N}$. Find the new deceleration $a$:<br><br>\\begin{aligned} -R &= m_{\\text{trailer}} a \\cr -230 &= 600a \\cr a &= -\\dfrac{ 230 }{ 600 } \\approx -0.3833\\text{ m s}^{ -2 } \\end{aligned}",
+        "Use the constant acceleration formula $v^2 = u^2 + 2as$ with $u = 8\\text{ m s}^{-1}$, $v = 0$ (comes to rest), and $a = -0.3833\\text{ m s}^{-2}$ to solve for the distance $s = AB$:<br><br>\\begin{aligned} v^2 &= u^2 + 2as \\cr 0 &= 8^2 + 2(-0.3833)s \\cr 0.7667s &= 64 \\cr s &= \\dfrac{ 64 }{ 0.7667 } \\cr s &\\approx 83.5\\text{ m} \\end{aligned}",
+        "<strong>(c) (ii) Immediate Change in Tractor's Motion:</strong><br>The tractor will immediately accelerate more rapidly. This is because the backward-acting tension force ($T = 320\\text{ N}$) on the tractor is suddenly removed, which increases the horizontal resultant force acting on the tractor from $180\\text{ N}$ to $500\\text{ N}$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$R = 270\\text{ N}; \\quad T = 360\\text{ N}; \\quad AB = 75.2\\text{ m};$$<br>$$\\text{Assumption: Smooth road. Tractor will maintain a constant velocity.}$$",
+            "feedback": "This represents a calculation slip when applying Newton's Second Law to the combined system, which affects both the resistance $R$ and the tension $T$."
+        },
+        {
+            "ans": "$$R = 230\\text{ N}; \\quad T = 320\\text{ N}; \\quad AB = 95.5\\text{ m};$$<br>$$\\text{Assumption: Negligible air resistance. Tractor will decelerate immediately.}$$",
+            "feedback": "This indicates a vertical kinematic error when calculating the deceleration distance $AB$. Additionally, removing a resistive tension force causes the tractor to accelerate more rapidly, not decelerate."
+        },
+        {
+            "ans": "$$R = 230\\text{ N}; \\quad T = 320\\text{ N}; \\quad AB = 83.5\\text{ m};$$<br>$$\\text{Assumption: Elastic rope. Tractor will stop completely.}$$",
+            "feedback": "This is conceptually incorrect. In standard A-level mechanics models, ropes are modelled as inextensible, not elastic. If the rope were elastic, the bodies would not share a uniform acceleration."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Internal vs. External Forces",
+        "content": "When resolving the tractor and trailer as a single combined system, the tension $T$ becomes an internal force and cancels out. This is a highly powerful trick to find the unknown resistance $R$ directly, without solving simultaneous equations first!"
+    }
+},
+{
+    "id": "012037",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Inclined Towing",
+        "Newton's Laws"
+    ],
+    "img": false,
+    "question": "A car is towing a caravan up a rough road inclined at $8^\\circ$ to the horizontal by means of a light, inextensible tow-bar.<br><ul><li>The mass of the car is $1200\\text{ kg}$ and the mass of the caravan is $800\\text{ kg}$.</li><li>The car exerts a constant driving force of $D$ Newtons parallel to the slope.</li><li>The resistance to motion is $150\\text{ N}$ on the caravan and $250\\text{ N}$ on the car.</li><li>The car and caravan accelerate uniformly up the plane at $0.4\\text{ m s}^{-2}$.</li></ul><br><img src='images/Mechanics_pngs/012037.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><strong>(a)</strong> Find the value of $D$, giving your answer to three significant figures.<br><br><strong>(b)</strong> Find the tension, in Newtons to three significant figures, in the tow-bar as they accelerate up the plane.",
+    "steps": [
+        "<strong>(a) Find the driving force D:</strong><br>Treat the car and caravan as a single combined system. The total mass is $1200 + 800 = 2000\\text{ kg}$. The total resistance force is $150 + 250 = 400\\text{ N}$.",
+        "Calculate the component of the total weight acting down the slope:<br><br>$$W_x = m_{\\text{total}} g \\sin{ 8^\\circ } = 2000(9.8)\\sin{ 8^\\circ } \\approx 2727.8\\text{ N}$$",
+        "Apply Newton's Second Law parallel to the inclined plane (taking up the slope as positive):<br><br>\\begin{aligned} D - R_{\\text{total}} - W_x &= m_{\\text{total}} a \\cr D - 400 - 2727.8 &= 2000(0.4) \\cr D - 3127.8 &= 800 \\cr D &= 3927.8 \\cr D &\\approx 3930\\text{ N} \\end{aligned}",
+        "<strong>(b) Find the tension T:</strong><br>Consider only the caravan as a separate body. The forces acting on it parallel to the slope are: <br>1. Tension $T$ pulling it up the slope.<br>2. Caravan resistance force of $150\\text{ N}$ pulling it down.<br>3. Component of the caravan's weight acting down the slope:<br>$$W_{\\text{caravan}} = 800(9.8)\\sin{ 8^\\circ } \\approx 1091.1\\text{ N}$$",
+        "Apply $F = ma$ to the caravan up the slope:<br><br>\\begin{aligned} T - R_{\\text{caravan}} - W_{\\text{caravan}} &= m_{\\text{caravan}} a \\cr T - 150 - 1091.1 &= 800(0.4) \\cr T - 1241.1 &= 320 \\cr T &= 1561.1 \\cr T &\\approx 1560\\text{ N} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$D = 1200\\text{ N}; \\quad T = 320\\text{ N}$$",
+            "feedback": "This error occurs if you completely ignored gravity in both steps, forgetting that the vehicles are travelling up an inclined plane. You must resolve the weight component parallel to the slope."
+        },
+        {
+            "ans": "$$D = 3530\\text{ N}; \\quad T = 1410\\text{ N}$$",
+            "feedback": "This represents a calculation slip where you used an incorrect trig function (such as $\\cos{ 8^\\circ }$ instead of $\\sin{ 8^\\circ }$) when resolving the weight components parallel to the slope."
+        },
+        {
+            "ans": "$$D = 3930\\text{ N}; \\quad T = 470\\text{ N}$$",
+            "feedback": "This indicates an error in part (b). You likely omitted the caravan's weight component when resolving the caravan's forces. Both resistance and gravity oppose the upward tension force."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Inclined Connected Particles",
+        "content": "When bodies are moving on an incline, never forget to resolve their weights parallel to the slope ($mg\\sin{ \\theta }$). This weight component acts as a backward resistive force that must be added to the physical resistance forces in your $F = ma$ equations!"
+    }
+},
+{
+    "id": "012038",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Vertical Motion",
+        "Newton's Laws"
+    ],
+    "img": false,
+    "question": "A lift of mass $500\\text{ kg}$ contains a passenger of mass $80\\text{ kg}$. The lift is pulled vertically upwards by a light, inextensible cable. The lift accelerates uniformly upwards at a rate of $1.2\\text{ m s}^{-2}$.<br><br><img src='images/Mechanics_pngs/012038.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><strong>(a)</strong> Find the tension in the cable.<br><br><strong>(b)</strong> Find the normal reaction force exerted by the floor of the lift on the passenger.",
+    "steps": [
+        "<strong>(a) Find the tension in the cable:</strong><br>Treat the lift and passenger as a single combined system of total mass $500 + 80 = 580\\text{ kg}$. Apply Newton's Second Law vertically upwards:<br><br>\\begin{aligned} T - m_{\\text{total}} g &= m_{\\text{total}} a \\cr T - 580(9.8) &= 580(1.2) \\cr T - 5684 &= 696 \\cr T &= 6380\\text{ N} \\end{aligned}",
+        "<strong>(b) Find the normal reaction R:</strong><br>Consider only the passenger of mass $80\\text{ kg}$ inside the lift. The vertical forces acting on the passenger are: <br>1. Normal reaction $R$ pointing upwards from the floor.<br>2. Weight of the passenger ($80g$) pointing downwards.",
+        "Apply Newton's Second Law to the passenger vertically upwards:<br><br>\\begin{aligned} R - m_{\\text{pass}} g &= m_{\\text{pass}} a \\cr R - 80(9.8) &= 80(1.2) \\cr R - 784 &= 96 \\cr R &= 880\\text{ N} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$T = 5684\\text{ N}; \\quad R = 784\\text{ N}$$",
+            "feedback": "This represents a static error. You likely assumed the lift was stationary (or moving at constant speed), setting tension and reaction equal to the weights. Since it is accelerating, the forces must exceed the weights."
+        },
+        {
+            "ans": "$$T = 696\\text{ N}; \\quad R = 96\\text{ N}$$",
+            "feedback": "This indicates an algebraic error where you set the upward forces equal to $ma$ alone, completely omitting the gravitational weights ($mg$) from the equations."
+        },
+        {
+            "ans": "$$T = 6380\\text{ N}; \\quad R = 688\\text{ N}$$",
+            "feedback": "This is a sign error in part (b). You likely resolved the passenger's equation as $R = m(g - a)$ instead of $R = m(g + a)$. Accelerating upwards increases the normal reaction force."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Apparent Weight",
+        "content": "When accelerating vertically upwards, the normal reaction force $R = m(g+a)$ is greater than the passenger's static weight $mg$. This is why you feel heavier when a lift first starts moving upwards—your 'apparent weight' has increased!"
+    }
+},
+{
+    "id": "012039",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Pulleys",
+        "Newton's Laws"
+    ],
+    "img": false,
+    "question": "Two blocks, of mass $5\\text{ kg}$ and $3\\text{ kg}$, are connected by a light, inextensible string passing over a smooth, fixed pulley suspended from a ceiling. The blocks are released from rest.<br><br><img src='images/Mechanics_pngs/012039.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><strong>(a)</strong> Find the acceleration, in $\\text{m s}^{-2}$, of the blocks.<br><br><strong>(b)</strong> Find the tension in the string.<br><br><strong>(c)</strong> Find the force exerted by the string on the pulley.",
+    "steps": [
+        "<strong>(a) Find the acceleration:</strong><br>Let $a$ be the acceleration of the system. The heavier $5\\text{ kg}$ mass moves downwards, and the lighter $3\\text{ kg}$ mass moves upwards with the same acceleration. Write down the equation of motion for each block:",
+        "1. For the $5\\text{ kg}$ block (moving downwards):<br>$$5g - T = 5a$$<br>2. For the $3\\text{ kg}$ block (moving upwards):<br>$$T - 3g = 3a$$",
+        "Add these two equations together to eliminate $T$ and solve for $a$:<br><br>\\begin{aligned} 5g - 3g &= 8a \\cr 2g &= 8a \\cr a &= \\dfrac{ 2(9.8) }{ 8 } \\cr a &= 2.45\\text{ m s}^{ -2 } \\end{aligned}",
+        "<strong>(b) Find the tension T:</strong><br>Substitute $a = 2.45$ into the equation of motion for the $3\\text{ kg}$ block:<br><br>\\begin{aligned} T - 3g &= 3a \\cr T - 3(9.8) &= 3(2.45) \\cr T - 29.4 &= 7.35 \\cr T &= 36.75\\text{ N} \\end{aligned}",
+        "<strong>(c) Find the force exerted on the pulley:</strong><br>The string hangs down on both sides of the pulley, so there are two upward tension forces ($T$) pulling downwards on the pulley wheel. The resultant force $F$ exerted by the string on the pulley is:<br><br>\\begin{aligned} F &= 2T \\cr &= 2(36.75) \\cr &= 73.5\\text{ N} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 2.45\\text{ m s}^{ -2 }; \\quad T = 36.75\\text{ N}; \\quad F = 36.75\\text{ N}$$",
+            "feedback": "This is a common error in part (c). The string pulls downwards on the pulley from both sides, so the total force exerted on the pulley is $2T$, not $T$."
+        },
+        {
+            "ans": "$$a = 9.80\\text{ m s}^{ -2 }; \\quad T = 29.40\\text{ N}; \\quad F = 58.80\\text{ N}$$",
+            "feedback": "This represents a major error where the tension $T$ was neglected during acceleration calculations, assuming the heavier mass falls under pure gravity."
+        },
+        {
+            "ans": "$$a = 2.45\\text{ m s}^{ -2 }; \\quad T = 29.40\\text{ N}; \\quad F = 58.80\\text{ N}$$",
+            "feedback": "This represents a calculation slip in part (b) where you equated the tension $T$ to the static weight of the $3\\text{ kg}$ block, ignoring its upward acceleration."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Forces on Pulleys",
+        "content": "Students frequently make the mistake of setting the force on the pulley equal to $T$. Because the string wraps over the top and hangs down both sides, it pulls downwards with a tension $T$ on both the left and right, resulting in a total downward force of $2T$ on the pulley wheel!"
+    }
+},
+{
+    "id": "012040",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Pulleys on Inclined Planes",
+        "Static Equilibrium"
+    ],
+    "img": false,
+    "question": "A block $A$ of mass $8\\text{ kg}$ is held on a rough plane inclined at $30^\\circ$ to the horizontal. The coefficient of friction between block $A$ and the plane is $0.25$.<br><br>Block $A$ is connected by a light, inextensible string passing parallel to the line of greatest slope over a smooth pulley at the top of the incline to a hanging block $B$ of mass $M\\text{ kg}$.<br><br>Given that the system is in limiting equilibrium and block $A$ is on the point of sliding <strong>up</strong> the plane:<br><br><img src='images/Mechanics_pngs/012040.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><strong>(a)</strong> Find the normal reaction force, in Newtons to three significant figures, acting on block $A$.<br><br><strong>(b)</strong> Find the value of $M$, giving your answer to three significant figures.",
+    "steps": [
+        "<strong>(a) Find the normal reaction force acting on A:</strong><br>Resolve the forces acting on block $A$ perpendicular to the inclined plane:<br><br>\\begin{aligned} R_A &= 8g\\cos{ 30^\\circ } \\cr &= 78.4 \\times 0.86603 \\cr &\\approx 67.9\\text{ N} \\end{aligned}",
+        "<strong>(b) Find the value of M:</strong><br>First, calculate the maximum possible frictional force, $F_{\\text{max}}$, acting on block $A$:<br><br>$$F_{\\text{max}} = \\mu R_A = 0.25 \\times 67.896 = 16.974\\text{ N}$$",
+        "Because block $A$ is on the point of sliding <strong>up</strong> the plane, the frictional force opposes this motion and acts <strong>down</strong> the plane. Therefore, both friction ($F_{\\text{max}}$) and the component of weight along the slope ($8g\\sin{ 30^\\circ }$) pull block $A$ down the incline.",
+        "Apply the equilibrium condition to block $A$ parallel to the slope (tension $T$ pulling up must balance all opposing forces pulling down):<br><br>\\begin{aligned} T &= F_{\\text{max}} + 8g\\sin{ 30^\\circ } \\cr T &= 16.974 + 8(9.8)\\sin{ 30^\\circ } \\cr T &= 16.974 + 39.200 \\cr T &= 56.174\\text{ N} \\end{aligned}",
+        "Next, analyze block $B$. Since block $B$ is hanging in equilibrium, the tension $T$ in the string must be exactly balanced by its weight ($Mg$):<br><br>$$T = Mg \\implies 56.174 = M(9.8)$$",
+        "Solve for $M$:<br><br>\\begin{aligned} M &= \\dfrac{ 56.174 }{ 9.8 } \\cr M &\\approx 5.73\\text{ kg} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$R_A = 67.9\\text{ N}; \\quad M = 2.27$$",
+            "feedback": "This error occurs if you assumed block A was on the point of sliding down the plane. If it were sliding down, the friction would act up the plane ($T = 39.200 - 16.974 = 22.226\\text{ N}$), but because it is sliding up, friction acts down the plane."
+        },
+        {
+            "ans": "$$R_A = 78.4\\text{ N}; \\quad M = 4.00$$",
+            "feedback": "This is a non-inclined error. It occurs if you forgot to resolve forces parallel and perpendicular to the inclined plane, treating the table surface as if it were completely flat."
+        },
+        {
+            "ans": "$$R_A = 67.9\\text{ N}; \\quad M = 4.00$$",
+            "feedback": "This represents a calculation slip where the frictional force component was completely omitted from the tension equation in part (b)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Direction of Impending Motion",
+        "content": "In limiting equilibrium problems, always verify the direction of impending motion! Because block A is on the point of sliding up the plane, the friction force acts down the slope, opposing the tension. If it were on the point of sliding down, friction would point up the slope."
+    }
 }
 
 ];
