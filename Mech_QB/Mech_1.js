@@ -804,10 +804,10 @@ window.ALEVEL_QUESTIONS = [
     "topic": "Kinematics",
     "subtopic": [
         "Variable Acceleration",
-        "Calculus"
+        "Modelling Assumptions"
     ],
     "img": false,
-    "question": "A logistics company is road-testing two delivery vans, $X$ and $Y$, along a straight, horizontal track. Both vans start from rest. The acceleration in $\\text{m s}^{-2}$ of each van is modelled as a function of time, $t$ seconds, after the test begins:<br><br>$$\\text{Acceleration of } X = 0.108t^2$$$$\\text{Acceleration of } Y = 0.015t^3$$<br><strong>(a)</strong> Find the time taken for van $X$ to travel $150\\text{ metres}$ from its starting position. Give your answer to four significant figures.<br><br><strong>(b)</strong> The company decides to select the van which travels $150\\text{ metres}$ in the shortest time. Determine which van should be selected.",
+    "question": "A logistics company is road-testing two delivery vans, $X$ and $Y$, along a straight, horizontal track. Both vans start from rest. The acceleration in $\\text{m s}^{-2}$ of each van is modelled as a function of time, $t$ seconds, after the test begins:<br><br>$$\\text{Acceleration of } X = 0.108t^2$$$$\\text{Acceleration of } Y = 0.015t^3$$<br><strong>(a)</strong> Find the time taken for van $X$ to travel $150\\text{ metres}$ from its starting position. Give your answer to four significant figures.<br><br><strong>(b)</strong> The company decides to select the van which travels $150\\text{ metres}$ in the shortest time. Determine which van should be selected.<br><br><strong>(c)</strong> The models assume that both vans start moving immediately when $t = 0$. In light of this, explain why the company may, in reality, make the wrong decision.",
     "steps": [
         "To find the displacement equation for van $X$, we must integrate its acceleration function $a_X = 0.108t^2$ twice with respect to time $t$.",
         "First, integrate to find the velocity function $v_X(t)$. Since van $X$ starts from rest, the constant of integration is $0$:<br><br>$$v_X = \\int 0.108t^2 \\; \\mathrm{d}t = 0.036t^3$$",
@@ -815,26 +815,27 @@ window.ALEVEL_QUESTIONS = [
         "For part <strong>(a)</strong>, find the time taken to travel $150\\text{ metres}$ by setting $s_X = 150$ and solving for $t$:<br><br>\\begin{aligned} 0.009t^4 &= 150 \\cr t^4 &= \\dfrac{ 150 }{ 0.009 } \\cr t^4 &= 16666.67 \\cr t &= (16666.67)^{ \\frac{ 1 }{ 4 } } \\cr t &\\approx 11.36\\text{ s} \\end{aligned}",
         "For part <strong>(b)</strong>, repeat this double-integration process for van $Y$, starting with its acceleration function $a_Y = 0.015t^3$:<br><br>\\begin{aligned} v_Y &= \\int 0.015t^3 \\; \\mathrm{d}t = 0.00375t^4 \\cr s_Y &= \\int 0.00375t^4 \\; \\mathrm{d}t = 0.00075t^5 \\end{aligned}",
         "Find the time taken for van $Y$ to travel $150\\text{ metres}$ by setting $s_Y = 150$:<br><br>\\begin{aligned} 0.00075t^5 &= 150 \\cr t^5 &= \\dfrac{ 150 }{ 0.00075 } \\cr t^5 &= 200000 \\cr t &= (200000)^{ \\frac{ 1 }{ 5 } } \\cr t &\\approx 13.51\\text{ s} \\end{aligned}",
-        "Compare the two times: van $X$ takes $11.36\\text{ s}$ and van $Y$ takes $13.51\\text{ s}$. Since $11.36 < 13.51$, van $X$ completes the distance in the shortest time and should be selected."
+        "Compare the two times: van $X$ takes $11.36\\text{ s}$ and van $Y$ takes $13.51\\text{ s}$. Since $11.36 < 13.51$, van $X$ completes the distance in the shortest time and should be selected.",
+        "<strong>(c) Real-world Modelling Limitations:</strong><br>In reality, there will be human reaction times, engine lag, or tyre wheel spin before the vans start moving. Because the theoretical time difference between the two vans is relatively small, any minor start delay by the driver of van $X$ could mean that van $Y$ actually completes the $150\\text{ m}$ journey faster in practice, leading to the wrong purchasing decision."
     ],
     "pi_options": [
         {
-            "ans": "$$t_X = 11.36\\text{ s}; \\quad t_Y = 13.51\\text{ s}; \\quad \\text{Select Y}$$",
-            "feedback": "This error occurs if you calculated the times correctly but selected the slower van ($Y$) instead of the faster van ($X$) which completes the $150\\text{ m}$ distance in a shorter duration."
+            "ans": "$$t_X = 11.36\\text{ s}; \\quad t_Y = 13.51\\text{ s}; \\quad \\text{Select Y. Reality: Driver reaction times or wheel spin at the start could reverse the results.}$$",
+            "feedback": "This error occurs if you calculated the times correctly but selected the slower van ($Y$) instead of the faster van ($X$). Slower vehicles are not selected based on performance criteria."
         },
         {
-            "ans": "$$t_X = 12.45\\text{ s}; \\quad t_Y = 14.12\\text{ s}; \\quad \\text{Select X}$$",
-            "feedback": "This represents an integration coefficient slip during the double-integration process. Ensure you divide the coefficients correctly by the new powers ($4$ and $5$) in each step."
+            "ans": "$$t_X = 12.45\\text{ s}; \\quad t_Y = 14.12\\text{ s}; \\quad \\text{Select X. Reality: The mathematical models are completely infallible in practice.}$$",
+            "feedback": "This represents an integration coefficient slip in the first steps. Additionally, stating that mathematical models are infallible ignores real-world physical factors like reaction times or tyre wheel spin."
         },
         {
-            "ans": "$$t_X = 9.85\\text{ s}; \\quad t_Y = 11.20\\text{ s}; \\quad \\text{Select X}$$",
-            "feedback": "This indicates an algebraic error when evaluating the roots or a potential numerical slip when dividing $150$ by the displacement coefficients."
+            "ans": "$$t_X = 9.85\\text{ s}; \\quad t_Y = 11.20\\text{ s}; \\quad \\text{Select X. Reality: Human reaction times have no impact on overall travel times.}$$",
+            "feedback": "This indicates an algebraic error when evaluating the roots in part (a). Human reaction times or start delays at $t = 0$ can have a highly significant impact on short-distance races."
         }
     ],
     "bradley_insight": {
         "type": "caution",
-        "title": "The Head Teacher's Eye: Double-Integration Limits",
-        "content": "Double-integration is required to go from acceleration to displacement. Always remember that the constants of integration are $0$ in this case because the vehicles start from rest at the origin ($v=0, s=0$ when $t=0$)."
+        "title": "The Head Teacher's Eye: Real-world Limitations",
+        "content": "A-level examiners love testing modelling limitations! Real-world factors (like human reaction times, clutch delay, or wheel spin at the start) are not accounted for in simple mathematical models, which can easily reverse close theoretical decisions."
     }
 },
 {
@@ -845,35 +846,36 @@ window.ALEVEL_QUESTIONS = [
     "topic": "Kinematics",
     "subtopic": [
         "Variable Acceleration",
-        "Calculus"
+        "Modelling Assumptions"
     ],
     "img": false,
-    "question": "A model rocket is projected vertically upwards from rest on horizontal ground. For the first $20\\text{ seconds}$ of its flight, before its engines shut down, its acceleration, $a\\text{ m s}^{-2}$, at time $t$ seconds is modelled by:<br><br>$$a = 0.6t - 0.03t^2 \\quad (0 \\le t \\le 20)$$<br><strong>(a)</strong> Find the maximum velocity reached by the rocket during the first $20\\text{ seconds}$ of its flight.<br><br><strong>(b)</strong> Find the height of the rocket above the ground at the instant its engines shut down (at $t = 20$).",
+    "question": "A model rocket is projected vertically upwards from rest on horizontal ground. For the first $20\\text{ seconds}$ of its flight, before its engines shut down, its acceleration, $a\\text{ m s}^{-2}$, at time $t$ seconds is modelled by:<br><br>$$a = 0.6t - 0.03t^2 \\quad (0 \\le t \\le 20)$$<br><strong>(a)</strong> Find the maximum velocity reached by the rocket during the first $20\\text{ seconds}$ of its flight.<br><br><strong>(b)</strong> Find the height of the rocket above the ground at the instant its engines shut down (at $t = 20$).<br><br><strong>(c)</strong> State one physical factor that has been ignored in this model of the rocket's flight.",
     "steps": [
         "For part <strong>(a)</strong>, find the velocity function $v(t)$ by integrating the acceleration function $a = 0.6t - 0.03t^2$ with respect to $t$. Since the rocket starts from rest, the constant of integration is $0$:<br><br>$$v = \\int (0.6t - 0.03t^2) \\; \\mathrm{d}t = 0.3t^2 - 0.01t^3$$",
         "Maximum velocity occurs at a stationary point of $v(t)$, which is when its derivative (acceleration) is equal to zero ($a = 0$):<br><br>\\begin{aligned} 0.6t - 0.03t^2 &= 0 \\cr 0.03t(20 - t) &= 0 \\end{aligned}<br>Since $t > 0$ during the flight, this occurs at $t = 20\\text{ seconds}$ (the instant of engine shutdown).",
         "Substitute $t = 20$ into the velocity function to find the maximum velocity reached:<br><br>\\begin{aligned} v_{\\text{max}} &= 0.3(20^2) - 0.01(20^3) \\cr &= 0.3(400) - 0.01(8000) \\cr &= 120 - 80 \\cr &= 40\\text{ m s}^{ -1 } \\end{aligned}",
         "For part <strong>(b)</strong>, integrate the velocity function to find the displacement (height) function $s(t)$. Since the rocket starts from the ground, the constant of integration is $0$:<br><br>$$s = \\int (0.3t^2 - 0.01t^3) \\; \\mathrm{d}t = 0.1t^3 - 0.0025t^4$$",
-        "Substitute $t = 20$ into the displacement function to find the height when the engines shut down:<br><br>\\begin{aligned} s(20) &= 0.1(20^3) - 0.0025(20^4) \\cr &= 0.1(8000) - 0.0025(160000) \\cr &= 800 - 400 \\cr &= 400\\text{ m} \\end{aligned}"
+        "Substitute $t = 20$ into the displacement function to find the height when the engines shut down:<br><br>\\begin{aligned} s(20) &= 0.1(20^3) - 0.0025(20^4) \\cr &= 0.1(8000) - 0.0025(160000) \\cr &= 800 - 400 \\cr &= 400\\text{ m} \\end{aligned}",
+        "<strong>(c) Modelling Assumptions:</strong><br>The mathematical model for the rocket's acceleration ignores physical factors such as air resistance (drag) or the changing mass of the rocket as it burns fuel. In reality, air resistance would oppose the motion, reducing the maximum velocity and the maximum height reached."
     ],
     "pi_options": [
         {
-            "ans": "$$v_{\\text{max}} = 30\\text{ m s}^{ -1 }; \\quad \\text{height} = 400\\text{ m}$$",
+            "ans": "$$v_{\\text{max}} = 30\\text{ m s}^{ -1 }; \\quad \\text{height} = 400\\text{ m}; \\quad \\text{Ignored factor: Air resistance (drag)}$$",
             "feedback": "This error occurs if you made an arithmetic slip when evaluating the maximum velocity in part (a), even though your height integration in (b) is correct."
         },
         {
-            "ans": "$$v_{\\text{max}} = 40\\text{ m s}^{ -1 }; \\quad \\text{height} = 320\\text{ m}$$",
+            "ans": "$$v_{\\text{max}} = 40\\text{ m s}^{ -1 }; \\quad \\text{height} = 320\\text{ m}; \\quad \\text{Ignored factor: Rocket fuel mass loss}$$",
             "feedback": "This indicates an integration slip in part (b). Ensure you divide the cubic term coefficient $-0.01$ by $4$ to get the correct coefficient of $-0.0025$ for the $t^4$ term."
         },
         {
-            "ans": "$$v_{\\text{max}} = 20\\text{ m s}^{ -1 }; \\quad \\text{height} = 200\\text{ m}$$",
+            "ans": "$$v_{\\text{max}} = 20\\text{ m s}^{ -1 }; \\quad \\text{height} = 200\\text{ m}; \\quad \\text{Ignored factor: Horizontal wind forces}$$",
             "feedback": "This represents a dual-calculation error. Re-verify your integration steps for both velocity and displacement, and check your substitution values at $t = 20$."
         }
     ],
     "bradley_insight": {
-        "type": "deeper",
-        "title": "The Head Teacher's Eye: Max Velocity in Calculus",
-        "content": "In calculus-based kinematics, finding 'maximum velocity' is functionally identical to finding a 'maximum $y$' value in pure mathematics: you simply set its derivative (acceleration) to zero ($a = \\dfrac{ \\mathrm{d}v }{ \\mathrm{d}t } = 0$)."
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Modelling Assumptions",
+        "content": "AQA examiners heavily test modelling assumptions! Real-world factors (like air resistance, wind, or the changing mass of the rocket as it burns fuel) are neglected in basic kinematics, making the model's calculated velocity and height higher than they would be in reality."
     }
 },
 {
@@ -889,7 +891,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A particle moves in a straight line. At time $t$ seconds, its displacement, $s$ metres, from a fixed origin $O$ is given by:<br><br>$$s = 2t^3 - 15t^2 + 24t + 10 \quad (t \\ge 0)$$<br><strong>(a)</strong> Find the velocity of the particle at the instant when its acceleration is zero.<br><br><strong>(b)</strong> Find the range of values of $t$ for which the velocity of the particle is negative (moving back towards $O$).",
     "steps": [
-        "For part <strong>(a)</strong>, find the velocity function $v(t)$ by differentiating the displacement function $s(t)$ with respect to $t$:<br><br>$$v = \\dfrac{  \\mathrm{d}s }{  \\mathrm{d}t } = 6t^2 - 30t + 24$$",
+        "For part <strong>(a)</strong>, find the velocity function $v(t)$ by differentiating the displacement function $s(t) = 2t^3 - 15t^2 + 24t + 10$ with respect to $t$:<br><br>$$v = \\dfrac{  \\mathrm{d}s }{  \\mathrm{d}t } = 6t^2 - 30t + 24$$",
         "Next, find the acceleration function $a(t)$ by differentiating the velocity function with respect to $t$:<br><br>$$a = \\dfrac{  \\mathrm{d}v }{  \\mathrm{d}t } = 12t - 30$$",
         "Find when the acceleration is zero by setting $a(t) = 0$:<br><br>\\begin{aligned} 12t - 30 &= 0 \\cr t &= 2.5\\text{ s} \\end{aligned}",
         "Substitute $t = 2.5$ into the velocity function to find the velocity at this instant:<br><br>\\begin{aligned} v(2.5) &= 6(2.5^2) - 30(2.5) + 24 \\cr &= 6(6.25) - 75 + 24 \\cr &= 37.5 - 75 + 24 \\cr &= -13.5\\text{ m s}^{ -1 } \\end{aligned}",
