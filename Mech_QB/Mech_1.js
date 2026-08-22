@@ -1324,46 +1324,6 @@ window.ALEVEL_QUESTIONS = [
     }
 },
 {
-    "id": "012029",
-    "board": "AQA",
-    "level": "A",
-    "major_area": "Mechanics",
-    "topic": "Vectors",
-    "subtopic": [
-        "3D Coordinate Geometry",
-        "Collinearity"
-    ],
-    "img": false,
-    "question": "The points $P$, $Q$, and $R$ have position vectors relative to a fixed origin $O$ given by:<br><br>$$\\mathbf{r}_P = \\begin{pmatrix} 2 \\cr -1 \\cr 5 \\end{pmatrix}, \\quad \\mathbf{r}_Q = \\begin{pmatrix} 5 \\cr 5 \\cr -1 \\end{pmatrix}, \\quad \\mathbf{r}_R = \\begin{pmatrix} 7 \\cr 9 \\cr -5 \\end{pmatrix}$$<br><strong>(a)</strong> Show that the points $P$, $Q$, and $R$ are collinear (i.e., they lie on the same straight line).<br><br><strong>(b)</strong> Find the ratio $PQ : QR$ in which $Q$ divides the line segment $PR$.",
-    "steps": [
-        "For part <strong>(a)</strong>, find the vectors $\\vec{PQ}$ and $\\vec{QR}$ to test if they are parallel:<br><br>\\begin{aligned} \\vec{PQ} &= \\mathbf{r}_Q - \\mathbf{r}_P = \\begin{pmatrix} 5 - 2 \\cr 5 - (-1) \\cr -1 - 5 \\end{pmatrix} = \\begin{pmatrix} 3 \\cr 6 \\cr -6 \\end{pmatrix} \\cr \\vec{QR} &= \\mathbf{r}_R - \\mathbf{r}_Q = \\begin{pmatrix} 7 - 5 \\cr 9 - 5 \\cr -5 - (-1) \\end{pmatrix} = \\begin{pmatrix} 2 \\cr 4 \\cr -4 \\end{pmatrix} \\end{aligned}",
-        "Compare the two vectors to find if one is a scalar multiple of the other:<br><br>\\begin{aligned} \\vec{PQ} &= 3\\begin{pmatrix} 1 \\cr 2 \\cr -2 \\end{pmatrix} \\cr \\vec{QR} &= 2\\begin{pmatrix} 1 \\cr 2 \\cr -2 \\end{pmatrix} \\end{aligned}",
-        "This shows that the vectors are scalar multiples of each other, meaning they are parallel:<br><br>$$\\vec{PQ} = 1.5\\vec{QR} \\quad \\left( \\text{or } \\vec{QR} = \\dfrac{ 2 }{ 3 }\\vec{PQ} \\right)$$$",
-        "Since the vectors $\\vec{PQ}$ and $\\vec{QR}$ are parallel and share a common point $Q$, the three points $P$, $Q$, and $R$ must be collinear.",
-        "For part <strong>(b)</strong>, find the magnitudes of $\\vec{PQ}$ and $\\vec{QR}$ to find the division ratio:<br><br>\\begin{aligned} |\\vec{PQ}| &= \\sqrt{ 3^2 + 6^2 + (-6)^2 } = \\sqrt{ 9 + 36 + 36 } = \\sqrt{ 81 } = 9 \\cr |\\vec{QR}| &= \\sqrt{ 2^2 + 4^2 + (-4)^2 } = \\sqrt{ 4 + 16 + 16 } = \\sqrt{ 36 } = 6 \\end{aligned}",
-        "Express the ratio of the side lengths in its simplest integer form:<br><br>\\begin{aligned} PQ : QR &= 9 : 6 \\cr &= 3 : 2 \\end{aligned}"
-    ],
-    "pi_options": [
-        {
-            "ans": "$$\\vec{QR} = \\dfrac{ 3 }{ 2 }\\vec{PQ};$$<br>$$2 : 3$$",
-            "feedback": "This error occurs if you calculated the ratio backwards. The question asks for the ratio of $PQ:QR$ which simplifies to $9:6 = 3:2$, not $2:3$."
-        },
-        {
-            "ans": "$$\\vec{QR} = \\vec{PQ};$$<br>$$1 : 1$$",
-            "feedback": "This is incorrect. The point $Q$ does not divide the segment as a midpoint, as the two sub-vectors have clearly unequal magnitudes ($9$ and $6$)."
-        },
-        {
-            "ans": "$$\\vec{QR} = \\dfrac{ 1 }{ 3 }\\vec{PQ};$$<br>$$3 : 1$$",
-            "feedback": "This represents a calculation slip when comparing the scalar coefficients of the two parallel vectors."
-        }
-    ],
-    "bradley_insight": {
-        "type": "pro-tip",
-        "title": "The Head Teacher's Eye: Proving Collinearity",
-        "content": "To prove collinearity, show that one vector is a scalar multiple of the other (proving they are parallel) and state that they share a common point. The ratio of those scalar multipliers immediately gives you the division ratio!"
-    }
-},
-{
     "id": "012034",
     "board": "AQA",
     "level": "A",
