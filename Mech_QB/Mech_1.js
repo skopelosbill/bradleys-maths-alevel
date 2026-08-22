@@ -820,7 +820,7 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "$$t_X = 11.36\\text{ s}; \\quad t_Y = 13.51\\text{ s}; \\quad \\text{Select Y. Reality: Driver reaction times or wheel spin at the start could reverse the results.}$$",
+            "ans": "$$t_X = 11.36\\text{ s}; \\quad t_Y = 13.51\\text{ s};<br>\\text{Select Y.},<br>\\text{Reality: Driver reaction times or wheel spin at the start could reverse the results.}$$",
             "feedback": "This error occurs if you calculated the times correctly but selected the slower van ($Y$) instead of the faster van ($X$). Slower vehicles are not selected based on performance criteria."
         },
         {
