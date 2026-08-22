@@ -820,15 +820,15 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "$$t_X = 11.36\\text{ s}; \\quad t_Y = 13.51\\text{ s};<br>\\text{Select Y.},<br>\\text{Reality: Driver reaction times or wheel spin at the start could reverse the results.}$$",
+            "ans": "$$t_X = 11.36\\text{ s}; \\quad t_Y = 13.51\\text{ s};$$<br>Select Y.<br>Reality: Driver reaction times or wheel spin at the start could reverse the results.",
             "feedback": "This error occurs if you calculated the times correctly but selected the slower van ($Y$) instead of the faster van ($X$). Slower vehicles are not selected based on performance criteria."
         },
         {
-            "ans": "$$t_X = 12.45\\text{ s}; \\quad t_Y = 14.12\\text{ s}; \\quad \\text{Select X. Reality: The mathematical models are completely infallible in practice.}$$",
+            "ans": "$$t_X = 12.45\\text{ s}; \\quad t_Y = 14.12\\text{ s}; <br>Select X. <br>Reality: The mathematical models are completely infallible in practice.",
             "feedback": "This represents an integration coefficient slip in the first steps. Additionally, stating that mathematical models are infallible ignores real-world physical factors like reaction times or tyre wheel spin."
         },
         {
-            "ans": "$$t_X = 9.85\\text{ s}; \\quad t_Y = 11.20\\text{ s}; \\quad \\text{Select X. Reality: Human reaction times have no impact on overall travel times.}$$",
+            "ans": "$$t_X = 9.85\\text{ s}; \\quad t_Y = 11.20\\text{ s};$$ <br>Select X. <br>Reality: Human reaction times have no impact on overall travel times.}",
             "feedback": "This indicates an algebraic error when evaluating the roots in part (a). Human reaction times or start delays at $t = 0$ can have a highly significant impact on short-distance races."
         }
     ],
@@ -860,15 +860,15 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "$$v_{\\text{max}} = 30\\text{ m s}^{ -1 }; \\quad \\text{height} = 400\\text{ m}; \\quad \\text{Ignored factor: Air resistance (drag)}$$",
+            "ans": "$$v_{\\text{max}} = 30\\text{ m s}^{ -1 }; \\quad \\text{height} = 400\\text{ m};$$ <br>Ignored factor: Air resistance (drag)",
             "feedback": "This error occurs if you made an arithmetic slip when evaluating the maximum velocity in part (a), even though your height integration in (b) is correct."
         },
         {
-            "ans": "$$v_{\\text{max}} = 40\\text{ m s}^{ -1 }; \\quad \\text{height} = 320\\text{ m}; \\quad \\text{Ignored factor: Rocket fuel mass loss}$$",
+            "ans": "$$v_{\\text{max}} = 40\\text{ m s}^{ -1 }; \\quad \\text{height} = 320\\text{ m};$$ <br>Ignored factor: Rocket fuel mass loss",
             "feedback": "This indicates an integration slip in part (b). Ensure you divide the cubic term coefficient $-0.01$ by $4$ to get the correct coefficient of $-0.0025$ for the $t^4$ term."
         },
         {
-            "ans": "$$v_{\\text{max}} = 20\\text{ m s}^{ -1 }; \\quad \\text{height} = 200\\text{ m}; \\quad \\text{Ignored factor: Horizontal wind forces}$$",
+            "ans": "$$v_{\\text{max}} = 20\\text{ m s}^{ -1 }; \\quad \\text{height} = 200\\text{ m};$$ <br>Ignored factor: Horizontal wind forces",
             "feedback": "This represents a dual-calculation error. Re-verify your integration steps for both velocity and displacement, and check your substitution values at $t = 20$."
         }
     ],
