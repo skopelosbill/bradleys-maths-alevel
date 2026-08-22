@@ -828,7 +828,7 @@ window.ALEVEL_QUESTIONS = [
             "feedback": "This represents an integration coefficient slip in the first steps. Additionally, stating that mathematical models are infallible ignores real-world physical factors like reaction times or tyre wheel spin."
         },
         {
-            "ans": "$$t_X = 9.85\\text{ s}; \\quad t_Y = 11.20\\text{ s};$$ <br>$$\\texr{Select X. <br>Reality: Human reaction times have no impact on overall travel times.}$$",
+            "ans": "$$t_X = 9.85\\text{ s}; \\quad t_Y = 11.20\\text{ s};$$ <br>$$\\text{Select X. <br>Reality: Human reaction times have no impact on overall travel times.}$$",
             "feedback": "This indicates an algebraic error when evaluating the roots in part (a). Human reaction times or start delays at $t = 0$ can have a highly significant impact on short-distance races."
         }
     ],
@@ -996,6 +996,211 @@ window.ALEVEL_QUESTIONS = [
         "type": "caution",
         "title": "The Head Teacher's Eye: Boundary Constants",
         "content": "One of the most common student errors is assuming that constants of integration ($C$ and $K$) are always zero. Always solve for $C$ immediately before moving on to the next integration step."
+    }
+},
+{
+    "id": "012026",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Mechanics",
+    "topic": "Vectors",
+    "subtopic": [
+        "3D Coordinate Geometry",
+        "Vector Proofs"
+    ],
+    "img": false,
+    "question": "The vertices of a quadrilateral $ABCD$ have position vectors relative to a fixed origin $O$ given by:<br><br>$$\\mathbf{r}_A = \\begin{pmatrix} 4 \\cr 1 \\cr 2 \\end{pmatrix}, \\quad \\mathbf{r}_B = \\begin{pmatrix} 5 \\cr 4 \\cr -1 \\end{pmatrix}, \\quad \\mathbf{r}_C = \\begin{pmatrix} 2 \\cr 6 \\cr 1 \\end{pmatrix}, \\quad \\mathbf{r}_D = \\begin{pmatrix} 1 \\cr 3 \\cr 4 \\end{pmatrix}$$<br><strong>(a)</strong> Write down the vector $\\vec{AB}$ as a column vector.<br><br><strong>(b)</strong> Prove that the quadrilateral $ABCD$ is a parallelogram but not a rhombus.",
+    "steps": [
+        "For part <strong>(a)</strong>, calculate the vector $\\vec{AB}$ by subtracting the position vector of $A$ from the position vector of $B$:<br><br>\\begin{aligned} \\vec{AB} &= \\mathbf{r}_B - \\mathbf{r}_A \\cr &= \\begin{pmatrix} 5 - 4 \\cr 4 - 1 \\cr -1 - 2 \\end{pmatrix} \\cr &= \\begin{pmatrix} 1 \\cr 3 \\cr -3 \\end{pmatrix} \\end{aligned}",
+        "For part <strong>(b)</strong>, to prove that $ABCD$ is a parallelogram, we can show that the opposite sides are parallel and equal in length by calculating the vector $\\vec{DC}$:<br><br>\\begin{aligned} \\vec{DC} &= \\mathbf{r}_C - \\mathbf{r}_D \\cr &= \\begin{pmatrix} 2 - 1 \\cr 6 - 3 \\cr 1 - 4 \\end{pmatrix} \\cr &= \\begin{pmatrix} 1 \\cr 3 \\cr -3 \\end{pmatrix} \\end{aligned}",
+        "Since $\\vec{AB} = \\vec{DC}$, the opposite sides $AB$ and $DC$ are parallel and equal in length. This is sufficient to prove that the quadrilateral $ABCD$ is a parallelogram.",
+        "To determine whether the parallelogram is a rhombus, calculate the magnitudes of two adjacent sides, such as $AB$ and $BC$:",
+        "The magnitude of $\\vec{AB}$ is:<br><br>\\begin{aligned} |\\vec{AB}| &= \\sqrt{ 1^2 + 3^2 + (-3)^2 } \\cr &= \\sqrt{ 1 + 9 + 9 } \\cr &= \\sqrt{ 19 } \\end{aligned}",
+        "Find the vector $\\vec{BC}$ and calculate its magnitude:<br><br>\\begin{aligned} \\vec{BC} &= \\mathbf{r}_C - \\mathbf{r}_B \\cr &= \\begin{pmatrix} 2 - 5 \\cr 6 - 4 \\cr 1 - (-1) \\end{pmatrix} = \\begin{pmatrix} -3 \\cr 2 \\cr 2 \\end{pmatrix} \\cr |\\vec{BC}| &= \\sqrt{ (-3)^2 + 2^2 + 2^2 } \\cr &= \\sqrt{ 9 + 4 + 4 } \\cr &= \\sqrt{ 17 } \\end{aligned}",
+        "Since the adjacent sides have different lengths ($|\\vec{AB}| = \\sqrt{ 19 } \\neq \\sqrt{ 17 } = |\\vec{BC}|$), the four sides of the parallelogram are not all equal in length. Therefore, $ABCD$ is not a rhombus."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\vec{AB} = \\begin{pmatrix} 1 \\cr 3 \\cr -3 \\end{pmatrix};$$<br>$$\\text{ABCD is a parallelogram because opposite sides are equal and parallel. It is not a rhombus because adjacent sides are unequal.}$$",
+            "feedback": "This is a notation error. A rhombus requires adjacent sides to be equal in length. Since $|\\vec{AB}| = \\sqrt{19}$ and $|\\vec{BC}| = \\sqrt{17}$, they are unequal."
+        },
+        {
+            "ans": "$$\\vec{AB} = \\begin{pmatrix} 1 \\cr 3 \\cr -3 \\end{pmatrix};$$<br>$$\\text{ABCD is a rhombus because all four sides are equal, but adjacent sides are perpendicular.}$$",
+            "feedback": "This is incorrect. A rhombus does not require perpendicular adjacent sides (that would make it a square), and the adjacent side lengths are actually unequal."
+        },
+        {
+            "ans": "$$\\vec{AB} = \\begin{pmatrix} -1 \\cr -3 \\cr 3 \\end{pmatrix};$$<br>$$\\text{ABCD is a parallelogram because the opposite sides are not parallel.}$$",
+            "feedback": "This represents a vector subtraction sign error when calculating $\\vec{AB} = \\mathbf{r}_B - \\mathbf{r}_A$. Additionally, a parallelogram must have parallel opposite sides."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Proving a Parallelogram",
+        "content": "To prove a quadrilateral is a parallelogram in vector geometry, you only need to show that one pair of opposite directed vectors is equal (e.g., $\\vec{AB} = \\vec{DC}$). This single vector equality simultaneously proves they are parallel and equal in length!"
+    }
+},
+{
+    "id": "012027",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Mechanics",
+    "topic": "Vectors",
+    "subtopic": [
+        "3D Coordinate Geometry",
+        "Vector Proofs"
+    ],
+    "img": false,
+    "question": "The vertices of a quadrilateral $ABCD$ have position vectors relative to a fixed origin $O$ given by:<br><br>$$\\mathbf{r}_A = \\begin{pmatrix} 1 \\cr 2 \\cr 3 \\end{pmatrix}, \\quad \\mathbf{r}_B = \\begin{pmatrix} 3 \\cr 4 \\cr 4 \\end{pmatrix}, \\quad \\mathbf{r}_C = \\begin{pmatrix} 5 \\cr 3 \\cr 6 \\end{pmatrix}, \\quad \\mathbf{r}_D = \\begin{pmatrix} 3 \\cr 1 \\cr 5 \\end{pmatrix}$$<br><strong>(a)</strong> Write down the vector $\\vec{BC}$ as a column vector.<br><br><strong>(b)</strong> Prove that the quadrilateral $ABCD$ is a rhombus but not a square.",
+    "steps": [
+        "For part <strong>(a)</strong>, find the vector $\\vec{BC}$ by subtracting the position vector of $B$ from the position vector of $C$:<br><br>\\begin{aligned} \\vec{BC} &= \\mathbf{r}_C - \\mathbf{r}_B \\cr &= \\begin{pmatrix} 5 - 3 \\cr 3 - 4 \\cr 6 - 4 \\end{pmatrix} \\cr &= \\begin{pmatrix} 2 \\cr -1 \\cr 2 \\end{pmatrix} \\end{aligned}",
+        "For part <strong>(b)</strong>, to prove that $ABCD$ is a rhombus, first show that it is a parallelogram. Calculate the opposite directed vector $\\vec{AD}$:<br><br>\\begin{aligned} \\vec{AD} &= \\mathbf{r}_D - \\mathbf{r}_A \\cr &= \\begin{pmatrix} 3 - 1 \\cr 1 - 2 \\cr 5 - 3 \\end{pmatrix} \\cr &= \\begin{pmatrix} 2 \\cr -1 \\cr 2 \\end{pmatrix} \\end{aligned}",
+        "Since $\\vec{BC} = \\vec{AD}$, the opposite sides are parallel and equal in length, which proves that the quadrilateral $ABCD$ is a parallelogram.",
+        "Next, calculate the magnitudes of the adjacent sides $AB$ and $BC$ to determine if the side lengths are equal:",
+        "The magnitude of $\\vec{BC}$ is:<br><br>\\begin{aligned} |\\vec{BC}| &= \\sqrt{ 2^2 + (-1)^2 + 2^2 } \\cr &= \\sqrt{ 4 + 1 + 4 } \\cr &= \\sqrt{ 9 } \\cr &= 3 \\end{aligned}",
+        "Find the vector $\\vec{AB}$ and calculate its magnitude:<br><br>\\begin{aligned} \\vec{AB} &= \\mathbf{r}_B - \\mathbf{r}_A \\cr &= \\begin{pmatrix} 3 - 1 \\cr 4 - 2 \\cr 4 - 3 \\end{pmatrix} = \\begin{pmatrix} 2 \\cr 2 \\cr 1 \\end{pmatrix} \\cr |\\vec{AB}| &= \\sqrt{ 2^2 + 2^2 + 1^2 } \\cr &= \\sqrt{ 4 + 4 + 1 } \\cr &= \\sqrt{ 9 } \\cr &= 3 \\end{aligned}",
+        "Since adjacent sides have equal lengths ($|\\vec{AB}| = |\\vec{BC}| = 3$), all four sides of the parallelogram are equal in length. This proves that $ABCD$ is a rhombus.",
+        "To determine whether the rhombus is a square, calculate the dot product of the adjacent vectors $\\vec{AB}$ and $\\vec{BC}$. If they are perpendicular, the dot product will be zero:<br><br>\\begin{aligned} \\vec{AB} \\cdot \\vec{BC} &= \\begin{pmatrix} 2 \\cr 2 \\cr 1 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\cr -1 \\cr 2 \\end{pmatrix} \\cr &= 2(2) + 2(-1) + 1(2) \\cr &= 4 - 2 + 2 \\cr &= 4 \\end{aligned}",
+        "Since the dot product is not zero ($\\vec{AB} \\cdot \\vec{BC} = 4 \\neq 0$), the adjacent sides are not perpendicular. Therefore, the rhombus is not a square."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\vec{BC} = \\begin{pmatrix} 2 \\cr -1 \\cr 2 \\end{pmatrix};$$<br>$$\\text{ABCD is a square because adjacent sides are perpendicular and equal in length.}$$",
+            "feedback": "This is incorrect. The dot product of $\\vec{AB}$ and $\\vec{BC}$ is $4$, which is not zero, meaning the adjacent sides are not perpendicular and the quadrilateral is not a square."
+        },
+        {
+            "ans": "$$\\vec{BC} = \\begin{pmatrix} -2 \\cr 1 \\cr -2 \\end{pmatrix};$$<br>$$\\text{ABCD is a parallelogram but not a rhombus because adjacent sides are unequal.}$$",
+            "feedback": "This represents a vector subtraction direction error. Additionally, both adjacent sides have equal magnitudes of $3$, making it a rhombus."
+        },
+        {
+            "ans": "$$\\vec{BC} = \\begin{pmatrix} 2 \\cr -1 \\cr 2 \\end{pmatrix};$$<br>$$\\text{ABCD is a rectangle because opposite sides are equal and perpendicular.}$$",
+            "feedback": "This is conceptually incorrect. Rectangles do not require all four sides to be equal in length, and our adjacent sides are not perpendicular."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Rhombus vs. Square",
+        "content": "A rhombus is a parallelogram with four equal sides. A square is a special type of rhombus that contains a right angle. Always calculate the dot product of adjacent vectors to distinguish between them!"
+    }
+},
+{
+    "id": "012028",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Mechanics",
+    "topic": "Vectors",
+    "subtopic": [
+        "3D Coordinate Geometry",
+        "Vector Proofs"
+    ],
+    "img": false,
+    "question": "The vertices of a quadrilateral $ABCD$ have position vectors relative to a fixed origin $O$ given by:<br><br>$$\\mathbf{r}_A = \\begin{pmatrix} 2 \\cr -1 \\cr 3 \\end{pmatrix}, \\quad \\mathbf{r}_B = \\begin{pmatrix} 4 \\cr 0 \\cr 1 \\end{pmatrix}, \\quad \\mathbf{r}_C = \\begin{pmatrix} 6 \\cr 4 \\cr 5 \\end{pmatrix}, \\quad \\mathbf{r}_D = \\begin{pmatrix} 4 \\cr 3 \\cr 7 \\end{pmatrix}$$<br><strong>(a)</strong> Write down the vector $\\vec{DC}$ as a column vector.<br><br><strong>(b)</strong> Prove that the quadrilateral $ABCD$ is a rectangle but not a square.",
+    "steps": [
+        "For part <strong>(a)</strong>, find the vector $\\vec{DC}$ by subtracting the position vector of $D$ from the position vector of $C$:<br><br>\\begin{aligned} \\vec{DC} &= \\mathbf{r}_C - \\mathbf{r}_D \\cr &= \\begin{pmatrix} 6 - 4 \\cr 4 - 3 \\cr 5 - 7 \\end{pmatrix} \\cr &= \\begin{pmatrix} 2 \\cr 1 \\cr -2 \\end{pmatrix} \\end{aligned}",
+        "For part <strong>(b)</strong>, to prove $ABCD$ is a rectangle, first show it is a parallelogram. Calculate the vector $\\vec{AB}$:<br><br>\\begin{aligned} \\vec{AB} &= \\mathbf{r}_B - \\mathbf{r}_A \\cr &= \\begin{pmatrix} 4 - 2 \\cr 0 - (-1) \\cr 1 - 3 \\end{pmatrix} \\cr &= \\begin{pmatrix} 2 \\cr 1 \\cr -2 \\end{pmatrix} \\end{aligned}",
+        "Since $\\vec{AB} = \\vec{DC}$, the opposite sides are parallel and equal in length, confirming that $ABCD$ is a parallelogram.",
+        "Next, calculate the vector of the adjacent side $\\vec{BC}$:<br><br>\\begin{aligned} \\vec{BC} &= \\mathbf{r}_C - \\mathbf{r}_B \\cr &= \\begin{pmatrix} 6 - 4 \\cr 4 - 0 \\cr 5 - 1 \\end{pmatrix} \\cr &= \\begin{pmatrix} 2 \\cr 4 \\cr 4 \\end{pmatrix} \\end{aligned}",
+        "Calculate the dot product of the adjacent vectors $\\vec{AB}$ and $\\vec{BC}$ to check for perpendicularity:<br><br>\\begin{aligned} \\vec{AB} \\cdot \\vec{BC} &= \\begin{pmatrix} 2 \\cr 1 \\cr -2 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\cr 4 \\cr 4 \\end{pmatrix} \\cr &= 2(2) + 1(4) + (-2)(4) \\cr &= 4 + 4 - 8 \\cr &= 0 \\end{aligned}",
+        "Since the dot product is exactly zero ($\\vec{AB} \\cdot \\vec{BC} = 0$), the adjacent sides are perpendicular. A parallelogram with a right angle is a rectangle.",
+        "To determine if the rectangle is a square, calculate the magnitudes of the adjacent sides $AB$ and $BC$:<br><br>\\begin{aligned} |\\vec{AB}| &= \\sqrt{ 2^2 + 1^2 + (-2)^2 } = \\sqrt{ 9 } = 3 \\cr |\\vec{BC}| &= \\sqrt{ 2^2 + 4^2 + 4^2 } = \\sqrt{ 4 + 16 + 16 } = \\sqrt{ 36 } = 6 \\end{aligned}",
+        "Since adjacent sides are unequal ($|\\vec{AB}| = 3 \\neq 6 = |\\vec{BC}|$), the rectangle does not have equal sides. Therefore, $ABCD$ is not a square."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\vec{DC} = \\begin{pmatrix} 2 \\cr 1 \\cr -2 \\end{pmatrix};$$<br>$$\\text{ABCD is a square because the adjacent sides are perpendicular and equal in length.}$$",
+            "feedback": "This is incorrect. The adjacent sides actually have lengths of $3$ and $6$, which are unequal. A square must have equal adjacent side lengths."
+        },
+        {
+            "ans": "$$\\vec{DC} = \\begin{pmatrix} -2 \\cr -1 \\cr 2 \\end{pmatrix};$$<br>$$\\text{ABCD is a rectangle because opposite sides are perpendicular.}$$",
+            "feedback": "This represents a vector subtraction direction error. Additionally, opposite sides in a rectangle are parallel and equal, not perpendicular."
+        },
+        {
+            "ans": "$$\\vec{DC} = \\begin{pmatrix} 2 \\cr 1 \\cr -2 \\end{pmatrix};$$<br>$$\\text{ABCD is a rhombus because adjacent sides are equal and perpendicular.}$$",
+            "feedback": "This is conceptually incorrect. Rhombuses do not require adjacent sides to be perpendicular, and our adjacent side lengths are unequal."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Rectangle Conditions",
+        "content": "A rectangle requires the dot product of adjacent vectors to be zero (confirming a right angle). If the adjacent magnitudes were also equal, the shape would upgrade to a square."
+    }
+},
+{
+    "id": "012029",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Mechanics",
+    "topic": "Vectors",
+    "subtopic": [
+        "3D Coordinate Geometry",
+        "Collinearity"
+    ],
+    "img": false,
+    "question": "The points $P$, $Q$, and $R$ have position vectors relative to a fixed origin $O$ given by:<br><br>$$\\mathbf{r}_P = \\begin{pmatrix} 2 \\cr -1 \\cr 5 \\end{pmatrix}, \\quad \\mathbf{r}_Q = \\begin{pmatrix} 5 \\cr 5 \\cr -1 \\end{pmatrix}, \\quad \\mathbf{r}_R = \\begin{pmatrix} 7 \\cr 9 \\cr -5 \\end{pmatrix}$$<br><strong>(a)</strong> Show that the points $P$, $Q$, and $R$ are collinear (i.e., they lie on the same straight line).<br><br><strong>(b)</strong> Find the ratio $PQ : QR$ in which $Q$ divides the line segment $PR$.",
+    "steps": [
+        "For part <strong>(a)</strong>, find the vectors $\\vec{PQ}$ and $\\vec{QR}$ to test if they are parallel:<br><br>\\begin{aligned} \\vec{PQ} &= \\mathbf{r}_Q - \\mathbf{r}_P = \\begin{pmatrix} 5 - 2 \\cr 5 - (-1) \\cr -1 - 5 \\end{pmatrix} = \\begin{pmatrix} 3 \\cr 6 \\cr -6 \\end{pmatrix} \\cr \\vec{QR} &= \\mathbf{r}_R - \\mathbf{r}_Q = \\begin{pmatrix} 7 - 5 \\cr 9 - 5 \\cr -5 - (-1) \\end{pmatrix} = \\begin{pmatrix} 2 \\cr 4 \\cr -4 \\end{pmatrix} \\end{aligned}",
+        "Compare the two vectors to find if one is a scalar multiple of the other:<br><br>\\begin{aligned} \\vec{PQ} &= 3\\begin{pmatrix} 1 \\cr 2 \\cr -2 \\end{pmatrix} \\cr \\vec{QR} &= 2\\begin{pmatrix} 1 \\cr 2 \\cr -2 \\end{pmatrix} \\end{aligned}",
+        "This shows that the vectors are scalar multiples of each other, meaning they are parallel:<br><br>$$\\vec{PQ} = 1.5\\vec{QR} \\quad \\left( \\text{or } \\vec{QR} = \\dfrac{ 2 }{ 3 }\\vec{PQ} \\right)$$$",
+        "Since the vectors $\\vec{PQ}$ and $\\vec{QR}$ are parallel and share a common point $Q$, the three points $P$, $Q$, and $R$ must be collinear.",
+        "For part <strong>(b)</strong>, find the magnitudes of $\\vec{PQ}$ and $\\vec{QR}$ to find the division ratio:<br><br>\\begin{aligned} |\\vec{PQ}| &= \\sqrt{ 3^2 + 6^2 + (-6)^2 } = \\sqrt{ 9 + 36 + 36 } = \\sqrt{ 81 } = 9 \\cr |\\vec{QR}| &= \\sqrt{ 2^2 + 4^2 + (-4)^2 } = \\sqrt{ 4 + 16 + 16 } = \\sqrt{ 36 } = 6 \\end{aligned}",
+        "Express the ratio of the side lengths in its simplest integer form:<br><br>\\begin{aligned} PQ : QR &= 9 : 6 \\cr &= 3 : 2 \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\vec{QR} = \\dfrac{ 3 }{ 2 }\\vec{PQ};$$<br>$$2 : 3$$",
+            "feedback": "This error occurs if you calculated the ratio backwards. The question asks for the ratio of $PQ:QR$ which simplifies to $9:6 = 3:2$, not $2:3$."
+        },
+        {
+            "ans": "$$\\vec{QR} = \\vec{PQ};$$<br>$$1 : 1$$",
+            "feedback": "This is incorrect. The point $Q$ does not divide the segment as a midpoint, as the two sub-vectors have clearly unequal magnitudes ($9$ and $6$)."
+        },
+        {
+            "ans": "$$\\vec{QR} = \\dfrac{ 1 }{ 3 }\\vec{PQ};$$<br>$$3 : 1$$",
+            "feedback": "This represents a calculation slip when comparing the scalar coefficients of the two parallel vectors."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Proving Collinearity",
+        "content": "To prove collinearity, show that one vector is a scalar multiple of the other (proving they are parallel) and state that they share a common point. The ratio of those scalar multipliers immediately gives you the division ratio!"
+    }
+},
+{
+    "id": "012030",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Mechanics",
+    "topic": "Vectors",
+    "subtopic": [
+        "3D Coordinate Geometry",
+        "Direction Cosines"
+    ],
+    "img": false,
+    "question": "A force vector $\\mathbf{F}$ acting on a particle is given by:<br><br>$$\\mathbf{F} = 4\\mathbf{i} - 12\\mathbf{j} + 3\\mathbf{k}$$$<br><strong>(a)</strong> Find the unit vector, $\\hat{\\mathbf{F}}$, in the direction of the force.<br><br><strong>(b)</strong> Find the angle, in degrees to one decimal place, that the force vector $\\mathbf{F}$ makes with the positive $y$-axis.",
+    "steps": [
+        "For part <strong>(a)</strong>, first calculate the magnitude of the force vector $\\mathbf{F}$ using Pythagoras' theorem in 3D:<br><br>\\begin{aligned} |\\mathbf{F}| &= \\sqrt{ 4^2 + (-12)^2 + 3^2 } \\cr &= \\sqrt{ 16 + 144 + 9 } \\cr &= \\sqrt{ 169 } \\cr &= 13 \\end{aligned}",
+        "To find the unit vector $\\hat{\\mathbf{F}}$ in the direction of $\\mathbf{F}$, divide the original vector by its magnitude:<br><br>\\begin{aligned} \\hat{\\mathbf{F}} &= \\dfrac{ \\mathbf{F} }{ |\\mathbf{F}| } \\cr &= \\dfrac{ 1 }{ 13 }(4\\mathbf{i} - 12\\mathbf{j} + 3\\mathbf{k}) \\cr &= \\dfrac{ 4 }{ 13 }\\mathbf{i} - \\dfrac{ 12 }{ 13 }\\mathbf{j} + \\dfrac{ 3 }{ 13 }\\mathbf{k} \\end{aligned}",
+        "For part <strong>(b)</strong>, recall that the angle $\\theta_y$ a vector makes with the positive $y$-axis is given by the direction cosine formula:<br><br>$$\\cos{ \\theta_y } = \\dfrac{ F_y }{ |\\mathbf{F}| }$$",
+        "Substitute the $y$-component of the vector ($F_y = -12$) and the magnitude ($|\\mathbf{F}| = 13$):<br><br>$$\\cos{ \\theta_y } = \\dfrac{ -12 }{ 13 }$$",
+        "Take the inverse cosine to find the angle $\\theta_y$. Note that the negative sign indicates the angle is obtuse:<br><br>\\begin{aligned} \\theta_y &= \\arccos\\left( -\\dfrac{ 12 }{ 13 } \\right) \\cr &\\approx 157.38^\\circ \\cr &\\approx 157.4^\\circ \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\hat{\\mathbf{F}} = \\dfrac{ 4 }{ 13 }\\mathbf{i} - \\dfrac{ 12 }{ 13 }\\mathbf{j} + \\dfrac{ 3 }{ 13 }\\mathbf{k};$$<br>$$153.6^\\circ$$",
+            "feedback": "This represents a calculation or rounding error when finding the inverse cosine. Re-verify your evaluation of $\\arccos(-12/13)$."
+        },
+        {
+            "ans": "$$\\hat{\\mathbf{F}} = \\dfrac{ 4 }{ 11 }\\mathbf{i} - \\dfrac{ 12 }{ 11 }\\mathbf{j} + \\dfrac{ 3 }{ 11 }\\mathbf{k};$$<br>$$22.6^\\circ$$",
+            "feedback": "This indicates a dual error. The magnitude is $13$, not $11$. Additionally, $22.6^\\circ$ is the acute angle; because the $y$-component is negative, the angle with the positive $y$-axis is obtuse."
+        },
+        {
+            "ans": "$$\\hat{\\mathbf{F}} = \\dfrac{ 4 }{ 13 }\\mathbf{i} + \\dfrac{ 12 }{ 13 }\\mathbf{j} + \\dfrac{ 3 }{ 13 }\\mathbf{k};$$<br>$$22.6^\\circ$$",
+            "feedback": "This represents a sign error. By ignoring the negative sign on the $y$-component, you incorrectly calculated an acute angle of $22.6^\\circ$ instead of the correct obtuse angle of $157.4^\\circ$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Direction Cosines",
+        "content": "When calculating the angle a 3D vector makes with an axis, always pay close attention to the sign of the component. A negative component (like $-12$ on the $y$-axis) means the angle is obtuse, so ensure your inverse trigonometric calculations reflect this!"
     }
 }
 
