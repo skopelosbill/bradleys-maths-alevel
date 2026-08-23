@@ -1799,6 +1799,212 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Dropped Objects and Inertia",
         "content": "This is a classic 'relative motion' trap. Any object released from a moving vehicle inherits the vehicle's instantaneous velocity. Even though the passenger 'drops' the camera, relative to the ground it actually travels vertically upwards briefly before gravity slows it down and it begins to fall."
     }
+},
+{
+    "id": "012046",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Motion graphs",
+    "subtopic": [
+        "Velocity-time graphs",
+        "Constant acceleration"
+    ],
+    "img": false,
+    "question": "A train travels along a straight horizontal track between two stations, $P$ and $Q$. In a model of the motion, the train starts from rest at $P$ and moves with constant acceleration $0.4\\\\text{ m s}^{ -2 }$ for $50\\\\text{ s }$. The train then moves at a constant velocity before it moves with a constant deceleration of $0.8\\\\text{ m s}^{ -2 }$, coming to rest at $Q$.<br><br><strong>(a)</strong> For this model of the motion of the train between $P$ and $Q$:<br><strong>(i)</strong> state the value of the constant velocity of the train,<br><strong>(ii)</strong> state the time for which the train is decelerating,<br><strong>(iii)</strong> sketch a velocity-time graph for the motion of the train.<br><br>The total distance between the two stations is $3250\\\\text{ m }$.<br><br><strong>(b)</strong> Using the model, find the total time taken by the train to travel from $P$ to $Q$.<br><br><strong>(c)</strong> Suggest one improvement that could be made to the model to make it more realistic.",
+    "steps": [
+        "<strong>(a)(i) Constant Velocity ($V$):</strong><br>The train starts from rest ($u = 0$) and accelerates at $a = 0.4\\\\text{ m s}^{ -2 }$ for $t = 50\\\\text{ s }$. Using $v = u + at$:<br><br>\\begin{aligned} V &= 0 + 0.4 \\\\times 50 \\\\cr V &= 20\\\\text{ m s}^{ -1 } \\end{aligned}",
+        "<strong>(a)(ii) Deceleration time ($t_d$):</strong><br>The train decelerates from its constant velocity of $20\\\\text{ m s}^{ -1 }$ to rest ($v = 0$) at a rate of $0.8\\\\text{ m s}^{ -2 }$. Using $v = u + at$:<br><br>\\begin{aligned} 0 &= 20 - 0.8t_d \\\\cr 0.8t_d &= 20 \\\\cr t_d &= 25\\\\text{ s } \\end{aligned}",
+        "<strong>(a)(iii) Velocity-time graph sketch:</strong><br>The graph consists of three phases:<br>1. Acceleration from $(0,0)$ to $(50, 20)$<br>2. Constant velocity of $20\\\\text{ m s}^{ -1 }$ until deceleration begins<br>3. Deceleration from $20\\\\text{ m s}^{ -1 }$ to rest at the final time $T$, lasting $25\\\\text{ s }$:<br><br><img src='images/Pure/012046_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b) Find the total time $T$:</strong><br>We can find the total distance by calculating the area under the velocity-time graph for each phase:<br><br>• <strong>Phase 1 (Acceleration):</strong> Area of triangle = $\\\\dfrac{ 1 }{ 2 } \\\\times 50 \\\\times 20 = 500\\\\text{ m }$<br>• <strong>Phase 3 (Deceleration):</strong> Area of triangle = $\\\\dfrac{ 1 }{ 2 } \\\\times 25 \\\\times 20 = 250\\\\text{ m }$<br>• <strong>Phase 2 (Constant Velocity):</strong> The remaining distance is:<br><br>\\begin{aligned} 3250 - (500 + 250) = 2500\\\\text{ m } \\end{aligned}<br><br>The time spent at constant speed ($t_c$) is:<br><br>\\begin{aligned} t_c &= \\\\dfrac{ 2500 }{ 20 } \\\\cr t_c &= 125\\\\text{ s } \\end{aligned}",
+        "The total time $T$ is the sum of the durations of all three phases:<br><br>\\begin{aligned} T &= 50 + 125 + 25 \\\\cr T &= 200\\\\text{ seconds } \\end{aligned}",
+        "<strong>(c) Suggested Improvement:</strong><br>The model could be made more realistic by smoothing the transitions between phases rather than assuming instantaneous changes in acceleration (i.e. avoiding sharp corners on the velocity-time graph), or by incorporating air resistance and friction."
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $20\\text{ m s}^{-1}$, (a)(ii) $25\\text{ s}$, (b) $187.5\\text{ s}$",
+            "feedback": "This result is based on an arithmetic slip when summing the times of the three phases: $50 + 125 + 25$ is equal to $200\\text{ s}$, not $187.5\\text{ s}$."
+        },
+        {
+            "ans": "(a)(i) $20\\text{ m s}^{-1}$, (a)(ii) $16\\text{ s}$, (b) $212.5\\text{ s}$",
+            "feedback": "This occurs if you miscalculate the deceleration time as $16\\text{ s}$ instead of $25\\text{ s}$ by multiplying by $0.8$ instead of dividing. Deceleration time is found by dividing the constant velocity by the rate of deceleration."
+        },
+        {
+            "ans": "(a)(i) $20\\text{ m s}^{-1}$, (a)(ii) $25\\text{ s}$, (b) $162.5\\text{ s}$",
+            "feedback": "This error occurs if you miss one of the journey segments (such as the deceleration phase) when calculating the total travel time."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: End Phases First",
+        "content": "For multi-stage journeys represented as a trapezium on a velocity-time graph, always calculate the durations and distances of the two 'end' phases (acceleration and deceleration) first. The middle phase distance is then easily found by subtracting these from the total distance."
+    }
+},
+{
+    "id": "012047",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Motion graphs",
+    "subtopic": [
+        "Velocity-time graphs",
+        "Constant acceleration"
+    ],
+    "img": false,
+    "question": "A cyclist travels along a straight horizontal road. She starts from rest at point $X$ and accelerates uniformly at $1.2\\\\text{ m s}^{ -2 }$ until she reaches a speed of $18\\\\text{ m s}^{ -1 }$. She maintains this speed for $T$ seconds before decelerating uniformly at $0.6\\\\text{ m s}^{ -2 }$, coming to rest at point $Y$. The entire journey from $X$ to $Y$ takes $120\\\\text{ s }$.<br><br><strong>(a)</strong> Sketch a velocity-time graph for the cyclist's journey.<br><br><strong>(b)</strong> Find the value of $T$.<br><br><strong>(c)</strong> Find the total distance between $X$ and $Y$.<br><br><strong>(d)</strong> State one physical factor that has been ignored in this model of the cyclist's motion.",
+    "steps": [
+        "<strong>(a) Velocity-time graph sketch:</strong><br>The journey contains three distinct sections:<br>1. Uniform acceleration from rest to $18\\\\text{ m s}^{ -1 }$ over $15\\\\text{ s }$<br>2. Constant speed of $18\\\\text{ m s}^{ -1 }$ for $T$ seconds (from $15\\\\text{ s }$ to $15 + T$)<br>3. Uniform deceleration from $18\\\\text{ m s}^{ -1 }$ to rest over $30\\\\text{ s }$ to the final time $120\\\\text{ s }$:<br><br><img src='images/Pure/012047_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b) Find the value of $T$:</strong><br>First, calculate the duration of the acceleration phase ($t_a$):<br><br>\\begin{aligned} t_a &= \\\\dfrac{ v }{ a_1 } \\\\cr t_a &= \\\\dfrac{ 18 }{ 1.2 } \\\\cr t_a &= 15\\\\text{ s } \\end{aligned}",
+        "Next, calculate the duration of the deceleration phase ($t_d$):<br><br>\\begin{aligned} t_d &= \\\\dfrac{ v }{ a_2 } \\\\cr t_d &= \\\\dfrac{ 18 }{ 0.6 } \\\\cr t_d &= 30\\\\text{ s } \\end{aligned}",
+        "Since the total time for the entire journey is $120\\\\text{ s }$, the constant velocity duration $T$ is:<br><br>\\begin{aligned} T &= 120 - t_a - t_d \\\\cr T &= 120 - 15 - 30 \\\\cr T &= 75\\\\text{ seconds } \\end{aligned}",
+        "<strong>(c) Find the total distance:</strong><br>The total distance is the area of the trapezium under the velocity-time graph. The formula for the area of a trapezium is $\\\\dfrac{ 1 }{ 2 }(a + b)h$:<br>• Bottom parallel side, $a = 120$<br>• Top parallel side, $b = T = 75$<br>• Height, $h = 18$<br><br>\\begin{aligned} \\\\text{ Total Distance } &= \\\\dfrac{ 1 }{ 2 } \\\\times (120 + 75) \\\\times 18 \\\\cr &= 97.5 \\\\times 18 \\\\cr &= 1755\\\\text{ m } \\end{aligned}",
+        "<strong>(d) Ignored Factor:</strong><br>The model treats the bicycle and cyclist as a particle, thereby ignoring air resistance, friction between the tyres and road, and the physical dimensions of the cyclist."
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $T = 75\\text{ s}$, (c) $1620\\text{ m}$",
+            "feedback": "This distance of $1620\\text{ m}$ is obtained if you make an arithmetic error during the trapezium area calculation, such as using incorrect parallel side values."
+        },
+        {
+            "ans": "(b) $T = 90\\text{ s}$, (c) $1890\\text{ m}$",
+            "feedback": "This occurs if you fail to subtract the deceleration phase time of $30\\text{ s}$ from the total time when calculating $T$, leading to $T = 90\\text{ s}$ and a corresponding overestimate of the distance."
+        },
+        {
+            "ans": "(b) $T = 75\\text{ s}$, (c) $1350\\text{ m}$",
+            "feedback": "This distance of $1350\\text{ m}$ represents only the distance covered during the constant velocity phase ($75 \\\\times 18$). Ensure you include the triangular areas for both the acceleration and deceleration phases."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Trailing Journey Constraints",
+        "content": "The entire journey time is given as $120\\\\text{ s }$, so $T$ is simply the total time minus the durations spent changing speed. Always verify that your individual phase durations add up perfectly to the given total before calculating the distance."
+    }
+},
+{
+    "id": "012048",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Motion graphs",
+    "subtopic": [
+        "Velocity-time graphs",
+        "Relative motion",
+        "Constant acceleration"
+    ],
+    "img": false,
+    "question": "Two cars, $A$ and $B$, start from rest at the same point at time $t = 0$ and travel in the same direction along a straight horizontal road.<br>• Car $A$ accelerates uniformly at $1.5\\\\text{ m s}^{ -2 }$ for $10\\\\text{ s }$ to a speed of $15\\\\text{ m s}^{ -1 }$, and then continues at this constant speed.<br>• Car $B$ accelerates uniformly at $1.0\\\\text{ m s}^{ -2 }$ for $20\\\\text{ s }$ to a speed of $20\\\\text{ m s}^{ -1 }$, and then continues at this constant speed.<br><br><strong>(a)</strong> Sketch, on the same axes, the velocity-time graphs for the motion of both cars for $0 \\\\le t \\\\le 30$.<br><br><strong>(b)</strong> Find the value of $t$ when the two cars are travelling at the same speed.<br><br><strong>(c)</strong> Find the distance between the two cars at $t = 30\\\\text{ s }$."    ,
+    "steps": [
+        "<strong>(a) Sketch on the same axes:</strong><br>• Car $A$ accelerates to $15\\\\text{ m s}^{ -1 }$ at $t = 10\\\\text{ s }$ and remains constant.<br>• Car $B$ accelerates to $20\\\\text{ m s}^{ -1 }$ at $t = 20\\\\text{ s }$ and remains constant.<br>• The two graphs intersect at $t = 15\\\\text{ s }$, where both cars are travelling at $15\\\\text{ m s}^{ -1 }$:<br><br><img src='images/Pure/012048_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b) Find $t$ when speeds are equal:</strong><br>Car $A$ reaches its constant speed of $15\\\\text{ m s}^{ -1 }$ at $t = 10\\\\text{ s }$.<br>Car $B$ is still accelerating at $t = 10\\\\text{ s }$. We want to find the time $t$ when Car $B$ reaches $15\\\\text{ m s}^{ -1 }$ during its acceleration phase:<br><br>\\begin{aligned} v &= u + at \\\\cr 15 &= 0 + 1.0 \\\\times t \\\\cr t &= 15\\\\text{ seconds } \\end{aligned}<br><br>Since $15\\\\text{ s }$ is within Car $B$'s acceleration phase ($0 \\\\le t \\\\le 20$), this is the correct time.",
+        "<strong>(c) Find the distance between the cars at $t = 30\\\\text{ s }$:</strong><br>We calculate the distance travelled by each car by finding the area under their respective velocity-time graphs from $t = 0$ to $t = 30$.<br><br>• <strong>Distance for Car $A$:</strong><br>The shape is a trapezium with parallel sides of length $30$ and $20$, and a height of $15$:<br><br>\\begin{aligned} \\\\text{ Distance }_A &= \\\\dfrac{ 1 }{ 2 } \\\\times (30 + 20) \\\\times 15 \\\\cr &= 25 \\\\times 15 \\\\cr &= 375\\\\text{ m } \\end{aligned}",
+        "• <strong>Distance for Car $B$:</strong><br>The shape is a trapezium with parallel sides of length $30$ and $10$, and a height of $20$:<br><br>\\begin{aligned} \\\\text{ Distance }_B &= \\\\dfrac{ 1 }{ 2 } \\\\times (30 + 10) \\\\times 20 \\\\cr &= 20 \\\\times 20 \\\\cr &= 400\\\\text{ m } \\end{aligned}",
+        "• <strong>Distance between the two cars:</strong><br>Subtract Car $A$'s distance from Car $B$'s distance:<br><br>\\begin{aligned} \\\\text{ Separation } &= 400 - 375 \\\\cr &= 25\\\\text{ m } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $t = 15\\text{ s}$, (c) $75\\text{ m}$",
+            "feedback": "This separation of $75\\text{ m}$ occurs if you make an error in calculating the trapezoidal areas for the distance of Car $A$ or Car $B$."
+        },
+        {
+            "ans": "(b) $t = 12.5\\text{ s}$, (c) $25\\text{ m}$",
+            "feedback": "The time of equal speed is $15\\text{ s}$, because Car $B$ reaches the constant speed of Car $A$ ($15\\text{ m s}^{-1}$) at exactly $t = 15\\text{ s}$. Avoid equating average speeds to find this point."
+        },
+        {
+            "ans": "(b) $t = 15\\text{ s}$, (c) $150\\text{ m}$",
+            "feedback": "Make sure you calculate the entire distance covered by both cars up to $t = 30\\text{ s}$, including both the acceleration and constant speed phases, rather than just comparing their acceleration phases."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Visualising Area Separation",
+        "content": "On a combined velocity-time graph, the distance between the two vehicles is visually represented by the difference between the areas under their respective lines. Finding equal speeds tells you where the vertical separation is zero, but the physical separation is found by computing the area difference."
+    }
+},
+{
+    "id": "012049",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Motion graphs",
+    "subtopic": [
+        "Velocity-time graphs",
+        "Variable acceleration",
+        "Integration in kinematics"
+    ],
+    "img": false,
+    "question": "A particle $P$ moves along a straight horizontal line. At time $t$ seconds ($t \\\\ge 0$), the velocity of $P$, $v\\\\text{ m s}^{ -1 }$, is modelled by the formula:<br>$$v = 6t - t^2 \\\\quad \\\\text{for } 0 \\\\le t \\\\le 6$$<br>and $v = 0$ for $t > 6$.<br><br><strong>(a)</strong> Sketch a velocity-time graph for the motion of $P$ for $0 \\\\le t \\\\le 8$.<br><br><strong>(b)</strong> Find the maximum speed of $P$ during the interval $0 \\\\le t \\\\le 6$, stating the value of $t$ at which it occurs.<br><br><strong>(c)</strong> Find the total distance travelled by $P$ during the interval $0 \\\\le t \\\\le 6$.",
+    "steps": [
+        "<strong>(a) Sketch of the velocity-time graph:</strong><br>The graph is a parabola passing through the origin $(0,0)$ and meeting the t-axis again at $t = 6\\\\text{ s }$. For $t > 6$, the velocity is zero (horizontal line on the axis):<br><br><img src='images/Pure/012049_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b) Find the maximum speed:</strong><br>The velocity function is $v = 6t - t^2$. To find the maximum speed, we differentiate $v$ with respect to $t$ and set the derivative to zero:<br><br>\\begin{aligned} \\\\dfrac{ \\\\mathrm{d}v }{ \\\\mathrm{d}t } &= 6 - 2t \\\\cr 6 - 2t &= 0 \\\\cr t &= 3\\\\text{ seconds } \\end{aligned}",
+        "Substitute $t = 3$ back into the velocity formula to find the maximum speed:<br><br>\\begin{aligned} v_{ \\\\text{ max } } &= 6(3) - (3)^2 \\\\cr &= 18 - 9 \\\\cr &= 9\\\\text{ m s}^{ -1 } \\end{aligned}<br><br>The maximum speed is $9\\\\text{ m s}^{ -1 }$, occurring at $t = 3\\\\text{ s }$.",
+        "<strong>(c) Find the total distance travelled:</strong><br>Since $v \\\\ge 0$ during the interval $0 \\\\le t \\\\le 6$, the total distance is found by integrating the velocity function between these limits:<br><br>\\begin{aligned} \\\\text{ Distance } &= \\\\int_{ 0 }^{ 6 } (6t - t^2) \\\\, \\\\mathrm{d}t \\\\cr &= \\\\left[ 3t^2 - \\\\dfrac{ 1 }{ 3 }t^3 \\\\right]_{ 0 }^{ 6 } \\\\cr &= \\\\left( 3(6)^2 - \\\\dfrac{ 1 }{ 3 }(6)^3 \\\\right) - 0 \\\\cr &= (108 - 72) \\\\cr &= 36\\\\text{ m } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $9\\text{ m s}^{-1}$ at $t = 3\\text{ s}$, (c) $18\\text{ m}$",
+            "feedback": "This distance of $18\\text{ m}$ is obtained if you integrate $t^2$ incorrectly as $\\\\dfrac{ 1 }{ 2 }t^3$ or make a division slip during integration. Remember that $\\\\int t^n \\\\, \\\\mathrm{d}t = \\\\dfrac{ t^{n+1} }{ n+1 }$."
+        },
+        {
+            "ans": "(b) $6\\text{ m s}^{-1}$ at $t = 3\\text{ s}$, (c) $36\\text{ m}$",
+            "feedback": "To find the maximum speed, substitute $t = 3$ into the original function $v = 6t - t^2$, which yields $18 - 9 = 9\\text{ m s}^{-1}$. Ensure you use the correct function."
+        },
+        {
+            "ans": "(b) $9\\text{ m s}^{-1}$ at $t = 3\\text{ s}$, (c) $54\\text{ m}$",
+            "feedback": "Make sure you use definite integration limits from $0$ to $6$ to find the exact area under the curved parabola rather than trying to approximate it with a bounding rectangle."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Variable Kinematics Rules",
+        "content": "When velocity is a non-linear function of $t$, you must use calculus rather than SUVAT. As a nice pure-maths verification, the area of the 'hump' of this parabola is exactly $\\\\dfrac{ 2 }{ 3 }$ of the bounding box ($6 \\\\times 9$), which is $36\\\\text{ m }$."
+    }
+},
+{
+    "id": "012050",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Motion graphs",
+    "subtopic": [
+        "Velocity-time graphs",
+        "Constant acceleration",
+        "Vertical motion under gravity"
+    ],
+    "img": false,
+    "question": "A parachutist jumps from a stationary balloon and falls vertically. She falls freely under gravity from rest for $4\\\\text{ s }$. At the instant $t = 4\\\\text{ s }$, her parachute opens, causing her to decelerate uniformly at $12\\\\text{ m s}^{ -2 }$ for $2.5\\\\text{ s }$. She then continues to fall vertically at a constant speed of $V\\\\text{ m s}^{ -1 }$ until she reaches the ground. The acceleration due to gravity is modelled as $9.8\\\\text{ m s}^{ -2 }$.<br><br><strong>(a)</strong> Show that the speed of the parachutist at $t = 4\\\\text{ s }$ is $39.2\\\\text{ m s}^{ -1 }$.<br><br><strong>(b)</strong> Find the value of $V$.<br><br><strong>(c)</strong> Sketch a velocity-time graph for the motion of the parachutist from the instant she jumps to the instant she reaches the ground.<br><br>Given that the total vertical distance fallen is $230.9\\\\text{ m}$:<br><br><strong>(d)</strong> Find the total time taken from the instant she jumps to the instant she reaches the ground.",
+    "steps": [
+        "<strong>(a) Show that the speed at $t = 4\\\\text{ s }$ is $39.2\\\\text{ m s}^{ -1 }$:</strong><br>The parachutist falls freely from rest under gravity ($u = 0$, $a = 9.8\\\\text{ m s}^{ -2 }$) for $4\\\\text{ s }$. Using $v = u + at$:<br><br>\\begin{aligned} v &= 0 + 9.8 \\\\times 4 \\\\cr v &= 39.2\\\\text{ m s}^{ -1 } \\end{aligned}",
+        "<strong>(b) Find the value of $V$:</strong><br>At $t = 4\\\\text{ s }$, the parachute opens, decelerating her at $12\\\\text{ m s}^{ -2 }$ for $2.5\\\\text{ s }$. Using $v = u + at$ with initial speed $u = 39.2\\\\text{ m s}^{ -1 }$:<br><br>\\begin{aligned} V &= 39.2 - 12 \\\\times 2.5 \\\\cr V &= 39.2 - 30 \\\\cr V &= 9.2\\\\text{ m s}^{ -1 } \\end{aligned}",
+        "<strong>(c) Sketch the velocity-time graph:</strong><br>The graph comprises three segments:<br>1. Linear acceleration from $(0,0)$ to $(4, 39.2)$<br>2. Linear deceleration from $(4, 39.2)$ to $(6.5, 9.2)$<br>3. Horizontal line representing a constant terminal speed of $9.2\\\\text{ m s}^{ -1 }$ until she lands at $T$:<br><br><img src='images/Pure/012050_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(d) Find the total time of flight $T$:</strong><br>We split the total distance of $230.9\\\\text{ m }$ into the three phases of the journey:<br><br>• <strong>Phase 1 (Free Fall):</strong> Area of triangle:<br><br>\\begin{aligned} s_1 &= \\\\dfrac{ 1 }{ 2 } \\\\times 4 \\\\times 39.2 \\\\cr &= 78.4\\\\text{ m } \\end{aligned}",
+        "• <strong>Phase 2 (Deceleration):</strong> Area of trapezium under the graph between $t = 4$ and $t = 6.5$ (duration of $2.5\\\\text{ s }$):<br><br>\\begin{aligned} s_2 &= \\\\dfrac{ 39.2 + 9.2 }{ 2 } \\\\times 2.5 \\\\cr &= 24.2 \\\\times 2.5 \\\\cr &= 60.5\\\\text{ m } \\end{aligned}",
+        "• <strong>Phase 3 (Constant Speed):</strong> Find the remaining distance to the ground:<br><br>\\begin{aligned} s_3 &= 230.9 - (78.4 + 60.5) \\\\cr s_3 &= 230.9 - 138.9 \\\\cr s_3 &= 92\\\\text{ m } \\end{aligned}<br><br>Calculate the time spent in Phase 3 ($t_3$) at constant speed $V = 9.2\\\\text{ m s}^{ -1 }$:<br><br>\\begin{aligned} t_3 &= \\\\dfrac{ s_3 }{ V } \\\\cr &= \\\\dfrac{ 92 }{ 9.2 } \\\\cr &= 10\\\\text{ s } \\end{aligned}",
+        "• <strong>Total Time:</strong> Sum the times of all three phases:<br><br>\\begin{aligned} T_{\\\\text{ total }} &= 4 + 2.5 + 10 \\\\cr &= 16.5\\\\text{ seconds } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $V = 9.2\\text{ m s}^{-1}$, (d) $15.5\\text{ s}$",
+            "feedback": "This total time of $15.5\\text{ s}$ is a common arithmetic slip when summing the phases ($4 + 2.5 + 10$), where $4 + 2.5$ is added incorrectly or one of the values is misread."
+        },
+        {
+            "ans": "(b) $V = 9.2\\text{ m s}^{-1}$, (d) $21.5\\text{ s}$",
+            "feedback": "Make sure you use the trapezium area formula $\\\\dfrac{ u + v }{ 2 } \\\\times t$ to calculate the distance travelled during the deceleration phase rather than a simple triangle."
+        },
+        {
+            "ans": "(b) $V = 15.2\\text{ m s}^{-1}$, (d) $12.5\\text{ s}$",
+            "feedback": "Since the parachute causes a deceleration, the acceleration is negative relative to the direction of motion, so $V = 39.2 - 12(2.5)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Mid-Journey Trapeziums",
+        "content": "The deceleration phase of this motion is a trapezium on the velocity-time graph. Make sure you use the average velocity $(\\\\dfrac{ u + v }{ 2 })$ to find that middle distance correctly, rather than mistakenly treating it as a simple triangle."
+    }
 }
 
 ];
