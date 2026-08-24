@@ -816,6 +816,208 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Friction as a Variable Friend",
         "content": "In a 'range of values for equilibrium' problem, friction is variable and adaptive. It can act up the plane (to prevent sliding down under low tension) or down the plane (to prevent being pulled up under high tension). Find the two limiting friction extremes to bound the range."
     }
+},
+{
+    "id": "012071",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Constant acceleration",
+    "subtopic": [
+        "2D motion with vectors",
+        "Kinematics equations (SUVAT)"
+    ],
+    "img": false,
+    "question": "In this question, $\\mathbf{i}$ and $\\mathbf{j}$ are horizontal unit vectors due east and due north respectively, and position vectors are given relative to a fixed origin $O$.<br><br>A particle $P$ moves with constant acceleration. At time $t = 0$, the particle is at $O$ and is moving with velocity $(\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{ -1 }$. At time $t = 2\\text{ s }$, $P$ is at the point $A$ with position vector $(8\\mathbf{i} - 12\\mathbf{j})\\text{ m }$.<br><br><strong>(a)</strong> Show that the magnitude of the acceleration of $P$ is $5\\text{ m s}^{ -2 }$.<br><br>At the instant when $P$ leaves the point $A$, the acceleration of $P$ changes so that $P$ now moves with constant acceleration $(2\\mathbf{i} + 5.4\\mathbf{j})\\text{ m s}^{ -2 }$. At the instant $t = T$ seconds, $P$ is moving in a direction due north-east.<br><br><strong>(b)</strong> Find the value of $T$.",
+    "steps": [
+        "<strong>(a) Show that the magnitude of the acceleration is $5\\text{ m s}^{ -2 }$:</strong><br>Using the constant acceleration vector equation for displacement $\\mathbf{s} = \\mathbf{u}t + \\dfrac{ 1 }{ 2 }\\mathbf{a}t^2$ where $\\mathbf{u} = \\mathbf{i} - 2\\mathbf{j}$, $t = 2\\text{ s }$, and $\\mathbf{s} = 8\\mathbf{i} - 12\\mathbf{j}$:<br><br>\\begin{aligned} 8\\mathbf{i} - 12\\mathbf{j} &= (\\mathbf{i} - 2\\mathbf{j})(2) + \\dfrac{ 1 }{ 2 }\\mathbf{a}_1(2)^2 \\cr 8\\mathbf{i} - 12\\mathbf{j} &= 2\\mathbf{i} - 4\\mathbf{j} + 2\\mathbf{a}_1 \\end{aligned}",
+        "Isolate and solve for the initial acceleration vector $\\mathbf{a}_1$:<br><br>\\begin{aligned} 2\\mathbf{a}_1 &= (8 - 2)\\mathbf{i} + (-12 - (-4))\\mathbf{j} \\cr 2\\mathbf{a}_1 &= 6\\mathbf{i} - 8\\mathbf{j} \\cr \\mathbf{a}_1 &= 3\\mathbf{i} - 4\\mathbf{j} \\end{aligned}",
+        "Calculate the magnitude of the acceleration vector $\\mathbf{a}_1$:<br><br>\\begin{aligned} |\\mathbf{a}_1| &= \\sqrt{ (3)^2 + (-4)^2 } \\cr &= \\sqrt{ 9 + 16 } \\cr &= 5\\text{ m s}^{ -2 } \\end{aligned}",
+        "<strong>(b) Find the value of $T$:</strong><br>First, find the velocity vector of the particle as it leaves point $A$ (at $t = 2\\text{ s }$) using the equation $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$:<br><br>\\begin{aligned} \\mathbf{v}_A &= (\\mathbf{i} - 2\\mathbf{j}) + (3\\mathbf{i} - 4\\mathbf{j})(2) \\cr &= 7\\mathbf{i} - 10\\mathbf{j} \\end{aligned}",
+        "Let the new constant acceleration be $\\mathbf{a}_2 = 2\\mathbf{i} + 5.4\\mathbf{j}$. The velocity vector at any total time $T > 2$ is given by:<br><br>\\begin{aligned} \\mathbf{v}(T) &= \\mathbf{v}_A + \\mathbf{a}_2(T - 2) \\cr &= (7\\mathbf{i} - 10\\mathbf{j}) + (T - 2)(2\\mathbf{i} + 5.4\\mathbf{j}) \\cr &= \\left[ 7 + 2(T - 2) \\right]\\mathbf{i} + \\left[ -10 + 5.4(T - 2) \\right]\\mathbf{j} \\cr &= (2T + 3)\\mathbf{i} + (5.4T - 20.8)\\mathbf{j} \\end{aligned}",
+        "Since the particle is moving in a direction due north-east at $t = T$, its velocity vector must have equal, positive horizontal and vertical components ($v_x = v_y > 0$):<br><br>\\begin{aligned} 2T + 3 &= 5.4T - 20.8 \\cr 3.4T &= 23.8 \\cr T &= 7\\text{ seconds } \\end{aligned}<br><br>Check that both components are positive at $T = 7$: $v_x = 2(7) + 3 = 17 > 0$. Thus, $T = 7\\text{ s }$ is correct."
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $|\mathbf{a}_1| = 5\text{ m s}^{-2}$, (b) $T = 5\text{ s}$",
+            "feedback": "This value of $T$ is the elapsed duration of the second motion phase ($T - 2 = 5$). Remember that the question asks for the total time $T$ from the start of the entire motion ($t = 0$), which requires adding the initial $2\\text{ s}$ phase."
+        },
+        {
+            "ans": "(a) $|\mathbf{a}_1| = 5\text{ m s}^{-2}$, (b) $T = 8.5\text{ s}$",
+            "feedback": "This occurs if you make a sign error when expanding the vertical component of velocity, such as writing $-10 + 5.4T + 10.8$ instead of $-10 + 5.4T - 10.8$, leading to an incorrect algebraic equation."
+        },
+        {
+            "ans": "(a) $|\mathbf{a}_1| = 5\text{ m s}^{-2}$, (b) $T = 6.2\text{ s}$",
+            "feedback": "This represents a calculation error when solving the linear equation $3.4T = 23.8$. Double-check your decimal division carefully: $23.8 \\div 3.4 = 7$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Elapsed vs. Total Time",
+        "content": "For multi-stage constant acceleration questions, make sure to distinguish between the elapsed time during the second phase (often written as $\\tau = T - 2$) and the total time $T$ from the origin. Forgetting to add back the initial time is a very common source of lost marks."
+    }
+},
+{
+    "id": "012072",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Constant acceleration",
+    "subtopic": [
+        "2D motion with vectors",
+        "Kinematics equations (SUVAT)"
+    ],
+    "img": false,
+    "question": "In this question, $\\mathbf{i}$ and $\\mathbf{j}$ are horizontal unit vectors due east and due north respectively, and position vectors are given relative to a fixed origin $O$.<br><br>A particle $P$ moves with constant acceleration. At time $t = 0$, the particle is at $O$ and is moving with velocity $(\\mathbf{i} - 3\\mathbf{j})\\text{ m s}^{ -1 }$. At time $t = 3\\text{ s }$, $P$ is at the point $A$ with position vector $(12\\mathbf{i} - 27\\mathbf{j})\\text{ m }$.<br><br><strong>(a)</strong> Show that the magnitude of the acceleration of $P$ is $2\\sqrt{ 5 }\\text{ m s}^{ -2 }$.<br><br>At the instant when $P$ leaves the point $A$, the acceleration of $P$ changes so that $P$ now moves with constant acceleration $(3\\mathbf{i} + 5\\mathbf{j})\\text{ m s}^{ -2 }$. At the instant $t = T$ seconds, $P$ is moving in a direction due south-east.<br><br><strong>(b)</strong> Find the value of $T$.",
+    "steps": [
+        "<strong>(a) Show that the magnitude of the acceleration is $2\\sqrt{ 5 }\\text{ m s}^{ -2 }$:</strong><br>Using the constant acceleration vector equation for displacement $\\mathbf{s} = \\mathbf{u}t + \\dfrac{ 1 }{ 2 }\\mathbf{a}t^2$ with $\\mathbf{u} = \\mathbf{i} - 3\\mathbf{j}$, $t = 3\\text{ s }$, and $\\mathbf{s} = 12\\mathbf{i} - 27\\mathbf{j}$:<br><br>\\begin{aligned} 12\\mathbf{i} - 27\\mathbf{j} &= (\\mathbf{i} - 3\\mathbf{j})(3) + \\dfrac{ 1 }{ 2 }\\mathbf{a}_1(3)^2 \\cr 12\\mathbf{i} - 27\\mathbf{j} &= 3\\mathbf{i} - 9\\mathbf{j} + 4.5\\mathbf{a}_1 \\end{aligned}",
+        "Isolate and solve for the initial acceleration vector $\\mathbf{a}_1$:<br><br>\\begin{aligned} 4.5\\mathbf{a}_1 &= (12 - 3)\\mathbf{i} + (-27 - (-9))\\mathbf{j} \\cr 4.5\\mathbf{a}_1 &= 9\\mathbf{i} - 18\\mathbf{j} \\cr \\mathbf{a}_1 &= 2\\mathbf{i} - 4\\mathbf{j} \\end{aligned}",
+        "Calculate the magnitude of the acceleration vector $\\mathbf{a}_1$:<br><br>\\begin{aligned} |\\mathbf{a}_1| &= \\sqrt{ (2)^2 + (-4)^2 } \\cr &= \\sqrt{ 4 + 16 } \\cr &= \\sqrt{ 20 } \\cr &= 2\\sqrt{ 5 }\\text{ m s}^{ -2 } \\end{aligned}",
+        "<strong>(b) Find the value of $T$:</strong><br>First, find the velocity vector of the particle as it leaves point $A$ (at $t = 3\\text{ s }$) using the equation $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$:<br><br>\\begin{aligned} \\mathbf{v}_A &= (\\mathbf{i} - 3\\mathbf{j}) + (2\\mathbf{i} - 4\\mathbf{j})(3) \\cr &= 7\\mathbf{i} - 15\\mathbf{j} \\end{aligned}",
+        "Let the new constant acceleration be $\\mathbf{a}_2 = 3\\mathbf{i} + 5\\mathbf{j}$. The velocity vector at any total time $T > 3$ is given by:<br><br>\\begin{aligned} \\mathbf{v}(T) &= \\mathbf{v}_A + \\mathbf{a}_2(T - 3) \\cr &= (7\\mathbf{i} - 15\\mathbf{j}) + (T - 3)(3\\mathbf{i} + 5\\mathbf{j}) \\cr &= \\left[ 7 + 3(T - 3) \\right]\\mathbf{i} + \\left[ -15 + 5(T - 3) \\right]\\mathbf{j} \\cr &= (3T - 2)\\mathbf{i} + (5T - 30)\\mathbf{j} \\end{aligned}",
+        "Since the particle is moving in a direction due south-east at $t = T$, its velocity vector must have equal magnitude but opposite signs for its horizontal and vertical components, with horizontal being positive ($v_x = -v_y > 0$):<br><br>\\begin{aligned} 3T - 2 &= -(5T - 30) \\cr 3T - 2 &= -5T + 30 \\cr 8T &= 32 \\cr T &= 4\\text{ seconds } \\end{aligned}<br><br>Check that the conditions are met at $T = 4$: $v_x = 3(4) - 2 = 10 > 0$, and $v_y = 5(4) - 30 = -10 < 0$. Thus, $T = 4\\text{ s }$ is correct."
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $|\mathbf{a}_1| = 2\\sqrt{ 5 }\\text{ m s}^{-2}$, (b) $T = 7\\text{ s}$",
+            "feedback": "This is an error where the total time is mistakenly calculated by adding the initial $3\\text{ s}$ phase to the total time $T = 4\\text{ s}$ solved from the equation. Since the variable $T$ in the equation $(3T - 2)$ already represents the total time from the origin, $T = 4\\text{ s}$ is the final total time."
+        },
+        {
+            "ans": "(a) $|\mathbf{a}_1| = 2\\sqrt{ 5 }\\text{ m s}^{-2}$, (b) $T = 5.2\\text{ s}$",
+            "feedback": "This occurs if you use a direction of north-east ($v_x = v_y$) instead of south-east ($v_x = -v_y$) to set up your components equation. Always identify the correct quadrant for the target bearing."
+        },
+        {
+            "ans": "(a) $|\mathbf{a}_1| = 2\\sqrt{ 5 }\\text{ m s}^{-2}$, (b) $T = 3.5\\text{ s}$",
+            "feedback": "This represents a calculation error, such as a decimal or subtraction slip when setting up or solving $8T = 32$. Ensure you expand and group terms carefully."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: South-East Vector Constraints",
+        "content": "Due south-east represents a direction of $135^\\circ$ from North. In vector terms, this means the velocity vector points to the right and downwards, requiring the $\\mathbf{i}$ component to be positive and the $\\mathbf{j}$ component to be negative, with equal magnitudes ($v_x = -v_y > 0$)."
+    }
+},
+{
+    "id": "012073",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Constant acceleration",
+    "subtopic": [
+        "2D motion with vectors",
+        "Kinematics equations (SUVAT)"
+    ],
+    "img": false,
+    "question": "In this question, $\\mathbf{i}$ and $\\mathbf{j}$ are horizontal unit vectors due east and due north respectively, and position vectors are given relative to a fixed origin $O$.<br><br>A particle $P$ moves with constant acceleration $(2\\mathbf{i} + 3\\mathbf{j})\\text{ m s}^{ -2 }$. At time $t = 0$, $P$ is moving with velocity $(-10\\mathbf{i} - 8\\mathbf{j})\\text{ m s}^{ -1 }$.<br><br><strong>(a)</strong> Find the position vector of $P$ at the instant $t = 4\\text{ s }$.<br><br><strong>(b)</strong> Find the time, $T$ seconds, when $P$ is moving due north.",
+    "steps": [
+        "<strong>(a) Find the position vector of $P$ at $t = 4\\text{ s }$:</strong><br>Using the constant acceleration vector displacement equation $\\mathbf{s} = \\mathbf{u}t + \\dfrac{ 1 }{ 2 }\\mathbf{a}t^2$ where $\\mathbf{u} = -10\\mathbf{i} - 8\\mathbf{j}$, $\\mathbf{a} = 2\\mathbf{i} + 3\\mathbf{j}$, and $t = 4\\text{ s }$:<br><br>\\begin{aligned} \\mathbf{s} &= (-10\\mathbf{i} - 8\\mathbf{j})(4) + \\dfrac{ 1 }{ 2 }(2\\mathbf{i} + 3\\mathbf{j})(4)^2 \\cr &= (-40\\mathbf{i} - 32\\mathbf{j}) + 8(2\\mathbf{i} + 3\\mathbf{j}) \\cr &= -40\\mathbf{i} - 32\\mathbf{j} + 16\\mathbf{i} + 24\\mathbf{j} \\cr &= -24\\mathbf{i} - 8\\mathbf{j} \\end{aligned}<br><br>The position vector at $t = 4\\text{ s }$ is $(-24\\mathbf{i} - 8\\mathbf{j})\\text{ m }$.",
+        "<strong>(b) Find the time $T$ when $P$ is moving due north:</strong><br>Write an expression for the velocity vector of the particle at any time $t$ using the equation $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$:<br><br>\\begin{aligned} \\mathbf{v} &= (-10\\mathbf{i} - 8\\mathbf{j}) + t(2\\mathbf{i} + 3\\mathbf{j}) \\cr &= (-10 + 2t)\\mathbf{i} + (-8 + 3t)\\mathbf{j} \\end{aligned}",
+        "Moving due north means the velocity is purely vertical in the positive direction, which mathematically requires the horizontal ($\\mathbf{i}$) component of velocity to be zero, and the vertical ($\\mathbf{j}$) component to be positive ($v_x = 0$ and $v_y > 0$):<br><br>\\begin{aligned} -10 + 2T &= 0 \\cr 2T &= 10 \\cr T &= 5\\text{ seconds } \\end{aligned}",
+        "Verify that the vertical velocity component is positive at $T = 5$:<br><br>\\begin{aligned} v_y &= -8 + 3(5) \\cr &= 7\\text{ m s}^{ -1 } \\end{aligned}<br><br>Since $7 > 0$, the particle is indeed moving due north at $T = 5\\text{ s }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $-24\\mathbf{i} - 8\\mathbf{j}$, (b) $T = 2.67\\text{ s}$",
+            "feedback": "This time $T \\approx 2.67\\text{ s}$ is obtained if you set the vertical component of velocity to zero ($v_y = 0 \\implies -8 + 3T = 0 \\implies T \\approx 2.67$). Setting $v_y = 0$ corresponds to moving due east or due west, not due north."
+        },
+        {
+            "ans": "(a) $-40\\mathbf{i} - 32\\mathbf{j}$, (b) $T = 5\\text{ s}$",
+            "feedback": "This position vector is only the linear component of motion $\\mathbf{u}t$ (omitting the acceleration term $\\dfrac{ 1 }{ 2 }\\mathbf{a}t^2$). Remember to integrate acceleration to find the full displacement."
+        },
+        {
+            "ans": "(a) $-24\\mathbf{i} - 8\\mathbf{j}$, (b) $T = 10\\text{ s}$",
+            "feedback": "This occurs if you make a calculation slip when solving $-10 + 2T = 0$, such as multiplying by $2$ instead of dividing. Ensure your algebra is robust: $2T = 10 \\implies T = 5$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Directional Kinematics",
+        "content": "For directional motion, look at the bearings: 'due North' means $v_x = 0$ and $v_y > 0$; 'due East' means $v_y = 0$ and $v_x > 0$. Always check that the non-zero component is positive to avoid accidentally solving for due South or due West."
+    }
+},
+{
+    "id": "012064",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Constant acceleration",
+    "subtopic": [
+        "2D motion with vectors",
+        "Bearings in kinematics"
+    ],
+    "img": false,
+    "question": "In this question, $\\mathbf{i}$ and $\\mathbf{j}$ are horizontal unit vectors due east and due north respectively, and position vectors are given relative to a fixed origin $O$.<br><br>A particle $P$ moves with constant acceleration $(\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{ -2 }$. At time $t = 0$, $P$ is at the point with position vector $(4\\mathbf{i} + 10\\mathbf{j})\\text{ m }$ and is moving with velocity $(2\\mathbf{i} + \\mathbf{j})\\text{ m s}^{ -1 }$.<br><br><strong>(a)</strong> Find the position vector of $P$ at the instant $t = 3\\text{ s }$.<br><br><strong>(b)</strong> Find the bearing on which the particle is moving at the instant $t = 4\\text{ s }$, giving your answer to the nearest degree.",
+    "steps": [
+        "<strong>(a) Find the position vector of $P$ at $t = 3\\text{ s }$:</strong><br>Using the constant acceleration position vector equation $\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{u}t + \\dfrac{ 1 }{ 2 }\\mathbf{a}t^2$ where $\\mathbf{r}_0 = 4\\mathbf{i} + 10\\mathbf{j}$, $\\mathbf{u} = 2\\mathbf{i} + \\mathbf{j}$, $\\mathbf{a} = \\mathbf{i} - 2\\mathbf{j}$, and $t = 3\\text{ s }$:<br><br>\\begin{aligned} \\mathbf{r} &= (4\\mathbf{i} + 10\\mathbf{j}) + (2\\mathbf{i} + \\mathbf{j})(3) + \\dfrac{ 1 }{ 2 }(\\mathbf{i} - 2\\mathbf{j})(3)^2 \\cr &= 4\\mathbf{i} + 10\\mathbf{j} + 6\\mathbf{i} + 3\\mathbf{j} + 4.5(\\mathbf{i} - 2\\mathbf{j}) \\cr &= 10\\mathbf{i} + 13\\mathbf{j} + 4.5\\mathbf{i} - 9\\mathbf{j} \\cr &= 14.5\\mathbf{i} + 4\\mathbf{j} \\end{aligned}<br><br>The position vector is $(14.5\\mathbf{i} + 4\\mathbf{j})\\text{ m }$." ,
+        "<strong>(b) Find the bearing at $t = 4\\text{ s }$:</strong><br>First, find the velocity vector of the particle at $t = 4\\text{ s }$ using the equation $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$:<br><br>\\begin{aligned} \\mathbf{v} &= (2\\mathbf{i} + \\mathbf{j}) + 4(\\mathbf{i} - 2\\mathbf{j}) \\cr &= 6\\mathbf{i} - 7\\mathbf{j} \\end{aligned}" ,
+        "The velocity vector $6\\mathbf{i} - 7\\mathbf{j}$ has a positive horizontal component (East) and a negative vertical component (South). This means the particle is moving in the south-east quadrant. Sketch the vector to visualise the angle with the South axis:<br><br>\\begin{aligned} \\tan \\phi &= \\dfrac{ \\text{ East component } }{ \\text{ South component } } \\cr \\tan \\phi &= \\dfrac{ 6 }{ 7 } \\cr \\phi &\\approx 40.6^{\\circ} \\end{aligned}" ,
+        "A bearing is measured clockwise from North ($0^{\\circ}$). Since the particle is moving at an angle of $40.6^{\\circ}$ East of South, calculate the bearing by subtracting this angle from the South line ($180^{\\circ}$):<br><br>\\begin{aligned} \\text{ Bearing } &= 180^{\\circ} - 40.6^{\\circ} \\cr &= 139.4^{\\circ} \\end{aligned}<br><br>To the nearest degree, the bearing on which the particle is moving is $139^{\\circ}$."
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $14.5\\mathbf{i} + 4\\mathbf{j}$, (b) $141^{\\circ}$",
+            "feedback": "This bearing is incorrect due to a rounding error or slip. The angle East of South is exactly $\\arctan(6/7) \\approx 40.6^{\\circ}$, so the bearing is $180 - 40.6 = 139.4^{\\circ}$, which rounds down to $139^{\\circ}$."
+        },
+        {
+            "ans": "(a) $10\\mathbf{i} + 13\\mathbf{j}$, (b) $139^{\\circ}$",
+            "feedback": "This position vector is obtained if you neglect the acceleration term $\\dfrac{ 1 }{ 2 }\\mathbf{a}t^2$ in the position formula. Make sure to include all components of the SUVAT position vector."
+        },
+        {
+            "ans": "(a) $14.5\\mathbf{i} + 4\\mathbf{j}$, (b) $311^{\\circ}$",
+            "feedback": "This bearing is in the north-west quadrant. It occurs if you misidentify the components of the velocity vector $6\\mathbf{i} - 7\\mathbf{j}$ as being West and North instead of East and South. Sketch your vector to confirm the quadrant."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Sketching Bearings First",
+        "content": "Always sketch the velocity vector first before calculating any angle. A velocity of $6\\mathbf{i} - 7\\mathbf{j}$ has an East component of $6$ and a South component of $7$ (putting it in the 4th quadrant). This immediately tells you the bearing must lie between $90^{\\circ}$ and $180^{\\circ}$."
+    }
+},
+{
+    "id": "012075",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Constant acceleration",
+    "subtopic": [
+        "Collisions in 2D",
+        "2D motion with vectors",
+        "Distance between particles"
+    ],
+    "img": false,
+    "question": "In this question, $\\mathbf{i}$ and $\\mathbf{j}$ are horizontal unit vectors due east and due north respectively, and position vectors are given relative to a fixed origin $O$.<br><br>Two particles, $P$ and $Q$, move with constant acceleration:<br>• At $t = 0$, $P$ is at the point with position vector $(2\\mathbf{i} + 5\\mathbf{j})\\text{ m }$, moving with velocity $(4\\mathbf{i} - \\mathbf{j})\\text{ m s}^{ -1 }$, under a constant acceleration of $(\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{ -2 }$.<br>• At $t = 0$, $Q$ starts from the origin $O$, moving with velocity $(6\\mathbf{i} + 3\\mathbf{j})\\text{ m s}^{ -1 }$, under a constant acceleration of $(2\\mathbf{i} + \\mathbf{j})\\text{ m s}^{ -2 }$.<br><br><strong>(a)</strong> Find the position vector of $P$ and the position vector of $Q$ at time $t$ seconds.<br><br><strong>(b)</strong> Find the exact distance between $P$ and $Q$ at the instant $t = 2\\text{ s }$.",
+    "steps": [
+        "<strong>(a) Find the position vector of each particle:</strong><br>Using the constant acceleration position vector equation $\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{u}t + \\dfrac{ 1 }{ 2 }\\mathbf{a}t^2$ for both particles:<br>• For particle $P$:<br><br>\\begin{aligned} \\mathbf{r}_P &= (2\\mathbf{i} + 5\\mathbf{j}) + t(4\\mathbf{i} - \\mathbf{j}) + \\dfrac{ 1 }{ 2 }t^2(\\mathbf{i} + 2\\mathbf{j}) \\cr &= (2 + 4t + 0.5t^2)\\mathbf{i} + (5 - t + t^2)\\mathbf{j} \\end{aligned}" ,
+        "• For particle $Q$:<br><br>\\begin{aligned} \\mathbf{r}_Q &= \\mathbf{0} + t(6\\mathbf{i} + 3\\mathbf{j}) + \\dfrac{ 1 }{ 2 }t^2(2\\mathbf{i} + \\mathbf{j}) \\cr &= (6t + t^2)\\mathbf{i} + (3t + 0.5t^2)\\mathbf{j} \\end{aligned}" ,
+        "<strong>(b) Find the distance between them at $t = 2\\text{ s }$:</strong><br>Evaluate the position of each particle at $t = 2$:<br>• Position of $P$ at $t = 2$:<br><br>\\begin{aligned} \\mathbf{r}_P(2) &= (2 + 4(2) + 0.5(2)^2)\\mathbf{i} + (5 - (2) + (2)^2)\\mathbf{j} \\cr &= (2 + 8 + 2)\\mathbf{i} + (5 - 2 + 4)\\mathbf{j} \\cr &= 12\\mathbf{i} + 7\\mathbf{j} \\end{aligned}" ,
+        "• Position of $Q$ at $t = 2$:<br><br>\\begin{aligned} \\mathbf{r}_Q(2) &= (6(2) + (2)^2)\\mathbf{i} + (3(2) + 0.5(2)^2)\\mathbf{j} \\cr &= (12 + 4)\\mathbf{i} + (6 + 2)\\mathbf{j} \\cr &= 16\\mathbf{i} + 8\\mathbf{j} \\end{aligned}" ,
+        "Find the separation displacement vector $\\vec{ PQ }$ from $P$ to $Q$ at $t = 2\\text{ s }$ by subtracting $\\mathbf{r}_P$ from $\\mathbf{r}_Q$:<br><br>\\begin{aligned} \\vec{ PQ } &= \\mathbf{r}_Q(2) - \\mathbf{r}_P(2) \\cr &= (16\\mathbf{i} + 8\\mathbf{j}) - (12\\mathbf{i} + 7\\mathbf{j}) \\cr &= 4\\mathbf{i} + \\mathbf{j} \\end{aligned}" ,
+        "Calculate the exact distance, which is the magnitude of the separation vector $\\vec{ PQ }$:<br><br>\\begin{aligned} |\\vec{ PQ }| &= \\sqrt{ (4)^2 + (1)^2 } \\cr &= \\sqrt{ 16 + 1 } \\cr &= \\sqrt{ 17 }\\text{ m } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\mathbf{r}_P$, $\\mathbf{r}_Q$, (b) $\\sqrt{ 26 }\\text{ m }$",
+            "feedback": "This distance $\\sqrt{26}\\text{ m}$ is obtained if you make a component subtraction error when calculating the separation vector, such as evaluating the difference as $5\\mathbf{i} + \\mathbf{j}$ or similar."
+        },
+        {
+            "ans": "(a) $\\mathbf{r}_P$, $\\mathbf{r}_Q$, (b) $5\\text{ m }$",
+            "feedback": "This represents a calculation error where the component differences are simply added ($4 + 1 = 5$) instead of applying Pythagoras' theorem to find the true magnitude."
+        },
+        {
+            "ans": "(a) $\\mathbf{r}_P$, $\\mathbf{r}_Q$, (b) $\\sqrt{ 15 }\\text{ m }$",
+            "feedback": "This is a subtraction error under the square root, such as computing $16 - 1 = 15$ instead of $16 + 1 = 17$. Always write out the sum of the squared components carefully."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Absolute Separation",
+        "content": "To find the distance between any two particles in 2D space, first find their individual position vectors at the specified time, subtract one from the other to get the relative displacement vector, and then apply Pythagoras' theorem to find the absolute separation distance."
+    }
 }
     
 
