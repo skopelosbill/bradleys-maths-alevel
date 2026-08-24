@@ -198,6 +198,211 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Deceleration vs. Acceleration",
         "content": "Always express deceleration as a positive value. Since acceleration $a = -12\\text{ m s}^{ -2 }$ is already negative (indicating a decrease in speed), 'deceleration' is defined as the magnitude of this rate of slowing down, which is $12\\text{ m s}^{ -2 }$."
     }
+},
+{
+    "id": "012056",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "Forces and Newton's laws",
+    "topic": "Connected particles",
+    "subtopic": [
+        "Fixed pulley systems",
+        "Newton's second law"
+    ],
+    "img": "images/Mechanics_pngs/012056.png",
+    "question": "Two small balls, $A$ and $B$, have masses $3m$ and $km$ respectively, where $k < 3$. The balls are attached to the ends of a light inextensible string that passes over a small smooth fixed pulley. The system is held at rest with the string taut and the hanging parts vertical, as shown in the diagram. The system is released from rest and, in the subsequent motion, $A$ moves downwards with an acceleration of magnitude $\\dfrac{ 1 }{ 2 }g$. The balls are modelled as particles.<br><br>Using the model,<br><strong>(a)</strong> find, in terms of $m$ and $g$, the tension in the string,<br><strong>(b)</strong> explain why the acceleration of $B$ also has magnitude $\\dfrac{ 1 }{ 2 }g$,<br><strong>(c)</strong> find the value of $k$,<br><strong>(d)</strong> state one physical factor of the string that has been ignored in this model.",
+    "steps": [
+        "<strong>(a) Find the tension in the string:</strong><br>Consider the downward vertical motion of ball $A$ (mass $3m$). Applying Newton's second law ($F = ma$) in the direction of motion:<br><br>\\begin{aligned} 3mg - T &= 3ma \\cr 3mg - T &= 3m\\left( \\dfrac{ 1 }{ 2 }g \\right) \\cr 3mg - T &= 1.5mg \\end{aligned}",
+        "Rearrange to solve for the tension $T$:<br><br>\\begin{aligned} T &= 3mg - 1.5mg \\cr T &= 1.5mg \\quad \\left( \\text{or } \\dfrac{ 3 }{ 2 }mg \\right) \\end{aligned}",
+        "<strong>(b) Explain why the acceleration of $B$ also has magnitude $\\dfrac{ 1 }{ 2 }g$:</strong><br>Because the string is modelled as being <strong>inextensible</strong>, the displacement, velocity, and magnitude of acceleration of both particles must be identical at any given instant while the string remains taut.",
+        "<strong>(c) Find the value of $k$:</strong><br>Consider the upward vertical motion of ball $B$ (mass $km$). Applying Newton's second law in the direction of motion:<br><br>\\begin{aligned} T - kmg &= kma \\cr 1.5mg - kmg &= km\\left( \\dfrac{ 1 }{ 2 }g \\right) \\cr 1.5mg - kmg &= 0.5kmg \\end{aligned}",
+        "Add $kmg$ to both sides and solve for $k$:<br><br>\\begin{aligned} 1.5mg &= 1.5kmg \\cr 1.5 &= 1.5k \\cr k &= 1 \\end{aligned}",
+        "<strong>(d) Identify one ignored limitation:</strong><br>The model assumes the string is light, thereby ignoring the mass/weight of the string."
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T = mg$, (c) $k = 2$",
+            "feedback": "This occurs if you use a mass of $2m$ instead of $3m$ for ball $A$. Double check the masses given in the question description."
+        },
+        {
+            "ans": "(a) $T = 1.5mg$, (c) $k = 0.5$",
+            "feedback": "This is a sign error when applying Newton's second law to the upward motion of $B$. The equation must be $T - kmg = kma$, not $kmg - T = kma$. Since $B$ moves upwards, the tension must exceed its weight."
+        },
+        {
+            "ans": "(a) $T = 3mg$, (c) $k = 1$",
+            "feedback": "This tension of $3mg$ is obtained if you assume the system is in static equilibrium ($a = 0$). Since the system is released and accelerates, the tension must be less than the weight of $A$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Inextensible vs. Light",
+        "content": "Do not confuse the modeling assumptions. The term 'light' implies we ignore the mass of the string (tension is uniform throughout). The term 'inextensible' is what guarantees that both particles share the exact same magnitude of acceleration."
+    }
+},
+{
+    "id": "012057",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "Forces and Newton's laws",
+    "topic": "Connected particles",
+    "subtopic": [
+        "Pulley on a horizontal table",
+        "Newton's second law",
+        "Resultant force on a pulley"
+    ],
+    "img": "images/Mechanics_pngs/012057.png",
+    "question": "A block $A$ of mass $3\\text{ kg}$ lies on a smooth horizontal table. $A$ is connected by a light inextensible string, passing over a small smooth pulley fixed at the edge of the table, to a hanging ball $B$ of mass $2\\text{ kg}$ which hangs freely, as shown in the diagram. The system is released from rest with the string taut.<br><br>Using the model,<br><strong>(a)</strong> find the acceleration of the system,<br><strong>(b)</strong> find the tension in the string,<br><strong>(c)</strong> find the magnitude of the force exerted by the string on the pulley.",
+    "steps": [
+        "<strong>(a) Find the acceleration of the system ($a$):</strong><br>Write the equations of motion for each particle using Newton's second law ($F = ma$):<br>• For block $A$ (moving horizontally to the right):<br><br>\\begin{aligned} T &= 3a \\end{aligned}<br><br>• For hanging ball $B$ (moving vertically downwards):<br><br>\\begin{aligned} 2g - T &= 2a \\end{aligned}",
+        "Add the two equations to eliminate the tension $T$:<br><br>\\begin{aligned} 2g &= 5a \\cr a &= \\dfrac{ 2g }{ 5 } \\cr a &= 0.4 \\times 9.8 \\cr a &= 3.92\\text{ m s}^{ -2 } \\end{aligned}",
+        "<strong>(b) Find the tension in the string ($T$):</strong><br>Substitute the acceleration $a = 3.92\\text{ m s}^{ -2 }$ back into the equation for block $A$:<br><br>\\begin{aligned} T &= 3 \\times 3.92 \\cr T &= 11.76\\text{ N } \\end{aligned}",
+        "<strong>(c) Find the magnitude of the force exerted by the string on the pulley:</strong><br>The string exerts two perpendicular forces of magnitude $T$ on the pulley: one acting horizontally to the left, and one acting vertically downwards. The magnitude of the resultant force $F$ is found using Pythagoras' theorem:<br><br>\\begin{aligned} F &= \\sqrt{ T^2 + T^2 } \\cr F &= T\\sqrt{ 2 } \\end{aligned}",
+        "Substitute $T = 11.76\\text{ N }$ into the formula:<br><br>\\begin{aligned} F &= 11.76 \\times \\sqrt{ 2 } \\cr &\\approx 11.76 \\times 1.414 \\cr &\\approx 16.63\\text{ N } \\end{aligned}<br><br>To 3 significant figures, the force exerted on the pulley is $16.6\\text{ N }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $3.92\\text{ m s}^{-2}$, (b) $11.8\\text{ N}$, (c) $23.5\\text{ N}$",
+            "feedback": "This is a common error where the force on the pulley is calculated as $T + T = 2T$. Because the horizontal and vertical tensions act at right angles, you must use vector addition (Pythagoras) rather than simple addition."
+        },
+        {
+            "ans": "(a) $1.96\\text{ m s}^{-2}$, (b) $5.88\\text{ N}$, (c) $8.32\\text{ N}$",
+            "feedback": "This occurs if you treat the total mass of the system as $10\\text{ kg}$ or make a division error when finding $a$. The total accelerating mass is $3 + 2 = 5\\text{ kg}$."
+        },
+        {
+            "ans": "(a) $3.92\\text{ m s}^{-2}$, (b) $19.6\\text{ N}$, (c) $27.7\\text{ N}$",
+            "feedback": "This tension of $19.6\\text{ N}$ is the static weight of ball $B$ ($2g$). Since the system is accelerating, the tension in the string must be less than the weight of the hanging mass."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Resultant Pulley Forces",
+        "content": "When finding the resultant force on a pulley, look at the geometry. If the string goes from horizontal to vertical, the angle between the two tension forces is $90^\\circ$, so the resultant is always $T\\sqrt{ 2 }$. If the string goes over a vertical pulley with parallel sides, the force is simply $2T$."
+    }
+},
+{
+    "id": "012058",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "Forces and Newton's laws",
+    "topic": "Connected particles",
+    "subtopic": [
+        "Pulley on a rough table",
+        "Friction",
+        "Newton's second law"
+    ],
+    "img": "images/Mechanics_pngs/012058.png",
+    "question": "A block $P$ of mass $4\\text{ kg}$ lies on a rough horizontal table. $P$ is connected by a light inextensible string, passing over a small smooth pulley fixed at the edge of the table, to a sphere $Q$ of mass $3\\text{ kg}$ which hangs freely, as shown in the diagram. The coefficient of friction between $P$ and the table is $\\mu$.<br><br>The system is released from rest with the string taut and $Q$ at a height of $1.5\\text{ m }$ above the floor. In the subsequent motion, $Q$ descends with an acceleration of $2.8\\text{ m s}^{ -2 }$.<br><br>Using the model,<br><strong>(a)</strong> find the tension in the string,<br><strong>(b)</strong> find the value of $\\mu$,<br><strong>(c)</strong> find the speed with which $Q$ hits the floor.",
+    "steps": [
+        "<strong>(a) Find the tension in the string ($T$):</strong><br>Consider the vertical downward motion of sphere $Q$ (mass $3\\text{ kg}$). Using Newton's second law in the direction of motion:<br><br>\\begin{aligned} 3g - T &= 3a \\cr 3(9.8) - T &= 3(2.8) \\cr 29.4 - T &= 8.4 \\end{aligned}",
+        "Solve for the tension $T$:<br><br>\\begin{aligned} T &= 29.4 - 8.4 \\cr T &= 21\\text{ N } \\end{aligned}",
+        "<strong>(b) Find the value of $\\mu$:</strong><br>Consider the horizontal motion of block $P$ (mass $4\\text{ kg}$) to the right. The forces acting on $P$ are the tension $T$ to the right, and the friction force $F$ to the left:<br><br>\\begin{aligned} T - F &= 4a \\cr 21 - F &= 4(2.8) \\cr 21 - F &= 11.2 \\cr F &= 9.8\\text{ N } \\end{aligned}",
+        "Since $P$ is in motion, friction is at its maximum limiting value ($F = \\mu R$). The normal reaction force $R$ balances the weight of $P$ vertically:<br><br>\\begin{aligned} R &= 4g \\cr &= 4(9.8) \\cr &= 39.2\\text{ N } \\end{aligned}<br><br>Substitute $F = 9.8\\text{ N }$ and $R = 39.2\\text{ N }$ into the friction formula:<br><br>\\begin{aligned} 9.8 &= \\mu(39.2) \\cr \\mu &= \\dfrac{ 9.8 }{ 39.2 } \\cr \\mu &= 0.25 \\end{aligned}",
+        "<strong>(c) Find the speed with which $Q$ hits the floor ($v$):</strong><br>Using constant acceleration (SUVAT) with the downward parameters:<br>• Initial speed, $u = 0\\text{ m s}^{ -1 }$<br>• Acceleration, $a = 2.8\\text{ m s}^{ -2 }$<br>• Distance, $s = 1.5\\text{ m }$<br><br>\\begin{aligned} v^2 &= u^2 + 2as \\cr v^2 &= 0 + 2(2.8)(1.5) \\cr v^2 &= 8.4 \\cr v &= \\sqrt{ 8.4 } \\cr &\\approx 2.898\\text{ m s}^{ -1 } \\end{aligned}<br><br>To 2 significant figures, the speed with which $Q$ hits the floor is $2.9\\text{ m s}^{ -1 }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $\\mu = 0.53$, (c) $2.9\\text{ m s}^{-1}$",
+            "feedback": "This occurs if you fail to subtract the force of friction correctly, or write $T + F = 4a$ instead of $T - F = 4a$. Remember that friction always opposes the direction of motion."
+        },
+        {
+            "ans": "(b) $\\mu = 0.25$, (c) $4.2\\text{ m s}^{-1}$",
+            "feedback": "This speed of $4.2\\text{ m s}^{-1}$ represents forgetting to take the square root of $v^2 = 8.4$, or a minor SUVAT arithmetic slip. Make sure to apply $v = \\sqrt{ 2as }$."
+        },
+        {
+            "ans": "(b) $\\mu = 0.29$, (c) $2.9\\text{ m s}^{-1}$",
+            "feedback": "This is a common reaction force error where the normal reaction is calculated using mass instead of weight (i.e., using $R = 4$ instead of $R = 4g = 39.2$). Friction is related to the normal contact force in Newtons."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Normal Reaction in Newtons",
+        "content": "When computing the coefficient of friction $\\mu = \\dfrac{ F }{ R }$, make sure that both friction $F$ and normal reaction $R$ are expressed in Newtons ($R = mg$). A very common mistake is using the mass directly as the normal reaction, which leads to an incorrect value of $\\mu > 1$."
+    }
+},
+{
+    "id": "012059",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "Forces and Newton's laws",
+    "topic": "Connected particles",
+    "subtopic": [
+        "Pulley on an inclined plane",
+        "Resolving forces",
+        "Newton's second law"
+    ],
+    "img": "images/Mechanics_pngs/012059.png",
+    "question": "A particle $A$ of mass $2\\text{ kg}$ is held at rest on a smooth plane inclined at an angle of $30^\\circ$ to the horizontal. $A$ is attached to one end of a light inextensible string. The string passes over a small smooth pulley fixed at the top of the plane. The other end of the string is attached to a particle $B$ of mass $3\\text{ kg}$ which hangs vertically below the pulley, as shown in the diagram. The system is released from rest with the string taut.<br><br>Using the model,<br><strong>(a)</strong> write down an equation of motion for particle $A$ and an equation of motion for particle $B$,<br><strong>(b)</strong> find the acceleration of the system,<br><strong>(c)</strong> find the tension in the string.",
+    "steps": [
+        "<strong>(a) Write the equations of motion for particles $A$ and $B$:</strong><br>Since the weight of $B$ ($3g = 29.4\\text{ N }$) is greater than the component of the weight of $A$ down the plane ($2g \\sin(30^\\circ) = 9.8\\text{ N }$), particle $B$ will accelerate downwards and particle $A$ will accelerate up the plane.<br><br>Applying Newton's second law ($F = ma$) in the direction of motion for each particle:<br>• For particle $A$ (moving up the inclined plane):<br><br>\\begin{aligned} T - 2g \\sin(30^\\circ) &= 2a \\cr T - 9.8 &= 2a \\end{aligned}<br><br>• For particle $B$ (moving vertically downwards):<br><br>\\begin{aligned} 3g - T &= 3a \\cr 29.4 - T &= 3a \\end{aligned}",
+        "<strong>(b) Find the acceleration of the system ($a$):</strong><br>Add the two equations of motion to eliminate the tension $T$:<br><br>\\begin{aligned} (T - 9.8) + (29.4 - T) &= 2a + 3a \\cr 19.6 &= 5a \\cr a &= 3.92\\text{ m s}^{ -2 } \\end{aligned}",
+        "<strong>(c) Find the tension in the string ($T$):</strong><br>Substitute the acceleration $a = 3.92\\text{ m s}^{ -2 }$ into the equation of motion for particle $A$:<br><br>\\begin{aligned} T - 9.8 &= 2(3.92) \\cr T - 9.8 &= 7.84 \\cr T &= 17.64\\text{ N } \\end{aligned}<br><br>To 3 significant figures, the tension in the string is $17.6\\text{ N }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $1.96\\text{ m s}^{-2}$, (c) $13.7\\text{ N}$",
+            "feedback": "This is a common error resulting from resolving the weight of particle $A$ down the plane using cosine instead of sine (i.e., using $2g \\cos(30^\\circ)$). Remember that the force component pulling down the incline is parallel to the plane, which involves the sine of the inclination angle."
+        },
+        {
+            "ans": "(b) $3.92\\text{ m s}^{-2}$, (c) $29.4\\text{ N}$",
+            "feedback": "This tension of $29.4\\text{ N}$ is the static weight of particle $B$ ($3g$). Because the system is in motion and accelerating downwards, the tension must be strictly less than the weight of the hanging mass."
+        },
+        {
+            "ans": "(b) $1.96\\text{ m s}^{-2}$, (c) $17.6\\text{ N}$",
+            "feedback": "This represents an error where the total accelerating mass is treated as $10\\text{ kg}$ or a division slip is made when calculating $a$. The total mass of both particles is $2 + 3 = 5\\text{ kg}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Slopes and Weight Components",
+        "content": "For any particle of mass $m$ on an incline of angle $\\theta$, the component of weight acting parallel to the slope is always $mg\\sin\\theta$, and the component acting perpendicular is $mg\\cos\\theta$. Memorising this standard decomposition will save you valuable time during exam resolution."
+    }
+},
+{
+    "id": "012060",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Connected particles",
+    "subtopic": [
+        "Fixed pulley systems",
+        "Multi-stage motion",
+        "Newton's second law"
+    ],
+    "img": "images/Mechanics_pngs/012060.png",
+    "question": "Two particles, $X$ and $Y$, have masses $3\\text{ kg}$ and $1\\text{ kg}$ respectively. The particles are attached to the ends of a light inextensible string that passes over a small smooth fixed pulley. The system is held at rest with the string taut and both particles hanging vertically, as shown in the diagram.<br><br>At the instant of release, particle $X$ is at a height of $5\\text{ m }$ above horizontal ground. The system is released from rest and, in the subsequent motion, $X$ hits the ground and does not rebound.<br><br>Using the model,<br><strong>(a)</strong> find the acceleration of the system and the tension in the string before $X$ hits the ground,<br><strong>(b)</strong> find the speed of $X$ at the instant it hits the ground,<br><strong>(c)</strong> find the total maximum height reached by $Y$ above its initial starting position.",
+    "steps": [
+        "<strong>(a) Find the acceleration and tension before $X$ hits the ground:</strong><br>Since $X$ is heavier, it accelerates downwards while $Y$ accelerates upwards with the same magnitude $a$. Applying Newton's second law ($F = ma$) to both particles:<br>• For $X$ (moving downwards):<br><br>\\begin{aligned} 3g - T &= 3a \\end{aligned}<br><br>• For $Y$ (moving upwards):<br><br>\\begin{aligned} T - 1g &= 1a \\end{aligned}",
+        "Add the two equations to eliminate $T$ and solve for $a$:<br><br>\\begin{aligned} 2g &= 4a \\cr a &= 0.5g \\cr a &= 0.5 \\times 9.8 \\cr a &= 4.9\\text{ m s}^{ -2 } \\end{aligned}",
+        "Substitute $a = 4.9\\text{ m s}^{ -2 }$ into the equation of motion for particle $Y$:<br><br>\\begin{aligned} T - 9.8 &= 1(4.9) \\cr T &= 14.7\\text{ N } \\end{aligned}",
+        "<strong>(b) Find the speed of $X$ at the instant it hits the ground:</strong><br>Using constant acceleration equations for the downward motion of $X$ through a displacement $s = 5\\text{ m }$:<br>• Initial speed, $u = 0\\text{ m s}^{ -1 }$<br>• Acceleration, $a = 4.9\\text{ m s}^{ -2 }$<br>• Distance, $s = 5\\text{ m }$<br><br>\\begin{aligned} v^2 &= u^2 + 2as \\cr v^2 &= 0 + 2(4.9)(5) \\cr v^2 &= 49 \\cr v &= 7\\text{ m s}^{ -1 } \\end{aligned}",
+        "<strong>(c) Find the total maximum height reached by $Y$ above its starting position:</strong><br>This is a <strong>two-stage</strong> motion problem:<br><br>• <strong>Stage 1 (String Taut):</strong> While $X$ falls $5\\text{ m }$, particle $Y$ is pulled upwards by a distance of $5\\text{ m }$. At the end of this stage, $Y$ has an upward speed of $v = 7\\text{ m s}^{ -1 }$.",
+        "• <strong>Stage 2 (String Slack):</strong> The moment $X$ hits the ground, the string goes slack and the tension drops to zero. Particle $Y$ now moves freely under gravity alone as a projectile with initial upward speed $u_2 = 7\\text{ m s}^{ -1 }$ and acceleration $g = -9.8\\text{ m s}^{ -2 }$ until it reaches its highest point where $v_2 = 0$:<br><br>\\begin{aligned} v_2^2 &= u_2^2 + 2gs_2 \\cr 0^2 &= (7)^2 + 2(-9.8)s_2 \\cr 0 &= 49 - 19.6s_2 \\cr 19.6s_2 &= 49 \\cr s_2 &= 2.5\\text{ m } \\end{aligned}",
+        "Calculate the total vertical height reached by $Y$ above its starting position by summing the heights from both stages:<br><br>\\begin{aligned} \\text{ Total Height } &= s_1 + s_2 \\cr &= 5\\text{ m } + 2.5\\text{ m } \\cr &= 7.5\\text{ m } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $a = 4.9\\text{ m s}^{-2}, T = 14.7\\text{ N}$, (b) $7\\text{ m s}^{-1}$, (c) $2.5\\text{ m}$",
+            "feedback": "This $2.5\\text{ m}$ represents only the extra distance travelled by $Y$ after the string goes slack (Stage 2). To find the total height above its starting position, you must add the initial $5\\text{ m}$ of ascent from Stage 1."
+        },
+        {
+            "ans": "(a) $a = 4.9\\text{ m s}^{-2}, T = 14.7\\text{ N}$, (b) $7\\text{ m s}^{-1}$, (c) $5.0\\text{ m}$",
+            "feedback": "This $5.0\\text{ m}$ is the height reached at the moment $X$ hits the ground. It fails to account for the fact that $Y$ possesses upward momentum and will continue to rise freely under gravity for another $2.5\\text{ m}$."
+        },
+        {
+            "ans": "(a) $a = 4.9\\text{ m s}^{-2}, T = 14.7\\text{ N}$, (b) $4.9\\text{ m s}^{-1}$, (c) $6.2\\text{ m}$",
+            "feedback": "This occurs due to a SUVAT calculation error in part (b), setting the final speed to $4.9\\text{ m s}^{-1}$ instead of $7\\text{ m s}^{-1}$. Ensure you use the formula $v = \\sqrt{ 2as }$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: String Slack Dynamics",
+        "content": "Multi-body pulley questions involving impact are classics in Mechanics. When the heavier particle hits the floor, the string immediately becomes slack, meaning $T$ instantly drops to zero. The lighter particle behaves as a free-falling projectile under gravity alone ($a = -g$) until its upward velocity hits zero."
+    }
 }
     
 
