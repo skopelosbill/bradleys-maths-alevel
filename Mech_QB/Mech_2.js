@@ -211,19 +211,19 @@ window.ALEVEL_QUESTIONS = [
         "Newton's second law"
     ],
     "img": "images/Mechanics_pngs/012056.png",
-    "question": "Two small balls, $A$ and $B$, have masses $3m$ and $km$ respectively, where $k < 3$. The balls are attached to the ends of a light inextensible string that passes over a small smooth fixed pulley. The system is held at rest with the string taut and the hanging parts vertical, as shown in the diagram. The system is released from rest and, in the subsequent motion, $A$ moves downwards with an acceleration of magnitude $\\dfrac{ 1 }{ 2 }g$. The balls are modelled as particles.<br><br>Using the model,<br><strong>(a)</strong> find, in terms of $m$ and $g$, the tension in the string,<br><strong>(b)</strong> explain why the acceleration of $B$ also has magnitude $\\dfrac{ 1 }{ 2 }g$,<br><strong>(c)</strong> find the value of $k$,<br><strong>(d)</strong> state one physical factor of the string that has been ignored in this model.",
+    "question": "Two small blocks, $A$ and $B$, have masses $3m$ and $km$ respectively, where $k < 3$. The blocks are attached to the ends of a light inextensible string that passes over a small smooth fixed pulley. The system is held at rest with the string taut and the hanging parts vertical, as shown in the diagram. The system is released from rest and, in the subsequent motion, $A$ moves downwards with an acceleration of magnitude $\\dfrac{ 1 }{ 2 }g$. The blocks are modelled as particles.<br><br>Using the model,<br><strong>(a)</strong> find, in terms of $m$ and $g$, the tension in the string,<br><strong>(b)</strong> explain why the acceleration of $B$ also has magnitude $\\dfrac{ 1 }{ 2 }g$,<br><strong>(c)</strong> find the value of $k$,<br><strong>(d)</strong> state one physical factor of the string that has been ignored in this model.",
     "steps": [
-        "<strong>(a) Find the tension in the string:</strong><br>Consider the downward vertical motion of ball $A$ (mass $3m$). Applying Newton's second law ($F = ma$) in the direction of motion:<br><br>\\begin{aligned} 3mg - T &= 3ma \\cr 3mg - T &= 3m\\left( \\dfrac{ 1 }{ 2 }g \\right) \\cr 3mg - T &= 1.5mg \\end{aligned}",
+        "<strong>(a) Find the tension in the string:</strong><br>Consider the downward vertical motion of block $A$ (mass $3m$). Applying Newton's second law ($F = ma$) in the direction of motion:<br><br>\\begin{aligned} 3mg - T &= 3ma \\cr 3mg - T &= 3m\\left( \\dfrac{ 1 }{ 2 }g \\right) \\cr 3mg - T &= 1.5mg \\end{aligned}",
         "Rearrange to solve for the tension $T$:<br><br>\\begin{aligned} T &= 3mg - 1.5mg \\cr T &= 1.5mg \\quad \\left( \\text{or } \\dfrac{ 3 }{ 2 }mg \\right) \\end{aligned}",
         "<strong>(b) Explain why the acceleration of $B$ also has magnitude $\\dfrac{ 1 }{ 2 }g$:</strong><br>Because the string is modelled as being <strong>inextensible</strong>, the displacement, velocity, and magnitude of acceleration of both particles must be identical at any given instant while the string remains taut.",
-        "<strong>(c) Find the value of $k$:</strong><br>Consider the upward vertical motion of ball $B$ (mass $km$). Applying Newton's second law in the direction of motion:<br><br>\\begin{aligned} T - kmg &= kma \\cr 1.5mg - kmg &= km\\left( \\dfrac{ 1 }{ 2 }g \\right) \\cr 1.5mg - kmg &= 0.5kmg \\end{aligned}",
+        "<strong>(c) Find the value of $k$:</strong><br>Consider the upward vertical motion of block $B$ (mass $km$). Applying Newton's second law in the direction of motion:<br><br>\\begin{aligned} T - kmg &= kma \\cr 1.5mg - kmg &= km\\left( \\dfrac{ 1 }{ 2 }g \\right) \\cr 1.5mg - kmg &= 0.5kmg \\end{aligned}",
         "Add $kmg$ to both sides and solve for $k$:<br><br>\\begin{aligned} 1.5mg &= 1.5kmg \\cr 1.5 &= 1.5k \\cr k &= 1 \\end{aligned}",
         "<strong>(d) Identify one ignored limitation:</strong><br>The model assumes the string is light, thereby ignoring the mass/weight of the string."
     ],
     "pi_options": [
         {
             "ans": "(a) $T = mg$, (c) $k = 2$",
-            "feedback": "This occurs if you use a mass of $2m$ instead of $3m$ for ball $A$. Double check the masses given in the question description."
+            "feedback": "This occurs if you use a mass of $2m$ instead of $3m$ for block $A$. Double check the masses given in the question description."
         },
         {
             "ans": "(a) $T = 1.5mg$, (c) $k = 0.5$",
