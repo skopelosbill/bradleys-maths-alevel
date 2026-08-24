@@ -840,15 +840,15 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "(a) $|\mathbf{a}_1| = 5\text{ m s}^{-2}$, (b) $T = 5\text{ s}$",
+            "ans": "(a) $|\\mathbf{a}_1| = 5\\text{ m s}^{-2}$, (b) $T = 5\\text{ s}$",
             "feedback": "This value of $T$ is the elapsed duration of the second motion phase ($T - 2 = 5$). Remember that the question asks for the total time $T$ from the start of the entire motion ($t = 0$), which requires adding the initial $2\\text{ s}$ phase."
         },
         {
-            "ans": "(a) $|\mathbf{a}_1| = 5\text{ m s}^{-2}$, (b) $T = 8.5\text{ s}$",
+            "ans": "(a) $|\\mathbf{a}_1| = 5\\text{ m s}^{-2}$, (b) $T = 8.5\\text{ s}$",
             "feedback": "This occurs if you make a sign error when expanding the vertical component of velocity, such as writing $-10 + 5.4T + 10.8$ instead of $-10 + 5.4T - 10.8$, leading to an incorrect algebraic equation."
         },
         {
-            "ans": "(a) $|\mathbf{a}_1| = 5\text{ m s}^{-2}$, (b) $T = 6.2\text{ s}$",
+            "ans": "(a) $|\\mathbf{a}_1| = 5\\text{ m s}^{-2}$, (b) $T = 6.2\\text{ s}$",
             "feedback": "This represents a calculation error when solving the linear equation $3.4T = 23.8$. Double-check your decimal division carefully: $23.8 \\div 3.4 = 7$."
         }
     ],
@@ -881,15 +881,15 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "(a) $|\mathbf{a}_1| = 2\\sqrt{ 5 }\\text{ m s}^{-2}$, (b) $T = 7\\text{ s}$",
+            "ans": "(a) $|\\mathbf{a}_1| = 2\\sqrt{ 5 }\\text{ m s}^{-2}$, (b) $T = 7\\text{ s}$",
             "feedback": "This is an error where the total time is mistakenly calculated by adding the initial $3\\text{ s}$ phase to the total time $T = 4\\text{ s}$ solved from the equation. Since the variable $T$ in the equation $(3T - 2)$ already represents the total time from the origin, $T = 4\\text{ s}$ is the final total time."
         },
         {
-            "ans": "(a) $|\mathbf{a}_1| = 2\\sqrt{ 5 }\\text{ m s}^{-2}$, (b) $T = 5.2\\text{ s}$",
+            "ans": "(a) $|\\mathbf{a}_1| = 2\\sqrt{ 5 }\\text{ m s}^{-2}$, (b) $T = 5.2\\text{ s}$",
             "feedback": "This occurs if you use a direction of north-east ($v_x = v_y$) instead of south-east ($v_x = -v_y$) to set up your components equation. Always identify the correct quadrant for the target bearing."
         },
         {
-            "ans": "(a) $|\mathbf{a}_1| = 2\\sqrt{ 5 }\\text{ m s}^{-2}$, (b) $T = 3.5\\text{ s}$",
+            "ans": "(a) $|\\mathbf{a}_1| = 2\\sqrt{ 5 }\\text{ m s}^{-2}$, (b) $T = 3.5\\text{ s}$",
             "feedback": "This represents a calculation error, such as a decimal or subtraction slip when setting up or solving $8T = 32$. Ensure you expand and group terms carefully."
         }
     ],
