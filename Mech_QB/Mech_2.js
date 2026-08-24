@@ -403,6 +403,211 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: String Slack Dynamics",
         "content": "Multi-body pulley questions involving impact are classics in Mechanics. When the heavier particle hits the floor, the string immediately becomes slack, meaning $T$ instantly drops to zero. The lighter particle behaves as a free-falling projectile under gravity alone ($a = -g$) until its upward velocity hits zero."
     }
+},
+{
+    "id": "012061",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable acceleration",
+    "subtopic": [
+        "Integration in kinematics",
+        "2D motion with vectors"
+    ],
+    "img": false,
+    "question": "At time $t$ seconds, where $t \\ge 0$, a particle $P$ moves in the $x$-$y$ plane in such a way that its velocity, $\\mathbf{v}\\text{ m s}^{ -1 }$, is given by:<br>$$\\mathbf{v} = t^{ -1/2 }\\mathbf{i} - 2t\\mathbf{j}$$<br>When $t = 1$, $P$ is at the point $A$ and when $t = 4$, $P$ is at the point $B$.<br><br>Find the exact distance $AB$.",
+    "steps": [
+        "Find the displacement vector by integrating the velocity vector with respect to time ($t$):<br><br>\\begin{aligned} \\mathbf{r} &= \\int \\left( t^{ -1/2 }\\mathbf{i} - 2t\\mathbf{j} \\right) \\, \\mathrm{d}t \\cr &= 2t^{ 1/2 }\\mathbf{i} - t^2\\mathbf{j} + \\mathbf{C} \\end{aligned}",
+        "Calculate the position vector of the particle at the two given times, $t = 1$ and $t = 4$. Note that the constant of integration $\\mathbf{C}$ will cancel out when we find the difference between the two positions:<br>• At $t = 1$ (point $A$):<br><br>\\begin{aligned} \\mathbf{r}(1) &= 2(1)^{ 1/2 }\\mathbf{i} - (1)^2\\mathbf{j} + \\mathbf{C} \\cr &= 2\\mathbf{i} - \\mathbf{j} + \\mathbf{C} \\end{aligned}<br><br>• At $t = 4$ (point $B$):<br><br>\\begin{aligned} \\mathbf{r}(4) &= 2(4)^{ 1/2 }\\mathbf{i} - (4)^2\\mathbf{j} + \\mathbf{C} \\cr &= 4\\mathbf{i} - 16\\mathbf{j} + \\mathbf{C} \\end{aligned}",
+        "Find the displacement vector $\\vec{ AB }$ from point $A$ to point $B$ by subtracting the position vector at $t = 1$ from the position vector at $t = 4$:<br><br>\\begin{aligned} \\vec{ AB } &= \\mathbf{r}(4) - \\mathbf{r}(1) \\cr &= (4\\mathbf{i} - 16\\mathbf{j} + \\mathbf{C}) - (2\\mathbf{i} - \\mathbf{j} + \\mathbf{C}) \\cr &= (4 - 2)\\mathbf{i} + (-16 - (-1))\\mathbf{j} \\cr &= 2\\mathbf{i} - 15\\mathbf{j} \\end{aligned}",
+        "Calculate the magnitude of the displacement vector $\\vec{ AB }$ to find the exact distance:<br><br>\\begin{aligned} |\\vec{ AB }| &= \\sqrt{ (2)^2 + (-15)^2 } \\cr &= \\sqrt{ 4 + 225 } \\cr &= \\sqrt{ 229 }\\text{ m } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$\\sqrt{ 221 }\\text{ m }$",
+            "feedback": "This error occurs if you make a sign slip when calculating the $\\mathbf{j}$ component of the displacement, such as computing $-16 - 1 = -17$ instead of $-16 - (-1) = -15$. Always write out the subtraction of negative components carefully."
+        },
+        {
+            "ans": "$13\\text{ m }$",
+            "feedback": "This is obtained if you integrate $t^{-1/2}$ incorrectly as $-0.5 t^{-3/2}$, leading to an incorrect position vector and distance. Ensure you use the integration rule: add one to the power and divide by the new power."
+        },
+        {
+            "ans": "$\\sqrt{ 257 }\\text{ m }$",
+            "feedback": "This result comes from forgetting to double the coefficient when integrating $t^{-1/2}$, integrating it as $t^{1/2}$ instead of $2t^{1/2}$. Remember that dividing by $1/2$ is equivalent to multiplying by $2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Cancelling the Integration Constant",
+        "content": "In vector kinematics, when finding the displacement vector $\\vec{ AB }$ between two points $A$ and $B$ at specified times, the constant of integration $\\mathbf{C}$ will always cancel out. You do not need to solve for $\\mathbf{C}$ unless the absolute coordinates of the origin are required."
+    }
+},
+{
+    "id": "012062",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable acceleration",
+    "subtopic": [
+        "Integration in kinematics",
+        "2D motion with vectors"
+    ],
+    "img": false,
+    "question": "At time $t$ seconds, where $t \\ge 0$, a particle $P$ moves in the $x$-$y$ plane with acceleration, $\\mathbf{a}\\text{ m s}^{ -2 }$, given by:<br>$$\\mathbf{a} = 6t\\mathbf{i} + 2\\mathbf{j}$$<br>At the instant $t = 0$, the velocity of $P$ is $(\\mathbf{i} - 4\\mathbf{j})\\text{ m s}^{ -1 }$.<br><br>When $t = 1$, $P$ is at the point $A$ and when $t = 3$, $P$ is at the point $B$.<br><br>Find the exact distance $AB$.",
+    "steps": [
+        "First, find the velocity vector $\\mathbf{v}$ by integrating the acceleration vector $\\mathbf{a}$ with respect to time ($t$):<br><br>\\begin{aligned} \\mathbf{v} &= \\int (6t\\mathbf{i} + 2\\mathbf{j}) \\, \\mathrm{d}t \\cr &= 3t^2\\mathbf{i} + 2t\\mathbf{j} + \\mathbf{C}_1 \\end{aligned}",
+        "Use the initial condition at $t = 0$, where the velocity is $\\mathbf{i} - 4\\mathbf{j}$, to solve for the constant vector $\\mathbf{C}_1$:<br><br>\\begin{aligned} 3(0)^2\\mathbf{i} + 2(0)\\mathbf{j} + \\mathbf{C}_1 &= \\mathbf{i} - 4\\mathbf{j} \\cr \\mathbf{C}_1 &= \\mathbf{i} - 4\\mathbf{j} \\end{aligned}<br><br>Therefore, the velocity vector is:<br><br>\\begin{aligned} \\mathbf{v} &= (3t^2 + 1)\\mathbf{i} + (2t - 4)\\mathbf{j} \\end{aligned}",
+        "Find the position vector $\\mathbf{r}$ by integrating the velocity vector $\\mathbf{v}$ with respect to time ($t$):<br><br>\\begin{aligned} \\mathbf{r} &= \\int \\left[ (3t^2 + 1)\\mathbf{i} + (2t - 4)\\mathbf{j} \\right] \\, \\mathrm{d}t \\cr &= (t^3 + t)\\mathbf{i} + (t^2 - 4t)\\mathbf{j} + \\mathbf{C}_2 \\end{aligned}",
+        "Evaluate the position vector of the particle at the two times, $t = 1$ and $t = 3$. The constant vector $\\mathbf{C}_2$ will cancel out during subtraction:<br>• At $t = 1$ (point $A$):<br><br>\\begin{aligned} \\mathbf{r}(1) &= (1^3 + 1)\\mathbf{i} + (1^2 - 4(1))\\mathbf{j} + \\mathbf{C}_2 \\cr &= 2\\mathbf{i} - 3\\mathbf{j} + \\mathbf{C}_2 \\end{aligned}<br><br>• At $t = 3$ (point $B$):<br><br>\\begin{aligned} \\mathbf{r}(3) &= (3^3 + 3)\\mathbf{i} + (3^2 - 4(3))\\mathbf{j} + \\mathbf{C}_2 \\cr &= 30\\mathbf{i} - 3\\mathbf{j} + \\mathbf{C}_2 \\end{aligned}",
+        "Find the displacement vector $\\vec{ AB }$ from point $A$ to point $B$:<br><br>\\begin{aligned} \\vec{ AB } &= \\mathbf{r}(3) - \\mathbf{r}(1) \\cr &= (30\\mathbf{i} - 3\\mathbf{j} + \\mathbf{C}_2) - (2\\mathbf{i} - 3\\mathbf{j} + \\mathbf{C}_2) \\cr &= (30 - 2)\\mathbf{i} + (-3 - (-3))\\mathbf{j} \\cr &= 28\\mathbf{i} + 0\\mathbf{j} \\end{aligned}",
+        "Find the exact distance, which is the magnitude of the displacement vector $\\vec{ AB }$:<br><br>\\begin{aligned} |\\vec{ AB }| &= \\sqrt{ (28)^2 + (0)^2 } \\cr &= 28\\text{ m } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$28\\sqrt{ 2 }\\text{ m }$",
+            "feedback": "This error occurs if you make a sign error when subtracting the $\\mathbf{j}$ components, resulting in $-3 - (-3) = -6$ instead of $0$. Ensure you track signs carefully: $-3 - (-3) = -3 + 3 = 0$."
+        },
+        {
+            "ans": "$26\\text{ m }$",
+            "feedback": "This is obtained if you forget to add the initial velocity components to the velocity integration, integrating $\\mathbf{a} = 6t\\mathbf{i} + 2\\mathbf{j}$ directly to position without applying the initial velocity condition at $t = 0$."
+        },
+        {
+            "ans": "$\\sqrt{ 754 }\\text{ m }$",
+            "feedback": "This result comes from integrating $3t^2$ to $t^3$ but making a coefficient error on the linear terms during integration. Double check your calculus steps."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Step-by-Step Integration",
+        "content": "Do not attempt to integrate directly from acceleration to position. You must always integrate once to find velocity, apply the boundary conditions to find the first constant vector, and then integrate a second time. Skipping this intermediate step will lead to missing linear terms in the position function."
+    }
+},
+{
+    "id": "012063",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable acceleration",
+    "subtopic": [
+        "Integration in kinematics",
+        "2D motion with vectors"
+    ],
+    "img": false,
+    "question": "At time $t$ seconds, where $t \\ge 0$, a particle $P$ moves in the $x$-$y$ plane. The velocity of $P$, $\\mathbf{v}\\text{ m s}^{ -1 }$, is modelled by the formula:<br>$$\\mathbf{v} = (3t^2 - 12)\\mathbf{i} + (4t - 8)\\mathbf{j}$$<br>At $t = 0$, $P$ is at the origin $O$.<br><br><strong>(a)</strong> Find the value of $t$ when $P$ is moving parallel to the vector $\\mathbf{j}$.<br><br><strong>(b)</strong> Find the position vector of $P$ at this instant.<br><br><strong>(c)</strong> Find the exact distance of $P$ from the origin $O$ at this instant.",
+    "steps": [
+        "<strong>(a) Find when $P$ is moving parallel to $\\mathbf{j}$:</strong><br>Moving parallel to the vector $\\mathbf{j}$ means the motion is purely vertical, which implies that the horizontal ($\\mathbf{i}$) component of velocity is zero:<br><br>\\begin{aligned} 3t^2 - 12 &= 0 \\cr t^2 &= 4 \\end{aligned}<br><br>Since $t \\ge 0$, we have $t = 2\\text{ seconds }$.",
+        "<strong>(b) Find the position vector of $P$ at $t = 2$:</strong><br>Integrate the velocity vector $\\mathbf{v}$ with respect to time ($t$) to find the position vector $\\mathbf{r}$:<br><br>\\begin{aligned} \\mathbf{r} &= \\int \\left[ (3t^2 - 12)\\mathbf{i} + (4t - 8)\\mathbf{j} \\right] \\, \\mathrm{d}t \\cr &= (t^3 - 12t)\\mathbf{i} + (2t^2 - 8t)\\mathbf{j} + \\mathbf{C} \\end{aligned}",
+        "Since $P$ is at the origin ($O$) at $t = 0$, we have $\\mathbf{r} = \\mathbf{0}$ at $t = 0$, which yields $\\mathbf{C} = \\mathbf{0}$. Therefore, the position vector is:<br><br>\\begin{aligned} \\mathbf{r} &= (t^3 - 12t)\\mathbf{i} + (2t^2 - 8t)\\mathbf{j} \\end{aligned}",
+        "Substitute $t = 2$ into the position vector equation:<br><br>\\begin{aligned} \\mathbf{r}(2) &= (2^3 - 12(2))\\mathbf{i} + (2(2)^2 - 8(2))\\mathbf{j} \\cr &= (8 - 24)\\mathbf{i} + (8 - 16)\\mathbf{j} \\cr &= -16\\mathbf{i} - 8\\mathbf{j} \\end{aligned}",
+        "<strong>(c) Find the exact distance of $P$ from the origin at $t = 2$:</strong><br>The distance is the magnitude of the position vector $\\mathbf{r}(2)$:<br><br>\\begin{aligned} |\\mathbf{r}(2)| &= \\sqrt{ (-16)^2 + (-8)^2 } \\cr &= \\sqrt{ 256 + 64 } \\cr &= \\sqrt{ 320 } \\cr &= 8\\sqrt{ 5 }\\text{ m } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $t = 2\\text{ s}$, (b) $-16\\mathbf{i} - 8\\mathbf{j}$, (c) $16\\sqrt{ 2 }\\text{ m }$",
+            "feedback": "This distance is incorrect due to a minor calculation slip under the square root, such as computing $256 + 256 = 512$ instead of $256 + 64 = 320$. Ensure you substitute the correct coordinates: $x = -16$ and $y = -8$."
+        },
+        {
+            "ans": "(a) $t = 2\\text{ s}$, (b) $-8\\mathbf{i} - 8\\mathbf{j}$, (c) $8\\sqrt{ 2 }\\text{ m }$",
+            "feedback": "This position vector is obtained if you integrated the horizontal component incorrectly or forgot to multiply by $t$ during the integration. Double check that $\\int 12 \\, \\mathrm{d}t = 12t$."
+        },
+        {
+            "ans": "(a) $t = 2\\text{ s}$, (b) $-16\\mathbf{i} - 8\\mathbf{j}$, (c) $24\\text{ m }$",
+            "feedback": "This distance is the simple sum of the component magnitudes ($16 + 8 = 24$). To find the straight-line distance, you must use Pythagoras' theorem ($d = \\sqrt{ x^2 + y^2 }$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Parallel to the Axes",
+        "content": "When a particle is 'moving parallel to $\\mathbf{j}$', its instantaneous motion is purely vertical, which mathematically means $v_x = 0$. Conversely, if it were 'moving parallel to $\\mathbf{i}$', its instantaneous motion is purely horizontal, meaning $v_y = 0$."
+    }
+},
+{
+    "id": "012064",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable acceleration",
+    "subtopic": [
+        "Differentiation in kinematics",
+        "2D motion with vectors",
+        "Simple harmonic motion"
+    ],
+    "img": false,
+    "question": "At time $t$ seconds, a particle $P$ moves in the $x$-$y$ plane in such a way that its position vector, $\\mathbf{r}$ metres relative to a fixed origin $O$, is given by:<br>$$\\mathbf{r} = (3\\cos 2t)\\mathbf{i} + (4\\sin 2t)\\mathbf{j}$$<br><strong>(a)</strong> Find the velocity vector of the particle at the instant $t = \\dfrac{ \\pi }{ 4 }$.<br><br><strong>(b)</strong> Find the exact speed of the particle at the instant $t = \\dfrac{ \\pi }{ 6 }$.<br><br><strong>(c)</strong> Show that the acceleration of the particle is always directed towards the origin $O$.",
+    "steps": [
+        "<strong>(a) Find the velocity vector of the particle at $t = \\dfrac{ \\pi }{ 4 }$:</strong><br>Differentiate the position vector $\\mathbf{r}$ with respect to time ($t$) to find the velocity vector $\\mathbf{v}$ using the chain rule:<br><br>\\begin{aligned} \\mathbf{v} &= \\dfrac{ \\mathrm{d}\\mathbf{r} }{ \\mathrm{d}t } \\cr &= (-6\\sin 2t)\\mathbf{i} + (8\\cos 2t)\\mathbf{j} \\end{aligned}",
+        "Substitute $t = \\dfrac{ \\pi }{ 4 }$ into the velocity vector equation:<br><br>\\begin{aligned} \\mathbf{v}\\left( \\dfrac{ \\pi }{ 4 } \\right) &= \\left[ -6\\sin\\left( \\dfrac{ \\pi }{ 2 } \\right) \\right]\\mathbf{i} + \\left[ 8\\cos\\left( \\dfrac{ \\pi }{ 2 } \\right) \\right]\\mathbf{j} \\cr &= -6(1)\\mathbf{i} + 8(0)\\mathbf{j} \\cr &= -6\\mathbf{i}\\text{ m s}^{ -1 } \\end{aligned}",
+        "<strong>(b) Find the exact speed of the particle at $t = \\dfrac{ \\pi }{ 6 }$:</strong><br>First, evaluate the velocity vector at $t = \\dfrac{ \\pi }{ 6 }$:<br><br>\\begin{aligned} \\mathbf{v}\\left( \\dfrac{ \\pi }{ 6 } \\right) &= \\left[ -6\\sin\\left( \\dfrac{ \\pi }{ 3 } \\right) \\right]\\mathbf{i} + \\left[ 8\\cos\\left( \\dfrac{ \\pi }{ 3 } \\right) \\right]\\mathbf{j} \\cr &= -6\\left( \\dfrac{ \\sqrt{ 3 } }{ 2 } \\right)\\mathbf{i} + 8\\left( \\dfrac{ 1 }{ 2 } \\right)\\mathbf{j} \\cr &= -3\\sqrt{ 3 }\\mathbf{i} + 4\\mathbf{j} \\end{aligned}",
+        "The speed is the magnitude of this velocity vector:<br><br>\\begin{aligned} \\text{ Speed } &= \\sqrt{ (-3\\sqrt{ 3 })^2 + (4)^2 } \\cr &= \\sqrt{ (9 \\times 3) + 16 } \\cr &= \\sqrt{ 27 + 16 } \\cr &= \\sqrt{ 43 }\\text{ m s}^{ -1 } \\end{aligned}",
+        "<strong>(c) Show that the acceleration of the particle is always directed towards the origin $O$:</strong><br>Differentiate the velocity vector $\\mathbf{v}$ with respect to time ($t$) to find the acceleration vector $\\mathbf{a}$:<br><br>\\begin{aligned} \\mathbf{a} &= \\dfrac{ \\mathrm{d}\\mathbf{v} }{ \\mathrm{d}t } \\cr &= (-12\\cos 2t)\\mathbf{i} + (-16\\sin 2t)\\mathbf{j} \\end{aligned}",
+        "Factorise out the common scalar $-4$ from the components:<br><br>\\begin{aligned} \\mathbf{a} &= -4\\left[ (3\\cos 2t)\\mathbf{i} + (4\\sin 2t)\\mathbf{j} \\right] \\cr &= -4\\mathbf{r} \\end{aligned}<br><br>Since $\\mathbf{a} = -4\\mathbf{r}$, the acceleration vector is a negative scalar multiple of the position vector $\\mathbf{r}$ at any given instant. This means the acceleration is always directed along the line of position, pointing straight back towards the origin $O$."
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $-6\\mathbf{i}$, (b) $\\sqrt{ 43 }\\text{ m s}^{-1}$, (c) $\\mathbf{a} = 4\\mathbf{r}$",
+            "feedback": "This is a sign error in part (c). Having $\\mathbf{a} = 4\\mathbf{r}$ would mean the acceleration acts in the same direction as the position vector, pointing *away* from the origin (repulsive force) rather than *towards* it (attractive force)."
+        },
+        {
+            "ans": "(a) $-6\\mathbf{i} + 8\\mathbf{j}$, (b) $5\\text{ m s}^{-1}$, (c) $\\mathbf{a} = -4\\mathbf{r}$",
+            "feedback": "This velocity vector at $t = \\pi/4$ occurs if you forget to use the chain rule when differentiating the trigonometric functions, leaving the coefficients as $-3$ and $4$ instead of $-6$ and $8$."
+        },
+        {
+            "ans": "(a) $-6\\mathbf{i}$, (b) $7\\text{ m s}^{-1}$, (c) $\\mathbf{a} = -4\\mathbf{r}$",
+            "feedback": "This speed of $7$ is an arithmetic slip when squaring $-3\\sqrt{3}$. Note that $(-3\\sqrt{3})^2 = 9 \\times 3 = 27$, so the speed is $\\sqrt{27 + 16} = \\sqrt{43}\\text{ m s}^{-1}$, which is not equal to $\\sqrt{49} = 7$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Proving Acceleration Towards the Origin",
+        "content": "This is a classic vector SHM (Simple Harmonic Motion) setup. To prove that acceleration is always directed towards the origin, you must show that $\\mathbf{a} = -k\\mathbf{r}$, where $k$ is a positive constant. The negative sign guarantees the vector points in the opposite direction of the displacement (i.e., towards the centre)."
+    }
+},
+{
+    "id": "012065",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable acceleration",
+    "subtopic": [
+        "Collisions in 2D",
+        "2D motion with vectors",
+        "Relative velocity"
+    ],
+    "img": false,
+    "question": "Two particles, $A$ and $B$, move in the $x$-$y$ plane. At time $t$ seconds ($t \\ge 0$), the position vectors, $\\mathbf{r}_A$ metres and $\\mathbf{r}_B$ metres relative to a fixed origin $O$, are modelled by:<br>$$\\mathbf{r}_A = (t^2 + t)\\mathbf{i} + (3t^2 - 2)\\mathbf{j}$$<br>$$\\mathbf{r}_B = (4t - 2)\\mathbf{i} + (t^2 + 3t)\\mathbf{j}$$<br><strong>(a)</strong> Show that the two particles collide, and find the time of this collision.<br><br><strong>(b)</strong> Find the velocity vector of each particle at the instant of collision.<br><br><strong>(c)</strong> Find the exact magnitude of the relative velocity of $A$ with respect to $B$ at the instant of collision.",
+    "steps": [
+        "<strong>(a) Show that the particles collide and find the collision time:</strong><br>A collision occurs if and only if both particles are at the exact same location at the exact same time. This requires $\\mathbf{r}_A = \\mathbf{r}_B$ for some positive value of $t$.<br><br>First, equate the horizontal ($\\mathbf{i}$) components:<br><br>\\begin{aligned} t^2 + t &= 4t - 2 \\cr t^2 - 3t + 2 &= 0 \\cr (t - 1)(t - 2) &= 0 \\end{aligned}<br><br>This gives horizontal equivalence times of $t = 1\\text{ s }$ and $t = 2\\text{ s }$." ,
+        "Next, equate the vertical ($\\mathbf{j}$) components:<br><br>\\begin{aligned} 3t^2 - 2 &= t^2 + 3t \\cr 2t^2 - 3t - 2 &= 0 \\cr (2t + 1)(t - 2) &= 0 \\end{aligned}<br><br>Since $t \\ge 0$, the only positive solution is $t = 2\\text{ s }$." ,
+        "Since $t = 2\\text{ s }$ is a common root satisfying both the horizontal and vertical position equations, a collision occurs at this exact time. The collision time is $t = 2\\text{ seconds }$." ,
+        "<strong>(b) Find the velocity vector of each particle at $t = 2$:</strong><br>Differentiate both position vectors with respect to time ($t$) to find the velocity vector functions, $\\mathbf{v}_A$ and $\\mathbf{v}_B$:<br><br>\\begin{aligned} \\mathbf{v}_A &= \\dfrac{ \\mathrm{d}\\mathbf{r}_A }{ \\mathrm{d}t } \\cr &= (2t + 1)\\mathbf{i} + 6t\\mathbf{j} \\cr\\cr \\mathbf{v}_B &= \\dfrac{ \\mathrm{d}\\mathbf{r}_B }{ \\mathrm{d}t } \\cr &= 4\\mathbf{i} + (2t + 3)\\mathbf{j} \\end{aligned}" ,
+        "Substitute $t = 2$ into both velocity vector functions:<br><br>\\begin{aligned} \\mathbf{v}_A(2) &= (2(2) + 1)\\mathbf{i} + 6(2)\\mathbf{j} \\cr &= 5\\mathbf{i} + 12\\mathbf{j}\\text{ m s}^{ -1 } \\cr\\cr \\mathbf{v}_B(2) &= 4\\mathbf{i} + (2(2) + 3)\\mathbf{j} \\cr &= 4\\mathbf{i} + 7\\mathbf{j}\\text{ m s}^{ -1 } \\end{aligned}" ,
+        "<strong>(c) Find the magnitude of the relative velocity of $A$ with respect to $B$ at $t = 2$:</strong><br>The relative velocity vector $\\mathbf{v}_{A|B}$ is defined as $\\mathbf{v}_A - \\mathbf{v}_B$:<br><br>\\begin{aligned} \\mathbf{v}_{A|B} &= \\mathbf{v}_A(2) - \\mathbf{v}_B(2) \\cr &= (5\\mathbf{i} + 12\\mathbf{j}) - (4\\mathbf{i} + 7\\mathbf{j}) \\cr &= (5 - 4)\\mathbf{i} + (12 - 7)\\mathbf{j} \\cr &= \\mathbf{i} + 5\\mathbf{j}\\text{ m s}^{ -1 } \\end{aligned}" ,
+        "Calculate the magnitude of the relative velocity vector:<br><br>\\begin{aligned} |\\mathbf{v}_{A|B}| &= \\sqrt{ (1)^2 + (5)^2 } \\cr &= \\sqrt{ 1 + 25 } \\cr &= \\sqrt{ 26 }\\text{ m s}^{ -1 } \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $t = 1\\text{ s}$, (b) $\\mathbf{v}_A = 3\\mathbf{i} + 6\\mathbf{j}, \\mathbf{v}_B = 4\\mathbf{i} + 5\\mathbf{j}$, (c) $\\sqrt{ 2 }\\text{ m s}^{-1}$",
+            "feedback": "This is a critical collision concept error. While $t = 1\\text{ s}$ satisfies the horizontal position equation ($x_A = x_B = 2$), the vertical coordinates at this time are different ($y_A = 1$ and $y_B = 4$). A collision requires both coordinates to be identical simultaneously, which only occurs at $t = 2\\text{ s}$."
+        },
+        {
+            "ans": "(a) $t = 2\\text{ s}$, (b) $\\mathbf{v}_A = 5\\mathbf{i} + 12\\mathbf{j}, \\mathbf{v}_B = 4\\mathbf{i} + 7\\mathbf{j}$, (c) $6\\text{ m s}^{-1}$",
+            "feedback": "This is a vector arithmetic error in part (c) where relative velocity magnitude is calculated by adding the component differences ($1 + 5 = 6$) rather than applying Pythagoras' theorem to the relative velocity vector $\\mathbf{i} + 5\\mathbf{j}$."
+        },
+        {
+            "ans": "(a) $t = 2\\text{ s}$, (b) $\\mathbf{v}_A = 4\\mathbf{i} + 12\\mathbf{j}, \\mathbf{v}_B = 4\\mathbf{i} + 4\\mathbf{j}$, (c) $8\\text{ m s}^{-1}$",
+            "feedback": "This occurs if you differentiate the position vectors incorrectly, such as forgetting the linear terms during differentiation (e.g., getting $2t$ instead of $2t+1$ for the $\\mathbf{i}$ component of $A$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Dual Coordinate Equivalence",
+        "content": "For a collision to occur in 2D space, both coordinates must be equal at the exact same time ($t$). Finding a time where only one component matches (such as $t = 1$ where the $x$-coordinates are equal but the $y$-coordinates are not) simply means the particles pass across the same vertical line, not that they collide."
+    }
 }
     
 
