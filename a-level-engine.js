@@ -86,10 +86,16 @@ const ALevelHub = {
     // ---------------------------------------------
     // CREATE PROBLEM CARD
     // ---------------------------------------------
+        // ---------------------------------------------
+    // CREATE PROBLEM CARD
+    // ---------------------------------------------
     createProblemCard(prob) {
         const card = document.createElement('div');
         card.className = 'daily-widget';
         card.style.borderLeft = "8px solid #3367d6";
+
+        // ADDED: A small badge to show the ID clearly at the top right
+        const idBadge = `<div style="float: right; background: #333; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-family: monospace;">ID: ${prob.id}</div>`;
 
         const headerText = `
             ${prob.major_area} |
@@ -120,6 +126,7 @@ const ALevelHub = {
         }
 
         card.innerHTML = `
+            ${idBadge}
             <span class="widget-header">${headerText}</span>
 
             <div class="question-box">${prob.question}</div>
@@ -153,7 +160,6 @@ const ALevelHub = {
 
         return card;
     },
-
     // ---------------------------------------------
     // REVEAL SOLUTION
     // ---------------------------------------------
