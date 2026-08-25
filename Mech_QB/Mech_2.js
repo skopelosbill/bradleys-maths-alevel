@@ -1018,6 +1018,221 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Absolute Separation",
         "content": "To find the distance between any two particles in 2D space, first find their individual position vectors at the specified time, subtract one from the other to get the relative displacement vector, and then apply Pythagoras' theorem to find the absolute separation distance."
     }
+},
+{
+    "id": "012076",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Moments",
+    "topic": "Non-coaxial forces and Moments",
+    "subtopic": [
+        "Equilibrium of rigid bodies",
+        "Moments about a hinge"
+    ],
+    "img": "images/Mechanics/012076.png",
+    "question": "A uniform horizontal beam $AB$, of mass $M$ and length $3a$, rests with its end $A$ against a rough vertical wall. The beam is held in a horizontal position by a rope. One end of the rope is attached to the beam at $B$ and the other end is attached to the wall at the point $C$, which is vertically above $A$. A small block of mass $2M$ is placed on the beam at the point $P$, where $AP = x$. The beam is in equilibrium in a vertical plane which is perpendicular to the wall. The angle between the rope and the beam is $\\alpha$, where $\\tan\\alpha = \\dfrac{ 5 }{ 12 }$.<br><br>The beam is modelled as a uniform rod, the block as a particle, and the rope as a light inextensible string.<br><br><strong>(a)</strong> Show that the tension, $T$, in the rope is given by:<br>$$T = \\dfrac{ 13Mg(4x + 3a) }{ 30a }$$<br>The magnitude of the horizontal component of the force exerted on the beam at $A$ by the wall is $2.4Mg$.<br><br><strong>(b)</strong> Find $x$ in terms of $a$.<br><br>The force exerted on the beam at $A$ by the wall acts in a direction which makes an angle $\\beta$ with the horizontal.<br><br><strong>(c)</strong> Find the value of $\\tan\\beta$.<br><br>The rope will break if the tension in it exceeds $4Mg$.<br><br><strong>(d)</strong> Find the range of possible positions of $P$ such that the rope does not break, justifying your answer carefully.",
+    "steps": [
+        "To show the formula for the tension $T$, we take moments about the hinge at $A$.<br><br>The weight of the beam is $Mg$, acting vertically downwards at its centre of mass (the midpoint of $AB$), which is at a distance of $1.5a$ from $A$.<br>The weight of the block is $2Mg$, acting vertically downwards at $P$, which is at a distance of $x$ from $A$.<br>The tension $T$ acts at $B$ (at distance $3a$ from $A$) at an angle $\\alpha$ above the beam. The perpendicular component of the tension is $T\\sin\\alpha$.<br><br>Equating the clockwise and counterclockwise moments about $A$:<br>\\begin{aligned} (Mg \\times 1.5a) + (2Mg \\times x) &= T\\sin\\alpha \\times 3a \\\\cr 1.5Mga + 2Mgx &= 3aT\\sin\\alpha \\end{aligned}<br><br>Since $\\tan\\alpha = \\dfrac{ 5 }{ 12 }$, we can use a 5-12-13 right-angled triangle to find:<br>$$\\sin\\alpha = \\dfrac{ 5 }{ 13 } \\quad \\text{and} \\quad \\cos\\alpha = \\dfrac{ 12 }{ 13 }$$<br><br>Substituting $\\sin\\alpha$ into the moments equation:<br>\\begin{aligned} \\dfrac{ Mg(3a + 4x) }{ 2 } &= 3aT\\left( \\dfrac{ 5 }{ 13 } \\right) \\\\cr \\dfrac{ Mg(3a + 4x) }{ 2 } &= \\dfrac{ 15a }{ 13 }T \\\\cr T &= \\dfrac{ 13 }{ 15a } \\times \\dfrac{ Mg(3a + 4x) }{ 2 } \\\\cr T &= \\dfrac{ 13Mg(4x + 3a) }{ 30a } \\end{aligned}",
+        "To find the value of $x$ in terms of $a$, we resolve forces horizontally.<br><br>Let $H_A$ be the horizontal component of the reaction force exerted on the beam by the wall at $A$.<br>The only horizontal forces acting on the beam are $H_A$ and the horizontal component of the tension, $T\\cos\\alpha$.<br><br>For horizontal equilibrium:<br>\\begin{aligned} H_A &= T\\cos\\alpha \\end{aligned}<br><br>Substituting the given horizontal component $H_A = 2.4Mg$, the tension $T$ from part (a), and $\\cos\\alpha = \\dfrac{ 12 }{ 13 }$:<br>\\begin{aligned} 2.4Mg &= \\dfrac{ 13Mg(4x + 3a) }{ 30a } \\times \\dfrac{ 12 }{ 13 } \\\\cr 2.4Mg &= \\dfrac{ 12Mg(4x + 3a) }{ 30a } \\\\cr 2.4 &= \\dfrac{ 2(4x + 3a) }{ 5a } \\\\cr 12a &= 8x + 6a \\\\cr 8x &= 6a \\\\cr x &= \\dfrac{ 3 }{ 4 }a \\end{aligned}",
+        "To find $\\tan\\beta$, we resolve forces vertically.<br><br>Let $V_A$ be the vertical component of the reaction force exerted on the beam by the wall at $A$.<br>The vertical forces acting on the beam are $V_A$ (upwards), the vertical component of the tension $T\\sin\\alpha$ (upwards), and the weights $Mg$ and $2Mg$ (downwards).<br><br>For vertical equilibrium:<br>\\begin{aligned} V_A + T\\sin\\alpha &= Mg + 2Mg \\\\cr V_A + T\\sin\\alpha &= 3Mg \\end{aligned}<br><br>First, we calculate the tension $T$ when $x = \\dfrac{ 3 }{ 4 }a$:<br>\\begin{aligned} T &= \\dfrac{ 13Mg\\left( 4\\left( \\frac{ 3 }{ 4 }a \\right) + 3a \\right) }{ 30a } \\\\cr T &= \\dfrac{ 13Mg(6a) }{ 30a } \\\\cr T &= 2.6Mg \\end{aligned}<br><br>Now, substitute $T$ into the vertical equilibrium equation:<br>\\begin{aligned} V_A + 2.6Mg\\left( \\dfrac{ 5 }{ 13 } \\right) &= 3Mg \\\\cr V_A + 1.0Mg &= 3Mg \\\\cr V_A &= 2Mg \\end{aligned}<br><br>The resultant force at $A$ makes an angle $\\beta$ with the horizontal, so:<br>\\begin{aligned} \\tan\\beta &= \\dfrac{ V_A }{ H_A } \\\\cr \\tan\\beta &= \\dfrac{ 2Mg }{ 2.4Mg } \\\\cr \\tan\\beta &= \\dfrac{ 5 }{ 6 } \\end{aligned}",
+        "To find the range of possible positions of $P$, we set up an inequality for the breaking tension limit.<br><br>The rope will break if $T > 4Mg$. For the rope to remain intact, we must have $T \\le 4Mg$.<br><br>Using the tension expression from part (a):<br>\\begin{aligned} \\dfrac{ 13Mg(4x + 3a) }{ 30a } &\\le 4Mg \\\\cr 13(4x + 3a) &\\le 120a \\\\cr 52x + 39a &\\le 120a \\\\cr 52x &\\le 81a \\\\cr x &\\le \\dfrac{ 81 }{ 52 }a \\end{aligned}<br><br>Since the block $P$ must be placed on the beam $AB$ of length $3a$, the distance $x$ must be non-negative.<br>Therefore, the range of possible positions of $P$ is:<br>$$0 \\le x \\le \\dfrac{ 81 }{ 52 }a$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\tan\\beta = \\dfrac{ 5 }{ 6 }, \\quad 0 \\le x \\le \\dfrac{ 81 }{ 52 }a$$",
+            "feedback": "Superb! You correctly resolved the horizontal and vertical equilibrium equations, found $x = \\frac{3}{4}a$, and obtained the correct tension inequality limit."
+        },
+        {
+            "ans": "$$\\tan\\beta = \\dfrac{ 12 }{ 13 }, \\quad 0 \\le x \\le \\dfrac{ 33 }{ 20 }a$$",
+            "feedback": "This error occurs if you use an incorrect horizontal force $H_A = T$ instead of $T\\cos\\alpha$, or if you make an algebraic mistake in the inequality for the maximum tension limit."
+        },
+        {
+            "ans": "$$\\tan\\beta = \\dfrac{ 3 }{ 4 }, \\quad 0 \\le x \\le \\dfrac{ 15 }{ 13 }a$$",
+            "feedback": "This slip arises from using $\\tan\\alpha$ instead of $\\sin\\alpha$ in the moments equation, which corrupts the expression for tension and all subsequent values of the reaction components."
+        },
+        {
+            "ans": "$$\\tan\\beta = \\dfrac{ 6 }{ 5 }, \\quad 0 \\le x \\le \\dfrac{ 27 }{ 13 }a$$",
+            "feedback": "This error is caused by inverting the expression for $\\tan\\beta$ as $\\dfrac{H_A}{V_A}$ instead of $\\dfrac{V_A}{H_A}$, and making a sign error while expanding the bracket in the inequality."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Don't Confuse Horizontal & Vertical Reactions",
+        "content": "When resolving forces at a rough vertical wall hinge $A$, never assume the vertical reaction $V_A$ is equal to the total weight of the system. The tension in the rope has a significant vertical component ($T \\sin\\alpha$) that helps support the weight, meaning $V_A$ is always less than $(Mg + 2Mg)$. Always write a separate vertical equilibrium equation ($V_A + T \\sin\\alpha = 3Mg$) to avoid dropping these marks."
+    }
+},
+{
+    "id": "012077",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Moments",
+    "topic": "Non-coaxial forces and Moments",
+    "subtopic": [
+        "Equilibrium of rigid bodies",
+        "Moments about a hinge"
+    ],
+    "img": "images/Mechanics/012077.png",
+    "question": "A uniform beam $AB$, of mass $M$ and length $2a$, is smoothly hinged at $A$ to a vertical wall. The beam is held inclined at an angle $\\theta$ above the horizontal by a horizontal light rope. One end of the rope is attached to the beam at $B$ and the other end is attached to the wall at a point $C$ vertically above $A$. A block of mass $kM$ is placed on the beam at a point $P$, where $AP = x$. The beam is in equilibrium in a vertical plane.<br><br>The beam is modelled as a uniform rod, the block as a particle, and the rope as a light inextensible string.<br><br><strong>(a)</strong> Show that the tension, $T$, in the rope is given by:<br>$$T = \\dfrac{ Mg\\cot\\theta(a + kx) }{ 2 a }$$<br>For the remaining parts of this question, let $k = 3$ and $\\theta = 45^{\\circ}$.<br><br><strong>(b)</strong> Given that the rope can withstand a maximum tension of $3Mg$, find the maximum possible value of $x$ in terms of $a$.<br><br><strong>(c)</strong> For $x = a$, find the horizontal and vertical components of the reaction force exerted on the beam by the hinge at $A$, in terms of $M$ and $g$.<br><br><strong>(d)</strong> Hence, find the angle the resultant reaction force at $A$ makes with the horizontal, giving your answer to the nearest $0.1^{\\circ}$.",
+    "steps": [
+        "To derive the formula for the tension $T$, we take moments about the hinge at $A$.<br><br>The weight of the beam is $Mg$, acting vertically downwards at its midpoint, which is at a distance of $a$ along the beam. The perpendicular distance from this force to the pivot $A$ is $a\\cos\\theta$.<br>The weight of the block is $kMg$, acting vertically downwards at $P$ at a distance of $x$ along the beam. The perpendicular distance from this force to $A$ is $x\\cos\\theta$.<br>The rope is horizontal and attached at $B$. The vertical height of $B$ above $A$ is $2a\\sin\\theta$, which is the perpendicular distance from the line of action of the tension to $A$.<br><br>Equating the clockwise and counterclockwise moments about $A$:<br>\\begin{aligned} T \\times 2a\\sin\\theta &= (Mg \\times a\\cos\\theta) + (kMg \\times x\\cos\\theta) \\\\cr 2aT\\sin\\theta &= Mg\\cos\\theta(a + kx) \\\\cr T &= \\dfrac{ Mg\\cos\\theta(a + kx) }{ 2a\\sin\\theta } \\\\cr T &= \\dfrac{ Mg\\cot\\theta(a + kx) }{ 2a } \\end{aligned}",
+        "We are given $k = 3$ and $\\theta = 45^{\\circ}$. Since $\\cot 45^{\\circ} = 1$, the tension formula simplifies to:<br>\\begin{aligned} T &= \\dfrac{ Mg(a + 3x) }{ 2a } \\end{aligned}<br><br>Given that the rope can withstand a maximum tension of $3Mg$, we set up the inequality:<br>\\begin{aligned} \\dfrac{ Mg(a + 3x) }{ 2a } &\\le 3Mg \\\\cr a + 3x &\\le 6a \\\\cr 3x &\\le 5a \\\\cr x &\\le \\dfrac{ 5 }{ 3 }a \\end{aligned}<br><br>Thus, the maximum possible value of $x$ is $\\dfrac{ 5 }{ 3 }a$.",
+        "We are asked to find the components of the reaction force at $A$ when $x = a$.<br><br>First, calculate the tension $T$ when $x = a$:<br>\\begin{aligned} T &= \\dfrac{ Mg(a + 3(a)) }{ 2a } = \\dfrac{ 4aMg }{ 2a } = 2Mg \\end{aligned}<br><br>Let $H_A$ and $V_A$ be the horizontal and vertical components of the hinge reaction force at $A$.<br>Since the rope is horizontal, the only horizontal forces are $H_A$ and the tension $T$. Therefore:<br>\\begin{aligned} H_A &= T = 2Mg \\end{aligned}<br><br>The only vertical forces are $V_A$ and the weights $Mg$ and $3Mg$. Therefore:<br>\\begin{aligned} V_A &= Mg + 3Mg = 4Mg \\end{aligned}",
+        "To find the angle $\\phi$ that the resultant reaction force makes with the horizontal, we use the components calculated in part (c):<br>\\begin{aligned} \\tan\\phi &= \\dfrac{ V_A }{ H_A } \\\\cr \\tan\\phi &= \\dfrac{ 4Mg }{ 2Mg } = 2 \\\\cr \\phi &= \\arctan(2) \\\\approx 63.43^{\\circ} \\end{aligned}<br><br>To the nearest $0.1^{\\circ}$, the angle the resultant reaction force makes with the horizontal is $63.4^{\\circ}$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\phi = 63.4^{\\circ}, \\quad x_{\\text{max}} = \\dfrac{ 5 }{ 3 }a$$",
+            "feedback": "Excellent work! You correctly resolved the moments, substituted the angle parameters to get $x_{\\text{max}}$, and calculated the reaction force components at the hinge."
+        },
+        {
+            "ans": "$$\\phi = 26.6^{\\circ}, \\quad x_{\\text{max}} = \\dfrac{ 4 }{ 3 }a$$",
+            "feedback": "This error occurs if you invert the definition of the reaction angle, calculating $\\tan\\phi = \\dfrac{H_A}{V_A}$ instead of $\\dfrac{V_A}{H_A}$, and make an arithmetic slip in the tension inequality."
+        },
+        {
+            "ans": "$$\\phi = 45.0^{\\circ}, \\quad x_{\\text{max}} = \\dfrac{ 3 }{ 2 }a$$",
+            "feedback": "This error is made if you assume the horizontal and vertical components of the reaction force at the hinge must be equal, or if you neglect the weight of the block in the forces resolution."
+        },
+        {
+            "ans": "$$\\phi = 71.6^{\\circ}, \\quad x_{\\text{max}} = 2a$$",
+            "feedback": "This mistake arises if you assume the maximum distance is equal to the length of the beam ($2a$) without checking the tension limit, or if you calculate the tension incorrectly."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Look Out for Trig Simplifications",
+        "content": "When dealing with inclined rods, always check the orientation of your tension force. In this question, because the rope is horizontal, its perpendicular distance to the hinge $A$ is simply $2a\\sin\\theta$. Do not accidentally use the distance along the rod ($2a$) as the perpendicular distance. Spotting this right away prevents messy calculations!"
+    }
+},
+{
+    "id": "012078",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Moments",
+    "topic": "Non-coaxial forces and Moments",
+    "subtopic": [
+        "Equilibrium of rigid bodies",
+        "Moments about a hinge"
+    ],
+    "img": "images/Mechanics/012078.png",
+    "question": "A uniform horizontal beam $AB$, of mass $10\\text{ kg}$ and length $4\\text{ m}$, is smoothly hinged to a vertical wall at $A$. The beam is supported in a horizontal position by a light cable. One end of the cable is attached to the beam at a point $C$, where $AC = 3\\text{ m}$, and the other end is attached to the wall at a point $D$ vertically above $A$, where $AD = 4\\text{ m}$. A sign of mass $M\\text{ kg}$ is suspended from the end $B$ of the beam. The beam is in equilibrium in a vertical plane perpendicular to the wall.<br><br>The beam is modelled as a uniform rod, the cable as a light inextensible string, and the sign as a particle.<br><br><strong>(a)</strong> Show that the tension, $T$, in the cable is given by:<br>$$T = \\dfrac{ 5 }{ 3 }(M + 5)g$$<br><strong>(b)</strong> Find, in terms of $M$ and $g$, the horizontal and vertical components of the reaction force exerted on the beam by the hinge at $A$.<br><br><strong>(c)</strong> Given that the vertical component of the hinge reaction is zero, find the value of $M$.<br><br><strong>(d)</strong> The hinge at $A$ can withstand a maximum horizontal force of $250\\text{ N}$. Taking $g = 9.8\\text{ m s}^{-2}$, find the maximum allowable mass of the sign to the nearest $0.1\\text{ kg}$.",
+    "steps": [
+        "To find the tension $T$, we must first determine the geometric angle of the cable.<br><br>The lengths $AC = 3\\text{ m}$ (horizontal) and $AD = 4\\text{ m}$ (vertical) form a right-angled triangle. The hypotenuse $CD$ is:<br>$$CD = \\sqrt{ 3^2 + 4^2 } = 5\\text{ m}$$<br>Let $\\alpha$ be the angle that the cable $CD$ makes with the horizontal beam $AB$. From the triangle, we have:<br>$$\\sin\\alpha = \\dfrac{ 4 }{ 5 } \\quad \\text{and} \\quad \\cos\\alpha = \\dfrac{ 3 }{ 5 }$$<br>The weight of the beam is $10g$ acting at its midpoint ($2\\text{ m}$ from $A$). The weight of the sign is $Mg$ acting at $B$ ($4\\text{ m}$ from $A$).<br><br>Taking moments about $A$:<br>\\begin{aligned} (10g \\times 2) + (Mg \\times 4) &= T\\sin\\alpha \\times 3 \\\\cr 20g + 4Mg &= 3T\\left( \\dfrac{ 4 }{ 5 } \\right) \\\\cr 4g(5 + M) &= \\dfrac{ 12 }{ 5 }T \\\\cr T &= \\dfrac{ 5 }{ 12 } \\times 4g(5 + M) \\\\cr T &= \\dfrac{ 5 }{ 3 }(M + 5)g \\end{aligned}",
+        "To find the reaction forces at $A$, let $H_A$ and $V_A$ be the horizontal and vertical components of the hinge force respectively.<br><br>For horizontal equilibrium, the horizontal hinge force balances the horizontal component of the tension:<br>\\begin{aligned} H_A &= T\\cos\\alpha \\\\cr H_A &= \\dfrac{ 5 }{ 3 }(M + 5)g \\times \\dfrac{ 3 }{ 5 } \\\\cr H_A &= (M + 5)g \\end{aligned}<br><br>For vertical equilibrium, the sum of the vertical forces must equal zero:<br>\\begin{aligned} V_A + T\\sin\\alpha &= 10g + Mg \\\\cr V_A + \\dfrac{ 5 }{ 3 }(M + 5)g\\left( \\dfrac{ 4 }{ 5 } \\right) &= (M + 10)g \\\\cr V_A + \\dfrac{ 4 }{ 3 }(M + 5)g &= (M + 10)g \\\\cr V_A &= (M + 10)g - \\left( \\dfrac{ 4 }{ 3 }M + \\dfrac{ 20 }{ 3 } \\right)g \\\\cr V_A &= \\left( \\dfrac{ 10 }{ 3 } - \\dfrac{ 1 }{ 3 }M \\right)g \\end{aligned}",
+        "We are given that the vertical component of the hinge reaction $V_A$ is zero.<br><br>Setting $V_A = 0$:<br>\\begin{aligned} \\left( \\dfrac{ 10 }{ 3 } - \\dfrac{ 1 }{ 3 }M \\right)g &= 0 \\\\cr \\dfrac{ 10 }{ 3 } &= \\dfrac{ 1 }{ 3 }M \\\\cr M &= 10 \\end{aligned}<br><br>Thus, the mass of the sign is $10\\text{ kg}$.",
+        "We are given that the hinge can withstand a maximum horizontal force $H_A \\le 250\\text{ N}$.<br><br>Using $g = 9.8\\text{ m s}^{-2}$:<br>\\begin{aligned} H_A &\\le 250 \\\\cr (M + 5)g &\\le 250 \\\\cr (M + 5)(9.8) &\\le 250 \\\\cr M + 5 &\\le 25.510... \\\\cr M &\\le 20.510... \\end{aligned}<br><br>To the nearest $0.1\\text{ kg}$, the maximum allowable mass of the sign is $20.5\\text{ kg}$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$M = 10\\text{ kg}, \\quad M_{\\text{max}} = 20.5\\text{ kg}$$",
+            "feedback": "Superb! You correctly identified the geometric properties of the 3-4-5 triangle, derived the horizontal and vertical hinge components, and calculated both values correctly."
+        },
+        {
+            "ans": "$$M = 15\\text{ kg}, \\quad M_{\\text{max}} = 10.3\\text{ kg}$$",
+            "feedback": "This mistake occurs if you miscalculate the vertical component of the tension as $T\\sin\\alpha = \\frac{3}{5}T$ (using $\\cos$ instead of $\\sin$), and make an error in the horizontal force equilibrium."
+        },
+        {
+            "ans": "$$M = 5\\text{ kg}, \\quad M_{\\text{max}} = 25.5\\text{ kg}$$",
+            "feedback": "This error is made if you forget to subtract $5\\text{ kg}$ from the final inequality $M+5 \\le 25.5$ for part (d), and miscount the coefficients in the vertical forces resolution."
+        },
+        {
+            "ans": "$$M = 20\\text{ kg}, \\quad M_{\\text{max}} = 15.4\\text{ kg}$$",
+            "feedback": "This arises from a sign error when expanding and solving the vertical equilibrium equation, leading to an incorrect zero vertical reaction point and subsequent limit."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Visualising Hinge Reactions",
+        "content": "It is fascinating to see that for a light sign of mass $M < 10\\text{ kg}$, the hinge force at $A$ must push vertically upwards ($V_A > 0$) to support the beam. However, as the mass $M$ of the sign increases beyond $10\\text{ kg}$, the downward pull of the cable increases so much that the hinge must actually pull downwards ($V_A < 0$) to maintain equilibrium. This physical transition is why $V_A$ can be exactly zero at $M=10\\text{ kg}$."
+    }
+},
+{
+    "id": "012079",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Moments",
+    "topic": "Non-coaxial forces and Moments",
+    "subtopic": [
+        "Equilibrium of rigid bodies",
+        "Moments about a hinge"
+    ],
+    "img": "images/Mechanics/012079.png",
+    "question": "A non-uniform rod $AB$, of mass $12\\text{ kg}$ and length $4\\text{ m}$, rests horizontally in equilibrium on two smooth pivots at $C$ and $D$, where $AC = 0.5\\text{ m}$ and $BD = 1.0\\text{ m}$. The centre of mass of the rod is at a distance $d$ from $A$.<br><br>The rod is modelled as a non-uniform rod and the pivots are modelled as simple supports.<br><br><strong>(a)</strong> Show that when no additional masses are placed on the rod, the reaction forces at $C$ and $D$, denoted by $R_C$ and $R_D$ respectively, are given by:<br>$$R_C = 4.8(3-d)g \\quad \\text{and} \\quad R_D = 4.8(d-0.5)g$$<br><strong>(b)</strong> When a particle of mass $8\\text{ kg}$ is placed at $A$, the rod is on the point of tilting about $C$. Find the value of $d$.<br><br><strong>(c)</strong> Using this value of $d$, find the reaction forces at $C$ and $D$ when a mass of $5\\text{ kg}$ is placed at $B$ instead of $A$, taking $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(d)</strong> Determine the range of masses that can be placed at $B$ without the rod tilting, justifying your answer carefully.",
+    "steps": [
+        "To find the reaction forces $R_C$ and $R_D$, we use the moments about each pivot.<br><br>The total length of the rod is $AB = 4\\text{ m}$. Since $AC = 0.5\\text{ m}$ and $BD = 1.0\\text{ m}$, the distance of $D$ from $A$ is $3.0\\text{ m}$, and the distance between the two pivots is $CD = 3.0 - 0.5 = 2.5\\text{ m}$.<br>The weight of the rod is $12g$, acting downwards at its centre of mass which is at a distance of $d$ from $A$ (thus a distance of $d - 0.5$ from $C$).<br><br>Taking moments about $C$:<br>\\begin{aligned} R_D \\times 2.5 &= 12g \\times (d - 0.5) \\\\cr R_D &= \\dfrac{ 12 }{ 2.5 }(d - 0.5)g \\\\cr R_D &= 4.8(d - 0.5)g \\end{aligned}<br><br>Since the rod is in vertical equilibrium, $R_C + R_D = 12g$:<br>\\begin{aligned} R_C &= 12g - 4.8(d - 0.5)g \\\\cr R_C &= 12g - 4.8dg + 2.4g \\\\cr R_C &= 14.4g - 4.8dg \\\\cr R_C &= 4.8(3 - d)g \\end{aligned}",
+        "When the particle of mass $8\\text{ kg}$ is placed at $A$ and the rod is on the point of tilting about $C$, the reaction force at $D$ becomes zero ($R_D = 0$).<br><br>The $8\\text{ kg}$ mass is placed at $A$, which is $0.5\\text{ m}$ to the left of the pivot $C$. Taking moments about $C$:<br>\\begin{aligned} 8g \\times 0.5 &= 12g \\times (d - 0.5) \\\\cr 4g &= 12g(d - 0.5) \\\\cr 4 &= 12d - 6 \\\\cr 12d &= 10 \\\\cr d &= \\dfrac{ 5 }{ 6 } \\approx 0.833\\text{ m} \\end{aligned}",
+        "We are asked to find the reaction forces $R_C$ and $R_D$ when a mass of $5\\text{ kg}$ is placed at $B$ (with $d = \\dfrac{ 5 }{ 6 }\\text{ m}$).<br><br>The mass at $B$ is at a distance of $4.0 - 0.5 = 3.5\\text{ m}$ to the right of $C$. Taking moments about $C$:<br>\\begin{aligned} R_D \\times 2.5 &= 12g(d - 0.5) + 5g \\times 3.5 \\\\cr R_D \\times 2.5 &= 12g\\left( \\dfrac{ 5 }{ 6 } - 0.5 \\right) + 17.5g \\\\cr R_D \\times 2.5 &= 12g\\left( \\dfrac{ 1 }{ 3 } \\right) + 17.5g \\\\cr R_D \\times 2.5 &= 4g + 17.5g \\\\cr R_D \\times 2.5 &= 21.5g \\\\cr R_D &= 8.6g \\end{aligned}<br><br>Using $g = 9.8\\text{ m s}^{-2}$:<br>\\begin{aligned} R_D &= 8.6 \\times 9.8 = 84.28\\text{ N} \\approx 84.3\\text{ N} \\end{aligned}<br><br>Using vertical equilibrium with the total downward force $12g + 5g = 17g$:<br>\\begin{aligned} R_C + R_D &= 17g \\\\cr R_C &= 17g - 8.6g = 8.4g \\\\cr R_C &= 8.4 \\times 9.8 = 82.32\\text{ N} \\approx 82.3\\text{ N} \\end{aligned}",
+        "To find the range of masses that can be placed at $B$ without tilting, let $m$ be the mass placed at $B$.<br><br>The rod is on the point of tilting about $D$ when the reaction force at $C$ is zero ($R_C = 0$).<br>The point $B$ is at a distance of $1.0\\text{ m}$ to the right of $D$. Taking moments about $D$:<br>\\begin{aligned} 12g \\times (3.0 - d) &= mg \\times 1.0 \\\\cr 12\\left( 3.0 - \\dfrac{ 5 }{ 6 } \\right) &= m \\\\cr 12\\left( \\dfrac{ 13 }{ 6 } \\right) &= m \\\\cr m &= 26\\text{ kg} \\end{aligned}<br><br>Placing any mass at $B$ only increases the reaction at $D$ and decreases the reaction at $C$, so the rod cannot tilt the other way. Therefore, the range of masses is:<br>$$0 \\le m \\le 26\\text{ kg}$$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$d = 0.833\\text{ m}, \\quad 0 \\le m \\le 26\\text{ kg}$$",
+            "feedback": "Fantastic! You successfully derived the expressions for the reactions, solved the tipping moments about $C$ to find $d = 0.833\\text{ m}$, and determined the correct maximum mass at $B$ as $26\\text{ kg}$ before tilting."
+        },
+        {
+            "ans": "$$d = 1.188\\text{ m}, \\quad 0 \\le m \\le 2.25\\text{ kg}$$",
+            "feedback": "This error is identical to resolving the moment equation for tilting about $C$ incorrectly by writing $8g(0.5) = 12g(d + 0.5)$, which leads to a center of mass outside the support pivots, and miscalculating the pivot range."
+        },
+        {
+            "ans": "$$d = 0.500\\text{ m}, \\quad 0 \\le m \\le 12\\text{ kg}$$",
+            "feedback": "This mistake occurs if you assume the centre of mass is at the pivot $C$ ($d=0.5\\text{ m}$) and calculate the mass range by setting the pivot distance incorrectly."
+        },
+        {
+            "ans": "$$d = 0.750\\text{ m}, \\quad m \\le 18\\text{ kg}$$",
+            "feedback": "This error is caused by neglecting the pivot distances from the ends of the rod, using $AC = 1\\text{ m}$ and $BD = 1\\text{ m}$ in your moments instead of the actual dimensions."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Tilting Means Zero Reaction",
+        "content": "Whenever a question mentions that a body is 'on the point of tilting' about a pivot, translate this immediately into a mathematical statement: the normal reaction force at any other pivot must equal zero ($R = 0$). This simple trick allows you to instantly simplify your moments equations by eliminating the other unknown reaction forces."
+    }
+},
+{
+    "id": "012080",
+    "branch": "Mechanics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Moments",
+    "topic": "Non-coaxial forces and Moments",
+    "subtopic": [
+        "Equilibrium of rigid bodies",
+        "Moments about a hinge"
+    ],
+    "img": "images/Mechanics/012080.png",
+    "question": "A uniform ladder $AB$, of mass $M$ and length $2L$, rests in equilibrium with its end $A$ on a rough horizontal ground and its end $B$ against a smooth vertical wall. The ladder makes an angle $\\theta$ with the horizontal ground, where $\\tan\\theta = 2$. A man of mass $3M$ climbs up the ladder.<br><br>The ladder is modelled as a uniform rod and the man is modelled as a particle.<br><br><strong>(a)</strong> Show that when the man has climbed a distance $y$ from $A$, the magnitude of the frictional force, $F$, between the ladder and the ground is given by:<br>$$F = \\dfrac{ Mg(L + 3y) }{ 4 L }$$<br>The coefficient of friction between the ladder and the ground is $\\mu = 0.4$.<br><br><strong>(b)</strong> Find the maximum distance the man can climb before the ladder slips, expressing your answer in terms of $L$.<br><br><strong>(c)</strong> Now suppose the ground is smooth and slipping is prevented by a light horizontal rope attached to the ladder at $A$ and to the base of the wall. Find the tension in this rope when the man is at the top of the ladder (i.e., $y = 2L$), in terms of $M$ and $g$.<br><br><strong>(d)</strong> Explain how the safety of the ladder would be affected if the ladder was placed at a steeper angle (i.e., $\\tan\\theta > 2$).",
+    "steps": [
+        "Let $R_A$ be the vertical normal reaction from the ground at $A$, and $F$ be the horizontal frictional force.<br>Let $R_B$ be the horizontal reaction from the smooth wall at $B$.<br><br>Resolving forces vertically:<br>\\begin{aligned} R_A &= Mg + 3Mg = 4Mg \\end{aligned}<br><br>Resolving forces horizontally:<br>\\begin{aligned} F &= R_B \\end{aligned}<br><br>Taking moments about $A$:<br>\\begin{aligned} (Mg \\times L\\cos\\theta) + (3Mg \\times y\\cos\\theta) &= R_B \\times 2L\\sin\\theta \\\\cr Mg\\cos\\theta(L + 3y) &= 2LR_B\\sin\\theta \\\\cr R_B &= \\dfrac{ Mg\\cos\\theta(L + 3y) }{ 2L\\sin\\theta } \\\\cr R_B &= \\dfrac{ Mg(L + 3y) }{ 2L\\tan\\theta } \\end{aligned}<br><br>Since $F = R_B$ and $\\tan\\theta = 2$:<br>\\begin{aligned} F &= \\dfrac{ Mg(L + 3y) }{ 4L} \\end{aligned}",
+        "The ladder is on the point of slipping when $F = \\mu R_A$.<br><br>Using $R_A = 4Mg$ and $\\mu = 0.4$, we set up the friction limit inequality:<br>\\begin{aligned} F &\\le \\mu R_A \\\\cr \\dfrac{ Mg(L + 3y) }{ 4L } &\\le 0.4(4Mg) \\\\cr \\dfrac{ Mg(L + 3y) }{ 4L } &\\le 1.6Mg \\\\cr L + 3y &\\le 6.4L \\\\cr 3y &\\le 5.4L \\\\cr y &\\le 1.8L \\end{aligned}<br><br>Thus, the maximum distance the man can climb is $1.8L$.",
+        "On smooth ground, the rope's tension $T$ replaces the frictional force $F$ to prevent slipping.<br><br>Using the tension/friction formula derived in part (a) with the man at the top of the ladder ($y = 2L$):<br>\\begin{aligned} T &= \\dfrac{ Mg(L + 3(2L)) }{ 4L } \\\\cr T &= \\dfrac{ 7MgL }{ 4L } \\\\cr T &= 1.75Mg \\end{aligned}<br><br>Thus, the tension in the rope is $1.75Mg$.",
+        "From part (a), the general formula for the frictional force required to prevent slipping is:<br>\\begin{aligned} F &= \\dfrac{ Mg(L + 3y) }{ 2L\\tan\\theta } \\end{aligned}<br><br>If the ladder is placed at a steeper angle, $\\theta$ increases, which means $\\tan\\theta$ increases.<br>Since $\\tan\\theta$ is in the denominator of the expression for $F$, an increase in $\\tan\\theta$ decreases the required frictional force $F$ for any given position $y$ of the climber.<br><br>With a lower required frictional force to maintain equilibrium, the threshold $F \\le \\mu R_A$ is less likely to be exceeded, making the ladder safer and more stable."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$y_{\\text{max}} = 1.8L, \\quad T = 1.75Mg$$",
+            "feedback": "Outstanding work! You correctly resolved vertical and horizontal equilibrium, determined the moments equation to find the maximum climb distance of $1.8L$, and calculated the rope tension as $1.75Mg$."
+        },
+        {
+            "ans": "$$y_{\\text{max}} = 0.2L, \\quad T = 1.75Mg$$",
+            "feedback": "This error occurs if you use $\\mu = 0.05$ instead of $0.4$, or if you incorrectly resolve the vertical equilibrium reaction $R_A$ as $Mg$ instead of $4Mg$."
+        },
+        {
+            "ans": "$$y_{\\text{max}} = 1.2L, \\quad T = 1.50Mg$$",
+            "feedback": "This mistake is caused by omitting the factor of 3 in the man's weight ($3M$), treating him as having mass $M$, which leads to an incorrect moment equation and slipping distance."
+        },
+        {
+            "ans": "$$y_{\\text{max}} = 2.0L, \\quad T = 2.00Mg$$",
+            "feedback": "This assumes the man can climb to the very top of the ladder ($2.0L$) without it slipping, which violates the friction limit under the given coefficient of friction."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Why Smooth Walls Make Things Simple",
+        "content": "In mechanics, leaning against a 'smooth' vertical wall means there is absolutely no vertical friction force acting at the top of the ladder. This is a massive blessing for your equations because it ensures the normal reaction from the wall ($R_B$) is purely horizontal. Always check the wording carefully: if the wall were 'rough', you would have to introduce a vertical friction force at $B$, which drastically increases the algebra!"
+    }
 }
     
 
