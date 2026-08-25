@@ -1040,10 +1040,6 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "$$\\tan\\beta = \\dfrac{ 5 }{ 6 }, \\quad 0 \\le x \\le \\dfrac{ 81 }{ 52 }a$$",
-            "feedback": "Superb! You correctly resolved the horizontal and vertical equilibrium equations, found $x = \\frac{3}{4}a$, and obtained the correct tension inequality limit."
-        },
-        {
             "ans": "$$\\tan\\beta = \\dfrac{ 12 }{ 13 }, \\quad 0 \\le x \\le \\dfrac{ 33 }{ 20 }a$$",
             "feedback": "This error occurs if you use an incorrect horizontal force $H_A = T$ instead of $T\\cos\\alpha$, or if you make an algebraic mistake in the inequality for the maximum tension limit."
         },
@@ -1082,10 +1078,6 @@ window.ALEVEL_QUESTIONS = [
         "To find the angle $\\phi$ that the resultant reaction force makes with the horizontal, we use the components calculated in part (c):<br>\\begin{aligned} \\tan\\phi &= \\dfrac{ V_A }{ H_A } \\cr \\tan\\phi &= \\dfrac{ 4Mg }{ 2Mg } = 2 \\cr \\phi &= \\arctan(2) \\\\approx 63.43^{\\circ} \\end{aligned}<br><br>To the nearest $0.1^{\\circ}$, the angle the resultant reaction force makes with the horizontal is $63.4^{\\circ}$."
     ],
     "pi_options": [
-        {
-            "ans": "$$\\phi = 63.4^{\\circ}, \\quad x_{\\text{max}} = \\dfrac{ 5 }{ 3 }a$$",
-            "feedback": "Excellent work! You correctly resolved the moments, substituted the angle parameters to get $x_{\\text{max}}$, and calculated the reaction force components at the hinge."
-        },
         {
             "ans": "$$\\phi = 26.6^{\\circ}, \\quad x_{\\text{max}} = \\dfrac{ 4 }{ 3 }a$$",
             "feedback": "This error occurs if you invert the definition of the reaction angle, calculating $\\tan\\phi = \\dfrac{H_A}{V_A}$ instead of $\\dfrac{V_A}{H_A}$, and make an arithmetic slip in the tension inequality."
@@ -1126,10 +1118,6 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "$$M = 10\\text{ kg}, \\quad M_{\\text{max}} = 20.5\\text{ kg}$$",
-            "feedback": "Superb! You correctly identified the geometric properties of the 3-4-5 triangle, derived the horizontal and vertical hinge components, and calculated both values correctly."
-        },
-        {
             "ans": "$$M = 15\\text{ kg}, \\quad M_{\\text{max}} = 10.3\\text{ kg}$$",
             "feedback": "This mistake occurs if you miscalculate the vertical component of the tension as $T\\sin\\alpha = \\frac{3}{5}T$ (using $\\cos$ instead of $\\sin$), and make an error in the horizontal force equilibrium."
         },
@@ -1169,10 +1157,6 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
         {
-            "ans": "$$d = 0.833\\text{ m}, \\quad 0 \\le m \\le 26\\text{ kg}$$",
-            "feedback": "Fantastic! You successfully derived the expressions for the reactions, solved the tipping moments about $C$ to find $d = 0.833\\text{ m}$, and determined the correct maximum mass at $B$ as $26\\text{ kg}$ before tilting."
-        },
-        {
             "ans": "$$d = 1.188\\text{ m}, \\quad 0 \\le m \\le 2.25\\text{ kg}$$",
             "feedback": "This error is identical to resolving the moment equation for tilting about $C$ incorrectly by writing $8g(0.5) = 12g(d + 0.5)$, which leads to a center of mass outside the support pivots, and miscalculating the pivot range."
         },
@@ -1211,10 +1195,6 @@ window.ALEVEL_QUESTIONS = [
         "From part (a), the general formula for the frictional force required to prevent slipping is:<br>\\begin{aligned} F &= \\dfrac{ Mg(L + 3y) }{ 2L\\tan\\theta } \\end{aligned}<br><br>If the ladder is placed at a steeper angle, $\\theta$ increases, which means $\\tan\\theta$ increases.<br>Since $\\tan\\theta$ is in the denominator of the expression for $F$, an increase in $\\tan\\theta$ decreases the required frictional force $F$ for any given position $y$ of the climber.<br><br>With a lower required frictional force to maintain equilibrium, the threshold $F \\le \\mu R_A$ is less likely to be exceeded, making the ladder safer and more stable."
     ],
     "pi_options": [
-        {
-            "ans": "$$y_{\\text{max}} = 1.8L, \\quad T = 1.75Mg$$",
-            "feedback": "Outstanding work! You correctly resolved vertical and horizontal equilibrium, determined the moments equation to find the maximum climb distance of $1.8L$, and calculated the rope tension as $1.75Mg$."
-        },
         {
             "ans": "$$y_{\\text{max}} = 0.2L, \\quad T = 1.75Mg$$",
             "feedback": "This error occurs if you use $\\mu = 0.05$ instead of $0.4$, or if you incorrectly resolve the vertical equilibrium reaction $R_A$ as $Mg$ instead of $4Mg$."
