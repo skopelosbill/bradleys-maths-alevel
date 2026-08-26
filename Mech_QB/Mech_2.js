@@ -1408,6 +1408,200 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Complementary Launch Angles",
         "content": "For any target distance on flat ground, there are always two complementary launch angles that sum to $90^{\\circ}$ (in this case, $15^{\\circ} + 75^{\\circ} = 90^{\\circ}$). The high-trajectory launch ($75^{\\circ}$) spends much more time in the air ($2.76\\text{ s}$) because its initial vertical velocity is much greater, whereas the low-trajectory launch ($15^{\\circ}$) relies on horizontal speed to cover the same distance in just $0.74\\text{ s}$."
     }
+},
+{
+    "id": "012086",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Vectors",
+    "subtopic": [
+        "Force and acceleration vectors",
+        "Vector magnitudes"
+    ],
+    "img": false,
+    "question": "In this question, the horizontal unit vectors $\\mathbf{i}$ and $\\mathbf{j}$ are in the directions East and North respectively.<br><br>A model ship of mass $2\\text{ kg}$ is moving in a horizontal plane so that its acceleration vector $\\mathbf{a}\\text{ m s}^{-2}$ at time $t$ seconds is given by:<br>$$\\mathbf{a} = 2(3t - 7)\\mathbf{i} + 8\\mathbf{j}$$<br>When $t = T$, the magnitude of the resultant horizontal force acting on the ship is $20\\text{ N}$.<br><br>Find the possible values of $T$.",
+    "steps": [
+        "To find the possible values of $T$, we first express the resultant horizontal force vector $\\mathbf{F}$ using Newton's Second Law: $\\mathbf{F} = m\\mathbf{a}$.<br><br>Given that the mass of the ship is $m = 2\\text{ kg}$:<br>\\begin{aligned} \\mathbf{F} &= m\\mathbf{a} \\cr \\mathbf{F} &= 2\\left[ 2(3t - 7)\\mathbf{i} + 8\\mathbf{j} \\right] \\cr \\mathbf{F} &= 4(3t - 7)\\mathbf{i} + 16\\mathbf{j} \\end{aligned}",
+        "At the instant $t = T$, the magnitude of this force is given as $20\\text{ N}$.<br><br>Using the vector magnitude formula $|\\mathbf{F}| = \\sqrt{ F_x^2 + F_y^2 }$:<br>\\begin{aligned} |\\mathbf{F}| &= 20 \\cr \\sqrt{ \\left( 4(3T - 7) \\right)^2 + 16^2 } &= 20 \\cr \\left( 4(3T - 7) \\right)^2 + 256 &= 400 \\cr 16(3T - 7)^2 &= 144 \\cr (3T - 7)^2 &= 9 \\end{aligned}",
+        "We now solve the quadratic equation by taking the square root of both sides:<br>\\begin{aligned} 3T - 7 &= 3 \\implies 3T = 10 \\implies T = \\dfrac{ 10 }{ 3 } \\cr \\text{or} \\cr 3T - 7 &= -3 \\implies 3T = 4 \\implies T = \\dfrac{ 4 }{ 3 } \\end{aligned}<br><br>So, the possible values of $T$ are $\\dfrac{ 4 }{ 3 }$ and $\\dfrac{ 10 }{ 3 }$."
+    ],
+    "pi_options": [
+        {
+            "ans": "$$T = \\dfrac{ 2 }{ 3 }, \\quad T = \\dfrac{ 8 }{ 3 }$$",
+            "feedback": "This error occurs if you neglect to multiply the acceleration vector by the mass $m = 2$ in Newton's Second Law, equating the magnitude of the acceleration vector directly to $20$ instead of $10$."
+        },
+        {
+            "ans": "$$T = 1, \\quad T = \\dfrac{ 11 }{ 3 }$$",
+            "feedback": "This mistake is caused by a sign error when taking the square root, resolving $3T - 7 = -4$ instead of $-3$, or making an arithmetic slip when simplifying the squared term."
+        },
+        {
+            "ans": "$$T = 2, \\quad T = 5$$",
+            "feedback": "This slip arises if you accidentally calculate the magnitude of the force using only the horizontal component, neglecting the vertical component $16\\mathbf{j}$ in Pythagoras' theorem."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Don't Forget the Mass",
+        "content": "A very common student error in vector mechanics is confusing the acceleration vector with the force vector. When a question provides a force magnitude, always ensure you multiply the acceleration vector by the mass ($2\\text{ kg}$ in this case) before taking the magnitude. Forgetting this step will lead to incorrect quadratic solutions."
+    }
+},
+{
+    "id": "012087",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Vectors",
+    "subtopic": [
+        "Force and acceleration vectors",
+        "Vector equations of motion"
+    ],
+    "img": false,
+    "question": "A toy boat of mass $0.5\\text{ kg}$ is moving in a horizontal pool under the action of a constant horizontal force $\\mathbf{F} = (4\\mathbf{i} - 3\\mathbf{j})\\text{ N}$.<br><br>At time $t = 0\\text{ s}$, the boat has velocity $\\mathbf{u} = (-2\\mathbf{i} + 6\\mathbf{j})\\text{ m s}^{-1}$.<br><br><strong>(a)</strong> Show that the acceleration of the boat is given by $(8\\mathbf{i} - 6\\mathbf{j})\\text{ m s}^{-2}$.<br><br><strong>(b)</strong> Find an expression for the velocity vector $\\mathbf{v}$ of the boat at time $t$ seconds.<br><br><strong>(c)</strong> Find the value of $t$ at which the boat is moving due East.<br><br><strong>(d)</strong> Find the speed of the boat at this instant.",
+    "steps": [
+        "To show the acceleration vector, we apply Newton's Second Law: $\\mathbf{F} = m\\mathbf{a}$.<br><br>Rearranging for the acceleration $\\mathbf{a}$:<br>\\begin{aligned} \\mathbf{a} &= \\dfrac{ \\mathbf{F} }{ m } \\cr \\mathbf{a} &= \\dfrac{ 4\\mathbf{i} - 3\\mathbf{j} }{ 0.5 } \\cr \\mathbf{a} &= (8\\mathbf{i} - 6\\mathbf{j})\\text{ m s}^{-2} \\end{aligned}",
+        "Since the force is constant, the acceleration is also constant. We can use the vector kinematics formula $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$.<br><br>Substituting the initial velocity $\\mathbf{u} = -2\\mathbf{i} + 6\\mathbf{j}$ and the constant acceleration $\\mathbf{a} = 8\\mathbf{i} - 6\\mathbf{j}$:<br>\\begin{aligned} \\mathbf{v} &= \\mathbf{u} + \\mathbf{a}t \\cr \\mathbf{v} &= (-2\\mathbf{i} + 6\\mathbf{j}) + t(8\\mathbf{i} - 6\\mathbf{j}) \\cr \\mathbf{v} &= (8t - 2)\\mathbf{i} + (6 - 6t)\\mathbf{j} \\end{aligned}",
+        "For the boat to be moving due East, its velocity vector must have a positive horizontal component (in the $\\mathbf{i}$ direction) and a vertical component (in the $\\mathbf{j}$ direction) of exactly zero.<br><br>Setting the vertical component to zero:<br>\\begin{aligned} 6 - 6t &= 0 \\cr 6t &= 6 \\cr t &= 1\\text{ s} \\end{aligned}<br><br>At $t = 1$, the horizontal component is $8(1) - 2 = 6 > 0$, so the boat is indeed moving due East.",
+        "To find the speed of the boat at $t = 1\\text{ s}$, we substitute $t = 1$ back into our expression for the velocity vector $\\mathbf{v}$:<br>\\begin{aligned} \\mathbf{v} &= (8(1) - 2)\\mathbf{i} + (6 - 6(1))\\mathbf{j} \\cr \\mathbf{v} &= 6\\mathbf{i} + 0\\mathbf{j} \\cr \\text{Speed} &= |6\\mathbf{i}| = 6\\text{ m s}^{-1} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$t = 1\\text{ s}, \\quad \\text{Speed} = 10\\text{ m s}^{-1}$$",
+            "feedback": "This error occurs if you correctly calculate the time but miscalculate the horizontal velocity component at $t = 1$ as $10\\mathbf{i}$ instead of $6\\mathbf{i}$, perhaps by adding the components incorrectly."
+        },
+        {
+            "ans": "$$t = 0.5\\text{ s}, \\quad \\text{Speed} = 2\\text{ m s}^{-1}$$",
+            "feedback": "This mistake is caused by setting the horizontal component of the velocity to zero ($8t - 2 = 0$) instead of the vertical component, representing the time when the boat is moving due North or South."
+        },
+        {
+            "ans": "$$t = 1.5\\text{ s}, \\quad \\text{Speed} = 10\\text{ m s}^{-1}$$",
+            "feedback": "This slip arises from a sign error when solving the vertical velocity component equation, leading to $6 + 4t = 0$ or similar incorrect equations."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Interpreting Directions with Vectors",
+        "content": "When a mechanics question specifies a direction of motion like 'due East' or 'due North', it is giving you a mathematical constraint. 'Due East' means the vertical component ($\\mathbf{j}$) of the velocity must be exactly zero, and the horizontal component ($\\mathbf{i}$) must be positive. Translate these directional words into algebraic boundary conditions immediately to simplify your equations."
+    }
+},
+{
+    "id": "012088",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Vectors",
+    "subtopic": [
+        "Position and displacement vectors",
+        "Closest approach"
+    ],
+    "img": false,
+    "question": "At time $t = 0$ hours, a yacht $A$ has position vector $(2\\mathbf{i} + 5\\mathbf{j})\\text{ km}$ and is moving with a constant velocity $(4\\mathbf{i} - 2\\mathbf{j})\\text{ km h}^{-1}$.<br><br>At the same instant, a yacht $B$ has position vector $(10\\mathbf{i} - \\mathbf{j})\\text{ km}$ and is moving with a constant velocity $(2\\mathbf{i} + \\mathbf{j})\\text{ km h}^{-1}$.<br><br>The horizontal unit vectors $\\mathbf{i}$ and $\\mathbf{j}$ represent $1\\text{ km}$ East and $1\\text{ km}$ North respectively.<br><br><strong>(a)</strong> Find the position vector of yacht $A$ and yacht $B$ at time $t$ hours.<br><br><strong>(b)</strong> Show that the displacement vector from $A$ to $B$, denoted by $\\mathbf{r}_{AB}$, at time $t$ hours is given by:<br>$$\\mathbf{r}_{AB} = (8 - 2t)\\mathbf{i} + (3t - 6)\\mathbf{j}$$<br><strong>(c)</strong> Find the distance between the two yachts at $t = 2$ hours.<br><br><strong>(d)</strong> Find the time $t$ at which the two yachts are closest to each other.",
+    "steps": [
+        "Since both yachts are moving with constant velocity, we use the vector equation of position: $\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{v}t$.<br><br>For yacht $A$:<br>\\begin{aligned} \\mathbf{r}_A &= (2\\mathbf{i} + 5\\mathbf{j}) + t(4\\mathbf{i} - 2\\mathbf{j}) \\cr \\mathbf{r}_A &= (2 + 4t)\\mathbf{i} + (5 - 2t)\\mathbf{j} \\end{aligned}<br><br>For yacht $B$:<br>\\begin{aligned} \\mathbf{r}_B &= (10\\mathbf{i} - \\mathbf{j}) + t(2\\mathbf{i} + \\mathbf{j}) \\cr \\mathbf{r}_B &= (10 + 2t)\\mathbf{i} + (t - 1)\\mathbf{j} \\end{aligned}",
+        "The displacement vector from $A$ to $B$ is given by subtracting the position vector of $A$ from the position vector of $B$: $\\mathbf{r}_{AB} = \\mathbf{r}_B - \\mathbf{r}_A$.<br><br>Performing the vector subtraction:<br>\\begin{aligned} \\mathbf{r}_{AB} &= \\left[ (10 + 2t)\\mathbf{i} + (t - 1)\\mathbf{j} \\right] - \\left[ (2 + 4t)\\mathbf{i} + (5 - 2t)\\mathbf{j} \\right] \\cr \\mathbf{r}_{AB} &= (10 + 2t - 2 - 4t)\\mathbf{i} + (t - 1 - 5 + 2t)\\mathbf{j} \\cr \\mathbf{r}_{AB} &= (8 - 2t)\\mathbf{i} + (3t - 6)\\mathbf{j} \\end{aligned}",
+        "To find the distance between the yachts at $t = 2\\text{ hours}$, we first evaluate the displacement vector $\\mathbf{r}_{AB}$ at this time:<br>\\begin{aligned} \\mathbf{r}_{AB} &= (8 - 2(2))\\mathbf{i} + (3(2) - 6)\\mathbf{j} \\cr \\mathbf{r}_{AB} &= (8 - 4)\\mathbf{i} + (6 - 6)\\mathbf{j} \\cr \\mathbf{r}_{AB} &= 4\\mathbf{i} + 0\\mathbf{j} \\end{aligned}<br><br>The distance is the magnitude of this displacement vector:<br>\\begin{aligned} \\text{Distance} &= |4\\mathbf{i}| = 4\\text{ km} \\end{aligned}",
+        "The yachts are closest to each other when the square of the distance between them, $d^2 = |\\mathbf{r}_{AB}|^2$, is minimized.<br><br>We write the expression for $d^2$ as a function of time $t$:<br>\\begin{aligned} d^2 &= (8 - 2t)^2 + (3t - 6)^2 \\cr d^2 &= (64 - 32t + 4t^2) + (9t^2 - 36t + 36) \\cr d^2 &= 13t^2 - 68t + 100 \\end{aligned}<br><br>Let $f(t) = 13t^2 - 68t + 100$. To find the minimum, we differentiate with respect to $t$ and set the derivative to zero:<br>\\begin{aligned} f'(t) &= 26t - 68 = 0 \\cr 26t &= 68 \\cr t &= \\dfrac{ 68 }{ 26 } = \\dfrac{ 34 }{ 13 } \\approx 2.62\\text{ hours} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$\\text{Distance} = 4\\text{ km}, \\quad t = 2\\text{ hours}$$",
+            "feedback": "This error occurs if you assume that the yachts are closest at the specific evaluation time $t = 2$ instead of differentiating the distance squared expression to find the global minimum vertex."
+        },
+        {
+            "ans": "$$\\text{Distance} = 5.2\\text{ km}, \\quad t = 1.85\\text{ hours}$$",
+            "feedback": "This mistake arises from a sign error when expanding $(3t - 6)^2$, leading to an incorrect quadratic function for distance squared and subsequent differentiation errors."
+        },
+        {
+            "ans": "$$\\text{Distance} = 2.8\\text{ km}, \\quad t = 3.00\\text{ hours}$$",
+            "feedback": "This slip is caused by subtracting the position vectors in the wrong order ($A - B$) and then making an arithmetic error in the quadratic coefficients."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: The Closest Approach Trick",
+        "content": "To find the time of closest approach, you can always write down the expression for distance squared ($d^2$) and find its minimum. Minimizing $d^2$ is mathematically identical to minimizing the distance $d$, but it has the massive advantage of avoiding messy square roots in your derivatives. Always look to differentiate $d^2$ first!"
+    }
+},
+{
+    "id": "012089",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Vectors",
+    "subtopic": [
+        "Static equilibrium",
+        "Newton's Second Law with vectors"
+    ],
+    "img": false,
+    "question": "A small metal ring of mass $0.5\\text{ kg}$ is resting on a smooth horizontal table and is in static equilibrium under the action of three coplanar horizontal forces:<br>$$\\mathbf{F}_1 = (3a\\mathbf{i} + 4\\mathbf{j})\\text{ N}$$<br>$$\\mathbf{F}_2 = (-6\\mathbf{i} + 2b\\mathbf{j})\\text{ N}$$<br>$$\\mathbf{F}_3 = (15\\mathbf{i} - 12\\mathbf{j})\\text{ N}$$<br>where $a$ and $b$ are constants.<br><br><strong>(a)</strong> Find the value of $a$ and the value of $b$.<br><br>The force $\\mathbf{F}_1$ is suddenly removed.<br><br><strong>(b)</strong> Write down the resultant force acting on the ring.<br><br><strong>(c)</strong> Find the acceleration vector $\\mathbf{a}\\text{ m s}^{-2}$ of the ring after $\\mathbf{F}_1$ has been removed.<br><br><strong>(d)</strong> Calculate the magnitude of this acceleration, giving your answer to $3$ significant figures.",
+    "steps": [
+        "Since the metal ring is in static equilibrium, the sum of all coplanar forces acting on it must be zero: $\\Sigma \\mathbf{F} = \\mathbf{0}$.<br><br>Adding the vectors component-wise:<br>\\begin{aligned} \\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3 &= \\mathbf{0} \\cr (3a\\mathbf{i} + 4\\mathbf{j}) + (-6\\mathbf{i} + 2b\\mathbf{j}) + (15\\mathbf{i} - 12\\mathbf{j}) &= 0\\mathbf{i} + 0\\mathbf{j} \\cr (3a - 6 + 15)\\mathbf{i} + (4 + 2b - 12)\\mathbf{j} &= 0\\mathbf{i} + 0\\mathbf{j} \\cr (3a + 9)\\mathbf{i} + (2b - 8)\\mathbf{j} &= 0\\mathbf{i} + 0\\mathbf{j} \\end{aligned}<br><br>Equating components to solve for $a$ and $b$:<br>\\begin{aligned} 3a + 9 &= 0 \\implies a = -3 \\cr 2b - 8 &= 0 \\implies b = 4 \\end{aligned}",
+        "When the force $\\mathbf{F}_1$ is removed, the new resultant force $\\mathbf{R}$ is the sum of the remaining forces $\\mathbf{F}_2$ and $\\mathbf{F}_3$.<br><br>Since $\\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3 = \\mathbf{0}$, the sum of $\\mathbf{F}_2$ and $\\mathbf{F}_3$ must equal $-\\mathbf{F}_1$.<br>With $a = -3$, the force is $\\mathbf{F}_1 = -9\\mathbf{i} + 4\\mathbf{j}$. Therefore:<br>\\begin{aligned} \\mathbf{R} &= -\\mathbf{F}_1 \\cr \\mathbf{R} &= -(-9\\mathbf{i} + 4\\mathbf{j}) \\cr \\mathbf{R} &= (9\\mathbf{i} - 4\\mathbf{j})\\text{ N} \\end{aligned}",
+        "To find the acceleration vector $\\mathbf{a}$ after the force is removed, we use Newton's Second Law: $\\mathbf{R} = m\\mathbf{a}$.<br><br>Substituting the resultant force $\\mathbf{R} = 9\\mathbf{i} - 4\\mathbf{j}$ and the mass $m = 0.5\\text{ kg}$:<br>\\begin{aligned} \\mathbf{a} &= \\dfrac{ \\mathbf{R} }{ m } \\cr \\mathbf{a} &= \\dfrac{ 9\\mathbf{i} - 4\\mathbf{j} }{ 0.5 } \\cr \\mathbf{a} &= (18\\mathbf{i} - 8\\mathbf{j})\\text{ m s}^{-2} \\end{aligned}",
+        "To calculate the magnitude of the acceleration vector $\\mathbf{a}$, we use Pythagoras' theorem:<br>\\begin{aligned} |\\mathbf{a}| &= \\sqrt{ 18^2 + (-8)^2 } \\cr |\\mathbf{a}| &= \\sqrt{ 324 + 64 } \\cr |\\mathbf{a}| &= \\sqrt{ 388 } \\approx 19.7\\text{ m s}^{-2} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$a = 3, \\quad b = -4, \\quad |\\mathbf{a}| = 19.7\\text{ m s}^{-2}$$",
+            "feedback": "This error occurs if you make a sign slip when setting up the static equilibrium equations, resolving $3a - 9 = 0$ and $2b + 8 = 0$, leading to wrong sign values for $a$ and $b$."
+        },
+        {
+            "ans": "$$a = -3, \\quad b = 4, \\quad |\\mathbf{a}| = 9.85\\text{ m s}^{-2}$$",
+            "feedback": "This mistake is caused by neglecting to divide the resultant force vector by the mass $m = 0.5\\text{ kg}$ when calculating the acceleration, effectively setting $\\mathbf{a} = \\mathbf{R}$."
+        },
+        {
+            "ans": "$$a = -3, \\quad b = 4, \\quad |\\mathbf{a}| = 4.92\\text{ m s}^{-2}$$",
+            "feedback": "This slip arises from multiplying the resultant force vector by the mass $m = 0.5\\text{ kg}$ instead of dividing by it, leading to an incorrect acceleration vector."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: The Equilibrium Removal Shortcut",
+        "content": "When a system is in equilibrium under several forces, the sum of those forces is zero. If you remove one force, say $\\mathbf{F}_1$, you do not need to recalculate the sum of the remaining forces from scratch. The remaining forces must sum exactly to $-\\mathbf{F}_1$. Recognizing this shortcut will keep your steps clean and prevent algebraic transcription errors."
+    }
+},
+{
+    "id": "012090",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Vectors",
+    "subtopic": [
+        "Variable acceleration with vectors",
+        "Kinetic energy and force magnitudes"
+    ],
+    "img": false,
+    "question": "A particle $P$ of mass $0.2\\text{ kg}$ moves in a horizontal plane. At time $t$ seconds ($t \\ge 0$), its position vector $\\mathbf{r}$ metres relative to a fixed origin $O$ is given by:<br>$$\\mathbf{r} = (t^3 - 3t^2)\\mathbf{i} + (2t^2 - 4t)\\mathbf{j}$$<br><strong>(a)</strong> Find an expression for the velocity vector $\\mathbf{v}\\text{ m s}^{-1}$ of $P$ at time $t$.<br><br><strong>(b)</strong> Find the value of $t$ for which the particle is momentarily moving parallel to the vector $\\mathbf{j}$.<br><br><strong>(c)</strong> Find the kinetic energy of the particle at $t = 3\\text{ s}$.<br><br><strong>(d)</strong> Find the magnitude of the resultant force acting on the particle at $t = 1\\text{ s}$.",
+    "steps": [
+        "To find the velocity vector $\\mathbf{v}$ from the position vector $\\mathbf{r}$, we differentiate with respect to time $t$: $\\mathbf{v} = \\dfrac{ \\mathrm{d}\\mathbf{r} }{ \\mathrm{d}t }$.<br><br>Differentiating each component component-wise:<br>\\begin{aligned} \\mathbf{v} &= \\dfrac{ \\mathrm{d} }{ \\mathrm{d}t } \\left[ (t^3 - 3t^2)\\mathbf{i} + (2t^2 - 4t)\\mathbf{j} \\right] \\cr \\mathbf{v} &= (3t^2 - 6t)\\mathbf{i} + (4t - 4)\\mathbf{j} \\end{aligned}",
+        "For the particle to be moving parallel to the vector $\\mathbf{j}$, its horizontal velocity component (the $\\mathbf{i}$ component) must be exactly zero, while its vertical velocity component is non-zero.<br><br>Setting the horizontal component of velocity to zero:<br>\\begin{aligned} 3t^2 - 6t &= 0 \\cr 3t(t - 2) &= 0 \\end{aligned}<br><br>Since $t \\ge 0$, the possible solutions are $t = 0\\text{ s}$ or $t = 2\\text{ s}$. For active motion (and ensuring the vertical component $4t - 4$ is non-zero), we take:<br>\\begin{aligned} t &= 2\\text{ s} \\end{aligned}",
+        "To find the kinetic energy at $t = 3\\text{ s}$, we first calculate the velocity vector at this instant:<br>\\begin{aligned} \\mathbf{v} &= (3(3)^2 - 6(3))\\mathbf{i} + (4(3) - 4)\\mathbf{j} \\cr \\mathbf{v} &= (27 - 18)\\mathbf{i} + (12 - 4)\\mathbf{j} \\cr \\mathbf{v} &= 9\\mathbf{i} + 8\\mathbf{j} \\end{aligned}<br><br>The square of the speed, $v^2$, is the square of the magnitude of this velocity vector:<br>\\begin{aligned} v^2 &= 9^2 + 8^2 \\cr v^2 &= 81 + 64 = 145 \\end{aligned}<br><br>Now, calculate the kinetic energy using $\\text{KE} = \\dfrac{ 1 }{ 2 }mv^2$ with $m = 0.2\\text{ kg}$:<br>\\begin{aligned} \\text{KE} &= \\dfrac{ 1 }{ 2 }mv^2 \\cr \\text{KE} &= \\dfrac{ 1 }{ 2 }(0.2)(145) \\cr \\text{KE} &= 14.5\\text{ J} \\end{aligned}",
+        "To find the resultant force at $t = 1\\text{ s}$, we first differentiate the velocity vector $\\mathbf{v}$ with respect to time to obtain the acceleration vector $\\mathbf{a} = \\dfrac{ \\mathrm{d}\\mathbf{v} }{ \\mathrm{d}t }$.<br><br>Differentiating the velocity vector:<br>\\begin{aligned} \\mathbf{a} &= (6t - 6)\\mathbf{i} + 4\\mathbf{j} \\end{aligned}<br><br>At $t = 1\\text{ s}$, the acceleration vector is:<br>\\begin{aligned} \\mathbf{a} &= (6(1) - 6)\\mathbf{i} + 4\\mathbf{j} \\cr \\mathbf{a} &= 4\\mathbf{j}\\text{ m s}^{-2} \\end{aligned}<br><br>Using Newton's Second Law, $\\mathbf{F} = m\\mathbf{a}$ with $m = 0.2\\text{ kg}$:<br>\\begin{aligned} \\mathbf{F} &= 0.2(4\\mathbf{j}) = 0.8\\mathbf{j}\\text{ N} \\cr |\\mathbf{F}| &= 0.8\\text{ N} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$$t = 2\\text{ s}, \\quad \\text{KE} = 29.0\\text{ J}, \\quad |\\mathbf{F}| = 1.6\\text{ N}$$",
+            "feedback": "This error occurs if you double the kinetic energy and force value, which typically happens when you use $m = 0.4\\text{ kg}$ instead of the correct mass $0.2\\text{ kg}$ in your dynamic equations."
+        },
+        {
+            "ans": "$$t = 1\\text{ s}, \\quad \\text{KE} = 14.5\\text{ J}, \\quad |\\mathbf{F}| = 0\\text{ N}$$",
+            "feedback": "This mistake is caused by setting the vertical component of the velocity to zero ($4t - 4 = 0$) in part (b), representing the time when the particle is momentarily moving parallel to $\\mathbf{i}$ instead of $\\mathbf{j}$."
+        },
+        {
+            "ans": "$$t = 2\\text{ s}, \\quad \\text{KE} = 17.0\\text{ J}, \\quad |\\mathbf{F}| = 1.2\\text{ N}$$",
+            "feedback": "This slip arises from an integration error or differentiating the position vector components incorrectly, yielding a slightly skewed set of values for velocity and force."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Vector Calculus Directions",
+        "content": "Be extremely precise when translating calculus-based kinematics with vectors. Displacement $\\mathbf{r}$ to velocity $\\mathbf{v}$ to acceleration $\\mathbf{a}$ is always done by differentiating with respect to $t$. If you need to go the opposite way, integrate. Remember, component directions $\\mathbf{i}$ and $\\mathbf{j}$ are independent, so treat them as separate variables during calculus operations."
+    }
 }
     
 
