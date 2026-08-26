@@ -1804,6 +1804,210 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Internal vs. External Forces",
         "content": "When analyzing connected systems with composite masses (such as a scale pan containing a block), remember: to find the acceleration of the entire system, treat the scale pan and block as a single external mass ($1 + 3 = 4\\text{ kg}$). Only treat them as separate bodies (using a free-body diagram for just the block) when you need to calculate the internal reaction/contact force $R$ between them."
     }
+},
+{
+    "id": "012096",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Constant Acceleration",
+        "Variable Acceleration",
+        "Quadratic Discriminant"
+    ],
+    "img": false,
+    "question": "<img src='images/Mechanics_png/012096.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>A particle $P$ moves in a straight line with constant acceleration. At time $t = 0\\text{ s}$, $P$ is at the origin $O$. After $t = 8\\text{ s}$, $P$ is at the point $A$, where $OA = 16\\text{ m}$ in the positive direction. The velocity of $P$ at $A$ is $6\\text{ m\\ s}^{-1}$ in the direction $OA$.<br><br><strong>(i) (a)</strong> Show that the initial speed of $P$ is $2\\text{ m\\ s}^{-1}$.<br><br><strong>(i) (b)</strong> Find the acceleration of $P$.<br><br><strong>(ii)</strong> $B$ is a point on the line such that $OB = 5\\text{ m}$ to the left of $O$. Show that $P$ is never at $B$.<br><br><strong>(iii)</strong> A second particle $Q$ starts from $O$ at $t = 0\\text{ s}$ and moves along the same straight line with variable acceleration. The displacement of $Q$ from $O$ is given by $x_Q(t) = at^3 + bt^2 + ct$. Initially ($t = 0\\text{ s}$), $Q$ has the same velocity and acceleration as $P$ has initially. $Q$ reaches $A$ when $t = 4\\text{ s}$. Find the velocity of $Q$ at $A$.",
+    "steps": [
+        "We are given for $P$: displacement $s = 16\\text{ m}$, time $t = 8\\text{ s}$, and final velocity $v = 6\\text{ m\\ s}^{-1}$.<br><br><strong>Part (i) (a):</strong><br>Using the constant acceleration formula relating $s, u, v, t$:<br>\\begin{aligned} s &= \\dfrac{ 1 }{ 2 }(u + v)t \\cr 16 &= \\dfrac{ 1 }{ 2 }(u + 6) \\times 8 \\cr 16 &= 4(u + 6) \\cr 4 &= u + 6 \\cr u &= -2\\text{ m\\ s}^{-1} \\end{aligned}<br><br>Since velocity is a vector, the initial speed is the magnitude of the velocity:<br>\\text{Speed} = | -2 | = 2\\text{ m\\ s}^{-1}\\text{ (as required).}<br><br><strong>Part (i) (b):</strong><br>Using the formula $v = u + at$ to find the constant acceleration $a$:<br>\\begin{aligned} 6 &= -2 + a(8) \\cr 8 &= 8a \\cr a &= 1\\text{ m\\ s}^{-2} \\end{aligned}",
+        "Since $B$ is $5\\text{ m}$ to the left of $O$, its displacement is $s = -5\\text{ m}$.<br><br>Using the displacement formula $s = ut + \\dfrac{ 1 }{ 2 }at^2$ with $u = -2\\text{ m\\ s}^{-1}$ and $a = 1\\text{ m\\ s}^{-2}$:<br>\\begin{aligned} -5 &= -2t + \\dfrac{ 1 }{ 2 }(1)t^2 \\cr -5 &= -2t + 0.5t^2 \\cr 0.5t^2 - 2t + 5 &= 0 \\cr t^2 - 4t + 10 &= 0 \\end{aligned}<br><br>To determine if $P$ is ever at $B$, we check the discriminant of this quadratic equation, $\\Delta = B^2 - 4AC$:<br>\\begin{aligned} \\Delta &= (-4)^2 - 4(1)(10) \\cr &= 16 - 40 \\cr &= -24 \\end{aligned}<br><br>Since the discriminant is negative ($\\Delta < 0$), there are no real solutions for $t$. Therefore, particle $P$ is never at $B$.",
+        "We are given $x_Q(t) = at^3 + bt^2 + ct$. Differentiating with respect to $t$ gives the velocity $v_Q(t)$ and acceleration $a_Q(t)$:<br>\\begin{aligned} v_Q(t) &= 3at^2 + 2bt + c \\cr a_Q(t) &= 6at + 2b \\end{aligned}<br><br>Initially ($t = 0\\text{ s}$), $Q$'s velocity and acceleration match $P$'s initial velocity ($u = -2\\text{ m\\ s}^{-1}$) and acceleration ($a = 1\\text{ m\\ s}^{-2}$):<br>\\begin{aligned} v_Q(0) = c = -2 \\cr a_Q(0) = 2b = 1 \\implies b = 0.5 \\end{aligned}<br><br>So, $x_Q(t) = at^3 + 0.5t^2 - 2t$.<br><br>Since $Q$ reaches $A$ ($x_Q = 16\\text{ m}$) when $t = 4\\text{ s}$:<br>\\begin{aligned} 16 &= a(4)^3 + 0.5(4)^2 - 2(4) \\cr 16 &= 64a + 8 - 8 \\cr 16 &= 64a \\cr a &= 0.25 \\end{aligned}",
+        "Using the value $a = 0.25$, the velocity of $Q$ at any time $t$ is:<br>\\begin{aligned} v_Q(t) &= 3(0.25)t^2 + 2(0.5)t - 2 \\cr &= 0.75t^2 + t - 2 \\end{aligned}<br><br>At $t = 4\\text{ s}$:<br>\\begin{aligned} v_Q(4) &= 0.75(4)^2 + 4 - 2 \\cr &= 0.75(16) + 2 \\cr &= 12 + 2 \\cr &= 14\\text{ m\\ s}^{-1} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$a = 1.25\\text{ m\\ s}^{-2}, \\text{velocity} = 12\\text{ m\\ s}^{-1}$",
+            "feedback": "This error occurs if you miss the negative sign for initial velocity, incorrectly using $u = 2\\text{ m\\ s}^{-1}$ instead of $u = -2\\text{ m\\ s}^{-1}$, leading to incorrect calculations for both the constant acceleration $a$ and the subsequent variable acceleration parameters."
+        },
+        {
+            "ans": "$a = 1\\text{ m\\ s}^{-2}, \\text{velocity} = 16\\text{ m\\ s}^{-1}$",
+            "feedback": "The constant acceleration is correct, but a velocity of $16\\text{ m\\ s}^{-1}$ for $Q$ occurs if you incorrectly calculate the coefficient $b$ as $1.0$ (by forgetting to divide the initial acceleration by $2$ when setting up $2b = 1$)."
+        },
+        {
+            "ans": "$a = 1\\text{ m\\ s}^{-2}, \\text{velocity} = 10\\text{ m\\ s}^{-1}$",
+            "feedback": "The constant acceleration is correct, but a velocity of $10\\text{ m\\ s}^{-1}$ represents a slip in evaluating $v_Q(4) = 0.75(16) + 4 - 2$, possibly by subtracting $4$ instead of adding it, or incorrectly determining the value of $a$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Direction and Signs",
+        "content": "Always pay close attention to direction when interpreting initial values. Since the displacement $OA = 16$ is in the positive direction and the final velocity is also positive ($+6$), the negative initial velocity $u = -2\\text{ m\\ s}^{-1}$ means the particle starts by moving to the left (towards $B$) before turning around and accelerating to the right. Correct signs are crucial for setting up the subsequent quadratic discriminant and variable acceleration integration constants."
+    }
+},
+{
+    "id": "012097",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Constant Acceleration",
+        "Variable Acceleration",
+        "Integration",
+        "Quadratic Discriminant"
+    ],
+    "img": false,
+    "question": "<img src='images/Mechanics_png/012097.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>A particle $P$ moves in a straight line with constant acceleration. At time $t = 0\\text{ s}$, $P$ is at the origin $O$. After $t = 5\\text{ s}$, $P$ is at the point $A$, where $OA = 20\\text{ m}$ in the positive direction. The velocity of $P$ at $A$ is $10\\text{ m\\ s}^{-1}$ in the direction $OA$.<br><br><strong>(i) (a)</strong> Show that the initial speed of $P$ is $2\\text{ m\\ s}^{-1}$.<br><br><strong>(i) (b)</strong> Find the acceleration of $P$.<br><br><strong>(ii)</strong> $B$ is a point on the line such that $OB = 2\\text{ m}$ to the left of $O$. Show that $P$ is never at $B$.<br><br><strong>(iii)</strong> A second particle $Q$ starts from $O$ at $t = 0\\text{ s}$ and moves along the same straight line with velocity given by $v_Q(t) = 3kt^2 + 2.4t - 2$, where $k$ is a constant. $Q$ reaches $A$ when $t = 2\\text{ s}$. Find the velocity of $Q$ at $A$.",
+    "steps": [
+        "We are given for $P$: $s = 20\\text{ m}$, $t = 5\\text{ s}$, and final velocity $v = 10\\text{ m\\ s}^{-1}$.<br><br><strong>Part (i) (a):</strong><br>Using $s = \\dfrac{ 1 }{ 2 }(u + v)t$:<br>\\begin{aligned} 20 &= \\dfrac{ 1 }{ 2 }(u + 10) \\times 5 \\cr 20 &= 2.5(u + 10) \\cr 8 &= u + 10 \\cr u &= -2\\text{ m\\ s}^{-1} \\end{aligned}<br><br>Therefore, the initial speed is the magnitude $| -2 | = 2\\text{ m\\ s}^{-1}\\text{ (as required).}<br><br><strong>Part (i) (b):</strong><br>Using $v = u + at$:<br>\\begin{aligned} 10 &= -2 + a(5) \\cr 12 &= 5a \\cr a &= 2.4\\text{ m\\ s}^{-2} \\end{aligned}",
+        "Since $B$ is $2\\text{ m}$ to the left of $O$, $s = -2\\text{ m}$.<br><br>Using $s = ut + \\dfrac{ 1 }{ 2 }at^2$ with $u = -2\\text{ m\\ s}^{-1}$ and $a = 2.4\\text{ m\\ s}^{-2}$:<br>\\begin{aligned} -2 &= -2t + \\dfrac{ 1 }{ 2 }(2.4)t^2 \\cr -2 &= -2t + 1.2t^2 \\cr 1.2t^2 - 2t + 2 &= 0 \\end{aligned}<br><br>Checking the discriminant $\\Delta = B^2 - 4AC$:<br>\\begin{aligned} \\Delta &= (-2)^2 - 4(1.2)(2) \\cr &= 4 - 9.6 \\cr &= -5.6 \\end{aligned}<br><br>Since $\\Delta < 0$, no real solutions for $t$ exist. Therefore, $P$ is never at $B$.",
+        "We are given $v_Q(t) = 3kt^2 + 2.4t - 2$. Integrating with respect to $t$ gives the displacement $x_Q(t)$:<br>\\begin{aligned} x_Q(t) &= \\int v_Q(t)\\,\\mathrm{d}t \\cr &= kt^3 + 1.2t^2 - 2t + D \\end{aligned}<br><br>Since $Q$ starts from $O$, $x_Q(0) = 0 \\implies D = 0$.<br>So, $x_Q(t) = kt^3 + 1.2t^2 - 2t$.<br><br>$Q$ reaches $A$ ($x_Q = 20\\text{ m}$) when $t = 2\\text{ s}$:<br>\\begin{aligned} 20 &= k(2)^3 + 1.2(2)^2 - 2(2) \\cr 20 &= 8k + 4.8 - 4 \\cr 20 &= 8k + 0.8 \\cr 19.2 &= 8k \\cr k &= 2.4 \\end{aligned}",
+        "Substitute $k = 2.4$ back into the velocity equation $v_Q(t)$:<br>\\begin{aligned} v_Q(t) &= 3(2.4)t^2 + 2.4t - 2 \\cr &= 7.2t^2 + 2.4t - 2 \\end{aligned}<br><br>At $t = 2\\text{ s}$:<br>\\begin{aligned} v_Q(2) &= 7.2(2)^2 + 2.4(2) - 2 \\cr &= 7.2(4) + 4.8 - 2 \\cr &= 28.8 + 2.8 \\cr &= 31.6\\text{ m\\ s}^{-1} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$a = 2.4\\text{ m\\ s}^{-2}, \\text{velocity} = 28.8\\text{ m\\ s}^{-1}$",
+            "feedback": "The constant acceleration is correct, but a velocity of $28.8\\text{ m\\ s}^{-1}$ occurs if you forget to add the $2.4t$ linear velocity term when evaluating $v_Q(2)$."
+        },
+        {
+            "ans": "$a = 1.6\\text{ m\\ s}^{-2}, \\text{velocity} = 31.6\\text{ m\\ s}^{-1}$",
+            "feedback": "This error occurs if you use an incorrect formula for $s$ (such as omitting the $\\frac{1}{2}$ coefficient), leading to an incorrect acceleration for $P$, though the subsequent math for $Q$ is carried out correctly."
+        },
+        {
+            "ans": "$a = 2.4\\text{ m\\ s}^{-2}, \\text{velocity} = 24.4\\text{ m\\ s}^{-1}$",
+            "feedback": "The constant acceleration is correct, but a velocity of $24.4\\text{ m\\ s}^{-1}$ occurs if you incorrectly determine $k = 1.8$ during the integration evaluation stage."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Calculus vs. SUVAT",
+        "content": "Always remember that SUVAT equations (such as $s = ut + \\frac{1}{2}at^2$) are only valid for constant acceleration. Since particle $Q$ has variable acceleration, you must use integration to find displacement from velocity, and you cannot use any SUVAT equations for $Q$. Integrating $v_Q(t) = 3kt^2 + 2.4t - 2$ to find the displacement $x_Q(t) = kt^3 + 1.2t^2 - 2t$ is the only valid mathematical pathway."
+    }
+},
+{
+    "id": "012098",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Constant Acceleration",
+        "Variable Acceleration",
+        "Differentiation",
+        "Quadratic Discriminant"
+    ],
+    "img": false,
+    "question": "<img src='images/Mechanics_png/012098.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>A car $P$ travels along a straight track with constant acceleration. Initially ($t = 0\\text{ s}$), the car is at the starting line $O$. After $6\\text{ s}$, $P$ passes a timing gate $A$, where $OA = 24\\text{ m}$, with a speed of $10\\text{ m\\ s}^{-1}$ in the direction $OA$.<br><br><strong>(i) (a)</strong> Show that the initial velocity of $P$ is $-2\\text{ m\\ s}^{-1}$.<br><br><strong>(i) (b)</strong> Find the acceleration of $P$.<br><br><strong>(ii)</strong> A marker post $B$ is placed such that $OB = 3\\text{ m}$ to the left of $O$. Show that the car $P$ never reaches the marker post $B$.<br><br><strong>(iii)</strong> A second vehicle $Q$ (a motorcycle) starts from $O$ at $t = 0\\text{ s}$ and moves along the same track with variable acceleration. The displacement of $Q$ from $O$ is given by $x_Q(t) = at^3 + bt^2 + ct$. Initially ($t = 0\\text{ s}$), $Q$ has the same velocity and acceleration as $P$ has initially. $Q$ reaches the timing gate $A$ when $t = 4\\text{ s}$. Find the velocity of $Q$ at $A$.",
+    "steps": [
+        "For car $P$: $s = 24\\text{ m}$, $t = 6\\text{ s}$, and final velocity $v = 10\\text{ m\\ s}^{-1}$.<br><br><strong>Part (i) (a):</strong><br>Using $s = \\dfrac{ 1 }{ 2 }(u + v)t$:<br>\\begin{aligned} 24 &= \\dfrac{ 1 }{ 2 }(u + 10) \\times 6 \\cr 24 &= 3(u + 10) \\cr 8 &= u + 10 \\cr u &= -2\\text{ m\\ s}^{-1}\\text{ (as required).} \\end{aligned}<br><br><strong>Part (i) (b):</strong><br>Using $v = u + at$:<br>\\begin{aligned} 10 &= -2 + a(6) \\cr 12 &= 6a \\cr a &= 2\\text{ m\\ s}^{-2} \\end{aligned}",
+        "Since $B$ is $3\\text{ m}$ to the left of $O$, its displacement is $s = -3\\text{ m}$.<br><br>Using $s = ut + \\dfrac{ 1 }{ 2 }at^2$ with $u = -2\\text{ m\\ s}^{-1}$ and $a = 2\\text{ m\\ s}^{-2}$:<br>\\begin{aligned} -3 &= -2t + \\dfrac{ 1 }{ 2 }(2)t^2 \\cr -3 &= -2t + t^2 \\cr t^2 - 2t + 3 &= 0 \\end{aligned}<br><br>Checking the discriminant $\\Delta = B^2 - 4AC$:<br>\\begin{aligned} \\Delta &= (-2)^2 - 4(1)(3) \\cr &= 4 - 12 \\cr &= -8 \\end{aligned}<br><br>Since $\\Delta < 0$, no real solutions for $t$ exist. Therefore, car $P$ never reaches $B$.",
+        "Given $x_Q(t) = at^3 + bt^2 + ct$. Differentiating gives velocity and acceleration:<br>\\begin{aligned} v_Q(t) &= 3at^2 + 2bt + c \\cr a_Q(t) &= 6at + 2b \\end{aligned}<br><br>Initially ($t = 0\\text{ s}$), $Q$ has the same velocity ($u = -2\\text{ m\\ s}^{-1}$) and acceleration ($a = 2\\text{ m\\ s}^{-2}$) as $P$:<br>\\begin{aligned} v_Q(0) = c = -2 \\cr a_Q(0) = 2b = 2 \\implies b = 1 \\end{aligned}<br><br>So, $x_Q(t) = at^3 + t^2 - 2t$.<br><br>Since $Q$ reaches $A$ ($x_Q = 24\\text{ m}$) when $t = 4\\text{ s}$:<br>\\begin{aligned} 24 &= a(4)^3 + (4)^2 - 2(4) \\cr 24 &= 64a + 16 - 8 \\cr 24 &= 64a + 8 \\cr 16 &= 64a \\cr a &= 0.25 \\end{aligned}",
+        "Substitute $a = 0.25$ into $v_Q(t)$:<br>\\begin{aligned} v_Q(t) &= 3(0.25)t^2 + 2(1)t - 2 \\cr &= 0.75t^2 + 2t - 2 \\end{aligned}<br><br>At $t = 4\\text{ s}$:<br>\\begin{aligned} v_Q(4) &= 0.75(4)^2 + 2(4) - 2 \\cr &= 0.75(16) + 8 - 2 \\cr &= 12 + 6 \\cr &= 18\\text{ m\\ s}^{-1} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$a = 2\\text{ m\\ s}^{-2}, \\text{velocity} = 14\\text{ m\\ s}^{-1}$",
+            "feedback": "The constant acceleration is correct, but a velocity of $14\\text{ m\\ s}^{-1}$ occurs if you incorrectly calculate $b = 0.5$ (by forgetting that $a_Q(0) = 2b = 2$, which gives $b=1$, not $0.5$)."
+        },
+        {
+            "ans": "$a = 1.5\\text{ m\\ s}^{-2}, \\text{velocity} = 18\\text{ m\\ s}^{-1}$",
+            "feedback": "This error occurs if you make an arithmetic slip when calculating the constant acceleration of $P$ (using $a = 1.5$ instead of $2$), but calculate the motorcycle's velocity correctly with your values."
+        },
+        {
+            "ans": "$a = 2\\text{ m\\ s}^{-2}, \\text{velocity} = 22\\text{ m\\ s}^{-1}$",
+            "feedback": "The constant acceleration is correct, but a velocity of $22\\text{ m\\ s}^{-1}$ represents a sign slip when evaluating $v_Q(4) = 0.75(16) + 8 - 2$, perhaps by adding the $2$ instead of subtracting it."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Turning Point of the Motion",
+        "content": "Since the car starts with a negative velocity ($u = -2\\text{ m\\ s}^{-1}$) and accelerates forward ($a = 2\\text{ m\\ s}^{-2}$), it must stop and change direction. The turning point of the motion occurs when velocity $v_P = 0 \\implies -2 + 2t = 0 \\implies t = 1\\text{ s}$. The minimum position of the car is $s(1) = -2(1) + 1^2 = -1\\text{ m}$. Since the marker $B$ is $3\\text{ m}$ to the left ($s = -3\\text{ m}$), the car turns back to the right before it ever reaches $B$."
+    }
+},
+{
+    "id": "012099",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Constant Acceleration",
+        "Variable Acceleration",
+        "Differentiation",
+        "Quadratic Discriminant"
+    ],
+    "img": false,
+    "question": "<img src='images/Mechanics_png/012099.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>A particle $P$ moves in a straight line with constant acceleration. At time $t = 0\\text{ s}$, $P$ is at the origin $O$. After $t = 10\\text{ s}$, $P$ is at the point $A$, where $OA = 40\\text{ m}$ in the positive direction. The velocity of $P$ at $A$ is $12\\text{ m\\ s}^{-1}$ in the direction $OA$.<br><br><strong>(i) (a)</strong> Show that the initial velocity of $P$ is $-4\\text{ m\\ s}^{-1}$.<br><br><strong>(i) (b)</strong> Find the acceleration of $P$.<br><br><strong>(ii)</strong> Point $B$ is on the line such that $OB = 8\\text{ m}$ to the left of $O$. Show that $P$ never reaches $B$.<br><br><strong>(iii)</strong> A second particle $Q$ starts from $O$ at $t = 0\\text{ s}$ and moves along the same track with variable acceleration. The displacement of $Q$ from $O$ is given by $x_Q(t) = at^3 + bt^2 + ct$. Initially ($t = 0\\text{ s}$), $Q$ has the same velocity and acceleration as $P$ has initially. $Q$ reaches $A$ when $t = 5\\text{ s}$. Find the acceleration of $Q$ at $A$.",
+    "steps": [
+        "For particle $P$: $s = 40\\text{ m}$, $t = 10\\text{ s}$, and final velocity $v = 12\\text{ m\\ s}^{-1}$.<br><br><strong>Part (i) (a):</strong><br>Using $s = \\dfrac{ 1 }{ 2 }(u + v)t$:<br>\\begin{aligned} 40 &= \\dfrac{ 1 }{ 2 }(u + 12) \\times 10 \\cr 40 &= 5(u + 12) \\cr 8 &= u + 12 \\cr u &= -4\\text{ m\\ s}^{-1}\\text{ (as required).} \\end{aligned}<br><br><strong>Part (i) (b):</strong><br>Using $v = u + at$:<br>\\begin{aligned} 12 &= -4 + a(10) \\cr 16 &= 10a \\cr a &= 1.6\\text{ m\\ s}^{-2} \\end{aligned}",
+        "Since $B$ is $8\\text{ m}$ to the left of $O$, its displacement is $s = -8\\text{ m}$.<br><br>Using $s = ut + \\dfrac{ 1 }{ 2 }at^2$ with $u = -4\\text{ m\\ s}^{-1}$ and $a = 1.6\\text{ m\\ s}^{-2}$:<br>\\begin{aligned} -8 &= -4t + \\dfrac{ 1 }{ 2 }(1.6)t^2 \\cr -8 &= -4t + 0.8t^2 \\cr 0.8t^2 - 4t + 8 &= 0 \\cr t^2 - 5t + 10 &= 0 \\end{aligned}<br><br>Checking the discriminant $\\Delta = B^2 - 4AC$:<br>\\begin{aligned} \\Delta &= (-5)^2 - 4(1)(10) \\cr &= 25 - 40 \\cr &= -15 \\end{aligned}<br><br>Since $\\Delta < 0$, there are no real solutions for $t$. Therefore, particle $P$ never reaches $B$.",
+        "Given $x_Q(t) = at^3 + bt^2 + ct$. Differentiating gives velocity and acceleration:<br>\\begin{aligned} v_Q(t) &= 3at^2 + 2bt + c \\cr a_Q(t) &= 6at + 2b \\end{aligned}<br><br>Initially ($t = 0\\text{ s}$), $Q$ has the same velocity ($u = -4\\text{ m\\ s}^{-1}$) and acceleration ($a = 1.6\\text{ m\\ s}^{-2}$) as $P$:<br>\\begin{aligned} v_Q(0) = c = -4 \\cr a_Q(0) = 2b = 1.6 \\implies b = 0.8 \\end{aligned}<br><br>So, $x_Q(t) = at^3 + 0.8t^2 - 4t$.<br><br>Since $Q$ reaches $A$ ($x_Q = 40\\text{ m}$) when $t = 5\\text{ s}$:<br>\\begin{aligned} 40 &= a(5)^3 + 0.8(5)^2 - 4(5) \\cr 40 &= 125a + 20 - 20 \\cr 40 &= 125a \\cr a &= 0.32 \\end{aligned}",
+        "To find the acceleration of $Q$ at $A$ (where $t = 5\\text{ s}$), substitute $a = 0.32$ and $b = 0.8$ into the acceleration formula:<br>\\begin{aligned} a_Q(t) &= 6(0.32)t + 2(0.8) \\cr &= 1.92t + 1.6 \\end{aligned}<br><br>At $t = 5\\text{ s}$:<br>\\begin{aligned} a_Q(5) &= 1.92(5) + 1.6 \\cr &= 9.6 + 1.6 \\cr &= 11.2\\text{ m\\ s}^{-2} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$a = 1.6\\text{ m\\ s}^{-2}, \\text{acceleration} = 9.6\\text{ m\\ s}^{-2}$",
+            "feedback": "The constant acceleration of $P$ is correct, but an acceleration of $9.6\\text{ m\\ s}^{-2}$ for $Q$ occurs if you forget to add the $2b = 1.6$ term when evaluating the acceleration equation at $t=5$."
+        },
+        {
+            "ans": "$a = 1.6\\text{ m\\ s}^{-2}, \\text{acceleration} = 14.4\\text{ m\\ s}^{-2}$",
+            "feedback": "The constant acceleration is correct, but an acceleration of $14.4\\text{ m\\ s}^{-2}$ occurs if you incorrectly calculate $b = 1.6$ by forgetting to divide the initial acceleration by $2$ when setting up $2b = 1.6$."
+        },
+        {
+            "ans": "$a = 2.0\\text{ m\\ s}^{-2}, \\text{acceleration} = 11.2\\text{ m\\ s}^{-2}$",
+            "feedback": "This error occurs if you miscalculate the constant acceleration of $P$ (obtaining $a = 2.0$ instead of $1.6$), although the variable acceleration of $Q$ is computed correctly."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Acceleration vs. Velocity",
+        "content": "Make sure you read the question carefully! Part (iii) asks for the <strong>acceleration</strong> of particle $Q$ at point $A$, not its velocity. Double check that you are substituting $t = 5$ into $a_Q(t) = 6at + 2b$ rather than into $v_Q(t) = 3at^2 + 2bt + c$."
+    }
+},
+{
+    "id": "012100",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Constant Acceleration",
+        "Variable Acceleration",
+        "Integration",
+        "Quadratic Discriminant"
+    ],
+    "img": false,
+    "question": "<img src='images/Mechanics_png/012100.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>A particle $P$ moves in a straight line with constant acceleration. At time $t = 0\\text{ s}$, $P$ is at the origin $O$. After $t = 6\\text{ s}$, $P$ is at the point $A$, where $OA = 36\\text{ m}$ in the positive direction. The velocity of $P$ at $A$ is $14\\text{ m\\ s}^{-1}$ in the direction $OA$.<br><br><strong>(i) (a)</strong> Show that the initial speed of $P$ is $2\\text{ m\\ s}^{-1}$.<br><br><strong>(i) (b)</strong> Find the acceleration of $P$.<br><br><strong>(ii)</strong> $B$ is a point on the line such that $OB = 3\\text{ m}$ to the left of $O$. Show that $P$ is never at point $B$.<br><br><strong>(iii)</strong> A second particle $Q$ starts from $O$ at $t = 0\\text{ s}$ and moves along the same track with variable acceleration $a_Q(t) = 12kt + \\frac{8}{3}$, where $k$ is a constant. Initially ($t = 0\\text{ s}$), $Q$ has the same velocity as $P$ has initially. $Q$ reaches $A$ when $t = 3\\text{ s}$. Find the velocity of $Q$ at $A$.",
+    "steps": [
+        "For particle $P$: $s = 36\\text{ m}$, $t = 6\\text{ s}$, and final velocity $v = 14\\text{ m\\ s}^{-1}$.<br><br><strong>Part (i) (a):</strong><br>Using $s = \\dfrac{ 1 }{ 2 }(u + v)t$:<br>\\begin{aligned} 36 &= \\dfrac{ 1 }{ 2 }(u + 14) \\times 6 \\cr 36 &= 3(u + 14) \\cr 12 &= u + 14 \\cr u &= -2\\text{ m\\ s}^{-1} \\end{aligned}<br><br>Therefore, the initial speed is the magnitude $| -2 | = 2\\text{ m\\ s}^{-1}\\text{ (as required).}<br><br><strong>Part (i) (b):</strong><br>Using $v = u + at$:<br>\\begin{aligned} 14 &= -2 + a(6) \\cr 16 &= 6a \\cr a &= \\dfrac{ 8 }{ 3 }\\text{ m\\ s}^{-2} \\end{aligned}",
+        "Since $B$ is $3\\text{ m}$ to the left of $O$, $s = -3\\text{ m}$.<br><br>Using $s = ut + \\dfrac{ 1 }{ 2 }at^2$ with $u = -2\\text{ m\\ s}^{-1}$ and $a = \\dfrac{ 8 }{ 3 }\\text{ m\\ s}^{-2}$:<br>\\begin{aligned} -3 &= -2t + \\dfrac{ 1 }{ 2 }\\left(\\dfrac{ 8 }{ 3 }\\right)t^2 \\cr -3 &= -2t + \\dfrac{ 4 }{ 3 }t^2 \\cr 0 &= \\dfrac{ 4 }{ 3 }t^2 - 2t + 3 \\cr 0 &= 4t^2 - 6t + 9 \\end{aligned}<br><br>Checking the discriminant $\\Delta = B^2 - 4AC$:<br>\\begin{aligned} \\Delta &= (-6)^2 - 4(4)(9) \\cr &= 36 - 144 \\cr &= -108 \\end{aligned}<br><br>Since $\\Delta < 0$, no real solutions for $t$ exist. Therefore, particle $P$ is never at $B$.",
+        "We are given the acceleration of $Q$: $a_Q(t) = 12kt + \\dfrac{ 8 }{ 3 }$. Integrating with respect to $t$ gives the velocity $v_Q(t)$:<br>\\begin{aligned} v_Q(t) &= \\int a_Q(t)\\,\\mathrm{d}t \\cr &= 6kt^2 + \\dfrac{ 8 }{ 3 }t + C \\end{aligned}<br><br>Since initially ($t = 0\\text{ s}$), $Q$ has the same velocity as $P$'s initial velocity ($u = -2\\text{ m\\ s}^{-1}$), we have $C = -2$.<br>So, $v_Q(t) = 6kt^2 + \\dfrac{ 8 }{ 3 }t - 2$.<br><br>Integrating again to find the displacement $x_Q(t)$:<br>\\begin{aligned} x_Q(t) &= \\int v_Q(t)\\,\\mathrm{d}t \\cr &= 2kt^3 + \\dfrac{ 4 }{ 3 }t^2 - 2t + D \\end{aligned}<br><br>Since $Q$ starts from $O$, $x_Q(0) = 0 \\implies D = 0$.<br>So, $x_Q(t) = 2kt^3 + \\dfrac{ 4 }{ 3 }t^2 - 2t$.",
+        "Since $Q$ reaches $A$ ($x_Q = 36\\text{ m}$) when $t = 3\\text{ s}$:<br>\\begin{aligned} 36 &= 2k(3)^3 + \\dfrac{ 4 }{ 3 }(3)^2 - 2(3) \\cr 36 &= 54k + 12 - 6 \\cr 36 &= 54k + 6 \\cr 30 &= 54k \\cr k &= \\dfrac{ 5 }{ 9 } \\end{aligned}<br><br>Substitute $k = \\dfrac{ 5 }{ 9 }$ back into the velocity equation $v_Q(t)$:<br>\\begin{aligned} v_Q(t) &= 6\\left(\\dfrac{ 5 }{ 9 }\\right)t^2 + \\dfrac{ 8 }{ 3 }t - 2 \\cr &= \\dfrac{ 10 }{ 3 }t^2 + \\dfrac{ 8 }{ 3 }t - 2 \\end{aligned}<br><br>At $t = 3\\text{ s}$:<br>\\begin{aligned} v_Q(3) &= \\dfrac{ 10 }{ 3 }(3)^2 + \\dfrac{ 8 }{ 3 }(3) - 2 \\cr &= 30 + 8 - 2 \\cr &= 36\\text{ m\\ s}^{-1} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$a = \\dfrac{8}{3}\\text{ m\\ s}^{-2}, \\text{velocity} = 30\\text{ m\\ s}^{-1}$",
+            "feedback": "The constant acceleration is correct, but a velocity of $30\\text{ m\\ s}^{-1}$ represents a sign slip when evaluating $v_Q(3) = 30 + 8 - 2$, perhaps by subtracting $8$ instead of adding it."
+        },
+        {
+            "ans": "$a = \\dfrac{8}{3}\\text{ m\\ s}^{-2}, \\text{velocity} = 22\\text{ m\\ s}^{-1}$",
+            "feedback": "The constant acceleration is correct, but a velocity of $22\\text{ m\\ s}^{-1}$ occurs if you fail to integrate correctly, perhaps by setting $v_Q(t) = 12kt^2 + \\frac{8}{3}t - 2$ (failing to divide the first term by $2$)."
+        },
+        {
+            "ans": "$a = 2.4\\text{ m\\ s}^{-2}, \\text{velocity} = 36\\text{ m\\ s}^{-1}$",
+            "feedback": "This error occurs if you make an arithmetic slip when calculating the constant acceleration of $P$ (obtaining $2.4$ instead of $\\frac{8}{3}$), although the calculus and velocity calculations for $Q$ are carried out correctly."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Rationalizing Fractions",
+        "content": "When dealing with fractional accelerations (such as $a = \\frac{8}{3}\\text{ m\\ s}^{-2}$), avoid rounding to decimals like $2.67\\text{ m\\ s}^{-2}$ early in your working. Keeping terms in exact fractional form prevents rounding propagation errors and ensures that subsequent integrations and constants resolve to beautifully clean, exact integer results (like $k = \\frac{5}{9}$ and $v_Q(3) = 36\\text{ m\\ s}^{-1}$)."
+    }
 }
     
 
