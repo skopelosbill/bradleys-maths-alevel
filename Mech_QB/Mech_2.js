@@ -1602,6 +1602,208 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Vector Calculus Directions",
         "content": "Be extremely precise when translating calculus-based kinematics with vectors. Displacement $\\mathbf{r}$ to velocity $\\mathbf{v}$ to acceleration $\\mathbf{a}$ is always done by differentiating with respect to $t$. If you need to go the opposite way, integrate. Remember, component directions $\\mathbf{i}$ and $\\mathbf{j}$ are independent, so treat them as separate variables during calculus operations."
     }
+},
+{
+    "id": "012091",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Newton's Laws of Motion",
+        "Slack Strings"
+    ],
+    "img": "images/Mechanics_png/012091.png",
+    "question": "Particles $P$ and $Q$, of masses $3\\text{ kg}$ and $7\\text{ kg}$ respectively, are attached to the ends of a light inextensible string. The string passes over a smooth fixed pulley. The system is held at rest with the string taut and the hanging parts vertical. Both $P$ and $Q$ are above a horizontal plane. The system is released from rest.<br><br><strong>(i)</strong> Find the tension in the string immediately after the particles are released.<br><br>After descending $2\\text{ m}$, $Q$ strikes the horizontal plane and is immediately brought to rest. It is given that $P$ does not reach the pulley in the subsequent motion.<br><br><strong>(ii)</strong> Find the total distance travelled by $P$ between the instant when $Q$ strikes the plane and the instant when the string becomes taut again.",
+    "steps": [
+        "To find the tension immediately after release, we first define the system's acceleration, $a$, and tension, $T$. Since $Q$ ($7\\text{ kg}$) is heavier than $P$ ($3\\text{ kg}$), $Q$ will accelerate downwards and $P$ will accelerate upwards with the same magnitude $a$.<br><br>Applying Newton's second law ($F = ma$) to each particle:<br>For $P$ moving upwards:<br>$T - 3g = 3a$<br><br>For $Q$ moving downwards:<br>$7g - T = 7a$<br><br>Adding these two equations together eliminates $T$:<br>\\begin{aligned} (T - 3g) + (7g - T) &= 3a + 7a \\cr 4g &= 10a \\cr a &= 0.4g \\end{aligned}<br><br>Using $g = 9.8\\text{ m\\,s}^{-2}$:<br>\\begin{aligned} a &= 0.4 \\times 9.8 \\cr a &= 3.92\\text{ m\\,s}^{-2} \\end{aligned}<br><br>Substitute $a = 3.92\\text{ m\\,s}^{-2}$ back into the equation for $P$ to find the tension $T$:<br>\\begin{aligned} T - 3(9.8) &= 3(3.92) \\cr T - 29.4 &= 11.76 \\cr T &= 41.16\\text{ N} \\end{aligned}",
+        "When $Q$ descends $2\\text{ m}$ to strike the plane, $P$ ascends $2\\text{ m}$ with the constant acceleration $a = 3.92\\text{ m\\,s}^{-2}$.<br><br>Using the constant acceleration equation $v^2 = u^2 + 2as$ with initial speed $u = 0\\text{ m\\,s}^{-1}$:<br>\\begin{aligned} v^2 &= 0^2 + 2 \\times 3.92 \\times 2 \\cr v^2 &= 15.68 \\cr v &= \\sqrt{ 15.68 } \\approx 3.96\\text{ m\\,s}^{-1} \\end{aligned}",
+        "When $Q$ strikes the horizontal plane, it is immediately brought to rest. The string becomes slack (tension $T = 0$), and $P$ continues to move vertically upwards under gravity alone as a free projectile.<br><br>For $P$'s upward motion under gravity, the acceleration is $a = -g = -9.8\\text{ m\\,s}^{-2}$. Let $s_{up}$ be the additional vertical distance $P$ travels upwards before coming to instantaneous rest ($v = 0$):<br>\\begin{aligned} 0^2 &= v^2 + 2(-g)s_{up} \\cr 0 &= 15.68 - 2(9.8)s_{up} \\cr 19.6 s_{up} &= 15.68 \\cr s_{up} &= \\dfrac{ 15.68 }{ 19.6 } \\cr s_{up} &= 0.8\\text{ m} \\end{aligned}",
+        "After reaching its highest point (an additional $0.8\\text{ m}$ upwards), $P$ begins to fall back down under gravity. Since $Q$ remains at rest on the plane, the string remains slack until $P$ falls back to the exact height it was at when $Q$ first struck the plane.<br><br>Therefore, the string becomes taut again when $P$ has fallen back down by the same distance $s_{up} = 0.8\\text{ m}$.<br><br>The total distance travelled by $P$ while the string is slack is:<br>\\begin{aligned} \\text{Total Distance} &= s_{up} \\text{ (upwards)} + s_{up} \\text{ (downwards)} \\cr &= 0.8 + 0.8 \\cr &= 1.6\\text{ m} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$T = 41.16\\text{ N}, \\text{distance} = 0.8\\text{ m}$",
+            "feedback": "The tension of $41.16\\text{ N}$ is correct, but $0.8\\text{ m}$ is only the upward distance $P$ travels after the string goes slack. Since the string only becomes taut when $P$ returns to its height at the moment of impact, you must also add the downward descent of $0.8\\text{ m}$."
+        },
+        {
+            "ans": "$T = 29.40\\text{ N}, \\text{distance} = 1.6\\text{ m}$",
+            "feedback": "This error occurs if you assume the tension is equal to the weight of the lighter mass ($3g = 29.4\\text{ N}$), neglecting the acceleration of the system. Additionally, $1.6\\text{ m}$ is the correct total distance travelled during the slack phase."
+        },
+        {
+            "ans": "$T = 41.16\\text{ N}, \\text{distance} = 2.8\\text{ m}$",
+            "feedback": "This tension is correct, but the distance of $2.8\\text{ m}$ is found by adding the initial $2\\text{ m}$ ascent of $P$ to the $0.8\\text{ m}$ slack upward motion. The question only asks for the distance travelled <strong>between</strong> the instant $Q$ strikes the plane and when the string becomes taut again."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Don't Forget the Return Journey",
+        "content": "A very common mistake in slack-string questions is to calculate only the additional upward distance $s_{up}$ that the rising particle travels before stopping. Remember, the string remains slack as the particle falls back down, only becoming taut again when it returns to the level it was at when the other mass struck the floor. Thus, you must double the upward distance: $\\text{Total Distance} = 2 s_{up}$."
+    }
+},
+{
+    "id": "012092",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Newton's Laws of Motion",
+        "Slack Strings",
+        "Time Calculations"
+    ],
+    "img": "images/Mechanics_png/012092.png",
+    "question": "Particles $P$ and $Q$, of masses $2\\text{ kg}$ and $3\\text{ kg}$ respectively, are attached to the ends of a light inextensible string. The string passes over a smooth fixed pulley. The system is held at rest with the string taut and the hanging parts vertical. Both particles are above a horizontal plane. The system is released from rest.<br><br><strong>(i)</strong> Find the tension in the string immediately after the particles are released.<br><br>After descending $6.125\\text{ m}$, $Q$ strikes the plane and is immediately brought to rest. It is given that $P$ does not reach the pulley in the subsequent motion.<br><br><strong>(ii)</strong> Find the total time that elapses between the instant when $Q$ strikes the plane and the instant when the string becomes taut again.",
+    "steps": [
+        "Let the acceleration of the system be $a$ and the tension be $T$. $Q$ ($3\\text{ kg}$) accelerates downwards and $P$ ($2\\text{ kg}$) accelerates upwards.<br><br>Applying Newton's second law ($F = ma$) to each particle:<br>For $P$ moving upwards:<br>$T - 2g = 2a$<br><br>For $Q$ moving downwards:<br>$3g - T = 3a$<br><br>Adding these equations:<br>\\begin{aligned} (T - 2g) + (3g - T) &= 2a + 3a \\cr g &= 5a \\cr a &= 0.2g \\end{aligned}<br><br>Using $g = 9.8\\text{ m\\,s}^{-2}$:<br>\\begin{aligned} a &= 0.2 \\times 9.8 \\cr a &= 1.96\\text{ m\\,s}^{-2} \\end{aligned}<br><br>Substitute $a = 1.96\\text{ m\\,s}^{-2}$ into the equation for $P$ to find the tension $T$:<br>\\begin{aligned} T - 2(9.8) &= 2(1.96) \\cr T - 19.6 &= 3.92 \\cr T &= 23.52\\text{ N} \\end{aligned}",
+        "When $Q$ descends $6.125\\text{ m}$, both particles are moving with speed $v$.<br><br>Using the constant acceleration equation $v^2 = u^2 + 2as$ with $u = 0\\text{ m\\,s}^{-1}$:<br>\\begin{aligned} v^2 &= 0^2 + 2 \\times 1.96 \\times 6.125 \\cr v^2 &= 24.01 \\cr v &= \\sqrt{ 24.01 } \\cr v &= 4.9\\text{ m\\,s}^{-1} \\end{aligned}",
+        "When $Q$ strikes the plane, it is brought to rest and the string goes slack. $P$ continues to move vertically upwards as a projectile under gravity with acceleration $a = -g = -9.8\\text{ m\\,s}^{-2}$ and initial velocity $u = 4.9\\text{ m\\,s}^{-1}$.<br><br>Let $t_{up}$ be the time taken for $P$ to reach its highest point, where its velocity is $0\\text{ m\\,s}^{-1}$:<br>\\begin{aligned} v &= u - gt_{up} \\cr 0 &= 4.9 - 9.8 t_{up} \\cr 9.8 t_{up} &= 4.9 \\cr t_{up} &= \\dfrac{ 4.9 }{ 9.8 } \\cr t_{up} &= 0.5\\text{ s} \\end{aligned}",
+        "The string remains slack as $P$ rises to its highest point (taking $0.5\\text{ s}$) and then falls back down. Under gravity, the time taken for $P$ to fall back to its original height (where the string becomes taut again) is equal to the time taken to rise.<br><br>\\begin{aligned} \\text{Total Time} &= t_{up} \\text{ (rising)} + t_{down} \\text{ (falling)} \\cr &= 0.5 + 0.5 \\cr &= 1\\text{ s} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$T = 23.52\\text{ N}, \\text{time} = 0.50\\text{ s}$",
+            "feedback": "The tension is correct, but $0.50\\text{ s}$ is only the time taken for $P$ to reach its maximum height. You must also include the time taken for $P$ to fall back down to the level where the string becomes taut again, which doubles the time."
+        },
+        {
+            "ans": "$T = 19.60\\text{ N}, \\text{time} = 1.00\\text{ s}$",
+            "feedback": "This tension is incorrect because it assumes $T = 2g = 19.6\\text{ N}$ (as if the system were in static equilibrium). Since the system is accelerating upwards, the tension must exceed the stationary weight ($T = 2(g + a) = 23.52\\text{ N}$)."
+        },
+        {
+            "ans": "$T = 23.52\\text{ N}, \\text{time} = 1.25\\text{ s}$",
+            "feedback": "This tension is correct, but the time of $1.25\\text{ s}$ is incorrect. This error may occur if you use an incorrect deceleration value instead of gravity ($g = 9.8\\text{ m\\,s}^{-2}$) for the projectile stage of the motion."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Symmetry of Projectile Motion",
+        "content": "When a string goes slack, the rising particle acts as a simple vertical projectile. Due to the symmetry of free-fall motion under gravity, the time taken for the particle to rise to its peak is exactly equal to the time it takes to return to its launch height: $t_{\\text{total}} = 2 t_{\\text{up}}$. This symmetry makes finding the total time very direct."
+    }
+},
+{
+    "id": "012093",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Newton's Laws of Motion",
+        "Inclined Planes",
+        "Slack Strings"
+    ],
+    "img": "images/Mechanics_png/012093.png",
+    "question": "A block $P$ of mass $2\\text{ kg}$ is held at rest on a smooth plane inclined at an angle of $30^\\circ$ to the horizontal. Block $P$ is connected by a light inextensible string passing over a smooth fixed pulley at the top of the incline to a hanging block $Q$ of mass $6\\text{ kg}$, which hangs vertically. The system is released from rest with the string taut.<br><br><strong>(i)</strong> Find the tension in the string immediately after the blocks are released.<br><br>After descending $1.6\\text{ m}$, $Q$ strikes a horizontal floor and is immediately brought to rest. It is given that $P$ does not reach the pulley.<br><br><strong>(ii)</strong> Find the total distance travelled by $P$ from the instant $Q$ strikes the floor to the instant the string becomes taut again.",
+    "steps": [
+        "Let the acceleration of the system be $a$ and the tension in the string be $T$. $Q$ ($6\\text{ kg}$) accelerates downwards and $P$ ($2\\text{ kg}$) accelerates up the plane.<br><br>Applying Newton's second law ($F = ma$) to each block:<br>For $Q$ moving downwards:<br>$6g - T = 6a$<br><br>For $P$ moving up the inclined plane, the component of gravity acting down the plane is $2g \\sin 30^\\circ$:<br>$T - 2g \\sin 30^\\circ = 2a$<br><br>Since $\\sin 30^\\circ = 0.5$:<br>$T - g = 2a$<br><br>Adding these two equations eliminates $T$:<br>\\begin{aligned} (6g - T) + (T - g) &= 6a + 2a \\cr 5g &= 8a \\cr a &= 0.625g \\end{aligned}<br><br>Using $g = 9.8\\text{ m\\,s}^{-2}$:<br>\\begin{aligned} a &= 0.625 \\times 9.8 \\cr a &= 6.125\\text{ m\\,s}^{-2} \\end{aligned}<br><br>Substitute $a = 6.125\\text{ m\\,s}^{-2}$ back into the equation for $P$:<br>\\begin{aligned} T - 9.8 &= 2(6.125) \\cr T - 9.8 &= 12.25 \\cr T &= 22.05\\text{ N} \\end{aligned}",
+        "When $Q$ descends $1.6\\text{ m}$, $P$ moves $1.6\\text{ m}$ up the plane with acceleration $a = 6.125\\text{ m\\,s}^{-2}$.<br><br>Using $v^2 = u^2 + 2as$ with $u = 0\\text{ m\\,s}^{-1}$:<br>\\begin{aligned} v^2 &= 0^2 + 2 \\times 6.125 \\times 1.6 \\cr v^2 &= 19.6 \\cr v &= \\sqrt{ 19.6 }\\text{ m\\,s}^{-1} \\end{aligned}",
+        "When $Q$ hits the floor and is brought to rest, the string becomes slack. The only force acting on $P$ parallel to the plane is its weight component pulling it down the plane ($2g \\sin 30^\\circ$).<br><br>Applying $F = ma$ to $P$ along the plane:<br>\\begin{aligned} -2g \\sin 30^\\circ &= 2 a_{\\text{slack}} \\cr a_{\\text{slack}} &= -g \\sin 30^\\circ \\cr &= -9.8 \\times 0.5 \\cr &= -4.9\\text{ m\\,s}^{-2} \\end{aligned}<br><br>Let $s_{up}$ be the distance $P$ travels further up the plane before coming to instantaneous rest ($v = 0$):<br>\\begin{aligned} 0^2 &= v^2 + 2 a_{\\text{slack}} s_{up} \\cr 0 &= 19.6 + 2(-4.9)s_{up} \\cr 9.8 s_{up} &= 19.6 \\cr s_{up} &= 2\\text{ m} \\end{aligned}",
+        "Since the incline is smooth, $P$ will slide back down the plane with acceleration $g \\sin 30^\\circ = 4.9\\text{ m\\,s}^{-2}$. The string remains slack until $P$ returns to the position it was at when $Q$ struck the floor, which requires descending $2\\text{ m}$ back down.<br><br>The total distance travelled by $P$ while the string is slack is:<br>\\begin{aligned} \\text{Total Distance} &= s_{up} \\text{ (upwards)} + s_{down} \\text{ (downwards)} \\cr &= 2 + 2 \\cr &= 4\\text{ m} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$T = 22.05\\text{ N}, \\text{distance} = 2.00\\text{ m}$",
+            "feedback": "The tension is correct, but $2.00\\text{ m}$ is only the distance $P$ travels up the incline after the string becomes slack. Since the string is slack during both the ascent and the return descent, you must double this value to find the total distance of $4.00\\text{ m}$."
+        },
+        {
+            "ans": "$T = 39.20\\text{ N}, \\text{distance} = 4.00\\text{ m}$",
+            "feedback": "A tension of $39.20\\text{ N}$ is incorrect; this error arises if you fail to resolve the gravity component of block $P$ on the inclined plane (using $2g = 19.6\\text{ N}$ instead of $2g\\sin 30^\\circ = 9.8\\text{ N}$)."
+        },
+        {
+            "ans": "$T = 22.05\\text{ N}, \\text{distance} = 3.60\\text{ m}$",
+            "feedback": "The tension is correct, but the distance of $3.60\\text{ m}$ is incorrect. This error can happen if you add the initial $1.6\\text{ m}$ of motion to the $2.0\\text{ m}$ of slack upward motion. The question asks for the distance travelled only <strong>after</strong> the instant $Q$ strikes the floor."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Deceleration on an Incline",
+        "content": "Notice that once the string goes slack, the rising block $P$ is no longer connected to $Q$, so its acceleration is determined solely by the forces acting on $P$. On a smooth inclined plane of angle $\\theta$, this acceleration is always $-g \\sin \\theta$ regardless of $P$'s mass, because mass cancels out on both sides of $F = ma$ ($m a_{\\text{slack}} = -m g \\sin\\theta$)."
+    }
+},
+{
+    "id": "012094",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Newton's Laws of Motion",
+        "Rough Inclined Planes",
+        "Friction",
+        "Slack Strings"
+    ],
+    "img": "images/Mechanics_png/012094.png",
+    "question": "A block $P$ of mass $5\\text{ kg}$ lies on a rough plane inclined at an angle $\\theta$ to the horizontal, where $\\sin\\theta = 0.6$ and $\\cos\\theta = 0.8$. The coefficient of friction between $P$ and the plane is $0.25$. Block $P$ is connected by a light inextensible string passing over a smooth fixed pulley at the top of the incline to a hanging block $Q$ of mass $5\\text{ kg}$. The system is released from rest with the string taut and $Q$ hanging vertically.<br><br><strong>(i)</strong> Find the tension in the string immediately after the blocks are released.<br><br>After descending $10\\text{ m}$, $Q$ strikes a horizontal platform and is immediately brought to rest. It is given that $P$ does not reach the pulley.<br><br><strong>(ii)</strong> Find the total distance travelled by $P$ between the instant $Q$ strikes the platform and the instant the string becomes taut again.",
+    "steps": [
+        "First, find the normal reaction force $R$ acting on $P$. Since there is no acceleration perpendicular to the incline:<br>\\begin{aligned} R &= m_P g \\cos\\theta \\cr R &= 5 \\times 9.8 \\times 0.8 \\cr R &= 39.2\\text{ N} \\end{aligned}<br><br>The maximum frictional force $F$ opposing $P$'s upward motion is:<br>\\begin{aligned} F &= \\mu R \\cr F &= 0.25 \\times 39.2 \\cr F &= 9.8\\text{ N} \\end{aligned}",
+        "Let the acceleration of the system be $a$ and the tension be $T$. $Q$ accelerates downwards and $P$ accelerates up the plane, so friction $F$ acts down the plane.<br><br>Applying Newton's second law ($F = ma$):<br>For $Q$ moving downwards:<br>$5g - T = 5a$<br><br>For $P$ moving up the inclined plane:<br>$T - 5g \\sin\\theta - F = 5a$<br><br>Since $\\sin\\theta = 0.6$ and $F = 9.8\\text{ N}$:<br>\\begin{aligned} T - 5(9.8)(0.6) - 9.8 &= 5a \\cr T - 29.4 - 9.8 &= 5a \\cr T - 39.2 &= 5a \\end{aligned}<br><br>Adding the two equations eliminates $T$:<br>\\begin{aligned} (5g - T) + (T - 39.2) &= 5a + 5a \\cr 49 - 39.2 &= 10a \\cr 9.8 &= 10a \\cr a &= 0.98\\text{ m\\,s}^{-2} \\end{aligned}<br><br>Substitute $a = 0.98\\text{ m\\,s}^{-2}$ into the equation for $Q$ to find the tension $T$:<br>\\begin{aligned} 5(9.8) - T &= 5(0.98) \\cr 49 - T &= 4.9 \\cr T &= 44.1\\text{ N} \\end{aligned}",
+        "Using $v^2 = u^2 + 2as$ with $u = 0\\text{ m\\,s}^{-1}$ and $s = 10\\text{ m}$:<br>\\begin{aligned} v^2 &= 0^2 + 2 \\times 0.98 \\times 10 \\cr v^2 &= 19.6 \\cr v &= \\sqrt{ 19.6 }\\text{ m\\,s}^{-1} \\end{aligned}",
+        "When $Q$ strikes the platform and stops, the string goes slack. $P$ continues moving up the plane. Both the component of gravity down the plane ($5g \\sin\\theta$) and the friction force ($F$) now act as retarding forces.<br><br>Applying Newton's second law to $P$ along the plane:<br>\\begin{aligned} -5g \\sin\\theta - F &= 5 a_{\\text{slack}} \\cr -29.4 - 9.8 &= 5 a_{\\text{slack}} \\cr -39.2 &= 5 a_{\\text{slack}} \\cr a_{\\text{slack}} &= -7.84\\text{ m\\,s}^{-2} \\end{aligned}<br><br>Let $s_{up}$ be the distance $P$ travels up the incline before coming to rest ($v = 0$):<br>\\begin{aligned} 0^2 &= v^2 + 2 a_{\\text{slack}} s_{up} \\cr 0 &= 19.6 + 2(-7.84)s_{up} \\cr 15.68 s_{up} &= 19.6 \\cr s_{up} &= \\dfrac{ 19.6 }{ 15.68 } \\cr s_{up} &= 1.25\\text{ m} \\end{aligned}",
+        "To confirm $P$ slides back down once it comes to rest, compare the component of gravity pulling it down the plane ($5g\\sin\\theta = 29.4\\text{ N}$) to the maximum static friction force ($F = 9.8\\text{ N}$). Since $29.4\\text{ N} > 9.8\\text{ N}$, $P$ will slide back down.<br><br>The string remains slack until $P$ returns to the position where $Q$ first struck the platform, which requires sliding $1.25\\text{ m}$ back down.<br><br>The total distance travelled by $P$ is:<br>\\begin{aligned} \\text{Total Distance} &= s_{up} \\text{ (upwards)} + s_{down} \\text{ (downwards)} \\cr &= 1.25 + 1.25 \\cr &= 2.5\\text{ m} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$T = 44.10\\text{ N}, \\text{distance} = 1.25\\text{ m}$",
+            "feedback": "The tension is correct, but $1.25\\text{ m}$ is only the upward distance $P$ slides after the string becomes slack. Since the block must slide back down to the same reference height before the string becomes taut again, you must double this value to find the total distance of $2.5\\text{ m}$."
+        },
+        {
+            "ans": "$T = 49.00\\text{ N}, \\text{distance} = 2.50\\text{ m}$",
+            "feedback": "A tension of $49.00\\text{ N}$ is incorrect; this is equal to the weight of $Q$ ($5g$), which would only be true if the system were static. Because the system is accelerating, you must calculate the tension using $T = 5(g - a) = 44.10\\text{ N}$."
+        },
+        {
+            "ans": "$T = 44.10\\text{ N}, \\text{distance} = 1.00\\text{ m}$",
+            "feedback": "The tension is correct, but a total distance of $1.00\\text{ m}$ is incorrect. This error may arise if you incorrectly calculate the deceleration during the slack phase, perhaps by forgetting to include either the friction force or the component of gravity down the plane."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Friction Reversal",
+        "content": "Always verify that the particle actually slides back down! On a rough slope, friction always opposes the direction of motion. While moving up, friction acts down the slope. When the block stops and tries to slide back down, friction acts up the slope. The block will only slide back down if the gravitational component down the slope is strictly greater than the maximum static friction: $m g \\sin\\theta > \\mu m g \\cos\\theta$ (which simplifies to $\\tan\\theta > \\mu$)."
+    }
+},
+{
+    "id": "012095",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Newton's Laws of Motion",
+        "Scale Pan Problems",
+        "Slack Strings"
+    ],
+    "img": "images/Mechanics_png/012095.png",
+    "question": "A scale pan $P$ of mass $1\\text{ kg}$ contains a block $B$ of mass $3\\text{ kg}$. The scale pan is connected by a light inextensible string passing over a smooth fixed pulley to a hanging mass $Q$ of mass $6\\text{ kg}$. The system is held at rest with the string taut and the hanging parts vertical. The system is released from rest.<br><br><strong>(i)</strong> Find the magnitude of the force exerted by the block $B$ on the scale pan $P$ immediately after release.<br><br>After descending $2.5\\text{ m}$, $Q$ strikes a horizontal floor and is immediately brought to rest. It is given that $P$ does not reach the pulley in the subsequent motion.<br><br><strong>(ii)</strong> Find the total distance travelled by the scale pan $P$ between the instant $Q$ strikes the floor and the instant the string becomes taut again.",
+    "steps": [
+        "The total mass on the left side of the pulley is $m_{\\text{left}} = m_P + m_B = 1 + 3 = 4\\text{ kg}$. The mass on the right side is $m_Q = 6\\text{ kg}$. Since $6\\text{ kg} > 4\\text{ kg}$, $Q$ accelerates downwards and the scale pan (with block $B$) accelerates upwards with acceleration $a$.<br><br>Applying Newton's second law ($F = ma$) to the combined left mass and right mass:<br>For the combined scale pan and block ($4\\text{ kg}$) moving upwards:<br>$T - 4g = 4a$<br><br>For $Q$ ($6\\text{ kg}$) moving downwards:<br>$6g - T = 6a$<br><br>Adding these equations:<br>\\begin{aligned} (T - 4g) + (6g - T) &= 4a + 6a \\cr 2g &= 10a \\cr a &= 0.2g \\end{aligned}<br><br>Using $g = 9.8\\text{ m\\,s}^{-2}$:<br>\\begin{aligned} a &= 0.2 \\times 9.8 \\cr a &= 1.96\\text{ m\\,s}^{-2} \\end{aligned}",
+        "To find the force exerted by block $B$ on the scale pan, we consider the forces acting only on block $B$ ($3\\text{ kg}$). Block $B$ is accelerating upwards at $a = 1.96\\text{ m\\,s}^{-2}$.<br><br>The forces on $B$ are its weight $3g$ downwards and the normal reaction force $R$ upwards from the scale pan:<br>\\begin{aligned} R - m_B g &= m_B a \\cr R - 3(9.8) &= 3(1.96) \\cr R - 29.4 &= 5.88 \\cr R &= 35.28\\text{ N} \\end{aligned}<br><br>By Newton's third law, the force exerted by block $B$ on the scale pan has the same magnitude, $35.28\\text{ N}$.",
+        "When $Q$ descends $2.5\\text{ m}$, the scale pan has ascended $2.5\\text{ m}$ with acceleration $a = 1.96\\text{ m\\,s}^{-2}$.<br><br>Using $v^2 = u^2 + 2as$ with $u = 0\\text{ m\\,s}^{-1}$:<br>\\begin{aligned} v^2 &= 0^2 + 2 \\times 1.96 \\times 2.5 \\cr v^2 &= 9.8\\text{ m}^2\\text{\\,s}^{-2} \\end{aligned}",
+        "When $Q$ strikes the floor, the string goes slack. The scale pan $P$ (with block $B$ resting inside) continues to move vertically upwards as a projectile under gravity with acceleration $a = -g = -9.8\\text{ m\\,s}^{-2}$. (Since both scale pan $P$ and block $B$ decelerate at $-g$, they remain in light contact but the reaction force $R$ drops to zero).<br><br>Let $s_{up}$ be the additional upward distance the scale pan travels before coming to rest ($v = 0$):<br>\\begin{aligned} 0^2 &= v^2 - 2g s_{up} \\cr 0 &= 9.8 - 2(9.8)s_{up} \\cr 19.6 s_{up} &= 9.8 \\cr s_{up} &= \\dfrac{ 9.8 }{ 19.6 } \\cr s_{up} &= 0.5\\text{ m} \\end{aligned}",
+        "The string remains slack as the scale pan rises $0.5\\text{ m}$ to its peak and then falls $0.5\\text{ m}$ back to its height at the moment of impact. Once it returns to this height, the string becomes taut again.<br><br>The total distance travelled by the scale pan is:<br>\\begin{aligned} \\text{Total Distance} &= s_{up} \\text{ (upwards)} + s_{down} \\text{ (downwards)} \\cr &= 0.5 + 0.5 \\cr &= 1\\text{ m} \\end{aligned}"
+    ],
+    "pi_options": [
+        {
+            "ans": "$R = 35.28\\text{ N}, \\text{distance} = 0.50\\text{ m}$",
+            "feedback": "The contact force of $35.28\\text{ N}$ is correct, but $0.50\\text{ m}$ is only the upward distance the scale pan travels after the string goes slack. Since the string remains slack until the scale pan returns to the level of impact, you must also include the downward return journey of $0.50\\text{ m}$ to find the total distance of $1.00\\text{ m}$."
+        },
+        {
+            "ans": "$R = 29.40\\text{ N}, \\text{distance} = 1.00\\text{ m}$",
+            "feedback": "A contact force of $29.40\\text{ N}$ is incorrect because it is simply the stationary weight of the block ($3g = 29.4\\text{ N}$). Since the block is accelerating upwards, the normal reaction force must exceed its stationary weight ($R = m_B(g+a) = 35.28\\text{ N}$)."
+        },
+        {
+            "ans": "$R = 35.28\\text{ N}, \\text{distance} = 3.00\\text{ m}$",
+            "feedback": "The reaction force is correct, but the distance of $3.00\\text{ m}$ is incorrect. This error may occur if you add the initial $2.5\\text{ m}$ ascent of the scale pan to the $0.5\\text{ m}$ slack upward motion. The question asks only for the distance travelled <strong>after</strong> $Q$ strikes the floor."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Internal vs. External Forces",
+        "content": "When analyzing connected systems with composite masses (such as a scale pan containing a block), remember: to find the acceleration of the entire system, treat the scale pan and block as a single external mass ($1 + 3 = 4\\text{ kg}$). Only treat them as separate bodies (using a free-body diagram for just the block) when you need to calculate the internal reaction/contact force $R$ between them."
+    }
 }
     
 
