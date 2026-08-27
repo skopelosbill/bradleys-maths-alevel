@@ -173,10 +173,10 @@ window.ALEVEL_QUESTIONS = [
                 "question": "Let $f(x) = 2x^3 + 3px^2 - 2x - 3p$.<br>Given that (x + 3) is a factor of $f(x)$, find the value of the constant p.",
                 "steps": [
                         "According to the <strong>Factor Theorem</strong>, if (x + 3) is a factor of $f(x)$, then evaluating the polynomial at $x = -3$ must equal zero: $f(-3) = 0$.",
-                        "We substitute $x = -3$ into the expression fo $f(x)$:<br>$$f(-3) = 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p$$",
+                        "We substitute $x = -3$ into the expression for $f(x)$:<br>$$\\small f(-3) = 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p\\normalsize$$",
                         "Evaluating the powers and simplifying each term (taking close care with negative signs) gives:<br>$$f(-3) = 2(-27) + 3p(9) + 6 - 3p$$<br>$$f(-3) = -54 + 27p + 6 - 3p$$",
                         "Combining the numerical terms and the p terms yields:<br>$$(-54 + 6) + (27p - 3p) = 0$$<br>$$-48 + 24p = 0$$",
-                        "Solving this linear equation gives our final value for p:<br>\\begin{aligned}\n24p &= 48 \\cr\np &= 2\n\\end{aligned}",
+                        "Solving this linear equation gives our final value for p:<br>\\begin{aligned}24p &= 48 \\crp &= 2\\end{aligned}",
                         "Final Answer: $$p = 2$$"
                 ],
                 "pi_options": [
