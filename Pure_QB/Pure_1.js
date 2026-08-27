@@ -871,7 +871,7 @@ window.ALEVEL_QUESTIONS = [
                         },
                         {
                                 "ans": "<strong>(a)</strong> $$3(x+1)^2 + 11$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,11), }y\\text{ -int: (0,8) }$$ <strong>(c)(i)</strong> $$\\text{Translation by } \\begin{pmatrix} 2 \\\\\\ -9 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
-                                "feedback": "You probably made a sign error when expanding your completed square in Part (a), adding the 3 instead of subtracting it: $3[(x+1)^2 - 1] + 8 = 3(x+1)^2 - 3 + 8 = 3(x+1)^2 + 5$, not +11. This error affected all your subsequent coordinates and calculations."
+                                "feedback": "You probably made a sign error when expanding your completed square in Part (a), adding the 3 instead of subtracting it: \\begin{aligned}3[(x+1)^2 - 1] + 8\\cr &= 3(x+1)^2 - 3 + 8\\cr &= 3(x+1)^2 + 5\\end{aligned}, not +11. This error affected all your subsequent coordinates and calculations."
                         }
                 ],
                 "bradley_insight": {
