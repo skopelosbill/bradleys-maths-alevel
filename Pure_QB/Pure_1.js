@@ -7,7 +7,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
                 "subtopic": [
-                        "Algebraic Methods"
+                        "Factor Theorem"
                 ],
                 "img": false,
                 "question": "Let $f(x) = 2x^3 - kx^2 + 5x + 3k$.<br>Given that (x - 2) is a factor of $f(x)$, find the value of the constant k.",
@@ -47,7 +47,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
                 "subtopic": [
-                        "Algebraic Methods"
+                        "Factor Theorem"
                 ],
                 "img": false,
                 "question": "Let $f(x) = 4x^3 + ax^2 - 7x + 2a$.<br>Given that (x + 2) is a factor of $f(x)$, find the value of the constant a.",
@@ -87,7 +87,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
                 "subtopic": [
-                        "Algebraic Methods"
+                        "Factor Theorem"
                 ],
                 "img": false,
                 "question": "Let $f(x) = 3x^3 - 2kx^2 + 5x + 4k$.<br>Given that (x - 1) is a factor of $f(x)$, find the value of the constant k.",
@@ -127,7 +127,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
                 "subtopic": [
-                        "Algebraic Methods"
+                        "Factor Theorem"
                 ],
                 "img": false,
                 "question": "Let $f(x) = 2x^3 - ax^2 - 8x + 3a$.<br>Given that (x - 3) is a factor of $f(x)$, find the value of the constant a.",
@@ -167,13 +167,13 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Algebra and Functions",
                 "topic": "Algebraic Methods",
                 "subtopic": [
-                        "Algebraic Methods"
+                        "Factor Theorem"
                 ],
                 "img": false,
                 "question": "Let $f(x) = 2x^3 + 3px^2 - 2x - 3p$.<br>Given that (x + 3) is a factor of $f(x)$, find the value of the constant p.",
                 "steps": [
-                        "According to the <strong>Factor Theorem</strong>, if (x + 3) is a factor of $f(x)$, then evaluating the polynomial at $x = -3$ must equal zero: $f(-3) = 0$.",
-                        "We substitute $x = -3$ into the expression for $f(x)$:<br>$$\\small f(-3) = 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p\\normalsize$$",
+                        "According to the <strong>Factor Theorem</strong>, if (x + 3) is a farctor of $f(x)$, then evaluating the polynomial at $x = -3$ must equal zero: $f(-3) = 0$.",
+                        "We substitute $x = -3$ into the expression for $f(x)$:<br>$$ f(-3)\\c = 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p$$",
                         "Evaluating the powers and simplifying each term (taking close care with negative signs) gives:<br>$$f(-3) = 2(-27) + 3p(9) + 6 - 3p$$<br>$$f(-3) = -54 + 27p + 6 - 3p$$",
                         "Combining the numerical terms and the p terms yields:<br>$$(-54 + 6) + (27p - 3p) = 0$$<br>$$-48 + 24p = 0$$",
                         "Solving this linear equation gives our final value for p:<br>\\begin{aligned}24p &= 48 \\crp &= 2\\end{aligned}",
@@ -205,8 +205,12 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
-                "topic": "Trigonometric Functions",
-                "subtopics": [
+                "topic": [
+                        "Trigonometric Functions",
+                        "Numerical Methods"
+                ],
+                "subtopic": [
+                        "Location of Roots",
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure_SVGs/004006.svg",
@@ -245,8 +249,12 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
-                "topic": "Trigonometric Functions",
-                "subtopics": [
+                "topic": [
+                        "Trigonometric Functions",
+                        "Numerical Methods"
+                ],
+                "subtopic": [
+                        "Location of Roots",
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure_SVGs/004007.svg",
@@ -285,8 +293,12 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
-                "topic": "Trigonometric Functions",
-                "subtopics": [
+                "topic": [
+                        "Trigonometric Functions",
+                        "Numerical Methods"
+                ],
+                "subtopic": [
+                        "Location of Roots",
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure_SVGs/004008.svg",
@@ -326,8 +338,12 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
-                "topic": "Trigonometric Functions",
-                "subtopics": [
+                "topic": [
+                        "Exponential Functions",
+                        "Numerical Methods"
+                ],
+                "subtopic": [
+                        "Location of Roots",
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure_SVGs/004009.svg",
@@ -365,8 +381,12 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
-                "topic": "Trigonometric Functions",
-                "subtopics": [
+                "topic": [
+                        "Trigonometric Functions",
+                        "Numerical Methods"
+                ],
+                "subtopic": [
+                        "Location of Roots",
                         "Small Angle Approximation"
                 ],
                 "img": "images/Pure_SVGs/004010.svg",
@@ -407,14 +427,14 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
-                        "Differentiation"
+                        "Quotient Rule"
                 ],
                 "img": false,
                 "question": "A curve has the equation:<br>$$y = \\dfrac{ 3x^2 + 12x }{ (x+2)^2 }, \\quad x \\ne -2$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+2)^n }$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
                 "steps": [
                         "<strong>Part (a):</strong> We begin by identifying the numerator as $u = 3x^2 + 12x$ and the denominator as $v = (x+2)^2$.",
                         "Differentiating both terms with respect to x gives:<br>\\begin{aligned}\nu' &= 6x + 12 \\cr\n&= 6(x+2)\n\\end{aligned}<br>$$v' = 2(x+2)$$",
-                        "Using the <strong>Quotient Rule</strong>, $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ u'v - uv' }{ v^2 }$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ (6x+12)(x+2)^2 - (3x^2+12x) \\cdot 2(x+2) }{ (x+2)^4 }$$",
+                        "Using the <strong>Quotient Rule</strong>, $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ u'v - uv' }{ v^2 }$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ (6x+12)(x+2)^2 - (3x^2+12x)\\cr \\quad \\cdot 2(x+2) }{ (x+2)^4 }$$",
                         "We can factorise out a common term of (x+2) from the numerator to simplify:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ (x+2) \\left[ (6x+12)(x+2) - 2(3x^2+12x) \\right] }{ (x+2)^4 }$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ (6x+12)(x+2) - 2(3x^2+12x) }{ (x+2)^3 }$$",
                         "Expanding and simplifying the remaining terms in the numerator:<br>$$(6x+12)(x+2) = 6x^2 + 24x + 24$$<br>$$2(3x^2+12x) = 6x^2 + 24x$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ (6x^2 + 24x + 24) - (6x^2 + 24x) }{ (x+2)^3 }$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{24}{ (x+2)^3 }$$<br>Therefore, the constants are $A = 24$ and $n = 3$.",
                         "<strong>Part (b):</strong> For $\\dfrac{\\text{d}y}{\\text{d}x} < 0$:<br>$$\\dfrac{24}{ (x+2)^3 } < 0$$",
