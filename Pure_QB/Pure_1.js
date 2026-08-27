@@ -434,7 +434,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "<strong>Part (a):</strong> We begin by identifying the numerator as $u = 3x^2 + 12x$ and the denominator as $v = (x+2)^2$.",
                         "Differentiating both terms with respect to x gives:<br>\\begin{aligned}\nu' &= 6x + 12 \\cr\n&= 6(x+2)\n\\end{aligned}<br>$$v' = 2(x+2)$$",
-                        "Using the <strong>Quotient Rule</strong>, $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ u'v - uv' }{ v^2 }$:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ (6x+12)(x+2)^2 - (3x^2+12x)\\cr \\quad \\cdot 2(x+2) }{ (x+2)^4 }$$",
+                        "Using the <strong>Quotient Rule</strong>, $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ u'v - uv' }{ v^2 }$:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x}\\cr  &= \\dfrac{ (6x+12)(x+2)^2 \\cr &\\quad - (3x^2+12x) \\cdot 2(x+2) }{ (x+2)^4 }\\end{aligned}",
                         "We can factorise out a common term of (x+2) from the numerator to simplify:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ (x+2) \\left[ (6x+12)(x+2) - 2(3x^2+12x) \\right] }{ (x+2)^4 }$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ (6x+12)(x+2) - 2(3x^2+12x) }{ (x+2)^3 }$$",
                         "Expanding and simplifying the remaining terms in the numerator:<br>$$(6x+12)(x+2) = 6x^2 + 24x + 24$$<br>$$2(3x^2+12x) = 6x^2 + 24x$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ (6x^2 + 24x + 24) - (6x^2 + 24x) }{ (x+2)^3 }$$<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{24}{ (x+2)^3 }$$<br>Therefore, the constants are $A = 24$ and $n = 3$.",
                         "<strong>Part (b):</strong> For $\\dfrac{\\text{d}y}{\\text{d}x} < 0$:<br>$$\\dfrac{24}{ (x+2)^3 } < 0$$",
