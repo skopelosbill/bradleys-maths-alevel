@@ -871,7 +871,7 @@ window.ALEVEL_QUESTIONS = [
                         },
                         {
                                 "ans": "<strong>(a)</strong> $$3(x+1)^2 + 11$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,11), }y\\text{ -int: (0,8) }$$ <strong>(c)(i)</strong> $$\\text{Translation by } \\begin{pmatrix} 2 \\\\\\ -9 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
-                                "feedback": "You probably made a sign error when expanding your completed square in Part (a), adding the 3 instead of subtracting it: \\begin{aligned}3[(x+1)^2 - 1] + 8\\cr &= 3(x+1)^2 - 3 + 8\\cr &= 3(x+1)^2 + 5\\end{aligned}, not +11. This error affected all your subsequent coordinates and calculations."
+                                "feedback": "You probably made a sign error when expanding your completed square in Part (a), adding the 3 instead of subtracting it: \\begin{aligned}3[(x+1)^2 - 1] + 8 &= 3(x+1)^2 - 3 + 8\\cr &= 3(x+1)^2 + 5\\end{aligned}, not +11. This error affected all your subsequent coordinates and calculations."
                         }
                 ],
                 "bradley_insight": {
@@ -912,7 +912,7 @@ window.ALEVEL_QUESTIONS = [
                         },
                         {
                                 "ans": "<strong>(a)</strong> $$2(x+2)^2 + 20$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,20), }y\\text{ -int: (0,12) }$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -19 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{3}{5}$$",
-                                "feedback": "You probably made an error when completing the square in Part (a), adding the 8 instead of subtracting it: $2[(x+2)^2 - 4] + 12 = 2(x+2)^2 - 8 + 12 = 2(x+2)^2 + 4$, not +20. This error affected all your subsequent coordinates and calculations."
+                                "feedback": "You probably made an error when completing the square in Part (a), adding the 8 instead of subtracting it: \\begin{aligned}2[(x+2)^2 - 4] + 12 &= 2(x+2)^2 - 8 + 12\\cr &= 2(x+2)^2 + 4\\end{aligned} not +20. This error affected all your subsequent coordinates and calculations."
                         }
                 ],
                 "bradley_insight": {
@@ -953,7 +953,7 @@ window.ALEVEL_QUESTIONS = [
                         },
                         {
                                 "ans": "<strong>(a)</strong> $$4(x+1)^2 + 11$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,11), }y\\text{ -int: (0,7) }$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -10 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
-                                "feedback": "You probably made a sign error when completing the square in Part (a), adding the 4 instead of subtracting it: $4[(x+1)^2 - 1] + 7 = 4(x+1)^2 - 4 + 7 = 4(x+1)^2 + 3$, not +11. This error affected all your subsequent coordinates and calculations."
+                                "feedback": "You probably made a sign error when completing the square in Part (a), adding the 4 instead of subtracting it: \\begin{aligned}4[(x+1)^2 - 1] + 7 &= 4(x+1)^2 - 4 + 7\\cr &= 4(x+1)^2 + 3\\end{aligned} not +11. This error affected all your subsequent coordinates and calculations."
                         }
                 ],
                 "bradley_insight": {
@@ -994,7 +994,7 @@ window.ALEVEL_QUESTIONS = [
                         },
                         {
                                 "ans": "<strong>(a)</strong> $$3(x+2)^2 + 30$$ <strong>(b)</strong> $$\\text{Turning Point: (-2,30), }y\\text{ -int: (0,18) }$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -28 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{4}{5}$$",
-                                "feedback": "You probably made a sign error when completing the square in Part (a), adding the 12 instead of subtracting it: $3[(x+2)^2 - 4] + 18 = 3(x+2)^2 - 12 + 18 = 3(x+2)^2 + 6$, not +30. This error affected all your subsequent coordinates and calculations."
+                                "feedback": "You probably made a sign error when completing the square in Part (a), adding the 12 instead of subtracting it: \\begin{aligned}3[(x+2)^2 - 4] + 18 &= 3(x+2)^2 - 12 + 18\\cr &= 3(x+2)^2 + 6\\end{aligned} not +30. This error affected all your subsequent coordinates and calculations."
                         }
                 ],
                 "bradley_insight": {
@@ -1035,7 +1035,7 @@ window.ALEVEL_QUESTIONS = [
                         },
                         {
                                 "ans": "<strong>(a)</strong> $$2(x+1)^2 + 9$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,9), }y\\text{ -int: (0,7) }$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} 3 \\\\\\ -8 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{10}{9}$$",
-                                "feedback": "You probably made a sign error when completing the square in Part (a), adding the 2 instead of subtracting it: $2[(x+1)^2 - 1] + 7 = 2(x+1)^2 - 2 + 7 = 2(x+1)^2 + 5$, not +9. This error affected all your subsequent coordinates and calculations."
+                                "feedback": "You probably made a sign error when completing the square in Part (a), adding the 2 instead of subtracting it: \\begin{aligned}2[(x+1)^2 - 1] + 7 = 2(x+1)^2 - 2 + 7 = 2(x+1)^2 + 5\\end{aligned} not +9. This error affected all your subsequent coordinates and calculations."
                         }
                 ],
                 "bradley_insight": {
