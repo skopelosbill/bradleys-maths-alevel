@@ -468,7 +468,9 @@ window.ALEVEL_QUESTIONS = [
         "level": "A",
         "major_area": "Differentiation",
         "topic": "Differentiation",
-        "subtopic": ["Quotient Rule"],
+        "subtopic": [
+                "Quotient Rule"
+        ],
         "img": false,
         "question": "A curve has the equation:<br>$$y = \\dfrac{ -4x^2 - 8x }{ (x+1)^2 }, \\quad x \\ne -1$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+1)^n }$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
         "steps": [
@@ -489,7 +491,9 @@ window.ALEVEL_QUESTIONS = [
         "level": "A",
         "major_area": "Differentiation",
         "topic": "Differentiation",
-        "subtopic": ["Quotient Rule"],
+        "subtopic": [
+                "Quotient Rule"
+        ],
         "img": false,
         "question": "A curve has the equation:<br>$$y = \\dfrac{ 2x^2 + 12x }{ (x+3)^2 }, \\quad x \\ne -3$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+3)^n }$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} > 0$.",
         "steps": [
@@ -510,7 +514,9 @@ window.ALEVEL_QUESTIONS = [
         "level": "A",
         "major_area": "Differentiation",
         "topic": "Differentiation",
-        "subtopic": ["Quotient Rule"],
+        "subtopic": [
+                "Quotient Rule"
+        ],
         "img": false,
         "question": "A curve has the equation:<br>$$y = \\dfrac{ -3x^2 - 12x }{ (x+2)^2 }, \\quad x \\ne -2$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+2)^n }$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} > 0$.",
         "steps": [
@@ -531,7 +537,9 @@ window.ALEVEL_QUESTIONS = [
         "level": "A",
         "major_area": "Differentiation",
         "topic": "Differentiation",
-        "subtopic": ["Quotient Rule"],
+        "subtopic": [
+                "Quotient Rule"
+        ],
         "img": false,
         "question": "A curve has the equation:<br>$$y = \\dfrac{ 4x^2 + 8x }{ (x+1)^2 }, \\quad x \\ne -1$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+1)^n }$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
         "steps": [
