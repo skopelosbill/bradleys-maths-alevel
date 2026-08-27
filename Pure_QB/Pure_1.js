@@ -461,46 +461,48 @@ window.ALEVEL_QUESTIONS = [
                         "content": "When applying the Quotient Rule to functions with a squared denominator like $(x+a)^2$, both terms in your numerator will always contain a common factor of (x+a). Always factorise and cancel this term out first before expanding the rest of the numerator. It saves significant time and prevents algebraic errors."
                 }
         },
-    {
+       {
         "id": "004012",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
         "major_area": "Differentiation",
         "topic": "Differentiation",
-        "subtopic": ["Quotient Rule"],
+        "subtopic": [
+                "Quotient Rule"
+        ],
         "img": false,
         "question": "A curve has the equation:<br>$$y = \\dfrac{ -4x^2 - 8x }{ (x+1)^2 }, \\quad x \\ne -1$$<br><strong>(a)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{A}{ (x+1)^n }$, where $A$ and $n$ are constants to be found.<br><strong>(b)</strong> Hence, deduce the range of values for x for which $\\dfrac{\\text{d}y}{\\text{d}x} < 0$.",
         "steps": [
-            "<strong>Part (a):</strong> Let $u = -4x^2 - 8x$ and $v = (x+1)^2$.",
-            "Differentiating both terms with respect to x gives:<br>\\begin{aligned} u' &= -8x - 8 \\cr &= -8(x+1) \\end{aligned}<br>$$v' = 2(x+1)$$",
-            "Using the <strong>Quotient Rule</strong>, $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ u'v - uv' }{ v^2 }$:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{ (-8x-8)(x+1)^2 }{ (x+1)^4 } \\cr &\\quad - \\dfrac{ (-4x^2-8x) \\cdot 2(x+1) }{ (x+1)^4 } \\end{aligned}",
-            "Factorising out $(x+1)$ from the numerator to simplify:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{ (x+1) \\left[ (-8x-8)(x+1) - 2(-4x^2-8x) \\right] }{ (x+1)^4 } \\cr \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{ (-8x-8)(x+1) }{ (x+1)^3 } \\cr &\\quad - \\dfrac{ 2(-4x^2-8x) }{ (x+1)^3 } \\end{aligned}",
-            "Expanding and simplifying the remaining terms in the numerator:<br>\\begin{aligned} (-8x-8)(x+1) &= -8x^2 - 16x - 8 \\cr 2(-4x^2-8x) &= -8x^2 - 16x \\end{aligned}<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{ (-8x^2 - 16x - 8) }{ (x+1)^3 } \\cr &\\quad - \\dfrac{ (-8x^2 - 16x) }{ (x+1)^3 } \\end{aligned}<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ -8 }{ (x+1)^3 }$$<br>Therefore, the constants are $A = -8$ and $n = 3$.",
-            "<strong>Part (b):</strong> For $\\dfrac{\\text{d}y}{\\text{d}x} < 0$:<br>$$\\dfrac{ -8 }{ (x+1)^3 } < 0$$",
-            "Since the numerator is a negative constant ($-8 < 0$), the fraction is only negative when the denominator is positive. Therefore, we require:<br>\\begin{aligned} (x+1)^3 &> 0 \\cr \\implies x + 1 &> 0 \\cr \\implies x &> -1 \\end{aligned}",
-            "Final Answer: <strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ -8 }{ (x+1)^3 }$$ <strong>(b)</strong> $$x > -1$$"
+                "<strong>Part (a):</strong> Let $u = -4x^2 - 8x$ and $v = (x+1)^2$.",
+                "Differentiating both terms with respect to x gives:<br>\\begin{aligned} u' &= -8x - 8 \\cr &= -8(x+1) \\end{aligned}<br>$$v' = 2(x+1)$$",
+                "Using the <strong>Quotient Rule</strong>, $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ u'v - uv' }{ v^2 }$:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{ (-8x-8)(x+1)^2}{ (x+1)^4 } \\cr &\\quad - \\dfrac{(-4x^2-8x) \\cdot 2(x+1) }{ (x+1)^4 }\\end{aligned}",
+                "We can factorise out a common term of (x+1) from the numerator to simplify:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{ (x+1) [ (-8x-8)(x+1)]}{ (x+1)^4 }\\cr &\\quad - \\dfrac{ ( x+1 )[ 2(-4x^2-8x) ] }{ (x+1)^4 }\\end{aligned} <br> \\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{ (-8x-8)(x+1)}{ (x+1)^3 }\\cr & \\quad-\\dfrac{ 2(-4x^2-8x) }{ (x+1)^3 }\\end{aligned}",
+                "Expanding and simplifying the remaining terms in the numerator:<br>\\begin{aligned}(-8x-8)(x+1)\\cr \\quad= -8x^2 - 16x - 8\\end{aligned}<br>$$2(-4x^2-8x) = -8x^2 - 16x$$<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{ (-8x^2 - 16x - 8) }{ (x+1)^3 }\\cr & \\quad-\\dfrac{ (-8x^2 - 16x) }{ (x+1)^3 }\\end{aligned}<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{-8}{ (x+1)^3 }$$<br>Therefore, the constants are $A = -8$ and $n = 3$.",
+                "<strong>Part (b):</strong> For $\\dfrac{\\text{d}y}{\\text{d}x} < 0$:<br>$$\\dfrac{-8}{ (x+1)^3 } < 0$$",
+                "Since the numerator is a negative constant ($-8 < 0$), the fraction is only negative when the denominator is positive:<br>\\begin{aligned}(x+1)^3 &> 0 \\cr\\implies x + 1 &> 0 \\cr\\implies x &> -1\\end{aligned}",
+                "Final Answer: <strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{-8}{ (x+1)^3 }$$ <strong>(b)</strong> $$x > -1$$"
         ],
         "pi_options": [
-            {
-                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ -8 }{ (x+1)^3 }$$ <strong>(b)</strong> $$x < -1$$",
-                "feedback": "You probably forgot to account for the negative sign in your numerator when setting up your inequality in Part (b). Because -8 is negative, the fraction is only negative when the denominator is positive: $(x+1)^3 > 0$, which yields $x > -1$."
-            },
-            {
-                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ -8(2x+1) }{ (x+1)^3 }$$ <strong>(b)</strong> $$x > -1$$",
-                "feedback": "Check your expanding and signs. When expanding $- (-8x^2 - 16x)$ in the numerator, the double negative turns both terms positive, which cancels out your quadratic and linear terms perfectly."
-            },
-            {
-                "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{8}{ (x+1)^3 }$$ <strong>(b)</strong> $$x < -1$$",
-                "feedback": "Check your differentiation of $u = -4x^2 - 8x$. The derivative must be $u' = -8x - 8$, not +8x + 8. This sign error changed the sign of your constant A from negative to positive."
-            }
+                {
+                        "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ -8 }{ (x+1)^3 }$$ <strong>(b)</strong> $$x < -1$$",
+                        "feedback": "You probably forgot to account for the negative sign in your numerator when setting up your inequality in Part (b). Because -8 is negative, the fraction is only negative when the denominator is positive: $(x+1)^3 > 0$, which yields $x > -1$."
+                },
+                {
+                        "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{ -8(2x+1) }{ (x+1)^3 }$$ <strong>(b)</strong> $$x > -1$$",
+                        "feedback": "Check your expanding and signs. When expanding $- (-8x^2 - 16x)$ in the numerator, the double negative turns both terms positive, which cancels out your quadratic and linear terms perfectly."
+                },
+                {
+                        "ans": "<strong>(a)</strong> $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{8}{ (x+1)^3 }$$ <strong>(b)</strong> $$x < -1$$",
+                        "feedback": "Check your differentiation of $u = -4x^2 - 8x$. The derivative must be $u' = -8x - 8$, not +8x + 8. This sign error changed the sign of your constant A from negative to positive."
+                }
         ],
         "bradley_insight": {
-            "type": "caution",
-            "title": "The Head Teacher's Eye: Negative Inequality Flip",
-            "content": "In Part (b), be exceptionally careful when the numerator is negative. A fraction $\\frac{\\text{numerator}}{\\text{denominator}} < 0$ means the numerator and denominator must have opposite signs. Since the numerator is -8 (negative), the denominator must be positive to ensure the overall value is negative."
+                "type": "caution",
+                "title": "The Head Teacher's Eye: Negative Inequality Flip",
+                "content": "In Part (b), be exceptionally careful when the numerator is negative. A fraction $\\frac{\\text{numerator}}{\\text{denominator}} < 0$ means the numerator and denominator must have opposite signs. Since the numerator is -8 (negative), the denominator must be positive to ensure the overall value is negative."
         }
-    },
+},
     {
         "id": "004013",
         "board": "Pearson Edexcel",
