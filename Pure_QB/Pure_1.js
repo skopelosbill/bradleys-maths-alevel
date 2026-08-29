@@ -1203,7 +1203,7 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$9\\sin 2\\theta = 4\\tan\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence deduce the smallest positive solution of:<br>\\begin{aligned} & 9\\sin(2x - 10^\\circ)\\ct & \\quad \\quad \\quad = 4\\tan(x - 5^\\circ).\\end{aligned}",
+                "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$9\\sin 2\\theta = 4\\tan\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence deduce the smallest positive solution of:<br>\\begin{aligned} & 9\\sin(2x - 10^\\circ)\\cr & \\quad \\quad \\quad = 4\\tan(x - 5^\\circ).\\end{aligned}",
                 "steps": [
                         "<strong>Part (a):</strong> Use \\begin{aligned}\\sin 2\\theta &= 2\\sin\\theta\\cos\\theta, \\cr \\tan\\theta &= \\frac{\\sin\\theta}{\\cos\\theta}.\n\\end{aligned}<br>Substitute:<br>$$18\\sin\\theta\\cos^2\\theta = 4\\sin\\theta$$<br>Factorise:<br>$$2\\sin\\theta(9\\cos^2\\theta - 2) = 0.$$<br>Solutions:<br> \\begin{aligned}\\sin\\theta &= 0 \\cr\\Rightarrow \\theta &= -180^\\circ, 0^\\circ, 180^\\circ.\\end{aligned}<br>\\begin{aligned}\\cos^2\\theta &= \\frac{2}{9} \\cr \\Rightarrow \\theta & \\approx \\pm 61.9^\\circ, \\pm 118.1^\\circ.$$",
                         "<strong>Part (b):</strong> Note that $$2x - 10^\\circ = 2(x - 5^\\circ).$$ Let $$\\theta = x - 5^\\circ.$$<br>Smallest positive solution:<br>\\begin{aligned}\nx &= 0^\\circ + 5^\\circ \\cr\n&= 5^\\circ.\n\\end{aligned}",
@@ -1253,15 +1253,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$V = 15000 - 3000t$$ <strong>(b)</strong> \\begin{aligned} & \\text{Model is highly reliable }\\cr & \\quad(\\approx £2,517\\text{ vs } £2,500)\\end{aligned} <strong>(c)</strong> \\begin{aligned} & \\text{Increase the base} \\cr & \\quad \\text{(e.g. }V = 15000(r)^t\\text{ where } r > 0.8\\text{)}\\end{aligned}",
+                                "ans": "<strong>(a)</strong> $$V = 15000 - 3000t$$ <strong>(b)</strong> \\begin{aligned} & \\text{Model is highly reliable }\\cr & \\quad(\\approx £2,517\\text{ vs } £2,500)\\end{aligned} <strong>(c)</strong> \\begin{aligned} & \\text{Increase the base} \\cr & \\text{(e.g. }V = 15000(r)^t\\text{ where } r > 0.8\\text{)}\\end{aligned}",
                                 "feedback": "You formed a linear depreciation model ($V = 15000 - 3000t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$ or $V = A \\text{e}^{ -kt }$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £2,517\\text{ vs } £2,500)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 15000(r)^t\\text{ where } r < 0.8\\text{)}$$",
+                                "ans": "<strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> \\begin{aligned} & \\text{Model is highly reliable }\\cr & \\quad(\\approx £2,517\\text{ vs } £2,500)$$ <strong>(c)</strong> \\begin{aligned} & \\text{Decrease the base} \\cr & \\text{ (e.g. } V = 15000(r)^t\\text{ where } r < 0.8\\text{)}\\end{aligned}",
                                 "feedback": "Check your reasoning for Part (c). If motorcycle B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.8, not smaller."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$V = 15000(0.2)^t$$ <strong>(b)</strong> $$\\text{Model is completely unreliable}$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 15000(r)^t\\text{ where } r > 0.8\\text{)}$$",
+                                "ans": "<strong>(a)</strong> $$V = 15000(0.2)^t$$ <strong>(b)</strong>$$\\text{Model is completely unreliable}$$ <strong>(c)</strong>  \\begin{aligned} & \\text{Increase the base} \\cr & \\text{ (e.g. }V = 15000(r)^t\\text{ where } r > 0.8\\text{)}\\end{aligned}",
                                 "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($20\\\\% = 0.2$) instead of the remaining value multiplier ($1 - 0.2 = 0.8$). This sign error caused your model to predict the motorcycle's value as almost zero after 8 years."
                         }
                 ],
@@ -1295,15 +1295,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable}$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 50000(r)^t\\text{ where } r > 0.85\\text{)}$$",
+                                                "ans": "<strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable}$$ <strong>(c)</strong>  \\begin{aligned} & \\text{Increase the base} \\cr & \\text{(e.g. }V = 50000(r)^t\\text{ where } r > 0.85\\text{)}\\end{aligned}",
                                 "feedback": "You probably evaluated the model's reliability incorrectly in Part (b). Our model's prediction is £7,112, which is significantly lower than the actual value of £10,000. An underestimation of almost $30\\\\%$ indicates that the model's reliability over this 12-year period is weaker."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$V = 50000 - 7500t$$ <strong>(b)</strong> $$\\text{Model is less reliable}$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 50000(r)^t\\text{ where } r > 0.85\\text{)}$$",
+                                "ans": "<strong>(a)</strong> $$V = 50000 - 7500t$$ <strong>(b)</strong> SS\\text{Model is less reliable}$$ <strong>(c)</strong>  \\begin{aligned} & \\text{Increase the base} \\cr & \\text{ (e.g. }V = 50000(r)^t\\text{ where } r > 0.85\\text{)}\\end{aligned}",
                                 "feedback": "You formed a linear depreciation model ($V = 50000 - 7500t$) instead of an exponential model in Part (a). Make sure you use the standard exponential structure $V = A b^t$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$\\text{Model is less reliable}$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 50000(r)^t\\text{ where } r < 0.85\\text{)}$$",
+                                "ans": "<strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$\\text{Model is less reliable}$$ <strong>(c)</strong>  \\begin{aligned} & \\text{Decrease the base} \\cr & \\text{ (e.g. } V = 50000(r)^t\\text{ where } r < 0.85\\text{)}\\end{aligned}",
                                 "feedback": "Check your reasoning for Part (c). If machine B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.85, not smaller."
                         }
                 ],
@@ -1337,15 +1337,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$V = 100000(0.9)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £34,868\\text{ vs } £35,000)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 100000(r)^t\\text{ where } r < 0.9)$$",
+                                "ans": "<strong>(a)</strong> $$V = 100000(0.9)^t$$ <strong>(b)</strong> \\begin{aligned} & \\text{Model is highly reliable }\\cr & (\\approx £34,868\\text{ vs } £35,000)\\end{aligned} <strong>(c)</strong> \\begin{aligned} & \\text{Decrease the base} \\cr & \\text{(e.g. } V = 100000(r)^t\\text{ where } r < 0.9\\text{)}\\end{aligned}",
                                 "feedback": "Check your reasoning for Part (c). If yacht B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.9, not smaller."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$V = 100000 - 10000t$$ <strong>(b)</strong> $$\\text{Model is highly reliable}$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 100000(r)^t\\text{ where } r > 0.9\\text{)}$$",
+                                "ans": "<strong>(a)</strong> $$V = 100000 - 10000t$$ <strong>(b)</strong> $$\\text{Model is highly reliable}$$ <strong>(c)</strong> \\begin{aligned} & \\text{Increase the base} \\cr & \\text{ (e.g. }V = 100000(r)^t\\text{ where } r > 0.9\\text{)}\\end{aligned}",
                                 "feedback": "You formed a linear depreciation model ($V = 100000 - 10000t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$V = 100000(0.1)^t$$ <strong>(b)</strong> $$\\text{Model is completely unreliable}$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 100000(r)^t\\text{ where } r > 0.9\\text{)}$$",
+                                "ans": "<strong>(a)</strong> $$V = 100000(0.1)^t$$ <strong>(b)</strong> $$\\text{Model is completely unreliable}$$ <strong>(c)</strong> \\begin{aligned} & \\text{Increase the base} \\cr & \\text{ (e.g. }V = 100000(r)^t\\text{ where } r > 0.9\\text{)}\\end{aligned}",
                                 "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($10\\\\% = 0.1$) instead of the remaining value multiplier ($1 - 0.1 = 0.9$). This error caused your model to predict the yacht's value as almost zero after 10 years."
                         }
                 ],
@@ -1379,15 +1379,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$V = 40000(0.75)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £4,005\\text{ vs } £4,000)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 40000(r)^t\\text{ where } r < 0.75\\text{)}$$",
+                                "ans": "<strong>(a)</strong>  $$V = 40000(0.75)^t$$ <strong>(b)</strong>\\begin{aligned} & \\text{Model is highly reliable }\\cr & (\\approx £4,005\\text{ vs } £4,000)\\end{aligned} <strong>(c)</strong> \\begin{aligned} & \\text{Decrease the base} \\cr & \\text{(e.g. } V = 40000(r)^t\\text{ where } r < 0.75\\text{)}\\end{aligned}",
                                 "feedback": "Check your reasoning for Part (c). If tractor B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.75, not smaller."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$V = 40000(0.25)^t$$ <strong>(b)</strong> $$\\text{Model is completely unreliable}$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 40000(r)^t\\text{ where } r > 0.75\\text{)}$$",
+                                "ans": "<strong>(a)</strong> $$V = 40000(0.25)^t$$ <strong>(b)</strong> $$\\text{Model is completely unreliable}$$ <strong>(c)</strong>\\begin{aligned} & \\text{Increase the base} \\cr & \\text{ (e.g. }V = 40000(r)^t\\text{ where } r > 0.75\\text{)}\\end{aligned}",
                                 "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($25\\\\% = 0.25$) instead of the remaining value multiplier ($1 - 0.25 = 0.75$). This error caused your model to predict the tractor's value as almost zero after 8 years."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$V = 40000 - 1250t$$ <strong>(b)</strong> $$\\text{Model is highly reliable}$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 40000(r)^t\\text{ where } r > 0.75\\text{)}$$",
+                                "ans": "<strong>(a)</strong> $$V = 40000 - 1250t$$ <strong>(b)</strong> $$\\text{Model is highly reliable}$$ <strong>(c)</strong> \\begin{aligned} & \\text{Increase the base} \\cr & \\text{ (e.g. }V = 40000(r)^t\\text{ where } r > 0.75\\text{)}\\end{aligned}",
                                 "feedback": "You formed a linear depreciation model ($V = 40000 - 1250t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$."
                         }
                 ],
@@ -1421,15 +1421,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx\\text{£}7,864\\text{ vs } \\text{£}7,800)$$ <strong>(c)</strong> $$\\text{Decrease the base (e.g. } V = 30000(r)^t\\text{ where } r < 0.8\\text{)}$$",
+                                "ans": "<strong>(a)</strong> $$V = 30000(0.8)^t$$ <strong>(b)</strong> \\begin{aligned} &\\text{Model is highly reliable }\\cr &(\\approx\\text{£}7,864\\text{ vs } \\text{£}7,800)\\end{aligned} <strong>(c)</strong> \\begin{aligned} & \\text{Decrease the base}\\cr &\\text{(e.g. } V = 30000(r)^t\\text{ where } r < 0.8\\text{)}\\end{aligned}",
                                 "feedback": "Check your reasoning for Part (c). If EV B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.8, not smaller."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$V = 30000(0.2)^t$$ <strong>(b)</strong> $$\\text{Model is completely unreliable}$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 30000(r)^t\\text{ where } r > 0.8\\text{)}$$",
+                                "ans": "<strong>(a)</strong> $$V = 30000(0.2)^t$$ <strong>(b)</strong> $$\\text{Model is completely unreliable}$$ <strong>(c)</strong> \\begin{aligned} & \\text{Increase the base}\\cr &\\text{ (e.g. }V = 30000(r)^t\\text{ where } r > 0.8\\text{)}\\end{aligned}",
                                 "feedback": "When calculating the exponential base in Part (a), you probably used the rate of depreciation ($20\\\\% = 0.2$) instead of the remaining value multiplier ($1 - 0.2 = 0.8$). This error caused your model to predict the EV's value as almost zero after 6 years."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$V = 30000 - 6000t$$ <strong>(b)</strong> $$\\text{Model is highly reliable}$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 30000(r)^t\\text{ where } r > 0.8\\text{)}$$",
+                                "ans": "<strong>(a)</strong> $$V = 30000 - 6000t$$ <strong>(b)</strong> $$\\text{Model is highly reliable}$$ <strong>(c)</strong> \\begin{aligned} & \\text{Increase the base}\\cr &\\text{ (e.g. }V = 30000(r)^t\\text{ where } r > 0.8\\text{)}\\end{aligned}",
                                 "feedback": "You formed a linear depreciation model ($V = 30000 - 6000t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$."
                         }
                 ],
