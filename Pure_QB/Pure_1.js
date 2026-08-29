@@ -1092,11 +1092,11 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$3\\tan\\theta = 2\\sin 2\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Deduce the smallest positive solution of:<br>$$3\\tan(x - 15^\\circ) = 2\\sin(2x - 30^\\circ).$$",
+                "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$3\\tan\\theta = 2\\sin 2\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Deduce the smallest positive solution of:<br>\\begin{aligned} &3\\tan(x - 15^\\circ)\\cr & \\quad \\quad \\quad = 2\\sin(2x - 30^\\circ).\\end{aligned}",
                 "steps": [
-                        "<strong>Part (a):</strong> Use \\begin{aligned}\n\\tan\\theta &= \\frac{\\sin\\theta}{\\cos\\theta}, \\quad \\sin 2\\theta \\cr\n&= 2\\sin\\theta\\cos\\theta.\n\\end{aligned}<br>Substitute:<br>$$3\\frac{\\sin\\theta}{\\cos\\theta} = 4\\sin\\theta\\cos\\theta$$<br>Multiply by cosθ:<br>$$3\\sin\\theta = 4\\sin\\theta\\cos^2\\theta$$<br>Factorise:<br>$$\\sin\\theta(3 - 4\\cos^2\\theta) = 0.$$<br>Solutions:<br>• \\begin{aligned}\n\\sin\\theta &= 0 \\Rightarrow \\theta \\cr\n&= -180^\\circ, 0^\\circ, 180^\\circ.\n\\end{aligned}<br>• \\begin{aligned}\n\\cos^2\\theta &= \\frac{3}{4} \\Rightarrow \\theta \\cr\n&= \\pm 30^\\circ, \\pm 150^\\circ.\n\\end{aligned}",
+                        "<strong>Part (a):</strong> Use \\begin{aligned}\n\\tan\\theta &= \\frac{\\sin\\theta}{\\cos\\theta}, \\quad \\sin 2\\theta \\cr\n&= 2\\sin\\theta\\cos\\theta.\n\\end{aligned}<br>Substitute:<br>$$3\\frac{\\sin\\theta}{\\cos\\theta} = 4\\sin\\theta\\cos\\theta$$<br>Multiply by cosθ:<br>$$3\\sin\\theta = 4\\sin\\theta\\cos^2\\theta$$<br>Factorise:<br>$$\\sin\\theta(3 - 4\\cos^2\\theta) = 0.$$<br>Solutions:<br>• \\begin{aligned}\\sin\\theta &= 0\\cr \\Rightarrow \\theta &= -180^\\circ\\text{, }0^\\circ\\text{, } 180^\\circ.\\end{aligned}<br>• \\begin{aligned}\\cos^2\\theta &= \\frac{3}{4}\\cr \\Rightarrow \\theta &= \\pm 30^\\circ\\text{, }\\pm 150^\\circ.\\end{aligned}",
                         "<strong>Part (b):</strong> Note that $$2x - 30^\\circ = 2(x - 15^\\circ).$$ Let $$\\theta = x - 15^\\circ.$$<br>Smallest positive solution:<br>\\begin{aligned}\nx &= 0^\\circ + 15^\\circ \\cr\n&= 15^\\circ.\n\\end{aligned}",
-                        "Final Answer: \\begin{aligned}\n\\theta &= -180^\\circ, -150^\\circ, -30^\\circ, 0^\\circ, 30^\\circ, 150^\\circ, 180^\\circ; \\quad x \\cr\n&= 15^\\circ.\n\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\theta &= -180^\\circ, -150^\\circ, -30^\\circ,\\cr &\\quad \\quad 0^\\circ, 30^\\circ, 150^\\circ, 180^\\circ; \\cr\\quad x &= 15^\\circ.\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1129,7 +1129,7 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$5\\cos 2\\theta = 8\\sin\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence find the smallest positive solution of:<br>$$5\\cos(2x - 40^\\circ) = 8\\sin(x - 20^\\circ).$$",
+                "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$5\\cos 2\\theta = 8\\sin\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence find the smallest positive solution of:<br>\\begin{aligned} & 5\\cos(2x - 40^\\circ)\\cr & \\quad \\quad \\quad = 8\\sin(x - 20^\\circ).\\end{aligned}",
                 "steps": [
                         "<strong>Part (a):</strong> Use $$\\cos 2\\theta = 1 - 2\\sin^2\\theta.$$<br>Substitute:<br>$$5(1 - 2\\sin^2\\theta) = 8\\sin\\theta$$<br>$$5 - 10\\sin^2\\theta = 8\\sin\\theta$$<br>Rearrange:<br>$$10\\sin^2\\theta + 8\\sin\\theta - 5 = 0.$$<br>Solve the quadratic:<br>$$\\sin\\theta = \\frac{ -8 \\pm \\sqrt{264 }}{20}.$$<br>Only the positive root is valid: $$\\sin\\theta \\approx 0.4124.$$<br>Thus: $$\\theta \\approx 24.4^\\circ,\\\\\\ 155.6^\\circ.$$",
                         "<strong>Part (b):</strong> Note that $$2x - 40^\\circ = 2(x - 20^\\circ).$$ Let $$\\theta = x - 20^\\circ.$$<br>Smallest positive solution:<br>\\begin{aligned}\nx &= 24.4^\\circ + 20^\\circ \\cr\n&= 44.4^\\circ.\n\\end{aligned}",
@@ -1150,7 +1150,7 @@ window.ALEVEL_QUESTIONS = [
                         }
                 ],
                 "bradley_insight": {
-                        "type": "tip",
+                        "type": "pro-tip",
                         "title": "Quadratics in Disguise",
                         "content": "Whenever you see cos2θ or sin2θ, try rewriting everything in terms of sinθ or cosθ. It often collapses into a clean quadratic."
                 }
@@ -1166,7 +1166,7 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$6\\sin\\theta = 2\\cos 2\\theta.$$<br><br><strong>(b)</strong> Deduce the smallest positive solution of:<br>$$6\\sin(x + 30^\\circ) = 2\\cos(2x + 60^\\circ).$$",
+                "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$6\\sin\\theta = 2\\cos 2\\theta.$$<br><br><strong>(b)</strong> Deduce the smallest positive solution of:<br>\\begin{aligned} & 6\\sin(x + 30^\\circ) \\cr & \\quad \\quad \\quad = 2\\cos(2x + 60^\\circ).\\end{aligned}",
                 "steps": [
                         "<strong>Part (a):</strong> Use $$\\cos 2\\theta = 1 - 2\\sin^2\\theta.$$<br>Substitute:<br>$$6\\sin\\theta = 2(1 - 2\\sin^2\\theta)$$<br>$$3\\sin\\theta = 1 - 2\\sin^2\\theta$$<br>Rearrange:<br>$$2\\sin^2\\theta + 3\\sin\\theta - 1 = 0.$$<br>Solve the quadratic:<br>$$\\sin\\theta = \\frac{ -3 \\pm \\sqrt{17 }}{4}.$$<br>Only the positive root is valid: $$\\sin\\theta \\approx 0.2808.$$<br>Thus: $$\\theta \\approx 16.3^\\circ,\\\\\\ 163.7^\\circ.$$",
                         "<strong>Part (b):</strong> Note that $$2x + 60^\\circ = 2(x + 30^\\circ).$$ Let $$\\theta = x + 30^\\circ.$$<br>Smallest positive solution:<br>\\begin{aligned}\nx &= 163.7^\\circ - 30^\\circ \\cr\n&= 133.7^\\circ.\n\\end{aligned}",
@@ -1203,11 +1203,11 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$9\\sin 2\\theta = 4\\tan\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence deduce the smallest positive solution of:<br>$$9\\sin(2x - 10^\\circ) = 4\\tan(x - 5^\\circ).$$",
+                "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$9\\sin 2\\theta = 4\\tan\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence deduce the smallest positive solution of:<br>\\begin{aligned} & 9\\sin(2x - 10^\\circ)\\ct & \\quad \\quad \\quad = 4\\tan(x - 5^\\circ).\\end{aligned}",
                 "steps": [
-                        "<strong>Part (a):</strong> Use \\begin{aligned}\n\\sin 2\\theta &= 2\\sin\\theta\\cos\\theta, \\quad \\tan\\theta \\cr\n&= \\frac{\\sin\\theta}{\\cos\\theta}.\n\\end{aligned}<br>Substitute:<br>$$18\\sin\\theta\\cos^2\\theta = 4\\sin\\theta$$<br>Factorise:<br>$$2\\sin\\theta(9\\cos^2\\theta - 2) = 0.$$<br>Solutions:<br>• \\begin{aligned}\n\\sin\\theta &= 0 \\Rightarrow \\theta \\cr\n&= -180^\\circ, 0^\\circ, 180^\\circ.\n\\end{aligned}<br>• $$\\cos^2\\theta = \\frac{2}{9} \\Rightarrow \\theta \\approx \\pm 61.9^\\circ, \\pm 118.1^\\circ.$$",
+                        "<strong>Part (a):</strong> Use \\begin{aligned}\\sin 2\\theta &= 2\\sin\\theta\\cos\\theta, \\cr \\tan\\theta &= \\frac{\\sin\\theta}{\\cos\\theta}.\n\\end{aligned}<br>Substitute:<br>$$18\\sin\\theta\\cos^2\\theta = 4\\sin\\theta$$<br>Factorise:<br>$$2\\sin\\theta(9\\cos^2\\theta - 2) = 0.$$<br>Solutions:<br> \\begin{aligned}\\sin\\theta &= 0 \\cr\\Rightarrow \\theta &= -180^\\circ, 0^\\circ, 180^\\circ.\\end{aligned}<br>\\begin{aligned}\\cos^2\\theta &= \\frac{2}{9} \\cr \\Rightarrow \\theta & \\approx \\pm 61.9^\\circ, \\pm 118.1^\\circ.$$",
                         "<strong>Part (b):</strong> Note that $$2x - 10^\\circ = 2(x - 5^\\circ).$$ Let $$\\theta = x - 5^\\circ.$$<br>Smallest positive solution:<br>\\begin{aligned}\nx &= 0^\\circ + 5^\\circ \\cr\n&= 5^\\circ.\n\\end{aligned}",
-                        "Final Answer: \\begin{aligned}\n\\theta &= -180^\\circ, -118.1^\\circ, -61.9^\\circ, 0^\\circ, 61.9^\\circ, 118.1^\\circ, 180^\\circ; \\quad x \\cr\n&= 5^\\circ.\n\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\\theta &= -180^\\circ, -118.1^\\circ, -61.9^\\circ, 0^\\circ,\\cr & \\quad 61.9^\\circ, 118.1^\\circ, 180^\\circ; \\cr x &= 5^\\circ.\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1224,7 +1224,7 @@ window.ALEVEL_QUESTIONS = [
                         }
                 ],
                 "bradley_insight": {
-                        "type": "tip",
+                        "type": "pro-tip",
                         "title": "Spot the Structure",
                         "content": "When the transformed equation in Part (b) mirrors the structure of Part (a), a simple substitution often collapses the problem instantly."
                 }
@@ -1253,7 +1253,7 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$V = 15000 - 3000t$$ <strong>(b)</strong> $$\\text{Model is highly reliable }(\\approx £2,517\\text{ vs } £2,500)$$ <strong>(c)</strong> $$\\text{Increase the base (e.g. }V = 15000(r)^t\\text{ where } r > 0.8\\text{)}$$对外",
+                                "ans": "<strong>(a)</strong> $$V = 15000 - 3000t$$ <strong>(b)</strong> \\begin{aligned} & \\text{Model is highly reliable }\\cr & \\quad(\\approx £2,517\\text{ vs } £2,500)\\end{aligned} <strong>(c)</strong> \\begin{aligned} & \\text{Increase the base} \\cr & \\quad \\text{(e.g. }V = 15000(r)^t\\text{ where } r > 0.8\\text{)}\\end{aligned}",
                                 "feedback": "You formed a linear depreciation model ($V = 15000 - 3000t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$ or $V = A \\text{e}^{ -kt }$."
                         },
                         {
