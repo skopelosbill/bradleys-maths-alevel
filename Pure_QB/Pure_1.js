@@ -1246,7 +1246,7 @@ window.ALEVEL_QUESTIONS = [
                         "Using the initial condition when the motorcycle is new ($t = 0$):<br>\\begin{aligned}\n15000 &= A b^0 \\cr\nA &= 15000\n\\end{aligned}",
                         "Using the value after one year ($t = 1$):<br>\\begin{aligned}\n12000 &= 15000 b^1 \\cr\nb &= \\dfrac{12000}{15000} = 0.8\n\\end{aligned}",
                         "This gives our final exponential equation linking V with t:<br>$$V = 15000(0.8)^t$$",
-                        "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>$$V = 15000(0.8)^8 \\approx 15000 \\times 0.16777 \\approx$$ £$2,517$$",
+                        "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>\\begin{aligned}V &= 15000(0.8)^8\\cr &\\approx 15000 \\times 0.16777\\cr &\\approx$$ £$2,517\\end{aligned}",
                         "The actual monitored value after 8 years is £2,500. Since our model's prediction of £2,517 is extremely close to the actual value, the model is highly reliable over this period.",
                         "<strong>Part (c):</strong> For motorcycle B, which depreciates more slowly, the value must decrease at a slower rate than $20\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.8) must be increased to a value closer to 1 (for example, 0.85 or some multiplier $r > 0.8$). The initial value remains at 15000.",
                         "Final Answer: <strong>(a)</strong> $V = 15000(0.8)^t$ <strong>(b)</strong> Model is highly reliable ($\\approx$ £2,517 vs £2,500) <strong>(c)</strong> Increase the base (e.g. $V = 15000(r)^t$ where $r > 0.8$)"
@@ -1257,7 +1257,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "You formed a linear depreciation model ($V = 15000 - 3000t$) instead of an exponential model in Part (a). Exponential models must be of the form $V = A b^t$ or $V = A \\text{e}^{ -kt }$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> \\begin{aligned} & \\text{Model is highly reliable }\\cr & \\quad(\\approx £2,517\\text{ vs } £2,500)$$ <strong>(c)</strong> \\begin{aligned} & \\text{Decrease the base} \\cr  \\text{ (e.g. } V = &  15000(r)^t  \\text{ where } r < 0.8\\text{)}\\end{aligned}",
+                                "ans": "<strong>(a)</strong> $$V = 15000(0.8)^t$$ <strong>(b)</strong> \\begin{aligned} & \\text{Model is highly reliable }\\cr & \\quad(\\approx £2,517\\text{ vs } £2,500)\\end{aligned} <strong>(c)</strong> \\begin{aligned} & \\text{Decrease the base} \\cr  \\text{ (e.g. } V = &  15000(r)^t  \\text{ where } r < 0.8\\text{)}\\end{aligned}",
                                 "feedback": "Check your reasoning for Part (c). If motorcycle B depreciates more slowly, it retains more of its value each year. Therefore, its base multiplier r must be larger (closer to 1) than 0.8, not smaller."
                         },
                         {
@@ -1288,7 +1288,7 @@ window.ALEVEL_QUESTIONS = [
                         "Using the initial condition when the machine is new ($t = 0$):<br>\\begin{aligned}\n50000 &= A b^0 \\cr\nA &= 50000\n\\end{aligned}",
                         "Using the value after one year ($t = 1$):<br>\\begin{aligned}\n42500 &= 50000 b^1 \\cr\nb &= \\dfrac{42500}{50000} = 0.85\n\\end{aligned}",
                         "This gives our final exponential equation linking V with t:<br>$$V = 50000(0.85)^t$$",
-                        "<strong>Part (b):</strong> We substitute $t = 12$ into our model to find the predicted value:<br>$$V = 50000(0.85)^{12} \\approx 50000 \\times 0.14224 \\approx$$ £$7,112$$",
+                        "<strong>Part (b):</strong> We substitute $t = 12$ into our model to find the predicted value:<br>\\begin{aligned}V &= 50000(0.85)^{12}\\cr &\\approx 50000 \\times 0.14224\\cr &\\approx$$ £$7,112\\end{aligned}",
                         "The actual monitored value after 12 years is £10,000. Since our model's prediction of £7,112 is significantly lower than the actual value, the model has weaker reliability over this period.",
                         "<strong>Part (c):</strong> For machine B, which depreciates more slowly, the value must decrease at a slower rate than $15\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.85) must be increased to a value closer to 1 (for example, 0.90 or some multiplier $r > 0.85$). The initial value remains at 50000.",
                         "Final Answer: <strong>(a)</strong> $V = 50000(0.85)^t$ <strong>(b)</strong> Model is less reliable (underestimates value by $\\approx$ £2,888) <strong>(c)</strong> Increase the base (e.g. $V = 50000(r)^t$ where $r > 0.85$)"
@@ -1330,7 +1330,7 @@ window.ALEVEL_QUESTIONS = [
                         "Using the initial condition when the yacht is new ($t = 0$):<br>\\begin{aligned}\n100000 &= A b^0 \\cr\nA &= 100000\n\\end{aligned}",
                         "Using the value after one year ($t = 1$):<br>\\begin{aligned}\n90000 &= 100000 b^1 \\cr\nb &= \\dfrac{90000}{100000} = 0.9\n\\end{aligned}",
                         "This gives our final exponential equation linking V with t:<br>$$V = 100000(0.9)^t$$",
-                        "<strong>Part (b):</strong> We substitute $t = 10$ into our model to find the predicted value:<br>$$V = 100000(0.9)^{10} \\approx 100000 \\times 0.34868 \\approx$$ £$34,868$$",
+                        "<strong>Part (b):</strong> We substitute $t = 10$ into our model to find the predicted value:<br>\\begin{aligned} V &= 100000(0.9)^{10}\\cr &\\approx 100000 \\times 0.34868\\cr &\\approx$$ £$34,868\\end{aligned}",
                         "The actual monitored value after 10 years is £35,000. Since our model's prediction of £34,868 is extremely close to the actual value, the model is highly reliable over this period.",
                         "<strong>Part (c):</strong> For yacht B, which depreciates more slowly, the value must decrease at a slower rate than $10\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.9) must be increased to a value closer to 1 (for example, 0.93 or some multiplier $r > 0.9$). The initial value remains at 100000.",
                         "Final Answer: <strong>(a)</strong> $V = 100000(0.9)^t$ <strong>(b)</strong> Model is highly reliable ($\\approx$ £34,868 vs £35,000) <strong>(c)</strong> Increase the base (e.g. $V = 100000(r)^t$ where $r > 0.9$)"
@@ -1372,7 +1372,7 @@ window.ALEVEL_QUESTIONS = [
                         "Using the initial condition when the tractor is new ($t = 0$):<br>\\begin{aligned}\n40000 &= A b^0 \\cr\nA &= 40000\n\\end{aligned}",
                         "Using the value after one year ($t = 1$):<br>\\begin{aligned}\n30000 &= 40000 b^1 \\cr\nb &= \\dfrac{30000}{40000} = 0.75\n\\end{aligned}",
                         "This gives our final exponential equation linking V with t:<br>$$V = 40000(0.75)^t$$",
-                        "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>$$V = 40000(0.75)^8 \\approx 40000 \\times 0.10011 \\approx$$ £$4,005$$",
+                        "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>\\begin{aligned}V &= 40000(0.75)^8\\cr &\\approx 40000 \\times 0.10011\\cr &\\approx$$ £$4,005\\end{aligned}",
                         "The actual monitored value after 8 years is £4,000. Since our model's prediction of £4,005 is extremely close to the actual value, the model is highly reliable over this period.",
                         "<strong>Part (c):</strong> For tractor B, which depreciates more slowly, the value must decrease at a slower rate than $25\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.75) must be increased to a value closer to 1 (for example, 0.80 or some multiplier $r > 0.75$). The initial value remains at 40000.",
                         "Final Answer: <strong>(a)</strong> $V = 40000(0.75)^t$ <strong>(b)</strong> Model is highly reliable ($\\approx$ £4,005 vs £4,000) <strong>(c)</strong> Increase the base (e.g. $V = 40000(r)^t$ where $r > 0.75$)"
@@ -1414,7 +1414,7 @@ window.ALEVEL_QUESTIONS = [
                         "Using the initial condition when the EV is new ($t = 0$):<br>\\begin{aligned}\n30000 &= A b^0 \\cr\nA &= 30000\n\\end{aligned}",
                         "Using the value after one year ($t = 1$):<br>\\begin{aligned}\n24000 &= 30000 b^1 \\cr\nb &= \\dfrac{24000}{30000} = 0.8\n\\end{aligned}",
                         "This gives our final exponential equation linking V with t:<br>$$V = 30000(0.8)^t$$",
-                        "<strong>Part (b):</strong> We substitute $t = 6$ into our model to find the predicted value:<br>$$V = 30000(0.8)^6 \\approx 30000 \\times 0.26214 \\approx$$ £$7,864$$",
+                        "<strong>Part (b):</strong> We substitute $t = 6$ into our model to find the predicted value:<br>\\begin{aligned}V &= 30000(0.8)^6\\cr &\\approx 30000 \\times 0.26214\\cr &\\approx$$ £$7,864\\end{aligned}",
                         "The actual monitored value after 6 years is £7,800. Since our model's prediction of £7,864 is extremely close to the actual value, the model is highly reliable over this period.",
                         "<strong>Part (c):</strong> For EV B, which depreciates more slowly, the value must decrease at a slower rate than $20\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.8) must be increased to a value closer to 1 (for example, 0.85 or some multiplier $r > 0.8$). The initial value remains at 30000.",
                         "Final Answer: <strong>(a)</strong> $V = 30000(0.8)^t$ <strong>(b)</strong> Model is highly reliable ($\\approx$ £7,864 vs £7,800) <strong>(c)</strong> Increase the base (e.g. $V = 30000(r)^t$ where $r > 0.8$)"
