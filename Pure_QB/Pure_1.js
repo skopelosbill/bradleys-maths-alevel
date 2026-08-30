@@ -1445,9 +1445,8 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Definite Integration",
                 "subtopic": [
-                        "Definite Integration",
                         "Area under a Curve",
                         "Signed Areas"
                 ],
@@ -1456,12 +1455,12 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "<strong>Part (a):</strong> First, we expand the cubic equation to make it easy to integrate:<br>\\begin{aligned}\ny &= x(x+1)(x-2) \\cr\n&= x(x^2 - x - 2) \\cr\n&= x^3 - x^2 - 2x\n\\end{aligned}",
                         "Since the region $R_1$ lies entirely above the x-axis between the roots $x = -1$ and $x = 0$, its exact area is given by the definite integral:<br>$$\\text{Area } R_1 = \\int_{ -1 }^{0} (x^3 - x^2 - 2x) \\text{ d}x$$<br>$$\\text{Area } R_1 = \\left[ \\frac{ x^4 }{4} - \\frac{ x^3 }{3} - x^2 \\right]_{ -1 }^{0}$$",
-                        "Evaluating this at the limits 0 and -1:<br>\\begin{aligned} & \\text{Area } R_1\\cr & \\quad = 0 - \\left( \\frac{ (-1)^4 }{4} - \\frac{ (-1)^3 }{3} - (-1)^2 \\right)\\cr & \\quad = - \\left( \\frac{1}{4} + \\frac{1}{3} - 1 \\right) \\cr & \\quad = - \\left( -\\frac{5}{12} \\right) \\cr&= \\frac{5}{12}\\end{aligned}",
+                        "Evaluating this at the limits 0 and -1:<br>\\begin{aligned} & \\text{Area } R_1\\cr & \\quad = 0 - \\left( \\frac{ (-1)^4 }{4} - \\frac{ (-1)^3 }{3} - (-1)^2 \\right)\\cr & \\quad = - \\left( \\frac{1}{4} + \\frac{1}{3} - 1 \\right) \\cr & \\quad = - \\left( -\\frac{5}{12} \\right) \\cr & \\quad= \\frac{5}{12}\\end{aligned}",
                         "<strong>Part (b):</strong> Since $R_2$ lies entirely below the x-axis in the interval $0 < b < 2$, its area is given by the negative integral:<br>\\begin{aligned} & \\text{Area } R_2\\cr & \\quad = -\\int_{0}^{b} (x^3 - x^2 - 2x) \\text{ d}x \\cr & \\quad = -\\left[ \\frac{ x^4 }{4} - \\frac{ x^3 }{3} - x^2 \\right]_{0}^{b}\\cr & \\quad = -\\left( \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - b^2 \\right)\\end{aligned}",
-                        "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}&\\frac{5}{12} = -\\left( \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - b^2 \\right) \\cr & \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - b^2 + \\frac{5}{12} = 0\\end{aligned}<br>Multiplying the entire equation by 12 to clear the fractions:<br>$$3b^4 - 4b^3 - 12b^2 + 5 = 0$$",
-                        "We can verify that this factorises to $(b+1)^2(3b^2 - 10b + 5) = 0$ by expanding the brackets:<br>\\begin{aligned} & (b^2 + 2b + 1)(3b^2 - 10b + 5)\\cr & \\quad = b^2(3b^2 - 10b + 5)\\cr & \\quad \\quad + 2b(3b^2 - 10b + 5)\\cr & \\quad \\quad + 1(3b^2 - 10b + 5) \\cr & \\quad = 3b^4 - 10b^3 + 5b^2 + 6b^3 - 20b^2\\cr & \\quad \\quad + 10b + 3b^2 - 10b + 5$$ \\cr & \\quad = 3b^4 - 4b^3 - 12b^2 + 5 \\cr & \\quad = 0 \\quad \\text{(verified)}\\end{aligned}",
+                        "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}&\\frac{5}{12} = -\\left( \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - b^2 \\right) \\cr & \\Rightarrow\\frac{ b^4 }{4} - \\frac{ b^3 }{3} - b^2 + \\frac{5}{12} = 0\\end{aligned}<br>Multiplying the entire equation by 12 to clear the fractions:<br>$$3b^4 - 4b^3 - 12b^2 + 5 = 0$$",
+                        "We can verify that this factorises to $(b+1)^2(3b^2 - 10b + 5) = 0$ by expanding the brackets:<br>\\begin{aligned} & (b^2 + 2b + 1)(3b^2 - 10b + 5)\\cr & \\quad = b^2(3b^2 - 10b + 5)\\cr & \\quad \\quad + 2b(3b^2 - 10b + 5)\\cr & \\quad \\quad \\quad + 1(3b^2 - 10b + 5) \\cr & \\quad = 3b^4 - 10b^3 + 5b^2 + 6b^3 - 20b^2\\cr & \\quad \\quad + 10b + 3b^2 - 10b + 5$$ \\cr & \\quad = 3b^4 - 4b^3 - 12b^2 + 5 \\cr & \\quad = 0 \\quad \\text{(verified)}\\end{aligned}",
                         "<strong>Part (c):</strong> The root $b \\approx 2.721$ lies to the right of the root $x = 2$, which is outside our interval of validity $0 < b < 2$.<br>Geometrically, this value represents an upper limit where the total net signed area from 0 to 2.721 integrates to $-\\frac{5}{12}$. This occurs because the negative area of the lower lobe (between 0 and 2) is partially cancelled out by the positive area of the upper lobe (between 2 and 2.721).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure_SVGs/004036_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0 \\text{ verified}$$ <strong>(c)</strong> $$b \\approx 2.721$$ $$\\text{represents the point of signed area cancellation}$$"
+                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0 \\text{ verified}$$ <strong>(c)</strong> $$b \\approx 2.721$$ $$\\text{ point of signed area cancellation}$$"
                 ],
                 "pi_options": [
                         {
@@ -1489,33 +1488,34 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Definite Integration",
                 "subtopic": [
-                        "Integration"
+                        "Area under a Curve",
+                        "Signed Areas"
                 ],
                 "img": "images/Pure_SVGs/004037.svg",
                 "question": "The diagram shows a sketch of part of the curve with equation:<br>$$y = x(x+1)(x-3)$$<br>The region $R_1$, shown shaded in the diagram, is bounded by the curve and the negative x-axis.<br><strong>(a)</strong> Show that the exact area of $R_1$ is $\\dfrac{7}{12}$.<br><br>The region $R_2$, also shown shaded in the diagram, is bounded by the curve, the positive x-axis, and the line with equation $x = b$, where b is a positive constant and $0 < b < 3$.<br>Given that the area of $R_1$ is equal to the area of $R_2$:<br><strong>(b)</strong> Verify that b satisfies the equation:<br>$$(b+1)^2(3b^2 - 14b + 7) = 0$$<br>The roots of the equation $3b^2 - 14b + 7 = 0$ are 0.570 and 4.097 to 3 decimal places. The value of b is therefore 0.570 to 3 decimal places.<br><strong>(c)</strong> Explain, with the aid of a diagram, the significance of the root 4.097.",
                 "steps": [
                         "<strong>Part (a):</strong> First, we expand the cubic equation to make it easy to integrate:<br>\\begin{aligned}\ny &= x(x+1)(x-3) \\cr\n&= x(x^2 - 2x - 3) \\cr\n&= x^3 - 2x^2 - 3x\n\\end{aligned}",
                         "Since the region $R_1$ lies entirely above the x-axis between $x = -1$ and $x = 0$, its exact area is given by the definite integral:<br>$$\\text{Area } R_1 = \\int_{ -1 }^{0} (x^3 - 2x^2 - 3x) \\text{ d}x$$<br>$$\\text{Area } R_1 = \\left[ \\frac{ x^4 }{4} - \\frac{ 2x^3 }{3} - \\frac{ 3x^2 }{2} \\right]_{ -1 }^{0}$$",
-                        "Evaluating this at the limits 0 and -1:<br>$$\\text{Area } R_1 = 0 - \\left( \\frac{ (-1)^4 }{4} - \\frac{ 2(-1)^3 }{3} - \\frac{ 3(-1)^2 }{2} \\right)$$<br>\\begin{aligned}\n\\text{Area } R_1 &= - \\left( \\frac{1}{4} + \\frac{2}{3} - \\frac{3}{2} \\right) \\cr\n&= - \\left( -\\frac{7}{12} \\right) \\cr\n&= \\frac{7}{12}\n\\end{aligned}",
-                        "<strong>Part (b):</strong> Since $R_2$ lies entirely below the x-axis in the interval $0 < b < 3$, its area is given by the negative integral:<br>\\begin{aligned}\n\\text{Area } R_2 &= -\\int_{0}^{b} (x^3 - 2x^2 - 3x) \\text{ d}x \\cr\n&= -\\left[ \\frac{ x^4 }{4} - \\frac{ 2x^3 }{3} - \\frac{ 3x^2 }{2} \\right]_{0}^{b}\n\\end{aligned}<br>$$\\text{Area } R_2 = -\\left( \\frac{ b^4 }{4} - \\frac{ 2b^3 }{3} - \\frac{ 3b^2 }{2} \\right)$$",
-                        "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}\n\\frac{7}{12} &= -\\left( \\frac{ b^4 }{4} - \\frac{ 2b^3 }{3} - \\frac{ 3b^2 }{2} \\right) \\cr\n\\frac{ b^4 }{4} - \\frac{ 2b^3 }{3} - \\frac{ 3b^2 }{2} + \\frac{7}{12} &= 0\n\\end{aligned}<br>Multiplying the entire equation by 12 to clear the fractions:<br>$$3b^4 - 8b^3 - 18b^2 + 7 = 0$$",
-                        "We can verify that this factorises to $(b+1)^2(3b^2 - 14b + 7) = 0$ by expanding the brackets:<br>$$(b^2 + 2b + 1)(3b^2 - 14b + 7) = b^2(3b^2 - 14b + 7) + 2b(3b^2 - 14b + 7) + 1(3b^2 - 14b + 7)$$<br>$$= 3b^4 - 14b^3 + 7b^2 + 6b^3 - 28b^2 + 14b + 3b^2 - 14b + 7$$<br>\\begin{aligned}\n &= 3b^4 - 8b^3 - 18b^2 + 7 \\cr\n&= 0 \\quad \\text{(verified)}\n\\end{aligned}",
+                        "Evaluating this at the limits 0 and -1:\\begin{aligned} &\\text{Area } R_1\\cr & \\quad = 0 - \\left( \\frac{ (-1)^4 }{4} - \\frac{ 2(-1)^3 }{3} - \\frac{ 3(-1)^2 }{2} \\cr & \\quad = - \\left( \\frac{1}{4} + \\frac{2}{3} - \\frac{3}{2} \\right) \\cr & \\quad = - \\left( -\\frac{7}{12} \\right) \\cr & \\quad = \\frac{7}{12}\\end{aligned}",
+                        "<strong>Part (b):</strong> Since $R_2$ lies entirely below the x-axis in the interval $0 < b < 3$, its area is given by the negative integral:<br>\\begin{aligned}& \\text{Area } R_2\\cr & \\quad  = -\\int_{0}^{b} (x^3 - 2x^2 - 3x) \\text{ d}x \\cr & \\quad = -\\left[ \\frac{ x^4 }{4} - \\frac{ 2x^3 }{3} - \\frac{ 3x^2 }{2} \\right]_{0}^{b}\\cr & \\quad \\text{Area } R_2 = -\\left( \\frac{ b^4 }{4} - \\frac{ 2b^3 }{3} - \\frac{ 3b^2 }{2} \\right)\\end{aligned}",
+                        "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}&\\frac{7}{12} = -\\left( \\frac{ b^4 }{4} - \\frac{ 2b^3 }{3} - \\frac{ 3b^2 }{2} \\right) \\cr & \\Rightarrow \\frac{ b^4 }{4} - \\frac{ 2b^3 }{3} - \\frac{ 3b^2 }{2} + \\frac{7}{12} &= 0\n\\end{aligned}<br>Multiplying the entire equation by 12 to clear the fractions:<br>$$3b^4 - 8b^3 - 18b^2 + 7 = 0$$",
+                        "We can verify that this factorises to $(b+1)^2(3b^2 - 14b + 7) = 0$ by expanding the brackets:\\begin{aligned} & (b^2 + 2b + 1)(3b^2 - 14b + 7)\\cr & \\quad  = b^2(3b^2 - 14b + 7) + 2b(3b^2 - 14b + 7)\\cr & \\quad \\quad + 1(3b^2 - 14b + 7)\\cr & \\quad = 3b^4 - 14b^3 + 7b^2 + 6b^3 \\cr & \\quad \\quad - 28b^2 + 14b + 3b^2 - 14b + 7\\cr & \\quad = 3b^4 - 8b^3 - 18b^2 + 7 \\cr & \\quad = 0 \\text{( verified)}\\end{aligned}",
                         "<strong>Part (c):</strong> The root $b \\approx 4.097$ lies to the right of the root $x = 3$, which is outside our interval of validity $0 < b < 3$.<br>Geometrically, this value represents an upper limit where the total net signed area from 0 to 4.097 integrates to $-\\frac{7}{12}$. This occurs because the negative area of the lower lobe (between 0 and 3) is partially cancelled out by the positive area of the upper lobe (between 3 and 4.097).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure_SVGs/004037_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b \\approx 4.097\\\\\\ \\text{represents the point of signed area cancellation}$$"
+                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0 \\text{ verified}$$ <strong>(c)</strong> $$b \\approx 4.097 \\text{ point of signed area cancellation}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0$$ <strong>(c)</strong> $$b \\approx 4.097\\\\\\ \\text{represents a turning point}$$",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0$$ <strong>(c)</strong> $$b \\approx 4.097 \\text{ turning point}$$",
                                 "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the x-axis, its area must be positive: $\\frac{7}{12}$, not $-\\frac{7}{12}$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b-1)^2(3b^2 - 14b + 7) = 0$$ <strong>(c)</strong> $$b \\approx 4.097\\\\\\ \\text{represents area cancellation}$$",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b-1)^2(3b^2 - 14b + 7) = 0$$ <strong>(c)</strong> $$b \\approx 4.097 \\text{ area cancellation}$$",
                                 "feedback": "You probably made a sign error in the double-root factor in Part (b). Since the double root originates from the negative root of the cubic ($x = -1$), the factor must be $(b + 1)^2$, not $(b - 1)^2$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0$$ <strong>(c)</strong> $$b \\approx 4.097\\\\\\ \\text{is the local minimum of the curve}$$",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{7}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 14b + 7) = 0$$ <strong>(c)</strong> $$b \\approx 4.097 \\text{ local minimum}$$",
                                 "feedback": "Check your explanation in Part (c). The value 4.097 is a root of our quartic area equation; it has no relation to the turning points of the curve."
                         }
                 ],
@@ -1531,33 +1531,34 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Definite Integration",
                 "subtopic": [
-                        "Integration"
+                        "Area under a Curve",
+                        "Signed Areas"
                 ],
                 "img": "images/Pure_SVGs/004038.svg",
                 "question": "The diagram shows a sketch of part of the curve with equation:<br>$$y = x(x+2)(x-3)$$<br>The region $R_1$, shown shaded in the diagram, is bounded by the curve and the negative x-axis.<br><strong>(a)</strong> Show that the exact area of $R_1$ is $\\dfrac{16}{3}$.<br><br>The region $R_2$, also shown shaded in the diagram, is bounded by the curve, the positive x-axis, and the line with equation $x = b$, where b is a positive constant and $0 < b < 3$.<br>Given that the area of $R_1$ is equal to the area of $R_2$:<br><strong>(b)</strong> Verify that b satisfies the equation:<br>$$(b+2)^2(3b^2 - 16b + 16) = 0$$<br>The roots of the equation $3b^2 - 16b + 16 = 0$ are $\\dfrac{4}{3}$ and 4. The value of b is therefore $\\dfrac{4}{3}$.<br><strong>(c)</strong> Explain, with the aid of a diagram, the significance of the root 4.",
                 "steps": [
                         "<strong>Part (a):</strong> First, we expand the cubic equation to make it easy to integrate:<br>\\begin{aligned}\ny &= x(x+2)(x-3) \\cr\n&= x(x^2 - x - 6) \\cr\n&= x^3 - x^2 - 6x\n\\end{aligned}",
                         "Since the region $R_1$ lies entirely above the x-axis between $x = -2$ and $x = 0$, its exact area is given by the definite integral:<br>$$\\text{Area } R_1 = \\int_{ -2 }^{0} (x^3 - x^2 - 6x) \\text{ d}x$$<br>$$\\text{Area } R_1 = \\left[ \\frac{ x^4 }{4} - \\frac{ x^3 }{3} - 3x^2 \\right]_{ -2 }^{0}$$",
-                        "Evaluating this at the limits 0 and -2:<br>$$\\text{Area } R_1 = 0 - \\left( \\frac{ (-2)^4 }{4} - \\frac{ (-2)^3 }{3} - 3(-2)^2 \\right)$$<br>\\begin{aligned}\n\\text{Area } R_1 &= - \\left( 4 + \\frac{8}{3} - 12 \\right) \\cr\n&= - \\left( -\\frac{16}{3} \\right) \\cr\n&= \\frac{16}{3}\n\\end{aligned}",
-                        "<strong>Part (b):</strong> Since $R_2$ lies entirely below the x-axis in the interval $0 < b < 3$, its area is given by the negative integral:<br>\\begin{aligned}\n\\text{Area } R_2 &= -\\int_{0}^{b} (x^3 - x^2 - 6x) \\text{ d}x \\cr\n&= -\\left[ \\frac{ x^4 }{4} - \\frac{ x^3 }{3} - 3x^2 \\right]_{0}^{b}\n\\end{aligned}<br>$$\\text{Area } R_2 = -\\left( \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - 3b^2 \\right)$$",
-                        "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}\n\\frac{16}{3} &= -\\left( \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - 3b^2 \\right) \\cr\n\\frac{ b^4 }{4} - \\frac{ b^3 }{3} - 3b^2 + \\frac{16}{3} &= 0\n\\end{aligned}<br>Multiplying the entire equation by 12 to clear the fractions:<br>$$3b^4 - 4b^3 - 36b^2 + 64 = 0$$",
-                        "We can verify that this factorises to $(b+2)^2(3b^2 - 16b + 16) = 0$ by expanding the brackets:<br>$$(b^2 + 4b + 4)(3b^2 - 16b + 16) = b^2(3b^2 - 16b + 16) + 4b(3b^2 - 16b + 16) + 4(3b^2 - 16b + 16)$$<br>$$= 3b^4 - 16b^3 + 16b^2 + 12b^3 - 64b^2 + 64b + 12b^2 - 64b + 64$$<br>\\begin{aligned}\n &= 3b^4 - 4b^3 - 36b^2 + 64 \\cr\n&= 0 \\quad \\text{(verified)}\n\\end{aligned}",
+                        "Evaluating this at the limits 0 and -2:<br>\\begin{aligned} & \\text{Area } R_1\\cr & \\quad  = 0 - \\left( \\frac{ (-2)^4 }{4} - \\frac{ (-2)^3 }{3} - 3(-2)^2 \\right)\\cr & \\quad = - \\left( 4 + \\frac{8}{3} - 12 \\right) \\cr & \\quad &= - \\left( -\\frac{16}{3} \\right) \\cr & \\quad = \\frac{16}{3}\\end{aligned}",
+                        "<strong>Part (b):</strong> Since $R_2$ lies entirely below the x-axis in the interval $0 < b < 3$, its area is given by the negative integral:\\begin{aligned}\\text{Area } R_2 &= -\\int_{0}^{b} (x^3 - x^2 - 6x) \\text{ d}x \\cr & \\quad = -\\left[ \\frac{ x^4 }{4} - \\frac{ x^3 }{3} - 3x^2 \\right]_{0}^{b}\\cr & \\quad = -\\left( \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - 3b^2 \\right)\\end{aligned}",
+                        "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:\\begin{aligned} & \\frac{16}{3} = -\\left( \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - 3b^2 \\right) \\cr & \\Rightarrow \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - 3b^2 + \\frac{16}{3} = 0\\end{aligned}<br>Multiplying the entire equation by 12 to clear the fractions:<br>$$3b^4 - 4b^3 - 36b^2 + 64 = 0$$",
+                        "We can verify that this factorises to $(b+2)^2(3b^2 - 16b + 16) = 0$ by expanding the brackets:\\begin{aligned} & (b^2 + 4b + 4)(3b^2 - 16b + 16)\\cr & \\quad  = b^2(3b^2 - 16b + 16)\\cr & \\quad \\quad + 4b(3b^2 - 16b + 16)\\cr & \\quad \\quad \\quad + 4(3b^2 - 16b + 16)\\cr & \\quad = 3b^4 - 16b^3 + 16b^2 + 12b^3\\cr & \\quad \quad - 64b^2 + 64b + 12b^2 - 64b + 64\\cr & \\quad = 3b^4 - 4b^3 - 36b^2 + 64 \\cr & \\quad = 0 \\text{(verified)}\\end{aligned}",
                         "<strong>Part (c):</strong> The root $b = 4$ lies to the right of the root $x = 3$, which is outside our interval of validity $0 < b < 3$.<br>Geometrically, this value represents an upper limit where the total net signed area from 0 to 4 integrates to $-\\frac{16}{3}$. This occurs because the negative area of the lower lobe (between 0 and 3) is partially cancelled out by the positive area of the upper lobe (between 3 and 4).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure_SVGs/004038_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $b = 4$ \\text{represents the point of signed area cancellation}"
+                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0 \\text{ verified}$$ <strong>(c)</strong> $b = 4$ \\text{represents the point of signed area cancellation}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0$$ <strong>(c)</strong> $b = 4$ \\text{represents a turning point}",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0$$ <strong>(c)</strong> $$b = 4 \\text{ turning point}$$",
                                 "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the x-axis, its area must be positive: $\\frac{16}{3}$, not $-\\frac{16}{3}$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b-2)^2(3b^2 - 16b + 16) = 0$$ <strong>(c)</strong> $b = 4$ \\text{represents area cancellation}",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b-2)^2(3b^2 - 16b + 16) = 0$$ <strong>(c)</strong> $$b = 4 \\text{ area cancellation}$$",
                                 "feedback": "You probably made a sign error in the double-root factor in Part (b). Since the double root originates from the negative root of the cubic ($x = -2$), the factor must be $(b + 2)^2$, not $(b - 2)^2$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0$$ <strong>(c)</strong> $b = 4$ \\text{is the local minimum of the curve}",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{16}{3}$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 16b + 16) = 0$$ <strong>(c)</strong> $$b = 4 \\text{ local minimum}$$",
                                 "feedback": "Check your explanation in Part (c). The value 4 is a root of our quartic area equation; it has no relation to the turning points of the curve."
                         }
                 ],
@@ -1573,33 +1574,34 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Definite Integration",
                 "subtopic": [
-                        "Integration"
+                        "Area under a Curve",
+                        "Signed Areas"
                 ],
                 "img": "images/Pure_SVGs/004039.svg",
                 "question": "The diagram shows a sketch of part of the curve with equation:<br>$$y = x(x+3)(x-3)$$<br>The region $R_1$, shown shaded in the diagram, is bounded by the curve and the negative x-axis.<br><strong>(a)</strong> Show that the exact area of $R_1$ is $\\dfrac{81}{4}$.<br><br>The region $R_2$, also shown shaded in the diagram, is bounded by the curve, the positive x-axis, and the line with equation $x = b$, where b is a positive constant and $0 < b < 3$.<br>Given that the area of $R_1$ is equal to the area of $R_2$:<br><strong>(b)</strong> Verify that b satisfies the equation:<br>$$(b+3)^2(b-3)^2 = 0$$<br>The root of the equation $(b-3)^2 = 0$ is 3. The value of b is therefore 3.<br><strong>(c)</strong> Explain, with the aid of a diagram, the significance of this root.",
                 "steps": [
                         "<strong>Part (a):</strong> First, we expand the cubic equation to make it easy to integrate:<br>\\begin{aligned}\ny &= x(x+3)(x-3) \\cr\n&= x(x^2 - 9) \\cr\n&= x^3 - 9x\n\\end{aligned}",
                         "Since the region $R_1$ lies entirely above the x-axis between $x = -3$ and $x = 0$, its exact area is given by the definite integral:<br>$$\\text{Area } R_1 = \\int_{ -3 }^{0} (x^3 - 9x) \\text{ d}x$$<br>$$\\text{Area } R_1 = \\left[ \\frac{ x^4 }{4} - \\frac{ 9x^2 }{2} \\right]_{ -3 }^{0}$$",
-                        "Evaluating this at the limits 0 and -3:<br>$$\\text{Area } R_1 = 0 - \\left( \\frac{ (-3)^4 }{4} - \\frac{ 9(-3)^2 }{2} \\right)$$<br>\\begin{aligned}\n\\text{Area } R_1 &= - \\left( \\frac{81}{4} - \\frac{81}{2} \\right) \\cr\n&= - \\left( -\\frac{81}{4} \\right) \\cr\n&= \\frac{81}{4}\n\\end{aligned}",
-                        "<strong>Part (b):</strong> Since $R_2$ lies entirely below the x-axis in the interval $0 < b < 3$, its area is given by the negative integral:<br>\\begin{aligned}\n\\text{Area } R_2 &= -\\int_{0}^{b} (x^3 - 9x) \\text{ d}x \\cr\n&= -\\left[ \\frac{ x^4 }{4} - \\frac{ 9x^2 }{2} \\right]_{0}^{b}\n\\end{aligned}<br>$$\\text{Area } R_2 = -\\left( \\frac{ b^4 }{4} - \\frac{ 9b^2 }{2} \\right)$$",
-                        "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}\n\\frac{81}{4} &= -\\left( \\frac{ b^4 }{4} - \\frac{ 9b^2 }{2} \\right) \\cr\n\\frac{ b^4 }{4} - \\frac{ 9b^2 }{2} + \\frac{81}{4} &= 0\n\\end{aligned}<br>Multiplying the entire equation by 4 to clear the fractions:<br>$$b^4 - 18b^2 + 81 = 0$$",
+                        "Evaluating this at the limits 0 and -3:\\begin{aligned} & \\text{Area } R_1 \\cr & \\quad = 0 - \\left( \\frac{ (-3)^4 }{4} - \\frac{ 9(-3)^2 }{2} \\right)\\cr & \\quad = - \\left( \\frac{81}{4} - \\frac{81}{2} \\right) \\cr & \\quad = - \\left( -\\frac{81}{4} \\right) \\cr & \\quad = \\frac{81}{4}\\end{aligned}",
+                        "<strong>Part (b):</strong> Since $R_2$ lies entirely below the x-axis in the interval $0 < b < 3$, its area is given by the negative integral:\\begin{aligned}\\text{Area } R_2 &= -\\int_{0}^{b} (x^3 - 9x) \\text{ d}x \\cr & = -\\left[ \\frac{ x^4 }{4} - \\frac{ 9x^2 }{2} \\right]_{0}^{b}\\cr & = -\\left( \\frac{ b^4 }{4} - \\frac{ 9b^2 }{2} \\right)$$",
+                        "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:\\begin{aligned} & \\frac{81}{4} = -\\left( \\frac{ b^4 }{4} - \\frac{ 9b^2 }{2} \\right) \\cr & \\Rightarrow \\frac{ b^4 }{4} - \\frac{ 9b^2 }{2} + \\frac{81}{4} &= 0\\end{aligned}<br>Multiplying the entire equation by 4 to clear the fractions:<br>$$b^4 - 18b^2 + 81 = 0$$",
                         "We can verify that this factorises to $(b+3)^2(b-3)^2 = 0$ (which is $(b^2 - 9)^2 = 0$) by expanding the brackets:<br>\\begin{aligned}\n(b^2 - 9)^2 &= (b^2)^2 - 2(9)(b^2) + 81 \\cr\n&= b^4 - 18b^2 + 81 \\cr\n&= 0 \\quad \\text{(verified)}\n\\end{aligned}",
                         "<strong>Part (c):</strong> The root $b = 3$ is exactly the second positive root of the cubic equation.<br>Geometrically, choosing $b = 3$ means that $R_2$ is the entire negative lobe of the curve between 0 and 3. Because $y = x^3 - 9x$ is an odd function, it is perfectly symmetric about the origin, meaning the area of the positive lobe $R_1$ is identical to the area of the negative lobe $R_2$.<br><br>Here is the diagram showing this symmetry:<br><img src='images/Pure_SVGs/004039_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $b = 3$ \\text{represents the symmetric opposite lobe boundary}"
+                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0  \\text{ verified}$$ <strong>(c)</strong> $$b = 3 \\text{ symmetric opposite lobe boundary}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0$$ <strong>(c)</strong> $b = 3$ \\text{represents a turning point}",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0$$ <strong>(c)</strong> $$b = 3 \\text{ turning point}$$",
                                 "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the x-axis, its area must be positive: $\\frac{81}{4}$, not $-\\frac{81}{4}$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b-3)^4 = 0$$ <strong>(c)</strong> $b = 3$ \\text{is the local minimum of the curve}",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b-3)^4 = 0$$ <strong>(c)</strong> $$b = 3 \\text{ local minimum}$$",
                                 "feedback": "You probably made an expansion error in Part (b). $b^4 - 18b^2 + 81$ is a quadratic in $b^2$, which factorises to $(b^2 - 9)^2 = (b+3)^2(b-3)^2 = 0$, not $(b-3)^4$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0$$ <strong>(c)</strong> $b = 3$ \\text{is the turning point of the curve}",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0$$ <strong>(c)</strong> $$b = 3 \\text{ turning point}$$",
                                 "feedback": "Check your explanation in Part (c). The value 3 is the x-int of the cubic, not its turning point. It represents the boundary where the two identical lobes are symmetric."
                         }
                 ],
@@ -1615,33 +1617,34 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Definite Integration",
                 "subtopic": [
-                        "Integration"
+                        "Area under a Curve",
+                        "Signed Areas"
                 ],
                 "img": "images/Pure_SVGs/004040.svg",
                 "question": "The diagram shows a sketch of part of the curve with equation:<br>$$y = x(x+2)(x-5)$$<br>The region $R_1$, shown shaded in the diagram, is bounded by the curve and the negative x-axis.<br><strong>(a)</strong> Show that the exact area of $R_1$ is 8.<br><br>The region $R_2$, also shown shaded in the diagram, is bounded by the curve, the positive x-axis, and the line with equation $x = b$, where b is a positive constant and $0 < b < 5$.<br>Given that the area of $R_1$ is equal to the area of $R_2$:<br><strong>(b)</strong> Verify that b satisfies the equation:<br>$$(b+2)^2(3b^2 - 24b + 24) = 0$$<br>The roots of the equation $3b^2 - 24b + 24 = 0$ are 1.172 and 6.828 to 3 decimal places. The value of b is therefore 1.172 to 3 decimal places.<br><strong>(c)</strong> Explain, with the aid of a diagram, the significance of the root 6.828.",
                 "steps": [
                         "<strong>Part (a):</strong> First, we expand the cubic equation to make it easy to integrate:<br>\\begin{aligned}\ny &= x(x+2)(x-5) \\cr\n&= x(x^2 - 3x - 10) \\cr\n&= x^3 - 3x^2 - 10x\n\\end{aligned}",
                         "Since the region $R_1$ lies entirely above the x-axis between $x = -2$ and $x = 0$, its exact area is given by the definite integral:<br>$$\\text{Area } R_1 = \\int_{ -2 }^{0} (x^3 - 3x^2 - 10x) \\text{ d}x$$<br>$$\\text{Area } R_1 = \\left[ \\frac{ x^4 }{4} - x^3 - 5x^2 \\right]_{ -2 }^{0}$$",
-                        "Evaluating this at the limits 0 and -2:<br>$$\\text{Area } R_1 = 0 - \\left( \\frac{ (-2)^4 }{4} - (-2)^3 - 5(-2)^2 \\right)$$<br>\\begin{aligned}\n\\text{Area } R_1 &= - \\left( 4 + 8 - 20 \\right) \\cr\n&= - \\left( -8 \\right) \\cr\n&= 8\n\\end{aligned}",
-                        "<strong>Part (b):</strong> Since $R_2$ lies entirely below the x-axis in the interval $0 < b < 5$, its area is given by the negative integral:<br>\\begin{aligned}\n\\text{Area } R_2 &= -\\int_{0}^{b} (x^3 - 3x^2 - 10x) \\text{ d}x \\cr\n&= -\\left[ \\frac{ x^4 }{4} - x^3 - 5x^2 \\right]_{0}^{b}\n\\end{aligned}<br>$$\\text{Area } R_2 = -\\left( \\frac{ b^4 }{4} - b^3 - 5b^2 \\right)$$",
-                        "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}\n8 &= -\\left( \\frac{ b^4 }{4} - b^3 - 5b^2 \\right) \\cr\n\\frac{ b^4 }{4} - b^3 - 5b^2 + 8 &= 0\n\\end{aligned}<br>Multiplying the entire equation by 4 to clear the fractions:<br>$$b^4 - 4b^3 - 20b^2 + 32 = 0$$",
-                        "We can verify that this factorises to $(b+2)^2(b^2 - 8b + 8) = 0$ (which is equivalent to $(b+2)^2(3b^2 - 24b + 24) = 0$ upon multiplying the quadratic by 3) by expanding the brackets:<br>$$(b^2 + 4b + 4)(3b^2 - 24b + 24) = b^2(3b^2 - 24b + 24) + 4b(3b^2 - 24b + 24) + 4(3b^2 - 24b + 24)$$<br>$$= 3b^4 - 24b^3 + 24b^2 + 12b^3 - 96b^2 + 96b + 12b^2 - 96b + 94$$<br>Wait! Let's check the constants:<br>$$4 \\times 24 = 96$$. So the expansion yields:<br>\\begin{aligned}\n3b^4 - 12b^3 - 60b^2 + 96 &= 0 \\cr\n3(b^4 - 4b^3 - 20b^2 + 32) &= 0 \\quad \\text{(verified)}\n\\end{aligned}",
+                        "Evaluating this at the limits 0 and -2:\\begin{aligned} & \\text{Area } R_1 \\cr & \\quad = 0 - \\left( \\frac{ (-2)^4 }{4} - (-2)^3 - 5(-2)^2 \\right)\\cr & \\quad = - \\left( 4 + 8 - 20 \\right) \\cr & \\quad = - \\left( -8 \\right) \\cr & \\quad = 8\\end{aligned}",
+                        "<strong>Part (b):</strong> Since $R_2$ lies entirely below the x-axis in the interval $0 < b < 5$, its area is given by the negative integral:<br>\\begin{aligned}\\cr &  \\text{Area } R_2 \\cr & \\quad = -\\int_{0}^{b} (x^3 - 3x^2 - 10x) \\text{ d}x\\cr & \\quad = -\\left[ \\frac{ x^4 }{4} - x^3 - 5x^2 \\right]_{0}^{b}\\cr & \\quad  = -\\left( \\frac{ b^4 }{4} - b^3 - 5b^2 \\right)\\end{aligned",
+                        "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:\\begin{aligned} & 8 = -\\left( \\frac{ b^4 }{4} - b^3 - 5b^2 \\right) \\cr & \\Rightarrow\\frac{ b^4 }{4} - b^3 - 5b^2 + 8 &= 0\\end{aligned}<br>Multiplying the entire equation by 4 to clear the fractions:<br>$$b^4 - 4b^3 - 20b^2 + 32 = 0$$",
+                        "We can verify that this factorises to $(b+2)^2(b^2 - 8b + 8) = 0$ (which is equivalent to $(b+2)^2(3b^2 - 24b + 24) = 0$ upon multiplying the quadratic by 3) by expanding the brackets:\\begin{aligned} & (b^2 + 4b + 4)(3b^2 - 24b + 24)\\cr & \\quad  = b^2(3b^2 - 24b + 24)\\cr & \\quad \\quad + 4b(3b^2 - 24b + 24)\\cr & \\quad \\quad \\quad + 4(3b^2 - 24b + 24)\\cr & \\quad = 3b^4 - 24b^3 + 24b^2 + 12b^3 \\cr & \\quad \\quad- 96b^2 + 96b + 12b^2 - 96b + 96\\cr & \\quad = 3b^4 - 12b^3 - 60b^2 + 96 \\cr & \\quad = 3(b^4 - 4b^3 - 20b^2 + 32) &= 0  \\text{ (verified)}\\end{aligned}",
                         "<strong>Part (c):</strong> The root $b \\approx 6.828$ lies to the right of the root $x = 5$, which is outside our interval of validity $0 < b < 5$.<br>Geometrically, this value represents an upper limit where the total net signed area from 0 to 6.828 integrates to -8. This occurs because the negative area of the lower lobe (between 0 and 5) is partially cancelled out by the positive area of the upper lobe (between 5 and 6.828).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure_SVGs/004040_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b \\approx 6.828\\\\\\ \\text{represents the point of signed area cancellation}$$"
+                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0\\text{ verified}$$ <strong>(c)</strong> $$b \\approx 6.828 \\text{ signed area cancellation}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0$$ <strong>(c)</strong> $$b \\approx 6.828\\\\\\ \\text{represents a turning point}$$",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0$$ <strong>(c)</strong> $$b \\approx 6.828\\text{ turning point}$$",
                                 "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the x-axis, its area must be positive: 8, not -8."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b-2)^2(3b^2 - 24b + 24) = 0$$ <strong>(c)</strong> $$b \\approx 6.828\\\\\\ \\text{represents area cancellation}$$",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b-2)^2(3b^2 - 24b + 24) = 0$$ <strong>(c)</strong> $$b \\approx 6.828 \\text{ area cancellation}$$",
                                 "feedback": "You probably made a sign error in the double-root factor in Part (b). Since the double root originates from the negative root of the cubic ($x = -2$), the factor must be $(b + 2)^2$, not $(b - 2)^2$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0$$ <strong>(c)</strong> $$b \\approx 6.828\\\\\\ \\text{is the local minimum of the curve}$$",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0$$ <strong>(c)</strong> $$b \\approx 6.828 \\text{ local minimum}$$",
                                 "feedback": "Check your explanation in Part (c). The value 6.828 is a root of our quartic area equation; it has no relation to the turning points of the curve."
                         }
                 ],
