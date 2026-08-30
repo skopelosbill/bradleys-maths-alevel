@@ -1052,7 +1052,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric identities"
                 ],
                 "img": false,
                 "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$4\\sin 2\\theta = 7\\cos\\theta.$$Give your answers, where necessary, to one decimal place. Solutions based entirely on graphical or numerical methods are not acceptable.<br><br><strong>(b)</strong> Hence deduce the smallest positive solution of:<br> \\begin{aligned}4 & \\sin(2x + 20^\\circ)\\cr & \\quad \\quad \\quad = 7\\cos(x + 10^\\circ).\\end{aligned}",
@@ -1089,7 +1089,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric identities"
                 ],
                 "img": false,
                 "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$3\\tan\\theta = 2\\sin 2\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Deduce the smallest positive solution of:<br>\\begin{aligned} &3\\tan(x - 15^\\circ)\\cr & \\quad \\quad \\quad = 2\\sin(2x - 30^\\circ).\\end{aligned}",
@@ -1126,7 +1126,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric identities"
                 ],
                 "img": false,
                 "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$5\\cos 2\\theta = 8\\sin\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence find the smallest positive solution of:<br>\\begin{aligned} & 5\\cos(2x - 40^\\circ)\\cr & \\quad \\quad \\quad = 8\\sin(x - 20^\\circ).\\end{aligned}",
@@ -1163,7 +1163,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric identities"
                 ],
                 "img": false,
                 "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$6\\sin\\theta = 2\\cos 2\\theta.$$<br><br><strong>(b)</strong> Deduce the smallest positive solution of:<br>\\begin{aligned} & 6\\sin(x + 30^\\circ) \\cr & \\quad \\quad \\quad = 2\\cos(2x + 60^\\circ).\\end{aligned}",
@@ -1200,7 +1200,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Trigonometry",
                 "topic": "Trigonometric Equations",
                 "subtopic": [
-                        "Trigonometry"
+                        "Trigonometric identities"
                 ],
                 "img": false,
                 "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$9\\sin 2\\theta = 4\\tan\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence deduce the smallest positive solution of:<br>\\begin{aligned} & 9\\sin(2x - 10^\\circ)\\cr & \\quad \\quad \\quad = 4\\tan(x - 5^\\circ).\\end{aligned}",
@@ -1248,7 +1248,7 @@ window.ALEVEL_QUESTIONS = [
                         "This gives our final exponential equation linking V with t:<br>$$V = 15000(0.8)^t$$",
                         "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>\\begin{aligned}V &= 15000(0.8)^8\\cr &\\approx 15000 \\times 0.16777\\cr &\\approx £2,517\\end{aligned}",
                         "The actual monitored value after 8 years is £2,500. Since our model's prediction of £2,517 is extremely close to the actual value, the model is highly reliable over this period.",
-                        "<strong>Part (c):</strong> For motorcycle B, which depreciates more slowly, the value must decrease at a slower rate than $20\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.8) must be increased to a value closer to 1 (for example, 0.85 or some multiplier $r > 0.8$). The initial value remains at 15000.",
+                        "<strong>Part (c):</strong> For motorcycle B, which depreciates more slowly, the value must decrease at a slower rate than $20\\%$ per year.<br>Therefore, the base of the exponent (currently 0.8) must be increased to a value closer to 1 (for example, 0.85 or some multiplier $r > 0.8$). The initial value remains at 15000.",
                         "Final Answer: <strong>(a)</strong> $V = 15000(0.8)^t$ <strong>(b)</strong> Model is highly reliable ($\\approx$ £2,517 vs £2,500) <strong>(c)</strong> Increase the base (e.g. $V = 15000(r)^t$ where $r > 0.8$)"
                 ],
                 "pi_options": [
@@ -1268,7 +1268,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "pro-tip",
                         "title": "The Head Teacher's Eye: Base Multipliers",
-                        "content": "In GCE exponential modeling, the base of the exponent (b in $A b^t$) always represents the proportion of value retained each year. If an asset depreciates by $20\\\\%$, it retains $80\\\\%$ of its value, so $b = 0.8$. If it depreciates more slowly, it retains more value, so b must increase closer to 1."
+                        "content": "In GCE exponential modeling, the base of the exponent (b in $A b^t$) always represents the proportion of value retained each year. If an asset depreciates by $20\\%$, it retains $80\\%$ of its value, so $b = 0.8$. If it depreciates more slowly, it retains more value, so b must increase closer to 1."
                 }
         },
         {
@@ -1290,13 +1290,13 @@ window.ALEVEL_QUESTIONS = [
                         "This gives our final exponential equation linking V with t:<br>$$V = 50000(0.85)^t$$",
                         "<strong>Part (b):</strong> We substitute $t = 12$ into our model to find the predicted value:<br>\\begin{aligned}V &= 50000(0.85)^{12}\\cr &\\approx 50000 \\times 0.14224\\cr &\\approx £7,112\\end{aligned}",
                         "The actual monitored value after 12 years is £10,000. Since our model's prediction of £7,112 is significantly lower than the actual value, the model has weaker reliability over this period.",
-                        "<strong>Part (c):</strong> For machine B, which depreciates more slowly, the value must decrease at a slower rate than $15\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.85) must be increased to a value closer to 1 (for example, 0.90 or some multiplier $r > 0.85$). The initial value remains at 50000.",
+                        "<strong>Part (c):</strong> For machine B, which depreciates more slowly, the value must decrease at a slower rate than $15\\%$ per year.<br>Therefore, the base of the exponent (currently 0.85) must be increased to a value closer to 1 (for example, 0.90 or some multiplier $r > 0.85$). The initial value remains at 50000.",
                         "Final Answer: <strong>(a)</strong> $V = 50000(0.85)^t$ <strong>(b)</strong> Model is less reliable (underestimates value by $\\approx$ £2,888) <strong>(c)</strong> Increase the base (e.g. $V = 50000(r)^t$ where $r > 0.85$)"
                 ],
                 "pi_options": [
                         {
                                                 "ans": "<strong>(a)</strong> $$V = 50000(0.85)^t$$ <strong>(b)</strong> $$\\text{Model is highly reliable}$$ <strong>(c)</strong>  \\begin{aligned} & \\text{Increase the base} \\cr  \\text{(e.g. }V = &  50000(r)^t  \\text{ where } r > 0.85\\text{)}\\end{aligned}",
-                                "feedback": "You probably evaluated the model's reliability incorrectly in Part (b). Our model's prediction is £7,112, which is significantly lower than the actual value of £10,000. An underestimation of almost $30\\\\%$ indicates that the model's reliability over this 12-year period is weaker."
+                                "feedback": "You probably evaluated the model's reliability incorrectly in Part (b). Our model's prediction is £7,112, which is significantly lower than the actual value of £10,000. An underestimation of almost $30\\%$ indicates that the model's reliability over this 12-year period is weaker."
                         },
                         {
                                 "ans": "<strong>(a)</strong> $$V = 50000 - 7500t$$ <strong>(b)</strong> SS\\text{Model is less reliable}$$ <strong>(c)</strong>  \\begin{aligned} & \\text{Increase the base} \\cr  \\text{ (e.g. }V = &  50000(r)^t  \\text{ where } r > 0.85\\text{)}\\end{aligned}",
@@ -1330,9 +1330,9 @@ window.ALEVEL_QUESTIONS = [
                         "Using the initial condition when the yacht is new ($t = 0$):<br>\\begin{aligned}\n100000 &= A b^0 \\cr\nA &= 100000\n\\end{aligned}",
                         "Using the value after one year ($t = 1$):<br>\\begin{aligned}\n90000 &= 100000 b^1 \\cr\nb &= \\dfrac{90000}{100000} = 0.9\n\\end{aligned}",
                         "This gives our final exponential equation linking V with t:<br>$$V = 100000(0.9)^t$$",
-                        "<strong>Part (b):</strong> We substitute $t = 10$ into our model to find the predicted value:<br>\\begin{aligned} V &= 100000(0.9)^{10}\\cr &\\approx 100000 \\times 0.34868\\cr &\\approx$$ £$34,868\\end{aligned}",
+                        "<strong>Part (b):</strong> We substitute $t = 10$ into our model to find the predicted value:<br>\\begin{aligned} V &= 100000(0.9)^{10}\\cr &\\approx 100000 \\times 0.34868\\cr &\\approx £34,868\\end{aligned}",
                         "The actual monitored value after 10 years is £35,000. Since our model's prediction of £34,868 is extremely close to the actual value, the model is highly reliable over this period.",
-                        "<strong>Part (c):</strong> For yacht B, which depreciates more slowly, the value must decrease at a slower rate than $10\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.9) must be increased to a value closer to 1 (for example, 0.93 or some multiplier $r > 0.9$). The initial value remains at 100000.",
+                        "<strong>Part (c):</strong> For yacht B, which depreciates more slowly, the value must decrease at a slower rate than $10\\%$ per year.<br>Therefore, the base of the exponent (currently 0.9) must be increased to a value closer to 1 (for example, 0.93 or some multiplier $r > 0.9$). The initial value remains at 100000.",
                         "Final Answer: <strong>(a)</strong> $V = 100000(0.9)^t$ <strong>(b)</strong> Model is highly reliable ($\\approx$ £34,868 vs £35,000) <strong>(c)</strong> Increase the base (e.g. $V = 100000(r)^t$ where $r > 0.9$)"
                 ],
                 "pi_options": [
@@ -1352,7 +1352,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "pro-tip",
                         "title": "The Head Teacher's Eye: Percentage Depreciation",
-                        "content": "Always remember that an annual depreciation of $P\\\\%$ corresponds to an exponential multiplier of $r = 1 - \\frac{P}{100}$. For a luxury yacht depreciating at $10\\\\%$ per year, the multiplier is $r = 0.9$. This allows you to construct and adapt these models rapidly."
+                        "content": "Always remember that an annual depreciation of $P\\%$ corresponds to an exponential multiplier of $r = 1 - \\frac{P}{100}$. For a luxury yacht depreciating at $10\\%$ per year, the multiplier is $r = 0.9$. This allows you to construct and adapt these models rapidly."
                 }
         },
         {
@@ -1374,7 +1374,7 @@ window.ALEVEL_QUESTIONS = [
                         "This gives our final exponential equation linking V with t:<br>$$V = 40000(0.75)^t$$",
                         "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>\\begin{aligned}V &= 40000(0.75)^8\\cr &\\approx 40000 \\times 0.10011\\cr &\\approx £4,005\\end{aligned}",
                         "The actual monitored value after 8 years is £4,000. Since our model's prediction of £4,005 is extremely close to the actual value, the model is highly reliable over this period.",
-                        "<strong>Part (c):</strong> For tractor B, which depreciates more slowly, the value must decrease at a slower rate than $25\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.75) must be increased to a value closer to 1 (for example, 0.80 or some multiplier $r > 0.75$). The initial value remains at 40000.",
+                        "<strong>Part (c):</strong> For tractor B, which depreciates more slowly, the value must decrease at a slower rate than $25\\%$ per year.<br>Therefore, the base of the exponent (currently 0.75) must be increased to a value closer to 1 (for example, 0.80 or some multiplier $r > 0.75$). The initial value remains at 40000.",
                         "Final Answer: <strong>(a)</strong> $V = 40000(0.75)^t$ <strong>(b)</strong> Model is highly reliable ($\\approx$ £4,005 vs £4,000) <strong>(c)</strong> Increase the base (e.g. $V = 40000(r)^t$ where $r > 0.75$)"
                 ],
                 "pi_options": [
@@ -1416,7 +1416,7 @@ window.ALEVEL_QUESTIONS = [
                         "This gives our final exponential equation linking V with t:<br>$$V = 30000(0.8)^t$$",
                         "<strong>Part (b):</strong> We substitute $t = 6$ into our model to find the predicted value:<br>\\begin{aligned}V &= 30000(0.8)^6\\cr &\\approx 30000 \\times 0.26214\\cr &\\approx £7,864\\end{aligned}",
                         "The actual monitored value after 6 years is £7,800. Since our model's prediction of £7,864 is extremely close to the actual value, the model is highly reliable over this period.",
-                        "<strong>Part (c):</strong> For EV B, which depreciates more slowly, the value must decrease at a slower rate than $20\\\\%$ per year.<br>Therefore, the base of the exponent (currently 0.8) must be increased to a value closer to 1 (for example, 0.85 or some multiplier $r > 0.8$). The initial value remains at 30000.",
+                        "<strong>Part (c):</strong> For EV B, which depreciates more slowly, the value must decrease at a slower rate than $20\\%$ per year.<br>Therefore, the base of the exponent (currently 0.8) must be increased to a value closer to 1 (for example, 0.85 or some multiplier $r > 0.8$). The initial value remains at 30000.",
                         "Final Answer: <strong>(a)</strong> $V = 30000(0.8)^t$ <strong>(b)</strong> Model is highly reliable ($\\approx$ £7,864 vs £7,800) <strong>(c)</strong> Increase the base (e.g. $V = 30000(r)^t$ where $r > 0.8$)"
                 ],
                 "pi_options": [
@@ -1447,31 +1447,33 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Integration",
                 "topic": "Integration",
                 "subtopic": [
-                        "Integration"
+                        "Definite Integration",
+                        "Area under a Curve",
+                        "Signed Areas"
                 ],
                 "img": "images/Pure_SVGs/004036.svg",
                 "question": "The diagram shows a sketch of part of the curve with equation:<br>$$y = x(x+1)(x-2)$$<br>The region $R_1$, shown shaded in the diagram, is bounded by the curve and the negative x-axis.<br><strong>(a)</strong> Show that the exact area of $R_1$ is $\\dfrac{5}{12}$.<br><br>The region $R_2$, also shown shaded in the diagram, is bounded by the curve, the positive x-axis, and the line with equation $x = b$, where b is a positive constant and $0 < b < 2$.<br>Given that the area of $R_1$ is equal to the area of $R_2$:<br><strong>(b)</strong> Verify that b satisfies the equation:<br>$$(b+1)^2(3b^2 - 10b + 5) = 0$$<br>The roots of the equation $3b^2 - 10b + 5 = 0$ are 0.613 and 2.721 to 3 decimal places. The value of b is therefore 0.613 to 3 decimal places.<br><strong>(c)</strong> Explain, with the aid of a diagram, the significance of the root 2.721.",
                 "steps": [
                         "<strong>Part (a):</strong> First, we expand the cubic equation to make it easy to integrate:<br>\\begin{aligned}\ny &= x(x+1)(x-2) \\cr\n&= x(x^2 - x - 2) \\cr\n&= x^3 - x^2 - 2x\n\\end{aligned}",
                         "Since the region $R_1$ lies entirely above the x-axis between the roots $x = -1$ and $x = 0$, its exact area is given by the definite integral:<br>$$\\text{Area } R_1 = \\int_{ -1 }^{0} (x^3 - x^2 - 2x) \\text{ d}x$$<br>$$\\text{Area } R_1 = \\left[ \\frac{ x^4 }{4} - \\frac{ x^3 }{3} - x^2 \\right]_{ -1 }^{0}$$",
-                        "Evaluating this at the limits 0 and -1:<br>$$\\text{Area } R_1 = 0 - \\left( \\frac{ (-1)^4 }{4} - \\frac{ (-1)^3 }{3} - (-1)^2 \\right)$$<br>\\begin{aligned}\n\\text{Area } R_1 &= - \\left( \\frac{1}{4} + \\frac{1}{3} - 1 \\right) \\cr\n&= - \\left( -\\frac{5}{12} \\right) \\cr\n&= \\frac{5}{12}\n\\end{aligned}",
-                        "<strong>Part (b):</strong> Since $R_2$ lies entirely below the x-axis in the interval $0 < b < 2$, its area is given by the negative integral:<br>\\begin{aligned}\n\\text{Area } R_2 &= -\\int_{0}^{b} (x^3 - x^2 - 2x) \\text{ d}x \\cr\n&= -\\left[ \\frac{ x^4 }{4} - \\frac{ x^3 }{3} - x^2 \\right]_{0}^{b}\n\\end{aligned}<br>$$\\text{Area } R_2 = -\\left( \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - b^2 \\right)$$",
-                        "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}\n\\frac{5}{12} &= -\\left( \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - b^2 \\right) \\cr\n\\frac{ b^4 }{4} - \\frac{ b^3 }{3} - b^2 + \\frac{5}{12} &= 0\n\\end{aligned}<br>Multiplying the entire equation by 12 to clear the fractions:<br>$$3b^4 - 4b^3 - 12b^2 + 5 = 0$$",
-                        "We can verify that this factorises to $(b+1)^2(3b^2 - 10b + 5) = 0$ by expanding the brackets:<br>$$(b^2 + 2b + 1)(3b^2 - 10b + 5) = b^2(3b^2 - 10b + 5) + 2b(3b^2 - 10b + 5) + 1(3b^2 - 10b + 5)$$<br>$$= 3b^4 - 10b^3 + 5b^2 + 6b^3 - 20b^2 + 10b + 3b^2 - 10b + 5$$<br>\\begin{aligned}\n &= 3b^4 - 4b^3 - 12b^2 + 5 \\cr\n&= 0 \\quad \\text{(verified)}\n\\end{aligned}",
+                        "Evaluating this at the limits 0 and -1:<br>\\begin{aligned} & \\text{Area } R_1\\cr & \\quad = 0 - \\left( \\frac{ (-1)^4 }{4} - \\frac{ (-1)^3 }{3} - (-1)^2 \\right)\\cr & \\quad = - \\left( \\frac{1}{4} + \\frac{1}{3} - 1 \\right) \\cr & \\quad = - \\left( -\\frac{5}{12} \\right) \\cr&= \\frac{5}{12}\\end{aligned}",
+                        "<strong>Part (b):</strong> Since $R_2$ lies entirely below the x-axis in the interval $0 < b < 2$, its area is given by the negative integral:<br>\\begin{aligned} & \\text{Area } R_2\\cr & \\quad = -\\int_{0}^{b} (x^3 - x^2 - 2x) \\text{ d}x \\cr & \\quad = -\\left[ \\frac{ x^4 }{4} - \\frac{ x^3 }{3} - x^2 \\right]_{0}^{b}\\cr & \\quad = -\\left( \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - b^2 \\right)\\end{aligned}",
+                        "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}&\\frac{5}{12} = -\\left( \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - b^2 \\right) \\cr & \\frac{ b^4 }{4} - \\frac{ b^3 }{3} - b^2 + \\frac{5}{12} = 0\\end{aligned}<br>Multiplying the entire equation by 12 to clear the fractions:<br>$$3b^4 - 4b^3 - 12b^2 + 5 = 0$$",
+                        "We can verify that this factorises to $(b+1)^2(3b^2 - 10b + 5) = 0$ by expanding the brackets:<br>\\begin{aligned} & (b^2 + 2b + 1)(3b^2 - 10b + 5)\\cr & \\quad = b^2(3b^2 - 10b + 5)\\cr & \\quad \\quad + 2b(3b^2 - 10b + 5)\\cr & \\quad \\quad + 1(3b^2 - 10b + 5) \\cr & \\quad = 3b^4 - 10b^3 + 5b^2 + 6b^3 - 20b^2\\cr & \\quad \\quad + 10b + 3b^2 - 10b + 5$$ \\cr & \\quad = 3b^4 - 4b^3 - 12b^2 + 5 \\cr & \\quad = 0 \\quad \\text{(verified)}\\end{aligned}",
                         "<strong>Part (c):</strong> The root $b \\approx 2.721$ lies to the right of the root $x = 2$, which is outside our interval of validity $0 < b < 2$.<br>Geometrically, this value represents an upper limit where the total net signed area from 0 to 2.721 integrates to $-\\frac{5}{12}$. This occurs because the negative area of the lower lobe (between 0 and 2) is partially cancelled out by the positive area of the upper lobe (between 2 and 2.721).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure_SVGs/004036_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0 \\quad \\text{is verified}$$ <strong>(c)</strong> $$b \\approx 2.721\\\\\\ \\text{represents the point of signed area cancellation}$$"
+                        "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0 \\text{ verified}$$ <strong>(c)</strong> $$b \\approx 2.721$$ $$\\text{represents the point of signed area cancellation}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0$$ <strong>(c)</strong> $$b \\approx 2.721\\\\\\ \\text{represents a turning point}$$",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = -\\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0$$ <strong>(c)</strong> $$b \\approx 2.721 \\text{ turning point}$$",
                                 "feedback": "Check your integration signs in Part (a). Because the region $R_1$ lies strictly above the x-axis, its area must be a positive value: $\\frac{5}{12}$, not $-\\frac{5}{12}$. Area is a physical quantity and cannot be negative."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b-1)^2(3b^2 - 10b + 5) = 0$$ <strong>(c)</strong> $$b \\approx 2.721\\\\\\ \\text{represents area cancellation}$$",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b-1)^2(3b^2 - 10b + 5) = 0$$ <strong>(c)</strong> $$b \\approx 2.721 \\text{ area cancellation}$$",
                                 "feedback": "You probably made a sign error in the double-root factor in Part (b). Since the double root originates from the negative root of the cubic ($x = -1$), the factor must be $(b + 1)^2$, not $(b - 1)^2$."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0$$ <strong>(c)</strong> $$b \\approx 2.721\\\\\\ \\text{is the local minimum of the curve}$$",
+                                "ans": "<strong>(a)</strong> $$\\text{Area } R_1 = \\dfrac{5}{12}$$ <strong>(b)</strong> $$(b+1)^2(3b^2 - 10b + 5) = 0$$ <strong>(c)</strong> $$b \\approx 2.721 \\text{ local minimum}$$",
                                 "feedback": "Check your explanation in Part (c). The value 2.721 is a root of our quartic area equation; it has no relation to the turning points of the curve. It represents the point where the positive area above the axis cancels the excess negative area below the axis."
                         }
                 ],
