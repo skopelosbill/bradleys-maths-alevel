@@ -1894,7 +1894,7 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Case A: For $x \\ge 6$</strong>, the term inside the absolute value is positive, so $|2x - 12| = 2x - 12$. Our inequality becomes:\\begin{aligned}2x - 12 &\\ge x - 5 \\cr\\implies x &\\ge 7\\end{aligned}<br>This means that in the interval $6 \\le x < 7$, the inequality is <strong>false</strong> (for example, at $x = 6$, we get $0 \\ge 1$, which is false).",
                         "<strong>Case B: For $x < 6$</strong>, the term inside the absolute value is negative, so \\begin{aligned}|2x - 12| &= -(2x - 12) \\cr &= 12 - 2x\\end{aligned}. Our inequality becomes:\\begin{aligned}12 - 2x &\\ge x - 5\\cr \\implies 17 &\\ge 3x \\cr \\implies x &\\le 5.67\\end{aligned}<br>This means the inequality is true for $x \\le 5.67$ and $x \\ge 7$, but fails in the gap $5.67 < x < 7$.",
                         "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $12 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 6$, where $|2(6)-12| = 0$ is not greater than or equal to $6-5 = 1$).",
-                        "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$ $$\\text{ in the interval }5.67 < x < 7\\text{)}$$"
+                        "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$ $$\\text{fails in the interval }5.67 < x < 7\\text{)}$$"
                 ],
                 "pi_options": [
                         {
@@ -1906,7 +1906,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-12| \\ge -5 \\implies 12 \\ge -5$, which is a true statement."
                         },
                         {
-                                "ans": "<strong>(i)</strong> $$\\text{Proof by algebraic induction is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$",
+                                "ans": "<strong>(i)</strong> $$\\text{Proof by algebraic induction}$$ $$\\text(is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$",
                                 "feedback": "Part (i) is a proof by exhaustion (cases), not mathematical induction. Induction is used when a statement depends on n and n+1 sequences, whereas here we exhaust all possible algebraic remainders of n directly."
                         }
                 ],
