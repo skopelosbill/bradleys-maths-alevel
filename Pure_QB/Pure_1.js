@@ -2024,7 +2024,7 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Case A: For $x \\ge 5.5$</strong>, the term inside the absolute value is positive, so $|4x - 22| = 4x - 22$. Our inequality becomes:\\begin{aligned}4x - 22 & \\ge x - 5\\cr \\implies 3x &\\ge 17\\cr \\implies x &\\ge 5.67\\end{aligned} This means that in the interval $5.5 \\le x < 5.67$, the inequality is <strong>false</strong> (for example, at $x = 5.5$, we get $2 \\ge 0.5$, which is true, but at $x = 5.6$ we get $0.4 \\ge 0.6$, which is false).",
                         "<strong>Case B: For $x < 5.5$</strong>, the term inside the absolute value is negative, so $|4x - 22| = 22 - 4x$. Our inequality becomes:\\begin{aligned}22 - 4x &\\ge x - 5 \\cr \\implies 27 &\\ge 5x \\cr \\implies x &\\le 5.4\\end{aligned} This means the inequality is true for $x \\le 5.4$ and $x \\ge 5.67$, but fails in the gap $5.4 < x < 5.67$.",
                         "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $22 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 5.55$, where $|4(5.55)-22| = 0.2$ is not greater than or equal to $5.55-5 = 0.55$).",
-                        "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$ $$\\text (fails in the interval } 5.4 < x < 5.67\\text{)}$$"
+                        "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$ $$\\text {(fails in the interval } 5.4 < x < 5.67\\text{)}$$"
                 ],
                 "pi_options": [
                         {
@@ -2080,7 +2080,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-17| \\ge -5 \\implies 17 \\ge -5$, which is a true statement."
                         },
                         {
-                                "ans": "<strong>(a)</strong> $$\\text{Proof by exhaustion of bounds}$$\\text{is completed}$$ <strong>(b)</strong> $$\\text{Sometimes true}$$",
+                                "ans": "<strong>(a)</strong> $$\\text{Proof by exhaustion of bounds}$$ $$\\text{is completed}$$ <strong>(b)</strong> $$\\text{Sometimes true}$$",
                                 "feedback": "The standard mathematical name for testing integer remainder cases is a proof by exhaustion (or proof by cases). Avoid using non-standard terms like 'exhaustion of bounds' on your exam script."
                         }
                 ],
