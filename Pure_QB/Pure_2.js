@@ -899,7 +899,7 @@ window.ALEVEL_QUESTIONS = [
                         "Power Rule"
                 ],
                 "img": false,
-                "question": "$$y = \\dfrac{1}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^2}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = x^{-3}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{3}{x^4}\\\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{3}{x^3}$$",
+                "question": "$$y = \\dfrac{1}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br><br>(a) $$\\dfrac{dy}{dx} = -\\dfrac{3}{x^2}$$<br> (b)$$ \\dfrac{dy}{dx} = x^{-3}$$<br> (c)$$ \\dfrac{dy}{dx} = -\\dfrac{3}{x^4}$$<br>(d) $$\\dfrac{dy}{dx} = -\\dfrac{3}{x^3}$$",
                 "steps": [
                         "First, rewrite the expression in index form: $$y = x^{-3}$$",
                         "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -3$$ \\begin{aligned}\\dfrac{dy}{dx} &= -3x^{-3-1} \\cr&= -3x^{-4}\\end{aligned}",
@@ -937,7 +937,7 @@ window.ALEVEL_QUESTIONS = [
                         "Power Rule"
                 ],
                 "img": false,
-                "question": "$$y = \\dfrac{1}{x^4}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^5}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{4}{x^3}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = x^{-4}\\\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{4}{x^4}$$",
+                "question": "$$y = \\dfrac{1}{x^4}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br><br>(a)$$\\dfrac{dy}{dx} = -\\dfrac{4}{x^5}$$<br>(b)$$ \\dfrac{dy}{dx} = -\\dfrac{4}{x^3}$$<br> (c)$$\\dfrac{dy}{dx} = x^{-4}$$<br>(d)$$ \\dfrac{dy}{dx} = -\\dfrac{4}{x^4}$$",
                 "steps": [
                         "First, rewrite the expression in index form: $$y = x^{-4}$$",
                         "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -4$$ \\begin{aligned}\\dfrac{dy}{dx} &= -4x^{-4-1} \\cr&= -4x^{-5}\\end{aligned}",
@@ -975,7 +975,7 @@ window.ALEVEL_QUESTIONS = [
                         "Power Rule"
                 ],
                 "img": false,
-                "question": "$$y = \\dfrac{1}{x^5}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = x^{-5}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{5}{x^4}\\\\\\ (d) \\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
+                "question": "$$y = \\dfrac{1}{x^5}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br><br>$$(a)$$ \\dfrac{dy}{dx} = x^{-5}$$<br> (b)$$ \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}$$<br> (c)$$ \\dfrac{dy}{dx} = -\\dfrac{5}{x^4}$$<br>(d)$$ \\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
                 "steps": [
                         "First, rewrite the expression in index form: $$y = x^{-5}$$",
                         "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -5$$ \\begin{aligned}\\dfrac{dy}{dx} &= -5x^{-5-1} \\cr&= -5x^{-6}\\end{aligned}",
@@ -1013,7 +1013,7 @@ window.ALEVEL_QUESTIONS = [
                         "Power Rule"
                 ],
                 "img": false,
-                "question": "$$y = \\dfrac{2}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^2}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{6}{x^4}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{2}{x^4}\\\\\\ (d) \\dfrac{dy}{dx} = 2x^{-3}$$",
+                "question": "$$y = \\dfrac{2}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br><br>(a)$$ \\dfrac{dy}{dx} = -\\dfrac{6}{x^2}$$<br>(b)$$ \\dfrac{dy}{dx} = -\\dfrac{6}{x^4}$$<br> (c)$$ \\dfrac{dy}{dx} = -\\dfrac{2}{x^4}$$<br> (d) $$\\dfrac{dy}{dx} = 2x^{-3}$$",
                 "steps": [
                         "First, rewrite the expression in index form: $$y = 2x^{-3}$$",
                         "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$ where, $$a = 2$$ and $$n = -3$$ \\begin{aligned}\\dfrac{dy}{dx} &= 2 \\times \\left(-3\\right)x^{-3-1} \\cr&= -6x^{-4}\\end{aligned}",
@@ -1051,7 +1051,7 @@ window.ALEVEL_QUESTIONS = [
                         "Power Rule"
                 ],
                 "img": false,
-                "question": "$$y = \\dfrac{1}{2x^2}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{4x^3}\\\\\\ (b)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^2}\\\\\\ (c)\\\\\\ \\dfrac{dy}{dx} = -\\dfrac{1}{x^3}\\\\\\ (d) \\dfrac{dy}{dx} = \\dfrac{1}{2}x^{-2}$$",
+                "question": "$$y = \\dfrac{1}{2x^2}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br><br>(a)$$\\dfrac{dy}{dx} = -\\dfrac{1}{4x^3}$$<br> (b)$$\\dfrac{dy}{dx} = -\\dfrac{1}{x^2}$$<br>(c)$$ \\dfrac{dy}{dx} = -\\dfrac{1}{x^3}$$<br>(d)$$\\dfrac{dy}{dx} = \\dfrac{1}{2}x^{-2}$$",
                 "steps": [
                         "First, rewrite the expression in index form: $$y = \\dfrac{1}{2}x^{-2}$$",
                         "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$ where, $$a = \\dfrac{1}{2}$$ and $$n = -2$$ \\begin{aligned}\\dfrac{dy}{dx} &= \\dfrac{1}{2} \\times \\left(-2\\right)x^{-2-1} \\cr&= -1x^{-3}\\end{aligned}",
