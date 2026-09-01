@@ -975,7 +975,7 @@ window.ALEVEL_QUESTIONS = [
                         "Power Rule"
                 ],
                 "img": false,
-                "question": "$$y = \\dfrac{1}{x^5}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br><br>$$(a)$$ \\dfrac{dy}{dx} = x^{-5}$$<br> (b)$$ \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}$$<br> (c)$$ \\dfrac{dy}{dx} = -\\dfrac{5}{x^4}$$<br>(d)$$ \\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
+                "question": "$$y = \\dfrac{1}{x^5}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br><br>(a)$$ \\dfrac{dy}{dx} = x^{-5}$$<br> (b)$$ \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}$$<br> (c)$$ \\dfrac{dy}{dx} = -\\dfrac{5}{x^4}$$<br>(d)$$ \\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
                 "steps": [
                         "First, rewrite the expression in index form: $$y = x^{-5}$$",
                         "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -5$$ \\begin{aligned}\\dfrac{dy}{dx} &= -5x^{-5-1} \\cr&= -5x^{-6}\\end{aligned}",
