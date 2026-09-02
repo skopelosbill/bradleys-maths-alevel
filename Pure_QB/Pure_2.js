@@ -1475,19 +1475,19 @@ window.ALEVEL_QUESTIONS = [
                         "Take the natural logarithm of both sides to rearrange for $x$: \\begin{aligned}\\ln(y) &= x - 3 \\cr x &= \\ln(y) + 3\\end{aligned}",
                         "Swap $x$ and $y$ to write the inverse function: $$f^{-1}(x) = \\ln(x) + 3$$",
                         "Since the domain of the inverse function is equal to the range of the original function, and the range of $f(x) = e^{x-3}$ is $y > 0$, the domain of $f^{-1}(x)$ is $x > 0$.",
-                        "Final Answer: $$f^{-1}(x) = \\ln(x) + 3,\\quad \\text{domain: } x > 0$$"
+                        "Final Answer: $$f^{-1}(x) = \\ln(x) + 3,\\quad  x > 0$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$f^{-1}(x) = \\ln(x) - 3,\\quad \\text{domain: } x > 0$$",
+                                "ans": "$$f^{-1}(x) = \\ln(x) - 3,\\quad  x > 0$$",
                                 "feedback": "This incorrect answer results from a sign error when transposing the $-3$. When rearranging $\\ln(y) = x - 3$, adding $3$ to both sides gives $x = \\ln(y) + 3$."
                         },
-                        {
-                                "ans": "$$f^{-1}(x) = \\ln(x) + 3,\\quad \\text{domain: } x \\in \\mathbb{R}$$",
+                        { 
+                                "ans": "$$f^{-1}(x) = \\ln(x) + 3,\\quad x \\in \\mathbb{R}$$",
                                 "feedback": "This error is caused by copying the domain of the original function $f(x)$. The domain of the inverse function must be equal to the range of the original function. Since $e^{x-3} > 0$, the domain of $f^{-1}(x)$ is $x > 0$."
                         },
                         {
-                                "ans": "$$f^{-1}(x) = \\ln(x) + 3,\\quad \\text{domain: } x > 3$$",
+                                "ans": "$$f^{-1}(x) = \\ln(x) + 3,\\quad  x > 3$$",
                                 "feedback": "This error probably arises from confusing the boundary of the domain with the constant term $3$ inside the inverse function. The domain of the inverse is determined strictly by the range of the original exponential function, which is $y > 0$."
                         }
                 ],
@@ -1514,19 +1514,19 @@ window.ALEVEL_QUESTIONS = [
                         "Take the natural logarithm of both sides to rearrange for $x$: \\begin{aligned}\\ln(y) &= x + 5 \\cr x &= \\ln(y) - 5\\end{aligned}",
                         "Swap $x$ and $y$ to write the inverse function: $$f^{-1}(x) = \\ln(x) - 5$$",
                         "Since the domain of the inverse function is equal to the range of the original function, and the range of $f(x) = e^{x+5}$ is $y > 0$, the domain of $f^{-1}(x)$ is $x > 0$.",
-                        "Final Answer: $$f^{-1}(x) = \\ln(x) - 5,\\quad \\text{domain: } x > 0$$"
+                        "Final Answer: $$f^{-1}(x) = \\ln(x) - 5,\\quad x > 0$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$f^{-1}(x) = \\ln(x) + 5,\\quad \\text{domain: } x > 0$$",
+                                "ans": "$$f^{-1}(x) = \\ln(x) + 5,\\quad x > 0$$",
                                 "feedback": "This incorrect answer results from a sign error when transposing $+5$. When rearranging $\\ln(y) = x + 5$, subtracting $5$ from both sides gives $x = \\ln(y) - 5$."
                         },
                         {
-                                "ans": "$$f^{-1}(x) = \\ln(x) - 5,\\quad \\text{domain: } x \\in \\mathbb{R}$$",
+                                "ans": "$$f^{-1}(x) = \\ln(x) - 5,\\quad x \\in \\mathbb{R}$$",
                                 "feedback": "This error occurs by copying the domain of the original function. The domain of the inverse is equal to the range of the original function, which is $x > 0$."
                         },
                         {
-                                "ans": "$$f^{-1}(x) = \\ln(x) - 5,\\quad \\text{domain: } x > 5$$",
+                                "ans": "$$f^{-1}(x) = \\ln(x) - 5,\\quad x > 5$$",
                                 "feedback": "This error probably results from confusing the domain boundary with the constant term. The domain of the inverse function is strictly bounded by $x > 0$, representing the range of the original exponential function."
                         }
                 ],
@@ -1553,19 +1553,19 @@ window.ALEVEL_QUESTIONS = [
                         "Take the natural logarithm of both sides to rearrange for $x$: \\begin{aligned}\\ln(y) &= 2x - 4 \\cr2x &= \\ln(y) + 4\\end{aligned}",
                         "Divide by $2$ and swap $x$ and $y$ to write the inverse function: $$f^{-1}(x) = \\dfrac{\\ln(x) + 4}{2}$$",
                         "Since the domain of $f^{-1}(x)$ is equal to the range of the original function $f(x)$, and the range of $f(x) = e^{2x-4}$ is $y > 0$ for all real $x$, the domain of $f^{-1}(x)$ is $x > 0$.",
-                        "Final Answer: $$f^{-1}(x) = \\dfrac{\\ln(x) + 4}{2},\\quad \\text{domain: } x > 0$$"
+                        "Final Answer: $$f^{-1}(x) = \\dfrac{\\ln(x) + 4}{2},\\quad x > 0$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) - 4}{2},\\quad \\text{domain: } x > 0$$",
+                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) - 4}{2},\\quad x > 0$$",
                                 "feedback": "This error comes from a transposition sign error. Rearranging $\\ln(y) = 2x - 4$ requires adding $4$ to both sides to get $2x = \\ln(y) + 4$, before dividing by $2$."
                         },
                         {
-                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) + 4}{2},\\quad \\text{domain: } x \\in \\mathbb{R}$$",
+                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) + 4}{2},\\quad x \\in \\mathbb{R}$$",
                                 "feedback": "This error is caused by copying the domain of the original function $f(x)$. The domain of the inverse function is equal to the range of $f(x)$, which is $y > 0$."
                         },
                         {
-                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) + 4}{2},\\quad \\text{domain: } x > 2$$",
+                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) + 4}{2},\\quad x > 2$$",
                                 "feedback": "This error probably arises from confusing the domain boundary of the inverse function with the simplified constant term $2$ (from $4/2$). The domain of the inverse is strictly bounded by $x > 0$."
                         }
                 ],
@@ -1592,19 +1592,19 @@ window.ALEVEL_QUESTIONS = [
                         "Take the natural logarithm of both sides to rearrange for $x$: \\begin{aligned}\\ln(y) &= 2x + 6 \\cr2x &= \\ln(y) - 6\\end{aligned}",
                         "Divide by $2$ and swap $x$ and $y$ to write the inverse function: $$f^{-1}(x) = \\dfrac{\\ln(x) - 6}{2}$$",
                         "Since the domain of $f^{-1}(x)$ is equal to the range of the original function $f(x)$, and the range of $f(x) = e^{2x+6}$ is $y > 0$ for all real $x$, the domain of $f^{-1}(x)$ is $x > 0$.",
-                        "Final Answer: $$f^{-1}(x) = \\dfrac{\\ln(x) - 6}{2},\\quad \\text{domain: } x > 0$$"
+                        "Final Answer: $$f^{-1}(x) = \\dfrac{\\ln(x) - 6}{2},\\quad x > 0$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) + 6}{2},\\quad \\text{domain: } x > 0$$",
+                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) + 6}{2},\\quad x > 0$$",
                                 "feedback": "This error results from a sign error when rearranging. Moving $+6$ to the other side of the equation yields $\\ln(y) - 6 = 2x$."
                         },
                         {
-                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) - 6}{2},\\quad \\text{domain: } x \\in \\mathbb{R}$$",
+                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) - 6}{2},\\quad x \\in \\mathbb{R}$$",
                                 "feedback": "This error is caused by copying the domain of the original function. The domain of $f^{-1}(x)$ must equal the range of $f(x)$, which is $y > 0$."
                         },
                         {
-                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) - 6}{2},\\quad \\text{domain: } x > 3$$",
+                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) - 6}{2},\\quad x > 3$$",
                                 "feedback": "This error probably comes from confusing the domain boundary with the simplified constant term $-3$ (from $-6/2$). The domain of the inverse is strictly bounded by $x > 0$."
                         }
                 ],
@@ -1631,19 +1631,19 @@ window.ALEVEL_QUESTIONS = [
                         "Take the natural logarithm of both sides to rearrange for $x$: \\begin{aligned}\\ln(y) &= 2x - 1 \\cr2x &= \\ln(y) + 1\\end{aligned}",
                         "Divide by $2$ and swap $x$ and $y$ to write the inverse function: $$f^{-1}(x) = \\dfrac{\\ln(x) + 1}{2}$$",
                         "Since the domain of $f^{-1}(x)$ is equal to the range of the original function $f(x)$, and the range of $f(x) = e^{2x-1}$ is $y > 0$ for all real $x$, the domain of $f^{-1}(x)$ is $x > 0$.",
-                        "Final Answer: $$f^{-1}(x) = \\dfrac{\\ln(x) + 1}{2},\\quad \\text{domain: } x > 0$$"
+                        "Final Answer: $$f^{-1}(x) = \\dfrac{\\ln(x) + 1}{2},\\quad x > 0$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) - 1}{2},\\quad \\text{domain: } x > 0$$",
+                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) - 1}{2},\\quad x > 0$$",
                                 "feedback": "This error comes from a transposition sign error. Rearranging $\\ln(y) = 2x - 1$ requires adding $1$ to both sides to get $2x = \\ln(y) + 1$, before dividing by $2$."
                         },
                         {
-                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) + 1}{2},\\quad \\text{domain: } x \\in \\mathbb{R}$$",
+                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) + 1}{2},\\quad x \\in \\mathbb{R}$$",
                                 "feedback": "This error is caused by copying the domain of the original function $f(x)$. The domain of the inverse function is equal to the range of $f(x)$, which is $y > 0$."
                         },
                         {
-                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) + 1}{2},\\quad \\text{domain: } x > 0.5$$",
+                                "ans": "$$f^{-1}(x) = \\dfrac{\\ln(x) + 1}{2},\\quad x > 0.5$$",
                                 "feedback": "This error probably arises from confusing the domain boundary of the inverse function with the constant term $0.5$ (from $1/2$). The domain of the inverse is strictly bounded by $x > 0$."
                         }
                 ],
