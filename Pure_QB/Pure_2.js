@@ -1854,46 +1854,46 @@ window.ALEVEL_QUESTIONS = [
                 }
         },
         {
-                "id": "004096",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Sequences and series",
-                "topic": "Binomial expansion",
-                "subtopic": [
-                        "Binomial Expansion",
-                        "Numerical Integration"
-                ],
-                "img": false,
-                "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{9+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{9-x^3}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{1} \\dfrac{1}{\\sqrt{9-x^3}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Tom, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Tom's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Tom goes on to use the expansion from part (b) to find an approximation for $\\int_{-3}^{0} \\dfrac{1}{\\sqrt{9-x^3}} \\text{d}x$. Explain why Tom's approximation is invalid.",
-                "steps": [
-                        "For Part (a), rewrite the function in index form and factor out $9$: \\begin{aligned}(9+x)^{-\\frac{1}{2}} &= 9^{-\\frac{1}{2}}\\left(1+\\dfrac{x}{9}\\right)^{-\\frac{1}{2}} \\cr&= \\dfrac{1}{3}\\left(1 - \\dfrac{1}{2}\\left(\\dfrac{x}{9}\\right) + \\dfrac{3}{8}\\left(\\dfrac{x}{9}\\right)^2 + \\dots\\right) \\cr&= \\dfrac{1}{3} - \\dfrac{x}{54} + \\dfrac{x^2}{648}\\end{aligned}",
-                        "For Part (b), substitute $x \\implies -x^3$ into your Part (a) expansion: \\begin{aligned}\\dfrac{1}{\\sqrt{9-x^3}} &= \\dfrac{1}{3} - \\dfrac{-x^3}{54} + \\dfrac{(-x^3)^2}{648} \\cr&= \\dfrac{1}{3} + \\dfrac{x^3}{54} + \\dfrac{x^6}{648}\\end{aligned}",
-                        "For Part (c), integrate this polynomial approximation from $0$ to $1$: \\begin{aligned}\\int_{0}^{1} \\left(\\dfrac{1}{3} + \\dfrac{x^3}{54} + \\dfrac{x^6}{648}\\right) \\text{d}x &= \\left[\\dfrac{x}{3} + \\dfrac{x^4}{216} + \\dfrac{x^7}{4536}\\right]_{0}^{1} \\cr&= \\dfrac{1}{3} + \\dfrac{1}{216} + \\dfrac{1}{4536} \\approx 0.3381834\\end{aligned}",
-                        "For Part (d)(i), notice that since $u = \\dfrac{x^3}{9} \\ge 0$ on the interval $[0,1]$, every term in the binomial series for $(1-u)^{-\\frac{1}{2}}$ is positive. Truncating the series removes positive terms, so Tom's approximation is an underestimate.",
-                        "For Part (d)(ii), the expansion converges only for $|u| < 1 \\implies \\left|\\dfrac{x^3}{9}\\right| < 1 \\implies |x| < 9^{\\frac{1}{3}} \\approx 2.08$. Since the lower limit is $x = -3$ and $|-3| = 3 \\ge 2.08$, the series does not converge on this interval.",
-                        "Final Answer: $$\\text{Part (b): } \\dfrac{1}{3} + \\dfrac{x^3}{54} + \\dfrac{x^6}{648},\\quad \\text{Part (c): } 0.3381834,\\quad \\text{Part (d)(i): Underestimate}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\text{Part (b): } \\dfrac{1}{3} - \\dfrac{x^3}{54} + \\dfrac{x^6}{648},\\quad \\text{Part (c): } 0.3289243,\\quad \\text{Part (d)(i): Underestimate}$$",
-                                "feedback": "In Part (b), you probably made a sign error when substituting $-x^3$ into the expansion. Since we are substituting into $-\\frac{x}{54}$, we get $-\\frac{-x^3}{54} = +\\frac{x^3}{54}$. This also affects the integral in Part (c)."
-                        },
-                        {
-                                "ans": "$$\\text{Part (b): } \\dfrac{1}{3} + \\dfrac{x^3}{54} + \\dfrac{x^6}{648},\\quad \\text{Part (c): } 0.3381834,\\quad \\text{Part (d)(i): Overestimate}$$",
-                                "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
-                        },
-                        {
-                                "ans": "$$\\text{Part (b): } \\dfrac{1}{3} + \\dfrac{x^3}{54} - \\dfrac{x^6}{648},\\quad \\text{Part (c): } 0.3377425,\\quad \\text{Part (d)(i): Underestimate}$$",
-                                "feedback": "Check your signs in Part (b). Substituting $-x^3$ into the third term $+x^2/648$ gives $+(-x^3)^2/648 = +x^6/648$. Both terms must be positive, which also affects your integration in Part (c)."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Substituting Negative Powers",
-                        "content": "When substituting $-x^3$ into the expansion of $(9+x)^{-1/2}$, pay close attention to the sign changes. For the $x$ term, we get $-\\frac{-x^3}{54} = +\\frac{x^3}{54}$, but for the $x^2$ term, the square removes the negative sign: $+(-x^3)^2/648 = +\\frac{x^6}{648}$. Missing these sign reversals is a very common way to lose easy marks on this question."
+        "id": "004096",
+        "board": "AQA",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Sequences and series",
+        "topic": "Binomial expansion",
+        "subtopic": [
+                "Binomial Expansion",
+                "Numerical Integration"
+        ],
+        "img": false,
+        "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{9+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{9-x^3}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{1} \\dfrac{1}{\\sqrt{9-x^3}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Tom, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Tom's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Tom goes on to use the expansion from part (b) to find an approximation for $\\int_{-3}^{0} \\dfrac{1}{\\sqrt{9-x^3}} \\text{d}x$. Explain why Tom's approximation is invalid.",
+        "steps": [
+                "For Part (a), rewrite the function in index form, factor out $9$, and let the expansion be $E$:<br><br>\\begin{aligned} E &= ( 9 + x )^{-\\frac{ 1 }{ 2 }} \\\\\\cr &= 9^{-\\frac{ 1 }{ 2 }}\\left(1 + \\dfrac{ x }{ 9 }\\right)^{-\\frac{ 1 }{ 2 }} \\\\\\cr &= \\dfrac{ 1 }{ 3 }\\left(1 - \\dfrac{ 1 }{ 2 }\\left(\\dfrac{ x }{ 9 }\\right) + \\dfrac{ 3 }{ 8 }\\left(\\dfrac{ x }{ 9 }\\right)^2 + \\dots\\right) \\\\\\cr &= \\dfrac{ 1 }{ 3 } - \\dfrac{ x }{ 54 } + \\dfrac{ x^2 }{ 648 } \\end{aligned}",
+                "For Part (b), substitute $x \\implies -x^3$ into your Part (a) expansion, and let the new expansion be $F$:<br><br>\\begin{aligned} F &= \\dfrac{ 1 }{ \\sqrt{ 9 - x^3 }} \\\\\\cr &= \\dfrac{ 1 }{ 3 } - \\dfrac{ -x^3 }{ 54 } + \\dfrac{ (-x^3)^2 }{ 648 } \\\\\\cr &= \\dfrac{ 1 }{ 3 } + \\dfrac{ x^3 }{ 54 } + \\dfrac{ x^6 }{ 648 } \\end{aligned}",
+                "For Part (c), let the integral be $I$. We integrate the polynomial approximation from $0$ to $1$:<br><br>\\begin{aligned} I &= \\int_{ 0 }^{ 1 } \\left(\\dfrac{ 1 }{ 3 } + \\dfrac{ x^3 }{ 54 } + \\dfrac{ x^6 }{ 648 }\\right) \\mathrm{d}x \\\\\\cr &= \\left[\\dfrac{ x }{ 3 } + \\dfrac{ x^4 }{ 216 } + \\dfrac{ x^7 }{ 4536 }\\right]_{ 0 }^{ 1 } \\\\\\cr &= \\dfrac{ 1 }{ 3 } + \\dfrac{ 1 }{ 216 } + \\dfrac{ 1 }{ 4536 } \\\\\\cr &\\approx 0.3381834 \\end{aligned}",
+                "For Part (d)(i), notice that since $u = \\dfrac{ x^3 }{ 9 } \\ge 0$ on the interval $[0, 1]$, every term in the binomial series for $( 1 - u )^{-\\frac{ 1 }{ 2 }}$ is positive. Truncating the series removes positive terms, so Tom's approximation is an underestimate.",
+                "For Part (d)(ii), the expansion converges only for $|u| < 1 \\implies \\left|\\dfrac{ x^3 }{ 9 }\\right| < 1 \\implies |x| < 9^{\\frac{ 1 }{ 3 }} \\approx 2.08$. Since the lower limit is $x = -3$ and $| -3 | = 3 \\ge 2.08$, the series does not converge on this interval.",
+                "<strong>Final Answer:</strong><br><br>\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 3 } + \\dfrac{ x^3 }{ 54 } + \\dfrac{ x^6 }{ 648 } \\\\\\cr \\text{Part (c):} & \\quad 0.3381834 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 3 } - \\dfrac{ x^3 }{ 54 } + \\dfrac{ x^6 }{ 648 } \\\\\\cr \\text{Part (c):} & \\quad 0.3289243 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
+                        "feedback": "In Part (b), you probably made a sign error when substituting $-x^3$ into the expansion. Since we are substituting into $-\\dfrac{ x }{ 54 }$, we get $-\\dfrac{ -x^3 }{ 54 } = +\\dfrac{ x^3 }{ 54 }$. This also affects the integral in Part (c)."
+                },
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 3 } + \\dfrac{ x^3 }{ 54 } + \\dfrac{ x^6 }{ 648 } \\\\\\cr \\text{Part (c):} & \\quad 0.3381834 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Overestimate} \\end{aligned}$",
+                        "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
+                },
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 3 } + \\dfrac{ x^3 }{ 54 } - \\dfrac{ x^6 }{ 648 } \\\\\\cr \\text{Part (c):} & \\quad 0.3377425 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
+                        "feedback": "Check your signs in Part (b). Substituting $-x^3$ into the third term $+\\dfrac{ x^2 }{ 648 }$ gives $+\\dfrac{ (-x^3)^2 }{ 648 } = +\\dfrac{ x^6 }{ 648 }$. Both terms must be positive, which also affects your integration in Part (c)."
                 }
-        },
+        ],
+        "bradley_insight": {
+                "type": "caution",
+                "title": "The Head Teacher's Eye: Substituting Negative Powers",
+                "content": "When substituting $-x^3$ into the expansion of $( 9 + x )^{-\\frac{ 1 }{ 2 }}$, pay close attention to the sign changes. For the $x$ term, we get $-\\dfrac{ -x^3 }{ 54 } = +\\dfrac{ x^3 }{ 54 }$, but for the $x^2$ term, the square removes the negative sign: $+(-x^3)^2/648 = +\\dfrac{ x^6 }{ 648 }$. Missing these sign reversals is a very common way to lose easy marks on this question."
+        }
+},
         {
                 "id": "004097",
                 "board": "AQA",
