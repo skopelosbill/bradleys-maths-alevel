@@ -1894,168 +1894,168 @@ window.ALEVEL_QUESTIONS = [
                 "content": "When substituting $-x^3$ into the expansion of $( 9 + x )^{-\\frac{ 1 }{ 2 }}$, pay close attention to the sign changes. For the $x$ term, we get $-\\dfrac{ -x^3 }{ 54 } = +\\dfrac{ x^3 }{ 54 }$, but for the $x^2$ term, the square removes the negative sign: $+(-x^3)^2/648 = +\\dfrac{ x^6 }{ 648 }$. Missing these sign reversals is a very common way to lose easy marks on this question."
         }
 },
-        {
-                "id": "004097",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Sequences and series",
-                "topic": "Binomial expansion",
-                "subtopic": [
-                        "Binomial Expansion",
-                        "Numerical Integration"
-                ],
-                "img": false,
-                "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{1+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{1-x^2}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{0.5} \\dfrac{1}{\\sqrt{1-x^2}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Sarah, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Sarah's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Sarah goes on to use the expansion from part (b) to find an approximation for $\\int_{-2}^{0} \\dfrac{1}{\\sqrt{1-x^2}} \\text{d}x$. Explain why Sarah's approximation is invalid.",
-                "steps": [
-                        "For Part (a), rewrite the function in index form and expand using $(1+x)^{-\\frac{1}{2}}$: $$(1+x)^{-\\frac{1}{2}} = 1 - \\dfrac{1}{2}x + \\dfrac{3}{8}x^2$$",
-                        "For Part (b), substitute $x \\implies -x^2$ into your Part (a) expansion: \\begin{aligned}\\dfrac{1}{\\sqrt{1-x^2}} &= 1 - \\dfrac{1}{2}(-x^2) + \\dfrac{3}{8}(-x^2)^2 \\cr&= 1 + \\dfrac{1}{2}x^2 + \\dfrac{3}{8}x^4\\end{aligned}",
-                        "For Part (c), integrate this polynomial approximation from $0$ to $0.5$: \\begin{aligned}\\int_{0}^{0.5} \\left(1 + \\dfrac{1}{2}x^2 + \\dfrac{3}{8}x^4\\right) \\text{d}x &= \\left[x + \\dfrac{x^3}{6} + \\dfrac{3x^5}{40}\\right]_{0}^{0.5} \\cr&= 0.5 + \\dfrac{0.125}{6} + \\dfrac{0.09375}{40} \\approx 0.5231771\\end{aligned}",
-                        "For Part (d)(i), notice that since $u = x^2 \\ge 0$ on the interval $[0,0.5]$, every term in the binomial series for $(1-u)^{-\\frac{1}{2}}$ is positive. Truncating the series removes positive terms, so Sarah's approximation is an underestimate.",
-                        "For Part (d)(ii), the expansion converges only for $|u| < 1 \\implies |x^2| < 1 \\implies |x| < 1$. Since the lower limit is $x = -2$ and $|-2| = 2 \\ge 1$, the series does not converge on this interval.",
-                        "Final Answer: $$\\text{Part (b): } 1 + \\dfrac{1}{2}x^2 + \\dfrac{3}{8}x^4,\\quad \\text{Part (c): } 0.5231771,\\quad \\text{Part (d)(i): Underestimate}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\text{Part (b): } 1 - \\dfrac{1}{2}x^2 + \\dfrac{3}{8}x^4,\\quad \\text{Part (c): } 0.4815104,\\quad \\text{Part (d)(i): Underestimate}$$",
-                                "feedback": "In Part (b), you probably made a sign error when substituting $-x^2$ into the expansion. Substituting into $-\\frac{x}{2}$ yields $-\\frac{-x^2}{2} = +\\frac{x^2}{2}$. This also affects the integral calculation in Part (c)."
-                        },
-                        {
-                                "ans": "$$\\text{Part (b): } 1 + \\dfrac{1}{2}x^2 + \\dfrac{3}{8}x^4,\\quad \\text{Part (c): } 0.5231771,\\quad \\text{Part (d)(i): Overestimate}$$",
-                                "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
-                        },
-                        {
-                                "ans": "$$\\text{Part (b): } 1 + \\dfrac{1}{2}x^2 - \\dfrac{3}{8}x^4,\\quad \\text{Part (c): } 0.5184896,\\quad \\text{Part (d)(i): Underestimate}$$",
-                                "feedback": "Check your signs in Part (b). Substituting $-x^2$ into $+3x^2/8$ yields $+3(-x^2)^2/8 = +3x^4/8$. Both terms must be positive, which also affects your integration in Part (c)."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Quick Integration Checks",
-                        "content": "When integrating your binomial expansion, remember to increase the power of each term and divide by the new power. For example, integrating $x^4$ gives $\\frac{x^5}{5}$. It is probably easiest to write down each coefficient product clearly on your page before simplifying, as this prevents simple mental multiplication slips."
+       {
+        "id": "004097",
+        "board": "AQA",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Sequences and series",
+        "topic": "Binomial expansion",
+        "subtopic": [
+                "Binomial Expansion",
+                "Numerical Integration"
+        ],
+        "img": false,
+        "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{1+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{1-x^2}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{0.5} \\dfrac{1}{\\sqrt{1-x^2}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Sarah, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Sarah's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Sarah goes on to use the expansion from part (b) to find an approximation for $\\int_{-2}^{0} \\dfrac{1}{\\sqrt{1-x^2}} \\text{d}x$. Explain why Sarah's approximation is invalid.<br><br><strong>Note:</strong> Select the option that matches your calculated results for <strong>Part (b)</strong>, <strong>Part (c)</strong>, and <strong>Part (d)(i)</strong>.",
+        "steps": [
+                "For Part (a), rewrite the function in index form and expand using $( 1 + x )^{-\\frac{ 1 }{ 2 }}$:<br><br>\\begin{aligned} &( 1 + x )^{-\\frac{ 1 }{ 2 }} \\\\\\cr &\\quad = 1 + \\left(-\\dfrac{ 1 }{ 2 }\\right)x + \\dfrac{ \\left(-\\dfrac{ 1 }{ 2 }\\right)\\left(-\\dfrac{ 3 }{ 2 }\\right) }{ 2 }x^2 + \\dots \\\\\\cr &\\quad = 1 - \\dfrac{ 1 }{ 2 }x + \\dfrac{ 3 }{ 8 }x^2 \\end{aligned}",
+                "For Part (b), substitute $x \\implies -x^2$ into your Part (a) expansion:<br><br>\\begin{aligned} &\\dfrac{ 1 }{ \\sqrt{ 1 - x^2 }} \\\\\\cr &\\quad = 1 - \\dfrac{ 1 }{ 2 }(-x^2) + \\dfrac{ 3 }{ 8 }(-x^2)^2 \\\\\\cr &\\quad = 1 + \\dfrac{ 1 }{ 2 }x^2 + \\dfrac{ 3 }{ 8 }x^4 \\end{aligned}",
+                "For Part (c), integrate this polynomial approximation from $0$ to $0.5$:<br><br>\\begin{aligned} &\\int_{ 0 }^{ 0.5 } \\left(1 + \\dfrac{ 1 }{ 2 }x^2 + \\dfrac{ 3 }{ 8 }x^4\\right) \\mathrm{d}x \\\\\\cr &\\quad = \\left[x + \\dfrac{ x^3 }{ 6 } + \\dfrac{ 3x^5 }{ 40 }\\right]_{ 0 }^{ 0.5 } \\\\\\cr &\\quad = 0.5 + \\dfrac{ 0.125 }{ 6 } + \\dfrac{ 0.09375 }{ 40 } \\\\\\cr &\\quad \\approx 0.5231771 \\end{aligned}",
+                "For Part (d)(i), notice that since $u = x^2 \\ge 0$ on the interval $[0, 0.5]$, every term in the binomial series for $( 1 - u )^{-\\frac{ 1 }{ 2 }}$ is positive. Truncating the series removes positive terms, so Sarah's approximation is an underestimate.",
+                "For Part (d)(ii), the expansion converges only for $|u| < 1 \\implies |x^2| < 1 \\implies |x| < 1$. Since the lower limit is $x = -2$ and $| -2 | = 2 \\ge 1$, the series does not converge on this interval.",
+                "<strong>Final Answer:</strong><br><br>\\begin{aligned} \\text{Part (b):} & \\quad 1 + \\dfrac{ 1 }{ 2 }x^2 + \\dfrac{ 3 }{ 8 }x^4 \\\\\\cr \\text{Part (c):} & \\quad 0.5231771 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad 1 - \\dfrac{ 1 }{ 2 }x^2 + \\dfrac{ 3 }{ 8 }x^4 \\\\\\cr \\text{Part (c):} & \\quad 0.4815104 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
+                        "feedback": "In Part (b), you probably made a sign error when substituting $-x^2$ into the expansion. Substituting into $-\\dfrac{ x }{ 2 }$ yields $-\\dfrac{ -x^2 }{ 2 } = +\\dfrac{ x^2 }{ 2 }$. This also affects the integral calculation in Part (c)."
+                },
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad 1 + \\dfrac{ 1 }{ 2 }x^2 + \\dfrac{ 3 }{ 8 }x^4 \\\\\\cr \\text{Part (c):} & \\quad 0.5231771 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Overestimate} \\end{aligned}$",
+                        "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
+                },
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad 1 + \\dfrac{ 1 }{ 2 }x^2 - \\dfrac{ 3 }{ 8 }x^4 \\\\\\cr \\text{Part (c):} & \\quad 0.5184896 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
+                        "feedback": "Check your signs in Part (b). Substituting $-x^2$ into $+\\dfrac{ 3x^2 }{ 8 }$ yields $+\\dfrac{ 3(-x^2)^2 }{ 8 } = +\\dfrac{ 3x^4 }{ 8 }$. Both terms must be positive, which also affects your integration in Part (c)."
                 }
-        },
-        {
-                "id": "004098",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Sequences and series",
-                "topic": "Binomial expansion",
-                "subtopic": [
-                        "Binomial Expansion",
-                        "Numerical Integration"
-                ],
-                "img": false,
-                "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{16+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{16-x^3}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{1} \\dfrac{1}{\\sqrt{16-x^3}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Ranjit, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Ranjit's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Ranjit goes on to use the expansion from part (b) to find an approximation for $\\int_{-3}^{0} \\dfrac{1}{\\sqrt{16-x^3}} \\text{d}x$. Explain why Ranjit's approximation is invalid.",
-                "steps": [
-                        "For Part (a), rewrite the function in index form and factor out $16$: \\begin{aligned}(16+x)^{-\\frac{1}{2}} &= 16^{-\\frac{1}{2}}\\left(1+\\dfrac{x}{16}\\right)^{-\\frac{1}{2}} \\cr&= \\dfrac{1}{4}\\left(1 - \\dfrac{1}{2}\\left(\\dfrac{x}{16}\\right) + \\dfrac{3}{8}\\left(\\dfrac{x}{16}\\right)^2 + \\dots\\right) \\cr&= \\dfrac{1}{4} - \\dfrac{x}{128} + \\dfrac{3x^2}{8192}\\end{aligned}",
-                        "For Part (b), substitute $x \\implies -x^3$ into your Part (a) expansion: \\begin{aligned}\\dfrac{1}{\\sqrt{16-x^3}} &= \\dfrac{1}{4} - \\dfrac{-x^3}{128} + \\dfrac{3(-x^3)^2}{8192} \\cr&= \\dfrac{1}{4} + \\dfrac{x^3}{128} + \\dfrac{3x^6}{8192}\\end{aligned}",
-                        "For Part (c), integrate this polynomial approximation from $0$ to $1$: \\begin{aligned}\\int_{0}^{1} \\left(\\dfrac{1}{4} + \\dfrac{x^3}{128} + \\dfrac{3x^6}{8192}\\right) \\text{d}x &= \\left[\\dfrac{x}{4} + \\dfrac{x^4}{512} + \\dfrac{3x^7}{57344}\\right]_{0}^{1} \\cr&= \\dfrac{1}{4} + \\dfrac{1}{512} + \\dfrac{3}{57344} \\approx 0.2520054\\end{aligned}",
-                        "For Part (d)(i), notice that since $u = \\dfrac{x^3}{16} \\ge 0$ on the interval $[0,1]$, every term in the binomial series for $(1-u)^{-\\frac{1}{2}}$ is positive. Truncating the series removes positive terms, so Ranjit's approximation is an underestimate.",
-                        "For Part (d)(ii), the expansion converges only for $|u| < 1 \\implies \\left|\\dfrac{x^3}{16}\\right| < 1 \\implies |x| < 16^{\\frac{1}{3}} \\approx 2.52$. Since the lower limit is $x = -3$ and $|-3| = 3 \\ge 2.52$, the series does not converge on this interval.",
-                        "Final Answer: $$\\text{Part (b): } \\dfrac{1}{4} + \\dfrac{x^3}{128} + \\dfrac{3x^6}{8192},\\quad \\text{Part (c): } 0.2520054,\\quad \\text{Part (d)(i): Underestimate}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\text{Part (b): } \\dfrac{1}{4} - \\dfrac{x^3}{128} + \\dfrac{3x^6}{8192},\\quad \\text{Part (c): } 0.2481023,\\quad \\text{Part (d)(i): Underestimate}$$",
-                                "feedback": "In Part (b), you probably made a sign error when substituting $-x^3$ into the expansion. Substituting into $-\\frac{x}{128}$ yields $-\\frac{-x^3}{128} = +\\frac{x^3}{128}$. This also affects the integral calculation in Part (c)."
-                        },
-                        {
-                                "ans": "$$\\text{Part (b): } \\dfrac{1}{4} + \\dfrac{x^3}{128} + \\dfrac{3x^6}{8192},\\quad \\text{Part (c): } 0.2520054,\\quad \\text{Part (d)(i): Overestimate}$$",
-                                "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
-                        },
-                        {
-                                "ans": "$$\\text{Part (b): } \\dfrac{1}{4} + \\dfrac{x^3}{128} - \\dfrac{3x^6}{8192},\\quad \\text{Part (c): } 0.2519008,\\quad \\text{Part (d)(i): Underestimate}$$",
-                                "feedback": "Check your signs in Part (b). Substituting $-x^3$ into the third term yields $+3(-x^3)^2/8192 = +3x^6/8192$. Both terms must be positive, which also affects your integration in Part (c)."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Head Teacher's Eye: Understanding Convergence Boundaries",
-                        "content": "The validity range of a binomial expansion is defined by $|u| < 1$, where $u$ is the variable component. For the term $\\frac{x^3}{16}$, this gives $|x^3/16| < 1 \\implies |x| < 16^{1/3} \\approx 2.52$. When the lower limit of our integral lies outside this boundary (such as $x = -3$), the series fails to converge and is completely invalid, even if the original algebraic expression is defined there."
-                }
-        },
-        {
-                "id": "004099",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Sequences and series",
-                "topic": "Binomial expansion",
-                "subtopic": [
-                        "Binomial Expansion",
-                        "Numerical Integration"
-                ],
-                "img": false,
-                "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{25+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{25-x^3}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{1} \\dfrac{1}{\\sqrt{25-x^3}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Jeevesh, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Jeevesh's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Jeevesh goes on to use the expansion from part (b) to find an approximation for $\\int_{-4}^{0} \\dfrac{1}{\\sqrt{25-x^3}} \\text{d}x$. Explain why Jeevesh's approximation is invalid.",
-                "steps": [
-                        "For Part (a), rewrite the function in index form and factor out $25$: \\begin{aligned}(25+x)^{-\\frac{1}{2}} &= 25^{-\\frac{1}{2}}\\left(1+\\dfrac{x}{25}\\right)^{-\\frac{1}{2}} \\cr&= \\dfrac{1}{5}\\left(1 - \\dfrac{1}{2}\\left(\\dfrac{x}{25}\\right) + \\dfrac{3}{8}\\left(\\dfrac{x}{25}\\right)^2 + \\dots\\right) \\cr&= \\dfrac{1}{5} - \\dfrac{x}{250} + \\dfrac{3x^2}{25000}\\end{aligned}",
-                        "For Part (b), substitute $x \\implies -x^3$ into your Part (a) expansion: \\begin{aligned}\\dfrac{1}{\\sqrt{25-x^3}} &= \\dfrac{1}{5} - \\dfrac{-x^3}{250} + \\dfrac{3(-x^3)^2}{25000} \\cr&= \\dfrac{1}{5} + \\dfrac{x^3}{250} + \\dfrac{3x^6}{25000}\\end{aligned}",
-                        "For Part (c), integrate this polynomial approximation from $0$ to $1$: \\begin{aligned}\\int_{0}^{1} \\left(\\dfrac{1}{5} + \\dfrac{x^3}{250} + \\dfrac{3x^6}{25000}\\right) \\text{d}x &= \\left[\\dfrac{x}{5} + \\dfrac{x^4}{1000} + \\dfrac{3x^7}{175000}\\right]_{0}^{1} \\cr&= 0.2 + 0.001 + 0.0000171 \\approx 0.2010171\\end{aligned}",
-                        "For Part (d)(i), notice that since $u = \\dfrac{x^3}{25} \\ge 0$ on the interval $[0,1]$, every term in the binomial series for $(1-u)^{-\\frac{1}{2}}$ is positive. Truncating the series removes positive terms, so Jeevesh's approximation is an underestimate.",
-                        "For Part (d)(ii), the expansion converges only for $|u| < 1 \\implies \\left|\\dfrac{x^3}{25}\\right| < 1 \\implies |x| < 25^{\\frac{1}{3}} \\approx 2.92$. Since the lower limit is $x = -4$ and $|-4| = 4 \\ge 2.92$, the series does not converge on this interval.",
-                        "Final Answer: $$\\text{Part (b): } \\dfrac{1}{5} + \\dfrac{x^3}{250} + \\dfrac{3x^6}{25000},\\quad \\text{Part (c): } 0.2010171,\\quad \\text{Part (d)(i): Underestimate}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\text{Part (b): } \\dfrac{1}{5} - \\dfrac{x^3}{250} + \\dfrac{3x^6}{25000},\\quad \\text{Part (c): } 0.1990171,\\quad \\text{Part (d)(i): Underestimate}$$",
-                                "feedback": "In Part (b), you probably made a sign error when substituting $-x^3$ into the expansion. Substituting into $-\\frac{x}{250}$ yields $-\\frac{-x^3}{250} = +\\frac{x^3}{250}$. This also affects the integral calculation in Part (c)."
-                        },
-                        {
-                                "ans": "$$\\text{Part (b): } \\dfrac{1}{5} + \\dfrac{x^3}{250} + \\dfrac{3x^6}{25000},\\quad \\text{Part (c): } 0.2010171,\\quad \\text{Part (d)(i): Overestimate}$$",
-                                "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
-                        },
-                        {
-                                "ans": "$$\\text{Part (b): } \\dfrac{1}{5} + \\dfrac{x^3}{250} - \\dfrac{3x^6}{25000},\\quad \\text{Part (c): } 0.2009829,\\quad \\text{Part (d)(i): Underestimate}$$",
-                                "feedback": "Check your signs in Part (b). Substituting $-x^3$ into $+3x^2/25000$ yields $+3(-x^3)^2/25000 = +3x^6/25000$. Both terms must be positive, which also affects your integration in Part (c)."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Constant Factor Pitfalls",
-                        "content": "When expanding expressions like $(25+x)^{-1/2}$, never forget to factor out the constant term first as $25^{-1/2} = \\frac{1}{5}$. Many students write this factor as $5$ or completely forget to multiply it through the rest of the terms. Always write out the factorization step explicitly to prevent this classic slip."
-                }
-        },
-        {
-                "id": "004100",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Sequences and series",
-                "topic": "Binomial expansion",
-                "subtopic": [
-                        "Binomial Expansion",
-                        "Numerical Integration"
-                ],
-                "img": false,
-                "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{4+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{4-x^4}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{1} \\dfrac{1}{\\sqrt{4-x^4}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Emma, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Emma's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Emma goes on to use the expansion from part (b) to find an approximation for $\\int_{-2}^{0} \\dfrac{1}{\\sqrt{4-x^4}} \\text{d}x$. Explain why Emma's approximation is invalid.",
-                "steps": [
-                        "For Part (a), rewrite the function in index form and factor out $4$: \\begin{aligned}(4+x)^{-\\frac{1}{2}} &= 4^{-\\frac{1}{2}}\\left(1+\\dfrac{x}{4}\\right)^{-\\frac{1}{2}} \\cr&= \\dfrac{1}{2}\\left(1 - \\dfrac{1}{2}\\left(\\dfrac{x}{4}\\right) + \\dfrac{3}{8}\\left(\\dfrac{x}{4}\\right)^2 + \\dots\\right) \\cr&= \\dfrac{1}{2} - \\dfrac{x}{16} + \\dfrac{3x^2}{256}\\end{aligned}",
-                        "For Part (b), substitute $x \\implies -x^4$ into your Part (a) expansion: \\begin{aligned}\\dfrac{1}{\\sqrt{4-x^4}} &= \\dfrac{1}{2} - \\dfrac{-x^4}{16} + \\dfrac{3(-x^4)^2}{256} \\cr&= \\dfrac{1}{2} + \\dfrac{x^4}{16} + \\dfrac{3x^8}{256}\\end{aligned}",
-                        "For Part (c), integrate this polynomial approximation from $0$ to $1$: \\begin{aligned}\\int_{0}^{1} \\left(\\dfrac{1}{2} + \\dfrac{x^4}{16} + \\dfrac{3x^8}{256}\\right) \\text{d}x &= \\left[\\dfrac{x}{2} + \\dfrac{x^5}{80} + \\dfrac{x^9}{768}\\right]_{0}^{1} \\cr&= \\dfrac{1}{2} + \\dfrac{1}{80} + \\dfrac{1}{768} \\approx 0.5138021\\end{aligned}",
-                        "For Part (d)(i), notice that since $u = \\dfrac{x^4}{4} \\ge 0$ on the interval $[0,1]$, every term in the binomial series for $(1-u)^{-\\frac{1}{2}}$ is positive. Truncating the series removes positive terms, so Emma's approximation is an underestimate.",
-                        "For Part (d)(ii), the expansion converges only for $|u| < 1 \\implies \\left|\\dfrac{x^4}{4}\\right| < 1 \\implies |x| < 4^{\\frac{1}{4}} \\approx 1.414$. Since the lower limit is $x = -2$ and $|-2| = 2 \\ge 1.414$, the series does not converge on this interval.",
-                        "Final Answer: $$\\text{Part (b): } \\dfrac{1}{2} + \\dfrac{x^4}{16} + \\dfrac{3x^8}{256},\\quad \\text{Part (c): } 0.5138021,\\quad \\text{Part (d)(i): Underestimate}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\text{Part (b): } \\dfrac{1}{2} - \\dfrac{x^4}{16} + \\dfrac{3x^8}{256},\\quad \\text{Part (c): } 0.4888021,\\quad \\text{Part (d)(i): Underestimate}$$",
-                                "feedback": "In Part (b), you probably made a sign error when substituting $-x^4$ into the expansion. Substituting into $-\\frac{x}{16}$ yields $-\\frac{-x^4}{16} = +\\frac{x^4}{16}$. This also affects the integral calculation in Part (c)."
-                        },
-                        {
-                                "ans": "$$\\text{Part (b): } \\dfrac{1}{2} + \\dfrac{x^4}{16} + \\dfrac{3x^8}{256},\\quad \\text{Part (c): } 0.5138021,\\quad \\text{Part (d)(i): Overestimate}$$",
-                                "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
-                        },
-                        {
-                                "ans": "$$\\text{Part (b): } \\dfrac{1}{2} + \\dfrac{x^4}{16} - \\dfrac{3x^8}{256},\\quad \\text{Part (c): } 0.5111979,\\quad \\text{Part (d)(i): Underestimate}$$",
-                                "feedback": "Check your signs in Part (b). Substituting $-x^4$ into $+3x^2/256$ yields $+3(-x^4)^2/256 = +3x^8/256$. Both terms must be positive, which also affects your integration in Part (c)."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Analyzing Truncation Errors",
-                        "content": "To determine whether your approximation is an overestimate or an underestimate, look at the signs of the terms you truncated. Since $u = \\frac{x^4}{4}$ is strictly positive on the interval of integration, every term in our series is positive. Removing positive terms means your finite sum is always smaller than the true infinite sum, which makes it an underestimate."
-                }
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: Quick Integration Checks",
+                "content": "When integrating your binomial expansion, remember to increase the power of each term and divide by the new power. For example, integrating $x^4$ gives $\\dfrac{ x^5 }{ 5 }$. It is probably easiest to write down each coefficient product clearly on your page before simplifying, as this prevents simple mental multiplication slips."
         }
+},
+        {
+        "id": "004098",
+        "board": "AQA",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Sequences and series",
+        "topic": "Binomial expansion",
+        "subtopic": [
+                "Binomial Expansion",
+                "Numerical Integration"
+        ],
+        "img": false,
+        "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{16+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{16-x^3}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{1} \\dfrac{1}{\\sqrt{16-x^3}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Ranjit, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Ranjit's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Ranjit goes on to use the expansion from part (b) to find an approximation for $\\int_{-3}^{0} \\dfrac{1}{\\sqrt{16-x^3}} \\text{d}x$. Explain why Ranjit's approximation is invalid.<br><br><strong>Note:</strong> Select the option that matches your calculated results for <strong>Part (b)</strong>, <strong>Part (c)</strong>, and <strong>Part (d)(i)</strong>.",
+        "steps": [
+                "For Part (a), rewrite the function in index form and expand using $( 16 + x )^{-\\frac{ 1 }{ 2 }}$:<br><br>\\begin{aligned} &( 16 + x )^{-\\frac{ 1 }{ 2 }} \\\\\\cr &\\quad = 16^{-\\frac{ 1 }{ 2 }}\\left(1 + \\dfrac{ x }{ 16 }\\right)^{-\\frac{ 1 }{ 2 }} \\\\\\cr &\\quad = \\dfrac{ 1 }{ 4 }\\left[1 - \\dfrac{ 1 }{ 2 }\\left(\\dfrac{ x }{ 16 }\\right) + \\dfrac{ 3 }{ 8 }\\left(\\dfrac{ x }{ 16 }\\right)^2 + \\dots\\right] \\\\\\cr &\\quad = \\dfrac{ 1 }{ 4 } - \\dfrac{ x }{ 128 } + \\dfrac{ 3x^2 }{ 8192 } \\end{aligned}",
+                "For Part (b), substitute $x \\implies -x^3$ into your Part (a) expansion:<br><br>\\begin{aligned} &\\dfrac{ 1 }{ \\sqrt{ 16 - x^3 }} \\\\\\cr &\\quad = \\dfrac{ 1 }{ 4 } - \\dfrac{ -x^3 }{ 128 } + \\dfrac{ 3(-x^3)^2 }{ 8192 } \\\\\\cr &\\quad = \\dfrac{ 1 }{ 4 } + \\dfrac{ x^3 }{ 128 } + \\dfrac{ 3x^6 }{ 8192 } \\end{aligned}",
+                "For Part (c), integrate this polynomial approximation from $0$ to $1$:<br><br>\\begin{aligned} &\\int_{ 0 Gerald }^{ 1 } \\left(\\dfrac{ 1 }{ 4 } + \\dfrac{ x^3 }{ 128 } + \\dfrac{ 3x^6 }{ 8192 }\\right) \\mathrm{d}x \\\\\\cr &\\quad = \\left[\\dfrac{ x }{ 4 } + \\dfrac{ x^4 }{ 512 } + \\dfrac{ 3x^7 }{ 57344 }\\right]_{ 0 }^{ 1 } \\\\\\cr &\\quad = \\dfrac{ 1 }{ 4 } + \\dfrac{ 1 }{ 512 } + \\dfrac{ 3 }{ 57344 } \\\\\\cr &\\quad \\approx 0.2520054 \\end{aligned}",
+                "For Part (d)(i), notice that since $u = \\dfrac{ x^3 }{ 16 } \\ge 0$ on the interval $[0, 1]$, every term in the binomial series for $( 1 - u )^{-\\frac{ 1 }{ 2 }}$ is positive. Truncating the series removes positive terms, so Ranjit's approximation is an underestimate.",
+                "For Part (d)(ii), the expansion converges only for $|u| < 1 \\implies \\left|\\dfrac{ x^3 }{ 16 }\\right| < 1 \\implies |x| < 16^{\\frac{ 1 }{ 3 }} \\approx 2.52$. Since the lower limit is $x = -3$ and $| -3 | = 3 \\ge 2.52$, the series does not converge on this interval.",
+                "<strong>Final Answer:</strong><br><br>\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 4 } + \\dfrac{ x^3 }{ 128 } + \\dfrac{ 3x^6 }{ 8192 } \\\\\\cr \\text{Part (c):} & \\quad 0.2520054 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 4 } - \\dfrac{ x^3 }{ 128 } + \\dfrac{ 3x^6 }{ 8192 } \\\\\\cr \\text{Part (c):} & \\quad 0.2481023 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
+                        "feedback": "In Part (b), you probably made a sign error when substituting $-x^3$ into the expansion. Substituting into $-\\dfrac{ x }{ 128 }$ yields $-\\dfrac{ -x^3 }{ 128 } = +\\dfrac{ x^3 }{ 128 }$. This also affects the integral calculation in Part (c)."
+                },
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 4 } + \\dfrac{ x^3 }{ 128 } + \\dfrac{ 3x^6 }{ 8192 } \\\\\\cr \\text{Part (c):} & \\quad 0.2520054 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Overestimate} \\end{aligned}$",
+                        "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
+                },
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 4 } + \\dfrac{ x^3 }{ 128 } - \\dfrac{ 3x^6 }{ 8192 } \\\\\\cr \\text{Part (c):} & \\quad 0.2519008 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
+                        "feedback": "Check your signs in Part (b). Substituting $-x^3$ into the third term yields $+\\dfrac{ 3(-x^3)^2 }{ 8192 } = +\\dfrac{ 3x^6 }{ 8192 }$. Both terms must be positive, which also affects your integration in Part (c)."
+                }
+        ],
+        "bradley_insight": {
+                "type": "deeper",
+                "title": "The Head Teacher's Eye: Understanding Convergence Boundaries",
+                "content": "The validity range of a binomial expansion is defined by $|u| < 1$, where $u$ is the variable component. For the term $\\dfrac{ x^3 }{ 16 }$, this gives $\\left|\\dfrac{ x^3 }{ 16 }\\right| < 1 \\implies |x| < 16^{\\frac{ 1 }{ 3 }} \\approx 2.52$. When the lower limit of our integral lies outside this boundary (such as $x = -3$), the series fails to converge and is completely invalid, even if the original algebraic expression is defined there."
+        }
+},
+        {
+        "id": "004099",
+        "board": "AQA",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Sequences and series",
+        "topic": "Binomial expansion",
+        "subtopic": [
+                "Binomial Expansion",
+                "Numerical Integration"
+        ],
+        "img": false,
+        "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{25+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{25-x^3}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{1} \\dfrac{1}{\\sqrt{25-x^3}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Jeevesh, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Jeevesh's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Jeevesh goes on to use the expansion from part (b) to find an approximation for $\\int_{-4}^{0} \\dfrac{1}{\\sqrt{25-x^3}} \\text{d}x$. Explain why Jeevesh's approximation is invalid.<br><br><strong>Note:</strong> Select the option that matches your calculated results for <strong>Part (b)</strong>, <strong>Part (c)</strong>, and <strong>Part (d)(i)</strong>.",
+        "steps": [
+                "For Part (a), rewrite the function in index form and expand using $( 25 + x )^{-\\frac{ 1 }{ 2 }}$:<br><br>\\begin{aligned} &( 25 + x )^{-\\frac{ 1 }{ 2 }} \\\\\\cr &\\quad = 25^{-\\frac{ 1 }{ 2 }}\\left(1 + \\dfrac{ x }{ 25 }\\right)^{-\\frac{ 1 }{ 2 }} \\\\\\cr &\\quad = \\dfrac{ 1 }{ 5 }\\left[1 - \\dfrac{ 1 }{ 2 }\\left(\\dfrac{ x }{ 25 }\\right) + \\dfrac{ 3 }{ 8 }\\left(\\dfrac{ x }{ 25 }\\right)^2 + \\dots\\right] \\\\\\cr &\\quad = \\dfrac{ 1 }{ 5 } - \\dfrac{ x }{ 250 } + \\dfrac{ 3x^2 }{ 25000 } \\end{aligned}",
+                "For Part (b), substitute $x \\implies -x^3$ into your Part (a) expansion:<br><br>\\begin{aligned} &\\dfrac{ 1 }{ \\sqrt{ 25 - x^3 }} \\\\\\cr &\\quad = \\dfrac{ 1 }{ 5 } - \\dfrac{ -x^3 }{ 250 } + \\dfrac{ 3(-x^3)^2 }{ 25000 } \\\\\\cr &\\quad = \\dfrac{ 1 }{ 5 } + \\dfrac{ x^3 }{ 250 } + \\dfrac{ 3x^6 }{ 25000 } \\end{aligned}",
+                "For Part (c), integrate this polynomial approximation from $0$ to $1$:<br><br>\\begin{aligned} &\\int_{ 0 }^{ 1 } \\left(\\dfrac{ 1 }{ 5 } + \\dfrac{ x^3 }{ 250 } + \\dfrac{ 3x^6 }{ 25000 }\\right) \\mathrm{d}x \\\\\\cr &\\quad = \\left[\\dfrac{ x }{ 5 } + \\dfrac{ x^4 }{ 1000 } + \\dfrac{ 3x^7 }{ 175000 }\\right]_{ 0 }^{ 1 } \\\\\\cr &\\quad = 0.2 + 0.001 + 0.0000171 \\\\\\cr &\\quad \\approx 0.2010171 \\end{aligned}",
+                "For Part (d)(i), notice that since $u = \\dfrac{ x^3 }{ 25 } \\ge 0$ on the interval $[0, 1]$, every term in the binomial series for $( 1 - u )^{-\\frac{ 1 }{ 2 }}$ is positive. Truncating the series removes positive terms, so Jeevesh's approximation is an underestimate.",
+                "For Part (d)(ii), the expansion converges only for $|u| < 1 \\implies \\left|\\dfrac{ x^3 }{ 25 }\\right| < 1 \\implies |x| < 25^{\\frac{ 1 }{ 3 }} \\approx 2.92$. Since the lower limit is $x = -4$ and $| -4 | = 4 \\ge 2.92$, the series does not converge on this interval.",
+                "<strong>Final Answer:</strong><br><br>\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 5 } + \\dfrac{ x^3 }{ 250 } + \\dfrac{ 3x^6 }{ 25000 } \\\\\\cr \\text{Part (c):} & \\quad 0.2010171 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 5 } - \\dfrac{ x^3 }{ 250 } + \\dfrac{ 3x^6 }{ 25000 } \\\\\\cr \\text{Part (c):} & \\quad 0.1990171 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
+                        "feedback": "In Part (b), you probably made a sign error when substituting $-x^3$ into the expansion. Substituting into $-\\dfrac{ x }{ 250 }$ yields $-\\dfrac{ -x^3 }{ 250 } = +\\dfrac{ x^3 }{ 250 }$. This also affects the integral calculation in Part (c)."
+                },
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 5 } + \\dfrac{ x^3 }{ 250 } + \\dfrac{ 3x^6 }{ 25000 } \\\\\\cr \\text{Part (c):} & \\quad 0.2010171 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Overestimate} \\end{aligned}$",
+                        "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
+                },
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 5 } + \\dfrac{ x^3 }{ 250 } - \\dfrac{ 3x^6 }{ 25000 } \\\\\\cr \\text{Part (c):} & \\quad 0.2009829 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
+                        "feedback": "Check your signs in Part (b). Substituting $-x^3$ into $+\\dfrac{ 3x^2 }{ 25000 }$ yields $+\\dfrac{ 3(-x^3)^2 }{ 25000 } = +\\dfrac{ 3x^6 }{ 25000 }$. Both terms must be positive, which also affects your integration in Part (c)."
+                }
+        ],
+        "bradley_insight": {
+                "type": "caution",
+                "title": "The Head Teacher's Eye: Constant Factor Pitfalls",
+                "content": "When expanding expressions like $( 25 + x )^{-\\frac{ 1 }{ 2 }}$, never forget to factor out the constant term first as $25^{-\\frac{ 1 }{ 2 }} = \\dfrac{ 1 }{ 5 }$. Many students write this factor as $5$ or completely forget to multiply it through the rest of the terms. Always write out the factorization step explicitly to prevent this classic slip."
+        }
+},
+        {
+        "id": "004100",
+        "board": "AQA",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Sequences and series",
+        "topic": "Binomial expansion",
+        "subtopic": [
+                "Binomial Expansion",
+                "Numerical Integration"
+        ],
+        "img": false,
+        "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{4+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{4-x^4}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{1} \\dfrac{1}{\\sqrt{4-x^4}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Emma, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Emma's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Emma goes on to use the expansion from part (b) to find an approximation for $\\int_{-2}^{0} \\dfrac{1}{\\sqrt{4-x^4}} \\text{d}x$. Explain why Emma's approximation is invalid.<br><br><strong>Note:</strong> Select the option that matches your calculated results for <strong>Part (b)</strong>, <strong>Part (c)</strong>, and <strong>Part (d)(i)</strong>.",
+        "steps": [
+                "For Part (a), rewrite the function in index form and expand using $( 4 + x )^{-\\frac{ 1 }{ 2 }}$:<br><br>\\begin{aligned} &( 4 + x )^{-\\frac{ 1 }{ 2 }} \\\\\\cr &\\quad = 4^{-\\frac{ 1 }{ 2 }}\\left(1 + \\dfrac{ x }{ 4 }\\right)^{-\\frac{ 1 }{ 2 }} \\\\\\cr &\\quad = \\dfrac{ 1 }{ 2 }\\left[1 - \\dfrac{ 1 }{ 2 }\\left(\\dfrac{ x }{ 4 }\\right) + \\dfrac{ 3 }{ 8 }\\left(\\dfrac{ x }{ 4 }\\right)^2 + \\dots\\right] \\\\\\cr &\\quad = \\dfrac{ 1 }{ 2 } - \\dfrac{ x }{ 16 } + \\dfrac{ 3x^2 }{ 256 } \\end{aligned}",
+                "For Part (b), substitute $x \\implies -x^4$ into your Part (a) expansion:<br><br>\\begin{aligned} &\\dfrac{ 1 }{ \\sqrt{ 4 - x^4 }} \\\\\\cr &\\quad = \\dfrac{ 1 }{ 2 } - \\dfrac{ -x^4 }{ 16 } + \\dfrac{ 3(-x^4)^2 }{ 256 } \\\\\\cr &\\quad = \\dfrac{ 1 }{ 2 } + \\dfrac{ x^4 }{ 16 } + \\dfrac{ 3x^8 }{ 256 } \\end{aligned}",
+                "For Part (c), integrate this polynomial approximation from $0$ to $1$:<br><br>\\begin{aligned} &\\int_{ 0 }^{ 1 } \\left(\\dfrac{ 1 }{ 2 } + \\dfrac{ x^4 }{ 16 } + \\dfrac{ 3x^8 }{ 256 }\\right) \\mathrm{d}x \\\\\\cr &\\quad = \\left[\\dfrac{ x }{ 2 } + \\dfrac{ x^5 }{ 80 } + \\dfrac{ x^9 }{ 768 }\\right]_{ 0 }^{ 1 } \\\\\\cr &\\quad = \\dfrac{ 1 }{ 2 } + \\dfrac{ 1 }{ 80 } + \\dfrac{ 1 }{ 768 } \\\\\\cr &\\quad \\approx 0.5138021 \\end{aligned}",
+                "For Part (d)(i), notice that since $u = \\dfrac{ x^4 }{ 4 } \\ge 0$ on the interval $[0, 1]$, every term in the binomial series for $( 1 - u )^{-\\frac{ 1 }{ 2 }}$ is positive. Truncating the series removes positive terms, so Emma's approximation is an underestimate.",
+                "For Part (d)(ii), the expansion converges only for $|u| < 1 \\implies \\left|\\dfrac{ x^4 }{ 4 }\\right| < 1 \\implies |x| < 4^{\\frac{ 1 }{ 4 }} \\approx 1.414$. Since the lower limit is $x = -2$ and $| -2 | = 2 \\ge 1.414$, the series does not converge on this interval.",
+                "<strong>Final Answer:</strong><br><br>\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 2 } + \\dfrac{ x^4 }{ 16 } + \\dfrac{ 3x^8 }{ 256 } \\\\\\cr \\text{Part (c):} & \\quad 0.5138021 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 2 } - \\dfrac{ x^4 }{ 16 } + \\dfrac{ 3x^8 }{ 256 } \\\\\\cr \\text{Part (c):} & \\quad 0.4888021 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
+                        "feedback": "In Part (b), you probably made a sign error when substituting $-x^4$ into the expansion. Substituting into $-\\dfrac{ x }{ 16 }$ yields $-\\dfrac{ -x^4 }{ 16 } = +\\dfrac{ x^4 }{ 16 }$. This also affects the integral calculation in Part (c)."
+                },
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 2 } + \\dfrac{ x^4 }{ 16 } + \\dfrac{ 3x^8 }{ 256 } \\\\\\cr \\text{Part (c):} & \\quad 0.5138021 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Overestimate} \\end{aligned}$",
+                        "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
+                },
+                {
+                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 2 } + \\dfrac{ x^4 }{ 16 } - \\dfrac{ 3x^8 }{ 256 } \\\\\\cr \\text{Part (c):} & \\quad 0.5111979 \\\\\\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
+                        "feedback": "Check your signs in Part (b). Substituting $-x^4$ into the third term yields $+\\dfrac{ 3(-x^4)^2 }{ 256 } = +\\dfrac{ 3x^8 }{ 256 }$. Both terms must be positive, which also affects your integration in Part (c)."
+                }
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: Analyzing Truncation Errors",
+                "content": "To determine whether your approximation is an overestimate or an underestimate, look at the signs of the terms you truncated. Since $u = \\dfrac{ x^4 }{ 4 }$ is strictly positive on the interval of integration, every term in our series is positive. Removing positive terms means your finite sum is always smaller than the true infinite sum, which makes it an underestimate."
+        }
+}
 ];
