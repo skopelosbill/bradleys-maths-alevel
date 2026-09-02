@@ -1282,7 +1282,7 @@ window.ALEVEL_QUESTIONS = [
                 "question": "A periodic sequence is defined by $$U_n = \\cos(n\\pi)$$.<br><br>State the period of this sequence.",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\cos(n\\pi)$$.",
-                        "Next, calculate the first few terms of the sequence to see the numerical pattern: $$U_1 = -1, \\quad U_2 = 1, \\quad U_3 = -1, \\quad U_4 = 1$$",
+                        "Next, calculate the first few terms of the sequence to see the numerical pattern:\\begin{aligned} U_1 &= -1, \\cr U_2 &= 1, \\cr U_3 &= -1, \\cr U_4 &= 1\\end{aligned}",
                         "Finally, identify the repeating cycle of terms, which is $-1, 1$, and note that the cycle has a length of $2$.",
                         "Final Answer: $$ 2$$"
                 ],
@@ -1358,7 +1358,7 @@ window.ALEVEL_QUESTIONS = [
                 "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.",
-                        "Next, calculate the first few terms of the sequence to observe the periodic pattern: \\begin{aligned}U_1 &= \\dfrac{\\sqrt{3}}{2}, \\crU_2 &= \\dfrac{\\sqrt{3}}{2}, \\cr U_3 &= 0, \\cr U_4 &= -\\dfrac{\\sqrt{3}}{2}, \\cr U_5 &= -\\dfrac{\\sqrt{3}}{2}, \\cr U_6 &= 0, \\cr U_7 &= \\dfrac{\\sqrt{3}}{2}\\end{aligned}",
+                        "Next, calculate the first few terms of the sequence to observe the periodic pattern: \\begin{aligned}U_1 &= \\dfrac{\\sqrt{3}}{2}, \\cr U_2 &= \\dfrac{\\sqrt{3}}{2}, \\cr U_3 &= 0, \\cr U_4 &= -\\dfrac{\\sqrt{3}}{2}, \\cr U_5 &= -\\dfrac{\\sqrt{3}}{2}, \\cr U_6 &= 0, \\cr U_7 &= \\dfrac{\\sqrt{3}}{2}\\end{aligned}",
                         "Finally, identify the repeating cycle, which is $\\dfrac{\\sqrt{3}}{2}, \\dfrac{\\sqrt{3}}{2}, 0, -\\dfrac{\\sqrt{3}}{2}, -\\dfrac{\\sqrt{3}}{2}, 0$, and note that the pattern repeats every $6$ terms.",
                         "Final Answer: $$ 6$$"
                 ],

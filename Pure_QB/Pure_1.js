@@ -1906,7 +1906,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-12| \\ge -5 \\implies 12 \\ge -5$, which is a true statement."
                         },
                         {
-                                "ans": "<strong>(i)</strong> $$\\text{Proof by algebraic induction}$$ $$\\text(is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$",
+                                "ans": "<strong>(i)</strong> $$\\text{Proof by algebraic induction}$$ $$\\text{(is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$",
                                 "feedback": "Part (i) is a proof by exhaustion (cases), not mathematical induction. Induction is used when a statement depends on n and n+1 sequences, whereas here we exhaust all possible algebraic remainders of n directly."
                         }
                 ],
