@@ -1089,7 +1089,7 @@ window.ALEVEL_QUESTIONS = [
                         "Transformations of Graphs"
                 ],
                 "img": false,
-                "question": "The graph of $$y = 3^x$$ is transformed by a stretch in the $y$-direction, scale factor 3.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 3^{3x}\\\\\\ (b)\\\\ y = \\dfrac{1}{3} \\times 3^x\\\\\\ (c)\\\\ y = 3^{\\frac{x}{3}}\\\\\\ (d)\\\\ y = 3 \\times 3^x$$",
+                "question": "The graph of $$y = 3^x$$ is transformed by a stretch in the $y$-direction, scale factor 3.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br><br>(a)$$ y = 3^{3x}$$(b)$$ y = \\dfrac{1}{3} \\times 3^x$$(c)$$ y = 3^{\\frac{x}{3}}$$(d)$$ y = 3 \\times 3^x$$",
                 "steps": [
                         "First, identify the original function: \\begin{aligned}y &= f(x) \\cr&= 3^x\\end{aligned}",
                         "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 3$$",
@@ -1127,7 +1127,7 @@ window.ALEVEL_QUESTIONS = [
                         "Transformations of Graphs"
                 ],
                 "img": false,
-                "question": "The graph of $$y = 4^x$$ is transformed by a stretch in the $y$-direction, scale factor 4.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 4 \\times 4^x\\\\\\ (b)\\\\ y = 4^{\\frac{x}{4}}\\\\\\ (c)\\\\ y = \\dfrac{1}{4} \\times 4^x\\\\\\ (d)\\\\ y = 4^{4x}$$",
+                "question": "The graph of $$y = 4^x$$ is transformed by a stretch in the $y$-direction, scale factor 4.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br><br>(a)$$ y = 4 \\times 4^x$$(b)$$ y = 4^{\\frac{x}{4}}$$(c)$$ y = \\dfrac{1}{4} \\times 4^x$$(d)$$ y = 4^{4x}$$",
                 "steps": [
                         "First, identify the original function: \\begin{aligned}y &= f(x) \\cr&= 4^x\\end{aligned}",
                         "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 4$$",
@@ -1165,7 +1165,7 @@ window.ALEVEL_QUESTIONS = [
                         "Transformations of Graphs"
                 ],
                 "img": false,
-                "question": "The graph of $$y = 2^x$$ is transformed by a stretch in the $y$-direction, scale factor 2.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 2^{2x}\\\\\\ (b)\\\\ y = 2 \\times 2^x\\\\\\ (c)\\\\ y = 2^{\\frac{x}{2}}\\\\\\ (d)\\\\ y = \\dfrac{1}{2} \\times 2^x$$",
+                "question": "The graph of $$y = 2^x$$ is transformed by a stretch in the $y$-direction, scale factor 2.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br><br>(a)$$ y = 2^{2x}$$(b)$$ y = 2 \\times 2^x$$(c)$$ y = 2^{\\frac{x}{2}}$$(d)$$ y = \\dfrac{1}{2} \\times 2^x$$",
                 "steps": [
                         "First, identify the original function: \\begin{aligned}y &= f(x) \\cr&= 2^x\\end{aligned}",
                         "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 2$$",
@@ -1203,7 +1203,7 @@ window.ALEVEL_QUESTIONS = [
                         "Transformations of Graphs"
                 ],
                 "img": false,
-                "question": "The graph of $$y = 6^x$$ is transformed by a stretch in the $y$-direction, scale factor 6.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 6^{\\frac{x}{6}}\\\\\\ (b)\\\\ y = \\dfrac{1}{6} \\times 6^x\\\\\\ (c)\\\\ y = 6^{6x}\\\\\\ (d)\\\\ y = 6 \\times 6^x$$",
+                "question": "The graph of $$y = 6^x$$ is transformed by a stretch in the $y$-direction, scale factor 6.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br><br>(a)$$ y = 6^{\\frac{x}{6}}$$(b)$$ y = \\dfrac{1}{6} \\times 6^x$$(c)$$ y = 6^{6x}$$(d)$$ y = 6 \\times 6^x$$",
                 "steps": [
                         "First, identify the original function: \\begin{aligned}y &= f(x) \\cr&= 6^x\\end{aligned}",
                         "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 6$$",
@@ -1241,7 +1241,7 @@ window.ALEVEL_QUESTIONS = [
                         "Transformations of Graphs"
                 ],
                 "img": false,
-                "question": "The graph of $$y = 7^x$$ is transformed by a stretch in the $y$-direction, scale factor 7.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\ y = 7 \\times 7^x\\\\\\ (b)\\\\ y = 7^{\\frac{x}{7}}\\\\\\ (c)\\\\ y = \\dfrac{1}{7} \\times 7^x\\\\\\ (d)\\\\ y = 7^{7x}$$",
+                "question": "The graph of $$y = 7^x$$ is transformed by a stretch in the $y$-direction, scale factor 7.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br><br>(a)$$ y = 7 \\times 7^x$$(b)$$ y = 7^{\\frac{x}{7}}$$(c)$$ y = \\dfrac{1}{7} \\times 7^x$$(d)$$ y = 7^{7x}$$",
                 "steps": [
                         "First, identify the original function: \\begin{aligned}y &= f(x) \\cr&= 7^x\\end{aligned}",
                         "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 7$$",
@@ -1279,7 +1279,7 @@ window.ALEVEL_QUESTIONS = [
                         "Periodic Sequences"
                 ],
                 "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\cos(n\\pi)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ 2\\pi\\\\\\ \\\\\\ (b)\\\\\\ 2\\\\\\ (c)\\\\\\ \\pi\\\\\\ \\\\\\ (d)\\\\\\ 4$$",
+                "question": "A periodic sequence is defined by $$U_n = \\cos(n\\pi)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br><br>(a)$$\\ 2\\pi\\\\\\ $$(b)$$\\ 2$$(c)$$\\ \\pi\\\\\\ $$(d)$$\\ 4$$",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\cos(n\\pi)$$.",
                         "Next, calculate the first few terms of the sequence to see the numerical pattern: $U_1 = -1,$ $U_2 = 1,$ $U_3 = -1,$ $U_4 = 1$",
@@ -1355,7 +1355,7 @@ window.ALEVEL_QUESTIONS = [
                         "Periodic Sequences"
                 ],
                 "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ 6\\\\\\ \\\\\\ (b)\\\\\\ 2\\pi\\\\\\ (c)\\\\\\ 3\\\\\\ \\\\\\ (d)\\\\\\ 6\\pi$$",
+                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br><br>(a)$$\\ 6\\\\\\ $$(b)$$\\ 2\\pi$$(c)$$\\ 3\\\\\\ $$(d)$$\\ 6\\pi$$",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.",
                         "Next, calculate the first few terms of the sequence to observe the periodic pattern: \\begin{aligned}U_1 &= \\dfrac{\\sqrt{3}}{2},\\\\ U_2 \\cr&= \\dfrac{\\sqrt{3}}{2},\\\\ U_3 \\cr&= 0,\\\\ U_4 \\cr&= -\\dfrac{\\sqrt{3}}{2},\\\\ U_5 \\cr&= -\\dfrac{\\sqrt{3}}{2},\\\\ U_6 \\cr&= 0,\\\\ U_7 \\cr&= \\dfrac{\\sqrt{3}}{2}\\end{aligned}",
@@ -1393,7 +1393,7 @@ window.ALEVEL_QUESTIONS = [
                         "Periodic Sequences"
                 ],
                 "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ 3\\\\\\ \\\\\\ (b)\\\\\\ 2\\pi\\\\\\  (c)\\\\\\ 6\\\\\\ \\\\\\ (d)\\\\\\ \\pi$$",
+                "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br><br>(a)$$\\ 3\\\\\\ $$(b)$$\\ 2\\pi\\\\\\  (c)\\\\\\ 6\\\\\\ $$(d)$$\\ \\pi$$",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.",
                         "Next, calculate the first few terms of the sequence: \\begin{aligned}U_1 &= -\\dfrac{1}{2},\\\\ U_2 \\cr&= -\\dfrac{1}{2},\\\\ U_3 \\cr&= 1,\\\\ U_4 \\cr&= -\\dfrac{1}{2}\\end{aligned}",
@@ -1431,7 +1431,7 @@ window.ALEVEL_QUESTIONS = [
                         "Periodic Sequences"
                 ],
                 "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$(a)\\\\\\ 8\\\\\\ \\\\\\ (b)\\\\\\ 2\\pi\\\\\\  (c)\\\\\\ 4\\\\\\ \\\\\\ (d)\\\\\\ 4\\pi$$",
+                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br><br>(a)$$\\ 8\\\\\\ $$(b)$$\\ 2\\pi\\\\\\  (c)\\\\\\ 4\\\\\\ $$(d)$$\\ 4\\pi$$",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.",
                         "Next, calculate the first few terms of the sequence: \\begin{aligned}U_1 &= \\dfrac{1}{\\sqrt{2}},\\\\ U_2 \\cr&= 1,\\\\ U_3 \\cr&= \\dfrac{1}{\\sqrt{2}},\\\\ U_4 \\cr&= 0,\\\\ U_5 \\cr&= -\\dfrac{1}{\\sqrt{2}},\\\\ U_6 \\cr&= -1,\\\\ U_7 \\cr&= -\\dfrac{1}{\\sqrt{2}},\\\\ U_8 \\cr&= 0,\\\\ U_9 \\cr&= \\dfrac{1}{\\sqrt{2}}\\end{aligned}",
