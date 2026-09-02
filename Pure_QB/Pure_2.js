@@ -1665,25 +1665,25 @@ window.ALEVEL_QUESTIONS = [
                         "Parametric Equations"
                 ],
                 "img": false,
-                "question": "A curve is defined by the parametric equations:<br>$$x = 2 \\times 2^{-t} + 4$$<br>$$y = 5 \\times 2^t - 1$$<br><br>Find an expression for $\\dfrac{dy}{dx}$ and find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
+                "question": "A curve is defined by the parametric equations:<br>$$x = 2 \\times 2^{-t} + 4$$<br>$$y = 5 \\times 2^t - 1$$<br><br><strong>(a)</strong> Find an expression for $\\dfrac{dy}{dx}$ <br><br><strong>(b)</strong> find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
                 "steps": [
                         "First, differentiate $y = 5 \\times 2^t - 1$ and $x = 2 \\times 2^{-t} + 4$ with respect to $t$: $$\\dfrac{dy}{dt} = 5 \\ln(2) 2^t$$ and $$\\dfrac{dx}{dt} = -2 \\ln(2) 2^{-t}$$",
                         "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): \\begin{aligned}\\dfrac{dy}{dx} &= \\dfrac{5 \\ln(2) 2^t}{-2 \\ln(2) 2^{-t}} \\cr&= -\\dfrac{5}{2} \\times 2^{2t}\\end{aligned}",
                         "To find Part (b), rearrange the parametric equations to isolate the exponential terms: \\begin{aligned}2^{-t} &= \\dfrac{x-4}{2} \\cr2^t &= \\dfrac{2}{x-4}\\end{aligned}",
                         "Substitute this into the $y$ equation and expand: \\begin{aligned}y + 1 &= 5 \\times \\dfrac{2}{x-4} \\cr(y + 1)(x - 4) &= 10 \\cr xy + x - 4y &= 14\\end{aligned}",
-                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -\\dfrac{5}{2} \\times 2^{2t},\\quad \\text{(b) } xy + x - 4y \\cr&= 14\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -\\dfrac{5}{2} \\times 2^{2t},\\cr\\text{(b) } xy + x - 4y &= 14\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{5}{2} \\times 2^{t},\\quad \\text{(b) } xy + x - 4y = 14$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{5}{2} \\times 2^{t},$$ $$\\text{(b) } xy + x - 4y = 14$$",
                                 "feedback": "In Part (a), you probably made a mistake with index division laws. Dividing $2^t$ by $2^{-t}$ yields $2^{t - (-t)} = 2^{2t}$ rather than $2^t$. Part (b) is correct."
                         },
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{5}{2} \\times 2^{2t},\\quad \\text{(b) } xy - 4x + y = 14$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{5}{2} \\times 2^{2t},$$ $$\\text{(b) } xy - 4x + y = 14$$",
                                 "feedback": "In Part (b), you probably made a sign error when expanding $(y + 1)(x - 4) = 10$. The expansion yields $xy - 4y + x - 4 = 10$, which rearranges to $xy + x - 4y = 14$. Part (a) is correct."
                         },
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{5}{2} \\times 2^{2t},\\quad \\text{(b) } xy + x - 4y = 6$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{5}{2} \\times 2^{2t},$$ $$\\text{(b) } xy + x - 4y = 6$$",
                                 "feedback": "In Part (a), you probably forgot the negative sign from the derivative of $2^{-t}$. In Part (b), you probably forgot to subtract $4$ from $10$ or made a transposition mistake."
                         }
                 ],
@@ -1705,25 +1705,25 @@ window.ALEVEL_QUESTIONS = [
                         "Parametric Equations"
                 ],
                 "img": false,
-                "question": "A curve is defined by the parametric equations:<br>$$x = 3 \\times 3^{-t} + 2$$<br>$$y = 2 \\times 3^t - 4$$<br><br>Find an expression for $\\dfrac{dy}{dx}$ and find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
+                "question": "A curve is defined by the parametric equations:<br>$$x = 3 \\times 3^{-t} + 2$$<br>$$y = 2 \\times 3^t - 4$$<br><br><strong>(a)</strong> Find an expression for $\\dfrac{dy}{dx}$<br><br><strong>(b)</strong> find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
                 "steps": [
                         "First, differentiate $y = 2 \\times 3^t - 4$ and $x = 3 \\times 3^{-t} + 2$ with respect to $t$: $$\\dfrac{dy}{dt} = 2 \\ln(3) 3^t$$ and $$\\dfrac{dx}{dt} = -3 \\ln(3) 3^{-t}$$",
                         "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): \\begin{aligned}\\dfrac{dy}{dx} &= \\dfrac{2 \\ln(3) 3^t}{-3 \\ln(3) 3^{-t}} \\cr&= -\\dfrac{2}{3} \\times 3^{2t}\\end{aligned}",
                         "To find Part (b), rearrange the parametric equations to isolate the exponential terms: \\begin{aligned}3^{-t} &= \\dfrac{x-2}{3} \\cr3^t &= \\dfrac{3}{x-2}\\end{aligned}",
                         "Substitute this into the $y$ equation and expand: \\begin{aligned}y + 4 &= 2 \\times \\dfrac{3}{x-2} \\cr(y + 4)(x - 2) &= 6 \\cr xy + 4x - 2y &= 14\\end{aligned}",
-                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -\\dfrac{2}{3} \\times 3^{2t},\\quad \\text{(b) } xy + 4x - 2y \\cr&= 14\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -\\dfrac{2}{3} \\times 3^{2t},\\cr\\text{(b) } xy + 4x - 2y &= 14\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 3^{t},\\quad \\text{(b) } xy + 4x - 2y = 14$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 3^{t},$$ $$\\text{(b) } xy + 4x - 2y = 14$$",
                                 "feedback": "In Part (a), you probably made an index error during division. Since $3^t \\div 3^{-t} = 3^{t - (-t)} = 3^{2t}$, the power of the exponential term becomes $2t$. Part (b) is correct."
                         },
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 3^{2t},\\quad \\text{(b) } xy - 2x + 4y = 14$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 3^{2t},$$ $$\\text{(b) } xy - 2x + 4y = 14$$",
                                 "feedback": "In Part (b), you probably made a sign error or transposed the coefficients when expanding $(y + 4)(x - 2) = 6$. The correct expansion yields $xy - 2y + 4x - 8 = 6$, which simplifies to $xy + 4x - 2y = 14$. Part (a) is correct."
                         },
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{2}{3} \\times 3^{2t},\\quad \\text{(b) } xy + 4x - 2y = 6$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{2}{3} \\times 3^{2t},$$ $$\\text{(b) } xy + 4x - 2y = 6$$",
                                 "feedback": "In Part (a), you probably missed the negative sign from the derivative of $3^{-t}$. In Part (b), you probably made a sign error during transposition or expansion of the bracket constant."
                         }
                 ],
@@ -1745,25 +1745,25 @@ window.ALEVEL_QUESTIONS = [
                         "Parametric Equations"
                 ],
                 "img": false,
-                "question": "A curve is defined by the parametric equations:<br>$$x = 5 \\times 2^{-t} + 1$$<br>$$y = 4 \\times 2^t - 3$$<br><br>Find an expression for $\\dfrac{dy}{dx}$ and find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
+                "question": "A curve is defined by the parametric equations:<br>$$x = 5 \\times 2^{-t} + 1$$<br>$$y = 4 \\times 2^t - 3$$<br><br><strong>(a)</strong> Find an expression for $\\dfrac{dy}{dx}$<br><br><strong>(b)</strong> find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
                 "steps": [
                         "First, differentiate $y = 4 \\times 2^t - 3$ and $x = 5 \\times 2^{-t} + 1$ with respect to $t$: $$\\dfrac{dy}{dt} = 4 \\ln(2) 2^t$$ and $$\\dfrac{dx}{dt} = -5 \\ln(2) 2^{-t}$$",
                         "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): \\begin{aligned}\\dfrac{dy}{dx} &= \\dfrac{4 \\ln(2) 2^t}{-5 \\ln(2) 2^{-t}} \\cr&= -\\dfrac{4}{5} \\times 2^{2t}\\end{aligned}",
                         "To find Part (b), rearrange the parametric equations to isolate the exponential terms: \\begin{aligned}2^{-t} &= \\dfrac{x-1}{5} \\cr2^t &= \\dfrac{5}{x-1}\\end{aligned}",
                         "Substitute this into the $y$ equation and expand: \\begin{aligned}y + 3 &= 4 \\times \\dfrac{5}{x-1} \\cr(y + 3)(x - 1) &= 20 \\cr xy + 3x - y &= 23\\end{aligned}",
-                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -\\dfrac{4}{5} \\times 2^{2t},\\quad \\text{(b) } xy + 3x - y \\cr&= 23\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -\\dfrac{4}{5} \\times 2^{2t},\\cr \\text{(b) } xy + 3x - y r&= 23\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{4}{5} \\times 2^{t},\\quad \\text{(b) } xy + 3x - y = 23$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{4}{5} \\times 2^{t},$$ $$\\text{(b) } xy + 3x - y = 23$$",
                                 "feedback": "In Part (a), you probably made an index calculation slip during division. Dividing $2^t$ by $2^{-t}$ results in $2^{t - (-t)} = 2^{2t}$, not $2^t$. Part (b) is correct."
                         },
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{4}{5} \\times 2^{2t},\\quad \\text{(b) } xy + 3x - y = 17$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{4}{5} \\times 2^{2t},$$ $$\\text{(b) } xy + 3x - y = 17$$",
                                 "feedback": "In Part (b), you probably made a sign error when expanding $(y + 3)(x - 1) = 20$. The expansion yields $xy - y + 3x - 3 = 20$, which rearranges to $xy + 3x - y = 23$. Part (a) is correct."
                         },
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{4}{5} \\times 2^{2t},\\quad \\text{(b) } xy - y + 3x = 17$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{4}{5} \\times 2^{2t},$$ $$\\text{(b) } xy - y + 3x = 17$$",
                                 "feedback": "In Part (a), you probably missed the negative sign from the derivative of $2^{-t}$. In Part (b), you probably made transposition or expansion constant sign errors."
                         }
                 ],
@@ -1785,25 +1785,25 @@ window.ALEVEL_QUESTIONS = [
                         "Parametric Equations"
                 ],
                 "img": false,
-                "question": "A curve is defined by the parametric equations:<br>$$x = 2 \\times 3^{-t} + 5$$<br>$$y = 4 \\times 3^t - 1$$<br><br>Find an expression for $\\dfrac{dy}{dx}$ and find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
+                "question": "A curve is defined by the parametric equations:<br>$$x = 2 \\times 3^{-t} + 5$$<br>$$y = 4 \\times 3^t - 1$$<br><br><strong>(a)</strong> Find an expression for $\\dfrac{dy}{dx}$<br><br><strong>(b)</strong> find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
                 "steps": [
                         "First, differentiate $y = 4 \\times 3^t - 1$ and $x = 2 \\times 3^{-t} + 5$ with respect to $t$: $$\\dfrac{dy}{dt} = 4 \\ln(3) 3^t$$ and $$\\dfrac{dx}{dt} = -2 \\ln(3) 3^{-t}$$",
                         "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): \\begin{aligned}\\dfrac{dy}{dx} &= \\dfrac{4 \\ln(3) 3^t}{-2 \\ln(3) 3^{-t}} \\cr&= -2 \\times 3^{2t}\\end{aligned}",
                         "To find Part (b), rearrange the parametric equations to isolate the exponential terms: \\begin{aligned}3^{-t} &= \\dfrac{x-5}{2} \\cr3^t &= \\dfrac{2}{x-5}\\end{aligned}",
                         "Substitute this into the $y$ equation and expand: \\begin{aligned}y + 1 &= 4 \\times \\dfrac{2}{x-5} \\cr(y + 1)(x - 5) &= 8 \\cr xy + x - 5y &= 13\\end{aligned}",
-                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -2 \\times 3^{2t},\\quad \\text{(b) } xy + x - 5y \\cr&= 13\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -2 \\times 3^{2t}, \\cr \\text{(b) } xy + x - 5y &= 13\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -2 \\times 3^{t},\\quad \\text{(b) } xy + x - 5y = 13$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -2 \\times 3^{t},$$ $$\\text{(b) } xy + x - 5y = 13$$",
                                 "feedback": "In Part (a), you probably made an index division error. Since $3^t \\div 3^{-t} = 3^{t - (-t)} = 3^{2t}$, the exponent must be $2t$. Part (b) is correct."
                         },
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -2 \\times 3^{2t},\\quad \\text{(b) } xy + x - 5y = 3$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -2 \\times 3^{2t},$$ $$\\text{(b) } xy + x - 5y = 3$$",
                                 "feedback": "In Part (b), you probably made a sign error when expanding $(y + 1)(x - 5) = 8$. The expansion yields $xy - 5y + x - 5 = 8$, which simplifies to $xy + x - 5y = 13$. Part (a) is correct."
                         },
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = 2 \\times 3^{2t},\\quad \\text{(b) } xy + x - 5y = 3$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = 2 \\times 3^{2t},$$ $$\\text{(b) } xy + x - 5y = 3$$",
                                 "feedback": "In Part (a), you probably missed the negative sign from the derivative of $3^{-t}$. In Part (b), you probably made sign transposition errors when expanding and simplifying the constant."
                         }
                 ],
@@ -1825,25 +1825,25 @@ window.ALEVEL_QUESTIONS = [
                         "Parametric Equations"
                 ],
                 "img": false,
-                "question": "A curve is defined by the parametric equations:<br>$$x = 3 \\times 2^{-t} + 2$$<br>$$y = 2 \\times 2^t - 6$$<br><br>Find an expression for $\\dfrac{dy}{dx}$ and find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
+                "question": "A curve is defined by the parametric equations:<br>$$x = 3 \\times 2^{-t} + 2$$<br>$$y = 2 \\times 2^t - 6$$<br><br><strong>(a)</strong> Find an expression for $\\dfrac{dy}{dx}$<br><br><strong>(b)</strong> find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
                 "steps": [
                         "First, differentiate $y = 2 \\times 2^t - 6$ and $x = 3 \\times 2^{-t} + 2$ with respect to $t$: $$\\dfrac{dy}{dt} = 2 \\ln(2) 2^t$$ and $$\\dfrac{dx}{dt} = -3 \\ln(2) 2^{-t}$$",
                         "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): \\begin{aligned}\\dfrac{dy}{dx} &= \\dfrac{2 \\ln(2) 2^t}{-3 \\ln(2) 2^{-t}} \\cr&= -\\dfrac{2}{3} \\times 2^{2t}\\end{aligned}",
                         "To find Part (b), rearrange the parametric equations to isolate the exponential terms: \\begin{aligned}2^{-t} &= \\dfrac{x-2}{3} \\cr2^t &= \\dfrac{3}{x-2}\\end{aligned}",
                         "Substitute this into the $y$ equation and expand: \\begin{aligned}y + 6 &= 2 \\times \\dfrac{3}{x-2} \\cr(y + 6)(x - 2) &= 6 \\cr xy + 6x - 2y &= 18\\end{aligned}",
-                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -\\dfrac{2}{3} \\times 2^{2t},\\quad \\text{(b) } xy + 6x - 2y \\cr&= 18\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -\\dfrac{2}{3} \\times 2^{2t},\\cr \\text{(b) } xy + 6x - 2y &= 18\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 2^{t},\\quad \\text{(b) } xy + 6x - 2y = 18$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 2^{t},$$ $$\\text{(b) } xy + 6x - 2y = 18$$",
                                 "feedback": "In Part (a), you probably made an index division error. Since $2^t \\div 2^{-t} = 2^{t - (-t)} = 2^{2t}$, the exponent must be $2t$. Part (b) is correct."
                         },
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 2^{2t},\\quad \\text{(b) } xy + 6x - 2y = 6$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 2^{2t},$$ $$\\text{(b) } xy + 6x - 2y = 6$$",
                                 "feedback": "In Part (b), you probably made a sign error when expanding $(y + 6)(x - 2) = 6$. The expansion yields $xy - 2y + 6x - 12 = 6$, which simplifies to $xy + 6x - 2y = 18$. Part (a) is correct."
                         },
                         {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{2}{3} \\times 2^{2t},\\quad \\text{(b) } xy - 2y + 6x = 6$$",
+                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{2}{3} \\times 2^{2t},$$ $$\\text{(b) } xy - 2y + 6x = 6$$",
                                 "feedback": "In Part (a), you probably missed the negative sign from the derivative of $2^{-t}$. In Part (b), you probably made a sign transposition error when simplifying the constant terms."
                         }
                 ],
