@@ -1279,24 +1279,24 @@ window.ALEVEL_QUESTIONS = [
                         "Periodic Sequences"
                 ],
                 "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\cos(n\\pi)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br><br>(a)$$\\ 2\\pi\\\\\\ $$(b)$$\\ 2$$(c)$$\\ \\pi\\\\\\ $$(d)$$\\ 4$$",
+                "question": "A periodic sequence is defined by $$U_n = \\cos(n\\pi)$$.<br><br>State the period of this sequence.",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\cos(n\\pi)$$.",
-                        "Next, calculate the first few terms of the sequence to see the numerical pattern: $U_1 = -1,$ $U_2 = 1,$ $U_3 = -1,$ $U_4 = 1$",
+                        "Next, calculate the first few terms of the sequence to see the numerical pattern: $$U_1 = -1, \\quad U_2 = 1, \\quad U_3 = -1, \\quad U_4 = 1$$",
                         "Finally, identify the repeating cycle of terms, which is $-1, 1$, and note that the cycle has a length of $2$.",
-                        "Final Answer: $$(b) 2$$"
+                        "Final Answer: $$ 2$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$(a) 2\\pi$$",
+                                "ans": "$$ 2\\pi$$",
                                 "feedback": "This is a common error where the continuous period of a trigonometric function is confused with the discrete period of a sequence. The period of a sequence must be a positive integer $T$ representing the number of terms before the pattern repeats."
                         },
                         {
-                                "ans": "$$(c) \\pi$$",
+                                "ans": "$$ \\pi$$",
                                 "feedback": "You have probably confused the period of the sequence with the period of a continuous trigonometric function such as $\\tan(x)$. The period of a sequence $U_n$ is the smallest integer $T$ such that $U_{n+T} = U_n$."
                         },
                         {
-                                "ans": "$$(d) 4$$",
+                                "ans": "$$ 4$$",
                                 "feedback": "This is a common error that probably arises from confusing this sequence with one that has a fractional argument in the denominator. Write out the first few terms of the sequence to verify how quickly they repeat."
                         }
                 ],
@@ -1317,24 +1317,24 @@ window.ALEVEL_QUESTIONS = [
                         "Periodic Sequences"
                 ],
                 "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{n\\pi}{2}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br>$$\\text{(a) }2\\pi\\text{ (b) 8 (c) 4 (d) } \\pi$$",
+                "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{n\\pi}{2}\\right)$$.<br><br>State the period of this sequence.",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\cos\\left(\\dfrac{n\\pi}{2}\\right)$$.",
-                        "Next, calculate the first few terms of the sequence to identify the pattern: $U_1 = 0,$ $U_2 = -1,$ $U_3 = 0,$ $U_4 = 1,$ $U_5 = 0$",
+                        "Next, calculate the first few terms of the sequence to identify the pattern: \\begin{aligned}U_1 &= 0, \\cr U_2 &= -1, \\cr U_3 &= 0, \\cr U_4 &= 1, \\cr U_5 &= 0\\end{aligned}",
                         "Finally, identify the repeating cycle, which is $0, -1, 0, 1$, and note that the length of this repeating pattern is $4$.",
-                        "Final Answer: $$(c) 4$$"
+                        "Final Answer: $$ 4$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$(a) 2\\pi$$",
+                                "ans": "$$ 2\\pi$$",
                                 "feedback": "This incorrect option is probably a confusion with the continuous period of a trigonometric function. Remember that the period of a sequence must be a whole integer $T$ representing the number of discrete steps before the sequence repeats."
                         },
                         {
-                                "ans": "$$(b) 8$$",
+                                "ans": "$$ 8$$",
                                 "feedback": "This error probably arises from doubling the correct period. Write out the first few terms of the sequence and identify the earliest term where the pattern starts repeating to locate the smallest positive integer period."
                         },
                         {
-                                "ans": "$$(d) \\pi$$",
+                                "ans": "$$ \\pi$$",
                                 "feedback": "This error is probably a confusion with the period of continuous trigonometric graphs. Always calculate the first four or five terms of the sequence to make the discrete repeating cycle visible on your page."
                         }
                 ],
@@ -1355,24 +1355,24 @@ window.ALEVEL_QUESTIONS = [
                         "Periodic Sequences"
                 ],
                 "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br><br>(a)$$\\ 6\\\\\\ $$(b)$$\\ 2\\pi$$(c)$$\\ 3\\\\\\ $$(d)$$\\ 6\\pi$$",
+                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.",
-                        "Next, calculate the first few terms of the sequence to observe the periodic pattern: \\begin{aligned}U_1 &= \\dfrac{\\sqrt{3}}{2},\\\\ U_2 \\cr&= \\dfrac{\\sqrt{3}}{2},\\\\ U_3 \\cr&= 0,\\\\ U_4 \\cr&= -\\dfrac{\\sqrt{3}}{2},\\\\ U_5 \\cr&= -\\dfrac{\\sqrt{3}}{2},\\\\ U_6 \\cr&= 0,\\\\ U_7 \\cr&= \\dfrac{\\sqrt{3}}{2}\\end{aligned}",
+                        "Next, calculate the first few terms of the sequence to observe the periodic pattern: \\begin{aligned}U_1 &= \\dfrac{\\sqrt{3}}{2}, \\crU_2 &= \\dfrac{\\sqrt{3}}{2}, \\cr U_3 &= 0, \\cr U_4 &= -\\dfrac{\\sqrt{3}}{2}, \\cr U_5 &= -\\dfrac{\\sqrt{3}}{2}, \\cr U_6 &= 0, \\cr U_7 &= \\dfrac{\\sqrt{3}}{2}\\end{aligned}",
                         "Finally, identify the repeating cycle, which is $\\dfrac{\\sqrt{3}}{2}, \\dfrac{\\sqrt{3}}{2}, 0, -\\dfrac{\\sqrt{3}}{2}, -\\dfrac{\\sqrt{3}}{2}, 0$, and note that the pattern repeats every $6$ terms.",
-                        "Final Answer: $$(a) 6$$"
+                        "Final Answer: $$ 6$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$(b) 2\\pi$$",
+                                "ans": "$$ 2\\pi$$",
                                 "feedback": "This error probably occurs by confusing the period of the sequence with the continuous period of the sine function. The period of a sequence must always be a positive integer $T$."
                         },
                         {
-                                "ans": "$$(c) 3$$",
+                                "ans": "$$ 3$$",
                                 "feedback": "This is a common error from dividing the numerator coefficient by $\\pi$ instead of using the full continuous period relation. Calculating the first few terms of the sequence will show that the cycle repeats every 6 terms."
                         },
                         {
-                                "ans": "$$(d) 6\\pi$$",
+                                "ans": "$$ 6\\pi$$",
                                 "feedback": "This incorrect option combines both the integer period of 6 and the continuous function period $\\pi$. The period of a discrete sequence must be a plain whole number with no factor of $\\pi$ attached."
                         }
                 ],
@@ -1393,24 +1393,24 @@ window.ALEVEL_QUESTIONS = [
                         "Periodic Sequences"
                 ],
                 "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br><br>(a)$$\\ 3\\\\\\ $$(b)$$\\ 2\\pi\\\\\\  (c)\\\\\\ 6\\\\\\ $$(d)$$\\ \\pi$$",
+                "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.",
-                        "Next, calculate the first few terms of the sequence: \\begin{aligned}U_1 &= -\\dfrac{1}{2},\\\\ U_2 \\cr&= -\\dfrac{1}{2},\\\\ U_3 \\cr&= 1,\\\\ U_4 \\cr&= -\\dfrac{1}{2}\\end{aligned}",
+                        "Next, calculate the first few terms of the sequence: \\begin{aligned}U_1 &= -\\dfrac{1}{2}, \\cr U_2 &= -\\dfrac{1}{2},\\cr U_3 &= 1,\\cr U_4 &= -\\dfrac{1}{2}\\end{aligned}",
                         "Finally, identify the repeating cycle, which is $-\\dfrac{1}{2}, -\\dfrac{1}{2}, 1$, and note that the length of this repeating pattern is $3$.",
-                        "Final Answer: $$(a) 3$$"
+                        "Final Answer: $$ 3$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$(b) 2\\pi$$",
+                                "ans": "$$ 2\\pi$$",
                                 "feedback": "This error probably arises from stating the continuous period of a standard trigonometric function rather than finding the discrete integer period of the sequence."
                         },
                         {
-                                "ans": "$$(c) 6$$",
+                                "ans": "$$ 6$$",
                                 "feedback": "This error probably arises from dividing by $\\pi/3$ instead of the full coefficient of $2\\pi/3$. Write down the first few values of $U_n$ to confirm that the pattern repeats every 3 terms."
                         },
                         {
-                                "ans": "$$(d) \\pi$$",
+                                "ans": "$$ \\pi$$",
                                 "feedback": "This is a common error that probably results from confusing the discrete sequence period with the continuous period of functions like $\\cos(2x)$. A discrete sequence period is always a positive integer."
                         }
                 ],
@@ -1431,24 +1431,24 @@ window.ALEVEL_QUESTIONS = [
                         "Periodic Sequences"
                 ],
                 "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.<br><br>State the period of this sequence.<br><br>Choose the correct answer from the options below:<br><br>(a)$$\\ 8\\\\\\ $$(b)$$\\ 2\\pi\\\\\\  (c)\\\\\\ 4\\\\\\ $$(d)$$\\ 4\\pi$$",
+                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.<br><br>State the period of this sequence.",
                 "steps": [
                         "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.",
-                        "Next, calculate the first few terms of the sequence: \\begin{aligned}U_1 &= \\dfrac{1}{\\sqrt{2}},\\\\ U_2 \\cr&= 1,\\\\ U_3 \\cr&= \\dfrac{1}{\\sqrt{2}},\\\\ U_4 \\cr&= 0,\\\\ U_5 \\cr&= -\\dfrac{1}{\\sqrt{2}},\\\\ U_6 \\cr&= -1,\\\\ U_7 \\cr&= -\\dfrac{1}{\\sqrt{2}},\\\\ U_8 \\cr&= 0,\\\\ U_9 \\cr&= \\dfrac{1}{\\sqrt{2}}\\end{aligned}",
+                        "Next, calculate the first few terms of the sequence: \\begin{aligned}U_1 &= \\dfrac{1}{\\sqrt{2}},\\cr U_2 &= 1,\\cr U_3 &= \\dfrac{1}{\\sqrt{2}},\\cr U_4 &= 0,\\cr U_5 &= -\\dfrac{1}{\\sqrt{2}},\\cr U_6 &= -1,\\cr U_7 &= -\\dfrac{1}{\\sqrt{2}},\\cr U_8 &= 0,\\cr U_9 &= \\dfrac{1}{\\sqrt{2}}\\end{aligned}",
                         "Finally, identify the repeating cycle of terms and note that the pattern completes its cycle and starts repeating every $8$ terms.",
-                        "Final Answer: $$(a) 8$$"
+                        "Final Answer: $$ 8$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$(b) 2\\pi$$",
+                                "ans": "$$ 2\\pi$$",
                                 "feedback": "This is a common error that probably results from confusing the discrete sequence period with the continuous period of the trigonometric function. The period of a sequence must be a plain positive integer."
                         },
                         {
-                                "ans": "$$(c) 4$$",
+                                "ans": "$$ 4$$",
                                 "feedback": "This error probably arises from dividing $2\\pi$ by the denominator of 4, rather than dividing by the full coefficient of $\\pi/4$. Remember to divide the continuous period $2\\pi$ by the variable's coefficient."
                         },
                         {
-                                "ans": "$$(d) 4\\pi$$",
+                                "ans": "$$ 4\\pi$$",
                                 "feedback": "This incorrect answer is probably a confusion between discrete sequence period calculations and continuous graph period modifications. The period of a discrete sequence is always a clean whole number."
                         }
                 ],
