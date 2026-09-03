@@ -58,6 +58,7 @@ window.ALEVEL_QUESTIONS = [
                         "Apply the Cosine Rule to find $\\angle AOC$: \\begin{aligned}&16^2\\cr&= 10^2 + 10^2 - 2(10)(10)\\cos(\\angle AOC) \\cr&\\implies 256 = 200 - 200\\cos(\\angle AOC) \\cr&\\cos(\\angle AOC) = -0.28 \\cr&\\angle AOC \\approx 106.26^\\circ\\end{aligned}",
                         "Next, calculate the side lengths of triangle $ABC$ to find $\\angle ABC$: \\begin{aligned}BA &= \\sqrt{(8-0)^2 + (6 - (-10))^2} \\cr&= \\sqrt{320}\\end{aligned} and \\begin{aligned}BC &= \\sqrt{(-8-0)^2 + (6 - (-10))^2} \\cr&= \\sqrt{320}\\end{aligned}, with $$AC = 16$$",
                         "Apply the Cosine Rule on triangle $ABC$: \\begin{aligned}&16^2\\cr &= 320 + 320 - 2(\\sqrt{320})(\\sqrt{320})\\cos(\\angle ABC) \\cr &256 = 640 - 640\\cos(\\angle ABC)) \\cr&\\implies \\cos(\\angle ABC) = 0.6 \\cr&\\angle ABC \\approx 53.13^\\circ\\end{aligned}",
+                        "has this fucking worked?",
                         "Since $$2 \\times 53.13^\\circ = 106.26^\\circ$$, the angle at the center $\\angle AOC$ is exactly twice the angle at the circumference $\\angle ABC$.",
                         "For Part (b)(i), find the midpoint of the chord $AC$: \\begin{aligned}K &= \\left(\\dfrac{8+(-8)}{2}, \\dfrac{6+6}{2}\\right) \\cr&= (0, 6)\\end{aligned}",
                         "Since the midpoint of $AC$ lies on the line $x = 0$ (the $y$-axis), the chord $AC$ is bisected by the $y$-axis.",
