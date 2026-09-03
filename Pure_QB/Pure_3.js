@@ -19,7 +19,7 @@ window.ALEVEL_QUESTIONS = [
                         "Calculate the radius $R$, which is half the length of the diameter $AC$: \\begin{aligned}AC &= \\sqrt{(11 - (-9))^2 + (4-4)^2}\\cr &= \\sqrt{20^2 + 0} \\cr &= 20 \\cr R &= 10\\end{aligned}",
                         "Find the distance squared from point $D(4, 10)$ to the center $M(1, 4)$: \\begin{aligned}MD^2 &= (4-1)^2 + (10-4)^2 \\cr&= 3^2 + 6^2 \\cr&= 9 + 36 \\cr&= 45\\end{aligned}",
                         "Since the distance squared $$45 < R^2 = 100$$, the distance from the point to the center of the circle is less than the radius. Thus, the point $D$ lies inside the circle.",
-                        "Final Answer:<br>(b)(i) $4\\angle ABC &= 90^\\circ$$ $$AC \\text{ is a diameter} $$ (b)(ii) $$\\text{Inside the circle}\\$$"
+                        "Final Answer:<br>(b)(i) $$4\\angle ABC = 90^\\circ$$ $$AC \\text{ is a diameter} $$ (b)(ii) $$\\text{Inside the circle}\\$$"
                 ],
                 "pi_options": [
                         {
@@ -54,10 +54,10 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "A circle has center $O(0, 0)$ and radius $R = 10$. Three points lie on the circle: $A(8, 6)$, $B(0, -10)$, and $C(-8, 6)$.<br><br>(a) Show that the angle at the center, $\\angle AOC$, is exactly twice the size of the angle at the circumference, $\\angle ABC$.<br><br>(b) (i) Show that the chord $AC$ is bisected by the $y$-axis.<br>(ii) Determine whether the point $D(3, -9)$ lies inside the circle, on the circle, or outside the circle. Fully justify your answer.",
                 "steps": [
-                        "For Part (a), calculate the side lengths of triangle $AOC$ to find $\\angle AOC$: $OA = 10,$ $OC = 10,\\begin{aligned} $AC &= \\sqrt{(-8-8)^2 + (6-6)^2}\\cr &= 16\\end{aligned}",
-                        "Apply the Cosine Rule to find $\\angle AOC$: \\begin{aligned}&16^2\\cr&= 10^2 + 10^2 - 2(10)(10)\\cos(\\angle AOC) \\cr&\\implies 256 = 200 - 200\\cos(\\angle AOC) \\cr\\cos(\\angle AOC) = -0.28 \\cr\\angle AOC &\\approx 106.26^\\circ\\end{aligned}",
+                        "For Part (a), calculate the side lengths of triangle $AOC$ to find $\\angle AOC$: $OA = 10,$ $OC = 10,$ \\begin{aligned} $AC &= \\sqrt{(-8-8)^2 + (6-6)^2}\\cr &= 16\\end{aligned}",
+                        "Apply the Cosine Rule to find $\\angle AOC$: \\begin{aligned}&16^2\\cr&= 10^2 + 10^2 - 2(10)(10)\\cos(\\angle AOC) \\cr&\\implies 256 = 200 - 200\\cos(\\angle AOC) \\cr\\cos(\\angle AOC) = -0.28 \\cr\\angle AOC \\approx 106.26^\\circ\\end{aligned}",
                         "Next, calculate the side lengths of triangle $ABC$ to find $\\angle ABC$: \\begin{aligned}BA &= \\sqrt{(8-0)^2 + (6 - (-10))^2} \\cr&= \\sqrt{320}\\end{aligned} and \\begin{aligned}BC &= \\sqrt{(-8-0)^2 + (6 - (-10))^2} \\cr&= \\sqrt{320}\\end{aligned}, with $$AC = 16$$",
-                        "Apply the Cosine Rule on triangle $ABC$: \\begin{aligned}&16^2\\cr &= 320 + 320 - 2(\\sqrt{320})(\\sqrt{320})\\cos(\\angle ABC) \\cr &256 = 640 - 640\\cos(\\angle ABC)) \\cr\\implies \\cos(\\angle ABC) = 0.6 \\cr\\angle ABC &\\approx 53.13^\\circ\\end{aligned}",
+                        "Apply the Cosine Rule on triangle $ABC$: \\begin{aligned}&16^2\\cr &= 320 + 320 - 2(\\sqrt{320})(\\sqrt{320})\\cos(\\angle ABC) \\cr &256 = 640 - 640\\cos(\\angle ABC)) \\cr\\implies \\cos(\\angle ABC) = 0.6 \\cr\\angle ABC \\approx 53.13^\\circ\\end{aligned}",
                         "Since $$2 \\times 53.13^\\circ = 106.26^\\circ$$, the angle at the center $\\angle AOC$ is exactly twice the angle at the circumference $\\angle ABC$.",
                         "For Part (b)(i), find the midpoint of the chord $AC$: \\begin{aligned}K &= \\left(\\dfrac{8+(-8)}{2}, \\dfrac{6+6}{2}\\right) \\cr&= (0, 6)\\end{aligned}",
                         "Since the midpoint of $AC$ lies on the line $x = 0$ (the $y$-axis), the chord $AC$ is bisected by the $y$-axis.",
