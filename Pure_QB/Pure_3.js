@@ -16,10 +16,10 @@ window.ALEVEL_QUESTIONS = [
                         "Since the product of their gradients is \\begin{aligned}m_{AB} \\times m_{BC} &= \\dfrac{1}{2} \\times (-2) \\cr&= -1\\end{aligned}, the lines $AB$ and $BC$ are perpendicular, meaning angle $ABC$ is a right angle.",
                         "For Part (b)(i), recall the circle theorem that the angle in a semicircle is a right angle. Since angle $ABC = 90^\\circ$ and the points $A$, $B$, and $C$ lie on the circumference of a circle, the hypotenuse $AC$ must be a diameter of the circle.",
                         "For Part (b)(ii), find the center of the circle, which is the midpoint of the diameter $AC$: \\begin{aligned}M &= \\left(\\dfrac{-9+11}{2}, \\dfrac{4+4}{2}\\right) \\cr&= (1, 4)\\end{aligned}",
-                        "Calculate the radius $R$, which is half the length of the diameter $AC$: \\begin{aligned}AC &= \\sqrt{(11 - (-9))^2 + (4-4)^2} = \\sqrt{20^2 + 0} = 20 \\crR &= 10\\end{aligned}",
+                        "Calculate the radius $R$, which is half the length of the diameter $AC$: \\begin{aligned}AC &= \\sqrt{(11 - (-9))^2 + (4-4)^2}\\cr &= \\sqrt{20^2 + 0} \\cr &= 20 \\cr R &= 10\\end{aligned}",
                         "Find the distance squared from point $D(4, 10)$ to the center $M(1, 4)$: \\begin{aligned}MD^2 &= (4-1)^2 + (10-4)^2 \\cr&= 3^2 + 6^2 \\cr&= 9 + 36 \\cr&= 45\\end{aligned}",
                         "Since the distance squared $$45 < R^2 = 100$$, the distance from the point to the center of the circle is less than the radius. Thus, the point $D$ lies inside the circle.",
-                        "Final Answer: \\begin{aligned}\\text{Part (b)(i): } \\angle ABC &= 90^\\circ \\crAC \\text{ is a diameter} $$ (b)(ii) $$\\text{Inside the circle}\\end{aligned}"
+                        "Final Answer:<br>(b)(i) $4\\angle ABC &= 90^\\circ$$ $$AC \\text{ is a diameter} $$ (b)(ii) $$\\text{Inside the circle}\\$$"
                 ],
                 "pi_options": [
                         {
@@ -27,11 +27,11 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "In Part (b)(ii), you probably calculated the distance from $D$ to the center incorrectly, or confused the value with the radius squared. Since $MD^2 = 45$, which is strictly less than $R^2 = 100$, the point must lie inside the circle, not on it."
                         },
                         {
-                                "ans": "<br>(b)(i) $$\\text{Opposite angles supplementary}$$ (b)(ii) $$\\text{\\text{Inside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{Opposite angles supplementary}$$ (b)(ii) $$\\text{Inside the circle}$$",
                                 "feedback": "In Part (b)(i), supplementary opposite angles is a theorem for cyclic quadrilaterals, not for proving a diameter. The correct theorem to cite is that an angle in a semicircle is a right angle, which means the hypotenuse $AC$ is a diameter."
                         },
                         {
-                                "ans": "<br>(b)(i) $$\\text{Alternate segment theorem}$$  (b)(ii) $$\\text{\\text{Outside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{Alternate segment theorem}$$  (b)(ii) $$\\text{Outside the circle}$$",
                                 "feedback": "In Part (b)(i), the alternate segment theorem concerns tangents and chords, which is not applicable here. In Part (b)(ii), $D$ lies inside the circle because its distance to the center, $\\sqrt{45}$, is less than the radius of $10$."
                         }
                 ],
@@ -71,7 +71,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "In Part (b)(ii), you probably miscalculated the distance or confused the radius squared ($100$) with the coordinate values. Since $OD^2 = 90 < 100$, the point must lie inside the circle."
                         },
                         {
-                                "ans": "<br>(b)(i) $$\\text{ Midpoint is (0, 6)$$ $$\\text{which lies on the } y\\text{-axis} $$ (b)(ii) $$\\text{Outside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ Midpoint is (0, 6)}$$ $$\\text{which lies on the } y\\text{-axis} $$ (b)(ii) $$\\text{Outside the circle}$$",
                                 "feedback": "In Part (b)(ii), the distance squared to the origin is $3^2 + (-9)^2 = 90$. Because this is less than the radius squared ($100$), the point lies inside the circle, not outside."
                         },
                         {
