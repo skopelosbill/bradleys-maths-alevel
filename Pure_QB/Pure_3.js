@@ -19,7 +19,7 @@ window.ALEVEL_QUESTIONS = [
                         "Calculate the radius $R$, which is half the length of the diameter $AC$: \\begin{aligned}AC &= \\sqrt{(11 - (-9))^2 + (4-4)^2} = \\sqrt{20^2 + 0} = 20 \\crR &= 10\\end{aligned}",
                         "Find the distance squared from point $D(4, 10)$ to the center $M(1, 4)$: \\begin{aligned}MD^2 &= (4-1)^2 + (10-4)^2 \\cr&= 3^2 + 6^2 \\cr&= 9 + 36 \\cr&= 45\\end{aligned}",
                         "Since the distance squared $$45 < R^2 = 100$$, the distance from the point to the center of the circle is less than the radius. Thus, the point $D$ lies inside the circle.",
-                        "Final Answer: \\begin{aligned}\\text{Part (b)(i): } \\angle ABC &= 90^\\circ \\crAC \\text{ is a diameter} (b)(ii) $$Inside the circle}\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\\text{Part (b)(i): } \\angle ABC &= 90^\\circ \\crAC \\text{ is a diameter} (b)(ii) $$\\text{Inside the circle}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -27,11 +27,11 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "In Part (b)(ii), you probably calculated the distance from $D$ to the center incorrectly, or confused the value with the radius squared. Since $MD^2 = 45$, which is strictly less than $R^2 = 100$, the point must lie inside the circle, not on it."
                         },
                         {
-                                "ans": "<br>(b)(i)$$\\text{Opposite angles supplementary}$$ (b)(ii) $$\\text{Inside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{\\text{Opposite angles supplementary}$$ (b)(ii) $$\\text{\\text{Inside the circle}$$",
                                 "feedback": "In Part (b)(i), supplementary opposite angles is a theorem for cyclic quadrilaterals, not for proving a diameter. The correct theorem to cite is that an angle in a semicircle is a right angle, which means the hypotenuse $AC$ is a diameter."
                         },
                         {
-                                "ans": "<br>(b)(i)$$\\text{Alternate segment theorem}$$ (b)(ii) $$\\text{Outside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{\\text{Alternate segment theorem}$$ (b)(ii) $$\\text{\\text{Outside the circle}$$",
                                 "feedback": "In Part (b)(i), the alternate segment theorem concerns tangents and chords, which is not applicable here. In Part (b)(ii), $D$ lies inside the circle because its distance to the center, $\\sqrt{45}$, is less than the radius of $10$."
                         }
                 ],
@@ -63,19 +63,19 @@ window.ALEVEL_QUESTIONS = [
                         "Since the midpoint of $AC$ lies on the line $x = 0$ (the $y$-axis), the chord $AC$ is bisected by the $y$-axis.",
                         "For Part (b)(ii), calculate the distance squared from point $D(3, -9)$ to the center $O(0, 0)$: \\begin{aligned}OD^2 &= 3^2 + (-9)^2 \\cr&= 9 + 81 \\cr&= 90\\end{aligned}",
                         "Since the distance squared $$90 < R^2 = 100$$, the distance from the point to the center of the circle is less than the radius. Thus, the point $D$ lies inside the circle.",
-                        "Final Answer: <br>(b)(i)$$ Midpoint is (0, 6) which lies on the } y\\text{-axis} (b)(ii) $$Inside the circle}$$"
+                        "Final Answer: <br>(b)(i) $$\\text{ Midpoint is (0, 6) which lies on the } y\\text{-axis} (b)(ii) $$\\text{Inside the circle}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<br>(b)(i)$$ Midpoint is (0, 6) which lies on the } y\\text{-axis} (b)(ii) $$On the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ Midpoint is (0, 6) which lies on the } y\\text{-axis} (b)(ii) $$\\text{On the circle}$$",
                                 "feedback": "In Part (b)(ii), you probably miscalculated the distance or confused the radius squared ($100$) with the coordinate values. Since $OD^2 = 90 < 100$, the point must lie inside the circle."
                         },
                         {
-                                "ans": "<br>(b)(i)$$ Midpoint is (0, 6) which lies on the } y\\text{-axis} (b)(ii) $$Outside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ Midpoint is (0, 6) which lies on the } y\\text{-axis} (b)(ii) $$\\text{Outside the circle}$$",
                                 "feedback": "In Part (b)(ii), the distance squared to the origin is $3^2 + (-9)^2 = 90$. Because this is less than the radius squared ($100$), the point lies inside the circle, not outside."
                         },
                         {
-                                "ans": "<br>(b)(i)$$ Gradient is zero} (b)(ii) $$Inside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ Gradient is zero} (b)(ii) $$\\text{Inside the circle}$$",
                                 "feedback": "In Part (b)(i), showing the gradient is zero proves the chord is horizontal, but does not prove it is bisected by the $y$-axis. You must show the midpoint of $AC$ has an $x$-coordinate of $0$."
                         }
                 ],
@@ -107,19 +107,19 @@ window.ALEVEL_QUESTIONS = [
                         "Since a circle is defined as the set of points equidistant from a fixed center, and all four points are at a distance of $5$ from $(0, 0)$, the origin must be the center of the circle.",
                         "For Part (b)(ii), calculate the distance squared from point $E(-4, 4)$ to the center $(0, 0)$: \\begin{aligned}OE^2 &= (-4)^2 + 4^2 \\cr&= 16 + 16 \\cr&= 32\\end{aligned}",
                         "Since the distance squared $$32 > R^2 = 25$$, the distance from the point to the center of the circle is greater than the radius. Thus, the point $E$ lies outside the circle.",
-                        "Final Answer: <br>(b)(i)$$ All points are distance } 5 \\text{ from (0, 0)} (b)(ii) $$Outside the circle}$$"
+                        "Final Answer: <br>(b)(i) $$\\text{ All points are distance } 5 \\text{ from (0, 0)} (b)(ii) $$\\text{Outside the circle}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<br>(b)(i)$$ All points are distance } 5 \\text{ from (0, 0)} (b)(ii) $$Inside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ All points are distance } 5 \\text{ from (0, 0)} (b)(ii) $$\\text{Inside the circle}$$",
                                 "feedback": "In Part (b)(ii), you probably miscalculated the distance. The distance squared from $E$ to $(0,0)$ is $32$. Since $32 > R^2 = 25$, the point lies outside the circle, not inside."
                         },
                         {
-                                "ans": "<br>(b)(i)$$ All points are distance } 5 \\text{ from (0, 0)} (b)(ii) $$On the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ All points are distance } 5 \\text{ from (0, 0)} (b)(ii) $$\\text{On the circle}$$",
                                 "feedback": "In Part (b)(ii), the distance squared from $E(-4,4)$ is $(-4)^2 + 4^2 = 32$. Since this is strictly greater than the radius squared ($25$), the point must lie outside the circle."
                         },
                         {
-                                "ans": "<br>(b)(i)$$ The midpoint of BD is (0, 0)} (b)(ii) $$Outside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ The midpoint of BD is (0, 0)} (b)(ii) $$\\text{Outside the circle}$$",
                                 "feedback": "In Part (b)(i), the midpoint of $BD$ being $(0,0)$ proves that $BD$ is a diameter, but this is only true for diagonals and doesn't explicitly prove $(0,0)$ is the center unless you also prove the equidistance of $A$ and $C$."
                         }
                 ],
@@ -151,19 +151,19 @@ window.ALEVEL_QUESTIONS = [
                         "Sum the squares to verify the relation: \\begin{aligned}d^2 + \\left(\\dfrac{AB}{2}\\right)^2 &= 12.5 + 12.5 \\cr&= 25 \\cr&= R^2\\end{aligned}. The relation is verified.",
                         "For Part (b)(ii), calculate the distance squared from point $D(4, -2)$ to the center $M(1, 1)$: \\begin{aligned}MD^2 &= (4-1)^2 + (-2-1)^2 \\cr&= 3^2 + (-3)^2 \\cr&= 18\\end{aligned}",
                         "Since the distance squared $$18 < R^2 = 25$$, the distance from the point to the center of the circle is less than the radius. Thus, the point $D$ lies inside the circle.",
-                        "Final Answer: \\begin{aligned}\\text{Part (b)(i): } d^2 + (AB/2)^2 &= 12.5 + 12.5 \\cr&= 25 \\cr&= R^2 \\text{ is verified} (b)(ii) $$Inside the circle}\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\\text{Part (b)(i): } d^2 + (AB/2)^2 &= 12.5 + 12.5 \\cr&= 25 \\cr&= R^2 \\text{ is verified} (b)(ii) $$\\text{Inside the circle}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<br>(b)(i)$$ } d^2 + (AB/2)^2 = 12.5 + 12.5 = 25 = R^2 \\text{ is verified} (b)(ii) $$On the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ } d^2 + (AB/2)^2 = 12.5 + 12.5 = 25 = R^2 \\text{ is verified} (b)(ii) $$\\text{On the circle}$$",
                                 "feedback": "In Part (b)(ii), you probably miscalculated the distance to the center. Since $MD^2 = 18 < R^2 = 25$, the distance from $D$ to the center is strictly less than the radius of $5$, meaning it lies inside the circle, not on it."
                         },
                         {
-                                "ans": "<br>(b)(i)$$ } d^2 + (AB/2)^2 = 12.5 + 12.5 = 25 = R^2 \\text{ is verified} (b)(ii) $$Outside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ } d^2 + (AB/2)^2 = 12.5 + 12.5 = 25 = R^2 \\text{ is verified} (b)(ii) $$\\text{Outside the circle}$$",
                                 "feedback": "In Part (b)(ii), the distance squared to the center $M(1,1)$ is $(4-1)^2 + (-2-1)^2 = 18$. Since this is less than the radius squared ($25$), the point lies inside the circle, not outside."
                         },
                         {
-                                "ans": "<br>(b)(i)$$ Gradient of bisector is -7} (b)(ii) $$Inside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ Gradient of bisector is -7} (b)(ii) $$\\text{Inside the circle}$$",
                                 "feedback": "In Part (b)(i), you probably made a sign error when finding the perpendicular gradient. Since $m_{AB} = -1/7$, the perpendicular gradient is $+7$, not $-7$."
                         }
                 ],
@@ -194,19 +194,19 @@ window.ALEVEL_QUESTIONS = [
                         "Using the Cosine Rule with $\\cos(POT) = 0.6$ verifies the length of the tangent: \\begin{aligned}PT &= \\sqrt{10^2 + 6^2 - 2(10)(6)(0.6)} \\cr&= \\sqrt{64} \\cr&= 8\\end{aligned}, as required.",
                         "For Part (b)(ii), calculate the distance squared from $D(5, -4)$ to the center $O(0, 0)$: \\begin{aligned}OD^2 &= 5^2 + (-4)^2 \\cr&= 25 + 16 \\cr&= 41\\end{aligned}",
                         "Since the distance squared $$41 > R^2 = 36$$, the distance from the point to the center of the circle is greater than the radius. Thus, the point $D$ lies outside the circle.",
-                        "Final Answer: <br>(b)(i)$$ } PT = 8 \\text{ is verified using the Cosine Rule} (b)(ii) $$Outside the circle}$$"
+                        "Final Answer: <br>(b)(i) $$\\text{ } PT = 8 \\text{ is verified using the Cosine Rule} (b)(ii) $$\\text{Outside the circle}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "<br>(b)(i)$$ } PT^2 = 100 + 36 - 72 = 64 \\implies PT = 8 (b)(ii) $$Inside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ } PT^2 = 100 + 36 - 72 = 64 \\implies PT = 8 (b)(ii) $$\\text{Inside the circle}$$",
                                 "feedback": "In Part (b)(ii), you probably calculated the distance from the center incorrectly. The distance squared from $D(5,-4)$ to the origin is $41$. Since $41 > R^2 = 36$, the point must lie outside the circle."
                         },
                         {
-                                "ans": "<br>(b)(i)$$ } PT^2 = 100 + 36 - 72 = 64 \\implies PT = 8 (b)(ii) $$On the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ } PT^2 = 100 + 36 - 72 = 64 \\implies PT = 8 (b)(ii) $$\\text{On the circle}$$",
                                 "feedback": "In Part (b)(ii), the distance squared to the origin is $5^2 + (-4)^2 = 41$. Since this is strictly greater than the radius squared ($36$), the point lies outside the circle, not on it."
                         },
                         {
-                                "ans": "<br>(b)(i)$$ } \\cos(POT) = 0.8 (b)(ii) $$Outside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ } \\cos(POT) = 0.8 (b)(ii) $$\\text{Outside the circle}$$",
                                 "feedback": "In Part (b)(i), the cosine of angle $POT$ is $0.6$, which arises from $72 \\div 120 = 0.6$. A value of $0.8$ is incorrect and will affect the subsequent Cosine Rule calculation."
                         }
                 ],
