@@ -27,11 +27,11 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "In Part (b)(ii), you probably calculated the distance from $D$ to the center incorrectly, or confused the value with the radius squared. Since $MD^2 = 45$, which is strictly less than $R^2 = 100$, the point must lie inside the circle, not on it."
                         },
                         {
-                                "ans": "<br>(b)(i) $$\\text{\\text{Opposite angles supplementary}$$ $$ (b)(ii) $$\\text{\\text{Inside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{Opposite angles supplementary}$$ (b)(ii) $$\\text{\\text{Inside the circle}$$",
                                 "feedback": "In Part (b)(i), supplementary opposite angles is a theorem for cyclic quadrilaterals, not for proving a diameter. The correct theorem to cite is that an angle in a semicircle is a right angle, which means the hypotenuse $AC$ is a diameter."
                         },
                         {
-                                "ans": "<br>(b)(i) $$\\text{\\text{Alternate segment theorem}$$ $$ (b)(ii) $$\\text{\\text{Outside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{Alternate segment theorem}$$  (b)(ii) $$\\text{\\text{Outside the circle}$$",
                                 "feedback": "In Part (b)(i), the alternate segment theorem concerns tangents and chords, which is not applicable here. In Part (b)(ii), $D$ lies inside the circle because its distance to the center, $\\sqrt{45}$, is less than the radius of $10$."
                         }
                 ],
@@ -67,11 +67,11 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "<br>(b)(i) $$\\text{ Midpoint is (0, 6) which lies on the } y\\text{-axis} $$ (b)(ii) $$\\text{On the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ Midpoint is (0, 6)}$$ $$\\text{which lies on the } y\\text{-axis} $$ (b)(ii) $$\\text{On the circle}$$",
                                 "feedback": "In Part (b)(ii), you probably miscalculated the distance or confused the radius squared ($100$) with the coordinate values. Since $OD^2 = 90 < 100$, the point must lie inside the circle."
                         },
                         {
-                                "ans": "<br>(b)(i) $$\\text{ Midpoint is (0, 6) which lies on the } y\\text{-axis} $$ (b)(ii) $$\\text{Outside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ Midpoint is (0, 6)$$ $$\\text{which lies on the } y\\text{-axis} $$ (b)(ii) $$\\text{Outside the circle}$$",
                                 "feedback": "In Part (b)(ii), the distance squared to the origin is $3^2 + (-9)^2 = 90$. Because this is less than the radius squared ($100$), the point lies inside the circle, not outside."
                         },
                         {
@@ -155,11 +155,11 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "<br>(b)(i) $$\\text{ } d^2 + (AB/2)^2 = 12.5 + 12.5 = 25 = R^2 \\text{ is verified} $$ (b)(ii) $$\\text{On the circle}$$",
+                                "ans": "<br>(b)(i) \\begin{aligned}d^2 + (AB/2)^2 &= 12.5 + 12.5\\cr &= 25\\cr &= R^2 \\text{ is verified} \\end{aligned} (b)(ii) $$\\text{On the circle}$$",
                                 "feedback": "In Part (b)(ii), you probably miscalculated the distance to the center. Since $MD^2 = 18 < R^2 = 25$, the distance from $D$ to the center is strictly less than the radius of $5$, meaning it lies inside the circle, not on it."
                         },
                         {
-                                "ans": "<br>(b)(i) $$\\text{ } d^2 + (AB/2)^2 = 12.5 + 12.5 = 25 = R^2 \\text{ is verified} $$ (b)(ii) $$\\text{Outside the circle}$$",
+                                "ans": "<br>(b)(i) \\begin{aligned}d^2 + (AB/2)^2 &= 12.5 + 12.5 \\cr & = 25 \\cr & = R^2 \\text{ is verified} \\end{aligned} (b)(ii) $$\\text{Outside the circle}$$",
                                 "feedback": "In Part (b)(ii), the distance squared to the center $M(1,1)$ is $(4-1)^2 + (-2-1)^2 = 18$. Since this is less than the radius squared ($25$), the point lies inside the circle, not outside."
                         },
                         {
@@ -198,11 +198,11 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "<br>(b)(i) $$\\text{ } PT^2 = 100 + 36 - 72 = 64 \\implies PT = 8 $$ (b)(ii) $$\\text{Inside the circle}$$",
+                                "ans": "<br>(b)(i) \\begin{aligned}PT^2 &= 100 + 36 - 72\\cr & = 64 \\cr\\implies PT &= 8 \\end{aligned} (b)(ii) $$\\text{Inside the circle}$$",
                                 "feedback": "In Part (b)(ii), you probably calculated the distance from the center incorrectly. The distance squared from $D(5,-4)$ to the origin is $41$. Since $41 > R^2 = 36$, the point must lie outside the circle."
                         },
                         {
-                                "ans": "<br>(b)(i) $$\\text{ } PT^2 = 100 + 36 - 72 = 64 \\implies PT = 8 $$ (b)(ii) $$\\text{On the circle}$$",
+                                "ans": "<br>(b)(i)  \\begin{aligned}PT^2 &= 100 + 36 - 72\\cr &= 64 \\cr \\implies PT &= 8 $$ (b)(ii) \\end{aligned}\\text{On the circle}$$",
                                 "feedback": "In Part (b)(ii), the distance squared to the origin is $5^2 + (-4)^2 = 41$. Since this is strictly greater than the radius squared ($36$), the point lies outside the circle, not on it."
                         },
                         {
