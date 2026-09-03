@@ -23,15 +23,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (b)(i): } \\angle ABC = 90^\\circ \\implies AC \\text{ is a diameter},\\quad \\text{Part (b)(ii): On the circle}$$",
+                                "ans": "(b)(i) $$\\angle ABC = 90^\\circ \\implies AC \\text{ is a diameter}$$ (b)(ii): $$\\text{On the circle}$$",
                                 "feedback": "In Part (b)(ii), you probably calculated the distance from $D$ to the center incorrectly, or confused the value with the radius squared. Since $MD^2 = 45$, which is strictly less than $R^2 = 100$, the point must lie inside the circle, not on it."
                         },
                         {
-                                "ans": "$$\\text{Part (b)(i): Opposite angles are supplementary},\\quad \\text{Part (b)(ii): Inside the circle}$$",
+                                "ans": "(b)(i)$$\\text{Opposite angles supplementary}$$\\(b)(ii) $$\\text{Inside the circle}$$",
                                 "feedback": "In Part (b)(i), supplementary opposite angles is a theorem for cyclic quadrilaterals, not for proving a diameter. The correct theorem to cite is that an angle in a semicircle is a right angle, which means the hypotenuse $AC$ is a diameter."
                         },
                         {
-                                "ans": "$$\\text{Part (b)(i): Alternate segment theorem},\\quad \\text{Part (b)(ii): Outside the circle}$$",
+                                "ans": "(b)(i)$$\\text{Alternate segment theorem}$$ $$(b)(ii) $$\\text{Outside the circle}$$",
                                 "feedback": "In Part (b)(i), the alternate segment theorem concerns tangents and chords, which is not applicable here. In Part (b)(ii), $D$ lies inside the circle because its distance to the center, $\\sqrt{45}$, is less than the radius of $10$."
                         }
                 ],
