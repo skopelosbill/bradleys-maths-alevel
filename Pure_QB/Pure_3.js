@@ -961,15 +961,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 30.763 \\cr T_2 &= 30.642 \\cr T_3 &= 30.593 \\cr \\text{Interval:} & \\quad 28 < t < 29 \\implies 2038 \\end{aligned}$",
+                                "ans": "$\\begin{aligned} T_1 &= 30.763 \\cr T_2 &= 30.642 \\cr T_3 &= 30.593 \\cr \\text{Interval:} & \\quad 28 < t < 29 \\implies 2038 \\end{aligned}",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the square root of $946.129$. Carrying the rounded value $T_1 \\approx 30.763$ instead of $30.759$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 30.759 \\cr T_2 &= 30.644 \\cr T_3 &= 30.588 \\cr \\text{Interval:} & \\quad 27 < t < 28 \\implies 2037 \\end{aligned}$",
+                                "ans": "$\\begin{aligned} T_1 &= 30.759 \\cr T_2 &= 30.644 \\cr T_3 &= 30.588 \\cr \\text{Interval:} & \\quad 27 < t < 28 \\implies 2037 \\end{aligned}",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 28$ is your target value, evaluating both models shows that they do not cross until $t$ is between $28$ and $29$, which corresponds to the year 2038."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 30.759 \\cr T_2 &= 30.644 \\cr T_3 &= 30.588 \\cr \\text{Interval:} & \\quad 29 < t < 30 \\implies 2039 \\end{aligned}$",
+                                "ans": "$\\begin{aligned} T_1 &= 30.759 \\cr T_2 &= 30.644 \\cr T_3 &= 30.588 \\cr \\text{Interval:} & \\quad 29 < t < 30 \\implies 2039 \\end{aligned}",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 28$. Since $R \\approx 20.68$ and $C \\approx 13.40$, revenue is still greater than costs, meaning they have not crossed yet."
                         }
                 ],
@@ -1004,19 +1004,19 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate both models at $t = 69$:<br><br>\\begin{aligned} V &= 8 + 48\\left(\\dfrac{ 69 }{ 12 }\\right)^2 - 8\\left(\\dfrac{ 69 }{ 12 }\\right)^3 \\cr &\\approx 74.13\\text{ thousand} \\end{aligned}<br><br>and<br><br>\\begin{aligned} V_{\\text{in}} &= 0.5 \\times 1.07^{ 69 } \\cr &\\approx 53.20\\text{ thousand} \\end{aligned}<br><br>Since $74.13 > 53.20$, reservoir volume exceeds inflow.",
                         "Evaluate both models at $t = 70$:<br><br>\\begin{aligned} V &= 8 + 48\\left(\\dfrac{ 70 }{ 12 }\\right)^2 - 8\\left(\\dfrac{ 70 }{ 12 }\\right)^3 \\cr &\\approx 53.37\\text{ thousand} \\end{aligned}<br><br>and<br><br>\\begin{aligned} V_{\\text{in}} &= 0.5 \\times 1.07^{ 70 } \\cr &\\approx 56.92\\text{ thousand} \\end{aligned}<br><br>Since $53.37 < 56.92$, inflow now exceeds reservoir volume.",
                         "Since the difference $V - V_{\\text{in}}$ changes sign from positive to negative between $t = 69$ and $t = 70$, the curves must intersect during this interval (which corresponds exactly to the 70th month).",
-                        "<strong>Final Answer:</strong><br><br>\\begin{aligned} T_1 &= 72.775 \\cr T_2 &= 72.626 \\cr T_3 &= 72.527 \\cr \\text{Interval:} & \\quad 69 < t < 70 \\implies \\text{70th month} \\end{aligned}"
+                        "<strong>Final Answer:</strong><br><br>\\begin{aligned} T_1 &= 72.775 \\cr T_2 &= 72.626 \\cr T_3 &= 72.527 \\cr \\text{Interval:} & \\quad 69 < t < 70 \\cr & \\implies \\text{70th month} \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 72.700 \\cr T_2 &= 72.400 \\cr T_3 &= 72.200 \\cr \\text{Interval:} & \\quad 69 < t < 70 \\implies \\text{70th month} \\end{aligned}$",
+                                "ans": "$\\begin{aligned} T_1 &= 72.700 \\cr T_2 &= 72.400 \\cr T_3 &= 72.200 \\cr \\text{Interval:} & \\quad 69 < t < 70  \\cr & \\implies \\text{70th month} \\end{aligned}",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $385,416$. Carrying the rounded value $T_1 \\approx 72.700$ instead of $72.775$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 72.775 \\cr T_2 &= 72.626 \\cr T_3 &= 72.527 \\cr \\text{Interval:} & \\quad 68 < t < 69 \\implies \\text{69th month} \\end{aligned}$",
+                                "ans": "$\\begin{aligned} T_1 &= 72.775 \\cr T_2 &= 72.626 \\cr T_3 &= 72.527 \\cr \\text{Interval:} & \\quad 68 < t < 69 \\cr &  \\implies \\text{69th month} \\end{aligned}",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 69$ is your target value, evaluating both models shows that they do not cross until $t$ is between $69$ and $70$, which corresponds to the 70th month."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 72.775 \\cr T_2 &= 72.626 \\cr T_3 &= 72.527 \\cr \\text{Interval:} & \\quad 70 < t < 71 \\implies \\text{71st month} \\end{aligned}$",
+                                "ans": "$\\begin{aligned} T_1 &= 72.775 \\cr T_2 &= 72.626 \\cr T_3 &= 72.527 \\cr \\text{Interval:} & \\quad 70 < t < 71  \\cr & \\implies \\text{71st month} \\end{aligned}",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 69$. Since $V \\approx 74.13$ and $V_{\\text{in}} \\approx 53.20$, reservoir volume is still greater than inflow, meaning they have not crossed yet."
                         }
                 ],
@@ -1051,19 +1051,19 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate both models at $t = 19$:<br><br>\\begin{aligned} R &= 5 + 50\\left(\\dfrac{ 19 }{ 10 }\\right)^3 - 25\\left(\\dfrac{ 19 }{ 10 }\\right)^4 \\cr &\\approx 22.15\\text{ moles/s} \\end{aligned}<br><br>and<br><br>\\begin{aligned} R_{\\text{inh}} &= 0.8 \\times 1.15^{ 19 } \\cr &\\approx 11.39\\text{ moles/s} \\end{aligned}<br><br>Since $22.15 > 11.39$, primary reaction rate exceeds the inhibitor rate.",
                         "Evaluate both models at $t = 20$:<br><br>\\begin{aligned} R &= 5 + 50\\left(\\dfrac{ 20 }{ 10 }\\right)^3 - 25\\left(\\dfrac{ 20 }{ 10 }\\right)^4 \\cr &= 5\\text{ moles/s} \\end{aligned}<br><br>and<br><br>\\begin{aligned} R_{\\text{inh}} &= 0.8 \\times 1.15^{ 20 } \\cr &\\approx 13.09\\text{ moles/s} \\end{aligned}<br><br>Since $5 < 13.09$, the inhibitor rate now exceeds the primary reaction rate.",
                         "Since the difference $R - R_{\\text{inh}}$ changes sign from positive to negative between $t = 19$ and $t = 20$, the curves must intersect during this interval (which corresponds exactly to the 20th minute).",
-                        "<strong>Final Answer:</strong><br><br>\\begin{aligned} T_1 &= 20.735 \\cr T_2 &= 20.563 \\cr T_3 &= 20.451 \\cr \\text{Interval:} & \\quad 19 < t < 20 \\implies \\text{20th minute} \\end{aligned}"
+                        "<strong>Final Answer:</strong><br><br>\\begin{aligned} T_1 &= 20.735 \\cr T_2 &= 20.563 \\cr T_3 &= 20.451 \\cr \\text{Interval:} & \\quad 19 < t < 20  \\cr & \\implies \\text{20th minute} \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 20.730 \\cr T_2 &= 20.610 \\cr T_3 &= 20.540 \\cr \\text{Interval:} & \\quad 19 < t < 20 \\implies \\text{20th minute} \\end{aligned}$",
+                                "ans": "$\\begin{aligned} T_1 &= 20.730 \\cr T_2 &= 20.610 \\cr T_3 &= 20.540 \\cr \\text{Interval:} & \\quad 19 < t < 20  \\cr & \\implies \\text{20th minute} \\end{aligned}",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $8,915.24$. Carrying the rounded value $T_1 \\approx 20.730$ instead of $20.735$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 20.735 \\cr T_2 &= 20.563 \\cr T_3 &= 20.451 \\cr \\text{Interval:} & \\quad 18 < t < 19 \\implies \\text{19th minute} \\end{aligned}$",
+                                "ans": "$\\begin{aligned} T_1 &= 20.735 \\cr T_2 &= 20.563 \\cr T_3 &= 20.451 \\cr \\text{Interval:} & \\quad 18 < t < 19 \\cr &  \\implies \\text{19th minute} \\end{aligned}",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 19$ is your target value, evaluating both models shows that they do not cross until $t$ is between $19$ and $20$, which corresponds to the 20th minute."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 20.735 \\cr T_2 &= 20.563 \\cr T_3 &= 20.451 \\cr \\text{Interval:} & \\quad 20 < t < 21 \\implies \\text{21st minute} \\end{aligned}$",
+                                "ans": "$\\begin{aligned} T_1 &= 20.735 \\cr T_2 &= 20.563 \\cr T_3 &= 20.451 \\cr \\text{Interval:} & \\quad 20 < t < 21 \\cr &  \\implies \\text{21st minute} \\end{aligned}",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 19$. Since $R \\approx 22.15$ and $R_{\\text{inh}} \\approx 11.39$, primary rate is still greater than inhibitor rate, meaning they have not crossed yet."
                         }
                 ],
@@ -1098,19 +1098,19 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate both models at $t = 39$:<br><br>\\begin{aligned} V &= 4 + 40\\left(\\dfrac{ 39 }{ 20 }\\right)^3 - 20\\left(\\dfrac{ 39 }{ 20 }\\right)^4 \\cr &\\approx 11.42\\text{ million} \\end{aligned}<br><br>and<br><br>\\begin{aligned} C &= 0.2 \\times 1.085^{ 39 } \\cr &\\approx 4.82\\text{ million} \\end{aligned}<br><br>Since $11.42 > 4.82$, fleet value exceeds maintenance costs.",
                         "Evaluate both models at $t = 40$:<br><br>\\begin{aligned} V &= 4 + 40\\left(\\dfrac{ 40 }{ 20 }\\right)^3 - 20\\left(\\dfrac{ 40 }{ 20 }\\right)^4 \\cr &= 4\\text{ million} \\end{aligned}<br><br>and<br><br>\\begin{aligned} C &= 0.2 \\times 1.085^{ 40 } \\cr &\\approx 5.23\\text{ million} \\end{aligned}<br><br>Since $4 < 5.23$, maintenance costs now exceed the fleet value.",
                         "Since the difference $V - C$ changes sign from positive to negative between $t = 39$ and $t = 40$, the curves must intersect during this interval (which corresponds exactly to the 40th year).",
-                        "<strong>Final Answer:</strong><br><br>\\begin{aligned} T_1 &= 40.821 \\cr T_2 &= 40.704 \\cr T_3 &= 40.627 \\cr \\text{Interval:} & \\quad 39 < t < 40 \\implies \\text{40th year} \\end{aligned}"
+                        "<strong>Final Answer:</strong><br><br>\\begin{aligned} T_1 &= 40.821 \\cr T_2 &= 40.704 \\cr T_3 &= 40.627 \\cr \\text{Interval:} & \\quad 39 < t < 40 \\cr &  \\implies \\text{40th year} \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 40.820 \\cr T_2 &= 40.730 \\cr T_3 &= 40.670 \\cr \\text{Interval:} & \\quad 39 < t < 40 \\implies \\text{40th year} \\end{aligned}$",
+                                "ans": "$\\begin{aligned} T_1 &= 40.820 \\cr T_2 &= 40.730 \\cr T_3 &= 40.670 \\cr \\text{Interval:} & \\quad 39 < t < 40 \\implies \\cr &  \\text{40th year} \\end{aligned}",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $68,020.5$. Carrying the rounded value $T_1 \\approx 40.820$ instead of $40.821$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 40.821 \\cr T_2 &= 40.704 \\cr T_3 &= 40.627 \\cr \\text{Interval:} & \\quad 38 < t < 39 \\implies \\text{39th year} \\end{aligned}$",
+                                "ans": "$\\begin{aligned} T_1 &= 40.821 \\cr T_2 &= 40.704 \\cr T_3 &= 40.627 \\cr \\text{Interval:} & \\quad 38 < t < 39 \\implies \\cr &  \\text{39th year} \\end{aligned}",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 39$ is your target value, evaluating both models shows that they do not cross until $t$ is between $39$ and $40$, which corresponds to the 40th year."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 40.821 \\cr T_2 &= 40.704 \\cr T_3 &= 40.627 \\cr \\text{Interval:} & \\quad 40 < t < 41 \\implies \\text{41st year} \\end{aligned}$",
+                                "ans": "$\\begin{aligned} T_1 &= 40.821 \\cr T_2 &= 40.704 \\cr T_3 &= 40.627 \\cr \\text{Interval:} & \\quad 40 < t < 41 \\implies \\cr & S \\text{41st year} \\end{aligned}",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 39$. Since $V \\approx 11.42$ and $C \\approx 4.82$, fleet value is still greater than maintenance costs, meaning they have not crossed yet."
                         }
                 ],
