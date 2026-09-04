@@ -679,7 +679,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "First, calculate the decay constant $k$ by setting $m = \\dfrac{1}{2}m_0$ when $t = 4.5$: \\begin{aligned}\\dfrac{1}{2}m_0 &= m_0\\text{e}^{-4.5k} \\cr\\text{e}^{-4.5k} &= 0.5 \\cr-4.5k &= \\ln(0.5) \\cr k &= \\dfrac{\\ln(2)}{4.5}\\cr &\\approx 0.15403\\end{aligned}",
                         "For Part (a), calculate the initial mass $m_0$ for two standard doses of 150 mg: \\begin{aligned}m_0 &= 2 \\times 150 \\cr&= 300\\text{ mg}\\end{aligned}",
-                        "Calculate the time elapsed between 9 am and 2 pm, which is $t = 5$ hours. Substitute $m_0 = 300$ and $t = 5$ into the model: \\begin{aligned}m &= 300\\text{e}^{-0.15403 \\times 5} \\cr&= 300\\text{e}^{-0.77015} \\cr &\\approx 138.93\\text{ mg} cr &\\approx 139\\text{ mg}\\end{aligned}",
+                        "Calculate the time elapsed between 9 am and 2 pm, which is $t = 5$ hours. Substitute $m_0 = 300$ and $t = 5$ into the model: \\begin{aligned}m &= 300\\text{e}^{-0.15403 \\times 5} \\cr&= 300\\text{e}^{-0.77015} \\cr &\\approx 138.93\\text{ mg} \\cr &\\approx 139\\text{ mg}\\end{aligned}",
                         "For Part (b), to stay below 350 mg immediately after taking a new 150 mg dose, the mass remaining in the body just before the dose must satisfy: \\begin{aligned}\\text{Mass remaining} + 150 &\\le 350 \\cr\\implies \\text{Mass remaining} &\\le 200\\text{ mg}$$",
                         "Set $m = 200$ and solve for $t$: \\begin{aligned}200 &= 300\\text{e}^{-kt} \\cr\\text{e}^{-kt} &= \\dfrac{200}{300} = \\dfrac{2}{3}\\end{aligned}",
                         "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-kt &= \\ln\\left(\\dfrac{2}{3}\\right) \\cr kt &= \\ln(1.5)\\cr & \\approx 0.40547\\end{aligned}",
@@ -725,9 +725,9 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "First, identify the term representing the temperature difference: $$\\theta - 20 = 70\\text{e}^{-kt}$$",
                         "Calculate the decay constant $k$ using the fact that this difference halves every 12 minutes: \\begin{aligned}\\dfrac{1}{2} \\times 70 &= 70\\text{e}^{-12k} \\cr\\text{e}^{-12k} &= 0.5 \\cr-12k &= \\ln(0.5) \\cr k &= \\dfrac{\\ln(2)}{12} \\approx 0.05776\\end{aligned}",
-                        "For Part (a), calculate the time elapsed between 1 pm and 1:30 pm, which is $t = 30$ minutes. Substitute $t = 30$ into the model: \\begin{aligned}\\theta &= 20 + 70\\text{e}^{-0.05776 \\times 30} \\cr&= 20 + 70\\text{e}^{-1.7328} \\approx 20 + 12.37 \\approx 32.4^\\circ\\text{C}\\end{aligned}",
+                        "For Part (a), calculate the time elapsed between 1 pm and 1:30 pm, which is $t = 30$ minutes. Substitute $t = 30$ into the model: \\begin{aligned}\\theta &= 20 + 70\\text{e}^{-0.05776 \\times 30} \\cr&= 20 + 70\\text{e}^{-1.7328}\\cr & \\approx 20 + 12.37 \\cr &\\approx 32.4^\\circ\\text{C}\\end{aligned}",
                         "For Part (b), set $\\theta = 55$ and solve for $t$: \\begin{aligned}55 &= 20 + 70\\text{e}^{-kt} \\cr70\\text{e}^{-kt} &= 35 \\cr\\text{e}^{-kt} &= 0.5\\end{aligned}",
-                        "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-kt &= \\ln(0.5) \\cr kt &= \\ln(2) \\crt &= \\dfrac{\\ln(2)}{k}\\end{aligned}",
+                        "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-kt &= \\ln(0.5) \\cr kt &= \\ln(2)\\cr t &= \\dfrac{\\ln(2)}{k}\\end{aligned}",
                         "Substitute $k = \\dfrac{\\ln(2)}{12}$ into the equation: \\begin{aligned}t &= \\dfrac{\\ln(2)}{\\ln(2)/12} \\cr&= 12\\text{ minutes}\\end{aligned}",
                         "Add this elapsed time to 1 pm: $$1\\text{ pm} + 12\\text{ minutes} = 1\\text{:}12\\text{ pm}$$",
                         "For Part (c), identify a physical limitation: the ambient room temperature may not remain perfectly constant. Stirring the tea, draft currents, or the thermal properties of the mug can also accelerate or slow down the cooling rate.",
@@ -768,12 +768,12 @@ window.ALEVEL_QUESTIONS = [
                 "question": "A biologist is researching the growth of a bacterial culture. She models the population of the bacteria, $P$, using<br>$$P = P_0\\text{e}^{kt}$$<br>where $P_0$ is the initial population of the culture and $t$ is the time in hours. On average, the population of the bacteria doubles every 4.2 hours.<br><br>(a) The biologist starts a culture with an initial population of 5000 bacteria at 10 am. Use the model to estimate the population of the culture at 4 pm. Give your answer to 3 significant figures.<br><br>(b) The culture must be transferred to a larger container once the population exceeds 30,000 bacteria. Find the earliest time after 10 am that the transfer must take place. Give your answer to the nearest minute.<br><br>(c) State a biological reason why this exponential growth model is unlikely to remain accurate over a long period of time.",
                 "steps": [
                         "First, calculate the growth constant $k$ using the doubling time of 4.2 hours: \\begin{aligned}2P_0 &= P_0\\text{e}^{4.2k} \\cr\\text{e}^{4.2k} &= 2 \\cr4.2k &= \\ln(2) \\cr k &= \\dfrac{\\ln(2)}{4.2} \\approx 0.16504\\end{aligned}",
-                        "For Part (a), calculate the time elapsed between 10 am and 4 pm, which is $t = 6$ hours. Substitute $P_0 = 5000$ and $t = 6$ into the model: \\begin{aligned}P &= 5000\\text{e}^{0.16504 \\times 6} \\cr&= 5000\\text{e}^{0.99024} \\approx 13459 \\approx 13500\\text{ bacteria}\\end{aligned}",
+                        "For Part (a), calculate the time elapsed between 10 am and 4 pm, which is $t = 6$ hours. Substitute $P_0 = 5000$ and $t = 6$ into the model: \\begin{aligned}P &= 5000\\text{e}^{0.16504 \\times 6} \\cr&= 5000\\text{e}^{0.99024}\\cr &\\approx 13459 \\cr &\\approx 13500\\text{ bacteria}\\end{aligned}",
                         "For Part (b), set $P = 30000$ and solve for $t$: \\begin{aligned}30000 &= 5000\\text{e}^{kt} \\cr\\text{e}^{kt} &= \\dfrac{30000}{5000} = 6\\end{aligned}",
                         "Take the natural logarithm of both sides to isolate the exponent: $$kt = \\ln(6) \\approx 1.79176$$",
                         "Divide by the growth constant $k = 0.16504$ to find the time $t$ in hours: $$t = \\dfrac{1.79176}{0.16504} \\approx 10.8568\\text{ hours}$$",
-                        "Convert the decimal hours to minutes: $$10\\text{ hours and } (0.8568 \\times 60)\\text{ minutes} \\approx 10\\text{ hours and } 51\\text{ minutes}$$",
-                        "Add this elapsed time to 10 am: $$10\\text{ am} + 10\\text{ hours } 51\\text{ minutes} = 8\\text{:}51\\text{ pm}$$",
+                        "Convert the decimal hours to minutes: \\begin{aligned}10\\text{ hours and }& (0.8568 \\times 60)\\text{ minutes} \\cr &\\approx 10\\text{ hours and } 51\\text{ minutes}\\end{aligned}",
+                        "Add this elapsed time to 10 am: \\begin{aligned}10\\text{ am} &+ 10\\text{ hours } 51\\text{ minutes}\\cr & = 8\\text{:}51\\text{ pm}\\end{aligned}",
                         "For Part (c), identify a biological limitation: in the real world, nutrient resources become depleted, space becomes limited, and toxic metabolic waste products accumulate, which will eventually slow down the reproduction rate.",
                         "Final Answer: (a) $$ 13500\\text{ bacteria}$$ (b) $$8\\text{:}51\\text{ pm}$$"
                 ],
@@ -814,9 +814,9 @@ window.ALEVEL_QUESTIONS = [
                         "First, calculate the decay constant $\\lambda$ using the half-life of 8.1 days: \\begin{aligned}\\dfrac{1}{2}A_0 &= A_0\\text{e}^{-8.1\\lambda} \\cr\\text{e}^{-8.1\\lambda} &= 0.5 \\cr-8.1\\lambda &= \\ln(0.5) \\cr\\lambda &= \\dfrac{\\ln(2)}{8.1} \\approx 0.08557\\end{aligned}",
                         "For Part (a), substitute $A_0 = 800$, $\\lambda = 0.08557$, and $t = 12$ days into the model: \\begin{aligned}A &= 800\\text{e}^{-0.08557 \\times 12} \\cr&= 800\\text{e}^{-1.02684} \\approx 286.49 \\approx 286\\text{ Bq}\\end{aligned}",
                         "For Part (b), set $A = 100$ and solve for $t$: \\begin{aligned}100 &= 800\\text{e}^{-\\lambda t} \\cr\\text{e}^{-\\lambda t} &= \\dfrac{100}{800} = \\dfrac{1}{8} = 2^{-3}\\end{aligned}",
-                        "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-\\lambda t &= \\ln(2^{-3}) \\cr-\\lambda t &= -3\\ln(2) \\crt &= \\dfrac{3\\ln(2)}{\\lambda}\\end{aligned}",
+                        "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-\\lambda t &= \\ln(2^{-3}) \\cr-\\lambda t &= -3\\ln(2)\\cr t &= \\dfrac{3\\ln(2)}{\\lambda}\\end{aligned}",
                         "Substitute $\\lambda = \\dfrac{\\ln(2)}{8.1}$ into the equation: \\begin{aligned}t &= 3 \\times 8.1 \\cr&= 24.3\\text{ days}\\end{aligned}",
-                        "Convert the decimal days to hours: $$24\\text{ days and } (0.3 \\times 24)\\text{ hours} = 24\\text{ days and } 7.2\\text{ hours} \\approx 24\\text{ days and } 7\\text{ hours}$$",
+                        "Convert the decimal days to hours: \\begin{aligned}24\\text{ days and }& (0.3 \\times 24)\\text{ hours}\\cr  = 24\\text{ days and }& 7.2\\text{ hours} \\cr &\\approx 24\\text{ days and } 7\\cr &\\text{ hours}$$",
                         "For Part (c), identify a physical limitation: radioactive decay is a random, stochastic quantum process. The model predicts the average expected decay, but the actual measurements will fluctuate statistically around this smooth curve.",
                         "Final Answer: (a) $$ 286\\text{ Bq}$$ (b) $$24\\text{ days and } 7\\text{ hours}$$"
                 ],
@@ -856,9 +856,9 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "First, convert the altitude of Mount Kilimanjaro from metres to kilometres to match the variable unit of $h$: $$5895\\text{ metres} = 5.895\\text{ km}$$",
                         "Calculate the decay constant $k$ by setting $P = \\dfrac{1}{2}P_0$ when $h = 5.5$: \\begin{aligned}\\dfrac{1}{2}P_0 &= P_0\\text{e}^{-5.5k} \\cr\\text{e}^{-5.5k} &= 0.5 \\cr-5.5k &= \\ln(0.5) \\cr k &= \\dfrac{\\ln(2)}{5.5} \\approx 0.12603\\end{aligned}",
-                        "For Part (a), substitute $P_0 = 101.3$, $k = 0.12603$, and $h = 5.895$ into the model: \\begin{aligned}P &= 101.3\\text{e}^{-0.12603 \\times 5.895} \\cr&= 101.3\\text{e}^{-0.74295} \\approx 48.19 \\approx 48.2\\text{ kPa}\\end{aligned}",
+                        "For Part (a), substitute $P_0 = 101.3$, $k = 0.12603$, and $h = 5.895$ into the model: \\begin{aligned}P &= 101.3\\text{e}^{-0.12603 \\times 5.895} \\cr&= 101.3\\text{e}^{-0.74295}\\cr & \\approx 48.19 \\cr &\\approx 48.2\\text{ kPa}\\end{aligned}",
                         "For Part (b), set $P = 15$ to find the altitude limit: \\begin{aligned}15 &= 101.3\\text{e}^{-kh} \\cr\\text{e}^{-kh} &= \\dfrac{15}{101.3} \\approx 0.14808\\end{aligned}",
-                        "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-kh &= \\ln(0.14808) \\approx -1.91006 \\cr kh \\approx 1.91006\\end{aligned}",
+                        "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-kh &= \\ln(0.14808)\\cr & \\approx -1.91006 \\cr kh &\\approx 1.91006\\end{aligned}",
                         "Divide by the decay constant $k = 0.12603$ to solve for $h$: $$h = \\dfrac{1.91006}{0.12603} \\approx 15.1555\\text{ km}$$",
                         "Convert this altitude back to metres: $$15.1555\\text{ km} = 15,155.5\\text{ metres}$$",
                         "Round to the nearest 10 metres: $$15,155.5\\text{ metres} \\approx 15,160\\text{ metres}$$",
@@ -901,7 +901,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "For Part (a)(i), set the volume $V$ equal to $0$ and expand the exponents: \\begin{aligned}0 &= 20 + 200\\left(\\dfrac{T}{40}\\right)^3 - 100\\left(\\dfrac{T}{40}\\right)^4 \\cr0 &= 20 + 200\\left(\\dfrac{T^3}{64\\,000}\\right) - 100\\left(\\dfrac{T^4}{2\\,560\\,000}\\right)\\end{aligned}, which simplifies to: $$0 = 20 + \\dfrac{T^3}{320} - \\dfrac{T^4}{25\\,600}$$",
                         "Multiply the entire equation by $25\\,600$ to clear the fractions: $$0 = 512\\,000 + 80T^3 - T^4$$",
-                        "Rearrange the terms and divide both sides by $T$ (since $T > 0$): \\begin{aligned}T^4 &= 80T^3 + 512\\,000 \\crT^3 &= 80T^2 + \\dfrac{512\\,000}{T}\\end{aligned}",
+                        "Rearrange the terms and divide both sides by $T$ (since $T > 0$): \\begin{aligned}T^4 &= 80T^3 + 512\\,000\\cr t^3 &= 80T^2 + \\dfrac{512\\,000}{T}\\end{aligned}",
                         "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{80T^2 + \\dfrac{512\\,000}{T}}$$ as required.",
                         "For Part (a)(ii), substitute $T_0 = 50$ into the formula to find the successive iterations: \\begin{aligned}T_1 &= \\sqrt[3]{80(50)^2 + \\dfrac{512\\,000}{50}} \\cr&= \\sqrt[3]{200\\,000 + 10\\,240} \\cr&= \\sqrt[3]{210\\,240} \\approx 59.464\\end{aligned}",
                         "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{80(59.4643)^2 + \\dfrac{512\\,000}{59.4643}} \\approx \\sqrt[3]{291\\,491.0} \\approx 66.305$$ and $$T_3 = \\sqrt[3]{80(66.3051)^2 + \\dfrac{512\\,000}{66.3051}} \\approx \\sqrt[3]{359\\,430.4} \\approx 71.099$$",
@@ -948,7 +948,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "For Part (a)(i), set the revenue $R$ equal to $0$ and expand the exponents: \\begin{aligned}0 &= 5 + 30\\left(\\dfrac{T}{10}\\right)^2 - 10\\left(\\dfrac{T}{10}\\right)^3 \\cr0 &= 5 + 30\\left(\\dfrac{T^2}{100}\\right) - 10\\left(\\dfrac{T^3}{1\\,000}\\right)\\end{aligned}, which simplifies to: $$0 = 5 + \\dfrac{3T^2}{10} - \\dfrac{T^3}{100}$$",
                         "Multiply the entire equation by $100$ to clear the fractions: $$0 = 500 + 30T^2 - T^3$$",
-                        "Rearrange the terms and divide both sides by $T$ (since $T > 0$): \\begin{aligned}T^3 &= 30T^2 + 500 \\crT^2 &= 30T + \\dfrac{500}{T}\\end{aligned}",
+                        "Rearrange the terms and divide both sides by $T$ (since $T > 0$): \\begin{aligned}T^3 &= 30T^2 + 500\\cr t^2 &= 30T + \\dfrac{500}{T}\\end{aligned}",
                         "Take the square root of both sides to obtain the target iterative relation: $$T = \\sqrt{30T + \\dfrac{500}{T}}$$ as required.",
                         "For Part (a)(ii), substitute $T_0 = 31$ into the formula to find the successive iterations: \\begin{aligned}T_1 &= \\sqrt{30(31) + \\dfrac{500}{31}} \\cr&= \\sqrt{930 + 16.129} \\cr&= \\sqrt{946.129} \\approx 30.759\\end{aligned}",
                         "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt{30(30.7592) + \\dfrac{500}{30.7592}} \\approx \\sqrt{939.031} \\approx 30.644$$ and $$T_3 = \\sqrt{30(30.6436) + \\dfrac{500}{30.6436}} \\approx \\sqrt{935.625} \\approx 30.588$$",
@@ -1042,7 +1042,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "For Part (a)(i), set the rate $R$ equal to $0$ and expand the exponents: \\begin{aligned}0 &= 5 + 50\\left(\\dfrac{T}{10}\\right)^3 - 25\\left(\\dfrac{T}{10}\\right)^4 \\cr0 &= 5 + 50\\left(\\dfrac{T^3}{1\\,000}\\right) - 25\\left(\\dfrac{T^4}{10\\,000}\\right)\\end{aligned}, which simplifies to: $$0 = 5 + \\dfrac{T^3}{20} - \\dfrac{T^4}{400}$$",
                         "Multiply the entire equation by $400$ to clear the fractions: $$0 = 2\\,000 + 20T^3 - T^4$$",
-                        "Rearrange the terms and divide both sides by $T$ (since $T > 0$): \\begin{aligned}T^4 &= 20T^3 + 2\\,000 \\crT^3 &= 20T^2 + \\dfrac{2\\,000}{T}\\end{aligned}",
+                        "Rearrange the terms and divide both sides by $T$ (since $T > 0$): \\begin{aligned}T^4 &= 20T^3 + 2\\,000\\cr t^3 &= 20T^2 + \\dfrac{2\\,000}{T}\\end{aligned}",
                         "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{20T^2 + \\dfrac{2\\,000}{T}}$$ as required.",
                         "For Part (a)(ii), substitute $T_0 = 21$ into the formula to find the successive iterations: \\begin{aligned}T_1 &= \\sqrt[3]{20(21)^2 + \\dfrac{2\\,000}{21}} \\cr&= \\sqrt[3]{8\\,820 + 95.238} \\cr&= \\sqrt[3]{8\\,915.238} \\approx 20.735\\end{aligned}",
                         "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{20(20.7352)^2 + \\dfrac{2\\,000}{20.7352}} \\approx \\sqrt[3]{8\\,695.45} \\approx 20.563$$ and $$T_3 = \\sqrt[3]{20(20.5631)^2 + \\dfrac{2\\,000}{20.5631}} \\approx \\sqrt[3]{8\\,554.16} \\approx 20.451$$",
@@ -1089,7 +1089,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "For Part (a)(i), set the value $V$ equal to $0$ and expand the exponents: \\begin{aligned}0 &= 4 + 40\\left(\\dfrac{T}{20}\\right)^3 - 20\\left(\\dfrac{T}{20}\\right)^4 \\cr0 &= 4 + 40\\left(\\dfrac{T^3}{8\\,000}\\right) - 20\\left(\\dfrac{T^4}{160\\,000}\\right)\\end{aligned}, which simplifies to: $$0 = 4 + \\dfrac{T^3}{200} - \\dfrac{T^4}{8\\,000}$$",
                         "Multiply the entire equation by $8\\,000$ to clear the fractions: $$0 = 32\\,000 + 40T^3 - T^4$$",
-                        "Rearrange the terms and divide both sides by $T$ (since $T > 0$): \\begin{aligned}T^4 &= 40T^3 + 32\\,000 \\crT^3 &= 40T^2 + \\dfrac{32\\,000}{T}\\end{aligned}",
+                        "Rearrange the terms and divide both sides by $T$ (since $T > 0$): \\begin{aligned}T^4 &= 40T^3 + 32\\,000\\cr t^3 &= 40T^2 + \\dfrac{32\\,000}{T}\\end{aligned}",
                         "Take the cube root of both sides to obtain the target iterative relation: $$T = \\sqrt[3]{40T^2 + \\dfrac{32\\,000}{T}}$$ as required.",
                         "For Part (a)(ii), substitute $T_0 = 41$ into the formula to find the successive iterations: \\begin{aligned}T_1 &= \\sqrt[3]{40(41)^2 + \\dfrac{32\\,000}{41}} \\cr&= \\sqrt[3]{67\\,240 + 780.487} \\cr&= \\sqrt[3]{68\\,020.487} \\approx 40.821\\end{aligned}",
                         "Find the subsequent terms carrying full decimal precision: $$T_2 = \\sqrt[3]{40(40.8205)^2 + \\dfrac{32\\,000}{40.8205}} \\approx \\sqrt[3]{67\\,436.4} \\approx 40.704$$ and $$T_3 = \\sqrt[3]{40(40.7037)^2 + \\dfrac{32\\,000}{40.7037}} \\approx \\sqrt[3]{67\\,057.5} \\approx 40.627$$",
