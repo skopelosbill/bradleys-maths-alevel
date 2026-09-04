@@ -237,21 +237,21 @@ window.ALEVEL_QUESTIONS = [
                         "Multiply both sides by $6$ to isolate $\\theta$, and simplify the resulting fraction to reach the target equation: \\begin{aligned}\\theta &= \\dfrac{6}{4}\\sin\\theta \\cr\\theta &= 1.5\\sin\\theta\\end{aligned}",
                         "For Part (b), define $f(\\theta) = \\theta - 1.5\\sin\\theta$ and its derivative $f'(\\theta) = 1 - 1.5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{\\theta_n - 1.5\\sin\\theta_n}{1 - 1.5\\cos\\theta_n}$$",
                         "With $\\theta_1 = \\pi$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= \\pi - \\dfrac{\\pi - 1.5\\sin\\pi}{1 - 1.5\\cos\\pi} \\cr&= \\pi - \\dfrac{\\pi}{1 - 1.5(-1)} \\cr&= \\pi - \\dfrac{\\pi}{2.5} \\cr&= 0.6\\pi \\approx 1.88496\\end{aligned}",
-                        "In the second iteration: begin{aligned}\\theta_3 &= 1.88496\\cr & \\quad - \\dfrac{1.88496 - 1.5\\sin(1.88496)}{1 - 1.5\\cos(1.88496)}\\cr & \\approx 1.57176\\end{aligned}",
-                        "For Part (c), calculate the percentage error by comparing the approximation $\\theta_3 \\approx 1.57176$ with the actual root $\\theta = 1.49579$: begin{aligned}\\text{%age error} &= \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\cr &\\approx 5.08%\\end{aligned}",
-                        "Final Answer: (b)$$ 1.57176$$(c)$$ 5.08%$$"
+                        "In the second iteration: \\begin{aligned}\\theta_3 &= 1.88496\\cr & \\quad - \\dfrac{1.88496 - 1.5\\sin(1.88496)}{1 - 1.5\\cos(1.88496)}\\cr & \\approx 1.57176\\end{aligned}",
+                        "For Part (c), calculate the percentage error by comparing the approximation $\\theta_3 \\approx 1.57176$ with the actual root $\\theta = 1.49579$: \\begin{aligned}\\text{%age error} &= \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\cr &\\approx 5.08%\\end{aligned}",
+                        "Final Answer: (b)$$ 1.57176$$(c)$$ 5.08\\%$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "(b)$$ 1.57176$$(c)$$ 5.06% $$",
+                                "ans": "(b)$$ 1.57176$$(c)$$ 5.06\\% $$",
                                 "feedback": "This error probably results from a minor rounding slip during your multi-digit division steps. Ensure you carry at least six decimal places in your intermediate steps before rounding to five."
                         },
                         {
-                                "ans": "(b)$$ 1.57156$$(c)$$ 5.06% $$",
+                                "ans": "(b)$$ 1.57156$$(c)$$ 5.06\\% $$",
                                 "feedback": "You probably rounded $\\theta_2$ prematurely, or made a subtraction error in your second iteration. Double-check your values for $f(\\theta_2)$ and $f'(\\theta_2)$ on your page."
                         },
                         {
-                                "ans": "(b)$$ 1.88496$$(c)$$ 26.02% %$$",
+                                "ans": "(b)$$ 1.88496$$(c)$$ 26.02\\% $$",
                                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
                         }
                 ],
@@ -267,38 +267,38 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Numerical Methods",
-                "topic": "Numerical Methods",
+                "major_area": "Differentiation",
+                "topic": "Trigonometry",
                 "subtopic": [
                         "Numerical Methods",
-                        "Trigonometry"
+                        "Newton Raphson"
                 ],
                 "img": "images/Pure_SVGs/004107.svg",
                 "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A chord $AB$ divides the sector into a segment and a triangle $OAB$.<br><br>(a) Given that the area of the segment is equal to one-third of the area of the triangle $OAB$, show that $4\\sin\\theta = 3\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 1.5$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.27570$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
                 "steps": [
-                        "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the triangle $OAB$ is: $$\\text{Area of triangle } OAB = \\dfrac{1}{2}r^2\\sin\\theta$$",
-                        "The area of the sector $OAB$ is: $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
-                        "Find the area of the segment by subtracting the area of the triangle from the area of the sector: \\begin{aligned}\\text{Area of segment} &= \\dfrac{1}{2}r^2\\theta - \\dfrac{1}{2}r^2\\sin\\theta \\cr&= \\dfrac{1}{2}r^2(\\theta - \\sin\\theta)\\end{aligned}",
+                        "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the triangle $OAB$ is: $$\\text{Area}_{\\triangle OAB} = \\dfrac{1}{2}r^2\\sin\\theta$$",
+                        "The area of the sector $OAB$ is: $$\\text{Area}_{sect OAB} = \\dfrac{1}{2}r^2\\theta$$",
+                        "Find the area of the segment by subtracting the area of the triangle from the area of the sector: \\begin{aligned}\\text{Area}_{seg} &= \\dfrac{1}{2}r^2\\theta - \\dfrac{1}{2}r^2\\sin\\theta \\cr&= \\dfrac{1}{2}r^2(\\theta - \\sin\\theta)\\end{aligned}",
                         "Set the segment area equal to one-third of the triangle area: $$\\dfrac{1}{2}r^2(\\theta - \\sin\\theta) = \\dfrac{1}{3}\\left(\\dfrac{1}{2}r^2\\sin\\theta\\right)$$",
                         "Divide both sides by $\\dfrac{1}{2}r^2$ to simplify: $$\\theta - \\sin\\theta = \\dfrac{1}{3}\\sin\\theta$$",
                         "Add $\\sin\\theta$ to both sides and multiply by $3$ to obtain the target equation: \\begin{aligned}\\theta &= \\dfrac{4}{3}\\sin\\theta \\cr3\\theta &= 4\\sin\\theta \\cr4\\sin\\theta &= 3\\theta\\end{aligned}",
                         "For Part (b), define $f(\\theta) = 3\\theta - 4\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 4\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 4\\sin\\theta_n}{3 - 4\\cos\\theta_n}$$",
-                        "With $\\theta_1 = 1.5$, calculate the iterations. In the first iteration: $$\\theta_2 = 1.5 - \\dfrac{3(1.5) - 4\\sin(1.5)}{3 - 4\\cos(1.5)} \\approx 1.31229$$",
-                        "In the second iteration: $$\\theta_3 = 1.31229 - \\dfrac{3(1.31229) - 4\\sin(1.31229)}{3 - 4\\cos(1.31229)} \\approx 1.27741$$",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.27741$ against the true root $\\theta = 1.27570$: $$\\text{Percentage Error} = \\dfrac{|1.27741 - 1.27570|}{1.27570} \\times 100 \\approx 0.13\\\\%$$",
-                        "Final Answer: \\text{Part (b): } 1.27741,\\quad \\text{Part (c): } 0.13 %"
+                        "With $\\theta_1 = 1.5$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= 1.5 - \\dfrac{3(1.5) - 4\\sin(1.5)}{3 - 4\\cos(1.5)}\\ct & \\approx 1.31229\\end{aligned}",
+                        "In the second iteration: \\begin{aligned}\\theta_3 &= 1.31229\\cr & \\quad - \\dfrac{3(1.31229) - 4\\sin(1.31229)}{3 - 4\\cos(1.31229)}\\cr & \\approx 1.27741\\end{aligned}",
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.27741$ against the true root $\\theta = 1.27570$: \\begin{aligned}\\text{%age Error} &= \\dfrac{|1.27741 - 1.27570|}{1.27570} \\times 100 \\cr & \\approx 0.13\\%\\end{aligned}",
+                        "Final Answer: \\cr(b)$$ 1.27741$$ (c)$$0.13\\%$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "\\text{Part (b): } 1.27510,\\quad \\text{Part (c): } 0.05 %",
+                                "ans": "\\cr (b)$$1.27510$$ $$(c) 0.05\\%$$",
                                 "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(1.31229)$ and $f'(1.31229)$ on your page."
                         },
                         {
-                                "ans": "\\text{Part (b): } 1.27741,\\quad \\text{Part (c): } 0.05 %",
-                                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.13\\\\%$, not $0.05\\\\%$."
+                                "ans": "\\cr (b)$$1.27741$$ (c) $$0.05\\%$$",
+                                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.13\\%$, not $0.05\\%$."
                         },
                         {
-                                "ans": "\\text{Part (b): } 1.31229,\\quad \\text{Part (c): } 2.87 %",
+                                "ans": "\\cr (b)$$1.31229$$(c)$$2.87\\%$$",
                                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
                         }
                 ],
@@ -313,36 +313,36 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Numerical Methods",
-                "topic": "Numerical Methods",
+                "major_area": "Differentiation",
+                "topic": "Trigonometry",
                 "subtopic": [
                         "Numerical Methods",
-                        "Trigonometry"
+                        "Newton Raphson"
                 ],
                 "img": "images/Pure_SVGs/004108.svg",
                 "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A line is drawn from $A$ perpendicular to $OB$, meeting $OB$ at $C$ to form a right-angled triangle $OAC$.<br><br>(a) Given that the area of the right-angled triangle $OAC$ is equal to three-tenths of the area of the sector $OAB$, show that $5\\sin(2\\theta) = 3\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 1.0$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.17243$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
                 "steps": [
-                        "First, state the formulas for the areas in terms of $r$ and $\\theta$. In the right-angled triangle $OAC$, the sides are $OC = r\\cos\\theta$ and $AC = r\\sin\\theta$. The area of this triangle is: \\begin{aligned}\\text{Area of triangle } OAC &= \\dfrac{1}{2}r^2\\sin\\theta\\cos\\theta \\cr&= \\dfrac{1}{4}r^2\\sin(2\\theta)\\end{aligned}",
-                        "The area of the sector $OAB$ is: $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
+                        "First, state the formulas for the areas in terms of $r$ and $\\theta$. In the right-angled triangle $OAC$, the sides are $OC = r\\cos\\theta$ and $AC = r\\sin\\theta$. The area of this triangle is: \\begin{aligned}\\text{Area}_{\\triangle OAC} &= \\dfrac{1}{2}r^2\\sin\\theta\\cos\\theta \\cr&= \\dfrac{1}{4}r^2\\sin(2\\theta)\\end{aligned}",
+                        "The area of the sector $OAB$ is: $$\\text{Area}_{sect OAB} = \\dfrac{1}{2}r^2\\theta$$",
                         "Set the triangle area equal to three-tenths of the sector area: \\begin{aligned}\\dfrac{1}{4}r^2\\sin(2\\theta) &= \\dfrac{3}{10} \\left(\\dfrac{1}{2}r^2\\theta\\right) \\cr\\dfrac{1}{4}r^2\\sin(2\\theta) &= \\dfrac{3}{20}r^2\\theta\\end{aligned}",
                         "Divide both sides by $r^2$ and multiply by $20$ to clear the fractions and obtain the target equation: \\begin{aligned}\\dfrac{1}{4}\\sin(2\\theta) &= \\dfrac{3}{20}\\theta \\cr5\\sin(2\\theta) &= 3\\theta\\end{aligned}",
                         "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin(2\\theta)$ and its derivative $f'(\\theta) = 3 - 10\\cos(2\\theta)$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin(2\\theta_n)}{3 - 10\\cos(2\\theta_n)}$$",
-                        "With $\\theta_1 = 1.0$, calculate the iterations. In the first iteration: $$\\theta_2 = 1.0 - \\dfrac{3(1.0) - 5\\sin(2)}{3 - 10\\cos(2)} \\approx 1.21594$$",
-                        "In the second iteration: $$\\theta_3 = 1.21594 - \\dfrac{3(1.21594) - 5\\sin(2.43188)}{3 - 10\\cos(2.43188)} \\approx 1.17911$$",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.17911$ against the true root $\\theta = 1.17243$: $$\\text{Percentage Error} = \\dfrac{|1.17911 - 1.17243|}{1.17243} \\times 100 \\approx 0.57\\\\%$$",
-                        "Final Answer: \\text{Part (b): } 1.17911,\\quad \\text{Part (c): } 0.57 %"
+                        "With $\\theta_1 = 1.0$, calculate the iterations. In the first iteration:\\begin{aligned}\\theta_2 &= 1.0 - \\dfrac{3(1.0) - 5\\sin(2)}{3 - 10\\cos(2)}\\cr &\\approx 1.21594\\end{aligned}",
+                        "In the second iteration: \\begin{aligned}\\theta_3 &= 1.21594\\cr &\\quad - \\dfrac{3(1.21594) - 5\\sin(2.43188)}{3 - 10\\cos(2.43188)}\\cr & \\approx 1.17911$$\\end{aligned}",
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.17911$ against the true root $\\theta = 1.17243$: \\begin{aligned}\\text{%age error} &= \\dfrac{|1.17911 - 1.17243|}{1.17243} \\times 100\\cr &\\approx 0.57\\%$$",
+                        "Final Answer: \\cr (b)$$1.17911%% (c) $$0.57\\%$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "\\text{Part (b): } 1.17880,\\quad \\text{Part (c): } 0.54 %",
+                                "ans": "\\cr (b)$$1.17880$$ (c) $$0.54\\%$$",
                                 "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(1.21594)$ and $f'(1.21594)$ on your page."
                         },
                         {
-                                "ans": "\\text{Part (b): } 1.17911,\\quad \\text{Part (c): } 0.54 %",
-                                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.57\\\\%$, not $0.54\\\\%$."
+                                "ans": "\\cr (b)$$1.17911$$ (c) $$0.54\\%$$",
+                                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.57\\%$, not $0.54\\%$."
                         },
                         {
-                                "ans": "\\text{Part (b): } 1.21594,\\quad \\text{Part (c): } 3.71 %",
+                                "ans": "\\cr (b)$$1.21594$$(c) $$3.71\\%$$",
                                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
                         }
                 ],
@@ -357,36 +357,36 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Numerical Methods",
-                "topic": "Numerical Methods",
+                "major_area": "Differentiation",
+                "topic": "Trigonometry",
                 "subtopic": [
                         "Numerical Methods",
-                        "Trigonometry"
+                        "Newton Raphson"
                 ],
                 "img": "images/Pure_SVGs/004109.svg",
                 "question": "The diagram shows two concentric sectors of circles $OAB$ and $OCD$ sharing the same angle $\\theta$ radians. The larger sector $OAB$ has radius $r$, and the smaller sector $OCD$ has radius $R = 0.6r$.<br><br>(a) Given that the area of the smaller sector $OCD$ is equal to $\\frac{9}{25}$ of the area of the triangle $OAB$ formed inside the larger sector, show that $2\\theta = 5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 2.5$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 2.12463$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
                 "steps": [
-                        "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the triangle $OAB$ inside the larger sector is: $$\\text{Area of triangle } OAB = \\dfrac{1}{2}r^2\\sin\\theta$$",
-                        "Since the smaller sector has a radius of $R = 0.6r$, its area is: \\begin{aligned}\\text{Area of sector } OCD &= \\dfrac{1}{2}(0.6r)^2\\theta \\cr&= \\dfrac{1}{2}(0.36r^2)\\theta \\cr&= 0.18r^2\\theta\\end{aligned}",
+                        "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the triangle $OAB$ inside the larger sector is: $$\\text{Area}_{\\triangle OAB}= \\dfrac{1}{2}r^2\\sin\\theta$$",
+                        "Since the smaller sector has a radius of $R = 0.6r$, its area is: \\begin{aligned}\\text{Area}_{sect OCD}&= \\dfrac{1}{2}(0.6r)^2\\theta \\cr&= \\dfrac{1}{2}(0.36r^2)\\theta \\cr&= 0.18r^2\\theta\\end{aligned}",
                         "Set the smaller sector area equal to nine-tenths of the area of the triangle $OAB$: \\begin{aligned}0.18r^2\\theta &= \\dfrac{9}{10}\\left(\\dfrac{1}{2}r^2\\sin\\theta\\right) \\cr0.18r^2\\theta &= 0.45r^2\\sin\\theta\\end{aligned}",
                         "Divide both sides by $r^2$ and simplify the decimal ratio to obtain the target equation: \\begin{aligned}0.18\\theta &= 0.45\\sin\\theta \\cr\\theta &= \\dfrac{0.45}{0.18}\\sin\\theta \\cr\\theta &= 2.5\\sin\\theta \\cr2\\theta &= 5\\sin\\theta\\end{aligned}",
                         "For Part (b), define $f(\\theta) = 2\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 2 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{2\\theta_n - 5\\sin\\theta_n}{2 - 5\\cos\\theta_n}$$",
-                        "With $\\theta_1 = 2.5$, calculate the iterations. In the first iteration: $$\\theta_2 = 2.5 - \\dfrac{2(2.5) - 5\\sin(2.5)}{2 - 5\\cos(2.5)} \\approx 2.16571$$",
-                        "In the second iteration: $$\\theta_3 = 2.16571 - \\dfrac{2(2.16571) - 5\\sin(2.16571)}{2 - 5\\cos(2.16571)} \\approx 2.12654$$",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 2.12654$ against the true root $\\theta = 2.12463$: $$\\text{Percentage Error} = \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100 \\approx 0.09\\\\%$$",
-                        "Final Answer: \\text{Part (b): } 2.12654,\\quad \\text{Part (c): } 0.09 %"
+                        "With $\\theta_1 = 2.5$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= 2.5 - \\dfrac{2(2.5) - 5\\sin(2.5)}{2 - 5\\cos(2.5)}\\cr &\\approx 2.16571\\end{aligned}",
+                        "In the second iteration: \\begin{aligned}\\theta_3 &= 2.16571\\cr & \\quad - \\dfrac{2(2.16571) - 5\\sin(2.16571)}{2 - 5\\cos(2.16571)}\\cr & \\approx 2.12654\\end{aligned}",
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 2.12654$ against the true root $\\theta = 2.12463$: $$\\text{Percentage Error} = \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100 \\approx 0.09\\%$$",
+                        "Final Answer: \\cr (b)$$2.12654$$ (c) $$0.09\\%$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "\\text{Part (b): } 2.12680,\\quad \\text{Part (c): } 0.10 %",
+                                "ans": "\\cr (b)$$2.12680$$(c) $$0.10\\%$$",
                                 "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(2.16571)$ and $f'(2.16571)$ on your page."
                         },
                         {
-                                "ans": "\\text{Part (b): } 2.12654,\\quad \\text{Part (c): } 0.10 %",
-                                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.09\\\\%$, not $0.10\\\\%$."
+                                "ans": "\\cr (b)$$2.12654$$(c) $$0.10\\%$$",
+                                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.09\\%$, not $0.10\\%$."
                         },
                         {
-                                "ans": "\\text{Part (b): } 2.16571,\\quad \\text{Part (c): } 1.93 %",
+                                "ans": "\\cr (b)$$2.16571$$(c) $$1.93\\%$$",
                                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
                         }
                 ],
@@ -401,36 +401,36 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Numerical Methods",
-                "topic": "Numerical Methods",
+                "major_area": "Differentiation",
+                "topic": "Trigonometry",
                 "subtopic": [
                         "Numerical Methods",
-                        "Trigonometry"
+                        "Newton Raphson"
                 ],
                 "img": "images/Pure_SVGs/004110.svg",
                 "question": "The diagram shows a sector of a circle $OAB$ with radius $r$ and angle $\\theta$ radians. A point $C$ lies on $OB$ such that $OC = \\frac{1}{3}r$.<br><br>(a) Given that the area of the triangle $OAC$ is equal to one-fifth of the area of the sector $OAB$, show that $3\\theta = 5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = 2.0$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.65215$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
                 "steps": [
-                        "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the sector $OAB$ is: $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
-                        "Since $OC = \\dfrac{1}{3}r$, the area of the triangle $OAC$ is: \\begin{aligned}\\text{Area of triangle } OAC &= \\dfrac{1}{2}(r)\\left(\\dfrac{1}{3}r\\right)\\sin\\theta \\cr&= \\dfrac{r^2}{6}\\sin\\theta\\end{aligned}",
+                        "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the sector $OAB$ is: $$\\text{Area}_{sect OAB} = \\dfrac{1}{2}r^2\\theta$$",
+                        "Since $OC = \\dfrac{1}{3}r$, the area of the triangle $OAC$ is: \\begin{aligned}\\text{Area}_{\\triangle OAC} &= \\dfrac{1}{2}(r)\\left(\\dfrac{1}{3}r\\right)\\sin\\theta \\cr&= \\dfrac{r^2}{6}\\sin\\theta\\end{aligned}",
                         "Set the triangle area equal to one-fifth of the sector area: \\begin{aligned}\\dfrac{r^2}{6}\\sin\\theta &= \\dfrac{1}{5}\\left(\\dfrac{1}{2}r^2\\theta\\right) \\cr\\dfrac{r^2}{6}\\sin\\theta &= \\dfrac{r^2}{10}\\theta\\end{aligned}",
                         "Divide both sides by $r^2$ and multiply by $30$ to clear the fractions and obtain the target equation: \\begin{aligned}\\dfrac{1}{6}\\sin\\theta &= \\dfrac{1}{10}\\theta \\cr5\\sin\\theta &= 3\\theta \\cr3\\theta &= 5\\sin\\theta\\end{aligned}",
                         "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin\\theta_n}{3 - 5\\cos\\theta_n}$$",
-                        "With $\\theta_1 = 2.0$, calculate the iterations. In the first iteration: $$\\theta_2 = 2.0 - \\dfrac{3(2.0) - 5\\sin(2.0)}{3 - 5\\cos(2.0)} \\approx 1.71392$$",
-                        "In the second iteration: $$\\theta_3 = 1.71392 - \\dfrac{3(1.71392) - 5\\sin(1.71392)}{3 - 5\\cos(1.71392)} \\approx 1.66164$$",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.66164$ against the true root $\\theta = 1.65215$: $$\\text{Percentage Error} = \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100 \\approx 0.57\\\\%$$",
-                        "Final Answer: \\text{Part (b): } 1.66164,\\quad \\text{Part (c): } 0.57 %"
+                        "With $\\theta_1 = 2.0$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= 2.0 - \\dfrac{3(2.0) - 5\\sin(2.0)}{3 - 5\\cos(2.0)}\\cr & \\approx 1.71392\\end{aligned}",
+                        "In the second iteration: \\begin{aligned}\\theta_3 &= 1.71392 - \\dfrac{3(1.71392) - 5\\sin(1.71392)}{3 - 5\\cos(1.71392)} \\cr &\\approx 1.66164\\end{aligned}",
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.66164$ against the true root $\\theta = 1.65215$: \\begin{aligned}\\text{%age Error} &= \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100\\cr & \\approx 0.57\\%\\end{aligned}",
+                        "Final Answer: \\cr (b)$$1.66164$$(c) $$0.57\\%$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "\\text{Part (b): } 1.66120,\\quad \\text{Part (c): } 0.55 %",
+                                "ans": "\\cr (b)$$1.66120$$(c) $$0.55\\%$$",
                                 "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(1.71392)$ and $f'(1.71392)$ on your page."
                         },
                         {
-                                "ans": "\\text{Part (b): } 1.66164,\\quad \\text{Part (c): } 0.55 %",
-                                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.57\\\\%$, not $0.55\\\\%$."
+                                "ans": "\\cr (b)$$1.66164$$(c) $$0.55\\%$$",
+                                "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.57\\%$, not $0.55\\%$."
                         },
                         {
-                                "ans": "\\text{Part (b): } 1.71392,\\quad \\text{Part (c): } 3.74 %",
+                                "ans": "\\cr (b)$$1.71392$$(c) $$3.74\\%$$",
                                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
                         }
                 ],
@@ -464,19 +464,19 @@ window.ALEVEL_QUESTIONS = [
                         "Expand and simplify the resulting quadratic equation: \\begin{aligned}4a + 100 - 10a &= a^2 + 20a + 100 \\cr100 - 6a &= a^2 + 20a + 100 \\cra^2 + 26a &= 0\\end{aligned}",
                         "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}a(a + 26) &= 0 \\cra &= 0 \\quad \\text{or} \\quad a = -26\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-26$.",
-                        "Final Answer: $$\\text{Part (b): } a = -26$$"
+                        "Final Answer: $$\cr (b)a = -26$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (b): } a = 0$$",
+                                "ans": "$$\cr (b)a = 0$$",
                                 "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($0$ and $-26$) and select $-26$."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } a = -10$$",
+                                "ans": "$$\cr (b)a = -10$$",
                                 "feedback": "This incorrect answer probably arises from forgetting the middle term $48ad$ when expanding $(4a + 6d)^2$. Always write out the expansion of a perfect square step-by-step to prevent this common slip."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } a = 26$$",
+                                "ans": "$$\cr (b)a = 26$$",
                                 "feedback": "This incorrect answer results from a sign error when factoring the quadratic $a^2 + 26a = 0$ or when transposing the root. The factorization gives $a(a+26) = 0$, so the roots are $a = 0$ and $a = -26$."
                         }
                 ],
@@ -508,19 +508,19 @@ window.ALEVEL_QUESTIONS = [
                         "Expand and simplify the resulting quadratic equation: \\begin{aligned}18 - 2a &= a^2 + 6a + 9 \\cra^2 + 8a - 9 &= 0\\end{aligned}",
                         "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 1)(a + 9) &= 0 \\cra &= 1 \\quad \\text{or} \\quad a = -9\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-9$.",
-                        "Final Answer: $$\\text{Part (b): } a = -9$$"
+                        "Final Answer: $$\cr (b)a = -9$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (b): } a = 1$$",
+                                "ans": "$$\cr (b)a = 1$$",
                                 "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($1$ and $-9$) and select $-9$."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } a = -3$$",
+                                "ans": "$$\cr (b)a = -3$$",
                                 "feedback": "This error probably arises from forgetting the middle term $4ad$ when expanding $(2a + d)^2$. Double-check your algebraic expansions carefully."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } a = 9$$",
+                                "ans": "$$\cr (b)a = 9$$",
                                 "feedback": "This incorrect answer results from a sign error when transposing the roots of $a^2 + 8a - 9 = 0$. Since the quadratic factors to $(a-1)(a+9) = 0$, the roots are $a = 1$ and $a = -9$."
                         }
                 ],
@@ -552,19 +552,19 @@ window.ALEVEL_QUESTIONS = [
                         "Expand and simplify the resulting quadratic equation: \\begin{aligned}56 - 20a &= a^2 + 4a + 4 \\cra^2 + 24a - 52 &= 0\\end{aligned}",
                         "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 2)(a + 26) &= 0 \\cra &= 2 \\quad \\text{or} \\quad a = -26\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-26$.",
-                        "Final Answer: $$\\text{Part (b): } a = -26$$"
+                        "Final Answer: $$\cr (b)a = -26$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (b): } a = 2$$",
+                                "ans": "$$\cr (b)a = 2$$",
                                 "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($2$ and $-26$) and select $-26$."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } a = -12$$",
+                                "ans": "$$\cr (b)a = -12$$",
                                 "feedback": "This incorrect answer probably arises from forgetting the middle term $4ad$ when expanding $(2a + d)^2$ in Part (a), which leads to an incorrect quadratic in Part (b)."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } a = 26$$",
+                                "ans": "$$\cr (b)a = 26$$",
                                 "feedback": "This incorrect answer results from a sign error when transposing the roots of $a^2 + 24a - 52 = 0$. Since the quadratic factors to $(a-2)(a+26) = 0$, the roots are $a = 2$ and $a = -26$."
                         }
                 ],
@@ -597,19 +597,19 @@ window.ALEVEL_QUESTIONS = [
                         "Clear the fraction by multiplying both sides by $4$: \\begin{aligned}64 - 4a &= a^2 + 16a + 64 \\cra^2 + 20a &= 0\\end{aligned}",
                         "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}a(a + 20) &= 0 \\cra &= 0 \\quad \\text{or} \\quad a = -20\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-20$.",
-                        "Final Answer: $$\\text{Part (b): } a = -20$$"
+                        "Final Answer: $$\cr (b)a = -20$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (b): } a = 0$$",
+                                "ans": "$$\cr (b)a = 0$$",
                                 "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($0$ and $-20$) and select $-20$."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } a = -5$$",
+                                "ans": "$$\cr (b)a = -5$$",
                                 "feedback": "This incorrect answer probably arises from forgetting to square the denominator when substituting $d = \\frac{8-a}{2}$ into $d^2$ in Part (b)."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } a = 20$$",
+                                "ans": "$$\cr (b)a = 20$$",
                                 "feedback": "This incorrect answer results from a sign error when transposing the roots of $a^2 + 20a = 0$. Since the quadratic factors to $a(a+20) = 0$, the roots are $a = 0$ and $a = -20$."
                         }
                 ],
@@ -641,19 +641,19 @@ window.ALEVEL_QUESTIONS = [
                         "Expand and simplify the resulting quadratic equation: \\begin{aligned}480 - 104a &= a^2 + 8a + 16 \\cra^2 + 112a - 464 &= 0\\end{aligned}",
                         "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 4)(a + 116) &= 0 \\cra &= 4 \\quad \\text{or} \\quad a = -116\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-116$.",
-                        "Final Answer: $$\\text{Part (b): } a = -116$$"
+                        "Final Answer: $$\cr (b)a = -116$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (b): } a = 4$$",
+                                "ans": "$$\cr (b)a = 4$$",
                                 "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($4$ and $-116$) and select $-116$."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } a = -16$$",
+                                "ans": "$$\cr (b)a = -16$$",
                                 "feedback": "This incorrect answer probably arises from forgetting the middle term $4ad$ when expanding $(2a+d)^2$ in Part (a), which leads to an incorrect quadratic in Part (b)."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } a = 116$$",
+                                "ans": "$$\cr (b)a = 116$$",
                                 "feedback": "This incorrect answer results from a sign error when transposing the roots of $a^2 + 112a - 464 = 0$. Since the quadratic factors to $(a-4)(a+116) = 0$, the roots are $a = 4$ and $a = -116$."
                         }
                 ],
@@ -687,19 +687,19 @@ window.ALEVEL_QUESTIONS = [
                         "Convert the decimal hours to minutes: $$2\\text{ hours and } (0.63233 \\times 60)\\text{ minutes} \\approx 2\\text{ hours and } 38\\text{ minutes}$$",
                         "Add this time elapsed to 9 am: $$9\\text{ am} + 2\\text{ hours } 38\\text{ minutes} = 11\\text{:}38\\text{ am}$$",
                         "For Part (c), identify a biological limitation: the elimination rate of a drug is not perfectly constant. It varies based on individual liver and kidney function, metabolic speed, hydration levels, and other physiological factors.",
-                        "Final Answer: $$\\text{Part (a): } 139\\text{ mg},\\quad \\text{Part (b): } 11\\text{:}38\\text{ am}$$"
+                        "Final Answer: $$\\text{Part (a): } 139\\text{ mg},\\quad \cr (b)11\\text{:}38\\text{ am}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (a): } 75\\text{ mg},\\quad \\text{Part (b): } 11\\text{:}38\\text{ am}$$",
+                                "ans": "$$\\text{Part (a): } 75\\text{ mg},\\quad \cr (b)11\\text{:}38\\text{ am}$$",
                                 "feedback": "In Part (a), you probably assumed the drug halves twice because 5 hours is close to two half-lives of 4.5 hours (which would divide 300 mg by 4 to get 75 mg). However, you must use the continuous exponential decay model with the decay constant $k$ to get the precise remaining mass of $139\\text{ mg}$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 139\\text{ mg},\\quad \\text{Part (b): } 11\\text{:}25\\text{ am}$$",
+                                "ans": "$$\\text{Part (a): } 139\\text{ mg},\\quad \cr (b)11\\text{:}25\\text{ am}$$",
                                 "feedback": "In Part (b), you probably made an error when setting up the limit. Remember that she can only take a 150 mg dose once the remaining mass drops to $350 - 150 = 200\\text{ mg}$, not $150\\text{ mg}$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 139\\text{ mg},\\quad \\text{Part (b): } 12\\text{:}08\\text{ pm}$$",
+                                "ans": "$$\\text{Part (a): } 139\\text{ mg},\\quad \cr (b)12\\text{:}08\\text{ pm}$$",
                                 "feedback": "In Part (b), you probably made a sign error during your logarithmic rearrangement, calculating $kt = \\ln(2.5)$ instead of $kt = \\ln(1.5)$."
                         }
                 ],
@@ -731,19 +731,19 @@ window.ALEVEL_QUESTIONS = [
                         "Substitute $k = \\dfrac{\\ln(2)}{12}$ into the equation: \\begin{aligned}t &= \\dfrac{\\ln(2)}{\\ln(2)/12} \\cr&= 12\\text{ minutes}\\end{aligned}",
                         "Add this elapsed time to 1 pm: $$1\\text{ pm} + 12\\text{ minutes} = 1\\text{:}12\\text{ pm}$$",
                         "For Part (c), identify a physical limitation: the ambient room temperature may not remain perfectly constant. Stirring the tea, draft currents, or the thermal properties of the mug can also accelerate or slow down the cooling rate.",
-                        "Final Answer: $$\\text{Part (a): } 32.4^\\circ\\text{C},\\quad \\text{Part (b): } 1\\text{:}12\\text{ pm}$$"
+                        "Final Answer: $$\\text{Part (a): } 32.4^\\circ\\text{C},\\quad \cr (b)1\\text{:}12\\text{ pm}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (a): } 32.4^\\circ\\text{C},\\quad \\text{Part (b): } 1\\text{:}24\\text{ pm}$$",
+                                "ans": "$$\\text{Part (a): } 32.4^\\circ\\text{C},\\quad \cr (b)1\\text{:}24\\text{ pm}$$",
                                 "feedback": "In Part (b), you probably made a calculation error. Since the initial temperature difference of $70^\\circ\\text{C}$ needs to drop to $35^\\circ\\text{C}$ (which is exactly half), it must take exactly one half-life cycle of $12$ minutes, not $24$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 35.0^\\circ\\text{C},\\quad \\text{Part (b): } 1\\text{:}12\\text{ pm}$$",
+                                "ans": "$$\\text{Part (a): } 35.0^\\circ\\text{C},\\quad \cr (b)1\\text{:}12\\text{ pm}$$",
                                 "feedback": "In Part (a), you probably forgot to add the ambient room temperature of $20^\\circ\\text{C}$ back to your cooling difference value, or forgot that the exponent was a negative term."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 32.4^\\circ\\text{C},\\quad \\text{Part (b): } 1\\text{:}08\\text{ pm}$$",
+                                "ans": "$$\\text{Part (a): } 32.4^\\circ\\text{C},\\quad \cr (b)1\\text{:}08\\text{ pm}$$",
                                 "feedback": "In Part (b), check your transposition of the cooling threshold. The comfortable drinking threshold is $55^\\circ\\text{C}$, meaning the difference must halve once, taking exactly 12 minutes."
                         }
                 ],
@@ -775,19 +775,19 @@ window.ALEVEL_QUESTIONS = [
                         "Convert the decimal hours to minutes: $$10\\text{ hours and } (0.8568 \\times 60)\\text{ minutes} \\approx 10\\text{ hours and } 51\\text{ minutes}$$",
                         "Add this elapsed time to 10 am: $$10\\text{ am} + 10\\text{ hours } 51\\text{ minutes} = 8\\text{:}51\\text{ pm}$$",
                         "For Part (c), identify a biological limitation: in the real world, nutrient resources become depleted, space becomes limited, and toxic metabolic waste products accumulate, which will eventually slow down the reproduction rate.",
-                        "Final Answer: $$\\text{Part (a): } 13500\\text{ bacteria},\\quad \\text{Part (b): } 8\\text{:}51\\text{ pm}$$"
+                        "Final Answer: $$\\text{Part (a): } 13500\\text{ bacteria},\\quad \cr (b)8\\text{:}51\\text{ pm}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (a): } 13500\\text{ bacteria},\\quad \\text{Part (b): } 8\\text{:}52\\text{ pm}$$",
+                                "ans": "$$\\text{Part (a): } 13500\\text{ bacteria},\\quad \cr (b)8\\text{:}52\\text{ pm}$$",
                                 "feedback": "In Part (b), you probably used a prematurely rounded value of the growth constant $k \\approx 0.165$. Carrying the full calculator accuracy of $k \\approx 0.16504$ yields $10$ hours and $51$ minutes, leading to $8:51\\text{ pm}$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 10000\\text{ bacteria},\\quad \\text{Part (b): } 8\\text{:}51\\text{ pm}$$",
+                                "ans": "$$\\text{Part (a): } 10000\\text{ bacteria},\\quad \cr (b)8\\text{:}51\\text{ pm}$$",
                                 "feedback": "In Part (a), you probably assumed that the population only doubles once. Over $6$ hours, which is longer than the $4.2$ hour doubling time, the population must grow by a factor of $2^{6/4.2} \\approx 2.69$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 13500\\text{ bacteria},\\quad \\text{Part (b): } 9\\text{:}12\\text{ pm}$$",
+                                "ans": "$$\\text{Part (a): } 13500\\text{ bacteria},\\quad \cr (b)9\\text{:}12\\text{ pm}$$",
                                 "feedback": "In Part (b), check your division steps. Solving $\\text{e}^{kt} = 6$ requires dividing $\\ln(6)$ by $k$, not $\\ln(5)$ or other incorrect constants."
                         }
                 ],
@@ -818,19 +818,19 @@ window.ALEVEL_QUESTIONS = [
                         "Substitute $\\lambda = \\dfrac{\\ln(2)}{8.1}$ into the equation: \\begin{aligned}t &= 3 \\times 8.1 \\cr&= 24.3\\text{ days}\\end{aligned}",
                         "Convert the decimal days to hours: $$24\\text{ days and } (0.3 \\times 24)\\text{ hours} = 24\\text{ days and } 7.2\\text{ hours} \\approx 24\\text{ days and } 7\\text{ hours}$$",
                         "For Part (c), identify a physical limitation: radioactive decay is a random, stochastic quantum process. The model predicts the average expected decay, but the actual measurements will fluctuate statistically around this smooth curve.",
-                        "Final Answer: $$\\text{Part (a): } 286\\text{ Bq},\\quad \\text{Part (b): } 24\\text{ days and } 7\\text{ hours}$$"
+                        "Final Answer: $$\\text{Part (a): } 286\\text{ Bq},\\quad \cr (b)24\\text{ days and } 7\\text{ hours}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (a): } 225\\text{ Bq},\\quad \\text{Part (b): } 24\\text{ days and } 7\\text{ hours}$$",
+                                "ans": "$$\\text{Part (a): } 225\\text{ Bq},\\quad \cr (b)24\\text{ days and } 7\\text{ hours}$$",
                                 "feedback": "In Part (a), you probably made a calculation slip in your fractional indices or exponent multiplications. Double-check your calculator entry for $800 \\times \\text{e}^{-12\\lambda}$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 286\\text{ Bq},\\quad \\text{Part (b): } 24\\text{ days and } 12\\text{ hours}$$",
+                                "ans": "$$\\text{Part (a): } 286\\text{ Bq},\\quad \cr (b)24\\text{ days and } 12\\text{ hours}$$",
                                 "feedback": "In Part (b), when converting $0.3$ days to hours, remember that a day has 24 hours. Therefore, $0.3 \\times 24 = 7.2\\text{ hours}$, which rounds to $7\\text{ hours}$ (not $12$)."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 286\\text{ Bq},\\quad \\text{Part (b): } 8\\text{ days and } 3\\text{ hours}$$",
+                                "ans": "$$\\text{Part (a): } 286\\text{ Bq},\\quad \cr (b)8\\text{ days and } 3\\text{ hours}$$",
                                 "feedback": "In Part (b), you probably solved for 1 half-life instead of 3. Since the activity must drop to $\\frac{1}{8}$ of the initial value, it must undergo exactly three half-lives."
                         }
                 ],
@@ -863,19 +863,19 @@ window.ALEVEL_QUESTIONS = [
                         "Convert this altitude back to metres: $$15.1555\\text{ km} = 15,155.5\\text{ metres}$$",
                         "Round to the nearest 10 metres: $$15,155.5\\text{ metres} \\approx 15,160\\text{ metres}$$",
                         "For Part (c), identify a meteorological limitation: the model assumes a uniform, static atmosphere. Real-world atmospheric pressure is dynamically affected by local temperature profiles, humidity, and weather fronts independently of altitude.",
-                        "Final Answer: $$\\text{Part (a): } 48.2\\text{ kPa},\\quad \\text{Part (b): } 15,160\\text{ metres}$$"
+                        "Final Answer: $$\\text{Part (a): } 48.2\\text{ kPa},\\quad \cr (b)15,160\\text{ metres}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (a): } 47.9\\text{ kPa},\\quad \\text{Part (b): } 15,050\\text{ metres}$$",
+                                "ans": "$$\\text{Part (a): } 47.9\\text{ kPa},\\quad \cr (b)15,050\\text{ metres}$$",
                                 "feedback": "This incorrect option probably results from a minor rounding slip when calculating $k$. Carrying the rounded value $k \\approx 0.1269$ instead of $0.12603$ shifts your results. Use full calculator accuracy for $k$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 48.2\\text{ kPa},\\quad \\text{Part (b): } 15,160\\text{ km}$$",
+                                "ans": "$$\\text{Part (a): } 48.2\\text{ kPa},\\quad \cr (b)15,160\\text{ km}$$",
                                 "feedback": "In Part (b), you probably forgot to convert your final answer back from kilometres to metres. An altitude of $15,160\\text{ km}$ would extend into outer space; the target unit is metres."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 48.2\\text{ kPa},\\quad \\text{Part (b): } 15,120\\text{ metres}$$",
+                                "ans": "$$\\text{Part (a): } 48.2\\text{ kPa},\\quad \cr (b)15,120\\text{ metres}$$",
                                 "feedback": "In Part (b), check your division steps. Solving $\\text{e}^{-kh} = 0.14808$ requires dividing the natural log of this term by $k$, carrying full decimal precision."
                         }
                 ],
@@ -910,19 +910,19 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate both models at $t = 54$: $$V_{\\text{prod}} = 20 + 200\\left(\\dfrac{54}{40}\\right)^3 - 100\\left(\\dfrac{54}{40}\\right)^4 \\approx 180.12\\text{ Bcm}$$ and $$V_{\\text{use}} = 8.5 \\times 1.058^{54} \\approx 178.53\\text{ Bcm}$$. Since $180.12 > 178.53$, production exceeds consumption.",
                         "Evaluate both models at $t = 55$: $$V_{\\text{prod}} = 20 + 200\\left(\\dfrac{55}{40}\\right)^3 - 100\\left(\\dfrac{55}{40}\\right)^4 \\approx 182.44\\text{ Bcm}$$ and $$V_{\\text{use}} = 8.5 \\times 1.058^{55} \\approx 188.88\\text{ Bcm}$$. Since $182.44 < 188.88$, consumption now exceeds production.",
                         "Since the difference $V_{\\text{prod}} - V_{\\text{use}}$ changes sign from positive to negative between $t = 54$ and $t = 55$, the curves must intersect during this interval (which corresponds exactly to the calendar year 2044).",
-                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 59.464,$ $T_2 = 66.305,$ $T_3 = 71.099,\\quad \\text{Part (b): } 54 < t < 55 \\implies 2044$"
+                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 59.464,$ $T_2 = 66.305,$ $T_3 = 71.099,\\quad \cr (b)54 < t < 55 \\implies 2044$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 59.452,$ $T_2 = 66.292,$ $T_3 = 70.987,\\quad \\text{Part (b): } 54 < t < 55 \\implies 2044$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 59.452,$ $T_2 = 66.292,$ $T_3 = 70.987,\\quad \cr (b)54 < t < 55 \\implies 2044$",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $210,240$. Carrying the rounded value $T_1 \\approx 59.452$ instead of $59.464$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 59.464,$ $T_2 = 66.305,$ $T_3 = 71.099,\\quad \\text{Part (b): } 50 < t < 51 \\implies 2040$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 59.464,$ $T_2 = 66.305,$ $T_3 = 71.099,\\quad \cr (b)50 < t < 51 \\implies 2040$",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 50$ is your starting iteration value, evaluating the production and consumption curves shows that they do not cross until $t$ is between $54$ and $55$, which corresponds to the year 2044."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 59.464,$ $T_2 = 66.305,$ $T_3 = 71.099,\\quad \\text{Part (b): } 53 < t < 54 \\implies 2043$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 59.464,$ $T_2 = 66.305,$ $T_3 = 71.099,\\quad \cr (b)53 < t < 54 \\implies 2043$",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 54$. Since $V_{\\text{prod}} \\approx 180.12$ and $V_{\\text{use}} \\approx 178.53$, production is still greater than consumption, meaning they have not crossed yet."
                         }
                 ],
@@ -957,19 +957,19 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate both models at $t = 28$: $$R = 5 + 30\\left(\\dfrac{28}{10}\\right)^2 - 10\\left(\\dfrac{28}{10}\\right)^3 \\approx 20.68\\text{ million}$$ and $$C = 1.2 \\times 1.09^{28} \\approx 13.40\\text{ million}$$. Since $20.68 > 13.40$, revenue exceeds operating costs.",
                         "Evaluate both models at $t = 29$: $$R = 5 + 30\\left(\\dfrac{29}{10}\\right)^2 - 10\\left(\\dfrac{29}{10}\\right)^3 \\approx 13.41\\text{ million}$$ and $$C = 1.2 \\times 1.09^{29} \\approx 14.61\\text{ million}$$. Since $13.41 < 14.61$, costs now exceed revenue.",
                         "Since the difference $R - C$ changes sign from positive to negative between $t = 28$ and $t = 29$, the curves must intersect during this interval (which corresponds exactly to the calendar year 2038).",
-                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 30.759,$ $T_2 = 30.644,$ $T_3 = 30.588,\\quad \\text{Part (b): } 28 < t < 29 \\implies 2038$"
+                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 30.759,$ $T_2 = 30.644,$ $T_3 = 30.588,\\quad \cr (b)28 < t < 29 \\implies 2038$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 30.763,$ $T_2 = 30.642,$ $T_3 = 30.593,\\quad \\text{Part (b): } 28 < t < 29 \\implies 2038$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 30.763,$ $T_2 = 30.642,$ $T_3 = 30.593,\\quad \cr (b)28 < t < 29 \\implies 2038$",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the square root of $946.129$. Carrying the rounded value $T_1 \\approx 30.763$ instead of $30.759$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 30.759,$ $T_2 = 30.644,$ $T_3 = 30.588,\\quad \\text{Part (b): } 27 < t < 28 \\implies 2037$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 30.759,$ $T_2 = 30.644,$ $T_3 = 30.588,\\quad \cr (b)27 < t < 28 \\implies 2037$",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 28$ is your target value, evaluating both models shows that they do not cross until $t$ is between $28$ and $29$, which corresponds to the year 2038."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 30.759,$ $T_2 = 30.644,$ $T_3 = 30.588,\\quad \\text{Part (b): } 29 < t < 30 \\implies 2039$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 30.759,$ $T_2 = 30.644,$ $T_3 = 30.588,\\quad \cr (b)29 < t < 30 \\implies 2039$",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 28$. Since $R \\approx 20.68$ and $C \\approx 13.40$, revenue is still greater than costs, meaning they have not crossed yet."
                         }
                 ],
@@ -1004,19 +1004,19 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate both models at $t = 69$: $$V = 8 + 48\\left(\\dfrac{69}{12}\\right)^2 - 8\\left(\\dfrac{69}{12}\\right)^3 \\approx 74.13\\text{ thousand}$$ and $$V_{\\text{in}} = 0.5 \\times 1.07^{69} \\approx 53.20\\text{ thousand}$$. Since $74.13 > 53.20$, reservoir volume exceeds inflow.",
                         "Evaluate both models at $t = 70$: $$V = 8 + 48\\left(\\dfrac{70}{12}\\right)^2 - 8\\left(\\dfrac{70}{12}\\right)^3 \\approx 53.37\\text{ thousand}$$ and $$V_{\\text{in}} = 0.5 \\times 1.07^{70} \\approx 56.92\\text{ thousand}$$. Since $53.37 < 56.92$, inflow now exceeds reservoir volume.",
                         "Since the difference $V - V_{\\text{in}}$ changes sign from positive to negative between $t = 69$ and $t = 70$, the curves must intersect during this interval (which corresponds exactly to the 70th month).",
-                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 72.775,$ $T_2 = 72.626,$ $T_3 = 72.527,\\quad \\text{Part (b): } 69 < t < 70 \\implies \\text{70th month}$"
+                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 72.775,$ $T_2 = 72.626,$ $T_3 = 72.527,\\quad \cr (b)69 < t < 70 \\implies \\text{70th month}$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 72.700,$ $T_2 = 72.400,$ $T_3 = 72.200,\\quad \\text{Part (b): } 69 < t < 70 \\implies \\text{70th month}$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 72.700,$ $T_2 = 72.400,$ $T_3 = 72.200,\\quad \cr (b)69 < t < 70 \\implies \\text{70th month}$",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $385,416$. Carrying the rounded value $T_1 \\approx 72.700$ instead of $72.775$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 72.775,$ $T_2 = 72.626,$ $T_3 = 72.527,\\quad \\text{Part (b): } 68 < t < 69 \\implies \\text{69th month}$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 72.775,$ $T_2 = 72.626,$ $T_3 = 72.527,\\quad \cr (b)68 < t < 69 \\implies \\text{69th month}$",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 69$ is your target value, evaluating both models shows that they do not cross until $t$ is between $69$ and $70$, which corresponds to the 70th month."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 72.775,$ $T_2 = 72.626,$ $T_3 = 72.527,\\quad \\text{Part (b): } 70 < t < 71 \\implies \\text{71st month}$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 72.775,$ $T_2 = 72.626,$ $T_3 = 72.527,\\quad \cr (b)70 < t < 71 \\implies \\text{71st month}$",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 69$. Since $V \\approx 74.13$ and $V_{\\text{in}} \\approx 53.20$, reservoir volume is still greater than inflow, meaning they have not crossed yet."
                         }
                 ],
@@ -1051,19 +1051,19 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate both models at $t = 19$: $$R = 5 + 50\\left(\\dfrac{19}{10}\\right)^3 - 25\\left(\\dfrac{19}{10}\\right)^4 \\approx 22.15\\text{ moles/s}$$ and $$R_{\\text{inh}} = 0.8 \\times 1.15^{19} \\approx 11.39\\text{ moles/s}$$. Since $22.15 > 11.39$, primary reaction rate exceeds the inhibitor rate.",
                         "Evaluate both models at $t = 20$: \\begin{aligned}R &= 5 + 50\\left(\\dfrac{20}{10}\\right)^3 - 25\\left(\\dfrac{20}{10}\\right)^4 \\cr&= 5\\text{ moles/s}\\end{aligned} and $$R_{\\text{inh}} = 0.8 \\times 1.15^{20} \\approx 13.09\\text{ moles/s}$$. Since $5 < 13.09$, the inhibitor rate now exceeds the primary reaction rate.",
                         "Since the difference $R - R_{\\text{inh}}$ changes sign from positive to negative between $t = 19$ and $t = 20$, the curves must intersect during this interval (which corresponds exactly to the 20th minute).",
-                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 20.735,$ $T_2 = 20.563,$ $T_3 = 20.451,\\quad \\text{Part (b): } 19 < t < 20 \\implies \\text{20th minute}$"
+                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 20.735,$ $T_2 = 20.563,$ $T_3 = 20.451,\\quad \cr (b)19 < t < 20 \\implies \\text{20th minute}$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 20.730,$ $T_2 = 20.610,$ $T_3 = 20.540,\\quad \\text{Part (b): } 19 < t < 20 \\implies \\text{20th minute}$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 20.730,$ $T_2 = 20.610,$ $T_3 = 20.540,\\quad \cr (b)19 < t < 20 \\implies \\text{20th minute}$",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $8,915.24$. Carrying the rounded value $T_1 \\approx 20.730$ instead of $20.735$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 20.735,$ $T_2 = 20.563,$ $T_3 = 20.451,\\quad \\text{Part (b): } 18 < t < 19 \\implies \\text{19th minute}$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 20.735,$ $T_2 = 20.563,$ $T_3 = 20.451,\\quad \cr (b)18 < t < 19 \\implies \\text{19th minute}$",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 19$ is your target value, evaluating both models shows that they do not cross until $t$ is between $19$ and $20$, which corresponds to the 20th minute."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 20.735,$ $T_2 = 20.563,$ $T_3 = 20.451,\\quad \\text{Part (b): } 20 < t < 21 \\implies \\text{21st minute}$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 20.735,$ $T_2 = 20.563,$ $T_3 = 20.451,\\quad \cr (b)20 < t < 21 \\implies \\text{21st minute}$",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 19$. Since $R \\approx 22.15$ and $R_{\\text{inh}} \\approx 11.39$, primary rate is still greater than inhibitor rate, meaning they have not crossed yet."
                         }
                 ],
@@ -1098,19 +1098,19 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate both models at $t = 39$: $$V = 4 + 40\\left(\\dfrac{39}{20}\\right)^3 - 20\\left(\\dfrac{39}{20}\\right)^4 \\approx 11.42\\text{ million}$$ and $$C = 0.2 \times 1.085^{39} \\approx 4.82\\text{ million}$$. Since $11.42 > 4.82$, fleet value exceeds maintenance costs.",
                         "Evaluate both models at $t = 40$: \\begin{aligned}V &= 4 + 40\\left(\\dfrac{40}{20}\\right)^3 - 20\\left(\\dfrac{40}{20}\\right)^4 \\cr&= 4\\text{ million}\\end{aligned} and $$C = 0.2 \times 1.085^{40} \\approx 5.23\\text{ million}$$. Since $4 < 5.23$, maintenance costs now exceed the fleet value.",
                         "Since the difference $V - C$ changes sign from positive to negative between $t = 39$ and $t = 40$, the curves must intersect during this interval (which corresponds exactly to the 40th year).",
-                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 40.821,$ $T_2 = 40.704,$ $T_3 = 40.627,\\quad \\text{Part (b): } 39 < t < 40 \\implies \\text{40th year}$"
+                        "Final Answer: $\\text{Part (a)(ii): } T_1 = 40.821,$ $T_2 = 40.704,$ $T_3 = 40.627,\\quad \cr (b)39 < t < 40 \\implies \\text{40th year}$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 40.820,$ $T_2 = 40.730,$ $T_3 = 40.670,\\quad \\text{Part (b): } 39 < t < 40 \\implies \\text{40th year}$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 40.820,$ $T_2 = 40.730,$ $T_3 = 40.670,\\quad \cr (b)39 < t < 40 \\implies \\text{40th year}$",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $68,020.5$. Carrying the rounded value $T_1 \\approx 40.820$ instead of $40.821$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 40.821,$ $T_2 = 40.704,$ $T_3 = 40.627,\\quad \\text{Part (b): } 38 < t < 39 \\implies \\text{39th year}$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 40.821,$ $T_2 = 40.704,$ $T_3 = 40.627,\\quad \cr (b)38 < t < 39 \\implies \\text{39th year}$",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 39$ is your target value, evaluating both models shows that they do not cross until $t$ is between $39$ and $40$, which corresponds to the 40th year."
                         },
                         {
-                                "ans": "$\\text{Part (a)(ii): } T_1 = 40.821,$ $T_2 = 40.704,$ $T_3 = 40.627,\\quad \\text{Part (b): } 40 < t < 41 \\implies \\text{41st year}$",
+                                "ans": "$\\text{Part (a)(ii): } T_1 = 40.821,$ $T_2 = 40.704,$ $T_3 = 40.627,\\quad \cr (b)40 < t < 41 \\implies \\text{41st year}$",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 39$. Since $V \\approx 11.42$ and $C \\approx 4.82$, fleet value is still greater than maintenance costs, meaning they have not crossed yet."
                         }
                 ],
@@ -1147,19 +1147,19 @@ window.ALEVEL_QUESTIONS = [
                         "Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: \\begin{aligned}y &= -\\dfrac{1}{3},\\quad y \\cr&= \\dfrac{1}{2},\\quad y \\cr&= \\dfrac{3}{4}\\end{aligned}",
                         "Since $y = \\sec x$, we must have $\\sec x = -\\dfrac{1}{3}$, $\\sec x = \\dfrac{1}{2}$, or $\\sec x = \\dfrac{3}{4}$.",
                         "Recall that the range of the secant function is strictly restricted to $|\\sec x| \\ge 1$. Since all three roots have absolute values strictly less than $1$ ($|-\\frac{1}{3}| < 1$, $|\\frac{1}{2}| < 1$, and $|\\frac{3}{4}| < 1$), there are no real values of $x$ that satisfy these equations.",
-                        "Final Answer: \\begin{aligned}\\text{Part (b): } p(x) &= (3x+1)(2x-1)(4x-3),\\quad \\text{Part (c): } |\\sec x| \\ge 1 \\cr\\text{No real solutions}\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\cr (b)p(x) &= (3x+1)(2x-1)(4x-3)(c) |\\sec x| \\ge 1 \\cr\\text{No real solutions}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (b): } p(x) = (3x+1)(2x-1)(4x-3),\\quad \\text{Part (c): } x = -\\dfrac{1}{3}$$",
+                                "ans": "$$\cr (b)p(x) = (3x+1)(2x-1)(4x-3)(c) x = -\\dfrac{1}{3}$$",
                                 "feedback": "In Part (c), you probably solved for the variable $y = \\sec x$ but forgot that we are solving for $x$. Since $\\sec x = -1/3$ has no real solutions (as $|-1/3| < 1$), $x = -1/3$ is not a valid solution for the trigonometric equation."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } p(x) = (3x+1)(2x+1)(4x-3),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                                "ans": "$$\cr (b)p(x) = (3x+1)(2x+1)(4x-3)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Factoring the quadratic quotient $8x^2 - 10x + 3$ yields $(2x-1)(4x-3)$. Having a factor of $(2x+1)$ is incorrect."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } p(x) = 3(3x+1)(2x-1)(4x-3),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                                "ans": "$$\cr (b)p(x) = 3(3x+1)(2x-1)(4x-3)(c) \\text{No real solutions}$$",
                                 "feedback": "In Part (b), you probably introduced an extra factor of $3$ when factoring the quadratic. Since $(3x+1)(2x-1)(4x-3)$ expands to exactly $24x^3 - 22x^2 - x + 3$, no additional scalar multiplier is needed."
                         }
                 ],
@@ -1194,19 +1194,19 @@ window.ALEVEL_QUESTIONS = [
                         "Factorise the quadratic equation: \\begin{aligned}(y-2)(y-3) &= 0 \\cry &= 2 \\quad \\text{or} \\quad y = 3\\end{aligned}",
                         "Since $y = \\sin x$, we must have $\\sin x = 2$ or $\\sin x = 3$.",
                         "Recall that the range of the sine function is strictly restricted to $-1 \\le \\sin x \\le 1$. Since both roots are strictly greater than $1$ ($2 > 1$ and $3 > 1$), there are no real values of $x$ that satisfy these equations.",
-                        "Final Answer: \\begin{aligned}\\text{Part (b): } q(x) &= (2x-1)(3x-1),\\quad \\text{Part (c): } -1 \\le \\sin x \\le 1 \\cr\\text{No real solutions}\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\cr (b)q(x) &= (2x-1)(3x-1)(c) -1 \\le \\sin x \\le 1 \\cr\\text{No real solutions}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (b): } q(x) = (2x-1)(3x-1),\\quad \\text{Part (c): } x = 2 \\text{ or } x = 3$$",
+                                "ans": "$$\cr (b)q(x) = (2x-1)(3x-1)(c) x = 2 \\text{ or } x = 3$$",
                                 "feedback": "In Part (c), you have stated the roots of the quadratic in $y$. However, the original equation is in terms of $\\sin x$. Since $\\sin x = 2$ has no real solutions, $x=2$ is not a valid solution."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } q(x) = (2x-1)(3x+1),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                                "ans": "$$\cr (b)q(x) = (2x-1)(3x+1)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Expanding $(2x-1)(3x+1)$ yields $6x^2 - x - 1$, which does not match our quadratic $q(x) = 6x^2 - 5x + 1$."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } q(x) = (2x+1)(3x-1),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                                "ans": "$$\cr (b)q(x) = (2x+1)(3x-1)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your factor signs in Part (b). Since we proved $(2x-1)$ is a factor in Part (a), having a factor of $(2x+1)$ is mathematically incorrect."
                         }
                 ],
@@ -1242,19 +1242,19 @@ window.ALEVEL_QUESTIONS = [
                         "Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: \\begin{aligned}y &= -2,\\quad y \\cr&= 3,\\quad y \\cr&= \\dfrac{3}{2}\\end{aligned}",
                         "Since $y = \\sin x$, we must have $\\sin x = -2$, $\\sin x = 3$, or $\\sin x = \\dfrac{3}{2}$.",
                         "Recall that the range of the sine function is strictly restricted to $-1 \\le \\sin x \\le 1$. Since all three roots have absolute values strictly greater than $1$ ($|-2| > 1$, $|3| > 1$, and $|\\frac{3}{2}| > 1$), there are no real values of $x$ that satisfy these equations.",
-                        "Final Answer: \\begin{aligned}\\text{Part (b): } p(x) &= (x+2)(x-3)(2x-3),\\quad \\text{Part (c): } -1 \\le \\sin x \\le 1 \\cr\\text{No real solutions}\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\cr (b)p(x) &= (x+2)(x-3)(2x-3)(c) -1 \\le \\sin x \\le 1 \\cr\\text{No real solutions}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (b): } p(x) = (x+2)(x-3)(2x-3),\\quad \\text{Part (c): } x = 3$$",
+                                "ans": "$$\cr (b)p(x) = (x+2)(x-3)(2x-3)(c) x = 3$$",
                                 "feedback": "In Part (c), you have stated the roots of the cubic in $y = \\sin x$. However, the original equation is in terms of $x$. Since $\\sin x = 3$ has no real solutions, $x=3$ is not a valid solution."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } p(x) = (x+2)(x+3)(2x-3),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                                "ans": "$$\cr (b)p(x) = (x+2)(x+3)(2x-3)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Factoring the quadratic quotient $2x^2 - 9x + 9$ yields $(x-3)(2x-3)$. Having a factor of $(x+3)$ is incorrect."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } p(x) = (x-2)(x-3)(2x-3),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                                "ans": "$$\cr (b)p(x) = (x-2)(x-3)(2x-3)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your factor signs in Part (b). Since we proved $(x+2)$ is a factor in Part (a), having a factor of $(x-2)$ is mathematically incorrect."
                         }
                 ],
@@ -1290,19 +1290,19 @@ window.ALEVEL_QUESTIONS = [
                         "Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: \\begin{aligned}y &= -\\dfrac{3}{2},\\quad y \\cr&= 2,\\quad y \\cr&= 4\\end{aligned}",
                         "Since $y = \\cos x$, we must have $\\cos x = -\\dfrac{3}{2}$, $\\cos x = 2$, or $\\cos x = 4$.",
                         "Recall that the range of the cosine function is strictly restricted to $-1 \\le \\cos x \\le 1$. Since all three roots have absolute values strictly greater than $1$ ($|-\\frac{3}{2}| > 1$, $|2| > 1$, and $|4| > 1$), there are no real values of $x$ that satisfy these equations.",
-                        "Final Answer: \\begin{aligned}\\text{Part (b): } p(x) &= (2x+3)(x-2)(x-4),\\quad \\text{Part (c): } -1 \\le \\cos x \\le 1 \\cr\\text{No real solutions}\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\cr (b)p(x) &= (2x+3)(x-2)(x-4)(c) -1 \\le \\cos x \\le 1 \\cr\\text{No real solutions}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (b): } p(x) = 2(2x+3)(x-2)(x-4),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                                "ans": "$$\cr (b)p(x) = 2(2x+3)(x-2)(x-4)(c) \\text{No real solutions}$$",
                                 "feedback": "In Part (b), you probably made a division slip when factoring. Note that $(2x+3)(x-2)(x-4)$ expands directly to our cubic $2x^3 - 9x^2 - 2x + 24$, so no additional scalar multiplier of $2$ is needed."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } p(x) = (2x+3)(x-2)(x-4),\\quad \\text{Part (c): } x = 2 \\text{ or } x = 4$$",
+                                "ans": "$$\cr (b)p(x) = (2x+3)(x-2)(x-4)(c) x = 2 \\text{ or } x = 4$$",
                                 "feedback": "In Part (c), you have stated the roots of the cubic in $y = \\cos x$. However, the original equation is in terms of $x$. Since $\\cos x = 2$ has no real solutions, $x=2$ is not a valid solution."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } p(x) = (2x+3)(x+2)(x-4),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                                "ans": "$$\cr (b)p(x) = (2x+3)(x+2)(x-4)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Factoring the quadratic quotient $x^2 - 6x + 8$ yields $(x-2)(x-4)$. Having a factor of $(x+2)$ is incorrect."
                         }
                 ],
@@ -1337,19 +1337,19 @@ window.ALEVEL_QUESTIONS = [
                         "Factorise the quadratic equation: \\begin{aligned}(y-2)(y-6) &= 0 \\cry &= 2 \\quad \\text{or} \\quad y = 6\\end{aligned}",
                         "Since $y = \\cos x$, we must have $\\cos x = 2$ or $\\cos x = 6$.",
                         "Recall that the range of the cosine function is strictly restricted to $-1 \\le \\cos x \\le 1$. Since both roots are strictly greater than $1$ ($2 > 1$ and $6 > 1$), there are no real values of $x$ that satisfy these equations.",
-                        "Final Answer: \\begin{aligned}\\text{Part (b): } q(x) &= (2x-1)(6x-1),\\quad \\text{Part (c): } -1 \\le \\cos x \\le 1 \\cr\\text{No real solutions}\\end{aligned}"
+                        "Final Answer: \\begin{aligned}\cr (b)q(x) &= (2x-1)(6x-1)(c) -1 \\le \\cos x \\le 1 \\cr\\text{No real solutions}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (b): } q(x) = (2x-1)(6x-1),\\quad \\text{Part (c): } x = 2 \\text{ or } x = 6$$",
+                                "ans": "$$\cr (b)q(x) = (2x-1)(6x-1)(c) x = 2 \\text{ or } x = 6$$",
                                 "feedback": "In Part (c), you have stated the roots of the quadratic in $y = \\cos x$. However, the original equation is in terms of $x$. Since $\\cos x = 2$ has no real solutions, $x=2$ is not a valid solution."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } q(x) = (2x-1)(6x+1),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                                "ans": "$$\cr (b)q(x) = (2x-1)(6x+1)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Expanding $(2x-1)(6x+1)$ yields $12x^2 - 4x - 1$, which does not match our quadratic $q(x) = 12x^2 - 8x + 1$."
                         },
                         {
-                                "ans": "$$\\text{Part (b): } q(x) = (2x+1)(6x-1),\\quad \\text{Part (c): } \\text{No real solutions}$$",
+                                "ans": "$$\cr (b)q(x) = (2x+1)(6x-1)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your factor signs in Part (b). Since we proved $(2x-1)$ is a factor in Part (a), having a factor of $(2x+1)$ is mathematically incorrect."
                         }
                 ],
