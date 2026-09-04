@@ -464,19 +464,19 @@ window.ALEVEL_QUESTIONS = [
                         "Expand and simplify the resulting quadratic equation: \\begin{aligned}4a + 100 - 10a &= a^2 + 20a + 100 \\cr100 - 6a &= a^2 + 20a + 100 \\cr a^2 + 26a &= 0\\end{aligned}",
                         "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}a(a + 26) &= 0 \\cr a &= 0 \\quad \\text{or} \\quad a = -26\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-26$.",
-                        "Final Answer: $$\cr (b)a = -26$$"
+                        "Final Answer: <br> (b)$$a = -26$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\cr (b)a = 0$$",
+                                "ans": "<br>(b)$$a = 0$$",
                                 "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($0$ and $-26$) and select $-26$."
                         },
                         {
-                                "ans": "$$\cr (b)a = -10$$",
+                                "ans": "<br>(b)$$a = -10$$",
                                 "feedback": "This incorrect answer probably arises from forgetting the middle term $48ad$ when expanding $(4a + 6d)^2$. Always write out the expansion of a perfect square step-by-step to prevent this common slip."
                         },
                         {
-                                "ans": "$$\cr (b)a = 26$$",
+                                "ans": "<br>(b)$$a = 26$$",
                                 "feedback": "This incorrect answer results from a sign error when factoring the quadratic $a^2 + 26a = 0$ or when transposing the root. The factorization gives $a(a+26) = 0$, so the roots are $a = 0$ and $a = -26$."
                         }
                 ],
@@ -508,19 +508,19 @@ window.ALEVEL_QUESTIONS = [
                         "Expand and simplify the resulting quadratic equation: \\begin{aligned}18 - 2a &= a^2 + 6a + 9 \\cr a^2 + 8a - 9 &= 0\\end{aligned}",
                         "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 1)(a + 9) &= 0 \\cr a &= 1 \\quad \\text{or} \\quad a = -9\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-9$.",
-                        "Final Answer: $$\cr (b)a = -9$$"
+                        "Final Answer: <br> (b)$$a = -9$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\cr (b)a = 1$$",
+                                "ans": "<br>(b)$$a = 1$$",
                                 "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($1$ and $-9$) and select $-9$."
                         },
                         {
-                                "ans": "$$\cr (b)a = -3$$",
+                                "ans": "<br>(b)$$a = -3$$",
                                 "feedback": "This error probably arises from forgetting the middle term $4ad$ when expanding $(2a + d)^2$. Double-check your algebraic expansions carefully."
                         },
                         {
-                                "ans": "$$\cr (b)a = 9$$",
+                                "ans": "<br>(b)$$a = 9$$",
                                 "feedback": "This incorrect answer results from a sign error when transposing the roots of $a^2 + 8a - 9 = 0$. Since the quadratic factors to $(a-1)(a+9) = 0$, the roots are $a = 1$ and $a = -9$."
                         }
                 ],
@@ -552,19 +552,19 @@ window.ALEVEL_QUESTIONS = [
                         "Expand and simplify the resulting quadratic equation: \\begin{aligned}56 - 20a &= a^2 + 4a + 4 \\cr a^2 + 24a - 52 &= 0\\end{aligned}",
                         "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 2)(a + 26) &= 0 \\cr a &= 2 \\quad \\text{or} \\quad a = -26\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-26$.",
-                        "Final Answer: $$\cr (b)a = -26$$"
+                        "Final Answer: <br> (b)$$a = -26$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\cr (b)a = 2$$",
+                                "ans": "<br>(b)$$a = 2$$",
                                 "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($2$ and $-26$) and select $-26$."
                         },
                         {
-                                "ans": "$$\cr (b)a = -12$$",
+                                "ans": "<br>(b)$$a = -12$$",
                                 "feedback": "This incorrect answer probably arises from forgetting the middle term $4ad$ when expanding $(2a + d)^2$ in Part (a), which leads to an incorrect quadratic in Part (b)."
                         },
                         {
-                                "ans": "$$\cr (b)a = 26$$",
+                                "ans": "<br>(b)$$a = 26$$",
                                 "feedback": "This incorrect answer results from a sign error when transposing the roots of $a^2 + 24a - 52 = 0$. Since the quadratic factors to $(a-2)(a+26) = 0$, the roots are $a = 2$ and $a = -26$."
                         }
                 ],
@@ -597,19 +597,19 @@ window.ALEVEL_QUESTIONS = [
                         "Clear the fraction by multiplying both sides by $4$: \\begin{aligned}64 - 4a &= a^2 + 16a + 64 \\cr a^2 + 20a &= 0\\end{aligned}",
                         "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}a(a + 20) &= 0 \\cr a &= 0 \\quad \\text{or} \\quad a = -20\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-20$.",
-                        "Final Answer: $$\cr (b)a = -20$$"
+                        "Final Answer: <br> (b)$$a = -20$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\cr (b)a = 0$$",
+                                "ans": "<br>(b)$$a = 0$$",
                                 "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($0$ and $-20$) and select $-20$."
                         },
                         {
-                                "ans": "$$\cr (b)a = -5$$",
+                                "ans": "<br>(b)$$a = -5$$",
                                 "feedback": "This incorrect answer probably arises from forgetting to square the denominator when substituting $d = \\frac{8-a}{2}$ into $d^2$ in Part (b)."
                         },
                         {
-                                "ans": "$$\cr (b)a = 20$$",
+                                "ans": "<br>(b)$$a = 20$$",
                                 "feedback": "This incorrect answer results from a sign error when transposing the roots of $a^2 + 20a = 0$. Since the quadratic factors to $a(a+20) = 0$, the roots are $a = 0$ and $a = -20$."
                         }
                 ],
@@ -641,19 +641,19 @@ window.ALEVEL_QUESTIONS = [
                         "Expand and simplify the resulting quadratic equation: \\begin{aligned}480 - 104a &= a^2 + 8a + 16 \\cr a^2 + 112a - 464 &= 0\\end{aligned}",
                         "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 4)(a + 116) &= 0 \\cr a &= 4 \\quad \\text{or} \\quad a = -116\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-116$.",
-                        "Final Answer: $$\cr (b)a = -116$$"
+                        "Final Answer: <br> (b)$$a = -116$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\cr (b)a = 4$$",
+                                "ans": "<br>(b)$$a = 4$$",
                                 "feedback": "You have found the larger of the two possible values of $a$. The question asks for the smallest possible value, which requires you to compare the two roots ($4$ and $-116$) and select $-116$."
                         },
                         {
-                                "ans": "$$\cr (b)a = -16$$",
+                                "ans": "<br>(b)$$a = -16$$",
                                 "feedback": "This incorrect answer probably arises from forgetting the middle term $4ad$ when expanding $(2a+d)^2$ in Part (a), which leads to an incorrect quadratic in Part (b)."
                         },
                         {
-                                "ans": "$$\cr (b)a = 116$$",
+                                "ans": "<br>(b)$$a = 116$$",
                                 "feedback": "This incorrect answer results from a sign error when transposing the roots of $a^2 + 112a - 464 = 0$. Since the quadratic factors to $(a-4)(a+116) = 0$, the roots are $a = 4$ and $a = -116$."
                         }
                 ],
@@ -677,29 +677,29 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "A patient takes a dose of a prescribed drug. A doctor models the mass of the drug in the patient's body using<br>$$m = m_0 \\text{e}^{-kt}$$<br>where $m_0$ milligrams is the initial mass of the drug in the body and $m$ milligrams is the mass of the drug in the body after $t$ hours.<br><br>On average, it takes 4.5 hours for the mass of the drug in the body to halve. One standard dose contains 150 mg of the drug.<br><br>(a) The patient takes two standard doses at 9 am. Use the model to estimate the mass of the drug remaining in the patient's body at 2 pm.<br><br>(b) To prevent toxicity, the patient must ensure the mass of the drug in her body remains below 350 mg. Use the model to find the earliest time after 9 am that she can take another single standard dose of 150 mg. Give your answer to the nearest minute.<br><br>(c) State a biological reason why the mass of the drug remaining in the patient's body predicted by the model may not be completely accurate.",
                 "steps": [
-                        "First, calculate the decay constant $k$ by setting $m = \\dfrac{1}{2}m_0$ when $t = 4.5$: \\begin{aligned}\\dfrac{1}{2}m_0 &= m_0\\text{e}^{-4.5k} \\cr\\text{e}^{-4.5k} &= 0.5 \\cr-4.5k &= \\ln(0.5) \\crk &= \\dfrac{\\ln(2)}{4.5} \\approx 0.15403\\end{aligned}",
+                        "First, calculate the decay constant $k$ by setting $m = \\dfrac{1}{2}m_0$ when $t = 4.5$: \\begin{aligned}\\dfrac{1}{2}m_0 &= m_0\\text{e}^{-4.5k} \\cr\\text{e}^{-4.5k} &= 0.5 \\cr-4.5k &= \\ln(0.5) \\cr k &= \\dfrac{\\ln(2)}{4.5}\\cr &\\approx 0.15403\\end{aligned}",
                         "For Part (a), calculate the initial mass $m_0$ for two standard doses of 150 mg: \\begin{aligned}m_0 &= 2 \\times 150 \\cr&= 300\\text{ mg}\\end{aligned}",
-                        "Calculate the time elapsed between 9 am and 2 pm, which is $t = 5$ hours. Substitute $m_0 = 300$ and $t = 5$ into the model: \\begin{aligned}m &= 300\\text{e}^{-0.15403 \\times 5} \\cr&= 300\\text{e}^{-0.77015} \\approx 138.93\\text{ mg} \\approx 139\\text{ mg}\\end{aligned}",
-                        "For Part (b), to stay below 350 mg immediately after taking a new 150 mg dose, the mass remaining in the body just before the dose must satisfy: $$\\text{Mass remaining} + 150 \\le 350 \\implies \\text{Mass remaining} \\le 200\\text{ mg}$$",
+                        "Calculate the time elapsed between 9 am and 2 pm, which is $t = 5$ hours. Substitute $m_0 = 300$ and $t = 5$ into the model: \\begin{aligned}m &= 300\\text{e}^{-0.15403 \\times 5} \\cr&= 300\\text{e}^{-0.77015} \\cr &\\approx 138.93\\text{ mg} cr &\\approx 139\\text{ mg}\\end{aligned}",
+                        "For Part (b), to stay below 350 mg immediately after taking a new 150 mg dose, the mass remaining in the body just before the dose must satisfy: \\begin{aligned}\\text{Mass remaining} + 150 &\\le 350 \\cr\\implies \\text{Mass remaining} &\\le 200\\text{ mg}$$",
                         "Set $m = 200$ and solve for $t$: \\begin{aligned}200 &= 300\\text{e}^{-kt} \\cr\\text{e}^{-kt} &= \\dfrac{200}{300} = \\dfrac{2}{3}\\end{aligned}",
-                        "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-kt &= \\ln\\left(\\dfrac{2}{3}\\right) \\crkt &= \\ln(1.5) \\approx 0.40547\\end{aligned}",
+                        "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-kt &= \\ln\\left(\\dfrac{2}{3}\\right) \\cr kt &= \\ln(1.5)\\cr & \\approx 0.40547\\end{aligned}",
                         "Divide by the decay constant $k = 0.15403$ to find the time $t$ in hours: $$t = \\dfrac{0.40547}{0.15403} \\approx 2.63233\\text{ hours}$$",
-                        "Convert the decimal hours to minutes: $$2\\text{ hours and } (0.63233 \\times 60)\\text{ minutes} \\approx 2\\text{ hours and } 38\\text{ minutes}$$",
-                        "Add this time elapsed to 9 am: $$9\\text{ am} + 2\\text{ hours } 38\\text{ minutes} = 11\\text{:}38\\text{ am}$$",
+                        "Convert the decimal hours to minutes: \\begin{aligned}&2\\text{ hours and } (0.63233 \\times 60)\\text{ minutes} \\cr & quad\\approx 2\\text{ hours and } 38\\text{ minutes}end{aligned}",
+                        "Add this time elapsed to 9 am: \\begin{aligned}9\\text{ am} &+ 2\\text{ hours } 38\\text{ minutes}\\cr & = 11\\text{:}38\\text{ am}\\end{aligned}",
                         "For Part (c), identify a biological limitation: the elimination rate of a drug is not perfectly constant. It varies based on individual liver and kidney function, metabolic speed, hydration levels, and other physiological factors.",
-                        "Final Answer: $$\\text{Part (a): } 139\\text{ mg},\\quad \cr (b)11\\text{:}38\\text{ am}$$"
+                        "Final Answer: (a) $$ 139\\text{ mg}$$ (b) $$11\\text{:}38\\text{ am}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (a): } 75\\text{ mg},\\quad \cr (b)11\\text{:}38\\text{ am}$$",
+                                "ans": "(a) $$ 75\\text{ mg}$$ (b) $$11\\text{:}38\\text{ am}$$",
                                 "feedback": "In Part (a), you probably assumed the drug halves twice because 5 hours is close to two half-lives of 4.5 hours (which would divide 300 mg by 4 to get 75 mg). However, you must use the continuous exponential decay model with the decay constant $k$ to get the precise remaining mass of $139\\text{ mg}$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 139\\text{ mg},\\quad \cr (b)11\\text{:}25\\text{ am}$$",
+                                "ans": "(a) $$ 139\\text{ mg}$$ (b) $$11\\text{:}25\\text{ am}$$",
                                 "feedback": "In Part (b), you probably made an error when setting up the limit. Remember that she can only take a 150 mg dose once the remaining mass drops to $350 - 150 = 200\\text{ mg}$, not $150\\text{ mg}$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 139\\text{ mg},\\quad \cr (b)12\\text{:}08\\text{ pm}$$",
+                                "ans": "(a) $$ 139\\text{ mg}$$ (b) $$12\\text{:}08\\text{ pm}$$",
                                 "feedback": "In Part (b), you probably made a sign error during your logarithmic rearrangement, calculating $kt = \\ln(2.5)$ instead of $kt = \\ln(1.5)$."
                         }
                 ],
@@ -724,26 +724,26 @@ window.ALEVEL_QUESTIONS = [
                 "question": "A hot cup of tea is left to cool in a room held at a constant temperature of $20^\\circ\\text{C}$. The temperature of the tea, $\\theta$ (in $^\\circ\\text{C}$), after $t$ minutes is modelled by<br>$$\\theta = 20 + 70\\text{e}^{-kt}$$<br>On average, the temperature difference between the tea and the room halves every 12 minutes.<br><br>(a) The tea is poured at 1 pm. Use the model to estimate the temperature of the tea at 1:30 pm.<br><br>(b) The tea is considered comfortable to drink once its temperature drops below $55^\\circ\\text{C}$. Find the earliest time after 1 pm that the tea is comfortable to drink. Give your answer to the nearest minute.<br><br>(c) State a physical reason why the temperature of the tea predicted by the model may not be completely accurate.",
                 "steps": [
                         "First, identify the term representing the temperature difference: $$\\theta - 20 = 70\\text{e}^{-kt}$$",
-                        "Calculate the decay constant $k$ using the fact that this difference halves every 12 minutes: \\begin{aligned}\\dfrac{1}{2} \\times 70 &= 70\\text{e}^{-12k} \\cr\\text{e}^{-12k} &= 0.5 \\cr-12k &= \\ln(0.5) \\crk &= \\dfrac{\\ln(2)}{12} \\approx 0.05776\\end{aligned}",
+                        "Calculate the decay constant $k$ using the fact that this difference halves every 12 minutes: \\begin{aligned}\\dfrac{1}{2} \\times 70 &= 70\\text{e}^{-12k} \\cr\\text{e}^{-12k} &= 0.5 \\cr-12k &= \\ln(0.5) \\cr k &= \\dfrac{\\ln(2)}{12} \\approx 0.05776\\end{aligned}",
                         "For Part (a), calculate the time elapsed between 1 pm and 1:30 pm, which is $t = 30$ minutes. Substitute $t = 30$ into the model: \\begin{aligned}\\theta &= 20 + 70\\text{e}^{-0.05776 \\times 30} \\cr&= 20 + 70\\text{e}^{-1.7328} \\approx 20 + 12.37 \\approx 32.4^\\circ\\text{C}\\end{aligned}",
                         "For Part (b), set $\\theta = 55$ and solve for $t$: \\begin{aligned}55 &= 20 + 70\\text{e}^{-kt} \\cr70\\text{e}^{-kt} &= 35 \\cr\\text{e}^{-kt} &= 0.5\\end{aligned}",
-                        "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-kt &= \\ln(0.5) \\crkt &= \\ln(2) \\crt &= \\dfrac{\\ln(2)}{k}\\end{aligned}",
+                        "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-kt &= \\ln(0.5) \\cr kt &= \\ln(2) \\crt &= \\dfrac{\\ln(2)}{k}\\end{aligned}",
                         "Substitute $k = \\dfrac{\\ln(2)}{12}$ into the equation: \\begin{aligned}t &= \\dfrac{\\ln(2)}{\\ln(2)/12} \\cr&= 12\\text{ minutes}\\end{aligned}",
                         "Add this elapsed time to 1 pm: $$1\\text{ pm} + 12\\text{ minutes} = 1\\text{:}12\\text{ pm}$$",
                         "For Part (c), identify a physical limitation: the ambient room temperature may not remain perfectly constant. Stirring the tea, draft currents, or the thermal properties of the mug can also accelerate or slow down the cooling rate.",
-                        "Final Answer: $$\\text{Part (a): } 32.4^\\circ\\text{C},\\quad \cr (b)1\\text{:}12\\text{ pm}$$"
+                        "Final Answer: (a) $$ 32.4^\\circ\\text{C}$$ (b) $$1\\text{:}12\\text{ pm}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (a): } 32.4^\\circ\\text{C},\\quad \cr (b)1\\text{:}24\\text{ pm}$$",
+                                "ans": "(a) $$ 32.4^\\circ\\text{C}$$ (b) $$1\\text{:}24\\text{ pm}$$",
                                 "feedback": "In Part (b), you probably made a calculation error. Since the initial temperature difference of $70^\\circ\\text{C}$ needs to drop to $35^\\circ\\text{C}$ (which is exactly half), it must take exactly one half-life cycle of $12$ minutes, not $24$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 35.0^\\circ\\text{C},\\quad \cr (b)1\\text{:}12\\text{ pm}$$",
+                                "ans": "(a) $$ 35.0^\\circ\\text{C}$$ (b) $$1\\text{:}12\\text{ pm}$$",
                                 "feedback": "In Part (a), you probably forgot to add the ambient room temperature of $20^\\circ\\text{C}$ back to your cooling difference value, or forgot that the exponent was a negative term."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 32.4^\\circ\\text{C},\\quad \cr (b)1\\text{:}08\\text{ pm}$$",
+                                "ans": "(a) $$ 32.4^\\circ\\text{C}$$ (b) $$1\\text{:}08\\text{ pm}$$",
                                 "feedback": "In Part (b), check your transposition of the cooling threshold. The comfortable drinking threshold is $55^\\circ\\text{C}$, meaning the difference must halve once, taking exactly 12 minutes."
                         }
                 ],
@@ -767,7 +767,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "A biologist is researching the growth of a bacterial culture. She models the population of the bacteria, $P$, using<br>$$P = P_0\\text{e}^{kt}$$<br>where $P_0$ is the initial population of the culture and $t$ is the time in hours. On average, the population of the bacteria doubles every 4.2 hours.<br><br>(a) The biologist starts a culture with an initial population of 5000 bacteria at 10 am. Use the model to estimate the population of the culture at 4 pm. Give your answer to 3 significant figures.<br><br>(b) The culture must be transferred to a larger container once the population exceeds 30,000 bacteria. Find the earliest time after 10 am that the transfer must take place. Give your answer to the nearest minute.<br><br>(c) State a biological reason why this exponential growth model is unlikely to remain accurate over a long period of time.",
                 "steps": [
-                        "First, calculate the growth constant $k$ using the doubling time of 4.2 hours: \\begin{aligned}2P_0 &= P_0\\text{e}^{4.2k} \\cr\\text{e}^{4.2k} &= 2 \\cr4.2k &= \\ln(2) \\crk &= \\dfrac{\\ln(2)}{4.2} \\approx 0.16504\\end{aligned}",
+                        "First, calculate the growth constant $k$ using the doubling time of 4.2 hours: \\begin{aligned}2P_0 &= P_0\\text{e}^{4.2k} \\cr\\text{e}^{4.2k} &= 2 \\cr4.2k &= \\ln(2) \\cr k &= \\dfrac{\\ln(2)}{4.2} \\approx 0.16504\\end{aligned}",
                         "For Part (a), calculate the time elapsed between 10 am and 4 pm, which is $t = 6$ hours. Substitute $P_0 = 5000$ and $t = 6$ into the model: \\begin{aligned}P &= 5000\\text{e}^{0.16504 \\times 6} \\cr&= 5000\\text{e}^{0.99024} \\approx 13459 \\approx 13500\\text{ bacteria}\\end{aligned}",
                         "For Part (b), set $P = 30000$ and solve for $t$: \\begin{aligned}30000 &= 5000\\text{e}^{kt} \\cr\\text{e}^{kt} &= \\dfrac{30000}{5000} = 6\\end{aligned}",
                         "Take the natural logarithm of both sides to isolate the exponent: $$kt = \\ln(6) \\approx 1.79176$$",
@@ -775,19 +775,19 @@ window.ALEVEL_QUESTIONS = [
                         "Convert the decimal hours to minutes: $$10\\text{ hours and } (0.8568 \\times 60)\\text{ minutes} \\approx 10\\text{ hours and } 51\\text{ minutes}$$",
                         "Add this elapsed time to 10 am: $$10\\text{ am} + 10\\text{ hours } 51\\text{ minutes} = 8\\text{:}51\\text{ pm}$$",
                         "For Part (c), identify a biological limitation: in the real world, nutrient resources become depleted, space becomes limited, and toxic metabolic waste products accumulate, which will eventually slow down the reproduction rate.",
-                        "Final Answer: $$\\text{Part (a): } 13500\\text{ bacteria},\\quad \cr (b)8\\text{:}51\\text{ pm}$$"
+                        "Final Answer: (a) $$ 13500\\text{ bacteria}$$ (b) $$8\\text{:}51\\text{ pm}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (a): } 13500\\text{ bacteria},\\quad \cr (b)8\\text{:}52\\text{ pm}$$",
+                                "ans": "(a) $$ 13500\\text{ bacteria}$$ (b) $$8\\text{:}52\\text{ pm}$$",
                                 "feedback": "In Part (b), you probably used a prematurely rounded value of the growth constant $k \\approx 0.165$. Carrying the full calculator accuracy of $k \\approx 0.16504$ yields $10$ hours and $51$ minutes, leading to $8:51\\text{ pm}$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 10000\\text{ bacteria},\\quad \cr (b)8\\text{:}51\\text{ pm}$$",
+                                "ans": "(a) $$ 10000\\text{ bacteria}$$ (b) $$8\\text{:}51\\text{ pm}$$",
                                 "feedback": "In Part (a), you probably assumed that the population only doubles once. Over $6$ hours, which is longer than the $4.2$ hour doubling time, the population must grow by a factor of $2^{6/4.2} \\approx 2.69$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 13500\\text{ bacteria},\\quad \cr (b)9\\text{:}12\\text{ pm}$$",
+                                "ans": "(a) $$ 13500\\text{ bacteria}$$ (b) $$9\\text{:}12\\text{ pm}$$",
                                 "feedback": "In Part (b), check your division steps. Solving $\\text{e}^{kt} = 6$ requires dividing $\\ln(6)$ by $k$, not $\\ln(5)$ or other incorrect constants."
                         }
                 ],
@@ -818,19 +818,19 @@ window.ALEVEL_QUESTIONS = [
                         "Substitute $\\lambda = \\dfrac{\\ln(2)}{8.1}$ into the equation: \\begin{aligned}t &= 3 \\times 8.1 \\cr&= 24.3\\text{ days}\\end{aligned}",
                         "Convert the decimal days to hours: $$24\\text{ days and } (0.3 \\times 24)\\text{ hours} = 24\\text{ days and } 7.2\\text{ hours} \\approx 24\\text{ days and } 7\\text{ hours}$$",
                         "For Part (c), identify a physical limitation: radioactive decay is a random, stochastic quantum process. The model predicts the average expected decay, but the actual measurements will fluctuate statistically around this smooth curve.",
-                        "Final Answer: $$\\text{Part (a): } 286\\text{ Bq},\\quad \cr (b)24\\text{ days and } 7\\text{ hours}$$"
+                        "Final Answer: (a) $$ 286\\text{ Bq}$$ (b) $$24\\text{ days and } 7\\text{ hours}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (a): } 225\\text{ Bq},\\quad \cr (b)24\\text{ days and } 7\\text{ hours}$$",
+                                "ans": "(a) $$ 225\\text{ Bq}$$ (b) $$24\\text{ days and } 7\\text{ hours}$$",
                                 "feedback": "In Part (a), you probably made a calculation slip in your fractional indices or exponent multiplications. Double-check your calculator entry for $800 \\times \\text{e}^{-12\\lambda}$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 286\\text{ Bq},\\quad \cr (b)24\\text{ days and } 12\\text{ hours}$$",
+                                "ans": "(a) $$ 286\\text{ Bq}$$ (b) $$24\\text{ days and } 12\\text{ hours}$$",
                                 "feedback": "In Part (b), when converting $0.3$ days to hours, remember that a day has 24 hours. Therefore, $0.3 \\times 24 = 7.2\\text{ hours}$, which rounds to $7\\text{ hours}$ (not $12$)."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 286\\text{ Bq},\\quad \cr (b)8\\text{ days and } 3\\text{ hours}$$",
+                                "ans": "(a) $$ 286\\text{ Bq}$$ (b) $$8\\text{ days and } 3\\text{ hours}$$",
                                 "feedback": "In Part (b), you probably solved for 1 half-life instead of 3. Since the activity must drop to $\\frac{1}{8}$ of the initial value, it must undergo exactly three half-lives."
                         }
                 ],
@@ -855,27 +855,27 @@ window.ALEVEL_QUESTIONS = [
                 "question": "A meteorologist models the atmospheric pressure, $P$ (in kilopascals, kPa), at an altitude of $h$ kilometres above sea level using<br>$$P = P_0\\text{e}^{-kh}$$<br>where $P_0$ kPa is the pressure at sea level. On average, the atmospheric pressure halves for every 5.5 km increase in altitude.<br><br>(a) Given that the atmospheric pressure at sea level is 101.3 kPa, use the model to estimate the pressure at the summit of Mount Kilimanjaro, which is at an altitude of 5895 metres. Give your answer to 3 significant figures.<br><br>(b) A weather balloon is designed to transmit data until the surrounding pressure drops below 15 kPa. Use the model to find the maximum altitude the balloon can reach before it stops transmitting. Give your answer to the nearest 10 metres.<br><br>(c) State a meteorological reason why this pressure model may not be perfectly accurate.",
                 "steps": [
                         "First, convert the altitude of Mount Kilimanjaro from metres to kilometres to match the variable unit of $h$: $$5895\\text{ metres} = 5.895\\text{ km}$$",
-                        "Calculate the decay constant $k$ by setting $P = \\dfrac{1}{2}P_0$ when $h = 5.5$: \\begin{aligned}\\dfrac{1}{2}P_0 &= P_0\\text{e}^{-5.5k} \\cr\\text{e}^{-5.5k} &= 0.5 \\cr-5.5k &= \\ln(0.5) \\crk &= \\dfrac{\\ln(2)}{5.5} \\approx 0.12603\\end{aligned}",
+                        "Calculate the decay constant $k$ by setting $P = \\dfrac{1}{2}P_0$ when $h = 5.5$: \\begin{aligned}\\dfrac{1}{2}P_0 &= P_0\\text{e}^{-5.5k} \\cr\\text{e}^{-5.5k} &= 0.5 \\cr-5.5k &= \\ln(0.5) \\cr k &= \\dfrac{\\ln(2)}{5.5} \\approx 0.12603\\end{aligned}",
                         "For Part (a), substitute $P_0 = 101.3$, $k = 0.12603$, and $h = 5.895$ into the model: \\begin{aligned}P &= 101.3\\text{e}^{-0.12603 \\times 5.895} \\cr&= 101.3\\text{e}^{-0.74295} \\approx 48.19 \\approx 48.2\\text{ kPa}\\end{aligned}",
                         "For Part (b), set $P = 15$ to find the altitude limit: \\begin{aligned}15 &= 101.3\\text{e}^{-kh} \\cr\\text{e}^{-kh} &= \\dfrac{15}{101.3} \\approx 0.14808\\end{aligned}",
-                        "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-kh &= \\ln(0.14808) \\approx -1.91006 \\crkh \\approx 1.91006\\end{aligned}",
+                        "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-kh &= \\ln(0.14808) \\approx -1.91006 \\cr kh \\approx 1.91006\\end{aligned}",
                         "Divide by the decay constant $k = 0.12603$ to solve for $h$: $$h = \\dfrac{1.91006}{0.12603} \\approx 15.1555\\text{ km}$$",
                         "Convert this altitude back to metres: $$15.1555\\text{ km} = 15,155.5\\text{ metres}$$",
                         "Round to the nearest 10 metres: $$15,155.5\\text{ metres} \\approx 15,160\\text{ metres}$$",
                         "For Part (c), identify a meteorological limitation: the model assumes a uniform, static atmosphere. Real-world atmospheric pressure is dynamically affected by local temperature profiles, humidity, and weather fronts independently of altitude.",
-                        "Final Answer: $$\\text{Part (a): } 48.2\\text{ kPa},\\quad \cr (b)15,160\\text{ metres}$$"
+                        "Final Answer: (a) $$ 48.2\\text{ kPa}$$ (b) $$15,160\\text{ metres}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\text{Part (a): } 47.9\\text{ kPa},\\quad \cr (b)15,050\\text{ metres}$$",
+                                "ans": "(a) $$ 47.9\\text{ kPa}$$ (b) $$15,050\\text{ metres}$$",
                                 "feedback": "This incorrect option probably results from a minor rounding slip when calculating $k$. Carrying the rounded value $k \\approx 0.1269$ instead of $0.12603$ shifts your results. Use full calculator accuracy for $k$."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 48.2\\text{ kPa},\\quad \cr (b)15,160\\text{ km}$$",
+                                "ans": "(a) $$ 48.2\\text{ kPa}$$ (b) $$15,160\\text{ km}$$",
                                 "feedback": "In Part (b), you probably forgot to convert your final answer back from kilometres to metres. An altitude of $15,160\\text{ km}$ would extend into outer space; the target unit is metres."
                         },
                         {
-                                "ans": "$$\\text{Part (a): } 48.2\\text{ kPa},\\quad \cr (b)15,120\\text{ metres}$$",
+                                "ans": "(a) $$ 48.2\\text{ kPa}$$ (b) $$15,120\\text{ metres}$$",
                                 "feedback": "In Part (b), check your division steps. Solving $\\text{e}^{-kh} = 0.14808$ requires dividing the natural log of this term by $k$, carrying full decimal precision."
                         }
                 ],
