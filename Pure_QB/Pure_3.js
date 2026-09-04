@@ -221,40 +221,41 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Numerical Methods",
-                "topic": "Numerical Methods",
+                "major_area": "Differentiation",
+                "topic": "Trigonometry",
                 "subtopic": [
                         "Numerical Methods",
-                        "Trigonometry"
+                        "Newton Raphson"
                 ],
                 "img": "images/Pure_SVGs/004106.svg",
                 "question": "The diagram shows a sector of a circle $OAB$. $C$ is the midpoint of $OB$. Angle $AOB$ is $\\theta$ radians.<br><br>(a) Given that the area of the triangle $OAC$ is equal to one-third of the area of the sector $OAB$, show that $\\theta = 1.5\\sin\\theta$.<br><br>(b) Use the Newton-Raphson method with $\\theta_1 = \\pi$ to find $\\theta_3$ as an approximation for $\\theta$. Give your answer correct to five decimal places.<br><br>(c) Given that the actual value of $\\theta = 1.49579$ to five decimal places, find an estimate for the percentage error in the approximation found in part (b).",
                 "steps": [
                         "First, state the formulas for both areas in terms of $r$ and $\\theta$. The area of the sector $OAB$ is: $$\\text{Area of sector } OAB = \\dfrac{1}{2}r^2\\theta$$",
-                        "Since $C$ is the midpoint of $OB$, $OC = \\dfrac{1}{2}r$. The area of triangle $OAC$ is: \\begin{aligned}\\text{Area of triangle } OAC &= \\dfrac{1}{2}(r)\\left(\\dfrac{1}{2}r\\right)\\sin\\theta \\cr&= \\dfrac{r^2}{4}\\sin\\theta\\end{aligned}",
+                        "Since $C$ is the midpoint of $OB$, $OC = \\dfrac{1}{2}r$. The area of triangle $OAC$ is: \\begin{aligned}\\text{Area}_triangleOAC &= \\dfrac{1}{2}(r)\\left(\\dfrac{1}{2}r\\right)\\sin\\theta \\cr&= \\dfrac{r^2}{4}\\sin\\theta\\end{aligned}",
                         "Next, set the area of the triangle equal to one-third of the area of the sector: \\begin{aligned}\\dfrac{r^2}{4}\\sin\\theta &= \\dfrac{1}{3} \\left(\\dfrac{1}{2}r^2\\theta\\right) \\cr\\dfrac{r^2}{4}\\sin\\theta &= \\dfrac{r^2}{6}\\theta\\end{aligned}",
                         "Divide both sides by $r^2$ (since $r > 0$) to eliminate the radius variable: $$\\dfrac{1}{4}\\sin\\theta = \\dfrac{1}{6}\\theta$$",
                         "Multiply both sides by $6$ to isolate $\\theta$, and simplify the resulting fraction to reach the target equation: \\begin{aligned}\\theta &= \\dfrac{6}{4}\\sin\\theta \\cr\\theta &= 1.5\\sin\\theta\\end{aligned}",
                         "For Part (b), define $f(\\theta) = \\theta - 1.5\\sin\\theta$ and its derivative $f'(\\theta) = 1 - 1.5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{\\theta_n - 1.5\\sin\\theta_n}{1 - 1.5\\cos\\theta_n}$$",
                         "With $\\theta_1 = \\pi$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= \\pi - \\dfrac{\\pi - 1.5\\sin\\pi}{1 - 1.5\\cos\\pi} \\cr&= \\pi - \\dfrac{\\pi}{1 - 1.5(-1)} \\cr&= \\pi - \\dfrac{\\pi}{2.5} \\cr&= 0.6\\pi \\approx 1.88496\\end{aligned}",
-                        "In the second iteration: $$\\theta_3 = 1.88496 - \\dfrac{1.88496 - 1.5\\sin(1.88496)}{1 - 1.5\\cos(1.88496)} \\approx 1.57176$$",
-                        "For Part (c), calculate the percentage error by comparing the approximation $\\theta_3 \\approx 1.57176$ with the actual root $\\theta = 1.49579$: $$\\text{Percentage Error} = \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\approx 5.08\\\\%$$",
-                        "Final Answer: \\text{Part (b): } 1.57176,\\quad \\text{Part (c): } 5.08 %"
+                        "In the second iteration: begin{aligned}\\theta_3 &= 1.88496\\cr & \\quad - \\dfrac{1.88496 - 1.5\\sin(1.88496)}{1 - 1.5\\cos(1.88496)}\\cr & \\approx 1.57176end{aligned}",
+                        "For Part (c), calculate the percentage error by comparing the approximation $\\theta_3 \\approx 1.57176$ with the actual root $\\theta = 1.49579$: begin{aligned}\\text{%age error} &= \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\cr &\\approx 5.08%end{aligned}",
+                        "Final Answer: (b)$$ 1.57176$$(c)$$ 5.08%$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "\\text{Part (b): } 1.57176,\\quad \\text{Part (c): } 5.06 %",
+                                "ans": "(b)$$ 1.57176$$(c)$$ 5.06% $$",
                                 "feedback": "This error probably results from a minor rounding slip during your multi-digit division steps. Ensure you carry at least six decimal places in your intermediate steps before rounding to five."
                         },
                         {
-                                "ans": "\\text{Part (b): } 1.57156,\\quad \\text{Part (c): } 5.06 %",
+                                "ans": "(b)$$ 1.57156$$(c)$$ 5.06% $$",
                                 "feedback": "You probably rounded $\\theta_2$ prematurely, or made a subtraction error in your second iteration. Double-check your values for $f(\\theta_2)$ and $f'(\\theta_2)$ on your page."
                         },
                         {
-                                "ans": "\\text{Part (b): } 1.88496,\\quad \\text{Part (c): } 26.02 %",
+                                "ans": "(b)$$ 1.88496$$(c)$$ 26.02% %$$",
                                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
                         }
                 ],
+                       
                 "bradley_insight": {
                         "type": "caution",
                         "title": "The Head Teacher's Eye: Newton-Raphson Radians Trap",
