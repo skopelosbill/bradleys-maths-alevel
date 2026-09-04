@@ -680,11 +680,11 @@ window.ALEVEL_QUESTIONS = [
                         "First, calculate the decay constant $k$ by setting $m = \\dfrac{1}{2}m_0$ when $t = 4.5$: \\begin{aligned}\\dfrac{1}{2}m_0 &= m_0\\text{e}^{-4.5k} \\cr\\text{e}^{-4.5k} &= 0.5 \\cr-4.5k &= \\ln(0.5) \\cr k &= \\dfrac{\\ln(2)}{4.5}\\cr &\\approx 0.15403\\end{aligned}",
                         "For Part (a), calculate the initial mass $m_0$ for two standard doses of 150 mg: \\begin{aligned}m_0 &= 2 \\times 150 \\cr&= 300\\text{ mg}\\end{aligned}",
                         "Calculate the time elapsed between 9 am and 2 pm, which is $t = 5$ hours. Substitute $m_0 = 300$ and $t = 5$ into the model: \\begin{aligned}m &= 300\\text{e}^{-0.15403 \\times 5} \\cr&= 300\\text{e}^{-0.77015} \\cr &\\approx 138.93\\text{ mg} \\cr &\\approx 139\\text{ mg}\\end{aligned}",
-                        "For Part (b), to stay below 350 mg immediately after taking a new 150 mg dose, the mass remaining in the body just before the dose must satisfy: \\begin{aligned}\\text{Mass remaining} + 150 &\\le 350 \\cr\\implies \\text{Mass remaining} &\\le 200\\text{ mg}$$",
+                        "For Part (b), to stay below 350 mg immediately after taking a new 150 mg dose, the mass remaining in the body just before the dose must satisfy: \\begin{aligned}\\text{Mass remaining} + 150 &\\le 350 \\cr\\implies \\text{Mass remaining} &\\le 200\\text{ mg}\\end{aligned}",
                         "Set $m = 200$ and solve for $t$: \\begin{aligned}200 &= 300\\text{e}^{-kt} \\cr\\text{e}^{-kt} &= \\dfrac{200}{300} = \\dfrac{2}{3}\\end{aligned}",
                         "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-kt &= \\ln\\left(\\dfrac{2}{3}\\right) \\cr kt &= \\ln(1.5)\\cr & \\approx 0.40547\\end{aligned}",
                         "Divide by the decay constant $k = 0.15403$ to find the time $t$ in hours: $$t = \\dfrac{0.40547}{0.15403} \\approx 2.63233\\text{ hours}$$",
-                        "Convert the decimal hours to minutes: \\begin{aligned}&2\\text{ hours and } (0.63233 \\times 60)\\text{ minutes} \\cr & quad\\approx 2\\text{ hours and } 38\\text{ minutes}end{aligned}",
+                        "Convert the decimal hours to minutes: \\begin{aligned}&2\\text{ hours and } (0.63233 \\times 60)\\text{ minutes} \\cr & \\quad \\approx 2\\text{ hours and } 38\\text{ minutes}\\end{aligned}",
                         "Add this time elapsed to 9 am: \\begin{aligned}9\\text{ am} &+ 2\\text{ hours } 38\\text{ minutes}\\cr & = 11\\text{:}38\\text{ am}\\end{aligned}",
                         "For Part (c), identify a biological limitation: the elimination rate of a drug is not perfectly constant. It varies based on individual liver and kidney function, metabolic speed, hydration levels, and other physiological factors.",
                         "Final Answer: (a) $$ 139\\text{ mg}$$ (b) $$11\\text{:}38\\text{ am}$$"
@@ -772,7 +772,7 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), set $P = 30000$ and solve for $t$: \\begin{aligned}30000 &= 5000\\text{e}^{kt} \\cr\\text{e}^{kt} &= \\dfrac{30000}{5000} = 6\\end{aligned}",
                         "Take the natural logarithm of both sides to isolate the exponent: $$kt = \\ln(6) \\approx 1.79176$$",
                         "Divide by the growth constant $k = 0.16504$ to find the time $t$ in hours: $$t = \\dfrac{1.79176}{0.16504} \\approx 10.8568\\text{ hours}$$",
-                        "Convert the decimal hours to minutes: \\begin{aligned}10\\text{ hours and }& (0.8568 \\times 60)\\text{ minutes} \\cr &\\approx 10\\text{ hours and } 51\\text{ minutes}\\end{aligned}",
+                        "Convert the decimal hours to minutes: \\begin{aligned}10 & \\text{ hours and } (0.8568 \\times 60)\\text{ minutes} \\cr & \\quad\\approx 10\\text{ hours and } 51\\text{ minutes}\\end{aligned}",
                         "Add this elapsed time to 10 am: \\begin{aligned}10\\text{ am} &+ 10\\text{ hours } 51\\text{ minutes}\\cr & = 8\\text{:}51\\text{ pm}\\end{aligned}",
                         "For Part (c), identify a biological limitation: in the real world, nutrient resources become depleted, space becomes limited, and toxic metabolic waste products accumulate, which will eventually slow down the reproduction rate.",
                         "Final Answer: (a) $$ 13500\\text{ bacteria}$$ (b) $$8\\text{:}51\\text{ pm}$$"
