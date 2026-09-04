@@ -328,9 +328,9 @@ window.ALEVEL_QUESTIONS = [
                         "Divide both sides by $r^2$ and multiply by $20$ to clear the fractions and obtain the target equation: \\begin{aligned}\\dfrac{1}{4}\\sin(2\\theta) &= \\dfrac{3}{20}\\theta \\cr5\\sin(2\\theta) &= 3\\theta\\end{aligned}",
                         "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin(2\\theta)$ and its derivative $f'(\\theta) = 3 - 10\\cos(2\\theta)$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin(2\\theta_n)}{3 - 10\\cos(2\\theta_n)}$$",
                         "With $\\theta_1 = 1.0$, calculate the iterations. In the first iteration:\\begin{aligned}\\theta_2 &= 1.0 - \\dfrac{3(1.0) - 5\\sin(2)}{3 - 10\\cos(2)}\\cr &\\approx 1.21594\\end{aligned}",
-                        "In the second iteration: \\begin{aligned}\\theta_3 &= 1.21594\\cr &\\quad - \\dfrac{3(1.21594) - 5\\sin(2.43188)}{3 - 10\\cos(2.43188)}\\cr & \\approx 1.17911$$\\end{aligned}",
+                        "In the second iteration: \\begin{aligned}\\theta_3 &= 1.21594\\cr &\\quad - \\dfrac{3(1.21594) - 5\\sin(2.43188)}{3 - 10\\cos(2.43188)}\\cr & \\approx 1.17911\\end{aligned}",
                         "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.17911$ against the true root $\\theta = 1.17243$: \\begin{aligned}\\text{% error} &= \\dfrac{|1.17911 - 1.17243|}{1.17243} \\times 100\\cr &\\approx 0.57\\%$$",
-                        "Final Answer: \\cr (b)$$1.17911%% (c) $$0.57\\%$$"
+                        "Final Answer: <br> (b)$$1.17911$$ (c) $$0.57\\%$$"
                 ],
                 "pi_options": [
                         {
@@ -373,8 +373,8 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), define $f(\\theta) = 2\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 2 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{2\\theta_n - 5\\sin\\theta_n}{2 - 5\\cos\\theta_n}$$",
                         "With $\\theta_1 = 2.5$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= 2.5 - \\dfrac{2(2.5) - 5\\sin(2.5)}{2 - 5\\cos(2.5)}\\cr &\\approx 2.16571\\end{aligned}",
                         "In the second iteration: \\begin{aligned}\\theta_3 &= 2.16571\\cr & \\quad - \\dfrac{2(2.16571) - 5\\sin(2.16571)}{2 - 5\\cos(2.16571)}\\cr & \\approx 2.12654\\end{aligned}",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 2.12654$ against the true root $\\theta = 2.12463$: $$\\text{% error} = \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100 \\approx 0.09\\%$$",
-                        "Final Answer: \\cr (b)$$2.12654$$ (c) $$0.09\\%$$"
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 2.12654$ against the true root $\\theta = 2.12463$: \\begin{aligned}\\text{% error} &= \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100\\cr & \\approx 0.09\\%\\end{aligned}",
+                        "Final Answer: <br> (b)$$2.12654$$ (c) $$0.09\\% $$"
                 ],
                 "pi_options": [
                         {
@@ -416,9 +416,9 @@ window.ALEVEL_QUESTIONS = [
                         "Divide both sides by $r^2$ and multiply by $30$ to clear the fractions and obtain the target equation: \\begin{aligned}\\dfrac{1}{6}\\sin\\theta &= \\dfrac{1}{10}\\theta \\cr5\\sin\\theta &= 3\\theta \\cr3\\theta &= 5\\sin\\theta\\end{aligned}",
                         "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin\\theta_n}{3 - 5\\cos\\theta_n}$$",
                         "With $\\theta_1 = 2.0$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= 2.0 - \\dfrac{3(2.0) - 5\\sin(2.0)}{3 - 5\\cos(2.0)}\\cr & \\approx 1.71392\\end{aligned}",
-                        "In the second iteration: \\begin{aligned}\\theta_3 &= 1.71392 - \\dfrac{3(1.71392) - 5\\sin(1.71392)}{3 - 5\\cos(1.71392)} \\cr &\\approx 1.66164\\end{aligned}",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.66164$ against the true root $\\theta = 1.65215$: \\begin{aligned}\\text{%rror} &= \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100\\cr & \\approx 0.57\\%\\end{aligned}",
-                        "Final Answer: \\cr (b)$$1.66164$$(c) $$0.57\\%$$"
+                        "In the second iteration: \\begin{aligned}\\theta_3 &= 1.71392 \\cr & \\ quad- \\dfrac{3(1.71392) - 5\\sin(1.71392)}{3 - 5\\cos(1.71392)} \\cr &\\approx 1.66164\\end{aligned}",
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.66164$ against the true root $\\theta = 1.65215$: \\begin{aligned}\\text{%error} &= \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100\\cr & \\approx 0.57\\%\\end{aligned}",
+                        "Final Answer: <br> (b) $$1.66164$$ (c) $$0.57\\% $$"
                 ],
                 "pi_options": [
                         {
@@ -446,9 +446,9 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
-                "topic": "Sequences and Series",
+                "topic": "Arithmetic series",
                 "subtopic": [
-                        "Sequences and Series"
+                        "Sum of an AP"
                 ],
                 "img": false,
                 "question": "An arithmetic sequence has first term $a$ and common difference $d$.<br><br>The sum of the first 16 terms of the sequence is equal to the square of the sum of the first 4 terms.<br><br>(a) Show that $4a + 30d = 4a^2 + 12ad + 9d^2$.<br><br>(b) Given that the fourth term of the sequence is 10, find the smallest possible value of $a$.",
@@ -461,8 +461,8 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), state the formula for the fourth term and rearrange for $d$: \\begin{aligned}u_4 &= a + 3d = 10 \\cr3d &= 10 - a \\cr d &= \\dfrac{10-a}{3}\\end{aligned}",
                         "Notice that the right-hand side of the Part (a) relation can be factored as a perfect square: $$4a + 30d = (2a + 3d)^2$$",
                         "Substitute $3d = 10 - a$ into both sides of the factored equation: \\begin{aligned}4a + 10(3d) &= (2a + 10 - a)^2 \\cr4a + 10(10-a) &= (a + 10)^2\\end{aligned}",
-                        "Expand and simplify the resulting quadratic equation: \\begin{aligned}4a + 100 - 10a &= a^2 + 20a + 100 \\cr100 - 6a &= a^2 + 20a + 100 \\cra^2 + 26a &= 0\\end{aligned}",
-                        "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}a(a + 26) &= 0 \\cra &= 0 \\quad \\text{or} \\quad a = -26\\end{aligned}",
+                        "Expand and simplify the resulting quadratic equation: \\begin{aligned}4a + 100 - 10a &= a^2 + 20a + 100 \\cr100 - 6a &= a^2 + 20a + 100 \\cr a^2 + 26a &= 0\\end{aligned}",
+                        "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}a(a + 26) &= 0 \\cr a &= 0 \\quad \\text{or} \\quad a = -26\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-26$.",
                         "Final Answer: $$\cr (b)a = -26$$"
                 ],
@@ -492,9 +492,9 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
-                "topic": "Sequences and Series",
+                "topic": "Arithmetic series",
                 "subtopic": [
-                        "Sequences and Series"
+                        "Sum of an AP"
                 ],
                 "img": false,
                 "question": "An arithmetic sequence has first term $a$ and common difference $d$.<br><br>The sum of the first 4 terms of the sequence is equal to the square of the sum of the first 2 terms.<br><br>(a) Show that $4a + 6d = 4a^2 + 4ad + d^2$.<br><br>(b) Given that the second term of the sequence is 3, find the smallest possible value of $a$.",
@@ -505,8 +505,8 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), state the formula for the second term and rearrange for $d$: \\begin{aligned}u_2 &= a + d = 3 \\cr d &= 3 - a\\end{aligned}",
                         "Notice that the right-hand side of the Part (a) relation can be factored as a perfect square: $$4a + 6d = (2a + d)^2$$",
                         "Substitute $d = 3 - a$ into both sides of the factored equation: \\begin{aligned}4a + 6(3-a) &= (2a + 3 - a)^2 \\cr4a + 18 - 6a &= (a + 3)^2\\end{aligned}",
-                        "Expand and simplify the resulting quadratic equation: \\begin{aligned}18 - 2a &= a^2 + 6a + 9 \\cra^2 + 8a - 9 &= 0\\end{aligned}",
-                        "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 1)(a + 9) &= 0 \\cra &= 1 \\quad \\text{or} \\quad a = -9\\end{aligned}",
+                        "Expand and simplify the resulting quadratic equation: \\begin{aligned}18 - 2a &= a^2 + 6a + 9 \\cr a^2 + 8a - 9 &= 0\\end{aligned}",
+                        "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 1)(a + 9) &= 0 \\cr a &= 1 \\quad \\text{or} \\quad a = -9\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-9$.",
                         "Final Answer: $$\cr (b)a = -9$$"
                 ],
@@ -536,9 +536,9 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
-                "topic": "Sequences and Series",
+                "topic": "Arithmetic series",
                 "subtopic": [
-                        "Sequences and Series"
+                        "Sum of an AP"
                 ],
                 "img": false,
                 "question": "An arithmetic sequence has first term $a$ and common difference $d$.<br><br>The sum of the first 8 terms of the sequence is equal to the square of the sum of the first 2 terms.<br><br>(a) Show that $8a + 28d = 4a^2 + 4ad + d^2$.<br><br>(b) Given that the second term of the sequence is 2, find the smallest possible value of $a$.",
@@ -549,8 +549,8 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), state the formula for the second term and rearrange for $d$: \\begin{aligned}u_2 &= a + d = 2 \\cr d &= 2 - a\\end{aligned}",
                         "Notice that the right-hand side of the Part (a) relation can be factored as a perfect square: $$8a + 28d = (2a + d)^2$$",
                         "Substitute $d = 2 - a$ into both sides of the factored equation: \\begin{aligned}8a + 28(2-a) &= (2a + 2 - a)^2 \\cr8a + 56 - 28a &= (a + 2)^2\\end{aligned}",
-                        "Expand and simplify the resulting quadratic equation: \\begin{aligned}56 - 20a &= a^2 + 4a + 4 \\cra^2 + 24a - 52 &= 0\\end{aligned}",
-                        "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 2)(a + 26) &= 0 \\cra &= 2 \\quad \\text{or} \\quad a = -26\\end{aligned}",
+                        "Expand and simplify the resulting quadratic equation: \\begin{aligned}56 - 20a &= a^2 + 4a + 4 \\cr a^2 + 24a - 52 &= 0\\end{aligned}",
+                        "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 2)(a + 26) &= 0 \\cr a &= 2 \\quad \\text{or} \\quad a = -26\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-26$.",
                         "Final Answer: $$\cr (b)a = -26$$"
                 ],
@@ -580,9 +580,9 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
-                "topic": "Sequences and Series",
+                "topic": "Arithmetic series",
                 "subtopic": [
-                        "Sequences and Series"
+                        "Sum of an AP"
                 ],
                 "img": false,
                 "question": "An arithmetic sequence has first term $a$ and common difference $d$.<br><br>The sum of the first 9 terms of the sequence is equal to the square of the sum of the first 3 terms.<br><br>(a) Show that $a + 4d = a^2 + 2ad + d^2$.<br><br>(b) Given that the third term of the sequence is 8, find the smallest possible value of $a$.",
@@ -590,12 +590,12 @@ window.ALEVEL_QUESTIONS = [
                         "First, state the formulas for both sums. The sum of the first 9 terms is: \\begin{aligned}S_9 &= \\dfrac{9}{2}\\left(2a + 8d\\right) \\cr&= 9a + 36d\\end{aligned}",
                         "The sum of the first 3 terms is: \\begin{aligned}S_3 &= \\dfrac{3}{2}\\left(2a + 2d\\right) \\cr&= 3a + 3d\\end{aligned}",
                         "Next, set the sum of the first 9 terms equal to the square of the sum of the first 3 terms: \\begin{aligned}9a + 36d &= (3a + 3d)^2 \\cr9a + 36d &= 9(a + d)^2\\end{aligned}",
-                        "Divide both sides of the equation by $9$ to reach the target relation: \\begin{aligned}a + 4d &= (a + d)^2 \\cra + 4d &= a^2 + 2ad + d^2\\end{aligned}",
+                        "Divide both sides of the equation by $9$ to reach the target relation: \\begin{aligned}a + 4d &= (a + d)^2 \\cr a + 4d &= a^2 + 2ad + d^2\\end{aligned}",
                         "For Part (b), state the formula for the third term and rearrange for $d$: \\begin{aligned}u_3 &= a + 2d = 8 \\cr2d &= 8 - a \\cr d &= \\dfrac{8-a}{2}\\end{aligned}",
                         "Substitute $d = \\dfrac{8-a}{2}$ into both sides of the simplified relation: $$a + 4\\left(\\dfrac{8-a}{2}\\right) = \\left(a + \\dfrac{8-a}{2}\\right)^2$$",
                         "Simplify both sides of the equation: \\begin{aligned}a + 2(8-a) &= \\left(\\dfrac{2a + 8 - a}{2}\\right)^2 \\cr16 - a &= \\dfrac{(a+8)^2}{4}\\end{aligned}",
-                        "Clear the fraction by multiplying both sides by $4$: \\begin{aligned}64 - 4a &= a^2 + 16a + 64 \\cra^2 + 20a &= 0\\end{aligned}",
-                        "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}a(a + 20) &= 0 \\cra &= 0 \\quad \\text{or} \\quad a = -20\\end{aligned}",
+                        "Clear the fraction by multiplying both sides by $4$: \\begin{aligned}64 - 4a &= a^2 + 16a + 64 \\cr a^2 + 20a &= 0\\end{aligned}",
+                        "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}a(a + 20) &= 0 \\cr a &= 0 \\quad \\text{or} \\quad a = -20\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-20$.",
                         "Final Answer: $$\cr (b)a = -20$$"
                 ],
@@ -625,9 +625,9 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
-                "topic": "Sequences and Series",
+                "topic": "Arithmetic series",
                 "subtopic": [
-                        "Sequences and Series"
+                        "Sum of an AP"
                 ],
                 "img": false,
                 "question": "An arithmetic sequence has first term $a$ and common difference $d$.<br><br>The sum of the first 16 terms of the sequence is equal to the square of the sum of the first 2 terms.<br><br>(a) Show that $16a + 120d = 4a^2 + 4ad + d^2$.<br><br>(b) Given that the second term of the sequence is 4, find the smallest possible value of $a$.",
@@ -638,8 +638,8 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), state the formula for the second term and rearrange for $d$: \\begin{aligned}u_2 &= a + d = 4 \\cr d &= 4 - a\\end{aligned}",
                         "Notice that the right-hand side of the Part (a) relation can be factored as a perfect square: $$16a + 120d = (2a + d)^2$$",
                         "Substitute $d = 4 - a$ into both sides of the factored equation: \\begin{aligned}16a + 120(4-a) &= (2a + 4 - a)^2 \\cr16a + 480 - 120a &= (a + 4)^2\\end{aligned}",
-                        "Expand and simplify the resulting quadratic equation: \\begin{aligned}480 - 104a &= a^2 + 8a + 16 \\cra^2 + 112a - 464 &= 0\\end{aligned}",
-                        "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 4)(a + 116) &= 0 \\cra &= 4 \\quad \\text{or} \\quad a = -116\\end{aligned}",
+                        "Expand and simplify the resulting quadratic equation: \\begin{aligned}480 - 104a &= a^2 + 8a + 16 \\cr a^2 + 112a - 464 &= 0\\end{aligned}",
+                        "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 4)(a + 116) &= 0 \\cr a &= 4 \\quad \\text{or} \\quad a = -116\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-116$.",
                         "Final Answer: $$\cr (b)a = -116$$"
                 ],
