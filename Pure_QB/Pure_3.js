@@ -238,7 +238,7 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), define $f(\\theta) = \\theta - 1.5\\sin\\theta$ and its derivative $f'(\\theta) = 1 - 1.5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{\\theta_n - 1.5\\sin\\theta_n}{1 - 1.5\\cos\\theta_n}$$",
                         "With $\\theta_1 = \\pi$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= \\pi - \\dfrac{\\pi - 1.5\\sin\\pi}{1 - 1.5\\cos\\pi} \\cr&= \\pi - \\dfrac{\\pi}{1 - 1.5(-1)} \\cr&= \\pi - \\dfrac{\\pi}{2.5} \\cr&= 0.6\\pi \\approx 1.88496\\end{aligned}",
                         "In the second iteration: \\begin{aligned}\\theta_3 &= 1.88496\\cr & \\quad - \\dfrac{1.88496 - 1.5\\sin(1.88496)}{1 - 1.5\\cos(1.88496)}\\cr & \\approx 1.57176\\end{aligned}",
-                        "For Part (c), calculate the percentage error by comparing the approximation $\\theta_3 \\approx 1.57176$ with the actual root $\\theta = 1.49579$: \\begin{aligned}\\text{%age error} &= \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\cr &\\approx 5.08%\\end{aligned}",
+                        "For Part (c), calculate the percentage error by comparing the approximation $\\theta_3 \\approx 1.57176$ with the actual root $\\theta = 1.49579$: \\begin{aligned}\\text{% error} &= \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\cr &\\approx 5.08\\%\\end{aligned}",
                         "Final Answer: (b)$$ 1.57176$$(c)$$ 5.08\\%$$"
                 ],
                 "pi_options": [
@@ -283,9 +283,9 @@ window.ALEVEL_QUESTIONS = [
                         "Divide both sides by $\\dfrac{1}{2}r^2$ to simplify: $$\\theta - \\sin\\theta = \\dfrac{1}{3}\\sin\\theta$$",
                         "Add $\\sin\\theta$ to both sides and multiply by $3$ to obtain the target equation: \\begin{aligned}\\theta &= \\dfrac{4}{3}\\sin\\theta \\cr3\\theta &= 4\\sin\\theta \\cr4\\sin\\theta &= 3\\theta\\end{aligned}",
                         "For Part (b), define $f(\\theta) = 3\\theta - 4\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 4\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 4\\sin\\theta_n}{3 - 4\\cos\\theta_n}$$",
-                        "With $\\theta_1 = 1.5$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= 1.5 - \\dfrac{3(1.5) - 4\\sin(1.5)}{3 - 4\\cos(1.5)}\\ct & \\approx 1.31229\\end{aligned}",
+                        "With $\\theta_1 = 1.5$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= 1.5 - \\dfrac{3(1.5) - 4\\sin(1.5)}{3 - 4\\cos(1.5)}\\cr & \\approx 1.31229\\end{aligned}",
                         "In the second iteration: \\begin{aligned}\\theta_3 &= 1.31229\\cr & \\quad - \\dfrac{3(1.31229) - 4\\sin(1.31229)}{3 - 4\\cos(1.31229)}\\cr & \\approx 1.27741\\end{aligned}",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.27741$ against the true root $\\theta = 1.27570$: \\begin{aligned}\\text{%age Error} &= \\dfrac{|1.27741 - 1.27570|}{1.27570} \\times 100 \\cr & \\approx 0.13\\%\\end{aligned}",
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.27741$ against the true root $\\theta = 1.27570$: \\begin{aligned}\\text{% Error} &= \\dfrac{|1.27741 - 1.27570|}{1.27570} \\times 100 \\cr & \\approx 0.13\\%\\end{aligned}",
                         "Final Answer: \\cr(b)$$ 1.27741$$ (c)$$0.13\\%$$"
                 ],
                 "pi_options": [
@@ -329,7 +329,7 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin(2\\theta)$ and its derivative $f'(\\theta) = 3 - 10\\cos(2\\theta)$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin(2\\theta_n)}{3 - 10\\cos(2\\theta_n)}$$",
                         "With $\\theta_1 = 1.0$, calculate the iterations. In the first iteration:\\begin{aligned}\\theta_2 &= 1.0 - \\dfrac{3(1.0) - 5\\sin(2)}{3 - 10\\cos(2)}\\cr &\\approx 1.21594\\end{aligned}",
                         "In the second iteration: \\begin{aligned}\\theta_3 &= 1.21594\\cr &\\quad - \\dfrac{3(1.21594) - 5\\sin(2.43188)}{3 - 10\\cos(2.43188)}\\cr & \\approx 1.17911$$\\end{aligned}",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.17911$ against the true root $\\theta = 1.17243$: \\begin{aligned}\\text{%age error} &= \\dfrac{|1.17911 - 1.17243|}{1.17243} \\times 100\\cr &\\approx 0.57\\%$$",
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.17911$ against the true root $\\theta = 1.17243$: \\begin{aligned}\\text{% error} &= \\dfrac{|1.17911 - 1.17243|}{1.17243} \\times 100\\cr &\\approx 0.57\\%$$",
                         "Final Answer: \\cr (b)$$1.17911%% (c) $$0.57\\%$$"
                 ],
                 "pi_options": [
@@ -373,7 +373,7 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), define $f(\\theta) = 2\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 2 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{2\\theta_n - 5\\sin\\theta_n}{2 - 5\\cos\\theta_n}$$",
                         "With $\\theta_1 = 2.5$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= 2.5 - \\dfrac{2(2.5) - 5\\sin(2.5)}{2 - 5\\cos(2.5)}\\cr &\\approx 2.16571\\end{aligned}",
                         "In the second iteration: \\begin{aligned}\\theta_3 &= 2.16571\\cr & \\quad - \\dfrac{2(2.16571) - 5\\sin(2.16571)}{2 - 5\\cos(2.16571)}\\cr & \\approx 2.12654\\end{aligned}",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 2.12654$ against the true root $\\theta = 2.12463$: $$\\text{Percentage Error} = \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100 \\approx 0.09\\%$$",
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 2.12654$ against the true root $\\theta = 2.12463$: $$\\text{% error} = \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100 \\approx 0.09\\%$$",
                         "Final Answer: \\cr (b)$$2.12654$$ (c) $$0.09\\%$$"
                 ],
                 "pi_options": [
@@ -417,7 +417,7 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin\\theta_n}{3 - 5\\cos\\theta_n}$$",
                         "With $\\theta_1 = 2.0$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= 2.0 - \\dfrac{3(2.0) - 5\\sin(2.0)}{3 - 5\\cos(2.0)}\\cr & \\approx 1.71392\\end{aligned}",
                         "In the second iteration: \\begin{aligned}\\theta_3 &= 1.71392 - \\dfrac{3(1.71392) - 5\\sin(1.71392)}{3 - 5\\cos(1.71392)} \\cr &\\approx 1.66164\\end{aligned}",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.66164$ against the true root $\\theta = 1.65215$: \\begin{aligned}\\text{%age Error} &= \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100\\cr & \\approx 0.57\\%\\end{aligned}",
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.66164$ against the true root $\\theta = 1.65215$: \\begin{aligned}\\text{%rror} &= \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100\\cr & \\approx 0.57\\%\\end{aligned}",
                         "Final Answer: \\cr (b)$$1.66164$$(c) $$0.57\\%$$"
                 ],
                 "pi_options": [
