@@ -147,11 +147,11 @@ window.ALEVEL_QUESTIONS = [
                         "The perpendicular bisector must have a gradient of $$m_{\\perp} = 7$$. Find its equation: $$y - 4.5 = 7(x - 1.5)$$",
                         "Substitute the center $M(1, 1)$ into this line equation to verify: \\begin{aligned}1 - 4.5 &= 7(1 - 1.5) \\cr-3.5 &= -3.5\\end{aligned}. Since the coordinates satisfy the line, the perpendicular bisector passes through $M$.",
                         "For Part (b)(i), calculate the length of the chord $AB$: \\begin{aligned}AB &= \\sqrt{(5 - (-2))^2 + (4-5)^2} \\cr&= \\sqrt{7^2 + (-1)^2} \\cr&= \\sqrt{50}\\end{aligned}<br>\\begin{aligned} \\cr\\left(\\dfrac{AB}{2}\\right)^2 &= \\dfrac{50}{4} = 12.5\\end{aligned}",
-                        "Next, find the perpendicular distance from $M(1, 1)$ to the line $x + 7y - 33 = 0$ (the line $AB$): \\begin{aligned}d &= \\dfrac{|1 + 7(1) - 33|}{\\sqrt{1^2 + 7^2}} = \\dfrac{25}{\\sqrt{50}} \\crd^2 &= \\dfrac{625}{50} = 12.5\\end{aligned}",
+                        "Next, find the perpendicular distance from $M(1, 1)$ to the line $x + 7y - 33 = 0$ (the line $AB$): \\begin{aligned}d &= \\dfrac{|1 + 7(1) - 33|}{\\sqrt{1^2 + 7^2}}\\cr &= \\dfrac{25}{\\sqrt{50}} \\cr d^2 &= \\dfrac{625}{50}\\cr &= 12.5\\end{aligned}",
                         "Sum the squares to verify the relation: \\begin{aligned}d^2 + \\left(\\dfrac{AB}{2}\\right)^2 &= 12.5 + 12.5 \\cr&= 25 \\cr&= R^2\\end{aligned}. The relation is verified.",
                         "For Part (b)(ii), calculate the distance squared from point $D(4, -2)$ to the center $M(1, 1)$: \\begin{aligned}MD^2 &= (4-1)^2 + (-2-1)^2 \\cr&= 3^2 + (-3)^2 \\cr&= 18\\end{aligned}",
                         "Since the distance squared $$18 < R^2 = 25$$, the distance from the point to the center of the circle is less than the radius. Thus, the point $D$ lies inside the circle.",
-                        "Final Answer: \\begin{aligned}\\text{Part (b)(i): } d^2 + (AB/2)^2 &= 12.5 + 12.5 \\cr&= 25 \\cr&= R^2 \\text{ is verified} $$ (b)(ii) $$\\text{Inside the circle}\\end{aligned}"
+                        "Final Answer: (b)(i):\\begin{aligned} d^2 + (AB/2)^2 &= 12.5 + 12.5 \\cr&= 25 \\cr&= R^2 \\text{ is verified}//end{aligned}  (b)(ii) $$\\text{Inside the circle}$$"
                 ],
                 "pi_options": [
                         {
@@ -189,12 +189,12 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (a), calculate the gradients of the radius $OT$ and the tangent line $PT$: \\begin{aligned}m_{OT} &= \\dfrac{4.8-0}{3.6-0} \\cr&= \\dfrac{4}{3}\\end{aligned} and \\begin{aligned}m_{PT} &= \\dfrac{4.8-0}{3.6-10} \\cr&= \\dfrac{4.8}{-6.4} \\cr&= -\\dfrac{3}{4}\\end{aligned}",
                         "Since the product of their gradients is \\begin{aligned}m_{OT} \\times m_{PT} &= \\dfrac{4}{3} \\times \\left(-\\dfrac{3}{4}\\right) \\cr&= -1\\end{aligned}, the radius $OT$ and the tangent $PT$ are perpendicular.",
                         "For Part (b)(i), calculate the side lengths of triangle $OPT$: $OT = 6,$ $OP = 10$, and \\begin{aligned}PT &= \\sqrt{(3.6 - 10)^2 + 4.8^2} \\cr&= \\sqrt{(-6.4)^2 + 23.04} \\cr&= \\sqrt{40.96 + 23.04} \\cr&= 8\\end{aligned}",
-                        "Apply the Cosine Rule to find $\\cos(POT)$: \\begin{aligned}PT^2 &= OP^2 + OT^2 - 2(OP)(OT)\\cos(POT) \\cr8^2 &= 10^2 + 6^2 - 2(10)(6)\\cos(POT)\\end{aligned}",
-                        "Simplify to find the cosine value: \\begin{aligned}64 &= 100 + 36 - 120\\cos(POT) \\cr64 &= 136 - 120\\cos(POT) \\cr\\cos(POT) &= 0.6\\end{aligned}",
-                        "Using the Cosine Rule with $\\cos(POT) = 0.6$ verifies the length of the tangent: \\begin{aligned}PT &= \\sqrt{10^2 + 6^2 - 2(10)(6)(0.6)} \\cr&= \\sqrt{64} \\cr&= 8\\end{aligned}, as required.",
+                        "Apply the Cosine Rule to find $\\cos\\theta$: \\begin{aligned}\\text{let }\\angle POT &=\\theta \\cr PT^2 &= OP^2 + OT^2 \\cr &\\quad - 2(OP)(OT)\\cos\\theta \\cr 8^2 &= 10^2 + 6^2 - 2(10)(6)\\cos\\theta\\end{aligned}",
+                        "Simplify to find the cosine value: \\begin{aligned}64 &= 100 + 36 - 120\\cos\\theta \\cr64 &= 136 - 120\\cos\\theta \\cr\\cos\\theta &= 0.6\\end{aligned}",
+                        "Using the Cosine Rule with $\\cos\\theta = 0.6$ verifies the length of the tangent: \\begin{aligned}PT &= \\sqrt{10^2 + 6^2 - 2(10)(6)(0.6)} \\cr&= \\sqrt{64} \\cr&= 8\\end{aligned}, as required.",
                         "For Part (b)(ii), calculate the distance squared from $D(5, -4)$ to the center $O(0, 0)$: \\begin{aligned}OD^2 &= 5^2 + (-4)^2 \\cr&= 25 + 16 \\cr&= 41\\end{aligned}",
                         "Since the distance squared $$41 > R^2 = 36$$, the distance from the point to the center of the circle is greater than the radius. Thus, the point $D$ lies outside the circle.",
-                        "Final Answer: <br>(b)(i) $$\\text{ } PT = 8 \\text{ is verified using the Cosine Rule} $$ (b)(ii) $$\\text{Outside the circle}$$"
+                        "Final Answer: <br>(b)(i) $$\\text{ } PT = 8 \\text{ is verified } $$ (b)(ii) $$\\text{Outside the circle}$$"
                 ],
                 "pi_options": [
                         {
@@ -202,11 +202,11 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "In Part (b)(ii), you probably calculated the distance from the center incorrectly. The distance squared from $D(5,-4)$ to the origin is $41$. Since $41 > R^2 = 36$, the point must lie outside the circle."
                         },
                         {
-                                "ans": "<br>(b)(i)  \\begin{aligned}PT^2 &= 100 + 36 - 72\\cr &= 64 \\cr \\implies PT &= 8 $$ (b)(ii) \\end{aligned}\\text{On the circle}$$",
+                                "ans": "<br>(b)(i)  \\begin{aligned}PT^2 &= 100 + 36 - 72\\cr &= 64 \\cr \\implies PT &= 8 \\end{aligned} (b)(ii) $$\\text{On the circle}$$",
                                 "feedback": "In Part (b)(ii), the distance squared to the origin is $5^2 + (-4)^2 = 41$. Since this is strictly greater than the radius squared ($36$), the point lies outside the circle, not on it."
                         },
                         {
-                                "ans": "<br>(b)(i) $$\\text{ } \\cos(POT) = 0.8 $$ (b)(ii) $$\\text{Outside the circle}$$",
+                                "ans": "<br>(b)(i) $$\\text{ } \\cos\\theta = 0.8 $$ (b)(ii) $$\\text{Outside the circle}$$",
                                 "feedback": "In Part (b)(i), the cosine of angle $POT$ is $0.6$, which arises from $72 \\div 120 = 0.6$. A value of $0.8$ is incorrect and will affect the subsequent Cosine Rule calculation."
                         }
                 ],
@@ -457,7 +457,7 @@ window.ALEVEL_QUESTIONS = [
                         "Next, set the sum of the first 16 terms equal to the square of the sum of the first 4 terms: $$16a + 120d = (4a + 6d)^2$$",
                         "Expand the perfect square on the right-hand side: $$16a + 120d = 16a^2 + 48ad + 36d^2$$",
                         "Divide both sides of the equation by $4$ to reach the target relation: $$4a + 30d = 4a^2 + 12ad + 9d^2$$",
-                        "For Part (b), state the formula for the fourth term and rearrange for $d$: \\begin{aligned}u_4 &= a + 3d = 10 \\cr3d &= 10 - a \\crd &= \\dfrac{10-a}{3}\\end{aligned}",
+                        "For Part (b), state the formula for the fourth term and rearrange for $d$: \\begin{aligned}u_4 &= a + 3d = 10 \\cr3d &= 10 - a \\cr d &= \\dfrac{10-a}{3}\\end{aligned}",
                         "Notice that the right-hand side of the Part (a) relation can be factored as a perfect square: $$4a + 30d = (2a + 3d)^2$$",
                         "Substitute $3d = 10 - a$ into both sides of the factored equation: \\begin{aligned}4a + 10(3d) &= (2a + 10 - a)^2 \\cr4a + 10(10-a) &= (a + 10)^2\\end{aligned}",
                         "Expand and simplify the resulting quadratic equation: \\begin{aligned}4a + 100 - 10a &= a^2 + 20a + 100 \\cr100 - 6a &= a^2 + 20a + 100 \\cra^2 + 26a &= 0\\end{aligned}",
@@ -501,7 +501,7 @@ window.ALEVEL_QUESTIONS = [
                         "First, state the formulas for both sums. The sum of the first 4 terms is: \\begin{aligned}S_4 &= \\dfrac{4}{2}\\left(2a + 3d\\right) \\cr&= 2(2a + 3d) \\cr&= 4a + 6d\\end{aligned}",
                         "The sum of the first 2 terms is: \\begin{aligned}S_2 &= \\dfrac{2}{2}\\left(2a + d\\right) \\cr&= 2a + d\\end{aligned}",
                         "Next, set the sum of the first 4 terms equal to the square of the sum of the first 2 terms to reach the target relation: \\begin{aligned}4a + 6d &= (2a + d)^2 \\cr4a + 6d &= 4a^2 + 4ad + d^2\\end{aligned}",
-                        "For Part (b), state the formula for the second term and rearrange for $d$: \\begin{aligned}u_2 &= a + d = 3 \\crd &= 3 - a\\end{aligned}",
+                        "For Part (b), state the formula for the second term and rearrange for $d$: \\begin{aligned}u_2 &= a + d = 3 \\cr d &= 3 - a\\end{aligned}",
                         "Notice that the right-hand side of the Part (a) relation can be factored as a perfect square: $$4a + 6d = (2a + d)^2$$",
                         "Substitute $d = 3 - a$ into both sides of the factored equation: \\begin{aligned}4a + 6(3-a) &= (2a + 3 - a)^2 \\cr4a + 18 - 6a &= (a + 3)^2\\end{aligned}",
                         "Expand and simplify the resulting quadratic equation: \\begin{aligned}18 - 2a &= a^2 + 6a + 9 \\cra^2 + 8a - 9 &= 0\\end{aligned}",
@@ -545,7 +545,7 @@ window.ALEVEL_QUESTIONS = [
                         "First, state the formulas for both sums. The sum of the first 8 terms is: \\begin{aligned}S_8 &= \\dfrac{8}{2}\\left(2a + 7d\\right) \\cr&= 4(2a + 7d) \\cr&= 8a + 28d\\end{aligned}",
                         "The sum of the first 2 terms is: \\begin{aligned}S_2 &= \\dfrac{2}{2}\\left(2a + d\\right) \\cr&= 2a + d\\end{aligned}",
                         "Next, set the sum of the first 8 terms equal to the square of the sum of the first 2 terms to reach the target relation: \\begin{aligned}8a + 28d &= (2a + d)^2 \\cr8a + 28d &= 4a^2 + 4ad + d^2\\end{aligned}",
-                        "For Part (b), state the formula for the second term and rearrange for $d$: \\begin{aligned}u_2 &= a + d = 2 \\crd &= 2 - a\\end{aligned}",
+                        "For Part (b), state the formula for the second term and rearrange for $d$: \\begin{aligned}u_2 &= a + d = 2 \\cr d &= 2 - a\\end{aligned}",
                         "Notice that the right-hand side of the Part (a) relation can be factored as a perfect square: $$8a + 28d = (2a + d)^2$$",
                         "Substitute $d = 2 - a$ into both sides of the factored equation: \\begin{aligned}8a + 28(2-a) &= (2a + 2 - a)^2 \\cr8a + 56 - 28a &= (a + 2)^2\\end{aligned}",
                         "Expand and simplify the resulting quadratic equation: \\begin{aligned}56 - 20a &= a^2 + 4a + 4 \\cra^2 + 24a - 52 &= 0\\end{aligned}",
@@ -590,7 +590,7 @@ window.ALEVEL_QUESTIONS = [
                         "The sum of the first 3 terms is: \\begin{aligned}S_3 &= \\dfrac{3}{2}\\left(2a + 2d\\right) \\cr&= 3a + 3d\\end{aligned}",
                         "Next, set the sum of the first 9 terms equal to the square of the sum of the first 3 terms: \\begin{aligned}9a + 36d &= (3a + 3d)^2 \\cr9a + 36d &= 9(a + d)^2\\end{aligned}",
                         "Divide both sides of the equation by $9$ to reach the target relation: \\begin{aligned}a + 4d &= (a + d)^2 \\cra + 4d &= a^2 + 2ad + d^2\\end{aligned}",
-                        "For Part (b), state the formula for the third term and rearrange for $d$: \\begin{aligned}u_3 &= a + 2d = 8 \\cr2d &= 8 - a \\crd &= \\dfrac{8-a}{2}\\end{aligned}",
+                        "For Part (b), state the formula for the third term and rearrange for $d$: \\begin{aligned}u_3 &= a + 2d = 8 \\cr2d &= 8 - a \\cr d &= \\dfrac{8-a}{2}\\end{aligned}",
                         "Substitute $d = \\dfrac{8-a}{2}$ into both sides of the simplified relation: $$a + 4\\left(\\dfrac{8-a}{2}\\right) = \\left(a + \\dfrac{8-a}{2}\\right)^2$$",
                         "Simplify both sides of the equation: \\begin{aligned}a + 2(8-a) &= \\left(\\dfrac{2a + 8 - a}{2}\\right)^2 \\cr16 - a &= \\dfrac{(a+8)^2}{4}\\end{aligned}",
                         "Clear the fraction by multiplying both sides by $4$: \\begin{aligned}64 - 4a &= a^2 + 16a + 64 \\cra^2 + 20a &= 0\\end{aligned}",
@@ -634,7 +634,7 @@ window.ALEVEL_QUESTIONS = [
                         "First, state the formulas for both sums. The sum of the first 16 terms is: \\begin{aligned}S_{16} &= \\dfrac{16}{2}\\left(2a + 15d\\right) \\cr&= 8(2a + 15d) \\cr&= 16a + 120d\\end{aligned}",
                         "The sum of the first 2 terms is: \\begin{aligned}S_2 &= \\dfrac{2}{2}\\left(2a + d\\right) \\cr&= 2a + d\\end{aligned}",
                         "Next, set the sum of the first 16 terms equal to the square of the sum of the first 2 terms to reach the target relation: \\begin{aligned}16a + 120d &= (2a + d)^2 \\cr16a + 120d &= 4a^2 + 4ad + d^2\\end{aligned}",
-                        "For Part (b), state the formula for the second term and rearrange for $d$: \\begin{aligned}u_2 &= a + d = 4 \\crd &= 4 - a\\end{aligned}",
+                        "For Part (b), state the formula for the second term and rearrange for $d$: \\begin{aligned}u_2 &= a + d = 4 \\cr d &= 4 - a\\end{aligned}",
                         "Notice that the right-hand side of the Part (a) relation can be factored as a perfect square: $$16a + 120d = (2a + d)^2$$",
                         "Substitute $d = 4 - a$ into both sides of the factored equation: \\begin{aligned}16a + 120(4-a) &= (2a + 4 - a)^2 \\cr16a + 480 - 120a &= (a + 4)^2\\end{aligned}",
                         "Expand and simplify the resulting quadratic equation: \\begin{aligned}480 - 104a &= a^2 + 8a + 16 \\cra^2 + 112a - 464 &= 0\\end{aligned}",
