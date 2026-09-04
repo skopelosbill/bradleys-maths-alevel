@@ -816,7 +816,7 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), set $A = 100$ and solve for $t$: \\begin{aligned}100 &= 800\\text{e}^{-\\lambda t} \\cr\\text{e}^{-\\lambda t} &= \\dfrac{100}{800} = \\dfrac{1}{8} = 2^{-3}\\end{aligned}",
                         "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-\\lambda t &= \\ln(2^{-3}) \\cr-\\lambda t &= -3\\ln(2)\\cr t &= \\dfrac{3\\ln(2)}{\\lambda}\\end{aligned}",
                         "Substitute $\\lambda = \\dfrac{\\ln(2)}{8.1}$ into the equation: \\begin{aligned}t &= 3 \\times 8.1 \\cr&= 24.3\\text{ days}\\end{aligned}",
-                        "Convert the decimal days to hours: \\begin{aligned}24\\text{ days and }& (0.3 \\times 24)\\text{ hours}\\cr  = 24\\text{ days and }& 7.2\\text{ hours} \\cr &\\approx 24\\text{ days and } 7\\cr &\\text{ hours}$$",
+                        "Convert the decimal days to hours: \\begin{aligned}24\\text{ days and }& (0.3 \\times 24)\\text{ hours}\\cr  = 24\\text{ days and }& 7.2\\text{ hours} \\cr &\\approx 24\\text{ days and } 7\\cr &\\text{ hours}\\end{aligned}",
                         "For Part (c), identify a physical limitation: radioactive decay is a random, stochastic quantum process. The model predicts the average expected decay, but the actual measurements will fluctuate statistically around this smooth curve.",
                         "Final Answer: (a) $$ 286\\text{ Bq}$$ (b) $$24\\text{ days and } 7\\text{ hours}$$"
                 ],
