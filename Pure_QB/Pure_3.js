@@ -1138,16 +1138,16 @@ window.ALEVEL_QUESTIONS = [
                         "\\begin{aligned}p\\left(-\\dfrac{1}{3}\\right) &= 24\\left(-\\dfrac{1}{3}\\right)^3 - 22\\left(-\\dfrac{1}{3}\\right)^2\\cr & \\quad - \\left(-\\dfrac{1}{3}\\right) + 3\\end{aligned}",
                         "\\begin{aligned}p\\left(-\\dfrac{1}{3}\\right) &= 24\\left(-\\dfrac{1}{27}\\right) - 22\\left(\\dfrac{1}{9}\\right) \\cr & \\quad + \\dfrac{1}{3} + 3 \\cr &= -\\dfrac{8}{9} - \\dfrac{22}{9} + \\dfrac{3}{9} + \\dfrac{27}{9} \\cr &= \\dfrac{0}{9} \\cr&= 0\\end{aligned}",
                         "Since $p\\left(-\\dfrac{1}{3}\\right) = 0$, by the Factor Theorem, $(3x+1)$ is indeed a factor of $p(x)$.",
-                        "For Part (b), perform polynomial division to divide $$24x^3 - 22x^2 - x + 3$$ by $$(3x+1)$$ \\begin{aligned}\\ & dfrac{24x^3 - 22x^2 - x + 3}{3x+1} \\cr & \\quad \\quad \\quad= 8x^2 - 10x + 3$$",
+                        "For Part (b), perform polynomial division to divide $$24x^3 - 22x^2 - x + 3$$ by $$(3x+1)$$ \\begin{aligned}\\ & dfrac{24x^3 - 22x^2 - x + 3}{3x+1} \\cr & \\quad \\quad \\quad= 8x^2 - 10x + 3\\end{aligned}",
                         "Factorise the quadratic quotient completely: $$8x^2 - 10x + 3 = (2x-1)(4x-3)$$",
                         "Combine the linear factors to write the complete factorisation of $p(x)$: $$p(x) = (3x+1)(2x-1)(4x-3)$$",
                         "For Part (c), multiply both sides of the equation by $22$ to clear the denominators: $$24\\sec^2 x + 3\\cos x = 22\\sec x + 1$$",
                         "Substitute $y = \\sec x$ into the equation, noting that $\\cos x = \\dfrac{1}{y}$: $$24y^2 + \\dfrac{3}{y} = 22y + 1$$",
-                        "Multiply both sides by $y$ to clear the fraction and rearrange to form a cubic equation: \\begin{aligned}24y^3 &+ 3 = 22y^2 + y \\cr 24y^3 &- 22y^2 - y + 3 &= 0\\end{aligned}",
-                        "Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: \\begin{aligned}y &= -\\dfrac{1}{3},\\quad y \\cr&= \\dfrac{1}{2},\\quad y \\cr&= \\dfrac{3}{4}\\end{aligned}",
+                        "Multiply both sides by $y$ to clear the fraction and rearrange to form a cubic equation: \\begin{aligned}24y^3 &+ 3 = 22y^2 + y \\cr 24y^3 &- 22y^2 - y + 3 = 0\\end{aligned}",
+                        "Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: \\begin{aligned}y &= -\\dfrac{1}{3},\\quad \\cr &= \\dfrac{1}{2},\\quad  \\cr&= \\dfrac{3}{4}\\end{aligned}",
                         "Since $y = \\sec x$, we must have $\\sec x = -\\dfrac{1}{3}$, $\\sec x = \\dfrac{1}{2}$, or $\\sec x = \\dfrac{3}{4}$.",
                         "Recall that the range of the secant function is strictly restricted to $|\\sec x| \\ge 1$. Since all three roots have absolute values strictly less than $1$ ($|-\\frac{1}{3}| < 1$, $|\\frac{1}{2}| < 1$, and $|\\frac{3}{4}| < 1$), there are no real values of $x$ that satisfy these equations.",
-                        "Final Answer: <br>(b) $$p(x) &= (3x+1)(2x-1)(4x-3)$$(c) $$|\\sec x| \\ge 1 $$ $$\\text{No real solutions}$$"
+                        "Final Answer: <br>(b) $$p(x) = (3x+1)(2x-1)(4x-3)$$(c) $$|\\sec x| \\ge 1 $$ $$\\text{No real solutions}$$"
                 ],
                 "pi_options": [
                         {
