@@ -1181,32 +1181,32 @@ window.ALEVEL_QUESTIONS = [
                         "Proof"
                 ],
                 "img": false,
-                "question": "Let $q(x) = 6x^2 - 5x + 1$.<br><br>(a) Prove that $(2x-1)$ is a factor of $q(x)$.<br><br>(b) Factorise $q(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:<br>$$6\\csc x + \\sin x = 5$$",
+                "question": "Let $q(x) = 6x^2 - 5x + 1$.<br><br>(a) Prove that $(2x-1)$ is a factor of $q(x)$.<br><br>(b) Factorise $q(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:$$6\\csc x + \\sin x = 5$$",
                 "steps": [
-                        "For Part (a), apply the Factor Theorem. If $(2x-1)$ is a factor of $q(x)$, then $q\\left(\\dfrac{1}{2}\\right) = 0$. Evaluate the polynomial at $x = \\dfrac{1}{2}$:",
-                        "$$q\\left(\\dfrac{1}{2}\\right) = 6\\left(\\dfrac{1}{2}\\right)^2 - 5\\left(\\dfrac{1}{2}\\right) + 1$$",
-                        "\\begin{aligned}q\\left(\\dfrac{1}{2}\\right) &= 6\\left(\\dfrac{1}{4}\\right) - \\dfrac{5}{2} + 1 \\cr&= \\dfrac{3}{2} - \\dfrac{5}{2} + 1 \\cr&= -1 + 1 \\cr&= 0\\end{aligned}",
+                        "For Part (a), apply the Factor Theorem. If $(2x-1)$ is a factor of $q(x)$, then $q\\left(\\dfrac{1}{2}\\right) = 0$. Evaluate the polynomial at $$x = \\dfrac{1}{2}$$",
+                        "\\begin{aligned}q\\left(\\dfrac{1}{2}\\right) &= 6\\left(\\dfrac{1}{2}\\right)^2 \\cr & \\quad - 5\\left(\\dfrac{1}{2}\\right) + 1\\end{aligned}",
+                        "\\begin{aligned}q\\left(\\dfrac{1}{2}\\right) &= 6\\left(\\dfrac{1}{4}\\right) - \\dfrac{5}{2} + 1 \\cr &= \\dfrac{3}{2} - \\dfrac{5}{2} + 1 \\cr &= -1 + 1 \\cr &= 0\\end{aligned}",
                         "Since $q\\left(\\dfrac{1}{2}\\right) = 0$, by the Factor Theorem, $(2x-1)$ is indeed a factor of $q(x)$.",
-                        "For Part (b), perform polynomial division to divide $6x^2 - 5x + 1$ by $(2x-1)$: $$\\dfrac{6x^2 - 5x + 1}{2x-1} = 3x - 1$$",
+                        "For Part (b), perform polynomial division to divide $$6x^2 - 5x + 1$$ by $$(2x-1)$$<br> \\begin{aligned} & \\dfrac{6x^2 - 5x + 1}{2x-1} \\cr & \\quad \\quad \\quad= 3x - 1\\end{aligned}",
                         "Combine the linear factors to write the complete factorisation of $q(x)$: $$q(x) = (2x-1)(3x-1)$$",
                         "For Part (c), let $y = \\sin x$, noting that $\\csc x = \\dfrac{1}{y}$ (where $y \\ne 0$): $$6\\left(\\dfrac{1}{y}\\right) + y = 5$$",
-                        "Multiply both sides by $y$ to clear the fraction and rearrange to form a quadratic equation: \\begin{aligned}6 + y^2 &= 5y \\cry^2 - 5y + 6 &= 0\\end{aligned}",
-                        "Factorise the quadratic equation: \\begin{aligned}(y-2)(y-3) &= 0 \\cry &= 2 \\quad \\text{or} \\quad y = 3\\end{aligned}",
+                        "Multiply both sides by $y$ to clear the fraction and rearrange to form a quadratic equation: \\begin{aligned}6 + y^2 &= 5y \\cr y^2 - 5y + 6 &= 0\\end{aligned}",
+                        "Factorise the quadratic equation: \\begin{aligned}(y-2)(y-3) &= 0 \\cr y &= 2 \\quad \\text{or} \\quad y = 3\\end{aligned}",
                         "Since $y = \\sin x$, we must have $\\sin x = 2$ or $\\sin x = 3$.",
                         "Recall that the range of the sine function is strictly restricted to $-1 \\le \\sin x \\le 1$. Since both roots are strictly greater than $1$ ($2 > 1$ and $3 > 1$), there are no real values of $x$ that satisfy these equations.",
-                        "Final Answer: \\begin{aligned}\cr (b)q(x) &= (2x-1)(3x-1)(c) -1 \\le \\sin x \\le 1 \\cr\\text{No real solutions}\\end{aligned}"
+                        "Final Answer: <br>(b) $$q(x) = (2x-1)(3x-1)$$(c) $$-1 \\le \\sin x \\le 1$$ $$\\text{No real solutions}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "(b) $$q(x) = (2x-1)(3x-1)(c) x = 2 \\text{ or } x = 3$$",
+                                "ans": "(b) $$q(x) = (2x-1)(3x-1)$$(c) $$x = 2 \\text{ or } x = 3$$",
                                 "feedback": "In Part (c), you have stated the roots of the quadratic in $y$. However, the original equation is in terms of $\\sin x$. Since $\\sin x = 2$ has no real solutions, $x=2$ is not a valid solution."
                         },
                         {
-                                "ans": "(b) $$q(x) = (2x-1)(3x+1)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$q(x) = (2x-1)(3x+1)$$(c) $$\\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Expanding $(2x-1)(3x+1)$ yields $6x^2 - x - 1$, which does not match our quadratic $q(x) = 6x^2 - 5x + 1$."
                         },
                         {
-                                "ans": "(b) $$q(x) = (2x+1)(3x-1)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$q(x) = (2x+1)(3x-1)$$(c) $$\\text{No real solutions}$$",
                                 "feedback": "Check your factor signs in Part (b). Since we proved $(2x-1)$ is a factor in Part (a), having a factor of $(2x+1)$ is mathematically incorrect."
                         }
                 ],
@@ -1228,33 +1228,33 @@ window.ALEVEL_QUESTIONS = [
                         "Proof"
                 ],
                 "img": false,
-                "question": "Let $p(x) = 2x^3 - 5x^2 - 9x + 18$.<br><br>(a) Prove that $(x+2)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:<br>$$2\\sin^2 x + 18\\csc x = 5\\sin x + 9$$",
+                "question": "Let $p(x) = 2x^3 - 5x^2 - 9x + 18$.<br><br>(a) Prove that $(x+2)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:$$2\\sin^2 x + 18\\csc x = 5\\sin x + 9$$",
                 "steps": [
-                        "For Part (a), apply the Factor Theorem. If $(x+2)$ is a factor of $p(x)$, then $p(-2) = 0$. Evaluate the polynomial at $x = -2$:",
-                        "$$p(-2) = 2(-2)^3 - 5(-2)^2 - 9(-2) + 18$$",
-                        "\\begin{aligned}p(-2) &= 2(-8) - 5(4) + 18 + 18 \\cr&= -16 - 20 + 36 \\cr&= 0\\end{aligned}",
+                        "For Part (a), apply the Factor Theorem. If $(x+2)$ is a factor of $p(x)$, then $p(-2) = 0$. Evaluate the polynomial at $$x = -2$$",
+                        "\\begin{aligned}p(-2) &= 2(-2)^3 - 5(-2)^2 \\cr & \\quad - 9(-2) + 18\\end{aligned}",
+                        "\\begin{aligned}p(-2) &= 2(-8) - 5(4) + 18 + 18 \\cr &= -16 - 20 + 36 \\cr &= 0\\end{aligned}",
                         "Since $p(-2) = 0$, by the Factor Theorem, $(x+2)$ is indeed a factor of $p(x)$.",
-                        "For Part (b), perform polynomial division to divide $2x^3 - 5x^2 - 9x + 18$ by $(x+2)$: $$\\dfrac{2x^3 - 5x^2 - 9x + 18}{x+2} = 2x^2 - 9x + 9$$",
+                        "For Part (b), perform polynomial division to divide $$2x^3 - 5x^2 - 9x + 18$$ by $$(x+2)$$<br> \\begin{aligned} & \\dfrac{2x^3 - 5x^2 - 9x + 18}{x+2} \\cr & \\quad \\quad \\quad= 2x^2 - 9x + 9\\end{aligned}",
                         "Factorise the quadratic quotient completely: $$2x^2 - 9x + 9 = (x-3)(2x-3)$$",
                         "Combine the linear factors to write the complete factorisation of $p(x)$: $$p(x) = (x+2)(x-3)(2x-3)$$",
                         "For Part (c), let $y = \\sin x$, noting that $\\csc x = \\dfrac{1}{y}$ (where $y \\ne 0$): $$2y^2 + 18\\left(\\dfrac{1}{y}\\right) = 5y + 9$$",
-                        "Multiply both sides by $y$ to clear the fraction and rearrange to form a cubic equation: \\begin{aligned}2y^3 + 18 &= 5y^2 + 9y \\cr2y^3 - 5y^2 - 9y + 18 &= 0\\end{aligned}",
-                        "Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: \\begin{aligned}y &= -2,\\quad y \\cr&= 3,\\quad y \\cr&= \\dfrac{3}{2}\\end{aligned}",
+                        "Multiply both sides by $y$ to clear the fraction and rearrange to form a cubic equation: \\begin{aligned}2y^3 + 18 &= 5y^2 + 9y \\cr 2y^3 - 5y^2 - 9y + 18 &= 0\\end{aligned}",
+                        "Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: \\begin{aligned}y &= -2,\\quad \\cr y &= 3,\\quad  \\cr y &= \\dfrac{3}{2}\\end{aligned}",
                         "Since $y = \\sin x$, we must have $\\sin x = -2$, $\\sin x = 3$, or $\\sin x = \\dfrac{3}{2}$.",
                         "Recall that the range of the sine function is strictly restricted to $-1 \\le \\sin x \\le 1$. Since all three roots have absolute values strictly greater than $1$ ($|-2| > 1$, $|3| > 1$, and $|\\frac{3}{2}| > 1$), there are no real values of $x$ that satisfy these equations.",
-                        "Final Answer: \\begin{aligned}\cr (b)p(x) &= (x+2)(x-3)(2x-3)(c) -1 \\le \\sin x \\le 1 \\cr\\text{No real solutions}\\end{aligned}"
+                        "Final Answer: <br>(b) $$p(x) = (x+2)(x-3)(2x-3)$$(c) $$-1 \\le \\sin x \\le 1$$ $$\\text{No real solutions}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "(b) $$p(x) = (x+2)(x-3)(2x-3)(c) x = 3$$",
+                                "ans": "(b) $$p(x) = (x+2)(x-3)(2x-3)$$(c) $$x = 3$$",
                                 "feedback": "In Part (c), you have stated the roots of the cubic in $y = \\sin x$. However, the original equation is in terms of $x$. Since $\\sin x = 3$ has no real solutions, $x=3$ is not a valid solution."
                         },
                         {
-                                "ans": "(b) $$p(x) = (x+2)(x+3)(2x-3)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$p(x) = (x+2)(x+3)(2x-3)$$(c) $$\\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Factoring the quadratic quotient $2x^2 - 9x + 9$ yields $(x-3)(2x-3)$. Having a factor of $(x+3)$ is incorrect."
                         },
                         {
-                                "ans": "(b) $$p(x) = (x-2)(x-3)(2x-3)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$p(x) = (x-2)(x-3)(2x-3)$$(c) $$\\text{No real solutions}$$",
                                 "feedback": "Check your factor signs in Part (b). Since we proved $(x+2)$ is a factor in Part (a), having a factor of $(x-2)$ is mathematically incorrect."
                         }
                 ],
@@ -1276,33 +1276,33 @@ window.ALEVEL_QUESTIONS = [
                         "Proof"
                 ],
                 "img": false,
-                "question": "Let $p(x) = 2x^3 - 9x^2 - 2x + 24$.<br><br>(a) Prove that $(2x+3)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:<br>$$2\\cos^2 x + 24\\sec x = 9\\cos x + 2$$",
+                "question": "Let $p(x) = 2x^3 - 9x^2 - 2x + 24$.<br><br>(a) Prove that $(2x+3)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:$$2\\cos^2 x + 24\\sec x = 9\\cos x + 2$$",
                 "steps": [
-                        "For Part (a), apply the Factor Theorem. If $(2x+3)$ is a factor of $p(x)$, then $p\\left(-\\dfrac{3}{2}\\right) = 0$. Evaluate the polynomial at $x = -\\dfrac{3}{2}$:",
-                        "$$p\\left(-\\dfrac{3}{2}\\right) = 2\\left(-\\dfrac{3}{2}\\right)^3 - 9\\left(-\\dfrac{3}{2}\\right)^2 - 2\\left(-\\dfrac{3}{2}\\right) + 24$$",
-                        "\\begin{aligned}p\\left(-\\dfrac{3}{2}\\right) &= 2\\left(-\\dfrac{27}{8}\\right) - 9\\left(\\dfrac{9}{4}\\right) + 3 + 24 \\cr&= -\\dfrac{27}{4} - \\dfrac{81}{4} + 27 \\cr&= -\\dfrac{108}{4} + 27 \\cr&= -27 + 27 \\cr&= 0\\end{aligned}",
+                        "For Part (a), apply the Factor Theorem. If $(2x+3)$ is a factor of $p(x)$, then $p\\left(-\\dfrac{3}{2}\\right) = 0$. Evaluate the polynomial at $$x = -\\dfrac{3}{2}$$",
+                        "\\begin{aligned}p\\left(-\\dfrac{3}{2}\\right) &= 2\\left(-\\dfrac{3}{2}\\right)^3 - 9\\left(-\\dfrac{3}{2}\\right)^2 \\cr & \\quad - 2\\left(-\\dfrac{3}{2}\\right) + 24\\end{aligned}",
+                        "\\begin{aligned}p\\left(-\\dfrac{3}{2}\\right) &= 2\\left(-\\dfrac{27}{8}\\right) - 9\\left(\\dfrac{9}{4}\\right) + 3 + 24 \\cr &= -\\dfrac{27}{4} - \\dfrac{81}{4} + 27 \\cr &= -\\dfrac{108}{4} + 27 \\cr &= -27 + 27 \\cr &= 0\\end{aligned}",
                         "Since $p\\left(-\\dfrac{3}{2}\\right) = 0$, by the Factor Theorem, $(2x+3)$ is indeed a factor of $p(x)$.",
-                        "For Part (b), perform polynomial division to divide $2x^3 - 9x^2 - 2x + 24$ by $(2x+3)$: $$\\dfrac{2x^3 - 9x^2 - 2x + 24}{2x+3} = x^2 - 6x + 8$$",
+                        "For Part (b), perform polynomial division to divide $$2x^3 - 9x^2 - 2x + 24$$ by $$(2x+3)$$<br> \\begin{aligned} & \\dfrac{2x^3 - 9x^2 - 2x + 24}{2x+3} \\cr & \\quad \\quad \\quad= x^2 - 6x + 8\\end{aligned}",
                         "Factorise the quadratic quotient completely: $$x^2 - 6x + 8 = (x-2)(x-4)$$",
                         "Combine the linear factors to write the complete factorisation of $p(x)$: $$p(x) = (2x+3)(x-2)(x-4)$$",
                         "For Part (c), let $y = \\cos x$, noting that $\\sec x = \\dfrac{1}{y}$ (where $y \\ne 0$): $$2y^2 + 24\\left(\\dfrac{1}{y}\\right) = 9y + 2$$",
-                        "Multiply both sides by $y$ to clear the fraction and rearrange to form a cubic equation: \\begin{aligned}2y^3 + 24 &= 9y^2 + 2y \\cr2y^3 - 9y^2 - 2y + 24 &= 0\\end{aligned}",
-                        "Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: \\begin{aligned}y &= -\\dfrac{3}{2},\\quad y \\cr&= 2,\\quad y \\cr&= 4\\end{aligned}",
+                        "Multiply both sides by $y$ to clear the fraction and rearrange to form a cubic equation: \\begin{aligned}2y^3 + 24 &= 9y^2 + 2y \\cr 2y^3 - 9y^2 - 2y + 24 &= 0\\end{aligned}",
+                        "Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: \\begin{aligned}y &= -\\dfrac{3}{2},\\quad \\cr y &= 2,\\quad  \\cr y &= 4\\end{aligned}",
                         "Since $y = \\cos x$, we must have $\\cos x = -\\dfrac{3}{2}$, $\\cos x = 2$, or $\\cos x = 4$.",
                         "Recall that the range of the cosine function is strictly restricted to $-1 \\le \\cos x \\le 1$. Since all three roots have absolute values strictly greater than $1$ ($|-\\frac{3}{2}| > 1$, $|2| > 1$, and $|4| > 1$), there are no real values of $x$ that satisfy these equations.",
-                        "Final Answer: \\begin{aligned}\cr (b)p(x) &= (2x+3)(x-2)(x-4)(c) -1 \\le \\cos x \\le 1 \\cr\\text{No real solutions}\\end{aligned}"
+                        "Final Answer: <br>(b) $$p(x) = (2x+3)(x-2)(x-4)$$(c) $$-1 \\le \\cos x \\le 1$$ $$\\text{No real solutions}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "(b) $$p(x) = 2(2x+3)(x-2)(x-4)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$p(x) = 2(2x+3)(x-2)(x-4)$$(c) $$\\text{No real solutions}$$",
                                 "feedback": "In Part (b), you probably made a division slip when factoring. Note that $(2x+3)(x-2)(x-4)$ expands directly to our cubic $2x^3 - 9x^2 - 2x + 24$, so no additional scalar multiplier of $2$ is needed."
                         },
                         {
-                                "ans": "(b) $$p(x) = (2x+3)(x-2)(x-4)(c) x = 2 \\text{ or } x = 4$$",
+                                "ans": "(b) $$p(x) = (2x+3)(x-2)(x-4)$$(c) $$x = 2 \\text{ or } x = 4$$",
                                 "feedback": "In Part (c), you have stated the roots of the cubic in $y = \\cos x$. However, the original equation is in terms of $x$. Since $\\cos x = 2$ has no real solutions, $x=2$ is not a valid solution."
                         },
                         {
-                                "ans": "(b) $$p(x) = (2x+3)(x+2)(x-4)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$p(x) = (2x+3)(x+2)(x-4)$$(c) $$\\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Factoring the quadratic quotient $x^2 - 6x + 8$ yields $(x-2)(x-4)$. Having a factor of $(x+2)$ is incorrect."
                         }
                 ],
@@ -1324,32 +1324,32 @@ window.ALEVEL_QUESTIONS = [
                         "Proof"
                 ],
                 "img": false,
-                "question": "Let $q(x) = 12x^2 - 8x + 1$.<br><br>(a) Prove that $(2x-1)$ is a factor of $q(x)$.<br><br>(b) Factorise $q(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:<br>$$12\\sec x + \\cos x = 8$$",
+                "question": "Let $q(x) = 12x^2 - 8x + 1$.<br><br>(a) Prove that $(2x-1)$ is a factor of $q(x)$.<br><br>(b) Factorise $q(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:$$12\\sec x + \\cos x = 8$$",
                 "steps": [
-                        "For Part (a), apply the Factor Theorem. If $(2x-1)$ is a factor of $q(x)$, then $q\\left(\\dfrac{1}{2}\\right) = 0$. Evaluate the polynomial at $x = \\dfrac{1}{2}$:",
-                        "$$q\\left(\\dfrac{1}{2}\\right) = 12\\left(\\dfrac{1}{2}\\right)^2 - 8\\left(\\dfrac{1}{2}\\right) + 1$$",
-                        "\\begin{aligned}q\\left(\\dfrac{1}{2}\\right) &= 12\\left(\\dfrac{1}{4}\\right) - 4 + 1 \\cr&= 3 - 4 + 1 \\cr&= 0\\end{aligned}",
+                        "For Part (a), apply the Factor Theorem. If $(2x-1)$ is a factor of $q(x)$, then $q\\left(\\dfrac{1}{2}\\right) = 0$. Evaluate the polynomial at $$x = \\dfrac{1}{2}$$",
+                        "\\begin{aligned}q\\left(\\dfrac{1}{2}\\right) &= 12\\left(\\dfrac{1}{2}\\right)^2 \\cr & \\quad - 8\\left(\\dfrac{1}{2}\\right) + 1\\end{aligned}",
+                        "\\begin{aligned}q\\left(\\dfrac{1}{2}\\right) &= 12\\left(\\dfrac{1}{4}\\right) - 4 + 1 \\cr &= 3 - 4 + 1 \\cr &= 0\\end{aligned}",
                         "Since $q\\left(\\dfrac{1}{2}\\right) = 0$, by the Factor Theorem, $(2x-1)$ is indeed a factor of $q(x)$.",
-                        "For Part (b), perform polynomial division to divide $12x^2 - 8x + 1$ by $(2x-1)$: $$\\dfrac{12x^2 - 8x + 1}{2x-1} = 6x - 1$$",
+                        "For Part (b), perform polynomial division to divide $$12x^2 - 8x + 1$$ by $$(2x-1)$$<br> \\begin{aligned} & \\dfrac{12x^2 - 8x + 1}{2x-1} \\cr & \\quad \\quad \\quad= 6x - 1\\end{aligned}",
                         "Combine the linear factors to write the complete factorisation of $q(x)$: $$q(x) = (2x-1)(6x-1)$$",
                         "For Part (c), let $y = \\cos x$, noting that $\\sec x = \\dfrac{1}{y}$ (where $y \\ne 0$): $$12\\left(\\dfrac{1}{y}\\right) + y = 8$$",
-                        "Multiply both sides by $y$ to clear the fraction and rearrange to form a quadratic equation: \\begin{aligned}12 + y^2 &= 8y \\cry^2 - 8y + 12 &= 0\\end{aligned}",
-                        "Factorise the quadratic equation: \\begin{aligned}(y-2)(y-6) &= 0 \\cry &= 2 \\quad \\text{or} \\quad y = 6\\end{aligned}",
+                        "Multiply both sides by $y$ to clear the fraction and rearrange to form a quadratic equation: \\begin{aligned}12 + y^2 &= 8y \\cr y^2 - 8y + 12 &= 0\\end{aligned}",
+                        "Factorise the quadratic equation: \\begin{aligned}(y-2)(y-6) &= 0 \\cr y &= 2 \\quad \\text{or} \\quad y = 6\\end{aligned}",
                         "Since $y = \\cos x$, we must have $\\cos x = 2$ or $\\cos x = 6$.",
                         "Recall that the range of the cosine function is strictly restricted to $-1 \\le \\cos x \\le 1$. Since both roots are strictly greater than $1$ ($2 > 1$ and $6 > 1$), there are no real values of $x$ that satisfy these equations.",
-                        "Final Answer: \\begin{aligned}\cr (b)q(x) &= (2x-1)(6x-1)(c) -1 \\le \\cos x \\le 1 \\cr\\text{No real solutions}\\end{aligned}"
+                        "Final Answer: <br>(b) $$q(x) = (2x-1)(6x-1)$$(c) $$-1 \\le \\cos x \\le 1$$ $$\\text{No real solutions}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "(b) $$q(x) = (2x-1)(6x-1)(c) x = 2 \\text{ or } x = 6$$",
+                                "ans": "(b) $$q(x) = (2x-1)(6x-1)$$(c) $$x = 2 \\text{ or } x = 6$$",
                                 "feedback": "In Part (c), you have stated the roots of the quadratic in $y = \\cos x$. However, the original equation is in terms of $x$. Since $\\cos x = 2$ has no real solutions, $x=2$ is not a valid solution."
                         },
                         {
-                                "ans": "(b) $$q(x) = (2x-1)(6x+1)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$q(x) = (2x-1)(6x+1)$$(c) $$\\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Expanding $(2x-1)(6x+1)$ yields $12x^2 - 4x - 1$, which does not match our quadratic $q(x) = 12x^2 - 8x + 1$."
                         },
                         {
-                                "ans": "(b) $$q(x) = (2x+1)(6x-1)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$q(x) = (2x+1)(6x-1)$$(c) $$\\text{No real solutions}$$",
                                 "feedback": "Check your factor signs in Part (b). Since we proved $(2x-1)$ is a factor in Part (a), having a factor of $(2x+1)$ is mathematically incorrect."
                         }
                 ],
