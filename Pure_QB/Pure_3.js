@@ -1132,34 +1132,34 @@ window.ALEVEL_QUESTIONS = [
                         "Proof"
                 ],
                 "img": false,
-                "question": "Let $p(x) = 24x^3 - 22x^2 - x + 3$.<br><br>(a) Prove that $(3x+1)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:<br>$$\\dfrac{24\\sec^2 x + 3\\cos x}{22} = \\sec x + \\dfrac{1}{22}$$",
+                "question": "Let $p(x) = 24x^3 - 22x^2 - x + 3$.<br><br>(a) Prove that $(3x+1)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:\\begin{aligned} & \\dfrac{24\\sec^2 x + 3\\cos x}{22}\\cr & \\quad \\quad = \\sec x + \\dfrac{1}{22}\\end{aligned}",
                 "steps": [
-                        "For Part (a), apply the Factor Theorem. If $(3x+1)$ is a factor of $p(x)$, then $p\\left(-\\dfrac{1}{3}\\right) = 0$. Evaluate the polynomial at $x = -\\dfrac{1}{3}$:",
-                        "$$p\\left(-\\dfrac{1}{3}\\right) = 24\\left(-\\dfrac{1}{3}\\right)^3 - 22\\left(-\\dfrac{1}{3}\\right)^2 - \\left(-\\dfrac{1}{3}\\right) + 3$$",
-                        "\\begin{aligned}p\\left(-\\dfrac{1}{3}\\right) &= 24\\left(-\\dfrac{1}{27}\\right) - 22\\left(\\dfrac{1}{9}\\right) + \\dfrac{1}{3} + 3 \\cr&= -\\dfrac{8}{9} - \\dfrac{22}{9} + \\dfrac{3}{9} + \\dfrac{27}{9} \\cr&= \\dfrac{0}{9} \\cr&= 0\\end{aligned}",
+                        "For Part (a), apply the Factor Theorem. If $(3x+1)$ is a factor of $p(x)$, then $p\\left(-\\dfrac{1}{3}\\right) = 0$. Evaluate the polynomial at $$x = -\\dfrac{1}{3}$$",
+                        "\\begin{aligned}p\\left(-\\dfrac{1}{3}\\right) &= 24\\left(-\\dfrac{1}{3}\\right)^3 - 22\\left(-\\dfrac{1}{3}\\right)^2\\cr & \\quad - \\left(-\\dfrac{1}{3}\\right) + 3\\end{aligned}",
+                        "\\begin{aligned}p\\left(-\\dfrac{1}{3}\\right) &= 24\\left(-\\dfrac{1}{27}\\right) - 22\\left(\\dfrac{1}{9}\\right) \\cr & \\quad + \\dfrac{1}{3} + 3 \\cr &= -\\dfrac{8}{9} - \\dfrac{22}{9} + \\dfrac{3}{9} + \\dfrac{27}{9} \\cr &= \\dfrac{0}{9} \\cr&= 0\\end{aligned}",
                         "Since $p\\left(-\\dfrac{1}{3}\\right) = 0$, by the Factor Theorem, $(3x+1)$ is indeed a factor of $p(x)$.",
-                        "For Part (b), perform polynomial division to divide $24x^3 - 22x^2 - x + 3$ by $(3x+1)$: $$\\dfrac{24x^3 - 22x^2 - x + 3}{3x+1} = 8x^2 - 10x + 3$$",
+                        "For Part (b), perform polynomial division to divide $$24x^3 - 22x^2 - x + 3$$ by $$(3x+1)$$ \\begin{aligned}\\ & dfrac{24x^3 - 22x^2 - x + 3}{3x+1} \\cr & \\quad \\quad \\quad= 8x^2 - 10x + 3$$",
                         "Factorise the quadratic quotient completely: $$8x^2 - 10x + 3 = (2x-1)(4x-3)$$",
                         "Combine the linear factors to write the complete factorisation of $p(x)$: $$p(x) = (3x+1)(2x-1)(4x-3)$$",
                         "For Part (c), multiply both sides of the equation by $22$ to clear the denominators: $$24\\sec^2 x + 3\\cos x = 22\\sec x + 1$$",
                         "Substitute $y = \\sec x$ into the equation, noting that $\\cos x = \\dfrac{1}{y}$: $$24y^2 + \\dfrac{3}{y} = 22y + 1$$",
-                        "Multiply both sides by $y$ to clear the fraction and rearrange to form a cubic equation: \\begin{aligned}24y^3 + 3 &= 22y^2 + y \\cr24y^3 - 22y^2 - y + 3 &= 0\\end{aligned}",
+                        "Multiply both sides by $y$ to clear the fraction and rearrange to form a cubic equation: \\begin{aligned}24y^3 &+ 3 = 22y^2 + y \\cr 24y^3 &- 22y^2 - y + 3 &= 0\\end{aligned}",
                         "Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: \\begin{aligned}y &= -\\dfrac{1}{3},\\quad y \\cr&= \\dfrac{1}{2},\\quad y \\cr&= \\dfrac{3}{4}\\end{aligned}",
                         "Since $y = \\sec x$, we must have $\\sec x = -\\dfrac{1}{3}$, $\\sec x = \\dfrac{1}{2}$, or $\\sec x = \\dfrac{3}{4}$.",
                         "Recall that the range of the secant function is strictly restricted to $|\\sec x| \\ge 1$. Since all three roots have absolute values strictly less than $1$ ($|-\\frac{1}{3}| < 1$, $|\\frac{1}{2}| < 1$, and $|\\frac{3}{4}| < 1$), there are no real values of $x$ that satisfy these equations.",
-                        "Final Answer: \\begin{aligned}\cr (b)p(x) &= (3x+1)(2x-1)(4x-3)(c) |\\sec x| \\ge 1 \\cr\\text{No real solutions}\\end{aligned}"
+                        "Final Answer: <br>(b) $$p(x) &= (3x+1)(2x-1)(4x-3)$$(c) $$|\\sec x| \\ge 1 $$ $$\\text{No real solutions}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\cr (b)p(x) = (3x+1)(2x-1)(4x-3)(c) x = -\\dfrac{1}{3}$$",
+                                "ans": "(b) $$p(x) = (3x+1)(2x-1)(4x-3)$$(c) $$x = -\\dfrac{1}{3}$$",
                                 "feedback": "In Part (c), you probably solved for the variable $y = \\sec x$ but forgot that we are solving for $x$. Since $\\sec x = -1/3$ has no real solutions (as $|-1/3| < 1$), $x = -1/3$ is not a valid solution for the trigonometric equation."
                         },
                         {
-                                "ans": "$$\cr (b)p(x) = (3x+1)(2x+1)(4x-3)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$p(x) = (3x+1)(2x+1)(4x-3)$$(c)$$ \\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Factoring the quadratic quotient $8x^2 - 10x + 3$ yields $(2x-1)(4x-3)$. Having a factor of $(2x+1)$ is incorrect."
                         },
                         {
-                                "ans": "$$\cr (b)p(x) = 3(3x+1)(2x-1)(4x-3)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$p(x) = 3(3x+1)(2x-1)(4x-3)$$(c)$$ \\text{No real solutions}$$",
                                 "feedback": "In Part (b), you probably introduced an extra factor of $3$ when factoring the quadratic. Since $(3x+1)(2x-1)(4x-3)$ expands to exactly $24x^3 - 22x^2 - x + 3$, no additional scalar multiplier is needed."
                         }
                 ],
@@ -1198,15 +1198,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\cr (b)q(x) = (2x-1)(3x-1)(c) x = 2 \\text{ or } x = 3$$",
+                                "ans": "(b) $$q(x) = (2x-1)(3x-1)(c) x = 2 \\text{ or } x = 3$$",
                                 "feedback": "In Part (c), you have stated the roots of the quadratic in $y$. However, the original equation is in terms of $\\sin x$. Since $\\sin x = 2$ has no real solutions, $x=2$ is not a valid solution."
                         },
                         {
-                                "ans": "$$\cr (b)q(x) = (2x-1)(3x+1)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$q(x) = (2x-1)(3x+1)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Expanding $(2x-1)(3x+1)$ yields $6x^2 - x - 1$, which does not match our quadratic $q(x) = 6x^2 - 5x + 1$."
                         },
                         {
-                                "ans": "$$\cr (b)q(x) = (2x+1)(3x-1)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$q(x) = (2x+1)(3x-1)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your factor signs in Part (b). Since we proved $(2x-1)$ is a factor in Part (a), having a factor of $(2x+1)$ is mathematically incorrect."
                         }
                 ],
@@ -1246,15 +1246,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\cr (b)p(x) = (x+2)(x-3)(2x-3)(c) x = 3$$",
+                                "ans": "(b) $$p(x) = (x+2)(x-3)(2x-3)(c) x = 3$$",
                                 "feedback": "In Part (c), you have stated the roots of the cubic in $y = \\sin x$. However, the original equation is in terms of $x$. Since $\\sin x = 3$ has no real solutions, $x=3$ is not a valid solution."
                         },
                         {
-                                "ans": "$$\cr (b)p(x) = (x+2)(x+3)(2x-3)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$p(x) = (x+2)(x+3)(2x-3)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Factoring the quadratic quotient $2x^2 - 9x + 9$ yields $(x-3)(2x-3)$. Having a factor of $(x+3)$ is incorrect."
                         },
                         {
-                                "ans": "$$\cr (b)p(x) = (x-2)(x-3)(2x-3)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$p(x) = (x-2)(x-3)(2x-3)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your factor signs in Part (b). Since we proved $(x+2)$ is a factor in Part (a), having a factor of $(x-2)$ is mathematically incorrect."
                         }
                 ],
@@ -1294,15 +1294,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\cr (b)p(x) = 2(2x+3)(x-2)(x-4)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$p(x) = 2(2x+3)(x-2)(x-4)(c) \\text{No real solutions}$$",
                                 "feedback": "In Part (b), you probably made a division slip when factoring. Note that $(2x+3)(x-2)(x-4)$ expands directly to our cubic $2x^3 - 9x^2 - 2x + 24$, so no additional scalar multiplier of $2$ is needed."
                         },
                         {
-                                "ans": "$$\cr (b)p(x) = (2x+3)(x-2)(x-4)(c) x = 2 \\text{ or } x = 4$$",
+                                "ans": "(b) $$p(x) = (2x+3)(x-2)(x-4)(c) x = 2 \\text{ or } x = 4$$",
                                 "feedback": "In Part (c), you have stated the roots of the cubic in $y = \\cos x$. However, the original equation is in terms of $x$. Since $\\cos x = 2$ has no real solutions, $x=2$ is not a valid solution."
                         },
                         {
-                                "ans": "$$\cr (b)p(x) = (2x+3)(x+2)(x-4)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$p(x) = (2x+3)(x+2)(x-4)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Factoring the quadratic quotient $x^2 - 6x + 8$ yields $(x-2)(x-4)$. Having a factor of $(x+2)$ is incorrect."
                         }
                 ],
@@ -1341,15 +1341,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\cr (b)q(x) = (2x-1)(6x-1)(c) x = 2 \\text{ or } x = 6$$",
+                                "ans": "(b) $$q(x) = (2x-1)(6x-1)(c) x = 2 \\text{ or } x = 6$$",
                                 "feedback": "In Part (c), you have stated the roots of the quadratic in $y = \\cos x$. However, the original equation is in terms of $x$. Since $\\cos x = 2$ has no real solutions, $x=2$ is not a valid solution."
                         },
                         {
-                                "ans": "$$\cr (b)q(x) = (2x-1)(6x+1)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$q(x) = (2x-1)(6x+1)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your signs in Part (b). Expanding $(2x-1)(6x+1)$ yields $12x^2 - 4x - 1$, which does not match our quadratic $q(x) = 12x^2 - 8x + 1$."
                         },
                         {
-                                "ans": "$$\cr (b)q(x) = (2x+1)(6x-1)(c) \\text{No real solutions}$$",
+                                "ans": "(b) $$q(x) = (2x+1)(6x-1)(c) \\text{No real solutions}$$",
                                 "feedback": "Check your factor signs in Part (b). Since we proved $(2x-1)$ is a factor in Part (a), having a factor of $(2x+1)$ is mathematically incorrect."
                         }
                 ],
