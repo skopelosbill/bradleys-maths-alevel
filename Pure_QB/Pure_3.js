@@ -1228,7 +1228,7 @@ window.ALEVEL_QUESTIONS = [
                         "Proof"
                 ],
                 "img": false,
-                "question": "Let $p(x) = 2x^3 - 5x^2 - 9x + 18$.<br><br>(a) Prove that $(x+2)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:$$2\\sin^2 x + 18\\csc x = 5\\sin x + 9$$",
+                "question": "Let $p(x) = 2x^3 - 5x^2 - 9x + 18$.<br><br>(a) Prove that $(x+2)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:\\begin{aligned}2\\sin^2 x &+ 18\\csc x \\cr & \\quad = 5\\sin x + 9\\end{aligned}",
                 "steps": [
                         "For Part (a), apply the Factor Theorem. If $(x+2)$ is a factor of $p(x)$, then $p(-2) = 0$. Evaluate the polynomial at $$x = -2$$",
                         "\\begin{aligned}p(-2) &= 2(-2)^3 - 5(-2)^2 \\cr & \\quad - 9(-2) + 18\\end{aligned}",
@@ -1276,11 +1276,11 @@ window.ALEVEL_QUESTIONS = [
                         "Proof"
                 ],
                 "img": false,
-                "question": "Let $p(x) = 2x^3 - 9x^2 - 2x + 24$.<br><br>(a) Prove that $(2x+3)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:$$2\\cos^2 x + 24\\sec x = 9\\cos x + 2$$",
+                "question": "Let $p(x) = 2x^3 - 9x^2 - 2x + 24$.<br><br>(a) Prove that $(2x+3)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:\\begin{aligned}2\\cos^2 x &+ 24\\sec x \\cr & \\quad = 9\\cos x + 2\\end{aligned}",
                 "steps": [
                         "For Part (a), apply the Factor Theorem. If $(2x+3)$ is a factor of $p(x)$, then $p\\left(-\\dfrac{3}{2}\\right) = 0$. Evaluate the polynomial at $$x = -\\dfrac{3}{2}$$",
                         "\\begin{aligned}p\\left(-\\dfrac{3}{2}\\right) &= 2\\left(-\\dfrac{3}{2}\\right)^3 - 9\\left(-\\dfrac{3}{2}\\right)^2 \\cr & \\quad - 2\\left(-\\dfrac{3}{2}\\right) + 24\\end{aligned}",
-                        "\\begin{aligned}p\\left(-\\dfrac{3}{2}\\right) &= 2\\left(-\\dfrac{27}{8}\\right) - 9\\left(\\dfrac{9}{4}\\right) + 3 + 24 \\cr &= -\\dfrac{27}{4} - \\dfrac{81}{4} + 27 \\cr &= -\\dfrac{108}{4} + 27 \\cr &= -27 + 27 \\cr &= 0\\end{aligned}",
+                        "\\begin{aligned}p\\left(-\\dfrac{3}{2}\\right) &= 2\\left(-\\dfrac{27}{8}\\right) - 9\\left(\\dfrac{9}{4}\\right) \\cr & \\quad + 3 + 24 \\cr &= -\\dfrac{27}{4} - \\dfrac{81}{4} + 27 \\cr &= -\\dfrac{108}{4} + 27 \\cr &= -27 + 27 \\cr &= 0\\end{aligned}",
                         "Since $p\\left(-\\dfrac{3}{2}\\right) = 0$, by the Factor Theorem, $(2x+3)$ is indeed a factor of $p(x)$.",
                         "For Part (b), perform polynomial division to divide $$2x^3 - 9x^2 - 2x + 24$$ by $$(2x+3)$$<br> \\begin{aligned} & \\dfrac{2x^3 - 9x^2 - 2x + 24}{2x+3} \\cr & \\quad \\quad \\quad= x^2 - 6x + 8\\end{aligned}",
                         "Factorise the quadratic quotient completely: $$x^2 - 6x + 8 = (x-2)(x-4)$$",
