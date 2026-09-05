@@ -1138,7 +1138,7 @@ window.ALEVEL_QUESTIONS = [
                         "\\begin{aligned}p\\left(-\\dfrac{1}{3}\\right) &= 24\\left(-\\dfrac{1}{3}\\right)^3 - 22\\left(-\\dfrac{1}{3}\\right)^2\\cr & \\quad - \\left(-\\dfrac{1}{3}\\right) + 3\\end{aligned}",
                         "\\begin{aligned}p\\left(-\\dfrac{1}{3}\\right) &= 24\\left(-\\dfrac{1}{27}\\right) - 22\\left(\\dfrac{1}{9}\\right) \\cr & \\quad + \\dfrac{1}{3} + 3 \\cr &= -\\dfrac{8}{9} - \\dfrac{22}{9} + \\dfrac{3}{9} + \\dfrac{27}{9} \\cr &= \\dfrac{0}{9} \\cr&= 0\\end{aligned}",
                         "Since $p\\left(-\\dfrac{1}{3}\\right) = 0$, by the Factor Theorem, $(3x+1)$ is indeed a factor of $p(x)$.",
-                        "For Part (b), perform polynomial division to divide $$24x^3 - 22x^2 - x + 3$$ by $$(3x+1)$$ \\begin{aligned} & \\dfrac{24x^3 - 22x^2 - x + 3}{3x+1} \\cr & \\quad \\quad \\quad= 8x^2 - 10x + 3\\end{aligned}",
+                        "For Part (b), perform polynomial division to divide $$24x^3 - 22x^2 - x + 3$$ by $$(3x+1)$$<br> \\begin{aligned} & \\dfrac{24x^3 - 22x^2 - x + 3}{3x+1} \\cr & \\quad \\quad \\quad= 8x^2 - 10x + 3\\end{aligned}",
                         "Factorise the quadratic quotient completely: $$8x^2 - 10x + 3 = (2x-1)(4x-3)$$",
                         "Combine the linear factors to write the complete factorisation of $p(x)$: $$p(x) = (3x+1)(2x-1)(4x-3)$$",
                         "For Part (c), multiply both sides of the equation by $22$ to clear the denominators: $$24\\sec^2 x + 3\\cos x = 22\\sec x + 1$$",
