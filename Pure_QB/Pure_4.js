@@ -97,20 +97,20 @@ window.ALEVEL_QUESTIONS = [
                         "Evaluate $f(x) = \\dfrac{1}{x}$ at each point:<br>\\begin{aligned}y_0 &= f(1) \\cr&= 1\\end{aligned}<br>\\begin{aligned}y_1 &= f(2) \\cr&= 0.5\\end{aligned}<br>$$y_2 = f(3) \\approx 0.3333$$<br>\\begin{aligned}y_3 &= f(4) \\cr&= 0.25\\end{aligned}<br>\\begin{aligned}y_4 &= f(5) \\cr&= 0.2\\end{aligned}",
                         "Apply the trapezium rule formula to estimate the value of the integral:\\begin{aligned} & \\text{Estimate} \\cr & \\quad = \\dfrac{h}{2} [ y_0 + y_4 + 2(y_1 + y_2 + y_3) ] \\cr & \\quad = \\dfrac{1}{2} \\times \\cr & \\quad [ 1 + 0.2 \\cr & \\quad \\quad + 2(0.5 + 0.3333 \\cr & \\quad \\quad \\quad + 0.25) ] \\cr & \\quad = 0.5 [ 1.2 + 2(1.0833) ] \\cr & \\quad = 0.5 [ 1.2 + 2.1667 ] \\cr & \\quad = 0.5 [ 3.3667 ] \\cr & \\quad \\approx 1.6834\\end{aligned}<br><br>Rounding to 3 significant figures gives $1.68$.",
                         "Integrate analytically to find the exact value:\\begin{aligned}\\int_1^5 \\dfrac{1}{x} \\text{d}x &= [ \\ln x ]_1^5 \\cr &= \\ln 5 - \\ln 1 \\cr &= \\ln 5 \\approx 1.6094\\end{aligned}",
-                        "Calculate the percentage error using the formula:\\begin{aligned}&\\text{Percentage Error} \\cr & \\quad = \\dfrac{|\\text{Estimate} - \\text{Exact}|}{\\text{Exact}} \\times 100\\\\%\\end{aligned}<br><br>Substituting the values gives:<br>\\begin{aligned}&\\text{Percentage Error} \\cr & \\quad = \\dfrac{|1.6834 - 1.6094|}{1.6094} \\times 100\\\\% \\cr & \\quad = \\dfrac{0.0740}{1.6094} \\times 100\\\\% \\cr & \\quad \\approx 4.598\\\\%\\end{aligned}<br><br>Rounding to 3 significant figures gives $4.60\\\\%$.",
-                        "Final Answer:<br>$$1.68, \\quad \\ln 5, \\quad 4.60\\\\%$$"
+                        "Calculate the percentage error:<br>\\begin{aligned}&\\text{Percentage Error} \\cr & \\quad = \\dfrac{|1.6834 - 1.6094|}{1.6094} \\times 100\\% \\cr & \\quad = \\dfrac{0.0740}{1.6094} \\times 100\\% \\cr & \\quad \\approx 4.598\\%\\end{aligned}<br><br>Rounding to 3 significant figures gives $4.60\\%$.",
+                        "Final Answer:<br>$$1.68, \\quad \\ln 5, \\quad 4.60\\%$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "1.68, \\quad 1.61, \\quad 4.17 %",
+                                "ans": "$$1.68, \\quad 1.61, \\quad 4.17\\%$$",
                                 "feedback": "Check your percentage error calculation. You must use the unrounded values for the intermediate steps of the error formula, otherwise you introduce rounding discrepancies in your final percentage."
                         },
                         {
-                                "ans": "$$1.68, \\quad \\ln 5, \\quad 4.35\\\\%$$",
+                                "ans": "$$1.68, \\quad \\ln 5, \\quad 4.35\\%$$",
                                 "feedback": "It looks like you divided by the estimated value in the denominator of your percentage error formula. Remember that the base of the percentage error is always the exact (true) value, which is $\\ln 5$."
                         },
                         {
-                                "ans": "$$0.842, \\quad \\ln 5, \\quad 47.7\\\\%$$",
+                                "ans": "$$0.842, \\quad \\ln 5, \\quad 47.7\\%$$",
                                 "feedback": "You may have forgotten the factor of $2$ on the middle terms when calculating your trapezium estimate, leading to a much lower approximation and a huge percentage error."
                         }
                 ],
@@ -1153,14 +1153,14 @@ window.ALEVEL_QUESTIONS = [
                         "Sequences and Series"
                 ],
                 "img": false,
-                "question": "An investor deposits £2000 into a savings account on the first day of each year. The account pays a compound interest rate of $4\\\\%$ per annum, paid on the last day of each year.<br><br>1. Show that the total value of the investment, in pounds, on the last day of the third year (after interest has been added) is $2000(1.04) + 2000(1.04)^2 + 2000(1.04)^3$.<br>2. Use this model to find the total value of the investment immediately after interest is added at the end of the $10\\text{th}$ year, giving your answer to the nearest pound.<br>3. State one assumption made by this model that might not be realistic in the long term.",
+                "question": "An investor deposits £2000 into a savings account on the first day of each year. The account pays a compound interest rate of $4\\%$ per annum, paid on the last day of each year.<br><br>1. Show that the total value of the investment, in pounds, on the last day of the third year (after interest has been added) is $2000(1.04) + 2000(1.04)^2 + 2000(1.04)^3$.<br>2. Use this model to find the total value of the investment immediately after interest is added at the end of the $10\\text{th}$ year, giving your answer to the nearest pound.<br>3. State one assumption made by this model that might not be realistic in the long term.",
                 "steps": [
                         "Trace each deposit to the end of the third year:<br>The first £2000 deposit has been in the account for $3$ full years and has earned compound interest $3$ times, so its value is $2000\\left(1.04\\right)^3$.<br>The second £2000 deposit has been in the account for $2$ full years, so its value is $2000\\left(1.04\\right)^2$.<br>The third £2000 deposit has been in the account for $1$ full year, so its value is $2000\\left(1.04\\right)^1$.",
                         "Summing these three components gives the total value of the investment on the last day of the third year:<br>$$\\text{Total} = 2000\\left(1.04\\right) + 2000\\left(1.04\\right)^2 + 2000\\left(1.04\\right)^3$$",
                         "This series is a geometric progression where:<br>The first term $a = 2000\\left(1.04\\right) = 2080$<br>The common ratio $r = 1.04$<br>The number of terms $n = 10$",
                         "To find the value of the investment at the end of $10$ years, apply the geometric series sum formula $S_n = \\dfrac{a\\left(r^n - 1\\right)}{r - 1}$:<br>\\begin{aligned}S_{10} &= \\dfrac{2080\\left(1.04^{10} - 1\\right)}{1.04 - 1} \\cr&= \\dfrac{2080\\left(1.04^{10} - 1\\right)}{0.04}\\end{aligned}",
                         "Calculate using high-precision intermediate steps to avoid rounding errors:<br>$$1.04^{10} \\approx 1.480244$$<br>\\begin{aligned}S_{10} &= \\dfrac{2080\\left(0.480244\\right)}{0.04} \\cr&= 52000 \\times 0.480244 \\cr&= 24972.70\\end{aligned}<br>Rounding to the nearest pound, the total value is £24,973.",
-                        "One key assumption made by this model is that the interest rate remains constant at $4\\\\%$ for the entire $10$ years. In reality, savings rates are variable and subject to economic fluctuations. Alternatively, the model assumes the investor never misses a payment and consistently deposits exactly £2000 every single year.",
+                        "One key assumption made by this model is that the interest rate remains constant at $4\\%$ for the entire $10$ years. In reality, savings rates are variable and subject to economic fluctuations. Alternatively, the model assumes the investor never misses a payment and consistently deposits exactly £2000 every single year.",
                 "Final Answer: $$£24,973, \\quad \\text{constant interest rate and fixed annual deposits}$$"
                 ],
                 "pi_options": [
@@ -1238,9 +1238,9 @@ window.ALEVEL_QUESTIONS = [
                         "Sequences and Series"
                 ],
                 "img": false,
-                "question": "A company buys a piece of machinery for £50,000. At the end of each year, the value of the machinery depreciates by $15\\\\%$ of its value at the start of that year.<br><br>1. Show that the value of the machinery at the end of the fourth year is £26,100 to the nearest pound.<br>2. Find the total depreciation of the machinery over the first 8 years, giving your answer to the nearest pound.",
+                "question": "A company buys a piece of machinery for £50,000. At the end of each year, the value of the machinery depreciates by $15\\%$ of its value at the start of that year.<br><br>1. Show that the value of the machinery at the end of the fourth year is £26,100 to the nearest pound.<br>2. Find the total depreciation of the machinery over the first 8 years, giving your answer to the nearest pound.",
                 "steps": [
-                        "The initial value of the machinery is $V_0 = 50000$. Since it depreciates by $15\\\\%$ each year, its value is multiplied by a factor of $(1 - 0.15) = 0.85$ at the end of each year.",
+                        "The initial value of the machinery is $V_0 = 50000$. Since it depreciates by $15\\%$ each year, its value is multiplied by a factor of $(1 - 0.15) = 0.85$ at the end of each year.",
                         "Write the formula for the value of the machinery at the end of year $n$, $V_n = V_0 \\left(0.85\\right)^n$:<br>$$V_n = 50000\\left(0.85\\right)^n$$",
                         "To find the value at the end of the fourth year, calculate $V_4$:<br>$$V_4 = 50000\\left(0.85\\right)^4$$<br>\\begin{aligned}V_4 &= 50000\\left(0.522006\\right) \\cr&= 26100.31\\end{aligned}<br>Rounding to the nearest pound, the value is £26,100.",
                         "To find the total depreciation over the first $8$ years, calculate the remaining value of the machinery at the end of the eighth year, $V_8$:<br>$$V_8 = 50000\\left(0.85\\right)^8$$<br>\\begin{aligned}V_8 &= 50000\\left(0.272490\\right) \\cr&= 13624.52\\end{aligned}",
@@ -2030,9 +2030,9 @@ window.ALEVEL_QUESTIONS = [
                         "Modelling and Applications"
                 ],
                 "img": false,
-                "question": "The concentration of a drug in a patient's bloodstream, $C\\text{ mg/L}$, at time $t$ hours after injection is modelled by the equation $C = 50e^{-0.25t}$ for $t \\ge 0$.<br><br>1. Find the time at which the concentration has decreased to $10\\\\%$ of its initial value, giving your answer correct to 3 significant figures.<br>2. Differentiate the equation to find the rate of change of concentration, $\\dfrac{\\text{d}C}{\\text{d}t}$, and calculate the magnitude of this rate when $t = 4$ hours, giving your answer correct to 3 significant figures.",
+                "question": "The concentration of a drug in a patient's bloodstream, $C\\text{ mg/L}$, at time $t$ hours after injection is modelled by the equation $C = 50e^{-0.25t}$ for $t \\ge 0$.<br><br>1. Find the time at which the concentration has decreased to $10\\%$ of its initial value, giving your answer correct to 3 significant figures.<br>2. Differentiate the equation to find the rate of change of concentration, $\\dfrac{\\text{d}C}{\\text{d}t}$, and calculate the magnitude of this rate when $t = 4$ hours, giving your answer correct to 3 significant figures.",
                 "steps": [
-                        "First, determine the initial concentration: at $t = 0$, $C = 50e^0 = 50\\text{ mg/L}$. A concentration that is $10\\\\%$ of this value is $5\\text{ mg/L}$.",
+                        "First, determine the initial concentration: at $t = 0$, $C = 50e^0 = 50\\text{ mg/L}$. A concentration that is $10\\%$ of this value is $5\\text{ mg/L}$.",
                         "Set $C = 5$ and solve for $t$ using natural logarithms:<br>\\begin{aligned}5 &= 50e^{-0.25t} \\cre^{-0.25t} &= 0.1\\end{aligned}<br>\\begin{aligned}-0.25t &= \\ln\\left(0.1\\right) \\cr&= -\\ln\\left(10\\right)\\end{aligned}\\begin{aligned}t &= \\dfrac{\\ln\\left(10\\right)}{0.25} \\cr&= 4\\ln\\left(10\\right) \\approx 9.2103 \\text{ hours}\\end{aligned}<br>Rounding to 3 significant figures gives $9.21$ hours.",
                         "To find the rate of change of concentration, differentiate $C$ with respect to $t$ using the chain rule:<br>\\begin{aligned}\\dfrac{\\text{d}C}{\\text{d}t} &= 50\\left(-0.25\\right)e^{-0.25t} \\cr&= -12.5e^{-0.25t}\\end{aligned}",
                         "Evaluate this derivative at the instant when $t = 4$ hours:<br>\\begin{aligned}\\dfrac{\\text{d}C}{\\text{d}t} &= -12.5e^{-0.25\\left(4\\right)} \\cr&= -12.5e^{-1}\\end{aligned}<br>$$\\dfrac{\\text{d}C}{\\text{d}t} \\approx -12.5\\left(0.367879\\right) \\approx -4.5985\\text{ mg/L per hour}$$",
@@ -2046,7 +2046,7 @@ window.ALEVEL_QUESTIONS = [
                         },
                         {
                                 "ans": "$$4.00 \\text{ hours}, \\quad 4.60\\text{ mg/L per hour}$$",
-                                "feedback": "Check your percentage calculation. It looks like you solved for when the concentration falls by $10\\\\%$ (leaving $90\\\\%$ remaining), instead of when it has decreased to $10\\\\%$ of its initial value."
+                                "feedback": "Check your percentage calculation. It looks like you solved for when the concentration falls by $10\\%$ (leaving $90\\%$ remaining), instead of when it has decreased to $10\\%$ of its initial value."
                         },
                         {
                                 "ans": "$$9.21 \\text{ hours}, \\quad 1.15\\text{ mg/L per hour}$$",
