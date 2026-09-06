@@ -1676,8 +1676,8 @@ window.ALEVEL_QUESTIONS = [
                         "The identity used to transition from Line 2 to Line 3 is $\\sin^2\\theta + \\cos^2\\theta = 1$ (known as the Pythagorean identity), rearranged to $1 - \\cos^2\\theta = \\sin^2\\theta$.",
                         "For $\\theta = 90^\\circ$ and $\\theta = 270^\\circ$, we have $\\cos\\theta = 0$. This makes both the fraction $\\dfrac{1}{\\cos\\theta}$ and the tangent function $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$ undefined due to division by zero. Thus, the algebraic steps in this proof are invalid at these specific angles.",
                         "To solve the equation $\\dfrac{1}{\\cos\\theta} - \\cos\\theta = 3\\sin\\theta$, we substitute our simplified identity for the left-hand side:<br>$$\\dfrac{\\sin^2\\theta}{\\cos\\theta} = 3\\sin\\theta$$",
-                        "We must consider two cases to solve this equation without losing solutions by dividing by zero:<br><br>**Case 1:** $\\sin\\theta = 0$<br><br>Within the domain $0^\\circ \\le \\theta \\le 180^\\circ$, this yields:<br>\\begin{aligned}\\theta &= 0^\\circ \\cr \\theta &= 180^\\circ\\end{aligned}<br><br>Both of these are valid solutions because $\\cos(0^\\circ) = 1 \\ne 0$ and $\\cos(180^\\circ) = -1 \\ne 0$.",
-                        "**Case 2:** $\\sin\\theta \\ne 0$<br><br>Since $\\sin\\theta \\ne 0$, we can safely divide both sides of the equation by $\\sin\\theta$:<br>\\begin{aligned}\\dfrac{\\sin\\theta}{\\cos\\theta} &= 3 \\cr \\tan\\theta &= 3\\end{aligned}",
+                        "We must consider two cases to solve this equation without losing solutions by dividing by zero:<br><br>Case 1: $\\sin\\theta = 0$<br><br>Within the domain $0^\\circ \\le \\theta \\le 180^\\circ$, this yields:<br>\\begin{aligned}\\theta &= 0^\\circ \\cr \\theta &= 180^\\circ\\end{aligned}<br><br>Both of these are valid solutions because $\\cos(0^\\circ) = 1 \\ne 0$ and $\\cos(180^\\circ) = -1 \\ne 0$.",
+                        "Case 2: $\\sin\\theta \\ne 0$<br><br>Since $\\sin\\theta \\ne 0$, we can safely divide both sides of the equation by $\\sin\\theta$:<br>\\begin{aligned}\\dfrac{\\sin\\theta}{\\cos\\theta} &= 3 \\cr \\tan\\theta &= 3\\end{aligned}",
                         "Find the principal value within the range $0^\\circ \\le \\theta \\le 180^\\circ$ using a calculator:<br>$$\\theta = \\tan^{-1}(3) \\approx 71.6^\\circ$$<br><br>Combining both cases, our complete set of solutions is:<br>\\begin{aligned}\\theta &= 0^\\circ \\cr \\theta &\\approx 71.6^\\circ \\cr \\theta &= 180^\\circ\\end{aligned}",
                         "Final Answer:<br>$$\\theta = 0^\\circ, \\quad 71.6^\\circ, \\quad 180^\\circ$$"
                 ],
@@ -1715,7 +1715,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "A student is trying to prove the triple-angle identity:<br>$$\\cos(3\\theta) = 4\\cos^3\\theta - 3\\cos\\theta$$<br>The student begins by writing $3\\theta$ as $(2\\theta + \\theta)$.<br><br>1. Use the compound angle formula for cosine to express $\\cos(3\\theta)$ in terms of $\\cos(2\\theta)$, $\\sin(2\\theta)$, $\\cos\\theta$, and $\\sin\\theta$.<br>2. By substituting the double-angle formulas for $\\cos(2\\theta)$ and $\\sin(2\\theta)$, complete the proof to show that $\\cos(3\\theta) = 4\\cos^3\\theta - 3\\cos\\theta$.<br><br>3. Explain why this algebraic proof is valid for all real values of $\\theta$, unlike geometric proofs that rely on right-angled triangles.",
                 "steps": [
-                        "Using the compound angle formula $\\cos(A+B) = \\cos A \\cos B - \\sin A \\sin B$ with $A = 2\\theta$ and $B = \\theta$, we expand $\\cos(3\\theta)$ as:<br>\\begin{aligned}&\\cos(3\\theta) \\cr & \\quad = \\cos(2\\theta + \\theta) \\cr & \\quad = \\cos(2\\theta)\\cos\\theta - \\sin(2\\theta)\\sin\\theta\\end{aligned}",
+                        "Using the compound angle formula \\begin{aligned} & \\cos(A+B) \\cr & \\quad= \\cos A \\cos B - \\sin A \\sin B\\end{aligned} with $A = 2\\theta$ and $B = \\theta$, we expand $\\cos(3\\theta)$ as:<br>\\begin{aligned}&\\cos(3\\theta) \\cr & \\quad = \\cos(2\\theta + \\theta) \\cr & \\quad = \\cos(2\\theta)\\cos\\theta - \\sin(2\\theta)\\sin\\theta\\end{aligned}",
                         "To express the entire formula in terms of $\\cos\\theta$, we substitute the relevant double-angle formulas:<br>$$\\cos(2\\theta) = 2\\cos^2\\theta - 1$$<br>$$\\sin(2\\theta) = 2\\sin\\theta\\cos\\theta$$<br>Substituting these in gives:<br>\\begin{aligned}&\\cos(3\\theta) \\cr & \\quad = (2\\cos^2\\theta - 1)\\cos\\theta \\cr & \\quad \\quad - (2\\sin\\theta\\cos\\theta)\\sin\\theta\\end{aligned}",
                         "Expand the terms in our expression:<br>\\begin{aligned}&\\cos(3\\theta) \\cr & \\quad = 2\\cos^3\\theta - \\cos\\theta \\cr & \\quad \\quad - 2\\sin^2\\theta\\cos\\theta\\end{aligned}",
                         "Use the Pythagorean identity $\\sin^2\\theta = 1 - \\cos^2\\theta$ to replace the sine term:<br>\\begin{aligned}&\\cos(3\\theta) \\cr & \\quad = 2\\cos^3\\theta - \\cos\\theta \\cr & \\quad \\quad - 2(1 - \\cos^2\\theta)\\cos\\theta \\cr & \\quad = 2\\cos^3\\theta - \\cos\\theta \\cr & \\quad \\quad - 2\\cos\\theta + 2\\cos^3\\theta\\end{aligned}",
@@ -1755,9 +1755,9 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "A student is investigating the formula for $\\sin(A-B)$.<br><br>1. Assuming the compound angle identity $\\sin(A+B) = \\sin A \\cos B + \\cos A \\sin B$ is valid for all real angles, prove that:<br>$$\\sin(A-B) = \\sin A \\cos B - \\cos A \\sin B$$<br>State clearly any properties of even and odd trigonometric functions used in your proof.<br>2. By choosing suitable values for $A$ and $B$, use this identity to show that:<br>$$\\sin(15^\\circ) = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$$<br>3. A second student claims that since $\\sin(15^\\circ) > 0$, then $\\sin(-15^\\circ)$ must also be positive. Explain why this claim is incorrect, referencing the symmetry of the sine function.",
+                "question": "A student is investigating the formula for $\\sin(A-B)$.<br><br>1. Assuming the compound angle identity \\begin{aligned} & \\sin(A+B) \\cr & \\quad = \\sin A \\cos B + \\cos A \\sin B\\end{aligned} is valid for all real angles, prove that:\\begin{aligned} & \\sin(A-B) \\cr & \\quad= \\sin A \\cos B - \\cos A \\sin B\\end{aligned}State clearly any properties of even and odd trigonometric functions used in your proof.<br>2. By choosing suitable values for $A$ and $B$, use this identity to show that:<br>$$\\sin(15^\\circ) = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$$<br>3. A second student claims that since $\\sin(15^\\circ) > 0$, then $\\sin(-15^\\circ)$ must also be positive. Explain why this claim is incorrect, referencing the symmetry of the sine function.",
                 "steps": [
-                        "To prove the identity for $\\sin(A-B)$, we substitute $-B$ into our identity for $\\sin(A+B)$:<br>\\begin{aligned}&\\sin(A + (-B)) \\cr & \\quad = \\sin A \\cos(-B) + \\cos A \\sin(-B)\\end{aligned}",
+                        "To prove the identity for $\\sin(A-B)$, we substitute $-B$ into our identity for  $\\sin(A+B)$:<br>\\begin{aligned}&\\sin(A + (-B)) \\cr & \\quad = \\sin A \\cos(-B) + \\cos A \\sin(-B)\\end{aligned}",
                         "We apply the symmetry properties of sine and cosine:<br>Cosine is an even function, so $\\cos(-B) = \\cos B$.<br>Sine is an odd function, so $\\sin(-B) = -\\sin B$.<br><br>Substituting these yields:<br>\\begin{aligned}&\\sin(A-B) \\cr & \\quad = \\sin A (\\cos B) + \\cos A (-\\sin B) \\cr & \\quad = \\sin A \\cos B - \\cos A \\sin B\\end{aligned}",
                         "To evaluate $\\sin(15^\\circ)$, we choose $A = 45^\\circ$ and $B = 30^\\circ$ because we know their exact trigonometric values:<br>\\begin{aligned}&\\sin(15^\\circ) \\cr & \\quad = \\sin(45^\\circ - 30^\\circ) \\cr & \\quad = \\sin(45^\\circ)\\cos(30^\\circ) \\cr & \\quad \\quad - \\cos(45^\\circ)\\sin(30^\\circ)\\end{aligned}",
                         "Substitute the exact values into the formula:<br>\\begin{aligned}\\sin(45^\\circ) &= \\dfrac{\\sqrt{2}}{2} \\cr \\cos(45^\\circ) &= \\dfrac{\\sqrt{2}}{2} \\cr \\cos(30^\\circ) &= \\dfrac{\\sqrt{3}}{2} \\cr \\sin(30^\\circ) &= \\dfrac{1}{2}\\end{aligned}<br><br>\\begin{aligned}&\\sin(15^\\circ) \\cr & \\quad = \\left(\\dfrac{\\sqrt{2}}{2}\\right)\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr & \\quad \\quad - \\left(\\dfrac{\\sqrt{2}}{2}\\right)\\left(\\dfrac{1}{2}\\right)\\end{aligned}",
@@ -1804,19 +1804,19 @@ window.ALEVEL_QUESTIONS = [
                         "Calculate the gradient of the chord $AB$ using the gradient formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>$$m_{AB} = \\dfrac{(h^3 - 9h^2 + 54) - 54}{(-3 + h) - (-3)}$$<br>$$m_{AB} = \\dfrac{h^3 - 9h^2}{h}$$<br>Dividing each term in the numerator by $h$ (where $h \\ne 0$) gives the required gradient:<br>$$m_{AB} = h^2 - 9h$$",
                         "To show that $A$ is a stationary point, we consider the limit of the chord gradient $m_{AB}$ as $h \\to 0$. As $h$ approaches $0$, the chord $AB$ becomes the tangent to the curve at point $A$:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\lim_{h \\to 0} (h^2 - 9h) \\cr&= 0^2 - 9(0) \\cr&= 0\\end{aligned}",
                         "Since the derivative (gradient of the tangent) at $x = -3$ is $0$, the tangent line is completely horizontal. Therefore, point $A$ is a stationary point on the curve.",
-                "Final Answer: $$h^2 - 9h, \\quad \\lim_{h \\to 0} (h^2 - 9h) = 0$$"
+                "Final Answer: $$h^2 - 9h$$ $$\\lim_{h \\to 0} (h^2 - 9h) = 0$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$h^2 - 27h, \\quad \\lim_{h \\to 0} (h^2 - 27h) = 0$$",
+                                "ans": "$$h^2 - 27h$$ $$\\lim_{h \\to 0} (h^2 - 27h) = 0$$",
                                 "feedback": "This is probably because you made an error while expanding the cubic term $(-3+h)^3$. Remember that the expansion is $h^3 - 9h^2 + 27h - 27$. Double-check that your linear $h$ terms cancel out with the linear term from $-27(-3+h)$."
                         },
                         {
-                                "ans": "$$h^3 - 9h^2, \\quad \\lim_{h \\to 0} (h^3 - 9h^2) = 0$$",
+                                "ans": "$$h^3 - 9h^2$$ $$\\lim_{h \\to 0} (h^3 - 9h^2) = 0$$",
                                 "feedback": "You may have forgotten to divide the numerator $y_B - y_A$ by the denominator $x_B - x_A = h$. Always ensure you apply the full gradient formula."
                         },
                         {
-                                "ans": "$$h^2 - 9h, \\quad \\lim_{h \\to 0} (h^2 - 9h) = -9$$",
+                                "ans": "$$h^2 - 9h$$ $$\\lim_{h \\to 0} (h^2 - 9h) = -9$$",
                                 "feedback": "Your gradient expression is correct, but your limit evaluation as $h \\to 0$ has a slip. Substituting $h=0$ into $h^2 - 9h$ yields $0$, not $-9$."
                         }
                 ],
@@ -2049,7 +2049,7 @@ window.ALEVEL_QUESTIONS = [
                 "question": "The line $L_1$ passes through the points $P(-1, 4)$ and $Q(3, 12)$. The line $L_2$ is perpendicular to $L_1$ and intersects the $y$-axis at $(0, 5)$.<br><br>Find the coordinates of the point of intersection of the lines $L_1$ and $L_2$.",
                 "steps": [
                         "Find the gradient of line $L_1$ using the coordinates of $P$ and $Q$:<br>\\begin{aligned}m_{L_1} &= \\dfrac{12 - 4}{3 - (-1)} \\cr&= \\dfrac{8}{4} \\cr&= 2\\end{aligned}",
-                        "Find the equation of line $L_1$ using the point-slope form with $P(-1, 4)$:<br>\\begin{aligned}y - 4 &= 2(x + 1) \\cry &= 2x + 6\\end{aligned}",
+                        "Find the equation of line $L_1$ using the point-slope form with $P(-1, 4)$:<br>\\begin{aligned}y - 4 &= 2(x + 1) \\cr y &= 2x + 6\\end{aligned}",
                         "Since $L_2$ is perpendicular to $L_1$, its gradient is the negative reciprocal of $2$:<br>$$m_{L_2} = -\\dfrac{1}{2}$$",
                         "Since $L_2$ intersects the $y$-axis at $(0, 5)$, its $y$-intercept is $5$. Write its equation in slope-intercept form $y = mx + c$:<br>$$y = -\\dfrac{1}{2}x + 5$$",
                         "To find the intersection point, set the two linear equations equal to each other:<br>$$2x + 6 = -\\dfrac{1}{2}x + 5$$<br>Multiply the entire equation by $2$ to clear the fraction:<br>$$4x + 12 = -x + 10$$",
@@ -2131,7 +2131,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "The straight line $L$ passes through the point $M(4, -1)$ and has a gradient of $-\\dfrac{2}{3}$. A second line, $K$, passes through the origin $O(0,0)$ and is perpendicular to $L$.<br><br>Find the shortest distance from the origin $O$ to the line $L$.",
                 "steps": [
-                        "Find the equation of line $L$ using the point $M(4, -1)$ and gradient $-\\dfrac{2}{3}$:<br>\\begin{aligned}y - (-1) &= -\\dfrac{2}{3}(x - 4) \\cry + 1 &= -\\dfrac{2}{3}x + \\dfrac{8}{3}\\end{aligned}",
+                        "Find the equation of line $L$ using the point $M(4, -1)$ and gradient $-\\dfrac{2}{3}$:<br>\\begin{aligned}y - (-1) &= -\\dfrac{2}{3}(x - 4) \\cr y + 1 &= -\\dfrac{2}{3}x + \\dfrac{8}{3}\\end{aligned}",
                         "Multiply the entire equation by $3$ to eliminate the fraction:<br>\\begin{aligned}3y + 3 &= -2x + 8 \\cr2x + 3y - 5 &= 0\\end{aligned}",
                         "The shortest distance from a point $(x_1, y_1)$ to a line $Ax + By + C = 0$ is given by the formula:<br>$$d = \\dfrac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}$$",
                         "Substitute the coordinates of the origin $(0, 0)$ and the coefficients of line $L$ ($A=2, B=3, C=-5$) into the distance formula:<br>$$d = \\dfrac{|2(0) + 3(0) - 5|}{\\sqrt{2^2 + 3^2}}$$",
