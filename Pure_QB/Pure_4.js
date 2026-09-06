@@ -47,18 +47,17 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Numerical Methods",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                        "Numerical Methods",
-                        "Trigonometry"
+                        "Trigonometric Functions and Graphs",
+                        "Trapezium Rule"
                 ],
                 "img": false,
                 "question": "1. Use the trapezium rule, with four strips each of width $\\dfrac{\\pi}{8}$ radians, to estimate the value of:<br>$$\\int_0^{\\frac{\\pi}{2}} \\sin x \\text{d}x$$<br>giving your answer correct to 3 significant figures.<br><br>2. By considering the geometric shape of the curve $y = \\sin x$ on the interval $\\left[0, \\, \\dfrac{\\pi}{2}\\right]$, explain whether your estimate is an underestimate or an overestimate.",
                 "steps": [
                         "For four strips of width $h = \\dfrac{\\pi}{8}$ on the interval $\\left[0, \\, \\dfrac{\\pi}{2}\\right]$, the coordinate points are $x_0 = 0$, $x_1 = \\dfrac{\\pi}{8}$, $x_2 = \\dfrac{\\pi}{4}$, $x_3 = \\dfrac{3\\pi}{8}$, and $x_4 = \\dfrac{\\pi}{2}$.",
-                        "Evaluate the function $f(x) = \\sin x$ at each of these coordinate points, keeping high precision:<br>\\begin{aligned}y_0 &= \\sin(0) \\cr&= 0\\end{aligned}<br>$$y_1 = \\sin\\left(\\dfrac{\\pi}{8}\\right) \\approx 0.3827$$<br>$$y_2 = \\sin\\left(\\dfrac{\\pi}{4}\\right) \\approx 0.7071$$<br>$$y_3 = \\sin\\left(\\dfrac{\\pi}{3}\\right) \\approx 0.9239$$<br>\\begin{aligned}y_4 &= \\sin\\left(\\dfrac{\\pi}{2}\\right) \\cr&= 1\\end{aligned}",
-                        "Apply the trapezium rule formula:<br>$$\\text{Estimate} = \\dfrac{h}{2} \\left[ y_0 + y_4 + 2(y_1 + y_2 + y_3) \\right]$$<br>$$\\text{Estimate} = \\dfrac{\\pi}{16} \\left[ 0 + 1 + 2(0.3827 + 0.7071 + 0.9239) \\right]$$",
-                        "Perform the arithmetic steps:<br>$$\\text{Estimate} = \\dfrac{\\pi}{16} \\left[ 1 + 2(2.0137) \\right]$$<br>\\begin{aligned}\\text{Estimate} &= \\dfrac{\\pi}{16} \\left[ 1 + 4.0274 \\right] \\cr&= \\dfrac{\\pi}{16} \\left[ 5.0274 \\right] \\approx 0.9871\\end{aligned}<br>Rounding to 3 significant figures gives $0.987$.",
+                        "Evaluate the function $f(x) = \\sin x$ at each of these coordinate points, keeping high precision:<br>\\begin{aligned}y_0 &= \\sin(0) \\cr&= 0\\end{aligned}<br>$$y_1 = \\sin\\left(\\dfrac{\\pi}{8}\\right) \\approx 0.3827$$<br>$$y_2 = \\sin\\left(\\dfrac{\\pi}{4}\\right) \\approx 0.7071$$<br>$$y_3 = \\sin\\left(\\dfrac{3\\pi}{8}\\right) \\approx 0.9239$$<br>\\begin{aligned}y_4 &= \\sin\\left(\\dfrac{\\pi}{2}\\right) \\cr&= 1\\end{aligned}",
+                        "Apply the trapezium rule formula to estimate the value of the integral:\\begin{aligned} & \\text{Estimate} \\cr & \\quad = \\dfrac{h}{2} [ y_0 + y_4 + 2(y_1 + y_2 + y_3) ] \\cr & \\quad = \\dfrac{\\pi}{16} \\times \\cr & \\quad [ 0 + 1 \\cr & \\quad \\quad + 2(0.3827 + 0.7071 \\cr & \\quad \\quad \\quad + 0.9239) ] \\cr & \\quad = \\dfrac{\\pi}{16} [ 1 + 2(2.0137) ] \\cr & \\quad = \\dfrac{\\pi}{16} [ 1 + 4.0274 ] \\cr & \\quad = \\dfrac{\\pi}{16} [ 5.0274 ] \\cr & \\quad \\approx 0.9871\\end{aligned}<br><br>Rounding to 3 significant figures gives $0.987$.",
                         "To determine if this is an underestimate or an overestimate, we examine the curvature of $y = \\sin x$. On the interval $\\left[0, \\, \\dfrac{\\pi}{2}\\right]$, the curve is concave down (convex). Because the curve bends downward, the straight-line tops of the four trapezia lie entirely beneath the curve. Thus, the sum of the areas of the trapezia is slightly less than the actual area under the curve, making the estimate an underestimate.",
-                "Final Answer: $$0.987$$"
+                        "Final Answer: $$0.987$$"
                 ],
                 "pi_options": [
                         {
@@ -89,17 +88,17 @@ window.ALEVEL_QUESTIONS = [
                 "topic": "Numerical Methods",
                 "subtopic": [
                         "Integration",
-                        "Numerical Methods"
+                        "Trapezium Rule"
                 ],
                 "img": false,
                 "question": "1. Use the trapezium rule, with four strips each of width 1, to estimate the value of:<br>$$\\int_1^5 \\dfrac{1}{x} \\text{d}x$$<br>giving your answer correct to 3 significant figures.<br><br>2. Calculate the exact value of the integral using integration.<br><br>3. Hence, find the percentage error of your trapezium rule estimate, giving your answer correct to 3 significant figures.",
                 "steps": [
                         "For four strips of width $h = 1$ on the interval $[1, 5]$, the coordinate points are $x_0 = 1$, $x_1 = 2$, $x_2 = 3$, $x_3 = 4$, and $x_4 = 5$.",
                         "Evaluate $f(x) = \\dfrac{1}{x}$ at each point:<br>\\begin{aligned}y_0 &= f(1) \\cr&= 1\\end{aligned}<br>\\begin{aligned}y_1 &= f(2) \\cr&= 0.5\\end{aligned}<br>$$y_2 = f(3) \\approx 0.3333$$<br>\\begin{aligned}y_3 &= f(4) \\cr&= 0.25\\end{aligned}<br>\\begin{aligned}y_4 &= f(5) \\cr&= 0.2\\end{aligned}",
-                        "Apply the trapezium rule formula:<br>$$\\text{Estimate} = \\dfrac{1}{2} \\left[ 1 + 0.2 + 2(0.5 + 0.3333 + 0.25) \\right]$$<br>\\begin{aligned}\\text{Estimate} &= 0.5 \\left[ 1.2 + 2(1.0833) \\right] \\cr&= 0.5 \\left[ 1.2 + 2.1667 \\right] \\cr&= 0.5 \\left[ 3.3667 \\right] \\approx 1.6834\\end{aligned}<br>Rounding to 3 significant figures gives $1.68$.",
-                        "Integrate analytically to find the exact value:<br>\\begin{aligned}\\int_1^5 \\dfrac{1}{x} \\text{d}x &= \\left[ \\ln x \\right]_1^5 \\cr&= \\ln 5 - \\ln 1 \\cr&= \\ln 5 \\approx 1.6094\\end{aligned}",
-                        "Calculate the percentage error using the formula $\\text{Percentage Error} = \\dfrac{|\\text{Estimate} - \\text{Exact}|}{\\text{Exact}} \\times 100\\\\%$:<br>$$\\text{Percentage Error} = \\dfrac{|1.6834 - 1.6094|}{1.6094} \\times 100\\\\%$$<br>$$\\text{Percentage Error} = \\dfrac{0.0740}{1.6094} \\times 100\\\\% \\approx 4.598\\\\%$$<br>Rounding to 3 significant figures gives $4.60\\\\%$.",
-                "Final Answer: $$1.68, \\quad \\ln 5, \\quad 4.60\\\\%$$"
+                        "Apply the trapezium rule formula to estimate the value of the integral:\\begin{aligned} & \\text{Estimate} \\cr & \\quad = \\dfrac{h}{2} [ y_0 + y_4 + 2(y_1 + y_2 + y_3) ] \\cr & \\quad = \\dfrac{1}{2} \\times \\cr & \\quad [ 1 + 0.2 \\cr & \\quad \\quad + 2(0.5 + 0.3333 \\cr & \\quad \\quad \\quad + 0.25) ] \\cr & \\quad = 0.5 [ 1.2 + 2(1.0833) ] \\cr & \\quad = 0.5 [ 1.2 + 2.1667 ] \\cr & \\quad = 0.5 [ 3.3667 ] \\cr & \\quad \\approx 1.6834\\end{aligned}<br><br>Rounding to 3 significant figures gives $1.68$.",
+                        "Integrate analytically to find the exact value:\\begin{aligned}\\int_1^5 \\dfrac{1}{x} \\text{d}x &= [ \\ln x ]_1^5 \\cr &= \\ln 5 - \\ln 1 \\cr &= \\ln 5 \\approx 1.6094\\end{aligned}",
+                        "Calculate the percentage error using the formula:\\begin{aligned}&\\text{Percentage Error} \\cr & \\quad = \\dfrac{|\\text{Estimate} - \\text{Exact}|}{\\text{Exact}} \\times 100\\\\%\\end{aligned}<br><br>Substituting the values gives:<br>\\begin{aligned}&\\text{Percentage Error} \\cr & \\quad = \\dfrac{|1.6834 - 1.6094|}{1.6094} \\times 100\\\\% \\cr & \\quad = \\dfrac{0.0740}{1.6094} \\times 100\\\\% \\cr & \\quad \\approx 4.598\\\\%\\end{aligned}<br><br>Rounding to 3 significant figures gives $4.60\\\\%$.",
+                        "Final Answer:<br>$$1.68, \\quad \\ln 5, \\quad 4.60\\\\%$$"
                 ],
                 "pi_options": [
                         {
@@ -130,21 +129,20 @@ window.ALEVEL_QUESTIONS = [
                 "topic": "Numerical Methods",
                 "subtopic": [
                         "Exponential and Logarithmic Functions and Graphs",
-                        "Numerical Methods"
+                        "Trapezium Rule"
                 ],
                 "img": false,
                 "question": "1. Use the trapezium rule, with four strips each of width 0.5, to estimate the value of:<br>$$\\int_1^3 \\ln(2x - 1) \\text{d}x$$<br>giving your answer correct to 3 significant figures.<br><br>2. Explain whether using more strips would increase or decrease the width of each strip, and how this change affects the accuracy of the approximation.",
                 "steps": [
                         "For four strips of width $h = 0.5$ on the interval $[1, 3]$, the coordinate points are $x_0 = 1$, $x_1 = 1.5$, $x_2 = 2.0$, $x_3 = 2.5$, and $x_4 = 3.0$.",
                         "Evaluate $f(x) = \\ln(2x - 1)$ at each of these points:<br>\\begin{aligned}y_0 &= \\ln(2(1) - 1) \\cr&= \\ln(1) \\cr&= 0\\end{aligned}<br>\\begin{aligned}y_1 &= \\ln(2(1.5) - 1) \\cr&= \\ln(2) \\approx 0.6931\\end{aligned}<br>\\begin{aligned}y_2 &= \\ln(2(2.0) - 1) \\cr&= \\ln(3) \\approx 1.0986\\end{aligned}<br>\\begin{aligned}y_3 &= \\ln(2(2.5) - 1) \\cr&= \\ln(4) \\approx 1.3863\\end{aligned}<br>\\begin{aligned}y_4 &= \\ln(2(3.0) - 1) \\cr&= \\ln(5) \\approx 1.6094\\end{aligned}",
-                        "Apply the trapezium rule formula:<br>$$\\text{Estimate} = \\dfrac{0.5}{2} \\left[ 0 + 1.6094 + 2(0.6931 + 1.0986 + 1.3863) \\right]$$",
-                        "Perform the arithmetic steps:<br>$$\\text{Estimate} = 0.25 \\left[ 1.6094 + 2(3.1780) \\right]$$<br>\\begin{aligned}\\text{Estimate} &= 0.25 \\left[ 1.6094 + 6.3560 \\right] \\cr&= 0.25 \\left[ 7.9654 \\right] \\approx 1.9913\\end{aligned}<br>Rounding to 3 significant figures gives $1.99$.",
+                        "Apply the trapezium rule formula to estimate the value of the integral:\\begin{aligned} & \\text{Estimate} \\cr & \\quad = \\dfrac{h}{2} [ y_0 + y_4 + 2(y_1 + y_2 + y_3) ] \\cr & \\quad = \\dfrac{0.5}{2} \\times \\cr & \\quad [ 0 + 1.6094 \\cr & \\quad \\quad + 2(0.6931 + 1.0986 \\cr & \\quad \\quad \\quad + 1.3863) ] \\cr & \\quad = 0.25 [ 1.6094 + 2(3.1780) ] \\cr & \\quad = 0.25 [ 1.6094 + 6.3560 ] \\cr & \\quad = 0.25 [ 7.9654 ] \\cr & \\quad \\approx 1.9913\\end{aligned}<br><br>Rounding to 3 significant figures gives $1.99$.",
                         "Using more strips (increasing $n$) would decrease the width of each strip ($h$), because $h = \\dfrac{b-a}{n}$. As the width of the strips decreases, the straight-line tops of the trapezia follow the curve of $y = \\ln(2x-1)$ more closely, thereby increasing the accuracy of the approximation.",
-                "Final Answer: $$1.99$$"
+                        "Final Answer: $$1.99$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$3.98$$",
+                                "ans": "$$1.99$$",
                                 "feedback": "You may have forgotten to divide the strip width by $2$ at the start of the formula. Remember that the multiplying factor is $\\dfrac{h}{2} = 0.25$, not $h = 0.5$."
                         },
                         {
@@ -171,17 +169,16 @@ window.ALEVEL_QUESTIONS = [
                 "topic": "Numerical Methods",
                 "subtopic": [
                         "Modelling and Applications",
-                        "Numerical Methods"
+                        "Trapezium Rule"
                 ],
                 "img": false,
                 "question": "A surveyor measures the depth of a river, $d$ metres, at horizontal distances $x$ metres from one of its banks. The results are recorded in the table below:<br><br>* $x = 0$ metres: $d = 0$ metres<br>* $x = 1.5$ metres: $d = 0.8$ metres<br>* $x = 3.0$ metres: $d = 1.4$ metres<br>* $x = 4.5$ metres: $d = 1.1$ metres<br>* $x = 6.0$ metres: $d = 0$ metres<br><br>1. Use the trapezium rule with 4 strips to estimate the cross-sectional area of the river.<br>2. State one limitation of using this mathematical model to estimate the cross-sectional area of a real river.",
                 "steps": [
                         "The horizontal intervals are spaced at equal steps of $1.5$ metres, which means the strip width is $h = 1.5$ metres.",
                         "The corresponding depth coordinates (our $y$-values) are $d_0 = 0$, $d_1 = 0.8$, $d_2 = 1.4$, $d_3 = 1.1$, and $d_4 = 0$.",
-                        "Apply the trapezium rule to estimate the area:<br>$$\\text{Area} \\approx \\dfrac{h}{2} \\left[ d_0 + d_4 + 2(d_1 + d_2 + d_3) \\right]$$<br>$$\\text{Area} \\approx \\dfrac{1.5}{2} \\left[ 0 + 0 + 2(0.8 + 1.4 + 1.1) \\right]$$",
-                        "Simplify the terms within the bracket:<br>\\begin{aligned}\\text{Area} \\approx 0.75 \\left[ 2(3.3) \\right] &= 0.75 \\left[ 6.6 \\right] \\cr&= 4.95\\end{aligned}<br>So the estimated cross-sectional area is $4.95\\text{ m}^2$.",
+                        "Apply the trapezium rule to estimate the area:\\begin{aligned} & \\text{Area} \\cr & \\quad \\approx \\dfrac{h}{2} [ d_0 + d_4 + 2(d_1 + d_2 + d_3) ] \\cr & \\quad = \\dfrac{1.5}{2} \\times \\cr & \\quad [ 0 + 0 \\cr & \\quad \\quad + 2(0.8 + 1.4 \\cr & \\quad \\quad \\quad + 1.1) ] \\cr & \\quad = 0.75 [ 2(3.3) ] \\cr & \\quad = 0.75 [ 6.6 ] \\cr & \\quad = 4.95\\end{aligned}<br><br>So the estimated cross-sectional area is $4.95\\text{ m}^2$.",
                         "One limitation of this model is that the trapezium rule assumes the riverbed consists of straight, flat slopes between the measured depths (represented by the straight top edges of the trapezia). In reality, riverbeds are smooth, irregular curves, so this straight-line approximation introduces a modeling error.",
-                "Final Answer: $$4.95\\text{ m}^2$$"
+                        "Final Answer: $$4.95\\text{ m}^2$$"
                 ],
                 "pi_options": [
                         {
