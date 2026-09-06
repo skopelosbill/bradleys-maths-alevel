@@ -1595,7 +1595,8 @@ window.ALEVEL_QUESTIONS = [
                         "To complete the proof, we interpret the first term in the expanded expression of Line 4:<br>$$\\dfrac{OD}{OE} \\times \\dfrac{OE}{OF}$$<br>In the right-angled triangle $ODE$:<br>\\begin{aligned}\\cos A &= \\dfrac{\\text{Adjacent}}{\\text{Hypotenuse}} \\cr&= \\dfrac{OD}{OE}\\end{aligned}<br>In the right-angled triangle $OEF$:<br>\\begin{aligned}\\cos B &= \\dfrac{\\text{Adjacent}}{\\text{Hypotenuse}} \\cr&= \\dfrac{OE}{OF}\\end{aligned}",
                         "Substituting these trigonometric ratios back into the expanded expression of Line 4 completed in Line 5 yields:\\begin{aligned} & \\cos(A+B) \\cr & \\quad = \\cos A \\cos B - \\sin A \\sin B\\end{aligned}",
                         "This geometric argument only proves the identity when $A$ and $B$ are acute because it relies on the physical lengths of sides inside right-angled triangles. In this geometric context, angles must satisfy $0^\\circ < A < 90^\\circ$, $0^\\circ < B < 90^\\circ$, and $A+B < 90^\\circ$. For obtuse or negative angles, these triangles cannot exist, and we must define trigonometric functions using coordinates on a unit circle.",
-                        "To prove the identity for $\\cos(A-B)$, we substitute $-B$ into our newly proven identity:\\begin{aligned} & \\cos(A + (-B)) \\cr & \\quad = \\cos A \\cos(-B) - \\sin A \\sin(-B)\\end{aligned}"
+                        "To prove the identity for $\\cos(A-B)$, we substitute $-B$ into our newly proven identity:\\begin{aligned} & \\cos(A + (-B)) \\cr & \\quad = \\cos A \\cos(-B) - \\sin A \\sin(-B)\\end{aligned}",
+                        "Final answer:\\begin{aligned} & \\cos(A - B) \\cr & \\quad = \\cos A \\cos(-B) - \\sin A \\sin(-B)\\end{aligned}"
                 ],
                 "pi_options": [
                         {
