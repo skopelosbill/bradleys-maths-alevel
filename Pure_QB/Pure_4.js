@@ -220,7 +220,7 @@ window.ALEVEL_QUESTIONS = [
                         "Factorise the quadratic expression by finding two numbers that multiply to $-12$ and add to $-4$. These numbers are $-6$ and $2$:<br>$$(y - 6)(y + 2) = 0$$",
                         "Solve for $y$:<br>\\begin{aligned}y &= 6 \\quad \\text{or} \\quad y \\cr&= -2\\end{aligned}",
                         "Substitute $x^2$ back in place of $y$ to solve for our original variable $x$:<br>\\begin{aligned}x^2 &= 6 \\quad \\text{or} \\quad x^2 \\cr&= -2\\end{aligned}",
-                        "Since $x$ must be a real root, $x^2$ must be greater than or equal to $0$. The equation $x^2 = -2$ has no real solutions. Therefore, we only solve:<br>\\begin{aligned}x^2 &= 6 \\crx &= \\pm\\sqrt{6}\\end{aligned}",
+                        "Since $x$ must be a real root, $x^2$ must be greater than or equal to $0$. The equation $x^2 = -2$ has no real solutions. Therefore, we only solve:<br>\\begin{aligned}x^2 &= 6 \\cr x &= \\pm\\sqrt{6}\\end{aligned}",
                 "Final Answer: $$x = \\pm\\sqrt{6}$$"
                 ],
                 "pi_options": [
@@ -260,7 +260,7 @@ window.ALEVEL_QUESTIONS = [
                         "This equation is a disguised quadratic. Let $t = \\sqrt{x}$, which implies $x = t^2$ (for $x \\ge 0$). Substitute these into the equation:<br>$$t^2 - 5t + 6 = 0$$",
                         "Factorise the quadratic equation by finding two numbers that multiply to $6$ and add to $-5$. These numbers are $-2$ and $-3$:<br>$$(t - 2)(t - 3) = 0$$",
                         "Solve for $t$:<br>\\begin{aligned}t &= 2 \\quad \\text{or} \\quad t \\cr&= 3\\end{aligned}",
-                        "Substitute $\\sqrt{x}$ back in place of $t$ to find our original variable $x$:<br>\\begin{aligned}\\sqrt{x} &= 2 \\crx &= 2^2 = 4\\end{aligned}<br>\\begin{aligned}\\sqrt{x} &= 3 \\crx &= 3^2 = 9\\end{aligned}",
+                        "Substitute $\\sqrt{x}$ back in place of $t$ to find our original variable $x$:<br>\\begin{aligned}\\sqrt{x} &= 2 \\cr x &= 2^2 = 4\\end{aligned}<br>\\begin{aligned}\\sqrt{x} &= 3 \\cr x &= 3^2 = 9\\end{aligned}",
                         "Verify that both solutions are valid by substituting them back into the original equation:<br>For $x = 4$: $4 - 5\\sqrt{4} + 6 = 4 - 10 + 6 = 0$ (Valid).<br>For $x = 9$: $9 - 5\\sqrt{9} + 6 = 9 - 15 + 6 = 0$ (Valid).",
                 "Final Answer: $$x = 4, \\quad 9$$"
                 ],
@@ -303,7 +303,7 @@ window.ALEVEL_QUESTIONS = [
                         "This is a quartic equation in a quadratic form. Let $y = x^2$, which gives us:<br>$$y^2 - 5y + 4 = 0$$",
                         "Factorise the quadratic equation:<br>$$(y - 1)(y - 4) = 0$$",
                         "Solve for $y$:<br>\\begin{aligned}y &= 1 \\quad \\text{or} \\quad y \\cr&= 4\\end{aligned}",
-                        "Substitute $x^2$ back into our equations to solve for $x$:<br>\\begin{aligned}x^2 &= 1 \\crx &= \\pm 1\\end{aligned}<br>\\begin{aligned}x^2 &= 4 \\crx &= \\pm 2\\end{aligned}",
+                        "Substitute $x^2$ back into our equations to solve for $x$:<br>\\begin{aligned}x^2 &= 1 \\cr x &= \\pm 1\\end{aligned}<br>\\begin{aligned}x^2 &= 4 \\cr x &= \\pm 2\\end{aligned}",
                 "Final Answer: $$x = -2, \\quad -1, \\quad 1, \\quad 2$$"
                 ],
                 "pi_options": [
@@ -346,7 +346,7 @@ window.ALEVEL_QUESTIONS = [
                         "Solve for $u$:<br>\\begin{aligned}u &= 3 \\quad \\text{or} \\quad u \\cr&= -1\\end{aligned}",
                         "Now substitute $e^x$ back in place of $u$:<br>\\begin{aligned}e^x &= 3 \\quad \\text{or} \\quad e^x \\cr&= -1\\end{aligned}",
                         "Since the exponential function $e^x$ is strictly positive for all real values of $x$ ($e^x > 0$), the equation $e^x = -1$ has no real solutions and is discarded.",
-                        "Solve the remaining equation by taking the natural logarithm of both sides:<br>\\begin{aligned}e^x &= 3 \\crx &= \\ln 3\\end{aligned}",
+                        "Solve the remaining equation by taking the natural logarithm of both sides:<br>\\begin{aligned}e^x &= 3 \\cr x &= \\ln 3\\end{aligned}",
                 "Final Answer: $$x = \\ln 3$$"
                 ],
                 "pi_options": [
@@ -818,7 +818,7 @@ window.ALEVEL_QUESTIONS = [
                         "Find the gradient of the radius line connecting the centre $C(3, 4)$ and the point $P(2, 1)$ using $m = \\dfrac{y_2 - y_1}{x_2 - x_1}$:<br>\\begin{aligned}m_{\\text{radius}} &= \\dfrac{1 - 4}{2 - 3} \\cr&= \\dfrac{-3}{-1} \\cr&= 3\\end{aligned}",
                         "The tangent line is perpendicular to the radius at the point of contact. Find the gradient of the tangent using the negative reciprocal relationship:<br>\\begin{aligned}m_{\\text{tangent}} &= -\\dfrac{1}{m_{\\text{radius}}} \\cr&= -\\dfrac{1}{3}\\end{aligned}",
                         "Write the equation of the tangent line passing through $P(2, 1)$ using the point-slope formula:<br>$$y - 1 = -\\dfrac{1}{3}\\left(x - 2\\right)$$",
-                        "Multiply by $3$ to clear the fraction and rearrange into the form $ax + by = c$ where $a, b, c \\in \\mathbb{Z}$:<br>$$3(y - 1) = -(x - 2)$$<br>\\begin{aligned}3y - 3 &= -x + 2 \\crx + 3y &= 5\\end{aligned}",
+                        "Multiply by $3$ to clear the fraction and rearrange into the form $ax + by = c$ where $a, b, c \\in \\mathbb{Z}$:<br>$$3(y - 1) = -(x - 2)$$<br>\\begin{aligned}3y - 3 &= -x + 2 \\cr x + 3y &= 5\\end{aligned}",
                 "Final Answer: $$x + 3y = 5$$"
                 ],
                 "pi_options": [
@@ -1528,11 +1528,11 @@ window.ALEVEL_QUESTIONS = [
                 "question": "The functions $g$ and $h$ are defined for all real values of $x$ (with $x \\ne 1$ for $g(x)$) by:<br>$$g(x) = \\dfrac{2x + 3}{x - 1}, \\quad h(x) = x^2 - 2$$<br>1. Find the range of $g(x)$.<br>2. Find the expression for the composite function $gh(x)$, and state the values of $x$ for which $gh(x)$ is not defined.",
                 "steps": [
                         "To find the range of the rational function $g(x)$, let $y = g(x)$ and rearrange the equation to express $x$ in terms of $y$:<br>$$y = \\dfrac{2x + 3}{x - 1}$$<br>\\begin{aligned}y\\left(x - 1\\right) &= 2x + 3 \\cryx - y &= 2x + 3\\end{aligned}",
-                        "Group the $x$ terms on one side of the equation:<br>\\begin{aligned}yx - 2x &= y + 3 \\crx\\left(y - 2\\right) &= y + 3\\end{aligned}<br>$$x = \\dfrac{y + 3}{y - 2}$$",
+                        "Group the $x$ terms on one side of the equation:<br>\\begin{aligned}yx - 2x &= y + 3 \\cr x\\left(y - 2\\right) &= y + 3\\end{aligned}<br>$$x = \\dfrac{y + 3}{y - 2}$$",
                         "For $x$ to be defined as a real number, the denominator of this fraction cannot be zero:<br>$$y - 2 \\ne 0 \\implies y \\ne 2$$<br>So, the range of $g(x)$ is all real numbers except $2$. In set notation, this is $\\\\{y \\in \\mathbb{R} : y \\ne 2\\\\}$.",
                         "To find the composite function $gh(x)$, substitute $h(x) = x^2 - 2$ in place of $x$ inside the function $g(x)$:<br>\\begin{aligned}gh(x) &= g\\left(h\\left(x\\right)\\right) \\cr&= g\\left(x^2 - 2\\right) \\cr&= \\dfrac{2\\left(x^2 - 2\\right) + 3}{\\left(x^2 - 2\\right) - 1}\\end{aligned}",
                         "Expand and simplify the numerator and denominator:<br>\\begin{aligned}gh(x) &= \\dfrac{2x^2 - 4 + 3}{x^2 - 3} \\cr&= \\dfrac{2x^2 - 1}{x^2 - 3}\\end{aligned}",
-                        "The composite function $gh(x)$ is not defined when the denominator is zero:<br>\\begin{aligned}x^2 - 3 &= 0 \\crx^2 &= 3 \\crx &= \\pm\\sqrt{3}\\end{aligned}<br>Additionally, the domain of $gh(x)$ requires that the output of $h(x)$ is within the domain of $g(x)$. Since $g(x)$ is undefined at $x = 1$, we must also exclude $h(x) = 1 \\implies x^2 - 2 = 1 \\implies x = \\pm\\sqrt{3}$, which yields the exact same restriction.",
+                        "The composite function $gh(x)$ is not defined when the denominator is zero:<br>\\begin{aligned}x^2 - 3 &= 0 \\cr x^2 &= 3 \\cr x &= \\pm\\sqrt{3}\\end{aligned}<br>Additionally, the domain of $gh(x)$ requires that the output of $h(x)$ is within the domain of $g(x)$. Since $g(x)$ is undefined at $x = 1$, we must also exclude $h(x) = 1 \\implies x^2 - 2 = 1 \\implies x = \\pm\\sqrt{3}$, which yields the exact same restriction.",
                 "Final Answer: $$y \\ne 2, \\quad gh(x) = \\dfrac{2x^2 - 1}{x^2 - 3} \\text{ for } x \\ne \\pm\\sqrt{3}$$"
                 ],
                 "pi_options": [
@@ -1572,8 +1572,8 @@ window.ALEVEL_QUESTIONS = [
                         "To solve the composite equation $ff(x) = 2$, let $y = f(x)$. This transforms the equation into:<br>\\begin{aligned}f(y) &= 2 \\cr|2y - 5| - 3 &= 2\\end{aligned}",
                         "Solve this basic modulus equation for $y$:<br>$$|2y - 5| = 5$$<br>This splits into two linear cases:<br>\\begin{aligned}2y - 5 &= 5 \\cr2y &= 10 \\cry &= 5\\end{aligned}<br>\\begin{aligned}2y - 5 &= -5 \\cr2y &= 0 \\cry &= 0\\end{aligned}",
                         "Substitute $f(x)$ back in place of $y$, which gives us two separate modulus equations to solve for $x$:<br>\\begin{aligned}\\text{Case 1: } f(x) &= 0 \\quad \\text{and} \\quad \\text{Case 2: } f(x) \\cr&= 5\\end{aligned}",
-                        "Solve **Case 1**: $f(x) = 0$:<br>\\begin{aligned}|2x - 5| - 3 &= 0 \\cr|2x - 5| &= 3\\end{aligned}<br>\\begin{aligned}2x - 5 &= 3 \\cr2x &= 8 \\crx &= 4\\end{aligned}<br>\\begin{aligned}2x - 5 &= -3 \\cr2x &= 2 \\crx &= 1\\end{aligned}",
-                        "Solve **Case 2**: $f(x) = 5$:<br>\\begin{aligned}|2x - 5| - 3 &= 5 \\cr|2x - 5| &= 8\\end{aligned}<br>\\begin{aligned}2x - 5 &= 8 \\cr2x &= 13 \\crx &= \\dfrac{13}{2} = 6.5\\end{aligned}<br>\\begin{aligned}2x - 5 &= -8 \\cr2x &= -3 \\crx &= -\\dfrac{3}{2} = -1.5\\end{aligned}",
+                        "Solve **Case 1**: $f(x) = 0$:<br>\\begin{aligned}|2x - 5| - 3 &= 0 \\cr|2x - 5| &= 3\\end{aligned}<br>\\begin{aligned}2x - 5 &= 3 \\cr2x &= 8 \\cr x &= 4\\end{aligned}<br>\\begin{aligned}2x - 5 &= -3 \\cr2x &= 2 \\cr x &= 1\\end{aligned}",
+                        "Solve **Case 2**: $f(x) = 5$:<br>\\begin{aligned}|2x - 5| - 3 &= 5 \\cr|2x - 5| &= 8\\end{aligned}<br>\\begin{aligned}2x - 5 &= 8 \\cr2x &= 13 \\cr x &= \\dfrac{13}{2} = 6.5\\end{aligned}<br>\\begin{aligned}2x - 5 &= -8 \\cr2x &= -3 \\cr x &= -\\dfrac{3}{2} = -1.5\\end{aligned}",
                         "Combine all solutions to obtain our final set of roots:<br>$$x = -1.5, \\quad 1, \\quad 4, \\quad 6.5$$",
                 "Final Answer: $$y \\ge -3, \\quad x = -1.5, \\, 1, \\, 4, \\, 6.5$$"
                 ],
@@ -1613,9 +1613,9 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "First, rewrite $f(x)$ by completing the square:<br>\\begin{aligned}f(x) &= x^2 - 4x + 4 \\cr&= \\left(x - 2\\right)^2\\end{aligned}<br>For $x \\ge 2$, the gradient $f'(x) = 2(x - 2) \\ge 0$, which means the function is strictly increasing. Because it is a one-to-one function on this restricted domain, it has a valid inverse function.",
                         "For $x \\ge 2$, the value of $\\left(x-2\\right)^2$ is always greater than or equal to $0$, so the range of $f$ is $y \\ge 0$.<br>The domain of $f^{-1}$ is the range of $f$: $x \\ge 0$.<br>The range of $f^{-1}$ is the domain of $f$: $y \\ge 2$.",
-                        "To find $f^{-1}(x)$, let $y = \\left(x - 2\\right)^2$ and solve for $x$ in terms of $y$:<br>\\begin{aligned}\\sqrt{y} &= x - 2 \\crx &= 2 + \\sqrt{y}\\end{aligned}<br>Since our domain is $x \\ge 2$, we choose the positive square root. Replace variables to write the inverse function:<br>$$f^{-1}(x) = 2 + \\sqrt{x} \\quad \\text{for} \\quad x \\ge 0$$",
-                        "To solve the equation $f(x) = f^{-1}(x)$, we use the mathematical identity that any intersection between a function and its inverse must lie along the line of symmetry $y = x$. Therefore, we solve:<br>\\begin{aligned}f(x) &= x \\crx^2 - 4x + 4 &= x\\end{aligned}",
-                        "Rearrange to form a standard quadratic equation:<br>$$x^2 - 5x + 4 = 0$$<br>Factorise the quadratic:<br>\\begin{aligned}\\left(x - 1\\right)\\left(x - 4\\right) &= 0 \\crx &= 1 \\quad \\text{or} \\quad x = 4\\end{aligned}",
+                        "To find $f^{-1}(x)$, let $y = \\left(x - 2\\right)^2$ and solve for $x$ in terms of $y$:<br>\\begin{aligned}\\sqrt{y} &= x - 2 \\cr x &= 2 + \\sqrt{y}\\end{aligned}<br>Since our domain is $x \\ge 2$, we choose the positive square root. Replace variables to write the inverse function:<br>$$f^{-1}(x) = 2 + \\sqrt{x} \\quad \\text{for} \\quad x \\ge 0$$",
+                        "To solve the equation $f(x) = f^{-1}(x)$, we use the mathematical identity that any intersection between a function and its inverse must lie along the line of symmetry $y = x$. Therefore, we solve:<br>\\begin{aligned}f(x) &= x \\cr x^2 - 4x + 4 &= x\\end{aligned}",
+                        "Rearrange to form a standard quadratic equation:<br>$$x^2 - 5x + 4 = 0$$<br>Factorise the quadratic:<br>\\begin{aligned}\\left(x - 1\\right)\\left(x - 4\\right) &= 0 \\cr x &= 1 \\quad \\text{or} \\quad x = 4\\end{aligned}",
                         "Verify our solutions against the original domain constraints. Since the domain of $f(x)$ is strictly $x \\ge 2$, we must discard $x = 1$. This leaves the unique real solution:<br>$$x = 4$$",
                 "Final Answer: \\begin{aligned}f^{-1}(x) &= 2 + \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x \\cr&= 4\\end{aligned}"
                 ],
@@ -1652,9 +1652,9 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "The function $f$ is defined for all real values of $x$ except $x = a$ by:<br>$$f(x) = \\dfrac{3x + 1}{x - 3}$$<br>1. Write down the value of the constant $a$.<br>2. Show that $f(x)$ is a self-inverse function, meaning $f(x) = f^{-1}(x)$ for all $x \\ne 3$.<br>3. Evaluate $f^{2026}(5)$, showing your working clearly.",
                 "steps": [
-                        "The function $f(x) = \\dfrac{3x + 1}{x - 3}$ is undefined when its denominator is equal to zero:<br>\\begin{aligned}x - 3 &= 0 \\crx &= 3\\end{aligned}<br>Therefore, the constant restriction value is $a = 3$.",
+                        "The function $f(x) = \\dfrac{3x + 1}{x - 3}$ is undefined when its denominator is equal to zero:<br>\\begin{aligned}x - 3 &= 0 \\cr x &= 3\\end{aligned}<br>Therefore, the constant restriction value is $a = 3$.",
                         "To prove $f(x)$ is a self-inverse function, let $y = f(x)$ and solve for $x$ in terms of $y$:<br>\\begin{aligned}y &= \\dfrac{3x + 1}{x - 3} \\cry\\left(x - 3\\right) &= 3x + 1\\end{aligned}",
-                        "Expand and isolate the $x$ terms:<br>\\begin{aligned}yx - 3y &= 3x + 1 \\cryx - 3x &= 3y + 1\\end{aligned}<br>\\begin{aligned}x\\left(y - 3\\right) &= 3y + 1 \\crx &= \\dfrac{3y + 1}{y - 3}\\end{aligned}",
+                        "Expand and isolate the $x$ terms:<br>\\begin{aligned}yx - 3y &= 3x + 1 \\cryx - 3x &= 3y + 1\\end{aligned}<br>\\begin{aligned}x\\left(y - 3\\right) &= 3y + 1 \\cr x &= \\dfrac{3y + 1}{y - 3}\\end{aligned}",
                         "Replace the variables to write the expression for $f^{-1}(x)$:<br>$$f^{-1}(x) = \\dfrac{3x + 1}{x - 3}$$<br>Since $f^{-1}(x)$ is identical to our original function $f(x)$, the function is proven to be self-inverse.",
                         "Because $f(x)$ is self-inverse, applying the function twice returns the original input variable:<br>\\begin{aligned}f^2(x) &= f\\left(f\\left(x\\right)\\right) \\cr&= x\\end{aligned}",
                         "From this, we can deduce that any even number of compositions will simplify to the identity function, while any odd number of compositions simplifies to $f(x)$:<br>\\begin{aligned}f^{2n}(x) &= x \\quad \\text{and} \\quad f^{2n+1}(x) \\cr&= f(x)\\end{aligned}",
@@ -1785,7 +1785,7 @@ window.ALEVEL_QUESTIONS = [
                         "For a stationary point, we require $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which implies:<br>$$2e^t = 0$$<br>The exponential function $e^t$ is strictly positive for all real values of $t$ ($e^t > 0$). Therefore, the derivative $2e^t$ can never equal zero, meaning the curve has no stationary points.",
                         "To find the Cartesian equation, isolate $e^t$ in the equation for $x$:<br>\\begin{aligned}x &= e^t + 2 \\cre^t &= x - 2\\end{aligned}",
                         "Substitute $e^t = x - 2$ into the parametric equation for $y$ using the identity $e^{2t} = \\left(e^t\\right)^2$:<br>\\begin{aligned}y &= \\left(e^t\\right)^2 - 3 \\cry &= \\left(x - 2\\right)^2 - 3\\end{aligned}",
-                        "To state the domain of our Cartesian equation, consider the range of $x$ in terms of the parameter $t$. Since $e^t > 0$ for all real $t$, we have:<br>\\begin{aligned}x &= e^t + 2 > 2 \\crx > 2\\end{aligned}",
+                        "To state the domain of our Cartesian equation, consider the range of $x$ in terms of the parameter $t$. Since $e^t > 0$ for all real $t$, we have:<br>\\begin{aligned}x &= e^t + 2 > 2 \\cr x > 2\\end{aligned}",
                 "Final Answer: \\begin{aligned}2e^t, \\quad 2e^t \\ne 0 \\cr\\text{no stationary points}, \\quad y &= \\left(x - 2\\right)^2 - 3 \\text{ for } x > 2\\end{aligned}"
                 ],
                 "pi_options": [
@@ -1823,7 +1823,7 @@ window.ALEVEL_QUESTIONS = [
                 "question": "A curve has parametric equations $x = t^2$ and $y = t^3 - 3t$ for all real $t$.<br><br>1. Find the coordinates of the points where the curve meets the coordinate axes.<br>2. Find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br>3. Show that there are exactly two stationary points on the curve, and find their coordinates.",
                 "steps": [
                         "To find where the curve meets the axes, we analyze the conditions $x=0$ and $y=0$ separately:<br>For $x = 0 \\implies t^2 = 0 \\implies t = 0$. Substituting $t=0$ into $y$ gives $y = 0^3 - 3(0) = 0$, giving the origin $(0, 0)$.",
-                        "For $y = 0 \\implies t^3 - 3t = 0 \\implies t\\left(t^2 - 3\\right) = 0$, which yields three solutions for $t$:<br>\\begin{aligned}t &= 0 \\cr(0, 0)\\end{aligned}<br>\\begin{aligned}t &= \\sqrt{3} \\crx &= \\left(\\sqrt{3}\\right)^2 = 3 \\cr(3, 0)\\end{aligned}\\begin{aligned}t &= -\\sqrt{3} \\crx &= \\left(-\\sqrt{3}\\right)^2 = 3 \\cr(3, 0)\\end{aligned}<br>So the curve meets the axes at the distinct points $(0, 0)$ and $(3, 0)$.",
+                        "For $y = 0 \\implies t^3 - 3t = 0 \\implies t\\left(t^2 - 3\\right) = 0$, which yields three solutions for $t$:<br>\\begin{aligned}t &= 0 \\cr(0, 0)\\end{aligned}<br>\\begin{aligned}t &= \\sqrt{3} \\cr x &= \\left(\\sqrt{3}\\right)^2 = 3 \\cr(3, 0)\\end{aligned}\\begin{aligned}t &= -\\sqrt{3} \\cr x &= \\left(-\\sqrt{3}\\right)^2 = 3 \\cr(3, 0)\\end{aligned}<br>So the curve meets the axes at the distinct points $(0, 0)$ and $(3, 0)$.",
                         "Differentiate the parametric equations with respect to the parameter $t$:<br>\\begin{aligned}\\dfrac{\\text{d}x}{\\text{d}t} &= 2t \\quad \\text{and} \\quad \\dfrac{\\text{d}y}{\\text{d}t} \\cr&= 3t^2 - 3\\end{aligned}",
                         "Apply the parametric chain rule to find $\\dfrac{\\text{d}y}{\\text{d}x}$:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{\\text{d}y}{\\text{d}t}}{\\dfrac{\\text{d}x}{\\text{d}t}} \\cr&= \\dfrac{3t^2 - 3}{2t}\\end{aligned}",
                         "Stationary points occur when the derivative $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which requires the numerator to be zero (where the denominator is non-zero):<br>\\begin{aligned}3t^2 - 3 &= 0 \\crt^2 &= 1 \\crt &= \\pm 1\\end{aligned}",
@@ -1868,7 +1868,7 @@ window.ALEVEL_QUESTIONS = [
                         "Apply the parametric differentiation rule $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{\\dfrac{\\text{d}y}{\\text{d}t}}{\\dfrac{\\text{d}x}{\\text{d}t}}$ and simplify:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{2t^2 + 1}{t^2}}{\\dfrac{2t^2 - 1}{t^2}} \\cr&= \\dfrac{2t^2 + 1}{2t^2 - 1}\\end{aligned}",
                         "Stationary points require $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which occurs when the numerator is zero:<br>\\begin{aligned}2t^2 + 1 &= 0 \\crt^2 &= -0.5\\end{aligned}<br>Since $t^2 \\ge 0$ for all real values of $t$, the equation $t^2 = -0.5$ has no real solutions. Thus, the derivative can never be zero, and there are no stationary points.",
                         "To find the Cartesian equation, eliminate the parameter $t$ by evaluating the linear combinations $x + y$ and $x - y$:<br>\\begin{aligned}x + y &= \\left(2t + \\dfrac{1}{t}\\right) + \\left(2t - \\dfrac{1}{t}\\right) = 4t \\crt &= \\dfrac{x + y}{4}\\end{aligned}<br>\\begin{aligned}x - y &= \\left(2t + \\dfrac{1}{t}\\right) - \\left(2t - \\dfrac{1}{t}\\right) = \\dfrac{2}{t} \\crt &= \\dfrac{2}{x - y}\\end{aligned}",
-                        "Equate these two expressions for $t$ to eliminate the parameter:<br>$$\\dfrac{x + y}{4} = \\dfrac{2}{x - y}$$<br>Multiply across to remove fractions:<br>\\begin{aligned}\\left(x + y\\right)\\left(x - y\\right) &= 8 \\crx^2 - y^2 &= 8\\end{aligned}",
+                        "Equate these two expressions for $t$ to eliminate the parameter:<br>$$\\dfrac{x + y}{4} = \\dfrac{2}{x - y}$$<br>Multiply across to remove fractions:<br>\\begin{aligned}\\left(x + y\\right)\\left(x - y\\right) &= 8 \\cr x^2 - y^2 &= 8\\end{aligned}",
                 "Final Answer: \\begin{aligned}\\dfrac{2t^2 + 1}{2t^2 - 1}, \\quad 2t^2 + 1 \\ne 0 \\cr\\text{no stationary points}, \\quad x^2 - y^2 &= 8\\end{aligned}"
                 ],
                 "pi_options": [
