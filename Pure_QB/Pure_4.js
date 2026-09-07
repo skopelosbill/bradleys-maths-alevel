@@ -429,13 +429,13 @@ window.ALEVEL_QUESTIONS = [
                 "question": "Prove algebraically that $n^3 + 5n - 1$ is odd for all positive integers $n$.",
                 "steps": [
                         "Any positive integer $n$ must be either even or odd. We can prove the claim is true for all integers by testing both cases separately.",
-                        "<strong>Case 1:</strong> $n$ is even.<br>Let $n = 2k$, where $k$ is an integer. Substitute this into our expression:begin{aligned}n^3 + 5n - 1 & = (2k)^3 + 5(2k) - 1$$\\cr & = 8k^3 + 10k - 1\\end{aligned}",
+                        "<strong>Case 1:</strong> $n$ is even.<br>Let $n = 2k$, where $k$ is an integer. Substitute this into our expression:begin{aligned}n^3 + 5n - 1 & = (2k)^3 + 5(2k) - 1\\cr & = 8k^3 + 10k - 1\\end{aligned}",
                         "Factorise out a $2$ from the first two terms of the expression:<br>$$= 2(4k^3 + 5k) - 1$$<br>Since $k$ is an integer, $(4k^3 + 5k)$ is also an integer. Any integer in the form $2m - 1$ is odd, so the expression is odd when $n$ is even.",
-                        "<strong>Case 2:</strong> $n$ is odd.<br>Let $n = 2k + 1$, where $k$ is an integer. Substitute this into our expression:\\bdgin{aligned}n^3 + 5n - 1 &= (2k + 1)^3 \\cr & \\quad+ 5(2k + 1) - 1\\end{aligned}",
+                        "<strong>Case 2:</strong> $n$ is odd.<br>Let $n = 2k + 1$, where $k$ is an integer. Substitute this into our expression:\\begin{aligned}n^3 + 5n - 1 &= (2k + 1)^3 \\cr & \\quad+ 5(2k + 1) - 1\\end{aligned}",
                         "Expand the cubic and linear terms:\\begin{aligned} & = (8k^3 + 12k^2 + 6k + 1)\\cr & \\quad \\quad + 10k + 5 - 1 \\cr & = 8k^3 + 12k^2 + 16k + 5\\end{aligned}",
                         "Rewrite the constant term $5$ as $4 + 1$ to allow factorisation:\\begin{aligned} &= 8k^3 + 12k^2 + 16k + 4 + 1\\cr &= 2(4k^3 + 6k^2 + 8k + 2) + 1\\end{aligned}Since $k$ is an integer, the bracketed term is an integer. Any integer in the form $2p + 1$ is odd, so the expression is odd when $n$ is odd.",
                         "Since the expression is odd in both the even and odd cases, $n^3 + 5n - 1$ is odd for all positive integers $n$.",
-                "Final Answer: $$2(4k^3 + 5k) - 1$$  $$\\text{ and } 2(4k^3 + 6k^2 + 8k + 2) + 1 \\text{ are odd}$$"
+                "Final Answer: $$2(4k^3 + 5k) - 1$$  $$\\text{ and } 2(4k^3 + 6k^2 + 8k + 2) + 1$$ $$\\text{ are odd}$$"
                 ],
                 "pi_options": [
                         {
