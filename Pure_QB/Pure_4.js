@@ -473,9 +473,9 @@ window.ALEVEL_QUESTIONS = [
                         "We can prove this claim elegantly by factorising the quadratic expression. Find two numbers that multiply to $2$ and add to $3$, which are $1$ and $2$:<br>$$n^2 + 3n + 2 = (n + 1)(n + 2)$$",
                         "Observe the two factors: $(n + 1)$ and $(n + 2)$ are consecutive positive integers.",
                         "For any two consecutive positive integers, one of the numbers must be even and the other must be odd.",
-                        "Since one of the factors is even, it can be written in the form $2k$, where $k$ is an integer. The product of the two factors can therefore be written as:<br>$$\\text{Product} = 2k \\times (\\text{the other factor})$$<br>$$= 2 \\left[ k \\times (\\text{the other factor}) \\right]$$",
+                        "Since one of the factors is even, it can be written in the form $2k$, where $k$ is an integer. The product of the two factors can therefore be written as:<br>\\begin{aligned}\\text{Product} &= 2k \\times \\cr & \\quad (\\text{the other factor}) \\cr &= 2 [ k \\times (\\text{the other factor}) ]\\end{aligned}",
                         "Since the product has a factor of $2$, the expression $(n + 1)(n + 2)$ must be even for all positive integers $n$.",
-                "Final Answer: $$(n+1)(n+2) \\text{ contains an even factor}$$"
+                        "Final Answer:<br>\\begin{aligned}&(n+1)(n+2) \\cr & \\quad \\text{contains an even factor}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -511,17 +511,17 @@ window.ALEVEL_QUESTIONS = [
                 "question": "Prove algebraically that $n^2 + 2$ is not divisible by 4 for any positive integer $n$.",
                 "steps": [
                         "We can prove this claim by examining the two possible cases for any positive integer $n$: either $n$ is even or $n$ is odd.",
-                        "<strong>Case 1:</strong> $n$ is even.<br>Let $n = 2k$, where $k$ is an integer. Substitute this into our expression:<br>$$n^2 + 2 = (2k)^2 + 2$$<br>$$= 4k^2 + 2$$",
+                        "<strong>Case 1:</strong> $n$ is even.<br>Let $n = 2k$, where $k$ is an integer. Substitute this into our expression:<br>\\begin{aligned}n^2 + 2 &= (2k)^2 + 2 \\cr &= 4k^2 + 2\\end{aligned}",
                         "Since $k^2$ is an integer, $4k^2$ is a multiple of $4$. Adding $2$ to a multiple of $4$ leaves a remainder of $2$ when divided by $4$. Therefore, $n^2 + 2$ is not divisible by $4$ when $n$ is even.",
-                        "<strong>Case 2:</strong> $n$ is odd.<br>Let $n = 2k + 1$, where $k$ is an integer. Substitute this into our expression:<br>$$n^2 + 2 = (2k + 1)^2 + 2$$",
-                        "Expand and simplify the expression:<br>$$= (4k^2 + 4k + 1) + 2$$<br>$$= 4k^2 + 4k + 3$$",
-                        "Factorise out a $4$ from the first two terms:<br>$$= 4(k^2 + k) + 3$$<br>Since $k$ is an integer, $(k^2 + k)$ is an integer. This expression is in the form $4m + 3$, which leaves a remainder of $3$ when divided by $4$. Therefore, $n^2 + 2$ is not divisible by $4$ when $n$ is odd.",
+                        "<strong>Case 2:</strong> $n$ is odd.<br>Let $n = 2k + 1$, where $k$ is an integer. Substitute this into our expression:<br>\\begin{aligned}n^2 + 2 &= (2k + 1)^2 + 2\\end{aligned}",
+                        "Expand and simplify the expression:<br>\\begin{aligned}n^2 + 2 &= (4k^2 + 4k + 1) + 2 \\cr &= 4k^2 + 4k + 3\\end{aligned}",
+                        "Factorise out a $4$ from the first two terms:<br>\\begin{aligned}n^2 + 2 &= 4(k^2 + k) + 3\\end{aligned}<br>Since $k$ is an integer, $(k^2 + k)$ is an integer. This expression is in the form $4m + 3$, which leaves a remainder of $3$ when divided by $4$. Therefore, $n^2 + 2$ is not divisible by $4$ when $n$ is odd.",
                         "Since $n^2 + 2$ is not divisible by $4$ in either case, the expression is not divisible by $4$ for any positive integer $n$.",
-                "Final Answer: $$4k^2 + 2 \\text{ and } 4(k^2 + k) + 3 \\text{ leave remainders}$$"
+                        "Final Answer:<br>\\begin{aligned} & 4k^2 + 2 \\cr & \\quad \\text{and} \\cr & 4(k^2 + k) + 3 \\cr & \\quad \\text{leave remainders}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$4k^2 + 2 \\implies \\text{divisible by 2}$$",
+                                "ans": "\\begin{aligned} & 4k^2 + 2 \\cr & \\quad \\implies \\text{divisible by 2}\\end{aligned}",
                                 "feedback": "While the expression is divisible by $2$, the question asks you to prove that it is not divisible by $4$. A remainder of $2$ when divided by $4$ confirms it is not a multiple of $4$."
                         },
                         {
@@ -554,13 +554,13 @@ window.ALEVEL_QUESTIONS = [
                 "question": "Prove by exhaustion that $n^2 + n + 11$ is a prime number for all integers $n$ such that $1 \\le n \\le 5$.",
                 "steps": [
                         "A proof by exhaustion requires us to test every individual value of $n$ within the given domain, which is $n \\in \\\\{1, 2, 3, 4, 5\\\\}$.",
-                        "Test $n = 1$:<br>\\begin{aligned}1^2 + 1 + 11 &= 1 + 1 + 11 \\cr&= 13\\end{aligned}<br>Since $13$ is only divisible by $1$ and itself, it is a prime number.",
-                        "Test $n = 2$:<br>\\begin{aligned}2^2 + 2 + 11 &= 4 + 2 + 11 \\cr&= 17\\end{aligned}<br>Since $17$ is only divisible by $1$ and itself, it is a prime number.",
-                        "Test $n = 3$:<br>\\begin{aligned}3^2 + 3 + 11 &= 9 + 3 + 11 \\cr&= 23\\end{aligned}<br>Since $23$ is only divisible by $1$ and itself, it is a prime number.",
-                        "Test $n = 4$:<br>\\begin{aligned}4^2 + 4 + 11 &= 16 + 4 + 11 \\cr&= 31\\end{aligned}<br>Since $31$ is only divisible by $1$ and itself, it is a prime number.",
-                        "Test $n = 5$:<br>\\begin{aligned}5^2 + 5 + 11 &= 25 + 5 + 11 \\cr&= 41\\end{aligned}<br>Since $41$ is only divisible by $1$ and itself, it is a prime number.",
+                        "Test $n = 1$:<br>\\begin{aligned}1^2 + 1 + 11 &= 1 + 1 + 11 \\cr &= 13\\end{aligned}<br>Since $13$ is only divisible by $1$ and itself, it is a prime number.",
+                        "Test $n = 2$:<br>\\begin{aligned}2^2 + 2 + 11 &= 4 + 2 + 11 \\cr &= 17\\end{aligned}<br>Since $17$ is only divisible by $1$ and itself, it is a prime number.",
+                        "Test $n = 3$:<br>\\begin{aligned}3^2 + 3 + 11 &= 9 + 3 + 11 \\cr &= 23\\end{aligned}<br>Since $23$ is only divisible by $1$ and itself, it is a prime number.",
+                        "Test $n = 4$:<br>\\begin{aligned}4^2 + 4 + 11 &= 16 + 4 + 11 \\cr &= 31\\end{aligned}<br>Since $31$ is only divisible by $1$ and itself, it is a prime number.",
+                        "Test $n = 5$:<br>\\begin{aligned}5^2 + 5 + 11 &= 25 + 5 + 11 \\cr &= 41\\end{aligned}<br>Since $41$ is only divisible by $1$ and itself, it is a prime number.",
                         "Since we have tested every single integer in the domain $1 \\le n \\le 5$ and obtained a prime number in each case, the claim is proven by exhaustion.",
-                "Final Answer: $$13, \\, 17, \\, 23, \\, 31, \\, 41 \\text{ are prime}$$"
+                        "Final Answer:<br>\\begin{aligned} & 13, \\, 17, \\, 23, \\, 31, \\, 41 \\cr & \\quad \\text{are prime}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -568,7 +568,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "While this factorisation is mathematically correct, it does not constitute a proof by exhaustion. A proof by exhaustion strictly requires you to calculate and verify the numerical result for every single value of $n$ in the domain."
                         },
                         {
-                                "ans": "$$n = 11 \\implies 11^2 + 11 + 11 = 143 \\implies \\text{not prime}$$",
+                                "ans": "\\begin{aligned}n &= 11 \\implies \\cr 11^2 &+ 11 + 11 = 143 \\cr & \\quad \\implies \\text{not prime}\\end{aligned}",
                                 "feedback": "This is a valid counterexample showing that the formula does not work for all integers $n$. However, the question only asks you to prove the claim for the specific domain $1 \\le n \\le 5$. Counterexamples outside this domain are irrelevant to the proof."
                         },
                         {
@@ -598,12 +598,12 @@ window.ALEVEL_QUESTIONS = [
                         "To prove this claim by contradiction, we begin by assuming the opposite of our claim is true:<br>Assume that the sum of a rational number $r$ and an irrational number $x$ is a rational number, which we will call $q$.",
                         "Write this assumption as an equation:<br>$$r + x = q$$",
                         "Since $r$ and $q$ are rational numbers, they can be written as ratios of integers. Let $r = \\dfrac{a}{b}$ (where $a, b \\in \\mathbb{Z}, \\, b \\ne 0$) and $q = \\dfrac{c}{d}$ (where $c, d \\in \\mathbb{Z}, \\, d \\ne 0$):<br>$$\\dfrac{a}{b} + x = \\dfrac{c}{d}$$",
-                        "Rearrange the equation to isolate the irrational number $x$:<br>$$x = q - r$$<br>$$x = \\dfrac{c}{d} - \\dfrac{a}{b}$$",
+                        "Rearrange the equation to isolate the irrational number $x$:<br>\\begin{aligned}x &= q - r \\cr &= \\dfrac{c}{d} - \\dfrac{a}{b}\\end{aligned}",
                         "Combine the rational fractions over a common denominator:<br>$$x = \\dfrac{bc - ad}{bd}$$",
                         "Since $a, b, c,$ and $d$ are integers, both $(bc - ad)$ and $bd$ must be integers. Additionally, since $b \\ne 0$ and $d \\ne 0$, their product $bd \\ne 0$.",
                         "This implies that $x$ can be written as a ratio of two integers, which means $x$ must be a rational number. This directly contradicts our initial definition that $x$ is an irrational number.",
                         "Since our assumption that the sum is rational leads to a contradiction, the assumption must be false. Therefore, the sum of a rational number and an irrational number must be irrational.",
-                "Final Answer: \\begin{aligned}x &= q - r \\cr\\text{contradiction}\\end{aligned}"
+                        "Final Answer:<br>\\begin{aligned}x &= q - r \\cr & \\quad \\implies \\text{contradiction}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -615,7 +615,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "This is only an example using a specific irrational number ($\\sqrt{2}$). A formal proof must be general and apply to any irrational number $x$."
                         },
                         {
-                                "ans": "$$x = q - r \\implies x = \\text{rational}$$",
+                                "ans": "\\begin{aligned}x &= q - r \\cr & \\quad \\implies x = \\text{rational}\\end{aligned}",
                                 "feedback": "This is a correct step, but you must complete the proof by explicitly stating that this result contradicts the fact that $x$ is irrational, thereby making your original assumption false."
                         }
                 ],
