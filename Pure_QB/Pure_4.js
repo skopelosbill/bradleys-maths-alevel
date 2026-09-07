@@ -641,7 +641,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "To find the centre and radius of the circle, we rearrange the terms and complete the square for both $x$ and $y$:<br>$$x^2 + 4x + y^2 - 6y + 3 = 0$$",
                         "Complete the square for the $x$ terms and the $y$ terms separately:<br>$$x^2 + 4x = (x + 2)^2 - 4$$<br><br>$$y^2 - 6y = (y - 3)^2 - 9$$",
-                        "Substitute these completed squares back into the original equation and simplify:<br>\\begin{aligned}(x + 2)^2 - 4 + (y - 3)^2 - 9 + 3 &= 0 \\cr (x + 2)^2 + (y - 3)^2 - 10 &= 0 \\cr (x + 2)^2 + (y - 3)^2 &= 10\\end{aligned}<br><br>So, the centre of the circle is $(-2, 3)$ and the radius is $\\sqrt{10}$.",
+                        "Substitute these completed squares back into the original equation and simplify:<br>\\begin{aligned}(x + 2)^2 - 4 + (y - 3)^2 & - 9 + 3 = 0 \\cr (x + 2)^2 + (y - 3)^2 - 10 &= 0 \\cr (x + 2)^2 + (y - 3)^2 &= 10\\end{aligned}<br><br>So, the centre of the circle is $(-2, 3)$ and the radius is $\\sqrt{10}$.",
                         "To find the points of intersection, substitute the line equation $y = -3x + 7$ into the original equation of the circle:<br>\\begin{aligned}&x^2 + (-3x + 7)^2 + 4x \\cr & \\quad - 6(-3x + 7) + 3 = 0\\end{aligned}",
                         "Expand and simplify the algebraic terms:<br>\\begin{aligned}&x^2 + (9x^2 - 42x + 49) + 4x \\cr & \\quad + 18x - 42 + 3 = 0 \\cr &10x^2 - 20x + 10 = 0\\end{aligned}",
                         "Divide the quadratic equation by $10$ to simplify factorisation:<br>\\begin{aligned}x^2 - 2x + 1 &= 0 \\cr (x - 1)^2 &= 0\\end{aligned}<br><br>This quadratic equation has a single repeated real root:<br>$$x = 1$$",
@@ -685,7 +685,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "Rearrange the terms and complete the square for both variables to find the centre and radius of the circle:<br>$$x^2 - 6x + y^2 - 4y - 12 = 0$$",
                         "Complete the square for $x$ and $y$ separately:<br>$$x^2 - 6x = (x - 3)^2 - 9$$<br><br>$$y^2 - 4y = (y - 2)^2 - 4$$",
-                        "Substitute these back into the original equation and simplify:<br>\\begin{aligned}(x - 3)^2 - 9 + (y - 2)^2 - 4 - 12 &= 0 \\cr (x - 3)^2 + (y - 2)^2 - 25 &= 0 \\cr (x - 3)^2 + (y - 2)^2 &= 25\\end{aligned}<br><br>This confirms the centre is $(3, 2)$, and the radius is $\\sqrt{25} = 5$.",
+                        "Substitute these back into the original equation and simplify:<br>\\begin{aligned}(x - 3)^2 - 9 + (y - 2)^2 &- 4 - 12 = 0 \\cr (x - 3)^2 + (y - 2)^2 - 25 &= 0 \\cr (x - 3)^2 + (y - 2)^2 &= 25\\end{aligned}<br><br>This confirms the centre is $(3, 2)$, and the radius is $\\sqrt{25} = 5$.",
                         "To find the points of intersection, substitute the line equation $y = x + 4$ into the original circle equation:<br>\\begin{aligned}&x^2 + (x + 4)^2 - 6x \\cr & \\quad - 4(x + 4) - 12 = 0\\end{aligned}",
                         "Expand the brackets and simplify the quadratic expression:<br>\\begin{aligned}&x^2 + (x^2 + 8x + 16) - 6x \\cr & \\quad - 4x - 16 - 12 = 0 \\cr &2x^2 - 2x - 12 = 0\\end{aligned}",
                         "Divide the entire equation by $2$ to simplify factorisation:<br>\\begin{aligned}x^2 - x - 6 &= 0 \\cr (x - 3)(x + 2) &= 0\\end{aligned}<br><br>This yields two distinct real solutions for the $x$-coordinates:<br>\\begin{aligned}x &= 3 \\cr x &= -2\\end{aligned}",
@@ -726,7 +726,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "The equation of a circle is $x^2 + y^2 - 2x - 8y + 12 = 0$.<br><br>1. Find the centre and radius of the circle.<br><br>2. Show algebraically that the line $y = x + 8$ does not meet the circle.<br><br>3. State what can be deduced from your answer to part (2) about the relationship between the line and the circle.",
                 "steps": [
-                        "Complete the square for both $x$ and $y$ to write the circle in standard form:<br>\\begin{aligned}x^2 - 2x + y^2 - 8y + 12 &= 0 \\cr (x - 1)^2 - 1 + (y - 4)^2 - 16 + 12 &= 0 \\cr (x - 1)^2 + (y - 4)^2 &= 5\\end{aligned}<br><br>So, the centre of the circle is $(1, 4)$ and the radius is $\\sqrt{5}$.",
+                        "Complete the square for both $x$ and $y$ to write the circle in standard form:<br>\\begin{aligned}x^2 - 2x + y^2 - 8y + 12 &= 0 \\cr (x - 1)^2 - 1 +\\cr & \\quad (y - 4)^2 - 16 + 12 = 0 \\cr (x - 1)^2 + (y - 4)^2 &= 5\\end{aligned}<br><br>So, the centre of the circle is $(1, 4)$ and the radius is $\\sqrt{5}$.",
                         "To show that the line $y = x + 8$ does not meet the circle, substitute $y = x + 8$ into the original circle equation:<br>\\begin{aligned}&x^2 + (x + 8)^2 - 2x \\cr & \\quad - 8(x + 8) + 12 = 0\\end{aligned}",
                         "Expand and collect like terms to form a quadratic equation in terms of $x$:<br>\\begin{aligned}&x^2 + (x^2 + 16x + 64) - 2x \\cr & \\quad - 8x - 64 + 12 = 0 \\cr &2x^2 + 6x + 12 = 0\\end{aligned}",
                         "Divide the quadratic equation by $2$ to simplify:<br>$$x^2 + 3x + 6 = 0$$",
