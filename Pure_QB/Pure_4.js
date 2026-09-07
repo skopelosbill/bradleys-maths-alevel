@@ -726,7 +726,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "The equation of a circle is $x^2 + y^2 - 2x - 8y + 12 = 0$.<br><br>1. Find the centre and radius of the circle.<br><br>2. Show algebraically that the line $y = x + 8$ does not meet the circle.<br><br>3. State what can be deduced from your answer to part (2) about the relationship between the line and the circle.",
                 "steps": [
-                        "Complete the square for both $x$ and $y$ to write the circle in standard form:<br>\\begin{aligned}x^2 - 2x + y^2 - 8y + 12 &= 0 \\cr (x - 1)^2 - 1 +\\cr & \\quad (y - 4)^2 - 16 + 12 = 0 \\cr (x - 1)^2 + (y - 4)^2 &= 5\\end{aligned}<br><br>So, the centre of the circle is $(1, 4)$ and the radius is $\\sqrt{5}$.",
+                        "Complete the square for both $x$ and $y$ to write the circle in standard form:<br>\\begin{aligned}x^2 - 2x + y^2 - & 8y + 12 = 0 \\cr (x - 1)^2 - 1 +\\cr &   &(y - 4)^2 - 16 + 12 = 0 \\cr (x - 1)^2 + (y - 4)^2 &= 5\\end{aligned}<br><br>So, the centre of the circle is $(1, 4)$ and the radius is $\\sqrt{5}$.",
                         "To show that the line $y = x + 8$ does not meet the circle, substitute $y = x + 8$ into the original circle equation:<br>\\begin{aligned}&x^2 + (x + 8)^2 - 2x \\cr & \\quad - 8(x + 8) + 12 = 0\\end{aligned}",
                         "Expand and collect like terms to form a quadratic equation in terms of $x$:<br>\\begin{aligned}&x^2 + (x^2 + 16x + 64) - 2x \\cr & \\quad - 8x - 64 + 12 = 0 \\cr &2x^2 + 6x + 12 = 0\\end{aligned}",
                         "Divide the quadratic equation by $2$ to simplify:<br>$$x^2 + 3x + 6 = 0$$",
