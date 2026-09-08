@@ -1077,7 +1077,7 @@ window.ALEVEL_QUESTIONS = [
                         "Set $S_n = 2091$ and solve for $n$:\\begin{aligned}8000(1 - 0.98^n) &= 2091 \\cr 1 - 0.98^n &= \\dfrac{2091}{8000} \\cr 1 - 0.98^n &\\approx 0.261375 \\cr 0.98^n &= 1 - 0.261375 \\cr 0.98^n &= 0.738625\\end{aligned}",
                         "Take logarithms to solve for $n$:\\begin{aligned}n\\ln(0.98) &= \\ln(0.738625) \\cr n &= \\dfrac{\\ln(0.738625)}{\\ln(0.98)} \\cr n &= \\dfrac{-0.30296}{-0.02020} \\cr n &\\approx 14.996\\end{aligned}<br><br>Rounding to the nearest integer, Sarah has run $15$ half marathons.",
                         "There are two main reasons why this model may not be appropriate in the long term:<br><br>1. Human athletic performance eventually plateaus. A geometric model predicts that her times will decrease infinitely toward $0$ minutes, which is physically impossible.<br><br>2. It does not account for real-world variables such as injury, aging, illness, changing weather conditions, or variations in motivation.",
-                        "Final Answer:\\begin{aligned}&12, \\quad 15 \\cr &\\text{athletic plateau and weather/injury}\\end{aligned}"
+                        "Final Answer:\\begin{aligned}&12, \\quad 15 \\cr &\\text{athleticplateau}\\cr&\\text{and weather/injury}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1153,7 +1153,7 @@ window.ALEVEL_QUESTIONS = [
                         "Sequences and Series"
                 ],
                 "img": false,
-                "question": "An investor deposits £2000 into a savings account on the first day of each year. The account pays a compound interest rate of $4\\%$ per annum, paid on the last day of each year.<br><br>1. Show that the total value of the investment, in pounds, on the last day of the third year (after interest has been added) is $2000(1.04) + 2000(1.04)^2 + 2000(1.04)^3$.<br><br>2. Use this model to find the total value of the investment immediately after interest is added at the end of the $10\\text{th}$ year, giving your answer to the nearest pound.<br><br>3. State one assumption made by this model that might not be realistic in the long term.",
+                "question": "An investor deposits £2000 into a savings account on the first day of each year. The account pays a compound interest rate of $4\\%$ per annum, paid on the last day of each year.<br><br>1. Show that the total value of the investment, in pounds, on the last day of the third year (after interest has been added) is \\begin{aligned}2000(1.04) +& 2000(1.04)^2\\cr & \\quad + 2000(1.04)^3\\end{aligned}2. Use this model to find the total value of the investment immediately after interest is added at the end of the $10\\text{th}$ year, giving your answer to the nearest pound.<br><br>3. State one assumption made by this model that might not be realistic in the long term.",
                 "steps": [
                         "Trace each deposit to the end of the third year:<br><br>The first £2000 deposit has been in the account for $3$ full years and has earned compound interest $3$ times, so its value is $2000(1.04)^3$.<br><br>The second £2000 deposit has been in the account for $2$ full years, so its value is $2000(1.04)^2$.<br><br>The third £2000 deposit has been in the account for $1$ full year, so its value is $2000(1.04)^1$.",
                         "Summing these three components gives the total value of the investment on the last day of the third year:\\begin{aligned}\\text{Total} &= 2000(1.04) + 2000(1.04)^2 \\cr & \\quad + 2000(1.04)^3\\end{aligned}",
@@ -1161,7 +1161,7 @@ window.ALEVEL_QUESTIONS = [
                         "To find the value of the investment at the end of $10$ years, apply the geometric series sum formula $S_n = \\dfrac{a(r^n - 1)}{r - 1}$:\\begin{aligned}S_{10} &= \\dfrac{2080(1.04^{10} - 1)}{1.04 - 1} \\cr &= \\dfrac{2080(1.04^{10} - 1)}{0.04}\\end{aligned}",
                         "Calculate using high-precision intermediate steps to avoid rounding errors:\\begin{aligned}1.04^{10} &\\approx 1.480244 \\cr S_{10} &= \\dfrac{2080(0.480244)}{0.04} \\cr &= 52000 \\times 0.480244 \\cr &= 24972.70\\end{aligned}<br><br>Rounding to the nearest pound, the total value is £24,973.",
                         "One key assumption made by this model is that the interest rate remains constant at $4\\%$ for the entire $10$ years. In reality, savings rates are variable and subject to economic fluctuations. Alternatively, the model assumes the investor never misses a payment and consistently deposits exactly £2000 every single year.",
-                        "Final Answer:\\begin{aligned}&£24,973 \\cr &\\text{constant interest rate and fixed annual deposits}\\end{aligned}"
+                        "Final Answer:\\begin{aligned}&£24,973 \\cr &\\text{constant interest rate}\\cr & \\text{and fixed annual deposits}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1204,7 +1204,7 @@ window.ALEVEL_QUESTIONS = [
                         "To find the total mass loss over the first $30$ days, calculate the mass remaining on the $30$-th day, $M_{30}$:\\begin{aligned}M_{30} &= 80(0.95)^{29} \\cr &\\approx 80(0.225927) \\cr &= 18.07\\text{ grams}\\end{aligned}",
                         "Subtract the remaining mass on the $30$-th day from the initial mass of $80$ grams to find the total loss:\\begin{aligned}\\text{Total Loss} &= 80 - 18.07 \\cr &= 61.93\\text{ grams}\\end{aligned}<br><br>Rounding to the nearest gram, the total mass loss is $62\\text{ grams}$.",
                         "A discrete geometric model is appropriate for short periods because measurements are taken at set daily intervals, and the daily decay factor is easily calculated. However, radioactive decay is fundamentally a continuous physical process. A continuous exponential model $M(t) = M_0 e^{-\\lambda t}$ is preferred in physics because it allows calculations at any fraction of a second and integrates naturally with other physical rate models.",
-                        "Final Answer:\\begin{aligned}&15 \\cr &62\\text{ grams} \\cr &\\text{discrete daily sampling vs continuous physical rates}\\end{aligned}"
+                        "Final Answer:\\begin{aligned}&15 \\cr &62\\text{ grams} \\cr &\\text{discrete daily sampling}\\cr &\\text{vs continuous physical rates}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
@@ -1244,7 +1244,7 @@ window.ALEVEL_QUESTIONS = [
                         "Write the formula for the value of the machinery at the end of year $n$, $V_n = V_0(0.85)^n$:\\begin{aligned}V_n &= 50000(0.85)^n\\end{aligned}",
                         "To find the value at the end of the fourth year, calculate $V_4$:\\begin{aligned}V_4 &= 50000(0.85)^4 \\cr &= 50000(0.522006) \\cr &= 26100.31\\end{aligned}<br><br>Rounding to the nearest pound, the value is £26,100.",
                         "To find the total depreciation over the first $8$ years, calculate the remaining value of the machinery at the end of the eighth year, $V_8$:\\begin{aligned}V_8 &= 50000(0.85)^8 \\cr &= 50000(0.272490) \\cr &= 13624.52\\end{aligned}",
-                        "Subtract this remaining value from the initial purchase price of £50,000 to find the total depreciation:\\begin{aligned}\\text{Total Depreciation} &= 50000 - 13624.52 \\cr &= 36375.48\\end{aligned}<br><br>Rounding to the nearest pound, the total depreciation is £36,375.",
+                        "Subtract this remaining value from the initial purchase price of £50,000 to find the total depreciation:\\begin{aligned}&\\text{Total Depreciation}\\cr & \\quad= 50000 - 13624.52 = 36375.48\\end{aligned}<br><br>Rounding to the nearest pound, the total depreciation is £36,375.",
                         "Final Answer:\\begin{aligned}&£26,100 \\cr &£36,375\\end{aligned}"
                 ],
                 "pi_options": [
