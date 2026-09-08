@@ -1267,7 +1267,7 @@ window.ALEVEL_QUESTIONS = [
                         "content": "Unlike standard geometric term indexing where $u_n = a r^{n-1}$, depreciation starts after the first year. The initial value is $V_0$, meaning the value after $n$ years of depreciation is $V_n = V_0 r^n$."
                 }
         },
-         {
+        {
                 "id": "004181",
                 "board": "OCR",
                 "branch": "Pure",
@@ -1280,25 +1280,25 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "1. Find the first three terms in the expansion of $(9 - x)^{-1/2}$ in ascending powers of $x$.<br><br>2. Given that the expansion of $\\dfrac{a+bx}{\\sqrt{9-x}}$ is $12 - x \\dots$, find the values of the constants $a$ and $b$.",
                 "steps": [
-                        "To expand $(9 - x)^{-1/2}$, we first factorise out the $9$ so the first term inside the bracket is $1$:<br>\\begin{aligned}(9 - x)^{-1/2} &= \\left[9\\left(1 - \\dfrac{x}{9}\\right)\\right]^{-1/2} \\cr&= 9^{-1/2} \\left(1 - \\dfrac{x}{9}\\right)^{-1/2}\\end{aligned}<br>$$= \\dfrac{1}{3} \\left(1 - \\dfrac{x}{9}\\right)^{-1/2}$$",
-                        "Apply the binomial expansion formula $(1 + y)^n = 1 + ny + \\dfrac{n(n-1)}{2!}y^2 + \\dots$ with $n = -\\dfrac{1}{2}$ and $y = -\\dfrac{x}{9}$:<br>$$\\left(1 - \\dfrac{x}{9}\\right)^{-1/2} = 1 + \\left(-\\dfrac{1}{2}\\right)\\left(-\\dfrac{x}{9}\\right) + \\dfrac{\\left(-\\dfrac{1}{2}\\right)\\left(-\\dfrac{3}{2}\\right)}{2} \\left(-\\dfrac{x}{9}\\right)^2 + \\dots$$<br>\\begin{aligned} &= 1 + \\dfrac{x}{18} + \\dfrac{3}{8}\\left(\\dfrac{x^2}{81}\\right) \\cr&= 1 + \\dfrac{x}{18} + \\dfrac{x^2}{216} + \\dots\\end{aligned}",
-                        "Multiply the entire expansion by the constant factor of $\\dfrac{1}{3}$:<br>$$\\dfrac{1}{3}\\left(1 + \\dfrac{x}{18} + \\dfrac{x^2}{216} + \\dots\\right) = \\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648} + \\dots$$",
-                        "To find the constants $a$ and $b$, write the rational expression as a product of $(a+bx)$ and the binomial expansion:<br>$$\\dfrac{a + bx}{\\sqrt{9 - x}} = \\left(a + bx\\right)\\left(9 - x\\right)^{-1/2}$$<br>$$\\approx \\left(a + bx\\right)\\left(\\dfrac{1}{3} + \\dfrac{x}{54} + \\dots\\right)$$<br>Expand the terms up to the $x$ term:<br>$$\\text{Expansion} = \\dfrac{a}{3} + \\left(\\dfrac{a}{54} + \\dfrac{b}{3}\\right)x + \\dots$$",
-                        "Equate this expansion to the given expression $12 - x \\dots$:<br>By comparing the constant terms:<br>\\begin{aligned}\\dfrac{a}{3} &= 12 \\cra &= 36\\end{aligned}",
-                        "By comparing the coefficients of the $x$ terms and substituting $a = 36$:<br>\\begin{aligned}\\dfrac{a}{54} + \\dfrac{b}{3} &= -1 \\cr\\dfrac{36}{54} + \\dfrac{b}{3} &= -1\\end{aligned}<br>\\begin{aligned}\\dfrac{2}{3} + \\dfrac{b}{3} &= -1 \\cr2 + b &= -3 \\crb &= -5\\end{aligned}",
-                "Final Answer: \\begin{aligned}\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a &= 36, \\, b \\cr&= -5\\end{aligned}"
+                        "To expand $(9 - x)^{-1/2}$, we first factorise out the $9$ so the first term inside the bracket is $1$:\\begin{aligned}(9 - x)^{-1/2} &= [9(1 - \\dfrac{x}{9})]^{-1/2} \\cr &= 9^{-1/2} (1 - \\dfrac{x}{9})^{-1/2} \\cr &= \\dfrac{1}{3} (1 - \\dfrac{x}{9})^{-1/2}\\end{aligned}",
+                        "Apply the binomial expansion formula $(1 + y)^n = 1 + ny + \\dfrac{n(n-1)}{2!}y^2 + \\dots$ with $n = -\\dfrac{1}{2}$ and $y = -\\dfrac{x}{9}$:\\begin{aligned}&(1 - \\dfrac{x}{9})^{-1/2} \\cr & \\quad = 1 + (-\\dfrac{1}{2})(-\\dfrac{x}{9}) \\cr & \\quad \\quad + \\dfrac{(-\\dfrac{1}{2})(-\\dfrac{3}{2})}{2} (-\\dfrac{x}{9})^2 + \\dots \\cr & \\quad = 1 + \\dfrac{x}{18} + \\dfrac{3}{8}(\\dfrac{x^2}{81}) + \\dots \\cr & \\quad = 1 + \\dfrac{x}{18} + \\dfrac{x^2}{216} + \\dots\\end{aligned}",
+                        "Multiply the entire expansion by the constant factor of $\\dfrac{1}{3}$:\\begin{aligned}&\\dfrac{1}{3}(1 + \\dfrac{x}{18} + \\dfrac{x^2}{216} + \\dots) \\cr & \\quad = \\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648} + \\dots\\end{aligned}",
+                        "To find the constants $a$ and $b$, write the rational expression as a product of $(a+bx)$ and the binomial expansion:\\begin{aligned}\\dfrac{a + bx}{\\sqrt{9 - x}} &= (a + bx)(9 - x)^{-1/2} \\cr &\\approx (a + bx)(\\dfrac{1}{3} + \\dfrac{x}{54} + \\dots)\\end{aligned}<br><br>Expand the terms up to the $x$ term:\\begin{aligned}\\text{Expansion} &= \\dfrac{a}{3} + (\\dfrac{a}{54} + \\dfrac{b}{3})x + \\dots\\end{aligned}",
+                        "Equate this expansion to the given expression $12 - x \\dots$:<br><br>By comparing the constant terms:\\begin{aligned}\\dfrac{a}{3} &= 12 \\cr a &= 36\\end{aligned}",
+                        "By comparing the coefficients of the $x$ terms and substituting $a = 36$:\\begin{aligned}\\dfrac{a}{54} + \\dfrac{b}{3} &= -1 \\cr \\dfrac{36}{54} + \\dfrac{b}{3} &= -1 \\cr \\dfrac{2}{3} + \\dfrac{b}{3} &= -1 \\cr 2 + b &= -3 \\cr b &= -5\\end{aligned}",
+                        "Final Answer:\\begin{aligned}&\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648} \\cr &a = 36, \\quad b = -5\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\dfrac{1}{3} - \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a = 36, \\, b = -5$$",
+                                "ans": "\\begin{aligned}&\\dfrac{1}{3} - \\dfrac{x}{54} + \\dfrac{x^2}{648} \\cr &a = 36, \\quad b = -5\\end{aligned}",
                                 "feedback": "Be careful with signs. Since both $n = -\\dfrac{1}{2}$ and the horizontal variable $-\\dfrac{x}{9}$ are negative, their product in the second term is positive: $\\left(-\\dfrac{1}{2}\\right)\\left(-\\dfrac{x}{9}\\right) = +\\dfrac{x}{18}$. Your second term must be positive."
                         },
                         {
-                                "ans": "$$\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a = 12, \\, b = -5$$",
+                                "ans": "\\begin{aligned}&\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648} \\cr &a = 12, \\quad b = -5\\end{aligned}",
                                 "feedback": "It looks like you forgot to apply the factor of $\\dfrac{1}{3}$ when equating the constant term. The constant term of your expansion is $\\dfrac{a}{3}$, so $\\dfrac{a}{3} = 12 \\implies a = 36$, not $12$."
                         },
                         {
-                                "ans": "$$\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648}, \\quad a = 36, \\, b = -11$$",
+                                "ans": "\\begin{aligned}&\\dfrac{1}{3} + \\dfrac{x}{54} + \\dfrac{x^2}{648} \\cr &a = 36, \\quad b = -11\\end{aligned}",
                                 "feedback": "You may have made an error when solving the simultaneous equation for $b$. Verify that $\\dfrac{2}{3} + \\dfrac{b}{3} = -1 \\implies 2 + b = -3$, which yields $b = -5$."
                         }
                 ],
@@ -1322,25 +1322,25 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "1. Find the first three terms in the expansion of $(1 + 2x)^{-1}$ in ascending powers of $x$, stating the set of values of $x$ for which the expansion is valid.<br><br>2. Given that the expansion of $(1 + ax)(1 + 2x)^{-1}$ is $1 + 5x + bx^2 \\dots$, find the values of the constants $a$ and $b$.",
                 "steps": [
-                        "Apply the binomial expansion formula for negative integer powers, $(1 + y)^{-1} = 1 - y + y^2 - y^3 + \\dots$, with $y = 2x$:<br>$$\\left(1 + 2x\\right)^{-1} = 1 - \\left(2x\\right) + \\left(2x\\right)^2 - \\dots$$<br>$$\\left(1 + 2x\\right)^{-1} = 1 - 2x + 4x^2 - \\dots$$",
-                        "For the binomial expansion to converge and be valid, the absolute value of the horizontal variable $2x$ must be strictly less than $1$:<br>$$|2x| < 1 \\implies |x| < \\dfrac{1}{2}$$",
-                        "To find $a$ and $b$, multiply the linear factor by our binomial expansion series up to the quadratic term:<br>$$\\left(1 + ax\\right)\\left(1 + 2x\\right)^{-1} \\approx \\left(1 + ax\\right)\\left(1 - 2x + 4x^2\\right)$$",
-                        "Expand the brackets and group terms by powers of $x$:<br>$$= 1\\left(1 - 2x + 4x^2\\right) + ax\\left(1 - 2x\\right)$$<br>$$= 1 - 2x + 4x^2 + ax - 2ax^2$$<br>$$= 1 + \\left(a - 2\\right)x + \\left(4 - 2a\\right)x^2$$",
-                        "Compare this result with the given expansion $1 + 5x + bx^2 \\dots$:<br>By comparing the coefficients of the $x$ terms:<br>\\begin{aligned}a - 2 &= 5 \\cra &= 7\\end{aligned}",
-                        "By comparing the coefficients of the $x^2$ terms and substituting $a = 7$:<br>\\begin{aligned}b &= 4 - 2a \\crb &= 4 - 2\\left(7\\right) = 4 - 14 = -10\\end{aligned}",
-                "Final Answer: \\begin{aligned}1 - 2x + 4x^2, \\quad |x| < \\dfrac{1}{2}, \\quad a &= 7, \\, b \\cr&= -10\\end{aligned}"
+                        "Apply the binomial expansion formula for negative integer powers, $(1 + y)^{-1} = 1 - y + y^2 - y^3 + \\dots$, with $y = 2x$:\\begin{aligned}(1 + 2x)^{-1} &= 1 - (2x) + (2x)^2 - \\dots \\cr &= 1 - 2x + 4x^2 - \\dots\\end{aligned}",
+                        "For the binomial expansion to converge and be valid, the absolute value of the horizontal variable $2x$ must be strictly less than $1$:\\begin{aligned}|2x| &< 1 \\cr |x| &< \\dfrac{1}{2}\\end{aligned}",
+                        "To find $a$ and $b$, multiply the linear factor by our binomial expansion series up to the quadratic term:\\begin{aligned}(1 + ax)(1 + 2x)^{-1} &\\approx (1 + ax)(1 - 2x + 4x^2)\\end{aligned}",
+                        "Expand the brackets and group terms by powers of $x$:\\begin{aligned}(1 + ax)(1 - 2x + 4x^2) &= 1(1 - 2x + 4x^2) + ax(1 - 2x) \\cr &= 1 - 2x + 4x^2 + ax - 2ax^2 \\cr &= 1 + (a - 2)x + (4 - 2a)x^2\\end{aligned}",
+                        "Compare this result with the given expansion $1 + 5x + bx^2 \\dots$:<br><br>By comparing the coefficients of the $x$ terms:\\begin{aligned}a - 2 &= 5 \\cr a &= 7\\end{aligned}",
+                        "By comparing the coefficients of the $x^2$ terms and substituting $a = 7$:\\begin{aligned}b &= 4 - 2a \\cr b &= 4 - 2(7) \\cr &= 4 - 14 \\cr &= -10\\end{aligned}",
+                        "Final Answer:\\begin{aligned}&1 - 2x + 4x^2, \\quad |x| < \\dfrac{1}{2} \\cr &a = 7, \\quad b = -10\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$1 - 2x + 4x^2, \\quad |x| < 2, \\quad a = 7, \\, b = -10$$",
+                                "ans": "\\begin{aligned}&1 - 2x + 4x^2, \\quad |x| < 2 \\cr &a = 7, \\quad b = -10\\end{aligned}",
                                 "feedback": "Check your interval of validity. The condition is $|2x| < 1$, which requires dividing $1$ by $2$, yielding $|x| < \\dfrac{1}{2}$, not $|x| < 2$."
                         },
                         {
-                                "ans": "$$1 - 2x + 4x^2, \\quad |x| < \\dfrac{1}{2}, \\quad a = 7, \\, b = 18$$",
+                                "ans": "\\begin{aligned}&1 - 2x + 4x^2, \\quad |x| < \\dfrac{1}{2} \\cr &a = 7, \\quad b = 18\\end{aligned}",
                                 "feedback": "Be careful with the signs in your algebraic expansion. The coefficient of the $x^2$ term is $4 - 2a$. Substituting $a = 7$ yields $4 - 14 = -10$, not $18$."
                         },
                         {
-                                "ans": "$$1 + 2x + 4x^2, \\quad |x| < \\dfrac{1}{2}, \\quad a = 3, \\, b = -2$$",
+                                "ans": "\\begin{aligned}&1 + 2x + 4x^2, \\quad |x| < \\dfrac{1}{2} \\cr &a = 3, \\quad b = -2\\end{aligned}",
                                 "feedback": "Ensure you apply the correct alternating signs for the negative index expansion. The expansion of $(1+y)^{-1}$ is $1 - y + y^2 - \\dots$, which yields $1 - 2x + 4x^2$, not $1 + 2x + 4x^2$."
                         }
                 ],
@@ -1363,25 +1363,25 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "1. Find the first three terms in the expansion of $(1 + 4x)^{1/2}$ in ascending powers of $x$.<br><br>2. Use your expansion with $x = 0.01$ to find an approximate value for $\\sqrt{1.04}$, giving your answer to 5 decimal places.",
                 "steps": [
-                        "Apply the binomial expansion formula $(1 + y)^n = 1 + ny + \\dfrac{n(n-1)}{2!}y^2 + \\dots$ with $n = \\dfrac{1}{2}$ and $y = 4x$:<br>$$\\left(1 + 4x\\right)^{1/2} = 1 + \\left(\\dfrac{1}{2}\\right)\\left(4x\\right) + \\dfrac{\\left(\\dfrac{1}{2}\\right)\\left(-\\dfrac{1}{2}\\right)}{2}\\left(4x\\right)^2 + \\dots$$",
-                        "Simplify the terms of the expansion:<br>$$\\left(1 + 4x\\right)^{1/2} = 1 + 2x + \\left(-\\dfrac{1}{8}\\right)\\left(16x^2\\right) + \\dots$$<br>$$\\left(1 + 4x\\right)^{1/2} = 1 + 2x - 2x^2 + \\dots$$",
-                        "To approximate $\\sqrt{1.04}$, we substitute $x = 0.01$ into both the left-hand and right-hand sides of our expansion:<br>\\begin{aligned}\\text{LHS} &= \\left(1 + 4\\left(0.01\\right)\\right)^{1/2} \\cr&= \\sqrt{1.04}\\end{aligned}",
-                        "Substitute $x = 0.01$ into our simplified binomial expansion:<br>$$\\text{RHS} = 1 + 2\\left(0.01\\right) - 2\\left(0.01\\right)^2$$<br>$$= 1 + 0.02 - 2\\left(0.0001\\right)$$<br>$$= 1 + 0.02 - 0.0002$$",
-                        "Evaluate the arithmetic expression:<br>\\begin{aligned}\\text{RHS} &= 1.02 - 0.0002 \\cr&= 1.0198\\end{aligned}",
-                        "Write the final answer correct to $5$ decimal places:<br>$$\\sqrt{1.04} \\approx 1.01980$$",
-                "Final Answer: $$1 + 2x - 2x^2, \\quad 1.01980$$"
+                        "Apply the binomial expansion formula $(1 + y)^n = 1 + ny + \\dfrac{n(n-1)}{2!}y^2 + \\dots$ with $n = \\dfrac{1}{2}$ and $y = 4x$:\\begin{aligned}(1 + 4x)^{1/2} &= 1 + (\\dfrac{1}{2})(4x) \\cr & \\quad + \\dfrac{(\\dfrac{1}{2})(-\\dfrac{1}{2})}{2}(4x)^2 + \\dots\\end{aligned}",
+                        "Simplify the terms of the expansion:\\begin{aligned}(1 + 4x)^{1/2} &= 1 + 2x + (-\\dfrac{1}{8})(16x^2) + \\dots \\cr &= 1 + 2x - 2x^2 + \\dots\\end{aligned}",
+                        "To approximate $\\sqrt{1.04}$, we substitute $x = 0.01$ into both the left-hand and right-hand sides of our expansion:\\begin{aligned}\\text{LHS} &= (1 + 4(0.01))^{1/2} \\cr &= \\sqrt{1.04}\\end{aligned}",
+                        "Substitute $x = 0.01$ into our simplified binomial expansion:\\begin{aligned}\\text{RHS} &= 1 + 2(0.01) - 2(0.01)^2 \\cr &= 1 + 0.02 - 2(0.0001) \\cr &= 1 + 0.02 - 0.0002\\end{aligned}",
+                        "Evaluate the arithmetic expression:\\begin{aligned}\\text{RHS} &= 1.02 - 0.0002 \\cr &= 1.0198\\end{aligned}",
+                        "Write the final answer correct to $5$ decimal places:\\begin{aligned}\\sqrt{1.04} &\\approx 1.01980\\end{aligned}",
+                        "Final Answer:\\begin{aligned}&1 + 2x - 2x^2 \\cr &1.01980\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$1 + 2x + 2x^2, \\quad 1.02020$$",
+                                "ans": "\\begin{aligned}&1 + 2x + 2x^2 \\cr &1.02020\\end{aligned}",
                                 "feedback": "Be careful with the signs in your coefficients. The second binomial term contains $n(n-1) = \\dfrac{1}{2}\\left(-\\dfrac{1}{2}\\right) = -\\dfrac{1}{4}$, which makes the third term negative: $-2x^2$, not $+2x^2$."
                         },
                         {
-                                "ans": "$$1 + 2x - 2x^2, \\quad 1.0198$$",
+                                "ans": "\\begin{aligned}&1 + 2x - 2x^2 \\cr &1.0198\\end{aligned}",
                                 "feedback": "The question specifically asks for your approximate answer correct to $5$ decimal places. You must pad the final decimal with a trailing zero to write $1.01980$."
                         },
                         {
-                                "ans": "$$1 + 2x - 8x^2, \\quad 1.01920$$",
+                                "ans": "\\begin{aligned}&1 + 2x - 8x^2 \\cr &1.01920\\end{aligned}",
                                 "feedback": "It looks like you forgot to divide the third term coefficient by $2! = 2$ during your expansion steps. Ensure you apply the denominator factor from the formula."
                         }
                 ],
@@ -1404,24 +1404,24 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "1. Find the first three terms in the expansion of $(1 - 3x)^{-2}$ in ascending powers of $x$.<br><br>2. Show that the coefficient of $x^2$ in the expansion of $\\dfrac{2+x}{(1-3x)^2}$ is 60.",
                 "steps": [
-                        "Apply the binomial expansion formula for negative integer powers, $(1 + y)^{-2} = 1 - 2y + 3y^2 - 4y^3 + \\dots$, with $y = -3x$:<br>$$\\left(1 - 3x\\right)^{-2} = 1 - 2\\left(-3x\\right) + 3\\left(-3x\\right)^2 - \\dots$$<br>$$\\left(1 - 3x\\right)^{-2} = 1 + 6x + 27x^2 - \\dots$$",
-                        "To find the coefficient of the rational expression, rewrite it as a product:<br>$$\\dfrac{2 + x}{\\left(1 - 3x\\right)^2} = \\left(2 + x\\right)\\left(1 - 3x\\right)^{-2}$$",
-                        "Substitute our binomial expansion into the product:<br>$$\\approx \\left(2 + x\\right)\\left(1 + 6x + 27x^2\\right)$$",
-                        "To find the coefficient of $x^2$, identify only the terms in the expansion that will result in an $x^2$ term after multiplying out the brackets:<br>$$\\text{Term } 1: 2 \\times 27x^2 = 54x^2$$<br>$$\\text{Term } 2: x \\times 6x = 6x^2$$",
-                        "Sum these two components to find the total $x^2$ term:<br>\\begin{aligned}\\text{Total } x^2 \\text{ term} &= 54x^2 + 6x^2 \\cr&= 60x^2\\end{aligned}<br>The coefficient of $x^2$ is indeed $60$.",
-                "Final Answer: $$1 + 6x + 27x^2, \\quad 60$$"
+                        "Apply the binomial expansion formula for negative integer powers, $(1 + y)^{-2} = 1 - 2y + 3y^2 - 4y^3 + \\dots$, with $y = -3x$:\\begin{aligned}(1 - 3x)^{-2} &= 1 - 2(-3x) + 3(-3x)^2 - \\dots \\cr &= 1 + 6x + 27x^2 - \\dots\\end{aligned}",
+                        "To find the coefficient of the rational expression, rewrite it as a product:\\begin{aligned}\\dfrac{2 + x}{(1 - 3x)^2} &= (2 + x)(1 - 3x)^{-2}\\end{aligned}",
+                        "Substitute our binomial expansion into the product:\\begin{aligned}&\\approx (2 + x)(1 + 6x + 27x^2)\\end{aligned}",
+                        "To find the coefficient of $x^2$, identify only the terms in the expansion that will result in an $x^2$ term after multiplying out the brackets:\\begin{aligned}\\text{Term } 1: 2 \\times 27x^2 &= 54x^2 \\cr \\text{Term } 2: x \\times 6x &= 6x^2\\end{aligned}",
+                        "Sum these two components to find the total $x^2$ term:\\begin{aligned}\\text{Total } x^2 \\text{ term} &= 54x^2 + 6x^2 \\cr &= 60x^2\\end{aligned}<br><br>The coefficient of $x^2$ is indeed $60$.",
+                        "Final Answer:\\begin{aligned}&1 + 6x + 27x^2 \\cr &60\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$1 - 6x + 27x^2, \\quad 48$$",
+                                "ans": "\\begin{aligned}&1 - 6x + 27x^2 \\cr &48\\end{aligned}",
                                 "feedback": "Be careful with signs when substituting $y = -3x$ into the formula. The second term is $-2\\left(-3x\\right) = +6x$. Using $-6x$ instead leads to an incorrect final coefficient of $48$."
                         },
                         {
-                                "ans": "$$1 + 6x + 27x^2, \\quad 54$$",
+                                "ans": "\\begin{aligned}&1 + 6x + 27x^2 \\cr &54\\end{aligned}",
                                 "feedback": "You may have only calculated the product $2 \\times 27x^2 = 54x^2$ and forgotten the contribution from $x \\times 6x = 6x^2$. Both components must be summed to find the total coefficient."
                         },
                         {
-                                "ans": "$$1 + 6x + 9x^2, \\quad 24$$",
+                                "ans": "\\begin{aligned}&1 + 6x + 9x^2 \\cr &24\\end{aligned}",
                                 "feedback": "It looks like you forgot to multiply the third term by the coefficient of $3$ in the expansion formula $\\left(1+y\\right)^{-2} = 1 + 2y + 3y^2$. Ensure you include all factors."
                         }
                 ],
@@ -1444,24 +1444,24 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "1. Find the first three terms in the expansion of $(1 - 8x)^{-1/2}$ in ascending powers of $x$.<br><br>2. Find the coefficient of $x^2$ in the expansion of $(1 + 4x)^3(1 - 8x)^{-1/2}$.",
                 "steps": [
-                        "Apply the binomial expansion formula for negative fractional powers with $n = -\\dfrac{1}{2}$ and $y = -8x$:<br>$$\\left(1 - 8x\\right)^{-1/2} = 1 + \\left(-\\dfrac{1}{2}\\right)\\left(-8x\\right) + \\dfrac{\\left(-\\dfrac{1}{2}\\right)\\left(-\\dfrac{3}{2}\\right)}{2}\\left(-8x\\right)^2 + \\dots$$<br>$$\\left(1 - 8x\\right)^{-1/2} = 1 + 4x + \\dfrac{3}{8}\\left(64x^2\\right) + \\dots$$<br>$$\\left(1 - 8x\\right)^{-1/2} = 1 + 4x + 24x^2 + \\dots$$",
-                        "To find the composite expansion, we first expand $(1 + 4x)^3$ fully using the standard binomial theorem:<br>$$\\left(1 + 4x\\right)^3 = 1^3 + 3\\left(1\\right)^2\\left(4x\\right) + 3\\left(1\\right)\\left(4x\\right)^2 + \\left(4x\\right)^3$$<br>$$\\left(1 + 4x\\right)^3 = 1 + 12x + 48x^2 + 64x^3$$",
-                        "Write the composite product as a multiplication of these two expansion series up to the $x^2$ terms:<br>$$\\text{Product} \\approx \\left(1 + 12x + 48x^2\\right)\\left(1 + 4x + 24x^2\\right)$$",
-                        "Identify the cross-multiplications that yield an $x^2$ term:<br>$$\\text{Term } 1: 1 \\times 24x^2 = 24x^2$$<br>$$\\text{Term } 2: 12x \\times 4x = 48x^2$$<br>$$\\text{Term } 3: 48x^2 \\times 1 = 48x^2$$",
-                        "Sum these three components to obtain the final coefficient of $x^2$:<br>\\begin{aligned}\\text{Total } x^2 \\text{ term} &= 24x^2 + 48x^2 + 48x^2 \\cr&= 120x^2\\end{aligned}<br>So the coefficient of $x^2$ is $120$.",
-                "Final Answer: $$1 + 4x + 24x^2, \\quad 120$$"
+                        "Apply the binomial expansion formula for negative fractional powers with $n = -\\dfrac{1}{2}$ and $y = -8x$:\\begin{aligned}(1 - 8x)^{-1/2} &= 1 + (-\\dfrac{1}{2})(-8x) \\cr & \\quad + \\dfrac{(-\\dfrac{1}{2})(-\\dfrac{3}{2})}{2}(-8x)^2 + \\dots \\cr &= 1 + 4x + \\dfrac{3}{8}(64x^2) + \\dots \\cr &= 1 + 4x + 24x^2 + \\dots\\end{aligned}",
+                        "To find the composite expansion, we first expand $(1 + 4x)^3$ fully using the standard binomial theorem:\\begin{aligned}(1 + 4x)^3 &= 1^3 + 3(1)^2(4x) + 3(1)(4x)^2 + (4x)^3 \\cr &= 1 + 12x + 48x^2 + 64x^3\\end{aligned}",
+                        "Write the composite product as a multiplication of these two expansion series up to the $x^2$ terms:\\begin{aligned}\\text{Product} &\\approx (1 + 12x + 48x^2)(1 + 4x + 24x^2)\\end{aligned}",
+                        "Identify the cross-multiplications that yield an $x^2$ term:\\begin{aligned}\\text{Term } 1: 1 \\times 24x^2 &= 24x^2 \\cr \\text{Term } 2: 12x \\times 4x &= 48x^2 \\cr \\text{Term } 3: 48x^2 \\times 1 &= 48x^2\\end{aligned}",
+                        "Sum these three components to obtain the final coefficient of $x^2$:\\begin{aligned}\\text{Total } x^2 \\text{ term} &= 24x^2 + 48x^2 + 48x^2 \\cr &= 120x^2\\end{aligned}<br><br>So the coefficient of $x^2$ is $120$.",
+                        "Final Answer:\\begin{aligned}&1 + 4x + 24x^2 \\cr &120\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$1 + 4x + 24x^2, \\quad 72$$",
+                                "ans": "\\begin{aligned}&1 + 4x + 24x^2 \\cr &72\\end{aligned}",
                                 "feedback": "You may have missed the middle cross-multiplication term $12x \\times 4x = 48x^2$ when summing. Ensure you count all three possible ways to obtain an $x^2$ term from the product."
                         },
                         {
-                                "ans": "$$1 + 4x + 16x^2, \\quad 104$$",
+                                "ans": "\\begin{aligned}&1 + 4x + 16x^2 \\cr &104\\end{aligned}",
                                 "feedback": "Check your third-term coefficient calculation in the first expansion. The coefficient of $x^2$ in $\\left(1-8x\\right)^{-1/2}$ is $24$, not $16$. Verify that $\\dfrac{3}{8} \\times 64 = 24$."
                         },
                         {
-                                "ans": "$$1 + 4x + 24x^2, \\quad 144$$",
+                                "ans": "\\begin{aligned}&1 + 4x + 24x^2 \\cr &144\\end{aligned}",
                                 "feedback": "This occurs if you used $24x^2$ in your second expansion instead of $48x^2$. Note that the third term of $\\left(1+4x\\right)^3$ is $3\\left(4x\\right)^2 = 3\\left(16x^2\\right) = 48x^2$."
                         }
                 ],
@@ -1483,28 +1483,28 @@ window.ALEVEL_QUESTIONS = [
                         "Quadratics"
                 ],
                 "img": false,
-                "question": "The function $f$ is defined for all real values of $x$ as $f(x) = c + 6x - x^2$, where $c$ is a constant.<br><br>1. Given that the range of $f$ is $f(x) \\le 14$, find the value of $c$.<br>2. Given instead that $ff(3) = 3$, find the possible values of $c$.",
+                "question": "The function $f$ is defined for all real values of $x$ as $f(x) = c + 6x - x^2$, where $c$ is a constant.<br><br>1. Given that the range of $f$ is $f(x) \\le 14$, find the value of $c$.<br><br>2. Given instead that $ff(3) = 3$, find the possible values of $c$.",
                 "steps": [
                         "The function $f(x) = c + 6x - x^2$ can be rearranged into a standard quadratic form: $-x^2 + 6x + c$. Since the leading coefficient $-1$ is negative, this is a downward-facing parabola with a maximum value at its vertex.",
-                        "Complete the square to find the coordinates of the vertex:<br>\\begin{aligned}f(x) &= -\\left(x^2 - 6x\\right) + c \\cr&= -\\left[\\left(x - 3\\right)^2 - 9\\right] + c\\end{aligned}<br>$$f(x) = -\\left(x - 3\\right)^2 + 9 + c$$<br>The maximum value occurs at the vertex where $x = 3$, giving a maximum value of $9 + c$.",
-                        "Since the range of the function is $f(x) \\le 14$, the maximum value must equal $14$:<br>\\begin{aligned}9 + c &= 14 \\crc &= 5\\end{aligned}",
-                        "For the second part of the question, we are given instead that $ff(3) = 3$. First, find an expression for $f(3)$ in terms of $c$:<br>\\begin{aligned}f(3) &= c + 6\\left(3\\right) - 3^2 \\cr&= c + 18 - 9 \\cr&= c + 9\\end{aligned}",
-                        "Now substitute this result back into $f(x)$ to evaluate the composite function $f(f(3))$:<br>\\begin{aligned}f(f(3)) &= f\\left(c + 9\\right) \\cr&= c + 6\\left(c + 9\\right) - \\left(c + 9\\right)^2\\end{aligned}<br>$$f(f(3)) = c + 6c + 54 - \\left(c^2 + 18c + 81\\right)$$<br>$$f(f(3)) = -c^2 - 11c - 27$$",
-                        "Set this expression equal to $3$ and rearrange to form a standard quadratic equation in terms of $c$:<br>\\begin{aligned}-c^2 - 11c - 27 &= 3 \\crc^2 + 11c + 30 &= 0\\end{aligned}",
-                        "Factorise and solve the quadratic equation for $c$:<br>\\begin{aligned}\\left(c + 5\\right)\\left(c + 6\\right) &= 0 \\crc &= -5 \\quad \\text{or} \\quad c = -6\\end{aligned}",
-                "Final Answer: \\begin{aligned}c &= 5, \\quad c \\cr&= -5 \\text{ or } c \\cr&= -6\\end{aligned}"
+                        "Complete the square to find the coordinates of the vertex:\\begin{aligned}f(x) &= -(x^2 - 6x) + c \\cr &= -[(x - 3)^2 - 9] + c \\cr &= -(x - 3)^2 + 9 + c\\end{aligned}<br><br>The maximum value occurs at the vertex where $x = 3$, giving a maximum value of $9 + c$.",
+                        "Since the range of the function is $f(x) \\le 14$, the maximum value must equal $14$:\\begin{aligned}9 + c &= 14 \\cr c &= 5\\end{aligned}",
+                        "For the second part of the question, we are given instead that $ff(3) = 3$. First, find an expression for $f(3)$ in terms of $c$:\\begin{aligned}f(3) &= c + 6(3) - 3^2 \\cr &= c + 18 - 9 \\cr &= c + 9\\end{aligned}",
+                        "Now substitute this result back into $f(x)$ to evaluate the composite function $f(f(3))$:\\begin{aligned}f(f(3)) &= f(c + 9) \\cr &= c + 6(c + 9) - (c + 9)^2 \\cr &= c + 6c + 54 - (c^2 + 18c + 81) \\cr &= -c^2 - 11c - 27\\end{aligned}",
+                        "Set this expression equal to $3$ and rearrange to form a standard quadratic equation in terms of $c$:\\begin{aligned}-c^2 - 11c - 27 &= 3 \\cr c^2 + 11c + 30 &= 0\\end{aligned}",
+                        "Factorise and solve the quadratic equation for $c$:\\begin{aligned}(c + 5)(c + 6) &= 0 \\cr c &= -5 \\quad \\text{or} \\quad c = -6\\end{aligned}",
+                        "Final Answer:\\begin{aligned}c &= 5 \\cr c &= -5 \\quad \\text{or} \\quad c = -6\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$c = 8, \\quad c = -5 \\text{ or } c = -6$$",
+                                "ans": "\\begin{aligned}c &= 8 \\cr c &= -5 \\quad \\text{or} \\quad c = -6\\end{aligned}",
                                 "feedback": "Check your completing the square steps. It looks like you may have subtracted $6$ instead of $9$ when completing the square for $x^2-6x$. Remember that the constant term is $\\left(\\dfrac{b}{2}\\right)^2 = \\left(-3\\right)^2 = 9$."
                         },
                         {
-                                "ans": "$$c = 5, \\quad c = 5 \\text{ or } c = 6$$",
+                                "ans": "\\begin{aligned}c &= 5 \\cr c &= 5 \\quad \\text{or} \\quad c = 6\\end{aligned}",
                                 "feedback": "Be careful with your signs when factorising the quadratic $c^2 + 11c + 30 = 0$. Since all coefficients are positive, the factorisation is $\\left(c+5\\right)\\left(c+6\\right) = 0$, which yields negative roots $c = -5$ and $c = -6$."
                         },
                         {
-                                "ans": "$$c = 5, \\quad c = -5$$",
+                                "ans": "\\begin{aligned}c &= 5 \\cr c &= -5\\end{aligned}",
                                 "feedback": "You have only found one of the two possible values of $c$ for the second part. Ensure you solve for both linear factors of the quadratic equation."
                         }
                 ],
@@ -1514,7 +1514,7 @@ window.ALEVEL_QUESTIONS = [
                         "content": "For a quadratic function $f(x) = ax^2 + bx + c$, the $x$-coordinate of the vertex always lies at $x = -\\dfrac{b}{2a}$. This is a highly reliable shortcut for finding the maximum or minimum of a quadratic function without completing the square."
                 }
         },
-        {
+             {
                 "id": "004187",
                 "board": "OCR",
                 "branch": "Pure",
