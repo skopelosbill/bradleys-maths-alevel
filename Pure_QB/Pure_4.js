@@ -1054,7 +1054,7 @@ window.ALEVEL_QUESTIONS = [
                         "title": "The Head Teacher's Eye: Order of Transformations",
                         "content": "When describing horizontal transformations, the order matters immensely. If you translate first by $a$ and then stretch by $s$, the function becomes $f(sx - a)$. If you stretch first by $s$ and then translate by $a$, the function becomes $f(s(x-a)) = f(sx - sa)$."
                 }
-        }
+        },
         {
                 "id": "004176",
                 "board": "OCR",
