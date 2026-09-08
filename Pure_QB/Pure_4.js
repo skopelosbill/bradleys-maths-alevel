@@ -1266,7 +1266,7 @@ window.ALEVEL_QUESTIONS = [
                         "title": "The Head Teacher's Eye: Depreciation Indexing",
                         "content": "Unlike standard geometric term indexing where $u_n = a r^{n-1}$, depreciation starts after the first year. The initial value is $V_0$, meaning the value after $n$ years of depreciation is $V_n = V_0 r^n$."
                 }
-        }
+        },
          {
                 "id": "004181",
                 "board": "OCR",
