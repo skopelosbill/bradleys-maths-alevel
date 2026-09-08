@@ -1514,7 +1514,7 @@ window.ALEVEL_QUESTIONS = [
                         "content": "For a quadratic function $f(x) = ax^2 + bx + c$, the $x$-coordinate of the vertex always lies at $x = -\\dfrac{b}{2a}$. This is a highly reliable shortcut for finding the maximum or minimum of a quadratic function without completing the square."
                 }
         },
-             {
+        {
                 "id": "004187",
                 "board": "OCR",
                 "branch": "Pure",
@@ -1525,27 +1525,27 @@ window.ALEVEL_QUESTIONS = [
                         "Functions and Mappings"
                 ],
                 "img": false,
-                "question": "The functions $g$ and $h$ are defined for all real values of $x$ (with $x \\ne 1$ for $g(x)$) by:<br>$$g(x) = \\dfrac{2x + 3}{x - 1}, \\quad h(x) = x^2 - 2$$<br>1. Find the range of $g(x)$.<br>2. Find the expression for the composite function $gh(x)$, and state the values of $x$ for which $gh(x)$ is not defined.",
+                "question": "The functions $g$ and $h$ are defined for all real values of $x$ (with $x \\ne 1$ for $g(x)$) by:\\begin{aligned}g(x) &= \\dfrac{2x + 3}{x - 1} \\cr h(x) &= x^2 - 2\\end{aligned}<br><br>1. Find the range of $g(x)$.<br><br>2. Find the expression for the composite function $gh(x)$, and state the values of $x$ for which $gh(x)$ is not defined.",
                 "steps": [
-                        "To find the range of the rational function $g(x)$, let $y = g(x)$ and rearrange the equation to express $x$ in terms of $y$:<br>$$y = \\dfrac{2x + 3}{x - 1}$$<br>\\begin{aligned}y\\left(x - 1\\right) &= 2x + 3 \\cr yx - y &= 2x + 3\\end{aligned}",
-                        "Group the $x$ terms on one side of the equation:<br>\\begin{aligned}yx - 2x &= y + 3 \\cr x\\left(y - 2\\right) &= y + 3\\end{aligned}<br>$$x = \\dfrac{y + 3}{y - 2}$$",
-                        "For $x$ to be defined as a real number, the denominator of this fraction cannot be zero:<br>$$y - 2 \\ne 0 \\implies y \\ne 2$$<br>So, the range of $g(x)$ is all real numbers except $2$. In set notation, this is $ {y \\in \\mathbb{R} : y \\ne 2 }$.",
-                        "To find the composite function $gh(x)$, substitute $h(x) = x^2 - 2$ in place of $x$ inside the function $g(x)$:<br>\\begin{aligned}gh(x) &= g\\left(h\\left(x\\right)\\right) \\cr&= g\\left(x^2 - 2\\right) \\cr&= \\dfrac{2\\left(x^2 - 2\\right) + 3}{\\left(x^2 - 2\\right) - 1}\\end{aligned}",
-                        "Expand and simplify the numerator and denominator:<br>\\begin{aligned}gh(x) &= \\dfrac{2x^2 - 4 + 3}{x^2 - 3} \\cr&= \\dfrac{2x^2 - 1}{x^2 - 3}\\end{aligned}",
-                        "The composite function $gh(x)$ is not defined when the denominator is zero:<br>\\begin{aligned}x^2 - 3 &= 0 \\cr x^2 &= 3 \\cr x &= \\pm\\sqrt{3}\\end{aligned}<br>Additionally, the domain of $gh(x)$ requires that the output of $h(x)$ is within the domain of $g(x)$. Since $g(x)$ is undefined at $x = 1$, we must also exclude $h(x) = 1 \\implies x^2 - 2 = 1 \\implies x = \\pm\\sqrt{3}$, which yields the exact same restriction.",
-                "Final Answer: $$y \\ne 2, \\quad gh(x) = \\dfrac{2x^2 - 1}{x^2 - 3} \\text{ for } x \\ne \\pm\\sqrt{3}$$"
+                        "To find the range of the rational function $g(x)$, let $y = g(x)$ and rearrange the equation to express $x$ in terms of $y$:\\begin{aligned}y &= \\dfrac{2x + 3}{x - 1} \\cr y(x - 1) &= 2x + 3 \\cr yx - y &= 2x + 3\\end{aligned}",
+                        "Group the $x$ terms on one side of the equation:\\begin{aligned}yx - 2x &= y + 3 \\cr x(y - 2) &= y + 3 \\cr x &= \\dfrac{y + 3}{y - 2}\\end{aligned}",
+                        "For $x$ to be defined as a real number, the denominator of this fraction cannot be zero:\\begin{aligned}y - 2 &\\ne 0 \\cr y &\\ne 2\\end{aligned}<br><br>So, the range of $g(x)$ is all real numbers except $2$. In set notation, this is ${y \\in \\mathbb{R} : y \\ne 2}$.",
+                        "To find the composite function $gh(x)$, substitute $h(x) = x^2 - 2$ in place of $x$ inside the function $g(x)$:\\begin{aligned}gh(x) &= g(h(x)) \\cr &= g(x^2 - 2) \\cr &= \\dfrac{2(x^2 - 2) + 3}{(x^2 - 2) - 1}\\end{aligned}",
+                        "Expand and simplify the numerator and denominator:\\begin{aligned}gh(x) &= \\dfrac{2x^2 - 4 + 3}{x^2 - 3} \\cr &= \\dfrac{2x^2 - 1}{x^2 - 3}\\end{aligned}",
+                        "The composite function $gh(x)$ is not defined when the denominator is zero:\\begin{aligned}x^2 - 3 &= 0 \\cr x^2 &= 3 \\cr x &= \\pm\\sqrt{3}\\end{aligned}<br><br>Additionally, the domain of $gh(x)$ requires that the output of $h(x)$ is within the domain of $g(x)$. Since $g(x)$ is undefined at $x = 1$, we must also exclude $h(x) = 1$. This yields:\\begin{aligned}x^2 - 2 &= 1 \\cr x^2 &= 3 \\cr x &= \\pm\\sqrt{3}\\end{aligned}<br><br>This gives the exact same restriction.",
+                        "Final Answer:\\begin{aligned}&y \\ne 2 \\cr &gh(x) = \\dfrac{2x^2 - 1}{x^2 - 3} \\text{ for } x \\ne \\pm\\sqrt{3}\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$y \\ne 1, \\quad gh(x) = \\dfrac{2x^2 - 1}{x^2 - 3} \\text{ for } x \\ne \\pm\\sqrt{3}$$",
+                                "ans": "\\begin{aligned}&y \\ne 1 \\cr &gh(x) = \\dfrac{2x^2 - 1}{x^2 - 3} \\text{ for } x \\ne \\pm\\sqrt{3}\\end{aligned}",
                                 "feedback": "You may have confused the vertical asymptote with the horizontal asymptote. The horizontal asymptote of $g(x) = \\dfrac{2x+3}{x-1}$ is determined by the ratio of the leading coefficients, which is $\\dfrac{2}{1} = 2$. Thus, $y \\ne 2$, not $y \\ne 1$."
                         },
                         {
-                                "ans": "$$y \\ne 2, \\quad gh(x) = \\dfrac{2x^2 - 1}{x^2 - 3} \\text{ for } x \\ne 3$$",
+                                "ans": "\\begin{aligned}&y \\ne 2 \\cr &gh(x) = \\dfrac{2x^2 - 1}{x^2 - 3} \\text{ for } x \\ne 3\\end{aligned}",
                                 "feedback": "Check your denominator solving. Setting $x^2-3 = 0$ yields $x^2 = 3$, so $x = \\pm\\sqrt{3}$, not $x = 3$. You must exclude both the positive and negative roots."
                         },
                         {
-                                "ans": "$$y \\ne 2, \\quad gh(x) = \\dfrac{2x^2 + 1}{x^2 - 1} \\text{ for } x \\ne \\pm 1$$",
+                                "ans": "\\begin{aligned}&y \\ne 2 \\cr &gh(x) = \\dfrac{2x^2 + 1}{x^2 - 1} \\text{ for } x \\ne \\pm 1\\end{aligned}",
                                 "feedback": "It looks like you made a sign error when substituting $h(x)$ into the numerator. Be careful: $2\\left(x^2-2\\right) + 3 = 2x^2 - 4 + 3 = 2x^2 - 1$, not $2x^2 + 1$."
                         }
                 ],
@@ -1566,28 +1566,28 @@ window.ALEVEL_QUESTIONS = [
                         "Functions and Mappings"
                 ],
                 "img": false,
-                "question": "The function $f$ is defined for all real values of $x$ by:<br>$$f(x) = |2x - 5| - 3$$<br>1. Write down the range of $f$.<br>2. Solve the equation $ff(x) = 2$.",
+                "question": "The function $f$ is defined for all real values of $x$ by:\\begin{aligned}f(x) &= |2x - 5| - 3\\end{aligned}<br><br>1. Write down the range of $f$.<br><br>2. Solve the equation $ff(x) = 2$.",
                 "steps": [
-                        "Since the absolute value expression is always non-negative, we have:<br>$$|2x - 5| \\ge 0$$<br>Subtracting $3$ from both sides gives:<br>$$|2x - 5| - 3 \\ge -3 \\implies f(x) \\ge -3$$<br>So, the range of $f(x)$ is $y \\ge -3$.",
-                        "To solve the composite equation $ff(x) = 2$, let $y = f(x)$. This transforms the equation into:<br>\\begin{aligned}f(y) &= 2 \\cr|2y - 5| - 3 &= 2\\end{aligned}",
-                        "Solve this basic modulus equation for $y$:<br>$$|2y - 5| = 5$$<br>This splits into two linear cases:<br>\\begin{aligned}2y - 5 &= 5 \\cr2y &= 10 \\cr y &= 5\\end{aligned}<br>\\begin{aligned}2y - 5 &= -5 \\cr2y &= 0 \\cr y &= 0\\end{aligned}",
-                        "Substitute $f(x)$ back in place of $y$, which gives us two separate modulus equations to solve for $x$:<br>\\begin{aligned}\\text{Case 1: } f(x) &= 0 \\quad \\text{and} \\quad \\text{Case 2: } f(x) \\cr&= 5\\end{aligned}",
-                        "Solve **Case 1**: $f(x) = 0$:<br>\\begin{aligned}|2x - 5| - 3 &= 0 \\cr|2x - 5| &= 3\\end{aligned}<br>\\begin{aligned}2x - 5 &= 3 \\cr2x &= 8 \\cr x &= 4\\end{aligned}<br>\\begin{aligned}2x - 5 &= -3 \\cr2x &= 2 \\cr x &= 1\\end{aligned}",
-                        "Solve **Case 2**: $f(x) = 5$:<br>\\begin{aligned}|2x - 5| - 3 &= 5 \\cr|2x - 5| &= 8\\end{aligned}<br>\\begin{aligned}2x - 5 &= 8 \\cr2x &= 13 \\cr x &= \\dfrac{13}{2} = 6.5\\end{aligned}<br>\\begin{aligned}2x - 5 &= -8 \\cr2x &= -3 \\cr x &= -\\dfrac{3}{2} = -1.5\\end{aligned}",
-                        "Combine all solutions to obtain our final set of roots:<br>$$x = -1.5, \\quad 1, \\quad 4, \\quad 6.5$$",
-                "Final Answer: $$y \\ge -3, \\quad x = -1.5, \\, 1, \\, 4, \\, 6.5$$"
+                        "Since the absolute value expression is always non-negative, we have:\\begin{aligned}|2x - 5| &\\ge 0\\end{aligned}<br><br>Subtracting $3$ from both sides gives:\\begin{aligned}|2x - 5| - 3 &\\ge -3 \\cr f(x) &\\ge -3\\end{aligned}<br><br>So, the range of $f(x)$ is $y \\ge -3$.",
+                        "To solve the composite equation $ff(x) = 2$, let $y = f(x)$. This transforms the equation into:\\begin{aligned}f(y) &= 2 \\cr |2y - 5| - 3 &= 2\\end{aligned}",
+                        "Solve this modulus equation for $y$:\\begin{aligned}|2y - 5| &= 5\\end{aligned}<br><br>This splits into two linear cases:<br><br>For the positive case:\\begin{aligned}2y - 5 &= 5 \\cr 2y &= 10 \\cr y &= 5\\end{aligned}<br><br>For the negative case:\\begin{aligned}2y - 5 &= -5 \\cr 2y &= 0 \\cr y &= 0\\end{aligned}",
+                        "Substitute $f(x)$ back in place of $y$, which gives us two separate modulus equations to solve for $x$:\\begin{aligned}f(x) &= 0 \\cr f(x) &= 5\\end{aligned}",
+                        "Solve **Case 1**: $f(x) = 0$:\\begin{aligned}|2x - 5| - 3 &= 0 \\cr |2x - 5| &= 3\\end{aligned}<br><br>This yields two equations:<br><br>Positive equation:\\begin{aligned}2x - 5 &= 3 \\cr 2x &= 8 \\cr x &= 4\\end{aligned}<br><br>Negative equation:\\begin{aligned}2x - 5 &= -3 \\cr 2x &= 2 \\cr x &= 1\\end{aligned}",
+                        "Solve **Case 2**: $f(x) = 5$:\\begin{aligned}|2x - 5| - 3 &= 5 \\cr |2x - 5| &= 8\\end{aligned}<br><br>This yields two equations:<br><br>Positive equation:\\begin{aligned}2x - 5 &= 8 \\cr 2x &= 13 \\cr x &= 6.5\\end{aligned}<br><br>Negative equation:\\begin{aligned}2x - 5 &= -8 \\cr 2x &= -3 \\cr x &= -1.5\\end{aligned}",
+                        "Combine all solutions to obtain our final set of roots:\\begin{aligned}x &= -1.5, \\quad 1, \\quad 4, \\quad 6.5\\end{aligned}",
+                        "Final Answer:\\begin{aligned}&y \\ge -3 \\cr &x = -1.5, \\, 1, \\, 4, \\, 6.5\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$y \\ge 3, \\quad x = 1, \\, 4, \\, 6.5, \\, -1.5$$",
+                                "ans": "\\begin{aligned}&y \\ge 3 \\cr &x = 1, \\, 4, \\, 6.5, \\, -1.5\\end{aligned}",
                                 "feedback": "Check the range of your modulus function. The vertical shift is $-3$, which means the minimum value of $f(x)$ is $-3$, not $+3$. Thus, the range must be $y \\ge -3$."
                         },
                         {
-                                "ans": "$$y \\ge -3, \\quad x = 4, \\, 6.5$$",
+                                "ans": "\\begin{aligned}&y \\ge -3 \\cr &x = 4, \\, 6.5\\end{aligned}",
                                 "feedback": "You have only solved the positive cases for your modulus equations. Remember that a modulus equation of the form $|Ax+B| = C$ must be solved for both $Ax+B = C$ and $Ax+B = -C$ to capture all valid real roots."
                         },
                         {
-                                "ans": "$$y \\ge -3, \\quad x = 1, \\, 4$$",
+                                "ans": "\\begin{aligned}&y \\ge -3 \\cr &x = 1, \\, 4\\end{aligned}",
                                 "feedback": "It looks like you only solved the first case $f(x) = 0$. You must also solve the second case $f(x) = 5$ to get the complete set of four real roots."
                         }
                 ],
@@ -1609,27 +1609,27 @@ window.ALEVEL_QUESTIONS = [
                         "Linear Equations"
                 ],
                 "img": false,
-                "question": "The function $f$ is defined for $x \\ge 2$ by:<br>$$f(x) = x^2 - 4x + 4$$<br>1. Show that $f$ has an inverse function $f^{-1}$, stating its domain and range.<br>2. Find an expression for $f^{-1}(x)$.<br>3. Solve the equation $f(x) = f^{-1}(x)$.",
+                "question": "The function $f$ is defined for $x \\ge 2$ by:\\begin{aligned}f(x) &= x^2 - 4x + 4\\end{aligned}<br><br>1. Show that $f$ has an inverse function $f^{-1}$, stating its domain and range.<br><br>2. Find an expression for $f^{-1}(x)$.<br><br>3. Solve the equation $f(x) = f^{-1}(x)$.",
                 "steps": [
-                        "First, rewrite $f(x)$ by completing the square:<br>\\begin{aligned}f(x) &= x^2 - 4x + 4 \\cr&= \\left(x - 2\\right)^2\\end{aligned}<br>For $x \\ge 2$, the gradient $f'(x) = 2(x - 2) \\ge 0$, which means the function is strictly increasing. Because it is a one-to-one function on this restricted domain, it has a valid inverse function.",
-                        "For $x \\ge 2$, the value of $\\left(x-2\\right)^2$ is always greater than or equal to $0$, so the range of $f$ is $y \\ge 0$.<br>The domain of $f^{-1}$ is the range of $f$: $x \\ge 0$.<br>The range of $f^{-1}$ is the domain of $f$: $y \\ge 2$.",
-                        "To find $f^{-1}(x)$, let $y = \\left(x - 2\\right)^2$ and solve for $x$ in terms of $y$:<br>\\begin{aligned}\\sqrt{y} &= x - 2 \\cr x &= 2 + \\sqrt{y}\\end{aligned}<br>Since our domain is $x \\ge 2$, we choose the positive square root. Replace variables to write the inverse function:<br>$$f^{-1}(x) = 2 + \\sqrt{x} \\quad \\text{for} \\quad x \\ge 0$$",
-                        "To solve the equation $f(x) = f^{-1}(x)$, we use the mathematical identity that any intersection between a function and its inverse must lie along the line of symmetry $y = x$. Therefore, we solve:<br>\\begin{aligned}f(x) &= x \\cr x^2 - 4x + 4 &= x\\end{aligned}",
-                        "Rearrange to form a standard quadratic equation:<br>$$x^2 - 5x + 4 = 0$$<br>Factorise the quadratic:<br>\\begin{aligned}\\left(x - 1\\right)\\left(x - 4\\right) &= 0 \\cr x &= 1 \\quad \\text{or} \\quad x = 4\\end{aligned}",
-                        "Verify our solutions against the original domain constraints. Since the domain of $f(x)$ is strictly $x \\ge 2$, we must discard $x = 1$. This leaves the unique real solution:<br>$$x = 4$$",
-                "Final Answer: \\begin{aligned}f^{-1}(x) &= 2 + \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x \\cr&= 4\\end{aligned}"
+                        "First, rewrite $f(x)$ by completing the square:\\begin{aligned}f(x) &= x^2 - 4x + 4 \\cr &= (x - 2)^2\\end{aligned}<br><br>For $x \\ge 2$, the gradient $f'(x) = 2(x - 2) \\ge 0$, which means the function is strictly increasing. Because it is a one-to-one function on this restricted domain, it has a valid inverse function.",
+                        "For $x \\ge 2$, the value of $(x-2)^2$ is always greater than or equal to $0$, so the range of $f$ is $y \\ge 0$.<br><br>The domain of $f^{-1}$ is the range of $f$: $x \\ge 0$.<br><br>The range of $f^{-1}$ is the domain of $f$: $y \\ge 2$.",
+                        "To find $f^{-1}(x)$, let $y = (x - 2)^2$ and solve for $x$ in terms of $y$:\\begin{aligned}\\sqrt{y} &= x - 2 \\cr x &= 2 + \\sqrt{y}\\end{aligned}<br><br>Since our domain is $x \\ge 2$, we choose the positive square root. Replace variables to write the inverse function:\\begin{aligned}f^{-1}(x) &= 2 + \\sqrt{x} \\quad \\text{for} \\quad x \\ge 0\\end{aligned}",
+                        "To solve the equation $f(x) = f^{-1}(x)$, we use the mathematical identity that any intersection between a function and its inverse must lie along the line of symmetry $y = x$. Therefore, we solve:\\begin{aligned}f(x) &= x \\cr x^2 - 4x + 4 &= x\\end{aligned}",
+                        "Rearrange to form a standard quadratic equation:\\begin{aligned}x^2 - 5x + 4 &= 0 \\cr (x - 1)(x - 4) &= 0 \\cr x &= 1 \\quad \\text{or} \\quad x = 4\\end{aligned}",
+                        "Verify our solutions against the original domain constraints. Since the domain of $f(x)$ is strictly $x \\ge 2$, we must discard $x = 1$. This leaves the unique real solution:\\begin{aligned}x &= 4\\end{aligned}",
+                        "Final Answer:\\begin{aligned}&f^{-1}(x) = 2 + \\sqrt{x} \\cr &\\text{domain } x \\ge 0, \\quad \\text{range } y \\ge 2 \\cr &x = 4\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$f^{-1}(x) = 2 + \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x = 1 \\text{ or } x = 4$$",
+                                "ans": "\\begin{aligned}&f^{-1}(x) = 2 + \\sqrt{x} \\cr &\\text{domain } x \\ge 0, \\quad \\text{range } y \\ge 2 \\cr &x = 1 \\text{ or } x = 4\\end{aligned}",
                                 "feedback": "You have forgotten to check your solutions against the domain of the original function. Since $f(x)$ is only defined for $x \\ge 2$, the solution $x = 1$ is invalid and must be discarded."
                         },
                         {
-                                "ans": "$$f^{-1}(x) = 2 \\pm \\sqrt{x}, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x = 4$$",
+                                "ans": "\\begin{aligned}&f^{-1}(x) = 2 \\pm \\sqrt{x} \\cr &\\text{domain } x \\ge 0, \\quad \\text{range } y \\ge 2 \\cr &x = 4\\end{aligned}",
                                 "feedback": "An inverse function must be strictly single-valued to be a valid function. Since the range of $f^{-1}$ is $y \\ge 2$, you must only select the positive root, $2 + \\sqrt{x}$."
                         },
                         {
-                                "ans": "$$f^{-1}(x) = \\sqrt{x} - 2, \\quad \\text{domain } x \\ge 0, \\, \\text{range } y \\ge 2, \\quad x = 4$$",
+                                "ans": "\\begin{aligned}&f^{-1}(x) = \\sqrt{x} - 2 \\cr &\\text{domain } x \\ge 0, \\quad \\text{range } y \\ge 2 \\cr &x = 4\\end{aligned}",
                                 "feedback": "It looks like you made a sign error when isolating $x$. Since $x - 2 = \\sqrt{y}$, adding $2$ to both sides yields $x = 2 + \\sqrt{y}$, not $\\sqrt{y} - 2$."
                         }
                 ],
@@ -1650,28 +1650,28 @@ window.ALEVEL_QUESTIONS = [
                         "Functions and Mappings"
                 ],
                 "img": false,
-                "question": "The function $f$ is defined for all real values of $x$ except $x = a$ by:<br>$$f(x) = \\dfrac{3x + 1}{x - 3}$$<br>1. Write down the value of the constant $a$.<br>2. Show that $f(x)$ is a self-inverse function, meaning $f(x) = f^{-1}(x)$ for all $x \\ne 3$.<br>3. Evaluate $f^{2026}(5)$, showing your working clearly.",
+                "question": "The function $f$ is defined for all real values of $x$ except $x = a$ by:\\begin{aligned}f(x) &= \\dfrac{3x + 1}{x - 3}\\end{aligned}<br><br>1. Write down the value of the constant $a$.<br><br>2. Show that $f(x)$ is a self-inverse function, meaning $f(x) = f^{-1}(x)$ for all $x \\ne 3$.<br><br>3. Evaluate $f^{2026}(5)$, showing your working clearly.",
                 "steps": [
-                        "The function $f(x) = \\dfrac{3x + 1}{x - 3}$ is undefined when its denominator is equal to zero:<br>\\begin{aligned}x - 3 &= 0 \\cr x &= 3\\end{aligned}<br>Therefore, the constant restriction value is $a = 3$.",
-                        "To prove $f(x)$ is a self-inverse function, let $y = f(x)$ and solve for $x$ in terms of $y$:<br>\\begin{aligned}y &= \\dfrac{3x + 1}{x - 3} \\cr y\\left(x - 3\\right) &= 3x + 1\\end{aligned}",
-                        "Expand and isolate the $x$ terms:<br>\\begin{aligned}yx - 3y &= 3x + 1 \\cr yx - 3x &= 3y + 1\\end{aligned}<br>\\begin{aligned}x\\left(y - 3\\right) &= 3y + 1 \\cr x &= \\dfrac{3y + 1}{y - 3}\\end{aligned}",
-                        "Replace the variables to write the expression for $f^{-1}(x)$:<br>$$f^{-1}(x) = \\dfrac{3x + 1}{x - 3}$$<br>Since $f^{-1}(x)$ is identical to our original function $f(x)$, the function is proven to be self-inverse.",
-                        "Because $f(x)$ is self-inverse, applying the function twice returns the original input variable:<br>\\begin{aligned}f^2(x) &= f\\left(f\\left(x\\right)\\right) \\cr&= x\\end{aligned}",
-                        "From this, we can deduce that any even number of compositions will simplify to the identity function, while any odd number of compositions simplifies to $f(x)$:<br>\\begin{aligned}f^{2n}(x) &= x \\quad \\text{and} \\quad f^{2n+1}(x) \\cr&= f(x)\\end{aligned}",
-                        "Since $2026$ is an even integer, the composite function $f^{2026}(x)$ is equivalent to the identity function:<br>$$f^{2026}(5) = 5$$",
-                "Final Answer: \\begin{aligned}a &= 3, \\quad f(f(x)) = x \\crf^{-1}(x) &= f(x), \\quad 5\\end{aligned}"
+                        "The function $f(x) = \\dfrac{3x + 1}{x - 3}$ is undefined when its denominator is equal to zero:\\begin{aligned}x - 3 &= 0 \\cr x &= 3\\end{aligned}<br><br>Therefore, the constant restriction value is $a = 3$.",
+                        "To prove $f(x)$ is a self-inverse function, let $y = f(x)$ and solve for $x$ in terms of $y$:\\begin{aligned}y &= \\dfrac{3x + 1}{x - 3} \\cr y(x - 3) &= 3x + 1\\end{aligned}",
+                        "Expand and isolate the $x$ terms:\\begin{aligned}yx - 3y &= 3x + 1 \\cr yx - 3x &= 3y + 1 \\cr x(y - 3) &= 3y + 1 \\cr x &= \\dfrac{3y + 1}{y - 3}\\end{aligned}",
+                        "Replace the variables to write the expression for $f^{-1}(x)$:\\begin{aligned}f^{-1}(x) &= \\dfrac{3x + 1}{x - 3}\\end{aligned}<br><br>Since $f^{-1}(x)$ is identical to our original function $f(x)$, the function is proven to be self-inverse.",
+                        "Because $f(x)$ is self-inverse, applying the function twice returns the original input variable:\\begin{aligned}f^2(x) &= f(f(x)) \\cr &= x\\end{aligned}",
+                        "From this, we can deduce that any even number of compositions will simplify to the identity function, while any odd number of compositions simplifies to $f(x)$:\\begin{aligned}f^{2n}(x) &= x \\cr f^{2n+1}(x) &= f(x)\\end{aligned}",
+                        "Since $2026$ is an even integer, the composite function $f^{2026}(x)$ is equivalent to the identity function:\\begin{aligned}f^{2026}(5) &= 5\\end{aligned}",
+                        "Final Answer:\\begin{aligned}&a = 3 \\cr &f^{-1}(x) = f(x) \\cr &5\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$a = -3, \\quad f^{-1}(x) = f(x), \\quad 5$",
+                                "ans": "\\begin{aligned}&a = -3 \\cr &f^{-1}(x) = f(x) \\cr &5\\end{aligned}",
                                 "feedback": "Check your denominator restriction. The denominator is $x-3$, which is equal to zero at $x = 3$, not $x = -3$. Therefore, $a = 3$."
                         },
                         {
-                                "ans": "$a = 3, \\quad f^{-1}(x) = f(x), \\quad \\dfrac{8}{1}$",
+                                "ans": "\\begin{aligned}&a = 3 \\cr &f^{-1}(x) = f(x) \\cr &\\dfrac{8}{1}\\end{aligned}",
                                 "feedback": "You may have evaluated $f(5)$ instead of $f^{2026}(5)$. Since $2026$ is an even number, the composite function simplifies to the identity, meaning $f^{2026}(x) = x$, so the output is exactly $5$."
                         },
                         {
-                                "ans": "$a = 3, \\quad f^{-1}(x) = \\dfrac{3x - 1}{x + 3}, \\quad 5$",
+                                "ans": "\\begin{aligned}&a = 3 \\cr &f^{-1}(x) = \\dfrac{3x - 1}{x + 3} \\cr &5\\end{aligned}",
                                 "feedback": "It looks like you made a sign error when finding the inverse function. Double-check your algebraic isolation to ensure you get $x = \\dfrac{3y+1}{y-3}$."
                         }
                 ],
@@ -1681,7 +1681,7 @@ window.ALEVEL_QUESTIONS = [
                         "content": "When asked to evaluate high-order compositions like $f^{2026}(x)$, never calculate them term by term. Instead, evaluate the first few terms—$f^2(x)$, $f^3(x)$, etc.—to identify the periodic or self-inverse pattern."
                 }
         },
-        {
+         {
                 "id": "004191",
                 "board": "OCR",
                 "branch": "Pure",
