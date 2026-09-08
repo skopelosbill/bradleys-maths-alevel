@@ -1681,7 +1681,7 @@ window.ALEVEL_QUESTIONS = [
                         "content": "When asked to evaluate high-order compositions like $f^{2026}(x)$, never calculate them term by term. Instead, evaluate the first few terms—$f^2(x)$, $f^3(x)$, etc.—to identify the periodic or self-inverse pattern."
                 }
         },
-         {
+        {
                 "id": "004191",
                 "board": "OCR",
                 "branch": "Pure",
@@ -1693,26 +1693,26 @@ window.ALEVEL_QUESTIONS = [
                         "Linear Equations"
                 ],
                 "img": false,
-                "question": "A curve has parametric equations $x = t + \\dfrac{4}{t}$ and $y = t - \\dfrac{4}{t}$, for $t \\ne 0$.<br><br>1. Find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$, giving your answer in its simplest form.<br>2. Explain why the curve has no stationary points.<br>3. By considering $x + y$, or otherwise, find a cartesian equation of the curve, giving your answer in a form not involving fractions or brackets.",
+                "question": "A curve has parametric equations $x = t + \\dfrac{4}{t}$ and $y = t - \\dfrac{4}{t}$, for $t \\ne 0$.<br><br>1. Find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$, giving your answer in its simplest form.<br><br>2. Explain why the curve has no stationary points.<br><br>3. By considering $x + y$, or otherwise, find a cartesian equation of the curve, giving your answer in a form not involving fractions or brackets.",
                 "steps": [
-                        "To find the derivative $\\dfrac{\\text{d}y}{\\text{d}x}$, we first differentiate $x$ and $y$ with respect to the parameter $t$:<br>\\begin{aligned}\\dfrac{\\text{d}x}{\\text{d}t} &= 1 - \\dfrac{4}{t^2} \\cr&= \\dfrac{t^2 - 4}{t^2}\\end{aligned}<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}t} &= 1 + \\dfrac{4}{t^2} \\cr&= \\dfrac{t^2 + 4}{t^2}\\end{aligned}",
-                        "Apply the parametric chain rule $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{\\dfrac{\\text{d}y}{\\text{d}t}}{\\dfrac{\\text{d}x}{\\text{d}t}}$ and simplify the compound fraction:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{t^2 + 4}{t^2}}{\\dfrac{t^2 - 4}{t^2}} \\cr&= \\dfrac{t^2 + 4}{t^2 - 4}\\end{aligned}",
-                        "Stationary points require the derivative $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which occurs when the numerator of the derivative is equal to zero:<br>\\begin{aligned}t^2 + 4 &= 0 \\crt^2 &= -4\\end{aligned}<br>Since the square of any real number must be non-negative ($t^2 \\ge 0$), the equation $t^2 = -4$ has no real solutions. Since $\\dfrac{\\text{d}y}{\\text{d}t}$ is never zero, the curve has no stationary points.",
-                        "To eliminate the parameter $t$ and find the Cartesian equation, calculate $x + y$ and $x - y$:<br>\\begin{aligned}x + y &= \\left(t + \\dfrac{4}{t}\\right) + \\left(t - \\dfrac{4}{t}\\right) = 2t \\crt &= \\dfrac{x + y}{2}\\end{aligned}<br>\\begin{aligned}x - y &= \\left(t + \\dfrac{4}{t}\\right) - \\left(t - \\dfrac{4}{t}\\right) = \\dfrac{8}{t} \\crt &= \\dfrac{8}{x - y}\\end{aligned}",
-                        "Equate the two expressions for $t$ to eliminate the parameter:<br>\\begin{aligned}\\dfrac{x + y}{2} &= \\dfrac{8}{x - y} \\cr\\left(x + y\\right)\\left(x - y\\right) &= 16\\end{aligned}<br>Expand the difference of two squares to obtain the Cartesian equation:<br>$$x^2 - y^2 = 16$$",
-                "Final Answer: \\begin{aligned}\\dfrac{t^2 + 4}{t^2 - 4}, \\quad t^2 + 4 \\ne 0 \\cr\\text{no stationary points}, \\quad x^2 - y^2 &= 16\\end{aligned}"
+                        "To find the derivative $\\dfrac{\\text{d}y}{\\text{d}x}$, we first differentiate $x$ and $y$ with respect to the parameter $t$:\\begin{aligned}\\dfrac{\\text{d}x}{\\text{d}t} &= 1 - \\dfrac{4}{t^2} \\cr &= \\dfrac{t^2 - 4}{t^2}\\end{aligned}<br><br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}t} &= 1 + \\dfrac{4}{t^2} \\cr &= \\dfrac{t^2 + 4}{t^2}\\end{aligned}",
+                        "Apply the parametric chain rule and simplify the compound fraction:\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{\\text{d}y}{\\text{d}t}}{\\dfrac{\\text{d}x}{\\text{d}t}} \\cr &= \\dfrac{\\dfrac{t^2 + 4}{t^2}}{\\dfrac{t^2 - 4}{t^2}} \\cr &= \\dfrac{t^2 + 4}{t^2 - 4}\\end{aligned}",
+                        "Stationary points require the derivative $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which occurs when the numerator of the derivative is equal to zero:\\begin{aligned}t^2 + 4 &= 0 \\cr t^2 &= -4\\end{aligned}<br><br>Since the square of any real number must be non-negative ($t^2 \\ge 0$), the equation $t^2 = -4$ has no real solutions. Since $\\dfrac{\\text{d}y}{\\text{d}t}$ is never zero, the curve has no stationary points.",
+                        "To eliminate the parameter $t$ and find the Cartesian equation, calculate $x + y$ and $x - y$:<br><br>For $x + y$:\\begin{aligned}x + y &= (t + \\dfrac{4}{t}) + (t - \\dfrac{4}{t}) \\cr &= 2t \\cr t &= \\dfrac{x + y}{2}\\end{aligned}<br><br>For $x - y$:\\begin{aligned}x - y &= (t + \\dfrac{4}{t}) - (t - \\dfrac{4}{t}) \\cr &= \\dfrac{8}{t} \\cr t &= \\dfrac{8}{x - y}\\end{aligned}",
+                        "Equate the two expressions for $t$ to eliminate the parameter:\\begin{aligned}\\dfrac{x + y}{2} &= \\dfrac{8}{x - y} \\cr (x + y)(x - y) &= 16 \\cr x^2 - y^2 &= 16\\end{aligned}",
+                        "Final Answer:\\begin{aligned}&\\dfrac{t^2 + 4}{t^2 - 4} \\cr &\\text{no stationary points} \\cr &x^2 - y^2 = 16\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\dfrac{t^2 - 4}{t^2 + 4}, \\quad t = \\pm 2 \\implies \\text{two stationary points}, \\quad x^2 - y^2 = 16$$",
+                                "ans": "\\begin{aligned}&\\dfrac{t^2 - 4}{t^2 + 4} \\cr &t = \\pm 2 \\implies \\text{two stationary points} \\cr &x^2 - y^2 = 16\\end{aligned}",
                                 "feedback": "You may have inverted the chain rule division when calculating $\\dfrac{\\text{d}y}{\\text{d}x}$. Remember that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{\\text{d}y}{\\text{d}t} \\div \\dfrac{\\text{d}x}{\\text{d}t}$, which puts the positive expression $t^2+4$ in the numerator."
                         },
                         {
-                                "ans": "$$\\dfrac{t^2 + 4}{t^2 - 4}, \\quad t^2 + 4 \\ne 0 \\implies \\text{no stationary points}, \\quad x^2 - y^2 = 8$$",
+                                "ans": "\\begin{aligned}&\\dfrac{t^2 + 4}{t^2 - 4} \\cr &\\text{no stationary points} \\cr &x^2 - y^2 = 8\\end{aligned}",
                                 "feedback": "Check your algebraic step when equating the expressions for $t$. You have $\\dfrac{x+y}{2} = \\dfrac{8}{x-y}$. Multiplying across yields $\\left(x+y\\right)\\left(x-y\\right) = 16$, not $8$."
                         },
                         {
-                                "ans": "$$\\dfrac{t^2 + 4}{t^2 - 4}, \\quad t^2 + 4 \\ne 0 \\implies \\text{no stationary points}, \\quad x^2 + y^2 = 16$$",
+                                "ans": "\\begin{aligned}&\\dfrac{t^2 + 4}{t^2 - 4} \\cr &\\text{no stationary points} \\cr &x^2 + y^2 = 16\\end{aligned}",
                                 "feedback": "Be careful with your algebraic expansion. Multiplying $\\left(x+y\\right)\\left(x-y\\right)$ results in the difference of two squares $x^2 - y^2$, not the sum $x^2 + y^2$."
                         }
                 ],
@@ -1735,28 +1735,28 @@ window.ALEVEL_QUESTIONS = [
                         "Tangents and Normals"
                 ],
                 "img": false,
-                "question": "A curve has parametric equations $x = 3\\cos\\theta$ and $y = 4\\sin\\theta$, for $0 \\le \\theta < 2\\pi$.<br><br>1. Find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $\\theta$.<br>2. Find the equation of the tangent to the curve at the point where $\\theta = \\dfrac{\\pi}{4}$. Give your answer in the form $ax + by = c$, where $a$, $b$, and $c$ are exact constants.<br>3. Eliminate $\\theta$ to find a cartesian equation of the curve.",
+                "question": "A curve has parametric equations $x = 3\\cos\\theta$ and $y = 4\\sin\\theta$, for $0 \\le \\theta < 2\\pi$.<br><br>1. Find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $\\theta$.<br><br>2. Find the equation of the tangent to the curve at the point where $\\theta = \\dfrac{\\pi}{4}$. Give your answer in the form $ax + by = c$, where $a$, $b$, and $c$ are exact constants.<br><br>3. Eliminate $\\theta$ to find a cartesian equation of the curve.",
                 "steps": [
-                        "Differentiate the parametric equations $x = 3\\cos\\theta$ and $y = 4\\sin\\theta$ with respect to the parameter $\\theta$:<br>\\begin{aligned}\\dfrac{\\text{d}x}{\\text{d}\\theta} &= -3\\sin\\theta \\quad \\text{and} \\quad \\dfrac{\\text{d}y}{\\text{d}\\theta} \\cr&= 4\\cos\\theta\\end{aligned}",
-                        "Apply the parametric differentiation formula:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{\\text{d}y}{\\text{d}\\theta}}{\\dfrac{\\text{d}x}{\\text{d}\\theta}} \\cr&= \\dfrac{4\\cos\\theta}{-3\\sin\\theta} \\cr&= -\\dfrac{4}{3}\\cot\\theta\\end{aligned}",
-                        "To find the tangent at $\\theta = \\dfrac{\\pi}{4}$, first evaluate the coordinates of the point of contact:<br>\\begin{aligned}x_1 &= 3\\cos\\left(\\dfrac{\\pi}{4}\\right) \\cr&= \\dfrac{3\\sqrt{2}}{2}\\end{aligned}<br>\\begin{aligned}y_1 &= 4\\sin\\left(\\dfrac{\\pi}{4}\\right) \\cr&= 4\\left(\\dfrac{\\sqrt{2}}{2}\\right) \\cr&= 2\\sqrt{2}\\end{aligned}",
-                        "Evaluate the gradient of the tangent at $\\theta = \\dfrac{\\pi}{4}$:<br>\\begin{aligned}m &= -\\dfrac{4}{3}\\cot\\left(\\dfrac{\\pi}{4}\\right) \\cr&= -\\dfrac{4}{3}\\left(1\\right) \\cr&= -\\dfrac{4}{3}\\end{aligned}",
-                        "Write the equation of the tangent line passing through $\\left(\\dfrac{3\\sqrt{2}}{2}, \\, 2\\sqrt{2}\\right)$ using the point-slope formula:<br>$$y - 2\\sqrt{2} = -\\dfrac{4}{3}\\left(x - \\dfrac{3\\sqrt{2}}{2}\\right)$$",
-                        "Multiply by $3$ and collect terms to rearrange into the form $ax + by = c$:<br>$$3\\left(y - 2\\sqrt{2}\\right) = -4\\left(x - \\dfrac{3\\sqrt{2}}{2}\\right)$$<br>\\begin{aligned}3y - 6\\sqrt{2} &= -4x + 6\\sqrt{2} \\cr4x + 3y &= 12\\sqrt{2}\\end{aligned}",
-                        "To find the Cartesian equation, rearrange the parametric equations to isolate the trigonometric functions:<br>\\begin{aligned}\\cos\\theta &= \\dfrac{x}{3} \\quad \\text{and} \\quad \\sin\\theta \\cr&= \\dfrac{y}{4}\\end{aligned}<br>Substitute these into the fundamental Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$:<br>\\begin{aligned}\\left(\\dfrac{x}{3}\\right)^2 + \\left(\\dfrac{y}{4}\\right)^2 &= 1 \\cr\\dfrac{x^2}{9} + \\dfrac{y^2}{16} &= 1\\end{aligned}",
-                "Final Answer: \\begin{aligned}-\\dfrac{4}{3}\\cot\\theta, \\quad 4x + 3y &= 12\\sqrt{2}, \\quad \\dfrac{x^2}{9} + \\dfrac{y^2}{16} \\cr&= 1\\end{aligned}"
+                        "Differentiate the parametric equations $x = 3\\cos\\theta$ and $y = 4\\sin\\theta$ with respect to the parameter $\\theta$:\\begin{aligned}\\dfrac{\\text{d}x}{\\text{d}\\theta} &= -3\\sin\\theta \\cr \\dfrac{\\text{d}y}{\\text{d}\\theta} &= 4\\cos\\theta\\end{aligned}",
+                        "Apply the parametric differentiation formula:\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{\\text{d}y}{\\text{d}\\theta}}{\\dfrac{\\text{d}x}{\\text{d}\\theta}} \\cr &= \\dfrac{4\\cos\\theta}{-3\\sin\\theta} \\cr &= -\\dfrac{4}{3}\\cot\\theta\\end{aligned}",
+                        "To find the tangent at $\\theta = \\dfrac{\\pi}{4}$, first evaluate the coordinates of the point of contact:<br><br>For $x_1$:\\begin{aligned}x_1 &= 3\\cos(\\dfrac{\\pi}{4}) \\cr &= \\dfrac{3\\sqrt{2}}{2}\\end{aligned}<br><br>For $y_1$:\\begin{aligned}y_1 &= 4\\sin(\\dfrac{\\pi}{4}) \\cr &= 4(\\dfrac{\\sqrt{2}}{2}) \\cr &= 2\\sqrt{2}\\end{aligned}",
+                        "Evaluate the gradient of the tangent at $\\theta = \\dfrac{\\pi}{4}$:\\begin{aligned}m &= -\\dfrac{4}{3}\\cot(\\dfrac{\\pi}{4}) \\cr &= -\\dfrac{4}{3}(1) \\cr &= -\\dfrac{4}{3}\\end{aligned}",
+                        "Write the equation of the tangent line passing through $(\\dfrac{3\\sqrt{2}}{2}, \\, 2\\sqrt{2})$ using the point-slope formula:\\begin{aligned}y - 2\\sqrt{2} &= -\\dfrac{4}{3}(x - \\dfrac{3\\sqrt{2}}{2})\\end{aligned}",
+                        "Multiply by $3$ and collect terms to rearrange into the form $ax + by = c$:\\begin{aligned}3(y - 2\\sqrt{2}) &= -4(x - \\dfrac{3\\sqrt{2}}{2}) \\cr 3y - 6\\sqrt{2} &= -4x + 6\\sqrt{2} \\cr 4x + 3y &= 12\\sqrt{2}\\end{aligned}",
+                        "To find the Cartesian equation, rearrange the parametric equations to isolate the trigonometric functions:\\begin{aligned}\\cos\\theta &= \\dfrac{x}{3} \\cr \\sin\\theta &= \\dfrac{y}{4}\\end{aligned}<br><br>Substitute these into the fundamental Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$:\\begin{aligned}(\\dfrac{x}{3})^2 + (\\dfrac{y}{4})^2 &= 1 \\cr \\dfrac{x^2}{9} + \\dfrac{y^2}{16} &= 1\\end{aligned}",
+                        "Final Answer:\\begin{aligned}&-\\dfrac{4}{3}\\cot\\theta \\cr &4x + 3y = 12\\sqrt{2} \\cr &\\dfrac{x^2}{9} + \\dfrac{y^2}{16} = 1\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$-\\dfrac{4}{3}\\cot\\theta, \\quad 4x + 3y = 12\\sqrt{2}, \\quad \\dfrac{x^2}{3} + \\dfrac{y^2}{4} = 1$$",
+                                "ans": "\\begin{aligned}&-\\dfrac{4}{3}\\cot\\theta \\cr &4x + 3y = 12\\sqrt{2} \\cr &\\dfrac{x^2}{3} + \\dfrac{y^2}{4} = 1\\end{aligned}",
                                 "feedback": "Check your squaring step for the Cartesian equation. Squaring $\\dfrac{x}{3}$ yields $\\dfrac{x^2}{9}$, not $\\dfrac{x^2}{3}$. Ensure you square both the numerator and denominator."
                         },
                         {
-                                "ans": "$$-\\dfrac{3}{4}\\tan\\theta, \\quad 3x + 4y = 12\\sqrt{2}, \\quad \\dfrac{x^2}{9} + \\dfrac{y^2}{16} = 1$$",
+                                "ans": "\\begin{aligned}&-\\dfrac{3}{4}\\tan\\theta \\cr &3x + 4y = 12\\sqrt{2} \\cr &\\dfrac{x^2}{9} + \\dfrac{y^2}{16} = 1\\end{aligned}",
                                 "feedback": "You may have inverted the division when calculating the derivative. The numerator is $\\dfrac{\\text{d}y}{\\text{d}\\theta} = 4\\cos\\theta$, which results in a gradient of $-\\dfrac{4}{3}\\cot\\theta$, not $-\\dfrac{3}{4}\\tan\\theta$."
                         },
                         {
-                                "ans": "$$-\\dfrac{4}{3}\\cot\\theta, \\quad 4x - 3y = 0, \\quad \\dfrac{x^2}{9} + \\dfrac{y^2}{16} = 1$$",
+                                "ans": "\\begin{aligned}&-\\dfrac{4}{3}\\cot\\theta \\cr &4x - 3y = 0 \\cr &\\dfrac{x^2}{9} + \\dfrac{y^2}{16} = 1\\end{aligned}",
                                 "feedback": "It looks like you made a sign error when expanding the right-hand side of your tangent equation. Be careful: $-4\\left(x - \\dfrac{3\\sqrt{2}}{2}\\right) = -4x + 6\\sqrt{2}$. Adding $4x$ and adding $6\\sqrt{2}$ across gives $4x + 3y = 12\\sqrt{2}$."
                         }
                 ],
@@ -1778,32 +1778,32 @@ window.ALEVEL_QUESTIONS = [
                         "Linear Equations"
                 ],
                 "img": false,
-                "question": "A curve has parametric equations $x = e^t + 2$ and $y = e^{2t} - 3$ for all real $t$.<br><br>1. Find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br>2. Show that the curve has no stationary points.<br>3. By eliminating $t$, find the cartesian equation of the curve in the form $y = f(x)$, stating its domain.",
+                "question": "A curve has parametric equations $x = e^t + 2$ and $y = e^{2t} - 3$ for all real $t$.<br><br>1. Find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br>2. Show that the curve has no stationary points.<br><br>3. By eliminating $t$, find the cartesian equation of the curve in the form $y = f(x)$, stating its domain.",
                 "steps": [
-                        "Differentiate the parametric equations $x = e^t + 2$ and $y = e^{2t} - 3$ with respect to the parameter $t$:<br>\\begin{aligned}\\dfrac{\\text{d}x}{\\text{d}t} &= e^t \\quad \\text{and} \\quad \\dfrac{\\text{d}y}{\\text{d}t} \\cr&= 2e^{2t}\\end{aligned}",
-                        "Apply the parametric chain rule formula:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{\\text{d}y}{\\text{d}t}}{\\dfrac{\\text{d}x}{\\text{d}t}} \\cr&= \\dfrac{2e^{2t}}{e^t} \\cr&= 2e^t\\end{aligned}",
-                        "For a stationary point, we require $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which implies:<br>$$2e^t = 0$$<br>The exponential function $e^t$ is strictly positive for all real values of $t$ ($e^t > 0$). Therefore, the derivative $2e^t$ can never equal zero, meaning the curve has no stationary points.",
-                        "To find the Cartesian equation, isolate $e^t$ in the equation for $x$:<br>\\begin{aligned}x &= e^t + 2 \\cre^t &= x - 2\\end{aligned}",
-                        "Substitute $e^t = x - 2$ into the parametric equation for $y$ using the identity $e^{2t} = \\left(e^t\\right)^2$:<br>\\begin{aligned}y &= \\left(e^t\\right)^2 - 3 \\cr y &= \\left(x - 2\\right)^2 - 3\\end{aligned}",
-                        "To state the domain of our Cartesian equation, consider the range of $x$ in terms of the parameter $t$. Since $e^t > 0$ for all real $t$, we have:<br>\\begin{aligned}x &= e^t + 2 > 2 \\cr x > 2\\end{aligned}",
-                "Final Answer: \\begin{aligned}2e^t, \\quad 2e^t \\ne 0 \\cr\\text{no stationary points}, \\quad y &= \\left(x - 2\\right)^2 - 3 \\text{ for } x > 2\\end{aligned}"
+                        "Differentiate the parametric equations $x = e^t + 2$ and $y = e^{2t} - 3$ with respect to the parameter $t$:\\begin{aligned}\\dfrac{\\text{d}x}{\\text{d}t} &= e^t \\cr \\dfrac{\\text{d}y}{\\text{d}t} &= 2e^{2t}\\end{aligned}",
+                        "Apply the parametric chain rule formula:\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{\\text{d}y}{\\text{d}t}}{\\dfrac{\\text{d}x}{\\text{d}t}} \\cr &= \\dfrac{2e^{2t}}{e^t} \\cr &= 2e^t\\end{aligned}",
+                        "For a stationary point, we require $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which implies:\\begin{aligned}2e^t &= 0\\end{aligned}<br><br>The exponential function $e^t$ is strictly positive for all real values of $t$ ($e^t > 0$). Therefore, the derivative $2e^t$ can never equal zero, meaning the curve has no stationary points.",
+                        "To find the Cartesian equation, isolate $e^t$ in the equation for $x$:\\begin{aligned}x &= e^t + 2 \\cr e^t &= x - 2\\end{aligned}",
+                        "Substitute $e^t = x - 2$ into the parametric equation for $y$ using the identity $e^{2t} = (e^t)^2$:\\begin{aligned}y &= (e^t)^2 - 3 \\cr y &= (x - 2)^2 - 3\\end{aligned}",
+                        "To state the domain of our Cartesian equation, consider the range of $x$ in terms of the parameter $t$. Since $e^t > 0$ for all real $t$, we have:\\begin{aligned}x &= e^t + 2 \\cr &> 2 \\cr x &> 2\\end{aligned}",
+                        "Final Answer:\\begin{aligned}&2e^t \\cr &\\text{no stationary points} \\cr &y = (x - 2)^2 - 3 \\quad \\text{for} \\quad x > 2\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$2e^t, \\quad 2e^t \\ne 0 \\implies \\text{no stationary points}, \\quad y = \\left(x - 2\\right)^2 - 3 \\text{ for all } x$$",
+                                "ans": "\\begin{aligned}&2e^t \\cr &\\text{no stationary points} \\cr &y = (x - 2)^2 - 3 \\quad \\text{for all } x\\end{aligned}",
                                 "feedback": "When converting from parametric to Cartesian form, the domain of the Cartesian function must strictly match the range of the $x$-parameter. Since $x = e^t + 2$ and $e^t > 0$, the domain must be restricted to $x > 2$."
                         },
                         {
-                                "ans": "$$2e^{2t}, \\quad 2e^{2t} \\ne 0 \\implies \\text{no stationary points}, \\quad y = \\left(x - 2\\right)^2 - 3 \\text{ for } x > 2$$",
+                                "ans": "\\begin{aligned}&2e^{2t} \\cr &\\text{no stationary points} \\cr &y = (x - 2)^2 - 3 \\quad \\text{for } x > 2\\end{aligned}",
                                 "feedback": "Check your derivative simplification step. Differentiating $y = e^{2t} - 3$ yields $2e^{2t}$. Dividing this by $e^t$ gives $\\dfrac{2e^{2t}}{e^t} = 2e^t$, not $2e^{2t}$."
                         },
                         {
-                                "ans": "$$2e^t, \\quad 2e^t \\ne 0 \\implies \\text{no stationary points}, \\quad y = x^2 - 7 \\text{ for } x > 2$$",
+                                "ans": "\\begin{aligned}&2e^t \\cr &\\text{no stationary points} \\cr &y = x^2 - 7 \\quad \\text{for } x > 2\\end{aligned}",
                                 "feedback": "It looks like you made an expansion error when substituting $e^t = x - 2$. Be careful: the substitution yields $y = \\left(x-2\\right)^2 - 3$. Expanding this gives $y = x^2 - 4x + 4 - 3 = x^2 - 4x + 1$, which is equivalent to keeping it in the completed square form."
                         }
                 ],
                 "bradley_insight": {
-                        "type": "caution",
+                        "type": "pro-tip",
                         "title": "The Head Teacher's Eye: Parametric Domains",
                         "content": "Always remember that the domain of a Cartesian equation derived from parametric equations is not automatically all real numbers. It is strictly bounded by the range of the horizontal parametric variable $x(t)$."
                 }
@@ -1820,27 +1820,27 @@ window.ALEVEL_QUESTIONS = [
                         "Linear Equations"
                 ],
                 "img": false,
-                "question": "A curve has parametric equations $x = t^2$ and $y = t^3 - 3t$ for all real $t$.<br><br>1. Find the coordinates of the points where the curve meets the coordinate axes.<br>2. Find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br>3. Show that there are exactly two stationary points on the curve, and find their coordinates.",
+                "question": "A curve has parametric equations $x = t^2$ and $y = t^3 - 3t$ for all real $t$.<br><br>1. Find the coordinates of the points where the curve meets the coordinate axes.<br><br>2. Find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br>3. Show that there are exactly two stationary points on the curve, and find their coordinates.",
                 "steps": [
-                        "To find where the curve meets the axes, we analyze the conditions $x=0$ and $y=0$ separately:<br>For $x = 0 \\implies t^2 = 0 \\implies t = 0$. Substituting $t=0$ into $y$ gives $y = 0^3 - 3(0) = 0$, giving the origin $(0, 0)$.",
-                        "For $y = 0 \\implies t^3 - 3t = 0 \\implies t\\left(t^2 - 3\\right) = 0$, which yields three solutions for $t$:<br>\\begin{aligned}t &= 0 \\cr(0, 0)\\end{aligned}<br>\\begin{aligned}t &= \\sqrt{3} \\cr x &= \\left(\\sqrt{3}\\right)^2 = 3 \\cr(3, 0)\\end{aligned}\\begin{aligned}t &= -\\sqrt{3} \\cr x &= \\left(-\\sqrt{3}\\right)^2 = 3 \\cr(3, 0)\\end{aligned}<br>So the curve meets the axes at the distinct points $(0, 0)$ and $(3, 0)$.",
-                        "Differentiate the parametric equations with respect to the parameter $t$:<br>\\begin{aligned}\\dfrac{\\text{d}x}{\\text{d}t} &= 2t \\quad \\text{and} \\quad \\dfrac{\\text{d}y}{\\text{d}t} \\cr&= 3t^2 - 3\\end{aligned}",
-                        "Apply the parametric chain rule to find $\\dfrac{\\text{d}y}{\\text{d}x}$:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{\\text{d}y}{\\text{d}t}}{\\dfrac{\\text{d}x}{\\text{d}t}} \\cr&= \\dfrac{3t^2 - 3}{2t}\\end{aligned}",
-                        "Stationary points occur when the derivative $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which requires the numerator to be zero (where the denominator is non-zero):<br>\\begin{aligned}3t^2 - 3 &= 0 \\crt^2 &= 1 \\crt &= \\pm 1\\end{aligned}",
-                        "Find the Cartesian coordinates corresponding to these two parameter values:<br>For $t = 1$: $x = 1^2 = 1$ and $y = 1^3 - 3(1) = -2 \\implies (1, -2)$<br>For $t = -1$: $x = (-1)^2 = 1$ and $y = (-1)^3 - 3(-1) = 2 \\implies (1, 2)$<br>This confirms there are exactly two stationary points on the curve: $(1, -2)$ and $(1, 2)$.",
-                "Final Answer: $$(0,0) \\text{ and } (3,0), \\quad \\dfrac{3t^2 - 3}{2t}, \\quad (1, -2) \\text{ and } (1, 2)$$"
+                        "To find where the curve meets the axes, we analyze the conditions $x=0$ and $y=0$ separately:<br><br>For $x = 0 \\implies t^2 = 0 \\implies t = 0$. Substituting $t=0$ into $y$ gives $y = 0^3 - 3(0) = 0$, giving the origin $(0, 0)$.",
+                        "For the $y$-intercepts, set $y = 0$:\\begin{aligned}t^3 - 3t &= 0 \\cr t(t^2 - 3) &= 0\\end{aligned}<br><br>This yields three solutions for $t$:<br><br>For $t = 0$:\\begin{aligned}x &= 0^2 = 0 \\implies (0, 0)\\end{aligned}<br><br>For $t = \\sqrt{3}$:\\begin{aligned}x &= (\\sqrt{3})^2 = 3 \\implies (3, 0)\\end{aligned}<br><br>For $t = -\\sqrt{3}$:\\begin{aligned}x &= (-\\sqrt{3})^2 = 3 \\implies (3, 0)\\end{aligned}<br><br>So the curve meets the axes at the distinct points $(0, 0)$ and $(3, 0)$.",
+                        "Differentiate the parametric equations with respect to the parameter $t$:\\begin{aligned}\\dfrac{\\text{d}x}{\\text{d}t} &= 2t \\cr \\dfrac{\\text{d}y}{\\text{d}t} &= 3t^2 - 3\\end{aligned}",
+                        "Apply the parametric chain rule to find $\\dfrac{\\text{d}y}{\\text{d}x}$:\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{\\text{d}y}{\\text{d}t}}{\\dfrac{\\text{d}x}{\\text{d}t}} \\cr &= \\dfrac{3t^2 - 3}{2t}\\end{aligned}",
+                        "Stationary points occur when the derivative $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which requires the numerator to be zero (where the denominator is non-zero):\\begin{aligned}3t^2 - 3 &= 0 \\cr t^2 &= 1 \\cr t &= \\pm 1\\end{aligned}",
+                        "Find the Cartesian coordinates corresponding to these two parameter values:<br><br>For $t = 1$:\\begin{aligned}x &= 1^2 = 1 \\cr y &= 1^3 - 3(1) \\cr &= -2 \\implies (1, -2)\\end{aligned}<br><br>For $t = -1$:\\begin{aligned}x &= (-1)^2 = 1 \\cr y &= (-1)^3 - 3(-1) \\cr &= 2 \\implies (1, 2)\\end{aligned}<br><br>This confirms there are exactly two stationary points on the curve: $(1, -2)$ and $(1, 2)$.",
+                        "Final Answer:\\begin{aligned}&(0,0) \\text{ and } (3,0) \\cr &\\dfrac{3t^2 - 3}{2t} \\cr &(1, -2) \\text{ and } (1, 2)\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$(0,0) \\text{ and } (3,0), \\quad \\dfrac{3t^2 - 3}{2t}, \\quad (1, -2)$$",
+                                "ans": "\\begin{aligned}&(0,0) \\text{ and } (3,0) \\cr &\\dfrac{3t^2 - 3}{2t} \\cr &(1, -2)\\end{aligned}",
                                 "feedback": "You have only found one of the two stationary points. Remember that $t^2 = 1$ yields both $t = 1$ and $t = -1$, both of which correspond to valid stationary points on the curve."
                         },
                         {
-                                "ans": "$$(0,0) \\text{ and } (\\sqrt{3},0), \\quad \\dfrac{3t^2 - 3}{2t}, \\quad (1, -2) \\text{ and } (1, 2)$$",
+                                "ans": "\\begin{aligned}&(0,0) \\text{ and } (\\sqrt{3},0) \\cr &\\dfrac{3t^2 - 3}{2t} \\cr &(1, -2) \\text{ and } (1, 2)\\end{aligned}",
                                 "feedback": "Check your horizontal axis coordinate calculation. The parameter values at $y=0$ are $t = \\pm\\sqrt{3}$. Substituting these into $x = t^2$ yields $x = 3$, not $x = \\sqrt{3}$."
                         },
                         {
-                                "ans": "$$(0,0) \\text{ and } (3,0), \\quad \\dfrac{3t^2 - 3}{2}, \\quad (1, -2) \\text{ and } (1, 2)$$",
+                                "ans": "\\begin{aligned}&(0,0) \\text{ and } (3,0) \\cr &\\dfrac{3t^2 - 3}{2} \\cr &(1, -2) \\text{ and } (1, 2)\\end{aligned}",
                                 "feedback": "You may have forgotten to include the derivative of $x(t)$ in the denominator of the chain rule. The derivative is $\\dfrac{\\text{d}x}{\\text{d}t} = 2t$, not $2$, which means the denominator must contain a factor of $t$."
                         }
                 ],
@@ -1862,26 +1862,26 @@ window.ALEVEL_QUESTIONS = [
                         "Linear Equations"
                 ],
                 "img": false,
-                "question": "A curve has parametric equations $x = 2t + \\dfrac{1}{t}$ and $y = 2t - \\dfrac{1}{t}$ for $t \\ne 0$.<br><br>1. Find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$, simplifying your answer as far as possible.<br>2. Show that the curve has no stationary points.<br>3. By eliminating $t$, find the cartesian equation of the curve in a form not involving fractions or brackets.",
+                "question": "A curve has parametric equations $x = 2t + \\dfrac{1}{t}$ and $y = 2t - \\dfrac{1}{t}$ for $t \\ne 0$.<br><br>1. Find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$, simplifying your answer as far as possible.<br><br>2. Show that the curve has no stationary points.<br><br>3. By eliminating $t$, find the cartesian equation of the curve in a form not involving fractions or brackets.",
                 "steps": [
-                        "Differentiate $x$ and $y$ with respect to the parameter $t$:<br>\\begin{aligned}\\dfrac{\\text{d}x}{\\text{d}t} &= 2 - \\dfrac{1}{t^2} \\cr&= \\dfrac{2t^2 - 1}{t^2}\\end{aligned}<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}t} &= 2 + \\dfrac{1}{t^2} \\cr&= \\dfrac{2t^2 + 1}{t^2}\\end{aligned}",
-                        "Apply the parametric differentiation rule $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{\\dfrac{\\text{d}y}{\\text{d}t}}{\\dfrac{\\text{d}x}{\\text{d}t}}$ and simplify:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{2t^2 + 1}{t^2}}{\\dfrac{2t^2 - 1}{t^2}} \\cr&= \\dfrac{2t^2 + 1}{2t^2 - 1}\\end{aligned}",
-                        "Stationary points require $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which occurs when the numerator is zero:<br>\\begin{aligned}2t^2 + 1 &= 0 \\crt^2 &= -0.5\\end{aligned}<br>Since $t^2 \\ge 0$ for all real values of $t$, the equation $t^2 = -0.5$ has no real solutions. Thus, the derivative can never be zero, and there are no stationary points.",
-                        "To find the Cartesian equation, eliminate the parameter $t$ by evaluating the linear combinations $x + y$ and $x - y$:<br>\\begin{aligned}x + y &= \\left(2t + \\dfrac{1}{t}\\right) + \\left(2t - \\dfrac{1}{t}\\right) = 4t \\crt &= \\dfrac{x + y}{4}\\end{aligned}<br>\\begin{aligned}x - y &= \\left(2t + \\dfrac{1}{t}\\right) - \\left(2t - \\dfrac{1}{t}\\right) = \\dfrac{2}{t} \\crt &= \\dfrac{2}{x - y}\\end{aligned}",
-                        "Equate these two expressions for $t$ to eliminate the parameter:<br>$$\\dfrac{x + y}{4} = \\dfrac{2}{x - y}$$<br>Multiply across to remove fractions:<br>\\begin{aligned}\\left(x + y\\right)\\left(x - y\\right) &= 8 \\cr x^2 - y^2 &= 8\\end{aligned}",
-                "Final Answer: \\begin{aligned}\\dfrac{2t^2 + 1}{2t^2 - 1}, \\quad 2t^2 + 1 \\ne 0 \\cr\\text{no stationary points}, \\quad x^2 - y^2 &= 8\\end{aligned}"
+                        "Differentiate $x$ and $y$ with respect to the parameter $t$:\\begin{aligned}\\dfrac{\\text{d}x}{\\text{d}t} &= 2 - \\dfrac{1}{t^2} \\cr &= \\dfrac{2t^2 - 1}{t^2}\\end{aligned}<br><br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}t} &= 2 + \\dfrac{1}{t^2} \\cr &= \\dfrac{2t^2 + 1}{t^2}\\end{aligned}",
+                        "Apply the parametric differentiation rule and simplify:\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\dfrac{\\text{d}y}{\\text{d}t}}{\\dfrac{\\text{d}x}{\\text{d}t}} \\cr &= \\dfrac{\\dfrac{2t^2 + 1}{t^2}}{\\dfrac{2t^2 - 1}{t^2}} \\cr &= \\dfrac{2t^2 + 1}{2t^2 - 1}\\end{aligned}",
+                        "Stationary points require $\\dfrac{\\text{d}y}{\\text{d}x} = 0$, which occurs when the numerator is zero:\\begin{aligned}2t^2 + 1 &= 0 \\cr t^2 &= -0.5\\end{aligned}<br><br>Since $t^2 \\ge 0$ for all real values of $t$, the equation $t^2 = -0.5$ has no real solutions. Thus, the derivative can never be zero, and there are no stationary points.",
+                        "To find the Cartesian equation, eliminate the parameter $t$ by evaluating the linear combinations $x + y$ and $x - y$:<br><br>For $x + y$:\\begin{aligned}x + y &= (2t + \\dfrac{1}{t}) + (2t - \\dfrac{1}{t}) \\cr &= 4t \\cr t &= \\dfrac{x + y}{4}\\end{aligned}<br><br>For $x - y$:\\begin{aligned}x - y &= (2t + \\dfrac{1}{t}) - (2t - \\dfrac{1}{t}) \\cr &= \\dfrac{2}{t} \\cr t &= \\dfrac{2}{x - y}\\end{aligned}",
+                        "Equate these two expressions for $t$ to eliminate the parameter:\\begin{aligned}\\dfrac{x + y}{4} &= \\dfrac{2}{x - y} \\cr (x + y)(x - y) &= 8 \\cr x^2 - y^2 &= 8\\end{aligned}",
+                        "Final Answer:\\begin{aligned}&\\dfrac{2t^2 + 1}{2t^2 - 1} \\cr &\\text{no stationary points} \\cr &x^2 - y^2 = 8\\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\dfrac{2t^2 + 1}{2t^2 - 1}, \\quad 2t^2 + 1 \\ne 0 \\implies \\text{no stationary points}, \\quad x^2 - y^2 = 4$$",
+                                "ans": "\\begin{aligned}&\\dfrac{2t^2 + 1}{2t^2 - 1} \\cr &\\text{no stationary points} \\cr &x^2 - y^2 = 4\\end{aligned}",
                                 "feedback": "Check your cross-multiplication. You have $\\dfrac{x+y}{4} = \\dfrac{2}{x-y}$. Multiplying both sides by $4$ and by $(x-y)$ yields $\\left(x+y\\right)\\left(x-y\\right) = 8$, not $4$."
                         },
                         {
-                                "ans": "$$\\dfrac{2t^2 - 1}{2t^2 + 1}, \\quad t = \\pm \\dfrac{1}{\\sqrt{2}} \\implies \\text{two stationary points}, \\quad x^2 - y^2 = 8$$",
+                                "ans": "\\begin{aligned}&\\dfrac{2t^2 - 1}{2t^2 + 1} \\cr &t = \\pm \\dfrac{1}{\\sqrt{2}} \\implies \\text{two stationary points} \\cr &x^2 - y^2 = 8\\end{aligned}",
                                 "feedback": "You may have inverted the division when simplifying the chain rule. $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{\\text{d}y}{\\text{d}t} \\div \\dfrac{\\text{d}x}{\\text{d}t}$, which puts the positive expression $2t^2+1$ in the numerator."
                         },
                         {
-                                "ans": "$$\\dfrac{2t^2 + 1}{2t^2 - 1}, \\quad 2t^2 + 1 \\ne 0 \\implies \\text{no stationary points}, \\quad x^2 + y^2 = 8$$",
+                                "ans": "\\begin{aligned}&\\dfrac{2t^2 + 1}{2t^2 - 1} \\cr &\\text{no stationary points} \\cr &x^2 + y^2 = 8\\end{aligned}",
                                 "feedback": "Ensure you expand $\\left(x+y\\right)\\left(x-y\\right)$ correctly. It expands as the difference of two squares $x^2 - y^2$, not the sum $x^2 + y^2$."
                         }
                 ],
@@ -1891,7 +1891,7 @@ window.ALEVEL_QUESTIONS = [
                         "content": "For parametric curves featuring reciprocal terms (like $t$ and $\\dfrac{k}{t}$), using algebraic conjugates $(x+y)$ and $(x-y)$ is the most robust and elegant way to eliminate the parameter, leading directly to a hyperbola."
                 }
         },
-        {
+                 {
                 "id": "004196",
                 "board": "OCR",
                 "branch": "Pure",
