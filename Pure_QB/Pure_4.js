@@ -1489,7 +1489,7 @@ window.ALEVEL_QUESTIONS = [
                         "Complete the square to find the coordinates of the vertex:\\begin{aligned}f(x) &= -(x^2 - 6x) + c \\cr &= -[(x - 3)^2 - 9] + c \\cr &= -(x - 3)^2 + 9 + c\\end{aligned}<br><br>The maximum value occurs at the vertex where $x = 3$, giving a maximum value of $9 + c$.",
                         "Since the range of the function is $f(x) \\le 14$, the maximum value must equal $14$:\\begin{aligned}9 + c &= 14 \\cr c &= 5\\end{aligned}",
                         "For the second part of the question, we are given instead that $ff(3) = 3$. First, find an expression for $f(3)$ in terms of $c$:\\begin{aligned}f(3) &= c + 6(3) - 3^2 \\cr &= c + 18 - 9 \\cr &= c + 9\\end{aligned}",
-                        "Now substitute this result back into $f(x)$ to evaluate the composite function $f(f(3))$:\\begin{aligned}f(f(3)) &= f(c + 9) \\cr &= c + 6(c + 9) - (c + 9)^2 \\cr &= c + 6c + 54 - (c^2 + 18c + 81) \\cr &= -c^2 - 11c - 27\\end{aligned}",
+                        "Now substitute this result back into $f(x)$ to evaluate the composite function $f(f(3))$:\\begin{aligned}f(f(3)) &= f(c + 9) \\cr &= c + 6(c + 9) - (c + 9)^2 \\cr &= c + 6c + 54\\cr & \\quad \\quad - (c^2 + 18c + 81) \\cr &= -c^2 - 11c - 27\\end{aligned}",
                         "Set this expression equal to $3$ and rearrange to form a standard quadratic equation in terms of $c$:\\begin{aligned}-c^2 - 11c - 27 &= 3 \\cr c^2 + 11c + 30 &= 0\\end{aligned}",
                         "Factorise and solve the quadratic equation for $c$:\\begin{aligned}(c + 5)(c + 6) &= 0 \\cr c &= -5 \\quad \\text{or} \\quad c = -6\\end{aligned}",
                         "Final Answer:\\begin{aligned}c &= 5 \\cr c &= -5 \\quad \\text{or} \\quad c = -6\\end{aligned}"
