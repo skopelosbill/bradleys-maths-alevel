@@ -1917,7 +1917,7 @@ window.ALEVEL_QUESTIONS = [
                 "pi_options": [
                         {
                                 "ans": "\\begin{aligned}&17.3\\text{ minutes} \\cr &21.4\\text{ minutes}\\end{aligned}",
-                                "feedback": "You may have made an error when calculating the decay constant $k$ of the second substance. Ensure you use $k = -0.1\\ln\\left(0.8\\right) = 0.1\\ln\\left(1.25\\right) \\approx 0.022314$."
+                                "feedback": "You may have made an error when calculating the decay constant $k$ of the second substance. Ensure you use $k = -0.1\\ln\\left(0.8\\right)$ $ = 0.1\\ln\\left(1.25\\right)$ $\\approx 0.022314$."
                         },
                         {
                                 "ans": "\\begin{aligned}&17.3\\text{ minutes} \\cr &18.8\\text{ minutes}\\end{aligned}",
