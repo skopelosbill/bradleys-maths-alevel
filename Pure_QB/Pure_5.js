@@ -632,10 +632,10 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Integration",
-                "topic": "Numerical Methods",
+                "major_area": "Numerical Methods",
+                "topic": "Roots of Equations",
                 "subtopic": [
-                        "Newton Raphson"
+                        "Change of Sign"
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>By considering a change of sign, show that the equation:\\begin{aligned} e^x - 4x^3 = 0 \\end{aligned}has a root, $\\alpha$, in the interval $[0.5, 1.0]$.",
@@ -671,10 +671,10 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Integration",
-                "topic": "Numerical Methods",
+                "major_area": "Numerical Methods",
+                "topic": "Roots of Equations",
                 "subtopic": [
-                        "Newton Raphson"
+                        "Change of Sign"
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>The equation $x^3 - 5x + 3 = 0$ has a real root, $\\alpha$, in the interval $[0.5, 1.0]$.<br><br>1. Show that $\\alpha$ lies in the interval $[0.6, 0.7]$.<br><br>2. By considering the sign of the function at a suitable boundary, show that the value of $\\alpha$ is $0.66$ correct to $2$ decimal places.",
@@ -710,10 +710,10 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Integration",
-                "topic": "Numerical Methods",
+                "major_area": "Numerical Methods",
+                "topic": "Roots of Equations",
                 "subtopic": [
-                        "Newton Raphson"
+                        "Iteration"
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>The equation $x^3 - 3x - 1 = 0$ has a root, $\\alpha$, in the interval $[1.5, 2.0]$.<br><br>1. Show that the equation can be rearranged into the iterative formula:\\begin{aligned} x_{n+1} = \\sqrt{3 + \\dfrac{1}{x_n}} \\end{aligned}2. Using this iterative formula with a starting value of $x_1 = 1.8$, find the values of $x_2$, $x_3$, and $x_4$, giving your answers to $4$ decimal places.",
@@ -749,10 +749,10 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Integration",
-                "topic": "Numerical Methods",
+                "major_area": "Numerical Methods",
+                "topic": "Roots of Equations",
                 "subtopic": [
-                        "Newton Raphson"
+                        "Iteration"
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>A curve has the equation $y = e^{-x} + x^2 - 3$.<br><br>1. Show that the equation $e^{-x} + x^2 - 3 = 0$ can be rearranged into the iterative form:\\begin{aligned} x_{n+1} = \\sqrt{3 - e^{-x_n}} \\end{aligned}2. Using this iterative form with $x_1 = 1.5$, find the values of $x_2$, $x_3$, and $x_4$, giving your answers to $4$ decimal places.",
@@ -788,8 +788,8 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Integration",
-                "topic": "Numerical Methods",
+                "major_area": "Numerical Methods",
+                "topic": "Roots of Equations",
                 "subtopic": [
                         "Newton-Raphson"
                 ],
@@ -834,26 +834,26 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:<br>$$\\sec^2 \\theta + 3\\tan \\theta = 5$$<br>for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
+                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:\\begin{aligned} \\sec^2 \\theta + 3\\tan \\theta = 5 \\end{aligned}for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
                 "steps": [
-                        "Use the fundamental trigonometric identity $\\sec^2 \\theta = 1 + \\tan^2 \\theta$ to write the entire equation in terms of $\\tan \\theta$:<br>$$\\left(1 + \\tan^2 \\theta\\right) + 3\\tan \\theta = 5$$",
-                        "Rearrange the equation to form a standard quadratic equation in $\\tan \\theta$:<br>$$\\tan^2 \\theta + 3\\tan \\theta - 4 = 0$$",
-                        "Factorise the quadratic equation:<br>$$\\left( \\tan \\theta + 4 \\right)\\left( \\tan \\theta - 1 \\right) = 0$$<br>This gives two possible values for $\\tan \\theta$:<br>\\begin{aligned}\\tan \\theta &= 1 \\quad \\text{or} \\quad \\tan \\theta  \\cr&= -4\\end{aligned}",
-                        "Solve for the first case, $\\tan \\theta = 1$, in the domain $0^\\circ \\le \\theta \\le 360^\\circ$:<br>$$\\begin{aligned} \\theta &= \\tan^{-1}(1) \\\\\\ \\theta &= 45.0^\\circ,  225.0^\\circ \\end{aligned}$$",
-                        "Solve for the second case, $\\tan \\theta = -4$, in the domain $0^\\circ \\le \\theta \\le 360^\\circ$:<br>The principal value is $\\theta \\approx -75.96^\\circ$. Find the positive solutions within the required domain:<br>$$\\begin{aligned} \\theta &= 180^\\circ - 75.96^\\circ = 104.0^\\circ \\\\\\ \\theta &= 360^\\circ - 75.96^\\circ = 284.0^\\circ \\end{aligned}$$<br>Combining all solutions gives the final set of answers.",
-                "Final Answer: $$\\theta = 45.0^\\circ,  104.0^\\circ,  225.0^\\circ,  284.0^\\circ$$"
+                        "Use the fundamental trigonometric identity $\\sec^2 \\theta = 1 + \\tan^2 \\theta$ to write the entire equation in terms of $\\tan \\theta$:\\begin{aligned} (1 + \\tan^2 \\theta) + 3\\tan \\theta = 5 \\end{aligned}",
+                        "Rearrange the equation to form a standard quadratic equation in $\\tan \\theta$:\\begin{aligned} \\tan^2 \\theta + 3\\tan \\theta - 4 = 0 \\end{aligned}",
+                        "Factorise the quadratic equation:\\begin{aligned} (\\tan \\theta + 4)(\\tan \\theta - 1) = 0 \\end{aligned}This gives two possible values for $\\tan \\theta$:\\begin{aligned} \\tan \\theta &= 1 \\cr \\tan \\theta &= -4 \\end{aligned}",
+                        "Solve for the first case, $\\tan \\theta = 1$, in the domain $0^\\circ \\le \\theta \\le 360^\\circ$:\\begin{aligned} \\theta &= \\tan^{-1}(1) \\cr &= 45.0^\\circ, \\, 225.0^\\circ \\end{aligned}",
+                        "Solve for the second case, $\\tan \\theta = -4$, in the domain $0^\\circ \\le \\theta \\le 360^\\circ$:<br><br>The principal value is $\\theta \\approx -75.96^\\circ$. Find the positive solutions within the required domain:\\begin{aligned} \\theta &= 180^\\circ - 75.96^\\circ \\cr &= 104.0^\\circ \\cr \\theta &= 360^\\circ - 75.96^\\circ \\cr &= 284.0^\\circ \\end{aligned}Combining all solutions gives the final set of answers.",
+                        "Final Answer: \\begin{aligned} \\theta &= 45.0^\\circ, \\, 104.0^\\circ, \\cr &\\quad 225.0^\\circ, \\, 284.0^\\circ \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\theta = 45.0^\\circ,  225.0^\\circ,  284.0^\\circ, \\quad \\text{Area} = \\text{N/A}$$",
+                                "ans": "\\begin{aligned} \\theta &= 45.0^\\circ, \\, 225.0^\\circ, \\cr &\\quad 284.0^\\circ \\end{aligned}",
                                 "feedback": "You may have missed one of the negative tangent solutions. Since $\\tan \\theta = -4$, there are two solutions in the $0^\\circ \\le \\theta \\le 360^\\circ$ range: one in the second quadrant ($180^\\circ - 76.0^\\circ = 104.0^\\circ$) and one in the fourth quadrant ($360^\\circ - 76.0^\\circ = 284.0^\\circ$)."
                         },
                         {
-                                "ans": "$$\\theta = 45.0^\\circ,  76.0^\\circ,  225.0^\\circ,  256.0^\\circ$$",
+                                "ans": "\\begin{aligned} \\theta &= 45.0^\\circ, \\, 76.0^\\circ, \\cr &\\quad 225.0^\\circ, \\, 256.0^\\circ \\end{aligned}",
                                 "feedback": "Be careful when translating negative tangent values. The root $x = -4$ corresponds to angles in the second and fourth quadrants, which are $104.0^\\circ$ and $284.0^\\circ$, not $76.0^\\circ$ and $256.0^\\circ$."
                         },
                         {
-                                "ans": "$$y = 45^\\circ,  225^\\circ$$",
+                                "ans": "\\begin{aligned} \\theta = 45.0^\\circ, \\, 225.0^\\circ \\end{aligned}",
                                 "feedback": "You found the solutions for the factor $(\\tan \\theta - 1) = 0$, but you must also solve for $(\\tan \\theta + 4) = 0$ to get the complete set of four solutions."
                         }
                 ],
@@ -875,26 +875,26 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:<br>$$2\\text{cosec}^2 \\theta + 5\\cot \\theta = 5$$<br>for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
+                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:\\begin{aligned} 2\\text{cosec}^2 \\theta + 5\\cot \\theta = 5 \\end{aligned}for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
                 "steps": [
-                        "Use the cosecant-cotangent identity $\\csc^2 \\theta = 1 + \\cot^2 \\theta$ to rewrite the equation in terms of $\\cot \\theta$:<br>$$2\\left(1 + \\cot^2 \\theta\\right) + 5\\cot \\theta = 5$$",
-                        "Expand and rearrange to form a standard quadratic equation:<br>$$\\begin{aligned} 2 + 2\\cot^2 \\theta + 5\\cot \\theta &= 5 \\\\\\ 2\\cot^2 \\theta + 5\\cot \\theta - 3 &= 0 \\end{aligned}$$",
-                        "Factorise the quadratic expression:<br>\\begin{aligned}(2\\cot \\theta - 1)(\\cot \\theta + 3) &= 0  \\cr\\cot \\theta &= 0.5 \\quad \\text{or} \\quad \\cot \\theta = -3\\end{aligned}",
-                        "Solve the first branch, $\\cot \\theta = 0.5$, which is equivalent to $\\tan \\theta = 2$:<br>$$\\begin{aligned} \\theta &= \\tan^{-1}(2) \\\\\\ &\\approx 63.4^\\circ, \\quad 243.4^circ \\end{aligned}$$",
-                        "Solve the second branch, $\\cot \\theta = -3$, which is equivalent to $\\tan \\theta = -\\dfrac{1}{3}$:<br>The principal value is $\\theta \\approx -18.4^\\circ$. Finding the positive solutions in the domain:<br>$$\\begin{aligned} \\theta &= 180^\\circ - 18.4^\\circ = 161.6^\\circ \\\\\\ \\theta &= 360^\\circ - 18.4^\\circ = 341.6^\\circ \\end{aligned}$$<br>Combining all solutions yields the final set of answers.",
-                "Final Answer: $$\\theta = 63.4^\\circ,  161.6^\\circ,  243.4^\\circ,  341.6^\\circ$$"
+                        "Use the cosecant-cotangent identity $\\csc^2 \\theta = 1 + \\cot^2 \\theta$ to rewrite the equation in terms of $\\cot \\theta$:\\begin{aligned} 2(1 + \\cot^2 \\theta) + 5\\cot \\theta = 5 \\end{aligned}",
+                        "Expand and rearrange to form a standard quadratic equation:\\begin{aligned} 2 + 2\\cot^2 \\theta + 5\\cot \\theta &= 5 \\cr 2\\cot^2 \\theta + 5\\cot \\theta - 3 &= 0 \\end{aligned}",
+                        "Factorise the quadratic expression:\\begin{aligned} (2\\cot \\theta - 1)(\\cot \\theta + 3) &= 0 \\cr \\cot \\theta &= 0.5 \\cr \\cot \\theta &= -3 \\end{aligned}",
+                        "Solve the first branch, $\\cot \\theta = 0.5$, which is equivalent to $\\tan \\theta = 2$:\\begin{aligned} \\theta &= \\tan^{-1}(2) \\cr &\\approx 63.4^\\circ, \\, 243.4^\\circ \\end{aligned}",
+                        "Solve the second branch, $\\cot \\theta = -3$, which is equivalent to $\\tan \\theta = -\\dfrac{1}{3}$:<br><br>The principal value is $\\theta \\approx -18.4^\\circ$. Finding the positive solutions in the domain:\\begin{aligned} \\theta &= 180^\\circ - 18.4^\\circ \\cr &= 161.6^\\circ \\cr \\theta &= 360^\\circ - 18.4^\\circ \\cr &= 341.6^\\circ \\end{aligned}Combining all solutions yields the final set of answers.",
+                        "Final Answer: \\begin{aligned} \\theta &= 63.4^\\circ, \\, 161.6^\\circ, \\cr &\\quad 243.4^\\circ, \\, 341.6^\\circ \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\theta = 63.4^\\circ,  243.4^\\circ,  341.6^\\circ$$",
+                                "ans": "\\begin{aligned} \\theta &= 63.4^\\circ, \\, 243.4^\\circ, \\cr &\\quad 341.6^\\circ \\end{aligned}",
                                 "feedback": "Make sure you completely evaluate both branches of the quadratic equation. The branch $\\cot \\theta = -3 \\implies \\tan \\theta = -\\dfrac{1}{3}$ yields two solutions in the domain: $161.6^\\circ$ and $341.6^\\circ$."
                         },
                         {
-                                "ans": "$$\\theta = 26.6^\\circ,  161.6^\\circ,  206.6^\\circ,  341.6^\\circ$$",
-                                "feedback": "When taking the reciprocal of $\\cot \\theta = 0.5$, you must solve $\\tan \\theta = \\dfrac{1}{0.5} = 2$. It seems you may have mistakenly solved $\\tan \\theta = 0.5$, which yields $\\theta \\approx 26.6^\\circ$."
+                                "ans": "\\begin{aligned} \\theta &= 26.6^\\circ, \\, 161.6^\\circ, \\cr &\\quad 206.6^\\circ, \\, 341.6^\\circ \\end{aligned}",
+                                "feedback": "When taking the reciprocal of $\\cot \\theta = 0.5$, you must solve $\\tan \\theta = 2$. It seems you may have mistakenly solved $\\tan \\theta = 0.5$, which yields $\\theta \\approx 26.6^\\circ$."
                         },
                         {
-                                "ans": "$$\\theta = 63.4^\\circ,  161.6^\\circ,  243.4^\\circ$$",
+                                "ans": "\\begin{aligned} \\theta &= 63.4^\\circ, \\, 161.6^\\circ, \\cr &\\quad 243.4^\\circ \\end{aligned}",
                                 "feedback": "Make sure you fully solve the quadratic equation. Both positive and negative trigonometric branches should yield exactly two distinct solutions within the $0^\\circ \\le \\theta \\le 360^\\circ$ interval."
                         }
                 ],
@@ -916,26 +916,26 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:<br>$$3\\cos 2\\theta - \\sin \\theta = 2$$<br>for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
+                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:\\begin{aligned} 3\\cos 2\\theta - \\sin \\theta = 2 \\end{aligned}for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
                 "steps": [
-                        "Use the double-angle cosine identity $\\cos 2\\theta = 1 - 2\\sin^2 \\theta$ to write the equation in terms of $\\sin \\theta$:<br>$$3\\left(1 - 2\\sin^2 \\theta\\right) - \\sin \\theta = 2$$",
-                        "Expand, simplify, and rearrange the terms into a standard quadratic form:<br>$$\\begin{aligned} 3 - 6\\sin^2 \\theta - \\sin \\theta &= 2 \\\\\\ -6\\sin^2 \\theta - \\sin \\theta + 1 &= 0 \\\\\\ 6\\sin^2 \\theta + \\sin \\theta - 1 &= 0 \\end{aligned}$$",
-                        "Factorise the quadratic equation:<br>$$\\left(3\\sin \\theta - 1\\right)\\left(2\\sin \\theta + 1\\right) = 0$$<br>This gives two possible values for $\\sin \\theta$:<br>\\begin{aligned}\\sin \\theta &= \\dfrac{1}{3} \\quad \\text{or} \\quad \\sin \\theta  \\cr&= -\\dfrac{1}{2}\\end{aligned}",
-                        "Solve the first case, $\\sin \\theta = \\dfrac{1}{3}$, in the domain $0^\\circ \\le \\theta \\le 360^\\circ$:<br>$$\\begin{aligned} \\theta &= \\sin^{-1}\\left(\\dfrac{1}{3}\\right) \\\\\\ \\theta &\\approx 19.5^\\circ,  160.5^\\circ \\end{aligned}$$",
-                        "Solve the second case, $\\sin \\theta = -\\dfrac{1}{2}$, in the domain $0^\\circ \\le \\theta \\le 360^\\circ$:<br>The principal value is $\\theta = -30.0^\\circ$. The positive angles within the domain are:<br>$$\\begin{aligned} \\theta &= 180^\\circ - (-30.0^\\circ) = 210.0^\\circ \\\\\\ \\theta &= 360^\\circ + (-30.0^\\circ) = 330.0^\\circ \\end{aligned}$$<br>Combining all solutions gives the final set of answers.",
-                "Final Answer: $$\\theta = 19.5^\\circ,  160.5^\\circ,  210.0^\\circ,  330.0^\\circ$$"
+                        "Use the double-angle cosine identity $\\cos 2\\theta = 1 - 2\\sin^2 \\theta$ to write the equation in terms of $\\sin \\theta$:\\begin{aligned} 3(1 - 2\\sin^2 \\theta) - \\sin \\theta = 2 \\end{aligned}",
+                        "Expand, simplify, and rearrange the terms into a standard quadratic form:\\begin{aligned} 3 - 6\\sin^2 \\theta - \\sin \\theta &= 2 \\cr -6\\sin^2 \\theta - \\sin \\theta + 1 &= 0 \\cr 6\\sin^2 \\theta + \\sin \\theta - 1 &= 0 \\end{aligned}",
+                        "Factorise the quadratic equation:\\begin{aligned} (3\\sin \\theta - 1)(2\\sin \\theta + 1) = 0 \\end{aligned}This gives two possible values for $\\sin \\theta$:\\begin{aligned} \\sin \\theta &= \\dfrac{1}{3} \\cr \\sin \\theta &= -\\dfrac{1}{2} \\end{aligned}",
+                        "Solve the first case, $\\sin \\theta = \\dfrac{1}{3}$, in the domain $0^\\circ \\le \\theta \\le 360^\\circ$:\\begin{aligned} \\theta &= \\sin^{-1}\\big(\\dfrac{1}{3}\\big) \\cr &\\approx 19.5^\\circ, \\, 160.5^\\circ \\end{aligned}",
+                        "Solve the second case, $\\sin \\theta = -\\dfrac{1}{2}$, in the domain $0^\\circ \\le \\theta \\le 360^\\circ$:<br><br>The principal value is $\\theta = -30.0^\\circ$. The positive angles within the domain are:\\begin{aligned} \\theta &= 180^\\circ - (-30.0^\\circ) \\cr &= 210.0^\\circ \\cr \\theta &= 360^\\circ + (-30.0^\\circ) \\cr &= 330.0^\\circ \\end{aligned}Combining all solutions gives the final set of answers.",
+                        "Final Answer: \\begin{aligned} \\theta &= 19.5^\\circ, \\, 160.5^\\circ, \\cr &\\quad 210.0^\\circ, \\, 330.0^\\circ \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\theta = 19.5^\\circ,  160.5^\\circ,  150.0^\\circ,  330.0^\\circ$$",
+                                "ans": "\\begin{aligned} \\theta &= 19.5^\\circ, \\, 160.5^\\circ, \\cr &\\quad 150.0^\\circ, \\, 330.0^\\circ \\end{aligned}",
                                 "feedback": "Check your quadrant adjustments for $\\sin \\theta = -\\dfrac{1}{2}$. Sine is negative in the third and fourth quadrants. The third quadrant solution is $180^\\circ - (-30.0^\\circ) = 210.0^\\circ$, not $150.0^\\circ$ (which is in the second quadrant where sine is positive)."
                         },
                         {
-                                "ans": "$$\\theta = 19.5^\\circ,  160.5^\\circ,  210.0^\\circ$$",
+                                "ans": "\\begin{aligned} \\theta &= 19.5^\\circ, \\, 160.5^\\circ, \\cr &\\quad 210.0^\\circ \\end{aligned}",
                                 "feedback": "Remember to solve completely for both roots of your factorised quadratic. The branch $\\sin \\theta = -\\dfrac{1}{2}$ must produce two positive angles in the interval: $210.0^\\circ$ and $330.0^\\circ$."
                         },
                         {
-                                "ans": "$$\\theta = 19.5^\\circ,  210.0^\\circ,  330.0^\\circ$$",
+                                "ans": "\\begin{aligned} \\theta &= 19.5^\\circ, \\, 210.0^\\circ, \\cr &\\quad 330.0^\\circ \\end{aligned}",
                                 "feedback": "For the positive branch $\\sin \\theta = \\dfrac{1}{3}$, sine is positive in the first and second quadrants. This yields two solutions in the domain: $19.5^\\circ$ and $180^\\circ - 19.5^\\circ = 160.5^\\circ$."
                         }
                 ],
@@ -957,26 +957,26 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:<br>$$4\\sin^2 \\theta - 8\\cos \\theta = 1$$<br>for $0 \\le \\theta \\le 2\\pi$, giving your answers in terms of $\\arccos$.",
+                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:\\begin{aligned} 4\\sin^2 \\theta - 8\\cos \\theta = 1 \\end{aligned}for $0 \\le \\theta \\le 2\\pi$, giving your answers in terms of $\\arccos$.",
                 "steps": [
-                        "Use the fundamental identity $\\sin^2 \\theta = 1 - \\cos^2 \\theta$ to write the entire equation in terms of $\\cos \\theta$:<br>$$4\\left(1 - \\cos^2 \\theta\\right) - 8\\cos \\theta = 1$$",
-                        "Expand, simplify, and rearrange the quadratic equation:<br>$$\\begin{aligned} 4 - 4\\cos^2 \\theta - 8\\cos \\theta - 1 &= 0 \\\\\\ -4\\cos^2 \\theta - 8\\cos \\theta + 3 &= 0 \\\\\\ 4\\cos^2 \\theta + 8\\cos \\theta - 3 &= 0 \\end{aligned}$$",
-                        "Since the quadratic expression does not factorise cleanly, apply the quadratic formula with $a = 4$, $b = 8$, and $c = -3$ to solve for $\\cos \\theta$:<br>$$\\begin{aligned} \\cos \\theta &= \\dfrac{-8 \\pm \\sqrt{8^2 - 4(4)(-3)}}{2(4)} \\\\\\ &= \\dfrac{-8 \\pm \\sqrt{64 + 48}}{8} \\\\\\ &= \\dfrac{-8 \\pm \\sqrt{112}}{8} \\\\\\ &= \\dfrac{-8 \\pm 4\\sqrt{7}}{8} \\\\\\ &= \\dfrac{-2 \\pm \\sqrt{7}}{2} \\end{aligned}$$",
-                        "Determine the valid branch of solutions by checking the range constraint of cosine, $-1 \\le \\cos \\theta \\le 1$:<br>Checking both branches:<br>$$\\begin{aligned} \\dfrac{-2 - \\sqrt{7}}{2} &\\approx -2.32 \\quad \\text{(outside range)} \\\\\\ \\dfrac{-2 + \\sqrt{7}}{2} &\\approx 0.32 \\quad \\text{(within range)} \\end{aligned}$$<br>Therefore, we only solve the equation for the valid branch: $\\cos \\theta = \\dfrac{-2 + \\sqrt{7}}{2}$.",
-                        "Find the solutions in radians within the domain $0 \\le \\theta \\le 2\\pi$:<br>Since $\\cos \\theta$ is positive, there are two solutions (one in the first quadrant, one in the fourth quadrant):<br>$$\\begin{aligned} \\theta &= \\arccos\\left(\\dfrac{-2 + \\sqrt{7}}{2}\\right) \\\\\\ \\theta &= 2\\pi - \\arccos\\left(\\dfrac{-2 + \\sqrt{7}}{2}\\right) \\end{aligned}$$",
-                "Final Answer: $$\\theta = \\arccos\\left(\\dfrac{-2 + \\sqrt{7}}{2}\\right),  2\\pi - \\arccos\\left(\\dfrac{-2 + \\sqrt{7}}{2}\\right)$$"
+                        "Use the fundamental identity $\\sin^2 \\theta = 1 - \\cos^2 \\theta$ to write the entire equation in terms of $\\cos \\theta$:\\begin{aligned} 4(1 - \\cos^2 \\theta) - 8\\cos \\theta = 1 \\end{aligned}",
+                        "Expand, simplify, and rearrange the quadratic equation:\\begin{aligned} 4 - 4\\cos^2 \\theta - 8\\cos \\theta - 1 &= 0 \\cr -4\\cos^2 \\theta - 8\\cos \\theta + 3 &= 0 \\cr 4\\cos^2 \\theta + 8\\cos \\theta - 3 &= 0 \\end{aligned}",
+                        "Since the quadratic expression does not factorise cleanly, apply the quadratic formula to solve for $\\cos \\theta$:\\begin{aligned} &\\cos \\theta \\cr &\\quad = \\dfrac{-8 \\pm \\sqrt{8^2 - 4(4)(-3)}}{2(4)} \\cr &\\quad = \\dfrac{-8 \\pm \\sqrt{112}}{8} \\cr &\\quad = \\dfrac{-8 \\pm 4\\sqrt{7}}{8} \\cr &\\quad = \\dfrac{-2 \\pm \\sqrt{7}}{2} \\end{aligned}",
+                        "Determine the valid branch of solutions by checking the range constraint of cosine, $-1 \\le \\cos \\theta \\le 1$:\\begin{aligned} \\dfrac{-2 - \\sqrt{7}}{2} &\\approx -2.32 \\quad \\text{(outside range)} \\cr \\dfrac{-2 + \\sqrt{7}}{2} &\\approx 0.32 \\quad \\text{(within range)} \\end{aligned}Therefore, we only solve the equation for the valid branch: $\\cos \\theta = \\dfrac{-2 + \\sqrt{7}}{2}$.",
+                        "Find the solutions in radians within the domain $0 \\le \\theta \\le 2\\pi$:\\begin{aligned} \\theta &= \\arccos\\big(\\dfrac{-2 + \\sqrt{7}}{2}\\big) \\cr \\theta &= 2\\pi - \\arccos\\big(\\dfrac{-2 + \\sqrt{7}}{2}\\big) \\end{aligned}",
+                        "Final Answer: \\begin{aligned} \\theta &= \\arccos\\big(\\dfrac{-2 + \\sqrt{7}}{2}\\big), \\cr &\\quad 2\\pi - \\arccos\\big(\\dfrac{-2 + \\sqrt{7}}{2}\\big) \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\theta = \\arccos\\left(\\dfrac{-2 - \\sqrt{7}}{2}\\right),  \\arccos\\left(\\dfrac{-2 + \\sqrt{7}}{2}\\right)$$",
+                                "ans": "\\begin{aligned} \\theta &= \\arccos\\big(\\dfrac{-2 - \\sqrt{7}}{2}\\big), \\cr &\\quad \\arccos\\big(\\dfrac{-2 + \\sqrt{7}}{2}\\big) \\end{aligned}",
                                 "feedback": "Remember to evaluate the validity of both branches of your quadratic formula result. The branch $\\cos \\theta = \\dfrac{-2 - \\sqrt{7}}{2} \\approx -2.32$ is strictly outside the defined range of cosine, $-1 \\le \\cos \\theta \\le 1$, and produces no real solutions."
                         },
                         {
-                                "ans": "$$\\theta = \\arccos\\left(\\dfrac{-2 + \\sqrt{7}}{2}\\right),  \\pi - \\arccos\\left(\\dfrac{-2 + \\sqrt{7}}{2}\\right)$$",
+                                "ans": "\\begin{aligned} \\theta &= \\arccos\\big(\\dfrac{-2 + \\sqrt{7}}{2}\\big), \\cr &\\quad \\pi - \\arccos\\big(\\dfrac{-2 + \\sqrt{7}}{2}\\big) \\end{aligned}",
                                 "feedback": "Check your quadrant adjustments for a positive cosine value. Cosine is positive in the first and fourth quadrants. The fourth quadrant solution is $2\\pi - \\theta_{PV}$, not $\\pi - \\theta_{PV}$ (which is in the second quadrant)."
                         },
                         {
-                                "ans": "$$\\theta = \\arccos\\left(\\dfrac{-2 + \\sqrt{7}}{2}\\right)$$",
+                                "ans": "\\begin{aligned} \\theta = \\arccos\\big(\\dfrac{-2 + \\sqrt{7}}{2}\\big) \\end{aligned}",
                                 "feedback": "You found the principal value in the first quadrant, but remember that cosine is also positive in the fourth quadrant. You must include the corresponding fourth-quadrant solution $2\\pi - \\theta_{PV}$ to complete the set."
                         }
                 ],
@@ -997,26 +997,26 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:<br>$$3\\sin 2\\theta = 4\\cos \\theta$$<br>for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
+                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:\\begin{aligned} 3\\sin 2\\theta = 4\\cos \\theta \\end{aligned}for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
                 "steps": [
-                        "Use the double-angle sine identity $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$ to expand the left-hand side:<br>$$3\\left(2\\sin \\theta \\cos \\theta\\right) = 4\\cos \\theta$$",
-                        "Bring all terms to one side of the equation:<br>$$6\\sin \\theta \\cos \\theta - 4\\cos \\theta = 0$$",
-                        "Factorise out the common term $2\\cos \\theta$:<br>$$2\\cos \\theta\\left(3\\sin \\theta - 2\\right) = 0$$<br>This gives two branches to solve:<br>\\begin{aligned}\\cos \\theta &= 0 \\quad \\text{or} \\quad \\sin \\theta  \\cr&= \\dfrac{2}{3}\\end{aligned}",
-                        "Solve the first branch, $\\cos \\theta = 0$, in the domain $0^\\circ \\le \\theta \\le 360^\\circ$:<br>$$\\theta = 90.0^\\circ,  270.0^\\circ$$",
-                        "Solve the second branch, $\\sin \\theta = \\dfrac{2}{3}$, in the domain $0^\\circ \\le \\theta \\le 360^\\circ$:<br>$$\\begin{aligned} \\theta &= \\sin^{-1}\\left(\\dfrac{2}{3}\\right) \\\\\\ \\theta &\\approx 41.8^\\circ,  180^\\circ - 41.8^\\circ = 138.2^\\circ \\end{aligned}$$<br>Combining all solutions yields the final set of answers.",
-                "Final Answer: $$\\theta = 41.8^\\circ,  90.0^\\circ,  138.2^\\circ,  270.0^\\circ$$"
+                        "Use the double-angle sine identity $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$ to expand the left-hand side:\\begin{aligned} 3(2\\sin \\theta \\cos \\theta) = 4\\cos \\theta \\end{aligned}",
+                        "Bring all terms to one side of the equation:\\begin{aligned} 6\\sin \\theta \\cos \\theta - 4\\cos \\theta = 0 \\end{aligned}",
+                        "Factorise out the common term $2\\cos \\theta$:\\begin{aligned} 2\\cos \\theta(3\\sin \\theta - 2) = 0 \\end{aligned}This gives two branches to solve:\\begin{aligned} \\cos \\theta &= 0 \\cr \\sin \\theta &= \\dfrac{2}{3} \\end{aligned}",
+                        "Solve the first branch, $\\cos \\theta = 0$, in the domain $0^\\circ \\le \\theta \\le 360^\\circ$:\\begin{aligned} \\theta = 90.0^\\circ, \\, 270.0^\\circ \\end{aligned}",
+                        "Solve the second branch, $\\sin \\theta = \\dfrac{2}{3}$, in the domain $0^\\circ \\le \\theta \\le 360^\\circ$:\\begin{aligned} \\theta &= \\sin^{-1}\\big(\\dfrac{2}{3}\\big) \\cr &\\approx 41.8^\\circ \\cr \\theta &= 180^\\circ - 41.8^\\circ \\cr &= 138.2^\\circ \\end{aligned}Combining all solutions yields the final set of answers.",
+                        "Final Answer: \\begin{aligned} \\theta &= 41.8^\\circ, \\, 90.0^\\circ, \\cr &\\quad 138.2^\\circ, \\, 270.0^\\circ \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\theta = 41.8^\\circ,  138.2^\\circ$$",
-                                "feedback": "You may have made the classic mistake of dividing both sides by $\\cos \\theta$ in the first step. Dividing by a variable term that can equal zero loses the valid solutions where $\\cos \\theta = 0 \\implies \\theta = 90.0^\\circ,  270.0^\\circ$. Always bring terms to one side and factorise."
+                                "ans": "\\begin{aligned} \\theta = 41.8^\\circ, \\, 138.2^\\circ \\end{aligned}",
+                                "feedback": "You may have made the classic mistake of dividing both sides by $\\cos \\theta$ in the first step. Dividing by a variable term that can equal zero loses the valid solutions where $\\cos \\theta = 0 \\implies \\theta = 90.0^\\circ, 270.0^\\circ$. Always bring terms to one side and factorise."
                         },
                         {
-                                "ans": "$$\\theta = 41.8^\\circ,  90.0^\\circ,  221.8^\\circ,  270.0^\\circ$$",
+                                "ans": "\\begin{aligned} \\theta &= 41.8^\\circ, \\, 90.0^\\circ, \\cr &\\quad 221.8^\\circ, \\, 270.0^\\circ \\end{aligned}",
                                 "feedback": "Check your second quadrant calculation for $\\sin \\theta = \\dfrac{2}{3}$. Sine is positive in the first and second quadrants. The second quadrant solution is $180^\\circ - 41.8^\\circ = 138.2^\\circ$, not $180^\\circ + 41.8^\\circ = 221.8^\\circ$."
                         },
                         {
-                                "ans": "$$\\theta = 90.0^\\circ,  270.0^\\circ$$",
+                                "ans": "\\begin{aligned} \\theta = 90.0^\\circ, \\, 270.0^\\circ \\end{aligned}",
                                 "feedback": "You found the solutions for the $\\cos \\theta = 0$ branch, but you must also solve for $3\\sin \\theta - 2 = 0 \\implies \\sin \\theta = \\dfrac{2}{3}$ to find the complete set of four solutions."
                         }
                 ],
