@@ -1431,10 +1431,10 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Integration by Parts",
                 "subtopic": [
                         "Exponential and Logarithmic Functions and Graphs",
-                        "Integration"
+                        "Definite Integration"
                 ],
                 "img": "images/Pure_SVGs/004236.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The curve $C$ has equation:\\begin{aligned} &y = (c - x)\\ln x \\cr &\\text{where } c \\text{ is a constant } (c > 1) \\end{aligned}The curve intersects the $x$-axis at the points $(1,0)$ and $(c,0)$.<br><br>Find, in terms of $c$, the exact area of the finite region bounded by the curve $C$ and the $x$-axis.",
@@ -1472,11 +1472,11 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Integration",
-                "topic": "Integration",
+               "major_area": "Integration",
+                "topic": "Integration by Parts",
                 "subtopic": [
                         "Exponential and Logarithmic Functions and Graphs",
-                        "Integration"
+                        "Definite Integration"
                 ],
                 "img": "images/Pure_SVGs/004237.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = 3x^2 \\ln x$. The finite region $R$ is bounded by the curve, the $x$-axis, and the vertical lines $x = 1$ and $x = e$.<br><br>Find the exact area of the region $R$.",
@@ -1513,17 +1513,18 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "major_area": "Integration",
+                "topic": "Integration by Parts",
                 "subtopic": [
                         "Exponential and Logarithmic Functions and Graphs",
-                        "Integration"
+                        "Definite Integration"
                 ],
                 "img": "images/Pure_SVGs/004238.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The curve has equation:\\begin{aligned} y = (x - 2)e^{-x} \\end{aligned}1. Show that the curve intersects the $x$-axis at the point $(2,0)$.<br><br>2. The finite region $R$ is bounded by the curve, the $x$-axis, and the vertical line $x = 4$. Find the exact area of the region $R$.",
                 "steps": [
                         "Find the $x$-intercept by setting $y = 0$:\\begin{aligned} (x - 2)e^{-x} = 0 \\end{aligned}Since $e^{-x} \\ne 0$ for all real $x$, we must have:\\begin{aligned} x - 2 &= 0 \\cr x &= 2 \\end{aligned}This confirms the curve intersects the $x$-axis at the point $(2,0)$.",
                         "The finite region $R$ lies between $x = 2$ and $x = 4$. Set up the definite integral for the area:\\begin{aligned} A = \\int_{2}^{4} (x - 2)e^{-x} \\text{d}x \\end{aligned}",
-                        "Evaluate the indefinite integral $\\int (x - 2)e^{-x} \\text{d}x$ using integration by parts, where $u = x - 2$ and $v' = e^{-x}$:\\begin{aligned} u &= x - 2 \\implies u' = 1 \\cr v' &= e^{-x} \\implies v = -e^{-x} \\cr \\int (x - 2)e^{-x} \\text{d}x &= -(x - 2)e^{-x} + \\int e^{-x} \\text{d}x \\cr &= -(x - 2)e^{-x} - e^{-x} + C \\cr &= -(x - 1)e^{-x} + C \\end{aligned}",
+                        "Evaluate the indefinite integral $\\int (x - 2)e^{-x} \\text{d}x$ using integration by parts, setting:\\begin{aligned} u &= x - 2, \\quad u' = 1 \\cr v' &= e^{-x}, \\quad v = -e^{-x} \\end{aligned}Applying the formula with far-left alignment:\\begin{aligned} &\\int (x - 2)e^{-x} \\text{d}x \\cr &\\quad = -(x - 2)e^{-x} + \\int e^{-x} \\text{d}x \\cr &\\quad = -(x - 2)e^{-x} - e^{-x} + C \\cr &\\quad = -(x - 1)e^{-x} + C \\end{aligned}", 
                         "Evaluate the definite integral using the upper limit $x = 4$ and the lower limit $x = 2$:\\begin{aligned} A &= \\Big[ -(x - 1)e^{-x} \\Big]_{2}^{4} \\cr &= -3e^{-4} - (-e^{-2}) \\cr &= e^{-2} - 3e^{-4} \\end{aligned}",
                         "Final Answer: \\begin{aligned} e^{-2} - 3e^{-4} \\end{aligned}"
                 ],
@@ -1658,7 +1659,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "Check your sector area formula. The formula is $\\dfrac{1}{2}r^2 \\theta$. Since $r = 5$, $r^2 = 25$, which yields $\\dfrac{25}{2}\\arccos\\left(\\dfrac{4}{5}\\right)$, not $25\\arccos\\left(\\dfrac{4}{5}\\right)$."
                         },
                         {
-                                "ans": "$$C(2,1), \\quad B(5,3), \\quad \\text{Area} = \\dfrac{25}{2}\\arccos\\left(\\dfrac{4}{5}\\right)$$",
+                                 "ans": "$$C(2,1), \\quad B(5,3), \\quad \\text{Area} = \\dfrac{25}{2}\\arccos\\left(\\dfrac{4}{5}\\right)$$",
                                 "feedback": "Check your $y$-coordinate of the point of contact $B$. Substituting $x = 5$ into $y = \\dfrac{3x - 27}{4}$ yields $y = \\dfrac{15 - 27}{4} = -3$, not $+3$."
                         },
                         {
