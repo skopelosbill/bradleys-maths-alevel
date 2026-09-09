@@ -1642,30 +1642,30 @@ window.ALEVEL_QUESTIONS = [
                         "Tangents and Normals"
                 ],
                 "img": "images/Pure_SVGs/004241.svg",
-                "question": "In this question you must show detailed reasoning.<br><br>The circle $C$ has equation:<br>$$(x - 2)^2 + (y - 1)^2 = 25$$<br>The point $A(6, 4)$ lies on the circle. The tangent to the circle at $A$ intersects the line $4y = 3x - 27$ at the point $D$.<br><br>1. Write down the coordinates of $C$, the centre of the circle.<br>2. Show that the line $4y = 3x - 27$ is a tangent to the circle, and find the coordinates of $B$, the point where this line touches the circle.<br>3. Prove that $ADBC$ is a square.<br>4. The point $E$ is the lowest point on the circle. Find the exact area of the sector $ECB$.",
+                "question": "In this question you must show detailed reasoning.<br><br>The circle $C$ has equation:\\begin{aligned} (x - 2)^2 + (y - 1)^2 = 25 \\end{aligned}The point $A(6, 4)$ lies on the circle. The tangent to the circle at $A$ intersects the line $4y = 3x - 27$ at the point $D$.<br><br>1. Write down the coordinates of $C$, the centre of the circle.<br><br>2. Show that the line $4y = 3x - 27$ is a tangent to the circle, and find the coordinates of $B$, the point where this line touches the circle.<br><br>3. Prove that $ADBC$ is a square.<br><br>4. The point $E$ is the lowest point on the circle. Find the exact area of the sector $ECB$.",
                 "steps": [
-                        "Identify the centre and the radius of the circle directly from its standard form $(x - x_0)^2 + (y - y_0)^2 = R^2$:<br>$$\\text{Centre is } C(2, 1) \\quad \\text{and} \\quad \\text{radius is } R = 5$$",
-                        "Write the line equation in standard linear form $ax + by + c = 0$:<br>\\begin{aligned}4y &= 3x - 27  \\cr3x - 4y - 27 &= 0\\end{aligned}<br>Show the line is a tangent by finding the perpendicular distance from the centre $C(2,1)$ to this line and verifying it equals the radius:<br>\\begin{aligned}\\text{Distance} &= \\dfrac{|3(2) - 4(1) - 27|}{\\sqrt{3^2 + (-4)^2}}  \\cr&= \\dfrac{|6 - 4 - 27|}{5}  \\cr&= \\dfrac{25}{5}  \\cr&= 5\\end{aligned}<br>Since the perpendicular distance is exactly $5$ (equal to the radius), the line is indeed a tangent.",
-                        "To find the point of contact $B$, solve the system of equations:<br>\\begin{aligned} (x - 2)^2 + (y - 1)^2 &= 25 \\\\ y &= \\dfrac{3x - 27}{4} \\end{aligned}<br>Substitute the expression for $y$ into the circle equation and multiply by $16$ to clear the denominator:<br>\\begin{aligned} (x - 2)^2 + \\left( \\dfrac{3x - 31}{4} \\right)^2 &= 25 \\\\\\ 16(x - 2)^2 + (3x - 31)^2 &= 400 \\\\\\ 16\\left(x^2 - 4x + 4\\right) + \\left(9x^2 - 186x + 961\\right) &= 400 \\\\\\ 25x^2 - 250x + 1025 &= 400 \\\\\\ 25x^2 - 250x + 625 &= 0 \\\\ x^2 - 10x + 25 &= 0 \\\\\\ (x - 5)^2 &= 0 \\implies x = 5 \\end{aligned}",
-                        "Substitute $x = 5$ back into the line equation to find the $y$-coordinate of $B$:<br>\\begin{aligned}y &= \\dfrac{3(5) - 27}{4}  \\cr&= \\dfrac{15 - 27}{4}  \\cr&= -3\\end{aligned}<br>So, the point of contact is $B(5, -3)$.",
-                        "To prove $ADBC$ is a square, find the equation of the tangent at $A(6,4)$. The gradient of the radius $CA$ is:<br>\\begin{aligned}m_{CA} &= \\dfrac{4 - 1}{6 - 2}  \\cr&= \\dfrac{3}{4}\\end{aligned}<br>Since the tangent is perpendicular to the radius, its gradient is $m_{\\text{tangent}} = -\\dfrac{4}{3}$. Use the point-gradient formula with $A(6,4)$ to find its equation:<br>\\begin{aligned}y - 4 &= -\\dfrac{4}{3}(x - 6)  \\cr y &= -\\dfrac{4}{3}x + 12\\end{aligned}",
-                        "Find the intersection point $D$ of the two tangents by substituting the equation of the tangent at $A$ into the tangent at $B$:<br>\\begin{aligned} 4\\left( -\\dfrac{4}{3}x + 12 \\right) &= 3x - 27 \\\\\\ -\\dfrac{16}{3}x + 48 &= 3x - 27 \\\\\\ -16x + 144 &= 9x - 81 \\\\\\ -25x &= -225 \\implies x = 9 \\\\ y &= -\\dfrac{4}{3}(9) + 12 = 0 \\end{aligned}<br>This gives the coordinates of $D(9, 0)$.",
-                        "Calculate all four side lengths using the distance formula:<br>\\begin{aligned} |AD| &= \\sqrt{(9 - 6)^2 + (0 - 4)^2} = \\sqrt{9 + 16} = 5 \\\\\\ |DB| &= \\sqrt{(5 - 9)^2 + (-3 - 0)^2} = \\sqrt{16 + 9} = 5 \\\\\\ |BC| &= \\sqrt{(2 - 5)^2 + (1 - (-3))^2} = \\sqrt{9 + 16} = 5 \\\\\\ |CA| &= \\sqrt{(6 - 2)^2 + (4 - 1)^2} = \\sqrt{16 + 9} = 5 \\end{aligned}<br>Since all four sides are equal to $5$, and the adjacent sides are perpendicular (the product of the tangent and radius gradients $m_{AD} \\cdot m_{DB} = -\\dfrac{4}{3} \\cdot \\dfrac{3}{4} = -1$), $ADBC$ is a square.",
-                        "Find the coordinates of $E$, the lowest point of the circle, by subtracting the radius from the $y$-coordinate of the centre:<br>\\begin{aligned}E &= (2, 1 - 5)  \\cr&= (2, -4)\\end{aligned}<br>Find the angle $\\theta = \\angle ECB$ using the dot product of vectors $\\mathbf{CE}$ and $\\mathbf{CB}$:<br>\\begin{aligned} \\mathbf{CE} &= \\begin{pmatrix} 2 - 2 \\\\\\ -4 - 1 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\\\ -5 \\end{pmatrix} \\\\\\ \\mathbf{CB} &= \\begin{pmatrix} 5 - 2 \\\\\\ -3 - 1 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix} \\\\\\ \\mathbf{CE} \\cdot \\mathbf{CB} &= 0(3) + (-5)(-4) = 20 \\\\\\ \\cos \\theta &= \\dfrac{20}{|\\mathbf{CE}||\\mathbf{CB}|} = \\dfrac{20}{5 \\cdot 5} = \\dfrac{4}{5} \\\\\\ \\theta &= \\arccos\\left(\\dfrac{4}{5}\\right) \\end{aligned}",
-                        "Calculate the exact area of the sector $ECB$ using the sector area formula, $A = \\dfrac{1}{2}r^2 \\theta$:<br>\\begin{aligned}\\text{Area} &= \\dfrac{1}{2}(25)\\arccos\\left(\\dfrac{4}{5}\\right)  \\cr&= \\dfrac{25}{2}\\arccos\\left(\\dfrac{4}{5}\\right)\\end{aligned}",
-                "Final Answer: $$C(2,1), \\quad B(5,-3), \\quad \\text{Area} = \\dfrac{25}{2}\\arccos\\left(\\dfrac{4}{5}\\right)$$"
+                        "Identify the centre and the radius of the circle directly from its standard form $(x - x_0)^2 + (y - y_0)^2 = R^2$:\\begin{aligned} \\text{Centre: } &C(2, 1) \\cr \\text{Radius: } &R = 5 \\end{aligned}",
+                        "Write the line equation in standard linear form $ax + by + c = 0$:\\begin{aligned} 4y &= 3x - 27 \\cr 3x - 4y - 27 &= 0 \\end{aligned}Show the line is a tangent by finding the perpendicular distance from the centre $C(2,1)$ to this line and verifying it equals the radius:\\begin{aligned} &\\text{Distance} \\cr &\\quad = \\dfrac{|3(2) - 4(1) - 27|}{\\sqrt{3^2 + (-4)^2}} \\cr &\\quad = \\dfrac{|6 - 4 - 27|}{5} \\cr &\\quad = \\dfrac{25}{5} \\cr &\\quad = 5 \\end{aligned}Since the perpendicular distance is exactly $5$ (equal to the radius), the line is indeed a tangent.",
+                        "To find the point of contact $B$, solve the system of equations by substituting $y = \\dfrac{3x - 27}{4}$ into the circle equation and multiplying by $16$ to clear the denominator:\\begin{aligned} &(x - 2)^2 + \\big( \\dfrac{3x - 31}{4} \\big)^2 = 25 \\cr &16(x - 2)^2 + (3x - 31)^2 = 400 \\cr &16(x^2 - 4x + 4) \\cr &\\quad + (9x^2 - 186x + 961) = 400 \\cr &25x^2 - 250x + 625 = 0 \\cr &x^2 - 10x + 25 = 0 \\cr &(x - 5)^2 = 0 \\cr &x = 5 \\end{aligned}",
+                        "Substitute $x = 5$ back into the line equation to find the $y$-coordinate of $B$:\\begin{aligned} y &= \\dfrac{3(5) - 27}{4} \\cr &= \\dfrac{15 - 27}{4} \\cr &= -3 \\end{aligned}So, the point of contact is $B(5, -3)$.",
+                        "To prove $ADBC$ is a square, find the equation of the tangent at $A(6,4)$. The gradient of the radius $CA$ is:\\begin{aligned} m_{CA} &= \\dfrac{4 - 1}{6 - 2} \\cr &= \\dfrac{3}{4} \\end{aligned}Since the tangent is perpendicular to the radius, its gradient is $m_{\\text{tangent}} = -\\dfrac{4}{3}$. Use the point-gradient formula with $A(6,4)$ to find its equation:\\begin{aligned} y - 4 &= -\\dfrac{4}{3}(x - 6) \\cr y &= -\\dfrac{4}{3}x + 12 \\end{aligned}",
+                        "Find the intersection point $D$ of the two tangents by substituting the equation of the tangent at $A$ into the tangent at $B$:\\begin{aligned} 4\\big(-\\dfrac{4}{3}x + 12\\big) &= 3x - 27 \\cr -\\dfrac{16}{3}x + 48 &= 3x - 27 \\cr -16x + 144 &= 9x - 81 \\cr -25x &= -225 \\cr x &= 9 \\cr y &= -\\dfrac{4}{3}(9) + 12 \\cr &= 0 \\end{aligned}This gives the coordinates of $D(9, 0)$.",
+                        "Calculate all four side lengths using the distance formula:\\begin{aligned} |AD| &= \\sqrt{3^2 + (-4)^2} = 5 \\cr |DB| &= \\sqrt{(-4)^2 + (-3)^2} = 5 \\cr |BC| &= \\sqrt{(-3)^2 + 4^2} = 5 \\cr |CA| &= \\sqrt{4^2 + 3^2} = 5 \\end{aligned}Adjacent sides are perpendicular since:\\begin{aligned} m_{AD} \\cdot m_{DB} &= -\\dfrac{4}{3} \\cdot \\dfrac{3}{4} \\cr &= -1 \\end{aligned}Since all four sides are equal to $5$ and adjacent sides are perpendicular, $ADBC$ is a square.",
+                        "Find the coordinates of $E$, the lowest point of the circle, by subtracting the radius from the $y$-coordinate of the centre:\\begin{aligned} E &= (2, 1 - 5) \\cr &= (2, -4) \\end{aligned}Find the angle $\\theta = \\angle ECB$ using the dot product of vectors $\\mathbf{CE} = \\begin{pmatrix} 0 \\cr -5 \\end{pmatrix}$ and $\\mathbf{CB} = \\begin{pmatrix} 3 \\cr -4 \\end{pmatrix}$:\\begin{aligned} \\mathbf{CE} \\cdot \\mathbf{CB} &= 0(3) + (-5)(-4) \\cr &= 20 \\cr \\cos \\theta &= \\dfrac{20}{5 \\cdot 5} \\cr &= \\dfrac{4}{5} \\cr \\theta &= \\arccos\\big(\\dfrac{4}{5}\\big) \\end{aligned}",
+                        "Calculate the exact area of the sector $ECB$ using the sector area formula, $A = \\dfrac{1}{2}r^2 \\theta$:\\begin{aligned} \\text{Area} &= \\dfrac{1}{2}(25)\\arccos\\big(\\dfrac{4}{5}\\big) \\cr &= \\dfrac{25}{2}\\arccos\\big(\\dfrac{4}{5}\\big) \\end{aligned}",
+                        "Final Answer: \\begin{aligned} C(2, 1), \\quad &B(5, -3) \\cr \\text{Area} &= \\dfrac{25}{2}\\arccos\\big(\\dfrac{4}{5}\\big) \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$C(2,1), \\quad B(5,-3), \\quad \\text{Area} = 25\\arccos\\left(\\dfrac{4}{5}\\right)$$",
+                                "ans": "\\begin{aligned} C(2, 1), \\quad &B(5, -3) \\cr \\text{Area} &= 25\\arccos\\big(\\dfrac{4}{5}\\big) \\end{aligned}",
                                 "feedback": "Check your sector area formula. The formula is $\\dfrac{1}{2}r^2 \\theta$. Since $r = 5$, $r^2 = 25$, which yields $\\dfrac{25}{2}\\arccos\\left(\\dfrac{4}{5}\\right)$, not $25\\arccos\\left(\\dfrac{4}{5}\\right)$."
                         },
                         {
-                                 "ans": "$$C(2,1), \\quad B(5,3), \\quad \\text{Area} = \\dfrac{25}{2}\\arccos\\left(\\dfrac{4}{5}\\right)$$",
+                                "ans": "\\begin{aligned} C(2, 1), \\quad &B(5, 3) \\cr \\text{Area} &= \\dfrac{25}{2}\\arccos\\big(\\dfrac{4}{5}\\big) \\end{aligned}",
                                 "feedback": "Check your $y$-coordinate of the point of contact $B$. Substituting $x = 5$ into $y = \\dfrac{3x - 27}{4}$ yields $y = \\dfrac{15 - 27}{4} = -3$, not $+3$."
                         },
                         {
-                                "ans": "$$C(-2,-1), \\quad B(5,-3), \\quad \\text{Area} = \\dfrac{25}{2}\\arccos\\left(\\dfrac{4}{5}\\right)$$",
+                                "ans": "\\begin{aligned} C(-2, -1), \\quad &B(5, -3) \\cr \\text{Area} &= \\dfrac{25}{2}\\arccos\\big(\\dfrac{4}{5}\\big) \\end{aligned}",
                                 "feedback": "Be careful with signs when writing down the centre from the circle equation $(x - 2)^2 + (y - 1)^2 = 25$. This corresponds to a centre of $(2, 1)$, not $(-2, -1)$."
                         }
                 ],
@@ -1687,26 +1687,26 @@ window.ALEVEL_QUESTIONS = [
                         "Tangents and Normals"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>A circle has equation:<br>$$(x - 1)^2 + (y - 2)^2 = 5$$<br>1. Show that the line $y = 2x - 5$ is a tangent to the circle.<br>2. Find the coordinates of the point of contact, $P$, where this line touches the circle.",
+                "question": "In this question you must show detailed reasoning.<br><br>A circle has equation:\\begin{aligned} (x - 1)^2 + (y - 2)^2 = 5 \\end{aligned}1. Show that the line $y = 2x - 5$ is a tangent to the circle.<br><br>2. Find the coordinates of the point of contact, $P$, where this line touches the circle.",
                 "steps": [
-                        "Identify the centre and the radius of the circle directly from its standard form $(x - x_0)^2 + (y - y_0)^2 = R^2$:<br>$$\\text{Centre is } (1, 2) \\quad \\text{and} \\quad \\text{radius is } R = \\sqrt{5}$$",
-                        "Write the line equation in standard linear form $ax + by + c = 0$:<br>\\begin{aligned}y &= 2x - 5  \\cr2x - y - 5 &= 0\\end{aligned}<br>To show the line is a tangent, calculate the perpendicular distance from the centre $(1,2)$ to the line and check if it equals the radius:<br>\\begin{aligned}\\text{Distance} &= \\dfrac{|2(1) - 2 - 5|}{\\sqrt{2^2 + (-1)^2}}  \\cr&= \\dfrac{|2 - 2 - 5|}{\\sqrt{5}}  \\cr&= \\dfrac{5}{\\sqrt{5}}  \\cr&= \\sqrt{5}\\end{aligned}<br>Since the perpendicular distance from the centre to the line is exactly equal to the radius, the line is indeed a tangent to the circle.",
-                        "To find the point of contact $P$, substitute $y = 2x - 5$ into the equation of the circle:<br>\\begin{aligned} (x - 1)^2 + (2x - 5 - 2)^2 &= 5 \\\\\\ (x - 1)^2 + (2x - 7)^2 &= 5 \\\\\\ \\left(x^2 - 2x + 1\\right) + \\left(4x^2 - 28x + 49\\right) &= 5 \\\\\\ 5x^2 - 30x + 50 &= 5 \\\\\\ 5x^2 - 30x + 45 &= 0 \\end{aligned}",
-                        "Divide the quadratic equation by $5$ and solve for $x$:<br>$$\\begin{aligned} x^2 - 6x + 9 &= 0 \\\\\\ (x - 3)^2 &= 0 \\implies x = 3 \\end{aligned}$$<br>Since there is a repeated root at $x = 3$, it confirms there is exactly one point of contact, supporting the proof of tangency.",
-                        "Substitute $x = 3$ back into the line equation to find the $y$-coordinate of $P$:<br>\\begin{aligned}y &= 2(3) - 5  \\cr&= 1\\end{aligned}<br>So, the coordinates of the point of contact are $P(3, 1)$.",
-                "Final Answer: $$P(3,1)$$"
+                        "Identify the centre and the radius of the circle directly from its standard form $(x - x_0)^2 + (y - y_0)^2 = R^2$:\\begin{aligned} \\text{Centre: } &(1, 2) \\cr \\text{Radius: } &R = \\sqrt{5} \\end{aligned}",
+                        "Write the line equation in standard linear form $ax + by + c = 0$:\\begin{aligned} y &= 2x - 5 \\cr 2x - y - 5 &= 0 \\end{aligned}To show the line is a tangent, calculate the perpendicular distance from the centre $(1,2)$ to the line and check if it equals the radius:\\begin{aligned} \\text{Distance} &= \\dfrac{|2(1) - 2 - 5|}{\\sqrt{2^2 + (-1)^2}} \\cr &= \\dfrac{|-5|}{\\sqrt{5}} \\cr &= \\dfrac{5}{\\sqrt{5}} \\cr &= \\sqrt{5} \\end{aligned}Since the perpendicular distance from the centre to the line is exactly equal to the radius, the line is indeed a tangent to the circle.",
+                        "To find the point of contact $P$, substitute $y = 2x - 5$ into the equation of the circle:\\begin{aligned} (x - 1)^2 + (2x - 7)^2 &= 5 \\cr (x^2 - 2x + 1) \\cr &\\quad + (4x^2 - 28x + 49) = 5 \\cr 5x^2 - 30x + 50 &= 5 \\cr 5x^2 - 30x + 45 &= 0 \\end{aligned}",
+                        "Divide the quadratic equation by $5$ and solve for $x$:\\begin{aligned} x^2 - 6x + 9 &= 0 \\cr (x - 3)^2 &= 0 \\cr x &= 3 \\end{aligned}Since there is a repeated root at $x = 3$, it confirms there is exactly one point of contact, supporting the proof of tangency.",
+                        "Substitute $x = 3$ back into the line equation to find the $y$-coordinate of $P$:\\begin{aligned} y &= 2(3) - 5 \\cr &= 1 \\end{aligned}So, the coordinates of the point of contact are $P(3, 1)$.",
+                        "Final Answer: \\begin{aligned} P(3, 1) \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$P(3,-1)$$",
+                                "ans": "\\begin{aligned} P(3, -1) \\end{aligned}",
                                 "feedback": "Check your substitution in the final step. Substituting $x = 3$ into the tangent line equation yields $y = 2(3) - 5 = 1$, not $-1$."
                         },
                         {
-                                "ans": "$$P(-3,1)$$",
+                                "ans": "\\begin{aligned} P(-3, 1) \\end{aligned}",
                                 "feedback": "Check your quadratic factorization. Dividing $5x^2 - 30x + 45 = 0$ by $5$ yields $x^2 - 6x + 9 = 0 \\implies (x - 3)^2 = 0$, which gives a positive root $x = 3$, not $x = -3$."
                         },
                         {
-                                "ans": "$$P(3,5)$$",
+                                "ans": "\\begin{aligned} P(3, 5) \\end{aligned}",
                                 "feedback": "Make sure you substitute $x = 3$ into the actual equation of the tangent line ($y = 2x - 5$), rather than accidentally adding the constants."
                         }
                 ],
@@ -1728,26 +1728,26 @@ window.ALEVEL_QUESTIONS = [
                         "Tangents and Normals"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>The points $A(1, 2)$ and $B(7, 10)$ are the endpoints of a diameter of a circle $C$.<br><br>1. Find the coordinates of the centre of the circle.<br>2. Find the exact radius of the circle, and hence write down the equation of the circle in the form $(x - a)^2 + (y - b)^2 = r^2$.<br>3. Find the equation of the tangent to the circle at the point $B$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+                "question": "In this question you must show detailed reasoning.<br><br>The points $A(1, 2)$ and $B(7, 10)$ are the endpoints of a diameter of a circle $C$.<br><br>1. Find the coordinates of the centre of the circle.<br><br>2. Find the exact radius of the circle, and hence write down the equation of the circle in the form $(x - a)^2 + (y - b)^2 = r^2$.<br><br>3. Find the equation of the tangent to the circle at the point $B$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
                 "steps": [
-                        "The centre of the circle is the midpoint of the diameter $AB$. Use the midpoint formula:<br>\\begin{aligned}\\text{Centre} &= \\left( \\dfrac{1 + 7}{2},  \\dfrac{2 + 10}{2} \\right)  \\cr&= (4, 6)\\end{aligned}",
-                        "The radius $r$ is the distance from the centre $(4,6)$ to either endpoint, say $A(1,2)$. Use the distance formula:<br>$$\\begin{aligned} r &= \\sqrt{(1 - 4)^2 + (2 - 6)^2} \\\\\\ &= \\sqrt{(-3)^2 + (-4)^2} \\\\\\ &= \\sqrt{9 + 16} = 5 \\end{aligned}$$",
-                        "Write down the equation of the circle using the centre $(4,6)$ and radius $r = 5$:<br>$$(x - 4)^2 + (y - 6)^2 = 25$$",
-                        "To find the tangent at $B(7,10)$, calculate the gradient of the radius $CB$:<br>\\begin{aligned}m_{CB} &= \\dfrac{10 - 6}{7 - 4}  \\cr&= \\dfrac{4}{3}\\end{aligned}<br>Since the tangent is perpendicular to the radius at the point of contact, its gradient is the negative reciprocal:<br>$$m_{\\text{tangent}} = -\\dfrac{3}{4}$$",
-                        "Use the point-gradient formula with $B(7,10)$ to obtain the tangent equation and rearrange it into integer standard form:<br>$$\\begin{aligned} y - 10 &= -\\dfrac{3}{4}(x - 7) \\\\\\ 4(y - 10) &= -3(x - 7) \\\\\\ 4y - 40 &= -3x + 21 \\\\\\ 3x + 4y - 61 &= 0 \\end{aligned}$$",
-                "Final Answer: \\begin{aligned}(x - 4)^2 + (y - 6)^2 &= 25, \\quad 3x + 4y - 61  \\cr&= 0\\end{aligned}"
+                        "The centre of the circle is the midpoint of the diameter $AB$. Use the midpoint formula:\\begin{aligned} \\text{Centre} &= \\big( \\dfrac{1 + 7}{2}, \\, \\dfrac{2 + 10}{2} \\big) \\cr &= (4, 6) \\end{aligned}",
+                        "The radius $r$ is the distance from the centre $(4,6)$ to endpoint $A(1,2)$:\\begin{aligned} r &= \\sqrt{(1 - 4)^2 + (2 - 6)^2} \\cr &= \\sqrt{(-3)^2 + (-4)^2} \\cr &= \\sqrt{9 + 16} \\cr &= 5 \\end{aligned}",
+                        "Write down the equation of the circle using the centre $(4,6)$ and radius $r = 5$:\\begin{aligned} (x - 4)^2 + (y - 6)^2 = 25 \\end{aligned}",
+                        "To find the tangent at $B(7,10)$, calculate the gradient of the radius $CB$:\\begin{aligned} m_{CB} &= \\dfrac{10 - 6}{7 - 4} \\cr &= \\dfrac{4}{3} \\end{aligned}Since the tangent is perpendicular to the radius at the point of contact, its gradient is the negative reciprocal:\\begin{aligned} m_{\\text{tangent}} = -\\dfrac{3}{4} \\end{aligned}",
+                        "Use the point-gradient formula with $B(7,10)$ to obtain the tangent equation and rearrange it into integer standard form:\\begin{aligned} y - 10 &= -\\dfrac{3}{4}(x - 7) \\cr 4(y - 10) &= -3(x - 7) \\cr 4y - 40 &= -3x + 21 \\cr 3x + 4y - 61 &= 0 \\end{aligned}",
+                        "Final Answer: \\begin{aligned} (x - 4)^2 + (y - 6)^2 &= 25 \\cr 3x + 4y - 61 &= 0 \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$(x - 4)^2 + (y - 6)^2 = 25, \\quad 3x - 4y + 19 = 0$$",
+                                "ans": "\\begin{aligned} (x - 4)^2 + (y - 6)^2 &= 25 \\cr 3x - 4y + 19 &= 0 \\end{aligned}",
                                 "feedback": "Check your tangent gradient sign. The radius gradient is $m_{CB} = \\dfrac{4}{3}$, which means your tangent gradient must be the negative reciprocal, $m_{\\text{tangent}} = -\\dfrac{3}{4}$, not positive $\\dfrac{3}{4}$."
                         },
                         {
-                                "ans": "$$(x - 4)^2 + (y - 6)^2 = 25, \\quad 4x + 3y - 68 = 0$$",
+                                "ans": "\\begin{aligned} (x - 4)^2 + (y - 6)^2 &= 25 \\cr 4x + 3y - 68 &= 0 \\end{aligned}",
                                 "feedback": "Check that you did not swap your rise and run in the reciprocal gradient calculation. The perpendicular gradient to $\\dfrac{4}{3}$ is $-\\dfrac{3}{4}$, not $-\\dfrac{4}{3}$."
                         },
                         {
-                                "ans": "$$(x + 4)^2 + (y + 6)^2 = 25, \\quad 3x + 4y - 61 = 0$$",
+                                "ans": "\\begin{aligned} (x + 4)^2 + (y + 6)^2 &= 25 \\cr 3x + 4y - 61 &= 0 \\end{aligned}",
                                 "feedback": "Be careful with signs in the circle equation. A centre of $(4, 6)$ yields the equation $(x - 4)^2 + (y - 6)^2 = 25$, not $(x + 4)^2 + (y + 6)^2 = 25$."
                         }
                 ],
@@ -1768,26 +1768,26 @@ window.ALEVEL_QUESTIONS = [
                         "Circle Geometry"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>A circle has the equation:<br>$$(x - 2)^2 + (y - 3)^2 = 25$$<br>1. Show that the line $y = x + 2$ intersects the circle at two distinct points, $P$ and $Q$.<br>2. Find the coordinates of $P$ and $Q$.<br>3. Calculate the exact length of the chord $PQ$.",
+                "question": "In this question you must show detailed reasoning.<br><br>A circle has the equation:\\begin{aligned} (x - 2)^2 + (y - 3)^2 = 25 \\end{aligned}1. Show that the line $y = x + 2$ intersects the circle at two distinct points, $P$ and $Q$.<br><br>2. Find the coordinates of $P$ and $Q$.<br><br>3. Calculate the exact length of the chord $PQ$.",
                 "steps": [
-                        "Substitute $y = x + 2$ into the circle equation to find the $x$-coordinates of the intersection points:<br>$$\\begin{aligned} (x - 2)^2 + (x + 2 - 3)^2 &= 25 \\\\\\ (x - 2)^2 + (x - 1)^2 &= 25 \\\\\\ \\left(x^2 - 4x + 4\\right) + \\left(x^2 - 2x + 1\\right) &= 25 \\\\\\ 2x^2 - 6x + 5 &= 25 \\\\\\ 2x^2 - 6x - 20 &= 0 \\end{aligned}$$",
-                        "Divide by $2$ to simplify the quadratic equation:<br>$$x^2 - 3x - 10 = 0$$<br>Calculate the discriminant ($b^2 - 4ac$) to show there are two distinct real roots (intersections):<br>\\begin{aligned}\\text{Discriminant} &= (-3)^2 - 4(1)(-10)  \\cr&= 9 + 40  \\cr&= 49\\end{aligned}<br>Since the discriminant $49 > 0$, the equation has two real roots, proving the line intersects the circle at two distinct points.",
-                        "Solve the quadratic equation by factorisation:<br>$$\\begin{aligned} (x - 5)(x + 2) &= 0 \\\\ x = 5 \\quad &\\text{or} \\quad x = -2 \\end{aligned}$$",
-                        "Substitute the $x$-values back into the line equation $y = x + 2$ to find the corresponding $y$-coordinates:<br>\\begin{aligned} \\text{For } x = 5: \\quad y &= 5 + 2 = 7 \\implies P(5, 7) \\\\\\ \\text{For } x = -2: \\quad y &= -2 + 2 = 0 \\implies Q(-2, 0) \\end{aligned}",
-                        "Calculate the exact length of the chord $PQ$ using the distance formula:<br>$$\\begin{aligned} |PQ| &= \\sqrt{(5 - (-2))^2 + (7 - 0)^2} \\\\\\ &= \\sqrt{7^2 + 7^2} \\\\\\ &= \\sqrt{49 + 49} \\\\\\ &= \\sqrt{98} = 7\\sqrt{2} \\end{aligned}$$",
-                "Final Answer: $$P(5,7),  Q(-2,0),  |PQ| = 7\\sqrt{2}$$"
+                        "Substitute $y = x + 2$ into the circle equation to find the $x$-coordinates of the intersection points:\\begin{aligned} (x - 2)^2 + (x - 1)^2 &= 25 \\cr (x^2 - 4x + 4) \\cr &\\quad + (x^2 - 2x + 1) = 25 \\cr 2x^2 - 6x + 5 &= 25 \\cr 2x^2 - 6x - 20 &= 0 \\end{aligned}",
+                        "Divide by $2$ to simplify the quadratic equation:\\begin{aligned} x^2 - 3x - 10 = 0 \\end{aligned}Calculate the discriminant ($b^2 - 4ac$) to show there are two distinct real roots (intersections):\\begin{aligned} \\text{Discriminant} &= (-3)^2 - 4(1)(-10) \\cr &= 9 + 40 \\cr &= 49 \\end{aligned}Since the discriminant $49 > 0$, the equation has two real roots, proving the line intersects the circle at two distinct points.",
+                        "Solve the quadratic equation by factorisation:\\begin{aligned} (x - 5)(x + 2) &= 0 \\cr x &= 5 \\cr x &= -2 \\end{aligned}",
+                        "Substitute the $x$-values back into the line equation $y = x + 2$ to find the corresponding $y$-coordinates:\\begin{aligned} \\text{For } x &= 5: \\cr y &= 5 + 2 \\cr &= 7 \\implies P(5, 7) \\cr \\text{For } x &= -2: \\cr y &= -2 + 2 \\cr &= 0 \\implies Q(-2, 0) \\end{aligned}",
+                        "Calculate the exact length of the chord $PQ$ using the distance formula:\\begin{aligned} |PQ| &= \\sqrt{(5 - (-2))^2 + (7 - 0)^2} \\cr &= \\sqrt{7^2 + 7^2} \\cr &= \\sqrt{98} \\cr &= 7\\sqrt{2} \\end{aligned}",
+                        "Final Answer: \\begin{aligned} P(5, 7), \\quad &Q(-2, 0) \\cr |PQ| &= 7\\sqrt{2} \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$P(5,7),  Q(-2,0),  |PQ| = 98$$",
+                                "ans": "\\begin{aligned} P(5, 7), \\quad &Q(-2, 0) \\cr |PQ| &= 98 \\end{aligned}",
                                 "feedback": "Don't forget to take the square root of the sum of squares when using the distance formula. The length of the chord is $\\sqrt{98} = 7\\sqrt{2}$, not $98$."
                         },
                         {
-                                "ans": "$$P(5,7),  Q(-2,0),  |PQ| = 14$$",
+                                "ans": "\\begin{aligned} P(5, 7), \\quad &Q(-2, 0) \\cr |PQ| &= 14 \\end{aligned}",
                                 "feedback": "Check your simplification of $\\sqrt{98}$. $\\sqrt{98} = \\sqrt{49 \\cdot 2} = 7\\sqrt{2}$. It seems you may have mistakenly evaluated it as $\\sqrt{196} = 14$."
                         },
                         {
-                                "ans": "$$P(5,7),  Q(2,4),  |PQ| = 3\\sqrt{2}$$",
+                                "ans": "\\begin{aligned} P(5, 7), \\quad &Q(2, 4) \\cr |PQ| &= 3\\sqrt{2} \\end{aligned}",
                                 "feedback": "Check your signs when solving the quadratic $x^2 - 3x - 10 = 0$. The roots are $x = 5$ and $x = -2$, not $x = 5$ and $x = 2$."
                         }
                 ],
@@ -1810,26 +1810,26 @@ window.ALEVEL_QUESTIONS = [
                         "Tangents and Normals"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>The circle $C$ has equation:<br>$$x^2 + y^2 - 6x - 8y = 0$$<br>1. Find the coordinates of the centre and the exact radius of the circle $C$.<br>2. Given that the line $y = 2x + c$ is a tangent to the circle, find the two possible exact values of the constant $c$.",
+                "question": "In this question you must show detailed reasoning.<br><br>The circle $C$ has equation:\\begin{aligned} x^2 + y^2 - 6x - 8y = 0 \\end{aligned}1. Find the coordinates of the centre and the exact radius of the circle $C$.<br><br>2. Given that the line $y = 2x + c$ is a tangent to the circle, find the two possible exact values of the constant $c$.",
                 "steps": [
-                        "Complete the square for both the $x$ and $y$ terms in the general equation $x^2 + y^2 - 6x - 8y = 0$:<br>$$\\begin{aligned} \\left(x^2 - 6x\\right) + \\left(y^2 - 8y\\right) &= 0 \\\\\\ \\left((x - 3)^2 - 9\\right) + \\left((y - 4)^2 - 16\\right) &= 0 \\\\\\ (x - 3)^2 + (y - 4)^2 &= 25 \\end{aligned}$$<br>This shows that the centre is $C(3, 4)$ and the radius is $R = \\sqrt{25} = 5$.",
-                        "Write the tangent line equation $y = 2x + c$ in standard form $ax + by + c = 0$:<br>$$2x - y + c = 0$$",
-                        "Set the perpendicular distance from the centre $C(3, 4)$ to this line equal to the radius $5$:<br>$$\\dfrac{|2(3) - 4 + c|}{\\sqrt{2^2 + (-1)^2}} = 5$$",
-                        "Simplify the equation to solve for $c$:<br>$$\\begin{aligned} \\dfrac{|2 + c|}{\\sqrt{5}} &= 5 \\\\\\ |2 + c| &= 5\\sqrt{5} \\end{aligned}$$<br>This gives two possible equations:<br>\\begin{aligned}2 + c &= 5\\sqrt{5} \\quad \\text{or} \\quad 2 + c  \\cr&= -5\\sqrt{5}\\end{aligned}",
-                        "Isolate $c$ to find the two possible exact values:<br>\\begin{aligned}c &= -2 + 5\\sqrt{5} \\quad \\text{or} \\quad c  \\cr&= -2 - 5\\sqrt{5}\\end{aligned}",
-                "Final Answer: \\begin{aligned}C(3,4),  R &= 5,  c  \\cr&= -2 \\pm 5\\sqrt{5}\\end{aligned}"
+                        "Complete the square for both the $x$ and $y$ terms in the general equation $x^2 + y^2 - 6x - 8y = 0$:\\begin{aligned} (x^2 - 6x) + (y^2 - 8y) &= 0 \\cr \\big((x - 3)^2 - 9\\big) \\cr &\\quad + \\big((y - 4)^2 - 16\\big) = 0 \\cr (x - 3)^2 + (y - 4)^2 &= 25 \\end{aligned}This shows that the centre is $C(3, 4)$ and the radius is $R = \\sqrt{25} = 5$.",
+                        "Write the tangent line equation $y = 2x + c$ in standard form $ax + by + c = 0$:\\begin{aligned} 2x - y + c = 0 \\end{aligned}",
+                        "Set the perpendicular distance from the centre $C(3, 4)$ to this line equal to the radius $5$:\\begin{aligned} \\dfrac{|2(3) - 4 + c|}{\\sqrt{2^2 + (-1)^2}} = 5 \\end{aligned}",
+                        "Simplify the equation to solve for $c$:\\begin{aligned} \\dfrac{|2 + c|}{\\sqrt{5}} &= 5 \\cr |2 + c| &= 5\\sqrt{5} \\end{aligned}This gives two possible equations:\\begin{aligned} 2 + c &= 5\\sqrt{5} \\cr 2 + c &= -5\\sqrt{5} \\end{aligned}",
+                        "Isolate $c$ to find the two possible exact values:\\begin{aligned} c &= -2 + 5\\sqrt{5} \\cr c &= -2 - 5\\sqrt{5} \\end{aligned}",
+                        "Final Answer: \\begin{aligned} C(3, 4), \\quad &R = 5 \\cr c &= -2 \\pm 5\\sqrt{5} \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$C(3,4),  R = 5,  c = 2 \\pm 5\\sqrt{5}$$",
+                                "ans": "\\begin{aligned} C(3, 4), \\quad &R = 5 \\cr c &= 2 \\pm 5\\sqrt{5} \\end{aligned}",
                                 "feedback": "Check your signs in the final step. Solving $|2 + c| = 5\\sqrt{5}$ means $2 + c = \\pm 5\\sqrt{5}$, which subtracts $2$ from both sides, yielding $c = -2 \\pm 5\\sqrt{5}$, not $+2$."
                         },
                         {
-                                "ans": "$$C(3,4),  R = 5,  c = -2 \\pm 25$$",
+                                "ans": "\\begin{aligned} C(3, 4), \\quad &R = 5 \\cr c &= -2 \\pm 25 \\end{aligned}",
                                 "feedback": "Remember to multiply the right side by $\\sqrt{5}$ when cross-multiplying. This results in $5\\sqrt{5}$, not $25$."
                         },
                         {
-                                "ans": "$$C(-3,-4),  R = 5,  c = -2 \\pm 5\\sqrt{5}$$",
+                                "ans": "\\begin{aligned} C(-3, -4), \\quad &R = 5 \\cr c &= -2 \\pm 5\\sqrt{5} \\end{aligned}",
                                 "feedback": "Be careful with signs when writing down the centre from the completed square form $(x - 3)^2 + (y - 4)^2 = 25$. This corresponds to a centre of $(3, 4)$, not $(-3, -4)$."
                         }
                 ],
@@ -1839,7 +1839,7 @@ window.ALEVEL_QUESTIONS = [
                         "content": "When finding the possible values of $c$ for which $y = mx + c$ is a tangent to a circle, setting the perpendicular distance from the centre to the line equal to the radius is significantly faster than expanding a substituted quadratic. It cleanly isolates $|c + k| = r\\sqrt{m^2 + 1}$, yielding the exact values instantly."
                 }
         },
-        {
+         {
                 "id": "004246",
                 "board": "OCR MEI",
                 "branch": "Pure",
