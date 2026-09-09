@@ -1554,9 +1554,10 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Integration",
-                "topic": "Integration",
+                "topic": "Integration by Parts",
                 "subtopic": [
-                        "Trigonometry"
+                        "Integrating Trigonometric Functions",
+                        "Definite Integration"
                 ],
                 "img": "images/Pure_SVGs/004239.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = x \\cos x$. The finite region $R$ is bounded by the curve, the $x$-axis, and the vertical lines $x = 0$ and $x = \\dfrac{1}{2}\\pi$.<br><br>Find the exact area of the region $R$.",
@@ -1591,11 +1592,12 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Integration",
+                "major_area": "Integration",
+                "topic": "Integration by Parts",
                 "subtopic": [
-                        "Integration",
-                        "Tangents and Normals"
+                        "Integrating Exponential Functions",
+                        "Tangents and Normals",
+                        "Definite Integration"
                 ],
                 "img": "images/Pure_SVGs/004240.svg",
                 "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = \\ln x$ for $x > 0$.<br><br>1. Find the equation of the tangent to the curve at the point $P(e, 1)$.<br><br>2. Show that this tangent passes through the origin $(0,0)$.<br><br>3. Find the exact area of the region bounded by the curve $y = \\ln x$, the tangent at $P$, and the $x$-axis.",
@@ -1603,8 +1605,8 @@ window.ALEVEL_QUESTIONS = [
                         "Find the derivative of $y = \\ln x$ to determine the gradient at $P$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{x} \\end{aligned}At $x = e$, the gradient of the tangent is $m = \\dfrac{1}{e}$. Use the point-gradient formula with $P(e, 1)$:\\begin{aligned} y - 1 &= \\dfrac{1}{e}(x - e) \\cr y &= \\dfrac{1}{e}x - 1 + 1 \\cr y &= \\dfrac{x}{e} \\end{aligned}",
                         "Show that the tangent passes through the origin by substituting $x = 0$ into its equation:\\begin{aligned} y &= \\dfrac{0}{e} \\cr &= 0 \\end{aligned}This confirms that the tangent passes through the origin $(0,0)$.",
                         "Set up the area of the region. The tangent line is $y = \\dfrac{x}{e}$ and the curve is $y = \\ln x$. The $x$-axis is $y = 0$.<br><br>The region is bounded above by the tangent from $x = 0$ to $x = e$. Underneath, the lower boundary switches at $x = 1$:<br>• From $x = 0$ to $x = 1$, the lower boundary is the $x$-axis ($y = 0$).<br>• From $x = 1$ to $x = e$, the lower boundary is the curve ($y = \\ln x$).<br><br>Therefore, the area of the region is most easily calculated as the area under the tangent line minus the area under the curve:\\begin{aligned} A = \\int_{0}^{e} \\dfrac{x}{e} \\text{d}x - \\int_{1}^{e} \\ln x \\text{d}x \\end{aligned}",
-                        "Evaluate the first part, which is a right-angled triangle of base $e$ and height $1$:\\begin{aligned} \\int_{0}^{e} \\dfrac{x}{e} \\text{d}x &= \\left[ \\dfrac{x^2}{2e} \\right]_{0}^{e} \\cr &= \\dfrac{e^2}{2e} - 0 \\cr &= \\dfrac{e}{2} \\end{aligned}",
-                        "Evaluate the second part, $\\int_{1}^{e} \\ln x \\text{d}x$, using integration by parts:\\begin{aligned} \\int_{1}^{e} \\ln x \\text{d}x &= \\Big[ x\\ln x - x \\Big]_{1}^{e} \\cr &= (e\\ln e - e) - (1\\ln 1 - 1) \\cr &= (e - e) - (0 - 1) \\cr &= 1 \\end{aligned}",
+                        "Evaluate the first part, which is a right-angled triangle of base $e$ and height $1$:\\begin{aligned} \\int_{0}^{e} \\dfrac{x}{e} \\text{d}x &= \\left[ \\dfrac{x^2}{2e} \\right]_{0}^{e} \\cr &  = \\dfrac{e^2}{2e} - 0 \\cr & = \\dfrac{e}{2} \\end{aligned}",
+                        "Evaluate the second part, $\\int_{1}^{e} \\ln x \\text{d}x$, using integration by parts:\\begin{aligned} &\\int_{1}^{e} \\ln x \\text{d}x = \\Big[ x\\ln x - x \\Big]_{1}^{e} \\cr & \\quad = (e\\ln e - e) - (1\\ln 1 - 1) \\cr & \\quad = (e - e) - (0 - 1) \\cr & \\quad = 1 \\end{aligned}",
                         "Subtract the area under the curve from the area under the tangent to find the exact area of the region:\\begin{aligned} A = \\dfrac{e}{2} - 1 \\end{aligned}",
                         "Final Answer: \\begin{aligned} y &= \\dfrac{x}{e} \\cr \\text{Area} &= \\dfrac{e}{2} - 1 \\end{aligned}"
                 ],
