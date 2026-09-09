@@ -388,49 +388,49 @@ window.ALEVEL_QUESTIONS = [
                         "content": "When integrating reciprocal linear expressions of the form $\\int \\dfrac{1}{aV - b} \\,\\text{d}V$, always remember the factor of $\\dfrac{1}{a}$ that arises from reversing the chain rule. Omitting this multiplier leads to incorrect scale factors in the exponential exponent during subsequent rearrangements."
                 }
         },
-        {
-                "id": "004210",
-                "board": "OCR",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differential Equations",
-                "subtopic": [
-                        "Integration",
-                        "Modelling and Applications"
-                ],
-                "img": false,
-                "question": "An environmental scientist is monitoring a bird population, $B$, on an isolated island. When monitoring begins at $t = 0$, there are $100$ birds, and at $t = 1$ year, there are $150$ birds.<br><br>1. A simple geometric model assumes that the rate of increase of the bird population is directly proportional to the number of birds present.<br>(a) Write down a differential equation to model this situation.<br>(b) Solve this differential equation to find $B$ in terms of $t$.<br><br>2. A more realistic logistic model assumes that the island has a maximum carrying capacity of $500$ birds, and that the rate of growth is modeled by the differential equation:\\begin{aligned} \\dfrac{\\text{d}B}{\\text{d}t} = \\dfrac{B(500 - B)}{2000} \\end{aligned}Solve this differential equation to find $B$ in terms of $t$, using the same initial population of $100$ birds at $t = 0$.<br><br>3. Compare the long-term behaviour predicted by the two models as $t \\to \\infty$.",
-                "steps": [
-                        "Represent exponential growth as a differential equation:\\begin{aligned} \\dfrac{\\text{d}B}{\\text{d}t} = kB \\end{aligned}where $k > 0$ is a constant of proportionality.",
-                        "Solve by separating the variables and integrating both sides:\\begin{aligned} \\int \\dfrac{1}{B} \\text{d}B &= \\int k \\text{d}t \\cr \\ln B &= kt + C \\cr B(t) &= Ae^{kt} \\end{aligned}where $A = e^C$. Substitute $t = 0,  B = 100 \\implies A = 100$.<br><br>Substitute $t = 1,  B = 150$ into $B(t) = 100e^{kt}$:\\begin{aligned} 150 &= 100e^{k} \\cr e^k &= 1.5 \\cr k &= \\ln 1.5 \\end{aligned}So the first model is:\\begin{aligned} B(t) &= 100e^{(\\ln 1.5)t} \\cr &= 100\\cdot 1.5^t \\end{aligned}",
-                        "For the logistic model, separate the variables:\\begin{aligned} \\dfrac{1}{B(500 - B)} \\text{d}B &= \\dfrac{1}{2000} \\text{d}t \\end{aligned}Decompose the left-hand fraction using partial fractions:\\begin{aligned} \\dfrac{1}{B(500 - B)} &= \\dfrac{X}{B} + \\dfrac{Y}{500 - B} \\cr 1 &= X(500 - B) + YB \\end{aligned}By substituting $B = 0 \\implies X = \\dfrac{1}{500}$, and $B = 500 \\implies Y = \\dfrac{1}{500}$.<br><br>So the decomposed expression is:\\begin{aligned} \\dfrac{1}{B(500 - B)} &= \\dfrac{1}{500}\\big( \\dfrac{1}{B} + \\dfrac{1}{500 - B} \\big) \\end{aligned}",
-                        "Integrate both sides using the partial fraction decomposition:\\begin{aligned} \\dfrac{1}{500} \\int \\big( \\dfrac{1}{B} + \\dfrac{1}{500 - B} \\big) \\text{d}B &= \\int \\dfrac{1}{2000} \\text{d}t \\cr \\dfrac{1}{500}\\big( \\ln|B| - \\ln|500 - B| \\big) &= \\dfrac{t}{2000} + C_1 \\cr \\ln\\big( \\dfrac{B}{500 - B} \\big) &= \\dfrac{t}{4} + C' \\end{aligned}where $C' = 500C_1$. Taking exponentials of both sides:\\begin{aligned} \\dfrac{B}{500 - B} &= Ke^{t/4} \\end{aligned}",
-                        "Substitute the initial condition $t = 0,  B = 100$ to find $K$:\\begin{aligned} \\dfrac{100}{500 - 100} &= Ke^{0} \\cr \\dfrac{100}{400} &= K \\cr K &= \\dfrac{1}{4} \\end{aligned}This gives:\\begin{aligned} \\dfrac{B}{500 - B} &= \\dfrac{1}{4}e^{t/4} \\end{aligned}",
-                        "Rearrange to isolate $B(t)$:\\begin{aligned} B &= (500 - B)\\big(\\dfrac{1}{4}e^{t/4}\\big) \\cr B &= 125e^{t/4} - \\dfrac{1}{4}Be^{t/4} \\cr B\\big(1 + \\dfrac{1}{4}e^{t/4}\\big) &= 125e^{t/4} \\cr B(t) &= \\dfrac{125e^{t/4}}{1 + \\dfrac{1}{4}e^{t/4}} \\cr B(t) &= \\dfrac{500e^{t/4}}{4 + e^{t/4}} \\end{aligned}",
-                        "Examine the long-term behaviour as $t \\to \\infty$:<br><br>For the simple geometric model, $B(t) = 100\\cdot 1.5^t \\to \\infty$, which predicts unbounded population expansion.<br><br>For the logistic model, divide numerator and denominator by $e^{t/4}$:\\begin{aligned} B(t) &= \\dfrac{500}{4e^{-t/4} + 1} \\cr B(t) &\\to \\dfrac{500}{0 + 1} \\cr &= 500 \\end{aligned}The simple model assumes infinite growth, whereas the logistic model predicts the population is bounded and will level off at the carrying capacity of $500$ birds.",
-                        "Final Answer: \\begin{aligned} B(t) &= 100\\cdot 1.5^t \\cr B(t) &= \\dfrac{500e^{t/4}}{4 + e^{t/4}} \\end{aligned}"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "\\begin{aligned} B(t) &= 100\\cdot 1.5^t \\cr B(t) &= \\dfrac{500e^{t/4}}{4 - e^{t/4}} \\end{aligned}",
-                                "feedback": "Be careful with signs during your algebraic isolation steps. Rearranging $B\\left(1 + \\dfrac{1}{4}e^{t/4}\\right) = 125e^{t/4}$ leads to addition in the denominator: $B(t) = \\dfrac{500e^{t/4}}{4 + e^{t/4}}$, not subtraction."
-                        },
-                        {
-                                "ans": "\\begin{aligned} B(t) &= 100\\cdot 1.5^t \\cr B(t) &= \\dfrac{125e^{t/4}}{4 + e^{t/4}} \\end{aligned}",
-                                "feedback": "Check your scaling factor when multiplying numerator and denominator by $4$. The numerator $125e^{t/4}$ multiplied by $4$ becomes $500e^{t/4}$, not $125e^{t/4}$."
-                        },
-                        {
-                                "ans": "\\begin{aligned} B(t) &= 100\\cdot 1.5^t \\cr B(t) &= \\dfrac{500}{e^{-t/4} + 4} \\end{aligned}",
-                                "feedback": "Check your division steps when evaluating limits. Dividing the numerator and denominator of \\dfrac{500e^{t/4}}{4 + e^{t/4}} by e^{t/4} yields \\dfrac{500}{4e^{-t/4} + 1}, not \\dfrac{500}{e^{-t/4} + 4}."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Master Partial Fractions in ODEs",
-                        "content": "For logistic growth differential equations, decomposing the expression using partial fractions is a staple GCE topic. Always remember to divide by the carrying capacity multiplier (such as $500$) outside of the logarithmic brackets. Forgetting this coefficient causes incorrect constant values when applying initial conditions."
+       {
+        "id": "004210",
+        "board": "OCR",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Differentiation",
+        "topic": "Differential Equations",
+        "subtopic": [
+                "Integration",
+                "Modelling and Applications"
+        ],
+        "img": false,
+        "question": "An environmental scientist is monitoring a bird population, $B$, on an isolated island. When monitoring begins at $t = 0$, there are $100$ birds, and at $t = 1$ year, there are $150$ birds.<br><br>1. A simple geometric model assumes that the rate of increase of the bird population is directly proportional to the number of birds present.<br>(a) Write down a differential equation to model this situation.<br>(b) Solve this differential equation to find $B$ in terms of $t$.<br><br>2. A more realistic logistic model assumes that the island has a maximum carrying capacity of $500$ birds, and that the rate of growth is modeled by the differential equation:\\begin{aligned} \\dfrac{\\text{d}B}{\\text{d}t} = \\dfrac{B(500 - B)}{2000} \\end{aligned}Solve this differential equation to find $B$ in terms of $t$, using the same initial population of $100$ birds at $t = 0$.<br><br>3. Compare the long-term behaviour predicted by the two models as $t \\to \\infty$.",
+        "steps": [
+                "Represent exponential growth as a differential equation:\\begin{aligned} \\dfrac{\\text{d}B}{\\text{d}t} = kB \\end{aligned}where $k > 0$ is a constant of proportionality.",
+                "Solve by separating the variables and integrating both sides:\\begin{aligned} \\int \\dfrac{1}{B} \\text{d}B &= \\int k \\text{d}t \\cr \\ln B &= kt + C \\cr B(t) &= Ae^{kt} \\end{aligned}where $A = e^C$. Substitute $t = 0,  B = 100 \\implies A = 100$.<br><br>Substitute $t = 1,  B = 150$ into $B(t) = 100e^{kt}$:\\begin{aligned} 150 &= 100e^{k} \\cr e^k &= 1.5 \\cr k &= \\ln 1.5 \\end{aligned}So the first model is:\\begin{aligned} B(t) &= 100e^{(\\ln 1.5)t} \\cr &= 100\\cdot 1.5^t \\end{aligned}",
+                "For the logistic model, separate the variables:\\begin{aligned} &\\dfrac{1}{B(500 - B)} \\text{d}B \\cr &\\quad = \\dfrac{1}{2000} \\text{d}t \\end{aligned}Decompose the left-hand fraction using partial fractions:\\begin{aligned} &\\dfrac{1}{B(500 - B)} \\cr &\\quad = \\dfrac{X}{B} + \\dfrac{Y}{500 - B} \\cr &1 = X(500 - B) + YB \\end{aligned}By substituting $B = 0 \\implies X = \\dfrac{1}{500}$, and $B = 500 \\implies Y = \\dfrac{1}{500}$.<br><br>So the decomposed expression is:\\begin{aligned} &\\dfrac{1}{B(500 - B)} \\cr &\\quad = \\dfrac{1}{500}\\big( \\dfrac{1}{B} + \\dfrac{1}{500 - B} \\big) \\end{aligned}",
+                "Integrate both sides using the partial fraction decomposition:\\begin{aligned} &\\dfrac{1}{500} \\int \\big( \\dfrac{1}{B} + \\dfrac{1}{500 - B} \\big) \\text{d}B \\cr &\\quad = \\int \\dfrac{1}{2000} \\text{d}t \\cr &\\dfrac{1}{500}\\big( \\ln|B| - \\ln|500 - B| \\big) \\cr &\\quad = \\dfrac{t}{2000} + C_1 \\cr &\\ln\\big( \\dfrac{B}{500 - B} \\big) = \\dfrac{t}{4} + C' \\cr &\\dfrac{B}{500 - B} = Ke^{t/4} \\end{aligned}where $C' = 500C_1$.",
+                "Substitute the initial condition $t = 0,  B = 100$ to find $K$:\\begin{aligned} &\\dfrac{100}{500 - 100} = Ke^{0} \\cr &\\dfrac{100}{400} = K \\cr &K = \\dfrac{1}{4} \\end{aligned}This gives:\\begin{aligned} \\dfrac{B}{500 - B} = \\dfrac{1}{4}e^{t/4} \\end{aligned}",
+                "Rearrange to isolate $B(t)$:\\begin{aligned} &B = (500 - B)\\big(\\dfrac{1}{4}e^{t/4}\\big) \\cr &B = 125e^{t/4} - \\dfrac{1}{4}Be^{t/4} \\cr &B\\big(1 + \\dfrac{1}{4}e^{t/4}\\big) = 125e^{t/4} \\cr &B(t) = \\dfrac{125e^{t/4}}{1 + \\dfrac{1}{4}e^{t/4}} \\cr &B(t) = \\dfrac{500e^{t/4}}{4 + e^{t/4}} \\end{aligned}",
+                "Examine the long-term behaviour as $t \\to \\infty$:<br><br>For the simple geometric model, $B(t) = 100\\cdot 1.5^t \\to \\infty$, which predicts unbounded population expansion.<br><br>For the logistic model, divide numerator and denominator by $e^{t/4}$:\\begin{aligned} &B(t) = \\dfrac{500}{4e^{-t/4} + 1} \\cr &B(t) \\to \\dfrac{500}{0 + 1} = 500 \\end{aligned}The simple model assumes infinite growth, whereas the logistic model predicts the population is bounded and will level off at the carrying capacity of $500$ birds.",
+                "Final Answer: \\begin{aligned} B(t) &= 100\\cdot 1.5^t \\cr B(t) &= \\dfrac{500e^{t/4}}{4 + e^{t/4}} \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "\\begin{aligned} B(t) &= 100\\cdot 1.5^t \\cr B(t) &= \\dfrac{500e^{t/4}}{4 - e^{t/4}} \\end{aligned}",
+                        "feedback": "Be careful with signs during your algebraic isolation steps. Rearranging $B\\left(1 + \\dfrac{1}{4}e^{t/4}\\right) = 125e^{t/4}$ leads to addition in the denominator: $B(t) = \\dfrac{500e^{t/4}}{4 + e^{t/4}}$, not subtraction."
+                },
+                {
+                        "ans": "\\begin{aligned} B(t) &= 100\\cdot 1.5^t \\cr B(t) &= \\dfrac{125e^{t/4}}{4 + e^{t/4}} \\end{aligned}",
+                        "feedback": "Check your scaling factor when multiplying numerator and denominator by $4$. The numerator $125e^{t/4}$ multiplied by $4$ becomes $500e^{t/4}$, not $125e^{t/4}$."
+                },
+                {
+                        "ans": "\\begin{aligned} B(t) &= 100\\cdot 1.5^t \\cr B(t) &= \\dfrac{500}{e^{-t/4} + 4} \\end{aligned}",
+                        "feedback": "Check your division steps when evaluating limits. Dividing the numerator and denominator of \\dfrac{500e^{t/4}}{4 + e^{t/4}} by e^{t/4} yields \\dfrac{500}{4e^{-t/4} + 1}, not \\dfrac{500}{e^{-t/4} + 4}."
                 }
-        },
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: Master Partial Fractions in ODEs",
+                "content": "For logistic growth differential equations, decomposing the expression using partial fractions is a staple GCE topic. Always remember to divide by the carrying capacity multiplier (such as $500$) outside of the logarithmic brackets. Forgetting this coefficient causes incorrect constant values when applying initial conditions."
+        }
+},
                 {
                 "id": "004211",
                 "board": "OCR MEI",
