@@ -1839,7 +1839,7 @@ window.ALEVEL_QUESTIONS = [
                         "content": "When finding the possible values of $c$ for which $y = mx + c$ is a tangent to a circle, setting the perpendicular distance from the centre to the line equal to the radius is significantly faster than expanding a substituted quadratic. It cleanly isolates $|c + k| = r\\sqrt{m^2 + 1}$, yielding the exact values instantly."
                 }
         },
-         {
+        {
                 "id": "004246",
                 "board": "OCR MEI",
                 "branch": "Pure",
@@ -1850,24 +1850,24 @@ window.ALEVEL_QUESTIONS = [
                         "Algebraic Methods"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Show that:<br>$$\\sqrt{45} + \\sqrt{80} = a\\sqrt{b}$$<br>where $a$ and $b$ are prime numbers to be determined.",
+                "question": "In this question you must show detailed reasoning.<br><br>Show that:\\begin{aligned} \\sqrt{45} + \\sqrt{80} = a\\sqrt{b} \\end{aligned}where $a$ and $b$ are prime numbers to be determined.",
                 "steps": [
-                        "Simplify each surd individually by finding the largest perfect square factor for both $45$ and $80$:<br>\\begin{aligned} \\sqrt{45} &= \\sqrt{9 \\cdot 5} = 3\\sqrt{5} \\\\\\ \\sqrt{80} &= \\sqrt{16 \\cdot 5} = 4\\sqrt{5} \\end{aligned}",
-                        "Substitute these simplified expressions back into the original sum and collect like terms:<br>\\begin{aligned}\\sqrt{45} + \\sqrt{80} &= 3\\sqrt{5} + 4\\sqrt{5}  \\cr&= 7\\sqrt{5}\\end{aligned}",
-                        "Identify the values of the constants $a$ and $b$ from the expression $7\\sqrt{5}$ and confirm they are both prime numbers:<br>\\begin{aligned}a &= 7 \\quad \\text{and} \\quad b  \\cr&= 5\\end{aligned}<br>Since $7$ and $5$ are both prime, the conditions are satisfied.",
-                "Final Answer: \\begin{aligned}a &= 7, \\quad b  \\cr&= 5\\end{aligned}"
+                        "Simplify each surd individually by finding the largest perfect square factor for both $45$ and $80$:\\begin{aligned} \\sqrt{45} &= \\sqrt{9 \\times 5} \\cr &= 3\\sqrt{5} \\cr \\sqrt{80} &= \\sqrt{16 \\times 5} \\cr &= 4\\sqrt{5} \\end{aligned}",
+                        "Substitute these simplified expressions back into the original sum and collect like terms:\\begin{aligned} \\sqrt{45} + \\sqrt{80} &= 3\\sqrt{5} + 4\\sqrt{5} \\cr &= 7\\sqrt{5} \\end{aligned}",
+                        "Identify the values of the constants $a$ and $b$ from the expression $7\\sqrt{5}$:\\begin{aligned} a &= 7 \\cr b &= 5 \\end{aligned}Since $7$ and $5$ are both prime, the conditions are satisfied.",
+                        "Final Answer: \\begin{aligned} a &= 7 \\cr b &= 5 \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$a = 5, \\quad b = 5$$",
+                                "ans": "\\begin{aligned} a &= 5 \\cr b &= 5 \\end{aligned}",
                                 "feedback": "Check your simplification of $\\sqrt{80}$. Since $80 = 16 \\cdot 5$, $\\sqrt{80} = 4\\sqrt{5}$, not $2\\sqrt{5}$. This gives the sum $3\\sqrt{5} + 4\\sqrt{5} = 7\\sqrt{5}$, not $5\\sqrt{5}$."
                         },
                         {
-                                "ans": "$$a = 25, \\quad b = 5$$",
+                                "ans": "\\begin{aligned} a &= 25 \\cr b &= 5 \\end{aligned}",
                                 "feedback": "Check your simplification of the individual surds. When simplifying $\\sqrt{45} = \\sqrt{9 \\cdot 5}$, you must take the square root of $9$, which is $3$, to get $3\\sqrt{5}$. It seems you forgot to take the square root of the extracted factors and left them as $9\\sqrt{5}$ and $16\\sqrt{5}$ respectively, leading to $25\\sqrt{5}$."
                         },
                         {
-                                "ans": "$$a = 7, \\quad b = 25$$",
+                                "ans": "\\begin{aligned} a &= 7 \\cr b &= 25 \\end{aligned}",
                                 "feedback": "Remember to take the square root of your squared factor when simplifying. The term inside the square root must be the remaining prime factor, $b = 5$, not the squared term $25$."
                         }
                 ],
@@ -1888,25 +1888,25 @@ window.ALEVEL_QUESTIONS = [
                         "Algebraic Methods"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Show that the expression:<br>$$\\dfrac{4 + \\sqrt{5}}{3 - \\sqrt{5}}$$<br>can be written in the form $x + y\\sqrt{5}$, where $x$ and $y$ are rational numbers to be determined.",
+                "question": "In this question you must show detailed reasoning.<br><br>Show that the expression:\\begin{aligned} \\dfrac{4 + \\sqrt{5}}{3 - \\sqrt{5}} \\end{aligned}can be written in the form $x + y\\sqrt{5}$, where $x$ and $y$ are rational numbers to be determined.",
                 "steps": [
-                        "To rationalise the denominator, multiply both the numerator and the denominator by the conjugate of the denominator, which is $3 + \\sqrt{5}$:<br>$$\\dfrac{4 + \\sqrt{5}}{3 - \\sqrt{5}} = \\dfrac{(4 + \\sqrt{5})(3 + \\sqrt{5})}{(3 - \\sqrt{5})(3 + \\sqrt{5})}$$",
-                        "Expand and simplify the denominator using the difference of two squares identity, $(a-b)(a+b) = a^2 - b^2$:<br>\\begin{aligned}\\left(3 - \\sqrt{5}\\right)\\left(3 + \\sqrt{5}\\right) &= 3^2 - \\left(\\sqrt{5}\\right)^2  \\cr&= 9 - 5  \\cr&= 4\\end{aligned}",
-                        "Expand the numerator step-by-step:<br>$$\\begin{aligned} \\left(4 + \\sqrt{5}\\right)\\left(3 + \\sqrt{5}\\right) &= 12 + 4\\sqrt{5} + 3\\sqrt{5} + \\left(\\sqrt{5}\\right)^2 \\\\\\ &= 12 + 7\\sqrt{5} + 5 \\\\\\ &= 17 + 7\\sqrt{5} \\end{aligned}$$",
-                        "Combine the simplified numerator and denominator into a single fraction and split it into individual terms:<br>$$\\dfrac{17 + 7\\sqrt{5}}{4} = \\dfrac{17}{4} + \\dfrac{7}{4}\\sqrt{5}$$<br>This matches the required form $x + y\\sqrt{5}$, where $x = \\dfrac{17}{4}$ and $y = \\dfrac{7}{4}$ are both rational numbers.",
-                "Final Answer: \\begin{aligned}x &= \\dfrac{17}{4}, \\quad y  \\cr&= \\dfrac{7}{4}\\end{aligned}"
+                        "To rationalise the denominator, multiply both the numerator and the denominator by the conjugate of the denominator, which is $3 + \\sqrt{5}$:\\begin{aligned} &\\dfrac{4 + \\sqrt{5}}{3 - \\sqrt{5}} \\cr &\\quad = \\dfrac{(4 + \\sqrt{5})(3 + \\sqrt{5})}{(3 - \\sqrt{5})(3 + \\sqrt{5})} \\end{aligned}",
+                        "Expand and simplify the denominator using the difference of two squares identity, $(a-b)(a+b) = a^2 - b^2$:\\begin{aligned} (3 - \\sqrt{5})(3 + \\sqrt{5}) &= 3^2 - (\\sqrt{5})^2 \\cr &= 9 - 5 \\cr &= 4 \\end{aligned}",
+                        "Expand the numerator step-by-step using far-left alignment:\\begin{aligned} &(4 + \\sqrt{5})(3 + \\sqrt{5}) \\cr &\\quad = 12 + 4\\sqrt{5} + 3\\sqrt{5} + (\\sqrt{5})^2 \\cr &\\quad = 12 + 7\\sqrt{5} + 5 \\cr &\\quad = 17 + 7\\sqrt{5} \\end{aligned}",
+                        "Combine the simplified numerator and denominator into a single fraction and split it into individual terms:\\begin{aligned} \\dfrac{17 + 7\\sqrt{5}}{4} = \\dfrac{17}{4} + \\dfrac{7}{4}\\sqrt{5} \\end{aligned}This matches the required form $x + y\\sqrt{5}$, where $x = \\dfrac{17}{4}$ and $y = \\dfrac{7}{4}$ are both rational numbers.",
+                        "Final Answer: \\begin{aligned} x &= \\dfrac{17}{4} \\cr y &= \\dfrac{7}{4} \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$x = \\dfrac{17}{14}, \\quad y = \\dfrac{7}{14}$$",
+                                "ans": "\\begin{aligned} x &= \\dfrac{17}{14} \\cr y &= \\dfrac{7}{14} \\end{aligned}",
                                 "feedback": "Check your denominator expansion. Using the difference of two squares, $(3-\\sqrt{5})(3+\\sqrt{5})$ is $9 - 5 = 4$, not $9 + 5 = 14$."
                         },
                         {
-                                "ans": "$$x = \\dfrac{7}{4}, \\quad y = \\dfrac{17}{4}$$",
+                                "ans": "\\begin{aligned} x &= \\dfrac{7}{4} \\cr y &= \\dfrac{17}{4} \\end{aligned}",
                                 "feedback": "Be careful when identifying the constants $x$ and $y$. The rational term is $x = \\dfrac{17}{4}$ and the coefficient of the surd is $y = \\dfrac{7}{4}$. It seems you may have reversed their values."
                         },
                         {
-                                "ans": "$$x = \\dfrac{13}{4}, \\quad y = \\dfrac{7}{4}$$",
+                                "ans": "\\begin{aligned} x &= \\dfrac{13}{4} \\cr y &= \\dfrac{7}{4} \\end{aligned}",
                                 "feedback": "Check your expansion of the constant term in the numerator. The product $(\\sqrt{5})(\\sqrt{5})$ evaluates to $+5$, not $-5$. Adding this to $12$ gives $12 + 5 = 17$, not $12 - 5 = 7$."
                         }
                 ],
@@ -1927,25 +1927,25 @@ window.ALEVEL_QUESTIONS = [
                         "Algebraic Methods"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:<br>$$x\\sqrt{8} - \\sqrt{18} = x\\sqrt{2} + \\sqrt{32}$$<br>giving your answer for $x$ in exact simplified form.",
+                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:\\begin{aligned} x\\sqrt{8} - \\sqrt{18} = x\\sqrt{2} + \\sqrt{32} \\end{aligned}giving your answer for $x$ in exact simplified form.",
                 "steps": [
-                        "Simplify all the surds in the equation to express them in terms of their simplest radical components:<br>\\begin{aligned} \\sqrt{8} &= \\sqrt{4 \\cdot 2} = 2\\sqrt{2} \\\\\\ \\sqrt{18} &= \\sqrt{9 \\cdot 2} = 3\\sqrt{2} \\\\\\ \\sqrt{32} &= \\sqrt{16 \\cdot 2} = 4\\sqrt{2} \\end{aligned}",
-                        "Substitute these simplified expressions back into the original equation:<br>$$2x\\sqrt{2} - 3\\sqrt{2} = x\\sqrt{2} + 4\\sqrt{2}$$",
-                        "Factorise out the common term $\\sqrt{2}$ from both sides of the equation:<br>$$\\left(2x - 3\\right)\\sqrt{2} = \\left(x + 4\\right)\\sqrt{2}$$",
-                        "Divide both sides of the equation by $\\sqrt{2}$ and solve the resulting linear equation for $x$:<br>$$\\begin{aligned} 2x - 3 &= x + 4 \\\\ x &= 7 \\end{aligned}$$",
-                "Final Answer: $$x = 7$$"
+                        "Simplify all the surds in the equation to express them in terms of their simplest radical components:\\begin{aligned} \\sqrt{8} &= \\sqrt{4 \\times 2} \\cr &= 2\\sqrt{2} \\cr \\sqrt{18} &= \\sqrt{9 \\times 2} \\cr &= 3\\sqrt{2} \\cr \\sqrt{32} &= \\sqrt{16 \\times 2} \\cr &= 4\\sqrt{2} \\end{aligned}",
+                        "Substitute these simplified expressions back into the original equation:\\begin{aligned} 2x\\sqrt{2} - 3\\sqrt{2} = x\\sqrt{2} + 4\\sqrt{2} \\end{aligned}",
+                        "Factorise out the common term $\\sqrt{2}$ from both sides of the equation:\\begin{aligned} (2x - 3)\\sqrt{2} = (x + 4)\\sqrt{2} \\end{aligned}",
+                        "Divide both sides of the equation by $\\sqrt{2}$ and solve the resulting linear equation for $x$:\\begin{aligned} 2x - 3 &= x + 4 \\cr x &= 7 \\end{aligned}",
+                        "Final Answer: \\begin{aligned} x = 7 \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$x = 1$$",
+                                "ans": "\\begin{aligned} x = 1 \\end{aligned}",
                                 "feedback": "Check your signs when isolating $x$. From $2x - 3 = x + 4$, subtracting $x$ from both sides gives $x - 3 = 4$, and adding $3$ to both sides yields $x = 7$, not $x = 1$."
                         },
                         {
-                                "ans": "$$x = -7$$",
+                                "ans": "\\begin{aligned} x = -7 \\end{aligned}",
                                 "feedback": "Be careful when moving variables and constants. When simplifying $2x - 3 = x + 4$, both sides reduce to positive $x = 7$. Check your sign steps."
                         },
                         {
-                                "ans": "$$x = \\dfrac{7}{3}$$",
+                                "ans": "\\begin{aligned} x = \\dfrac{7}{3} \\end{aligned}",
                                 "feedback": "Check your expansion of the $x\\sqrt{8}$ term. Since $\\sqrt{8} = 2\\sqrt{2}$, the coefficient is $2x$, not $4x$."
                         }
                 ],
@@ -1968,24 +1968,24 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>A rectangle has an area of $12\\sqrt{3} \\text{ cm}^2$ and a width of $3 - \\sqrt{3} \\text{ cm}$.<br><br>Show that the length of the rectangle can be written in the form $p + q\\sqrt{3}$, where $p$ and $q$ are integers to be determined.",
                 "steps": [
-                        "The length of the rectangle is found by dividing the area by the width:<br>$$\\text{Length} = \\dfrac{12\\sqrt{3}}{3 - \\sqrt{3}}$$",
-                        "Rationalise the denominator by multiplying both the numerator and the denominator by the conjugate $3 + \\sqrt{3}$:<br>$$\\text{Length} = \\dfrac{12\\sqrt{3}\\left(3 + \\sqrt{3}\\right)}{\\left(3 - \\sqrt{3}\\right)\\left(3 + \\sqrt{3}\\right)}$$",
-                        "Simplify the denominator using the difference of two squares:<br>\\begin{aligned}\\left(3 - \\sqrt{3}\\right)\\left(3 + \\sqrt{3}\\right) &= 3^2 - \\left(\\sqrt{3}\\right)^2  \\cr&= 9 - 3  \\cr&= 6\\end{aligned}",
-                        "Expand the numerator step-by-step:<br>\\begin{aligned}12\\sqrt{3}\\left(3 + \\sqrt{3}\\right) &= 36\\sqrt{3} + 12\\left(3\\right)  \\cr&= 36\\sqrt{3} + 36\\end{aligned}",
-                        "Divide the expanded numerator by the simplified denominator, and write it in the required form $p + q\\sqrt{3}$:<br>\\begin{aligned}\\text{Length} &= \\dfrac{36 + 36\\sqrt{3}}{6}  \\cr&= 6 + 6\\sqrt{3}\\end{aligned}<br>This matches the required form where $p = 6$ and $q = 6$ are both integers.",
-                "Final Answer: \\begin{aligned}p &= 6, \\quad q  \\cr&= 6\\end{aligned}"
+                        "The length of the rectangle is found by dividing the area by the width:\\begin{aligned} \\text{Length} = \\dfrac{12\\sqrt{3}}{3 - \\sqrt{3}} \\end{aligned}",
+                        "Rationalise the denominator by multiplying both the numerator and the denominator by the conjugate $3 + \\sqrt{3}$:\\begin{aligned} &\\text{Length} \\cr &\\quad = \\dfrac{12\\sqrt{3}(3 + \\sqrt{3})}{(3 - \\sqrt{3})(3 + \\sqrt{3})} \\end{aligned}",
+                        "Simplify the denominator using the difference of two squares:\\begin{aligned} (3 - \\sqrt{3})(3 + \\sqrt{3}) &= 3^2 - (\\sqrt{3})^2 \\cr &= 9 - 3 \\cr &= 6 \\end{aligned}",
+                        "Expand the numerator step-by-step:\\begin{aligned} 12\\sqrt{3}(3 + \\sqrt{3}) &= 36\\sqrt{3} + 12(3) \\cr &= 36 + 36\\sqrt{3} \\end{aligned}",
+                        "Divide the expanded numerator by the simplified denominator, and write it in the required form $p + q\\sqrt{3}$:\\begin{aligned} \\text{Length} &= \\dfrac{36 + 36\\sqrt{3}}{6} \\cr &= 6 + 6\\sqrt{3} \\end{aligned}This matches the required form where $p = 6$ and $q = 6$ are both integers.",
+                        "Final Answer: \\begin{aligned} p &= 6 \\cr q &= 6 \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$p = 6, \\quad q = -6$$",
+                                "ans": "\\begin{aligned} p &= 6 \\cr q &= -6 \\end{aligned}",
                                 "feedback": "Check your signs in the numerator expansion. Multiplying $12\\sqrt{3}$ by positive $\\sqrt{3}$ yields $+36$, not $-36$."
                         },
                         {
-                                "ans": "$$p = 3, \\quad q = 3$$",
+                                "ans": "\\begin{aligned} p &= 3 \\cr q &= 3 \\end{aligned}",
                                 "feedback": "Check your denominator evaluation. The denominator $(3-\\sqrt{3})(3+\\sqrt{3})$ is $9 - 3 = 6$, not $12$. Dividing by $6$ gives $6 + 6\\sqrt{3}$."
                         },
                         {
-                                "ans": "$$p = 12, \\quad q = 12$$",
+                                "ans": "\\begin{aligned} p &= 12 \\cr q &= 12 \\end{aligned}",
                                 "feedback": "Don't forget to divide your expanded terms by the simplified denominator. You must divide both $36$ and $36\\sqrt{3}$ by $6$ to get the correct coefficients."
                         }
                 ],
@@ -2006,26 +2006,26 @@ window.ALEVEL_QUESTIONS = [
                         "Linear Equations"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Solve the simultaneous equations:<br>$$\\begin{aligned} x + y\\sqrt{3} &= 11 \\\\ x\\sqrt{3} - 3y &= 5\\sqrt{3} \\end{aligned}$$<br>giving your answers for $x$ and $y$ in exact simplified form.",
+                "question": "In this question you must show detailed reasoning.<br><br>Solve the simultaneous equations:\\begin{aligned} x + y\\sqrt{3} &= 11 \\cr x\\sqrt{3} - 3y &= 5\\sqrt{3} \\end{aligned}giving your answers for $x$ and $y$ in exact simplified form.",
                 "steps": [
-                        "Rearrange the first equation to express $x$ in terms of $y$:<br>$$x = 11 - y\\sqrt{3}$$",
-                        "Substitute the expression for $x$ into the second equation:<br>\\begin{aligned} \\left(11 - y\\sqrt{3}\\right)\\sqrt{3} - 3y &= 5\\sqrt{3} \\\\\\ 11\\sqrt{3} - 3y - 3y &= 5\\sqrt{3} \\\\\\ 11\\sqrt{3} - 6y &= 5\\sqrt{3} \\end{aligned}",
-                        "Isolate the term in $y$ to solve the equation:<br>$$\\begin{aligned} -6y &= 5\\sqrt{3} - 11\\sqrt{3} \\\\\\ -6y &= -6\\sqrt{3} \\\\ y &= \\sqrt{3} \\end{aligned}$$",
-                        "Substitute $y = \\sqrt{3}$ back into the expression for $x$ to find its value:<br>$$\\begin{aligned} x &= 11 - \\left(\\sqrt{3}\\right)\\sqrt{3} \\\\ x &= 11 - 3 \\\\ x &= 8 \\end{aligned}$$",
-                "Final Answer: \\begin{aligned}x &= 8, \\quad y  \\cr&= \\sqrt{3}\\end{aligned}"
+                        "Rearrange the first equation to express $x$ in terms of $y$:\\begin{aligned} x = 11 - y\\sqrt{3} \\end{aligned}",
+                        "Substitute the expression for $x$ into the second equation:\\begin{aligned} (11 - y\\sqrt{3})\\sqrt{3} - 3y &= 5\\sqrt{3} \\cr 11\\sqrt{3} - 3y - 3y &= 5\\sqrt{3} \\cr 11\\sqrt{3} - 6y &= 5\\sqrt{3} \\end{aligned}",
+                        "Isolate the term in $y$ to solve the equation:\\begin{aligned} -6y &= 5\\sqrt{3} - 11\\sqrt{3} \\cr -6y &= -6\\sqrt{3} \\cr y &= \\sqrt{3} \\end{aligned}",
+                        "Substitute $y = \\sqrt{3}$ back into the expression for $x$ to find its value:\\begin{aligned} x &= 11 - (\\sqrt{3})\\sqrt{3} \\cr &= 11 - 3 \\cr &= 8 \\end{aligned}",
+                        "Final Answer: \\begin{aligned} x &= 8 \\cr y &= \\sqrt{3} \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$x = 8, \\quad y = -\\sqrt{3}$$",
+                                "ans": "\\begin{aligned} x &= 8 \\cr y &= -\\sqrt{3} \\end{aligned}",
                                 "feedback": "Check your signs when simplifying the $y$-terms. On the left side, we have $11\\sqrt{3} - 6y = 5\\sqrt{3}$, which simplifies to $-6y = -6\\sqrt{3}$, leading to positive $y = \\sqrt{3}$."
                         },
                         {
-                                "ans": "$$x = 5, \\quad y = \\sqrt{3}$$",
+                                "ans": "\\begin{aligned} x &= 5 \\cr y &= \\sqrt{3} \\end{aligned}",
                                 "feedback": "Check your final calculation for $x$. When substituting $y = \\sqrt{3}$, we have $x = 11 - (\\sqrt{3})(\\sqrt{3}) = 11 - 3 = 8$, not $11 - 6 = 5$."
                         },
                         {
-                                "ans": "$$x = 11, \\quad y = 0$$",
-                                "feedback": "While $x = 11,  y = 0$ satisfies the first equation, it does not satisfy the second equation. You must solve the system simultaneously to find the correct coordinates."
+                                "ans": "\\begin{aligned} x &= 11 \\cr y &= 0 \\end{aligned}",
+                                "feedback": "While $x = 11, y = 0$ satisfies the first equation, it does not satisfy the second equation. You must solve the system simultaneously to find the correct coordinates."
                         }
                 ],
                 "bradley_insight": {
