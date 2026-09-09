@@ -632,10 +632,10 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Numerical Methods",
+                "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                        "Numerical Methods"
+                        "Newton Raphson"
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>By considering a change of sign, show that the equation:\\begin{aligned} e^x - 4x^3 = 0 \\end{aligned}has a root, $\\alpha$, in the interval $[0.5, 1.0]$.",
@@ -671,10 +671,10 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Numerical Methods",
+                "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                        "Numerical Methods"
+                        "Newton Raphson"
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>The equation $x^3 - 5x + 3 = 0$ has a real root, $\\alpha$, in the interval $[0.5, 1.0]$.<br><br>1. Show that $\\alpha$ lies in the interval $[0.6, 0.7]$.<br><br>2. By considering the sign of the function at a suitable boundary, show that the value of $\\alpha$ is $0.66$ correct to $2$ decimal places.",
@@ -710,11 +710,10 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Numerical Methods",
+                "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                        "Algebraic Methods",
-                        "Numerical Methods"
+                        "Newton Raphson"
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>The equation $x^3 - 3x - 1 = 0$ has a root, $\\alpha$, in the interval $[1.5, 2.0]$.<br><br>1. Show that the equation can be rearranged into the iterative formula:\\begin{aligned} x_{n+1} = \\sqrt{3 + \\dfrac{1}{x_n}} \\end{aligned}2. Using this iterative formula with a starting value of $x_1 = 1.8$, find the values of $x_2$, $x_3$, and $x_4$, giving your answers to $4$ decimal places.",
@@ -750,11 +749,10 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Numerical Methods",
+                "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                        "Algebraic Methods",
-                        "Numerical Methods"
+                        "Newton Raphson"
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>A curve has the equation $y = e^{-x} + x^2 - 3$.<br><br>1. Show that the equation $e^{-x} + x^2 - 3 = 0$ can be rearranged into the iterative form:\\begin{aligned} x_{n+1} = \\sqrt{3 - e^{-x_n}} \\end{aligned}2. Using this iterative form with $x_1 = 1.5$, find the values of $x_2$, $x_3$, and $x_4$, giving your answers to $4$ decimal places.",
