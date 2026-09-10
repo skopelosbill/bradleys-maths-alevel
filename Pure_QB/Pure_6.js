@@ -1973,8 +1973,8 @@ window.ALEVEL_QUESTIONS = [
       "To find the intersection points, substitute the linear equation $y = x + 3$ into the quadratic equation of the circle:\\begin{aligned} x^2 + (x + 3)^2 &= 29 \\cr x^2 + x^2 + 6x + 9 &= 29 \\cr 2x^2 + 6x + 9 - 29 &= 0 \\cr 2x^2 + 6x - 20 &= 0 \\end{aligned}",
       "Divide the entire quadratic equation by 2 to simplify, and factorise to solve for $x$:\\begin{aligned} x^2 + 3x - 10 &= 0 \\cr (x + 5)(x - 2) &= 0 \\end{aligned}This yields two solutions: $x = -5$ and $x = 2$.",
       "Substitute these $x$-values back into the linear equation $y = x + 3$ to find the corresponding $y$-coordinates:<br><br><ul><li>For $x = -5$: $y = -2 \\implies (-5, -2)$</li><li>For $x = 2$: $y = 5 \\implies (2, 5)$</li></ul><br>Thus, the two points of intersection are $(-5, -2)$ and $(2, 5)$.",
-      "To find the exact length of the chord joining these two points, apply the distance formula:\\begin{aligned} \\text{Chord Length} &= \\sqrt{(2 - (-5))^2 + (5 - (-2))^2} \\cr &= \\sqrt{7^2 + 7^2} \\cr &= \\sqrt{49 + 49} \\cr &= \\sqrt{98} \\end{aligned}",
-      "Simplify the surd to its simplest form by extracting the perfect square factor $49$:\\begin{aligned} \\text{Chord Length} &= \\sqrt{49 \\times 2} \\cr &= 7\\sqrt{2} \\end{aligned}",
+      "To find the exact length of the chord joining these two points, apply the distance formula:\\begin{aligned} &\\text{Chord Length} \\cr & \\qquad= \\sqrt{(2 - (-5))^2 + (5 - (-2))^2} \\cr & \\qquad= \\sqrt{7^2 + 7^2} \\cr & \\qquad= \\sqrt{49 + 49} \\cr & \\qquad= \\sqrt{98} \\end{aligned}",
+      "Simplify the surd to its simplest form by extracting the perfect square factor $49$:\\begin{aligned} \\text{Chord Length}  & = \\sqrt{49 \\times 2} \\cr &= 7\\sqrt{2} \\end{aligned}",
       "Final Answer: \\begin{aligned} &(-5, -2) \\cr &(2, 5) \\cr &\\text{Chord Length} = 7\\sqrt{2} \\end{aligned}"
     ],
     "pi_options": [
