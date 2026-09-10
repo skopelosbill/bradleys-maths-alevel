@@ -1632,204 +1632,204 @@ window.ALEVEL_QUESTIONS = [
     }
   },
   {
-                "id": "004291",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Algebraic Methods"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Showing all your working, simplify:<br>1. $\\dfrac{60\\sqrt{b}}{(\\sqrt{b} + 5)^2 - (\\sqrt{b} - 5)^2}$<br>2. $\\dfrac{5\\sqrt{6} + 2\\sqrt{2}}{\\sqrt{6} + \\sqrt{2}}$",
-                "steps": [
-                        "To simplify the first expression, begin by expanding the two squared binomial terms in the denominator:<br>\\begin{aligned} (\\sqrt{b} + 5)^2 &= b + 10\\sqrt{b} + 25 \\\\\\ (\\sqrt{b} - 5)^2 &= b - 10\\sqrt{b} + 25 \\end{aligned}",
-                        "Subtract the second expansion from the first to simplify the denominator:<br>\\begin{aligned} (\\sqrt{b} + 5)^2 - (\\sqrt{b} - 5)^2 &= (b + 10\\sqrt{b} + 25) - (b - 10\\sqrt{b} + 25) \\\\\\ &= b - b + 10\\sqrt{b} - (-10\\sqrt{b}) + 25 - 25 \\\\\\ &= 20\\sqrt{b} \\end{aligned}",
-                        "Substitute this back into the original fraction and simplify:<br>\\begin{aligned} \\dfrac{60\\sqrt{b}}{ (\\sqrt{b} + 5)^2 - (\\sqrt{b} - 5)^2 } &= \\dfrac{60\\sqrt{b}}{ 20\\sqrt{b} } \\\\\\ &= 3 \\end{aligned}",
-                        "To simplify the second expression, multiply both the numerator and the denominator by the conjugate of the denominator, which is $\\sqrt{6} - \\sqrt{2}$:<br>\\begin{aligned} \\dfrac{5\\sqrt{6} + 2\\sqrt{2}}{ \\sqrt{6} + \\sqrt{2} } &= \\dfrac{(5\\sqrt{6} + 2\\sqrt{2})(\\sqrt{6} - \\sqrt{2})}{ (\\sqrt{6} + \\sqrt{2})(\\sqrt{6} - \\sqrt{2}) } \\end{aligned}",
-                        "Expand the numerator and denominator terms individually:<br>\\begin{aligned} \\text{Numerator} &= 5(6) - 5\\sqrt{12} + 2\\sqrt{12} - 2(2) \\\\\\ &= 30 - 3\\sqrt{12} - 4 \\\\\\ &= 26 - 3(2\\sqrt{3}) = 26 - 6\\sqrt{3} \\\\\\ \\text{Denominator} &= 6 - 2 = 4 \\end{aligned}",
-                        "Divide the expanded numerator by the expanded denominator and simplify the resulting fraction:<br>\\begin{aligned} \\dfrac{26 - 6\\sqrt{3}}{ 4 } &= \\dfrac{26}{ 4 } - \\dfrac{6\\sqrt{3}}{ 4 } \\\\\\ &= \\dfrac{13}{ 2 } - \\dfrac{3}{ 2 }\\sqrt{3} \\end{aligned}",
-                "Final Answer: $3$ and $\\dfrac{13}{ 2 } - \\dfrac{3}{ 2 }\\sqrt{3}$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$3 \\text{ and } \\dfrac{1}{ 2 } + \\dfrac{3}{ 2 }\\sqrt{3}$$",
-                                "feedback": "Check your algebraic expansions when multiplying the surds. It appears you may have made an error when expanding the numerator $(5\\sqrt{6} + 2\\sqrt{2})(\\sqrt{6} - \\sqrt{2})$, which should simplify to $26 - 6\\sqrt{3}$ rather than resolving to positive root coefficients."
-                        },
-                        {
-                                "ans": "$$\\dfrac{3}{ 2 } \\text{ and } \\dfrac{13}{ 2 } - \\dfrac{3}{ 2 }\\sqrt{3}$$",
-                                "feedback": "Check your subtraction of the denominator terms in part 1. $(\\sqrt{b} + 5)^2 - (\\sqrt{b} - 5)^2 = 20\\sqrt{b}$. It seems you may have calculated the denominator as $40\\sqrt{b}$ by adding the coefficients instead of subtracting them, leading to $\\dfrac{60}{40} = \\dfrac{3}{2}$."
-                        },
-                        {
-                                "ans": "$$3 \\text{ and } 26 - 6\\sqrt{3}$$",
-                                "feedback": "Check the final division step in part 2. When dividing the expanded numerator $26 - 6\\sqrt{3}$ by the denominator $4$, you must divide every term by $4$. It seems you forgot to divide by the denominator."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Expanding Squared Binomials",
-                        "content": "A very common error in algebraic surd expansion is writing $(\\sqrt{b} \\pm 5)^2$ as simply $b \\pm 25$, completely forgetting the middle term. Always expand binomial squares carefully as double brackets: $(\\sqrt{b} + 5)(\\sqrt{b} + 5) = b + 10\\sqrt{b} + 25$."
-                }
-        },
-        {
-                "id": "004292",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Algebraic Methods"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Showing all your working, simplify the following expression to the form $A - B\\sqrt{5}$, where $A$ and $B$ are integers:<br>$$(3 - 2\\sqrt{5})^2 + \\dfrac{30}{ \\sqrt{5} }$$",
-                "steps": [
-                        "First, expand the squared binomial term using double brackets:<br>\\begin{aligned} (3 - 2\\sqrt{5})^2 &= (3 - 2\\sqrt{5})(3 - 2\\sqrt{5}) \\\\\\ &= 9 - 6\\sqrt{5} - 6\\sqrt{5} + (4 \\times 5) \\\\\\ &= 9 - 12\\sqrt{5} + 20 \\\\\\ &= 29 - 12\\sqrt{5} \\end{aligned}",
-                        "Next, rationalise the denominator of the fractional term by multiplying the numerator and denominator by $\\sqrt{5}$:<br>\\begin{aligned} \\dfrac{30}{ \\sqrt{5} } &= \\dfrac{30 \\times \\sqrt{5}}{ \\sqrt{5} \\times \\sqrt{5} } \\\\\\ &= \\dfrac{30\\sqrt{5}}{ 5 } \\\\\\ &= 6\\sqrt{5} \\end{aligned}",
-                        "Substitute both simplified parts back into the original expression and combine the terms:<br>\\begin{aligned} (3 - 2\\sqrt{5})^2 + \\dfrac{30}{ \\sqrt{5} } &= (29 - 12\\sqrt{5}) + 6\\sqrt{5} \\\\\\ &= 29 - 6\\sqrt{5} \\end{aligned}",
-                "Final Answer: $29 - 6\\sqrt{5}$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$29 - 18\\sqrt{5}$$",
-                                "feedback": "Check your sign operation in the final combination step. You have $-12\\sqrt{5} + 6\\sqrt{5}$, which simplifies to $-6\\sqrt{5}$. It seems you may have mistakenly added $-12$ and $-6$ to get $-18$."
-                        },
-                        {
-                                "ans": "$$29 - 6\\sqrt{10}$$",
-                                "feedback": "Check your addition of surd terms. When combining $-12\\sqrt{5} + 6\\sqrt{5}$, only the coefficients are combined, giving $-6\\sqrt{5}$. You cannot add or combine the numbers inside the radical signs."
-                        },
-                        {
-                                "ans": "$$9 - 6\\sqrt{5}$$",
-                                "feedback": "Check your expansion of $(3 - 2\\sqrt{5})^2$. Recall that $(2\\sqrt{5})^2 = 4 \\times 5 = 20$. It seems you may have expanded it as $9 - 12\\sqrt{5} + 0$ or forgotten the constant term from squaring the second term."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Fast Integer Rationalisation",
-                        "content": "When rationalising a term with a single root in the denominator like $\\dfrac{30}{ \\sqrt{5} }$, you can speed up your working by rewriting $30$ as a multiple of the radical base: $30 = 6 \\times 5 = 6 \\times (\\sqrt{5})^2$. Dividing this directly by $\\sqrt{5}$ immediately yields $6\\sqrt{5}$ without needing to multiply the numerator and denominator formally."
-                }
-        },
-        {
-                "id": "004293",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Algebraic Methods"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Showing all your working, simplify the following expression, giving your answer in the form $P - \\sqrt{Q}$, where $P$ and $Q$ are integers:<br>$$\\dfrac{3\\sqrt{2} - \\sqrt{3}}{2\\sqrt{2} + \\sqrt{3}}$$",
-                "steps": [
-                        "To rationalise the denominator, multiply both the numerator and the denominator by the conjugate of the denominator, which is $2\\sqrt{2} - \\sqrt{3}$:<br>\\begin{aligned} \\dfrac{3\\sqrt{2} - \\sqrt{3}}{ 2\\sqrt{2} + \\sqrt{3} } &= \\dfrac{(3\\sqrt{2} - \\sqrt{3})(2\\sqrt{2} - \\sqrt{3})}{ (2\\sqrt{2} + \\sqrt{3})(2\\sqrt{2} - \\sqrt{3}) } \\end{aligned}",
-                        "Expand the denominator using the difference of two squares identity, $(a+b)(a-b) = a^2 - b^2$:<br>\\begin{aligned} (2\\sqrt{2} + \\sqrt{3})(2\\sqrt{2} - \\sqrt{3}) &= (2\\sqrt{2})^2 - (\\sqrt{3})^2 \\\\\\ &= (4 \\times 2) - 3 \\\\\\ &= 8 - 3 = 5 \\end{aligned}",
-                        "Expand the numerator using double brackets:<br>\\begin{aligned} (3\\sqrt{2} - \\sqrt{3})(2\\sqrt{2} - \\sqrt{3}) &= (3\\sqrt{2})(2\\sqrt{2}) - 3\\sqrt{6} - 2\\sqrt{6} + (\\sqrt{3})^2 \\\\\\ &= (6 \\times 2) - 5\\sqrt{6} + 3 \\\\\\ &= 12 - 5\\sqrt{6} + 3 \\\\\\ &= 15 - 5\\sqrt{6} \\end{aligned}",
-                        "Combine the expanded numerator and denominator back into the fraction, and simplify by dividing both terms by 5:<br>\\begin{aligned} \\dfrac{15 - 5\\sqrt{6}}{ 5 } &= \\dfrac{15}{ 5 } - \\dfrac{5\\sqrt{6}}{ 5 } \\\\\\ &= 3 - \\sqrt{6} \\end{aligned}",
-                "Final Answer: $3 - \\sqrt{6}$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$3 - 5\\sqrt{6}$$",
-                                "feedback": "Check the final division step. When simplifying $\\dfrac{15 - 5\\sqrt{6}}{ 5 }$, you must divide both terms in the numerator by the denominator $5$. It seems you only divided the constant term $15$ and forgot to divide the coefficient of the surd."
-                        },
-                        {
-                                "ans": "$$\\dfrac{15 - 5\\sqrt{6}}{ 7 }$$",
-                                "feedback": "Check your evaluation of the denominator $(2\\sqrt{2})^2 - (\\sqrt{3})^2$. Remember that $(2\\sqrt{2})^2 = 4 \\times 2 = 8$. It seems you may have squared $2\\sqrt{2}$ incorrectly as $4 + 2 = 6$ or $4 \\times 1 = 4$, leading to a denominator of $6 - 3 = 3$ or similar."
-                        },
-                        {
-                                "ans": "$$3 + \\sqrt{6}$$",
-                                "feedback": "Check your signs during the expansion of the numerator. Multiplying $-\\sqrt{3}$ by $-\\sqrt{3}$ yields $+3$. Combining the middle terms $-3\\sqrt{6} - 2\\sqrt{6}$ yields $-5\\sqrt{6}$. It seems you made a sign error, resulting in a positive surd term."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Squaring Coefficient Surds",
-                        "content": "A very frequent slip occurs when squaring terms with coefficients and radicals, such as $(2\\sqrt{2})^2$. Remember that the exponent applies to both parts of the product: $(2\\sqrt{2})^2 = 2^2 \\times (\\sqrt{2})^2 = 4 \\times 2 = 8$. Forgetting to square the coefficient is a common examiner trap."
-                }
-        },
-        {
-                "id": "004294",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Geometric Applications"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>A rectangle has an area of $(5 + 2\\sqrt{3})\\text{ cm}^2$ and a width of $(2 + \\sqrt{3})\\text{ cm}$.<br><br>1. Find the exact length of the rectangle, giving your answer in the form $a + b\\sqrt{3}$, where $a$ and $b$ are integers.<br>2. Hence, find the exact perimeter of the rectangle.",
-                "steps": [
-                        "To find the length of the rectangle, divide the area by the width:<br>\\begin{aligned} \\text{Length} &= \\dfrac{5 + 2\\sqrt{3}}{ 2 + \\sqrt{3} } \\end{aligned}",
-                        "Rationalise the denominator by multiplying the numerator and denominator by the conjugate $2 - \\sqrt{3}$:<br>\\begin{aligned} \\text{Length} &= \\dfrac{(5 + 2\\sqrt{3})(2 - \\sqrt{3})}{ (2 + \\sqrt{3})(2 - \\sqrt{3}) } \\end{aligned}",
-                        "Expand the denominator using the difference of two squares:<br>\\begin{aligned} (2 + \\sqrt{3})(2 - \\sqrt{3}) &= (2)^2 - (\\sqrt{3})^2 \\\\\\ &= 4 - 3 = 1 \\end{aligned}",
-                        "Expand the numerator using double brackets:<br>\\begin{aligned} (5 + 2\\sqrt{3})(2 - \\sqrt{3}) &= 5(2) - 5\\sqrt{3} + 2(2)\\sqrt{3} - (2 \\times 3) \\\\\\ &= 10 - 5\\sqrt{3} + 4\\sqrt{3} - 6 \\\\\\ &= 4 - \\sqrt{3} \\end{aligned}<br>Since the denominator is 1, the length of the rectangle is $4 - \\sqrt{3}$ cm.",
-                        "To find the perimeter, use the formula $\\text{Perimeter} = 2(\\text{Length} + \\text{Width})$:<br>\\begin{aligned} \\text{Perimeter} &= 2\\left( (4 - \\sqrt{3}) + (2 + \\sqrt{3}) \\right) \\\\\\ &= 2(4 + 2 - \\sqrt{3} + \\sqrt{3}) \\\\\\ &= 2(6) \\\\\\ &= 12 \\text{ cm} \\end{aligned}",
-                "Final Answer: $\\text{Length} = 4 - \\sqrt{3}\\text{ cm}$ and $\\text{Perimeter} = 12\\text{ cm}$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\text{Length} = 4 - \\sqrt{3}\\text{ cm}, \\quad \\text{Perimeter} = 12 - 2\\sqrt{3}\\text{ cm}$$",
-                                "feedback": "Check your perimeter calculation. When adding the length $4 - \\sqrt{3}$ and width $2 + \\sqrt{3}$, the irrational terms cancel out: $-\\sqrt{3} + \\sqrt{3} = 0$. It seems you may have mistakenly written $-2\\sqrt{3}$ instead of cancelling them."
-                        },
-                        {
-                                "ans": "$$\\text{Length} = 4 + \\sqrt{3}\\text{ cm}, \\quad \\text{Perimeter} = 12\\text{ cm}$$",
-                                "feedback": "Check your signs during the expansion of the numerator. Multiplying $5$ by $-\\sqrt{3}$ gives $-5\\sqrt{3}$, and multiplying $2\\sqrt{3}$ by $2$ gives $+4\\sqrt{3}$. Combining these gives $-5\\sqrt{3} + 4\\sqrt{3} = -\\sqrt{3}$ rather than $+\\sqrt{3}$."
-                        },
-                        {
-                                "ans": "$$\\text{Length} = 16 - 9\\sqrt{3}\\text{ cm}, \\quad \\text{Perimeter} = 36 - 18\\sqrt{3}\\text{ cm}$$",
-                                "feedback": "Check your initial equation for the length. The area of a rectangle is $\\text{length} \\times \\text{width}$, so to find the length you must divide the area by the width: $\\text{Length} = \\dfrac{\\text{Area}}{\\text{Width}}$. It seems you may have multiplied the area by the width instead."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Beautiful Cancellation in Geometry",
-                        "content": "When geometry questions involve surds, the dimensions are often carefully chosen conjugate-style pairs. Notice how adding the length $4 - \\sqrt{3}$ and width $2 + \\sqrt{3}$ causes the radical terms to cancel out completely. Recognizing this allows you to expect a clean integer perimeter, which serves as a great confidence check!"
-                }
-        },
-        {
-                "id": "004295",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Algebraic Methods"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Showing all your working, express the following as a single algebraic fraction in its simplest form:<br>$$\\dfrac{\\sqrt{x} + 2}{\\sqrt{x} - 2} - \\dfrac{\\sqrt{x} - 2}{\\sqrt{x} + 2}, \\quad x > 4$$",
-                "steps": [
-                        "To subtract the algebraic fractions, find a common denominator, which is the product of the two denominators: $(\\sqrt{x} - 2)(\\sqrt{x} + 2)$:<br>\\begin{aligned} \\text{Denominator} &= (\\sqrt{x} - 2)(\\sqrt{x} + 2) \\\\\\ &= (\\sqrt{x})^2 - (2)^2 \\\\\\ &= x - 4 \\end{aligned}",
-                        "Adjust the numerators accordingly and set up the single fraction subtraction over the common denominator:<br>\\begin{aligned} \\text{New Expression} &= \\dfrac{(\\sqrt{x} + 2)(\\sqrt{x} + 2) - (\\sqrt{x} - 2)(\\sqrt{x} - 2)}{ x - 4 } \\\\\\ &= \\dfrac{(\\sqrt{x} + 2)^2 - (\\sqrt{x} - 2)^2}{ x - 4 } \\end{aligned}",
-                        "Expand the two squared binomial terms in the numerator:<br>\\begin{aligned} (\\sqrt{x} + 2)^2 &= x + 4\\sqrt{x} + 4 \\\\\\ (\\sqrt{x} - 2)^2 &= x - 4\\sqrt{x} + 4 \\end{aligned}",
-                        "Subtract the second numerator expansion from the first inside the fraction:<br>\\begin{aligned} \\text{Numerator} &= (x + 4\\sqrt{x} + 4) - (x - 4\\sqrt{x} + 4) \\\\\\ &= x - x + 4\\sqrt{x} - (-4\\sqrt{x}) + 4 - 4 \\\\\\ &= 8\\sqrt{x} \\end{aligned}",
-                        "Combine the simplified numerator and denominator to form the single simplified fraction:<br>\\begin{aligned} \\text{Simplified Fraction} &= \\dfrac{8\\sqrt{x}}{ x - 4 } \\end{aligned}",
-                "Final Answer: $\\dfrac{8\\sqrt{x}}{ x - 4 }$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\dfrac{2x + 8}{ x - 4 }$$",
-                                "feedback": "Check your sign operations when expanding and subtracting the numerators. Subtracting $(x - 4\\sqrt{x} + 4)$ from $(x + 4\\sqrt{x} + 4)$ yields $(x - x) + (4\\sqrt{x} - (-4\\sqrt{x})) + (4 - 4) = 8\\sqrt{x}$. It seems you may have added the terms instead of subtracting them, or made a sign distribution error."
-                        },
-                        {
-                                "ans": "$$\\dfrac{8\\sqrt{x}}{ x + 4 }$$",
-                                "feedback": "Check your expansion of the denominator $(\\sqrt{x} - 2)(\\sqrt{x} + 2)$. By the difference of two squares, this expands to $(\\sqrt{x})^2 - (2)^2 = x - 4$. It seems you made a sign error, resulting in a positive constant term."
-                        },
-                        {
-                                "ans": "$$8\\sqrt{x}$$",
-                                "feedback": "Check your handling of the common denominator. When subtracting fractions, the common denominator is preserved as the denominator of your final simplified fraction, so it cannot be omitted."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Head Teacher's Eye: Algebraic Identities with Surds",
-                        "content": "Notice that the numerator is of the form $(u + v)^2 - (u - v)^2$. Expanding this difference of squared terms always simplifies algebraically to exactly $4uv$. Recognizing this elegant identity allows you to immediately evaluate the numerator of this expression as $4(\\sqrt{x})(2) = 8\\sqrt{x}$, saving you valuable time during the exam!"
-                }
-        },
-        {
+    "id": "004291",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Methods",
+    "subtopic": [
+      "Algebraic Methods"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Showing all your working, simplify:<br><br>1. $$\\dfrac{60\\sqrt{b}}{(\\sqrt{b} + 5)^2 - (\\sqrt{b} - 5)^2}$$2. $$\\dfrac{5\\sqrt{6} + 2\\sqrt{2}}{\\sqrt{6} + \\sqrt{2}}$$",
+    "steps": [
+      "To simplify the first expression, begin by expanding the two squared binomial terms in the denominator:\\begin{aligned} (\\sqrt{b} + 5)^2 &= b + 10\\sqrt{b} + 25 \\cr (\\sqrt{b} - 5)^2 &= b - 10\\sqrt{b} + 25 \\end{aligned}",
+      "Subtract the second expansion from the first to simplify the denominator:\\begin{aligned} &(\\sqrt{b} + 5)^2 - (\\sqrt{b} - 5)^2 \\cr &\\quad = (b + 10\\sqrt{b} + 25) \\cr &\\qquad - (b - 10\\sqrt{b} + 25) \\cr &\\quad = 20\\sqrt{b} \\end{aligned}",
+      "Substitute this back into the original fraction and simplify:\\begin{aligned} &\\dfrac{60\\sqrt{b}}{(\\sqrt{b} + 5)^2 - (\\sqrt{b} - 5)^2} \\cr &\\quad = \\dfrac{60\\sqrt{b}}{20\\sqrt{b}} \\cr &\\quad = 3 \\end{aligned}",
+      "To simplify the second expression, multiply both the numerator and the denominator by the conjugate of the denominator, which is $\\sqrt{6} - \\sqrt{2}$:\\begin{aligned} &\\dfrac{5\\sqrt{6} + 2\\sqrt{2}}{\\sqrt{6} + \\sqrt{2}} \\cr &\\quad = \\dfrac{(5\\sqrt{6} + 2\\sqrt{2})(\\sqrt{6} - \\sqrt{2})}{(\\sqrt{6} + \\sqrt{2})(\\sqrt{6} - \\sqrt{2})} \\end{aligned}",
+      "Expand the numerator and denominator terms individually:\\begin{aligned} \\text{Numerator} &= 5(6) - 5\\sqrt{12} + 2\\sqrt{12} - 2(2) \\cr &= 30 - 3\\sqrt{12} - 4 \\cr &= 26 - 3(2\\sqrt{3}) \\cr &= 26 - 6\\sqrt{3} \\cr \\text{Denominator} &= 6 - 2 \\cr &= 4 \\end{aligned}",
+      "Divide the expanded numerator by the expanded denominator and simplify the resulting fraction:\\begin{aligned} \\dfrac{26 - 6\\sqrt{3}}{4} &= \\dfrac{26}{4} - \\dfrac{6\\sqrt{3}}{4} \\cr &= \\dfrac{13}{2} - \\dfrac{3}{2}\\sqrt{3} \\end{aligned}",
+      "Final Answer: \\begin{aligned} &\\text{1. } 3 \\cr &\\text{2. } \\dfrac{13}{2} - \\dfrac{3}{2}\\sqrt{3} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{1. } 3 \\cr &\\text{2. } \\dfrac{1}{2} + \\dfrac{3}{2}\\sqrt{3} \\end{aligned}",
+        "feedback": "Check your algebraic expansions when multiplying the surds. It appears you may have made an error when expanding the numerator $(5\\sqrt{6} + 2\\sqrt{2})(\\sqrt{6} - \\sqrt{2})$, which should simplify to $26 - 6\\sqrt{3}$ rather than resolving to positive root coefficients."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{1. } \\dfrac{3}{2} \\cr &\\text{2. } \\dfrac{13}{2} - \\dfrac{3}{2}\\sqrt{3} \\end{aligned}",
+        "feedback": "Check your subtraction of the denominator terms in part 1. $(\\sqrt{b} + 5)^2 - (\\sqrt{b} - 5)^2 = 20\\sqrt{b}$. It seems you may have calculated the denominator as $40\\sqrt{b}$ by adding the coefficients instead of subtracting them, leading to $\\dfrac{60}{40} = \\dfrac{3}{2}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{1. } 3 \\cr &\\text{2. } 26 - 6\\sqrt{3} \\end{aligned}",
+        "feedback": "Check the final division step in part 2. When dividing the expanded numerator $26 - 6\\sqrt{3}$ by the denominator $4$, you must divide every term by $4$. It seems you forgot to divide by the denominator."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Expanding Squared Binomials",
+      "content": "A very common error in algebraic surd expansion is writing $(\\sqrt{b} \\pm 5)^2$ as simply $b \\pm 25$, completely forgetting the middle term. Always expand binomial squares carefully as double brackets: $(\\sqrt{b} + 5)(\\sqrt{b} + 5) = b + 10\\sqrt{b} + 25$."
+    }
+  },
+  {
+    "id": "004292",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Methods",
+    "subtopic": [
+      "Algebraic Methods"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Showing all your working, simplify the following expression to the form $A - B\\sqrt{5}$, where $A$ and $B$ are integers:$$(3 - 2\\sqrt{5})^2 + \\dfrac{30}{\\sqrt{5}}$$",
+    "steps": [
+      "First, expand the squared binomial term using double brackets:\\begin{aligned} (3 - 2\\sqrt{5})^2 &= (3 - 2\\sqrt{5})(3 - 2\\sqrt{5}) \\cr &= 9 - 6\\sqrt{5} - 6\\sqrt{5} + 20 \\cr &= 9 - 12\\sqrt{5} + 20 \\cr &= 29 - 12\\sqrt{5} \\end{aligned}",
+      "Next, rationalise the denominator of the fractional term by multiplying the numerator and denominator by $\\sqrt{5}$:\\begin{aligned} \\dfrac{30}{\\sqrt{5}} &= \\dfrac{30\\sqrt{5}}{\\sqrt{5}\\sqrt{5}} \\cr &= \\dfrac{30\\sqrt{5}}{5} \\cr &= 6\\sqrt{5} \\end{aligned}",
+      "Substitute both simplified parts back into the original expression and combine the terms:\\begin{aligned} &(3 - 2\\sqrt{5})^2 + \\dfrac{30}{\\sqrt{5}} \\cr &\\quad = (29 - 12\\sqrt{5}) + 6\\sqrt{5} \\cr &\\quad = 29 - 6\\sqrt{5} \\end{aligned}",
+      "Final Answer: $$29 - 6\\sqrt{5}$$"
+    ],
+    "pi_options": [
+      {
+        "ans": "$$29 - 18\\sqrt{5}$$",
+        "feedback": "Check your sign operation in the final combination step. You have $-12\\sqrt{5} + 6\\sqrt{5}$, which simplifies to $-6\\sqrt{5}$. It seems you may have mistakenly added $-12$ and $-6$ to get $-18$."
+      },
+      {
+        "ans": "$$29 - 6\\sqrt{10}$$",
+        "feedback": "Check your addition of surd terms. When combining $-12\\sqrt{5} + 6\\sqrt{5}$, only the coefficients are combined, giving $-6\\sqrt{5}$. You cannot add or combine the numbers inside the radical signs."
+      },
+      {
+        "ans": "$$9 - 6\\sqrt{5}$$",
+        "feedback": "Check your expansion of $(3 - 2\\sqrt{5})^2$. Recall that $(2\\sqrt{5})^2 = 4 \\times 5 = 20$. It seems you may have expanded it as $9 - 12\\sqrt{5} + 0$ or forgotten the constant term from squaring the second term."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Fast Integer Rationalisation",
+      "content": "When rationalising a term with a single root in the denominator like $\\dfrac{30}{\\sqrt{5}}$, you can speed up your working by rewriting $30$ as a multiple of the radical base: $30 = 6 \\times 5 = 6 \\times (\\sqrt{5})^2$. Dividing this directly by $\\sqrt{5}$ immediately yields $6\\sqrt{5}$ without needing to multiply the numerator and denominator formally."
+    }
+  },
+  {
+    "id": "004293",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Methods",
+    "subtopic": [
+      "Algebraic Methods"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Showing all your working, simplify the following expression, giving your answer in the form $P - \\sqrt{Q}$, where $P$ and $Q$ are integers:$$\\dfrac{3\\sqrt{2} - \\sqrt{3}}{2\\sqrt{2} + \\sqrt{3}}$$",
+    "steps": [
+      "To rationalise the denominator, multiply both the numerator and the denominator by the conjugate of the denominator, which is $2\\sqrt{2} - \\sqrt{3}$:\\begin{aligned} &\\dfrac{3\\sqrt{2} - \\sqrt{3}}{2\\sqrt{2} + \\sqrt{3}} \\cr &\\quad = \\dfrac{(3\\sqrt{2} - \\sqrt{3})(2\\sqrt{2} - \\sqrt{3})}{(2\\sqrt{2} + \\sqrt{3})(2\\sqrt{2} - \\sqrt{3})} \\end{aligned}",
+      "Expand the denominator using the difference of two squares identity, $(a+b)(a-b) = a^2 - b^2$:\\begin{aligned} &(2\\sqrt{2} + \\sqrt{3})(2\\sqrt{2} - \\sqrt{3}) \\cr &\\quad = (2\\sqrt{2})^2 - (\\sqrt{3})^2 \\cr &\\quad = 8 - 3 \\cr &\\quad = 5 \\end{aligned}",
+      "Expand the numerator using double brackets:\\begin{aligned} &(3\\sqrt{2} - \\sqrt{3})(2\\sqrt{2} - \\sqrt{3}) \\cr &\\quad = 12 - 3\\sqrt{6} - 2\\sqrt{6} + 3 \\cr &\\quad = 12 - 5\\sqrt{6} + 3 \\cr &\\quad = 15 - 5\\sqrt{6} \\end{aligned}",
+      "Combine the expanded numerator and denominator back into the fraction, and simplify by dividing both terms by 5:\\begin{aligned} \\dfrac{15 - 5\\sqrt{6}}{5} &= \\dfrac{15}{5} - \\dfrac{5\\sqrt{6}}{5} \\cr &= 3 - \\sqrt{6} \\end{aligned}",
+      "Final Answer: $$3 - \\sqrt{6}$$"
+    ],
+    "pi_options": [
+      {
+        "ans": "$$3 - 5\\sqrt{6}$$",
+        "feedback": "Check the final division step. When simplifying $\\dfrac{15 - 5\\sqrt{6}}{5}$, you must divide both terms in the numerator by the denominator $5$. It seems you only divided the constant term $15$ and forgot to divide the coefficient of the surd."
+      },
+      {
+        "ans": "$$\\dfrac{15 - 5\\sqrt{6}}{7}$$",
+        "feedback": "Check your evaluation of the denominator $(2\\sqrt{2})^2 - (\\sqrt{3})^2$. Remember that $(2\\sqrt{2})^2 = 4 \\times 2 = 8$. It seems you may have squared $2\\sqrt{2}$ incorrectly as $4 + 2 = 6$ or $4 \\times 1 = 4$, leading to a denominator of $6 - 3 = 3$ or similar."
+      },
+      {
+        "ans": "$$3 + \\sqrt{6}$$",
+        "feedback": "Check your signs during the expansion of the numerator. Multiplying $-\\sqrt{3}$ by $-\\sqrt{3}$ yields $+3$. Combining the middle terms $-3\\sqrt{6} - 2\\sqrt{6}$ yields $-5\\sqrt{6}$. It seems you made a sign error, resulting in a positive surd term."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Squaring Coefficient Surds",
+      "content": "A very frequent slip occurs when squaring terms with coefficients and radicals, such as $(2\\sqrt{2})^2$. Remember that the exponent applies to both parts of the product: $(2\\sqrt{2})^2 = 2^2 \\times (\\sqrt{2})^2 = 4 \\times 2 = 8$. Forgetting to square the coefficient is a common examiner trap."
+    }
+  },
+  {
+    "id": "004294",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Methods",
+    "subtopic": [
+      "Geometric Applications"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>A rectangle has an area of $(5 + 2\\sqrt{3})\\text{ cm}^2$ and a width of $(2 + \\sqrt{3})\\text{ cm}$.<br><br>1. Find the exact length of the rectangle, giving your answer in the form $a + b\\sqrt{3}$, where $a$ and $b$ are integers.<br><br>2. Hence, find the exact perimeter of the rectangle.",
+    "steps": [
+      "To find the length of the rectangle, divide the area by the width:\\begin{aligned} \\text{Length} &= \\dfrac{5 + 2\\sqrt{3}}{2 + \\sqrt{3}} \\end{aligned}",
+      "Rationalise the denominator by multiplying the numerator and denominator by the conjugate $2 - \\sqrt{3}$:\\begin{aligned} &\\text{Length} \\cr &\\quad = \\dfrac{(5 + 2\\sqrt{3})(2 - \\sqrt{3})}{(2 + \\sqrt{3})(2 - \\sqrt{3})} \\end{aligned}",
+      "Expand the denominator using the difference of two squares:\\begin{aligned} (2 + \\sqrt{3})(2 - \\sqrt{3}) &= 2^2 - (\\sqrt{3})^2 \\cr &= 4 - 3 \\cr &= 1 \\end{aligned}",
+      "Expand the numerator using double brackets:\\begin{aligned} &(5 + 2\\sqrt{3})(2 - \\sqrt{3}) \\cr &\\quad = 10 - 5\\sqrt{3} + 4\\sqrt{3} - 6 \\cr &\\quad = 4 - \\sqrt{3} \\end{aligned}Since the denominator is 1, the length of the rectangle is $(4 - \\sqrt{3})\\text{ cm}$.",
+      "To find the perimeter, use the formula $\\text{Perimeter} = 2(\\text{Length} + \\text{Width})$:\\begin{aligned} \\text{Perimeter} &= 2\\left[ (4 - \\sqrt{3}) + (2 + \\sqrt{3}) \\right] \\cr &= 2(4 + 2) \\cr &= 2(6) \\cr &= 12\\text{ cm} \\end{aligned}",
+      "Final Answer: \\begin{aligned} &\\text{Length} = (4 - \\sqrt{3})\\text{ cm} \\cr &\\text{Perimeter} = 12\\text{ cm} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{Length} = (4 - \\sqrt{3})\\text{ cm} \\cr &\\text{Perimeter} = (12 - 2\\sqrt{3})\\text{ cm} \\end{aligned}",
+        "feedback": "Check your perimeter calculation. When adding the length $4 - \\sqrt{3}$ and width $2 + \\sqrt{3}$, the irrational terms cancel out: $-\\sqrt{3} + \\sqrt{3} = 0$. It seems you may have mistakenly written $-2\\sqrt{3}$ instead of cancelling them."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{Length} = (4 + \\sqrt{3})\\text{ cm} \\cr &\\text{Perimeter} = 12\\text{ cm} \\end{aligned}",
+        "feedback": "Check your signs during the expansion of the numerator. Multiplying $5$ by $-\\sqrt{3}$ gives $-5\\sqrt{3}$, and multiplying $2\\sqrt{3}$ by $2$ gives $+4\\sqrt{3}$. Combining these gives $-5\\sqrt{3} + 4\\sqrt{3} = -\\sqrt{3}$ rather than $+\\sqrt{3}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{Length} = (16 - 9\\sqrt{3})\\text{ cm} \\cr &\\text{Perimeter} = (36 - 18\\sqrt{3})\\text{ cm} \\end{aligned}",
+        "feedback": "Check your initial equation for the length. The area of a rectangle is $\\text{length} \\times \\text{width}$, so to find the length you must divide the area by the width: $\\text{Length} = \\dfrac{\\text{Area}}{\\text{Width}}$. It seems you may have multiplied the area by the width instead."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Beautiful Cancellation in Geometry",
+      "content": "When geometry questions involve surds, the dimensions are often carefully chosen conjugate-style pairs. Notice how adding the length $4 - \\sqrt{3}$ and width $2 + \\sqrt{3}$ causes the radical terms to cancel out completely. Recognizing this allows you to expect a clean integer perimeter, which serves as a great confidence check!"
+    }
+  },
+  {
+    "id": "004295",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Methods",
+    "subtopic": [
+      "Algebraic Methods"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Showing all your working, express the following as a single algebraic fraction in its simplest form:\\begin{aligned} &\\dfrac{\\sqrt{x} + 2}{\\sqrt{x} - 2} - \\dfrac{\\sqrt{x} - 2}{\\sqrt{x} + 2} \\cr &\\qquad \\text{for } x > 4 \\end{aligned}",
+    "steps": [
+      "To subtract the algebraic fractions, find a common denominator, which is the product of the two denominators: $(\\sqrt{x} - 2)(\\sqrt{x} + 2)$:\\begin{aligned} \\text{Denominator} &= (\\sqrt{x} - 2)(\\sqrt{x} + 2) \\cr &= (\\sqrt{x})^2 - 2^2 \\cr &= x - 4 \\end{aligned}",
+      "Adjust the numerators accordingly and set up the single fraction subtraction over the common denominator:\\begin{aligned} &\\text{New Expression} \\cr &\\quad = \\dfrac{(\\sqrt{x} + 2)^2 - (\\sqrt{x} - 2)^2}{x - 4} \\end{aligned}",
+      "Expand the two squared binomial terms in the numerator:\\begin{aligned} (\\sqrt{x} + 2)^2 &= x + 4\\sqrt{x} + 4 \\cr (\\sqrt{x} - 2)^2 &= x - 4\\sqrt{x} + 4 \\end{aligned}",
+      "Subtract the second numerator expansion from the first inside the fraction:\\begin{aligned} &\\text{Numerator} \\cr &\\quad = (x + 4\\sqrt{x} + 4) \\cr &\\qquad - (x - 4\\sqrt{x} + 4) \\cr &\\quad = 8\\sqrt{x} \\end{aligned}",
+      "Combine the simplified numerator and denominator to form the single simplified fraction:\\begin{aligned} \\text{Simplified Fraction} &= \\dfrac{8\\sqrt{x}}{x - 4} \\end{aligned}",
+      "Final Answer: $$\\dfrac{8\\sqrt{x}}{x - 4}$$"
+    ],
+    "pi_options": [
+      {
+        "ans": "$$\\dfrac{2x + 8}{x - 4}$$",
+        "feedback": "Check your sign operations when expanding and subtracting the numerators. Subtracting $(x - 4\\sqrt{x} + 4)$ from $(x + 4\\sqrt{x} + 4)$ yields $(x - x) + (4\\sqrt{x} - (-4\\sqrt{x})) + (4 - 4) = 8\\sqrt{x}$. It seems you may have added the terms instead of subtracting them, or made a sign distribution error."
+      },
+      {
+        "ans": "$$\\dfrac{8\\sqrt{x}}{x + 4}$$",
+        "feedback": "Check your expansion of the denominator $(\\sqrt{x} - 2)(\\sqrt{x} + 2)$. By the difference of two squares, this expands to $(\\sqrt{x})^2 - (2)^2 = x - 4$. It seems you made a sign error, resulting in a positive constant term."
+      },
+      {
+        "ans": "$$8\\sqrt{x}$$",
+        "feedback": "Check your handling of the common denominator. When subtracting fractions, the common denominator is preserved as the denominator of your final simplified fraction, so it cannot be omitted."
+      }
+    ],
+    "bradley_insight": {
+      "type": "deeper",
+      "title": "The Head Teacher's Eye: Algebraic Identities with Surds",
+      "content": "Notice that the numerator is of the form $(u + v)^2 - (u - v)^2$. Expanding this difference of squared terms always simplifies algebraically to exactly $4uv$. Recognizing this elegant identity allows you to immediately evaluate the numerator of this expression as $4(\\sqrt{x})(2) = 8\\sqrt{x}$, saving you valuable time during the exam!"
+    }
+  },
+  {
                 "id": "004296",
                 "board": "WJEC",
                 "branch": "Pure",
