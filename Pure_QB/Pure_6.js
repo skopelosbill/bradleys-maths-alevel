@@ -1440,21 +1440,21 @@ window.ALEVEL_QUESTIONS = [
       "Substitute $A = 2$ back into the identity and expand the right-hand side to solve for $B$ and $C$ by equating coefficients:\\begin{aligned} &x^2 + 4x + 4 \\cr &\\quad = 2(x^2 + 4) + (Bx + C)(x - 2) \\cr &\\quad = 2x^2 + 8 + Bx^2 \\cr &\\qquad - 2Bx + Cx - 2C \\cr &\\quad = (2 + B)x^2 + (C - 2B)x \\cr &\\qquad + (8 - 2C) \\end{aligned}Equating coefficients:<br><br><ul><li>For $x^2$: $2 + B = 1 \\implies B = -1$</li><li>For the constant: $8 - 2C = 4 \\implies C = 2$</li></ul><br>Thus, the partial fraction expression is:$$f(x) = \\dfrac{2}{x - 2} + \\dfrac{2 - x}{x^2 + 4}$$",
       "To solve the differential equation $\\dfrac{\\text{d}y}{\\text{d}x} = y f(x)$, separate the variables and integrate both sides:\\begin{aligned} &\\int \\dfrac{1}{y} \\text{d}y = \\int f(x) \\text{d}x \\cr &\\int \\dfrac{1}{y} \\text{d}y \\cr &\\quad = \\int \\Big( \\dfrac{2}{x - 2} + \\dfrac{2}{x^2 + 4} \\cr &\\qquad\\qquad - \\dfrac{x}{x^2 + 4} \\Big) \\text{d}x \\end{aligned}",
       "Perform the integration on each term on the right-hand side carefully, using the standard log integrals and the inverse tangent rule:\\begin{aligned} &\\ln|y| = 2\\ln|x - 2| \\cr &\\quad + \\arctan\\left(\\dfrac{x}{2}\\right) \\cr &\\quad - \\dfrac{1}{2}\\ln(x^2 + 4) + c \\end{aligned}Combine the logarithmic terms using standard log laws:\\begin{aligned} &\\ln|y| = \\ln\\left( \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\right) \\cr &\\quad + \\arctan\\left(\\dfrac{x}{2}\\right) + c \\end{aligned}",
-      "Exponentiate both sides to write the general solution in terms of a constant $K = \\text{e}^c$:\\begin{aligned} &y = K \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\cr &\\qquad \\times \\text{e}^{\\arctan(x/2)} \\end{aligned}",
+      "Exponentiate both sides to write the general solution in terms of a constant $K = \\text{e}^c$:\\begin{aligned} &y = K \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}}\\text{e}^{\\arctan(x/2)} \\end{aligned}",
       "Apply the boundary condition $y = 2$ when $x = 0$ to solve for $K$:\\begin{aligned} 2 &= K \\dfrac{(0 - 2)^2}{\\sqrt{0^2 + 4}} \\text{e}^{\\arctan(0)} \\cr 2 &= K(2)(1) \\cr 2 &= 2K \\cr K &= 1 \\end{aligned}Substituting $K = 1$ back into the general solution yields:\\begin{aligned} &y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}}\\text{e}^{\\arctan(x/2)} \\end{aligned}",
       "Final Answer: \\begin{aligned} &y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}}\\text{e}^{\\arctan(x/2)} \\end{aligned}"
     ],
     "pi_options": [
       {
-        "ans": "\\begin{aligned} &y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\cr &\\qquad \\times \\text{e}^{2\\arctan(x/2)} \\end{aligned}",
+        "ans": "\\begin{aligned} &y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}}\\text{e}^{2\\arctan(x/2)} \\end{aligned}",
         "feedback": "Check your integration of the term $\\dfrac{2}{x^2 + 4}$. Recall the standard integration formula $\\int \\dfrac{1}{x^2 + a^2} \\text{d}x = \\dfrac{1}{a}\\arctan\\left(\\dfrac{x}{a}\\right)$. Since $a = 2$, this integral is $\\dfrac{2}{2}\\arctan\\left(\\dfrac{x}{2}\\right) = \\arctan\\left(\\dfrac{x}{2}\\right)$, not $2\\arctan\\left(\\dfrac{x}{2}\\right)$."
       },
       {
-        "ans": "\\begin{aligned} &y = \\dfrac{x - 2}{\\sqrt{x^2 + 4}} \\cr &\\qquad \\times \\text{e}^{\\arctan(x/2)} \\end{aligned}",
+        "ans": "\\begin{aligned} &y = \\dfrac{x - 2}{\\sqrt{x^2 + 4}}\\text{e}^{\\arctan(x/2)} \\end{aligned}",
         "feedback": "Check your partial fractions decomposition. Ensure you set up the linear numerator for the quadratic denominator as $Bx + C$. Equating coefficients should yield $A = 2, B = -1, C = 2$, not $A = 1, B = 0, C = 4$."
       },
       {
-        "ans": "\\begin{aligned} &y = 2 \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\cr &\\qquad \\times \\text{e}^{\\arctan(x/2)} \\end{aligned}",
+        "ans": "\\begin{aligned} &y = 2 \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}}\\text{e}^{\\arctan(x/2)} \\end{aligned}",
         "feedback": "Check your evaluation of the constant of integration $K$ using the boundary condition $y = 2$ when $x = 0$. Substituting $x = 0$ yields $2 = 2K$, which gives $K = 1$. It appears you may have incorrectly evaluated $K = 2$."
       }
     ],
