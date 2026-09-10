@@ -812,7 +812,8 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Integration",
     "topic": "Integration",
     "subtopic": [
-      "Integration"
+      "Indefinite Integration",
+      "term by term"
     ],
     "img": false,
     "question": "In this question you must show detailed reasoning.<br><br>Find the indefinite integral:$$\\int \\left( 6\\sqrt{x} - \\dfrac{4}{x^3} \\right) \\text{d}x$$",
@@ -850,7 +851,8 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Integration",
     "topic": "Integration",
     "subtopic": [
-      "Integration"
+      "Definite Integration",
+      "Power Rule"
     ],
     "img": false,
     "question": "In this question you must show detailed reasoning.<br><br>Evaluate the definite integral:$$\\int_{1}^{4} \\left( \\dfrac{3}{\\sqrt{x}} + \\dfrac{2}{x^2} \\right) \\text{d}x$$",
@@ -890,9 +892,8 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Integration",
     "topic": "Integration",
     "subtopic": [
-      "Curved Graphs",
-      "Linear Equations",
-      "Tangents and Normals"
+      "Indefinite Integration",
+      "Power Rule"
     ],
     "img": false,
     "question": "In this question you must show detailed reasoning.<br><br>A curve has a gradient function given by:$$\\dfrac{\\text{d}y}{\\text{d}x} = 2\\sqrt{x} + \\dfrac{3}{x^2}$$Given that the curve passes through the point $(1, 5)$, find the equation of the curve.",
@@ -931,7 +932,8 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Integration",
     "topic": "Integration",
     "subtopic": [
-      "Integration"
+      "Indefinite Integration",
+      "Power Rule"
     ],
     "img": false,
     "question": "In this question you must show detailed reasoning.<br><br>Find the indefinite integral:$$\\int \\dfrac{3x^3 - 2\\sqrt{x}}{x} \\text{d}x$$",
@@ -970,8 +972,8 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Integration",
     "topic": "Integration",
     "subtopic": [
-      "Curved Graphs",
-      "Integration"
+      "Definite Integration",
+      "Power Rule"
     ],
     "img": false,
     "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = 3\\sqrt{x} - x$.<br><br>1. Find the coordinates of the points where the curve intersects the $x$-axis.<br><br>2. Find the exact area of the finite region bounded by the curve and the $x$-axis.",
@@ -1003,215 +1005,215 @@ window.ALEVEL_QUESTIONS = [
       "content": "To find the area of a region bounded by a curve and the $x$-axis, first locate the boundaries of integration by setting $y = 0$ to find the $x$-intercepts. Integrating the function over these bounds, taking care when calculating fractional powers like $9^{3/2} = 27$, yields the exact geometric area."
     }
   },
-        {
-                "id": "004276",
-                "board": "OCR MEI",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Differentiation",
-                        "Tangents and Normals"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>The equation of a curve is given by:<br>$$x^2 - xy^2 + y^3 = 13$$<br>1. Find the coordinates of the points where the curve intersects the line $y = 2$.<br>2. Find the gradient of the curve at each of these points.",
-                "steps": [
-                        "To find the points of intersection with the line $y = 2$, substitute $y = 2$ into the curve's equation:<br>\\begin{aligned} x^2 - x(2)^2 + (2)^3 &= 13 \\\\ x^2 - 4x + 8 &= 13 \\\\ x^2 - 4x - 5 &= 0 \\end{aligned}",
-                        "Factorise this quadratic equation to solve for $x$:<br>\\begin{aligned} (x - 5)(x + 1) &= 0 \\end{aligned}<br>This yields two solutions: $x = 5$ and $x = -1$.<br>Therefore, the coordinates of the two intersection points are $(5, 2)$ and $(-1, 2)$.",
-                        "Now, differentiate the equation of the curve implicitly with respect to $x$. Apply the product rule carefully to the term $-xy^2$:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}(x^2) - \\dfrac{\\text{d}}{\\text{d}x}(xy^2) + \\dfrac{\\text{d}}{\\text{d}x}(y^3) &= \\dfrac{\\text{d}}{\\text{d}x}(13) \\\\\\ 2x - \\left( y^2 + 2xy\\dfrac{\\text{d}y}{\\text{d}x} \\right) + 3y^2\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\\\\\ 2x - y^2 - 2xy\\dfrac{\\text{d}y}{\\text{d}x} + 3y^2\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\end{aligned}",
-                        "Rearrange the differentiated terms to isolate and make $\\dfrac{\\text{d}y}{\\text{d}x}$ the subject:<br>\\begin{aligned} \\left(3y^2 - 2xy\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= y^2 - 2x \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{y^2 - 2x}{3y^2 - 2xy} \\end{aligned}",
-                        "To find the gradient of the curve at the first intersection point $(5, 2)$, substitute $x = 5$ and $y = 2$ into the derivative:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{(2)^2 - 2(5)}{3(2)^2 - 2(5)(2)} \\\\\\ &= \\dfrac{4 - 10}{12 - 20} \\\\\\ &= \\dfrac{-6}{-8} = \\dfrac{3}{4} \\end{aligned}",
-                        "To find the gradient of the curve at the second intersection point $(-1, 2)$, substitute $x = -1$ and $y = 2$ into the derivative:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{(2)^2 - 2(-1)}{3(2)^2 - 2(-1)(2)} \\\\\\ &= \\dfrac{4 + 2}{12 + 4} \\\\\\ &= \\dfrac{6}{16} = \\dfrac{3}{8} \\end{aligned}",
-                "Final Answer: $(5, 2)$ with gradient $\\dfrac{3}{4}$, and $(-1, 2)$ with gradient $\\dfrac{3}{8}$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$(5, 2) \\text{ with gradient } -\\dfrac{3}{16}, \\quad (-1, 2) \\text{ with gradient } \\dfrac{3}{4}$$",
-                                "feedback": "Check your application of the product rule when differentiating the term $-xy^2$. Remember to distribute the negative sign to both terms inside the bracket. Differentiating $-xy^2$ with respect to $x$ yields $-y^2 - 2xy \\dfrac{\\text{d}y}{\\text{d}x}$ rather than $-y^2 + 2xy \\dfrac{\\text{d}y}{\\text{d}x}$."
-                        },
-                        {
-                                "ans": "$$(5, 2) \\text{ with gradient } -3, \\quad (-1, 2) \\text{ with gradient } \\dfrac{3}{7}$$",
-                                "feedback": "Check your derivative of $y^2$ with respect to $x$ when applying the product rule. By the chain rule, $\\dfrac{\\text{d}}{\\text{d}x}(y^2) = 2y \\dfrac{\\text{d}y}{\\text{d}x}$. It appears you may have omitted the factor of 2 in your derivative of the middle term."
-                        },
-                        {
-                                "ans": "$$(5, 2) \\text{ with gradient } \\dfrac{3}{4}, \\quad (1, 2) \\text{ with gradient } \\dfrac{1}{4}$$",
-                                "feedback": "Check your factorisation of the quadratic equation $x^2 - 4x - 5 = 0$. Since $-5$ is negative and the middle term is $-4$, the expression factors to $(x - 5)(x + 1) = 0$, yielding solutions $x = 5$ and $x = -1$ rather than $x = 1$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Product Rule Sign Distribution",
-                        "content": "A very common error in implicit differentiation occurs when applying the product rule to terms with negative coefficients, such as $-xy^2$. Ensure you treat the entire product within a bracket to avoid sign distribution slips, as $\\dfrac{\\text{d}}{\\text{d}x}(-xy^2) = -\\left(y^2 + 2xy \\dfrac{\\text{d}y}{\\text{d}x}\\right) = -y^2 - 2xy \\dfrac{\\text{d}y}{\\text{d}x}$."
-                }
-        },
-        {
-                "id": "004277",
-                "board": "OCR MEI",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Differentiation",
-                        "Exponential and Logarithmic Functions and Graphs"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>A curve has the equation:<br>$$y\\text{e}^{2x} + y^2\\text{e}^x = 6$$<br>1. Show that there is exactly one point on the curve where $y = 1$, and find its exact $x$-coordinate in terms of a natural logarithm.<br>2. Find the exact gradient of the curve at this point.",
-                "steps": [
-                        "To find any coordinates where $y = 1$, substitute $y = 1$ into the curve's equation:<br>\\begin{aligned} (1)\\text{e}^{2x} + (1)^2\\text{e}^x &= 6 \\\\\\ \\text{e}^{2x} + \\text{e}^x - 6 &= 0 \\end{aligned}",
-                        "This is a quadratic equation in terms of $\\text{e}^x$. Let $u = \\text{e}^x$, where $u > 0$ because exponential outputs are strictly positive:<br>\\begin{aligned} u^2 + u - 6 &= 0 \\\\\\ (u + 3)(u - 2) &= 0 \\end{aligned}<br>This gives two mathematical solutions: $u = -3$ and $u = 2$.",
-                        "Since $u = \\text{e}^x > 0$, we must discard the negative root $u = -3$. Thus, the only valid solution is:<br>\\begin{aligned} \\text{e}^x &= 2 \\\\ x &= \\ln 2 \\end{aligned}<br>So, there is exactly one point on the curve where $y = 1$, which is $(\\ln 2, 1)$.",
-                        "Next, differentiate the curve's equation implicitly with respect to $x$, applying the product rule to both $y\\text{e}^{2x}$ and $y^2\\text{e}^x$:<br>\\begin{aligned} \\left( \\text{e}^{2x}\\dfrac{\\text{d}y}{\\text{d}x} + 2y\\text{e}^{2x} \\right) + \\left( 2y\\text{e}^x\\dfrac{\\text{d}y}{\\text{d}x} + y^2\\text{e}^x \\right) &= 0 \\end{aligned}",
-                        "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ by grouping the derivative terms together:<br>\\begin{aligned} \\left(\\text{e}^{2x} + 2y\\text{e}^x\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= -2y\\text{e}^{2x} - y^2\\text{e}^x \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= -\\dfrac{2y\\text{e}^{2x} + y^2\\text{e}^x}{\\text{e}^{2x} + 2y\\text{e}^x} \\end{aligned}",
-                        "To find the exact gradient at $(\\ln 2, 1)$, substitute $y = 1$, $\\text{e}^x = 2$, and $\\text{e}^{2x} = 4$ into the derivative expression:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= -\\dfrac{2(1)(4) + (1)^2(2)}{4 + 2(1)(2)} \\\\\\ &= -\\dfrac{8 + 2}{4 + 4} \\\\\\ &= -\\dfrac{10}{8} = -\\dfrac{5}{4} \\end{aligned}",
-                "Final Answer: $(\\ln 2, 1)$ with gradient $-\\dfrac{5}{4}$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$x = \\ln 2 \\text{ and } x = \\ln 3, \\quad \\text{Gradient: } -\\dfrac{5}{4}$$",
-                                "feedback": "Check your solutions to the quadratic equation $u^2 + u - 6 = 0$. This factors to $(u + 3)(u - 2) = 0$, giving $u = -3$ or $u = 2$. Since $u = \\text{e}^x$ and exponential functions can only output positive real values, the equation $\\text{e}^x = -3$ has no real solutions. Thus, $x = \\ln 2$ is the only valid coordinate."
-                        },
-                        {
-                                "ans": "$$x = \\ln 2, \\quad \\text{Gradient: } -1$$",
-                                "feedback": "Check your application of the product rule when differentiating the term $y^2\\text{e}^x$. You must treat it as a product of $y^2$ and $\\text{e}^x$, which yields $2y\\text{e}^x \\dfrac{\\text{d}y}{\\text{d}x} + y^2\\text{e}^x$. It appears you missed the $y^2\\text{e}^x$ term during differentiation."
-                        },
-                        {
-                                "ans": "$$x = \\ln 2, \\quad \\text{Gradient: } -\\dfrac{3}{4}$$",
-                                "feedback": "Check your derivative of $\\text{e}^{2x}$ with respect to $x$. By the chain rule, $\\dfrac{\\text{d}}{\\text{d}x}(\\text{e}^{2x}) = 2\\text{e}^{2x}$. It appears you may have missed this factor of 2 in your derivative of the first term."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Discarding Non-Physical Roots",
-                        "content": "When substituting values into equations containing exponentials to find coordinates, you will often encounter quadratic equations in terms of $\\text{e}^x$. Always remember that $\\text{e}^x > 0$ for all real $x$. This lets you immediately discard any negative quadratic roots before taking natural logarithms."
-                }
-        },
-        {
-                "id": "004278",
-                "board": "OCR MEI",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Differentiation"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>A curve is defined implicitly by the equation:<br>$$x^2 - 2xy + 3y^2 = 8$$<br>1. Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $x$ and $y$.<br>2. Hence, find the exact coordinates of the points on the curve where the tangent to the curve is parallel to the $x$-axis.",
-                "steps": [
-                        "Differentiate each term of the curve's equation implicitly with respect to $x$, using the product rule for $-2xy$:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}(x^2) - \\dfrac{\\text{d}}{\\text{d}x}(2xy) + \\dfrac{\\text{d}}{\\text{d}x}(3y^2) &= \\dfrac{\\text{d}}{\\text{d}x}(8) \\\\\\ 2x - 2\\left( y + x\\dfrac{\\text{d}y}{\\text{d}x} \\right) + 6y\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\\\\\ 2x - 2y - 2x\\dfrac{\\text{d}y}{\\text{d}x} + 6y\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\end{aligned}",
-                        "Group the $\\dfrac{\\text{d}y}{\\text{d}x}$ terms together and make it the subject of the formula:<br>\\begin{aligned} \\left(6y - 2x\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 2y - 2x \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{2y - 2x}{6y - 2x} \\end{aligned}<br>Factor out and divide by 2 to simplify:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{y - x}{3y - x} \\end{aligned}",
-                        "A tangent parallel to the $x$-axis is a horizontal tangent, which occurs where the gradient is zero:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\\\\\ \\dfrac{y - x}{3y - x} &= 0 \\\\ y - x &= 0 \\implies y = x \\end{aligned}",
-                        "Substitute $y = x$ back into the original curve's equation to find the corresponding coordinates:<br>\\begin{aligned} x^2 - 2x(x) + 3(x)^2 &= 8 \\\\ x^2 - 2x^2 + 3x^2 &= 8 \\\\\\ 2x^2 &= 8 \\\\ x^2 &= 4 \\end{aligned}<br>This gives $x = 2$ or $x = -2$.",
-                        "Since $y = x$, the points corresponding to these $x$-values are:<br>\\begin{aligned} x = 2 &\\implies y = 2 \\\\ x = -2 &\\implies y = -2 \\end{aligned}<br>Thus, the coordinates of the points with horizontal tangents are $(2, 2)$ and $(-2, -2)$.",
-                "Final Answer: $(2, 2)$ and $(-2, -2)$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\left(2\\sqrt{3}, \\dfrac{2\\sqrt{3}}{3}\\right) \\text{ and } \\left(-2\\sqrt{3}, -\\dfrac{2\\sqrt{3}}{3}\\right)$$",
-                                "feedback": "For a tangent parallel to the $x$-axis (horizontal tangent), the gradient $\\dfrac{\\text{d}y}{\\text{d}x}$ must equal 0. This requires the numerator of the derivative fraction to be zero ($y - x = 0$), not the denominator ($3y - x = 0$), which would correspond to a vertical tangent."
-                        },
-                        {
-                                "ans": "$$\\left(\\dfrac{2\\sqrt{3}}{3}, -\\dfrac{2\\sqrt{3}}{3}\\right) \\text{ and } \\left(-\\dfrac{2\\sqrt{3}}{3}, \\dfrac{2\\sqrt{3}}{3}\\right)$$",
-                                "feedback": "Check your differentiation of $-2xy$. Using the product rule, $\\dfrac{\\text{d}}{\\text{d}x}(-2xy) = -2y - 2x\\dfrac{\\text{d}y}{\\text{d}x}$. It appears you made a sign error, which led to substituting $y = -x$ instead of $y = x$ into the curve equation."
-                        },
-                        {
-                                "ans": "$$(\\sqrt{2}, \\sqrt{2}) \\text{ and } (-\\sqrt{2}, -\\sqrt{2})$$",
-                                "feedback": "Check your simplification of $x^2 - 2x^2 + 3x^2 = 8$. This simplifies to $2x^2 = 8$, leading to $x^2 = 4 \\implies x = \\pm 2$. It appears you may have incorrectly simplified the left side to $4x^2$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Head Teacher's Eye: Horizontal Tangents on Implicit Curves",
-                        "content": "Setting the numerator of $\\dfrac{\\text{d}y}{\\text{d}x}$ to zero to find horizontal tangents establishes a geometric relationship (here, $y = x$). However, you must always verify that this relationship does not simultaneously make the denominator zero. If both numerator and denominator are zero at a point, the derivative is undefined, indicating a sharp corner or singular point rather than a smooth horizontal tangent."
-                }
-        },
-        {
-                "id": "004279",
-                "board": "OCR MEI",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Differentiation",
-                        "Tangents and Normals"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>A curve has the equation:<br>$$x^2y^2 - 3x + y^3 = 9$$<br>1. Verify that the point $P(1, 2)$ lies on the curve.<br>2. Find the equation of the normal to the curve at $P$. Give your answer in the form $ax + by + c = 0$, where $a$, $b$, and $c$ are integers to be found.",
-                "steps": [
-                        "To verify that $P(1, 2)$ lies on the curve, substitute $x = 1$ and $y = 2$ into the left-hand side of the curve's equation:<br>\\begin{aligned} \\text{LHS} &= (1)^2(2)^2 - 3(1) + (2)^3 \\\\\\ &= 4 - 3 + 8 \\\\\\ &= 9 \\end{aligned}<br>Since $\\text{LHS} = \\text{RHS} = 9$, the point $P(1, 2)$ lies on the curve.",
-                        "Next, differentiate the equation of the curve implicitly with respect to $x$. Use the product rule on the term $x^2y^2$:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}(x^2y^2) - \\dfrac{\\text{d}}{\\text{d}x}(3x) + \\dfrac{\\text{d}}{\\text{d}x}(y^3) &= \\dfrac{\\text{d}}{\\text{d}x}(9) \\\\\\ \\left( 2xy^2 + x^2 \\cdot 2y\\dfrac{\\text{d}y}{\\text{d}x} \\right) - 3 + 3y^2\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\\\\\ 2xy^2 - 3 + \\left( 2x^2y + 3y^2 \\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\end{aligned}",
-                        "Rearrange the terms to make the gradient expression $\\dfrac{\\text{d}y}{\\text{d}x}$ the subject:<br>\\begin{aligned} \\left( 2x^2y + 3y^2 \\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 3 - 2xy^2 \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{3 - 2xy^2}{2x^2y + 3y^2} \\end{aligned}",
-                        "To find the gradient of the tangent at $P(1, 2)$, substitute $x = 1$ and $y = 2$ into the derivative:<br>\\begin{aligned} m_{\\text{tangent}} &= \\dfrac{3 - 2(1)(2)^2}{2(1)^2(2) + 3(2)^2} \\\\\\ &= \\dfrac{3 - 8}{4 + 12} \\\\\\ &= -\\dfrac{5}{16} \\end{aligned}",
-                        "The normal line is perpendicular to the tangent line. Find the gradient of the normal by taking the negative reciprocal of the tangent's gradient:<br>\\begin{aligned} m_{\\text{normal}} &= -\\dfrac{1}{m_{\\text{tangent}}} \\\\\\ &= -\\dfrac{1}{-\\frac{5}{16}} = \\dfrac{16}{5} \\end{aligned}",
-                        "Set up the equation of the normal line using the point-gradient formula $y - y_1 = m(x - x_1)$ at $P(1, 2)$:<br>\\begin{aligned} y - 2 &= \\dfrac{16}{5}(x - 1) \\end{aligned}<br>Multiply the entire equation by 5 to remove fractions, then rearrange into the form $ax + by + c = 0$:<br>\\begin{aligned} 5y - 10 &= 16x - 16 \\\\\\ 16x - 5y - 6 &= 0 \\end{aligned}",
-                "Final Answer: $16x - 5y - 6 = 0$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$5x + 16y - 37 = 0$$",
-                                "feedback": "This is the equation of the tangent line. Remember that the normal line is perpendicular to the tangent, so its gradient is the negative reciprocal of the tangent's gradient: $m_{\\text{normal}} = -\\dfrac{1}{m_{\\text{tangent}}} = \\dfrac{16}{5}$."
-                        },
-                        {
-                                "ans": "$$16x - 5y - 14 = 0$$",
-                                "feedback": "Check your algebraic expansion when multiplying the equation $y - 2 = \\dfrac{16}{5}(x - 1)$ by 5. You must multiply every term on the left side, which yields $5(y - 2) = 5y - 10$, not $5y - 2$."
-                        },
-                        {
-                                "ans": "$$16x + 5y - 26 = 0$$",
-                                "feedback": "Check your normal gradient calculation. The normal is perpendicular to the tangent, so its gradient is the negative reciprocal. Since the tangent gradient is negative ($-\\dfrac{5}{16}$), the normal gradient must be positive: $\\dfrac{16}{5}$ rather than $-\\dfrac{16}{5}$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Normal vs. Tangent Slips",
-                        "content": "It is an incredibly common and costly mistake in exam questions to write down the equation of the tangent line instead of the normal line. Always double-read whether the question demands the 'tangent' or the 'normal' before substituting your derivative into the straight-line equation, and apply $m_{\\text{normal}} = -\\dfrac{1}{m_{\\text{tangent}}}$ accordingly."
-                }
-        },
-        {
-                "id": "004280",
-                "board": "OCR MEI",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Differentiation",
-                        "Tangents and Normals"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>The equation of a curve is:<br>$$2x^3 + y^3 = 6y$$<br>1. Show that the derivative of the curve is given by:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2x^2}{2 - y^2}$$<br>2. Find the exact coordinates of the points on the curve where the tangent is parallel to the $y$-axis.",
-                "steps": [
-                        "Differentiate each term of the curve's equation implicitly with respect to $x$:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}(2x^3) + \\dfrac{\\text{d}}{\\text{d}x}(y^3) &= \\dfrac{\\text{d}}{\\text{d}x}(6y) \\\\\\ 6x^2 + 3y^2\\dfrac{\\text{d}y}{\\text{d}x} &= 6\\dfrac{\\text{d}y}{\\text{d}x} \\end{aligned}",
-                        "Group the $\\dfrac{\\text{d}y}{\\text{d}x}$ terms together on one side to solve for the derivative:<br>\\begin{aligned} 6\\dfrac{\\text{d}y}{\\text{d}x} - 3y^2\\dfrac{\\text{d}y}{\\text{d}x} &= 6x^2 \\\\\\ \\left(6 - 3y^2\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 6x^2 \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{6x^2}{6 - 3y^2} \\end{aligned}<br>Divide the numerator and denominator by 3 to simplify:<br>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{2x^2}{2 - y^2} \\end{aligned}",
-                        "A tangent line parallel to the $y$-axis is a vertical tangent. This occurs where the gradient $\\dfrac{\\text{d}y}{\\text{d}x}$ is undefined, which means setting the denominator to zero:<br>\\begin{aligned} 2 - y^2 &= 0 \\\\ y^2 &= 2 \\implies y = \\pm\\sqrt{2} \\end{aligned}",
-                        "To find the $x$-coordinates, substitute $y = \\sqrt{2}$ and $y = -\\sqrt{2}$ back into the original curve's equation. <br><br>Case 1: Substitute $y = \\sqrt{2}$:<br>\\begin{aligned} 2x^3 + (\\sqrt{2})^3 &= 6(\\sqrt{2}) \\\\\\ 2x^3 + 2\\sqrt{2} &= 6\\sqrt{2} \\\\\\ 2x^3 &= 4\\sqrt{2} \\\\ x^3 &= 2\\sqrt{2} \\end{aligned}",
-                        "Solve for $x$ by rewriting the term as an index power: $2\\sqrt{2} = 2^1 \\cdot 2^{1/2} = 2^{3/2} = (\\sqrt{2})^3$. Taking the cube root gives:<br>\\begin{aligned} x &= \\sqrt{2} \\end{aligned}<br>This gives our first point of vertical tangency: $(\\sqrt{2}, \\sqrt{2})$.",
-                        "Case 2: Substitute $y = -\\sqrt{2}$ into the curve's equation:<br>\\begin{aligned} 2x^3 + (-\\sqrt{2})^3 &= 6(-\\sqrt{2}) \\\\\\ 2x^3 - 2\\sqrt{2} &= -6\\sqrt{2} \\\\\\ 2x^3 &= -4\\sqrt{2} \\\\ x^3 &= -2\\sqrt{2} \\end{aligned}<br>Taking the cube root gives:<br>\\begin{aligned} x &= -\\sqrt{2} \\end{aligned}<br>This gives our second point of vertical tangency: $(-\\sqrt{2}, -\\sqrt{2})$.",
-                "Final Answer: $(\\sqrt{2}, \\sqrt{2})$ and $(-\\sqrt{2}, -\\sqrt{2})$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$(2, \\sqrt{2}) \\text{ and } (-2, -\\sqrt{2})$$",
-                                "feedback": "Check your simplification of $x^3 = 2\\sqrt{2}$. Since $2\\sqrt{2} = (\\sqrt{2})^3$, taking the cube root yields $x = \\sqrt{2}$, not $x = 2$. Keep track of your fractional indices."
-                        },
-                        {
-                                "ans": "$$(0, 0), \\quad (0, \\sqrt{6}), \\quad (0, -\\sqrt{6})$$",
-                                "feedback": "For a tangent parallel to the $y$-axis (vertical tangent), the gradient is undefined, meaning the denominator of the derivative must be zero ($2 - y^2 = 0$), not the numerator ($2x^2 = 0$)."
-                        },
-                        {
-                                "ans": "$$(\\sqrt{2}, -\\sqrt{2}) \\text{ and } (-\\sqrt{2}, \\sqrt{2})$$",
-                                "feedback": "Check your sign evaluation during the substitution step. Substituting $y = -\\sqrt{2}$ into $2x^3 + y^3 = 6y$ yields $2x^3 - 2\\sqrt{2} = -6\\sqrt{2} \\implies 2x^3 = -4\\sqrt{2} \\implies x = -\\sqrt{2}$. It seems you made a sign error, resulting in a mixed sign point."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Thinking in Terms of dx/dy",
-                        "content": "To find points where the tangent is parallel to the $y$-axis (vertical tangents), we set the denominator of $\\dfrac{\\text{d}y}{\\text{d}x}$ equal to zero. Alternatively, you can think of this as finding where the reciprocal derivative $\\dfrac{\\text{d}x}{\\text{d}y}$ is equal to zero! Keeping this duality in mind can make handling vertical tangents much more intuitive."
-                }
-        },
-        {
+  {
+    "id": "004276",
+    "board": "OCR MEI",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Differentiation",
+      "Tangents and Normals"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>The equation of a curve is given by:$$x^2 - xy^2 + y^3 = 13$$1. Find the coordinates of the points where the curve intersects the line $y = 2$.<br><br>2. Find the gradient of the curve at each of these points.",
+    "steps": [
+      "To find the points of intersection with the line $y = 2$, substitute $y = 2$ into the curve's equation:\\begin{aligned} x^2 - x(2)^2 + (2)^3 &= 13 \\cr x^2 - 4x + 8 &= 13 \\cr x^2 - 4x - 5 &= 0 \\end{aligned}",
+      "Factorise this quadratic equation to solve for $x$:\\begin{aligned} (x - 5)(x + 1) &= 0 \\end{aligned}This yields two solutions: $x = 5$ and $x = -1$.<br><br>Therefore, the coordinates of the two intersection points are $(5, 2)$ and $(-1, 2)$.",
+      "Now, differentiate the equation of the curve implicitly with respect to $x$. Apply the product rule carefully to the term $-xy^2$:\\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(x^2) - \\dfrac{\\text{d}}{\\text{d}x}(xy^2) + \\dfrac{\\text{d}}{\\text{d}x}(y^3) = 0 \\cr &2x - \\left( y^2 + 2xy\\dfrac{\\text{d}y}{\\text{d}x} \\right) + 3y^2\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\cr &2x - y^2 - 2xy\\dfrac{\\text{d}y}{\\text{d}x} + 3y^2\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\end{aligned}",
+      "Rearrange the differentiated terms to isolate and make $\\dfrac{\\text{d}y}{\\text{d}x}$ the subject:\\begin{aligned} &\\left(3y^2 - 2xy\\right)\\dfrac{\\text{d}y}{\\text{d}x} = y^2 - 2x \\cr &\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{y^2 - 2x}{3y^2 - 2xy} \\end{aligned}",
+      "To find the gradient of the curve at the first intersection point $(5, 2)$, substitute $x = 5$ and $y = 2$ into the derivative:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{(2)^2 - 2(5)}{3(2)^2 - 2(5)(2)} \\cr &= \\dfrac{4 - 10}{12 - 20} \\cr &= \\dfrac{-6}{-8} \\cr &= \\dfrac{3}{4} \\end{aligned}",
+      "To find the gradient of the curve at the second intersection point $(-1, 2)$, substitute $x = -1$ and $y = 2$ into the derivative:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{(2)^2 - 2(-1)}{3(2)^2 - 2(-1)(2)} \\cr &= \\dfrac{4 + 2}{12 + 4} \\cr &= \\dfrac{6}{16} \\cr &= \\dfrac{3}{8} \\end{aligned}",
+      "Final Answer: \\begin{aligned} &(5, 2) \\text{ with gradient } \\dfrac{3}{4} \\cr &(-1, 2) \\text{ with gradient } \\dfrac{3}{8} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &(5, 2) \\text{ with gradient } -\\dfrac{3}{16} \\cr &(-1, 2) \\text{ with gradient } \\dfrac{3}{4} \\end{aligned}",
+        "feedback": "Check your application of the product rule when differentiating the term $-xy^2$. Remember to distribute the negative sign to both terms inside the bracket. Differentiating $-xy^2$ with respect to $x$ yields $-y^2 - 2xy \\dfrac{\\text{d}y}{\\text{d}x}$ rather than $-y^2 + 2xy \\dfrac{\\text{d}y}{\\text{d}x}$."
+      },
+      {
+        "ans": "\\begin{aligned} &(5, 2) \\text{ with gradient } -3 \\cr &(-1, 2) \\text{ with gradient } \\dfrac{3}{7} \\end{aligned}",
+        "feedback": "Check your derivative of $y^2$ with respect to $x$ when applying the product rule. By the chain rule, $\\dfrac{\\text{d}}{\\text{d}x}(y^2) = 2y \\dfrac{\\text{d}y}{\\text{d}x}$. It appears you may have omitted the factor of 2 in your derivative of the middle term."
+      },
+      {
+        "ans": "\\begin{aligned} &(5, 2) \\text{ with gradient } \\dfrac{3}{4} \\cr &(1, 2) \\text{ with gradient } \\dfrac{1}{4} \\end{aligned}",
+        "feedback": "Check your factorisation of the quadratic equation $x^2 - 4x - 5 = 0$. Since $-5$ is negative and the middle term is $-4$, the expression factors to $(x - 5)(x + 1) = 0$, yielding solutions $x = 5$ and $x = -1$ rather than $x = 1$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Product Rule Sign Distribution",
+      "content": "A very common error in implicit differentiation occurs when applying the product rule to terms with negative coefficients, such as $-xy^2$. Ensure you treat the entire product within a bracket to avoid sign distribution slips, as $\\dfrac{\\text{d}}{\\text{d}x}(-xy^2) = -\\left(y^2 + 2xy \\dfrac{\\text{d}y}{\\text{d}x}\\right)$, which expands to $-y^2 - 2xy \\dfrac{\\text{d}y}{\\text{d}x}$."
+    }
+  },
+  {
+    "id": "004277",
+    "board": "OCR MEI",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Differentiation",
+      "Exponential and Logarithmic Functions and Graphs"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>A curve has the equation:$$y\\text{e}^{2x} + y^2\\text{e}^x = 6$$1. Show that there is exactly one point on the curve where $y = 1$, and find its exact $x$-coordinate in terms of a natural logarithm.<br><br>2. Find the exact gradient of the curve at this point.",
+    "steps": [
+      "To find any coordinates where $y = 1$, substitute $y = 1$ into the curve's equation:\\begin{aligned} (1)\\text{e}^{2x} + (1)^2\\text{e}^x &= 6 \\cr \\text{e}^{2x} + \\text{e}^x - 6 &= 0 \\end{aligned}",
+      "This is a quadratic equation in terms of $\\text{e}^x$. Let $u = \\text{e}^x$, where $u > 0$ because exponential outputs are strictly positive:\\begin{aligned} u^2 + u - 6 &= 0 \\cr (u + 3)(u - 2) &= 0 \\end{aligned}This gives two mathematical solutions: $u = -3$ and $u = 2$.",
+      "Since $u = \\text{e}^x > 0$, we must discard the negative root $u = -3$. Thus, the only valid solution is:\\begin{aligned} \\text{e}^x &= 2 \\cr x &= \\ln 2 \\end{aligned}So, there is exactly one point on the curve where $y = 1$, which is $(\\ln 2, 1)$.",
+      "Next, differentiate the curve's equation implicitly with respect to $x$, applying the product rule to both $y\\text{e}^{2x}$ and $y^2\\text{e}^x$:\\begin{aligned} &\\left( \\text{e}^{2x}\\dfrac{\\text{d}y}{\\text{d}x} + 2y\\text{e}^{2x} \\right) \\cr &\\quad + \\left( 2y\\text{e}^x\\dfrac{\\text{d}y}{\\text{d}x} + y^2\\text{e}^x \\right) = 0 \\end{aligned}",
+      "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ by grouping the derivative terms together:\\begin{aligned} &\\left(\\text{e}^{2x} + 2y\\text{e}^x\\right)\\dfrac{\\text{d}y}{\\text{d}x} \\cr &\\quad = -2y\\text{e}^{2x} - y^2\\text{e}^x \\cr &\\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{2y\\text{e}^{2x} + y^2\\text{e}^x}{\\text{e}^{2x} + 2y\\text{e}^x} \\end{aligned}",
+      "To find the exact gradient at $(\\ln 2, 1)$, substitute $y = 1$, $\\text{e}^x = 2$, and $\\text{e}^{2x} = 4$ into the derivative expression:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= -\\dfrac{2(1)(4) + (1)^2(2)}{4 + 2(1)(2)} \\cr &= -\\dfrac{8 + 2}{4 + 4} \\cr &= -\\dfrac{10}{8} \\cr &= -\\dfrac{5}{4} \\end{aligned}",
+      "Final Answer: \\begin{aligned} &(\\ln 2, 1) \\cr &\\text{Gradient} = -\\dfrac{5}{4} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &x = \\ln 2 \\text{ and } x = \\ln 3 \\cr &\\text{Gradient} = -\\dfrac{5}{4} \\end{aligned}",
+        "feedback": "Check your solutions to the quadratic equation $u^2 + u - 6 = 0$. This factors to $(u + 3)(u - 2) = 0$, giving $u = -3$ or $u = 2$. Since $u = \\text{e}^x$ and exponential functions can only output positive real values, the equation $\\text{e}^x = -3$ has no real solutions. Thus, $x = \\ln 2$ is the only valid coordinate."
+      },
+      {
+        "ans": "\\begin{aligned} &x = \\ln 2 \\cr &\\text{Gradient} = -1 \\end{aligned}",
+        "feedback": "Check your application of the product rule when differentiating the term $y^2\\text{e}^x$. You must treat it as a product of $y^2$ and $\\text{e}^x$, which yields $2y\\text{e}^x \\dfrac{\\text{d}y}{\\text{d}x} + y^2\\text{e}^x$. It appears you missed the $y^2\\text{e}^x$ term during differentiation."
+      },
+      {
+        "ans": "\\begin{aligned} &x = \\ln 2 \\cr &\\text{Gradient} = -\\dfrac{3}{4} \\end{aligned}",
+        "feedback": "Check your derivative of $\\text{e}^{2x}$ with respect to $x$. By the chain rule, $\\dfrac{\\text{d}}{\\text{d}x}(\\text{e}^{2x}) = 2\\text{e}^{2x}$. It appears you may have missed this factor of 2 in your derivative of the first term."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Discarding Non-Physical Roots",
+      "content": "When substituting values into equations containing exponentials to find coordinates, you will often encounter quadratic equations in terms of $\\text{e}^x$. Always remember that $\\text{e}^x > 0$ for all real $x$. This lets you immediately discard any negative quadratic roots before taking natural logarithms."
+    }
+  },
+  {
+    "id": "004278",
+    "board": "OCR MEI",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Differentiation"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>A curve is defined implicitly by the equation:$$x^2 - 2xy + 3y^2 = 8$$1. Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $x$ and $y$.<br><br>2. Hence, find the exact coordinates of the points on the curve where the tangent to the curve is parallel to the $x$-axis.",
+    "steps": [
+      "Differentiate each term of the curve's equation implicitly with respect to $x$, using the product rule for $-2xy$:\\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(x^2) - \\dfrac{\\text{d}}{\\text{d}x}(2xy) + \\dfrac{\\text{d}}{\\text{d}x}(3y^2) = 0 \\cr &2x - 2\\left( y + x\\dfrac{\\text{d}y}{\\text{d}x} \\right) + 6y\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\cr &2x - 2y - 2x\\dfrac{\\text{d}y}{\\text{d}x} + 6y\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\end{aligned}",
+      "Group the $\\dfrac{\\text{d}y}{\\text{d}x}$ terms together and make it the subject of the formula:\\begin{aligned} &\\left(6y - 2x\\right)\\dfrac{\\text{d}y}{\\text{d}x} = 2y - 2x \\cr &\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2y - 2x}{6y - 2x} \\end{aligned}Factor out and divide by 2 to simplify:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{y - x}{3y - x} \\end{aligned}",
+      "A tangent parallel to the $x$-axis is a horizontal tangent, which occurs where the gradient is zero:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\cr \\dfrac{y - x}{3y - x} &= 0 \\cr y - x &= 0 \\cr y &= x \\end{aligned}",
+      "Substitute $y = x$ back into the original curve's equation to find the corresponding coordinates:\\begin{aligned} x^2 - 2x(x) + 3(x)^2 &= 8 \\cr x^2 - 2x^2 + 3x^2 &= 8 \\cr 2x^2 &= 8 \\cr x^2 &= 4 \\end{aligned}This gives $x = 2$ or $x = -2$.",
+      "Since $y = x$, the points corresponding to these $x$-values are:\\begin{aligned} x = 2 &\\implies y = 2 \\cr x = -2 &\\implies y = -2 \\end{aligned}Thus, the coordinates of the points with horizontal tangents are $(2, 2)$ and $(-2, -2)$.",
+      "Final Answer: \\begin{aligned} &(2, 2) \\cr &(-2, -2) \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\left(2\\sqrt{3}, \\dfrac{2\\sqrt{3}}{3}\\right) \\cr &\\left(-2\\sqrt{3}, -\\dfrac{2\\sqrt{3}}{3}\\right) \\end{aligned}",
+        "feedback": "For a tangent parallel to the $x$-axis (horizontal tangent), the gradient $\\dfrac{\\text{d}y}{\\text{d}x}$ must equal 0. This requires the numerator of the derivative fraction to be zero ($y - x = 0$), not the denominator ($3y - x = 0$), which would correspond to a vertical tangent."
+      },
+      {
+        "ans": "\\begin{aligned} &\\left(\\dfrac{2\\sqrt{3}}{3}, -\\dfrac{2\\sqrt{3}}{3}\\right) \\cr &\\left(-\\dfrac{2\\sqrt{3}}{3}, \\dfrac{2\\sqrt{3}}{3}\\right) \\end{aligned}",
+        "feedback": "Check your differentiation of $-2xy$. Using the product rule, $\\dfrac{\\text{d}}{\\text{d}x}(-2xy) = -2y - 2x\\dfrac{\\text{d}y}{\\text{d}x}$. It appears you made a sign error, which led to substituting $y = -x$ instead of $y = x$ into the curve equation."
+      },
+      {
+        "ans": "\\begin{aligned} &(\\sqrt{2}, \\sqrt{2}) \\cr &(-\\sqrt{2}, -\\sqrt{2}) \\end{aligned}",
+        "feedback": "Check your simplification of $x^2 - 2x^2 + 3x^2 = 8$. This simplifies to $2x^2 = 8$, leading to $x^2 = 4 \\implies x = \\pm 2$. It appears you may have incorrectly simplified the left side to $4x^2$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "deeper",
+      "title": "The Head Teacher's Eye: Horizontal Tangents on Implicit Curves",
+      "content": "Setting the numerator of $\\dfrac{\\text{d}y}{\\text{d}x}$ to zero to find horizontal tangents establishes a geometric relationship (here, $y = x$). However, you must always verify that this relationship does not simultaneously make the denominator zero. If both numerator and denominator are zero at a point, the derivative is undefined, indicating a sharp corner or singular point rather than a smooth horizontal tangent."
+    }
+  },
+  {
+    "id": "004279",
+    "board": "OCR MEI",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Differentiation",
+      "Tangents and Normals"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>A curve has the equation:$$x^2y^2 - 3x + y^3 = 9$$1. Verify that the point $P(1, 2)$ lies on the curve.<br><br>2. Find the equation of the normal to the curve at $P$. Give your answer in the form $ax + by + c = 0$, where $a$, $b$, and $c$ are integers to be found.",
+    "steps": [
+      "To verify that $P(1, 2)$ lies on the curve, substitute $x = 1$ and $y = 2$ into the left-hand side of the curve's equation:\\begin{aligned} \\text{LHS} &= (1)^2(2)^2 - 3(1) + (2)^3 \\cr &= 4 - 3 + 8 \\cr &= 9 \\end{aligned}Since $\\text{LHS} = 9$ and $\\text{RHS} = 9$, the point $P(1, 2)$ lies on the curve.",
+      "Next, differentiate the equation of the curve implicitly with respect to $x$. Use the product rule on the term $x^2y^2$:\\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(x^2y^2) - \\dfrac{\\text{d}}{\\text{d}x}(3x) + \\dfrac{\\text{d}}{\\text{d}x}(y^3) = 0 \\cr &\\left( 2xy^2 + 2x^2y\\dfrac{\\text{d}y}{\\text{d}x} \\right) - 3 + 3y^2\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\cr &2xy^2 - 3 + \\left( 2x^2y + 3y^2 \\right)\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\end{aligned}",
+      "Rearrange the terms to make the gradient expression $\\dfrac{\\text{d}y}{\\text{d}x}$ the subject:\\begin{aligned} &\\left( 2x^2y + 3y^2 \\right)\\dfrac{\\text{d}y}{\\text{d}x} = 3 - 2xy^2 \\cr &\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{3 - 2xy^2}{2x^2y + 3y^2} \\end{aligned}",
+      "To find the gradient of the tangent at $P(1, 2)$, substitute $x = 1$ and $y = 2$ into the derivative:\\begin{aligned} m_{\\text{tangent}} &= \\dfrac{3 - 2(1)(2)^2}{2(1)^2(2) + 3(2)^2} \\cr &= \\dfrac{3 - 8}{4 + 12} \\cr &= -\\dfrac{5}{16} \\end{aligned}",
+      "The normal line is perpendicular to the tangent line. Find the gradient of the normal by taking the negative reciprocal of the tangent's gradient:\\begin{aligned} m_{\\text{normal}} &= -\\dfrac{1}{m_{\\text{tangent}}} \\cr &= -\\dfrac{1}{-\\frac{5}{16}} \\cr &= \\dfrac{16}{5} \\end{aligned}",
+      "Set up the equation of the normal line using the point-gradient formula $y - y_1 = m(x - x_1)$ at $P(1, 2)$:\\begin{aligned} y - 2 &= \\dfrac{16}{5}(x - 1) \\end{aligned}Multiply the entire equation by 5 to remove fractions, then rearrange into the form $ax + by + c = 0$:\\begin{aligned} 5y - 10 &= 16x - 16 \\cr 16x - 5y - 6 &= 0 \\end{aligned}",
+      "Final Answer: $$16x - 5y - 6 = 0$$"
+    ],
+    "pi_options": [
+      {
+        "ans": "$$5x + 16y - 37 = 0$$",
+        "feedback": "This is the equation of the tangent line. Remember that the normal line is perpendicular to the tangent, so its gradient is the negative reciprocal of the tangent's gradient: $m_{\\text{normal}} = \\dfrac{16}{5}$."
+      },
+      {
+        "ans": "$$16x - 5y - 14 = 0$$",
+        "feedback": "Check your algebraic expansion when multiplying the equation $y - 2 = \\dfrac{16}{5}(x - 1)$ by 5. You must multiply every term on the left side, which yields $5(y - 2) = 5y - 10$, not $5y - 2$."
+      },
+      {
+        "ans": "$$16x + 5y - 26 = 0$$",
+        "feedback": "Check your normal gradient calculation. The normal is perpendicular to the tangent, so its gradient is the negative reciprocal. Since the tangent gradient is negative ($-\\dfrac{5}{16}$), the normal gradient must be positive: $\\dfrac{16}{5}$ rather than $-\\dfrac{16}{5}$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Normal vs. Tangent Slips",
+      "content": "It is an incredibly common and costly mistake in exam questions to write down the equation of the tangent line instead of the normal line. Always double-read whether the question demands the 'tangent' or the 'normal' before substituting your derivative into the straight-line equation, and apply $m_{\\text{normal}} = -\\dfrac{1}{m_{\\text{tangent}}}$ accordingly."
+    }
+  },
+  {
+    "id": "004280",
+    "board": "OCR MEI",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Differentiation",
+      "Tangents and Normals"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>The equation of a curve is:$$2x^3 + y^3 = 6y$$1. Show that the derivative of the curve is given by:$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2x^2}{2 - y^2}$$2. Find the exact coordinates of the points on the curve where the tangent is parallel to the $y$-axis.",
+    "steps": [
+      "Differentiate each term of the curve's equation implicitly with respect to $x$:\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}(2x^3) + \\dfrac{\\text{d}}{\\text{d}x}(y^3) &= \\dfrac{\\text{d}}{\\text{d}x}(6y) \\cr 6x^2 + 3y^2\\dfrac{\\text{d}y}{\\text{d}x} &= 6\\dfrac{\\text{d}y}{\\text{d}x} \\end{aligned}",
+      "Group the $\\dfrac{\\text{d}y}{\\text{d}x}$ terms together on one side to solve for the derivative:\\begin{aligned} 6\\dfrac{\\text{d}y}{\\text{d}x} - 3y^2\\dfrac{\\text{d}y}{\\text{d}x} &= 6x^2 \\cr \\left(6 - 3y^2\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 6x^2 \\cr \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{6x^2}{6 - 3y^2} \\end{aligned}Divide the numerator and denominator by 3 to simplify:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{2x^2}{2 - y^2} \\end{aligned}",
+      "A tangent line parallel to the $y$-axis is a vertical tangent. This occurs where the gradient $\\dfrac{\\text{d}y}{\\text{d}x}$ is undefined, which means setting the denominator to zero:\\begin{aligned} 2 - y^2 &= 0 \\cr y^2 &= 2 \\cr y &= \\pm\\sqrt{2} \\end{aligned}",
+      "To find the $x$-coordinates, substitute $y = \\sqrt{2}$ and $y = -\\sqrt{2}$ back into the original curve's equation.<br><br>Case 1: Substitute $y = \\sqrt{2}$:\\begin{aligned} 2x^3 + (\\sqrt{2})^3 &= 6(\\sqrt{2}) \\cr 2x^3 + 2\\sqrt{2} &= 6\\sqrt{2} \\cr 2x^3 &= 4\\sqrt{2} \\cr x^3 &= 2\\sqrt{2} \\end{aligned}",
+      "Solve for $x$ by rewriting the term as an index power: $2\\sqrt{2} = (\\sqrt{2})^3$. Taking the cube root gives:\\begin{aligned} x &= \\sqrt{2} \\end{aligned}This gives our first point of vertical tangency: $(\\sqrt{2}, \\sqrt{2})$.",
+      "Case 2: Substitute $y = -\\sqrt{2}$ into the curve's equation:\\begin{aligned} 2x^3 + (-\\sqrt{2})^3 &= 6(-\\sqrt{2}) \\cr 2x^3 - 2\\sqrt{2} &= -6\\sqrt{2} \\cr 2x^3 &= -4\\sqrt{2} \\cr x^3 &= -2\\sqrt{2} \\end{aligned}Taking the cube root gives:\\begin{aligned} x &= -\\sqrt{2} \\end{aligned}This gives our second point of vertical tangency: $(-\\sqrt{2}, -\\sqrt{2})$.",
+      "Final Answer: \\begin{aligned} &(\\sqrt{2}, \\sqrt{2}) \\cr &(-\\sqrt{2}, -\\sqrt{2}) \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &(2, \\sqrt{2}) \\cr &(-2, -\\sqrt{2}) \\end{aligned}",
+        "feedback": "Check your simplification of $x^3 = 2\\sqrt{2}$. Since $2\\sqrt{2} = (\\sqrt{2})^3$, taking the cube root yields $x = \\sqrt{2}$, not $x = 2$. Keep track of your fractional indices."
+      },
+      {
+        "ans": "\\begin{aligned} &(0, 0) \\cr &(0, \\sqrt{6}) \\cr &(0, -\\sqrt{6}) \\end{aligned}",
+        "feedback": "For a tangent parallel to the $y$-axis (vertical tangent), the gradient is undefined, meaning the denominator of the derivative must be zero ($2 - y^2 = 0$), not the numerator ($2x^2 = 0$)."
+      },
+      {
+        "ans": "\\begin{aligned} &(\\sqrt{2}, -\\sqrt{2}) \\cr &(-\\sqrt{2}, \\sqrt{2}) \\end{aligned}",
+        "feedback": "Check your sign evaluation during the substitution step. Substituting $y = -\\sqrt{2}$ into $2x^3 + y^3 = 6y$ yields $2x^3 - 2\\sqrt{2} = -6\\sqrt{2}$. This leads to $2x^3 = -4\\sqrt{2}$, so $x = -\\sqrt{2}$. It seems you made a sign error, resulting in a mixed sign point."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Thinking in Terms of dx/dy",
+      "content": "To find points where the tangent is parallel to the $y$-axis (vertical tangents), we set the denominator of $\\dfrac{\\text{d}y}{\\text{d}x}$ equal to zero. Alternatively, you can think of this as finding where the reciprocal derivative $\\dfrac{\\text{d}x}{\\text{d}y}$ is equal to zero! Keeping this duality in mind can make handling vertical tangents much more intuitive."
+    }
+  },
+          {
                 "id": "004281",
                 "board": "OCR MEI",
                 "branch": "Pure",
