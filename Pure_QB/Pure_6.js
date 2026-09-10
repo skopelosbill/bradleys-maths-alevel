@@ -1013,7 +1013,7 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
-      "Differentiation",
+      "Implicit Differentiation",
       "Tangents and Normals"
     ],
     "img": false,
@@ -1055,7 +1055,7 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
-      "Differentiation",
+      "Implicit Differentiation",
       "Exponential and Logarithmic Functions and Graphs"
     ],
     "img": false,
@@ -1097,7 +1097,8 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
-      "Differentiation"
+      "Implicit Differentiation",
+      "Tangents"
     ],
     "img": false,
     "question": "In this question you must show detailed reasoning.<br><br>A curve is defined implicitly by the equation:$$x^2 - 2xy + 3y^2 = 8$$1. Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $x$ and $y$.<br><br>2. Hence, find the exact coordinates of the points on the curve where the tangent to the curve is parallel to the $x$-axis.",
@@ -1137,14 +1138,15 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
-      "Differentiation",
+      "Implicit Differentiation",
+      "Product Rule",
       "Tangents and Normals"
     ],
     "img": false,
     "question": "In this question you must show detailed reasoning.<br><br>A curve has the equation:$$x^2y^2 - 3x + y^3 = 9$$1. Verify that the point $P(1, 2)$ lies on the curve.<br><br>2. Find the equation of the normal to the curve at $P$. Give your answer in the form $ax + by + c = 0$, where $a$, $b$, and $c$ are integers to be found.",
     "steps": [
       "To verify that $P(1, 2)$ lies on the curve, substitute $x = 1$ and $y = 2$ into the left-hand side of the curve's equation:\\begin{aligned} \\text{LHS} &= (1)^2(2)^2 - 3(1) + (2)^3 \\cr &= 4 - 3 + 8 \\cr &= 9 \\end{aligned}Since $\\text{LHS} = 9$ and $\\text{RHS} = 9$, the point $P(1, 2)$ lies on the curve.",
-      "Next, differentiate the equation of the curve implicitly with respect to $x$. Use the product rule on the term $x^2y^2$:\\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(x^2y^2) - \\dfrac{\\text{d}}{\\text{d}x}(3x) + \\dfrac{\\text{d}}{\\text{d}x}(y^3) = 0 \\cr &\\left( 2xy^2 + 2x^2y\\dfrac{\\text{d}y}{\\text{d}x} \\right) - 3 + 3y^2\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\cr &2xy^2 - 3 + \\left( 2x^2y + 3y^2 \\right)\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\end{aligned}",
+      "Next, differentiate the equation of the curve implicitly with respect to $x$. Use the product rule on the term $x^2y^2$:\\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(x^2y^2) - \\dfrac{\\text{d}}{\\text{d}x}(3x)\\cr & \\quad \\quad \\quad + \\dfrac{\\text{d}}{\\text{d}x}(y^3) = 0 \\cr &\\left( 2xy^2 + 2x^2y\\dfrac{\\text{d}y}{\\text{d}x} \\right)\\cr & \\quad \\quad  - 3 + 3y^2\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\cr &2xy^2 - 3 + \\left( 2x^2y + 3y^2 \\right)\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\end{aligned}",
       "Rearrange the terms to make the gradient expression $\\dfrac{\\text{d}y}{\\text{d}x}$ the subject:\\begin{aligned} &\\left( 2x^2y + 3y^2 \\right)\\dfrac{\\text{d}y}{\\text{d}x} = 3 - 2xy^2 \\cr &\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{3 - 2xy^2}{2x^2y + 3y^2} \\end{aligned}",
       "To find the gradient of the tangent at $P(1, 2)$, substitute $x = 1$ and $y = 2$ into the derivative:\\begin{aligned} m_{\\text{tangent}} &= \\dfrac{3 - 2(1)(2)^2}{2(1)^2(2) + 3(2)^2} \\cr &= \\dfrac{3 - 8}{4 + 12} \\cr &= -\\dfrac{5}{16} \\end{aligned}",
       "The normal line is perpendicular to the tangent line. Find the gradient of the normal by taking the negative reciprocal of the tangent's gradient:\\begin{aligned} m_{\\text{normal}} &= -\\dfrac{1}{m_{\\text{tangent}}} \\cr &= -\\dfrac{1}{-\\frac{5}{16}} \\cr &= \\dfrac{16}{5} \\end{aligned}",
@@ -1179,7 +1181,7 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
-      "Differentiation",
+      "Implicit Differentiation",
       "Tangents and Normals"
     ],
     "img": false,
