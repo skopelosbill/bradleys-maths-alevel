@@ -1427,10 +1427,10 @@ window.ALEVEL_QUESTIONS = [
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Differentiation",
+    "major_area": "Integration",
     "topic": "Differential Equations",
     "subtopic": [
-      "Integration"
+      "Partial Fractions"
     ],
     "img": false,
     "question": "In this question you must show detailed reasoning.<br><br>It is given that:\\begin{aligned} &f(x) \\cr &\\quad = \\dfrac{x^2 + 4x + 4}{(x - 2)(x^2 + 4)} \\end{aligned}1. Express $f(x)$ in partial fractions.<br><br>2. Solve the differential equation:$$\\dfrac{\\text{d}y}{\\text{d}x} = y f(x)$$giving your answer in the form $y = g(x)$, subject to the boundary condition $y = 2$ when $x = 0$.",
@@ -1441,8 +1441,8 @@ window.ALEVEL_QUESTIONS = [
       "To solve the differential equation $\\dfrac{\\text{d}y}{\\text{d}x} = y f(x)$, separate the variables and integrate both sides:\\begin{aligned} &\\int \\dfrac{1}{y} \\text{d}y = \\int f(x) \\text{d}x \\cr &\\int \\dfrac{1}{y} \\text{d}y \\cr &\\quad = \\int \\Big( \\dfrac{2}{x - 2} + \\dfrac{2}{x^2 + 4} \\cr &\\qquad\\qquad - \\dfrac{x}{x^2 + 4} \\Big) \\text{d}x \\end{aligned}",
       "Perform the integration on each term on the right-hand side carefully, using the standard log integrals and the inverse tangent rule:\\begin{aligned} &\\ln|y| = 2\\ln|x - 2| \\cr &\\quad + \\arctan\\left(\\dfrac{x}{2}\\right) \\cr &\\quad - \\dfrac{1}{2}\\ln(x^2 + 4) + c \\end{aligned}Combine the logarithmic terms using standard log laws:\\begin{aligned} &\\ln|y| = \\ln\\left( \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\right) \\cr &\\quad + \\arctan\\left(\\dfrac{x}{2}\\right) + c \\end{aligned}",
       "Exponentiate both sides to write the general solution in terms of a constant $K = \\text{e}^c$:\\begin{aligned} &y = K \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\cr &\\qquad \\times \\text{e}^{\\arctan(x/2)} \\end{aligned}",
-      "Apply the boundary condition $y = 2$ when $x = 0$ to solve for $K$:\\begin{aligned} 2 &= K \\dfrac{(0 - 2)^2}{\\sqrt{0^2 + 4}} \\text{e}^{\\arctan(0)} \\cr 2 &= K(2)(1) \\cr 2 &= 2K \\cr K &= 1 \\end{aligned}Substituting $K = 1$ back into the general solution yields:\\begin{aligned} &y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\cr &\\qquad \\times \\text{e}^{\\arctan(x/2)} \\end{aligned}",
-      "Final Answer: \\begin{aligned} &y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}} \\cr &\\qquad \\times \\text{e}^{\\arctan(x/2)} \\end{aligned}"
+      "Apply the boundary condition $y = 2$ when $x = 0$ to solve for $K$:\\begin{aligned} 2 &= K \\dfrac{(0 - 2)^2}{\\sqrt{0^2 + 4}} \\text{e}^{\\arctan(0)} \\cr 2 &= K(2)(1) \\cr 2 &= 2K \\cr K &= 1 \\end{aligned}Substituting $K = 1$ back into the general solution yields:\\begin{aligned} &y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}}\\text{e}^{\\arctan(x/2)} \\end{aligned}",
+      "Final Answer: \\begin{aligned} &y = \\dfrac{(x - 2)^2}{\\sqrt{x^2 + 4}}\\text{e}^{\\arctan(x/2)} \\end{aligned}"
     ],
     "pi_options": [
       {
