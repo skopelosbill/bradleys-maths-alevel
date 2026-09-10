@@ -92,7 +92,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "Since both sides of the inequality are guaranteed to be non-negative, squaring both sides is a valid and robust method to remove the modulus signs:\\begin{aligned} (x - 2)^2 \\le (2x + 1)^2 \\end{aligned}",
                         "Expand both sides of the quadratic inequality:\\begin{aligned} x^2 - 4x + 4 \\le 4x^2 + 4x + 1 \\end{aligned}",
-                        "Rearrange the inequality to bring all terms to the right-hand side using consistent far-left alignment:\\begin{aligned} &0 \\le (4x^2 + 4x + 1) \\cr &\\quad - (x^2 - 4x + 4) \\cr &0 \\le 3x^2 + 8x - 3 \\cr &3x^2 + 8x - 3 \\ge 0 \\end{aligned}",
+                        "Rearrange the inequality to bring all terms to the right-hand side:\\begin{aligned} &0 \\le (4x^2 + 4x + 1) \\cr &\\quad - (x^2 - 4x + 4) \\cr &0 \\le 3x^2 + 8x - 3 \\cr &3x^2 + 8x - 3 \\ge 0 \\end{aligned}",
                         "Find the critical values of the quadratic equation by solving $3x^2 + 8x - 3 = 0$ using the quadratic formula:\\begin{aligned} x &= \\dfrac{-8 \\pm \\sqrt{8^2 - 4(3)(-3)}}{2(3)} \\cr &= \\dfrac{-8 \\pm \\sqrt{64 + 36}}{6} \\cr &= \\dfrac{-8 \\pm 10}{6} \\end{aligned}This gives the critical points:\\begin{aligned} x &= \\dfrac{1}{3} \\cr x &= -3 \\end{aligned}",
                         "Since the quadratic $3x^2 + 8x - 3$ has a positive leading coefficient, the inequality $3x^2 + 8x - 3 \\ge 0$ is satisfied in the outer regions of these critical points:\\begin{aligned} x \\le -3 \\quad \\text{or} \\quad x \\ge \\dfrac{1}{3} \\end{aligned}",
                         "Final Answer: \\begin{aligned} x \\le -3 \\quad \\text{or} \\quad x \\ge \\dfrac{1}{3} \\end{aligned}"
@@ -608,14 +608,14 @@ window.ALEVEL_QUESTIONS = [
                 "topic": "Differentiation",
                 "subtopic": [
                         "Curved Graphs",
-                        "Differentiation"
+                        "Implicit Differentiation"
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>The equation of a curve is:\\begin{aligned} y^4 - 7xy + x^3 = -5 \\end{aligned}Find the gradient of the curve at each of the points where $y = 1$, giving your answers in exact simplified form.",
                 "steps": [
                         "Substitute $y = 1$ into the original equation to find the $x$-coordinates of the points on the curve:\\begin{aligned} 1^4 - 7x(1) + x^3 &= -5 \\cr 1 - 7x + x^3 &= -5 \\cr x^3 - 7x + 6 &= 0 \\end{aligned}",
                         "Factorise the cubic equation by testing small integer factors. Since $x = 1$ gives $1 - 7 + 6 = 0$, $(x - 1)$ is a factor. Dividing the cubic yields:\\begin{aligned} x^3 - 7x + 6 &= 0 \\cr (x - 1)(x - 2)(x + 3) &= 0 \\end{aligned}So the coordinates of the three points on the curve where $y = 1$ are:\\begin{aligned} (1, 1), \\quad (2, 1), \\quad (-3, 1) \\end{aligned}",
-                        "Differentiate the curve's equation implicitly with respect to $x$ using consistent far-left alignment:\\begin{aligned} &4y^3 \\dfrac{\\text{d}y}{\\text{d}x} - 7\\big(y + x\\dfrac{\\text{d}y}{\\text{d}x}\\big) \\cr &\\quad + 3x^2 = 0 \\cr &4y^3 \\dfrac{\\text{d}y}{\\text{d}x} - 7y - 7x\\dfrac{\\text{d}y}{\\text{d}x} \\cr &\\quad + 3x^2 = 0 \\end{aligned}",
+                        "Differentiate the curve's equation implicitly with respect to $x$:\\begin{aligned} &4y^3 \\dfrac{\\text{d}y}{\\text{d}x} - 7\\big(y + x\\dfrac{\\text{d}y}{\\text{d}x}\\big) \\cr &\\quad + 3x^2 = 0 \\cr &4y^3 \\dfrac{\\text{d}y}{\\text{d}x} - 7y - 7x\\dfrac{\\text{d}y}{\\text{d}x} \\cr &\\quad + 3x^2 = 0 \\end{aligned}",
                         "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ as a single fraction:\\begin{aligned} (4y^3 - 7x)\\dfrac{\\text{d}y}{\\text{d}x} &= 7y - 3x^2 \\cr \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7y - 3x^2}{4y^3 - 7x} \\end{aligned}",
                         "Substitute $y = 1$ into the gradient expression to simplify it:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{7 - 3x^2}{4 - 7x} \\end{aligned}",
                         "Evaluate the gradient at each of the three points:<br><br>• At $(1, 1)$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(1)^2}{4 - 7(1)} \\cr &= \\dfrac{4}{-3} \\cr &= -\\dfrac{4}{3} \\end{aligned}• At $(2, 1)$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(2)^2}{4 - 7(2)} \\cr &= \\dfrac{-5}{-10} \\cr &= \\dfrac{1}{2} \\end{aligned}• At $(-3, 1)$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(-3)^2}{4 - 7(-3)} \\cr &= \\dfrac{-20}{25} \\cr &= -\\dfrac{4}{5} \\end{aligned}",
@@ -649,14 +649,15 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
-                        "Differentiation",
+                        "Implicit Differentiation",
                         "Exponential and Logarithmic Functions and Graphs"
+
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>A curve is defined by the implicit equation:\\begin{aligned} y^2 + 2x \\ln y = x^2 \\end{aligned}1. Verify that the point $(1, 1)$ lies on the curve.<br><br>2. By differentiating implicitly, find the exact gradient of the curve at $(1, 1)$.",
                 "steps": [
                         "Verify that $(1, 1)$ lies on the curve by substituting $x = 1$ and $y = 1$ into the implicit equation:\\begin{aligned} 1^2 + 2(1) \\ln(1) &= 1^2 \\cr 1 + 2(0) &= 1 \\cr 1 &= 1 \\end{aligned}Since LHS = RHS, the point $(1, 1)$ lies on the curve.",
-                        "Differentiate the curve's equation implicitly with respect to $x$ using consistent far-left alignment:\\begin{aligned} &2y \\dfrac{\\text{d}y}{\\text{d}x} + 2\\ln y \\cr &\\quad + \\dfrac{2x}{y}\\dfrac{\\text{d}y}{\\text{d}x} = 2x \\end{aligned}",
+                        "Differentiate the curve's equation implicitly with respect to $x$:\\begin{aligned} &2y \\dfrac{\\text{d}y}{\\text{d}x} + 2\\ln y \\cr &\\quad + \\dfrac{2x}{y}\\dfrac{\\text{d}y}{\\text{d}x} = 2x \\end{aligned}",
                         "Group and factorise the terms containing $\\dfrac{\\text{d}y}{\\text{d}x}$:\\begin{aligned} \\big(2y + \\dfrac{2x}{y}\\big)\\dfrac{\\text{d}y}{\\text{d}x} + 2\\ln y &= 2x \\cr \\big(2y + \\dfrac{2x}{y}\\big)\\dfrac{\\text{d}y}{\\text{d}x} &= 2x - 2\\ln y \\end{aligned}",
                         "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ as a single fraction:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2x - 2\\ln y}{2y + \\dfrac{2x}{y}} \\end{aligned}",
                         "Substitute $x = 1$ and $y = 1$ into the gradient expression and simplify to find the exact value:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{2(1) - 2\\ln(1)}{2(1) + \\dfrac{2(1)}{1}} \\cr &= \\dfrac{2 - 0}{2 + 2} \\cr &= \\dfrac{1}{2} \\end{aligned}",
@@ -690,7 +691,8 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
-                        "Trigonometry"
+                        "Implicit Differentiation",
+                        "Trigonometric Functions"
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>A curve is defined by the implicit equation:\\begin{aligned} \\sin(2y) = x - 1 \\end{aligned}At the point $P\\big(1.5, \\dfrac{1}{12}\\pi\\big)$ on the curve:<br><br>1. Show that $P$ lies on the curve.<br><br>2. Find the exact gradient of the curve at $P$.",
@@ -729,8 +731,8 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
-                        "Differentiation",
-                        "Functions and Mappings"
+                        "Implicit Differentiation"
+                        
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>A curve is defined by the implicit equation:\\begin{aligned} x^2 + 2y^2 = 4x \\end{aligned}1. Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $x$ and $y$.<br><br>2. Hence, find the exact coordinates of the stationary points of the curve.",
@@ -770,14 +772,14 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
-                        "Differentiation"
+                        "Implicit Differentiation"
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>A curve is defined by the implicit equation:\\begin{aligned} x^2y^2 - 3x + 2y = 6 \\end{aligned}1. Find the coordinates of the point on the curve where $y = 1$ and $x > 0$.<br><br>2. Find the exact gradient of the curve at this point.",
                 "steps": [
                         "Substitute $y = 1$ into the original curve equation to find the $x$-coordinates:\\begin{aligned} x^2(1)^2 - 3x + 2(1) &= 6 \\cr x^2 - 3x + 2 &= 6 \\cr x^2 - 3x - 4 &= 0 \\end{aligned}",
                         "Factorise the quadratic equation to find the roots:\\begin{aligned} (x - 4)(x + 1) &= 0 \\cr x &= 4 \\cr x &= -1 \\end{aligned}Since the question states $x > 0$, we discard $x = -1$. The coordinates of the point are $(4, 1)$.",
-                        "Differentiate the curve's equation implicitly with respect to $x$ using consistent far-left alignment:\\begin{aligned} &2xy^2 + 2x^2y\\dfrac{\\text{d}y}{\\text{d}x} \\cr &\\quad - 3 + 2\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\end{aligned}",
+                        "Differentiate the curve's equation implicitly with respect to $x$:\\begin{aligned} &2xy^2 + 2x^2y\\dfrac{\\text{d}y}{\\text{d}x} \\cr &\\quad - 3 + 2\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\end{aligned}",
                         "Group and factorise the terms containing $\\dfrac{\\text{d}y}{\\text{d}x}$:\\begin{aligned} (2x^2y + 2)\\dfrac{\\text{d}y}{\\text{d}x} &= 3 - 2xy^2 \\cr \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{3 - 2xy^2}{2x^2y + 2} \\end{aligned}",
                         "Substitute $x = 4$ and $y = 1$ into the gradient expression and simplify to find the exact value:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{3 - 2(4)(1)^2}{2(16)(1) + 2} \\cr &= \\dfrac{3 - 8}{32 + 2} \\cr &= -\\dfrac{5}{34} \\end{aligned}",
                         "Final Answer: \\begin{aligned} (4, 1), \\quad \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{5}{34} \\end{aligned}"
@@ -802,205 +804,205 @@ window.ALEVEL_QUESTIONS = [
                         "content": "When differentiating $x^2 y^2$ implicitly, the product rule yields $2x y^2 + 2x^2 y \\dfrac{\\text{d}y}{\\text{d}x}$. When isolating $\\dfrac{\\text{d}y}{\\text{d}x}$ as a single fraction, ensure you carefully distribute the negative signs during transposition to avoid any fractional sign errors."
                 }
         },
-        {
-                "id": "004271",
-                "board": "OCR MEI",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Integration",
-                "topic": "Integration",
-                "subtopic": [
-                        "Integration"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Find the indefinite integral:<br>$$\\int \\left( 6\\sqrt{x} - \\dfrac{4}{x^3} \\right) \\,\\text{d}x$$",
-                "steps": [
-                        "Convert the surd and the reciprocal fraction into standard index form using $x^{1/2} = \\sqrt{x}$ and $x^{-n} = \\dfrac{1}{x^n}$:<br>\\begin{aligned}6\\sqrt{x} &= 6x^{1/2} \\quad \\text{and} \\quad \\dfrac{4}{x^3} &= 4x^{-3}\\end{aligned}",
-                        "Substitute these index forms into the integral and integrate term-by-term using the power rule $\\int x^n \\,\\text{d}x = \\dfrac{x^{n+1}}{n+1}$:<br>\\begin{aligned} \\int \\left( 6x^{1/2} - 4x^{-3} \\right) \\,\\text{d}x &= 6\\int x^{1/2} \\,\\text{d}x - 4\\int x^{-3} \\,\\text{d}x \\\\\\ &= 6 \\cdot \\left( \\dfrac{2}{3}x^{3/2} \\right) - 4 \\cdot \\left( \\dfrac{x^{-2}}{-2} \\right) + C \\\\\\ &= 4x^{3/2} + 2x^{-2} + C \\end{aligned}<br>where $C$ is the constant of integration.",
-                        "Write the final result with simplified positive exponents if required:<br>$$4x^{3/2} + \\dfrac{2}{x^2} + C$$",
-                "Final Answer: $$4x^{3/2} + \\dfrac{2}{x^2} + C$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$4x^{3/2} - 2x^{-2} + C$$",
-                                "feedback": "Check your sign on the second integrated term. Integrating $-4x^{-3}$ yields $-4 \\cdot \\left( \\dfrac{x^{-2}}{-2} \\right) = +2x^{-2}$, not $-2x^{-2}$. Watch your signs when dividing by negative exponents."
-                        },
-                        {
-                                "ans": "$$9x^{3/2} + 2x^{-2} + C$$",
-                                "feedback": "Check your integration of the first term. Applying the power rule to $6x^{1/2}$ gives $6 \\cdot \\left(\\dfrac{2}{3}x^{3/2}\\right) = 4x^{3/2}$, not $9x^{3/2}$."
-                        },
-                        {
-                                "ans": "$$4x^{3/2} + 2x^{-2}$$",
-                                "feedback": "Your integration is correct, but do not forget to include the arbitrary constant of integration, $+ C$, to complete any indefinite integration problem."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Power Rule with Fractional and Negative Indices",
-                        "content": "When integrating terms like $a\\sqrt{x}$ or $\\dfrac{b}{x^n}$, always rewrite them in standard index form $ax^{1/2}$ and $bx^{-n}$ before integrating. Carefully apply the power rule, adding $1$ to the exponent, and simplify the fractional coefficients early to avoid simple algebraic errors."
-                }
-        },
-        {
-                "id": "004272",
-                "board": "OCR MEI",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Integration",
-                "topic": "Integration",
-                "subtopic": [
-                        "Integration"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Evaluate the definite integral:<br>$$\\int_{1}^{4} \\left( \\dfrac{3}{\\sqrt{x}} + \\dfrac{2}{x^2} \\right) \\,\\text{d}x$$",
-                "steps": [
-                        "Convert the fractional terms into standard index form using $x^{-1/2} = \\dfrac{1}{\\sqrt{x}}$ and $x^{-2} = \\dfrac{1}{x^2}$:<br>\\begin{aligned}\\dfrac{3}{\\sqrt{x}} &= 3x^{-1/2} \\quad \\text{and} \\quad \\dfrac{2}{x^2} &= 2x^{-2}\\end{aligned}",
-                        "Integrate the terms step-by-step using the power rule:<br>\\begin{aligned} \\int_{1}^{4} \\left( 3x^{-1/2} + 2x^{-2} \\right) \\,\\text{d}x &= \\left[ 3 \\cdot \\left( 2x^{1/2} \\right) + 2 \\cdot \\left( \\dfrac{x^{-1}}{-1} \\right) \\right]_{1}^{4} \\\\\\ &= \\left[ 6x^{1/2} - 2x^{-1} \\right]_{1}^{4} \\\\\\ &= \\left[ 6\\sqrt{x} - \\dfrac{2}{x} \\right]_{1}^{4} \\end{aligned}",
-                        "Substitute the upper limit $x = 4$ into the integrated expression:<br>\\begin{aligned}\\text{Upper Limit} &= 6\\sqrt{4} - \\dfrac{2}{4} &= 6(2) - \\dfrac{1}{2} &= 12 - \\dfrac{1}{2} &= \\dfrac{23}{2}\\end{aligned}",
-                        "Substitute the lower limit $x = 1$ into the integrated expression:<br>\\begin{aligned}\\text{Lower Limit} &= 6\\sqrt{1} - \\dfrac{2}{1} &= 6(1) - 2 &= 4\\end{aligned}",
-                        "Subtract the lower limit evaluation from the upper limit evaluation to find the final value:<br>\\begin{aligned}\\text{Value} &= \\dfrac{23}{2} - 4 &= \\dfrac{23}{2} - \\dfrac{8}{2} &= \\dfrac{15}{2}\\end{aligned}",
-                "Final Answer: $$\\dfrac{15}{2}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\dfrac{11}{2}$$",
-                                "feedback": "Check your calculations for the lower limit. Substituting $x = 1$ gives $6\\sqrt{1} - \\dfrac{2}{1} = 6 - 2 = 4$. If you mistakenly calculated it as $6 + 2 = 8$, you would get an incorrect final answer of $\\dfrac{11}{2}$."
-                        },
-                        {
-                                "ans": "$$\\dfrac{19}{2}$$",
-                                "feedback": "Check your evaluation of the upper limit at $x = 4$. $6\\sqrt{4} - \\dfrac{2}{4}$ is $12 - 0.5 = 11.5$, not $6(2) + 0.5 = 12.5$. Watch your negative signs inside the brackets."
-                        },
-                        {
-                                "ans": "$$\\dfrac{15}{2} + C$$",
-                                "feedback": "A definite integral has defined numerical boundaries, so it evaluates to a single real number. Do not include the constant of integration $+ C$ in definite integration answers."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Definite Limits with Fractional Powers",
-                        "content": "When evaluating definite limits involving fractional powers, such as $x^{1/2}$ at $x = 4$, simplify the square root first. For example, $6(4)^{1/2} = 6(2) = 12$. Always subtract the entire evaluated lower limit from the upper limit, taking care with subtraction signs when dealing with negative fractions."
-                }
-        },
-        {
-                "id": "004273",
-                "board": "OCR MEI",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Integration",
-                "topic": "Integration",
-                "subtopic": [
-                        "Curved Graphs",
-                        "Linear Equations",
-                        "Tangents and Normals"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>A curve has a gradient function given by:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = 2\\sqrt{x} + \\dfrac{3}{x^2}$$<br>Given that the curve passes through the point $(1, 5)$, find the equation of the curve.",
-                "steps": [
-                        "Express the gradient function in standard index form to prepare for integration:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = 2x^{1/2} + 3x^{-2}$$",
-                        "Integrate the gradient function with respect to $x$ to find the general equation of the curve, adding the constant of integration $C$:<br>\\begin{aligned} y &= \\int \\left( 2x^{1/2} + 3x^{-2} \\right) \\,\\text{d}x \\\\\\ &= 2 \\cdot \\left( \\dfrac{2}{3}x^{3/2} \\right) + 3 \\cdot \\left( \\dfrac{x^{-1}}{-1} \\right) + C \\\\\\ &= \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + C \\end{aligned}",
-                        "Substitute the coordinates of the point $(1, 5)$ into the general equation to solve for the constant $C$:<br>\\begin{aligned} 5 &= \\dfrac{4}{3}(1)^{3/2} - \\dfrac{3}{1} + C \\\\\\ 5 &= \\dfrac{4}{3} - 3 + C \\\\\\ 5 &= -\\dfrac{5}{3} + C \\\\ C &= 5 + \\dfrac{5}{3} = \\dfrac{20}{3} \\end{aligned}",
-                        "Substitute $C = \\dfrac{20}{3}$ back into the equation to obtain the final equation of the curve:<br>$$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + \\dfrac{20}{3}$$",
-                "Final Answer: $$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + \\dfrac{20}{3}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + \\dfrac{10}{3}$",
-                                "feedback": "Check your arithmetic when calculating $C$. From $5 = \\dfrac{4}{3} - 3 + C$, we have $5 = -\\dfrac{5}{3} + C \\implies C = 5 + \\dfrac{5}{3} = \\dfrac{20}{3}$, not $\\dfrac{10}{3}$."
-                        },
-                        {
-                                "ans": "$y = \\dfrac{4}{3}x^{3/2} + \\dfrac{3}{x} + \\dfrac{20}{3}$",
-                                "feedback": "Check your signs during integration. Integrating $3x^{-2}$ yields $3 \\cdot \\left(\\dfrac{x^{-1}}{-1}\\right) = -\\dfrac{3}{x}$. The sign of this term must be negative, not positive."
-                        },
-                        {
-                                "ans": "$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x}$",
-                                "feedback": "You forgot to calculate and include the constant of integration, $C$. You must use the given point $(1, 5)$ to find the exact boundary value of $C$ to complete the curve equation."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Finding Integration Constants",
-                        "content": "To find the equation of a curve from its gradient function, integrate the derivative to obtain $y = f(x) + C$. Substitute the coordinates of the given point $(x_1, y_1)$ immediately to solve for the arbitrary constant of integration $C$, and write your final equation with fully simplified coefficients."
-                }
-        },
-        {
-                "id": "004274",
-                "board": "OCR MEI",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Integration",
-                "topic": "Integration",
-                "subtopic": [
-                        "Integration"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Find the indefinite integral:<br>$$\\int \\dfrac{3x^3 - 2\\sqrt{x}}{x} \\,\\text{d}x$$",
-                "steps": [
-                        "Simplify the integrand first by dividing each term in the numerator by the denominator $x$ independently:<br>\\begin{aligned} \\dfrac{3x^3 - 2\\sqrt{x}}{x} &= \\dfrac{3x^3}{x} - \\dfrac{2x^{1/2}}{x} \\\\\\ &= 3x^2 - 2x^{-1/2} \\end{aligned}",
-                        "Substitute this simplified expression into the integral:<br>$$\\int \\dfrac{3x^3 - 2\\sqrt{x}}{x} \\,\\text{d}x = \\int \\left( 3x^2 - 2x^{-1/2} \\right) \\,\\text{d}x$$",
-                        "Integrate term-by-term using the standard power rule, adding the constant of integration $C$ at the end:<br>\\begin{aligned} \\int \\left( 3x^2 - 2x^{-1/2} \\right) \\,\\text{d}x &= 3\\int x^2 \\,\\text{d}x - 2\\int x^{-1/2} \\,\\text{d}x \\\\\\ &= 3 \\cdot \\left( \\dfrac{x^3}{3} \\right) - 2 \\cdot \\left( 2x^{1/2} \\right) + C \\\\\\ &= x^3 - 4x^{1/2} + C \\end{aligned}",
-                        "Write the final expression using standard surd form if required:<br>$$x^3 - 4\\sqrt{x} + C$$",
-                "Final Answer: $$x^3 - 4\\sqrt{x} + C$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$x^3 - 2\\sqrt{x} + C$$",
-                                "feedback": "Check your power rule on the second term. Integrating $-2x^{-1/2}$ yields $-2 \\cdot \\left( 2x^{1/2} \\right) = -4x^{1/2}$, not $-2x^{1/2}$."
-                        },
-                        {
-                                "ans": "$$x^3 - 4\\sqrt{x}$$",
-                                "feedback": "While your integration is correct, always remember to add the arbitrary constant of integration, $+ C$, to complete any indefinite integral."
-                        },
-                        {
-                                "ans": "$$3x^3 - 4\\sqrt{x} + C$$",
-                                "feedback": "Check the integration of the first term. Integrating $3x^2$ yields $3 \\cdot \\left(\\dfrac{x^3}{3}\\right) = x^3$, not $3x^3$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Simplifying Rational Integrands First",
-                        "content": "Do not attempt to integrate quotients like $\\dfrac{P(x)}{Q(x)}$ directly unless they fit standard logarithmic forms. If the denominator is a single term like $x$, divide each term in the numerator by the denominator individually to express the integrand as a sum of simple, standard index terms before integrating."
-                }
-        },
-        {
-                "id": "004275",
-                "board": "OCR MEI",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Integration",
-                "topic": "Integration",
-                "subtopic": [
-                        "Curved Graphs",
-                        "Integration"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = 3\\sqrt{x} - x$.<br><br>1. Find the coordinates of the points where the curve intersects the $x$-axis.<br>2. Find the exact area of the finite region bounded by the curve and the $x$-axis.",
-                "steps": [
-                        "To find the $x$-intercepts, set $y = 0$ and factorise the equation:<br>\\begin{aligned} 3x^{1/2} - x &= 0 \\\\ x^{1/2}\\left(3 - x^{1/2}\\right) &= 0 \\end{aligned}<br>This yields two possible solutions:<br>\\begin{aligned}x^{1/2} &= 0 x &= 0 \\quad \\text{and} \\quad 3 - x^{1/2} = 0 x^{1/2} &= 3 x &= 9\\end{aligned}<br>So, the two $x$-intercept points are $(0, 0)$ and $(9, 0)$.",
-                        "Set up the definite integral for the area under the curve between these two boundaries:<br>$$A = \\int_{0}^{9} \\left( 3x^{1/2} - x \\right) \\,\\text{d}x$$",
-                        "Integrate the expression using the power rule:<br>\\begin{aligned} A &= \\left[ 3 \\cdot \\left( \\dfrac{2}{3}x^{3/2} \\right) - \\dfrac{x^2}{2} \\right]_{0}^{9} \\\\\\ &= \\left[ 2x^{3/2} - \\dfrac{1}{2}x^2 \\right]_{0}^{9} \\end{aligned}",
-                        "Substitute the upper limit $x = 9$ into the integrated expression:<br>\\begin{aligned}\\text{Upper Limit} &= 2(9)^{3/2} - \\dfrac{9^2}{2} &= 2(27) - \\dfrac{81}{2} &= 54 - \\dfrac{81}{2} &= \\dfrac{108}{2} - \\dfrac{81}{2} &= \\dfrac{27}{2}\\end{aligned}",
-                        "Substitute the lower limit $x = 0$ into the integrated expression:<br>\\begin{aligned}\\text{Lower Limit} &= 2(0)^{3/2} - \\dfrac{0^2}{2} &= 0\\end{aligned}<br>Subtracting the lower limit from the upper limit gives the exact area of the region:<br>\\begin{aligned}A &= \\dfrac{27}{2} - 0 &= \\dfrac{27}{2}\\end{aligned}",
-                "Final Answer: $$(0,0), \\quad (9,0), \\quad \\text{Area} = \\dfrac{27}{2}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$(0,0), \\quad (9,0), \\quad \\text{Area} = \\dfrac{81}{2}$$",
-                                "feedback": "Check your calculation of the upper limit term $2(9)^{3/2}$. Since $9^{3/2} = 27$, this term evaluates to $2(27) = 54$. It seems you may have mistakenly evaluated it as $9^2 = 81$."
-                        },
-                        {
-                                "ans": "$$(0,0), \\quad (3,0), \\quad \\text{Area} = \\dfrac{27}{2}$$",
-                                "feedback": "Check your factorisation for the $x$-intercepts. The equation $3 - x^{1/2} = 0$ yields $x^{1/2} = 3 \\implies x = 3^2 = 9$. The intercept is at $x = 9$, not $x = 3$."
-                        },
-                        {
-                                "ans": "$$(0,0), \\quad (9,0), \\quad \\text{Area} = 27$$",
-                                "feedback": "Check your fraction subtraction. $\\dfrac{108}{2} - \\dfrac{81}{2} = \\dfrac{27}{2}$. Make sure to divide by the common denominator $2$ instead of leaving the constant as a whole integer."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Bounded Area Integration Limits",
-                        "content": "To find the area of a region bounded by a curve and the $x$-axis, first locate the boundaries of integration by setting $y = 0$ to find the $x$-intercepts. Integrating the function over these bounds, taking care when calculating fractional powers like $9^{3/2} = 27$, yields the exact geometric area."
-                }
-        },
+  {
+    "id": "004271",
+    "board": "OCR MEI",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Integration",
+    "topic": "Integration",
+    "subtopic": [
+      "Integration"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Find the indefinite integral:$$\\int \\left( 6\\sqrt{x} - \\dfrac{4}{x^3} \\right) \\text{d}x$$",
+    "steps": [
+      "Convert the surd and the reciprocal fraction into standard index form using $x^{1/2} = \\sqrt{x}$ and $x^{-n} = \\dfrac{1}{x^n}$:\\begin{aligned} 6\\sqrt{x} &= 6x^{1/2} \\cr \\dfrac{4}{x^3} &= 4x^{-3} \\end{aligned}",
+      "Substitute these index forms into the integral and integrate term-by-term using the power rule $\\int x^n \\text{d}x = \\dfrac{x^{n+1}}{n+1}$:\\begin{aligned} &\\int \\left( 6x^{1/2} - 4x^{-3} \\right) \\text{d}x \\cr &\\quad = 6\\int x^{1/2} \\text{d}x - 4\\int x^{-3} \\text{d}x \\cr &\\quad = 6 \\left( \\dfrac{2}{3}x^{3/2} \\right) - 4 \\left( \\dfrac{x^{-2}}{-2} \\right) + C \\cr &\\quad = 4x^{3/2} + 2x^{-2} + C \\end{aligned}where $C$ is the constant of integration.",
+      "Write the final result with simplified positive exponents if required:$$4x^{3/2} + \\dfrac{2}{x^2} + C$$",
+      "Final Answer: $$4x^{3/2} + \\dfrac{2}{x^2} + C$$"
+    ],
+    "pi_options": [
+      {
+        "ans": "$$4x^{3/2} - 2x^{-2} + C$$",
+        "feedback": "Check your sign on the second integrated term. Integrating $-4x^{-3}$ yields $-4 \\left( \\dfrac{x^{-2}}{-2} \\right) = +2x^{-2}$, not $-2x^{-2}$. Watch your signs when dividing by negative exponents."
+      },
+      {
+        "ans": "$$9x^{3/2} + 2x^{-2} + C$$",
+        "feedback": "Check your integration of the first term. Applying the power rule to $6x^{1/2}$ gives $6 \\left(\\dfrac{2}{3}x^{3/2}\\right) = 4x^{3/2}$, not $9x^{3/2}$."
+      },
+      {
+        "ans": "$$4x^{3/2} + 2x^{-2}$$",
+        "feedback": "Your integration is correct, but do not forget to include the arbitrary constant of integration, $+ C$, to complete any indefinite integration problem."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Power Rule with Fractional and Negative Indices",
+      "content": "When integrating terms like $a\\sqrt{x}$ or $\\dfrac{b}{x^n}$, always rewrite them in standard index form $ax^{1/2}$ and $bx^{-n}$ before integrating. Carefully apply the power rule, adding $1$ to the exponent, and simplify the fractional coefficients early to avoid simple algebraic errors."
+    }
+  },
+  {
+    "id": "004272",
+    "board": "OCR MEI",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Integration",
+    "topic": "Integration",
+    "subtopic": [
+      "Integration"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Evaluate the definite integral:$$\\int_{1}^{4} \\left( \\dfrac{3}{\\sqrt{x}} + \\dfrac{2}{x^2} \\right) \\text{d}x$$",
+    "steps": [
+      "Convert the fractional terms into standard index form using $x^{-1/2} = \\dfrac{1}{\\sqrt{x}}$ and $x^{-2} = \\dfrac{1}{x^2}$:\\begin{aligned} \\dfrac{3}{\\sqrt{x}} &= 3x^{-1/2} \\cr \\dfrac{2}{x^2} &= 2x^{-2} \\end{aligned}",
+      "Integrate the terms step-by-step using the power rule:\\begin{aligned} &\\int_{1}^{4} \\left( 3x^{-1/2} + 2x^{-2} \\right) \\text{d}x \\cr &\\quad = \\left[ 3(2x^{1/2}) + 2\\left( -x^{-1} \\right) \\right]_{1}^{4} \\cr &\\quad = \\left[ 6x^{1/2} - 2x^{-1} \\right]_{1}^{4} \\cr &\\quad = \\left[ 6\\sqrt{x} - \\dfrac{2}{x} \\right]_{1}^{4} \\end{aligned}",
+      "Substitute the upper limit $x = 4$ into the integrated expression:\\begin{aligned} \\text{Upper Limit} &= 6\\sqrt{4} - \\dfrac{2}{4} \\cr &= 6(2) - \\dfrac{1}{2} \\cr &= 12 - \\dfrac{1}{2} \\cr &= \\dfrac{23}{2} \\end{aligned}",
+      "Substitute the lower limit $x = 1$ into the integrated expression:\\begin{aligned} \\text{Lower Limit} &= 6\\sqrt{1} - \\dfrac{2}{1} \\cr &= 6(1) - 2 \\cr &= 4 \\end{aligned}",
+      "Subtract the lower limit evaluation from the upper limit evaluation to find the final value:\\begin{aligned} \\text{Value} &= \\dfrac{23}{2} - 4 \\cr &= \\dfrac{23}{2} - \\dfrac{8}{2} \\cr &= \\dfrac{15}{2} \\end{aligned}",
+      "Final Answer: $$\\dfrac{15}{2}$$"
+    ],
+    "pi_options": [
+      {
+        "ans": "$$\\dfrac{11}{2}$$",
+        "feedback": "Check your calculations for the lower limit. Substituting $x = 1$ gives $6(1) - 2 = 4$. If you mistakenly calculated it as $6 + 2 = 8$, you would get an incorrect final answer of $\\dfrac{11}{2}$."
+      },
+      {
+        "ans": "$$\\dfrac{19}{2}$$",
+        "feedback": "Check your evaluation of the upper limit at $x = 4$. $6\\sqrt{4} - \\dfrac{2}{4}$ is $12 - 0.5 = 11.5$, not $6(2) + 0.5 = 12.5$. Watch your negative signs inside the brackets."
+      },
+      {
+        "ans": "$$\\dfrac{15}{2} + C$$",
+        "feedback": "A definite integral has defined numerical boundaries, so it evaluates to a single real number. Do not include the constant of integration $+ C$ in definite integration answers."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Definite Limits with Fractional Powers",
+      "content": "When evaluating definite limits involving fractional powers, such as $x^{1/2}$ at $x = 4$, simplify the square root first. For example, $6(4)^{1/2} = 6(2) = 12$. Always subtract the entire evaluated lower limit from the upper limit, taking care with subtraction signs when dealing with negative fractions."
+    }
+  },
+  {
+    "id": "004273",
+    "board": "OCR MEI",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Integration",
+    "topic": "Integration",
+    "subtopic": [
+      "Curved Graphs",
+      "Linear Equations",
+      "Tangents and Normals"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>A curve has a gradient function given by:$$\\dfrac{\\text{d}y}{\\text{d}x} = 2\\sqrt{x} + \\dfrac{3}{x^2}$$Given that the curve passes through the point $(1, 5)$, find the equation of the curve.",
+    "steps": [
+      "Express the gradient function in standard index form to prepare for integration:$$\\dfrac{\\text{d}y}{\\text{d}x} = 2x^{1/2} + 3x^{-2}$$",
+      "Integrate the gradient function with respect to $x$ to find the general equation of the curve, adding the constant of integration $C$:\\begin{aligned} y &= \\int \\left( 2x^{1/2} + 3x^{-2} \\right) \\text{d}x \\cr &= 2 \\left( \\dfrac{2}{3}x^{3/2} \\right) - 3x^{-1} + C \\cr &= \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + C \\end{aligned}",
+      "Substitute the coordinates of the point $(1, 5)$ into the general equation to solve for the constant $C$:\\begin{aligned} 5 &= \\dfrac{4}{3}(1)^{3/2} - \\dfrac{3}{1} + C \\cr 5 &= \\dfrac{4}{3} - 3 + C \\cr 5 &= -\\dfrac{5}{3} + C \\cr C &= 5 + \\dfrac{5}{3} \\cr C &= \\dfrac{20}{3} \\end{aligned}",
+      "Substitute $C = \\dfrac{20}{3}$ back into the equation to obtain the final equation of the curve:$$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + \\dfrac{20}{3}$$",
+      "Final Answer: $$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + \\dfrac{20}{3}$$"
+    ],
+    "pi_options": [
+      {
+        "ans": "$$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x} + \\dfrac{10}{3}$$",
+        "feedback": "Check your arithmetic when calculating $C$. From $5 = -\\dfrac{5}{3} + C$, we find $C = 5 + \\dfrac{5}{3}$, which gives $C = \\dfrac{20}{3}$, not $\\dfrac{10}{3}$."
+      },
+      {
+        "ans": "$$y = \\dfrac{4}{3}x^{3/2} + \\dfrac{3}{x} + \\dfrac{20}{3}$$",
+        "feedback": "Check your signs during integration. Integrating $3x^{-2}$ yields $3 \\left(\\dfrac{x^{-1}}{-1}\\right) = -\\dfrac{3}{x}$. The sign of this term must be negative, not positive."
+      },
+      {
+        "ans": "$$y = \\dfrac{4}{3}x^{3/2} - \\dfrac{3}{x}$$",
+        "feedback": "You forgot to calculate and include the constant of integration, $C$. You must use the given point $(1, 5)$ to find the exact boundary value of $C$ to complete the curve equation."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Finding Integration Constants",
+      "content": "To find the equation of a curve from its gradient function, integrate the derivative to obtain $y = f(x) + C$. Substitute the coordinates of the given point $(x_1, y_1)$ immediately to solve for the arbitrary constant of integration $C$, and write your final equation with fully simplified coefficients."
+    }
+  },
+  {
+    "id": "004274",
+    "board": "OCR MEI",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Integration",
+    "topic": "Integration",
+    "subtopic": [
+      "Integration"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Find the indefinite integral:$$\\int \\dfrac{3x^3 - 2\\sqrt{x}}{x} \\text{d}x$$",
+    "steps": [
+      "Simplify the integrand first by dividing each term in the numerator by the denominator $x$ independently:\\begin{aligned} &\\dfrac{3x^3 - 2\\sqrt{x}}{x} \\cr &\\quad = \\dfrac{3x^3}{x} - \\dfrac{2x^{1/2}}{x} \\cr &\\quad = 3x^2 - 2x^{-1/2} \\end{aligned}",
+      "Substitute this simplified expression into the integral:\\begin{aligned} &\\int \\dfrac{3x^3 - 2\\sqrt{x}}{x} \\text{d}x \\cr &\\quad = \\int \\left( 3x^2 - 2x^{-1/2} \\right) \\text{d}x \\end{aligned}",
+      "Integrate term-by-term using the standard power rule, adding the constant of integration $C$ at the end:\\begin{aligned} &\\int \\left( 3x^2 - 2x^{-1/2} \\right) \\text{d}x \\cr &\\quad = 3\\int x^2 \\text{d}x - 2\\int x^{-1/2} \\text{d}x \\cr &\\quad = 3\\left( \\dfrac{x^3}{3} \\right) - 2(2x^{1/2}) + C \\cr &\\quad = x^3 - 4x^{1/2} + C \\end{aligned}",
+      "Write the final expression using standard surd form if required:$$x^3 - 4\\sqrt{x} + C$$",
+      "Final Answer: $$x^3 - 4\\sqrt{x} + C$$"
+    ],
+    "pi_options": [
+      {
+        "ans": "$$x^3 - 2\\sqrt{x} + C$$",
+        "feedback": "Check your power rule on the second term. Integrating $-2x^{-1/2}$ yields $-2(2x^{1/2}) = -4x^{1/2}$, not $-2x^{1/2}$."
+      },
+      {
+        "ans": "$$x^3 - 4\\sqrt{x}$$",
+        "feedback": "While your integration is correct, always remember to add the arbitrary constant of integration, $+ C$, to complete any indefinite integral."
+      },
+      {
+        "ans": "$$3x^3 - 4\\sqrt{x} + C$$",
+        "feedback": "Check the integration of the first term. Integrating $3x^2$ yields $3\\left(\\dfrac{x^3}{3}\\right) = x^3$, not $3x^3$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Simplifying Rational Integrands First",
+      "content": "Do not attempt to integrate quotients like $\\dfrac{P(x)}{Q(x)}$ directly unless they fit standard logarithmic forms. If the denominator is a single term like $x$, divide each term in the numerator by the denominator individually to express the integrand as a sum of simple, standard index terms before integrating."
+    }
+  },
+  {
+    "id": "004275",
+    "board": "OCR MEI",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Integration",
+    "topic": "Integration",
+    "subtopic": [
+      "Curved Graphs",
+      "Integration"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = 3\\sqrt{x} - x$.<br><br>1. Find the coordinates of the points where the curve intersects the $x$-axis.<br><br>2. Find the exact area of the finite region bounded by the curve and the $x$-axis.",
+    "steps": [
+      "To find the $x$-intercepts, set $y = 0$ and factorise the equation:\\begin{aligned} 3x^{1/2} - x &= 0 \\cr x^{1/2}\\left(3 - x^{1/2}\\right) &= 0 \\end{aligned}This yields two possible solutions:\\begin{aligned} x^{1/2} = 0 &\\implies x = 0 \\cr 3 - x^{1/2} = 0 &\\implies x = 9 \\end{aligned}So, the two $x$-intercept points are $(0, 0)$ and $(9, 0)$.",
+      "Set up the definite integral for the area under the curve between these two boundaries:$$A = \\int_{0}^{9} \\left( 3x^{1/2} - x \\right) \\text{d}x$$",
+      "Integrate the expression using the power rule:\\begin{aligned} &A = \\left[ 3\\left( \\dfrac{2}{3}x^{3/2} \\right) - \\dfrac{x^2}{2} \\right]_{0}^{9} \\cr &\\quad = \\left[ 2x^{3/2} - \\dfrac{1}{2}x^2 \\right]_{0}^{9} \\end{aligned}",
+      "Substitute the upper limit $x = 9$ into the integrated expression:\\begin{aligned} \\text{Upper Limit} &= 2(9)^{3/2} - \\dfrac{9^2}{2} \\cr &= 2(27) - \\dfrac{81}{2} \\cr &= 54 - \\dfrac{81}{2} \\cr &= \\dfrac{108}{2} - \\dfrac{81}{2} \\cr &= \\dfrac{27}{2} \\end{aligned}",
+      "Substitute the lower limit $x = 0$ into the integrated expression:\\begin{aligned} \\text{Lower Limit} &= 2(0)^{3/2} - \\dfrac{0^2}{2} \\cr &= 0 \\end{aligned}Subtracting the lower limit from the upper limit gives the exact area of the region:\\begin{aligned} A &= \\dfrac{27}{2} - 0 \\cr &= \\dfrac{27}{2} \\end{aligned}",
+      "Final Answer: \\begin{aligned} &(0, 0), \\; (9, 0) \\cr &\\text{Area} = \\dfrac{27}{2} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &(0, 0), \\; (9, 0) \\cr &\\text{Area} = \\dfrac{81}{2} \\end{aligned}",
+        "feedback": "Check your calculation of the upper limit term $2(9)^{3/2}$. Since $9^{3/2} = 27$, this term evaluates to $2(27) = 54$. It seems you may have mistakenly evaluated it as $9^2 = 81$."
+      },
+      {
+        "ans": "\\begin{aligned} &(0, 0), \\; (3, 0) \\cr &\\text{Area} = \\dfrac{27}{2} \\end{aligned}",
+        "feedback": "Check your factorisation for the $x$-intercepts. The equation $3 - x^{1/2} = 0$ yields $x^{1/2} = 3 \\implies x = 9$. The intercept is at $x = 9$, not $x = 3$."
+      },
+      {
+        "ans": "\\begin{aligned} &(0, 0), \\; (9, 0) \\cr &\\text{Area} = 27 \\end{aligned}",
+        "feedback": "Check your fraction subtraction. $\\dfrac{108}{2} - \\dfrac{81}{2} = \\dfrac{27}{2}$. Make sure to divide by the common denominator $2$ instead of leaving the constant as a whole integer."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Bounded Area Integration Limits",
+      "content": "To find the area of a region bounded by a curve and the $x$-axis, first locate the boundaries of integration by setting $y = 0$ to find the $x$-intercepts. Integrating the function over these bounds, taking care when calculating fractional powers like $9^{3/2} = 27$, yields the exact geometric area."
+    }
+  },
         {
                 "id": "004276",
                 "board": "OCR MEI",
