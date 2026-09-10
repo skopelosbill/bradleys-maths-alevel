@@ -212,7 +212,7 @@ window.ALEVEL_QUESTIONS = [
                 "question": "In this question you must show detailed reasoning.<br><br>1. (a) Sketch the graph of $y = 5^x$.<br>&nbsp;&nbsp;&nbsp;&nbsp;(b) Give the coordinates of any intercepts with the coordinate axes.<br>2. The curve $y = f(x)$ is the reflection of the curve $y = 5^x$ in the line $y = x$. Find an expression for $f(x)$.",
                 "steps": [
                         "Sketch the exponential growth curve $y = 5^x$, noting that it rises rapidly in the first quadrant and approaches the negative $x$-axis as a horizontal asymptote. The reflection of this curve in the diagonal line $y = x$ represents the logarithmic inverse function $y = f(x)$:<br><br><img src='images/Pure_SVGs/004256_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-                        "Determine the intercepts of the curve $y = 5^x$ with both coordinate axes:<br>• For the $y$-intercept, substitute $x = 0$ into the equation:<br>\\begin{aligned}\ny &= 5^0 = 1 \\cr\n(0, 1)\n\\end{aligned}<br>• For the $x$-intercept, solve $5^x = 0$. Since $5^x > 0$ for all real $x$, there is no real solution. Thus, the curve does not intersect the $x$-axis.",
+                        "Determine the intercepts of the curve $y = 5^x$ with both coordinate axes:<br>• For the $y$-intercept, substitute $x = 0$ into the equation:<br>\\begin{aligned}y &= 5^0 = 1 (0, 1)\\end{aligned}<br>• For the $x$-intercept, solve $5^x = 0$. Since $5^x > 0$ for all real $x$, there is no real solution. Thus, the curve does not intersect the $x$-axis.",
                         "Reflecting a function in the line $y = x$ swaps the roles of $x$ and $y$, which is equivalent to finding its inverse function. Swapping $x$ and $y$ and rearranging to isolate $y$ gives:<br>\\begin{aligned} x &= 5^y \\\\ y &= \\log_5 x \\end{aligned}<br>So, the equation of the reflected curve is $f(x) = \\log_5 x$.",
                 "Final Answer: $$(0,1), \\quad f(x) = \\log_5 x$$"
                 ],
@@ -252,8 +252,8 @@ window.ALEVEL_QUESTIONS = [
                 "question": "In this question you must show detailed reasoning.<br><br>A curve has the equation:<br>$$y = 2^x - 4$$<br>1. Sketch the graph of $y = 2^x - 4$.<br>2. State the coordinates of any intercepts with the coordinate axes, and write down the equation of its horizontal asymptote.",
                 "steps": [
                         "Sketch the exponential growth curve $y = 2^x - 4$. This is a vertical translation of $y = 2^x$ shifted downwards by $4$ units:<br><br><img src='images/Pure_SVGs/004257_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-                        "Find the $y$-intercept of the curve by substituting $x = 0$:<br>\\begin{aligned}\ny &= 2^0 - 4 = 1 - 4 = -3 \\cr\n(0, -3)\n\\end{aligned}<br>Find the $x$-intercept of the curve by setting $y = 0$ and solving for $x$:<br>$$\\begin{aligned} 2^x - 4 &= 0 \\\\\\ 2^x &= 4 \\\\\\ 2^x &= 2^2 \\implies x = 2 \\end{aligned}$$<br>This gives the $x$-intercept coordinates of $(2, 0)$.",
-                        "Determine the horizontal asymptote of the translated exponential curve. As $x \\to -\\infty$, the exponential term $2^x \\to 0$, which means:<br>\\begin{aligned}\ny \\to 0 - 4 \\cr\ny &= -4\n\\end{aligned}<br>Therefore, the horizontal asymptote is the line $y = -4$.",
+                        "Find the $y$-intercept of the curve by substituting $x = 0$:<br>\\begin{aligned}y &= 2^0 - 4 = 1 - 4 = -3 (0, -3)\\end{aligned}<br>Find the $x$-intercept of the curve by setting $y = 0$ and solving for $x$:<br>$$\\begin{aligned} 2^x - 4 &= 0 \\\\\\ 2^x &= 4 \\\\\\ 2^x &= 2^2 \\implies x = 2 \\end{aligned}$$<br>This gives the $x$-intercept coordinates of $(2, 0)$.",
+                        "Determine the horizontal asymptote of the translated exponential curve. As $x \\to -\\infty$, the exponential term $2^x \\to 0$, which means:<br>\\begin{aligned}y \\to 0 - 4 y &= -4\\end{aligned}<br>Therefore, the horizontal asymptote is the line $y = -4$.",
                 "Final Answer: $$(0,-3), \\quad (2,0), \\quad y = -4$$"
                 ],
                 "pi_options": [
@@ -292,8 +292,8 @@ window.ALEVEL_QUESTIONS = [
                 "question": "In this question you must show detailed reasoning.<br><br>A curve has the equation:<br>$$y = \\ln(x + 3), \\quad \\text{for } x > -3$$<br>1. Sketch the graph of $y = \\ln(x + 3)$.<br>2. Give the exact coordinates of any intercepts with the coordinate axes, and write down the equation of its vertical asymptote.",
                 "steps": [
                         "Sketch the logarithmic growth curve $y = \\ln(x + 3)$. This is a horizontal translation of $y = \\ln x$ shifted to the left by $3$ units:<br><br><img src='images/Pure_SVGs/004258_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-                        "Find the $y$-intercept of the curve by substituting $x = 0$:<br>\\begin{aligned}\ny &= \\ln(0 + 3) = \\ln 3 \\cr\n(0, \\ln 3)\n\\end{aligned}<br>Find the $x$-intercept of the curve by setting $y = 0$ and solving for $x$:<br>$$\\begin{aligned} \\ln(x + 3) &= 0 \\\\ x + 3 &= e^{0} \\\\ x + 3 &= 1 \\implies x = -2 \\end{aligned}$$<br>This gives the exact $x$-intercept coordinates of $(-2, 0)$.",
-                        "Determine the vertical asymptote of the translated logarithmic curve. The argument of the logarithm must be strictly positive, meaning $x + 3 > 0$. The vertical asymptote occurs exactly at the boundary where the argument is zero:<br>\\begin{aligned}\nx + 3 &= 0 \\cr\nx &= -3\n\\end{aligned}<br>Therefore, the vertical asymptote is the line $x = -3$.",
+                        "Find the $y$-intercept of the curve by substituting $x = 0$:<br>\\begin{aligned}y &= \\ln(0 + 3) = \\ln 3 (0, \\ln 3)\\end{aligned}<br>Find the $x$-intercept of the curve by setting $y = 0$ and solving for $x$:<br>$$\\begin{aligned} \\ln(x + 3) &= 0 \\\\ x + 3 &= e^{0} \\\\ x + 3 &= 1 \\implies x = -2 \\end{aligned}$$<br>This gives the exact $x$-intercept coordinates of $(-2, 0)$.",
+                        "Determine the vertical asymptote of the translated logarithmic curve. The argument of the logarithm must be strictly positive, meaning $x + 3 > 0$. The vertical asymptote occurs exactly at the boundary where the argument is zero:<br>\\begin{aligned}x + 3 &= 0 x &= -3\\end{aligned}<br>Therefore, the vertical asymptote is the line $x = -3$.",
                 "Final Answer: $$(0,\\ln 3), \\quad (-2,0), \\quad x = -3$$"
                 ],
                 "pi_options": [
@@ -332,7 +332,7 @@ window.ALEVEL_QUESTIONS = [
                 "question": "In this question you must show detailed reasoning.<br><br>1. (a) Sketch the graph of $y = \\ln x$ for $x > 0$.<br>&nbsp;&nbsp;&nbsp;&nbsp;(b) Give the coordinates of any intercepts with the coordinate axes.<br>2. The curve $y = g(x)$ is the reflection of the curve $y = \\ln x$ in the $x$-axis. Find an expression for $g(x)$.",
                 "steps": [
                         "Sketch the standard logarithmic curve $y = \\ln x$. Its reflection in the $x$-axis is represented by the curve $y = g(x)$:<br><br><img src='images/Pure_SVGs/004259_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-                        "Determine the intercepts of the curve $y = \\ln x$ with both coordinate axes:<br>• For the $y$-intercept, we test $x = 0$. Since the domain is strictly $x > 0$, the function is undefined at $x = 0$. Thus, there is no $y$-intercept.<br>• For the $x$-intercept, set $y = 0$ and solve for $x$:<br>\\begin{aligned}\n\\ln x &= 0 \\cr\nx &= e^{0} = 1 \\cr\n(1, 0)\n\\end{aligned}<br>So, the curve has a single intercept at $(1, 0)$.",
+                        "Determine the intercepts of the curve $y = \\ln x$ with both coordinate axes:<br>• For the $y$-intercept, we test $x = 0$. Since the domain is strictly $x > 0$, the function is undefined at $x = 0$. Thus, there is no $y$-intercept.<br>• For the $x$-intercept, set $y = 0$ and solve for $x$:<br>\\begin{aligned}\\ln x &= 0 x &= e^{0} = 1 (1, 0)\\end{aligned}<br>So, the curve has a single intercept at $(1, 0)$.",
                         "Reflecting a function in the $x$-axis negates all of its $y$-values ($y \\mapsto -y$). Applying this to $y = \\ln x$ gives:<br>\\begin{aligned} -y &= \\ln x \\\\ y &= -\\ln x \\end{aligned}<br>Therefore, the expression for the reflected curve is $g(x) = -\\ln x$.",
                 "Final Answer: $$(1,0), \\quad g(x) = -\\ln x$$"
                 ],
@@ -372,8 +372,8 @@ window.ALEVEL_QUESTIONS = [
                 "question": "In this question you must show detailed reasoning.<br><br>The curve $C$ has equation:<br>$$y = 2 - e^{-x}$$<br>1. Sketch the graph of the curve $C$.<br>2. Write down the coordinates of any intercepts with the axes, and find the equation of the horizontal asymptote to the curve.",
                 "steps": [
                         "Sketch the exponential decay and translation curve $y = 2 - e^{-x}$. The negative exponent $-x$ represents decay, and the negative sign in front of the exponential term reflects the graph vertically:<br><br><img src='images/Pure_SVGs/004260_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-                        "Find the $y$-intercept of the curve by substituting $x = 0$:<br>\\begin{aligned}\ny &= 2 - e^{0} = 2 - 1 = 1 \\cr\n(0, 1)\n\\end{aligned}<br>Find the $x$-intercept of the curve by setting $y = 0$ and solving for $x$:<br>$$\\begin{aligned} 2 - e^{-x} &= 0 \\\\ e^{-x} &= 2 \\\\\\ -x &= \\ln 2 \\implies x = -\\ln 2 \\end{aligned}$$<br>This gives the exact $x$-intercept coordinates of $(-\\ln 2, 0)$.",
-                        "Determine the horizontal asymptote of the curve. As $x \\to \\infty$, the decay term $e^{-x} \\to 0$, which means:<br>\\begin{aligned}\ny \\to 2 - 0 \\cr\ny &= 2\n\\end{aligned}<br>Therefore, the horizontal asymptote is the line $y = 2$.",
+                        "Find the $y$-intercept of the curve by substituting $x = 0$:<br>\\begin{aligned}y &= 2 - e^{0} = 2 - 1 = 1 (0, 1)\\end{aligned}<br>Find the $x$-intercept of the curve by setting $y = 0$ and solving for $x$:<br>$$\\begin{aligned} 2 - e^{-x} &= 0 \\\\ e^{-x} &= 2 \\\\\\ -x &= \\ln 2 \\implies x = -\\ln 2 \\end{aligned}$$<br>This gives the exact $x$-intercept coordinates of $(-\\ln 2, 0)$.",
+                        "Determine the horizontal asymptote of the curve. As $x \\to \\infty$, the decay term $e^{-x} \\to 0$, which means:<br>\\begin{aligned}y \\to 2 - 0 y &= 2\\end{aligned}<br>Therefore, the horizontal asymptote is the line $y = 2$.",
                 "Final Answer: $$(0,1), \\quad (-\\ln 2,0), \\quad y = 2$$"
                 ],
                 "pi_options": [
@@ -407,26 +407,26 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:<br>$$2\\sin 2x = \\cos x$$<br>for $0^\\circ \\le x \\le 180^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
+                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:\\begin{aligned} 2\\sin 2x = \\cos x \\end{aligned}for $0^\\circ \\le x \\le 180^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
                 "steps": [
-                        "Use the double-angle sine identity $\\sin 2x = 2\\sin x \\cos x$ to expand the left-hand side of the equation:<br>\\begin{aligned}\n2\\left(2\\sin x \\cos x\\right) &= \\cos x \\cr\n4\\sin x \\cos x &= \\cos x\n\\end{aligned}",
-                        "Bring all terms to one side of the equation. Do not divide both sides by $\\cos x$, as doing so assumes $\\cos x \\ne 0$ and leads to the loss of valid roots:<br>$$4\\sin x \\cos x - \\cos x = 0$$",
-                        "Factorise out the common term $\\cos x$ to set up two solvable branches:<br>\\begin{aligned}\n\\cos x\\left(4\\sin x - 1\\right) &= 0 \\cr\n\\cos x &= 0 \\quad \\text{or} \\quad \\sin x = \\dfrac{1}{4}\n\\end{aligned}",
-                        "Solve the first branch, $\\cos x = 0$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>$$x = 90.0^\\circ$$",
-                        "Solve the second branch, $\\sin x = \\dfrac{1}{4} = 0.25$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\sin^{-1}(0.25) \\\\ x &\\approx 14.5^\\circ \\end{aligned}<br>Find the second quadrant solution within the interval:<br>\\begin{aligned}\nx &= 180^\\circ - 14.5^\\circ \\cr\n&= 165.5^\\circ\n\\end{aligned}<br>Combining all solutions yields the final set of answers.",
-                "Final Answer: $$x = 14.5^\\circ, \\, 90.0^\\circ, \\, 165.5^\\circ$$"
+                        "Use the double-angle sine identity $\\sin 2x = 2\\sin x \\cos x$ to expand the left-hand side of the equation:\\begin{aligned} 2(2\\sin x \\cos x) &= \\cos x \\cr 4\\sin x \\cos x &= \\cos x \\end{aligned}",
+                        "Bring all terms to one side of the equation. Do not divide both sides by $\\cos x$, as doing so assumes $\\cos x \\ne 0$ and leads to the loss of valid roots:\\begin{aligned} 4\\sin x \\cos x - \\cos x = 0 \\end{aligned}",
+                        "Factorise out the common term $\\cos x$ to set up two solvable branches:\\begin{aligned} \\cos x(4\\sin x - 1) &= 0 \\cr \\cos x &= 0 \\cr \\sin x &= \\dfrac{1}{4} \\end{aligned}",
+                        "Solve the first branch, $\\cos x = 0$, in the domain $0^\\circ \\le x \\le 180^\\circ$:\\begin{aligned} x = 90.0^\\circ \\end{aligned}",
+                        "Solve the second branch, $\\sin x = \\dfrac{1}{4} = 0.25$, in the domain $0^\\circ \\le x \\le 180^\\circ$:\\begin{aligned} x &= \\sin^{-1}(0.25) \\cr &\\approx 14.5^\\circ \\cr x &= 180^\\circ - 14.5^\\circ \\cr &= 165.5^\\circ \\end{aligned}Combining all solutions yields the final set of answers.",
+                        "Final Answer: \\begin{aligned} x &= 14.5^\\circ, \\, 90.0^\\circ, \\cr &\\quad 165.5^\\circ \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$x = 14.5^\\circ, \\, 165.5^\\circ$$",
+                                "ans": "\\begin{aligned} x = 14.5^\\circ, \\, 165.5^\\circ \\end{aligned}",
                                 "feedback": "You may have made the classic mistake of dividing both sides by $\\cos x$ in the first step. Dividing by a variable term that can equal zero loses the valid solutions where $\\cos x = 0 \\implies x = 90.0^\\circ$. Always bring terms to one side and factorise."
                         },
                         {
-                                "ans": "$$x = 14.5^\\circ, \\, 90.0^\\circ, \\, 194.5^\\circ$$",
+                                "ans": "\\begin{aligned} x &= 14.5^\\circ, \\, 90.0^\\circ, \\cr &\\quad 194.5^\\circ \\end{aligned}",
                                 "feedback": "Check your second quadrant calculation for $\\sin x = 0.25$. Sine is positive in the first and second quadrants. The second quadrant solution is $180^\\circ - 14.5^\\circ = 165.5^\\circ$, not $180^\\circ + 14.5^\\circ = 194.5^\\circ$."
                         },
                         {
-                                "ans": "$$x = 90.0^\\circ$$",
+                                "ans": "\\begin{aligned} x = 90.0^\\circ \\end{aligned}",
                                 "feedback": "You found the solution for the $\\cos x = 0$ branch, but you must also solve for $4\\sin x - 1 = 0 \\implies \\sin x = 0.25$ to find the complete set of three solutions."
                         }
                 ],
@@ -447,26 +447,26 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:<br>$$3\\sin 2x = 2\\sin x$$<br>for $0^\\circ \\le x \\le 180^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
+                "question": "In this question you must show detailed reasoning.<br><br>Solve the equation:\\begin{aligned} 3\\sin 2x = 2\\sin x \\end{aligned}for $0^\\circ \\le x \\le 180^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
                 "steps": [
-                        "Use the double-angle sine identity $\\sin 2x = 2\\sin x \\cos x$ to expand the left-hand side:<br>\\begin{aligned}\n3\\left(2\\sin x \\cos x\\right) &= 2\\sin x \\cr\n6\\sin x \\cos x &= 2\\sin x\n\\end{aligned}",
-                        "Bring all terms to one side of the equation:<br>$$6\\sin x \\cos x - 2\\sin x = 0$$",
-                        "Factorise out the common term $2\\sin x$ to set up two solvable branches:<br>\\begin{aligned}\n2\\sin x\\left(3\\cos x - 1\\right) &= 0 \\cr\n\\sin x &= 0 \\quad \\text{or} \\quad \\cos x = \\dfrac{1}{3}\n\\end{aligned}",
-                        "Solve the first branch, $\\sin x = 0$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>$$x = 0.0^\\circ, \\, 180.0^\\circ$$<br>Because the inequality is inclusive of the boundaries, both solutions are valid.",
-                        "Solve the second branch, $\\cos x = \\dfrac{1}{3}$, in the domain $0^\\circ \\le x \\le 180^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}\\left(\\dfrac{1}{3}\\right) \\\\ x &\\approx 70.5^\\circ \\end{aligned}<br>Since cosine is negative in the second quadrant, there are no other solutions for $\\cos x = \\dfrac{1}{3}$ in the interval $[0^circ, 180^circ]$. Combining all branches yields the final set of answers.",
-                "Final Answer: $$x = 0.0^\\circ, \\, 70.5^\\circ, \\, 180.0^\\circ$$"
+                        "Use the double-angle sine identity $\\sin 2x = 2\\sin x \\cos x$ to expand the left-hand side:\\begin{aligned} 3(2\\sin x \\cos x) &= 2\\sin x \\cr 6\\sin x \\cos x &= 2\\sin x \\end{aligned}",
+                        "Bring all terms to one side of the equation:\\begin{aligned} 6\\sin x \\cos x - 2\\sin x = 0 \\end{aligned}",
+                        "Factorise out the common term $2\\sin x$ to set up two solvable branches:\\begin{aligned} 2\\sin x(3\\cos x - 1) &= 0 \\cr \\sin x &= 0 \\cr \\cos x &= \\dfrac{1}{3} \\end{aligned}",
+                        "Solve the first branch, $\\sin x = 0$, in the domain $0^\\circ \\le x \\le 180^\\circ$:\\begin{aligned} x = 0.0^\\circ, \\, 180.0^\\circ \\end{aligned}Because the inequality is inclusive of the boundaries, both solutions are valid.",
+                        "Solve the second branch, $\\cos x = \\dfrac{1}{3}$, in the domain $0^\\circ \\le x \\le 180^\\circ$:\\begin{aligned} x &= \\cos^{-1}\\big(\\dfrac{1}{3}\\big) \\cr &\\approx 70.5^\\circ \\end{aligned}Since cosine is negative in the second quadrant, there are no other solutions for $\\cos x = \\dfrac{1}{3}$ in the interval $0^\\circ \\le x \\le 180^\\circ$. Combining all branches yields the final set of answers.",
+                        "Final Answer: \\begin{aligned} x &= 0.0^\\circ, \\, 70.5^\\circ, \\cr &\\quad 180.0^\\circ \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$x = 70.5^\\circ$$",
+                                "ans": "\\begin{aligned} x = 70.5^\\circ \\end{aligned}",
                                 "feedback": "You may have made the mistake of dividing both sides by $\\sin x$ in the first step. Dividing by a variable term that can equal zero loses the valid solutions where $\\sin x = 0 \\implies x = 0.0^\\circ, \\, 180.0^\\circ$. Always bring terms to one side and factorise."
                         },
                         {
-                                "ans": "$$x = 0.0^\\circ, \\, 70.5^\\circ, \\, 109.5^\\circ, \\, 180.0^\\circ$$",
+                                "ans": "\\begin{aligned} x &= 0.0^\\circ, \\, 70.5^\\circ, \\cr &\\quad 109.5^\\circ, \\, 180.0^\\circ \\end{aligned}",
                                 "feedback": "Check your quadrant adjustments for $\\cos x = \\dfrac{1}{3}$. Cosine is positive in the first and fourth quadrants. The angle $109.5^\\circ$ is in the second quadrant where cosine is negative, and is not a valid solution."
                         },
                         {
-                                "ans": "$$x = 70.5^\\circ, \\, 180.0^\\circ$$",
+                                "ans": "\\begin{aligned} x = 70.5^\\circ, \\, 180.0^\\circ \\end{aligned}",
                                 "feedback": "Make sure you include all boundary solutions. Since $\\sin x = 0$ is solved over the inclusive interval $0^\\circ \\le x \\le 180^\\circ$, both $x = 0.0^\\circ$ and $x = 180.0^\\circ$ are valid roots."
                         }
                 ],
@@ -488,26 +488,26 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>1. Show that the equation $2\\cos 2x = \\cos x$ can be written as a quadratic equation in $\\cos x$:<br>$$4\\cos^2 x - \\cos x - 2 = 0$$<br>2. Solve the equation $2\\cos 2x = \\cos x$ for $0^\\circ \\le x \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
+                "question": "In this question you must show detailed reasoning.<br><br>1. Show that the equation $2\\cos 2x = \\cos x$ can be written as a quadratic equation in $\\cos x$:\\begin{aligned} 4\\cos^2 x - \\cos x - 2 = 0 \\end{aligned}2. Solve the equation $2\\cos 2x = \\cos x$ for $0^\\circ \\le x \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
                 "steps": [
-                        "Use the double-angle cosine identity $\\cos 2x = 2\\cos^2 x - 1$ to rewrite the left-hand side of the equation:<br>$$2\\left(2\\cos^2 x - 1\\right) = \\cos x$$",
-                        "Expand the brackets and bring all terms to one side to form the required quadratic equation:<br>\\begin{aligned}\n4\\cos^2 x - 2 &= \\cos x \\cr\n4\\cos^2 x - \\cos x - 2 &= 0\n\\end{aligned}",
-                        "Apply the quadratic formula with $a = 4$, $b = -1$, and $c = -2$ to solve for $\\cos x$:<br>\\begin{aligned} \\cos x &= \\dfrac{-(-1) \\pm \\sqrt{(-1)^2 - 4(4)(-2)}}{2(4)} \\\\\\ &= \\dfrac{1 \\pm \\sqrt{1 + 32}}{8} \\\\\\ &= \\dfrac{1 \\pm \\sqrt{33}}{8} \\end{aligned}<br>This gives two possible values for $\\cos x$:<br>$$\\cos x \\approx 0.8431 \\quad \\text{or} \\quad \\cos x \\approx -0.5931$$",
-                        "Solve the first case, $\\cos x \\approx 0.8431$, in the domain $0^\\circ \\le x \\le 360^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}(0.8431) \\\\ x &\\approx 32.5^\\circ, \\, 360^\\circ - 32.5^\\circ = 327.5^\\circ \\end{aligned}",
-                        "Solve the second case, $\\cos x \\approx -0.5931$, in the domain $0^\\circ \\le x \\le 360^\\circ$:<br>\\begin{aligned} x &= \\cos^{-1}(-0.5931) \\\\ x &\\approx 126.4^\\circ, \\, 360^\\circ - 126.4^\\circ = 233.6^\\circ \\end{aligned}<br>Combining all branches yields the final set of answers.",
-                "Final Answer: $$x = 32.5^\\circ, \\, 126.4^\\circ, \\, 233.6^\\circ, \\, 327.5^\\circ$$"
+                        "Use the double-angle cosine identity $\\cos 2x = 2\\cos^2 x - 1$ to rewrite the left-hand side of the equation:\\begin{aligned} 2(2\\cos^2 x - 1) = \\cos x \\end{aligned}",
+                        "Expand the brackets and bring all terms to one side to form the required quadratic equation:\\begin{aligned} 4\\cos^2 x - 2 &= \\cos x \\cr 4\\cos^2 x - \\cos x - 2 &= 0 \\end{aligned}",
+                        "Apply the quadratic formula with $a = 4$, $b = -1$, and $c = -2$ to solve for $\\cos x$:\\begin{aligned} \\cos x &= \\dfrac{-(-1) \\pm \\sqrt{(-1)^2 - 4(4)(-2)}}{2(4)} \\cr &= \\dfrac{1 \\pm \\sqrt{1 + 32}}{8} \\cr &= \\dfrac{1 \\pm \\sqrt{33}}{8} \\end{aligned}This gives two possible values for $\\cos x$:\\begin{aligned} \\cos x &\\approx 0.8431 \\cr \\text{or} \\quad \\cos x &\\approx -0.5931 \\end{aligned}",
+                        "Solve the first case, $\\cos x \\approx 0.8431$, in the domain $0^\\circ \\le x \\le 360^\\circ$:\\begin{aligned} x &= \\cos^{-1}(0.8431) \\cr &\\approx 32.5^\\circ \\cr x &= 360^\\circ - 32.5^\\circ \\cr &= 327.5^\\circ \\end{aligned}",
+                        "Solve the second case, $\\cos x \\approx -0.5931$, in the domain $0^\\circ \\le x \\le 360^\\circ$:\\begin{aligned} x &= \\cos^{-1}(-0.5931) \\cr &\\approx 126.4^\\circ \\cr x &= 360^\\circ - 126.4^\\circ \\cr &= 233.6^\\circ \\end{aligned}Combining all branches yields the final set of answers.",
+                        "Final Answer: \\begin{aligned} x &= 32.5^\\circ, \\, 126.4^\\circ, \\cr &\\quad 233.6^\\circ, \\, 327.5^\\circ \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$x = 32.7^\\circ, \\, 126.4^\\circ, \\, 233.6^\\circ, \\, 327.3^\\circ$$",
+                                "ans": "\\begin{aligned} x &= 32.7^\\circ, \\, 126.4^\\circ, \\cr &\\quad 233.6^\\circ, \\, 327.3^\\circ \\end{aligned}",
                                 "feedback": "Check your evaluation of $c_1 = \\dfrac{1 + \\sqrt{33}}{8} \\approx 0.8431$. Taking the inverse cosine of this value gives $32.5^\\circ$, not $32.7^\\circ$. Be careful with calculator inputs and rounding slips."
                         },
                         {
-                                "ans": "$$x = 32.5^\\circ, \\, 327.5^\\circ$$",
+                                "ans": "\\begin{aligned} x = 32.5^\\circ, \\, 327.5^\\circ \\end{aligned}",
                                 "feedback": "Remember to solve for both branches of your quadratic formula result. The negative branch $\\cos x \\approx -0.5931$ yields two valid solutions ($126.4^\\circ$ and $233.6^\\circ$) within the domain."
                         },
                         {
-                                "ans": "$$x = 32.5^\\circ, \\, 126.4^\\circ$$",
+                                "ans": "\\begin{aligned} x = 32.5^\\circ, \\, 126.4^\\circ \\end{aligned}",
                                 "feedback": "Each trigonometric branch has two solutions in the full $0^\\circ \\le x \\le 360^\\circ$ interval. You must find the companion quadrant angles (using $360^\\circ - \\theta$) to complete the set."
                         }
                 ],
@@ -528,28 +528,28 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>1. Show that the equation $\\sin 2x = 3\\tan x$ can be written in the form:<br>$$\\tan x(2\\cos^2 x - 3) = 0$$<br>2. Solve the equation $\\sin 2x = 3\\tan x$ for $0 \\le x \\le 2\\pi$, giving your answers in terms of $\\pi$.",
+                "question": "In this question you must show detailed reasoning.<br><br>1. Show that the equation $\\sin 2x = 3\\tan x$ can be written in the form:\\begin{aligned} \\tan x(2\\cos^2 x - 3) = 0 \\end{aligned}2. Solve the equation $\\sin 2x = 3\\tan x$ for $0 \\le x \\le 2\\pi$, giving your answers in terms of $\\pi$.",
                 "steps": [
-                        "Substitute $\\sin 2x = 2\\sin x \\cos x$ and $\\tan x = \\dfrac{\\sin x}{\\cos x}$ into the original equation:<br>$$2\\sin x \\cos x = 3\\dfrac{\\sin x}{\\cos x}$$",
-                        "Multiply both sides of the equation by $\\cos x$, noting that $\\cos x \\ne 0$ because $\\tan x$ is undefined where $\\cos x = 0$:<br>$$2\\sin x \\cos^2 x = 3\\sin x$$",
-                        "Bring all terms to one side and factorise out the common term $\\sin x$:<br>\\begin{aligned}\n2\\sin x \\cos^2 x - 3\\sin x &= 0 \\cr\n\\sin x\\left(2\\cos^2 x - 3\\right) &= 0\n\\end{aligned}",
-                        "Substitute $\\sin x = \\tan x \\cos x$ (as $\\cos x \\ne 0$ in the domain of tangent) to obtain the required form:<br>\\begin{aligned}\n\\tan x \\cos x\\left(2\\cos^2 x - 3\\right) &= 0 \\cr\n\\tan x\\left(2\\cos^2 x - 3\\right) &= 0\n\\end{aligned}",
-                        "Set up the two branches to solve:<br>\\begin{aligned}\n\\tan x &= 0 \\quad \\text{or} \\quad 2\\cos^2 x - 3 \\cr\n&= 0\n\\end{aligned}",
-                        "Solve the first branch, $\\tan x = 0$, in the domain $0 \\le x \\le 2\\pi$:<br>$$x = 0, \\, \\pi, \\, 2\\pi$$",
-                        "Solve the second branch, $2\\cos^2 x - 3 = 0 \\implies \\cos^2 x = 1.5$. Since $\\cos^2 x \\le 1$ for all real $x$, there are no real solutions from this branch. Combining the results yields the final answer.",
-                "Final Answer: $$x = 0, \\, \\pi, \\, 2\\pi$$"
+                        "Substitute $\\sin 2x = 2\\sin x \\cos x$ and $\\tan x = \\dfrac{\\sin x}{\\cos x}$ into the original equation:\\begin{aligned} 2\\sin x \\cos x = 3\\dfrac{\\sin x}{\\cos x} \\end{aligned}",
+                        "Multiply both sides of the equation by $\\cos x$, noting that $\\cos x \\ne 0$ because $\\tan x$ is undefined where $\\cos x = 0$:\\begin{aligned} 2\\sin x \\cos^2 x = 3\\sin x \\end{aligned}",
+                        "Bring all terms to one side and factorise out the common term $\\sin x$:\\begin{aligned} 2\\sin x \\cos^2 x - 3\\sin x &= 0 \\cr \\sin x(2\\cos^2 x - 3) &= 0 \\end{aligned}",
+                        "Substitute $\\sin x = \\tan x \\cos x$ (as $\\cos x \\ne 0$ in the domain of tangent) to obtain the required form:\\begin{aligned} \\tan x \\cos x(2\\cos^2 x - 3) &= 0 \\cr \\tan x(2\\cos^2 x - 3) &= 0 \\end{aligned}",
+                        "Set up the two branches to solve:\\begin{aligned} \\tan x &= 0 \\cr 2\\cos^2 x - 3 &= 0 \\end{aligned}",
+                        "Solve the first branch, $\\tan x = 0$, in the domain $0 \\le x \\le 2\\pi$:\\begin{aligned} x = 0, \\, \\pi, \\, 2\\pi \\end{aligned}",
+                        "Solving the second branch gives $\\cos^2 x = 1.5$. Since $\\cos^2 x \\le 1$ for all real $x$, there are no real solutions from this branch. Combining the results yields the final answer.",
+                        "Final Answer: \\begin{aligned} x = 0, \\, \\pi, \\, 2\\pi \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$x = 0, \\, \\dfrac{\\pi}{2}, \\, \\pi, \\, \\dfrac{3\\pi}{2}, \\, 2\\pi$$",
+                                "ans": "\\begin{aligned} x &= 0, \\, \\dfrac{\\pi}{2}, \\, \\pi, \\cr &\\quad \\dfrac{3\\pi}{2}, \\, 2\\pi \\end{aligned}",
                                 "feedback": "Be careful with your asymptote boundaries. Although $\\cos x = 0$ would mathematically satisfy $2\\sin x \\cos^2 x = 3\\sin x$, the values $x = \\dfrac{\\pi}{2}$ and $x = \\dfrac{3\\pi}{2}$ make $\\tan x$ in the original equation undefined, so they must be excluded."
                         },
                         {
-                                "ans": "$$x = 0, \\, \\pi$$",
+                                "ans": "\\begin{aligned} x = 0, \\, \\pi \\end{aligned}",
                                 "feedback": "Check your domain boundaries. Since the interval is inclusive of the upper limit ($0 \\le x \\le 2\\pi$), the root $x = 2\\pi$ is a valid solution and must be included."
                         },
                         {
-                                "ans": "$$x = \\pi, \\, 2\\pi$$",
+                                "ans": "\\begin{aligned} x = \\pi, \\, 2\\pi \\end{aligned}",
                                 "feedback": "Don't forget to include the starting boundary. Since $\\tan 0 = 0$, $x = 0$ is a valid root within the inclusive domain."
                         }
                 ],
@@ -570,27 +570,27 @@ window.ALEVEL_QUESTIONS = [
                         "Trigonometry"
                 ],
                 "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>1. Express $3\\sin x + 4\\cos x$ in the form $R\\sin(x + \\alpha)$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$.<br>2. Hence, solve the equation $3\\sin x + 4\\cos x = 2.5$ for $0^\\circ \\le x \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
+                "question": "In this question you must show detailed reasoning.<br><br>1. Express $3\\sin x + 4\\cos x$ in the form $R\\sin(x + \\alpha)$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$.<br><br>2. Hence, solve the equation $3\\sin x + 4\\cos x = 2.5$ for $0^\\circ \\le x \\le 360^\\circ$, giving your answers correct to $1$ decimal place where appropriate.",
                 "steps": [
-                        "Use the compound angle expansion to equate the expressions:<br>$$3\\sin x + 4\\cos x = R\\sin x\\cos\\alpha + R\\cos x\\sin\\alpha$$<br>Compare the coefficients of $\\sin x$ and $\\cos x$:<br>\\begin{aligned}\nR\\cos\\alpha &= 3 \\quad \\text{and} \\quad R\\sin\\alpha \\cr\n&= 4\n\\end{aligned}",
-                        "Find the amplitude $R$ and the phase shift angle $\\alpha$:<br>$$\\begin{aligned} R &= \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5 \\\\\\ \\tan\\alpha &= \\dfrac{4}{3} \\implies \\alpha = \\tan^{-1}\\left(\\dfrac{4}{3}\\right) \\approx 53.1^\\circ \\end{aligned}$$<br>This gives the harmonic form: $5\\sin(x + 53.1^\\circ)$.",
-                        "Substitute this harmonic form into the target equation and solve for the composite angle:<br>$$\\begin{aligned} 5\\sin(x + 53.1^\\circ) &= 2.5 \\\\\\ \\sin(x + 53.1^\\circ) &= 0.5 \\end{aligned}$$",
-                        "Let $u = x + 53.1^\\circ$. Since the domain is $0^\\circ \\le x \\le 360^\\circ$, the search interval for $u$ is shifted to $53.1^\\circ \\le u \\le 413.1^\\circ$. Solve $\\sin u = 0.5$ in this interval:<br>$$u = 150.0^\\circ, \\, 390.0^\\circ$$<br>(Note that $u = 30.0^\\circ$ is outside our shifted search interval.)",
-                        "Substitute $u = x + 53.1^\\circ$ back to solve for $x$:<br>\\begin{aligned} x + 53.1^\\circ = 150.0^\\circ &\\implies x = 96.9^\\circ \\\\ x + 53.1^\\circ = 390.0^\\circ &\\implies x = 336.9^\\circ \\end{aligned}",
-                "Final Answer: $$5\\sin(x + 53.1^\\circ), \\quad x = 96.9^\\circ, \\, 336.9^\\circ$$"
+                        "Use the compound angle expansion to equate the expressions:\\begin{aligned} &3\\sin x + 4\\cos x \\cr &\\quad = R\\sin x\\cos\\alpha + R\\cos x\\sin\\alpha \\end{aligned}Compare the coefficients of $\\sin x$ and $\\cos x$:\\begin{aligned} R\\cos\\alpha &= 3 \\cr R\\sin\\alpha &= 4 \\end{aligned}",
+                        "Find the amplitude $R$ and the phase shift angle $\\alpha$:\\begin{aligned} R &= \\sqrt{3^2 + 4^2} \\cr &= 5 \\cr \\tan\\alpha &= \\dfrac{4}{3} \\cr \\alpha &= \\tan^{-1}\\big(\\dfrac{4}{3}\\big) \\cr &\\approx 53.1^\\circ \\end{aligned}This gives the harmonic form: $5\\sin(x + 53.1^\\circ)$.",
+                        "Substitute this harmonic form into the target equation and solve for the composite angle:\\begin{aligned} 5\\sin(x + 53.1^\\circ) &= 2.5 \\cr \\sin(x + 53.1^\\circ) &= 0.5 \\end{aligned}",
+                        "Let $u = x + 53.1^\\circ$. Since the domain is $0^\\circ \\le x \\le 360^\\circ$, the search interval for $u$ is shifted to $53.1^\\circ \\le u \\le 413.1^\\circ$. Solve $\\sin u = 0.5$ in this interval:\\begin{aligned} u = 150.0^\\circ, \\, 390.0^\\circ \\end{aligned}(Note that $u = 30.0^\\circ$ is outside our shifted search interval.)",
+                        "Substitute $u = x + 53.1^\\circ$ back to solve for $x$:\\begin{aligned} x + 53.1^\\circ &= 150.0^\\circ \\cr x &= 96.9^\\circ \\cr x + 53.1^\\circ &= 390.0^\\circ \\cr x &= 336.9^\\circ \\end{aligned}",
+                        "Final Answer: \\begin{aligned} &5\\sin(x + 53.1^\\circ) \\cr &x = 96.9^\\circ, \\, 336.9^\\circ \\end{aligned}"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$5\\sin(x + 53.1^\\circ), \\quad x = -23.1^\\circ, \\, 96.9^\\circ$",
-                                "feedback": "Be careful with your domain boundaries. While $x = -23.1^\\circ$ is a mathematical solution, it lies outside the required interval $0^\\circ\\le x\\le 360^\\circ$. Adding $360^\\circ$ to $-23.1^\\circ$ yields the correct positive fourth-quadrant solution $336.9^\\circ$."
+                                "ans": "\\begin{aligned} &5\\sin(x + 53.1^\\circ) \\cr &x = -23.1^\\circ, \\, 96.9^\\circ \\end{aligned}",
+                                "feedback": "Be careful with your domain boundaries. While $x = -23.1^\\circ$ is a mathematical solution, it lies outside the required interval $0^\\circ \\le x \\le 360^\\circ$. Adding $360^\\circ$ to $-23.1^\\circ$ yields the correct positive fourth-quadrant solution $336.9^\\circ$."
                         },
                         {
-                                "ans": "$5\\sin(x + 53.1^\\circ), \\quad x = 96.9^\\circ, \\, 296.9^\\circ$",
+                                "ans": "\\begin{aligned} &5\\sin(x + 53.1^\\circ) \\cr &x = 96.9^\\circ, \\, 296.9^\\circ \\end{aligned}",
                                 "feedback": "Check your second family solution. The root is found from $x + 53.1^\\circ = 390.0^\\circ \\implies x = 336.9^\\circ$, not $x = 296.9^\\circ$."
                         },
                         {
-                                "ans": "$5\\sin(x + 53.1^\\circ), \\quad x = 96.9^\\circ$",
-                                "feedback": "You found the first solution, but remember that the shifted domain $53.1^\\circu413.1^\\circ$ contains two valid angles where $\\sin u = 0.5$. You must also include the solution derived from $u = 390.0^\\circ$."
+                                "ans": "\\begin{aligned} &5\\sin(x + 53.1^\\circ) \\cr &x = 96.9^\\circ \\end{aligned}",
+                                "feedback": "You found the first solution, but remember that the shifted domain $53.1^\\circ \\le u \\le 413.1^\\circ$ contains two valid angles where $\\sin u = 0.5$. You must also include the solution derived from $u = 390.0^\\circ$."
                         }
                 ],
                 "bradley_insight": {
@@ -599,7 +599,7 @@ window.ALEVEL_QUESTIONS = [
                         "content": "When solving equations of the form $\\sin(x + \\alpha) = k$, remember to shift your search domain by $\\alpha$. Since $0^\\circ \\le x \\le 360^\\circ$, your search interval for $u = x + 53.1^\\circ$ is $53.1^\\circ \\le u \\le 413.1^\\circ$. This ensures you correctly identify $u = 390^\\circ$ (which yields $x = 336.9^\\circ$) while discarding $u = 30^\\circ$."
                 }
         },
-        {
+         {
                 "id": "004266",
                 "board": "OCR MEI",
                 "branch": "Pure",
@@ -614,11 +614,11 @@ window.ALEVEL_QUESTIONS = [
                 "question": "In this question you must show detailed reasoning.<br><br>The equation of a curve is:<br>$$y^4 - 7xy + x^3 = -5$$<br>Find the gradient of the curve at each of the points where $y = 1$, giving your answers in exact simplified form.",
                 "steps": [
                         "Substitute $y = 1$ into the original equation to find the $x$-coordinates of the points on the curve:<br>\\begin{aligned} 1^4 - 7x(1) + x^3 &= -5 \\\\\\ 1 - 7x + x^3 &= -5 \\\\ x^3 - 7x + 6 &= 0 \\end{aligned}",
-                        "Factorise the cubic equation by testing small integer factors. Since $x = 1$ gives $1 - 7 + 6 = 0$, $(x - 1)$ is a factor. Dividing the cubic yields:<br>\\begin{aligned}\nx^3 - 7x + 6 &= (x - 1)(x - 2)(x + 3) \\cr\n&= 0\n\\end{aligned}<br>So the coordinates of the three points on the curve where $y = 1$ are:<br>$$(1, 1), \\quad (2, 1), \\quad (-3, 1)$$",
+                        "Factorise the cubic equation by testing small integer factors. Since $x = 1$ gives $1 - 7 + 6 = 0$, $(x - 1)$ is a factor. Dividing the cubic yields:<br>\\begin{aligned}x^3 - 7x + 6 &= (x - 1)(x - 2)(x + 3) &= 0\\end{aligned}<br>So the coordinates of the three points on the curve where $y = 1$ are:<br>$$(1, 1), \\quad (2, 1), \\quad (-3, 1)$$",
                         "Differentiate the curve's equation implicitly with respect to $x$ to find $\\dfrac{\\text{d}y}{\\text{d}x}$. Remember to apply the product rule to the $-7xy$ term:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}\\left(y^4\\right) - \\dfrac{\\text{d}}{\\text{d}x}\\left(7xy\\right) + \\dfrac{\\text{d}}{\\text{d}x}\\left(x^3\\right) &= \\dfrac{\\text{d}}{\\text{d}x}(-5) \\\\\\ 4y^3 \\dfrac{\\text{d}y}{\\text{d}x} - 7\\left(y + x\\dfrac{\\text{d}y}{\\text{d}x}\\right) + 3x^2 &= 0 \\\\\\ 4y^3 \\dfrac{\\text{d}y}{\\text{d}x} - 7y - 7x\\dfrac{\\text{d}y}{\\text{d}x} + 3x^2 &= 0 \\end{aligned}",
                         "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ as a single fraction:<br>\\begin{aligned} \\left(4y^3 - 7x\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 7y - 3x^2 \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7y - 3x^2}{4y^3 - 7x} \\end{aligned}",
                         "Substitute $y = 1$ into the gradient expression to simplify it:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{7 - 3x^2}{4 - 7x}$$",
-                        "Evaluate the gradient at each of the three points:<br>• At $(1, 1)$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(1)^2}{4 - 7(1)} \\cr\n&= \\dfrac{4}{-3} \\cr\n&= -\\dfrac{4}{3}\n\\end{aligned}<br>• At $(2, 1)$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(2)^2}{4 - 7(2)} \\cr\n&= \\dfrac{7 - 12}{4 - 14} \\cr\n&= \\dfrac{-5}{-10} \\cr\n&= \\dfrac{1}{2}\n\\end{aligned}<br>• At $(-3, 1)$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(-3)^2}{4 - 7(-3)} \\cr\n&= \\dfrac{7 - 27}{4 + 21} \\cr\n&= \\dfrac{-20}{25} \\cr\n&= -\\dfrac{4}{5}\n\\end{aligned}",
+                        "Evaluate the gradient at each of the three points:<br>• At $(1, 1)$:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(1)^2}{4 - 7(1)} &= \\dfrac{4}{-3} &= -\\dfrac{4}{3}\\end{aligned}<br>• At $(2, 1)$:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(2)^2}{4 - 7(2)} &= \\dfrac{7 - 12}{4 - 14} &= \\dfrac{-5}{-10} &= \\dfrac{1}{2}\\end{aligned}<br>• At $(-3, 1)$:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{7 - 3(-3)^2}{4 - 7(-3)} &= \\dfrac{7 - 27}{4 + 21} &= \\dfrac{-20}{25} &= -\\dfrac{4}{5}\\end{aligned}",
                 "Final Answer: $$-\\dfrac{4}{3}, \\quad \\dfrac{1}{2}, \\quad -\\dfrac{4}{5}$$"
                 ],
                 "pi_options": [
@@ -659,7 +659,7 @@ window.ALEVEL_QUESTIONS = [
                         "Differentiate the curve's equation implicitly with respect to $x$. Apply the product rule and chain rule to the $2x \\ln y$ term:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}\\left(y^2\\right) + \\dfrac{\\text{d}}{\\text{d}x}\\left(2x \\ln y\\right) &= \\dfrac{\\text{d}}{\\text{d}x}\\left(x^2\\right) \\\\\\ 2y \\dfrac{\\text{d}y}{\\text{d}x} + 2\\ln y + 2x \\cdot \\left(\\dfrac{1}{y}\\dfrac{\\text{d}y}{\\text{d}x}\\right) &= 2x \\end{aligned}",
                         "Group and factorise the terms containing $\\dfrac{\\text{d}y}{\\text{d}x}$:<br>\\begin{aligned} \\left(2y + \\dfrac{2x}{y}\\right)\\dfrac{\\text{d}y}{\\text{d}x} + 2\\ln y &= 2x \\\\\\ \\left(2y + \\dfrac{2x}{y}\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 2x - 2\\ln y \\end{aligned}",
                         "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ as a single fraction:<br>$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2x - 2\\ln y}{2y + \\dfrac{2x}{y}}$$",
-                        "Substitute $x = 1$ and $y = 1$ into the gradient expression and simplify to find the exact value:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{2(1) - 2\\ln(1)}{2(1) + \\dfrac{2(1)}{1}} \\cr\n&= \\dfrac{2 - 0}{2 + 2} \\cr\n&= \\dfrac{2}{4} \\cr\n&= \\dfrac{1}{2}\n\\end{aligned}",
+                        "Substitute $x = 1$ and $y = 1$ into the gradient expression and simplify to find the exact value:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{2(1) - 2\\ln(1)}{2(1) + \\dfrac{2(1)}{1}} &= \\dfrac{2 - 0}{2 + 2} &= \\dfrac{2}{4} &= \\dfrac{1}{2}\\end{aligned}",
                 "Final Answer: $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{1}{2}$$"
                 ],
                 "pi_options": [
@@ -737,7 +737,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "Differentiate both sides of the equation implicitly with respect to $x$:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}\\left(x^2\\right) + \\dfrac{\\text{d}}{\\text{d}x}\\left(2y^2\\right) &= \\dfrac{\\text{d}}{\\text{d}x}(4x) \\\\\\ 2x + 4y\\dfrac{\\text{d}y}{\\text{d}x} &= 4 \\end{aligned}",
                         "Isolate $\\dfrac{\\text{d}y}{\\text{d}x}$ and simplify the fraction by dividing numerator and denominator by $2$:<br>\\begin{aligned} 4y\\dfrac{\\text{d}y}{\\text{d}x} &= 4 - 2x \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{4 - 2x}{4y} = \\dfrac{2 - x}{2y} \\end{aligned}",
-                        "To find the stationary points, set the gradient expression $\\dfrac{\\text{d}y}{\\text{d}x} = 0$:<br>\\begin{aligned}\n\\dfrac{2 - x}{2y} &= 0 \\cr\n2 - x &= 0 \\cr\nx &= 2\n\\end{aligned}<br>(Note that $y \\ne 0$ because the gradient is undefined where $y = 0$.)",
+                        "To find the stationary points, set the gradient expression $\\dfrac{\\text{d}y}{\\text{d}x} = 0$:<br>\\begin{aligned}\\dfrac{2 - x}{2y} &= 0 2 - x &= 0 x &= 2\\end{aligned}<br>(Note that $y \\ne 0$ because the gradient is undefined where $y = 0$.)",
                         "Substitute $x = 2$ back into the original implicit equation of the curve to solve for $y$:<br>\\begin{aligned} x^2 + 2y^2 &= 4x \\\\\\ 2^2 + 2y^2 &= 4(2) \\\\\\ 4 + 2y^2 &= 8 \\\\\\ 2y^2 &= 4 \\\\ y^2 &= 2 \\implies y = \\pm\\sqrt{2} \\end{aligned}",
                         "Write down the exact coordinates of the two stationary points:<br>$$(2, \\sqrt{2}) \\quad \\text{and} \\quad (2, -\\sqrt{2})$$",
                 "Final Answer: $$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{2 - x}{2y}, \\quad (2, \\pm\\sqrt{2})$$"
@@ -776,10 +776,10 @@ window.ALEVEL_QUESTIONS = [
                 "question": "In this question you must show detailed reasoning.<br><br>A curve is defined by the implicit equation:<br>$$x^2y^2 - 3x + 2y = 6$$<br>1. Find the coordinates of the point on the curve where $y = 1$ and $x > 0$.<br>2. Find the exact gradient of the curve at this point.",
                 "steps": [
                         "Substitute $y = 1$ into the original curve equation to find the $x$-coordinates:<br>\\begin{aligned} x^2(1)^2 - 3x + 2(1) &= 6 \\\\ x^2 - 3x + 2 &= 6 \\\\ x^2 - 3x - 4 &= 0 \\end{aligned}",
-                        "Factorise the quadratic equation to find the roots:<br>\\begin{aligned}\n(x - 4)(x + 1) &= 0 \\cr\nx &= 4 \\quad \\text{or} \\quad x = -1\n\\end{aligned}<br>Since the question states $x > 0$, we discard $x = -1$. The coordinates of the point are $(4, 1)$.",
+                        "Factorise the quadratic equation to find the roots:<br>\\begin{aligned}(x - 4)(x + 1) &= 0 x &= 4 \\quad \\text{or} \\quad x = -1\\end{aligned}<br>Since the question states $x > 0$, we discard $x = -1$. The coordinates of the point are $(4, 1)$.",
                         "Differentiate the curve's equation implicitly with respect to $x$. Use the product rule on the $x^2y^2$ term:<br>\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}\\left(x^2y^2\\right) - \\dfrac{\\text{d}}{\\text{d}x}(3x) + \\dfrac{\\text{d}}{\\text{d}x}(2y) &= 0 \\\\\\ 2xy^2 + 2x^2y\\dfrac{\\text{d}y}{\\text{d}x} - 3 + 2\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\end{aligned}",
                         "Group and factorise the terms containing $\\dfrac{\\text{d}y}{\\text{d}x}$:<br>\\begin{aligned} \\left(2xy^2 - 3\\right) + \\left(2x^2y + 2\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 0 \\\\\\ \\left(2x^2y + 2\\right)\\dfrac{\\text{d}y}{\\text{d}x} &= 3 - 2xy^2 \\\\\\ \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{3 - 2xy^2}{2x^2y + 2} \\end{aligned}",
-                        "Substitute $x = 4$ and $y = 1$ into the gradient expression and simplify to find the exact value:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{3 - 2(4)(1)^2}{2(16)(1) + 2} \\cr\n&= \\dfrac{3 - 8}{32 + 2} \\cr\n&= -\\dfrac{5}{34}\n\\end{aligned}",
+                        "Substitute $x = 4$ and $y = 1$ into the gradient expression and simplify to find the exact value:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{3 - 2(4)(1)^2}{2(16)(1) + 2} &= \\dfrac{3 - 8}{32 + 2} &= -\\dfrac{5}{34}\\end{aligned}",
                 "Final Answer: $$(4,1), \\quad \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{5}{34}$$"
                 ],
                 "pi_options": [
@@ -815,7 +815,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>Find the indefinite integral:<br>$$\\int \\left( 6\\sqrt{x} - \\dfrac{4}{x^3} \\right) \\,\\text{d}x$$",
                 "steps": [
-                        "Convert the surd and the reciprocal fraction into standard index form using $x^{1/2} = \\sqrt{x}$ and $x^{-n} = \\dfrac{1}{x^n}$:<br>\\begin{aligned}\n6\\sqrt{x} &= 6x^{1/2} \\quad \\text{and} \\quad \\dfrac{4}{x^3} \\cr\n&= 4x^{-3}\n\\end{aligned}",
+                        "Convert the surd and the reciprocal fraction into standard index form using $x^{1/2} = \\sqrt{x}$ and $x^{-n} = \\dfrac{1}{x^n}$:<br>\\begin{aligned}6\\sqrt{x} &= 6x^{1/2} \\quad \\text{and} \\quad \\dfrac{4}{x^3} &= 4x^{-3}\\end{aligned}",
                         "Substitute these index forms into the integral and integrate term-by-term using the power rule $\\int x^n \\,\\text{d}x = \\dfrac{x^{n+1}}{n+1}$:<br>\\begin{aligned} \\int \\left( 6x^{1/2} - 4x^{-3} \\right) \\,\\text{d}x &= 6\\int x^{1/2} \\,\\text{d}x - 4\\int x^{-3} \\,\\text{d}x \\\\\\ &= 6 \\cdot \\left( \\dfrac{2}{3}x^{3/2} \\right) - 4 \\cdot \\left( \\dfrac{x^{-2}}{-2} \\right) + C \\\\\\ &= 4x^{3/2} + 2x^{-2} + C \\end{aligned}<br>where $C$ is the constant of integration.",
                         "Write the final result with simplified positive exponents if required:<br>$$4x^{3/2} + \\dfrac{2}{x^2} + C$$",
                 "Final Answer: $$4x^{3/2} + \\dfrac{2}{x^2} + C$$"
@@ -853,11 +853,11 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>Evaluate the definite integral:<br>$$\\int_{1}^{4} \\left( \\dfrac{3}{\\sqrt{x}} + \\dfrac{2}{x^2} \\right) \\,\\text{d}x$$",
                 "steps": [
-                        "Convert the fractional terms into standard index form using $x^{-1/2} = \\dfrac{1}{\\sqrt{x}}$ and $x^{-2} = \\dfrac{1}{x^2}$:<br>\\begin{aligned}\n\\dfrac{3}{\\sqrt{x}} &= 3x^{-1/2} \\quad \\text{and} \\quad \\dfrac{2}{x^2} \\cr\n&= 2x^{-2}\n\\end{aligned}",
+                        "Convert the fractional terms into standard index form using $x^{-1/2} = \\dfrac{1}{\\sqrt{x}}$ and $x^{-2} = \\dfrac{1}{x^2}$:<br>\\begin{aligned}\\dfrac{3}{\\sqrt{x}} &= 3x^{-1/2} \\quad \\text{and} \\quad \\dfrac{2}{x^2} &= 2x^{-2}\\end{aligned}",
                         "Integrate the terms step-by-step using the power rule:<br>\\begin{aligned} \\int_{1}^{4} \\left( 3x^{-1/2} + 2x^{-2} \\right) \\,\\text{d}x &= \\left[ 3 \\cdot \\left( 2x^{1/2} \\right) + 2 \\cdot \\left( \\dfrac{x^{-1}}{-1} \\right) \\right]_{1}^{4} \\\\\\ &= \\left[ 6x^{1/2} - 2x^{-1} \\right]_{1}^{4} \\\\\\ &= \\left[ 6\\sqrt{x} - \\dfrac{2}{x} \\right]_{1}^{4} \\end{aligned}",
-                        "Substitute the upper limit $x = 4$ into the integrated expression:<br>\\begin{aligned}\n\\text{Upper Limit} &= 6\\sqrt{4} - \\dfrac{2}{4} \\cr\n&= 6(2) - \\dfrac{1}{2} \\cr\n&= 12 - \\dfrac{1}{2} \\cr\n&= \\dfrac{23}{2}\n\\end{aligned}",
-                        "Substitute the lower limit $x = 1$ into the integrated expression:<br>\\begin{aligned}\n\\text{Lower Limit} &= 6\\sqrt{1} - \\dfrac{2}{1} \\cr\n&= 6(1) - 2 \\cr\n&= 4\n\\end{aligned}",
-                        "Subtract the lower limit evaluation from the upper limit evaluation to find the final value:<br>\\begin{aligned}\n\\text{Value} &= \\dfrac{23}{2} - 4 \\cr\n&= \\dfrac{23}{2} - \\dfrac{8}{2} \\cr\n&= \\dfrac{15}{2}\n\\end{aligned}",
+                        "Substitute the upper limit $x = 4$ into the integrated expression:<br>\\begin{aligned}\\text{Upper Limit} &= 6\\sqrt{4} - \\dfrac{2}{4} &= 6(2) - \\dfrac{1}{2} &= 12 - \\dfrac{1}{2} &= \\dfrac{23}{2}\\end{aligned}",
+                        "Substitute the lower limit $x = 1$ into the integrated expression:<br>\\begin{aligned}\\text{Lower Limit} &= 6\\sqrt{1} - \\dfrac{2}{1} &= 6(1) - 2 &= 4\\end{aligned}",
+                        "Subtract the lower limit evaluation from the upper limit evaluation to find the final value:<br>\\begin{aligned}\\text{Value} &= \\dfrac{23}{2} - 4 &= \\dfrac{23}{2} - \\dfrac{8}{2} &= \\dfrac{15}{2}\\end{aligned}",
                 "Final Answer: $$\\dfrac{15}{2}$$"
                 ],
                 "pi_options": [
@@ -974,11 +974,11 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>The curve has equation $y = 3\\sqrt{x} - x$.<br><br>1. Find the coordinates of the points where the curve intersects the $x$-axis.<br>2. Find the exact area of the finite region bounded by the curve and the $x$-axis.",
                 "steps": [
-                        "To find the $x$-intercepts, set $y = 0$ and factorise the equation:<br>\\begin{aligned} 3x^{1/2} - x &= 0 \\\\ x^{1/2}\\left(3 - x^{1/2}\\right) &= 0 \\end{aligned}<br>This yields two possible solutions:<br>\\begin{aligned}\nx^{1/2} &= 0 \\cr\nx &= 0 \\quad \\text{and} \\quad 3 - x^{1/2} = 0 \\cr\nx^{1/2} &= 3 \\cr\nx &= 9\n\\end{aligned}<br>So, the two $x$-intercept points are $(0, 0)$ and $(9, 0)$.",
+                        "To find the $x$-intercepts, set $y = 0$ and factorise the equation:<br>\\begin{aligned} 3x^{1/2} - x &= 0 \\\\ x^{1/2}\\left(3 - x^{1/2}\\right) &= 0 \\end{aligned}<br>This yields two possible solutions:<br>\\begin{aligned}x^{1/2} &= 0 x &= 0 \\quad \\text{and} \\quad 3 - x^{1/2} = 0 x^{1/2} &= 3 x &= 9\\end{aligned}<br>So, the two $x$-intercept points are $(0, 0)$ and $(9, 0)$.",
                         "Set up the definite integral for the area under the curve between these two boundaries:<br>$$A = \\int_{0}^{9} \\left( 3x^{1/2} - x \\right) \\,\\text{d}x$$",
                         "Integrate the expression using the power rule:<br>\\begin{aligned} A &= \\left[ 3 \\cdot \\left( \\dfrac{2}{3}x^{3/2} \\right) - \\dfrac{x^2}{2} \\right]_{0}^{9} \\\\\\ &= \\left[ 2x^{3/2} - \\dfrac{1}{2}x^2 \\right]_{0}^{9} \\end{aligned}",
-                        "Substitute the upper limit $x = 9$ into the integrated expression:<br>\\begin{aligned}\n\\text{Upper Limit} &= 2(9)^{3/2} - \\dfrac{9^2}{2} \\cr\n&= 2(27) - \\dfrac{81}{2} \\cr\n&= 54 - \\dfrac{81}{2} \\cr\n&= \\dfrac{108}{2} - \\dfrac{81}{2} \\cr\n&= \\dfrac{27}{2}\n\\end{aligned}",
-                        "Substitute the lower limit $x = 0$ into the integrated expression:<br>\\begin{aligned}\n\\text{Lower Limit} &= 2(0)^{3/2} - \\dfrac{0^2}{2} \\cr\n&= 0\n\\end{aligned}<br>Subtracting the lower limit from the upper limit gives the exact area of the region:<br>\\begin{aligned}\nA &= \\dfrac{27}{2} - 0 \\cr\n&= \\dfrac{27}{2}\n\\end{aligned}",
+                        "Substitute the upper limit $x = 9$ into the integrated expression:<br>\\begin{aligned}\\text{Upper Limit} &= 2(9)^{3/2} - \\dfrac{9^2}{2} &= 2(27) - \\dfrac{81}{2} &= 54 - \\dfrac{81}{2} &= \\dfrac{108}{2} - \\dfrac{81}{2} &= \\dfrac{27}{2}\\end{aligned}",
+                        "Substitute the lower limit $x = 0$ into the integrated expression:<br>\\begin{aligned}\\text{Lower Limit} &= 2(0)^{3/2} - \\dfrac{0^2}{2} &= 0\\end{aligned}<br>Subtracting the lower limit from the upper limit gives the exact area of the region:<br>\\begin{aligned}A &= \\dfrac{27}{2} - 0 &= \\dfrac{27}{2}\\end{aligned}",
                 "Final Answer: $$(0,0), \\quad (9,0), \\quad \\text{Area} = \\dfrac{27}{2}$$"
                 ],
                 "pi_options": [
