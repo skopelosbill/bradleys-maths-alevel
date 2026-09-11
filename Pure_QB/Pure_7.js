@@ -353,8 +353,8 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
       "Set up the definite integral for the area of the region bounded by the curve between the lower boundary $x = 1$ and the upper boundary $x = 3$:$$\\text{Area} = \\int_{1}^{3} \\left( 3x^2 + 2x \\right) \\text{d}x$$",
       "Integrate the polynomial expression using the integration power rule:\\begin{aligned} &\\int_{1}^{3} \\left( 3x^2 + 2x \\right) \\text{d}x \\cr &\\quad = \\left[ \\dfrac{3x^3}{3} + \\dfrac{2x^2}{2} \\right]_{1}^{3} \\cr &\\quad = \\left[ x^3 + x^2 \\right]_{1}^{3} \\end{aligned}",
-      "Evaluate the definite integral by substituting the upper limit $x = 3$ into the integrated expression:\\begin{aligned} \\text{Upper Limit} &= 3^3 + 3^2 \\cr &= 27 + 9 \\cr &= 36 \\end{aligned}",
-      "Substitute the lower limit $x = 1$ into the integrated expression:\\begin{aligned} \\text{Lower Limit} &= 1^3 + 1^2 \\cr &= 1 + 1 \\cr &= 2 \\end{aligned}",
+      "Evaluate the definite integral by substituting the upper limit $x = 3$ into the integrated expression:\\begin{aligned} \\text{Lim}_U &= 3^3 + 3^2 \\cr &= 27 + 9 \\cr &= 36 \\end{aligned}",
+      "Substitute the lower limit $x = 1$ into the integrated expression:\\begin{aligned} \\text{Lim}_L &= 1^3 + 1^2 \\cr &= 1 + 1 \\cr &= 2 \\end{aligned}",
       "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the region:\\begin{aligned} \\text{Area} &= 36 - 2 \\cr &= 34 \\end{aligned}",
       "Final Answer: $$34$$"
     ],
@@ -365,7 +365,7 @@ window.ALEVEL_QUESTIONS = [
       },
       {
         "ans": "$$38$$",
-        "feedback": "Check your sign operation when combining your limits. The definite integral is evaluated as $\\text{Upper Limit} - \\text{Lower Limit}$. It seems you may have mistakenly added the lower limit instead of subtracting it."
+        "feedback": "Check your sign operation when combining your limits. The definite integral is evaluated as $\\text{Lim}_U - \\text{Lim}_L$. It seems you may have mistakenly added the lower limit instead of subtracting it."
       },
       {
         "ans": "$$\\dfrac{160}{3}$$",
@@ -637,8 +637,8 @@ window.ALEVEL_QUESTIONS = [
       "This yields two $x$-coordinates: $x = 4$ and $x = -1$. Substitute these back into the linear equation $y = x + 1$ to find the corresponding $y$-coordinates:<br><br><ul><li>For $x = 4$: $y = 5 \\implies B(4, 5)$</li><li>For $x = -1$: $y = 0 \\implies A(-1, 0)$</li></ul><br>Thus, the coordinates of the intersection points are $A(-1, 0)$ and $B(4, 5)$.",
       "To find the enclosed area, integrate the difference between the upper curve $C$ and the lower line $L$ over the interval $[-1, 4]$:\\begin{aligned} &\\text{Area} \\cr &\\quad = \\int_{-1}^{4} \\big[ (5 + 4x - x^2) \\cr &\\qquad\\qquad - (x + 1) \\big] \\text{d}x \\cr &\\quad = \\int_{-1}^{4} (4 + 3x - x^2) \\text{d}x \\end{aligned}",
       "Integrate the polynomial expression term by term:\\begin{aligned} \\text{Area} &= \\left[ 4x + \\dfrac{3}{2}x^2 - \\dfrac{1}{3}x^3 \\right]_{-1}^{4} \\end{aligned}",
-      "Evaluate the integrated expression at the upper limit $x = 4$:\\begin{aligned} \\text{Limit}_U &= 4(4) + \\dfrac{3}{2}(16) - \\dfrac{1}{3}(64) \\cr &= 16 + 24 - \\dfrac{64}{3} \\cr &= 40 - \\dfrac{64}{3} \\cr &= \\dfrac{120 - 64}{3} \\cr &= \\dfrac{56}{3} \\end{aligned}",
-      "Evaluate the integrated expression at the lower limit $x = -1$:\\begin{aligned} \\text{Limit}_L &= 4(-1) + \\dfrac{3}{2}(-1)^2 - \\dfrac{1}{3}(-1)^3 \\cr &= -4 + \\dfrac{3}{2} + \\dfrac{1}{3} \\cr &= -4 + \\dfrac{9}{6} + \\dfrac{2}{6} \\cr &= -4 + \\dfrac{11}{6} \\cr &= -\\dfrac{13}{6} \\end{aligned}",
+      "Evaluate the integrated expression at the upper limit $x = 4$:\\begin{aligned} \\text{Lim}_U &= 4(4) + \\dfrac{3}{2}(16) - \\dfrac{1}{3}(64) \\cr &= 16 + 24 - \\dfrac{64}{3} \\cr &= 40 - \\dfrac{64}{3} \\cr &= \\dfrac{120 - 64}{3} \\cr &= \\dfrac{56}{3} \\end{aligned}",
+      "Evaluate the integrated expression at the lower limit $x = -1$:\\begin{aligned} \\text{Lim}_L &= 4(-1) + \\dfrac{3}{2}(-1)^2 - \\dfrac{1}{3}(-1)^3 \\cr &= -4 + \\dfrac{3}{2} + \\dfrac{1}{3} \\cr &= -4 + \\dfrac{9}{6} + \\dfrac{2}{6} \\cr &= -4 + \\dfrac{11}{6} \\cr &= -\\dfrac{13}{6} \\end{aligned}",
       "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the enclosed region:\\begin{aligned} \\text{Area} &= \\dfrac{56}{3} - \\left( -\\dfrac{13}{6} \\right) \\cr &= \\dfrac{112}{6} + \\dfrac{13}{6} \\cr &= \\dfrac{125}{6} \\end{aligned}",
       "Final Answer: \\begin{aligned} &A(-1, 0) \\cr &B(4, 5) \\cr &\\text{Area} = \\dfrac{125}{6} \\end{aligned}"
     ],
@@ -668,10 +668,10 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Pure",
     "level": "AS",
     "major_area": "Integration",
-    "topic": "Integration",
+    "topic": "Definite Integration",
     "subtopic": [
       "Curved Graphs",
-      "Integration"
+      "Area between a Curve and the x-axis"
     ],
     "img": "images/Pure_SVGs/004317.svg",
     "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C$ with equation $y = x^3 - 3x^2$ and the $x$-axis.<br><br>1. Find the coordinates of the points where the curve intersects the $x$-axis.<br><br>2. Find the exact area of the finite region bounded by the curve and the $x$-axis.",
@@ -679,8 +679,8 @@ window.ALEVEL_QUESTIONS = [
       "To find the points where the curve intersects the $x$-axis, set $y = 0$ and factorise the cubic equation:\\begin{aligned} x^3 - 3x^2 &= 0 \\cr x^2(x - 3) &= 0 \\end{aligned}This yields two solutions: $x = 0$ and $x = 3$.<br><br>So, the two $x$-intercept points are $(0, 0)$ and $(3, 0)$.",
       "On the interval $[0, 3]$, the curve lies entirely below the $x$-axis ($y \\le 0$). To find the exact geometric area, take the negative of the definite integral over this interval:\\begin{aligned} \\text{Area} &= -\\int_{0}^{3} (x^3 - 3x^2) \\text{d}x \\end{aligned}",
       "Integrate the expression using the power rule:\\begin{aligned} \\text{Area} &= -\\left[ \\dfrac{1}{4}x^4 - x^3 \\right]_{0}^{3} \\end{aligned}",
-      "Evaluate the integrated expression at the upper limit $x = 3$:\\begin{aligned} \\text{Upper Limit} &= \\dfrac{1}{4}(3)^4 - 3^3 \\cr &= \\dfrac{81}{4} - 27 \\cr &= \\dfrac{81}{4} - \\dfrac{108}{4} \\cr &= -\\dfrac{27}{4} \\end{aligned}",
-      "Substitute the lower limit $x = 0$ into the expression:\\begin{aligned} \\text{Lower Limit} &= \\dfrac{1}{4}(0)^4 - 0^3 \\cr &= 0 \\end{aligned}",
+      "Evaluate the integrated expression at the upper limit $x = 3$:\\begin{aligned} \\text{Lim}_U &= \\dfrac{1}{4}(3)^4 - 3^3 \\cr &= \\dfrac{81}{4} - 27 \\cr &= \\dfrac{81}{4} - \\dfrac{108}{4} \\cr &= -\\dfrac{27}{4} \\end{aligned}",
+      "Substitute the lower limit $x = 0$ into the expression:\\begin{aligned} \\text{Lim}_L &= \\dfrac{1}{4}(0)^4 - 0^3 \\cr &= 0 \\end{aligned}",
       "Subtract the lower limit from the upper limit and negate the result to find the exact geometric area:\\begin{aligned} \\text{Area} &= -\\left( -\\dfrac{27}{4} - 0 \\right) \\cr &= \\dfrac{27}{4} \\end{aligned}",
       "Final Answer: \\begin{aligned} &(0, 0) \\cr &(3, 0) \\cr &\\text{Area} = \\dfrac{27}{4} \\end{aligned}"
     ],
@@ -710,10 +710,10 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Pure",
     "level": "AS",
     "major_area": "Integration",
-    "topic": "Integration",
+    "topic": "Definite Integration",
     "subtopic": [
       "Curved Graphs",
-      "Integration"
+      "Area betweem two Curves"
     ],
     "img": "images/Pure_SVGs/004318.svg",
     "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C_1$ with equation $y = 8 - x^2$ and the curve $C_2$ with equation $y = x^2$. The two curves intersect at the points $P$ and $Q$.<br><br>1. Find the coordinates of the points of intersection $P$ and $Q$.<br><br>2. Calculate the exact area of the region enclosed between the two curves.",
@@ -722,15 +722,15 @@ window.ALEVEL_QUESTIONS = [
       "Substitute these $x$-values back into $y = x^2$ to find the corresponding $y$-coordinates:<br><br><ul><li>For $x = 2$: $y = 4 \\implies Q(2, 4)$</li><li>For $x = -2$: $y = 4 \\implies P(-2, 4)$</li></ul><br>Thus, the coordinates of the intersection points are $P(-2, 4)$ and $Q(2, 4)$.",
       "On the interval $[-2, 2]$, the curve $C_1$ lies above the curve $C_2$. Integrate the difference between the upper curve and the lower curve:\\begin{aligned} \\text{Area} &= \\int_{-2}^{2} \\left[ (8 - x^2) - x^2 \\right] \\text{d}x \\cr &= \\int_{-2}^{2} (8 - 2x^2) \\text{d}x \\end{aligned}",
       "Integrate the expression using the power rule:\\begin{aligned} \\text{Area} &= \\left[ 8x - \\dfrac{2}{3}x^3 \\right]_{-2}^{2} \\end{aligned}",
-      "Evaluate the integrated expression at the upper limit $x = 2$:\\begin{aligned} \\text{Upper Limit} &= 8(2) - \\dfrac{2}{3}(2)^3 \\cr &= 16 - \\dfrac{16}{3} \\cr &= \\dfrac{48 - 16}{3} \\cr &= \\dfrac{32}{3} \\end{aligned}",
-      "Evaluate the integrated expression at the lower limit $x = -2$:\\begin{aligned} \\text{Lower Limit} &= 8(-2) - \\dfrac{2}{3}(-2)^3 \\cr &= -16 + \\dfrac{16}{3} \\cr &= -\\dfrac{32}{3} \\end{aligned}",
+      "Evaluate the integrated expression at the upper limit $x = 2$:\\begin{aligned} \\text{Lim}_U &= 8(2) - \\dfrac{2}{3}(2)^3 \\cr &= 16 - \\dfrac{16}{3} \\cr &= \\dfrac{48 - 16}{3} \\cr &= \\dfrac{32}{3} \\end{aligned}",
+      "Evaluate the integrated expression at the lower limit $x = -2$:\\begin{aligned} \\text{Lim}_L &= 8(-2) - \\dfrac{2}{3}(-2)^3 \\cr &= -16 + \\dfrac{16}{3} \\cr &= -\\dfrac{32}{3} \\end{aligned}",
       "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area:\\begin{aligned} \\text{Area} &= \\dfrac{32}{3} - \\left( -\\dfrac{32}{3} \\right) \\cr &= \\dfrac{64}{3} \\end{aligned}",
       "Final Answer: \\begin{aligned} &P(-2, 4) \\cr &Q(2, 4) \\cr &\\text{Area} = \\dfrac{64}{3} \\end{aligned}"
     ],
     "pi_options": [
       {
         "ans": "\\begin{aligned} &P(-2, 4) \\cr &Q(2, 4) \\cr &\\text{Area} = 0 \\end{aligned}",
-        "feedback": "Check your subtraction at the final step. Because you are calculating $\\text{Upper Limit} - \\text{Lower Limit}$, the double negative resolves to addition: $\\dfrac{32}{3} - \\left(-\\dfrac{32}{3}\\right) = \\dfrac{64}{3}$. It seems you may have subtracted them directly to get $0$."
+        "feedback": "Check your subtraction at the final step. Because you are calculating $\\text{Lim}_U - \\text{Lim}_L$, the double negative resolves to addition: $\\dfrac{32}{3} - \\left(-\\dfrac{32}{3}\\right) = \\dfrac{64}{3}$. It seems you may have subtracted them directly to get $0$."
       },
       {
         "ans": "\\begin{aligned} &P(-4, 16) \\cr &Q(4, 16) \\cr &\\text{Area} = \\dfrac{64}{3} \\end{aligned}",
@@ -753,10 +753,10 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Pure",
     "level": "AS",
     "major_area": "Integration",
-    "topic": "Integration",
+    "topic": "DefiniteIntegration",
     "subtopic": [
       "Curved Graphs",
-      "Integration"
+      "Area between a Curve and a Line"
     ],
     "img": "images/Pure_SVGs/004319.svg",
     "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C$ with equation $y = 4\\sqrt{x}$ and the line $L$ with equation $y = x + 3$. The line intersects the curve at the points $A$ and $B$.<br><br>1. Show that the coordinates of the points of intersection are $A(1, 4)$ and $B(9, 12)$.<br><br>2. Calculate the exact area of the region enclosed by the curve $C$ and the line $L$.",
@@ -764,8 +764,8 @@ window.ALEVEL_QUESTIONS = [
       "To verify the coordinates, substitute the points into both equations:<br><br><ul><li>For $A(1, 4)$: $4\\sqrt{1} = 4$, and $1 + 3 = 4$. Verified.</li><li>For $B(9, 12)$: $4\\sqrt{9} = 12$, and $9 + 3 = 12$. Verified.</li></ul><br>Both points lie on both the curve and the line.",
       "On the interval $[1, 9]$, the curve $C$ lies above the line $L$. Set up the definite integral for the enclosed area:\\begin{aligned} \\text{Area} &= \\int_{1}^{9} \\left( 4\\sqrt{x} - (x + 3) \\right) \\text{d}x \\cr &= \\int_{1}^{9} (4x^{1/2} - x - 3) \\text{d}x \\end{aligned}",
       "Integrate the expression term by term using the integration power rule:\\begin{aligned} \\text{Area} &= \\left[ 4\\left(\\dfrac{2}{3}x^{3/2}\\right) - \\dfrac{1}{2}x^2 - 3x \\right]_{1}^{9} \\cr &= \\left[ \\dfrac{8}{3}x^{3/2} - \\dfrac{1}{2}x^2 - 3x \\right]_{1}^{9} \\end{aligned}",
-      "Evaluate the integrated expression at the upper limit $x = 9$, noting that $9^{3/2} = (\\sqrt{9})^3 = 27$:\\begin{aligned} \\text{Upper Limit} &= \\dfrac{8}{3}(27) - \\dfrac{1}{2}(81) - 3(9) \\cr &= 72 - 40.5 - 27 \\cr &= 72 - 67.5 \\cr &= 4.5 \\cr &= \\dfrac{9}{2} \\end{aligned}",
-      "Evaluate the integrated expression at the lower limit $x = 1$:\\begin{aligned} \\text{Lower Limit} &= \\dfrac{8}{3}(1)^{3/2} - \\dfrac{1}{2}(1)^2 - 3(1) \\cr &= \\dfrac{8}{3} - \\dfrac{1}{2} - 3 \\cr &= \\dfrac{8}{3} - \\dfrac{7}{2} \\cr &= \\dfrac{16}{6} - \\dfrac{21}{6} \\cr &= -\\dfrac{5}{6} \\end{aligned}",
+      "Evaluate the integrated expression at the upper limit $x = 9$, noting that $9^{3/2} = (\\sqrt{9})^3 = 27$:\\begin{aligned} \\text{Lim}_U &= \\dfrac{8}{3}(27) - \\dfrac{1}{2}(81) - 3(9) \\cr &= 72 - 40.5 - 27 \\cr &= 72 - 67.5 \\cr &= 4.5 \\cr &= \\dfrac{9}{2} \\end{aligned}",
+      "Evaluate the integrated expression at the lower limit $x = 1$:\\begin{aligned} \\text{Lim}_L &= \\dfrac{8}{3}(1)^{3/2} - \\dfrac{1}{2}(1)^2 - 3(1) \\cr &= \\dfrac{8}{3} - \\dfrac{1}{2} - 3 \\cr &= \\dfrac{8}{3} - \\dfrac{7}{2} \\cr &= \\dfrac{16}{6} - \\dfrac{21}{6} \\cr &= -\\dfrac{5}{6} \\end{aligned}",
       "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the enclosed region:\\begin{aligned} \\text{Area} &= \\dfrac{9}{2} - \\left( -\\dfrac{5}{6} \\right) \\cr &= \\dfrac{27}{6} + \\dfrac{5}{6} \\cr &= \\dfrac{32}{6} \\cr &= \\dfrac{16}{3} \\end{aligned}",
       "Final Answer: \\begin{aligned} &A(1, 4), \\; B(9, 12) \\text{ verified} \\cr &\\text{Area} = \\dfrac{16}{3} \\end{aligned}"
     ],
@@ -795,10 +795,10 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Pure",
     "level": "AS",
     "major_area": "Integration",
-    "topic": "Integration",
+    "topic": "Definite Integration",
     "subtopic": [
       "Curved Graphs",
-      "Integration"
+      "Area Bounded by a Curve and two Lines"
     ],
     "img": "images/Pure_SVGs/004320.svg",
     "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve with equation $y = 3\\sqrt{x} - 2$, which crosses the $x$-axis at the point $A$.<br><br>1. Find the exact coordinates of the point $A$.<br><br>2. Find the exact area of the region bounded by the curve, the $x$-axis, and the vertical line $x = 4$.",
@@ -806,8 +806,8 @@ window.ALEVEL_QUESTIONS = [
       "To find the coordinates of point $A$, set the equation of the curve equal to $0$ (since $y = 0$ on the $x$-axis) and solve for $x$:\\begin{aligned} 3\\sqrt{x} - 2 &= 0 \\cr 3\\sqrt{x} &= 2 \\cr \\sqrt{x} &= \\dfrac{2}{3} \\cr x &= \\left(\\dfrac{2}{3}\\right)^2 \\cr x &= \\dfrac{4}{9} \\end{aligned}Thus, the coordinates of point $A$ are $A\\left(\\dfrac{4}{9}, 0\\right)$.",
       "On the interval $\\left[\\dfrac{4}{9}, 4\\right]$, the curve lies entirely above the $x$-axis. Set up the definite integral for the bounded area:\\begin{aligned} \\text{Area} &= \\int_{4/9}^{4} (3x^{1/2} - 2) \\text{d}x \\end{aligned}",
       "Integrate the expression using the power rule:\\begin{aligned} \\text{Area} &= \\left[ 3\\left(\\dfrac{2}{3}x^{3/2}\\right) - 2x \\right]_{4/9}^{4} \\cr &= \\left[ 2x^{3/2} - 2x \\right]_{4/9}^{4} \\end{aligned}",
-      "Evaluate the integrated expression at the upper limit $x = 4$, noting that $4^{3/2} = (\\sqrt{4})^3 = 8$:\\begin{aligned} \\text{Upper Limit} &= 2(4)^{3/2} - 2(4) \\cr &= 2(8) - 8 \\cr &= 16 - 8 \\cr &= 8 \\end{aligned}",
-      "Evaluate the integrated expression at the lower limit $x = \\dfrac{4}{9}$, noting that $\\left(\\dfrac{4}{9}\\right)^{3/2} = \\left(\\sqrt{\\dfrac{4}{9}}\\right)^3 = \\dfrac{8}{27}$:\\begin{aligned} \\text{Lower Limit} &= 2\\left(\\dfrac{4}{9}\\right)^{3/2} - 2\\left(\\dfrac{4}{9}\\right) \\cr &= 2\\left(\\dfrac{8}{27}\\right) - \\dfrac{8}{9} \\cr &= \\dfrac{16}{27} - \\dfrac{24}{27} \\cr &= -\\dfrac{8}{27} \\end{aligned}",
+      "Evaluate the integrated expression at the upper limit $x = 4$, noting that $4^{3/2} = (\\sqrt{4})^3 = 8$:\\begin{aligned} \\text{Lim}_U &= 2(4)^{3/2} - 2(4) \\cr &= 2(8) - 8 \\cr &= 16 - 8 \\cr &= 8 \\end{aligned}",
+      "Evaluate the integrated expression at the lower limit $x = \\dfrac{4}{9}$, noting that $\\left(\\dfrac{4}{9}\\right)^{3/2} = \\left(\\sqrt{\\dfrac{4}{9}}\\right)^3 = \\dfrac{8}{27}$:\\begin{aligned} \\text{Lim}_L &= 2\\left(\\dfrac{4}{9}\\right)^{3/2} - 2\\left(\\dfrac{4}{9}\\right) \\cr &= 2\\left(\\dfrac{8}{27}\\right) - \\dfrac{8}{9} \\cr &= \\dfrac{16}{27} - \\dfrac{24}{27} \\cr &= -\\dfrac{8}{27} \\end{aligned}",
       "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the bounded region:\\begin{aligned} \\text{Area} &= 8 - \\left( -\\dfrac{8}{27} \\right) \\cr &= \\dfrac{216}{27} + \\dfrac{8}{27} \\cr &= \\dfrac{224}{27} \\end{aligned}",
       "Final Answer: \\begin{aligned} &A\\left(\\dfrac{4}{9}, 0\\right) \\cr &\\text{Area} = \\dfrac{224}{27} \\end{aligned}"
     ],
@@ -830,200 +830,205 @@ window.ALEVEL_QUESTIONS = [
       "title": "The Head Teacher's Eye: Fraction Limit Subtraction",
       "content": "When subtracting negative fractional limits (like $-\\left(-\\dfrac{8}{27}\\right)$), be extremely vigilant with double negatives. Expanding them systematically prevents simple sign errors from ruining your final exact fraction."
     }
-  },  
+  }, 
   {
-                "id": "004321",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Trigonometry",
-                "topic": "Trigonometric Identities",
-                "subtopic": [
-                        "Trigonometry"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Prove the identity:<br>$$\\dfrac{\\sin\\theta - \\sin^3\\theta}{\\cos^3\\theta} \\equiv \\tan\\theta$$",
-                "steps": [
-                        "Start with the left-hand side (LHS) of the identity:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{\\sin\\theta - \\sin^3\\theta}{\\cos^3\\theta} \\end{aligned}",
-                        "Factorise out the common term $\\sin\\theta$ from the numerator expression:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{\\sin\\theta\\left(1 - \\sin^2\\theta\\right)}{\\cos^3\\theta} \\end{aligned}",
-                        "Apply the fundamental Pythagorean identity $1 - \\sin^2\\theta = \\cos^2\\theta$ to substitute for the term in the brackets:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{\\sin\\theta\\cos^2\\theta}{\\cos^3\\theta} \\end{aligned}",
-                        "Simplify the fraction by dividing both the numerator and denominator by $\\cos^2\\theta$, then apply the identity $\\dfrac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{\\sin\\theta}{\\cos\\theta}  &= \\tan\\theta  &= \\text{RHS} \\end{aligned}<br>Since the left-hand side simplifies to the right-hand side, the identity is proven."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "Proof incorrect due to expanding $1 - \\sin^2\\theta$ as $1 - \\cos^2\\theta$",
-                                "feedback": "Check your trigonometric identities. Recall that the fundamental identity is $\\sin^2\\theta + \\cos^2\\theta = 1$. Rearranging this gives $1 - \\sin^2\\theta = \\cos^2\\theta$, not $1 - \\cos^2\\theta$."
-                        },
-                        {
-                                "ans": "Proof incorrect due to writing $\\dfrac{\\sin\\theta}{\\cos\\theta} = \\dfrac{1}{\\tan\\theta}$",
-                                "feedback": "Check your basic trigonometric definitions. By definition, $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$. The reciprocal identity is $\\dfrac{1}{\\tan\\theta} = \\dfrac{\\cos\\theta}{\\sin\\theta}$."
-                        },
-                        {
-                                "ans": "Proof incorrect due to simplifying $\\dfrac{\\sin\\theta\\cos^2\\theta}{\\cos^3\\theta}$ to $\\sin\\theta\\cos\\theta$",
-                                "feedback": "Check your division of powers. When dividing $\\cos^2\\theta$ by $\\cos^3\\theta$, the remaining term is in the denominator: $\\dfrac{\\cos^2\\theta}{\\cos^3\\theta} = \\dfrac{1}{\\cos\\theta}$. It seems you may have mistakenly multiplied them instead."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Initiating Identity Proofs",
-                        "content": "When proving trigonometric identities, a reliable strategy is to start with the more algebraically complex side (usually the left-hand side, LHS) and manipulate it systematically using fundamental identities until it simplifies down to the simpler side (RHS)."
-                }
-        },
-        {
-                "id": "004322",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Trigonometric Identities",
-                "subtopic": [
-                        "Quadratics",
-                        "Trigonometry"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Prove the identity:<br>$$\\cos^4\\theta - \\sin^4\\theta \\equiv 1 - 2\\sin^2\\theta$$",
-                "steps": [
-                        "Start with the left-hand side (LHS) of the identity:<br>\\begin{aligned} \\text{LHS} &= \\cos^4\\theta - \\sin^4\\theta \\end{aligned}",
-                        "Treat the quartic expression as a difference of two squares, $a^4 - b^4 = \\left(a^2 - b^2\\right)\\left(a^2 + b^2\\right)$, and factorise:<br>\\begin{aligned} \\text{LHS} &= \\left(\\cos^2\\theta - \\sin^2\\theta\\right)\\left(\\cos^2\\theta + \\sin^2\\theta\\right) \\end{aligned}",
-                        "Apply the fundamental Pythagorean identity $\\cos^2\\theta + \\sin^2\\theta = 1$ to simplify the second bracketed term:<br>\\begin{aligned} \\text{LHS} &= \\left(\\cos^2\\theta - \\sin^2\\theta\\right)(1)  &= \\cos^2\\theta - \\sin^2\\theta \\end{aligned}",
-                        "To match the target right-hand side, write the expression entirely in terms of $\\sin^2\\theta$. Substitute $\\cos^2\\theta = 1 - \\sin^2\\theta$:<br>\\begin{aligned} \\text{LHS} &= \\left(1 - \\sin^2\\theta\\right) - \\sin^2\\theta  &= 1 - 2\\sin^2\\theta  &= \\text{RHS} \\end{aligned}<br>Since the left-hand side simplifies to the right-hand side, the identity is proven."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "Proof incorrect due to expanding $\\cos^4\\theta - \\sin^4\\theta$ as $(\\cos^2\\theta - \\sin^2\\theta)^2$",
-                                "feedback": "Check your algebraic factorisation. The difference of two squares is factorised as $a^2 - b^2 = (a-b)(a+b)$. The expression $a^2 - b^2$ is not equivalent to $(a-b)^2 = a^2 - 2ab + b^2$."
-                        },
-                        {
-                                "ans": "Proof incorrect due to writing $\\cos^2\\theta - \\sin^2\\theta = 1$",
-                                "feedback": "Check your fundamental identity. The Pythagorean identity is $\\cos^2\\theta + \\sin^2\\theta = 1$. The difference of squares, $\\cos^2\\theta - \\sin^2\\theta$, does not equal 1."
-                        },
-                        {
-                                "ans": "Proof incorrect due to substituting $\\cos^2\\theta = \\sin^2\\theta - 1$",
-                                "feedback": "Check your rearrangement of the Pythagorean identity. Since $\\sin^2\\theta + \\cos^2\\theta = 1$, isolating $\\cos^2\\theta$ yields $\\cos^2\\theta = 1 - \\sin^2\\theta$, not $\\sin^2\\theta - 1$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Head Teacher's Eye: Factoring in Trigonometry",
-                        "content": "The difference of two squares algebraic rule $a^4 - b^4 = (a^2 - b^2)(a^2 + b^2)$ is exceptionally useful when working with trigonometric functions. Because $\\cos^2\\theta + \\sin^2\\theta = 1$, any quartic difference $\\cos^4\\theta - \\sin^4\\theta$ simplifies instantly to a much simpler quadratic difference $\\cos^2\\theta - \\sin^2\\theta$."
-                }
-        },
-        {
-                "id": "004323",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Trigonometry",
-                "topic": "Trigonometric Identities",
-                "subtopic": [
-                        "Trigonometry"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Prove the identity:<br>$$\\dfrac{1}{1 - \\sin\\theta} + \\dfrac{1}{1 + \\sin\\theta} \\equiv \\dfrac{2}{\\cos^2\\theta}$$",
-                "steps": [
-                        "Start with the left-hand side (LHS) of the identity:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{1}{1 - \\sin\\theta} + \\dfrac{1}{1 + \\sin\\theta} \\end{aligned}",
-                        "Combine the two fractions by finding a common denominator, which is the product of the two denominators: $(1 - \\sin\\theta)(1 + \\sin\\theta)$:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{(1 + \\sin\\theta) + (1 - \\sin\\theta)}{(1 - \\sin\\theta)(1 + \\sin\\theta)} \\end{aligned}",
-                        "Simplify the numerator by combining like terms and expand the denominator using the difference of two squares:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{2}{1 - \\sin^2\\theta} \\end{aligned}",
-                        "Apply the fundamental Pythagorean identity $1 - \\sin^2\\theta = \\cos^2\\theta$ to substitute for the denominator:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{2}{\\cos^2\\theta}  &= \\text{RHS} \\end{aligned}<br>Since the left-hand side simplifies to the right-hand side, the identity is proven."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "Proof incorrect due to writing $(1 - \\sin\\theta)(1 + \\sin\\theta) = 1 - \\sin\\theta$",
-                                "feedback": "Check your expansion of the denominator. By the difference of two squares, $(1 - \\sin\\theta)(1 + \\sin\\theta) = 1 - \\sin^2\\theta$. It seems you forgot to square the trigonometric term during expansion."
-                        },
-                        {
-                                "ans": "Proof incorrect due to simplifying the numerator $(1 + \\sin\\theta) + (1 - \\sin\\theta) = 2\\sin\\theta$",
-                                "feedback": "Check your algebraic addition in the numerator. Combining $(1 + \\sin\\theta) + (1 - \\sin\\theta)$ yields $1 + 1 + \\sin\\theta - \\sin\\theta = 2$. It seems you accidentally subtracted the constants and added the sine terms."
-                        },
-                        {
-                                "ans": "Proof incorrect due to substituting $1 - \\sin^2\\theta = \\sin^2\\theta$",
-                                "feedback": "Check your Pythagorean identity. Rearranging $\\sin^2\\theta + \\cos^2\\theta = 1$ yields $1 - \\sin^2\\theta = \\cos^2\\theta$. It does not equal $\\sin^2\\theta$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Trigonometric Denominators",
-                        "content": "When adding fractions with algebraic trigonometric denominators such as $1 - \\sin\\theta$ and $1 + \\sin\\theta$, multiplying them together to find the common denominator naturally creates a difference of squares: $(1 - \\sin\\theta)(1 + \\sin\\theta) = 1 - \\sin^2\\theta = \\cos^2\\theta$. Always look out for this identity to simplify denominators quickly."
-                }
-        },
-        {
-                "id": "004324",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Trigonometric Identities",
-                "subtopic": [
-                        "Tangents and Normals",
-                        "Trigonometry"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Prove the identity:<br>$$\\dfrac{\\tan\\theta}{\\sin\\theta} - \\sin\\theta\\tan\\theta \\equiv \\cos\\theta$$",
-                "steps": [
-                        "Start with the left-hand side (LHS) of the identity:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{\\tan\\theta}{\\sin\\theta} - \\sin\\theta\\tan\\theta \\end{aligned}",
-                        "Substitute $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$ into both terms of the expression:<br>\\begin{aligned} \\text{First Term} &= \\dfrac{\\sin\\theta/\\cos\\theta}{\\sin\\theta} = \\dfrac{1}{\\cos\\theta}  \\text{Second Term} &= \\sin\\theta\\left(\\dfrac{\\sin\\theta}{\\cos\\theta}\\right) = \\dfrac{\\sin^2\\theta}{\\cos\\theta} \\end{aligned}",
-                        "Combine the two terms over their common denominator $\\cos\\theta$:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{1}{\\cos\\theta} - \\dfrac{\\sin^2\\theta}{\\cos\\theta}  &= \\dfrac{1 - \\sin^2\\theta}{\\cos\\theta} \\end{aligned}",
-                        "Apply the fundamental Pythagorean identity $1 - \\sin^2\\theta = \\cos^2\\theta$ to substitute for the numerator:<br>\\begin{aligned} \\text{LHS} &= \\dfrac{\\cos^2\\theta}{\\cos\\theta}  &= \\cos\\theta  &= \\text{RHS} \\end{aligned}<br>Since the left-hand side simplifies to the right-hand side, the identity is proven."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "Proof incorrect due to simplifying $\\dfrac{\\tan\\theta}{\\sin\\theta}$ as $\\dfrac{1}{\\sin\\theta}$",
-                                "feedback": "Check your tangent identity substitution. Since $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$, dividing this by $\\sin\\theta$ cancels out the $\\sin\\theta$, leaving $\\dfrac{1}{\\cos\\theta}$ rather than $\\dfrac{1}{\\sin\\theta}$."
-                        },
-                        {
-                                "ans": "Proof incorrect due to writing $\\sin\\theta\\tan\\theta = \\sin^2\\theta\\cos\\theta$",
-                                "feedback": "Check your algebra. Multiplying $\\sin\\theta$ by $\\dfrac{\\sin\\theta}{\\cos\\theta}$ yields $\\dfrac{\\sin^2\\theta}{\\cos\\theta}$. The term $\\cos\\theta$ remains in the denominator."
-                        },
-                        {
-                                "ans": "Proof incorrect due to substituting $1 - \\sin^2\\theta = 1 - \\cos^2\\theta$",
-                                "feedback": "Check your fundamental identity. The Pythagorean identity is $1 - \\sin^2\\theta = \\cos^2\\theta$. Do not leave the constant $1$ in the expression after performing the substitution."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Converting to Basic Functions",
-                        "content": "A reliable, standard strategy for proving any trigonometric identity is to convert all non-basic functions (like tangent) into terms of sine and cosine: $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$. Once everything is expressed using sines and cosines, standard algebraic fraction rules will lead you to the proof."
-                }
-        },
-        {
-                "id": "004325",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Trigonometry",
-                "topic": "Proof",
-                "subtopic": [
-                        "Proof",
-                        "Trigonometry"
-                ],
-                "img": false,
-                "question": "In this question you must show detailed reasoning.<br><br>Show, by means of a counterexample, that the statement:<br>$$\\cos(A + B) \\equiv \\cos A + \\cos B$$<br>is not generally true for all angles $A$ and $B$.",
-                "steps": [
-                        "To disprove a universal mathematical statement, find a single specific counterexample (a set of angles $A$ and $B$) where the left-hand side (LHS) is not equal to the right-hand side (RHS). Let $A = 60^\\circ$ and $B = 60^\\circ$.",
-                        "Evaluate the left-hand side (LHS) of the statement using these chosen angles:<br>\\begin{aligned} \\text{LHS} &= \\cos\\left(60^\\circ + 60^\\circ\\right)  &= \\cos\\left(120^\\circ\\right)  &= -\\dfrac{1}{ 2 } \\end{aligned}",
-                        "Evaluate the right-hand side (RHS) of the statement using the same angles:<br>\\begin{aligned} \\text{RHS} &= \\cos\\left(60^\\circ\\right) + \\cos\\left(60^\\circ\\right)  &= \\dfrac{1}{ 2 } + \\dfrac{1}{ 2 }  &= 1 \\end{aligned}",
-                        "Compare the results of both sides. Since the LHS is not equal to the RHS:<br>\\begin{aligned} \\text{LHS} &\\neq \\text{RHS}  -\\dfrac{1}{ 2 } &\\neq 1 \\end{aligned}<br>Because a case has been shown where the equation does not hold, the statement has been disproved by counterexample."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "Proof incorrect due to choosing $A = 0^\\circ$ and $B = 0^\\circ$ as a counterexample",
-                                "feedback": "Check your choice of angles. If you choose $A = 0^\\circ$ and $B = 0^\\circ$, then $\\text{LHS} = \\cos(0^\\circ) = 1$ and $\\text{RHS} = \\cos(0^\\circ) + \\cos(0^\\circ) = 1 + 1 = 2$. While this is a valid counterexample because $1 \\neq 2$, choosing non-zero angles is much safer and more illustrative for trigonometric functions."
-                        },
-                        {
-                                "ans": "Attempting to prove the statement algebraically instead of providing a counterexample",
-                                "feedback": "Read the question carefully. The question asks you to show that the statement is *not* generally true 'by means of a counterexample'. You must choose specific numerical values for $A$ and $B$ to disprove the statement, rather than attempting an algebraic proof."
-                        },
-                        {
-                                "ans": "Proof incorrect due to stating $\\cos(120^\\circ) = 1$",
-                                "feedback": "Check your basic trigonometric values. The value of $\\cos(120^\\circ)$ is equal to $-\\dfrac{1}{2}$ (or $-0.5$), not $1$. Use your calculator or the quadrant rules to verify your exact values."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Head Teacher's Eye: Disproving Universal Claims",
-                        "content": "In mathematics, proving a statement requires showing that it holds true for all possible cases, which requires general algebraic reasoning. However, disproving a statement (showing it is not generally true) only requires finding a single specific instance—a counterexample—where the statement fails."
-                }
-        },
+    "id": "004321",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+      "Trigonometry"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Prove the identity:$$\\dfrac{\\sin\\theta - \\sin^3\\theta}{\\cos^3\\theta} \\equiv \\tan\\theta$$",
+    "steps": [
+      "Start with the left-hand side (LHS) of the identity:\\begin{aligned} \\text{LHS} &= \\dfrac{\\sin\\theta - \\sin^3\\theta}{\\cos^3\\theta} \\end{aligned}",
+      "Factorise out the common term $\\sin\\theta$ from the numerator expression:\\begin{aligned} \\text{LHS} &= \\dfrac{\\sin\\theta(1 - \\sin^2\\theta)}{\\cos^3\\theta} \\end{aligned}",
+      "Apply the fundamental Pythagorean identity $1 - \\sin^2\\theta = \\cos^2\\theta$ to substitute for the term in the brackets:\\begin{aligned} \\text{LHS} &= \\dfrac{\\sin\\theta\\cos^2\\theta}{\\cos^3\\theta} \\end{aligned}",
+      "Simplify the fraction by dividing both the numerator and denominator by $\\cos^2\\theta$, then apply the identity $\\dfrac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$:\\begin{aligned} \\text{LHS} &= \\dfrac{\\sin\\theta}{\\cos\\theta} \\cr &= \\tan\\theta \\cr &= \\text{RHS} \\end{aligned}Since the left-hand side simplifies to the right-hand side, the identity is proven.",
+      "Final Answer: Identity proven: $\\text{LHS} \\equiv \\text{RHS}$"
+    ],
+    "pi_options": [
+      {
+        "ans": "Proof incorrect due to expanding $1 - \\sin^2\\theta$ as $1 - \\cos^2\\theta$",
+        "feedback": "Check your trigonometric identities. Recall that the fundamental identity is $\\sin^2\\theta + \\cos^2\\theta = 1$. Rearranging this gives $1 - \\sin^2\\theta = \\cos^2\\theta$, not $1 - \\cos^2\\theta$."
+      },
+      {
+        "ans": "Proof incorrect due to writing $\\dfrac{\\sin\\theta}{\\cos\\theta} = \\dfrac{1}{\\tan\\theta}$",
+        "feedback": "Check your basic trigonometric definitions. By definition, $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$. The reciprocal identity is $\\dfrac{1}{\\tan\\theta} = \\dfrac{\\cos\\theta}{\\sin\\theta}$."
+      },
+      {
+        "ans": "Proof incorrect due to simplifying $\\dfrac{\\sin\\theta\\cos^2\\theta}{\\cos^3\\theta}$ to $\\sin\\theta\\cos\\theta$",
+        "feedback": "Check your division of powers. When dividing $\\cos^2\\theta$ by $\\cos^3\\theta$, the remaining term is in the denominator: $\\dfrac{\\cos^2\\theta}{\\cos^3\\theta} = \\dfrac{1}{\\cos\\theta}$. It seems you may have mistakenly multiplied them instead."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Initiating Identity Proofs",
+      "content": "When proving trigonometric identities, a reliable strategy is to start with the more algebraically complex side (usually the left-hand side, LHS) and manipulate it systematically using fundamental identities until it simplifies down to the simpler side (RHS)."
+    }
+  },
+  {
+    "id": "004322",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+      "Quadratics",
+      "Trigonometry"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Prove the identity:$$\\cos^4\\theta - \\sin^4\\theta \\equiv 1 - 2\\sin^2\\theta$$",
+    "steps": [
+      "Start with the left-hand side (LHS) of the identity:\\begin{aligned} \\text{LHS} &= \\cos^4\\theta - \\sin^4\\theta \\end{aligned}",
+      "Treat the quartic expression as a difference of two squares, $a^4 - b^4 = (a^2 - b^2)(a^2 + b^2)$, and factorise:\\begin{aligned} &\\text{LHS} \\cr &\\quad = (\\cos^2\\theta - \\sin^2\\theta)(\\cos^2\\theta + \\sin^2\\theta) \\end{aligned}",
+      "Apply the fundamental Pythagorean identity $\\cos^2\\theta + \\sin^2\\theta = 1$ to simplify the second bracketed term:\\begin{aligned} \\text{LHS} &= (\\cos^2\\theta - \\sin^2\\theta)(1) \\cr &= \\cos^2\\theta - \\sin^2\\theta \\end{aligned}",
+      "To match the target right-hand side, write the expression entirely in terms of $\\sin^2\\theta$. Substitute $\\cos^2\\theta = 1 - \\sin^2\\theta$:\\begin{aligned} \\text{LHS} &= (1 - \\sin^2\\theta) - \\sin^2\\theta \\cr &= 1 - 2\\sin^2\\theta \\cr &= \\text{RHS} \\end{aligned}Since the left-hand side simplifies to the right-hand side, the identity is proven.",
+      "Final Answer: Identity proven: $\\text{LHS} \\equiv \\text{RHS}$"
+    ],
+    "pi_options": [
+      {
+        "ans": "Proof incorrect due to expanding $\\cos^4\\theta - \\sin^4\\theta$ as $(\\cos^2\\theta - \\sin^2\\theta)^2$",
+        "feedback": "Check your algebraic factorisation. The difference of two squares is factorised as $a^2 - b^2 = (a-b)(a+b)$. The expression $a^2 - b^2$ is not equivalent to $(a-b)^2 = a^2 - 2ab + b^2$."
+      },
+      {
+        "ans": "Proof incorrect due to writing $\\cos^2\\theta - \\sin^2\\theta = 1$",
+        "feedback": "Check your fundamental identity. The Pythagorean identity is $\\cos^2\\theta + \\sin^2\\theta = 1$. The difference of squares, $\\cos^2\\theta - \\sin^2\\theta$, does not equal 1."
+      },
+      {
+        "ans": "Proof incorrect due to substituting $\\cos^2\\theta = \\sin^2\\theta - 1$",
+        "feedback": "Check your rearrangement of the Pythagorean identity. Since $\\sin^2\\theta + \\cos^2\\theta = 1$, isolating $\\cos^2\\theta$ yields $\\cos^2\\theta = 1 - \\sin^2\\theta$, not $\\sin^2\\theta - 1$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "deeper",
+      "title": "The Head Teacher's Eye: Factoring in Trigonometry",
+      "content": "The difference of two squares algebraic rule $a^4 - b^4 = (a^2 - b^2)(a^2 + b^2)$ is exceptionally useful when working with trigonometric functions. Because $\\cos^2\\theta + \\sin^2\\theta = 1$, any quartic difference $\\cos^4\\theta - \\sin^4\\theta$ simplifies instantly to a much simpler quadratic difference $\\cos^2\\theta - \\sin^2\\theta$."
+    }
+  },
+  {
+    "id": "004323",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+      "Trigonometry"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Prove the identity:$$\\dfrac{1}{1 - \\sin\\theta} + \\dfrac{1}{1 + \\sin\\theta} \\equiv \\dfrac{2}{\\cos^2\\theta}$$",
+    "steps": [
+      "Start with the left-hand side (LHS) of the identity:\\begin{aligned} \\text{LHS} &= \\dfrac{1}{1 - \\sin\\theta} + \\dfrac{1}{1 + \\sin\\theta} \\end{aligned}",
+      "Combine the two fractions by finding a common denominator, which is the product of the two denominators: $(1 - \\sin\\theta)(1 + \\sin\\theta)$:\\begin{aligned} &\\text{LHS} \\cr &\\quad = \\dfrac{(1 + \\sin\\theta) + (1 - \\sin\\theta)}{(1 - \\sin\\theta)(1 + \\sin\\theta)} \\end{aligned}",
+      "Simplify the numerator by combining like terms and expand the denominator using the difference of two squares:\\begin{aligned} \\text{LHS} &= \\dfrac{2}{1 - \\sin^2\\theta} \\end{aligned}",
+      "Apply the fundamental Pythagorean identity $1 - \\sin^2\\theta = \\cos^2\\theta$ to substitute for the denominator:\\begin{aligned} \\text{LHS} &= \\dfrac{2}{\\cos^2\\theta} \\cr &= \\text{RHS} \\end{aligned}Since the left-hand side simplifies to the right-hand side, the identity is proven.",
+      "Final Answer: Identity proven: $\\text{LHS} \\equiv \\text{RHS}$"
+    ],
+    "pi_options": [
+      {
+        "ans": "Proof incorrect due to writing $(1 - \\sin\\theta)(1 + \\sin\\theta) = 1 - \\sin\\theta$",
+        "feedback": "Check your expansion of the denominator. By the difference of two squares, $(1 - \\sin\\theta)(1 + \\sin\\theta) = 1 - \\sin^2\\theta$. It seems you forgot to square the trigonometric term during expansion."
+      },
+      {
+        "ans": "Proof incorrect due to simplifying the numerator $(1 + \\sin\\theta) + (1 - \\sin\\theta) = 2\\sin\\theta$",
+        "feedback": "Check your algebraic addition in the numerator. Combining $(1 + \\sin\\theta) + (1 - \\sin\\theta)$ yields $1 + 1 + \\sin\\theta - \\sin\\theta = 2$. It seems you accidentally subtracted the constants and added the sine terms."
+      },
+      {
+        "ans": "Proof incorrect due to substituting $1 - \\sin^2\\theta = \\sin^2\\theta$",
+        "feedback": "Check your Pythagorean identity. Rearranging $\\sin^2\\theta + \\cos^2\\theta = 1$ yields $1 - \\sin^2\\theta = \\cos^2\\theta$. It does not equal $\\sin^2\\theta$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Trigonometric Denominators",
+      "content": "When adding fractions with algebraic trigonometric denominators such as $1 - \\sin\\theta$ and $1 + \\sin\\theta$, multiplying them together to find the common denominator naturally creates a difference of squares: $(1 - \\sin\\theta)(1 + \\sin\\theta) = 1 - \\sin^2\\theta = \\cos^2\\theta$. Always look out for this identity to simplify denominators quickly."
+    }
+  },
+  {
+    "id": "004324",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Trigonometric Identities",
+    "subtopic": [
+      "Tangents and Normals",
+      "Trigonometry"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Prove the identity:$$\\dfrac{\\tan\\theta}{\\sin\\theta} - \\sin\\theta\\tan\\theta \\equiv \\cos\\theta$$",
+    "steps": [
+      "Start with the left-hand side (LHS) of the identity:\\begin{aligned} \\text{LHS} &= \\dfrac{\\tan\\theta}{\\sin\\theta} - \\sin\\theta\\tan\\theta \\end{aligned}",
+      "Substitute $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$ into both terms of the expression:\\begin{aligned} \\text{First Term} &= \\dfrac{\\sin\\theta/\\cos\\theta}{\\sin\\theta} \\cr &= \\dfrac{1}{\\cos\\theta} \\cr \\text{Second Term} &= \\sin\\theta\\left(\\dfrac{\\sin\\theta}{\\cos\\theta}\\right) \\cr &= \\dfrac{\\sin^2\\theta}{\\cos\\theta} \\end{aligned}",
+      "Combine the two terms over their common denominator $\\cos\\theta$:\\begin{aligned} \\text{LHS} &= \\dfrac{1}{\\cos\\theta} - \\dfrac{\\sin^2\\theta}{\\cos\\theta} \\cr &= \\dfrac{1 - \\sin^2\\theta}{\\cos\\theta} \\end{aligned}",
+      "Apply the fundamental Pythagorean identity $1 - \\sin^2\\theta = \\cos^2\\theta$ to substitute for the numerator:\\begin{aligned} \\text{LHS} &= \\dfrac{\\cos^2\\theta}{\\cos\\theta} \\cr &= \\cos\\theta \\cr &= \\text{RHS} \\end{aligned}Since the left-hand side simplifies to the right-hand side, the identity is proven.",
+      "Final Answer: Identity proven: $\\text{LHS} \\equiv \\text{RHS}$"
+    ],
+    "pi_options": [
+      {
+        "ans": "Proof incorrect due to simplifying $\\dfrac{\\tan\\theta}{\\sin\\theta}$ as $\\dfrac{1}{\\sin\\theta}$",
+        "feedback": "Check your tangent identity substitution. Since $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$, dividing this by $\\sin\\theta$ cancels out the $\\sin\\theta$, leaving $\\dfrac{1}{\\cos\\theta}$ rather than $\\dfrac{1}{\\sin\\theta}$."
+      },
+      {
+        "ans": "Proof incorrect due to writing $\\sin\\theta\\tan\\theta = \\sin^2\\theta\\cos\\theta$",
+        "feedback": "Check your algebra. Multiplying $\\sin\\theta$ by $\\dfrac{\\sin\\theta}{\\cos\\theta}$ yields $\\dfrac{\\sin^2\\theta}{\\cos\\theta}$. The term $\\cos\\theta$ remains in the denominator."
+      },
+      {
+        "ans": "Proof incorrect due to substituting $1 - \\sin^2\\theta = 1 - \\cos^2\\theta$",
+        "feedback": "Check your fundamental identity. The Pythagorean identity is $1 - \\sin^2\\theta = \\cos^2\\theta$. Do not leave the constant $1$ in the expression after performing the substitution."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Converting to Basic Functions",
+      "content": "A reliable, standard strategy for proving any trigonometric identity is to convert all non-basic functions (like tangent) into terms of sine and cosine: $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$. Once everything is expressed using sines and cosines, standard algebraic fraction rules will lead you to the proof."
+    }
+  },
+  {
+    "id": "004325",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Trigonometry",
+    "topic": "Proof",
+    "subtopic": [
+      "Proof",
+      "Trigonometry"
+    ],
+    "img": false,
+    "question": "In this question you must show detailed reasoning.<br><br>Show, by means of a counterexample, that the statement:$$\\cos(A + B) \\equiv \\cos A + \\cos B$$is not generally true for all angles $A$ and $B$.",
+    "steps": [
+      "To disprove a universal mathematical statement, find a single specific counterexample (a set of angles $A$ and $B$) where the left-hand side (LHS) is not equal to the right-hand side (RHS). Let $A = 60^\\circ$ and $B = 60^\\circ$.",
+      "Evaluate the left-hand side (LHS) of the statement using these chosen angles:\\begin{aligned} \\text{LHS} &= \\cos(60^\\circ + 60^\\circ) \\cr &= \\cos(120^\\circ) \\cr &= -\\dfrac{1}{2} \\end{aligned}",
+      "Evaluate the right-hand side (RHS) of the statement using the same angles:\\begin{aligned} \\text{RHS} &= \\cos(60^\\circ) + \\cos(60^\\circ) \\cr &= \\dfrac{1}{2} + \\dfrac{1}{2} \\cr &= 1 \\end{aligned}",
+      "Compare the results of both sides. Since the LHS is not equal to the RHS:\\begin{aligned} \\text{LHS} &\\neq \\text{RHS} \\cr -\\dfrac{1}{2} &\\neq 1 \\end{aligned}Because a case has been shown where the equation does not hold, the statement has been disproved by counterexample.",
+      "Final Answer: Disproved by counterexample: $\\cos(60^\\circ + 60^\\circ) \\neq \\cos(60^\\circ) + \\cos(60^\\circ)$"
+    ],
+    "pi_options": [
+      {
+        "ans": "Proof incorrect due to choosing $A = 0^\\circ$ and $B = 0^\\circ$ as a counterexample",
+        "feedback": "Check your choice of angles. If you choose $A = 0^\\circ$ and $B = 0^\\circ$, then $\\text{LHS} = 1$ and $\\text{RHS} = 2$. While this is a valid counterexample because $1 \\neq 2$, choosing non-zero angles is much safer and more illustrative for trigonometric functions."
+      },
+      {
+        "ans": "Attempting to prove the statement algebraically instead of providing a counterexample",
+        "feedback": "Read the question carefully. The question asks you to show that the statement is *not* generally true 'by means of a counterexample'. You must choose specific numerical values for $A$ and $B$ to disprove the statement, rather than attempting an algebraic proof."
+      },
+      {
+        "ans": "Proof incorrect due to stating $\\cos(120^\\circ) = 1$",
+        "feedback": "Check your basic trigonometric values. The value of $\\cos(120^\\circ)$ is equal to $-\\dfrac{1}{2}$ (or $-0.5$), not $1$. Use your calculator or the quadrant rules to verify your exact values."
+      }
+    ],
+    "bradley_insight": {
+      "type": "deeper",
+      "title": "The Head Teacher's Eye: Disproving Universal Claims",
+      "content": "In mathematics, proving a statement requires showing that it holds true for all possible cases, which requires general algebraic reasoning. However, disproving a statement (showing it is not generally true) only requires finding a single specific instance—a counterexample—where the statement fails."
+    }
+  },
         {
                 "id": "004326",
                 "board": "WJEC",
