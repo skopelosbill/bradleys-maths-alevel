@@ -558,7 +558,7 @@ window.ALEVEL_QUESTIONS = [
       "To find the new $y$-intercept, substitute $x = 0$ into the translated equation:\\begin{aligned} y(0) &= f(0) - 2 \\cr &= 3^0 - 2 \\cr &= 1 - 2 \\cr &= -1 \\end{aligned}Thus, the new $y$-intercept is $(0, -1)$. Sketch the vertically shifted exponential curve:<br><br><img src='images/Pure_SVGs/004314_ans1.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
       "For part 2, the transformation $y = f(-x)$ represents a horizontal reflection of the curve in the $y$-axis.<br><br>This reflection does not affect the horizontal asymptote nor the $y$-intercept, because points on the $y$-axis ($x = 0$) are invariant under horizontal reflection:\\begin{aligned} &\\text{Asymptote: } y = 0 \\cr &y\\text{-intercept: } (0, 1) \\end{aligned}",
       "Sketch this horizontally reflected exponential decay curve:<br><br><img src='images/Pure_SVGs/004314_ans2.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-      "Final Answer: \\begin{aligned} &\\text{1. Asymptote } y = -2, \\; y\\text{-intercept } (0, -1) \\cr &\\text{2. Asymptote } y = 0, \\; y\\text{-intercept } (0, 1) \\end{aligned}"
+      "Final Answer: \\begin{aligned} &\\text{1. Asymptote } y = -2,  \\;\\cr & y\\text{-intercept } (0, -1) \\cr &\\text{2. Asymptote } y = 0, \\;\\cr & y\\text{-intercept } (0, 1) \\end{aligned}"
     ],
     "pi_options": [
       {
