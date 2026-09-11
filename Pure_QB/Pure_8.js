@@ -1,203 +1,208 @@
 window.ALEVEL_QUESTIONS = [
-        {
-                "id": "004351",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Functions and Graphs",
-                "subtopic": [
-                        "Curved Graphs",
-                        "Differentiation",
-                        "Integration"
-                ],
-                "img": false,
-                "question": "A curve $C$ has equation $y = f(x)$ where $f(x) = x^3 - 6x^2$.<br><br><strong>Part (a)</strong> Find the coordinates of the stationary points of $C$ and determine their nature.<br><strong>Part (b)</strong> Sketch the curve $C$, clearly indicating the coordinates of the stationary points and the points where the curve crosses the coordinate axes.<br><strong>Part (c)</strong> Without performing the integration, state whether the integral below is positive or negative, giving a clear reason for your answer:<br>$$\\int_{ 2 }^{ 6 } (x^3 - 6x^2) \\,\\text{d}x$$",
-                "steps": [
-                        "<strong>Step 1: Find the first derivative of the function</strong><br>To find the stationary points, we first differentiate $f(x) = x^3 - 6x^2$ with respect to $x$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= 3x^2 - 12x\n\\end{aligned}",
-                        "<strong>Step 2: Solve for the stationary points</strong><br>Set the first derivative equal to zero to find the critical values of $x$:<br>\\begin{aligned}\n3x^2 - 12x &= 0 \\cr\n3x(x - 4) &= 0 \\cr\nx = 0 \\quad &\\text{or} \\quad x = 4\n\\end{aligned}<br><br>Substitute these values of $x$ back into the original equation to find their corresponding $y$-coordinates:<br><br><strong>For $x = 0$:</strong><br>\\begin{aligned}\ny &= 0^3 - 6(0)^2 \\cr\ny &= 0 \\implies (0, 0)\n\\end{aligned}<br><br><strong>For $x = 4$:</strong><br>\\begin{aligned}\ny &= 4^3 - 6(4)^2 \\cr\ny &= 64 - 96 \\cr\ny &= -32 \\implies (4, -32)\n\\end{aligned}",
-                        "<strong>Step 3: Determine the nature of the stationary points</strong><br>Find the second derivative of the function:<br>\\begin{aligned}\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 6x - 12\n\\end{aligned}<br>Evaluate the second derivative at each critical point:<br><br><strong>At $x = 0$:</strong><br>\\begin{aligned}\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 6(0) - 12 \\cr\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= -12 < 0 \\implies (0, 0) \\text{ is a local maximum}\n\\end{aligned}<br><br><strong>At $x = 4$:</strong><br>\\begin{aligned}\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 6(4) - 12 \\cr\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 12 > 0 \\implies (4, -32) \\text{ is a local minimum}\n\\end{aligned}",
-                        "<strong>Step 4: Find the coordinate intercepts and sketch the curve</strong><br>Find where the curve crosses the axes:<br><br><strong>To find the $y$-intercept, set $x = 0$:</strong><br>\\begin{aligned}\ny &= 0^3 - 6(0)^2 \\cr\ny &= 0 \\implies (0, 0)\n\\end{aligned}<br><br><strong>To find the $x$-intercepts, set $y = 0$:</strong><br>\\begin{aligned}\nx^3 - 6x^2 &= 0 \\cr\nx^2(x - 6) &= 0\n\\end{aligned}<br><br>This gives the intercepts $x = 0$ (touching point) and $x = 6$ (crossing point) at:<br>$$(0, 0) \\quad \\text{and} \\quad (6, 0)$$<br>Using these key features, the sketch of the curve $C$ is shown below:<br><br><img src='images/Pure_SVGs/004351_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-                        "<strong>Step 5: Determine the sign of the definite integral</strong><br>Over the interval $[2, 6]$, the curve lies entirely on or below the $x$-axis (since the intercepts are at $0$ and $6$, and the local minimum is at $(4, -32)$). Since the area is located entirely beneath the $x$-axis, the value of the integral must be <strong>negative</strong>."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "Stationary points: $(0,0)$ (Min), $(4,-32)$ (Max); Intercepts: $(0,0)$, $(6,0)$; Integral: Negative",
-                                "feedback": "Check your second derivative test. At $x = 0$, $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = -12 < 0$, which means $(0,0)$ must be a local maximum, not a minimum. At $x = 4$, $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = 12 > 0$, making $(4,-32)$ a local minimum, not a maximum."
-                        },
-                        {
-                                "ans": "Stationary points: $(0,0)$ (Max), $(4,-32)$ (Min); Intercepts: $(0,0)$, $(6,0)$; Integral: Positive",
-                                "feedback": "Your stationary points are correct, but look closely at the graph between $x = 2$ and $x = 6$. The curve lies entirely below the $x$-axis in this interval. Since definite integration calculates the signed area, any area below the $x$-axis evaluates to a negative value."
-                        },
-                        {
-                                "ans": "Stationary points: $(0,0)$ (Max), $(4,-16)$ (Min); Intercepts: $(0,0)$, $(6,0)$; Integral: Negative",
-                                "feedback": "Check your calculation of the $y$-coordinate for the stationary point at $x = 4$. Substituting $x = 4$ into $y = x^3 - 6x^2$ gives $4^3 - 6(4^2) = 64 - 96 = -32$, not $-16$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Qualitative Integration",
-                        "content": "To determine the sign of a definite integral qualitatively, always look at your sketch. If the curve lies entirely below the $x$-axis over the boundaries of integration, the integral evaluates to a negative value. There is no need to calculate the actual integral."
-                }
-        },
-        {
-                "id": "004352",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Functions and Graphs",
-                "subtopic": [
-                        "Curved Graphs",
-                        "Differentiation",
-                        "Root Analysis"
-                ],
-                "img": false,
-                "question": "A curve $C$ has equation $y = 2x^3 - 3x^2 - 12x + 8$.<br><br><strong>Part (a)</strong> Find the coordinates of the stationary points of $C$ and determine their nature.<br><strong>Part (b)</strong> Sketch the curve $C$, clearly indicating the coordinates of the stationary points and the $y$-intercept.<br><strong>Part (c)</strong> Using your sketch, state the number of distinct real roots of the equation $2x^3 - 3x^2 - 12x + 8 = 0$, giving a clear reason for your answer.",
-                "steps": [
-                        "<strong>Step 1: Differentiate the function</strong><br>Find the first derivative of $y = 2x^3 - 3x^2 - 12x + 8$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= 6x^2 - 6x - 12\n\\end{aligned}",
-                        "<strong>Step 2: Solve for the stationary points</strong><br>Set the derivative equal to zero and factorise to find the critical values of $x$:<br>\\begin{aligned}\n6(x^2 - x - 2) &= 0 \\cr\n6(x - 2)(x + 1) &= 0\n\\end{aligned}<br><br>Substitute these values of $x$ back into the original equation to find their corresponding $y$-coordinates:<br><br><strong>For $x = -1$:</strong><br>\\begin{aligned}\ny &= 2(-1)^3 - 3(-1)^2 - 12(-1) + 8 \\cr\ny &= -2 - 3 + 12 + 8 \\cr\ny &= 15 \\implies (-1, 15)\n\\end{aligned}<br><br><strong>For $x = 2$:</strong><br>\\begin{aligned}\ny &= 2(2)^3 - 3(2)^2 - 12(2) + 8 \\cr\ny &= 16 - 12 - 24 + 8 \\cr\ny &= -12 \\implies (2, -12)\n\\end{aligned}",
-                        "<strong>Step 3: Determine the nature of the stationary points</strong><br>Find the second derivative:<br>\\begin{aligned}\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 12x - 6\n\\end{aligned}<br>Evaluate the second derivative at each critical value:<br><br><strong>At $x = -1$:</strong><br>\\begin{aligned}\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 12(-1) - 6 \\cr\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= -18 < 0 \\implies (-1, 15) \\text{ is a local maximum}\n\\end{aligned}<br><br><strong>At $x = 2$:</strong><br>\\begin{aligned}\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 12(2) - 6 \\cr\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 18 > 0 \\implies (2, -12) \\text{ is a local minimum}\n\\end{aligned}",
-                        "<strong>Step 4: Sketch the curve</strong><br>Find the $y$-intercept by setting $x = 0$:<br>\\begin{aligned}\ny &= 2(0)^3 - 3(0)^2 - 12(0) + 8 \\cr\ny &= 8 \\implies (0, 8)\n\\end{aligned}<br>Sketch the positive cubic shape passing through the maximum $(-1, 15)$, the intercept $(0, 8)$, and the minimum $(2, -12)$:<br><br><img src='images/Pure_SVGs/004352_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-                        "<strong>Step 5: Determine the number of real roots</strong><br>From the sketch, we observe that the local maximum $y$-value is positive ($15$) and the local minimum $y$-value is negative ($-12$). Since the curve must cross the $x$-axis between these values, it intersects the $x$-axis exactly **three** times. Therefore, there are exactly <strong>three distinct real roots</strong>."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "Stationary points: $(-1,15)$ (Max), $(2,-12)$ (Min); Intercept: $(0,8)$; Roots: 1",
-                                "feedback": "Your stationary points and intercept are correct, but think about the shape. Since the local maximum lies above the $x$-axis ($y = 15$) and the local minimum lies below the $x$-axis ($y = -12$), the curve must transition from positive to negative, crossing the $x$-axis 3 times in total."
-                        },
-                        {
-                                "ans": "Stationary points: $(-1,9)$ (Max), $(2,-12)$ (Min); Intercept: $(0,8)$; Roots: 3",
-                                "feedback": "Check your calculation of the $y$-coordinate for $x = -1$. Evaluating $y = 2(-1)^3 - 3(-1)^2 - 12(-1) + 8$ gives $-2 - 3 + 12 + 8 = 15$, not $9$."
-                        },
-                        {
-                                "ans": "Stationary points: $(-1,15)$ (Min), $(2,-12)$ (Max); Intercept: $(0,8)$; Roots: 3",
-                                "feedback": "Check your second derivative test. Since $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = 12x - 6$, at $x = -1$ we get $-18 < 0$, making it a local maximum. At $x = 2$ we get $18 > 0$, making it a local minimum."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Head Teacher's Eye: Stationary Points and Roots",
-                        "content": "The coordinates of the local turning points of a cubic equation are a powerful tool for determining the number of roots. If $y_{\\text{max}} \\cdot y_{\\text{min}} < 0$, the cubic must cross the $x$-axis three times (3 real roots). If $y_{\\text{max}} \\cdot y_{\\text{min}} > 0$, it only crosses once (1 real root)."
-                }
-        },
-        {
-                "id": "004353",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Functions and Graphs",
-                "subtopic": [
-                        "Curved Graphs",
-                        "Differentiation",
-                        "Integration"
-                ],
-                "img": false,
-                "question": "A curve $C$ has equation $y = 12x - x^3$.<br><br><strong>Part (a)</strong> Find the coordinates of the stationary points of $C$ and determine their nature.<br><strong>Part (b)</strong> Sketch the curve $C$, clearly indicating the coordinates of the stationary points and the points where the curve crosses the coordinate axes.<br><strong>Part (c)</strong> Without performing the integration, state whether the integral below is positive or negative, giving a clear reason for your answer:<br>$$\\int_{ 0 }^{ \\sqrt{ 12 } } (12x - x^3) \\,\\text{d}x$$",
-                "steps": [
-                        "<strong>Step 1: Differentiate the function</strong><br>Differentiate $y = 12x - x^3$ with respect to $x$:<br>\\begin{aligned}\n\\dfrac{\\text{d}y}{\\text{d}x} &= 12 - 3x^2\n\\end{aligned}",
-                        "<strong>Step 2: Find the stationary points</strong><br>Set the derivative equal to zero to find the critical values of $x$:<br>\\begin{aligned}\n12 - 3x^2 &= 0 \\cr\n3(4 - x^2) &= 0 \\cr\nx = 2 \\quad &\\text{or} \\quad x = -2\n\\end{aligned}<br><br>Substitute these back into the original equation to find their $y$-coordinates:<br><br><strong>For $x = 2$:</strong><br>\\begin{aligned}\ny &= 12(2) - 2^3 \\cr\ny &= 24 - 8 \\cr\ny &= 16 \\implies (2, 16)\n\\end{aligned}<br><br><strong>For $x = -2$:</strong><br>\\begin{aligned}\ny &= 12(-2) - (-2)^3 \\cr\ny &= -24 - (-8) \\cr\ny &= -16 \\implies (-2, -16)\n\\end{aligned}",
-                        "<strong>Step 3: Determine the nature of the stationary points</strong><br>Find the second derivative of the curve:<br>\\begin{aligned}\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= -6x\n\\end{aligned}<br>Evaluate the second derivative at each critical point:<br><br><strong>At $x = 2$:</strong><br>\\begin{aligned}\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= -6(2) \\cr\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= -12 < 0 \\implies (2, 16) \\text{ is a local maximum}\n\\end{aligned}<br><br><strong>At $x = -2$:</strong><br>\\begin{aligned}\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= -6(-2) \\cr\n\\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 12 > 0 \\implies (-2, -16) \\text{ is a local minimum}\n\\end{aligned}",
-                        "<strong>Step 4: Determine coordinate intercepts and sketch</strong><br>Find where the curve crosses the axes:<br><br><strong>To find the $y$-intercept, set $x = 0$:</strong><br>\\begin{aligned}\ny &= 12(0) - 0^3 \\cr\ny &= 0 \\implies (0, 0)\n\\end{aligned}<br><br><strong>To find the $x$-intercepts, set $y = 0$:</strong><br>\\begin{aligned}\n12x - x^3 &= 0 \\cr\nx(12 - x^2) &= 0\n\\end{aligned}<br><br>This gives the intercepts $x = 0$ or $x = \\pm\\sqrt{ 12 } \\approx \\pm 3.46$.<br>Using these features, the sketch of the curve $C$ is shown below:<br><br><img src='images/Pure_SVGs/004353_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-                        "<strong>Step 5: Determine the sign of the definite integral</strong><br>Over the interval $[0, \\sqrt{ 12 }]$, the curve lies entirely on or above the $x$-axis (since the boundary roots are at $0$ and $\\sqrt{ 12 }$, and the local maximum at $x = 2$ is positive). Since the area is located entirely above the $x$-axis, the integral must be <strong>positive</strong>."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "Stationary points: $(2,16)$ (Max), $(-2,-32)$ (Min); Intercepts: $(0,0)$, $(\\pm\\sqrt{ 12 },0)$; Integral: Positive",
-                                "feedback": "Be very careful with sign evaluation. Substituting $x = -2$ into $y = 12x - x^3$ gives $12(-2) - (-2)^3 = -24 - (-8) = -24 + 8 = -16$, not $-32$. This is a very common sign error when cubing negative bases."
-                        },
-                        {
-                                "ans": "Stationary points: $(2,16)$ (Max), $(-2,-16)$ (Min); Intercepts: $(0,0)$, $(\\pm\\sqrt{ 12 },0)$; Integral: Negative",
-                                "feedback": "Your stationary points are correct, but check the sign of the integral over the interval $[0, \\sqrt{ 12 }]$. Within this domain, the function lies above the $x$-axis, meaning the signed area must be positive."
-                        },
-                        {
-                                "ans": "Stationary points: $(2,16)$ (Min), $(-2,-16)$ (Max); Intercepts: $(0,0)$, $(\\pm\\sqrt{ 12 },0)$; Integral: Positive",
-                                "feedback": "Check your second derivative test. Since $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = -6x$, at $x = 2$ we get $-12 < 0 \\implies$ local maximum, and at $x = -2$ we get $12 > 0 \\implies$ local minimum."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Cubing Negative Numbers",
-                        "content": "When evaluating terms like $-x^3$ with a negative value of $x$, always write out the expansion step-by-step: $-(-2)^3 = -(-8) = +8$. Forgetting that cubing a negative base maintains the negative sign is one of the most common ways to lose marks."
-                }
-        },
-        {
-                "id": "004354",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Functions and Graphs",
-                "subtopic": [
-                        "Curved Graphs"
-                ],
-                "img": false,
-                "question": "A curve $C$ has equation $y = 2 + \\dfrac{ 1 }{ x - 1 }$.<br><br><strong>Part (a)</strong> State the equations of the vertical and horizontal asymptotes of $C$.<br><strong>Part (b)</strong> Find the coordinates of the points where $C$ crosses the coordinate axes.<br><strong>Part (c)</strong> Sketch the curve $C$, clearly indicating the asymptotes and the coordinates of the intersection points with the coordinate axes.",
-                "steps": [
-                        "<strong>Step 1: Identify the asymptotes</strong><br>The vertical asymptote occurs where the denominator of the fraction is equal to zero, causing the function to be undefined:<br>\\begin{aligned}\nx - 1 &= 0 \\cr\nx &= 1\n\\end{aligned}<br>The horizontal asymptote is found by observing the behavior of $y$ as $x \\to \\pm\\infty$. As $x$ becomes extremely large, $\\dfrac{ 1 }{ x - 1 } \\to 0$:<br>\\begin{aligned}\ny &\\to 2\n\\end{aligned}",
-                        "<strong>Step 2: Find the axis intercepts</strong><br>To find the $y$-intercept, set $x = 0$:<br>\\begin{aligned}\ny &= 2 + \\dfrac{ 1 }{ 0 - 1 } \\cr\ny &= 2 - 1 \\cr\ny &= 1 \\implies (0, 1)\n\\end{aligned}<br><br><strong>To find the $x$-intercept, set $y = 0$:</strong><br>\\begin{aligned}\n0 &= 2 + \\dfrac{ 1 }{ x - 1 } \\cr\n\\dfrac{ 1 }{ x - 1 } &= -2 \\cr\nx - 1 &= -0.5 \\cr\nx &= 0.5 \\implies (0.5, 0)\n\\end{aligned}",
-                        "<strong>Step 3: Sketch the curve</strong><br>This is a translated reciprocal curve of $y = \\dfrac{ 1 }{ x }$. Draw the asymptotes $x = 1$ and $y = 2$ as dashed lines, and sketch the branches passing through $(0, 1)$ and $(0.5, 0):$<br><br><img src='images/Pure_SVGs/004354_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "Asymptotes: $x=1, y=2$; Intercepts: $(0,-1), (0.5,0)$",
-                                "feedback": "Check your $y$-intercept calculation. When $x = 0$, $y = 2 + \\dfrac{ 1 }{ 0 - 1 } = 2 - 1 = 1$, not $-1$."
-                        },
-                        {
-                                "ans": "Asymptotes: $x=-1, y=2$; Intercepts: $(0,1), (0.5,0)$",
-                                "feedback": "Check your vertical asymptote. The denominator is $x - 1$, which is undefined when $x = 1$, so the vertical asymptote is $x = 1$, not $x = -1$."
-                        },
-                        {
-                                "ans": "Asymptotes: $x=1, y=2$; Intercepts: $(0,1), (2,0)$",
-                                "feedback": "Check your algebra when solving for the $x$-intercept. Setting $y = 0 \\implies \\dfrac{ 1 }{ x - 1 } = -2 \\implies x - 1 = -0.5$, which yields $x = 0.5$, not $2$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Asymptote Anchors",
-                        "content": "When sketching reciprocal functions, always draw the asymptotes first as dashed lines and label them with their equations. These act as boundaries that anchor your curve branches, ensuring your sketch is neat and mathematically accurate."
-                }
-        },
-        {
-                "id": "004355",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Functions and Graphs",
-                "subtopic": [
-                        "Differentiation",
-                        "Graph Transformations",
-                        "Quadratics"
-                ],
-                "img": false,
-                "question": "A curve $C$ has equation $y = f(x)$, where $f(x) = 9 - x^2$.<br><br><strong>Part (a)</strong> Sketch the graph of $y = f(x)$, indicating the coordinates of the turning point and the intercepts with the axes.<br><strong>Part (b)</strong> On separate sets of axes, sketch the graphs of:<ul><li>(i) $y = f(x) - 4$</li><li>(ii) $y = f(x + 2)$</li></ul>showing clearly the coordinates of the new turning points in each case.",
-                "steps": [
-                        "<strong>Step 1: Sketch the primary curve $y = f(x)$</strong><br>The function $f(x) = 9 - x^2$ is an inverted parabola (negative quadratic). To find the intercepts and turning point:<br><br><strong>Maximum Turning Point:</strong><br>The curve is an inverted parabola with its maximum turning point on the $y$-axis at $(0, 9)$.<br><br><strong>$y$-intercept:</strong><br>Setting $x = 0 \\implies y = 9 \\implies (0, 9)$.<br><br><strong>$x$-intercepts:</strong><br>To find the $x$-intercepts, set $y = 0$:<br>\\begin{aligned}\n9 - x^2 &= 0 \\cr\nx^2 &= 9 \\cr\nx &= \\pm 3 \\implies (3, 0) \\quad \\text{and} \\quad (-3, 0)\n\\end{aligned}",
-                        "<strong>Step 2: Understand the transformations</strong><br>We apply standard function transformation rules:<ul><li>(i) $y = f(x) - 4$: This represents a vertical translation downwards by $4$ units. The turning point shifts from $(0, 9)$ down to $(0, 5)$.</li><li>(ii) $y = f(x + 2)$: This represents a horizontal translation to the left by $2$ units. The turning point shifts from $(0, 9)$ left to $(-2, 9)$.</li></ul>",
-                        "<strong>Step 3: Sketch the transformed curves</strong><br>The separate sets of axes for the original function and its two transformations are shown side-by-side below:<br><br><img src='images/Pure_SVGs/004355_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "Turning point: $(0,9)$; (i) Turning point: $(0,5)$; (ii) Turning point: $(2,9)$",
-                                "feedback": "Be careful with horizontal transformations. The graph of $f(x + a)$ represents a horizontal translation of $a$ units to the left (negative direction), so the turning point shifts to $(-2, 9)$, not $(2, 9)$."
-                        },
-                        {
-                                "ans": "Turning point: $(0,9)$; (i) Turning point: $(4,9)$; (ii) Turning point: $(-2,9)$",
-                                "feedback": "Check your transformation directions. The graph of $f(x) - a$ is a vertical shift downwards, which modifies the $y$-coordinate of the turning point to $(0, 5)$, not the $x$-coordinate."
-                        },
-                        {
-                                "ans": "Turning point: $(0,9)$; (i) Turning point: $(0,13)$; (ii) Turning point: $(-2,9)$",
-                                "feedback": "Check the sign of your vertical translation. Subtracting $4$ from $f(x)$ shifts the curve down, so the $y$-coordinate should be $9 - 4 = 5$, not $9 + 4 = 13$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Horizontal Shifting",
-                        "content": "Horizontal translations often confuse students because they seem counter-intuitive: $f(x + a)$ shifts the graph $a$ units to the left (negative direction), while $f(x - a)$ shifts the graph $a$ units to the right (positive direction). Always double-check your horizontal shift direction."
-                }
-        },
+  {
+    "id": "004351",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Functions and Graphs",
+    "subtopic": [
+      "Curved Graphs",
+      "Differentiation",
+      "Integration"
+    ],
+    "img": false,
+    "question": "A curve $C$ has equation $y = f(x)$ where $f(x) = x^3 - 6x^2$.<br><br><strong>Part (a)</strong> Find the coordinates of the stationary points of $C$ and determine their nature.<br><br><strong>Part (b)</strong> Sketch the curve $C$, clearly indicating the coordinates of the stationary points and the points where the curve crosses the coordinate axes.<br><br><strong>Part (c)</strong> Without performing the integration, state whether the integral below is positive or negative, giving a clear reason for your answer:$$\\int_{2}^{6} (x^3 - 6x^2) \\text{d}x$$",
+    "steps": [
+      "<strong>Step 1: Find the first derivative of the function</strong><br>To find the stationary points, we first differentiate $f(x) = x^3 - 6x^2$ with respect to $x$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 3x^2 - 12x \\end{aligned}",
+      "<strong>Step 2: Solve for the stationary points</strong><br>Set the first derivative equal to zero to find the critical values of $x$:\\begin{aligned} 3x^2 - 12x &= 0 \\cr 3x(x - 4) &= 0 \\cr x &= 0 \\cr x &= 4 \\end{aligned}<br>Substitute these values of $x$ back into the original equation to find their corresponding $y$-coordinates:<br><br><strong>For $x = 0$:</strong>\\begin{aligned} y &= 0^3 - 6(0)^2 \\cr &= 0 \\implies (0, 0) \\end{aligned}<br><strong>For $x = 4$:</strong>\\begin{aligned} y &= 4^3 - 6(4)^2 \\cr &= 64 - 96 \\cr &= -32 \\implies (4, -32) \\end{aligned}",
+      "<strong>Step 3: Determine the nature of the stationary points</strong><br>Find the second derivative of the function:\\begin{aligned} \\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 6x - 12 \\end{aligned}Evaluate the second derivative at each critical point:<br><br><strong>At $x = 0$:</strong>\\begin{aligned} \\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 6(0) - 12 \\cr &= -12 < 0 \\cr &\\implies (0, 0) \\text{ is a local maximum} \\end{aligned}<br><strong>At $x = 4$:</strong>\\begin{aligned} \\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 6(4) - 12 \\cr &= 12 > 0 \\cr &\\implies (4, -32) \\text{ is a local minimum} \\end{aligned}",
+      "<strong>Step 4: Find the coordinate intercepts and sketch the curve</strong><br>Find where the curve crosses the axes:<br><br><strong>To find the $y$-intercept, set $x = 0$:</strong>\\begin{aligned} y &= 0^3 - 6(0)^2 \\cr &= 0 \\implies (0, 0) \\end{aligned}<br><strong>To find the $x$-intercepts, set $y = 0$:</strong>\\begin{aligned} x^3 - 6x^2 &= 0 \\cr x^2(x - 6) &= 0 \\end{aligned}This gives the intercepts $x = 0$ (touching point) and $x = 6$ (crossing point) at:$$(0, 0) \\quad \\text{and} \\quad (6, 0)$$Using these key features, the sketch of the curve $C$ is shown below:<br><br><img src='images/Pure_SVGs/004351_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+      "<strong>Step 5: Determine the sign of the definite integral</strong><br>Over the interval $[2, 6]$, the curve lies entirely on or below the $x$-axis (since the intercepts are at $0$ and $6$, and the local minimum is at $(4, -32)$). Since the area is located entirely beneath the $x$-axis, the value of the integral must be <strong>negative</strong>.",
+      "Final Answer: \\begin{aligned} &(0, 0) \\text{ (local maximum)} \\cr &(4, -32) \\text{ (local minimum)} \\cr &\\text{Intercepts: } (0, 0), \\; (6, 0) \\cr &\\text{Integral is negative} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &(0, 0) \\text{ (min)}, \\; (4, -32) \\text{ (max)} \\cr &\\text{Intercepts: } (0, 0), \\; (6, 0) \\cr &\\text{Integral: Negative} \\end{aligned}",
+        "feedback": "Check your second derivative test. At $x = 0$, $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = -12 < 0$, which means $(0, 0)$ must be a local maximum, not a minimum. At $x = 4$, $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = 12 > 0$, making $(4, -32)$ a local minimum, not a maximum."
+      },
+      {
+        "ans": "\\begin{aligned} &(0, 0) \\text{ (max)}, \\; (4, -32) \\text{ (min)} \\cr &\\text{Intercepts: } (0, 0), \\; (6, 0) \\cr &\\text{Integral: Positive} \\end{aligned}",
+        "feedback": "Your stationary points are correct, but look closely at the graph between $x = 2$ and $x = 6$. The curve lies entirely below the $x$-axis in this interval. Since definite integration calculates the signed area, any area below the $x$-axis evaluates to a negative value."
+      },
+      {
+        "ans": "\\begin{aligned} &(0, 0) \\text{ (max)}, \\; (4, -16) \\text{ (min)} \\cr &\\text{Intercepts: } (0, 0), \\; (6, 0) \\cr &\\text{Integral: Negative} \\end{aligned}",
+        "feedback": "Check your calculation of the $y$-coordinate for the stationary point at $x = 4$. Substituting $x = 4$ into $y = x^3 - 6x^2$ gives $64 - 96 = -32$, not $-16$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Qualitative Integration",
+      "content": "To determine the sign of a definite integral qualitatively, always look at your sketch. If the curve lies entirely below the $x$-axis over the boundaries of integration, the integral evaluates to a negative value. There is no need to calculate the actual integral."
+    }
+  },
+  {
+    "id": "004352",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Functions and Graphs",
+    "subtopic": [
+      "Curved Graphs",
+      "Differentiation",
+      "Root Analysis"
+    ],
+    "img": false,
+    "question": "A curve $C$ has equation $y = 2x^3 - 3x^2 - 12x + 8$.<br><br><strong>Part (a)</strong> Find the coordinates of the stationary points of $C$ and determine their nature.<br><br><strong>Part (b)</strong> Sketch the curve $C$, clearly indicating the coordinates of the stationary points and the $y$-intercept.<br><br><strong>Part (c)</strong> Using your sketch, state the number of distinct real roots of the equation $2x^3 - 3x^2 - 12x + 8 = 0$, giving a clear reason for your answer.",
+    "steps": [
+      "<strong>Step 1: Differentiate the function</strong><br>Find the first derivative of $y = 2x^3 - 3x^2 - 12x + 8$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 6x^2 - 6x - 12 \\end{aligned}",
+      "<strong>Step 2: Solve for the stationary points</strong><br>Set the derivative equal to zero and factorise to find the critical values of $x$:\\begin{aligned} 6(x^2 - x - 2) &= 0 \\cr 6(x - 2)(x + 1) &= 0 \\cr x &= 2 \\cr x &= -1 \\end{aligned}<br>Substitute these values of $x$ back into the original equation to find their corresponding $y$-coordinates:<br><br><strong>For $x = -1$:</strong>\\begin{aligned} y &= 2(-1)^3 - 3(-1)^2 - 12(-1) + 8 \\cr &= -2 - 3 + 12 + 8 \\cr &= 15 \\implies (-1, 15) \\end{aligned}<br><strong>For $x = 2$:</strong>\\begin{aligned} y &= 2(2)^3 - 3(2)^2 - 12(2) + 8 \\cr &= 16 - 12 - 24 + 8 \\cr &= -12 \\implies (2, -12) \\end{aligned}",
+      "<strong>Step 3: Determine the nature of the stationary points</strong><br>Find the second derivative:\\begin{aligned} \\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 12x - 6 \\end{aligned}Evaluate the second derivative at each critical value:<br><br><strong>At $x = -1$:</strong>\\begin{aligned} \\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 12(-1) - 6 \\cr &= -18 < 0 \\cr &\\implies (-1, 15) \\text{ is a local maximum} \\end{aligned}<br><strong>At $x = 2$:</strong>\\begin{aligned} \\dfrac{\\text{d}^2y}{\\text{d}x^2} &= 12(2) - 6 \\cr &= 18 > 0 \\cr &\\implies (2, -12) \\text{ is a local minimum} \\end{aligned}",
+      "<strong>Step 4: Sketch the curve</strong><br>Find the $y$-intercept by setting $x = 0$:\\begin{aligned} y &= 2(0)^3 - 3(0)^2 - 12(0) + 8 \\cr &= 8 \\implies (0, 8) \\end{aligned}Sketch the positive cubic shape passing through the maximum $(-1, 15)$, the intercept $(0, 8)$, and the minimum $(2, -12)$:<br><br><img src='images/Pure_SVGs/004352_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+      "<strong>Step 5: Determine the number of real roots</strong><br>From the sketch, we observe that the local maximum $y$-value is positive ($15$) and the local minimum $y$-value is negative ($-12$). Since the curve must cross the $x$-axis between these values, it intersects the $x$-axis exactly **three** times. Therefore, there are exactly <strong>three distinct real roots</strong>.",
+      "Final Answer: \\begin{aligned} &(-1, 15) \\text{ (local maximum)} \\cr &(2, -12) \\text{ (local minimum)} \\cr &y\\text{-intercept: } (0, 8) \\cr &\\text{3 distinct real roots} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &(-1, 15) \\text{ (max)}, \\; (2, -12) \\text{ (min)} \\cr &y\\text{-intercept: } (0, 8) \\cr &\\text{Roots: } 1 \\end{aligned}",
+        "feedback": "Your stationary points and intercept are correct, but think about the shape. Since the local maximum lies above the $x$-axis ($y = 15$) and the local minimum lies below the $x$-axis ($y = -12$), the curve must transition from positive to negative, crossing the $x$-axis 3 times in total."
+      },
+      {
+        "ans": "\\begin{aligned} &(-1, 9) \\text{ (max)}, \\; (2, -12) \\text{ (min)} \\cr &y\\text{-intercept: } (0, 8) \\cr &\\text{Roots: } 3 \\end{aligned}",
+        "feedback": "Check your calculation of the $y$-coordinate for $x = -1$. Evaluating $y = 2(-1)^3 - 3(-1)^2 - 12(-1) + 8$ gives $-2 - 3 + 12 + 8 = 15$, not $9$."
+      },
+      {
+        "ans": "\\begin{aligned} &(-1, 15) \\text{ (min)}, \\; (2, -12) \\text{ (max)} \\cr &y\\text{-intercept: } (0, 8) \\cr &\\text{Roots: } 3 \\end{aligned}",
+        "feedback": "Check your second derivative test. Since $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = 12x - 6$, at $x = -1$ we get $-18 < 0$, making it a local maximum. At $x = 2$ we get $18 > 0$, making it a local minimum."
+      }
+    ],
+    "bradley_insight": {
+      "type": "deeper",
+      "title": "The Head Teacher's Eye: Stationary Points and Roots",
+      "content": "The coordinates of the local turning points of a cubic equation are a powerful tool for determining the number of roots. If $y_{\\text{max}} \\cdot y_{\\text{min}} < 0$, the cubic must cross the $x$-axis three times (3 real roots). If $y_{\\text{max}} \\cdot y_{\\text{min}} > 0$, it only crosses once (1 real root)."
+    }
+  },
+  {
+    "id": "004353",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Functions and Graphs",
+    "subtopic": [
+      "Curved Graphs",
+      "Differentiation",
+      "Integration"
+    ],
+    "img": false,
+    "question": "A curve $C$ has equation $y = 12x - x^3$.<br><br><strong>Part (a)</strong> Find the coordinates of the stationary points of $C$ and determine their nature.<br><br><strong>Part (b)</strong> Sketch the curve $C$, clearly indicating the coordinates of the stationary points and the points where the curve crosses the coordinate axes.<br><br><strong>Part (c)</strong> Without performing the integration, state whether the integral below is positive or negative, giving a clear reason for your answer:$$\\int_{0}^{\\sqrt{12}} (12x - x^3) \\text{d}x$$",
+    "steps": [
+      "<strong>Step 1: Differentiate the function</strong><br>Differentiate $y = 12x - x^3$ with respect to $x$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 12 - 3x^2 \\end{aligned}",
+      "<strong>Step 2: Find the stationary points</strong><br>Set the derivative equal to zero to find the critical values of $x$:\\begin{aligned} 12 - 3x^2 &= 0 \\cr 3(4 - x^2) &= 0 \\cr x &= 2 \\cr x &= -2 \\end{aligned}<br>Substitute these back into the original equation to find their $y$-coordinates:<br><br><strong>For $x = 2$:</strong>\\begin{aligned} y &= 12(2) - 2^3 \\cr &= 24 - 8 \\cr &= 16 \\implies (2, 16) \\end{aligned}<br><strong>For $x = -2$:</strong>\\begin{aligned} y &= 12(-2) - (-2)^3 \\cr &= -24 - (-8) \\cr &= -16 \\implies (-2, -16) \\end{aligned}",
+      "<strong>Step 3: Determine the nature of the stationary points</strong><br>Find the second derivative of the curve:\\begin{aligned} \\dfrac{\\text{d}^2y}{\\text{d}x^2} &= -6x \\end{aligned}Evaluate the second derivative at each critical point:<br><br><strong>At $x = 2$:</strong>\\begin{aligned} \\dfrac{\\text{d}^2y}{\\text{d}x^2} &= -6(2) \\cr &= -12 < 0 \\cr &\\implies (2, 16) \\text{ is a local maximum} \\end{aligned}<br><strong>At $x = -2$:</strong>\\begin{aligned} \\dfrac{\\text{d}^2y}{\\text{d}x^2} &= -6(-2) \\cr &= 12 > 0 \\cr &\\implies (-2, -16) \\text{ is a local minimum} \\end{aligned}",
+      "<strong>Step 4: Determine coordinate intercepts and sketch</strong><br>Find where the curve crosses the axes:<br><br><strong>To find the $y$-intercept, set $x = 0$:</strong>\\begin{aligned} y &= 12(0) - 0^3 \\cr &= 0 \\implies (0, 0) \\end{aligned}<br><strong>To find the $x$-intercepts, set $y = 0$:</strong>\\begin{aligned} 12x - x^3 &= 0 \\cr x(12 - x^2) &= 0 \\end{aligned}This gives the intercepts $x = 0$ or $x = \\pm\\sqrt{12} \\approx \\pm 3.46$.<br><br>Using these features, the sketch of the curve $C$ is shown below:<br><br><img src='images/Pure_SVGs/004353_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+      "<strong>Step 5: Determine the sign of the definite integral</strong><br>Over the interval $[0, \\sqrt{12}]$, the curve lies entirely on or above the $x$-axis (since the boundary roots are at $0$ and $\\sqrt{12}$, and the local maximum at $x = 2$ is positive). Since the area is located entirely above the $x$-axis, the integral must be <strong>positive</strong>.",
+      "Final Answer: \\begin{aligned} &(2, 16) \\text{ (local maximum)} \\cr &(-2, -16) \\text{ (local minimum)} \\cr &\\text{Intercepts: } (0, 0), \\; (\\pm\\sqrt{12}, 0) \\cr &\\text{Integral is positive} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &(2, 16) \\text{ (max)}, \\; (-2, -32) \\text{ (min)} \\cr &\\text{Intercepts: } (0, 0), \\; (\\pm\\sqrt{12}, 0) \\cr &\\text{Integral: Positive} \\end{aligned}",
+        "feedback": "Be very careful with sign evaluation. Substituting $x = -2$ into $y = 12x - x^3$ gives $-24 - (-8) = -16$, not $-32$. This is a very common sign error when cubing negative bases."
+      },
+      {
+        "ans": "\\begin{aligned} &(2, 16) \\text{ (max)}, \\; (-2, -16) \\text{ (min)} \\cr &\\text{Intercepts: } (0, 0), \\; (\\pm\\sqrt{12}, 0) \\cr &\\text{Integral: Negative} \\end{aligned}",
+        "feedback": "Your stationary points are correct, but check the sign of the integral over the interval $[0, \\sqrt{12}]$. Within this domain, the function lies above the $x$-axis, meaning the signed area must be positive."
+      },
+      {
+        "ans": "\\begin{aligned} &(2, 16) \\text{ (min)}, \\; (-2, -16) \\text{ (max)} \\cr &\\text{Intercepts: } (0, 0), \\; (\\pm\\sqrt{12}, 0) \\cr &\\text{Integral: Positive} \\end{aligned}",
+        "feedback": "Check your second derivative test. Since $\\dfrac{\\text{d}^2y}{\\text{d}x^2} = -6x$, at $x = 2$ we get $-12 < 0 \\implies$ local maximum, and at $x = -2$ we get $12 > 0 \\implies$ local minimum."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Cubing Negative Numbers",
+      "content": "When evaluating terms like $-x^3$ with a negative value of $x$, always write out the expansion step-by-step: $-(-2)^3 = -(-8) = +8$. Forgetting that cubing a negative base maintains the negative sign is one of the most common ways to lose marks."
+    }
+  },
+  {
+    "id": "004354",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions and Graphs",
+    "subtopic": [
+      "Curved Graphs"
+    ],
+    "img": false,
+    "question": "A curve $C$ has equation $y = 2 + \\dfrac{1}{x - 1}$.<br><br><strong>Part (a)</strong> State the equations of the vertical and horizontal asymptotes of $C$.<br><br><strong>Part (b)</strong> Find the coordinates of the points where $C$ crosses the coordinate axes.<br><br><strong>Part (c)</strong> Sketch the curve $C$, clearly indicating the asymptotes and the coordinates of the intersection points with the coordinate axes.",
+    "steps": [
+      "<strong>Step 1: Identify the asymptotes</strong><br>The vertical asymptote occurs where the denominator of the fraction is equal to zero, causing the function to be undefined:\\begin{aligned} x - 1 &= 0 \\cr x &= 1 \\end{aligned}The horizontal asymptote is found by observing the behavior of $y$ as $x \\to \\pm\\infty$. As $x$ becomes extremely large, $\\dfrac{1}{x - 1} \\to 0$:\\begin{aligned} y \\to 2 \\end{aligned}",
+      "<strong>Step 2: Find the axis intercepts</strong><br>To find the $y$-intercept, set $x = 0$:\\begin{aligned} y &= 2 + \\dfrac{1}{0 - 1} \\cr &= 2 - 1 \\cr &= 1 \\implies (0, 1) \\end{aligned}<br><strong>To find the $x$-intercept, set $y = 0$:</strong>\\begin{aligned} 0 &= 2 + \\dfrac{1}{x - 1} \\cr \\dfrac{1}{x - 1} &= -2 \\cr x - 1 &= -0.5 \\cr x &= 0.5 \\implies (0.5, 0) \\end{aligned}",
+      "<strong>Step 3: Sketch the curve</strong><br>This is a translated reciprocal curve of $y = \\dfrac{1}{x}$. Draw the asymptotes $x = 1$ and $y = 2$ as dashed lines, and sketch the branches passing through $(0, 1)$ and $(0.5, 0)$:<br><br><img src='images/Pure_SVGs/004354_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+      "Final Answer: \\begin{aligned} &\\text{Asymptotes: } x = 1, \\; y = 2 \\cr &y\\text{-intercept: } (0, 1) \\cr &x\\text{-intercept: } (0.5, 0) \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{Asymptotes: } x = 1, \\; y = 2 \\cr &\\text{Intercepts: } (0, -1), \\; (0.5, 0) \\end{aligned}",
+        "feedback": "Check your $y$-intercept calculation. When $x = 0$, $y = 2 - 1 = 1$, not $-1$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{Asymptotes: } x = -1, \\; y = 2 \\cr &\\text{Intercepts: } (0, 1), \\; (0.5, 0) \\end{aligned}",
+        "feedback": "Check your vertical asymptote. The denominator is $x - 1$, which is undefined when $x = 1$, so the vertical asymptote is $x = 1$, not $x = -1$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{Asymptotes: } x = 1, \\; y = 2 \\cr &\\text{Intercepts: } (0, 1), \\; (2, 0) \\end{aligned}",
+        "feedback": "Check your algebra when solving for the $x$-intercept. Setting $y = 0$ gives $\\dfrac{1}{x - 1} = -2$, so $x - 1 = -0.5$, which yields $x = 0.5$, not $2$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Asymptote Anchors",
+      "content": "When sketching reciprocal functions, always draw the asymptotes first as dashed lines and label them with their equations. These act as boundaries that anchor your curve branches, ensuring your sketch is neat and mathematically accurate."
+    }
+  },
+  {
+    "id": "004355",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Functions and Graphs",
+    "subtopic": [
+      "Differentiation",
+      "Graph Transformations",
+      "Quadratics"
+    ],
+    "img": false,
+    "question": "A curve $C$ has equation $y = f(x)$, where $f(x) = 9 - x^2$.<br><br><strong>Part (a)</strong> Sketch the graph of $y = f(x)$, indicating the coordinates of the turning point and the intercepts with the axes.<br><br><strong>Part (b)</strong> On separate sets of axes, sketch the graphs of:<ul><li>(i) $y = f(x) - 4$</li><li>(ii) $y = f(x + 2)$</li></ul>showing clearly the coordinates of the new turning points in each case.",
+    "steps": [
+      "<strong>Step 1: Sketch the primary curve $y = f(x)$</strong><br>The function $f(x) = 9 - x^2$ is an inverted parabola (negative quadratic). To find the intercepts and turning point:<br><br><strong>Maximum Turning Point:</strong><br>The curve is an inverted parabola with its maximum turning point on the $y$-axis at $(0, 9)$.<br><br><strong>$y$-intercept:</strong><br>Setting $x = 0 \\implies y = 9 \\implies (0, 9)$.<br><br><strong>$x$-intercepts:</strong><br>To find the $x$-intercepts, set $y = 0$:\\begin{aligned} 9 - x^2 &= 0 \\cr x^2 &= 9 \\cr x &= \\pm 3 \\implies (3, 0), \\; (-3, 0) \\end{aligned}",
+      "<strong>Step 2: Understand the transformations</strong><br>We apply standard function transformation rules:<ul><li>(i) $y = f(x) - 4$: This represents a vertical translation downwards by $4$ units. The turning point shifts from $(0, 9)$ down to $(0, 5)$.</li><li>(ii) $y = f(x + 2)$: This represents a horizontal translation to the left by $2$ units. The turning point shifts from $(0, 9)$ left to $(-2, 9)$.</li></ul>",
+      "<strong>Step 3: Sketch the transformed curves</strong><br>The separate sets of axes for the original function and its two transformations are shown side-by-side below:<br><br><img src='images/Pure_SVGs/004355_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+      "Final Answer: \\begin{aligned} &\\text{Turning point: } (0, 9) \\cr &\\text{Intercepts: } (0, 9), \\; (3, 0), \\; (-3, 0) \\cr &\\text{(i) Turning point: } (0, 5) \\cr &\\text{(ii) Turning point: } (-2, 9) \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{Turning point: } (0, 9) \\cr &\\text{(i) Turning point: } (0, 5) \\cr &\\text{(ii) Turning point: } (2, 9) \\end{aligned}",
+        "feedback": "Be careful with horizontal transformations. The graph of $f(x + a)$ represents a horizontal translation of $a$ units to the left (negative direction), so the turning point shifts to $(-2, 9)$, not $(2, 9)$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{Turning point: } (0, 9) \\cr &\\text{(i) Turning point: } (4, 9) \\cr &\\text{(ii) Turning point: } (-2, 9) \\end{aligned}",
+        "feedback": "Check your transformation directions. The graph of $f(x) - a$ is a vertical shift downwards, which modifies the $y$-coordinate of the turning point to $(0, 5)$, not the $x$-coordinate."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{Turning point: } (0, 9) \\cr &\\text{(i) Turning point: } (0, 13) \\cr &\\text{(ii) Turning point: } (-2, 9) \\end{aligned}",
+        "feedback": "Check the sign of your vertical translation. Subtracting $4$ from $f(x)$ shifts the curve down, so the $y$-coordinate should be $9 - 4 = 5$, not $9 + 4 = 13$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Horizontal Shifting",
+      "content": "Horizontal translations often confuse students because they seem counter-intuitive: $f(x + a)$ shifts the graph $a$ units to the left (negative direction), while $f(x - a)$ shifts the graph $a$ units to the right (positive direction). Always double-check your horizontal shift direction."
+    }
+  },
         {
                 "id": "004356",
                 "board": "WJEC",
