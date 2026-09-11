@@ -625,10 +625,10 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Pure",
     "level": "AS",
     "major_area": "Integration",
-    "topic": "Integration",
+    "topic": "Definite Integration",
     "subtopic": [
       "Curved Graphs",
-      "Integration"
+      "Area between a Curve and a Line"
     ],
     "img": "images/Pure_SVGs/004316.svg",
     "question": "In this question you must show detailed reasoning.<br><br>The diagram shows a sketch of the curve $C$ with equation $y = 5 + 4x - x^2$ and the line $L$ with equation $y = x + 1$. The line intersects the curve at the points $A$ and $B$.<br><br>1. Find the coordinates of $A$ and $B$.<br><br>2. Calculate the exact area of the region enclosed by the curve $C$ and the line $L$.",
@@ -637,8 +637,8 @@ window.ALEVEL_QUESTIONS = [
       "This yields two $x$-coordinates: $x = 4$ and $x = -1$. Substitute these back into the linear equation $y = x + 1$ to find the corresponding $y$-coordinates:<br><br><ul><li>For $x = 4$: $y = 5 \\implies B(4, 5)$</li><li>For $x = -1$: $y = 0 \\implies A(-1, 0)$</li></ul><br>Thus, the coordinates of the intersection points are $A(-1, 0)$ and $B(4, 5)$.",
       "To find the enclosed area, integrate the difference between the upper curve $C$ and the lower line $L$ over the interval $[-1, 4]$:\\begin{aligned} &\\text{Area} \\cr &\\quad = \\int_{-1}^{4} \\big[ (5 + 4x - x^2) \\cr &\\qquad\\qquad - (x + 1) \\big] \\text{d}x \\cr &\\quad = \\int_{-1}^{4} (4 + 3x - x^2) \\text{d}x \\end{aligned}",
       "Integrate the polynomial expression term by term:\\begin{aligned} \\text{Area} &= \\left[ 4x + \\dfrac{3}{2}x^2 - \\dfrac{1}{3}x^3 \\right]_{-1}^{4} \\end{aligned}",
-      "Evaluate the integrated expression at the upper limit $x = 4$:\\begin{aligned} \\text{Upper Limit} &= 4(4) + \\dfrac{3}{2}(16) - \\dfrac{1}{3}(64) \\cr &= 16 + 24 - \\dfrac{64}{3} \\cr &= 40 - \\dfrac{64}{3} \\cr &= \\dfrac{120 - 64}{3} \\cr &= \\dfrac{56}{3} \\end{aligned}",
-      "Evaluate the integrated expression at the lower limit $x = -1$:\\begin{aligned} \\text{Lower Limit} &= 4(-1) + \\dfrac{3}{2}(-1)^2 - \\dfrac{1}{3}(-1)^3 \\cr &= -4 + \\dfrac{3}{2} + \\dfrac{1}{3} \\cr &= -4 + \\dfrac{9}{6} + \\dfrac{2}{6} \\cr &= -4 + \\dfrac{11}{6} \\cr &= -\\dfrac{13}{6} \\end{aligned}",
+      "Evaluate the integrated expression at the upper limit $x = 4$:\\begin{aligned} \\text{Limit}_U &= 4(4) + \\dfrac{3}{2}(16) - \\dfrac{1}{3}(64) \\cr &= 16 + 24 - \\dfrac{64}{3} \\cr &= 40 - \\dfrac{64}{3} \\cr &= \\dfrac{120 - 64}{3} \\cr &= \\dfrac{56}{3} \\end{aligned}",
+      "Evaluate the integrated expression at the lower limit $x = -1$:\\begin{aligned} \\text{Limit}_L &= 4(-1) + \\dfrac{3}{2}(-1)^2 - \\dfrac{1}{3}(-1)^3 \\cr &= -4 + \\dfrac{3}{2} + \\dfrac{1}{3} \\cr &= -4 + \\dfrac{9}{6} + \\dfrac{2}{6} \\cr &= -4 + \\dfrac{11}{6} \\cr &= -\\dfrac{13}{6} \\end{aligned}",
       "Subtract the lower limit evaluation from the upper limit evaluation to find the exact area of the enclosed region:\\begin{aligned} \\text{Area} &= \\dfrac{56}{3} - \\left( -\\dfrac{13}{6} \\right) \\cr &= \\dfrac{112}{6} + \\dfrac{13}{6} \\cr &= \\dfrac{125}{6} \\end{aligned}",
       "Final Answer: \\begin{aligned} &A(-1, 0) \\cr &B(4, 5) \\cr &\\text{Area} = \\dfrac{125}{6} \\end{aligned}"
     ],
