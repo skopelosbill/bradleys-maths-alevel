@@ -1839,7 +1839,8 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Algebra and Functions",
     "topic": "Equations and Inequalities",
     "subtopic": [
-      "Quadratics"
+      "Quadratics",
+      "Discriminants"
     ],
     "img": false,
     "question": "In this question you must show detailed reasoning.<br><br>Find the range of values of $k$ for which the quadratic equation $x^2 + 2kx + 12k = 0$ has no real roots.",
@@ -1877,7 +1878,8 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Algebra and Functions",
     "topic": "Equations and Inequalities",
     "subtopic": [
-      "Quadratics"
+      "Quadratics",
+      "Discriminants"
     ],
     "img": false,
     "question": "In this question you must show detailed reasoning.<br><br>Find the range of values of $k$ for which the quadratic equation $x^2 + 2kx + (3k + 4) = 0$ has two distinct real roots.",
@@ -1915,7 +1917,8 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Algebra and Functions",
     "topic": "Equations and Inequalities",
     "subtopic": [
-      "Quadratics"
+      "Quadratics",
+      "Discriminants"
     ],
     "img": false,
     "question": "In this question you must show detailed reasoning.<br><br>Find the range of values of $k$ for which the quadratic equation $kx^2 + 6x + (k - 8) = 0$ has no real roots.",
@@ -1953,7 +1956,8 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Algebra and Functions",
     "topic": "Equations and Inequalities",
     "subtopic": [
-      "Quadratics"
+      "Quadratics",
+      "Discriminants"
     ],
     "img": false,
     "question": "In this question you must show detailed reasoning.<br><br>The quadratic equation $(k + 1)x^2 + 4kx + (2k + 3) = 0$ has equal roots. Find the possible values of $k$.",
@@ -1991,7 +1995,8 @@ window.ALEVEL_QUESTIONS = [
     "major_area": "Algebra and Functions",
     "topic": "Equations and Inequalities",
     "subtopic": [
-      "Curved Graphs"
+      "Quadratics",
+      "Discriminants"
     ],
     "img": false,
     "question": "In this question you must show detailed reasoning.<br><br>Find the range of values of $k$ for which the line $y = kx - 1$ does not intersect the curve $y = x^2 + 4x + 8$.",
