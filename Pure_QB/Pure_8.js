@@ -1944,4 +1944,5 @@ window.ALEVEL_QUESTIONS = [
                         "content": "The identity $\\log_a \\left( \\dfrac{ 1 }{ x } \\right) = -\\log_a x$ is an extremely powerful simplification shortcut. It allows you to convert division-based logarithmic problems into simple subtraction-based equations, avoiding complex fractional equations in intermediate steps."
                 }
         }
+        
 ];
