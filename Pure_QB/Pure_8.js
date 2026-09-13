@@ -1180,199 +1180,204 @@ window.ALEVEL_QUESTIONS = [
   }
 },
         {
-                "id": "004381",
-                "board": "CCEA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Linear Equations"
-                ],
-                "img": false,
-                "question": "Solve the following simultaneous equations:<br>$$2x + y - z = 5$$<br>$$x - 2y + 3z = -6$$<br>$$3x + y + 2z = 3$$<br><br>Show all of your algebraic working clearly.",
-                "steps": [
-                        "We label our three equations to keep our working organized:<br>1. $2x + y - z = 5$<br>2. $x - 2y + 3z = -6$<br>3. $3x + y + 2z = 3$",
-                        "<strong>Step 1: Eliminate $y$ using Equations 1 and 3</strong><br><br>Rearrange Equation 1 to express $y$ in terms of $x$ and $z$:<br>\\begin{aligned} y = 5 - 2x + z \\end{aligned}<br><br>Substitute this expression into Equation 3:<br>\\begin{aligned} 3x + (5 - 2x + z) + 2z &= 3 \\cr 3x + 5 - 2x + z + 2z &= 3 \\cr x + 3z + 5 &= 3 \\cr x + 3z &= -2 \\end{aligned}<br><br>We call this Equation 4: $x + 3z = -2$. Rearranging gives:<br>\\begin{aligned} x = -2 - 3z \\end{aligned}",
-                        "<strong>Step 2: Substitute our expressions into Equation 2</strong><br><br>Now, substitute $y = 5 - 2x + z$ and $x = -2 - 3z$ into Equation 2:<br>\\begin{aligned} x - 2y + 3z &= -6 \\cr (-2 - 3z) - 2(5 - 2x + z) + 3z &= -6 \\end{aligned}<br><br>First, replace the $x$ inside the parentheses:<br>\\begin{aligned} y &= 5 - 2(-2 - 3z) + z \\cr &= 5 + 4 + 6z + z \\cr &= 9 + 7z \\end{aligned}<br><br>Substitute $y = 9 + 7z$ and $x = -2 - 3z$ directly into Equation 2:<br>\\begin{aligned} (-2 - 3z) - 2(9 + 7z) + 3z &= -6 \\cr -2 - 3z - 18 - 14z + 3z &= -6 \\cr -20 - 14z &= -6 \\cr -14z &= 14 \\cr z &= -1 \\end{aligned}",
-                        "<strong>Step 3: Solve for $x$ and $y$</strong><br><br>Substitute $z = -1$ back into our expression for $x$:<br>\\begin{aligned} x &= -2 - 3(-1) \\cr x &= -2 + 3 \\cr x &= 1 \\end{aligned}<br><br>Substitute $x = 1$ and $z = -1$ back into our expression for $y$ (Equation 1):<br>\\begin{aligned} y &= 5 - 2(1) + (-1) \\cr y &= 5 - 2 - 1 \\cr y &= 2 \\end{aligned}<br><br>Thus, the solutions are $x = 1, y = 2, z = -1$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$x = 2, y = -1, z = 3$",
-                                "feedback": "This error typically arises if you make a sign error when rearranging the first equation (e.g., writing $y = 5 + 2x - z$ instead of $y = 5 - 2x + z$) and then carry this mistake through the rest of the elimination steps."
-                        },
-                        {
-                                "ans": "$x = 1, y = 2, z = 1$",
-                                "feedback": "This error is typically caused by a sign slip when substituting intermediate expressions, which leads to an incorrect value for $z$ (such as positive $1$ instead of $-1$)."
-                        },
-                        {
-                                "ans": "$x = -1, y = 2, z = -1$",
-                                "feedback": "This error occurs if you make a calculation slip when evaluating the linear equation $x + 3z = -2$. Double-check that substituting $z = -1$ yields $x - 3 = -2 \\implies x = 1$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "Systematic Variable Substitution",
-                        "content": "When solving simultaneous equations in three variables, choose the variable that is easiest to isolate (usually one with a coefficient of $1$ or $-1$). Isolate it, substitute it into the other two equations, and you will reduce the problem to a standard two-variable simultaneous system."
-                }
-        },
-        {
-                "id": "004382",
-                "board": "CCEA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Algebraic Methods"
-                ],
-                "img": false,
-                "question": "Solve the simultaneous equations:<br>$$x + 3y + z = 1$$<br>$$2x - y = 8$$<br>$$x - 2y - z = 3$$",
-                "steps": [
-                        "We label our three equations to analyze the system:<br>1. $x + 3y + z = 1$<br>2. $2x - y = 8$<br>3. $x - 2y - z = 3$",
-                        "<strong>Step 1: Eliminate $z$ using Equations 1 and 3</strong><br><br>Notice that Equation 2 does not contain the variable $z$. We can easily eliminate $z$ from the other two equations by adding Equation 1 and Equation 3 directly:<br>\\begin{aligned} (x + 3y + z) + (x - 2y - z) &= 1 + 3 \\cr 2x + y &= 4 \\end{aligned}<br><br>We call this Equation 4: $2x + y = 4$.",
-                        "<strong>Step 2: Solve the two-variable system</strong><br><br>We now have a simple system of two simultaneous equations in terms of $x$ and $y$:<br>\\begin{aligned} 2x - y &= 8 \\quad \\text{(Equation 2)} \\cr 2x + y &= 4 \\quad \\text{(Equation 4)} \\end{aligned}<br><br>Add Equation 2 and Equation 4 to eliminate $y$:<br>\\begin{aligned} (2x - y) + (2x + y) &= 8 + 4 \\cr 4x &= 12 \\cr x &= 3 \\end{aligned}",
-                        "Substitute $x = 3$ back into Equation 4 to solve for $y$:<br>\\begin{aligned} 2(3) + y &= 4 \\cr 6 + y &= 4 \\cr y &= -2 \\end{aligned}",
-                        "<strong>Step 3: Solve for $z$</strong><br><br>Substitute $x = 3$ and $y = -2$ into Equation 1 to find $z$:<br>\\begin{aligned} x + 3y + z &= 1 \\cr 3 + 3(-2) + z &= 1 \\cr 3 - 6 + z &= 1 \\cr -3 + z &= 1 \\cr z &= 4 \\end{aligned}<br><br>Thus, the solutions are $x = 3, y = -2, z = 4$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$x = 3, y = -2, z = 1$",
-                                "feedback": "This is a calculation slip in the final step. Substituting $x = 3$ and $y = -2$ back into the first equation $x + 3y + z = 1$ yields $3 - 6 + z = 1 \\implies z = 4$, not $z = 1$."
-                        },
-                        {
-                                "ans": "$x = -3, y = 2, z = 4$",
-                                "feedback": "This represents a systemic sign error, which typically occurs if you subtract the simultaneous equations incorrectly or make a sign mistake during the initial algebraic rearrangement."
-                        },
-                        {
-                                "ans": "$x = 3, y = -2, z = -4$",
-                                "feedback": "This error occurs if you make a sign error when solving the final linear equation $-3 + z = 1$, mistakenly calculating $z = -4$ instead of $z = 4$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "Exploiting Missing Variables",
-                        "content": "If one of the equations in a three-variable system is already missing a variable (such as $z$ in $2x - y = 8$), do not use substitution. Instead, eliminate that exact same variable from the other two equations. This immediately creates a standard two-variable simultaneous system."
-                }
-        },
-        {
-                "id": "004383",
-                "board": "CCEA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Algebraic Methods"
-                ],
-                "img": false,
-                "question": "At a local cinema, ticket prices are £$x$ for children, £$y$ for students, and £$z$ for adults.<br><br>*   The cost of $1$ child ticket, $2$ student tickets, and $1$ adult ticket is £$26$.<br>*   The cost of $2$ child tickets, $1$ student ticket, and $3$ adult tickets is £$44$.<br>*   The cost of $3$ child tickets and $2$ adult tickets is £$32$.<br><br><strong>(a)</strong> Write down three equations in terms of $x$, $y$, and $z$ to represent this information.<br><br><strong>(b)</strong> Solve your equations algebraically to find the price of each type of ticket.",
-                "steps": [
-                        "<strong>Part (a): Writing the equations</strong><br><br>Translate each bullet point into an algebraic equation:<br>1. $x + 2y + z = 26$<br>2. $2x + y + 3z = 44$<br>3. $3x + 2z = 32$",
-                        "<strong>Part (b): Solving the system</strong><br><br>We notice that Equation 3 does not contain $y$. Let's express $z$ in terms of $x$ from Equation 3:<br>\\begin{aligned} 2z &= 32 - 3x \\cr z &= 16 - 1.5x \\end{aligned}",
-                        "Now, eliminate $y$ from Equations 1 and 2. Rearrange Equation 1 to express $y$:<br>\\begin{aligned} 2y = 26 - x - z \\implies y = 13 - 0.5x - 0.5z \\end{aligned}<br><br>Substitute this expression for $y$ into Equation 2:<br>\\begin{aligned} 2x + y + 3z &= 44 \\cr 2x + (13 - 0.5x - 0.5z) + 3z &= 44 \\cr 1.5x + 13 + 2.5z &= 44 \\cr 1.5x + 2.5z &= 31 \\end{aligned}",
-                        "Multiply this simplified equation by 2 to clear the decimals, forming Equation 4:<br>\\begin{aligned} 3x + 5z = 62 \\end{aligned}<br><br>Substitute our expression for $z$ ($z = 16 - 1.5x$) into Equation 4:<br>\\begin{aligned} 3x + 5(16 - 1.5x) &= 62 \\cr 3x + 80 - 7.5x &= 62 \\cr -4.5x + 80 &= 62 \\cr -4.5x &= -18 \\cr x &= 4 \\end{aligned}",
-                        "Now, find $y$ and $z$ by substituting $x = 4$ back into our expressions:<br><br>1. For $z$:<br>\\begin{aligned} z &= 16 - 1.5(4) \\cr z &= 16 - 6 \\cr z &= 10 \\end{aligned}<br><br>2. For $y$ (substituting $x = 4, z = 10$ into Equation 1):<br>\\begin{aligned} 4 + 2y + 10 &= 26 \\cr 14 + 2y &= 26 \\cr 2y &= 12 \\cr y &= 6 \\end{aligned}<br><br>Thus, the ticket prices are £$4$ for children, £$6$ for students, and £$10$ for adults."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "Child: £$5$, Student: £$5$, Adult: £$11$",
-                                "feedback": "This is a calculation error that typically occurs if you use early decimal rounding on fractions in intermediate steps or make an algebraic slip when combining the ticket cost equations."
-                        },
-                        {
-                                "ans": "Child: £$4$, Student: £$6$, Adult: £$8$",
-                                "feedback": "This is a substitution error when solving for the adult ticket price $z$. Substituting $x = 4$ into the third equation $3x + 2z = 32$ yields $12 + 2z = 32 \\implies 2z = 20 \\implies z = 10$, not $8$."
-                        },
-                        {
-                                "ans": "Child: £$6$, Student: £$4$, Adult: £$10$",
-                                "feedback": "This error occurs if you mix up the pricing variables $x$ (child tickets) and $y$ (student tickets) during the algebraic elimination process."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "Contextual Reality Checks",
-                        "content": "In real-world modeling questions, the solutions represent physical quantities (such as currency values, ages, or dimensions). Therefore, the answers are almost guaranteed to be positive, clean integers or simple fractions. If you calculate negative or highly complex decimal values, review your initial equations immediately."
-                }
-        },
-        {
-                "id": "004384",
-                "board": "CCEA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Curved Graphs"
-                ],
-                "img": false,
-                "question": "A quadratic curve has the equation:<br>$$y = ax^2 + bx + c$$<br>The curve passes through the three coordinates $(1, 2)$, $(2, 9)$, and $(-1, 0)$.<br><br><strong>(a)</strong> Show that these coordinates lead to the following system of linear equations:<br>$$a + b + c = 2$$<br>$$4a + 2b + c = 9$$<br>$$a - b + c = 0$$<br><strong>(b)</strong> Solve the system of equations algebraically to determine the values of $a$, $b$, and $c$.",
-                "steps": [
-                        "<strong>Part (a): Setting up the equations</strong><br><br>Substitute each coordinate $(x, y)$ into the quadratic curve equation $y = ax^2 + bx + c$:<br><br>1. For $(1, 2)$:<br>\\begin{aligned} 2 = a(1)^2 + b(1) + c \\implies a + b + c = 2 \\end{aligned}<br><br>2. For $(2, 9)$:<br>\\begin{aligned} 9 = a(2)^2 + b(2) + c \\implies 4a + 2b + c = 9 \\end{aligned}<br><br>3. For $(-1, 0)$:<br>\\begin{aligned} 0 = a(-1)^2 + b(-1) + c \\implies a - b + c = 0 \\end{aligned}<br><br>This confirms the system of equations.",
-                        "<strong>Part (b): Solving the system</strong><br><br>Label the three equations:<br>1. $a + b + c = 2$<br>2. $4a + 2b + c = 9$<br>3. $a - b + c = 0$",
-                        "Subtract Equation 3 from Equation 1 to eliminate $a$ and $c$ directly:<br>\\begin{aligned} (a + b + c) - (a - b + c) &= 2 - 0 \\cr 2b &= 2 \\cr b &= 1 \\end{aligned}",
-                        "Substitute $b = 1$ back into Equation 1 and Equation 2:<br><br>1. From Equation 1:<br>\\begin{aligned} a + 1 + c = 2 \\implies a + c = 1 \\implies c = 1 - a \\end{aligned}<br><br>2. From Equation 2:<br>\\begin{aligned} 4a + 2(1) + c = 9 \\implies 4a + c = 7 \\end{aligned}",
-                        "Substitute $c = 1 - a$ into our simplified Equation 2:<br>\\begin{aligned} 4a + (1 - a) &= 7 \\cr 3a + 1 &= 7 \\cr 3a &= 6 \\cr a &= 2 \\end{aligned}<br><br>Finally, solve for $c$:<br>\\begin{aligned} c = 1 - a = 1 - 2 = -1 \\end{aligned}<br><br>Thus, the values are $a = 2, b = 1, c = -1$. (The curve has the equation $y = 2x^2 + x - 1$)."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$a = 2, b = -1, c = 1$",
-                                "feedback": "This is a sign slip. Subtracting the third equation from the first equation $a + b + c - (a - b + c) = 2 - 0$ yields $2b = 2 \\implies b = 1$. Substituting this back yields $a = 2$ and $c = -1$."
-                        },
-                        {
-                                "ans": "$a = 3, b = 1, c = -2$",
-                                "feedback": "This error arises from an addition or subtraction error when simplifying the simultaneous equations (such as miscalculating the difference between the first and second equations)."
-                        },
-                        {
-                                "ans": "$a = 2, b = 1, c = 1$",
-                                "feedback": "This is a calculation error in evaluating $c$. Since $a - b + c = 0$, substituting $a=2, b=1$ yields $2 - 1 + c = 0 \\implies c = -1$, not $1$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "Curve Fitting and Simultaneous Linear Systems",
-                        "content": "Any polynomial curve of degree $n$ is uniquely determined by $n+1$ distinct points. For a quadratic curve (degree 2), we require exactly 3 points. Substituting these points yields a system of three linear equations, showing the direct link between coordinate geometry and linear algebra."
-                }
-        },
-        {
-                "id": "004385",
-                "board": "CCEA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Algebraic Methods"
-                ],
-                "img": false,
-                "question": "Solve the simultaneous equations:<br>$$x + 2y - z = 3$$<br>$$3x - y + 2z = -7$$<br>$$2x + 3y + 3z = 8$$",
-                "steps": [
-                        "We label our three equations to begin the algebraic elimination process:<br>1. $x + 2y - z = 3$<br>2. $3x - y + 2z = -7$<br>3. $2x + 3y + 3z = 8$",
-                        "<strong>Step 1: Express $z$ from Equation 1</strong><br><br>Equation 1 has a coefficient of $-1$ for $z$. Rearrange it to express $z$ in terms of $x$ and $y$:<br>\\begin{aligned} z = x + 2y - 3 \\end{aligned}",
-                        "<strong>Step 2: Substitute $z$ into Equations 2 and 3</strong><br><br>1. Substitute into Equation 2:<br>\\begin{aligned} 3x - y + 2(x + 2y - 3) &= -7 \\cr 3x - y + 2x + 4y - 6 &= -7 \\cr 5x + 3y &= -1 \\quad \\text{(Equation 4)} \\end{aligned}<br><br>2. Substitute into Equation 3:<br>\\begin{aligned} 2x + 3y + 3(x + 2y - 3) &= 8 \\cr 2x + 3y + 3x + 6y - 9 &= 8 \\cr 5x + 9y &= 17 \\quad \\text{(Equation 5)} \\end{aligned}",
-                        "<strong>Step 3: Solve the two-variable system</strong><br><br>We now have a simplified system of two equations:<br>\\begin{aligned} 5x + 3y &= -1 \\cr 5x + 9y &= 17 \\end{aligned}<br><br>Subtract Equation 4 from Equation 5 to eliminate the $x$ terms:<br>\\begin{aligned} (5x + 9y) - (5x + 3y) &= 17 - (-1) \\cr 6y &= 18 \\cr y &= 3 \\end{aligned}",
-                        "Substitute $y = 3$ back into Equation 4 to solve for $x$:<br>\\begin{aligned} 5x + 3(3) &= -1 \\cr 5x + 9 &= -1 \\cr 5x &= -10 \\cr x &= -2 \\end{aligned}<br><br>Substitute $x = -2$ and $y = 3$ back into our expression for $z$:<br>\\begin{aligned} z &= x + 2y - 3 \\cr z &= -2 + 2(3) - 3 \\cr z &= 1 \\end{aligned}<br><br>Thus, the solutions are $x = -2, y = 3, z = 1$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$x = -2, y = 3, z = -1$",
-                                "feedback": "This represents a sign error in the final step. Evaluating $z = x + 2y - 3$ with $x = -2$ and $y = 3$ yields $z = -2 + 6 - 3 = 1$, not $-1$."
-                        },
-                        {
-                                "ans": "$x = 2, y = -3, z = 1$",
-                                "feedback": "This is a global sign error. This can happen if you multiply equations by negative factors but fail to distribute the negative sign to all terms, or if you subtract the equations in the wrong order."
-                        },
-                        {
-                                "ans": "$x = -2, y = 1, z = 3$",
-                                "feedback": "This is a calculation slip when solving the two-variable simultaneous system $5x + 3y = -1$ and $5x + 9y = 17$, leading to incorrect values for $y$ and subsequently $z$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "Sign Distribution with Negative Values",
-                        "content": "When substituting expressions with negative values or subtracting simultaneous equations, always use parentheses: e.g., $17 - (-1) = 18$. Forgetting to distribute negative signs is the single most common cause of error in algebraic elimination."
-                }
-        },
+  "id": "004381",
+  "board": "CCEA",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Algebra and Functions",
+  "topic": "Algebraic Methods",
+  "subtopic": [
+    "Linear Equations"
+  ],
+  "img": false,
+  "question": "Solve the following simultaneous equations:\\begin{aligned} 2x + y - z &= 5 \\cr x - 2y + 3z &= -6 \\cr 3x + y + 2z &= 3 \\end{aligned}Show all of your algebraic working clearly.",
+  "steps": [
+    "We label our three equations to keep our working organized:<br><br>1. $2x + y - z = 5$<br><br>2. $x - 2y + 3z = -6$<br><br>3. $3x + y + 2z = 3$",
+    "<strong>Step 1: Eliminate $y$ using Equations 1 and 3</strong><br><br>Rearrange Equation 1 to express $y$ in terms of $x$ and $z$:\\begin{aligned} y = 5 - 2x + z \\end{aligned}Substitute this expression into Equation 3:\\begin{aligned} &3x + (5 - 2x + z) \\cr &\\qquad + 2z = 3 \\cr &3x + 5 - 2x + z \\cr &\\qquad + 2z = 3 \\cr &x + 3z + 5 = 3 \\cr &x + 3z = -2 \\end{aligned}We call this Equation 4: $x + 3z = -2$. Rearranging gives:\\begin{aligned} x = -2 - 3z \\end{aligned}",
+    "<strong>Step 2: Substitute our expressions into Equation 2</strong><br><br>First, substitute $x = -2 - 3z$ into our expression for $y$:\\begin{aligned} y &= 5 - 2(-2 - 3z) + z \\cr &= 5 + 4 + 6z + z \\cr &= 9 + 7z \\end{aligned}Substitute $y = 9 + 7z$ and $x = -2 - 3z$ directly into Equation 2:\\begin{aligned} &(-2 - 3z) - 2(9 + 7z) \\cr &\\qquad + 3z = -6 \\cr &-2 - 3z - 18 \\cr &\\qquad - 14z + 3z = -6 \\cr &-20 - 14z = -6 \\cr &-14z = 14 \\cr &z = -1 \\end{aligned}",
+    "<strong>Step 3: Solve for $x$ and $y$</strong><br><br>Substitute $z = -1$ back into our expression for $x$:\\begin{aligned} x &= -2 - 3(-1) \\cr &= -2 + 3 \\cr &= 1 \\end{aligned}Substitute $x = 1$ and $z = -1$ back into our expression for $y$ (Equation 1):\\begin{aligned} y &= 5 - 2(1) + (-1) \\cr &= 5 - 2 - 1 \\cr &= 2 \\end{aligned}Thus, the solutions are $x = 1, y = 2, z = -1$.",
+    "Final Answer:\\begin{aligned} &x = 1 \\cr &y = 2 \\cr &z = -1 \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} &x = 2 \\cr &y = -1 \\cr &z = 3 \\end{aligned}",
+      "feedback": "This error typically arises if you make a sign error when rearranging the first equation (e.g., writing $y = 5 + 2x - z$ instead of $y = 5 - 2x + z$) and then carry this mistake through the rest of the elimination steps."
+    },
+    {
+      "ans": "\\begin{aligned} &x = 1 \\cr &y = 2 \\cr &z = 1 \\end{aligned}",
+      "feedback": "This error is typically caused by a sign slip when substituting intermediate expressions, which leads to an incorrect value for $z$ (such as positive $1$ instead of $-1$)."
+    },
+    {
+      "ans": "\\begin{aligned} &x = -1 \\cr &y = 2 \\cr &z = -1 \\end{aligned}",
+      "feedback": "This error occurs if you make a calculation slip when evaluating the linear equation $x + 3z = -2$. Double-check that substituting $z = -1$ yields $x - 3 = -2$, which gives $x = 1$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "Systematic Variable Substitution",
+    "content": "When solving simultaneous equations in three variables, choose the variable that is easiest to isolate (usually one with a coefficient of $1$ or $-1$). Isolate it, substitute it into the other two equations, and you will reduce the problem to a standard two-variable simultaneous system."
+  }
+},
+{
+  "id": "004382",
+  "board": "CCEA",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Algebra and Functions",
+  "topic": "Algebraic Methods",
+  "subtopic": [
+    "Algebraic Methods"
+  ],
+  "img": false,
+  "question": "Solve the simultaneous equations:\\begin{aligned} x + 3y + z &= 1 \\cr 2x - y &= 8 \\cr x - 2y - z &= 3 \\end{aligned}",
+  "steps": [
+    "We label our three equations to analyze the system:<br><br>1. $x + 3y + z = 1$<br><br>2. $2x - y = 8$<br><br>3. $x - 2y - z = 3$",
+    "<strong>Step 1: Eliminate $z$ using Equations 1 and 3</strong><br><br>Notice that Equation 2 does not contain the variable $z$. We can easily eliminate $z$ from the other two equations by adding Equation 1 and Equation 3 directly:\\begin{aligned} &(x + 3y + z) \\cr &\\qquad + (x - 2y - z) = 1 + 3 \\cr &2x + y = 4 \\end{aligned}We call this Equation 4: $2x + y = 4$.",
+    "<strong>Step 2: Solve the two-variable system</strong><br><br>We now have a simple system of two simultaneous equations in terms of $x$ and $y$:\\begin{aligned} 2x - y &= 8 \\cr 2x + y &= 4 \\end{aligned}Add Equation 2 and Equation 4 to eliminate $y$:\\begin{aligned} (2x - y) + (2x + y) &= 8 + 4 \\cr 4x &= 12 \\cr x &= 3 \\end{aligned}",
+    "Substitute $x = 3$ back into Equation 4 to solve for $y$:\\begin{aligned} 2(3) + y &= 4 \\cr 6 + y &= 4 \\cr y &= -2 \\end{aligned}",
+    "<strong>Step 3: Solve for $z$</strong><br><br>Substitute $x = 3$ and $y = -2$ into Equation 1 to find $z$:\\begin{aligned} x + 3y + z &= 1 \\cr 3 + 3(-2) + z &= 1 \\cr 3 - 6 + z &= 1 \\cr -3 + z &= 1 \\cr z &= 4 \\end{aligned}Thus, the solutions are $x = 3, y = -2, z = 4$.",
+    "Final Answer:\\begin{aligned} &x = 3 \\cr &y = -2 \\cr &z = 4 \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} &x = 3 \\cr &y = -2 \\cr &z = 1 \\end{aligned}",
+      "feedback": "This is a calculation slip in the final step. Substituting $x = 3$ and $y = -2$ back into the first equation yields $3 - 6 + z = 1$, which gives $z = 4$, not $z = 1$."
+    },
+    {
+      "ans": "\\begin{aligned} &x = -3 \\cr &y = 2 \\cr &z = 4 \\end{aligned}",
+      "feedback": "This represents a systemic sign error, which typically occurs if you subtract the simultaneous equations incorrectly or make a sign mistake during the initial algebraic rearrangement."
+    },
+    {
+      "ans": "\\begin{aligned} &x = 3 \\cr &y = -2 \\cr &z = -4 \\end{aligned}",
+      "feedback": "This error occurs if you make a sign error when solving the final linear equation $-3 + z = 1$, mistakenly calculating $z = -4$ instead of $z = 4$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "Exploiting Missing Variables",
+    "content": "If one of the equations in a three-variable system is already missing a variable (such as $z$ in $2x - y = 8$), do not use substitution. Instead, eliminate that exact same variable from the other two equations. This immediately creates a standard two-variable simultaneous system."
+  }
+},
+{
+  "id": "004383",
+  "board": "CCEA",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Algebra and Functions",
+  "topic": "Algebraic Methods",
+  "subtopic": [
+    "Algebraic Methods"
+  ],
+  "img": false,
+  "question": "At a local cinema, ticket prices are £$x$ for children, £$y$ for students, and £$z$ for adults.<br><br>* The cost of $1$ child ticket, $2$ student tickets, and $1$ adult ticket is £$26$.<br><br>* The cost of $2$ child tickets, $1$ student ticket, and $3$ adult tickets is £$44$.<br><br>* The cost of $3$ child tickets and $2$ adult tickets is £$32$.<br><br><strong>(a)</strong> Write down three equations in terms of $x$, $y$, and $z$ to represent this information.<br><br><strong>(b)</strong> Solve your equations algebraically to find the price of each type of ticket.",
+  "steps": [
+    "<strong>Part (a): Writing the equations</strong><br><br>Translate each bullet point into an algebraic equation:<br><br>1. $x + 2y + z = 26$<br><br>2. $2x + y + 3z = 44$<br><br>3. $3x + 2z = 32$",
+    "<strong>Part (b): Solving the system</strong><br><br>We notice that Equation 3 does not contain $y$. Let's express $z$ in terms of $x$ from Equation 3:\\begin{aligned} 2z &= 32 - 3x \\cr z &= 16 - 1.5x \\end{aligned}",
+    "Now, eliminate $y$ from Equations 1 and 2. Rearrange Equation 1 to express $y$:\\begin{aligned} 2y &= 26 - x - z \\cr y &= 13 - 0.5x - 0.5z \\end{aligned}Substitute this expression for $y$ into Equation 2:\\begin{aligned} &2x + y + 3z = 44 \\cr &2x + (13 - 0.5x - 0.5z) \\cr &\\qquad + 3z = 44 \\cr &1.5x + 13 + 2.5z = 44 \\cr &1.5x + 2.5z = 31 \\end{aligned}",
+    "Multiply this simplified equation by 2 to clear the decimals, forming Equation 4:\\begin{aligned} 3x + 5z = 62 \\end{aligned}Substitute our expression for $z$ ($z = 16 - 1.5x$) into Equation 4:\\begin{aligned} 3x + 5(16 - 1.5x) &= 62 \\cr 3x + 80 - 7.5x &= 62 \\cr -4.5x + 80 &= 62 \\cr -4.5x &= -18 \\cr x &= 4 \\end{aligned}",
+    "Now, find $y$ and $z$ by substituting $x = 4$ back into our expressions:<br><br>1. For $z$:\\begin{aligned} z &= 16 - 1.5(4) \\cr &= 16 - 6 \\cr &= 10 \\end{aligned}<br><br>2. For $y$ (substituting $x = 4, z = 10$ into Equation 1):\\begin{aligned} 4 + 2y + 10 &= 26 \\cr 14 + 2y &= 26 \\cr 2y &= 12 \\cr y &= 6 \\end{aligned}Thus, the ticket prices are £$4$ for children, £$6$ for students, and £$10$ for adults.",
+    "Final Answer:\\begin{aligned} &\\text{Child: } £4 \\cr &\\text{Student: } £6 \\cr &\\text{Adult: } £10 \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} &\\text{Child: } £5 \\cr &\\text{Student: } £5 \\cr &\\text{Adult: } £11 \\end{aligned}",
+      "feedback": "This is a calculation error that typically occurs if you use early decimal rounding on fractions in intermediate steps or make an algebraic slip when combining the ticket cost equations."
+    },
+    {
+      "ans": "\\begin{aligned} &\\text{Child: } £4 \\cr &\\text{Student: } £6 \\cr &\\text{Adult: } £8 \\end{aligned}",
+      "feedback": "This is a substitution error when solving for the adult ticket price $z$. Substituting $x = 4$ into the third equation yields $12 + 2z = 32$, which gives $2z = 20$, so $z = 10$, not $8$."
+    },
+    {
+      "ans": "\\begin{aligned} &\\text{Child: } £6 \\cr &\\text{Student: } £4 \\cr &\\text{Adult: } £10 \\end{aligned}",
+      "feedback": "This error occurs if you mix up the pricing variables $x$ (child tickets) and $y$ (student tickets) during the algebraic elimination process."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "Contextual Reality Checks",
+    "content": "In real-world modeling questions, the solutions represent physical quantities (such as currency values, ages, or dimensions). Therefore, the answers are almost guaranteed to be positive, clean integers or simple fractions. If you calculate negative or highly complex decimal values, review your initial equations immediately."
+  }
+},
+{
+  "id": "004384",
+  "board": "CCEA",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Algebra and Functions",
+  "topic": "Algebraic Methods",
+  "subtopic": [
+    "Curved Graphs"
+  ],
+  "img": false,
+  "question": "A quadratic curve has the equation:$$y = ax^2 + bx + c$$The curve passes through the three coordinates $(1, 2)$, $(2, 9)$, and $(-1, 0)$.<br><br><strong>(a)</strong> Show that these coordinates lead to the following system of linear equations:\\begin{aligned} a + b + c &= 2 \\cr 4a + 2b + c &= 9 \\cr a - b + c &= 0 \\end{aligned}<strong>(b)</strong> Solve the system of equations algebraically to determine the values of $a$, $b$, and $c$.",
+  "steps": [
+    "<strong>Part (a): Setting up the equations</strong><br><br>Substitute each coordinate $(x, y)$ into the quadratic curve equation $y = ax^2 + bx + c$:<br><br>1. For $(1, 2)$:\\begin{aligned} a(1)^2 + b(1) + c &= 2 \\cr a + b + c &= 2 \\end{aligned}<br><br>2. For $(2, 9)$:\\begin{aligned} a(2)^2 + b(2) + c &= 9 \\cr 4a + 2b + c &= 9 \\end{aligned}<br><br>3. For $(-1, 0)$:\\begin{aligned} a(-1)^2 + b(-1) + c &= 0 \\cr a - b + c &= 0 \\end{aligned}This confirms the system of equations.",
+    "<strong>Part (b): Solving the system</strong><br><br>Label the three equations:<br><br>1. $a + b + c = 2$<br><br>2. $4a + 2b + c = 9$<br><br>3. $a - b + c = 0$",
+    "Subtract Equation 3 from Equation 1 to eliminate $a$ and $c$ directly:\\begin{aligned} &(a + b + c) \\cr &\\qquad - (a - b + c) = 2 - 0 \\cr &2b = 2 \\cr &b = 1 \\end{aligned}",
+    "Substitute $b = 1$ back into Equation 1 and Equation 2:<br><br>1. From Equation 1:\\begin{aligned} a + 1 + c &= 2 \\cr a + c &= 1 \\cr c &= 1 - a \\end{aligned}<br><br>2. From Equation 2:\\begin{aligned} 4a + 2(1) + c &= 9 \\cr 4a + c &= 7 \\end{aligned}",
+    "Substitute $c = 1 - a$ into our simplified Equation 2:\\begin{aligned} 4a + (1 - a) &= 7 \\cr 3a + 1 &= 7 \\cr 3a &= 6 \\cr a &= 2 \\end{aligned}Finally, solve for $c$:\\begin{aligned} c &= 1 - a \\cr &= 1 - 2 \\cr &= -1 \\end{aligned}Thus, the values are $a = 2, b = 1, c = -1$.",
+    "Final Answer:\\begin{aligned} &a = 2 \\cr &b = 1 \\cr &c = -1 \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} &a = 2 \\cr &b = -1 \\cr &c = 1 \\end{aligned}",
+      "feedback": "This is a sign slip. Subtracting the third equation from the first equation yields $2b = 2$, giving $b = 1$. Substituting this back yields $a = 2$ and $c = -1$."
+    },
+    {
+      "ans": "\\begin{aligned} &a = 3 \\cr &b = 1 \\cr &c = -2 \\end{aligned}",
+      "feedback": "This error arises from an addition or subtraction error when simplifying the simultaneous equations (such as miscalculating the difference between the first and second equations)."
+    },
+    {
+      "ans": "\\begin{aligned} &a = 2 \\cr &b = 1 \\cr &c = 1 \\end{aligned}",
+      "feedback": "This is a calculation error in evaluating $c$. Since $a - b + c = 0$, substituting $a=2, b=1$ yields $2 - 1 + c = 0$, giving $c = -1$, not $1$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "Curve Fitting and Simultaneous Linear Systems",
+    "content": "Any polynomial curve of degree $n$ is uniquely determined by $n+1$ distinct points. For a quadratic curve (degree 2), we require exactly 3 points. Substituting these points yields a system of three linear equations, showing the direct link between coordinate geometry and linear algebra."
+  }
+},
+{
+  "id": "004385",
+  "board": "CCEA",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Algebra and Functions",
+  "topic": "Algebraic Methods",
+  "subtopic": [
+    "Algebraic Methods"
+  ],
+  "img": false,
+  "question": "Solve the simultaneous equations:\\begin{aligned} x + 2y - z &= 3 \\cr 3x - y + 2z &= -7 \\cr 2x + 3y + 3z &= 8 \\end{aligned}",
+  "steps": [
+    "We label our three equations to begin the algebraic elimination process:<br><br>1. $x + 2y - z = 3$<br><br>2. $3x - y + 2z = -7$<br><br>3. $2x + 3y + 3z = 8$",
+    "<strong>Step 1: Express $z$ from Equation 1</strong><br><br>Equation 1 has a coefficient of $-1$ for $z$. Rearrange it to express $z$ in terms of $x$ and $y$:\\begin{aligned} z = x + 2y - 3 \\end{aligned}",
+    "<strong>Step 2: Substitute $z$ into Equations 2 and 3</strong><br><br>1. Substitute into Equation 2:\\begin{aligned} &3x - y + 2(x + 2y - 3) = -7 \\cr &3x - y + 2x \\cr &\\qquad + 4y - 6 = -7 \\cr &5x + 3y = -1 \\end{aligned}<br><br>2. Substitute into Equation 3:\\begin{aligned} &2x + 3y + 3(x + 2y - 3) = 8 \\cr &2x + 3y + 3x \\cr &\\qquad + 6y - 9 = 8 \\cr &5x + 9y = 17 \\end{aligned}",
+    "<strong>Step 3: Solve the two-variable system</strong><br><br>We now have a simplified system of two equations:\\begin{aligned} 5x + 3y &= -1 \\cr 5x + 9y &= 17 \\end{aligned}Subtract Equation 4 from Equation 5 to eliminate the $x$ terms:\\begin{aligned} &(5x + 9y) - (5x + 3y) \\cr &\\qquad = 17 - (-1) \\cr &6y = 18 \\cr &y = 3 \\end{aligned}",
+    "Substitute $y = 3$ back into Equation 4 to solve for $x$:\\begin{aligned} 5x + 3(3) &= -1 \\cr 5x + 9 &= -1 \\cr 5x &= -10 \\cr x &= -2 \\end{aligned}Substitute $x = -2$ and $y = 3$ back into our expression for $z$:\\begin{aligned} z &= x + 2y - 3 \\cr &= -2 + 2(3) - 3 \\cr &= 1 \\end{aligned}Thus, the solutions are $x = -2, y = 3, z = 1$.",
+    "Final Answer:\\begin{aligned} &x = -2 \\cr &y = 3 \\cr &z = 1 \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} &x = -2 \\cr &y = 3 \\cr &z = -1 \\end{aligned}",
+      "feedback": "This represents a sign error in the final step. Evaluating $z = x + 2y - 3$ with $x = -2$ and $y = 3$ yields $z = -2 + 2(3) - 3$, which evaluates to $1$, not $-1$."
+    },
+    {
+      "ans": "\\begin{aligned} &x = 2 \\cr &y = -3 \\cr &z = 1 \\end{aligned}",
+      "feedback": "This is a global sign error. This can happen if you multiply equations by negative factors but fail to distribute the negative sign to all terms, or if you subtract the equations in the wrong order."
+    },
+    {
+      "ans": "\\begin{aligned} &x = -2 \\cr &y = 1 \\cr &z = 3 \\end{aligned}",
+      "feedback": "This is a calculation slip when solving the two-variable simultaneous system $5x + 3y = -1$ and $5x + 9y = 17$, leading to incorrect values for $y$ and subsequently $z$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "Sign Distribution with Negative Values",
+    "content": "When substituting expressions with negative values or subtracting simultaneous equations, always use parentheses: e.g., $17 - (-1) = 18$. Forgetting to distribute negative signs is the single most common cause of error in algebraic elimination."
+  }
+},
         {
                 "id": "004386",
                 "board": "CCEA",
