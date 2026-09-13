@@ -988,7 +988,8 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Coordinate Geometry",
   "topic": "Circles",
   "subtopic": [
-    "Circle Geometry"
+    "Circle Geometry",
+    "Equation of a Circle"
   ],
   "img": false,
   "question": "The coordinates of three points $A$, $B$, and $C$ are $(2, 6)$, $(4, 10)$, and $(6, 4)$ respectively.<br><br><strong>(a)</strong> Show that $BAC$ is a right angle.<br><br><strong>(b)</strong> A circle passes through all three points $A$, $B$, and $C$. Determine the equation of the circle.",
@@ -1026,8 +1027,9 @@ window.ALEVEL_QUESTIONS = [
   "level": "AS",
   "major_area": "Differentiation",
   "topic": "Circles",
-  "subtopic": [
-    "Quadratics"
+ "subtopic": [
+    "Circle Geometry",
+    "Equation of a Circle"
   ],
   "img": false,
   "question": "A circle $C$ has the equation:$$x^2 + y^2 - 6x + 8y - 9 = 0$$<strong>(a)</strong> Find the coordinates of the centre of $C$ and the exact radius of $C$.<br><br><strong>(b)</strong> Show that the point $P(6, 1)$ lies on the circle.<br><br><strong>(c)</strong> Find the equation of the tangent to $C$ at the point $P$, giving your answer in the form $ax + by + c = 0$, where $a$, $b$, and $c$ are integers.",
@@ -1066,7 +1068,8 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Coordinate Geometry",
   "topic": "Circles",
   "subtopic": [
-    "Circle Geometry"
+    "Circle Geometry",
+    "Equation of a Circle"
   ],
   "img": false,
   "question": "A circle $C$ has the equation:$$(x - 2)^2 + (y - 1)^2 = 25$$The line $L$ has the equation:$$y = x - 2$$<strong>(a)</strong> Show that the line $L$ intersects the circle $C$ at the points $P(6, 4)$ and $Q(-1, -3)$.<br><br><strong>(b)</strong> Calculate the exact length of the chord $PQ$, giving your answer in its simplest surd form.",
@@ -1105,7 +1108,8 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Coordinate Geometry",
   "topic": "Circles",
   "subtopic": [
-    "Circle Geometry"
+    "Circle Geometry",
+    "Equation of a Circle"
   ],
   "img": false,
   "question": "The points $A(-2, 5)$ and $B(6, 11)$ are the endpoints of a diameter of a circle $C$.<br><br><strong>(a)</strong> Find the coordinates of the centre of $C$.<br><br><strong>(b)</strong> Find the radius of $C$, giving your answer in its simplest surd form.<br><br><strong>(c)</strong> Write down the equation of the circle in the form $x^2 + y^2 + ax + by + c = 0$, where $a$, $b$, and $c$ are integers.",
@@ -1142,9 +1146,9 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Pure",
   "level": "AS",
   "major_area": "Coordinate Geometry",
-  "topic": "Circles",
   "subtopic": [
-    "Circle Geometry"
+    "Circle Geometry",
+    "Equation of a Circle"
   ],
   "img": false,
   "question": "A circle $C$ has the equation $x^2 + y^2 = 20$ and a line $L$ has the equation $y = 2x + k$, where $k$ is a constant.<br><br><strong>(a)</strong> Show that if the line $L$ is a tangent to the circle $C$, then $k$ must satisfy the equation:$$k^2 - 100 = 0$$<strong>(b)</strong> Hence, find the two possible values of the constant $k$.",
