@@ -815,10 +815,9 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Pure",
   "level": "AS",
   "major_area": "Coordinate Geometry",
-  "topic": "Coordinate Geometry",
+  "topic": "Gradient, Perpendicularity, Midpoint",
   "subtopic": [
-    "Circle Geometry",
-    "Coordinate Geometry"
+    "Coordinate Geometry using Algebraic Values"
   ],
   "img": false,
   "question": "The points $A$ and $B$ have coordinates $(3a, a^2)$ and $(2a + 2, 2a)$ respectively, where $a \\neq 0$ and $a \\neq 2$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $A$, cuts the $x$-axis at the point $P$. Find, in terms of $a$, the coordinates of the point $P$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ has equal $x$ and $y$ ordinates. Find the possible values of $a$ in their simplest surd form. [5]",
@@ -856,10 +855,9 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Pure",
   "level": "AS",
   "major_area": "Coordinate Geometry",
-  "topic": "Coordinate Geometry",
+  "topic": "Gradient, Perpendicularity, Midpoint",
   "subtopic": [
-    "Circle Geometry",
-    "Coordinate Geometry"
+    "Coordinate Geometry using Algebraic Values"
   ],
   "img": false,
   "question": "The points $A$ and $B$ have coordinates $(4a, a^2)$ and $(3a + 3, 3a)$ respectively, where $a \\neq 0$ and $a \\neq 3$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $B$, cuts the $y$-axis at the point $Q$. Find, in terms of $a$, the coordinates of the point $Q$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ has equal $x$ and $y$ ordinates. Find the possible values of $a$ in their simplest surd form. [5]",
@@ -897,10 +895,9 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Pure",
   "level": "AS",
   "major_area": "Coordinate Geometry",
-  "topic": "Coordinate Geometry",
+  "topic": "Gradient, Perpendicularity, Midpoint",
   "subtopic": [
-    "Circle Geometry",
-    "Coordinate Geometry"
+    "Coordinate Geometry using Algebraic Values"
   ],
   "img": false,
   "question": "The points $A$ and $B$ have coordinates $(2a, 2a^2)$ and $(a + 1, 2a)$ respectively, where $a \\neq 0$ and $a \\neq 1$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $B$, cuts the $x$-axis at the point $P$. Find, in terms of $a$, the coordinates of the point $P$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ has equal $x$ and $y$ ordinates. Find the possible values of $a$. [5]",
@@ -938,10 +935,9 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Pure",
   "level": "AS",
   "major_area": "Coordinate Geometry",
-  "topic": "Coordinate Geometry",
+  "topic": "Gradient, Perpendicularity, Midpoint",
   "subtopic": [
-    "Circle Geometry",
-    "Coordinate Geometry"
+    "Coordinate Geometry using Algebraic Values"
   ],
   "img": false,
   "question": "The points $A$ and $B$ have coordinates $(2a, a^2)$ and $(a + 1, a)$ respectively, where $a \\neq 0$ and $a \\neq 1$.<br><br><strong>(a)</strong> A straight line, parallel to $AB$ and passing through the origin $O(0,0)$, cuts the vertical line $x = a$ at the point $Q$. Find, in terms of $a$, the coordinates of the point $Q$. [6]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ lies on the line $y = 2x$. Find the possible values of $a$ in their simplest surd form. [7]",
@@ -978,12 +974,10 @@ window.ALEVEL_QUESTIONS = [
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
-  "major_area": "Coordinate Geometry",
-  "topic": "Coordinate Geometry",
+   "major_area": "Coordinate Geometry",
+  "topic": "Gradient, Perpendicularity, Midpoint",
   "subtopic": [
-    "Circle Geometry",
-    "Coordinate Geometry",
-    "Linear Constraints"
+    "Coordinate Geometry using Algebraic Values"
   ],
   "img": false,
   "question": "The points $A$ and $B$ have coordinates $(2a, a^2)$ and $(a + 2, 2a)$ respectively, where $a \\neq 0$ and $a \\neq 2$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $B$, cuts the $y$-axis at the point $Q$. Find, in terms of $a$, the coordinates of the point $Q$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ lies on the line $y = x - 1$. Find the possible value of $a$. [5]",
@@ -1015,207 +1009,212 @@ window.ALEVEL_QUESTIONS = [
     "content": "Always circle or highlight constraints like $a \\neq 0$ at the start of an exam question. It is very easy to solve a quadratic equation like $a(a - 1) = 0$, write down both roots, and lose an accuracy mark because you forgot to discard the boundary value. Be disciplined about checking your final answers against the initial conditions."
   }
 },
-        {
-                "id": "004426",
-                "board": "CCEA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Trigonometry",
-                "topic": "Circles",
-                "subtopic": [
-                        "Circle Geometry",
-                        "Proof"
-                ],
-                "img": "images/Pure_SVGs/004426.svg",
-                "question": "The diagram shows a circle with centre $O$ and radius $r$. $AB$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $B$ to $OS$. The acute angle $\\angle BOS$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> By applying the cosine rule to triangle $AOD$, show that:<br>$$AD^2 = r^2(1 + 3\\cos^2 \\theta)$$ [7]<br><br><strong>(b)</strong> When $BD$ bisects $OS$,<br>$$AD = r\\sqrt{\\dfrac{7}{k}}$$<br>Find the value of $k$, where $k$ is a positive integer. [5]",
-                "steps": [
-                        "<strong>Step 1: Relate the length $OD = x$ to the radius and angle $\\theta$</strong><br>In triangle $BOS$, $BD$ is perpendicular to $OS$, making $OBD$ a right-angled triangle at $D$. The projection of $OB$ onto $OS$ gives:<br>\\begin{aligned} \\cos \\theta &= \\dfrac{ OD }{ OB } \\cr \\cos \\theta &= \\dfrac{ x }{ r } \\cr x &= r \\cos \\theta \\cr \\end{aligned}",
-                        "<strong>Step 2: Find the angle $\\angle AOD$</strong><br>The points $A$, $O$, and $B$ lie along a straight line because $AB$ is a diameter of the circle. This means the angles on either side of the center are supplementary:<br>\\begin{aligned} \\angle AOD &= 180^\\circ - \\theta \\cr \\end{aligned}",
-                        "<strong>Step 3: Apply the Cosine Rule to triangle $AOD$</strong><br>Use the cosine rule on triangle $AOD$ with sides $AO = r$, $OD = x$, and angle $\\angle AOD = 180^\\circ - \\theta$:<br>\\begin{aligned} AD^2 &= AO^2 + OD^2 - 2 \\cdot AO \\cdot OD \\cos( \\angle AOD ) \\cr AD^2 &= r^2 + x^2 - 2rx \\cos( 180^\\circ - \\theta ) \\cr \\end{aligned}<br>Using the trigonometric identity $\\cos( 180^\\circ - \\theta ) = -\\cos \\theta$, this simplifies to:<br>\\begin{aligned} AD^2 &= r^2 + x^2 + 2rx \\cos \\theta \\cr \\end{aligned}",
-                        "<strong>Step 4: Substitute $x = r \\cos \\theta$ to complete the proof for part (a)</strong><br>Substitute $x = r \\cos \\theta$ into the simplified expression:<br>\\begin{aligned} AD^2 &= r^2 + ( r \\cos \\theta )^2 + 2r( r \\cos \\theta ) \\cos \\theta \\cr AD^2 &= r^2 + r^2 \\cos^2 \\theta + 2r^2 \\cos^2 \\theta \\cr AD^2 &= r^2 ( 1 + 3\\cos^2 \\theta ) \\cr \\end{aligned}",
-                        "<strong>Step 5: Apply the bisection condition in part (b)</strong><br>If $BD$ bisects $OS$, then $D$ is the midpoint of the radius $OS$. This gives us:<br>\\begin{aligned} OD &= \\dfrac{ r }{ 2 } \\cr r \\cos \\theta &= \\dfrac{ r }{ 2 } \\cr \\cos \\theta &= \\dfrac{ 1 }{ 2 } \\cr \\theta &= 60^\\circ \\cr \\end{aligned}",
-                        "<strong>Step 6: Calculate $AD$ and solve for $k$</strong><br>Substitute $\\cos \\theta = \\dfrac{ 1 }{ 2 }$ into your $AD^2$ formula from part (a):<br>\\begin{aligned} AD^2 &= r^2 \\left( 1 + 3 \\left( \\dfrac{ 1 }{ 2 } \\right)^2 \\right) \\cr &= r^2 \\left( 1 + 3 \\left( \\dfrac{ 1 }{ 4 } \\right) \\right) \\cr &= r^2 \\left( 1 + \\dfrac{ 3 }{ 4 } \\right) \\cr &= r^2 \\left( \\dfrac{ 7 }{ 4 } \\right) \\cr \\end{aligned}<br>Taking the square root yields:<br>\\begin{aligned} AD &= r \\sqrt{ \\dfrac{ 7 }{ 4 } } \\cr \\end{aligned}<br>Comparing this to the given expression $AD = r\\sqrt{\\dfrac{7}{k}}$, we get $k = 4$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$k = 2$$",
-                                "feedback": "You may have made an error when squaring $\\cos \\theta = \\dfrac{1}{2}$ in Step 6, mistakenly writing $\\left(\\dfrac{1}{2}\\right)^2 = \\dfrac{1}{2}$ instead of $\\dfrac{1}{4}$."
-                        },
-                        {
-                                "ans": "$$k = 16$$",
-                                "feedback": "You may have made an algebraic slip when equating $AD = r\\sqrt{\\dfrac{7}{4}}$ to $r\\sqrt{\\dfrac{7}{k}}$, perhaps by squaring the denominator a second time."
-                        },
-                        {
-                                "ans": "$$k = 3$$",
-                                "feedback": "You may have made an arithmetic slip when simplifying the terms inside the parentheses in Step 6, perhaps by writing $1 + 3\\left(\\dfrac{1}{4}\\right) = 1 + \\dfrac{3}{4} = \\dfrac{6}{4}$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Supplementary Angle Trigonometry",
-                        "content": "In geometry proofs, the relation $\\cos( 180^\\circ - \\theta ) = -\\cos \\theta$ is one of the most frequently used identities. If you forget to flip the sign, you will end up with a subtraction $1 - \\cos^2 \\theta$, which will prevent you from completing the proof. Always write down your supplementary angle identities explicitly."
-                }
-        },
-        {
-                "id": "004427",
-                "board": "CCEA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Trigonometry",
-                "topic": "Circles",
-                "subtopic": [
-                        "Circle Geometry",
-                        "Proof"
-                ],
-                "img": "images/Pure_SVGs/004427.svg",
-                "question": "The diagram shows a circle with centre $O$ and radius $r$. $BA$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $A$ to $OS$. The angle $\\angle AOS$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> By applying the cosine rule to triangle $BOD$, show that:<br>$$BD^2 = r^2(1 + 3\\cos^2 \\theta)$$ [7]<br><br><strong>(b)</strong> When $AD$ bisects $OS$,<br>$$BD = r\\sqrt{\\dfrac{7}{k}}$$<br>Find the value of $k$, where $k$ is a positive integer. [5]",
-                "steps": [
-                        "<strong>Step 1: Relate the length $OD = x$ to the radius and angle $\\theta$</strong><br>In right-angled triangle $ADO$, $D$ is the foot of the perpendicular from $A$ to $OS$, making $\\angle ADO = 90^\\circ$. The projection of $OA$ onto $OS$ gives:<br>\\begin{aligned} \\cos \\theta &= \\dfrac{ OD }{ OA } \\cr \\cos \\theta &= \\dfrac{ x }{ r } \\cr x &= r \\cos \\theta \\cr \\end{aligned}",
-                        "<strong>Step 2: Find the angle $\\angle BOD$</strong><br>The points $B$, $O$, and $A$ lie along a straight line because $BA$ is a diameter of the circle. This means the angles on either side of the center are supplementary:<br>\\begin{aligned} \\angle BOD &= 180^\\circ - \\theta \\cr \\end{aligned}",
-                        "<strong>Step 3: Apply the Cosine Rule to triangle $BOD$</strong><br>Use the cosine rule on triangle $BOD$ with sides $OB = r$, $OD = x$, and angle $\\angle BOD = 180^\\circ - \\theta$:<br>\\begin{aligned} BD^2 &= BO^2 + OD^2 - 2 \\cdot BO \\cdot OD \\cos( \\angle BOD ) \\cr BD^2 &= r^2 + x^2 - 2rx \\cos( 180^\\circ - \\theta ) \\cr \\end{aligned}<br>Using the trigonometric identity $\\cos( 180^\\circ - \\theta ) = -\\cos \\theta$, this simplifies to:<br>\\begin{aligned} BD^2 &= r^2 + x^2 + 2rx \\cos \\theta \\cr \\end{aligned}",
-                        "<strong>Step 4: Substitute $x = r \\cos \\theta$ to complete the proof for part (a)</strong><br>Substitute $x = r \\cos \\theta$ into the simplified expression:<br>\\begin{aligned} BD^2 &= r^2 + ( r \\cos \\theta )^2 + 2r( r \\cos \\theta ) \\cos \\theta \\cr BD^2 &= r^2 + r^2 \\cos^2 \\theta + 2r^2 \\cos^2 \\theta \\cr BD^2 &= r^2 ( 1 + 3\\cos^2 \\theta ) \\cr \\end{aligned}",
-                        "<strong>Step 5: Apply the bisection condition in part (b)</strong><br>If $AD$ bisects $OS$, then $D$ is the midpoint of the radius $OS$. This gives us:<br>\\begin{aligned} OD &= \\dfrac{ r }{ 2 } \\cr r \\cos \\theta &= \\dfrac{ r }{ 2 } \\cr \\cos \\theta &= \\dfrac{ 1 }{ 2 } \\cr \\theta &= 60^\\circ \\cr \\end{aligned}",
-                        "<strong>Step 6: Calculate $BD$ and solve for $k$</strong><br>Substitute $\\cos \\theta = \\dfrac{ 1 }{ 2 }$ into your $BD^2$ formula from part (a):<br>\\begin{aligned} BD^2 &= r^2 \\left( 1 + 3 \\left( \\dfrac{ 1 }{ 2 } \\right)^2 \\right) \\cr &= r^2 \\left( 1 + 3 \\left( \\dfrac{ 1 }{ 4 } \\right) \\right) \\cr &= r^2 \\left( 1 + \\dfrac{ 3 }{ 4 } \\right) \\cr &= r^2 \\left( \\dfrac{ 7 }{ 4 } \\right) \\cr \\end{aligned}<br>Taking the square root yields:<br>\\begin{aligned} BD &= r \\sqrt{ \\dfrac{ 7 }{ 4 } } \\cr \\end{aligned}<br>Comparing this to the given expression $BD = r\\sqrt{\\dfrac{7}{k}}$, we get $k = 4$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$k = 2$$",
-                                "feedback": "You may have made an error when squaring $\\cos \\theta = \\dfrac{1}{2}$ in Step 6, mistakenly writing $\\left(\\dfrac{1}{2}\\right)^2 = \\dfrac{1}{2}$ instead of $\\dfrac{1}{4}$."
-                        },
-                        {
-                                "ans": "$$k = 16$$",
-                                "feedback": "You may have made an algebraic slip when equating $BD = r\\sqrt{\\dfrac{7}{4}}$ to $r\\sqrt{\\dfrac{7}{k}}$, perhaps by squaring the denominator a second time."
-                        },
-                        {
-                                "ans": "$$k = 3$$",
-                                "feedback": "You may have made an arithmetic slip when simplifying the terms inside the parentheses in Step 6, perhaps by writing $1 + 3\\left(\\dfrac{1}{4}\\right) = 1 + \\dfrac{3}{4} = \\dfrac{6}{4}$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Symmetry in Circle Proofs",
-                        "content": "When proving trigonometric relations on opposite sides of a circle, the horizontal orientation of your diameter does not change the core projection. Whether you are projecting $OA$ or $OB$ onto a radius $OS$, the projection length remains $r \\cos \\theta$. Recognizing that supplementary angles (like $\\angle AOS = \\theta$ and $\\angle BOS = 180^\\circ - \\theta$) share this symmetrical relationship allows you to solve coordinate geometry proofs with confidence, regardless of which side you are working on."
-                }
-        },
-        {
-                "id": "004428",
-                "board": "CCEA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Trigonometry",
-                "topic": "Circles",
-                "subtopic": [
-                        "Proof"
-                ],
-                "img": "images/Pure_SVGs/004428.svg",
-                "question": "The diagram shows a circle with centre $O$ and radius $r$. $AB$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $S$ to $AB$. The acute angle $\\angle SOB$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> Show that the length $AS$ and length $AD$ satisfy:<br>$$AS^2 = 2r \\cdot AD$$ [6]<br><br><strong>(b)</strong> When $D$ is the midpoint of $OB$, find the exact value of $\\theta$ in degrees and express the length of $AS$ in terms of $r$. [6]",
-                "steps": [
-                        "<strong>Step 1: Set up coordinates for part (a)</strong><br>For clarity, we place the circle on a Cartesian grid with centre $O$ at the origin $( 0,0 )$ and diameter $AB$ along the $x$-axis. This gives:<br>\\begin{aligned} A &= ( -r, 0 ) \\cr B &= ( r, 0 ) \\cr \\end{aligned}",
-                        "<strong>Step 2: Express the coordinates of $S$ and $D$ in terms of $\\theta$</strong><br>Using polar coordinates, the point $S$ on the circle has coordinates:<br>\\begin{aligned} S &= ( r \\cos \\theta, r \\sin \\theta ) \\cr \\end{aligned}<br>Since $D$ is the foot of the perpendicular from $S$ to the $x$-axis (the line segment $AB$), its coordinates are:<br>\\begin{aligned} D &= ( r \\cos \\theta, 0 ) \\cr \\end{aligned}",
-                        "<strong>Step 3: Calculate the length squared $AS^2$</strong><br>Using the distance formula, find the distance squared between $A( -r, 0 )$ and $S( r \\cos \\theta, r \\sin \\theta )$:<br>\\begin{aligned} AS^2 &= ( r \\cos \\theta - ( -r ) )^2 + ( r \\sin \\theta - 0 )^2 \\cr &= ( r \\cos \\theta + r )^2 + r^2 \\sin^2 \\theta \\cr &= r^2 ( \\cos^2 \\theta + 2 \\cos \\theta + 1 + \\sin^2 \\theta ) \\cr \\end{aligned}<br>Using the fundamental identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$, we get:<br>\\begin{aligned} AS^2 &= r^2 ( 2 + 2 \\cos \\theta ) \\cr &= 2r^2 ( 1 + \\cos \\theta ) \\cr \\end{aligned}",
-                        "<strong>Step 4: Calculate the length $AD$ and complete the proof</strong><br>The distance from $A( -r, 0 )$ to $D( r \\cos \\theta, 0 )$ along the horizontal $x$-axis is:<br>\\begin{aligned} AD &= r \\cos \\theta - ( -r ) \\cr &= r( 1 + \\cos \\theta ) \\cr \\end{aligned}<br>Multiply this by $2r$:<br>\\begin{aligned} 2r \\cdot AD &= 2r \\cdot r( 1 + \\cos \\theta ) \\cr &= 2r^2 ( 1 + \\cos \\theta ) \\cr \\end{aligned}<br>This is exactly equal to $AS^2$, completing the proof.",
-                        "<strong>Step 5: Apply the midpoint condition in part (b)</strong><br>If $D$ is the midpoint of $OB$, then its $x$-coordinate must be half of $OB = r$:<br>\\begin{aligned} r \\cos \\theta &= \\dfrac{ r }{ 2 } \\cr \\cos \\theta &= \\dfrac{ 1 }{ 2 } \\cr \\theta &= 60^\\circ \\cr \\end{aligned}",
-                        "<strong>Step 6: Express the length of $AS$ in terms of $r$</strong><br>Substitute $\\cos \\theta = \\dfrac{ 1 }{ 2 }$ into the formula for $AS^2$:<br>\\begin{aligned} AS^2 &= 2r^2 \\left( 1 + \\dfrac{ 1 }{ 2 } \\right) \\cr &= 2r^2 \\left( \\dfrac{ 3 }{ 2 } \\right) \\cr &= 3r^2 \\cr \\end{aligned}<br>Taking the square root yields:<br>\\begin{aligned} AS &= r \\sqrt{ 3 } \\cr \\end{aligned}"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\theta = 60^\\circ, \\quad AS = r\\sqrt{2}$$",
-                                "feedback": "You may have made an arithmetic slip in Step 6 when evaluating $1 + \\cos\\theta$, perhaps by writing $1 + \\dfrac{1}{2} = 1$ or making a sign error, leading to $AS^2 = 2r^2$."
-                        },
-                        {
-                                "ans": "$$\\theta = 30^\\circ, \\quad AS = r\\sqrt{3}$$",
-                                "feedback": "You may have misidentified $\\cos\\theta = \\dfrac{1}{2}$ as $\\theta = 30^\\circ$ instead of $60^\\circ$. Remember that $\\cos 60^\\circ = 0.5$ and $\\sin 30^\\circ = 0.5$."
-                        },
-                        {
-                                "ans": "$$\\theta = 60^\\circ, \\quad AS = 3r$$",
-                                "feedback": "You may have forgotten to take the square root of both sides of the equation $AS^2 = 3r^2$ when finding the length $AS$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Coordinate Geometry as a Proof Tool",
-                        "content": "When asked to prove geometric relations inside a circle, do not hesitate to overlay a Cartesian coordinate system. Placing the centre of the circle at the origin $( 0,0 )$ and aligning the diameter with the $x$-axis often transforms complicated trigonometric proofs into simple distance-formula algebra!"
-                }
-        },
-        {
-                "id": "004429",
-                "board": "CCEA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Circles",
-                "subtopic": [
-                        "Tangents and Normals",
-                        "Trigonometry"
-                ],
-                "img": "images/Pure_SVGs/004429.svg",
-                "question": "The diagram shows a circle with centre $O$ and radius $r$. $AOB$ is a diameter of the circle. $T$ lies on the circumference. The tangent to the circle at $T$ meets the extension of the diameter $AB$ at $P$. The acute angle $\\angle TOP$ is $\\theta$. $OA = OB = r$ and $OP = x$.<br><br><strong>(a)</strong> Show that the length of the tangent $TP$ satisfies:<br>$$TP^2 = r^2\\tan^2 \\theta$$ [5]<br><br><strong>(b)</strong> When the distance $BP$ is exactly equal to the radius $r$, find the exact value of $\\theta$ in degrees. [7]",
-                "steps": [
-                        "<strong>Step 1: Set up the right-angled triangle relations for part (a)</strong><br>A fundamental circle theorem states that a tangent line is always perpendicular to the radius at the point of contact. Therefore, the radius $OT$ is perpendicular to the tangent $TP$, making $OTP$ a right-angled triangle with $\\angle OTP = 90^\\circ$.",
-                        "<strong>Step 2: Relate the tangent to $\\theta$ and complete part (a)</strong><br>In the right-angled triangle $OTP$, the angle at $O$ is $\\theta$. Using basic right-angled trigonometry:<br>\\begin{aligned} \\tan \\theta &= \\dfrac{ \\text{Opposite} }{ \\text{Adjacent} } \\cr \\tan \\theta &= \\dfrac{ TP }{ OT } \\cr \\tan \\theta &= \\dfrac{ TP }{ r } \\cr \\end{aligned}<br>Multiply both sides by $r$ and square the result:<br>\\begin{aligned} TP &= r \\tan \\theta \\cr TP^2 &= r^2 \\tan^2 \\theta \\cr \\end{aligned}",
-                        "<strong>Step 3: Analyze the boundary conditions in part (b)</strong><br>The diameter $AB$ lies along the straight line through $O$, with $B$ located between the center $O$ and the point $P$. Since the distance $BP$ is given as exactly equal to the radius $r$, calculate the total hypotenuse length $OP$:<br>\\begin{aligned} OP &= OB + BP \\cr &= r + r \\cr &= 2r \\cr \\end{aligned}",
-                        "<strong>Step 4: Solve for the exact angle $\\theta$</strong><br>In right-angled triangle $OTP$ (where the hypotenuse is $OP = 2r$ and the adjacent side to angle $\\theta$ is $OT = r$), use the cosine ratio:<br>\\begin{aligned} \\cos \\theta &= \\dfrac{ \\text{Adjacent} }{ \\text{Hypotenuse} } \\cr \\cos \\theta &= \\dfrac{ OT }{ OP } \\cr \\cos \\theta &= \\dfrac{ r }{ 2r } \\cr \\cos \\theta &= \\dfrac{ 1 }{ 2 } \\cr \\end{aligned}<br>Since $\\theta$ is acute, we solve to get:<br>$$\\theta = 60^\\circ$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\theta = 30^\\circ$$",
-                                "feedback": "You may have misidentified the ratio $\\cos \\theta = \\dfrac{1}{2}$ as $\\theta = 30^\\circ$. Double-check your exact values: $\\cos 60^\\circ = 0.5$ while $\\sin 30^\\circ = 0.5$."
-                        },
-                        {
-                                "ans": "$$\\theta = 45^\\circ$$",
-                                "feedback": "You may have assumed the triangle is an isosceles right-angled triangle. However, the hypotenuse $OP = 2r$ is twice the adjacent side $OT = r$, which determines a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle."
-                        },
-                        {
-                                "ans": "$$\\theta = 41.8^\\circ$$",
-                                "feedback": "You may have used the sine ratio instead of the cosine ratio, solving $\\sin \\theta = \\dfrac{r}{2r} = 0.5$, but then mistakenly used your calculator in radian mode or made an inverse trigonometric calculation error."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Tangent Perpendicularity",
-                        "content": "In any coordinate or geometric problem involving circle tangents, your first step should always be to draw or indicate a right angle $( 90^\\circ )$ between the tangent and the radius at the point of tangency. This immediately unlocks right-angled triangle properties like Pythagoras and standard SOH CAH TOA trigonometry."
-                }
-        },
-        {
-                "id": "004430",
-                "board": "CCEA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Trigonometry",
-                "topic": "Circles",
-                "subtopic": [
-                        "Circle Geometry",
-                        "Trigonometry"
-                ],
-                "img": "images/Pure_SVGs/004430.svg",
-                "question": "The diagram shows a sketch of a semicircle with diameter $AB$ and centre $O$. $C$ lies on the circumference of the semicircle. The angle $\\angle CAB$ is $\\theta$ and $OA = OB = r$.<br><br><strong>(a)</strong> By considering the right-angled triangle $ACB$ in the semicircle, show that:<br>$$BC^2 = 4r^2\\sin^2 \\theta$$ [5]<br><br><strong>(b)</strong> When $BC = r$, find the exact value of the angle $\\theta$ in degrees. [7]",
-                "steps": [
-                        "<strong>Step 1: Apply the circle theorem for angles in a semicircle for part (a)</strong><br>A fundamental circle theorem states that the angle subtended by a diameter at any point on the circumference of a circle is a right angle ($90^\\circ$). Since $AB$ is a diameter, we have:<br>$$\\angle ACB = 90^\\circ$$",
-                        "<strong>Step 2: Set up the trigonometric ratio and complete part (a)</strong><br>In right-angled triangle $ACB$, the hypotenuse is the diameter $AB = 2r$. The side opposite angle $\\theta$ is $BC$. Apply the sine ratio:<br>\\begin{aligned} \\sin \\theta &= \\dfrac{ BC }{ AB } \\cr \\sin \\theta &= \\dfrac{ BC }{ 2r } \\cr BC &= 2r \\sin \\theta \\cr \\end{aligned}<br>Square both sides of this equation to get the required proof:<br>\\begin{aligned} BC^2 &= ( 2r \\sin \\theta )^2 \\cr BC^2 &= 4r^2 \\sin^2 \\theta \\cr \\end{aligned}",
-                        "<strong>Step 3: Apply the condition in part (b) and simplify</strong><br>We are given that $BC = r$. Substitute this into the formula from part (a):<br>\\begin{aligned} ( r )^2 &= 4r^2 \\sin^2 \\theta \\cr r^2 &= 4r^2 \\sin^2 \\theta \\cr \\end{aligned}",
-                        "<strong>Step 4: Solve for the exact angle $\\theta$</strong><br>Since $r \\neq 0$, we can divide both sides of the equation by $r^2$:<br>\\begin{aligned} 1 &= 4 \\sin^2 \\theta \\cr \\sin^2 \\theta &= \\dfrac{ 1 }{ 4 } \\cr \\sin \\theta &= \\dfrac{ 1 }{ 2 } \\cr \\end{aligned}<br>Since $\\theta$ is an acute angle in the triangle, we solve to find the principal angle:<br>$$\\theta = 30^\\circ$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\theta = 60^\\circ$$",
-                                "feedback": "You may have misidentified the ratio $\\sin \\theta = \\dfrac{1}{2}$ as $\\theta = 60^\\circ$ instead of $30^\\circ$. Remember that $\\sin 30^\\circ = 0.5$ and $\\cos 60^\\circ = 0.5$."
-                        },
-                        {
-                                "ans": "$$\\theta = 45^\\circ$$",
-                                "feedback": "You may have assumed the triangle is an isosceles right-angled triangle. However, the side $BC = r$ is exactly half of the hypotenuse $AB = 2r$, which defines a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle."
-                        },
-                        {
-                                "ans": "$$\\theta = 14.5^\\circ$$",
-                                "feedback": "You may have made an error when dividing, solving $\\sin^2 \\theta = 4 \\implies \\sin \\theta = 2$, or made an incorrect inverse trigonometric calculation on your calculator."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Semicircle Right Angles",
-                        "content": "Always remember the theorem: 'The angle in a semicircle is a right angle.' Whenever you see a triangle drawn inside a circle where one side is the diameter, you can instantly assume the opposite vertex has a $90^\\circ$ angle. This simple realization is the key to setting up trigonometric equations for semicircle problems."
-                }
-        },
-        {
+{
+  "id": "004426",
+  "board": "CCEA",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Coordinate Geometry",
+  "topic": "Circles",
+  "subtopic": [
+    "Circle Geometry",
+    "Proof"
+  ],
+  "img": "images/Pure_SVGs/004426.svg",
+  "question": "The diagram shows a circle with centre $O$ and radius $r$. $AB$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $B$ to $OS$. The acute angle $\\angle BOS$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> By applying the cosine rule to triangle $AOD$, show that:$$AD^2 = r^2(1 + 3\\cos^2 \\theta)$$[7]<br><br><strong>(b)</strong> When $BD$ bisects $OS$,$$AD = r\\sqrt{\\dfrac{7}{k}}$$Find the value of $k$, where $k$ is a positive integer. [5]",
+  "steps": [
+    "<strong>Step 1: Relate the length $OD = x$ to the radius and angle $\\theta$</strong><br><br>In triangle $BOS$, $BD$ is perpendicular to $OS$, making $OBD$ a right-angled triangle at $D$. The projection of $OB$ onto $OS$ gives:\\begin{aligned} \\cos \\theta &= \\dfrac{OD}{OB} \\cr &= \\dfrac{x}{r} \\cr x &= r\\cos \\theta \\end{aligned}",
+    "<strong>Step 2: Find the angle $\\angle AOD$</strong><br><br>The points $A$, $O$, and $B$ lie along a straight line because $AB$ is a diameter of the circle. This means the angles on either side of the center are supplementary:\\begin{aligned} \\angle AOD = 180^\\circ - \\theta \\end{aligned}",
+    "<strong>Step 3: Apply the Cosine Rule to triangle $AOD$</strong><br><br>Use the cosine rule on triangle $AOD$ with sides $AO = r$, $OD = x$, and angle $\\angle AOD = 180^\\circ - \\theta$:\\begin{aligned} &AD^2 \\cr &\\quad = AO^2 + OD^2 \\cr &\\qquad - 2(AO)(OD)\\cos(\\angle AOD) \\cr &\\quad = r^2 + x^2 \\cr &\\qquad - 2rx\\cos(180^\\circ - \\theta) \\end{aligned}Using the trigonometric identity $\\cos(180^\\circ - \\theta) = -\\cos \\theta$, this simplifies to:\\begin{aligned} AD^2 = r^2 + x^2 + 2rx\\cos \\theta \\end{aligned}",
+    "<strong>Step 4: Substitute $x = r \\cos \\theta$ to complete the proof for part (a)</strong><br><br>Substitute $x = r \\cos \\theta$ into the simplified expression:\\begin{aligned} &AD^2 \\cr &\\quad = r^2 + (r\\cos \\theta)^2 \\cr &\\qquad + 2r(r\\cos \\theta)\\cos \\theta \\cr &\\quad = r^2 + r^2\\cos^2 \\theta \\cr &\\qquad + 2r^2\\cos^2 \\theta \\cr &\\quad = r^2(1 + 3\\cos^2 \\theta) \\end{aligned}",
+    "<strong>Step 5: Apply the bisection condition in part (b)</strong><br><br>If $BD$ bisects $OS$, then $D$ is the midpoint of the radius $OS$. This gives us:\\begin{aligned} OD &= \\dfrac{r}{2} \\cr r\\cos \\theta &= \\dfrac{r}{2} \\cr \\cos \\theta &= \\dfrac{1}{2} \\cr \\theta &= 60^\\circ \\end{aligned}",
+    "<strong>Step 6: Calculate $AD$ and solve for $k$</strong><br><br>Substitute $\\cos \\theta = \\dfrac{1}{2}$ into your $AD^2$ formula from part (a):\\begin{aligned} AD^2 &= r^2\\left( 1 + 3\\left(\\dfrac{1}{2}\\right)^2 \\right) \\cr &= r^2\\left( 1 + 3\\left(\\dfrac{1}{4}\\right) \\right) \\cr &= r^2\\left( 1 + \\dfrac{3}{4} \\right) \\cr &= r^2\\left(\\dfrac{7}{4}\\right) \\end{aligned}Taking the square root yields:\\begin{aligned} AD = r\\sqrt{\\dfrac{7}{4}} \\end{aligned}Comparing this to the given expression $AD = r\\sqrt{\\dfrac{7}{k}}$, we get $k = 4$.",
+    "Final Answer:\\begin{aligned} &\\text{(a) Formula shown} \\cr &\\text{(b) } k = 4 \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} k = 2 \\end{aligned}",
+      "feedback": "You may have made an error when squaring $\\cos \\theta = \\dfrac{1}{2}$ in Step 6, mistakenly writing $\\left(\\dfrac{1}{2}\\right)^2 = \\dfrac{1}{2}$ instead of $\\dfrac{1}{4}$."
+    },
+    {
+      "ans": "\\begin{aligned} k = 16 \\end{aligned}",
+      "feedback": "You may have made an algebraic slip when equating $AD = r\\sqrt{\\dfrac{7}{4}}$ to $r\\sqrt{\\dfrac{7}{k}}$, perhaps by squaring the denominator a second time."
+    },
+    {
+      "ans": "\\begin{aligned} k = 3 \\end{aligned}",
+      "feedback": "You may have made an arithmetic slip when simplifying the terms inside the parentheses in Step 6, evaluating $1 + \\dfrac{3}{4}$ as $\\dfrac{6}{4}$ instead of $\\dfrac{7}{4}$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Supplementary Angle Trigonometry",
+    "content": "In geometry proofs, the relation $\\cos(180^\\circ - \\theta) = -\\cos \\theta$ is one of the most frequently used identities. If you forget to flip the sign, you will end up with a subtraction $1 - \\cos^2 \\theta$, which will prevent you from completing the proof. Always write down your supplementary angle identities explicitly."
+  }
+},
+{
+  "id": "004427",
+  "board": "CCEA",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Trigonometry",
+  "topic": "Circles",
+  "subtopic": [
+    "Circle Geometry",
+    "Proof"
+  ],
+  "img": "images/Pure_SVGs/004427.svg",
+  "question": "The diagram shows a circle with centre $O$ and radius $r$. $BA$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $A$ to $OS$. The angle $\\angle AOS$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> By applying the cosine rule to triangle $BOD$, show that:$$BD^2 = r^2(1 + 3\\cos^2 \\theta)$$[7]<br><br><strong>(b)</strong> When $AD$ bisects $OS$,$$BD = r\\sqrt{\\dfrac{7}{k}}$$Find the value of $k$, where $k$ is a positive integer. [5]",
+  "steps": [
+    "<strong>Step 1: Relate the length $OD = x$ to the radius and angle $\\theta$</strong><br><br>In right-angled triangle $ADO$, $D$ is the foot of the perpendicular from $A$ to $OS$, making $\\angle ADO = 90^\\circ$. The projection of $OA$ onto $OS$ gives:\\begin{aligned} \\cos \\theta &= \\dfrac{OD}{OA} \\cr &= \\dfrac{x}{r} \\cr x &= r\\cos \\theta \\end{aligned}",
+    "<strong>Step 2: Find the angle $\\angle BOD$</strong><br><br>The points $B$, $O$, and $A$ lie along a straight line because $BA$ is a diameter of the circle. This means the angles on either side of the center are supplementary:\\begin{aligned} \\angle BOD = 180^\\circ - \\theta \\end{aligned}",
+    "<strong>Step 3: Apply the Cosine Rule to triangle $BOD$</strong><br><br>Use the cosine rule on triangle $BOD$ with sides $OB = r$, $OD = x$, and angle $\\angle BOD = 180^\\circ - \\theta$:\\begin{aligned} &BD^2 \\cr &\\quad = BO^2 + OD^2 \\cr &\\qquad - 2(BO)(OD)\\cos(\\angle BOD) \\cr &\\quad = r^2 + x^2 \\cr &\\qquad - 2rx\\cos(180^\\circ - \\theta) \\end{aligned}Using the trigonometric identity $\\cos(180^\\circ - \\theta) = -\\cos \\theta$, this simplifies to:\\begin{aligned} BD^2 = r^2 + x^2 + 2rx\\cos \\theta \\end{aligned}",
+    "<strong>Step 4: Substitute $x = r \\cos \\theta$ to complete the proof for part (a)</strong><br><br>Substitute $x = r \\cos \\theta$ into the simplified expression:\\begin{aligned} &BD^2 \\cr &\\quad = r^2 + (r\\cos \\theta)^2 \\cr &\\qquad + 2r(r\\cos \\theta)\\cos \\theta \\cr &\\quad = r^2 + r^2\\cos^2 \\theta \\cr &\\qquad + 2r^2\\cos^2 \\theta \\cr &\\quad = r^2(1 + 3\\cos^2 \\theta) \\end{aligned}",
+    "<strong>Step 5: Apply the bisection condition in part (b)</strong><br><br>If $AD$ bisects $OS$, then $D$ is the midpoint of the radius $OS$. This gives us:\\begin{aligned} OD &= \\dfrac{r}{2} \\cr r\\cos \\theta &= \\dfrac{r}{2} \\cr \\cos \\theta &= \\dfrac{1}{2} \\cr \\theta &= 60^\\circ \\end{aligned}",
+    "<strong>Step 6: Calculate $BD$ and solve for $k$</strong><br><br>Substitute $\\cos \\theta = \\dfrac{1}{2}$ into your $BD^2$ formula from part (a):\\begin{aligned} BD^2 &= r^2\\left( 1 + 3\\left(\\dfrac{1}{2}\\right)^2 \\right) \\cr &= r^2\\left( 1 + 3\\left(\\dfrac{1}{4}\\right) \\right) \\cr &= r^2\\left( 1 + \\dfrac{3}{4} \\right) \\cr &= r^2\\left(\\dfrac{7}{4}\\right) \\end{aligned}Taking the square root yields:\\begin{aligned} BD = r\\sqrt{\\dfrac{7}{4}} \\end{aligned}Comparing this to the given expression $BD = r\\sqrt{\\dfrac{7}{k}}$, we get $k = 4$.",
+    "Final Answer:\\begin{aligned} &\\text{(a) Formula shown} \\cr &\\text{(b) } k = 4 \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} k = 2 \\end{aligned}",
+      "feedback": "You may have made an error when squaring $\\cos \\theta = \\dfrac{1}{2}$ in Step 6, mistakenly writing $\\left(\\dfrac{1}{2}\\right)^2 = \\dfrac{1}{2}$ instead of $\\dfrac{1}{4}$."
+    },
+    {
+      "ans": "\\begin{aligned} k = 16 \\end{aligned}",
+      "feedback": "You may have made an algebraic slip when equating $BD = r\\sqrt{\\dfrac{7}{4}}$ to $r\\sqrt{\\dfrac{7}{k}}$, perhaps by squaring the denominator a second time."
+    },
+    {
+      "ans": "\\begin{aligned} k = 3 \\end{aligned}",
+      "feedback": "You may have made an arithmetic slip when simplifying the terms inside the parentheses in Step 6, evaluating $1 + \\dfrac{3}{4}$ as $\\dfrac{6}{4}$ instead of $\\dfrac{7}{4}$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Symmetry in Circle Proofs",
+    "content": "When proving trigonometric relations on opposite sides of a circle, the horizontal orientation of your diameter does not change the core projection. Whether you are projecting $OA$ or $OB$ onto a radius $OS$, the projection length remains $r \\cos \\theta$. Recognizing that supplementary angles (like $\\angle AOS = \\theta$ and $\\angle BOS = 180^\\circ - \\theta$) share this symmetrical relationship allows you to solve coordinate geometry proofs with confidence, regardless of which side you are working on."
+  }
+},
+{
+  "id": "004428",
+  "board": "CCEA",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Trigonometry",
+  "topic": "Circles",
+  "subtopic": [
+    "Proof"
+  ],
+  "img": "images/Pure_SVGs/004428.svg",
+  "question": "The diagram shows a circle with centre $O$ and radius $r$. $AB$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $S$ to $AB$. The acute angle $\\angle SOB$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> Show that the length $AS$ and length $AD$ satisfy:$$AS^2 = 2r \\cdot AD$$[6]<br><br><strong>(b)</strong> When $D$ is the midpoint of $OB$, find the exact value of $\\theta$ in degrees and express the length of $AS$ in terms of $r$. [6]",
+  "steps": [
+    "<strong>Step 1: Set up coordinates for part (a)</strong><br><br>For clarity, we place the circle on a Cartesian grid with centre $O$ at the origin $(0,0)$ and diameter $AB$ along the $x$-axis. This gives:\\begin{aligned} A &= (-r, 0) \\cr B &= (r, 0) \\end{aligned}",
+    "<strong>Step 2: Express the coordinates of $S$ and $D$ in terms of $\\theta$</strong><br><br>Using polar coordinates, the point $S$ on the circle has coordinates:\\begin{aligned} S = (r\\cos \\theta, r\\sin \\theta) \\end{aligned}Since $D$ is the foot of the perpendicular from $S$ to the $x$-axis (the line segment $AB$), its coordinates are:\\begin{aligned} D = (r\\cos \\theta, 0) \\end{aligned}",
+    "<strong>Step 3: Calculate the length squared $AS^2$</strong><br><br>Using the distance formula, find the distance squared between $A(-r, 0)$ and $S(r\\cos \\theta, r\\sin \\theta)$:\\begin{aligned} &AS^2 \\cr &\\quad = (r\\cos \\theta - (-r))^2 \\cr &\\qquad + (r\\sin \\theta - 0)^2 \\cr &\\quad = (r\\cos \\theta + r)^2 \\cr &\\qquad + r^2\\sin^2 \\theta \\cr &\\quad = r^2(\\cos^2 \\theta + 2\\cos \\theta \\cr &\\qquad + 1 + \\sin^2 \\theta) \\cr &\\quad = r^2(2 + 2\\cos \\theta) \\cr &\\quad = 2r^2(1 + \\cos \\theta) \\end{aligned}",
+    "<strong>Step 4: Calculate the length $AD$ and complete the proof</strong><br><br>The distance from $A(-r, 0)$ to $D(r\\cos \\theta, 0)$ along the horizontal $x$-axis is:\\begin{aligned} AD &= r\\cos \\theta - (-r) \\cr &= r(1 + \\cos \\theta) \\end{aligned}Multiply this by $2r$:\\begin{aligned} 2r \\cdot AD &= 2r \\cdot r(1 + \\cos \\theta) \\cr &= 2r^2(1 + \\cos \\theta) \\end{aligned}This is exactly equal to $AS^2$, completing the proof.",
+    "<strong>Step 5: Apply the midpoint condition in part (b)</strong><br><br>If $D$ is the midpoint of $OB$, then its $x$-coordinate must be half of $OB = r$:\\begin{aligned} r\\cos \\theta &= \\dfrac{r}{2} \\cr \\cos \\theta &= \\dfrac{1}{2} \\cr \\theta &= 60^\\circ \\end{aligned}",
+    "<strong>Step 6: Express the length of $AS$ in terms of $r$</strong><br><br>Substitute $\\cos \\theta = \\dfrac{1}{2}$ into the formula for $AS^2$:\\begin{aligned} AS^2 &= 2r^2\\left( 1 + \\dfrac{1}{2} \\right) \\cr &= 2r^2\\left( \\dfrac{3}{2} \\right) \\cr &= 3r^2 \\end{aligned}Taking the square root yields:\\begin{aligned} AS = r\\sqrt{3} \\end{aligned}",
+    "Final Answer:\\begin{aligned} &\\text{(a) Identity shown: } AS^2 = 2r \\cdot AD \\cr &\\text{(b) } \\theta = 60^\\circ, \\ AS = r\\sqrt{3} \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} &\\theta = 60^\\circ \\cr &AS = r\\sqrt{2} \\end{aligned}",
+      "feedback": "You may have made an arithmetic slip in Step 6 when evaluating $1 + \\cos\\theta$, perhaps by writing $1 + \\dfrac{1}{2} = 1$ or making a sign error, leading to $AS^2 = 2r^2$."
+    },
+    {
+      "ans": "\\begin{aligned} &\\theta = 30^\\circ \\cr &AS = r\\sqrt{3} \\end{aligned}",
+      "feedback": "You may have misidentified $\\cos\\theta = \\dfrac{1}{2}$ as $\\theta = 30^\\circ$ instead of $60^\\circ$. Remember that $\\cos 60^\\circ = 0.5$ and $\\sin 30^\\circ = 0.5$."
+    },
+    {
+      "ans": "\\begin{aligned} &\\theta = 60^\\circ \\cr &AS = 3r \\end{aligned}",
+      "feedback": "You may have forgotten to take the square root of both sides of the equation $AS^2 = 3r^2$ when finding the length $AS$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Coordinate Geometry as a Proof Tool",
+    "content": "When asked to prove geometric relations inside a circle, do not hesitate to overlay a Cartesian coordinate system. Placing the centre of the circle at the origin $(0,0)$ and aligning the diameter with the $x$-axis often transforms complicated trigonometric proofs into simple distance-formula algebra!"
+  }
+},
+{
+  "id": "004429",
+  "board": "CCEA",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Differentiation",
+  "topic": "Circles",
+  "subtopic": [
+    "Tangents and Normals",
+    "Trigonometry"
+  ],
+  "img": "images/Pure_SVGs/004429.svg",
+  "question": "The diagram shows a circle with centre $O$ and radius $r$. $AOB$ is a diameter of the circle. $T$ lies on the circumference. The tangent to the circle at $T$ meets the extension of the diameter $AB$ at $P$. The acute angle $\\angle TOP$ is $\\theta$. $OA = OB = r$ and $OP = x$.<br><br><strong>(a)</strong> Show that the length of the tangent $TP$ satisfies:$$TP^2 = r^2\\tan^2 \\theta$$[5]<br><br><strong>(b)</strong> When the distance $BP$ is exactly equal to the radius $r$, find the exact value of $\\theta$ in degrees. [7]",
+  "steps": [
+    "<strong>Step 1: Set up the right-angled triangle relations for part (a)</strong><br><br>A fundamental circle theorem states that a tangent line is always perpendicular to the radius at the point of contact. Therefore, the radius $OT$ is perpendicular to the tangent $TP$, making $OTP$ a right-angled triangle with $\\angle OTP = 90^\\circ$.",
+    "<strong>Step 2: Relate the tangent to $\\theta$ and complete part (a)</strong><br><br>In the right-angled triangle $OTP$, the angle at $O$ is $\\theta$. Using basic right-angled trigonometry:\\begin{aligned} \\tan \\theta &= \\dfrac{TP}{OT} \\cr &= \\dfrac{TP}{r} \\cr TP &= r\\tan \\theta \\cr TP^2 &= r^2\\tan^2 \\theta \\end{aligned}",
+    "<strong>Step 3: Analyze the boundary conditions in part (b)</strong><br><br>The diameter $AB$ lies along the straight line through $O$, with $B$ located between the center $O$ and the point $P$. Since the distance $BP$ is given as exactly equal to the radius $r$, calculate the total hypotenuse length $OP$:\\begin{aligned} OP &= OB + BP \\cr &= r + r \\cr &= 2r \\end{aligned}",
+    "<strong>Step 4: Solve for the exact angle $\\theta$</strong><br><br>In right-angled triangle $OTP$ (where the hypotenuse is $OP = 2r$ and the adjacent side to angle $\\theta$ is $OT = r$), use the cosine ratio:\\begin{aligned} \\cos \\theta &= \\dfrac{OT}{OP} \\cr &= \\dfrac{r}{2r} \\cr &= \\dfrac{1}{2} \\end{aligned}Since $\\theta$ is acute, we solve to get:$$\\theta = 60^\\circ$$",
+    "Final Answer:\\begin{aligned} &\\text{(a) Formula shown: } TP^2 = r^2\\tan^2 \\theta \\cr &\\text{(b) } \\theta = 60^\\circ \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} \\theta = 30^\\circ \\end{aligned}",
+      "feedback": "You may have misidentified the ratio $\\cos \\theta = \\dfrac{1}{2}$ as $\\theta = 30^\\circ$. Double-check your exact values: $\\cos 60^\\circ = 0.5$ while $\\sin 30^\\circ = 0.5$."
+    },
+    {
+      "ans": "\\begin{aligned} \\theta = 45^\\circ \\end{aligned}",
+      "feedback": "You may have assumed the triangle is an isosceles right-angled triangle. However, the hypotenuse $OP = 2r$ is twice the adjacent side $OT = r$, which determines a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle."
+    },
+    {
+      "ans": "\\begin{aligned} \\theta = 41.8^\\circ \\end{aligned}",
+      "feedback": "You may have used the sine ratio instead of the cosine ratio, solving $\\sin \\theta = \\dfrac{r}{2r} = 0.5$, but then mistakenly used your calculator in radian mode or made an inverse trigonometric calculation error."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Tangent Perpendicularity",
+    "content": "In any coordinate or geometric problem involving circle tangents, your first step should always be to draw or indicate a right angle $(90^\\circ)$ between the tangent and the radius at the point of tangency. This immediately unlocks right-angled triangle properties like Pythagoras and standard SOH CAH TOA trigonometry."
+  }
+},
+{
+  "id": "004430",
+  "board": "CCEA",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Trigonometry",
+  "topic": "Circles",
+  "subtopic": [
+    "Circle Geometry",
+    "Trigonometry"
+  ],
+  "img": "images/Pure_SVGs/004430.svg",
+  "question": "The diagram shows a sketch of a semicircle with diameter $AB$ and centre $O$. $C$ lies on the circumference of the semicircle. The angle $\\angle CAB$ is $\\theta$ and $OA = OB = r$.<br><br><strong>(a)</strong> By considering the right-angled triangle $ACB$ in the semicircle, show that:$$BC^2 = 4r^2\\sin^2 \\theta$$[5]<br><br><strong>(b)</strong> When $BC = r$, find the exact value of the angle $\\theta$ in degrees. [7]",
+  "steps": [
+    "<strong>Step 1: Apply the circle theorem for angles in a semicircle for part (a)</strong><br><br>A fundamental circle theorem states that the angle subtended by a diameter at any point on the circumference of a circle is a right angle ($90^\\circ$). Since $AB$ is a diameter, we have:$$\\angle ACB = 90^\\circ$$",
+    "<strong>Step 2: Set up the trigonometric ratio and complete part (a)</strong><br><br>In right-angled triangle $ACB$, the hypotenuse is the diameter $AB = 2r$. The side opposite angle $\\theta$ is $BC$. Apply the sine ratio:\\begin{aligned} \\sin \\theta &= \\dfrac{BC}{AB} \\cr &= \\dfrac{BC}{2r} \\cr BC &= 2r\\sin \\theta \\end{aligned}Square both sides of this equation to get the required proof:\\begin{aligned} BC^2 &= (2r\\sin \\theta)^2 \\cr &= 4r^2\\sin^2 \\theta \\end{aligned}",
+    "<strong>Step 3: Apply the condition in part (b) and simplify</strong><br><br>We are given that $BC = r$. Substitute this into the formula from part (a):\\begin{aligned} r^2 &= 4r^2\\sin^2 \\theta \\end{aligned}",
+    "<strong>Step 4: Solve for the exact angle $\\theta$</strong><br><br>Since $r \\neq 0$, we can divide both sides of the equation by $r^2$:\\begin{aligned} 1 &= 4\\sin^2 \\theta \\cr \\sin^2 \\theta &= \\dfrac{1}{4} \\cr \\sin \\theta &= \\dfrac{1}{2} \\end{aligned}Since $\\theta$ is an acute angle in the triangle, we solve to find the principal angle:$$\\theta = 30^\\circ$$",
+    "Final Answer:\\begin{aligned} &\\text{(a) Formula shown: } BC^2 = 4r^2\\sin^2 \\theta \\cr &\\text{(b) } \\theta = 30^\\circ \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} \\theta = 60^\\circ \\end{aligned}",
+      "feedback": "You may have misidentified the ratio $\\sin \\theta = \\dfrac{1}{2}$ as $\\theta = 60^\\circ$ instead of $30^\\circ$. Remember that $\\sin 30^\\circ = 0.5$ and $\\cos 60^\\circ = 0.5$."
+    },
+    {
+      "ans": "\\begin{aligned} \\theta = 45^\\circ \\end{aligned}",
+      "feedback": "You may have assumed the triangle is an isosceles right-angled triangle. However, the side $BC = r$ is exactly half of the hypotenuse $AB = 2r$, which defines a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle."
+    },
+    {
+      "ans": "\\begin{aligned} \\theta = 14.5^\\circ \\end{aligned}",
+      "feedback": "You may have made an error when dividing, solving $\\sin^2 \\theta = 4$, which gives $\\sin \\theta = 2$, or made an incorrect inverse trigonometric calculation on your calculator."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Semicircle Right Angles",
+    "content": "Always remember the theorem: 'The angle in a semicircle is a right angle.' Whenever you see a triangle drawn inside a circle where one side is the diameter, you can instantly assume the opposite vertex has a $90^\\circ$ angle. This simple realization is the key to setting up trigonometric equations for semicircle problems."
+  }
+}, 
+{
                 "id": "004431",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
