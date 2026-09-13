@@ -368,7 +368,7 @@ window.ALEVEL_QUESTIONS = [
       "Quadratics"
     ],
     "img": false,
-    "question": "In each of the two statements below, $x$ is a real number. One of the statements is true, while the other is false.\\begin{aligned} &\\text{A: } x^2 > x \\text{ for all real } x \\end{aligned}\\begin{aligned} &\\text{B: } x^2 - 6x + 10 > 0 \\text{ for all real } x \\end{aligned}<strong>(a)</strong> Identify the statement which is false. Show, by counterexample, that this statement is in fact false.<br><br><strong>(b)</strong> Identify the statement which is true. Give a proof to show that this statement is in fact true.",
+    "question": "In each of the two statements below, $x$ is a real number. One of the statements is true, while the other is false.\\begin{aligned} &\\text{A: } x^2 > x \\text{ for all real } x \\end{aligned}\\begin{aligned} \\text{B: }&x^2 - 6x + 10 > 0\\cr & \\text{ for all real } x \\end{aligned}<strong>(a)</strong> Identify the statement which is false. Show, by counterexample, that this statement is in fact false.<br><br><strong>(b)</strong> Identify the statement which is true. Give a proof to show that this statement is in fact true.",
     "steps": [
       "First, we analyze both statements.<br><br>Statement A claims that $x^2 > x$ for all real numbers $x$. This is false because squaring real numbers between 0 and 1 (inclusive) does not make them strictly larger.<br><br>Statement B claims that $x^2 - 6x + 10 > 0$ for all real numbers $x$. This is a true quadratic inequality.",
       "<strong>Part (a): Disproving Statement A</strong><br><br>To prove Statement A is false, we need to find a single real number $x$ for which $x^2$ is not strictly greater than $x$.<br><br>Let $x = 0$.<br><br>Substituting $x = 0$ into the inequality $x^2 > x$:\\begin{aligned} 0^2 &> 0 \\cr 0 &> 0 \\end{aligned}Since $0 > 0$ is a false statement, $x = 0$ is a valid counterexample. (Alternatively, choosing $x = 1$ yields $1 > 1$, which is also false, and choosing $x = 0.5$ yields $0.25 > 0.5$, which is false). Thus, Statement A is false.",
@@ -580,202 +580,206 @@ window.ALEVEL_QUESTIONS = [
                         "content": "When solving $Ae^{at} = Be^{-bt}$, always divide both sides by $e^{-bt}$ to get $e^{(a+b)t} = \\dfrac{ B }{ A }$. This cleanly combines the exponents into a single positive exponential term, making it simple to take the natural logarithm of both sides."
                 }
         },
-        {
-                "id": "004366",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Tangents and Normals"
-                ],
-                "img": false,
-                "question": "A curve $C$ has the equation:<br>$$y = 3x^2 - 14x - 8$$<br>The point $P$ lies on $C$ and is such that the tangent to $C$ at $P$ has the equation:<br>$$y = -2x + c$$<br>where $c$ is a constant.<br><br>Find the coordinates of $P$ and the value of $c$.",
-                "steps": [
-                        "First, we find the gradient function of the curve by differentiating the equation with respect to $x$:<br>\\begin{aligned} y &= 3x^2 - 14x - 8 \\cr \\dfrac{ \\mathrm{ d }y }{ \\mathrm{ d }x } &= 6x - 14 \\end{aligned}",
-                        "We are given that the tangent to the curve at $P$ is $y = -2x + c$. The gradient of this tangent line is $-2$.<br><br>Since the gradient of the curve at the point of tangency $P$ must equal the gradient of the tangent line, we set our derivative equal to $-2$ and solve for $x$:<br>\\begin{aligned} 6x - 14 &= -2 \\cr 6x &= 12 \\cr x &= 2 \\end{aligned}<br><br>Thus, the $x$-coordinate of the point $P$ is $2$.",
-                        "Next, we find the $y$-coordinate of $P$ by substituting $x = 2$ back into the curve's original equation:<br>\\begin{aligned} y &= 3(2)^2 - 14(2) - 8 \\cr y &= 3(4) - 28 - 8 \\cr y &= 12 - 36 \\cr y &= -24 \\end{aligned}<br><br>So, the coordinates of the point of tangency are $P(2, -24)$.",
-                        "Finally, since the tangent line passes through $P(2, -24)$, we substitute these coordinates into the tangent line equation $y = -2x + c$ to solve for $c$:<br>\\begin{aligned} -24 &= -2(2) + c \\cr -24 &= -4 + c \\cr c &= -20 \\end{aligned}<br><br>Thus, the coordinates of $P$ are $(2, -24)$ and the constant value is $c = -20$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$P(2, -24)$, $c = -28$",
-                                "feedback": "This error occurs if you make a sign error when substituting the coordinates of $P(2, -24)$ into $y = -2x + c$, mistakenly calculating $-24 = -4 + c$ as $c = -28$ instead of $c = -20$."
-                        },
-                        {
-                                "ans": "$P(2, -24)$, $c = -24$",
-                                "feedback": "This represents a common misconception where the constant $c$ is assumed to be the $y$-coordinate of the point of tangency. This is only true if the tangent line is horizontal (gradient is 0)."
-                        },
-                        {
-                                "ans": "$P(2, 12)$, $c = -16$",
-                                "feedback": "This is a calculation slip where the $y$-coordinate of $P$ is evaluated incorrectly (for example, by calculating $12 - 28 - 8$ as positive $12$), which consequently leads to an incorrect value for $c$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "Finding Tangent Constants From Derivatives",
-                        "content": "A tangent line $y = mx + c$ shares both the gradient and the coordinates of the tangency point $P$ with the curve. First, solve $\\dfrac{\\mathrm{ d }y}{\\mathrm{ d }x} = m$ to find the $x$-coordinate, evaluate the curve's equation to find the $y$-coordinate, and then substitute both into the tangent equation to find $c$."
-                }
-        },
-        {
-                "id": "004367",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Tangents and Normals"
-                ],
-                "img": false,
-                "question": "A curve $C$ has the equation:<br>$$y = 2x^2 - 8x + 9$$<br><strong>(a)</strong> Find the equation of the tangent to $C$ at the point $A$ where $x = 3$.<br><br><strong>(b)</strong> This tangent intersects the $x$-axis at the point $P$ and the $y$-axis at the point $Q$. Find the area of the triangle $OPQ$, where $O$ is the origin.",
-                "steps": [
-                        "<strong>Part (a): Finding the equation of the tangent</strong><br><br>First, find the $y$-coordinate of point $A$ by substituting $x = 3$ into the curve's equation:<br>\\begin{aligned} y &= 2(3)^2 - 8(3) + 9 \\cr y &= 18 - 24 + 9 \\cr y &= 3 \\end{aligned}<br><br>So, the point of tangency is $A(3, 3)$.",
-                        "Next, find the gradient function of the curve by differentiating:<br>\\begin{aligned} \\dfrac{ \\mathrm{ d }y }{ \\mathrm{ d }x } = 4x - 8 \\end{aligned}<br><br>Now, evaluate the derivative at $x = 3$ to find the gradient of the tangent, $m$:<br>\\begin{aligned} m = 4(3) - 8 = 4 \\end{aligned}",
-                        "Using the point-slope formula $y - y_1 = m(x - x_1)$ with $A(3, 3)$ and $m = 4$, we find the equation of the tangent line:<br>\\begin{aligned} y - 3 &= 4(x - 3) \\cr y - 3 &= 4x - 12 \\cr y &= 4x - 9 \\end{aligned}",
-                        "<strong>Part (b): Finding the area of triangle $OPQ$</strong><br><br>Find the coordinate intercepts of the tangent line $y = 4x - 9$:<br><br>1. For the $x$-axis intercept (point $P$), set $y = 0$:<br>\\begin{aligned} 0 &= 4x - 9 \\cr 4x &= 9 \\cr x &= \\dfrac{ 9 }{ 4 } \\end{aligned}<br>So, $P\\left( \\dfrac{ 9 }{ 4 }, 0 \\right)$.<br><br>2. For the $y$-axis intercept (point $Q$), set $x = 0$:<br>\\begin{aligned} y &= -9 \\end{aligned}<br>So, $Q(0, -9)$.",
-                        "The triangle $OPQ$ is a right-angled triangle at the origin $O(0, 0)$.<br><br>The base along the $x$-axis has a positive length of $\\dfrac{ 9 }{ 4 }$ units, and the height along the $y$-axis has a positive length of $9$ units.<br><br>Calculate the area:<br>\\begin{aligned} \\text{Area} &= \\dfrac{ 1 }{ 2 } \\times \\text{base} \\times \\text{height} \\cr \\text{Area} &= \\dfrac{ 1 }{ 2 } \\times \\dfrac{ 9 }{ 4 } \\times 9 \\cr \\text{Area} &= \\dfrac{ 81 }{ 8 } \\text{ (or } 10.125 \\text{)} \\end{aligned}<br><br>Thus, the area of triangle $OPQ$ is $\\dfrac{ 81 }{ 8 }$ square units."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "Tangent: $y = 4x - 9$; Area $= 20.25$",
-                                "feedback": "This is double the correct area. Remember that the area of a right-angled triangle is calculated using $\\dfrac{ 1 }{ 2 } \\times \\text{base} \\times \\text{height}$, not just $\\text{base} \\times \\text{height}$."
-                        },
-                        {
-                                "ans": "Tangent: $y = 4x - 3$; Area $= 1.125$",
-                                "feedback": "This error occurs if you make an algebraic mistake when simplifying the tangent equation, calculating $y - 3 = 4(x - 3)$ as $y = 4x - 3$. This leads to incorrect intercepts and an incorrect area calculation."
-                        },
-                        {
-                                "ans": "Tangent: $y = 4x - 9$; Area $= 40.5$",
-                                "feedback": "This error occurs if you evaluate the base intercept incorrectly as $x = 9$ (confusing it with the value of the $y$-intercept) rather than the correct value of $x = \\dfrac{ 9 }{ 4 }$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "Handling Negative Intercept Coordinates in Area Calculations",
-                        "content": "When finding the area of a triangle formed by coordinate axes, the base and height must always be positive lengths. If an intercept coordinate is negative (such as $y = -9$), the corresponding physical length is $+9$. Never multiply by negative values for geometric areas."
-                }
-        },
-        {
-                "id": "004368",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Tangents and Normals"
-                ],
-                "img": false,
-                "question": "A curve $C$ has the equation:<br>$$y = 3x^2 - 5x + 2$$<br><strong>(a)</strong> Find the equation of the normal to $C$ at the point $P(1, 0)$.<br><br><strong>(b)</strong> Find the coordinates of the point $Q$ where this normal intersects the curve $C$ again.",
-                "steps": [
-                        "<strong>Part (a): Finding the equation of the normal</strong><br><br>First, find the gradient function of the curve by differentiating:<br>\\begin{aligned} \\dfrac{ \\mathrm{ d }y }{ \\mathrm{ d }x } = 6x - 5 \\end{aligned}<br><br>Evaluate the derivative at $x = 1$ to find the gradient of the tangent, $m_t$:<br>\\begin{aligned} m_t = 6(1) - 5 = 1 \\end{aligned}",
-                        "The normal is perpendicular to the tangent, so its gradient ($m_n$) is the negative reciprocal of $m_t$:<br>\\begin{aligned} m_n = -\\dfrac{ 1 }{ m_t } = -\\dfrac{ 1 }{ 1 } = -1 \\end{aligned}<br><br>Use the point-slope formula with $P(1, 0)$ and gradient $m_n = -1$ to write the equation of the normal line:<br>\\begin{aligned} y - 0 &= -1(x - 1) \\cr y &= -x + 1 \\end{aligned}",
-                        "<strong>Part (b): Finding the second intersection point $Q$</strong><br><br>To find where the normal intersects the curve again, solve the equations simultaneously:<br>\\begin{aligned} 3x^2 - 5x + 2 &= -x + 1 \\cr 3x^2 - 4x + 1 &= 0 \\end{aligned}",
-                        "Since we already know that $x = 1$ is a point of intersection (the point $P$), $(x - 1)$ must be a factor of the quadratic expression. We factor the quadratic:<br>\\begin{aligned} (3x - 1)(x - 1) = 0 \\end{aligned}<br><br>This gives $x = 1$ (which is $P$) or $x = \\dfrac{ 1 }{ 3 }$ (which is $Q$).",
-                        "Substitute $x = \\dfrac{ 1 }{ 3 }$ back into the normal equation $y = -x + 1$ to find the $y$-coordinate of $Q$:<br>\\begin{aligned} y &= -\\left( \\dfrac{ 1 }{ 3 } \\right) + 1 \\cr y &= \\dfrac{ 2 }{ 3 } \\end{aligned}<br><br>Thus, the coordinates of the point $Q$ are $Q\\left( \\dfrac{ 1 }{ 3 }, \\dfrac{ 2 }{ 3 } \\right)$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "Normal: $y = -x + 1$; $Q\\left( \\dfrac{ 1 }{ 2 }, \\dfrac{ 1 }{ 2 } \\right)$",
-                                "feedback": "This error occurs from a factoring mistake when solving the simultaneous quadratic equation $3x^2 - 4x + 1 = 0$, incorrectly identifying the factors as $(2x - 1)(x - 1) = 0$ instead of the correct $(3x - 1)(x - 1) = 0$."
-                        },
-                        {
-                                "ans": "Normal: $y = x - 1$; $Q\\left( \\dfrac{ 1 }{ 3 }, -\\dfrac{ 2 }{ 3 } \\right)$",
-                                "feedback": "This error stems from using the gradient of the tangent ($m_t = 1$) as the gradient of the normal, or forgetting to apply the negative reciprocal sign ($m_n = -\\dfrac{ 1 }{ m_t }$)."
-                        },
-                        {
-                                "ans": "Normal: $y = -x + 1$; $Q\\left( \\dfrac{ 1 }{ 3 }, \\dfrac{ 1 }{ 3 } \\right)$",
-                                "feedback": "This is a basic calculation slip when evaluating the $y$-coordinate of the point $Q$. Substituting $x = \\dfrac{ 1 }{ 3 }$ into the line equation $y = -x + 1$ yields $y = \\dfrac{ 2 }{ 3 }$, not $\\dfrac{ 1 }{ 3 }$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "Using Known Roots to Factor Simultaneous Quadratics",
-                        "content": "When finding where a normal (or tangent) intersects a curve again, you already know one intersection point: the point of tangency, $P$. This means $(x - x_P)$ is guaranteed to be a factor of the resulting simultaneous equation. In this case, since $P$ is at $x = 1$, $(x - 1)$ must be a factor of $3x^2 - 4x + 1 = 0$, making the factorization $(3x - 1)(x - 1) = 0$ much easier to spot."
-                }
-        },
-        {
-                "id": "004369",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Differentiation"
-                ],
-                "img": false,
-                "question": "A curve $C$ has the equation:<br>$$y = \\frac{8}{x} + 2x$$<br><strong>(a)</strong> Find an expression for $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$.<br><br><strong>(b)</strong> The tangent to $C$ at a point $P$ in the first quadrant has a gradient of $0$. Find the coordinates of $P$.<br><br><strong>(c)</strong> Find the equation of the normal to $C$ at the point where $x = 4$.",
-                "steps": [
-                        "<strong>Part (a): Differentiating the expression</strong><br><br>Rewrite the curve's equation using negative indices:<br>\\begin{aligned} y = 8x^{-1} + 2x \\end{aligned}<br><br>Now, apply the power rule of differentiation:<br>\\begin{aligned} \\dfrac{ \\mathrm{ d }y }{ \\mathrm{ d }x } &= -8x^{-2} + 2 \\cr &= -\\dfrac{ 8 }{ x^2 } + 2 \\end{aligned}",
-                        "<strong>Part (b): Finding the point $P$</strong><br><br>Since the gradient of the tangent at $P$ is $0$, we set our derivative equal to $0$:<br>\\begin{aligned} -\\dfrac{ 8 }{ x^2 } + 2 &= 0 \\cr \\dfrac{ 8 }{ x^2 } &= 2 \\cr 2x^2 &= 8 \\cr x^2 &= 4 \\cr x &= \\pm 2 \\end{aligned}<br><br>Since $P$ is in the first quadrant, the $x$-coordinate must be positive, so we take $x = 2$.",
-                        "Substitute $x = 2$ back into the curve's original equation to find the $y$-coordinate of $P$:<br>\\begin{aligned} y = \\dfrac{ 8 }{ 2 } + 2(2) = 4 + 4 = 8 \\end{aligned}<br><br>Thus, the coordinates of $P$ are $P(2, 8)$.",
-                        "<strong>Part (c): Finding the equation of the normal at $x = 4$</strong><br><br>First, find the point on the curve when $x = 4$:<br>\\begin{aligned} y = \\dfrac{ 8 }{ 4 } + 2(4) = 2 + 8 = 10 \\end{aligned}<br>So, the point on the curve is $(4, 10)$.",
-                        "Next, find the gradient of the tangent at $x = 4$ by evaluating the derivative:<br>\\begin{aligned} m_t = -\\dfrac{ 8 }{ 4^2 } + 2 = -\\dfrac{ 8 }{ 16 } + 2 = -0.5 + 2 = 1.5 = \\dfrac{ 3 }{ 2 } \\end{aligned}",
-                        "The gradient of the normal is the negative reciprocal of the tangent gradient:<br>\\begin{aligned} m_n = -\\dfrac{ 1 }{ m_t } = -\\dfrac{ 2 }{ 3 } \\end{aligned}<br><br>Use the point-slope formula with point $(4, 10)$ and gradient $m_n = -\\dfrac{ 2 }{ 3 }$ to write the normal equation:<br>\\begin{aligned} y - 10 &= -\\dfrac{ 2 }{ 3 }(x - 4) \\cr 3(y - 10) &= -2(x - 4) \\cr 3y - 30 &= -2x + 8 \\cr 2x + 3y - 38 &= 0 \\text{ (or } y = -\\dfrac{ 2 }{ 3 }x + \\dfrac{ 38 }{ 3 }\\text{)} \\end{aligned}"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$P(-2, -8)$, Normal: $2x + 3y - 38 = 0$",
-                                "feedback": "This error occurs if you ignore the restriction that $P$ must lie in the first quadrant. In the first quadrant, both coordinates must be positive, which means you must choose $x = 2$ instead of $x = -2$."
-                        },
-                        {
-                                "ans": "$P(2, 8)$, Normal: $y = 1.5x + 4$",
-                                "feedback": "This error occurs if you use the gradient of the tangent ($m_t = 1.5$) instead of the perpendicular gradient of the normal ($m_n = -\\dfrac{ 2 }{ 3 }$) to find the equation of the normal."
-                        },
-                        {
-                                "ans": "$P(2, 8)$, Normal: $2x + 3y - 26 = 0$",
-                                "feedback": "This is the result of using the correct normal gradient but mistakenly using the coordinates of point $P(2, 8)$ instead of the coordinates at $x = 4$ (which are $(4, 10)$) to write the normal equation."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "Understanding Perpendicular Gradients",
-                        "content": "Always distinguish carefully between the tangent and the normal. The tangent gradient is given by the derivative $m_t = \\dfrac{\\mathrm{ d }y}{\\mathrm{ d }x}$. The normal is perpendicular to the tangent, so its gradient is the negative reciprocal: $m_n = -\\dfrac{ 1 }{ m_t }$. Verify that $m_t \\times m_n = -1$."
-                }
-        },
-        {
-                "id": "004370",
-                "board": "WJEC",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Algebraic Methods"
-                ],
-                "img": false,
-                "question": "A curve $C$ has the equation $y = x^2 - 4x + 7$ and a family of lines $L$ has the equation $y = mx + 3$, where $m$ is a constant.<br><br><strong>(a)</strong> Show that if the line $L$ is a tangent to the curve $C$, then $m$ must satisfy the equation:<br>$$(m+4)^2 - 16 = 0$$<br><strong>(b)</strong> Hence, find the two possible values of the gradient $m$.<br><br><strong>(c)</strong> For each value of $m$, find the coordinates of the point of tangency.",
-                "steps": [
-                        "<strong>Part (a): Setting up the tangency condition</strong><br><br>To find the intersection of the curve and the line, set their equations equal to each other:<br>\\begin{aligned} x^2 - 4x + 7 &= mx + 3 \\cr x^2 - 4x - mx + 7 - 3 &= 0 \\cr x^2 - (m+4)x + 4 &= 0 \\end{aligned}",
-                        "For the line to be a tangent to the curve, they must intersect at exactly one point. This means the quadratic equation must have exactly one real root, so its discriminant must equal zero ($\\{ b^2 - 4ac = 0 \\}$):<br>\\begin{aligned} a &= 1 \\cr b &= -(m + 4) \\cr c &= 4 \\end{aligned}<br><br>Substitute these values into the discriminant formula:<br>\\begin{aligned} [-(m + 4)]^2 - 4(1)(4) &= 0 \\cr (m + 4)^2 - 16 &= 0 \\end{aligned}<br>This is the required equation.",
-                        "<strong>Part (b): Solving for $m$</strong><br><br>We solve the equation by rearranging and taking square roots:<br>\\begin{aligned} (m+4)^2 &= 16 \\cr m+4 &= \\pm 4 \\end{aligned}<br><br>This gives two possible equations:<br>1. $m+4 = 4 \\implies m = 0$<br>2. $m+4 = -4 \\implies m = -8$<br><br>Thus, the two possible gradients are $m = 0$ and $m = -8$.",
-                        "<strong>Part (c): Finding the points of tangency</strong><br><br>We find the points of tangency by substituting each value of $m$ back into our simultaneous quadratic $x^2 - (m+4)x + 4 = 0$:<br><br><strong>Case 1: $m = 0$</strong><br>\\begin{aligned} x^2 - (0+4)x + 4 &= 0 \\cr x^2 - 4x + 4 &= 0 \\cr (x - 2)^2 &= 0 \\cr x &= 2 \\end{aligned}<br><br>Substitute $x = 2$ into the line equation $y = 0x + 3$ to get $y = 3$.<br>So, the first point of tangency is $(2, 3)$.",
-                        "<strong>Case 2: $m = -8$</strong><br>\\begin{aligned} x^2 - (-8+4)x + 4 &= 0 \\cr x^2 + 4x + 4 &= 0 \\cr (x + 2)^2 &= 0 \\cr x &= -2 \\end{aligned}<br><br>Substitute $x = -2$ into the line equation $y = -8x + 3$ to get $y = -8(-2) + 3 = 19$.<br>So, the second point of tangency is $(-2, 19)$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$m = 4$ or $m = -4$; Points: $(2, 3)$ and $(-2, 19)$",
-                                "feedback": "This error occurs when solving the quadratic $(m+4)^2 = 16$ as $m+4 = 4 \\implies m = 0$ but incorrectly carrying out the arithmetic for the negative root to get $m = \\pm 4$ instead of $m = 0$ and $m = -8$."
-                        },
-                        {
-                                "ans": "$m = 0$ or $m = -8$; Points: $(2, 3)$ and $(2, 19)$",
-                                "feedback": "This is a slip in finding the points of tangency. Remember that each gradient $m$ yields a distinct repeated root quadratic, resulting in different $x$-coordinates ($x = 2$ and $x = -2$)."
-                        },
-                        {
-                                "ans": "$m = 0$ or $m = -8$; Points: $(3, 3)$ and $(-2, 15)$",
-                                "feedback": "This error stems from a coordinate calculation slip when substituting the $x$-coordinates back into the equations to find the corresponding $y$-coordinates."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Dual Approaches of Calculus and the Discriminant",
-                        "content": "A line $y = mx + c$ is tangent to a quadratic curve $y = ax^2 + bx + d$ if and only if they intersect at exactly one point. This can be solved in two ways: by setting the discriminant of their simultaneous quadratic to zero (algebraic), or by setting $\\dfrac{\\mathrm{ d }y}{\\mathrm{ d }x} = m$ (calculus). Both methods lead to the exact same results, showing the deep connection between algebra and calculus."
-                }
-        },
-        {
+  {
+    "id": "004366",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Tangents and Normals"
+    ],
+    "img": false,
+    "question": "A curve $C$ has the equation:$$y = 3x^2 - 14x - 8$$The point $P$ lies on $C$ and is such that the tangent to $C$ at $P$ has the equation:$$y = -2x + c$$where $c$ is a constant.<br><br>Find the coordinates of $P$ and the value of $c$.",
+    "steps": [
+      "First, we find the gradient function of the curve by differentiating the equation with respect to $x$:\\begin{aligned} y &= 3x^2 - 14x - 8 \\cr \\dfrac{\\text{d}y}{\\text{d}x} &= 6x - 14 \\end{aligned}",
+      "We are given that the tangent to the curve at $P$ is $y = -2x + c$. The gradient of this tangent line is $-2$.<br><br>Since the gradient of the curve at the point of tangency $P$ must equal the gradient of the tangent line, we set our derivative equal to $-2$ and solve for $x$:\\begin{aligned} 6x - 14 &= -2 \\cr 6x &= 12 \\cr x &= 2 \\end{aligned}Thus, the $x$-coordinate of the point $P$ is $2$.",
+      "Next, we find the $y$-coordinate of $P$ by substituting $x = 2$ back into the curve's original equation:\\begin{aligned} y &= 3(2)^2 - 14(2) - 8 \\cr y &= 3(4) - 28 - 8 \\cr y &= 12 - 36 \\cr y &= -24 \\end{aligned}So, the coordinates of the point of tangency are $P(2, -24)$.",
+      "Finally, since the tangent line passes through $P(2, -24)$, we substitute these coordinates into the tangent line equation $y = -2x + c$ to solve for $c$:\\begin{aligned} -24 &= -2(2) + c \\cr -24 &= -4 + c \\cr c &= -20 \\end{aligned}Thus, the coordinates of $P$ are $(2, -24)$ and the constant value is $c = -20$.",
+      "Final Answer:\\begin{aligned} &P(2, -24) \\cr &c = -20 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &P(2, -24) \\cr &c = -28 \\end{aligned}",
+        "feedback": "This error occurs if you make a sign error when substituting the coordinates of $P(2, -24)$ into $y = -2x + c$, mistakenly calculating $-24 = -4 + c$ as $c = -28$ instead of $c = -20$."
+      },
+      {
+        "ans": "\\begin{aligned} &P(2, -24) \\cr &c = -24 \\end{aligned}",
+        "feedback": "This represents a common misconception where the constant $c$ is assumed to be the $y$-coordinate of the point of tangency. This is only true if the tangent line is horizontal (gradient is 0)."
+      },
+      {
+        "ans": "\\begin{aligned} &P(2, 12) \\cr &c = -16 \\end{aligned}",
+        "feedback": "This is a calculation slip where the $y$-coordinate of $P$ is evaluated incorrectly (for example, by calculating $12 - 28 - 8$ as positive $12$), which consequently leads to an incorrect value for $c$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "Finding Tangent Constants From Derivatives",
+      "content": "A tangent line $y = mx + c$ shares both the gradient and the coordinates of the tangency point $P$ with the curve. First, solve $\\dfrac{\\text{d}y}{\\text{d}x} = m$ to find the $x$-coordinate, evaluate the curve's equation to find the $y$-coordinate, and then substitute both into the tangent equation to find $c$."
+    }
+  },
+  {
+    "id": "004367",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Tangents and Normals"
+    ],
+    "img": false,
+    "question": "A curve $C$ has the equation:$$y = 2x^2 - 8x + 9$$<strong>(a)</strong> Find the equation of the tangent to $C$ at the point $A$ where $x = 3$.<br><br><strong>(b)</strong> This tangent intersects the $x$-axis at the point $P$ and the $y$-axis at the point $Q$. Find the area of the triangle $OPQ$, where $O$ is the origin.",
+    "steps": [
+      "<strong>Part (a): Finding the equation of the tangent</strong><br><br>First, find the $y$-coordinate of point $A$ by substituting $x = 3$ into the curve's equation:\\begin{aligned} y &= 2(3)^2 - 8(3) + 9 \\cr y &= 18 - 24 + 9 \\cr y &= 3 \\end{aligned}So, the point of tangency is $A(3, 3)$.",
+      "Next, find the gradient function of the curve by differentiating:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = 4x - 8 \\end{aligned}Now, evaluate the derivative at $x = 3$ to find the gradient of the tangent, $m$:\\begin{aligned} m &= 4(3) - 8 \\cr &= 4 \\end{aligned}",
+      "Using the point-slope formula $y - y_1 = m(x - x_1)$ with $A(3, 3)$ and $m = 4$, we find the equation of the tangent line:\\begin{aligned} y - 3 &= 4(x - 3) \\cr y - 3 &= 4x - 12 \\cr y &= 4x - 9 \\end{aligned}",
+      "<strong>Part (b): Finding the area of triangle $OPQ$</strong><br><br>Find the coordinate intercepts of the tangent line $y = 4x - 9$:<br><br>1. For the $x$-axis intercept (point $P$), set $y = 0$:\\begin{aligned} 0 &= 4x - 9 \\cr 4x &= 9 \\cr x &= \\dfrac{9}{4} \\end{aligned}So, $P\\left(\\dfrac{9}{4}, 0\\right)$.<br><br>2. For the $y$-axis intercept (point $Q$), set $x = 0$:\\begin{aligned} y = -9 \\end{aligned}So, $Q(0, -9)$.",
+      "The triangle $OPQ$ is a right-angled triangle at the origin $O(0, 0)$.<br><br>The base along the $x$-axis has a positive length of $\\dfrac{9}{4}$ units, and the height along the $y$-axis has a positive length of $9$ units.<br><br>Calculate the area:\\begin{aligned} \\text{Area} &= \\dfrac{1}{2} \\times \\text{base} \\times \\text{height} \\cr &= \\dfrac{1}{2} \\times \\dfrac{9}{4} \\times 9 \\cr &= \\dfrac{81}{8} \\cr &= 10.125 \\end{aligned}Thus, the area of triangle $OPQ$ is $\\dfrac{81}{8}$ square units.",
+      "Final Answer:\\begin{aligned} &\\text{Tangent: } y = 4x - 9 \\cr &\\text{Area} = \\dfrac{81}{8} \\text{ (or } 10.125\\text{)} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{Tangent: } y = 4x - 9 \\cr &\\text{Area} = 20.25 \\end{aligned}",
+        "feedback": "This is double the correct area. Remember that the area of a right-angled triangle is calculated using $\\dfrac{1}{2} \\times \\text{base} \\times \\text{height}$, not just $\\text{base} \\times \\text{height}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{Tangent: } y = 4x - 3 \\cr &\\text{Area} = 1.125 \\end{aligned}",
+        "feedback": "This error occurs if you make an algebraic mistake when simplifying the tangent equation, calculating $y - 3 = 4(x - 3)$ as $y = 4x - 3$. This leads to incorrect intercepts and an incorrect area calculation."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{Tangent: } y = 4x - 9 \\cr &\\text{Area} = 40.5 \\end{aligned}",
+        "feedback": "This error occurs if you evaluate the base intercept incorrectly as $x = 9$ (confusing it with the value of the $y$-intercept) rather than the correct value of $x = \\dfrac{9}{4}$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "Handling Negative Intercept Coordinates in Area Calculations",
+      "content": "When finding the area of a triangle formed by coordinate axes, the base and height must always be positive lengths. If an intercept coordinate is negative (such as $y = -9$), the corresponding physical length is $+9$. Never multiply by negative values for geometric areas."
+    }
+  },
+  {
+    "id": "004368",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Tangents and Normals"
+    ],
+    "img": false,
+    "question": "A curve $C$ has the equation:$$y = 3x^2 - 5x + 2$$<strong>(a)</strong> Find the equation of the normal to $C$ at the point $P(1, 0)$.<br><br><strong>(b)</strong> Find the coordinates of the point $Q$ where this normal intersects the curve $C$ again.",
+    "steps": [
+      "<strong>Part (a): Finding the equation of the normal</strong><br><br>First, find the gradient function of the curve by differentiating:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = 6x - 5 \\end{aligned}Evaluate the derivative at $x = 1$ to find the gradient of the tangent, $m_t$:\\begin{aligned} m_t &= 6(1) - 5 \\cr &= 1 \\end{aligned}",
+      "The normal is perpendicular to the tangent, so its gradient ($m_n$) is the negative reciprocal of $m_t$:\\begin{aligned} m_n &= -\\dfrac{1}{m_t} \\cr &= -\\dfrac{1}{1} \\cr &= -1 \\end{aligned}Use the point-slope formula with $P(1, 0)$ and gradient $m_n = -1$ to write the equation of the normal line:\\begin{aligned} y - 0 &= -1(x - 1) \\cr y &= -x + 1 \\end{aligned}",
+      "<strong>Part (b): Finding the second intersection point $Q$</strong><br><br>To find where the normal intersects the curve again, solve the equations simultaneously:\\begin{aligned} 3x^2 - 5x + 2 &= -x + 1 \\cr 3x^2 - 4x + 1 &= 0 \\end{aligned}",
+      "Since we already know that $x = 1$ is a point of intersection (the point $P$), $(x - 1)$ must be a factor of the quadratic expression. We factor the quadratic:\\begin{aligned} (3x - 1)(x - 1) = 0 \\end{aligned}This gives $x = 1$ (which is $P$) or $x = \\dfrac{1}{3}$ (which is $Q$).",
+      "Substitute $x = \\dfrac{1}{3}$ back into the normal equation $y = -x + 1$ to find the $y$-coordinate of $Q$:\\begin{aligned} y &= -\\left(\\dfrac{1}{3}\\right) + 1 \\cr &= \\dfrac{2}{3} \\end{aligned}Thus, the coordinates of the point $Q$ are $Q\\left(\\dfrac{1}{3}, \\dfrac{2}{3}\\right)$.",
+      "Final Answer:\\begin{aligned} &\\text{Normal: } y = -x + 1 \\cr &Q\\left(\\dfrac{1}{3}, \\dfrac{2}{3}\\right) \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{Normal: } y = -x + 1 \\cr &Q\\left(\\dfrac{1}{2}, \\dfrac{1}{2}\\right) \\end{aligned}",
+        "feedback": "This error occurs from a factoring mistake when solving the simultaneous quadratic equation $3x^2 - 4x + 1 = 0$, incorrectly identifying the factors as $(2x - 1)(x - 1) = 0$ instead of the correct $(3x - 1)(x - 1) = 0$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{Normal: } y = x - 1 \\cr &Q\\left(\\dfrac{1}{3}, -\\dfrac{2}{3}\\right) \\end{aligned}",
+        "feedback": "This error stems from using the gradient of the tangent ($m_t = 1$) as the gradient of the normal, or forgetting to apply the negative reciprocal sign ($m_n = -\\dfrac{1}{m_t}$)."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{Normal: } y = -x + 1 \\cr &Q\\left(\\dfrac{1}{3}, \\dfrac{1}{3}\\right) \\end{aligned}",
+        "feedback": "This is a basic calculation slip when evaluating the $y$-coordinate of the point $Q$. Substituting $x = \\dfrac{1}{3}$ into the line equation $y = -x + 1$ yields $y = \\dfrac{2}{3}$, not $\\dfrac{1}{3}$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "Using Known Roots to Factor Simultaneous Quadratics",
+      "content": "When finding where a normal (or tangent) intersects a curve again, you already know one intersection point: the point of tangency, $P$. This means $(x - x_P)$ is guaranteed to be a factor of the resulting simultaneous equation. In this case, since $P$ is at $x = 1$, $(x - 1)$ must be a factor of $3x^2 - 4x + 1 = 0$, making the factorization $(3x - 1)(x - 1) = 0$ much easier to spot."
+    }
+  },
+  {
+    "id": "004369",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Power Rule",
+    "subtopic": [
+      "Tangents and Normals"
+    ],
+    "img": false,
+    "question": "A curve $C$ has the equation:$$y = \\dfrac{8}{x} + 2x$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$.<br><br><strong>(b)</strong> The tangent to $C$ at a point $P$ in the first quadrant has a gradient of $0$. Find the coordinates of $P$.<br><br><strong>(c)</strong> Find the equation of the normal to $C$ at the point where $x = 4$.",
+    "steps": [
+      "<strong>Part (a): Differentiating the expression</strong><br><br>Rewrite the curve's equation using negative indices:\\begin{aligned} y = 8x^{-1} + 2x \\end{aligned}Now, apply the power rule of differentiation:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= -8x^{-2} + 2 \\cr &= -\\dfrac{8}{x^2} + 2 \\end{aligned}",
+      "<strong>Part (b): Finding the point $P$</strong><br><br>Since the gradient of the tangent at $P$ is $0$, we set our derivative equal to $0$:\\begin{aligned} -\\dfrac{8}{x^2} + 2 &= 0 \\cr \\dfrac{8}{x^2} &= 2 \\cr 2x^2 &= 8 \\cr x^2 &= 4 \\cr x &= \\pm 2 \\end{aligned}Since $P$ is in the first quadrant, the $x$-coordinate must be positive, so we take $x = 2$.",
+      "Substitute $x = 2$ back into the curve's original equation to find the $y$-coordinate of $P$:\\begin{aligned} y &= \\dfrac{8}{2} + 2(2) \\cr &= 4 + 4 \\cr &= 8 \\end{aligned}Thus, the coordinates of $P$ are $P(2, 8)$.",
+      "<strong>Part (c): Finding the equation of the normal at $x = 4$</strong><br><br>First, find the point on the curve when $x = 4$:\\begin{aligned} y &= \\dfrac{8}{4} + 2(4) \\cr &= 2 + 8 \\cr &= 10 \\end{aligned}So, the point on the curve is $(4, 10)$.",
+      "Next, find the gradient of the tangent at $x = 4$ by evaluating the derivative:\\begin{aligned} m_t &= -\\dfrac{8}{4^2} + 2 \\cr &= -\\dfrac{8}{16} + 2 \\cr &= -0.5 + 2 \\cr &= \\dfrac{3}{2} \\end{aligned}",
+      "The gradient of the normal is the negative reciprocal of the tangent gradient:\\begin{aligned} m_n &= -\\dfrac{1}{m_t} \\cr &= -\\dfrac{2}{3} \\end{aligned}Use the point-slope formula with point $(4, 10)$ and gradient $m_n = -\\dfrac{2}{3}$ to write the normal equation:\\begin{aligned} y - 10 &= -\\dfrac{2}{3}(x - 4) \\cr 3(y - 10) &= -2(x - 4) \\cr 3y - 30 &= -2x + 8 \\cr 2x + 3y - 38 &= 0 \\end{aligned}",
+      "Final Answer:\\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{8}{x^2} + 2 \\cr &P(2, 8) \\cr &2x + 3y - 38 = 0 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &P(-2, -8) \\cr &\\text{Normal: } 2x + 3y - 38 = 0 \\end{aligned}",
+        "feedback": "This error occurs if you ignore the restriction that $P$ must lie in the first quadrant. In the first quadrant, both coordinates must be positive, which means you must choose $x = 2$ instead of $x = -2$."
+      },
+      {
+        "ans": "\\begin{aligned} &P(2, 8) \\cr &\\text{Normal: } y = 1.5x + 4 \\end{aligned}",
+        "feedback": "This error occurs if you use the gradient of the tangent ($m_t = 1.5$) instead of the perpendicular gradient of the normal ($m_n = -\\dfrac{2}{3}$) to find the equation of the normal."
+      },
+      {
+        "ans": "\\begin{aligned} &P(2, 8) \\cr &\\text{Normal: } 2x + 3y - 26 = 0 \\end{aligned}",
+        "feedback": "This is the result of using the correct normal gradient but mistakenly using the coordinates of point $P(2, 8)$ instead of the coordinates at $x = 4$ (which are $(4, 10)$) to write the normal equation."
+      }
+    ],
+    "bradley_insight": {
+      "type": "deeper",
+      "title": "Understanding Perpendicular Gradients",
+      "content": "Always distinguish carefully between the tangent and the normal. The tangent gradient is given by the derivative $m_t = \\dfrac{\\text{d}y}{\\text{d}x}$. The normal is perpendicular to the tangent, so its gradient is the negative reciprocal: $m_n = -\\dfrac{1}{m_t}$. Verify that $m_t \\times m_n = -1$."
+    }
+  },
+  {
+    "id": "004370",
+    "board": "WJEC",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Methods",
+    "subtopic": [
+      "Algebraic Methods"
+    ],
+    "img": false,
+    "question": "A curve $C$ has the equation $y = x^2 - 4x + 7$ and a family of lines $L$ has the equation $y = mx + 3$, where $m$ is a constant.<br><br><strong>(a)</strong> Show that if the line $L$ is a tangent to the curve $C$, then $m$ must satisfy the equation:$$(m+4)^2 - 16 = 0$$<strong>(b)</strong> Hence, find the two possible values of the gradient $m$.<br><br><strong>(c)</strong> For each value of $m$, find the coordinates of the point of tangency.",
+    "steps": [
+      "<strong>Part (a): Setting up the tangency condition</strong><br><br>To find the intersection of the curve and the line, set their equations equal to each other:\\begin{aligned} x^2 - 4x + 7 &= mx + 3 \\cr x^2 - 4x - mx + 7 - 3 &= 0 \\cr x^2 - (m+4)x + 4 &= 0 \\end{aligned}",
+      "For the line to be a tangent to the curve, they must intersect at exactly one point. This means the quadratic equation must have exactly one real root, so its discriminant must equal zero ($b^2 - 4ac = 0$):\\begin{aligned} a &= 1 \\cr b &= -(m + 4) \\cr c &= 4 \\end{aligned}Substitute these values into the discriminant formula:\\begin{aligned} [-(m + 4)]^2 - 4(1)(4) &= 0 \\cr (m + 4)^2 - 16 &= 0 \\end{aligned}This is the required equation.",
+      "<strong>Part (b): Solving for $m$</strong><br><br>We solve the equation by rearranging and taking square roots:\\begin{aligned} (m+4)^2 &= 16 \\cr m+4 &= \\pm 4 \\end{aligned}This gives two possible equations:<br><br>1. $m+4 = 4$, which gives $m = 0$<br><br>2. $m+4 = -4$, which gives $m = -8$<br><br>Thus, the two possible gradients are $m = 0$ and $m = -8$.",
+      "<strong>Part (c): Finding the points of tangency</strong><br><br>We find the points of tangency by substituting each value of $m$ back into our simultaneous quadratic $x^2 - (m+4)x + 4 = 0$:<br><br><strong>Case 1: $m = 0$</strong>\\begin{aligned} x^2 - (0+4)x + 4 &= 0 \\cr x^2 - 4x + 4 &= 0 \\cr (x - 2)^2 &= 0 \\cr x &= 2 \\end{aligned}Substitute $x = 2$ into the line equation $y = 0x + 3$ to get $y = 3$.<br><br>So, the first point of tangency is $(2, 3)$.",
+      "<strong>Case 2: $m = -8$</strong>\\begin{aligned} x^2 - (-8+4)x + 4 &= 0 \\cr x^2 + 4x + 4 &= 0 \\cr (x + 2)^2 &= 0 \\cr x &= -2 \\end{aligned}Substitute $x = -2$ into the line equation $y = -8x + 3$:\\begin{aligned} y &= -8(-2) + 3 \\cr &= 19 \\end{aligned}So, the second point of tangency is $(-2, 19)$.",
+      "Final Answer:\\begin{aligned} &m = 0 \\text{ with } (2, 3) \\cr &m = -8 \\text{ with } (-2, 19) \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &m = 4 \\text{ or } m = -4 \\cr &\\text{Points: } (2, 3) \\text{ and } (-2, 19) \\end{aligned}",
+        "feedback": "This error occurs when solving the quadratic $(m+4)^2 = 16$ as $m + 4 = 4$ giving $m = 0$, but incorrectly carrying out the arithmetic for the negative root to get $m = \\pm 4$ instead of $m = 0$ and $m = -8$."
+      },
+      {
+        "ans": "\\begin{aligned} &m = 0 \\text{ or } m = -8 \\cr &\\text{Points: } (2, 3) \\text{ and } (2, 19) \\end{aligned}",
+        "feedback": "This is a slip in finding the points of tangency. Remember that each gradient $m$ yields a distinct repeated root quadratic, resulting in different $x$-coordinates ($x = 2$ and $x = -2$)."
+      },
+      {
+        "ans": "\\begin{aligned} &m = 0 \\text{ or } m = -8 \\cr &\\text{Points: } (3, 3) \\text{ and } (-2, 15) \\end{aligned}",
+        "feedback": "This error stems from a coordinate calculation slip when substituting the $x$-coordinates back into the equations to find the corresponding $y$-coordinates."
+      }
+    ],
+    "bradley_insight": {
+      "type": "deeper",
+      "title": "The Dual Approaches of Calculus and the Discriminant",
+      "content": "A line $y = mx + c$ is tangent to a quadratic curve $y = ax^2 + bx + d$ if and only if they intersect at exactly one point. This can be solved in two ways: by setting the discriminant of their simultaneous quadratic to zero (algebraic), or by setting $\\dfrac{\\text{d}y}{\\text{d}x} = m$ (calculus). Both methods lead to the exact same results, showing the deep connection between algebra and calculus."
+    }
+  },        {
                 "id": "004371",
                 "board": "WJEC",
                 "branch": "Pure",
