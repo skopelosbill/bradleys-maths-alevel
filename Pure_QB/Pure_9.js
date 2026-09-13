@@ -203,9 +203,10 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Pure",
   "level": "AS",
   "major_area": "Integration",
-  "topic": "Integration",
+  "topic": "Trigonometry",
   "subtopic": [
-    "Trigonometry"
+        "Definite Integration",
+        "Trigonometric Equations"
   ],
   "img": false,
   "question": "<strong>(a)</strong> Given that$$\\int_{1}^{k} 3\\sqrt{x} \\text{d}x = 14$$where $k > 1$, find the value of $k$. [6]<br><br><strong>(b)</strong> Solve the equation$$2\\sin^2 \\theta + \\cos \\theta = 1$$for $0^\\circ \\le \\theta < 360^\\circ$. [7]",
@@ -244,9 +245,10 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Pure",
   "level": "AS",
   "major_area": "Integration",
-  "topic": "Integration",
+  "topic": "Trigonometry",
   "subtopic": [
-    "Trigonometry"
+        "Definite Integration",
+        "Trigonometric Equations"
   ],
   "img": false,
   "question": "<strong>(a)</strong> Given that$$\\int_{1}^{k} \\dfrac{4}{x^2} \\text{d}x = 3$$where $k > 1$, find the value of $k$. [6]<br><br><strong>(b)</strong> Solve the equation$$3\\cos^2 \\theta + 4\\sin \\theta = 4$$for $0^\\circ \\le \\theta \\le 360^\\circ$. [7]",
@@ -284,10 +286,11 @@ window.ALEVEL_QUESTIONS = [
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
-  "major_area": "Integration",
-  "topic": "Integration",
+ "major_area": "Integration",
+  "topic": "Trigonometry",
   "subtopic": [
-    "Trigonometry"
+        "Definite Integration",
+        "Trigonometric Equations"
   ],
   "img": false,
   "question": "<strong>(a)</strong> Given that$$\\int_{0}^{k} (2x - 3) \\text{d}x = 4$$where $k > 0$, find the value of $k$. [5]<br><br><strong>(b)</strong> Solve the equation$$3\\sin \\theta - 4\\cos \\theta = 0$$for $0^\\circ \\le \\theta \\le 360^\\circ$. [6]",
@@ -325,9 +328,10 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Pure",
   "level": "AS",
   "major_area": "Integration",
-  "topic": "Integration",
+  "topic": "Trigonometry",
   "subtopic": [
-    "Trigonometry"
+        "Definite Integration",
+        "Trigonometric Equations"
   ],
   "img": false,
   "question": "<strong>(a)</strong> Find the exact area of the finite region bounded by the curve $y = x^2 - 4x$ and the $x$-axis. [6]<br><br><strong>(b)</strong> Solve the equation$$\\cos(2\\theta + 40^\\circ) = -0.5$$for $0^\\circ \\le \\theta \\le 180^\\circ$. [7]",
@@ -336,7 +340,7 @@ window.ALEVEL_QUESTIONS = [
     "<strong>Step 2: Set up and calculate the definite integral</strong><br><br>Integrate the expression $(x^2 - 4x)$ with respect to $x$:\\begin{aligned} \\int (x^2 - 4x) \\text{d}x &= \\dfrac{x^3}{3} - \\dfrac{4x^2}{2} \\cr &= \\dfrac{x^3}{3} - 2x^2 \\end{aligned}",
     "<strong>Step 3: Evaluate the definite integral</strong><br><br>Substitute your limits of $0$ and $4$ into the integrated expression:\\begin{aligned} \\left[ \\dfrac{x^3}{3} - 2x^2 \\right]_{0}^{4} &= \\left( \\dfrac{4^3}{3} - 2(4)^2 \\right) - 0 \\cr &= \\dfrac{64}{3} - 32 \\cr &= \\dfrac{64}{3} - \\dfrac{96}{3} \\cr &= -\\dfrac{32}{3} \\end{aligned}",
     "<strong>Step 4: State the final area</strong><br><br>Because the curve lies entirely below the $x$-axis on the interval $(0, 4)$, the integral is negative. Area is always positive, so we take the absolute value:$$\\text{Area} = \\dfrac{32}{3}$$",
-    "<strong>Step 5: Define a substituted variable and adjust the interval for part (b)</strong><br><br>For the equation $\\cos(2\\theta + 40^\\circ) = -0.5$, let $\\phi = 2\\theta + 40^\\circ$.<br><br>Since $0^\\circ \\le \\theta \\le 180^\\circ$, adjust the limits for $\\phi$:\\begin{aligned} 2(0^\\circ) + 40^\\circ &\\le 2\\theta + 40^\\circ \\le 2(180^\\circ) + 40^\\circ \\cr 40^\\circ &\\le \\phi \\le 400^\\circ \\end{aligned}",
+    "<strong>Step 5: Define a substituted variable and adjust the interval for part (b)</strong><br><br>For the equation $\\cos(2\\theta + 40^\\circ) = -0.5$, let $\\phi = 2\\theta + 40^\\circ$.<br><br>Since $0^\\circ \\le \\theta \\le 180^\\circ$, adjust the limits for $\\phi$:\\begin{aligned} 2(0^\\circ) + 40^\\circ &\\le 2\\theta + 40^\\circ \\cr &\\le 2(180^\\circ) + 40^\\circ \\cr \\implies 40^\\circ &\\le \\phi \\le 400^\\circ \\end{aligned}",
     "<strong>Step 6: Solve for $\\phi$ and convert back to $\\theta$</strong><br><br>Solve $\\cos \\phi = -0.5$ within the interval $40^\\circ \\le \\phi \\le 400^\\circ$. The principal angles are:$$\\phi = 120^\\circ, 240^\\circ$$Now calculate the values of $\\theta$ using $2\\theta + 40^\\circ = \\phi$:<br><br>For $\\phi = 120^\\circ$:\\begin{aligned} 2\\theta + 40^\\circ &= 120^\\circ \\cr 2\\theta &= 80^\\circ \\cr \\theta &= 40^\\circ \\end{aligned}For $\\phi = 240^\\circ$:\\begin{aligned} 2\\theta + 40^\\circ &= 240^\\circ \\cr 2\\theta &= 200^\\circ \\cr \\theta &= 100^\\circ \\end{aligned}The final solutions are $\\theta = 40^\\circ, 100^\\circ$.",
     "Final Answer:\\begin{aligned} &\\text{(a) Area} = \\dfrac{32}{3} \\cr &\\text{(b) } \\theta = 40^\\circ, 100^\\circ \\end{aligned}"
   ],
@@ -366,15 +370,16 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Pure",
   "level": "AS",
   "major_area": "Integration",
-  "topic": "Integration",
+  "topic": "Trigonometry",
   "subtopic": [
-    "Trigonometry"
+        "Definite Integration",
+        "Trigonometric Equations"
   ],
   "img": false,
   "question": "<strong>(a)</strong> Given that$$\\int_{1}^{4} \\left( 2x + \\dfrac{a}{\\sqrt{x}} \\right) \\text{d}x = 21$$find the value of the constant $a$. [6]<br><br><strong>(b)</strong> Solve the equation$$4\\cos^2 \\theta + 5\\cos \\theta + 1 = 0$$for $0^\\circ \\le \\theta \\le 360^\\circ$. [7]",
   "steps": [
     "<strong>Step 1: Rewrite and integrate the function in part (a)</strong><br><br>Rewrite the term $\\dfrac{a}{\\sqrt{x}}$ in index form as $ax^{-1/2}$. Now integrate the entire expression with respect to $x$:\\begin{aligned} \\int (2x + ax^{-1/2}) \\text{d}x &= x^2 + a \\cdot \\dfrac{x^{1/2}}{1/2} \\cr &= x^2 + 2a\\sqrt{x} \\end{aligned}",
-    "<strong>Step 2: Apply the limits of integration</strong><br><br>Substitute the integration boundaries of $1$ and $4$ and set the resulting expression equal to $21$:\\begin{aligned} [x^2 + 2a\\sqrt{x}]_{1}^{4} &= 21 \\cr (4^2 + 2a\\sqrt{4}) - (1^2 + 2a\\sqrt{1}) &= 21 \\cr (16 + 4a) - (1 + 2a) &= 21 \\cr 15 + 2a &= 21 \\end{aligned}",
+    "<strong>Step 2: Apply the limits of integration</strong><br><br>Substitute the integration boundaries of $1$ and $4$ and set the resulting expression equal to $21$:\\begin{aligned} \\big[ x^2 + 2a\\sqrt{x} \\big]_{1}^{4} &= 21 \\cr (4^2 + 2a\\sqrt{4}) \\cr &\\quad - (1^2 + 2a\\sqrt{1}) = 21 \\cr (16 + 4a) - (1 + 2a) &= 21 \\cr 15 + 2a &= 21 \\end{aligned}",
     "<strong>Step 3: Solve for the constant $a$</strong><br><br>Solve the linear equation to find the value of $a$:\\begin{aligned} 2a &= 6 \\cr a &= 3 \\end{aligned}",
     "<strong>Step 4: Factorise the quadratic trigonometric equation in part (b)</strong><br><br>The equation $4\\cos^2 \\theta + 5\\cos \\theta + 1 = 0$ is a quadratic in terms of $\\cos \\theta$. Let $u = \\cos \\theta$ and factorise the quadratic expression:\\begin{aligned} 4u^2 + 5u + 1 &= 0 \\cr (4u + 1)(u + 1) &= 0 \\cr u &= -\\dfrac{1}{4} \\text{ or } u = -1 \\end{aligned}",
     "<strong>Step 5: Solve for the angles within the interval</strong><br><br>Substitute back $u = \\cos \\theta$ and find the values of $\\theta$ in the range $0^\\circ \\le \\theta \\le 360^\\circ$:<br><br>For $\\cos \\theta = -1$:$$\\theta = 180.0^\\circ$$For $\\cos \\theta = -\\dfrac{1}{4}$:<br><br>The acute reference angle is $\\alpha = \\cos^{-1}\\left( \\dfrac{1}{4} \\right) \\approx 75.5^\\circ$. Since cosine is negative, the angles lie in quadrants II and III:\\begin{aligned} \\theta &= 180^\\circ - 75.5^\\circ \\cr &= 104.5^\\circ \\cr \\theta &= 180^\\circ + 75.5^\\circ \\cr &= 255.5^\\circ \\end{aligned}The final solutions (to the nearest tenth of a degree) are: $\\theta \\approx 104.5^\\circ, 180.0^\\circ, 255.5^\\circ$.",
