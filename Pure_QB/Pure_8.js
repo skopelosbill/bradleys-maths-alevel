@@ -1768,7 +1768,7 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Exponentials and Logarithms",
   "topic": "Exponentials and Logarithms",
   "subtopic": [
-    "Exponential and Logarithmic Functions and Graphs"
+    "Log and ExponentialEquations"
   ],
   "img": false,
   "question": "<strong>(a)</strong> Given that $\\log_3 a = 2$, state the value of $a$.<br><br><strong>(b)</strong> Hence, solve the equation:$$\\log_3 \\left(\\dfrac{2x}{x-2}\\right) = 2$$<strong>(c)</strong> Solve the exponential equation:$$5e^{3x} = 7$$giving your answer correct to 3 decimal places.",
@@ -1807,7 +1807,7 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Exponentials and Logarithms",
   "topic": "Exponentials and Logarithms",
   "subtopic": [
-    "Exponential and Logarithmic Functions and Graphs"
+    "Log and Exponential Equations"
   ],
   "img": false,
   "question": "Solve the logarithmic equation:\\begin{aligned} &\\log_5 (3x + 1) \\cr &\\quad - \\log_5 (x - 1) = 1 \\end{aligned}Show all of your algebraic working clearly.",
@@ -1846,7 +1846,7 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Exponentials and Logarithms",
   "topic": "Exponentials and Logarithms",
   "subtopic": [
-    "Exponential and Logarithmic Functions and Graphs"
+    "Log and Exponential Equations"
   ],
   "img": false,
   "question": "Solve the exponential equation:$$2 \\times 10^{4x} = 50$$giving your answer correct to 3 decimal places.",
@@ -1885,7 +1885,7 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Exponentials and Logarithms",
   "topic": "Exponentials and Logarithms",
   "subtopic": [
-    "Exponential and Logarithmic Functions and Graphs"
+    "Log and Exponential Equations"
   ],
   "img": false,
   "question": "Solve the equation:$$e^{2x} - 5e^x + 6 = 0$$giving your answers in their simplest exact form.",
@@ -1923,7 +1923,8 @@ window.ALEVEL_QUESTIONS = [
   "major_area": "Exponentials and Logarithms",
   "topic": "Exponentials and Logarithms",
   "subtopic": [
-    "Proof"
+        "Log and Exponential Equations",
+        "Proof"
   ],
   "img": false,
   "question": "<strong>(a)</strong> Prove that:$$\\log_a \\left(\\dfrac{1}{k}\\right) = -\\log_a k$$for any positive real numbers $a$ and $k$ where $a \\ne 1$.<br><br><strong>(b)</strong> Hence, showing all of your algebraic working, solve the equation:\\begin{aligned} &\\log_4 (x - 3) \\cr &\\quad + \\log_4 \\left(\\dfrac{1}{x}\\right) = -1 \\end{aligned}",
