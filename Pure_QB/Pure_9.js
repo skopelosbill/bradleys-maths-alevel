@@ -1152,7 +1152,7 @@ window.ALEVEL_QUESTIONS = [
     "<strong>Step 2: Relate the tangent to $\\theta$ and complete part (a)</strong><br><br>In the right-angled triangle $OTP$, the angle at $O$ is $\\theta$. Using basic right-angled trigonometry:\\begin{aligned} \\tan \\theta &= \\dfrac{TP}{OT} \\cr &= \\dfrac{TP}{r} \\cr TP &= r\\tan \\theta \\cr TP^2 &= r^2\\tan^2 \\theta \\end{aligned}",
     "<strong>Step 3: Analyze the boundary conditions in part (b)</strong><br><br>The diameter $AB$ lies along the straight line through $O$, with $B$ located between the center $O$ and the point $P$. Since the distance $BP$ is given as exactly equal to the radius $r$, calculate the total hypotenuse length $OP$:\\begin{aligned} OP &= OB + BP \\cr &= r + r \\cr &= 2r \\end{aligned}",
     "<strong>Step 4: Solve for the exact angle $\\theta$</strong><br><br>In right-angled triangle $OTP$ (where the hypotenuse is $OP = 2r$ and the adjacent side to angle $\\theta$ is $OT = r$), use the cosine ratio:\\begin{aligned} \\cos \\theta &= \\dfrac{OT}{OP} \\cr &= \\dfrac{r}{2r} \\cr &= \\dfrac{1}{2} \\end{aligned}Since $\\theta$ is acute, we solve to get:$$\\theta = 60^\\circ$$",
-    "Final Answer:\\begin{aligned} &\\text{(a) Formula shown: } TP^2 = r^2\\tan^2 \\theta \\cr &\\text{(b) } \\theta = 60^\\circ \\end{aligned}"
+    "Final Answer:\\begin{aligned} &\\text{(a) Formula shown: }\\cr & \\quad TP^2 = r^2\\tan^2 \\theta \\cr &\\text{(b) } \\theta = 60^\\circ \\end{aligned}"
   ],
   "pi_options": [
     {
@@ -1192,7 +1192,7 @@ window.ALEVEL_QUESTIONS = [
     "<strong>Step 2: Set up the trigonometric ratio and complete part (a)</strong><br><br>In right-angled triangle $ACB$, the hypotenuse is the diameter $AB = 2r$. The side opposite angle $\\theta$ is $BC$. Apply the sine ratio:\\begin{aligned} \\sin \\theta &= \\dfrac{BC}{AB} \\cr &= \\dfrac{BC}{2r} \\cr BC &= 2r\\sin \\theta \\end{aligned}Square both sides of this equation to get the required proof:\\begin{aligned} BC^2 &= (2r\\sin \\theta)^2 \\cr &= 4r^2\\sin^2 \\theta \\end{aligned}",
     "<strong>Step 3: Apply the condition in part (b) and simplify</strong><br><br>We are given that $BC = r$. Substitute this into the formula from part (a):\\begin{aligned} r^2 &= 4r^2\\sin^2 \\theta \\end{aligned}",
     "<strong>Step 4: Solve for the exact angle $\\theta$</strong><br><br>Since $r \\neq 0$, we can divide both sides of the equation by $r^2$:\\begin{aligned} 1 &= 4\\sin^2 \\theta \\cr \\sin^2 \\theta &= \\dfrac{1}{4} \\cr \\sin \\theta &= \\dfrac{1}{2} \\end{aligned}Since $\\theta$ is an acute angle in the triangle, we solve to find the principal angle:$$\\theta = 30^\\circ$$",
-    "Final Answer:\\begin{aligned} &\\text{(a) Formula shown: } BC^2 = 4r^2\\sin^2 \\theta \\cr &\\text{(b) } \\theta = 30^\\circ \\end{aligned}"
+    "Final Answer:\\begin{aligned} &\\text{(a) Formula shown: }\\cr &\\quad BC^2 = 4r^2\\sin^2 \\theta \\cr &\\text{(b) } \\theta = 30^\\circ \\end{aligned}"
   ],
   "pi_options": [
     {
