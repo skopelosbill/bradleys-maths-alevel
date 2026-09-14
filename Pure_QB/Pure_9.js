@@ -1837,9 +1837,10 @@ window.ALEVEL_QUESTIONS = [
         "branch": "Pure",
         "level": "A",
         "major_area": "Sequences and Series",
-        "topic": "Sequences and Series",
+        "topic": "APs and GPs",
         "subtopic": [
-                "Sequences and Series"
+                "Sigma Notation",
+                "Compound Summation"
         ],
         "img": false,
         "question": "<strong>(a)</strong> Show that:$$\\sum_{r=1}^{12} (4 + 3r + 2^r) = 8472$$[4]<br><br><strong>(b)</strong> A sequence $u_1, u_2, u_3, \\dots$ is defined by:\\begin{aligned} &u_{n+1} = \\dfrac{1}{u_n} \\cr &u_1 = \\dfrac{3}{4} \\end{aligned}Find the exact value of:$$\\sum_{r=1}^{80} u_r$$[3]",
@@ -1877,9 +1878,10 @@ window.ALEVEL_QUESTIONS = [
         "branch": "Pure",
         "level": "A",
         "major_area": "Sequences and Series",
-        "topic": "Sequences and Series",
+        "topic": "APs and GPs",
         "subtopic": [
-                "Sequences and Series"
+                "Sigma Notation",
+                "Compound Summation"
         ],
         "img": false,
         "question": "<strong>(a)</strong> Show that:$$\\sum_{r=1}^{8} (5 + 2r + 3^r) = 9952$$[4]<br><br><strong>(b)</strong> A sequence $u_1, u_2, u_3, \\dots$ is defined by:\\begin{aligned} &u_{n+1} = -\\dfrac{1}{u_n} \\cr &u_1 = 2 \\end{aligned}Find the exact value of:$$\\sum_{r=1}^{100} u_r$$[3]",
@@ -1888,7 +1890,7 @@ window.ALEVEL_QUESTIONS = [
                 "<strong>Step 2: Evaluate the constant and arithmetic parts</strong><br>Evaluate the constant sum: $5 \\times 8 = 40$.<br><br>For the arithmetic part, use the natural number sum formula $S_n = \\dfrac{n(n + 1)}{2}$:\\begin{aligned} 2\\sum_{r=1}^{8} r &= 2 \\cdot \\dfrac{8(9)}{2} \\cr &= 72 \\end{aligned}",
                 "<strong>Step 3: Evaluate the geometric part and sum all terms to complete part (a)</strong><br>The term $3^r$ defines a geometric series with first term $a = 3$, common ratio $r = 3$, and $n = 8$ terms:\\begin{aligned} \\sum_{r=1}^{8} 3^r &= \\dfrac{a(r^n - 1)}{r - 1} \\cr &= \\dfrac{3(3^8 - 1)}{3 - 1} \\cr &= \\dfrac{3(6561 - 1)}{2} \\cr &= 3 \\cdot 3280 \\cr &= 9840 \\end{aligned}Sum the three parts together to complete the proof:\\begin{aligned} \\text{Total Sum} &= 40 + 72 + 9840 \\cr &= 9952 \\end{aligned}",
                 "<strong>Step 4: Find the first few terms of the sequence in part (b)</strong><br>Substitute $u_1 = 2$ into the recurrence relation to identify the periodic behavior:\\begin{aligned} u_1 &= 2 \\cr u_2 &= -\\dfrac{1}{u_1} \\cr &= -\\dfrac{1}{2} \\cr u_3 &= -\\dfrac{1}{u_2} \\cr &= 2 \\end{aligned}This shows that the sequence has a period of $2$, repeating the terms $2$ and $-\\dfrac{1}{2}$.",
-                "<strong>Step 5: Group the terms into pairs and calculate the total sum</strong><br>Find the sum of a single repeating pair:\\begin{aligned} \\text{Pair Sum} &= u_1 + u_2 \\cr &= 2 - \\dfrac{1}{2} \\cr &= \\dfrac{3}{2} \\end{aligned}The series has $100$ terms in total, which forms exactly $50$ complete pairs:\\begin{aligned} \\sum_{r=1}^{100} u_r &= 50 \\cdot \\left(\\dfrac{3}{2}\right) \\cr &= 75 \\end{aligned}",
+                "<strong>Step 5: Group the terms into pairs and calculate the total sum</strong><br>Find the sum of a single repeating pair:\\begin{aligned} \\text{Pair Sum} &= u_1 + u_2 \\cr &= 2 - \\dfrac{1}{2} \\cr &= \\dfrac{3}{2} \\end{aligned}The series has $100$ terms in total, which forms exactly $50$ complete pairs:\\begin{aligned} \\sum_{r=1}^{100} u_r &= 50 \\cdot \\left(\\dfrac{3}{2}\\right) \\cr &= 75 \\end{aligned}",
                 "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } \\sum_{r=1}^{8} (5 + 2r + 3^r) \\cr &\\quad = 9952 \\cr &\\text{(b) } \\sum_{r=1}^{100} u_r = 75 \\end{aligned}"
         ],
         "pi_options": [
