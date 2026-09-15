@@ -1019,7 +1019,7 @@ window.ALEVEL_QUESTIONS = [
         "major_area": "Integration",
         "topic": "Differentiatial Equations",
         "subtopic": [
-                "differentiation"
+                "Separation of Variables"
         ],
         "img": false,
         "question": "A spherical sugar candy of radius $6\\text{ mm}$ is placed in water and dissolves. Three minutes later, the radius of the candy is $3\\text{ mm}$.<br><br>In a simple model, the rate of decrease of the radius of the candy is inversely proportional to the square of the radius.<br><br>Using this model, find the total time taken for the candy to completely dissolve (to the nearest second).",
@@ -1059,7 +1059,7 @@ window.ALEVEL_QUESTIONS = [
         "major_area": "Integration",
         "topic": "Differentiatial Equations",
         "subtopic": [
-                "differentiation"
+                "Separation of Variables"
         ],
         "img": false,
         "question": "The mass of a radioactive substance decays at a rate proportional to its mass at that time. The initial mass of the substance is $80\\text{ g}$. Ten hours later, the mass is found to be $40\\text{ g}$.<br><br>In a simple model, the rate of decrease of the mass of the substance is proportional to its mass.<br><br>Using this model, find the time taken for the mass of the substance to decay to $5\\text{ g}$ (to the nearest hour).",
@@ -1098,7 +1098,7 @@ window.ALEVEL_QUESTIONS = [
         "major_area": "Integration",
         "topic": "Differentiatial Equations",
         "subtopic": [
-                "differentiation"
+                "Separation of Variables"
         ],
         "img": false,
         "question": "A circular puddle of water on a flat concrete surface is evaporating in the sun. The initial radius of the puddle is $10\\text{ cm}$. After $5$ hours of evaporation, the radius of the puddle has reduced to $8\\text{ cm}$.<br><br>In a simple model, the rate of decrease of the radius of the puddle is inversely proportional to the radius.<br><br>Using this model, find the total time taken for the puddle to dry up completely (to the nearest minute).",
@@ -1138,7 +1138,7 @@ window.ALEVEL_QUESTIONS = [
         "major_area": "Integration",
         "topic": "Differentiatial Equations",
         "subtopic": [
-                "differentiation"
+                "Separation of Variables"
         ],
         "img": false,
         "question": "Water is leaking from a hole at the bottom of a cylindrical water tank. The depth of the water in the tank is $h$ metres at time $t$ minutes. Initially, the depth of the water is $9\\text{ m}$. After $12$ minutes, the depth of the water has reduced to $4\\text{ m}$.<br><br>In a simple model, the rate of decrease of the depth of the water is proportional to the square root of the depth.<br><br>Using this model, find the total time taken for the water tank to empty completely (to the nearest minute).",
@@ -1177,7 +1177,7 @@ window.ALEVEL_QUESTIONS = [
         "major_area": "Integration",
         "topic": "Differentiatial Equations",
         "subtopic": [
-                "differentiation"
+                "Separation of Variables"
         ],
         "img": false,
         "question": "A spherical raindrop is falling through a cloud and evaporating. The initial radius of the raindrop is $4\\text{ mm}$. Ten minutes later, the radius has reduced to $2\\text{ mm}$.<br><br>In a simple model, the rate of decrease of the radius of the raindrop is proportional to the radius.<br><br>Using this model, find the time taken for the radius of the raindrop to decrease to $0.5\\text{ mm}$ (to the nearest minute).",
@@ -1209,196 +1209,201 @@ window.ALEVEL_QUESTIONS = [
         }
 },
 {
-                "id": "004481",
-                "board": "Pearson Edexcel",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Partial Fractions"
-                ],
-                "img": false,
-                "question": "Given that:<br>$$\\dfrac{ 6x^2 + 11x + 1 }{ (x + 2)(2x + 1) } \\equiv A + \\dfrac{ B }{ x + 2 } + \\dfrac{ C }{ 2x + 1 }$$<br>Find the values of the constants $A$, $B$, and $C$.",
-                "steps": [
-                        "<strong>Step 1: Set up the algebraic identity:</strong><br>To express the improper fraction as partial fractions, we first multiply both sides of the identity by the common denominator $(x + 2)(2x + 1)$ to clear the fractions:<br>$$6x^2 + 11x + 1 \\equiv A(x + 2)(2x + 1) + B(2x + 1) + C(x + 2)$$",
-                        "<strong>Step 2: Find the constant $A$ by comparing coefficients of $x^2$:</strong><br>Expanding the quadratic product gives $(x + 2)(2x + 1) = 2x^2 + 5x + 2$. Substituting this back into the identity:<br>$$6x^2 + 11x + 1 \\equiv A(2x^2 + 5x + 2) + B(2x + 1) + C(x + 2)$$<br>By equating the coefficients of $x^2$ on both sides:<br>\\begin{aligned} 2A &= 6 \\cr A &= 3 \\end{aligned}",
-                        "<strong>Step 3: Collect coefficients to solve for $B$ and $C$:</strong><br>Now we expand and group the terms on the right-hand side by powers of $x$:<br>\\begin{aligned} 6x^2 + 11x + 1 &\\equiv 3(2x^2 + 5x + 2) + B(2x + 1) + C(x + 2) \\cr 6x^2 + 11x + 1 &\\equiv 6x^2 + 15x + 6 + 2Bx + B + Cx + 2C \\cr 11x + 1 &\\equiv (15 + 2B + C)x + (6 + B + 2C) \\end{aligned}<br>Equating the coefficients of $x$ and the constant terms yields two simultaneous equations:<br>\\begin{aligned} 15 + 2B + C &= 11 \\implies 2B + C = -4 \\cr 6 + B + 2C &= 1 \\implies B + 2C = -5 \\end{aligned}",
-                        "<strong>Step 4: Solve the simultaneous equations:</strong><br>From the first equation, we can express $C$ in terms of $B$:<br>$$C = -4 - 2B$$<br>Substituting this into the second equation:<br>\\begin{aligned} B + 2( -4 - 2B ) &= -5 \\cr B - 8 - 4B &= -5 \\cr -3B &= 3 \\cr B &= -1 \\end{aligned}<br>Substituting $B = -1$ back to find $C$:<br>\\begin{aligned}C &= -4 - 2( -1 ) \\cr&= -2\\end{aligned}<br>Therefore, the constants are $A = 3$, $B = -1$, and $C = -2$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$A = 3, B = 1, C = -2$",
-                                "feedback": "This error occurs if you make a sign error when expanding or grouping coefficients, yielding $+1$ for $B$ instead of $-1$."
-                        },
-                        {
-                                "ans": "$A = 3, B = -1, C = 2$",
-                                "feedback": "This error is the result of a sign slip when substituting $B = -1$ back into the simultaneous equations to find $C$."
-                        },
-                        {
-                                "ans": "$A = 6, B = -1, C = -2$",
-                                "feedback": "This occurs if you equate $A$ directly to the leading coefficient of the numerator ($6$), forgetting that the leading term of the denominator is $2x^2$ (meaning $2A = 6$, so $A = 3$)."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Leading Coefficients in Improper Fractions",
-                        "content": "When dealing with improper fractions where the numerator and denominator have the same degree, the constant term $A$ is simply the ratio of the leading coefficients. Here, the leading term of the numerator is $6x^2$ and the expanded leading term of the denominator is $2x^2$. Thus, $A = \\dfrac{ 6 }{ 2 } = 3$. Checking this ratio first is an incredibly fast way to eliminate incorrect options under pressure!"
+        "id": "004481",
+        "board": "Pearson Edexcel",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Algebraic Methods",
+        "subtopic": [
+                "Partial Fractions"
+        ],
+        "img": false,
+        "question": "Given that:\\begin{aligned} &\\dfrac{6x^2 + 11x + 1}{(x + 2)(2x + 1)} \\cr &\\quad \\equiv A + \\dfrac{B}{x + 2} + \\dfrac{C}{2x + 1} \\end{aligned}Find the values of the constants $A$, $B$, and $C$.",
+        "steps": [
+                "<strong>Step 1: Set up the algebraic identity:</strong><br>To express the improper fraction as partial fractions, we first multiply both sides of the identity by the common denominator $(x + 2)(2x + 1)$ to clear the fractions:\\begin{aligned} &6x^2 + 11x + 1 \\cr &\\quad \\equiv A(x + 2)(2x + 1) \\cr &\\qquad + B(2x + 1) + C(x + 2) \\end{aligned}",
+                "<strong>Step 2: Find the constant $A$ by comparing coefficients of $x^2$:</strong><br>Expanding the quadratic product gives $(x + 2)(2x + 1) = 2x^2 + 5x + 2$. Substituting this back into the identity:\\begin{aligned} &6x^2 + 11x + 1 \\cr &\\quad \\equiv A(2x^2 + 5x + 2) \\cr &\\qquad + B(2x + 1) + C(x + 2) \\end{aligned}By equating the coefficients of $x^2$ on both sides:\\begin{aligned} 2A &= 6 \\cr A &= 3 \\end{aligned}",
+                "<strong>Step 3: Collect coefficients to solve for $B$ and $C$:</strong><br>Now we expand and group the terms on the right-hand side by powers of $x$:\\begin{aligned} &6x^2 + 11x + 1 \\cr &\\quad \\equiv 3(2x^2 + 5x + 2) \\cr &\\qquad + B(2x + 1) + C(x + 2) \\cr &\\quad \\equiv 6x^2 + 15x + 6 \\cr &\\qquad + 2Bx + B + Cx + 2C \\end{aligned}Grouping like powers of $x$:\\begin{aligned} &11x + 1 \\cr &\\quad \\equiv (15 + 2B + C)x \\cr &\\qquad + (6 + B + 2C) \\end{aligned}Equating the coefficients of $x$ and the constant terms yields two simultaneous equations:\\begin{aligned} 15 + 2B + C &= 11 \\cr 2B + C &= -4 \\cr 6 + B + 2C &= 1 \\cr B + 2C &= -5 \\end{aligned}",
+                "<strong>Step 4: Solve the simultaneous equations:</strong><br>From the first equation, express $C$ in terms of $B$:$$C = -4 - 2B$$Substituting this into the second equation:\\begin{aligned} B + 2(-4 - 2B) &= -5 \\cr B - 8 - 4B &= -5 \\cr -3B &= 3 \\cr B &= -1 \\end{aligned}Substituting $B = -1$ back to find $C$:\\begin{aligned} C &= -4 - 2(-1) \\cr &= -2 \\end{aligned}Therefore, the constants are $A = 3$, $B = -1$, and $C = -2$.",
+                "<strong>Final Answer</strong>\\begin{aligned} A &= 3 \\cr B &= -1 \\cr C &= -2 \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "\\begin{aligned} A &= 3 \\cr B &= 1 \\cr C &= -2 \\end{aligned}",
+                        "feedback": "This error occurs if you make a sign error when expanding or grouping coefficients, yielding $+1$ for $B$ instead of $-1$."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= 3 \\cr B &= -1 \\cr C &= 2 \\end{aligned}",
+                        "feedback": "This error is the result of a sign slip when substituting $B = -1$ back into the simultaneous equations to find $C$."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= 6 \\cr B &= -1 \\cr C &= -2 \\end{aligned}",
+                        "feedback": "This occurs if you equate $A$ directly to the leading coefficient of the numerator ($6$), forgetting that the leading term of the denominator is $2x^2$ (meaning $2A = 6$, so $A = 3$)."
                 }
-        },
-        {
-                "id": "004482",
-                "board": "Pearson Edexcel",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Partial Fractions"
-                ],
-                "img": false,
-                "question": "Given that:<br>$$\\dfrac{ 2x^2 - x + 5 }{ (x - 1)(x + 2) } \\equiv A + \\dfrac{ B }{ x - 1 } + \\dfrac{ C }{ x + 2 }$$<br>Find the values of the constants $A$, $B$, and $C$.",
-                "steps": [
-                        "<strong>Step 1: Set up the algebraic identity:</strong><br>Multiply both sides of the identity by the common denominator $(x - 1)(x + 2)$ to clear the fractions:<br>$$2x^2 - x + 5 \\equiv A(x - 1)(x + 2) + B(x + 2) + C(x - 1)$$",
-                        "<strong>Step 2: Find the constant $A$ by comparing coefficients of $x^2$:</strong><br>Expanding the quadratic product gives $(x - 1)(x + 2) = x^2 + x - 2$. Substituting this back into the identity:<br>$$2x^2 - x + 5 \\equiv A(x^2 + x - 2) + B(x + 2) + C(x - 1)$$<br>By equating the coefficients of $x^2$ on both sides:<br>$$A = 2$$",
-                        "<strong>Step 3: Collect coefficients to solve for $B$ and $C$:</strong><br>Now expand and group the terms on the right-hand side by powers of $x$:<br>\\begin{aligned} 2x^2 - x + 5 &\\equiv 2(x^2 + x - 2) + B(x + 2) + C(x - 1) \\cr 2x^2 - x + 5 &\\equiv 2x^2 + 2x - 4 + Bx + 2B + Cx - C \\cr -x + 5 &\\equiv (2 + B + C)x + (-4 + 2B - C) \\end{aligned}<br>Equating the coefficients of $x$ and the constant terms yields two simultaneous equations:<br>\\begin{aligned} 2 + B + C &= -1 \\implies B + C = -3 \\cr -4 + 2B - C &= 5 \\implies 2B - C = 9 \\end{aligned}",
-                        "<strong>Step 4: Solve the simultaneous equations:</strong><br>From the first equation, we can express $C$ in terms of $B$:<br>$$C = -3 - B$$<br>Substituting this into the second equation:<br>\\begin{aligned} 2B - ( -3 - B ) &= 9 \\cr 2B + 3 + B &= 9 \\cr 3B &= 6 \\cr B &= 2 \\end{aligned}<br>Substituting $B = 2$ back to find $C$:<br>\\begin{aligned}C &= -3 - 2 \\cr&= -5\\end{aligned}<br>Therefore, the constants are $A = 2$, $B = 2$, and $C = -5$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$A = 2, B = -2, C = -5$",
-                                "feedback": "This error occurs if you make a sign error when solving the simultaneous equations, yielding $B = -2$ instead of $B = 2$."
-                        },
-                        {
-                                "ans": "$A = 2, B = 2, C = 5$",
-                                "feedback": "This is a sign slip in finding $C$ after solving for $B = 2$ (e.g., writing $C = -3 + 2 = -1$ or dropping the minus sign on $-5$)."
-                        },
-                        {
-                                "ans": "$A = 1, B = 2, C = -5$",
-                                "feedback": "This occurs if you assume the quotient constant $A$ is $1$ because there are no explicit multipliers on $(x-1)(x+2)$, forgetting that the numerator's leading term is $2x^2$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: The Substitution Method",
-                        "content": "While equating coefficients is robust, you can also solve for $B$ and $C$ extremely quickly by substituting the roots of the denominator. Once you find $A = 2$, let $x = 1$ to eliminate $C$: $2( 1 )^2 - 1 + 5 = B( 3 ) \\implies 6 = 3B \\implies B = 2$. Then let $x = -2$ to eliminate $B$: $2( -2 )^2 - ( -2 ) + 5 = C( -3 ) \\implies 15 = -3C \\implies C = -5$. This is a great way to save time and double-check your simultaneous equation work!"
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: Leading Coefficients in Improper Fractions",
+                "content": "When dealing with improper fractions where the numerator and denominator have the same degree, the constant term $A$ is simply the ratio of the leading coefficients. Here, the leading term of the numerator is $6x^2$ and the expanded leading term of the denominator is $2x^2$. Thus, $A = \\dfrac{6}{2}$, so $A = 3$. Checking this ratio first is an incredibly fast way to eliminate incorrect options under pressure!"
+        }
+},
+{
+        "id": "004482",
+        "board": "Pearson Edexcel",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Algebraic Methods",
+        "subtopic": [
+                "Partial Fractions"
+        ],
+        "img": false,
+        "question": "Given that:\\begin{aligned} &\\dfrac{2x^2 - x + 5}{(x - 1)(x + 2)} \\cr &\\quad \\equiv A + \\dfrac{B}{x - 1} + \\dfrac{C}{x + 2} \\end{aligned}Find the values of the constants $A$, $B$, and $C$.",
+        "steps": [
+                "<strong>Step 1: Set up the algebraic identity:</strong><br>Multiply both sides of the identity by the common denominator $(x - 1)(x + 2)$ to clear the fractions:\\begin{aligned} &2x^2 - x + 5 \\cr &\\quad \\equiv A(x - 1)(x + 2) \\cr &\\qquad + B(x + 2) + C(x - 1) \\end{aligned}",
+                "<strong>Step 2: Find the constant $A$ by comparing coefficients of $x^2$:</strong><br>Expanding the quadratic product gives $(x - 1)(x + 2) = x^2 + x - 2$. Substituting this back into the identity:\\begin{aligned} &2x^2 - x + 5 \\cr &\\quad \\equiv A(x^2 + x - 2) \\cr &\\qquad + B(x + 2) + C(x - 1) \\end{aligned}By equating the coefficients of $x^2$ on both sides:$$A = 2$$",
+                "<strong>Step 3: Collect coefficients to solve for $B$ and $C$:</strong><br>Now expand and group the terms on the right-hand side by powers of $x$:\\begin{aligned} &2x^2 - x + 5 \\cr &\\quad \\equiv 2(x^2 + x - 2) \\cr &\\qquad + B(x + 2) + C(x - 1) \\cr &\\quad \\equiv 2x^2 + 2x - 4 \\cr &\\qquad + Bx + 2B + Cx - C \\end{aligned}Grouping like powers of $x$:\\begin{aligned} &-x + 5 \\cr &\\quad \\equiv (2 + B + C)x \\cr &\\qquad + (-4 + 2B - C) \\end{aligned}Equating the coefficients of $x$ and the constant terms yields two simultaneous equations:\\begin{aligned} 2 + B + C &= -1 \\cr B + C &= -3 \\cr -4 + 2B - C &= 5 \\cr 2B - C &= 9 \\end{aligned}",
+                "<strong>Step 4: Solve the simultaneous equations:</strong><br>From the first equation, express $C$ in terms of $B$:$$C = -3 - B$$Substituting this into the second equation:\\begin{aligned} 2B - (-3 - B) &= 9 \\cr 2B + 3 + B &= 9 \\cr 3B &= 6 \\cr B &= 2 \\end{aligned}Substituting $B = 2$ back to find $C$:\\begin{aligned} C &= -3 - 2 \\cr &= -5 \\end{aligned}Therefore, the constants are $A = 2$, $B = 2$, and $C = -5$.",
+                "<strong>Final Answer</strong>\\begin{aligned} A &= 2 \\cr B &= 2 \\cr C &= -5 \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "\\begin{aligned} A &= 2 \\cr B &= -2 \\cr C &= -5 \\end{aligned}",
+                        "feedback": "This error occurs if you make a sign error when solving the simultaneous equations, yielding $B = -2$ instead of $B = 2$."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= 2 \\cr B &= 2 \\cr C &= 5 \\end{aligned}",
+                        "feedback": "This is a sign slip in finding $C$ after solving for $B = 2$ (e.g., writing $C = -3 + 2 = -1$ or dropping the minus sign on $-5$)."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= 1 \\cr B &= 2 \\cr C &= -5 \\end{aligned}",
+                        "feedback": "This occurs if you assume the quotient constant $A$ is $1$ because there are no explicit multipliers on $(x-1)(x+2)$, forgetting that the numerator's leading term is $2x^2$."
                 }
-        },
-        {
-                "id": "004483",
-                "board": "Pearson Edexcel",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Partial Fractions"
-                ],
-                "img": false,
-                "question": "Given that:<br>$$\\dfrac{ 4x^2 + 6x - 1 }{ (2x - 1)(x + 1) } \\equiv A + \\dfrac{ B }{ 2x - 1 } + \\dfrac{ C }{ x + 1 }$$<br>Find the values of the constants $A$, $B$, and $C$.",
-                "steps": [
-                        "<strong>Step 1: Set up the algebraic identity:</strong><br>Multiply both sides of the identity by the common denominator $(2x - 1)(x + 1)$ to clear the fractions:<br>$$4x^2 + 6x - 1 \\equiv A(2x - 1)(x + 1) + B(x + 1) + C(2x - 1)$$.",
-                        "<strong>Step 2: Find the constant $A$ by comparing coefficients of $x^2$:</strong><br>Expanding the quadratic product gives $(2x - 1)(x + 1) = 2x^2 + x - 1$. Substituting this back into the identity:<br>$$4x^2 + 6x - 1 \\equiv A(2x^2 + x - 1) + B(x + 1) + C(2x - 1)$$<br>By equating the coefficients of $x^2$ on both sides:<br>\\begin{aligned} 2A &= 4 \\cr A &= 2 \\end{aligned}",
-                        "<strong>Step 3: Collect coefficients to solve for $B$ and $C$:</strong><br>Now expand and group the terms on the right-hand side by powers of $x$:<br>\\begin{aligned} 4x^2 + 6x - 1 &\\equiv 2(2x^2 + x - 1) + B(x + 1) + C(2x - 1) \\cr 4x^2 + 6x - 1 &\\equiv 4x^2 + 2x - 2 + Bx + B + 2Cx - C \\cr 6x - 1 &\\equiv (2 + B + 2C)x + (-2 + B - C) \\end{aligned}<br>Equating the coefficients of $x$ and the constant terms yields two simultaneous equations:<br>\\begin{aligned} 2 + B + 2C &= 6 \\implies B + 2C = 4 \\cr -2 + B - C &= -1 \\implies B - C = 1 \\end{aligned}",
-                        "<strong>Step 4: Solve the simultaneous equations:</strong><br>From the second equation, we can express $B$ in terms of $C$:<br>$$B = 1 + C$$<br>Substituting this into the first equation:<br>\\begin{aligned} ( 1 + C ) + 2C &= 4 \\cr 1 + 3C &= 4 \\cr 3C &= 3 \\cr C &= 1 \\end{aligned}<br>Substituting $C = 1$ back to find $B$:<br>\\begin{aligned}B &= 1 + 1 \\cr&= 2\\end{aligned}<br>Therefore, the constants are $A = 2$, $B = 2$, and $C = 1$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$A = 2, B = -2, C = 1$",
-                                "feedback": "This is a sign slip in solving the simultaneous equations, which incorrectly yields a negative value for $B$."
-                        },
-                        {
-                                "ans": "$A = 2, B = 2, C = -1$",
-                                "feedback": "This error occurs if you make a sign error when rearranging $B - C = 1$, such as writing $B = C - 1$ instead of $B = 1 + C$."
-                        },
-                        {
-                                "ans": "$A = 4, B = 2, C = 1$",
-                                "feedback": "This occurs if you set $A$ directly to the numerator's leading term $4$, forgetting that the expanded denominator's leading term is $2x^2$ (meaning $2A = 4$)."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Spotting Simple Eliminations",
-                        "content": "When solving the simultaneous equations $B + 2C = 4$ and $B - C = 1$, you can eliminate $B$ immediately by subtracting the second equation from the first. This yields $( B + 2C ) - ( B - C ) = 4 - 1 \\implies 3C = 3 \\implies C = 1$. This direct subtraction eliminates the need to substitute, reducing the risk of a sign error!"
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: The Substitution Method",
+                "content": "While equating coefficients is robust, you can also solve for $B$ and $C$ extremely quickly by substituting the roots of the denominator. Once you find $A = 2$, let $x = 1$ to get $6 = 3B$, which gives $B = 2$. Then let $x = -2$ to get $15 = -3C$, which gives $C = -5$. This is a great way to save time and double-check your simultaneous equation work!"
+        }
+},
+{
+        "id": "004483",
+        "board": "Pearson Edexcel",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Algebraic Methods",
+        "subtopic": [
+                "Partial Fractions"
+        ],
+        "img": false,
+        "question": "Given that:\\begin{aligned} &\\dfrac{4x^2 + 6x - 1}{(2x - 1)(x + 1)} \\cr &\\quad \\equiv A + \\dfrac{B}{2x - 1} + \\dfrac{C}{x + 1} \\end{aligned}Find the values of the constants $A$, $B$, and $C$.",
+        "steps": [
+                "<strong>Step 1: Set up the algebraic identity:</strong><br>Multiply both sides of the identity by the common denominator $(2x - 1)(x + 1)$ to clear the fractions:\\begin{aligned} &4x^2 + 6x - 1 \\cr &\\quad \\equiv A(2x - 1)(x + 1) \\cr &\\qquad + B(x + 1) + C(2x - 1) \\end{aligned}",
+                "<strong>Step 2: Find the constant $A$ by comparing coefficients of $x^2$:</strong><br>Expanding the quadratic product gives $(2x - 1)(x + 1) = 2x^2 + x - 1$. Substituting this back into the identity:\\begin{aligned} &4x^2 + 6x - 1 \\cr &\\quad \\equiv A(2x^2 + x - 1) \\cr &\\qquad + B(x + 1) + C(2x - 1) \\end{aligned}By equating the coefficients of $x^2$ on both sides:\\begin{aligned} 2A &= 4 \\cr A &= 2 \\end{aligned}",
+                "<strong>Step 3: Collect coefficients to solve for $B$ and $C$:</strong><br>Now expand and group the terms on the right-hand side by powers of $x$:\\begin{aligned} &4x^2 + 6x - 1 \\cr &\\quad \\equiv 2(2x^2 + x - 1) \\cr &\\qquad + B(x + 1) + C(2x - 1) \\cr &\\quad \\equiv 4x^2 + 2x - 2 \\cr &\\qquad + Bx + B + 2Cx - C \\end{aligned}Grouping like powers of $x$:\\begin{aligned} &6x - 1 \\cr &\\quad \\equiv (2 + B + 2C)x \\cr &\\qquad + (-2 + B - C) \\end{aligned}Equating the coefficients of $x$ and the constant terms yields two simultaneous equations:\\begin{aligned} 2 + B + 2C &= 6 \\cr B + 2C &= 4 \\cr -2 + B - C &= -1 \\cr B - C &= 1 \\end{aligned}",
+                "<strong>Step 4: Solve the simultaneous equations:</strong><br>From the second equation, express $B$ in terms of $C$:$$B = 1 + C$$Substituting this into the first equation:\\begin{aligned} (1 + C) + 2C &= 4 \\cr 1 + 3C &= 4 \\cr 3C &= 3 \\cr C &= 1 \\end{aligned}Substituting $C = 1$ back to find $B$:\\begin{aligned} B &= 1 + 1 \\cr &= 2 \\end{aligned}Therefore, the constants are $A = 2$, $B = 2$, and $C = 1$.",
+                "<strong>Final Answer</strong>\\begin{aligned} A &= 2 \\cr B &= 2 \\cr C &= 1 \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "\\begin{aligned} A &= 2 \\cr B &= -2 \\cr C &= 1 \\end{aligned}",
+                        "feedback": "This is a sign slip in solving the simultaneous equations, which incorrectly yields a negative value for $B$."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= 2 \\cr B &= 2 \\cr C &= -1 \\end{aligned}",
+                        "feedback": "This error occurs if you make a sign error when rearranging $B - C = 1$, such as writing $B = C - 1$ instead of $B = 1 + C$."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= 4 \\cr B &= 2 \\cr C &= 1 \\end{aligned}",
+                        "feedback": "This occurs if you set $A$ directly to the numerator's leading term $4$, forgetting that the expanded denominator's leading term is $2x^2$ (meaning $2A = 4$)."
                 }
-        },
-        {
-                "id": "004484",
-                "board": "Pearson Edexcel",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Partial Fractions"
-                ],
-                "img": false,
-                "question": "Given that:<br>$$\\dfrac{ 3x^2 - 6x + 2 }{ (x - 4)(3x + 1) } \\equiv A + \\dfrac{ B }{ x - 4 } + \\dfrac{ C }{ 3x + 1 }$$<br>Find the values of the constants $A$, $B$, and $C$.",
-                "steps": [
-                        "<strong>Step 1: Set up the algebraic identity:</strong><br>Multiply both sides of the identity by the common denominator $(x - 4)(3x + 1)$ to clear the fractions:<br>$$3x^2 - 6x + 2 \\equiv A(x - 4)(3x + 1) + B(3x + 1) + C(x - 4)$$",
-                        "<strong>Step 2: Find the constant $A$ by comparing coefficients of $x^2$:</strong><br>Expanding the quadratic product gives $(x - 4)(3x + 1) = 3x^2 - 11x - 4$. Substituting this back into the identity:<br>$$3x^2 - 6x + 2 \\equiv A(3x^2 - 11x - 4) + B(3x + 1) + C(x - 4)$$<br>By equating the coefficients of $x^2$ on both sides:<br>\\begin{aligned} 3A &= 3 \\cr A &= 1 \\end{aligned}",
-                        "<strong>Step 3: Collect coefficients to solve for $B$ and $C$:</strong><br>Now expand and group the terms on the right-hand side by powers of $x$:<br>\\begin{aligned} 3x^2 - 6x + 2 &\\equiv 1(3x^2 - 11x - 4) + B(3x + 1) + C(x - 4) \\cr 3x^2 - 6x + 2 &\\equiv 3x^2 - 11x - 4 + 3Bx + B + Cx - 4C \\cr -6x + 2 &\\equiv (-11 + 3B + C)x + (-4 + B - 4C) \\end{aligned}<br>Equating the coefficients of $x$ and the constant terms yields two simultaneous equations:<br>\\begin{aligned} -11 + 3B + C &= -6 \\implies 3B + C = 5 \\cr -4 + B - 4C &= 2 \\implies B - 4C = 6 \\end{aligned}",
-                        "<strong>Step 4: Solve the simultaneous equations:</strong><br>From the first equation, we can express $C$ in terms of $B$:<br>$$C = 5 - 3B$$<br>Substituting this into the second equation:<br>\\begin{aligned} B - 4( 5 - 3B ) &= 6 \\cr B - 20 + 12B &= 6 \\cr 13B &= 26 \\cr B &= 2 \\end{aligned}<br>Substituting $B = 2$ back to find $C$:<br>\\begin{aligned}C &= 5 - 3( 2 ) \\cr&= -1\\end{aligned}<br>Therefore, the constants are $A = 1$, $B = 2$, and $C = -1$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$A = 1, B = -2, C = -1$",
-                                "feedback": "This is a sign error in solving the simultaneous equations, which incorrectly yields $B = -2$ instead of $B = 2$."
-                        },
-                        {
-                                "ans": "$A = 1, B = 2, C = 1$",
-                                "feedback": "This error occurs if you make a sign error when substituting $B = 2$ back to find $C$ (such as writing $C = 5 + 6 = 11$ or $C = 1$)."
-                        },
-                        {
-                                "ans": "$A = 3, B = 2, C = -1$",
-                                "feedback": "This occurs if you set $A$ directly to the numerator's leading term $3$, forgetting that the denominator's expanded leading term is $3x^2$ (leading to $3A = 3$, so $A = 1$)."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Fractional Roots Substitution",
-                        "content": "While substituting $x = 4$ is very straightforward and yields $B = 2$ directly, substituting $x = -\\dfrac{ 1 }{ 3 }$ requires careful fraction arithmetic. To avoid fractional errors, once you have solved for $B = 2$ using $x = 4$, you can simply substitute $x = 0$ as a very easy test value to find $C$: $2 = -4( 1 ) + B( 1 ) + C( -4 ) \\implies 2 = -4 + 2 - 4C \\implies 4 = -4C \\implies C = -1$."
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: Spotting Simple Eliminations",
+                "content": "When solving the simultaneous equations $B + 2C = 4$ and $B - C = 1$, you can eliminate $B$ immediately by subtracting the second equation from the first. This yields $3C = 3$, giving $C = 1$. This direct subtraction eliminates the need to substitute, reducing the risk of a sign error!"
+        }
+},
+{
+        "id": "004484",
+        "board": "Pearson Edexcel",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Algebraic Methods",
+        "subtopic": [
+                "Partial Fractions"
+        ],
+        "img": false,
+        "question": "Given that:\\begin{aligned} &\\dfrac{3x^2 - 6x + 2}{(x - 4)(3x + 1)} \\cr &\\quad \\equiv A + \\dfrac{B}{x - 4} + \\dfrac{C}{3x + 1} \\end{aligned}Find the values of the constants $A$, $B$, and $C$.",
+        "steps": [
+                "<strong>Step 1: Set up the algebraic identity:</strong><br>Multiply both sides of the identity by the common denominator $(x - 4)(3x + 1)$ to clear the fractions:\\begin{aligned} &3x^2 - 6x + 2 \\cr &\\quad \\equiv A(x - 4)(3x + 1) \\cr &\\qquad + B(3x + 1) + C(x - 4) \\end{aligned}",
+                "<strong>Step 2: Find the constant $A$ by comparing coefficients of $x^2$:</strong><br>Expanding the quadratic product gives $(x - 4)(3x + 1) = 3x^2 - 11x - 4$. Substituting this back into the identity:\\begin{aligned} &3x^2 - 6x + 2 \\cr &\\quad \\equiv A(3x^2 - 11x - 4) \\cr &\\qquad + B(3x + 1) + C(x - 4) \\end{aligned}By equating the coefficients of $x^2$ on both sides:\\begin{aligned} 3A &= 3 \\cr A &= 1 \\end{aligned}",
+                "<strong>Step 3: Collect coefficients to solve for $B$ and $C$:</strong><br>Now expand and group the terms on the right-hand side by powers of $x$:\\begin{aligned} &3x^2 - 6x + 2 \\cr &\\quad \\equiv 1(3x^2 - 11x - 4) \\cr &\\qquad + B(3x + 1) + C(x - 4) \\cr &\\quad \\equiv 3x^2 - 11x - 4 \\cr &\\qquad + 3Bx + B + Cx - 4C \\end{aligned}Grouping like powers of $x$:\\begin{aligned} &-6x + 2 \\cr &\\quad \\equiv (-11 + 3B + C)x \\cr &\\qquad + (-4 + B - 4C) \\end{aligned}Equating the coefficients of $x$ and the constant terms yields two simultaneous equations:\\begin{aligned} -11 + 3B + C &= -6 \\cr 3B + C &= 5 \\cr -4 + B - 4C &= 2 \\cr B - 4C &= 6 \\end{aligned}",
+                "<strong>Step 4: Solve the simultaneous equations:</strong><br>From the first equation, express $C$ in terms of $B$:$$C = 5 - 3B$$Substituting this into the second equation:\\begin{aligned} B - 4(5 - 3B) &= 6 \\cr B - 20 + 12B &= 6 \\cr 13B &= 26 \\cr B &= 2 \\end{aligned}Substituting $B = 2$ back to find $C$:\\begin{aligned} C &= 5 - 3(2) \\cr &= -1 \\end{aligned}Therefore, the constants are $A = 1$, $B = 2$, and $C = -1$.",
+                "<strong>Final Answer</strong>\\begin{aligned} A &= 1 \\cr B &= 2 \\cr C &= -1 \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "\\begin{aligned} A &= 1 \\cr B &= -2 \\cr C &= -1 \\end{aligned}",
+                        "feedback": "This is a sign error in solving the simultaneous equations, which incorrectly yields $B = -2$ instead of $B = 2$."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= 1 \\cr B &= 2 \\cr C &= 1 \\end{aligned}",
+                        "feedback": "This error occurs if you make a sign error when substituting $B = 2$ back to find $C$ (such as writing $C = 5 + 6 = 11$ or $C = 1$)."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= 3 \\cr B &= 2 \\cr C &= -1 \\end{aligned}",
+                        "feedback": "This occurs if you set $A$ directly to the numerator's leading term $3$, forgetting that the denominator's expanded leading term is $3x^2$ (leading to $3A = 3$, so $A = 1$)."
                 }
-        },
-        {
-                "id": "004485",
-                "board": "Pearson Edexcel",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Algebra and Functions",
-                "topic": "Algebraic Methods",
-                "subtopic": [
-                        "Partial Fractions"
-                ],
-                "img": false,
-                "question": "Given that:<br>$$\\dfrac{ 6x^2 - 16x + 12 }{ (x - 2)(3x - 2) } \\equiv A + \\dfrac{ B }{ x - 2 } + \\dfrac{ C }{ 3x - 2 }$$<br>Find the values of the constants $A$, $B$, and $C$.",
-                "steps": [
-                        "<strong>Step 1: Set up the algebraic identity:</strong><br>Multiply both sides of the identity by the common denominator $(x - 2)(3x - 2)$ to clear the fractions:<br>$$6x^2 - 16x + 12 \\equiv A(x - 2)(3x - 2) + B(3x - 2) + C(x - 2)$$",
-                        "<strong>Step 2: Find the constant $A$ by comparing coefficients of $x^2$:</strong><br>Expanding the quadratic product gives $(x - 2)(3x - 2) = 3x^2 - 8x + 4$. Substituting this back into the identity:<br>$$6x^2 - 16x + 12 \\equiv A(3x^2 - 8x + 4) + B(3x - 2) + C(x - 2)$$<br>By equating the coefficients of $x^2$ on both sides:<br>\\begin{aligned} 3A &= 6 \\cr A &= 2 \\end{aligned}",
-                        "<strong>Step 3: Collect coefficients to solve for $B$ and $C$:</strong><br>Now expand and group the terms on the right-hand side by powers of $x$:<br>\\begin{aligned} 6x^2 - 16x + 12 &\\equiv 2(3x^2 - 8x + 4) + B(3x - 2) + C(x - 2) \\cr 6x^2 - 16x + 12 &\\equiv 6x^2 - 16x + 8 + 3Bx - 2B + Cx - 2C \\cr -16x + 12 &\\equiv (-16 + 3B + C)x + (8 - 2B - 2C) \\end{aligned}<br>Equating the coefficients of $x$ and the constant terms yields two simultaneous equations:<br>\\begin{aligned} -16 + 3B + C &= -16 \\implies 3B + C = 0 \\cr 8 - 2B - 2C &= 12 \\implies -2B - 2C = 4 \\implies B + C = -2 \\end{aligned}",
-                        "<strong>Step 4: Solve the simultaneous equations:</strong><br>From the first equation, we can express $C$ in terms of $B$:<br>$$C = -3B$$<br>Substituting this into the simplified second equation:<br>\\begin{aligned} B + ( -3B ) &= -2 \\cr -2B &= -2 \\cr B &= 1 \\end{aligned}<br>Substituting $B = 1$ back to find $C$:<br>\\begin{aligned}C &= -3( 1 ) \\cr&= -3\\end{aligned}<br>Therefore, the constants are $A = 2$, $B = 1$, and $C = -3$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$A = 2, B = -1, C = -3$",
-                                "feedback": "This is a sign slip in solving the simultaneous equations, which incorrectly yields $B = -1$ instead of $B = 1$."
-                        },
-                        {
-                                "ans": "$A = 2, B = 1, C = 3$",
-                                "feedback": "This error occurs if you drop the negative sign when substituting $B = 1$ back to find $C$, yielding $+3$ instead of $-3$."
-                        },
-                        {
-                                "ans": "$A = 6, B = 1, C = -3$",
-                                "feedback": "This occurs if you set $A$ directly to the numerator's leading term $6$, forgetting that the expanded denominator's leading term is $3x^2$ (meaning $3A = 6$, so $A = 2$)."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Simplifying Simultaneous Equations",
-                        "content": "Notice how the equation $-2B - 2C = 4$ was simplified to $B + C = -2$ by dividing all terms by $-2$. Always look for common factors in your simultaneous equations before solving. Simplifying coefficients first prevents trivial arithmetic errors and makes substitution or elimination significantly easier."
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: Fractional Roots Substitution",
+                "content": "While substituting $x = 4$ is very straightforward and yields $B = 2$ directly, substituting $x = -\\dfrac{1}{3}$ requires careful fraction arithmetic. To avoid fractional errors, once you have solved for $B = 2$ using $x = 4$, you can simply substitute $x = 0$ as a very easy test value to find $C$: $2 = -4 + B - 4C$. Since $B = 2$, this simplifies to $4 = -4C$, which gives $C = -1$."
+        }
+},
+{
+        "id": "004485",
+        "board": "Pearson Edexcel",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Algebraic Methods",
+        "subtopic": [
+                "Partial Fractions"
+        ],
+        "img": false,
+        "question": "Given that:\\begin{aligned} &\\dfrac{6x^2 - 16x + 12}{(x - 2)(3x - 2)} \\cr &\\quad \\equiv A + \\dfrac{B}{x - 2} + \\dfrac{C}{3x - 2} \\end{aligned}Find the values of the constants $A$, $B$, and $C$.",
+        "steps": [
+                "<strong>Step 1: Set up the algebraic identity:</strong><br>Multiply both sides of the identity by the common denominator $(x - 2)(3x - 2)$ to clear the fractions:\\begin{aligned} &6x^2 - 16x + 12 \\cr &\\quad \\equiv A(x - 2)(3x - 2) \\cr &\\qquad + B(3x - 2) + C(x - 2) \\end{aligned}",
+                "<strong>Step 2: Find the constant $A$ by comparing coefficients of $x^2$:</strong><br>Expanding the quadratic product gives $(x - 2)(3x - 2) = 3x^2 - 8x + 4$. Substituting this back into the identity:\\begin{aligned} &6x^2 - 16x + 12 \\cr &\\quad \\equiv A(3x^2 - 8x + 4) \\cr &\\qquad + B(3x - 2) + C(x - 2) \\end{aligned}By equating the coefficients of $x^2$ on both sides:\\begin{aligned} 3A &= 6 \\cr A &= 2 \\end{aligned}",
+                "<strong>Step 3: Collect coefficients to solve for $B$ and $C$:</strong><br>Now expand and group the terms on the right-hand side by powers of $x$:\\begin{aligned} &6x^2 - 16x + 12 \\cr &\\quad \\equiv 2(3x^2 - 8x + 4) \\cr &\\qquad + B(3x - 2) + C(x - 2) \\cr &\\quad \\equiv 6x^2 - 16x + 8 \\cr &\\qquad + 3Bx - 2B + Cx - 2C \\end{aligned}Grouping like powers of $x$:\\begin{aligned} &-16x + 12 \\cr &\\quad \\equiv (-16 + 3B + C)x \\cr &\\qquad + (8 - 2B - 2C) \\end{aligned}Equating the coefficients of $x$ and the constant terms yields two simultaneous equations:\\begin{aligned} -16 + 3B + C &= -16 \\cr 3B + C &= 0 \\cr 8 - 2B - 2C &= 12 \\cr -2B - 2C &= 4 \\cr B + C &= -2 \\end{aligned}",
+                "<strong>Step 4: Solve the simultaneous equations:</strong><br>From the first equation, express $C$ in terms of $B$:$$C = -3B$$Substituting this into the simplified second equation:\\begin{aligned} B + (-3B) &= -2 \\cr -2B &= -2 \\cr B &= 1 \\end{aligned}Substituting $B = 1$ back to find $C$:\\begin{aligned} C &= -3(1) \\cr &= -3 \\end{aligned}Therefore, the constants are $A = 2$, $B = 1$, and $C = -3$.",
+                "<strong>Final Answer</strong>\\begin{aligned} A &= 2 \\cr B &= 1 \\cr C &= -3 \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "\\begin{aligned} A &= 2 \\cr B &= -1 \\cr C &= -3 \\end{aligned}",
+                        "feedback": "This is a sign slip in solving the simultaneous equations, which incorrectly yields $B = -1$ instead of $B = 1$."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= 2 \\cr B &= 1 \\cr C &= 3 \\end{aligned}",
+                        "feedback": "This error occurs if you drop the negative sign when substituting $B = 1$ back to find $C$, yielding $+3$ instead of $-3$."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= 6 \\cr B &= 1 \\cr C &= -3 \\end{aligned}",
+                        "feedback": "This occurs if you set $A$ directly to the numerator's leading term $6$, forgetting that the expanded denominator's leading term is $3x^2$ (meaning $3A = 6$, so $A = 2$)."
                 }
-        },
-        {
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: Simplifying Simultaneous Equations",
+                "content": "Notice how the equation $-2B - 2C = 4$ was simplified to $B + C = -2$ by dividing all terms by $-2$. Always look for common factors in your simultaneous equations before solving. Simplifying coefficients first prevents trivial arithmetic errors and makes substitution or elimination significantly easier."
+        }
+},
+{
                 "id": "004486",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
