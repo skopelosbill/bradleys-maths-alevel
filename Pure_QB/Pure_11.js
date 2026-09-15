@@ -585,7 +585,7 @@ window.ALEVEL_QUESTIONS = [
                         "content": "If both the inner function $q(x)$ and the outer function $p(x)$ are strictly increasing, finding the range of $pq(x)$ is straightforward: simply find the minimum value of $q(x)$ at its domain boundary and substitute it directly into $p(x)$."
                 }
         },
-        {
+ {
                 "id": "004516",
                 "board": "AQA",
                 "branch": "Pure",
@@ -596,11 +596,12 @@ window.ALEVEL_QUESTIONS = [
                         "Algebraic Methods"
                 ],
                 "img": false,
-                "question": "The quadratics $x^2 + px + q$ and $x^2 + rx + s$ have a common factor of $(x + 3)$. <br><br>Show that $3(r - p) = s - q$, fully justifying your answer. <br><br>Which of the following equations represents the correct relationship you have shown? <br><strong>A:</strong> $3(p - r) = s - q$ <br><strong>B:</strong> $3(r - p) = s - q$ <br><strong>C:</strong> $3(r - p) = q - s$ <br><strong>D:</strong> $r - p = 3(s - q)$",
+                "question": "The quadratics $x^2 + px + q$ and $x^2 + rx + s$ have a common factor of $(x + 3)$.<br><br>Show that $3(r - p) = s - q$, fully justifying your answer.<br><br>Which of the following equations represents the correct relationship you have shown?<br><br><strong>A:</strong> $3(p - r) = s - q$<br><br><strong>B:</strong> $3(r - p) = s - q$<br><br><strong>C:</strong> $3(r - p) = q - s$<br><br><strong>D:</strong> $r - p = 3(s - q)$",
                 "steps": [
-                        "Apply the Factor Theorem to both quadratics. If $(x + 3)$ is a factor of a polynomial $P(x)$, then $P(-3) = 0$. <br>For the first quadratic $x^2 + px + q$: <br>\\begin{aligned} (-3)^2 + p(-3) + q &= 0 \\cr 9 - 3p + q &= 0 \\cr q - 3p &= -9 \\cr \\end{aligned}",
-                        "Similarly, for the second quadratic $x^2 + rx + s$: <br>\\begin{aligned} (-3)^2 + r(-3) + s &= 0 \\cr 9 - 3r + s &= 0 \\cr s - 3r &= -9 \\cr \\end{aligned}",
-                        "Equate the two expressions since both are equal to $-9$: <br>\\begin{aligned} q - 3p &= s - 3r \\cr \\end{aligned} <br>Now, rearrange the terms to group the coefficients of the linear terms on one side and the constant terms on the other: <br>\\begin{aligned} 3r - 3p &= s - q \\cr 3(r - p) &= s - q \\cr \\end{aligned} <br>Therefore, the correct option is <strong>B</strong>."
+                        "Apply the Factor Theorem to both quadratics. If $(x + 3)$ is a factor of a polynomial $P(x)$, then $P(-3) = 0$.<br><br>For the first quadratic $x^2 + px + q$:\\begin{aligned} (-3)^2 + p(-3) + q &= 0 \\cr 9 - 3p + q &= 0 \\cr q - 3p &= -9 \\end{aligned}",
+                        "Similarly, for the second quadratic $x^2 + rx + s$:\\begin{aligned} (-3)^2 + r(-3) + s &= 0 \\cr 9 - 3r + s &= 0 \\cr s - 3r &= -9 \\end{aligned}",
+                        "Equate the two expressions since both are equal to $-9$:\\begin{aligned} q - 3p = s - 3r \\end{aligned}Now, rearrange the terms to group the coefficients of the linear terms on one side and the constant terms on the other:\\begin{aligned} 3r - 3p &= s - q \\cr 3(r - p) &= s - q \\end{aligned}Therefore, the correct option is <strong>B</strong>.",
+                        "Final Answer: <strong>B:</strong> $3(r - p) = s - q$"
                 ],
                 "pi_options": [
                         {
@@ -619,7 +620,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "caution",
                         "title": "The Head Teacher's Eye: Sign Transposition",
-                        "content": "When equating constant terms in algebraic proofs, be extremely meticulous with your positive and negative signs. Grouping terms like $-3p$ and $-3r$ requires careful factoring: $-3p - (-3r) = 3(r - p)$."
+                        "content": "When equating constant terms in algebraic proofs, be extremely meticulous with your positive and negative signs. Grouping terms like $-3p$ and $-3r$ requires careful factoring:\\begin{aligned} -3p - (-3r) = 3(r - p) \\end{aligned}"
                 }
         },
         {
@@ -633,11 +634,12 @@ window.ALEVEL_QUESTIONS = [
                         "Algebraic Methods"
                 ],
                 "img": false,
-                "question": "The cubic $x^3 + ax + b$ and the quadratic $x^2 + cx + d$ have a common factor of $(x - 2)$. <br><br>Show that $2(a - 2c) = 2d - b$, fully justifying your answer. <br><br>Which of the following equations represents the correct relationship you have shown? <br><strong>A:</strong> $a - 2c = 2d - b$ <br><strong>B:</strong> $2(a - 2c) = b - 2d$ <br><strong>C:</strong> $2(2c - a) = 2d - b$ <br><strong>D:</strong> $2(a - 2c) = 2d - b$",
+                "question": "The cubic $x^3 + ax + b$ and the quadratic $x^2 + cx + d$ have a common factor of $(x - 2)$.<br><br>Show that $2(a - 2c) = 2d - b$, fully justifying your answer.<br><br>Which of the following equations represents the correct relationship you have shown?<br><br><strong>A:</strong> $a - 2c = 2d - b$<br><br><strong>B:</strong> $2(a - 2c) = b - 2d$<br><br><strong>C:</strong> $2(2c - a) = 2d - b$<br><br><strong>D:</strong> $2(a - 2c) = 2d - b$",
                 "steps": [
-                        "Apply the Factor Theorem. If $(x - 2)$ is a factor, then substituting $x = 2$ must yield zero for both polynomials. <br>For the cubic expression $x^3 + ax + b$: <br>\\begin{aligned} (2)^3 + a(2) + b &= 0 \\cr 8 + 2a + b &= 0 \\cr b &= -8 - 2a \\cr \\end{aligned}",
-                        "Similarly, for the quadratic expression $x^2 + cx + d$: <br>\\begin{aligned} (2)^2 + c(2) + d &= 0 \\cr 4 + 2c + d &= 0 \\cr d &= -4 - 2c \\cr \\end{aligned}",
-                        "To prove the relationship, we substitute our expressions for $b$ and $d$ into the right-hand side of the target identity, $2d - b$: <br>\\begin{aligned} 2d - b &= 2(-4 - 2c) - (-8 - 2a) \\cr &= -8 - 4c + 8 + 2a \\cr &= 2a - 4c \\cr &= 2(a - 2c) \\cr \\end{aligned} <br>Thus, we have successfully shown that $2(a - 2c) = 2d - b$. <br>Therefore, the correct option is <strong>D</strong>."
+                        "Apply the Factor Theorem. If $(x - 2)$ is a factor, then substituting $x = 2$ must yield zero for both polynomials.<br><br>For the cubic expression $x^3 + ax + b$:\\begin{aligned} (2)^3 + a(2) + b &= 0 \\cr 8 + 2a + b &= 0 \\cr b &= -8 - 2a \\end{aligned}",
+                        "Similarly, for the quadratic expression $x^2 + cx + d$:\\begin{aligned} (2)^2 + c(2) + d &= 0 \\cr 4 + 2c + d &= 0 \\cr d &= -4 - 2c \\end{aligned}",
+                        "To prove the relationship, substitute the expressions for $b$ and $d$ into the right-hand side of the target identity, $2d - b$:\\begin{aligned} 2d - b &= 2(-4 - 2c) \\cr &\\qquad - (-8 - 2a) \\cr &= -8 - 4c + 8 + 2a \\cr &= 2a - 4c \\cr &= 2(a - 2c) \\end{aligned}Thus, we have successfully shown that $2(a - 2c) = 2d - b$.<br><br>Therefore, the correct option is <strong>D</strong>.",
+                        "Final Answer: <strong>D:</strong> $2(a - 2c) = 2d - b$"
                 ],
                 "pi_options": [
                         {
@@ -670,12 +672,13 @@ window.ALEVEL_QUESTIONS = [
                         "Algebraic Methods"
                 ],
                 "img": false,
-                "question": "The quadratics $2x^2 + ax + b$ and $2x^2 + cx + d$ have a common factor of $(2x - 1)$. <br><br>Show that $a - c = 2(d - b)$, fully justifying your answer. <br><br>Which of the following equations represents the correct relationship you have shown? <br><strong>A:</strong> $a - c = 2(d - b)$ <br><strong>B:</strong> $c - a = 2(d - b)$ <br><strong>C:</strong> $a - c = 2(b - d)$ <br><strong>D:</strong> $2(a - c) = d - b$",
+                "question": "The quadratics $2x^2 + ax + b$ and $2x^2 + cx + d$ have a common factor of $(2x - 1)$.<br><br>Show that $a - c = 2(d - b)$, fully justifying your answer.<br><br>Which of the following equations represents the correct relationship you have shown?<br><br><strong>A:</strong> $a - c = 2(d - b)$<br><br><strong>B:</strong> $c - a = 2(d - b)$<br><br><strong>C:</strong> $a - c = 2(b - d)$<br><br><strong>D:</strong> $2(a - c) = d - b$",
                 "steps": [
-                        "First, identify the root corresponding to the linear factor $(2x - 1)$: <br>\\begin{aligned} 2x - 1 &= 0 \\cr x &= \\dfrac{ 1 }{ 2 } \\cr \\end{aligned}",
-                        "Apply the Factor Theorem. Substituting $x = \\dfrac{ 1 }{ 2 }$ into both quadratic expressions must yield zero. <br>For the first quadratic $2x^2 + ax + b$: <br>\\begin{aligned} 2\\left( \\dfrac{ 1 }{ 2 } \\right)^2 + a\\left( \\dfrac{ 1 }{ 2 } \\right) + b &= 0 \\cr 2\\left( \\dfrac{ 1 }{ 4 } \\right) + \\dfrac{ a }{ 2 } + b &= 0 \\cr \\dfrac{ 1 }{ 2 } + \\dfrac{ a }{ 2 } + b &= 0 \\cr \\end{aligned} <br>Multiply the entire equation by $2$ to clear the fractional denominators: <br>\\begin{aligned} 1 + a + 2b &= 0 \\cr a + 2b &= -1 \\cr \\end{aligned}",
-                        "Similarly, for the second quadratic $2x^2 + cx + d$: <br>\\begin{aligned} 2\\left( \\dfrac{ 1 }{ 2 } \\right)^2 + c\\left( \\dfrac{ 1 }{ 2 } \\right) + d &= 0 \\cr 1 + c + 2d &= 0 \\cr c + 2d &= -1 \\cr \\end{aligned}",
-                        "Equate the two expressions since both are equal to $-1$: <br>\\begin{aligned} a + 2b &= c + 2d \\cr \\end{aligned} <br>Rearrange the terms to isolate the variables and group the constant coefficients: <br>\\begin{aligned} a - c &= 2d - 2b \\cr a - c &= 2(d - b) \\cr \\end{aligned} <br>Therefore, the correct option is <strong>A</strong>."
+                        "First, identify the root corresponding to the linear factor $(2x - 1)$:\\begin{aligned} 2x - 1 &= 0 \\cr x &= \\dfrac{1}{2} \\end{aligned}",
+                        "Apply the Factor Theorem. Substituting $x = \\dfrac{1}{2}$ into both quadratic expressions must yield zero.<br><br>For the first quadratic $2x^2 + ax + b$:\\begin{aligned} 2\\left(\\dfrac{1}{2}\\right)^2 + a\\left(\\dfrac{1}{2}\\right) + b &= 0 \\cr 2\\left(\\dfrac{1}{4}\\right) + \\dfrac{a}{2} + b &= 0 \\cr \\dfrac{1}{2} + \\dfrac{a}{2} + b &= 0 \\end{aligned}Multiply the entire equation by $2$ to clear the fractional denominators:\\begin{aligned} 1 + a + 2b &= 0 \\cr a + 2b &= -1 \\end{aligned}",
+                        "Similarly, for the second quadratic $2x^2 + cx + d$:\\begin{aligned} 2\\left(\\dfrac{1}{2}\\right)^2 + c\\left(\\dfrac{1}{2}\\right) + d &= 0 \\cr 1 + c + 2d &= 0 \\cr c + 2d &= -1 \\end{aligned}",
+                        "Equate the two expressions since both are equal to $-1$:\\begin{aligned} a + 2b = c + 2d \\end{aligned}Rearrange the terms to isolate the variables and group the constant coefficients:\\begin{aligned} a - c &= 2d - 2b \\cr &= 2(d - b) \\end{aligned}Therefore, the correct option is <strong>A</strong>.",
+                        "Final Answer: <strong>A:</strong> $a - c = 2(d - b)$"
                 ],
                 "pi_options": [
                         {
@@ -694,7 +697,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "pro-tip",
                         "title": "The Head Teacher's Eye: Rational Roots",
-                        "content": "For a linear factor of the form $(mx - n)$, the root is always the fraction $x = \\dfrac{ n }{ m }$. Substituting fractional roots into polynomials requires clear fractional arithmetic—always clear denominators early to avoid complex algebra."
+                        "content": "For a linear factor of the form $(mx - n)$, the root is always the fraction $x = \\dfrac{n}{m}$. Substituting fractional roots into polynomials requires clear fractional arithmetic—always clear denominators early to avoid complex algebra."
                 }
         },
         {
@@ -708,11 +711,12 @@ window.ALEVEL_QUESTIONS = [
                         "Algebraic Methods"
                 ],
                 "img": false,
-                "question": "The quadratics $x^2 + ax + b$ and $x^2 + cx + d$ have a common factor of $(x - 1)$. <br><br>Show that $a - c = d - b$, fully justifying your answer. <br><br>Which of the following equations represents the correct relationship you have shown? <br><strong>A:</strong> $a - c = b - d$ <br><strong>B:</strong> $a + c = b + d$ <br><strong>C:</strong> $a - c = d - b$ <br><strong>D:</strong> $a - d = c - b$",
+                "question": "The quadratics $x^2 + ax + b$ and $x^2 + cx + d$ have a common factor of $(x - 1)$.<br><br>Show that $a - c = d - b$, fully justifying your answer.<br><br>Which of the following equations represents the correct relationship you have shown?<br><br><strong>A:</strong> $a - c = b - d$<br><br><strong>B:</strong> $a + c = b + d$<br><br><strong>C:</strong> $a - c = d - b$<br><br><strong>D:</strong> $a - d = c - b$",
                 "steps": [
-                        "Apply the Factor Theorem. If $(x - 1)$ is a factor of a polynomial $P(x)$, then $P(1) = 0$. <br>For the first quadratic $x^2 + ax + b$: <br>\\begin{aligned} (1)^2 + a(1) + b &= 0 \\cr 1 + a + b &= 0 \\cr a + b &= -1 \\cr \\end{aligned}",
-                        "Similarly, for the second quadratic $x^2 + cx + d$: <br>\\begin{aligned} (1)^2 + c(1) + d &= 0 \\cr 1 + c + d &= 0 \\cr c + d &= -1 \\cr \\end{aligned}",
-                        "Equate the two expressions since both are equal to $-1$: <br>\\begin{aligned} a + b &= c + d \\cr \\end{aligned} <br>Now, rearrange the terms to group the coefficients $a$ and $c$ on one side and $b$ and $d$ on the other: <br>\\begin{aligned} a - c &= d - b \\cr \\end{aligned} <br>Therefore, the correct option is <strong>C</strong>."
+                        "Apply the Factor Theorem. If $(x - 1)$ is a factor of a polynomial $P(x)$, then $P(1) = 0$.<br><br>For the first quadratic $x^2 + ax + b$:\\begin{aligned} (1)^2 + a(1) + b &= 0 \\cr 1 + a + b &= 0 \\cr a + b &= -1 \\end{aligned}",
+                        "Similarly, for the second quadratic $x^2 + cx + d$:\\begin{aligned} (1)^2 + c(1) + d &= 0 \\cr 1 + c + d &= 0 \\cr c + d &= -1 \\end{aligned}",
+                        "Equate the two expressions since both are equal to $-1$:\\begin{aligned} a + b = c + d \\end{aligned}Now, rearrange the terms to group the coefficients $a$ and $c$ on one side and $b$ and $d$ on the other:\\begin{aligned} a - c = d - b \\end{aligned}Therefore, the correct option is <strong>C</strong>.",
+                        "Final Answer: <strong>C:</strong> $a - c = d - b$"
                 ],
                 "pi_options": [
                         {
@@ -745,11 +749,12 @@ window.ALEVEL_QUESTIONS = [
                         "Algebraic Methods"
                 ],
                 "img": false,
-                "question": "The quadratics $ax^2 + bx + c$ and $ax^2 + dx + e$ have a common factor of $(x - p)$, where $a \\neq 0$ and $p \\neq 0$. <br><br>Show that $p(b - d) = e - c$, fully justifying your answer. <br><br>Which of the following equations represents the correct relationship you have shown? <br><strong>A:</strong> $p(d - b) = e - c$ <br><strong>B:</strong> $p(b - d) = e - c$ <br><strong>C:</strong> $p(b - d) = c - e$ <br><strong>D:</strong> $b - d = p(e - c)$",
+                "question": "The quadratics $ax^2 + bx + c$ and $ax^2 + dx + e$ have a common factor of $(x - p)$, where $a \\neq 0$ and $p \\neq 0$.<br><br>Show that $p(b - d) = e - c$, fully justifying your answer.<br><br>Which of the following equations represents the correct relationship you have shown?<br><br><strong>A:</strong> $p(d - b) = e - c$<br><br><strong>B:</strong> $p(b - d) = e - c$<br><br><strong>C:</strong> $p(b - d) = c - e$<br><br><strong>D:</strong> $b - d = p(e - c)$",
                 "steps": [
-                        "Apply the Factor Theorem. If $(x - p)$ is a factor of both quadratics, then substituting $x = p$ must yield zero for both expressions. <br>For the first quadratic $ax^2 + bx + c$: <br>\\begin{aligned} ap^2 + bp + c &= 0 \\cr bp + c &= -ap^2 \\cr \\end{aligned}",
-                        "Similarly, for the second quadratic $ax^2 + dx + e$: <br>\\begin{aligned} ap^2 + dp + e &= 0 \\cr dp + e &= -ap^2 \\cr \\end{aligned}",
-                        "Equate the two expressions since both are equal to $-ap^2$: <br>\\begin{aligned} bp + c &= dp + e \\cr \\end{aligned} <br>Rearrange the terms to group the coefficients of $p$ on the left and the constant terms on the right: <br>\\begin{aligned} bp - dp &= e - c \\cr p(b - d) &= e - c \\cr \\end{aligned} <br>Therefore, the correct option is <strong>B</strong>."
+                        "Apply the Factor Theorem. If $(x - p)$ is a factor of both quadratics, then substituting $x = p$ must yield zero for both expressions.<br><br>For the first quadratic $ax^2 + bx + c$:\\begin{aligned} ap^2 + bp + c &= 0 \\cr bp + c &= -ap^2 \\end{aligned}",
+                        "Similarly, for the second quadratic $ax^2 + dx + e$:\\begin{aligned} ap^2 + dp + e &= 0 \\cr dp + e &= -ap^2 \\end{aligned}",
+                        "Equate the two expressions since both are equal to $-ap^2$:\\begin{aligned} bp + c = dp + e \\end{aligned}Rearrange the terms to group the coefficients of $p$ on the left and the constant terms on the right:\\begin{aligned} bp - dp &= e - c \\cr p(b - d) &= e - c \\end{aligned}Therefore, the correct option is <strong>B</strong>.",
+                        "Final Answer: <strong>B:</strong> $p(b - d) = e - c$"
                 ],
                 "pi_options": [
                         {
