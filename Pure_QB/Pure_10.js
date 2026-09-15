@@ -850,10 +850,10 @@ window.ALEVEL_QUESTIONS = [
                 }
         ],
         "bradley_insight": {
-                "type": "caution",
-                "title": "The Head Teacher's Eye: Limit Identification",
-                "content": "When proving trig derivatives from first principles, do not skip the intermediate step of splitting the fraction. The limit results $\\lim_{ h \\to 0 } \\dfrac{ \\sin h }{ h } = 1$ and $\\lim_{ h \\to 0 } \\dfrac{ \\cos h - 1 }{ h } = 0$ must be applied separately to each of the distinct algebraic components."
-        }
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Limit Identification",
+        "content": "When proving trig derivatives from first principles, do not skip the intermediate step of splitting the fraction. The limit results $\\dfrac{\\sin h}{h} \\to 1$ and $\\dfrac{\\cos h - 1}{h} \\to 0$ as $h \\to 0$ must be applied separately to each of the distinct algebraic components."
+}
 },
 {
         "id": "004472",
@@ -871,7 +871,7 @@ window.ALEVEL_QUESTIONS = [
                 "<strong>Step 1: Set up the limit of the difference quotient:</strong><br>By definition, the derivative of $\\cos(2x)$ with respect to $x$ is given by the limit:\\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(\\cos(2x)) \\cr &\\quad = \\lim_{h \\to 0} \\dfrac{\\cos(2(x + h)) - \\cos(2x)}{h} \\cr &\\quad = \\lim_{h \\to 0} \\dfrac{\\cos(2x + 2h) - \\cos(2x)}{h} \\end{aligned}",
                 "<strong>Step 2: Expand the compound angle term:</strong><br>Using the compound angle identity for $\\cos(A + B)$, we expand $\\cos(2x + 2h)$:\\begin{aligned} &\\cos(2x + 2h) \\cr &\\quad = \\cos(2x)\\cos(2h) \\cr &\\qquad - \\sin(2x)\\sin(2h) \\end{aligned}Substituting this expansion back into our difference quotient gives:\\begin{aligned} &\\dfrac{1}{h} \\big( \\cos(2x)\\cos(2h) \\cr &\\qquad - \\sin(2x)\\sin(2h) \\cr &\\qquad - \\cos(2x) \\big) \\end{aligned}",
                 "<strong>Step 3: Group the terms:</strong><br>We can group the terms containing $\\cos(2x)$ in the numerator to factorise them:\\begin{aligned} &\\dfrac{\\cos(2x)(\\cos(2h) - 1) - \\sin(2x)\\sin(2h)}{h} \\cr &\\quad = \\cos(2x)\\left(\\dfrac{\\cos(2h) - 1}{h}\\right) \\cr &\\qquad - \\sin(2x)\\left(\\dfrac{\\sin(2h)}{h}\\right) \\end{aligned}This is the required algebraic rearrangement before taking limits.",
-                "<strong>Step 4: Take the limit as $h \\to 0$:</strong><br>To evaluate the limits, we scale the fractions to match our standard limit forms:\\begin{aligned} \\dfrac{\\cos(2h) - 1}{h} &= 2\\left(\\dfrac{\\cos(2h) - 1}{2h}\\right) \\cr \\dfrac{\\sin(2h)}{h} &= 2\\left(\\dfrac{\\sin(2h)}{2h}\\right) \\end{aligned}As $h \\to 0$, we have $2h \\to 0$. Therefore:\\begin{aligned} \\lim_{h \\to 0} \\left(\\dfrac{\\cos(2h) - 1}{h}\\right) &= 2(0) \\cr &= 0 \\cr \\lim_{h \\to 0} \\left(\\dfrac{\\sin(2h)}{h}\\right) &= 2(1) \\cr &= 2 \\end{aligned}Applying these limits gives:\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}(\\cos(2x)) &= \\cos(2x)(0) - \\sin(2x)(2) \\cr &= -2\\sin(2x) \\end{aligned}",
+                "<strong>Step 4: Take the limit as $h \\to 0$:</strong><br>To evaluate the limits, we scale the fractions to match our standard limit forms:\\begin{aligned} \\dfrac{\\cos(2h) - 1}{h} &= 2\\left(\\dfrac{\\cos(2h) - 1}{2h}\\right) \\cr \\dfrac{\\sin(2h)}{h} &= 2\\left(\\dfrac{\\sin(2h)}{2h}\\right) \\end{aligned}As $h \\to 0$, we have $2h \\to 0$. Therefore:\\begin{aligned} \\lim_{h \\to 0} \\left(\\dfrac{\\cos(2h) - 1}{h}\\right) &= 2(0) \\cr &= 0 \\cr \\lim_{h \\to 0} \\left(\\dfrac{\\sin(2h)}{h}\\right) &= 2(1) \\cr &= 2 \\end{aligned}Applying these limits gives:\\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(\\cos(2x)) \\cr & \\quad= \\cos(2x)(0) - \\sin(2x)(2) \\cr & \\quad= -2\\sin(2x) \\end{aligned}",
                 "<strong>Final Answer</strong>\\begin{aligned} &\\cos(2x)\\left(\\dfrac{\\cos(2h) - 1}{h}\\right) \\cr &\\quad - \\sin(2x)\\left(\\dfrac{\\sin(2h)}{h}\\right) \\end{aligned}"
         ],
         "pi_options": [
@@ -910,7 +910,7 @@ window.ALEVEL_QUESTIONS = [
                 "<strong>Step 1: Set up the limit of the difference quotient:</strong><br>By definition, the derivative of $\\sin(2x)$ with respect to $x$ is given by the limit:\\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(\\sin(2x)) \\cr &\\quad = \\lim_{h \\to 0} \\dfrac{\\sin(2(x + h)) - \\sin(2x)}{h} \\cr &\\quad = \\lim_{h \\to 0} \\dfrac{\\sin(2x + 2h) - \\sin(2x)}{h} \\end{aligned}",
                 "<strong>Step 2: Expand the compound angle term:</strong><br>Using the compound angle identity for $\\sin(A + B)$, we expand $\\sin(2x + 2h)$:\\begin{aligned} &\\sin(2x + 2h) \\cr &\\quad = \\sin(2x)\\cos(2h) \\cr &\\qquad + \\cos(2x)\\sin(2h) \\end{aligned}Substituting this expansion back into our difference quotient gives:\\begin{aligned} &\\dfrac{1}{h} \\big( \\sin(2x)\\cos(2h) \\cr &\\qquad + \\cos(2x)\\sin(2h) \\cr &\\qquad - \\sin(2x) \\big) \\end{aligned}",
                 "<strong>Step 3: Group the terms:</strong><br>We can group the terms containing $\\sin(2x)$ in the numerator to factorise them:\\begin{aligned} &\\dfrac{\\sin(2x)(\\cos(2h) - 1) + \\cos(2x)\\sin(2h)}{h} \\cr &\\quad = \\sin(2x)\\left(\\dfrac{\\cos(2h) - 1}{h}\\right) \\cr &\\qquad + \\cos(2x)\\left(\\dfrac{\\sin(2h)}{h}\\right) \\end{aligned}This is the required algebraic rearrangement before taking limits.",
-                "<strong>Step 4: Take the limit as $h \\to 0$:</strong><br>To evaluate the limits, we scale the fractions to match our standard limit forms:\\begin{aligned} \\dfrac{\\cos(2h) - 1}{h} &= 2\\left(\\dfrac{\\cos(2h) - 1}{2h}\\right) \\cr \\dfrac{\\sin(2h)}{h} &= 2\\left(\\dfrac{\\sin(2h)}{2h}\\right) \\end{aligned}As $h \\to 0$, we have $2h \\to 0$. Therefore:\\begin{aligned} \\lim_{h \\to 0} \\left(\\dfrac{\\cos(2h) - 1}{h}\\right) &= 2(0) \\cr &= 0 \\cr \\lim_{h \\to 0} \\left(\\dfrac{\\sin(2h)}{h}\\right) &= 2(1) \\cr &= 2 \\end{aligned}Applying these limits gives:\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}(\\sin(2x)) &= \\sin(2x)(0) + \\cos(2x)(2) \\cr &= 2\\cos(2x) \\end{aligned}",
+                "<strong>Step 4: Take the limit as $h \\to 0$:</strong><br>To evaluate the limits, we scale the fractions to match our standard limit forms:\\begin{aligned} \\dfrac{\\cos(2h) - 1}{h} &= 2\\left(\\dfrac{\\cos(2h) - 1}{2h}\\right) \\cr \\dfrac{\\sin(2h)}{h} &= 2\\left(\\dfrac{\\sin(2h)}{2h}\\right) \\end{aligned}As $h \\to 0$, we have $2h \\to 0$. Therefore:\\begin{aligned} \\lim_{h \\to 0} \\left(\\dfrac{\\cos(2h) - 1}{h}\\right) &= 2(0) \\cr &= 0 \\cr \\lim_{h \\to 0} \\left(\\dfrac{\\sin(2h)}{h}\\right) &= 2(1) \\cr &= 2 \\end{aligned}Applying these limits gives:\\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(\\sin(2x)) \\cr & \\quad= \\sin(2x)(0) + \\cos(2x)(2) \\cr & \\quad= 2\\cos(2x) \\end{aligned}",
                 "<strong>Final Answer</strong>\\begin{aligned} &\\sin(2x)\\left(\\dfrac{\\cos(2h) - 1}{h}\\right) \\cr &\\quad + \\cos(2x)\\left(\\dfrac{\\sin(2h)}{h}\\right) \\end{aligned}"
         ],
         "pi_options": [
@@ -928,10 +928,10 @@ window.ALEVEL_QUESTIONS = [
                 }
         ],
         "bradley_insight": {
-                "type": "deeper",
-                "title": "The Head Teacher's Eye: Limit Definition of Derivative",
-                "content": "The limit definition of the derivative, $f'( x ) = \\lim_{ h \\to 0 } \\dfrac{ f( x+h ) - f( x ) }{ h }$, represents the gradient of the chord as the width $h \\to 0$. In A-level calculus, this is the foundational proof for trigonometric derivatives, bridging trigonometry and calculus."
-        }
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Limit Definition of Derivative",
+        "content": "The limit definition of the derivative:\\begin{aligned} &f'(x) \\cr &\\quad = \\lim_{h \\to 0} \\dfrac{f(x+h) - f(x)}{h} \\end{aligned}represents the gradient of the chord as the width $h \\to 0$. In A-level calculus, this is the foundational proof for trigonometric derivatives, bridging trigonometry and calculus."
+}
 },
 {
         "id": "004474",
@@ -1006,10 +1006,10 @@ window.ALEVEL_QUESTIONS = [
                 }
         ],
         "bradley_insight": {
-                "type": "pro-tip",
-                "title": "The Head Teacher's Eye: Limit Parameters",
-                "content": "Remember that the limit results $\\lim_{ x \\to 0 } \\dfrac{ \\sin x }{ x } = 1$ and $\\lim_{ x \\to 0 } \\dfrac{ \\cos x - 1 }{ x } = 0$ hold true for any variable parameter $x$. By substituting $x = 3h$, we can see that as $h \\to 0$, $3h \\to 0$, allowing us to evaluate the limits of scaled functions easily."
-        }
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Limit Parameters",
+        "content": "Remember that the standard limits $\\dfrac{\\sin x}{x} \\to 1$ and $\\dfrac{\\cos x - 1}{x} \\to 0$ as $x \\to 0$ hold true for any variable parameter $x$. By substituting $x = 3h$, we can see that as $h \\to 0$, $3h \\to 0$, allowing us to evaluate the limits of scaled functions easily."
+}
 },
 {
                 "id": "004476",
