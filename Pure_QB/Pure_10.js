@@ -1411,12 +1411,13 @@ window.ALEVEL_QUESTIONS = [
         "major_area": "Trigonometry",
         "topic": "Trigonometric Identities",
         "subtopic": [
-                "Trigonometric Equations"
+                "Proving Identities",
+                "Solving Trigonometric Equations"
         ],
         "img": false,
         "question": "<strong>(a)</strong> Prove that:$$1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$$<strong>(b)</strong> Hence solve, for $-\\dfrac{\\pi}{2} < x < \\dfrac{\\pi}{2}$ where $x \\neq 0$, the equation:\\begin{aligned} &(\\csc^2 x - 4)(1 + \\cos 2x) \\cr &\\quad = 2\\cot^2 x \\sin 2x \\end{aligned}Give your answers to 3 decimal places where appropriate.",
         "steps": [
-                "<strong>(a) Proving the identity:</strong><br>We start by expanding the right-hand side (RHS) of the identity using the definitions $\\cot \\theta = \\dfrac{\\cos \\theta}{\\sin \\theta}$ and $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$:\\begin{aligned} &\\cot \\theta \\sin 2\\theta \\cr &\\quad = \\left(\\dfrac{\\cos \\theta}{\\sin \\theta}\\right)(2\\sin \\theta \\cos \\theta) \\cr &\\quad = 2\\cos^2 \\theta \\end{aligned}Now we expand the left-hand side (LHS) of the identity using the double angle identity $\\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta$ and the Pythagorean identity $\\sin^2 \\theta = 1 - \\cos^2 \\theta$:\\begin{aligned} 1 + \\cos 2\\theta &= 1 + (\\cos^2 \\theta - \\sin^2 \\theta) \\cr &= 1 + \\cos^2 \\theta - (1 - \\cos^2 \\theta) \\cr &= 2\\cos^2 \\theta \\end{aligned}Since LHS = RHS, the identity is proven: $1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$.",
+                "<strong>(a) Proving the identity:</strong><br>We start by expanding the right-hand side (RHS) of the identity using the definitions $\\cot \\theta = \\dfrac{\\cos \\theta}{\\sin \\theta}$ and $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$:\\begin{aligned} &\\cot \\theta \\sin 2\\theta \\cr &\\quad = \\left(\\dfrac{\\cos \\theta}{\\sin \\theta}\\right)(2\\sin \\theta \\cos \\theta) \\cr &\\quad = 2\\cos^2 \\theta \\end{aligned}Now we expand the left-hand side (LHS) of the identity using the double angle identity $\\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta$ and the Pythagorean identity $\\sin^2 \\theta = 1 - \\cos^2 \\theta$:\\begin{aligned} 1 + \\cos 2\\theta &= 1 + (\\cos^2 \\theta - \\sin^2 \\theta) \\cr &= 1 + \\cos^2 \\theta -\\cr& \\quad (1 - \\cos^2 \\theta) \\cr &= 2\\cos^2 \\theta \\end{aligned}Since LHS = RHS, the identity is proven: $1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$.",
                 "<strong>(b) Solving the equation:</strong><br>We substitute our proven identity $1 + \\cos 2x = \\cot x \\sin 2x$ into the given equation:\\begin{aligned} &(\\csc^2 x - 4)(1 + \\cos 2x) \\cr &\\quad = 2\\cot^2 x \\sin 2x \\cr &(\\csc^2 x - 4)\\cot x \\sin 2x \\cr &\\quad = 2\\cot^2 x \\sin 2x \\end{aligned}Since $x \\neq 0$ and $-\\dfrac{\\pi}{2} < x < \\dfrac{\\pi}{2}$, we know that $\\sin 2x \\neq 0$ and $\\cot x \\neq 0$. Therefore, we can safely divide both sides of the equation by $\\cot x \\sin 2x$:$$\\csc^2 x - 4 = 2\\cot x$$",
                 "Using the trigonometric identity $\\csc^2 x = 1 + \\cot^2 x$, we rewrite the equation in terms of $\\cot x$:\\begin{aligned} 1 + \\cot^2 x - 4 &= 2\\cot x \\cr \\cot^2 x - 2\\cot x - 3 &= 0 \\end{aligned}Factorising this quadratic equation gives:\\begin{aligned} (\\cot x - 3)(\\cot x + 1) &= 0 \\cr \\cot x &= 3 \\cr \\cot x &= -1 \\end{aligned}",
                 "Solving for $x$ by rewriting in terms of $\\tan x$:<br><br>For $\\cot x = 3$:\\begin{aligned} \\tan x &= \\dfrac{1}{3} \\cr x &= \\arctan\\left(\\dfrac{1}{3}\\right) \\cr &\\approx 0.322\\text{ rad} \\end{aligned}For $\\cot x = -1$:\\begin{aligned} \\tan x &= -1 \\cr x &= \\arctan(-1) \\cr &= -\\dfrac{\\pi}{4} \\cr &\\approx -0.785\\text{ rad} \\end{aligned}Therefore, the solutions are $x \\approx 0.322\\text{ radians}$ and $x \\approx -0.785\\text{ radians}$.",
@@ -1450,7 +1451,8 @@ window.ALEVEL_QUESTIONS = [
         "major_area": "Trigonometry",
         "topic": "Trigonometric Identities",
         "subtopic": [
-                "Trigonometric Equations"
+                "Proving Identities",
+                "Solving Trigonometric Equations"
         ],
         "img": false,
         "question": "<strong>(a)</strong> Prove that:$$1 - \\cos 2\\theta \\equiv \\tan \\theta \\sin 2\\theta$$<strong>(b)</strong> Hence solve, for $-\\dfrac{\\pi}{2} < x < \\dfrac{\\pi}{2}$, the equation:\\begin{aligned} &(\\sec^2 x - 3)(1 - \\cos 2x) \\cr &\\quad = 3\\tan^2 x \\sin 2x \\end{aligned}Give your answers to 3 decimal places where appropriate.",
@@ -1490,12 +1492,13 @@ window.ALEVEL_QUESTIONS = [
         "major_area": "Trigonometry",
         "topic": "Trigonometric Identities",
         "subtopic": [
-                "Trigonometric Equations"
+                "Proving Identities",
+                "Solving Trigonometric Equations"
         ],
         "img": false,
         "question": "<strong>(a)</strong> Prove that:$$1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$$<strong>(b)</strong> Hence solve, for $-\\dfrac{\\pi}{2} < x < \\dfrac{\\pi}{2}$ where $x \\neq 0$, the equation:\\begin{aligned} &(\\csc^2 x - 5)(1 + \\cos 2x) \\cr &\\quad = 2\\cot^2 x \\sin 2x \\end{aligned}Give your answers to 3 decimal places where appropriate.",
         "steps": [
-                "<strong>(a) Proving the identity:</strong><br>We expand the right-hand side (RHS) of the identity using the definitions $\\cot \\theta = \\dfrac{\\cos \\theta}{\\sin \\theta}$ and $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$:\\begin{aligned} &\\cot \\theta \\sin 2\\theta \\cr &\\quad = \\left(\\dfrac{\\cos \\theta}{\\sin \\theta}\\right)(2\\sin \\theta \\cos \\theta) \\cr &\\quad = 2\\cos^2 \\theta \\end{aligned}Now we expand the left-hand side (LHS) of the identity using the double angle identity $\\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta$ and the Pythagorean identity $\\sin^2 \\theta = 1 - \\cos^2 \\theta$:\\begin{aligned} 1 + \\cos 2\\theta &= 1 + (\\cos^2 \\theta - \\sin^2 \\theta) \\cr &= 1 + \\cos^2 \\theta - (1 - \\cos^2 \\theta) \\cr &= 2\\cos^2 \\theta \\end{aligned}Since LHS = RHS, the identity is proven: $1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$.",
+                "<strong>(a) Proving the identity:</strong><br>We expand the right-hand side (RHS) of the identity using the definitions $\\cot \\theta = \\dfrac{\\cos \\theta}{\\sin \\theta}$ and $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$:\\begin{aligned} &\\cot \\theta \\sin 2\\theta \\cr &\\quad = \\left(\\dfrac{\\cos \\theta}{\\sin \\theta}\\right)(2\\sin \\theta \\cos \\theta) \\cr &\\quad = 2\\cos^2 \\theta \\end{aligned}Now we expand the left-hand side (LHS) of the identity using the double angle identity $\\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta$ and the Pythagorean identity $\\sin^2 \\theta = 1 - \\cos^2 \\theta$:\\begin{aligned} 1 + \\cos 2\\theta &= 1 + (\\cos^2 \\theta - \\sin^2 \\theta) \\cr &= 1 + \\cos^2 \\theta\\cr & \\quad - (1 - \\cos^2 \\theta) \\cr &= 2\\cos^2 \\theta \\end{aligned}Since LHS = RHS, the identity is proven: $1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$.",
                 "<strong>(b) Solving the equation:</strong><br>We substitute our proven identity $1 + \\cos 2x = \\cot x \\sin 2x$ into the given equation:\\begin{aligned} &(\\csc^2 x - 5)(1 + \\cos 2x) \\cr &\\quad = 2\\cot^2 x \\sin 2x \\cr &(\\csc^2 x - 5)\\cot x \\sin 2x \\cr &\\quad = 2\\cot^2 x \\sin 2x \\end{aligned}Since $x \\neq 0$ and $-\\dfrac{\\pi}{2} < x < \\dfrac{\\pi}{2}$, we know that $\\sin 2x \\neq 0$ and $\\cot x \\neq 0$. Therefore, we can safely divide both sides of the equation by $\\cot x \\sin 2x$:$$\\csc^2 x - 5 = 2\\cot x$$",
                 "Using the trigonometric identity $\\csc^2 x = 1 + \\cot^2 x$, we rewrite the equation in terms of $\\cot x$:\\begin{aligned} 1 + \\cot^2 x - 5 &= 2\\cot x \\cr \\cot^2 x - 2\\cot x - 4 &= 0 \\end{aligned}Solving this quadratic in $\\cot x$ using the quadratic formula:\\begin{aligned} \\cot x &= \\dfrac{2 \\pm \\sqrt{(-2)^2 - 4(1)(-4)}}{2} \\cr &= \\dfrac{2 \\pm \\sqrt{20}}{2} \\cr &= 1 \\pm \\sqrt{5} \\end{aligned}",
                 "Solving for $x$ by rewriting in terms of $\\tan x$:<br><br>For $\\cot x = 1 + \\sqrt{5}$:\\begin{aligned} \\cot x &\\approx 3.236 \\cr \\tan x &\\approx 0.309 \\cr x &= \\arctan(0.309) \\cr &\\approx 0.300\\text{ rad} \\end{aligned}For $\\cot x = 1 - \\sqrt{5}$:\\begin{aligned} \\cot x &\\approx -1.236 \\cr \\tan x &\\approx -0.809 \\cr x &= \\arctan(-0.809) \\cr &\\approx -0.681\\text{ rad} \\end{aligned}Therefore, the solutions are $x \\approx 0.300\\text{ radians}$ and $x \\approx -0.681\\text{ radians}$.",
@@ -1529,7 +1532,8 @@ window.ALEVEL_QUESTIONS = [
         "major_area": "Trigonometry",
         "topic": "Trigonometric Identities",
         "subtopic": [
-                "Trigonometric Equations"
+                "Proving Identities",
+                "Solving Trigonometric Equations"
         ],
         "img": false,
         "question": "<strong>(a)</strong> Prove that:$$1 - \\cos 2\\theta \\equiv \\tan \\theta \\sin 2\\theta$$<strong>(b)</strong> Hence solve, for $-\\dfrac{\\pi}{2} < x < \\dfrac{\\pi}{2}$, the equation:\\begin{aligned} &(\\sec^2 x - 6)(1 - \\cos 2x) \\cr &\\quad = 2\\tan^2 x \\sin 2x \\end{aligned}Give your answers to 3 decimal places where appropriate.",
@@ -1569,12 +1573,13 @@ window.ALEVEL_QUESTIONS = [
         "major_area": "Trigonometry",
         "topic": "Trigonometric Identities",
         "subtopic": [
-                "Trigonometric Equations"
+                "Proving Identities",
+                "Solving Trigonometric Equations"
         ],
         "img": false,
         "question": "<strong>(a)</strong> Prove that:$$1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$$<strong>(b)</strong> Hence solve, for $-\\dfrac{\\pi}{2} < x < \\dfrac{\\pi}{2}$ where $x \\neq 0$, the equation:\\begin{aligned} &(\\csc^2 x - 3)(1 + \\cos 2x) \\cr &\\quad = 3\\cot^2 x \\sin 2x \\end{aligned}Give your answers to 3 decimal places where appropriate.",
         "steps": [
-                "<strong>(a) Proving the identity:</strong><br>We expand the right-hand side (RHS) of the identity using the definitions $\\cot \\theta = \\dfrac{\\cos \\theta}{\\sin \\theta}$ and $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$:\\begin{aligned} &\\cot \\theta \\sin 2\\theta \\cr &\\quad = \\left(\\dfrac{\\cos \\theta}{\\sin \\theta}\\right)(2\\sin \\theta \\cos \\theta) \\cr &\\quad = 2\\cos^2 \\theta \\end{aligned}Now we expand the left-hand side (LHS) of the identity using the double angle identity $\\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta$ and the Pythagorean identity $\\sin^2 \\theta = 1 - \\cos^2 \\theta$:\\begin{aligned} 1 + \\cos 2\\theta &= 1 + (\\cos^2 \\theta - \\sin^2 \\theta) \\cr &= 1 + \\cos^2 \\theta - (1 - \\cos^2 \\theta) \\cr &= 2\\cos^2 \\theta \\end{aligned}Since LHS = RHS, the identity is proven: $1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$.",
+                "<strong>(a) Proving the identity:</strong><br>We expand the right-hand side (RHS) of the identity using the definitions $\\cot \\theta = \\dfrac{\\cos \\theta}{\\sin \\theta}$ and $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$:\\begin{aligned} &\\cot \\theta \\sin 2\\theta \\cr &\\quad = \\left(\\dfrac{\\cos \\theta}{\\sin \\theta}\\right)(2\\sin \\theta \\cos \\theta) \\cr &\\quad = 2\\cos^2 \\theta \\end{aligned}Now we expand the left-hand side (LHS) of the identity using the double angle identity $\\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta$ and the Pythagorean identity $\\sin^2 \\theta = 1 - \\cos^2 \\theta$:\\begin{aligned} 1 + \\cos 2\\theta &= 1 + (\\cos^2 \\theta - \\sin^2 \\theta) \\cr &= 1 + \\cos^2 \\theta \\cr & \\quad - (1 - \\cos^2 \\theta) \\cr &= 2\\cos^2 \\theta \\end{aligned}Since LHS = RHS, the identity is proven: $1 + \\cos 2\\theta \\equiv \\cot \\theta \\sin 2\\theta$.",
                 "<strong>(b) Solving the equation:</strong><br>We substitute our proven identity $1 + \\cos 2x = \\cot x \\sin 2x$ into the given equation:\\begin{aligned} &(\\csc^2 x - 3)(1 + \\cos 2x) \\cr &\\quad = 3\\cot^2 x \\sin 2x \\cr &(\\csc^2 x - 3)\\cot x \\sin 2x \\cr &\\quad = 3\\cot^2 x \\sin 2x \\end{aligned}Since $x \\neq 0$ and $-\\dfrac{\\pi}{2} < x < \\dfrac{\\pi}{2}$, we know that $\\sin 2x \\neq 0$ and $\\cot x \\neq 0$. Therefore, we can safely divide both sides of the equation by $\\cot x \\sin 2x$:$$\\csc^2 x - 3 = 3\\cot x$$",
                 "Using the trigonometric identity $\\csc^2 x = 1 + \\cot^2 x$, we rewrite the equation in terms of $\\cot x$:\\begin{aligned} 1 + \\cot^2 x - 3 &= 3\\cot x \\cr \\cot^2 x - 3\\cot x - 2 &= 0 \\end{aligned}Solving this quadratic in $\\cot x$ using the quadratic formula:\\begin{aligned} \\cot x &= \\dfrac{3 \\pm \\sqrt{(-3)^2 - 4(1)(-2)}}{2} \\cr &= \\dfrac{3 \\pm \\sqrt{17}}{2} \\end{aligned}",
                 "Solving for $x$ by rewriting in terms of $\\tan x$:<br><br>For $\\cot x = \\dfrac{3 + \\sqrt{17}}{2}$:\\begin{aligned} \\cot x &\\approx 3.562 \\cr \\tan x &\\approx 0.281 \\cr x &= \\arctan(0.281) \\cr &\\approx 0.274\\text{ rad} \\end{aligned}For $\\cot x = \\dfrac{3 - \\sqrt{17}}{2}$:\\begin{aligned} \\cot x &\\approx -0.562 \\cr \\tan x &\\approx -1.781 \\cr x &= \\arctan(-1.781) \\cr &\\approx -1.059\\text{ rad} \\end{aligned}Therefore, the solutions are $x \\approx 0.274\\text{ radians}$ and $x \\approx -1.059\\text{ radians}$.",
@@ -1601,200 +1606,205 @@ window.ALEVEL_QUESTIONS = [
         }
 },
         {
-                "id": "004491",
-                "board": "Pearson Edexcel",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Integration",
-                "topic": "Integration and Logarithms",
-                "subtopic": [
-                        "Differentiation and Logarithms"
-                ],
-                "img": "images/Pure_SVGs/004491.svg",
-                "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = 2x \\ln x, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, 2\\mathrm{e} )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^2 + B$, where $A$ and $B$ are rational constants to be found. Find the values of $A$ and $B$.",
-                "steps": [
-                        "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We first differentiate $y = 2x \\ln x$ using the product rule to find the gradient function of the curve $C$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= 2\\ln x + 2x \\left( \\dfrac{ 1 }{ x } \\right) \\cr &= 2\\ln x + 2 \\end{aligned}<br>At the point $P( \\mathrm{e}, 2\\mathrm{e} )$, the gradient of the tangent is:<br>\\begin{aligned}m_T &= 2\\ln \\mathrm{e} + 2 \\cr&= 2( 1 ) + 2 \\cr&= 4\\end{aligned}<br>Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:<br>$$m_N = -\\dfrac{ 1 }{ 4 }$$<br>Using the point-slope formula, the equation of the normal line $l$ is:<br>\\begin{aligned} y - 2\\mathrm{e} &= -\\dfrac{ 1 }{ 4 }( x - \\mathrm{e} ) \\cr y &= -\\dfrac{ 1 }{ 4 }x + \\dfrac{ 9 }{ 4 }\\mathrm{e} \\end{aligned}",
-                        "<strong>Step 2: Find the boundary points on the $x$-axis:</strong><br>First, find where the curve $C$ cuts the $x$-axis by setting $y = 0$:<br>\\begin{aligned}2x \\ln x &= 0 \\cr\\ln x &= 0 \\cr x &= 1\\end{aligned}<br>Next, find where the normal line $l$ cuts the $x$-axis by setting $y = 0$:<br>\\begin{aligned}-\\dfrac{ 1 }{ 4 }x + \\dfrac{ 9 }{ 4 }\\mathrm{e} &= 0 \\cr\\dfrac{ 1 }{ 4 }x &= \\dfrac{ 9 }{ 4 }\\mathrm{e} \\cr x &= 9\\mathrm{e}\\end{aligned}",
-                        "<strong>Step 3: Split the region $R$ into two areas:</strong><br>The shaded region $R$ is split at $x = \\mathrm{e}$ into two distinct parts:<br><strong>Area 1:</strong> The area under the curve $C$ from $x = 1$ to $x = \\mathrm{e}$:<br>$$\\text{Area}_1 = \\int_{ 1 }^{ \\mathrm{e} } 2x \\ln x \\, \\mathrm{d}x$$<br><strong>Area 2:</strong> The area under the normal line $l$ from $x = \\mathrm{e}$ to $x = 9\\mathrm{e}$. This is a right-angled triangle with base from $x = \\mathrm{e}$ to $x = 9\\mathrm{e}$ (length $8\\mathrm{e}$) and height $y_P = 2\\mathrm{e}$:<br>\\begin{aligned} \\text{Area}_2 &= \\dfrac{ 1 }{ 2 } \\times \\text{base} \\times \\text{height} \\cr &= \\dfrac{ 1 }{ 2 }( 8\\mathrm{e} )( 2\\mathrm{e} ) \\cr &= 8\\mathrm{e}^2 \\end{aligned}",
-                        "<strong>Step 4: Integrate to find $\\text{Area}_1$:</strong><br>Using integration by parts on $\\int 2x \\ln x \\, \\mathrm{d}x$, let $u = \\ln x \\implies \\mathrm{d}u = \\dfrac{ 1 }{ x }\\mathrm{d}x$ and $\\mathrm{d}v = 2x \\, \\mathrm{d}x \\implies v = x^2$:<br>\\begin{aligned} \\int 2x \\ln x \\, \\mathrm{d}x &= x^2 \\ln x - \\int x^2 \\left( \\dfrac{ 1 }{ x } \\right) \\mathrm{d}x \\cr &= x^2 \\ln x - \\int x \\, \\mathrm{d}x \\cr &= x^2 \\ln x - \\dfrac{ 1 }{ 2 }x^2 \\end{aligned}<br>Evaluating this integral over the limits $1$ to $\\mathrm{e}$:<br>\\begin{aligned} \\text{Area}_1 &= \\left[ x^2 \\ln x - \\dfrac{ 1 }{ 2 }x^2 \\right]_{ 1 }^{ \\mathrm{e} } \\cr &= \\left( \\mathrm{e}^2 \\ln \\mathrm{e} - \\dfrac{ 1 }{ 2 }\\mathrm{e}^2 \\right) - \\left( 1^2 \\ln 1 - \\dfrac{ 1 }{ 2 }( 1 )^2 \\right) \\cr &= \\left( \\mathrm{e}^2 - \\dfrac{ 1 }{ 2 }\\mathrm{e}^2 \\right) - \\left( 0 - \\dfrac{ 1 }{ 2 } \\right) \\cr &= \\dfrac{ 1 }{ 2 }\\mathrm{e}^2 + \\dfrac{ 1 }{ 2 } \\end{aligned}",
-                        "<strong>Step 5: Find the total exact area of $R$:</strong><br>Summing the two areas together:<br>\\begin{aligned} \\text{Area}(R) &= \\text{Area}_1 + \\text{Area}_2 \\cr &= \\left( \\dfrac{ 1 }{ 2 }\\mathrm{e}^2 + \\dfrac{ 1 }{ 2 } \\right) + 8\\mathrm{e}^2 \\cr &= \\dfrac{ 17 }{ 2 }\\mathrm{e}^2 + \\dfrac{ 1 }{ 2 } \\end{aligned}<br>Therefore, the constants are $A = \\dfrac{ 17 }{ 2 }$ and $B = \\dfrac{ 1 }{ 2 }$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$A = \\dfrac{ 9 }{ 2 }, B = \\dfrac{ 1 }{ 2 }$",
-                                "feedback": "This error occurs if you use the tangent line gradient ($m = 4$) instead of the perpendicular normal gradient ($m = -1/4$), which yields an incorrect equation for the normal line $l$ and a smaller triangle area."
-                        },
-                        {
-                                "ans": "$A = \\dfrac{ 17 }{ 2 }, B = -\\dfrac{ 1 }{ 2 }$",
-                                "feedback": "This is a sign error on the constant term $B$, which typically occurs if you forget to subtract the lower limit term $-1/2$ during integration by parts."
-                        },
-                        {
-                                "ans": "$A = \\dfrac{ 1 }{ 2 }, B = \\dfrac{ 1 }{ 2 }$",
-                                "feedback": "This error occurs if you completely forget to calculate or include the triangle area under the normal line $l$, only integrating under the curve $C$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Geometry over Calculus",
-                        "content": "While you can find the area under the normal line mathematically by integrating its linear equation over $[ \\mathrm{e}, 9\\mathrm{e} ]$, it is much faster and less error-prone to treat it as a simple right-angled triangle. Its base length is the difference in $x$-coordinates ($9\\mathrm{e} - \\mathrm{e} = 8\\mathrm{e}$) and its vertical height is the $y$-coordinate of $P$ ($2\\mathrm{e}$). This basic geometric shortcut saves precious time and minimizes algebraic slips!"
+        "id": "004491",
+        "board": "Pearson Edexcel",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Integration",
+        "topic": "Integration and Logarithms",
+        "subtopic": [
+                "Differentiation and Logarithms"
+        ],
+        "img": "images/Pure_SVGs/004491.svg",
+        "question": "The diagram shows a sketch of part of the curve $C$ with equation:$$y = 2x \\ln x, \\quad x > 0$$The line $l$ is the normal to $C$ at the point $P(\\mathrm{e}, 2\\mathrm{e})$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^2 + B$, where $A$ and $B$ are rational constants to be found. Find the values of $A$ and $B$.",
+        "steps": [
+                "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We first differentiate $y = 2x \\ln x$ using the product rule to find the gradient function of the curve $C$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 2\\ln x + 2x\\left(\\dfrac{1}{x}\\right) \\cr &= 2\\ln x + 2 \\end{aligned}At the point $P(\\mathrm{e}, 2\\mathrm{e})$, the gradient of the tangent is:\\begin{aligned} m_T &= 2\\ln \\mathrm{e} + 2 \\cr &= 2(1) + 2 \\cr &= 4 \\end{aligned}Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:$$m_N = -\\dfrac{1}{4}$$Using the point-slope formula, the equation of the normal line $l$ is:\\begin{aligned} y - 2\\mathrm{e} &= -\\dfrac{1}{4}(x - \\mathrm{e}) \\cr y &= -\\dfrac{1}{4}x + \\dfrac{9}{4}\\mathrm{e} \\end{aligned}",
+                "<strong>Step 2: Find the boundary points on the $x$-axis:</strong><br>First, find where the curve $C$ cuts the $x$-axis by setting $y = 0$:\\begin{aligned} 2x \\ln x &= 0 \\cr \\ln x &= 0 \\cr x &= 1 \\end{aligned}Next, find where the normal line $l$ cuts the $x$-axis by setting $y = 0$:\\begin{aligned} -\\dfrac{1}{4}x + \\dfrac{9}{4}\\mathrm{e} &= 0 \\cr \\dfrac{1}{4}x &= \\dfrac{9}{4}\\mathrm{e} \\cr x &= 9\\mathrm{e} \\end{aligned}",
+                "<strong>Step 3: Split the region $R$ into two areas:</strong><br>The shaded region $R$ is split at $x = \\mathrm{e}$ into two distinct parts:<br><br><strong>Area 1:</strong> The area under the curve $C$ from $x = 1$ to $x = \\mathrm{e}$:$$\\text{Area}_1 = \\int_1^{\\mathrm{e}} 2x \\ln x \\text{d}x$$<strong>Area 2:</strong> The area under the normal line $l$ from $x = \\mathrm{e}$ to $x = 9\\mathrm{e}$. This is a right-angled triangle with base from $x = \\mathrm{e}$ to $x = 9\\mathrm{e}$ (length $8\\mathrm{e}$) and height $y_P = 2\\mathrm{e}$:\\begin{aligned} \\text{Area}_2 &= \\dfrac{1}{2} \\times \\text{base} \\times \\text{height} \\cr &= \\dfrac{1}{2}(8\\mathrm{e})(2\\mathrm{e}) \\cr &= 8\\mathrm{e}^2 \\end{aligned}",
+                "<strong>Step 4: Integrate to find $\\text{Area}_1$:</strong><br>Using integration by parts on $\\int 2x \\ln x \\text{d}x$, let $u = \\ln x \\implies \\text{d}u = \\dfrac{1}{x}\\text{d}x$ and $\\text{d}v = 2x \\text{d}x \\implies v = x^2$:\\begin{aligned} &\\int 2x \\ln x \\text{d}x \\cr &\\quad = x^2 \\ln x - \\int x^2\\left(\\dfrac{1}{x}\\right)\\text{d}x \\cr &\\quad = x^2 \\ln x - \\int x \\text{d}x \\cr &\\quad = x^2 \\ln x - \\dfrac{1}{2}x^2 \\end{aligned}Evaluating this integral over the limits $1$ to $\\mathrm{e}$:\\begin{aligned} &\\text{Area}_1 \\cr &\\quad = \\left[ x^2 \\ln x - \\dfrac{1}{2}x^2 \\right]_1^{\\mathrm{e}} \\cr &\\quad = \\left(\\mathrm{e}^2 \\ln \\mathrm{e} - \\dfrac{1}{2}\\mathrm{e}^2\\right) \\cr &\\qquad - \\left(1^2 \\ln 1 - \\dfrac{1}{2}(1)^2\\right) \\cr &\\quad = \\left(\\mathrm{e}^2 - \\dfrac{1}{2}\\mathrm{e}^2\\right) - \\left(-\\dfrac{1}{2}\\right) \\cr &\\quad = \\dfrac{1}{2}\\mathrm{e}^2 + \\dfrac{1}{2} \\end{aligned}",
+                "<strong>Step 5: Find the total exact area of $R$:</strong><br>Summing the two areas together:\\begin{aligned} \\text{Area}(R) &= \\text{Area}_1 + \\text{Area}_2 \\cr &= \\left(\\dfrac{1}{2}\\mathrm{e}^2 + \\dfrac{1}{2}\\right) + 8\\mathrm{e}^2 \\cr &= \\dfrac{17}{2}\\mathrm{e}^2 + \\dfrac{1}{2} \\end{aligned}Therefore, the constants are $A = \\dfrac{17}{2}$ and $B = \\dfrac{1}{2}$.",
+                "<strong>Final Answer</strong>\\begin{aligned} A &= \\dfrac{17}{2} \\cr B &= \\dfrac{1}{2} \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "\\begin{aligned} A &= \\dfrac{9}{2} \\cr B &= \\dfrac{1}{2} \\end{aligned}",
+                        "feedback": "This error occurs if you use the tangent line gradient ($m = 4$) instead of the perpendicular normal gradient ($m = -1/4$), which yields an incorrect equation for the normal line $l$ and a smaller triangle area."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= \\dfrac{17}{2} \\cr B &= -\\dfrac{1}{2} \\end{aligned}",
+                        "feedback": "This is a sign error on the constant term $B$, which typically occurs if you forget to subtract the lower limit term $-1/2$ during integration by parts."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= \\dfrac{1}{2} \\cr B &= \\dfrac{1}{2} \\end{aligned}",
+                        "feedback": "This error occurs if you completely forget to calculate or include the triangle area under the normal line $l$, only integrating under the curve $C$."
                 }
-        },
-        {
-                "id": "004492",
-                "board": "Pearson Edexcel",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Integration",
-                "topic": "Integration and Logarithms",
-                "subtopic": [
-                        "Differentiation and Logarithms"
-                ],
-                "img": "images/Pure_SVGs/004492.svg",
-                "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = x^2 \\ln x, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, \\mathrm{e}^2 )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^5 + B\\mathrm{e}^3 + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
-                "steps": [
-                        "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We differentiate $y = x^2 \\ln x$ using the product rule to find the gradient function of the curve $C$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= 2x \\ln x + x^2 \\left( \\dfrac{ 1 }{ x } \\right) \\cr &= 2x \\ln x + x \\end{aligned}<br>At the point $P( \\mathrm{e}, \\mathrm{e}^2 )$, the gradient of the tangent is:<br>\\begin{aligned}m_T &= 2\\mathrm{e} \\ln \\mathrm{e} + \\mathrm{e} \\cr&= 2\\mathrm{e}( 1 ) + \\mathrm{e} \\cr&= 3\\mathrm{e}\\end{aligned}<br>Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:<br>$$m_N = -\\dfrac{ 1 }{ 3\\mathrm{e} }$$<br>The equation of the normal line $l$ is:<br>\\begin{aligned} y - \\mathrm{e}^2 &= -\\dfrac{ 1 }{ 3\\mathrm{e} }( x - \\mathrm{e} ) \\cr y &= -\\dfrac{ 1 }{ 3\\mathrm{e} }x + \\dfrac{ 1 }{ 3 } + \\mathrm{e}^2 \\end{aligned}",
-                        "<strong>Step 2: Find the boundary points on the $x$-axis:</strong><br>First, find where the curve $C$ cuts the $x$-axis by setting $y = 0$:<br>\\begin{aligned}x^2 \\ln x &= 0 \\cr\\ln x &= 0 \\cr x &= 1\\end{aligned}<br>Next, find where the normal line $l$ cuts the $x$-axis by setting $y = 0$:<br>\\begin{aligned}-\\dfrac{ 1 }{ 3\\mathrm{e} }x + \\dfrac{ 1 }{ 3 } + \\mathrm{e}^2 &= 0 \\cr\\dfrac{ 1 }{ 3\\mathrm{e} }x &= \\mathrm{e}^2 + \\dfrac{ 1 }{ 3 } \\cr x &= 3\\mathrm{e}^3 + \\mathrm{e}\\end{aligned}",
-                        "<strong>Step 3: Split the region $R$ into two areas:</strong><br>The shaded region $R$ is split at $x = \\mathrm{e}$ into two distinct parts:<br><strong>Area 1:</strong> The area under the curve $C$ from $x = 1$ to $x = \\mathrm{e}$:<br>$$\\text{Area}_1 = \\int_{ 1 }^{ \\mathrm{e} } x^2 \\ln x \\, \\mathrm{d}x$$<br><strong>Area 2:</strong> The area under the normal line $l$ from $x = \\mathrm{e}$ to $x = 3\\mathrm{e}^3 + \\mathrm{e}$. This is a right-angled triangle with base from $x = \\mathrm{e}$ to $x = 3\\mathrm{e}^3 + \\mathrm{e}$ (length $3\\mathrm{e}^3$) and height $y_P = \\mathrm{e}^2$:<br>\\begin{aligned} \\text{Area}_2 &= \\dfrac{ 1 }{ 2 } \\times \\text{base} \\times \\text{height} \\cr &= \\dfrac{ 1 }{ 2 }( 3\\mathrm{e}^3 )( \\mathrm{e}^2 ) \\cr &= \\dfrac{ 3 }{ 2 }\\mathrm{e}^5 \\end{aligned}",
-                        "<strong>Step 4: Integrate to find $\\text{Area}_1$:</strong><br>Using integration by parts on $\\int x^2 \\ln x \\, \\mathrm{d}x$, let $u = \\ln x \\implies \\mathrm{d}u = \\dfrac{ 1 }{ x }\\mathrm{d}x$ and $\\mathrm{d}v = x^2 \\, \\mathrm{d}x \\implies v = \\dfrac{ 1 }{ 3 }x^3$:<br>\\begin{aligned} \\int x^2 \\ln x \\, \\mathrm{d}x &= \\dfrac{ 1 }{ 3 }x^3 \\ln x - \\int \\dfrac{ 1 }{ 3 }x^3 \\left( \\dfrac{ 1 }{ x } \\right) \\mathrm{d}x \\cr &= \\dfrac{ 1 }{ 3 }x^3 \\ln x - \\dfrac{ 1 }{ 3 }\\int x^2 \\, \\mathrm{d}x \\cr &= \\dfrac{ 1 }{ 3 }x^3 \\ln x - \\dfrac{ 1 }{ 9 }x^3 \\end{aligned}<br>Evaluating this integral over the limits $1$ to $\\mathrm{e}$:<br>\\begin{aligned} \\text{Area}_1 &= \\left[ \\dfrac{ 1 }{ 3 }x^3 \\ln x - \\dfrac{ 1 }{ 9 }x^3 \\right]_{ 1 }^{ \\mathrm{e} } \\cr &= \\left( \\dfrac{ 1 }{ 3 }\\mathrm{e}^3 \\ln \\mathrm{e} - \\dfrac{ 1 }{ 9 }\\mathrm{e}^3 \\right) - \\left( 0 - \\dfrac{ 1 }{ 9 } \\right) \\cr &= \\dfrac{ 2 }{ 9 }\\mathrm{e}^3 + \\dfrac{ 1 }{ 9 } \\end{aligned}",
-                        "<strong>Step 5: Find the total exact area of $R$:</strong><br>Summing the two areas together:<br>\\begin{aligned} \\text{Area}(R) &= \\text{Area}_1 + \\text{Area}_2 \\cr &= \\left( \\dfrac{ 2 }{ 9 }\\mathrm{e}^3 + \\dfrac{ 1 }{ 9 } \\right) + \\dfrac{ 3 }{ 2 }\\mathrm{e}^5 \\cr &= \\dfrac{ 3 }{ 2 }\\mathrm{e}^5 + \\dfrac{ 2 }{ 9 }\\mathrm{e}^3 + \\dfrac{ 1 }{ 9 } \\end{aligned}<br>Therefore, the constants are $A = \\dfrac{ 3 }{ 2 }$, $B = \\dfrac{ 2 }{ 9 }$, and $C = \\dfrac{ 1 }{ 9 }$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$A = \\dfrac{ 3 }{ 2 }, B = \\dfrac{ 2 }{ 9 }, C = -\\dfrac{ 1 }{ 9 }$",
-                                "feedback": "This is a sign error on the constant term $C$, which typically occurs if you forget to subtract the lower limit term $-1/9$ during integration by parts."
-                        },
-                        {
-                                "ans": "$A = \\dfrac{ 1 }{ 2 }, B = \\dfrac{ 2 }{ 9 }, C = \\dfrac{ 1 }{ 9 }$",
-                                "feedback": "This error occurs if you make a calculation slip when computing the triangle area, such as omitting the factor of $3$ in the base length $3\\mathrm{e}^3$."
-                        },
-                        {
-                                "ans": "$A = \\dfrac{ 3 }{ 2 }, B = \\dfrac{ 4 }{ 9 }, C = \\dfrac{ 1 }{ 9 }$",
-                                "feedback": "This occurs if you make an integration error, such as writing the integrated term as $\\dfrac{ 1 }{ 3 }x^3 \\ln x - \\dfrac{ 2 }{ 9 }x^3$ instead of subtracting $\\dfrac{ 1 }{ 9 }x^3$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Product Rule Coefficient Check",
-                        "content": "When integrating $x^n \\ln x$ by parts, the integrated term always takes the form $\\dfrac{ x^{ n+1 } }{ n+1 } \\ln x - \\dfrac{ x^{ n+1 } }{ ( n+1 )^2 }$. For $n = 2$, this yields a denominator of $9$ on the second term. Watch out for simple fraction arithmetic slips when evaluating the upper and lower limits!"
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: Geometry over Calculus",
+                "content": "While you can find the area under the normal line mathematically by integrating its linear equation over $[\\mathrm{e}, 9\\mathrm{e}]$, it is much faster and less error-prone to treat it as a simple right-angled triangle. Its base length is the difference in $x$-coordinates ($9\\mathrm{e} - \\mathrm{e} = 8\\mathrm{e}$) and its vertical height is the $y$-coordinate of $P$ ($2\\mathrm{e}$). This basic geometric shortcut saves precious time and minimizes algebraic slips!"
+        }
+},
+{
+        "id": "004492",
+        "board": "Pearson Edexcel",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Integration",
+        "topic": "Integration and Logarithms",
+        "subtopic": [
+                "Differentiation and Logarithms"
+        ],
+        "img": "images/Pure_SVGs/004492.svg",
+        "question": "The diagram shows a sketch of part of the curve $C$ with equation:$$y = x^2 \\ln x, \\quad x > 0$$The line $l$ is the normal to $C$ at the point $P(\\mathrm{e}, \\mathrm{e}^2)$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^5 + B\\mathrm{e}^3 + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
+        "steps": [
+                "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We differentiate $y = x^2 \\ln x$ using the product rule to find the gradient function of the curve $C$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 2x \\ln x + x^2\\left(\\dfrac{1}{x}\\right) \\cr &= 2x \\ln x + x \\end{aligned}At the point $P(\\mathrm{e}, \\mathrm{e}^2)$, the gradient of the tangent is:\\begin{aligned} m_T &= 2\\mathrm{e} \\ln \\mathrm{e} + \\mathrm{e} \\cr &= 2\\mathrm{e}(1) + \\mathrm{e} \\cr &= 3\\mathrm{e} \\end{aligned}Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:$$m_N = -\\dfrac{1}{3\\mathrm{e}}$$The equation of the normal line $l$ is:\\begin{aligned} y - \\mathrm{e}^2 &= -\\dfrac{1}{3\\mathrm{e}}(x - \\mathrm{e}) \\cr y &= -\\dfrac{1}{3\\mathrm{e}}x + \\dfrac{1}{3} + \\mathrm{e}^2 \\end{aligned}",
+                "<strong>Step 2: Find the boundary points on the $x$-axis:</strong><br>First, find where the curve $C$ cuts the $x$-axis by setting $y = 0$:\\begin{aligned} x^2 \\ln x &= 0 \\cr \\ln x &= 0 \\cr x &= 1 \\end{aligned}Next, find where the normal line $l$ cuts the $x$-axis by setting $y = 0$:\\begin{aligned} -\\dfrac{1}{3\\mathrm{e}}x + \\dfrac{1}{3} + \\mathrm{e}^2 &= 0 \\cr \\dfrac{1}{3\\mathrm{e}}x &= \\mathrm{e}^2 + \\dfrac{1}{3} \\cr x &= 3\\mathrm{e}^3 + \\mathrm{e} \\end{aligned}",
+                "<strong>Step 3: Split the region $R$ into two areas:</strong><br>The shaded region $R$ is split at $x = \\mathrm{e}$ into two distinct parts:<br><br><strong>Area 1:</strong> The area under the curve $C$ from $x = 1$ to $x = \\mathrm{e}$:$$\\text{Area}_1 = \\int_1^{\\mathrm{e}} x^2 \\ln x \\text{d}x$$<strong>Area 2:</strong> The area under the normal line $l$ from $x = \\mathrm{e}$ to $x = 3\\mathrm{e}^3 + \\mathrm{e}$. This is a right-angled triangle with base from $x = \\mathrm{e}$ to $x = 3\\mathrm{e}^3 + \\mathrm{e}$ (length $3\\mathrm{e}^3$) and height $y_P = \\mathrm{e}^2$:\\begin{aligned} \\text{Area}_2 &= \\dfrac{1}{2} \\times \\text{base} \\times \\text{height} \\cr &= \\dfrac{1}{2}(3\\mathrm{e}^3)(\\mathrm{e}^2) \\cr &= \\dfrac{3}{2}\\mathrm{e}^5 \\end{aligned}",
+                "<strong>Step 4: Integrate to find $\\text{Area}_1$:</strong><br>Using integration by parts on $\\int x^2 \\ln x \\text{d}x$, let $u = \\ln x \\implies \\text{d}u = \\dfrac{1}{x}\\text{d}x$ and $\\text{d}v = x^2 \\text{d}x \\implies v = \\dfrac{1}{3}x^3$:\\begin{aligned} &\\int x^2 \\ln x \\text{d}x \\cr &\\quad = \\dfrac{1}{3}x^3 \\ln x - \\int \\dfrac{1}{3}x^3\\left(\\dfrac{1}{x}\\right)\\text{d}x \\cr &\\quad = \\dfrac{1}{3}x^3 \\ln x - \\dfrac{1}{3}\\int x^2 \\text{d}x \\cr &\\quad = \\dfrac{1}{3}x^3 \\ln x - \\dfrac{1}{9}x^3 \\end{aligned}Evaluating this integral over the limits $1$ to $\\mathrm{e}$:\\begin{aligned} &\\text{Area}_1 \\cr &\\quad = \\left[ \\dfrac{1}{3}x^3 \\ln x - \\dfrac{1}{9}x^3 \\right]_1^{\\mathrm{e}} \\cr &\\quad = \\left(\\dfrac{1}{3}\\mathrm{e}^3 \\ln \\mathrm{e} - \\dfrac{1}{9}\\mathrm{e}^3\\right) \\cr &\\qquad - \\left(0 - \\dfrac{1}{9}\\right) \\cr &\\quad = \\dfrac{2}{9}\\mathrm{e}^3 + \\dfrac{1}{9} \\end{aligned}",
+                "<strong>Step 5: Find the total exact area of $R$:</strong><br>Summing the two areas together:\\begin{aligned} \\text{Area}(R) &= \\text{Area}_1 + \\text{Area}_2 \\cr &= \\left(\\dfrac{2}{9}\\mathrm{e}^3 + \\dfrac{1}{9}\\right) + \\dfrac{3}{2}\\mathrm{e}^5 \\cr &= \\dfrac{3}{2}\\mathrm{e}^5 + \\dfrac{2}{9}\\mathrm{e}^3 + \\dfrac{1}{9} \\end{aligned}Therefore, the constants are $A = \\dfrac{3}{2}$, $B = \\dfrac{2}{9}$, and $C = \\dfrac{1}{9}$.",
+                "<strong>Final Answer</strong>\\begin{aligned} A &= \\dfrac{3}{2} \\cr B &= \\dfrac{2}{9} \\cr C &= \\dfrac{1}{9} \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "\\begin{aligned} A &= \\dfrac{3}{2} \\cr B &= \\dfrac{2}{9} \\cr C &= -\\dfrac{1}{9} \\end{aligned}",
+                        "feedback": "This is a sign error on the constant term $C$, which typically occurs if you forget to subtract the lower limit term $-1/9$ during integration by parts."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= \\dfrac{1}{2} \\cr B &= \\dfrac{2}{9} \\cr C &= \\dfrac{1}{9} \\end{aligned}",
+                        "feedback": "This error occurs if you make a calculation slip when computing the triangle area, such as omitting the factor of $3$ in the base length $3\\mathrm{e}^3$."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= \\dfrac{3}{2} \\cr B &= \\dfrac{4}{9} \\cr C &= \\dfrac{1}{9} \\end{aligned}",
+                        "feedback": "This occurs if you make an integration error, such as writing the integrated term as $\\dfrac{1}{3}x^3 \\ln x - \\dfrac{2}{9}x^3$ instead of subtracting $\\dfrac{1}{9}x^3$."
                 }
-        },
-        {
-                "id": "004493",
-                "board": "Pearson Edexcel",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Integration",
-                "topic": "Integration and Logarithms",
-                "subtopic": [
-                        "Differentiation and Logarithms"
-                ],
-                "img": "images/Pure_SVGs/004493.svg",
-                "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = 3\\sqrt{x} \\ln x, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, 3\\sqrt{ \\mathrm{e} } )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^{1/2} + B\\mathrm{e}^{3/2} + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
-                "steps": [
-                        "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We first differentiate $y = 3x^{ 1/2 } \\ln x$ using the product rule to find the gradient function of the curve $C$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= \\dfrac{ 3 }{ 2 }x^{ -1/2 } \\ln x + 3x^{ 1/2 } \\left( \\dfrac{ 1 }{ x } \\right) \\cr &= \\dfrac{ 3\\ln x + 6 }{ 2\\sqrt{ x } } \\end{aligned}<br>At the point $P( \\mathrm{e}, 3\\sqrt{ \\mathrm{e} } )$, the gradient of the tangent is:<br>\\begin{aligned}m_T &= \\dfrac{ 3\\ln \\mathrm{e} + 6 }{ 2\\sqrt{ \\mathrm{e} } } \\cr&= \\dfrac{ 9 }{ 2\\sqrt{ \\mathrm{e} } }\\end{aligned}<br>Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:<br>$$m_N = -\\dfrac{ 2\\sqrt{ \\mathrm{e} } }{ 9 }$$<br>The equation of the normal line $l$ is:<br>\\begin{aligned} y - 3\\sqrt{ \\mathrm{e} } &= -\\dfrac{ 2\\sqrt{ \\mathrm{e} } }{ 9 }( x - \\mathrm{e} ) \\cr y &= -\\dfrac{ 2\\sqrt{ \\mathrm{e} } }{ 9 }x + \\dfrac{ 2\\mathrm{e}\\sqrt{ \\mathrm{e} } }{ 9 } + 3\\sqrt{ \\mathrm{e} } \\end{aligned}",
-                        "<strong>Step 2: Find the boundary points on the $x$-axis:</strong><br>First, find where the curve $C$ cuts the $x$-axis by setting $y = 0$:<br>\\begin{aligned}3\\sqrt{ x } \\ln x &= 0 \\cr\\ln x &= 0 \\cr x &= 1\\end{aligned}<br>Next, find where the normal line $l$ cuts the $x$-axis by setting $y = 0$:<br>\\begin{aligned}-\\dfrac{ 2\\sqrt{ \\mathrm{e} } }{ 9 }x + \\dfrac{ 2\\mathrm{e}\\sqrt{ \\mathrm{e} } }{ 9 } + 3\\sqrt{ \\mathrm{e} } &= 0 \\cr\\dfrac{ 2\\sqrt{ \\mathrm{e} } }{ 9 }x &= \\dfrac{ 2\\mathrm{e}\\sqrt{ \\mathrm{e} } + 27\\sqrt{ \\mathrm{e} } }{ 9 } \\cr x &= \\mathrm{e} + \\dfrac{ 27 }{ 2 }\\end{aligned}",
-                        "<strong>Step 3: Split the region $R$ into two areas:</strong><br>The shaded region $R$ is split at $x = \\mathrm{e}$ into two distinct parts:<br><strong>Area 1:</strong> The area under the curve $C$ from $x = 1$ to $x = \\mathrm{e}$:<br>$$\\text{Area}_1 = \\int_{ 1 }^{ \\mathrm{e} } 3\\sqrt{ x } \\ln x \\, \\mathrm{d}x$$<br><strong>Area 2:</strong> The area under the normal line $l$ from $x = \\mathrm{e}$ to $x = \\mathrm{e} + \\dfrac{ 27 }{ 2 }$. This is a right-angled triangle with base from $x = \\mathrm{e}$ to $x = \\mathrm{e} + \\dfrac{ 27 }{ 2 }$ (length $\\dfrac{ 27 }{ 2 }$) and height $y_P = 3\\sqrt{ \\mathrm{e} }$:<br>\\begin{aligned} \\text{Area}_2 &= \\dfrac{ 1 }{ 2 } \\times \\text{base} \\times \\text{height} \\cr &= \\dfrac{ 1 }{ 2 }\\left( \\dfrac{ 27 }{ 2 } \\right)( 3\\sqrt{ \\mathrm{e} } ) \\cr &= \\dfrac{ 81 }{ 4 }\\mathrm{e}^{ 1/2 } \\end{aligned}",
-                        "<strong>Step 4: Integrate to find $\\text{Area}_1$:</strong><br>Using integration by parts on $\\int 3x^{ 1/2 } \\ln x \\, \\mathrm{d}x$, let $u = \\ln x \\implies \\mathrm{d}u = \\dfrac{ 1 }{ x }\\mathrm{d}x$ and $\\mathrm{d}v = 3x^{ 1/2 } \\, \\mathrm{d}x \\implies v = 2x^{ 3/2 }$:<br>\\begin{aligned} \\int 3x^{ 1/2 } \\ln x \\, \\mathrm{d}x &= 2x^{ 3/2 } \\ln x - \\int 2x^{ 3/2 } \\left( \\dfrac{ 1 }{ x } \\right) \\mathrm{d}x \\cr &= 2x^{ 3/2 } \\ln x - \\int 2x^{ 1/2 } \\, \\mathrm{d}x \\cr &= 2x^{ 3/2 } \\ln x - \\dfrac{ 4 }{ 3 }x^{ 3/2 } \\end{aligned}<br>Evaluating this integral over the limits $1$ to $\\mathrm{e}$:<br>\\begin{aligned} \\text{Area}_1 &= \\left[ 2x^{ 3/2 } \\ln x - \\dfrac{ 4 }{ 3 }x^{ 3/2 } \\right]_{ 1 }^{ \\mathrm{e} } \\cr &= \\left( 2\\mathrm{e}^{ 3/2 } \\ln \\mathrm{e} - \\dfrac{ 4 }{ 3 }\\mathrm{e}^{ 3/2 } \\right) - \\left( 0 - \\dfrac{ 4 }{ 3 } \\right) \\cr &= \\dfrac{ 2 }{ 3 }\\mathrm{e}^{ 3/2 } + \\dfrac{ 4 }{ 3 } \\end{aligned}",
-                        "<strong>Step 5: Find the total exact area of $R$:</strong><br>Summing the two areas together:<br>\\begin{aligned} \\text{Area}(R) &= \\text{Area}_1 + \\text{Area}_2 \\cr &= \\left( \\dfrac{ 2 }{ 3 }\\mathrm{e}^{ 3/2 } + \\dfrac{ 4 }{ 3 } \\right) + \\dfrac{ 81 }{ 4 }\\mathrm{e}^{ 1/2 } \\cr &= \\dfrac{ 81 }{ 4 }\\mathrm{e}^{ 1/2 } + \\dfrac{ 2 }{ 3 }\\mathrm{e}^{ 3/2 } + \\dfrac{ 4 }{ 3 } \\end{aligned}<br>Therefore, the constants are $A = \\dfrac{ 81 }{ 4 }$, $B = \\dfrac{ 2 }{ 3 }$, and $C = \\dfrac{ 4 }{ 3 }$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$A = \\dfrac{ 81 }{ 4 }, B = \\dfrac{ 2 }{ 3 }, C = -\\dfrac{ 4 }{ 3 }$",
-                                "feedback": "This is a sign error on the constant term $C$, which occurs if you forget to subtract the lower limit term $-4/3$ during the integration."
-                        },
-                        {
-                                "ans": "$A = \\dfrac{ 27 }{ 4 }, B = \\dfrac{ 2 }{ 3 }, C = \\dfrac{ 4 }{ 3 }$",
-                                "feedback": "This occurs if you forget the height of the triangle ($3\\sqrt{\\mathrm{e}}$) and use $1$ instead, leading to an incorrect coefficient for $A$."
-                        },
-                        {
-                                "ans": "$A = \\dfrac{ 81 }{ 4 }, B = \\dfrac{ 4 }{ 3 }, C = \\dfrac{ 4 }{ 3 }$",
-                                "feedback": "This is an integration error, likely from failing to multiply the integrated term by $2/3$ when integrating $2x^{1/2}$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Head Teacher's Eye: Fractional Exponents Integration",
-                        "content": "When integrating terms with fractional powers like $3x^{ 1/2 } \\ln x$ by parts, do not get intimidated by the fractional index. Treat $\\mathrm{d}v = 3x^{ 1/2 } \\mathrm{d}x$ just like any power. The antiderivative is $3 \\times \\dfrac{ x^{ 3/2 } }{ 3/2 } = 2x^{ 3/2 }$. Carrying this clean coefficient through makes the subsequent integral of $v \\mathrm{d}u$ much easier to solve!"
+        ],
+        "bradley_insight": {
+                "type": "caution",
+                "title": "The Head Teacher's Eye: Product Rule Coefficient Check",
+                "content": "When integrating $x^n \\ln x$ by parts, the integrated term always takes the form:\\begin{aligned} &\\dfrac{x^{n+1}}{n+1}\\ln x \\cr &\\quad - \\dfrac{x^{n+1}}{(n+1)^2} \\end{aligned}For $n = 2$, this yields a denominator of $9$ on the second term. Watch out for simple fraction arithmetic slips when evaluating the upper and lower limits!"
+        }
+},
+{
+        "id": "004493",
+        "board": "Pearson Edexcel",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Integration",
+        "topic": "Integration and Logarithms",
+        "subtopic": [
+                "Differentiation and Logarithms"
+        ],
+        "img": "images/Pure_SVGs/004493.svg",
+        "question": "The diagram shows a sketch of part of the curve $C$ with equation:$$y = 3\\sqrt{x} \\ln x, \\quad x > 0$$The line $l$ is the normal to $C$ at the point $P(\\mathrm{e}, 3\\sqrt{\\mathrm{e}})$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^{1/2} + B\\mathrm{e}^{3/2} + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
+        "steps": [
+                "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We first differentiate $y = 3x^{1/2} \\ln x$ using the product rule to find the gradient function of the curve $C$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{3}{2}x^{-1/2} \\ln x + 3x^{1/2}\\left(\\dfrac{1}{x}\\right) \\cr &= \\dfrac{3\\ln x + 6}{2\\sqrt{x}} \\end{aligned}At the point $P(\\mathrm{e}, 3\\sqrt{\\mathrm{e}})$, the gradient of the tangent is:\\begin{aligned} m_T &= \\dfrac{3\\ln \\mathrm{e} + 6}{2\\sqrt{\\mathrm{e}}} \\cr &= \\dfrac{9}{2\\sqrt{\\mathrm{e}}} \\end{aligned}Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:$$m_N = -\\dfrac{2\\sqrt{\\mathrm{e}}}{9}$$The equation of the normal line $l$ is:\\begin{aligned} &y - 3\\sqrt{\\mathrm{e}} \\cr &\\quad = -\\dfrac{2\\sqrt{\\mathrm{e}}}{9}(x - \\mathrm{e}) \\cr &y = -\\dfrac{2\\sqrt{\\mathrm{e}}}{9}x \\cr &\\qquad + \\dfrac{2\\mathrm{e}\\sqrt{\\mathrm{e}}}{9} + 3\\sqrt{\\mathrm{e}} \\end{aligned}",
+                "<strong>Step 2: Find the boundary points on the $x$-axis:</strong><br>First, find where the curve $C$ cuts the $x$-axis by setting $y = 0$:\\begin{aligned} 3\\sqrt{x} \\ln x &= 0 \\cr \\ln x &= 0 \\cr x &= 1 \\end{aligned}Next, find where the normal line $l$ cuts the $x$-axis by setting $y = 0$:\\begin{aligned} &-\\dfrac{2\\sqrt{\\mathrm{e}}}{9}x + \\dfrac{2\\mathrm{e}\\sqrt{\\mathrm{e}}}{9} + 3\\sqrt{\\mathrm{e}} = 0 \\cr &\\quad \\dfrac{2\\sqrt{\\mathrm{e}}}{9}x = \\dfrac{2\\mathrm{e}\\sqrt{\\mathrm{e}} + 27\\sqrt{\\mathrm{e}}}{9} \\cr &\\quad x = \\mathrm{e} + \\dfrac{27}{2} \\end{aligned}",
+                "<strong>Step 3: Split the region $R$ into two areas:</strong><br>The shaded region $R$ is split at $x = \\mathrm{e}$ into two distinct parts:<br><br><strong>Area 1:</strong> The area under the curve $C$ from $x = 1$ to $x = \\mathrm{e}$:$$\\text{Area}_1 = \\int_1^{\\mathrm{e}} 3\\sqrt{x} \\ln x \\text{d}x$$<strong>Area 2:</strong> The area under the normal line $l$ from $x = \\mathrm{e}$ to $x = \\mathrm{e} + \\dfrac{27}{2}$. This is a right-angled triangle with base from $x = \\mathrm{e}$ to $x = \\mathrm{e} + \\dfrac{27}{2}$ (length $\\dfrac{27}{2}$) and height $y_P = 3\\sqrt{\\mathrm{e}}$:\\begin{aligned} \\text{Area}_2 &= \\dfrac{1}{2} \\times \\text{base} \\times \\text{height} \\cr &= \\dfrac{1}{2}\\left(\\dfrac{27}{2}\\right)(3\\sqrt{\\mathrm{e}}) \\cr &= \\dfrac{81}{4}\\mathrm{e}^{1/2} \\end{aligned}",
+                "<strong>Step 4: Integrate to find $\\text{Area}_1$:</strong><br>Using integration by parts on $\\int 3x^{1/2} \\ln x \\text{d}x$, let $u = \\ln x \\implies \\text{d}u = \\dfrac{1}{x}\\text{d}x$ and $\\text{d}v = 3x^{1/2} \\text{d}x \\implies v = 2x^{3/2}$:\\begin{aligned} &\\int 3x^{1/2} \\ln x \\text{d}x \\cr &\\quad = 2x^{3/2} \\ln x - \\int 2x^{3/2}\\left(\\dfrac{1}{x}\\right)\\text{d}x \\cr &\\quad = 2x^{3/2} \\ln x - \\int 2x^{1/2} \\text{d}x \\cr &\\quad = 2x^{3/2} \\ln x - \\dfrac{4}{3}x^{3/2} \\end{aligned}Evaluating this integral over the limits $1$ to $\\mathrm{e}$:\\begin{aligned} &\\text{Area}_1 \\cr &\\quad = \\left[ 2x^{3/2} \\ln x - \\dfrac{4}{3}x^{3/2} \\right]_1^{\\mathrm{e}} \\cr &\\quad = \\left(2\\mathrm{e}^{3/2} \\ln \\mathrm{e} - \\dfrac{4}{3}\\mathrm{e}^{3/2}\\right) \\cr &\\qquad - \\left(0 - \\dfrac{4}{3}\\right) \\cr &\\quad = \\dfrac{2}{3}\\mathrm{e}^{3/2} + \\dfrac{4}{3} \\end{aligned}",
+                "<strong>Step 5: Find the total exact area of $R$:</strong><br>Summing the two areas together:\\begin{aligned} &\\text{Area}(R) \\cr &\\quad = \\text{Area}_1 + \\text{Area}_2 \\cr &\\quad = \\left(\\dfrac{2}{3}\\mathrm{e}^{3/2} + \\dfrac{4}{3}\\right) + \\dfrac{81}{4}\\mathrm{e}^{1/2} \\cr &\\quad = \\dfrac{81}{4}\\mathrm{e}^{1/2} + \\dfrac{2}{3}\\mathrm{e}^{3/2} + \\dfrac{4}{3} \\end{aligned}Therefore, the constants are $A = \\dfrac{81}{4}$, $B = \\dfrac{2}{3}$, and $C = \\dfrac{4}{3}$.",
+                "<strong>Final Answer</strong>\\begin{aligned} A &= \\dfrac{81}{4} \\cr B &= \\dfrac{2}{3} \\cr C &= \\dfrac{4}{3} \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "\\begin{aligned} A &= \\dfrac{81}{4} \\cr B &= \\dfrac{2}{3} \\cr C &= -\\dfrac{4}{3} \\end{aligned}",
+                        "feedback": "This is a sign error on the constant term $C$, which occurs if you forget to subtract the lower limit term $-4/3$ during the integration."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= \\dfrac{27}{4} \\cr B &= \\dfrac{2}{3} \\cr C &= \\dfrac{4}{3} \\end{aligned}",
+                        "feedback": "This occurs if you forget the height of the triangle ($3\\sqrt{\\mathrm{e}}$) and use $1$ instead, leading to an incorrect coefficient for $A$."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= \\dfrac{81}{4} \\cr B &= \\dfrac{4}{3} \\cr C &= \\dfrac{4}{3} \\end{aligned}",
+                        "feedback": "This is an integration error, likely from failing to multiply the integrated term by $2/3$ when integrating $2x^{1/2}$."
                 }
-        },
-        {
-                "id": "004494",
-                "board": "Pearson Edexcel",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Integration",
-                "topic": "Integration and Logarithms",
-                "subtopic": [
-                        "Differentiation and Logarithms"
-                ],
-                "img": "images/Pure_SVGs/004494.svg",
-                "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = \\dfrac{ \\ln x }{ \\sqrt{x} }, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, \\mathrm{e}^{-1/2} )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^{-5/2} + B\\mathrm{e}^{1/2} + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
-                "steps": [
-                        "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We differentiate $y = x^{ -1/2 } \\ln x$ using the product rule to find the gradient function of the curve $C$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= -\\dfrac{ 1 }{ 2 }x^{ -3/2 } \\ln x + x^{ -1/2 } \\left( \\dfrac{ 1 }{ x } \\right) \\cr &= \\dfrac{ 2 - \\ln x }{ 2x^{ 3/2 } } \\end{aligned}<br>At the point $P( \\mathrm{e}, \\mathrm{e}^{-1/2} )$, the gradient of the tangent is:<br>\\begin{aligned}m_T &= \\dfrac{ 2 - \\ln \\mathrm{e} }{ 2\\mathrm{e}^{ 3/2 } } \\cr&= \\dfrac{ 1 }{ 2\\mathrm{e}^{ 3/2 } }\\end{aligned}<br>Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:<br>$$m_N = -2\\mathrm{e}^{ 3/2 }$$<br>The equation of the normal line $l$ is:<br>\\begin{aligned} y - \\mathrm{e}^{-1/2} &= -2\\mathrm{e}^{ 3/2 }( x - \\mathrm{e} ) \\cr y &= -2\\mathrm{e}^{ 3/2 }x + 2\\mathrm{e}^{ 5/2 } + \\mathrm{e}^{-1/2} \\end{aligned}",
-                        "<strong>Step 2: Find the boundary points on the $x$-axis:</strong><br>First, find where the curve $C$ cuts the $x$-axis by setting $y = 0$:<br>\\begin{aligned}\\dfrac{ \\ln x }{ \\sqrt{x} } &= 0 \\cr\\ln x &= 0 \\cr x &= 1\\end{aligned}<br>Next, find where the normal line $l$ cuts the $x$-axis by setting $y = 0$:<br>\\begin{aligned}-2\\mathrm{e}^{ 3/2 }x + 2\\mathrm{e}^{ 5/2 } + \\mathrm{e}^{-1/2} &= 0 \\cr2\\mathrm{e}^{ 3/2 }x &= 2\\mathrm{e}^{ 5/2 } + \\mathrm{e}^{-1/2} \\cr x &= \\mathrm{e} + \\dfrac{ 1 }{ 2 }\\mathrm{e}^{-2}\\end{aligned}",
-                        "<strong>Step 3: Split the region $R$ into two areas:</strong><br>The shaded region $R$ is split at $x = \\mathrm{e}$ into two distinct parts:<br><strong>Area 1:</strong> The area under the curve $C$ from $x = 1$ to $x = \\mathrm{e}$:<br>$$\\text{Area}_1 = \\int_{ 1 }^{ \\mathrm{e} } \\dfrac{ \\ln x }{ \\sqrt{x} } \\, \\mathrm{d}x$$<br><strong>Area 2:</strong> The area under the normal line $l$ from $x = \\mathrm{e}$ to $x = \\mathrm{e} + \\dfrac{ 1 }{ 2 }\\mathrm{e}^{-2}$. This is a right-angled triangle with base from $x = \\mathrm{e}$ to $x = \\mathrm{e} + \\dfrac{ 1 }{ 2 }\\mathrm{e}^{-2}$ (length $\\dfrac{ 1 }{ 2 }\\mathrm{e}^{-2}$) and height $y_P = \\mathrm{e}^{-1/2}$:<br>\\begin{aligned} \\text{Area}_2 &= \\dfrac{ 1 }{ 2 } \\times \\text{base} \\times \\text{height} \\cr &= \\dfrac{ 1 }{ 2 }\\left( \\dfrac{ 1 }{ 2 }\\mathrm{e}^{-2} \\right)( \\mathrm{e}^{-1/2} ) \\cr &= \\dfrac{ 1 }{ 4 }\\mathrm{e}^{-5/2} \\end{aligned}",
-                        "<strong>Step 4: Integrate to find $\\text{Area}_1$:</strong><br>Using integration by parts on $\\int x^{ -1/2 } \\ln x \\, \\mathrm{d}x$, let $u = \\ln x \\implies \\mathrm{d}u = \\dfrac{ 1 }{ x }\\mathrm{d}x$ and $\\mathrm{d}v = x^{ -1/2 } \\, \\mathrm{d}x \\implies v = 2x^{ 1/2 }$:<br>\\begin{aligned} \\int x^{ -1/2 } \\ln x \\, \\mathrm{d}x &= 2x^{ 1/2 } \\ln x - \\int 2x^{ 1/2 } \\left( \\dfrac{ 1 }{ x } \\right) \\mathrm{d}x \\cr &= 2x^{ 1/2 } \\ln x - \\int 2x^{ -1/2 } \\, \\mathrm{d}x \\cr &= 2x^{ 1/2 } \\ln x - 4x^{ 1/2 } \\end{aligned}<br>Evaluating this integral over the limits $1$ to $\\mathrm{e}$:<br>\\begin{aligned} \\text{Area}_1 &= \\left[ 2x^{ 1/2 } \\ln x - 4x^{ 1/2 } \\right]_{ 1 }^{ \\mathrm{e} } \\cr &= \\left( 2\\mathrm{e}^{ 1/2 } \\ln \\mathrm{e} - 4\\mathrm{e}^{ 1/2 } \\right) - ( 0 - 4 ) \\cr &= -2\\mathrm{e}^{ 1/2 } + 4 \\end{aligned}",
-                        "<strong>Step 5: Find the total exact area of $R$:</strong><br>Summing the two areas together:<br>\\begin{aligned} \\text{Area}(R) &= \\text{Area}_1 + \\text{Area}_2 \\cr &= \\left( -2\\mathrm{e}^{ 1/2 } + 4 \\right) + \\dfrac{ 1 }{ 4 }\\mathrm{e}^{-5/2} \\cr &= \\dfrac{ 1 }{ 4 }\\mathrm{e}^{-5/2} - 2\\mathrm{e}^{ 1/2 } + 4 \\end{aligned}<br>Therefore, the constants are $A = \\dfrac{ 1 }{ 4 }$, $B = -2$, and $C = 4$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$A = \\dfrac{ 1 }{ 4 }, B = -2, C = -4$",
-                                "feedback": "This is a sign error on the constant term $C$, which occurs if you forget that subtracting the lower limit term $-4$ during the evaluation yields $+4$."
-                        },
-                        {
-                                "ans": "$A = \\dfrac{ 1 }{ 2 }, B = -2, C = 4$",
-                                "feedback": "This occurs if you make a calculation slip when computing the triangle area, such as forgetting the factor of $1/2$ when multiplying the base by the height."
-                        },
-                        {
-                                "ans": "$A = \\dfrac{ 1 }{ 4 }, B = 2, C = 4$",
-                                "feedback": "This is a sign error on the term $B$, which occurs if you write the evaluated term as $+2\\mathrm{e}^{1/2}$ instead of subtracting $4\\mathrm{e}^{1/2}$ from $2\\mathrm{e}^{1/2}$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Tracking Negative Exponents",
-                        "content": "When working with negative exponents like $y = x^{-1/2} \\ln x$, be extremely careful with both integration and differentiation. For differentiation, $-1/2 - 1 = -3/2$. For integration, $-1/2 + 1 = 1/2$. A simple arithmetic slip with these indices can easily cascade into incorrect normal equations and incorrect areas!"
+        ],
+        "bradley_insight": {
+                "type": "deeper",
+                "title": "The Head Teacher's Eye: Fractional Exponents Integration",
+                "content": "When integrating terms with fractional powers like $3x^{1/2} \\ln x$ by parts, do not get intimidated by the fractional index. Treat $\\text{d}v = 3x^{1/2} \\text{d}x$ just like any power. The antiderivative is $3 \\times \\dfrac{x^{3/2}}{3/2} = 2x^{3/2}$. Carrying this clean coefficient through makes the subsequent integral of $v \\text{d}u$ much easier to solve!"
+        }
+},
+{
+        "id": "004494",
+        "board": "Pearson Edexcel",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Integration",
+        "topic": "Integration and Logarithms",
+        "subtopic": [
+                "Differentiation and Logarithms"
+        ],
+        "img": "images/Pure_SVGs/004494.svg",
+        "question": "The diagram shows a sketch of part of the curve $C$ with equation:$$y = \\dfrac{\\ln x}{\\sqrt{x}}, \\quad x > 0$$The line $l$ is the normal to $C$ at the point $P(\\mathrm{e}, \\mathrm{e}^{-1/2})$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^{-5/2} + B\\mathrm{e}^{1/2} + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
+        "steps": [
+                "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We differentiate $y = x^{-1/2} \\ln x$ using the product rule to find the gradient function of the curve $C$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= -\\dfrac{1}{2}x^{-3/2} \\ln x + x^{-1/2}\\left(\\dfrac{1}{x}\\right) \\cr &= \\dfrac{2 - \\ln x}{2x^{3/2}} \\end{aligned}At the point $P(\\mathrm{e}, \\mathrm{e}^{-1/2})$, the gradient of the tangent is:\\begin{aligned} m_T &= \\dfrac{2 - \\ln \\mathrm{e}}{2\\mathrm{e}^{3/2}} \\cr &= \\dfrac{1}{2\\mathrm{e}^{3/2}} \\end{aligned}Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:$$m_N = -2\\mathrm{e}^{3/2}$$The equation of the normal line $l$ is:\\begin{aligned} y - \\mathrm{e}^{-1/2} &= -2\\mathrm{e}^{3/2}(x - \\mathrm{e}) \\cr y &= -2\\mathrm{e}^{3/2}x + 2\\mathrm{e}^{5/2} + \\mathrm{e}^{-1/2} \\end{aligned}",
+                "<strong>Step 2: Find the boundary points on the $x$-axis:</strong><br>First, find where the curve $C$ cuts the $x$-axis by setting $y = 0$:\\begin{aligned} \\dfrac{\\ln x}{\\sqrt{x}} &= 0 \\cr \\ln x &= 0 \\cr x &= 1 \\end{aligned}Next, find where the normal line $l$ cuts the $x$-axis by setting $y = 0$:\\begin{aligned} -2\\mathrm{e}^{3/2}x + 2\\mathrm{e}^{5/2} + \\mathrm{e}^{-1/2} &= 0 \\cr 2\\mathrm{e}^{3/2}x &= 2\\mathrm{e}^{5/2} + \\mathrm{e}^{-1/2} \\cr x &= \\mathrm{e} + \\dfrac{1}{2}\\mathrm{e}^{-2} \\end{aligned}",
+                "<strong>Step 3: Split the region $R$ into two areas:</strong><br>The shaded region $R$ is split at $x = \\mathrm{e}$ into two distinct parts:<br><br><strong>Area 1:</strong> The area under the curve $C$ from $x = 1$ to $x = \\mathrm{e}$:$$\\text{Area}_1 = \\int_1^{\\mathrm{e}} \\dfrac{\\ln x}{\\sqrt{x}} \\text{d}x$$<strong>Area 2:</strong> The area under the normal line $l$ from $x = \\mathrm{e}$ to $x = \\mathrm{e} + \\dfrac{1}{2}\\mathrm{e}^{-2}$. This is a right-angled triangle with base from $x = \\mathrm{e}$ to $x = \\mathrm{e} + \\dfrac{1}{2}\\mathrm{e}^{-2}$ (length $\\dfrac{1}{2}\\mathrm{e}^{-2}$) and height $y_P = \\mathrm{e}^{-1/2}$:\\begin{aligned} \\text{Area}_2 &= \\dfrac{1}{2} \\times \\text{base} \\times \\text{height} \\cr &= \\dfrac{1}{2}\\left(\\dfrac{1}{2}\\mathrm{e}^{-2}\\right)(\\mathrm{e}^{-1/2}) \\cr &= \\dfrac{1}{4}\\mathrm{e}^{-5/2} \\end{aligned}",
+                "<strong>Step 4: Integrate to find $\\text{Area}_1$:</strong><br>Using integration by parts on $\\int x^{-1/2} \\ln x \\text{d}x$, let $u = \\ln x \\implies \\text{d}u = \\dfrac{1}{x}\\text{d}x$ and $\\text{d}v = x^{-1/2} \\text{d}x \\implies v = 2x^{1/2}$:\\begin{aligned} &\\int x^{-1/2} \\ln x \\text{d}x \\cr &\\quad = 2x^{1/2} \\ln x - \\int 2x^{1/2}\\left(\\dfrac{1}{x}\\right)\\text{d}x \\cr &\\quad = 2x^{1/2} \\ln x - \\int 2x^{-1/2} \\text{d}x \\cr &\\quad = 2x^{1/2} \\ln x - 4x^{1/2} \\end{aligned}Evaluating this integral over the limits $1$ to $\\mathrm{e}$:\\begin{aligned} &\\text{Area}_1 \\cr &\\quad = \\left[ 2x^{1/2} \\ln x - 4x^{1/2} \\right]_1^{\\mathrm{e}} \\cr &\\quad = \\left(2\\mathrm{e}^{1/2} \\ln \\mathrm{e} - 4\\mathrm{e}^{1/2}\\right) \\cr &\\qquad - (0 - 4) \\cr &\\quad = -2\\mathrm{e}^{1/2} + 4 \\end{aligned}",
+                "<strong>Step 5: Find the total exact area of $R$:</strong><br>Summing the two areas together:\\begin{aligned} \\text{Area}(R) &= \\text{Area}_1 + \\text{Area}_2 \\cr &= \\left(-2\\mathrm{e}^{1/2} + 4\\right) + \\dfrac{1}{4}\\mathrm{e}^{-5/2} \\cr &= \\dfrac{1}{4}\\mathrm{e}^{-5/2} - 2\\mathrm{e}^{1/2} + 4 \\end{aligned}Therefore, the constants are $A = \\dfrac{1}{4}$, $B = -2$, and $C = 4$.",
+                "<strong>Final Answer</strong>\\begin{aligned} A &= \\dfrac{1}{4} \\cr B &= -2 \\cr C &= 4 \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "\\begin{aligned} A &= \\dfrac{1}{4} \\cr B &= -2 \\cr C &= -4 \\end{aligned}",
+                        "feedback": "This is a sign error on the constant term $C$, which occurs if you forget that subtracting the lower limit term $-4$ during the evaluation yields $+4$."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= \\dfrac{1}{2} \\cr B &= -2 \\cr C &= 4 \\end{aligned}",
+                        "feedback": "This occurs if you make a calculation slip when computing the triangle area, such as forgetting the factor of $1/2$ when multiplying the base by the height."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= \\dfrac{1}{4} \\cr B &= 2 \\cr C &= 4 \\end{aligned}",
+                        "feedback": "This is a sign error on the term $B$, which occurs if you write the evaluated term as $+2\\mathrm{e}^{1/2}$ instead of subtracting $4\\mathrm{e}^{1/2}$ from $2\\mathrm{e}^{1/2}$."
                 }
-        },
-        {
-                "id": "004495",
-                "board": "Pearson Edexcel",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Integration",
-                "topic": "Integration and Logarithms",
-                "subtopic": [
-                        "Differentiation and Logarithms"
-                ],
-                "img": "images/Pure_SVGs/004495.svg",
-                "question": "The diagram shows a sketch of part of the curve $C$ with equation:<br>$$y = x^3 \\ln x, \\quad x > 0$$<br>The line $l$ is the normal to $C$ at the point $P( \\mathrm{e}, \\mathrm{e}^3 )$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^8 + B\\mathrm{e}^4 + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
-                "steps": [
-                        "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We first differentiate $y = x^3 \\ln x$ using the product rule to find the gradient function of the curve $C$:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= 3x^2 \\ln x + x^3 \\left( \\dfrac{ 1 }{ x } \\right) \\cr &= 3x^2 \\ln x + x^2 \\end{aligned}<br>At the point $P( \\mathrm{e}, \\mathrm{e}^3 )$, the gradient of the tangent is:<br>\\begin{aligned}m_T &= 3\\mathrm{e}^2 \\ln \\mathrm{e} + \\mathrm{e}^2 \\cr&= 3\\mathrm{e}^2( 1 ) + \\mathrm{e}^2 \\cr&= 4\\mathrm{e}^2\\end{aligned}<br>Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:<br>$$m_N = -\\dfrac{ 1 }{ 4\\mathrm{e}^2 }$$<br>The equation of the normal line $l$ is:<br>\\begin{aligned} y - \\mathrm{e}^3 &= -\\dfrac{ 1 }{ 4\\mathrm{e}^2 }( x - \\mathrm{e} ) \\cr y &= -\\dfrac{ 1 }{ 4\\mathrm{e}^2 }x + \\dfrac{ 1 }{ 4\\mathrm{e} } + \\mathrm{e}^3 \\end{aligned}",
-                        "<strong>Step 2: Find the boundary points on the $x$-axis:</strong><br>First, find where the curve $C$ cuts the $x$-axis by setting $y = 0$:<br>\\begin{aligned}x^3 \\ln x &= 0 \\cr\\ln x &= 0 \\cr x &= 1\\end{aligned}<br>Next, find where the normal line $l$ cuts the $x$-axis by setting $y = 0$:<br>\\begin{aligned}-\\dfrac{ 1 }{ 4\\mathrm{e}^2 }x + \\dfrac{ 1 }{ 4\\mathrm{e} } + \\mathrm{e}^3 &= 0 \\cr\\dfrac{ 1 }{ 4\\mathrm{e}^2 }x &= \\mathrm{e}^3 + \\dfrac{ 1 }{ 4\\mathrm{e} } \\cr x &= 4\\mathrm{e}^5 + \\mathrm{e}\\end{aligned}",
-                        "<strong>Step 3: Split the region $R$ into two areas:</strong><br>The shaded region $R$ is split at $x = \\mathrm{e}$ into two distinct parts:<br><strong>Area 1:</strong> The area under the curve $C$ from $x = 1$ to $x = \\mathrm{e}$:<br>$$\\text{Area}_1 = \\int_{ 1 }^{ \\mathrm{e} } x^3 \\ln x \\, \\mathrm{d}x$$<br><strong>Area 2:</strong> The area under the normal line $l$ from $x = \\mathrm{e}$ to $x = 4\\mathrm{e}^5 + \\mathrm{e}$. This is a right-angled triangle with base from $x = \\mathrm{e}$ to $x = 4\\mathrm{e}^5 + \\mathrm{e}$ (length $4\\mathrm{e}^5$) and height $y_P = \\mathrm{e}^3$:<br>\\begin{aligned} \\text{Area}_2 &= \\dfrac{ 1 }{ 2 } \\times \\text{base} \\times \\text{height} \\cr &= \\dfrac{ 1 }{ 2 }( 4\\mathrm{e}^5 )( \\mathrm{e}^3 ) \\cr &= 2\\mathrm{e}^8 \\end{aligned}",
-                        "<strong>Step 4: Integrate to find $\\text{Area}_1$:</strong><br>Using integration by parts on $\\int x^3 \\ln x \\, \\mathrm{d}x$, let $u = \\ln x \\implies \\mathrm{d}u = \\dfrac{ 1 }{ x }\\mathrm{d}x$ and $\\mathrm{d}v = x^3 \\, \\mathrm{d}x \\implies v = \\dfrac{ 1 }{ 4 }x^4$:<br>\\begin{aligned} \\int x^3 \\ln x \\, \\mathrm{d}x &= \\dfrac{ 1 }{ 4 }x^4 \\ln x - \\int \\dfrac{ 1 }{ 4 }x^4 \\left( \\dfrac{ 1 }{ x } \\right) \\mathrm{d}x \\cr &= \\dfrac{ 1 }{ 4 }x^4 \\ln x - \\dfrac{ 1 }{ 4 }\\int x^3 \\, \\mathrm{d}x \\cr &= \\dfrac{ 1 }{ 4 }x^4 \\ln x - \\dfrac{ 1 }{ 16 }x^4 \\end{aligned}<br>Evaluating this integral over the limits $1$ to $\\mathrm{e}$:<br>\\begin{aligned} \\text{Area}_1 &= \\left[ \\dfrac{ 1 }{ 4 }x^4 \\ln x - \\dfrac{ 1 }{ 16 }x^4 \\right]_{ 1 }^{ \\mathrm{e} } \\cr &= \\left( \\dfrac{ 1 }{ 4 }\\mathrm{e}^4 \\ln \\mathrm{e} - \\dfrac{ 1 }{ 16 }\\mathrm{e}^4 \\right) - \\left( 0 - \\dfrac{ 1 }{ 16 } \\right) \\cr &= \\dfrac{ 3 }{ 16 }\\mathrm{e}^4 + \\dfrac{ 1 }{ 16 } \\end{aligned}",
-                        "<strong>Step 5: Find the total exact area of $R$:</strong><br>Summing the two areas together:<br>\\begin{aligned} \\text{Area}(R) &= \\text{Area}_1 + \\text{Area}_2 \\cr &= \\left( \\dfrac{ 3 }{ 16 }\\mathrm{e}^4 + \\dfrac{ 1 }{ 16 } \\right) + 2\\mathrm{e}^8 \\cr &= 2\\mathrm{e}^8 + \\dfrac{ 3 }{ 16 }\\mathrm{e}^4 + \\dfrac{ 1 }{ 16 } \\end{aligned}<br>Therefore, the constants are $A = 2$, $B = \\dfrac{ 3 }{ 16 }$, and $C = \\dfrac{ 1 }{ 16 }$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$A = 2, B = \\dfrac{ 3 }{ 16 }, C = -\\dfrac{ 1 }{ 16 }$",
-                                "feedback": "This is a sign error on the constant term $C$, which occurs if you forget that subtracting the lower limit term $-1/16$ during the evaluation yields $+1/16$."
-                        },
-                        {
-                                "ans": "$A = 1, B = \\dfrac{ 3 }{ 16 }, C = \\dfrac{ 1 }{ 16 }$",
-                                "feedback": "This occurs if you make a calculation slip when computing the triangle area, such as forgetting the factor of $1/2$ when multiplying the base by the height."
-                        },
-                        {
-                                "ans": "$A = 2, B = \\dfrac{ 5 }{ 16 }, C = \\dfrac{ 1 }{ 16 }$",
-                                "feedback": "This is an integration error, likely from failing to multiply by $1/4$ when integrating $\\dfrac{ 1 }{ 4 }x^3$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: High Power Integration Rules",
-                        "content": "When integrating higher powers like $x^3 \\ln x$, the denominator on the second term becomes $( n+1 )^2 = 16$. Always run a quick mental differentiation check on your result: $\\dfrac{ \\mathrm{d} }{ \\mathrm{d}x }\\left( \\dfrac{ 1 }{ 4 }x^4 \\ln x - \\dfrac{ 1 }{ 16 }x^4 \\right) = x^3 \\ln x + \\dfrac{ 1 }{ 4 }x^3 - \\dfrac{ 1 }{ 4 }x^3 = x^3 \\ln x$. This quick 5-second sanity check ensures your integration by parts is correct!"
+        ],
+        "bradley_insight": {
+                "type": "caution",
+                "title": "The Head Teacher's Eye: Tracking Negative Exponents",
+                "content": "When working with negative exponents like $y = x^{-1/2} \\ln x$, be extremely careful with both integration and differentiation. For differentiation, $-1/2 - 1 = -3/2$. For integration, $-1/2 + 1 = 1/2$. A simple arithmetic slip with these indices can easily cascade into incorrect normal equations and incorrect areas!"
+        }
+},
+{
+        "id": "004495",
+        "board": "Pearson Edexcel",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Integration",
+        "topic": "Integration and Logarithms",
+        "subtopic": [
+                "Differentiation and Logarithms"
+        ],
+        "img": "images/Pure_SVGs/004495.svg",
+        "question": "The diagram shows a sketch of part of the curve $C$ with equation:$$y = x^3 \\ln x, \\quad x > 0$$The line $l$ is the normal to $C$ at the point $P(\\mathrm{e}, \\mathrm{e}^3)$.<br><br>The region $R$, shown shaded in the diagram, is bounded by the curve $C$, the line $l$, and the $x$-axis.<br><br>Show that the exact area of $R$ is $A\\mathrm{e}^8 + B\\mathrm{e}^4 + C$, where $A, B$, and $C$ are rational constants to be found. Find the values of $A$, $B$, and $C$.",
+        "steps": [
+                "<strong>Step 1: Find the equation of the normal line $l$:</strong><br>We first differentiate $y = x^3 \\ln x$ using the product rule to find the gradient function of the curve $C$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 3x^2 \\ln x + x^3\\left(\\dfrac{1}{x}\\right) \\cr &= 3x^2 \\ln x + x^2 \\end{aligned}At the point $P(\\mathrm{e}, \\mathrm{e}^3)$, the gradient of the tangent is:\\begin{aligned} m_T &= 3\\mathrm{e}^2 \\ln \\mathrm{e} + \\mathrm{e}^2 \\cr &= 3\\mathrm{e}^2(1) + \\mathrm{e}^2 \\cr &= 4\\mathrm{e}^2 \\end{aligned}Since the normal is perpendicular to the tangent, the gradient of the normal line $l$ is:$$m_N = -\\dfrac{1}{4\\mathrm{e}^2}$$The equation of the normal line $l$ is:\\begin{aligned} y - \\mathrm{e}^3 &= -\\dfrac{1}{4\\mathrm{e}^2}(x - \\mathrm{e}) \\cr y &= -\\dfrac{1}{4\\mathrm{e}^2}x + \\dfrac{1}{4\\mathrm{e}} + \\mathrm{e}^3 \\end{aligned}",
+                "<strong>Step 2: Find the boundary points on the $x$-axis:</strong><br>First, find where the curve $C$ cuts the $x$-axis by setting $y = 0$:\\begin{aligned} x^3 \\ln x &= 0 \\cr \\ln x &= 0 \\cr x &= 1 \\end{aligned}Next, find where the normal line $l$ cuts the $x$-axis by setting $y = 0$:\\begin{aligned} -\\dfrac{1}{4\\mathrm{e}^2}x + \\dfrac{1}{4\\mathrm{e}} + \\mathrm{e}^3 &= 0 \\cr \\dfrac{1}{4\\mathrm{e}^2}x &= \\mathrm{e}^3 + \\dfrac{1}{4\\mathrm{e}} \\cr x &= 4\\mathrm{e}^5 + \\mathrm{e} \\end{aligned}",
+                "<strong>Step 3: Split the region $R$ into two areas:</strong><br>The shaded region $R$ is split at $x = \\mathrm{e}$ into two distinct parts:<br><br><strong>Area 1:</strong> The area under the curve $C$ from $x = 1$ to $x = \\mathrm{e}$:$$\\text{Area}_1 = \\int_1^{\\mathrm{e}} x^3 \\ln x \\text{d}x$$<strong>Area 2:</strong> The area under the normal line $l$ from $x = \\mathrm{e}$ to $x = 4\\mathrm{e}^5 + \\mathrm{e}$. This is a right-angled triangle with base from $x = \\mathrm{e}$ to $x = 4\\mathrm{e}^5 + \\mathrm{e}$ (length $4\\mathrm{e}^5$) and height $y_P = \\mathrm{e}^3$:\\begin{aligned} \\text{Area}_2 &= \\dfrac{1}{2} \\times \\text{base} \\times \\text{height} \\cr &= \\dfrac{1}{2}(4\\mathrm{e}^5)(\\mathrm{e}^3) \\cr &= 2\\mathrm{e}^8 \\end{aligned}",
+                "<strong>Step 4: Integrate to find $\\text{Area}_1$:</strong><br>Using integration by parts on $\\int x^3 \\ln x \\text{d}x$, let $u = \\ln x \\implies \\text{d}u = \\dfrac{1}{x}\\text{d}x$ and $\\text{d}v = x^3 \\text{d}x \\implies v = \\dfrac{1}{4}x^4$:\\begin{aligned} &\\int x^3 \\ln x \\text{d}x \\cr &\\quad = \\dfrac{1}{4}x^4 \\ln x - \\int \\dfrac{1}{4}x^4\\left(\\dfrac{1}{x}\\right)\\text{d}x \\cr &\\quad = \\dfrac{1}{4}x^4 \\ln x - \\dfrac{1}{4}\\int x^3 \\text{d}x \\cr &\\quad = \\dfrac{1}{4}x^4 \\ln x - \\dfrac{1}{16}x^4 \\end{aligned}Evaluating this integral over the limits $1$ to $\\mathrm{e}$:\\begin{aligned} &\\text{Area}_1 \\cr &\\quad = \\left[ \\dfrac{1}{4}x^4 \\ln x - \\dfrac{1}{16}x^4 \\right]_1^{\\mathrm{e}} \\cr &\\quad = \\left(\\dfrac{1}{4}\\mathrm{e}^4 \\ln \\mathrm{e} - \\dfrac{1}{16}\\mathrm{e}^4\\right) \\cr &\\qquad - \\left(0 - \\dfrac{1}{16}\\right) \\cr &\\quad = \\dfrac{3}{16}\\mathrm{e}^4 + \\dfrac{1}{16} \\end{aligned}",
+                "<strong>Step 5: Find the total exact area of $R$:</strong><br>Summing the two areas together:\\begin{aligned} \\text{Area}(R) &= \\text{Area}_1 + \\text{Area}_2 \\cr &= \\left(\\dfrac{3}{16}\\mathrm{e}^4 + \\dfrac{1}{16}\\right) + 2\\mathrm{e}^8 \\cr &= 2\\mathrm{e}^8 + \\dfrac{3}{16}\\mathrm{e}^4 + \\dfrac{1}{16} \\end{aligned}Therefore, the constants are $A = 2$, $B = \\dfrac{3}{16}$, and $C = \\dfrac{1}{16}$.",
+                "<strong>Final Answer</strong>\\begin{aligned} A &= 2 \\cr B &= \\dfrac{3}{16} \\cr C &= \\dfrac{1}{16} \\end{aligned}"
+        ],
+        "pi_options": [
+                {
+                        "ans": "\\begin{aligned} A &= 2 \\cr B &= \\dfrac{3}{16} \\cr C &= -\\dfrac{1}{16} \\end{aligned}",
+                        "feedback": "This is a sign error on the constant term $C$, which occurs if you forget that subtracting the lower limit term $-1/16$ during the evaluation yields $+1/16$."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= 1 \\cr B &= \\dfrac{3}{16} \\cr C &= \\dfrac{1}{16} \\end{aligned}",
+                        "feedback": "This occurs if you make a calculation slip when computing the triangle area, such as forgetting the factor of $1/2$ when multiplying the base by the height."
+                },
+                {
+                        "ans": "\\begin{aligned} A &= 2 \\cr B &= \\dfrac{5}{16} \\cr C &= \\dfrac{1}{16} \\end{aligned}",
+                        "feedback": "This is an integration error, likely from failing to multiply by $1/4$ when integrating $\\dfrac{1}{4}x^3$."
                 }
-        },
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: High Power Integration Rules",
+                "content": "When integrating higher powers like $x^3 \\ln x$, the denominator on the second term becomes $(n+1)^2 = 16$. Always run a quick mental differentiation check on your result:\\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}\\left(\\dfrac{1}{4}x^4\\ln x - \\dfrac{1}{16}x^4\\right) \\cr &\\quad = x^3\\ln x + \\dfrac{1}{4}x^3 - \\dfrac{1}{4}x^3 \\cr &\\quad = x^3\\ln x \\end{aligned}This quick 5-second sanity check ensures your integration by parts is correct!"
+        }
+},
         {
                 "id": "004496",
                 "board": "Pearson Edexcel",
