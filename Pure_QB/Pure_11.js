@@ -776,7 +776,7 @@ window.ALEVEL_QUESTIONS = [
                         "content": "Even in complex non-monic quadratics, the leading coefficient term (like $ap^2$) completely cancels out when the equations are equated. This isolates a neat, linear relationship between the remaining coefficients."
                 }
         },
-        {
+ {
                 "id": "004521",
                 "board": "AQA",
                 "branch": "Pure",
@@ -787,26 +787,27 @@ window.ALEVEL_QUESTIONS = [
                         "Integration by parts"
                 ],
                 "img": false,
-                "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}t }{ \\mathrm{d}x } = \\dfrac{ \\ln x }{ x^3 t } \\quad \\text{for } x > 0$$ <br>given that $x = 1$ when $t = 2$. <br><br>Write your answer in the form $t^2 = f(x)$.",
+                "question": "Solve the differential equation:$$\\dfrac{\\text{d}t}{\\text{d}x} = \\dfrac{\\ln x}{x^3 t} \\quad \\text{for } x > 0$$given that $x = 1$ when $t = 2$.<br><br>Write your answer in the form $t^2 = f(x)$.",
                 "steps": [
-                        "Separate the variables by multiplying both sides by $t$ and integrating with respect to $x$: <br>\\begin{aligned} t \\dfrac{ \\mathrm{d}t }{ \\mathrm{d}x } &= \\dfrac{ \\ln x }{ x^3 } \\cr \\int t \\mathrm{d}t &= \\int x^{-3} \\ln x \\mathrm{d}x \\cr \\end{aligned}",
-                        "Integrate the left-hand side directly: <br>\\begin{aligned} \\int t \\mathrm{d}t &= \\dfrac{ t^2 }{ 2 } \\cr \\end{aligned}",
-                        "Integrate the right-hand side, $\\int x^{-3} \\ln x \\mathrm{d}x$, using integration by parts, where $\\int u \\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } \\mathrm{d}x = uv - \\int v \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } \\mathrm{d}x$: <br>Let $u = \\ln x \\implies \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } = \\dfrac{ 1 }{ x }$ <br>Let $\\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } = x^{-3} \\implies v = -\\dfrac{ 1 }{ 2x^2 }$ <br>Substituting these into the integration by parts formula gives: <br>\\begin{aligned} \\int x^{-3} \\ln x \\mathrm{d}x &= (\\ln x)\\left( -\\dfrac{ 1 }{ 2x^2 } \\right) - \\int \\left( -\\dfrac{ 1 }{ 2x^2 } \\right)\\left( \\dfrac{ 1 }{ x } \\right) \\mathrm{d}x \\cr &= -\\dfrac{ \\ln x }{ 2x^2 } + \\dfrac{ 1 }{ 2 } \\int x^{-3} \\mathrm{d}x \\cr &= -\\dfrac{ \\ln x }{ 2x^2 } - \\dfrac{ 1 }{ 4x^2 } + C \\cr \\end{aligned}",
-                        "Equate the integrated left-hand side and right-hand side expressions: <br>\\begin{aligned} \\dfrac{ t^2 }{ 2 } &= -\\dfrac{ \\ln x }{ 2x^2 } - \\dfrac{ 1 }{ 4x^2 } + C \\cr \\end{aligned} <br>Substitute the initial conditions $x = 1$ and $t = 2$ to find the constant of integration $C$: <br>\\begin{aligned} \\dfrac{ (2)^2 }{ 2 } &= -\\dfrac{ \\ln(1) }{ 2(1)^2 } - \\dfrac{ 1 }{ 4(1)^2 } + C \\cr 2 &= 0 - \\dfrac{ 1 }{ 4 } + C \\cr C &= \\dfrac{ 9 }{ 4 } \\cr \\end{aligned}",
-                        "Substitute $C = \\dfrac{ 9 }{ 4 }$ back into the general equation: <br>\\begin{aligned} \\dfrac{ t^2 }{ 2 } &= -\\dfrac{ \\ln x }{ 2x^2 } - \\dfrac{ 1 }{ 4x^2 } + \\dfrac{ 9 }{ 4 } \\cr \\end{aligned} <br>Multiply the entire equation by $2$ to write the final solution in the required form: <br>\\begin{aligned} t^2 &= -\\dfrac{ \\ln x }{ x^2 } - \\dfrac{ 1 }{ 2x^2 } + \\dfrac{ 9 }{ 2 } \\cr \\end{aligned}"
+                        "Separate the variables by multiplying both sides by $t$ and integrating with respect to $x$:\\begin{aligned} t \\dfrac{\\text{d}t}{\\text{d}x} &= \\dfrac{\\ln x}{x^3} \\cr \\int t \\text{d}t &= \\int x^{-3}\\ln x \\text{d}x \\end{aligned}",
+                        "Integrate the left-hand side directly:\\begin{aligned} \\int t \\text{d}t = \\dfrac{t^2}{2} \\end{aligned}",
+                        "Integrate the right-hand side, $\\int x^{-3}\\ln x \\text{d}x$, using integration by parts, where $\\int u \\dfrac{\\text{d}v}{\\text{d}x} \\text{d}x = uv - \\int v \\dfrac{\\text{d}u}{\\text{d}x} \\text{d}x$:<br><br>Let $u = \\ln x$, so $\\dfrac{\\text{d}u}{\\text{d}x} = \\dfrac{1}{x}$.<br><br>Let $\\dfrac{\\text{d}v}{\\text{d}x} = x^{-3}$, so $v = -\\dfrac{1}{2x^2}$.<br><br>Substituting these into the integration by parts formula gives:\\begin{aligned} \\int x^{-3}\\ln x \\text{d}x &= -\\dfrac{\\ln x}{2x^2} \\cr &\\qquad - \\int \\left(-\\dfrac{1}{2x^2}\\right)\\left(\\dfrac{1}{x}\\right) \\text{d}x \\cr &= -\\dfrac{\\ln x}{2x^2} + \\dfrac{1}{2}\\int x^{-3} \\text{d}x \\cr &= -\\dfrac{\\ln x}{2x^2} - \\dfrac{1}{4x^2} + C \\end{aligned}",
+                        "Equate the integrated left-hand side and right-hand side expressions:\\begin{aligned} \\dfrac{t^2}{2} = -\\dfrac{\\ln x}{2x^2} - \\dfrac{1}{4x^2} + C \\end{aligned}Substitute the initial conditions $x = 1$ and $t = 2$ to find the constant of integration $C$:\\begin{aligned} \\dfrac{(2)^2}{2} &= -\\dfrac{\\ln(1)}{2(1)^2} - \\dfrac{1}{4(1)^2} + C \\cr 2 &= 0 - \\dfrac{1}{4} + C \\cr C &= \\dfrac{9}{4} \\end{aligned}",
+                        "Substitute $C = \\dfrac{9}{4}$ back into the general equation:\\begin{aligned} \\dfrac{t^2}{2} = -\\dfrac{\\ln x}{2x^2} - \\dfrac{1}{4x^2} + \\dfrac{9}{4} \\end{aligned}Multiply the entire equation by $2$ to write the final solution in the required form:\\begin{aligned} t^2 = -\\dfrac{\\ln x}{x^2} - \\dfrac{1}{2x^2} + \\dfrac{9}{2} \\end{aligned}",
+                        "Final Answer: $$t^2 = -\\dfrac{\\ln x}{x^2} - \\dfrac{1}{2x^2} + \\dfrac{9}{2}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$t^2 = -\\dfrac{ \\ln x }{ x^2 } - \\dfrac{ 1 }{ 2x^2 } + 4$$",
+                                "ans": "$$t^2 = -\\dfrac{\\ln x}{x^2} - \\dfrac{1}{2x^2} + 4$$",
                                 "feedback": "This is incorrect. This error occurs if you solve for the constant of integration as $C = 2$ because you forgot to divide $(2)^2$ by $2$ on the left-hand side when substituting the initial condition $t = 2$."
                         },
                         {
-                                "ans": "$$t^2 = -\\dfrac{ 2\\ln x }{ x^2 } - \\dfrac{ 1 }{ 2x^2 } + 5$$",
-                                "feedback": "This is incorrect. This error arises from a sign or coefficient transposition slip during the integration by parts step, failing to correctly distribute the $\\dfrac{ 1 }{ 2 }$ factor to the second integral term."
+                                "ans": "$$t^2 = -\\dfrac{2\\ln x}{x^2} - \\dfrac{1}{2x^2} + 5$$",
+                                "feedback": "This is incorrect. This error arises from a sign or coefficient transposition slip during the integration by parts step, failing to correctly distribute the $\\dfrac{1}{2}$ factor to the second integral term."
                         },
                         {
-                                "ans": "$$t^2 = -\\dfrac{ \\ln x }{ x^2 } - \\dfrac{ 1 }{ x^2 } + \\dfrac{ 9 }{ 2 }$$",
-                                "feedback": "This is incorrect. This error occurs if you integrated $\\int x^{-3} \\mathrm{d}x$ as $-x^{-2}$ instead of $-\\dfrac{ 1 }{ 2 }x^{-2}$, losing the factor of $\\dfrac{ 1 }{ 2 }$ on the second term."
+                                "ans": "$$t^2 = -\\dfrac{\\ln x}{x^2} - \\dfrac{1}{x^2} + \\dfrac{9}{2}$$",
+                                "feedback": "This is incorrect. This error occurs if you integrated $\\int x^{-3} \\text{d}x$ as $-x^{-2}$ instead of $-\\dfrac{1}{2}x^{-2}$, losing the factor of $\\dfrac{1}{2}$ on the second term."
                         }
                 ],
                 "bradley_insight": {
@@ -826,32 +827,33 @@ window.ALEVEL_QUESTIONS = [
                         "Integration by parts"
                 ],
                 "img": false,
-                "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ x \\mathrm{e}^{2x} }{ y } \\quad \\text{for } x \\in \\mathbb{ R }$$ <br>given that $y = 3$ when $x = 0$. <br><br>Write your answer in the form $y^2 = f(x)$.",
+                "question": "Solve the differential equation:$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{x \\mathrm{e}^{2x}}{y} \\quad \\text{for } x \\in \\mathbb{R}$$given that $y = 3$ when $x = 0$.<br><br>Write your answer in the form $y^2 = f(x)$.",
                 "steps": [
-                        "Separate the variables and set up the integrals on both sides: <br>\\begin{aligned} y \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= x \\mathrm{e}^{2x} \\cr \\int y \\mathrm{d}y &= \\int x \\mathrm{e}^{2x} \\mathrm{d}x \\cr \\end{aligned}",
-                        "Integrate the left-hand side: <br>\\begin{aligned} \\int y \\mathrm{d}y &= \\dfrac{ y^2 }{ 2 } \\cr \\end{aligned}",
-                        "Integrate the right-hand side using integration by parts, where $\\int u \\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } \\mathrm{d}x = uv - \\int v \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } \\mathrm{d}x$: <br>Let $u = x \\implies \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } = 1$ <br>Let $\\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } = \\mathrm{e}^{2x} \\implies v = \\dfrac{ 1 }{ 2 } \\mathrm{e}^{2x}$ <br>This gives: <br>\\begin{aligned} \\int x \\mathrm{e}^{2x} \\mathrm{d}x &= x\\left( \\dfrac{ 1 }{ 2 } \\mathrm{e}^{2x} \\right) - \\int \\dfrac{ 1 }{ 2 } \\mathrm{e}^{2x} \\mathrm{d}x \\cr &= \\dfrac{ 1 }{ 2 } x \\mathrm{e}^{2x} - \\dfrac{ 1 }{ 4 } \\mathrm{e}^{2x} + C \\cr \\end{aligned}",
-                        "Equate the integrated sides: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= \\dfrac{ 1 }{ 2 } x \\mathrm{e}^{2x} - \\dfrac{ 1 }{ 4 } \\mathrm{e}^{2x} + C \\cr \\end{aligned} <br>Apply the boundary conditions $y = 3$ and $x = 0$ to find the constant of integration $C$: <br>\\begin{aligned} \\dfrac{ (3)^2 }{ 2 } &= \\dfrac{ 1 }{ 2 }(0)\\mathrm{e}^{0} - \\dfrac{ 1 }{ 4 }\\mathrm{e}^{0} + C \\cr \\dfrac{ 9 }{ 2 } &= -\\dfrac{ 1 }{ 4 } + C \\cr C &= \\dfrac{ 19 }{ 4 } \\cr \\end{aligned}",
-                        "Substitute $C = \\dfrac{ 19 }{ 4 }$ back and multiply by $2$ to write the final equation in the form $y^2 = f(x)$: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= \\dfrac{ 1 }{ 2 } x \\mathrm{e}^{2x} - \\dfrac{ 1 }{ 4 } \\mathrm{e}^{2x} + \\dfrac{ 19 }{ 4 } \\cr y^2 &= x \\mathrm{e}^{2x} - \\dfrac{ 1 }{ 2 } \\mathrm{e}^{2x} + \\dfrac{ 19 }{ 2 } \\cr \\end{aligned}"
+                        "Separate the variables and set up the integrals on both sides:\\begin{aligned} y \\dfrac{\\text{d}y}{\\text{d}x} &= x \\mathrm{e}^{2x} \\cr \\int y \\text{d}y &= \\int x \\mathrm{e}^{2x} \\text{d}x \\end{aligned}",
+                        "Integrate the left-hand side:\\begin{aligned} \\int y \\text{d}y = \\dfrac{y^2}{2} \\end{aligned}",
+                        "Integrate the right-hand side using integration by parts, where $\\int u \\dfrac{\\text{d}v}{\\text{d}x} \\text{d}x = uv - \\int v \\dfrac{\\text{d}u}{\\text{d}x} \\text{d}x$:<br><br>Let $u = x$, so $\\dfrac{\\text{d}u}{\\text{d}x} = 1$.<br><br>Let $\\dfrac{\\text{d}v}{\\text{d}x} = \\mathrm{e}^{2x}$, so $v = \\dfrac{1}{2}\\mathrm{e}^{2x}$.<br><br>This gives:\\begin{aligned} \\int x \\mathrm{e}^{2x} \\text{d}x &= x\\left(\\dfrac{1}{2}\\mathrm{e}^{2x}\\right) - \\int \\dfrac{1}{2}\\mathrm{e}^{2x} \\text{d}x \\cr &= \\dfrac{1}{2}x\\mathrm{e}^{2x} - \\dfrac{1}{4}\\mathrm{e}^{2x} + C \\end{aligned}",
+                        "Equate the integrated sides:\\begin{aligned} \\dfrac{y^2}{2} = \\dfrac{1}{2}x\\mathrm{e}^{2x} - \\dfrac{1}{4}\\mathrm{e}^{2x} + C \\end{aligned}Apply the boundary conditions $y = 3$ and $x = 0$ to find the constant of integration $C$:\\begin{aligned} \\dfrac{(3)^2}{2} &= \\dfrac{1}{2}(0)\\mathrm{e}^{0} - \\dfrac{1}{4}\\mathrm{e}^{0} + C \\cr \\dfrac{9}{2} &= -\\dfrac{1}{4} + C \\cr C &= \\dfrac{19}{4} \\end{aligned}",
+                        "Substitute $C = \\dfrac{19}{4}$ back and multiply by $2$ to write the final equation in the form $y^2 = f(x)$:\\begin{aligned} \\dfrac{y^2}{2} &= \\dfrac{1}{2}x\\mathrm{e}^{2x} - \\dfrac{1}{4}\\mathrm{e}^{2x} + \\dfrac{19}{4} \\cr y^2 &= x\\mathrm{e}^{2x} - \\dfrac{1}{2}\\mathrm{e}^{2x} + \\dfrac{19}{2} \\end{aligned}",
+                        "Final Answer: $$y^2 = x\\mathrm{e}^{2x} - \\dfrac{1}{2}\\mathrm{e}^{2x} + \\dfrac{19}{2}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$y^2 = x\\mathrm{ e }^{ 2x } - \\dfrac{ 1 }{ 2 }\\mathrm{ e }^{ 2x } + 9$$",
-                                "feedback": "This is incorrect. This error occurs if you solved for the constant of integration correctly as $C = \\dfrac{ 19 }{ 4 }$ but forgot to multiply this term by $2$ when converting the general solution $\\dfrac{ y^2 }{ 2 }$ to $y^2$ (instead mistakenly adding $2C$ as $9$)."
+                                "ans": "$$y^2 = x\\mathrm{e}^{2x} - \\dfrac{1}{2}\\mathrm{e}^{2x} + 9$$",
+                                "feedback": "This is incorrect. This error occurs if you solved for the constant of integration correctly as $C = \\dfrac{19}{4}$ but forgot to multiply this term by $2$ when converting the general solution $\\dfrac{y^2}{2}$ to $y^2$."
                         },
                         {
-                                "ans": "$$y^2 = 2x\\mathrm{ e }^{ 2x } - \\dfrac{ 1 }{ 2 }\\mathrm{ e }^{ 2x } + \\dfrac{ 19 }{ 2 }$$",
-                                "feedback": "This is incorrect. This error arises if you integrated $\\int x \\mathrm{e}^{2x} \\mathrm{d}x$ by parts incorrectly, multiplying the coefficient by $2$ instead of dividing by $2$ in the first step."
+                                "ans": "$$y^2 = 2x\\mathrm{e}^{2x} - \\dfrac{1}{2}\\mathrm{e}^{2x} + \\dfrac{19}{2}$$",
+                                "feedback": "This is incorrect. This error arises if you integrated $\\int x \\mathrm{e}^{2x} \\text{d}x$ by parts incorrectly, multiplying the coefficient by $2$ instead of dividing by $2$ in the first step."
                         },
                         {
-                                "ans": "$$y^2 = x\\mathrm{ e }^{ 2x } - \\mathrm{ e }^{ 2x } + 10$$",
-                                "feedback": "This is incorrect. This error occurs if you integrated the exponential term $\\mathrm{e}^{2x}$ as $\\mathrm{e}^{2x}$ instead of $\\dfrac{ 1 }{ 2 }\\mathrm{e}^{2x}$ in both integration stages."
+                                "ans": "$$y^2 = x\\mathrm{e}^{2x} - \\mathrm{e}^{2x} + 10$$",
+                                "feedback": "This is incorrect. This error occurs if you integrated the exponential term $\\mathrm{e}^{2x}$ as $\\mathrm{e}^{2x}$ instead of $\\dfrac{1}{2}\\mathrm{e}^{2x}$ in both integration stages."
                         }
                 ],
                 "bradley_insight": {
                         "type": "pro-tip",
                         "title": "The Head Teacher's Eye: Integration by Parts Casing",
-                        "content": "When choosing $u$ and $v$ for integration by parts, follow the 'LATE' hierarchy (Logarithmic, Algebraic, Trigonometric, Exponential) to select $u$. For $\\int x \\mathrm{e}^{2x} \\mathrm{d}x$, Algebraic $x$ must be $u$ so that it simplifies to $1$ when differentiated."
+                        "content": "When choosing $u$ and $v$ for integration by parts, follow the 'LATE' hierarchy (Logarithmic, Algebraic, Trigonometric, Exponential) to select $u$. For $\\int x \\mathrm{e}^{2x} \\text{d}x$, Algebraic $x$ must be $u$ so that it simplifies to $1$ when differentiated."
                 }
         },
         {
@@ -865,32 +867,33 @@ window.ALEVEL_QUESTIONS = [
                         "Integration by parts"
                 ],
                 "img": false,
-                "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ x \\sin x }{ y } \\quad \\text{for } x \\in \\mathbb{ R }$$ <br>given that $y = 2$ when $x = 0$. <br><br>Write your answer in the form $y^2 = f(x)$.",
+                "question": "Solve the differential equation:$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{x \\sin x}{y} \\quad \\text{for } x \\in \\mathbb{R}$$given that $y = 2$ when $x = 0$.<br><br>Write your answer in the form $y^2 = f(x)$.",
                 "steps": [
-                        "Separate the variables and set up the integration: <br>\\begin{aligned} y \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= x \\sin x \\cr \\int y \\mathrm{d}y &= \\int x \\sin x \\mathrm{d}x \\cr \\end{aligned}",
-                        "Integrate the left-hand side directly: <br>\\begin{aligned} \\int y \\mathrm{d}y &= \\dfrac{ y^2 }{ 2 } \\cr \\end{aligned}",
-                        "Integrate the right-hand side using integration by parts, where $\\int u \\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } \\mathrm{d}x = uv - \\int v \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } \\mathrm{d}x$: <br>Let $u = x \\implies \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } = 1$ <br>Let $\\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } = \\sin x \\implies v = -\\cos x$ <br>Substituting these into the integration by parts formula gives: <br>\\begin{aligned} \\int x \\sin x \\mathrm{d}x &= x(-\\cos x) - \\int (-\\cos x) \\mathrm{d}x \\cr &= -x\\cos x + \\sin x + C \\cr \\end{aligned}",
-                        "Equate both sides to form the general equation: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= -x\\cos x + \\sin x + C \\cr \\end{aligned} <br>Apply the initial boundary conditions $y = 2$ and $x = 0$ to find the constant of integration $C$: <br>\\begin{aligned} \\dfrac{ (2)^2 }{ 2 } &= -(0)\\cos(0) + \\sin(0) + C \\cr 2 &= 0 + 0 + C \\cr C &= 2 \\cr \\end{aligned}",
-                        "Substitute $C = 2$ back and multiply by $2$ to write the final solution in the required form: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= -x\\cos x + \\sin x + 2 \\cr y^2 &= -2x\\cos x + 2\\sin x + 4 \\cr \\end{aligned}"
+                        "Separate the variables and set up the integration:\\begin{aligned} y \\dfrac{\\text{d}y}{\\text{d}x} &= x \\sin x \\cr \\int y \\text{d}y &= \\int x \\sin x \\text{d}x \\end{aligned}",
+                        "Integrate the left-hand side directly:\\begin{aligned} \\int y \\text{d}y = \\dfrac{y^2}{2} \\end{aligned}",
+                        "Integrate the right-hand side using integration by parts, where $\\int u \\dfrac{\\text{d}v}{\\text{d}x} \\text{d}x = uv - \\int v \\dfrac{\\text{d}u}{\\text{d}x} \\text{d}x$:<br><br>Let $u = x$, so $\\dfrac{\\text{d}u}{\\text{d}x} = 1$.<br><br>Let $\\dfrac{\\text{d}v}{\\text{d}x} = \\sin x$, so $v = -\\cos x$.<br><br>Substituting these into the integration by parts formula gives:\\begin{aligned} \\int x \\sin x \\text{d}x &= x(-\\cos x) - \\int (-\\cos x) \\text{d}x \\cr &= -x\\cos x + \\sin x + C \\end{aligned}",
+                        "Equate both sides to form the general equation:\\begin{aligned} \\dfrac{y^2}{2} = -x\\cos x + \\sin x + C \\end{aligned}Apply the initial boundary conditions $y = 2$ and $x = 0$ to find the constant of integration $C$:\\begin{aligned} \\dfrac{(2)^2}{2} &= -(0)\\cos(0) + \\sin(0) + C \\cr 2 &= 0 + 0 + C \\cr C &= 2 \\end{aligned}",
+                        "Substitute $C = 2$ back and multiply by $2$ to write the final solution in the required form:\\begin{aligned} \\dfrac{y^2}{2} &= -x\\cos x + \\sin x + 2 \\cr y^2 &= -2x\\cos x + 2\\sin x + 4 \\end{aligned}",
+                        "Final Answer: $$y^2 = -2x\\cos x + 2\\sin x + 4$$"
                 ],
                 "pi_options": [
                         {
                                 "ans": "$$y^2 = -2x\\cos x + \\sin x + 4$$",
-                                "feedback": "This is incorrect. This error occurs if you forgot to distribute the factor of $2$ to the $\\sin x$ term when multiplying the entire equation by $2$ to convert $\\dfrac{ y^2 }{ 2 }$ to $y^2$."
+                                "feedback": "This is incorrect. This error occurs if you forgot to distribute the factor of $2$ to the $\\sin x$ term when multiplying the entire equation by $2$ to convert $\\dfrac{y^2}{2}$ to $y^2$."
                         },
                         {
                                 "ans": "$$y^2 = 2x\\cos x - 2\\sin x + 4$$",
-                                "feedback": "This is incorrect. This error arises from a sign error when integrating $\\sin x$, forgetting that $\\int \\sin x \\mathrm{d}x = -\\cos x$ and that subtracting the second integral introduces another negative sign."
+                                "feedback": "This is incorrect. This error arises from a sign error when integrating $\\sin x$, forgetting that $\\int \\sin x \\text{d}x = -\\cos x$ and that subtracting the second integral introduces another negative sign."
                         },
                         {
                                 "ans": "$$y^2 = -x\\cos x + \\sin x + 2$$",
-                                "feedback": "This is incorrect. This error occurs if you forgot to multiply any of the right-hand side terms by $2$ when converting the general solution $\\dfrac{ y^2 }{ 2 }$ to $y^2$."
+                                "feedback": "This is incorrect. This error occurs if you forgot to multiply any of the right-hand side terms by $2$ when converting the general solution $\\dfrac{y^2}{2}$ to $y^2$."
                         }
                 ],
                 "bradley_insight": {
                         "type": "caution",
                         "title": "The Head Teacher's Eye: Trig Integration Signs",
-                        "content": "Be extremely vigilant with signs when integrating trigonometric functions. Remember that $\\int \\sin x \\mathrm{d}x = -\\cos x$, whereas $\\int \\cos x \\mathrm{d}x = \\sin x$. A simple sign error here will carry through and corrupt your constant of integration $C$."
+                        "content": "Be extremely vigilant with signs when integrating trigonometric functions. Remember that $\\int \\sin x \\text{d}x = -\\cos x$, whereas $\\int \\cos x \\text{d}x = \\sin x$. A simple sign error here will carry through and corrupt your constant of integration $C$."
                 }
         },
         {
@@ -904,32 +907,33 @@ window.ALEVEL_QUESTIONS = [
                         "Integration by parts"
                 ],
                 "img": false,
-                "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ x \\ln x }{ y } \\quad \\text{for } x > 0$$ <br>given that $y = 4$ when $x = 1$. <br><br>Write your answer in the form $y^2 = f(x)$.",
+                "question": "Solve the differential equation:$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{x \\ln x}{y} \\quad \\text{for } x > 0$$given that $y = 4$ when $x = 1$.<br><br>Write your answer in the form $y^2 = f(x)$.",
                 "steps": [
-                        "Separate the variables and set up the integrals on both sides: <br>\\begin{aligned} y \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= x \\ln x \\cr \\int y \\mathrm{d}y &= \\int x \\ln x \\mathrm{d}x \\cr \\end{aligned}",
-                        "Integrate the left-hand side directly: <br>\\begin{aligned} \\int y \\mathrm{d}y &= \\dfrac{ y^2 }{ 2 } \\cr \\end{aligned}",
-                        "Integrate the right-hand side using integration by parts, where $\\int u \\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } \\mathrm{d}x = uv - \\int v \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } \\mathrm{d}x$: <br>Let $u = \\ln x \\implies \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } = \\dfrac{ 1 }{ x }$ <br>Let $\\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } = x \\implies v = \\dfrac{ x^2 }{ 2 }$ <br>Substituting these into the formula gives: <br>\\begin{aligned} \\int x \\ln x \\mathrm{d}x &= (\\ln x)\\left( \\dfrac{ x^2 }{ 2 } \\right) - \\int \\left( \\dfrac{ x^2 }{ 2 } \\right)\\left( \\dfrac{ 1 }{ x } \\right) \\mathrm{d}x \\cr &= \\dfrac{ x^2 }{ 2 } \\ln x - \\dfrac{ 1 }{ 2 } \\int x \\mathrm{d}x \\cr &= \\dfrac{ x^2 }{ 2 } \\ln x - \\dfrac{ x^2 }{ 4 } + C \\cr \\end{aligned}",
-                        "Equate the integrated sides to form the general equation: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= \\dfrac{ x^2 }{ 2 } \\ln x - \\dfrac{ x^2 }{ 4 } + C \\cr \\end{aligned} <br>Apply the boundary conditions $y = 4$ and $x = 1$ to calculate the constant of integration $C$: <br>\\begin{aligned} \\dfrac{ (4)^2 }{ 2 } &= \\dfrac{ (1)^2 }{ 2 }\\ln(1) - \\dfrac{ (1)^2 }{ 4 } + C \\cr 8 &= 0 - \\dfrac{ 1 }{ 4 } + C \\cr C &= \\dfrac{ 33 }{ 4 } \\cr \\end{aligned}",
-                        "Substitute $C = \\dfrac{ 33 }{ 4 }$ back and multiply by $2$ to write the final equation in the required form: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= \\dfrac{ x^2 }{ 2 } \\ln x - \\dfrac{ x^2 }{ 4 } + \\dfrac{ 33 }{ 4 } \\cr y^2 &= x^2 \\ln x - \\dfrac{ x^2 }{ 2 } + \\dfrac{ 33 }{ 2 } \\cr \\end{aligned}"
+                        "Separate the variables and set up the integrals on both sides:\\begin{aligned} y \\dfrac{\\text{d}y}{\\text{d}x} &= x \\ln x \\cr \\int y \\text{d}y &= \\int x \\ln x \\text{d}x \\end{aligned}",
+                        "Integrate the left-hand side directly:\\begin{aligned} \\int y \\text{d}y = \\dfrac{y^2}{2} \\end{aligned}",
+                        "Integrate the right-hand side using integration by parts, where $\\int u \\dfrac{\\text{d}v}{\\text{d}x} \\text{d}x = uv - \\int v \\dfrac{\\text{d}u}{\\text{d}x} \\text{d}x$:<br><br>Let $u = \\ln x$, so $\\dfrac{\\text{d}u}{\\text{d}x} = \\dfrac{1}{x}$.<br><br>Let $\\dfrac{\\text{d}v}{\\text{d}x} = x$, so $v = \\dfrac{x^2}{2}$.<br><br>Substituting these into the formula gives:\\begin{aligned} \\int x \\ln x \\text{d}x &= \\dfrac{x^2}{2}\\ln x \\cr &\\qquad - \\int \\left(\\dfrac{x^2}{2}\\right)\\left(\\dfrac{1}{x}\\right) \\text{d}x \\cr &= \\dfrac{x^2}{2}\\ln x - \\dfrac{1}{2}\\int x \\text{d}x \\cr &= \\dfrac{x^2}{2}\\ln x - \\dfrac{x^2}{4} + C \\end{aligned}",
+                        "Equate the integrated sides to form the general equation:\\begin{aligned} \\dfrac{y^2}{2} = \\dfrac{x^2}{2}\\ln x - \\dfrac{x^2}{4} + C \\end{aligned}Apply the boundary conditions $y = 4$ and $x = 1$ to calculate the constant of integration $C$:\\begin{aligned} \\dfrac{(4)^2}{2} &= \\dfrac{(1)^2}{2}\\ln(1) - \\dfrac{(1)^2}{4} + C \\cr 8 &= 0 - \\dfrac{1}{4} + C \\cr C &= \\dfrac{33}{4} \\end{aligned}",
+                        "Substitute $C = \\dfrac{33}{4}$ back and multiply by $2$ to write the final equation in the required form:\\begin{aligned} \\dfrac{y^2}{2} &= \\dfrac{x^2}{2}\\ln x - \\dfrac{x^2}{4} + \\dfrac{33}{4} \\cr y^2 &= x^2\\ln x - \\dfrac{1}{2}x^2 + \\dfrac{33}{2} \\end{aligned}",
+                        "Final Answer: $$y^2 = x^2\\ln x - \\dfrac{1}{2}x^2 + \\dfrac{33}{2}$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$y^2 = x^2\\ln x - \\dfrac{ 1 }{ 2 }x^2 + 16$$",
-                                "feedback": "This is incorrect. This error occurs if you solved for the constant of integration correctly as $C = \\dfrac{ 33 }{ 4 }$ but forgot to multiply this term by $2$ when converting $\\dfrac{ y^2 }{ 2 }$ to $y^2$ (instead mistakenly adding $2C$ as $16$)."
+                                "ans": "$$y^2 = x^2\\ln x - \\dfrac{1}{2}x^2 + 16$$",
+                                "feedback": "This is incorrect. This error occurs if you solved for the constant of integration correctly as $C = \\dfrac{33}{4}$ but forgot to multiply this term by $2$ when converting $\\dfrac{y^2}{2}$ to $y^2$."
                         },
                         {
-                                "ans": "$$y^2 = 2x^2\\ln x - \\dfrac{ 1 }{ 2 }x^2 + \\dfrac{ 33 }{ 2 }$$",
+                                "ans": "$$y^2 = 2x^2\\ln x - \\dfrac{1}{2}x^2 + \\dfrac{33}{2}$$",
                                 "feedback": "This is incorrect. This error arises if you integrated $x \\ln x$ by parts incorrectly, multiplying the coefficient by $2$ instead of dividing by $2$ in the first step."
                         },
                         {
                                 "ans": "$$y^2 = x^2\\ln x - x^2 + 17$$",
-                                "feedback": "This is incorrect. This error occurs if you integrated the algebraic term $x$ as $x^2$ instead of $\\dfrac{ 1 }{ 2 }x^2$ during the integration by parts process."
+                                "feedback": "This is incorrect. This error occurs if you integrated the algebraic term $x$ as $x^2$ instead of $\\dfrac{1}{2}x^2$ during the integration by parts process."
                         }
                 ],
                 "bradley_insight": {
                         "type": "deeper",
                         "title": "The Head Teacher's Eye: Logarithm Domain Limits",
-                        "content": "When integrating functions involving $\\ln x$, the domain constraint $x > 0$ is mathematically critical. This guarantees that both the logarithm and its derivative $\\dfrac{ 1 }{ x }$ are defined and real over the entire interval of integration."
+                        "content": "When integrating functions involving $\\ln x$, the domain constraint $x > 0$ is mathematically critical. This guarantees that both the logarithm and its derivative $\\dfrac{1}{x}$ are defined and real over the entire interval of integration."
                 }
         },
         {
@@ -943,25 +947,26 @@ window.ALEVEL_QUESTIONS = [
                         "Integration by parts"
                 ],
                 "img": false,
-                "question": "Solve the differential equation: <br>$$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = \\dfrac{ x \\mathrm{e}^{-x} }{ y } \\quad \\text{for } x \\in \\mathbb{ R }$$ <br>given that $y = 2$ when $x = 0$. <br><br>Write your answer in the form $y^2 = f(x)$.",
+                "question": "Solve the differential equation:$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{x \\mathrm{e}^{-x}}{y} \\quad \\text{for } x \\in \\mathbb{R}$$given that $y = 2$ when $x = 0$.<br><br>Write your answer in the form $y^2 = f(x)$.",
                 "steps": [
-                        "Separate the variables and set up the integration: <br>\\begin{aligned} y \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= x \\mathrm{e}^{-x} \\cr \\int y \\mathrm{d}y &= \\int x \\mathrm{e}^{-x} \\mathrm{d}x \\cr \\end{aligned}",
-                        "Integrate the left-hand side directly: <br>\\begin{aligned} \\int y \\mathrm{d}y &= \\dfrac{ y^2 }{ 2 } \\cr \\end{aligned}",
-                        "Integrate the right-hand side using integration by parts, where $\\int u \\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } \\mathrm{d}x = uv - \\int v \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } \\mathrm{d}x$: <br>Let $u = x \\implies \\dfrac{ \\mathrm{d}u }{ \\mathrm{d}x } = 1$ <br>Let $\\dfrac{ \\mathrm{d}v }{ \\mathrm{d}x } = \\mathrm{e}^{-x} \\implies v = -\\mathrm{e}^{-x}$ <br>Substituting these into the formula yields: <br>\\begin{aligned} \\int x \\mathrm{e}^{-x} \\mathrm{d}x &= x(-\\mathrm{e}^{-x}) - \\int (-\\mathrm{e}^{-x}) \\mathrm{d}x \\cr &= -x\\mathrm{e}^{-x} + \\int \\mathrm{e}^{-x} \\mathrm{d}x \\cr &= -x\\mathrm{e}^{-x} - \\mathrm{e}^{-x} + C \\cr \\end{aligned}",
-                        "Equate the integrated expressions: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= -x\\mathrm{e}^{-x} - \\mathrm{e}^{-x} + C \\cr \\end{aligned} <br>Substitute the boundary conditions $y = 2$ and $x = 0$ to find the constant of integration $C$: <br>\\begin{aligned} \\dfrac{ (2)^2 }{ 2 } &= -(0)\\mathrm{e}^{0} - \\mathrm{e}^{0} + C \\cr 2 &= 0 - 1 + C \\cr C &= 3 \\cr \\end{aligned}",
-                        "Substitute $C = 3$ back into the general equation: <br>\\begin{aligned} \\dfrac{ y^2 }{ 2 } &= -x\\mathrm{e}^{-x} - \\mathrm{e}^{-x} + 3 \\cr \\end{aligned} <br>Multiply the entire equation by $2$ to write the final equation in the required form (which can optionally be factorised): <br>\\begin{aligned} y^2 &= -2x\\mathrm{e}^{-x} - 2\\mathrm{e}^{-x} + 6 \\cr y^2 &= -2(x + 1)\\mathrm{e}^{-x} + 6 \\cr \\end{aligned}"
+                        "Separate the variables and set up the integration:\\begin{aligned} y \\dfrac{\\text{d}y}{\\text{d}x} &= x \\mathrm{e}^{-x} \\cr \\int y \\text{d}y &= \\int x \\mathrm{e}^{-x} \\text{d}x \\end{aligned}",
+                        "Integrate the left-hand side directly:\\begin{aligned} \\int y \\text{d}y = \\dfrac{y^2}{2} \\end{aligned}",
+                        "Integrate the right-hand side using integration by parts, where $\\int u \\dfrac{\\text{d}v}{\\text{d}x} \\text{d}x = uv - \\int v \\dfrac{\\text{d}u}{\\text{d}x} \\text{d}x$:<br><br>Let $u = x$, so $\\dfrac{\\text{d}u}{\\text{d}x} = 1$.<br><br>Let $\\dfrac{\\text{d}v}{\\text{d}x} = \\mathrm{e}^{-x}$, so $v = -\\mathrm{e}^{-x}$.<br><br>Substituting these into the formula yields:\\begin{aligned} \\int x \\mathrm{e}^{-x} \\text{d}x &= x(-\\mathrm{e}^{-x}) - \\int (-\\mathrm{e}^{-x}) \\text{d}x \\cr &= -x\\mathrm{e}^{-x} + \\int \\mathrm{e}^{-x} \\text{d}x \\cr &= -x\\mathrm{e}^{-x} - \\mathrm{e}^{-x} + C \\end{aligned}",
+                        "Equate the integrated expressions:\\begin{aligned} \\dfrac{y^2}{2} = -x\\mathrm{e}^{-x} - \\mathrm{e}^{-x} + C \\end{aligned}Substitute the boundary conditions $y = 2$ and $x = 0$ to find the constant of integration $C$:\\begin{aligned} \\dfrac{(2)^2}{2} &= -(0)\\mathrm{e}^{0} - \\mathrm{e}^{0} + C \\cr 2 &= 0 - 1 + C \\cr C &= 3 \\end{aligned}",
+                        "Substitute $C = 3$ back into the general equation:\\begin{aligned} \\dfrac{y^2}{2} = -x\\mathrm{e}^{-x} - \\mathrm{e}^{-x} + 3 \\end{aligned}Multiply the entire equation by $2$ to write the final equation in the required form (which can optionally be factorised):\\begin{aligned} y^2 &= -2x\\mathrm{e}^{-x} - 2\\mathrm{e}^{-x} + 6 \\cr &= -2(x + 1)\\mathrm{e}^{-x} + 6 \\end{aligned}",
+                        "Final Answer: $$y^2 = -2(x + 1)\\mathrm{e}^{-x} + 6$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$y^2 = -2(x + 1)\\mathrm{ e }^{-x} + 4$$",
-                                "feedback": "This is incorrect. This error occurs if you solved for the constant of integration correctly as $C = 3$ but forgot to multiply this term by $2$ when converting the general solution $\\dfrac{ y^2 }{ 2 }$ to $y^2$ (instead mistakenly adding $2C$ as $4$)."
+                                "ans": "$$y^2 = -2(x + 1)\\mathrm{e}^{-x} + 4$$",
+                                "feedback": "This is incorrect. This error occurs if you solved for the constant of integration correctly as $C = 3$ but forgot to multiply this term by $2$ when converting the general solution $\\dfrac{y^2}{2}$ to $y^2$."
                         },
                         {
-                                "ans": "$$y^2 = -x\\mathrm{ e }^{-x} - \\mathrm{ e }^{-x} + 3$$",
-                                "feedback": "This is incorrect. This error occurs if you forgot to multiply any of the right-hand side terms by $2$ when converting the general solution $\\dfrac{ y^2 }{ 2 }$ to $y^2$."
+                                "ans": "$$y^2 = -x\\mathrm{e}^{-x} - \\mathrm{e}^{-x} + 3$$",
+                                "feedback": "This is incorrect. This error occurs if you forgot to multiply any of the right-hand side terms by $2$ when converting the general solution $\\dfrac{y^2}{2}$ to $y^2$."
                         },
                         {
-                                "ans": "$$y^2 = 2(x - 1)\\mathrm{ e }^{-x} + 6$$",
+                                "ans": "$$y^2 = 2(x - 1)\\mathrm{e}^{-x} + 6$$",
                                 "feedback": "This is incorrect. This represents a double sign error in the integration by parts step, resulting in positive exponential products and an incorrect subtraction sign inside the parentheses."
                         }
                 ],
