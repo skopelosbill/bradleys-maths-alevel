@@ -1399,15 +1399,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$p = 3.70, \\quad q = 0.0345, \\quad \\text{Year: } 2032$$",
+                                "ans": "$$p = 3.70, q = 0.0345, \\text{Year: } 2032$$",
                                 "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse logarithm (base 10) to the vertical intercept and gradient, stating that the parameters $p$ and $q$ are equal to the linear constants themselves."
                         },
                         {
-                                "ans": "$$p = 5.01 \\times 10^3, \\quad q = 1.08, \\quad \\text{Year: } 2033$$",
+                                "ans": "$$p = 5.01 \\times 10^3,  = 1.08, \\text{Year: } 2033$$",
                                 "feedback": "This is incorrect. This error arises if you rounded your parameter values to three significant figures ($p \\approx 5010$ and $q \\approx 1.08$) and used them to solve $5010 \\times (1.08)^t = 300,000$ in the exponential equation. This intermediate rounding error yields $t \\approx 53.1$ years, leading incorrectly to the year $2033$."
                         },
                         {
-                                "ans": "$$p = 5010, \\quad q = 1.08, \\quad \\text{Year: } 2030$$",
+                                "ans": "$$p = 5010, q = 1.08, \\text{Year: } 2030$$",
                                 "feedback": "This is incorrect. This occurs due to an arithmetic error when calculating the logarithm of $300,000$, or a division error in $t = 1.777 / 0.0345$."
                         }
                 ],
@@ -1440,15 +1440,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$a = 4.79, \\quad b = 0.101, \\quad \\text{Year: } 2037$$",
+                                "ans": "$$a = 4.79, b = 0.101, \\text{Year: } 2037$$",
                                 "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse natural exponent ($\\mathrm{e}^x$) to the vertical intercept, writing the parameter $a$ as equal to the intercept value of $4.79$ directly."
                         },
                         {
-                                "ans": "$$a = 120, \\quad b = 0.101, \\quad \\text{Year: } 2036$$",
+                                "ans": "$$a = 120, b = 0.101, \\text{Year: } 2036$$",
                                 "feedback": "This is incorrect. This error occurs if you rounded $t \\approx 37.1$ down to $36$ years, or if you used rounded values ($a = 120, b = 0.101$) to solve $120 \\mathrm{e}^{ 0.101 t } = 5000$ in the exponential form, resulting in an intermediate rounding discrepancy."
                         },
                         {
-                                "ans": "$$a = 120, \\quad b = 1.11, \\quad \\text{Year: } 2037$$",
+                                "ans": "$$a = 120, b = 1.11, \\text{Year: } 2037$$",
                                 "feedback": "This is incorrect. This error occurs if you applied the base 10 inverse logarithm ($10^{0.1005}$) to find $b$ instead of preserving the natural exponent base $\\mathrm{e}$ used in the model."
                         }
                 ],
@@ -1481,15 +1481,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$a = 0.30, \\quad b = 0.500, \\quad \\text{Period: } 1.12\\text{ s}$$",
+                                "ans": "$$a = 0.30, b = 0.500, \\text{Period: } 1.12\\text{ s}$$",
                                 "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse base-10 logarithm ($10^x$) to the vertical intercept, stating that the parameter $a$ is equal to the intercept value of $0.30$ directly."
                         },
                         {
-                                "ans": "$$a = 2.00, \\quad b = 0.500, \\quad \\text{Period: } 10.0\\text{ s}$$",
+                                "ans": "$$a = 2.00,  = 0.500, \\text{Period: } 10.0\\text{ s}$$",
                                 "feedback": "This is incorrect. This error occurs if you evaluated $T = 2.00 \\times 5.0^1$ instead of raising $L$ to the correct power $b = 0.500$, failing to perform the fractional exponent calculation."
                         },
                         {
-                                "ans": "$$a = 2.00, \\quad b = 2.00, \\quad \\text{Period: } 50.0\\text{ s}$$",
+                                "ans": "$$a = 2.00, b = 2.00, \\text{Period: } 50.0\\text{ s}$$",
                                 "feedback": "This is incorrect. This error occurs if you calculated the gradient $b$ incorrectly (such as writing $b = 2.00$), leading to a completely incorrect quadratic-length model."
                         }
                 ],
@@ -1522,15 +1522,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$a = 1.90, \\quad b = 0.902, \\quad \\text{Time: } 42\\text{ days}$",
+                                "ans": "$a = 1.90, b = 0.902, \\text{Time: } 42\\text{ days}$",
                                 "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse base-10 logarithm ($10^x$) to the vertical intercept, stating that the parameter $a$ is equal to the intercept value of $1.90$ directly."
                         },
                         {
-                                "ans": "$a = 79.4, \\quad b = 0.902, \\quad \\text{Time: } 43\\text{ days}$",
+                                "ans": "$a = 79.4, b = 0.902, \\text{Time: } 43\\text{ days}$",
                                 "feedback": "This is incorrect. This represents a rounding error. You may have rounded $t \\approx 42.2$ up to $43$ days instead of rounding to the nearest integer of $42$."
                         },
                         {
-                                "ans": "$a = 79.4, \\quad b = -0.045, \\quad \\text{Time: } 42\\text{ days}$",
+                                "ans": "$a = 79.4, b = -0.045, \\text{Time: } 42\\text{ days}$",
                                 "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse base-10 logarithm to the gradient, mistakenly writing the parameter $b$ as equal to the negative rate gradient of $-0.045$."
                         }
                 ],
@@ -1563,15 +1563,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$a = 1.80, \\quad b = 0.705, \\quad \\text{Time: } 12\\text{ hours}$",
+                                "ans": "$a = 1.80,  b = 0.705,  \\text{Time: } 12\\text{ hours}$",
                                 "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse base-10 logarithm ($10^x$) to the vertical intercept, stating that the parameter $a$ is equal to the intercept value of $1.80$ directly."
                         },
                         {
-                                "ans": "$a = 63.1, \\quad b = 0.705, \\quad \\text{Time: } 11\\text{ hours}$",
+                                "ans": "$a = 63.1,  b = 0.705,  \\text{Time: } 11\\text{ hours}$",
                                 "feedback": "This is incorrect. This represents a rounding error. You may have rounded $t \\approx 11.84$ down to $11$ hours instead of rounding to the nearest hour of $12$ hours."
                         },
                         {
-                                "ans": "$a = 63.1, \\quad b = -0.152, \\quad \\text{Time: } 12\\text{ hours}$",
+                                "ans": "$a = 63.1,  b = -0.152,  \\text{Time: } 12\\text{ hours}$",
                                 "feedback": "This is incorrect. This error occurs if you forgot to apply the inverse base-10 logarithm to the gradient, mistakenly writing the parameter $b$ as equal to the negative rate gradient of $-0.152$."
                         }
                 ],
