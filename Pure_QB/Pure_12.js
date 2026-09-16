@@ -1046,7 +1046,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "deeper",
                         "title": "The Head Teacher's Eye: Radius and Constant Relationships",
-                        "content": "For any circle represented in general form $x^2 + y^2 + 2gx + 2fy + c = 0$, the radius is given by $r = \\sqrt{ g^2 + f^2 - c }$. This implies $r^2 = g^2 + f^2 - c$. In this question, $g = -2$, $f = 6$, and $c = k$. Substituting these values in gives $7^2 = (-2)^2 + 6^2 - k \\implies 49 = 4 + 36 - k \\implies k = -9$. This formula is a very useful shortcut to remember!"
+                        "content": "For any circle represented in general form $x^2 + y^2 + 2gx + 2fy + c = 0$, the radius is given by $r = \\sqrt{ g^2 + f^2 - c }$. This implies $r^2 = g^2 + f^2 - c$. In this question, $g = -2$, $f = 6$, and $c = k$. Substituting these values in gives \\begin{aligned}7^2 $= (-2)^2 + 6^2 - k \\cr &\\implies 49 = 4 + 36 - k \\cr &\\implies k = -9\\end{aligned}. This formula is a very useful shortcut to remember!"
                 }
         },
         {
@@ -1170,7 +1170,7 @@ window.ALEVEL_QUESTIONS = [
                         "content": "Be extremely vigilant when dealing with diameter endpoints. A common slip is to use the full distance $AB$ as the radius instead of halving it, or to use $r^2 = (AB)^2$ directly. Always write down the midpoint as the centre, compute the radius $r = \\dfrac{ 1 }{ 2 } AB$, and then square it to obtain $r^2$."
                 }
         },
-        {
+{
                 "id": "004581",
                 "board": "OCR",
                 "branch": "Pure",
@@ -1183,10 +1183,11 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "Solve the equation $|3x - 2| = |x + 4|$.",
                 "steps": [
-                        "To solve an equation of the form $|f(x)| = |g(x)|$, we split the equation into two cases. Since their absolute values are equal, the terms inside must either be equal or have opposite signs:<br><strong>Case 1:</strong> $3x - 2 = x + 4$<br><strong>Case 2:</strong> $3x - 2 = -(x + 4)$",
-                        "Solve <strong>Case 1</strong> by grouping the $x$ terms on one side:<br>\\begin{aligned} 3x - 2 &= x + 4 \\cr 2x &= 6 \\cr x &= 3 \\end{aligned}",
-                        "Solve <strong>Case 2</strong> by expanding the negative bracket and solving:<br>\\begin{aligned} 3x - 2 &= -(x + 4) \\cr 3x - 2 &= -x - 4 \\cr 4x &= -2 \\cr x &= -\\dfrac{ 1 }{ 2 } \\end{aligned}",
-                        "Since both values satisfy the original equation, the complete solution is:<br>$x = 3$ or $x = -\\dfrac{ 1 }{ 2 }$"
+                        "To solve an equation of the form $|f(x)| = |g(x)|$, split it into two cases:<br><br><strong>Case 1:</strong> $3x - 2 = x + 4$<br><br><strong>Case 2:</strong> $3x - 2 = -(x + 4)$",
+                        "Solve <strong>Case 1</strong>:\\begin{aligned} 3x - 2 &= x + 4 \\cr 2x &= 6 \\cr x &= 3 \\end{aligned}",
+                        "Solve <strong>Case 2</strong>:\\begin{aligned} 3x - 2 &= -(x + 4) \\cr 3x - 2 &= -x - 4 \\cr 4x &= -2 \\cr x &= -\\dfrac{1}{2} \\end{aligned}",
+                        "Both values satisfy the original equation, giving the solutions $x = 3$ or $x = -\\dfrac{1}{2}$.",
+                        "Final Answer: $x = 3$ or $x = -\\dfrac{1}{2}$"
                 ],
                 "pi_options": [
                         {
@@ -1221,11 +1222,12 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "Solve the equation $|2x - 5| = 3x - 1$.",
                 "steps": [
-                        "To solve $|2x - 5| = 3x - 1$, we must find the values of $x$ that satisfy the positive and negative branches of the modulus, and then check each solution to ensure it is valid:<br><strong>Case 1 (Positive branch):</strong> $2x - 5 = 3x - 1$<br><strong>Case 2 (Negative branch):</strong> $2x - 5 = -(3x - 1)$",
-                        "Solve <strong>Case 1</strong>:<br>\\begin{aligned} 2x - 5 &= 3x - 1 \\cr -x &= 4 \\cr x &= -4 \\end{aligned}",
-                        "Solve <strong>Case 2</strong>:<br>\\begin{aligned} 2x - 5 &= -(3x - 1) \\cr 2x - 5 &= -3x + 1 \\cr 5x &= 6 \\cr x &= \\dfrac{ 6 }{ 5 } \\end{aligned}",
-                        "Now we must check both solutions. Because the right-hand side is not inside a modulus, it must be non-negative (since an absolute value can never be negative):<br>For $x = -4$, the right-hand side is $3(-4) - 1 = -13 < 0$. Thus, $x = -4$ is an <strong>extraneous solution</strong> and must be rejected.<br><br>For $x = \\dfrac{ 6 }{ 5 }$, the right-hand side is $3\\left( \\dfrac{ 6 }{ 5 } \\right) - 1 = \\dfrac{ 13 }{ 5 } \\ge 0$. Thus, $x = \\dfrac{ 6 }{ 5 }$ is valid.",
-                        "Therefore, the only valid solution to the equation is:<br>$x = \\dfrac{ 6 }{ 5 }$ (or $1.2$)"
+                        "To solve $|2x - 5| = 3x - 1$, find the values of $x$ that satisfy both branches, then check for extraneous solutions:<br><br><strong>Case 1 (Positive branch):</strong> $2x - 5 = 3x - 1$<br><br><strong>Case 2 (Negative branch):</strong> $2x - 5 = -(3x - 1)$",
+                        "Solve <strong>Case 1</strong>:\\begin{aligned} 2x - 5 &= 3x - 1 \\cr -x &= 4 \\cr x &= -4 \\end{aligned}",
+                        "Solve <strong>Case 2</strong>:\\begin{aligned} 2x - 5 &= -(3x - 1) \\cr 2x - 5 &= -3x + 1 \\cr 5x &= 6 \\cr x &= \\dfrac{6}{5} \\end{aligned}",
+                        "Check both solutions because the right-hand side must be non-negative:<br><br>For $x = -4$, the right-hand side is $3(-4) - 1 = -13$, which is negative. Since a modulus cannot equal a negative number, $x = -4$ is an extraneous solution and must be rejected.<br><br>For $x = \\dfrac{6}{5}$, the right-hand side is $3\\left(\\dfrac{6}{5}\\right) - 1 = \\dfrac{13}{5} \\ge 0$, which is valid.",
+                        "Therefore, the only valid solution is $x = \\dfrac{6}{5}$ (or $1.2$).",
+                        "Final Answer: $x = \\dfrac{6}{5}$"
                 ],
                 "pi_options": [
                         {
@@ -1260,10 +1262,11 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "Solve the inequality $|2x - 3| < |x + 2|$.",
                 "steps": [
-                        "Since both sides of the inequality are non-negative, we can solve it by squaring both sides to eliminate the absolute value brackets:<br>$$(2x - 3)^2 < (x + 2)^2$$",
-                        "Expand both sides of the inequality:<br>\\begin{aligned} 4x^2 - 12x + 9 &< x^2 + 4x + 4 \\cr 4x^2 - 12x + 9 - x^2 - 4x - 4 &< 0 \\cr 3x^2 - 16x + 5 &< 0 \\end{aligned}",
-                        "To solve this quadratic inequality, find the critical values by solving the quadratic equation $3x^2 - 16x + 5 = 0$. We can factorise this equation:<br>\\begin{aligned} 3x^2 - 15x - x + 5 &= 0 \\cr 3x(x - 5) - 1(x - 5) &= 0 \\cr (3x - 1)(x - 5) &= 0 \\end{aligned}<br>This gives the critical values $x = \\dfrac{ 1 }{ 3 }$ and $x = 5$.",
-                        "Consider the graph of $y = 3x^2 - 16x + 5$, which is a U-shaped parabola. The inequality is satisfied where the curve lies below the $x$-axis (i.e., $< 0$):<br>This occurs between the two roots, so the solution is:<br>$$\\dfrac{ 1 }{ 3 } < x < 5$$"
+                        "Since both sides are non-negative, square both sides to eliminate the absolute value brackets:$$(2x - 3)^2 < (x + 2)^2$$",
+                        "Expand and rearrange the terms:\\begin{aligned} &4x^2 - 12x + 9 < x^2 + 4x + 4 \\cr &4x^2 - 12x + 9 \\cr &\\qquad - (x^2 + 4x + 4) < 0 \\cr &3x^2 - 16x + 5 < 0 \\end{aligned}",
+                        "Find the critical values by solving $3x^2 - 16x + 5 = 0$:\\begin{aligned} (3x - 1)(x - 5) = 0 \\end{aligned}This gives critical values $x = \\dfrac{1}{3}$ and $x = 5$.",
+                        "Since $y = 3x^2 - 16x + 5$ is an upward-opening parabola, the inequality is satisfied where the curve lies strictly below the $x$-axis:\\begin{aligned} \\dfrac{1}{3} < x < 5 \\end{aligned}",
+                        "Final Answer: $\\dfrac{1}{3} < x < 5$"
                 ],
                 "pi_options": [
                         {
@@ -1275,7 +1278,7 @@ window.ALEVEL_QUESTIONS = [
                                 "feedback": "Check your factorisation. The factored form is $(3x - 1)(x - 5) = 0$. Setting $3x - 1 = 0$ gives $x = \\dfrac{ 1 }{ 3 }$, not $-\\dfrac{ 1 }{ 3 }$."
                         },
                         {
-                                "ans": "$$\\dfrac{ 1 }{ 3 } \\le x \\le 5$",
+                                "ans": "$\\dfrac{ 1 }{ 3 } \\le x \\le 5$",
                                 "feedback": "Pay close attention to the inequality sign in the question. The original inequality uses strict inequality ($<$), so your final answer must also use strict inequalities ($<$) rather than weak inequalities ($\\le$)."
                         }
                 ],
@@ -1298,11 +1301,12 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "Solve the equation $x^2 - 3|x| - 10 = 0$.",
                 "steps": [
-                        "To solve this equation, use the identity $x^2 = |x|^2$ to rewrite the equation entirely in terms of $|x|$:<br>$$|x|^2 - 3|x| - 10 = 0$$",
-                        "This is a quadratic equation in terms of $|x|$. Let $y = |x|$, where $y \\ge 0$ since absolute values are always non-negative. This gives:<br>$$y^2 - 3y - 10 = 0$$",
-                        "Factorise the quadratic equation:<br>\\begin{aligned} (y - 5)(y + 2) &= 0 \\end{aligned}<br>So, $y = 5$ or $y = -2$.",
-                        "Since $y = |x| \\ge 0$, the solution $y = -2$ is impossible and must be rejected. This leaves:<br>$|x| = 5$",
-                        "Solve for $x$:<br>\\begin{aligned} x = 5 \\quad \\text{or} \\quad x = -5 \\end{aligned}"
+                        "Use the identity $x^2 = |x|^2$ to rewrite the equation entirely in terms of $|x|$:$$|x|^2 - 3|x| - 10 = 0$$",
+                        "Let $y = |x|$, where $y \\ge 0$:$$y^2 - 3y - 10 = 0$$",
+                        "Factorise the quadratic:\\begin{aligned} (y - 5)(y + 2) = 0 \\end{aligned}So $y = 5$ or $y = -2$.",
+                        "Since $y = |x| \\ge 0$, reject $y = -2$, leaving $|x| = 5$.",
+                        "Solve $|x| = 5$:\\begin{aligned} x = 5 \\text{ or } x = -5 \\end{aligned}",
+                        "Final Answer: $x = 5$ or $x = -5$"
                 ],
                 "pi_options": [
                         {
@@ -1337,11 +1341,12 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "Solve the inequality $|2x - 1| \\ge 5 - x$.",
                 "steps": [
-                        "To solve the inequality $|2x - 1| \\ge 5 - x$, we first find the critical intersection points by solving the corresponding equation:<br>$$|2x - 1| = 5 - x$$",
-                        "Split the equation into its positive and negative cases:<br><strong>Case 1:</strong> $2x - 1 = 5 - x$<br><strong>Case 2:</strong> $2x - 1 = -(5 - x)$",
-                        "Solve <strong>Case 1</strong>:<br>\\begin{aligned} 2x - 1 &= 5 - x \\cr 3x &= 6 \\cr x &= 2 \\end{aligned}",
-                        "Solve <strong>Case 2</strong>:<br>\\begin{aligned} 2x - 1 &= -5 + x \\cr x &= -4 \\end{aligned}<br>This gives us two critical values: $x = -4$ and $x = 2$.",
-                        "To find the intervals that satisfy $|2x - 1| \\ge 5 - x$, test a value from each of the three regions defined by our critical values $x = -4$ and $x = 2$:<br><br><strong>Region 1 ($x \\le -4$):</strong> Test $x = -5$.<br>$|2(-5) - 1| = |-11| = 11$, and $5 - (-5) = 10$. Since $11 \\ge 10$, this region is part of the solution.<br><br><strong>Region 2 ($-4 < x < 2$):</strong> Test $x = 0$.<br>$|2(0) - 1| = |-1| = 1$, and $5 - 0 = 5$. Since $1 \\ge 5$ is false, this region is not part of the solution.<br><br><strong>Region 3 ($x \\ge 2$):</strong> Test $x = 3$.<br>$|2(3) - 1| = |5| = 5$, and $5 - 3 = 2$. Since $5 \\ge 2$, this region is part of the solution.<br><br>Combining these results, the final solution set is:<br>$x \\le -4$ or $x \\ge 2$"
+                        "Find the critical intersection points by solving the corresponding equation:$$|2x - 1| = 5 - x$$",
+                        "Split into positive and negative cases:<br><br><strong>Case 1:</strong> $2x - 1 = 5 - x$<br><br><strong>Case 2:</strong> $2x - 1 = -(5 - x)$",
+                        "Solve <strong>Case 1</strong>:\\begin{aligned} 2x - 1 &= 5 - x \\cr 3x &= 6 \\cr x &= 2 \\end{aligned}",
+                        "Solve <strong>Case 2</strong>:\\begin{aligned} 2x - 1 &= -5 + x \\cr x &= -4 \\end{aligned}The critical values are $x = -4$ and $x = 2$.",
+                        "Test values in each region defined by $x = -4$ and $x = 2$:<br><br><strong>Region 1 ($x \\le -4$):</strong> Test $x = -5$.<br>$|2(-5) - 1| = 11$ and $5 - (-5) = 10$. Since $11 \\ge 10$, this region is part of the solution.<br><br><strong>Region 2 ($-4 < x < 2$):</strong> Test $x = 0$.<br>$|2(0) - 1| = 1$ and $5 - 0 = 5$. Since $1 \\ge 5$ is false, this region is not part of the solution.<br><br><strong>Region 3 ($x \\ge 2$):</strong> Test $x = 3$.<br>$|2(3) - 1| = 5$ and $5 - 3 = 2$. Since $5 \\ge 2$, this region is part of the solution.<br><br>Combining these results gives $x \\le -4$ or $x \\ge 2$.",
+                        "Final Answer: $x \\le -4$ or $x \\ge 2$"
                 ],
                 "pi_options": [
                         {
