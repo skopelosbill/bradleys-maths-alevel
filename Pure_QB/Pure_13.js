@@ -210,11 +210,13 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Differentiation",
+        "major_area": "Integration",
         "topic": "Differential Equations",
         "subtopic": [
-                "Functions and Mappings",
-                "Integration"
+                "Separation of Variables",
+                "Reverse Chain Rule",
+                "Boundary conditions"
+                
         ],
         "img": false,
         "question": "The gradient of the curve $y = \\mathrm{f}(x)$ is given by the differential equation:<br><br>\\begin{aligned} &(2x - 1)^3 \\dfrac{\\text{d}y}{\\text{d}x} + 8y^2 = 0 \\end{aligned}<br><br>and the curve passes through the point $(1, 1)$.<br><br>By solving this differential equation, show that:<br><br>\\begin{aligned} &\\mathrm{f}(x) = \\dfrac{ax^2 - ax + 1}{bx^2 - bx + 1} \\end{aligned}<br><br>where $a$ and $b$ are integers to be determined.",
@@ -254,11 +256,13 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Differentiation",
+        "major_area": "Integration",
         "topic": "Differential Equations",
         "subtopic": [
-                "Exponential and Logarithmic Functions and Graphs",
-                "Integration"
+                "Separation of Variables",
+                "Log, exponential and Trig Functions",
+                "Boundary conditions"
+                
         ],
         "img": false,
         "question": "The gradient of the curve $y = \\mathrm{f}(x)$ is given by the differential equation:<br><br>\\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{y\\cos x}{1 + 2y} \\end{aligned}<br><br>and the curve passes through the point $(0, 1)$.<br><br>By solving this differential equation, show that $y\\mathrm{e}^{2y} = \\mathrm{e}^{2 + \\sin x}$.",
@@ -295,11 +299,11 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Differentiation",
+        "major_area": "Integration",
         "topic": "Differential Equations",
         "subtopic": [
-                "Functions and Mappings",
-                "Modelling and Applications"
+                "Separation of Variables",
+                "Moddeling Applications"      
         ],
         "img": false,
         "question": "A tank contains $100$ litres of pure water. Salt water containing $0.2\\text{ kg}$ of salt per litre runs into the tank at a rate of $5$ litres per minute. The well-stirred mixture runs out of the tank at the same rate.<br><br>Let $x\\text{ kg}$ be the amount of salt in the tank at time $t$ minutes.<br><br><strong>(i)</strong> Show that the rate of change of $x$ is given by the differential equation:<br><br>\\begin{aligned} &\\dfrac{\\text{d}x}{\\text{d}t} = \\dfrac{20 - x}{20} \\end{aligned}<br><br><strong>(ii)</strong> Solve this differential equation, given that initially there is no salt in the tank, to find $x$ in terms of $t$.",
@@ -339,10 +343,12 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Differentiation",
+        "major_area": "Integration",
         "topic": "Differential Equations",
         "subtopic": [
-                "Integration"
+                "Separation of Variables",
+                "Partial Fractions",
+                "Exponentials and Logs"      
         ],
         "img": false,
         "question": "The variables $x$ and $y$ satisfy the differential equation:<br><br>\\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{y(y + 3)}{x} \\end{aligned}<br><br>for $x > 0$ and $y > 0$. It is given that $y = 3$ when $x = 1$.<br><br>By solving this differential equation, show that $y = \\dfrac{3x^3}{2 - x^3}$.",
@@ -382,11 +388,9 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Differentiation",
-        "topic": "Differential Equations",
         "subtopic": [
-                "Functions and Mappings",
-                "Integration"
+                "Separation of Variables",
+                "Exponentials and Logs"      
         ],
         "img": false,
         "question": "The variables $x$ and $y$ satisfy the differential equation:<br><br>\\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x} = x\\mathrm{e}^{y - x^2} \\end{aligned}<br><br>and $y = 0$ when $x = 0$.<br><br><strong>(i)</strong> Find the general solution of the differential equation, expressing $y$ in terms of $x$.<br><br><strong>(ii)</strong> Hence find the exact value of $y$ when $x = 1$.",
