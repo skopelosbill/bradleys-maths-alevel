@@ -1589,7 +1589,9 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                        "Binomial Expansion"
+                        "Integration by Substitution",
+                        "Binomial Expansion",
+                        "Small Angle Approximation"
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\sqrt{9 - 18x^2}$.<br><br><strong>(a)</strong> Show that the first two terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $3 - 3x^2$.<br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid.<br><br><strong>(c)</strong> Hence, using the small-angle approximation $\\cos(2x) \\approx 1 - 2x^2$, find an approximation for $\\int_{0}^{0.3} \\sqrt{\\cos(2x)} \\text{d}x$, giving your answer to five decimal places. Fully justify your answer.",
@@ -1629,7 +1631,9 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                        "Binomial Expansion"
+                        "Integration by Substitution",
+                        "Binomial Expansion",
+                        "Small Angle Approximation"
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\sqrt{16 - 8x^2}$.<br><br><strong>(a)</strong> Show that the first two terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $4 - x^2$.<br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid.<br><br><strong>(c)</strong> Hence, using the small-angle approximation $\\cos x \\approx 1 - \\dfrac{x^2}{2}$, find an approximation for $\\int_{0}^{0.5} \\sqrt{\\cos x} \\text{d}x$, giving your answer to five decimal places. Fully justify your answer.",
@@ -1669,7 +1673,9 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                        "Binomial Expansion"
+                        "Integration by Substitution",
+                        "Binomial Expansion",
+                        "Small Angle Approximation"
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\dfrac{1}{\\sqrt{1 - 4x^2}}$.<br><br><strong>(a)</strong> Show that the first two terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $1 + 2x^2$.<br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid.<br><br><strong>(c)</strong> Hence, find an approximation for $\\int_{0}^{0.3} \\dfrac{1}{\\sqrt{1 - 4x^2}} \\text{d}x$, giving your answer to five decimal places. Fully justify your answer.",
@@ -1709,7 +1715,9 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                        "Binomial Expansion"
+                        "Integration by Substitution",
+                        "Binomial Expansion",
+                        "Small Angle Approximation"
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\sqrt{1 - 3x}$.<br><br><strong>(a)</strong> Show that the first three terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $1 - \\dfrac{3}{2}x - \\dfrac{9}{8}x^2$.<br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid.<br><br><strong>(c)</strong> Hence, find an approximation for $\\int_{0}^{0.1} \\sqrt{1 - 3x} \\text{d}x$, giving your answer to five decimal places. Fully justify your answer.",
@@ -1749,7 +1757,9 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                        "Binomial Expansion"
+                        "Integration by Substitution",
+                        "Binomial Expansion",
+                        "Small Angle Approximation"
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\dfrac{1}{1 + 2x}$.<br><br><strong>(a)</strong> Show that the first three terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $1 - 2x + 4x^2$.<br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid.<br><br><strong>(c)</strong> Hence, find an approximation for $\\int_{0}^{0.25} \\dfrac{1}{1 + 2x} \\text{d}x$, giving your answer to five decimal places. Fully justify your answer.",
