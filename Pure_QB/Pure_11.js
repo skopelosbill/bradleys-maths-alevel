@@ -1395,7 +1395,7 @@ window.ALEVEL_QUESTIONS = [
                         "Equate the regression parameters to find estimates for $p$ and $q$:<br><br>1. For $p$:\\begin{aligned} \\log_{10} p &= 3.70 \\cr p &= 10^{3.70} \\cr &\\approx 5012 \\end{aligned}To three significant figures, $p \\approx 5010$ (or $5.01 \\times 10^3$).<br><br>2. For $q$:\\begin{aligned} \\log_{10} q &= 0.0345 \\cr q &= 10^{0.0345} \\cr &\\approx 1.0827 \\end{aligned}To three significant figures, $q \\approx 1.08$.",
                         "For part <strong>(c)</strong>, determine when $V > 300,000$ by substituting this value into the linearised log model:\\begin{aligned} \\log_{10}(300,000) &= 3.70 + 0.0345 t \\cr 5.4771 &= 3.70 + 0.0345 t \\cr 0.0345 t &= 1.7771 \\cr t &= \\dfrac{1.7771}{0.0345} \\cr &\\approx 51.5 \\text{ years} \\end{aligned}Since $t$ is the number of years after 1 January 1980:\\begin{aligned} \\text{Year} &= 1980 + 51.5 \\cr &= 2031.5 \\end{aligned}Thus, the valuation first exceeds £300,000 during the year $2031$ (approximately 52 years after 1980).",
                         "For part <strong>(d)</strong>, comment on the reliability:<br><br>The model is based on only five data points spanning 40 years, and assumes a constant, uninterrupted rate of exponential growth. Antique art markets are highly volatile and influenced by unpredictable factors (such as economic recessions, changing tastes, fashion, or provenance). Extrapolating over a decade beyond the data range introduces substantial uncertainty, making the prediction mathematically consistent with the model but not highly reliable in real life.",
-                        "Final Answer: $$p = 5010, \\quad q = 1.08, \\quad \\text{Year: } 2031$$"
+                        "Final Answer: $$p = 5010, q = 1.08, \\text{Year: } 2031$$"
                 ],
                 "pi_options": [
                         {
@@ -1436,7 +1436,7 @@ window.ALEVEL_QUESTIONS = [
                         "Find the estimate for $a$ by equating the vertical intercept of $4.79$ to $\\ln a$:\\begin{aligned} \\ln a &= 4.79 \\cr a &= \\mathrm{e}^{4.79} \\cr &\\approx 120.3 \\end{aligned}To three significant figures, $a \\approx 120$.",
                         "For part <strong>(c)</strong>, substitute $N = 5000$ into the linearised natural log model to find $t$:\\begin{aligned} \\ln(5000) &= 4.79 + 0.1005 t \\cr 8.5172 &= 4.79 + 0.1005 t \\cr 0.1005 t &= 3.7272 \\cr t &= \\dfrac{3.7272}{0.1005} \\cr &\\approx 37.1 \\text{ years} \\end{aligned}Since $t$ is the number of years after 2000:\\begin{aligned} \\text{Year} &= 2000 + 37.1 \\cr &= 2037.1 \\end{aligned}Thus, the bird population is predicted to first exceed 5,000 during the year $2037$ (approximately 37 years after 2000).",
                         "For part <strong>(d)</strong>, comment on the reliability:<br><br>The model assumes continuous, unchecked exponential growth with no limiting environmental factors. In reality, biological systems are constrained by factors like carrying capacity, food supply, territorial nesting space, disease, and predation (represented by a logistic curve rather than an exponential one). Furthermore, predicting nearly 20 years beyond the available data range introduces significant extrapolation uncertainty.",
-                        "Final Answer: $$a = 120, \\quad b = 0.101, \\quad \\text{Year: } 2037$$"
+                        "Final Answer: $$a = 120, b = 0.101, \\text{Year: } 2037$$"
                 ],
                 "pi_options": [
                         {
@@ -1477,7 +1477,7 @@ window.ALEVEL_QUESTIONS = [
                         "Find the estimate for $a$ by equating the vertical intercept of $0.30$ to $\\log_{10} a$:\\begin{aligned} \\log_{10} a &= 0.30 \\cr a &= 10^{0.30} \\cr &\\approx 1.995 \\end{aligned}To three significant figures, $a \\approx 2.00$.",
                         "For part <strong>(c)</strong>, construct the power model using $a = 2.00$ and $b = 0.500$:\\begin{aligned} T &= 2.00 \\times L^{0.500} \\cr &= 2.00 \\sqrt{L} \\end{aligned}Substitute the value $L = 5.0$ into this equation to predict the period $T$:\\begin{aligned} T &= 2.00 \\sqrt{5.0} \\cr &\\approx 2.00 \\times 2.236 \\cr &\\approx 4.47 \\text{ s} \\end{aligned}",
                         "For part <strong>(d)</strong>, comment on the reliability:<br><br>The data covers lengths from $0.1$ m to $2.0$ m, so predicting at $5.0$ m represents a significant extrapolation. For much longer pendulums, real-world factors (such as air resistance, joint friction, and cable weight) may slightly alter the period from the simple power law. However, because $T = 2\\pi \\sqrt{L/g}$ is a fundamental physical law, the model's form remains physically highly reliable if structural setups are preserved.",
-                        "Final Answer: $$a = 2.00, \\quad b = 0.500, \\quad \\text{Period: } 4.47\\text{ s}$$"
+                        "Final Answer: $$a = 2.00,  b = 0.500,  \\text{Period: } 4.47\\text{ s}$$"
                 ],
                 "pi_options": [
                         {
@@ -1518,7 +1518,7 @@ window.ALEVEL_QUESTIONS = [
                         "Equate the linear parameters to find the estimates for $a$ and $b$:<br><br>1. For $a$:\\begin{aligned} \\log_{10} a &= 1.90 \\cr a &= 10^{1.90} \\cr &\\approx 79.43 \\end{aligned}To three significant figures, $a \\approx 79.4$.<br><br>2. For $b$:\\begin{aligned} \\log_{10} b &= -0.045 \\cr b &= 10^{-0.045} \\cr &\\approx 0.9016 \\end{aligned}To three significant figures, $b \\approx 0.902$ (showing decay since $b < 1$).",
                         "For part <strong>(c)</strong>, determine when the mass drops below $1$ gram by setting $M = 1$, which corresponds to $\\log_{10} M = 0$:\\begin{aligned} 0 &= 1.90 - 0.045 t \\cr 0.045 t &= 1.90 \\cr t &= \\dfrac{1.90}{0.045} \\cr &\\approx 42.22 \\text{ days} \\end{aligned}Thus, rounding to the nearest integer, it takes $42$ days for the mass to first drop below $1$ gram.",
                         "For part <strong>(d)</strong>, discuss reliability:<br><br>Unlike economic or biological systems, radioactive decay is a fundamental physical process governed by stable physical laws (constant half-life). Because there are no external, volatile variables that can shift the decay rate over time, this model's extrapolation is highly mathematically reliable, making the 42-day estimate very accurate in practice.",
-                        "Final Answer: $a = 79.4, \\quad b = 0.902, \\quad \\text{Time: } 42\\text{ days}$"
+                        "Final Answer: $a = 79.4, b = 0.902, \\text{Time: } 42\\text{ days}$"
                 ],
                 "pi_options": [
                         {
@@ -1559,7 +1559,7 @@ window.ALEVEL_QUESTIONS = [
                         "Equate the linear parameters to find the estimates for $a$ and $b$:<br><br>1. For $a$:\\begin{aligned} \\log_{10} a &= 1.80 \\cr a &= 10^{1.80} \\cr &\\approx 63.09 \\end{aligned}To three significant figures, $a \\approx 63.1$.<br><br>2. For $b$:\\begin{aligned} \\log_{10} b &= -0.152 \\cr b &= 10^{-0.152} \\cr &\\approx 0.7047 \\end{aligned}To three significant figures, $b \\approx 0.705$.",
                         "For part <strong>(c)</strong>, find when the concentration falls below $1$ mg/L, which corresponds to setting $C = 1$ and $\\log_{10} C = 0$:\\begin{aligned} 0 &= 1.80 - 0.152 t \\cr 0.152 t &= 1.80 \\cr t &= \\dfrac{1.80}{0.152} \\cr &\\approx 11.84 \\text{ hours} \\end{aligned}Thus, rounding to the nearest hour, the drug concentration first falls below $1$ mg/L after $12$ hours.",
                         "For part <strong>(d)</strong>, state a limiting reason:<br><br>The model assumes a constant rate of exponential clearance (first-order kinetics), but in biological systems, metabolic pathways can saturate or change as concentrations become extremely low, altering the clearance rate. Furthermore, patient-specific factors (such as kidney/liver function or hydration levels) can affect the excretion rate over longer timeframes.",
-                        "Final Answer: $a = 63.1, \\quad b = 0.705, \\quad \\text{Time: } 12\\text{ hours}$"
+                        "Final Answer: $a = 63.1, b = 0.705, \\text{Time: } 12\\text{ hours}$"
                 ],
                 "pi_options": [
                         {
@@ -1589,7 +1589,9 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                   "Binomial Exppansion"     
+                        "integration by Substitution",
+                        "Binomial Expansion",
+                        "Small Angle Approximation"    
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\sqrt{ 9 - 18x^2 }$. <br><br><strong>(a)</strong> Show that the first two terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $3 - 3x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, using the small-angle approximation $\\cos(2x) \\approx 1 - 2x^2$, find an approximation for $\\int_{0}^{0.3} \\sqrt{ \\cos(2x) } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
@@ -1628,7 +1630,9 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                   "Binomial Exppansion"     
+                        "integration by Substitution",
+                        "Binomial Expansion",
+                        "Small Angle Approximation"    
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\sqrt{ 16 - 8x^2 }$. <br><br><strong>(a)</strong> Show that the first two terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $4 - x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, using the small-angle approximation $\\cos x \\approx 1 - \\dfrac{ x^2 }{ 2 }$, find an approximation for $\\int_{0}^{0.5} \\sqrt{ \\cos x } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
@@ -1667,7 +1671,9 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                   "Binomial Exppansion"     
+                        "integration by Substitution",
+                        "Binomial Expansion",
+                        "Small Angle Approximation"    
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\dfrac{ 1 }{ \\sqrt{ 1 - 4x^2 } }$. <br><br><strong>(a)</strong> Show that the first two terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $1 + 2x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, find an approximation for $\\int_{0}^{0.3} \\dfrac{ 1 }{ \\sqrt{ 1 - 4x^2 } } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
@@ -1706,7 +1712,9 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                   "Binomial Exppansion"     
+                        "integration by Substitution",
+                        "Binomial Expansion",
+                        "Small Angle Approximation"    
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\sqrt{ 1 - 3x }$. <br><br><strong>(a)</strong> Show that the first three terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $1 - \\dfrac{ 3 }{ 2 }x - \\dfrac{ 9 }{ 8 }x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, find an approximation for $\\int_{0}^{0.1} \\sqrt{ 1 - 3x } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
@@ -1745,7 +1753,9 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Integration",
                 "topic": "Numerical Methods",
                 "subtopic": [
-                   "Binomial Exppansion"     
+                        "integration by Substitution",
+                        "Binomial Expansion",
+                        "Small Angle Approximation"    
                 ],
                 "img": false,
                 "question": "The function $f(x)$ is defined by $f(x) = \\dfrac{ 1 }{ 1 + 2x }$. <br><br><strong>(a)</strong> Show that the first three terms of the binomial expansion of $f(x)$ in ascending powers of $x$ are $1 - 2x + 4x^2$. <br><br><strong>(b)</strong> State the range of values of $x$ for which the expansion found in part (a) is valid. <br><br><strong>(c)</strong> Hence, find an approximation for $\\int_{0}^{0.25} \\dfrac{ 1 }{ 1 + 2x } \\, \\mathrm{d}x$, giving your answer to five decimal places. Fully justify your answer.",
