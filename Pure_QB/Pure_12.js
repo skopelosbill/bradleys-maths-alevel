@@ -1573,418 +1573,423 @@ window.ALEVEL_QUESTIONS = [
                         "content": "When rearranging $-x^2 + 14x - 40 \\ge 0$ by multiplying the entire inequality by $-1$, you MUST reverse the inequality sign. Multiplying or dividing an inequality by a negative number flips the direction of the sign: $\\ge$ becomes $\\le$."
                 }
         },
-      {
-                "id": "004591",
-                "board": "OCR",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Algebra and Functions",
-                "topic": "Functions",
-                "subtopic": [
-                        "Functions and Mappings"
-                ],
-                "img": false,
-                "question": "The functions $f$ and $g$ are defined for all real values of $x$ by $f(x) = x^3$ and $g(x) = x^2 + 3$.<br><br><strong>(i)</strong> Write down expressions for:<br><strong>(a)</strong> $fg(x)$,<br><strong>(b)</strong> $gf(x)$.<br><br><strong>(ii)</strong> Hence find the real values of $x$ for which $fg(x) - gf(x) = 60$.",
-                "steps": [
-                        "<strong>(i)(a)</strong> Substitute $g(x)$ into $f(x)$:\\begin{aligned} fg(x) &= f(x^2 + 3) \\cr &= (x^2 + 3)^3 \\end{aligned}",
-                        "<strong>(i)(b)</strong> Substitute $f(x)$ into $g(x)$:\\begin{aligned} gf(x) &= g(x^3) \\cr &= (x^3)^2 + 3 \\cr &= x^6 + 3 \\end{aligned}",
-                        "<strong>(ii)</strong> Set up the equation $fg(x) - gf(x) = 60$:$$ (x^2 + 3)^3 - (x^6 + 3) = 60 $$",
-                        "Expand $(x^2 + 3)^3$ using binomial expansion:\\begin{aligned} &(x^2 + 3)^3 \\cr &\\quad = (x^2)^3 + 3(x^2)^2(3) \\cr &\\qquad + 3(x^2)(3)^2 + 3^3 \\cr &\\quad = x^6 + 9x^4 + 27x^2 + 27 \\end{aligned}",
-                        "Substitute back and simplify:\\begin{aligned} &(x^6 + 9x^4 + 27x^2 + 27) \\cr &\\qquad - (x^6 + 3) = 60 \\cr &9x^4 + 27x^2 + 24 = 60 \\cr &9x^4 + 27x^2 - 36 = 0 \\end{aligned}",
-                        "Divide by $9$:$$ x^4 + 3x^2 - 4 = 0 $$",
-                        "Let $u = x^2$, where $u \\ge 0$:\\begin{aligned} u^2 + 3u - 4 &= 0 \\cr (u + 4)(u - 1) &= 0 \\end{aligned}This yields $u = -4$ or $u = 1$.",
-                        "Since $u = x^2 \\ge 0$, reject $u = -4$:\\begin{aligned} x^2 &= 1 \\cr x &= \\pm 1 \\end{aligned}Thus, the real values are $x = 1$ or $x = -1$.",
-                        "Final Answer: $x = 1$ or $x = -1$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$x = 1$, $x = -1$, $x = 2$, $x = -2$",
-                                "feedback": "Remember that $x^2$ cannot be negative for real values of $x$. When solving $u = x^2 = -4$, there are no real solutions, so you must reject this root."
-                        },
-                        {
-                                "ans": "$x = 1$ only",
-                                "feedback": "While you correctly identified $x = 1$, remember that $x^2 = 1$ has two real solutions: $x = 1$ and $x = -1$."
-                        },
-                        {
-                                "ans": "$x = 2$ or $x = -2$",
-                                "feedback": "Verify your division by $9$ and your subsequent factorisation. The simplified equation should be $x^4 + 3x^2 - 4 = 0$, leading to $u = 1 \\implies x = \\pm 1$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Spotting Hidden Quadratics",
-                        "content": "Equations of the form $ax^4 + bx^2 + c = 0$ are 'equations in quadratic form'. By using the substitution $u = x^2$, you can solve them using standard quadratic methods. Always remember to filter your final $u$ values, as $u = x^2$ means any negative values of $u$ will yield no real solutions for $x$."
+   {
+        "id": "004591",
+        "board": "OCR",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Functions",
+        "subtopic": [
+                "Functions and Mappings"
+        ],
+        "img": false,
+        "question": "The functions $f$ and $g$ are defined for all real values of $x$ by $f(x) = x^3$ and $g(x) = x^2 + 3$.<br><br><strong>(i)</strong> Write down expressions for:<br><strong>(a)</strong> $fg(x)$,<br><strong>(b)</strong> $gf(x)$.<br><br><strong>(ii)</strong> Hence find the real values of $x$ for which $fg(x) - gf(x) = 60$.",
+        "steps": [
+                "<strong>(i)(a)</strong> Substitute $g(x)$ into $f(x)$:\\begin{aligned} &fg(x) \\cr &\\quad = f(x^2 + 3) \\cr &\\quad = (x^2 + 3)^3 \\end{aligned}",
+                "<strong>(i)(b)</strong> Substitute $f(x)$ into $g(x)$:\\begin{aligned} &gf(x) \\cr &\\quad = g(x^3) \\cr &\\quad = (x^3)^2 + 3 \\cr &\\quad = x^6 + 3 \\end{aligned}",
+                "<strong>(ii)</strong> Set up the equation $fg(x) - gf(x) = 60$:\\begin{aligned} &(x^2 + 3)^3 \\cr &\\qquad - (x^6 + 3) = 60 \\end{aligned}",
+                "Expand $(x^2 + 3)^3$ using binomial expansion:\\begin{aligned} &(x^2 + 3)^3 \\cr &\\quad = (x^2)^3 \\cr &\\qquad + 3(x^2)^2(3) \\cr &\\qquad + 3(x^2)(3)^2 \\cr &\\qquad + 3^3 \\cr &\\quad = x^6 + 9x^4 \\cr &\\qquad + 27x^2 + 27 \\end{aligned}",
+                "Substitute back and simplify:\\begin{aligned} &x^6 + 9x^4 + 27x^2 + 27 \\cr &\\qquad - (x^6 + 3) = 60 \\cr &9x^4 + 27x^2 + 24 = 60 \\cr &9x^4 + 27x^2 - 36 = 0 \\end{aligned}",
+                "Divide the equation by $9$:\\begin{aligned} &x^4 + 3x^2 - 4 = 0 \\end{aligned}",
+                "Let $u = x^2$, where $u \\ge 0$:\\begin{aligned} &u^2 + 3u - 4 = 0 \\cr &(u + 4)(u - 1) = 0 \\cr &u = -4 \\text{ or } u = 1 \\end{aligned}",
+                "Since $u = x^2 \\ge 0$, reject $u = -4$:\\begin{aligned} &x^2 = 1 \\cr &x = \\pm 1 \\end{aligned}<br><br>Thus, the real values are $x = 1$ or $x = -1$.",
+                "Final Answer: $x = 1$ or $x = -1$"
+        ],
+        "pi_options": [
+                {
+                        "ans": "$x = 1$, $x = -1$, $x = 2$, $x = -2$",
+                        "feedback": "Remember that $x^2$ cannot be negative for real values of $x$. When solving for $u = -4$, $x^2 = -4$ has no real solutions, so you must reject this root."
+                },
+                {
+                        "ans": "$x = 1$ only",
+                        "feedback": "While you correctly identified $x = 1$, remember that $x^2 = 1$ has two real solutions: $x = 1$ and $x = -1$."
+                },
+                {
+                        "ans": "$x = 2$ or $x = -2$",
+                        "feedback": "Verify your division by $9$ and your subsequent factorisation. The simplified equation should be $x^4 + 3x^2 - 4 = 0$, leading to $u = 1$, which gives $x = \\pm 1$."
                 }
-        },
-        {
-                "id": "004592",
-                "board": "OCR",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Algebra and Functions",
-                "topic": "Functions",
-                "subtopic": [
-                        "Functions and Mappings"
-                ],
-                "img": false,
-                "question": "The functions $f$ and $g$ are defined for all real values of $x$ by $f(x) = x^2 + 1$ and $g(x) = 3x - 2$.<br><br><strong>(i)</strong> Write down expressions for:<br><strong>(a)</strong> $fg(x)$,<br><strong>(b)</strong> $gf(x)$.<br><br><strong>(ii)</strong> Hence find the values of $x$ for which $fg(x) - gf(x) = 52$.",
-                "steps": [
-                        "<strong>(i)(a)</strong> Substitute $g(x) = 3x - 2$ into $f(x)$:\\begin{aligned} fg(x) &= f(3x - 2) \\cr &= (3x - 2)^2 + 1 \\cr &= 9x^2 - 12x + 4 + 1 \\cr &= 9x^2 - 12x + 5 \\end{aligned}",
-                        "<strong>(i)(b)</strong> Substitute $f(x) = x^2 + 1$ into $g(x)$:\\begin{aligned} gf(x) &= g(x^2 + 1) \\cr &= 3(x^2 + 1) - 2 \\cr &= 3x^2 + 3 - 2 \\cr &= 3x^2 + 1 \\end{aligned}",
-                        "<strong>(ii)</strong> Set up the equation $fg(x) - gf(x) = 52$:$$ (9x^2 - 12x + 5) - (3x^2 + 1) = 52 $$",
-                        "Simplify the quadratic equation:\\begin{aligned} 6x^2 - 12x + 4 &= 52 \\cr 6x^2 - 12x - 48 &= 0 \\end{aligned}",
-                        "Divide by $6$ and factorise:\\begin{aligned} x^2 - 2x - 8 &= 0 \\cr (x - 4)(x + 2) &= 0 \\end{aligned}This yields $x = 4$ or $x = -2$.",
-                        "Final Answer: $x = 4$ or $x = -2$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$x = 4$ only",
-                                "feedback": "A quadratic equation $x^2 - 2x - 8 = 0$ factorises into $(x-4)(x+2) = 0$, which yields two solutions. Make sure you don't lose the negative solution: $x = -2$."
-                        },
-                        {
-                                "ans": "$x = -4$ or $x = 2$",
-                                "feedback": "Check your factorisation of $x^2 - 2x - 8 = 0$. Since the middle term is $-2x$, the factors must be $(x - 4)(x + 2) = 0$, which yields solutions of $x = 4$ and $x = -2$, not the other way around."
-                        },
-                        {
-                                "ans": "$x = 6$ or $x = -4$",
-                                "feedback": "Make sure you divide all terms of the equation $6x^2 - 12x - 48 = 0$ by $6$ correctly. This should simplify to $x^2 - 2x - 8 = 0$."
-                        }
-                ],
-                "bradley_insight": {
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: Spotting Hidden Quadratics",
+                "content": "Equations of the form $ax^4 + bx^2 + c = 0$ are 'equations in quadratic form'. By using the substitution $u = x^2$, you can solve them using standard quadratic methods. Always remember to filter your final $u$ values, as $u = x^2$ means any negative values of $u$ will yield no real solutions for $x$."
+        }
+},
+{
+        "id": "004592",
+        "board": "OCR",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Functions",
+        "subtopic": [
+                "Functions and Mappings"
+        ],
+        "img": false,
+        "question": "The functions $f$ and $g$ are defined for all real values of $x$ by $f(x) = x^2 + 1$ and $g(x) = 3x - 2$.<br><br><strong>(i)</strong> Write down expressions for:<br><strong>(a)</strong> $fg(x)$,<br><strong>(b)</strong> $gf(x)$.<br><br><strong>(ii)</strong> Hence find the values of $x$ for which $fg(x) - gf(x) = 52$.",
+        "steps": [
+                "<strong>(i)(a)</strong> Substitute $g(x) = 3x - 2$ into $f(x)$:\\begin{aligned} &fg(x) \\cr &\\quad = f(3x - 2) \\cr &\\quad = (3x - 2)^2 + 1 \\cr &\\quad = 9x^2 - 12x + 4 + 1 \\cr &\\quad = 9x^2 - 12x + 5 \\end{aligned}",
+                "<strong>(i)(b)</strong> Substitute $f(x) = x^2 + 1$ into $g(x)$:\\begin{aligned} &gf(x) \\cr &\\quad = g(x^2 + 1) \\cr &\\quad = 3(x^2 + 1) - 2 \\cr &\\quad = 3x^2 + 3 - 2 \\cr &\\quad = 3x^2 + 1 \\end{aligned}",
+                "<strong>(ii)</strong> Set up the equation $fg(x) - gf(x) = 52$:\\begin{aligned} &(9x^2 - 12x + 5) \\cr &\\qquad - (3x^2 + 1) = 52 \\end{aligned}",
+                "Simplify the quadratic equation:\\begin{aligned} &6x^2 - 12x + 4 = 52 \\cr &6x^2 - 12x - 48 = 0 \\end{aligned}",
+                "Divide by $6$ and factorise:\\begin{aligned} &x^2 - 2x - 8 = 0 \\cr &(x - 4)(x + 2) = 0 \\cr &x = 4 \\text{ or } x = -2 \\end{aligned}",
+                "Final Answer: $x = 4$ or $x = -2$"
+        ],
+        "pi_options": [
+                {
+                        "ans": "$x = 4$ only",
+                        "feedback": "A quadratic equation $x^2 - 2x - 8 = 0$ factorises into $(x-4)(x+2) = 0$, which yields two solutions. Make sure you don't lose the negative solution: $x = -2$."
+                },
+                {
+                        "ans": "$x = -4$ or $x = 2$",
+                        "feedback": "Check your factorisation of $x^2 - 2x - 8 = 0$. Since the middle term is $-2x$, the factors must be $(x - 4)(x + 2) = 0$, which yields solutions of $x = 4$ and $x = -2$, not the other way around."
+                },
+                {
+                        "ans": "$x = 6$ or $x = -4$",
+                        "feedback": "Make sure you divide all terms of the equation $6x^2 - 12x - 48 = 0$ by $6$ correctly. This should simplify to $x^2 - 2x - 8 = 0$."
+                }
+        ],
+        "bradley_insight": {
                         "type": "caution",
                         "title": "The Head Teacher's Eye: Order of Composition Matters",
                         "content": "Always remember that composite functions are generally non-commutative, meaning $fg(x) \\neq gf(x)$. In this question, $fg(x) = 9x^2 - 12x + 5$ and $gf(x) = 3x^2 + 1$ are completely different functions. Always apply the inner function first, then substitute that entire result into the outer function."
-                }
-        },
-        {
-                "id": "004593",
-                "board": "OCR",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Algebra and Functions",
-                "topic": "Functions",
-                "subtopic": [
-                        "Functions and Mappings"
-                ],
-                "img": false,
-                "question": "The function $f$ is defined for $x \\ge 1$ by $f(x) = \\sqrt{ x - 1 } + 3$.<br><br><strong>(i)</strong> Find an expression for $f^{ -1 }(x)$, stating its domain.<br><strong>(ii)</strong> Solve the equation $f(x) = f^{ -1 }(x)$.",
-                "steps": [
-                        "<strong>(i)</strong> Set $y = f(x)$ and rearrange for $x$:\\begin{aligned} y &= \\sqrt{x - 1} + 3 \\cr y - 3 &= \\sqrt{x - 1} \\end{aligned}",
-                        "Square both sides and isolate $x$:\\begin{aligned} (y - 3)^2 &= x - 1 \\cr x &= (y - 3)^2 + 1 \\end{aligned}",
-                        "Swap variables to write the inverse function:$$ f^{-1}(x) = (x - 3)^2 + 1 $$",
-                        "The domain of $f^{-1}(x)$ is the range of $f(x)$. Since $\\sqrt{x - 1} \\ge 0$, $f(x) \\ge 3$. Thus, the domain is $x \\ge 3$.",
-                        "<strong>(ii)</strong> Solve $f(x) = f^{-1}(x)$ along the line $y = x$ by solving $f(x) = x$:\\begin{aligned} \\sqrt{x - 1} + 3 &= x \\cr \\sqrt{x - 1} &= x - 3 \\end{aligned}",
-                        "Square both sides for $x \\ge 3$:\\begin{aligned} x - 1 &= (x - 3)^2 \\cr x - 1 &= x^2 - 6x + 9 \\cr x^2 - 7x + 10 &= 0 \\cr (x - 2)(x - 5) &= 0 \\end{aligned}This gives $x = 2$ and $x = 5$.",
-                        "Since the domain requires $x \\ge 3$, reject $x = 2$, leaving $x = 5$.",
-                        "Final Answer: <strong>(i)</strong> $f^{-1}(x) = (x - 3)^2 + 1$ with domain $x \\ge 3$<br><strong>(ii)</strong> $x = 5$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "<strong>(i)</strong> $f^{ -1 }(x) = (x - 3)^2 + 1$ with domain $x \\ge 1$<br><strong>(ii)</strong> $x = 5$",
-                                "feedback": "The domain of the inverse function $f^{ -1 }(x)$ is equal to the range of the original function $f(x)$, not its domain. Since $f(x) = \\sqrt{ x - 1 } + 3 \\ge 3$, the domain of $f^{ -1 }(x)$ must be $x \\ge 3$."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $f^{ -1 }(x) = (x - 3)^2 + 1$ with domain $x \\ge 3$<br><strong>(ii)</strong> $x = 2$ or $x = 5$",
-                                "feedback": "You must check your solutions against the domain restriction. Since the domain of $f^{ -1 }(x)$ is $x \\ge 3$, the value $x = 2$ lies outside the domain and must be rejected as an extraneous solution."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $f^{ -1 }(x) = (x + 3)^2 - 1$ with domain $x \\ge 3$<br><strong>(ii)</strong> $x = 5$",
-                                "feedback": "Check your algebra when finding the inverse function. Rearranging $y = \\sqrt{ x - 1 } + 3$ starts by subtracting $3$ from both sides, yielding $y - 3 = \\sqrt{ x - 1 }$, not adding $3$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: The y = x Intersection Trick",
-                        "content": "For any strictly increasing function $f(x)$, the curves $y = f(x)$ and $y = f^{ -1 }(x)$ only intersect along the line of symmetry $y = x$. This is an incredibly powerful shortcut: instead of equating $f(x) = f^{ -1 }(x)$ (which often leads to a complex quartic equation), simply solve $f(x) = x$."
-                }
-        },
-        {
-                "id": "004594",
-                "board": "OCR",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Exponentials and Logarithms",
-                "topic": "Functions",
-                "subtopic": [
-                        "Exponential and Logarithmic Functions and Graphs",
-                        "Functions and Mappings"
-                ],
-                "img": false,
-                "question": "The function $f$ is defined for $x > 2$ by $f(x) = \\ln( x - 2 )$, and the function $g$ is defined for all real values of $x$ by $g(x) = \\mathrm{e}^{ 3x } + 2$.<br><br><strong>(i)</strong> Write down expressions for:<br><strong>(a)</strong> $fg(x)$,<br><strong>(b)</strong> $gf(x)$,<br>simplifying your answers as far as possible.<br><br><strong>(ii)</strong> Solve the equation $gf(x) - fg(x) = 10 - 3x$.",
-                "steps": [
-                        "<strong>(i)(a)</strong> Substitute $g(x) = \\mathrm{e}^{3x} + 2$ into $f(x)$:\\begin{aligned} fg(x) &= f(\\mathrm{e}^{3x} + 2) \\cr &= \\ln((\\mathrm{e}^{3x} + 2) - 2) \\cr &= \\ln(\\mathrm{e}^{3x}) \\cr &= 3x \\end{aligned}",
-                        "<strong>(i)(b)</strong> Substitute $f(x) = \\ln(x - 2)$ into $g(x)$:\\begin{aligned} gf(x) &= g(\\ln(x - 2)) \\cr &= \\mathrm{e}^{3\\ln(x - 2)} + 2 \\cr &= \\mathrm{e}^{\\ln((x - 2)^3)} + 2 \\cr &= (x - 2)^3 + 2 \\end{aligned}",
-                        "<strong>(ii)</strong> Set up $gf(x) - fg(x) = 10 - 3x$:$$ ((x - 2)^3 + 2) - 3x = 10 - 3x $$",
-                        "Add $3x$ to both sides and isolate the cubed term:\\begin{aligned} (x - 2)^3 + 2 &= 10 \\cr (x - 2)^3 &= 8 \\end{aligned}",
-                        "Take the cube root of both sides:\\begin{aligned} x - 2 &= 2 \\cr x &= 4 \\end{aligned}Since $x = 4$ satisfies $x > 2$, it is the valid real solution.",
-                        "Final Answer: <strong>(i)</strong> $fg(x) = 3x$, $gf(x) = (x - 2)^3 + 2$<br><strong>(ii)</strong> $x = 4$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "<strong>(i)</strong> $fg(x) = 3x$, $gf(x) = 3x - 4$<br><strong>(ii)</strong> $x = 2.5$",
-                                "feedback": "Remember the log power law: $3\\ln( x - 2 ) = \\ln(( x - 2 )^3)$. Thus, $\\mathrm{e}^{ 3\\ln( x - 2 ) } = ( x - 2 )^3$, not $3( x - 2 )$."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $fg(x) = 3x$, $gf(x) = ( x - 2 )^3 + 2$<br><strong>(ii)</strong> $x = 2$",
-                                "feedback": "The domain of $f(x)$ is $x > 2$, which means $x = 2$ is outside the domain and would make $\\ln( x - 2 )$ undefined. Your algebraic solution of $( x - 2 )^3 = 8$ leads to $x - 2 = 2 \\implies x = 4$."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $fg(x) = 3x$, $gf(x) = ( x - 2 )^3 + 2$<br><strong>(ii)</strong> $x = 2 + \\sqrt{ 8 }$",
-                                "feedback": "To solve $( x - 2 )^3 = 8$, you need to take the cube root of both sides of the equation, which gives $x - 2 = 2$, not a square root."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Head Teacher's Eye: Simplifying Log exponentials",
-                        "content": "A crucial algebraic identity to master is $\\mathrm{e}^{\\ln( A )} = A$. When simplifying expressions like $\\mathrm{e}^{k\\ln( A )}$, you must first use the power law of logarithms to write it as $\\mathrm{e}^{\\ln( A^k )}$, which simplifies directly to $A^k$. Never write $\\mathrm{e}^{k\\ln( A )} = k A$."
-                }
-        },
-        {
-                "id": "004595",
-                "board": "OCR",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Algebra and Functions",
-                "topic": "Functions",
-                "subtopic": [
-                        "Functions and Mappings"
-                ],
-                "img": false,
-                "question": "The functions $f$ and $g$ are defined for all real values of $x$ by $f(x) = 2x - 3$ and $g(x) = x^2 - 4x$.<br><br><strong>(i)</strong> Find the range of $g(x)$.<br><strong>(ii)</strong> Show that the composite function $gf(x)$ can be written in the form $gf(x) = 4( x - a )( x - b )$, where $a$ and $b$ are constants to be found.<br><strong>(iii)</strong> Find the range of the composite function $fg(x)$.",
-                "steps": [
-                        "<strong>(i)</strong> Complete the square for $g(x) = x^2 - 4x$:\\begin{aligned} g(x) &= (x - 2)^2 - 2^2 \\cr &= (x - 2)^2 - 4 \\end{aligned}",
-                        "Since $(x - 2)^2 \\ge 0$ for all real $x$, the minimum value is $-4$. Thus, the range is $g(x) \\ge -4$.",
-                        "<strong>(ii)</strong> Substitute $f(x) = 2x - 3$ into $g(x)$:\\begin{aligned} gf(x) &= g(2x - 3) \\cr &= (2x - 3)^2 - 4(2x - 3) \\end{aligned}",
-                        "Expand and simplify:\\begin{aligned} gf(x) &= (4x^2 - 12x + 9) - (8x - 12) \\cr &= 4x^2 - 20x + 21 \\end{aligned}",
-                        "Factorise the quadratic expression:\\begin{aligned} 4x^2 - 20x + 21 = (2x - 3)(2x - 7) \\end{aligned}",
-                        "Factorise out $2$ from each bracket:\\begin{aligned} &(2x - 3)(2x - 7) \\cr &\\quad = 2(x - 1.5) \\times 2(x - 3.5) \\cr &\\quad = 4(x - 1.5)(x - 3.5) \\end{aligned}Thus, $a = 1.5$ and $b = 3.5$.",
-                        "<strong>(iii)</strong> Write the composite function $fg(x)$:\\begin{aligned} fg(x) &= f(g(x)) \\cr &= 2(g(x)) - 3 \\end{aligned}",
-                        "Since $g(x) \\ge -4$:\\begin{aligned} fg(x) &\\ge 2(-4) - 3 \\cr &\\ge -11 \\end{aligned}So the range is $fg(x) \\ge -11$.",
-                        "Final Answer: <strong>(i)</strong> $g(x) \\ge -4$<br><strong>(ii)</strong> $a = 1.5$, $b = 3.5$<br><strong>(iii)</strong> $fg(x) \\ge -11$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "<strong>(i)</strong> $g(x) \\ge -4$<br><strong>(ii)</strong> $a = 3$, $b = 1.75$<br><strong>(iii)</strong> $fg(x) \\ge -11$",
-                                "feedback": "Check your factorisation of $4x^2 - 20x + 21$. Expanding $4(x - 3)(x - 1.75)$ gives $4x^2 - 19x + 21$, which is incorrect. Factorising $(2x-3)(2x-7)$ gives $4(x - 1.5)(x - 3.5)$, so $a = 1.5$ and $b = 3.5$."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $g(x) \\ge -4$<br><strong>(ii)</strong> $a = 1.5$, $b = 3.5$<br><strong>(iii)</strong> $fg(x) \\ge -3$",
-                                "feedback": "When finding the range of $fg(x) = 2(g(x)) - 3$, you must use the range of $g(x)$, which is $g(x) \\ge -4$. Substituting the minimum value of $-4$ gives $2(-4) - 3 = -11$, not $-3$."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $g(x) \\ge 0$<br><strong>(ii)</strong> $a = 1.5$, $b = 3.5$<br><strong>(iii)</strong> $fg(x) \\ge -11$",
-                                "feedback": "Check the range of $g(x) = x^2 - 4x$. Completing the square gives $(x-2)^2 - 4$. Since $(x-2)^2 \\ge 0$, the minimum value is $-4$, so the range of $g(x)$ is $g(x) \\ge -4$, not $g(x) \\ge 0$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Head Teacher's Eye: Finding the Range of Composites",
-                        "content": "To find the range of a composite function $fg(x) = f(g(x))$, you must trace the output of the inner function $g(x)$ and use it as the domain for the outer function $f(x)$. Since the inner range is $g(x) \\ge -4$ and the outer function $f(x) = 2x - 3$ is strictly increasing, applying $f$ to the minimum boundary yields $2(-4) - 3 = -11$, which determines the final range boundary."
-                }
-        },
-        {
-                "id": "004596",
-                "board": "OCR",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Integration",
-                "topic": "Integration by Substitution",
-                "subtopic": [
-                        "Numerical Methods"
-                ],
-                "img": false,
-                "question": "Consider the definite integral $I = \\int_{ 0 }^{ 4 } \\dfrac{ 1 }{ 1 + \\sqrt{ x } } \\mathrm{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to show that:<br><br>$I \\approx 2\\sqrt{ 2 } - \\dfrac{ 2 }{ 3 }$<br><br><strong>(ii)</strong> Use the substitution $x = u^2$ to find the exact value of $I$.<br><br><strong>(iii)</strong> Using your answers to parts <strong>(i)</strong> and <strong>(ii)</strong>, show that $\\ln(3) \\approx k - \\sqrt{ 2 }$, where $k$ is a rational number to be determined.",
-                "steps": [
-                        "<strong>(i)</strong> The interval is $[0, 4]$. With $2$ strips of equal width, the width of each strip $h$ is:<br>\\begin{aligned} h &= \\dfrac{ 4 - 0 }{ 2 } \\cr h &= 2 \\end{aligned}",
-                        "The $x$-coordinates are $x_0 = 0$, $x_1 = 2$, and $x_2 = 4$. Evaluate the function $f(x) = \\dfrac{ 1 }{ 1 + \\sqrt{ x } }$ at each coordinate:<br><br><strong>•</strong> $f(0) = \\dfrac{ 1 }{ 1 + \\sqrt{ 0 } } = 1$<br><strong>•</strong> $f(2) = \\dfrac{ 1 }{ 1 + \\sqrt{ 2 } }$<br><strong>•</strong> $f(4) = \\dfrac{ 1 }{ 1 + \\sqrt{ 4 } } = \\dfrac{ 1 }{ 3 }$",
-                        "Apply the trapezium rule formula:<br>\\begin{aligned} I &\\approx \\dfrac{ h }{ 2 } [ f(0) + f(4) + 2f(2) ] \\cr &\\approx \\dfrac{ 2 }{ 2 } \\left[ 1 + \\dfrac{ 1 }{ 3 } + 2\\left( \\dfrac{ 1 }{ 1 + \\sqrt{ 2 } } \\right) \\right] \\cr &\\approx \\dfrac{ 4 }{ 3 } + \\dfrac{ 2 }{ 1 + \\sqrt{ 2 } } \\end{aligned}",
-                        "Rationalise the denominator of the fractional term:<br>\\begin{aligned} \\dfrac{ 2 }{ 1 + \\sqrt{ 2 } } &= \\dfrac{ 2(1 - \\sqrt{ 2 }) }{ (1 + \\sqrt{ 2 })(1 - \\sqrt{ 2 }) } \\cr &= \\dfrac{ 2 - 2\\sqrt{ 2 } }{ 1 - 2 } \\cr &= \\dfrac{ 2 - 2\\sqrt{ 2 } }{ -1 } \\cr &= 2\\sqrt{ 2 } - 2 \\end{aligned}",
-                        "Substitute this back into the approximation to complete the proof for part <strong>(i)</strong>:<br>\\begin{aligned} I &\\approx \\dfrac{ 4 }{ 3 } + 2\\sqrt{ 2 } - 2 \\cr &\\approx 2\\sqrt{ 2 } - \\dfrac{ 2 }{ 3 } \\end{aligned}",
-                        "<strong>(ii)</strong> Use the substitution $x = u^2$, which gives $\\mathrm{d}x = 2u \\mathrm{d}u$ and $\\sqrt{ x } = u$.<br><br>Find the new integration limits:<br><strong>•</strong> When $x = 0$, $u = 0$<br><strong>•</strong> When $x = 4$, $u = 2$",
-                        "Substitute these into the integral:<br>\\begin{aligned} I &= \\int_{ 0 }^{ 2 } \\dfrac{ 1 }{ 1 + u } (2u) \\mathrm{d}u \\cr &= \\int_{ 0 }^{ 2 } \\dfrac{ 2u }{ 1 + u } \\mathrm{d}u \\end{aligned}",
-                        "Rewrite the integrand by performing algebraic long division (or writing $2u = 2u + 2 - 2$):<br>\\begin{aligned} I &= \\int_{ 0 }^{ 2 } \\left( 2 - \\dfrac{ 2 }{ 1 + u } \\right) \\mathrm{d}u \\cr &= [ 2u - 2\\ln(1 + u) ]_{ 0 }^{ 2 } \\cr &= (4 - 2\\ln(3)) - (0 - 2\\ln(1)) \\cr &= 4 - 2\\ln(3) \\end{aligned}",
-                        "<strong>(iii)</strong> Equate the exact value of $I$ and the trapezium rule approximation:<br>\\begin{aligned} 4 - 2\\ln(3) &\\approx 2\\sqrt{ 2 } - \\dfrac{ 2 }{ 3 } \\cr -2\\ln(3) &\\approx 2\\sqrt{ 2 } - \\dfrac{ 14 }{ 3 } \\cr 2\\ln(3) &\\approx \\dfrac{ 14 }{ 3 } - 2\\sqrt{ 2 } \\cr \\ln(3) &\\approx \\dfrac{ 7 }{ 3 } - \\sqrt{ 2 } \\end{aligned}<br>Thus, the rational number is $k = \\dfrac{ 7 }{ 3 }$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx 2\\sqrt{ 2 } - \\dfrac{ 2 }{ 3 }$<br><strong>(ii)</strong> $I = 4 - 2\\ln(3)$<br><strong>(iii)</strong> $k = \\dfrac{ 5 }{ 3 }$",
-                                "feedback": "Check your algebra when transposing the equation to isolate $\\ln(3)$. Adding $\\dfrac{ 2 }{ 3 }$ to $4$ should yield $\\dfrac{ 14 }{ 3 }$, and dividing this by $2$ gives $k = \\dfrac{ 7 }{ 3 }$, not $\\dfrac{ 5 }{ 3 }$."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx 2\\sqrt{ 2 } - \\dfrac{ 2 }{ 3 }$<br><strong>(ii)</strong> $I = 2 - 2\\ln(3)$<br><strong>(iii)</strong> $k = \\dfrac{ 4 }{ 3 }$",
-                                "feedback": "Check your integration steps in part <strong>(ii)</strong>. Evaluating $[2u]_0^2$ yields $2(2) - 0 = 4$, not $2$."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx 2\\sqrt{ 2 } + \\dfrac{ 4 }{ 3 }$<br><strong>(ii)</strong> $I = 4 - 2\\ln(3)$<br><strong>(iii)</strong> $k = \\dfrac{ 7 }{ 3 }$",
-                                "feedback": "Check your rationalisation in part <strong>(i)</strong>. The term $\\dfrac{ 2 }{ 1 + \\sqrt{ 2 } }$ rationalises to $2\\sqrt{ 2 } - 2$. Adding this to $\\dfrac{ 4 }{ 3 }$ yields $2\\sqrt{ 2 } - \\dfrac{ 2 }{ 3 }$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Splitting Integrands",
-                        "content": "When integrating an algebraic fraction where the numerator and denominator have the same degree (like $\\dfrac{ 2u }{ u + 1 }$), always use algebraic long division or a clever manipulation like $2u = 2(u + 1) - 2$ first. This allows you to split the fraction into $2 - \\dfrac{ 2 }{ u + 1 }$, which is instantly integrable."
-                }
-        },
-        {
-                "id": "004597",
-                "board": "OCR",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Integration",
-                "topic": "Integration",
-                "subtopic": [
-                        "Numerical Methods",
-                        "Trigonometry"
-                ],
-                "img": false,
-                "question": "Consider the definite integral $I = \\int_{ 0 }^{ 1 } \\dfrac{ 1 }{ 1 + x^2 } \\mathrm{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to show that:<br><br>$I \\approx \\dfrac{ 31 }{ 40 }$<br><br><strong>(ii)</strong> Find the exact value of $I$ in terms of $\\pi$.<br><br><strong>(iii)</strong> Using your answers to parts <strong>(i)</strong> and <strong>(ii)</strong>, show that $\\pi \\approx k$, where $k$ is a rational number to be determined.",
-                "steps": [
-                        "<strong>(i)</strong> The interval is $[0, 1]$. With $2$ strips of equal width, the width of each strip $h$ is:<br>\\begin{aligned} h &= \\dfrac{ 1 - 0 }{ 2 } \\cr h &= 0.5 \\end{aligned}",
-                        "The $x$-coordinates are $x_0 = 0$, $x_1 = 0.5$, and $x_2 = 1$. Evaluate the function $f(x) = \\dfrac{ 1 }{ 1 + x^2 }$ at each coordinate:<br><br><strong>•</strong> $f(0) = \\dfrac{ 1 }{ 1 + 0^2 } = 1$<br><strong>•</strong> $f(0.5) = \\dfrac{ 1 }{ 1 + 0.25 } = \\dfrac{ 1 }{ 1.25 } = \\dfrac{ 4 }{ 5 }$<br><strong>•</strong> $f(1) = \\dfrac{ 1 }{ 1 + 1^2 } = \\dfrac{ 1 }{ 2 }$",
-                        "Apply the trapezium rule formula:<br>\\begin{aligned} I &\\approx \\dfrac{ h }{ 2 } [ f(0) + f(1) + 2f(0.5) ] \\cr &\\approx \\dfrac{ 0.5 }{ 2 } \\left[ 1 + \\dfrac{ 1 }{ 2 } + 2\\left( \\dfrac{ 4 }{ 5 } \\right) \\right] \\cr &\\approx \\dfrac{ 1 }{ 4 } \\left[ \\dfrac{ 3 }{ 2 } + \\dfrac{ 8 }{ 5 } \\right] \\cr &\\approx \\dfrac{ 1 }{ 4 } \\left[ \\dfrac{ 15 + 16 }{ 10 } \\right] \\cr &\\approx \\dfrac{ 31 }{ 40 } \\end{aligned}",
-                        "<strong>(ii)</strong> Integrate $\\dfrac{ 1 }{ 1 + x^2 }$ analytically. The standard integral of this expression is the inverse tangent function:<br>\\begin{aligned} I &= \\int_{ 0 }^{ 1 } \\dfrac{ 1 }{ 1 + x^2 } \\mathrm{d}x \\cr &= [ \\arctan(x) ]_{ 0 }^{ 1 } \\cr &= \\arctan(1) - \\arctan(0) \\cr &= \\dfrac{ \\pi }{ 4 } \\end{aligned}",
-                        "<strong>(iii)</strong> Equate the analytical value of $I$ and the numerical approximation:<br>\\begin{aligned} \\dfrac{ \\pi }{ 4 } &\\approx \\dfrac{ 31 }{ 40 } \\cr \\pi &\\approx \\dfrac{ 124 }{ 40 } \\cr \\pi &\\approx \\dfrac{ 31 }{ 10 } \\end{aligned}<br>Thus, the rational number is $k = \\dfrac{ 31 }{ 10 }$ (or $3.1$)."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ 31 }{ 40 }$<br><strong>(ii)</strong> $I = \\dfrac{ \\pi }{ 2 }$<br><strong>(iii)</strong> $k = \\dfrac{ 31 }{ 20 }$",
-                                "feedback": "Check your analytical integration. The integral of $\\dfrac{ 1 }{ 1 + x^2 }$ is $\\arctan(x)$. Since $\\arctan(1) = \\dfrac{ \\pi }{ 4 }$, the exact value is $\\dfrac{ \\pi }{ 4 }$, not $\\dfrac{ \\pi }{ 2 }$."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ 3 }{ 4 }$<br><strong>(ii)</strong> $I = \\dfrac{ \\pi }{ 4 }$<br><strong>(iii)</strong> $k = 3$",
-                                "feedback": "Verify your trapezium rule calculations. The value of the function at the midpoint $x = 0.5$ is $\\dfrac{ 4 }{ 5 } = 0.8$. Ensure you substitute this correct value into the formula."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ 31 }{ 40 }$<br><strong>(ii)</strong> $I = \\dfrac{ \\pi }{ 4 }$<br><strong>(iii)</strong> $k = \\dfrac{ 31 }{ 40 }$",
-                                "feedback": "When solving for $\\pi$ in part <strong>(iii)</strong>, remember to multiply both sides of the approximation $\\dfrac{ \\pi }{ 4 } \\approx \\dfrac{ 31 }{ 40 }$ by $4$ to isolate $\\pi$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Head Teacher's Eye: Historical Approximations of Pi",
-                        "content": "This question demonstrates the classical method of using calculus to approximate historical constants. By applying a very simple 2-strip trapezium approximation to $\\int_{ 0 }^{ 1 } \\dfrac{ 1 }{ 1 + x^2 } \\mathrm{d}x$, we successfully approximate the value of $\\pi$ as $3.1$, which is incredibly close for such a low number of strips!"
-                }
-        },
-        {
-                "id": "004598",
-                "board": "OCR",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Integration",
-                "topic": "Integration",
-                "subtopic": [
-                        "Exponential and Logarithmic Functions and Graphs",
-                        "Numerical Methods"
-                ],
-                "img": false,
-                "question": "Consider the definite integral $I = \\int_{ 1 }^{ 3 } \\dfrac{ 1 }{ x } \\mathrm{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to show that:<br><br>$I \\approx \\dfrac{ 7 }{ 6 }$<br><br><strong>(ii)</strong> Find the exact value of $I$ in terms of natural logarithms.<br><br><strong>(iii)</strong> Using your answers to parts <strong>(i)</strong> and <strong>(ii)</strong>, state an approximate rational value for $\\ln(3)$.",
-                "steps": [
-                        "<strong>(i)</strong> The interval is $[1, 3]$. With $2$ strips of equal width, the width of each strip $h$ is:<br>\\begin{aligned} h &= \\dfrac{ 3 - 1 }{ 2 } \\cr h &= 1 \\end{aligned}",
-                        "The $x$-coordinates are $x_0 = 1$, $x_1 = 2$, and $x_2 = 3$. Evaluate the function $f(x) = \\dfrac{ 1 }{ x }$ at each coordinate:<br><br><strong>•</strong> $f(1) = \\dfrac{ 1 }{ 1 } = 1$<br><strong>•</strong> $f(2) = \\dfrac{ 1 }{ 2 }$<br><strong>•</strong> $f(3) = \\dfrac{ 1 }{ 3 }$",
-                        "Apply the trapezium rule formula:<br>\\begin{aligned} I &\\approx \\dfrac{ h }{ 2 } [ f(1) + f(3) + 2f(2) ] \\cr &\\approx \\dfrac{ 1 }{ 2 } \\left[ 1 + \\dfrac{ 1 }{ 3 } + 2\\left( \\dfrac{ 1 }{ 2 } \\right) \\right] \\cr &\\approx \\dfrac{ 1 }{ 2 } \\left[ 2 + \\dfrac{ 1 }{ 3 } \\right] \\cr &\\approx \\dfrac{ 1 }{ 2 } \\left[ \\dfrac{ 7 }{ 3 } \\right] \\cr &\\approx \\dfrac{ 7 }{ 6 } \\end{aligned}",
-                        "<strong>(ii)</strong> Integrate $\\dfrac{ 1 }{ x }$ analytically. The standard integral of $\\dfrac{ 1 }{ x }$ is the natural logarithm function:<br>\\begin{aligned} I &= \\int_{ 1 }^{ 3 } \\dfrac{ 1 }{ x } \\mathrm{d}x \\cr &= [ \\ln(x) ]_{ 1 }^{ 3 } \\cr &= \\ln(3) - \\ln(1) \\cr &= \\ln(3) \\end{aligned}",
-                        "<strong>(iii)</strong> Directly equate the analytical value and the numerical approximation to find the rational approximation:<br>\\begin{aligned} \\ln(3) &\\approx \\dfrac{ 7 }{ 6 } \\end{aligned}"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ 7 }{ 6 }$<br><strong>(ii)</strong> $I = \\ln(2)$<br><strong>(iii)</strong> $\\ln(3) \\approx \\dfrac{ 7 }{ 6 }$",
-                                "feedback": "Check your limits when integrating in part <strong>(ii)</strong>. Evaluating $[\\ln(x)]_1^3$ gives $\\ln(3) - \\ln(1) = \\ln(3)$, not $\\ln(2)$."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx 1.5$<br><strong>(ii)</strong> $I = \\ln(3)$<br><strong>(iii)</strong> $\\ln(3) \\approx 1.5$",
-                                "feedback": "Verify your trapezium rule sum. Ensure you only double the middle ordinate $f(2) = 0.5$ and do not double the endpoint ordinates."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ 5 }{ 6 }$<br><strong>(ii)</strong> $I = \\ln(3)$<br><strong>(iii)</strong> $\\ln(3) \\approx \\dfrac{ 5 }{ 6 }$",
-                                "feedback": "Check your arithmetic in part <strong>(i)</strong>. The bracket sum is $1 + \\dfrac{ 1 }{ 3 } + 1 = \\dfrac{ 7 }{ 3 }$. Multiplying by $\\dfrac{ 1 }{ 2 }$ yields $\\dfrac{ 7 }{ 6 }$, not $\\dfrac{ 5 }{ 6 }$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Overestimates vs. Underestimates",
-                        "content": "Since the graph of $y = \\dfrac{ 1 }{ x }$ is concave up (the curve bends upwards) over the interval $[1, 3]$, the straight chord segments of the trapeziums lie entirely above the curve. Therefore, the trapezium rule will always produce an overestimate. This explains why $\\dfrac{ 7 }{ 6 } \\approx 1.167$ is slightly larger than the actual value of $\\ln(3) \\approx 1.099$."
-                }
-        },
-        {
-                "id": "004599",
-                "board": "OCR",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Integration",
-                "topic": "Integration",
-                "subtopic": [
-                        "Exponential and Logarithmic Functions and Graphs",
-                        "Numerical Methods"
-                ],
-                "img": false,
-                "question": "Consider the definite integral $I = \\int_{ 0 }^{ 2 } x \\mathrm{e}^{ -x } \\mathrm{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to find an approximation for $I$ in terms of the constant $\\mathrm{e}$.<br><br><strong>(ii)</strong> Use integration by parts to find the exact value of $I$ in terms of the constant $\\mathrm{e}$.<br><br><strong>(iii)</strong> Using your answers to parts <strong>(i)</strong> and <strong>(ii)</strong>, show that $\\mathrm{e}^2 - \\mathrm{e} \\approx k$, where $k$ is an integer to be found.",
-                "steps": [
-                        "<strong>(i)</strong> The interval is $[0, 2]$. With $2$ strips of equal width, the width of each strip $h$ is:<br>\\begin{aligned} h &= \\dfrac{ 2 - 0 }{ 2 } \\cr h &= 1 \\end{aligned}",
-                        "The $x$-coordinates are $x_0 = 0$, $x_1 = 1$, and $x_2 = 2$. Evaluate the function $f(x) = x \\mathrm{e}^{ -x }$ at each coordinate:<br><br><strong>•</strong> $f(0) = 0 \\times \\mathrm{e}^{ 0 } = 0$<br><strong>•</strong> $f(1) = 1 \\times \\mathrm{e}^{ -1 } = \\mathrm{e}^{ -1 }$<br><strong>•</strong> $f(2) = 2 \\times \\mathrm{e}^{ -2 } = 2\\mathrm{e}^{ -2 }$",
-                        "Apply the trapezium rule formula:<br>\\begin{aligned} I &\\approx \\dfrac{ h }{ 2 } [ f(0) + f(2) + 2f(1) ] \\cr &\\approx \\dfrac{ 1 }{ 2 } [ 0 + 2\\mathrm{e}^{ -2 } + 2\\mathrm{e}^{ -1 } ] \\cr &\\approx \\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 } \\end{aligned}",
-                        "<strong>(ii)</strong> To find the exact value, integrate $x \\mathrm{e}^{ -x }$ analytically using integration by parts, $\\int u \\mathrm{d}v = u v - \\int v \\mathrm{d}u$.<br>Let $u = x \\implies \\mathrm{d}u = \\mathrm{d}x$, and let $\\mathrm{d}v = \\mathrm{e}^{ -x } \\mathrm{d}x \\implies v = -\\mathrm{e}^{ -x }$:",
-                        "Substitute these into the integration by parts formula:<br>\\begin{aligned} I &= [ -x\\mathrm{e}^{ -x } ]_{ 0 }^{ 2 } - \\int_{ 0 }^{ 2 } -\\mathrm{e}^{ -x } \\mathrm{d}x \\cr &= -2\\mathrm{e}^{ -2 } + \\int_{ 0 }^{ 2 } \\mathrm{e}^{ -x } \\mathrm{d}x \\cr &= -2\\mathrm{e}^{ -2 } + [ -\\mathrm{e}^{ -x } ]_{ 0 }^{ 2 } \\cr &= -2\\mathrm{e}^{ -2 } + (-\\mathrm{e}^{ -2 } - (-\\mathrm{e}^{ 0 })) \\cr &= -3\\mathrm{e}^{ -2 } + 1 \\cr &= 1 - 3\\mathrm{e}^{ -2 } \\end{aligned}",
-                        "<strong>(iii)</strong> Equate the numerical approximation and the analytical exact value:<br>\\begin{aligned} \\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 } &\\approx 1 - 3\\mathrm{e}^{ -2 } \\cr \\mathrm{e}^{ -1 } &\\approx 1 - 4\\mathrm{e}^{ -2 } \\end{aligned}",
-                        "Multiply the entire equation by $\\mathrm{e}^2$ to eliminate the negative powers:<br>\\begin{aligned} \\mathrm{e} &\\approx \\mathrm{e}^2 - 4 \\cr \\mathrm{e}^2 - \\mathrm{e} &\\approx 4 \\end{aligned}<br>Thus, the integer is $k = 4$."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx \\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 }$<br><strong>(ii)</strong> $I = 1 - 3\\mathrm{e}^{ -2 }$<br><strong>(iii)</strong> $k = 3$",
-                                "feedback": "Check your algebra in part <strong>(iii)</strong>. Transposing $\\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 } \\approx 1 - 3\\mathrm{e}^{ -2 }$ gives $\\mathrm{e}^{ -1 } \\approx 1 - 4\\mathrm{e}^{ -2 }$. Multiplying by $\\mathrm{e}^2$ yields $\\mathrm{e} \\approx \\mathrm{e}^2 - 4$, which leads to $k = 4$, not $3$."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx 2\\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 }$<br><strong>(ii)</strong> $I = 1 - 3\\mathrm{e}^{ -2 }$<br><strong>(iii)</strong> $k = 4$",
-                                "feedback": "Check your trapezium ordinate values. The formula is $\\dfrac{ h }{ 2 } [ y_0 + y_n + 2y_1 ]$. Since $y_1 = \\mathrm{e}^{ -1 }$, we double this to get $2\\mathrm{e}^{ -1 }$. Multiplying the whole bracket by $\\dfrac{ 1 }{ 2 }$ yields $\\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 }$."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx \\mathrm{e}^{ -1 } + \\mathrm{e}^{ -2 }$<br><strong>(ii)</strong> $I = 1 - \\mathrm{e}^{ -2 }$<br><strong>(iii)</strong> $k = 2$",
-                                "feedback": "Verify your integration by parts. The term $v \\mathrm{d}u = -\\mathrm{e}^{ -x } \\mathrm{d}x$. Integrating this over the limits yields another negative term, resulting in the correct analytical expression $1 - 3\\mathrm{e}^{ -2 }$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Choosing u in Parts",
-                        "content": "When using integration by parts for $\\int x \\mathrm{e}^{ -x } \\mathrm{d}x$, always use the LATE rule to choose $u$. Since $x$ is algebraic (A) and $\\mathrm{e}^{ -x }$ is exponential (E), we choose $u = x$. This ensures that differentiating $u$ reduces its degree to $1$, making the remaining integral straightforward to compute."
-                }
-        },
-        {
-                "id": "004600",
-                "board": "OCR",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Integration",
-                "topic": "Integration",
-                "subtopic": [
-                        "Numerical Methods",
-                        "Trigonometry"
-                ],
-                "img": false,
-                "question": "Consider the definite integral $I = \\int_{ 0 }^{ \\pi } \\sin^2(x) \\mathrm{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to show that:<br><br>$I \\approx \\dfrac{ \\pi }{ 2 }$<br><br><strong>(ii)</strong> Use a suitable double-angle trigonometric identity to find the exact value of $I$.<br><br><strong>(iii)</strong> Explain why the trapezium rule approximation is unusually accurate in this specific case.",
-                "steps": [
-                        "<strong>(i)</strong> The interval is $[0, \\pi ]$. With $2$ strips of equal width, the width of each strip $h$ is:<br>\\begin{aligned} h &= \\dfrac{ \\pi - 0 }{ 2 } \\cr h &= \\dfrac{ \\pi }{ 2 } \\end{aligned}",
-                        "The $x$-coordinates are $x_0 = 0$, $x_1 = \\dfrac{ \\pi }{ 2 }$, and $x_2 = \\pi $. Evaluate the function $f(x) = \\sin^2(x)$ at each coordinate:<br><br><strong>•</strong> $f(0) = \\sin^2(0) = 0$<br><strong>•</strong> $f\\left( \\dfrac{ \\pi }{ 2 } \\right) = \\sin^2\\left( \\dfrac{ \\pi }{ 2 } \\right) = 1$<br><strong>•</strong> $f(\\pi ) = \\sin^2(\\pi ) = 0$",
-                        "Apply the trapezium rule formula:<br>\\begin{aligned} I &\\approx \\dfrac{ h }{ 2 } \\left[ f(0) + f(\\pi ) + 2f\\left( \\dfrac{ \\pi }{ 2 } \\right) \\right] \\cr &\\approx \\dfrac{ \\pi / 2 }{ 2 } [ 0 + 0 + 2(1) ] \\cr &\\approx \\dfrac{ \\pi }{ 4 } [ 2 ] \\cr &\\approx \\dfrac{ \\pi }{ 2 } \\end{aligned}",
-                        "<strong>(ii)</strong> To find the exact value, integrate $\\sin^2(x)$ analytically by using the double-angle identity $\\sin^2(x) = \\dfrac{ 1 - \\cos(2x) }{ 2 }$:<br>\\begin{aligned} I &= \\int_{ 0 }^{ \\pi } \\dfrac{ 1 - \\cos(2x) }{ 2 } \\mathrm{d}x \\cr &= \\dfrac{ 1 }{ 2 } \\left[ x - \\dfrac{ \\sin(2x) }{ 2 } \\right]_{ 0 }^{ \\pi } \\cr &= \\dfrac{ 1 }{ 2 } \\left[ \\left( \\pi - \\dfrac{ \\sin(2\\pi ) }{ 2 } \\right) - (0 - 0) \\right] \\cr &= \\dfrac{ \\pi }{ 2 } \\end{aligned}",
-                        "<strong>(iii)</strong> The trapezium rule approximation is 100% exact in this case due to the perfect symmetry of the sine-squared curve:<br><br>The curve $y = \\sin^2(x)$ is symmetric about the vertical line $x = \\dfrac{ \\pi }{ 2 }$. On the first half of the interval, $\\left[ 0, \\dfrac{ \\pi }{ 2 } \\right]$, the curve is concave down, which causes the trapezium to underestimate the area under the curve.<br><br>On the second half of the interval, $\\left[ \\dfrac{ \\pi }{ 2 }, \\pi \\right]$, the curve is concave up, which causes the trapezium to overestimate the area under the curve.<br><br>Because the shape of the curve is perfectly symmetric, the underestimate and the overestimate cancel each other out exactly, making the final numerical approximation completely accurate."
-                ],
-                "pi_options": [
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ \\pi }{ 2 }$<br><strong>(ii)</strong> $I = \\pi $<br><strong>(iii)</strong> The trapezium rule is exact because $\\sin^2(x)$ is a linear function.",
-                                "feedback": "Check your analytical integration in part <strong>(ii)</strong>. Integrating $\\dfrac{ 1 - \\cos(2x) }{ 2 }$ over $[0, \\pi ]$ yields $\\dfrac{ \\pi }{ 2 }$, not $\\pi $. Also, $\\sin^2(x)$ is a quadratic trigonometric curve, not a linear function."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx \\dfrac{ \\pi }{ 4 }$<br><strong>(ii)</strong> $I = \\dfrac{ \\pi }{ 2 }$<br><strong>(iii)</strong> The trapezium rule is exact because the endpoints are zero.",
-                                "feedback": "Check your trapezium rule sum. The midpoint ordinate $f\\left( \\dfrac{ \\pi }{ 2 } \\right) = 1$ is multiplied by $2$ in the formula, which yields $2$. Multiplying by $\\dfrac{ \\pi }{ 4 }$ gives $\\dfrac{ \\pi }{ 2 }$, not $\\dfrac{ \\pi }{ 4 }$."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $I \\approx \\pi $<br><strong>(ii)</strong> $I = \\dfrac{ \\pi }{ 2 }$<br><strong>(iii)</strong> The trapezium rule is exact because $\\sin^2(x)$ has no curvature.",
-                                "feedback": "Check your ordinate substitutions. The sum of the ordinates is $0 + 0 + 2(1) = 2$. Multiplying by $\\dfrac{ h }{ 2 } = \\dfrac{ \\pi }{ 4 }$ gives $\\dfrac{ \\pi }{ 2 }$. Furthermore, the curve definitely has curvature; the exact match is due to symmetric error cancellation."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Head Teacher's Eye: Symmetric Error Cancellation",
-                        "content": "Normally, the trapezium rule is only an approximation. However, for functions that exhibit symmetric transition from concave-down to concave-up over the intervals (such as a full sine wave arch), the underestimate of one trapezium cancels out the overestimate of the other. This symmetric error cancellation is a highly elegant mathematical property!"
-                }
         }
+},
+{
+        "id": "004593",
+        "board": "OCR",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Functions",
+        "subtopic": [
+                "Functions and Mappings"
+        ],
+        "img": false,
+        "question": "The function $f$ is defined for $x \\ge 1$ by $f(x) = \\sqrt{x - 1} + 3$.<br><br><strong>(i)</strong> Find an expression for $f^{-1}(x)$, stating its domain.<br><strong>(ii)</strong> Solve the equation $f(x) = f^{-1}(x)$.",
+        "steps": [
+                "<strong>(i)</strong> Set $y = f(x)$ and rearrange for $x$:\\begin{aligned} &y = \\sqrt{x - 1} + 3 \\cr &y - 3 = \\sqrt{x - 1} \\end{aligned}",
+                "Square both sides and isolate $x$:\\begin{aligned} &(y - 3)^2 = x - 1 \\cr &x = (y - 3)^2 + 1 \\end{aligned}",
+                "Swap variables to write the inverse function:\\begin{aligned} &f^{-1}(x) = (x - 3)^2 + 1 \\end{aligned}",
+                "The domain of $f^{-1}(x)$ is the range of $f(x)$. Since $\\sqrt{x - 1} \\ge 0$, we have $f(x) \\ge 3$. Thus, the domain is $x \\ge 3$.",
+                "<strong>(ii)</strong> Solve $f(x) = f^{-1}(x)$ along the line $y = x$ by solving $f(x) = x$:\\begin{aligned} &\\sqrt{x - 1} + 3 = x \\cr &\\sqrt{x - 1} = x - 3 \\end{aligned}",
+                "Square both sides for $x \\ge 3$:\\begin{aligned} &x - 1 = (x - 3)^2 \\cr &x - 1 = x^2 - 6x + 9 \\cr &x^2 - 7x + 10 = 0 \\cr &(x - 2)(x - 5) = 0 \\cr &x = 2 \\text{ or } x = 5 \\end{aligned}",
+                "Since the domain requires $x \\ge 3$, reject $x = 2$, leaving $x = 5$.",
+                "Final Answer: <strong>(i)</strong> $f^{-1}(x) = (x - 3)^2 + 1$ with domain $x \\ge 3$<br><strong>(ii)</strong> $x = 5$"
+        ],
+        "pi_options": [
+                {
+                        "ans": "<strong>(i)</strong> $f^{-1}(x) = (x - 3)^2 + 1$ with domain $x \\ge 1$<br><strong>(ii)</strong> $x = 5$",
+                        "feedback": "The domain of the inverse function $f^{-1}(x)$ is equal to the range of the original function $f(x)$, not its domain. Since $f(x) = \\sqrt{x - 1} + 3$ and $\\sqrt{x - 1} \\ge 0$, the range is $f(x) \\ge 3$, so the domain of $f^{-1}(x)$ must be $x \\ge 3$."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $f^{-1}(x) = (x - 3)^2 + 1$ with domain $x \\ge 3$<br><strong>(ii)</strong> $x = 2$ or $x = 5$",
+                        "feedback": "You must check your solutions against the domain restriction. Since the domain of $f^{-1}(x)$ is $x \\ge 3$, the value $x = 2$ lies outside the domain and must be rejected as an extraneous solution."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $f^{-1}(x) = (x + 3)^2 - 1$ with domain $x \\ge 3$<br><strong>(ii)</strong> $x = 5$",
+                        "feedback": "Check your algebra when finding the inverse function. Rearranging $y = \\sqrt{x - 1} + 3$ starts by subtracting $3$ from both sides, yielding $y - 3 = \\sqrt{x - 1}$, not adding $3$."
+                }
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: The y = x Intersection Trick",
+                "content": "For any strictly increasing function $f(x)$, the curves $y = f(x)$ and $y = f^{-1}(x)$ only intersect along the line of symmetry $y = x$. This is an incredibly powerful shortcut: instead of equating $f(x) = f^{-1}(x)$ (which often leads to a complex quartic equation), simply solve $f(x) = x$."
+        }
+},
+{
+        "id": "004594",
+        "board": "OCR",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Exponentials and Logarithms",
+        "topic": "Functions",
+        "subtopic": [
+                "Exponential and Logarithmic Functions and Graphs",
+                "Functions and Mappings"
+        ],
+        "img": false,
+        "question": "The function $f$ is defined for $x > 2$ by $f(x) = \\ln(x - 2)$, and the function $g$ is defined for all real values of $x$ by $g(x) = \\mathrm{e}^{3x} + 2$.<br><br><strong>(i)</strong> Write down expressions for:<br><strong>(a)</strong> $fg(x)$,<br><strong>(b)</strong> $gf(x)$,<br>simplifying your answers as far as possible.<br><br><strong>(ii)</strong> Solve the equation $gf(x) - fg(x) = 10 - 3x$.",
+        "steps": [
+                "<strong>(i)(a)</strong> Substitute $g(x) = \\mathrm{e}^{3x} + 2$ into $f(x)$:\\begin{aligned} &fg(x) \\cr &\\quad = f(\\mathrm{e}^{3x} + 2) \\cr &\\quad = \\ln((\\mathrm{e}^{3x} + 2) - 2) \\cr &\\quad = \\ln(\\mathrm{e}^{3x}) \\cr &\\quad = 3x \\end{aligned}",
+                "<strong>(i)(b)</strong> Substitute $f(x) = \\ln(x - 2)$ into $g(x)$:\\begin{aligned} &gf(x) \\cr &\\quad = g(\\ln(x - 2)) \\cr &\\quad = \\mathrm{e}^{3\\ln(x - 2)} + 2 \\cr &\\quad = \\mathrm{e}^{\\ln((x - 2)^3)} + 2 \\cr &\\quad = (x - 2)^3 + 2 \\end{aligned}",
+                "<strong>(ii)</strong> Set up $gf(x) - fg(x) = 10 - 3x$:\\begin{aligned} &(x - 2)^3 + 2 - 3x \\cr &\\quad = 10 - 3x \\end{aligned}",
+                "Add $3x$ to both sides and isolate the cubed term:\\begin{aligned} &(x - 2)^3 + 2 = 10 \\cr &(x - 2)^3 = 8 \\end{aligned}",
+                "Take the cube root of both sides:\\begin{aligned} &x - 2 = 2 \\cr &x = 4 \\end{aligned}<br><br>Since $x = 4$ satisfies $x > 2$, it is the valid real solution.",
+                "Final Answer: <strong>(i)</strong> $fg(x) = 3x$, $gf(x) = (x - 2)^3 + 2$<br><strong>(ii)</strong> $x = 4$"
+        ],
+        "pi_options": [
+                {
+                        "ans": "<strong>(i)</strong> $fg(x) = 3x$, $gf(x) = 3x - 4$<br><strong>(ii)</strong> $x = 2.5$",
+                        "feedback": "Remember the log power law: $3\\ln(x - 2) = \\ln((x - 2)^3)$. Thus, $\\mathrm{e}^{3\\ln(x - 2)} = (x - 2)^3$, not $3(x - 2)$."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $fg(x) = 3x$, $gf(x) = (x - 2)^3 + 2$<br><strong>(ii)</strong> $x = 2$",
+                        "feedback": "The domain of $f(x)$ is $x > 2$, which means $x = 2$ is outside the domain and would make $\\ln(x - 2)$ undefined. Solving $(x - 2)^3 = 8$ leads to $x - 2 = 2$, which gives $x = 4$."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $fg(x) = 3x$, $gf(x) = (x - 2)^3 + 2$<br><strong>(ii)</strong> $x = 2 + \\sqrt{8}$",
+                        "feedback": "To solve $(x - 2)^3 = 8$, you need to take the cube root of both sides of the equation, which gives $x - 2 = 2$, not a square root."
+                }
+        ],
+        "bradley_insight": {
+                "type": "deeper",
+                "title": "The Head Teacher's Eye: Simplifying Log exponentials",
+                "content": "A crucial algebraic identity to master is $\\mathrm{e}^{\\ln(A)} = A$. When simplifying expressions like $\\mathrm{e}^{k\\ln(A)}$, you must first use the power law of logarithms to write it as $\\mathrm{e}^{\\ln(A^k)}$, which simplifies directly to $A^k$. Never write $\\mathrm{e}^{k\\ln(A)} = kA$."
+        }
+},
+{
+        "id": "004595",
+        "board": "OCR",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Functions",
+        "subtopic": [
+                "Functions and Mappings"
+        ],
+        "img": false,
+        "question": "The functions $f$ and $g$ are defined for all real values of $x$ by $f(x) = 2x - 3$ and $g(x) = x^2 - 4x$.<br><br><strong>(i)</strong> Find the range of $g(x)$.<br><strong>(ii)</strong> Show that the composite function $gf(x)$ can be written in the form $gf(x) = 4(x - a)(x - b)$, where $a$ and $b$ are constants to be found.<br><strong>(iii)</strong> Find the range of the composite function $fg(x)$.",
+        "steps": [
+                "<strong>(i)</strong> Complete the square for $g(x) = x^2 - 4x$:\\begin{aligned} &g(x) \\cr &\\quad = (x - 2)^2 - 2^2 \\cr &\\quad = (x - 2)^2 - 4 \\end{aligned}",
+                "Since $(x - 2)^2 \\ge 0$ for all real $x$, the minimum value is $-4$. Thus, the range is $g(x) \\ge -4$.",
+                "<strong>(ii)</strong> Substitute $f(x) = 2x - 3$ into $g(x)$:\\begin{aligned} &gf(x) \\cr &\\quad = g(2x - 3) \\cr &\\quad = (2x - 3)^2 \\cr &\\qquad - 4(2x - 3) \\end{aligned}",
+                "Expand and simplify:\\begin{aligned} &gf(x) \\cr &\\quad = (4x^2 - 12x + 9) \\cr &\\qquad - (8x - 12) \\cr &\\quad = 4x^2 - 20x + 21 \\end{aligned}",
+                "Factorise the quadratic expression:\\begin{aligned} &4x^2 - 20x + 21 \\cr &\\quad = (2x - 3)(2x - 7) \\end{aligned}",
+                "Factorise out $2$ from each bracket:\\begin{aligned} &(2x - 3)(2x - 7) \\cr &\\quad = 2(x - 1.5) \\cr &\\qquad \\times 2(x - 3.5) \\cr &\\quad = 4(x - 1.5)(x - 3.5) \\end{aligned}<br><br>Thus, $a = 1.5$ and $b = 3.5$.",
+                "<strong>(iii)</strong> Write the composite function $fg(x)$:\\begin{aligned} &fg(x) \\cr &\\quad = f(g(x)) \\cr &\\quad = 2(g(x)) - 3 \\end{aligned}",
+                "Since $g(x) \\ge -4$:\\begin{aligned} &fg(x) \\cr &\\quad \\ge 2(-4) - 3 \\cr &\\quad \\ge -11 \\end{aligned}<br><br>So the range is $fg(x) \\ge -11$.",
+                "Final Answer: <strong>(i)</strong> $g(x) \\ge -4$<br><strong>(ii)</strong> $a = 1.5$, $b = 3.5$<br><strong>(iii)</strong> $fg(x) \\ge -11$"
+        ],
+        "pi_options": [
+                {
+                        "ans": "<strong>(i)</strong> $g(x) \\ge -4$<br><strong>(ii)</strong> $a = 3$, $b = 1.75$<br><strong>(iii)</strong> $fg(x) \\ge -11$",
+                        "feedback": "Check your factorisation of $4x^2 - 20x + 21$. Expanding $4(x - 3)(x - 1.75)$ gives $4x^2 - 19x + 21$, which is incorrect. Factorising $(2x-3)(2x-7)$ gives $4(x - 1.5)(x - 3.5)$, so $a = 1.5$ and $b = 3.5$."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $g(x) \\ge -4$<br><strong>(ii)</strong> $a = 1.5$, $b = 3.5$<br><strong>(iii)</strong> $fg(x) \\ge -3$",
+                        "feedback": "When finding the range of $fg(x) = 2(g(x)) - 3$, you must use the range of $g(x)$, which is $g(x) \\ge -4$. Substituting the minimum value of $-4$ gives $2(-4) - 3 = -11$, not $-3$."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $g(x) \\ge 0$<br><strong>(ii)</strong> $a = 1.5$, $b = 3.5$<br><strong>(iii)</strong> $fg(x) \\ge -11$",
+                        "feedback": "Check the range of $g(x) = x^2 - 4x$. Completing the square gives $(x-2)^2 - 4$. Since $(x-2)^2 \\ge 0$, the minimum value is $-4$, so the range of $g(x)$ is $g(x) \\ge -4$, not $g(x) \\ge 0$."
+                }
+        ],
+        "bradley_insight": {
+                "type": "deeper",
+                "title": "The Head Teacher's Eye: Finding the Range of Composites",
+                "content": "To find the range of a composite function $fg(x) = f(g(x))$, you must trace the output of the inner function $g(x)$ and use it as the domain for the outer function $f(x)$. Since the inner range is $g(x) \\ge -4$ and the outer function $f(x) = 2x - 3$ is strictly increasing, applying $f$ to the minimum boundary yields $2(-4) - 3 = -11$, which determines the final range boundary."
+        }
+},
+{
+        "id": "004596",
+        "board": "OCR",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Integration",
+        "topic": "Integration by Substitution",
+        "subtopic": [
+                "Numerical Methods"
+        ],
+        "img": false,
+        "question": "Consider the definite integral $I = \\int_{0}^{4} \\dfrac{1}{1 + \\sqrt{x}}\\text{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to show that:<br><br>\\begin{aligned} &I \\approx 2\\sqrt{2} - \\dfrac{2}{3} \\end{aligned}<br><br><strong>(ii)</strong> Use the substitution $x = u^2$ to find the exact value of $I$.<br><br><strong>(iii)</strong> Using your answers to parts <strong>(i)</strong> and <strong>(ii)</strong>, show that $\\ln(3) \\approx k - \\sqrt{2}$, where $k$ is a rational number to be determined.",
+        "steps": [
+                "<strong>(i)</strong> The interval is $[0, 4]$. With $2$ strips of equal width, the width of each strip $h$ is:\\begin{aligned} &h = \\dfrac{4 - 0}{2} \\cr &\\quad = 2 \\end{aligned}",
+                "The $x$-coordinates are $x_0 = 0$, $x_1 = 2$, and $x_2 = 4$. Evaluate $f(x) = \\dfrac{1}{1 + \\sqrt{x}}$ at each coordinate:<br><br>• $f(0) = 1$<br><br>• $f(2) = \\dfrac{1}{1 + \\sqrt{2}}$<br><br>• $f(4) = \\dfrac{1}{3}$",
+                "Apply the trapezium rule formula:\\begin{aligned} &I \\approx \\dfrac{h}{2}\\big[f(0) + f(4) + 2f(2)\\big] \\cr &\\quad \\approx \\dfrac{2}{2}\\left[1 + \\dfrac{1}{3} + \\dfrac{2}{1 + \\sqrt{2}}\\right] \\cr &\\quad \\approx \\dfrac{4}{3} + \\dfrac{2}{1 + \\sqrt{2}} \\end{aligned}",
+                "Rationalise the denominator of the fractional term:\\begin{aligned} &\\dfrac{2}{1 + \\sqrt{2}} \\cr &\\quad = \\dfrac{2(1 - \\sqrt{2})}{(1 + \\sqrt{2})(1 - \\sqrt{2})} \\cr &\\quad = \\dfrac{2 - 2\\sqrt{2}}{1 - 2} \\cr &\\quad = \\dfrac{2 - 2\\sqrt{2}}{-1} \\cr &\\quad = 2\\sqrt{2} - 2 \\end{aligned}",
+                "Substitute this back into the approximation to complete part <strong>(i)</strong>:\\begin{aligned} &I \\approx \\dfrac{4}{3} + 2\\sqrt{2} - 2 \\cr &\\quad \\approx 2\\sqrt{2} - \\dfrac{2}{3} \\end{aligned}",
+                "<strong>(ii)</strong> Use the substitution $x = u^2$, which gives $\\text{d}x = 2u\\text{d}u$ and $\\sqrt{x} = u$.<br><br>Find the new integration limits:<br><br>• When $x = 0$, $u = 0$<br><br>• When $x = 4$, $u = 2$",
+                "Substitute these into the integral:\\begin{aligned} &I = \\int_{0}^{2} \\dfrac{1}{1 + u}(2u)\\text{d}u \\cr &\\quad = \\int_{0}^{2} \\dfrac{2u}{1 + u}\\text{d}u \\end{aligned}",
+                "Rewrite the integrand by splitting $2u = 2(1 + u) - 2$:\\begin{aligned} &I = \\int_{0}^{2} \\left(2 - \\dfrac{2}{1 + u}\\right)\\text{d}u \\cr &\\quad = \\big[2u - 2\\ln(1 + u)\\big]_{0}^{2} \\cr &\\quad = (4 - 2\\ln(3)) \\cr &\\qquad - (0 - 2\\ln(1)) \\cr &\\quad = 4 - 2\\ln(3) \\end{aligned}",
+                "<strong>(iii)</strong> Equate the exact value of $I$ and the trapezium rule approximation:\\begin{aligned} &4 - 2\\ln(3) \\cr &\\quad \\approx 2\\sqrt{2} - \\dfrac{2}{3} \\cr &-2\\ln(3) \\cr &\\quad \\approx 2\\sqrt{2} - \\dfrac{14}{3} \\cr &2\\ln(3) \\cr &\\quad \\approx \\dfrac{14}{3} - 2\\sqrt{2} \\cr &\\ln(3) \\cr &\\quad \\approx \\dfrac{7}{3} - \\sqrt{2} \\end{aligned}<br><br>Thus, the rational number is $k = \\dfrac{7}{3}$.",
+                "Final Answer: <strong>(i)</strong> $I \\approx 2\\sqrt{2} - \\dfrac{2}{3}$<br><strong>(ii)</strong> $I = 4 - 2\\ln(3)$<br><strong>(iii)</strong> $k = \\dfrac{7}{3}$"
+        ],
+        "pi_options": [
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx 2\\sqrt{2} - \\dfrac{2}{3}$<br><strong>(ii)</strong> $I = 4 - 2\\ln(3)$<br><strong>(iii)</strong> $k = \\dfrac{5}{3}$",
+                        "feedback": "Check your algebra when transposing the equation to isolate $\\ln(3)$. Adding $\\dfrac{2}{3}$ to $4$ yields $\\dfrac{14}{3}$, and dividing this by $2$ gives $k = \\dfrac{7}{3}$, not $\\dfrac{5}{3}$."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx 2\\sqrt{2} - \\dfrac{2}{3}$<br><strong>(ii)</strong> $I = 2 - 2\\ln(3)$<br><strong>(iii)</strong> $k = \\dfrac{4}{3}$",
+                        "feedback": "Check your integration steps in part <strong>(ii)</strong>. Evaluating $[2u]_0^2$ yields $2(2) - 0 = 4$, not $2$."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx 2\\sqrt{2} + \\dfrac{4}{3}$<br><strong>(ii)</strong> $I = 4 - 2\\ln(3)$<br><strong>(iii)</strong> $k = \\dfrac{7}{3}$",
+                        "feedback": "Check your rationalisation in part <strong>(i)</strong>. The term $\\dfrac{2}{1 + \\sqrt{2}}$ rationalises to $2\\sqrt{2} - 2$. Adding this to $\\dfrac{4}{3}$ yields $2\\sqrt{2} - \\dfrac{2}{3}$."
+                }
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: Splitting Integrands",
+                "content": "When integrating an algebraic fraction where the numerator and denominator have the same degree (like $\\dfrac{2u}{u + 1}$), always use algebraic long division or a clever manipulation like $2u = 2(u + 1) - 2$ first. This allows you to split the fraction into $2 - \\dfrac{2}{u + 1}$, which is instantly integrable."
+        }
+},
+{
+        "id": "004597",
+        "board": "OCR",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Integration",
+        "topic": "Integration",
+        "subtopic": [
+                "Numerical Methods",
+                "Trigonometry"
+        ],
+        "img": false,
+        "question": "Consider the definite integral $I = \\int_{0}^{1} \\dfrac{1}{1 + x^2}\\text{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to show that:<br><br>\\begin{aligned} &I \\approx \\dfrac{31}{40} \\end{aligned}<br><br><strong>(ii)</strong> Find the exact value of $I$ in terms of $\\pi$.<br><br><strong>(iii)</strong> Using your answers to parts <strong>(i)</strong> and <strong>(ii)</strong>, show that $\\pi \\approx k$, where $k$ is a rational number to be determined.",
+        "steps": [
+                "<strong>(i)</strong> The interval is $[0, 1]$. With $2$ strips of equal width, the width of each strip $h$ is:\\begin{aligned} &h = \\dfrac{1 - 0}{2} \\cr &\\quad = 0.5 \\end{aligned}",
+                "The $x$-coordinates are $x_0 = 0$, $x_1 = 0.5$, and $x_2 = 1$. Evaluate $f(x) = \\dfrac{1}{1 + x^2}$ at each coordinate:<br><br>• $f(0) = 1$<br><br>• $f(0.5) = \\dfrac{4}{5}$<br><br>• $f(1) = \\dfrac{1}{2}$",
+                "Apply the trapezium rule formula:\\begin{aligned} &I \\approx \\dfrac{h}{2}\\big[f(0) + f(1) + 2f(0.5)\\big] \\cr &\\quad \\approx \\dfrac{0.5}{2}\\left[1 + \\dfrac{1}{2} + 2\\left(\\dfrac{4}{5}\\right)\\right] \\cr &\\quad \\approx \\dfrac{1}{4}\\left[\\dfrac{3}{2} + \\dfrac{8}{5}\\right] \\cr &\\quad \\approx \\dfrac{1}{4}\\left[\\dfrac{31}{10}\\right] \\cr &\\quad \\approx \\dfrac{31}{40} \\end{aligned}",
+                "<strong>(ii)</strong> Integrate $\\dfrac{1}{1 + x^2}$ analytically:\\begin{aligned} &I = \\int_{0}^{1} \\dfrac{1}{1 + x^2}\\text{d}x \\cr &\\quad = \\big[\\arctan(x)\\big]_{0}^{1} \\cr &\\quad = \\arctan(1) - \\arctan(0) \\cr &\\quad = \\dfrac{\\pi}{4} \\end{aligned}",
+                "<strong>(iii)</strong> Equate the analytical value of $I$ and the numerical approximation:\\begin{aligned} &\\dfrac{\\pi}{4} \\approx \\dfrac{31}{40} \\cr &\\pi \\approx \\dfrac{124}{40} \\cr &\\pi \\approx \\dfrac{31}{10} \\end{aligned}<br><br>Thus, the rational number is $k = \\dfrac{31}{10}$ (or $3.1$).",
+                "Final Answer: <strong>(i)</strong> $I \\approx \\dfrac{31}{40}$<br><strong>(ii)</strong> $I = \\dfrac{\\pi}{4}$<br><strong>(iii)</strong> $k = \\dfrac{31}{10}$"
+        ],
+        "pi_options": [
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx \\dfrac{31}{40}$<br><strong>(ii)</strong> $I = \\dfrac{\\pi}{2}$<br><strong>(iii)</strong> $k = \\dfrac{31}{20}$",
+                        "feedback": "Check your analytical integration. The integral of $\\dfrac{1}{1 + x^2}$ is $\\arctan(x)$. Since $\\arctan(1) = \\dfrac{\\pi}{4}$, the exact value is $\\dfrac{\\pi}{4}$, not $\\dfrac{\\pi}{2}$."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx \\dfrac{3}{4}$<br><strong>(ii)</strong> $I = \\dfrac{\\pi}{4}$<br><strong>(iii)</strong> $k = 3$",
+                        "feedback": "Verify your trapezium rule calculations. The value of the function at the midpoint $x = 0.5$ is $\\dfrac{4}{5} = 0.8$. Ensure you substitute this correct value into the formula."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx \\dfrac{31}{40}$<br><strong>(ii)</strong> $I = \\dfrac{\\pi}{4}$<br><strong>(iii)</strong> $k = \\dfrac{31}{40}$",
+                        "feedback": "When solving for $\\pi$ in part <strong>(iii)</strong>, remember to multiply both sides of the approximation $\\dfrac{\\pi}{4} \\approx \\dfrac{31}{40}$ by $4$ to isolate $\\pi$."
+                }
+        ],
+        "bradley_insight": {
+                "type": "deeper",
+                "title": "The Head Teacher's Eye: Historical Approximations of Pi",
+                "content": "This question demonstrates the classical method of using calculus to approximate historical constants. By applying a simple 2-strip trapezium approximation to $\\int_{0}^{1} \\dfrac{1}{1 + x^2}\\text{d}x$, we approximate the value of $\\pi$ as $3.1$, which is close for such a low number of strips."
+        }
+},
+{
+        "id": "004598",
+        "board": "OCR",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Integration",
+        "topic": "Integration",
+        "subtopic": [
+                "Exponential and Logarithmic Functions and Graphs",
+                "Numerical Methods"
+        ],
+        "img": false,
+        "question": "Consider the definite integral $I = \\int_{1}^{3} \\dfrac{1}{x}\\text{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to show that:<br><br>\\begin{aligned} &I \\approx \\dfrac{7}{6} \\end{aligned}<br><br><strong>(ii)</strong> Find the exact value of $I$ in terms of natural logarithms.<br><br><strong>(iii)</strong> Using your answers to parts <strong>(i)</strong> and <strong>(ii)</strong>, state an approximate rational value for $\\ln(3)$.",
+        "steps": [
+                "<strong>(i)</strong> The interval is $[1, 3]$. With $2$ strips of equal width, the width of each strip $h$ is:\\begin{aligned} &h = \\dfrac{3 - 1}{2} \\cr &\\quad = 1 \\end{aligned}",
+                "The $x$-coordinates are $x_0 = 1$, $x_1 = 2$, and $x_2 = 3$. Evaluate $f(x) = \\dfrac{1}{x}$ at each coordinate:<br><br>• $f(1) = 1$<br><br>• $f(2) = \\dfrac{1}{2}$<br><br>• $f(3) = \\dfrac{1}{3}$",
+                "Apply the trapezium rule formula:\\begin{aligned} &I \\approx \\dfrac{h}{2}\\big[f(1) + f(3) + 2f(2)\\big] \\cr &\\quad \\approx \\dfrac{1}{2}\\left[1 + \\dfrac{1}{3} + 2\\left(\\dfrac{1}{2}\\right)\\right] \\cr &\\quad \\approx \\dfrac{1}{2}\\left[2 + \\dfrac{1}{3}\\right] \\cr &\\quad \\approx \\dfrac{1}{2}\\left[\\dfrac{7}{3}\\right] \\cr &\\quad \\approx \\dfrac{7}{6} \\end{aligned}",
+                "<strong>(ii)</strong> Integrate $\\dfrac{1}{x}$ analytically:\\begin{aligned} &I = \\int_{1}^{3} \\dfrac{1}{x}\\text{d}x \\cr &\\quad = \\big[\\ln(x)\\big]_{1}^{3} \\cr &\\quad = \\ln(3) - \\ln(1) \\cr &\\quad = \\ln(3) \\end{aligned}",
+                "<strong>(iii)</strong> Directly equate the analytical value and the numerical approximation:\\begin{aligned} &\\ln(3) \\approx \\dfrac{7}{6} \\end{aligned}",
+                "Final Answer: <strong>(i)</strong> $I \\approx \\dfrac{7}{6}$<br><strong>(ii)</strong> $I = \\ln(3)$<br><strong>(iii)</strong> $\\ln(3) \\approx \\dfrac{7}{6}$"
+        ],
+        "pi_options": [
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx \\dfrac{7}{6}$<br><strong>(ii)</strong> $I = \\ln(2)$<br><strong>(iii)</strong> $\\ln(3) \\approx \\dfrac{7}{6}$",
+                        "feedback": "Check your limits when integrating in part <strong>(ii)</strong>. Evaluating $[\\ln(x)]_1^3$ gives $\\ln(3) - \\ln(1) = \\ln(3)$, not $\\ln(2)$."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx 1.5$<br><strong>(ii)</strong> $I = \\ln(3)$<br><strong>(iii)</strong> $\\ln(3) \\approx 1.5$",
+                        "feedback": "Verify your trapezium rule sum. Ensure you only double the middle ordinate $f(2) = 0.5$ and do not double the endpoint ordinates."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx \\dfrac{5}{6}$<br><strong>(ii)</strong> $I = \\ln(3)$<br><strong>(iii)</strong> $\\ln(3) \\approx \\dfrac{5}{6}$",
+                        "feedback": "Check your arithmetic in part <strong>(i)</strong>. The sum inside the brackets is $\\dfrac{7}{3}$. Multiplying by $\\dfrac{1}{2}$ yields $\\dfrac{7}{6}$, not $\\dfrac{5}{6}$."
+                }
+        ],
+        "bradley_insight": {
+                "type": "caution",
+                "title": "The Head Teacher's Eye: Overestimates vs. Underestimates",
+                "content": "Since the graph of $y = \\dfrac{1}{x}$ is concave up over the interval $[1, 3]$, the straight chord segments of the trapeziums lie entirely above the curve. Therefore, the trapezium rule will always produce an overestimate. This explains why $\\dfrac{7}{6} \\approx 1.167$ is slightly larger than the actual value of $\\ln(3) \\approx 1.099$."
+        }
+},
+{
+        "id": "004599",
+        "board": "OCR",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Integration",
+        "topic": "Integration",
+        "subtopic": [
+                "Exponential and Logarithmic Functions and Graphs",
+                "Numerical Methods"
+        ],
+        "img": false,
+        "question": "Consider the definite integral $I = \\int_{0}^{2} x\\mathrm{e}^{-x}\\text{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to find an approximation for $I$ in terms of the constant $\\mathrm{e}$.<br><br><strong>(ii)</strong> Use integration by parts to find the exact value of $I$ in terms of the constant $\\mathrm{e}$.<br><br><strong>(iii)</strong> Using your answers to parts <strong>(i)</strong> and <strong>(ii)</strong>, show that $\\mathrm{e}^2 - \\mathrm{e} \\approx k$, where $k$ is an integer to be found.",
+        "steps": [
+                "<strong>(i)</strong> The interval is $[0, 2]$. With $2$ strips of equal width, the width of each strip $h$ is:\\begin{aligned} &h = \\dfrac{2 - 0}{2} \\cr &\\quad = 1 \\end{aligned}",
+                "The $x$-coordinates are $x_0 = 0$, $x_1 = 1$, and $x_2 = 2$. Evaluate $f(x) = x\\mathrm{e}^{-x}$ at each coordinate:<br><br>• $f(0) = 0$<br><br>• $f(1) = \\mathrm{e}^{-1}$<br><br>• $f(2) = 2\\mathrm{e}^{-2}$",
+                "Apply the trapezium rule formula:\\begin{aligned} &I \\approx \\dfrac{h}{2}\\big[f(0) + f(2) + 2f(1)\\big] \\cr &\\quad \\approx \\dfrac{1}{2}\\big[0 + 2\\mathrm{e}^{-2} + 2\\mathrm{e}^{-1}\\big] \\cr &\\quad \\approx \\mathrm{e}^{-1} + \\mathrm{e}^{-2} \\end{aligned}",
+                "<strong>(ii)</strong> Integrate $x\\mathrm{e}^{-x}$ analytically using integration by parts, $\\int u\\text{d}v = uv - \\int v\\text{d}u$.<br><br>Let $u = x \\implies \\text{d}u = \\text{d}x$, and let $\\text{d}v = \\mathrm{e}^{-x}\\text{d}x \\implies v = -\\mathrm{e}^{-x}$.",
+                "Substitute these into the integration by parts formula:\\begin{aligned} &I = \\big[-x\\mathrm{e}^{-x}\\big]_{0}^{2} - \\int_{0}^{2} -\\mathrm{e}^{-x}\\text{d}x \\cr &\\quad = -2\\mathrm{e}^{-2} + \\int_{0}^{2} \\mathrm{e}^{-x}\\text{d}x \\cr &\\quad = -2\\mathrm{e}^{-2} + \\big[-\\mathrm{e}^{-x}\\big]_{0}^{2} \\cr &\\quad = -2\\mathrm{e}^{-2} + (-\\mathrm{e}^{-2} + \\mathrm{e}^{0}) \\cr &\\quad = 1 - 3\\mathrm{e}^{-2} \\end{aligned}",
+                "<strong>(iii)</strong> Equate the numerical approximation and the analytical exact value:\\begin{aligned} &\\mathrm{e}^{-1} + \\mathrm{e}^{-2} \\approx 1 - 3\\mathrm{e}^{-2} \\cr &\\mathrm{e}^{-1} \\approx 1 - 4\\mathrm{e}^{-2} \\end{aligned}",
+                "Multiply the entire equation by $\\mathrm{e}^2$ to eliminate negative powers:\\begin{aligned} &\\mathrm{e} \\approx \\mathrm{e}^2 - 4 \\cr &\\mathrm{e}^2 - \\mathrm{e} \\approx 4 \\end{aligned}<br><br>Thus, the integer is $k = 4$.",
+                "Final Answer: <strong>(i)</strong> $I \\approx \\mathrm{e}^{-1} + \\mathrm{e}^{-2}$<br><strong>(ii)</strong> $I = 1 - 3\\mathrm{e}^{-2}$<br><strong>(iii)</strong> $k = 4$"
+        ],
+        "pi_options": [
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx \\mathrm{e}^{-1} + \\mathrm{e}^{-2}$<br><strong>(ii)</strong> $I = 1 - 3\\mathrm{e}^{-2}$<br><strong>(iii)</strong> $k = 3$",
+                        "feedback": "Check your algebra in part <strong>(iii)</strong>. Transposing $\\mathrm{e}^{-1} + \\mathrm{e}^{-2} \\approx 1 - 3\\mathrm{e}^{-2}$ gives $\\mathrm{e}^{-1} \\approx 1 - 4\\mathrm{e}^{-2}$. Multiplying by $\\mathrm{e}^2$ yields $\\mathrm{e} \\approx \\mathrm{e}^2 - 4$, which leads to $k = 4$, not $3$."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx 2\\mathrm{e}^{-1} + \\mathrm{e}^{-2}$<br><strong>(ii)</strong> $I = 1 - 3\\mathrm{e}^{-2}$<br><strong>(iii)</strong> $k = 4$",
+                        "feedback": "Check your trapezium ordinate values. The formula is $\\dfrac{h}{2}[y_0 + y_n + 2y_1]$. Since $y_1 = \\mathrm{e}^{-1}$, we double this to get $2\\mathrm{e}^{-1}$. Multiplying the whole bracket by $\\dfrac{1}{2}$ yields $\\mathrm{e}^{-1} + \\mathrm{e}^{-2}$."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx \\mathrm{e}^{-1} + \\mathrm{e}^{-2}$<br><strong>(ii)</strong> $I = 1 - \\mathrm{e}^{-2}$<br><strong>(iii)</strong> $k = 2$",
+                        "feedback": "Verify your integration by parts. The term $v\\text{d}u = -\\mathrm{e}^{-x}\\text{d}x$. Integrating this over the limits yields another negative term, resulting in the correct analytical expression $1 - 3\\mathrm{e}^{-2}$."
+                }
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: Choosing u in Parts",
+                "content": "When using integration by parts for $\\int x\\mathrm{e}^{-x}\\text{d}x$, always use the LATE rule to choose $u$. Since $x$ is algebraic (A) and $\\mathrm{e}^{-x}$ is exponential (E), we choose $u = x$. This ensures that differentiating $u$ reduces its degree to $1$, making the remaining integral straightforward to compute."
+        }
+},
+{
+        "id": "004600",
+        "board": "OCR",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Integration",
+        "topic": "Integration",
+        "subtopic": [
+                "Numerical Methods",
+                "Trigonometry"
+        ],
+        "img": false,
+        "question": "Consider the definite integral $I = \\int_{0}^{\\pi} \\sin^2(x)\\text{d}x$.<br><br><strong>(i)</strong> Use the trapezium rule, with two strips of equal width, to show that:<br><br>\\begin{aligned} &I \\approx \\dfrac{\\pi}{2} \\end{aligned}<br><br><strong>(ii)</strong> Use a suitable double-angle trigonometric identity to find the exact value of $I$.<br><br><strong>(iii)</strong> Explain why the trapezium rule approximation is unusually accurate in this specific case.",
+        "steps": [
+                "<strong>(i)</strong> The interval is $[0, \\pi]$. With $2$ strips of equal width, the width of each strip $h$ is:\\begin{aligned} &h = \\dfrac{\\pi - 0}{2} \\cr &\\quad = \\dfrac{\\pi}{2} \\end{aligned}",
+                "The $x$-coordinates are $x_0 = 0$, $x_1 = \\dfrac{\\pi}{2}$, and $x_2 = \\pi$. Evaluate $f(x) = \\sin^2(x)$ at each coordinate:<br><br>• $f(0) = 0$<br><br>• $f\\left(\\dfrac{\\pi}{2}\\right) = 1$<br><br>• $f(\\pi) = 0$",
+                "Apply the trapezium rule formula:\\begin{aligned} &I \\approx \\dfrac{h}{2}\\left[f(0) + f(\\pi) + 2f\\left(\\dfrac{\\pi}{2}\\right)\\right] \\cr &\\quad \\approx \\dfrac{\\pi / 2}{2}[0 + 0 + 2(1)] \\cr &\\quad \\approx \\dfrac{\\pi}{4}[2] \\cr &\\quad \\approx \\dfrac{\\pi}{2} \\end{aligned}",
+                "<strong>(ii)</strong> Integrate $\\sin^2(x)$ analytically using $\\sin^2(x) = \\dfrac{1 - \\cos(2x)}{2}$:\\begin{aligned} &I = \\int_{0}^{\\pi} \\dfrac{1 - \\cos(2x)}{2}\\text{d}x \\cr &\\quad = \\dfrac{1}{2}\\left[x - \\dfrac{\\sin(2x)}{2}\\right]_{0}^{\\pi} \\cr &\\quad = \\dfrac{1}{2}\\left[\\left(\\pi - \\dfrac{\\sin(2\\pi)}{2}\\right) - 0\\right] \\cr &\\quad = \\dfrac{\\pi}{2} \\end{aligned}",
+                "<strong>(iii)</strong> The trapezium rule approximation is exact in this case due to the symmetry of the curve:<br><br>The curve $y = \\sin^2(x)$ is symmetric about $x = \\dfrac{\\pi}{2}$. On the interval $\\left[0, \\dfrac{\\pi}{2}\\right]$, the curve is concave down, so the trapezium underestimates the area.<br><br>On the interval $\\left[\\dfrac{\\pi}{2}, \\pi\\right]$, the curve is concave up, so the trapezium overestimates the area.<br><br>Because of this symmetry, the underestimate and overestimate cancel each other out exactly.",
+                "Final Answer: <strong>(i)</strong> $I \\approx \\dfrac{\\pi}{2}$<br><strong>(ii)</strong> $I = \\dfrac{\\pi}{2}$<br><strong>(iii)</strong> The trapezium rule is exact because symmetric errors cancel out."
+        ],
+        "pi_options": [
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx \\dfrac{\\pi}{2}$<br><strong>(ii)</strong> $I = \\pi$<br><strong>(iii)</strong> The trapezium rule is exact because $\\sin^2(x)$ is a linear function.",
+                        "feedback": "Check your analytical integration in part <strong>(ii)</strong>. Integrating $\\dfrac{1 - \\cos(2x)}{2}$ over $[0, \\pi]$ yields $\\dfrac{\\pi}{2}$, not $\\pi$. Also, $\\sin^2(x)$ is a quadratic trigonometric curve, not a linear function."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx \\dfrac{\\pi}{4}$<br><strong>(ii)</strong> $I = \\dfrac{\\pi}{2}$<br><strong>(iii)</strong> The trapezium rule is exact because the endpoints are zero.",
+                        "feedback": "Check your trapezium rule sum. The midpoint ordinate $f\\left(\\dfrac{\\pi}{2}\\right) = 1$ is multiplied by $2$ in the formula, which yields $2$. Multiplying by $\\dfrac{\\pi}{4}$ gives $\\dfrac{\\pi}{2}$, not $\\dfrac{\\pi}{4}$."
+                },
+                {
+                        "ans": "<strong>(i)</strong> $I \\approx \\pi$<br><strong>(ii)</strong> $I = \\dfrac{\\pi}{2}$<br><strong>(iii)</strong> The trapezium rule is exact because $\\sin^2(x)$ has no curvature.",
+                        "feedback": "Check your ordinate substitutions. The sum of the ordinates is $0 + 0 + 2(1) = 2$. Multiplying by $\\dfrac{h}{2} = \\dfrac{\\pi}{4}$ gives $\\dfrac{\\pi}{2}$. Furthermore, the curve definitely has curvature; the exact match is due to symmetric error cancellation."
+                }
+        ],
+        "bradley_insight": {
+                "type": "deeper",
+                "title": "The Head Teacher's Eye: Symmetric Error Cancellation",
+                "content": "Normally, the trapezium rule is only an approximation. However, for functions that exhibit symmetric transition from concave-down to concave-up over the intervals (such as a full sine wave arch), the underestimate of one trapezium cancels out the overestimate of the other. This symmetric error cancellation is a highly elegant mathematical property!"
+        }
+}
 ];
