@@ -349,7 +349,7 @@ window.ALEVEL_QUESTIONS = [
                         "content": "In any exponential model of the form $T = T_{\\text{ambient}} + k e^{-ct}$, the term $e^{-ct}$ acts as a transient state that decays to zero as time goes on. The constant term ($T_{\\text{ambient}}$) represents the steady-state asymptote. Recognizing this immediately tells you the ambient room temperature is $20^\\circ\\text{C}$ without doing any calculus."
                 }
         },
-        {
+       {
                 "id": "004560",
                 "board": "OCR",
                 "branch": "Pure",
@@ -361,7 +361,7 @@ window.ALEVEL_QUESTIONS = [
                         "Modelling and Applications"
                 ],
                 "img": false,
-                "question": "A car rental company models the total charge, $C$ (£), for renting a car for $d$ days using the piecewise function:$$C = \\begin{cases} 45d & \\text{for } 0 \\le d \\le 5 \\cr 225 + 30(d - 5) & \\text{for } d > 5 \\end{cases}$$<br><strong>(i)</strong> Calculate the total cost of renting a car for $4$ days, and the cost of renting a car for $10$ days.<br><br><strong>(ii)</strong> Describe how the daily rate of hire changes after the first $5$ days, and suggest a commercial reason why the company might structure their pricing in this way.<br><br><strong>(iii)</strong> Show that the function is continuous at $d = 5$.",
+                "question": "A car rental company models the total charge, $C$ (£), for renting a car for $d$ days using the piecewise model:<br><br>• For $0 \\le d \\le 5$:<br>$$C = 45d$$<br>• For $d > 5$:<br>$$C = 225 + 30(d - 5)$$<br><br><strong>(i)</strong> Calculate the total cost of renting a car for $4$ days, and the cost of renting a car for $10$ days.<br><br><strong>(ii)</strong> Describe how the daily rate of hire changes after the first $5$ days, and suggest a commercial reason why the company might structure their pricing in this way.<br><br><strong>(iii)</strong> Show that the function is continuous at $d = 5$.",
                 "steps": [
                         "To calculate the total cost for $4$ days, use the first branch ($0 \\le d \\le 5$):\\begin{aligned} C(4) &= 45(4) \\cr &= 180 \\end{aligned}To calculate the cost for $10$ days, use the second branch ($d > 5$):\\begin{aligned} C(10) &= 225 + 30(10 - 5) \\cr &= 225 + 30(5) \\cr &= 225 + 150 \\cr &= 375 \\end{aligned}Thus, the cost for $4$ days is £$180$ and the cost for $10$ days is £$375$.",
                         "During the first $5$ days, the daily rate of hire is £$45$ per day (the gradient of the first branch). After $5$ days, additional days are charged at £$30$ per day (the gradient of the second branch).<br><br>Therefore, the daily rate of hire drops from £$45$ to £$30$ after day $5$. Commercially, this offers a bulk discount for extended hires, incentivizing customers to rent the car for longer periods by lowering the marginal daily rate.",
