@@ -1177,7 +1177,7 @@ window.ALEVEL_QUESTIONS = [
                 "Apply the standard small-angle approximations for small $\\theta$ in radians:\\begin{aligned} &\\cos\\theta \\approx 1 - \\dfrac{\\theta^2}{2} \\cr &\\sin\\theta \\approx \\theta \\end{aligned}",
                 "Substitute these approximations into the original equation:\\begin{aligned} &\\left(1 - \\dfrac{\\theta^2}{2}\\right) - \\theta + 2\\theta^2 \\approx 1.25 \\end{aligned}",
                 "Collect like terms and simplify:\\begin{aligned} &1 - \\theta + 1.5\\theta^2 = 1.25 \\cr &1.5\\theta^2 - \\theta - 0.25 = 0 \\end{aligned}<br><br>Multiply through by $2$ to clear decimals:\\begin{aligned} &3\\theta^2 - 2\\theta - 0.5 = 0 \\end{aligned}",
-                "Apply the quadratic formula to solve part <strong>(b)</strong>:\\begin{aligned} &\\theta = \\dfrac{-(-2) \\pm \\sqrt{(-2)^2 - 4(3)(-0.5)}}{2(3)} \\cr &\\hphantom{\\theta} = \\dfrac{2 \\pm \\sqrt{4 + 6}}{6} \\cr &\\hphantom{\\theta} = \\dfrac{2 \\pm \\sqrt{10}}{6} \\end{aligned}",
+                "Apply the quadratic formula to solve part <strong>(b)</strong>:\\begin{aligned} &\\theta \\cr &= \\dfrac{-(-2) \\pm \\sqrt{(-2)^2 - 4(3)(-0.5)}}{2(3)} \\cr & = \\dfrac{2 \\pm \\sqrt{4 + 6}}{6} \\cr & = \\dfrac{2 \\pm \\sqrt{10}}{6} \\end{aligned}",
                 "Evaluate the roots numerically with $\\sqrt{10} \\approx 3.16228$:\\begin{aligned} &\\theta_1 \\approx \\dfrac{2 + 3.16228}{6} \\approx 0.860 \\cr &\\theta_2 \\approx \\dfrac{2 - 3.16228}{6} \\approx -0.194 \\end{aligned}<br><br>Thus, to three decimal places, the solutions are $\\theta \\approx 0.860$ and $\\theta \\approx -0.194$ radians.",
                 "Final Answer: <strong>(b)</strong> $\\theta \\approx 0.860$, $-0.194$ radians"
         ],
