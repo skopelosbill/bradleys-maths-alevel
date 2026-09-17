@@ -788,7 +788,7 @@ window.ALEVEL_QUESTIONS = [
                 "Let $A$ and $B$ be the intersection points of the two circumferences. Since the distance between centres equals the radius ($6\\text{ cm}$):\\begin{aligned} &O_1 O_2 = 6 \\cr &O_1 A = O_2 A = 6 \\end{aligned}<br><br>Therefore, triangle $O_1 A O_2$ is equilateral, and $\\angle A O_1 O_2 = \\dfrac{\\pi}{3}$ radians.",
                 "By symmetry, the total angle $\\theta$ of sector $A O_1 B$ is double $\\angle A O_1 O_2$:\\begin{aligned} &\\theta = 2 \\times \\angle A O_1 O_2 \\cr &\\hphantom{\\theta} = 2\\left(\\dfrac{\\pi}{3}\\right) \\cr &\\hphantom{\\theta} = \\dfrac{2\\pi}{3}\\text{ radians} \\end{aligned}",
                 "The common region consists of two identical circular segments separated by the common chord $AB$. The area of one segment in circle $O_1$ is:\\begin{aligned} &A_{\\text{segment}} = A_{\\text{sector}} - A_{\\text{triangle}} \\cr &\\hphantom{A_{\\text{segment}}} = \\dfrac{1}{2}r^2\\theta - \\dfrac{1}{2}r^2\\sin\\theta \\end{aligned}",
-                "Substitute $r = 6$ and $\\theta = \\dfrac{2\\pi}{3}$ into the segment formula:\\begin{aligned} &A_{\\text{segment}} \\cr &\\quad = \\dfrac{1}{2}(6)^2\\left(\\dfrac{2\\pi}{3}\\right) - \\dfrac{1}{2}(6)^2\\sin\\left(\\dfrac{2\\pi}{3}\\right) \\cr &\\quad = 12\\pi - 18\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &\\quad = 12\\pi - 9\\sqrt{3} \\end{aligned}",
+                "Substitute $r = 6$ and $\\theta = \\dfrac{2\\pi}{3}$ into the segment formula:\\begin{aligned} &A_{\\text{segment}} \\cr &\\quad = \\dfrac{1}{2}(6)^2\\left(\\dfrac{2\\pi}{3}\\right)\\cr & \\qquad - \\dfrac{1}{2}(6)^2\\sin\\left(\\dfrac{2\\pi}{3}\\right) \\cr &\\quad = 12\\pi - 18\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &\\quad = 12\\pi - 9\\sqrt{3} \\end{aligned}",
                 "Double the area of this single segment to find the total common area:\\begin{aligned} &A_{\\text{total}} = 2 \\times A_{\\text{segment}} \\cr &\\hphantom{A_{\\text{total}}} = 2(12\\pi - 9\\sqrt{3}) \\cr &\\hphantom{A_{\\text{total}}} = 24\\pi - 18\\sqrt{3}\\text{ cm}^2 \\end{aligned}",
                 "Final Answer: $24\\pi - 18\\sqrt{3}\\text{ cm}^2$"
         ],
@@ -813,192 +813,197 @@ window.ALEVEL_QUESTIONS = [
         }
 },
 {
-    "id": "004671",
-    "board": "WJEC",
-    "branch": "Pure",
-    "level": "A",
-    "major_area": "Algebra and Functions",
-    "topic": "Graph Transformations",
-    "subtopic": [
-        "Coordinate Transformations"
-    ],
-    "img": false,
-    "question": "The curve $y = f(x)$ passes through the points $(-2, 0)$, $(0, 8)$, and $(4, 0)$, and has a local maximum at $(1, 9)$. <br><br><strong>(a)</strong> Find the coordinates of the local maximum and the $x$-intercepts of the transformed curve $y = 2f(x + 3)$. <br><br><strong>(b)</strong> Find the coordinates of the local minimum and the $y$-intercept of the transformed curve $y = 5 - f(x)$.",
-    "steps": [
-        "To find the transformed coordinates under $y = 2f(x + 3)$, we must identify how the transformations affect any general point $(x, y)$ on the curve: <br> 1. The horizontal transformation inside the bracket, $x + 3$, shifts the graph horizontally to the left by $3$ units, so $x \\to x - 3$. <br> 2. The vertical transformation outside the bracket, $2f(\\dots)$, is a vertical stretch by a scale factor of $2$, so $y \\to 2y$. <br> Thus, any point $(x, y)$ transforms to: <br> \\begin{aligned} (x - 3, 2y) \\end{aligned}",
-        "We apply these transformations to the original local maximum and the $x$-intercepts: <br> For the local maximum $(1, 9)$: <br> \\begin{aligned} (1 - 3, 2 \\times 9) &= (-2, 18) \\end{aligned} <br> For the $x$-intercepts $(-2, 0)$ and $(4, 0)$: <br> \\begin{aligned} (-2 - 3, 2 \\times 0) &= (-5, 0) \\cr (4 - 3, 2 \\times 0) &= (1, 0) \\end{aligned} <br> Thus, on the transformed curve, the new local maximum is at $(-2, 18)$ and the $x$-intercepts are at $(-5, 0)$ and $(1, 0)$.",
-        "To find the transformed coordinates under $y = 5 - f(x)$, we analyze the transformations affecting $(x, y)$: <br> 1. There is no horizontal transformation, so $x$ remains unchanged. <br> 2. The vertical transformation, $-f(x) + 5$, reflects the graph in the $x$-axis (multiplying $y$ by $-1$) and then translates it vertically upwards by $5$ units. <br> Thus, any point $(x, y)$ transforms to: <br> \\begin{aligned} (x, -y + 5) \\end{aligned}",
-        "We apply these transformations to the original local maximum and the $y$-intercept. Because the graph has been reflected vertically, the original local maximum becomes a local minimum: <br> \\begin{aligned} (1, -9 + 5) &= (1, -4) \\end{aligned} <br> For the $y$-intercept $(0, 8)$: <br> \\begin{aligned} (0, -8 + 5) &= (0, -3) \\end{aligned} <br> Thus, on the transformed curve, the local minimum is at $(1, -4)$ and the new $y$-intercept is at $(0, -3)$."
-    ],
-    "pi_options": [
-        {
-            "ans": "<strong>(a)</strong> Max: $(4, 18)$, $x$-intercepts: $(1, 0)$, $(7, 0)$; <strong>(b)</strong> Min: $(1, -4)$, $y$-intercept: $(0, -3)$",
-            "feedback": "This error occurs if you shift the graph to the right by $3$ units ($x \\to x + 3$) instead of to the left by $3$ units ($x \\to x - 3$) when evaluating $y = 2f(x + 3)$."
-        },
-        {
-            "ans": "<strong>(a)</strong> Max: $(-2, 18)$, $x$-intercepts: $(-5, 0)$, $(1, 0)$; <strong>(b)</strong> Min: $(1, 14)$, $y$-intercept: $(0, 13)$",
-            "feedback": "This mistake occurs in part (b) if you forget to reflect the $y$-coordinates before translating them upwards, calculating $y \\to y + 5$ instead of $y \\to -y + 5$."
-        },
-        {
-            "ans": "<strong>(a)</strong> Max: $(-2, 9)$, $x$-intercepts: $(-5, 0)$, $(1, 0)$; <strong>(b)</strong> Min: $(1, -4)$, $y$-intercept: $(0, -3)$",
-            "feedback": "This error occurs if you correctly identify the horizontal translation in part (a) but fail to apply the vertical scale factor of $2$ to the maximum point's $y$-coordinate."
+        "id": "004671",
+        "board": "WJEC",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Graph Transformations",
+        "subtopic": [
+                "Coordinate Transformations"
+        ],
+        "img": false,
+        "question": "The curve $y = f(x)$ passes through the points $(-2, 0)$, $(0, 8)$, and $(4, 0)$, and has a local maximum at $(1, 9)$.<br><br><strong>(a)</strong> Find the coordinates of the local maximum and the $x$-intercepts of the transformed curve $y = 2f(x + 3)$.<br><br><strong>(b)</strong> Find the coordinates of the local minimum and the $y$-intercept of the transformed curve $y = 5 - f(x)$.",
+        "steps": [
+                "To find the transformed coordinates under $y = 2f(x + 3)$:<br><br>• Horizontal shift: $x + 3$ shifts the curve left by $3$ units, so $x \\to x - 3$.<br><br>• Vertical stretch: scale factor $2$, so $y \\to 2y$.<br><br>Any point $(x, y)$ transforms to:\\begin{aligned} &(x - 3, 2y) \\end{aligned}",
+                "Apply this to the maximum and the $x$-intercepts:<br><br>• Maximum $(1, 9)$:\\begin{aligned} &(1 - 3, 2 \\times 9) = (-2, 18) \\end{aligned}<br><br>• Intercept $(-2, 0)$:\\begin{aligned} &(-2 - 3, 2 \\times 0) = (-5, 0) \\end{aligned}<br><br>• Intercept $(4, 0)$:\\begin{aligned} &(4 - 3, 2 \\times 0) = (1, 0) \\end{aligned}<br><br>The new maximum is $(-2, 18)$ and the $x$-intercepts are $(-5, 0)$ and $(1, 0)$.",
+                "For $y = 5 - f(x) = -f(x) + 5$:<br><br>• Reflection in the $x$-axis: $y \\to -y$.<br><br>• Upward vertical shift: $y \\to -y + 5$.<br><br>Any point $(x, y)$ transforms to:\\begin{aligned} &(x, -y + 5) \\end{aligned}",
+                "Apply this to the maximum and $y$-intercept $(0, 8)$. The maximum becomes a minimum:\\begin{aligned} &(1, -9 + 5) = (1, -4) \\end{aligned}<br><br>For the $y$-intercept $(0, 8)$:\\begin{aligned} &(0, -8 + 5) = (0, -3) \\end{aligned}<br><br>The local minimum is $(1, -4)$ and the new $y$-intercept is $(0, -3)$.",
+                "Final Answer: <strong>(a)</strong> Max: $(-2, 18)$, $x$-intercepts: $(-5, 0)$, $(1, 0)$; <strong>(b)</strong> Min: $(1, -4)$, $y$-intercept: $(0, -3)$"
+        ],
+        "pi_options": [
+                {
+                        "ans": "<strong>(a)</strong> Max: $(4, 18)$, $x$-intercepts: $(1, 0)$, $(7, 0)$; <strong>(b)</strong> Min: $(1, -4)$, $y$-intercept: $(0, -3)$",
+                        "feedback": "This error occurs if you shift the graph to the right by $3$ units ($x \\to x + 3$) instead of to the left by $3$ units ($x \\to x - 3$) when evaluating $y = 2f(x + 3)$."
+                },
+                {
+                        "ans": "<strong>(a)</strong> Max: $(-2, 18)$, $x$-intercepts: $(-5, 0)$, $(1, 0)$; <strong>(b)</strong> Min: $(1, 14)$, $y$-intercept: $(0, 13)$",
+                        "feedback": "This mistake occurs in part (b) if you forget to reflect the $y$-coordinates before translating them upwards, calculating $y \\to y + 5$ instead of $y \\to -y + 5$."
+                },
+                {
+                        "ans": "<strong>(a)</strong> Max: $(-2, 9)$, $x$-intercepts: $(-5, 0)$, $(1, 0)$; <strong>(b)</strong> Min: $(1, -4)$, $y$-intercept: $(0, -3)$",
+                        "feedback": "This error occurs if you correctly identify the horizontal translation in part (a) but fail to apply the vertical scale factor of $2$ to the maximum point's $y$-coordinate."
+                }
+        ],
+        "bradley_insight": {
+                "type": "caution",
+                "title": "The Head Teacher's Eye: Horizontal Shift Sign Rules",
+                "content": "A classic mistake is translating the graph in the wrong direction. The transformation $f(x + a)$ shifts the graph horizontally by $-a$ units. Always think of it as solving the equation inside the bracket for $x$: $x + 3 = 0 \\implies x = -3$, which means moving $3$ units left."
         }
-    ],
-    "bradley_insight": {
-        "type": "caution",
-        "title": "The Head Teacher's Eye: Horizontal Shift Sign Rules",
-        "content": "A classic mistake is translating the graph in the wrong direction. The transformation $f(x + a)$ shifts the graph horizontally by $-a$ units. Always think of it as solving the equation inside the bracket for $x$: $x + 3 = 0 \\implies x = -3$, which means moving $3$ units left."
-    }
 },
 {
-    "id": "004672",
-    "board": "WJEC",
-    "branch": "Pure",
-    "level": "A",
-    "major_area": "Algebra and Functions",
-    "topic": "Graph Transformations",
-    "subtopic": [
-        "Modulus Function Transformations"
-    ],
-    "img": false,
-    "question": "The curve $y = g(x)$ has a local minimum at $(3, -6)$ and crosses the axes at $(-1, 0)$, $(5, 0)$, and $(0, -5)$. <br><br><strong>(a)</strong> State the coordinates of the local maximum and the $y$-intercept of the curve $y = |g(x)|$. <br><br><strong>(b)</strong> State the coordinates of the two local minima of the curve $y = g(|x|)$.",
-    "steps": [
-        "The transformation $y = |g(x)|$ acts as a vertical reflection for any parts of the graph where $y < 0$: <br> 1. Any point $(x, y)$ where $y \\ge 0$ remains completely unchanged. <br> 2. Any point $(x, y)$ where $y < 0$ is reflected in the $x$-axis, transforming to $(x, -y)$.",
-        "We apply the modulus to the local minimum and the $y$-intercept: <br> The original local minimum is at $(3, -6)$. Since $y = -6 < 0$, it is reflected across the $x$-axis, becoming a local maximum: <br> \\begin{aligned} (3, -(-6)) &= (3, 6) \\end{aligned} <br> The original $y$-intercept is at $(0, -5)$. Since $y = -5 < 0$, it is reflected across the $x$-axis: <br> \\begin{aligned} (0, -(-5)) &= (0, 5) \\end{aligned} <br> Thus, on $y = |g(x)|$, the local maximum is at $(3, 6)$ and the $y$-intercept is at $(0, 5)$.",
-        "The transformation $y = g(|x|)$ discards the entire left-hand side of the graph (where $x < 0$) and replaces it with a reflection of the right-hand side (where $x \\ge 0$) across the $y$-axis: <br> 1. Any point $(x, y)$ with $x \\ge 0$ is preserved. <br> 2. This preserved right-hand side is then mirrored onto the left-hand side, so any preserved point $(x, y)$ with $x > 0$ generates a twin point at $(-x, y)$.",
-        "The original local minimum at $(3, -6)$ lies in the region $x \\ge 0$, so it is preserved. Mirroring this point across the $y$-axis produces a second identical local minimum: <br> \\begin{aligned} (-3, -6) \\end{aligned} <br> Thus, the two local minima of the curve $y = g(|x|)$ are at $(3, -6)$ and $(-3, -6)$."
-    ],
-    "pi_options": [
-        {
-            "ans": "<strong>(a)</strong> Max: $(3, 6)$, $y$-intercept: $(0, -5)$; <strong>(b)</strong> Minima: $(3, -6)$ and $(-3, -6)$",
-            "feedback": "This mistake occurs if you correctly reflect the local minimum for $y = |g(x)|$ but forget to apply the modulus to the $y$-intercept $(0, -5)$, leaving it negative."
-        },
-        {
-            "ans": "<strong>(a)</strong> Max: $(-3, -6)$, $y$-intercept: $(0, 5)$; <strong>(b)</strong> Minima: $(3, 6)$ and $(-3, 6)$",
-            "feedback": "This error arises from confusing the vertical modulus transformation $y = |g(x)|$ with the horizontal modulus transformation $y = g(|x|)$, swapping their behaviors."
-        },
-        {
-            "ans": "<strong>(a)</strong> Max: $(3, 6)$, $y$-intercept: $(0, 5)$; <strong>(b)</strong> Minima: $(3, -6)$ and $(-3, 6)$",
-            "feedback": "This error occurs in part (b) if you mistakenly reflect the $y$-coordinate of the mirrored minimum, writing $(-3, 6)$ instead of $(-3, -6)$."
+        "id": "004672",
+        "board": "WJEC",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Graph Transformations",
+        "subtopic": [
+                "Modulus Function Transformations"
+        ],
+        "img": false,
+        "question": "The curve $y = g(x)$ has a local minimum at $(3, -6)$ and crosses the axes at $(-1, 0)$, $(5, 0)$, and $(0, -5)$.<br><br><strong>(a)</strong> State the coordinates of the local maximum and the $y$-intercept of the curve $y = |g(x)|$.<br><br><strong>(b)</strong> State the coordinates of the two local minima of the curve $y = g(|x|)$.",
+        "steps": [
+                "The transformation $y = |g(x)|$ reflects negative $y$-values across the $x$-axis:<br><br>• If $y \\ge 0$, $(x, y)$ is unchanged.<br><br>• If $y < 0$, $(x, y) \\to (x, -y)$.",
+                "Apply $y = |g(x)|$ to the minimum and $y$-intercept:<br><br>• Minimum $(3, -6) \\to (3, 6)$, which becomes a local maximum.<br><br>• $y$-intercept $(0, -5) \\to (0, 5)$.<br><br>On $y = |g(x)|$, the local maximum is $(3, 6)$ and the $y$-intercept is $(0, 5)$.",
+                "The transformation $y = g(|x|)$ discards the portion for $x < 0$ and reflects the portion for $x \\ge 0$ across the $y$-axis.",
+                "The point $(3, -6)$ has $x \\ge 0$, so it is retained. Reflecting across the $y$-axis produces $(-3, -6)$.<br><br>Thus, the two local minima of $y = g(|x|)$ are $(3, -6)$ and $(-3, -6)$.",
+                "Final Answer: <strong>(a)</strong> Max: $(3, 6)$, $y$-intercept: $(0, 5)$; <strong>(b)</strong> Minima: $(3, -6)$ and $(-3, -6)$"
+        ],
+        "pi_options": [
+                {
+                        "ans": "<strong>(a)</strong> Max: $(3, 6)$, $y$-intercept: $(0, -5)$; <strong>(b)</strong> Minima: $(3, -6)$ and $(-3, -6)$",
+                        "feedback": "This mistake occurs if you correctly reflect the local minimum for $y = |g(x)|$ but forget to apply the modulus to the $y$-intercept $(0, -5)$, leaving it negative."
+                },
+                {
+                        "ans": "<strong>(a)</strong> Max: $(-3, -6)$, $y$-intercept: $(0, 5)$; <strong>(b)</strong> Minima: $(3, 6)$ and $(-3, 6)$",
+                        "feedback": "This error arises from confusing the vertical modulus transformation $y = |g(x)|$ with the horizontal modulus transformation $y = g(|x|)$, swapping their behaviors."
+                },
+                {
+                        "ans": "<strong>(a)</strong> Max: $(3, 6)$, $y$-intercept: $(0, 5)$; <strong>(b)</strong> Minima: $(3, -6)$ and $(-3, 6)$",
+                        "feedback": "This error occurs in part (b) if you mistakenly reflect the $y$-coordinate of the mirrored minimum, writing $(-3, 6)$ instead of $(-3, -6)$."
+                }
+        ],
+        "bradley_insight": {
+                "type": "deeper",
+                "title": "The Head Teacher's Eye: Modulus Differences",
+                "content": "It is crucial to distinguish between $|f(x)|$ and $f(|x|)$. The transformation $y = |f(x)|$ folds all negative outputs vertically upwards ($y \\to -y$ for $y < 0$). The transformation $y = f(|x|)$ mirrors the right-hand side of the graph onto the left-hand side, creating perfect symmetry about the $y$-axis."
         }
-    ],
-    "bradley_insight": {
-        "type": "deeper",
-        "title": "The Head Teacher's Eye: Modulus Differences",
-        "content": "It is crucial to distinguish between $|f(x)|$ and $f(|x|)$. The transformation $y = |f(x)|$ folds all negative outputs vertically upwards ($y \\to -y$ for $y < 0$). The transformation $y = f(|x|)$ mirrors the right-hand side of the graph onto the left-hand side, creating perfect symmetry about the $y$-axis."
-    }
 },
 {
-    "id": "004673",
-    "board": "WJEC",
-    "branch": "Pure",
-    "level": "A",
-    "major_area": "Algebra and Functions",
-    "topic": "Graph Transformations",
-    "subtopic": [
-        "Combined Graph Transformations"
-    ],
-    "img": false,
-    "question": "The curve $y = f(x)$ has a local maximum at the point $(6, 4)$. <br><br>Determine the coordinates of the corresponding stationary point on the transformed curve $y = 3f(2x - 8) + 5$ and state whether this new point is a local maximum or a local minimum.",
-    "steps": [
-        "To find the transformed $x$-coordinate, we look at the argument of the function, $2x - 8$. We set this expression equal to the original $x$-coordinate of the maximum: <br> \\begin{aligned} 2x - 8 &= 6 \\cr 2x &= 14 \\cr x &= 7 \\end{aligned}",
-        "To find the transformed $y$-coordinate, we apply the vertical transformations $3y + 5$ to the original $y$-coordinate of the maximum point ($y = 4$): <br> \\begin{aligned} y &= 3f(6) + 5 \\cr y &= 3(4) + 5 \\cr y &= 17 \\end{aligned} <br> This gives the coordinates of the new stationary point as $(7, 17)$.",
-        "The vertical scale factor is $3$. Because this multiplier is positive, there is no vertical reflection across the $x$-axis. Therefore, the concavity of the curve at the stationary point remains unchanged, and the point remains a local maximum."
-    ],
-    "pi_options": [
-        {
-            "ans": "$(7, 17)$, which is a local minimum",
-            "feedback": "This error occurs if you mistakenly think that scaling or translating a graph vertically reverses its concavity, causing a maximum to become a minimum."
-        },
-        {
-            "ans": "$(4, 17)$, which is a local maximum",
-            "feedback": "This common error occurs if you incorrectly apply the horizontal operations in the order they are written (such as dividing by $2$ to get $3$, then subtracting $8$). The correct sequence is to set $2x - 8 = 6$ and solve for $x$."
-        },
-        {
-            "ans": "$(20, 17)$, which is a local maximum",
-            "feedback": "This mistake occurs if you solve the horizontal transformation in the wrong direction, calculating $2(6) + 8 = 20$ instead of setting $2x - 8 = 6$ and isolating $x$."
+        "id": "004673",
+        "board": "WJEC",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Graph Transformations",
+        "subtopic": [
+                "Combined Graph Transformations"
+        ],
+        "img": false,
+        "question": "The curve $y = f(x)$ has a local maximum at the point $(6, 4)$.<br><br>Determine the coordinates of the corresponding stationary point on the transformed curve $y = 3f(2x - 8) + 5$ and state whether this new point is a local maximum or a local minimum.",
+        "steps": [
+                "Set the argument $2x - 8$ equal to the original $x$-coordinate $6$:\\begin{aligned} &2x - 8 = 6 \\cr &2x = 14 \\cr &x = 7 \\end{aligned}",
+                "Apply the vertical transformation $3y + 5$ to the original $y$-coordinate $4$:\\begin{aligned} &y = 3(4) + 5 \\cr &\\hphantom{y} = 17 \\end{aligned}<br><br>This gives the coordinates $(7, 17)$.",
+                "The vertical scale factor is $+3$, which does not reflect the curve across the $x$-axis. Therefore, the concavity is unchanged and the point remains a local maximum.",
+                "Final Answer: $(7, 17)$, which is a local maximum"
+        ],
+        "pi_options": [
+                {
+                        "ans": "$(7, 17)$, which is a local minimum",
+                        "feedback": "This error occurs if you mistakenly think that scaling or translating a graph vertically reverses its concavity, causing a maximum to become a minimum."
+                },
+                {
+                        "ans": "$(4, 17)$, which is a local maximum",
+                        "feedback": "This common error occurs if you incorrectly apply the horizontal operations in the order they are written (such as dividing by $2$ to get $3$, then subtracting $8$). The correct sequence is to set $2x - 8 = 6$ and solve for $x$."
+                },
+                {
+                        "ans": "$(20, 17)$, which is a local maximum",
+                        "feedback": "This mistake occurs if you solve the horizontal transformation in the wrong direction, calculating $2(6) + 8 = 20$ instead of setting $2x - 8 = 6$ and isolating $x$."
+                }
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: Horizontal Mapping Trick",
+                "content": "When combining horizontal transformations, the safest mathematical trick to avoid order-of-operation slips is to set the new argument equal to the old coordinate (e.g. $2x - 8 = x_{\\text{old}}$) and solve for $x$. This automatically handles the reverse order of operations correctly!"
         }
-    ],
-    "bradley_insight": {
-        "type": "pro-tip",
-        "title": "The Head Teacher's Eye: Horizontal Mapping Trick",
-        "content": "When combining horizontal transformations, the safest mathematical trick to avoid order-of-operation slips is to set the new argument equal to the old coordinate (e.g. $2x - 8 = x_{\\text{old}}$) and solve for $x$. This automatically handles the reverse order of operations correctly!"
-    }
 },
 {
-    "id": "004674",
-    "board": "WJEC",
-    "branch": "Pure",
-    "level": "A",
-    "major_area": "Algebra and Functions",
-    "topic": "Graph Transformations",
-    "subtopic": [
-        "Trigonometric Transformations"
-    ],
-    "img": false,
-    "question": "The curve $y = \\cos x$ (for $0 \\le x \\le 2\\pi$) has a minimum point at $(\\pi, -1)$. <br><br>Determine the coordinates of the corresponding minimum point on the transformed curve $y = 4\\cos\\left(2x - \\dfrac{ \\pi }{ 3 }\\right) - 2$ that lies within the interval $0 \\le x \\le \\pi$.",
-    "steps": [
-        "We identify the horizontal transformation inside the cosine argument, which is $2x - \\dfrac{ \\pi }{ 3 }$. To find the new $x$-coordinate, we set this argument equal to the original $x$-coordinate of the minimum point: <br> \\begin{aligned} 2x - \\dfrac{ \\pi }{ 3 } &= \\pi \\end{aligned}",
-        "We solve for $x$ algebraically: <br> \\begin{aligned} 2x &= \\pi + \\dfrac{ \\pi }{ 3 } \\cr 2x &= \\dfrac{ 4\\pi }{ 3 } \\cr x &= \\dfrac{ 2\\pi }{ 3 } \\end{aligned} <br> We verify that $x = \\dfrac{ 2\\pi }{ 3 }$ lies within our specified interval $0 \\le x \\le \\pi$ (since $0 \\le 2.09 \\le 3.14$).",
-        "We apply the vertical transformations $4y - 2$ to the original $y$-coordinate of the minimum point ($y = -1$): <br> \\begin{aligned} y &= 4(-1) - 2 \\cr y &= -4 - 2 \\cr y &= -6 \\end{aligned} <br> Thus, the coordinates of the corresponding minimum point are: <br> \\begin{aligned} \\left( \\dfrac{ 2\\pi }{ 3 }, -6 \\right) \\end{aligned}"
-    ],
-    "pi_options": [
-        {
-            "ans": "$\\left( \\dfrac{ 2\\pi }{ 3 }, -2 \\right)$",
-            "feedback": "This error occurs if you calculate the vertical transformation incorrectly, such as ignoring the scale factor of $4$ and only applying the vertical translation: $-1 - 2 = -3$, or making other vertical arithmetic slips."
-        },
-        {
-            "ans": "$\\left( \\dfrac{ \\pi }{ 3 }, -6 \\right)$",
-            "feedback": "This mistake arises from subtracting $\\dfrac{ \\pi }{ 3 }$ instead of adding it when solving for $x$, calculating $2x = \\pi - \\dfrac{ \\pi }{ 3 } = \\dfrac{ 2\\pi }{ 3 } \\implies x = \\dfrac{ \\pi }{ 3 }$."
-        },
-        {
-            "ans": "$\\left( \\dfrac{ 4\\pi }{ 3 }, -6 \\right)$",
-            "feedback": "This mistake occurs if you forget to divide by $2$ when isolating $x$, leaving $x = \\dfrac{ 4\\pi }{ 3 }$, which also lies outside the specified interval $0 \\le x \\le \\pi$."
+        "id": "004674",
+        "board": "WJEC",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Graph Transformations",
+        "subtopic": [
+                "Trigonometric Transformations"
+        ],
+        "img": false,
+        "question": "The curve $y = \\cos x$ (for $0 \\le x \\le 2\\pi$) has a minimum point at $(\\pi, -1)$.<br><br>Determine the coordinates of the corresponding minimum point on the transformed curve $y = 4\\cos\\left(2x - \\dfrac{\\pi}{3}\\right) - 2$ that lies within the interval $0 \\le x \\le \\pi$.",
+        "steps": [
+                "Set the argument $2x - \\dfrac{\\pi}{3}$ equal to $\\pi$:\\begin{aligned} &2x - \\dfrac{\\pi}{3} = \\pi \\end{aligned}",
+                "Solve for $x$ algebraically:\\begin{aligned} &2x = \\pi + \\dfrac{\\pi}{3} \\cr &2x = \\dfrac{4\\pi}{3} \\cr &x = \\dfrac{2\\pi}{3} \\end{aligned}<br><br>This value satisfies $0 \\le x \\le \\pi$.",
+                "Apply the vertical transformation $4y - 2$ to $y = -1$:\\begin{aligned} &y = 4(-1) - 2 \\cr &\\hphantom{y} = -4 - 2 \\cr &\\hphantom{y} = -6 \\end{aligned}<br><br>Thus, the coordinates of the corresponding minimum point are $\\left(\\dfrac{2\\pi}{3}, -6\\right)$.",
+                "Final Answer: $\\left(\\dfrac{2\\pi}{3}, -6\\right)$"
+        ],
+        "pi_options": [
+                {
+                        "ans": "$\\left(\\dfrac{2\\pi}{3}, -2\\right)$",
+                        "feedback": "This error occurs if you calculate the vertical transformation incorrectly, such as ignoring the scale factor of $4$ and only applying the vertical translation: $-1 - 2 = -3$, or making other vertical arithmetic slips."
+                },
+                {
+                        "ans": "$\\left(\\dfrac{\\pi}{3}, -6\\right)$",
+                        "feedback": "This mistake arises from subtracting $\\dfrac{\\pi}{3}$ instead of adding it when solving for $x$, calculating $2x = \\dfrac{2\\pi}{3}$, which gives $x = \\dfrac{\\pi}{3}$."
+                },
+                {
+                        "ans": "$\\left(\\dfrac{4\\pi}{3}, -6\\right)$",
+                        "feedback": "This mistake occurs if you forget to divide by $2$ when isolating $x$, leaving $x = \\dfrac{4\\pi}{3}$, which also lies outside the specified interval $0 \\le x \\le \\pi$."
+                }
+        ],
+        "bradley_insight": {
+                "type": "caution",
+                "title": "The Head Teacher's Eye: Trig Period Stretches",
+                "content": "A horizontal stretch of scale factor $\\dfrac{1}{2}$ (caused by the $2x$ term) compresses the trigonometric wave, meaning key points occur twice as frequently. Always verify that your transformed $x$-coordinate lies within the interval specified in the question."
         }
-    ],
-    "bradley_insight": {
-        "type": "caution",
-        "title": "The Head Teacher's Eye: Trig Period Stretches",
-        "content": "A horizontal stretch of scale factor $\\dfrac{ 1 }{ 2 }$ (caused by the $2x$ term) compresses the trigonometric wave, meaning key points occur twice as frequently. Always verify that your transformed $x$-coordinate lies within the interval specified in the question."
-    }
 },
 {
-    "id": "004675",
-    "board": "WJEC",
-    "branch": "Pure",
-    "level": "A",
-    "major_area": "Algebra and Functions",
-    "topic": "Graph Transformations",
-    "subtopic": [
-        "Exponential and Asymptote Transformations"
-    ],
-    "img": false,
-    "question": "The curve $y = e^x - 4$ has a $y$-intercept at $(0, -3)$ and a horizontal asymptote with equation $y = -4$. <br><br>The curve is transformed to $y = -3(e^{x-2} - 4) + 1$. Determine: <br><br><strong>(a)</strong> the exact coordinates of the new $y$-intercept, <br><br><strong>(b)</strong> the equation of the new horizontal asymptote.",
-    "steps": [
-        "To find the coordinates of the new $y$-intercept, we set $x = 0$ in the equation of the transformed curve: <br> \\begin{aligned} y &= -3(e^{0-2} - 4) + 1 \\end{aligned}",
-        "We simplify the expression to find the exact vertical coordinate: <br> \\begin{aligned} y &= -3(e^{ -2 } - 4) + 1 \\cr y &= -3e^{ -2 } + 12 + 1 \\cr y &= 13 - 3e^{ -2 } \\end{aligned} <br> Thus, the exact coordinates of the new $y$-intercept are: <br> \\begin{aligned} \\left( 0, 13 - 3e^{ -2 } \\right) \\end{aligned}",
-        "A horizontal asymptote represents the limiting behavior of the function as $x \\to -\\infty$. For the exponential function $y = e^x - 4$, as $x \\to -\\infty$, $e^x \\to 0$, giving the horizontal asymptote $y = -4$.",
-        "We analyze the limit of the transformed curve as $x \\to -\\infty$, noting that the exponential term $e^{x-2} \\to 0$: <br> \\begin{aligned} y &\\to -3(0 - 4) + 1 \\cr y &\\to 12 + 1 \\cr y &\\to 13 \\end{aligned} <br> Alternatively, we can find this by applying only the vertical transformations $-3y + 1$ directly to the original asymptote equation $y = -4$: <br> \\begin{aligned} y &= -3(-4) + 1 = 13 \\end{aligned} <br> Thus, the equation of the new horizontal asymptote is: <br> \\begin{aligned} y &= 13 \\end{aligned}"
-    ],
-    "pi_options": [
-        {
-            "ans": "<strong>(a)</strong> $\\left( 0, 13 - 3e^{ -2 } \\right)$, <strong>(b)</strong> $y = -11$",
-            "feedback": "This error occurs in part (b) if you fail to reflect the original asymptote, calculating $-3(4) + 1 = -11$ instead of $-3(-4) + 1 = 13$ due to a sign error."
-        },
-        {
-            "ans": "<strong>(a)</strong> $\\left( 0, -8 \\right)$, <strong>(b)</strong> $y = 13$",
-            "feedback": "This mistake occurs in part (a) if you incorrectly evaluate $e^{-2}$ as $0$ when calculating the $y$-intercept, which is only its limiting behavior as $x \\to -\\infty$, not its actual value at $x = 0$."
-        },
-        {
-            "ans": "<strong>(a)</strong> $\\left( 0, 13 - e^{ -2 } \\right)$, <strong>(b)</strong> $y = -3$",
-            "feedback": "This arises if you do not distribute the factor of $-3$ across the entire parenthetical expression, or assume that horizontal asymptote equations are unaffected by vertical stretches."
+        "id": "004675",
+        "board": "WJEC",
+        "branch": "Pure",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "Graph Transformations",
+        "subtopic": [
+                "Exponential and Asymptote Transformations"
+        ],
+        "img": false,
+        "question": "The curve $y = \\mathrm{e}^x - 4$ has a $y$-intercept at $(0, -3)$ and a horizontal asymptote with equation $y = -4$.<br><br>The curve is transformed to $y = -3(\\mathrm{e}^{x-2} - 4) + 1$. Determine:<br><br><strong>(a)</strong> the exact coordinates of the new $y$-intercept,<br><br><strong>(b)</strong> the equation of the new horizontal asymptote.",
+        "steps": [
+                "To find the new $y$-intercept, set $x = 0$ in the transformed curve equation:\\begin{aligned} &y = -3(\\mathrm{e}^{0-2} - 4) + 1 \\end{aligned}",
+                "Simplify to find the exact vertical coordinate:\\begin{aligned} &y = -3(\\mathrm{e}^{-2} - 4) + 1 \\cr &\\hphantom{y} = -3\\mathrm{e}^{-2} + 12 + 1 \\cr &\\hphantom{y} = 13 - 3\\mathrm{e}^{-2} \\end{aligned}<br><br>Thus, the new $y$-intercept is $\\left(0, 13 - 3\\mathrm{e}^{-2}\\right)$.",
+                "For $y = \\mathrm{e}^x - 4$, as $x \\to -\\infty$, $\\mathrm{e}^x \\to 0$, giving the horizontal asymptote $y = -4$.",
+                "As $x \\to -\\infty$, the exponential term $\\mathrm{e}^{x-2} \\to 0$ in the transformed curve:\\begin{aligned} &y \\to -3(0 - 4) + 1 \\cr &y \\to 12 + 1 \\cr &y \\to 13 \\end{aligned}<br><br>Thus, the equation of the new horizontal asymptote is $y = 13$.",
+                "Final Answer: <strong>(a)</strong> $\\left(0, 13 - 3\\mathrm{e}^{-2}\\right)$, <strong>(b)</strong> $y = 13$"
+        ],
+        "pi_options": [
+                {
+                        "ans": "<strong>(a)</strong> $\\left(0, 13 - 3\\mathrm{e}^{-2}\\right)$, <strong>(b)</strong> $y = -11$",
+                        "feedback": "This error occurs in part (b) if you fail to reflect the original asymptote, calculating $-3(4) + 1 = -11$ instead of $-3(-4) + 1 = 13$ due to a sign error."
+                },
+                {
+                        "ans": "<strong>(a)</strong> $(0, -8)$, <strong>(b)</strong> $y = 13$",
+                        "feedback": "This mistake occurs in part (a) if you incorrectly evaluate $\\mathrm{e}^{-2}$ as $0$ when calculating the $y$-intercept, which is only its limiting behavior as $x \\to -\\infty$, not its actual value at $x = 0$."
+                },
+                {
+                        "ans": "<strong>(a)</strong> $\\left(0, 13 - \\mathrm{e}^{-2}\\right)$, <strong>(b)</strong> $y = -3$",
+                        "feedback": "This arises if you do not distribute the factor of $-3$ across the entire parenthetical expression, or assume that horizontal asymptote equations are unaffected by vertical stretches."
+                }
+        ],
+        "bradley_insight": {
+                "type": "pro-tip",
+                "title": "The Head Teacher's Eye: Asymptote Transformation Rules",
+                "content": "Horizontal asymptotes are horizontal lines of the form $y = c$. Because they are completely independent of horizontal coordinates, they are completely unaffected by horizontal transformations like shifts ($x \\to x-2$) or stretches. They only scale and translate under vertical transformations."
         }
-    ],
-    "bradley_insight": {
-        "type": "pro-tip",
-        "title": "The Head Teacher's Eye: Asymptote Transformation Rules",
-        "content": "Horizontal asymptotes are horizontal lines of the form $y = c$. Because they are completely independent of horizontal coordinates, they are completely unaffected by horizontal transformations like shifts ($x \\to x-2$) or stretches. They only scale and translate under vertical transformations."
-    }
 },
 {
     "id": "004676",
