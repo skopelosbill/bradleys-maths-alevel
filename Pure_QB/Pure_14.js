@@ -1629,13 +1629,14 @@ window.ALEVEL_QUESTIONS = [
         "Quadratic Form"
     ],
     "img": false,
-    "question": "Use small-angle approximations to find the small positive root of the equation: <br> $\\sin x + \\cos x = 1.2$ <br><br>giving your answer to three decimal places.",
+    "question": "Use small-angle approximations to find the small positive root of the equation: \\begin{aligned} &\\sin x + \\cos x = 1.2 \\end{aligned} giving your answer to three decimal places.",
     "steps": [
-        "For small values of $x$ measured in radians, we apply the standard small-angle approximations: <br> \\begin{aligned} \\sin x &\\approx x \\cr \\cos x &\\approx 1 - \\dfrac{ x^2 }{ 2 } \\end{aligned}",
-        "We substitute these approximations into our equation: <br> \\begin{aligned} x + \\left( 1 - \\dfrac{ x^2 }{ 2 } \\right) &= 1.2 \\end{aligned}",
-        "We collect the terms and rearrange the equation into a standard quadratic form: <br> \\begin{aligned} 1 - \\dfrac{ x^2 }{ 2 } + x - 1.2 &= 0 \\cr -\\dfrac{ 1 }{ 2 } x^2 + x - 0.2 &= 0 \\cr x^2 - 2x + 0.4 &= 0 \\end{aligned}",
-        "We apply the quadratic formula to solve for $x$: <br> \\begin{aligned} x &= \\dfrac{ -(-2) \\pm \\sqrt{ (-2)^2 - 4(1)(0.4) } }{ 2(1) } \\cr &= \\dfrac{ 2 \\pm \\sqrt{ 4 - 1.6 } }{ 2 } \\cr &= \\dfrac{ 2 \\pm \\sqrt{ 2.4 } }{ 2 } \\cr &= 1 \\pm \\dfrac{ \\sqrt{ 2.4 } }{ 2 } \\end{aligned}",
-        "We evaluate the roots numerically using $\\sqrt{ 2.4 } \\approx 1.54919$: <br> \\begin{aligned} x_1 &\\approx 1 + 0.7746 = 1.775 \\cr x_2 &\\approx 1 - 0.7746 = 0.225 \\end{aligned} <br> For the small-angle approximation to remain valid, $x$ must be close to zero. Thus, we reject the root $x \\approx 1.775$ as it is too large, leaving our small positive root: <br> \\begin{aligned} x \\approx 0.225 \\end{aligned}"
+        "For small values of $x$ measured in radians, we apply the standard approximations: \\begin{aligned} &\\sin x \\approx x \\cr &\\cos x \\approx 1 - \\dfrac{x^2}{2} \\end{aligned}",
+        "We substitute these approximations into the equation: \\begin{aligned} &x + \\Big(1 - \\dfrac{x^2}{2}\\Big) = 1.2 \\end{aligned}",
+        "We rearrange the terms into standard quadratic form: \\begin{aligned} &1 - \\dfrac{x^2}{2} + x - 1.2 = 0 \\cr &\\quad \\implies -\\dfrac{1}{2}x^2 + x - 0.2 = 0 \\cr &\\quad \\implies x^2 - 2x + 0.4 = 0 \\end{aligned}",
+        "We apply the quadratic formula to solve for $x$: \\begin{aligned} &x \\cr &\\quad = \\dfrac{-(-2) \\pm \\sqrt{(-2)^2 - 4(1)(0.4)}}{2(1)} \\cr &\\quad = \\dfrac{2 \\pm \\sqrt{4 - 1.6}}{2} \\cr &\\quad = \\dfrac{2 \\pm \\sqrt{2.4}}{2} \\cr &\\quad = 1 \\pm \\dfrac{\\sqrt{2.4}}{2} \\end{aligned}",
+        "We evaluate the roots using $\\sqrt{2.4} \\approx 1.5492$: \\begin{aligned} &x \\approx 1 \\pm 0.7746 \\cr &\\quad \\implies x \\approx 1.775 \\cr &\\quad \\text{or } x \\approx 0.225 \\end{aligned} For the approximation to remain valid, $x$ must be close to zero. We reject $x \\approx 1.775$ as it is too large, leaving the small positive root: \\begin{aligned} &x \\approx 0.225 \\end{aligned}",
+        "Final Answer: $0.225$"
     ],
     "pi_options": [
         {
@@ -1644,7 +1645,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$0.450$",
-            "feedback": "This error occurs if you forget to divide the discriminant by $2$ when evaluating the quadratic formula, leading to a calculated value of $2 - \\sqrt{ 2.4 } \\approx 0.451$."
+            "feedback": "This error occurs if you forget to divide the discriminant by $2$ when evaluating the quadratic formula, leading to $2 - \\sqrt{2.4} \\approx 0.451$."
         },
         {
             "ans": "$-0.225$",
@@ -1668,17 +1669,18 @@ window.ALEVEL_QUESTIONS = [
         "Algebraic Simplification"
     ],
     "img": false,
-    "question": "Show that, for small values of $x$ measured in radians: <br> $\\dfrac{ 2\\cos x - 2 + 5x\\sin x }{ 3x\\tan 2x } \\approx k$ <br><br>where $k$ is a rational constant to be determined.",
+    "question": "Show that, for small values of $x$ measured in radians: \\begin{aligned} &\\dfrac{2\\cos x - 2 + 5x\\sin x}{3x\\tan 2x} \\approx k \\end{aligned} where $k$ is a rational constant to be determined.",
     "steps": [
-        "For small values of $x$ measured in radians, we apply the standard small-angle approximations: <br> \\begin{aligned} \\cos x &\\approx 1 - \\dfrac{ x^2 }{ 2 } \\cr \\sin x &\\approx x \\cr \\tan 2x &\\approx 2x \\end{aligned}",
-        "We substitute these approximations into the numerator of the expression: <br> \\begin{aligned} 2\\cos x - 2 + 5x\\sin x &\\approx 2\\left( 1 - \\dfrac{ x^2 }{ 2 } \\right) - 2 + 5x(x) \\cr &= 2 - x^2 - 2 + 5x^2 \\cr &= 4x^2 \\end{aligned}",
-        "Next, we substitute the approximations into the denominator of the expression: <br> \\begin{aligned} 3x\\tan 2x &\\approx 3x(2x) \\cr &= 6x^2 \\end{aligned}",
-        "We divide the approximated numerator by the approximated denominator to determine $k$: <br> \\begin{aligned} \\dfrac{ 4x^2 }{ 6x^2 } &= \\dfrac{ 4 }{ 6 } \\cr &= \\dfrac{ 2 }{ 3 } \\end{aligned} <br> Thus, the expression is approximately equal to the rational constant $k = \\dfrac{ 2 }{ 3 }$."
+        "For small values of $x$ measured in radians, we apply the standard small-angle approximations: \\begin{aligned} &\\cos x \\approx 1 - \\dfrac{x^2}{2} \\cr &\\sin x \\approx x \\cr &\\tan 2x \\approx 2x \\end{aligned}",
+        "We substitute these approximations into the numerator: \\begin{aligned} &2\\cos x - 2 + 5x\\sin x \\cr &\\quad \\approx 2\\Big(1 - \\dfrac{x^2}{2}\\Big) - 2 + 5x(x) \\cr &\\quad = 2 - x^2 - 2 + 5x^2 \\cr &\\quad = 4x^2 \\end{aligned}",
+        "Next, we substitute into the denominator: \\begin{aligned} &3x\\tan 2x \\cr &\\quad \\approx 3x(2x) \\cr &\\quad = 6x^2 \\end{aligned}",
+        "We divide the numerator by the denominator to determine $k$: \\begin{aligned} &\\dfrac{4x^2}{6x^2} \\cr &\\quad = \\dfrac{4}{6} \\cr &\\quad = \\dfrac{2}{3} \\end{aligned} Thus, the rational constant is $k = \\dfrac{2}{3}$.",
+        "Final Answer: $k = \\dfrac{ 2 }{ 3 }$"
     ],
     "pi_options": [
         {
             "ans": "$k = \\dfrac{ 1 }{ 3 }$",
-            "feedback": "This error occurs if you make a sign error or expansion error in the numerator, calculating $2\\cos x - 2 \\approx 2 - 2x^2 - 2 = -2x^2$ which simplifies the numerator to $3x^2$ instead of $4x^2$."
+            "feedback": "This error occurs if you make an expansion error in the numerator, evaluating it as $3x^2$ instead of $4x^2$."
         },
         {
             "ans": "$k = \\dfrac{ 4 }{ 3 }$",
@@ -1707,13 +1709,14 @@ window.ALEVEL_QUESTIONS = [
         "Root Selection"
     ],
     "img": false,
-    "question": "Using small-angle approximations, solve the equation: <br> $\\cos\\theta + 4\\sin\\theta = 0.8$ <br><br>Explain clearly why only one of the algebraic roots is valid as a small-angle approximation, and state this valid root to three decimal places.",
+    "question": "Using small-angle approximations, solve the equation: \\begin{aligned} &\\cos\\theta + 4\\sin\\theta = 0.8 \\end{aligned} Explain clearly why only one of the algebraic roots is valid as a small-angle approximation, and state this valid root to three decimal places.",
     "steps": [
-        "For small values of $\\theta$ measured in radians, we apply the standard approximations: <br> \\begin{aligned} \\cos\\theta &\\approx 1 - \\dfrac{ \\theta^2 }{ 2 } \\cr \\sin\\theta &\\approx \\theta \\end{aligned}",
-        "We substitute these approximations into the equation: <br> \\begin{aligned} \\left( 1 - \\dfrac{ \\theta^2 }{ 2 } \\right) + 4\\theta &= 0.8 \\cr -\\dfrac{ 1 }{ 2 } \\theta^2 + 4\\theta + 0.2 &= 0 \\cr \\theta^2 - 8\\theta - 0.4 &= 0 \\end{aligned}",
-        "We solve this quadratic equation using the quadratic formula: <br> \\begin{aligned} \\theta &= \\dfrac{ -(-8) \\pm \\sqrt{ (-8)^2 - 4(1)(-0.4) } }{ 2(1) } \\cr &= \\dfrac{ 8 \\pm \\sqrt{ 64 + 1.6 } }{ 2 } \\cr &= \\dfrac{ 8 \\pm \\sqrt{ 65.6 } }{ 2 } \\cr &= 4 \\pm \\sqrt{ 16.4 } \\end{aligned}",
-        "We evaluate the roots numerically using $\\sqrt{ 16.4 } \\approx 4.04969$: <br> \\begin{aligned} \\theta_1 &\\approx 4 + 4.050 = 8.050 \\cr \\theta_2 &\\approx 4 - 4.050 = -0.050 \\end{aligned}",
-        "Small-angle approximations are derived assuming the angle is very close to zero ($\\theta \\approx 0$ radians). Because $\\theta = 8.050$ radians is significantly larger than $1$, it violates this fundamental mathematical assumption and must be rejected. The only valid root is: <br> \\begin{aligned} \\theta \\approx -0.050 \\end{aligned}"
+        "For small values of $\\theta$ measured in radians, we apply the standard approximations: \\begin{aligned} &\\cos\\theta \\approx 1 - \\dfrac{\\theta^2}{2} \\cr &\\sin\\theta \\approx \\theta \\end{aligned}",
+        "We substitute these approximations into the equation: \\begin{aligned} &\\Big(1 - \\dfrac{\\theta^2}{2}\\Big) + 4\\theta = 0.8 \\cr &\\quad \\implies -\\dfrac{1}{2}\\theta^2 + 4\\theta + 0.2 = 0 \\cr &\\quad \\implies \\theta^2 - 8\\theta - 0.4 = 0 \\end{aligned}",
+        "We solve this quadratic equation using the quadratic formula: \\begin{aligned} &\\theta \\cr &\\quad = \\dfrac{-(-8) \\pm \\sqrt{(-8)^2 - 4(1)(-0.4)}}{2(1)} \\cr &\\quad = \\dfrac{8 \\pm \\sqrt{64 + 1.6}}{2} \\cr &\\quad = \\dfrac{8 \\pm \\sqrt{65.6}}{2} \\cr &\\quad = 4 \\pm \\sqrt{16.4} \\end{aligned}",
+        "We evaluate the roots using $\\sqrt{16.4} \\approx 4.050$: \\begin{aligned} &\\theta \\approx 4 \\pm 4.050 \\cr &\\quad \\implies \\theta \\approx 8.050 \\cr &\\quad \\text{or } \\theta \\approx -0.050 \\end{aligned}",
+        "Small-angle approximations require the angle to be very close to zero radians. Because $\\theta \\approx 8.050$ radians violates this assumption, it must be rejected. The only valid root is: \\begin{aligned} &\\theta \\approx -0.050 \\end{aligned}",
+        "Final Answer: $-0.050$"
     ],
     "pi_options": [
         {
@@ -1722,7 +1725,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$-0.100$",
-            "feedback": "This mistake occurs if you forget to divide by $2$ when evaluating the quadratic formula, calculating $8 - \\sqrt{ 65.6 } \\approx -0.100$."
+            "feedback": "This mistake occurs if you forget to divide by $2$ when evaluating the quadratic formula, calculating $8 - \\sqrt{65.6} \\approx -0.100$."
         },
         {
             "ans": "$-0.050$ and $8.050$",
@@ -1747,13 +1750,14 @@ window.ALEVEL_QUESTIONS = [
         "Taylor Series"
     ],
     "img": false,
-    "question": "A student uses the small-angle approximation $\\cos x \\approx 1 - \\dfrac{ x^2 }{ 2 }$ to estimate the value of $\\cos(0.3)$. <br><br><strong>(a)</strong> Calculate the percentage error in this approximation, giving your answer to four decimal places. <br><br><strong>(b)</strong> State whether this approximation is an overestimate or an underestimate, justifying your answer.",
+    "question": "A student uses the small-angle approximation: \\begin{aligned} &\\cos x \\approx 1 - \\dfrac{x^2}{2} \\end{aligned} to estimate the value of $\\cos(0.3)$.<br><br><strong>(a)</strong> Calculate the percentage error in this approximation, giving your answer to four decimal places.<br><br><strong>(b)</strong> State whether this approximation is an overestimate or an underestimate, justifying your answer.",
     "steps": [
-        "We first calculate the approximated value of $\\cos(0.3)$ using the small-angle formula: <br> \\begin{aligned} \\cos(0.3) &\\approx 1 - \\dfrac{ 0.3^2 }{ 2 } \\cr &= 1 - 0.045 \\cr &= 0.955 \\end{aligned}",
-        "Next, we determine the exact value of $\\cos(0.3)$ using a calculator set in radian mode: <br> \\begin{aligned} \\cos(0.3) &\\approx 0.955336489 \\end{aligned}",
-        "We find the percentage error using the standard formula: <br> \\begin{aligned} \\text{Percentage Error} &= \\left| \\dfrac{ \\text{Approximate} - \\text{Exact} }{ \\text{Exact} } \\right| \\times 100 \\cr &= \\left| \\dfrac{ 0.955 - 0.955336489 }{ 0.955336489 } \\right| \\times 100 \\cr &\\approx \\left( \\dfrac{ 0.000336489 }{ 0.955336489 } \\right) \\times 100 \\cr &\\approx 0.0352\\% \\end{aligned}",
-        "To solve part (b), we compare the two values. Since our approximated value ($0.955$) is strictly less than the exact value ($0.955336489$), the approximation is an <strong>underestimate</strong>.",
-        "We can also justify this theoretically using the Taylor series expansion for cosine: <br> \\begin{aligned} \\cos x &= 1 - \\dfrac{ x^2 }{ 2 } + \\dfrac{ x^4 }{ 24 } - \\dfrac{ x^6 }{ 720 } + \\dots \\end{aligned} <br> Because the next term in the series ($+\\dfrac{ x^4 }{ 24 }$) is positive, truncating the series at $1 - \\dfrac{ x^2 }{ 2 }$ omits a positive quantity, making the approximation smaller than the true value."
+        "We calculate the approximated value of $\\cos(0.3)$: \\begin{aligned} &\\cos(0.3) \\cr &\\quad \\approx 1 - \\dfrac{0.3^2}{2} \\cr &\\quad = 1 - 0.045 \\cr &\\quad = 0.955 \\end{aligned}",
+        "Next, we determine the exact value of $\\cos(0.3)$ using radian mode: \\begin{aligned} &\\cos(0.3) \\approx 0.955336 \\end{aligned}",
+        "We calculate the percentage error using the standard formula: \\begin{aligned} &\\text{Percentage Error} \\cr &\\quad = \\dfrac{|\\text{Approx} - \\text{Exact}|}{\\text{Exact}} \\times 100 \\cr &\\quad = \\dfrac{|0.955 - 0.955336|}{0.955336} \\times 100 \\cr &\\quad = \\dfrac{0.000336}{0.955336} \\times 100 \\cr &\\quad \\approx 0.0352\\% \\end{aligned}",
+        "For part (b), because the approximated value ($0.955$) is strictly less than the exact value ($0.955336$), the approximation is an <strong>underestimate</strong>.",
+        "We can also justify this theoretically using the Taylor series: \\begin{aligned} &\\cos x \\cr &\\quad = 1 - \\dfrac{x^2}{2} + \\dfrac{x^4}{24} - \\dots \\end{aligned} Because the next term ($+\\dfrac{x^4}{24}$) is positive, truncating at $1 - \\dfrac{x^2}{2}$ omits a positive quantity, making the approximation smaller than the true value.",
+        "Final Answer: <strong>(a)</strong> $0.0352\\%$, <strong>(b)</strong> Underestimate"
     ],
     "pi_options": [
         {
@@ -1772,7 +1776,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Alternating Series and Bounds",
-        "content": "The Taylor series expansion for $\\cos x$ is an alternating series (the signs of the terms alternate between positive and negative). This means that truncating the series at $1$ is an overestimate, truncating at $1 - \\dfrac{ x^2 }{ 2 }$ is an underestimate, and truncating at $1 - \\dfrac{ x^2 }{ 2 } + \\dfrac{ x^4 }{ 24 }$ is an overestimate, continually bounding the true value."
+        "content": "The Taylor series expansion for $\\cos x$ is an alternating series. Truncating at $1$ is an overestimate, truncating at $1 - \\dfrac{x^2}{2}$ is an underestimate, and truncating after degree $4$ is an overestimate, continually bounding the true value."
     }
 },
 {
@@ -1787,17 +1791,18 @@ window.ALEVEL_QUESTIONS = [
         "Taylor Series"
     ],
     "img": false,
-    "question": "An isosceles triangle has two equal sides of length $L$ and an included angle of $\\theta$ radians, where $\\theta$ is small. <br><br>By using the small-angle approximations $\\sin\\theta \\approx \\theta - \\dfrac{ \\theta^3 }{ 6 }$, show that the difference between the area of the sector of radius $L$ with angle $\\theta$ and the area of this triangle is approximately: <br> $\\dfrac{ 1 }{ 12 } L^2 \\theta^3$",
+    "question": "An isosceles triangle has two equal sides of length $L$ and an included angle of $\\theta$ radians, where $\\theta$ is small.<br><br>By using the small-angle approximation $\\sin\\theta \\approx \\theta - \\dfrac{\\theta^3}{6}$, show that the difference between the area of the sector of radius $L$ with angle $\\theta$ and the area of this triangle is approximately: \\begin{aligned} &\\dfrac{1}{12}L^2\\theta^3 \\end{aligned}",
     "steps": [
-        "We first write down the formula for the area of a circular sector of radius $L$ with a central angle of $\\theta$ radians: <br> \\begin{aligned} A_{\\text{sector}} &= \\dfrac{ 1 }{ 2 } L^2 \\theta \\end{aligned}",
-        "Next, we write down the formula for the area of an isosceles triangle with two sides of length $L$ and an included angle of $\\theta$: <br> \\begin{aligned} A_{\\text{triangle}} &= \\dfrac{ 1 }{ 2 } L^2 \\sin \\theta \\end{aligned}",
-        "We express the difference $D$ between the two areas: <br> \\begin{aligned} D &= A_{\\text{sector}} - A_{\\text{triangle}} \\cr &= \\dfrac{ 1 }{ 2 } L^2 \\theta - \\dfrac{ 1 }{ 2 } L^2 \\sin \\theta \\cr &= \\dfrac{ 1 }{ 2 } L^2 (\\theta - \\sin \\theta) \\end{aligned}",
-        "We substitute the given higher-order small-angle approximation $\\sin\\theta \\approx \\theta - \\dfrac{ \\theta^3 }{ 6 }$ into our expression: <br> \\begin{aligned} D &\\approx \\dfrac{ 1 }{ 2 } L^2 \\left[ \\theta - \\left( \\theta - \\dfrac{ \\theta^3 }{ 6 } \\right) \\right] \\cr &= \\dfrac{ 1 }{ 2 } L^2 \\left( \\dfrac{ \\theta^3 }{ 6 } \\right) \\cr &= \\dfrac{ 1 }{ 12 } L^2 \\theta^3 \\end{aligned} <br> as required."
+        "We write down the formula for the area of a circular sector of radius $L$ and angle $\\theta$: \\begin{aligned} &A_{\\text{sector}} = \\dfrac{1}{2}L^2\\theta \\end{aligned}",
+        "Next, we write down the formula for the area of the triangle: \\begin{aligned} &A_{\\text{triangle}} = \\dfrac{1}{2}L^2\\sin\\theta \\end{aligned}",
+        "We express the difference $D$ between the two areas: \\begin{aligned} &D \\cr &\\quad = A_{\\text{sector}} - A_{\\text{triangle}} \\cr &\\quad = \\dfrac{1}{2}L^2\\theta - \\dfrac{1}{2}L^2\\sin\\theta \\cr &\\quad = \\dfrac{1}{2}L^2(\\theta - \\sin\\theta) \\end{aligned}",
+        "We substitute $\\sin\\theta \\approx \\theta - \\dfrac{\\theta^3}{6}$ into our expression: \\begin{aligned} &D \\cr &\\quad \\approx \\dfrac{1}{2}L^2\\Big[\\theta - \\Big(\\theta - \\dfrac{\\theta^3}{6}\\Big)\\Big] \\cr &\\quad = \\dfrac{1}{2}L^2\\Big(\\dfrac{\\theta^3}{6}\\Big) \\cr &\\quad = \\dfrac{1}{12}L^2\\theta^3 \\end{aligned} as required.",
+        "Final Answer: $\\dfrac{ 1 }{ 12 } L^2 \\theta^3$"
     ],
     "pi_options": [
         {
             "ans": "$\\dfrac{ 1 }{ 6 } L^2 \\theta^3$",
-            "feedback": "This error occurs if you forget to multiply by the factor of $\\dfrac{ 1 }{ 2 }$ from the area formulas when expanding the final expression."
+            "feedback": "This error occurs if you forget to multiply by the factor of $\\dfrac{1}{2}$ from the area formulas when expanding the final expression."
         },
         {
             "ans": "$\\dfrac{ 1 }{ 12 } L \\theta^3$",
@@ -1811,7 +1816,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Higher-Order Approximations",
-        "content": "While the first-order approximation $\\sin\\theta \\approx \\theta$ is standard, it is sometimes insufficient. If we had used $\\sin\\theta \\approx \\theta$ here, the difference between the sector and triangle area would simplify to $0$. We must use the higher-order cubic term $-\\dfrac{ \\theta^3 }{ 6 }$ to capture the tiny non-zero gap between the curved arc and the straight chord."
+        "content": "While the first-order approximation $\\sin\\theta \\approx \\theta$ is standard, it is sometimes insufficient. If we had used $\\sin\\theta \\approx \\theta$ here, the difference between the sector and triangle area would simplify to $0$. We must use the higher-order cubic term $-\\dfrac{\\theta^3}{6}$ to capture the tiny non-zero gap between the curved arc and the straight chord."
     }
 },
 {
