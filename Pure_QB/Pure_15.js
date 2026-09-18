@@ -11,15 +11,16 @@ window.ALEVEL_QUESTIONS = [
         "Sum to Infinity"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Explain why the sum to infinity of a geometric series with first term $a \\neq 0$ and common ratio $r$ only exists when $|r| < 1$. <br><br><strong>(b)</strong> A geometric progression $V$ has first term $3$ and common ratio $r$. Another progression $W$ is formed by squaring each term in $V$. <br><br><strong>(i)</strong> Show that $W$ is also a geometric progression, stating its first term and common ratio in terms of $r$. <br><br><strong>(ii)</strong> Given that the sum to infinity of $W$ is twice the sum to infinity of $V$, find the value of $r$.",
+    "question": "<strong>(a)</strong> Explain why the sum to infinity of a geometric series with first term $a \\neq 0$ and common ratio $r$ only exists when $|r| < 1$.<br><br><strong>(b)</strong> A geometric progression $V$ has first term $3$ and common ratio $r$. Another progression $W$ is formed by squaring each term in $V$.<br><br><strong>(i)</strong> Show that $W$ is also a geometric progression, stating its first term and common ratio in terms of $r$.<br><br><strong>(ii)</strong> Given that the sum to infinity of $W$ is twice the sum to infinity of $V$, find the value of $r$.",
     "steps": [
-        "To solve part (a), we write down the formula for the sum of the first $n$ terms of a geometric series: <br> \\begin{aligned} S_n &= \\dfrac{ a(1 - r^n) }{ 1 - r } \\end{aligned}",
-        "The sum to infinity is defined as the limit of $S_n$ as $n \\to \\infty$: <br> \\begin{aligned} S_{\\infty} &= \\lim_{ n \\to \\infty } S_n \\cr &= \\lim_{ n \\to \\infty } \\dfrac{ a(1 - r^n) }{ 1 - r } \\end{aligned} <br> This limit only exists (converges) if the term $r^n$ converges to a finite value. For $r^n$ to converge to $0$ as $n \\to \\infty$, the magnitude of the common ratio must be strictly less than $1$ ($|r| < 1$). If $|r| \\ge 1$, $r^n$ does not converge to $0$, causing the series to diverge.",
-        "To solve part (b)(i), we write out the first few terms of the geometric progression $V$: <br> \\begin{aligned} V_1 &= 3 \\cr V_2 &= 3r \\cr V_3 &= 3r^2 \\end{aligned}",
-        "Another progression $W$ is formed by squaring each individual term in $V$: <br> \\begin{aligned} W_1 &= 3^2 \\cr &= 9 \\cr W_2 &= (3r)^2 \\cr &= 9r^2 \\cr W_3 &= (3r^2)^2 \\cr &= 9r^4 \\end{aligned}",
-        "We show that $W$ is a geometric progression by calculating the ratio between consecutive terms: <br> \\begin{aligned} \\dfrac{ W_2 }{ W_1 } &= \\dfrac{ 9r^2 }{ 9 } = r^2 \\cr \\dfrac{ W_3 }{ W_2 } &= \\dfrac{ 9r^4 }{ 9r^2 } = r^2 \\cr \\dfrac{ W_{ k + 1 } }{ W_k } &= \\dfrac{ 9r^{ 2k } }{ 9r^{ 2k - 2 } } \\cr &= r^2 \\end{aligned} <br> Since this ratio is constant (independent of $k$), $W$ is a geometric progression with first term $A = 9$ and common ratio $R = r^2$.",
-        "To solve part (b)(ii), we write the sum to infinity of both progressions $V$ and $W$: <br> \\begin{aligned} S_{\\infty}(V) &= \\dfrac{ 3 }{ 1 - r } \\cr S_{\\infty}(W) &= \\dfrac{ 9 }{ 1 - r^2 } \\end{aligned}",
-        "We set up the equation $S_{\\infty}(W) = 2S_{\\infty}(V)$ and solve for $r$: <br> \\begin{aligned} \\dfrac{ 9 }{ 1 - r^2 } &= 2 \\left( \\dfrac{ 3 }{ 1 - r } \\right) \\cr \\dfrac{ 9 }{ (1 - r)(1 + r) } &= \\dfrac{ 6 }{ 1 - r } \\cr \\dfrac{ 9 }{ 1 + r } &= 6 \\cr 9 &= 6(1 + r) \\cr 9 &= 6 + 6r \\cr 6r &= 3 \\cr r &= 0.5 \\end{aligned} <br> Since $|0.5| < 1$, this is a valid common ratio. Thus, the value of $r$ is $0.5$."
+        "For part (a), the sum of the first $n$ terms is given by: \\begin{aligned} &S_n = \\dfrac{a(1 - r^n)}{1 - r} \\end{aligned}",
+        "The sum to infinity is the limit as $n \\to \\infty$: \\begin{aligned} &S_{\\infty} \\cr &\\quad = \\lim_{n \\to \\infty} S_n \\cr &\\quad = \\lim_{n \\to \\infty} \\dfrac{a(1 - r^n)}{1 - r} \\end{aligned} This limit exists only if $r^n \\to 0$ as $n \\to \\infty$, which requires $|r| < 1$. If $|r| \\ge 1$, $r^n$ does not converge to $0$, so the series diverges.",
+        "For part (b)(i), the terms of $V$ are: \\begin{aligned} &V_1 = 3 \\cr &V_2 = 3r \\cr &V_3 = 3r^2 \\end{aligned}",
+        "Progression $W$ is formed by squaring each term of $V$: \\begin{aligned} &W_1 = 3^2 \\cr &\\quad = 9 \\cr &W_2 = (3r)^2 \\cr &\\quad = 9r^2 \\cr &W_3 = (3r^2)^2 \\cr &\\quad = 9r^4 \\end{aligned}",
+        "We calculate the ratio between consecutive terms of $W$: \\begin{aligned} &\\dfrac{W_2}{W_1} = \\dfrac{9r^2}{9} \\cr &\\quad = r^2 \\cr &\\dfrac{W_{k+1}}{W_k} = \\dfrac{9r^{2k}}{9r^{2k-2}} \\cr &\\quad = r^2 \\end{aligned} Since the ratio is constant, $W$ is a geometric progression with first term $9$ and common ratio $r^2$.",
+        "For part (b)(ii), the sums to infinity are: \\begin{aligned} &S_{\\infty}(V) = \\dfrac{3}{1 - r} \\cr &S_{\\infty}(W) = \\dfrac{9}{1 - r^2} \\end{aligned}",
+        "We set up $S_{\\infty}(W) = 2S_{\\infty}(V)$ and solve for $r$: \\begin{aligned} &\\dfrac{9}{1 - r^2} = 2\\Big(\\dfrac{3}{1 - r}\\Big) \\cr &\\quad \\implies \\dfrac{9}{(1 - r)(1 + r)} = \\dfrac{6}{1 - r} \\cr &\\quad \\implies \\dfrac{9}{1 + r} = 6 \\cr &\\quad \\implies 9 = 6(1 + r) \\cr &\\quad \\implies 9 = 6 + 6r \\cr &\\quad \\implies 6r = 3 \\cr &\\quad \\implies r = 0.5 \\end{aligned} Since $|0.5| < 1$, the common ratio is valid.",
+        "Final Answer: <strong>(b)(i)</strong> First term: $9$, Ratio: $r^2$, <strong>(b)(ii)</strong> $r = 0.5$"
     ],
     "pi_options": [
         {
@@ -28,7 +29,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "<strong>(b)(i)</strong> First term: $9$, Ratio: $r^2$, <strong>(b)(ii)</strong> $r = -0.5$",
-            "feedback": "This mistake arises from a sign slip when solving the linear equation $9 = 6(1+r)$, calculating $6r = -3 \\implies r = -0.5$ instead of $6r = 3 \\implies r = 0.5$."
+            "feedback": "This mistake arises from a sign slip when solving the linear equation $9 = 6(1+r)$, calculating $r = -0.5$ instead of $r = 0.5$."
         },
         {
             "ans": "<strong>(b)(i)</strong> First term: $6$, Ratio: $r^2$, <strong>(b)(ii)</strong> $r = 0.5$",
@@ -38,7 +39,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Squaring Series Terms",
-        "content": "When squaring every individual term of a geometric series $a, ar, ar^2, \\dots$, you create a new geometric series $a^2, a^2r^2, a^2r^4, \\dots$ whose first term is the square of the original first term ($A = a^2$) and whose common ratio is the square of the original common ratio ($R = r^2$)."
+        "content": "When squaring every individual term of a geometric series, you create a new geometric series whose first term is the square of the original first term ($A = a^2$) and whose common ratio is the square of the original common ratio ($R = r^2$)."
     }
 },
 {
@@ -53,18 +54,19 @@ window.ALEVEL_QUESTIONS = [
         "Common Ratio Equations"
     ],
     "img": false,
-    "question": "The first three terms of a geometric progression are $x + 2$, $x$, and $x - 1$ respectively, where $x$ is a real constant. <br><br><strong>(a)</strong> Show that $x = 2$. <br><br><strong>(b)</strong> Find the common ratio of this progression. <br><br><strong>(c)</strong> Determine the sum to infinity of this progression.",
+    "question": "The first three terms of a geometric progression are $x + 2$, $x$, and $x - 1$ respectively, where $x$ is a real constant.<br><br><strong>(a)</strong> Show that $x = 2$.<br><br><strong>(b)</strong> Find the common ratio of this progression.<br><br><strong>(c)</strong> Determine the sum to infinity of this progression.",
     "steps": [
-        "For any geometric progression, the ratio between consecutive terms is a constant common ratio $r$. Therefore: <br> \\begin{aligned} \\dfrac{ \\text{Term 2} }{ \\text{Term 1} } &= \\dfrac{ \\text{Term 3} }{ \\text{Term 2} } \\end{aligned}",
-        "We substitute our algebraic terms into this relationship and solve for $x$: <br> \\begin{aligned} \\dfrac{ x }{ x + 2 } &= \\dfrac{ x - 1 }{ x } \\cr x^2 &= (x - 1)(x + 2) \\cr x^2 &= x^2 + x - 2 \\cr 0 &= x - 2 \\cr x &= 2 \\end{aligned} <br> as required.",
-        "To solve part (b), we substitute $x = 2$ back into our terms to find the values of our progression: <br> \\begin{aligned} \\text{Term 1: } &2 + 2 = 4 \\cr \\text{Term 2: } &2 \\cr \\text{Term 3: } &2 - 1 = 1 \\end{aligned}",
-        "We calculate the common ratio $r$ of the progression: <br> \\begin{aligned} r &= \\dfrac{ \\text{Term 2} }{ \\text{Term 1} } \\cr &= \\dfrac{ 2 }{ 4 } \\cr &= 0.5 \\end{aligned}",
-        "To solve part (c), we use the sum to infinity formula $S_{\\infty} = \\dfrac{ a }{ 1 - r }$ with $a = 4$ and $r = 0.5$: <br> \\begin{aligned} S_{\\infty} &= \\dfrac{ a }{ 1 - r } \\cr S_{\\infty} &= \\dfrac{ 4 }{ 1 - 0.5 } \\cr &= \\dfrac{ 4 }{ 0.5 } \\cr &= 8 \\end{aligned} <br> Thus, the sum to infinity of this progression is $8$."
+        "For any geometric progression, the ratio between consecutive terms is constant: \\begin{aligned} &\\dfrac{u_2}{u_1} = \\dfrac{u_3}{u_2} \\end{aligned}",
+        "We substitute the terms into this relationship to solve for $x$: \\begin{aligned} &\\dfrac{x}{x + 2} = \\dfrac{x - 1}{x} \\cr &\\quad \\implies x^2 = (x - 1)(x + 2) \\cr &\\quad \\implies x^2 = x^2 + x - 2 \\cr &\\quad \\implies 0 = x - 2 \\cr &\\quad \\implies x = 2 \\end{aligned} as required.",
+        "For part (b), we substitute $x = 2$ back into the terms: \\begin{aligned} &u_1 = 2 + 2 \\cr &\\quad = 4 \\cr &u_2 = 2 \\cr &u_3 = 2 - 1 \\cr &\\quad = 1 \\end{aligned}",
+        "We calculate the common ratio $r$: \\begin{aligned} &r = \\dfrac{u_2}{u_1} \\cr &\\quad = \\dfrac{2}{4} \\cr &\\quad = 0.5 \\end{aligned}",
+        "For part (c), we use the sum to infinity formula $S_{\\infty} = \\dfrac{a}{1 - r}$: \\begin{aligned} &S_{\\infty} \\cr &\\quad = \\dfrac{4}{1 - 0.5} \\cr &\\quad = \\dfrac{4}{0.5} \\cr &\\quad = 8 \\end{aligned}",
+        "Final Answer: <strong>(b)</strong> $r = 0.5$, <strong>(c)</strong> $S_{\\infty} = 8$"
     ],
     "pi_options": [
         {
             "ans": "<strong>(b)</strong> $r = 2$, <strong>(c)</strong> $S_{\\infty} = -4$",
-            "feedback": "This error occurs if you invert the common ratio definition, calculating $r = \\dfrac{ u_1 }{ u_2 } = \\dfrac{ 4 }{ 2 } = 2$ instead of $r = \\dfrac{ u_2 }{ u_1 } = 0.5$."
+            "feedback": "This error occurs if you invert the common ratio definition, calculating $r = \\dfrac{u_1}{u_2} = 2$ instead of $0.5$."
         },
         {
             "ans": "<strong>(b)</strong> $r = 0.5$, <strong>(c)</strong> $S_{\\infty} = 4$",
@@ -72,13 +74,13 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "<strong>(b)</strong> $r = 0.5$, <strong>(c)</strong> The sum to infinity does not exist",
-            "feedback": "This arises if you mistakenly think that the progression diverges because the term values are decreasing, failing to recognise that since $|r| = 0.5 < 1$, the sum to infinity is fully convergent."
+            "feedback": "This arises if you mistakenly think that the progression diverges because terms decrease, failing to recognise that since $|r| < 1$ (as $r = 0.5$), the sum to infinity converges."
         }
     ],
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Defining Common Ratios Algebraically",
-        "content": "Whenever you are given three terms of a geometric progression in terms of an unknown variable, always set up the ratio equation $\\dfrac{ u_2 }{ u_1 } = \\dfrac{ u_3 }{ u_2 }$. Cross-multiplying this equation will construct a solvable polynomial equation that isolates the unknown constant directly."
+        "content": "Whenever you are given three terms of a geometric progression in terms of an unknown variable, always set up the ratio equation $\\dfrac{u_2}{u_1} = \\dfrac{u_3}{u_2}$. Cross-multiplying this equation will construct a solvable polynomial equation that isolates the unknown constant directly."
     }
 },
 {
@@ -93,17 +95,18 @@ window.ALEVEL_QUESTIONS = [
         "Simultaneous Equations"
     ],
     "img": false,
-    "question": "A geometric progression has a sum to infinity equal to $16$. The sum of the first three terms of this progression is equal to $14$. <br><br><strong>(a)</strong> Find the common ratio $r$ of this progression, giving your answer in exact fractional form. <br><br><strong>(b)</strong> Find the first term $a$ of the progression.",
+    "question": "A geometric progression has a sum to infinity equal to $16$. The sum of the first three terms of this progression is equal to $14$.<br><br><strong>(a)</strong> Find the common ratio $r$ of this progression, giving your answer in exact fractional form.<br><br><strong>(b)</strong> Find the first term $a$ of the progression.",
     "steps": [
-        "To solve part (a), we write down the equations representing our given sums. <br> Using the sum to infinity formula: <br> \\begin{aligned} S_{\\infty} &= 16 \\cr \\dfrac{ a }{ 1 - r } &= 16 \\cr a &= 16(1 - r) \\end{aligned}",
-        "Using the sum of the first $n$ terms formula for $S_3 = 14$: <br> \\begin{aligned} S_3 &= 14 \\cr \\dfrac{ a(1 - r^3) }{ 1 - r } &= 14 \\end{aligned}",
-        "We substitute our expression for $a = 16(1 - r)$ into our sum equation: <br> \\begin{aligned} \\dfrac{ 16(1 - r)(1 - r^3) }{ 1 - r } &= 14 \\cr 16(1 - r^3) &= 14 \\cr 1 - r^3 &= \\dfrac{ 14 }{ 16 } \\cr 1 - r^3 &= \\dfrac{ 7 }{ 8 } \\cr r^3 &= 1 - \\dfrac{ 7 }{ 8 } \\cr r^3 &= \\dfrac{ 1 }{ 8 } \\cr r &= 0.5 \\end{aligned} <br> Thus, the exact fractional value of the common ratio is $r = \\dfrac{ 1 }{ 2 }$.",
-        "To solve part (b), we substitute our common ratio $r = 0.5$ back into our first term expression: <br> \\begin{aligned} a &= 16(1 - 0.5) \\cr &= 16(0.5) \\cr &= 8 \\end{aligned} <br> Thus, the first term of the progression is $a = 8$."
+        "For part (a), using the sum to infinity formula: \\begin{aligned} &\\dfrac{a}{1 - r} = 16 \\cr &\\quad \\implies a = 16(1 - r) \\end{aligned}",
+        "Using the formula for the sum of the first three terms: \\begin{aligned} &\\dfrac{a(1 - r^3)}{1 - r} = 14 \\end{aligned}",
+        "We substitute $a = 16(1 - r)$ into the sum equation: \\begin{aligned} &\\dfrac{16(1 - r)(1 - r^3)}{1 - r} = 14 \\cr &\\quad \\implies 16(1 - r^3) = 14 \\cr &\\quad \\implies 1 - r^3 = \\dfrac{7}{8} \\cr &\\quad \\implies r^3 = \\dfrac{1}{8} \\cr &\\quad \\implies r = \\dfrac{1}{2} \\end{aligned}",
+        "For part (b), we substitute $r = \\dfrac{1}{2}$ back to find $a$: \\begin{aligned} &a = 16\\Big(1 - \\dfrac{1}{2}\\Big) \\cr &\\quad = 16\\Big(\\dfrac{1}{2}\\Big) \\cr &\\quad = 8 \\end{aligned}",
+        "Final Answer: <strong>(a)</strong> $r = \\dfrac{ 1 }{ 2 }$, <strong>(b)</strong> $a = 8$"
     ],
     "pi_options": [
         {
             "ans": "<strong>(a)</strong> $r = \\dfrac{ 1 }{ 4 }$, <strong>(b)</strong> $a = 12$",
-            "feedback": "This error occurs if you make an arithmetic slip when simplifying the fractional subtraction, calculating $r^3 = \\dfrac{ 1 }{ 64 } \\implies r = \\dfrac{ 1 }{ 4 }$."
+            "feedback": "This error occurs if you make an arithmetic slip when simplifying the fractional subtraction, calculating $r = \\dfrac{1}{4}$ from $r^3 = \\dfrac{1}{64}$."
         },
         {
             "ans": "<strong>(a)</strong> $r = \\dfrac{ 1 }{ 2 }$, <strong>(b)</strong> $a = 16$",
@@ -111,13 +114,13 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "<strong>(a)</strong> $r = -\\dfrac{ 1 }{ 2 }$, <strong>(b)</strong> $a = 24$",
-            "feedback": "This arises from a sign error when solving the cubic equation, calculating $r^3 = -\\dfrac{ 1 }{ 8 } \\implies r = -\\dfrac{ 1 }{ 2 }$."
+            "feedback": "This arises from a sign error when solving the cubic equation, calculating $r = -\\dfrac{1}{2}$ from $r^3 = -\\dfrac{1}{8}$."
         }
     ],
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Simplification of GP Ratios",
-        "content": "When solving simultaneous equations involving both $S_n$ and $S_{\\infty}$, always write $a = S_{\\infty}(1 - r)$ first. Substituting this term into the $S_n$ formula $\\dfrac{ a(1 - r^n) }{ 1 - r }$ elegantly cancels out the $(1-r)$ denominators, reducing your problem to a simple single-variable polynomial $S_{\\infty}(1 - r^n) = S_n$."
+        "content": "When solving simultaneous equations involving both $S_n$ and $S_{\\infty}$, always write $a = S_{\\infty}(1 - r)$ first. Substituting this term into the $S_n$ formula cancels out the $(1-r)$ denominators cleanly, reducing the problem to $S_{\\infty}(1 - r^n) = S_n$."
     }
 },
 {
@@ -132,12 +135,13 @@ window.ALEVEL_QUESTIONS = [
         "Inequalities with Logarithms"
     ],
     "img": false,
-    "question": "A geometric progression has first term $5$ and common ratio $1.2$. <br><br>Find the minimum number of terms required for the sum of the progression to exceed $1000$. Show all of your algebraic working, including the use of logarithms.",
+    "question": "A geometric progression has first term $5$ and common ratio $1.2$.<br><br>Find the minimum number of terms required for the sum of the progression to exceed $1000$. Show all of your algebraic working, including the use of logarithms.",
     "steps": [
-        "We are given the parameters $a = 5$ and $r = 1.2$. We set up our inequality for the sum $S_n$ to exceed $1000$ using the sum formula: <br> \\begin{aligned} S_n &> 1000 \\cr \\dfrac{ a(r^n - 1) }{ r - 1 } &> 1000 \\end{aligned}",
-        "We substitute our values into this inequality and simplify it algebraically: <br> \\begin{aligned} \\dfrac{ 5(1.2^n - 1) }{ 1.2 - 1 } &> 1000 \\cr \\dfrac{ 5(1.2^n - 1) }{ 0.2 } &> 1000 \\cr 25(1.2^n - 1) &> 1000 \\cr 1.2^n - 1 &> 40 \\cr 1.2^n &> 41 \\end{aligned}",
-        "To isolate $n$, we take natural logarithms on both sides of the inequality: <br> \\begin{aligned} \\ln(1.2^n) &> \\ln(41) \\cr n\\ln(1.2) &> \\ln(41) \\cr n &> \\dfrac{ \\ln(41) }{ \\ln(1.2) } \\end{aligned} <br> Since $r = 1.2 > 1$, we have $\\ln(1.2) > 0$. Therefore, dividing by $\\ln(1.2)$ does not reverse the direction of our inequality sign.",
-        "We evaluate the logarithmic values numerically: <br> \\begin{aligned} \\dfrac{ \\ln(41) }{ \\ln(1.2) } &\\approx \\dfrac{ 3.71357 }{ 0.18232 } \\cr &\\approx 20.368 \\end{aligned} <br> Since $n$ must be an integer, the minimum number of terms required is $21$."
+        "With $a = 5$ and $r = 1.2$, we set up the inequality for $S_n > 1000$: \\begin{aligned} &\\dfrac{a(r^n - 1)}{r - 1} > 1000 \\end{aligned}",
+        "We substitute our parameters and simplify algebraically: \\begin{aligned} &\\dfrac{5(1.2^n - 1)}{1.2 - 1} > 1000 \\cr &\\quad \\implies \\dfrac{5(1.2^n - 1)}{0.2} > 1000 \\cr &\\quad \\implies 25(1.2^n - 1) > 1000 \\cr &\\quad \\implies 1.2^n - 1 > 40 \\cr &\\quad \\implies 1.2^n > 41 \\end{aligned}",
+        "To isolate $n$, we take natural logarithms on both sides: \\begin{aligned} &\\ln(1.2^n) > \\ln(41) \\cr &\\quad \\implies n\\ln(1.2) > \\ln(41) \\cr &\\quad \\implies n > \\dfrac{\\ln(41)}{\\ln(1.2)} \\end{aligned} Since $r = 1.2 > 1$, we have $\\ln(1.2) > 0$. Dividing by $\\ln(1.2)$ does not reverse the inequality sign.",
+        "We evaluate numerically: \\begin{aligned} &n > \\dfrac{3.71357}{0.18232} \\cr &\\quad \\implies n > 20.368 \\end{aligned} Since $n$ must be an integer, the minimum number of terms required is $21$.",
+        "Final Answer: $21$"
     ],
     "pi_options": [
         {
@@ -146,11 +150,11 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$22$",
-            "feedback": "This arises from a double rounding error or a scale factor division slip, calculating $n > 21.368 \\implies n = 22$."
+            "feedback": "This arises from a double rounding error or division slip, calculating $n > 21.368$ and rounding up to $22$."
         },
         {
             "ans": "$18$",
-            "feedback": "This mistake occurs if you write the denominator division incorrectly as $5 \\times 0.2 = 1$ instead of $5 / 0.2 = 25$, resulting in $1.2^n > 201 \\implies n \\approx 29.1$, or another division error."
+            "feedback": "This mistake occurs if you write the denominator division incorrectly as $5 \\times 0.2 = 1$ instead of $5 / 0.2 = 25$, resulting in $1.2^n > 201$ and $n \\approx 29.1$."
         }
     ],
     "bradley_insight": {
@@ -171,13 +175,14 @@ window.ALEVEL_QUESTIONS = [
         "Telescoping Series"
     ],
     "img": false,
-    "question": "A geometric progression has first term $a$ and common ratio $r$. A new series is formed by taking the difference between consecutive terms of this progression: $d_n = u_n - u_{n+1}$ for $n \\ge 1$. <br><br><strong>(a)</strong> Show that the new series $d_n$ is also a geometric progression, and write down its first term and common ratio in terms of $a$ and $r$. <br><br><strong>(b)</strong> Given that the original progression has a sum to infinity of $12$, and the new progression has a sum to infinity of $4$, find the exact values of $a$ and $r$.",
+    "question": "A geometric progression has first term $a$ and common ratio $r$. A new series is formed by taking the difference between consecutive terms of this progression: $d_n = u_n - u_{n+1}$ for $n \\ge 1$.<br><br><strong>(a)</strong> Show that the new series $d_n$ is also a geometric progression, and write down its first term and common ratio in terms of $a$ and $r$.<br><br><strong>(b)</strong> Given that the original progression has a sum to infinity of $12$, and the new progression has a sum to infinity of $4$, find the exact values of $a$ and $r$.",
     "steps": [
-        "To solve part (a), we write out the general terms of the original progression: $u_n = ar^{n-1}$ and $u_{n+1} = ar^n$. We substitute these into our definition of $d_n$: <br> \\begin{aligned} d_n &= u_n - u_{n+1} \\cr &= ar^{n-1} - ar^n \\cr &= ar^{n-1}(1 - r) \\end{aligned}",
-        "We show that $d_n$ is a geometric progression by calculating the ratio between consecutive terms: <br> \\begin{aligned} \\dfrac{ d_{ n + 1 } }{ d_n } &= \\dfrac{ ar^n(1 - r) }{ ar^{ n - 1 }(1 - r) } \\cr &= r \\end{aligned} <br> Since this ratio is constant (independent of $n$), the series $d_n$ is a geometric progression with first term $d_1 = a(1 - r)$ and common ratio $R = r$.",
-        "To solve part (b), we use the sum to infinity formula for both progressions: <br> For the original progression $u_n$: <br> \\begin{aligned} S_{\\infty}(\\text{orig}) &= 12 \\cr \\dfrac{ a }{ 1 - r } &= 12 \\cr a &= 12(1 - r) \\end{aligned}",
-        "For the new progression $d_n$, we use the sum to infinity with $d_1 = a(1 - r)$ and ratio $r$: <br> \\begin{aligned} S_{\\infty}(d_n) &= 4 \\cr \\dfrac{ d_1 }{ 1 - r } &= 4 \\cr \\dfrac{ a(1 - r) }{ 1 - r } &= 4 \\cr a &= 4 \\end{aligned}",
-        "We substitute our value of $a = 4$ back into our first equation to solve for $r$: <br> \\begin{aligned} 4 &= 12(1 - r) \\cr \\dfrac{ 4 }{ 12 } &= 1 - r \\cr \\dfrac{ 1 }{ 3 } &= 1 - r \\cr r &= 1 - \\dfrac{ 1 }{ 3 } \\cr r &= \\dfrac{ 2 }{ 3 } \\end{aligned} <br> Since $|2/3| < 1$, this is a valid common ratio. Thus, the exact values are $a = 4$ and $r = \\dfrac{ 2 }{ 3 }$."
+        "For part (a), using $u_n = ar^{n-1}$ and $u_{n+1} = ar^n$: \\begin{aligned} &d_n \\cr &\\quad = u_n - u_{n+1} \\cr &\\quad = ar^{n-1} - ar^n \\cr &\\quad = ar^{n-1}(1 - r) \\end{aligned}",
+        "We check the ratio between consecutive terms of $d_n$: \\begin{aligned} &\\dfrac{d_{n+1}}{d_n} \\cr &\\quad = \\dfrac{ar^n(1 - r)}{ar^{n-1}(1 - r)} \\cr &\\quad = r \\end{aligned} Since this ratio is constant, $d_n$ is a geometric progression with first term $d_1 = a(1 - r)$ and common ratio $r$.",
+        "For part (b), the sum to infinity of the original progression gives: \\begin{aligned} &\\dfrac{a}{1 - r} = 12 \\cr &\\quad \\implies a = 12(1 - r) \\end{aligned}",
+        "For the new progression $d_n$ with first term $a(1 - r)$ and ratio $r$: \\begin{aligned} &\\dfrac{a(1 - r)}{1 - r} = 4 \\cr &\\quad \\implies a = 4 \\end{aligned}",
+        "We substitute $a = 4$ into $a = 12(1 - r)$: \\begin{aligned} &4 = 12(1 - r) \\cr &\\quad \\implies 1 - r = \\dfrac{1}{3} \\cr &\\quad \\implies r = \\dfrac{2}{3} \\end{aligned} Since $|r| < 1$, these values are valid.",
+        "Final Answer: <strong>(a)</strong> First term: $a(1-r)$, Ratio: $r$, <strong>(b)</strong> $a = 4$, $r = \\dfrac{ 2 }{ 3 }$"
     ],
     "pi_options": [
         {
@@ -196,7 +201,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Telescoping Differences of GPs",
-        "content": "A series of differences of the form $d_n = u_n - u_{n+1}$ is a 'telescoping series'. Its sum to infinity represents a spectacular algebraic collapse: $\\sum_{n=1}^{\\infty} (u_n - u_{n+1}) = u_1 - u_2 + u_2 - u_3 + u_3 - u_4 \\dots$ which reduces simply to the first term $u_1 = a$. This is why the sum to infinity of $d_n$ is exactly $a$, completely independent of $r$."
+        "content": "A series of differences of the form $d_n = u_n - u_{n+1}$ is a telescoping series: \\begin{aligned} &\\sum_{n=1}^{\\infty} (u_n - u_{n+1}) \\cr &\\quad = (u_1 - u_2) + (u_2 - u_3) + \\dots \\cr &\\quad = u_1 \\cr &\\quad = a \\end{aligned} Intermediate terms cancel out completely, meaning the sum to infinity equals $a$, entirely independent of $r$."
     }
 },
 {
@@ -416,7 +421,7 @@ window.ALEVEL_QUESTIONS = [
         "Inequalities"
     ],
     "img": false,
-    "question": "Prove by contradiction that, for every real number $x$ such that $0 < x < \\frac{ \\pi }{ 2 }$,\n$$\\tan x + \\cot x \\ge 2$$",
+    "question": "Prove by contradiction that, for every real number $x$ such that $0 < x < \\frac{ \\pi }{ 2 }$,$$\\tan x + \\cot x \\ge 2$$",
     "steps": [
         "We begin by assuming the negation of the statement we wish to prove.<br><br>Assume that there exists a real number $x$ in the interval $0 < x < \\frac{ \\pi }{ 2 }$ such that:<br>$$\\tan x + \\cot x < 2$$",
         "Since $0 < x < \\frac{ \\pi }{ 2 }$, both $\\tan x$ and $\\cot x$ are strictly positive. We can substitute $\\cot x = \\frac{ 1 }{ \\tan x }$ into our inequality:<br>$$\\tan x + \\frac{ 1 }{ \\tan x } < 2$$",
@@ -496,7 +501,7 @@ window.ALEVEL_QUESTIONS = [
         "Algebraic Fractions"
     ],
     "img": false,
-    "question": "Prove by contradiction that, for all positive real numbers $a$ and $b$,\n$$\\frac{ a }{ b } + \\frac{ b }{ a } \\ge 2$$",
+    "question": "Prove by contradiction that, for all positive real numbers $a$ and $b$,$$\\frac{ a }{ b } + \\frac{ b }{ a } \\ge 2$$",
     "steps": [
         "We begin by assuming the negation of the statement we wish to prove.<br><br>Assume that there exist positive real numbers $a$ and $b$ such that:<br>$$\\frac{ a }{ b } + \\frac{ b }{ a } < 2$$",
         "Since $a$ and $b$ are positive, their product $ab$ is also strictly positive ($ab > 0$). We can multiply both sides of the inequality by $ab$ without reversing the inequality sign:<br>\\begin{aligned} ab \\left( \\frac{ a }{ b } + \\frac{ b }{ a } \\right) &< 2ab \\cr a^2 + b^2 &< 2ab \\end{aligned}",
@@ -578,7 +583,7 @@ window.ALEVEL_QUESTIONS = [
         "Difference of Two Squares"
     ],
     "img": false,
-    "question": "Prove by contradiction that there are no positive integers $m$ and $n$ such that\n$$m^2 - n^2 = 14$$",
+    "question": "Prove by contradiction that there are no positive integers $m$ and $n$ such that$$m^2 - n^2 = 14$$",
     "steps": [
         "We begin by assuming the negation of the statement we wish to prove.<br><br>Assume that there exist positive integers $m$ and $n$ such that:<br>$$m^2 - n^2 = 14$$",
         "We can factorise the left-hand side of the equation using the difference of two squares:<br>$$(m - n)(m + n) = 14$$",
@@ -619,7 +624,7 @@ window.ALEVEL_QUESTIONS = [
         "Graph Sketching"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Given that $f$ is a function:\n<strong>(i)</strong> State the condition for $f^{-1}$ to exist.\n<strong>(ii)</strong> Find $f^{-1}f(x)$.<br><strong>(b)</strong> The functions $g$ and $h$ are given by:\n$$\\begin{aligned} g(x) &= x^2 - 4 \\cr h(x) &= \\mathrm{e}^{ 2x } + 2 \\end{aligned}$$\n<strong>(i)</strong> Suggest a domain for $g$ such that $g^{-1}$ exists.\n<strong>(ii)</strong> Given that the domain of $h$ is $(-\\infty, \\infty)$, find an expression for $h^{-1}(x)$. Sketch, using the same axes, the graphs of $h(x)$ and $h^{-1}(x)$, indicating clearly any asymptotes and the points where the graphs cross the coordinate axes.\n<strong>(iii)</strong> Determine an expression for $gh(x)$ in its simplest form.",
+    "question": "<strong>(a)</strong> Given that $f$ is a function:<strong>(i)</strong> State the condition for $f^{-1}$ to exist.<strong>(ii)</strong> Find $f^{-1}f(x)$.<br><strong>(b)</strong> The functions $g$ and $h$ are given by:$$\\begin{aligned} g(x) &= x^2 - 4 \\cr h(x) &= \\mathrm{e}^{ 2x } + 2 \\end{aligned}$$<strong>(i)</strong> Suggest a domain for $g$ such that $g^{-1}$ exists.<strong>(ii)</strong> Given that the domain of $h$ is $(-\\infty, \\infty)$, find an expression for $h^{-1}(x)$. Sketch, using the same axes, the graphs of $h(x)$ and $h^{-1}(x)$, indicating clearly any asymptotes and the points where the graphs cross the coordinate axes.<strong>(iii)</strong> Determine an expression for $gh(x)$ in its simplest form.",
     "steps": [
         "<strong>(a)(i)</strong> For the inverse function $f^{-1}$ to exist, the function $f$ must be <strong>one-to-one</strong> (or injective). This means that each output value in the range corresponds to exactly one input value in the domain.<br><br><strong>(a)(ii)</strong> By definition, applying a function and then its inverse (or vice versa) returns the original input: $$f^{-1}f(x) = x$$",
         "<strong>(b)(i)</strong> The quadratic function $g(x) = x^2 - 4$ is many-to-one over its natural domain. To make it one-to-one so that an inverse exists, we must restrict the domain to one side of its vertex $(0, -4)$. A standard restriction is:<br>$$x \\ge 0$$<br>(Note: $x \\le 0$ is also a valid alternative).",
@@ -660,7 +665,7 @@ window.ALEVEL_QUESTIONS = [
         "Graph Sketching"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Explain why the function $f(x) = x^2 - 6x + 9$ with domain $(-\\infty, \\infty)$ does not have an inverse.<br><strong>(b)</strong> The functions $g$ and $h$ are defined by:\n$$\\begin{aligned} g(x) &= \\frac{ x + 3 }{ x - 3 } \\quad \\text{for } x \\ne 3 \\cr h(x) &= x^2 - 6x + 14 \\end{aligned}$$\n<strong>(i)</strong> Suggest a domain of the form $x \\ge k$ for $h$ such that $h^{-1}$ exists.\n<strong>(ii)</strong> Find an expression for $g^{-1}(x)$. Sketch, using the same axes, the graphs of $y = g(x)$ and $y = g^{-1}(x)$, showing clearly their vertical and horizontal asymptotes and any points where the graphs cross the coordinate axes.\n<strong>(iii)</strong> Find an expression for the composite function $hg(x)$ for $x \\ne 3$.",
+    "question": "<strong>(a)</strong> Explain why the function $f(x) = x^2 - 6x + 9$ with domain $(-\\infty, \\infty)$ does not have an inverse.<br><strong>(b)</strong> The functions $g$ and $h$ are defined by:$$\\begin{aligned} g(x) &= \\frac{ x + 3 }{ x - 3 } \\quad \\text{for } x \\ne 3 \\cr h(x) &= x^2 - 6x + 14 \\end{aligned}$$<strong>(i)</strong> Suggest a domain of the form $x \\ge k$ for $h$ such that $h^{-1}$ exists.<strong>(ii)</strong> Find an expression for $g^{-1}(x)$. Sketch, using the same axes, the graphs of $y = g(x)$ and $y = g^{-1}(x)$, showing clearly their vertical and horizontal asymptotes and any points where the graphs cross the coordinate axes.<strong>(iii)</strong> Find an expression for the composite function $hg(x)$ for $x \\ne 3$.",
     "steps": [
         "<strong>(a)</strong> By factorising the expression, we can rewrite the function as:<br>$$f(x) = (x - 3)^2$$<br>This represents a parabola with its vertex at $x = 3$. Over the unrestricted domain $(-\\infty, \\infty)$, the function is <strong>many-to-one</strong> (for example, $f(2) = f(4) = 1$). Because an inverse function only exists for one-to-one functions, $f$ does not have an inverse.",
         "<strong>(b)(i)</strong> We can complete the square for $h(x)$ to find its vertex form:<br>\\begin{aligned} h(x) &= x^2 - 6x + 14 \\cr &= (x - 3)^2 - 9 + 14 \\cr &= (x - 3)^2 + 5 \\end{aligned}<br>The vertex is at $(3, 5)$. To restrict the domain of the quadratic function so it becomes one-to-one, we must start at the vertex. Thus, for a domain of the form $x \\ge k$, we choose:<br>$$k = 3$$",
@@ -701,7 +706,7 @@ window.ALEVEL_QUESTIONS = [
         "Composite Equations"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Given that $f(x) = \\ln(x - 2)$ for $x > 2$:\n<strong>(i)</strong> Write down the range of $f$.\n<strong>(ii)</strong> Find an expression for $f^{-1}(x)$, stating its domain.<br><strong>(b)</strong> The functions $g$ and $h$ are defined by:\n$$\\begin{aligned} g(x) &= 3x - 2 \\quad \\text{for } x \\in \\mathbb{R} \\cr h(x) &= \\ln(x + 1) \\quad \\text{for } x > -1 \\end{aligned}$$\n<strong>(i)</strong> Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$. Indicate clearly any asymptotes and axis intercepts.\n<strong>(ii)</strong> Find an expression for the composite function $gh(x)$, stating its domain and range.\n<strong>(iii)</strong> Solve the equation $gh(x) = 4$.",
+    "question": "<strong>(a)</strong> Given that $f(x) = \\ln(x - 2)$ for $x > 2$:<strong>(i)</strong> Write down the range of $f$.<strong>(ii)</strong> Find an expression for $f^{-1}(x)$, stating its domain.<br><strong>(b)</strong> The functions $g$ and $h$ are defined by:$$\\begin{aligned} g(x) &= 3x - 2 \\quad \\text{for } x \\in \\mathbb{R} \\cr h(x) &= \\ln(x + 1) \\quad \\text{for } x > -1 \\end{aligned}$$<strong>(i)</strong> Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$. Indicate clearly any asymptotes and axis intercepts.<strong>(ii)</strong> Find an expression for the composite function $gh(x)$, stating its domain and range.<strong>(iii)</strong> Solve the equation $gh(x) = 4$.",
     "steps": [
         "<strong>(a)(i)</strong> The natural logarithmic function $\\ln(X)$ takes all real values as its argument increases. Thus, the range of $f(x) = \\ln(x - 2)$ is:<br>$$f(x) \\in \\mathbb{R}$$",
         "<strong>(a)(ii)</strong> To find $f^{-1}(x)$, we set $y = \\ln(x - 2)$ and make $x$ the subject:<br>\\begin{aligned} y &= \\ln(x - 2) \\cr \\mathrm{e}^{ y } &= x - 2 \\cr x &= \\mathrm{e}^{ y } + 2 \\end{aligned}<br>Swapping variables gives:<br>$$f^{-1}(x) = \\mathrm{e}^{ x } + 2$$<br>The domain of $f^{-1}$ is the range of $f$, which is:<br>$$x \\in \\mathbb{R}$$",
@@ -726,7 +731,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Composite Domain and Range Rules",
-        "content": "Always remember the golden rules for composite functions $gh(x)$:\n1. The <strong>domain</strong> of $gh$ is strictly a subset of the domain of the inner function, $h(x)$.\n2. The <strong>range</strong> of $gh$ is found by evaluating the outer function, $g(x)$, over the active range of the inner function, $h(x)$."
+        "content": "Always remember the golden rules for composite functions $gh(x)$:1. The <strong>domain</strong> of $gh$ is strictly a subset of the domain of the inner function, $h(x)$.2. The <strong>range</strong> of $gh$ is found by evaluating the outer function, $g(x)$, over the active range of the inner function, $h(x)$."
     }
 },
 {
@@ -742,7 +747,7 @@ window.ALEVEL_QUESTIONS = [
         "Range"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> State why a domain restriction is necessary for the function $f(x) = \\sin x$ to have an inverse, and write down the standard restricted domain used to define $f^{-1}(x) = \\arcsin x$.<br><strong>(b)</strong> The functions $g$ and $h$ are defined by:\n$$\\begin{aligned} g(x) &= 2x^2 + 1 \\quad \\text{for } x \\in \\mathbb{R} \\cr h(x) &= \\cos x \\quad \\text{for } 0 \\le x \\le \\pi \\end{aligned}$$\n<strong>(i)</strong> Find an expression for $h^{-1}(x)$, stating its domain and range. Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$.\n<strong>(ii)</strong> Determine an expression for the composite function $gh(x)$, expressing your answer in terms of $\\cos 2x$.\n<strong>(iii)</strong> Find the range of the composite function $gh$.",
+    "question": "<strong>(a)</strong> State why a domain restriction is necessary for the function $f(x) = \\sin x$ to have an inverse, and write down the standard restricted domain used to define $f^{-1}(x) = \\arcsin x$.<br><strong>(b)</strong> The functions $g$ and $h$ are defined by:$$\\begin{aligned} g(x) &= 2x^2 + 1 \\quad \\text{for } x \\in \\mathbb{R} \\cr h(x) &= \\cos x \\quad \\text{for } 0 \\le x \\le \\pi \\end{aligned}$$<strong>(i)</strong> Find an expression for $h^{-1}(x)$, stating its domain and range. Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$.<strong>(ii)</strong> Determine an expression for the composite function $gh(x)$, expressing your answer in terms of $\\cos 2x$.<strong>(iii)</strong> Find the range of the composite function $gh$.",
     "steps": [
         "<strong>(a)</strong> The function $f(x) = \\sin x$ is periodic and therefore <strong>many-to-one</strong> (for example, $\\sin(0) = \\sin(\\pi) = 0$). An inverse function only exists if a function is one-to-one. To define $\\arcsin x$, the standard restricted domain used is:<br>$$-\\frac{ \\pi }{ 2 } \\le x \\le \\frac{ \\pi }{ 2 }$$",
         "<strong>(b)(i)</strong> The inverse of the restricted cosine function $h(x) = \\cos x$ is:<br>$$h^{-1}(x) = \\arccos x$$<br>• The domain of $h^{-1}$ is the range of $h$, which is:<br>$$-1 \\le x \\le 1$$<br>• The range of $h^{-1}$ is the domain of $h$, which is:<br>$$0 \\le y \\le \\pi$$<br>The curves of $h(x)$ and $h^{-1}(x)$ are shown below:<br><br><img src='images/Pure_SVGs/004719_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
@@ -782,7 +787,7 @@ window.ALEVEL_QUESTIONS = [
         "Solving Composite Equations"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> A function $f$ is defined by $f(x) = \\sqrt{ x - 3 } + 2$ for $x \\ge 3$.\n<strong>(i)</strong> State the range of $f$.\n<strong>(ii)</strong> Find an expression for $f^{-1}(x)$, stating its domain.<br><strong>(b)</strong> The functions $g$ and $h$ are defined by:\n$$\\begin{aligned} g(x) &= 2x - 5 \\quad \\text{for } x \\in \\mathbb{R} \\cr h(x) &= \\sqrt{ 2x + 1 } \\quad \\text{for } x \\ge -0.5 \\end{aligned}$$\n<strong>(i)</strong> Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$. Indicate clearly the coordinates of any points of intersection with the axes and any end-points.\n<strong>(ii)</strong> Determine an expression for the composite function $hg(x)$, and find the domain of $hg$.\n<strong>(iii)</strong> Solve the equation $hg(x) = g(x)$.",
+    "question": "<strong>(a)</strong> A function $f$ is defined by $f(x) = \\sqrt{ x - 3 } + 2$ for $x \\ge 3$.<strong>(i)</strong> State the range of $f$.<strong>(ii)</strong> Find an expression for $f^{-1}(x)$, stating its domain.<br><strong>(b)</strong> The functions $g$ and $h$ are defined by:$$\\begin{aligned} g(x) &= 2x - 5 \\quad \\text{for } x \\in \\mathbb{R} \\cr h(x) &= \\sqrt{ 2x + 1 } \\quad \\text{for } x \\ge -0.5 \\end{aligned}$$<strong>(i)</strong> Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$. Indicate clearly the coordinates of any points of intersection with the axes and any end-points.<strong>(ii)</strong> Determine an expression for the composite function $hg(x)$, and find the domain of $hg$.<strong>(iii)</strong> Solve the equation $hg(x) = g(x)$.",
     "steps": [
         "<strong>(a)(i)</strong> For the domain $x \\ge 3$, the square root term $\\sqrt{ x - 3 }$ is always greater than or equal to $0$. Therefore, $f(x) = \\sqrt{ x - 3 } + 2 \\ge 2$. The range is:<br>$$f(x) \\ge 2$$",
         "<strong>(a)(ii)</strong> To find $f^{-1}(x)$, we set $y = \\sqrt{ x - 3 } + 2$ and make $x$ the subject:<br>\\begin{aligned} y &= \\sqrt{ x - 3 } + 2 \\cr y - 2 &= \\sqrt{ x - 3 } \\cr (y - 2)^2 &= x - 3 \\cr x &= (y - 2)^2 + 3 \\end{aligned}<br>Swapping variables gives:<br>$$f^{-1}(x) = (x - 2)^2 + 3$$<br>The domain of $f^{-1}$ is the range of $f$, which is:<br>$$x \\ge 2$$",
@@ -823,7 +828,7 @@ window.ALEVEL_QUESTIONS = [
         "Extreme Values"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Express $5\\sin\\theta - 12\\cos\\theta$ in the form $R\\sin(\\theta - \\alpha)$, where $R$ and $\\alpha$ are constants with $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$.<br><strong>(b)</strong> Find all values of $\\theta$ in the range $0^\\circ < \\theta < 360^\\circ$ satisfying:\n$$5\\sin\\theta - 12\\cos\\theta - 4 = 0$$<br><strong>(c)</strong> Determine the greatest value and the least value of the expression:\n$$\\frac{ 1 }{ 5\\sin\\theta - 12\\cos\\theta + 18 }$$",
+    "question": "<strong>(a)</strong> Express $5\\sin\\theta - 12\\cos\\theta$ in the form $R\\sin(\\theta - \\alpha)$, where $R$ and $\\alpha$ are constants with $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$.<br><strong>(b)</strong> Find all values of $\\theta$ in the range $0^\\circ < \\theta < 360^\\circ$ satisfying:$$5\\sin\\theta - 12\\cos\\theta - 4 = 0$$<br><strong>(c)</strong> Determine the greatest value and the least value of the expression:$$\\frac{ 1 }{ 5\\sin\\theta - 12\\cos\\theta + 18 }$$",
     "steps": [
         "<strong>(a)</strong> We expand the harmonic form $R\\sin(\\theta - \\alpha)$ using the subtraction identity for sine:<br>$$R\\sin(\\theta - \\alpha) = R\\sin\\theta\\cos\\alpha - R\\cos\\theta\\sin\\alpha$$<br>Comparing this to our expression $5\\sin\\theta - 12\\cos\\theta$, we equate the coefficients of $\\sin\\theta$ and $\\cos\\theta$:<br>\\begin{aligned} R\\cos\\alpha &= 5 \\cr R\\sin\\alpha &= 12 \\end{aligned}",
         "To find $R$, we square and add these equations:<br>\\begin{aligned} R^2\\cos^2\\alpha + R^2\\sin^2\\alpha &= 5^2 + 12^2 \\cr R^2(\\cos^2\\alpha + \\sin^2\\alpha) &= 25 + 144 \\cr R^2 &= 169 \\cr R &= 13 \\end{aligned}<br>To find $\\alpha$, we divide the sine equation by the cosine equation:<br>\\begin{aligned} \\frac{ R\\sin\\alpha }{ R\\cos\\alpha } &= \\frac{ 12 }{ 5 } \\cr \\tan\\alpha &= 2.4 \\cr \\alpha &= \\tan^{-1}(2.4) \\approx 67.38^\\circ \\end{aligned}<br>Thus, the expression can be written as:<br>$$13\\sin(\\theta - 67.38^\\circ)$$",
@@ -864,7 +869,7 @@ window.ALEVEL_QUESTIONS = [
         "Extreme Values"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Express $24\\cos\\theta + 7\\sin\\theta$ in the form $R\\cos(\\theta - \\alpha)$, where $R$ and $\\alpha$ are constants with $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$.<br><strong>(b)</strong> Find all values of $\\theta$ in the range $0^\\circ < \\theta < 360^\\circ$ satisfying:\n$$24\\cos\\theta + 7\\sin\\theta = 15$$<br><strong>(c)</strong> Determine the greatest value and the least value of the expression:\n$$\\frac{ 6 }{ 24\\cos\\theta + 7\\sin\\theta + 31 }$$",
+    "question": "<strong>(a)</strong> Express $24\\cos\\theta + 7\\sin\\theta$ in the form $R\\cos(\\theta - \\alpha)$, where $R$ and $\\alpha$ are constants with $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$.<br><strong>(b)</strong> Find all values of $\\theta$ in the range $0^\\circ < \\theta < 360^\\circ$ satisfying:$$24\\cos\\theta + 7\\sin\\theta = 15$$<br><strong>(c)</strong> Determine the greatest value and the least value of the expression:$$\\frac{ 6 }{ 24\\cos\\theta + 7\\sin\\theta + 31 }$$",
     "steps": [
         "<strong>(a)</strong> We expand the harmonic form $R\\cos(\\theta - \\alpha)$ using the subtraction identity for cosine:<br>$$R\\cos(\\theta - \\alpha) = R\\cos\\theta\\cos\\alpha + R\\sin\\theta\\sin\\alpha$$<br>Comparing this to our expression $24\\cos\\theta + 7\\sin\\theta$, we equate the coefficients of $\\cos\\theta$ and $\\sin\\theta$:<br>\\begin{aligned} R\\cos\\alpha &= 24 \\cr R\\sin\\alpha &= 7 \\end{aligned}",
         "To find $R$, we square and add these equations:<br>\\begin{aligned} R^2\\cos^2\\alpha + R^2\\sin^2\\alpha &= 24^2 + 7^2 \\cr R^2(\\cos^2\\alpha + \\sin^2\\alpha) &= 576 + 49 \\cr R^2 &= 625 \\cr R &= 25 \\end{aligned}<br>To find $\\alpha$, we divide the sine equation by the cosine equation:<br>\\begin{aligned} \\frac{ R\\sin\\alpha }{ R\\cos\\alpha } &= \\frac{ 7 }{ 24 } \\cr \\tan\\alpha &= \\frac{ 7 }{ 24 } \\cr \\alpha &= \\tan^{-1}\\left(\\frac{ 7 }{ 24 }\\right) \\approx 16.26^\\circ \\end{aligned}<br>Thus, the expression can be written as:<br>$$25\\cos(\\theta - 16.26^\\circ)$$",
@@ -905,7 +910,7 @@ window.ALEVEL_QUESTIONS = [
         "Extreme Values"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Express $\\sqrt{ 3 }\\sin\\theta + \\cos\\theta$ in the form $R\\sin(\\theta + \\alpha)$, where $R$ and $\\alpha$ are constants with $R > 0$ and $0 < \\alpha < \\frac{ \\pi }{ 2 }$ (in radians).<br><strong>(b)</strong> Find all values of $\\theta$ in the range $0 < \\theta < 2\\pi$ satisfying:\n$$\\sqrt{ 3 }\\sin\\theta + \\cos\\theta = \\sqrt{ 2 }$$<br><strong>(c)</strong> State the maximum and minimum values of the expression $\\sqrt{ 3 }\\sin\\theta + \\cos\\theta$, and find the smallest positive value of $\\theta$ for which the maximum occurs.",
+    "question": "<strong>(a)</strong> Express $\\sqrt{ 3 }\\sin\\theta + \\cos\\theta$ in the form $R\\sin(\\theta + \\alpha)$, where $R$ and $\\alpha$ are constants with $R > 0$ and $0 < \\alpha < \\frac{ \\pi }{ 2 }$ (in radians).<br><strong>(b)</strong> Find all values of $\\theta$ in the range $0 < \\theta < 2\\pi$ satisfying:$$\\sqrt{ 3 }\\sin\\theta + \\cos\\theta = \\sqrt{ 2 }$$<br><strong>(c)</strong> State the maximum and minimum values of the expression $\\sqrt{ 3 }\\sin\\theta + \\cos\\theta$, and find the smallest positive value of $\\theta$ for which the maximum occurs.",
     "steps": [
         "<strong>(a)</strong> We expand the harmonic form $R\\sin(\\theta + \\alpha)$ using the addition identity for sine:<br>$$R\\sin(\\theta + \\alpha) = R\\sin\\theta\\cos\\alpha + R\\cos\\theta\\sin\\alpha$$<br>Comparing this to our expression $\\sqrt{ 3 }\\sin\\theta + \\cos\\theta$, we equate the coefficients of $\\sin\\theta$ and $\\cos\\theta$:<br>\\begin{aligned} R\\cos\\alpha &= \\sqrt{ 3 } \\cr R\\sin\\alpha &= 1 \\end{aligned}",
         "To find $R$, we square and add these equations:<br>\\begin{aligned} R^2\\cos^2\\alpha + R^2\\sin^2\\alpha &= (\\sqrt{ 3 })^2 + 1^2 \\cr R^2 &= 3 + 1 = 4 \\cr R &= 2 \\end{aligned}<br>To find $\\alpha$, we divide the sine equation by the cosine equation:<br>\\begin{aligned} \\frac{ R\\sin\\alpha }{ R\\cos\\alpha } &= \\frac{ 1 }{ \\sqrt{ 3 } } \\cr \\tan\\alpha &= \\frac{ 1 }{ \\sqrt{ 3 } } \\cr \\alpha &= \\frac{ \\pi }{ 6 } \\end{aligned}<br>Thus, the expression can be written as:<br>$$2\\sin\\left(\\theta + \\frac{ \\pi }{ 6 }\\right)$$",
@@ -985,7 +990,7 @@ window.ALEVEL_QUESTIONS = [
         "Extreme Values of Squared Fractions"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Express $12\\sin 2\\theta - 5\\cos 2\\theta$ in the form $R\\sin(2\\theta - \\alpha)$, where $R$ and $\\alpha$ are constants with $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$.<br><strong>(b)</strong> Find all values of $\\theta$ in the range $0^\\circ < \\theta < 180^\\circ$ satisfying:\n$$12\\sin 2\\theta - 5\\cos 2\\theta = 6.5$$<br><strong>(c)</strong> Determine the greatest value of the expression:\n$$\\frac{ 20 }{ (12\\sin 2\\theta - 5\\cos 2\\theta)^2 + 3 }$$",
+    "question": "<strong>(a)</strong> Express $12\\sin 2\\theta - 5\\cos 2\\theta$ in the form $R\\sin(2\\theta - \\alpha)$, where $R$ and $\\alpha$ are constants with $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$.<br><strong>(b)</strong> Find all values of $\\theta$ in the range $0^\\circ < \\theta < 180^\\circ$ satisfying:$$12\\sin 2\\theta - 5\\cos 2\\theta = 6.5$$<br><strong>(c)</strong> Determine the greatest value of the expression:$$\\frac{ 20 }{ (12\\sin 2\\theta - 5\\cos 2\\theta)^2 + 3 }$$",
     "steps": [
         "<strong>(a)</strong> We expand the harmonic form $R\\sin(2\\theta - \\alpha)$ using the subtraction identity for sine:<br>$$R\\sin(2\\theta - \\alpha) = R\\sin 2\\theta\\cos\\alpha - R\\cos 2\\theta\\sin\\alpha$$<br>Comparing this to our expression $12\\sin 2\\theta - 5\\cos 2\\theta$, we equate the coefficients of $\\sin 2\\theta$ and $\\cos 2\\theta$:<br>\\begin{aligned} R\\cos\\alpha &= 12 \\cr R\\sin\\alpha &= 5 \\end{aligned}",
         "To find $R$ and $\\alpha$:<br>\\begin{aligned} R &= \\sqrt{ 12^2 + (-5)^2 } = \\sqrt{ 169 } = 13 \\cr \\tan\\alpha &= \\frac{ 5 }{ 12 } \\implies \\alpha = \\tan^{-1}\\left(\\frac{ 5 }{ 12 }\\right) \\approx 22.62^\\circ \\end{aligned}<br>Thus, the expression can be written as:<br>$$13\\sin(2\\theta - 22.62^\\circ)$$",
@@ -1224,12 +1229,12 @@ window.ALEVEL_QUESTIONS = [
         "Linear Equations"
     ],
     "img": false,
-    "question": "The variable $y$ satisfies the differential equation:\n$$3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 4 - 3y$$<br>Given that $y = 1$ when $x = 0$, find an expression for $y$ in terms of $x$.",
+    "question": "The variable $y$ satisfies the differential equation:$$3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 4 - 3y$$<br>Given that $y = 1$ when $x = 0$, find an expression for $y$ in terms of $x$.",
     "steps": [
-        "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\n\\begin{aligned} \\dfrac{3}{4 - 3y} \\,\\mathrm{d}y = 1 \\,\\mathrm{d}x \\end{aligned}",
-        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int \\dfrac{3}{4 - 3y} \\,\\mathrm{d}y &= \\int 1 \\,\\mathrm{d}x \\cr -\\ln|4 - 3y| &= x + C \\end{aligned}",
-        "Apply the initial condition that $y = 1$ when $x = 0$ to find the value of the constant $C$:\n\\begin{aligned} -\\ln|4 - 3(1)| &= 0 + C \\cr -\\ln|1| &= C \\cr C &= 0 \\end{aligned}",
-        "Substitute $C = 0$ back into the equation and rearrange to express $y$ explicitly in terms of $x$:\n\\begin{aligned} -\\ln|4 - 3y| &= x \\cr \\ln|4 - 3y| &= -x \\cr 4 - 3y &= e^{ -x } \\cr 3y &= 4 - e^{ -x } \\cr y &= \\dfrac{1}{3}\\left( 4 - e^{ -x } \\right) \\end{aligned}"
+        "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\\begin{aligned} \\dfrac{3}{4 - 3y} \\,\\mathrm{d}y = 1 \\,\\mathrm{d}x \\end{aligned}",
+        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\\begin{aligned} \\int \\dfrac{3}{4 - 3y} \\,\\mathrm{d}y &= \\int 1 \\,\\mathrm{d}x \\cr -\\ln|4 - 3y| &= x + C \\end{aligned}",
+        "Apply the initial condition that $y = 1$ when $x = 0$ to find the value of the constant $C$:\\begin{aligned} -\\ln|4 - 3(1)| &= 0 + C \\cr -\\ln|1| &= C \\cr C &= 0 \\end{aligned}",
+        "Substitute $C = 0$ back into the equation and rearrange to express $y$ explicitly in terms of $x$:\\begin{aligned} -\\ln|4 - 3y| &= x \\cr \\ln|4 - 3y| &= -x \\cr 4 - 3y &= e^{ -x } \\cr 3y &= 4 - e^{ -x } \\cr y &= \\dfrac{1}{3}\\left( 4 - e^{ -x } \\right) \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1263,12 +1268,12 @@ window.ALEVEL_QUESTIONS = [
         "Exponential Integration"
     ],
     "img": false,
-    "question": "The variable $y$ satisfies the differential equation:\n$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = y^2 e^{2x}$$<br>Given that $y = 1$ when $x = 0$, find an expression for $y$ in terms of $x$.",
+    "question": "The variable $y$ satisfies the differential equation:$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = y^2 e^{2x}$$<br>Given that $y = 1$ when $x = 0$, find an expression for $y$ in terms of $x$.",
     "steps": [
-        "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\n\\begin{aligned} y^{-2} \\,\\mathrm{d}y = e^{2x} \\,\\mathrm{d}x \\end{aligned}",
-        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int y^{-2} \\,\\mathrm{d}y &= \\int e^{2x} \\,\\mathrm{d}x \\cr -\\dfrac{1}{y} &= \\dfrac{1}{2}e^{2x} + C \\end{aligned}",
-        "Apply the initial condition that $y = 1$ when $x = 0$ to find the value of the constant $C$:\n\\begin{aligned} -\\dfrac{1}{1} &= \\dfrac{1}{2}e^{0} + C \\cr -1 &= \\dfrac{1}{2} + C \\cr C &= -\\dfrac{3}{2} \\end{aligned}",
-        "Substitute $C = -\\dfrac{3}{2}$ back into the equation and rearrange to express $y$ explicitly in terms of $x$:\n\\begin{aligned} -\\dfrac{1}{y} &= \\dfrac{1}{2}e^{2x} - \\dfrac{3}{2} \\cr -\\dfrac{1}{y} &= \\dfrac{e^{2x} - 3}{2} \\cr \\dfrac{1}{y} &= \\dfrac{3 - e^{2x}}{2} \\cr y &= \\dfrac{2}{3 - e^{2x}} \\end{aligned}"
+        "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\\begin{aligned} y^{-2} \\,\\mathrm{d}y = e^{2x} \\,\\mathrm{d}x \\end{aligned}",
+        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\\begin{aligned} \\int y^{-2} \\,\\mathrm{d}y &= \\int e^{2x} \\,\\mathrm{d}x \\cr -\\dfrac{1}{y} &= \\dfrac{1}{2}e^{2x} + C \\end{aligned}",
+        "Apply the initial condition that $y = 1$ when $x = 0$ to find the value of the constant $C$:\\begin{aligned} -\\dfrac{1}{1} &= \\dfrac{1}{2}e^{0} + C \\cr -1 &= \\dfrac{1}{2} + C \\cr C &= -\\dfrac{3}{2} \\end{aligned}",
+        "Substitute $C = -\\dfrac{3}{2}$ back into the equation and rearrange to express $y$ explicitly in terms of $x$:\\begin{aligned} -\\dfrac{1}{y} &= \\dfrac{1}{2}e^{2x} - \\dfrac{3}{2} \\cr -\\dfrac{1}{y} &= \\dfrac{e^{2x} - 3}{2} \\cr \\dfrac{1}{y} &= \\dfrac{3 - e^{2x}}{2} \\cr y &= \\dfrac{2}{3 - e^{2x}} \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1302,12 +1307,12 @@ window.ALEVEL_QUESTIONS = [
         "Logarithmic Integration"
     ],
     "img": false,
-    "question": "The variable $y$ satisfies the differential equation:\n$$x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 2y - 4, \\quad x > 0$$<br>Given that $y = 3$ when $x = 1$, find an expression for $y$ in terms of $x$.",
+    "question": "The variable $y$ satisfies the differential equation:$$x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 2y - 4, \\quad x > 0$$<br>Given that $y = 3$ when $x = 1$, find an expression for $y$ in terms of $x$.",
     "steps": [
-        "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\n\\begin{aligned} \\dfrac{1}{2y - 4} \\,\\mathrm{d}y = \\dfrac{1}{x} \\,\\mathrm{d}x \\end{aligned}",
-        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int \\dfrac{1}{2y - 4} \\,\\mathrm{d}y &= \\int \\dfrac{1}{x} \\,\\mathrm{d}x \\cr \\dfrac{1}{2}\\ln|2y - 4| &= \\ln x + C \\end{aligned}",
-        "Apply the initial condition that $y = 3$ when $x = 1$ to find the value of the constant $C$:\n\\begin{aligned} \\dfrac{1}{2}\\ln|2(3) - 4| &= \\ln(1) + C \\cr \\dfrac{1}{2}\\ln(2) &= 0 + C \\cr C &= \\dfrac{1}{2}\\ln 2 \\end{aligned}",
-        "Substitute $C = \\dfrac{1}{2}\\ln 2$ back into the equation, multiply by $2$, and use logarithm laws to solve for $y$ in terms of $x$:\n\\begin{aligned} \\dfrac{1}{2}\\ln(2y - 4) &= \\ln x + \\dfrac{1}{2}\\ln 2 \\cr \\ln(2y - 4) &= 2\\ln x + \\ln 2 \\cr \\ln(2y - 4) &= \\ln\\left( x^2 \\right) + \\ln 2 \\cr \\ln(2y - 4) &= \\ln\\left( 2x^2 \\right) \\cr 2y - 4 &= 2x^2 \\cr 2y &= 2x^2 + 4 \\cr y &= x^2 + 2 \\end{aligned}"
+        "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\\begin{aligned} \\dfrac{1}{2y - 4} \\,\\mathrm{d}y = \\dfrac{1}{x} \\,\\mathrm{d}x \\end{aligned}",
+        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\\begin{aligned} \\int \\dfrac{1}{2y - 4} \\,\\mathrm{d}y &= \\int \\dfrac{1}{x} \\,\\mathrm{d}x \\cr \\dfrac{1}{2}\\ln|2y - 4| &= \\ln x + C \\end{aligned}",
+        "Apply the initial condition that $y = 3$ when $x = 1$ to find the value of the constant $C$:\\begin{aligned} \\dfrac{1}{2}\\ln|2(3) - 4| &= \\ln(1) + C \\cr \\dfrac{1}{2}\\ln(2) &= 0 + C \\cr C &= \\dfrac{1}{2}\\ln 2 \\end{aligned}",
+        "Substitute $C = \\dfrac{1}{2}\\ln 2$ back into the equation, multiply by $2$, and use logarithm laws to solve for $y$ in terms of $x$:\\begin{aligned} \\dfrac{1}{2}\\ln(2y - 4) &= \\ln x + \\dfrac{1}{2}\\ln 2 \\cr \\ln(2y - 4) &= 2\\ln x + \\ln 2 \\cr \\ln(2y - 4) &= \\ln\\left( x^2 \\right) + \\ln 2 \\cr \\ln(2y - 4) &= \\ln\\left( 2x^2 \\right) \\cr 2y - 4 &= 2x^2 \\cr 2y &= 2x^2 + 4 \\cr y &= x^2 + 2 \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1341,12 +1346,12 @@ window.ALEVEL_QUESTIONS = [
         "Temperature Modelling"
     ],
     "img": false,
-    "question": "An object is cooling in a room of constant temperature. The temperature of the object, $\\theta^\\circ\\text{C}$, $t$ minutes after cooling begins, is modelled by the differential equation:\n$$\\dfrac{\\mathrm{d}\\theta}{\\mathrm{d}t} = -0.1(\\theta - 20)$$<br>Given that the initial temperature of the object is $80^\\circ\\text{C}$ (so $\\theta = 80$ at $t = 0$), solve the differential equation to find $\\theta$ in terms of $t$.",
+    "question": "An object is cooling in a room of constant temperature. The temperature of the object, $\\theta^\\circ\\text{C}$, $t$ minutes after cooling begins, is modelled by the differential equation:$$\\dfrac{\\mathrm{d}\\theta}{\\mathrm{d}t} = -0.1(\\theta - 20)$$<br>Given that the initial temperature of the object is $80^\\circ\\text{C}$ (so $\\theta = 80$ at $t = 0$), solve the differential equation to find $\\theta$ in terms of $t$.",
     "steps": [
-        "Separate the variables to group the terms in $\\theta$ on the left-hand side and the terms in $t$ on the right-hand side:\n\\begin{aligned} \\dfrac{1}{\\theta - 20} \\,\\mathrm{d}\\theta = -0.1 \\,\\mathrm{d}t \\end{aligned}",
-        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int \\dfrac{1}{\\theta - 20} \\,\\mathrm{d}\\theta &= \\int -0.1 \\,\\mathrm{d}t \\cr \\ln|\\theta - 20| &= -0.1t + C \\end{aligned}",
-        "Apply the initial condition that $\\theta = 80$ when $t = 0$ to find the value of the constant $C$:\n\\begin{aligned} \\ln|80 - 20| &= -0.1(0) + C \\cr C &= \\ln 60 \\end{aligned}",
-        "Substitute $C = \\ln 60$ back into the equation, exponentiate, and solve for $\\theta$ in terms of $t$:\n\\begin{aligned} \\ln(\\theta - 20) &= -0.1t + \\ln 60 \\cr \\ln\\left( \\dfrac{\\theta - 20}{60} \\right) &= -0.1t \\cr \\dfrac{\\theta - 20}{60} &= e^{ -0.1t } \\cr \\theta - 20 &= 60e^{ -0.1t } \\cr \\theta &= 20 + 60e^{ -0.1t } \\end{aligned}"
+        "Separate the variables to group the terms in $\\theta$ on the left-hand side and the terms in $t$ on the right-hand side:\\begin{aligned} \\dfrac{1}{\\theta - 20} \\,\\mathrm{d}\\theta = -0.1 \\,\\mathrm{d}t \\end{aligned}",
+        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\\begin{aligned} \\int \\dfrac{1}{\\theta - 20} \\,\\mathrm{d}\\theta &= \\int -0.1 \\,\\mathrm{d}t \\cr \\ln|\\theta - 20| &= -0.1t + C \\end{aligned}",
+        "Apply the initial condition that $\\theta = 80$ when $t = 0$ to find the value of the constant $C$:\\begin{aligned} \\ln|80 - 20| &= -0.1(0) + C \\cr C &= \\ln 60 \\end{aligned}",
+        "Substitute $C = \\ln 60$ back into the equation, exponentiate, and solve for $\\theta$ in terms of $t$:\\begin{aligned} \\ln(\\theta - 20) &= -0.1t + \\ln 60 \\cr \\ln\\left( \\dfrac{\\theta - 20}{60} \\right) &= -0.1t \\cr \\dfrac{\\theta - 20}{60} &= e^{ -0.1t } \\cr \\theta - 20 &= 60e^{ -0.1t } \\cr \\theta &= 20 + 60e^{ -0.1t } \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1380,12 +1385,12 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric Integration"
     ],
     "img": false,
-    "question": "The variable $y$ satisfies the differential equation:\n$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3y \\cos(2x)$$<br>Given that $y = e$ when $x = 0$, find an expression for $y$ in terms of $x$.",
+    "question": "The variable $y$ satisfies the differential equation:$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3y \\cos(2x)$$<br>Given that $y = e$ when $x = 0$, find an expression for $y$ in terms of $x$.",
     "steps": [
-        "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\n\\begin{aligned} \\dfrac{1}{y} \\,\\mathrm{d}y = 3 \\cos(2x) \\,\\mathrm{d}x \\end{aligned}",
-        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\n\\begin{aligned} \\int \\dfrac{1}{y} \\,\\mathrm{d}y &= \\int 3 \\cos(2x) \\,\\mathrm{d}x \\cr \\ln|y| &= \\dfrac{3}{2}\\sin(2x) + C \\end{aligned}",
-        "Apply the initial condition that $y = e$ when $x = 0$ to find the value of the constant $C$:\n\\begin{aligned} \\ln e &= \\dfrac{3}{2}\\sin(0) + C \\cr 1 &= 0 + C \\cr C &= 1 \\end{aligned}",
-        "Substitute $C = 1$ back into the equation and exponentiate to solve for $y$ explicitly in terms of $x$:\n\\begin{aligned} \\ln y &= \\dfrac{3}{2}\\sin(2x) + 1 \\cr y &= e^{ \\frac{3}{2}\\sin(2x) + 1 } \\end{aligned}"
+        "Separate the variables to group the terms in $y$ on the left-hand side and the terms in $x$ on the right-hand side:\\begin{aligned} \\dfrac{1}{y} \\,\\mathrm{d}y = 3 \\cos(2x) \\,\\mathrm{d}x \\end{aligned}",
+        "Integrate both sides of the differential equation. Remember to include a constant of integration, $C$:\\begin{aligned} \\int \\dfrac{1}{y} \\,\\mathrm{d}y &= \\int 3 \\cos(2x) \\,\\mathrm{d}x \\cr \\ln|y| &= \\dfrac{3}{2}\\sin(2x) + C \\end{aligned}",
+        "Apply the initial condition that $y = e$ when $x = 0$ to find the value of the constant $C$:\\begin{aligned} \\ln e &= \\dfrac{3}{2}\\sin(0) + C \\cr 1 &= 0 + C \\cr C &= 1 \\end{aligned}",
+        "Substitute $C = 1$ back into the equation and exponentiate to solve for $y$ explicitly in terms of $x$:\\begin{aligned} \\ln y &= \\dfrac{3}{2}\\sin(2x) + 1 \\cr y &= e^{ \\frac{3}{2}\\sin(2x) + 1 } \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1419,12 +1424,12 @@ window.ALEVEL_QUESTIONS = [
         "Equation of the Normal"
     ],
     "img": false,
-    "question": "A curve is defined implicitly by:\n$$2x^2y + y^2 - 3x = 27$$<br>Find the equation of the normal to the curve at the point $(2, 3)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "question": "A curve is defined implicitly by:$$2x^2y + y^2 - 3x = 27$$<br>Find the equation of the normal to the curve at the point $(2, 3)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
     "steps": [
-        "Differentiate the implicit equation with respect to $x$, applying the product rule to the term $2x^2y$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 2x^2y + y^2 - 3x \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(27) \\cr \\left( 4xy + 2x^2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + 2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\end{aligned}",
-        "Substitute the coordinates of the point $(2, 3)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} 4(2)(3) + 2\\left( 2^2 \\right)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2(3)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr 24 + 8\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 6\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr 14\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 21 &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{3}{2} \\end{aligned}",
-        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\n\\begin{aligned} m_n &= -\\dfrac{1}{-\\frac{3}{2}} \\cr m_n &= \\dfrac{2}{3} \\end{aligned}",
-        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(2, 3)$ and gradient $m_n = \\dfrac{2}{3}$ to find the equation of the normal:\n\\begin{aligned} y - 3 &= \\dfrac{2}{3}(x - 2) \\cr 3(y - 3) &= 2(x - 2) \\cr 3y - 9 &= 2x - 4 \\cr 2x - 3y + 5 &= 0 \\end{aligned}"
+        "Differentiate the implicit equation with respect to $x$, applying the product rule to the term $2x^2y$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 2x^2y + y^2 - 3x \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(27) \\cr \\left( 4xy + 2x^2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + 2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\end{aligned}",
+        "Substitute the coordinates of the point $(2, 3)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\\begin{aligned} 4(2)(3) + 2\\left( 2^2 \\right)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2(3)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr 24 + 8\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 6\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr 14\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 21 &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{3}{2} \\end{aligned}",
+        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\\begin{aligned} m_n &= -\\dfrac{1}{-\\frac{3}{2}} \\cr m_n &= \\dfrac{2}{3} \\end{aligned}",
+        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(2, 3)$ and gradient $m_n = \\dfrac{2}{3}$ to find the equation of the normal:\\begin{aligned} y - 3 &= \\dfrac{2}{3}(x - 2) \\cr 3(y - 3) &= 2(x - 2) \\cr 3y - 9 &= 2x - 4 \\cr 2x - 3y + 5 &= 0 \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1459,12 +1464,12 @@ window.ALEVEL_QUESTIONS = [
         "Product Rule"
     ],
     "img": false,
-    "question": "A curve is defined implicitly by:\n$$x^2y^2 - 2x + 3y = 3$$<br>Find the equation of the normal to the curve at the point $(2, 1)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "question": "A curve is defined implicitly by:$$x^2y^2 - 2x + 3y = 3$$<br>Find the equation of the normal to the curve at the point $(2, 1)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
     "steps": [
-        "Differentiate the implicit equation with respect to $x$, applying the product rule to the term $x^2y^2$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^2y^2 - 2x + 3y \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(3) \\cr \\left( 2xy^2 + 2x^2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) - 2 + 3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
-        "Substitute the coordinates of the point $(2, 1)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} 2(2)\\left( 1^2 \\right) + 2\\left( 2^2 \\right)(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 2 + 3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 4 + 8\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 2 + 3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 11\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2 &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{2}{11} \\end{aligned}",
-        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\n\\begin{aligned} m_n &= -\\dfrac{1}{-\\frac{2}{11}} \\cr m_n &= \\dfrac{11}{2} \\end{aligned}",
-        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(2, 1)$ and gradient $m_n = \\dfrac{11}{2}$ to find the equation of the normal:\n\\begin{aligned} y - 1 &= \\dfrac{11}{2}(x - 2) \\cr 2(y - 1) &= 11(x - 2) \\cr 2y - 2 &= 11x - 22 \\cr 11x - 2y - 20 &= 0 \\end{aligned}"
+        "Differentiate the implicit equation with respect to $x$, applying the product rule to the term $x^2y^2$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^2y^2 - 2x + 3y \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(3) \\cr \\left( 2xy^2 + 2x^2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) - 2 + 3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
+        "Substitute the coordinates of the point $(2, 1)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\\begin{aligned} 2(2)\\left( 1^2 \\right) + 2\\left( 2^2 \\right)(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 2 + 3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 4 + 8\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 2 + 3\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 11\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2 &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{2}{11} \\end{aligned}",
+        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\\begin{aligned} m_n &= -\\dfrac{1}{-\\frac{2}{11}} \\cr m_n &= \\dfrac{11}{2} \\end{aligned}",
+        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(2, 1)$ and gradient $m_n = \\dfrac{11}{2}$ to find the equation of the normal:\\begin{aligned} y - 1 &= \\dfrac{11}{2}(x - 2) \\cr 2(y - 1) &= 11(x - 2) \\cr 2y - 2 &= 11x - 22 \\cr 11x - 2y - 20 &= 0 \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1499,12 +1504,12 @@ window.ALEVEL_QUESTIONS = [
         "Exponential Functions"
     ],
     "img": false,
-    "question": "A curve is defined implicitly by:\n$$y^2 e^{x - 1} + 3x - 2y = 3$$<br>Find the equation of the normal to the curve at the point $(1, 2)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "question": "A curve is defined implicitly by:$$y^2 e^{x - 1} + 3x - 2y = 3$$<br>Find the equation of the normal to the curve at the point $(1, 2)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
     "steps": [
-        "Differentiate the implicit equation with respect to $x$, applying the product rule and chain rule to the term $y^2 e^{x - 1}$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( y^2 e^{x - 1} + 3x - 2y \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(3) \\cr \\left( y^2 e^{x - 1} + 2y e^{x - 1}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + 3 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
-        "Substitute the coordinates of the point $(1, 2)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} \\left( 2^2 \\right) e^{ 1 - 1 } + 2(2) e^{ 1 - 1 }\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 3 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 4(1) + 4(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 3 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 7 + 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{7}{2} \\end{aligned}",
-        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\n\\begin{aligned} m_n &= -\\dfrac{1}{-\\frac{7}{2}} \\cr m_n &= \\dfrac{2}{7} \\end{aligned}",
-        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(1, 2)$ and gradient $m_n = \\dfrac{2}{7}$ to find the equation of the normal:\n\\begin{aligned} y - 2 &= \\dfrac{2}{7}(x - 1) \\cr 7(y - 2) &= 2(x - 1) \\cr 7y - 14 &= 2x - 2 \\cr 2x - 7y + 12 &= 0 \\end{aligned}"
+        "Differentiate the implicit equation with respect to $x$, applying the product rule and chain rule to the term $y^2 e^{x - 1}$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( y^2 e^{x - 1} + 3x - 2y \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(3) \\cr \\left( y^2 e^{x - 1} + 2y e^{x - 1}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + 3 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
+        "Substitute the coordinates of the point $(1, 2)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\\begin{aligned} \\left( 2^2 \\right) e^{ 1 - 1 } + 2(2) e^{ 1 - 1 }\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 3 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 4(1) + 4(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 3 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 7 + 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{7}{2} \\end{aligned}",
+        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\\begin{aligned} m_n &= -\\dfrac{1}{-\\frac{7}{2}} \\cr m_n &= \\dfrac{2}{7} \\end{aligned}",
+        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(1, 2)$ and gradient $m_n = \\dfrac{2}{7}$ to find the equation of the normal:\\begin{aligned} y - 2 &= \\dfrac{2}{7}(x - 1) \\cr 7(y - 2) &= 2(x - 1) \\cr 7y - 14 &= 2x - 2 \\cr 2x - 7y + 12 &= 0 \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1539,12 +1544,12 @@ window.ALEVEL_QUESTIONS = [
         "Logarithmic Functions"
     ],
     "img": false,
-    "question": "A curve is defined implicitly by:\n$$x^2 \\ln y + 4xy + y^2 = 5$$<br>Find the equation of the normal to the curve at the point $(1, 1)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "question": "A curve is defined implicitly by:$$x^2 \\ln y + 4xy + y^2 = 5$$<br>Find the equation of the normal to the curve at the point $(1, 1)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
     "steps": [
-        "Differentiate the implicit equation with respect to $x$, applying the product rule to the terms $x^2 \\ln y$ and $4xy$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^2 \\ln y + 4xy + y^2 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(5) \\cr \\left( 2x\\ln y + x^2\\dfrac{1}{y}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + \\left( 4y + 4x\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + 2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
-        "Substitute the coordinates of the point $(1, 1)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} 2(1)\\ln(1) + 1^2\\left( \\dfrac{1}{1} \\right)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 4(1) + 4(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 0 + \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 4 + 4\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 4 + 7\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{4}{7} \\end{aligned}",
-        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\n\\begin{aligned} m_n &= -\\dfrac{1}{-\\frac{4}{7}} \\cr m_n &= \\dfrac{7}{4} \\end{aligned}",
-        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(1, 1)$ and gradient $m_n = \\dfrac{7}{4}$ to find the equation of the normal:\n\\begin{aligned} y - 1 &= \\dfrac{7}{4}(x - 1) \\cr 4(y - 1) &= 7(x - 1) \\cr 4y - 4 &= 7x - 7 \\cr 7x - 4y - 3 &= 0 \\end{aligned}"
+        "Differentiate the implicit equation with respect to $x$, applying the product rule to the terms $x^2 \\ln y$ and $4xy$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^2 \\ln y + 4xy + y^2 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(5) \\cr \\left( 2x\\ln y + x^2\\dfrac{1}{y}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + \\left( 4y + 4x\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + 2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
+        "Substitute the coordinates of the point $(1, 1)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\\begin{aligned} 2(1)\\ln(1) + 1^2\\left( \\dfrac{1}{1} \\right)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 4(1) + 4(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2(1)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 0 + \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 4 + 4\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr 4 + 7\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{4}{7} \\end{aligned}",
+        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\\begin{aligned} m_n &= -\\dfrac{1}{-\\frac{4}{7}} \\cr m_n &= \\dfrac{7}{4} \\end{aligned}",
+        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(1, 1)$ and gradient $m_n = \\dfrac{7}{4}$ to find the equation of the normal:\\begin{aligned} y - 1 &= \\dfrac{7}{4}(x - 1) \\cr 4(y - 1) &= 7(x - 1) \\cr 4y - 4 &= 7x - 7 \\cr 7x - 4y - 3 &= 0 \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1579,12 +1584,12 @@ window.ALEVEL_QUESTIONS = [
         "Rational Expressions"
     ],
     "img": false,
-    "question": "A curve is defined implicitly by:\n$$\\dfrac{x}{y} + y^2 - 3x = -1$$<br>Find the equation of the normal to the curve at the point $(2, 2)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
+    "question": "A curve is defined implicitly by:$$\\dfrac{x}{y} + y^2 - 3x = -1$$<br>Find the equation of the normal to the curve at the point $(2, 2)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
     "steps": [
-        "Differentiate the implicit equation with respect to $x$, applying the quotient rule (or product rule with negative exponents) to the term $\\dfrac{x}{y}$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( \\dfrac{x}{y} + y^2 - 3x \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(-1) \\cr \\dfrac{y - x\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}}{y^2} + 2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\end{aligned}",
-        "Substitute the coordinates of the point $(2, 2)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} \\dfrac{2 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}}{2^2} + 2(2)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr \\dfrac{2 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}}{4} + 4\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr \\dfrac{1}{2} - \\dfrac{1}{2}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 4\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr \\dfrac{7}{2}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - \\dfrac{5}{2} &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{5}{7} \\end{aligned}",
-        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\n\\begin{aligned} m_n &= -\\dfrac{1}{\\frac{5}{7}} \\cr m_n &= -\\dfrac{7}{5} \\end{aligned}",
-        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(2, 2)$ and gradient $m_n = -\\dfrac{7}{5}$ to find the equation of the normal:\n\\begin{aligned} y - 2 &= -\\dfrac{7}{5}(x - 2) \\cr 5(y - 2) &= -7(x - 2) \\cr 5y - 10 &= -7x + 14 \\cr 7x + 5y - 24 &= 0 \\end{aligned}"
+        "Differentiate the implicit equation with respect to $x$, applying the quotient rule (or product rule with negative exponents) to the term $\\dfrac{x}{y}$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( \\dfrac{x}{y} + y^2 - 3x \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(-1) \\cr \\dfrac{y - x\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}}{y^2} + 2y\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\end{aligned}",
+        "Substitute the coordinates of the point $(2, 2)$ into the differentiated equation to solve for the gradient of the tangent, $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\\begin{aligned} \\dfrac{2 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}}{2^2} + 2(2)\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr \\dfrac{2 - 2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}}{4} + 4\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr \\dfrac{1}{2} - \\dfrac{1}{2}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 4\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - 3 &= 0 \\cr \\dfrac{7}{2}\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} - \\dfrac{5}{2} &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{5}{7} \\end{aligned}",
+        "Find the gradient of the normal, $m_n$, using the perpendicular gradient relationship $m_n = -\\dfrac{1}{m_t}$, where $m_t$ is the tangent gradient:\\begin{aligned} m_n &= -\\dfrac{1}{\\frac{5}{7}} \\cr m_n &= -\\dfrac{7}{5} \\end{aligned}",
+        "Use the straight-line equation $y - y_1 = m_n(x - x_1)$ with the point $(2, 2)$ and gradient $m_n = -\\dfrac{7}{5}$ to find the equation of the normal:\\begin{aligned} y - 2 &= -\\dfrac{7}{5}(x - 2) \\cr 5(y - 2) &= -7(x - 2) \\cr 5y - 10 &= -7x + 14 \\cr 7x + 5y - 24 &= 0 \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1618,11 +1623,11 @@ window.ALEVEL_QUESTIONS = [
         "Newton-Raphson Method"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$x - 2 = \\sin x$$\nhas only one root.<br><strong>(b)</strong> Starting with $x_0 = 2.5$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:$$x - 2 = \\sin x$$has only one root.<br><strong>(b)</strong> Starting with $x_0 = 2.5$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
     "steps": [
-        "To show that the equation has only one root, rewrite it as $x - 2 = \\sin x$ and sketch the curves $y = x - 2$ and $y = \\sin x$:\n<br><br><img src='images/Pure_SVGs/004741_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>\nThe line $y = x - 2$ has a gradient of $1$ and crosses the $y$-axis at $(0, -2)$. The wave $y = \\sin x$ has a maximum gradient of $1$ (at $x = 0$) and oscillates between $-1$ and $1$. As shown in the sketch, the graphs intersect at exactly one point, so there is only one root, $\\alpha$.",
-        "Define $f(x) = x - 2 - \\sin x$. To apply the Newton-Raphson method, we first find the derivative, $f'(x)$:\n\\begin{aligned} f'(x) &= 1 - \\cos x \\end{aligned}\nNow set up the Newton-Raphson iteration formula:\n\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ x_{ n } - 2 - \\sin x_{ n } }{ 1 - \\cos x_{ n } } \\end{aligned}",
-        "Perform the iterations using radians, starting with $x_0 = 2.5$:\n\\begin{aligned} x_1 &= 2.5 - \\dfrac{ 2.5 - 2 - \\sin(2.5) }{ 1 - \\cos(2.5) } \\cr x_1 &\\approx 2.5 - \\dfrac{ -0.09847 }{ 1.80114 } \\cr x_1 &\\approx 2.55467 \\cr\\cr x_2 &= 2.55467 - \\dfrac{ 2.55467 - 2 - \\sin(2.55467) }{ 1 - \\cos(2.55467) } \\cr x_2 &\\approx 2.55420 \\end{aligned}",
+        "To show that the equation has only one root, rewrite it as $x - 2 = \\sin x$ and sketch the curves $y = x - 2$ and $y = \\sin x$:<br><br><img src='images/Pure_SVGs/004741_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>The line $y = x - 2$ has a gradient of $1$ and crosses the $y$-axis at $(0, -2)$. The wave $y = \\sin x$ has a maximum gradient of $1$ (at $x = 0$) and oscillates between $-1$ and $1$. As shown in the sketch, the graphs intersect at exactly one point, so there is only one root, $\\alpha$.",
+        "Define $f(x) = x - 2 - \\sin x$. To apply the Newton-Raphson method, we first find the derivative, $f'(x)$:\\begin{aligned} f'(x) &= 1 - \\cos x \\end{aligned}Now set up the Newton-Raphson iteration formula:\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ x_{ n } - 2 - \\sin x_{ n } }{ 1 - \\cos x_{ n } } \\end{aligned}",
+        "Perform the iterations using radians, starting with $x_0 = 2.5$:\\begin{aligned} x_1 &= 2.5 - \\dfrac{ 2.5 - 2 - \\sin(2.5) }{ 1 - \\cos(2.5) } \\cr x_1 &\\approx 2.5 - \\dfrac{ -0.09847 }{ 1.80114 } \\cr x_1 &\\approx 2.55467 \\cr\\cr x_2 &= 2.55467 - \\dfrac{ 2.55467 - 2 - \\sin(2.55467) }{ 1 - \\cos(2.55467) } \\cr x_2 &\\approx 2.55420 \\end{aligned}",
         "Since the values of $x_1$ and $x_2$ both round to $2.55$ to two decimal places, the root is $\\alpha \\approx 2.55$."
     ],
     "pi_options": [
@@ -1658,11 +1663,11 @@ window.ALEVEL_QUESTIONS = [
         "Exponential Functions"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$e^x + x = 3$$\nhas only one root.<br><strong>(b)</strong> Starting with $x_0 = 1$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:$$e^x + x = 3$$has only one root.<br><strong>(b)</strong> Starting with $x_0 = 1$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
     "steps": [
-        "To show that the equation has only one root, rewrite it as $e^x = 3 - x$ and sketch the curves $y = e^x$ and $y = 3 - x$:\n<br><br><img src='images/Pure_SVGs/004742_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>\nThe curve $y = e^x$ is strictly increasing, while the straight line $y = 3 - x$ has a gradient of $-1$ and is strictly decreasing. As shown in the sketch, they intersect at exactly one point, proving that there is only one root, $\\alpha$.",
-        "Define $f(x) = e^x + x - 3$. To apply the Newton-Raphson method, we first find the derivative, $f'(x)$:\n\\begin{aligned} f'(x) &= e^x + 1 \\end{aligned}\nNow set up the Newton-Raphson iteration formula:\n\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ e^{ x_{ n } } + x_{ n } - 3 }{ e^{ x_{ n } } + 1 } \\end{aligned}",
-        "Perform the iterations starting with $x_0 = 1$:\n\\begin{aligned} x_1 &= 1 - \\dfrac{ e^1 + 1 - 3 }{ e^1 + 1 } \\cr x_1 &= 1 - \\dfrac{ e - 2 }{ e + 1 } \\cr x_1 &\\approx 0.80682 \\cr\\cr x_2 &= 0.80682 - \\dfrac{ e^{ 0.80682 } + 0.80682 - 3 }{ e^{ 0.80682 } + 1 } \\cr x_2 &\\approx 0.79212 \\cr\\cr x_3 &= 0.79212 - \\dfrac{ e^{ 0.79212 } + 0.79212 - 3 }{ e^{ 0.79212 } + 1 } \\cr x_3 &\\approx 0.79206 \\end{aligned}",
+        "To show that the equation has only one root, rewrite it as $e^x = 3 - x$ and sketch the curves $y = e^x$ and $y = 3 - x$:<br><br><img src='images/Pure_SVGs/004742_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>The curve $y = e^x$ is strictly increasing, while the straight line $y = 3 - x$ has a gradient of $-1$ and is strictly decreasing. As shown in the sketch, they intersect at exactly one point, proving that there is only one root, $\\alpha$.",
+        "Define $f(x) = e^x + x - 3$. To apply the Newton-Raphson method, we first find the derivative, $f'(x)$:\\begin{aligned} f'(x) &= e^x + 1 \\end{aligned}Now set up the Newton-Raphson iteration formula:\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ e^{ x_{ n } } + x_{ n } - 3 }{ e^{ x_{ n } } + 1 } \\end{aligned}",
+        "Perform the iterations starting with $x_0 = 1$:\\begin{aligned} x_1 &= 1 - \\dfrac{ e^1 + 1 - 3 }{ e^1 + 1 } \\cr x_1 &= 1 - \\dfrac{ e - 2 }{ e + 1 } \\cr x_1 &\\approx 0.80682 \\cr\\cr x_2 &= 0.80682 - \\dfrac{ e^{ 0.80682 } + 0.80682 - 3 }{ e^{ 0.80682 } + 1 } \\cr x_2 &\\approx 0.79212 \\cr\\cr x_3 &= 0.79212 - \\dfrac{ e^{ 0.79212 } + 0.79212 - 3 }{ e^{ 0.79212 } + 1 } \\cr x_3 &\\approx 0.79206 \\end{aligned}",
         "Since successive iterations converge to $0.79$ to two decimal places, the root is $\\alpha \\approx 0.79$."
     ],
     "pi_options": [
@@ -1698,11 +1703,11 @@ window.ALEVEL_QUESTIONS = [
         "Logarithmic Functions"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$\\ln x = 2 - x$$\nhas only one root.<br><strong>(b)</strong> Starting with $x_0 = 1.5$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:$$\\ln x = 2 - x$$has only one root.<br><strong>(b)</strong> Starting with $x_0 = 1.5$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
     "steps": [
-        "To show that the equation has only one root, sketch the curves $y = \\ln x$ and $y = 2 - x$ for $x > 0$:\n<br><br><img src='images/Pure_SVGs/004743_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>\nThe logarithmic curve $y = \\ln x$ is strictly increasing, while the straight line $y = 2 - x$ is strictly decreasing. They intersect at exactly one point, proving that there is only one root, $\\alpha$.",
-        "Define $f(x) = \\ln x + x - 2$. To apply the Newton-Raphson method, we first find the derivative, $f'(x)$:\n\\begin{aligned} f'(x) &= \\dfrac{1}{x} + 1 \\end{aligned}\nNow set up the Newton-Raphson iteration formula:\n\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ \\ln x_{ n } + x_{ n } - 2 }{ \\dfrac{1}{x_{ n }} + 1 } \\end{aligned}",
-        "Perform the iterations starting with $x_0 = 1.5$:\n\\begin{aligned} x_1 &= 1.5 - \\dfrac{ \\ln(1.5) + 1.5 - 2 }{ \\dfrac{1}{1.5} + 1 } \\cr x_1 &\\approx 1.5 - \\dfrac{ -0.09453 }{ 1.66667 } \\cr x_1 &\\approx 1.55672 \\cr\\cr x_2 &= 1.55672 - \\dfrac{ \\ln(1.55672) + 1.55672 - 2 }{ \\dfrac{1}{1.55672} + 1 } \\cr x_2 &\\approx 1.55714 \\end{aligned}",
+        "To show that the equation has only one root, sketch the curves $y = \\ln x$ and $y = 2 - x$ for $x > 0$:<br><br><img src='images/Pure_SVGs/004743_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>The logarithmic curve $y = \\ln x$ is strictly increasing, while the straight line $y = 2 - x$ is strictly decreasing. They intersect at exactly one point, proving that there is only one root, $\\alpha$.",
+        "Define $f(x) = \\ln x + x - 2$. To apply the Newton-Raphson method, we first find the derivative, $f'(x)$:\\begin{aligned} f'(x) &= \\dfrac{1}{x} + 1 \\end{aligned}Now set up the Newton-Raphson iteration formula:\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ \\ln x_{ n } + x_{ n } - 2 }{ \\dfrac{1}{x_{ n }} + 1 } \\end{aligned}",
+        "Perform the iterations starting with $x_0 = 1.5$:\\begin{aligned} x_1 &= 1.5 - \\dfrac{ \\ln(1.5) + 1.5 - 2 }{ \\dfrac{1}{1.5} + 1 } \\cr x_1 &\\approx 1.5 - \\dfrac{ -0.09453 }{ 1.66667 } \\cr x_1 &\\approx 1.55672 \\cr\\cr x_2 &= 1.55672 - \\dfrac{ \\ln(1.55672) + 1.55672 - 2 }{ \\dfrac{1}{1.55672} + 1 } \\cr x_2 &\\approx 1.55714 \\end{aligned}",
         "Since successive iterations converge to $1.56$ to two decimal places, the root is $\\alpha \\approx 1.56$."
     ],
     "pi_options": [
@@ -1738,11 +1743,11 @@ window.ALEVEL_QUESTIONS = [
         "Reciprocal Functions"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$\\dfrac{1}{x} = x^2 - 1$$\nhas only one positive root.<br><strong>(b)</strong> Starting with $x_0 = 1.3$, apply the Newton-Raphson method to $f(x) = x^2 - 1 - \\dfrac{1}{x}$ to find the value of this root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:$$\\dfrac{1}{x} = x^2 - 1$$has only one positive root.<br><strong>(b)</strong> Starting with $x_0 = 1.3$, apply the Newton-Raphson method to $f(x) = x^2 - 1 - \\dfrac{1}{x}$ to find the value of this root correct to two decimal places.",
     "steps": [
-        "To show that the equation has only one positive root, sketch the curves $y = \\dfrac{1}{x}$ and $y = x^2 - 1$ for $x > 0$:\n<br><br><img src='images/Pure_SVGs/004744_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>\nFor $x > 0$, the reciprocal curve $y = \\dfrac{1}{x}$ is strictly decreasing, while the parabola $y = x^2 - 1$ is strictly increasing. As shown in the sketch, they intersect at exactly one positive point, proving that there is only one positive root, $\\alpha$.",
-        "We are given $f(x) = x^2 - 1 - \\dfrac{1}{x} = x^2 - 1 - x^{-1}$. Differentiate with respect to $x$ to find $f'(x)$:\n\\begin{aligned} f'(x) &= 2x + x^{-2} \\cr f'(x) &= 2x + \\dfrac{1}{x^2} \\end{aligned}\nNow set up the Newton-Raphson iteration formula:\n\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ x_{ n }^2 - 1 - \\dfrac{1}{x_{ n }} }{ 2x_{ n } + \\dfrac{1}{x_{ n }^2} } \\end{aligned}",
-        "Perform the iterations starting with $x_0 = 1.3$:\n\\begin{aligned} x_1 &= 1.3 - \\dfrac{ 1.3^2 - 1 - \\dfrac{1}{1.3} }{ 2(1.3) + \\dfrac{1}{1.3^2} } \\cr x_1 &\\approx 1.3 - \\dfrac{ -0.07923 }{ 3.191715 } \\cr x_1 &\\approx 1.32482 \\cr\\cr x_2 &= 1.32482 - \\dfrac{ 1.32482^2 - 1 - \\dfrac{1}{1.32482} }{ 2(1.32482) + \\dfrac{1}{1.32482^2} } \\cr x_2 &\\approx 1.32472 \\end{aligned}",
+        "To show that the equation has only one positive root, sketch the curves $y = \\dfrac{1}{x}$ and $y = x^2 - 1$ for $x > 0$:<br><br><img src='images/Pure_SVGs/004744_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>For $x > 0$, the reciprocal curve $y = \\dfrac{1}{x}$ is strictly decreasing, while the parabola $y = x^2 - 1$ is strictly increasing. As shown in the sketch, they intersect at exactly one positive point, proving that there is only one positive root, $\\alpha$.",
+        "We are given $f(x) = x^2 - 1 - \\dfrac{1}{x} = x^2 - 1 - x^{-1}$. Differentiate with respect to $x$ to find $f'(x)$:\\begin{aligned} f'(x) &= 2x + x^{-2} \\cr f'(x) &= 2x + \\dfrac{1}{x^2} \\end{aligned}Now set up the Newton-Raphson iteration formula:\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ x_{ n }^2 - 1 - \\dfrac{1}{x_{ n }} }{ 2x_{ n } + \\dfrac{1}{x_{ n }^2} } \\end{aligned}",
+        "Perform the iterations starting with $x_0 = 1.3$:\\begin{aligned} x_1 &= 1.3 - \\dfrac{ 1.3^2 - 1 - \\dfrac{1}{1.3} }{ 2(1.3) + \\dfrac{1}{1.3^2} } \\cr x_1 &\\approx 1.3 - \\dfrac{ -0.07923 }{ 3.191715 } \\cr x_1 &\\approx 1.32482 \\cr\\cr x_2 &= 1.32482 - \\dfrac{ 1.32482^2 - 1 - \\dfrac{1}{1.32482} }{ 2(1.32482) + \\dfrac{1}{1.32482^2} } \\cr x_2 &\\approx 1.32472 \\end{aligned}",
         "Since successive iterations round to $1.32$ to two decimal places, the root is $\\alpha \\approx 1.32$."
     ],
     "pi_options": [
@@ -1778,11 +1783,11 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric Equations"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:\n$$x^2 = \\cos x$$\nhas only one positive root.<br><strong>(b)</strong> Starting with $x_0 = 0.8$, use the Newton-Raphson method to find the value of this positive root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:$$x^2 = \\cos x$$has only one positive root.<br><strong>(b)</strong> Starting with $x_0 = 0.8$, use the Newton-Raphson method to find the value of this positive root correct to two decimal places.",
     "steps": [
-        "To show that the equation has only one positive root, sketch the curves $y = x^2$ and $y = \\cos x$:\n<br><br><img src='images/Pure_SVGs/004745_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>\nThe parabola $y = x^2$ is symmetric about the $y$-axis and strictly increasing for $x > 0$. The curve $y = \\cos x$ starts at $(0, 1)$ and decreases to $0$ at $x = \\dfrac{\\pi}{2}$. As shown in the sketch, they intersect at exactly one positive point, proving there is only one positive root, $\\alpha$.",
-        "Define $f(x) = x^2 - \\cos x$. Differentiate with respect to $x$ to find $f'(x)$:\n\\begin{aligned} f'(x) &= 2x - (-\\sin x) \\cr f'(x) &= 2x + \\sin x \\end{aligned}\nNow set up the Newton-Raphson iteration formula:\n\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ x_{ n }^2 - \\cos x_{ n } }{ 2x_{ n } + \\sin x_{ n } } \\end{aligned}",
-        "Perform the iterations using radians, starting with $x_0 = 0.8$:\n\\begin{aligned} x_1 &= 0.8 - \\dfrac{ 0.8^2 - \\cos(0.8) }{ 2(0.8) + \\sin(0.8) } \\cr x_1 &\\approx 0.8 - \\dfrac{ -0.05670 }{ 2.31735 } \\cr x_1 &\\approx 0.82447 \\cr\\cr x_2 &= 0.82447 - \\dfrac{ 0.82447^2 - \\cos(0.82447) }{ 2(0.82447) + \\sin(0.82447) } \\cr x_2 &\\approx 0.82413 \\end{aligned}",
+        "To show that the equation has only one positive root, sketch the curves $y = x^2$ and $y = \\cos x$:<br><br><img src='images/Pure_SVGs/004745_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>The parabola $y = x^2$ is symmetric about the $y$-axis and strictly increasing for $x > 0$. The curve $y = \\cos x$ starts at $(0, 1)$ and decreases to $0$ at $x = \\dfrac{\\pi}{2}$. As shown in the sketch, they intersect at exactly one positive point, proving there is only one positive root, $\\alpha$.",
+        "Define $f(x) = x^2 - \\cos x$. Differentiate with respect to $x$ to find $f'(x)$:\\begin{aligned} f'(x) &= 2x - (-\\sin x) \\cr f'(x) &= 2x + \\sin x \\end{aligned}Now set up the Newton-Raphson iteration formula:\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ x_{ n }^2 - \\cos x_{ n } }{ 2x_{ n } + \\sin x_{ n } } \\end{aligned}",
+        "Perform the iterations using radians, starting with $x_0 = 0.8$:\\begin{aligned} x_1 &= 0.8 - \\dfrac{ 0.8^2 - \\cos(0.8) }{ 2(0.8) + \\sin(0.8) } \\cr x_1 &\\approx 0.8 - \\dfrac{ -0.05670 }{ 2.31735 } \\cr x_1 &\\approx 0.82447 \\cr\\cr x_2 &= 0.82447 - \\dfrac{ 0.82447^2 - \\cos(0.82447) }{ 2(0.82447) + \\sin(0.82447) } \\cr x_2 &\\approx 0.82413 \\end{aligned}",
         "Since successive iterations round to $0.82$ to two decimal places, the root is $\\alpha \\approx 0.82$."
     ],
     "pi_options": [
@@ -1816,10 +1821,10 @@ window.ALEVEL_QUESTIONS = [
         "Implicit Differentiation"
     ],
     "img": false,
-    "question": "A curve is given by the equation:\n$$2x^4 + 5y^3 = 10$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "question": "A curve is given by the equation:$$2x^4 + 5y^3 = 10$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
     "steps": [
-        "Differentiate both sides of the equation with respect to $x$. When differentiating terms in $y$, apply the chain rule by multiplying by $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 2x^4 \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 5y^3 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(10) \\cr 8x^3 + 15y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
-        "Rearrange the equation to isolate the derivative term $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} 15y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -8x^3 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{ 8x^3 }{ 15y^2 } \\end{aligned}"
+        "Differentiate both sides of the equation with respect to $x$. When differentiating terms in $y$, apply the chain rule by multiplying by $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 2x^4 \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 5y^3 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(10) \\cr 8x^3 + 15y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
+        "Rearrange the equation to isolate the derivative term $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\\begin{aligned} 15y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -8x^3 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{ 8x^3 }{ 15y^2 } \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1853,11 +1858,11 @@ window.ALEVEL_QUESTIONS = [
         "Product Rule"
     ],
     "img": false,
-    "question": "A curve is given by the equation:\n$$y^2 + 2xy - x^3 = 7$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "question": "A curve is given by the equation:$$y^2 + 2xy - x^3 = 7$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
     "steps": [
-        "Differentiate both sides of the equation with respect to $x$. Apply the product rule to the term $2xy$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( y^2 \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(2xy) - \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^3 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(7) \\cr 2y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + \\left( 2y + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) - 3x^2 &= 0 \\end{aligned}",
-        "Group the terms containing $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ on one side and move the other terms to the opposite side:\n\\begin{aligned} 2y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 3x^2 - 2y \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}(2x + 2y) &= 3x^2 - 2y \\end{aligned}",
-        "Isolate $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ by dividing by the factor $(2x + 2y)$:\n\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 3x^2 - 2y }{ 2x + 2y } \\end{aligned}"
+        "Differentiate both sides of the equation with respect to $x$. Apply the product rule to the term $2xy$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( y^2 \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(2xy) - \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^3 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(7) \\cr 2y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + \\left( 2y + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) - 3x^2 &= 0 \\end{aligned}",
+        "Group the terms containing $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ on one side and move the other terms to the opposite side:\\begin{aligned} 2y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 3x^2 - 2y \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}(2x + 2y) &= 3x^2 - 2y \\end{aligned}",
+        "Isolate $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ by dividing by the factor $(2x + 2y)$:\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 3x^2 - 2y }{ 2x + 2y } \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1892,10 +1897,10 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric and Exponential Functions"
     ],
     "img": false,
-    "question": "A curve is given by the equation:\n$$y \\sin x + e^y = 5$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "question": "A curve is given by the equation:$$y \\sin x + e^y = 5$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
     "steps": [
-        "Differentiate both sides with respect to $x$, applying the product rule to $y \\sin x$ and the chain rule to $e^y$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(y \\sin x) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( e^y \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(5) \\cr \\left( \\sin x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + y \\cos x \\right) + e^y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
-        "Factor out $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ from the relevant terms and rearrange to solve for the derivative:\n\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\sin x + e^y \\right) + y \\cos x &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\sin x + e^y \\right) &= -y \\cos x \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{ y \\cos x }{ \\sin x + e^y } \\end{aligned}"
+        "Differentiate both sides with respect to $x$, applying the product rule to $y \\sin x$ and the chain rule to $e^y$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(y \\sin x) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( e^y \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(5) \\cr \\left( \\sin x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + y \\cos x \\right) + e^y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
+        "Factor out $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ from the relevant terms and rearrange to solve for the derivative:\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\sin x + e^y \\right) + y \\cos x &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\sin x + e^y \\right) &= -y \\cos x \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{ y \\cos x }{ \\sin x + e^y } \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1929,11 +1934,11 @@ window.ALEVEL_QUESTIONS = [
         "Logarithmic Functions"
     ],
     "img": false,
-    "question": "A curve is given by the equation:\n$$x^2 \\ln y + y = 3x$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "question": "A curve is given by the equation:$$x^2 \\ln y + y = 3x$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
     "steps": [
-        "Differentiate both sides with respect to $x$, applying the product rule to $x^2 \\ln y$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^2 \\ln y \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(y) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(3x) \\cr \\left( 2x \\ln y + x^2 \\cdot \\dfrac{1}{y} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 3 \\end{aligned}",
-        "Factor out $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ on the left-hand side and move the other terms to the right-hand side:\n\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\dfrac{x^2}{y} + 1 \\right) &= 3 - 2x \\ln y \\end{aligned}",
-        "Multiply the entire equation by $y$ to clear the fraction and solve for $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\n\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( x^2 + y \\right) &= y(3 - 2x \\ln y) \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 3y - 2xy \\ln y }{ x^2 + y } \\end{aligned}"
+        "Differentiate both sides with respect to $x$, applying the product rule to $x^2 \\ln y$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^2 \\ln y \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(y) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(3x) \\cr \\left( 2x \\ln y + x^2 \\cdot \\dfrac{1}{y} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 3 \\end{aligned}",
+        "Factor out $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ on the left-hand side and move the other terms to the right-hand side:\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\dfrac{x^2}{y} + 1 \\right) &= 3 - 2x \\ln y \\end{aligned}",
+        "Multiply the entire equation by $y$ to clear the fraction and solve for $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( x^2 + y \\right) &= y(3 - 2x \\ln y) \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 3y - 2xy \\ln y }{ x^2 + y } \\end{aligned}"
     ],
     "pi_options": [
         {
@@ -1967,11 +1972,11 @@ window.ALEVEL_QUESTIONS = [
         "Coordinate Gradients"
     ],
     "img": false,
-    "question": "A curve is defined implicitly by the equation:\n$$3x^2 - y^3 + 2xy = 12$$<br>Find the gradient of the curve at the point $(2, 2)$..",
+    "question": "A curve is defined implicitly by the equation:$$3x^2 - y^3 + 2xy = 12$$<br>Find the gradient of the curve at the point $(2, 2)$..",
     "steps": [
-        "Differentiate the implicit equation with respect to $x$, using the chain rule for $y^3$ and the product rule for $2xy$:\n\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 3x^2 - y^3 + 2xy \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(12) \\cr 6x - 3y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + \\left( 2y + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) &= 0 \\end{aligned}",
-        "Group the terms containing $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ and express $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$:\n\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( 2x - 3y^2 \\right) + 6x + 2y &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( 2x - 3y^2 \\right) &= -6x - 2y \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 6x + 2y }{ 3y^2 - 2x } \\end{aligned}",
-        "Substitute the coordinates $(2, 2)$ into the derivative formula to calculate the numerical gradient:\n\\begin{aligned} \\text{Gradient} &= \\dfrac{ 6(2) + 2(2) }{ 3\\left(2^2\\right) - 2(2) } \\cr \\text{Gradient} &= \\dfrac{ 12 + 4 }{ 12 - 4 } \\cr \\text{Gradient} &= \\dfrac{ 16 }{ 8 } \\cr \\text{Gradient} &= 2 \\end{aligned}"
+        "Differentiate the implicit equation with respect to $x$, using the chain rule for $y^3$ and the product rule for $2xy$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 3x^2 - y^3 + 2xy \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(12) \\cr 6x - 3y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + \\left( 2y + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) &= 0 \\end{aligned}",
+        "Group the terms containing $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ and express $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$:\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( 2x - 3y^2 \\right) + 6x + 2y &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( 2x - 3y^2 \\right) &= -6x - 2y \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 6x + 2y }{ 3y^2 - 2x } \\end{aligned}",
+        "Substitute the coordinates $(2, 2)$ into the derivative formula to calculate the numerical gradient:\\begin{aligned} \\text{Gradient} &= \\dfrac{ 6(2) + 2(2) }{ 3\\left(2^2\\right) - 2(2) } \\cr \\text{Gradient} &= \\dfrac{ 12 + 4 }{ 12 - 4 } \\cr \\text{Gradient} &= \\dfrac{ 16 }{ 8 } \\cr \\text{Gradient} &= 2 \\end{aligned}"
     ],
     "pi_options": [
         {
