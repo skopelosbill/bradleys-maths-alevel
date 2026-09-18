@@ -611,7 +611,7 @@ window.ALEVEL_QUESTIONS = [
             "feedback": "This is incorrect. For $m = 5$ and $n = 3$, $m^2 - n^2 = 25 - 9 = 16 \\ne 14$."
         },
         {
-            "ans": "$$(m - n)(m + n) = 14 \\implies m^2 + n^2 = 14$$",
+            "ans": "$$(m - n)(m + n) = 14$$ $$\\implies m^2 + n^2 = 14$$",
             "feedback": "This is incorrect. The difference of two squares factorises as $(m-n)(m+n) = m^2 - n^2$, not $m^2 + n^2$."
         }
     ],
@@ -634,32 +634,33 @@ window.ALEVEL_QUESTIONS = [
         "Graph Sketching"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Given that $f$ is a function:<strong>(i)</strong> State the condition for $f^{-1}$ to exist.<strong>(ii)</strong> Find $f^{-1}f(x)$.<br><strong>(b)</strong> The functions $g$ and $h$ are given by:$$\\begin{aligned} g(x) &= x^2 - 4 \\cr h(x) &= \\mathrm{e}^{ 2x } + 2 \\end{aligned}$$<strong>(i)</strong> Suggest a domain for $g$ such that $g^{-1}$ exists.<strong>(ii)</strong> Given that the domain of $h$ is $(-\\infty, \\infty)$, find an expression for $h^{-1}(x)$. Sketch, using the same axes, the graphs of $h(x)$ and $h^{-1}(x)$, indicating clearly any asymptotes and the points where the graphs cross the coordinate axes.<strong>(iii)</strong> Determine an expression for $gh(x)$ in its simplest form.",
+    "question": "<strong>(a)</strong> Given that $f$ is a function:<br><strong>(i)</strong> State the condition for $f^{-1}$ to exist.<br><strong>(ii)</strong> Find $f^{-1}f(x)$.<br><br><strong>(b)</strong> The functions $g$ and $h$ are given by: \\begin{aligned} &g(x) = x^2 - 4 \\cr &h(x) = \\mathrm{e}^{2x} + 2 \\end{aligned} <strong>(i)</strong> Suggest a domain for $g$ such that $g^{-1}$ exists.<br><strong>(ii)</strong> Given that the domain of $h$ is $(-\\infty, \\infty)$, find an expression for $h^{-1}(x)$. Sketch, using the same axes, the graphs of $h(x)$ and $h^{-1}(x)$, indicating clearly any asymptotes and axis intercepts.<br><strong>(iii)</strong> Determine an expression for $gh(x)$ in its simplest form.",
     "steps": [
-        "<strong>(a)(i)</strong> For the inverse function $f^{-1}$ to exist, the function $f$ must be <strong>one-to-one</strong> (or injective). This means that each output value in the range corresponds to exactly one input value in the domain.<br><br><strong>(a)(ii)</strong> By definition, applying a function and then its inverse (or vice versa) returns the original input: $$f^{-1}f(x) = x$$",
-        "<strong>(b)(i)</strong> The quadratic function $g(x) = x^2 - 4$ is many-to-one over its natural domain. To make it one-to-one so that an inverse exists, we must restrict the domain to one side of its vertex $(0, -4)$. A standard restriction is:<br>$$x \\ge 0$$<br>(Note: $x \\le 0$ is also a valid alternative).",
-        "<strong>(b)(ii)</strong> To find an expression for the inverse function $h^{-1}(x)$, we set $y = h(x)$ and rearrange to make $x$ the subject:<br>\\begin{aligned} y &= \\mathrm{e}^{ 2x } + 2 \\cr y - 2 &= \\mathrm{e}^{ 2x } \\cr 2x &= \\ln(y - 2) \\cr x &= 0.5\\ln(y - 2) \\end{aligned}<br>Swapping $x$ and $y$ gives:<br>$$h^{-1}(x) = 0.5\\ln(x - 2)$$<br>with a domain of $x > 2$.",
-        "To sketch the graphs of $h(x)$ and $h^{-1}(x)$ on the same axes, we locate their key features:<br>• The exponential curve $h(x) = \\mathrm{e}^{ 2x } + 2$ has a horizontal asymptote at $y = 2$ and crosses the $y$-axis at $(0, 3)$.<br>• The logarithmic curve $h^{-1}(x) = 0.5\\ln(x - 2)$ has a vertical asymptote at $x = 2$ and crosses the $x$-axis at $(3, 0)$.<br>The curves are reflections of each other across the line of symmetry $y = x$.<br><br><img src='images/Pure_SVGs/004716_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-        "<strong>(b)(iii)</strong> To find the composite function $gh(x)$, we substitute $h(x)$ into $g(x)$:<br>\\begin{aligned} gh(x) &= g(h(x)) \\cr &= (\\mathrm{e}^{ 2x } + 2)^2 - 4 \\cr &= \\mathrm{e}^{ 4x } + 4\\mathrm{e}^{ 2x } + 4 - 4 \\cr &= \\mathrm{e}^{ 4x } + 4\\mathrm{e}^{ 2x } \\end{aligned}"
+        "<strong>(a)(i)</strong> For the inverse $f^{-1}$ to exist, $f$ must be a <strong>one-to-one</strong> function.<br><br><strong>(a)(ii)</strong> Applying a function and its inverse returns the input: \\begin{aligned} &f^{-1}f(x) = x \\end{aligned}",
+        "<strong>(b)(i)</strong> The quadratic $g(x) = x^2 - 4$ is many-to-one over $\\mathbb{R}$. Restricting to one side of its vertex at $x = 0$ gives a valid domain: \\begin{aligned} &x \\ge 0 \\end{aligned}",
+        "<strong>(b)(ii)</strong> To find $h^{-1}(x)$, let $y = h(x)$ and make $x$ the subject: \\begin{aligned} &y = \\mathrm{e}^{2x} + 2 \\cr &\\quad \\implies y - 2 = \\mathrm{e}^{2x} \\cr &\\quad \\implies 2x = \\ln(y - 2) \\cr &\\quad \\implies x = 0.5\\ln(y - 2) \\end{aligned} Swapping variables gives: \\begin{aligned} &h^{-1}(x) = 0.5\\ln(x - 2) \\end{aligned} for $x > 2$.",
+        "Key features for the sketch:<br><br>• $h(x) = \\mathrm{e}^{2x} + 2$ has a horizontal asymptote at $y = 2$ and crosses the $y$-axis at $(0, 3)$.<br><br>• $h^{-1}(x) = 0.5\\ln(x - 2)$ has a vertical asymptote at $x = 2$ and crosses the $x$-axis at $(3, 0)$.<br><br>• The curves reflect across $y = x$.<br><br><img src='images/Pure_SVGs/004716_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b)(iii)</strong> To find $gh(x)$, substitute $h(x)$ into $g(x)$: \\begin{aligned} &gh(x) \\cr &\\quad = (\\mathrm{e}^{2x} + 2)^2 - 4 \\cr &\\quad = \\mathrm{e}^{4x} + 4\\mathrm{e}^{2x} + 4 - 4 \\cr &\\quad = \\mathrm{e}^{4x} + 4\\mathrm{e}^{2x} \\end{aligned}",
+        "Final Answer: $$h^{-1}(x) = 0.5\\ln(x - 2)$$ and $$gh(x) = \\mathrm{e}^{ 4x } + 4\\mathrm{e}^{ 2x }$$"
     ],
     "pi_options": [
         {
             "ans": "$$h^{-1}(x) = \\ln(x - 2)^2$$ and $$gh(x) = \\mathrm{e}^{ 4x }$$",
-            "feedback": "This is incorrect. When rearranging $2x = \\ln(y - 2)$, dividing by $2$ yields $0.5\\ln(y - 2)$, which is equivalent to $\\ln\\sqrt{ y - 2 }$, not $\\ln(y - 2)^2$. Additionally, when expanding $(\\mathrm{e}^{ 2x } + 2)^2$, you must include the middle term $4\\mathrm{e}^{ 2x }$ rather than just squaring the individual terms."
+            "feedback": "This is incorrect. Dividing $\\ln(y - 2)$ by $2$ gives $0.5\\ln(y - 2)$, not $\\ln(y - 2)^2$. Also, squaring $(\\mathrm{e}^{2x} + 2)$ produces a middle term $4\\mathrm{e}^{2x}$."
         },
         {
             "ans": "$$h^{-1}(x) = 0.5\\ln(x + 2)$$ and $$gh(x) = \\mathrm{e}^{ 4x } + 4\\mathrm{e}^{ 2x } + 8$$",
-            "feedback": "This is incorrect. Rearranging $y = \\mathrm{e}^{ 2x } + 2$ gives $y - 2 = \\mathrm{e}^{ 2x }$, which leads to a minus sign inside the logarithm: $0.5\\ln(x - 2)$. Also, when evaluating $gh(x)$, the $+4$ from the expanded quadratic cancels with the $-4$ from the function $g(x)$, leaving no constant term."
+            "feedback": "This is incorrect. Rearranging $y = \\mathrm{e}^{2x} + 2$ yields $y - 2 = \\mathrm{e}^{2x}$, which gives a minus sign inside the logarithm. Also, the $+4$ and $-4$ cancel in $gh(x)$."
         },
         {
             "ans": "$$h^{-1}(x) = 2\\ln(x - 2)$$ and $$gh(x) = \\mathrm{e}^{ 4x } + 4$$",
-            "feedback": "This is incorrect. When isolating $x$ from $2x = \\ln(y - 2)$, you must divide by $2$ (which is a coefficient of $0.5$), not multiply by $2$. For the composite function, expanding the brackets yields intermediate terms that must be fully simplified."
+            "feedback": "This is incorrect. When isolating $x$ from $2x = \\ln(y - 2)$, divide by $2$ to obtain a coefficient of $0.5$, not $2$. Expanding the composite function also yields a non-zero exponential middle term."
         }
     ],
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Expanding Exponential Quadratics",
-        "content": "A very common student slip is expanding $(\\mathrm{e}^{ 2x } + 2)^2$ as $\\mathrm{e}^{ 4x } + 4$. Remember that $(\\mathrm{e}^{ 2x } + 2)^2$ is a perfect square expansion of the form $(a+b)^2 = a^2 + 2ab + b^2$. Always write out the double brackets if you are prone to forgetting the middle term, which in this case is $2(\\mathrm{e}^{ 2x })(2) = 4\\mathrm{e}^{ 2x }$."
+        "content": "A frequent slip is expanding $(\\mathrm{e}^{2x} + 2)^2$ as $\\mathrm{e}^{4x} + 4$. Using $(a+b)^2 = a^2 + 2ab + b^2$, the middle cross-term is $2(\\mathrm{e}^{2x})(2) = 4\\mathrm{e}^{2x}$."
     }
 },
 {
@@ -675,32 +676,33 @@ window.ALEVEL_QUESTIONS = [
         "Graph Sketching"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Explain why the function $f(x) = x^2 - 6x + 9$ with domain $(-\\infty, \\infty)$ does not have an inverse.<br><strong>(b)</strong> The functions $g$ and $h$ are defined by:$$\\begin{aligned} g(x) &= \\frac{ x + 3 }{ x - 3 } \\quad \\text{for } x \\ne 3 \\cr h(x) &= x^2 - 6x + 14 \\end{aligned}$$<strong>(i)</strong> Suggest a domain of the form $x \\ge k$ for $h$ such that $h^{-1}$ exists.<strong>(ii)</strong> Find an expression for $g^{-1}(x)$. Sketch, using the same axes, the graphs of $y = g(x)$ and $y = g^{-1}(x)$, showing clearly their vertical and horizontal asymptotes and any points where the graphs cross the coordinate axes.<strong>(iii)</strong> Find an expression for the composite function $hg(x)$ for $x \\ne 3$.",
+    "question": "<strong>(a)</strong> Explain why the function $f(x) = x^2 - 6x + 9$ with domain $(-\\infty, \\infty)$ does not have an inverse.<br><br><strong>(b)</strong> The functions $g$ and $h$ are defined by: \\begin{aligned} &g(x) = \\dfrac{x + 3}{x - 3} \\quad \\text{for } x \\ne 3 \\cr &h(x) = x^2 - 6x + 14 \\end{aligned} <strong>(i)</strong> Suggest a domain of the form $x \\ge k$ for $h$ such that $h^{-1}$ exists.<br><strong>(ii)</strong> Find an expression for $g^{-1}(x)$. Sketch, using the same axes, the graphs of $y = g(x)$ and $y = g^{-1}(x)$, showing clearly their vertical and horizontal asymptotes and axis intercepts.<br><strong>(iii)</strong> Find an expression for the composite function $hg(x)$ for $x \\ne 3$.",
     "steps": [
-        "<strong>(a)</strong> By factorising the expression, we can rewrite the function as:<br>$$f(x) = (x - 3)^2$$<br>This represents a parabola with its vertex at $x = 3$. Over the unrestricted domain $(-\\infty, \\infty)$, the function is <strong>many-to-one</strong> (for example, $f(2) = f(4) = 1$). Because an inverse function only exists for one-to-one functions, $f$ does not have an inverse.",
-        "<strong>(b)(i)</strong> We can complete the square for $h(x)$ to find its vertex form:<br>\\begin{aligned} h(x) &= x^2 - 6x + 14 \\cr &= (x - 3)^2 - 9 + 14 \\cr &= (x - 3)^2 + 5 \\end{aligned}<br>The vertex is at $(3, 5)$. To restrict the domain of the quadratic function so it becomes one-to-one, we must start at the vertex. Thus, for a domain of the form $x \\ge k$, we choose:<br>$$k = 3$$",
-        "<strong>(b)(ii)</strong> To find $g^{-1}(x)$, we set $y = g(x)$ and rearrange to make $x$ the subject:<br>\\begin{aligned} y &= \\frac{ x + 3 }{ x - 3 } \\cr y(x - 3) &= x + 3 \\cr xy - 3y &= x + 3 \\cr xy - x &= 3y + 3 \\cr x(y - 1) &= 3(y + 1) \\cr x &= \\frac{ 3(y + 1) }{ y - 1 } \\end{aligned}<br>Swapping $x$ and $y$ gives:<br>$$g^{-1}(x) = \\frac{ 3(x + 1) }{ x - 1 }$$<br>(or $\\frac{ 3x + 3 }{ x - 1 }$) for $x \\ne 1$.",
-        "To sketch both curves, we identify their key features:<br>• $g(x) = \\frac{ x + 3 }{ x - 3 }$ has a vertical asymptote at $x = 3$ and a horizontal asymptote at $y = 1$. Its intercepts are $(-3, 0)$ and $(0, -1)$.<br>• $g^{-1}(x) = \\frac{ 3x + 3 }{ x - 1 }$ has a vertical asymptote at $x = 1$ and a horizontal asymptote at $y = 3$. Its intercepts are $(-1, 0)$ and $(0, -3)$.<br>Both curves are perfectly symmetric across the line $y = x$.<br><br><img src='images/Pure_SVGs/004717_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-        "<strong>(b)(iii)</strong> To find $hg(x)$, we substitute $g(x)$ into $h(x)$:<br>\\begin{aligned} hg(x) &= h(g(x)) \\cr &= \\left(\\frac{ x + 3 }{ x - 3 }\\right)^2 - 6\\left(\\frac{ x + 3 }{ x - 3 }\\right) + 14 \\cr &= \\frac{ (x + 3)^2 - 6(x + 3)(x - 3) + 14(x - 3)^2 }{ (x - 3)^2 } \\cr &= \\frac{ (x^2 + 6x + 9) - 6(x^2 - 9) + 14(x^2 - 6x + 9) }{ (x - 3)^2 } \\cr &= \\frac{ x^2 + 6x + 9 - 6x^2 + 54 + 14x^2 - 84x + 126 }{ (x - 3)^2 } \\cr &= \\frac{ 9x^2 - 78x + 189 }{ (x - 3)^2 } \\cr &= \\frac{ 3(3x^2 - 26x + 63) }{ (x - 3)^2 } \\end{aligned}"
+        "<strong>(a)</strong> Factorising gives $f(x) = (x - 3)^2$, which is a parabola with its vertex at $x = 3$. Over $(-\\infty, \\infty)$, $f$ is <strong>many-to-one</strong> (e.g. $f(2) = f(4) = 1$). Since only one-to-one functions have inverses, $f^{-1}$ does not exist.",
+        "<strong>(b)(i)</strong> Completing the square for $h(x)$: \\begin{aligned} &h(x) \\cr &\\quad = (x - 3)^2 - 9 + 14 \\cr &\\quad = (x - 3)^2 + 5 \\end{aligned} The vertex is at $(3, 5)$. To restrict the quadratic domain to make it one-to-one, we choose: \\begin{aligned} &k = 3 \\end{aligned}",
+        "<strong>(b)(ii)</strong> To find $g^{-1}(x)$, let $y = g(x)$ and isolate $x$: \\begin{aligned} &y = \\dfrac{x + 3}{x - 3} \\cr &\\quad \\implies y(x - 3) = x + 3 \\cr &\\quad \\implies xy - 3y = x + 3 \\cr &\\quad \\implies xy - x = 3y + 3 \\cr &\\quad \\implies x(y - 1) = 3(y + 1) \\cr &\\quad \\implies x = \\dfrac{3(y + 1)}{y - 1} \\end{aligned} Swapping variables gives: \\begin{aligned} &g^{-1}(x) = \\dfrac{3x + 3}{x - 1} \\end{aligned} for $x \\ne 1$.",
+        "Key features for the sketch:<br><br>• $g(x) = \\dfrac{x + 3}{x - 3}$ has asymptotes $x = 3$ and $y = 1$, with intercepts $(-3, 0)$ and $(0, -1)$.<br><br>• $g^{-1}(x) = \\dfrac{3x + 3}{x - 1}$ has asymptotes $x = 1$ and $y = 3$, with intercepts $(-1, 0)$ and $(0, -3)$.<br><br>• The curves reflect across $y = x$.<br><br><img src='images/Pure_SVGs/004717_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b)(iii)</strong> To find $hg(x)$, substitute $g(x)$ into $h(x)$: \\begin{aligned} &hg(x) \\cr &\\quad = \\Big(\\dfrac{x + 3}{x - 3}\\Big)^2 - 6\\Big(\\dfrac{x + 3}{x - 3}\\Big) + 14 \\cr &\\quad = \\dfrac{(x + 3)^2 - 6(x^2 - 9) + 14(x - 3)^2}{(x - 3)^2} \\cr &\\quad = \\dfrac{x^2 + 6x + 9 - 6x^2 + 54}{(x - 3)^2} \\cr &\\qquad + \\dfrac{14x^2 - 84x + 126}{(x - 3)^2} \\cr &\\quad = \\dfrac{9x^2 - 78x + 189}{(x - 3)^2} \\cr &\\quad = \\dfrac{3(3x^2 - 26x + 63)}{(x - 3)^2} \\end{aligned}",
+        "Final Answer: $$g^{-1}(x) = \\frac{ 3x + 3 }{ x - 1 }$$ and $$hg(x) = \\frac{ 3(3x^2 - 26x + 63) }{ (x - 3)^2 }$$"
     ],
     "pi_options": [
         {
             "ans": "$$g^{-1}(x) = \\frac{ 3x - 3 }{ x + 1 }$$ and $$hg(x) = \\frac{ 9x^2 - 18x + 189 }{ (x - 3)^2 }$$",
-            "feedback": "This is incorrect. When factorising $xy - x = 3y + 3$, you get $x(y-1) = 3(y+1)$, which leads to a minus sign in the denominator of the inverse: $x-1$, not $x+1$. For the composite function expansion, ensure you expand $-6(x+3)(x-3)$ as $-6(x^2 - 9) = -6x^2 + 54$ and distribute all negative signs carefully."
+            "feedback": "This is incorrect. Factorising $xy - x = 3y + 3$ yields $x(y - 1) = 3(y + 1)$, giving $x - 1$ in the denominator. In $hg(x)$, expand $-6(x+3)(x-3)$ as $-6(x^2 - 9) = -6x^2 + 54$."
         },
         {
             "ans": "$$g^{-1}(x) = \\frac{ x + 3 }{ 3x - 1 }$$ and $$hg(x) = \\frac{ 9x^2 - 78x + 144 }{ (x - 3)^2 }$$",
-            "feedback": "This is incorrect. Reorganising the algebraic fraction requires grouping the $x$ terms on one side and $y$ terms on the other. It appears there was a division error in finding the inverse. For $hg(x)$, ensure that $14(x-3)^2$ is correctly expanded as $14x^2 - 84x + 126$ and added to the numerator."
+            "feedback": "This is incorrect. Reorganising the fraction requires collecting $x$ terms on one side and $y$ terms on the other. For $hg(x)$, expand $14(x - 3)^2$ as $14x^2 - 84x + 126$."
         },
         {
             "ans": "$$g^{-1}(x) = \\frac{ 3x + 3 }{ x - 1 }$$ and $$hg(x) = \\frac{ 9x^2 - 6x + 189 }{ (x - 3)^2 }$$",
-            "feedback": "This is incorrect. While the expression for $g^{-1}(x)$ is correct, the algebraic simplification of $hg(x)$ contains an error in collecting the $x$ terms. The $x$ terms are $+6x$ (from $(x+3)^2$) and $-84x$ (from $14(x-3)^2$), which combine to $-78x$."
+            "feedback": "This is incorrect. While $g^{-1}(x)$ is correct, combining $+6x$ and $-84x$ gives a linear term of $-78x$, not $-6x$."
         }
     ],
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Symmetry of Inverse Asymptotes",
-        "content": "Since an inverse function $f^{-1}(x)$ is a reflection of $f(x)$ across the line $y = x$, all coordinates and features swap places. This means if a rational function has a vertical asymptote at $x = a$ and a horizontal asymptote at $y = b$, its inverse is guaranteed to have a vertical asymptote at $x = b$ and a horizontal asymptote at $y = a$. Spotting this symmetry is an excellent way to self-audit your sketch!"
+        "content": "Because $f^{-1}(x)$ reflects $f(x)$ across $y = x$, coordinates and asymptotes swap. If a curve has asymptotes $x = a$ and $y = b$, its inverse must have asymptotes $x = b$ and $y = a$."
     }
 },
 {
@@ -716,32 +718,33 @@ window.ALEVEL_QUESTIONS = [
         "Composite Equations"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Given that $f(x) = \\ln(x - 2)$ for $x > 2$:<strong>(i)</strong> Write down the range of $f$.<strong>(ii)</strong> Find an expression for $f^{-1}(x)$, stating its domain.<br><strong>(b)</strong> The functions $g$ and $h$ are defined by:$$\\begin{aligned} g(x) &= 3x - 2 \\quad \\text{for } x \\in \\mathbb{R} \\cr h(x) &= \\ln(x + 1) \\quad \\text{for } x > -1 \\end{aligned}$$<strong>(i)</strong> Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$. Indicate clearly any asymptotes and axis intercepts.<strong>(ii)</strong> Find an expression for the composite function $gh(x)$, stating its domain and range.<strong>(iii)</strong> Solve the equation $gh(x) = 4$.",
+    "question": "<strong>(a)</strong> Given that $f(x) = \\ln(x - 2)$ for $x > 2$:<br><strong>(i)</strong> Write down the range of $f$.<br><strong>(ii)</strong> Find an expression for $f^{-1}(x)$, stating its domain.<br><br><strong>(b)</strong> The functions $g$ and $h$ are defined by: \\begin{aligned} &g(x) = 3x - 2 \\quad \\text{for } x \\in \\mathbb{R} \\cr &h(x) = \\ln(x + 1) \\quad \\text{for } x > -1 \\end{aligned} <strong>(i)</strong> Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$, indicating clearly any asymptotes and axis intercepts.<br><strong>(ii)</strong> Find an expression for the composite function $gh(x)$, stating its domain and range.<br><strong>(iii)</strong> Solve the equation $gh(x) = 4$.",
     "steps": [
-        "<strong>(a)(i)</strong> The natural logarithmic function $\\ln(X)$ takes all real values as its argument increases. Thus, the range of $f(x) = \\ln(x - 2)$ is:<br>$$f(x) \\in \\mathbb{R}$$",
-        "<strong>(a)(ii)</strong> To find $f^{-1}(x)$, we set $y = \\ln(x - 2)$ and make $x$ the subject:<br>\\begin{aligned} y &= \\ln(x - 2) \\cr \\mathrm{e}^{ y } &= x - 2 \\cr x &= \\mathrm{e}^{ y } + 2 \\end{aligned}<br>Swapping variables gives:<br>$$f^{-1}(x) = \\mathrm{e}^{ x } + 2$$<br>The domain of $f^{-1}$ is the range of $f$, which is:<br>$$x \\in \\mathbb{R}$$",
-        "<strong>(b)(i)</strong> Key features for the sketches:<br>• $h(x) = \\ln(x + 1)$ has a vertical asymptote at $x = -1$ and crosses the coordinate axes at the origin $(0, 0)$.<br>• $h^{-1}(x) = \\mathrm{e}^{ x } - 1$ has a horizontal asymptote at $y = -1$ and also crosses at the origin $(0, 0)$.<br>These curves are symmetrical reflections across the diagonal $y = x$.<br><br><img src='images/Pure_SVGs/004718_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-        "<strong>(b)(ii)</strong> To find the composite function $gh(x)$, we substitute $h(x)$ into $g(x)$:<br>$$gh(x) = 3\\ln(x + 1) - 2$$<br>• The domain of $gh$ is the same as the domain of $h$, which is:<br>$$x > -1$$<br>• Since the range of $h$ is $\\mathbb{R}$ and $g$ is a linear function defined on all reals, the range of $gh$ is:<br>$$gh(x) \\in \\mathbb{R}$$",
-        "<strong>(b)(iii)</strong> To solve $gh(x) = 4$, we set our composite expression equal to $4$:<br>\\begin{aligned} 3\\ln(x + 1) - 2 &= 4 \\cr 3\\ln(x + 1) &= 6 \\cr \\ln(x + 1) &= 2 \\cr x + 1 &= \\mathrm{e}^{ 2 } \\cr x &= \\mathrm{e}^{ 2 } - 1 \\end{aligned}"
+        "<strong>(a)(i)</strong> The logarithmic function $\\ln(X)$ takes all real values, so the range of $f(x) = \\ln(x - 2)$ is: \\begin{aligned} &f(x) \\in \\mathbb{R} \\end{aligned}",
+        "<strong>(a)(ii)</strong> To find $f^{-1}(x)$, let $y = \\ln(x - 2)$ and make $x$ the subject: \\begin{aligned} &y = \\ln(x - 2) \\cr &\\quad \\implies \\mathrm{e}^y = x - 2 \\cr &\\quad \\implies x = \\mathrm{e}^y + 2 \\end{aligned} Swapping variables gives $f^{-1}(x) = \\mathrm{e}^x + 2$ with domain: \\begin{aligned} &x \\in \\mathbb{R} \\end{aligned}",
+        "<strong>(b)(i)</strong> Key features for the sketch:<br><br>• $h(x) = \\ln(x + 1)$ has a vertical asymptote at $x = -1$ and passes through $(0, 0)$.<br><br>• $h^{-1}(x) = \\mathrm{e}^x - 1$ has a horizontal asymptote at $y = -1$ and passes through $(0, 0)$.<br><br>• The curves reflect across $y = x$.<br><br><img src='images/Pure_SVGs/004718_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b)(ii)</strong> Substituting $h(x)$ into $g(x)$ gives: \\begin{aligned} &gh(x) = 3\\ln(x + 1) - 2 \\end{aligned} The domain is $x > -1$, and the range is $gh(x) \\in \\mathbb{R}$.",
+        "<strong>(b)(iii)</strong> We solve $gh(x) = 4$: \\begin{aligned} &3\\ln(x + 1) - 2 = 4 \\cr &\\quad \\implies 3\\ln(x + 1) = 6 \\cr &\\quad \\implies \\ln(x + 1) = 2 \\cr &\\quad \\implies x + 1 = \\mathrm{e}^2 \\cr &\\quad \\implies x = \\mathrm{e}^2 - 1 \\end{aligned}",
+        "Final Answer: $$f^{-1}(x) = \\mathrm{e}^{ x } + 2$$ and $$x = \\mathrm{e}^{ 2 } - 1$$"
     ],
     "pi_options": [
         {
             "ans": "$$f^{-1}(x) = \\mathrm{e}^{ x - 2 }$$ and $$x = \\mathrm{e}^{ 2 }$$",
-            "feedback": "This is incorrect. When raising $y = \\ln(x-2)$ to the base of $\\mathrm{e}$, you get $\\mathrm{e}^{ y } = x - 2$, which means $x = \\mathrm{e}^{ y } + 2$, not $\\mathrm{e}^{ y-2 }$. In part (b)(iii), when solving $x+1 = \\mathrm{e}^{ 2 }$, you must subtract $1$ from both sides, yielding $\\mathrm{e}^{ 2 } - 1$."
+            "feedback": "This is incorrect. Exponentiating $y = \\ln(x - 2)$ gives $\\mathrm{e}^y = x - 2$, so $x = \\mathrm{e}^y + 2$. When solving $x + 1 = \\mathrm{e}^2$, subtract $1$ from both sides to obtain $\\mathrm{e}^2 - 1$."
         },
         {
             "ans": "$$f^{-1}(x) = \\mathrm{e}^{ x } - 2$$ and $$x = \\mathrm{e}^{ 6 } - 1$$",
-            "feedback": "This is incorrect. Isolating $x$ from $\\mathrm{e}^{ y } = x - 2$ requires adding $2$ to both sides, which yields $\\mathrm{e}^{ x } + 2$. Additionally, when solving $3\\ln(x+1) = 6$, you must divide by $3$ first to get $\\ln(x+1) = 2$ before taking exponentials, rather than exponentiating immediately."
+            "feedback": "This is incorrect. Isolating $x$ gives $\\mathrm{e}^x + 2$. When solving $3\\ln(x + 1) = 6$, divide by $3$ first to get $\\ln(x + 1) = 2$ before exponentiating."
         },
         {
             "ans": "$$f^{-1}(x) = \\ln(x + 2)$$ and $$x = \\mathrm{e}^{ 2 } + 1$$",
-            "feedback": "This is incorrect. The inverse of a natural log function is an exponential function, not another log. For part (b)(iii), the final step of $x+1 = \\mathrm{e}^{ 2 }$ requires subtracting $1$ from both sides, not adding."
+            "feedback": "This is incorrect. The inverse of a natural logarithm is an exponential function. In part (b)(iii), solving $x + 1 = \\mathrm{e}^2$ yields $x = \\mathrm{e}^2 - 1$."
         }
     ],
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Composite Domain and Range Rules",
-        "content": "Always remember the golden rules for composite functions $gh(x)$:1. The <strong>domain</strong> of $gh$ is strictly a subset of the domain of the inner function, $h(x)$.2. The <strong>range</strong> of $gh$ is found by evaluating the outer function, $g(x)$, over the active range of the inner function, $h(x)$."
+        "content": "For a composite function $gh(x)$:<br><br>1. The <strong>domain</strong> of $gh$ is a subset of the domain of the inner function $h(x)$.<br><br>2. The <strong>range</strong> of $gh$ is found by evaluating the outer function $g$ across the active range of $h$."
     }
 },
 {
@@ -757,31 +760,32 @@ window.ALEVEL_QUESTIONS = [
         "Range"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> State why a domain restriction is necessary for the function $f(x) = \\sin x$ to have an inverse, and write down the standard restricted domain used to define $f^{-1}(x) = \\arcsin x$.<br><strong>(b)</strong> The functions $g$ and $h$ are defined by:$$\\begin{aligned} g(x) &= 2x^2 + 1 \\quad \\text{for } x \\in \\mathbb{R} \\cr h(x) &= \\cos x \\quad \\text{for } 0 \\le x \\le \\pi \\end{aligned}$$<strong>(i)</strong> Find an expression for $h^{-1}(x)$, stating its domain and range. Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$.<strong>(ii)</strong> Determine an expression for the composite function $gh(x)$, expressing your answer in terms of $\\cos 2x$.<strong>(iii)</strong> Find the range of the composite function $gh$.",
+    "question": "<strong>(a)</strong> State why a domain restriction is necessary for $f(x) = \\sin x$ to have an inverse, and write down the standard restricted domain used to define $f^{-1}(x) = \\arcsin x$.<br><br><strong>(b)</strong> The functions $g$ and $h$ are defined by: \\begin{aligned} &g(x) = 2x^2 + 1 \\quad \\text{for } x \\in \\mathbb{R} \\cr &h(x) = \\cos x \\quad \\text{for } 0 \\le x \\le \\pi \\end{aligned} <strong>(i)</strong> Find an expression for $h^{-1}(x)$, stating its domain and range. Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$.<br><strong>(ii)</strong> Determine an expression for the composite function $gh(x)$ in terms of $\\cos 2x$.<br><strong>(iii)</strong> Find the range of $gh$.",
     "steps": [
-        "<strong>(a)</strong> The function $f(x) = \\sin x$ is periodic and therefore <strong>many-to-one</strong> (for example, $\\sin(0) = \\sin(\\pi) = 0$). An inverse function only exists if a function is one-to-one. To define $\\arcsin x$, the standard restricted domain used is:<br>$$-\\frac{ \\pi }{ 2 } \\le x \\le \\frac{ \\pi }{ 2 }$$",
-        "<strong>(b)(i)</strong> The inverse of the restricted cosine function $h(x) = \\cos x$ is:<br>$$h^{-1}(x) = \\arccos x$$<br>• The domain of $h^{-1}$ is the range of $h$, which is:<br>$$-1 \\le x \\le 1$$<br>• The range of $h^{-1}$ is the domain of $h$, which is:<br>$$0 \\le y \\le \\pi$$<br>The curves of $h(x)$ and $h^{-1}(x)$ are shown below:<br><br><img src='images/Pure_SVGs/004719_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-        "<strong>(b)(ii)</strong> To find $gh(x)$, we substitute $h(x)$ into $g(x)$:<br>$$gh(x) = 2\\cos^2 x + 1$$<br>We can rewrite this in terms of the double-angle identity for cosine, $\\cos 2x = 2\\cos^2 x - 1$, which gives $2\\cos^2 x = \\cos 2x + 1$. Substituting this in:<br>\\begin{aligned} gh(x) &= (\\cos 2x + 1) + 1 \\cr &= \\cos 2x + 2 \\end{aligned}",
-        "<strong>(b)(iii)</strong> Since the domain of $h$ is $0 \\le x \\le \\pi$, the argument of our double-angle expression, $2x$, spans $0 \\le 2x \\le 2\\pi$. Over a full period, the range of the cosine function is:<br>$$-1 \\le \\cos 2x \\le 1$$<br>Adding $2$ to all parts of the inequality gives:<br>$$1 \\le \\cos 2x + 2 \\le 3$$<br>Thus, the range of the composite function $gh$ is:<br>$$1 \\le gh(x) \\le 3$$"
+        "<strong>(a)</strong> The function $f(x) = \\sin x$ is periodic and many-to-one. Inverses only exist for one-to-one functions. The standard restricted domain is: \\begin{aligned} &-\\dfrac{\\pi}{2} \\le x \\le \\dfrac{\\pi}{2} \\end{aligned}",
+        "<strong>(b)(i)</strong> The inverse of $h(x) = \\cos x$ is: \\begin{aligned} &h^{-1}(x) = \\arccos x \\end{aligned} The domain is $-1 \\le x \\le 1$, and the range is $0 \\le y \\le \\pi$.<br><br><img src='images/Pure_SVGs/004719_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b)(ii)</strong> Substituting $h(x)$ into $g(x)$: \\begin{aligned} &gh(x) = 2\\cos^2 x + 1 \\end{aligned} Using the double-angle identity $2\\cos^2 x = \\cos 2x + 1$: \\begin{aligned} &gh(x) \\cr &\\quad = (\\cos 2x + 1) + 1 \\cr &\\quad = \\cos 2x + 2 \\end{aligned}",
+        "<strong>(b)(iii)</strong> For $0 \\le x \\le \\pi$, the argument $2x$ covers $0 \\le 2x \\le 2\\pi$. Since $-1 \\le \\cos 2x \\le 1$, adding $2$ gives: \\begin{aligned} &1 \\le \\cos 2x + 2 \\le 3 \\end{aligned} Thus, the range of $gh$ is $[1, 3]$.",
+        "Final Answer: $$gh(x) = \\cos 2x + 2$$ and Range: $$[1, 3]$$"
     ],
     "pi_options": [
         {
             "ans": "$$gh(x) = \\cos 2x + 1$$ and Range: $$[0, 2]$$",
-            "feedback": "This is incorrect. The double-angle identity is $2\\cos^2 x = \\cos 2x + 1$. Since $gh(x) = 2\\cos^2 x + 1$, substituting the identity gives $(\\cos 2x + 1) + 1 = \\cos 2x + 2$. It looks like the extra $+1$ in the function definition was omitted."
+            "feedback": "This is incorrect. Using $2\\cos^2 x = \\cos 2x + 1$, $gh(x) = (\\cos 2x + 1) + 1 = \\cos 2x + 2$. The additional $+1$ in the function was omitted."
         },
         {
             "ans": "$$gh(x) = \\cos 2x + 3$$ and Range: $$[2, 4]$$",
-            "feedback": "This is incorrect. Applying the identity $2\\cos^2 x = \\cos 2x + 1$ directly leads to $gh(x) = \\cos 2x + 2$. An error in double-angle substitution led to an incorrect constant term, shifting the range upwards."
+            "feedback": "This is incorrect. Substituting $2\\cos^2 x = \\cos 2x + 1$ yields a constant term of $+2$, not $+3$."
         },
         {
             "ans": "$$gh(x) = \\cos 2x$$ and Range: $$[-1, 1]$$",
-            "feedback": "This is incorrect. The expression has not been substituted using the correct double-angle identity. Substituting $2\\cos^2 x = \\cos 2x + 1$ is required to simplify $gh(x)$ down to a single trigonometric term."
+            "feedback": "This is incorrect. The constant terms were omitted when applying the identity $2\\cos^2 x = \\cos 2x + 1$."
         }
     ],
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Range of Periodic Composites",
-        "content": "When finding the range of a composite function like $gh(x) = \\cos 2x + 2$, always check the active domain of the input. Because $0 \\le x \\le \\pi$, the argument $2x$ covers the interval $[0, 2\\pi]$. This is a full period, meaning $\\cos 2x$ will achieve its absolute maximum of $1$ and absolute minimum of $-1$. Hence, the range is fully $[1, 3]$."
+        "content": "Because $0 \\le x \\le \\pi$, the argument $2x$ spans $[0, 2\\pi]$. This represents a complete cosine period, achieving both its minimum of $-1$ and maximum of $1$."
     }
 },
 {
@@ -797,32 +801,33 @@ window.ALEVEL_QUESTIONS = [
         "Solving Composite Equations"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> A function $f$ is defined by $f(x) = \\sqrt{ x - 3 } + 2$ for $x \\ge 3$.<strong>(i)</strong> State the range of $f$.<strong>(ii)</strong> Find an expression for $f^{-1}(x)$, stating its domain.<br><strong>(b)</strong> The functions $g$ and $h$ are defined by:$$\\begin{aligned} g(x) &= 2x - 5 \\quad \\text{for } x \\in \\mathbb{R} \\cr h(x) &= \\sqrt{ 2x + 1 } \\quad \\text{for } x \\ge -0.5 \\end{aligned}$$<strong>(i)</strong> Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$. Indicate clearly the coordinates of any points of intersection with the axes and any end-points.<strong>(ii)</strong> Determine an expression for the composite function $hg(x)$, and find the domain of $hg$.<strong>(iii)</strong> Solve the equation $hg(x) = g(x)$.",
+    "question": "<strong>(a)</strong> A function $f$ is defined by $f(x) = \\sqrt{x - 3} + 2$ for $x \\ge 3$.<br><strong>(i)</strong> State the range of $f$.<br><strong>(ii)</strong> Find an expression for $f^{-1}(x)$, stating its domain.<br><br><strong>(b)</strong> The functions $g$ and $h$ are defined by: \\begin{aligned} &g(x) = 2x - 5 \\quad \\text{for } x \\in \\mathbb{R} \\cr &h(x) = \\sqrt{2x + 1} \\quad \\text{for } x \\ge -0.5 \\end{aligned} <strong>(i)</strong> Sketch, using the same axes, the graphs of $y = h(x)$ and $y = h^{-1}(x)$, showing coordinates of axis intercepts and end-points.<br><strong>(ii)</strong> Determine an expression for $hg(x)$ and find its domain.<br><strong>(iii)</strong> Solve the equation $hg(x) = g(x)$.",
     "steps": [
-        "<strong>(a)(i)</strong> For the domain $x \\ge 3$, the square root term $\\sqrt{ x - 3 }$ is always greater than or equal to $0$. Therefore, $f(x) = \\sqrt{ x - 3 } + 2 \\ge 2$. The range is:<br>$$f(x) \\ge 2$$",
-        "<strong>(a)(ii)</strong> To find $f^{-1}(x)$, we set $y = \\sqrt{ x - 3 } + 2$ and make $x$ the subject:<br>\\begin{aligned} y &= \\sqrt{ x - 3 } + 2 \\cr y - 2 &= \\sqrt{ x - 3 } \\cr (y - 2)^2 &= x - 3 \\cr x &= (y - 2)^2 + 3 \\end{aligned}<br>Swapping variables gives:<br>$$f^{-1}(x) = (x - 2)^2 + 3$$<br>The domain of $f^{-1}$ is the range of $f$, which is:<br>$$x \\ge 2$$",
-        "<strong>(b)(i)</strong> Key features for the sketches:<br>• $h(x) = \\sqrt{ 2x + 1 }$ starts at its end-point $(-0.5, 0)$ and crosses the $y$-axis at $(0, 1)$.<br>• $h^{-1}(x) = 0.5(x^2 - 1)$ for $x \\ge 0$ starts at its end-point $(0, -0.5)$ and crosses the $x$-axis at $(1, 0)$.<br>Both curves intersect each other precisely on the line $y = x$ at the point $(1+\\sqrt{ 2 }, 1+\\sqrt{ 2 })$.<br><br><img src='images/Pure_SVGs/004720_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
-        "<strong>(b)(ii)</strong> To find the composite function $hg(x)$, we substitute $g(x)$ into $h(x)$:<br>\\begin{aligned} hg(x) &= \\sqrt{ 2(2x - 5) + 1 } \\cr &= \\sqrt{ 4x - 9 } \\end{aligned}<br>For the square root to be defined, the term inside must be non-negative:<br>$$4x - 9 \\ge 0 \\implies x \\ge 2.25$$<br>Thus, the domain of $hg$ is:<br>$$x \\ge 2.25$$",
-        "<strong>(b)(iii)</strong> To solve $hg(x) = g(x)$, we set the two expressions equal:<br>$$\\sqrt{ 4x - 9 } = 2x - 5$$<br>Squaring both sides gives:<br>\\begin{aligned} 4x - 9 &= (2x - 5)^2 \\cr 4x - 9 &= 4x^2 - 20x + 25 \\cr 4x^2 - 24x + 34 &= 0 \\cr 2x^2 - 12x + 17 &= 0 \\end{aligned}<br>Applying the quadratic formula:<br>$$x = \\frac{ 12 \\pm \\sqrt{ (-12)^2 - 4(2)(17) } }{ 2(2) } = \\frac{ 12 \\pm \\sqrt{ 8 } }{ 4 } = 3 \\pm \\frac{ \\sqrt{ 2 } }{ 2 }$$<br>Since $g(x) = 2x - 5$ must be non-negative for the square root equality to hold (as $\\sqrt{ 4x - 9 } \\ge 0$), we require $2x - 5 \\ge 0 \\implies x \\ge 2.5$.<br>• For $3 + \\frac{ \\sqrt{ 2 } }{ 2 } \\approx 3.71 \\ge 2.5$ (Valid)<br>• For $3 - \\frac{ \\sqrt{ 2 } }{ 2 } \\approx 2.29 < 2.5$ (Invalid, yields a negative value for the RHS).<br>Thus, the only valid solution is:<br>$$x = 3 + \\frac{ \\sqrt{ 2 } }{ 2 }$$"
+        "<strong>(a)(i)</strong> Since $\\sqrt{x - 3} \\ge 0$ for $x \\ge 3$, the range of $f(x) = \\sqrt{x - 3} + 2$ is: \\begin{aligned} &f(x) \\ge 2 \\end{aligned}",
+        "<strong>(a)(ii)</strong> To find $f^{-1}(x)$, let $y = \\sqrt{x - 3} + 2$ and isolate $x$: \\begin{aligned} &y - 2 = \\sqrt{x - 3} \\cr &\\quad \\implies (y - 2)^2 = x - 3 \\cr &\\quad \\implies x = (y - 2)^2 + 3 \\end{aligned} Swapping variables gives $f^{-1}(x) = (x - 2)^2 + 3$ with domain: \\begin{aligned} &x \\ge 2 \\end{aligned}",
+        "<strong>(b)(i)</strong> Key features for the sketch:<br><br>• $h(x) = \\sqrt{2x + 1}$ has end-point $(-0.5, 0)$ and $y$-intercept $(0, 1)$.<br><br>• $h^{-1}(x) = 0.5(x^2 - 1)$ for $x \\ge 0$ has end-point $(0, -0.5)$ and $x$-intercept $(1, 0)$.<br><br>• The curves intersect along $y = x$.<br><br><img src='images/Pure_SVGs/004720_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b)(ii)</strong> Substituting $g(x)$ into $h(x)$: \\begin{aligned} &hg(x) \\cr &\\quad = \\sqrt{2(2x - 5) + 1} \\cr &\\quad = \\sqrt{4x - 9} \\end{aligned} For the square root to be real: \\begin{aligned} &4x - 9 \\ge 0 \\cr &\\quad \\implies x \\ge 2.25 \\end{aligned}",
+        "<strong>(b)(iii)</strong> To solve $hg(x) = g(x)$: \\begin{aligned} &\\sqrt{4x - 9} = 2x - 5 \\cr &\\quad \\implies 4x - 9 = (2x - 5)^2 \\cr &\\quad \\implies 4x - 9 = 4x^2 - 20x + 25 \\cr &\\quad \\implies 4x^2 - 24x + 34 = 0 \\cr &\\quad \\implies 2x^2 - 12x + 17 = 0 \\end{aligned} Solving via the quadratic formula: \\begin{aligned} &x = \\dfrac{12 \\pm \\sqrt{8}}{4} \\cr &\\quad = 3 \\pm \\dfrac{\\sqrt{2}}{2} \\end{aligned} Since $\\sqrt{4x - 9} \\ge 0$, we require $2x - 5 \\ge 0 \\implies x \\ge 2.5$. Thus, reject $3 - 0.5\\sqrt{2} \\approx 2.29$, leaving: \\begin{aligned} &x = 3 + \\dfrac{\\sqrt{2}}{2} \\end{aligned}",
+        "Final Answer: $$x = 3 + \\frac{ \\sqrt{ 2 } }{ 2 }$$"
     ],
     "pi_options": [
         {
             "ans": "$$x = 3 - \\frac{ \\sqrt{ 2 } }{ 2 }$$ and $$x = 3 + \\frac{ \\sqrt{ 2 } }{ 2 }$$",
-            "feedback": "This is incorrect. While both are algebraic roots of the quadratic equation $2x^2 - 12x + 17 = 0$, you must verify them in the original non-linear equation. Since a principal square root is non-negative, the right-hand side $2x-5$ must be $\\ge 0 \\implies x \\ge 2.5$. The root $3 - 0.5\\sqrt{ 2 } \\approx 2.29$ fails this restriction and is extraneous."
+            "feedback": "This is incorrect. A principal square root cannot be negative, so $2x - 5 \\ge 0 \\implies x \\ge 2.5$. The root $3 - 0.5\\sqrt{2} \\approx 2.29$ is extraneous."
         },
         {
             "ans": "$$x = \\frac{ 12 \\pm \\sqrt{ 10 } }{ 4 }$$",
-            "feedback": "This is incorrect. When evaluating the discriminant $\\Delta = b^2 - 4ac$ for the quadratic $2x^2 - 12x + 17 = 0$, we have $(-12)^2 - 4(2)(17) = 144 - 136 = 8$. Simplifying $\\sqrt{ 8 }$ yields $2\\sqrt{ 2 }$, which leads to $3 \\pm 0.5\\sqrt{ 2 }$. It seems an arithmetic slip occurred in the discriminant calculation."
+            "feedback": "This is incorrect. The discriminant is $(-12)^2 - 4(2)(17) = 144 - 136 = 8$, not $10$."
         },
         {
             "ans": "$$x = 3 - \\frac{ \\sqrt{ 2 } }{ 2 }$$",
-            "feedback": "This is incorrect. This is the extraneous root which must be rejected because substituting it back into the original equation results in a negative value on the right-hand side, which is impossible for a real principal square root."
+            "feedback": "This is incorrect. This is the extraneous root that yields a negative right-hand side and must be rejected."
         }
     ],
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Extraneous Roots in Radical Equations",
-        "content": "Whenever you solve an equation by squaring both sides (such as $\\sqrt{ f(x) } = g(x)$), you are introducing the possibility of **extraneous roots**. Squaring eliminates the sign of the expression, meaning that solutions to $-\\sqrt{ f(x) } = g(x)$ will also appear. Always substitute your algebraic answers back into the original un-squared equation to verify their validity."
+        "content": "Squaring both sides of an equation can introduce extraneous roots. Always check algebraic solutions in the original un-squared equation."
     }
 },
 {
