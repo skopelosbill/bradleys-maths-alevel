@@ -1582,7 +1582,7 @@ window.ALEVEL_QUESTIONS = [
     "question": "A curve is defined implicitly by: \\begin{aligned} &x^2 \\ln y + 4xy + y^2 = 5 \\end{aligned} Find the equation of the normal to the curve at the point $(1, 1)$, giving your answer in the form $ax + by + c = 0$, where $a, b, c$ are integers.",
     "steps": [
         "Differentiating with respect to $x$ using the product rule: \\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(x^2\\ln y + 4xy + y^2) = 0 \\cr &\\quad \\implies 2x\\ln y + x^2\\Big(\\dfrac{1}{y}\\Big)\\dfrac{\\text{d}y}{\\text{d}x} \\cr &\\qquad + 4y + 4x\\dfrac{\\text{d}y}{\\text{d}x} + 2y\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\end{aligned}",
-        "Substitute $(1, 1)$ to find the tangent gradient $\\dfrac{\\text{d}y}{\\text{d}x}$: \\begin{aligned} &2(1)\\ln(1) + 1^2\\Big(\\dfrac{1}{1}\\Big)\\dfrac{\\text{d}y}{\\text{d}x} \\cr &\\qquad + 4(1) + 4(1)\\dfrac{\\text{d}y}{\\text{d}x} + 2(1)\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\cr &\\quad \\implies 0 + \\dfrac{\\text{d}y}{\\text{d}x} + 4 + 4\\dfrac{\\text{d}y}{\\text{d}x} + 2\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\cr &\\quad \\implies 4 + 7\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\cr &\\quad \\implies \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{4}{7} \\end{aligned}",
+        "Substitute $(1, 1)$ to find the tangent gradient $\\dfrac{\\text{d}y}{\\text{d}x}$: \\begin{aligned} &2(1)\\ln(1) + 1^2\\Big(\\dfrac{1}{1}\\Big)\\dfrac{\\text{d}y}{\\text{d}x} \\cr &\\qquad + 4(1) + 4(1)\\dfrac{\\text{d}y}{\\text{d}x} \\cr &\\qquad \\qquad+ 2(1)\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\cr &\\quad \\implies 0 + \\dfrac{\\text{d}y}{\\text{d}x} + 4 + 4\\dfrac{\\text{d}y}{\\text{d}x}\\cr &\\qquad \\qquad + 2\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\cr &\\quad \\implies 4 + 7\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\cr &\\quad \\implies \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{4}{7} \\end{aligned}",
         "The normal gradient $m_n$ is the negative reciprocal of the tangent gradient: \\begin{aligned} &m_n = -\\dfrac{1}{-\\frac{4}{7}} \\cr &\\quad = \\dfrac{7}{4} \\end{aligned}",
         "Using $(1, 1)$ with gradient $m_n = \\dfrac{7}{4}$: \\begin{aligned} &y - 1 = \\dfrac{7}{4}(x - 1) \\cr &\\quad \\implies 4(y - 1) = 7(x - 1) \\cr &\\quad \\implies 4y - 4 = 7x - 7 \\cr &\\quad \\implies 7x - 4y - 3 = 0 \\end{aligned}",
         "Final Answer: $$7x - 4y - 3 = 0$$"
@@ -1660,12 +1660,13 @@ window.ALEVEL_QUESTIONS = [
         "Newton-Raphson Method"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:$$x - 2 = \\sin x$$has only one root.<br><strong>(b)</strong> Starting with $x_0 = 2.5$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation: \\begin{aligned} &x - 2 = \\sin x \\end{aligned} has only one root.<br><br><strong>(b)</strong> Starting with $x_0 = 2.5$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
     "steps": [
-        "To show that the equation has only one root, rewrite it as $x - 2 = \\sin x$ and sketch the curves $y = x - 2$ and $y = \\sin x$:<br><br><img src='images/Pure_SVGs/004741_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>The line $y = x - 2$ has a gradient of $1$ and crosses the $y$-axis at $(0, -2)$. The wave $y = \\sin x$ has a maximum gradient of $1$ (at $x = 0$) and oscillates between $-1$ and $1$. As shown in the sketch, the graphs intersect at exactly one point, so there is only one root, $\\alpha$.",
-        "Define $f(x) = x - 2 - \\sin x$. To apply the Newton-Raphson method, we first find the derivative, $f'(x)$:\\begin{aligned} f'(x) &= 1 - \\cos x \\end{aligned}Now set up the Newton-Raphson iteration formula:\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ x_{ n } - 2 - \\sin x_{ n } }{ 1 - \\cos x_{ n } } \\end{aligned}",
-        "Perform the iterations using radians, starting with $x_0 = 2.5$:\\begin{aligned} x_1 &= 2.5 - \\dfrac{ 2.5 - 2 - \\sin(2.5) }{ 1 - \\cos(2.5) } \\cr x_1 &\\approx 2.5 - \\dfrac{ -0.09847 }{ 1.80114 } \\cr x_1 &\\approx 2.55467 \\cr\\cr x_2 &= 2.55467 - \\dfrac{ 2.55467 - 2 - \\sin(2.55467) }{ 1 - \\cos(2.55467) } \\cr x_2 &\\approx 2.55420 \\end{aligned}",
-        "Since the values of $x_1$ and $x_2$ both round to $2.55$ to two decimal places, the root is $\\alpha \\approx 2.55$."
+        "We rewrite the equation as $x - 2 = \\sin x$ and sketch $y = x - 2$ and $y = \\sin x$:<br><br><img src='images/Pure_SVGs/004741_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>The line $y = x - 2$ has gradient $1$ and intercept $(0, -2)$. The curve $y = \\sin x$ oscillates between $-1$ and $1$. The graphs intersect at exactly one point, confirming there is only one root, $\\alpha$.",
+        "Let $f(x) = x - 2 - \\sin x$. Differentiating gives: \\begin{aligned} &f'(x) = 1 - \\cos x \\end{aligned} The Newton-Raphson formula is: \\begin{aligned} &x_{n+1} \\cr &\\quad = x_n - \\dfrac{f(x_n)}{f'(x_n)} \\cr &\\quad = x_n - \\dfrac{x_n - 2 - \\sin x_n}{1 - \\cos x_n} \\end{aligned}",
+        "Evaluating in radians with $x_0 = 2.5$: \\begin{aligned} &x_1 \\cr &\\quad = 2.5 - \\dfrac{2.5 - 2 - \\sin(2.5)}{1 - \\cos(2.5)} \\cr &\\quad \\approx 2.5 - \\dfrac{-0.09847}{1.80114} \\cr &\\quad \\approx 2.55467 \\cr &x_2 \\cr &\\quad \\approx 2.55467 - \\dfrac{-0.00085}{1.83151} \\cr &\\quad \\approx 2.55420 \\end{aligned}",
+        "Both $x_1$ and $x_2$ round to $2.55$ to two decimal places, so the root is $\\alpha \\approx 2.55$.",
+        "Final Answer: $$2.55$$"
     ],
     "pi_options": [
         {
@@ -1700,12 +1701,13 @@ window.ALEVEL_QUESTIONS = [
         "Exponential Functions"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:$$e^x + x = 3$$has only one root.<br><strong>(b)</strong> Starting with $x_0 = 1$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation: \\begin{aligned} &\\mathrm{e}^x + x = 3 \\end{aligned} has only one root.<br><br><strong>(b)</strong> Starting with $x_0 = 1$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
     "steps": [
-        "To show that the equation has only one root, rewrite it as $e^x = 3 - x$ and sketch the curves $y = e^x$ and $y = 3 - x$:<br><br><img src='images/Pure_SVGs/004742_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>The curve $y = e^x$ is strictly increasing, while the straight line $y = 3 - x$ has a gradient of $-1$ and is strictly decreasing. As shown in the sketch, they intersect at exactly one point, proving that there is only one root, $\\alpha$.",
-        "Define $f(x) = e^x + x - 3$. To apply the Newton-Raphson method, we first find the derivative, $f'(x)$:\\begin{aligned} f'(x) &= e^x + 1 \\end{aligned}Now set up the Newton-Raphson iteration formula:\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ e^{ x_{ n } } + x_{ n } - 3 }{ e^{ x_{ n } } + 1 } \\end{aligned}",
-        "Perform the iterations starting with $x_0 = 1$:\\begin{aligned} x_1 &= 1 - \\dfrac{ e^1 + 1 - 3 }{ e^1 + 1 } \\cr x_1 &= 1 - \\dfrac{ e - 2 }{ e + 1 } \\cr x_1 &\\approx 0.80682 \\cr\\cr x_2 &= 0.80682 - \\dfrac{ e^{ 0.80682 } + 0.80682 - 3 }{ e^{ 0.80682 } + 1 } \\cr x_2 &\\approx 0.79212 \\cr\\cr x_3 &= 0.79212 - \\dfrac{ e^{ 0.79212 } + 0.79212 - 3 }{ e^{ 0.79212 } + 1 } \\cr x_3 &\\approx 0.79206 \\end{aligned}",
-        "Since successive iterations converge to $0.79$ to two decimal places, the root is $\\alpha \\approx 0.79$."
+        "We rewrite the equation as $\\mathrm{e}^x = 3 - x$ and sketch $y = \\mathrm{e}^x$ and $y = 3 - x$:<br><br><img src='images/Pure_SVGs/004742_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>The curve $y = \\mathrm{e}^x$ is strictly increasing, while $y = 3 - x$ is strictly decreasing with gradient $-1$. They intersect at exactly one point, confirming there is only one root, $\\alpha$.",
+        "Let $f(x) = \\mathrm{e}^x + x - 3$. Differentiating gives: \\begin{aligned} &f'(x) = \\mathrm{e}^x + 1 \\end{aligned} The Newton-Raphson formula is: \\begin{aligned} &x_{n+1} \\cr &\\quad = x_n - \\dfrac{f(x_n)}{f'(x_n)} \\cr &\\quad = x_n - \\dfrac{\\mathrm{e}^{x_n} + x_n - 3}{\\mathrm{e}^{x_n} + 1} \\end{aligned}",
+        "Performing the iterations with $x_0 = 1$: \\begin{aligned} &x_1 \\cr &\\quad = 1 - \\dfrac{\\mathrm{e}^1 + 1 - 3}{\\mathrm{e}^1 + 1} \\cr &\\quad = 1 - \\dfrac{\\mathrm{e} - 2}{\\mathrm{e} + 1} \\cr &\\quad \\approx 0.80682 \\cr &x_2 \\cr &\\quad \\approx 0.80682 - \\dfrac{0.04753}{3.24072} \\cr &\\quad \\approx 0.79212 \\cr &x_3 \\cr &\\quad \\approx 0.79212 - \\dfrac{0.00018}{3.20805} \\cr &\\quad \\approx 0.79206 \\end{aligned}",
+        "Successive iterations converge to $0.79$ to two decimal places, so the root is $\\alpha \\approx 0.79$.",
+        "Final Answer: $$0.79$$"
     ],
     "pi_options": [
         {
@@ -1714,17 +1716,17 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$0.75$$",
-            "feedback": "This is caused by an arithmetic slip in the numerator of the Newton-Raphson fraction, such as calculating $e^1 + 1 - 3$ incorrectly."
+            "feedback": "This is caused by an arithmetic slip in the numerator of the Newton-Raphson fraction, such as calculating $\\mathrm{e}^1 + 1 - 3$ incorrectly."
         },
         {
             "ans": "$$0.85$$",
-            "feedback": "This mistake occurs if the derivative is incorrectly calculated as $f'(x) = e^x$ (forgetting to differentiate the $x$ term)."
+            "feedback": "This mistake occurs if the derivative is incorrectly calculated as $f'(x) = \\mathrm{e}^x$, omitting the derivative of $x$."
         }
     ],
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: How Many Iterations Are Enough?",
-        "content": "To guarantee that a root is correct to $2$ decimal places, always iterate until two successive values agree when rounded to that precision. Stopping too early (for instance, after $x_1$) is a very common way to lose marks."
+        "content": "To guarantee that a root is correct to $2$ decimal places, always iterate until two successive values agree when rounded to that precision. Stopping after $x_1$ risks losing accuracy marks."
     }
 },
 {
@@ -1740,12 +1742,13 @@ window.ALEVEL_QUESTIONS = [
         "Logarithmic Functions"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:$$\\ln x = 2 - x$$has only one root.<br><strong>(b)</strong> Starting with $x_0 = 1.5$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation: \\begin{aligned} &\\ln x = 2 - x \\end{aligned} has only one root.<br><br><strong>(b)</strong> Starting with $x_0 = 1.5$, use the Newton-Raphson method to find the value of this root correct to two decimal places.",
     "steps": [
-        "To show that the equation has only one root, sketch the curves $y = \\ln x$ and $y = 2 - x$ for $x > 0$:<br><br><img src='images/Pure_SVGs/004743_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>The logarithmic curve $y = \\ln x$ is strictly increasing, while the straight line $y = 2 - x$ is strictly decreasing. They intersect at exactly one point, proving that there is only one root, $\\alpha$.",
-        "Define $f(x) = \\ln x + x - 2$. To apply the Newton-Raphson method, we first find the derivative, $f'(x)$:\\begin{aligned} f'(x) &= \\dfrac{1}{x} + 1 \\end{aligned}Now set up the Newton-Raphson iteration formula:\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ \\ln x_{ n } + x_{ n } - 2 }{ \\dfrac{1}{x_{ n }} + 1 } \\end{aligned}",
-        "Perform the iterations starting with $x_0 = 1.5$:\\begin{aligned} x_1 &= 1.5 - \\dfrac{ \\ln(1.5) + 1.5 - 2 }{ \\dfrac{1}{1.5} + 1 } \\cr x_1 &\\approx 1.5 - \\dfrac{ -0.09453 }{ 1.66667 } \\cr x_1 &\\approx 1.55672 \\cr\\cr x_2 &= 1.55672 - \\dfrac{ \\ln(1.55672) + 1.55672 - 2 }{ \\dfrac{1}{1.55672} + 1 } \\cr x_2 &\\approx 1.55714 \\end{aligned}",
-        "Since successive iterations converge to $1.56$ to two decimal places, the root is $\\alpha \\approx 1.56$."
+        "We sketch $y = \\ln x$ and $y = 2 - x$ for $x > 0$:<br><br><img src='images/Pure_SVGs/004743_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>The curve $y = \\ln x$ is strictly increasing, while $y = 2 - x$ is strictly decreasing. They intersect at exactly one point, confirming there is only one root, $\\alpha$.",
+        "Let $f(x) = \\ln x + x - 2$. Differentiating gives: \\begin{aligned} &f'(x) = \\dfrac{1}{x} + 1 \\end{aligned} The Newton-Raphson formula is: \\begin{aligned} &x_{n+1} \\cr &\\quad = x_n - \\dfrac{f(x_n)}{f'(x_n)} \\cr &\\quad = x_n - \\dfrac{\\ln x_n + x_n - 2}{\\frac{1}{x_n} + 1} \\end{aligned}",
+        "Performing the iterations with $x_0 = 1.5$: \\begin{aligned} &x_1 \\cr &\\quad = 1.5 - \\dfrac{\\ln(1.5) + 1.5 - 2}{\\frac{1}{1.5} + 1} \\cr &\\quad \\approx 1.5 - \\dfrac{-0.09453}{1.66667} \\cr &\\quad \\approx 1.55672 \\cr &x_2 \\cr &\\quad \\approx 1.55672 - \\dfrac{-0.00069}{1.64238} \\cr &\\quad \\approx 1.55714 \\end{aligned}",
+        "Successive iterations round to $1.56$ to two decimal places, so the root is $\\alpha \\approx 1.56$.",
+        "Final Answer: $$1.56$$"
     ],
     "pi_options": [
         {
@@ -1754,17 +1757,17 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$1.61$$",
-            "feedback": "This mistake happens if you differentiate $\\ln x$ incorrectly (for example, as $\\dfrac{1}{x^2}$), leading to an incorrect derivative in the denominator."
+            "feedback": "This mistake happens if you differentiate $\\ln x$ incorrectly (for example, as $\\frac{1}{x^2}$), leading to an incorrect denominator."
         },
         {
             "ans": "$$1.48$$",
-            "feedback": "This is caused by a sign error on the numerator, subtracting the correction term incorrectly or adding it instead of subtracting."
+            "feedback": "This is caused by a sign error on the numerator, adding the correction fraction instead of subtracting it."
         }
     ],
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Simplifying Complex Fractions",
-        "content": "When dealing with derivatives containing reciprocal terms like $f'(x) = \\dfrac{1}{x} + 1$, you can multiply the numerator and denominator of the Newton-Raphson fraction by $x$ to simplify it algebraically: $x - \\dfrac{x(\\ln x + x - 2)}{1 + x}$. This makes calculator entries much cleaner and less prone to typing errors."
+        "content": "When $f'(x) = \\dfrac{1}{x} + 1$, multiplying the fraction's numerator and denominator by $x$ gives: \\begin{aligned} &x - \\dfrac{x(\\ln x + x - 2)}{1 + x} \\end{aligned} This makes calculator input simpler and reduces keying slips."
     }
 },
 {
@@ -1780,12 +1783,13 @@ window.ALEVEL_QUESTIONS = [
         "Reciprocal Functions"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:$$\\dfrac{1}{x} = x^2 - 1$$has only one positive root.<br><strong>(b)</strong> Starting with $x_0 = 1.3$, apply the Newton-Raphson method to $f(x) = x^2 - 1 - \\dfrac{1}{x}$ to find the value of this root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation: \\begin{aligned} &\\dfrac{1}{x} = x^2 - 1 \\end{aligned} has only one positive root.<br><br><strong>(b)</strong> Starting with $x_0 = 1.3$, apply the Newton-Raphson method to $f(x) = x^2 - 1 - \\dfrac{1}{x}$ to find the value of this root correct to two decimal places.",
     "steps": [
-        "To show that the equation has only one positive root, sketch the curves $y = \\dfrac{1}{x}$ and $y = x^2 - 1$ for $x > 0$:<br><br><img src='images/Pure_SVGs/004744_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>For $x > 0$, the reciprocal curve $y = \\dfrac{1}{x}$ is strictly decreasing, while the parabola $y = x^2 - 1$ is strictly increasing. As shown in the sketch, they intersect at exactly one positive point, proving that there is only one positive root, $\\alpha$.",
-        "We are given $f(x) = x^2 - 1 - \\dfrac{1}{x} = x^2 - 1 - x^{-1}$. Differentiate with respect to $x$ to find $f'(x)$:\\begin{aligned} f'(x) &= 2x + x^{-2} \\cr f'(x) &= 2x + \\dfrac{1}{x^2} \\end{aligned}Now set up the Newton-Raphson iteration formula:\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ x_{ n }^2 - 1 - \\dfrac{1}{x_{ n }} }{ 2x_{ n } + \\dfrac{1}{x_{ n }^2} } \\end{aligned}",
-        "Perform the iterations starting with $x_0 = 1.3$:\\begin{aligned} x_1 &= 1.3 - \\dfrac{ 1.3^2 - 1 - \\dfrac{1}{1.3} }{ 2(1.3) + \\dfrac{1}{1.3^2} } \\cr x_1 &\\approx 1.3 - \\dfrac{ -0.07923 }{ 3.191715 } \\cr x_1 &\\approx 1.32482 \\cr\\cr x_2 &= 1.32482 - \\dfrac{ 1.32482^2 - 1 - \\dfrac{1}{1.32482} }{ 2(1.32482) + \\dfrac{1}{1.32482^2} } \\cr x_2 &\\approx 1.32472 \\end{aligned}",
-        "Since successive iterations round to $1.32$ to two decimal places, the root is $\\alpha \\approx 1.32$."
+        "We sketch $y = \\dfrac{1}{x}$ and $y = x^2 - 1$ for $x > 0$:<br><br><img src='images/Pure_SVGs/004744_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>For $x > 0$, $y = \\dfrac{1}{x}$ is strictly decreasing, while $y = x^2 - 1$ is strictly increasing. They intersect at exactly one positive point, confirming there is only one positive root, $\\alpha$.",
+        "With $f(x) = x^2 - 1 - x^{-1}$, we differentiate with respect to $x$: \\begin{aligned} &f'(x) = 2x + x^{-2} \\cr &\\quad = 2x + \\dfrac{1}{x^2} \\end{aligned} The Newton-Raphson formula is: \\begin{aligned} &x_{n+1} \\cr &\\quad = x_n - \\dfrac{f(x_n)}{f'(x_n)} \\cr &\\quad = x_n - \\dfrac{x_n^2 - 1 - \\frac{1}{x_n}}{2x_n + \\frac{1}{x_n^2}} \\end{aligned}",
+        "Performing the iterations with $x_0 = 1.3$: \\begin{aligned} &x_1 \\cr &\\quad = 1.3 - \\dfrac{1.3^2 - 1 - \\frac{1}{1.3}}{2(1.3) + \\frac{1}{1.3^2}} \\cr &\\quad \\approx 1.3 - \\dfrac{-0.07923}{3.19172} \\cr &\\quad \\approx 1.32482 \\cr &x_2 \\cr &\\quad \\approx 1.32482 - \\dfrac{0.00030}{3.21935} \\cr &\\quad \\approx 1.32472 \\end{aligned}",
+        "Successive iterations round to $1.32$ to two decimal places, so the root is $\\alpha \\approx 1.32$.",
+        "Final Answer: $$1.32$$"
     ],
     "pi_options": [
         {
@@ -1794,7 +1798,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$1.35$$",
-            "feedback": "This mistake happens if you differentiate $-x^{-1}$ incorrectly as $-x^{-2}$, which leads to a minus sign in the derivative: $f'(x) = 2x - \\dfrac{1}{x^2}$."
+            "feedback": "This mistake happens if you differentiate $-x^{-1}$ incorrectly as $-x^{-2}$, leading to $f'(x) = 2x - \\frac{1}{x^2}$."
         },
         {
             "ans": "$$1.28$$",
@@ -1804,7 +1808,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Differentiating Negative Powers",
-        "content": "Take extra care when differentiating terms with negative exponents, such as $-x^{-1}$. According to the power rule, $\\dfrac{\\mathrm{d}}{\\mathrm{d}x}(-x^{-1}) = -(-1)x^{-2} = +x^{-2} = +\\dfrac{1}{x^2}$. A sign slip here is highly penalised in exams."
+        "content": "Take care when differentiating negative powers: $\\dfrac{\\text{d}}{\\text{d}x}(-x^{-1}) = -(-1)x^{-2} = +\\dfrac{1}{x^2}$. A sign slip here will distort the iteration denominator."
     }
 },
 {
@@ -1820,12 +1824,13 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric Equations"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation:$$x^2 = \\cos x$$has only one positive root.<br><strong>(b)</strong> Starting with $x_0 = 0.8$, use the Newton-Raphson method to find the value of this positive root correct to two decimal places.",
+    "question": "<strong>(a)</strong> By drawing suitable graphs, show that the equation: \\begin{aligned} &x^2 = \\cos x \\end{aligned} has only one positive root.<br><br><strong>(b)</strong> Starting with $x_0 = 0.8$, use the Newton-Raphson method to find the value of this positive root correct to two decimal places.",
     "steps": [
-        "To show that the equation has only one positive root, sketch the curves $y = x^2$ and $y = \\cos x$:<br><br><img src='images/Pure_SVGs/004745_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>The parabola $y = x^2$ is symmetric about the $y$-axis and strictly increasing for $x > 0$. The curve $y = \\cos x$ starts at $(0, 1)$ and decreases to $0$ at $x = \\dfrac{\\pi}{2}$. As shown in the sketch, they intersect at exactly one positive point, proving there is only one positive root, $\\alpha$.",
-        "Define $f(x) = x^2 - \\cos x$. Differentiate with respect to $x$ to find $f'(x)$:\\begin{aligned} f'(x) &= 2x - (-\\sin x) \\cr f'(x) &= 2x + \\sin x \\end{aligned}Now set up the Newton-Raphson iteration formula:\\begin{aligned} x_{ n+1 } &= x_{ n } - \\dfrac{ f(x_{ n }) }{ f'(x_{ n }) } \\cr x_{ n+1 } &= x_{ n } - \\dfrac{ x_{ n }^2 - \\cos x_{ n } }{ 2x_{ n } + \\sin x_{ n } } \\end{aligned}",
-        "Perform the iterations using radians, starting with $x_0 = 0.8$:\\begin{aligned} x_1 &= 0.8 - \\dfrac{ 0.8^2 - \\cos(0.8) }{ 2(0.8) + \\sin(0.8) } \\cr x_1 &\\approx 0.8 - \\dfrac{ -0.05670 }{ 2.31735 } \\cr x_1 &\\approx 0.82447 \\cr\\cr x_2 &= 0.82447 - \\dfrac{ 0.82447^2 - \\cos(0.82447) }{ 2(0.82447) + \\sin(0.82447) } \\cr x_2 &\\approx 0.82413 \\end{aligned}",
-        "Since successive iterations round to $0.82$ to two decimal places, the root is $\\alpha \\approx 0.82$."
+        "We sketch $y = x^2$ and $y = \\cos x$:<br><br><img src='images/Pure_SVGs/004745_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>For $x > 0$, $y = x^2$ is strictly increasing from the origin, while $y = \\cos x$ decreases from $(0, 1)$ to $0$ at $x = \\dfrac{\\pi}{2}$. The curves intersect at exactly one positive point, confirming there is only one positive root, $\\alpha$.",
+        "Let $f(x) = x^2 - \\cos x$. Differentiating gives: \\begin{aligned} &f'(x) = 2x - (-\\sin x) \\cr &\\quad = 2x + \\sin x \\end{aligned} The Newton-Raphson formula is: \\begin{aligned} &x_{n+1} \\cr &\\quad = x_n - \\dfrac{f(x_n)}{f'(x_n)} \\cr &\\quad = x_n - \\dfrac{x_n^2 - \\cos x_n}{2x_n + \\sin x_n} \\end{aligned}",
+        "Performing the iterations in radians with $x_0 = 0.8$: \\begin{aligned} &x_1 \\cr &\\quad = 0.8 - \\dfrac{0.8^2 - \\cos(0.8)}{2(0.8) + \\sin(0.8)} \\cr &\\quad \\approx 0.8 - \\dfrac{-0.05670}{2.31735} \\cr &\\quad \\approx 0.82447 \\cr &x_2 \\cr &\\quad \\approx 0.82447 - \\dfrac{0.00080}{2.38317} \\cr &\\quad \\approx 0.82413 \\end{aligned}",
+        "Successive iterations round to $0.82$ to two decimal places, so the positive root is $\\alpha \\approx 0.82$.",
+        "Final Answer: $$0.82$$"
     ],
     "pi_options": [
         {
@@ -1834,7 +1839,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$0.77$$",
-            "feedback": "This is caused by a sign error when differentiating $-\\cos x$. If you incorrectly write $f'(x) = 2x - \\sin x$, your denominator will be incorrect."
+            "feedback": "This is caused by a sign error when differentiating $-\\cos x$. Writing $f'(x) = 2x - \\sin x$ produces an incorrect denominator."
         },
         {
             "ans": "$$0.91$$",
@@ -1844,7 +1849,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Differentiating Negative Trigonometric Terms",
-        "content": "Differentiating $-\\cos x$ involves two negative signs: $\\dfrac{\\mathrm{d}}{\\mathrm{d}x}(-\\cos x) = -(-\\sin x) = +\\sin x$. Forgetting that the derivative of cosine is negative is one of the most common sign mistakes made by students."
+        "content": "Differentiating $-\\cos x$ involves two negative signs: $\\dfrac{\\text{d}}{\\text{d}x}(-\\cos x) = -(-\\sin x) = +\\sin x$. Watch out for this double negative in Newton-Raphson setups."
     }
 },
 {
