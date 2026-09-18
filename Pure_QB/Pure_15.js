@@ -1863,10 +1863,11 @@ window.ALEVEL_QUESTIONS = [
         "Implicit Differentiation"
     ],
     "img": false,
-    "question": "A curve is given by the equation:$$2x^4 + 5y^3 = 10$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "question": "A curve is given by: \\begin{aligned} &2x^4 + 5y^3 = 10 \\end{aligned} By using implicit differentiation, find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $x$ and $y$.",
     "steps": [
-        "Differentiate both sides of the equation with respect to $x$. When differentiating terms in $y$, apply the chain rule by multiplying by $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 2x^4 \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 5y^3 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(10) \\cr 8x^3 + 15y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
-        "Rearrange the equation to isolate the derivative term $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\\begin{aligned} 15y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -8x^3 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{ 8x^3 }{ 15y^2 } \\end{aligned}"
+        "Differentiating both sides with respect to $x$: \\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(2x^4) + \\dfrac{\\text{d}}{\\text{d}x}(5y^3) = 0 \\cr &\\quad \\implies 8x^3 + 15y^2\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\end{aligned}",
+        "Rearranging to isolate $\\dfrac{\\text{d}y}{\\text{d}x}$: \\begin{aligned} &15y^2\\dfrac{\\text{d}y}{\\text{d}x} = -8x^3 \\cr &\\quad \\implies \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{8x^3}{15y^2} \\end{aligned}",
+        "Final Answer: $$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = -\\dfrac{ 8x^3 }{ 15y^2 }$$"
     ],
     "pi_options": [
         {
@@ -1885,7 +1886,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: The Chain Rule Multiplier",
-        "content": "The most fundamental rule of implicit differentiation is that whenever you differentiate a term containing $y$ with respect to $x$, you must multiply by $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ because $y$ is an implicit function of $x$. For instance, $\\dfrac{\\mathrm{d}}{\\mathrm{d}x}(y^3) = 3y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$."
+        "content": "Whenever you differentiate a term containing $y$ with respect to $x$, you must multiply by $\\dfrac{\\text{d}y}{\\text{d}x}$ because $y$ is an implicit function of $x$. For instance, $\\dfrac{\\text{d}}{\\text{d}x}(y^3) = 3y^2\\dfrac{\\text{d}y}{\\text{d}x}$."
     }
 },
 {
@@ -1900,11 +1901,12 @@ window.ALEVEL_QUESTIONS = [
         "Product Rule"
     ],
     "img": false,
-    "question": "A curve is given by the equation:$$y^2 + 2xy - x^3 = 7$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "question": "A curve is given by: \\begin{aligned} &y^2 + 2xy - x^3 = 7 \\end{aligned} By using implicit differentiation, find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $x$ and $y$.",
     "steps": [
-        "Differentiate both sides of the equation with respect to $x$. Apply the product rule to the term $2xy$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( y^2 \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(2xy) - \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^3 \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(7) \\cr 2y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + \\left( 2y + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) - 3x^2 &= 0 \\end{aligned}",
-        "Group the terms containing $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ on one side and move the other terms to the opposite side:\\begin{aligned} 2y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 3x^2 - 2y \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}(2x + 2y) &= 3x^2 - 2y \\end{aligned}",
-        "Isolate $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ by dividing by the factor $(2x + 2y)$:\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 3x^2 - 2y }{ 2x + 2y } \\end{aligned}"
+        "Differentiating both sides with respect to $x$, applying the product rule to $2xy$: \\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(y^2 + 2xy - x^3) = 0 \\cr &\\quad \\implies 2y\\dfrac{\\text{d}y}{\\text{d}x} + 2y \\cr &\\qquad + 2x\\dfrac{\\text{d}y}{\\text{d}x} - 3x^2 = 0 \\end{aligned}",
+        "Grouping terms with $\\dfrac{\\text{d}y}{\\text{d}x}$ on one side: \\begin{aligned} &2y\\dfrac{\\text{d}y}{\\text{d}x} + 2x\\dfrac{\\text{d}y}{\\text{d}x} = 3x^2 - 2y \\cr &\\quad \\implies \\dfrac{\\text{d}y}{\\text{d}x}(2x + 2y) = 3x^2 - 2y \\end{aligned}",
+        "Dividing by $(2x + 2y)$ to isolate $\\dfrac{\\text{d}y}{\\text{d}x}$: \\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{3x^2 - 2y}{2x + 2y} \\end{aligned}",
+        "Final Answer: $$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\dfrac{ 3x^2 - 2y }{ 2x + 2y }$$"
     ],
     "pi_options": [
         {
@@ -1923,7 +1925,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Product Rule Sign and Variable Splitting",
-        "content": "When differentiating a mixed term like $2xy$, always treat it as a product of $2x$ and $y$. Let $u = 2x$ and $v = y$. Since $\\dfrac{\\mathrm{d}u}{\\mathrm{d}x} = 2$ and $\\dfrac{\\mathrm{d}v}{\\mathrm{d}x} = \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$, the product rule yields $2y + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$. Be careful with signs if the term has a leading negative coefficient."
+        "content": "When differentiating a mixed term like $2xy$, treat it as a product of $2x$ and $y$. Let $u = 2x$ and $v = y$. Since $\\dfrac{\\text{d}u}{\\text{d}x} = 2$ and $\\dfrac{\\text{d}v}{\\text{d}x} = \\dfrac{\\text{d}y}{\\text{d}x}$, the product rule yields $2y + 2x\\dfrac{\\text{d}y}{\\text{d}x}$."
     }
 },
 {
@@ -1939,10 +1941,11 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric and Exponential Functions"
     ],
     "img": false,
-    "question": "A curve is given by the equation:$$y \\sin x + e^y = 5$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "question": "A curve is given by: \\begin{aligned} &y \\sin x + \\mathrm{e}^y = 5 \\end{aligned} By using implicit differentiation, find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $x$ and $y$.",
     "steps": [
-        "Differentiate both sides with respect to $x$, applying the product rule to $y \\sin x$ and the chain rule to $e^y$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(y \\sin x) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( e^y \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(5) \\cr \\left( \\sin x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + y \\cos x \\right) + e^y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 0 \\end{aligned}",
-        "Factor out $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ from the relevant terms and rearrange to solve for the derivative:\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\sin x + e^y \\right) + y \\cos x &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\sin x + e^y \\right) &= -y \\cos x \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= -\\dfrac{ y \\cos x }{ \\sin x + e^y } \\end{aligned}"
+        "Differentiating with respect to $x$, using the product rule on $y\\sin x$ and the chain rule on $\\mathrm{e}^y$: \\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(y\\sin x + \\mathrm{e}^y) = 0 \\cr &\\quad \\implies \\sin x\\dfrac{\\text{d}y}{\\text{d}x} + y\\cos x \\cr &\\qquad + \\mathrm{e}^y\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\end{aligned}",
+        "Grouping terms containing $\\dfrac{\\text{d}y}{\\text{d}x}$: \\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x}(\\sin x + \\mathrm{e}^y) = -y\\cos x \\cr &\\quad \\implies \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{y\\cos x}{\\sin x + \\mathrm{e}^y} \\end{aligned}",
+        "Final Answer: $$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = -\\dfrac{ y \\cos x }{ \\sin x + e^y }$$"
     ],
     "pi_options": [
         {
@@ -1955,13 +1958,13 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = -\\dfrac{ y \\sin x }{ \\cos x + e^y }$$",
-            "feedback": "This arises from a differentiation slip where the derivative of $\sin x$ is incorrectly taken as $-\\sin x$ or swapped with $\\cos x$."
+            "feedback": "This arises from a differentiation slip where the derivative of $\\sin x$ is incorrectly taken as $-\\sin x$ or swapped with $\\cos x$."
         }
     ],
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Differentiating Transcendental Implicit Functions",
-        "content": "Transcendental functions such as exponential and trigonometric terms follow standard rules but must incorporate the implicit chain rule. Differentiating $e^y$ with respect to $x$ gives $e^y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$, not just $e^y$. Similarly, differentiating $\\sin y$ would yield $\\cos y \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$."
+        "content": "Transcendental functions follow standard calculus rules but must incorporate the implicit chain rule. Differentiating $\\mathrm{e}^y$ with respect to $x$ gives $\\mathrm{e}^y\\dfrac{\\text{d}y}{\\text{d}x}$, not just $\\mathrm{e}^y$. Similarly, differentiating $\\sin y$ yields $\\cos y\\dfrac{\\text{d}y}{\\text{d}x}$."
     }
 },
 {
@@ -1976,20 +1979,21 @@ window.ALEVEL_QUESTIONS = [
         "Logarithmic Functions"
     ],
     "img": false,
-    "question": "A curve is given by the equation:$$x^2 \\ln y + y = 3x$$<br>By using implicit differentiation, find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$.",
+    "question": "A curve is given by: \\begin{aligned} &x^2 \\ln y + y = 3x \\end{aligned} By using implicit differentiation, find $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $x$ and $y$.",
     "steps": [
-        "Differentiate both sides with respect to $x$, applying the product rule to $x^2 \\ln y$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( x^2 \\ln y \\right) + \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(y) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(3x) \\cr \\left( 2x \\ln y + x^2 \\cdot \\dfrac{1}{y} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) + \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= 3 \\end{aligned}",
-        "Factor out $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ on the left-hand side and move the other terms to the right-hand side:\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\dfrac{x^2}{y} + 1 \\right) &= 3 - 2x \\ln y \\end{aligned}",
-        "Multiply the entire equation by $y$ to clear the fraction and solve for $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$:\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( x^2 + y \\right) &= y(3 - 2x \\ln y) \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 3y - 2xy \\ln y }{ x^2 + y } \\end{aligned}"
+        "Differentiating with respect to $x$, applying the product rule to $x^2\\ln y$: \\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(x^2\\ln y + y) = \\dfrac{\\text{d}}{\\text{d}x}(3x) \\cr &\\quad \\implies 2x\\ln y + x^2\\Big(\\dfrac{1}{y}\\Big)\\dfrac{\\text{d}y}{\\text{d}x} \\cr &\\qquad + \\dfrac{\\text{d}y}{\\text{d}x} = 3 \\end{aligned}",
+        "Factoring $\\dfrac{\\text{d}y}{\\text{d}x}$ on the left-hand side: \\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x}\\Big(\\dfrac{x^2}{y} + 1\\Big) = 3 - 2x\\ln y \\end{aligned}",
+        "Multiplying through by $y$ to clear the fraction: \\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x}(x^2 + y) = y(3 - 2x\\ln y) \\cr &\\quad \\implies \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{3y - 2xy\\ln y}{x^2 + y} \\end{aligned}",
+        "Final Answer: $$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\dfrac{ 3y - 2xy \\ln y }{ x^2 + y }$$"
     ],
     "pi_options": [
         {
             "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\dfrac{ 3 - 2x \\ln y }{ x^2 + 1 }$$",
-            "feedback": "This error occurs if the $y$-denominator of the differentiated log term is forgotten or omitted, treating $\\ln y$ as if its derivative with respect to $y$ was $1$ instead of $\\dfrac{1}{y}$."
+            "feedback": "This error occurs if the $y$-denominator of the differentiated log term is forgotten, treating $\\ln y$ as if its derivative with respect to $y$ was $1$ instead of $\\dfrac{1}{y}$."
         },
         {
             "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\dfrac{ 3y - 2xy \\ln y }{ x^2 }$$",
-            "feedback": "This mistake is caused by failing to include the $+ y$ term in the denominator, which arises from forgetting to differentiate the standalone $+y$ term to $+\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$."
+            "feedback": "This mistake is caused by omitting the $+y$ term in the denominator, which arises from forgetting to differentiate the standalone $+y$ term to $+\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$."
         },
         {
             "ans": "$$\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\dfrac{ 3y + 2xy \\ln y }{ x^2 + y }$$",
@@ -1999,7 +2003,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Clearing Fractional Algebra",
-        "content": "When separating variables in implicit equations containing algebraic fractions, like $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( \\dfrac{x^2}{y} + 1 \\right) = 3 - 2x \\ln y$, multiplying both sides by the denominator $y$ first is a highly efficient way to simplify the expression and avoid complex fractions within fractions."
+        "content": "When separating variables in implicit equations containing fractions like $\\dfrac{\\text{d}y}{\\text{d}x}\\Big(\\dfrac{x^2}{y} + 1\\Big) = 3 - 2x\\ln y$, multiplying both sides by $y$ immediately avoids compound fractions."
     }
 },
 {
@@ -2014,11 +2018,12 @@ window.ALEVEL_QUESTIONS = [
         "Coordinate Gradients"
     ],
     "img": false,
-    "question": "A curve is defined implicitly by the equation:$$3x^2 - y^3 + 2xy = 12$$<br>Find the gradient of the curve at the point $(2, 2)$..",
+    "question": "A curve is defined implicitly by: \\begin{aligned} &3x^2 - y^3 + 2xy = 12 \\end{aligned} Find the gradient of the curve at the point $(2, 2)$.",
     "steps": [
-        "Differentiate the implicit equation with respect to $x$, using the chain rule for $y^3$ and the product rule for $2xy$:\\begin{aligned} \\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left( 3x^2 - y^3 + 2xy \\right) &= \\dfrac{\\mathrm{d}}{\\mathrm{d}x}(12) \\cr 6x - 3y^2 \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} + \\left( 2y + 2x \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right) &= 0 \\end{aligned}",
-        "Group the terms containing $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ and express $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$ in terms of $x$ and $y$:\\begin{aligned} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( 2x - 3y^2 \\right) + 6x + 2y &= 0 \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\left( 2x - 3y^2 \\right) &= -6x - 2y \\cr \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} &= \\dfrac{ 6x + 2y }{ 3y^2 - 2x } \\end{aligned}",
-        "Substitute the coordinates $(2, 2)$ into the derivative formula to calculate the numerical gradient:\\begin{aligned} \\text{Gradient} &= \\dfrac{ 6(2) + 2(2) }{ 3\\left(2^2\\right) - 2(2) } \\cr \\text{Gradient} &= \\dfrac{ 12 + 4 }{ 12 - 4 } \\cr \\text{Gradient} &= \\dfrac{ 16 }{ 8 } \\cr \\text{Gradient} &= 2 \\end{aligned}"
+        "Differentiating with respect to $x$: \\begin{aligned} &\\dfrac{\\text{d}}{\\text{d}x}(3x^2 - y^3 + 2xy) = 0 \\cr &\\quad \\implies 6x - 3y^2\\dfrac{\\text{d}y}{\\text{d}x} \\cr &\\qquad + 2y + 2x\\dfrac{\\text{d}y}{\\text{d}x} = 0 \\end{aligned}",
+        "Grouping terms containing $\\dfrac{\\text{d}y}{\\text{d}x}$: \\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x}(2x - 3y^2) = -6x - 2y \\cr &\\quad \\implies \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{6x + 2y}{3y^2 - 2x} \\end{aligned}",
+        "Substitute $(2, 2)$ to evaluate the gradient: \\begin{aligned} &\\text{Gradient} \\cr &\\quad = \\dfrac{6(2) + 2(2)}{3(2^2) - 2(2)} \\cr &\\quad = \\dfrac{12 + 4}{12 - 4} \\cr &\\quad = \\dfrac{16}{8} \\cr &\\quad = 2 \\end{aligned}",
+        "Final Answer: $$2$$"
     ],
     "pi_options": [
         {
@@ -2027,7 +2032,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$1$$",
-            "feedback": "This mistake occurs if the product rule is omitted on the term $2xy$, leading to a derivative of $\\dfrac{ 6x }{ 3y^2 }$, which evaluates to $1$ at $(2, 2)$."
+            "feedback": "This mistake occurs if the product rule is omitted on $2xy$, leading to a derivative of $\\dfrac{6x}{3y^2}$, which evaluates to $1$ at $(2, 2)$."
         },
         {
             "ans": "$$\\dfrac{4}{3}$$",
@@ -2037,7 +2042,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Early Evaluation vs. Algebraic Rearrangement",
-        "content": "For gradient evaluation questions at a specific point, you can substitute the numerical values of $x$ and $y$ directly into the differentiated equation *before* rearranging it algebraically to isolate $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$. This often reduces the risk of making transposition errors."
+        "content": "For gradient evaluation at a known point, substituting the coordinates $(x, y)$ directly into the differentiated equation *before* isolating $\\dfrac{\\text{d}y}{\\text{d}x}$ reduces transposition errors."
     }
 }
 ];
