@@ -849,7 +849,7 @@ window.ALEVEL_QUESTIONS = [
         "To find $R$, square and add the equations: \\begin{aligned} &R^2(\\cos^2\\alpha + \\sin^2\\alpha) \\cr &\\quad = 5^2 + 12^2 \\cr &\\quad = 169 \\cr &\\implies R = 13 \\end{aligned} To find $\\alpha$, divide the equations: \\begin{aligned} &\\tan\\alpha = \\dfrac{12}{5} \\cr &\\quad = 2.4 \\cr &\\implies \\alpha \\approx 67.38^\\circ \\end{aligned} Thus, the expression is: \\begin{aligned} &13\\sin(\\theta - 67.38^\\circ) \\end{aligned}",
         "For part (b), substitute the harmonic form: \\begin{aligned} &13\\sin(\\theta - 67.38^\\circ) - 4 = 0 \\cr &\\quad \\implies \\sin(\\theta - 67.38^\\circ) = \\dfrac{4}{13} \\end{aligned}",
         "Finding angles for $\\arcsin\\big(\\frac{4}{13}\\big)$: \\begin{aligned} &\\theta - 67.38^\\circ \\approx 17.92^\\circ \\cr &\\text{or } \\theta - 67.38^\\circ \\cr &\\quad \\approx 180^\\circ - 17.92^\\circ \\cr &\\quad = 162.08^\\circ \\end{aligned} Adding $67.38^\\circ$ gives: \\begin{aligned} &\\theta_1 \\approx 85.3^\\circ \\cr &\\theta_2 \\approx 229.5^\\circ \\end{aligned}",
-        "For part (c), substitute into the fraction: \\begin{aligned} &\\dfrac{1}{13\\sin(\\theta - 67.38^\\circ) + 18} \\end{aligned} Since $-1 \\le \\sin(\\dots) \\le 1$:<br><br>• <strong>Greatest value</strong> (minimise denominator with $\\sin(\\dots) = -1$): \\begin{aligned} &\\dfrac{1}{13(-1) + 18} \\cr &\\quad = \\dfrac{1}{5} \\cr &\\quad = 0.2 \\end{aligned} • <strong>Least value</strong> (maximise denominator with $\\sin(\\dots) = 1$): \\begin{aligned} &\\dfrac{1}{13(1) + 18} \\cr &\\quad = \\dfrac{1}{31} \\cr &\\quad \\approx 0.0323 \\end{aligned}",
+        "For part (c), substitute into the fraction: \\begin{aligned} &\\dfrac{1}{13\\sin(\\theta - 67.38^\\circ) + 18} \\end{aligned} Since the sine function is bounded: \\begin{aligned} &-1 \\le \\sin(\\theta - 67.38^\\circ) \\le 1 \\end{aligned} • <strong>Greatest value</strong> occurs when the denominator is minimised, at: \\begin{aligned} &\\sin(\\theta - 67.38^\\circ) = -1 \\end{aligned} Evaluating the fraction: \\begin{aligned} &\\dfrac{1}{13(-1) + 18} \\cr &\\quad = \\dfrac{1}{5} \\cr &\\quad = 0.2 \\end{aligned} • <strong>Least value</strong> occurs when the denominator is maximised, at: \\begin{aligned} &\\sin(\\theta - 67.38^\\circ) = 1 \\end{aligned} Evaluating the fraction: \\begin{aligned} &\\dfrac{1}{13(1) + 18} \\cr &\\quad = \\dfrac{1}{31} \\cr &\\quad \\approx 0.0323 \\end{aligned}",
         "Final Answer: $$13\\sin(\\theta - 67.38^\\circ)$$ and Greatest: $$0.2$$, Least: $$0.0323$$"
     ],
     "pi_options": [
@@ -891,7 +891,7 @@ window.ALEVEL_QUESTIONS = [
         "To find $R$, square and add the equations: \\begin{aligned} &R^2(\\cos^2\\alpha + \\sin^2\\alpha) \\cr &\\quad = 24^2 + 7^2 \\cr &\\quad = 625 \\cr &\\implies R = 25 \\end{aligned} To find $\\alpha$, divide the equations: \\begin{aligned} &\\tan\\alpha = \\dfrac{7}{24} \\cr &\\quad \\implies \\alpha \\approx 16.26^\\circ \\end{aligned} Thus, the expression is: \\begin{aligned} &25\\cos(\\theta - 16.26^\\circ) \\end{aligned}",
         "For part (b), substitute the harmonic form: \\begin{aligned} &25\\cos(\\theta - 16.26^\\circ) = 15 \\cr &\\quad \\implies \\cos(\\theta - 16.26^\\circ) = 0.6 \\end{aligned}",
         "Finding angles for $\\arccos(0.6)$: \\begin{aligned} &\\theta - 16.26^\\circ \\approx \\pm 53.13^\\circ \\end{aligned} Adding $16.26^\\circ$ gives: \\begin{aligned} &\\theta_1 \\approx 53.13^\\circ + 16.26^\\circ \\cr &\\quad = 69.4^\\circ \\cr &\\theta_2 \\approx -53.13^\\circ + 16.26^\\circ \\cr &\\quad = -36.87^\\circ \\end{aligned} Adding $360^\\circ$ to find the angle in $[0^\\circ, 360^\\circ]$: \\begin{aligned} &\\theta_2 \\approx -36.87^\\circ + 360^\\circ \\cr &\\quad = 323.1^\\circ \\end{aligned}",
-        "For part (c), substitute into the expression: \\begin{aligned} &\\dfrac{6}{25\\cos(\\theta - 16.26^\\circ) + 31} \\end{aligned} • <strong>Greatest value</strong> (minimise denominator with $\\cos(\\dots) = -1$): \\begin{aligned} &\\dfrac{6}{25(-1) + 31} \\cr &\\quad = \\dfrac{6}{6} \\cr &\\quad = 1 \\end{aligned} • <strong>Least value</strong> (maximise denominator with $\\cos(\\dots) = 1$): \\begin{aligned} &\\dfrac{6}{25(1) + 31} \\cr &\\quad = \\dfrac{6}{56} \\cr &\\quad = \\dfrac{3}{28} \\approx 0.107 \\end{aligned}",
+        "For part (c), substitute into the expression: \\begin{aligned} &\\dfrac{6}{25\\cos(\\theta - 16.26^\\circ) + 31} \\end{aligned} Since the cosine function is bounded: \\begin{aligned} &-1 \\le \\cos(\\theta - 16.26^\\circ) \\le 1 \\end{aligned} • <strong>Greatest value</strong> occurs when the denominator is minimised, at: \\begin{aligned} &\\cos(\\theta - 16.26^\\circ) = -1 \\end{aligned} Evaluating the fraction: \\begin{aligned} &\\dfrac{6}{25(-1) + 31} \\cr &\\quad = \\dfrac{6}{6} \\cr &\\quad = 1 \\end{aligned} • <strong>Least value</strong> occurs when the denominator is maximised, at: \\begin{aligned} &\\cos(\\theta - 16.26^\\circ) = 1 \\end{aligned} Evaluating the fraction: \\begin{aligned} &\\dfrac{6}{25(1) + 31} \\cr &\\quad = \\dfrac{6}{56} \\cr &\\quad = \\dfrac{3}{28} \\cr &\\quad \\approx 0.107 \\end{aligned}",
         "Final Answer: $$25\\cos(\\theta - 16.26^\\circ)$$ and Greatest: $$1$$, Least: $$0.107$$"
     ],
     "pi_options": [
@@ -1050,32 +1050,33 @@ window.ALEVEL_QUESTIONS = [
         "Integration by Substitution"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Evaluate the exact value of:<br>$$\\int_1^2 x^2 \\ln x \\ \\mathrm{d}x$$<br>using integration by parts.<br><br><strong>(b)</strong> Use the substitution $x = 3\\sin\\theta$ to find the exact value of:<br>$$\\int_0^{1.5} \\frac{ 3 + x }{ \\sqrt{ 9 - x^2 } } \\ \\mathrm{d}x$$",
+    "question": "<strong>(a)</strong> Evaluate the exact value of: \\begin{aligned} &\\int_1^2 x^2 \\ln x \\text{d}x \\end{aligned} using integration by parts.<br><br><strong>(b)</strong> Use the substitution $x = 3\\sin\\theta$ to find the exact value of: \\begin{aligned} &\\int_0^{1.5} \\dfrac{3 + x}{\\sqrt{9 - x^2}} \\text{d}x \\end{aligned}",
     "steps": [
-        "<strong>(a)</strong> To evaluate $\\int_1^2 x^2 \\ln x \\ \\mathrm{d}x$ using integration by parts, we use the formula:<br>$$\\int u v' \\ \\mathrm{d}x = u v - \\int u' v \\ \\mathrm{d}x$$<br>We choose our parts as:<br>\\begin{aligned} u &= \\ln x \\quad \\implies \\quad u' = \\frac{ 1 }{ x } \\cr v' &= x^2 \\quad \\implies \\quad v = \\frac{ x^3 }{ 3 } \\end{aligned}",
-        "Applying the integration by parts formula:<br>\\begin{aligned} \\int_1^2 x^2 \\ln x \\ \\mathrm{d}x &= \\left[ \\frac{ x^3 }{ 3 } \\ln x \\right]_1^2 - \\int_1^2 \\frac{ x^3 }{ 3 } \\cdot \\frac{ 1 }{ x } \\ \\mathrm{d}x \\cr &= \\left( \\frac{ 8 }{ 3 } \\ln 2 - \\frac{ 1 }{ 3 } \\ln 1 \\right) - \\int_1^2 \\frac{ x^2 }{ 3 } \\ \\mathrm{d}x \\cr &= \\frac{ 8 }{ 3 } \\ln 2 - \\left[ \\frac{ x^3 }{ 9 } \\right]_1^2 \\cr &= \\frac{ 8 }{ 3 } \\ln 2 - \\left( \\frac{ 8 }{ 9 } - \\frac{ 1 }{ 9 } \\right) \\cr &= \\frac{ 8 }{ 3 } \\ln 2 - \\frac{ 7 }{ 9 } \\end{aligned}",
-        "<strong>(b)</strong> To evaluate the definite integral using the substitution $x = 3\\sin\\theta$, we find the differential:<br>$$\\mathrm{d}x = 3\\cos\\theta \\ \\mathrm{d}\\theta$$<br>Next, we find the new limits of integration in terms of $\\theta$:<br>• When $x = 0 \\implies 3\\sin\\theta = 0 \\implies \\theta = 0$.<br>• When $x = 1.5 \\implies 3\\sin\\theta = 1.5 \\implies \\sin\\theta = 0.5 \\implies \\theta = \\frac{ \\pi }{ 6 }$.<br><br>We also substitute into the square root expression:<br>$$\\sqrt{ 9 - x^2 } = \\sqrt{ 9 - 9\\sin^2\\theta } = \\sqrt{ 9(1 - \\sin^2\\theta) } = \\sqrt{ 9\\cos^2\\theta } = 3\\cos\\theta$$",
-        "Substituting these expressions into the integral gives:<br>\\begin{aligned} \\int_0^{\\frac{ \\pi }{ 6 }} \\frac{ 3 + 3\\sin\\theta }{ 3\\cos\\theta } \\cdot 3\\cos\\theta \\ \\mathrm{d}\\theta &= \\int_0^{\\frac{ \\pi }{ 6 }} (3 + 3\\sin\\theta) \\ \\mathrm{d}\\theta \\cr &= \\left[ 3\\theta - 3\\cos\\theta \\right]_0^{\\frac{ \\pi }{ 6 }} \\end{aligned}",
-        "Evaluating at the limits of integration:<br>\\begin{aligned} \\left[ 3\\theta - 3\\cos\\theta \\right]_0^{\\frac{ \\pi }{ 6 }} &= \\left( 3\\left(\\frac{ \\pi }{ 6 }\\right) - 3\\cos\\frac{ \\pi }{ 6 } \\right) - (3(0) - 3\\cos 0) \\cr &= \\left( \\frac{ \\pi }{ 2 } - \\frac{ 3\\sqrt{ 3 } }{ 2 } \\right) - (0 - 3) \\cr &= \\frac{ \\pi }{ 2 } - \\frac{ 3\\sqrt{ 3 } }{ 2 } + 3 \\end{aligned}"
+        "<strong>(a)</strong> Using integration by parts: \\begin{aligned} &\\int u v' \\text{d}x = u v - \\int u' v \\text{d}x \\end{aligned} We choose: \\begin{aligned} &u = \\ln x \\implies u' = \\dfrac{1}{x} \\cr &v' = x^2 \\implies v = \\dfrac{x^3}{3} \\end{aligned}",
+        "Applying the integration by parts formula: \\begin{aligned} &\\int_1^2 x^2 \\ln x \\text{d}x \\cr &\\quad = \\Big[\\dfrac{x^3}{3}\\ln x\\Big]_1^2 - \\int_1^2 \\dfrac{x^2}{3} \\text{d}x \\cr &\\quad = \\Big(\\dfrac{8}{3}\\ln 2 - 0\\Big) - \\Big[\\dfrac{x^3}{9}\\Big]_1^2 \\cr &\\quad = \\dfrac{8}{3}\\ln 2 - \\Big(\\dfrac{8}{9} - \\dfrac{1}{9}\\Big) \\cr &\\quad = \\dfrac{8}{3}\\ln 2 - \\dfrac{7}{9} \\end{aligned}",
+        "<strong>(b)</strong> Differentiating $x = 3\\sin\\theta$: \\begin{aligned} &\\text{d}x = 3\\cos\\theta \\text{d}\\theta \\end{aligned} Finding the new limits in terms of $\\theta$:<br><br>• For $x = 0$: $3\\sin\\theta = 0 \\implies \\theta = 0$<br>• For $x = 1.5$: $\\sin\\theta = 0.5 \\implies \\theta = \\dfrac{\\pi}{6}$<br><br>Transforming the radical denominator: \\begin{aligned} &\\sqrt{9 - x^2} \\cr &\\quad = \\sqrt{9(1 - \\sin^2\\theta)} \\cr &\\quad = 3\\cos\\theta \\end{aligned}",
+        "Substituting into the integral: \\begin{aligned} &\\int_0^{\\frac{\\pi}{6}} \\dfrac{3 + 3\\sin\\theta}{3\\cos\\theta} \\cdot 3\\cos\\theta \\text{d}\\theta \\cr &\\quad = \\int_0^{\\frac{\\pi}{6}} (3 + 3\\sin\\theta) \\text{d}\\theta \\cr &\\quad = \\big[3\\theta - 3\\cos\\theta\\big]_0^{\\frac{\\pi}{6}} \\end{aligned}",
+        "Evaluating at the limits: \\begin{aligned} &\\Big(3\\Big(\\dfrac{\\pi}{6}\\Big) - 3\\cos\\dfrac{\\pi}{6}\\Big) - \\big(0 - 3\\cos 0\\big) \\cr &\\quad = \\Big(\\dfrac{\\pi}{2} - \\dfrac{3\\sqrt{3}}{2}\\Big) - (-3) \\cr &\\quad = \\dfrac{\\pi}{2} - \\dfrac{3\\sqrt{3}}{2} + 3 \\end{aligned}",
+        "Final Answer: $$\\frac{ 8 }{ 3 }\\ln 2 - \\frac{ 7 }{ 9 }$$ and $$\\frac{ \\pi }{ 2 } - \\frac{ 3\\sqrt{ 3 } }{ 2 } + 3$$"
     ],
     "pi_options": [
         {
             "ans": "$$\\frac{ 8 }{ 3 }\\ln 2 - \\frac{ 7 }{ 9 }$$ and $$\\frac{ \\pi }{ 2 } + 3$$",
-            "feedback": "This is incorrect. While the integration by parts result is correct, you appear to have missed the subtraction of the term $3\\cos\\frac{\\pi}{6}$ when evaluating the limits for part (b). Remember that $\\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}$, so this term must be evaluated and included in the final exact answer."
+            "feedback": "This is incorrect. While the integration by parts result is correct, you omitted subtracting $3\\cos\\frac{\\pi}{6} = \\frac{3\\sqrt{3}}{2}$ when evaluating the limits."
         },
         {
             "ans": "$$\\frac{ 2 }{ 3 }\\ln 2 - \\frac{ 7 }{ 9 }$$ and $$\\frac{ \\pi }{ 2 } - \\frac{ 3\\sqrt{ 3 } }{ 2 } - 3$$",
-            "feedback": "This is incorrect. When evaluating the term $\\frac{x^3}{3}\\ln x$ at the upper limit $2$, we get $\\frac{8}{3}\\ln 2$, not $\\frac{2}{3}\\ln 2$. For part (b), subtracting $-3\\cos 0$ from the lower limit results in adding $3$ to the expression, not subtracting $3$ (since double negatives combine to a positive)."
+            "feedback": "This is incorrect. Evaluating $\\frac{x^3}{3}\\ln x$ at $x = 2$ gives $\\frac{8}{3}\\ln 2$. In part (b), subtracting $-3\\cos 0 = -3$ adds $+3$ to the expression."
         },
         {
             "ans": "$$\\frac{ 8 }{ 3 }\\ln 2 - \\frac{ 1 }{ 9 }$$ and $$\\frac{ \\pi }{ 2 } - \\frac{ 3\\sqrt{ 3 } }{ 2 }$$",
-            "feedback": "This is incorrect. For part (a), when integrating $\\frac{x^2}{3}$, the term evaluates to $\\left[\\frac{x^3}{9}\\right]$ with limits $1$ to $2$. Subtracting these limits gives $\\frac{8}{9} - \\frac{1}{9} = \\frac{7}{9}$, not $\\frac{1}{9}$. For part (b), you must ensure you do not neglect the lower limit evaluation of $-3\\cos 0$, which yields a constant contribution of $+3$."
+            "feedback": "This is incorrect. In part (a), $\\frac{8}{9} - \\frac{1}{9} = \\frac{7}{9}$. In part (b), the lower limit contribution $-3\\cos 0$ adds $+3$."
         }
     ],
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Evaluating the Lower Limit",
-        "content": "A common student slip is to automatically assume that substituting $0$ as a lower limit into a definite integral results in $0$. While this is true for polynomial terms, it is <strong>not</strong> true for trigonometric terms (since $\\cos 0 = 1$) or exponential terms (since $\\mathrm{e}^0 = 1$). Always write out the full substitution for the lower limit to avoid missing constant contributions."
+        "content": "Never assume that a lower limit of $0$ contributes nothing. While true for polynomials, $\\cos 0 = 1$ and $\\mathrm{e}^0 = 1$ produce non-zero constants that must be accounted for."
     }
 },
 {
@@ -1090,32 +1091,33 @@ window.ALEVEL_QUESTIONS = [
         "Integration by Substitution"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Evaluate the exact value of:<br>$$\\int_0^1 x \\mathrm{e}^{ 2x } \\ \\mathrm{d}x$$<br>using integration by parts.<br><br><strong>(b)</strong> Use the substitution $u = 2x + 1$ to find the exact value of:<br>$$\\int_0^4 \\frac{ x }{ \\sqrt{ 2x + 1 } } \\ \\mathrm{d}x$$",
+    "question": "<strong>(a)</strong> Evaluate the exact value of: \\begin{aligned} &\\int_0^1 x \\mathrm{e}^{2x} \\text{d}x \\end{aligned} using integration by parts.<br><br><strong>(b)</strong> Use the substitution $u = 2x + 1$ to find the exact value of: \\begin{aligned} &\\int_0^4 \\dfrac{x}{\\sqrt{2x + 1}} \\text{d}x \\end{aligned}",
     "steps": [
-        "<strong>(a)</strong> To evaluate $\\int_0^1 x \\mathrm{e}^{ 2x } \\ \\mathrm{d}x$ using integration by parts, we use the formula:<br>$$\\int u v' \\ \\mathrm{d}x = u v - \\int u' v \\ \\mathrm{d}x$$<br>We choose our parts as:<br>\\begin{aligned} u &= x \\quad \\implies \\quad u' = 1 \\cr v' &= \\mathrm{e}^{ 2x } \\quad \\implies \\quad v = \\frac{ 1 }{ 2 }\\mathrm{e}^{ 2x } \\end{aligned}",
-        "Applying the integration by parts formula:<br>\\begin{aligned} \\int_0^1 x \\mathrm{e}^{ 2x } \\ \\mathrm{d}x &= \\left[ \\frac{ 1 }{ 2 }x\\mathrm{e}^{ 2x } \\right]_0^1 - \\int_0^1 \\frac{ 1 }{ 2 }\\mathrm{e}^{ 2x } \\ \\mathrm{d}x \\cr &= \\left( \\frac{ 1 }{ 2 }\\mathrm{e}^{ 2 } - 0 \\right) - \\left[ \\frac{ 1 }{ 4 }\\mathrm{e}^{ 2x } \\right]_0^1 \\cr &= \\frac{ 1 }{ 2 }\\mathrm{e}^{ 2 } - \\left( \\frac{ 1 }{ 4 }\\mathrm{e}^{ 2 } - \\frac{ 1 }{ 4 } \\right) \\cr &= \\frac{ 1 }{ 4 }\\mathrm{e}^{ 2 } + \\frac{ 1 }{ 4 } \\cr &= \\frac{ 1 }{ 4 }(\\mathrm{e}^{ 2 } + 1) \\end{aligned}",
-        "<strong>(b)</strong> To evaluate using the substitution $u = 2x + 1$, we rearrange for $x$ and find the differential:<br>\\begin{aligned} x &= \\frac{ u - 1 }{ 2 } \\cr \\mathrm{d}x &= \\frac{ 1 }{ 2 }\\mathrm{d}u \\end{aligned}<br>Next, we find the new limits of integration in terms of $u$:<br>• When $x = 0 \\implies u = 2(0) + 1 = 1$.<br>• When $x = 4 \\implies u = 2(4) + 1 = 9$.",
-        "Substituting these expressions into the integral gives:<br>\\begin{aligned} \\int_1^9 \\frac{ u - 1 }{ 2\\sqrt{ u } } \\cdot \\frac{ 1 }{ 2 } \\ \\mathrm{d}u &= \\frac{ 1 }{ 4 } \\int_1^9 (u - 1)u^{ -\\frac{ 1 }{ 2 } } \\ \\mathrm{d}u \\cr &= \\frac{ 1 }{ 4 } \\int_1^9 (u^{ \\frac{ 1 }{ 2 } } - u^{ -\\frac{ 1 }{ 2 } }) \\ \\mathrm{d}u \\cr &= \\frac{ 1 }{ 4 } \\left[ \\frac{ 2 }{ 3 }u^{ \\frac{ 3 }{ 2 } } - 2u^{ \\frac{ 1 }{ 2 } } \\right]_1^9 \\end{aligned}",
-        "Evaluating at the limits of integration:<br>\\begin{aligned} \\frac{ 1 }{ 4 } \\left[ \\frac{ 2 }{ 3 }u^{ \\frac{ 3 }{ 2 } } - 2u^{ \\frac{ 1 }{ 2 } } \\right]_1^9 &= \\frac{ 1 }{ 4 } \\left[ \\left( \\frac{ 2 }{ 3 }(27) - 2(3) \\right) - \\left( \\frac{ 2 }{ 3 }(1) - 2(1) \\right) \\right] \\cr &= \\frac{ 1 }{ 4 } \\left[ (18 - 6) - \\left( -\\frac{ 4 }{ 3 } \\right) \\right] \\cr &= \\frac{ 1 }{ 4 } \\left[ 12 + \\frac{ 4 }{ 3 } \\right] \\cr &= \\frac{ 1 }{ 4 } \\left( \\frac{ 40 }{ 3 } \\right) \\cr &= \\frac{ 10 }{ 3 } \\end{aligned}"
+        "<strong>(a)</strong> Using integration by parts: \\begin{aligned} &\\int u v' \\text{d}x = u v - \\int u' v \\text{d}x \\end{aligned} We choose: \\begin{aligned} &u = x \\implies u' = 1 \\cr &v' = \\mathrm{e}^{2x} \\implies v = \\dfrac{1}{2}\\mathrm{e}^{2x} \\end{aligned}",
+        "Applying the integration by parts formula: \\begin{aligned} &\\int_0^1 x \\mathrm{e}^{2x} \\text{d}x \\cr &\\quad = \\Big[\\dfrac{1}{2}x\\mathrm{e}^{2x}\\Big]_0^1 - \\int_0^1 \\dfrac{1}{2}\\mathrm{e}^{2x} \\text{d}x \\cr &\\quad = \\dfrac{1}{2}\\mathrm{e}^2 - \\Big[\\dfrac{1}{4}\\mathrm{e}^{2x}\\Big]_0^1 \\cr &\\quad = \\dfrac{1}{2}\\mathrm{e}^2 - \\Big(\\dfrac{1}{4}\\mathrm{e}^2 - \\dfrac{1}{4}\\Big) \\cr &\\quad = \\dfrac{1}{4}(\\mathrm{e}^2 + 1) \\end{aligned}",
+        "<strong>(b)</strong> Rearranging $u = 2x + 1$ and finding differentials: \\begin{aligned} &x = \\dfrac{u - 1}{2} \\cr &\\text{d}x = \\dfrac{1}{2}\\text{d}u \\end{aligned} New limits in terms of $u$:<br><br>• For $x = 0$: $u = 2(0) + 1 = 1$<br>• For $x = 4$: $u = 2(4) + 1 = 9$",
+        "Substituting into the integral: \\begin{aligned} &\\int_1^9 \\dfrac{u - 1}{2\\sqrt{u}} \\cdot \\dfrac{1}{2} \\text{d}u \\cr &\\quad = \\dfrac{1}{4}\\int_1^9 (u^{\\frac{1}{2}} - u^{-\\frac{1}{2}}) \\text{d}u \\cr &\\quad = \\dfrac{1}{4}\\Big[\\dfrac{2}{3}u^{\\frac{3}{2}} - 2u^{\\frac{1}{2}}\\Big]_1^9 \\end{aligned}",
+        "Evaluating at the limits: \\begin{aligned} &\\dfrac{1}{4}\\Big[\\Big(\\dfrac{2}{3}(27) - 2(3)\\Big) - \\Big(\\dfrac{2}{3}(1) - 2(1)\\Big)\\Big] \\cr &\\quad = \\dfrac{1}{4}\\Big[12 - \\Big(-\\dfrac{4}{3}\\Big)\\Big] \\cr &\\quad = \\dfrac{1}{4}\\Big(\\dfrac{40}{3}\\Big) \\cr &\\quad = \\dfrac{10}{3} \\end{aligned}",
+        "Final Answer: $$\\frac{ 1 }{ 4 }(\\mathrm{e}^{ 2 } + 1)$$ and $$\\frac{ 10 }{ 3 }$$"
     ],
     "pi_options": [
         {
             "ans": "$$\\frac{ 1 }{ 4 }(\\mathrm{e}^{ 2 } - 1)$$ and $$\\frac{ 10 }{ 3 }$$",
-            "feedback": "This is incorrect. When evaluating the integrated exponential term $\\left[\\frac{1}{4}\\mathrm{e}^{2x}\\right]$ from $0$ to $1$, the lower limit substitution yields $\\frac{1}{4}\\mathrm{e}^0 = \\frac{1}{4}$. Since this term is subtracted, the minus signs combine: $-\\frac{1}{4}\\mathrm{e}^2 - (-\\frac{1}{4}) = -\\frac{1}{4}\\mathrm{e}^2 + \\frac{1}{4}$, leading to $+1$ inside the factored brackets."
+            "feedback": "This is incorrect. The lower limit evaluation yields $-\\frac{1}{4}\\mathrm{e}^0 = -\\frac{1}{4}$. Subtracting this gives $-\\frac{1}{4}\\mathrm{e}^2 - (-\\frac{1}{4}) = -\\frac{1}{4}\\mathrm{e}^2 + \\frac{1}{4}$."
         },
         {
             "ans": "$$\\frac{ 1 }{ 4 }(\\mathrm{e}^{ 2 } + 1)$$ and $$\\frac{ 20 }{ 3 }$$",
-            "feedback": "This is incorrect. While the integration by parts result is correct, you appear to have omitted the factor of $\\frac{1}{4}$ (obtained from combining the $\\frac{1}{2}$ from the rearranged $x$ term and $\\frac{1}{2}$ from the differential $\\mathrm{d}x$) when integrating the substitution terms, resulting in an answer that is twice the correct value."
+            "feedback": "This is incorrect. In part (b), you omitted the overall factor of $\\frac{1}{4}$ arising from combining $\\frac{1}{2}$ from $x$ and $\\frac{1}{2}$ from $\\text{d}x$."
         },
         {
             "ans": "$$\\frac{ 1 }{ 2 }(\\mathrm{e}^{ 2 } + 1)$$ and $$\\frac{ 8 }{ 3 }$$",
-            "feedback": "This is incorrect. For part (a), the first term of the integration by parts evaluates to $\\frac{1}{2}\\mathrm{e}^2$, from which you must subtract $\\frac{1}{4}\\mathrm{e}^2$, yielding a coefficient of $\\frac{1}{4}$. For part (b), check the subtraction of the lower limit in your evaluation, as $18 - 6 - (\\frac{2}{3} - 2) = 12 + \\frac{4}{3} = \\frac{40}{3}$."
+            "feedback": "This is incorrect. In part (a), subtracting $\\frac{1}{4}\\mathrm{e}^2$ from $\\frac{1}{2}\\mathrm{e}^2$ leaves $\\frac{1}{4}\\mathrm{e}^2$. In part (b), the bracket evaluates to $12 + \\frac{4}{3} = \\frac{40}{3}$."
         }
     ],
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Combining Fractional Constants",
-        "content": "When doing integration by substitution, fractional constants can quickly accumulate outside the integral sign. In this case, rearranging $x$ gives a factor of $\\frac{1}{2}$, and the differential $\\mathrm{d}x$ contributes another factor of $\\frac{1}{2}$. Factorise these out of the integral as a single constant factor of $\\frac{1}{4}$ immediately to keep your integration workspace clean and prevent coefficient errors."
+        "content": "When performing integration by substitution, pull constant multipliers outside the integral immediately. Combining $\\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4}$ upfront avoids carrying clutter through every line of algebra."
     }
 },
 {
@@ -1130,31 +1132,33 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric Substitution"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Find the exact value of:<br>$$\\int_0^{\\frac{ \\pi }{ 4 }} x \\sec^2 x \\ \\mathrm{d}x$$<br>using integration by parts.<br><br><strong>(b)</strong> Use the substitution $x = 2\\tan\\theta$ to find the exact value of:<br>$$\\int_0^2 \\frac{ 1 }{ x^2 + 4 } \\ \\mathrm{d}x$$",
+    "question": "<strong>(a)</strong> Find the exact value of: \\begin{aligned} &\\int_0^{\\frac{\\pi}{4}} x \\sec^2 x \\text{d}x \\end{aligned} using integration by parts.<br><br><strong>(b)</strong> Use the substitution $x = 2\\tan\\theta$ to find the exact value of: \\begin{aligned} &\\int_0^2 \\dfrac{1}{x^2 + 4} \\text{d}x \\end{aligned}",
     "steps": [
-        "<strong>(a)</strong> To evaluate $\\int_0^{\\frac{ \\pi }{ 4 }} x \\sec^2 x \\ \\mathrm{d}x$ using integration by parts, we choose our parts as:<br>\\begin{aligned} u &= x \\quad \\implies \\quad u' = 1 \\cr v' &= \\sec^2 x \\quad \\implies \\quad v = \\tan x \\end{aligned}",
-        "Applying the integration by parts formula:<br>\\begin{aligned} \\int_0^{\\frac{ \\pi }{ 4 }} x \\sec^2 x \\ \\mathrm{d}x &= \\left[ x \\tan x \\right]_0^{\\frac{ \\pi }{ 4 }} - \\int_0^{\\frac{ \\pi }{ 4 }} \\tan x \\ \\mathrm{d}x \\cr &= \\left( \\frac{ \\pi }{ 4 }\\tan\\frac{ \\pi }{ 4 } - 0 \\right) - \\left[ \\ln| \\sec x | \\right]_0^{\\frac{ \\pi }{ 4 }} \\cr &= \\frac{ \\pi }{ 4 }(1) - (\\ln| \\sec\\frac{ \\pi }{ 4 } | - \\ln| \\sec 0 |) \\end{aligned}",
-        "Evaluating the logarithmic terms:<br>• $\\sec\\frac{ \\pi }{ 4 } = \\frac{ 1 }{ \\cos(\\pi/4) } = \\sqrt{ 2 }$.<br>• $\\sec 0 = 1 \\implies \\ln(1) = 0$.<br>Substituting these in gives:<br>\\begin{aligned} \\frac{ \\pi }{ 4 } - \\ln\\sqrt{ 2 } &= \\frac{ \\pi }{ 4 } - \\ln(2^{ \\frac{ 1 }{ 2 } }) \\cr &= \\frac{ \\pi }{ 4 } - \\frac{ 1 }{ 2 }\\ln 2 \\end{aligned}",
-        "<strong>(b)</strong> To evaluate the definite integral using the substitution $x = 2\\tan\\theta$, we find the differential:<br>$$\\mathrm{d}x = 2\\sec^2\\theta \\ \\mathrm{d}\\theta$$<br>Next, we find the new limits of integration in terms of $\\theta$:<br>• When $x = 0 \\implies 2\\tan\\theta = 0 \\implies \\theta = 0$.<br>• When $x = 2 \\implies 2\\tan\\theta = 2 \\implies \\tan\\theta = 1 \\implies \\theta = \\frac{ \\pi }{ 4 }$."
+        "<strong>(a)</strong> Using integration by parts: \\begin{aligned} &u = x \\implies u' = 1 \\cr &v' = \\sec^2 x \\implies v = \\tan x \\end{aligned}",
+        "Applying the integration by parts formula: \\begin{aligned} &\\int_0^{\\frac{\\pi}{4}} x \\sec^2 x \\text{d}x \\cr &\\quad = \\big[x \\tan x\\big]_0^{\\frac{\\pi}{4}} - \\int_0^{\\frac{\\pi}{4}} \\tan x \\text{d}x \\cr &\\quad = \\Big(\\dfrac{\\pi}{4}\\tan\\dfrac{\\pi}{4} - 0\\Big) - \\big[\\ln|\\sec x|\\big]_0^{\\frac{\\pi}{4}} \\cr &\\quad = \\dfrac{\\pi}{4} - \\Big(\\ln|\\sec\\dfrac{\\pi}{4}| - \\ln|\\sec 0|\\Big) \\end{aligned}",
+        "Evaluating logarithmic terms using $\\sec\\frac{\\pi}{4} = \\sqrt{2}$ and $\\sec 0 = 1$: \\begin{aligned} &\\dfrac{\\pi}{4} - \\ln\\sqrt{2} \\cr &\\quad = \\dfrac{\\pi}{4} - \\ln(2^{\\frac{1}{2}}) \\cr &\\quad = \\dfrac{\\pi}{4} - \\dfrac{1}{2}\\ln 2 \\end{aligned}",
+        "<strong>(b)</strong> Differentiating $x = 2\\tan\\theta$: \\begin{aligned} &\\text{d}x = 2\\sec^2\\theta \\text{d}\\theta \\end{aligned} New limits in terms of $\\theta$:<br><br>• For $x = 0$: $2\\tan\\theta = 0 \\implies \\theta = 0$<br>• For $x = 2$: $2\\tan\\theta = 2 \\implies \\theta = \\dfrac{\\pi}{4}$",
+        "Substituting into the integral using $x^2 + 4 = 4\\sec^2\\theta$: \\begin{aligned} &\\int_0^{\\frac{\\pi}{4}} \\dfrac{2\\sec^2\\theta}{4\\sec^2\\theta} \\text{d}\\theta \\cr &\\quad = \\int_0^{\\frac{\\pi}{4}} \\dfrac{1}{2} \\text{d}\\theta \\cr &\\quad = \\Big[\\dfrac{1}{2}\\theta\\Big]_0^{\\frac{\\pi}{4}} \\cr &\\quad = \\dfrac{\\pi}{8} \\end{aligned}",
+        "Final Answer: $$\\frac{ \\pi }{ 4 } - \\frac{ 1 }{ 2 }\\ln 2$$ and $$\\frac{ \\pi }{ 8 }$$"
     ],
     "pi_options": [
         {
             "ans": "$$\\frac{ \\pi }{ 4 } - \\ln 2$$ and $$\\frac{ \\pi }{ 4 }$$",
-            "feedback": "This is incorrect. For part (a), the logarithm term is $\\ln\\sqrt{2}$. Using power laws of logarithms, $\\ln(2^{1/2}) = \\frac{1}{2}\\ln 2$. For part (b), substituting into the integral yields $\\int \\frac{2\\sec^2\\theta}{4\\sec^2\\theta}\\mathrm{d}\\theta = \\int \\frac{1}{2}\\mathrm{d}\\theta$. Integrating $\\frac{1}{2}$ over $0$ to $\\frac{\pi}{4}$ gives $\\frac{\pi}{8}$, not $\\frac{\pi}{4}$."
+            "feedback": "This is incorrect. In part (a), $\\ln\\sqrt{2} = \\frac{1}{2}\\ln 2$. In part (b), $\\int_0^{\\pi/4} \\frac{1}{2}\\text{d}\\theta = \\frac{\\pi}{8}$, not $\\frac{\\pi}{4}$."
         },
         {
             "ans": "$$\\frac{ \\pi }{ 4 } + \\frac{ 1 }{ 2 }\\ln 2$$ and $$\\frac{ \\pi }{ 8 }$$",
-            "feedback": "This is incorrect. While the substitution result is correct, the sign in part (a) is incorrect. The integration by parts formula has a subtraction sign: $uv - \\int u'v \\mathrm{d}x$, and since the integral of $\\tan x$ is $+\\ln|\\sec x|$, the subtraction sign must be maintained in the final exact answer."
+            "feedback": "This is incorrect. The integration by parts formula requires $uv - \\int u'v \\text{d}x$. Since $\\int \\tan x \\text{d}x = \\ln|\\sec x|$, the negative sign is retained."
         },
         {
             "ans": "$$\\frac{ \\pi }{ 4 } - \\frac{ 1 }{ 2 }\\ln 2$$ and $$\\frac{ \\pi }{ 2 }$$",
-            "feedback": "This is incorrect. While the integration by parts result is correct, you appear to have neglected the factor of $4$ in the denominator ($x^2+4 = 4\\sec^2\\theta$) when simplifying the integrand, which led to an incorrect final value of the definite integral."
+            "feedback": "This is incorrect. In part (b), $x^2 + 4 = 4\\tan^2\\theta + 4 = 4\\sec^2\\theta$. Omitting the denominator factor of $4$ causes an arithmetic error."
         }
     ],
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Logarithm of Radicals",
-        "content": "When integrating trigonometric functions, you often obtain expressions like $\\ln\\sqrt{ 2 }$. At A Level, you are expected to fully simplify your logarithmic terms using logarithm laws. Always rewrite roots as fractional powers (such as $\\sqrt{ 2 } = 2^{ \\frac{ 1 }{ 2 } }$) and bring the exponent to the front: $\\ln(2^{ \\frac{ 1 }{ 2 } }) = \\frac{ 1 }{ 2 }\\ln 2$."
+        "content": "Always simplify radical logarithms using power laws: $\\ln\\sqrt{2} = \\ln(2^{1/2}) = \\frac{1}{2}\\ln 2$. Leaving an unsimplified square root inside a logarithm will forfeit full marks."
     }
 },
 {
@@ -1169,32 +1173,33 @@ window.ALEVEL_QUESTIONS = [
         "Definite Algebraic Substitution"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Evaluate the exact value of:<br>$$\\int_1^{\\mathrm{e}} \\frac{ \\ln x }{ x^2 } \\ \\mathrm{d}x$$<br>using integration by parts.<br><br><strong>(b)</strong> Use the substitution $u = x^2 + 3$ to find the exact value of:<br>$$\\int_1^3 \\frac{ 2x }{ (x^2 + 3)^2 } \\ \\mathrm{d}x$$",
+    "question": "<strong>(a)</strong> Evaluate the exact value of: \\begin{aligned} &\\int_1^{\\mathrm{e}} \\dfrac{\\ln x}{x^2} \\text{d}x \\end{aligned} using integration by parts.<br><br><strong>(b)</strong> Use the substitution $u = x^2 + 3$ to find the exact value of: \\begin{aligned} &\\int_1^3 \\dfrac{2x}{(x^2 + 3)^2} \\text{d}x \\end{aligned}",
     "steps": [
-        "<strong>(a)</strong> To evaluate $\\int_1^{\\mathrm{e}} \\frac{ \\ln x }{ x^2 } \\ \\mathrm{d}x$ using integration by parts, we rewrite the integrand as $(\\ln x) \\cdot x^{ -2 }$ and choose our parts as:<br>\\begin{aligned} u &= \\ln x \\quad \\implies \\quad u' = \\frac{ 1 }{ x } \\cr v' &= x^{ -2 } \\quad \\implies \\quad v = -\\frac{ 1 }{ x } \\end{aligned}",
-        "Applying the integration by parts formula:<br>\\begin{aligned} \\int_1^{\\mathrm{e}} \\frac{ \\ln x }{ x^2 } \\ \\mathrm{d}x &= \\left[ -\\frac{ \\ln x }{ x } \\right]_1^{\\mathrm{e}} - \\int_1^{\\mathrm{e}} \\left(-\\frac{ 1 }{ x }\\right) \\cdot \\frac{ 1 }{ x } \\ \\mathrm{d}x \\cr &= \\left( -\\frac{ \\ln\\mathrm{e} }{ \\mathrm{e} } - 0 \\right) + \\int_1^{\\mathrm{e}} x^{ -2 } \\ \\mathrm{d}x \\cr &= -\\frac{ 1 }{ \\mathrm{e} } + \\left[ -\\frac{ 1 }{ x } \\right]_1^{\\mathrm{e}} \\end{aligned}",
-        "Evaluating at the limits of integration:<br>\\begin{aligned} -\\frac{ 1 }{ \\mathrm{e} } + \\left( -\\frac{ 1 }{ \\mathrm{e} } - (-1) \\right) &= -\\frac{ 1 }{ \\mathrm{e} } - \\frac{ 1 }{ \\mathrm{e} } + 1 \\cr &= 1 - \\frac{ 2 }{ \\mathrm{e} } \\end{aligned}",
-        "<strong>(b)</strong> To evaluate the definite integral using the substitution $u = x^2 + 3$, we find the differential:<br>$$\\mathrm{d}u = 2x \\ \\mathrm{d}x$$<br>Next, we find the new limits of integration in terms of $u$:<br>• When $x = 1 \\implies u = 1^2 + 3 = 4$.<br>• When $x = 3 \\implies u = 3^2 + 3 = 12$.",
-        "Substituting these expressions into the integral gives:<br>\\begin{aligned} \\int_4^{12} \\frac{ 1 }{ u^2 } \\ \\mathrm{d}u &= \\int_4^{12} u^{ -2 } \\ \\mathrm{d}u \\cr &= \\left[ -\\frac{ 1 }{ u } \\right]_4^{12} \\cr &= -\\frac{ 1 }{ 12 } - \\left( -\\frac{ 1 }{ 4 } \\right) \\cr &= \\frac{ 3 }{ 12 } - \\frac{ 1 }{ 12 } = \\frac{ 1 }{ 6 } \\end{aligned}"
+        "<strong>(a)</strong> Rewriting as $(\\ln x) \\cdot x^{-2}$, we choose parts: \\begin{aligned} &u = \\ln x \\implies u' = \\dfrac{1}{x} \\cr &v' = x^{-2} \\implies v = -\\dfrac{1}{x} \\end{aligned}",
+        "Applying integration by parts: \\begin{aligned} &\\int_1^{\\mathrm{e}} \\dfrac{\\ln x}{x^2} \\text{d}x \\cr &\\quad = \\Big[-\\dfrac{\\ln x}{x}\\Big]_1^{\\mathrm{e}} - \\int_1^{\\mathrm{e}} \\Big(-\\dfrac{1}{x}\\Big)\\Big(\\dfrac{1}{x}\\Big) \\text{d}x \\cr &\\quad = \\Big(-\\dfrac{\\ln\\mathrm{e}}{\\mathrm{e}} - 0\\Big) + \\int_1^{\\mathrm{e}} x^{-2} \\text{d}x \\cr &\\quad = -\\dfrac{1}{\\mathrm{e}} + \\Big[-\\dfrac{1}{x}\\Big]_1^{\\mathrm{e}} \\end{aligned}",
+        "Evaluating the limits: \\begin{aligned} &-\\dfrac{1}{\\mathrm{e}} + \\Big(-\\dfrac{1}{\\mathrm{e}} - (-1)\\Big) \\cr &\\quad = -\\dfrac{2}{\\mathrm{e}} + 1 \\cr &\\quad = 1 - \\dfrac{2}{\\mathrm{e}} \\end{aligned}",
+        "<strong>(b)</strong> Differentiating $u = x^2 + 3$: \\begin{aligned} &\\text{d}u = 2x \\text{d}x \\end{aligned} New limits in terms of $u$:<br><br>• For $x = 1$: $u = 1^2 + 3 = 4$<br>• For $x = 3$: $u = 3^2 + 3 = 12$",
+        "Substituting into the integral: \\begin{aligned} &\\int_4^{12} \\dfrac{1}{u^2} \\text{d}u \\cr &\\quad = \\Big[-\\dfrac{1}{u}\\Big]_4^{12} \\cr &\\quad = -\\dfrac{1}{12} - \\Big(-\\dfrac{1}{4}\\Big) \\cr &\\quad = \\dfrac{1}{4} - \\dfrac{1}{12} \\cr &\\quad = \\dfrac{1}{6} \\end{aligned}",
+        "Final Answer: $$1 - \\frac{ 2 }{ \\mathrm{e} }$$ and $$\\frac{ 1 }{ 6 }$$"
     ],
     "pi_options": [
         {
             "ans": "$$1 + \\frac{ 2 }{ \\mathrm{e} }$$ and $$\\frac{ 1 }{ 6 }$$",
-            "feedback": "This is incorrect. While the substitution result is correct, the sign in part (a) is incorrect. Evaluating the boundary terms yields $-\\frac{1}{\\mathrm{e}}$, and evaluating the integrated term yields $-\\frac{1}{\\mathrm{e}} - (-1) = 1 - \\frac{1}{\\mathrm{e}}$. Combining these gives $1 - \\frac{2}{\\mathrm{e}}$, not $1 + \\frac{2}{\\mathrm{e}}$."
+            "feedback": "This is incorrect. Evaluating the boundary terms gives $-\\frac{1}{\\mathrm{e}}$, and the integrated term gives $-\\frac{1}{\\mathrm{e}} - (-1) = 1 - \\frac{1}{\\mathrm{e}}$, which combine to $1 - \\frac{2}{\\mathrm{e}}$."
         },
         {
             "ans": "$$1 - \\frac{ 2 }{ \\mathrm{e} }$$ and $$\\frac{ 1 }{ 3 }$$",
-            "feedback": "This is incorrect. When evaluating the definite integral in part (b), the limits of integration are $4$ and $12$. The evaluation is $-\\frac{1}{12} - (-\\frac{1}{4}) = \\frac{1}{4} - \\frac{1}{12} = \\frac{2}{12}$, which simplifies to $\\frac{1}{6}$, not $\\frac{1}{3}$."
+            "feedback": "This is incorrect. In part (b), evaluating $-\\frac{1}{12} - (-\\frac{1}{4}) = \\frac{1}{4} - \\frac{1}{12} = \\frac{2}{12} = \\frac{1}{6}$, not $\\frac{1}{3}$."
         },
         {
             "ans": "$$-\\frac{ 2 }{ \\mathrm{e} }$$ and $$\\ln 3$$",
-            "feedback": "This is incorrect. For part (a), you appear to have neglected the contribution of $+1$ from the lower limit of the second integration term. For part (b), the integrand is $\\frac{1}{u^2}$, which integrates to $-\\frac{1}{u}$, not $\\ln|u|$ (which would only occur if the denominator was linear)."
+            "feedback": "This is incorrect. The integrand $\\frac{1}{u^2} = u^{-2}$ integrates via the power rule to $-\\frac{1}{u}$, not to a natural logarithm."
         }
     ],
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Avoiding Logarithmic Reflexes",
-        "content": "A very common student slip when integrating algebraic fractions is to reflexively write the integral of any fraction as a natural logarithm. Remember that $\\int \\frac{ 1 }{ u^2 } \\ \\mathrm{d}u$ must be integrated using the power rule by rewriting it as $\\int u^{ -2 } \\ \\mathrm{d}u = -u^{ -1 } = -\\frac{ 1 }{ u }$. Only linear denominators of the form $\\frac{ 1 }{ u }$ integrate to logarithms."
+        "content": "Do not reflexively integrate fractions to logarithms. Only linear denominators $\\frac{1}{u}$ integrate to $\\ln|u|$. Powers like $\\frac{1}{u^2}$ must be integrated using the power rule."
     }
 },
 {
@@ -1209,32 +1214,34 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric Substitution"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Evaluate the exact value of:<br>$$\\int_0^{\\frac{ \\pi }{ 2 }} \\mathrm{e}^x \\cos x \\ \\mathrm{d}x$$<br>using integration by parts.<br><br><strong>(b)</strong> Use the substitution $u = \\sin x$ to find the exact value of:<br>$$\\int_0^{\\frac{ \\pi }{ 2 }} \\sin^2 x \\cos^3 x \\ \\mathrm{d}x$$",
+    "question": "<strong>(a)</strong> Evaluate the exact value of: \\begin{aligned} &\\int_0^{\\frac{\\pi}{2}} \\mathrm{e}^x \\cos x \\text{d}x \\end{aligned} using integration by parts.<br><br><strong>(b)</strong> Use the substitution $u = \\sin x$ to find the exact value of: \\begin{aligned} &\\int_0^{\\frac{\\pi}{2}} \\sin^2 x \\cos^3 x \\text{d}x \\end{aligned}",
     "steps": [
-        "<strong>(a)</strong> To evaluate $I = \\int_0^{\\frac{ \\pi }{ 2 }} \\mathrm{e}^x \\cos x \\ \\mathrm{d}x$ using integration by parts, we choose:<br>\\begin{aligned} u &= \\cos x \\quad \\implies \\quad u' = -\\sin x \\cr v' &= \\mathrm{e}^x \\quad \\implies \\quad v = \\mathrm{e}^x \\end{aligned}",
-        "Applying the integration by parts formula:<br>\\begin{aligned} I &= \\left[ \\mathrm{e}^x \\cos x \\right]_0^{\\frac{ \\pi }{ 2 }} - \\int_0^{\\frac{ \\pi }{ 2 }} \\mathrm{e}^x (-\\sin x) \\ \\mathrm{d}x \\cr &= \\left( \\mathrm{e}^{ \\frac{ \\pi }{ 2 } }\\cos\\frac{ \\pi }{ 2 } - \\mathrm{e}^0\\cos 0 \\right) + \\int_0^{\\frac{ \\pi }{ 2 }} \\mathrm{e}^x \\sin x \\ \\mathrm{d}x \\cr &= (0 - 1) + \\int_0^{\\frac{ \\pi }{ 2 }} \\mathrm{e}^x \\sin x \\ \\mathrm{d}x \\cr &= -1 + \\int_0^{\\frac{ \\pi }{ 2 }} \\mathrm{e}^x \\sin x \\ \\mathrm{d}x \\end{aligned}",
-        "We apply integration by parts a second time to the remaining integral, choosing:<br>\\begin{aligned} u &= \\sin x \\quad \\implies \\quad u' = \\cos x \\cr v' &= \\mathrm{e}^x \\quad \\implies \\quad v = \\mathrm{e}^x \\end{aligned}<br>Substituting this in:<br>\\begin{aligned} I &= -1 + \\left[ \\mathrm{e}^x \\sin x \\right]_0^{\\frac{ \\pi }{ 2 }} - \\int_0^{\\frac{ \\pi }{ 2 }} \\mathrm{e}^x \\cos x \\ \\mathrm{d}x \\cr I &= -1 + \\left( \\mathrm{e}^{ \\frac{ \\pi }{ 2 } }\\sin\\frac{ \\pi }{ 2 } - 0 \\right) - I \\cr I &= -1 + \\mathrm{e}^{ \\frac{ \\pi }{ 2 } } - I \\end{aligned}",
-        "Rearranging to solve for the integral $I$:<br>\\begin{aligned} 2I &= \\mathrm{e}^{ \\frac{ \\pi }{ 2 } } - 1 \\cr I &= \\frac{ 1 }{ 2 }(\\mathrm{e}^{ \\frac{ \\pi }{ 2 } } - 1) \\end{aligned}",
-        "<strong>(b)</strong> To evaluate the definite integral using the substitution $u = \\sin x$, we find the differential:<br>$$\\mathrm{d}u = \\cos x \\ \\mathrm{d}x$$<br>Next, we find the new limits of integration in terms of $u$:<br>• When $x = 0 \\implies u = \\sin 0 = 0$.<br>• When $x = \\frac{ \\pi }{ 2 } \\implies u = \\sin\\frac{ \\pi }{ 2 } = 1$.<br><br>We also rewrite the integrand, noting that $\\cos^3 x = \\cos^2 x \\cdot \\cos x = (1 - \\sin^2 x)\\cos x$:<br>\\begin{aligned} \\int_0^{\\frac{ \\pi }{ 2 }} \\sin^2 x \\cos^3 x \\ \\mathrm{d}x &= \\int_0^{\\frac{ \\pi }{ 2 }} \\sin^2 x (1 - \\sin^2 x) \\cos x \\ \\mathrm{d}x \\cr &= \\int_0^1 u^2 (1 - u^2) \\ \\mathrm{d}u \\cr &= \\int_0^1 (u^2 - u^4) \\ \\mathrm{d}u \\cr &= \\left[ \\frac{ u^3 }{ 3 } - \\frac{ u^5 }{ 5 } \\right]_0^1 \\cr &= \\frac{ 1 }{ 3 } - \\frac{ 1 }{ 5 } = \\frac{ 2 }{ 15 } \\end{aligned}"
+        "<strong>(a)</strong> Let $I = \\int_0^{\\frac{\\pi}{2}} \\mathrm{e}^x \\cos x \\text{d}x$. We choose parts: \\begin{aligned} &u = \\cos x \\implies u' = -\\sin x \\cr &v' = \\mathrm{e}^x \\implies v = \\mathrm{e}^x \\end{aligned}",
+        "Applying integration by parts: \\begin{aligned} &I \\cr &\\quad = \\big[\\mathrm{e}^x \\cos x\\big]_0^{\\frac{\\pi}{2}} - \\int_0^{\\frac{\\pi}{2}} \\mathrm{e}^x(-\\sin x) \\text{d}x \\cr &\\quad = (0 - 1) + \\int_0^{\\frac{\\pi}{2}} \\mathrm{e}^x \\sin x \\text{d}x \\cr &\\quad = -1 + \\int_0^{\\frac{\\pi}{2}} \\mathrm{e}^x \\sin x \\text{d}x \\end{aligned}",
+        "Applying parts a second time with $u = \\sin x$ and $v' = \\mathrm{e}^x$: \\begin{aligned} &I \\cr &\\quad = -1 + \\big[\\mathrm{e}^x \\sin x\\big]_0^{\\frac{\\pi}{2}} - \\int_0^{\\frac{\\pi}{2}} \\mathrm{e}^x \\cos x \\text{d}x \\cr &\\quad = -1 + (\\mathrm{e}^{\\frac{\\pi}{2}} - 0) - I \\cr &\\quad = \\mathrm{e}^{\\frac{\\pi}{2}} - 1 - I \\end{aligned}",
+        "Rearranging to isolate $I$: \\begin{aligned} &2I = \\mathrm{e}^{\\frac{\\pi}{2}} - 1 \\cr &\\quad \\implies I = \\dfrac{1}{2}(\\mathrm{e}^{\\frac{\\pi}{2}} - 1) \\end{aligned}",
+        "<strong>(b)</strong> Differentiating $u = \\sin x$: \\begin{aligned} &\\text{d}u = \\cos x \\text{d}x \\end{aligned} New limits in terms of $u$:<br><br>• For $x = 0$: $u = \\sin 0 = 0$<br>• For $x = \\dfrac{\\pi}{2}$: $u = \\sin\\dfrac{\\pi}{2} = 1$",
+        "Rewriting $\\cos^3 x = (1 - \\sin^2 x)\\cos x$ and integrating: \\begin{aligned} &\\int_0^1 u^2(1 - u^2) \\text{d}u \\cr &\\quad = \\int_0^1 (u^2 - u^4) \\text{d}u \\cr &\\quad = \\Big[\\dfrac{u^3}{3} - \\dfrac{u^5}{5}\\Big]_0^1 \\cr &\\quad = \\dfrac{1}{3} - \\dfrac{1}{5} \\cr &\\quad = \\dfrac{2}{15} \\end{aligned}",
+        "Final Answer: $$\\frac{ 1 }{ 2 }(\\mathrm{e}^{ \\frac{ \\pi }{ 2 } } - 1)$$ and $$\\frac{ 2 }{ 15 }$$"
     ],
     "pi_options": [
         {
             "ans": "$$\\frac{ 1 }{ 2 }(\\mathrm{e}^{ \\frac{ \\pi }{ 2 } } + 1)$$ and $$\\frac{ 2 }{ 15 }$$",
-            "feedback": "This is incorrect. For part (a), evaluating the boundary term of the first parts integration gives $\\mathrm{e}^0\\cos 0 = 1(1) = 1$. Since this lower limit is subtracted, we get $-1$. Bringing this to the final equation yields $2I = \\mathrm{e}^{ \\frac{ \\pi }{ 2 } } - 1$, which has a subtraction sign, not an addition sign."
+            "feedback": "This is incorrect. The lower limit evaluation of the first parts step subtracts $\\mathrm{e}^0\\cos 0 = 1$, giving $-1$. Rearranging gives $2I = \\mathrm{e}^{\\pi/2} - 1$."
         },
         {
             "ans": "$$\\frac{ 1 }{ 2 }(\\mathrm{e}^{ \\frac{ \\pi }{ 2 } } - 1)$$ and $$\\frac{ 8 }{ 15 }$$",
-            "feedback": "This is incorrect. While the first parts result is correct, you appear to have made an arithmetic slip in evaluating $\\frac{1}{3} - \\frac{1}{5}$ for the substitution integral. The common denominator is $15$, yielding $\\frac{5}{15} - \\frac{3}{15} = \\frac{2}{15}$, not $\\frac{8}{15}$."
+            "feedback": "This is incorrect. For the substitution integral, $\\frac{1}{3} - \\frac{1}{5} = \\frac{5}{15} - \\frac{3}{15} = \\frac{2}{15}$, not $\\frac{8}{15}$."
         },
         {
             "ans": "$$\\mathrm{e}^{ \\frac{ \\pi }{ 2 } } - 1$$ and $$\\frac{ 1 }{ 15 }$$",
-            "feedback": "This is incorrect. Do not forget that when looping integration by parts, you obtain $2I = \\mathrm{e}^{ \\frac{ \\pi }{ 2 } } - 1$. You must divide the entire expression by $2$ to isolate the integral $I$, yielding $\\frac{1}{2}(\\mathrm{e}^{ \\frac{ \\pi }{ 2 } } - 1)$."
+            "feedback": "This is incorrect. Do not forget to divide by $2$ after collecting the recurring integral terms $2I = \\mathrm{e}^{\\pi/2} - 1$."
         }
     ],
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Looping Integration by Parts",
-        "content": "When integrating products of exponential and trigonometric functions (like $\\mathrm{e}^x \\cos x$), the process is 'looping'or 'recurring' — meaning you will never reach a zero term by differentiating. Instead, you must apply integration by parts twice to reproduce the original integral $I$, group the $I$ terms together on one side of the equation (yielding $2I$), and then divide by $2$ as your final step."
+        "content": "Integrals of products of exponentials and trigonometric functions loop indefinitely. Apply integration by parts twice to reproduce the original integral $I$, collect like terms to form $2I$, and divide by $2$ to finish."
     }
 },
 {
