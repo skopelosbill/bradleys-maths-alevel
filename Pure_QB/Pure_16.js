@@ -1636,21 +1636,22 @@ window.ALEVEL_QUESTIONS = [
         "Numerical Root Finding"
     ],
     "img": false,
-    "question": "A curve has the equation:<br>$$y = (x - 4) \\ln x$$<br><strong>(i)</strong> Show that:<br>$$\\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = 1 - \\dfrac{ 4 }{ x } + \\ln x$$<br><strong>(ii)</strong> Show that the curve has a turning point between $x = 2$ and $x = 3$.<br><br><strong>(iii)</strong> By taking $2.3$ as a first approximation to the x-coordinate of this turning point, use the Newton-Raphson method once to find a better approximation. Give your answer correct to 3 decimal places.",
+    "question": "A curve has the equation:$$y = (x - 4) \\ln x$$<strong>(i)</strong> Show that:$$\\dfrac{ \\text{d}y }{ \\text{d}x } = 1 - \\dfrac{ 4 }{ x } + \\ln x$$<strong>(ii)</strong> Show that the curve has a turning point between $x = 2$ and $x = 3$.<br><br><strong>(iii)</strong> By taking $2.3$ as a first approximation to the x-coordinate of this turning point, use the Newton-Raphson method once to find a better approximation. Give your answer correct to 3 decimal places.",
     "steps": [
-        "<strong>Part (i):</strong> We differentiate $y = (x - 4) \\ln x$ using the product rule. Let $u = x - 4$ and $v = \\ln x$.<br>The derivatives are $u' = 1$ and $v' = \\dfrac{ 1 }{ x }$.<br><br>Applying the product rule:<br>\\begin{aligned} \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } &= u'v + uv' \\cr &= (1)(\\ln x) + (x - 4)\\left( \\dfrac{ 1 }{ x } \\right) \\cr &= \\ln x + 1 - \\dfrac{ 4 }{ x } \\cr &= 1 - \\dfrac{ 4 }{ x } + \\ln x \\end{aligned}<br><strong>(Shown)</strong>",
-        "<strong>Part (ii):</strong> A turning point on a curve occurs where the first derivative is equal to zero ($y' = 0$).<br>Let $g(x) = \\dfrac{ \\mathrm{d}y }{ \\mathrm{d}x } = 1 - \\dfrac{ 4 }{ x } + \\ln x$.<br><br>Evaluate $g(x)$ at the interval boundaries $x = 2$ and $x = 3$:<br>\\begin{aligned} g(2) &= 1 - \\dfrac{ 4 }{ 2 } + \\ln 2 = -1 + \\ln 2 \\approx -0.307 < 0 \\cr g(3) &= 1 - \\dfrac{ 4 }{ 3 } + \\ln 3 = -\\dfrac{ 1 }{ 3 } + \\ln 3 \\approx 0.765 > 0 \\end{aligned}<br>Since there is a change of sign and $g(x)$ is continuous on the interval, a root of the equation $g(x) = 0$ (and thus a turning point of the curve) must lie in the interval $[2, 3]$.",
-        "<strong>Part (iii):</strong> Since we are finding the root of the derivative $g(x) = 0$, our Newton-Raphson formula is:<br>$$x_{n+1} = x_n - \\dfrac{ g(x_n) }{ g'(x_n) }$$<br>We first differentiate $g(x) = 1 - 4x^{ -1 } + \\ln x$ to find $g'(x)$:<br>$$g'(x) = \\dfrac{ 4 }{ x^2 } + \\dfrac{ 1 }{ x }$$",
-        "Now, evaluate $g(2.3)$ and $g'(2.3)$ for our first iteration ($x_0 = 2.3$):<br>\\begin{aligned} g(2.3) &= 1 - \\dfrac{ 4 }{ 2.3 } + \\ln(2.3) \\approx 0.0938 \\cr g'(2.3) &= \\dfrac{ 4 }{ 2.3^2 } + \\dfrac{ 1 }{ 2.3 } \\approx 1.1909 \\end{aligned}<br><br>Substitute these values into the Newton-Raphson formula:<br>\\begin{aligned} x_1 &= 2.3 - \\dfrac{ 0.0938 }{ 1.1909 } \\cr &\\approx 2.3 - 0.0787 = 2.221 \\end{aligned}<br>Thus, the improved approximation to the x-coordinate of the turning point is $2.221$ (to 3 decimal places)."
+        "<strong>Part (i):</strong> We differentiate $y = (x - 4) \\ln x$ using the product rule. Let $u = x - 4$ and $v = \\ln x$.<br><br>The derivatives are $u' = 1$ and $v' = \\dfrac{ 1 }{ x }$.<br><br>Applying the product rule:\\begin{aligned} &\\dfrac{ \\text{d}y }{ \\text{d}x } \\cr &\\quad = u'v + uv' \\cr &\\quad = \\ln x + (x - 4)\\left( \\dfrac{ 1 }{ x } \\right) \\cr &\\quad = \\ln x + 1 - \\dfrac{ 4 }{ x } \\cr &\\quad = 1 - \\dfrac{ 4 }{ x } + \\ln x \\end{aligned}",
+        "<strong>Part (ii):</strong> A turning point on a curve occurs where the first derivative is equal to zero ($y' = 0$).<br><br>Let $g(x) = \\dfrac{ \\text{d}y }{ \\text{d}x } = 1 - \\dfrac{ 4 }{ x } + \\ln x$.<br><br>Evaluate $g(x)$ at the interval boundaries $x = 2$ and $x = 3$:<br><br>• For $x = 2$:\\begin{aligned} &g(2) = 1 - \\dfrac{ 4 }{ 2 } + \\ln 2 \\cr &\\quad = -1 + \\ln 2 \\cr &\\quad \\approx -0.307 \\end{aligned}So $g(2) < 0$.<br><br>• For $x = 3$:\\begin{aligned} &g(3) = 1 - \\dfrac{ 4 }{ 3 } + \\ln 3 \\cr &\\quad = -\\dfrac{ 1 }{ 3 } + \\ln 3 \\cr &\\quad \\approx 0.765 \\end{aligned}So $g(3) > 0$.<br><br>Since there is a change of sign and $g(x)$ is continuous on the interval, a root of $g(x) = 0$ (and thus a turning point of the curve) must lie in $[2, 3]$.",
+        "<strong>Part (iii):</strong> Since we are finding the root of the derivative $g(x) = 0$, our Newton-Raphson formula is:$$x_{n+1} = x_n - \\dfrac{ g(x_n) }{ g'(x_n) }$$We first differentiate $g(x) = 1 - 4x^{ -1 } + \\ln x$ to find $g'(x)$:$$g'(x) = \\dfrac{ 4 }{ x^2 } + \\dfrac{ 1 }{ x }$$",
+        "Evaluate $g(2.3)$ and $g'(2.3)$ for our first iteration ($x_0 = 2.3$):\\begin{aligned} &g(2.3) = 1 - \\dfrac{ 4 }{ 2.3 } + \\ln(2.3) \\cr &\\quad \\approx 0.0938 \\cr &g'(2.3) = \\dfrac{ 4 }{ 2.3^2 } + \\dfrac{ 1 }{ 2.3 } \\cr &\\quad \\approx 1.1909 \\end{aligned}Substitute these values into the Newton-Raphson formula:\\begin{aligned} &x_1 = 2.3 - \\dfrac{ 0.0938 }{ 1.1909 } \\cr &\\quad \\approx 2.3 - 0.0787 \\cr &\\quad = 2.221 \\end{aligned}Thus, the improved approximation to the x-coordinate of the turning point is $2.221$ (to 3 decimal places).",
+        "Final Answer: $$2.221$$"
     ],
     "pi_options": [
         {
             "ans": "$$2.221$$ but you apply Newton-Raphson directly to the original curve $y = 0$",
-            "feedback": "Your numerical calculation of $2.221$ is correct. However, always remember that a turning point occurs where the first derivative is zero, meaning Newton-Raphson must be applied to $g(x) = y' = 0$, which requires using $g'(x) = y''$ as the denominator. Applying it to the original equation $y = 0$ is a major conceptual error."
+            "feedback": "Your numerical calculation of $2.221$ is correct. However, always remember that a turning point occurs where the first derivative is zero, meaning Newton-Raphson must be applied to $g(x) = 0$ (where $g(x) = y'$), which requires using $g'(x) = y''$ as the denominator. Applying it to the original equation $y = 0$ is a major conceptual error."
         },
         {
             "ans": "$$2.379$$",
-            "feedback": "This error occurs if you make a sign error in the Newton-Raphson formula, incorrectly adding the correction term instead of subtracting it, which yields $x_1 = 2.3 + 0.0787 = 2.379$."
+            "feedback": "This error occurs if you make a sign error in the Newton-Raphson formula, incorrectly adding the correction term instead of subtracting it, which yields $x_1 = 2.3 + 0.0787$, giving $2.379$."
         },
         {
             "ans": "$$2.094$$",
@@ -1659,7 +1660,7 @@ window.ALEVEL_QUESTIONS = [
     ],
     "bradley_insight": {
         "type": "caution",
-        "title": "The Head Teacher's Eye: Explicit Constant of Integration",
+        "title": "The Head Teacher's Eye: Turning Points via Newton-Raphson",
         "content": "When applying the Newton-Raphson method to locate a stationary point, you must perform the iterations on the derivative of the function, $f'(x) = 0$, not on the original function $f(x) = 0$. This means the denominator of your correction term is the second derivative, $f''(x)$."
     }
 },
@@ -1676,12 +1677,13 @@ window.ALEVEL_QUESTIONS = [
         "Numerical Root Finding"
     ],
     "img": false,
-    "question": "Let $f(x) = x^2 e^x - 5$.<br><br><strong>(i)</strong> Show that:<br>$$f'(x) = (x^2 + 2x)e^x$$<br><strong>(ii)</strong> Show that the equation $f(x) = 0$ has a root in the interval $[1.2, 1.3]$.<br><br><strong>(iii)</strong> By taking $1.2$ as a first approximation to this root, use the Newton-Raphson method once to find a better approximation. Give your answer correct to 3 decimal places.",
+    "question": "Let $f(x) = x^2 \\mathrm{e}^x - 5$.<br><br><strong>(i)</strong> Show that:$$f'(x) = (x^2 + 2x)\\mathrm{e}^x$$<strong>(ii)</strong> Show that the equation $f(x) = 0$ has a root in the interval $[1.2, 1.3]$.<br><br><strong>(iii)</strong> By taking $1.2$ as a first approximation to this root, use the Newton-Raphson method once to find a better approximation. Give your answer correct to 3 decimal places.",
     "steps": [
-        "<strong>Part (i):</strong> We differentiate $f(x) = x^2 e^x - 5$ using the product rule. Let $u = x^2$ and $v = e^x$.<br>The derivatives are $u' = 2x$ and $v' = e^x$.<br><br>Applying the product rule:<br>\\begin{aligned} f'(x) &= u'v + uv' \\cr &= (2x)(e^x) + (x^2)(e^x) \\cr &= (x^2 + 2x)e^x \\end{aligned}<br><strong>(Shown)</strong>",
-        "<strong>Part (ii):</strong> Evaluate $f(x)$ at the interval boundaries $x = 1.2$ and $x = 1.3$:<br>\\begin{aligned} f(1.2) &= (1.2)^2 e^{ 1.2 } - 5 \\approx 1.44(3.3201) - 5 \\approx -0.219 < 0 \\cr f(1.3) &= (1.3)^2 e^{ 1.3 } - 5 \\approx 1.69(3.6693) - 5 \\approx 1.201 > 0 \\end{aligned}<br>Since there is a change of sign and the function $f(x)$ is continuous on the interval, a root of the equation $f(x) = 0$ must lie in the interval $[1.2, 1.3]$.",
-        "<strong>Part (iii):</strong> We apply the Newton-Raphson formula to find our improved root approximation:<br>$$x_{n+1} = x_n - \\dfrac{ f(x_n) }{ f'(x_n) }$$<br>Using $x_0 = 1.2$, we evaluate $f(1.2)$ and $f'(1.2)$:<br>\\begin{aligned} f(1.2) &\\approx -0.2185 \\cr f'(1.2) &= ((1.2)^2 + 2(1.2))e^{ 1.2 } \\cr &= 3.84 e^{ 1.2 } \\approx 3.84(3.3201) \\approx 12.7492 \\end{aligned}",
-        "Substitute these values into the Newton-Raphson formula:<br>\\begin{aligned} x_1 &= 1.2 - \\dfrac{ -0.2185 }{ 12.7492 } \\cr &\\approx 1.2 + 0.0171 = 1.217 \\end{aligned}<br>Thus, the improved approximation to the root is $1.217$ (to 3 decimal places)."
+        "<strong>Part (i):</strong> We differentiate $f(x) = x^2 \\mathrm{e}^x - 5$ using the product rule. Let $u = x^2$ and $v = \\mathrm{e}^x$.<br><br>The derivatives are $u' = 2x$ and $v' = \\mathrm{e}^x$.<br><br>Applying the product rule:\\begin{aligned} &f'(x) \\cr &\\quad = u'v + uv' \\cr &\\quad = (2x)(\\mathrm{e}^x) + (x^2)(\\mathrm{e}^x) \\cr &\\quad = (x^2 + 2x)\\mathrm{e}^x \\end{aligned}",
+        "<strong>Part (ii):</strong> Evaluate $f(x)$ at the interval boundaries $x = 1.2$ and $x = 1.3$:<br><br>• For $x = 1.2$:\\begin{aligned} &f(1.2) = (1.2)^2 \\mathrm{e}^{ 1.2 } - 5 \\cr &\\quad \\approx 1.44(3.3201) - 5 \\cr &\\quad \\approx -0.219 \\end{aligned}So $f(1.2) < 0$.<br><br>• For $x = 1.3$:\\begin{aligned} &f(1.3) = (1.3)^2 \\mathrm{e}^{ 1.3 } - 5 \\cr &\\quad \\approx 1.69(3.6693) - 5 \\cr &\\quad \\approx 1.201 \\end{aligned}So $f(1.3) > 0$.<br><br>Since there is a change of sign and $f(x)$ is continuous on the interval, a root of $f(x) = 0$ must lie in $[1.2, 1.3]$.",
+        "<strong>Part (iii):</strong> We apply the Newton-Raphson formula to find our improved root approximation:$$x_{n+1} = x_n - \\dfrac{ f(x_n) }{ f'(x_n) }$$Using $x_0 = 1.2$, evaluate $f(1.2)$ and $f'(1.2)$:\\begin{aligned} &f(1.2) \\approx -0.2185 \\cr &f'(1.2) = ((1.2)^2 + 2(1.2))\\mathrm{e}^{ 1.2 } \\cr &\\quad = 3.84 \\mathrm{e}^{ 1.2 } \\cr &\\quad \\approx 3.84(3.3201) \\cr &\\quad \\approx 12.7492 \\end{aligned}",
+        "Substitute these values into the Newton-Raphson formula:\\begin{aligned} &x_1 = 1.2 - \\dfrac{ -0.2185 }{ 12.7492 } \\cr &\\quad \\approx 1.2 + 0.0171 \\cr &\\quad = 1.217 \\end{aligned}Thus, the improved approximation to the root is $1.217$ (to 3 decimal places).",
+        "Final Answer: $$1.217$$"
     ],
     "pi_options": [
         {
@@ -1694,13 +1696,13 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$1.241$$",
-            "feedback": "This error occurs if you make an arithmetic mistake when evaluating $f'(1.2)$, such as forgetting the factor of $2x$ in the product rule and using $f'(1.2) = 1.2^2 e^{ 1.2 } \\approx 4.781$, which yields a larger correction factor."
+            "feedback": "This error occurs if you make an arithmetic mistake when evaluating $f'(1.2)$, such as forgetting the factor of $2x$ in the product rule and using $f'(1.2) = 1.2^2 \\mathrm{e}^{ 1.2 }$ (approximately $4.781$), which yields a larger correction factor."
         }
     ],
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Product Rule Factoring",
-        "content": "When differentiating expressions containing exponential terms like $e^x$, always factor out the $e^x$ term immediately. This keeps your derivative $f'(x)$ clean and drastically reduces the chance of manual calculator slips during evaluations."
+        "content": "When differentiating expressions containing exponential terms like $\\mathrm{e}^x$, always factor out the $\\mathrm{e}^x$ term immediately. This keeps your derivative $f'(x)$ clean and drastically reduces the chance of manual calculator slips during evaluations."
     }
 },
 {
@@ -1716,12 +1718,13 @@ window.ALEVEL_QUESTIONS = [
         "Trigonometric Functions"
     ],
     "img": false,
-    "question": "Let $g(x) = x \\sin x - 1$, where $x$ is measured in radians.<br><br><strong>(i)</strong> Show that:<br>$$g'(x) = \\sin x + x \\cos x$$<br><strong>(ii)</strong> Show that the equation $g(x) = 0$ has a root in the interval $[1.1, 1.2]$.<br><br><strong>(iii)</strong> By taking $1.1$ as a first approximation to this root, use the Newton-Raphson method once to find a better approximation. Give your answer correct to 3 decimal places.",
+    "question": "Let $g(x) = x \\sin x - 1$, where $x$ is measured in radians.<br><br><strong>(i)</strong> Show that:$$g'(x) = \\sin x + x \\cos x$$<strong>(ii)</strong> Show that the equation $g(x) = 0$ has a root in the interval $[1.1, 1.2]$.<br><br><strong>(iii)</strong> By taking $1.1$ as a first approximation to this root, use the Newton-Raphson method once to find a better approximation. Give your answer correct to 3 decimal places.",
     "steps": [
-        "<strong>Part (i):</strong> We differentiate $g(x) = x \\sin x - 1$ using the product rule. Let $u = x$ and $v = \\sin x$.<br>The derivatives are $u' = 1$ and $v' = \\cos x$.<br><br>Applying the product rule:<br>\\begin{aligned} g'(x) &= u'v + uv' \\cr &= (1)(\\sin x) + x \\cos x \\cr &= \\sin x + x \\cos x \\end{aligned}<br><strong>(Shown)</strong>",
-        "<strong>Part (ii):</strong> Ensure your calculator is set to <strong>Radian</strong> mode. Evaluate $g(x)$ at the interval boundaries $x = 1.1$ and $x = 1.2$:<br>\\begin{aligned} g(1.1) &= 1.1 \\sin(1.1) - 1 \\approx 1.1(0.8912) - 1 \\approx -0.0197 < 0 \\cr g(1.2) &= 1.2 \\sin(1.2) - 1 \\approx 1.2(0.9320) - 1 \\approx 0.1184 > 0 \\end{aligned}<br>Since there is a change of sign and $g(x)$ is continuous on the interval, a root of the equation $g(x) = 0$ must lie in the interval $[1.1, 1.2]$.",
-        "<strong>Part (iii):</strong> We apply the Newton-Raphson formula to find our improved root approximation:<br>$$x_{n+1} = x_n - \\dfrac{ g(x_n) }{ g'(x_n) }$$<br>Using $x_0 = 1.1$ in Radian mode, we evaluate $g(1.1)$ and $g'(1.1)$:<br>\\begin{aligned} g(1.1) &\\approx -0.0197 \\cr g'(1.1) &= \\sin(1.1) + 1.1 \\cos(1.1) \\cr &\\approx 0.8912 + 1.1(0.4536) \\cr &\\approx 0.8912 + 0.4990 = 1.3902 \\end{aligned}",
-        "Substitute these values into the Newton-Raphson formula:<br>\\begin{aligned} x_1 &= 1.1 - \\dfrac{ -0.0197 }{ 1.3902 } \\cr &\\approx 1.1 + 0.0142 = 1.114 \\end{aligned}<br>Thus, the improved approximation to the root is $1.114$ (to 3 decimal places)."
+        "<strong>Part (i):</strong> We differentiate $g(x) = x \\sin x - 1$ using the product rule. Let $u = x$ and $v = \\sin x$.<br><br>The derivatives are $u' = 1$ and $v' = \\cos x$.<br><br>Applying the product rule:\\begin{aligned} &g'(x) \\cr &\\quad = u'v + uv' \\cr &\\quad = (1)(\\sin x) + x \\cos x \\cr &\\quad = \\sin x + x \\cos x \\end{aligned}",
+        "<strong>Part (ii):</strong> Ensure your calculator is set to <strong>Radian</strong> mode. Evaluate $g(x)$ at the interval boundaries $x = 1.1$ and $x = 1.2$:<br><br>• For $x = 1.1$:\\begin{aligned} &g(1.1) = 1.1 \\sin(1.1) - 1 \\cr &\\quad \\approx 1.1(0.8912) - 1 \\cr &\\quad \\approx -0.0197 \\end{aligned}So $g(1.1) < 0$.<br><br>• For $x = 1.2$:\\begin{aligned} &g(1.2) = 1.2 \\sin(1.2) - 1 \\cr &\\quad \\approx 1.2(0.9320) - 1 \\cr &\\quad \\approx 0.1184 \\end{aligned}So $g(1.2) > 0$.<br><br>Since there is a change of sign and $g(x)$ is continuous on the interval, a root of $g(x) = 0$ must lie in $[1.1, 1.2]$.",
+        "<strong>Part (iii):</strong> We apply the Newton-Raphson formula to find our improved root approximation:$$x_{n+1} = x_n - \\dfrac{ g(x_n) }{ g'(x_n) }$$Using $x_0 = 1.1$ in Radian mode, evaluate $g(1.1)$ and $g'(1.1)$:\\begin{aligned} &g(1.1) \\approx -0.0197 \\cr &g'(1.1) = \\sin(1.1) + 1.1 \\cos(1.1) \\cr &\\quad \\approx 0.8912 + 1.1(0.4536) \\cr &\\quad \\approx 0.8912 + 0.4990 \\cr &\\quad = 1.3902 \\end{aligned}",
+        "Substitute these values into the Newton-Raphson formula:\\begin{aligned} &x_1 = 1.1 - \\dfrac{ -0.0197 }{ 1.3902 } \\cr &\\quad \\approx 1.1 + 0.0142 \\cr &\\quad = 1.114 \\end{aligned}Thus, the improved approximation to the root is $1.114$ (to 3 decimal places).",
+        "Final Answer: $$1.114$$"
     ],
     "pi_options": [
         {
@@ -1730,11 +1733,11 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$1.114$$ but evaluated in degree mode",
-            "feedback": "This error occurs if you perform the calculations with your calculator set to **Degree** mode instead of Radian mode. In degree mode, $\\sin(1.1^\\circ) \\approx 0.0192$ and $\\cos(1.1^\\circ) \\approx 0.9998$, which leads to completely incorrect intermediate values and a failed approximation."
+            "feedback": "This error occurs if you perform the calculations with your calculator set to <strong>Degree</strong> mode instead of Radian mode. In degree mode, $\\sin(1.1^\\circ) \\approx 0.0192$ and $\\cos(1.1^\\circ) \\approx 0.9998$, which leads to completely incorrect intermediate values and a failed approximation."
         },
         {
             "ans": "$$1.122$$",
-            "feedback": "This mistake occurs if you make a product rule error when differentiating $x \\sin x$, such as forgetting to include the first term ($\\sin x$) and using $g'(1.1) \\approx 1.1 \\cos(1.1) \\approx 0.4990$, which overestimates the step adjustment."
+            "feedback": "This mistake occurs if you make a product rule error when differentiating $x \\sin x$, such as forgetting to include the first term ($\\sin x$) and using $g'(1.1) \\approx 1.1 \\cos(1.1)$, which gives approximately $0.4990$, overestimating the step adjustment."
         }
     ],
     "bradley_insight": {
@@ -1756,12 +1759,13 @@ window.ALEVEL_QUESTIONS = [
         "Numerical Root Finding"
     ],
     "img": false,
-    "question": "Let $h(x) = \\dfrac{ e^x }{ x } - 4$.<br><br><strong>(i)</strong> Show that:<br>$$h'(x) = \\dfrac{ e^x(x - 1) }{ x^2 }$$<br><strong>(ii)</strong> Show that the equation $h(x) = 0$ has a root in the interval $[2.1, 2.2]$.<br><br><strong>(iii)</strong> By taking $2.1$ as a first approximation to this root, use the Newton-Raphson method once to find a better approximation. Give your answer correct to 3 decimal places.",
+    "question": "Let $h(x) = \\dfrac{ \\mathrm{e}^x }{ x } - 4$.<br><br><strong>(i)</strong> Show that:$$h'(x) = \\dfrac{ \\mathrm{e}^x(x - 1) }{ x^2 }$$<strong>(ii)</strong> Show that the equation $h(x) = 0$ has a root in the interval $[2.1, 2.2]$.<br><br><strong>(iii)</strong> By taking $2.1$ as a first approximation to this root, use the Newton-Raphson method once to find a better approximation. Give your answer correct to 3 decimal places.",
     "steps": [
-        "<strong>Part (i):</strong> We differentiate $h(x) = \\dfrac{ e^x }{ x } - 4$ using the quotient rule. Let $u = e^x$ and $v = x$.<br>The derivatives are $u' = e^x$ and $v' = 1$.<br><br>Applying the quotient rule:<br>\\begin{aligned} h'(x) &= \\dfrac{ u'v - uv' }{ v^2 } \\cr &= \\dfrac{ (e^x)(x) - (e^x)(1) }{ x^2 } \\cr &= \\dfrac{ e^x(x - 1) }{ x^2 } \\end{aligned}<br><strong>(Shown)</strong>",
-        "<strong>Part (ii):</strong> Evaluate $h(x)$ at the interval boundaries $x = 2.1$ and $x = 2.2$:<br>\\begin{aligned} h(2.1) &= \\dfrac{ e^{ 2.1 } }{ 2.1 } - 4 \\approx \\dfrac{ 8.1662 }{ 2.1 } - 4 \\approx -0.1114 < 0 \\cr h(2.2) &= \\dfrac{ e^{ 2.2 } }{ 2.2 } - 4 \\approx \\dfrac{ 9.0250 }{ 2.2 } - 4 \\approx 0.1023 > 0 \\end{aligned}<br>Since there is a change of sign and $h(x)$ is continuous on the interval, a root of the equation $h(x) = 0$ must lie in the interval $[2.1, 2.2]$.",
-        "<strong>Part (iii):</strong> We apply the Newton-Raphson formula to find our improved root approximation:<br>$$x_{n+1} = x_n - \\dfrac{ h(x_n) }{ h'(x_n) }$$<br>Using $x_0 = 2.1$, we evaluate $h(2.1)$ and $h'(2.1)$:<br>\\begin{aligned} h(2.1) &\\approx -0.1114 \\cr h'(2.1) &= \\dfrac{ e^{ 2.1 }(2.1 - 1) }{ 2.1^2 } \\cr &= \\dfrac{ 8.1662(1.1) }{ 4.41 } \\approx 2.0369 \\end{aligned}",
-        "Substitute these values into the Newton-Raphson formula:<br>\\begin{aligned} x_1 &= 2.1 - \\dfrac{ -0.1114 }{ 2.0369 } \\cr &\\approx 2.1 + 0.0547 = 2.155 \\end{aligned}<br>Thus, the improved approximation to the root is $2.155$ (to 3 decimal places)."
+        "<strong>Part (i):</strong> We differentiate $h(x) = \\dfrac{ \\mathrm{e}^x }{ x } - 4$ using the quotient rule. Let $u = \\mathrm{e}^x$ and $v = x$.<br><br>The derivatives are $u' = \\mathrm{e}^x$ and $v' = 1$.<br><br>Applying the quotient rule:\\begin{aligned} &h'(x) \\cr &\\quad = \\dfrac{ u'v - uv' }{ v^2 } \\cr &\\quad = \\dfrac{ (\\mathrm{e}^x)(x) - (\\mathrm{e}^x)(1) }{ x^2 } \\cr &\\quad = \\dfrac{ \\mathrm{e}^x(x - 1) }{ x^2 } \\end{aligned}",
+        "<strong>Part (ii):</strong> Evaluate $h(x)$ at the interval boundaries $x = 2.1$ and $x = 2.2$:<br><br>• For $x = 2.1$:\\begin{aligned} &h(2.1) = \\dfrac{ \\mathrm{e}^{ 2.1 } }{ 2.1 } - 4 \\cr &\\quad \\approx \\dfrac{ 8.1662 }{ 2.1 } - 4 \\cr &\\quad \\approx -0.1114 \\end{aligned}So $h(2.1) < 0$.<br><br>• For $x = 2.2$:\\begin{aligned} &h(2.2) = \\dfrac{ \\mathrm{e}^{ 2.2 } }{ 2.2 } - 4 \\cr &\\quad \\approx \\dfrac{ 9.0250 }{ 2.2 } - 4 \\cr &\\quad \\approx 0.1023 \\end{aligned}So $h(2.2) > 0$.<br><br>Since there is a change of sign and $h(x)$ is continuous on the interval, a root of $h(x) = 0$ must lie in $[2.1, 2.2]$.",
+        "<strong>Part (iii):</strong> We apply the Newton-Raphson formula to find our improved root approximation:$$x_{n+1} = x_n - \\dfrac{ h(x_n) }{ h'(x_n) }$$Using $x_0 = 2.1$, evaluate $h(2.1)$ and $h'(2.1)$:\\begin{aligned} &h(2.1) \\approx -0.1114 \\cr &h'(2.1) = \\dfrac{ \\mathrm{e}^{ 2.1 }(2.1 - 1) }{ 2.1^2 } \\cr &\\quad = \\dfrac{ 8.1662(1.1) }{ 4.41 } \\cr &\\quad \\approx 2.0369 \\end{aligned}",
+        "Substitute these values into the Newton-Raphson formula:\\begin{aligned} &x_1 = 2.1 - \\dfrac{ -0.1114 }{ 2.0369 } \\cr &\\quad \\approx 2.1 + 0.0547 \\cr &\\quad = 2.155 \\end{aligned}Thus, the improved approximation to the root is $2.155$ (to 3 decimal places).",
+        "Final Answer: $$2.155$$"
     ],
     "pi_options": [
         {
@@ -1770,11 +1774,11 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$2.155$$ but using product rule derivative",
-            "feedback": "Your numerical value of $2.155$ is correct. However, make sure you correctly set up the quotient rule derivative. Using a product rule expansion on a quotient by mistake (which would yield $\\dfrac{ e^x(x + 1) }{ x^2 }$) is a major algebraic error that would usually prevent you from obtaining the correct root on an exam."
+            "feedback": "Your numerical value of $2.155$ is correct. However, make sure you correctly set up the quotient rule derivative. Using a product rule expansion on a quotient by mistake (which would yield $\\dfrac{ \\mathrm{e}^x(x + 1) }{ x^2 }$) is a major algebraic error that would usually prevent you from obtaining the correct root on an exam."
         },
         {
             "ans": "$$2.126$$",
-            "feedback": "This error occurs if you make an algebra mistake in the numerator of the quotient rule, such as writing $u'v + uv'$ by mistake, which leads to $h'(2.1) = \\dfrac{ e^{ 2.1 }(3.1) }{ 4.41 } \\approx 5.740$, reducing the size of the step adjustment."
+            "feedback": "This error occurs if you make an algebra mistake in the numerator of the quotient rule, such as writing $u'v + uv'$ by mistake, which leads to $h'(2.1) = \\dfrac{ \\mathrm{e}^{ 2.1 }(3.1) }{ 4.41 }$ (approximately $5.740$), reducing the size of the step adjustment."
         }
     ],
     "bradley_insight": {
@@ -1796,12 +1800,13 @@ window.ALEVEL_QUESTIONS = [
         "Intersection of Curves"
     ],
     "img": false,
-    "question": "The curves $y = 3 - x^2$ and $y = \\ln(x + 1)$ intersect at a single point in the first quadrant.<br><br><strong>(i)</strong> Show that finding the x-coordinate of this point of intersection is equivalent to solving the equation:<br>$$\\ln(x + 1) + x^2 - 3 = 0$$<br><strong>(ii)</strong> Show that the x-coordinate of this point of intersection lies in the interval $[1.4, 1.5]$.<br><br><strong>(iii)</strong> By taking $1.4$ as a first approximation, use the Newton-Raphson method once to find a better approximation to this x-coordinate. Give your answer correct to 3 decimal places.",
+    "question": "The curves $y = 3 - x^2$ and $y = \\ln(x + 1)$ intersect at a single point in the first quadrant.<br><br><strong>(i)</strong> Show that finding the x-coordinate of this point of intersection is equivalent to solving the equation:$$\\ln(x + 1) + x^2 - 3 = 0$$<strong>(ii)</strong> Show that the x-coordinate of this point of intersection lies in the interval $[1.4, 1.5]$.<br><br><strong>(iii)</strong> By taking $1.4$ as a first approximation, use the Newton-Raphson method once to find a better approximation to this x-coordinate. Give your answer correct to 3 decimal places.",
     "steps": [
-        "<strong>Part (i):</strong> At the point of intersection of the two curves, their $y$-values must be equal:<br>\\begin{aligned} \\ln(x + 1) &= 3 - x^2 \\cr \\ln(x + 1) + x^2 - 3 &= 0 \\end{aligned}<br><strong>(Shown)</strong>",
-        "<strong>Part (ii):</strong> Let $f(x) = \\ln(x + 1) + x^2 - 3$. Evaluate $f(x)$ at the interval boundaries $x = 1.4$ and $x = 1.5$:<br>\\begin{aligned} f(1.4) &= \\ln(2.4) + 1.4^2 - 3 \\approx 0.8755 + 1.96 - 3 \\approx -0.1645 < 0 \\cr f(1.5) &= \\ln(2.5) + 1.5^2 - 3 \\approx 0.9163 + 2.25 - 3 \\approx 0.1663 > 0 \\end{aligned}<br>Since there is a change of sign and $f(x)$ is continuous on the interval, the curves must intersect at a point with an x-coordinate in the interval $[1.4, 1.5]$.",
-        "<strong>Part (iii):</strong> We apply the Newton-Raphson formula to find our improved root approximation:<br>$$x_{n+1} = x_n - \\dfrac{ f(x_n) }{ f'(x_n) }$$<br>We differentiate $f(x) = \\ln(x + 1) + x^2 - 3$ to find $f'(x)$:<br>$$f'(x) = \\dfrac{ 1 }{ x + 1 } + 2x$$",
-        "Using our starting approximation $x_0 = 1.4$, we evaluate $f(1.4)$ and $f'(1.4)$:<br>\\begin{aligned} f(1.4) &\\approx -0.1645 \\cr f'(1.4) &= \\dfrac{ 1 }{ 2.4 } + 2(1.4) \\approx 0.4167 + 2.8 = 3.2167 \\end{aligned}<br><br>Substitute these values into the Newton-Raphson formula:<br>\\begin{aligned} x_1 &= 1.4 - \\dfrac{ -0.1645 }{ 3.2167 } \\cr &\\approx 1.4 + 0.0511 = 1.451 \\end{aligned}<br>Thus, the improved approximation to the x-coordinate of the point of intersection is $1.451$ (to 3 decimal places)."
+        "<strong>Part (i):</strong> At the point of intersection of the two curves, their $y$-values must be equal:\\begin{aligned} &\\ln(x + 1) = 3 - x^2 \\cr &\\ln(x + 1) + x^2 - 3 = 0 \\end{aligned}",
+        "<strong>Part (ii):</strong> Let $f(x) = \\ln(x + 1) + x^2 - 3$. Evaluate $f(x)$ at the interval boundaries $x = 1.4$ and $x = 1.5$:<br><br>• For $x = 1.4$:\\begin{aligned} &f(1.4) = \\ln(2.4) + 1.4^2 - 3 \\cr &\\quad \\approx 0.8755 + 1.96 - 3 \\cr &\\quad \\approx -0.1645 \\end{aligned}So $f(1.4) < 0$.<br><br>• For $x = 1.5$:\\begin{aligned} &f(1.5) = \\ln(2.5) + 1.5^2 - 3 \\cr &\\quad \\approx 0.9163 + 2.25 - 3 \\cr &\\quad \\approx 0.1663 \\end{aligned}So $f(1.5) > 0$.<br><br>Since there is a change of sign and $f(x)$ is continuous on the interval, the curves must intersect at a point with an x-coordinate in $[1.4, 1.5]$.",
+        "<strong>Part (iii):</strong> We apply the Newton-Raphson formula to find our improved root approximation:$$x_{n+1} = x_n - \\dfrac{ f(x_n) }{ f'(x_n) }$$We differentiate $f(x) = \\ln(x + 1) + x^2 - 3$ to find $f'(x)$:$$f'(x) = \\dfrac{ 1 }{ x + 1 } + 2x$$",
+        "Using our starting approximation $x_0 = 1.4$, evaluate $f(1.4)$ and $f'(1.4)$:\\begin{aligned} &f(1.4) \\approx -0.1645 \\cr &f'(1.4) = \\dfrac{ 1 }{ 2.4 } + 2(1.4) \\cr &\\quad \\approx 0.4167 + 2.8 \\cr &\\quad = 3.2167 \\end{aligned}Substitute these values into the Newton-Raphson formula:\\begin{aligned} &x_1 = 1.4 - \\dfrac{ -0.1645 }{ 3.2167 } \\cr &\\quad \\approx 1.4 + 0.0511 \\cr &\\quad = 1.451 \\end{aligned}Thus, the improved approximation to the x-coordinate of the point of intersection is $1.451$ (to 3 decimal places).",
+        "Final Answer: $$1.451$$"
     ],
     "pi_options": [
         {
@@ -1814,7 +1819,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$1.417$$",
-            "feedback": "This error occurs if you make a differentiation error when finding $f'(x)$, such as writing $f'(x) = \\dfrac{ 1 }{ x } + 2x$, which leads to $f'(1.4) \\approx 0.7143 + 2.8 = 3.5143$, resulting in a smaller correction step."
+            "feedback": "This error occurs if you make a differentiation error when finding $f'(x)$, such as writing $f'(x) = \\dfrac{ 1 }{ x } + 2x$, which leads to $f'(1.4) \\approx 0.7143 + 2.8$, giving $3.5143$ and resulting in a smaller correction step."
         }
     ],
     "bradley_insight": {
