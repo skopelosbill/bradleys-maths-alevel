@@ -889,7 +889,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Radians Mode and Domain Limits",
-        "content": "Ensure your calculator is in **Radian** mode. When solving $x - \\alpha = \\dfrac{\\pi}{2}$, add $\\alpha$ to both sides and check that the resulting angle is positive and in range."
+        "content": "Ensure your calculator is in <strong>>Radian<\strong> mode. When solving $x - \\alpha = \\dfrac{\\pi}{2}$, add $\\alpha$ to both sides and check that the resulting angle is positive and in range."
     }
 },
 {
@@ -904,11 +904,11 @@ window.ALEVEL_QUESTIONS = [
         "Quadratic Trigonometric Expressions"
     ],
     "img": false,
-    "question": "The expression $24\\cos\\theta - 7\\sin\\theta$ can be written in the form $R\\cos(\\theta + \\alpha)$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$.<br><br><strong>(i)</strong> Find the value of $R$ and the value of $\\alpha$ correct to 1 decimal place.<br><br><strong>(ii)</strong> Hence, find the maximum and minimum values of: \\begin{aligned} &f(\\theta) = (24\\cos\\theta - 7\\sin\\theta)^2 \\cr &\\qquad + 6(24\\cos\\theta - 7\\sin\\theta) + 12 \\end{aligned}",
+    "question": "The expression $24\\cos\\theta - 7\\sin\\theta$ can be written in the form $R\\cos(\\theta + \\alpha)$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$.<br><br><strong>(i)</strong> Find the value of $R$ and the value of $\\alpha$ correct to 1 decimal place.<br><br><strong>(ii)</strong> Hence, find the maximum and minimum values of: \\begin{aligned} &f(\\theta)\\cr & = (24\\cos\\theta - 7\\sin\\theta)^2 \\cr &\\quad + 6(24\\cos\\theta - 7\\sin\\theta) + 12 \\end{aligned}",
     "steps": [
         "Using the compound angle identity: \\begin{aligned} &R\\cos(\\theta + \\alpha) \\cr &\\quad = R\\cos\\theta\\cos\\alpha \\cr &\\qquad - R\\sin\\theta\\sin\\alpha \\end{aligned} Equating coefficients with $24\\cos\\theta - 7\\sin\\theta$: \\begin{aligned} &R\\cos\\alpha = 24 \\cr &R\\sin\\alpha = 7 \\end{aligned}",
         "To find $R$: \\begin{aligned} &R^2 = 24^2 + 7^2 \\cr &\\quad = 625 \\cr &\\quad \\implies R = 25 \\end{aligned} To find $\\alpha$: \\begin{aligned} &\\tan\\alpha = \\dfrac{7}{24} \\cr &\\quad \\implies \\alpha \\approx 16.3^\\circ \\end{aligned} Thus, the expression is: \\begin{aligned} &25\\cos(\\theta + 16.3^\\circ) \\end{aligned}",
-        "Let $u = 24\\cos\\theta - 7\\sin\\theta = 25\\cos(\\theta + 16.3^\\circ)$. Since $-1 \\le \\cos(\\dots) \\le 1$, the domain of $u$ is $-25 \\le u \\le 25$.<br><br>Substituting $u$ gives the quadratic: \\begin{aligned} &f(u) = u^2 + 6u + 12 \\end{aligned}",
+        "Let \\begin{aligned} u & = 24\\cos\\theta - 7\\sin\\theta\\cr & = 25\\cos(\\theta + 16.3^\\circ)\\end{aligned} Since $-1 \\le \\cos(\\dots) \\le 1$, the domain of $u$ is $-25 \\le u \\le 25$.<br><br>Substituting $u$ gives the quadratic: \\begin{aligned} &f(u) = u^2 + 6u + 12 \\end{aligned}",
         "Completing the square on $f(u)$: \\begin{aligned} &f(u) \\cr &\\quad = (u^2 + 6u + 9) - 9 + 12 \\cr &\\quad = (u + 3)^2 + 3 \\end{aligned} The vertex is at $u = -3$. Since $-3 \\in [-25, 25]$, the minimum value is: \\begin{aligned} &f_{\\text{min}} = 3 \\end{aligned}",
         "The maximum occurs at the endpoint furthest from $u = -3$, which is $u = 25$:<br><br>• At $u = -25$: \\begin{aligned} &f(-25) \\cr &\\quad = (-25 + 3)^2 + 3 \\cr &\\quad = (-22)^2 + 3 \\cr &\\quad = 487 \\end{aligned} • At $u = 25$: \\begin{aligned} &f(25) \\cr &\\quad = (25 + 3)^2 + 3 \\cr &\\quad = 28^2 + 3 \\cr &\\quad = 787 \\end{aligned} Thus, $\\text{Max} = 787$ and $\\text{Min} = 3$.",
         "Final Answer: $$\\text{Max} = 787,\\ \\text{Min} = 3$$"
@@ -1027,12 +1027,13 @@ window.ALEVEL_QUESTIONS = [
         "Linear Denominators"
     ],
     "img": false,
-    "question": "Express the following algebraic fraction in partial fractions:<br>$$\\dfrac{ 7x - 1 }{ (x + 3)(x - 1) }$$",
+    "question": "Express the following algebraic fraction in partial fractions:$$\\dfrac{ 7x - 1 }{ (x + 3)(x - 1) }$$",
     "steps": [
-        "We set up the partial fractions identity for distinct linear factors:<br>$$\\dfrac{ 7x - 1 }{ (x + 3)(x - 1) } \\equiv \\dfrac{ A }{ x + 3 } + \\dfrac{ B }{ x - 1 }$$<br>Multiply both sides by $(x + 3)(x - 1)$ to obtain the linear identity:<br>$$7x - 1 \\equiv A(x - 1) + B(x + 3)$$",
-        "To find the constant $B$, substitute $x = 1$ to eliminate the $A$ term:<br>\\begin{aligned} 7(1) - 1 &= B(1 + 3) \\cr 6 &= 4B \\cr B &= 1.5 \\end{aligned}",
-        "To find the constant $A$, substitute $x = -3$ to eliminate the $B$ term:<br>\\begin{aligned} 7(-3) - 1 &= A(-3 - 1) \\cr -22 &= -4A \\cr A &= 5.5 \\end{aligned}",
-        "Substituting the values of $A$ and $B$ back into our initial expression gives the final partial fractions:<br>$$\\dfrac{ 5.5 }{ x + 3 } + \\dfrac{ 1.5 }{ x - 1 }$$"
+        "We set up the partial fractions identity for distinct linear factors:\\begin{aligned} &\\dfrac{ 7x - 1 }{ (x + 3)(x - 1) } \\cr &\\quad \\equiv \\dfrac{ A }{ x + 3 } + \\dfrac{ B }{ x - 1 } \\end{aligned}Multiply both sides by $(x + 3)(x - 1)$ to obtain the linear identity:\\begin{aligned} &7x - 1 \\cr &\\quad \\equiv A(x - 1) + B(x + 3) \\end{aligned}",
+        "To find the constant $B$, substitute $x = 1$ to eliminate the $A$ term:\\begin{aligned} &7(1) - 1 = B(1 + 3) \\cr &6 = 4B \\cr &B = 1.5 \\end{aligned}",
+        "To find the constant $A$, substitute $x = -3$ to eliminate the $B$ term:\\begin{aligned} &7(-3) - 1 = A(-3 - 1) \\cr &-22 = -4A \\cr &A = 5.5 \\end{aligned}",
+        "Substitute the values of $A = 5.5$ and $B = 1.5$ back into our initial setup:\\begin{aligned} &\\dfrac{ 7x - 1 }{ (x + 3)(x - 1) } \\cr &\\quad = \\dfrac{ 5.5 }{ x + 3 } + \\dfrac{ 1.5 }{ x - 1 } \\end{aligned}",
+        "Final Answer: $$\\dfrac{ 5.5 }{ x + 3 } + \\dfrac{ 1.5 }{ x - 1 }$$"
     ],
     "pi_options": [
         {
@@ -1051,7 +1052,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Checking Partial Fractions",
-        "content": "Always do a quick sanity check by substituting a simple value like $x = 0$ or $x = 2$ back into both the original fraction and your partial fractions. At $x = 0$, the original is $\\frac{ -1 }{ -3 } = \\frac{ 1 }{ 3 }$, and the answer is $\\frac{ 5.5 }{ 3 } - 1.5 = 1.833 - 1.5 = 0.333 = \\frac{ 1 }{ 3 }$. It works!"
+        "content": "Always do a quick sanity check by substituting a simple value like $x = 0$ or $x = 2$ back into both the original fraction and your partial fractions. At $x = 0$, the original fraction gives $\\dfrac{ -1 }{ -3 } = \\dfrac{ 1 }{ 3 }$. Substituting into our partial fractions yields:\\begin{aligned} &\\dfrac{ 5.5 }{ 3 } - 1.5 \\cr &\\quad = \\dfrac{ 11 }{ 6 } - \\dfrac{ 9 }{ 6 } \\cr &\\quad = \\dfrac{ 1 }{ 3 } \\end{aligned}Both values match!"
     }
 },
 {
@@ -1065,13 +1066,14 @@ window.ALEVEL_QUESTIONS = [
         "Repeated Linear Factors"
     ],
     "img": false,
-    "question": "Express the following algebraic fraction in partial fractions:<br>$$\\dfrac{ x + 7 }{ (x + 1)(x - 2)^2 }$$",
+    "question": "Express the following algebraic fraction in partial fractions:$$\\dfrac{ x + 7 }{ (x + 1)(x - 2)^2 }$$",
     "steps": [
-        "We set up the partial fractions identity for repeated linear factors in the denominator:<br>$$\\dfrac{ x + 7 }{ (x + 1)(x - 2)^2 } \\equiv \\dfrac{ A }{ x + 1 } + \\dfrac{ B }{ x - 2 } + \\dfrac{ C }{ (x - 2)^2 }$$<br>Multiply both sides by $(x + 1)(x - 2)^2$ to obtain the identity:<br>$$x + 7 \\equiv A(x - 2)^2 + B(x + 1)(x - 2) + C(x + 1)$$",
-        "To find the constant $C$, substitute $x = 2$ to eliminate both the $A$ and $B$ terms:<br>\\begin{aligned} 2 + 7 &= C(2 + 1) \\cr 9 &= 3C \\cr C &= 3 \\end{aligned}",
-        "To find the constant $A$, substitute $x = -1$ to eliminate both the $B$ and $C$ terms:<br>\\begin{aligned} -1 + 7 &= A(-1 - 2)^2 \\cr 6 &= A(-3)^2 \\cr 6 &= 9A \\cr A &= \\dfrac{ 2 }{ 3 } \\end{aligned}",
-        "To find the constant $B$, we equate the coefficients of the $x^2$ terms on both sides of the identity:<br>\\begin{aligned} 0 &= A + B \\cr 0 &= \\dfrac{ 2 }{ 3 } + B \\cr B &= -\\dfrac{ 2 }{ 3 } \\end{aligned}",
-        "Substituting the values of $A$, $B$, and $C$ back into our initial setup gives:<br>$$\\dfrac{ 2 }{ 3(x + 1) } - \\dfrac{ 2 }{ 3(x - 2) } + \\dfrac{ 3 }{ (x - 2)^2 }$$"
+        "We set up the partial fractions identity for repeated linear factors in the denominator:\\begin{aligned} &\\dfrac{ x + 7 }{ (x + 1)(x - 2)^2 } \\cr &\\quad \\equiv \\dfrac{ A }{ x + 1 } + \\dfrac{ B }{ x - 2 } \\cr &\\qquad + \\dfrac{ C }{ (x - 2)^2 } \\end{aligned}Multiply both sides by $(x + 1)(x - 2)^2$ to obtain the identity:\\begin{aligned} &x + 7 \\cr &\\quad \\equiv A(x - 2)^2 \\cr &\\qquad + B(x + 1)(x - 2) \\cr &\\qquad + C(x + 1) \\end{aligned}",
+        "To find the constant $C$, substitute $x = 2$ to eliminate both the $A$ and $B$ terms:\\begin{aligned} &2 + 7 = C(2 + 1) \\cr &9 = 3C \\cr &C = 3 \\end{aligned}",
+        "To find the constant $A$, substitute $x = -1$ to eliminate both the $B$ and $C$ terms:\\begin{aligned} &-1 + 7 = A(-1 - 2)^2 \\cr &6 = A(-3)^2 \\cr &6 = 9A \\cr &A = \\dfrac{ 2 }{ 3 } \\end{aligned}",
+        "To find the constant $B$, equate the coefficients of the $x^2$ terms on both sides of the identity:\\begin{aligned} &0 = A + B \\cr &0 = \\dfrac{ 2 }{ 3 } + B \\cr &B = -\\dfrac{ 2 }{ 3 } \\end{aligned}",
+        "Substitute the values of $A$, $B$, and $C$ back into our initial setup:\\begin{aligned} &\\dfrac{ x + 7 }{ (x + 1)(x - 2)^2 } \\cr &\\quad = \\dfrac{ 2 }{ 3(x + 1) } - \\dfrac{ 2 }{ 3(x - 2) } \\cr &\\qquad + \\dfrac{ 3 }{ (x - 2)^2 } \\end{aligned}",
+        "Final Answer: $$\\dfrac{ 2 }{ 3(x + 1) } - \\dfrac{ 2 }{ 3(x - 2) } + \\dfrac{ 3 }{ (x - 2)^2 }$$"
     ],
     "pi_options": [
         {
@@ -1084,7 +1086,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$\\dfrac{ 1 }{ x + 1 } - \\dfrac{ 1 }{ x - 2 } + \\dfrac{ 3 }{ (x - 2)^2 }$$",
-            "feedback": "This occurs if you make an arithmetic slip when simplifying the equation for $A$, such as simplifying $9A = 6$ to $A = 9/6 = 1.5$ instead of $A = 6/9 = 2/3$."
+            "feedback": "This occurs if you make an arithmetic slip when simplifying the equation for $A$, calculating $A = \\dfrac{ 9 }{ 6 }$ instead of $A = \\dfrac{ 6 }{ 9 }$, which simplifies to $\\dfrac{ 2 }{ 3 }$."
         }
     ],
     "bradley_insight": {
@@ -1104,18 +1106,19 @@ window.ALEVEL_QUESTIONS = [
         "Repeated Linear Factors"
     ],
     "img": false,
-    "question": "Express the following algebraic fraction in partial fractions:<br>$$\\dfrac{ 4x^2 - 3x + 5 }{ (x - 1)^2(x + 2) }$$",
+    "question": "Express the following algebraic fraction in partial fractions:$$\\dfrac{ 4x^2 - 3x + 5 }{ (x - 1)^2(x + 2) }$$",
     "steps": [
-        "We set up the partial fractions identity for the repeated linear factor $(x - 1)^2$ and distinct factor $(x + 2)$:<br>$$\\dfrac{ 4x^2 - 3x + 5 }{ (x - 1)^2(x + 2) } \\equiv \\dfrac{ A }{ x - 1 } + \\dfrac{ B }{ (x - 1)^2 } + \\dfrac{ C }{ x + 2 }$$<br>Multiply both sides by the denominator $(x - 1)^2(x + 2)$ to obtain the linear identity:<br>$$4x^2 - 3x + 5 \\equiv A(x - 1)(x + 2) + B(x + 2) + C(x - 1)^2$$",
-        "To find the constant $B$, substitute $x = 1$ to eliminate both the $A$ and $C$ terms:<br>\\begin{aligned} 4(1)^2 - 3(1) + 5 &= B(1 + 2) \\cr 6 &= 3B \\cr B &= 2 \\end{aligned}",
-        "To find the constant $C$, substitute $x = -2$ to eliminate both the $A$ and $B$ terms:<br>\\begin{aligned} 4(-2)^2 - 3(-2) + 5 &= C(-2 - 1)^2 \\cr 16 + 6 + 5 &= 9C \\cr 27 &= 9C \\cr C &= 3 \\end{aligned}",
-        "To find the constant $A$, we equate the coefficients of the $x^2$ terms on both sides of the identity:<br>\\begin{aligned} 4 &= A + C \\cr 4 &= A + 3 \\cr A &= 1 \\end{aligned}",
-        "Substituting the values of $A$, $B$, and $C$ back into our initial setup yields the final partial fractions:<br>$$\\dfrac{ 1 }{ x - 1 } + \\dfrac{ 2 }{ (x - 1)^2 } + \\dfrac{ 3 }{ x + 2 }$$"
+        "We set up the partial fractions identity for the repeated linear factor $(x - 1)^2$ and distinct factor $(x + 2)$:\\begin{aligned} &\\dfrac{ 4x^2 - 3x + 5 }{ (x - 1)^2(x + 2) } \\cr &\\quad \\equiv \\dfrac{ A }{ x - 1 } + \\dfrac{ B }{ (x - 1)^2 } \\cr &\\qquad + \\dfrac{ C }{ x + 2 } \\end{aligned}Multiply both sides by the denominator $(x - 1)^2(x + 2)$ to obtain the linear identity:\\begin{aligned} &4x^2 - 3x + 5 \\cr &\\quad \\equiv A(x - 1)(x + 2) \\cr &\\qquad + B(x + 2) \\cr &\\qquad + C(x - 1)^2 \\end{aligned}",
+        "To find the constant $B$, substitute $x = 1$ to eliminate both the $A$ and $C$ terms:\\begin{aligned} &4(1)^2 - 3(1) + 5 = B(1 + 2) \\cr &6 = 3B \\cr &B = 2 \\end{aligned}",
+        "To find the constant $C$, substitute $x = -2$ to eliminate both the $A$ and $B$ terms:\\begin{aligned} &4(-2)^2 - 3(-2) + 5 \\cr &\\quad = C(-2 - 1)^2 \\cr &16 + 6 + 5 = 9C \\cr &27 = 9C \\cr &C = 3 \\end{aligned}",
+        "To find the constant $A$, equate the coefficients of the $x^2$ terms on both sides of the identity:\\begin{aligned} &4 = A + C \\cr &4 = A + 3 \\cr &A = 1 \\end{aligned}",
+        "Substitute the values of $A$, $B$, and $C$ back into our initial setup:\\begin{aligned} &\\dfrac{ 4x^2 - 3x + 5 }{ (x - 1)^2(x + 2) } \\cr &\\quad = \\dfrac{ 1 }{ x - 1 } + \\dfrac{ 2 }{ (x - 1)^2 } \\cr &\\qquad + \\dfrac{ 3 }{ x + 2 } \\end{aligned}",
+        "Final Answer: $$\\dfrac{ 1 }{ x - 1 } + \\dfrac{ 2 }{ (x - 1)^2 } + \\dfrac{ 3 }{ x + 2 }$$"
     ],
     "pi_options": [
         {
             "ans": "$$\\dfrac{ 7 }{ x - 1 } + \\dfrac{ 2 }{ (x - 1)^2 } + \\dfrac{ 3 }{ x + 2 }$$",
-            "feedback": "This error occurs if you make a sign error when equating the $x^2$ coefficients, solving the equation as $A = 4 + C = 4 + 3 = 7$ instead of $A = 4 - C = 1$."
+            "feedback": "This error occurs if you make a sign error when equating the $x^2$ coefficients, solving $A = 4 + C$ to obtain $A = 7$ instead of $A = 4 - C$, which gives $A = 1$."
         },
         {
             "ans": "$$\\dfrac{ 1 }{ x - 1 } + \\dfrac{ 6 }{ (x - 1)^2 } + \\dfrac{ 3 }{ x + 2 }$$",
@@ -1144,13 +1147,14 @@ window.ALEVEL_QUESTIONS = [
         "Algebraic Division"
     ],
     "img": false,
-    "question": "Express the following improper algebraic fraction in partial fractions:<br>$$\\dfrac{ 2x^2 + 5x - 7 }{ (x + 3)(x - 2) }$$",
+    "question": "Express the following improper algebraic fraction in partial fractions:$$\\dfrac{ 2x^2 + 5x - 7 }{ (x + 3)(x - 2) }$$",
     "steps": [
-        "Since the degree of the numerator (2) is equal to the degree of the denominator (2), this is an improper fraction. We must set up our decomposition with a constant term $A$:<br>$$\\dfrac{ 2x^2 + 5x - 7 }{ (x + 3)(x - 2) } \\equiv A + \\dfrac{ B }{ x + 3 } + \\dfrac{ C }{ x - 2 }$$<br>Expanding the denominator gives $(x + 3)(x - 2) = x^2 + x - 6$. By equating the coefficients of $x^2$ (or through algebraic division), we find:<br>$$A = 2$$",
-        "Now, multiply both sides of the identity by the denominator $(x + 3)(x - 2)$ to form the linear identity:<br>$$2x^2 + 5x - 7 \\equiv 2(x^2 + x - 6) + B(x - 2) + C(x + 3)$$<br>Subtract $2(x^2 + x - 6) = 2x^2 + 2x - 12$ from both sides to simplify the identity:<br>$$3x + 5 \\equiv B(x - 2) + C(x + 3)$$",
-        "To find the constant $C$, substitute $x = 2$ to eliminate the $B$ term:<br>\\begin{aligned} 3(2) + 5 &= C(2 + 3) \\cr 11 &= 5C \\cr C &= 2.2 \\end{aligned}",
-        "To find the constant $B$, substitute $x = -3$ to eliminate the $C$ term:<br>\\begin{aligned} 3(-3) + 5 &= B(-3 - 2) \\cr -4 &= -5B \\cr B &= 0.8 \\end{aligned}",
-        "Substituting $A$, $B$, and $C$ back into our initial setup yields the final expression:<br>$$2 + \\dfrac{ 0.8 }{ x + 3 } + \\dfrac{ 2.2 }{ x - 2 }$$"
+        "Since the degree of the numerator (2) is equal to the degree of the denominator (2), this is an improper fraction. We set up our decomposition with a constant term $A$:\\begin{aligned} &\\dfrac{ 2x^2 + 5x - 7 }{ (x + 3)(x - 2) } \\cr &\\quad \\equiv A + \\dfrac{ B }{ x + 3 } + \\dfrac{ C }{ x - 2 } \\end{aligned}Expanding the denominator gives $(x + 3)(x - 2) = x^2 + x - 6$. By equating the coefficients of $x^2$ (or through algebraic division), we find:$$A = 2$$",
+        "Now, multiply both sides of the identity by the denominator $(x + 3)(x - 2)$ to form the linear identity:\\begin{aligned} &2x^2 + 5x - 7 \\cr &\\quad \\equiv 2(x^2 + x - 6) \\cr &\\qquad + B(x - 2) \\cr &\\qquad + C(x + 3) \\end{aligned}Expanding $2(x^2 + x - 6)$ gives $2x^2 + 2x - 12$. Subtracting this from both sides simplifies the identity:\\begin{aligned} &3x + 5 \\cr &\\quad \\equiv B(x - 2) + C(x + 3) \\end{aligned}",
+        "To find the constant $C$, substitute $x = 2$ to eliminate the $B$ term:\\begin{aligned} &3(2) + 5 = C(2 + 3) \\cr &11 = 5C \\cr &C = 2.2 \\end{aligned}",
+        "To find the constant $B$, substitute $x = -3$ to eliminate the $C$ term:\\begin{aligned} &3(-3) + 5 = B(-3 - 2) \\cr &-4 = -5B \\cr &B = 0.8 \\end{aligned}",
+        "Substitute $A$, $B$, and $C$ back into our initial setup:\\begin{aligned} &\\dfrac{ 2x^2 + 5x - 7 }{ (x + 3)(x - 2) } \\cr &\\quad = 2 + \\dfrac{ 0.8 }{ x + 3 } + \\dfrac{ 2.2 }{ x - 2 } \\end{aligned}",
+        "Final Answer: $$2 + \\dfrac{ 0.8 }{ x + 3 } + \\dfrac{ 2.2 }{ x - 2 }$$"
     ],
     "pi_options": [
         {
@@ -1159,7 +1163,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$1 + \\dfrac{ 0.8 }{ x + 3 } + \\dfrac{ 2.2 }{ x - 2 }$$",
-            "feedback": "This occurs if you incorrectly divide the leading terms of the numerator and denominator, setting $A = 1$ instead of $A = 2$ ($2x^2 / x^2 = 2$)."
+            "feedback": "This occurs if you incorrectly divide the leading terms of the numerator and denominator, setting $A = 1$ instead of $A = 2$ (since $\\dfrac{ 2x^2 }{ x^2 } = 2$)."
         },
         {
             "ans": "$$2 + \\dfrac{ 2.2 }{ x + 3 } + \\dfrac{ 0.8 }{ x - 2 }$$",
@@ -1169,7 +1173,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Spotting Improper Fractions",
-        "content": "Before you write down any partial fraction decomposition, look at the degrees! If the degree of the numerator is <strong>greater than or equal to</strong>> the degree of the denominator, the fraction is improper and must be divided first (or written with a polynomial part). Doing standard linear decomposition on an improper fraction will fail completely."
+        "content": "Before you write down any partial fraction decomposition, look at the degrees! If the degree of the numerator is <strong>greater than or equal to</strong> the degree of the denominator, the fraction is improper and must be divided first (or written with a polynomial part). Doing standard linear decomposition on an improper fraction will fail completely."
     }
 },
 {
@@ -1184,17 +1188,18 @@ window.ALEVEL_QUESTIONS = [
         "Linear Denominators"
     ],
     "img": false,
-    "question": "Consider the algebraic expression $f(x) = \\dfrac{ x + 5 }{ (1 - x)(1 + x) }$.<br><br><strong>(a)</strong> Express $f(x)$ in partial fractions.<br><br><strong>(b)</strong> Hence, find the binomial expansion of $f(x)$ in ascending powers of $x$, up to and including the term in $x^2$.",
+    "question": "Consider the algebraic expression:$$f(x) = \\dfrac{ x + 5 }{ (1 - x)(1 + x) }$$<strong>(a)</strong> Express $f(x)$ in partial fractions.<br><br><strong>(b)</strong> Hence, find the binomial expansion of $f(x)$ in ascending powers of $x$, up to and including the term in $x^2$.",
     "steps": [
-        "<strong>Part (a):</strong> We set up the partial fractions identity for distinct linear factors:<br>$$\\dfrac{ x + 5 }{ (1 - x)(1 + x) } \\equiv \\dfrac{ A }{ 1 - x } + \\dfrac{ B }{ 1 + x }$$<br>Multiply both sides by $(1 - x)(1 + x)$ to form the linear identity:<br>$$x + 5 \\equiv A(1 + x) + B(1 - x)$$",
-        "Find the constants $A$ and $B$ by substitution:<br>Substitute $x = 1$ to find $A$:<br>\\begin{aligned} 1 + 5 &= A(1 + 1) \\cr 6 &= 2A \\cr A &= 3 \\end{aligned}<br>Substitute $x = -1$ to find $B$:<br>\\begin{aligned} -1 + 5 &= B(1 - (-1)) \\cr 4 &= 2B \\cr B &= 2 \\end{aligned}<br>Thus, the partial fractions representation is:<br>$$\\dfrac{ 3 }{ 1 - x } + \\dfrac{ 2 }{ 1 + x }$$",
-        "<strong>Part (b):</strong> We rewrite our partial fractions using negative indices to prepare for binomial expansion:<br>$$f(x) = 3(1 - x)^{ -1 } + 2(1 + x)^{ -1 }$$<br>Using the standard binomial expansions for negative integer powers:<br>\\begin{aligned} (1 - x)^{ -1 } &= 1 + x + x^2 + \\dots \\cr (1 + x)^{ -1 } &= 1 - x + x^2 - \\dots \\end{aligned}",
-        "Substitute these expansions back into our expression for $f(x)$ and combine like terms:<br>\\begin{aligned} f(x) &\\approx 3(1 + x + x^2) + 2(1 - x + x^2) \\cr &\\approx (3 + 3x + 3x^2) + (2 - 2x + 2x^2) \\cr &\\approx 5 + x + 5x^2 \\end{aligned}"
+        "<strong>Part (a):</strong> We set up the partial fractions identity for distinct linear factors:\\begin{aligned} &\\dfrac{ x + 5 }{ (1 - x)(1 + x) } \\cr &\\quad \\equiv \\dfrac{ A }{ 1 - x } + \\dfrac{ B }{ 1 + x } \\end{aligned}Multiply both sides by $(1 - x)(1 + x)$ to form the linear identity:\\begin{aligned} &x + 5 \\cr &\\quad \\equiv A(1 + x) + B(1 - x) \\end{aligned}",
+        "Find the constants $A$ and $B$ by substitution.<br><br>Substitute $x = 1$ to find $A$:\\begin{aligned} &1 + 5 = A(1 + 1) \\cr &6 = 2A \\cr &A = 3 \\end{aligned}Substitute $x = -1$ to find $B$:\\begin{aligned} &-1 + 5 = B(1 - (-1)) \\cr &4 = 2B \\cr &B = 2 \\end{aligned}Thus, the partial fractions representation is:$$\\dfrac{ 3 }{ 1 - x } + \\dfrac{ 2 }{ 1 + x }$$",
+        "<strong>Part (b):</strong> We rewrite our partial fractions using negative indices to prepare for binomial expansion:\\begin{aligned} &f(x) \\cr &\\quad = 3(1 - x)^{-1} + 2(1 + x)^{-1} \\end{aligned}Using the standard binomial expansions for negative integer powers:\\begin{aligned} &(1 - x)^{-1} \\cr &\\quad = 1 + x + x^2 + \\dots \\cr &(1 + x)^{-1} \\cr &\\quad = 1 - x + x^2 - \\dots \\end{aligned}",
+        "Substitute these expansions back into our expression for $f(x)$ and combine like terms:\\begin{aligned} &f(x) \\cr &\\quad \\approx 3(1 + x + x^2) \\cr &\\qquad + 2(1 - x + x^2) \\cr &\\quad = (3 + 3x + 3x^2) \\cr &\\qquad + (2 - 2x + 2x^2) \\cr &\\quad = 5 + x + 5x^2 \\end{aligned}",
+        "Final Answer: <strong>(a)</strong> $\\dfrac{ 3 }{ 1 - x } + \\dfrac{ 2 }{ 1 + x }$<br><strong>(b)</strong> $5 + x + 5x^2$"
     ],
     "pi_options": [
         {
             "ans": "<strong>(a)</strong> $\\dfrac{ 3 }{ 1 - x } + \\dfrac{ 2 }{ 1 + x }$<br><strong>(b)</strong> $5 + 5x + 5x^2$",
-            "feedback": "This error occurs in part (b) if you forget to apply the alternating sign change in the expansion of $(1 + x)^{ -1 } = 1 - x + x^2$, expanding it incorrectly as $1 + x + x^2$ instead."
+            "feedback": "This error occurs in part (b) if you forget to apply the alternating sign change in the expansion of $(1 + x)^{-1} = 1 - x + x^2$, expanding it incorrectly as $1 + x + x^2$ instead."
         },
         {
             "ans": "<strong>(a)</strong> $\\dfrac{ 3 }{ 1 - x } - \\dfrac{ 2 }{ 1 + x }$<br><strong>(b)</strong> $1 + 5x + x^2$",
@@ -1208,7 +1213,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Synoptic Binomial Connections",
-        "content": "Connecting partial fractions with binomial expansions is a classic A-level exam favourite. Remember, expanding the separate simplified terms $3(1 - x)^{ -1 } + 2(1 + x)^{ -1 }$ individually is vastly simpler than trying to expand the original expression $(x + 5)(1 - x^2)^{ -1 }$ using the product rule!"
+        "content": "Connecting partial fractions with binomial expansions is a classic A-level exam favourite. Remember, expanding the separate simplified terms $3(1 - x)^{-1}$ and $2(1 + x)^{-1}$ individually is vastly simpler than trying to expand the original expression $(x + 5)(1 - x^2)^{-1}$ using the product rule!"
     }
 },
 {
