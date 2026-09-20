@@ -375,47 +375,5 @@ window.ALEVEL_QUESTIONS = [
         "content": "When deposits are made at the beginning of each year, every deposit receives interest at the end of that year. This means the first term of your geometric series is $1000(1.05) = 1050$ instead of $1000$. Paying attention to this detail is the key to setting up your series correctly."
     }
 },
-{
-    "id": "004810",
-    "board": "CCEA",
-    "branch": "Pure",
-    "level": "A",
-    "major_area": "Algebra and Functions",
-    "topic": "Sequences and Series",
-    "subtopic": [
-        "Geometric Progressions",
-        "Sum to Infinity",
-        "Financial Modelling"
-    ],
-    "img": false,
-    "question": "<strong>Section (a)</strong><br><br><strong>(i)</strong> Prove that the sum to infinity, $S_\\infty$, of a geometric progression with first term $a$ and common ratio $r$ is:$$S_\\infty = \\dfrac{ a }{ 1 - r }$$stating the condition on $r$ for which this sum exists.<br><br><strong>(ii)</strong> An infinite geometric progression has sum to infinity $54$. Given that the sum of the first two terms of this progression is $48$ and the common ratio $r$ is positive, show that:$$9r^2 - 1 = 0$$<strong>(iii)</strong> Hence, find the value of $r$.<br><br><strong>Section (b)</strong><br><br>A person takes out a loan of £10,000. Interest is charged at a rate of 1.5% per month, calculated and added to the outstanding balance at the end of each month. At the end of each month, immediately after interest is added, the borrower makes a fixed repayment of £$X$.<br><br><strong>(i)</strong> Show that the amount owed at the end of Month 3, after the third repayment has been made, is given by:$$10000(1.015)^3 - X(1.015^2 + 1.015 + 1)$$<strong>(ii)</strong> Form and sum a geometric series to prove that the amount owed at the end of Month $n$, after the $n$-th repayment has been made, is given by:$$10000(1.015)^n - \\dfrac{ X }{ 0.015 }(1.015^n - 1)$$<strong>(iii)</strong> Hence, find the exact monthly repayment £$X$ required to completely pay off the loan in exactly $60$ months (5 years). Give your answer to the nearest penny.",
-    "steps": [
-        "<strong>Section (a)</strong><br><br><strong>Part (i):</strong> We start with the geometric progression sum formula $S_n = \\dfrac{ a(1 - r^n) }{ 1 - r }$.<br><br>For the sum to infinity to exist, the term $r^n$ must approach zero as $n \\to \\infty$. This occurs if and only if:$$|r| < 1 \\quad (\\text{or } -1 < r < 1)$$Under this condition, $r^n \\to 0$, which yields:$$S_\\infty = \\dfrac{ a }{ 1 - r }$$",
-        "<strong>Part (ii):</strong> We are given the sum to infinity $S_\\infty = 54$:\\begin{aligned} &54 = \\dfrac{ a }{ 1 - r } \\cr &a = 54(1 - r) \\end{aligned}We are also given the sum of the first two terms $S_2 = 48$, where $a + ar = a(1 + r)$. Substitute $a = 54(1 - r)$ into this equation:\\begin{aligned} &54(1 - r)(1 + r) = 48 \\cr &54(1 - r^2) = 48 \\cr &1 - r^2 = \\dfrac{ 8 }{ 9 } \\cr &r^2 = \\dfrac{ 1 }{ 9 } \\cr &9r^2 - 1 = 0 \\end{aligned}",
-        "<strong>Part (iii):</strong> Solve the equation $9r^2 - 1 = 0$:\\begin{aligned} &r^2 = \\dfrac{ 1 }{ 9 } \\cr &r = \\pm \\dfrac{ 1 }{ 3 } \\end{aligned}Since the common ratio $r$ is positive, we reject the negative root. Thus:$$r = \\dfrac{ 1 }{ 3 }$$",
-        "<strong>Section (b)</strong><br><br><strong>Part (i):</strong> Trace the balance owed at the end of each month:<br><br>• End of Month 1: $10000(1.015) - X$<br><br>• End of Month 2: The previous balance is multiplied by $1.015$, and repayment $X$ is made:\\begin{aligned} &\\text{Balance} \\cr &\\quad = [10000(1.015) - X](1.015) - X \\cr &\\quad = 10000(1.015)^2 - X(1.015) - X \\cr &\\quad = 10000(1.015)^2 - X(1.015 + 1) \\end{aligned}<br>• End of Month 3: The previous balance is multiplied by $1.015$, and repayment $X$ is made:\\begin{aligned} &\\text{Balance} \\cr &\\quad = [10000(1.015)^2 - X(1.015 + 1)](1.015) - X \\cr &\\quad = 10000(1.015)^3 \\cr &\\qquad - X(1.015^2 + 1.015 + 1) \\end{aligned}",
-        "<strong>Part (ii):</strong> Following this recurrence pattern, the balance owed at the end of Month $n$ is:\\begin{aligned} &\\text{Balance} \\cr &\\quad = 10000(1.015)^n \\cr &\\qquad - X(1 + 1.015 + \\dots + 1.015^{ n-1 }) \\end{aligned}The term inside the brackets is a geometric series with first term $a = 1$ and common ratio $r = 1.015$. Summing this series gives:\\begin{aligned} &S_n = \\dfrac{ 1(1.015^n - 1) }{ 1.015 - 1 } \\cr &\\phantom{S_n} = \\dfrac{ 1.015^n - 1 }{ 0.015 } \\end{aligned}Substitute this back to find our remaining balance:$$\\text{Balance} = 10000(1.015)^n - \\dfrac{ X }{ 0.015 }(1.015^n - 1)$$",
-        "<strong>Part (iii):</strong> To pay off the loan completely in 60 months, the balance at $n = 60$ must be equal to $0$:\\begin{aligned} &0 = 10000(1.015)^{ 60 } \\cr &\\qquad - \\dfrac{ X }{ 0.015 }(1.015^{ 60 } - 1) \\cr &10000(1.015)^{ 60 } = \\dfrac{ X }{ 0.015 }(1.015^{ 60 } - 1) \\cr &X = \\dfrac{ 150(1.015)^{ 60 } }{ 1.015^{ 60 } - 1 } \\end{aligned}Using a calculator to evaluate $1.015^{ 60 } \\approx 2.44322$:\\begin{aligned} &X \\approx \\dfrac{ 150(2.44322) }{ 2.44322 - 1 } \\cr &\\phantom{X} \\approx \\dfrac{ 366.48297 }{ 1.44322 } \\cr &\\phantom{X} \\approx 253.934 \\end{aligned}Thus, the required monthly repayment is £253.93 (to the nearest penny).",
-        "Final Answer: <strong>Section (a) (iii)</strong> $r = \\dfrac{ 1 }{ 3 }$<br><strong>Section (b) (iii)</strong> £$253.93$"
-    ],
-    "pi_options": [
-        {
-            "ans": "<strong>Section (a) (iii)</strong> $r = \\dfrac{ 1 }{ 3 }$<br><strong>Section (b) (iii)</strong> £$251.23$",
-            "feedback": "Your Section (a) calculations are correct. In Section (b)(iii), this error occurs if you made a calculation slip when evaluating the exponential quotient, such as dividing by $1.45$ instead of $1.44322$."
-        },
-        {
-            "ans": "<strong>Section (a) (iii)</strong> $r = \\dfrac{ 1 }{ 9 }$<br><strong>Section (b) (iii)</strong> £$253.93$",
-            "feedback": "Your monthly repayment calculation in part (b) is correct. However, this error occurs in Section (a)(iii) if you forgot to take the square root of $r^2 = 1/9$, reporting $r = 1/9$ instead."
-        },
-        {
-            "ans": "<strong>Section (a) (iii)</strong> $r = \\dfrac{ 1 }{ 3 }$<br><strong>Section (b) (iii)</strong> £$166.67$",
-            "feedback": "Your Section (a) calculations are correct. In Section (b)(iii), this error occurs if you set up the equation incorrectly by neglecting the accumulated compound interest on the initial loan principal of £10,000, simply dividing the initial principal by 60 months ($10000/60 = 166.67$)."
-        }
-    ],
-    "bradley_insight": {
-        "type": "caution",
-        "title": "The Head Teacher's Eye: Reducing Balance Loan Recurrence",
-        "content": "Reducing balance loans are the most advanced application of geometric series. When setting up the recurrence relation, expand the first three terms step-by-step. This reveals the structure of the geometric series of repayments and prevents sign errors when subtracting the total repaid amount."
-    }
-}
+
 ];
