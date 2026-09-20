@@ -1840,22 +1840,23 @@ window.ALEVEL_QUESTIONS = [
         "Integration by Substitution"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Find:<br>$$\\int x^{-1/3} \\ln x \\mathrm{d}x$$<br><strong>(b)</strong> Using the substitution $u^2 = x^2 + 9$, or otherwise, find the exact value of:<br>$$\\int_{ 0 }^{ 4 } \\dfrac{ x^3 }{ \\sqrt{x^2 + 9} } \\mathrm{d}x$$",
+    "question": "<strong>(a)</strong> Find:$$\\int x^{-1/3} \\ln x \\text{d}x$$<strong>(b)</strong> Using the substitution $u^2 = x^2 + 9$, or otherwise, find the exact value of:$$\\int_{ 0 }^{ 4 } \\dfrac{ x^3 }{ \\sqrt{x^2 + 9} } \\text{d}x$$",
     "steps": [
-        "<strong>Part (a):</strong> We find the indefinite integral using integration by parts:<br>$$\\int u \\mathrm{d}v = uv - \\int v \\mathrm{d}u$$<br>Let $u = \\ln x$ and $\\mathrm{d}v = x^{-1/3} \\mathrm{d}x$.<br>The derivatives and integrals are:<br>\\begin{aligned} \\mathrm{d}u &= \\dfrac{ 1 }{ x } \\mathrm{d}x \\cr v &= \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\end{aligned}",
-        "Substitute these into our integration by parts formula:<br>\\begin{aligned} \\int x^{-1/3} \\ln x \\mathrm{d}x &= \\left( \\ln x \\right)\\left( \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\right) - \\int \\left( \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\right)\\left( \\dfrac{ 1 }{ x } \\right) \\mathrm{d}x \\cr &= \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\ln x - \\dfrac{ 3 }{ 2 } \\int x^{-1/3} \\mathrm{d}x \\cr &= \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\ln x - \\dfrac{ 3 }{ 2 } \\left( \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\right) + C \\cr &= \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\ln x - \\dfrac{ 9 }{ 4 } x^{ 2/3 } + C \\end{aligned}",
-        "<strong>Part (b):</strong> We evaluate the definite integral using the substitution $u^2 = x^2 + 9$.<br>Differentiating both sides gives:<br>$$2u \\mathrm{d}u = 2x \\mathrm{d}x \\implies u \\mathrm{d}u = x \\mathrm{d}x$$<br>Express the numerator $x^3 \\mathrm{d}x$ as $x^2(x \\mathrm{d}x) = (u^2 - 9)(u \\mathrm{d}u)$.<br><br>Now determine the new limits of integration:<br>\\begin{aligned} \\text{When } x &= 0 \\implies u^2 = 0 + 9 = 9 \\implies u = 3 \\cr \\text{When } x &= 4 \\implies u^2 = 16 + 9 = 25 \\implies u = 5 \\end{aligned}",
-        "Substitute the terms and the new limits into our integral:<br>\\begin{aligned} \\int_{ 0 }^{ 4 } \\dfrac{ x^3 }{ \\sqrt{x^2 + 9} } \\mathrm{d}x &= \\int_{ 3 }^{ 5 } \\dfrac{ (u^2 - 9)u \\mathrm{d}u }{ u } \\cr &= \\int_{ 3 }^{ 5 } (u^2 - 9) \\mathrm{d}u \\cr &= \\left[ \\dfrac{ u^3 }{ 3 } - 9u \\right]_{ 3 }^{ 5 } \\end{aligned}",
-        "Evaluate the expression at the upper and lower limits:<br>\\begin{aligned} \\text{At } u = 5: \\quad &\\dfrac{ 125 }{ 3 } - 9(5) = \\dfrac{ 125 }{ 3 } - 45 = -\\dfrac{ 10 }{ 3 } \\cr \\text{At } u = 3: \\quad &\\dfrac{ 27 }{ 3 } - 9(3) = 9 - 27 = -18 \\cr \\text{Exact Value} &= -\\dfrac{ 10 }{ 3 } - (-18) \\cr &= 18 - \\dfrac{ 10 }{ 3 } = \\dfrac{ 44 }{ 3 } \\end{aligned}"
+        "<strong>Part (a):</strong> We find the indefinite integral using integration by parts:$$\\int u \\text{d}v = uv - \\int v \\text{d}u$$Let $u = \\ln x$ and $\\text{d}v = x^{-1/3} \\text{d}x$.<br><br>The derivatives and integrals are:\\begin{aligned} &\\text{d}u = \\dfrac{ 1 }{ x } \\text{d}x \\cr &v = \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\end{aligned}",
+        "Substitute these into our integration by parts formula:\\begin{aligned} &\\int x^{-1/3} \\ln x \\text{d}x \\cr &\\quad = \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\ln x \\cr &\\qquad - \\int \\left( \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\right)\\left( \\dfrac{ 1 }{ x } \\right) \\text{d}x \\cr &\\quad = \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\ln x - \\dfrac{ 3 }{ 2 } \\int x^{-1/3} \\text{d}x \\cr &\\quad = \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\ln x \\cr &\\qquad - \\dfrac{ 3 }{ 2 } \\left( \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\right) + C \\cr &\\quad = \\dfrac{ 3 }{ 2 } x^{ 2/3 } \\ln x - \\dfrac{ 9 }{ 4 } x^{ 2/3 } + C \\end{aligned}",
+        "<strong>Part (b):</strong> Evaluate using the substitution $u^2 = x^2 + 9$.<br><br>Differentiating both sides gives:\\begin{aligned} &2u \\text{d}u = 2x \\text{d}x \\cr &u \\text{d}u = x \\text{d}x \\end{aligned}Express the numerator as:\\begin{aligned} &x^3 \\text{d}x = x^2(x \\text{d}x) \\cr &\\phantom{x^3 \\text{d}x} = (u^2 - 9)u \\text{d}u \\end{aligned}Determine the new limits of integration:<br><br>• When $x = 0$:\\begin{aligned} &u^2 = 9 \\cr &u = 3 \\end{aligned}<br>• When $x = 4$:\\begin{aligned} &u^2 = 16 + 9 \\cr &u^2 = 25 \\cr &u = 5 \\end{aligned}",
+        "Substitute the terms and the new limits into our integral:\\begin{aligned} &\\int_{ 0 }^{ 4 } \\dfrac{ x^3 }{ \\sqrt{x^2 + 9} } \\text{d}x \\cr &\\quad = \\int_{ 3 }^{ 5 } \\dfrac{ (u^2 - 9)u \\text{d}u }{ u } \\cr &\\quad = \\int_{ 3 }^{ 5 } (u^2 - 9) \\text{d}u \\cr &\\quad = \\left[ \\dfrac{ u^3 }{ 3 } - 9u \\right]_{ 3 }^{ 5 } \\end{aligned}",
+        "Evaluate at the upper and lower limits:<br><br>• At $u = 5$:\\begin{aligned} &\\dfrac{ 125 }{ 3 } - 9(5) \\cr &\\quad = \\dfrac{ 125 }{ 3 } - 45 \\cr &\\quad = -\\dfrac{ 10 }{ 3 } \\end{aligned}<br>• At $u = 3$:\\begin{aligned} &\\dfrac{ 27 }{ 3 } - 9(3) \\cr &\\quad = 9 - 27 \\cr &\\quad = -18 \\end{aligned}Subtract the lower limit value from the upper limit value:\\begin{aligned} &-\\dfrac{ 10 }{ 3 } - (-18) \\cr &\\quad = 18 - \\dfrac{ 10 }{ 3 } \\cr &\\quad = \\dfrac{ 44 }{ 3 } \\end{aligned}",
+        "Final Answer: <strong>(a)</strong> $\\dfrac{ 3 }{ 2 } x^{ 2/3 } \\ln x - \\dfrac{ 9 }{ 4 } x^{ 2/3 } + C$<br><strong>(b)</strong> $\\dfrac{ 44 }{ 3 }$"
     ],
     "pi_options": [
         {
             "ans": "<strong>(a)</strong> $\\dfrac{ 3 }{ 2 } x^{ 2/3 } \\ln x - \\dfrac{ 3 }{ 2 } x^{ 2/3 } + C$<br><strong>(b)</strong> $\\dfrac{ 10 }{ 3 }$",
-            "feedback": "This error in part (a) occurs if you forget to divide by the new exponent when integrating the remaining term $\\int \\frac{3}{2} x^{-1/3} \\mathrm{d}x$, writing $\\frac{3}{2}x^{2/3}$ instead of $\\frac{9}{4}x^{2/3}$. In part (b), $\\frac{10}{3}$ is the result of neglecting the lower integration boundary or making a sign error at $u=5$."
+            "feedback": "This error in part (a) occurs if you forget to divide by the new exponent when integrating the remaining term $\\int \\frac{3}{2} x^{-1/3} \\text{d}x$, writing $\\frac{3}{2}x^{2/3}$ instead of $\\frac{9}{4}x^{2/3}$. In part (b), $\\frac{10}{3}$ is the result of neglecting the lower integration boundary or making a sign error at $u = 5$."
         },
         {
             "ans": "<strong>(a)</strong> $\\dfrac{ 3 }{ 2 } x^{ 2/3 } \\ln x - \\dfrac{ 9 }{ 4 } x^{ 2/3 } + C$<br><strong>(b)</strong> $\\dfrac{ 16 }{ 3 }$",
-            "feedback": "Your integration in part (a) is correct. In part (b), this error occurs if you make an arithmetic error when evaluating $u^3/3 - 9u$ at the lower limit $u=3$, such as evaluating $3^3/3 - 9(3)$ as $-6$ instead of $-18$."
+            "feedback": "Your integration in part (a) is correct. In part (b), this error occurs if you make an arithmetic error when evaluating $u^3/3 - 9u$ at the lower limit $u = 3$, such as evaluating $3^3/3 - 9(3)$ as $-6$ instead of $-18$."
         },
         {
             "ans": "<strong>(a)</strong> $\\dfrac{ 2 }{ 3 } x^{ 2/3 } \\ln x - \\dfrac{ 4 }{ 9 } x^{ 2/3 } + C$<br><strong>(b)</strong> $\\dfrac{ 44 }{ 3 }$",
@@ -1865,7 +1866,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Choosing $u$ and $v$ in Parts",
-        "content": "When integrating products involving logarithm terms like $\\int x^n \\ln x \\mathrm{d}x$, always choose $u = \\ln x$ and $\\mathrm{d}v = x^n \\mathrm{d}x$. Since we cannot directly integrate $\\ln x$ without using parts itself, this selection simplifies the integral immediately because the derivative of $\\ln x$ is a simple rational power $\\dfrac{ 1 }{ x }$."
+        "content": "When integrating products involving logarithm terms like $\\int x^n \\ln x \\text{d}x$, always choose $u = \\ln x$ and $\\text{d}v = x^n \\text{d}x$. Since we cannot directly integrate $\\ln x$ without using parts itself, this selection simplifies the integral immediately because the derivative of $\\ln x$ is a simple rational power $\\dfrac{ 1 }{ x }$."
     }
 },
 {
@@ -1880,22 +1881,23 @@ window.ALEVEL_QUESTIONS = [
         "Integration by Substitution"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Find:<br>$$\\int 3x \\cos 2x \\mathrm{d}x$$<br><strong>(b)</strong> Using the substitution $u = \\cos x$, or otherwise, find the exact value of:<br>$$\\int_{ 0 }^{ \\pi/2 } \\sin^3 x \\cos^2 x \\mathrm{d}x$$",
+    "question": "<strong>(a)</strong> Find:$$\\int 3x \\cos 2x \\text{d}x$$<strong>(b)</strong> Using the substitution $u = \\cos x$, or otherwise, find the exact value of:$$\\int_{ 0 }^{ \\pi/2 } \\sin^3 x \\cos^2 x \\text{d}x$$",
     "steps": [
-        "<strong>Part (a):</strong> We find the indefinite integral using integration by parts:<br>$$\\int u \\mathrm{d}v = uv - \\int v \\mathrm{d}u$$<br>Let $u = 3x$ and $\\mathrm{d}v = \\cos 2x \\mathrm{d}x$.<br>The derivatives and integrals are:<br>\\begin{aligned} \\mathrm{d}u &= 3 \\mathrm{d}x \\cr v &= \\dfrac{ 1 }{ 2 } \\sin 2x \\end{aligned}",
-        "Substitute these into our integration by parts formula:<br>\\begin{aligned} \\int 3x \\cos 2x \\mathrm{d}x &= (3x)\\left( \\dfrac{ 1 }{ 2 } \\sin 2x \\right) - \\int \\left( \\dfrac{ 1 }{ 2 } \\sin 2x \\right)(3 \\mathrm{d}x) \\cr &= \\dfrac{ 3 }{ 2 } x \\sin 2x - \\dfrac{ 3 }{ 2 } \\int \\sin 2x \\mathrm{d}x \\cr &= \\dfrac{ 3 }{ 2 } x \\sin 2x - \\dfrac{ 3 }{ 2 } \\left( -\\dfrac{ 1 }{ 2 } \\cos 2x \\right) + C \\cr &= \\dfrac{ 3 }{ 2 } x \\sin 2x + \\dfrac{ 3 }{ 4 } \\cos 2x + C \\end{aligned}",
-        "<strong>Part (b):</strong> We evaluate the definite integral using the substitution $u = \\cos x$.<br>Differentiating both sides gives:<br>$$\\mathrm{d}u = -\\sin x \\mathrm{d}x \\implies -\\mathrm{d}u = \\sin x \\mathrm{d}x$$<br>Express the integrand terms in terms of $u$:<br>$$\\sin^3 x \\cos^2 x \\mathrm{d}x = (\\sin^2 x)(\\cos^2 x)(\\sin x \\mathrm{d}x) = (1 - u^2)(u^2)(-\\mathrm{d}u)$$<br><br>Now determine our new limits of integration:<br>\\begin{aligned} \\text{When } x &= 0 \\implies u = \\cos 0 = 1 \\cr \\text{When } x &= \\pi/2 \\implies u = \\cos(\\pi/2) = 0 \\end{aligned}",
-        "Substitute the terms and the new limits into our integral:<br>\\begin{aligned} \\int_{ 0 }^{ \\pi/2 } \\sin^3 x \\cos^2 x \\mathrm{d}x &= \\int_{ 1 }^{ 0 } (1 - u^2)(u^2)(-\\mathrm{d}u) \\cr &= \\int_{ 0 }^{ 1 } (1 - u^2)u^2 \\mathrm{d}u \\cr &= \\int_{ 0 }^{ 1 } (u^2 - u^4) \\mathrm{d}u \\end{aligned}<br>Note that the negative sign from the substitution was used to reverse the boundaries of integration.",
-        "Now integrate and evaluate the expression:<br>\\begin{aligned} \\int_{ 0 }^{ 1 } (u^2 - u^4) \\mathrm{d}u &= \\left[ \\dfrac{ u^3 }{ 3 } - \\dfrac{ u^5 }{ 5 } \\right]_{ 0 }^{ 1 } \\cr &= \\left( \\dfrac{ 1 }{ 3 } - \\dfrac{ 1 }{ 5 } \\right) - (0) \\cr &= \\dfrac{ 2 }{ 15 } \\end{aligned}"
+        "<strong>Part (a):</strong> We find the indefinite integral using integration by parts:$$\\int u \\text{d}v = uv - \\int v \\text{d}u$$Let $u = 3x$ and $\\text{d}v = \\cos 2x \\text{d}x$.<br><br>The derivatives and integrals are:\\begin{aligned} &\\text{d}u = 3 \\text{d}x \\cr &v = \\dfrac{ 1 }{ 2 } \\sin 2x \\end{aligned}",
+        "Substitute these into our integration by parts formula:\\begin{aligned} &\\int 3x \\cos 2x \\text{d}x \\cr &\\quad = \\dfrac{ 3 }{ 2 } x \\sin 2x - \\dfrac{ 3 }{ 2 } \\int \\sin 2x \\text{d}x \\cr &\\quad = \\dfrac{ 3 }{ 2 } x \\sin 2x \\cr &\\qquad - \\dfrac{ 3 }{ 2 } \\left( -\\dfrac{ 1 }{ 2 } \\cos 2x \\right) + C \\cr &\\quad = \\dfrac{ 3 }{ 2 } x \\sin 2x + \\dfrac{ 3 }{ 4 } \\cos 2x + C \\end{aligned}",
+        "<strong>Part (b):</strong> We evaluate using the substitution $u = \\cos x$.<br><br>Differentiating both sides gives:\\begin{aligned} &\\text{d}u = -\\sin x \\text{d}x \\cr &-\\text{d}u = \\sin x \\text{d}x \\end{aligned}Rewrite the integrand in terms of $u$:\\begin{aligned} &\\sin^3 x \\cos^2 x \\text{d}x \\cr &\\quad = (\\sin^2 x)(\\cos^2 x)(\\sin x \\text{d}x) \\cr &\\quad = (1 - u^2)(u^2)(-\\text{d}u) \\end{aligned}Determine the new integration limits:<br><br>• When $x = 0$:\\begin{aligned} &u = \\cos 0 \\cr &u = 1 \\end{aligned}<br>• When $x = \\pi/2$:\\begin{aligned} &u = \\cos(\\pi/2) \\cr &u = 0 \\end{aligned}",
+        "Substitute the terms and the new limits into our integral:\\begin{aligned} &\\int_{ 0 }^{ \\pi/2 } \\sin^3 x \\cos^2 x \\text{d}x \\cr &\\quad = \\int_{ 1 }^{ 0 } (1 - u^2)(u^2)(-\\text{d}u) \\cr &\\quad = \\int_{ 0 }^{ 1 } (1 - u^2)u^2 \\text{d}u \\cr &\\quad = \\int_{ 0 }^{ 1 } (u^2 - u^4) \\text{d}u \\end{aligned}Note that the negative sign from the substitution reverses the limits of integration.",
+        "Now integrate and evaluate the expression:\\begin{aligned} &\\int_{ 0 }^{ 1 } (u^2 - u^4) \\text{d}u \\cr &\\quad = \\left[ \\dfrac{ u^3 }{ 3 } - \\dfrac{ u^5 }{ 5 } \\right]_{ 0 }^{ 1 } \\cr &\\quad = \\left( \\dfrac{ 1 }{ 3 } - \\dfrac{ 1 }{ 5 } \\right) - 0 \\cr &\\quad = \\dfrac{ 2 }{ 15 } \\end{aligned}",
+        "Final Answer: <strong>(a)</strong> $\\dfrac{ 3 }{ 2 } x \\sin 2x + \\dfrac{ 3 }{ 4 } \\cos 2x + C$<br><strong>(b)</strong> $\\dfrac{ 2 }{ 15 }$"
     ],
     "pi_options": [
         {
             "ans": "<strong>(a)</strong> $\\dfrac{ 3 }{ 2 } x \\sin 2x - \\dfrac{ 3 }{ 4 } \\cos 2x + C$<br><strong>(b)</strong> $\\dfrac{ 2 }{ 15 }$",
-            "feedback": "Your part (b) calculation is correct. However, in part (a), this error occurs if you make a sign error when integrating $\\sin 2x$, forgetting that $\\int \\sin 2x \\mathrm{d}x = -\\frac{1}{2}\\cos 2x$, which results in a negative sign instead of a positive sign for the cosine term."
+            "feedback": "Your part (b) calculation is correct. However, in part (a), this error occurs if you make a sign error when integrating $\\sin 2x$, forgetting that $\\int \\sin 2x \\text{d}x = -\\frac{1}{2}\\cos 2x$, which results in a negative sign instead of a positive sign for the cosine term."
         },
         {
             "ans": "<strong>(a)</strong> $\\dfrac{ 3 }{ 2 } x \\sin 2x + \\dfrac{ 3 }{ 4 } \\cos 2x + C$<br><strong>(b)</strong> $\\dfrac{ 8 }{ 15 }$",
-            "feedback": "Your integration in part (a) is correct. In part (b), this occurs if you evaluate the boundaries backwards or fail to handle the negative sign from $\\mathrm{d}u = -\\sin x \\mathrm{d}x$, resulting in $\\int_0^1 (u^2 + u^4) \\mathrm{d}u = \\frac{1}{3} + \\frac{1}{5} = \\frac{8}{15}$."
+            "feedback": "Your integration in part (a) is correct. In part (b), this occurs if you evaluate the boundaries backwards or fail to handle the negative sign from $\\text{d}u = -\\sin x \\text{d}x$, resulting in $\\int_0^1 (u^2 + u^4) \\text{d}u = \\dfrac{ 8 }{ 15 }$."
         },
         {
             "ans": "<strong>(a)</strong> $3x \\sin 2x + 3 \\cos 2x + C$<br><strong>(b)</strong> $\\dfrac{ 2 }{ 15 }$",
@@ -1905,7 +1907,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Limit Boundary Flips",
-        "content": "When substituting $u = \\cos x$ over the interval $[0, \\pi/2]$, the lower limit $x = 0$ becomes $u = 1$, and the upper limit $x = \\pi/2$ becomes $u = 0$. Since $1 > 0$, the limits appear 'upside down' ($\\int_1^0$). Do not manually flip them! The negative sign from $\\mathrm{d}u = -\\sin x \\mathrm{d}x$ will naturally reverse the limits back to a standard $\\int_0^1$ order."
+        "content": "When substituting $u = \\cos x$ over the interval $[0, \\pi/2]$, the lower limit $x = 0$ becomes $u = 1$, and the upper limit $x = \\pi/2$ becomes $u = 0$. Since $1 > 0$, the limits appear 'upside down' ($\\int_1^0$). Do not manually flip them! The negative sign from $\\text{d}u = -\\sin x \\text{d}x$ will naturally reverse the limits back to a standard $\\int_0^1$ order."
     }
 },
 {
@@ -1920,13 +1922,14 @@ window.ALEVEL_QUESTIONS = [
         "Integration by Substitution"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Find:<br>$$\\int x^2 \\ln 2x \\mathrm{d}x$$<br><strong>(b)</strong> Using the substitution $u = 2x + 1$, or otherwise, find the exact value of:<br>$$\\int_{ 0 }^{ 4 } x \\sqrt{2x + 1} \\mathrm{d}x$$",
+    "question": "<strong>(a)</strong> Find:$$\\int x^2 \\ln 2x \\text{d}x$$<strong>(b)</strong> Using the substitution $u = 2x + 1$, or otherwise, find the exact value of:$$\\int_{ 0 }^{ 4 } x \\sqrt{2x + 1} \\text{d}x$$",
     "steps": [
-        "<strong>Part (a):</strong> We find the indefinite integral using integration by parts:<br>$$\\int u \\mathrm{d}v = uv - \\int v \\mathrm{d}u$$<br>Let $u = \\ln 2x$ and $\\mathrm{d}v = x^2 \\mathrm{d}x$.<br>The derivatives and integrals are:<br>\\begin{aligned} \\mathrm{d}u &= \\dfrac{ 1 }{ x } \\mathrm{d}x \\cr v &= \\dfrac{ 1 }{ 3 } x^3 \\end{aligned}",
-        "Substitute these into our integration by parts formula:<br>\\begin{aligned} \\int x^2 \\ln 2x \\mathrm{d}x &= \\left( \\ln 2x \\right)\\left( \\dfrac{ 1 }{ 3 } x^3 \\right) - \\int \\left( \\dfrac{ 1 }{ 3 } x^3 \\right)\\left( \\dfrac{ 1 }{ x } \\mathrm{d}x \\right) \\cr &= \\dfrac{ 1 }{ 3 } x^3 \\ln 2x - \\dfrac{ 1 }{ 3 } \\int x^2 \\mathrm{d}x \\cr &= \\dfrac{ 1 }{ 3 } x^3 \\ln 2x - \\dfrac{ 1 }{ 3 } \\left( \\dfrac{ 1 }{ 3 } x^3 \\right) + C \\cr &= \\dfrac{ 1 }{ 3 } x^3 \\ln 2x - \\dfrac{ 1 }{ 9 } x^3 + C \\end{aligned}",
-        "<strong>Part (b):</strong> We evaluate the definite integral using the substitution $u = 2x + 1$.<br>This rearranges to $x = \\dfrac{ u - 1 }{ 2 }$. Differentiating both sides gives:<br>$$\\mathrm{d}u = 2 \\mathrm{d}x \\implies \\mathrm{d}x = \\dfrac{ 1 }{ 2 } \\mathrm{d}u$$<br><br>Now determine our new limits of integration:<br>\\begin{aligned} \\text{When } x &= 0 \\implies u = 2(0) + 1 = 1 \\cr \\text{When } x &= 4 \\implies u = 2(4) + 1 = 9 \\end{aligned}",
-        "Substitute the terms and the new limits into our integral:<br>\\begin{aligned} \\int_{ 0 }^{ 4 } x \\sqrt{2x + 1} \\mathrm{d}x &= \\int_{ 1 }^{ 9 } \\left( \\dfrac{ u - 1 }{ 2 } \\right) \\sqrt{u} \\left( \\dfrac{ 1 }{ 2 } \\mathrm{d}u \\right) \\cr &= \\dfrac{ 1 }{ 4 } \\int_{ 1 }^{ 9 } (u - 1)u^{ 1/2 } \\mathrm{d}u \\cr &= \\dfrac{ 1 }{ 4 } \\int_{ 1 }^{ 9 } (u^{ 3/2 } - u^{ 1/2 }) \\mathrm{d}u \\cr &= \\dfrac{ 1 }{ 4 } \\left[ \\dfrac{ 2 }{ 5 } u^{ 5/2 } - \\dfrac{ 2 }{ 3 } u^{ 3/2 } \\right]_{ 1 }^{ 9 } \\end{aligned}",
-        "Evaluate the expression at the upper and lower limits of integration:<br>\\begin{aligned} \\text{At } u = 9: \\quad &\\dfrac{ 2 }{ 5 }(9^{ 5/2 }) - \\dfrac{ 2 }{ 3 }(9^{ 3/2 }) = \\dfrac{ 2 }{ 5 }(243) - \\dfrac{ 2 }{ 3 }(27) = 97.2 - 18 = 79.2 \\cr \\text{At } u = 1: \\quad &\\dfrac{ 2 }{ 5 }(1^{ 5/2 }) - \\dfrac{ 2 }{ 3 }(1^{ 3/2 }) = \\dfrac{ 2 }{ 5 } - \\dfrac{ 2 }{ 3 } = -\\dfrac{ 4 }{ 15 } \\cr \\text{Difference} &= 79.2 - \\left( -\\dfrac{ 4 }{ 15 } \\right) = \\dfrac{ 396 }{ 5 } + \\dfrac{ 4 }{ 15 } = \\dfrac{ 1192 }{ 15 } \\cr \\text{Exact Value} &= \\dfrac{ 1 }{ 4 } \\times \\dfrac{ 1192 }{ 15 } = \\dfrac{ 298 }{ 15 } \\end{aligned}"
+        "<strong>Part (a):</strong> We find the indefinite integral using integration by parts:$$\\int u \\text{d}v = uv - \\int v \\text{d}u$$Let $u = \\ln 2x$ and $\\text{d}v = x^2 \\text{d}x$.<br><br>The derivatives and integrals are:\\begin{aligned} &\\text{d}u = \\dfrac{ 1 }{ x } \\text{d}x \\cr &v = \\dfrac{ 1 }{ 3 } x^3 \\end{aligned}",
+        "Substitute these into our integration by parts formula:\\begin{aligned} &\\int x^2 \\ln 2x \\text{d}x \\cr &\\quad = \\dfrac{ 1 }{ 3 } x^3 \\ln 2x - \\dfrac{ 1 }{ 3 } \\int x^2 \\text{d}x \\cr &\\quad = \\dfrac{ 1 }{ 3 } x^3 \\ln 2x \\cr &\\qquad - \\dfrac{ 1 }{ 3 } \\left( \\dfrac{ 1 }{ 3 } x^3 \\right) + C \\cr &\\quad = \\dfrac{ 1 }{ 3 } x^3 \\ln 2x - \\dfrac{ 1 }{ 9 } x^3 + C \\end{aligned}",
+        "<strong>Part (b):</strong> We evaluate using the substitution $u = 2x + 1$.<br><br>Rearranging gives $x = \\dfrac{ u - 1 }{ 2 }$. Differentiating gives:\\begin{aligned} &\\text{d}u = 2 \\text{d}x \\cr &\\text{d}x = \\dfrac{ 1 }{ 2 } \\text{d}u \\end{aligned}Determine the new limits of integration:<br><br>• When $x = 0$:\\begin{aligned} &u = 2(0) + 1 \\cr &u = 1 \\end{aligned}<br>• When $x = 4$:\\begin{aligned} &u = 2(4) + 1 \\cr &u = 9 \\end{aligned}",
+        "Substitute the terms and the new limits into our integral:\\begin{aligned} &\\int_{ 0 }^{ 4 } x \\sqrt{2x + 1} \\text{d}x \\cr &\\quad = \\int_{ 1 }^{ 9 } \\left( \\dfrac{ u - 1 }{ 2 } \\right) \\sqrt{u} \\left( \\dfrac{ 1 }{ 2 } \\text{d}u \\right) \\cr &\\quad = \\dfrac{ 1 }{ 4 } \\int_{ 1 }^{ 9 } (u^{ 3/2 } - u^{ 1/2 }) \\text{d}u \\cr &\\quad = \\dfrac{ 1 }{ 4 } \\left[ \\dfrac{ 2 }{ 5 } u^{ 5/2 } - \\dfrac{ 2 }{ 3 } u^{ 3/2 } \\right]_{ 1 }^{ 9 } \\end{aligned}",
+        "Evaluate at the limits:<br><br>• At $u = 9$:\\begin{aligned} &\\dfrac{ 2 }{ 5 }(9^{ 5/2 }) - \\dfrac{ 2 }{ 3 }(9^{ 3/2 }) \\cr &\\quad = \\dfrac{ 2 }{ 5 }(243) - \\dfrac{ 2 }{ 3 }(27) \\cr &\\quad = \\dfrac{ 486 }{ 5 } - 18 \\cr &\\quad = \\dfrac{ 396 }{ 5 } \\end{aligned}<br>• At $u = 1$:\\begin{aligned} &\\dfrac{ 2 }{ 5 }(1^{ 5/2 }) - \\dfrac{ 2 }{ 3 }(1^{ 3/2 }) \\cr &\\quad = \\dfrac{ 2 }{ 5 } - \\dfrac{ 2 }{ 3 } \\cr &\\quad = -\\dfrac{ 4 }{ 15 } \\end{aligned}Subtract the limits and apply the outer factor $\\dfrac{ 1 }{ 4 }$:\\begin{aligned} &\\dfrac{ 1 }{ 4 } \\left[ \\dfrac{ 396 }{ 5 } - \\left( -\\dfrac{ 4 }{ 15 } \\right) \\right] \\cr &\\quad = \\dfrac{ 1 }{ 4 } \\left( \\dfrac{ 1192 }{ 15 } \\right) \\cr &\\quad = \\dfrac{ 298 }{ 15 } \\end{aligned}",
+        "Final Answer: <strong>(a)</strong> $\\dfrac{ 1 }{ 3 } x^3 \\ln 2x - \\dfrac{ 1 }{ 9 } x^3 + C$<br><strong>(b)</strong> $\\dfrac{ 298 }{ 15 }$"
     ],
     "pi_options": [
         {
@@ -1935,7 +1938,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "<strong>(a)</strong> $\\dfrac{ 1 }{ 3 } x^3 \\ln 2x - \\dfrac{ 1 }{ 3 } x^3 + C$<br><strong>(b)</strong> $\\dfrac{ 298 }{ 15 }$",
-            "feedback": "Your exact value in part (b) is correct. In part (a), this error occurs if you forgot to divide by the new power $3$ when integrating the remaining term $\\int \\frac{1}{3}x^2 \\mathrm{d}x$, writing $\\frac{1}{3}x^3$ instead of $\\frac{1}{9}x^3$."
+            "feedback": "Your exact value in part (b) is correct. In part (a), this error occurs if you forgot to divide by the new power $3$ when integrating the remaining term $\\int \\frac{1}{3}x^2 \\text{d}x$, writing $\\frac{1}{3}x^3$ instead of $\\frac{1}{9}x^3$."
         },
         {
             "ans": "<strong>(a)</strong> $\\dfrac{ 1 }{ 3 } x^3 \\ln 2x - \\dfrac{ 1 }{ 9 } x^3 + C$<br><strong>(b)</strong> $-\\dfrac{ 298 }{ 15 }$",
@@ -1960,13 +1963,14 @@ window.ALEVEL_QUESTIONS = [
         "Integration by Substitution"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Find:<br>$$\\int x^2 \\sin x \\mathrm{d}x$$<br><strong>(b)</strong> Using the substitution $u = e^x + 1$, or otherwise, find the exact value of:<br>$$\\int_{ 0 }^{ \\ln 2 } \\dfrac{ e^{2x} }{ e^x + 1 } \\mathrm{d}x$$",
+    "question": "<strong>(a)</strong> Find:$$\\int x^2 \\sin x \\text{d}x$$<strong>(b)</strong> Using the substitution $u = \\mathrm{e}^x + 1$, or otherwise, find the exact value of:$$\\int_{ 0 }^{ \\ln 2 } \\dfrac{ \\mathrm{e}^{2x} }{ \\mathrm{e}^x + 1 } \\text{d}x$$",
     "steps": [
-        "<strong>Part (a):</strong> We find the indefinite integral using integration by parts. Let $u = x^2$ and $\\mathrm{d}v = \\sin x \\mathrm{d}x$.<br>The derivatives and integrals are:<br>\\begin{aligned} \\mathrm{d}u &= 2x \\mathrm{d}x \\cr v &= -\\cos x \\end{aligned}<br>Substitute these into our integration by parts formula:<br>\\begin{aligned} \\int x^2 \\sin x \\mathrm{d}x &= -x^2 \\cos x - \\int -2x \\cos x \\mathrm{d}x \\cr &= -x^2 \\cos x + \\int 2x \\cos x \\mathrm{d}x \\end{aligned}",
-        "Now, apply integration by parts a second time on the term $\\int 2x \\cos x \\mathrm{d}x$.<br>Let $u = 2x$ and $\\mathrm{d}v = \\cos x \\mathrm{d}x$.<br>The derivatives and integrals are:<br>\\begin{aligned} \\mathrm{d}u &= 2 \\mathrm{d}x \\cr v &= \\sin x \\end{aligned}<br>Substitute these into the formula:<br>\\begin{aligned} \\int 2x \\cos x \\mathrm{d}x &= 2x \\sin x - \\int 2 \\sin x \\mathrm{d}x \\cr &= 2x \\sin x - 2(-\\cos x) \\cr &= 2x \\sin x + 2 \\cos x \\end{aligned}",
-        "Combine the two parts to find our final indefinite integral:<br>$$\\int x^2 \\sin x \\mathrm{d}x = -x^2 \\cos x + 2x \\sin x + 2 \\cos x + C$$",
-        "<strong>Part (b):</strong> We evaluate the definite integral using the substitution $u = e^x + 1$.<br>This rearranges to $e^x = u - 1$. Differentiating both sides gives:<br>$$\\mathrm{d}u = e^x \\mathrm{d}x \\implies \\mathrm{d}x = \\dfrac{ 1 }{ e^x } \\mathrm{d}u = \\dfrac{ 1 }{ u - 1 } \\mathrm{d}u$$<br>Express the terms of the integrand in terms of $u$:<br>$$\\dfrac{ e^{2x} }{ e^x + 1 } \\mathrm{d}x = \\dfrac{ (u - 1)^2 }{ u } \\cdot \\dfrac{ 1 }{ u - 1 } \\mathrm{d}u = \\dfrac{ u - 1 }{ u } \\mathrm{d}u$$<br><br>Now determine our new limits of integration:<br>\\begin{aligned} \\text{When } x &= 0 \\implies u = e^0 + 1 = 2 \\cr \\text{When } x &= \\ln 2 \\implies u = e^{ \\ln 2 } + 1 = 2 + 1 = 3 \\end{aligned}",
-        "Substitute the terms and the new limits into our integral and evaluate:<br>\\begin{aligned} \\int_{ 0 }^{ \\ln 2 } \\dfrac{ e^{2x} }{ e^x + 1 } \\mathrm{d}x &= \\int_{ 2 }^{ 3 } \\dfrac{ u - 1 }{ u } \\mathrm{d}u \\cr &= \\int_{ 2 }^{ 3 } \\left( 1 - \\dfrac{ 1 }{ u } \\right) \\mathrm{d}u \\cr &= \\left[ u - \\ln u \\right]_{ 2 }^{ 3 } \\cr &= (3 - \\ln 3) - (2 - \\ln 2) \\cr &= 1 - \\ln 3 + \\ln 2 \\cr &= 1 - \\ln\\left( \\dfrac{ 3 }{ 2 } \\right) \\end{aligned}"
+        "<strong>Part (a):</strong> We find the indefinite integral using integration by parts. Let $u = x^2$ and $\\text{d}v = \\sin x \\text{d}x$.<br><br>The derivatives and integrals are:\\begin{aligned} &\\text{d}u = 2x \\text{d}x \\cr &v = -\\cos x \\end{aligned}Substitute these into the integration by parts formula:\\begin{aligned} &\\int x^2 \\sin x \\text{d}x \\cr &\\quad = -x^2 \\cos x - \\int -2x \\cos x \\text{d}x \\cr &\\quad = -x^2 \\cos x + \\int 2x \\cos x \\text{d}x \\end{aligned}",
+        "Apply integration by parts a second time on $\\int 2x \\cos x \\text{d}x$. Let $u = 2x$ and $\\text{d}v = \\cos x \\text{d}x$.<br><br>The derivatives and integrals are:\\begin{aligned} &\\text{d}u = 2 \\text{d}x \\cr &v = \\sin x \\end{aligned}Substitute these into the formula:\\begin{aligned} &\\int 2x \\cos x \\text{d}x \\cr &\\quad = 2x \\sin x - \\int 2 \\sin x \\text{d}x \\cr &\\quad = 2x \\sin x - 2(-\\cos x) \\cr &\\quad = 2x \\sin x + 2 \\cos x \\end{aligned}",
+        "Combine the results to find our final indefinite integral:\\begin{aligned} &\\int x^2 \\sin x \\text{d}x \\cr &\\quad = -x^2 \\cos x + 2x \\sin x \\cr &\\qquad + 2 \\cos x + C \\end{aligned}",
+        "<strong>Part (b):</strong> We evaluate using the substitution $u = \\mathrm{e}^x + 1$, which gives $\\mathrm{e}^x = u - 1$.<br><br>Differentiating gives:\\begin{aligned} &\\text{d}u = \\mathrm{e}^x \\text{d}x \\cr &\\text{d}x = \\dfrac{ 1 }{ u - 1 } \\text{d}u \\end{aligned}Rewrite the integrand in terms of $u$:\\begin{aligned} &\\dfrac{ \\mathrm{e}^{2x} }{ \\mathrm{e}^x + 1 } \\text{d}x \\cr &\\quad = \\dfrac{ (u - 1)^2 }{ u } \\cdot \\dfrac{ 1 }{ u - 1 } \\text{d}u \\cr &\\quad = \\dfrac{ u - 1 }{ u } \\text{d}u \\end{aligned}Determine the new limits of integration:<br><br>• When $x = 0$:\\begin{aligned} &u = \\mathrm{e}^0 + 1 \\cr &u = 2 \\end{aligned}<br>• When $x = \\ln 2$:\\begin{aligned} &u = \\mathrm{e}^{ \\ln 2 } + 1 \\cr &u = 2 + 1 \\cr &u = 3 \\end{aligned}",
+        "Substitute the terms and new limits into our integral and evaluate:\\begin{aligned} &\\int_{ 0 }^{ \\ln 2 } \\dfrac{ \\mathrm{e}^{2x} }{ \\mathrm{e}^x + 1 } \\text{d}x \\cr &\\quad = \\int_{ 2 }^{ 3 } \\left( 1 - \\dfrac{ 1 }{ u } \\right) \\text{d}u \\cr &\\quad = \\left[ u - \\ln u \\right]_{ 2 }^{ 3 } \\cr &\\quad = (3 - \\ln 3) - (2 - \\ln 2) \\cr &\\quad = 1 - (\\ln 3 - \\ln 2) \\cr &\\quad = 1 - \\ln\\left( \\dfrac{ 3 }{ 2 } \\right) \\end{aligned}",
+        "Final Answer: <strong>(a)</strong> $-x^2 \\cos x + 2x \\sin x + 2 \\cos x + C$<br><strong>(b)</strong> $1 - \\ln\\left( \\dfrac{ 3 }{ 2 } \\right)$"
     ],
     "pi_options": [
         {
@@ -1975,7 +1979,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "<strong>(a)</strong> $-x^2 \\cos x + 2x \\sin x + 2 \\cos x + C$<br><strong>(b)</strong> $1 + \\ln\\left( \\dfrac{ 3 }{ 2 } \\right)$",
-            "feedback": "Your part (a) integration is correct. In part (b), this error occurs if you make a sign error when handling the limits, writing $[u - \\ln u]_2^3 = (3 - \ln 3) - (2 - \ln 2)$ as $1 + \ln 3 - \ln 2 = 1 + \ln(3/2)$ by mistake."
+            "feedback": "Your part (a) integration is correct. In part (b), this error occurs if you make a sign error when handling the limits, writing $(3 - \\ln 3) - (2 - \\ln 2)$ incorrectly as $1 + \\ln 3 - \\ln 2$, which gives $1 + \\ln(3/2)$."
         },
         {
             "ans": "<strong>(a)</strong> $-x^2 \\cos x - 2x \\sin x - 2 \\cos x + C$<br><strong>(b)</strong> $1 - \\ln\\left( \\dfrac{ 3 }{ 2 } \\right)$",
@@ -1985,7 +1989,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Iterated Integration by Parts",
-        "content": "For integrals of the form $\\int x^2 \\sin x \\mathrm{d}x$, you must apply integration by parts twice. Be extremely careful with sign distribution on the second pass. The entire second integral is subtracted, so you must wrap it in brackets and distribute the negative sign carefully to avoid losing algebraic marks."
+        "content": "For integrals of the form $\\int x^2 \\sin x \\text{d}x$, you must apply integration by parts twice. Be extremely careful with sign distribution on the second pass. The entire second integral is subtracted, so you must wrap it in brackets and distribute the negative sign carefully to avoid losing algebraic marks."
     }
 },
 {
@@ -2000,18 +2004,19 @@ window.ALEVEL_QUESTIONS = [
         "Integration by Substitution"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> Find:<br>$$\\int (\\ln x)^2 \\mathrm{d}x$$<br><strong>(b)</strong> Using the substitution $u = e^x$, or otherwise, find the exact value of:<br>$$\\int_{ 0 }^{ \\ln 3 } \\dfrac{ 1 }{ e^x + e^{-x} } \\mathrm{d}x$$",
+    "question": "<strong>(a)</strong> Find:$$\\int (\\ln x)^2 \\text{d}x$$<strong>(b)</strong> Using the substitution $u = \\mathrm{e}^x$, or otherwise, find the exact value of:$$\\int_{ 0 }^{ \\ln 3 } \\dfrac{ 1 }{ \\mathrm{e}^x + \\mathrm{e}^{-x} } \\text{d}x$$",
     "steps": [
-        "<strong>Part (a):</strong> We find the indefinite integral using integration by parts. Let $u = (\\ln x)^2$ and $\\mathrm{d}v = \\mathrm{d}x$.<br>The derivatives and integrals are:<br>\\begin{aligned} \\mathrm{d}u &= 2\\ln x \\left( \\dfrac{ 1 }{ x } \\right) \\mathrm{d}x = \\dfrac{ 2\\ln x }{ x } \\mathrm{d}x \\cr v &= x \\end{aligned}<br>Substitute these into our integration by parts formula:<br>\\begin{aligned} \\int (\\ln x)^2 \\mathrm{d}x &= x(\\ln x)^2 - \\int x \\left( \\dfrac{ 2\\ln x }{ x } \\right) \\mathrm{d}x \\cr &= x(\\ln x)^2 - \\int 2\\ln x \\mathrm{d}x \\end{aligned}",
-        "Now, apply integration by parts a second time on the term $\\int 2\\ln x \\mathrm{d}x$.<br>Let $u = \\ln x$ and $\\mathrm{d}v = 2\\mathrm{d}x$.<br>The derivatives and integrals are:<br>\\begin{aligned} \\mathrm{d}u &= \\dfrac{ 1 }{ x } \\mathrm{d}x \\cr v &= 2x \\end{aligned}<br>Substitute these into the formula:<br>\\begin{aligned} \\int 2\\ln x \\mathrm{d}x &= (\\ln x)(2x) - \\int (2x)\\left( \\dfrac{ 1 }{ x } \\mathrm{d}x \\right) \\cr &= 2x\\ln x - \\int 2 \\mathrm{d}x \\cr &= 2x\\ln x - 2x \\end{aligned}",
-        "Combine the two parts to find our final indefinite integral:<br>\\begin{aligned} \\int (\\ln x)^2 \\mathrm{d}x &= x(\\ln x)^2 - \\left( 2x\\ln x - 2x \\right) + C \\cr &= x(\\ln x)^2 - 2x\\ln x + 2x + C \\end{aligned}",
-        "<strong>Part (b):</strong> We evaluate the definite integral using the substitution $u = e^x$.<br>Differentiating both sides gives:<br>$$\\mathrm{d}u = e^x \\mathrm{d}x \\implies \\mathrm{d}x = \\dfrac{ 1 }{ e^x } \\mathrm{d}u = \\dfrac{ 1 }{ u } \\mathrm{d}u$$<br>Express the terms of the integrand in terms of $u$:<br>$$\\dfrac{ 1 }{ e^x + e^{-x} } \\mathrm{d}x = \\dfrac{ 1 }{ u + 1/u } \\cdot \\dfrac{ 1 }{ u } \\mathrm{d}u = \\dfrac{ 1 }{ u^2 + 1 } \\mathrm{d}u$$<br><br>Now determine our new limits of integration:<br>\\begin{aligned} \\text{When } x &= 0 \\implies u = e^0 = 1 \\cr \\text{When } x &= \\ln 3 \\implies u = e^{ \\ln 3 } = 3 \\end{aligned}",
-        "Substitute the terms and the new limits into our integral and evaluate:<br>\\begin{aligned} \\int_{ 0 }^{ \\ln 3 } \\dfrac{ 1 }{ e^x + e^{-x} } \\mathrm{d}x &= \\int_{ 1 }^{ 3 } \\dfrac{ 1 }{ u^2 + 1 } \\mathrm{d}u \\cr &= \\left[ \\arctan u \\right]_{ 1 }^{ 3 } \\cr &= \\arctan 3 - \\arctan 1 \\cr &= \\arctan 3 - \\dfrac{ \\pi }{ 4 } \\end{aligned}"
+        "<strong>Part (a):</strong> We find the indefinite integral using integration by parts. Let $u = (\\ln x)^2$ and $\\text{d}v = \\text{d}x$.<br><br>The derivatives and integrals are:\\begin{aligned} &\\text{d}u = \\dfrac{ 2\\ln x }{ x } \\text{d}x \\cr &v = x \\end{aligned}Substitute these into the integration by parts formula:\\begin{aligned} &\\int (\\ln x)^2 \\text{d}x \\cr &\\quad = x(\\ln x)^2 - \\int x \\left( \\dfrac{ 2\\ln x }{ x } \\right) \\text{d}x \\cr &\\quad = x(\\ln x)^2 - \\int 2\\ln x \\text{d}x \\end{aligned}",
+        "Apply integration by parts a second time on $\\int 2\\ln x \\text{d}x$. Let $u = \\ln x$ and $\\text{d}v = 2\\text{d}x$.<br><br>The derivatives and integrals are:\\begin{aligned} &\\text{d}u = \\dfrac{ 1 }{ x } \\text{d}x \\cr &v = 2x \\end{aligned}Substitute these into the formula:\\begin{aligned} &\\int 2\\ln x \\text{d}x \\cr &\\quad = 2x\\ln x - \\int (2x)\\left( \\dfrac{ 1 }{ x } \\text{d}x \\right) \\cr &\\quad = 2x\\ln x - \\int 2 \\text{d}x \\cr &\\quad = 2x\\ln x - 2x \\end{aligned}",
+        "Combine the results to find our final indefinite integral:\\begin{aligned} &\\int (\\ln x)^2 \\text{d}x \\cr &\\quad = x(\\ln x)^2 - (2x\\ln x - 2x) + C \\cr &\\quad = x(\\ln x)^2 - 2x\\ln x + 2x + C \\end{aligned}",
+        "<strong>Part (b):</strong> We evaluate using the substitution $u = \\mathrm{e}^x$.<br><br>Differentiating gives:\\begin{aligned} &\\text{d}u = \\mathrm{e}^x \\text{d}x \\cr &\\text{d}x = \\dfrac{ 1 }{ u } \\text{d}u \\end{aligned}Rewrite the integrand in terms of $u$:\\begin{aligned} &\\dfrac{ 1 }{ \\mathrm{e}^x + \\mathrm{e}^{-x} } \\text{d}x \\cr &\\quad = \\dfrac{ 1 }{ u + u^{-1} } \\cdot \\dfrac{ 1 }{ u } \\text{d}u \\cr &\\quad = \\dfrac{ 1 }{ u^2 + 1 } \\text{d}u \\end{aligned}Determine the new limits of integration:<br><br>• When $x = 0$:\\begin{aligned} &u = \\mathrm{e}^0 \\cr &u = 1 \\end{aligned}<br>• When $x = \\ln 3$:\\begin{aligned} &u = \\mathrm{e}^{ \\ln 3 } \\cr &u = 3 \\end{aligned}",
+        "Substitute the terms and new limits into our integral and evaluate:\\begin{aligned} &\\int_{ 0 }^{ \\ln 3 } \\dfrac{ 1 }{ \\mathrm{e}^x + \\mathrm{e}^{-x} } \\text{d}x \\cr &\\quad = \\int_{ 1 }^{ 3 } \\dfrac{ 1 }{ u^2 + 1 } \\text{d}u \\cr &\\quad = \\left[ \\arctan u \\right]_{ 1 }^{ 3 } \\cr &\\quad = \\arctan 3 - \\arctan 1 \\cr &\\quad = \\arctan 3 - \\dfrac{ \\pi }{ 4 } \\end{aligned}",
+        "Final Answer: <strong>(a)</strong> $x(\\ln x)^2 - 2x\\ln x + 2x + C$<br><strong>(b)</strong> $\\arctan 3 - \\dfrac{ \\pi }{ 4 }$"
     ],
     "pi_options": [
         {
             "ans": "<strong>(a)</strong> $x(\\ln x)^2 - 2x\\ln x + C$<br><strong>(b)</strong> $\\arctan 3 - \\dfrac{ \\pi }{ 4 }$",
-            "feedback": "Your exact value in part (b) is correct. However, in part (a), this occurs if you make an error when integrating the remaining term $\\int 2\\ln x \\mathrm{d}x$, forgetting the $+2x$ term that arises from completing the integration by parts on $\\ln x$."
+            "feedback": "Your exact value in part (b) is correct. However, in part (a), this occurs if you make an error when integrating the remaining term $\\int 2\\ln x \\text{d}x$, forgetting the $+2x$ term that arises from completing the integration by parts on $\\ln x$."
         },
         {
             "ans": "<strong>(a)</strong> $x(\\ln x)^2 - 2x\\ln x + 2x + C$<br><strong>(b)</strong> $\\arctan 3 + \\dfrac{ \\pi }{ 4 }$",
@@ -2019,13 +2024,13 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "<strong>(a)</strong> $x(\\ln x)^2 - 2x\\ln x + 2x + C$<br><strong>(b)</strong> $\\arctan 3$",
-            "feedback": "Your part (a) integration is correct. In part (b), this occurs if you completely neglect the lower boundary condition $x=0 \\implies u=1$, evaluating the integral only at the upper boundary as $\\arctan(3)$."
+            "feedback": "Your part (a) integration is correct. In part (b), this occurs if you completely neglect the lower boundary condition $x = 0 \\implies u = 1$, evaluating the integral only at the upper boundary as $\\arctan(3)$."
         }
     ],
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Inverse Trigonometric Integrals",
-        "content": "Recognizing that $\\int \\dfrac{ 1 }{ u^2 + 1 } \\mathrm{d}u = \\arctan u$ is a highly valuable synoptic connection at A2 level. Always look out for algebraic substitutions that simplify complicated exponential or trigonometric fractions into standard rational forms that match inverse trigonometric patterns."
+        "content": "Recognizing that $\\int \\dfrac{ 1 }{ u^2 + 1 } \\text{d}u = \\arctan u$ is a highly valuable synoptic connection at A2 level. Always look out for algebraic substitutions that simplify complicated exponential or trigonometric fractions into standard rational forms that match inverse trigonometric patterns."
     }
 }
 
