@@ -1246,24 +1246,26 @@ window.ALEVEL_QUESTIONS = [
     "question": "In this question, use $g = 9.8\\text{ m s}^{-2}$.<br><br>A particle is projected from a point on horizontal ground with an initial speed $u\\text{ m s}^{-1}$ at an angle of $30^\\circ$ above the horizontal. It lands at a point $12\\text{ metres}$ vertically below its starting position. The particle takes $1.8\\text{ seconds}$ to reach the highest point of its trajectory.<br><br><strong>(a)</strong> Find the value of $u$.<br><br><strong>(b)</strong> Find the total time, in seconds to three significant figures, that the particle is in flight.",
     "steps": [
         "For part <strong>(a)</strong>, analyze the vertical motion. At the highest point of the trajectory, the vertical component of the velocity is zero ($v_y = 0$).",
-        "The initial vertical component of the velocity, $u_y$, is:<br><br>$$u_y = u\\sin{ 30^\\circ } = 0.5u$$",
-        "Use the constant acceleration formula $v_y = u_y + at$ with vertical acceleration $a = -g = -9.8\\text{ m s}^{-2}$ and time $t = 1.8\\text{ seconds}$ to solve for $u$:<br><br>\\begin{aligned} 0 &= 0.5u - 9.8(1.8) \\cr 0.5u &= 17.64 \\cr u &= \\dfrac{ 17.64 }{ 0.5 } \\cr u &= 35.28 \\cr u &\\approx 35.3\\text{ m s}^{ -1 } \\end{aligned}",
-        "For part <strong>(b)</strong>, find the total time of flight. The particle lands at a point $12\\text{ metres}$ vertically below its starting position, so the total vertical displacement is $s_y = -12\\text{ m}$.",
-        "Use the constant acceleration displacement formula $s_y = u_y t + \\dfrac{ 1 }{ 2 } at^2$ to set up a quadratic equation in $t$, using $u_y = 17.64$ and $a = -9.8$:<br><br>\\begin{aligned} -12 &= 17.64t - 4.9t^2 \\cr 4.9t^2 - 17.64t - 12 &= 0 \\end{aligned}",
-        "Solve the quadratic equation using the quadratic formula:<br><br>\\begin{aligned} t &= \\dfrac{ 17.64 \\pm \\sqrt{ (-17.64)^2 - 4(4.9)(-12) } }{ 2(4.9) } \\cr t &= \\dfrac{ 17.64 \\pm \\sqrt{ 311.17 + 235.20 } }{ 9.8 } \\cr t &= \\dfrac{ 17.64 \\pm \\sqrt{ 546.37 } }{ 9.8 } \\cr t &\\approx \\dfrac{ 17.64 \\pm 23.375 }{ 9.8 } \\end{aligned}",
-        "Since time must be positive ($t > 0$), take the positive root:<br><br>\\begin{aligned} t &\\approx \\dfrac{ 17.64 + 23.375 }{ 9.8 } \\cr t &\\approx 4.19\\text{ s} \\end{aligned}"
+        "The initial vertical component of the velocity, $u_y$, is:\\begin{aligned} \n&u_y \\cr \n&\\quad = u\\sin 30^\\circ \\cr \n&\\quad = 0.5u \n\\end{aligned}",
+        "Use the formula $v_y = u_y + at$ with vertical acceleration $a = -9.8\\text{ m s}^{-2}$ (since $a = -g$) and time $t = 1.8\\text{ s}$ to solve for $u$:\\begin{aligned} \n&0 = 0.5u - 9.8(1.8) \\cr \n&0.5u = 17.64 \\cr \n&u = \\dfrac{17.64}{0.5} \\cr \n&u = 35.28 \\cr \n&u \\approx 35.3\\text{ m s}^{-1} \n\\end{aligned}",
+        "For part <strong>(b)</strong>, find the total time of flight. The particle lands at a point $12\\text{ metres}$ vertically below its starting position, so the vertical displacement is $s_y = -12\\text{ m}$.",
+        "Use the displacement formula with $u_y = 17.64$ and $a = -9.8$ to set up a quadratic equation in $t$:\\begin{aligned} \n&-12 = 17.64t - 4.9t^2 \\cr \n&4.9t^2 - 17.64t - 12 = 0 \n\\end{aligned}",
+        "Evaluate the discriminant of the quadratic equation:\\begin{aligned} \n&b^2 - 4ac \\cr \n&\\quad = (-17.64)^2 \\cr \n&\\qquad - 4(4.9)(-12) \\cr \n&\\quad = 311.17 + 235.20 \\cr \n&\\quad = 546.37 \n\\end{aligned}",
+        "Apply the quadratic formula to find $t$:\\begin{aligned} \n&t \\cr \n&\\quad = \\dfrac{17.64 \\pm \\sqrt{546.37}}{2(4.9)} \\cr \n&\\quad \\approx \\dfrac{17.64 \\pm 23.375}{9.8} \n\\end{aligned}",
+        "Since time must be positive ($t > 0$), take the positive root:\\begin{aligned} \n&t \\cr \n&\\quad \\approx \\dfrac{17.64 + 23.375}{9.8} \\cr \n&\\quad \\approx 4.19\\text{ s} \n\\end{aligned}",
+        "Final Answer: $$u = 35.3\\text{ m s}^{-1};$$<br>$$t = 4.19\\text{ s}$$"
     ],
     "pi_options": [
         {
-            "ans": "$$u = 35.3\\text{ m s}^{ -1 };$$<br>$$t = 3.57\\text{ s}$$",
-            "feedback": "This error occurs if you used an incorrect displacement of $s_y = -10$ (from the seed question) instead of the updated value $s_y = -12$ in part (b)."
+            "ans": "$$u = 35.3\\text{ m s}^{-1};$$<br>$$t = 3.57\\text{ s}$$",
+            "feedback": "This error occurs if you used an incorrect vertical displacement of $s_y = -10\\text{ m}$ instead of $s_y = -12\\text{ m}$ in part (b)."
         },
         {
-            "ans": "$$u = 25.7\\text{ m s}^{ -1 };$$<br>$$t = 4.19\\text{ s}$$",
-            "feedback": "This indicates a parameter slip in part (a). Ensure you use the updated highest point time $t = 1.8\\text{ s}$ and angle of projection $30^\\circ$ instead of yesterday's seed parameters."
+            "ans": "$$u = 25.7\\text{ m s}^{-1};$$<br>$$t = 4.19\\text{ s}$$",
+            "feedback": "This indicates a parameter slip in part (a). Ensure you use the highest point time $t = 1.8\\text{ s}$ and angle of projection $30^\\circ$ to find $u$."
         },
         {
-            "ans": "$$u = 35.3\\text{ m s}^{ -1 };$$<br>$$t = 3.12\\text{ s}$$",
+            "ans": "$$u = 35.3\\text{ m s}^{-1};$$<br>$$t = 3.12\\text{ s}$$",
             "feedback": "This represents an algebraic sign error in part (b). You likely used a positive displacement $s_y = +12\\text{ m}$ instead of a negative displacement, assuming the landing point was above the projection point."
         }
     ],
@@ -1286,12 +1288,13 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "In this question, use $g = 9.8\\text{ m s}^{-2}$.<br><br>A stone is projected from a point on horizontal ground with an initial velocity of $20\\text{ m s}^{-1}$ at an angle of $40^\\circ$ above the horizontal.<br><br><strong>(a)</strong> Find the total time, in seconds to three significant figures, that the stone is in the air.<br><br><strong>(b)</strong> Find the horizontal distance (the range), in metres to three significant figures, travelled by the stone before it hits the ground.",
     "steps": [
-        "For part <strong>(a)</strong>, find the vertical component of the initial velocity, $u_y$:<br><br>$$u_y = 20\\sin{ 40^\\circ } \\approx 12.856\\text{ m s}^{ -1 }$$",
+        "For part <strong>(a)</strong>, find the vertical component of the initial velocity, $u_y$:\\begin{aligned} \n&u_y \\cr \n&\\quad = 20\\sin 40^\\circ \\cr \n&\\quad \\approx 12.856\\text{ m s}^{-1} \n\\end{aligned}",
         "Because the stone lands on horizontal ground at the same vertical level from which it was projected, the net vertical displacement is zero ($s_y = 0$).",
-        "Use the vertical displacement formula $s_y = u_y t + \\dfrac{ 1 }{ 2 } at^2$ with $a = -g = -9.8\\text{ m s}^{-2}$ to solve for the time of flight, $t$:<br><br>\\begin{aligned} 0 &= 12.856t - 4.9t^2 \\cr 0 &= t(12.856 - 4.9t) \\end{aligned}",
-        "Since $t > 0$ during the flight, solve the linear part of the factored equation:<br><br>\\begin{aligned} 12.856 - 4.9t &= 0 \\cr 4.9t &= 12.856 \\cr t &= \\dfrac{ 12.856 }{ 4.9 } \\cr t &\\approx 2.62\\text{ s} \\end{aligned}",
-        "For part <strong>(b)</strong>, find the horizontal component of the initial velocity, $u_x$:<br><br>$$u_x = 20\\cos{ 40^\\circ } \\approx 15.321\\text{ m s}^{ -1 }$$",
-        "Because air resistance is neglected, horizontal velocity remains constant throughout the flight. Calculate the horizontal range, $s_x$, by multiplying the horizontal velocity by the total time of flight, $t = 2.624\\text{ s}$:<br><br>\\begin{aligned} s_x &= u_x \\times t \\cr s_x &= 15.321 \\times 2.624 \\cr s_x &\\approx 40.2\\text{ m} \\end{aligned}"
+        "Use the vertical displacement formula with $a = -9.8\\text{ m s}^{-2}$ (since $a = -g$) to solve for the time of flight, $t$:\\begin{aligned} \n&0 = 12.856t - 4.9t^2 \\cr \n&0 = t(12.856 - 4.9t) \n\\end{aligned}",
+        "Since $t > 0$ during the flight, solve the linear factor:\\begin{aligned} \n&12.856 - 4.9t = 0 \\cr \n&4.9t = 12.856 \\cr \n&t = \\dfrac{12.856}{4.9} \\cr \n&t \\approx 2.62\\text{ s} \n\\end{aligned}",
+        "For part <strong>(b)</strong>, find the horizontal component of the initial velocity, $u_x$:\\begin{aligned} \n&u_x \\cr \n&\\quad = 20\\cos 40^\\circ \\cr \n&\\quad \\approx 15.321\\text{ m s}^{-1} \n\\end{aligned}",
+        "Because air resistance is neglected, horizontal velocity remains constant throughout the flight. Calculate the horizontal range, $s_x$, using $t = 2.624\\text{ s}$:\\begin{aligned} \n&s_x \\cr \n&\\quad = u_x \\times t \\cr \n&\\quad = 15.321 \\times 2.624 \\cr \n&\\quad \\approx 40.2\\text{ m} \n\\end{aligned}",
+        "Final Answer: $$t = 2.62\\text{ s};$$<br>$$s_x = 40.2\\text{ m}$$"
     ],
     "pi_options": [
         {
@@ -1327,15 +1330,16 @@ window.ALEVEL_QUESTIONS = [
     "question": "In this question, use $g = 9.8\\text{ m s}^{-2}$.<br><br>A ball is projected horizontally with speed $U\\text{ m s}^{-1}$ from the top of a vertical cliff of height $44.1\\text{ metres}$. The ball lands on the horizontal ground at a distance of $36\\text{ metres}$ from the foot of the cliff.<br><br><strong>(a)</strong> Find the time of flight of the ball, in seconds.<br><br><strong>(b)</strong> Find the value of $U$.",
     "steps": [
         "For part <strong>(a)</strong>, analyze the vertical motion of the ball. Because the ball is projected horizontally, its initial vertical velocity is zero ($u_y = 0$).",
-        "Set the vertical displacement to $s_y = -44.1\\text{ m}$ (since the ball falls downwards from the top of the cliff) and the vertical acceleration to $a = -g = -9.8\\text{ m s}^{-2}$.",
-        "Use the vertical displacement formula $s_y = u_y t + \\dfrac{ 1 }{ 2 } at^2$ to solve for the time of flight, $t$:<br><br>\\begin{aligned} -44.1 &= 0 - 4.9t^2 \\cr 4.9t^2 &= 44.1 \\cr t^2 &= \\dfrac{ 44.1 }{ 4.9 } \\cr t^2 &= 9 \\cr t &= 3.0\\text{ s} \\end{aligned}",
-        "For part <strong>(b)</strong>, analyze the horizontal motion. The horizontal component of the velocity is constant at $U\\text{ m s}^{-1}$, and the horizontal distance covered is $s_x = 36\\text{ m}$.",
-        "Use the horizontal motion formula $s_x = U \\times t$ with $t = 3.0\\text{ s}$ to solve for $U$:<br><br>\\begin{aligned} 36 &= U \\times 3.0 \\cr U &= \\dfrac{ 36 }{ 3.0 } \\cr U &= 12 \\end{aligned}"
+        "Set the vertical displacement to $s_y = -44.1\\text{ m}$ (since the ball falls downwards from the cliff) and the vertical acceleration to $a = -9.8\\text{ m s}^{-2}$ (since $a = -g$).",
+        "Use the vertical displacement formula $s_y = u_y t + \\dfrac{1}{2}at^2$ to solve for $t$:\\begin{aligned} \n&-44.1 = 0 - 4.9t^2 \\cr \n&4.9t^2 = 44.1 \\cr \n&t^2 = \\dfrac{44.1}{4.9} \\cr \n&t^2 = 9 \\cr \n&t = 3.0\\text{ s} \n\\end{aligned}",
+        "For part <strong>(b)</strong>, analyze the horizontal motion. The horizontal component of velocity is constant at $U\\text{ m s}^{-1}$, and the horizontal distance covered is $s_x = 36\\text{ m}$.",
+        "Use the horizontal motion formula $s_x = U \\times t$ with $t = 3.0\\text{ s}$ to solve for $U$:\\begin{aligned} \n&36 = U \\times 3.0 \\cr \n&U = \\dfrac{36}{3.0} \\cr \n&U = 12 \n\\end{aligned}",
+        "Final Answer: $$t = 3.0\\text{ s};$$<br>$$U = 12$$"
     ],
     "pi_options": [
         {
             "ans": "$$t = 4.5\\text{ s};$$<br>$$U = 8.0$$",
-            "feedback": "This error occurs if you used an incorrect value for acceleration due to gravity, or made an arithmetic error when evaluating $t^2 = \\dfrac{ 44.1 }{ 4.9 } = 9$."
+            "feedback": "This error occurs if you used an incorrect value for acceleration due to gravity, or made an arithmetic error when evaluating $t^2 = \\dfrac{44.1}{4.9}$ to find $t^2 = 9$."
         },
         {
             "ans": "$$t = 3.0\\text{ s};$$<br>$$U = 10.8$$",
@@ -1365,13 +1369,14 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "In this question, use $g = 9.8\\text{ m s}^{-2}$.<br><br>A particle is projected from a point $O$ on horizontal ground with speed $28\\text{ m s}^{-1}$. At the instant when the particle is at its maximum height, it has travelled a horizontal distance of $24\\text{ metres}$ from $O$.<br><br>For the larger of the two possible angles of projection:<br><br><strong>(a)</strong> Find the angle of projection, $\\theta$, in degrees to one decimal place.<br><br><strong>(b)</strong> Find the time taken, in seconds to three significant figures, for the particle to reach its maximum height.",
     "steps": [
-        "Analyze the geometric symmetry of projectiles. On horizontal ground, maximum height occurs exactly at half of the total horizontal range. Therefore, the total horizontal range, $R$, is:<br><br>$$R = 2 \\times 24 = 48\\text{ m}$$",
-        "Recall the formula for the horizontal range of a projectile: $R = \\dfrac{ u^2\\sin{ 2\\theta } }{ g }$. Substitute $R = 48$, $u = 28$, and $g = 9.8$ into the formula:<br><br>\\begin{aligned} 48 &= \\dfrac{ 28^2\\sin{ 2\\theta } }{ 9.8 } \\cr 48 &= \\dfrac{ 784\\sin{ 2\\theta } }{ 9.8 } \\cr 48 &= 80\\sin{ 2\\theta } \\end{aligned}",
-        "Solve for $\\sin{ 2\\theta }$:<br><br>\\begin{aligned} \\sin{ 2\\theta } &= \\dfrac{ 48 }{ 80 } \\cr \\sin{ 2\\theta } &= 0.6 \\end{aligned}",
-        "Find the two possible values for $2\\theta$ within the range $0^\\circ < 2\\theta < 180^\\circ$:<br><br>\\begin{aligned} 2\\theta &= \\arcsin{ 0.6 } \\approx 36.87^\\circ \\cr 2\\theta &= 180^\\circ - 36.87^\\circ = 143.13^\\circ \\end{aligned}",
-        "Divide by $2$ to find the two possible projection angles, $\\theta$:<br><br>$$\\theta \\approx 18.4^\\circ \\quad \\text{or} \\quad \\theta \\approx 71.6^\\circ$$",
-        "For part <strong>(a)</strong>, the question asks for the larger of the two angles of projection, so select:<br><br>$$\\theta \\approx 71.6^\\circ$$",
-        "For part <strong>(b)</strong>, find the time to reach maximum height, $t$. At maximum height, the vertical velocity is zero ($v_y = 0$):<br><br>\\begin{aligned} 0 &= u_y - gt \\cr 0 &= 28\\sin{ 71.565^\\circ } - 9.8t \\cr 9.8t &= 26.56 \\cr t &= \\dfrac{ 26.56 }{ 9.8 } \\cr t &\\approx 2.71\\text{ s} \\end{aligned}"
+        "Analyze the geometric symmetry of projectiles. On horizontal ground, maximum height occurs at half of the total horizontal range. Therefore, the total horizontal range, $R$, is:\\begin{aligned} \n&R \\cr \n&\\quad = 2 \\times 24 \\cr \n&\\quad = 48\\text{ m} \n\\end{aligned}",
+        "Recall the horizontal range formula $R = \\dfrac{u^2\\sin 2\\theta}{g}$. Substitute $R = 48$, $u = 28$, and $g = 9.8$ into the formula:\\begin{aligned} \n&48 = \\dfrac{28^2\\sin 2\\theta}{9.8} \\cr \n&48 = \\dfrac{784\\sin 2\\theta}{9.8} \\cr \n&48 = 80\\sin 2\\theta \n\\end{aligned}",
+        "Solve for $\\sin 2\\theta$:\\begin{aligned} \n&\\sin 2\\theta = \\dfrac{48}{80} \\cr \n&\\sin 2\\theta = 0.6 \n\\end{aligned}",
+        "Find the two possible values for $2\\theta$ in the interval $0^\\circ < 2\\theta < 180^\\circ$:\\begin{aligned} \n&2\\theta \\approx 36.87^\\circ \\cr \n&\\text{or} \\cr \n&2\\theta \\approx 180^\\circ - 36.87^\\circ \\cr \n&2\\theta \\approx 143.13^\\circ \n\\end{aligned}",
+        "Divide by $2$ to obtain the two possible projection angles, $\\theta$:\\begin{aligned} \n&\\theta \\approx 18.4^\\circ \\cr \n&\\text{or} \\cr \n&\\theta \\approx 71.6^\\circ \n\\end{aligned}",
+        "For part <strong>(a)</strong>, the question asks for the larger of the two angles of projection, so select $\\theta \\approx 71.6^\\circ$.",
+        "For part <strong>(b)</strong>, find the time to reach maximum height, $t$. At maximum height, the vertical velocity is zero ($v_y = 0$):\\begin{aligned} \n&0 = u_y - gt \\cr \n&0 = 28\\sin 71.565^\\circ - 9.8t \\cr \n&9.8t = 26.56 \\cr \n&t = \\dfrac{26.56}{9.8} \\cr \n&t \\approx 2.71\\text{ s} \n\\end{aligned}",
+        "Final Answer: $$\\theta = 71.6^\\circ;$$<br>$$t = 2.71\\text{ s}$$"
     ],
     "pi_options": [
         {
@@ -1404,27 +1409,28 @@ window.ALEVEL_QUESTIONS = [
         "Trajectory Equation"
     ],
     "img": false,
-    "question": "In this question, use $g = 9.8\\text{ m s}^{-2}$.<br><br>A particle is projected from the origin $O$ with speed $14\\text{ m s}^{-1}$ at an angle $\\theta$ above the horizontal.<br><br><strong>(a)</strong> Show that the Cartesian equation of the trajectory of the particle is given by:<br><br>$$y = x \\tan \\theta - \\dfrac{ 1 }{ 40 } x^2 (1 + \\tan^2 \\theta)$$<br><strong>(b)</strong> Given that the particle passes through a point $P(10, 2.5)$, find the two possible values of $\\tan \\theta$.",
+    "question": "In this question, use $g = 9.8\\text{ m s}^{-2}$.<br><br>A particle is projected from the origin $O$ with speed $14\\text{ m s}^{-1}$ at an angle $\\theta$ above the horizontal.<br><br><strong>(a)</strong> Show that the Cartesian equation of the trajectory of the particle is given by:\\begin{aligned} \n&y = x\\tan\\theta - \\dfrac{1}{40}x^2(1 + \\tan^2\\theta) \n\\end{aligned}<br><br><strong>(b)</strong> Given that the particle passes through a point $P(10, 2.5)$, find the two possible values of $\\tan \\theta$.",
     "steps": [
-        "For part <strong>(a)</strong>, write down the equations for horizontal and vertical displacements in terms of time $t$:<br><br>\\begin{aligned} x &= (u\\cos{ \\theta })t \\cr y &= (u\\sin{ \\theta })t - \\dfrac{ 1 }{ 2 }gt^2 \\end{aligned}",
-        "Rearrange the horizontal displacement equation to express $t$ in terms of $x$:<br><br>$$t = \\dfrac{ x }{ u\\cos{ \\theta } }$$",
-        "Substitute this expression for $t$ into the vertical displacement equation to eliminate time as a variable:<br><br>\\begin{aligned} y &= u\\sin{ \\theta }\\left( \\dfrac{ x }{ u\\cos{ \\theta } } \\right) - \\dfrac{ g }{ 2 }\\left( \\dfrac{ x }{ u\\cos{ \\theta } } \\right)^2 \\cr y &= x\\tan{ \\theta } - \\dfrac{ gx^2 }{ 2u^2\\cos^2{ \\theta } } \\end{aligned}",
-        "Recall the trigonometric identity $\\dfrac{ 1 }{ \\cos^2{ \\theta } } = \\sec^2{ \\theta } = 1 + \\tan^2{ \\theta }$. Substitute $u = 14$ and $g = 9.8$ into the equation:<br><br>\\begin{aligned} y &= x\\tan{ \\theta } - \\dfrac{ 9.8x^2 }{ 2(14^2) }(1 + \\tan^2{ \\theta }) \\cr y &= x\\tan{ \\theta } - \\dfrac{ 9.8x^2 }{ 392 }(1 + \\tan^2{ \\theta }) \\cr y &= x\\tan{ \\theta } - \\dfrac{ 1 }{ 40 }x^2(1 + \\tan^2{ \\theta }) \\end{aligned}",
-        "For part <strong>(b)</strong>, substitute the coordinate point $P(10, 2.5)$ into the trajectory equation to solve for $\\tan{ \\theta }$:<br><br>\\begin{aligned} 2.5 &= 10\\tan{ \\theta } - \\dfrac{ 10^2 }{ 40 }(1 + \\tan^2{ \\theta }) \\cr 2.5 &= 10\\tan{ \\theta } - 2.5(1 + \\tan^2{ \\theta }) \\end{aligned}",
-        "Divide the entire equation by $2.5$ to simplify the coefficients and rearrange into a standard quadratic form:<br><br>\\begin{aligned} 1 &= 4\\tan{ \\theta } - (1 + \\tan^2{ \\theta }) \\cr 1 &= 4\\tan{ \\theta } - 1 - \\tan^2{ \\theta } \\cr \\tan^2{ \\theta } - 4\\tan{ \\theta } + 2 &= 0 \\end{aligned}",
-        "Solve the quadratic equation in $\\tan{ \\theta }$ using the quadratic formula:<br><br>\\begin{aligned} \\tan{ \\theta } &= \\dfrac{ -(-4) \\pm \\sqrt{ (-4)^2 - 4(1)(2) } }{ 2(1) } \\cr \\tan{ \\theta } &= \\dfrac{ 4 \\pm \\sqrt{ 16 - 8 } }{ 2 } \\cr \\tan{ \\theta } &= \\dfrac{ 4 \\pm \\sqrt{ 8 } }{ 2 } \\cr \\tan{ \\theta } &= 2 \\pm \\sqrt{ 2 } \\end{aligned}"
+        "For part <strong>(a)</strong>, write down the equations for horizontal and vertical displacements in terms of time $t$:\\begin{aligned} \n&x = (u\\cos\\theta)t \\cr \n&y = (u\\sin\\theta)t - \\dfrac{1}{2}gt^2 \n\\end{aligned}",
+        "Rearrange the horizontal displacement equation to express $t$ in terms of $x$:\\begin{aligned} \n&t = \\dfrac{x}{u\\cos\\theta} \n\\end{aligned}",
+        "Substitute this expression for $t$ into the vertical displacement equation:\\begin{aligned} \n&y \\cr \n&\\quad = u\\sin\\theta\\left(\\dfrac{x}{u\\cos\\theta}\\right) \\cr \n&\\qquad - \\dfrac{g}{2}\\left(\\dfrac{x}{u\\cos\\theta}\\right)^2 \\cr \n&\\quad = x\\tan\\theta - \\dfrac{gx^2}{2u^2\\cos^2\\theta} \n\\end{aligned}",
+        "Recall the identity $\\dfrac{1}{\\cos^2\\theta} = 1 + \\tan^2\\theta$. Substitute $u = 14$ and $g = 9.8$ into the equation:\\begin{aligned} \n&y \\cr \n&\\quad = x\\tan\\theta \\cr \n&\\qquad - \\dfrac{9.8x^2}{2(14^2)}(1 + \\tan^2\\theta) \\cr \n&\\quad = x\\tan\\theta \\cr \n&\\qquad - \\dfrac{9.8x^2}{392}(1 + \\tan^2\\theta) \\cr \n&\\quad = x\\tan\\theta - \\dfrac{1}{40}x^2(1 + \\tan^2\\theta) \n\\end{aligned}",
+        "For part <strong>(b)</strong>, substitute the coordinates of $P(10, 2.5)$ into the trajectory equation:\\begin{aligned} \n&2.5 \\cr \n&\\quad = 10\\tan\\theta - \\dfrac{10^2}{40}(1 + \\tan^2\\theta) \\cr \n&\\quad = 10\\tan\\theta - 2.5(1 + \\tan^2\\theta) \n\\end{aligned}",
+        "Divide by $2.5$ and rearrange into a standard quadratic equation:\\begin{aligned} \n&1 = 4\\tan\\theta - (1 + \\tan^2\\theta) \\cr \n&1 = 4\\tan\\theta - 1 - \\tan^2\\theta \\cr \n&\\tan^2\\theta - 4\\tan\\theta + 2 = 0 \n\\end{aligned}",
+        "Solve the quadratic equation in $\\tan\\theta$ using the quadratic formula:\\begin{aligned} \n&\\tan\\theta \\cr \n&\\quad = \\dfrac{-(-4) \\pm \\sqrt{(-4)^2 - 4(1)(2)}}{2(1)} \\cr \n&\\quad = \\dfrac{4 \\pm \\sqrt{16 - 8}}{2} \\cr \n&\\quad = \\dfrac{4 \\pm \\sqrt{8}}{2} \\cr \n&\\quad = 2 \\pm \\sqrt{2} \n\\end{aligned}",
+        "Final Answer: $$\\tan\\theta = 2 + \\sqrt{2} \\text{ and } 2 - \\sqrt{2}$$"
     ],
     "pi_options": [
         {
-            "ans": "$$\\tan \\theta = 1 \\quad \\text{and} \\quad 3;$$",
-            "feedback": "This error occurs if you assumed the vertical coordinate of point $P$ was $2.0$ instead of $2.5$. If $y = 2.0$, the quadratic simplifies to have nice integer roots, but for $y = 2.5$ it yields the exact surd values $2 \\pm \\sqrt{2}$."
+            "ans": "$$\\tan\\theta = 1 \\text{ and } 3$$",
+            "feedback": "This error occurs if you assumed the vertical coordinate of point $P$ was $2.0$ instead of $2.5$. If $y = 2.0$, the quadratic simplifies to have integer roots, but for $y = 2.5$ it yields the exact surd values $2 \\pm \\sqrt{2}$."
         },
         {
-            "ans": "$$\\tan \\theta = 2 \\quad \\text{and} \\quad 4;$$",
+            "ans": "$$\\tan\\theta = 2 \\text{ and } 4$$",
             "feedback": "This represents a calculation slip when factorising or dividing the quadratic terms. Re-evaluate your standard quadratic coefficients carefully."
         },
         {
-            "ans": "$$\\tan \\theta = 2 + \\sqrt{3} \\quad \\text{and} \\quad 2 - \\sqrt{3};$$",
+            "ans": "$$\\tan\\theta = 2 + \\sqrt{3} \\text{ and } 2 - \\sqrt{3}$$",
             "feedback": "This indicates an error when calculating the discriminant $\\sqrt{b^2 - 4ac}$ under the quadratic formula, leading to an incorrect root value."
         }
     ],
