@@ -53,10 +53,10 @@ window.ALEVEL_QUESTIONS = [
                 "question": "Let $f(x) = 4x^3 + ax^2 - 7x + 2a$.<br>Given that (x + 2) is a factor of $f(x)$, find the value of the constant a.",
                 "steps": [
                         "According to the <strong>Factor Theorem</strong>, if (x + 2) is a factor of $f(x)$, then evaluating the polynomial at $x = -2$ must equal zero: $f(-2) = 0$.",
-                        "We substitute $x = -2$ into the expression fo $f(x)$:<br>$$f(-2) = 4(-2)^3 + a(-2)^2 - 7(-2) + 2a$$",
+                        "We substitute $x = -2$ into the expression for $f(x)$:\\begin{aligned}f(-2) & = 4(-2)^3 + a(-2)^2\\cr & \\qquad- 7(-2) + 2aend{aligned}",
                         "Evaluating the powers and simplifying each term (keeping close track of negative signs) gives:<br>$$f(-2) = 4(-8) + a(4) + 14 + 2a$$<br>$$f(-2) = -32 + 4a + 14 + 2a$$",
                         "Combining the numerical terms and the a terms yields:<br>$$(-32 + 14) + (4a + 2a) = 0$$<br>$$-18 + 6a = 0$$",
-                        "Solving this linear equation gives our final value for a:<br>\\begin{aligned}6a &= 18 \\cra &= 3\\end{aligned}",
+                        "Solving this linear equation gives our final value for a:<br>\\begin{aligned}6a &= 18 \\cr a &= 3\\end{aligned}",
                         "Final Answer: $$a = 3$$"
                 ],
                 "pi_options": [
@@ -96,7 +96,7 @@ window.ALEVEL_QUESTIONS = [
                         "We substitute $x = 1$ into the expression fo $f(x)$:<br>$$f(1) = 3(1)^3 - 2k(1)^2 + 5(1) + 4k$$",
                         "Simplifying the powers and combining terms gives:<br>$$f(1) = 3 - 2k + 5 + 4k$$",
                         "Combining the constant terms and the k terms yields:<br>$$(3 + 5) + (-2k + 4k) = 0$$<br>$$8 + 2k = 0$$",
-                        "Solving this linear equation gives our final value for k:<br>\\begin{aligned}2k &= -8 \\crk &= -4\\end{aligned}",
+                        "Solving this linear equation gives our final value for k:<br>\\begin{aligned}2k &= -8 \\cr k &= -4\\end{aligned}",
                         "Final Answer: $$k = -4$$"
                 ],
                 "pi_options": [
@@ -136,7 +136,7 @@ window.ALEVEL_QUESTIONS = [
                         "We substitute $x = 3$ into the expression fo $f(x)$:<br>$$f(3) = 2(3)^3 - a(3)^2 - 8(3) + 3a$$",
                         "Evaluating the powers and simplifying each term gives:<br>$$f(3) = 2(27) - 9a - 24 + 3a$$<br>$$f(3) = 54 - 9a - 24 + 3a$$",
                         "Combining the constant terms and the a terms yields:<br>$$(54 - 24) + (-9a + 3a) = 0$$<br>$$30 - 6a = 0$$",
-                        "Solving this linear equation gives our final value for a:<br>\\begin{aligned}6a &= 30 \\cra &= 5\\end{aligned}",
+                        "Solving this linear equation gives our final value for a:<br>\\begin{aligned}6a &= 30 \\cr a &= 5\\end{aligned}",
                         "Final Answer: $$a = 5$$"
                 ],
                 "pi_options": [
@@ -1243,8 +1243,8 @@ window.ALEVEL_QUESTIONS = [
                 "question": "In a simple model, the value, £V, of a motorcycle depends on its age, t, in years.<br>The following information is available for motorcycle A:<br><ul><li>its value when new is £15,000</li><li>its value after one year is £12,000</li></ul><strong>(a)</strong> Use an exponential model to form, for motorcycle A, a possible equation linking V with t.<br>The value of motorcycle A is monitored over an 8-year period. Its value after 8 years is £2,500.<br><strong>(b)</strong> Evaluate the reliability of your model in light of this information.<br>The following information is available for motorcycle B:<br><ul><li>it has the same value, when new, as motorcycle A</li><li>its value depreciates more slowly than that of motorcycle A</li></ul><strong>(c)</strong> Explain how you would adapt the equation found in <strong>(a)</strong> so that it could be used to model the value of motorcycle B.",
                 "steps": [
                         "<strong>Part (a):</strong> We define our exponential model in the standard form $V = A b^t$, where A is the initial value and b is the annual multiplier.",
-                        "Using the initial condition when the motorcycle is new ($t = 0$):<br>\\begin{aligned}15000 &= A b^0 \\crA &= 15000\\end{aligned}",
-                        "Using the value after one year ($t = 1$):<br>\\begin{aligned}12000 &= 15000 b^1 \\crb &= \\dfrac{12000}{15000} = 0.8\\end{aligned}",
+                        "Using the initial condition when the motorcycle is new ($t = 0$):<br>\\begin{aligned}15000 &= A b^0 \\cr a &= 15000\\end{aligned}",
+                        "Using the value after one year ($t = 1$):<br>\\begin{aligned}12000 &= 15000 b^1 \\cr b &= \\dfrac{12000}{15000} = 0.8\\end{aligned}",
                         "This gives our final exponential equation linking V with t:<br>$$V = 15000(0.8)^t$$",
                         "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>\\begin{aligned}V &= 15000(0.8)^8\\cr &\\approx 15000 \\times 0.16777\\cr &\\approx £2,517\\end{aligned}",
                         "The actual monitored value after 8 years is £2,500. Since our model's prediction of £2,517 is extremely close to the actual value, the model is highly reliable over this period.",
@@ -1285,8 +1285,8 @@ window.ALEVEL_QUESTIONS = [
                 "question": "In a simple model, the value, £V, of an industrial machine depends on its age, t, in years.<br>The following information is available for machine A:<br><ul><li>its value when new is £50,000</li><li>its value after one year is £42,500</li></ul><strong>(a)</strong> Use an exponential model to form, for machine A, a possible equation linking V with t.<br>The value of machine A is monitored over a 12-year period. Its value after 12 years is £10,000.<br><strong>(b)</strong> Evaluate the reliability of your model in light of this information.<br>The following information is available for machine B:<br><ul><li>it has the same value, when new, as machine A</li><li>its value depreciates more slowly than that of machine A</li></ul><strong>(c)</strong> Explain how you would adapt the equation found in <strong>(a)</strong> so that it could be used to model the value of machine B.",
                 "steps": [
                         "<strong>Part (a):</strong> We define our exponential model in the form $V = A b^t$, where A is the initial value and b is the annual multiplier.",
-                        "Using the initial condition when the machine is new ($t = 0$):<br>\\begin{aligned}50000 &= A b^0 \\crA &= 50000\\end{aligned}",
-                        "Using the value after one year ($t = 1$):<br>\\begin{aligned}42500 &= 50000 b^1 \\crb &= \\dfrac{42500}{50000} = 0.85\\end{aligned}",
+                        "Using the initial condition when the machine is new ($t = 0$):<br>\\begin{aligned}50000 &= A b^0 \\cr a &= 50000\\end{aligned}",
+                        "Using the value after one year ($t = 1$):<br>\\begin{aligned}42500 &= 50000 b^1 \\cr b &= \\dfrac{42500}{50000} = 0.85\\end{aligned}",
                         "This gives our final exponential equation linking V with t:<br>$$V = 50000(0.85)^t$$",
                         "<strong>Part (b):</strong> We substitute $t = 12$ into our model to find the predicted value:<br>\\begin{aligned}V &= 50000(0.85)^{12}\\cr &\\approx 50000 \\times 0.14224\\cr &\\approx £7,112\\end{aligned}",
                         "The actual monitored value after 12 years is £10,000. Since our model's prediction of £7,112 is significantly lower than the actual value, the model has weaker reliability over this period.",
@@ -1327,8 +1327,8 @@ window.ALEVEL_QUESTIONS = [
                 "question": "In a simple model, the value, £V, of a luxury yacht depends on its age, t, in years.<br>The following information is available for yacht A:<br><ul><li>its value when new is £100,000</li><li>its value after one year is £90,000</li></ul><strong>(a)</strong> Use an exponential model to form, for yacht A, a possible equation linking V with t.<br>The value of yacht A is monitored over a 10-year period. Its value after 10 years is £35,000.<br><strong>(b)</strong> Evaluate the reliability of your model in light of this information.<br>The following information is available for yacht B:<br><ul><li>it has the same value, when new, as yacht A</li><li>its value depreciates more slowly than that of yacht A</li></ul><strong>(c)</strong> Explain how you would adapt the equation found in <strong>(a)</strong> so that it could be used to model the value of yacht B.",
                 "steps": [
                         "<strong>Part (a):</strong> We define our exponential model in the form $V = A b^t$, where A is the initial value and b is the annual multiplier.",
-                        "Using the initial condition when the yacht is new ($t = 0$):<br>\\begin{aligned}100000 &= A b^0 \\crA &= 100000\\end{aligned}",
-                        "Using the value after one year ($t = 1$):<br>\\begin{aligned}90000 &= 100000 b^1 \\crb &= \\dfrac{90000}{100000} = 0.9\\end{aligned}",
+                        "Using the initial condition when the yacht is new ($t = 0$):<br>\\begin{aligned}100000 &= A b^0 \\cr a &= 100000\\end{aligned}",
+                        "Using the value after one year ($t = 1$):<br>\\begin{aligned}90000 &= 100000 b^1 \\cr b &= \\dfrac{90000}{100000} = 0.9\\end{aligned}",
                         "This gives our final exponential equation linking V with t:<br>$$V = 100000(0.9)^t$$",
                         "<strong>Part (b):</strong> We substitute $t = 10$ into our model to find the predicted value:<br>\\begin{aligned} V &= 100000(0.9)^{10}\\cr &\\approx 100000 \\times 0.34868\\cr &\\approx £34,868\\end{aligned}",
                         "The actual monitored value after 10 years is £35,000. Since our model's prediction of £34,868 is extremely close to the actual value, the model is highly reliable over this period.",
@@ -1369,8 +1369,8 @@ window.ALEVEL_QUESTIONS = [
                 "question": "In a simple model, the value, £V, of an agricultural tractor depends on its age, t, in years.<br>The following information is available for tractor A:<br><ul><li>its value when new is £40,000</li><li>its value after one year is £30,000</li></ul><strong>(a)</strong> Use an exponential model to form, for tractor A, a possible equation linking V with t.<br>The value of tractor A is monitored over an 8-year period. Its value after 8 years is £4,000.<br><strong>(b)</strong> Evaluate the reliability of your model in light of this information.<br>The following information is available for tractor B:<br><ul><li>it has the same value, when new, as tractor A</li><li>its value depreciates more slowly than that of tractor A</li></ul><strong>(c)</strong> Explain how you would adapt the equation found in <strong>(a)</strong> so that it could be used to model the value of tractor B.",
                 "steps": [
                         "<strong>Part (a):</strong> We define our exponential model in the form $V = A b^t$, where A is the initial value and b is the annual multiplier.",
-                        "Using the initial condition when the tractor is new ($t = 0$):<br>\\begin{aligned}40000 &= A b^0 \\crA &= 40000\\end{aligned}",
-                        "Using the value after one year ($t = 1$):<br>\\begin{aligned}30000 &= 40000 b^1 \\crb &= \\dfrac{30000}{40000} = 0.75\\end{aligned}",
+                        "Using the initial condition when the tractor is new ($t = 0$):<br>\\begin{aligned}40000 &= A b^0 \\cr a &= 40000\\end{aligned}",
+                        "Using the value after one year ($t = 1$):<br>\\begin{aligned}30000 &= 40000 b^1 \\cr b &= \\dfrac{30000}{40000} = 0.75\\end{aligned}",
                         "This gives our final exponential equation linking V with t:<br>$$V = 40000(0.75)^t$$",
                         "<strong>Part (b):</strong> We substitute $t = 8$ into our model to find the predicted value:<br>\\begin{aligned}V &= 40000(0.75)^8\\cr &\\approx 40000 \\times 0.10011\\cr &\\approx £4,005\\end{aligned}",
                         "The actual monitored value after 8 years is £4,000. Since our model's prediction of £4,005 is extremely close to the actual value, the model is highly reliable over this period.",
@@ -1411,8 +1411,8 @@ window.ALEVEL_QUESTIONS = [
                 "question": "In a simple model, the value, £V, of an electric vehicle (EV) depends on its age, t, in years.<br>The following information is available for EV A:<br><ul><li>its value when new is £30,000</li><li>its value after one year is £24,000</li></ul><strong>(a)</strong> Use an exponential model to form, for EV A, a possible equation linking V with t.<br>The value of EV A is monitored over a 6-year period. Its value after 6 years is £7,800.<br><strong>(b)</strong> Evaluate the reliability of your model in light of this information.<br>The following information is available for EV B:<br><ul><li>it has the same value, when new, as EV A</li><li>its value depreciates more slowly than that of EV A</li></ul><strong>(c)</strong> Explain how you would adapt the equation found in <strong>(a)</strong> so that it could be used to model the value of EV B.",
                 "steps": [
                         "<strong>Part (a):</strong> We define our exponential model in the form $V = A b^t$, where A is the initial value and b is the annual multiplier.",
-                        "Using the initial condition when the EV is new ($t = 0$):<br>\\begin{aligned}30000 &= A b^0 \\crA &= 30000\\end{aligned}",
-                        "Using the value after one year ($t = 1$):<br>\\begin{aligned}24000 &= 30000 b^1 \\crb &= \\dfrac{24000}{30000} = 0.8\\end{aligned}",
+                        "Using the initial condition when the EV is new ($t = 0$):<br>\\begin{aligned}30000 &= A b^0 \\cr a &= 30000\\end{aligned}",
+                        "Using the value after one year ($t = 1$):<br>\\begin{aligned}24000 &= 30000 b^1 \\cr b &= \\dfrac{24000}{30000} = 0.8\\end{aligned}",
                         "This gives our final exponential equation linking V with t:<br>$$V = 30000(0.8)^t$$",
                         "<strong>Part (b):</strong> We substitute $t = 6$ into our model to find the predicted value:<br>\\begin{aligned}V &= 30000(0.8)^6\\cr &\\approx 30000 \\times 0.26214\\cr &\\approx £7,864\\end{aligned}",
                         "The actual monitored value after 6 years is £7,800. Since our model's prediction of £7,864 is extremely close to the actual value, the model is highly reliable over this period.",
@@ -1712,7 +1712,7 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Part (a):</strong> We begin by applying the logarithm power law, $c\\log(x) = \\log(x^c)$, to the second term on the left-hand side:<br>$$\\log a - \\log(b^2) = \\log(a - b)$$",
                         "Applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\frac{x}{y}\\right)$:<br>$$\\log\\left(\\dfrac{a}{ b^2 }\\right) = \\log(a - b)$$",
                         "Removing the logarithms from both sides of the equation:<br>$$\\dfrac{a}{ b^2 } = a - b$$",
-                        "Multiplying both sides by $b^2$ to eliminate the fraction:<br>\\begin{aligned}a &= b^2(a - b) \\cra &= ab^2 - b^3\\end{aligned}",
+                        "Multiplying both sides by $b^2$ to eliminate the fraction:<br>\\begin{aligned}a &= b^2(a - b) \\cr a &= ab^2 - b^3\\end{aligned}",
                         "Rearranging to group all terms containing the variable a together on the right-hand side:<br>$$b^3 = ab^2 - a$$",
                         "Factorising out a from the right-hand side:<br>$$b^3 = a(b^2 - 1)$$",
                         "Dividing both sides of the equation by $(b^2 - 1)$ gives our target proof:<br>$$a = \\dfrac{ b^3 }{ b^2 - 1 }$$",
@@ -1755,7 +1755,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "<strong>Part (a):</strong> We begin by applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\frac{x}{y}\\right)$, to the left-hand side of our equation:<br>$$\\log\\left(\\dfrac{a}{b}\\right) = \\log(2a - b)$$",
                         "Removing the logarithms from both sides of the equation:<br>$$\\dfrac{a}{b} = 2a - b$$",
-                        "Multiplying both sides by b to eliminate the fraction:<br>\\begin{aligned}a &= b(2a - b) \\cra &= 2ab - b^2\\end{aligned}",
+                        "Multiplying both sides by b to eliminate the fraction:<br>\\begin{aligned}a &= b(2a - b) \\cr a &= 2ab - b^2\\end{aligned}",
                         "Rearranging to group all terms containing the variable a together on the right-hand side:<br>$$b^2 = 2ab - a$$",
                         "Factorising out a from the right-hand side:<br>$$b^2 = a(2b - 1)$$",
                         "Dividing both sides of the equation by (2b - 1) gives our target proof:<br>$$a = \\dfrac{ b^2 }{ 2b - 1 }$$",
@@ -1800,7 +1800,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "<strong>Part (a):</strong> We begin by applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\frac{x}{y}\\right)$, to the left-hand side of our equation:<br>$$\\log\\left(\\dfrac{a}{b}\\right) = \\log(a - 2b)$$",
                         "Removing the logarithms from both sides of the equation:<br>$$\\dfrac{a}{b} = a - 2b$$",
-                        "Multiplying both sides by b to eliminate the fraction:<br>\\begin{aligned}a &= b(a - 2b) \\cra &= ab - 2b^2\\end{aligned}",
+                        "Multiplying both sides by b to eliminate the fraction:<br>\\begin{aligned}a &= b(a - 2b) \\cr a &= ab - 2b^2\\end{aligned}",
                         "Rearranging to group all terms containing the variable a together on the right-hand side:<br>$$2b^2 = ab - a$$",
                         "Factorising out a from the right-hand side:<br>$$2b^2 = a(b - 1)$$",
                         "Dividing both sides of the equation by (b - 1) gives our target proof:<br>$$a = \\dfrac{ 2b^2 }{ b - 1 }$$",
@@ -1844,7 +1844,7 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Part (a):</strong> We begin by applying the logarithm power law, $c\\log(x) = \\log(x^c)$, to the second term on the left-hand side:<br>$$\\log a - \\log(b^3) = \\log(a - b^2)$$",
                         "Applying the logarithm subtraction law, $\\log(x) - \\log(y) = \\log\\left(\\frac{x}{y}\\right)$:<br>$$\\log\\left(\\dfrac{a}{ b^3 }\\right) = \\log(a - b^2)$$",
                         "Removing the logarithms from both sides of the equation:<br>$$\\dfrac{a}{ b^3 } = a - b^2$$",
-                        "Multiplying both sides by $b^3$ to eliminate the fraction:<br>\\begin{aligned}a &= b^3(a - b^2) \\cra &= ab^3 - b^5\\end{aligned}",
+                        "Multiplying both sides by $b^3$ to eliminate the fraction:<br>\\begin{aligned}a &= b^3(a - b^2) \\cr a &= ab^3 - b^5\\end{aligned}",
                         "Rearranging to group all terms containing the variable a together on the right-hand side:<br>$$b^5 = ab^3 - a$$",
                         "Factorising out a from the right-hand side:<br>$$b^5 = a(b^3 - 1)$$",
                         "Dividing both sides of the equation by $(b^3 - 1)$ gives our target proof:<br>$$a = \\dfrac{ b^5 }{ b^3 - 1 }$$",
