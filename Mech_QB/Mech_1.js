@@ -613,14 +613,15 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A boy attempts to move a wooden crate of mass $15\\text{ kg}$ along horizontal ground. The coefficient of friction between the crate and the ground is $0.75$.<br><br><strong>(a)</strong> The boy applies a horizontal force of $100\\text{ N}$. Show that the crate remains stationary.<br><br><strong>(b)</strong> Instead, the boy uses a handle to pull the crate forward. He exerts a force of $100\\text{ N}$ at an angle of $20^\\circ$ above the horizontal.<br><br><img src='images/Mechanics_pngs/012016.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Determine whether the crate remains stationary.",
     "steps": [
-        "<strong>(a) Horizontal Case:</strong><br>First, resolve the forces acting on the crate vertically to find the normal reaction force, $R$:<br><br>$$R = 15g = 15 \\times 9.8 = 147\\text{ N}$$",
-        "Next, calculate the maximum possible frictional force, $F_{\\text{max}}$, using the coefficient of friction $\\mu = 0.75$:<br><br>$$F_{\\text{max}} = \\mu R = 0.75 \\times 147 = 110.25\\text{ N}$$",
+        "<strong>(a) Horizontal Case:</strong><br><br>Resolve the forces acting on the crate vertically to find the normal reaction force, $R$:\\begin{aligned} &R = 15g \\cr &R = 15 \\times 9.8 \\cr &R = 147\\text{ N} \\end{aligned}",
+        "Calculate the maximum possible frictional force, $F_{\\text{max}}$, using $\\mu = 0.75$:\\begin{aligned} &F_{\\text{max}} = \\mu R \\cr &F_{\\text{max}} = 0.75 \\times 147 \\cr &F_{\\text{max}} = 110.25\\text{ N} \\end{aligned}",
         "Since the applied horizontal force of $100\\text{ N}$ is less than the maximum friction force ($110.25\\text{ N}$), the frictional force will scale to match the applied force exactly ($100\\text{ N}$). Thus, the forces are in equilibrium, and the crate remains stationary.",
-        "<strong>(b) Pulling Case:</strong><br>He exerts a force of $100\\text{ N}$ at an angle of $20^\\circ$ above the horizontal:",
-        "Resolve the forces vertically, taking upwards as positive. The vertical component of the pulling force reduces the normal reaction force, $R$:<br><br>\\begin{aligned} R + 100\\sin{ 20^\\circ } &= 15g \\cr R &= 147 - 100\\sin{ 20^\\circ } \\cr R &= 147 - 34.20 \\cr R &= 112.80\\text{ N} \\end{aligned}",
-        "Calculate the new maximum frictional force with this reduced reaction force:<br><br>$$F_{\\text{max}} = \\mu R = 0.75 \\times 112.80 = 84.60\\text{ N}$$",
-        "Find the horizontal component of the pulling force, $P_x$, which acts to move the crate forward:<br><br>$$P_x = 100\\cos{ 20^\\circ } \\approx 93.97\\text{ N}$$",
-        "Since the forward pulling force ($93.97\\text{ N}$) is greater than the maximum frictional resistance ($84.60\\text{ N}$), the frictional limit is exceeded. Therefore, the crate does not remain stationary and begins to move."
+        "<strong>(b) Pulling Case:</strong><br><br>He exerts a force of $100\\text{ N}$ at an angle of $20^\\circ$ above the horizontal.",
+        "Resolve the forces vertically, taking upwards as positive. The vertical component of the pulling force reduces the normal reaction force, $R$:\\begin{aligned} &R + 100\\sin 20^\\circ = 15g \\cr &R = 147 - 100\\sin 20^\\circ \\cr &R = 147 - 34.20 \\cr &R = 112.80\\text{ N} \\end{aligned}",
+        "Calculate the new maximum frictional force with this reduced reaction force:\\begin{aligned} &F_{\\text{max}} = \\mu R \\cr &F_{\\text{max}} = 0.75 \\times 112.80 \\cr &F_{\\text{max}} = 84.60\\text{ N} \\end{aligned}",
+        "Find the horizontal component of the pulling force, $P_x$, which acts to move the crate forward:$$P_x = 100\\cos 20^\\circ \\approx 93.97\\text{ N}$$",
+        "Since the forward pulling force ($93.97\\text{ N}$) is greater than the maximum frictional resistance ($84.60\\text{ N}$), the frictional limit is exceeded. Therefore, the crate does not remain stationary and begins to move.",
+        "Final Answer: The crate remains stationary in (a), but does not remain stationary in (b)."
     ],
     "pi_options": [
         {
@@ -655,14 +656,15 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A boy attempts to move a wooden crate of mass $30\\text{ kg}$ along horizontal ground. The coefficient of friction between the crate and the ground is $0.4$.<br><br><strong>(a)</strong> The boy applies a horizontal pushing force of $110\\text{ N}$. Show that the crate remains stationary.<br><br><strong>(b)</strong> Instead, the boy pushes downwards on a handle attached to the crate. He exerts a force of $130\\text{ N}$ at an angle of $30^\\circ$ below the horizontal.<br><br><img src='images/Mechanics_pngs/012017.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Determine whether the crate remains stationary.",
     "steps": [
-        "<strong>(a) Horizontal Case:</strong><br>Resolve the forces acting on the crate vertically to find the normal reaction force, $R$:<br><br>$$R = 30g = 30 \\times 9.8 = 294\\text{ N}$$",
-        "Calculate the maximum possible frictional force, $F_{\\text{max}}$, using the coefficient of friction $\\mu = 0.4$:<br><br>$$F_{\\text{max}} = \\mu R = 0.4 \\times 294 = 117.6\\text{ N}$$",
+        "<strong>(a) Horizontal Case:</strong><br><br>Resolve the forces acting on the crate vertically to find the normal reaction force, $R$:\\begin{aligned} &R = 30g \\cr &R = 30 \\times 9.8 \\cr &R = 294\\text{ N} \\end{aligned}",
+        "Calculate the maximum possible frictional force, $F_{\\text{max}}$, using $\\mu = 0.4$:\\begin{aligned} &F_{\\text{max}} = \\mu R \\cr &F_{\\text{max}} = 0.4 \\times 294 \\cr &F_{\\text{max}} = 117.6\\text{ N} \\end{aligned}",
         "Since the applied horizontal force of $110\\text{ N}$ is less than the maximum possible friction force ($117.6\\text{ N}$), the frictional force will balance the applied force exactly. Thus, the crate remains stationary.",
-        "<strong>(b) Pushing Case:</strong><br>He exerts a force of $130\\text{ N}$ at an angle of $30^\\circ$ below the horizontal:",
-        "Resolve the forces vertically, taking downwards as positive. The downward component of the pushing force increases the normal reaction force, $R$:<br><br>\\begin{aligned} R &= 30g + 130\\sin{ 30^\\circ } \\cr R &= 294 + 65 \\cr R &= 359\\text{ N} \\end{aligned}",
-        "Calculate the new maximum frictional force with this increased reaction force:<br><br>$$F_{\\text{max}} = \\mu R = 0.4 \\times 359 = 143.6\\text{ N}$$",
-        "Find the horizontal component of the pushing force, $P_x$, which acts to move the crate forward:<br><br>$$P_x = 130\\cos{ 30^\\circ } \\approx 112.58\\text{ N}$$",
-        "Since the forward pushing force ($112.58\\text{ N}$) is less than the maximum frictional resistance ($143.6\\text{ N}$), the friction is not overcome. Therefore, the crate remains stationary."
+        "<strong>(b) Pushing Case:</strong><br><br>He exerts a force of $130\\text{ N}$ at an angle of $30^\\circ$ below the horizontal.",
+        "Resolve the forces vertically, taking downwards as positive. The downward component of the pushing force increases the normal reaction force, $R$:\\begin{aligned} &R = 30g + 130\\sin 30^\\circ \\cr &R = 294 + 65 \\cr &R = 359\\text{ N} \\end{aligned}",
+        "Calculate the new maximum frictional force with this increased reaction force:\\begin{aligned} &F_{\\text{max}} = \\mu R \\cr &F_{\\text{max}} = 0.4 \\times 359 \\cr &F_{\\text{max}} = 143.6\\text{ N} \\end{aligned}",
+        "Find the horizontal component of the pushing force, $P_x$, which acts to move the crate forward:$$P_x = 130\\cos 30^\\circ \\approx 112.58\\text{ N}$$",
+        "Since the forward pushing force ($112.58\\text{ N}$) is less than the maximum frictional resistance ($143.6\\text{ N}$), the friction is not overcome. Therefore, the crate remains stationary.",
+        "Final Answer: The crate remains stationary in both (a) and (b)."
     ],
     "pi_options": [
         {
@@ -697,21 +699,22 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A block of mass $10\\text{ kg}$ is placed on a rough plane inclined at $15^\\circ$ to the horizontal. The coefficient of friction between the block and the plane is $0.3$.<br><br><strong>(a)</strong> Show that if the block is released from rest with no applied forces, it will remain stationary on the plane.<br><br><strong>(b)</strong> A horizontal force $P = 50\\text{ N}$ is now applied to push the block up the incline.<br><br><img src='images/Mechanics_pngs/012018.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Determine whether the block begins to move up the plane.",
     "steps": [
-        "<strong>(a) No Applied Force Case:</strong><br>Resolve the forces acting on the block perpendicular to the inclined plane to find the normal reaction force, $R$:<br><br>$$R = 10g\\cos{ 15^\\circ } = 98\\cos{ 15^\\circ } \\approx 94.66\\text{ N}$$",
-        "Calculate the maximum possible frictional force, $F_{\\text{max}}$, using the coefficient of friction $\\mu = 0.3$:<br><br>$$F_{\\text{max}} = \\mu R = 0.3 \\times 94.66 = 28.40\\text{ N}$$",
-        "Calculate the component of the block's weight acting down the plane, which acts to make the block slide:<br><br>$$W_x = 10g\\sin{ 15^\\circ } = 98\\sin{ 15^\\circ } \\approx 25.36\\text{ N}$$",
+        "<strong>(a) No Applied Force Case:</strong><br><br>Resolve the forces acting on the block perpendicular to the inclined plane to find the normal reaction force, $R$:\\begin{aligned} &R = 10g\\cos 15^\\circ \\cr &R = 98\\cos 15^\\circ \\cr &R \\approx 94.66\\text{ N} \\end{aligned}",
+        "Calculate the maximum possible frictional force, $F_{\\text{max}}$, using $\\mu = 0.3$:\\begin{aligned} &F_{\\text{max}} = \\mu R \\cr &F_{\\text{max}} = 0.3 \\times 94.66 \\cr &F_{\\text{max}} \\approx 28.40\\text{ N} \\end{aligned}",
+        "Calculate the component of the block's weight acting down the plane, which acts to make the block slide:\\begin{aligned} &W_x = 10g\\sin 15^\\circ \\cr &W_x = 98\\sin 15^\\circ \\cr &W_x \\approx 25.36\\text{ N} \\end{aligned}",
         "Since the component of the weight pulling the block down the plane ($25.36\\text{ N}$) is less than the maximum possible friction force ($28.40\\text{ N}$), friction is not overcome. Thus, the block remains stationary.",
-        "<strong>(b) Horizontal Force Case:</strong><br>A horizontal force $P = 50\\text{ N}$ is applied to the block:",
-        "Resolve forces perpendicular to the inclined plane. Note that the horizontal force $P$ pushes the block into the plane, increasing the normal reaction force, $R$:<br><br>\\begin{aligned} R &= 10g\\cos{ 15^\\circ } + P\\sin{ 15^\\circ } \\cr R &= 94.66 + 50\\sin{ 15^\\circ } \\cr R &= 94.66 + 12.94 \\cr R &= 107.60\\text{ N} \\end{aligned}",
-        "Calculate the new maximum frictional force with this increased reaction force:<br><br>$$F_{\\text{max}} = \\mu R = 0.3 \\times 107.60 = 32.28\\text{ N}$$",
-        "The forces parallel to the plane are:<br>1. Component of the force $P$ pushing the block up the plane:<br>$$P_x = 50\\cos{ 15^\\circ } \\approx 48.30\\text{ N}$$<br>2. Component of weight pulling the block down the plane:<br>$$W_x = 25.36\\text{ N}$$",
-        "For the block to move up the plane, the forward force must exceed the sum of the opposing weight component and the maximum frictional force:<br><br>\\begin{aligned} \\text{Total opposing force} &= W_x + F_{\\text{max}} \\cr &= 25.36 + 32.28 \\cr &= 57.64\\text{ N} \\end{aligned}",
-        "Since the force pushing the block up the plane ($48.30\\text{ N}$) is less than the total opposing force ($57.64\\text{ N}$), the block remains stationary."
+        "<strong>(b) Horizontal Force Case:</strong><br><br>A horizontal force $P = 50\\text{ N}$ is applied to the block.",
+        "Resolve forces perpendicular to the inclined plane. The horizontal force $P$ pushes the block into the plane, increasing the normal reaction force, $R$:\\begin{aligned} &R = 10g\\cos 15^\\circ + P\\sin 15^\\circ \\cr &R = 94.66 + 50\\sin 15^\\circ \\cr &R = 94.66 + 12.94 \\cr &R = 107.60\\text{ N} \\end{aligned}",
+        "Calculate the new maximum frictional force with this increased reaction force:\\begin{aligned} &F_{\\text{max}} = \\mu R \\cr &F_{\\text{max}} = 0.3 \\times 107.60 \\cr &F_{\\text{max}} = 32.28\\text{ N} \\end{aligned}",
+        "The forces parallel to the plane are:<br><br>• Pushing force up the plane:$$P_x = 50\\cos 15^\\circ \\approx 48.30\\text{ N}$$• Weight component down the plane:$$W_x \\approx 25.36\\text{ N}$$",
+        "For the block to move up the plane, the forward force must exceed the sum of the opposing weight component and the maximum frictional force:\\begin{aligned} &\\text{Total opposing force} \\cr &\\quad = W_x + F_{\\text{max}} \\cr &\\quad = 25.36 + 32.28 \\cr &\\quad = 57.64\\text{ N} \\end{aligned}",
+        "Since the force pushing the block up the plane ($48.30\\text{ N}$) is less than the total opposing force ($57.64\\text{ N}$), the block remains stationary.",
+        "Final Answer: The block remains stationary in both (a) and (b)."
     ],
     "pi_options": [
         {
             "ans": "The block remains stationary in (a), but does not remain stationary in (b).",
-            "feedback": "This error occurs if you did not include the vertical component of the horizontal force $P$ in your normal reaction force. Omitting $P\\sin{ 15^\\circ }$ makes the normal reaction too low, leading to an incorrect result."
+            "feedback": "This error occurs if you did not include the vertical component of the horizontal force $P$ in your normal reaction force. Omitting $P\\sin 15^\\circ$ makes the normal reaction too low, leading to an incorrect result."
         },
         {
             "ans": "The block does not remain stationary in either (a) or (b).",
@@ -725,7 +728,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Horizontal Forces on Inclines",
-        "content": "When a force $P$ is applied horizontally, it does not act parallel to the slope. It pushes the block *into* the plane as well as *up* the plane. Always ensure you include the component perpendicular to the slope ($P\\sin{ \\theta }$) when calculating the normal reaction $R$."
+        "content": "When a force $P$ is applied horizontally, it does not act parallel to the slope. It pushes the block <em>into</em> the plane as well as <em>up</em> the plane. Always ensure you include the component perpendicular to the slope ($P\\sin\\theta$) when calculating the normal reaction $R$."
     }
 },
 {
@@ -741,13 +744,14 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A block of mass $8\\text{ kg}$ rests on rough horizontal ground. The coefficient of friction between the block and the ground is $0.5$.<br><br><strong>(a)</strong> If the block is pulled by a purely horizontal rope, show that a force of $35\\text{ N}$ is insufficient to make the block slide.<br><br><strong>(b)</strong> Instead, the block is pulled by a rope inclined at $40^\\circ$ above the horizontal.<br><br><img src='images/Mechanics_pngs/012019.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>Find the minimum tension, $T$, required to make the block begin to slide.",
     "steps": [
-        "<strong>(a) Horizontal Case:</strong><br>Resolve forces vertically to find the normal reaction force, $R$:<br><br>$$R = 8g = 8 \\times 9.8 = 78.4\\text{ N}$$",
-        "Calculate the maximum possible frictional force, $F_{\\text{max}}$, using the coefficient of friction $\\mu = 0.5$:<br><br>$$F_{\\text{max}} = \\mu R = 0.5 \\times 78.4 = 39.2\\text{ N}$$",
+        "<strong>(a) Horizontal Case:</strong><br><br>Resolve forces vertically to find the normal reaction force, $R$:\\begin{aligned} &R = 8g \\cr &R = 8 \\times 9.8 \\cr &R = 78.4\\text{ N} \\end{aligned}",
+        "Calculate the maximum possible frictional force, $F_{\\text{max}}$, using $\\mu = 0.5$:\\begin{aligned} &F_{\\text{max}} = \\mu R \\cr &F_{\\text{max}} = 0.5 \\times 78.4 \\cr &F_{\\text{max}} = 39.2\\text{ N} \\end{aligned}",
         "Since the applied horizontal force of $35\\text{ N}$ is less than the maximum friction force ($39.2\\text{ N}$), the block remains stationary.",
-        "<strong>(b) Pulling Case at an Angle:</strong><br>A tension force $T$ is applied at an angle of $40^\\circ$ above the horizontal:",
-        "Resolve forces vertically, taking upwards as positive. Express the normal reaction, $R$, in terms of $T$:<br><br>\\begin{aligned} R + T\\sin{ 40^\\circ } &= 8g \\cr R &= 78.4 - T\\sin{ 40^\\circ } \\end{aligned}",
-        "At the limit of equilibrium (when the block is just about to slide), the horizontal component of the tension force must equal the maximum possible frictional force ($T\\cos{ 40^\\circ } = \\mu R$):<br><br>$$T\\cos{ 40^\\circ } = 0.5(78.4 - T\\sin{ 40^\\circ })$$$",
-        "Expand the brackets and solve the simultaneous equation for $T$:<br><br>\\begin{aligned} T\\cos{ 40^\\circ } &= 39.2 - 0.5T\\sin{ 40^\\circ } \\cr T\\cos{ 40^\\circ } + 0.5T\\sin{ 40^\\circ } &= 39.2 \\cr T(\\cos{ 40^\\circ } + 0.5\\sin{ 40^\\circ }) &= 39.2 \\cr T(0.76604 + 0.32139) &= 39.2 \\cr 1.08743T &= 39.2 \\cr T &= \\dfrac{ 39.2 }{ 1.08743 } \\cr T &\\approx 36.1\\text{ N} \\end{aligned}"
+        "<strong>(b) Pulling Case at an Angle:</strong><br><br>A tension force $T$ is applied at an angle of $40^\\circ$ above the horizontal.",
+        "Resolve forces vertically, taking upwards as positive. Express the normal reaction, $R$, in terms of $T$:\\begin{aligned} &R + T\\sin 40^\\circ = 8g \\cr &R = 78.4 - T\\sin 40^\\circ \\end{aligned}",
+        "At the limit of equilibrium (when the block is just about to slide), the horizontal component of the tension force must equal the maximum possible frictional force ($T\\cos 40^\\circ = \\mu R$):$$T\\cos 40^\\circ = 0.5(78.4 - T\\sin 40^\\circ)$$",
+        "Expand the brackets and solve for $T$:\\begin{aligned} &T\\cos 40^\\circ = 39.2 - 0.5T\\sin 40^\\circ \\cr &T\\cos 40^\\circ + 0.5T\\sin 40^\\circ = 39.2 \\cr &T(\\cos 40^\\circ + 0.5\\sin 40^\\circ) = 39.2 \\cr &T(0.76604 + 0.32139) = 39.2 \\cr &1.08743T = 39.2 \\cr &T = \\dfrac{ 39.2 }{ 1.08743 } \\cr &T \\approx 36.1\\text{ N} \\end{aligned}",
+        "Final Answer: $$T = 36.1\\text{ N}$$"
     ],
     "pi_options": [
         {
@@ -756,17 +760,17 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$$T = 51.2\\text{ N}$$",
-            "feedback": "This represents a vertical sign error. You likely set $R = 78.4 + T\\sin{ 40^\\circ }$, which incorrectly increases the normal reaction (as if pushing down) rather than reducing it."
+            "feedback": "This represents a vertical sign error. You likely set $R = 78.4 + T\\sin 40^\\circ$, which incorrectly increases the normal reaction (as if pushing down) rather than reducing it."
         },
         {
             "ans": "$$T = 31.3\\text{ N}$$",
-            "feedback": "This is a general calculation slip. Ensure you resolve the algebraic expansion of the simultaneous equation correctly and divide by $(\\cos{ 40^\\circ } + 0.5\\sin{ 40^\\circ }).$"
+            "feedback": "This is a general calculation slip. Ensure you resolve the algebraic expansion of the simultaneous equation correctly and divide by $(\\cos 40^\\circ + 0.5\\sin 40^\\circ)$."
         }
     ],
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Simultaneous Forces",
-        "content": "This is a classic simultaneous equation problem. Because the normal reaction $R$ depends on the unknown tension $T$, you must express $R$ in terms of $T$ first before substituting it into the friction equation $T\\cos{ \\theta } = \\mu R$."
+        "content": "This is a classic simultaneous equation problem. Because the normal reaction $R$ depends on the unknown tension $T$, you must express $R$ in terms of $T$ first before substituting it into the friction equation $T\\cos\\theta = \\mu R$."
     }
 },
 {
@@ -782,14 +786,14 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A block $A$ of mass $6\\text{ kg}$ rests on a rough horizontal table. The coefficient of friction between block $A$ and the table is $0.45$. Block $A$ is connected by a light, inextensible horizontal string passing over a smooth pulley at the edge of the table to a hanging block $B$ of mass $M\\text{ kg}$.<br><br><img src='images/Mechanics_pngs/012020.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br><strong>(a)</strong> Given that $M = 2$, show that the system remains stationary in equilibrium.<br><br><strong>(b)</strong> Find the maximum mass of block $B$ for which the system can remain stationary in equilibrium.",
     "steps": [
-        "<strong>(a) Case where M = 2 kg:</strong><br>Resolve the forces acting on hanging block $B$ vertically. Since the system is stationary, the tension in the string, $T$, is exactly balanced by the weight of block $B$:<br><br>$$T = Mg = 2g = 2 \\times 9.8 = 19.6\\text{ N}$$",
-        "Next, resolve the forces acting on block $A$ vertically to find its normal reaction force, $R_A$:<br><br>$$R_A = 6g = 6 \\times 9.8 = 58.8\\text{ N}$$",
-        "Calculate the maximum possible frictional force, $F_{\\text{max}}$, acting on block $A$ using $\\mu = 0.45$:<br><br>$$F_{\\text{max}} = \\mu R_A = 0.45 \\times 58.8 = 26.46\\text{ N}$$",
+        "<strong>(a) Case where M = 2 kg:</strong><br><br>Resolve the forces acting on hanging block $B$ vertically. Since the system is stationary, the tension $T$ is balanced by the weight of block $B$:\\begin{aligned} &T = Mg \\cr &T = 2 \\times 9.8 \\cr &T = 19.6\\text{ N} \\end{aligned}",
+        "Next, resolve the forces acting on block $A$ vertically to find its normal reaction force, $R_A$:\\begin{aligned} &R_A = 6g \\cr &R_A = 6 \\times 9.8 \\cr &R_A = 58.8\\text{ N} \\end{aligned}",
+        "Calculate the maximum possible frictional force, $F_{\\text{max}}$, acting on block $A$ using $\\mu = 0.45$:\\begin{aligned} &F_{\\text{max}} = \\mu R_A \\cr &F_{\\text{max}} = 0.45 \\times 58.8 \\cr &F_{\\text{max}} = 26.46\\text{ N} \\end{aligned}",
         "Since the string tension pulling block $A$ horizontally ($19.6\\text{ N}$) is less than the maximum possible friction force ($26.46\\text{ N}$), the friction is not overcome. Thus, block $A$ remains stationary, meaning the entire system remains stationary in equilibrium.",
-        "<strong>(b) Finding Maximum Mass M:</strong><br>The system is connected as shown in the diagram:",
-        "For the system to remain stationary, the horizontal tension $T = Mg$ must be less than or equal to the maximum frictional force of block $A$ ($F_{\\text{max}}$):<br><br>$$Mg \\le \\mu R_A$$",
-        "Substitute the expressions for tension and normal reaction into the inequality and solve for $M$:<br><br>\\begin{aligned} Mg &\\le 0.45(6g) \\cr M &\\le 0.45 \\times 6 \\cr M &\\le 2.7\\text{ kg} \\end{aligned}",
-        "The maximum mass of block $B$ for which the system remains at rest is $2.7\\text{ kg}$."
+        "<strong>(b) Finding Maximum Mass M:</strong><br><br>For the system to remain stationary, the horizontal tension $T = Mg$ must be less than or equal to the maximum frictional force of block $A$ ($F_{\\text{max}}$):$$Mg \\le \\mu R_A$$",
+        "Substitute the expressions for tension and normal reaction into the inequality and solve for $M$:\\begin{aligned} &Mg \\le 0.45(6g) \\cr &M \\le 0.45 \\times 6 \\cr &M \\le 2.7\\text{ kg} \\end{aligned}",
+        "The maximum mass of block $B$ for which the system remains at rest is $2.7\\text{ kg}$.",
+        "Final Answer: $$M = 2.7\\text{ kg}$$"
     ],
     "pi_options": [
         {
