@@ -1611,12 +1611,12 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A block $A$ of mass $8\\text{ kg}$ is held on a rough plane inclined at $30^\\circ$ to the horizontal. The coefficient of friction between block $A$ and the plane is $0.25$.<br><br>Block $A$ is connected by a light, inextensible string passing parallel to the line of greatest slope over a smooth pulley at the top of the incline to a hanging block $B$ of mass $M\\text{ kg}$.<br><br>Given that the system is in limiting equilibrium and block $A$ is on the point of sliding <strong>up</strong> the plane:<br><br><img src='images/Mechanics_pngs/012040.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><strong>(a)</strong> Find the normal reaction force, in Newtons to three significant figures, acting on block $A$.<br><br><strong>(b)</strong> Find the value of $M$, giving your answer to three significant figures.",
     "steps": [
-        "<strong>(a) Find the normal reaction force acting on A:</strong><br><br>Resolve the forces acting on block $A$ perpendicular to the inclined plane:\\begin{aligned} \n&R_A \\cr \n&\\quad = 8g\\cos 30^\\circ \\cr \n&\\quad = 78.4 \\times 0.86603 \\cr \n&\\quad \\approx 67.9\\text{ N} \n\\end{aligned}",
-        "<strong>(b) Find the value of M:</strong><br><br>Calculate the maximum frictional force, $F_{\\text{max}}$, acting on block $A$:\\begin{aligned} \n&F_{\\text{max}} \\cr \n&\\quad = \\mu R_A \\cr \n&\\quad = 0.25 \\times 67.896 \\cr \n&\\quad = 16.974\\text{ N} \n\\end{aligned}",
+        "<strong>(a) Find the normal reaction force acting on A:</strong><br><br>Resolve the forces acting on block $A$ perpendicular to the inclined plane:\\begin{aligned} &R_A \\cr &\\quad = 8g\\cos 30^\\circ \\cr &\\quad = 78.4 \\times 0.86603 \\cr &\\quad \\approx 67.9\\text{ N} \\end{aligned}",
+        "<strong>(b) Find the value of M:</strong><br><br>Calculate the maximum frictional force, $F_{\\text{max}}$, acting on block $A$:\\begin{aligned} &F_{\\text{max}} \\cr &\\quad = \\mu R_A \\cr &\\quad = 0.25 \\times 67.896 \\cr &\\quad = 16.974\\text{ N} \\end{aligned}",
         "Because block $A$ is on the point of sliding <strong>up</strong> the plane, friction opposes this motion and acts <strong>down</strong> the plane. Therefore, both friction ($F_{\\text{max}}$) and the component of weight along the slope ($8g\\sin 30^\\circ$) pull block $A$ down the incline.",
-        "Apply equilibrium to block $A$ parallel to the slope:\\begin{aligned} \n&T \\cr \n&\\quad = F_{\\text{max}} + 8g\\sin 30^\\circ \\cr \n&\\quad = 16.974 + 8(9.8)\\sin 30^\\circ \\cr \n&\\quad = 16.974 + 39.200 \\cr \n&\\quad = 56.174\\text{ N} \n\\end{aligned}",
-        "Analyze hanging block $B$. In static equilibrium, the tension $T$ is balanced by the weight ($Mg$):\\begin{aligned} \n&T = Mg \\cr \n&56.174 = M(9.8) \n\\end{aligned}",
-        "Solve for $M$:\\begin{aligned} \n&M = \\dfrac{56.174}{9.8} \\cr \n&M \\approx 5.73 \n\\end{aligned}",
+        "Apply equilibrium to block $A$ parallel to the slope:\\begin{aligned} &T \\cr &\\quad = F_{\\text{max}} + 8g\\sin 30^\\circ \\cr &\\quad = 16.974 + 8(9.8)\\sin 30^\\circ \\cr &\\quad = 16.974 + 39.200 \\cr &\\quad = 56.174\\text{ N} \\end{aligned}",
+        "Analyze hanging block $B$. In static equilibrium, the tension $T$ is balanced by the weight ($Mg$):\\begin{aligned} &T = Mg \\cr &56.174 = M(9.8) \\end{aligned}",
+        "Solve for $M$:\\begin{aligned} &M \\cr &\\quad = \\dfrac{56.174}{9.8} \\cr &\\quad \\approx 5.73 \\end{aligned}",
         "Final Answer: $$R_A = 67.9\\text{ N};$$<br>$$M = 5.73$$"
     ],
     "pi_options": [
@@ -1640,7 +1640,7 @@ window.ALEVEL_QUESTIONS = [
     }
 },
 {
-   "id": "012041",
+    "id": "012041",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
@@ -1651,18 +1651,19 @@ window.ALEVEL_QUESTIONS = [
         "Vertical motion under gravity"
     ],
     "img": false,
-    "question": "A girl throws a small stone vertically upwards from a bridge. At the instant the stone leaves her hand, it is $9\\text{ m }$ above the water below and is moving with a speed of $12\\text{ m s}^{ -1 }$. The motion of the stone is modelled as that of a particle moving freely under gravity, and the acceleration due to gravity is modelled as being of constant magnitude $10\\text{ m s}^{ -2 }$. The stone hits the water $T$ seconds after leaving the girl's hand.<br><br>Using the model, find the value of $T$.",
+    "question": "A girl throws a small stone vertically upwards from a bridge. At the instant the stone leaves her hand, it is $9\\text{ m}$ above the water below and is moving with a speed of $12\\text{ m s}^{-1}$. The motion of the stone is modelled as that of a particle moving freely under gravity, and the acceleration due to gravity is modelled as being of constant magnitude $10\\text{ m s}^{-2}$. The stone hits the water $T$ seconds after leaving the girl's hand.<br><br>Using the model, find the value of $T$.",
     "steps": [
-        "Set up the parameters for the motion, taking the vertically upwards direction as positive:<br>• Initial velocity, $u = 12\\text{ m s}^{ -1 }$<br>• Displacement, $s = -9\\text{ m }$ (since the water is below the starting point)<br>• Acceleration, $a = -10\\text{ m s}^{ -2 }$",
-        "Substitute these values into the constant acceleration equation $s = ut + \\dfrac{ 1 }{ 2 }at^2$:<br><br>\\begin{aligned} -9 &= 12T + \\dfrac{ 1 }{ 2 }(-10)T^2 \\cr -9 &= 12T - 5T^2 \\end{aligned}",
-        "Rearrange the equation to form a standard quadratic equation equal to zero:<br><br>\\begin{aligned} 5T^2 - 12T - 9 = 0 \\end{aligned}",
-        "Factorise the quadratic expression to solve for $T$:<br><br>\\begin{aligned} (5T + 3)(T - 3) = 0 \\end{aligned}",
-        "This gives two possible mathematical solutions:<br><br>\\begin{aligned} T = 3 \\quad \\text{ or } \\quad T = -0.6 \\end{aligned}<br><br>Since time $T$ must be greater than zero, we choose the positive solution. Therefore, $T = 3\\text{ seconds }$."
+        "Set up the parameters for the motion, taking the vertically upwards direction as positive:<br><br>• Initial velocity, $u = 12\\text{ m s}^{-1}$<br><br>• Displacement, $s = -9\\text{ m}$ (since the water is below the starting point)<br><br>• Acceleration, $a = -10\\text{ m s}^{-2}$",
+        "Substitute these values into the constant acceleration displacement formula:\\begin{aligned} &s = ut + \\dfrac{1}{2}at^2 \\cr &-9 \\cr &\\quad = 12T + \\dfrac{1}{2}(-10)T^2 \\cr &\\quad = 12T - 5T^2 \\end{aligned}",
+        "Rearrange the equation to form a standard quadratic equation equal to zero:\\begin{aligned} &5T^2 - 12T - 9 = 0 \\end{aligned}",
+        "Factorise the quadratic expression to solve for $T$:\\begin{aligned} &(5T + 3)(T - 3) = 0 \\end{aligned}",
+        "This gives two possible mathematical solutions:\\begin{aligned} &T = 3 \\cr &\\text{or} \\cr &T = -0.6 \\end{aligned}<br><br>Since time $T$ must be greater than zero, we choose the positive solution. Therefore, $T = 3\\text{ seconds}$.",
+        "Final Answer: $T = 3$"
     ],
     "pi_options": [
         {
             "ans": "$T = 0.6$",
-            "feedback": "This occurs if you model the initial velocity as vertically downwards ($u = -12\\text{ m s}^{ -1 }$) instead of vertically upwards. Check the direction of projection specified in the question."
+            "feedback": "This occurs if you model the initial velocity as vertically downwards ($u = -12\\text{ m s}^{-1}$) instead of vertically upwards. Check the direction of projection specified in the question."
         },
         {
             "ans": "$T = 1.2$",
@@ -1676,7 +1677,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Watch the Given Constants",
-        "content": "Pay close attention to the value of $g$ specified in the question. While $9.8$ is the standard physical constant, this question explicitly specifies $10\\text{ m s}^{ -2 }$. Using the wrong constant will lead to messy decimals and a loss of accuracy marks."
+        "content": "Pay close attention to the value of $g$ specified in the question. While $9.8$ is the standard physical constant, this question explicitly specifies $10\\text{ m s}^{-2}$. Using the wrong constant will lead to messy decimals and a loss of accuracy marks."
     }
 },
 {
@@ -1691,22 +1692,23 @@ window.ALEVEL_QUESTIONS = [
         "Vertical motion under gravity"
     ],
     "img": false,
-    "question": "A boy throws a ball vertically upwards from a balcony that is $14.7\\text{ m }$ above the horizontal ground. The ball is thrown with an initial speed of $9.8\\text{ m s}^{ -1 }$. The motion of the ball is modelled as that of a particle moving freely under gravity, and the acceleration due to gravity is modelled as being of constant magnitude $9.8\\text{ m s}^{ -2 }$.<br><br>Using the model, find the time, $T$ seconds, from when the ball is thrown to when it hits the ground.",
+    "question": "A boy throws a ball vertically upwards from a balcony that is $14.7\\text{ m}$ above the horizontal ground. The ball is thrown with an initial speed of $9.8\\text{ m s}^{-1}$. The motion of the ball is modelled as that of a particle moving freely under gravity, and the acceleration due to gravity is modelled as being of constant magnitude $9.8\\text{ m s}^{-2}$.<br><br>Using the model, find the time, $T$ seconds, from when the ball is thrown to when it hits the ground.",
     "steps": [
-        "Set up the motion parameters with the vertically upwards direction defined as positive:<br>• Initial velocity, $u = 9.8\\text{ m s}^{ -1 }$<br>• Displacement, $s = -14.7\\text{ m }$ (since the ground is below the balcony)<br>• Acceleration, $a = -9.8\\text{ m s}^{ -2 }$",
-        "Substitute these parameters into the constant acceleration formula $s = ut + \\dfrac{ 1 }{ 2 }at^2$:<br><br>\\begin{aligned} -14.7 &= 9.8T + \\dfrac{ 1 }{ 2 }(-9.8)T^2 \\cr -14.7 &= 9.8T - 4.9T^2 \\end{aligned}",
-        "Simplify the quadratic equation by dividing every term by $4.9$:<br><br>\\begin{aligned} 4.9T^2 - 9.8T - 14.7 &= 0 \\cr T^2 - 2T - 3 &= 0 \\end{aligned}",
-        "Factorise the simplified quadratic equation:<br><br>\\begin{aligned} (T - 3)(T + 1) = 0 \\end{aligned}",
-        "Solve for $T$:<br><br>\\begin{aligned} T = 3 \\quad \\text{ or } \\quad T = -1 \\end{aligned}<br><br>Since time $T$ must be positive, we reject the negative solution. Thus, $T = 3\\text{ seconds }$."
+        "Set up the motion parameters with the vertically upwards direction defined as positive:<br><br>• Initial velocity, $u = 9.8\\text{ m s}^{-1}$<br><br>• Displacement, $s = -14.7\\text{ m}$ (since the ground is below the balcony)<br><br>• Acceleration, $a = -9.8\\text{ m s}^{-2}$",
+        "Substitute these parameters into the constant acceleration displacement formula:\\begin{aligned} &s = ut + \\dfrac{1}{2}at^2 \\cr &-14.7 \\cr &\\quad = 9.8T + \\dfrac{1}{2}(-9.8)T^2 \\cr &\\quad = 9.8T - 4.9T^2 \\end{aligned}",
+        "Simplify the quadratic equation by dividing every term by $4.9$:\\begin{aligned} &4.9T^2 - 9.8T - 14.7 = 0 \\cr &T^2 - 2T - 3 = 0 \\end{aligned}",
+        "Factorise the simplified quadratic equation:\\begin{aligned} &(T - 3)(T + 1) = 0 \\end{aligned}",
+        "Solve for $T$:\\begin{aligned} &T = 3 \\cr &\\text{or} \\cr &T = -1 \\end{aligned}<br><br>Since time $T$ must be positive, we reject the negative solution. Thus, $T = 3\\text{ seconds}$.",
+        "Final Answer: $T = 3$"
     ],
     "pi_options": [
         {
             "ans": "$T = 1$",
-            "feedback": "This result occurs if you assume the initial velocity is downwards ($u = -9.8\\text{ m s}^{ -1 }$), which alters the quadratic to $T^2 + 2T - 3 = 0$. Remember that the ball is projected upwards."
+            "feedback": "This result occurs if you assume the initial velocity is downwards ($u = -9.8\\text{ m s}^{-1}$), which alters the quadratic to $T^2 + 2T - 3 = 0$. Remember that the ball is projected upwards."
         },
         {
             "ans": "$T = 2$",
-            "feedback": "This is a common error resulting from forgetting to multiply the acceleration term by $\\dfrac{ 1 }{ 2 }$ in the equation $s = ut + \\dfrac{ 1 }{ 2 }at^2$, leading to an incorrect quadratic."
+            "feedback": "This is a common error resulting from forgetting to multiply the acceleration term by $\\dfrac{1}{2}$ in the equation $s = ut + \\dfrac{1}{2}at^2$, leading to an incorrect quadratic."
         },
         {
             "ans": "$T = 1.5$",
@@ -1732,12 +1734,13 @@ window.ALEVEL_QUESTIONS = [
         "Displacement and distance"
     ],
     "img": false,
-    "question": "A particle is projected vertically upwards with speed $20\\text{ m s}^{ -1 }$ from a point $25\\text{ m }$ above horizontal ground. The particle moves freely under gravity, with the acceleration due to gravity modelled as being of constant magnitude $10\\text{ m s}^{ -2 }$.<br><br>Find the total distance travelled by the particle from the instant of projection to the instant it hits the ground.",
+    "question": "A particle is projected vertically upwards with speed $20\\text{ m s}^{-1}$ from a point $25\\text{ m}$ above horizontal ground. The particle moves freely under gravity, with the acceleration due to gravity modelled as being of constant magnitude $10\\text{ m s}^{-2}$.<br><br>Find the total distance travelled by the particle from the instant of projection to the instant it hits the ground.",
     "steps": [
         "Identify that total distance is different from displacement. To find total distance, we must compute the upward climb to maximum height and the subsequent downward fall to the ground separately.",
-        "Calculate the distance travelled upwards to the peak where velocity $v = 0$. Using the formula $v^2 = u^2 + 2as$ with upwards as positive:<br><br>\\begin{aligned} 0^2 &= 20^2 + 2(-10)s_1 \\cr 0 &= 400 - 20s_1 \\cr 20s_1 &= 400 \\cr s_1 &= 20\\text{ m } \\end{aligned}<br><br>Thus, the particle climbs $20\\text{ m }$ upwards from the projection point.",
-        "Determine the total height of the peak above the horizontal ground:<br><br>\\begin{aligned} \\text{ Peak Height } &= 25\\text{ m } + 20\\text{ m } \\cr &= 45\\text{ m } \\end{aligned}",
-        "Calculate the total distance travelled by adding the upward journey and the downward journey:<br>• Distance up = $20\\text{ m }$<br>• Distance down = $45\\text{ m }$ (from peak to ground)<br><br>\\begin{aligned} \\text{ Total Distance } &= 20\\text{ m } + 45\\text{ m } \\cr &= 65\\text{ m } \\end{aligned}"
+        "Calculate the distance travelled upwards to the peak where velocity $v = 0$. Using the formula $v^2 = u^2 + 2as$ with upwards as positive:\\begin{aligned} &0 \\cr &\\quad = 20^2 + 2(-10)s_1 \\cr &\\quad = 400 - 20s_1 \\cr &20s_1 = 400 \\cr &s_1 = 20\\text{ m} \\end{aligned}<br><br>Thus, the particle climbs $20\\text{ m}$ upwards from the projection point.",
+        "Determine the total height of the peak above the horizontal ground:\\begin{aligned} &\\text{Peak Height} \\cr &\\quad = 25 + 20 \\cr &\\quad = 45\\text{ m} \\end{aligned}",
+        "Calculate the total distance travelled by adding the upward journey and the downward journey:<br><br>• Distance up = $20\\text{ m}$<br><br>• Distance down = $45\\text{ m}$ (from peak to ground)\\begin{aligned} &\\text{Total Distance} \\cr &\\quad = 20 + 45 \\cr &\\quad = 65\\text{ m} \\end{aligned}",
+        "Final Answer: $65\\text{ m}$"
     ],
     "pi_options": [
         {
@@ -1771,20 +1774,21 @@ window.ALEVEL_QUESTIONS = [
         "Vertical motion under gravity"
     ],
     "img": false,
-    "question": "A small ball is thrown vertically upwards from a platform that is $15\\text{ m }$ above horizontal ground. The ball is modelled as a particle moving freely under gravity, and the acceleration due to gravity is modelled as being of constant magnitude $10\\text{ m s}^{ -2 }$.<br><br>Given that the ball hits the ground $3$ seconds after it is released, find the speed with which it was initially thrown.",
+    "question": "A small ball is thrown vertically upwards from a platform that is $15\\text{ m}$ above horizontal ground. The ball is modelled as a particle moving freely under gravity, and the acceleration due to gravity is modelled as being of constant magnitude $10\\text{ m s}^{-2}$.<br><br>Given that the ball hits the ground $3$ seconds after it is released, find the speed with which it was initially thrown.",
     "steps": [
-        "Define the SUVAT parameters with vertically upwards as the positive direction:<br>• Displacement, $s = -15\\text{ m }$ (since the ball lands below the platform)<br>• Time, $t = 3\\text{ s }$<br>• Acceleration, $a = -10\\text{ m s}^{ -2 }$<br>• Initial velocity, $u$ (to be found)",
-        "Substitute these values into the constant acceleration equation $s = ut + \\dfrac{ 1 }{ 2 }at^2$:<br><br>\\begin{aligned} -15 &= u(3) + \\dfrac{ 1 }{ 2 }(-10)(3)^2 \\cr -15 &= 3u - 5(9) \\cr -15 &= 3u - 45 \\end{aligned}",
-        "Rearrange the equation to isolate $u$:<br><br>\\begin{aligned} 3u &= 45 - 15 \\cr 3u &= 30 \\cr u &= 10\\text{ m s}^{ -1 } \\end{aligned}<br><br>The initial speed of the ball was $10\\text{ m s}^{ -1 }$."
+        "Define the SUVAT parameters with vertically upwards as the positive direction:<br><br>• Displacement, $s = -15\\text{ m}$ (since the ball lands below the platform)<br><br>• Time, $t = 3\\text{ s}$<br><br>• Acceleration, $a = -10\\text{ m s}^{-2}$<br><br>• Initial velocity, $u$ (to be found)",
+        "Substitute these values into the constant acceleration equation $s = ut + \\dfrac{1}{2}at^2$:\\begin{aligned} &-15 \\cr &\\quad = u(3) + \\dfrac{1}{2}(-10)(3)^2 \\cr &\\quad = 3u - 5(9) \\cr &\\quad = 3u - 45 \\end{aligned}",
+        "Rearrange the equation to isolate $u$:\\begin{aligned} &3u = 45 - 15 \\cr &3u = 30 \\cr &u = 10\\text{ m s}^{-1} \\end{aligned}<br><br>The initial speed of the ball was $10\\text{ m s}^{-1}$.",
+        "Final Answer: $10\\text{ m s}^{-1}$"
     ],
     "pi_options": [
         {
             "ans": "$20\\text{ m s}^{-1}$",
-            "feedback": "This is the result of using a positive displacement ($s = +15\\text{ m }$). Because the ball lands on the ground below its release point, the displacement must be negative when choosing upwards as the positive direction."
+            "feedback": "This is the result of using a positive displacement ($s = +15\\text{ m}$). Because the ball lands on the ground below its release point, the displacement must be negative when choosing upwards as the positive direction."
         },
         {
             "ans": "$25\\text{ m s}^{-1}$",
-            "feedback": "This error occurs if you forget to multiply the acceleration term by $\\dfrac{ 1 }{ 2 }$ in the formula $s = ut + \\dfrac{ 1 }{ 2 }at^2$, leading to the equation $-15 = 3u - 10(3)^2$."
+            "feedback": "This error occurs if you forget to multiply the acceleration term by $\\dfrac{1}{2}$ in the formula $s = ut + \\dfrac{1}{2}at^2$, leading to the equation $-15 = 3u - 10(3)^2$."
         },
         {
             "ans": "$15\\text{ m s}^{-1}$",
@@ -1794,7 +1798,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Sign Conventions are Key",
-        "content": "Since the ball is thrown upwards and lands below its release height, its displacement must be negative ($s = -15\\text{ m }$). A very common mistake is using $+15\\text{ m }$, which will lead to an incorrect initial velocity of $20\\text{ m s}^{ -1 }$. Consistency in sign conventions is vital."
+        "content": "Since the ball is thrown upwards and lands below its release height, its displacement must be negative ($s = -15\\text{ m}$). A very common mistake is using $+15\\text{ m}$, which will lead to an incorrect initial velocity of $20\\text{ m s}^{-1}$. Consistency in sign conventions is vital."
     }
 },
 {
@@ -1810,27 +1814,28 @@ window.ALEVEL_QUESTIONS = [
         "Relative motion"
     ],
     "img": false,
-    "question": "A hot-air balloon is rising vertically with a constant speed of $5\\text{ m s}^{ -1 }$. At the instant the balloon is $30\\text{ m }$ above horizontal ground, a passenger drops a camera. The camera is modelled as a particle moving freely under gravity, and the acceleration due to gravity is modelled as being of constant magnitude $10\\text{ m s}^{ -2 }$.<br><br>Calculate the time, $T$ seconds, from the moment the camera is dropped to the moment it hits the ground.",
+    "question": "A hot-air balloon is rising vertically with a constant speed of $5\\text{ m s}^{-1}$. At the instant the balloon is $30\\text{ m}$ above horizontal ground, a passenger drops a camera. The camera is modelled as a particle moving freely under gravity, and the acceleration due to gravity is modelled as being of constant magnitude $10\\text{ m s}^{-2}$.<br><br>Calculate the time, $T$ seconds, from the moment the camera is dropped to the moment it hits the ground.",
     "steps": [
-        "Determine the initial velocity of the camera. Because the camera is released from a balloon rising at $5\\text{ m s}^{ -1 }$, it inherits this upward velocity at the instant of release:<br>• Initial velocity, $u = 5\\text{ m s}^{ -1 }$ (vertically upwards)",
-        "Set up the remaining SUVAT parameters with vertically upwards defined as the positive direction:<br>• Displacement, $s = -30\\text{ m }$ (since it lands on the ground below)<br>• Acceleration, $a = -10\\text{ m s}^{ -2 }$",
-        "Substitute these parameters into the constant acceleration formula $s = ut + \\dfrac{ 1 }{ 2 }at^2$:<br><br>\\begin{aligned} -30 &= 5T + \\dfrac{ 1 }{ 2 }(-10)T^2 \\cr -30 &= 5T - 5T^2 \\end{aligned}",
-        "Rearrange this into standard quadratic form and simplify by dividing every term by $5$:<br><br>\\begin{aligned} 5T^2 - 5T - 30 &= 0 \\cr T^2 - T - 6 &= 0 \\end{aligned}",
-        "Factorise the quadratic equation:<br><br>\\begin{aligned} (T - 3)(T + 2) = 0 \\end{aligned}",
-        "Solve for $T$:<br><br>\\begin{aligned} T = 3 \\quad \\text{ or } \\quad T = -2 \\end{aligned}<br><br>Since time $T$ must be positive, we reject the negative solution. Thus, $T = 3\\text{ seconds }$."
+        "Determine the initial velocity of the camera. Because the camera is released from a balloon rising at $5\\text{ m s}^{-1}$, it inherits this upward velocity at the instant of release:<br><br>• Initial velocity, $u = 5\\text{ m s}^{-1}$ (vertically upwards)",
+        "Set up the remaining SUVAT parameters with vertically upwards defined as the positive direction:<br><br>• Displacement, $s = -30\\text{ m}$ (since it lands on the ground below)<br><br>• Acceleration, $a = -10\\text{ m s}^{-2}$",
+        "Substitute these parameters into the constant acceleration formula $s = ut + \\dfrac{1}{2}at^2$:\\begin{aligned} &-30 \\cr &\\quad = 5T + \\dfrac{1}{2}(-10)T^2 \\cr &\\quad = 5T - 5T^2 \\end{aligned}",
+        "Rearrange this into standard quadratic form and simplify by dividing every term by $5$:\\begin{aligned} &5T^2 - 5T - 30 = 0 \\cr &T^2 - T - 6 = 0 \\end{aligned}",
+        "Factorise the quadratic equation:\\begin{aligned} &(T - 3)(T + 2) = 0 \\end{aligned}",
+        "Solve for $T$:\\begin{aligned} &T = 3 \\cr &\\text{or} \\cr &T = -2 \\end{aligned}<br><br>Since time $T$ must be positive, we reject the negative solution. Thus, $T = 3\\text{ seconds}$.",
+        "Final Answer: $T = 3$"
     ],
     "pi_options": [
         {
             "ans": "$T = 2.4$",
-            "feedback": "This occurs if you assume the initial velocity is $0\\text{ m s}^{ -1 }$ relative to the ground. Objects dropped from a moving platform inherit the velocity of that platform at the instant of release."
+            "feedback": "This occurs if you assume the initial velocity is $0\\text{ m s}^{-1}$ relative to the ground. Objects dropped from a moving platform inherit the velocity of that platform at the instant of release."
         },
         {
             "ans": "$T = 2$",
-            "feedback": "This result occurs if you assume the initial velocity of the camera is directed downwards ($u = -5\\text{ m s}^{ -1 }$). Since the balloon is rising, the camera initially continues upwards."
+            "feedback": "This result occurs if you assume the initial velocity of the camera is directed downwards ($u = -5\\text{ m s}^{-1}$). Since the balloon is rising, the camera initially continues upwards."
         },
         {
             "ans": "$T = 1.5$",
-            "feedback": "This represents a calculation error, typically from using positive displacement ($s = +30\\text{ m }$) or a mistake in applying the quadratic formula to the coefficients."
+            "feedback": "This represents a calculation error, typically from using positive displacement ($s = +30\\text{ m}$) or a mistake in applying the quadratic formula to the coefficients."
         }
     ],
     "bradley_insight": {
