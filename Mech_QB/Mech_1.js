@@ -2049,6 +2049,6 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Mid-Journey Trapeziums",
         "content": "The deceleration phase of this motion is a trapezium on the velocity-time graph. Make sure you use the average velocity $(\\dfrac{ u + v }{ 2 })$ to find that middle distance correctly, rather than mistakenly treating it as a simple triangle."
     }
-}
+} 
 
 ];
