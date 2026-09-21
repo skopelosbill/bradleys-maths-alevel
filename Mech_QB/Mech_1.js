@@ -417,19 +417,19 @@ window.ALEVEL_QUESTIONS = [
         "During Segment 3 ($5 \\le t \\le 10$), the velocity is constant at $2\\text{ m s}^{-1}$. Set the displacement equation to zero to find the first return time, $t_1$:\\begin{aligned} &-3 + 2(t_1 - 5) = 0 \\cr &2(t_1 - 5) = 3 \\cr &t_1 - 5 = 1.5 \\cr &t_1 = 6.5\\text{ s} \\end{aligned}",
         "At $t = 10$, the displacement is $s(10) = 7\\text{ m}$. In Segment 4 ($10 \\le t \\le 12$), the line crosses the axis at $t = 10.67$. The positive area from $10$ to $10.67$ is:\\begin{aligned} &\\text{Area}_{ \\text{above} } \\cr &\\quad = \\dfrac{ 1 }{ 2 }\\left( \\dfrac{ 2 }{ 3 } \\right)(2) \\cr &\\quad = \\dfrac{ 2 }{ 3 }\\text{ m} \\end{aligned}The negative area from $10.67$ to $12$ is:\\begin{aligned} &\\text{Area}_{ \\text{below} } \\cr &\\quad = \\dfrac{ 1 }{ 2 }\\left( \\dfrac{ 4 }{ 3 } \\right)(-4) \\cr &\\quad = -\\dfrac{ 8 }{ 3 }\\text{ m} \\end{aligned}Thus, the displacement at $t = 12$ is:\\begin{aligned} &s(12) = 7 + \\dfrac{ 2 }{ 3 } - \\dfrac{ 8 }{ 3 } \\cr &s(12) = 5\\text{ m} \\end{aligned}",
         "During Segment 5 ($12 \\le t \\le 15$), the velocity is constant at $-4\\text{ m s}^{-1}$. Set the displacement equation to zero in this interval to find the second return time, $t_2$:\\begin{aligned} &5 - 4(t_2 - 12) = 0 \\cr &4(t_2 - 12) = 5 \\cr &t_2 - 12 = 1.25 \\cr &t_2 = 13.25\\text{ s} \\end{aligned}",
-        "Final Answer: $$a_{\\text{max}} = 3\\text{ m s}^{ -2 }; \\quad t_1 = 6.5\\text{ s}, \\ t_2 = 13.25\\text{ s}$$"
+        "Final Answer: <strong>(a)</strong> $a_{\\text{max}} = 3\\text{ m s}^{-2}$<br><strong>(b)</strong> $t_1 = 6.5\\text{ s}, \\ t_2 = 13.25\\text{ s}$"
     ],
     "pi_options": [
         {
-            "ans": "$$a_{\\text{max}} = 2\\text{ m s}^{ -2 }; \\quad t_1 = 6.5\\text{ s}, \\ t_2 = 13.25\\text{ s}$$",
+            "ans": "<strong>(a)</strong> $a_{\\text{max}} = 2\\text{ m s}^{-2}$<br><strong>(b)</strong> $t_1 = 6.5\\text{ s}, \\ t_2 = 13.25\\text{ s}$",
             "feedback": "This error occurs if you selected Segment 2 as the steepest part of the graph. Segment 4 actually has a steeper gradient of magnitude $3$, even though it is in the negative direction."
         },
         {
-            "ans": "$$a_{\\text{max}} = 3\\text{ m s}^{ -2 }; \\quad t_1 = 5.5\\text{ s}, \\ t_2 = 12.25\\text{ s}$$",
+            "ans": "<strong>(a)</strong> $a_{\\text{max}} = 3\\text{ m s}^{-2}$<br><strong>(b)</strong> $t_1 = 5.5\\text{ s}, \\ t_2 = 12.25\\text{ s}$",
             "feedback": "This error represents a mistake in calculating the initial negative displacement under the time axis, which shifts both crossover times by an incorrect offset."
         },
         {
-            "ans": "$$a_{\\text{max}} = 3\\text{ m s}^{ -2 }; \\quad t_1 = 6.5\\text{ s}, \\ t_2 = 14.5\\text{ s}$$",
+            "ans": "<strong>(a)</strong> $a_{\\text{max}} = 3\\text{ m s}^{-2}$<br><strong>(b)</strong> $t_1 = 6.5\\text{ s}, \\ t_2 = 14.5\\text{ s}$",
             "feedback": "This represents a calculation slip when working out the displacement at $t = 12$, leading to an incorrect duration in the subsequent constant-velocity phase."
         }
     ],
@@ -457,19 +457,19 @@ window.ALEVEL_QUESTIONS = [
         "Use the trapezium area formula to solve for $V$:\\begin{aligned} &\\text{Area} = \\left( \\dfrac{ a + b }{ 2 } \\right) h \\cr &300 = \\left( \\dfrac{ 15 + 35 }{ 2 } \\right) V \\cr &25V = 300 \\cr &V = \\dfrac{ 300 }{ 25 } \\cr &V = 12 \\end{aligned}",
         "For part <strong>(b)</strong>, find the deceleration during the final stage ($u = 12\\text{ m s}^{-1}$ to $v = 0\\text{ m s}^{-1}$ in $t = 12\\text{ s}$):\\begin{aligned} &a = \\dfrac{ v - u }{ t } \\cr &a = \\dfrac{ 0 - 12 }{ 12 } \\cr &a = -1\\text{ m s}^{ -2 } \\end{aligned}",
         "The magnitude of the deceleration is the positive value of this acceleration, which is $1\\text{ m s}^{-2}$.",
-        "Final Answer: $$V = 12; \\quad \\text{deceleration} = 1\\text{ m s}^{ -2 }$$"
+        "Final Answer: <strong>(a)</strong> $V = 12$<br><strong>(b)</strong> $\\text{Deceleration} = 1\\text{ m s}^{-2}$"
     ],
     "pi_options": [
         {
-            "ans": "$$V = 10; \\quad \\text{deceleration} = 0.833\\text{ m s}^{ -2 }$$",
+            "ans": "<strong>(a)</strong> $V = 10$<br><strong>(b)</strong> $\\text{Deceleration} = 0.833\\text{ m s}^{-2}$",
             "feedback": "This error occurs if you made a transposition slip in setting up the parallel sides of the trapezium, such as treating the bottom base as $30\\text{ s}$ instead of $35\\text{ s}$."
         },
         {
-            "ans": "$$V = 12; \\quad \\text{deceleration} = 1.2\\text{ m s}^{ -2 }$$",
+            "ans": "<strong>(a)</strong> $V = 12$<br><strong>(b)</strong> $\\text{Deceleration} = 1.2\\text{ m s}^{-2}$",
             "feedback": "This represents a calculation slip where you divided the maximum velocity $V$ by $10$ instead of the deceleration stage duration of $12$ seconds."
         },
         {
-            "ans": "$$V = 15; \\quad \\text{deceleration} = 1\\text{ m s}^{ -2 }$$",
+            "ans": "<strong>(a)</strong> $V = 15$<br><strong>(b)</strong> $\\text{Deceleration} = 1\\text{ m s}^{-2}$",
             "feedback": "This is a calculation slip when rearranging the trapezium area equation to find $V$ in the first step."
         }
     ],
@@ -498,19 +498,19 @@ window.ALEVEL_QUESTIONS = [
         "For part <strong>(a)</strong>, find the total distance by summing the magnitudes of both motion phases:\\begin{aligned} &\\text{Total Distance} \\cr &\\quad = \\text{Area}_{ \\text{above} } + \\text{Area}_{ \\text{below} } \\cr &\\quad = 137.5 + 37.5 \\cr &\\quad = 175\\text{ m} \\end{aligned}",
         "For part <strong>(b)</strong>, calculate the net displacement:\\begin{aligned} &\\text{Displacement} \\cr &\\quad = 137.5 - 37.5 \\cr &\\quad = 100\\text{ m} \\end{aligned}",
         "Divide the net displacement by the total journey time of $25\\text{ seconds}$:\\begin{aligned} &\\text{Average Velocity} \\cr &\\quad = \\dfrac{ 100 }{ 25 } \\cr &\\quad = 4\\text{ m s}^{ -1 } \\end{aligned}",
-        "Final Answer: $$\\text{Distance} = 175\\text{ m}; \\quad \\text{Average Velocity} = 4\\text{ m s}^{ -1 }$$"
+        "Final Answer: <strong>(a)</strong> $\\text{Distance} = 175\\text{ m}$<br><strong>(b)</strong> $\\text{Average Velocity} = 4\\text{ m s}^{-1}$"
     ],
     "pi_options": [
         {
-            "ans": "$$\\text{Distance} = 100\\text{ m}; \\quad \\text{Average Velocity} = 4\\text{ m s}^{ -1 }$$",
+            "ans": "<strong>(a)</strong> $\\text{Distance} = 100\\text{ m}$<br><strong>(b)</strong> $\\text{Average Velocity} = 4\\text{ m s}^{-1}$",
             "feedback": "This error occurs if you confused total distance with displacement in part (a). Distance must sum all areas as positive values."
         },
         {
-            "ans": "$$\\text{Distance} = 175\\text{ m}; \\quad \\text{Average Velocity} = 7\\text{ m s}^{ -1 }$$",
+            "ans": "<strong>(a)</strong> $\\text{Distance} = 175\\text{ m}$<br><strong>(b)</strong> $\\text{Average Velocity} = 7\\text{ m s}^{-1}$",
             "feedback": "This represents a conceptual mistake where you divided total distance by time to calculate average velocity (which actually yields average speed, not average velocity)."
         },
         {
-            "ans": "$$\\text{Distance} = 137.5\\text{ m}; \\quad \\text{Average Velocity} = 5.5\\text{ m s}^{ -1 }$$",
+            "ans": "<strong>(a)</strong> $\\text{Distance} = 137.5\\text{ m}$<br><strong>(b)</strong> $\\text{Average Velocity} = 5.5\\text{ m s}^{-1}$",
             "feedback": "This error occurs if you completely ignored the backward motion phase of the journey below the time axis."
         }
     ],
@@ -534,23 +534,23 @@ window.ALEVEL_QUESTIONS = [
     "question": "The velocity-time graph shows the motion of two particles, $A$ and $B$, moving along the same straight horizontal road.<br><br>Particle $A$ starts from rest at $t = 0$ and accelerates uniformly to a speed of $15\\text{ m s}^{-1}$ in $6\\text{ seconds}$, before continuing at this constant speed.<br><br>Particle $B$ starts from rest from the same initial point at $t = 2$ and accelerates uniformly to a speed of $24\\text{ m s}^{-1}$ in $8\\text{ seconds}$ (reaching this speed at $t = 10$), before continuing at this constant speed.<br><br><strong>(a)</strong> Find the time $t$, in seconds, at which particle $B$ overtakes particle $A$.<br><br><strong>(b)</strong> Find the distance from the starting point when this overtaking occurs.",
     "steps": [
         "Note that overtaking occurs when both particles have covered the same displacement ($s_A = s_B$). Assume this occurs at some time $t > 10$, when both particles have reached their maximum constant velocities.",
-        "Set up the displacement equation for Particle $A$ at $t > 10$:\\begin{aligned} &s_A = \\dfrac{ 1 }{ 2 }(6)(15) + 15(t - 6) \\cr &s_A = 45 + 15t - 90 \\cr &s_A = 15t - 45 \\end{aligned}",
-        "Set up the displacement equation for Particle $B$ at $t > 10$:\\begin{aligned} &s_B = \\dfrac{ 1 }{ 2 }(8)(24) + 24(t - 10) \\cr &s_B = 96 + 24t - 240 \\cr &s_B = 24t - 144 \\end{aligned}",
+        "Set up the displacement equation for Particle $A$ at $t > 10$:\\begin{aligned} &s_A \\cr &\\quad = \\dfrac{ 1 }{ 2 }(6)(15) + 15(t - 6) \\cr &\\quad = 45 + 15t - 90 \\cr &\\quad = 15t - 45 \\end{aligned}",
+        "Set up the displacement equation for Particle $B$ at $t > 10$:\\begin{aligned} &s_B \\cr &\\quad = \\dfrac{ 1 }{ 2 }(8)(24) + 24(t - 10) \\cr &\\quad = 96 + 24t - 240 \\cr &\\quad = 24t - 144 \\end{aligned}",
         "Equate the two displacements to find the time of overtaking:\\begin{aligned} &15t - 45 = 24t - 144 \\cr &24t - 15t = 144 - 45 \\cr &9t = 99 \\cr &t = 11\\text{ s} \\end{aligned}",
         "Calculate the distance from the start by substituting $t = 11$ into the displacement equation for Particle $A$:\\begin{aligned} &s = 15(11) - 45 \\cr &s = 165 - 45 \\cr &s = 120\\text{ m} \\end{aligned}",
-        "Final Answer: $$t = 11\\text{ s}; \\quad \\text{distance} = 120\\text{ m}$$"
+        "Final Answer: <strong>(a)</strong> $t = 11\\text{ s}$<br><strong>(b)</strong> $\\text{Distance} = 120\\text{ m}$"
     ],
     "pi_options": [
         {
-            "ans": "$$t = 12.57\\text{ s}; \\quad \\text{distance} = 153.6\\text{ m}$$",
+            "ans": "<strong>(a)</strong> $t = 12.57\\text{ s}$<br><strong>(b)</strong> $\\text{Distance} = 153.6\\text{ m}$",
             "feedback": "This represents a calculation error when evaluating the initial triangular area under the acceleration phase for one of the particles, leading to incorrect offset constants."
         },
         {
-            "ans": "$$t = 11\\text{ s}; \\quad \\text{distance} = 165\\text{ m}$$",
+            "ans": "<strong>(a)</strong> $t = 11\\text{ s}$<br><strong>(b)</strong> $\\text{Distance} = 165\\text{ m}$",
             "feedback": "This error occurs if you forgot to subtract the offset of $45$ from Particle $A$'s distance equation when substituting the time $t = 11$."
         },
         {
-            "ans": "$$t = 9.5\\text{ s}; \\quad \\text{distance} = 105\\text{ m}$$",
+            "ans": "<strong>(a)</strong> $t = 9.5\\text{ s}$<br><strong>(b)</strong> $\\text{Distance} = 105\\text{ m}$",
             "feedback": "This indicates a setup slip in handling the time delay for Particle $B$, which started $2\\text{ seconds}$ after Particle $A$."
         }
     ],
@@ -573,24 +573,24 @@ window.ALEVEL_QUESTIONS = [
     "img": "images/Mechanics_pngs/012015.png",
     "question": "The velocity, $v\\text{ m s}^{-1}$, of a car during a $6\\text{-second}$ test drive is modelled by the equation:$$v = -\\dfrac{ 1 }{ 2 }t^3 + 3t^2 + 8t$$where $t$ is the time in seconds.<br><br><strong>(a)</strong> Find the maximum acceleration of the car.<br><br><strong>(b)</strong> Find the total distance travelled by the car in the first $6\\text{ seconds}$ of the motion.",
     "steps": [
-        "For part <strong>(a)</strong>, recall that acceleration is the derivative of velocity with respect to time ($a = \\dfrac{ \\text{d}v }{ \\text{d}t }$):\\begin{aligned} &a = \\dfrac{ \\text{d}v }{ \\text{d}t } \\cr &a = \\dfrac{ \\text{d} }{ \\text{d}t }\\left( -\\dfrac{ 1 }{ 2 } t^3 + 3t^2 + 8t \\right) \\cr &a = -\\dfrac{ 3 }{ 2 } t^2 + 6t + 8 \\end{aligned}",
+        "For part <strong>(a)</strong>, recall that acceleration is the derivative of velocity with respect to time ($a = \\dfrac{ \\text{d}v }{ \\text{d}t }$):\\begin{aligned} &a \\cr &\\quad = \\dfrac{ \\text{d} }{ \\text{d}t }\\left( -\\dfrac{ 1 }{ 2 } t^3 + 3t^2 + 8t \\right) \\cr &\\quad = -\\dfrac{ 3 }{ 2 } t^2 + 6t + 8 \\end{aligned}",
         "To find the maximum acceleration, find when its rate of change is zero ($\\dfrac{ \\text{d}a }{ \\text{d}t } = 0$):\\begin{aligned} &\\dfrac{ \\text{d}a }{ \\text{d}t } = 0 \\cr &-3t + 6 = 0 \\cr &-3t = -6 \\cr &t = 2\\text{ s} \\end{aligned}",
-        "Substitute $t = 2$ back into the acceleration equation $a(t)$ to find the maximum acceleration:\\begin{aligned} &a_{\\text{max}} = -\\dfrac{ 3 }{ 2 }(2^2) + 6(2) + 8 \\cr &a_{\\text{max}} = -6 + 12 + 8 \\cr &a_{\\text{max}} = 14\\text{ m s}^{ -2 } \\end{aligned}",
-        "For part <strong>(b)</strong>, check if the velocity curve crosses the time axis in the interval $0 \\le t \\le 6$. At $t = 6$, $v = 48\\text{ m s}^{-1}$. Since $v(t) \\ge 0$ throughout $0 \\le t \\le 6$, total distance is given by the definite integral:$$\\text{Distance} = \\int_{0}^{6} \\left( -\\dfrac{ 1 }{ 2 } t^3 + 3t^2 + 8t \\right) \\text{d}t$$",
-        "Integrate each term individually:\\begin{aligned} &\\text{Distance} \\cr &\\quad = \\left[ -\\dfrac{ 1 }{ 8 } t^4 + t^3 + 4t^2 \\right]_{0}^{6} \\cr &\\quad = \\left( -\\dfrac{ 1296 }{ 8 } + 216 + 144 \\right) \\cr &\\quad = -162 + 216 + 144 \\cr &\\quad = 198\\text{ m} \\end{aligned}",
-        "Final Answer: $$a_{\\text{max}} = 14\\text{ m s}^{ -2 }; \\quad \\text{distance} = 198\\text{ m}$$"
+        "Substitute $t = 2$ back into the acceleration equation $a(t)$ to find the maximum acceleration:\\begin{aligned} &a_{\\text{max}} \\cr &\\quad = -\\dfrac{ 3 }{ 2 }(2^2) + 6(2) + 8 \\cr &\\quad = -6 + 12 + 8 \\cr &\\quad = 14\\text{ m s}^{ -2 } \\end{aligned}",
+        "For part <strong>(b)</strong>, check if the velocity curve crosses the time axis in the interval $0 \\le t \\le 6$. At $t = 6$, $v = 48\\text{ m s}^{-1}$. Since $v(t) \\ge 0$ throughout $0 \\le t \\le 6$, total distance is given by the definite integral:\\begin{aligned} &\\text{Distance} \\cr &\\quad = \\int_{0}^{6} \\left( -\\dfrac{ 1 }{ 2 } t^3 + 3t^2 + 8t \\right) \\text{d}t \\end{aligned}",
+        "Integrate each term individually:\\begin{aligned} &\\text{Distance} \\cr &\\quad = \\left[ -\\dfrac{ 1 }{ 8 } t^4 + t^3 + 4t^2 \\right]_{0}^{6} \\cr &\\quad = -\\dfrac{ 1296 }{ 8 } + 216 + 144 \\cr &\\quad = -162 + 216 + 144 \\cr &\\quad = 198\\text{ m} \\end{aligned}",
+        "Final Answer: <strong>(a)</strong> $a_{\\text{max}} = 14\\text{ m s}^{-2}$<br><strong>(b)</strong> $\\text{Distance} = 198\\text{ m}$"
     ],
     "pi_options": [
         {
-            "ans": "$$a_{\\text{max}} = 14\\text{ m s}^{ -2 }; \\quad \\text{distance} = 132\\text{ m}$$",
+            "ans": "<strong>(a)</strong> $a_{\\text{max}} = 14\\text{ m s}^{-2}$<br><strong>(b)</strong> $\\text{Distance} = 132\\text{ m}$",
             "feedback": "This represents an integration slip, likely caused by making an error when finding the antiderivative coefficients or when evaluating the limits of integration."
         },
         {
-            "ans": "$$a_{\\text{max}} = 8\\text{ m s}^{ -2 }; \\quad \\text{distance} = 198\\text{ m}$$",
+            "ans": "<strong>(a)</strong> $a_{\\text{max}} = 8\\text{ m s}^{-2}$<br><strong>(b)</strong> $\\text{Distance} = 198\\text{ m}$",
             "feedback": "This error occurs if you took the initial acceleration at $t = 0$ ($8\\text{ m s}^{-2}$) instead of finding the maximum value of the quadratic acceleration function."
         },
         {
-            "ans": "$$a_{\\text{max}} = 20\\text{ m s}^{ -2 }; \\quad \\text{distance} = 162\\text{ m}$$",
+            "ans": "<strong>(a)</strong> $a_{\\text{max}} = 20\\text{ m s}^{-2}$<br><strong>(b)</strong> $\\text{Distance} = 162\\text{ m}$",
             "feedback": "This indicates a differentiation slip when finding the acceleration function, leading to an incorrect peak time and integrated distance value."
         }
     ],
