@@ -212,9 +212,10 @@ window.ALEVEL_QUESTIONS = [
     "question": "A uniform rod, $AB$, has a length of $6\\text{ metres}$. The rod is resting in horizontal equilibrium on a support at its midpoint, $C$. A particle of mass $5\\text{ kg}$ is placed $0.8\\text{ metres}$ to the left of $C$. Another particle of mass $2\\text{ kg}$ is placed $y\\text{ metres}$ to the right of $C$, as shown in the diagram.<br><br>Find the value of $y$.",
     "steps": [
         "First, identify the pivot of the system. The rod is supported at its midpoint, $C$. We take moments about $C$ to eliminate the reaction force from our moments equation.",
-        "Identify the anticlockwise moments about $C$. The only force acting on the left of $C$ is the weight of the $5\\text{ kg}$ mass, which acts at a distance of $0.8\\text{ m}$:<br><br>$$\\text{Anticlockwise Moment} = 5g \\times 0.8 = 4g\\text{ N m}$$",
-        "Identify the clockwise moments about $C$. The only force acting on the right of $C$ is the weight of the $2\\text{ kg}$ mass, acting at a distance of $y\\text{ metres}$:<br><br>$$\\text{Clockwise Moment} = 2g \\times y = 2gy\\text{ N m}$$",
-        "Since the rod is uniform and supported at its midpoint, its own weight acts directly through the pivot $C$, meaning it creates zero moment. For the system to remain in static equilibrium, equate the clockwise and anticlockwise moments:<br><br>\\begin{aligned} 4g &= 2gy \\cr 4 &= 2y \\cr y &= \\dfrac{ 4 }{ 2 } \\cr y &= 2 \\end{aligned}"
+        "Identify the anticlockwise moments about $C$. The only force acting on the left of $C$ is the weight of the $5\\text{ kg}$ mass, which acts at a distance of $0.8\\text{ m}$:\\begin{aligned} &\\text{Anticlockwise Moment} \\cr &\\quad = 5g \\times 0.8 \\cr &\\quad = 4g\\text{ N m} \\end{aligned}",
+        "Identify the clockwise moments about $C$. The only force acting on the right of $C$ is the weight of the $2\\text{ kg}$ mass, acting at a distance of $y\\text{ metres}$:\\begin{aligned} &\\text{Clockwise Moment} \\cr &\\quad = 2g \\times y \\cr &\\quad = 2gy\\text{ N m} \\end{aligned}",
+        "Since the rod is uniform and supported at its midpoint, its own weight acts directly through the pivot $C$, meaning it creates zero moment. For the system to remain in static equilibrium, equate the clockwise and anticlockwise moments:\\begin{aligned} &4g = 2gy \\cr &2y = 4 \\cr &y = \\dfrac{ 4 }{ 2 } \\cr &y = 2 \\end{aligned}",
+        "Final Answer: $$2$$"
     ],
     "pi_options": [
         {
@@ -249,11 +250,12 @@ window.ALEVEL_QUESTIONS = [
     "img": "images/Mechanics_pngs/012007.png",
     "question": "A uniform rod $AB$ of mass $4\\text{ kg}$ and length $6\\text{ metres}$ is resting horizontally on a support at a point $C$, where $AC = 2\\text{ metres}$. A particle of mass $6\\text{ kg}$ is attached to the rod at $A$, and another particle of mass $M\\text{ kg}$ is attached to the rod at $B$, as shown in the diagram. The rod is balanced in equilibrium.<br><br>Find the value of $M$.",
     "steps": [
-        "Identify the pivot point at $C$ and calculate the distances of all forces from this pivot. Since $AC = 2\\text{ m}$ on a $6\\text{ m}$ rod, the distance from $C$ to $B$ is:<br><br>$$6 - 2 = 4\\text{ metres}$$",
-        "The rod is uniform, so its weight of $4g\\text{ Newtons}$ acts at its midpoint (which is $3\\text{ m}$ from $A$). The distance from the pivot $C$ to this midpoint is:<br><br>$$3 - 2 = 1\\text{ metre (to the right of } C)$$",
-        "Calculate the total anticlockwise moment about $C$, which is created solely by the $6\\text{ kg}$ mass at $A$ (at a distance of $2\\text{ m}$):<br><br>$$\\text{Anticlockwise Moment} = 6g \\times 2 = 12g\\text{ N m}$$",
-        "Calculate the total clockwise moments about $C$. Both the weight of the rod ($4g$ acting $1\\text{ m}$ to the right) and the mass at $B$ ($Mg$ acting $4\\text{ m}$ to the right) create clockwise moments:<br><br>$$\\text{Clockwise Moment} = (4g \\times 1) + (Mg \\times 4) = 4g + 4Mg\\text{ N m}$$",
-        "For the rod to remain in horizontal equilibrium, the sum of anticlockwise moments must equal the sum of clockwise moments about the pivot $C$. Equate and solve for $M$:<br><br>\\begin{aligned} 12g &= 4g + 4Mg \\cr 12 &= 4 + 4M \\cr 8 &= 4M \\cr M &= \\dfrac{ 8 }{ 4 } \\cr M &= 2 \\end{aligned}"
+        "Identify the pivot point at $C$ and calculate the distances of all forces from this pivot. Since $AC = 2\\text{ m}$ on a $6\\text{ m}$ rod, the distance from $C$ to $B$ is:$$6 - 2 = 4\\text{ m}$$",
+        "The rod is uniform, so its weight of $4g\\text{ N}$ acts at its midpoint ($3\\text{ m}$ from $A$). The distance from pivot $C$ to this midpoint is:$$3 - 2 = 1\\text{ m}$$This weight acts to the right of $C$.",
+        "Calculate the total anticlockwise moment about $C$, created solely by the $6\\text{ kg}$ mass at $A$ (at distance $2\\text{ m}$):\\begin{aligned} &\\text{Anticlockwise Moment} \\cr &\\quad = 6g \\times 2 \\cr &\\quad = 12g\\text{ N m} \\end{aligned}",
+        "Calculate the total clockwise moments about $C$. Both the rod's weight ($4g$ acting $1\\text{ m}$ to the right) and the mass at $B$ ($Mg$ acting $4\\text{ m}$ to the right) create clockwise moments:\\begin{aligned} &\\text{Clockwise Moment} \\cr &\\quad = (4g \\times 1) + (Mg \\times 4) \\cr &\\quad = 4g + 4Mg\\text{ N m} \\end{aligned}",
+        "For the rod to remain in horizontal equilibrium, equate the clockwise and anticlockwise moments about $C$ and solve for $M$:\\begin{aligned} &12g = 4g + 4Mg \\cr &12 = 4 + 4M \\cr &4M = 8 \\cr &M = \\dfrac{ 8 }{ 4 } \\cr &M = 2 \\end{aligned}",
+        "Final Answer: $$2$$"
     ],
     "pi_options": [
         {
@@ -289,9 +291,10 @@ window.ALEVEL_QUESTIONS = [
     "question": "A see-saw consists of a uniform plank $AB$ of length $4\\text{ metres}$ pivot-supported at its midpoint, $C$. A child of mass $32\\text{ kg}$ sits at end $A$, and a second child of mass $40\\text{ kg}$ sits at a distance of $d$ metres from $C$ on the other side of the pivot, as shown in the diagram. The see-saw is balanced horizontally in equilibrium.<br><br>Find the value of $d$.",
     "steps": [
         "Identify the pivot at the midpoint $C$. Since the plank is uniform and pivoted at the center, its weight acts through $C$ and contributes zero moment. Since the plank has a total length of $4\\text{ m}$, the distance from $C$ to end $A$ is $2\\text{ m}$.",
-        "Calculate the anticlockwise moment about $C$ due to the $32\\text{ kg}$ child sitting at $A$:<br><br>$$\\text{Anticlockwise Moment} = 32g \\times 2 = 64g\\text{ N m}$$",
-        "Calculate the clockwise moment about $C$ due to the $40\\text{ kg}$ child sitting at distance $d$:<br><br>$$\\text{Clockwise Moment} = 40g \\times d = 40gd\\text{ N m}$$",
-        "Set the clockwise and anticlockwise moments equal to maintain static equilibrium and solve for $d$:<br><br>\\begin{aligned} 64g &= 40gd \\cr 64 &= 40d \\cr d &= \\dfrac{ 64 }{ 40 } \\cr d &= 1.6 \\end{aligned}"
+        "Calculate the anticlockwise moment about $C$ due to the $32\\text{ kg}$ child sitting at $A$:\\begin{aligned} &\\text{Anticlockwise Moment} \\cr &\\quad = 32g \\times 2 \\cr &\\quad = 64g\\text{ N m} \\end{aligned}",
+        "Calculate the clockwise moment about $C$ due to the $40\\text{ kg}$ child sitting at distance $d$:\\begin{aligned} &\\text{Clockwise Moment} \\cr &\\quad = 40g \\times d \\cr &\\quad = 40gd\\text{ N m} \\end{aligned}",
+        "Set the clockwise and anticlockwise moments equal to maintain static equilibrium and solve for $d$:\\begin{aligned} &64g = 40gd \\cr &40d = 64 \\cr &d = \\dfrac{ 64 }{ 40 } \\cr &d = 1.6 \\end{aligned}",
+        "Final Answer: $$1.6$$"
     ],
     "pi_options": [
         {
@@ -326,11 +329,12 @@ window.ALEVEL_QUESTIONS = [
     "img": "images/Mechanics_pngs/012009.png",
     "question": "A uniform plank $AB$ of length $6\\text{ metres}$ and mass $15\\text{ kg}$ is resting horizontally in equilibrium on two supports at $C$ and $D$, where $AC = 1\\text{ metre}$ and $BD = 1\\text{ metre}$. A person of mass $75\\text{ kg}$ stands on the plank at a distance of $y$ metres from $A$, as shown in the diagram.<br><br>Given that the reaction force at support $C$ is twice the magnitude of the reaction force at support $D$, find the value of $y$.",
     "steps": [
-        "First, establish vertical equilibrium by equating the total upward reaction forces to the total downward weight forces:<br><br>$$R_C + R_D = (15 + 75)g = 90g\\text{ N}$$",
-        "Use the given relationship $R_C = 2R_D$ to solve for the individual support reaction forces:<br><br>\\begin{aligned} 2R_D + R_D &= 90g \\cr 3R_D &= 90g \\cr R_D &= 30g\\text{ N} \\cr R_C &= 60g\\text{ N} \\end{aligned}",
-        "Next, take moments about point $A$. The clockwise moments are produced by the weight of the uniform plank (acting at its midpoint, $3\\text{ m}$ from $A$) and the person's weight (acting at distance $y$ from $A$):<br><br>$$\\text{Clockwise Moment} = (15g \\times 3) + (75g \\times y) = 45g + 75gy\\text{ N m}$$",
-        "The anticlockwise moments about $A$ are produced by the upward reactions at support $C$ ($1\\text{ m}$ from $A$) and support $D$ ($5\\text{ m}$ from $A$, since $BD = 1\\text{ m}$):<br><br>$$\\text{Anticlockwise Moment} = (R_C \\times 1) + (R_D \\times 5) = 60g(1) + 30g(5) = 210g\\text{ N m}$$",
-        "Equate the clockwise and anticlockwise moments about $A$ to solve for $y$:<br><br>\\begin{aligned} 45g + 75gy &= 210g \\cr 45 + 75y &= 210 \\cr 75y &= 165 \\cr y &= \\dfrac{ 165 }{ 75 } \\cr y &= 2.2 \\end{aligned}"
+        "First, establish vertical equilibrium by equating the total upward reaction forces to the total downward weight forces:\\begin{aligned} &R_C + R_D = (15 + 75)g \\cr &R_C + R_D = 90g\\text{ N} \\end{aligned}",
+        "Use the given relationship $R_C = 2R_D$ to solve for the individual support reaction forces:\\begin{aligned} &2R_D + R_D = 90g \\cr &3R_D = 90g \\cr &R_D = 30g\\text{ N} \\cr &R_C = 60g\\text{ N} \\end{aligned}",
+        "Next, take moments about point $A$. The clockwise moments are produced by the weight of the uniform plank (acting at its midpoint, $3\\text{ m}$ from $A$) and the person's weight (acting at distance $y$ from $A$):\\begin{aligned} &\\text{Clockwise Moment} \\cr &\\quad = (15g \\times 3) + (75g \\times y) \\cr &\\quad = 45g + 75gy\\text{ N m} \\end{aligned}",
+        "The anticlockwise moments about $A$ are produced by the upward reactions at support $C$ ($1\\text{ m}$ from $A$) and support $D$ ($5\\text{ m}$ from $A$, since $BD = 1\\text{ m}$):\\begin{aligned} &\\text{Anticlockwise Moment} \\cr &\\quad = (R_C \\times 1) + (R_D \\times 5) \\cr &\\quad = 60g(1) + 30g(5) \\cr &\\quad = 210g\\text{ N m} \\end{aligned}",
+        "Equate the clockwise and anticlockwise moments about $A$ to solve for $y$:\\begin{aligned} &45g + 75gy = 210g \\cr &45 + 75y = 210 \\cr &75y = 165 \\cr &y = \\dfrac{ 165 }{ 75 } \\cr &y = 2.2 \\end{aligned}",
+        "Final Answer: $$2.2$$"
     ],
     "pi_options": [
         {
@@ -365,11 +369,12 @@ window.ALEVEL_QUESTIONS = [
     "img": "images/Mechanics_pngs/012010.png",
     "question": "A non-uniform rod $AB$ has a length of $4\\text{ metres}$ and mass $10\\text{ kg}$. The rod is resting horizontally in equilibrium on two supports at $C$ and $D$, where $AC = 1\\text{ metre}$ and $BD = 1\\text{ metre}$. The reaction force at support $C$ has magnitude $6g\\text{ Newtons}$ and the reaction force at support $D$ has magnitude $4g\\text{ Newtons}$, where $g$ is the acceleration due to gravity.<br><br>Find the distance, $\\bar{x}$, of the centre of mass of the rod, $G$, from $A$, as shown in the diagram.",
     "steps": [
-        "First, verify vertical translational equilibrium to ensure our values are consistent. The total upward reaction force is $R_C + R_D = 6g + 4g = 10g\\text{ N}$, which matches the downward weight of the $10\\text{ kg}$ rod ($10g\\text{ N}$) exactly.",
-        "Identify the positions of the supports from $A$:<br>Support $C$ is at distance $1\\text{ m}$ from $A$.<br>Support $D$ is at distance $3\\text{ m}$ from $A$ (calculated as total length $4\\text{ m}$ minus $BD = 1\\text{ m}$)." ,
-        "Take moments about $A$. The clockwise moment is created by the weight of the rod ($10g\\text{ N}$) acting through its centre of mass $G$ at a distance of $\\bar{x}$:<br><br>$$\\text{Clockwise Moment} = 10g \\times \\bar{x}\\text{ N m}$$",
-        "The anticlockwise moments about $A$ are created by the upward reaction forces at $C$ and $D$:<br><br>$$\\text{Anticlockwise Moment} = (R_C \\times 1) + (R_D \\times 3) = 6g(1) + 4g(3) = 18g\\text{ N m}$$",
-        "Equate the clockwise and anticlockwise moments and solve for $\\bar{x}$:<br><br>\\begin{aligned} 10g\\bar{x} &= 18g \\cr 10\\bar{x} &= 18 \\cr \\bar{x} &= \\dfrac{ 18 }{ 10 } \\cr \\bar{x} &= 1.8 \\end{aligned}"
+        "First, verify vertical translational equilibrium. The total upward reaction force is $R_C + R_D = 10g\\text{ N}$, which matches the downward weight of the $10\\text{ kg}$ rod ($10g\\text{ N}$) exactly.",
+        "Identify the positions of the supports from $A$:<br><br>• Support $C$ is at a distance of $1\\text{ m}$ from $A$.<br>• Support $D$ is at a distance of $3\\text{ m}$ from $A$ ($4\\text{ m} - 1\\text{ m} = 3\\text{ m}$).",
+        "Take moments about $A$. The clockwise moment is created by the weight of the rod ($10g\\text{ N}$) acting through its centre of mass $G$ at a distance of $\\bar{x}$:$$\\text{Clockwise Moment} = 10g\\bar{x}\\text{ N m}$$",
+        "The anticlockwise moments about $A$ are created by the upward reaction forces at $C$ and $D$:\\begin{aligned} &\\text{Anticlockwise Moment} \\cr &\\quad = (R_C \\times 1) + (R_D \\times 3) \\cr &\\quad = 6g(1) + 4g(3) \\cr &\\quad = 18g\\text{ N m} \\end{aligned}",
+        "Equate the clockwise and anticlockwise moments and solve for $\\bar{x}$:\\begin{aligned} &10g\\bar{x} = 18g \\cr &10\\bar{x} = 18 \\cr &\\bar{x} = \\dfrac{ 18 }{ 10 } \\cr &\\bar{x} = 1.8 \\end{aligned}",
+        "Final Answer: $$1.8$$"
     ],
     "pi_options": [
         {
