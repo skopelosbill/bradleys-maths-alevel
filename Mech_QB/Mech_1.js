@@ -1246,13 +1246,13 @@ window.ALEVEL_QUESTIONS = [
     "question": "In this question, use $g = 9.8\\text{ m s}^{-2}$.<br><br>A particle is projected from a point on horizontal ground with an initial speed $u\\text{ m s}^{-1}$ at an angle of $30^\\circ$ above the horizontal. It lands at a point $12\\text{ metres}$ vertically below its starting position. The particle takes $1.8\\text{ seconds}$ to reach the highest point of its trajectory.<br><br><strong>(a)</strong> Find the value of $u$.<br><br><strong>(b)</strong> Find the total time, in seconds to three significant figures, that the particle is in flight.",
     "steps": [
         "For part <strong>(a)</strong>, analyze the vertical motion. At the highest point of the trajectory, the vertical component of the velocity is zero ($v_y = 0$).",
-        "The initial vertical component of the velocity, $u_y$, is:\\begin{aligned} \n&u_y \\cr \n&\\quad = u\\sin 30^\\circ \\cr \n&\\quad = 0.5u \n\\end{aligned}",
-        "Use the formula $v_y = u_y + at$ with vertical acceleration $a = -9.8\\text{ m s}^{-2}$ (since $a = -g$) and time $t = 1.8\\text{ s}$ to solve for $u$:\\begin{aligned} \n&0 = 0.5u - 9.8(1.8) \\cr \n&0.5u = 17.64 \\cr \n&u = \\dfrac{17.64}{0.5} \\cr \n&u = 35.28 \\cr \n&u \\approx 35.3\\text{ m s}^{-1} \n\\end{aligned}",
+        "The initial vertical component of the velocity, $u_y$, is:\\begin{aligned} &u_y \\cr &\\quad = u\\sin 30^\\circ \\cr &\\quad = 0.5u \\end{aligned}",
+        "Use the formula $v_y = u_y + at$ with vertical acceleration $a = -9.8\\text{ m s}^{-2}$ (since $a = -g$) and time $t = 1.8\\text{ s}$ to solve for $u$:\\begin{aligned} &0 = 0.5u - 9.8(1.8) \\cr &0.5u = 17.64 \\cr &u = \\dfrac{17.64}{0.5} \\cr &u = 35.28 \\cr &u \\approx 35.3\\text{ m s}^{-1} \\end{aligned}",
         "For part <strong>(b)</strong>, find the total time of flight. The particle lands at a point $12\\text{ metres}$ vertically below its starting position, so the vertical displacement is $s_y = -12\\text{ m}$.",
-        "Use the displacement formula with $u_y = 17.64$ and $a = -9.8$ to set up a quadratic equation in $t$:\\begin{aligned} \n&-12 = 17.64t - 4.9t^2 \\cr \n&4.9t^2 - 17.64t - 12 = 0 \n\\end{aligned}",
-        "Evaluate the discriminant of the quadratic equation:\\begin{aligned} \n&b^2 - 4ac \\cr \n&\\quad = (-17.64)^2 \\cr \n&\\qquad - 4(4.9)(-12) \\cr \n&\\quad = 311.17 + 235.20 \\cr \n&\\quad = 546.37 \n\\end{aligned}",
-        "Apply the quadratic formula to find $t$:\\begin{aligned} \n&t \\cr \n&\\quad = \\dfrac{17.64 \\pm \\sqrt{546.37}}{2(4.9)} \\cr \n&\\quad \\approx \\dfrac{17.64 \\pm 23.375}{9.8} \n\\end{aligned}",
-        "Since time must be positive ($t > 0$), take the positive root:\\begin{aligned} \n&t \\cr \n&\\quad \\approx \\dfrac{17.64 + 23.375}{9.8} \\cr \n&\\quad \\approx 4.19\\text{ s} \n\\end{aligned}",
+        "Use the displacement formula with $u_y = 17.64$ and $a = -9.8$ to set up a quadratic equation in $t$:\\begin{aligned} &-12 = 17.64t - 4.9t^2 \\cr &4.9t^2 - 17.64t - 12 = 0 \\end{aligned}",
+        "Evaluate the discriminant of the quadratic equation:\\begin{aligned} &b^2 - 4ac \\cr &\\quad = (-17.64)^2 \\cr &\\qquad - 4(4.9)(-12) \\cr &\\quad = 311.17 + 235.20 \\cr &\\quad = 546.37 \\end{aligned}",
+        "Apply the quadratic formula to find $t$:\\begin{aligned} &t \\cr &\\quad = \\dfrac{17.64 \\pm \\sqrt{546.37}}{2(4.9)} \\cr &\\quad \\approx \\dfrac{17.64 \\pm 23.375}{9.8} \\end{aligned}",
+        "Since time must be positive ($t > 0$), take the positive root:\\begin{aligned} &t \\cr &\\quad \\approx \\dfrac{17.64 + 23.375}{9.8} \\cr &\\quad \\approx 4.19\\text{ s} \\end{aligned}",
         "Final Answer: $$u = 35.3\\text{ m s}^{-1};$$<br>$$t = 4.19\\text{ s}$$"
     ],
     "pi_options": [
@@ -1288,12 +1288,12 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "In this question, use $g = 9.8\\text{ m s}^{-2}$.<br><br>A stone is projected from a point on horizontal ground with an initial velocity of $20\\text{ m s}^{-1}$ at an angle of $40^\\circ$ above the horizontal.<br><br><strong>(a)</strong> Find the total time, in seconds to three significant figures, that the stone is in the air.<br><br><strong>(b)</strong> Find the horizontal distance (the range), in metres to three significant figures, travelled by the stone before it hits the ground.",
     "steps": [
-        "For part <strong>(a)</strong>, find the vertical component of the initial velocity, $u_y$:\\begin{aligned} \n&u_y \\cr \n&\\quad = 20\\sin 40^\\circ \\cr \n&\\quad \\approx 12.856\\text{ m s}^{-1} \n\\end{aligned}",
+        "For part <strong>(a)</strong>, find the vertical component of the initial velocity, $u_y$:\\begin{aligned} &u_y \\cr &\\quad = 20\\sin 40^\\circ \\cr &\\quad \\approx 12.856\\text{ m s}^{-1} \\end{aligned}",
         "Because the stone lands on horizontal ground at the same vertical level from which it was projected, the net vertical displacement is zero ($s_y = 0$).",
-        "Use the vertical displacement formula with $a = -9.8\\text{ m s}^{-2}$ (since $a = -g$) to solve for the time of flight, $t$:\\begin{aligned} \n&0 = 12.856t - 4.9t^2 \\cr \n&0 = t(12.856 - 4.9t) \n\\end{aligned}",
-        "Since $t > 0$ during the flight, solve the linear factor:\\begin{aligned} \n&12.856 - 4.9t = 0 \\cr \n&4.9t = 12.856 \\cr \n&t = \\dfrac{12.856}{4.9} \\cr \n&t \\approx 2.62\\text{ s} \n\\end{aligned}",
-        "For part <strong>(b)</strong>, find the horizontal component of the initial velocity, $u_x$:\\begin{aligned} \n&u_x \\cr \n&\\quad = 20\\cos 40^\\circ \\cr \n&\\quad \\approx 15.321\\text{ m s}^{-1} \n\\end{aligned}",
-        "Because air resistance is neglected, horizontal velocity remains constant throughout the flight. Calculate the horizontal range, $s_x$, using $t = 2.624\\text{ s}$:\\begin{aligned} \n&s_x \\cr \n&\\quad = u_x \\times t \\cr \n&\\quad = 15.321 \\times 2.624 \\cr \n&\\quad \\approx 40.2\\text{ m} \n\\end{aligned}",
+        "Use the vertical displacement formula with $a = -9.8\\text{ m s}^{-2}$ (since $a = -g$) to solve for the time of flight, $t$:\\begin{aligned} &0 = 12.856t - 4.9t^2 \\cr &0 = t(12.856 - 4.9t) \\end{aligned}",
+        "Since $t > 0$ during the flight, solve the linear factor:\\begin{aligned} &12.856 - 4.9t = 0 \\cr &4.9t = 12.856 \\cr &t = \\dfrac{12.856}{4.9} \\cr &t \\approx 2.62\\text{ s} \\end{aligned}",
+        "For part <strong>(b)</strong>, find the horizontal component of the initial velocity, $u_x$:\\begin{aligned} &u_x \\cr &\\quad = 20\\cos 40^\\circ \\cr &\\quad \\approx 15.321\\text{ m s}^{-1} \\end{aligned}",
+        "Because air resistance is neglected, horizontal velocity remains constant throughout the flight. Calculate the horizontal range, $s_x$, using $t = 2.624\\text{ s}$:\\begin{aligned} &s_x \\cr &\\quad = u_x \\times t \\cr &\\quad = 15.321 \\times 2.624 \\cr &\\quad \\approx 40.2\\text{ m} \\end{aligned}",
         "Final Answer: $$t = 2.62\\text{ s};$$<br>$$s_x = 40.2\\text{ m}$$"
     ],
     "pi_options": [
@@ -1331,9 +1331,9 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
         "For part <strong>(a)</strong>, analyze the vertical motion of the ball. Because the ball is projected horizontally, its initial vertical velocity is zero ($u_y = 0$).",
         "Set the vertical displacement to $s_y = -44.1\\text{ m}$ (since the ball falls downwards from the cliff) and the vertical acceleration to $a = -9.8\\text{ m s}^{-2}$ (since $a = -g$).",
-        "Use the vertical displacement formula $s_y = u_y t + \\dfrac{1}{2}at^2$ to solve for $t$:\\begin{aligned} \n&-44.1 = 0 - 4.9t^2 \\cr \n&4.9t^2 = 44.1 \\cr \n&t^2 = \\dfrac{44.1}{4.9} \\cr \n&t^2 = 9 \\cr \n&t = 3.0\\text{ s} \n\\end{aligned}",
+        "Use the vertical displacement formula $s_y = u_y t + \\dfrac{1}{2}at^2$ to solve for $t$:\\begin{aligned} &-44.1 = 0 - 4.9t^2 \\cr &4.9t^2 = 44.1 \\cr &t^2 = \\dfrac{44.1}{4.9} \\cr &t^2 = 9 \\cr &t = 3.0\\text{ s} \\end{aligned}",
         "For part <strong>(b)</strong>, analyze the horizontal motion. The horizontal component of velocity is constant at $U\\text{ m s}^{-1}$, and the horizontal distance covered is $s_x = 36\\text{ m}$.",
-        "Use the horizontal motion formula $s_x = U \\times t$ with $t = 3.0\\text{ s}$ to solve for $U$:\\begin{aligned} \n&36 = U \\times 3.0 \\cr \n&U = \\dfrac{36}{3.0} \\cr \n&U = 12 \n\\end{aligned}",
+        "Use the horizontal motion formula $s_x = U \\times t$ with $t = 3.0\\text{ s}$ to solve for $U$:\\begin{aligned} &36 = U \\times 3.0 \\cr &U = \\dfrac{36}{3.0} \\cr &U = 12 \\end{aligned}",
         "Final Answer: $$t = 3.0\\text{ s};$$<br>$$U = 12$$"
     ],
     "pi_options": [
@@ -1369,13 +1369,13 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "In this question, use $g = 9.8\\text{ m s}^{-2}$.<br><br>A particle is projected from a point $O$ on horizontal ground with speed $28\\text{ m s}^{-1}$. At the instant when the particle is at its maximum height, it has travelled a horizontal distance of $24\\text{ metres}$ from $O$.<br><br>For the larger of the two possible angles of projection:<br><br><strong>(a)</strong> Find the angle of projection, $\\theta$, in degrees to one decimal place.<br><br><strong>(b)</strong> Find the time taken, in seconds to three significant figures, for the particle to reach its maximum height.",
     "steps": [
-        "Analyze the geometric symmetry of projectiles. On horizontal ground, maximum height occurs at half of the total horizontal range. Therefore, the total horizontal range, $R$, is:\\begin{aligned} \n&R \\cr \n&\\quad = 2 \\times 24 \\cr \n&\\quad = 48\\text{ m} \n\\end{aligned}",
-        "Recall the horizontal range formula $R = \\dfrac{u^2\\sin 2\\theta}{g}$. Substitute $R = 48$, $u = 28$, and $g = 9.8$ into the formula:\\begin{aligned} \n&48 = \\dfrac{28^2\\sin 2\\theta}{9.8} \\cr \n&48 = \\dfrac{784\\sin 2\\theta}{9.8} \\cr \n&48 = 80\\sin 2\\theta \n\\end{aligned}",
-        "Solve for $\\sin 2\\theta$:\\begin{aligned} \n&\\sin 2\\theta = \\dfrac{48}{80} \\cr \n&\\sin 2\\theta = 0.6 \n\\end{aligned}",
-        "Find the two possible values for $2\\theta$ in the interval $0^\\circ < 2\\theta < 180^\\circ$:\\begin{aligned} \n&2\\theta \\approx 36.87^\\circ \\cr \n&\\text{or} \\cr \n&2\\theta \\approx 180^\\circ - 36.87^\\circ \\cr \n&2\\theta \\approx 143.13^\\circ \n\\end{aligned}",
-        "Divide by $2$ to obtain the two possible projection angles, $\\theta$:\\begin{aligned} \n&\\theta \\approx 18.4^\\circ \\cr \n&\\text{or} \\cr \n&\\theta \\approx 71.6^\\circ \n\\end{aligned}",
+        "Analyze the geometric symmetry of projectiles. On horizontal ground, maximum height occurs at half of the total horizontal range. Therefore, the total horizontal range, $R$, is:\\begin{aligned} &R \\cr &\\quad = 2 \\times 24 \\cr &\\quad = 48\\text{ m} \\end{aligned}",
+        "Recall the horizontal range formula $R = \\dfrac{u^2\\sin 2\\theta}{g}$. Substitute $R = 48$, $u = 28$, and $g = 9.8$ into the formula:\\begin{aligned} &48 = \\dfrac{28^2\\sin 2\\theta}{9.8} \\cr &48 = \\dfrac{784\\sin 2\\theta}{9.8} \\cr &48 = 80\\sin 2\\theta \\end{aligned}",
+        "Solve for $\\sin 2\\theta$:\\begin{aligned} &\\sin 2\\theta = \\dfrac{48}{80} \\cr &\\sin 2\\theta = 0.6 \\end{aligned}",
+        "Find the two possible values for $2\\theta$ in the interval $0^\\circ < 2\\theta < 180^\\circ$:\\begin{aligned} &2\\theta \\approx 36.87^\\circ \\cr &\\text{or} \\cr &2\\theta \\approx 180^\\circ - 36.87^\\circ \\cr &2\\theta \\approx 143.13^\\circ \\end{aligned}",
+        "Divide by $2$ to obtain the two possible projection angles, $\\theta$:\\begin{aligned} &\\theta \\approx 18.4^\\circ \\cr &\\text{or} \\cr &\\theta \\approx 71.6^\\circ \\end{aligned}",
         "For part <strong>(a)</strong>, the question asks for the larger of the two angles of projection, so select $\\theta \\approx 71.6^\\circ$.",
-        "For part <strong>(b)</strong>, find the time to reach maximum height, $t$. At maximum height, the vertical velocity is zero ($v_y = 0$):\\begin{aligned} \n&0 = u_y - gt \\cr \n&0 = 28\\sin 71.565^\\circ - 9.8t \\cr \n&9.8t = 26.56 \\cr \n&t = \\dfrac{26.56}{9.8} \\cr \n&t \\approx 2.71\\text{ s} \n\\end{aligned}",
+        "For part <strong>(b)</strong>, find the time to reach maximum height, $t$. At maximum height, the vertical velocity is zero ($v_y = 0$):\\begin{aligned} &0 = u_y - gt \\cr &0 = 28\\sin 71.565^\\circ - 9.8t \\cr &9.8t = 26.56 \\cr &t = \\dfrac{26.56}{9.8} \\cr &t \\approx 2.71\\text{ s} \\end{aligned}",
         "Final Answer: $$\\theta = 71.6^\\circ;$$<br>$$t = 2.71\\text{ s}$$"
     ],
     "pi_options": [
@@ -1409,15 +1409,15 @@ window.ALEVEL_QUESTIONS = [
         "Trajectory Equation"
     ],
     "img": false,
-    "question": "In this question, use $g = 9.8\\text{ m s}^{-2}$.<br><br>A particle is projected from the origin $O$ with speed $14\\text{ m s}^{-1}$ at an angle $\\theta$ above the horizontal.<br><br><strong>(a)</strong> Show that the Cartesian equation of the trajectory of the particle is given by:\\begin{aligned} \n&y = x\\tan\\theta - \\dfrac{1}{40}x^2(1 + \\tan^2\\theta) \n\\end{aligned}<br><br><strong>(b)</strong> Given that the particle passes through a point $P(10, 2.5)$, find the two possible values of $\\tan \\theta$.",
+    "question": "In this question, use $g = 9.8\\text{ m s}^{-2}$.<br><br>A particle is projected from the origin $O$ with speed $14\\text{ m s}^{-1}$ at an angle $\\theta$ above the horizontal.<br><br><strong>(a)</strong> Show that the Cartesian equation of the trajectory of the particle is given by:\\begin{aligned} &y = x\\tan\\theta \\cr & \\quad - \\dfrac{1}{40}x^2(1 + \\tan^2\\theta) \\end{aligned}<br><br><strong>(b)</strong> Given that the particle passes through a point $P(10, 2.5)$, find the two possible values of $\\tan \\theta$.",
     "steps": [
-        "For part <strong>(a)</strong>, write down the equations for horizontal and vertical displacements in terms of time $t$:\\begin{aligned} \n&x = (u\\cos\\theta)t \\cr \n&y = (u\\sin\\theta)t - \\dfrac{1}{2}gt^2 \n\\end{aligned}",
-        "Rearrange the horizontal displacement equation to express $t$ in terms of $x$:\\begin{aligned} \n&t = \\dfrac{x}{u\\cos\\theta} \n\\end{aligned}",
-        "Substitute this expression for $t$ into the vertical displacement equation:\\begin{aligned} \n&y \\cr \n&\\quad = u\\sin\\theta\\left(\\dfrac{x}{u\\cos\\theta}\\right) \\cr \n&\\qquad - \\dfrac{g}{2}\\left(\\dfrac{x}{u\\cos\\theta}\\right)^2 \\cr \n&\\quad = x\\tan\\theta - \\dfrac{gx^2}{2u^2\\cos^2\\theta} \n\\end{aligned}",
-        "Recall the identity $\\dfrac{1}{\\cos^2\\theta} = 1 + \\tan^2\\theta$. Substitute $u = 14$ and $g = 9.8$ into the equation:\\begin{aligned} \n&y \\cr \n&\\quad = x\\tan\\theta \\cr \n&\\qquad - \\dfrac{9.8x^2}{2(14^2)}(1 + \\tan^2\\theta) \\cr \n&\\quad = x\\tan\\theta \\cr \n&\\qquad - \\dfrac{9.8x^2}{392}(1 + \\tan^2\\theta) \\cr \n&\\quad = x\\tan\\theta - \\dfrac{1}{40}x^2(1 + \\tan^2\\theta) \n\\end{aligned}",
-        "For part <strong>(b)</strong>, substitute the coordinates of $P(10, 2.5)$ into the trajectory equation:\\begin{aligned} \n&2.5 \\cr \n&\\quad = 10\\tan\\theta - \\dfrac{10^2}{40}(1 + \\tan^2\\theta) \\cr \n&\\quad = 10\\tan\\theta - 2.5(1 + \\tan^2\\theta) \n\\end{aligned}",
-        "Divide by $2.5$ and rearrange into a standard quadratic equation:\\begin{aligned} \n&1 = 4\\tan\\theta - (1 + \\tan^2\\theta) \\cr \n&1 = 4\\tan\\theta - 1 - \\tan^2\\theta \\cr \n&\\tan^2\\theta - 4\\tan\\theta + 2 = 0 \n\\end{aligned}",
-        "Solve the quadratic equation in $\\tan\\theta$ using the quadratic formula:\\begin{aligned} \n&\\tan\\theta \\cr \n&\\quad = \\dfrac{-(-4) \\pm \\sqrt{(-4)^2 - 4(1)(2)}}{2(1)} \\cr \n&\\quad = \\dfrac{4 \\pm \\sqrt{16 - 8}}{2} \\cr \n&\\quad = \\dfrac{4 \\pm \\sqrt{8}}{2} \\cr \n&\\quad = 2 \\pm \\sqrt{2} \n\\end{aligned}",
+        "For part <strong>(a)</strong>, write down the equations for horizontal and vertical displacements in terms of time $t$:\\begin{aligned} &x = (u\\cos\\theta)t \\cr &y = (u\\sin\\theta)t - \\dfrac{1}{2}gt^2 \\end{aligned}",
+        "Rearrange the horizontal displacement equation to express $t$ in terms of $x$:\\begin{aligned} &t = \\dfrac{x}{u\\cos\\theta} \\end{aligned}",
+        "Substitute this expression for $t$ into the vertical displacement equation:\\begin{aligned} &y \\cr &\\quad = u\\sin\\theta\\left(\\dfrac{x}{u\\cos\\theta}\\right) \\cr &\\qquad - \\dfrac{g}{2}\\left(\\dfrac{x}{u\\cos\\theta}\\right)^2 \\cr &\\quad = x\\tan\\theta - \\dfrac{gx^2}{2u^2\\cos^2\\theta} \\end{aligned}",
+        "Recall the identity $\\dfrac{1}{\\cos^2\\theta} = 1 + \\tan^2\\theta$. Substitute $u = 14$ and $g = 9.8$ into the equation:\\begin{aligned} &y \\cr &\\quad = x\\tan\\theta \\cr &\\qquad - \\dfrac{9.8x^2}{2(14^2)}(1 + \\tan^2\\theta) \\cr &\\quad = x\\tan\\theta \\cr &\\qquad - \\dfrac{9.8x^2}{392}(1 + \\tan^2\\theta) \\cr &\\quad = x\\tan\\theta - \\dfrac{1}{40}x^2(1 + \\tan^2\\theta) \\end{aligned}",
+        "For part <strong>(b)</strong>, substitute the coordinates of $P(10, 2.5)$ into the trajectory equation:\\begin{aligned} &2.5 \\cr &\\quad = 10\\tan\\theta - \\dfrac{10^2}{40}(1 + \\tan^2\\theta) \\cr &\\quad = 10\\tan\\theta - 2.5(1 + \\tan^2\\theta) \\end{aligned}",
+        "Divide by $2.5$ and rearrange into a standard quadratic equation:\\begin{aligned} &1 = 4\\tan\\theta - (1 + \\tan^2\\theta) \\cr &1 = 4\\tan\\theta - 1 - \\tan^2\\theta \\cr &\\tan^2\\theta - 4\\tan\\theta + 2 = 0 \\end{aligned}",
+        "Solve the quadratic equation in $\\tan\\theta$ using the quadratic formula:\\begin{aligned} &\\tan\\theta \\cr &\\quad = \\dfrac{-(-4) \\pm \\sqrt{(-4)^2 - 4(1)(2)}}{2(1)} \\cr &\\quad = \\dfrac{4 \\pm \\sqrt{16 - 8}}{2} \\cr &\\quad = \\dfrac{4 \\pm \\sqrt{8}}{2} \\cr &\\quad = 2 \\pm \\sqrt{2} \\end{aligned}",
         "Final Answer: $$\\tan\\theta = 2 + \\sqrt{2} \\text{ and } 2 - \\sqrt{2}$$"
     ],
     "pi_options": [
@@ -1453,25 +1453,26 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A tractor is pulling a heavy trailer in a straight line along a horizontal road by means of a light, inextensible connecting rope.<br><ul><li>The combined mass of the tractor and driver is $1200\\text{ kg}$.</li><li>A constant horizontal driving force of $900\\text{ N}$ and a total resistance force of $400\\text{ N}$ act on the tractor.</li><li>The mass of the trailer is $600\\text{ kg}$.</li><li>A total resistance force of $R$ Newtons acts on the trailer.</li><li>The tractor and the trailer have a constant acceleration of $0.15\\text{ m s}^{-2}$.</li></ul><br><br><img src='images/Mechanics_pngs/012036.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><strong>(a) (i)</strong> Find the value of $R$.<br><br><strong>(a) (ii)</strong> Find the tension in the rope.<br><br><strong>(b)</strong> State one modelling assumption that has been made about the rope.<br><br><strong>(c) (i)</strong> The trailer releases the rope at a point $A$, when it reaches a speed of $8\\text{ m s}^{-1}$. It continues to move forward, experiencing the same resistance force, until it comes to rest at a point $B$.<br>Find the distance $AB$, in metres to three significant figures.<br><br><strong>(c) (ii)</strong> State one change that the driver will notice in the motion of the tractor immediately after the trailer releases the rope.",
     "steps": [
-        "<strong>(a) (i) Find R:</strong><br>We can treat the tractor and trailer as a single combined system. The total mass is $1200 + 600 = 1800\\text{ kg}$. Apply Newton's Second Law ($F = ma$) in the direction of motion, noting that the tension $T$ is internal to the combined system and cancels out:<br><br>\\begin{aligned} F_{\\text{resultant}} &= m_{\\text{total}} a \\cr 900 - 400 - R &= 1800(0.15) \\cr 500 - R &= 270 \\cr R &= 500 - 270 \\cr R &= 230\\text{ N} \\end{aligned}",
-        "<strong>(a) (ii) Find the tension T:</strong><br>Now consider only the trailer as a separate body. The only horizontal forces acting on it are the tension $T$ pulling it forward and the resistance $R = 230\\text{ N}$ opposing it. Apply $F = ma$:<br><br>\\begin{aligned} T - R &= m_{\\text{trailer}} a \\cr T - 230 &= 600(0.15) \\cr T - 230 &= 90 \\cr T &= 320\\text{ N} \\end{aligned}",
-        "<strong>(b) Modelling Assumption:</strong><br>We assume that the connecting rope is: <br>1. <strong>Light</strong> (massless), which means the tension is uniform throughout its length.<br>2. <strong>Inextensible</strong> (does not stretch), which means both the tractor and trailer have the same acceleration.",
-        "<strong>(c) (i) Find the distance AB:</strong><br>When the trailer releases the rope, the tension drops to zero ($T = 0$). The only horizontal force acting on the $600\\text{ kg}$ trailer is the resistance force $R = 230\\text{ N}$. Find the new deceleration $a$:<br><br>\\begin{aligned} -R &= m_{\\text{trailer}} a \\cr -230 &= 600a \\cr a &= -\\dfrac{ 230 }{ 600 } \\approx -0.3833\\text{ m s}^{ -2 } \\end{aligned}",
-        "Use the constant acceleration formula $v^2 = u^2 + 2as$ with $u = 8\\text{ m s}^{-1}$, $v = 0$ (comes to rest), and $a = -0.3833\\text{ m s}^{-2}$ to solve for the distance $s = AB$:<br><br>\\begin{aligned} v^2 &= u^2 + 2as \\cr 0 &= 8^2 + 2(-0.3833)s \\cr 0.7667s &= 64 \\cr s &= \\dfrac{ 64 }{ 0.7667 } \\cr s &\\approx 83.5\\text{ m} \\end{aligned}",
-        "<strong>(c) (ii) Immediate Change in Tractor's Motion:</strong><br>The tractor will immediately accelerate more rapidly. This is because the backward-acting tension force ($T = 320\\text{ N}$) on the tractor is suddenly removed, which increases the horizontal resultant force acting on the tractor from $180\\text{ N}$ to $500\\text{ N}$."
+        "<strong>(a) (i) Find R:</strong><br><br>Treat the tractor and trailer as a single combined system of mass $1800\\text{ kg}$. Apply Newton's Second Law ($F = ma$) in the direction of motion:\\begin{aligned} \n&F_{\\text{resultant}} = m_{\\text{total}} a \\cr \n&900 - 400 - R = 1800(0.15) \\cr \n&500 - R = 270 \\cr \n&R = 500 - 270 \\cr \n&R = 230\\text{ N} \n\\end{aligned}",
+        "<strong>(a) (ii) Find the tension T:</strong><br><br>Consider only the trailer. The horizontal forces are the tension $T$ forward and the resistance $R = 230\\text{ N}$ backward. Apply $F = ma$:\\begin{aligned} \n&T - R = m_{\\text{trailer}} a \\cr \n&T - 230 = 600(0.15) \\cr \n&T - 230 = 90 \\cr \n&T = 320\\text{ N} \n\\end{aligned}",
+        "<strong>(b) Modelling Assumption:</strong><br><br>• <strong>Light</strong> (massless): tension is uniform throughout the rope.<br><br>• <strong>Inextensible</strong> (does not stretch): both vehicles share the same acceleration.",
+        "<strong>(c) (i) Find the distance AB:</strong><br><br>When the trailer releases the rope, tension is zero ($T = 0$). The only horizontal force acting on the $600\\text{ kg}$ trailer is $R = 230\\text{ N}$. Find the new acceleration $a$:\\begin{aligned} \n&-R = m_{\\text{trailer}} a \\cr \n&-230 = 600a \\cr \n&a = -\\dfrac{230}{600} \\cr \n&a \\approx -0.3833\\text{ m s}^{-2} \n\\end{aligned}",
+        "Use $v^2 = u^2 + 2as$ with $u = 8\\text{ m s}^{-1}$, $v = 0$, and $a = -0.3833\\text{ m s}^{-2}$ to solve for the distance $s = AB$:\\begin{aligned} \n&v^2 = u^2 + 2as \\cr \n&0 = 8^2 + 2(-0.3833)s \\cr \n&0.7667s = 64 \\cr \n&s = \\dfrac{64}{0.7667} \\cr \n&s \\approx 83.5\\text{ m} \n\\end{aligned}",
+        "<strong>(c) (ii) Immediate Change in Tractor's Motion:</strong><br><br>The tractor will immediately accelerate more rapidly. The backward-acting tension force ($T = 320\\text{ N}$) is removed, increasing the net forward force on the tractor from $180\\text{ N}$ to $500\\text{ N}$.",
+        "Final Answer: $$R = 230\\text{ N},\\; T = 320\\text{ N}$$<br>$$AB = 83.5\\text{ m}$$<br>$$\\text{Inextensible rope;}$$<br>$$\\text{accelerates more rapidly}$$"
     ],
     "pi_options": [
         {
-            "ans": "$$R = 270\\text{ N}; \\quad T = 360\\text{ N}; \\quad AB = 75.2\\text{ m};$$<br>$$\\text{Assumption: Smooth road. Tractor will maintain a constant velocity.}$$",
+            "ans": "$$R = 270\\text{ N},\\; T = 360\\text{ N}$$<br>$$AB = 75.2\\text{ m}$$<br>$$\\text{Smooth road;}$$<br>$$\\text{constant velocity}$$",
             "feedback": "This represents a calculation slip when applying Newton's Second Law to the combined system, which affects both the resistance $R$ and the tension $T$."
         },
         {
-            "ans": "$$R = 230\\text{ N}; \\quad T = 320\\text{ N}; \\quad AB = 95.5\\text{ m};$$<br>$$\\text{Assumption: Negligible air resistance. Tractor will decelerate immediately.}$$",
-            "feedback": "This indicates a vertical kinematic error when calculating the deceleration distance $AB$. Additionally, removing a resistive tension force causes the tractor to accelerate more rapidly, not decelerate."
+            "ans": "$$R = 230\\text{ N},\\; T = 320\\text{ N}$$<br>$$AB = 95.5\\text{ m}$$<br>$$\\text{Negligible air resistance;}$$<br>$$\\text{tractor decelerates}$$",
+            "feedback": "This indicates a kinematic error when calculating the distance $AB$. Additionally, removing a resistive tension force causes the tractor to accelerate more rapidly, not decelerate."
         },
         {
-            "ans": "$$R = 230\\text{ N}; \\quad T = 320\\text{ N}; \\quad AB = 83.5\\text{ m};$$<br>$$\\text{Assumption: Elastic rope. Tractor will stop completely.}$$",
-            "feedback": "This is conceptually incorrect. In standard A-level mechanics models, ropes are modelled as inextensible, not elastic. If the rope were elastic, the bodies would not share a uniform acceleration."
+            "ans": "$$R = 230\\text{ N},\\; T = 320\\text{ N}$$<br>$$AB = 83.5\\text{ m}$$<br>$$\\text{Elastic rope;}$$<br>$$\\text{tractor stops completely}$$",
+            "feedback": "This is conceptually incorrect. In standard mechanics models, ropes are modelled as inextensible, not elastic. If the rope were elastic, the bodies would not share a uniform acceleration."
         }
     ],
     "bradley_insight": {
@@ -1493,23 +1494,24 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A car is towing a caravan up a rough road inclined at $8^\\circ$ to the horizontal by means of a light, inextensible tow-bar.<br><ul><li>The mass of the car is $1200\\text{ kg}$ and the mass of the caravan is $800\\text{ kg}$.</li><li>The car exerts a constant driving force of $D$ Newtons parallel to the slope.</li><li>The resistance to motion is $150\\text{ N}$ on the caravan and $250\\text{ N}$ on the car.</li><li>The car and caravan accelerate uniformly up the plane at $0.4\\text{ m s}^{-2}$.</li></ul><br><img src='images/Mechanics_pngs/012037.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><strong>(a)</strong> Find the value of $D$, giving your answer to three significant figures.<br><br><strong>(b)</strong> Find the tension, in Newtons to three significant figures, in the tow-bar as they accelerate up the plane.",
     "steps": [
-        "<strong>(a) Find the driving force D:</strong><br>Treat the car and caravan as a single combined system. The total mass is $1200 + 800 = 2000\\text{ kg}$. The total resistance force is $150 + 250 = 400\\text{ N}$.",
-        "Calculate the component of the total weight acting down the slope:<br><br>$$W_x = m_{\\text{total}} g \\sin{ 8^\\circ } = 2000(9.8)\\sin{ 8^\\circ } \\approx 2727.8\\text{ N}$$",
-        "Apply Newton's Second Law parallel to the inclined plane (taking up the slope as positive):<br><br>\\begin{aligned} D - R_{\\text{total}} - W_x &= m_{\\text{total}} a \\cr D - 400 - 2727.8 &= 2000(0.4) \\cr D - 3127.8 &= 800 \\cr D &= 3927.8 \\cr D &\\approx 3930\\text{ N} \\end{aligned}",
-        "<strong>(b) Find the tension T:</strong><br>Consider only the caravan as a separate body. The forces acting on it parallel to the slope are: <br>1. Tension $T$ pulling it up the slope.<br>2. Caravan resistance force of $150\\text{ N}$ pulling it down.<br>3. Component of the caravan's weight acting down the slope:<br>$$W_{\\text{caravan}} = 800(9.8)\\sin{ 8^\\circ } \\approx 1091.1\\text{ N}$$",
-        "Apply $F = ma$ to the caravan up the slope:<br><br>\\begin{aligned} T - R_{\\text{caravan}} - W_{\\text{caravan}} &= m_{\\text{caravan}} a \\cr T - 150 - 1091.1 &= 800(0.4) \\cr T - 1241.1 &= 320 \\cr T &= 1561.1 \\cr T &\\approx 1560\\text{ N} \\end{aligned}"
+        "<strong>(a) Find the driving force D:</strong><br><br>Treat the car and caravan as a single combined system. The total mass is $2000\\text{ kg}$, and the total resistance force is $400\\text{ N}$.",
+        "Calculate the component of total weight acting down the slope:\\begin{aligned} \n&W_x \\cr \n&\\quad = m_{\\text{total}} g \\sin 8^\\circ \\cr \n&\\quad = 2000(9.8)\\sin 8^\\circ \\cr \n&\\quad \\approx 2727.8\\text{ N} \n\\end{aligned}",
+        "Apply Newton's Second Law parallel to the inclined plane (taking up the slope as positive):\\begin{aligned} \n&D - R_{\\text{total}} - W_x = m_{\\text{total}} a \\cr \n&D - 400 - 2727.8 = 2000(0.4) \\cr \n&D - 3127.8 = 800 \\cr \n&D = 3927.8 \\cr \n&D \\approx 3930\\text{ N} \n\\end{aligned}",
+        "<strong>(b) Find the tension T:</strong><br><br>Consider the caravan alone. Calculate the component of its weight acting down the slope:\\begin{aligned} \n&W_{\\text{caravan}} \\cr \n&\\quad = 800(9.8)\\sin 8^\\circ \\cr \n&\\quad \\approx 1091.1\\text{ N} \n\\end{aligned}",
+        "Apply $F = ma$ to the caravan directed up the slope:\\begin{aligned} \n&T - R_{\\text{caravan}} - W_{\\text{caravan}} \\cr &\\quad = m_{\\text{caravan}} a \\cr \n&T - 150 - 1091.1 = 800(0.4) \\cr \n&T - 1241.1 = 320 \\cr \n&T = 1561.1 \\cr \n&T \\approx 1560\\text{ N} \n\\end{aligned}",
+        "Final Answer: $$D = 3930\\text{ N};$$<br>$$T = 1560\\text{ N}$$"
     ],
     "pi_options": [
         {
-            "ans": "$$D = 1200\\text{ N}; \\quad T = 320\\text{ N}$$",
+            "ans": "$$D = 1200\\text{ N};$$<br>$$T = 320\\text{ N}$$",
             "feedback": "This error occurs if you completely ignored gravity in both steps, forgetting that the vehicles are travelling up an inclined plane. You must resolve the weight component parallel to the slope."
         },
         {
-            "ans": "$$D = 3530\\text{ N}; \\quad T = 1410\\text{ N}$$",
-            "feedback": "This represents a calculation slip where you used an incorrect trig function (such as $\\cos{ 8^\\circ }$ instead of $\\sin{ 8^\\circ }$) when resolving the weight components parallel to the slope."
+            "ans": "$$D = 3530\\text{ N};$$<br>$$T = 1410\\text{ N}$$",
+            "feedback": "This represents a calculation slip where you used an incorrect trigonometric function (such as $\\cos 8^\\circ$ instead of $\\sin 8^\\circ$) when resolving the weight components parallel to the slope."
         },
         {
-            "ans": "$$D = 3930\\text{ N}; \\quad T = 470\\text{ N}$$",
+            "ans": "$$D = 3930\\text{ N};$$<br>$$T = 470\\text{ N}$$",
             "feedback": "This indicates an error in part (b). You likely omitted the caravan's weight component when resolving the caravan's forces. Both resistance and gravity oppose the upward tension force."
         }
     ],
@@ -1532,21 +1534,22 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A lift of mass $500\\text{ kg}$ contains a passenger of mass $80\\text{ kg}$. The lift is pulled vertically upwards by a light, inextensible cable. The lift accelerates uniformly upwards at a rate of $1.2\\text{ m s}^{-2}$.<br><br><img src='images/Mechanics_pngs/012038.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><strong>(a)</strong> Find the tension in the cable.<br><br><strong>(b)</strong> Find the normal reaction force exerted by the floor of the lift on the passenger.",
     "steps": [
-        "<strong>(a) Find the tension in the cable:</strong><br>Treat the lift and passenger as a single combined system of total mass $500 + 80 = 580\\text{ kg}$. Apply Newton's Second Law vertically upwards:<br><br>\\begin{aligned} T - m_{\\text{total}} g &= m_{\\text{total}} a \\cr T - 580(9.8) &= 580(1.2) \\cr T - 5684 &= 696 \\cr T &= 6380\\text{ N} \\end{aligned}",
-        "<strong>(b) Find the normal reaction R:</strong><br>Consider only the passenger of mass $80\\text{ kg}$ inside the lift. The vertical forces acting on the passenger are: <br>1. Normal reaction $R$ pointing upwards from the floor.<br>2. Weight of the passenger ($80g$) pointing downwards.",
-        "Apply Newton's Second Law to the passenger vertically upwards:<br><br>\\begin{aligned} R - m_{\\text{pass}} g &= m_{\\text{pass}} a \\cr R - 80(9.8) &= 80(1.2) \\cr R - 784 &= 96 \\cr R &= 880\\text{ N} \\end{aligned}"
+        "<strong>(a) Find the tension in the cable:</strong><br><br>Treat the lift and passenger as a combined system of total mass $580\\text{ kg}$. Apply Newton's Second Law vertically upwards:\\begin{aligned} \n&T - m_{\\text{total}} g = m_{\\text{total}} a \\cr \n&T - 580(9.8) = 580(1.2) \\cr \n&T - 5684 = 696 \\cr \n&T = 6380\\text{ N} \n\\end{aligned}",
+        "<strong>(b) Find the normal reaction R:</strong><br><br>Consider only the passenger of mass $80\\text{ kg}$ inside the lift. The vertical forces acting on the passenger are:<br><br>• Normal reaction $R$ pointing upwards from the floor.<br><br>• Weight of the passenger ($80g$) pointing downwards.",
+        "Apply Newton's Second Law to the passenger vertically upwards:\\begin{aligned} \n&R - m_{\\text{pass}} g = m_{\\text{pass}} a \\cr \n&R - 80(9.8) = 80(1.2) \\cr \n&R - 784 = 96 \\cr \n&R = 880\\text{ N} \n\\end{aligned}",
+        "Final Answer: $$T = 6380\\text{ N};$$<br>$$R = 880\\text{ N}$$"
     ],
     "pi_options": [
         {
-            "ans": "$$T = 5684\\text{ N}; \\quad R = 784\\text{ N}$$",
+            "ans": "$$T = 5684\\text{ N};$$<br>$$R = 784\\text{ N}$$",
             "feedback": "This represents a static error. You likely assumed the lift was stationary (or moving at constant speed), setting tension and reaction equal to the weights. Since it is accelerating, the forces must exceed the weights."
         },
         {
-            "ans": "$$T = 696\\text{ N}; \\quad R = 96\\text{ N}$$",
+            "ans": "$$T = 696\\text{ N};$$<br>$$R = 96\\text{ N}$$",
             "feedback": "This indicates an algebraic error where you set the upward forces equal to $ma$ alone, completely omitting the gravitational weights ($mg$) from the equations."
         },
         {
-            "ans": "$$T = 6380\\text{ N}; \\quad R = 688\\text{ N}$$",
+            "ans": "$$T = 6380\\text{ N};$$<br>$$R = 688\\text{ N}$$",
             "feedback": "This is a sign error in part (b). You likely resolved the passenger's equation as $R = m(g - a)$ instead of $R = m(g + a)$. Accelerating upwards increases the normal reaction force."
         }
     ],
@@ -1569,23 +1572,23 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "Two blocks, of mass $5\\text{ kg}$ and $3\\text{ kg}$, are connected by a light, inextensible string passing over a smooth, fixed pulley suspended from a ceiling. The blocks are released from rest.<br><br><img src='images/Mechanics_pngs/012039.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><strong>(a)</strong> Find the acceleration, in $\\text{m s}^{-2}$, of the blocks.<br><br><strong>(b)</strong> Find the tension in the string.<br><br><strong>(c)</strong> Find the force exerted by the string on the pulley.",
     "steps": [
-        "<strong>(a) Find the acceleration:</strong><br>Let $a$ be the acceleration of the system. The heavier $5\\text{ kg}$ mass moves downwards, and the lighter $3\\text{ kg}$ mass moves upwards with the same acceleration. Write down the equation of motion for each block:",
-        "1. For the $5\\text{ kg}$ block (moving downwards):<br>$$5g - T = 5a$$<br>2. For the $3\\text{ kg}$ block (moving upwards):<br>$$T - 3g = 3a$$",
-        "Add these two equations together to eliminate $T$ and solve for $a$:<br><br>\\begin{aligned} 5g - 3g &= 8a \\cr 2g &= 8a \\cr a &= \\dfrac{ 2(9.8) }{ 8 } \\cr a &= 2.45\\text{ m s}^{ -2 } \\end{aligned}",
-        "<strong>(b) Find the tension T:</strong><br>Substitute $a = 2.45$ into the equation of motion for the $3\\text{ kg}$ block:<br><br>\\begin{aligned} T - 3g &= 3a \\cr T - 3(9.8) &= 3(2.45) \\cr T - 29.4 &= 7.35 \\cr T &= 36.75\\text{ N} \\end{aligned}",
-        "<strong>(c) Find the force exerted on the pulley:</strong><br>The string hangs down on both sides of the pulley, so there are two upward tension forces ($T$) pulling downwards on the pulley wheel. The resultant force $F$ exerted by the string on the pulley is:<br><br>\\begin{aligned} F &= 2T \\cr &= 2(36.75) \\cr &= 73.5\\text{ N} \\end{aligned}"
+        "<strong>(a) Find the acceleration:</strong><br><br>Let $a$ be the acceleration of the system. The heavier $5\\text{ kg}$ mass accelerates downwards and the lighter $3\\text{ kg}$ mass accelerates upwards. Set up the equation of motion for each block:<br><br>• For the $5\\text{ kg}$ block (downwards):<br>$$5g - T = 5a$$<br><br>• For the $3\\text{ kg}$ block (upwards):<br>$$T - 3g = 3a$$",
+        "Add the two equations together to eliminate $T$ and solve for $a$:\\begin{aligned} \n&5g - 3g = 8a \\cr \n&2g = 8a \\cr \n&a = \\dfrac{2(9.8)}{8} \\cr \n&a = 2.45\\text{ m s}^{-2} \n\\end{aligned}",
+        "<strong>(b) Find the tension T:</strong><br><br>Substitute $a = 2.45\\text{ m s}^{-2}$ into the equation of motion for the $3\\text{ kg}$ block:\\begin{aligned} \n&T - 3g = 3a \\cr \n&T - 3(9.8) = 3(2.45) \\cr \n&T - 29.4 = 7.35 \\cr \n&T = 36.75\\text{ N} \n\\end{aligned}",
+        "<strong>(c) Find the force exerted on the pulley:</strong><br><br>The string hangs down on both sides of the pulley wheel, pulling downwards with tension $T$ on each side. The total downward force $F$ exerted on the pulley is:\\begin{aligned} \n&F \\cr \n&\\quad = 2T \\cr \n&\\quad = 2(36.75) \\cr \n&\\quad = 73.5\\text{ N} \n\\end{aligned}",
+        "Final Answer: $$a = 2.45\\text{ m s}^{-2};$$<br>$$T = 36.75\\text{ N};$$<br>$$F = 73.5\\text{ N}$$"
     ],
     "pi_options": [
         {
-            "ans": "$$a = 2.45\\text{ m s}^{ -2 }; \\quad T = 36.75\\text{ N}; \\quad F = 36.75\\text{ N}$$",
+            "ans": "$$a = 2.45\\text{ m s}^{-2};$$<br>$$T = 36.75\\text{ N};$$<br>$$F = 36.75\\text{ N}$$",
             "feedback": "This is a common error in part (c). The string pulls downwards on the pulley from both sides, so the total force exerted on the pulley is $2T$, not $T$."
         },
         {
-            "ans": "$$a = 9.80\\text{ m s}^{ -2 }; \\quad T = 29.40\\text{ N}; \\quad F = 58.80\\text{ N}$$",
+            "ans": "$$a = 9.80\\text{ m s}^{-2};$$<br>$$T = 29.40\\text{ N};$$<br>$$F = 58.80\\text{ N}$$",
             "feedback": "This represents a major error where the tension $T$ was neglected during acceleration calculations, assuming the heavier mass falls under pure gravity."
         },
         {
-            "ans": "$$a = 2.45\\text{ m s}^{ -2 }; \\quad T = 29.40\\text{ N}; \\quad F = 58.80\\text{ N}$$",
+            "ans": "$$a = 2.45\\text{ m s}^{-2};$$<br>$$T = 29.40\\text{ N};$$<br>$$F = 58.80\\text{ N}$$",
             "feedback": "This represents a calculation slip in part (b) where you equated the tension $T$ to the static weight of the $3\\text{ kg}$ block, ignoring its upward acceleration."
         }
     ],
@@ -1608,24 +1611,25 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A block $A$ of mass $8\\text{ kg}$ is held on a rough plane inclined at $30^\\circ$ to the horizontal. The coefficient of friction between block $A$ and the plane is $0.25$.<br><br>Block $A$ is connected by a light, inextensible string passing parallel to the line of greatest slope over a smooth pulley at the top of the incline to a hanging block $B$ of mass $M\\text{ kg}$.<br><br>Given that the system is in limiting equilibrium and block $A$ is on the point of sliding <strong>up</strong> the plane:<br><br><img src='images/Mechanics_pngs/012040.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><strong>(a)</strong> Find the normal reaction force, in Newtons to three significant figures, acting on block $A$.<br><br><strong>(b)</strong> Find the value of $M$, giving your answer to three significant figures.",
     "steps": [
-        "<strong>(a) Find the normal reaction force acting on A:</strong><br>Resolve the forces acting on block $A$ perpendicular to the inclined plane:<br><br>\\begin{aligned} R_A &= 8g\\cos{ 30^\\circ } \\cr &= 78.4 \\times 0.86603 \\cr &\\approx 67.9\\text{ N} \\end{aligned}",
-        "<strong>(b) Find the value of M:</strong><br>First, calculate the maximum possible frictional force, $F_{\\text{max}}$, acting on block $A$:<br><br>$$F_{\\text{max}} = \\mu R_A = 0.25 \\times 67.896 = 16.974\\text{ N}$$",
-        "Because block $A$ is on the point of sliding <strong>up</strong> the plane, the frictional force opposes this motion and acts <strong>down</strong> the plane. Therefore, both friction ($F_{\\text{max}}$) and the component of weight along the slope ($8g\\sin{ 30^\\circ }$) pull block $A$ down the incline.",
-        "Apply the equilibrium condition to block $A$ parallel to the slope (tension $T$ pulling up must balance all opposing forces pulling down):<br><br>\\begin{aligned} T &= F_{\\text{max}} + 8g\\sin{ 30^\\circ } \\cr T &= 16.974 + 8(9.8)\\sin{ 30^\\circ } \\cr T &= 16.974 + 39.200 \\cr T &= 56.174\\text{ N} \\end{aligned}",
-        "Next, analyze block $B$. Since block $B$ is hanging in equilibrium, the tension $T$ in the string must be exactly balanced by its weight ($Mg$):<br><br>$$T = Mg \\implies 56.174 = M(9.8)$$",
-        "Solve for $M$:<br><br>\\begin{aligned} M &= \\dfrac{ 56.174 }{ 9.8 } \\cr M &\\approx 5.73\\text{ kg} \\end{aligned}"
+        "<strong>(a) Find the normal reaction force acting on A:</strong><br><br>Resolve the forces acting on block $A$ perpendicular to the inclined plane:\\begin{aligned} \n&R_A \\cr \n&\\quad = 8g\\cos 30^\\circ \\cr \n&\\quad = 78.4 \\times 0.86603 \\cr \n&\\quad \\approx 67.9\\text{ N} \n\\end{aligned}",
+        "<strong>(b) Find the value of M:</strong><br><br>Calculate the maximum frictional force, $F_{\\text{max}}$, acting on block $A$:\\begin{aligned} \n&F_{\\text{max}} \\cr \n&\\quad = \\mu R_A \\cr \n&\\quad = 0.25 \\times 67.896 \\cr \n&\\quad = 16.974\\text{ N} \n\\end{aligned}",
+        "Because block $A$ is on the point of sliding <strong>up</strong> the plane, friction opposes this motion and acts <strong>down</strong> the plane. Therefore, both friction ($F_{\\text{max}}$) and the component of weight along the slope ($8g\\sin 30^\\circ$) pull block $A$ down the incline.",
+        "Apply equilibrium to block $A$ parallel to the slope:\\begin{aligned} \n&T \\cr \n&\\quad = F_{\\text{max}} + 8g\\sin 30^\\circ \\cr \n&\\quad = 16.974 + 8(9.8)\\sin 30^\\circ \\cr \n&\\quad = 16.974 + 39.200 \\cr \n&\\quad = 56.174\\text{ N} \n\\end{aligned}",
+        "Analyze hanging block $B$. In static equilibrium, the tension $T$ is balanced by the weight ($Mg$):\\begin{aligned} \n&T = Mg \\cr \n&56.174 = M(9.8) \n\\end{aligned}",
+        "Solve for $M$:\\begin{aligned} \n&M = \\dfrac{56.174}{9.8} \\cr \n&M \\approx 5.73 \n\\end{aligned}",
+        "Final Answer: $$R_A = 67.9\\text{ N};$$<br>$$M = 5.73$$"
     ],
     "pi_options": [
         {
-            "ans": "$$R_A = 67.9\\text{ N}; \\quad M = 2.27$$",
-            "feedback": "This error occurs if you assumed block A was on the point of sliding down the plane. If it were sliding down, the friction would act up the plane ($T = 39.200 - 16.974 = 22.226\\text{ N}$), but because it is sliding up, friction acts down the plane."
+            "ans": "$$R_A = 67.9\\text{ N};$$<br>$$M = 2.27$$",
+            "feedback": "This error occurs if you assumed block A was on the point of sliding down the plane. If it were sliding down, friction would act up the plane ($T = 39.200 - 16.974$, giving $T = 22.226\\text{ N}$), but because it is sliding up, friction acts down the plane."
         },
         {
-            "ans": "$$R_A = 78.4\\text{ N}; \\quad M = 4.00$$",
+            "ans": "$$R_A = 78.4\\text{ N};$$<br>$$M = 4.00$$",
             "feedback": "This is a non-inclined error. It occurs if you forgot to resolve forces parallel and perpendicular to the inclined plane, treating the table surface as if it were completely flat."
         },
         {
-            "ans": "$$R_A = 67.9\\text{ N}; \\quad M = 4.00$$",
+            "ans": "$$R_A = 67.9\\text{ N};$$<br>$$M = 4.00$$",
             "feedback": "This represents a calculation slip where the frictional force component was completely omitted from the tension equation in part (b)."
         }
     ],
