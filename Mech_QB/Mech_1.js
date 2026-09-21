@@ -826,28 +826,29 @@ window.ALEVEL_QUESTIONS = [
         "Modelling Assumptions"
     ],
     "img": false,
-    "question": "A logistics company is road-testing two delivery vans, $X$ and $Y$, along a straight, horizontal track. Both vans start from rest. The acceleration in $\\text{m s}^{-2}$ of each van is modelled as a function of time, $t$ seconds, after the test begins:<br><br>$$\\text{Acceleration of } X = 0.108t^2$$$$\\text{Acceleration of } Y = 0.015t^3$$<br><strong>(a)</strong> Find the time taken for van $X$ to travel $150\\text{ metres}$ from its starting position. Give your answer to four significant figures.<br><br><strong>(b)</strong> The company decides to select the van which travels $150\\text{ metres}$ in the shortest time. Determine which van should be selected.<br><br><strong>(c)</strong> The models assume that both vans start moving immediately when $t = 0$. In light of this, explain why the company may, in reality, make the wrong decision.",
+    "question": "A logistics company is road-testing two delivery vans, $X$ and $Y$, along a straight, horizontal track. Both vans start from rest. The acceleration in $\\text{m s}^{-2}$ of each van is modelled as a function of time, $t$ seconds, after the test begins:\\begin{aligned} &\\text{Acceleration of } X = 0.108t^2 \\cr &\\text{Acceleration of } Y = 0.015t^3 \\end{aligned}<strong>(a)</strong> Find the time taken for van $X$ to travel $150\\text{ metres}$ from its starting position. Give your answer to four significant figures.<br><br><strong>(b)</strong> The company decides to select the van which travels $150\\text{ metres}$ in the shortest time. Determine which van should be selected.<br><br><strong>(c)</strong> The models assume that both vans start moving immediately when $t = 0$. In light of this, explain why the company may, in reality, make the wrong decision.",
     "steps": [
-        "To find the displacement equation for van $X$, we must integrate its acceleration function $a_X = 0.108t^2$ twice with respect to time $t$.",
-        "First, integrate to find the velocity function $v_X(t)$. Since van $X$ starts from rest, the constant of integration is $0$:<br><br>$$v_X = \\int 0.108t^2 \\; \\mathrm{d}t = 0.036t^3$$",
-        "Next, integrate the velocity function to find the displacement function $s_X(t)$. Since it starts from the origin, the constant of integration is $0$:<br><br>$$s_X = \\int 0.036t^3 \\; \\mathrm{d}t = 0.009t^4$$",
-        "For part <strong>(a)</strong>, find the time taken to travel $150\\text{ metres}$ by setting $s_X = 150$ and solving for $t$:<br><br>\\begin{aligned} 0.009t^4 &= 150 \\cr t^4 &= \\dfrac{ 150 }{ 0.009 } \\cr t^4 &= 16666.67 \\cr t &= (16666.67)^{ \\frac{ 1 }{ 4 } } \\cr t &\\approx 11.36\\text{ s} \\end{aligned}",
-        "For part <strong>(b)</strong>, repeat this double-integration process for van $Y$, starting with its acceleration function $a_Y = 0.015t^3$:<br><br>\\begin{aligned} v_Y &= \\int 0.015t^3 \\; \\mathrm{d}t = 0.00375t^4 \\cr s_Y &= \\int 0.00375t^4 \\; \\mathrm{d}t = 0.00075t^5 \\end{aligned}",
-        "Find the time taken for van $Y$ to travel $150\\text{ metres}$ by setting $s_Y = 150$:<br><br>\\begin{aligned} 0.00075t^5 &= 150 \\cr t^5 &= \\dfrac{ 150 }{ 0.00075 } \\cr t^5 &= 200000 \\cr t &= (200000)^{ \\frac{ 1 }{ 5 } } \\cr t &\\approx 13.51\\text{ s} \\end{aligned}",
+        "To find the displacement equation for van $X$, integrate its acceleration function $a_X = 0.108t^2$ twice with respect to time $t$.",
+        "First, integrate to find the velocity function $v_X(t)$. Since van $X$ starts from rest, the constant of integration is $0$:\\begin{aligned} &v_X = \\int 0.108t^2 \\text{d}t \\cr &v_X = 0.036t^3 \\end{aligned}",
+        "Next, integrate the velocity function to find the displacement function $s_X(t)$. Since it starts from the origin, the constant of integration is $0$:\\begin{aligned} &s_X = \\int 0.036t^3 \\text{d}t \\cr &s_X = 0.009t^4 \\end{aligned}",
+        "For part <strong>(a)</strong>, find the time taken to travel $150\\text{ metres}$ by setting $s_X = 150$ and solving for $t$:\\begin{aligned} &0.009t^4 = 150 \\cr &t^4 = \\dfrac{ 150 }{ 0.009 } \\cr &t^4 = 16666.67 \\cr &t = (16666.67)^{ 0.25 } \\cr &t \\approx 11.36\\text{ s} \\end{aligned}",
+        "For part <strong>(b)</strong>, repeat this double-integration process for van $Y$, starting with its acceleration function $a_Y = 0.015t^3$:\\begin{aligned} &v_Y = \\int 0.015t^3 \\text{d}t \\cr &v_Y = 0.00375t^4 \\cr &s_Y = \\int 0.00375t^4 \\text{d}t \\cr &s_Y = 0.00075t^5 \\end{aligned}",
+        "Find the time taken for van $Y$ to travel $150\\text{ metres}$ by setting $s_Y = 150$:\\begin{aligned} &0.00075t^5 = 150 \\cr &t^5 = \\dfrac{ 150 }{ 0.00075 } \\cr &t^5 = 200000 \\cr &t = (200000)^{ 0.2 } \\cr &t \\approx 13.51\\text{ s} \\end{aligned}",
         "Compare the two times: van $X$ takes $11.36\\text{ s}$ and van $Y$ takes $13.51\\text{ s}$. Since $11.36 < 13.51$, van $X$ completes the distance in the shortest time and should be selected.",
-        "<strong>(c) Real-world Modelling Limitations:</strong><br>In reality, there will be human reaction times, engine lag, or tyre wheel spin before the vans start moving. Because the theoretical time difference between the two vans is relatively small, any minor start delay by the driver of van $X$ could mean that van $Y$ actually completes the $150\\text{ m}$ journey faster in practice, leading to the wrong purchasing decision."
+        "<strong>Part (c):</strong> In reality, human reaction times, engine lag, or tyre wheel spin will occur before the vans start moving. Because the theoretical time difference between the two vans is relatively small, any minor start delay by the driver of van $X$ could mean that van $Y$ completes the $150\\text{ m}$ journey faster in practice, leading to the wrong decision.",
+        "Final Answer: <strong>(a)</strong> $11.36\\text{ s}$<br><strong>(b)</strong> Select Van X<br><strong>(c)</strong> Driver reaction times or wheel spin could reverse the outcome."
     ],
     "pi_options": [
         {
-            "ans": "$$t_X = 11.36\\text{ s}; \\quad t_Y = 13.51\\text{ s};$$<br>$$\\text{Select Y. Reality: Driver reaction times or wheel spin at the start could reverse the results.}$$",
+            "ans": "<strong>(a)</strong> $11.36\\text{ s}$<br><strong>(b)</strong> Select Van Y<br><strong>(c)</strong> Driver reaction times or wheel spin could reverse the outcome.",
             "feedback": "This error occurs if you calculated the times correctly but selected the slower van ($Y$) instead of the faster van ($X$). Slower vehicles are not selected based on performance criteria."
         },
         {
-            "ans": "$$t_X = 12.45\\text{ s}; \\quad t_Y = 14.12\\text{ s};$$ <br>$$\\text{Select X. <br>Reality: The mathematical models are completely infallible in practice.}$$",
+            "ans": "<strong>(a)</strong> $12.45\\text{ s}$<br><strong>(b)</strong> Select Van X<br><strong>(c)</strong> The mathematical models are completely infallible in practice.",
             "feedback": "This represents an integration coefficient slip in the first steps. Additionally, stating that mathematical models are infallible ignores real-world physical factors like reaction times or tyre wheel spin."
         },
         {
-            "ans": "$$t_X = 9.85\\text{ s}; \\quad t_Y = 11.20\\text{ s};$$ <br>$$\\text{Select X. <br>Reality: Human reaction times have no impact on overall travel times.}$$",
+            "ans": "<strong>(a)</strong> $9.85\\text{ s}$<br><strong>(b)</strong> Select Van X<br><strong>(c)</strong> Human reaction times have no impact on overall travel times.",
             "feedback": "This indicates an algebraic error when evaluating the roots in part (a). Human reaction times or start delays at $t = 0$ can have a highly significant impact on short-distance races."
         }
     ],
@@ -868,26 +869,27 @@ window.ALEVEL_QUESTIONS = [
         "Modelling Assumptions"
     ],
     "img": false,
-    "question": "A model rocket is projected vertically upwards from rest on horizontal ground. For the first $20\\text{ seconds}$ of its flight, before its engines shut down, its acceleration, $a\\text{ m s}^{-2}$, at time $t$ seconds is modelled by:<br><br>$$a = 0.6t - 0.03t^2 \\quad (0 \\le t \\le 20)$$<br><strong>(a)</strong> Find the maximum velocity reached by the rocket during the first $20\\text{ seconds}$ of its flight.<br><br><strong>(b)</strong> Find the height of the rocket above the ground at the instant its engines shut down (at $t = 20$).<br><br><strong>(c)</strong> State one physical factor that has been ignored in this model of the rocket's flight.",
+    "question": "A model rocket is projected vertically upwards from rest on horizontal ground. For the first $20\\text{ seconds}$ of its flight, before its engines shut down, its acceleration, $a\\text{ m s}^{-2}$, at time $t$ seconds is modelled by:$$a = 0.6t - 0.03t^2 \\quad (0 \\le t \\le 20)$$<strong>(a)</strong> Find the maximum velocity reached by the rocket during the first $20\\text{ seconds}$ of its flight.<br><br><strong>(b)</strong> Find the height of the rocket above the ground at the instant its engines shut down (at $t = 20$).<br><br><strong>(c)</strong> State one physical factor that has been ignored in this model of the rocket's flight.",
     "steps": [
-        "For part <strong>(a)</strong>, find the velocity function $v(t)$ by integrating the acceleration function $a = 0.6t - 0.03t^2$ with respect to $t$. Since the rocket starts from rest, the constant of integration is $0$:<br><br>$$v = \\int (0.6t - 0.03t^2) \\; \\mathrm{d}t = 0.3t^2 - 0.01t^3$$",
-        "Maximum velocity occurs at a stationary point of $v(t)$, which is when its derivative (acceleration) is equal to zero ($a = 0$):<br><br>\\begin{aligned} 0.6t - 0.03t^2 &= 0 \\cr 0.03t(20 - t) &= 0 \\end{aligned}<br>Since $t > 0$ during the flight, this occurs at $t = 20\\text{ seconds}$ (the instant of engine shutdown).",
-        "Substitute $t = 20$ into the velocity function to find the maximum velocity reached:<br><br>\\begin{aligned} v_{\\text{max}} &= 0.3(20^2) - 0.01(20^3) \\cr &= 0.3(400) - 0.01(8000) \\cr &= 120 - 80 \\cr &= 40\\text{ m s}^{ -1 } \\end{aligned}",
-        "For part <strong>(b)</strong>, integrate the velocity function to find the displacement (height) function $s(t)$. Since the rocket starts from the ground, the constant of integration is $0$:<br><br>$$s = \\int (0.3t^2 - 0.01t^3) \\; \\mathrm{d}t = 0.1t^3 - 0.0025t^4$$",
-        "Substitute $t = 20$ into the displacement function to find the height when the engines shut down:<br><br>\\begin{aligned} s(20) &= 0.1(20^3) - 0.0025(20^4) \\cr &= 0.1(8000) - 0.0025(160000) \\cr &= 800 - 400 \\cr &= 400\\text{ m} \\end{aligned}",
-        "<strong>(c) Modelling Assumptions:</strong><br>The mathematical model for the rocket's acceleration ignores physical factors such as air resistance (drag) or the changing mass of the rocket as it burns fuel. In reality, air resistance would oppose the motion, reducing the maximum velocity and the maximum height reached."
+        "For part <strong>(a)</strong>, find the velocity function $v(t)$ by integrating the acceleration function $a = 0.6t - 0.03t^2$ with respect to $t$. Since the rocket starts from rest, the constant of integration is $0$:\\begin{aligned} &v = \\int (0.6t - 0.03t^2) \\text{d}t \\cr &v = 0.3t^2 - 0.01t^3 \\end{aligned}",
+        "Maximum velocity occurs at a stationary point of $v(t)$, which is when acceleration is zero ($a = 0$):\\begin{aligned} &0.6t - 0.03t^2 = 0 \\cr &0.03t(20 - t) = 0 \\end{aligned}Since $t > 0$ during the flight, this occurs at $t = 20\\text{ seconds}$ (the instant of engine shutdown).",
+        "Substitute $t = 20$ into the velocity function to find the maximum velocity reached:\\begin{aligned} &v_{\\text{max}} \\cr &\\quad = 0.3(20^2) - 0.01(20^3) \\cr &\\quad = 0.3(400) - 0.01(8000) \\cr &\\quad = 120 - 80 \\cr &\\quad = 40\\text{ m s}^{ -1 } \\end{aligned}",
+        "For part <strong>(b)</strong>, integrate the velocity function to find the displacement function $s(t)$. Since the rocket starts from the ground, the constant of integration is $0$:\\begin{aligned} &s = \\int (0.3t^2 - 0.01t^3) \\text{d}t \\cr &s = 0.1t^3 - 0.0025t^4 \\end{aligned}",
+        "Substitute $t = 20$ into the displacement function to find the height when the engines shut down:\\begin{aligned} &s(20) \\cr &\\quad = 0.1(20^3) - 0.0025(20^4) \\cr &\\quad = 0.1(8000) - 0.0025(160000) \\cr &\\quad = 800 - 400 \\cr &\\quad = 400\\text{ m} \\end{aligned}",
+        "<strong>Part (c):</strong> The mathematical model for the rocket's acceleration ignores physical factors such as air resistance (drag) or the changing mass of the rocket as it burns fuel. In reality, air resistance would oppose the motion, reducing the maximum velocity and height reached.",
+        "Final Answer: <strong>(a)</strong> $v_{\\text{max}} = 40\\text{ m s}^{-1}$<br><strong>(b)</strong> $\\text{Height} = 400\\text{ m}$<br><strong>(c)</strong> Air resistance (drag)"
     ],
     "pi_options": [
         {
-            "ans": "$$v_{\\text{max}} = 30\\text{ m s}^{ -1 }; \\quad \\text{height} = 400\\text{ m};$$ <br>$$\\text{Ignored factor: Air resistance (drag)}$$",
+            "ans": "<strong>(a)</strong> $v_{\\text{max}} = 30\\text{ m s}^{-1}$<br><strong>(b)</strong> $\\text{Height} = 400\\text{ m}$<br><strong>(c)</strong> Air resistance (drag)",
             "feedback": "This error occurs if you made an arithmetic slip when evaluating the maximum velocity in part (a), even though your height integration in (b) is correct."
         },
         {
-            "ans": "$$v_{\\text{max}} = 40\\text{ m s}^{ -1 }; \\quad \\text{height} = 320\\text{ m};$$ <br>$$\\text{Ignored factor: Rocket fuel mass loss}$$",
+            "ans": "<strong>(a)</strong> $v_{\\text{max}} = 40\\text{ m s}^{-1}$<br><strong>(b)</strong> $\\text{Height} = 320\\text{ m}$<br><strong>(c)</strong> Rocket fuel mass loss",
             "feedback": "This indicates an integration slip in part (b). Ensure you divide the cubic term coefficient $-0.01$ by $4$ to get the correct coefficient of $-0.0025$ for the $t^4$ term."
         },
         {
-            "ans": "$$v_{\\text{max}} = 20\\text{ m s}^{ -1 }; \\quad \\text{height} = 200\\text{ m};$$ <br>$$\\text{Ignored factor: Horizontal wind forces}$$",
+            "ans": "<strong>(a)</strong> $v_{\\text{max}} = 20\\text{ m s}^{-1}$<br><strong>(b)</strong> $\\text{Height} = 200\\text{ m}$<br><strong>(c)</strong> Horizontal wind forces",
             "feedback": "This represents a dual-calculation error. Re-verify your integration steps for both velocity and displacement, and check your substitution values at $t = 20$."
         }
     ],
@@ -908,27 +910,28 @@ window.ALEVEL_QUESTIONS = [
         "Calculus"
     ],
     "img": false,
-    "question": "A particle moves in a straight line. At time $t$ seconds, its displacement, $s$ metres, from a fixed origin $O$ is given by:<br><br>$$s = 2t^3 - 15t^2 + 24t + 10 \\quad (t \\ge 0)$$<br><strong>(a)</strong> Find the velocity of the particle at the instant when its acceleration is zero.<br><br><strong>(b)</strong> Find the range of values of $t$ for which the velocity of the particle is negative (moving back towards $O$).",
+    "question": "A particle moves in a straight line. At time $t$ seconds, its displacement, $s$ metres, from a fixed origin $O$ is given by:$$s = 2t^3 - 15t^2 + 24t + 10 \\quad (t \\ge 0)$$<strong>(a)</strong> Find the velocity of the particle at the instant when its acceleration is zero.<br><br><strong>(b)</strong> Find the range of values of $t$ for which the velocity of the particle is negative (moving back towards $O$).",
     "steps": [
-        "For part <strong>(a)</strong>, find the velocity function $v(t)$ by differentiating the displacement function $s(t) = 2t^3 - 15t^2 + 24t + 10$ with respect to $t$:<br><br>$$v = \\dfrac{  \\mathrm{d}s }{  \\mathrm{d}t } = 6t^2 - 30t + 24$$",
-        "Next, find the acceleration function $a(t)$ by differentiating the velocity function with respect to $t$:<br><br>$$a = \\dfrac{  \\mathrm{d}v }{  \\mathrm{d}t } = 12t - 30$$",
-        "Find when the acceleration is zero by setting $a(t) = 0$:<br><br>\\begin{aligned} 12t - 30 &= 0 \\cr t &= 2.5\\text{ s} \\end{aligned}",
-        "Substitute $t = 2.5$ into the velocity function to find the velocity at this instant:<br><br>\\begin{aligned} v(2.5) &= 6(2.5^2) - 30(2.5) + 24 \\cr &= 6(6.25) - 75 + 24 \\cr &= 37.5 - 75 + 24 \\cr &= -13.5\\text{ m s}^{ -1 } \\end{aligned}",
-        "For part <strong>(b)</strong>, the particle's velocity is negative when $v(t) < 0$. Set up the quadratic inequality:<br><br>$$6t^2 - 30t + 24 < 0$$",
-        "Divide the inequality by $6$ and factorise the quadratic expression to find the critical values:<br><br>\\begin{aligned} t^2 - 5t + 4 &< 0 \\cr (t - 1)(t - 4) &< 0 \\end{aligned}<br>The critical values are $t = 1$ and $t = 4$.",
-        "Since the inequality is less than zero, the velocity is negative between the critical values, yielding the range:<br><br>$$1 < t < 4$$"
+        "For part <strong>(a)</strong>, find the velocity function $v(t)$ by differentiating the displacement function $s(t)$ with respect to $t$:\\begin{aligned} &v = \\dfrac{ \\text{d}s }{ \\text{d}t } \\cr &v = 6t^2 - 30t + 24 \\end{aligned}",
+        "Next, find the acceleration function $a(t)$ by differentiating the velocity function with respect to $t$:\\begin{aligned} &a = \\dfrac{ \\text{d}v }{ \\text{d}t } \\cr &a = 12t - 30 \\end{aligned}",
+        "Find when the acceleration is zero by setting $a(t) = 0$:\\begin{aligned} &12t - 30 = 0 \\cr &12t = 30 \\cr &t = 2.5\\text{ s} \\end{aligned}",
+        "Substitute $t = 2.5$ into the velocity function to find the velocity at this instant:\\begin{aligned} &v(2.5) \\cr &\\quad = 6(2.5^2) - 30(2.5) + 24 \\cr &\\quad = 6(6.25) - 75 + 24 \\cr &\\quad = 37.5 - 75 + 24 \\cr &\\quad = -13.5\\text{ m s}^{ -1 } \\end{aligned}",
+        "For part <strong>(b)</strong>, the particle's velocity is negative when $v(t) < 0$. Set up the quadratic inequality:$$6t^2 - 30t + 24 < 0$$",
+        "Divide by $6$ and factorise to find the critical values:\\begin{aligned} &t^2 - 5t + 4 < 0 \\cr &(t - 1)(t - 4) < 0 \\end{aligned}The critical values are $t = 1$ and $t = 4$.",
+        "Since the inequality is strictly less than zero, the velocity is negative between the critical values, yielding the range:$$1 < t < 4$$",
+        "Final Answer: <strong>(a)</strong> $v = -13.5\\text{ m s}^{-1}$<br><strong>(b)</strong> $1 < t < 4$"
     ],
     "pi_options": [
         {
-            "ans": "$$v = -13.5\\text{ m s}^{ -1 }; \\quad t < 1 \\text{ or } t > 4$$",
+            "ans": "<strong>(a)</strong> $v = -13.5\\text{ m s}^{-1}$<br><strong>(b)</strong> $t < 1 \\text{ or } t > 4$",
             "feedback": "This error occurs if you inverted the inequality range. For a quadratic expression to be less than zero ($< 0$), the values must lie strictly inside the critical roots ($1 < t < 4$)."
         },
         {
-            "ans": "$$v = 15.0\\text{ m s}^{ -1 }; \\quad 1 < t < 4$$",
+            "ans": "<strong>(a)</strong> $v = 15.0\\text{ m s}^{-1}$<br><strong>(b)</strong> $1 < t < 4$",
             "feedback": "This represents a calculation slip when substituting $t = 2.5$ into the velocity function in part (a)."
         },
         {
-            "ans": "$$v = -13.5\\text{ m s}^{ -1 }; \\quad 1 \\le t \\le 4$$",
+            "ans": "<strong>(a)</strong> $v = -13.5\\text{ m s}^{-1}$<br><strong>(b)</strong> $1 \\le t \\le 4$",
             "feedback": "This is a notation error. Velocity is zero at $t = 1$ and $t = 4$. For it to be strictly negative (moving backwards), you must use strict inequality signs ($<$ rather than $\\le$)."
         }
     ],
@@ -949,27 +952,28 @@ window.ALEVEL_QUESTIONS = [
         "Vectors"
     ],
     "img": false,
-    "question": "A particle $P$ of mass $0.5\\text{ kg}$ moves in a horizontal plane. At time $t$ seconds, its position vector, $\\mathbf{r}$ metres, relative to a fixed origin $O$ is given by:<br><br>$$\\mathbf{r} = (t^3 - 4t^2)\\mathbf{i} + (2t^2 - 6t)\\mathbf{j}$$<br>where $\\mathbf{i}$ and $\\mathbf{j}$ are perpendicular horizontal unit vectors.<br><br><strong>(a)</strong> Find the speed of the particle when $t = 3\\text{ seconds}$.<br><br><strong>(b)</strong> Find the magnitude of the resultant force acting on the particle when $t = 3\\text{ seconds}$.",
+    "question": "A particle $P$ of mass $0.5\\text{ kg}$ moves in a horizontal plane. At time $t$ seconds, its position vector, $\\mathbf{r}$ metres, relative to a fixed origin $O$ is given by:$$\\mathbf{r} = (t^3 - 4t^2)\\mathbf{i} + (2t^2 - 6t)\\mathbf{j}$$where $\\mathbf{i}$ and $\\mathbf{j}$ are perpendicular horizontal unit vectors.<br><br><strong>(a)</strong> Find the speed of the particle when $t = 3\\text{ seconds}$.<br><br><strong>(b)</strong> Find the magnitude of the resultant force acting on the particle when $t = 3\\text{ seconds}$.",
     "steps": [
-        "For part <strong>(a)</strong>, find the velocity vector $\\mathbf{v}$ by differentiating the position vector $\\mathbf{r} = (t^3 - 4t^2)\\mathbf{i} + (2t^2 - 6t)\\mathbf{j}$ with respect to $t$:<br><br>$$\\mathbf{v} = \\dfrac{  \\mathrm{d}\\mathbf{r} }{  \\mathrm{d}t } = (3t^2 - 8t)\\mathbf{i} + (4t - 6)\\mathbf{j}$$",
-        "Substitute $t = 3$ into the velocity vector to find the velocity at that instant:<br><br>\\begin{aligned} \\mathbf{v}(3) &= (3(3^2) - 8(3))\\mathbf{i} + (4(3) - 6)\\mathbf{j} \\cr &= (27 - 24)\\mathbf{i} + (12 - 6)\\mathbf{j} \\cr &= 3\\mathbf{i} + 6\\mathbf{j} \\end{aligned}",
-        "Recall that speed is the magnitude of the velocity vector. Use Pythagoras' theorem to find the magnitude of $\\mathbf{v}(3)$:<br><br>\\begin{aligned} \\text{Speed} &= |\\mathbf{v}(3)| \\cr &= \\sqrt{ 3^2 + 6^2 } \\cr &= \\sqrt{ 45 } \\cr &\\approx 6.71\\text{ m s}^{ -1 } \\end{aligned}",
-        "For part <strong>(b)</strong>, find the acceleration vector $\\mathbf{a}$ by differentiating the velocity vector with respect to $t$:<br><br>$$\\mathbf{a} = \\dfrac{  \\mathrm{d}\\mathbf{v} }{  \\mathrm{d}t } = (6t - 8)\\mathbf{i} + 4\\mathbf{j}$$",
-        "Substitute $t = 3$ into the acceleration vector:<br><br>\\begin{aligned} \\mathbf{a}(3) &= (6(3) - 8)\\mathbf{i} + 4\\mathbf{j} \\cr &= 10\\mathbf{i} + 4\\mathbf{j} \\end{aligned}",
-        "Use Newton's Second Law ($\\mathbf{F} = m\\mathbf{a}$) with mass $m = 0.5\\text{ kg}$ to find the resultant force vector $\\mathbf{F}$:<br><br>\\begin{aligned} \\mathbf{F} &= 0.5(10\\mathbf{i} + 4\\mathbf{j}) \\cr &= 5\\mathbf{i} + 2\\mathbf{j} \\end{aligned}",
-        "Find the magnitude of this resultant force vector:<br><br>\\begin{aligned} |\\mathbf{F}| &= \\sqrt{ 5^2 + 2^2 } \\cr &= \\sqrt{ 29 } \\cr &\\approx 5.39\\text{ N} \\end{aligned}"
+        "For part <strong>(a)</strong>, find the velocity vector $\\mathbf{v}$ by differentiating the position vector with respect to $t$:\\begin{aligned} &\\mathbf{v} = \\dfrac{ \\text{d}\\mathbf{r} }{ \\text{d}t } \\cr &\\mathbf{v} = (3t^2 - 8t)\\mathbf{i} + (4t - 6)\\mathbf{j} \\end{aligned}",
+        "Substitute $t = 3$ into the velocity vector:\\begin{aligned} &\\mathbf{v}(3) \\cr &\\quad = (3(3^2) - 8(3))\\mathbf{i} \\cr &\\qquad + (4(3) - 6)\\mathbf{j} \\cr &\\quad = (27 - 24)\\mathbf{i} + (12 - 6)\\mathbf{j} \\cr &\\quad = 3\\mathbf{i} + 6\\mathbf{j} \\end{aligned}",
+        "Recall that speed is the magnitude of the velocity vector:\\begin{aligned} &\\text{Speed} \\cr &\\quad = |\\mathbf{v}(3)| \\cr &\\quad = \\sqrt{ 3^2 + 6^2 } \\cr &\\quad = \\sqrt{ 45 } \\cr &\\quad \\approx 6.71\\text{ m s}^{ -1 } \\end{aligned}",
+        "For part <strong>(b)</strong>, find the acceleration vector $\\mathbf{a}$ by differentiating the velocity vector with respect to $t$:\\begin{aligned} &\\mathbf{a} = \\dfrac{ \\text{d}\\mathbf{v} }{ \\text{d}t } \\cr &\\mathbf{a} = (6t - 8)\\mathbf{i} + 4\\mathbf{j} \\end{aligned}",
+        "Substitute $t = 3$ into the acceleration vector:\\begin{aligned} &\\mathbf{a}(3) = (6(3) - 8)\\mathbf{i} + 4\\mathbf{j} \\cr &\\mathbf{a}(3) = 10\\mathbf{i} + 4\\mathbf{j} \\end{aligned}",
+        "Use Newton's Second Law ($\\mathbf{F} = m\\mathbf{a}$) with mass $m = 0.5\\text{ kg}$ to find the resultant force vector $\\mathbf{F}$:\\begin{aligned} &\\mathbf{F} = 0.5(10\\mathbf{i} + 4\\mathbf{j}) \\cr &\\mathbf{F} = 5\\mathbf{i} + 2\\mathbf{j} \\end{aligned}",
+        "Find the magnitude of this resultant force vector:\\begin{aligned} &|\\mathbf{F}| = \\sqrt{ 5^2 + 2^2 } \\cr &|\\mathbf{F}| = \\sqrt{ 29 } \\cr &|\\mathbf{F}| \\approx 5.39\\text{ N} \\end{aligned}",
+        "Final Answer: <strong>(a)</strong> $\\text{Speed} = 6.71\\text{ m s}^{-1}$<br><strong>(b)</strong> $\\text{Force} = 5.39\\text{ N}$"
     ],
     "pi_options": [
         {
-            "ans": "$$\\text{Speed} = 7.81\\text{ m s}^{ -1 }; \\quad \\text{Force} = 5.22\\text{ N}$$",
+            "ans": "<strong>(a)</strong> $\\text{Speed} = 7.81\\text{ m s}^{-1}$<br><strong>(b)</strong> $\\text{Force} = 5.22\\text{ N}$",
             "feedback": "This represents a calculation error when evaluating the vectors or a possible transposition slip during the Pythagoras magnitude calculations."
         },
         {
-            "ans": "$$\\text{Speed} = 6.71\\text{ m s}^{ -1 }; \\quad \\text{Force} = 10.77\\text{ N}$$",
+            "ans": "<strong>(a)</strong> $\\text{Speed} = 6.71\\text{ m s}^{-1}$<br><strong>(b)</strong> $\\text{Force} = 10.77\\text{ N}$",
             "feedback": "This error occurs if you forgot to multiply the acceleration vector by the mass $m = 0.5\\text{ kg}$ before calculating the magnitude of the force. Remember that $\\mathbf{F} = m\\mathbf{a}$."
         },
         {
-            "ans": "$$\\text{Speed} = 9.00\\text{ m s}^{ -1 }; \\quad \\text{Force} = 5.39\\text{ N}$$",
+            "ans": "<strong>(a)</strong> $\\text{Speed} = 9.00\\text{ m s}^{-1}$<br><strong>(b)</strong> $\\text{Force} = 5.39\\text{ N}$",
             "feedback": "This represents a vector magnitude addition slip. You cannot simply add the vector components ($3 + 6 = 9$) to find the speed; you must use Pythagoras' theorem."
         }
     ],
@@ -990,24 +994,25 @@ window.ALEVEL_QUESTIONS = [
         "Calculus"
     ],
     "img": false,
-    "question": "A particle $P$ moves along a straight line. At time $t$ seconds, its acceleration, $a\\text{ m s}^{-2}$, is given by:<br><br>$$a = 12t - 8$$<br>At time $t = 1$, the velocity of $P$ is $1\\text{ m s}^{-1}$.<br>At time $t = 2$, the displacement of $P$ from a fixed origin $O$ is $10\\text{ metres}$.<br><br><strong>(a)</strong> Find an expression for the velocity of the particle at time $t$.<br><br><strong>(b)</strong> Find an expression for the displacement of the particle from $O$ at time $t$.",
+    "question": "A particle $P$ moves along a straight line. At time $t$ seconds, its acceleration, $a\\text{ m s}^{-2}$, is given by:$$a = 12t - 8$$At time $t = 1$, the velocity of $P$ is $1\\text{ m s}^{-1}$.<br>At time $t = 2$, the displacement of $P$ from a fixed origin $O$ is $10\\text{ metres}$.<br><br><strong>(a)</strong> Find an expression for the velocity of the particle at time $t$.<br><br><strong>(b)</strong> Find an expression for the displacement of the particle from $O$ at time $t$.",
     "steps": [
-        "For part <strong>(a)</strong>, find the velocity function $v(t)$ by integrating the acceleration function $a = 12t - 8$ with respect to $t$, incorporating a constant of integration $C$:<br><br>$$v = \\int (12t - 8) \\; \\mathrm{d}t = 6t^2 - 8t + C$$",
-        "Use the boundary condition $v(1) = 1$ to solve for $C$:<br><br>\\begin{aligned} 6(1^2) - 8(1) + C &= 1 \\cr -2 + C &= 1 \\cr C &= 3 \\end{aligned}<br>Thus, the velocity expression is:<br><br>$$v = 6t^2 - 8t + 3$$",
-        "For part <strong>(b)</strong>, find the displacement function $s(t)$ by integrating the velocity function with respect to $t$, incorporating a second constant of integration $K$:<br><br>$$s = \\int (6t^2 - 8t + 3) \\; \\mathrm{d}t = 2t^3 - 4t^2 + 3t + K$$",
-        "Use the boundary condition $s(2) = 10$ to solve for $K$:<br><br>\\begin{aligned} 2(2^3) - 4(2^2) + 3(2) + K &= 10 \\cr 2(8) - 4(4) + 6 + K &= 10 \\cr 16 - 16 + 6 + K &= 10 \\cr 6 + K &= 10 \\cr K &= 4 \\end{aligned}<br>Thus, the displacement expression is:<br><br>$$s = 2t^3 - 4t^2 + 3t + 4$$"
+        "For part <strong>(a)</strong>, find the velocity function $v(t)$ by integrating the acceleration function $a = 12t - 8$ with respect to $t$, incorporating a constant of integration $C$:\\begin{aligned} &v = \\int (12t - 8) \\text{d}t \\cr &v = 6t^2 - 8t + C \\end{aligned}",
+        "Use the boundary condition $v(1) = 1$ to solve for $C$:\\begin{aligned} &6(1^2) - 8(1) + C = 1 \\cr &-2 + C = 1 \\cr &C = 3 \\end{aligned}Thus, the velocity expression is:$$v = 6t^2 - 8t + 3$$",
+        "For part <strong>(b)</strong>, find the displacement function $s(t)$ by integrating the velocity function with respect to $t$, incorporating a second constant of integration $K$:\\begin{aligned} &s = \\int (6t^2 - 8t + 3) \\text{d}t \\cr &s = 2t^3 - 4t^2 + 3t + K \\end{aligned}",
+        "Use the boundary condition $s(2) = 10$ to solve for $K$:\\begin{aligned} &2(2^3) - 4(2^2) + 3(2) + K = 10 \\cr &2(8) - 4(4) + 6 + K = 10 \\cr &16 - 16 + 6 + K = 10 \\cr &6 + K = 10 \\cr &K = 4 \\end{aligned}Thus, the displacement expression is:$$s = 2t^3 - 4t^2 + 3t + 4$$",
+        "Final Answer: <strong>(a)</strong> $v = 6t^2 - 8t + 3$<br><strong>(b)</strong> $s = 2t^3 - 4t^2 + 3t + 4$"
     ],
     "pi_options": [
         {
-            "ans": "$$v = 6t^2 - 8t; \\quad s = 2t^3 - 4t^2 + 4$$",
+            "ans": "<strong>(a)</strong> $v = 6t^2 - 8t$<br><strong>(b)</strong> $s = 2t^3 - 4t^2 + 4$",
             "feedback": "This is a major student error. It assumes that both constants of integration ($C$ and $K$) are zero. Always solve for your integration constants using the given boundary conditions."
         },
         {
-            "ans": "$$v = 6t^2 - 8t + 3; \\quad s = 2t^3 - 4t^2 + 3t$$",
+            "ans": "<strong>(a)</strong> $v = 6t^2 - 8t + 3$<br><strong>(b)</strong> $s = 2t^3 - 4t^2 + 3t$",
             "feedback": "This error occurs if you solved for the first constant of integration $C = 3$ correctly, but assumed that the second constant of integration $K$ was zero in the second step."
         },
         {
-            "ans": "$$v = 6t^2 - 8t + 1; \\quad s = 2t^3 - 4t^2 + t + 10$$",
+            "ans": "<strong>(a)</strong> $v = 6t^2 - 8t + 1$<br><strong>(b)</strong> $s = 2t^3 - 4t^2 + t + 10$",
             "feedback": "This indicates algebraic transposition slips when evaluating the boundary conditions, leading to incorrect numerical constants."
         }
     ],
