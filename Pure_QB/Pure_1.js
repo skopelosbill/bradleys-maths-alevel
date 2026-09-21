@@ -53,7 +53,7 @@ window.ALEVEL_QUESTIONS = [
                 "question": "Let $f(x) = 4x^3 + ax^2 - 7x + 2a$.<br>Given that (x + 2) is a factor of $f(x)$, find the value of the constant a.",
                 "steps": [
                         "According to the <strong>Factor Theorem</strong>, if (x + 2) is a factor of $f(x)$, then evaluating the polynomial at $x = -2$ must equal zero: $f(-2) = 0$.",
-                        "We substitute $x = -2$ into the expression for $f(x)$:\\begin{aligned}f(-2) & = 4(-2)^3 + a(-2)^2\\cr & \\qquad- 7(-2) + 2aend{aligned}",
+                        "We substitute $x = -2$ into the expression for $f(x)$:\\begin{aligned}f(-2) & = 4(-2)^3 + a(-2)^2\\cr & \\qquad- 7(-2) + 2a\\end{aligned}",
                         "Evaluating the powers and simplifying each term (keeping close track of negative signs) gives:<br>$$f(-2) = 4(-8) + a(4) + 14 + 2a$$<br>$$f(-2) = -32 + 4a + 14 + 2a$$",
                         "Combining the numerical terms and the a terms yields:<br>$$(-32 + 14) + (4a + 2a) = 0$$<br>$$-18 + 6a = 0$$",
                         "Solving this linear equation gives our final value for a:<br>\\begin{aligned}6a &= 18 \\cr a &= 3\\end{aligned}",
@@ -173,10 +173,10 @@ window.ALEVEL_QUESTIONS = [
                 "question": "Let $f(x) = 2x^3 + 3px^2 - 2x - 3p$.<br>Given that (x + 3) is a factor of $f(x)$, find the value of the constant p.",
                 "steps": [
                         "According to the <strong>Factor Theorem</strong>, if (x + 3) is a farctor of $f(x)$, then evaluating the polynomial at $x = -3$ must equal zero: $f(-3) = 0$.",
-                        "We substitute $x = -3$ into the expression for $f(x)$:<br>$$ f(-3)\\c = 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p$$",
+                        "We substitute $x = -3$ into the expression for $f(x)$:<br>$$ f(-3)= 2(-3)^3 + 3p(-3)^2 - 2(-3) - 3p$$",
                         "Evaluating the powers and simplifying each term (taking close care with negative signs) gives:<br>$$f(-3) = 2(-27) + 3p(9) + 6 - 3p$$<br>$$f(-3) = -54 + 27p + 6 - 3p$$",
                         "Combining the numerical terms and the p terms yields:<br>$$(-54 + 6) + (27p - 3p) = 0$$<br>$$-48 + 24p = 0$$",
-                        "Solving this linear equation gives our final value for p:<br>\\begin{aligned}24p &= 48 \\crp &= 2\\end{aligned}",
+                        "Solving this linear equation gives our final value for p:<br>\\begin{aligned}24p &= 48 \\cr p &= 2\\end{aligned}",
                         "Final Answer: $$p = 2$$"
                 ],
                 "pi_options": [
@@ -220,7 +220,7 @@ window.ALEVEL_QUESTIONS = [
                         "Because the line is steeper, it crosses the curve once for a small positive value of $x$, and afterwards the line increases without bound while $\\sin x$ remains between -1 and 1.",
                         "Therefore the equation has exactly one real root.",
                         "Using the small-angle approximation $\\sin x \\approx x$, substitute into the equation: $$x - 2x + \\tfrac14 = 0.$$",
-                        "Simplifying gives \\begin{aligned}-x + \\tfrac14 &= 0 \\crx &= \\tfrac14.\\end{aligned}",
+                        "Simplifying gives \\begin{aligned}-x + \\tfrac14 &= 0 \\cr x &= \\tfrac14.\\end{aligned}",
                         "Final Answer: $$\\beta \\approx 0.250.$$ <img src='images/Pure_SVGs/004006_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
                 ],
                 "pi_options": [
@@ -264,7 +264,7 @@ window.ALEVEL_QUESTIONS = [
                         "The line $y = 3x - 0.2$ is steeper and starts below the curve at $x = 0$.",
                         "The two graphs cross exactly once in the interval shown, so the equation has exactly one real root.",
                         "Using the small-angle approximation $\\tan x \\approx x$, substitute into the equation: $$x - 3x + 0.2 = 0.$$",
-                        "Simplifying gives \\begin{aligned}-2x + 0.2 &= 0 \\crx &= 0.1.\\end{aligned}",
+                        "Simplifying gives \\begin{aligned}-2x + 0.2 &= 0 \\cr x &= 0.1.\\end{aligned}",
                         "Final Answer: $$\\gamma \\approx 0.100.$$ <img src='images/Pure_SVGs/004007_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
                 ],
                 "pi_options": [
@@ -352,7 +352,7 @@ window.ALEVEL_QUESTIONS = [
                         "From the diagram, $y = e^{ -x }$ decreases from 1 as x increases, while the line $y = 1.5x + 0.8$ increases.",
                         "The two graphs cross once near the origin and do not meet again because the exponential decays while the line grows without bound.",
                         "Using the small-angle approximation $e^{ -x } \\approx 1 - x$, substitute into the equation: $$1 - x - 1.5x - 0.8 = 0.$$",
-                        "Simplifying gives \\begin{aligned}0.2 - 2.5x &= 0 \\crx &= 0.08.\\end{aligned}",
+                        "Simplifying gives \\begin{aligned}0.2 - 2.5x &= 0 \\cr x &= 0.08.\\end{aligned}",
                         "Final Answer: $$\\varepsilon \\approx 0.080.$$ <img src='images/Pure_SVGs/004009_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
                 ],
                 "pi_options": [
@@ -396,7 +396,7 @@ window.ALEVEL_QUESTIONS = [
                         "The curve begins above the line and crosses it once for a small negative value of $x$.",
                         "After this, the line continues to increase while the curve oscillates, so there are no further intersections.",
                         "Using the small-angle approximation $\\sin(3x) \\approx 3x$, substitute into the equation: $$3x + 0.5 - 2x = 0.$$",
-                        "Simplifying gives \\begin{aligned}x + 0.5 &= 0 \\crx &= -0.5.\\end{aligned}",
+                        "Simplifying gives \\begin{aligned}x + 0.5 &= 0 \\cr x &= -0.5.\\end{aligned}",
                         "Final Answer: $$\\zeta \\approx -0.500.$$ <img src='images/Pure_SVGs/004010_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
                 ],
                 "pi_options": [
@@ -851,7 +851,7 @@ window.ALEVEL_QUESTIONS = [
                         "Quadratics"
                 ],
                 "img": false,
-                "question": "$$f(x) = 3x^2 + 6x + 8\\text{, }  x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write f(x) in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 3(x-2)^2 + 6x - 7\\text{, } x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \\dfrac{15}{ 3x^2 + 6x + 8 }\\text{, } x \\in \\mathbb{R}$$",
+                "question": "$$f(x) = 3x^2 + 6x + 8\\text{, }  x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write f(x) in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 3(x-2)^2 + 6x - 7\\text{,}$$ $$ x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \\dfrac{15}{ 3x^2 + 6x + 8 }\\text{, } x \\in \\mathbb{R}$$",
                 "steps": [
                         "<strong>Part (a):</strong> We complete the square by first factorising out the 3 from the quadratic and linear terms:<br>$$f(x) = 3(x^2 + 2x) + 8$$<br>$$f(x) = 3\\left[(x+1)^2 - 1^2\\right] + 8$$<br>$$f(x) = 3(x+1)^2 - 3 + 8$$<br>$$f(x) = 3(x+1)^2 + 5$$<br>Therefore, the constants are $a = 3$, $b = 1$, and $c = 5$.",
                         "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at (-1, 5).<br>2. <strong>y-int:</strong> Setting $x = 0$ gives $f(0) = 8$, so the curve crosses the y-axis at (0, 8).<br>3. <strong>x-ints:</strong> Setting $3x^2+6x+8 = 0$, the discriminant is $\\Delta = 6^2 - 4(3)(8) = -60 < 0$. There are no real roots, so the curve does not cross the x-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure_SVGs/004021_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
@@ -871,7 +871,7 @@ window.ALEVEL_QUESTIONS = [
                         },
                         {
                                 "ans": "<strong>(a)</strong> $$3(x+1)^2 + 11$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,11), }y\\text{ -int: (0,8) }$$ <strong>(c)(i)</strong> $$\\text{Translation by } \\begin{pmatrix} 2 \\\\\\ -9 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le \\dfrac{15}{11}$$",
-                                "feedback": "You probably made a sign error when expanding your completed square in Part (a), adding the 3 instead of subtracting it: \\begin{aligned} & 3[(x+1)^2 - 1] + 8 & \\quad = 3(x+1)^2 - 3 + 8\\cr & \\quad = 3(x+1)^2 + 5\\end{aligned}, not +11. This error affected all your subsequent coordinates and calculations."
+                                "feedback": "You probably made a sign error when expanding your completed square in Part (a), adding the 3 instead of subtracting it: \\begin{aligned} & 3[(x+1)^2 - 1] + 8 \\cr & \\quad = 3(x+1)^2 - 3 + 8\\cr & \\quad = 3(x+1)^2 + 5\\end{aligned}, not +11. This error affected all your subsequent coordinates and calculations."
                         }
                 ],
                 "bradley_insight": {
@@ -892,7 +892,7 @@ window.ALEVEL_QUESTIONS = [
                         "Quadratics"
                 ],
                 "img": false,
-                "question": "$$f(x) = 2x^2 + 8x + 12\\text{, } x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write f(x) in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 2(x-3)^2 + 8x - 15\\text{, } x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \\dfrac{12}{ 2x^2 + 8x + 12 }\\text{, } x \\in \\mathbb{R}$$",
+                "question": "$$f(x) = 2x^2 + 8x + 12\\text{, } x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write f(x) in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 2(x-3)^2 + 8x - 15\\text{,}$$ $$x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \\dfrac{12}{ 2x^2 + 8x + 12 }\\text{, } x \\in \\mathbb{R}$$",
                 "steps": [
                         "<strong>Part (a):</strong> We complete the square by first factorising out the 2 from the quadratic and linear terms:<br>$$f(x) = 2(x^2 + 4x) + 12$$<br>$$f(x) = 2\\left[(x+2)^2 - 2^2\\right] + 12$$<br>$$f(x) = 2(x+2)^2 - 8 + 12$$<br>$$f(x) = 2(x+2)^2 + 4$$<br>Therefore, the constants are $a = 2$, $b = 2$, and $c = 4$.",
                         "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at (-2, 4).<br>2. <strong>y-int:</strong> Setting $x = 0$ gives $f(0) = 12$, so the curve crosses the y-axis at (0, 12).<br>3. <strong>x-ints:</strong> Setting $2x^2+8x+12 = 0$, the discriminant is $\\Delta = 8^2 - 4(2)(12) = -32 < 0$. There are no real roots, so the curve does not cross the x-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure_SVGs/004022_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
@@ -933,7 +933,7 @@ window.ALEVEL_QUESTIONS = [
                         "Quadratics"
                 ],
                 "img": false,
-                "question": "$$f(x) = 4x^2 + 8x + 7\\text{, } x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write f(x) in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 4(x-3)^2 + 8x - 19\\text{, } x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \\dfrac{15}{ 4x^2 + 8x + 7 }\\text{, } x \\in \\mathbb{R}$$",
+                "question": "$$f(x) = 4x^2 + 8x + 7\\text{, } x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write f(x) in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 4(x-3)^2 + 8x - 19\\text{,}$$ $$ x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \\dfrac{15}{ 4x^2 + 8x + 7 }\\text{, } x \\in \\mathbb{R}$$",
                 "steps": [
                         "<strong>Part (a):</strong> We complete the square by first factorising out the 4 from the quadratic and linear terms:<br>$$f(x) = 4(x^2 + 2x) + 7$$<br>$$f(x) = 4\\left[(x+1)^2 - 1^2\\right] + 7$$<br>$$f(x) = 4(x+1)^2 - 4 + 7$$<br>$$f(x) = 4(x+1)^2 + 3$$<br>Therefore, the constants are $a = 4$, $b = 1$, and $c = 3$.",
                         "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at (-1, 3).<br>2. <strong>y-int:</strong> Setting $x = 0$ gives $f(0) = 7$, so the curve crosses the y-axis at (0, 7).<br>3. <strong>x-ints:</strong> Setting $4x^2+8x+7 = 0$, the discriminant is $\\Delta = 8^2 - 4(4)(7) = -48 < 0$. There are no real roots, so the curve does not cross the x-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure_SVGs/004023_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
@@ -974,7 +974,7 @@ window.ALEVEL_QUESTIONS = [
                         "Quadratics"
                 ],
                 "img": false,
-                "question": "$$f(x) = 3x^2 + 12x + 18\\text{, } x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write f(x) in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 3(x-3)^2 + 12x - 22\\text{, } x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \\dfrac{24}{ 3x^2 + 12x + 18 }\\text{, } x \\in \\mathbb{R}$$",
+                "question": "$$f(x) = 3x^2 + 12x + 18\\text{, } x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write f(x) in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 3(x-3)^2 + 12x - 22\\text{,}$$ $$ x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \\dfrac{24}{ 3x^2 + 12x + 18 }\\text{, } x \\in \\mathbb{R}$$",
                 "steps": [
                         "<strong>Part (a):</strong> We complete the square by first factorising out the 3 from the quadratic and linear terms:<br>$$f(x) = 3(x^2 + 4x) + 18$$<br>$$f(x) = 3\\left[(x+2)^2 - 2^2\\right] + 18$$<br>$$f(x) = 3(x+2)^2 - 12 + 18$$<br>$$f(x) = 3(x+2)^2 + 6$$<br>Therefore, the constants are $a = 3$, $b = 2$, and $c = 6$.",
                         "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at (-2, 6).<br>2. <strong>y-int:</strong> Setting $x = 0$ gives $f(0) = 18$, so the curve crosses the y-axis at (0, 18).<br>3. <strong>x-ints:</strong> Setting $3x^2+12x+18 = 0$, the discriminant is $\\Delta = 12^2 - 4(3)(18) = -72 < 0$. There are no real roots, so the curve does not cross the x-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure_SVGs/004024_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
@@ -1015,7 +1015,7 @@ window.ALEVEL_QUESTIONS = [
                         "Quadratics"
                 ],
                 "img": false,
-                "question": "$$f(x) = 2x^2 + 4x + 7\\text{, } x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write f(x) in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 2(x-3)^2 + 4x - 9\\text{, } x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \\dfrac{10}{ 2x^2 + 4x + 7 }\\text{, } x \\in \\mathbb{R}$$",
+                "question": "$$f(x) = 2x^2 + 4x + 7\\text{, } x \\in \\mathbb{R}$$<br><strong>(a)</strong> Write f(x) in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 2(x-3)^2 + 4x - 9\\text{,}$$ $$ x \\in \\mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \\dfrac{10}{ 2x^2 + 4x + 7 }\\text{, } x \\in \\mathbb{R}$$",
                 "steps": [
                         "<strong>Part (a):</strong> We complete the square by first factorising out the 2 from the quadratic and linear terms:<br>$$f(x) = 2(x^2 + 2x) + 7$$<br>$$f(x) = 2\\left[(x+1)^2 - 1^2\\right] + 7$$<br>$$f(x) = 2(x+1)^2 - 2 + 7$$<br>$$f(x) = 2(x+1)^2 + 5$$<br>Therefore, the constants are $a = 2$, $b = 1$, and $c = 5$.",
                         "<strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at (-1, 5).<br>2. <strong>y-int:</strong> Setting $x = 0$ gives $f(0) = 7$, so the curve crosses the y-axis at (0, 7).<br>3. <strong>x-ints:</strong> Setting $2x^2+4x+7 = 0$, the discriminant is $\\Delta = 4^2 - 4(2)(7) = -40 < 0$. There are no real roots, so the curve does not cross the x-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure_SVGs/004025_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
@@ -1026,7 +1026,7 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -int: (0,7 }$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} -3 \\\\\\ 4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 2$$",
+                                "ans": "<strong>(a)</strong> $$2(x+1)^2 + 5$$ <strong>(b)</strong> $$\\text{Turning Point: (-1,5), }y\\text{ -int: (0,7) }$$ <strong>(c)(i)</strong> $$\\text{Translation by }\\begin{pmatrix} -3 \\\\\\ 4 \\end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \\le 2$$",
                                 "feedback": "You probably made a sign error when calculating your translation vector in Part (c)(i). Moving from the vertex of $f(x)$ at $x = -1$ to the vertex of g(x) at $x = 2$ is a horizontal shift of +3. Moving from $y = 5$ to $y = 1$ is a vertical shift of -4. This gives the vector $\\begin{pmatrix} 3 \\\\\\ -4 \\end{pmatrix}$."
                         },
                         {
@@ -1094,7 +1094,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$3\\tan\\theta = 2\\sin 2\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Deduce the smallest positive solution of:<br>\\begin{aligned} &3\\tan(x - 15^\\circ)\\cr & \\quad \\quad \\quad = 2\\sin(2x - 30^\\circ).\\end{aligned}",
                 "steps": [
-                        "<strong>Part (a):</strong> Use \\begin{aligned}\\tan\\theta &= \\frac{\\sin\\theta}{\\cos\\theta}, \\quad \\sin 2\\theta \\cr&= 2\\sin\\theta\\cos\\theta.\\end{aligned}<br>Substitute:<br>$$3\\frac{\\sin\\theta}{\\cos\\theta} = 4\\sin\\theta\\cos\\theta$$<br>Multiply by cosθ:<br>$$3\\sin\\theta = 4\\sin\\theta\\cos^2\\theta$$<br>Factorise:<br>$$\\sin\\theta(3 - 4\\cos^2\\theta) = 0.$$<br>Solutions:<br>• \\begin{aligned}\\sin\\theta &= 0\\cr \\Rightarrow \\theta &= -180^\\circ\\text{, }0^\\circ\\text{, } 180^\\circ.\\end{aligned}<br>• \\begin{aligned}\\cos^2\\theta &= \\frac{3}{4}\\cr \\Rightarrow \\theta &= \\pm 30^\\circ\\text{, }\\pm 150^\\circ.\\end{aligned}",
+                        "<strong>Part (a):</strong> Use \\begin{aligned}&\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}, \\cr & \\sin 2\\theta \\cr&= 2\\sin\\theta\\cos\\theta.\\end{aligned}<br>Substitute:<br>$$3\\frac{\\sin\\theta}{\\cos\\theta} = 4\\sin\\theta\\cos\\theta$$<br>Multiply by cosθ:<br>$$3\\sin\\theta = 4\\sin\\theta\\cos^2\\theta$$<br>Factorise:<br>$$\\sin\\theta(3 - 4\\cos^2\\theta) = 0.$$<br>Solutions:<br>• \\begin{aligned}\\sin\\theta &= 0\\cr \\Rightarrow \\theta &= -180^\\circ\\text{, }0^\\circ\\text{, } 180^\\circ.\\end{aligned}<br>• \\begin{aligned}\\cos^2\\theta &= \\frac{3}{4}\\cr \\Rightarrow \\theta &= \\pm 30^\\circ\\text{, }\\pm 150^\\circ.\\end{aligned}",
                         "<strong>Part (b):</strong> Note that $$2x - 30^\\circ = 2(x - 15^\\circ).$$ Let $$\\theta = x - 15^\\circ.$$<br>Smallest positive solution:<br>\\begin{aligned}x &= 0^\\circ + 15^\\circ \\cr&= 15^\\circ.\\end{aligned}",
                         "Final Answer: \\begin{aligned}\theta &= -180^\\circ, -150^\\circ, -30^\\circ,\\cr &\\quad \\quad 0^\\circ, 30^\\circ, 150^\\circ, 180^\\circ; \\cr\\quad x &= 15^\\circ.\\end{aligned}"
                 ],
@@ -1205,7 +1205,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "<strong>(a)</strong> Solve, for $$-180^\\circ \\le \\theta \\le 180^\\circ,$$ the equation:<br>$$9\\sin 2\\theta = 4\\tan\\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Hence deduce the smallest positive solution of:<br>\\begin{aligned} & 9\\sin(2x - 10^\\circ)\\cr & \\quad \\quad \\quad = 4\\tan(x - 5^\\circ).\\end{aligned}",
                 "steps": [
-                        "<strong>Part (a):</strong> Use \\begin{aligned}\\sin 2\\theta &= 2\\sin\\theta\\cos\\theta, \\cr \\tan\\theta &= \\frac{\\sin\\theta}{\\cos\\theta}.\\end{aligned}<br>Substitute:<br>$$18\\sin\\theta\\cos^2\\theta = 4\\sin\\theta$$<br>Factorise:<br>$$2\\sin\\theta(9\\cos^2\\theta - 2) = 0.$$<br>Solutions:<br> \\begin{aligned}\\sin\\theta &= 0 \\cr\\Rightarrow \\theta &= -180^\\circ, 0^\\circ, 180^\\circ.\\end{aligned}<br>\\begin{aligned}\\cos^2\\theta &= \\frac{2}{9} \\cr \\Rightarrow \\theta & \\approx \\pm 61.9^\\circ, \\pm 118.1^\\circ.$$",
+                        "<strong>Part (a):</strong> Use \\begin{aligned}\\sin 2\\theta &= 2\\sin\\theta\\cos\\theta, \\cr \\tan\\theta &= \\frac{\\sin\\theta}{\\cos\\theta}.\\end{aligned}<br>Substitute:<br>$$18\\sin\\theta\\cos^2\\theta = 4\\sin\\theta$$<br>Factorise:<br>$$2\\sin\\theta(9\\cos^2\\theta - 2) = 0.$$<br>Solutions:<br> \\begin{aligned}\\sin\\theta &= 0 \\cr\\Rightarrow \\theta &= -180^\\circ, 0^\\circ, 180^\\circ.\\end{aligned}<br>\\begin{aligned}\\cos^2\\theta &= \\frac{2}{9} \\cr \\Rightarrow \\theta & \\approx \\pm 61.9^\\circ, \\pm 118.1^\\circ.\\end{aligned}",
                         "<strong>Part (b):</strong> Note that $$2x - 10^\\circ = 2(x - 5^\\circ).$$ Let $$\\theta = x - 5^\\circ.$$<br>Smallest positive solution:<br>\\begin{aligned}x &= 0^\\circ + 5^\\circ \\cr&= 5^\\circ.\\end{aligned}",
                         "Final Answer: \\begin{aligned}\\theta &= -180^\\circ, -118.1^\\circ, -61.9^\\circ, 0^\\circ,\\cr & \\quad 61.9^\\circ, 118.1^\\circ, 180^\\circ; \\cr x &= 5^\\circ.\\end{aligned}"
                 ],
@@ -1498,7 +1498,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "<strong>Part (a):</strong> First, we expand the cubic equation to make it easy to integrate:<br>\\begin{aligned}y &= x(x+1)(x-3) \\cr&= x(x^2 - 2x - 3) \\cr&= x^3 - 2x^2 - 3x\\end{aligned}",
                         "Since the region $R_1$ lies entirely above the x-axis between $x = -1$ and $x = 0$, its exact area is given by the definite integral:<br>$$\\text{Area } R_1 = \\int_{ -1 }^{0} (x^3 - 2x^2 - 3x) \\text{ d}x$$<br>$$\\text{Area } R_1 = \\left[ \\frac{ x^4 }{4} - \\frac{ 2x^3 }{3} - \\frac{ 3x^2 }{2} \\right]_{ -1 }^{0}$$",
-                        "Evaluating this at the limits 0 and -1:\\begin{aligned} &\\text{Area } R_1\\cr & \\quad = 0 - \\left( \\frac{ (-1)^4 }{4} - \\frac{ 2(-1)^3 }{3} - \\frac{ 3(-1)^2 }{2}\\right) \\cr & \\quad = - \\left( \\frac{1}{4} + \\frac{2}{3} - \\frac{3}{2} \\right) \\cr & \\quad = - \\left( -\\frac{7}{12} \\right) \\cr & \\quad = \\frac{7}{12}\\end{aligned}",
+                        "Evaluating this at the limits 0 and -1:\\begin{aligned} &\\text{Area } R_1\\cr & \\quad = 0 - \\big( \\frac{ (-1)^4 }{4} - \\frac{ 2(-1)^3 }{3}\\cr &\\qquad \\qquad- \\frac{ 3(-1)^2 }{2}\\big) \\cr & \\quad = - \\left( \\frac{1}{4} + \\frac{2}{3} - \\frac{3}{2} \\right) \\cr & \\quad = - \\left( -\\frac{7}{12} \\right) \\cr & \\quad = \\frac{7}{12}\\end{aligned}",
                         "<strong>Part (b):</strong> Since $R_2$ lies entirely below the x-axis in the interval $0 < b < 3$, its area is given by the negative integral:<br>\\begin{aligned}& \\text{Area } R_2\\cr & \\quad  = -\\int_{0}^{b} (x^3 - 2x^2 - 3x) \\text{ d}x \\cr & \\quad = -\\left[ \\frac{ x^4 }{4} - \\frac{ 2x^3 }{3} - \\frac{ 3x^2 }{2} \\right]_{0}^{b}\\cr & \\quad = -\\left( \\frac{ b^4 }{4} - \\frac{ 2b^3 }{3} - \\frac{ 3b^2 }{2} \\right)\\end{aligned}",
                         "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:<br>\\begin{aligned}&\\frac{7}{12} = -\\left( \\frac{ b^4 }{4} - \\frac{ 2b^3 }{3} - \\frac{ 3b^2 }{2} \\right) \\cr & \\Rightarrow \\frac{ b^4 }{4} - \\frac{ 2b^3 }{3} - \\frac{ 3b^2 }{2} + \\frac{7}{12} = 0\\end{aligned}<br>Multiplying the entire equation by 12 to clear the fractions:<br>$$3b^4 - 8b^3 - 18b^2 + 7 = 0$$",
                         "We can verify that this factorises to $(b+1)^2(3b^2 - 14b + 7) = 0$ by expanding the brackets:\\begin{aligned} & (b^2 + 2b + 1)(3b^2 - 14b + 7)\\cr & \\quad  = b^2(3b^2 - 14b + 7)\\cr & \\quad \\quad + 2b(3b^2 - 14b + 7)\\cr & \\quad \\quad \\quad + 1(3b^2 - 14b + 7)\\cr & \\quad = 3b^4 - 14b^3 + 7b^2 + 6b^3 \\cr & \\quad \\quad - 28b^2 + 14b + 3b^2 - 14b + 7\\cr & \\quad = 3b^4 - 8b^3 - 18b^2 + 7 \\cr & \\quad = 0 \\text{( verified)}\\end{aligned}",
