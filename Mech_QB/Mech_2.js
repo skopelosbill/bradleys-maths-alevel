@@ -637,14 +637,15 @@ window.ALEVEL_QUESTIONS = [
         "Pulling vs pushing friction"
     ],
     "img": false,
-    "question": "A crate of mass $10\\text{ kg}$ is pulled in a straight line along a rough horizontal floor using a handle attached to the crate. The handle is inclined at an angle $\\alpha$ to the floor, as shown in Figure 1, where $\\tan \\alpha = \\dfrac{ 3 }{ 4 }$.<br><br><img src='images/Mechanics_pngs/012066_1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>The tension in the handle is $30\\text{ N }$. The coefficient of friction between the crate and the floor is $0.2$. The crate is modelled as a particle and the handle is modelled as a light rod.<br><br>Using the model,<br><strong>(a)</strong> find the acceleration of the crate.<br><br>The crate is now pushed along the same floor using the handle. The handle is inclined at the same angle $\\alpha$ to the floor, as shown in Figure 2. The force applied to the handle is a thrust of $30\\text{ N }$.<br><br><img src='images/Mechanics_pngs/012066_2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br><strong>(b)</strong> Explain briefly why the acceleration of the crate would now be less than the acceleration of the crate found in part (a).",
+    "question": "A crate of mass $10\\text{ kg}$ is pulled in a straight line along a rough horizontal floor using a handle attached to the crate. The handle is inclined at an angle $\\alpha$ to the floor, as shown in Figure 1, where $\\tan \\alpha = \\dfrac{3}{4}$.<br><br><img src='images/Mechanics_pngs/012066_1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br>The tension in the handle is $30\\text{ N}$. The coefficient of friction between the crate and the floor is $0.2$. The crate is modelled as a particle and the handle is modelled as a light rod.<br><br>Using the model,<br><br><strong>(a)</strong> find the acceleration of the crate.<br><br>The crate is now pushed along the same floor using the handle. The handle is inclined at the same angle $\\alpha$ to the floor, as shown in Figure 2. The force applied to the handle is a thrust of $30\\text{ N}$.<br><br><img src='images/Mechanics_pngs/012066_2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br><br><strong>(b)</strong> Explain briefly why the acceleration of the crate would now be less than the acceleration of the crate found in part (a).",
     "steps": [
-        "<strong>(a) Find the acceleration of the crate:</strong><br>First, resolve the pulling force (tension $T = 30\\text{ N }$) horizontally and vertically. Given $\\tan \\alpha = \\dfrac{ 3 }{ 4 }$, we can find the exact trigonometric values using a $3$-$4$-$5$ right-angled triangle:<br><br>\\begin{aligned} \\sin \\alpha &= 0.6 \\cr \\cos \\alpha &= 0.8 \\end{aligned}",
-        "Calculate the components of tension:<br>• Horizontal component: $T_x = T \\cos \\alpha = 30 \\times 0.8 = 24\\text{ N }$<br>• Vertical component: $T_y = T \\sin \\alpha = 30 \\times 0.6 = 18\\text{ N }$",
-        "Set up the equation of vertical equilibrium for the crate to find the normal reaction force $R$. Since the crate remains on the floor, the sum of the vertical forces must equal zero (taking upwards as positive):<br><br>\\begin{aligned} R + T \\sin \\alpha - mg &= 0 \\cr R + 18 - 10(9.8) &= 0 \\cr R + 18 - 98 &= 0 \\cr R &= 80\\text{ N } \\end{aligned}",
-        "Calculate the maximum friction force $F$ acting horizontally to oppose the motion:<br><br>\\begin{aligned} F &= \\mu R \\cr &= 0.2 \\times 80 \\cr &= 16\\text{ N } \\end{aligned}",
-        "Apply Newton's second law ($F = ma$) in the horizontal direction of motion (to the right):<br><br>\\begin{aligned} T_x - F &= ma \\cr 24 - 16 &= 10a \\cr 8 &= 10a \\cr a &= 0.8\\text{ m s}^{ -2 } \\end{aligned}",
-        "<strong>(b) Explain why the acceleration is less when pushed:</strong><br>When the crate is pushed by a thrust force of $30\\text{ N }$, the vertical component of this thrust ($18\\text{ N }$) acts <strong>downwards</strong> instead of upwards.<br><br>This changes the vertical equilibrium equation to:<br><br>\\begin{aligned} R - 18 - 98 = 0 \\implies R = 116\\text{ N } \\end{aligned}<br><br>Since the normal reaction $R$ increases from $80\\text{ N }$ to $116\\text{ N }$, the maximum friction force $F = \\mu R$ increases to $0.2 \\times 116 = 23.2\\text{ N }$. This larger friction force reduces the net horizontal force ($24 - 23.2 = 0.8\\text{ N }$), resulting in a much smaller acceleration ($a = 0.08\\text{ m s}^{ -2 }$)."
+        "<strong>(a) Find the acceleration of the crate:</strong><br><br>Resolve pulling tension $T = 30\\text{ N}$ horizontally and vertically. From $\\tan \\alpha = \\dfrac{3}{4}$:\\begin{aligned} &\\sin \\alpha = 0.6 \\cr &\\cos \\alpha = 0.8 \\end{aligned}",
+        "Calculate the components of tension:<br><br>• Horizontal component:\\begin{aligned} &T_x \\cr &\\quad = T\\cos \\alpha \\cr &\\quad = 30 \\times 0.8 \\cr &\\quad = 24\\text{ N} \\end{aligned}<br><br>• Vertical component:\\begin{aligned} &T_y \\cr &\\quad = T\\sin \\alpha \\cr &\\quad = 30 \\times 0.6 \\cr &\\quad = 18\\text{ N} \\end{aligned}",
+        "Set up vertical equilibrium for the crate (taking upwards as positive):\\begin{aligned} &R + T\\sin \\alpha - mg = 0 \\cr &R + 18 - 10(9.8) = 0 \\cr &R + 18 - 98 = 0 \\cr &R = 80\\text{ N} \\end{aligned}",
+        "Calculate the maximum friction force $F$:\\begin{aligned} &F \\cr &\\quad = \\mu R \\cr &\\quad = 0.2 \\times 80 \\cr &\\quad = 16\\text{ N} \\end{aligned}",
+        "Apply Newton's second law ($F = ma$) horizontally:\\begin{aligned} &T_x - F = ma \\cr &24 - 16 = 10a \\cr &8 = 10a \\cr &a \\cr &\\quad = \\dfrac{8}{10} \\cr &\\quad = 0.8\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Explain why acceleration is less when pushed:</strong><br><br>When pushed by a thrust force of $30\\text{ N}$, the vertical component ($18\\text{ N}$) acts <strong>downwards</strong> instead of upwards.<br><br>This changes the vertical equilibrium equation to:\\begin{aligned} &R - 18 - 98 = 0 \\cr &R = 116\\text{ N} \\end{aligned}Since normal reaction $R$ increases to $116\\text{ N}$, friction $F = \\mu R$ increases to $23.2\\text{ N}$. This larger friction force reduces the net horizontal force ($24 - 23.2 = 0.8\\text{ N}$), resulting in a much smaller acceleration ($a = 0.08\\text{ m s}^{-2}$).",
+        "Final Answer: (a) $a = 0.8\\text{ m s}^{-2}$"
     ],
     "pi_options": [
         {
@@ -653,11 +654,11 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(a) $a = 2.4\\text{ m s}^{-2}$",
-            "feedback": "This error occurs if you forget to subtract the friction force when applying Newton's second law horizontally, writing $T_x = ma$ ($24 = 10a \\implies a = 2.4$). Always include friction in your horizontal equation of motion."
+            "feedback": "This error occurs if you forget to subtract the friction force when applying Newton's second law horizontally, giving $24 = 10a$, which leads to $a = 2.4\\text{ m s}^{-2}$. Always include friction in your horizontal equation of motion."
         },
         {
             "ans": "(a) $a = 0.62\\text{ m s}^{-2}$",
-            "feedback": "This occurs if you treat the normal reaction $R$ as simply equal to the weight $mg = 98\\text{ N }$, neglecting the vertical lifting component of the pulling tension. Resolving vertical forces is crucial to finding the correct $R$."
+            "feedback": "This occurs if you treat the normal reaction $R$ as simply equal to the weight $mg = 98\\text{ N}$, neglecting the vertical lifting component of the pulling tension. Resolving vertical forces is crucial to finding the correct $R$."
         }
     ],
     "bradley_insight": {
@@ -679,18 +680,19 @@ window.ALEVEL_QUESTIONS = [
         "Limiting equilibrium"
     ],
     "img": "images/Mechanics_pngs/012067.png",
-    "question": "A heavy box of mass $22\\text{ kg}$ lies on a rough horizontal floor. The box is pulled by a handle inclined at an angle $\\theta$ to the floor, as shown in the diagram, where $\\tan \\theta = \\dfrac{ 3 }{ 4 }$.<br><br>The tension in the handle is $T\\text{ N }$. The coefficient of friction between the box and the floor is $0.5$. The box is modelled as a particle and is on the point of slipping.<br><br>Using the model, find the value of $T$.",
+    "question": "A heavy box of mass $22\\text{ kg}$ lies on a rough horizontal floor. The box is pulled by a handle inclined at an angle $\\theta$ to the floor, as shown in the diagram, where $\\tan \\theta = \\dfrac{3}{4}$.<br><br>The tension in the handle is $T\\text{ N}$. The coefficient of friction between the box and the floor is $0.5$. The box is modelled as a particle and is on the point of slipping.<br><br>Using the model, find the value of $T$.",
     "steps": [
-        "First, identify the exact trigonometric values of the inclination angle $\\theta$ from $\\tan \\theta = \\dfrac{ 3 }{ 4 }$ using a standard $3$-$4$-$5$ right-angled triangle:<br><br>\\begin{aligned} \\sin \\theta &= 0.6 \\cr \\cos \\theta &= 0.8 \\end{aligned}",
-        "Set up the equation of vertical equilibrium for the box to express the normal reaction $R$ in terms of $T$ (taking upwards as positive):<br><br>\\begin{aligned} R + T \\sin \\theta - Mg &= 0 \\cr R + 0.6T - 22(9.8) &= 0 \\cr R &= 215.6 - 0.6T \\end{aligned}",
-        "Since the box is on the point of slipping (limiting equilibrium), the friction force $F$ is at its maximum value ($F = \\mu R$):<br><br>\\begin{aligned} F &= 0.5R \\cr &= 0.5(215.6 - 0.6T) \\cr &= 107.8 - 0.3T \\end{aligned}",
-        "Set up the equation of horizontal equilibrium. The horizontal pulling component of the tension must balance the maximum friction force:<br><br>\\begin{aligned} T \\cos \\theta - F &= 0 \\cr 0.8T &= 107.8 - 0.3T \\end{aligned}",
-        "Solve the linear equation for $T$:<br><br>\\begin{aligned} 0.8T + 0.3T &= 107.8 \\cr 1.1T &= 107.8 \\cr T &= 98\\text{ N } \\end{aligned}"
+        "From $\\tan \\theta = \\dfrac{3}{4}$, using a $3$-$4$-$5$ right-angled triangle:\\begin{aligned} &\\sin \\theta = 0.6 \\cr &\\cos \\theta = 0.8 \\end{aligned}",
+        "Set up vertical equilibrium for the box (taking upwards as positive):\\begin{aligned} &R + T\\sin \\theta - Mg = 0 \\cr &R + 0.6T - 22(9.8) = 0 \\cr &R + 0.6T - 215.6 = 0 \\cr &R = 215.6 - 0.6T \\end{aligned}",
+        "At limiting equilibrium, friction is at its maximum value ($F = \\mu R$):\\begin{aligned} &F \\cr &\\quad = 0.5R \\cr &\\quad = 0.5(215.6 - 0.6T) \\cr &\\quad = 107.8 - 0.3T \\end{aligned}",
+        "Set up horizontal equilibrium ($T\\cos \\theta - F = 0$):\\begin{aligned} &0.8T = 107.8 - 0.3T \\end{aligned}",
+        "Solve for $T$:\\begin{aligned} &0.8T + 0.3T = 107.8 \\cr &1.1T = 107.8 \\cr &T \\cr &\\quad = \\dfrac{107.8}{1.1} \\cr &\\quad = 98\\text{ N} \\end{aligned}",
+        "Final Answer: $98\\text{ N }$"
     ],
     "pi_options": [
         {
             "ans": "$135\\text{ N }$",
-            "feedback": "This is obtained if you assume the normal reaction $R$ is simply equal to the weight $Mg = 215.6\\text{ N }$, neglecting the vertical lifting effect of the tension component $T \\sin \\theta$."
+            "feedback": "This is obtained if you assume the normal reaction $R$ is simply equal to the weight $Mg = 215.6\\text{ N}$, neglecting the vertical lifting effect of the tension component $T \\sin \\theta$."
         },
         {
             "ans": "$216\\text{ N }$",
@@ -720,18 +722,19 @@ window.ALEVEL_QUESTIONS = [
         "Pulley on an inclined plane"
     ],
     "img": "images/Mechanics_pngs/012068.png",
-    "question": "A block of mass $5\\text{ kg}$ lies on a rough plane inclined at an angle $\\theta$ to the horizontal, as shown in the diagram, where $\\tan \\theta = \\dfrac{ 3 }{ 4 }$. The coefficient of friction between the block and the plane is $0.25$.<br><br>A force of magnitude $P\\text{ N }$ acts parallel to the plane, pulling the block up the plane at a constant acceleration of $2\\text{ m s}^{ -2 }$.<br><br>Using the model, find the value of $P$.",
+    "question": "A block of mass $5\\text{ kg}$ lies on a rough plane inclined at an angle $\\theta$ to the horizontal, as shown in the diagram, where $\\tan \\theta = \\dfrac{3}{4}$. The coefficient of friction between the block and the plane is $0.25$.<br><br>A force of magnitude $P\\text{ N}$ acts parallel to the plane, pulling the block up the plane at a constant acceleration of $2\\text{ m s}^{-2}$.<br><br>Using the model, find the value of $P$.",
     "steps": [
-        "Using $\\tan \\theta = \\dfrac{ 3 }{ 4 }$, find the exact trigonometric values using a right-angled triangle:<br><br>\\begin{aligned} \\sin \\theta &= 0.6 \\cr \\cos \\theta &= 0.8 \\end{aligned}",
-        "Resolve forces perpendicular to the inclined plane to find the normal reaction force $R$. Since there is no acceleration perpendicular to the plane:<br><br>\\begin{aligned} R - mg \\cos \\theta &= 0 \\cr R &= 5(9.8)(0.8) \\cr R &= 39.2\\text{ N } \\end{aligned}",
-        "Calculate the maximum friction force $F$ opposing the upward motion (acting down the plane):<br><br>\\begin{aligned} F &= \\mu R \\cr &= 0.25 \\times 39.2 \\cr &= 9.8\\text{ N } \\end{aligned}",
-        "Resolve forces parallel to the inclined plane (taking up-plane as positive). The forces opposing the motion are friction $F$ and the parallel component of the block's weight ($mg \\sin \\theta$):<br><br>\\begin{aligned} mg \\sin \\theta &= 5(9.8)(0.6) \\cr &= 29.4\\text{ N } \\end{aligned}",
-        "Apply Newton's second law ($F = ma$) parallel to the incline:<br><br>\\begin{aligned} P - F - mg \\sin \\theta &= ma \\cr P - 9.8 - 29.4 &= 5(2) \\cr P - 39.2 &= 10 \\cr P &= 49.2\\text{ N } \\end{aligned}"
+        "From $\\tan \\theta = \\dfrac{3}{4}$, using a right-angled triangle:\\begin{aligned} &\\sin \\theta = 0.6 \\cr &\\cos \\theta = 0.8 \\end{aligned}",
+        "Resolve forces perpendicular to the plane:\\begin{aligned} &R - mg\\cos \\theta = 0 \\cr &R \\cr &\\quad = 5(9.8)(0.8) \\cr &\\quad = 39.2\\text{ N} \\end{aligned}",
+        "Calculate the maximum friction force $F$ acting down the plane:\\begin{aligned} &F \\cr &\\quad = \\mu R \\cr &\\quad = 0.25 \\times 39.2 \\cr &\\quad = 9.8\\text{ N} \\end{aligned}",
+        "Calculate the component of weight acting down the plane:\\begin{aligned} &mg\\sin \\theta \\cr &\\quad = 5(9.8)(0.6) \\cr &\\quad = 29.4\\text{ N} \\end{aligned}",
+        "Apply Newton's second law ($F = ma$) parallel to the incline:\\begin{aligned} &P - F - mg\\sin \\theta = ma \\cr &P - 9.8 - 29.4 = 5(2) \\cr &P - 39.2 = 10 \\cr &P = 49.2\\text{ N} \\end{aligned}",
+        "Final Answer: $49.2\\text{ N }$"
     ],
     "pi_options": [
         {
             "ans": "$39.4\\text{ N }$",
-            "feedback": "This occurs if you neglect to include the $ma = 10\\text{ N }$ acceleration term, writing $P - F - mg \\sin \\theta = 0$. Since the block is accelerating, the pulling force must exceed the static forces."
+            "feedback": "This occurs if you neglect to include the $ma = 10\\text{ N}$ acceleration term, writing $P - F - mg \\sin \\theta = 0$. Since the block is accelerating, the pulling force must exceed the static forces."
         },
         {
             "ans": "$19.8\\text{ N }$",
@@ -761,14 +764,15 @@ window.ALEVEL_QUESTIONS = [
         "Limiting equilibrium"
     ],
     "img": "images/Mechanics_pngs/012069.png",
-    "question": "A block of mass $10\\text{ kg}$ is on a rough plane inclined at an angle $\\alpha$ to the horizontal, as shown in the diagram, where $\\tan \\alpha = \\dfrac{ 3 }{ 4 }$. The coefficient of friction between the block and the plane is $0.3$.<br><br>The block is held in limiting equilibrium, on the point of slipping down the plane, by a horizontal force of magnitude $H\\text{ N }$.<br><br>Using the model, find the value of $H$.",
+    "question": "A block of mass $10\\text{ kg}$ is on a rough plane inclined at an angle $\\alpha$ to the horizontal, as shown in the diagram, where $\\tan \\alpha = \\dfrac{3}{4}$. The coefficient of friction between the block and the plane is $0.3$.<br><br>The block is held in limiting equilibrium, on the point of slipping down the plane, by a horizontal force of magnitude $H\\text{ N}$.<br><br>Using the model, find the value of $H$.",
     "steps": [
-        "Find the exact trigonometric values from $\\tan \\alpha = \\dfrac{ 3 }{ 4 }$:<br><br>\\begin{aligned} \\sin \\alpha &= 0.6 \\cr \\cos \\alpha &= 0.8 \\end{aligned}",
-        "Resolve the forces perpendicular and parallel to the inclined plane. Note that the horizontal force $H$ has components acting both parallel and perpendicular to the slope:<br>• Component parallel to slope (acting up the slope): $H \\cos \\alpha = 0.8H$<br>• Component perpendicular to slope (acting into the slope): $H \\sin \\alpha = 0.6H$",
-        "Resolve forces perpendicular to the inclined plane to find the normal reaction force $R$ in terms of $H$:<br><br>\\begin{aligned} R - mg \\cos \\alpha - H \\sin \\alpha &= 0 \\cr R &= 10(9.8)(0.8) + 0.6H \\cr R &= 78.4 + 0.6H \\end{aligned}",
-        "Since the block is on the point of slipping down the plane, the maximum limiting friction force $F$ acts up the plane:<br><br>\\begin{aligned} F &= \\mu R \\cr &= 0.3(78.4 + 0.6H) \\cr &= 23.52 + 0.18H \\end{aligned}",
-        "Resolve forces parallel to the inclined plane. The force components acting up the plane (the horizontal force component $H \\cos \\alpha$ and friction $F$) must balance the gravitational weight component pulling the block down the plane ($mg \\sin \\alpha$):<br><br>\\begin{aligned} H \\cos \\alpha + F &= mg \\sin \\alpha \\cr 0.8H + (23.52 + 0.18H) &= 10(9.8)(0.6) \\cr 0.98H + 23.52 &= 58.8 \\end{aligned}",
-        "Solve for $H$:<br><br>\\begin{aligned} 0.98H &= 58.8 - 23.52 \\cr 0.98H &= 35.28 \\cr H &= 36\\text{ N } \\end{aligned}"
+        "From $\\tan \\alpha = \\dfrac{3}{4}$:\\begin{aligned} &\\sin \\alpha = 0.6 \\cr &\\cos \\alpha = 0.8 \\end{aligned}",
+        "Resolve the forces perpendicular and parallel to the inclined plane:<br><br>• Component parallel to slope (acting up the slope): $H\\cos \\alpha = 0.8H$<br><br>• Component perpendicular to slope (acting into the slope): $H\\sin \\alpha = 0.6H$",
+        "Resolve forces perpendicular to the inclined plane:\\begin{aligned} &R - mg\\cos \\alpha - H\\sin \\alpha = 0 \\cr &R \\cr &\\quad = 10(9.8)(0.8) + 0.6H \\cr &\\quad = 78.4 + 0.6H \\end{aligned}",
+        "Limiting friction $F$ acts up the plane to oppose slipping downwards:\\begin{aligned} &F \\cr &\\quad = \\mu R \\cr &\\quad = 0.3(78.4 + 0.6H) \\cr &\\quad = 23.52 + 0.18H \\end{aligned}",
+        "Resolve forces parallel to the inclined plane:\\begin{aligned} &H\\cos \\alpha + F = mg\\sin \\alpha \\cr &0.8H + (23.52 + 0.18H) \\cr &\\qquad = 10(9.8)(0.6) \\cr &0.98H + 23.52 = 58.8 \\end{aligned}",
+        "Solve for $H$:\\begin{aligned} &0.98H = 58.8 - 23.52 \\cr &0.98H = 35.28 \\cr &H \\cr &\\quad = \\dfrac{35.28}{0.98} \\cr &\\quad = 36\\text{ N} \\end{aligned}",
+        "Final Answer: $36\\text{ N }$"
     ],
     "pi_options": [
         {
@@ -777,11 +781,11 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$73.5\\text{ N }$",
-            "feedback": "This occurs if you treat the normal reaction $R$ as simply equal to $mg \\cos \\alpha = 78.4\\text{ N }$, neglecting the fact that the horizontal force $H$ pushes the block into the slope and increases $R$."
+            "feedback": "This occurs if you treat the normal reaction $R$ as simply equal to $mg \\cos \\alpha = 78.4\\text{ N}$, neglecting the fact that the horizontal force $H$ pushes the block into the slope and increases $R$."
         },
         {
             "ans": "$58.8\\text{ N }$",
-            "feedback": "This is the magnitude of the parallel gravitational force component ($mg \\sin \\alpha$). Remember that $H$ and friction both assist in holding the block from sliding down, so $H$ is smaller than $58.8\\text{ N }$."
+            "feedback": "This is the magnitude of the parallel gravitational force component ($mg \\sin \\alpha$). Remember that $H$ and friction both assist in holding the block from sliding down, so $H$ is smaller than $58.8\\text{ N}$."
         }
     ],
     "bradley_insight": {
@@ -803,27 +807,28 @@ window.ALEVEL_QUESTIONS = [
         "Range of values for equilibrium"
     ],
     "img": "images/Mechanics_pngs/012070.png",
-    "question": "A block of mass $10\\text{ kg}$ is on a rough plane inclined at an angle $\\alpha$ to the horizontal, as shown in the diagram, where $\\tan \\alpha = \\dfrac{ 3 }{ 4 }$. The coefficient of friction between the block and the plane is $0.5$.<br><br>A force of magnitude $P\\text{ N }$ acts parallel to the plane, directed up the plane.<br><br>Using the model, find the range of values of $P$ for which the block remains in equilibrium.",
+    "question": "A block of mass $10\\text{ kg}$ is on a rough plane inclined at an angle $\\alpha$ to the horizontal, as shown in the diagram, where $\\tan \\alpha = \\dfrac{3}{4}$. The coefficient of friction between the block and the plane is $0.5$.<br><br>A force of magnitude $P\\text{ N}$ acts parallel to the plane, directed up the plane.<br><br>Using the model, find the range of values of $P$ for which the block remains in equilibrium.",
     "steps": [
-        "Identify the exact trigonometric values from $\\tan \\alpha = \\dfrac{ 3 }{ 4 }$:<br><br>\\begin{aligned} \\sin \\alpha &= 0.6 \\cr \\cos \\alpha &= 0.8 \\end{aligned}",
-        "Calculate the component of the weight acting parallel and perpendicular to the inclined plane:<br>• Perpendicular weight component: $mg \\cos \\alpha = 10(9.8)(0.8) = 78.4\\text{ N }$<br>• Parallel weight component: $mg \\sin \\alpha = 10(9.8)(0.6) = 58.8\\text{ N }$",
-        "Calculate the normal reaction force $R$ perpendicular to the slope, and the corresponding maximum limiting friction force $F_{\\text{ max }}$:<br><br>\\begin{aligned} R &= 78.4\\text{ N } \\cr F_{\\text{ max }} &= \\mu R \\cr &= 0.5 \\times 78.4 \\cr &= 39.2\\text{ N } \\end{aligned}",
-        "<strong>Case 1: Point of slipping down (Minimum $P$):</strong><br>When $P$ is at its minimum value, the block is on the verge of sliding down the plane, so friction $F_{\\text{ max }}$ acts up the plane to oppose this motion:<br><br>\\begin{aligned} P_{\\text{ min }} + F_{\\text{ max }} &= mg \\sin \\alpha \\cr P_{\\text{ min }} + 39.2 &= 58.8 \\cr P_{\\text{ min }} &= 19.6\\text{ N } \\end{aligned}",
-        "<strong>Case 2: Point of slipping up (Maximum $P$):</strong><br>When $P$ is at its maximum value, the block is on the verge of sliding up the plane, so friction $F_{\\text{ max }}$ acts down the plane to oppose this motion:<br><br>\\begin{aligned} P_{\\text{ max }} - F_{\\text{ max }} &= mg \\sin \\alpha \\cr P_{\\text{ max }} - 39.2 &= 58.8 \\cr P_{\\text{ max }} &= 98\\text{ N } \\end{aligned}",
-        "Combine the two extremes to state the complete range of values for which the block remains in static equilibrium:<br><br>\\begin{aligned} 19.6 \\le P \\le 98 \\end{aligned}"
+        "From $\\tan \\alpha = \\dfrac{3}{4}$:\\begin{aligned} &\\sin \\alpha = 0.6 \\cr &\\cos \\alpha = 0.8 \\end{aligned}",
+        "Calculate the components of weight:<br><br>• Perpendicular to plane:\\begin{aligned} &mg\\cos \\alpha \\cr &\\quad = 10(9.8)(0.8) \\cr &\\quad = 78.4\\text{ N} \\end{aligned}<br><br>• Parallel to plane:\\begin{aligned} &mg\\sin \\alpha \\cr &\\quad = 10(9.8)(0.6) \\cr &\\quad = 58.8\\text{ N} \\end{aligned}",
+        "Normal reaction is $R = 78.4\\text{ N}$. Calculate maximum limiting friction $F_{\\text{max}}$:\\begin{aligned} &F_{\\text{max}} \\cr &\\quad = \\mu R \\cr &\\quad = 0.5 \\times 78.4 \\cr &\\quad = 39.2\\text{ N} \\end{aligned}",
+        "<strong>Case 1: Point of slipping down (Minimum $P$):</strong><br><br>When $P$ is at its minimum, friction $F_{\\text{max}}$ acts up the plane:\\begin{aligned} &P_{\\text{min}} + F_{\\text{max}} = mg\\sin \\alpha \\cr &P_{\\text{min}} + 39.2 = 58.8 \\cr &P_{\\text{min}} = 19.6\\text{ N} \\end{aligned}",
+        "<strong>Case 2: Point of slipping up (Maximum $P$):</strong><br><br>When $P$ is at its maximum, friction $F_{\\text{max}}$ acts down the plane:\\begin{aligned} &P_{\\text{max}} - F_{\\text{max}} = mg\\sin \\alpha \\cr &P_{\\text{max}} - 39.2 = 58.8 \\cr &P_{\\text{max}} = 98\\text{ N} \\end{aligned}",
+        "Combine both extremes for equilibrium:$$19.6 \\le P \\le 98$$",
+        "Final Answer: $19.6 \\le P \\le 98$"
     ],
     "pi_options": [
         {
             "ans": "$0 \\le P \\le 98$",
-            "feedback": "This occurs if you neglect to find the lower limit $P_{\\text{ min }}$. If $P = 0$, the maximum friction force ($39.2\\text{ N }$) is smaller than the gravitational pull down the slope ($58.8\\text{ N }$), meaning the block will slide down without at least $19.6\\text{ N }$ of support force."
+            "feedback": "This occurs if you neglect to find the lower limit $P_{\\text{min}}$. If $P = 0$, the maximum friction force ($39.2\\text{ N}$) is smaller than the gravitational pull down the slope ($58.8\\text{ N}$), meaning the block will slide down without at least $19.6\\text{ N}$ of support force."
         },
         {
             "ans": "$19.6 \\le P \\le 58.8$",
-            "feedback": "This represents a misunderstanding of the upper limit, setting $P_{\\text{ max }} = 58.8\\text{ N }$ (equal to the parallel weight component). This would only be true if there was no friction; with friction, you can pull with up to $98\\text{ N }$ before the block moves up."
+            "feedback": "This represents a misunderstanding of the upper limit, setting $P_{\\text{max}} = 58.8\\text{ N}$ (equal to the parallel weight component). This would only be true if there was no friction; with friction, you can pull with up to $98\\text{ N}$ before the block moves up."
         },
         {
             "ans": "$39.2 \\le P \\le 78.4$",
-            "feedback": "This range is obtained if you confuse the friction force magnitude ($39.2\\text{ N }$) and reaction force magnitude ($78.4\\text{ N }$) with the equilibrium thresholds of the pulling force."
+            "feedback": "This range is obtained if you confuse the friction force magnitude ($39.2\\text{ N}$) and reaction force magnitude ($78.4\\text{ N}$) with the equilibrium thresholds of the pulling force."
         }
     ],
     "bradley_insight": {
