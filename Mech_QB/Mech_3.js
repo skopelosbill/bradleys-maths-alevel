@@ -391,7 +391,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(a) $392\\text{ N}$, (b) $H_A = 339\\text{ N}, V_A = 147\\text{ N}$, (c) $486\\text{ N}$, (d) $23.4^\\circ$",
-            "feedback": "Incorrect resultant magnitude. Check your Pythagoras calculation: $R_A = \\sqrt{339.48^2 + 147^2} = \\sqrt{136857} \\approx 370\\text{ N}$, not $339.48 + 147$."
+            "feedback": "Incorrect resultant magnitude. Check your Pythagoras calculation: \\begin{aligned}R_A &= \\sqrt{339.48^2 + 147^2}\\cr & = \\sqrt{136857} \\approx 370\\text{ N}\\end{aligned} not $339.48 + 147$."
         },
         {
             "ans": "(a) $452\\text{ N}$, (b) $H_A = 392\\text{ N}, V_A = 147\\text{ N}$, (c) $419\\text{ N}$, (d) $20.6^\\circ$",
