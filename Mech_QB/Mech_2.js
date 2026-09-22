@@ -1995,19 +1995,19 @@ window.ALEVEL_QUESTIONS = [
         "<strong>(ii) Show $P$ never reaches $B$:</strong><br><br>At point $B$, $s = -8\\text{ m}$. Using $s = ut + \\dfrac{1}{2}at^2$:\\begin{aligned} &-8 = -4t + 0.8t^2 \\cr &0.8t^2 - 4t + 8 = 0 \\cr &t^2 - 5t + 10 = 0 \\end{aligned}Check discriminant $\\Delta = b^2 - 4ac$:\\begin{aligned} &\\Delta \\cr &\\quad = (-5)^2 - 4(1)(10) \\cr &\\quad = 25 - 40 \\cr &\\quad = -15 \\end{aligned}Since $\\Delta < 0$, no real solutions for $t$ exist. Therefore, $P$ never reaches $B$.",
         "<strong>(iii) Find acceleration of $Q$ at $A$:</strong><br><br>Differentiate $x_Q(t) = at^3 + bt^2 + ct$:\\begin{aligned} &v_Q(t) = 3at^2 + 2bt + c \\cr &a_Q(t) = 6at + 2b \\end{aligned}Match initial conditions with $P$ at $t = 0\\text{ s}$:\\begin{aligned} &c = -4 \\cr &2b = 1.6 \\cr &b = 0.8 \\end{aligned}So $x_Q(t) = at^3 + 0.8t^2 - 4t$. At $A$ ($t = 5\\text{ s}$, $x_Q = 40\\text{ m}$):\\begin{aligned} &40 = a(5)^3 + 0.8(5)^2 - 4(5) \\cr &40 = 125a + 20 - 20 \\cr &40 = 125a \\cr &a = 0.32 \\end{aligned}",
         "Acceleration equation for $Q$:\\begin{aligned} &a_Q(t) \\cr &\\quad = 6(0.32)t + 2(0.8) \\cr &\\quad = 1.92t + 1.6 \\end{aligned}At $t = 5\\text{ s}$:\\begin{aligned} &a_Q(5) \\cr &\\quad = 1.92(5) + 1.6 \\cr &\\quad = 9.6 + 1.6 \\cr &\\quad = 11.2\\text{ m s}^{-2} \\end{aligned}",
-        "Final Answer: $a = 1.6\\text{ m s}^{-2}, \\text{acceleration} = 11.2\\text{ m s}^{-2}$"
+        "Final Answer: $$a = 1.6\\text{ m s}^{-2},$$ $$ \\text{acceleration} = 11.2\\text{ m s}^{-2}$$"
     ],
     "pi_options": [
         {
-            "ans": "$a = 1.6\\text{ m s}^{-2}, \\text{acceleration} = 9.6\\text{ m s}^{-2}$",
+            "ans": "$$a = 1.6\\text{ m s}^{-2},$$ $$ \\text{acceleration} = 9.6\\text{ m s}^{-2}$$",
             "feedback": "The constant acceleration of $P$ is correct, but an acceleration of $9.6\\text{ m s}^{-2}$ for $Q$ occurs if you forget to add the $2b = 1.6$ term when evaluating the acceleration equation at $t=5$."
         },
         {
-            "ans": "$a = 1.6\\text{ m s}^{-2}, \\text{acceleration} = 14.4\\text{ m s}^{-2}$",
+            "ans": "$$a = 1.6\\text{ m s}^{-2},$$ $$ \\text{acceleration} = 14.4\\text{ m s}^{-2}$$",
             "feedback": "The constant acceleration is correct, but an acceleration of $14.4\\text{ m s}^{-2}$ occurs if you incorrectly calculate $b = 1.6$ by forgetting to divide the initial acceleration by $2$ when setting up $2b = 1.6$."
         },
         {
-            "ans": "$a = 2.0\\text{ m s}^{-2}, \\text{acceleration} = 11.2\\text{ m s}^{-2}$",
+            "ans": "$Sa = 2.0\\text{ m s}^{-2},$$ $$ \\text{acceleration} = 11.2\\text{ m s}^{-2}$$",
             "feedback": "This error occurs if you miscalculate the constant acceleration of $P$ (obtaining $a = 2.0$ instead of $1.6$), although the variable acceleration of $Q$ is computed correctly."
         }
     ],
