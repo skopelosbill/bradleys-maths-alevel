@@ -200,5 +200,208 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: True Collisions Require Simultaneous Equivalence",
         "content": "To prove that two moving bodies collide in 2D, finding a value of $t$ that makes the horizontal distance zero is not enough. You must show that the exact same value of $t$ also reduces the vertical separation to zero simultaneously. If they match at different times, their paths cross, but they do not collide."
     }
+},
+{
+    "id": "012106",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Statics and Moments",
+    "topic": "Rigid Bodies in Equilibrium",
+    "subtopic": [
+        "Parallel Forces",
+        "Tilting",
+        "Modelling Assumptions"
+    ],
+    "img": "images/Mechanics_pngs/012106.png",
+    "question": "The diagram shows a uniform wooden plank $AB$ of weight $120\\text{ N}$ and length $6\\text{ m}$. The plank rests horizontally in equilibrium on two smooth supports at $C$ and $D$, where $AC = x\\text{ m}$ and $CD = 1.5\\text{ m}$. The support at $C$ lies between $A$ and the centre of the plank, and the support at $D$ lies between the centre of the plank and $B$.<br><br>The magnitude of the normal reaction exerted by the support on the plank at $C$ is $80\\text{ N}$.<br><br>The plank is modelled as a uniform rigid rod.<br><br><strong>(a)</strong> Find the magnitude of the normal reaction exerted by the support on the plank at $D$.<br><br><strong>(b)</strong> Find the value of $x$.<br><br>A concrete block, modelled as a particle, is now placed on the plank at end $B$. The plank is on the point of tilting about $D$.<br><br><strong>(c)</strong> Calculate the weight of the concrete block.<br><br><strong>(d)(i)</strong> State one assumption made when modelling the concrete block as a particle.<br><strong>(ii)</strong> Explain how this assumption was used in your calculation in part <strong>(c)</strong>.",
+    "steps": [
+        "<strong>(a) Reaction at $D$:</strong><br><br>Since the plank is in vertical equilibrium, the sum of the upward normal reactions equals the total downward weight:\\begin{aligned} &R_C + R_D = 120 \\cr &80 + R_D = 120 \\cr &R_D = 40\\text{ N} \\end{aligned}",
+        "<strong>(b) Finding the distance $x$:</strong><br><br>The plank is uniform, so its weight of $120\\text{ N}$ acts at its midpoint, $3\\text{ m}$ from $A$.<br><br>Support $C$ is at distance $x$ from $A$, and support $D$ is at distance $(x + 1.5)\\text{ m}$ from $A$.<br><br>Taking moments about $A$:\\begin{aligned} &R_C(x) + R_D(x + 1.5) = 120(3) \\cr &80x + 40(x + 1.5) = 360 \\cr &80x + 40x + 60 = 360 \\cr &120x + 60 = 360 \\cr &120x = 300 \\cr &x = 2.5\\text{ m} \\end{aligned}",
+        "<strong>(c) Tilting about support $D$:</strong><br><br>When the plank is on the point of tilting about $D$, it begins to lift off support $C$. Therefore, the normal reaction at $C$ is zero:\\begin{aligned} R_C = 0\\text{ N} \\end{aligned}<br><br>Support $D$ is at distance $x + 1.5 = 2.5 + 1.5 = 4\\text{ m}$ from $A$.<br><br>The distance from $D$ to the midpoint is:\\begin{aligned} 4 - 3 = 1\\text{ m} \\end{aligned}<br><br>The distance from $D$ to end $B$ is:\\begin{aligned} 6 - 4 = 2\\text{ m} \\end{aligned}<br><br>Taking moments about $D$ for rotational equilibrium:\\begin{aligned} &120(1) = W_{\\text{block}}(2) \\cr &2W_{\\text{block}} = 120 \\cr &W_{\\text{block}} = 60\\text{ N} \\end{aligned}",
+        "<strong>(d) Modelling assumption and application:</strong><br><br><strong>(i)</strong> Modelling the concrete block as a particle assumes that its dimensions are negligible and that its entire weight acts at a single point exactly at end $B$.<br><br><strong>(ii)</strong> In the calculation in part <strong>(c)</strong>, this allowed the perpendicular distance from the pivot $D$ to the line of action of the block's weight to be taken as exactly $6 - 4 = 2\\text{ m}$.",
+        "Final Answer: (a) $40\\text{ N}$, (b) $x = 2.5$, (c) $60\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $40\\text{ N}$, (b) $x = 2.0$, (c) $60\\text{ N}$",
+            "feedback": "Incorrect value for $x$. Check the moment equation about $A$; remember that support $D$ is at $(x + 1.5)\\text{ m}$ from $A$, so $40(x + 1.5)$ expands to $40x + 60$."
+        },
+        {
+            "ans": "(a) $40\\text{ N}$, (b) $x = 2.5$, (c) $120\\text{ N}$",
+            "feedback": "Incorrect weight for the block. In part (c), the pivot is at $D$ ($4\\text{ m}$ from $A$). The distance to the midpoint is $1\\text{ m}$ and the distance to $B$ is $2\\text{ m}$, giving $2W = 120(1)$."
+        },
+        {
+            "ans": "(a) $80\\text{ N}$, (b) $x = 2.5$, (c) $30\\text{ N}$",
+            "feedback": "Incorrect reaction at $D$. Total weight is $120\\text{ N}$, so $R_D = 120 - 80 = 40\\text{ N}$, not $80\\text{ N}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Identifying the Tilting Pivot",
+        "content": "When a rigid body is on the point of tilting about a support, always immediately set the reaction at every other support to zero. A common exam error is continuing to include $R_C = 80\\text{ N}$ in the moment equation for part <strong>(c)</strong>, which causes an algebraic contradiction. Also, remember that modelling a mass as a particle means its weight acts at a single point, fixing the moment arm without having to consider the block's width."
+    }
+},
+{
+    "id": "012107",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Statics and Moments",
+    "topic": "Rigid Bodies in Equilibrium",
+    "subtopic": [
+        "Non-Uniform Rods",
+        "Centre of Mass",
+        "Dual Tilting"
+    ],
+    "img": "images/Mechanics_pngs/012107.png",
+    "question": "The diagram shows a non-uniform metal girder $AB$ of length $6\\text{ m}$ and weight $W\\text{ N}$. The girder rests horizontally in equilibrium on two smooth supports at $C$ and $D$, where $AC = 1\\text{ m}$ and $DB = 1\\text{ m}$.<br><br>When a vertical load of $90\\text{ N}$ is suspended from end $A$, the girder is on the point of tilting about $C$.<br><br>When instead the load of $90\\text{ N}$ is removed and a vertical load of $150\\text{ N}$ is suspended from end $B$, the girder is on the point of tilting about $D$.<br><br>The girder is modelled as a rigid rod.<br><br><strong>(a)</strong> Find the weight $W$ of the girder.<br><br><strong>(b)</strong> Find the distance of the centre of mass of the girder from end $A$.<br><br><strong>(c)</strong> When no additional loads are attached, find the magnitude of the normal reaction exerted by support $C$ on the girder.",
+    "steps": [
+        "<strong>(a) & (b) Setting up dual tilting equations:</strong><br><br>Let the centre of mass of the girder be at distance $\\bar{x}\\text{ m}$ from $A$.<br><br>The supports are located at $C$ ($1\\text{ m}$ from $A$) and $D$ ($6 - 1 = 5\\text{ m}$ from $A$).<br><br><strong>Condition 1:</strong> When $90\\text{ N}$ is at $A$, the girder tilts about $C$, so $R_D = 0$. Taking moments about $C$:\\begin{aligned} &90(1) = W(\\bar{x} - 1) \\cr &W\\bar{x} - W = 90 \\quad \\text{--- [Eq 1]} \\end{aligned}",
+        "<strong>Condition 2 and solving simultaneously:</strong><br><br>When $150\\text{ N}$ is at $B$, the girder tilts about $D$, so $R_C = 0$. Taking moments about $D$:\\begin{aligned} &W(5 - \\bar{x}) = 150(1) \\cr &5W - W\\bar{x} = 150 \\quad \\text{--- [Eq 2]} \\end{aligned}<br><br>Adding [Eq 1] and [Eq 2] eliminates the non-linear product $W\\bar{x}$:\\begin{aligned} &(W\\bar{x} - W) + (5W - W\\bar{x}) \\cr &\\qquad = 90 + 150 \\cr &4W = 240 \\cr &W = 60\\text{ N} \\end{aligned}<br><br>Substituting $W = 60$ into [Eq 1]:\\begin{aligned} &60(\\bar{x} - 1) = 90 \\cr &\\bar{x} - 1 = 1.5 \\cr &\\bar{x} = 2.5\\text{ m} \\end{aligned}",
+        "<strong>(c) Reaction at $C$ with no additional loads:</strong><br><br>With no extra loads, the girder of weight $60\\text{ N}$ acts at $\\bar{x} = 2.5\\text{ m}$.<br><br>Taking moments about $D$ ($5\\text{ m}$ from $A$):\\begin{aligned} &R_C(5 - 1) = W(5 - 2.5) \\cr &4R_C = 60(2.5) \\cr &4R_C = 150 \\cr &R_C = 37.5\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $60\\text{ N}$, (b) $2.5\\text{ m}$, (c) $37.5\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $60\\text{ N}$, (b) $3.0\\text{ m}$, (c) $30\\text{ N}$",
+            "feedback": "Incorrect centre of mass. You have assumed the girder is uniform with centre of mass at $3.0\\text{ m}$, but the question explicitly states it is non-uniform."
+        },
+        {
+            "ans": "(a) $80\\text{ N}$, (b) $2.5\\text{ m}$, (c) $40\\text{ N}$",
+            "feedback": "Incorrect girder weight. Check the elimination step when adding the two moment equations: $5W - W = 4W$, giving $4W = 240 \\implies W = 60\\text{ N}$."
+        },
+        {
+            "ans": "(a) $60\\text{ N}$, (b) $3.5\\text{ m}$, (c) $22.5\\text{ N}$",
+            "feedback": "Incorrect centre of mass position. $\\bar{x} = 3.5\\text{ m}$ would mean the centre of mass is closer to $B$ than $A$, but the smaller tipping force at $A$ ($90\\text{ N}$ vs $150\\text{ N}$) indicates it must lie closer to $A$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Eliminating Non-Linear Products",
+        "content": "In non-uniform beam problems with unknown weight $W$ and unknown centre of mass $\\bar{x}$, the moment equations contain the product $W\\bar{x}$. Rather than dividing equations or substituting messy fractions, notice that taking moments about the two supports yields $+W\\bar{x}$ in one equation and $-W\\bar{x}$ in the other. Adding the two equations immediately eliminates the product term, giving $W$ directly in one clean step."
+    }
+},
+{
+    "id": "012108",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Statics and Moments",
+    "topic": "Rigid Bodies in Equilibrium",
+    "subtopic": [
+        "Moving Loads",
+        "Overhangs",
+        "Range of Equilibrium"
+    ],
+    "img": "images/Mechanics_pngs/012108.png",
+    "question": "The diagram shows a uniform scaffolding plank $AB$ of mass $50\\text{ kg}$ and length $10\\text{ m}$. The plank rests horizontally on two smooth trestles at $C$ and $D$, where $AC = 2\\text{ m}$ and $DB = 3\\text{ m}$.<br><br>A construction worker of mass $80\\text{ kg}$ stands on the plank at a distance of $x\\text{ metres}$ from end $A$. The plank is modelled as a uniform rigid rod and the worker is modelled as a particle.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the normal reaction at each trestle when the worker stands at the midpoint of the plank.<br><br><strong>(b)</strong> Find the minimum distance from $A$ to which the worker can walk towards end $A$ without the plank tilting.<br><br><strong>(c)</strong> Find the maximum distance from $A$ to which the worker can walk towards end $B$ without the plank tilting.<br><br><strong>(d)</strong> Hence state the complete range of values of $x$ for which the plank remains in horizontal equilibrium.",
+    "steps": [
+        "<strong>(a) Worker at the midpoint ($x = 5\\text{ m}$):</strong><br><br>The weight of the plank acts at its midpoint, $5\\text{ m}$ from $A$. When the worker is also at $x = 5\\text{ m}$, both weights act at the same point:<br><br>Total downward weight:\\begin{aligned} W_{\\text{tot}} &= (50 + 80)g \\cr &= 130(9.8) \\cr &= 1274\\text{ N} \\end{aligned}<br><br>The distance between the trestles is $CD = (10 - 3) - 2 = 5\\text{ m}$.<br><br>Taking moments about $C$:\\begin{aligned} &R_D(5) = 1274(5 - 2) \\cr &5R_D = 1274(3) \\cr &5R_D = 3822 \\cr &R_D = 764.4\\text{ N} \\end{aligned}<br><br>Resolving vertically:\\begin{aligned} R_C &= 1274 - 764.4 \\cr &= 509.6\\text{ N} \\end{aligned}<br><br>To 3 significant figures, $R_C = 510\\text{ N}$ and $R_D = 764\\text{ N}$.",
+        "<strong>(b) Tilting about trestle $C$:</strong><br><br>As the worker walks towards end $A$ ($x < 2$), the plank tends to tilt about $C$, so $R_D = 0$.<br><br>Taking moments about $C$:\\begin{aligned} &80g(2 - x) = 50g(5 - 2) \\cr &80(2 - x) = 50(3) \\cr &80(2 - x) = 150 \\cr &2 - x = 1.875 \\cr &x = 0.125\\text{ m} \\end{aligned}",
+        "<strong>(c) Tilting about trestle $D$:</strong><br><br>As the worker walks past trestle $D$ towards end $B$ ($x > 7$), the plank tends to tilt about $D$, so $R_C = 0$.<br><br>Taking moments about $D$ ($7\\text{ m}$ from $A$):\\begin{aligned} &80g(x - 7) = 50g(7 - 5) \\cr &80(x - 7) = 50(2) \\cr &80(x - 7) = 100 \\cr &x - 7 = 1.25 \\cr &x = 8.25\\text{ m} \\end{aligned}",
+        "<strong>(d) Range of equilibrium:</strong><br><br>For the plank to remain in horizontal equilibrium without tilting about either support, $x$ must satisfy:\\begin{aligned} 0.125 \\le x \\le 8.25 \\end{aligned}",
+        "Final Answer: (a) $R_C = 510\\text{ N}, R_D = 764\\text{ N}$, (b) $0.125\\text{ m}$, (c) $8.25\\text{ m}$, (d) $0.125 \\le x \\le 8.25$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $R_C = 764\\text{ N}, R_D = 510\\text{ N}$, (b) $0.125\\text{ m}$, (c) $8.25\\text{ m}$, (d) $0.125 \\le x \\le 8.25$",
+            "feedback": "Incorrect reactions in part (a). The midpoint ($5\\text{ m}$) is closer to $D$ ($7\\text{ m}$) than to $C$ ($2\\text{ m}$), so the reaction at $D$ must be larger than at $C$ ($R_D = 764\\text{ N}, R_C = 510\\text{ N}$)."
+        },
+        {
+            "ans": "(a) $R_C = 510\\text{ N}, R_D = 764\\text{ N}$, (b) $0.250\\text{ m}$, (c) $8.50\\text{ m}$, (d) $0.250 \\le x \\le 8.50$",
+            "feedback": "Incorrect limits of motion. In parts (b) and (c), remember that the midpoint of the plank is at $5\\text{ m}$, so the distance from $C$ to the centre is $3\\text{ m}$ (giving moment $150g$) and from $D$ to the centre is $2\\text{ m}$ (giving moment $100g$)."
+        },
+        {
+            "ans": "(a) $R_C = 510\\text{ N}, R_D = 764\\text{ N}$, (b) $0.125\\text{ m}$, (c) $8.25\\text{ m}$, (d) $0 \\le x \\le 10$",
+            "feedback": "Incorrect range of equilibrium. The worker cannot walk the entire length of the plank ($0 \\le x \\le 10$) without it tilting because of the overhangs beyond both trestles."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Dividing Through by Gravity",
+        "content": "Notice that in parts <strong>(b)</strong> and <strong>(c)</strong>, the factor of $g$ appears on both sides of the moment equations. Always divide through by $g$ immediately rather than multiplying out $80 \\times 9.8 = 784$ and $50 \\times 9.8 = 490$. This keeps the arithmetic simple, exact, and completely free from premature rounding errors."
+    }
+},
+{
+    "id": "012109",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Statics and Moments",
+    "topic": "Rigid Bodies in Equilibrium",
+    "subtopic": [
+        "Cables",
+        "Breaking Tension",
+        "Slackness Condition"
+    ],
+    "img": "images/Mechanics_pngs/012109.png",
+    "question": "The diagram shows a uniform steel girder $AB$ of length $6\\text{ m}$ and mass $120\\text{ kg}$. The girder is suspended horizontally by two vertical, light, inextensible cables. One cable is attached to the girder at end $A$ and the second cable is attached at a point $C$, where $AC = 4\\text{ m}$.<br><br>A machine of mass $M\\text{ kg}$, modelled as a particle, is placed on the girder at end $B$.<br><br>Each cable has a maximum safe working tension of $1800\\text{ N}$ without snapping. The cables cannot support compressive forces (they become slack if tension reaches zero).<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> When $M = 0$, calculate the tension in the cable at $A$ and the tension in the cable at $C$.<br><br><strong>(b)</strong> Find the tension in the cable at $C$ at the instant when the cable at $A$ becomes slack.<br><br><strong>(c)</strong> Determine the greatest mass $M$ that can be placed at $B$ such that the girder remains in horizontal equilibrium with neither cable breaking nor becoming slack.",
+    "steps": [
+        "<strong>(a) Tensions when $M = 0$:</strong><br><br>Weight of the girder acts at its midpoint ($3\\text{ m}$ from $A$):\\begin{aligned} W &= 120(9.8) \\cr &= 1176\\text{ N} \\end{aligned}<br><br>Taking moments about $A$:\\begin{aligned} &T_C(4) = 1176(3) \\cr &4T_C = 3528 \\cr &T_C = 882\\text{ N} \\end{aligned}<br><br>Resolving vertically:\\begin{aligned} T_A &= 1176 - 882 \\cr &= 294\\text{ N} \\end{aligned}",
+        "<strong>(b) Tension in cable $C$ when cable $A$ is slack:</strong><br><br>When cable $A$ becomes slack, $T_A = 0\\text{ N}$. The girder is on the point of tilting about $C$.<br><br>Taking moments about $C$:\\begin{aligned} &120g(4 - 3) = Mg(6 - 4) \\cr &120(1) = 2M \\cr &M = 60\\text{ kg} \\end{aligned}<br><br>Resolving vertically to find $T_C$ at this instant:\\begin{aligned} T_C &= (120 + M)g \\cr &= (120 + 60)(9.8) \\cr &= 180(9.8) \\cr &= 1764\\text{ N} \\end{aligned}",
+        "<strong>(c) Greatest safe mass $M$:</strong><br><br>There are two physical constraints on the system:<br><br><strong>1. Breaking constraint:</strong> Cable $C$ snaps if $T_C > 1800\\text{ N}$:\\begin{aligned} &(120 + M)(9.8) \\le 1800 \\cr &120 + M \\le 183.67 \\cr &M \\le 63.7\\text{ kg} \\end{aligned}<br><br><strong>2. Slackness constraint:</strong> Cable $A$ goes slack if $T_A < 0\\text{ N}$, causing the girder to tilt:\\begin{aligned} M \\le 60\\text{ kg} \\end{aligned}<br><br>At $M = 60\\text{ kg}$, $T_C = 1764\\text{ N} < 1800\\text{ N}$, so cable $C$ has not snapped. If $M > 60\\text{ kg}$, cable $A$ goes slack and equilibrium is broken before cable $C$ reaches its $1800\\text{ N}$ limit.<br><br>Therefore, the greatest allowable mass is $M = 60\\text{ kg}$.",
+        "Final Answer: (a) $T_A = 294\\text{ N}, T_C = 882\\text{ N}$, (b) $1764\\text{ N}$, (c) $60\\text{ kg}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T_A = 294\\text{ N}, T_C = 882\\text{ N}$, (b) $1800\\text{ N}$, (c) $63.7\\text{ kg}$",
+            "feedback": "Incorrect limiting factor in part (c). Equating $T_C = 1800\\text{ N}$ gives $M = 63.7\\text{ kg}$, but at that mass $T_A$ would be negative. Cable $A$ becomes slack at $M = 60\\text{ kg}$, which breaks equilibrium first."
+        },
+        {
+            "ans": "(a) $T_A = 882\\text{ N}, T_C = 294\\text{ N}$, (b) $1764\\text{ N}$, (c) $60\\text{ kg}$",
+            "feedback": "Incorrect initial tensions in part (a). The centre of mass ($3\\text{ m}$) is closer to $C$ ($4\\text{ m}$) than to $A$ ($0\\text{ m}$), so cable $C$ carries the larger tension ($882\\text{ N}$)."
+        },
+        {
+            "ans": "(a) $T_A = 294\\text{ N}, T_C = 882\\text{ N}$, (b) $1176\\text{ N}$, (c) $60\\text{ kg}$",
+            "feedback": "Incorrect tension in part (b). At the instant cable $A$ becomes slack, cable $C$ must support both the weight of the girder ($120g$) and the machine ($60g$), so $T_C = 180g = 1764\\text{ N}$, not $1176\\text{ N}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Cables Cannot Push",
+        "content": "A very frequent trap in suspended beam questions is assuming a cable breaks first. Many students simply equate $T_C = 1800\\text{ N}$ to find $M \\approx 63.7\\text{ kg}$. However, a cable is not a rigid strut; it cannot support a compressive (downward) thrust. Once $M$ exceeds $60\\text{ kg}$, $T_A$ would need to be negative to maintain balance, meaning cable $A$ goes slack and the girder tilts about $C$ immediately."
+    }
+},
+{
+    "id": "012110",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Statics and Moments",
+    "topic": "Rigid Bodies in Equilibrium",
+    "subtopic": [
+        "Smooth Hinge",
+        "Non-Concurrent Forces",
+        "Inclined Tension"
+    ],
+    "img": "images/Mechanics_pngs/012110.png",
+    "question": "The diagram shows a uniform beam $AB$ of length $3\\text{ m}$ and mass $20\\text{ kg}$. End $A$ is attached to a vertical wall by a smooth hinge. The beam is held horizontally in equilibrium by a light inextensible wire attached to end $B$ and to a point $C$ on the wall vertically above $A$. The wire makes an angle of $30^\\circ$ with the horizontal beam.<br><br>A load of mass $15\\text{ kg}$, modelled as a particle, is suspended from the beam at a point $D$, where $AD = 2\\text{ m}$.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> By taking moments about $A$, calculate the tension in the wire.<br><br><strong>(b)</strong> Find the horizontal and vertical components of the reaction force exerted by the hinge on the beam at $A$.<br><br><strong>(c)</strong> Calculate the magnitude of the resultant reaction force exerted by the hinge at $A$, giving your answer correct to 3 significant figures.<br><br><strong>(d)</strong> Find the angle that the resultant reaction force at $A$ makes with the horizontal, giving your answer correct to the nearest $0.1^\\circ$.",
+    "steps": [
+        "<strong>(a) Calculating the tension in the wire:</strong><br><br>The weight of the beam is $20g = 196\\text{ N}$ acting at its midpoint ($1.5\\text{ m}$ from $A$).<br><br>The load has weight $15g = 147\\text{ N}$ acting at $D$ ($2\\text{ m}$ from $A$).<br><br>The tension $T$ acts at $B$ ($3\\text{ m}$ from $A$) at $30^\\circ$ above the horizontal. The perpendicular component of tension is $T\\sin 30^\\circ$.<br><br>Taking moments about hinge $A$:\\begin{aligned} &T\\sin 30^\\circ(3) = 20g(1.5) + 15g(2) \\cr &1.5T = 30g + 30g \\cr &1.5T = 60g \\cr &1.5T = 60(9.8) \\cr &1.5T = 588 \\cr &T = 392\\text{ N} \\end{aligned}",
+        "<strong>(b) Resolving forces at hinge $A$:</strong><br><br>Let $H_A$ be the horizontal component of the reaction at $A$ (acting away from the wall) and $V_A$ be the vertical component (acting upwards).<br><br>Resolving horizontally ($\\rightarrow$):\\begin{aligned} H_A - T\\cos 30^\\circ &= 0 \\cr H_A &= 392\\cos 30^\\circ \\cr &= 392\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &= 196\\sqrt{3} \\cr &\\approx 339.48\\text{ N} \\end{aligned}<br><br>Resolving vertically ($\\uparrow$):\\begin{aligned} &V_A + T\\sin 30^\\circ - (20 + 15)g = 0 \\cr &V_A + 392(0.5) - 35(9.8) = 0 \\cr &V_A + 196 - 343 = 0 \\cr &V_A = 147\\text{ N} \\end{aligned}<br><br>To 3 significant figures, $H_A = 339\\text{ N}$ and $V_A = 147\\text{ N}$.",
+        "<strong>(c) Magnitude of resultant reaction force:</strong><br><br>Using Pythagoras' theorem:\\begin{aligned} R_A &= \\sqrt{H_A^2 + V_A^2} \\cr &= \\sqrt{(196\\sqrt{3})^2 + 147^2} \\cr &= \\sqrt{115248 + 21609} \\cr &= \\sqrt{136857} \\cr &\\approx 370\\text{ N} \\end{aligned}",
+        "<strong>(d) Direction of resultant reaction force:</strong><br><br>Let $\\phi$ be the angle the resultant makes above the horizontal:\\begin{aligned} \\tan\\phi &= \\dfrac{V_A}{H_A} \\cr &= \\dfrac{147}{339.48} \\cr &\\approx 0.4330 \\cr \\phi &= \\arctan(0.4330) \\cr &\\approx 23.4^\\circ \\end{aligned}",
+        "Final Answer: (a) $392\\text{ N}$, (b) $H_A = 339\\text{ N}, V_A = 147\\text{ N}$, (c) $370\\text{ N}$, (d) $23.4^\\circ$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $392\\text{ N}$, (b) $H_A = 196\\text{ N}, V_A = 339\\text{ N}$, (c) $370\\text{ N}$, (d) $60.0^\\circ$",
+            "feedback": "Incorrect components at the hinge. You have swapped sine and cosine when resolving: the horizontal component is $T\\cos 30^\\circ \\approx 339\\text{ N}$ and the vertical component of tension is $T\\sin 30^\\circ = 196\\text{ N}$, giving $V_A = 147\\text{ N}$."
+        },
+        {
+            "ans": "(a) $392\\text{ N}$, (b) $H_A = 339\\text{ N}, V_A = 147\\text{ N}$, (c) $486\\text{ N}$, (d) $23.4^\\circ$",
+            "feedback": "Incorrect resultant magnitude. Check your Pythagoras calculation: $R_A = \\sqrt{339.48^2 + 147^2} = \\sqrt{136857} \\approx 370\\text{ N}$, not $339.48 + 147$."
+        },
+        {
+            "ans": "(a) $452\\text{ N}$, (b) $H_A = 392\\text{ N}, V_A = 147\\text{ N}$, (c) $419\\text{ N}$, (d) $20.6^\\circ$",
+            "feedback": "Incorrect tension calculation in part (a). Remember that the perpendicular component of the tension to the beam is $T\\sin 30^\\circ$, not $T\\cos 30^\\circ$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Pivot at the Unknown Hinge",
+        "content": "A smooth hinge can exert a reaction force in any direction within the vertical plane, meaning it introduces two unknowns ($H_A$ and $V_A$). By taking moments about the hinge $A$ first, both of these unknown forces have zero moment arm, allowing you to find the tension $T$ in a single equation without having to set up simultaneous equations."
+    }
 }
 ];
