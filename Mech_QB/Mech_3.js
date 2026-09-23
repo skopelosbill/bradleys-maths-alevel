@@ -1214,5 +1214,209 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Displacement vs Position Vector",
         "content": "Remember the distinction between displacement $\\mathbf{s}$ and position vector $\\mathbf{r}$. The SUVAT formula evaluates displacement from the starting point: $\\mathbf{s} = \\dfrac{1}{2}\\mathbf{a}t^2$. When the particle does not start at the origin, you must add the initial position vector: $\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{s}$."
     }
+},
+{
+    "id": "012131",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Horizontal Table",
+        "Pulleys",
+        "Algebraic Friction"
+    ],
+    "img": "images/Mechanics_pngs/012131.png",
+    "question": "The diagram shows a block of mass $3m\\text{ kg}$ resting on a rough horizontal table and a particle of mass $m\\text{ kg}$ hanging freely. The two bodies are connected by a light inextensible string which passes over a small smooth pulley fixed at the edge of the table. The section of string between the block and the pulley is horizontal.<br><br>The system is released from rest with the string taut. During the subsequent motion, the friction force between the table and the block has magnitude $\\dfrac{1}{4}mg\\text{ N}$.<br><br><strong>(a)</strong> Find an expression in terms of $g$ for the acceleration of the system.<br><br><strong>(b)</strong> Find an expression in terms of $m$ and $g$ for the tension in the string.<br><br><strong>(c)</strong> State how the assumption that the pulley is smooth has been used in your calculations.",
+    "steps": [
+        "<strong>(a) Finding acceleration $a$:</strong><br><br>Let $a$ be the acceleration of the system and $T$ be the tension in the string.<br><br>Equation of motion for the hanging particle (downwards):\\begin{aligned} mg - T = ma \\quad \\text{--- [Eq 1]} \\end{aligned}<br><br>Equation of motion for the block on the table (towards pulley):\\begin{aligned} &T - F = 3ma \\cr &T - \\dfrac{1}{4}mg = 3ma \\quad \\text{--- [Eq 2]} \\end{aligned}<br><br>Adding [Eq 1] and [Eq 2]:\\begin{aligned} &mg - \\dfrac{1}{4}mg = 4ma \\cr &\\dfrac{3}{4}mg = 4ma \\cr &a = \\dfrac{3}{16}g \\end{aligned}",
+        "<strong>(b) Finding tension $T$:</strong><br><br>Substituting $a = \\dfrac{3}{16}g$ into [Eq 1]:\\begin{aligned} T &= mg - ma \\cr &= mg - m\\left(\\dfrac{3}{16}g\\right) \\cr &= mg\\left(1 - \\dfrac{3}{16}\\right) \\cr &= \\dfrac{13}{16}mg \\end{aligned}",
+        "<strong>(c) Assumption about the pulley:</strong><br><br>The assumption that the pulley is smooth means there is no friction at the pulley axle. Consequently, the tension $T$ is uniform throughout both sections of the string (the horizontal part and the vertical part).",
+        "Final Answer: (a) $\\dfrac{3}{16}g$, (b) $\\dfrac{13}{16}mg$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\dfrac{3}{16}g$, (b) $\\dfrac{9}{16}mg$",
+            "feedback": "Forgot the friction term when finding tension. From the block's equation, $T = 3ma + F = 3m\\left(\\frac{3}{16}g\\right) + \\frac{1}{4}mg = \\frac{13}{16}mg$, not just $3ma$."
+        },
+        {
+            "ans": "(a) $\\dfrac{1}{4}g$, (b) $\\dfrac{3}{4}mg$",
+            "feedback": "Forgot to include the hanging particle's mass in the total system mass. The total accelerating mass is $3m + m = 4m$, giving $\\frac{3}{4}mg = 4ma$ and $a = \\frac{3}{16}g$."
+        },
+        {
+            "ans": "(a) $\\dfrac{3}{16}g$, (b) $\\dfrac{15}{16}mg$",
+            "feedback": "Incorrect sign in Newton's second law for the hanging mass. Since the particle accelerates downwards, $mg - T = ma$, so $T = m(g - a) = \\frac{13}{16}mg$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Modelling Assumptions",
+        "content": "Exam boards frequently test modelling assumptions. Remember the distinct roles: a <em>light</em> string means tension is uniform along its length; an <em>inextensible</em> string means both particles share the same magnitude of acceleration; a <em>smooth</em> pulley ensures tension does not change across the pulley."
+    }
+},
+{
+    "id": "012132",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Static Equilibrium Limits",
+        "Friction",
+        "External Pulling Force"
+    ],
+    "img": "images/Mechanics_pngs/012132.png",
+    "question": "The diagram shows a block $A$ of mass $M_1 = 5\\text{ kg}$ resting on a rough horizontal table. Block $A$ is connected by a light inextensible string passing over a small smooth pulley at the edge of the table to a hanging particle $B$ of mass $M_2 = 3\\text{ kg}$. The string from $A$ to the pulley is horizontal. The coefficient of friction between block $A$ and the table is $\\mu = 0.2$.<br><br>An external horizontal force of magnitude $P\\text{ N}$ acts on block $A$, directed away from the pulley.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Find the range of values of $P$ for which the system remains in static equilibrium with the string taut.<br><br>In a second scenario, the force $P$ is set to $10\\text{ N}$ and the system is released from rest.<br><br><strong>(b)</strong> Explain why block $A$ accelerates towards the pulley.<br><br><strong>(c)</strong> Calculate:<br><strong>(i)</strong> the magnitude of the acceleration of the system,<br><strong>(ii)</strong> the tension in the string during this motion.",
+    "steps": [
+        "<strong>(a) Range of $P$ for static equilibrium:</strong><br><br>For particle $B$ in equilibrium:\\begin{aligned} T &= M_2 g \\cr &= 3(9.8) \\cr &= 29.4\\text{ N} \\end{aligned}<br><br>Normal reaction on block $A$:\\begin{aligned} R &= 5g \\cr &= 5(9.8) \\cr &= 49\\text{ N} \\end{aligned}<br><br>Maximum frictional force:\\begin{aligned} F_{\\text{max}} &= \\mu R \\cr &= 0.2(49) \\cr &= 9.8\\text{ N} \\end{aligned}<br><br><strong>Case 1 (impending motion towards pulley):</strong> Friction acts away from the pulley:\\begin{aligned} &P + F_{\\text{max}} \\ge T \\cr &P + 9.8 \\ge 29.4 \\cr &P \\ge 19.6\\text{ N} \\end{aligned}<br><br><strong>Case 2 (impending motion away from pulley):</strong> Friction acts towards the pulley:\\begin{aligned} &P \\le T + F_{\\text{max}} \\cr &P \\le 29.4 + 9.8 \\cr &P \\le 39.2\\text{ N} \\end{aligned}<br><br>Range for equilibrium: $19.6 \\le P \\le 39.2$.",
+        "<strong>(b) Justifying acceleration towards pulley:</strong><br><br>When $P = 10\\text{ N}$, the net force pulling away from the pulley (excluding friction) is $P = 10\\text{ N}$.<br><br>The string tension attempting to pull $A$ towards the pulley is $29.4\\text{ N}$.<br><br>The net driving force towards the pulley is:\\begin{aligned} 29.4 - 10 = 19.4\\text{ N} \\end{aligned}<br><br>Since $19.4\\text{ N} > F_{\\text{max}} = 9.8\\text{ N}$, friction is completely overcome, and block $A$ accelerates towards the pulley.",
+        "<strong>(c)(i) Magnitude of acceleration:</strong><br><br>Since motion is towards the pulley, friction $F = 9.8\\text{ N}$ acts away from the pulley.<br><br>Equations of motion:\\begin{aligned} &B: 29.4 - T = 3a \\cr &A: T - 10 - 9.8 = 5a \\cr &A: T - 19.8 = 5a \\end{aligned}<br><br>Adding the equations:\\begin{aligned} &29.4 - 19.8 = 8a \\cr &9.6 = 8a \\cr &a = 1.2\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(c)(ii) Tension in the string:</strong><br><br>Using the equation for $B$:\\begin{aligned} T &= 29.4 - 3a \\cr &= 29.4 - 3(1.2) \\cr &= 29.4 - 3.6 \\cr &= 25.8\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $19.6 \\le P \\le 39.2$, (c)(i) $1.2\\text{ m s}^{-2}$, (c)(ii) $25.8\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0 \\le P \\le 19.6$, (c)(i) $1.2\\text{ m s}^{-2}$, (c)(ii) $25.8\\text{ N}$",
+            "feedback": "Incorrect equilibrium range in part (a). The tension is $29.4\\text{ N}$ and maximum friction is $9.8\\text{ N}$, so equilibrium requires $29.4 - 9.8 \\le P \\le 29.4 + 9.8$, giving $19.6 \\le P \\le 39.2$."
+        },
+        {
+            "ans": "(a) $19.6 \\le P \\le 39.2$, (c)(i) $1.2\\text{ m s}^{-2}$, (c)(ii) $29.4\\text{ N}$",
+            "feedback": "Assumed static tension in part (c)(ii). Because the system accelerates downwards, $T = 3(g - a) = 25.8\\text{ N}$, not $3g = 29.4\\text{ N}$."
+        },
+        {
+            "ans": "(a) $19.6 \\le P \\le 39.2$, (c)(i) $2.4\\text{ m s}^{-2}$, (c)(ii) $22.2\\text{ N}$",
+            "feedback": "Divided the net force by the mass of block $A$ alone ($5\\text{ kg}$) instead of the total system mass ($5 + 3 = 8\\text{ kg}$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Dual Direction Friction Limits",
+        "content": "Whenever an external force can vary, friction can act in either direction depending on which way motion impends. If $P$ is small, the hanging weight pulls the block right, so friction acts left ($P \\ge T - F_{\\text{max}}$). If $P$ is large, it pulls the block left, so friction acts right ($P \\le T + F_{\\text{max}}$)."
+    }
+},
+{
+    "id": "012133",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Three-Body System",
+        "Dual Pulleys",
+        "Differing Tensions"
+    ],
+    "img": "images/Mechanics_pngs/012133.png",
+    "question": "The diagram shows a block $B$ of mass $6\\text{ kg}$ resting on a rough horizontal table. Light inextensible strings are attached to each side of block $B$:<br>One string passes over a small smooth pulley at the left edge of the table and supports a hanging particle $A$ of mass $1\\text{ kg}$.<br>The second string passes over a small smooth pulley at the right edge of the table and supports a hanging particle $C$ of mass $3\\text{ kg}$.<br><br>Both sections of string on the table are horizontal. The coefficient of friction between block $B$ and the table is $\\mu = 0.2$. The system is released from rest with all sections of string taut.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Determine whether the system moves, and if so, state the direction of motion of block $B$, fully justifying your answer.<br><br><strong>(b)</strong> Calculate the acceleration of the system.<br><br><strong>(c)</strong> Calculate:<br><strong>(i)</strong> the tension in the string connected to particle $A$,<br><strong>(ii)</strong> the tension in the string connected to particle $C$.",
+    "steps": [
+        "<strong>(a) Determining motion and direction:</strong><br><br>Normal reaction on block $B$:\\begin{aligned} R_B &= 6g \\cr &= 6(9.8) \\cr &= 58.8\\text{ N} \\end{aligned}<br><br>Maximum friction on $B$:\\begin{aligned} F_{\\text{max}} &= \\mu R_B \\cr &= 0.2(58.8) \\cr &= 11.76\\text{ N} \\end{aligned}<br><br>Pull to the right from $C$ is $3g = 29.4\\text{ N}$.<br>Pull to the left from $A$ is $1g = 9.8\\text{ N}$.<br><br>Net external driving force to the right:\\begin{aligned} 29.4 - 9.8 = 19.6\\text{ N} \\end{aligned}<br><br>Since $19.6\\text{ N} > F_{\\text{max}} = 11.76\\text{ N}$, the system moves. Block $B$ accelerates to the right (towards pulley $C$).",
+        "<strong>(b) Calculating acceleration:</strong><br><br>Total mass of the system:\\begin{aligned} m_{\\text{tot}} &= 1 + 6 + 3 \\cr &= 10\\text{ kg} \\end{aligned}<br><br>Net resultant force driving the system:\\begin{aligned} F_{\\text{net}} &= 29.4 - 9.8 - 11.76 \\cr &= 7.84\\text{ N} \\end{aligned}<br><br>Using Newton's second law:\\begin{aligned} a &= \\dfrac{F_{\\text{net}}}{m_{\\text{tot}}} \\cr &= \\dfrac{7.84}{10} \\cr &= 0.784\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(c) Calculating tensions:</strong><br><br><strong>(i) Tension $T_A$:</strong> Particle $A$ accelerates upwards at $a = 0.784\\text{ m s}^{-2}$:\\begin{aligned} T_A - 1g &= 1a \\cr T_A &= 9.8 + 1(0.784) \\cr &= 10.584\\text{ N} \\cr &\\approx 10.6\\text{ N} \\end{aligned}<br><br><strong>(ii) Tension $T_C$:</strong> Particle $C$ accelerates downwards at $a = 0.784\\text{ m s}^{-2}$:\\begin{aligned} 3g - T_C &= 3a \\cr T_C &= 3(9.8) - 3(0.784) \\cr &= 29.4 - 2.352 \\cr &= 27.048\\text{ N} \\cr &\\approx 27.0\\text{ N} \\end{aligned}",
+        "Final Answer: (a) Moves to the right, (b) $0.784\\text{ m s}^{-2}$, (c)(i) $10.6\\text{ N}$, (c)(ii) $27.0\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Remains at rest, (b) $0\\text{ m s}^{-2}$, (c)(i) $9.8\\text{ N}$, (c)(ii) $29.4\\text{ N}$",
+            "feedback": "Incorrect conclusion in part (a). The difference between the hanging weights is $29.4 - 9.8 = 19.6\\text{ N}$, which strictly exceeds the maximum friction $11.76\\text{ N}$, so motion must occur."
+        },
+        {
+            "ans": "(a) Moves to the right, (b) $0.784\\text{ m s}^{-2}$, (c)(i) $27.0\\text{ N}$, (c)(ii) $10.6\\text{ N}$",
+            "feedback": "Swapped the two tensions in part (c). $T_C$ must exceed $T_A$ to accelerate block $B$ to the right, so $T_C \\approx 27.0\\text{ N}$ and $T_A \\approx 10.6\\text{ N}$."
+        },
+        {
+            "ans": "(a) Moves to the right, (b) $1.31\\text{ m s}^{-2}$, (c)(i) $11.1\\text{ N}$, (c)(ii) $25.5\\text{ N}$",
+            "feedback": "Omitted the friction force on block $B$ when applying Newton's second law, dividing $19.6\\text{ N}$ by $10\\text{ kg}$ instead of $7.84\\text{ N}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Two Separate Strings",
+        "content": "Never assume tension is equal across two separate strings. The string on the left has tension $T_A = 10.6\\text{ N}$, while the string on the right has tension $T_C = 27.0\\text{ N}$. They are completely distinct physical entities connected to opposite sides of block $B$."
+    }
+},
+{
+    "id": "012134",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Dynamics and Kinematics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Multi-Stage Motion",
+        "Floor Impact",
+        "Slack String",
+        "Stopping Distance"
+    ],
+    "img": "images/Mechanics_pngs/012134.png",
+    "question": "The diagram shows a block $A$ of mass $3\\text{ kg}$ on a rough horizontal table connected by a light inextensible string to a particle $B$ of mass $2\\text{ kg}$. The string passes over a small smooth pulley fixed at the edge of the table. The coefficient of friction between block $A$ and the table is $\\mu = 0.25$.<br><br>Particle $B$ is initially held at a height of $h = 0.9\\text{ m}$ above horizontal ground.<br><br>The system is released from rest with the string taut. When particle $B$ hits the ground, it does not rebound, and the string immediately becomes slack. Block $A$ continues to slide along the table without reaching the pulley.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the acceleration of the system while particle $B$ is descending.<br><br><strong>(b)</strong> Find the speed of particle $B$ at the instant it hits the ground.<br><br><strong>(c)</strong> Calculate the deceleration of block $A$ after the string becomes slack.<br><br><strong>(d)</strong> Calculate the total distance travelled by block $A$ from the instant of release until it first comes to rest.",
+    "steps": [
+        "<strong>(a) Acceleration during Stage 1:</strong><br><br>Normal reaction on block $A$ is $R = 3g = 29.4\\text{ N}$.<br><br>Frictional force on block $A$:\\begin{aligned} F &= \\mu R \\cr &= 0.25(29.4) \\cr &= 7.35\\text{ N} \\end{aligned}<br><br>Equations of motion for $B$ (downwards) and $A$ (towards pulley):\\begin{aligned} &2g - T = 2a \\cr &T - 7.35 = 3a \\end{aligned}<br><br>Adding the equations:\\begin{aligned} &2(9.8) - 7.35 = 5a \\cr &19.6 - 7.35 = 5a \\cr &12.25 = 5a \\cr &a = 2.45\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Speed at impact:</strong><br><br>Using $v^2 = u^2 + 2as$ with $u = 0$ and $s = 0.9\\text{ m}$:\\begin{aligned} v^2 &= 0 + 2(2.45)(0.9) \\cr &= 4.41 \\cr v &= \\sqrt{4.41} \\cr &= 2.1\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(c) Deceleration during Stage 2:</strong><br><br>When $B$ hits the floor, the string goes slack ($T = 0$).<br><br>Block $A$ is retarded solely by its own friction:\\begin{aligned} -F &= m_A a' \\cr -7.35 &= 3a' \\cr a' &= -2.45\\text{ m s}^{-2} \\end{aligned}<br><br>The deceleration is $2.45\\text{ m s}^{-2}$.",
+        "<strong>(d) Total distance travelled by $A$:</strong><br><br>Distance in Stage 1 is $s_1 = 0.9\\text{ m}$.<br><br>For Stage 2, $u = 2.1\\text{ m s}^{-1}$, $v = 0$, and $a' = -2.45\\text{ m s}^{-2}$:\\begin{aligned} v^2 &= u^2 + 2a's_2 \\cr 0 &= (2.1)^2 + 2(-2.45)s_2 \\cr 4.9s_2 &= 4.41 \\cr s_2 &= \\dfrac{4.41}{4.9} \\cr &= 0.9\\text{ m} \\end{aligned}<br><br>Total distance travelled:\\begin{aligned} s_{\\text{tot}} &= s_1 + s_2 \\cr &= 0.9 + 0.9 \\cr &= 1.8\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $2.45\\text{ m s}^{-2}$, (b) $2.1\\text{ m s}^{-1}$, (c) $2.45\\text{ m s}^{-2}$, (d) $1.8\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $2.45\\text{ m s}^{-2}$, (b) $2.1\\text{ m s}^{-1}$, (c) $2.45\\text{ m s}^{-2}$, (d) $0.9\\text{ m}$",
+            "feedback": "Gave only the second stage coasting distance in part (d). The question asks for the total distance travelled from the moment of release: $s_{\\text{tot}} = 0.9 + 0.9 = 1.8\\text{ m}$."
+        },
+        {
+            "ans": "(a) $3.92\\text{ m s}^{-2}$, (b) $2.66\\text{ m s}^{-1}$, (c) $2.45\\text{ m s}^{-2}$, (d) $2.34\\text{ m}$",
+            "feedback": "Omitted the mass of block $A$ when finding acceleration in part (a), using mass $2\\text{ kg}$ instead of total system mass $5\\text{ kg}$."
+        },
+        {
+            "ans": "(a) $2.45\\text{ m s}^{-2}$, (b) $2.1\\text{ m s}^{-1}$, (c) $1.47\\text{ m s}^{-2}$, (d) $2.4\\text{ m}$",
+            "feedback": "Incorrect mass in Stage 2. Once $B$ hits the floor, only block $A$ ($3\\text{ kg}$) is decelerated by friction, so $a' = -7.35 / 3 = -2.45\\text{ m s}^{-2}$, not $-7.35 / 5$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Work-Energy Check on Flat Surfaces",
+        "content": "For this entire journey, the work done by gravity on particle $B$ must equal the total work done against friction by block $A$: $m_B g h = F s_{\\text{tot}}$. Rearranging gives $s_{\\text{tot}} = \\dfrac{m_B g h}{\\mu m_A g} = \\dfrac{2(0.9)}{0.25(3)} = 1.8\\text{ m}$, verifying your multi-stage kinematics in a single line."
+    }
+},
+{
+    "id": "012135",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Internal Normal Reaction",
+        "Scale Pan",
+        "Multi-Body Vertical Acceleration"
+    ],
+    "img": "images/Mechanics_pngs/012135.png",
+    "question": "The diagram shows a block $P$ of mass $5\\text{ kg}$ resting on a rough horizontal table where the coefficient of friction is $\\mu = 0.3$. Block $P$ is connected by a light inextensible string passing over a small smooth pulley fixed at the edge of the table to a scale pan $Q$ of mass $0.5\\text{ kg}$. A block $R$ of mass $2.5\\text{ kg}$ rests on top of the scale pan $Q$.<br><br>The section of string between block $P$ and the pulley is horizontal. The system is released from rest with the string taut.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Find the acceleration of the system.<br><br><strong>(b)</strong> Find the tension in the string during the motion.<br><br><strong>(c)</strong> By considering the vertical forces acting on block $R$ alone, calculate the magnitude of the normal reaction force exerted by the scale pan $Q$ on block $R$.<br><br><strong>(d)</strong> Explain physically why the normal reaction force found in part <strong>(c)</strong> is strictly less than the weight of block $R$.",
+    "steps": [
+        "<strong>(a) Finding system acceleration:</strong><br><br>Normal reaction on block $P$ is $R_P = 5g = 49\\text{ N}$.<br><br>Frictional force on block $P$:\\begin{aligned} F &= \\mu R_P \\cr &= 0.3(49) \\cr &= 14.7\\text{ N} \\end{aligned}<br><br>Total mass hanging vertically:\\begin{aligned} m_{\\text{hang}} &= m_Q + m_R \\cr &= 0.5 + 2.5 \\cr &= 3.0\\text{ kg} \\end{aligned}<br><br>Equations of motion for hanging system and block $P$:\\begin{aligned} &3g - T = 3a \\cr &T - 14.7 = 5a \\end{aligned}<br><br>Adding the equations:\\begin{aligned} &3(9.8) - 14.7 = 8a \\cr &29.4 - 14.7 = 8a \\cr &14.7 = 8a \\cr &a = 1.8375\\text{ m s}^{-2} \\cr &\\approx 1.84\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Finding tension $T$:</strong><br><br>Using the equation for block $P$:\\begin{aligned} T &= 14.7 + 5a \\cr &= 14.7 + 5(1.8375) \\cr &= 14.7 + 9.1875 \\cr &= 23.8875\\text{ N} \\cr &\\approx 23.9\\text{ N} \\end{aligned}",
+        "<strong>(c) Normal reaction on block $R$:</strong><br><br>Consider vertical forces on block $R$ ($m_R = 2.5\\text{ kg}$) accelerating downwards at $a = 1.8375\\text{ m s}^{-2}$:\\begin{aligned} &m_R g - R_N = m_R a \\cr &2.5(9.8) - R_N = 2.5(1.8375) \\cr &24.5 - R_N = 4.59375 \\cr &R_N = 24.5 - 4.59375 \\cr &R_N = 19.90625\\text{ N} \\cr &R_N \\approx 19.9\\text{ N} \\end{aligned}",
+        "<strong>(d) Physical explanation:</strong><br><br>The scale pan $Q$ is accelerating downwards. For block $R$ to accelerate downwards at the same rate, there must be a non-zero resultant force downwards. Therefore, the downward gravitational force (its weight) must be strictly greater than the upward contact force exerted by the scale pan ($W_R - R_N = m_R a > 0$).",
+        "Final Answer: (a) $1.84\\text{ m s}^{-2}$, (b) $23.9\\text{ N}$, (c) $19.9\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $1.84\\text{ m s}^{-2}$, (b) $23.9\\text{ N}$, (c) $24.5\\text{ N}$",
+            "feedback": "Assumed the normal reaction equals the static weight of $R$ ($2.5g = 24.5\\text{ N}$). Because the scale pan is accelerating downwards, the contact force is reduced: $R_N = m_R(g - a) \\approx 19.9\\text{ N}$."
+        },
+        {
+            "ans": "(a) $1.84\\text{ m s}^{-2}$, (b) $23.9\\text{ N}$, (c) $29.1\\text{ N}$",
+            "feedback": "Added the acceleration term instead of subtracting it. Downward acceleration requires $m_R g - R_N = m_R a$, which gives $R_N = m_R(g - a)$, not $m_R(g + a)$."
+        },
+        {
+            "ans": "(a) $2.94\\text{ m s}^{-2}$, (b) $20.6\\text{ N}$, (c) $17.2\\text{ N}$",
+            "feedback": "Omitted the mass of the scale pan $Q$ ($0.5\\text{ kg}$) from the hanging system, using $2.5\\text{ kg}$ instead of $3.0\\text{ kg}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Contact Forces in Accelerating Frames",
+        "content": "Always isolate the body when finding internal contact forces. A common exam mistake is trying to evaluate $R_N$ from the tension $T$. By drawing a separate free-body diagram for block $R$ alone, you see only two vertical forces: downward gravity $m_R g$ and upward normal reaction $R_N$, giving $m_R g - R_N = m_R a$ directly."
+    }
 }
 ];
