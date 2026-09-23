@@ -1238,7 +1238,7 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "(a) $\\dfrac{3}{16}g$, (b) $\\dfrac{9}{16}mg$",
-            "feedback": "Forgot the friction term when finding tension. From the block's equation, $T = 3ma + F = 3m\\left(\\frac{3}{16}g\\right) + \\frac{1}{4}mg = \\frac{13}{16}mg$, not just $3ma$."
+            "feedback": "Forgot the friction term when finding tension. From the block's equation, \\begin{aligned}T &= 3ma + F \\cr &= 3m\\left(\\frac{3}{16}g\\right) + \\frac{1}{4}mg \\cr &= \\frac{13}{16}mg\\end{aligned}, not just $3ma$."
         },
         {
             "ans": "(a) $\\dfrac{1}{4}g$, (b) $\\dfrac{3}{4}mg$",
