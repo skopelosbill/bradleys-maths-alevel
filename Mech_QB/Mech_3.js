@@ -888,7 +888,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Resultant Force on a Pulley",
-        "content": "To find the force on a pulley without resolving into $x$ and $y$ components, note that the angle between the two string segments is $90^\\circ - \\alpha$. The angle between the tension vectors is $180^\\circ - (90^\\circ - \\alpha) = 90^\\circ + \\alpha$. Using the cosine rule of vectors gives $R = \\sqrt{2T^2(1 + \\sin\\alpha)} = T\\sqrt{3.2} \\approx 1.789T$."
+        "content": "To find the force on a pulley without resolving into $x$ and $y$ components, note that the angle between the two string segments is $90^\\circ - \\alpha$. The angle between the tension vectors is $180^\\circ - (90^\\circ - \\alpha) = 90^\\circ + \\alpha$. Using the cosine rule of vectors gives \\begin{aligned}R &= \\sqrt{2T^2(1 + \\sin\\alpha)}\\cr & = T\\sqrt{3.2}\\cr & \\approx 1.789T\\end{aligned}."
     }
 },
 {
@@ -1009,7 +1009,210 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Energy Conservation for Coasting",
-        "content": "In part <strong>(c)</strong>, because the plane is smooth, energy is conserved during the coasting phase after $B$ hits the ground. All kinetic energy of particle $A$ converts directly into gravitational potential energy: $\\dfrac{1}{2}m v^2 = m g \\Delta h = m g (s \\sin 30^\\circ)$. Thus $s = \\dfrac{v^2}{2g\\sin 30^\\circ} = \\dfrac{7.84}{9.8} = 0.8\\text{ m}$, avoiding kinematic equations entirely."
+        "content": "In part <strong>(c)</strong>, because the plane is smooth, energy is conserved during the coasting phase after $B$ hits the ground. All kinetic energy of particle $A$ converts directly into gravitational potential energy: \\begin{aligned}\\dfrac{1}{2}m v^2 &= m g \\Delta h\\cr & = m g (s \\sin 30^\\circ)\\end{aligned} Thus \\begin{aligned}s &= \\dfrac{v^2}{2g\\sin 30^\\circ}\\cr & = \\dfrac{7.84}{9.8} \\cr & = 0.8\\text{ m}\\end{aligned} avoiding kinematic equations entirely."
+    }
+},
+{
+    "id": "012126",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Equilibrium of a Particle",
+    "subtopic": [
+        "Coplanar Forces",
+        "Column Vectors",
+        "Equilibrium Conditions"
+    ],
+    "img": false,
+    "question": "A particle is in equilibrium under the action of three coplanar forces, given in newtons by:$$\\mathbf{F}_1 = \\begin{pmatrix} 12 \\\\ 0 \\end{pmatrix}, \\quad \\mathbf{F}_2 = \\begin{pmatrix} 3p \\\\ -4p \\end{pmatrix}, \\quad \\text{and} \\quad \\mathbf{F}_3 = \\begin{pmatrix} 0 \\\\ q \\end{pmatrix}$$where $p$ and $q$ are constants.<br><br><strong>(a)</strong> Find the values of $p$ and $q$.<br><br><strong>(b)</strong> The force $\\mathbf{F}_1$ is suddenly removed. State the magnitude and direction of the resultant of the two remaining forces.<br><br><strong>(c)</strong> Calculate the magnitude of $\\mathbf{F}_2$ and the acute angle it makes with the positive $x$-axis, giving the angle correct to the nearest $0.1^\\circ$.",
+    "steps": [
+        "<strong>(a) Equilibrium conditions:</strong><br><br>Since the particle is in equilibrium, the vector sum of all forces is zero:\\begin{aligned} &\\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3 = \\mathbf{0} \\cr &\\begin{pmatrix} 12 \\\\ 0 \\end{pmatrix} + \\begin{pmatrix} 3p \\\\ -4p \\end{pmatrix} + \\begin{pmatrix} 0 \\\\ q \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix} \\end{aligned}<br><br>Equating top ($x$) components:\\begin{aligned} &12 + 3p = 0 \\cr &3p = -12 \\cr &p = -4 \\end{aligned}<br><br>Equating bottom ($y$) components:\\begin{aligned} &0 - 4p + q = 0 \\cr &-4(-4) + q = 0 \\cr &16 + q = 0 \\cr &q = -16 \\end{aligned}",
+        "<strong>(b) Resultant of remaining forces:</strong><br><br>From the equilibrium condition:\\begin{aligned} \\mathbf{F}_2 + \\mathbf{F}_3 = -\\mathbf{F}_1 \\end{aligned}<br><br>Therefore, the resultant force $\\mathbf{R}$ is:\\begin{aligned} \\mathbf{R} &= -\\begin{pmatrix} 12 \\\\ 0 \\end{pmatrix} \\cr &= \\begin{pmatrix} -12 \\\\ 0 \\end{pmatrix}\\text{ N} \\end{aligned}<br><br>The resultant has magnitude $12\\text{ N}$ and acts in the negative $x$-direction (due West / bearing $270^\\circ$).",
+        "<strong>(c) Magnitude and angle of $\\mathbf{F}_2$:</strong><br><br>Substituting $p = -4$ into $\\mathbf{F}_2$:\\begin{aligned} \\mathbf{F}_2 &= \\begin{pmatrix} 3(-4) \\\\ -4(-4) \\end{pmatrix} \\cr &= \\begin{pmatrix} -12 \\\\ 16 \\end{pmatrix}\\text{ N} \\end{aligned}<br><br>Calculating magnitude:\\begin{aligned} |\\mathbf{F}_2| &= \\sqrt{(-12)^2 + 16^2} \\cr &= \\sqrt{144 + 256} \\cr &= \\sqrt{400} \\cr &= 20\\text{ N} \\end{aligned}<br><br>Let $\\alpha$ be the acute angle with the positive $x$-axis:\\begin{aligned} \\tan\\alpha &= \\left|\\dfrac{16}{-12}\\right| \\cr &= \\dfrac{4}{3} \\cr &\\approx 1.3333 \\cr \\alpha &= \\arctan(1.3333) \\cr &\\approx 53.1^\\circ \\end{aligned}",
+        "Final Answer: (a) $p = -4, q = -16$, (b) $12\\text{ N}$ due West, (c) $20\\text{ N}, 53.1^\\circ$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $p = -4, q = 16$, (b) $12\\text{ N}$ due West, (c) $20\\text{ N}, 53.1^\\circ$",
+            "feedback": "Incorrect sign for $q$. In vertical equilibrium, $-4(-4) + q = 0$ gives $16 + q = 0$, so $q = -16$."
+        },
+        {
+            "ans": "(a) $p = -4, q = -16$, (b) $12\\text{ N}$ due East, (c) $20\\text{ N}, 53.1^\\circ$",
+            "feedback": "Incorrect direction in part (b). The resultant of the remaining forces is equal and opposite to $\\mathbf{F}_1$. Since $\\mathbf{F}_1$ acts due East, the resultant must act due West."
+        },
+        {
+            "ans": "(a) $p = -4, q = -16$, (b) $12\\text{ N}$ due West, (c) $20\\text{ N}, 36.9^\\circ$",
+            "feedback": "Incorrect angle in part (c). The angle with the horizontal satisfies $\\tan\\alpha = \\frac{16}{12} = \\frac{4}{3}$, giving $\\alpha \\approx 53.1^\\circ$. The value $36.9^\\circ$ is measured from the vertical."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Equilibrium Removal Trick",
+        "content": "When a particle is in equilibrium under three forces, the resultant of any two forces is always exactly equal in magnitude and opposite in direction to the third force: $\\mathbf{F}_2 + \\mathbf{F}_3 = -\\mathbf{F}_1$. Recognising this means part <strong>(b)</strong> requires zero calculation."
+    }
+},
+{
+    "id": "012127",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Equilibrium and Newton's Second Law",
+    "subtopic": [
+        "Unit Vectors",
+        "Linear Equations",
+        "Acceleration Vector"
+    ],
+    "img": false,
+    "question": "A particle of mass $2\\text{ kg}$ is initially in equilibrium under the action of three coplanar forces:$$\\mathbf{F}_1 = (p\\mathbf{i} + 2q\\mathbf{j})\\text{ N}$$$$\\mathbf{F}_2 = \\big((2p - 1)\\mathbf{i} - 5\\mathbf{j}\\big)\\text{ N}$$$$\\mathbf{F}_3 = \\big(-8\\mathbf{i} + (q - 7)\\mathbf{j}\\big)\\text{ N}$$where $p$ and $q$ are constants, and $\\mathbf{i}$ and $\\mathbf{j}$ are perpendicular horizontal unit vectors.<br><br><strong>(a)</strong> By considering components in the $\\mathbf{i}$ and $\\mathbf{j}$ directions, find the values of $p$ and $q$.<br><br>The force $\\mathbf{F}_3$ is now removed, while $\\mathbf{F}_1$ and $\\mathbf{F}_2$ continue to act unchanged.<br><br><strong>(b)</strong> Find the acceleration vector of the particle.<br><br><strong>(c)</strong> Calculate the magnitude of this acceleration and the angle its direction makes with the unit vector $\\mathbf{i}$, giving your answers correct to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Finding $p$ and $q$:</strong><br><br>In equilibrium, $\\Sigma \\mathbf{F} = \\mathbf{0}$.<br><br>Summing components in the $\\mathbf{i}$ direction:\\begin{aligned} &p + (2p - 1) - 8 = 0 \\cr &3p - 9 = 0 \\cr &3p = 9 \\cr &p = 3 \\end{aligned}<br><br>Summing components in the $\\mathbf{j}$ direction:\\begin{aligned} &2q - 5 + (q - 7) = 0 \\cr &3q - 12 = 0 \\cr &3q = 12 \\cr &q = 4 \\end{aligned}",
+        "<strong>(b) Acceleration vector:</strong><br><br>When $\\mathbf{F}_3$ is removed, the resultant force $\\mathbf{R}$ is:\\begin{aligned} \\mathbf{R} &= -\\mathbf{F}_3 \\cr &= -\\big(-8\\mathbf{i} + (4 - 7)\\mathbf{j}\\big) \\cr &= -(-8\\mathbf{i} - 3\\mathbf{j}) \\cr &= (8\\mathbf{i} + 3\\mathbf{j})\\text{ N} \\end{aligned}<br><br>Using Newton's second law ($\\mathbf{F} = m\\mathbf{a}$):\\begin{aligned} \\mathbf{a} &= \\dfrac{\\mathbf{R}}{m} \\cr &= \\dfrac{8\\mathbf{i} + 3\\mathbf{j}}{2} \\cr &= (4\\mathbf{i} + 1.5\\mathbf{j})\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(c) Magnitude and angle of acceleration:</strong><br><br>Calculating magnitude:\\begin{aligned} |\\mathbf{a}| &= \\sqrt{4^2 + 1.5^2} \\cr &= \\sqrt{16 + 2.25} \\cr &= \\sqrt{18.25} \\cr &\\approx 4.27\\text{ m s}^{-2} \\end{aligned}<br><br>Let $\\theta$ be the angle with $\\mathbf{i}$:\\begin{aligned} \\tan\\theta &= \\dfrac{1.5}{4} \\cr &= 0.375 \\cr \\theta &= \\arctan(0.375) \\cr &\\approx 20.6^\\circ \\end{aligned}",
+        "Final Answer: (a) $p = 3, q = 4$, (b) $(4\\mathbf{i} + 1.5\\mathbf{j})\\text{ m s}^{-2}$, (c) $4.27\\text{ m s}^{-2}, 20.6^\\circ$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $p = 3, q = 4$, (b) $(8\\mathbf{i} + 3\\mathbf{j})\\text{ m s}^{-2}$, (c) $8.54\\text{ m s}^{-2}, 20.6^\\circ$",
+            "feedback": "Forgot to divide by mass in part (b). Newton's second law is $\\mathbf{a} = \\frac{\\mathbf{F}}{m}$. With $m = 2\\text{ kg}$, the resultant force must be divided by $2$."
+        },
+        {
+            "ans": "(a) $p = 3, q = 4$, (b) $(4\\mathbf{i} + 1.5\\mathbf{j})\\text{ m s}^{-2}$, (c) $4.27\\text{ m s}^{-2}, 69.4^\\circ$",
+            "feedback": "Incorrect angle reference in part (c). The angle with $\\mathbf{i}$ satisfies $\\tan\\theta = 1.5 / 4$, giving $20.6^\\circ$. The value $69.4^\\circ$ is measured from $\\mathbf{j}$."
+        },
+        {
+            "ans": "(a) $p = 2, q = 5$, (b) $(4\\mathbf{i} + 1.5\\mathbf{j})\\text{ m s}^{-2}$, (c) $4.27\\text{ m s}^{-2}, 20.6^\\circ$",
+            "feedback": "Algebraic slip in part (a). Summing $\\mathbf{i}$ components gives $p + 2p - 1 - 8 = 0$, which leads to $3p = 9$ and $p = 3$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Component Independence",
+        "content": "In Cartesian vector mechanics, motion in the $\\mathbf{i}$ and $\\mathbf{j}$ directions is completely independent. Equilibrium must hold separately in both axes. Never attempt to combine coefficients from $\\mathbf{i}$ and $\\mathbf{j}$ into a single equation."
+    }
+},
+{
+    "id": "012128",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Dynamics and Kinematics",
+    "topic": "Newton's Second Law and Vector Kinematics",
+    "subtopic": [
+        "Column Vectors",
+        "Parameter for Equilibrium",
+        "2D Kinematics"
+    ],
+    "img": false,
+    "question": "A particle of mass $1.5\\text{ kg}$ is initially at rest at the origin. It is acted upon by three constant coplanar forces:$$\\mathbf{F}_1 = \\begin{pmatrix} 5 \\\\ -1 \\end{pmatrix}\\text{ N}, \\quad \\mathbf{F}_2 = \\begin{pmatrix} -3 \\\\ 5 \\end{pmatrix}\\text{ N}, \\quad \\text{and} \\quad \\mathbf{F}_3 = \\begin{pmatrix} k \\\\ -4 \\end{pmatrix}\\text{ N}$$where $k$ is a constant.<br><br><strong>(a)</strong> Given that the particle remains at rest in equilibrium, find the value of $k$.<br><br>In a different scenario, the force $\\mathbf{F}_3$ is replaced by a force $\\mathbf{F}_4 = \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}\\text{ N}$, while $\\mathbf{F}_1$ and $\\mathbf{F}_2$ remain unchanged. The particle starts from rest at $t = 0$.<br><br><strong>(b)</strong> Find the acceleration vector of the particle.<br><br><strong>(c)</strong> Find the speed of the particle at time $t = 3\\text{ seconds}$, giving your answer in exact surd form.<br><br><strong>(d)</strong> Find the position vector of the particle at time $t = 3\\text{ seconds}$, and calculate its distance from the origin.",
+    "steps": [
+        "<strong>(a) Finding $k$ for equilibrium:</strong><br><br>Equating the sum of $x$-components to zero:\\begin{aligned} &5 + (-3) + k = 0 \\cr &2 + k = 0 \\cr &k = -2 \\end{aligned}<br><br>(Checking $y$-components: $-1 + 5 - 4 = 0$, which is consistent).",
+        "<strong>(b) Acceleration vector with $\\mathbf{F}_4$:</strong><br><br>The new resultant force $\\mathbf{R}$ is:\\begin{aligned} \\mathbf{R} &= \\begin{pmatrix} 5 \\\\ -1 \\end{pmatrix} + \\begin{pmatrix} -3 \\\\ 5 \\end{pmatrix} + \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} \\cr &= \\begin{pmatrix} 5 - 3 + 1 \\\\ -1 + 5 + 2 \\end{pmatrix} \\cr &= \\begin{pmatrix} 3 \\\\ 6 \\end{pmatrix}\\text{ N} \\end{aligned}<br><br>Using $\\mathbf{F} = m\\mathbf{a}$ with $m = 1.5\\text{ kg}$:\\begin{aligned} \\mathbf{a} &= \\dfrac{1}{1.5}\\begin{pmatrix} 3 \\\\ 6 \\end{pmatrix} \\cr &= \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(c) Speed at $t = 3\\text{ seconds}$:</strong><br><br>Using $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$ with $\\mathbf{u} = \\mathbf{0}$:\\begin{aligned} \\mathbf{v} &= \\mathbf{0} + 3\\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix} \\cr &= \\begin{pmatrix} 6 \\\\ 12 \\end{pmatrix}\\text{ m s}^{-1} \\end{aligned}<br><br>Calculating speed:\\begin{aligned} |\\mathbf{v}| &= \\sqrt{6^2 + 12^2} \\cr &= \\sqrt{36 + 144} \\cr &= \\sqrt{180} \\cr &= 6\\sqrt{5}\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(d) Position vector and distance:</strong><br><br>Using $\\mathbf{s} = \\mathbf{u}t + \\dfrac{1}{2}\\mathbf{a}t^2$ with $\\mathbf{u} = \\mathbf{0}$:\\begin{aligned} \\mathbf{r} &= \\dfrac{1}{2}\\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}(3^2) \\cr &= \\dfrac{1}{2}\\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}(9) \\cr &= \\begin{pmatrix} 9 \\\\ 18 \\end{pmatrix}\\text{ m} \\end{aligned}<br><br>Distance from origin:\\begin{aligned} |\\mathbf{r}| &= \\sqrt{9^2 + 18^2} \\cr &= \\sqrt{81 + 324} \\cr &= \\sqrt{405} \\cr &= 9\\sqrt{5}\\text{ m} \\cr &\\approx 20.1\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $k = -2$, (b) $\\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}\\text{ m s}^{-2}$, (c) $6\\sqrt{5}\\text{ m s}^{-1}$, (d) $\\begin{pmatrix} 9 \\\\ 18 \\end{pmatrix}\\text{ m}, 9\\sqrt{5}\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $k = -2$, (b) $\\begin{pmatrix} 3 \\\\ 6 \\end{pmatrix}\\text{ m s}^{-2}$, (c) $9\\sqrt{5}\\text{ m s}^{-1}$, (d) $\\begin{pmatrix} 13.5 \\\\ 27 \\end{pmatrix}\\text{ m}, 13.5\\sqrt{5}\\text{ m}$",
+            "feedback": "Forgot to divide by mass $m = 1.5\\text{ kg}$ in part (b). Acceleration is $\\mathbf{a} = \\mathbf{F} / m$, so each component of the resultant force must be divided by $1.5$."
+        },
+        {
+            "ans": "(a) $k = 2$, (b) $\\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}\\text{ m s}^{-2}$, (c) $6\\sqrt{5}\\text{ m s}^{-1}$, (d) $\\begin{pmatrix} 9 \\\\ 18 \\end{pmatrix}\\text{ m}, 9\\sqrt{5}\\text{ m}$",
+            "feedback": "Sign error in part (a). Setting $5 - 3 + k = 0$ gives $2 + k = 0$, so $k = -2$."
+        },
+        {
+            "ans": "(a) $k = -2$, (b) $\\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}\\text{ m s}^{-2}$, (c) $6\\sqrt{5}\\text{ m s}^{-1}$, (d) $\\begin{pmatrix} 18 \\\\ 36 \\end{pmatrix}\\text{ m}, 18\\sqrt{5}\\text{ m}$",
+            "feedback": "Omitted the factor of $\\frac{1}{2}$ in the displacement formula $\\mathbf{s} = \\frac{1}{2}\\mathbf{a}t^2$, which doubled the correct position vector."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Collinear Vectors in Kinematics",
+        "content": "When a particle starts from rest under a constant resultant force, its acceleration, velocity, and displacement vectors are always collinear. Notice that $\\mathbf{a}$, $\\mathbf{v}$, and $\\mathbf{r}$ are all positive multiples of the base vector $\\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}$."
+    }
+},
+{
+    "id": "012129",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Equilibrium of a Particle",
+    "subtopic": [
+        "Bearings",
+        "Vector Resolution",
+        "Geometric Equilibrium"
+    ],
+    "img": false,
+    "question": "A particle $P$ is held in equilibrium by three coplanar horizontal forces $\\mathbf{F}_1$, $\\mathbf{F}_2$, and $\\mathbf{F}_3$:<br>$\\mathbf{F}_1$ has magnitude $12\\text{ N}$ and acts on a bearing of $090^\\circ$ (due East).<br>$\\mathbf{F}_2$ has magnitude $F\\text{ N}$ and acts on a bearing of $330^\\circ$.<br>$\\mathbf{F}_3$ has magnitude $G\\text{ N}$ and acts on a bearing of $210^\\circ$.<br><br>Let $\\mathbf{i}$ and $\\mathbf{j}$ denote unit vectors directed due East and due North, respectively.<br><br><strong>(a)</strong> Express each of the three forces in terms of $\\mathbf{i}$ and $\\mathbf{j}$, using exact trigonometric values.<br><br><strong>(b)</strong> By setting up and solving two linear equations for equilibrium, find the exact values of $F$ and $G$.<br><br><strong>(c)</strong> State the geometrical name of the vector polygon formed by these three forces, fully justifying your answer.",
+    "steps": [
+        "<strong>(a) Resolving into unit vectors:</strong><br><br>For $\\mathbf{F}_1$ (bearing $090^\\circ$, due East):\\begin{aligned} \\mathbf{F}_1 = 12\\mathbf{i} \\end{aligned}<br><br>For $\\mathbf{F}_2$ (bearing $330^\\circ$, which is $30^\\circ$ West of North):\\begin{aligned} \\mathbf{F}_2 &= -F\\sin 30^\\circ\\mathbf{i} + F\\cos 30^\\circ\\mathbf{j} \\cr &= -\\dfrac{1}{2}F\\mathbf{i} + \\dfrac{\\sqrt{3}}{2}F\\mathbf{j} \\end{aligned}<br><br>For $\\mathbf{F}_3$ (bearing $210^\\circ$, which is $30^\\circ$ West of South):\\begin{aligned} \\mathbf{F}_3 &= -G\\sin 30^\\circ\\mathbf{i} - G\\cos 30^\\circ\\mathbf{j} \\cr &= -\\dfrac{1}{2}G\\mathbf{i} - \\dfrac{\\sqrt{3}}{2}G\\mathbf{j} \\end{aligned}",
+        "<strong>(b) Solving equilibrium equations:</strong><br><br>In equilibrium, $\\Sigma \\mathbf{F} = \\mathbf{0}$.<br><br>Summing North-South components ($\\mathbf{j}$ direction):\\begin{aligned} &\\dfrac{\\sqrt{3}}{2}F - \\dfrac{\\sqrt{3}}{2}G = 0 \\cr &\\dfrac{\\sqrt{3}}{2}F = \\dfrac{\\sqrt{3}}{2}G \\cr &F = G \\end{aligned}<br><br>Summing East-West components ($\\mathbf{i}$ direction):\\begin{aligned} &12 - \\dfrac{1}{2}F - \\dfrac{1}{2}G = 0 \\end{aligned}<br><br>Substituting $G = F$:\\begin{aligned} &12 - \\dfrac{1}{2}F - \\dfrac{1}{2}F = 0 \\cr &12 - F = 0 \\cr &F = 12\\text{ N} \\end{aligned}<br><br>Since $G = F$, $G = 12\\text{ N}$.",
+        "<strong>(c) Vector polygon:</strong><br><br>The forces form a closed **equilateral triangle**.<br><br><strong>Justification:</strong> The three forces are in equilibrium, so they form a closed triangle of vectors. Since all three forces have equal magnitude ($12\\text{ N}$), the triangle has three sides of equal length.",
+        "Final Answer: (b) $F = 12\\text{ N}, G = 12\\text{ N}$, (c) Equilateral triangle"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $F = 12\\text{ N}, G = 12\\text{ N}$, (c) Right-angled triangle",
+            "feedback": "Incorrect polygon classification in part (c). All three forces have identical magnitude ($12\\text{ N}$), so the closed vector triangle has three equal sides, making it an equilateral triangle."
+        },
+        {
+            "ans": "(b) $F = 6\\text{ N}, G = 6\\text{ N}$, (c) Equilateral triangle",
+            "feedback": "Incorrect force magnitudes in part (b). In horizontal equilibrium, $12 - 0.5F - 0.5G = 0$ simplifies with $F = G$ to $12 - F = 0$, giving $F = 12\\text{ N}$, not $6\\text{ N}$."
+        },
+        {
+            "ans": "(b) $F = 12\\text{ N}, G = 8\\text{ N}$, (c) Scalene triangle",
+            "feedback": "Incorrect values in part (b). Resolving in the $\\mathbf{j}$ direction gives $\\frac{\\sqrt{3}}{2}F - \\frac{\\sqrt{3}}{2}G = 0$, which strictly requires $F = G$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Symmetry in Three-Force Equilibrium",
+        "content": "The three bearings are $090^\\circ$, $210^\\circ$, and $330^\\circ$. The angular separation between consecutive vectors is exactly $120^\\circ$. By symmetry, three coplanar forces separated by $120^\\circ$ must have equal magnitudes to remain in equilibrium."
+    }
+},
+{
+    "id": "012130",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Dynamics and Kinematics",
+    "topic": "Newton's Second Law and 2D Motion",
+    "subtopic": [
+        "Resultant Force",
+        "Displacement with Initial Position",
+        "Direction of Motion"
+    ],
+    "img": false,
+    "question": "A particle of mass $2.5\\text{ kg}$ is acted upon by three constant coplanar forces:$$\\mathbf{F}_1 = (5\\mathbf{i} + 3\\mathbf{j})\\text{ N}$$$$\\mathbf{F}_2 = (-2\\mathbf{i} + 7\\mathbf{j})\\text{ N}$$$$\\mathbf{F}_3 = (p\\mathbf{i} + q\\mathbf{j})\\text{ N}$$where $p$ and $q$ are constants.<br><br><strong>(a)</strong> Find the values of $p$ and $q$ for which the particle is in equilibrium.<br><br>In a second situation, $\\mathbf{F}_1$ and $\\mathbf{F}_2$ act as before, but $\\mathbf{F}_3$ is replaced by $\\mathbf{F}_4 = (7\\mathbf{i} - 5\\mathbf{j})\\text{ N}$.<br>At time $t = 0$, the particle is released from rest at the point with position vector $\\mathbf{r}_0 = (4\\mathbf{i} - 2\\mathbf{j})\\text{ m}$.<br><br><strong>(b)</strong> Find the resultant force acting on the particle, and hence determine its acceleration vector.<br><br><strong>(c)</strong> Calculate the magnitude of the acceleration and the angle its direction makes with the unit vector $\\mathbf{i}$, correct to the nearest $0.1^\\circ$.<br><br><strong>(d)</strong> Find the velocity vector and speed of the particle when $t = 4\\text{ seconds}$.<br><br><strong>(e)</strong> Find the position vector of the particle when $t = 4\\text{ seconds}$.",
+    "steps": [
+        "<strong>(a) Values for equilibrium:</strong><br><br>In equilibrium, $\\Sigma \\mathbf{F} = \\mathbf{0}$.<br><br>Equating $\\mathbf{i}$ components:\\begin{aligned} &5 - 2 + p = 0 \\cr &3 + p = 0 \\cr &p = -3 \\end{aligned}<br><br>Equating $\\mathbf{j}$ components:\\begin{aligned} &3 + 7 + q = 0 \\cr &10 + q = 0 \\cr &q = -10 \\end{aligned}",
+        "<strong>(b) Resultant force and acceleration:</strong><br><br>Summing the three forces with $\\mathbf{F}_4$:\\begin{aligned} \\mathbf{R} &= (5 - 2 + 7)\\mathbf{i} + (3 + 7 - 5)\\mathbf{j} \\cr &= (10\\mathbf{i} + 5\\mathbf{j})\\text{ N} \\end{aligned}<br><br>Using Newton's second law with $m = 2.5\\text{ kg}$:\\begin{aligned} \\mathbf{a} &= \\dfrac{\\mathbf{R}}{m} \\cr &= \\dfrac{10\\mathbf{i} + 5\\mathbf{j}}{2.5} \\cr &= (4\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(c) Magnitude and angle of acceleration:</strong><br><br>Calculating magnitude:\\begin{aligned} |\\mathbf{a}| &= \\sqrt{4^2 + 2^2} \\cr &= \\sqrt{16 + 4} \\cr &= \\sqrt{20} \\cr &= 2\\sqrt{5} \\cr &\\approx 4.47\\text{ m s}^{-2} \\end{aligned}<br><br>Angle $\\theta$ with unit vector $\\mathbf{i}$:\\begin{aligned} \\tan\\theta &= \\dfrac{2}{4} \\cr &= 0.5 \\cr \\theta &= \\arctan(0.5) \\cr &\\approx 26.6^\\circ \\end{aligned}",
+        "<strong>(d) Velocity and speed at $t = 4\\text{ seconds}$:</strong><br><br>Using $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$ with $\\mathbf{u} = \\mathbf{0}$:\\begin{aligned} \\mathbf{v} &= 4(4\\mathbf{i} + 2\\mathbf{j}) \\cr &= (16\\mathbf{i} + 8\\mathbf{j})\\text{ m s}^{-1} \\end{aligned}<br><br>Calculating speed:\\begin{aligned} |\\mathbf{v}| &= \\sqrt{16^2 + 8^2} \\cr &= \\sqrt{256 + 64} \\cr &= \\sqrt{320} \\cr &= 8\\sqrt{5} \\cr &\\approx 17.9\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(e) Position vector at $t = 4\\text{ seconds}$:</strong><br><br>Using $\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{u}t + \\dfrac{1}{2}\\mathbf{a}t^2$:\\begin{aligned} \\mathbf{r} &= (4\\mathbf{i} - 2\\mathbf{j}) + \\mathbf{0} + \\dfrac{1}{2}(4\\mathbf{i} + 2\\mathbf{j})(4^2) \\cr &= (4\\mathbf{i} - 2\\mathbf{j}) + 8(4\\mathbf{i} + 2\\mathbf{j}) \\cr &= (4\\mathbf{i} - 2\\mathbf{j}) + (32\\mathbf{i} + 16\\mathbf{j}) \\cr &= (36\\mathbf{i} + 14\\mathbf{j})\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $p = -3, q = -10$, (b) $\\mathbf{a} = (4\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-2}$, (c) $4.47\\text{ m s}^{-2}, 26.6^\\circ$, (d) $17.9\\text{ m s}^{-1}$, (e) $(36\\mathbf{i} + 14\\mathbf{j})\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $p = -3, q = -10$, (b) $\\mathbf{a} = (4\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-2}$, (c) $4.47\\text{ m s}^{-2}, 26.6^\\circ$, (d) $17.9\\text{ m s}^{-1}$, (e) $(32\\mathbf{i} + 16\\mathbf{j})\\text{ m}$",
+            "feedback": "Forgot the initial position vector $\\mathbf{r}_0 = (4\\mathbf{i} - 2\\mathbf{j})\\text{ m}$. Position is $\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{s}$, which gives $(4\\mathbf{i} - 2\\mathbf{j}) + (32\\mathbf{i} + 16\\mathbf{j}) = (36\\mathbf{i} + 14\\mathbf{j})\\text{ m}$."
+        },
+        {
+            "ans": "(a) $p = 3, q = 10$, (b) $\\mathbf{a} = (4\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-2}$, (c) $4.47\\text{ m s}^{-2}, 26.6^\\circ$, (d) $17.9\\text{ m s}^{-1}$, (e) $(36\\mathbf{i} + 14\\mathbf{j})\\text{ m}$",
+            "feedback": "Sign errors in part (a). In equilibrium, $5 - 2 + p = 0$ gives $p = -3$, and $3 + 7 + q = 0$ gives $q = -10$."
+        },
+        {
+            "ans": "(a) $p = -3, q = -10$, (b) $\\mathbf{a} = (4\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-2}$, (c) $4.47\\text{ m s}^{-2}, 63.4^\\circ$, (d) $17.9\\text{ m s}^{-1}$, (e) $(36\\mathbf{i} + 14\\mathbf{j})\\text{ m}$",
+            "feedback": "Angle measured from $\\mathbf{j}$ instead of $\\mathbf{i}$ in part (c). The angle with $\\mathbf{i}$ satisfies $\\tan\\theta = 2 / 4 = 0.5$, which yields $\\theta \\approx 26.6^\\circ$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Displacement vs Position Vector",
+        "content": "Remember the distinction between displacement $\\mathbf{s}$ and position vector $\\mathbf{r}$. The SUVAT formula evaluates displacement from the starting point: $\\mathbf{s} = \\dfrac{1}{2}\\mathbf{a}t^2$. When the particle does not start at the origin, you must add the initial position vector: $\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{s}$."
     }
 }
 ];
