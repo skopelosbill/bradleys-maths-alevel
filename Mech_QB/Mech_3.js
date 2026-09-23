@@ -794,11 +794,11 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "(a) $6\\text{ s}, 18\\text{ m s}^{-1}$, (c) $72\\text{ m}$, (d) $4\\text{ m s}^{-2}$, (e) $9\\text{ m s}^{-1}$",
-            "feedback": "Incorrect acceleration for $Q$. You assumed particle $Q$ started from rest ($u_Q = 0$). With $u_Q = 3\\text{ m s}^{-1}$, $72 = 3(6) + 18a \\implies 18a = 54 \\implies a = 3\\text{ m s}^{-2}$."
+            "feedback": "Incorrect acceleration for $Q$. You assumed particle $Q$ started from rest ($u_Q = 0$). With $u_Q = 3\\text{ m s}^{-1}$, \\begin{aligned}72 &= 3(6) + 18a \\cr \\implies 18a & = 54 \\cr \\implies a & = 3\\text{ m s}^{-2}\\end{aligned}"
         },
         {
             "ans": "(a) $6\\text{ s}, 18\\text{ m s}^{-1}$, (c) $108\\text{ m}$, (d) $5\\text{ m s}^{-2}$, (e) $15\\text{ m s}^{-1}$",
-            "feedback": "Incorrect distance in part (c). Evaluating displacement requires subtracting the cubic term: $s_P(6) = 108 - \\frac{1}{6}(216) = 108 - 36 = 72\\text{ m}$, not $108\\text{ m}$."
+            "feedback": "Incorrect distance in part (c). Evaluating displacement requires subtracting the cubic term: \\begin{aligned}s_P(6) & = 108 - \\frac{1}{6}(216)\\cr & = 108 - 36 \\cr &= 72\\text{ m}\\end{aligned} not $108\\text{ m}."
         },
         {
             "ans": "(a) $12\\text{ s}, 18\\text{ m s}^{-1}$, (c) $72\\text{ m}$, (d) $3\\text{ m s}^{-2}$, (e) $3\\text{ m s}^{-1}$",
@@ -809,6 +809,207 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Dual Particle Collision Conditions",
         "content": "When two particles collide or one catches up with another, their displacements from the origin must be identical ($s_P = s_Q$). However, their speeds are rarely the same. For one particle to catch up with another from behind, its speed must actually exceed the other particle's speed at that instant ($v_Q > v_P$), which is why $Q$ is travelling at $21\\text{ m s}^{-1}$ while $P$ is travelling at $18\\text{ m s}^{-1}$."
+    }
+},
+{
+    "id": "012121",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Dynamics and Statics",
+    "topic": "Connected Particles and Friction",
+    "subtopic": [
+        "Inclined Plane",
+        "Limiting Friction",
+        "Pulleys"
+    ],
+    "img": "images/Mechanics_pngs/012121.png",
+    "question": "The diagram shows a particle $A$ of mass $m\\text{ kg}$ held in contact with a rough plane inclined at $30^\\circ$ to the horizontal. One end of a light inextensible string is attached to particle $A$. The string passes over a small smooth pulley fixed at the top of the plane. The section of string from $A$ to the pulley is parallel to a line of greatest slope of the plane. A second particle $B$, of mass $M\\text{ kg}$, is attached to the other end of the string and hangs freely vertically below the pulley.<br><br>The coefficient of friction between particle $A$ and the plane is $\\mu$.<br><br><strong>(a)</strong> When $M = \\dfrac{1}{5}m$, particle $A$ is on the point of slipping down the plane. Find the exact value of $\\mu$, giving your answer in the form $\\dfrac{\\sqrt{3}}{k}$, where $k$ is an integer.<br><br>Particle $B$ is now removed and replaced by a particle of mass $\\dfrac{3}{2}m\\text{ kg}$. The system is released from rest with the string taut.<br><br><strong>(b)</strong> Find the acceleration of the particles in terms of $g$.<br><br><strong>(c)</strong> State two modelling assumptions made about the string, and explain how each assumption is used in your calculations.",
+    "steps": [
+        "<strong>(a) Finding the coefficient of friction $\\mu$:</strong><br><br>For particle $B$, vertical equilibrium gives:\\begin{aligned} T &= Mg \\cr &= \\dfrac{1}{5}mg \\end{aligned}<br><br>For particle $A$, resolving perpendicular to the plane ($\\nwarrow$):\\begin{aligned} R &= mg\\cos 30^\\circ \\cr &= mg\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\end{aligned}<br><br>When $A$ is on the point of slipping down the plane, friction $F$ acts up the plane at maximum value $F = \\mu R$. Resolving parallel to the plane ($\\nearrow$):\\begin{aligned} &T + F - mg\\sin 30^\\circ = 0 \\cr &\\dfrac{1}{5}mg + \\mu mg\\left(\\dfrac{\\sqrt{3}}{2}\\right) - \\dfrac{1}{2}mg = 0 \\end{aligned}<br><br>Dividing through by $mg$:\\begin{aligned} &\\dfrac{1}{5} + \\dfrac{\\sqrt{3}}{2}\\mu = \\dfrac{1}{2} \\cr &\\dfrac{\\sqrt{3}}{2}\\mu = \\dfrac{3}{10} \\cr &\\mu = \\dfrac{6}{10\\sqrt{3}} \\cr &\\mu = \\dfrac{\\sqrt{3}}{5} \\end{aligned}<br><br>Thus $k = 5$.",
+        "<strong>(b) Acceleration when $M = \\dfrac{3}{2}m$:</strong><br><br>Since $1.5m > m$, particle $B$ accelerates downwards and particle $A$ moves up the plane. Friction on $A$ now acts down the plane:\\begin{aligned} F &= \\mu R \\cr &= \\left(\\dfrac{\\sqrt{3}}{5}\\right)mg\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &= \\dfrac{3}{10}mg \\cr &= 0.3mg \\end{aligned}<br><br>Equation of motion for $B$ (downwards):\\begin{aligned} 1.5mg - T = 1.5ma \\quad \\text{--- [Eq 1]} \\end{aligned}<br><br>Equation of motion for $A$ (up the slope):\\begin{aligned} &T - mg\\sin 30^\\circ - F = ma \\cr &T - 0.5mg - 0.3mg = ma \\cr &T - 0.8mg = ma \\quad \\text{--- [Eq 2]} \\end{aligned}<br><br>Adding [Eq 1] and [Eq 2]:\\begin{aligned} &1.5mg - 0.8mg = 1.5ma + ma \\cr &0.7mg = 2.5ma \\cr &a = \\dfrac{0.7}{2.5}g \\cr &a = 0.28g \\text{ (or } \\dfrac{7}{25}g\\text{)} \\end{aligned}",
+        "<strong>(c) Modelling assumptions about the string:</strong><br><br><strong>1. Light string:</strong> The string has negligible mass, meaning the tension $T$ is uniform throughout the entire length of the string.<br><br><strong>2. Inextensible string:</strong> The string does not stretch, meaning particle $A$ and particle $B$ have the same magnitude of acceleration $a$.",
+        "Final Answer: (a) $k = 5$, (b) $0.28g$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $k = 5$, (b) $0.40g$",
+            "feedback": "Incorrect acceleration in part (b). Remember that friction opposes motion up the slope: $T - 0.5mg - 0.3mg = ma$. Omitting the friction term gives $a = 0.40g$."
+        },
+        {
+            "ans": "(a) $k = 3$, (b) $0.28g$",
+            "feedback": "Incorrect value for $k$. Solving the equation gives $\\mu = \\dfrac{6}{10\\sqrt{3}} = \\dfrac{\\sqrt{3}}{5}$, so $k = 5$, not $3$."
+        },
+        {
+            "ans": "(a) $k = 5$, (b) $0.16g$",
+            "feedback": "Incorrect direction of friction in part (b). When particle $A$ accelerates up the plane, friction acts down the plane, so the total opposing force is $0.8mg$, not $0.2mg$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Friction Reversal",
+        "content": "In connected particle problems on an incline, always re-evaluate the direction of friction whenever the masses change. In part <strong>(a)</strong>, impending motion was down the slope, so friction acted up the slope. In part <strong>(b)</strong>, the heavier hanging mass pulled $A$ up the slope, reversing friction so that it acted down the slope. Forgetting this reversal is one of the most frequent errors on exam scripts."
+    }
+},
+{
+    "id": "012122",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Inclined Plane",
+        "Friction",
+        "Pulley Resultant Force"
+    ],
+    "img": "images/Mechanics_pngs/012122.png",
+    "question": "The diagram shows a block $A$ of mass $4\\text{ kg}$ on a rough plane inclined at an angle $\\alpha$ to the horizontal, where $\\tan\\alpha = \\dfrac{3}{4}$. Block $A$ is connected to a particle $B$ of mass $6\\text{ kg}$ by a light inextensible string. The string passes over a small smooth pulley fixed at the top of the plane, and particle $B$ hangs freely vertically below the pulley. The part of the string between $A$ and the pulley lies along a line of greatest slope of the plane.<br><br>The coefficient of friction between block $A$ and the plane is $\\mu = 0.25$.<br><br>The system is released from rest with the string taut.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Show that particle $B$ accelerates downwards, and calculate the magnitude of this acceleration.<br><br><strong>(b)</strong> Calculate the tension in the string during the motion, giving your answer correct to 3 significant figures.<br><br><strong>(c)</strong> Calculate the magnitude of the resultant force exerted by the string on the pulley, giving your answer correct to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Direction of motion and acceleration:</strong><br><br>From $\\tan\\alpha = \\dfrac{3}{4}$, we have $\\sin\\alpha = 0.6$ and $\\cos\\alpha = 0.8$.<br><br>For block $A$, resolving perpendicular to the plane ($\\nwarrow$):\\begin{aligned} R &= 4g\\cos\\alpha \\cr &= 4(9.8)(0.8) \\cr &= 31.36\\text{ N} \\end{aligned}<br><br>Maximum friction:\\begin{aligned} F &= \\mu R \\cr &= 0.25(31.36) \\cr &= 7.84\\text{ N} \\cr &= 0.8g\\text{ N} \\end{aligned}<br><br>Component of weight down the plane:\\begin{aligned} W_{\\parallel} &= 4g\\sin\\alpha \\cr &= 4g(0.6) \\cr &= 2.4g\\text{ N} \\end{aligned}<br><br>Total resistance for $A$ moving up the slope is $2.4g + 0.8g = 3.2g\\text{ N}$. Since the downward weight of $B$ is $6g\\text{ N} > 3.2g\\text{ N}$, particle $B$ accelerates downwards.<br><br>Equations of motion:\\begin{aligned} &6g - T = 6a \\cr &T - 3.2g = 4a \\end{aligned}<br><br>Adding equations:\\begin{aligned} &2.8g = 10a \\cr &a = 0.28g \\cr &a = 0.28(9.8) \\cr &a = 2.744\\text{ m s}^{-2} \\cr &a \\approx 2.74\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Tension in the string:</strong><br><br>Using the equation for $B$:\\begin{aligned} T &= 6(g - a) \\cr &= 6(9.8 - 2.744) \\cr &= 6(7.056) \\cr &= 42.336\\text{ N} \\cr &\\approx 42.3\\text{ N} \\end{aligned}",
+        "<strong>(c) Resultant force on the pulley:</strong><br><br>The string exerts two forces of magnitude $T = 42.336\\text{ N}$ on the pulley: one directed down the incline at angle $\\alpha$ below horizontal, and one directed vertically downwards.<br><br>Resolving horizontally ($\\leftarrow$):\\begin{aligned} F_x &= T\\cos\\alpha \\cr &= 42.336(0.8) \\cr &= 33.869\\text{ N} \\end{aligned}<br><br>Resolving vertically ($\\downarrow$):\\begin{aligned} F_y &= T + T\\sin\\alpha \\cr &= 42.336(1 + 0.6) \\cr &= 42.336(1.6) \\cr &= 67.738\\text{ N} \\end{aligned}<br><br>Resultant force:\\begin{aligned} R_{\\text{pulley}} &= \\sqrt{F_x^2 + F_y^2} \\cr &= \\sqrt{33.869^2 + 67.738^2} \\cr &= \\sqrt{1147.1 + 4588.4} \\cr &= \\sqrt{5735.5} \\cr &\\approx 75.7\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $2.74\\text{ m s}^{-2}$, (b) $42.3\\text{ N}$, (c) $75.7\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $2.74\\text{ m s}^{-2}$, (b) $42.3\\text{ N}$, (c) $84.7\\text{ N}$",
+            "feedback": "Incorrect pulley force in part (c). The two tensions are not parallel; you cannot simply add them as $2T = 84.7\\text{ N}$. You must resolve vectorially or use $R = \\sqrt{2T^2(1 + \\sin\\alpha)}$."
+        },
+        {
+            "ans": "(a) $3.53\\text{ m s}^{-2}$, (b) $37.6\\text{ N}$, (c) $75.7\\text{ N}$",
+            "feedback": "Incorrect acceleration in part (a). The friction force on block $A$ was neglected, giving $6g - 2.4g = 10a$ which leads to $a = 0.36g = 3.53\\text{ m s}^{-2}$."
+        },
+        {
+            "ans": "(a) $2.74\\text{ m s}^{-2}$, (b) $58.8\\text{ N}$, (c) $105\\text{ N}$",
+            "feedback": "Incorrect tension in part (b). $T = 58.8\\text{ N}$ assumes static equilibrium ($T = 6g$). Because $B$ is accelerating downwards, $T = 6(g - a) \\approx 42.3\\text{ N}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Resultant Force on a Pulley",
+        "content": "To find the force on a pulley without resolving into $x$ and $y$ components, note that the angle between the two string segments is $90^\\circ - \\alpha$. The angle between the tension vectors is $180^\\circ - (90^\\circ - \\alpha) = 90^\\circ + \\alpha$. Using the cosine rule of vectors gives $R = \\sqrt{2T^2(1 + \\sin\\alpha)} = T\\sqrt{3.2} \\approx 1.789T$."
+    }
+},
+{
+    "id": "012123",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles and Multi-Stage Motion",
+    "subtopic": [
+        "Horizontal Surface",
+        "Impact with Ground",
+        "Coasting under Friction"
+    ],
+    "img": "images/Mechanics_pngs/012123.png",
+    "question": "The diagram shows a block $A$ of mass $3\\text{ kg}$ resting on a rough horizontal table. Block $A$ is connected to a particle $B$ of mass $2\\text{ kg}$ by a light inextensible string that passes over a small smooth pulley fixed at the edge of the table. Particle $B$ hangs freely vertically below the pulley. The coefficient of friction between block $A$ and the table is $0.4$.<br><br>The system is released from rest from a position where block $A$ is a sufficient distance from the pulley.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the acceleration of the system and the tension in the string.<br><br>After the system has been moving for $1.5\\text{ seconds}$, particle $B$ reaches the floor and does not rebound.<br><br><strong>(b)</strong><br><strong>(i)</strong> Find the speed of block $A$ at the instant particle $B$ hits the floor.<br><strong>(ii)</strong> Calculate the further distance block $A$ travels along the table before coming to rest, assuming it does not reach the pulley.",
+    "steps": [
+        "<strong>(a) Acceleration and tension:</strong><br><br>For block $A$, vertical equilibrium gives $R = 3g = 29.4\\text{ N}$.<br><br>Frictional force:\\begin{aligned} F &= \\mu R \\cr &= 0.4(29.4) \\cr &= 11.76\\text{ N} \\cr &= 1.2g\\text{ N} \\end{aligned}<br><br>Equations of motion for $A$ and $B$:\\begin{aligned} &T - 1.2g = 3a \\cr &2g - T = 2a \\end{aligned}<br><br>Adding the equations:\\begin{aligned} &0.8g = 5a \\cr &a = 0.16g \\cr &a = 0.16(9.8) \\cr &a = 1.568\\text{ m s}^{-2} \\cr &a \\approx 1.57\\text{ m s}^{-2} \\end{aligned}<br><br>Finding tension:\\begin{aligned} T &= 2(g - a) \\cr &= 2(9.8 - 1.568) \\cr &= 2(8.232) \\cr &= 16.464\\text{ N} \\cr &\\approx 16.5\\text{ N} \\end{aligned}",
+        "<strong>(b)(i) Speed when $B$ hits the floor:</strong><br><br>Using $v = u + at$ with $u = 0$ and $t = 1.5\\text{ s}$:\\begin{aligned} v &= 0 + 1.568(1.5) \\cr &= 2.352\\text{ m s}^{-1} \\cr &\\approx 2.35\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b)(ii) Further distance travelled by $A$:</strong><br><br>After $B$ hits the floor, the string becomes slack ($T = 0$).<br><br>Block $A$ decelerates under friction alone:\\begin{aligned} -F &= m_A a' \\cr -11.76 &= 3a' \\cr a' &= -3.92\\text{ m s}^{-2} \\end{aligned}<br><br>Using $v^2 = u^2 + 2a's$ to find distance to rest ($v = 0$):\\begin{aligned} &0 = (2.352)^2 + 2(-3.92)s \\cr &7.84s = 5.5319 \\cr &s = \\dfrac{5.5319}{7.84} \\cr &s = 0.7056\\text{ m} \\cr &s \\approx 0.706\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $a = 1.57\\text{ m s}^{-2}, T = 16.5\\text{ N}$, (b)(i) $2.35\\text{ m s}^{-1}$, (b)(ii) $0.706\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $a = 1.57\\text{ m s}^{-2}, T = 16.5\\text{ N}$, (b)(i) $2.35\\text{ m s}^{-1}$, (b)(ii) $1.76\\text{ m}$",
+            "feedback": "Incorrect deceleration in part (b)(ii). Once $B$ hits the floor, the mass being decelerated is only block $A$ ($3\\text{ kg}$), so $a' = -\\mu g = -3.92\\text{ m s}^{-2}$, not the original system acceleration."
+        },
+        {
+            "ans": "(a) $a = 3.92\\text{ m s}^{-2}, T = 11.8\\text{ N}$, (b)(i) $5.88\\text{ m s}^{-1}$, (b)(ii) $0.706\\text{ m}$",
+            "feedback": "Incorrect system acceleration in part (a). The mass term in Newton's second law is the total mass $m_A + m_B = 5\\text{ kg}$, not $2\\text{ kg}$."
+        },
+        {
+            "ans": "(a) $a = 1.57\\text{ m s}^{-2}, T = 16.5\\text{ N}$, (b)(i) $2.35\\text{ m s}^{-1}$, (b)(ii) $1.41\\text{ m}$",
+            "feedback": "Calculation slip in part (b)(ii). In $v^2 = u^2 + 2as$, the denominator is $2a' = 7.84$, giving $s = 5.5319 / 7.84 \\approx 0.706\\text{ m}$, not $5.5319 / 3.92$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: String Slackness Post-Impact",
+        "content": "When a hanging particle hits the ground, students frequently make the error of using the connected system's acceleration to model the subsequent motion. The moment $B$ hits the floor, the string goes slack and tension vanishes ($T = 0$). Block $A$ becomes an independent particle moving solely under its own friction, so its deceleration changes immediately from $a = 1.57\\text{ m s}^{-2}$ to $a' = \\mu g = 3.92\\text{ m s}^{-2}$."
+    }
+},
+{
+    "id": "012124",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Double Inclined Plane",
+        "Friction",
+        "Direction of Motion"
+    ],
+    "img": "images/Mechanics_pngs/012124.png",
+    "question": "The diagram shows two particles $A$ and $B$, of masses $5\\text{ kg}$ and $3\\text{ kg}$ respectively, connected by a light inextensible string that passes over a small smooth pulley fixed at the apex of a fixed wedge.<br><br>Particle $A$ rests on a smooth face of the wedge inclined at an angle $\\alpha$ to the horizontal, where $\\sin\\alpha = 0.6$.<br>Particle $B$ rests on a rough face of the wedge inclined at an angle $\\beta$ to the horizontal, where $\\sin\\beta = 0.8$.<br>The coefficient of friction between particle $B$ and its face is $\\mu = 0.2$.<br><br>Both sections of the string are taut and parallel to the lines of greatest slope of their respective faces. The system is released from rest.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Determine whether the system moves, and if so, state whether particle $A$ moves up or down its slope, fully justifying your answer.<br><br><strong>(b)</strong> Calculate the magnitude of the acceleration of the particles.<br><br><strong>(c)</strong> Calculate the tension in the string during the motion.",
+    "steps": [
+        "<strong>(a) Determining the direction of motion:</strong><br><br>From the given values, $\\cos\\beta = \\sqrt{1 - 0.8^2} = 0.6$.<br><br>Gravitational driving force of $A$ down the left face:\\begin{aligned} W_{A\\parallel} &= 5g\\sin\\alpha \\cr &= 5g(0.6) \\cr &= 3g\\text{ N} \\end{aligned}<br><br>Gravitational force of $B$ down the right face:\\begin{aligned} W_{B\\parallel} &= 3g\\sin\\beta \\cr &= 3g(0.8) \\cr &= 2.4g\\text{ N} \\end{aligned}<br><br>Normal reaction on $B$:\\begin{aligned} R_B &= 3g\\cos\\beta \\cr &= 3g(0.6) \\cr &= 1.8g\\text{ N} \\end{aligned}<br><br>Maximum friction on $B$:\\begin{aligned} F_{\\text{max}} &= \\mu R_B \\cr &= 0.2(1.8g) \\cr &= 0.36g\\text{ N} \\end{aligned}<br><br>If $A$ moves down its slope, $B$ must move up its slope, so friction opposes motion up the right face. The net driving force is:\\begin{aligned} W_{A\\parallel} - W_{B\\parallel} &= 3g - 2.4g \\cr &= 0.6g\\text{ N} \\end{aligned}<br><br>Since $0.6g > F_{\\text{max}} = 0.36g$, the driving force overcomes friction. The system moves, and particle $A$ moves down its slope.",
+        "<strong>(b) Acceleration of the particles:</strong><br><br>Equations of motion for $A$ and $B$:\\begin{aligned} &5g\\sin\\alpha - T = 5a \\cr &3g - T = 5a \\quad \\text{--- [Eq 1]} \\end{aligned}\\begin{aligned} &T - 3g\\sin\\beta - F = 3a \\cr &T - 2.4g - 0.36g = 3a \\cr &T - 2.76g = 3a \\quad \\text{--- [Eq 2]} \\end{aligned}<br><br>Adding [Eq 1] and [Eq 2]:\\begin{aligned} &3g - 2.76g = 8a \\cr &0.24g = 8a \\cr &a = 0.03g \\cr &a = 0.03(9.8) \\cr &a = 0.294\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(c) Tension in the string:</strong><br><br>Using [Eq 1]:\\begin{aligned} T &= 3g - 5a \\cr &= 3(9.8) - 5(0.294) \\cr &= 29.4 - 1.47 \\cr &= 27.93\\text{ N} \\cr &\\approx 27.9\\text{ N} \\end{aligned}",
+        "Final Answer: (a) Moves, $A$ moves down, (b) $0.294\\text{ m s}^{-2}$, (c) $27.9\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Moves, $A$ moves down, (b) $0.294\\text{ m s}^{-2}$, (c) $47.5\\text{ N}$",
+            "feedback": "Incorrect tension in part (c). In the equation of motion for particle $A$, the gravitational component is $5g\\sin\\alpha = 3g = 29.4\\text{ N}$, not $5g$. This gives $T = 3g - 5a = 27.9\\text{ N}$."
+        },
+        {
+            "ans": "(a) Remains at rest, (b) $0\\text{ m s}^{-2}$, (c) $23.5\\text{ N}$",
+            "feedback": "Incorrect conclusion in part (a). The gravitational difference between the two slopes is $3g - 2.4g = 0.6g = 5.88\\text{ N}$, which strictly exceeds the maximum friction $F_{\\text{max}} = 0.36g = 3.53\\text{ N}$, so motion does occur."
+        },
+        {
+            "ans": "(a) Moves, $A$ moves down, (b) $0.735\\text{ m s}^{-2}$, (c) $27.9\\text{ N}$",
+            "feedback": "Incorrect acceleration in part (b). The total mass in Newton's second law is $m_A + m_B = 8\\text{ kg}$, not $5 - 3 = 2\\text{ kg}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Testing Equilibrium on Double Wedges",
+        "content": "To determine whether a system on a double wedge moves, never guess the direction. First, calculate the gravitational pull along the slope for each particle: $m_A g\\sin\\alpha$ and $m_B g\\sin\\beta$. The larger pull determines the potential direction of motion. Motion only occurs if the difference between these two pulls strictly exceeds the maximum available friction force on the rough plane ($|m_A g\\sin\\alpha - m_B g\\sin\\beta| > \\mu R$)."
+    }
+},
+{
+    "id": "012125",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Dynamics and Kinematics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Smooth Inclined Plane",
+        "Ground Impact",
+        "Subsequent Motion"
+    ],
+    "img": "images/Mechanics_pngs/012125.png",
+    "question": "The diagram shows a particle $A$ of mass $2\\text{ kg}$ held at rest on a smooth plane inclined at $30^\\circ$ to the horizontal. Particle $A$ is connected to a particle $B$ of mass $3\\text{ kg}$ by a light inextensible string that passes over a small smooth pulley fixed at the top of the plane. The section of string between $A$ and the pulley lies along a line of greatest slope of the plane.<br><br>Particle $B$ hangs freely vertically below the pulley at a height of $h = 1.0\\text{ m}$ above horizontal ground.<br><br>The system is released from rest with the string taut. When particle $B$ hits the ground, it does not rebound, and the string immediately becomes slack.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the acceleration of the system while particle $B$ is descending.<br><br><strong>(b)</strong> Find the speed of particle $B$ at the instant it hits the ground.<br><br><strong>(c)</strong> Calculate the further distance particle $A$ travels up the plane before coming to instantaneous rest, assuming $A$ does not reach the pulley.<br><br><strong>(d)</strong> Find the total time elapsed from the release of the system until particle $A$ first comes to instantaneous rest.",
+    "steps": [
+        "<strong>(a) Acceleration while $B$ descends:</strong><br><br>Component of weight of $A$ down the smooth plane:\\begin{aligned} W_{A\\parallel} &= 2g\\sin 30^\\circ \\cr &= 2(9.8)(0.5) \\cr &= 9.8\\text{ N} \\cr &= 1g\\text{ N} \\end{aligned}<br><br>Equations of motion for $B$ (downwards) and $A$ (upwards):\\begin{aligned} &3g - T = 3a \\cr &T - 1g = 2a \\end{aligned}<br><br>Adding the equations:\\begin{aligned} &2g = 5a \\cr &a = 0.4g \\cr &a = 0.4(9.8) \\cr &a = 3.92\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Speed at impact:</strong><br><br>Particle $B$ descends from rest ($u = 0$) through $h = 1.0\\text{ m}$ under acceleration $a = 3.92\\text{ m s}^{-2}$.<br><br>Using $v^2 = u^2 + 2ah$:\\begin{aligned} v^2 &= 0 + 2(3.92)(1.0) \\cr &= 7.84 \\cr v &= \\sqrt{7.84} \\cr &= 2.8\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(c) Further distance travelled by $A$:</strong><br><br>When $B$ hits the ground, the string goes slack ($T = 0$).<br><br>Particle $A$ moves up the smooth plane with initial speed $u = 2.8\\text{ m s}^{-1}$, retarded only by gravity:\\begin{aligned} -2g\\sin 30^\\circ &= 2a' \\cr a' &= -g\\sin 30^\\circ \\cr &= -4.9\\text{ m s}^{-2} \\end{aligned}<br><br>Using $v^2 = u^2 + 2a's$ to find distance until instantaneous rest ($v = 0$):\\begin{aligned} &0 = (2.8)^2 + 2(-4.9)s \\cr &9.8s = 7.84 \\cr &s = \\dfrac{7.84}{9.8} \\cr &s = 0.8\\text{ m} \\end{aligned}",
+        "<strong>(d) Total time to rest:</strong><br><br>Time for Stage 1 ($B$ descending):\\begin{aligned} v &= at_1 \\cr 2.8 &= 3.92t_1 \\cr t_1 &= \\dfrac{2.8}{3.92} \\cr &= \\dfrac{5}{7}\\text{ s} \\cr &\\approx 0.714\\text{ s} \\end{aligned}<br><br>Time for Stage 2 ($A$ coasting to rest):\\begin{aligned} 0 &= 2.8 - 4.9t_2 \\cr 4.9t_2 &= 2.8 \\cr t_2 &= \\dfrac{2.8}{4.9} \\cr &= \\dfrac{4}{7}\\text{ s} \\cr &\\approx 0.571\\text{ s} \\end{aligned}<br><br>Total time:\\begin{aligned} T &= t_1 + t_2 \\cr &= \\dfrac{5}{7} + \\dfrac{4}{7} \\cr &= \\dfrac{9}{7}\\text{ s} \\cr &\\approx 1.29\\text{ s} \\end{aligned}",
+        "Final Answer: (a) $3.92\\text{ m s}^{-2}$, (b) $2.8\\text{ m s}^{-1}$, (c) $0.8\\text{ m}$, (d) $1.29\\text{ s}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $3.92\\text{ m s}^{-2}$, (b) $2.8\\text{ m s}^{-1}$, (c) $0.8\\text{ m}$, (d) $0.714\\text{ s}$",
+            "feedback": "Incorrect total time in part (d). $0.714\\text{ s}$ is only the duration of the first stage while $B$ descends. You must add the second stage coasting duration ($t_2 = 0.571\\text{ s}$) to obtain $1.29\\text{ s}$."
+        },
+        {
+            "ans": "(a) $5.88\\text{ m s}^{-2}$, (b) $3.43\\text{ m s}^{-1}$, (c) $1.20\\text{ m}$, (d) $1.29\\text{ s}$",
+            "feedback": "Incorrect acceleration in part (a). The total mass accelerating is $m_A + m_B = 5\\text{ kg}$, not $3\\text{ kg}$, giving $a = 2g / 5 = 3.92\\text{ m s}^{-2}$."
+        },
+        {
+            "ans": "(a) $3.92\\text{ m s}^{-2}$, (b) $2.8\\text{ m s}^{-1}$, (c) $1.8\\text{ m}$, (d) $1.29\\text{ s}$",
+            "feedback": "Incorrect distance in part (c). $1.8\\text{ m}$ is the total distance travelled by $A$ from release ($1.0 + 0.8\\text{ m}$); the question specifically asks for the further distance travelled after $B$ hits the ground ($0.8\\text{ m}$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Energy Conservation for Coasting",
+        "content": "In part <strong>(c)</strong>, because the plane is smooth, energy is conserved during the coasting phase after $B$ hits the ground. All kinetic energy of particle $A$ converts directly into gravitational potential energy: $\\dfrac{1}{2}m v^2 = m g \\Delta h = m g (s \\sin 30^\\circ)$. Thus $s = \\dfrac{v^2}{2g\\sin 30^\\circ} = \\dfrac{7.84}{9.8} = 0.8\\text{ m}$, avoiding kinematic equations entirely."
     }
 }
 ];
