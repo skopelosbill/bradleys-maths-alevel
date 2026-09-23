@@ -403,5 +403,208 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Pivot at the Unknown Hinge",
         "content": "A smooth hinge can exert a reaction force in any direction within the vertical plane, meaning it introduces two unknowns ($H_A$ and $V_A$). By taking moments about the hinge $A$ first, both of these unknown forces have zero moment arm, allowing you to find the tension $T$ in a single equation without having to set up simultaneous equations."
     }
+},
+{
+    "id": "012111",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Statics and Moments",
+    "topic": "Forces and Equilibrium",
+    "subtopic": [
+        "Coplanar Forces",
+        "Resolving Forces",
+        "Trigonometric Equilibrium"
+    ],
+    "img": "images/Mechanics_pngs/012111.png",
+    "question": "The diagram shows three coplanar forces of magnitudes $5\\text{ N}$, $8\\text{ N}$, and $Q\\text{ N}$ acting at a point. The force of magnitude $Q\\text{ N}$ acts vertically downwards. The forces of magnitude $5\\text{ N}$ and $8\\text{ N}$ act upwards at angles of $2\\theta$ and $\\theta$ to the upward vertical, respectively.<br><br>The forces are in equilibrium.<br><br><strong>(a)</strong> Show that $\\theta = 36.9^\\circ$, correct to 3 significant figures.<br><br><strong>(b)</strong> Hence find the value of $Q$.<br><br>The force of magnitude $5\\text{ N}$ is now removed, and the force of magnitude $8\\text{ N}$ is replaced by a force of magnitude $5\\text{ N}$ acting in the same direction.<br><br><strong>(c)</strong> Find:<br><strong>(i)</strong> the magnitude of the resultant of the two remaining forces, giving your answer correct to 3 significant figures,<br><strong>(ii)</strong> the direction of the resultant of the two remaining forces, giving the angle correct to the nearest $0.1^\\circ$ below the horizontal.",
+    "steps": [
+        "<strong>(a) Finding the angle $\\theta$:</strong><br><br>Resolving horizontally ($\rightarrow$):\\begin{aligned} &5\\sin 2\\theta = 8\\sin\\theta \\cr &5(2\\sin\\theta\\cos\\theta) = 8\\sin\\theta \\cr &10\\sin\\theta\\cos\\theta = 8\\sin\\theta \\end{aligned}<br><br>Since $\\theta \\ne 0^\\circ$, we divide by $\\sin\\theta$:\\begin{aligned} 10\\cos\\theta &= 8 \\cr \\cos\\theta &= 0.8 \\cr \\theta &= \\arccos(0.8) \\cr &\\approx 36.87^\\circ \\cr &= 36.9^\\circ\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(b) Finding the vertical force $Q$:</strong><br><br>Using the double angle identity for cosine:\\begin{aligned} \\cos 2\\theta &= 2\\cos^2\\theta - 1 \\cr &= 2(0.8)^2 - 1 \\cr &= 2(0.64) - 1 \\cr &= 0.28 \\end{aligned}<br><br>Resolving vertically for equilibrium ($\\uparrow$):\\begin{aligned} Q &= 5\\cos 2\\theta + 8\\cos\\theta \\cr &= 5(0.28) + 8(0.8) \\cr &= 1.4 + 6.4 \\cr &= 7.8\\text{ N} \\end{aligned}",
+        "<strong>(c) Resultant of remaining forces:</strong><br><br>The $5\\text{ N}$ force is removed and the $8\\text{ N}$ force is replaced by a $5\\text{ N}$ force acting at $\\theta = 36.87^\\circ$ to the upward vertical.<br><br>Horizontal component of resultant ($\rightarrow$):\\begin{aligned} R_x &= 5\\sin\\theta \\cr &= 5(0.6) \\cr &= 3\\text{ N} \\end{aligned}<br><br>Vertical component of resultant ($\downarrow$):\\begin{aligned} R_y &= Q - 5\\cos\\theta \\cr &= 7.8 - 5(0.8) \\cr &= 7.8 - 4 \\cr &= 3.8\\text{ N} \\end{aligned}",
+        "<strong>Magnitude and direction:</strong><br><br><strong>(i) Magnitude:</strong>\\begin{aligned} R &= \\sqrt{R_x^2 + R_y^2} \\cr &= \\sqrt{3^2 + 3.8^2} \\cr &= \\sqrt{9 + 14.44} \\cr &= \\sqrt{23.44} \\cr &\\approx 4.84\\text{ N} \\end{aligned}<br><br><strong>(ii) Direction:</strong><br><br>Let $\\phi$ be the angle below the horizontal:\\begin{aligned} \\tan\\phi &= \\dfrac{R_y}{R_x} \\cr &= \\dfrac{3.8}{3} \\cr &\\approx 1.2667 \\cr \\phi &= \\arctan(1.2667) \\cr &\\approx 51.7^\\circ \\end{aligned}",
+        "Final Answer: (b) $Q = 7.8\\text{ N}$, (c)(i) $4.84\\text{ N}$, (c)(ii) $51.7^\\circ$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $Q = 7.8\\text{ N}$, (c)(i) $4.84\\text{ N}$, (c)(ii) $38.3^\\circ$",
+            "feedback": "Incorrect direction in part (c)(ii). The angle was calculated with respect to the vertical ($90^\\circ - 51.7^\\circ = 38.3^\\circ$) rather than below the horizontal ($\tan\\phi = R_y / R_x = 3.8 / 3$)."
+        },
+        {
+            "ans": "(b) $Q = 9.4\\text{ N}$, (c)(i) $4.84\\text{ N}$, (c)(ii) $51.7^\\circ$",
+            "feedback": "Incorrect value for $Q$. Check the double angle expansion for $\\cos 2\\theta$: $\\cos 2\\theta = 2\\cos^2\\theta - 1 = 2(0.64) - 1 = 0.28$, giving $Q = 5(0.28) + 8(0.8) = 7.8\\text{ N}$."
+        },
+        {
+            "ans": "(b) $Q = 7.8\\text{ N}$, (c)(i) $6.80\\text{ N}$, (c)(ii) $51.7^\\circ$",
+            "feedback": "Incorrect resultant magnitude. In part (c), the remaining $5\\text{ N}$ force has an upward component of $4\\text{ N}$ while $Q$ acts downwards, so the net vertical component is $7.8 - 4 = 3.8\\text{ N}$, not $7.8 + 4$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Exact Pythagorean Ratios",
+        "content": "When resolving forces involving $\\theta$ where $\\cos\\theta = 0.8 = \\dfrac{4}{5}$, recognise immediately that $\\sin\\theta = \\dfrac{3}{5} = 0.6$. Using these exact rational values avoids rounding discrepancies entirely when finding $\\cos 2\\theta = 2(0.8)^2 - 1 = 0.28$ and calculating the horizontal and vertical components of the resultant."
+    }
+},
+{
+    "id": "012112",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Statics and Moments",
+    "topic": "Forces and Equilibrium",
+    "subtopic": [
+        "Non-Perpendicular Forces",
+        "Vector Resolution",
+        "Resultant Forces"
+    ],
+    "img": "images/Mechanics_pngs/012112.png",
+    "question": "The diagram shows three coplanar forces acting at a point $O$:<br>A force of magnitude $10\\text{ N}$ acting along the positive $x$-axis.<br>A force of magnitude $12\\text{ N}$ acting at an angle of $60^\\circ$ above the negative $x$-axis.<br>A force of magnitude $P\\text{ N}$ acting at an angle of $\\theta$ below the negative $x$-axis.<br><br>The forces are in equilibrium.<br><br><strong>(a)</strong> Show that $\\tan\\theta = \\dfrac{3\\sqrt{3}}{2}$, and hence find the value of $\\theta$ correct to 3 significant figures.<br><br><strong>(b)</strong> Find the exact value of $P$ in the form $k\\sqrt{m}$, where $k$ and $m$ are integers.<br><br>The force of magnitude $10\\text{ N}$ is now removed, and the force of magnitude $12\\text{ N}$ is replaced by a force of magnitude $24\\text{ N}$ acting in the same direction.<br><br><strong>(c)</strong> Find:<br><strong>(i)</strong> the magnitude of the resultant of the two remaining forces, giving your answer correct to 3 significant figures,<br><strong>(ii)</strong> the acute angle that this resultant makes with the negative $x$-axis, giving your answer correct to the nearest $0.1^\\circ$.",
+    "steps": [
+        "<strong>(a) Resolving for equilibrium:</strong><br><br>Resolving vertically ($\\uparrow$):\\begin{aligned} 12\\sin 60^\\circ - P\\sin\\theta &= 0 \\cr P\\sin\\theta &= 12\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr P\\sin\\theta &= 6\\sqrt{3} \\quad \\text{--- [Eq 1]} \\end{aligned}<br><br>Resolving horizontally ($\rightarrow$):\\begin{aligned} 10 - 12\\cos 60^\\circ - P\\cos\\theta &= 0 \\cr 10 - 12(0.5) &= P\\cos\\theta \\cr P\\cos\\theta &= 4 \\quad \\text{--- [Eq 2]} \\end{aligned}<br><br>Dividing [Eq 1] by [Eq 2]:\\begin{aligned} \\tan\\theta &= \\dfrac{6\\sqrt{3}}{4} \\cr &= \\dfrac{3\\sqrt{3}}{2} \\cr \\theta &= \\arctan\\left(\\dfrac{3\\sqrt{3}}{2}\\right) \\cr &\\approx 68.9^\\circ \\end{aligned}",
+        "<strong>(b) Finding the exact value of $P$:</strong><br><br>Squaring and adding [Eq 1] and [Eq 2]:\\begin{aligned} P^2 &= (P\\cos\\theta)^2 + (P\\sin\\theta)^2 \\cr &= 4^2 + (6\\sqrt{3})^2 \\cr &= 16 + 108 \\cr &= 124 \\cr P &= \\sqrt{124} \\cr &= 2\\sqrt{31}\\text{ N} \\end{aligned}",
+        "<strong>(c) New resultant force:</strong><br><br>The $10\\text{ N}$ force is removed and the $12\\text{ N}$ force is replaced by $24\\text{ N}$.<br><br>Resolving in the $x$-direction ($\rightarrow$):\\begin{aligned} R_x &= -24\\cos 60^\\circ - P\\cos\\theta \\cr &= -24(0.5) - 4 \\cr &= -12 - 4 \\cr &= -16\\text{ N} \\end{aligned}<br><br>Resolving in the $y$-direction ($\\uparrow$):\\begin{aligned} R_y &= 24\\sin 60^\\circ - P\\sin\\theta \\cr &= 24\\left(\\dfrac{\\sqrt{3}}{2}\\right) - 6\\sqrt{3} \\cr &= 12\\sqrt{3} - 6\\sqrt{3} \\cr &= 6\\sqrt{3}\\text{ N} \\end{aligned}",
+        "<strong>Magnitude and angle:</strong><br><br><strong>(i) Magnitude:</strong>\\begin{aligned} R &= \\sqrt{R_x^2 + R_y^2} \\cr &= \\sqrt{(-16)^2 + (6\\sqrt{3})^2} \\cr &= \\sqrt{256 + 108} \\cr &= \\sqrt{364} \\cr &\\approx 19.1\\text{ N} \\end{aligned}<br><br><strong>(ii) Direction:</strong><br><br>Let $\\alpha$ be the angle above the negative $x$-axis:\\begin{aligned} \\tan\\alpha &= \\dfrac{|R_y|}{|R_x|} \\cr &= \\dfrac{6\\sqrt{3}}{16} \\cr &= \\dfrac{3\\sqrt{3}}{8} \\cr &\\approx 0.6495 \\cr \\alpha &= \\arctan(0.6495) \\cr &\\approx 33.0^\\circ \\end{aligned}",
+        "Final Answer: (a) $68.9^\\circ$, (b) $2\\sqrt{31}\\text{ N}$, (c)(i) $19.1\\text{ N}$, (c)(ii) $33.0^\\circ$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $68.9^\\circ$, (b) $2\\sqrt{31}\\text{ N}$, (c)(i) $19.1\\text{ N}$, (c)(ii) $57.0^\\circ$",
+            "feedback": "Incorrect angle in part (c)(ii). The angle was measured to the vertical rather than the negative $x$-axis ($90^\\circ - 33.0^\\circ = 57.0^\\circ$). The required angle satisfies $\\tan\\alpha = 6\\sqrt{3} / 16$."
+        },
+        {
+            "ans": "(a) $68.9^\\circ$, (b) $4\\sqrt{31}\\text{ N}$, (c)(i) $19.1\\text{ N}$, (c)(ii) $33.0^\\circ$",
+            "feedback": "Incorrect surd simplification in part (b). $\\sqrt{124} = \\sqrt{4 \\times 31} = 2\\sqrt{31}\\text{ N}$, not $4\\sqrt{31}\\text{ N}$."
+        },
+        {
+            "ans": "(a) $52.4^\\circ$, (b) $2\\sqrt{31}\\text{ N}$, (c)(i) $22.4\\text{ N}$, (c)(ii) $33.0^\\circ$",
+            "feedback": "Incorrect angle in part (a). The tangent ratio was inverted as $4 / (6\\sqrt{3})$ instead of $P\\sin\\theta / P\\cos\\theta = 6\\sqrt{3} / 4$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Vector Linearity in Resultants",
+        "content": "In part <strong>(c)</strong>, recognise that the original forces satisfied $\\mathbf{F}_{10} + \\mathbf{F}_{12} + \\mathbf{F}_P = \\mathbf{0}$, meaning $\\mathbf{F}_{12} + \\mathbf{F}_P = -\\mathbf{F}_{10}$. When $\\mathbf{F}_{10}$ is removed and $\\mathbf{F}_{12}$ is doubled to $2\\mathbf{F}_{12}$, the new resultant is simply $2\\mathbf{F}_{12} + \\mathbf{F}_P = \\mathbf{F}_{12} + (\\mathbf{F}_{12} + \\mathbf{F}_P) = \\mathbf{F}_{12} - \\mathbf{F}_{10}$. This vector insight verifies your resolved components immediately."
+    }
+},
+{
+    "id": "012113",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Statics and Moments",
+    "topic": "Forces and Equilibrium",
+    "subtopic": [
+        "Inclined Planes",
+        "Limiting Friction",
+        "Horizontal Pushing Force"
+    ],
+    "img": "images/Mechanics_pngs/012113.png",
+    "question": "The diagram shows a parcel of weight $65\\text{ N}$ resting in equilibrium on a rough plane inclined at an angle $\\alpha$ to the horizontal, where $\\tan\\alpha = \\dfrac{3}{4}$.<br><br>A horizontal pushing force of magnitude $P\\text{ N}$ is applied to the parcel. The force acts towards the plane in a vertical plane containing a line of greatest slope. The coefficient of friction between the parcel and the plane is $\\mu = 0.25$.<br><br><strong>(a)</strong> When the parcel is on the point of sliding up the plane:<br><strong>(i)</strong> show that the normal reaction $R\\text{ N}$ between the plane and the parcel satisfies $R = 52 + 0.6P$,<br><strong>(ii)</strong> calculate the value of $P$.<br><br><strong>(b)</strong> The magnitude of $P$ is now gradually reduced until the parcel is on the point of sliding down the plane. Calculate this minimum value of $P$, giving your answer correct to 3 significant figures.",
+    "steps": [
+        "<strong>(a)(i) Normal reaction $R$:</strong><br><br>Since $\\tan\\alpha = \\dfrac{3}{4}$, by trigonometry:\\begin{aligned} \\sin\\alpha &= 0.6 \\cr \\cos\\alpha &= 0.8 \\end{aligned}<br><br>Resolving perpendicular to the plane ($\\nwarrow$):\\begin{aligned} R &= 65\\cos\\alpha + P\\sin\\alpha \\cr &= 65(0.8) + P(0.6) \\cr &= 52 + 0.6P \\end{aligned}",
+        "<strong>(a)(ii) On the point of sliding up the plane:</strong><br><br>When sliding up the plane is impending, friction $F$ acts down the plane at its maximum value:\\begin{aligned} F &= \\mu R \\cr &= 0.25(52 + 0.6P) \\cr &= 13 + 0.15P \\end{aligned}<br><br>Resolving parallel to the plane ($\\nearrow$):\\begin{aligned} &P\\cos\\alpha = 65\\sin\\alpha + F \\cr &0.8P = 65(0.6) + (13 + 0.15P) \\cr &0.8P = 39 + 13 + 0.15P \\cr &0.8P = 52 + 0.15P \\cr &0.65P = 52 \\cr &P = \\dfrac{52}{0.65} \\cr &P = 80\\text{ N} \\end{aligned}",
+        "<strong>(b) On the point of sliding down the plane:</strong><br><br>When sliding down the plane is impending, friction $F$ acts up the plane:\\begin{aligned} F = \\mu R = 13 + 0.15P \\end{aligned}<br><br>Resolving parallel to the plane ($\\nearrow$):\\begin{aligned} &P\\cos\\alpha + F = 65\\sin\\alpha \\cr &0.8P + (13 + 0.15P) = 65(0.6) \\cr &0.95P + 13 = 39 \\cr &0.95P = 26 \\cr &P = \\dfrac{26}{0.95} \\cr &P \\approx 27.4\\text{ N} \\end{aligned}",
+        "Final Answer: (a)(ii) $80\\text{ N}$, (b) $27.4\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(ii) $80\\text{ N}$, (b) $32.5\\text{ N}$",
+            "feedback": "Incorrect value in part (b). You likely assumed $R = 65\\cos\\alpha = 52\\text{ N}$, forgetting that the horizontal force $P$ contributes a component $P\\sin\\alpha = 0.6P$ pressing the parcel into the plane."
+        },
+        {
+            "ans": "(a)(ii) $65\\text{ N}$, (b) $27.4\\text{ N}$",
+            "feedback": "Incorrect value for $P$ in part (a)(ii). Check the resolution parallel to the slope: $P\\cos\\alpha = 65\\sin\\alpha + \\mu R$, which gives $0.65P = 52 \\implies P = 80\\text{ N}$."
+        },
+        {
+            "ans": "(a)(ii) $80\\text{ N}$, (b) $41.1\\text{ N}$",
+            "feedback": "Incorrect direction of friction in part (b). When impending motion is down the plane, friction acts up the plane, so $P\\cos\\alpha + F = 65\\sin\\alpha$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Horizontal Force Normal Component",
+        "content": "A horizontal force $P$ acting on an inclined plane has two perpendicular components: $P\\cos\\alpha$ parallel to the slope, and $P\\sin\\alpha$ perpendicular to the slope. Students frequently forget the perpendicular component and write $R = mg\\cos\\alpha$. Because $P$ presses into the slope, it increases $R$ to $mg\\cos\\alpha + P\\sin\\alpha$, which directly increases the maximum frictional force."
+    }
+},
+{
+    "id": "012114",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Statics and Moments",
+    "topic": "Forces and Equilibrium",
+    "subtopic": [
+        "Suspended Particles",
+        "Light Strings",
+        "Tension Ratios"
+    ],
+    "img": "images/Mechanics_pngs/012114.png",
+    "question": "The diagram shows a particle $P$ of weight $50\\text{ N}$ suspended in equilibrium by two light inextensible strings $PA$ and $PB$. The ends $A$ and $B$ are attached to a horizontal ceiling.<br><br>The string $PA$ is inclined at an angle $\\alpha$ to the vertical, where $\\tan\\alpha = \\dfrac{3}{4}$.<br>The string $PB$ is inclined at an angle $\\beta$ to the vertical.<br><br>The tension in string $PB$ is twice the tension in string $PA$.<br><br><strong>(a)</strong> By resolving horizontally, show that $\\sin\\beta = \\dfrac{3}{10}$.<br><br><strong>(b)</strong> Find the value of $\\beta$ in degrees, correct to 1 decimal place.<br><br><strong>(c)</strong> Calculate:<br><strong>(i)</strong> the tension in string $PA$, correct to 3 significant figures,<br><strong>(ii)</strong> the tension in string $PB$, correct to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Resolving horizontally:</strong><br><br>From $\\tan\\alpha = \\dfrac{3}{4}$, we have $\\sin\\alpha = 0.6$ and $\\cos\\alpha = 0.8$.<br><br>Given that $T_B = 2T_A$, resolving horizontally ($\rightarrow$):\\begin{aligned} &T_B\\sin\\beta = T_A\\sin\\alpha \\cr &2T_A\\sin\\beta = T_A(0.6) \\cr &2\\sin\\beta = 0.6 \\cr &\\sin\\beta = 0.3 \\cr &\\sin\\beta = \\dfrac{3}{10} \\end{aligned}",
+        "<strong>(b) Finding angle $\\beta$:</strong><br><br>Evaluating $\\beta$:\\begin{aligned} \\beta &= \\arcsin(0.3) \\cr &\\approx 17.4576^\\circ \\cr &= 17.5^\\circ\\text{ (1 d.p.)} \\end{aligned}",
+        "<strong>(c) Resolving vertically for tensions:</strong><br><br>Using $\\cos\\beta = \\sqrt{1 - \\sin^2\\beta}$:\\begin{aligned} \\cos\\beta &= \\sqrt{1 - (0.3)^2} \\cr &= \\sqrt{0.91} \\cr &\\approx 0.95394 \\end{aligned}<br><br>Resolving vertically for equilibrium ($\\uparrow$):\\begin{aligned} &T_A\\cos\\alpha + T_B\\cos\\beta = 50 \\cr &T_A(0.8) + 2T_A(\\sqrt{0.91}) = 50 \\cr &T_A(0.8 + 2\\times 0.95394) = 50 \\cr &T_A(0.8 + 1.90788) = 50 \\cr &2.70788 T_A = 50 \\cr &T_A = \\dfrac{50}{2.70788} \\cr &T_A \\approx 18.5\\text{ N} \\end{aligned}<br><br>For string $PB$:\\begin{aligned} T_B &= 2T_A \\cr &= 2(18.4647) \\cr &\\approx 36.9\\text{ N} \\end{aligned}",
+        "Final Answer: (b) $17.5^\\circ$, (c)(i) $18.5\\text{ N}$, (c)(ii) $36.9\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $17.5^\\circ$, (c)(i) $36.9\\text{ N}$, (c)(ii) $18.5\\text{ N}$",
+            "feedback": "Incorrect assignment of tensions. The tension in string $PB$ is twice the tension in string $PA$, so $T_B = 36.9\\text{ N}$ and $T_A = 18.5\\text{ N}$."
+        },
+        {
+            "ans": "(b) $30.0^\\circ$, (c)(i) $18.5\\text{ N}$, (c)(ii) $36.9\\text{ N}$",
+            "feedback": "Incorrect angle $\\beta$. Check part (a): $2\\sin\\beta = 0.6 \\implies \\sin\\beta = 0.3$. $\\arcsin(0.3) \\approx 17.5^\\circ$, whereas $\\arcsin(0.5) = 30.0^\\circ$."
+        },
+        {
+            "ans": "(b) $17.5^\\circ$, (c)(i) $19.2\\text{ N}$, (c)(ii) $38.5\\text{ N}$",
+            "feedback": "Premature rounding error. When evaluating $\\cos\\beta$, use $\\sqrt{0.91} \\approx 0.9539$ rather than approximating it to $1$, which significantly distorts the tension."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: String Inclination Angles",
+        "content": "Be vigilant about how angles are defined in suspended particle questions. Here, both $\\alpha$ and $\\beta$ are given with respect to the vertical. This means the horizontal components use $\\sin$ and the vertical components use $\\cos$. If angles are defined with respect to the ceiling, the roles of sine and cosine are reversed."
+    }
+},
+{
+    "id": "012115",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Dynamics and Equilibrium",
+    "topic": "Forces and Newton's Second Law",
+    "subtopic": [
+        "Coplanar Forces",
+        "Newton's Second Law",
+        "Kinematic Consequences"
+    ],
+    "img": "images/Mechanics_pngs/012115.png",
+    "question": "The diagram shows a particle $P$ of mass $3\\text{ kg}$ held in equilibrium on a smooth horizontal surface by three horizontal coplanar forces:<br>A force $\\mathbf{F}_1$ of magnitude $25\\text{ N}$ acting at an acute angle $\\theta$ to the positive $x$-axis.<br>A force $\\mathbf{F}_2$ of magnitude $15\\text{ N}$ acting along the negative $y$-axis.<br>A force $\\mathbf{F}_3$ of magnitude $H\\text{ N}$ acting along the negative $x$-axis.<br><br><strong>(a)</strong> Find:<br><strong>(i)</strong> the value of $\\theta$, correct to 3 significant figures,<br><strong>(ii)</strong> the value of $H$.<br><br>The force $\\mathbf{F}_3$ is suddenly removed while $\\mathbf{F}_1$ and $\\mathbf{F}_2$ remain unchanged. The particle starts from rest at the origin.<br><br><strong>(b)</strong><br><strong>(i)</strong> Write down the magnitude and direction of the resultant force acting on the particle immediately after $\\mathbf{F}_3$ is removed.<br><strong>(ii)</strong> Calculate the magnitude of the acceleration of the particle.<br><strong>(iii)</strong> Calculate the distance travelled by the particle in the first $3\\text{ seconds}$ of its motion.<br><br><strong>(c)</strong> In a different scenario starting from the original three-force equilibrium state, instead of removing $\\mathbf{F}_3$, the force $\\mathbf{F}_2$ is reversed in direction. State the magnitude and direction of the resulting net force acting on the particle.",
+    "steps": [
+        "<strong>(a) Equilibrium conditions:</strong><br><br>Resolving along the $y$-axis ($\\uparrow$):\\begin{aligned} 25\\sin\\theta - 15 &= 0 \\cr 25\\sin\\theta &= 15 \\cr \\sin\\theta &= 0.6 \\cr \\theta &= \\arcsin(0.6) \\cr &\\approx 36.9^\\circ \\end{aligned}<br><br>Since $\\sin\\theta = 0.6$, $\\cos\\theta = 0.8$.<br><br>Resolving along the $x$-axis ($\rightarrow$):\\begin{aligned} 25\\cos\\theta - H &= 0 \\cr H &= 25(0.8) \\cr &= 20\\text{ N} \\end{aligned}",
+        "<strong>(b)(i) Resultant when $\\mathbf{F}_3$ is removed:</strong><br><br>In the original equilibrium state:\\begin{aligned} \\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3 = \\mathbf{0} \\end{aligned}<br><br>Therefore, the resultant of $\\mathbf{F}_1$ and $\\mathbf{F}_2$ is equal and opposite to $\\mathbf{F}_3$:\\begin{aligned} \\mathbf{F}_1 + \\mathbf{F}_2 &= -\\mathbf{F}_3 \\cr &= -(-20\\mathbf{i}) \\cr &= 20\\mathbf{i}\\text{ N} \\end{aligned}<br><br>The resultant force has magnitude $20\\text{ N}$ directed in the positive $x$-direction (due East).",
+        "<strong>(b)(ii) & (b)(iii) Acceleration and displacement:</strong><br><br>Using Newton's second law ($F = ma$):\\begin{aligned} a &= \\dfrac{F}{m} \\cr &= \\dfrac{20}{3} \\cr &\\approx 6.67\\text{ m s}^{-2} \\end{aligned}<br><br>Since the particle starts from rest ($u = 0\\text{ m s}^{-1}$), using $s = ut + \\dfrac{1}{2}at^2$:\\begin{aligned} s &= 0(3) + \\dfrac{1}{2}\\left(\\dfrac{20}{3}\\right)(3)^2 \\cr &= \\dfrac{1}{2}\\left(\\dfrac{20}{3}\\right)(9) \\cr &= \\dfrac{1}{2}(60) \\cr &= 30\\text{ m} \\end{aligned}",
+        "<strong>(c) Reversing the direction of $\\mathbf{F}_2$:</strong><br><br>Reversing $\\mathbf{F}_2$ replaces $-\\mathbf{F}_2$ with $+\\mathbf{F}_2$. The new net force is:\\begin{aligned} \\mathbf{F}_{\\text{net}} &= \\mathbf{F}_1 + (-\\mathbf{F}_2) + \\mathbf{F}_3 \\cr &= (\\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3) - 2\\mathbf{F}_2 \\cr &= \\mathbf{0} - 2(-15\\mathbf{j}) \\cr &= 30\\mathbf{j}\\text{ N} \\end{aligned}<br><br>The resulting net force has magnitude $30\\text{ N}$ directed in the positive $y$-direction (due North).",
+        "Final Answer: (a)(i) $36.9^\\circ$, (a)(ii) $H = 20\\text{ N}$, (b)(i) $20\\text{ N}$ due East, (b)(ii) $6.67\\text{ m s}^{-2}$, (b)(iii) $30\\text{ m}$, (c) $30\\text{ N}$ due North"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $36.9^\\circ$, (a)(ii) $H = 20\\text{ N}$, (b)(i) $20\\text{ N}$ due West, (b)(ii) $6.67\\text{ m s}^{-2}$, (b)(iii) $30\\text{ m}$, (c) $30\\text{ N}$ due North",
+            "feedback": "Incorrect direction in part (b)(i). Since $\\mathbf{F}_3$ acted to the West (negative $x$-direction) to maintain balance, the resultant of the remaining forces must act to the East (positive $x$-direction)."
+        },
+        {
+            "ans": "(a)(i) $36.9^\\circ$, (a)(ii) $H = 20\\text{ N}$, (b)(i) $20\\text{ N}$ due East, (b)(ii) $6.67\\text{ m s}^{-2}$, (b)(iii) $60\\text{ m}$, (c) $30\\text{ N}$ due North",
+            "feedback": "Incorrect displacement in part (b)(iii). You omitted the factor of $\\frac{1}{2}$ in the constant acceleration formula $s = ut + \\frac{1}{2}at^2$, giving $60\\text{ m}$ instead of $30\\text{ m}$."
+        },
+        {
+            "ans": "(a)(i) $53.1^\\circ$, (a)(ii) $H = 15\\text{ N}$, (b)(i) $20\\text{ N}$ due East, (b)(ii) $6.67\\text{ m s}^{-2}$, (b)(iii) $30\\text{ m}$, (c) $15\\text{ N}$ due North",
+            "feedback": "Incorrect angle $\\theta$ and value of $H$. Resolving vertically gives $25\\sin\\theta = 15 \\implies \\sin\\theta = 0.6 \\implies \\theta = 36.9^\\circ$. Confusing sine and cosine results in $\\theta = 53.1^\\circ$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: The Removal Equilibrium Principle",
+        "content": "Whenever a system of forces is in equilibrium ($\\Sigma \\mathbf{F} = \\mathbf{0}$) and one force is suddenly removed, the resultant of all remaining forces is always exactly equal in magnitude and opposite in direction to the removed force ($-\\mathbf{F}_{\\text{removed}}$). Recognising this vector identity saves minutes of unnecessary trigonometry in exam conditions."
+    }
 }
 ];
