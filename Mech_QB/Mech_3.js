@@ -605,5 +605,210 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: The Removal Equilibrium Principle",
         "content": "Whenever a system of forces is in equilibrium ($\\Sigma \\mathbf{F} = \\mathbf{0}$) and one force is suddenly removed, the resultant of all remaining forces is always exactly equal in magnitude and opposite in direction to the removed force ($-\\mathbf{F}_{\\text{removed}}$). Recognising this vector identity saves minutes of unnecessary trigonometry in exam conditions."
     }
+},
+{
+    "id": "012116",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Calculus in Kinematics",
+        "Piecewise Motion",
+        "Constant Acceleration"
+    ],
+    "img": false,
+    "question": "A motorcycle moves along a straight horizontal road. The velocity $v\\text{ m s}^{-1}$ of the motorcycle at time $t\\text{ s}$, during the first $10\\text{ s}$ of its journey ($0 \\le t \\le 10$), is modelled by:$$v = ct + 0.06t^2$$where $c$ is a constant.<br><br>When $t = 10$, the acceleration of the motorcycle is $1.8\\text{ m s}^{-2}$.<br><br>For $t \\ge 10$, the motorcycle continues its journey with constant acceleration $1.8\\text{ m s}^{-2}$ until its speed reaches $30\\text{ m s}^{-1}$.<br><br><strong>(a)</strong> Find the value of $c$.<br><br><strong>(b)</strong> Find the speed of the motorcycle when $t = 10$.<br><br><strong>(c)</strong> Find the total distance the motorcycle has travelled from $t = 0$ until its speed reaches $30\\text{ m s}^{-1}$.",
+    "steps": [
+        "<strong>(a) Finding the constant $c$:</strong><br><br>Acceleration is the derivative of velocity with respect to time:\\begin{aligned} a &= \\dfrac{\\text{d}v}{\\text{d}t} \\cr &= c + 0.12t \\end{aligned}<br><br>Given that $a = 1.8\\text{ m s}^{-2}$ when $t = 10$:\\begin{aligned} &c + 0.12(10) = 1.8 \\cr &c + 1.2 = 1.8 \\cr &c = 0.6 \\end{aligned}",
+        "<strong>(b) Speed at $t = 10$:</strong><br><br>Substitute $c = 0.6$ and $t = 10$ into the velocity model:\\begin{aligned} v(10) &= 0.6(10) + 0.06(10)^2 \\cr &= 6 + 0.06(100) \\cr &= 6 + 6 \\cr &= 12\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(c) Stage 1 distance ($0 \\le t \\le 10$):</strong><br><br>Integrating velocity gives displacement:\\begin{aligned} s_1 &= \\int_0^{10} (0.6t + 0.06t^2)\\text{d}t \\cr &= \\left[ 0.3t^2 + 0.02t^3 \\right]_0^{10} \\cr &= 0.3(100) + 0.02(1000) \\cr &= 30 + 20 \\cr &= 50\\text{ m} \\end{aligned}",
+        "<strong>Stage 2 distance ($t \\ge 10$):</strong><br><br>The motorcycle moves with constant acceleration $a = 1.8\\text{ m s}^{-2}$ from initial speed $u = 12\\text{ m s}^{-1}$ to final speed $v = 30\\text{ m s}^{-1}$.<br><br>Using $v^2 = u^2 + 2as$:\\begin{aligned} &30^2 = 12^2 + 2(1.8)s_2 \\cr &900 = 144 + 3.6s_2 \\cr &3.6s_2 = 756 \\cr &s_2 = 210\\text{ m} \\end{aligned}<br><br>Total distance travelled:\\begin{aligned} s &= s_1 + s_2 \\cr &= 50 + 210 \\cr &= 260\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $c = 0.6$, (b) $12\\text{ m s}^{-1}$, (c) $260\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $c = 0.6$, (b) $12\\text{ m s}^{-1}$, (c) $210\\text{ m}$",
+            "feedback": "Incorrect total distance in part (c). $210\\text{ m}$ is only the distance travelled during Stage 2 under constant acceleration. You must add the $50\\text{ m}$ covered during Stage 1 ($50 + 210 = 260\\text{ m}$)."
+        },
+        {
+            "ans": "(a) $c = 1.2$, (b) $18\\text{ m s}^{-1}$, (c) $310\\text{ m}$",
+            "feedback": "Incorrect derivative in part (a). Differentiating $0.06t^2$ yields $2(0.06)t = 0.12t$, not $0.06t$."
+        },
+        {
+            "ans": "(a) $c = 0.6$, (b) $12\\text{ m s}^{-1}$, (c) $300\\text{ m}$",
+            "feedback": "Incorrect integration in part (c). When integrating $0.6t$, remember to divide by the new power: $\\int 0.6t\\text{d}t = 0.3t^2$, not $0.6t^2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Blending Calculus and SUVAT",
+        "content": "Never apply constant acceleration formulae ($v^2 = u^2 + 2as$) during Stage 1 where acceleration depends on time ($a = 0.6 + 0.12t$). Conversely, do not attempt to integrate the Stage 1 velocity model beyond $t = 10$, as the model changes explicitly to constant acceleration. Always treat piecewise journeys in distinct phases and sum the distances."
+    }
+},
+{
+    "id": "012117",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Integrating Acceleration",
+        "Braking Distance",
+        "Uniform Deceleration"
+    ],
+    "img": false,
+    "question": "A train departs from rest at station $A$ along a straight horizontal track. For the first $20\\text{ s}$ of its journey ($0 \\le t \\le 20$), its acceleration $a\\text{ m s}^{-2}$ at time $t\\text{ s}$ is modelled by:$$a = 1.8 - 0.06t$$At $t = 20$, the power is cut and the brakes are applied, producing a constant deceleration of $0.5\\text{ m s}^{-2}$ until the train comes to rest at a signal.<br><br><strong>(a)</strong> Find the speed of the train when $t = 20$.<br><br><strong>(b)</strong> Find the distance travelled by the train during the first $20\\text{ seconds}$.<br><br><strong>(c)</strong> Find the total time taken from the start of the journey until the train comes to rest at the signal.<br><br><strong>(d)</strong> Find the total distance travelled by the train from station $A$ to the signal.",
+    "steps": [
+        "<strong>(a) Speed at $t = 20$:</strong><br><br>Since the train starts from rest, $v = 0$ when $t = 0$:\\begin{aligned} v &= \\int (1.8 - 0.06t)\\text{d}t \\cr &= 1.8t - 0.03t^2 \\end{aligned}<br><br>At $t = 20$:\\begin{aligned} v(20) &= 1.8(20) - 0.03(20)^2 \\cr &= 36 - 0.03(400) \\cr &= 36 - 12 \\cr &= 24\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Distance during the first $20\\text{ seconds}$:</strong><br><br>Integrating velocity gives displacement:\\begin{aligned} s_1 &= \\int_0^{20} (1.8t - 0.03t^2)\\text{d}t \\cr &= \\left[ 0.9t^2 - 0.01t^3 \\right]_0^{20} \\cr &= 0.9(400) - 0.01(8000) \\cr &= 360 - 80 \\cr &= 280\\text{ m} \\end{aligned}",
+        "<strong>(c) Total time to come to rest:</strong><br><br>For the braking phase, $u = 24\\text{ m s}^{-1}$, $v = 0\\text{ m s}^{-1}$, and $a = -0.5\\text{ m s}^{-2}$.<br><br>Using $v = u + at$:\\begin{aligned} &0 = 24 - 0.5t_2 \\cr &0.5t_2 = 24 \\cr &t_2 = 48\\text{ s} \\end{aligned}<br><br>Total time from departure:\\begin{aligned} T &= 20 + t_2 \\cr &= 20 + 48 \\cr &= 68\\text{ s} \\end{aligned}",
+        "<strong>(d) Total distance to the signal:</strong><br><br>Braking distance using $s = \\left(\\dfrac{u + v}{2}\\right)t$:\\begin{aligned} s_2 &= \\left(\\dfrac{24 + 0}{2}\\right)(48) \\cr &= 12(48) \\cr &= 576\\text{ m} \\end{aligned}<br><br>Total distance:\\begin{aligned} s &= s_1 + s_2 \\cr &= 280 + 576 \\cr &= 856\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $24\\text{ m s}^{-1}$, (b) $280\\text{ m}$, (c) $68\\text{ s}$, (d) $856\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $24\\text{ m s}^{-1}$, (b) $280\\text{ m}$, (c) $48\\text{ s}$, (d) $856\\text{ m}$",
+            "feedback": "Incorrect total time in part (c). $48\\text{ s}$ is solely the duration of the braking stage; the total journey time is $20 + 48 = 68\\text{ s}$."
+        },
+        {
+            "ans": "(a) $24\\text{ m s}^{-1}$, (b) $280\\text{ m}$, (c) $68\\text{ s}$, (d) $576\\text{ m}$",
+            "feedback": "Incorrect total distance in part (d). $576\\text{ m}$ is the braking distance alone. You must add the $280\\text{ m}$ travelled during the first $20\\text{ s}$ to obtain $856\\text{ m}$."
+        },
+        {
+            "ans": "(a) $36\\text{ m s}^{-1}$, (b) $360\\text{ m}$, (c) $92\\text{ s}$, (d) $1656\\text{ m}$",
+            "feedback": "Incorrect velocity in part (a). Integrating $a = 1.8 - 0.06t$ gives $v = 1.8t - 0.03t^2$. Omitting the quadratic term leads to an incorrect speed of $36\\text{ m s}^{-1}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Choosing the Quickest SUVAT Formula",
+        "content": "In part <strong>(d)</strong>, once you have found the braking time $t_2 = 48\\text{ s}$, using $s = \\left(\\dfrac{u + v}{2}\\right)t$ calculates the braking distance in a single mental multiplication ($12 \\times 48 = 576$). This avoids squaring $24$ and dividing by $2a$, keeping the arithmetic fast and error-free."
+    }
+},
+{
+    "id": "012118",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Maximum Velocity",
+        "Three-Stage Motion",
+        "Uniform Deceleration"
+    ],
+    "img": false,
+    "question": "A test car moves from rest along a straight horizontal track. Between $t = 0$ and $t = 10\\text{ s}$, the velocity $v\\text{ m s}^{-1}$ of the car is given by:$$v = 0.75t^2 - 0.05t^3$$<strong>(a)</strong> Using calculus, show that the car attains its maximum velocity when $t = 10$, and find this maximum velocity.<br><br><strong>(b)</strong> Calculate the distance travelled by the car during the first $10\\text{ seconds}$.<br><br>For the next $15\\text{ seconds}$ (from $t = 10$ to $t = 25$), the car continues at this constant maximum speed.<br>At $t = 25$, the car decelerates uniformly to rest in a distance of $100\\text{ m}$.<br><br><strong>(c)</strong> Find the distance travelled by the car while travelling at constant speed.<br><br><strong>(d)</strong> Find the magnitude of the deceleration in the final stage.<br><br><strong>(e)</strong> Calculate the total time taken for the entire journey from start to rest.",
+    "steps": [
+        "<strong>(a) Maximum velocity:</strong><br><br>Differentiating velocity gives acceleration:\\begin{aligned} a &= \\dfrac{\\text{d}v}{\\text{d}t} \\cr &= 1.5t - 0.15t^2 \\cr &= 0.15t(10 - t) \\end{aligned}<br><br>Setting $a = 0$ for $t > 0$:\\begin{aligned} &10 - t = 0 \\cr &t = 10\\text{ s} \\end{aligned}<br><br>Confirming maximum using the second derivative:\\begin{aligned} \\dfrac{\\text{d}^2v}{\\text{d}t^2} &= 1.5 - 0.3t \\cr &= 1.5 - 0.3(10) \\cr &= -1.5 < 0 \\end{aligned}<br><br>Evaluating maximum velocity:\\begin{aligned} v_{\\text{max}} &= 0.75(10)^2 - 0.05(10)^3 \\cr &= 75 - 50 \\cr &= 25\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Distance during first $10\\text{ seconds}$:</strong><br><br>Integrating velocity:\\begin{aligned} s_1 &= \\int_0^{10} (0.75t^2 - 0.05t^3)\\text{d}t \\cr &= \\left[ 0.25t^3 - 0.0125t^4 \\right]_0^{10} \\cr &= 0.25(1000) - 0.0125(10000) \\cr &= 250 - 125 \\cr &= 125\\text{ m} \\end{aligned}",
+        "<strong>(c) Constant speed distance:</strong><br><br>Cruising at $25\\text{ m s}^{-1}$ for $15\\text{ seconds}$:\\begin{aligned} s_2 &= 25 \\times 15 \\cr &= 375\\text{ m} \\end{aligned}",
+        "<strong>(d) & (e) Final braking stage:</strong><br><br>For the final stage, $u = 25\\text{ m s}^{-1}$, $v = 0\\text{ m s}^{-1}$, and $s_3 = 100\\text{ m}$.<br><br>Using $v^2 = u^2 + 2as$ with deceleration $d$:\\begin{aligned} &0 = 25^2 - 2d(100) \\cr &200d = 625 \\cr &d = 3.125\\text{ m s}^{-2} \\end{aligned}<br><br>Finding braking duration using $s_3 = \\left(\\dfrac{u + v}{2}\\right)t_3$:\\begin{aligned} &100 = \\left(\\dfrac{25 + 0}{2}\\right)t_3 \\cr &12.5t_3 = 100 \\cr &t_3 = 8\\text{ s} \\end{aligned}<br><br>Total journey time:\\begin{aligned} T &= 10 + 15 + 8 \\cr &= 33\\text{ s} \\end{aligned}",
+        "Final Answer: (a) $25\\text{ m s}^{-1}$, (b) $125\\text{ m}$, (c) $375\\text{ m}$, (d) $3.125\\text{ m s}^{-2}$, (e) $33\\text{ s}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $25\\text{ m s}^{-1}$, (b) $125\\text{ m}$, (c) $375\\text{ m}$, (d) $3.125\\text{ m s}^{-2}$, (e) $23\\text{ s}$",
+            "feedback": "Incorrect total time in part (e). You omitted the initial $10\\text{ s}$ acceleration stage: $10 + 15 + 8 = 33\\text{ s}$, not $15 + 8 = 23\\text{ s}$."
+        },
+        {
+            "ans": "(a) $25\\text{ m s}^{-1}$, (b) $125\\text{ m}$, (c) $375\\text{ m}$, (d) $6.25\\text{ m s}^{-2}$, (e) $33\\text{ s}$",
+            "feedback": "Incorrect deceleration in part (d). In $v^2 = u^2 + 2as$, the denominator is $2s = 200$, giving $d = 625 / 200 = 3.125\\text{ m s}^{-2}$, not $625 / 100$."
+        },
+        {
+            "ans": "(a) $25\\text{ m s}^{-1}$, (b) $250\\text{ m}$, (c) $375\\text{ m}$, (d) $3.125\\text{ m s}^{-2}$, (e) $33\\text{ s}$",
+            "feedback": "Incorrect integration in part (b). Integrating $0.75t^2$ gives $\\dfrac{0.75}{3}t^3 = 0.25t^3$, which evaluates to $250 - 125 = 125\\text{ m}$, not $250\\text{ m}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Justifying the Maximum",
+        "content": "In questions asking you to 'show that velocity attains its maximum', setting $\\dfrac{\\text{d}v}{\\text{d}t} = 0$ is only half the proof. You must explicitly verify that it is a maximum, either by evaluating the second derivative $\\dfrac{\\text{d}^2v}{\\text{d}t^2} = -1.5 < 0$ or by demonstrating that acceleration changes sign from positive to negative through $t = 10$."
+    }
+},
+{
+    "id": "012119",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Piecewise Functions",
+        "Continuity",
+        "Average Speed"
+    ],
+    "img": false,
+    "question": "A particle moves in a straight line such that its velocity $v\\text{ m s}^{-1}$ at time $t\\text{ s}$ is given by:$$v(t) = \\begin{cases} kt^2 & 0 \\le t \\le 4 \\\\ A - 2t & 4 < t \\le 10 \\end{cases}$$where $k$ and $A$ are constants.<br><br>The velocity function $v(t)$ is continuous at $t = 4$, and the particle comes to instantaneous rest at $t = 10$.<br><br><strong>(a)</strong> Find the values of the constants $A$ and $k$.<br><br><strong>(b)</strong> By finding the acceleration of the particle immediately before and immediately after $t = 4$, explain why the acceleration is discontinuous at $t = 4$.<br><br><strong>(c)</strong> Calculate the total distance travelled by the particle over the interval $0 \\le t \\le 10$.<br><br><strong>(d)</strong> Hence calculate the average speed of the particle during the $10\\text{ seconds}$.",
+    "steps": [
+        "<strong>(a) Finding constants $A$ and $k$:</strong><br><br>At $t = 10$, the particle is at instantaneous rest ($v = 0$):\\begin{aligned} &A - 2(10) = 0 \\cr &A - 20 = 0 \\cr &A = 20 \\end{aligned}<br><br>Since $v(t)$ is continuous at $t = 4$:\\begin{aligned} &k(4^2) = A - 2(4) \\cr &16k = 20 - 8 \\cr &16k = 12 \\cr &k = 0.75 \\end{aligned}",
+        "<strong>(b) Acceleration discontinuity:</strong><br><br>For $0 \\le t < 4$:\\begin{aligned} a(t) &= \\dfrac{\\text{d}}{\\text{d}t}(0.75t^2) \\cr &= 1.5t \\end{aligned}<br><br>Immediately before $t = 4$:\\begin{aligned} a(4^-) &= 1.5(4) \\cr &= 6\\text{ m s}^{-2} \\end{aligned}<br><br>For $4 < t \\le 10$:\\begin{aligned} a(t) &= \\dfrac{\\text{d}}{\\text{d}t}(20 - 2t) \\cr &= -2\\text{ m s}^{-2} \\end{aligned}<br><br>Since $a(4^-) = 6 \\ne a(4^+) = -2$, the acceleration has an abrupt jump discontinuity of $8\\text{ m s}^{-2}$ at $t = 4$.",
+        "<strong>(c) Total distance travelled:</strong><br><br>Stage 1 distance ($0 \\le t \\le 4$):\\begin{aligned} s_1 &= \\int_0^4 0.75t^2\\text{d}t \\cr &= \\left[ 0.25t^3 \\right]_0^4 \\cr &= 0.25(64) \\cr &= 16\\text{ m} \\end{aligned}<br><br>Stage 2 distance ($4 < t \\le 10$):\\begin{aligned} s_2 &= \\int_4^{10} (20 - 2t)\\text{d}t \\cr &= \\left[ 20t - t^2 \\right]_4^{10} \\cr &= (200 - 100) - (80 - 16) \\cr &= 100 - 64 \\cr &= 36\\text{ m} \\end{aligned}<br><br>Total distance:\\begin{aligned} s &= s_1 + s_2 \\cr &= 16 + 36 \\cr &= 52\\text{ m} \\end{aligned}",
+        "<strong>(d) Average speed:</strong><br><br>Average speed is total distance divided by total time:\\begin{aligned} \\text{Average speed} &= \\dfrac{s_{\\text{total}}}{t_{\\text{total}}} \\cr &= \\dfrac{52}{10} \\cr &= 5.2\\text{ m s}^{-1} \\end{aligned}",
+        "Final Answer: (a) $A = 20, k = 0.75$, (c) $52\\text{ m}$, (d) $5.2\\text{ m s}^{-1}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $A = 20, k = 0.75$, (c) $52\\text{ m}$, (d) $6.0\\text{ m s}^{-1}$",
+            "feedback": "Incorrect average speed in part (d). You averaged the peak speed ($12\\text{ m s}^{-1}$) and initial speed ($0\\text{ m s}^{-1}$). Average speed is defined strictly as total distance divided by total time ($52 / 10 = 5.2\\text{ m s}^{-1}$)."
+        },
+        {
+            "ans": "(a) $A = 20, k = 1.25$, (c) $62\\text{ m}$, (d) $6.2\\text{ m s}^{-1}$",
+            "feedback": "Incorrect value for $k$ in part (a). Setting $16k = 20 - 2(4)$ gives $16k = 12 \\implies k = 0.75$, not $1.25$."
+        },
+        {
+            "ans": "(a) $A = 20, k = 0.75$, (c) $36\\text{ m}$, (d) $3.6\\text{ m s}^{-1}$",
+            "feedback": "Incorrect distance in part (c). $36\\text{ m}$ accounts only for Stage 2. You must include the $16\\text{ m}$ covered during Stage 1 to obtain $52\\text{ m}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Continuity vs Differentiability",
+        "content": "A common theoretical misconception is believing that if velocity is continuous, acceleration must also be continuous. As shown here, a piecewise velocity function can join without gaps, yet have a sharp corner where the gradient jumps abruptly ($a$ jumps from $+6\\text{ m s}^{-2}$ to $-2\\text{ m s}^{-2}$). Velocity is continuous, but not differentiable at $t = 4$."
+    }
+},
+{
+    "id": "012120",
+    "branch": "Mechanics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable and Constant Acceleration",
+    "subtopic": [
+        "Relative Motion",
+        "Multi-Body Kinematics",
+        "Overtaking"
+    ],
+    "img": false,
+    "question": "Two particles $P$ and $Q$ move along the same straight horizontal line. At time $t = 0$, both particles pass through a fixed point $O$ on the line, travelling in the same direction.<br><br>The velocity $v_P\\text{ m s}^{-1}$ of particle $P$ at time $t\\text{ s}$ ($t \\ge 0$) is given by:$$v_P = 6t - 0.5t^2$$Particle $Q$ starts from $O$ at $t = 0$ with an initial velocity of $3\\text{ m s}^{-1}$ and moves with constant acceleration $a\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Find the time at which particle $P$ attains its maximum velocity, and calculate this maximum velocity.<br><br><strong>(b)</strong> Find an expression in terms of $t$ for the displacement $s_P$ of particle $P$ from $O$.<br><br>Particle $Q$ catches up with particle $P$ at the exact instant when particle $P$ attains its maximum velocity.<br><br><strong>(c)</strong> Find the distance of both particles from $O$ at this instant.<br><br><strong>(d)</strong> Calculate the value of the constant acceleration $a$ of particle $Q$.<br><br><strong>(e)</strong> Find the difference in speeds between particle $Q$ and particle $P$ at the moment they collide.",
+    "steps": [
+        "<strong>(a) Maximum velocity of $P$:</strong><br><br>Differentiating $v_P$ with respect to time:\\begin{aligned} a_P &= \\dfrac{\\text{d}v_P}{\\text{d}t} \\cr &= 6 - t \\end{aligned}<br><br>Maximum velocity occurs when $a_P = 0$:\\begin{aligned} &6 - t = 0 \\cr &t = 6\\text{ s} \\end{aligned}<br><br>Maximum velocity value:\\begin{aligned} v_P(6) &= 6(6) - 0.5(6)^2 \\cr &= 36 - 0.5(36) \\cr &= 36 - 18 \\cr &= 18\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Displacement expression for $P$:</strong><br><br>Since $s_P = 0$ when $t = 0$:\\begin{aligned} s_P &= \\int (6t - 0.5t^2)\\text{d}t \\cr &= 3t^2 - \\dfrac{1}{6}t^3 \\end{aligned}",
+        "<strong>(c) Distance at collision ($t = 6\\text{ s}$):</strong><br><br>Substitute $t = 6$ into the displacement expression for $P$:\\begin{aligned} s_P(6) &= 3(6)^2 - \\dfrac{1}{6}(6)^3 \\cr &= 3(36) - 36 \\cr &= 108 - 36 \\cr &= 72\\text{ m} \\end{aligned}",
+        "<strong>(d) & (e) Acceleration of $Q$ and speed difference:</strong><br><br>For particle $Q$, $u_Q = 3\\text{ m s}^{-1}$ and $s_Q = 72\\text{ m}$ at $t = 6\\text{ s}$.<br><br>Using $s = ut + \\dfrac{1}{2}at^2$:\\begin{aligned} &72 = 3(6) + \\dfrac{1}{2}a(6)^2 \\cr &72 = 18 + 18a \\cr &18a = 54 \\cr &a = 3\\text{ m s}^{-2} \\end{aligned}<br><br>Speed of $Q$ at $t = 6\\text{ s}$:\\begin{aligned} v_Q &= u + at \\cr &= 3 + 3(6) \\cr &= 21\\text{ m s}^{-1} \\end{aligned}<br><br>Difference in speeds:\\begin{aligned} |v_Q - v_P| &= 21 - 18 \\cr &= 3\\text{ m s}^{-1} \\end{aligned}",
+        "Final Answer: (a) $6\\text{ s}, 18\\text{ m s}^{-1}$, (c) $72\\text{ m}$, (d) $3\\text{ m s}^{-2}$, (e) $3\\text{ m s}^{-1}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $6\\text{ s}, 18\\text{ m s}^{-1}$, (c) $72\\text{ m}$, (d) $4\\text{ m s}^{-2}$, (e) $9\\text{ m s}^{-1}$",
+            "feedback": "Incorrect acceleration for $Q$. You assumed particle $Q$ started from rest ($u_Q = 0$). With $u_Q = 3\\text{ m s}^{-1}$, $72 = 3(6) + 18a \\implies 18a = 54 \\implies a = 3\\text{ m s}^{-2}$."
+        },
+        {
+            "ans": "(a) $6\\text{ s}, 18\\text{ m s}^{-1}$, (c) $108\\text{ m}$, (d) $5\\text{ m s}^{-2}$, (e) $15\\text{ m s}^{-1}$",
+            "feedback": "Incorrect distance in part (c). Evaluating displacement requires subtracting the cubic term: $s_P(6) = 108 - \\frac{1}{6}(216) = 108 - 36 = 72\\text{ m}$, not $108\\text{ m}$."
+        },
+        {
+            "ans": "(a) $12\\text{ s}, 18\\text{ m s}^{-1}$, (c) $72\\text{ m}$, (d) $3\\text{ m s}^{-2}$, (e) $3\\text{ m s}^{-1}$",
+            "feedback": "Incorrect time for maximum velocity. Setting $v_P = 0$ gives $t = 12\\text{ s}$ (instantaneous rest), whereas maximum velocity occurs when acceleration $a_P = 0$, giving $t = 6\\text{ s}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Dual Particle Collision Conditions",
+        "content": "When two particles collide or one catches up with another, their displacements from the origin must be identical ($s_P = s_Q$). However, their speeds are rarely the same. For one particle to catch up with another from behind, its speed must actually exceed the other particle's speed at that instant ($v_Q > v_P$), which is why $Q$ is travelling at $21\\text{ m s}^{-1}$ while $P$ is travelling at $18\\text{ m s}^{-1}$."
+    }
 }
 ];
