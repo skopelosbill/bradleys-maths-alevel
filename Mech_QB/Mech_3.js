@@ -1697,7 +1697,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(a) $T = 8\\text{ s}$, (b) $0.75\\text{ m s}^{-2}$, (c) $6\\text{ m}$, (e) $S > T$",
-            "feedback": "You miscalculated the trapezium equation in part (a). The parallel sides are $20$ and $20 - T$, which gives $3(40 - T) = 102 \\implies 40 - T = 34 \\implies T = 6\\text{ s}$."
+            "feedback": "You miscalculated the trapezium equation in part (a). The parallel sides are $20$ and $20 - T$, which gives \\begin{aligned}3(40 - T) &= 102 \\cr \\implies 40 - T & = 34 \\cr\\implies T & = 6\\text{ s}\\end{aligned}"
         },
         {
             "ans": "(a) $T = 6\\text{ s}$, (b) $1\\text{ m s}^{-2}$, (c) $12\\text{ m}$, (e) $S > T$",
@@ -1739,7 +1739,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(b) $T = 2\\text{ s}$, (c) $10\\text{ m}$, (e) $S > T$",
-            "feedback": "You miscalculated the trapezium equation in part (b). The parallel sides are $12$ and $12 - T$, which gives $5(24 - T) = 100 \\implies 24 - T = 20 \\implies T = 4\\text{ s}$."
+            "feedback": "You miscalculated the trapezium equation in part (b). The parallel sides are $12$ and $12 - T$, which gives \\begin{aligned}5(24 - T) &= 100 \\cr \\implies 24 - T &= 20 \\cr\\implies T &= 4\\text{ s}\\ebd{aligned"
         },
         {
             "ans": "(b) $T = 4\\text{ s}$, (c) $40\\text{ m}$, (e) $S > T$",
@@ -1834,6 +1834,222 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Total Time Self-Consistency",
         "content": "In multi-stage kinematics questions, always perform a self-consistency check on the times. Here, the three distinct stages take $4\\text{ s}$, $10\\text{ s}$, and $6\\text{ s}$. Adding them confirms $4 + 10 + 6 = 20\\text{ s}$, verifying your gliding calculations before you move on."
+    }
+},
+{
+    "id": "012146",
+    "branch": "Pure",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Exponentials and Logarithms",
+    "topic": "Modelling with Logarithms",
+    "subtopic": [
+        "Power Law Models",
+        "Log-Log Linearization",
+        "Solar Radiation"
+    ],
+    "img": false,
+    "question": "The intensity of solar radiation, $y\\text{ watts per square metre}$, and the average distance from the Sun, $x\\text{ astronomical units (AU)}$, are given in the table below for the planets Mercury and Jupiter:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:6px; text-align:left;'>Quantity</th><th style='padding:6px;'>Mercury</th><th style='padding:6px;'>Jupiter</th></tr></thead><tbody><tr style='border-bottom:1px solid #ddd;'><td style='padding:6px; text-align:left;'>$x\\text{ (AU)}$</td><td style='padding:6px;'>$0.3075$</td><td style='padding:6px;'>$4.950$</td></tr><tr style='border-bottom:1px solid #ddd;'><td style='padding:6px; text-align:left;'>$y\\text{ (W m}^{-2}\\text{)}$</td><td style='padding:6px;'>$14\\,400$</td><td style='padding:6px;'>$55.8$</td></tr><tr style='border-bottom:1px solid #ddd;'><td style='padding:6px; text-align:left;'>$\\ln x$</td><td style='padding:6px;'></td><td style='padding:6px;'></td></tr><tr><td style='padding:6px; text-align:left;'>$\\ln y$</td><td style='padding:6px;'></td><td style='padding:6px;'></td></tr></tbody></table>The intensity $y$ is modelled as being proportional to a power of the distance $x$.<br><br><strong>(a)</strong> Write down an equation for $y$ in terms of $x$ and two constants, $k$ and $n$.<br><br><strong>(b)</strong> Show that this equation can be written in the form $\\ln y = a + b \\ln x$, stating $a$ and $b$ in terms of $k$ and $n$.<br><br><strong>(c)</strong> Calculate the values of $\\ln x$ and $\\ln y$ to complete the table, giving each value correct to 4 significant figures.<br><br><strong>(d)</strong> Use your values from part <strong>(c)</strong> to calculate the values of the constants $a$ and $b$, giving each correct to 3 significant figures.<br><br><strong>(e)</strong> Hence rewrite your equation from part <strong>(a)</strong> for $y$ in terms of $x$, using appropriate numerical values for the constants.<br><br><strong>(f)</strong> Sketch a graph of the equation found in part <strong>(e)</strong> for $x > 0$.<br><br><strong>(g)</strong> Earth is at an average distance of $1.0\\text{ AU}$ from the Sun. Use your model to estimate the intensity of solar radiation reaching Earth.",
+    "steps": [
+        "<strong>(a) Power law equation:</strong><br><br>Since $y$ is proportional to a power of $x$:\\begin{aligned} y = kx^n \\end{aligned}",
+        "<strong>(b) Showing linear form:</strong><br><br>Taking natural logarithms of both sides:\\begin{aligned} \\ln y &= \\ln(kx^n) \\cr &= \\ln k + \\ln(x^n) \\cr &= \\ln k + n\\ln x \\end{aligned}<br><br>This is in the linear form $\\ln y = a + b\\ln x$, where $a = \\ln k$ and $b = n$.",
+        "<strong>(c) Completing the table:</strong><br><br>For Mercury ($x = 0.3075$, $y = 14\\,400$):\\begin{aligned} \\ln x &= \\ln(0.3075) \\cr &\\approx -1.179 \\cr \\ln y &= \\ln(14\\,400) \\cr &\\approx 9.575 \\end{aligned}<br><br>For Jupiter ($x = 4.950$, $y = 55.8$):\\begin{aligned} \\ln x &= \\ln(4.950) \\cr &\\approx 1.599 \\cr \\ln y &= \\ln(55.8) \\cr &\\approx 4.022 \\end{aligned}",
+        "<strong>(d) Calculating $a$ and $b$:</strong><br><br>Finding gradient $b$ using unrounded values:\\begin{aligned} b &= \\dfrac{4.0218 - 9.5750}{1.5994 - (-1.1793)} \\cr &= \\dfrac{-5.5532}{2.7787} \\cr &\\approx -1.998 \\cr &\\approx -2.00\\text{ (3 s.f.)} \\end{aligned}<br><br>Finding intercept $a$:\\begin{aligned} a &= \\ln y - b\\ln x \\cr &= 9.5750 - (-1.998)(-1.1793) \\cr &= 9.5750 - 2.3562 \\cr &\\approx 7.22\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(e) Rewriting the power equation:</strong><br><br>Finding $k$ from $a = \\ln k$:\\begin{aligned} k &= \\text{e}^{7.2188} \\cr &\\approx 1360 \\end{aligned}<br><br>Since $n = b = -2$, the equation is:\\begin{aligned} y = 1360x^{-2} \\quad \\text{or} \\quad y = \\dfrac{1360}{x^2} \\end{aligned}",
+        "<strong>(f) Sketching the curve:</strong><br><br>The graph of $y = \\dfrac{1360}{x^2}$ is an inverse-square curve in the first quadrant, decreasing smoothly with both axes as asymptotes.<img src='images/Pure_pngs/012146_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(g) Solar intensity for Earth:</strong><br><br>Substituting $x = 1.0\\text{ AU}$ into the model:\\begin{aligned} y &= 1360(1.0)^{-2} \\cr &= 1360\\text{ W m}^{-2} \\end{aligned}",
+        "Final Answer: (d) $a = 7.22, b = -2.00$, (e) $y = 1360x^{-2}$, (g) $1360\\text{ W m}^{-2}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(d) $a = 7.22, b = 2.00$, (e) $y = 1360x^2$, (g) $1360\\text{ W m}^{-2}$",
+            "feedback": "You made a sign error when finding the gradient $b$. Since $y$ decreases as $x$ increases, the gradient is negative:\\begin{aligned} b &= \\dfrac{4.022 - 9.575}{1.599 - (-1.179)} \\cr &= -2.00 \\end{aligned}"
+        },
+        {
+            "ans": "(d) $a = 7.22, b = -2.00$, (e) $y = 7.22x^{-2}$, (g) $7.22\\text{ W m}^{-2}$",
+            "feedback": "You forgot to take the exponential of $a$ to find $k$. In the linearised equation, $a = \\ln k$, so\\begin{aligned} k &= \\text{e}^{7.2188} \\cr &\\approx 1360 \\end{aligned}"
+        },
+        {
+            "ans": "(d) $a = 9.58, b = -2.00$, (e) $y = 14400x^{-2}$, (g) $14400\\text{ W m}^{-2}$",
+            "feedback": "You assumed $a$ was the value of $\\ln y$ at Mercury. To find the intercept $a$, you must evaluate $a = \\ln y - b\\ln x$, which gives $a \\approx 7.22$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: The Physics Sanity Check",
+        "content": "This question models the inverse-square law of radiation. When your gradient evaluates to $b \\approx -1.998$, recognise immediately that the underlying physical exponent is exactly $-2$ ($y \\propto \\dfrac{1}{x^2}$). Furthermore, $k \\approx 1360\\text{ W m}^{-2}$ represents the solar constant reaching Earth at $x = 1\\text{ AU}$."
+    }
+},
+{
+    "id": "012147",
+    "branch": "Pure",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Exponentials and Logarithms",
+    "topic": "Modelling with Logarithms",
+    "subtopic": [
+        "Power Law Models",
+        "Planetary Periods",
+        "Log-Log Transformation"
+    ],
+    "img": false,
+    "question": "The orbital period of a planet, $T\\text{ years}$, and its mean distance from the Sun, $R\\text{ astronomical units (AU)}$, are recorded in the table below for Mars and Saturn:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:6px; text-align:left;'>Quantity</th><th style='padding:6px;'>Mars</th><th style='padding:6px;'>Saturn</th></tr></thead><tbody><tr style='border-bottom:1px solid #ddd;'><td style='padding:6px; text-align:left;'>$R\\text{ (AU)}$</td><td style='padding:6px;'>$1.524$</td><td style='padding:6px;'>$9.537$</td></tr><tr style='border-bottom:1px solid #ddd;'><td style='padding:6px; text-align:left;'>$T\\text{ (years)}$</td><td style='padding:6px;'>$1.881$</td><td style='padding:6px;'>$29.46$</td></tr><tr style='border-bottom:1px solid #ddd;'><td style='padding:6px; text-align:left;'>$\\ln R$</td><td style='padding:6px;'></td><td style='padding:6px;'></td></tr><tr><td style='padding:6px; text-align:left;'>$\\ln T$</td><td style='padding:6px;'></td><td style='padding:6px;'></td></tr></tbody></table>It is suggested that $T$ and $R$ are related by a power law of the form $T = k R^n$, where $k$ and $n$ are constants.<br><br><strong>(a)</strong> Express $\\ln T$ in the form $a + b \\ln R$, stating $a$ and $b$ in terms of $k$ and $n$.<br><br><strong>(b)</strong> Complete the table by finding the values of $\\ln R$ and $\\ln T$, giving each value correct to 4 significant figures.<br><br><strong>(c)</strong> Use your values from part <strong>(b)</strong> to find the constants $a$ and $b$, correct to 3 significant figures.<br><br><strong>(d)</strong> Hence express $T$ in terms of $R$, giving the numerical values of $k$ and $n$.<br><br><strong>(e)</strong> Sketch the graph of $T$ against $R$ for $R \\ge 0$.<br><br><strong>(f)</strong> An asteroid orbits the Sun at an average distance of $4.0\\text{ AU}$. Use the model to estimate its orbital period in years.",
+    "steps": [
+        "<strong>(a) Linearising the power model:</strong><br><br>Taking natural logarithms of $T = kR^n$:\\begin{aligned} \\ln T &= \\ln(kR^n) \\cr &= \\ln k + n\\ln R \\end{aligned}<br><br>In the form $\\ln T = a + b\\ln R$, $a = \\ln k$ and $b = n$.",
+        "<strong>(b) Completing the table:</strong><br><br>For Mars ($R = 1.524$, $T = 1.881$):\\begin{aligned} \\ln R &= \\ln(1.524) \\cr &\\approx 0.4213 \\cr \\ln T &= \\ln(1.881) \\cr &\\approx 0.6318 \\end{aligned}<br><br>For Saturn ($R = 9.537$, $T = 29.46$):\\begin{aligned} \\ln R &= \\ln(9.537) \\cr &\\approx 2.255 \\cr \\ln T &= \\ln(29.46) \\cr &\\approx 3.383 \\end{aligned}",
+        "<strong>(c) Finding constants $a$ and $b$:</strong><br><br>Gradient $b$:\\begin{aligned} b &= \\dfrac{3.3830 - 0.6318}{2.2552 - 0.4213} \\cr &= \\dfrac{2.7512}{1.8339} \\cr &\\approx 1.5002 \\cr &\\approx 1.50\\text{ (3 s.f.)} \\end{aligned}<br><br>Intercept $a$:\\begin{aligned} a &= \\ln T - b\\ln R \\cr &= 0.6318 - 1.5002(0.4213) \\cr &= 0.6318 - 0.6320 \\cr &\\approx 0.00\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(d) Final equation for $T$:</strong><br><br>Finding $k$:\\begin{aligned} k &= \\text{e}^a \\cr &= \\text{e}^0 \\cr &= 1.00 \\end{aligned}<br><br>Since $n = 1.5$, the relationship is:\\begin{aligned} T = R^{1.5} \\quad \\text{or} \\quad T = R^{\\frac{3}{2}} \\end{aligned}",
+        "<strong>(e) Sketching the graph:</strong><br><br>The graph of $T = R^{1.5}$ passes through the origin $(0, 0)$ and curves upwards with increasing gradient in the first quadrant.<img src='images/Pure_pngs/012147_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(f) Estimating period for asteroid:</strong><br><br>Substituting $R = 4.0\\text{ AU}$:\\begin{aligned} T &= (4.0)^{1.5} \\cr &= (\\sqrt{4.0})^3 \\cr &= 2^3 \\cr &= 8\\text{ years} \\end{aligned}",
+        "Final Answer: (c) $a = 0.00, b = 1.50$, (d) $T = R^{1.5}$, (f) $8\\text{ years}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(c) $a = 0.00, b = 0.667$, (d) $T = R^{0.67}$, (f) $2.52\\text{ years}$",
+            "feedback": "You inverted the gradient formula as $\\Delta \\ln R / \\Delta \\ln T$. The gradient is\\begin{aligned} b &= \\dfrac{\\Delta \\ln T}{\\Delta \\ln R} \\cr &= \\dfrac{3.383 - 0.6318}{2.255 - 0.4213} \\cr &= 1.50 \\end{aligned}"
+        },
+        {
+            "ans": "(c) $a = 1.00, b = 1.50$, (d) $T = 2.72R^{1.5}$, (f) $21.8\\text{ years}$",
+            "feedback": "You took $a = 1.00$ instead of $a = 0.00$. The intercept is $a \\approx 0$, which gives $k = \\text{e}^0 = 1$, so $T = R^{1.5}$."
+        },
+        {
+            "ans": "(c) $a = 0.00, b = 1.50$, (d) $T = R^{1.5}$, (f) $6\\text{ years}$",
+            "feedback": "You calculated $4 \\times 1.5 = 6$ instead of raising $4$ to the power of $1.5$. Evaluating the power gives\\begin{aligned} 4^{1.5} &= (\\sqrt{4})^3 \\cr &= 2^3 \\cr &= 8\\text{ years} \\end{aligned}"
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Kepler's Harmonic Law",
+        "content": "This problem illustrates Kepler's Third Law ($T^2 = R^3$). In logarithmic form, squaring both sides yields $2\\ln T = 3\\ln R$, which leads directly to $\\ln T = 1.5\\ln R$. Finding an intercept of $a = 0$ confirms that $k = 1$ when periods are measured in Earth years and distances in astronomical units."
+    }
+},
+{
+    "id": "012148",
+    "branch": "Pure",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Exponentials and Logarithms",
+    "topic": "Modelling with Logarithms",
+    "subtopic": [
+        "Exponential Growth Models",
+        "Semi-Log Transformation",
+        "Population Growth"
+    ],
+    "img": false,
+    "question": "A laboratory culture of bacteria is monitored over time. The population, $N\\text{ (in thousands)}$, after $t\\text{ hours}$ is recorded at two intervals in the table below:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:6px; text-align:left;'>Quantity</th><th style='padding:6px;'>Observation 1</th><th style='padding:6px;'>Observation 2</th></tr></thead><tbody><tr style='border-bottom:1px solid #ddd;'><td style='padding:6px; text-align:left;'>$t\\text{ (hours)}$</td><td style='padding:6px;'>$2.0$</td><td style='padding:6px;'>$5.0$</td></tr><tr style='border-bottom:1px solid #ddd;'><td style='padding:6px; text-align:left;'>$N\\text{ (thousands)}$</td><td style='padding:6px;'>$45.0$</td><td style='padding:6px;'>$360$</td></tr><tr><td style='padding:6px; text-align:left;'>$\\ln N$</td><td style='padding:6px;'></td><td style='padding:6px;'></td></tr></tbody></table>The population is modelled by the exponential relationship $N = A \\mathrm{e}^{kt}$, where $A$ and $k$ are constants.<br><br><strong>(a)</strong> Show that $\\ln N$ can be written in the form $c + mt$, stating $c$ and $m$ in terms of $A$ and $k$.<br><br><strong>(b)</strong> Complete the table by calculating the missing values of $\\ln N$, giving each value correct to 4 significant figures.<br><br><strong>(c)</strong> Use the completed table to calculate the values of $c$ and $m$, giving each correct to 3 significant figures.<br><br><strong>(d)</strong> Hence determine the values of $A$ and $k$, giving $A$ correct to 3 significant figures and $k$ correct to 3 decimal places.<br><br><strong>(e)</strong> Sketch the graph of $N$ against $t$ for $t \\ge 0$.<br><br><strong>(f)</strong> Use the model to predict the bacterial population after $8.0\\text{ hours}$.",
+    "steps": [
+        "<strong>(a) Linearising the exponential model:</strong><br><br>Taking natural logarithms of $N = A\\text{e}^{kt}$:\\begin{aligned} \\ln N &= \\ln(A\\text{e}^{kt}) \\cr &= \\ln A + \\ln(\\text{e}^{kt}) \\cr &= \\ln A + kt \\end{aligned}<br><br>In the linear form $\\ln N = c + mt$, $c = \\ln A$ and $m = k$.",
+        "<strong>(b) Completing the table:</strong><br><br>For Observation 1 ($N = 45.0$):\\begin{aligned} \\ln N &= \\ln(45.0) \\cr &\\approx 3.807 \\end{aligned}<br><br>For Observation 2 ($N = 360$):\\begin{aligned} \\ln N &= \\ln(360) \\cr &\\approx 5.886 \\end{aligned}",
+        "<strong>(c) Calculating $c$ and $m$:</strong><br><br>Gradient $m$:\\begin{aligned} m &= \\dfrac{5.8861 - 3.8067}{5.0 - 2.0} \\cr &= \\dfrac{2.0794}{3} \\cr &\\approx 0.6931 \\cr &\\approx 0.693\\text{ (3 s.f.)} \\end{aligned}<br><br>Intercept $c$:\\begin{aligned} c &= \\ln N - mt \\cr &= 3.8067 - 0.6931(2.0) \\cr &= 3.8067 - 1.3862 \\cr &\\approx 2.42\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(d) Evaluating $A$ and $k$:</strong><br><br>Since $k = m$:\\begin{aligned} k = 0.693\\text{ (3 d.p.)} \\end{aligned}<br><br>Finding $A = \\text{e}^c$:\\begin{aligned} A &= \\text{e}^{2.4205} \\cr &\\approx 11.25 \\cr &\\approx 11.3\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(e) Sketching the exponential curve:</strong><br><br>The graph starts at vertical intercept $(0, 11.3)$ and displays exponential growth with increasing gradient as $t$ increases.<img src='images/Pure_pngs/012148_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(f) Population after $8.0\\text{ hours}$:</strong><br><br>Evaluating $N$ at $t = 8.0$:\\begin{aligned} N &= 11.25\\text{e}^{0.6931(8.0)} \\cr &= 11.25\\text{e}^{5.5448} \\cr &\\approx 2880\\text{ (thousands)} \\end{aligned}<br><br>This represents approximately $2\\,880\\,000$ bacteria.",
+        "Final Answer: (c) $c = 2.42, m = 0.693$, (d) $A = 11.3, k = 0.693$, (f) $2880\\text{ (thousands)}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(c) $c = 2.42, m = 0.693$, (d) $A = 2.42, k = 0.693$, (f) $619\\text{ (thousands)}$",
+            "feedback": "You forgot to take the exponential of $c$ to find $A$. In this semi-log model, $c = \\ln A$, so\\begin{aligned} A &= \\text{e}^{2.4205} \\cr &\\approx 11.3 \\end{aligned}"
+        },
+        {
+            "ans": "(c) $c = 3.81, m = 0.693$, (d) $A = 45.0, k = 0.693$, (f) $11500\\text{ (thousands)}$",
+            "feedback": "You took $c$ as the value of $\\ln N$ at $t = 2.0$. To find the vertical intercept $c$, you must subtract $mt$:\\begin{aligned} c &= 3.8067 - 0.6931(2.0) \\cr &= 2.42 \\end{aligned}"
+        },
+        {
+            "ans": "(c) $c = 2.42, m = 0.693$, (d) $A = 11.3, k = 0.693$, (f) $1440\\text{ (thousands)}$",
+            "feedback": "You calculated the population at $t = 7\\text{ hours}$ rather than $t = 8\\text{ hours}$. At $t = 8$, the population doubles again from $t = 7$, reaching $2880\\text{ thousands}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Doubling Time Shortcut",
+        "content": "Notice that between $t = 2$ and $t = 5$, the population increased by a factor of $\\dfrac{360}{45} = 8 = 2^3$. This indicates that the population doubled 3 times in 3 hours, so the doubling time is exactly 1 hour. This confirms that $k = \\ln 2 \\approx 0.693$."
+    }
+},
+{
+    "id": "012149",
+    "branch": "Pure",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Exponentials and Logarithms",
+    "topic": "Modelling with Logarithms",
+    "subtopic": [
+        "Exponential Decay",
+        "Semi-Log Linearization",
+        "Barometric Formula"
+    ],
+    "img": false,
+    "question": "The atmospheric pressure, $P\\text{ kilopascals (kPa)}$, was measured at sea level and at high altitude on a mountain plateau at height $h\\text{ kilometres (km)}$, as shown in the table:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:6px; text-align:left;'>Quantity</th><th style='padding:6px;'>Sea Level</th><th style='padding:6px;'>Plateau</th></tr></thead><tbody><tr style='border-bottom:1px solid #ddd;'><td style='padding:6px; text-align:left;'>$h\\text{ (km)}$</td><td style='padding:6px;'>$0$</td><td style='padding:6px;'>$5.5$</td></tr><tr style='border-bottom:1px solid #ddd;'><td style='padding:6px; text-align:left;'>$P\\text{ (kPa)}$</td><td style='padding:6px;'>$101.3$</td><td style='padding:6px;'>$50.4$</td></tr><tr><td style='padding:6px; text-align:left;'>$\\ln P$</td><td style='padding:6px;'></td><td style='padding:6px;'></td></tr></tbody></table>Pressure is modelled by the formula $P = P_0 \\mathrm{e}^{-kh}$, where $P_0$ and $k$ are constants.<br><br><strong>(a)</strong> Express $\\ln P$ in the form $c - mh$, stating $c$ and $m$ in terms of $P_0$ and $k$.<br><br><strong>(b)</strong> Complete the table by calculating the values of $\\ln P$, giving each value correct to 4 significant figures.<br><br><strong>(c)</strong> State the value of $P_0$, and calculate the value of $k$ correct to 3 significant figures.<br><br><strong>(d)</strong> Rewrite the formula for $P$ in terms of $h$ using these numerical values.<br><br><strong>(e)</strong> Sketch the graph of $P$ against $h$ for $h \\ge 0$, clearly showing the intercept on the vertical axis.<br><br><strong>(f)</strong> A commercial passenger aircraft cruises at an altitude of $11.0\\text{ km}$. Use the model to estimate the atmospheric pressure outside the aircraft at this altitude.",
+    "steps": [
+        "<strong>(a) Linearising exponential decay:</strong><br><br>Taking natural logarithms of $P = P_0\\text{e}^{-kh}$:\\begin{aligned} \\ln P &= \\ln(P_0\\text{e}^{-kh}) \\cr &= \\ln P_0 - kh \\end{aligned}<br><br>In the form $\\ln P = c - mh$, $c = \\ln P_0$ and $m = k$.",
+        "<strong>(b) Completing the table:</strong><br><br>For Sea Level ($P = 101.3$):\\begin{aligned} \\ln P &= \\ln(101.3) \\cr &\\approx 4.618 \\end{aligned}<br><br>For the Plateau ($P = 50.4$):\\begin{aligned} \\ln P &= \\ln(50.4) \\cr &\\approx 3.920 \\end{aligned}",
+        "<strong>(c) Finding $P_0$ and $k$:</strong><br><br>At $h = 0$, $P = P_0$ directly:\\begin{aligned} P_0 = 101.3\\text{ kPa} \\end{aligned}<br><br>Finding the decay constant $k$:\\begin{aligned} -k &= \\dfrac{3.9199 - 4.6181}{5.5 - 0} \\cr -k &= \\dfrac{-0.6982}{5.5} \\cr -k &\\approx -0.1269 \\cr k &\\approx 0.127\\text{ km}^{-1}\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(d) Numerical formula:</strong><br><br>Substituting $P_0$ and $k$:\\begin{aligned} P = 101.3\\text{e}^{-0.127h} \\end{aligned}",
+        "<strong>(e) Sketching the decay curve:</strong><br><br>The graph starts at vertical intercept $(0, 101.3)$ and decreases asymptotically towards the horizontal axis $P = 0$ as $h \\to \\infty$.<img src='images/Pure_pngs/012149_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(f) Pressure at cruising altitude:</strong><br><br>At $h = 11.0\\text{ km}$:\\begin{aligned} P &= 101.3\\text{e}^{-0.1269(11.0)} \\cr &= 101.3\\text{e}^{-1.3959} \\cr &\\approx 25.1\\text{ kPa} \\end{aligned}",
+        "Final Answer: (c) $P_0 = 101.3\\text{ kPa}, k = 0.127\\text{ km}^{-1}$, (d) $P = 101.3\\text{e}^{-0.127h}$, (f) $25.1\\text{ kPa}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(c) $P_0 = 101.3\\text{ kPa}, k = -0.127\\text{ km}^{-1}$, (d) $P = 101.3\\text{e}^{0.127h}$, (f) $409\\text{ kPa}$",
+            "feedback": "You included a double negative in the decay formula. The gradient of the line is $-k = -0.127$, so the constant $k$ is positive ($0.127\\text{ km}^{-1}$), and the equation is $P = 101.3\\text{e}^{-0.127h}$."
+        },
+        {
+            "ans": "(c) $P_0 = 4.62\\text{ kPa}, k = 0.127\\text{ km}^{-1}$, (d) $P = 4.62\\text{e}^{-0.127h}$, (f) $1.14\\text{ kPa}$",
+            "feedback": "You used $\\ln P_0 = 4.618$ directly as $P_0$. The pressure at sea level is $P_0 = \\text{e}^{4.618} = 101.3\\text{ kPa}$."
+        },
+        {
+            "ans": "(c) $P_0 = 101.3\\text{ kPa}, k = 0.127\\text{ km}^{-1}$, (d) $P = 101.3\\text{e}^{-0.127h}$, (f) $50.4\\text{ kPa}$",
+            "feedback": "You evaluated the pressure at $5.5\\text{ km}$ instead of $11.0\\text{ km}$. At $11.0\\text{ km}$, the pressure is approximately $25.1\\text{ kPa}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Power Law vs Exponential Decay",
+        "content": "Pay careful attention to the horizontal variable in logarithmic modelling. When the original equation is $P = P_0\\text{e}^{-kh}$, taking logs yields $\\ln P = \\ln P_0 - kh$. Plotting $\\ln P$ against $h$ produces a straight line. If you mistakenly plot $\\ln P$ against $\\ln h$, you will not get a linear graph."
+    }
+},
+{
+    "id": "012150",
+    "branch": "Pure",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Exponentials and Logarithms",
+    "topic": "Modelling with Logarithms",
+    "subtopic": [
+        "Allometric Scaling",
+        "Fractional Power Law",
+        "Log-Log Transformation"
+    ],
+    "img": false,
+    "question": "In biology, Kleiber's law states that the basal metabolic rate, $B\\text{ watts}$, of a mammal is related to its body mass, $M\\text{ kilograms}$, by a power law of the form $B = k M^n$, where $k$ and $n$ are constants. Data for a rabbit and a horse are given in the table below:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:6px; text-align:left;'>Quantity</th><th style='padding:6px;'>Rabbit</th><th style='padding:6px;'>Horse</th></tr></thead><tbody><tr style='border-bottom:1px solid #ddd;'><td style='padding:6px; text-align:left;'>$M\\text{ (kg)}$</td><td style='padding:6px;'>$2.50$</td><td style='padding:6px;'>$450$</td></tr><tr style='border-bottom:1px solid #ddd;'><td style='padding:6px; text-align:left;'>$B\\text{ (W)}$</td><td style='padding:6px;'>$8.16$</td><td style='padding:6px;'>$405$</td></tr><tr style='border-bottom:1px solid #ddd;'><td style='padding:6px; text-align:left;'>$\\ln M$</td><td style='padding:6px;'></td><td style='padding:6px;'></td></tr><tr><td style='padding:6px; text-align:left;'>$\\ln B$</td><td style='padding:6px;'></td><td style='padding:6px;'></td></tr></tbody></table><strong>(a)</strong> Show that $\\ln B = a + b \\ln M$, stating $a$ and $b$ in terms of $k$ and $n$.<br><br><strong>(b)</strong> Complete the table by finding the values of $\\ln M$ and $\\ln B$, giving each value correct to 4 significant figures.<br><br><strong>(c)</strong> Use the completed table to calculate the values of $a$ and $b$, giving each correct to 3 significant figures.<br><br><strong>(d)</strong> Hence determine the value of $k$ correct to 3 significant figures, and show that $n \\approx 0.75$.<br><br><strong>(e)</strong> Sketch the graph of $B$ against $M$ for $M \\ge 0$.<br><br><strong>(f)</strong> Use the model $B = k M^{0.75}$ to estimate the basal metabolic rate of a human with a body mass of $81.0\\text{ kg}$.",
+    "steps": [
+        "<strong>(a) Linearising Kleiber's law:</strong><br><br>Taking natural logarithms of $B = kM^n$:\\begin{aligned} \\ln B &= \\ln(kM^n) \\cr &= \\ln k + n\\ln M \\end{aligned}<br><br>In the form $\\ln B = a + b\\ln M$, $a = \\ln k$ and $b = n$.",
+        "<strong>(b) Completing the table:</strong><br><br>For the Rabbit ($M = 2.50$, $B = 8.16$):\\begin{aligned} \\ln M &= \\ln(2.50) \\cr &\\approx 0.9163 \\cr \\ln B &= \\ln(8.16) \\cr &\\approx 2.100 \\end{aligned}<br><br>For the Horse ($M = 450$, $B = 405$):\\begin{aligned} \\ln M &= \\ln(450) \\cr &\\approx 6.109 \\cr \\ln B &= \\ln(405) \\cr &\\approx 6.004 \\end{aligned}",
+        "<strong>(c) Calculating $a$ and $b$:</strong><br><br>Gradient $b$:\\begin{aligned} b &= \\dfrac{6.0039 - 2.0992}{6.1092 - 0.9163} \\cr &= \\dfrac{3.9047}{5.1929} \\cr &\\approx 0.7519 \\cr &\\approx 0.752\\text{ (3 s.f.)} \\end{aligned}<br><br>Intercept $a$:\\begin{aligned} a &= \\ln B - b\\ln M \\cr &= 2.0992 - 0.7519(0.9163) \\cr &= 2.0992 - 0.6890 \\cr &\\approx 1.41\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(d) Determining $k$ and verifying $n$:</strong><br><br>Finding constant $k$:\\begin{aligned} k &= \\text{e}^a \\cr &= \\text{e}^{1.4102} \\cr &\\approx 4.097 \\cr &\\approx 4.10\\text{ (3 s.f.)} \\end{aligned}<br><br>Since $b = n$, $n = 0.752 \\approx 0.75 = \\dfrac{3}{4}$.",
+        "<strong>(e) Sketching the power curve:</strong><br><br>Since the exponent $n = 0.75$ lies between $0$ and $1$, the graph of $B = 4.10M^{0.75}$ passes through the origin $(0, 0)$ and curves upwards with decreasing gradient (concave down).<img src='images/Pure_pngs/012150_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(f) Metabolic rate of human:</strong><br><br>Substituting $M = 81.0\\text{ kg}$ into $B = 4.097M^{0.75}$:\\begin{aligned} B &= 4.097(81.0)^{0.75} \\cr &= 4.097(\\sqrt[4]{81.0})^3 \\cr &= 4.097(3^3) \\cr &= 4.097(27) \\cr &\\approx 111\\text{ W} \\end{aligned}",
+        "Final Answer: (c) $a = 1.41, b = 0.752$, (d) $k = 4.10$, (f) $111\\text{ W}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(c) $a = 1.41, b = 0.752$, (d) $k = 1.41$, (f) $38.1\\text{ W}$",
+            "feedback": "You used the intercept $a = 1.41$ directly as $k$. In the linearized equation, $a = \\ln k$, so\\begin{aligned} k &= \\text{e}^{1.4102} \\cr &\\approx 4.10 \\end{aligned}"
+        },
+        {
+            "ans": "(c) $a = 1.41, b = 1.33$, (d) $k = 4.10$, (f) $1410\\text{ W}$",
+            "feedback": "You inverted the gradient formula as $\\Delta \\ln M / \\Delta \\ln B$. The gradient is\\begin{aligned} b &= \\dfrac{6.004 - 2.100}{6.109 - 0.9163} \\cr &\\approx 0.752 \\end{aligned}"
+        },
+        {
+            "ans": "(c) $a = 1.41, b = 0.752$, (d) $k = 4.10$, (f) $332\\text{ W}$",
+            "feedback": "You calculated $81.0 \\times 0.75 = 60.75$ instead of evaluating the power $81.0^{0.75}$. Notice that\\begin{aligned} 81.0^{0.75} &= (\\sqrt[4]{81})^3 \\cr &= 3^3 \\cr &= 27 \\end{aligned}giving $B = 4.10 \\times 27 \\approx 111\\text{ W}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Fractional Power Mental Maths",
+        "content": "When evaluating terms like $81.0^{0.75}$, remember that $0.75 = \\dfrac{3}{4}$. Take the fourth root first before cubing: $(\\sqrt[4]{81})^3 = 3^3 = 27$. This avoids dealing with massive numbers and provides an instant check on your calculation."
     }
 }
 ];
