@@ -1418,5 +1418,212 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Contact Forces in Accelerating Frames",
         "content": "Always isolate the body when finding internal contact forces. A common exam mistake is trying to evaluate $R_N$ from the tension $T$. By drawing a separate free-body diagram for block $R$ alone, you see only two vertical forces: downward gravity $m_R g$ and upward normal reaction $R_N$, giving $m_R g - R_N = m_R a$ directly."
     }
+},
+{
+    "id": "012136",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Dynamics and Kinematics",
+    "topic": "Newton's Second Law and Motion in a Straight Line",
+    "subtopic": [
+        "Multi-Stage Motion",
+        "Constant Acceleration",
+        "Resistance to Motion"
+    ],
+    "img": false,
+    "question": "A model boat of mass $2\\text{ kg}$ is propelled across a pond, starting from rest, for $3\\text{ seconds}$. During this time, the boat moves in a straight line with a constant acceleration of $2\\text{ m s}^{-2}$.<br><br>Subsequently, the propeller stops, and the only horizontal force acting on the boat is a constant resistance to motion. The boat travels a further $12\\text{ m}$ before coming to rest.<br><br><strong>(a)</strong> Find the speed of the boat at the instant the propeller stops.<br><br><strong>(b)</strong> Find the distance travelled by the boat during the $3\\text{ seconds}$ of propulsion.<br><br><strong>(c)</strong> Calculate the magnitude of the constant resistance to motion.<br><br><strong>(d)</strong> Find the total distance travelled by the boat from rest until it comes to rest again.",
+    "steps": [
+        "<strong>(a) Speed at end of propulsion phase:</strong><br><br>Using $v = u + at$ with $u = 0$, $a = 2\\text{ m s}^{-2}$, and $t = 3\\text{ s}$:\\begin{aligned} v &= 0 + 2(3) \\cr &= 6\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Distance during propulsion phase:</strong><br><br>Using $s = ut + \\dfrac{1}{2}at^2$:\\begin{aligned} s_1 &= 0(3) + \\dfrac{1}{2}(2)(3^2) \\cr &= \\dfrac{1}{2}(2)(9) \\cr &= 9\\text{ m} \\end{aligned}",
+        "<strong>(c) Magnitude of resistance to motion:</strong><br><br>For the second phase, $u = 6\\text{ m s}^{-1}$, $v = 0\\text{ m s}^{-1}$, and $s_2 = 12\\text{ m}$.<br><br>Using $v^2 = u^2 + 2as$:\\begin{aligned} &0 = 6^2 + 2a(12) \\cr &0 = 36 + 24a \\cr &24a = -36 \\cr &a = -1.5\\text{ m s}^{-2} \\end{aligned}<br><br>Using Newton's second law ($F = ma$) with $m = 2\\text{ kg}$:\\begin{aligned} -R &= 2(-1.5) \\cr -R &= -3 \\cr R &= 3\\text{ N} \\end{aligned}<br><br>The magnitude of the resistance is $3\\text{ N}$.",
+        "<strong>(d) Total distance travelled:</strong><br><br>Adding the distances from both phases:\\begin{aligned} s_{\\text{tot}} &= s_1 + s_2 \\cr &= 9 + 12 \\cr &= 21\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $6\\text{ m s}^{-1}$, (b) $9\\text{ m}$, (c) $3\\text{ N}$, (d) $21\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $6\\text{ m s}^{-1}$, (b) $9\\text{ m}$, (c) $3\\text{ N}$, (d) $12\\text{ m}$",
+            "feedback": "You gave only the distance travelled during the coasting phase. The question asks for the total distance from rest until the boat stops again, which is $9 + 12 = 21\\text{ m}$."
+        },
+        {
+            "ans": "(a) $6\\text{ m s}^{-1}$, (b) $9\\text{ m}$, (c) $6\\text{ N}$, (d) $21\\text{ m}$",
+            "feedback": "You forgot the factor of $2$ in the denominator of $v^2 = u^2 + 2as$. The deceleration is\\begin{aligned} a &= \\dfrac{6^2}{2(12)} \\cr &= 1.5\\text{ m s}^{-2} \\end{aligned}giving $R = 2(1.5) = 3\\text{ N}$, not $6\\text{ N}$."
+        },
+        {
+            "ans": "(a) $3\\text{ m s}^{-1}$, (b) $4.5\\text{ m}$, (c) $0.75\\text{ N}$, (d) $16.5\\text{ m}$",
+            "feedback": "You halved the acceleration during the propulsion phase. The acceleration is $2\\text{ m s}^{-2}$ for $3\\text{ seconds}$, so the speed reached is $v = 2(3) = 6\\text{ m s}^{-1}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Work-Energy Alternative",
+        "content": "In part <strong>(c)</strong>, you can bypass calculating acceleration by applying the work-energy principle. The kinetic energy lost during the second phase equals the work done against the resistance force:\\begin{aligned} \\dfrac{1}{2}m v^2 &= R s_2 \\cr \\dfrac{1}{2}(2)(6^2) &= R(12) \\cr 36 &= 12R \\cr R &= 3\\text{ N} \\end{aligned}This method is fast, clean, and avoids sign errors entirely."
+    }
+},
+{
+    "id": "012137",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Dynamics and Kinematics",
+    "topic": "Newton's Second Law and Motion in a Straight Line",
+    "subtopic": [
+        "Driving Force",
+        "Constant Resistance",
+        "Stopping Time and Distance"
+    ],
+    "img": false,
+    "question": "A sledge of mass $20\\text{ kg}$ is pushed from rest along a horizontal surface by a constant horizontal driving force of magnitude $48\\text{ N}$. A constant frictional resistance of $12\\text{ N}$ opposes the motion.<br><br>The sledge is pushed for $4\\text{ seconds}$, after which the driving force is removed. The sledge continues to slide in the same straight line against the same constant resistance of $12\\text{ N}$ until it comes to rest.<br><br><strong>(a)</strong> Calculate the acceleration of the sledge during the first $4\\text{ seconds}$.<br><br><strong>(b)</strong> Find the speed of the sledge at the instant the driving force is removed.<br><br><strong>(c)</strong> Calculate the deceleration of the sledge after the driving force is removed.<br><br><strong>(d)</strong> Calculate the total distance travelled by the sledge from rest to rest.<br><br><strong>(e)</strong> Find the total time elapsed for the entire motion.",
+    "steps": [
+        "<strong>(a) Acceleration during Phase 1:</strong><br><br>Net driving force acting on the sledge:\\begin{aligned} F_{\\text{net}} &= 48 - 12 \\cr &= 36\\text{ N} \\end{aligned}<br><br>Using $F = ma$ with $m = 20\\text{ kg}$:\\begin{aligned} a_1 &= \\dfrac{36}{20} \\cr &= 1.8\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Speed when driving force is removed:</strong><br><br>Using $v = u + at$ with $u = 0$:\\begin{aligned} v &= 0 + 1.8(4) \\cr &= 7.2\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(c) Deceleration during Phase 2:</strong><br><br>When the driving force is removed, the only horizontal force is the $12\\text{ N}$ resistance opposing motion:\\begin{aligned} -12 &= 20a_2 \\cr a_2 &= -0.6\\text{ m s}^{-2} \\end{aligned}<br><br>The deceleration is $0.6\\text{ m s}^{-2}$.",
+        "<strong>(d) Total distance travelled:</strong><br><br>Distance for Phase 1 ($0 \\le t \\le 4$):\\begin{aligned} s_1 &= \\dfrac{1}{2}(1.8)(4^2) \\cr &= \\dfrac{1}{2}(1.8)(16) \\cr &= 14.4\\text{ m} \\end{aligned}<br><br>Distance for Phase 2 using $v^2 = u^2 + 2as$ with $v = 0$:\\begin{aligned} &0 = 7.2^2 + 2(-0.6)s_2 \\cr &0 = 51.84 - 1.2s_2 \\cr &1.2s_2 = 51.84 \\cr &s_2 = 43.2\\text{ m} \\end{aligned}<br><br>Total distance:\\begin{aligned} s_{\\text{tot}} &= s_1 + s_2 \\cr &= 14.4 + 43.2 \\cr &= 57.6\\text{ m} \\end{aligned}",
+        "<strong>(e) Total time elapsed:</strong><br><br>Duration of Phase 1 is $t_1 = 4\\text{ s}$.<br><br>For Phase 2, using $v = u + at$:\\begin{aligned} &0 = 7.2 - 0.6t_2 \\cr &0.6t_2 = 7.2 \\cr &t_2 = 12\\text{ s} \\end{aligned}<br><br>Total time:\\begin{aligned} T &= t_1 + t_2 \\cr &= 4 + 12 \\cr &= 16\\text{ s} \\end{aligned}",
+        "Final Answer: (a) $1.8\\text{ m s}^{-2}$, (b) $7.2\\text{ m s}^{-1}$, (c) $0.6\\text{ m s}^{-2}$, (d) $57.6\\text{ m}$, (e) $16\\text{ s}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $1.8\\text{ m s}^{-2}$, (b) $7.2\\text{ m s}^{-1}$, (c) $0.6\\text{ m s}^{-2}$, (d) $43.2\\text{ m}$, (e) $12\\text{ s}$",
+            "feedback": "You calculated the distance and time for the coasting phase only. You must include the first phase ($14.4\\text{ m}$ and $4\\text{ s}$) to give $57.6\\text{ m}$ and $16\\text{ s}$."
+        },
+        {
+            "ans": "(a) $2.4\\text{ m s}^{-2}$, (b) $9.6\\text{ m s}^{-1}$, (c) $0.6\\text{ m s}^{-2}$, (d) $96.0\\text{ m}$, (e) $20\\text{ s}$",
+            "feedback": "You forgot to subtract the friction force when finding the acceleration in part (a). The resultant driving force is $48 - 12 = 36\\text{ N}$, giving $a = 36 / 20 = 1.8\\text{ m s}^{-2}$."
+        },
+        {
+            "ans": "(a) $1.8\\text{ m s}^{-2}$, (b) $7.2\\text{ m s}^{-1}$, (c) $0.6\\text{ m s}^{-2}$, (d) $57.6\\text{ m}$, (e) $12\\text{ s}$",
+            "feedback": "You found the time for the second stage ($12\\text{ s}$) but forgot to add the $4\\text{ seconds}$ from the first stage, giving a total time of $16\\text{ s}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Acceleration Ratio and Time",
+        "content": "Notice the relationship between the accelerations and times in the two phases. The acceleration in Phase 1 is $1.8\\text{ m s}^{-2}$, which is exactly $3$ times the deceleration in Phase 2 ($0.6\\text{ m s}^{-2}$). Because the change in speed is identical, the time taken to stop must be exactly $3$ times the accelerating time: $t_2 = 3 \\times 4 = 12\\text{ s}$."
+    }
+},
+{
+    "id": "012138",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Dynamics and Kinematics",
+    "topic": "Newton's Second Law and Motion in a Straight Line",
+    "subtopic": [
+        "Multi-Stage Kinematics",
+        "Braking Force",
+        "Velocity-Time Interpretation"
+    ],
+    "img": false,
+    "question": "A small electric car of mass $1200\\text{ kg}$ moves along a straight horizontal test track in three stages:<br>Stage 1: It accelerates uniformly from rest to a speed of $15\\text{ m s}^{-1}$ over a distance of $75\\text{ m}$.<br>Stage 2: It continues at this constant speed of $15\\text{ m s}^{-1}$ for a distance of $225\\text{ m}$.<br>Stage 3: The brakes are applied, providing a constant total retarding force of $3600\\text{ N}$ until the car comes to rest.<br><br><strong>(a)</strong> Find the acceleration of the car and the net driving force acting on it during Stage 1.<br><br><strong>(b)</strong> Find the time taken to complete Stage 2.<br><br><strong>(c)</strong> Calculate the distance travelled by the car during Stage 3 while braking to rest.<br><br><strong>(d)</strong> Calculate the total time taken for the car to complete the entire journey from start to rest.",
+    "steps": [
+        "<strong>(a) Stage 1 acceleration and driving force:</strong><br><br>Using $v^2 = u^2 + 2as$ with $u = 0$, $v = 15\\text{ m s}^{-1}$, and $s_1 = 75\\text{ m}$:\\begin{aligned} &15^2 = 0 + 2a_1(75) \\cr &225 = 150a_1 \\cr &a_1 = 1.5\\text{ m s}^{-2} \\end{aligned}<br><br>Net driving force using $F = ma$:\\begin{aligned} F_{\\text{net}} &= 1200(1.5) \\cr &= 1800\\text{ N} \\end{aligned}",
+        "<strong>(b) Time for Stage 2:</strong><br><br>Travelling at constant speed $v = 15\\text{ m s}^{-1}$ for $s_2 = 225\\text{ m}$:\\begin{aligned} t_2 &= \\dfrac{s_2}{v} \\cr &= \\dfrac{225}{15} \\cr &= 15\\text{ s} \\end{aligned}",
+        "<strong>(c) Distance travelled during Stage 3:</strong><br><br>Using Newton's second law for braking with $F = -3600\\text{ N}$:\\begin{aligned} a_3 &= \\dfrac{-3600}{1200} \\cr &= -3\\text{ m s}^{-2} \\end{aligned}<br><br>Using $v^2 = u^2 + 2as$ with $u = 15\\text{ m s}^{-1}$ and $v = 0$:\\begin{aligned} &0 = 15^2 + 2(-3)s_3 \\cr &0 = 225 - 6s_3 \\cr &6s_3 = 225 \\cr &s_3 = 37.5\\text{ m} \\end{aligned}",
+        "<strong>(d) Total journey time:</strong><br><br>Time for Stage 1:\\begin{aligned} t_1 &= \\dfrac{v - u}{a_1} \\cr &= \\dfrac{15 - 0}{1.5} \\cr &= 10\\text{ s} \\end{aligned}<br><br>Time for Stage 3:\\begin{aligned} t_3 &= \\dfrac{0 - 15}{-3} \\cr &= 5\\text{ s} \\end{aligned}<br><br>Total time:\\begin{aligned} T &= t_1 + t_2 + t_3 \\cr &= 10 + 15 + 5 \\cr &= 30\\text{ s} \\end{aligned}",
+        "Final Answer: (a) $1.5\\text{ m s}^{-2}, 1800\\text{ N}$, (b) $15\\text{ s}$, (c) $37.5\\text{ m}$, (d) $30\\text{ s}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $1.5\\text{ m s}^{-2}, 1800\text{ N}$, (b) $15\text{ s}$, (c) $37.5\text{ m}$, (d) $20\\text{ s}$",
+            "feedback": "You omitted the $10\\text{ seconds}$ from Stage 1 when calculating the total journey time. The total time is $10 + 15 + 5 = 30\\text{ s}$."
+        },
+        {
+            "ans": "(a) $1.5\\text{ m s}^{-2}, 1800\text{ N}$, (b) $15\text{ s}$, (c) $75.0\text{ m}$, (d) $35\text{ s}$",
+            "feedback": "You omitted the factor of $2$ in $v^2 = u^2 + 2as$ during Stage 3. The braking distance is\\begin{aligned} s_3 &= \\dfrac{15^2}{2(3)} \\cr &= 37.5\\text{ m} \\end{aligned}"
+        },
+        {
+            "ans": "(a) $3.0\text{ m s}^{-2}, 3600\text{ N}$, (b) $15\text{ s}$, (c) $37.5\text{ m}$, (d) $25\text{ s}$",
+            "feedback": "You calculated acceleration in Stage 1 as $v^2 / s$ instead of $v^2 / (2s)$. The acceleration is $225 / 150 = 1.5\\text{ m s}^{-2}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Checking via Area under the Graph",
+        "content": "A velocity-time graph for this journey forms a trapezium with parallel sides of length $30\\text{ s}$ and $15\\text{ s}$ and height $15\\text{ m s}^{-1}$. You can check the total distance in a single step using the trapezium area formula:\\begin{aligned} s_{\\text{tot}} &= \\dfrac{1}{2}(30 + 15)(15) \\cr &= \\dfrac{1}{2}(45)(15) \\cr &= 337.5\\text{ m} \\end{aligned}This matches $75 + 225 + 37.5 = 337.5\\text{ m}$."
+    }
+},
+{
+    "id": "012139",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Dynamics and Kinematics",
+    "topic": "Motion under Gravity and Newton's Second Law",
+    "subtopic": [
+        "Powered Vertical Ascent",
+        "Engine Burnout",
+        "Free Projectile Motion"
+    ],
+    "img": false,
+    "question": "A model rocket of mass $0.5\\text{ kg}$ is launched vertically upwards from rest from the ground. Its engine produces a constant upward thrust of $9.8\\text{ N}$. The engine burns for $2\\text{ seconds}$ and then cuts out. Air resistance is assumed to be negligible throughout the flight.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the acceleration of the rocket while the engine is burning.<br><br><strong>(b)</strong> Find the height of the rocket above the ground and its speed at the instant of engine burnout.<br><br><strong>(c)</strong> Calculate the maximum height above the ground reached by the rocket.<br><br><strong>(d)</strong> Find the total time elapsed from launch until the rocket returns to the ground, giving your answer correct to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Acceleration during powered ascent:</strong><br><br>Weight of the rocket:\\begin{aligned} W &= mg \\cr &= 0.5(9.8) \\cr &= 4.9\\text{ N} \\end{aligned}<br><br>Net upward force while engine fires:\\begin{aligned} F_{\\text{net}} &= T - mg \\cr &= 9.8 - 4.9 \\cr &= 4.9\\text{ N} \\end{aligned}<br><br>Using $F = ma$:\\begin{aligned} a_1 &= \\dfrac{4.9}{0.5} \\cr &= 9.8\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Height and speed at burnout:</strong><br><br>Burnout occurs at $t = 2\\text{ s}$. Speed attained:\\begin{aligned} v_1 &= 0 + 9.8(2) \\cr &= 19.6\\text{ m s}^{-1} \\end{aligned}<br><br>Height reached during powered burn:\\begin{aligned} h_1 &= \\dfrac{1}{2}(9.8)(2^2) \\cr &= \\dfrac{1}{2}(9.8)(4) \\cr &= 19.6\\text{ m} \\end{aligned}",
+        "<strong>(c) Maximum height reached:</strong><br><br>After burnout, the rocket moves freely under gravity with acceleration $a = -g = -9.8\\text{ m s}^{-2}$.<br><br>Using $v^2 = u^2 + 2as$ with $v = 0$:\\begin{aligned} &0 = 19.6^2 + 2(-9.8)h_2 \\cr &0 = 384.16 - 19.6h_2 \\cr &19.6h_2 = 384.16 \\cr &h_2 = 19.6\\text{ m} \\end{aligned}<br><br>Maximum height above the ground:\\begin{aligned} H_{\\text{max}} &= h_1 + h_2 \\cr &= 19.6 + 19.6 \\cr &= 39.2\\text{ m} \\end{aligned}",
+        "<strong>(d) Total flight time:</strong><br><br>Time for powered phase is $t_1 = 2\\text{ s}$.<br><br>For free flight after burnout, the rocket starts at height $19.6\\text{ m}$ with upward velocity $u = 19.6\\text{ m s}^{-1}$ and returns to the ground ($s = -19.6\\text{ m}$):\\begin{aligned} &s = ut + \\dfrac{1}{2}at^2 \\cr &-19.6 = 19.6t_2 - 4.9t_2^2 \\cr &4.9t_2^2 - 19.6t_2 - 19.6 = 0 \\end{aligned}<br><br>Dividing through by $4.9$:\\begin{aligned} &t_2^2 - 4t_2 - 4 = 0 \\cr &t_2 = \\dfrac{4 + \\sqrt{(-4)^2 - 4(1)(-4)}}{2} \\cr &t_2 = \\dfrac{4 + \\sqrt{32}}{2} \\cr &t_2 = 2 + 2\\sqrt{2} \\cr &t_2 \\approx 4.828\\text{ s} \\end{aligned}<br><br>Total flight time:\\begin{aligned} T &= t_1 + t_2 \\cr &= 2 + 4.828 \\cr &\\approx 6.83\\text{ s} \\end{aligned}",
+        "Final Answer: (a) $9.8\\text{ m s}^{-2}$, (b) $19.6\\text{ m}, 19.6\\text{ m s}^{-1}$, (c) $39.2\\text{ m}$, (d) $6.83\\text{ s}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $19.6\\text{ m s}^{-2}$, (b) $39.2\\text{ m}, 39.2\\text{ m s}^{-1}$, (c) $78.4\\text{ m}$, (d) $6.83\\text{ s}$",
+            "feedback": "You forgot to subtract the rocket's weight from the upward thrust. The resultant upward force during the burn is $9.8 - 4.9 = 4.9\\text{ N}$, giving $a = 4.9 / 0.5 = 9.8\\text{ m s}^{-2}$."
+        },
+        {
+            "ans": "(a) $9.8\\text{ m s}^{-2}$, (b) $19.6\\text{ m}, 19.6\\text{ m s}^{-1}$, (c) $19.6\\text{ m}$, (d) $4.00\\text{ s}$",
+            "feedback": "You assumed the rocket reaches its maximum height at the instant of engine burnout. The rocket is still travelling upwards at $19.6\\text{ m s}^{-1}$ when the engine cuts out, gaining a further $19.6\\text{ m}$ to reach $39.2\\text{ m}$."
+        },
+        {
+            "ans": "(a) $9.8\\text{ m s}^{-2}$, (b) $19.6\\text{ m}, 19.6\\text{ m s}^{-1}$, (c) $39.2\\text{ m}$, (d) $4.83\\text{ s}$",
+            "feedback": "You omitted the initial $2\\text{ seconds}$ of powered flight from your total time calculation: the total elapsed time from launch is $2 + 4.83 = 6.83\\text{ s}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Thrust vs Resultant Force",
+        "content": "A very common error in vertical rocket problems is equating thrust directly to mass times acceleration ($T = ma$). Gravity never turns off: the upward thrust must both overcome the downward weight and provide the net force to accelerate the rocket ($T - mg = ma$)."
+    }
+},
+{
+    "id": "012140",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Dynamics and Kinematics",
+    "topic": "Newton's Second Law and Stopping Distances",
+    "subtopic": [
+        "Reaction Time",
+        "Constant Retarding Force",
+        "Speed Variation"
+    ],
+    "img": false,
+    "question": "A car of mass $1000\\text{ kg}$ is travelling along a straight horizontal road at a constant speed of $24\\text{ m s}^{-1}$. The driver suddenly sees a hazard ahead and, after a reaction time of $0.6\\text{ seconds}$, applies the brakes firmly. The brakes produce a constant retarding force of $4800\\text{ N}$ until the car comes to rest.<br><br><strong>(a)</strong> Calculate the thinking distance (the distance travelled during the driver's reaction time).<br><br><strong>(b)</strong> Calculate the deceleration of the car while braking.<br><br><strong>(c)</strong> Calculate the braking distance.<br><br><strong>(d)</strong> State the total stopping distance of the car.<br><br>In an alternative scenario, the same car with the same driver is travelling at $30\\text{ m s}^{-1}$. Assuming the driver's reaction time and the braking force remain unchanged:<br><br><strong>(e)</strong> Calculate the new total stopping distance, and find the percentage increase in the stopping distance compared with your answer to part <strong>(d)</strong>, correct to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Thinking distance:</strong><br><br>During the reaction time, the car continues at constant speed $u = 24\\text{ m s}^{-1}$:\\begin{aligned} s_{\\text{think}} &= u \\times t_{\\text{react}} \\cr &= 24(0.6) \\cr &= 14.4\\text{ m} \\end{aligned}",
+        "<strong>(b) Deceleration while braking:</strong><br><br>Using Newton's second law with retarding force $F = -4800\\text{ N}$ and $m = 1000\\text{ kg}$:\\begin{aligned} a &= \\dfrac{-4800}{1000} \\cr &= -4.8\\text{ m s}^{-2} \\end{aligned}<br><br>The deceleration is $4.8\\text{ m s}^{-2}$.",
+        "<strong>(c) Braking distance:</strong><br><br>Using $v^2 = u^2 + 2as$ with $u = 24\\text{ m s}^{-1}$ and $v = 0$:\\begin{aligned} &0 = 24^2 + 2(-4.8)s_{\\text{brake}} \\cr &0 = 576 - 9.6s_{\\text{brake}} \\cr &9.6s_{\\text{brake}} = 576 \\cr &s_{\\text{brake}} = 60\\text{ m} \\end{aligned}",
+        "<strong>(d) Total stopping distance:</strong><br><br>Adding thinking and braking distances:\\begin{aligned} s_{\\text{stop}} &= s_{\\text{think}} + s_{\\text{brake}} \\cr &= 14.4 + 60 \\cr &= 74.4\\text{ m} \\end{aligned}",
+        "<strong>(e) New stopping distance and percentage increase:</strong><br><br>At initial speed $u = 30\\text{ m s}^{-1}$:\\begin{aligned} s'_{\\text{think}} &= 30(0.6) \\cr &= 18\\text{ m} \\end{aligned}<br><br>New braking distance:\\begin{aligned} s'_{\\text{brake}} &= \\dfrac{30^2}{2(4.8)} \\cr &= \\dfrac{900}{9.6} \\cr &= 93.75\\text{ m} \\end{aligned}<br><br>New total stopping distance:\\begin{aligned} s'_{\\text{stop}} &= 18 + 93.75 \\cr &= 111.75\\text{ m} \\cr &\\approx 112\\text{ m} \\end{aligned}<br><br>Percentage increase:\\begin{aligned} \\text{Percentage increase} &= \\dfrac{111.75 - 74.4}{74.4} \\times 100 \\cr &= \\dfrac{37.35}{74.4} \\times 100 \\cr &\\approx 50.2\\% \\end{aligned}",
+        "Final Answer: (a) $14.4\\text{ m}$, (b) $4.8\\text{ m s}^{-2}$, (c) $60\\text{ m}$, (d) $74.4\\text{ m}$, (e) $112\\text{ m}, 50.2\\%$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $14.4\\text{ m}$, (b) $4.8\\text{ m s}^{-2}$, (c) $60\\text{ m}$, (d) $74.4\\text{ m}$, (e) $93.8\\text{ m}, 26.1\\%$",
+            "feedback": "You forgot to include the thinking distance for the second scenario. At $30\\text{ m s}^{-1}$, the thinking distance is $30(0.6) = 18\\text{ m}$, giving a total stopping distance of $18 + 93.75 = 111.75\\text{ m}$."
+        },
+        {
+            "ans": "(a) $14.4\\text{ m}$, (b) $4.8\\text{ m s}^{-2}$, (c) $60\\text{ m}$, (d) $60\\text{ m}$, (e) $112\\text{ m}, 50.2\\%$",
+            "feedback": "You omitted the thinking distance when finding total stopping distance in part (d). Stopping distance is thinking distance plus braking distance: $14.4 + 60 = 74.4\\text{ m}$."
+        },
+        {
+            "ans": "(a) $14.4\\text{ m}$, (b) $4.8\\text{ m s}^{-2}$, (c) $60\\text{ m}$, (d) $74.4\\text{ m}$, (e) $112\\text{ m}, 25.0\\%$",
+            "feedback": "You assumed stopping distance scales directly with speed ($30 / 24 = 1.25$). While thinking distance is proportional to speed, braking distance is proportional to speed squared, resulting in a $50.2\\%$ increase."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Non-Linear Stopping Scaling",
+        "content": "Notice why a modest $25\\%$ speed increase (from $24\\text{ m s}^{-1}$ to $30\\text{ m s}^{-1}$) causes a dramatic $50.2\\%$ increase in stopping distance. Thinking distance scales linearly with speed ($s \\propto u$), but braking distance scales quadratically ($s \\propto u^2$) because braking distance depends on dissipating kinetic energy: $\\dfrac{1}{2}m u^2 = F s$."
+    }
 }
 ];
