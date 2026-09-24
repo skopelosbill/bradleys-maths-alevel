@@ -1603,7 +1603,7 @@ window.ALEVEL_QUESTIONS = [
         "<strong>(b) Deceleration while braking:</strong><br><br>Using Newton's second law with retarding force $F = -4800\\text{ N}$ and $m = 1000\\text{ kg}$:\\begin{aligned} a &= \\dfrac{-4800}{1000} \\cr &= -4.8\\text{ m s}^{-2} \\end{aligned}<br><br>The deceleration is $4.8\\text{ m s}^{-2}$.",
         "<strong>(c) Braking distance:</strong><br><br>Using $v^2 = u^2 + 2as$ with $u = 24\\text{ m s}^{-1}$ and $v = 0$:\\begin{aligned} &0 = 24^2 + 2(-4.8)s_{\\text{brake}} \\cr &0 = 576 - 9.6s_{\\text{brake}} \\cr &9.6s_{\\text{brake}} = 576 \\cr &s_{\\text{brake}} = 60\\text{ m} \\end{aligned}",
         "<strong>(d) Total stopping distance:</strong><br><br>Adding thinking and braking distances:\\begin{aligned} s_{\\text{stop}} &= s_{\\text{think}} + s_{\\text{brake}} \\cr &= 14.4 + 60 \\cr &= 74.4\\text{ m} \\end{aligned}",
-        "<strong>(e) New stopping distance and percentage increase:</strong><br><br>At initial speed $u = 30\\text{ m s}^{-1}$:\\begin{aligned} s'_{\\text{think}} &= 30(0.6) \\cr &= 18\\text{ m} \\end{aligned}<br><br>New braking distance:\\begin{aligned} s'_{\\text{brake}} &= \\dfrac{30^2}{2(4.8)} \\cr &= \\dfrac{900}{9.6} \\cr &= 93.75\\text{ m} \\end{aligned}<br><br>New total stopping distance:\\begin{aligned} s'_{\\text{stop}} &= 18 + 93.75 \\cr &= 111.75\\text{ m} \\cr &\\approx 112\\text{ m} \\end{aligned}<br><br>Percentage increase:\\begin{aligned} \\text{\\%age increase} &= \\dfrac{111.75 - 74.4}{74.4} \\times 100 \\cr &= \\dfrac{37.35}{74.4} \\times 100 \\cr &\\approx 50.2\\% \\end{aligned}",
+        "<strong>(e) New stopping distance and percentage increase:</strong><br><br>At initial speed $u = 30\\text{ m s}^{-1}$:\\begin{aligned} s'_{\\text{think}} &= 30(0.6) \\cr &= 18\\text{ m} \\end{aligned}<br><br>New braking distance:\\begin{aligned} s'_{\\text{brake}} &= \\dfrac{30^2}{2(4.8)} \\cr &= \\dfrac{900}{9.6} \\cr &= 93.75\\text{ m} \\end{aligned}<br><br>New total stopping distance:\\begin{aligned} s'_{\\text{stop}} &= 18 + 93.75 \\cr &= 111.75\\text{ m} \\cr &\\approx 112\\text{ m} \\end{aligned}<br><br>Percentage increase:\\begin{aligned} \\text{\\PI} &= \\dfrac{111.75 - 74.4}{74.4} \\times 100 \\cr &= \\dfrac{37.35}{74.4} \\times 100 \\cr &\\approx 50.2\\% \\end{aligned}",
         "Final Answer: (a) $14.4\\text{ m}$, (b) $4.8\\text{ m s}^{-2}$, (c) $60\\text{ m}$, (d) $74.4\\text{ m}$, (e) $112\\text{ m}, 50.2\\%$"
     ],
     "pi_options": [
@@ -1624,6 +1624,216 @@ window.ALEVEL_QUESTIONS = [
         "type": "deeper",
         "title": "The Head Teacher's Eye: Non-Linear Stopping Scaling",
         "content": "Notice why a modest $25\\%$ speed increase (from $24\\text{ m s}^{-1}$ to $30\\text{ m s}^{-1}$) causes a dramatic $50.2\\%$ increase in stopping distance. Thinking distance scales linearly with speed ($s \\propto u$), but braking distance scales quadratically ($s \\propto u^2$) because braking distance depends on dissipating kinetic energy: $\\dfrac{1}{2}m u^2 = F s$."
+    }
+},
+{
+    "id": "012141",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Motion in a Straight Line",
+    "subtopic": [
+        "Velocity-Time Graphs",
+        "Modelling Acceleration",
+        "Graphical Comparison"
+    ],
+    "img": false,
+    "question": "Callum runs a distance of $60\\text{ m}$ in $15\\text{ s}$. He starts from rest and accelerates to a speed of $5\\text{ m s}^{-1}$. He runs the remaining distance at a constant speed of $5\\text{ m s}^{-1}$.<br><br>Callum proposes a model in which his acceleration is constant until time $T\\text{ seconds}$.<br><br><strong>(a)</strong> Sketch the velocity-time graph for Callum's run using this model.<br><br><strong>(b)</strong> Calculate the value of $T$.<br><br><strong>(c)</strong> Find an expression for Callum's displacement $s\\text{ metres}$ at time $t\\text{ seconds}$ for $0 \\le t \\le T$.<br><br><strong>(d)</strong> Use this model to find the time taken for Callum to run the first $15\\text{ m}$.<br><br>Callum proposes a refined model in which his velocity during the acceleration phase is a quadratic function of $t$. The graph of this quadratic goes through $(0, 0)$ and has its maximum point (vertex) at $(S, 5)$. In this model, the acceleration phase lasts until time $S\\text{ seconds}$, after which the velocity remains constant at $5\\text{ m s}^{-1}$.<br><br><strong>(e)</strong> Sketch a velocity-time graph that represents Callum's run using this refined model.<br><br><strong>(f)</strong> State, with a clear reason, whether $S$ is greater than $T$ or less than $T$.",
+    "steps": [
+        "<strong>(a) Velocity-time graph (Linear Model):</strong><br><br>The graph increases linearly from $(0, 0)$ to $(T, 5)$ and then remains horizontal at $v = 5\\text{ m s}^{-1}$ until $t = 15\\text{ s}$.<img src='images/Mechanics_pngs/012141_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b) Calculating $T$:</strong><br><br>The total distance of $60\\text{ m}$ equals the area of the trapezium under the graph:\\begin{aligned} &\\dfrac{1}{2}\\big(15 + (15 - T)\\big)(5) = 60 \\cr &\\dfrac{1}{2}(30 - T)(5) = 60 \\cr &(30 - T)(2.5) = 60 \\cr &30 - T = 24 \\cr &T = 6\\text{ s} \\end{aligned}",
+        "<strong>(c) Expression for displacement $s(t)$:</strong><br><br>The constant acceleration during the first $6\\text{ seconds}$ is:\\begin{aligned} a &= \\dfrac{5 - 0}{6} \\cr &= \\dfrac{5}{6}\\text{ m s}^{-2} \\end{aligned}<br><br>Using $s = ut + \\dfrac{1}{2}at^2$ with $u = 0$:\\begin{aligned} s &= \\dfrac{1}{2}\\left(\\dfrac{5}{6}\\right)t^2 \\cr &= \\dfrac{5}{12}t^2 \\end{aligned}",
+        "<strong>(d) Time to run the first $15\\text{ m}$:</strong><br><br>Setting $s = 15$:\\begin{aligned} &\\dfrac{5}{12}t^2 = 15 \\cr &5t^2 = 180 \\cr &t^2 = 36 \\cr &t = 6\\text{ s} \\end{aligned}<br><br>This occurs exactly at the end of the acceleration phase.",
+        "<strong>(e) & (f) Refined model and comparison:</strong><br><br>The refined quadratic graph starts at the origin and curves smoothly with decreasing gradient, reaching a horizontal tangent at $(S, 5)$ before continuing horizontally.<br><br>In the linear model, the average speed while accelerating is $\\dfrac{0 + 5}{2} = 2.5\\text{ m s}^{-1}$. In the quadratic model, the curve bulges upwards towards the top speed, giving a higher average speed during acceleration (specifically $\\dfrac{2}{3} \\times 5 \\approx 3.33\\text{ m s}^{-1}$).<br><br>However, replacing constant-speed running ($5\\text{ m s}^{-1}$) with an accelerating phase lowers the distance covered per second. To maintain the same total area of $60\\text{ m}$ over $15\\text{ s}$, the duration of the acceleration phase must be longer. Therefore, $S > T$.",
+        "Final Answer: (b) $T = 6\\text{ s}$, (c) $s = \\dfrac{5}{12}t^2$, (d) $6\\text{ s}$, (f) $S > T$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $T = 6\\text{ s}$, (c) $s = \\dfrac{5}{12}t^2$, (d) $6\\text{ s}$, (f) $S < T$",
+            "feedback": "You concluded that $S < T$. Because the average speed while accelerating ($\\frac{10}{3}\\text{ m s}^{-1}$) is less than the cruising speed ($5\\text{ m s}^{-1}$), having a fuller quadratic acceleration curve means the acceleration phase must last longer ($S > T$) to balance the total area at $60\\text{ m}$."
+        },
+        {
+            "ans": "(b) $T = 3\\text{ s}$, (c) $s = \\dfrac{5}{6}t^2$, (d) $4.24\\text{ s}$, (f) $S > T$",
+            "feedback": "You made an error setting up the trapezium area. The parallel sides have lengths $15$ and $15 - T$, giving\\begin{aligned} \\dfrac{1}{2}(30 - T)(5) = 60 \\end{aligned}which solves to $30 - T = 24$, so $T = 6\\text{ s}$, not $3\\text{ s}$."
+        },
+        {
+            "ans": "(b) $T = 6\\text{ s}$, (c) $s = \\dfrac{5}{6}t^2$, (d) $4.24\\text{ s}$, (f) $S > T$",
+            "feedback": "You omitted the factor of $\\frac{1}{2}$ in the displacement formula $s = \\frac{1}{2}at^2$. With $a = \\frac{5}{6}\\text{ m s}^{-2}$, the displacement expression is $s = \\frac{5}{12}t^2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Area Under Parabolic Profiles",
+        "content": "For a quadratic velocity curve that starts at the origin and levels off with zero gradient at its vertex $(S, v_{\\text{max}})$, the area underneath is always exactly two-thirds of the enclosing rectangle:\\begin{aligned} \\text{Area} = \\dfrac{2}{3} S v_{\\text{max}} \\end{aligned}Comparing this to the triangle area $\\dfrac{1}{2} T v_{\\text{max}}$ for constant acceleration confirms algebraically that $S$ must exceed $T$ to maintain the same total distance."
+    }
+},
+{
+    "id": "012142",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Motion in a Straight Line",
+    "subtopic": [
+        "Velocity-Time Graphs",
+        "Non-Linear Acceleration",
+        "Area Comparison"
+    ],
+    "img": false,
+    "question": "A cyclist travels along a straight cycle path, covering a total distance of $102\\text{ m}$ in $20\\text{ s}$. The cyclist starts from rest, accelerates to a cruising speed of $6\\text{ m s}^{-1}$, and maintains this speed for the remainder of the journey.<br><br><strong>Model A:</strong> The acceleration is assumed to be constant from $t = 0$ to $t = T\\text{ seconds}$.<br><br><strong>(a)</strong> Calculate the value of $T$.<br><br><strong>(b)</strong> Calculate the acceleration of the cyclist during this initial phase.<br><br><strong>(c)</strong> Calculate the distance travelled by the cyclist during the first $4\\text{ seconds}$.<br><br><strong>Model B:</strong> A sports scientist proposes that the acceleration decreases continuously as speed builds. In this refined model, the acceleration phase lasts until time $S\\text{ seconds}$, during which the velocity curve passes through $(0, 0)$ and has a horizontal tangent at $(S, 6)$, followed by constant velocity of $6\\text{ m s}^{-1}$.<br><br><strong>(d)</strong> Sketch the velocity-time graph representing Model B.<br><br><strong>(e)</strong> Given that the area under the velocity curve during the acceleration phase ($0 \\le t \\le S$) is $\\dfrac{2}{3}(6S)$, determine whether $S > T$ or $S < T$, giving a full mathematical justification.",
+    "steps": [
+        "<strong>(a) Calculating $T$ in Model A:</strong><br><br>The total area under the trapezium is $102\\text{ m}$:\\begin{aligned} &\\dfrac{1}{2}\\big(20 + (20 - T)\\big)(6) = 102 \\cr &3(40 - T) = 102 \\cr &40 - T = 34 \\cr &T = 6\\text{ s} \\end{aligned}",
+        "<strong>(b) Initial acceleration:</strong><br><br>Using $a = \\dfrac{v - u}{t}$:\\begin{aligned} a &= \\dfrac{6 - 0}{6} \\cr &= 1\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(c) Distance during first $4\\text{ seconds}$:</strong><br><br>Since $4 < T$, the cyclist is still accelerating uniformly:\\begin{aligned} s &= \\dfrac{1}{2}at^2 \\cr &= \\dfrac{1}{2}(1)(4^2) \\cr &= 8\\text{ m} \\end{aligned}",
+        "<strong>(d) Velocity-time graph for Model B:</strong><br><br>The graph starts at the origin, curves upwards with decreasing gradient to a horizontal tangent at $(S, 6)$, and continues horizontally at $v = 6\\text{ m s}^{-1}$ until $t = 20\\text{ s}$.<img src='images/Mechanics_pngs/012142_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(e) Comparing $S$ and $T$:</strong><br><br>In Model B, the total distance is the sum of the acceleration area and the cruising area:\\begin{aligned} &102 = \\dfrac{2}{3}(6S) + 6(20 - S) \\cr &102 = 4S + 120 - 6S \\cr &102 = 120 - 2S \\cr &2S = 18 \\cr &S = 9\\text{ s} \\end{aligned}<br><br>Comparing the two values:\\begin{aligned} 9 > 6 \\implies S > T \\end{aligned}",
+        "Final Answer: (a) $T = 6\\text{ s}$, (b) $1\\text{ m s}^{-2}$, (c) $8\\text{ m}$, (e) $S > T$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T = 6\\text{ s}$, (b) $1\\text{ m s}^{-2}$, (c) $8\\text{ m}$, (e) $S < T$",
+            "feedback": "You concluded $S < T$. Solving the area equation for Model B gives\\begin{aligned} 4S + 6(20 - S) = 102 \\end{aligned}which yields $2S = 18$, so $S = 9\\text{ s}$. Since $9 > 6$, $S$ is strictly greater than $T$."
+        },
+        {
+            "ans": "(a) $T = 8\\text{ s}$, (b) $0.75\\text{ m s}^{-2}$, (c) $6\\text{ m}$, (e) $S > T$",
+            "feedback": "You miscalculated the trapezium equation in part (a). The parallel sides are $20$ and $20 - T$, which gives $3(40 - T) = 102 \\implies 40 - T = 34 \\implies T = 6\\text{ s}$."
+        },
+        {
+            "ans": "(a) $T = 6\\text{ s}$, (b) $1\\text{ m s}^{-2}$, (c) $12\\text{ m}$, (e) $S > T$",
+            "feedback": "You calculated the distance using constant speed $s = vt = 6(2)$ or omitted the factor of $\\frac{1}{2}$ in part (c). Under constant acceleration from rest, $s = \\frac{1}{2}(1)(4^2) = 8\\text{ m}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: The Area Deficit Principle",
+        "content": "Notice why $S$ must exceed $T$. Every second spent accelerating rather than cruising at $6\\text{ m s}^{-1}$ creates a distance deficit. In Model B, the average speed during acceleration is $4\\text{ m s}^{-1}$, which is closer to $6\\text{ m s}^{-1}$ than the linear average of $3\\text{ m s}^{-1}$. To accumulate the required total distance, the curved phase must persist longer."
+    }
+},
+{
+    "id": "012143",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Motion in a Straight Line",
+    "subtopic": [
+        "Velocity-Time Graphs",
+        "Terminal Speed",
+        "Model Comparison"
+    ],
+    "img": false,
+    "question": "A sprinter runs a $100\\text{ m}$ race in $12\\text{ s}$. The sprinter starts from rest, accelerates to a top speed of $10\\text{ m s}^{-1}$, and maintains this top speed until crossing the finish line.<br><br><strong>Model 1:</strong> The sprinter's acceleration is assumed to be constant until time $T\\text{ seconds}$.<br><br><strong>(a)</strong> Sketch the velocity-time graph for Model 1.<br><br><strong>(b)</strong> Calculate the value of $T$.<br><br><strong>(c)</strong> Calculate the distance run by the sprinter during the acceleration phase.<br><br><strong>Model 2:</strong> A coach suggests that the sprinter's velocity during the acceleration phase $0 \\le t \\le S$ is better represented by a parabolic curve passing through $(0, 0)$ with vertex at $(S, 10)$, after which the speed remains constant at $10\\text{ m s}^{-1}$.<br><br><strong>(d)</strong> Sketch the velocity-time graph for Model 2 on a separate set of axes.<br><br><strong>(e)</strong> Explain, by considering the average speed during the acceleration phase or the area under the graph, whether $S$ must be greater than or less than $T$.",
+    "steps": [
+        "<strong>(a) Velocity-time graph for Model 1:</strong><br><br>A straight line from $(0, 0)$ to $(T, 10)$, followed by a horizontal line from $(T, 10)$ to $(12, 10)$.<img src='images/Mechanics_pngs/012143_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b) Calculating $T$:</strong><br><br>Using the trapezium area formula for total distance of $100\\text{ m}$:\\begin{aligned} &\\dfrac{1}{2}\\big(12 + (12 - T)\\big)(10) = 100 \\cr &5(24 - T) = 100 \\cr &24 - T = 20 \\cr &T = 4\\text{ s} \\end{aligned}",
+        "<strong>(c) Distance during acceleration:</strong><br><br>The distance is the area of the initial triangle:\\begin{aligned} s_1 &= \\dfrac{1}{2}(4)(10) \\cr &= 20\\text{ m} \\end{aligned}",
+        "<strong>(d) Velocity-time graph for Model 2:</strong><br><br>A concave-down curve from $(0, 0)$ reaching $(S, 10)$ with zero gradient, followed by a horizontal line at $v = 10\\text{ m s}^{-1}$ until $t = 12\\text{ s}$.",
+        "<strong>(e) Comparing $S$ and $T$:</strong><br><br>In Model 1, the average speed during acceleration is $5\\text{ m s}^{-1}$. In Model 2, the parabolic curve gives an average speed of $\\dfrac{2}{3}(10) \\approx 6.67\\text{ m s}^{-1}$.<br><br>Because the sprinter accelerates more efficiently under Model 2, running at this higher average speed rather than the constant top speed ($10\\text{ m s}^{-1}$) reduces the total distance by $3.33\\text{ m}$ for every second of acceleration.<br><br>Equating total distance to $100\\text{ m}$:\\begin{aligned} &\\dfrac{20}{3}S + 10(12 - S) = 100 \\cr &120 - \\dfrac{10}{3}S = 100 \\cr &\\dfrac{10}{3}S = 20 \\cr &S = 6\\text{ s} \\end{aligned}<br><br>Since $6 > 4$, $S > T$.",
+        "Final Answer: (b) $T = 4\\text{ s}$, (c) $20\\text{ m}$, (e) $S > T$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $T = 4\\text{ s}$, (c) $20\\text{ m}$, (e) $S < T$",
+            "feedback": "You reasoned that because Model 2 is faster initially, the phase must be shorter. However, cruising at $10\\text{ m s}^{-1}$ covers more distance per second than accelerating. Setting up the area equation yields\\begin{aligned} 120 - \\dfrac{10}{3}S = 100 \\end{aligned}which gives $S = 6\\text{ s}$, meaning $S > T$."
+        },
+        {
+            "ans": "(b) $T = 2\\text{ s}$, (c) $10\\text{ m}$, (e) $S > T$",
+            "feedback": "You miscalculated the trapezium equation in part (b). The parallel sides are $12$ and $12 - T$, which gives $5(24 - T) = 100 \\implies 24 - T = 20 \\implies T = 4\\text{ s}$."
+        },
+        {
+            "ans": "(b) $T = 4\\text{ s}$, (c) $40\\text{ m}$, (e) $S > T$",
+            "feedback": "You omitted the factor of $\\frac{1}{2}$ when finding the area of the acceleration triangle in part (c): $s_1 = \\frac{1}{2}(4)(10) = 20\\text{ m}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Qualitative Comparison Traps",
+        "content": "Students often intuitively guess that a more rapid acceleration curve should lead to a shorter duration ($S < T$). Always test your intuition against the total area constraint: replacing top speed ($10\\text{ m s}^{-1}$) with acceleration always creates an area deficit. A higher average acceleration speed means each second loses less area, so more seconds are required to balance the equation."
+    }
+},
+{
+    "id": "012144",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Motion in a Straight Line",
+    "subtopic": [
+        "Piecewise Linear Motion",
+        "Displacement Function",
+        "Quadratic Transition"
+    ],
+    "img": false,
+    "question": "A rowing boat travels a distance of $78.75\\text{ m}$ across a calm lake in $20\\text{ s}$. Starting from rest, the boat accelerates to its top cruising speed of $4.5\\text{ m s}^{-1}$ and covers the remainder of the distance at this steady speed.<br><br>An initial model assumes the acceleration is constant until time $T\\text{ seconds}$.<br><br><strong>(a)</strong> Sketch the velocity-time graph for the boat using this model.<br><br><strong>(b)</strong> Calculate the value of $T$.<br><br><strong>(c)</strong> Find an expression in terms of $t$ for the displacement $s\\text{ metres}$ of the boat for $0 \\le t \\le T$.<br><br><strong>(d)</strong> Find the time taken for the boat to travel the first $11.25\\text{ m}$.<br><br>An alternative model assumes the velocity during the acceleration phase ($0 \\le t \\le S$) is quadratic, passing through the origin and joining smoothly to the horizontal line $v = 4.5$ at $t = S$ with zero gradient.<br><br><strong>(e)</strong> Sketch the velocity-time graph for this alternative model.<br><br><strong>(f)</strong> State, with clear mathematical reasoning, whether $S$ is greater than or less than $T$.",
+    "steps": [
+        "<strong>(a) Velocity-time graph for initial model:</strong><br><br>The graph increases linearly from $(0, 0)$ to $(T, 4.5)$, then remains horizontal at $v = 4.5\\text{ m s}^{-1}$ until $t = 20\\text{ s}$.<img src='images/Mechanics_pngs/012144_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "<strong>(b) Calculating $T$:</strong><br><br>Equating the area of the trapezium to $78.75\\text{ m}$:\\begin{aligned} &\\dfrac{1}{2}\\big(20 + (20 - T)\\big)(4.5) = 78.75 \\cr &2.25(40 - T) = 78.75 \\cr &40 - T = 35 \\cr &T = 5\\text{ s} \\end{aligned}",
+        "<strong>(c) Expression for displacement $s(t)$:</strong><br><br>The constant acceleration is:\\begin{aligned} a &= \\dfrac{4.5}{5} \\cr &= 0.9\\text{ m s}^{-2} \\end{aligned}<br><br>Using $s = \\dfrac{1}{2}at^2$:\\begin{aligned} s &= \\dfrac{1}{2}(0.9)t^2 \\cr &= 0.45t^2 \\end{aligned}",
+        "<strong>(d) Time to travel the first $11.25\\text{ m}$:</strong><br><br>Setting $s = 11.25$:\\begin{aligned} &0.45t^2 = 11.25 \\cr &t^2 = \\dfrac{11.25}{0.45} \\cr &t^2 = 25 \\cr &t = 5\\text{ s} \\end{aligned}",
+        "<strong>(e) & (f) Alternative model and comparison:</strong><br><br>The alternative graph curves smoothly from $(0, 0)$ to a vertex at $(S, 4.5)$, followed by a horizontal line.<br><br>In the quadratic model, the area under the acceleration curve is $\\dfrac{2}{3}(4.5S) = 3S$.<br><br>Equating total distance to $78.75\\text{ m}$:\\begin{aligned} &3S + 4.5(20 - S) = 78.75 \\cr &3S + 90 - 4.5S = 78.75 \\cr &90 - 1.5S = 78.75 \\cr &1.5S = 11.25 \\cr &S = 7.5\\text{ s} \\end{aligned}<br><br>Comparing values:\\begin{aligned} 7.5 > 5 \\implies S > T \\end{aligned}",
+        "Final Answer: (b) $T = 5\\text{ s}$, (c) $s = 0.45t^2$, (d) $5\\text{ s}$, (f) $S > T$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $T = 5\\text{ s}$, (c) $s = 0.45t^2$, (d) $5\\text{ s}$, (f) $S < T$",
+            "feedback": "You concluded $S < T$. Solving the area equation for the quadratic model gives\\begin{aligned} 90 - 1.5S = 78.75 \\end{aligned}which yields $S = 7.5\\text{ s}$. Since $7.5 > 5$, $S$ is strictly greater than $T$."
+        },
+        {
+            "ans": "(b) $T = 4\\text{ s}$, (c) $s = 0.56t^2$, (d) $4.48\\text{ s}$, (f) $S > T$",
+            "feedback": "You miscalculated the trapezium equation in part (b). Setting $2.25(40 - T) = 78.75$ gives $40 - T = 35$, so $T = 5\\text{ s}$."
+        },
+        {
+            "ans": "(b) $T = 5\\text{ s}$, (c) $s = 0.9t^2$, (d) $3.54\\text{ s}$, (f) $S > T$",
+            "feedback": "You omitted the factor of $\\frac{1}{2}$ in the displacement formula $s = \\frac{1}{2}at^2$. With $a = 0.9\\text{ m s}^{-2}$, the displacement expression is $s = 0.45t^2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Boundary Point Verification",
+        "content": "Notice in part <strong>(d)</strong> that the time to reach $11.25\\text{ m}$ is exactly $t = 5\\text{ s}$. This is the exact boundary where the acceleration phase ends ($T = 5\\text{ s}$). If the question had asked for the time to reach $20\\text{ m}$, using $s = 0.45t^2$ would be mathematically invalid because the model transitions to constant speed after $t = 5\\text{ s}$."
+    }
+},
+{
+    "id": "012145",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Motion in a Straight Line",
+    "subtopic": [
+        "Trapezium Velocity-Time Profile",
+        "Multi-Stage Kinematics",
+        "Transition Points"
+    ],
+    "img": false,
+    "question": "An ice skater travels along a straight track, covering a total distance of $120\\text{ m}$ in $20\\text{ s}$. The skater starts from rest, accelerates uniformly at $2\\text{ m s}^{-2}$ to a maximum speed of $8\\text{ m s}^{-1}$, glides at this constant speed for a period of time, and finally decelerates uniformly to rest. The deceleration phase takes $6\\text{ seconds}$.<br><br><strong>(a)</strong> Calculate the duration of the acceleration phase.<br><br><strong>(b)</strong> Calculate the distance travelled by the skater during the acceleration phase.<br><br><strong>(c)</strong> Calculate the magnitude of the deceleration during the final phase, and find the distance travelled while decelerating.<br><br><strong>(d)</strong> Find the time spent gliding at constant speed, and calculate the distance covered during this phase.<br><br><strong>(e)</strong> Sketch the velocity-time graph for the skater's entire $20\\text{ second}$ journey, clearly indicating the values of $t$ and $v$ at all transition points.",
+    "steps": [
+        "<strong>(a) Duration of acceleration phase:</strong><br><br>Using $v = u + at$ with $u = 0$, $v = 8\\text{ m s}^{-1}$, and $a = 2\\text{ m s}^{-2}$:\\begin{aligned} 8 &= 0 + 2t_1 \\cr t_1 &= 4\\text{ s} \\end{aligned}",
+        "<strong>(b) Distance during acceleration:</strong><br><br>Using $s_1 = \\dfrac{u + v}{2}t_1$:\\begin{aligned} s_1 &= \\left(\\dfrac{0 + 8}{2}\\right)(4) \\cr &= 4(4) \\cr &= 16\\text{ m} \\end{aligned}",
+        "<strong>(c) Deceleration and distance during final phase:</strong><br><br>For the final phase, $u = 8\\text{ m s}^{-1}$, $v = 0\\text{ m s}^{-1}$, and $t_3 = 6\\text{ s}$:\\begin{aligned} a_3 &= \\dfrac{0 - 8}{6} \\cr &= -\\dfrac{4}{3}\\text{ m s}^{-2} \\cr &\\approx -1.33\\text{ m s}^{-2} \\end{aligned}<br><br>The magnitude of the deceleration is $1.33\\text{ m s}^{-2}$.<br><br>Distance decelerating:\\begin{aligned} s_3 &= \\left(\\dfrac{8 + 0}{2}\\right)(6) \\cr &= 4(6) \\cr &= 24\\text{ m} \\end{aligned}",
+        "<strong>(d) Gliding phase:</strong><br><br>The distance covered during the gliding phase is:\\begin{aligned} s_2 &= 120 - (s_1 + s_3) \\cr &= 120 - (16 + 24) \\cr &= 120 - 40 \\cr &= 80\\text{ m} \\end{aligned}<br><br>Time spent gliding at constant speed $v = 8\\text{ m s}^{-1}$:\\begin{aligned} t_2 &= \\dfrac{s_2}{v} \\cr &= \\dfrac{80}{8} \\cr &= 10\\text{ s} \\end{aligned}<br><br>(Checking total time: $t_1 + t_2 + t_3 = 4 + 10 + 6 = 20\\text{ s}$).",
+        "<strong>(e) Velocity-time graph:</strong><br><br>The graph consists of three line segments with transition coordinates $(0, 0)$, $(4, 8)$, $(14, 8)$, and $(20, 0)$.<img src='images/Mechanics_pngs/012145_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>",
+        "Final Answer: (a) $4\\text{ s}$, (b) $16\\text{ m}$, (c) $1.33\\text{ m s}^{-2}, 24\\text{ m}$, (d) $10\\text{ s}, 80\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $4\\text{ s}$, (b) $16\\text{ m}$, (c) $1.33\\text{ m s}^{-2}, 24\\text{ m}$, (d) $10\\text{ s}, 40\\text{ m}$",
+            "feedback": "You subtracted the acceleration and deceleration distances incorrectly in part (d). The distance while gliding is $120 - (16 + 24) = 80\\text{ m}$, not $40\\text{ m}$."
+        },
+        {
+            "ans": "(a) $4\\text{ s}$, (b) $32\\text{ m}$, (c) $1.33\\text{ m s}^{-2}, 48\\text{ m}$, (d) $5\\text{ s}, 40\\text{ m}$",
+            "feedback": "You omitted the factor of $\\frac{1}{2}$ when evaluating the distances for the acceleration and deceleration stages, using $s = vt$ instead of $s = \\frac{u + v}{2}t$."
+        },
+        {
+            "ans": "(a) $4\\text{ s}$, (b) $16\\text{ m}$, (c) $0.75\\text{ m s}^{-2}, 24\\text{ m}$, (d) $10\\text{ s}, 80\\text{ m}$",
+            "feedback": "You inverted the division when finding deceleration in part (c). The deceleration is\\begin{aligned} a = \\dfrac{8 - 0}{6} = 1.33\\text{ m s}^{-2} \\end{aligned}not $6 / 8 = 0.75\\text{ m s}^{-2}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Total Time Self-Consistency",
+        "content": "In multi-stage kinematics questions, always perform a self-consistency check on the times. Here, the three distinct stages take $4\\text{ s}$, $10\\text{ s}$, and $6\\text{ s}$. Adding them confirms $4 + 10 + 6 = 20\\text{ s}$, verifying your gliding calculations before you move on."
     }
 }
 ];
