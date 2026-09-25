@@ -205,5 +205,214 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Horizontal Force on an Incline",
         "content": "When a force acting on an inclined plane is horizontal, both perpendicular and parallel force equations involve $P$. The component pressing into the slope is $P\\sin\\alpha$, which increases $R$ and therefore increases friction. The driving component along the slope is $P\\cos\\alpha$. Never confuse a horizontal push with a push directed parallel to the incline."
     }
+},
+{
+    "id": "012156",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Vectors in Kinematics",
+    "subtopic": [
+        "2D Calculus Kinematics",
+        "Stationary Conditions",
+        "Constant Acceleration"
+    ],
+    "img": false,
+    "question": "The position vector $\\mathbf{r}\\text{ metres}$ of a particle at time $t\\text{ seconds}$ ($t \\ge 0$) is given by:$$\\mathbf{r} = (5 + 16t - 2t^2)\\mathbf{i} + (3t^2 - 24t)\\mathbf{j}$$where $\\mathbf{i}$ and $\\mathbf{j}$ are perpendicular horizontal unit vectors.<br><br><strong>(a)</strong> Find an expression in terms of $t$ for the velocity vector $\\mathbf{v}$ of the particle.<br><br><strong>(b)</strong> Determine whether the particle is ever instantaneously at rest, fully justifying your answer.<br><br><strong>(c)</strong> Find the position vector of the particle at the instant when it is at rest, and calculate its distance from the origin at this time.<br><br><strong>(d)</strong> Find the acceleration vector of the particle, and calculate the magnitude of the resultant force acting on the particle given that its mass is $0.5\\text{ kg}$.",
+    "steps": [
+        "<strong>(a) Velocity vector:</strong><br><br>Differentiating $\\mathbf{r}$ with respect to $t$:\\begin{aligned} \\mathbf{v} &= \\dfrac{\\text{d}\\mathbf{r}}{\\text{d}t} \\cr &= (16 - 4t)\\mathbf{i} + (6t - 24)\\mathbf{j} \\end{aligned}",
+        "<strong>(b) Determining if at rest:</strong><br><br>For the particle to be at rest, both components of velocity must be zero simultaneously:\\begin{aligned} &16 - 4t = 0 \\implies t = 4 \\cr &6t - 24 = 0 \\implies t = 4 \\end{aligned}<br><br>Since both components vanish at the same instant, the particle is instantaneously at rest at $t = 4\\text{ s}$.",
+        "<strong>(c) Position vector and distance:</strong><br><br>Substituting $t = 4$ into $\\mathbf{r}$:\\begin{aligned} \\mathbf{r}(4) &= \\big(5 + 16(4) - 2(4^2)\\big)\\mathbf{i} \\cr &\\quad + \\big(3(4^2) - 24(4)\\big)\\mathbf{j} \\cr &= (5 + 64 - 32)\\mathbf{i} \\cr &\\quad + (48 - 96)\\mathbf{j} \\cr &= (37\\mathbf{i} - 48\\mathbf{j})\\text{ m} \\end{aligned}<br><br>Distance from origin:\\begin{aligned} d &= \\sqrt{37^2 + (-48)^2} \\cr &= \\sqrt{1369 + 2304} \\cr &= \\sqrt{3673} \\cr &\\approx 60.6\\text{ m} \\end{aligned}",
+        "<strong>(d) Acceleration and force:</strong><br><br>Differentiating $\\mathbf{v}$ with respect to $t$:\\begin{aligned} \\mathbf{a} &= \\dfrac{\\text{d}\\mathbf{v}}{\\text{d}t} \\cr &= (-4\\mathbf{i} + 6\\mathbf{j})\\text{ m s}^{-2} \\end{aligned}<br><br>Magnitude of acceleration:\\begin{aligned} |\\mathbf{a}| &= \\sqrt{(-4)^2 + 6^2} \\cr &= \\sqrt{16 + 36} \\cr &= \\sqrt{52}\\text{ m s}^{-2} \\end{aligned}<br><br>Using $\\mathbf{F} = m\\mathbf{a}$ with $m = 0.5\\text{ kg}$:\\begin{aligned} |\\mathbf{F}| &= 0.5\\sqrt{52} \\cr &= \\sqrt{13} \\cr &\\approx 3.61\\text{ N} \\end{aligned}",
+        "Final Answer: (b) At rest at $t = 4\\text{ s}$, (c) $(37\\mathbf{i} - 48\\mathbf{j})\\text{ m}, 60.6\\text{ m}$, (d) $3.61\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) Never at rest, (c) $(37\\mathbf{i} - 48\\mathbf{j})\\text{ m}, 60.6\\text{ m}$, (d) $3.61\\text{ N}$",
+            "feedback": "You concluded that the particle is never at rest. Setting both components of velocity to zero gives\\begin{aligned} 16 - 4t &= 0 \\cr 6t - 24 &= 0 \\end{aligned}Both equations yield $t = 4\\text{ s}$ simultaneously, so the particle is at rest at $t = 4\\text{ s}$."
+        },
+        {
+            "ans": "(b) At rest at $t = 4\\text{ s}$, (c) $(37\\mathbf{i} - 48\\mathbf{j})\\text{ m}, 85.0\\text{ m}$, (d) $3.61\\text{ N}$",
+            "feedback": "You added the component magnitudes directly ($37 + 48 = 85$) instead of using Pythagoras' theorem to find distance from the origin:\\begin{aligned} d &= \\sqrt{37^2 + (-48)^2} \\cr &= \\sqrt{1369 + 2304} \\cr &\\approx 60.6\\text{ m} \\end{aligned}"
+        },
+        {
+            "ans": "(b) At rest at $t = 4\\text{ s}$, (c) $(37\\mathbf{i} - 48\\mathbf{j})\\text{ m}, 60.6\\text{ m}$, (d) $7.21\\text{ N}$",
+            "feedback": "You forgot to multiply acceleration by the mass ($m = 0.5\\text{ kg}$), giving the magnitude of acceleration ($\\sqrt{52} \\approx 7.21\\text{ m s}^{-2}$) instead of force ($0.5 \\times 7.21 \\approx 3.61\\text{ N}$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Stationary in 2D",
+        "content": "For a particle to be stationary in two dimensions, both velocity components must be zero at the exact same instant ($v_x = 0$ and $v_y = 0$). If $v_x = 0$ at $t = 2$ and $v_y = 0$ at $t = 3$, the particle is never at rest; it simply moves parallel to the axes at those respective times."
+    }
+},
+{
+    "id": "012157",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Vectors in Kinematics",
+    "subtopic": [
+        "Component Zeros",
+        "Directional Motion",
+        "Minimum Speed"
+    ],
+    "img": false,
+    "question": "A particle moves in a horizontal plane such that its position vector $\\mathbf{r}\\text{ metres}$ at time $t\\text{ seconds}$ ($t \\ge 0$) is given by:$$\\mathbf{r} = (5 + 4t - t^2)\\mathbf{i} + (t^2 - 8t + 3)\\mathbf{j}$$where $\\mathbf{i}$ and $\\mathbf{j}$ are fixed perpendicular unit vectors.<br><br><strong>(a)</strong> Find an expression for the velocity vector $\\mathbf{v}$ of the particle at time $t$.<br><br><strong>(b)</strong> Explain why the particle is never stationary.<br><br><strong>(c)</strong> Find the speed of the particle at the instant when it is moving parallel to the unit vector $\\mathbf{j}$.<br><br><strong>(d)</strong> Find the speed of the particle at the instant when it is moving parallel to the unit vector $\\mathbf{i}$.<br><br><strong>(e)</strong> Find the value of $t$ for which the speed of the particle is a minimum, and calculate this minimum speed in exact surd form.",
+    "steps": [
+        "<strong>(a) Velocity vector:</strong><br><br>Differentiating $\\mathbf{r}$ with respect to $t$:\\begin{aligned} \\mathbf{v} &= \\dfrac{\\text{d}\\mathbf{r}}{\\text{d}t} \\cr &= (4 - 2t)\\mathbf{i} + (2t - 8)\\mathbf{j} \\end{aligned}",
+        "<strong>(b) Explaining why never stationary:</strong><br><br>Equating each component to zero:\\begin{aligned} &4 - 2t = 0 \\implies t = 2 \\cr &2t - 8 = 0 \\implies t = 4 \\end{aligned}<br><br>Because the two components vanish at different times ($2 \\ne 4$), there is no value of $t$ where $\\mathbf{v} = \\mathbf{0}$. Therefore, the particle is never stationary.",
+        "<strong>(c) Speed when parallel to $\\mathbf{j}$:</strong><br><br>Moving parallel to $\\mathbf{j}$ requires the $\\mathbf{i}$ component to be zero:\\begin{aligned} &4 - 2t = 0 \\cr &t = 2\\text{ s} \\end{aligned}<br><br>At $t = 2\\text{ s}$:\\begin{aligned} \\mathbf{v} &= \\big(4 - 2(2)\\big)\\mathbf{i} + \\big(2(2) - 8\\big)\\mathbf{j} \\cr &= 0\\mathbf{i} - 4\\mathbf{j} \\end{aligned}<br><br>Speed is $|\\mathbf{v}| = |-4| = 4\\text{ m s}^{-1}$.",
+        "<strong>(d) Speed when parallel to $\\mathbf{i}$:</strong><br><br>Moving parallel to $\\mathbf{i}$ requires the $\\mathbf{j}$ component to be zero:\\begin{aligned} &2t - 8 = 0 \\cr &t = 4\\text{ s} \\end{aligned}<br><br>At $t = 4\\text{ s}$:\\begin{aligned} \\mathbf{v} &= \\big(4 - 2(4)\\big)\\mathbf{i} + \\big(2(4) - 8\\big)\\mathbf{j} \\cr &= -4\\mathbf{i} + 0\\mathbf{j} \\end{aligned}<br><br>Speed is $|\\mathbf{v}| = |-4| = 4\\text{ m s}^{-1}$.",
+        "<strong>(e) Minimum speed:</strong><br><br>Expression for speed squared:\\begin{aligned} v^2 &= (4 - 2t)^2 + (2t - 8)^2 \\cr &= 16 - 16t + 4t^2 \\cr &\\quad + 4t^2 - 32t + 64 \\cr &= 8t^2 - 48t + 80 \\end{aligned}<br><br>Completing the square:\\begin{aligned} v^2 &= 8(t^2 - 6t) + 80 \\cr &= 8\\big((t - 3)^2 - 9\\big) + 80 \\cr &= 8(t - 3)^2 - 72 + 80 \\cr &= 8(t - 3)^2 + 8 \\end{aligned}<br><br>The minimum occurs when $t = 3\\text{ s}$. The minimum speed is:\\begin{aligned} v_{\\text{min}} &= \\sqrt{8} \\cr &= 2\\sqrt{2}\\text{ m s}^{-1} \\end{aligned}",
+        "Final Answer: (b) Never stationary, (c) $4\\text{ m s}^{-1}$, (d) $4\\text{ m s}^{-1}$, (e) $t = 3\\text{ s}, 2\\sqrt{2}\\text{ m s}^{-1}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) Stationary at $t = 2\\text{ s}$ and $t = 4\\text{ s}$, (c) $4\\text{ m s}^{-1}$, (d) $4\\text{ m s}^{-1}$, (e) $t = 3\\text{ s}, 2\\sqrt{2}\\text{ m s}^{-1}$",
+            "feedback": "You assumed the particle is stationary whenever one component is zero. For the particle to be stationary, both components must be zero at the same time. Since $v_x = 0$ at $t = 2$ and $v_y = 0$ at $t = 4$, the particle is never stationary."
+        },
+        {
+            "ans": "(b) Never stationary, (c) $4\\text{ m s}^{-1}$, (d) $4\\text{ m s}^{-1}$, (e) $t = 3\\text{ s}, 8\\text{ m s}^{-1}$",
+            "feedback": "You forgot to take the square root when finding minimum speed. At $t = 3$, $v^2 = 8$, so the minimum speed is\\begin{aligned} v &= \\sqrt{8} \\cr &= 2\\sqrt{2}\\text{ m s}^{-1} \\end{aligned}"
+        },
+        {
+            "ans": "(b) Never stationary, (c) $0\\text{ m s}^{-1}$, (d) $0\\text{ m s}^{-1}$, (e) $t = 3\\text{ s}, 2\\sqrt{2}\\text{ m s}^{-1}$",
+            "feedback": "You confused moving parallel to an axis with being at rest in that direction. When moving parallel to $\\mathbf{j}$, $v_x = 0$, but the speed in the $\\mathbf{j}$ direction is $|2(2) - 8| = 4\\text{ m s}^{-1}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Minimising Speed Squared",
+        "content": "To find the minimum speed, always minimise $v^2$ rather than dealing with the square root derivative $\\dfrac{\\text{d}}{\\text{d}t}\\sqrt{f(t)}$. Completing the square on $8t^2 - 48t + 80 = 8(t - 3)^2 + 8$ instantly identifies $t = 3$ and $v_{\\text{min}} = \\sqrt{8} = 2\\sqrt{2}\\text{ m s}^{-1}$ without needing calculus."
+    }
+},
+{
+    "id": "012158",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Vectors in Kinematics",
+    "subtopic": [
+        "Variable Acceleration",
+        "Newton's Second Law",
+        "Direction of Motion"
+    ],
+    "img": false,
+    "question": "A particle $P$ of mass $0.5\\text{ kg}$ moves in a horizontal plane. At time $t\\text{ seconds}$ ($t \\ge 0$), its position vector $\\mathbf{r}\\text{ metres}$ relative to a fixed origin is given by:$$\\mathbf{r} = (t^3 - 6t^2 + 9t)\\mathbf{i} + (2t^2 - 8t)\\mathbf{j}$$<strong>(a)</strong> Find expressions in terms of $t$ for:<br><strong>(i)</strong> the velocity vector $\\mathbf{v}$ of the particle,<br><strong>(ii)</strong> the acceleration vector $\\mathbf{a}$ of the particle.<br><br><strong>(b)</strong> Calculate the magnitude of the net force acting on the particle at time $t = 4\\text{ seconds}$.<br><br><strong>(c)</strong> Find the two non-negative values of $t$ at which the particle is moving parallel to the unit vector $\\mathbf{j}$.<br><br><strong>(d)</strong> For each time found in part <strong>(c)</strong>, state whether the particle is moving in the positive or negative $\\mathbf{j}$ direction.",
+    "steps": [
+        "<strong>(a)(i) Velocity vector:</strong><br><br>Differentiating $\\mathbf{r}$ with respect to $t$:\\begin{aligned} \\mathbf{v} &= \\dfrac{\\text{d}\\mathbf{r}}{\\text{d}t} \\cr &= (3t^2 - 12t + 9)\\mathbf{i} + (4t - 8)\\mathbf{j} \\end{aligned}",
+        "<strong>(a)(ii) Acceleration vector:</strong><br><br>Differentiating $\\mathbf{v}$ with respect to $t$:\\begin{aligned} \\mathbf{a} &= \\dfrac{\\text{d}\\mathbf{v}}{\\text{d}t} \\cr &= (6t - 12)\\mathbf{i} + 4\\mathbf{j} \\end{aligned}",
+        "<strong>(b) Force magnitude at $t = 4\\text{ s}$:</strong><br><br>Acceleration at $t = 4\\text{ s}$:\\begin{aligned} \\mathbf{a}(4) &= \\big(6(4) - 12\\big)\\mathbf{i} + 4\\mathbf{j} \\cr &= (12\\mathbf{i} + 4\\mathbf{j})\\text{ m s}^{-2} \\end{aligned}<br><br>Using $\\mathbf{F} = m\\mathbf{a}$ with $m = 0.5\\text{ kg}$:\\begin{aligned} \\mathbf{F} &= 0.5(12\\mathbf{i} + 4\\mathbf{j}) \\cr &= (6\\mathbf{i} + 2\\mathbf{j})\\text{ N} \\end{aligned}<br><br>Magnitude of force:\\begin{aligned} |\\mathbf{F}| &= \\sqrt{6^2 + 2^2} \\cr &= \\sqrt{36 + 4} \\cr &= \\sqrt{40} \\cr &= 2\\sqrt{10} \\cr &\\approx 6.32\\text{ N} \\end{aligned}",
+        "<strong>(c) Times when moving parallel to $\\mathbf{j}$:</strong><br><br>Moving parallel to $\\mathbf{j}$ requires the $\\mathbf{i}$ component of velocity to be zero:\\begin{aligned} &3t^2 - 12t + 9 = 0 \\cr &t^2 - 4t + 3 = 0 \\cr &(t - 1)(t - 3) = 0 \\cr &t = 1\\text{ s}, \\quad t = 3\\text{ s} \\end{aligned}",
+        "<strong>(d) Direction at each time:</strong><br><br>At $t = 1\\text{ s}$:\\begin{aligned} v_y &= 4(1) - 8 \\cr &= -4\\text{ m s}^{-1} \\end{aligned}Since $v_y < 0$, the motion is in the <strong>negative $\\mathbf{j}$ direction</strong>.<br><br>At $t = 3\\text{ s}$:\\begin{aligned} v_y &= 4(3) - 8 \\cr &= 4\\text{ m s}^{-1} \\end{aligned}Since $v_y > 0$, the motion is in the <strong>positive $\\mathbf{j}$ direction</strong>.",
+        "Final Answer: (b) $6.32\\text{ N}$, (c) $t = 1\\text{ s}, t = 3\\text{ s}$, (d) Negative $\\mathbf{j}$ at $t = 1\\text{ s}$, Positive $\\mathbf{j}$ at $t = 3\\text{ s}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $12.6\\text{ N}$, (c) $t = 1\\text{ s}, t = 3\\text{ s}$, (d) Negative $\\mathbf{j}$ at $t = 1\\text{ s}$, Positive $\\mathbf{j}$ at $t = 3\\text{ s}$",
+            "feedback": "You forgot to multiply acceleration by the mass ($m = 0.5\\text{ kg}$). At $t = 4$, $|\\mathbf{a}| = \\sqrt{160} \\approx 12.65\\text{ m s}^{-2}$, so the force magnitude is $0.5 \\times 12.65 \\approx 6.32\\text{ N}$."
+        },
+        {
+            "ans": "(b) $6.32\\text{ N}$, (c) $t = 2\\text{ s}$, (d) Positive $\\mathbf{j}$ at $t = 2\\text{ s}$",
+            "feedback": "You set the $\\mathbf{j}$ component of velocity to zero instead of the $\\mathbf{i}$ component. Moving parallel to $\\mathbf{j}$ requires $v_x = 0$, which gives $3t^2 - 12t + 9 = 0 \\implies t = 1\\text{ s}$ and $t = 3\\text{ s}$."
+        },
+        {
+            "ans": "(b) $6.32\\text{ N}$, (c) $t = 1\\text{ s}, t = 3\\text{ s}$, (d) Positive $\\mathbf{j}$ at $t = 1\\text{ s}$, Negative $\\mathbf{j}$ at $t = 3\\text{ s}$",
+            "feedback": "You reversed the directions. At $t = 1$, $v_y = 4(1) - 8 = -4$, so the direction is negative $\\mathbf{j}$. At $t = 3$, $v_y = 4(3) - 8 = +4$, so the direction is positive $\\mathbf{j}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Parallel vs Direction",
+        "content": "Moving <em>parallel</em> to a vector allows motion in either the positive or negative sense. When moving parallel to $\\mathbf{j}$, the velocity vector has the form $k\\mathbf{j}$. If $k > 0$, the motion is in the positive direction; if $k < 0$, it is in the negative direction."
+    }
+},
+{
+    "id": "012159",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Vectors in Kinematics",
+    "subtopic": [
+        "2D Vector Integration",
+        "Constants of Integration",
+        "Position from Origin"
+    ],
+    "img": false,
+    "question": "A particle of mass $3\\text{ kg}$ moves in a horizontal plane. At time $t\\text{ seconds}$ ($t \\ge 0$), the acceleration $\\mathbf{a}\\text{ m s}^{-2}$ of the particle is given by:$$\\mathbf{a} = (6t - 4)\\mathbf{i} + 2\\mathbf{j}$$When $t = 0$, the particle has velocity $\\mathbf{v} = (3\\mathbf{i} - 6\\mathbf{j})\\text{ m s}^{-1}$ and position vector $\\mathbf{r} = (2\\mathbf{i} + 5\\mathbf{j})\\text{ m}$ relative to a fixed origin.<br><br><strong>(a)</strong> Find an expression for the velocity vector $\\mathbf{v}$ of the particle at time $t$.<br><br><strong>(b)</strong> Find the time at which the particle is moving parallel to the unit vector $\\mathbf{i}$, and state its velocity at this instant.<br><br><strong>(c)</strong> Calculate the speed of the particle when $t = 2\\text{ seconds}$.<br><br><strong>(d)</strong> Find an expression for the position vector $\\mathbf{r}$ of the particle at time $t$.<br><br><strong>(e)</strong> Calculate the distance of the particle from the origin when $t = 3\\text{ seconds}$, giving your answer correct to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Velocity vector $\\mathbf{v}$:</strong><br><br>Integrating $\\mathbf{a}$ with respect to $t$:\\begin{aligned} \\mathbf{v} &= \\int \\big((6t - 4)\\mathbf{i} + 2\\mathbf{j}\\big)\\text{d}t \\cr &= (3t^2 - 4t + c_1)\\mathbf{i} + (2t + c_2)\\mathbf{j} \\end{aligned}<br><br>Using $\\mathbf{v}(0) = 3\\mathbf{i} - 6\\mathbf{j}$:\\begin{aligned} c_1 = 3, \\quad c_2 = -6 \\end{aligned}<br><br>Therefore:\\begin{aligned} \\mathbf{v} = (3t^2 - 4t + 3)\\mathbf{i} + (2t - 6)\\mathbf{j} \\end{aligned}",
+        "<strong>(b) Moving parallel to $\\mathbf{i}$:</strong><br><br>Moving parallel to $\\mathbf{i}$ requires the $\\mathbf{j}$ component to be zero:\\begin{aligned} &2t - 6 = 0 \\cr &t = 3\\text{ s} \\end{aligned}<br><br>At $t = 3\\text{ s}$:\\begin{aligned} v_x &= 3(3^2) - 4(3) + 3 \\cr &= 27 - 12 + 3 \\cr &= 18\\text{ m s}^{-1} \\end{aligned}<br><br>The velocity is $18\\mathbf{i}\\text{ m s}^{-1}$.",
+        "<strong>(c) Speed at $t = 2\\text{ s}$:</strong><br><br>Evaluating components at $t = 2\\text{ s}$:\\begin{aligned} v_x &= 3(2^2) - 4(2) + 3 \\cr &= 12 - 8 + 3 \\cr &= 7\\text{ m s}^{-1} \\cr v_y &= 2(2) - 6 \\cr &= -2\\text{ m s}^{-1} \\end{aligned}<br><br>Speed is:\\begin{aligned} |\\mathbf{v}| &= \\sqrt{7^2 + (-2)^2} \\cr &= \\sqrt{49 + 4} \\cr &= \\sqrt{53} \\cr &\\approx 7.28\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(d) Position vector $\\mathbf{r}$:</strong><br><br>Integrating $\\mathbf{v}$ with respect to $t$:\\begin{aligned} \\mathbf{r} &= \\int \\big((3t^2 - 4t + 3)\\mathbf{i} + (2t - 6)\\mathbf{j}\\big)\\text{d}t \\cr &= (t^3 - 2t^2 + 3t + k_1)\\mathbf{i} \\cr &\\quad + (t^2 - 6t + k_2)\\mathbf{j} \\end{aligned}<br><br>Using $\\mathbf{r}(0) = 2\\mathbf{i} + 5\\mathbf{j}$ gives $k_1 = 2$ and $k_2 = 5$:\\begin{aligned} \\mathbf{r} &= (t^3 - 2t^2 + 3t + 2)\\mathbf{i} \\cr &\\quad + (t^2 - 6t + 5)\\mathbf{j} \\end{aligned}",
+        "<strong>(e) Distance from origin at $t = 3\\text{ s}$:</strong><br><br>Evaluating position components at $t = 3$:\\begin{aligned} r_x &= 3^3 - 2(3^2) + 3(3) + 2 \\cr &= 27 - 18 + 9 + 2 \\cr &= 20\\text{ m} \\cr r_y &= 3^2 - 6(3) + 5 \\cr &= 9 - 18 + 5 \\cr &= -4\\text{ m} \\end{aligned}<br><br>Distance from origin:\\begin{aligned} d &= \\sqrt{20^2 + (-4)^2} \\cr &= \\sqrt{400 + 16} \\cr &= \\sqrt{416} \\cr &\\approx 20.4\\text{ m} \\end{aligned}",
+        "Final Answer: (b) $t = 3\\text{ s}, 18\\mathbf{i}\\text{ m s}^{-1}$, (c) $7.28\\text{ m s}^{-1}$, (e) $20.4\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $t = 3\\text{ s}, 18\\mathbf{i}\\text{ m s}^{-1}$, (c) $7.28\\text{ m s}^{-1}$, (e) $24.0\\text{ m}$",
+            "feedback": "You added the coordinates ($20 + 4 = 24$) instead of using Pythagoras' theorem to find distance from the origin:\\begin{aligned} d &= \\sqrt{20^2 + (-4)^2} \\cr &= \\sqrt{416} \\cr &\\approx 20.4\\text{ m} \\end{aligned}"
+        },
+        {
+            "ans": "(b) $t = 3\\text{ s}, 18\\mathbf{i}\\text{ m s}^{-1}$, (c) $5.00\\text{ m s}^{-1}$, (e) $20.4\\text{ m}$",
+            "feedback": "You forgot the constant of integration in the $\\mathbf{i}$ component of velocity. At $t = 2$, $v_x = 3(4) - 4(2) + 3 = 7\\text{ m s}^{-1}$, giving speed $\\sqrt{7^2 + (-2)^2} = \\sqrt{53} \\approx 7.28\\text{ m s}^{-1}$."
+        },
+        {
+            "ans": "(b) $t = 1\\text{ s}, 2\\mathbf{i}\\text{ m s}^{-1}$, (c) $7.28\\text{ m s}^{-1}$, (e) $20.4\\text{ m}$",
+            "feedback": "You solved $2t - 6 = 0$ incorrectly as $t = 1\\text{ s}$. Solving gives $2t = 6 \\implies t = 3\\text{ s}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Vector Constants of Integration",
+        "content": "When integrating vector acceleration twice to obtain position, each component acquires its own independent constant of integration: $\\mathbf{c} = c_1\\mathbf{i} + c_2\\mathbf{j}$ for velocity, and $\\mathbf{k} = k_1\\mathbf{i} + k_2\\mathbf{j}$ for position. Never assume these constants are zero unless the question explicitly states that the particle starts from rest at the origin."
+    }
+},
+{
+    "id": "012160",
+    "branch": "Mechanics",
+    "board": "OCR MEI",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Vectors in Kinematics",
+    "subtopic": [
+        "Trigonometric Vectors",
+        "Speed Extrema",
+        "Central Acceleration"
+    ],
+    "img": false,
+    "question": "A particle moves in a horizontal plane such that its position vector $\\mathbf{r}\\text{ metres}$ at time $t\\text{ seconds}$ ($t \\ge 0$) is given by:$$\\mathbf{r} = (4\\cos 2t)\\mathbf{i} + (3\\sin 2t)\\mathbf{j}$$where $\\mathbf{i}$ and $\\mathbf{j}$ are perpendicular unit vectors.<br><br><strong>(a)</strong> Find expressions for the velocity vector $\\mathbf{v}$ and the acceleration vector $\\mathbf{a}$ of the particle at time $t$.<br><br><strong>(b)</strong> Show that the acceleration vector satisfies $\\mathbf{a} = -4\\mathbf{r}$ for all $t$.<br><br><strong>(c)</strong> Calculate the speed of the particle when $t = \\dfrac{\\pi}{4}\\text{ seconds}$.<br><br><strong>(d)</strong> Show that the speed $v$ of the particle satisfies $v = \\sqrt{36 + 28\\sin^2 2t}$, and hence:<br><strong>(i)</strong> find the maximum speed of the particle,<br><strong>(ii)</strong> find the coordinates of the points where this maximum speed occurs.<br><br><strong>(e)</strong> Explain why the particle is never stationary.",
+    "steps": [
+        "<strong>(a) Velocity and acceleration vectors:</strong><br><br>Differentiating $\\mathbf{r}$ using the chain rule:\\begin{aligned} \\mathbf{v} &= \\dfrac{\\text{d}\\mathbf{r}}{\\text{d}t} \\cr &= (-8\\sin 2t)\\mathbf{i} + (6\\cos 2t)\\mathbf{j} \\end{aligned}<br><br>Differentiating $\\mathbf{v}$ with respect to $t$:\\begin{aligned} \\mathbf{a} &= \\dfrac{\\text{d}\\mathbf{v}}{\\text{d}t} \\cr &= (-16\\cos 2t)\\mathbf{i} - (12\\sin 2t)\\mathbf{j} \\end{aligned}",
+        "<strong>(b) Showing $\\mathbf{a} = -4\\mathbf{r}$:</strong><br><br>Factoring $-4$ out of the acceleration vector:\\begin{aligned} \\mathbf{a} &= -4\\big((4\\cos 2t)\\mathbf{i} + (3\\sin 2t)\\mathbf{j}\\big) \\cr &= -4\\mathbf{r} \\end{aligned}",
+        "<strong>(c) Speed at $t = \\dfrac{\\pi}{4}\\text{ s}$:</strong><br><br>When $t = \\dfrac{\\pi}{4}$, $2t = \\dfrac{\\pi}{2}$:\\begin{aligned} \\sin\\left(\\dfrac{\\pi}{2}\\right) = 1, \\quad \\cos\\left(\\dfrac{\\pi}{2}\\right) = 0 \\end{aligned}<br><br>Velocity vector:\\begin{aligned} \\mathbf{v}\\left(\\dfrac{\\pi}{4}\\right) &= -8(1)\\mathbf{i} + 6(0)\\mathbf{j} \\cr &= -8\\mathbf{i}\\text{ m s}^{-1} \\end{aligned}<br><br>Speed is $|\\mathbf{v}| = 8\\text{ m s}^{-1}$.",
+        "<strong>(d) Speed expression and maximum:</strong><br><br>Evaluating $v^2$:\\begin{aligned} v^2 &= (-8\\sin 2t)^2 + (6\\cos 2t)^2 \\cr &= 64\\sin^2 2t + 36\\cos^2 2t \\cr &= 64\\sin^2 2t + 36(1 - \\sin^2 2t) \\cr &= 36 + 28\\sin^2 2t \\end{aligned}<br><br>Therefore $v = \\sqrt{36 + 28\\sin^2 2t}$.<br><br><strong>(d)(i) Maximum speed:</strong><br>Since $0 \\le \\sin^2 2t \\le 1$, the maximum occurs when $\\sin^2 2t = 1$:\\begin{aligned} v_{\\text{max}} &= \\sqrt{36 + 28(1)} \\cr &= \\sqrt{64} \\cr &= 8\\text{ m s}^{-1} \\end{aligned}<br><br><strong>(d)(ii) Coordinates:</strong><br>When $\\sin^2 2t = 1$, $\\cos 2t = 0$. Substituting into $\\mathbf{r}$ gives coordinates $(0, 3)$ and $(0, -3)$.",
+        "<strong>(e) Explaining why never stationary:</strong><br><br>The minimum value of $\\sin^2 2t$ is $0$, which gives a minimum speed of:\\begin{aligned} v_{\\text{min}} &= \\sqrt{36 + 28(0)} \\cr &= 6\\text{ m s}^{-1} \\end{aligned}<br><br>Because the speed is always at least $6\\text{ m s}^{-1} > 0$, the particle is never stationary.",
+        "Final Answer: (c) $8\\text{ m s}^{-1}$, (d)(i) $8\\text{ m s}^{-1}$, (d)(ii) $(0, 3)\\text{ and }(0, -3)$, (e) Never stationary"
+    ],
+    "pi_options": [
+        {
+            "ans": "(c) $8\\text{ m s}^{-1}$, (d)(i) $10\\text{ m s}^{-1}$, (d)(ii) $(4, 0)\\text{ and }(-4, 0)$, (e) Never stationary",
+            "feedback": "You added the coefficients directly to find maximum speed. From the identity $v = \\sqrt{36 + 28\\sin^2 2t}$, the maximum occurs when $\\sin^2 2t = 1$, giving $v_{\\text{max}} = \\sqrt{36 + 28} = \\sqrt{64} = 8\\text{ m s}^{-1}$."
+        },
+        {
+            "ans": "(c) $8\\text{ m s}^{-1}$, (d)(i) $8\\text{ m s}^{-1}$, (d)(ii) $(4, 0)\\text{ and }(-4, 0)$, (e) Never stationary",
+            "feedback": "You identified the coordinates where $\\cos 2t = 1$ rather than $\\cos 2t = 0$. When $\\sin^2 2t = 1$, $\\cos 2t = 0$, so $\\mathbf{r} = 4(0)\\mathbf{i} \\pm 3(1)\\mathbf{j} = \\pm 3\\mathbf{j}$, giving coordinates $(0, 3)$ and $(0, -3)$."
+        },
+        {
+            "ans": "(c) $6\\text{ m s}^{-1}$, (d)(i) $8\\text{ m s}^{-1}$, (d)(ii) $(0, 3)\\text{ and }(0, -3)$, (e) Stationary at $t = 0$",
+            "feedback": "You evaluated speed at $t = \\frac{\\pi}{4}$ using $\\sin(\\pi/2) = 0$ instead of $1$. At $t = \\frac{\\pi}{4}$, $\\mathbf{v} = -8(1)\\mathbf{i} + 6(0)\\mathbf{j} = -8\\mathbf{i}$, so the speed is $8\\text{ m s}^{-1}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Elliptic Harmonic Orbits",
+        "content": "The relation $\\mathbf{a} = -4\\mathbf{r}$ indicates that the acceleration is always directed towards the origin with magnitude proportional to distance, which defines simple harmonic motion. Eliminating $t$ via $\\left(\\dfrac{x}{4}\\right)^2 + \\left(\\dfrac{y}{3}\\right)^2 = 1$ reveals that the particle traces an ellipse with semi-major axis $4$ and semi-minor axis $3$."
+    }
 }
 ];
