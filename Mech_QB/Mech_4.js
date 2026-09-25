@@ -414,6 +414,201 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Trigonometric Speed Bounds",
         "content": "Avoid using calculus quotient or chain rules to find maximum and minimum speeds of trigonometric vectors. Once you write $v^2$ in terms of $\\sin^2 2t$ alone ($v^2 = 36 + 28\\sin^2 2t$), use the natural bounds $0 \\le \\sin^2 2t \\le 1$. The minimum speed is $\\sqrt{36} = 6\\text{ m s}^{-1}$ and the maximum speed is $\\sqrt{36 + 28} = 8\\text{ m s}^{-1}$, solved in seconds."
     }
+},
+{
+    "id": "012161",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Moments and Rigid Bodies",
+    "subtopic": [
+        "Parallel forces",
+        "Equilibrium of a rigid rod",
+        "Principle of moments"
+    ],
+    "img": "images/Mechanics_pngs/012161.png",
+    "question": "The diagram shows a light rod $AB$ of length $3\\text{ m}$ hanging vertically in equilibrium.<br><br>Parallel horizontal forces of $24\\text{ N}$ and $36\\text{ N}$ act to the left at the top end $A$ and bottom end $B$ respectively. The rod is held in equilibrium by a single horizontal force of magnitude $F\\text{ N}$ acting to the right at a point $C$, located a distance of $x\\text{ m}$ below $A$.<br><br><strong>(a)</strong> Find the value of $F$.<br><br><strong>(b)</strong> Find the value of $x$.",
+    "steps": [
+        "<strong>(a) Resolve horizontal forces:</strong><br><br>For translational equilibrium, the resultant horizontal force must be zero:\\begin{aligned} &F - 24 - 36 = 0 \\cr &F = 24 + 36 \\cr &F = 60\\text{ N} \\end{aligned}",
+        "<strong>(b) Take moments about $A$:</strong><br><br>Taking moments about end $A$ for rotational equilibrium:\\begin{aligned} &(F \\times x) - (36 \\times 3) = 0 \\cr &60x - 108 = 0 \\cr &60x = 108 \\cr &x = \\dfrac{108}{60} \\cr &x = 1.8\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $F = 60\\text{ N}$, (b) $x = 1.8\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $F = 60\\text{ N}$, (b) $x = 1.2\\text{ m}$",
+            "feedback": "Check the point from which $x$ is measured. A value of $1.2\\text{ m}$ is the distance from $B$ ($3 - 1.8 = 1.2\\text{ m}$), but $x$ is defined as the distance below $A$."
+        },
+        {
+            "ans": "(a) $F = 12\\text{ N}$, (b) $x = 1.8\\text{ m}$",
+            "feedback": "The forces at $A$ and $B$ both act to the left, so their magnitudes must be added ($24 + 36 = 60\\text{ N}$), not subtracted."
+        },
+        {
+            "ans": "(a) $F = 60\\text{ N}$, (b) $x = 0.67\\text{ m}$",
+            "feedback": "In the moment equation $60x = 108$, divide $108$ by $60$. Do not invert the division as $60 / 108$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Choosing Pivot Points Wisely",
+        "content": "Taking moments about point $A$ immediately eliminates the $24\\text{ N}$ force because its line of action passes directly through the pivot. You could take moments about any point along the rod, but pivoting at an unknown or unwanted force eliminates it from your algebra."
+    }
+},
+{
+    "id": "012162",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Moments and Rigid Bodies",
+    "subtopic": [
+        "Uniform beams",
+        "Knife-edge supports",
+        "Parallel vertical forces"
+    ],
+    "img": "images/Mechanics_pngs/012162.png",
+    "question": "The diagram shows a uniform beam $AB$ of length $5.0\\text{ m}$ and weight $120\\text{ N}$ resting horizontally in equilibrium on two smooth knife-edge supports at $C$ and $D$.<br><br>The support at $C$ is $1.0\\text{ m}$ from $A$, and the support at $D$ is $1.0\\text{ m}$ from $B$. A vertical downward load of $80\\text{ N}$ is placed at a point $P$ on the beam, where $AP = 3.5\\text{ m}$.<br><br><strong>(a)</strong> Calculate the normal reaction force exerted on the beam by the support at $C$.<br><br><strong>(b)</strong> Calculate the normal reaction force exerted on the beam by the support at $D$.",
+    "steps": [
+        "<strong>(a) Take moments about support $D$:</strong><br><br>The beam is uniform, so its weight of $120\\text{ N}$ acts at its midpoint, $2.5\\text{ m}$ from $A$.<br><br>Distance from $A$ to support $D$ is $5.0 - 1.0 = 4.0\\text{ m}$.<br><br>Distances from pivot $D$:<br>• Support $C$: $4.0 - 1.0 = 3.0\\text{ m}$<br>• Midpoint (weight): $4.0 - 2.5 = 1.5\\text{ m}$<br>• Load $P$: $4.0 - 3.5 = 0.5\\text{ m}$<br><br>Taking moments about $D$:\\begin{aligned} &3.0 R_C - 120(1.5) \\cr &\\quad - 80(0.5) = 0 \\cr &3.0 R_C - 180 - 40 = 0 \\cr &3.0 R_C = 220 \\cr &R_C = \\dfrac{220}{3} \\approx 73.3\\text{ N} \\end{aligned}",
+        "<strong>(b) Resolve forces vertically:</strong><br><br>Equating total upward forces to total downward forces:\\begin{aligned} &R_C + R_D = 120 + 80 \\cr &\\dfrac{220}{3} + R_D = 200 \\cr &R_D = 200 - \\dfrac{220}{3} \\cr &R_D = \\dfrac{380}{3} \\approx 127\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $R_C = 73.3\\text{ N}$, (b) $R_D = 127\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $R_C = 127\\text{ N}$, (b) $R_D = 73.3\\text{ N}$",
+            "feedback": "The reaction forces at $C$ and $D$ have been reversed. Notice that the $80\\text{ N}$ load is closer to $D$, meaning support $D$ must take the larger portion of the total load."
+        },
+        {
+            "ans": "(a) $R_C = 80.0\\text{ N}$, (b) $R_D = 120\\text{ N}$",
+            "feedback": "You cannot allocate the point load directly to one support and the beam weight to the other. Both supports share both downward forces according to the principle of moments."
+        },
+        {
+            "ans": "(a) $R_C = 66.7\\text{ N}$, (b) $R_D = 133\\text{ N}$",
+            "feedback": "Remember to account for the $1.0\\text{ m}$ overhangs at either end. The distance between supports $C$ and $D$ is $3.0\\text{ m}$, not the total beam length of $5.0\\text{ m}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Mind the Overhangs",
+        "content": "A frequent source of lost marks on beam problems is taking moment arms from the ends of the beam rather than from the chosen pivot point. Always mark the position of each force relative to the pivot before setting up your equation."
+    }
+},
+{
+    "id": "012163",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Moments and Rigid Bodies",
+    "subtopic": [
+        "Non-uniform rod",
+        "Centre of mass",
+        "Suspended bodies"
+    ],
+    "img": "images/Mechanics_pngs/012163.png",
+    "question": "The diagram shows a non-uniform rod $AB$ of length $4\\text{ m}$ and weight $150\\text{ N}$ suspended horizontally in equilibrium by two light vertical strings attached to its ends $A$ and $B$.<br><br>A load of weight $50\\text{ N}$ is attached to the rod at a point $C$, where $AC = 1\\text{ m}$. The tension in the vertical string attached at $B$ is measured to be $110\\text{ N}$.<br><br><strong>(a)</strong> Find the tension in the vertical string attached at $A$.<br><br><strong>(b)</strong> Find the distance of the centre of mass of the rod from end $A$.",
+    "steps": [
+        "<strong>(a) Resolve vertical forces:</strong><br><br>For vertical equilibrium, the sum of upward tensions equals the sum of downward weights:\\begin{aligned} &T_A + T_B = 150 + 50 \\cr &T_A + 110 = 200 \\cr &T_A = 90\\text{ N} \\end{aligned}",
+        "<strong>(b) Take moments about end $A$:</strong><br><br>Let $\\bar{x}$ be the distance of the centre of mass from $A$:\\begin{aligned} &50(1) + 150\\bar{x} - 110(4) = 0 \\cr &50 + 150\\bar{x} = 440 \\cr &150\\bar{x} = 390 \\cr &\\bar{x} = \\dfrac{390}{150} \\cr &\\bar{x} = 2.6\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $T_A = 90\\text{ N}$, (b) $\\bar{x} = 2.6\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T_A = 90\\text{ N}$, (b) $\\bar{x} = 1.4\\text{ m}$",
+            "feedback": "This value gives the distance from end $B$ ($4 - 2.6 = 1.4\\text{ m}$). The question explicitly asks for the distance of the centre of mass from end $A$."
+        },
+        {
+            "ans": "(a) $T_A = 110\\text{ N}$, (b) $\\bar{x} = 2.0\\text{ m}$",
+            "feedback": "The rod is non-uniform, so its centre of mass is not at the midpoint ($2.0\\text{ m}$). This also means the tensions at $A$ and $B$ are not equal."
+        },
+        {
+            "ans": "(a) $T_A = 90\\text{ N}$, (b) $\\bar{x} = 2.93\\text{ m}$",
+            "feedback": "Make sure to include the moment of the $50\\text{ N}$ point load at $C$. Omitting it yields $150\\bar{x} = 440 \\implies \\bar{x} \\approx 2.93\\text{ m}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Interpreting the Result",
+        "content": "For a uniform rod, the centre of mass would be at the midpoint ($2.0\\text{ m}$). Our calculated value of $\\bar{x} = 2.6\\text{ m}$ tells us that the rod is denser towards end $B$, which explains why string $B$ carries more tension ($110\\text{ N}$) than string $A$ ($90\\text{ N}$)."
+    }
+},
+{
+    "id": "012164",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Moments and Rigid Bodies",
+    "subtopic": [
+        "Hinged rods",
+        "Resolving forces at an angle",
+        "Equilibrium of non-parallel forces"
+    ],
+    "img": "images/Mechanics_pngs/012164.png",
+    "question": "The diagram shows a uniform horizontal beam $AB$ of mass $8\\text{ kg}$ and length $2\\text{ m}$, smoothly hinged to a vertical wall at end $A$. The beam is held in a horizontal position in equilibrium by a light wire attached to $B$ and to a point $C$ on the wall vertically above $A$. The wire is inclined at an angle of $30^\\circ$ to the beam.<br><br>A load of mass $12\\text{ kg}$ is suspended from a point $D$ on the beam, where $AD = 1.5\\text{ m}$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the tension in the wire.<br><br><strong>(b)</strong> Find the magnitude of the resultant force exerted on the beam by the hinge at $A$, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Find the tension in the wire:</strong><br><br>Calculate the weights acting on the beam:<br>• Beam weight: $W_B = 8(9.8) = 78.4\\text{ N}$ at midpoint ($1.0\\text{ m}$ from $A$)<br>• Load weight: $W_L = 12(9.8) = 117.6\\text{ N}$ at $1.5\\text{ m}$ from $A$<br><br>Taking moments about hinge $A$:\\begin{aligned} &(T\\sin 30^\\circ) \\times 2 \\cr &\\quad - 78.4(1.0) \\cr &\\quad - 117.6(1.5) = 0 \\cr &T(2 \\times 0.5) - 78.4 - 176.4 = 0 \\cr &T = 254.8\\text{ N} \\cr &T \\approx 255\\text{ N} \\end{aligned}",
+        "<strong>(b) Resultant force at the hinge:</strong><br><br>Let $H_A$ and $V_A$ be the horizontal and vertical components of the hinge reaction at $A$.<br><br>Resolving horizontally:\\begin{aligned} H_A &= T\\cos 30^\\circ \\cr &= 254.8 \\times \\dfrac{\\sqrt{3}}{2} \\cr &\\approx 220.66\\text{ N} \\end{aligned}<br>Resolving vertically:\\begin{aligned} &V_A + T\\sin 30^\\circ = 78.4 + 117.6 \\cr &V_A + 254.8(0.5) = 196 \\cr &V_A = 196 - 127.4 \\cr &V_A = 68.6\\text{ N} \\end{aligned}<br>Calculating the resultant magnitude $R_A$:\\begin{aligned} R_A &= \\sqrt{H_A^2 + V_A^2} \\cr &= \\sqrt{220.66^2 + 68.6^2} \\cr &= \\sqrt{48690.8 + 4705.96} \\cr &\\approx 231\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $T = 255\\text{ N}$, (b) $R_A = 231\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T = 255\\text{ N}$, (b) $R_A = 221\\text{ N}$",
+            "feedback": "This distractor accounts only for the horizontal component of the hinge reaction ($H_A \\approx 221\\text{ N}$). You must also include the vertical component ($V_A = 68.6\\text{ N}$) and find the resultant using Pythagoras."
+        },
+        {
+            "ans": "(a) $T = 127\\text{ N}$, (b) $R_A = 231\\text{ N}$",
+            "feedback": "When taking moments about $A$, resolve the tension perpendicular to the beam using $T\\sin 30^\\circ$. Using $T$ without the trigonometric factor halves the required tension."
+        },
+        {
+            "ans": "(a) $T = 255\\text{ N}$, (b) $R_A = 289\\text{ N}$",
+            "feedback": "To find the magnitude of perpendicular force components, combine them using Pythagoras ($R_A = \\sqrt{H_A^2 + V_A^2}$). Do not add the components linearly ($220.7 + 68.6 = 289.3$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Hinge Reactions Have Two Components",
+        "content": "A smooth hinge can exert a force in any direction within the vertical plane. Never assume the hinge force is purely vertical or acts along the beam. Always define unknown horizontal ($H_A$) and vertical ($V_A$) components, solve for each by resolving, and combine them using $R = \\sqrt{H_A^2 + V_A^2}$."
+    }
+},
+{
+    "id": "012165",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Moments and Rigid Bodies",
+    "subtopic": [
+        "Ladder problems",
+        "Limiting equilibrium",
+        "Friction and normal reaction"
+    ],
+    "img": "images/Mechanics_pngs/012165.png",
+    "question": "The diagram shows a uniform ladder $AB$ of mass $20\\text{ kg}$ and length $4\\text{ m}$ resting in equilibrium with its upper end $B$ against a smooth vertical wall and its lower end $A$ on rough horizontal ground. The ladder is inclined at an angle of $60^\\circ$ to the horizontal ground.<br><br>A person of mass $60\\text{ kg}$ stands on the ladder at a point $P$, where $AP = 3\\text{ m}$. The ladder is in limiting equilibrium.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the magnitude of the normal reaction force exerted on the ladder by the vertical wall at $B$, giving your answer to $3$ significant figures.<br><br><strong>(b)</strong> Find the coefficient of friction $\\mu$ between the ladder and the ground, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Take moments about base $A$:</strong><br><br>The wall is smooth, so the reaction at $B$ is entirely horizontal, $N_B$.<br><br>Weights acting on the ladder:<br>• Ladder weight: $20g = 196\\text{ N}$ at midpoint ($2\\text{ m}$ from $A$)<br>• Person weight: $60g = 588\\text{ N}$ at $3\\text{ m}$ from $A$<br><br>Taking moments about $A$:\\begin{aligned} &N_B(4\\sin 60^\\circ) \\cr &\\quad - 20g(2\\cos 60^\\circ) \\cr &\\quad - 60g(3\\cos 60^\\circ) = 0 \\cr &N_B\\left(4 \\times \\dfrac{\\sqrt{3}}{2}\\right) \\cr &\\quad = (40g + 180g)(0.5) \\cr &2\\sqrt{3} N_B = 110g \\cr &N_B = \\dfrac{110(9.8)}{2\\sqrt{3}} \\cr &N_B \\approx 311\\text{ N} \\end{aligned}",
+        "<strong>(b) Resolve forces and apply limiting friction:</strong><br><br>Resolving vertically:\\begin{aligned} R_A &= 20g + 60g \\cr &= 80(9.8) \\cr &= 784\\text{ N} \\end{aligned}<br>Resolving horizontally:\\begin{aligned} F_A &= N_B \\cr &\\approx 311.19\\text{ N} \\end{aligned}<br>In limiting equilibrium ($F_A = \\mu R_A$):\\begin{aligned} \\mu &= \\dfrac{F_A}{R_A} \\cr &= \\dfrac{311.19}{784} \\cr &\\approx 0.397 \\end{aligned}",
+        "Final Answer: (a) $N_B = 311\\text{ N}$, (b) $\\mu = 0.397$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $N_B = 311\\text{ N}$, (b) $\\mu = 0.529$",
+            "feedback": "Check your vertical resolution. You must include the mass of the ladder ($20\\text{ kg}$) alongside the mass of the person ($60\\text{ kg}$), giving total normal reaction $R_A = 80g\\text{ N}$, not $60g\\text{ N}$."
+        },
+        {
+            "ans": "(a) $N_B = 180\\text{ N}$, (b) $\\mu = 0.397$",
+            "feedback": "Take care with trigonometric functions when calculating perpendicular distances. The wall reaction is horizontal, so its perpendicular moment arm is $4\\sin 60^\\circ$, not $4\\cos 60^\\circ$."
+        },
+        {
+            "ans": "(a) $N_B = 311\\text{ N}$, (b) $\\mu = 0.456$",
+            "feedback": "Ensure the person's distance along the ladder is correctly entered as $3\\text{ m}$ rather than placed at the midpoint with the ladder's centre of mass."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Notice that $g$ Cancels",
+        "content": "When solving for the coefficient of friction $\\mu$, you can express both forces in terms of $g$ before dividing:\\begin{aligned} \\mu &= \\dfrac{N_B}{R_A} \\cr &= \\dfrac{110g / (2\\sqrt{3})}{80g} \\cr &= \\dfrac{11}{16\\sqrt{3}} \\cr &\\approx 0.397 \\end{aligned}Notice that $g$ cancels out entirely, which protects you from premature rounding errors."
+    }
 }
 
 ];
