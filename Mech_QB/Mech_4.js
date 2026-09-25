@@ -412,7 +412,8 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Elliptic Harmonic Orbits",
-        "content": "The relation $\\mathbf{a} = -4\\mathbf{r}$ indicates that the acceleration is always directed towards the origin with magnitude proportional to distance, which defines simple harmonic motion. Eliminating $t$ via $\\left(\\dfrac{x}{4}\\right)^2 + \\left(\\dfrac{y}{3}\\right)^2 = 1$ reveals that the particle traces an ellipse with semi-major axis $4$ and semi-minor axis $3$."
+    
     }
 }
+
 ];
