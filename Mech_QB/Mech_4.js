@@ -609,6 +609,204 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Notice that $g$ Cancels",
         "content": "When solving for the coefficient of friction $\\mu$, you can express both forces in terms of $g$ before dividing:\\begin{aligned} \\mu &= \\dfrac{N_B}{R_A} \\cr &= \\dfrac{110g / (2\\sqrt{3})}{80g} \\cr &= \\dfrac{11}{16\\sqrt{3}} \\cr &\\approx 0.397 \\end{aligned}Notice that $g$ cancels out entirely, which protects you from premature rounding errors."
     }
+},
+{
+    "id": "012166",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Projectiles",
+    "subtopic": [
+        "Horizontal projection",
+        "Trajectory equation",
+        "Range and clearance"
+    ],
+    "img": "images/Mechanics_pngs/012166.png",
+    "question": "The diagram shows a pebble projected horizontally with speed $15\\text{ m s}^{-1}$ from a window at height $6.0\\text{ m}$ above horizontal ground. The pebble clears a vertical fence of height $2.5\\text{ m}$ situated a horizontal distance of $d\\text{ m}$ from the window.<br><br>The origin $O$ is taken on the ground directly beneath the window, with the positive $x$-axis horizontal in the direction of projection and the positive $y$-axis vertically upwards.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the time taken for the pebble to reach the ground.<br><br><strong>(b)</strong> Find the Cartesian equation of the trajectory of the pebble in the form $y = a - bx^2$, where $a$ and $b$ are constants to be determined.<br><br><strong>(c)</strong> Find the range of possible values of $d$ for which the pebble clears the fence.",
+    "steps": [
+        "<strong>(a) Time to reach the ground:</strong><br><br>Considering vertical motion downwards from the window ($s_y = 6.0\\text{ m}$, $u_y = 0$, $a_y = 9.8\\text{ m s}^{-2}$):\\begin{aligned} &s_y = u_y t + \\dfrac{1}{2}gt^2 \\cr &6.0 = 4.9t^2 \\cr &t^2 = \\dfrac{6.0}{4.9} \\cr &t = \\sqrt{\\dfrac{60}{49}} \\cr &t \\approx 1.11\\text{ s} \\end{aligned}",
+        "<strong>(b) Cartesian equation of the trajectory:</strong><br><br>Horizontally:\\begin{aligned} x &= 15t \\cr t &= \\dfrac{x}{15} \\end{aligned}<br>Vertically, with origin on the ground:\\begin{aligned} y &= 6.0 - \\dfrac{1}{2}gt^2 \\cr &= 6.0 - 4.9\\left(\\dfrac{x}{15}\\right)^2 \\cr &= 6.0 - \\dfrac{49}{2250}x^2 \\end{aligned}",
+        "<strong>(c) Range of values of $d$:</strong><br><br>To clear the fence of height $2.5\\text{ m}$, we require $y > 2.5$ when $x = d$:\\begin{aligned} &6.0 - \\dfrac{49}{2250}d^2 > 2.5 \\cr &3.5 > \\dfrac{49}{2250}d^2 \\cr &d^2 < \\dfrac{3.5 \\times 2250}{49} \\cr &d^2 < \\dfrac{1125}{7} \\cr &d < 12.7\\text{ m} \\end{aligned}<br>Since distance must be strictly positive, $0 < d < 12.7\\text{ m}$.",
+        "Final Answer: (a) $1.11\\text{ s}$, (b) $y = 6 - \\dfrac{49}{2250}x^2$, (c) $0 < d < 12.7\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $1.11\\text{ s}$, (b) $y = 6 - \\dfrac{49}{2250}x^2$, (c) $d < 12.7\\text{ m}$",
+            "feedback": "A physical distance cannot take negative values. You must specify the lower bound $d > 0$ alongside the upper bound to define the complete valid range."
+        },
+        {
+            "ans": "(a) $1.11\\text{ s}$, (b) $y = 6 - \\dfrac{4.9}{15}x^2$, (c) $0 < d < 12.7\\text{ m}$",
+            "feedback": "Remember to square the horizontal speed in the denominator: $t^2 = (x/15)^2 = x^2 / 225$, which gives coefficient $4.9 / 225 = 49 / 2250$."
+        },
+        {
+            "ans": "(a) $0.61\\text{ s}$, (b) $y = 6 - \\dfrac{49}{2250}x^2$, (c) $0 < d < 12.7\\text{ m}$",
+            "feedback": "Check the vertical motion formula. You must divide by $0.5g = 4.9$, not $g = 9.8$, when solving $s = \\frac{1}{2}gt^2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Include Physical Lower Bounds",
+        "content": "Whenever an exam question asks for a 'range of values' for a physical length or distance like $d$, state the lower bound $d > 0$ alongside the upper bound $d < 12.7\\text{ m}$. Writing simply $d < 12.7\\text{ m}$ forfeits the final accuracy mark because lengths cannot be negative."
+    }
+},
+{
+    "id": "012167",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Projectiles",
+    "subtopic": [
+        "Projection from a cliff",
+        "Impact velocity",
+        "Direction of motion"
+    ],
+    "img": "images/Mechanics_pngs/012167.png",
+    "question": "The diagram shows a pebble projected horizontally with an initial speed of $16\\text{ m s}^{-1}$ from a point $P$ at the top of a vertical cliff of height $45\\text{ m}$ above the sea. The pebble travels under gravity and strikes the sea at point $S$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Calculate the time taken for the pebble to travel from $P$ to the sea surface at $S$.<br><br><strong>(b)</strong> Calculate the horizontal distance from the base of the cliff to the impact point $S$.<br><br><strong>(c)</strong> Calculate the speed and the acute angle $\\theta$ below the horizontal at which the pebble strikes the sea, giving both values to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Time of flight:</strong><br><br>Considering vertical motion downwards ($s_y = 45\\text{ m}$, $u_y = 0$, $a_y = 9.8\\text{ m s}^{-2}$):\\begin{aligned} &s_y = \\dfrac{1}{2}gt^2 \\cr &45 = 4.9t^2 \\cr &t^2 = \\dfrac{45}{4.9} \\cr &t = \\sqrt{\\dfrac{450}{49}} \\cr &t \\approx 3.03\\text{ s} \\end{aligned}",
+        "<strong>(b) Horizontal distance:</strong><br><br>The horizontal component of velocity remains constant:\\begin{aligned} x &= u_x t \\cr &= 16 \\times 3.0305 \\cr &\\approx 48.5\\text{ m} \\end{aligned}",
+        "<strong>(c) Speed and angle of entry:</strong><br><br>Velocity components at impact:\\begin{aligned} v_x &= 16\\text{ m s}^{-1} \\cr v_y &= gt \\cr &= 9.8 \\times 3.0305 \\cr &\\approx 29.70\\text{ m s}^{-1} \\end{aligned}<br>Magnitude of velocity (speed):\\begin{aligned} v &= \\sqrt{v_x^2 + v_y^2} \\cr &= \\sqrt{16^2 + 29.70^2} \\cr &= \\sqrt{256 + 882} \\cr &= \\sqrt{1138} \\cr &\\approx 33.7\\text{ m s}^{-1} \\end{aligned}<br>Acute angle below the horizontal:\\begin{aligned} \\tan\\theta &= \\dfrac{v_y}{v_x} \\cr &= \\dfrac{29.70}{16} \\cr &\\approx 1.856 \\cr \\theta &= \\arctan(1.856) \\cr &\\approx 61.7^\\circ \\end{aligned}",
+        "Final Answer: (a) $3.03\\text{ s}$, (b) $48.5\\text{ m}$, (c) $v = 33.7\\text{ m s}^{-1}$, $\\theta = 61.7^\\circ$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $3.03\\text{ s}$, (b) $48.5\\text{ m}$, (c) $v = 33.7\\text{ m s}^{-1}$, $\\theta = 28.3^\\circ$",
+            "feedback": "This angle is measured relative to the vertical ($\\\\arctan(16/29.70) \\\\approx 28.3^\\\\circ$). The question asks for the angle below the horizontal, so you need $\\\\arctan(v_y / v_x)$."
+        },
+        {
+            "ans": "(a) $3.03\\text{ s}$, (b) $48.5\\text{ m}$, (c) $v = 29.7\\text{ m s}^{-1}$, $\\theta = 61.7^\\circ$",
+            "feedback": "Speed is the scalar magnitude of the total velocity vector. You must combine the horizontal and vertical components using Pythagoras, rather than quoting the vertical velocity component alone."
+        },
+        {
+            "ans": "(a) $2.14\\text{ s}$, (b) $34.2\\text{ m}$, (c) $v = 33.7\\text{ m s}^{-1}$, $\\theta = 61.7^\\circ$",
+            "feedback": "Remember the factor of $\\\\frac{1}{2}$ in the kinematic equation $s = \\\\frac{1}{2}gt^2$. Dividing $45$ by $9.8$ instead of $4.9$ leads to an incorrect time of flight."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Conservation of Energy for Speed",
+        "content": "You can verify your final speed independently using conservation of mechanical energy: $\\frac{1}{2}m v^2 = \\frac{1}{2}m u^2 + mgh \\implies v = \\sqrt{u^2 + 2gh}$. Here, $v = \\sqrt{16^2 + 2(9.8)(45)} = \\sqrt{256 + 882} = \\sqrt{1138} \\approx 33.7\\text{ m s}^{-1}$."
+    }
+},
+{
+    "id": "012168",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Projectiles",
+    "subtopic": [
+        "Angled projection from elevation",
+        "Trajectory equation",
+        "Barrier clearance"
+    ],
+    "img": "images/Mechanics_pngs/012168.png",
+    "question": "The diagram shows a ball projected with initial speed $20\\text{ m s}^{-1}$ at an angle $\\alpha$ above the horizontal from a point $A$, which is $3.0\\text{ m}$ above horizontal ground. The ball passes over a vertical wall of height $4.0\\text{ m}$ situated a horizontal distance of $12\\text{ m}$ from $A$.<br><br>Given that $\\tan\\alpha = \\dfrac{3}{4}$:<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Show that the Cartesian equation of the trajectory of the ball, taking the origin on the ground directly below the launch point, is:<br>$$y = 3 + \\dfrac{3}{4}x - \\dfrac{49}{2560}x^2$$<br><strong>(b)</strong> Calculate the clearance height of the ball above the top of the wall as it passes over it.<br><br><strong>(c)</strong> Determine whether the ball is ascending or descending as it passes over the wall.",
+    "steps": [
+        "<strong>(a) Derive trajectory equation:</strong><br><br>From $\\tan\\alpha = \\dfrac{3}{4}$, a right-angled triangle gives $\\cos\\alpha = \\dfrac{4}{5} = 0.8$ and $\\sin\\alpha = \\dfrac{3}{5} = 0.6$.<br><br>Initial velocity components:\\begin{aligned} u_x &= 20\\cos\\alpha \\cr &= 16\\text{ m s}^{-1} \\cr u_y &= 20\\sin\\alpha \\cr &= 12\\text{ m s}^{-1} \\end{aligned}<br>Horizontal displacement: $x = 16t \\implies t = \\dfrac{x}{16}$.<br><br>Vertical displacement with initial height $y_0 = 3.0\\text{ m}$:\\begin{aligned} y &= 3 + u_y t - \\dfrac{1}{2}gt^2 \\cr &= 3 + 12\\left(\\dfrac{x}{16}\\right) \\cr &\\quad - 4.9\\left(\\dfrac{x}{16}\\right)^2 \\cr &= 3 + \\dfrac{3}{4}x - \\dfrac{4.9}{256}x^2 \\cr &= 3 + \\dfrac{3}{4}x - \\dfrac{49}{2560}x^2 \\end{aligned}",
+        "<strong>(b) Clearance height above the wall:</strong><br><br>Substitute $x = 12\\text{ m}$ into the trajectory equation:\\begin{aligned} y(12) &= 3 + \\dfrac{3}{4}(12) - \\dfrac{49}{2560}(144) \\cr &= 3 + 9 - 2.75625 \\cr &= 9.24375\\text{ m} \\end{aligned}<br>The wall is $4.0\\text{ m}$ high, so the clearance is:\\begin{aligned} \\text{Clearance} &= 9.24375 - 4.0 \\cr &\\approx 5.24\\text{ m} \\end{aligned}",
+        "<strong>(c) Ascending or descending:</strong><br><br>Find the vertical velocity component $v_y$ at $x = 12\\text{ m}$:\\begin{aligned} t &= \\dfrac{12}{16} \\cr &= 0.75\\text{ s} \\cr v_y &= u_y - gt \\cr &= 12 - 9.8(0.75) \\cr &= 12 - 7.35 \\cr &= 4.65\\text{ m s}^{-1} \\end{aligned}<br>Since $v_y > 0$, the ball is ascending.",
+        "Final Answer: (a) $y = 3 + \\dfrac{3}{4}x - \\dfrac{49}{2560}x^2$, (b) $5.24\\text{ m}$, (c) Ascending"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $y = 3 + \\dfrac{3}{4}x - \\dfrac{49}{2560}x^2$, (b) $5.24\\text{ m}$, (c) Descending",
+            "feedback": "Check the sign of the vertical velocity $v_y = u_y - gt$. At $t = 0.75\\text{ s}$, $v_y = 12 - 7.35 = +4.65\\text{ m s}^{-1} > 0$, which proves the ball is still climbing."
+        },
+        {
+            "ans": "(a) $y = 3 + \\dfrac{3}{4}x - \\dfrac{49}{2560}x^2$, (b) $9.24\\text{ m}$, (c) Ascending",
+            "feedback": "The value $9.24\\text{ m}$ is the height of the ball above the ground. You must subtract the wall's height ($4.0\\text{ m}$) to obtain the clearance above the top of the wall."
+        },
+        {
+            "ans": "(a) $y = 3 + \\dfrac{3}{4}x - \\dfrac{49}{2560}x^2$, (b) $2.24\\text{ m}$, (c) Ascending",
+            "feedback": "Remember to include the initial launch height $y_0 = 3.0\\text{ m}$ when calculating the total height of the ball above ground level."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Two Ways to Check Direction",
+        "content": "To check if a projectile is ascending or descending, you can calculate the vertical velocity $v_y = u_y - gt$, or differentiate the Cartesian path directly: $\\frac{\\text{d}y}{\\text{d}x} = \\frac{3}{4} - \\frac{49}{1280}x$. At $x = 12$, $\\frac{\\text{d}y}{\\text{d}x} = +0.291 > 0$, confirming the trajectory is still rising."
+    }
+},
+{
+    "id": "012169",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Projectiles",
+    "subtopic": [
+        "Vector formulation",
+        "2D kinematics",
+        "Passing through a fixed coordinate"
+    ],
+    "img": "images/Mechanics_pngs/012169.png",
+    "question": "The diagram shows a small ball projected from the origin $O$ on horizontal ground with initial velocity $\\mathbf{u} = (u_x\\mathbf{i} + u_y\\mathbf{j})\\text{ m s}^{-1}$. The ball moves freely under gravity and passes cleanly through the centre of a target hoop located at position $(12\\mathbf{i} + 5\\mathbf{j})\\text{ m}$ after $0.8\\text{ s}$.<br><br>The unit vectors $\\mathbf{i}$ and $\\mathbf{j}$ are directed horizontally and vertically upwards respectively.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$, so acceleration $\\mathbf{a} = -9.8\\mathbf{j}\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the initial velocity vector $\\mathbf{u}$ of the ball.<br><br><strong>(b)</strong> Find the speed of the ball as it passes through the hoop, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Initial velocity vector $\\mathbf{u}$:</strong><br><br>Using $\\mathbf{r}(t) = \\mathbf{u}t + \\dfrac{1}{2}\\mathbf{a}t^2$ with $\\mathbf{a} = -9.8\\mathbf{j}\\text{ m s}^{-2}$:<br><br>Horizontal component at $t = 0.8\\text{ s}$:\\begin{aligned} &u_x(0.8) = 12 \\cr &u_x = \\dfrac{12}{0.8} \\cr &u_x = 15\\text{ m s}^{-1} \\end{aligned}<br>Vertical component at $t = 0.8\\text{ s}$:\\begin{aligned} &u_y(0.8) - 4.9(0.8^2) = 5 \\cr &0.8u_y - 3.136 = 5 \\cr &0.8u_y = 8.136 \\cr &u_y = \\dfrac{8.136}{0.8} \\cr &u_y = 10.17\\text{ m s}^{-1} \\end{aligned}<br>Therefore:\\begin{aligned} \\mathbf{u} = (15\\mathbf{i} + 10.17\\mathbf{j})\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Speed at the hoop:</strong><br><br>Velocity vector at $t = 0.8\\text{ s}$:\\begin{aligned} v_x &= 15\\text{ m s}^{-1} \\cr v_y &= u_y - gt \\cr &= 10.17 - 9.8(0.8) \\cr &= 10.17 - 7.84 \\cr &= 2.33\\text{ m s}^{-1} \\end{aligned}<br>Calculating speed $v$:\\begin{aligned} v &= \\sqrt{v_x^2 + v_y^2} \\cr &= \\sqrt{15^2 + 2.33^2} \\cr &= \\sqrt{225 + 5.4289} \\cr &= \\sqrt{230.4289} \\cr &\\approx 15.2\\text{ m s}^{-1} \\end{aligned}",
+        "Final Answer: (a) $\\mathbf{u} = (15\\mathbf{i} + 10.17\\mathbf{j})\\text{ m s}^{-1}$, (b) $15.2\\text{ m s}^{-1}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\mathbf{u} = (15\\mathbf{i} + 6.25\\mathbf{j})\\text{ m s}^{-1}$, (b) $15.2\\text{ m s}^{-1}$",
+            "feedback": "You must include the downward acceleration due to gravity in the vertical equation. Neglecting gravity gives $u_y = 5 / 0.8 = 6.25\\text{ m s}^{-1}$."
+        },
+        {
+            "ans": "(a) $\\mathbf{u} = (15\\mathbf{i} + 10.17\\mathbf{j})\\text{ m s}^{-1}$, (b) $17.3\\text{ m s}^{-1}$",
+            "feedback": "To calculate speed from velocity components, combine them with Pythagoras ($v = \\sqrt{v_x^2 + v_y^2}$). Do not add the magnitudes linearly ($15 + 2.33 = 17.33$)."
+        },
+        {
+            "ans": "(a) $\\mathbf{u} = (15\\mathbf{i} + 10.17\\mathbf{j})\\text{ m s}^{-1}$, (b) $2.33\\text{ m s}^{-1}$",
+            "feedback": "The value $2.33\\text{ m s}^{-1}$ is only the vertical component of velocity. You must combine it with the constant horizontal component $v_x = 15\\text{ m s}^{-1}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Vector Component Independence",
+        "content": "Because gravity acts purely in the vertical direction ($-9.8\\mathbf{j}$), the horizontal component experiences zero acceleration. This fundamental independence allows you to solve the horizontal equation instantly for $u_x$ before tackling the vertical motion."
+    }
+},
+{
+    "id": "012170",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Projectiles",
+    "subtopic": [
+        "Projection onto an inclined plane",
+        "Intersection of paths",
+        "Distance along slope"
+    ],
+    "img": "images/Mechanics_pngs/012170.png",
+    "question": "The diagram shows a particle projected horizontally with speed $14\\text{ m s}^{-1}$ from the brow of a hill at point $O$. The profile of the hill is modelled as a uniform plane sloping downwards at an angle $\\beta$ below the horizontal, where $\\tan\\beta = \\dfrac{1}{3}$.<br><br>The particle travels freely under gravity and lands on the slope at point $P$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the time of flight of the particle from $O$ to $P$.<br><br><strong>(b)</strong> Find the straight-line distance $OP$ along the slope, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Time of flight:</strong><br><br>Taking $O$ as the origin with positive $x$ horizontally and positive $y$ vertically upwards:\\begin{aligned} x &= 14t \\cr y &= -\\dfrac{1}{2}gt^2 \\cr &= -4.9t^2 \\end{aligned}<br>The slope falls with gradient $-\\tan\\beta = -\\dfrac{1}{3}$, giving line equation:\\begin{aligned} y = -\\dfrac{1}{3}x \\end{aligned}<br>At landing point $P$:\\begin{aligned} &-4.9t^2 = -\\dfrac{1}{3}(14t) \\cr &4.9t = \\dfrac{14}{3} \\cr &t = \\dfrac{14}{3 \\times 4.9} \\cr &t = \\dfrac{140}{147} \\cr &t = \\dfrac{20}{21} \\approx 0.952\\text{ s} \\end{aligned}",
+        "<strong>(b) Distance along the slope:</strong><br><br>Substitute $t = \\dfrac{20}{21}\\text{ s}$ into the displacement equations:\\begin{aligned} x &= 14\\left(\\dfrac{20}{21}\\right) \\cr &= \\dfrac{40}{3}\\text{ m} \\cr y &= -\\dfrac{1}{3}\\left(\\dfrac{40}{3}\\right) \\cr &= -\\dfrac{40}{9}\\text{ m} \\end{aligned}<br>Straight-line distance along the incline $OP = \\sqrt{x^2 + y^2}$:\\begin{aligned} OP &= \\sqrt{\\left(\\dfrac{40}{3}\\right)^2 + \\left(-\\dfrac{40}{9}\\right)^2} \\cr &= \\sqrt{\\dfrac{1600}{9} + \\dfrac{1600}{81}} \\cr &= \\sqrt{\\dfrac{16000}{81}} \\cr &= \\dfrac{40\\sqrt{10}}{9} \\cr &\\approx 14.1\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $0.952\\text{ s}$, (b) $14.1\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.952\\text{ s}$, (b) $13.3\\text{ m}$",
+            "feedback": "The value $13.3\\text{ m}$ ($40/3$) is the horizontal distance travelled. The question asks for the straight-line distance $OP$ measured along the slope."
+        },
+        {
+            "ans": "(a) $2.86\\text{ s}$, (b) $14.1\\text{ m}$",
+            "feedback": "Check the slope gradient equation. Because $\\\\tan\\\\beta = 1/3$, $y = -(1/3)x$. Multiplying by $3$ instead of dividing leads to $4.9t = 14 \\\\times 3$, giving an incorrect flight time."
+        },
+        {
+            "ans": "(a) $0.952\\text{ s}$, (b) $17.8\\text{ m}$",
+            "feedback": "To find the distance along the incline, use Pythagoras ($OP = \\\\sqrt{x^2 + y^2}$). Do not add the horizontal and vertical distances linearly ($13.33 + 4.44 = 17.77$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Coordinate Geometry on Inclines",
+        "content": "When a projectile lands on an inclined slope, treating the ground as a linear equation $y = mx$ is often far faster than resolving along and perpendicular to the inclined plane. Finding the intersection between the parabola and the line yields the flight time in one simple step."
+    }
 }
 
 ];
