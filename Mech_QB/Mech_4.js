@@ -673,7 +673,7 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "(a) $3.03\\text{ s}$, (b) $48.5\\text{ m}$, (c) $v = 33.7\\text{ m s}^{-1}$, $\\theta = 28.3^\\circ$",
-            "feedback": "This angle is measured relative to the vertical ($\\\\arctan(16/29.70) \\\\approx 28.3^\\\\circ$). The question asks for the angle below the horizontal, so you need $\\\\arctan(v_y / v_x)$."
+            "feedback": "This angle is measured relative to the vertical ($\\arctan(16/29.70) \\approx 28.3^\\circ$). The question asks for the angle below the horizontal, so you need $\\arctan(v_y / v_x)$."
         },
         {
             "ans": "(a) $3.03\\text{ s}$, (b) $48.5\\text{ m}$, (c) $v = 29.7\\text{ m s}^{-1}$, $\\theta = 61.7^\\circ$",
@@ -681,7 +681,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(a) $2.14\\text{ s}$, (b) $34.2\\text{ m}$, (c) $v = 33.7\\text{ m s}^{-1}$, $\\theta = 61.7^\\circ$",
-            "feedback": "Remember the factor of $\\\\frac{1}{2}$ in the kinematic equation $s = \\\\frac{1}{2}gt^2$. Dividing $45$ by $9.8$ instead of $4.9$ leads to an incorrect time of flight."
+            "feedback": "Remember the factor of $\\frac{1}{2}$ in the kinematic equation $s = \\frac{1}{2}gt^2$. Dividing $45$ by $9.8$ instead of $4.9$ leads to an incorrect time of flight."
         }
     ],
     "bradley_insight": {
@@ -795,11 +795,11 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(a) $2.86\\text{ s}$, (b) $14.1\\text{ m}$",
-            "feedback": "Check the slope gradient equation. Because $\\\\tan\\\\beta = 1/3$, $y = -(1/3)x$. Multiplying by $3$ instead of dividing leads to $4.9t = 14 \\\\times 3$, giving an incorrect flight time."
+            "feedback": "Check the slope gradient equation. Because $\\tan\\beta = 1/3$, $y = -(1/3)x$. Multiplying by $3$ instead of dividing leads to $4.9t = 14 \\times 3$, giving an incorrect flight time."
         },
         {
             "ans": "(a) $0.952\\text{ s}$, (b) $17.8\\text{ m}$",
-            "feedback": "To find the distance along the incline, use Pythagoras ($OP = \\\\sqrt{x^2 + y^2}$). Do not add the horizontal and vertical distances linearly ($13.33 + 4.44 = 17.77$)."
+            "feedback": "To find the distance along the incline, use Pythagoras ($OP = \\sqrt{x^2 + y^2}$). Do not add the horizontal and vertical distances linearly ($13.33 + 4.44 = 17.77$)."
         }
     ],
     "bradley_insight": {
