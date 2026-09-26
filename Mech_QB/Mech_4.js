@@ -807,6 +807,201 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Coordinate Geometry on Inclines",
         "content": "When a projectile lands on an inclined slope, treating the ground as a linear equation $y = mx$ is often far faster than resolving along and perpendicular to the inclined plane. Finding the intersection between the parabola and the line yields the flight time in one simple step."
     }
+},
+{
+    "id": "012171",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Double inclined plane",
+        "Limiting equilibrium",
+        "Friction"
+    ],
+    "img": "images/Mechanics_pngs/012171.png",
+    "question": "The diagram shows a fixed triangular wedge resting on horizontal ground. Block $A$ of mass $5.0\\text{ kg}$ rests on the left face, which is inclined at $30^\\circ$ to the horizontal. Block $B$ of mass $6.0\\text{ kg}$ rests on the right face, which is inclined at $45^\\circ$ to the horizontal.<br><br>The two blocks are connected by a light inextensible string that passes over a small, smooth pulley fixed at the apex of the wedge. The parts of the string on either side of the pulley lie parallel to the lines of greatest slope of the respective faces.<br><br>The right face is smooth, while the left face is rough. Block $A$ is in limiting equilibrium and is on the point of sliding up the plane.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the tension in the string, giving your answer to $3$ significant figures.<br><br><strong>(b)</strong> Find the coefficient of friction $\\mu$ between Block $A$ and the left face of the wedge, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Tension in the string:</strong><br><br>Consider Block $B$ ($6.0\\text{ kg}$) resting in equilibrium on the smooth $45^\\circ$ slope.<br><br>Resolving parallel to the slope for Block $B$:\\begin{aligned} T &= m_B g\\sin 45^\\circ \\cr &= 6.0(9.8)\\left(\\dfrac{\\sqrt{2}}{2}\\right) \\cr &\\approx 41.6\\text{ N} \\end{aligned}",
+        "<strong>(b) Coefficient of friction $\\mu$:</strong><br><br>Block $A$ ($5.0\\text{ kg}$) is on the point of sliding up the $30^\\circ$ plane, so maximum friction $F_{\\text{max}} = \\mu R_A$ acts down the plane.<br><br>Resolving perpendicular to the slope for Block $A$:\\begin{aligned} R_A &= m_A g\\cos 30^\\circ \\cr &= 5.0(9.8)\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &\\approx 42.435\\text{ N} \\end{aligned}<br>Resolving parallel to the slope for Block $A$:\\begin{aligned} &T = m_A g\\sin 30^\\circ + F_{\\text{max}} \\cr &41.577 = 5.0(9.8)(0.5) + \\mu(42.435) \\cr &41.577 = 24.5 + 42.435\\mu \\cr &17.077 = 42.435\\mu \\cr &\\mu = \\dfrac{17.077}{42.435} \\cr &\\mu \\approx 0.402 \\end{aligned}",
+        "Final Answer: (a) $T = 41.6\\text{ N}$, (b) $\\mu = 0.402$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T = 41.6\\text{ N}$, (b) $\\mu = 1.56$",
+            "feedback": "Check the direction of friction. Because Block $A$ is on the point of sliding up the plane, friction must oppose this motion and act down the plane, adding to the weight component."
+        },
+        {
+            "ans": "(a) $T = 58.8\\text{ N}$, (b) $\\mu = 0.402$",
+            "feedback": "Remember to resolve the weight of Block $B$ parallel to the slope by multiplying by $\\sin 45^\\circ$. Using $T = m_B g = 58.8\\text{ N}$ assumes a vertical drop."
+        },
+        {
+            "ans": "(a) $T = 41.6\\text{ N}$, (b) $\\mu = 0.697$",
+            "feedback": "Take care not to transpose sine and cosine. Resolving perpendicular to the incline uses $\\cos 30^\\circ$, whereas parallel to the incline uses $\\sin 30^\\circ$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Direction of Friction",
+        "content": "Friction always opposes impending relative motion. Because Block $A$ is on the point of sliding up the slope under the pull of the string, limiting friction $F_{\\text{max}}$ must act down the slope, acting alongside the component of weight."
+    }
+},
+{
+    "id": "012172",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Newton's second law",
+        "Double inclined plane",
+        "Acceleration and tension"
+    ],
+    "img": "images/Mechanics_pngs/012172.png",
+    "question": "The diagram shows a fixed triangular wedge with faces inclined at $30^\\circ$ and $60^\\circ$ to the horizontal. Particle $P$ of mass $3.0\\text{ kg}$ rests on the left face ($30^\\circ$), which is smooth. Particle $Q$ of mass $5.0\\text{ kg}$ rests on the right face ($60^\\circ$), which is rough with a coefficient of friction $\\mu = 0.25$.<br><br>The particles are connected by a light inextensible string passing over a small, smooth pulley at the apex. The string lies in a vertical plane containing the lines of greatest slope of both faces. The system is released from rest with the string taut.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Show that particle $Q$ accelerates down the right face and find the magnitude of the acceleration $a$, giving your answer to $3$ significant figures.<br><br><strong>(b)</strong> Find the tension in the string during the motion, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Find system acceleration $a$:</strong><br><br>Forces on $Q$ ($5.0\\text{ kg}$) down the $60^\\circ$ slope:<br>• Downward weight component: $5.0(9.8)\\sin 60^\\circ \\approx 42.435\\text{ N}$<br>• Normal reaction: $R_Q = 5.0(9.8)\\cos 60^\\circ = 24.5\\text{ N}$<br>• Friction opposing motion: $F_Q = 0.25(24.5) = 6.125\\text{ N}$<br><br>Force on $P$ ($3.0\\text{ kg}$) down the smooth $30^\\circ$ slope:<br>• Downward weight component: $3.0(9.8)\\sin 30^\\circ = 14.7\\text{ N}$<br><br>Net driving force along the string:\\begin{aligned} F_{\\text{net}} &= 42.435 - 6.125 - 14.7 \\cr &= 21.61\\text{ N} > 0 \\end{aligned}<br>Since $F_{\\text{net}} > 0$, particle $Q$ accelerates down the right face.<br><br>Applying Newton's second law to the whole system:\\begin{aligned} &(m_P + m_Q)a = F_{\\text{net}} \\cr &(3.0 + 5.0)a = 21.61 \\cr &8.0a = 21.61 \\cr &a = \\dfrac{21.61}{8.0} \\cr &a \\approx 2.70\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Tension in the string:</strong><br><br>Applying $F = ma$ to particle $P$ up the smooth slope:\\begin{aligned} &T - 14.7 = 3.0a \\cr &T - 14.7 = 3.0(2.701) \\cr &T - 14.7 = 8.103 \\cr &T = 14.7 + 8.103 \\cr &T \\approx 22.8\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $a = 2.70\\text{ m s}^{-2}$, (b) $T = 22.8\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $a = 3.47\\text{ m s}^{-2}$, (b) $T = 25.1\\text{ N}$",
+            "feedback": "Remember to include the friction force on particle $Q$. Omitting friction gives $F_{\\text{net}} = 42.44 - 14.70 = 27.74\\text{ N}$, overestimating the acceleration."
+        },
+        {
+            "ans": "(a) $a = 2.70\\text{ m s}^{-2}$, (b) $T = 14.7\\text{ N}$",
+            "feedback": "The tension is not equal to the static component of weight ($14.7\\text{ N}$). Because particle $P$ is accelerating, $T - 14.7 = m_P a$ must be used."
+        },
+        {
+            "ans": "(a) $a = 1.94\\text{ m s}^{-2}$, (b) $T = 22.8\\text{ N}$",
+            "feedback": "Check the signs in the net force equation. Friction opposes the motion of particle $Q$, so it must be subtracted from the driving force, not added twice."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Whole System vs Individual Equations",
+        "content": "Adding the individual equations of motion for both particles eliminates the internal tension $T$ immediately, giving $(m_1 + m_2)a = F_{\\text{net}}$. Once you determine the system acceleration $a$, substitute it back into the simpler equation (here, smooth particle $P$) to find $T$ with minimal algebra."
+    }
+},
+{
+    "id": "012173",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Inclined plane with hanging mass",
+        "Range of equilibrium",
+        "Limiting friction"
+    ],
+    "img": "images/Mechanics_pngs/012173.png",
+    "question": "The diagram shows a block $A$ of mass $8.0\\text{ kg}$ resting on a rough plane inclined at $30^\\circ$ to the horizontal. Block $A$ is connected to a block $B$ of mass $M\\text{ kg}$ by a light inextensible string passing over a small, smooth pulley fixed at the top of the incline. Block $B$ hangs freely vertically downwards.<br><br>The coefficient of friction between Block $A$ and the inclined plane is $\\mu = 0.40$. The system is in equilibrium with the string taut.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the minimum value of $M$ for which Block $A$ does not slip down the plane.<br><br><strong>(b)</strong> Find the maximum value of $M$ for which Block $A$ does not slip up the plane.",
+    "steps": [
+        "<strong>(a) Minimum mass $M$ (impending slip down):</strong><br><br>Normal reaction on Block $A$:\\begin{aligned} R &= 8.0(9.8)\\cos 30^\\circ \\cr &= 78.4\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &\\approx 67.896\\text{ N} \\end{aligned}<br>Maximum available friction:\\begin{aligned} F_{\\text{max}} &= \\mu R \\cr &= 0.40(67.896) \\cr &\\approx 27.158\\text{ N} \\end{aligned}<br>Component of weight down the plane:\\begin{aligned} W_\\parallel &= 8.0(9.8)\\sin 30^\\circ \\cr &= 39.2\\text{ N} \\end{aligned}<br>For minimum $M$, Block $A$ is on the point of slipping down, so friction acts up the plane:\\begin{aligned} &T_{\\text{min}} + F_{\\text{max}} = W_\\parallel \\cr &T_{\\text{min}} = 39.2 - 27.158 \\cr &T_{\\text{min}} = 12.042\\text{ N} \\end{aligned}<br>Since $T = Mg$:\\begin{aligned} &9.8M_{\\text{min}} = 12.042 \\cr &M_{\\text{min}} = \\dfrac{12.042}{9.8} \\cr &M_{\\text{min}} \\approx 1.23\\text{ kg} \\end{aligned}",
+        "<strong>(b) Maximum mass $M$ (impending slip up):</strong><br><br>For maximum $M$, Block $A$ is on the point of slipping up, so friction acts down the plane:\\begin{aligned} &T_{\\text{max}} = W_\\parallel + F_{\\text{max}} \\cr &T_{\\text{max}} = 39.2 + 27.158 \\cr &T_{\\text{max}} = 66.358\\text{ N} \\end{aligned}<br>Since $T = Mg$:\\begin{aligned} &9.8M_{\\text{max}} = 66.358 \\cr &M_{\\text{max}} = \\dfrac{66.358}{9.8} \\cr &M_{\\text{max}} \\approx 6.77\\text{ kg} \\end{aligned}",
+        "Final Answer: (a) $M_{\\text{min}} = 1.23\\text{ kg}$, (b) $M_{\\text{max}} = 6.77\\text{ kg}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $M_{\\text{min}} = 4.00\\text{ kg}$, (b) $M_{\\text{max}} = 6.77\\text{ kg}$",
+            "feedback": "A value of $4.00\\text{ kg}$ neglects friction entirely ($8\\sin 30^\\circ = 4.00\\text{ kg}$). Friction assists the tension to prevent Block $A$ from slipping down, allowing a smaller hanging mass."
+        },
+        {
+            "ans": "(a) $M_{\\text{min}} = 1.23\\text{ kg}$, (b) $M_{\\text{max}} = 9.54\\text{ kg}$",
+            "feedback": "Check the normal reaction calculation. You must multiply by $\\cos 30^\\circ$ when resolving perpendicular to the incline; using $R = mg$ overestimates the maximum friction."
+        },
+        {
+            "ans": "(a) $M_{\\text{min}} = 2.77\\text{ kg}$, (b) $M_{\\text{max}} = 6.77\\text{ kg}$",
+            "feedback": "Remember to divide by $g = 9.8\\text{ m s}^{-2}$ to find mass $M$ from tension $T$. Dividing by an incorrect resolved component alters the minimum mass."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: The Cone of Equilibrium",
+        "content": "Friction is a responsive, self-adjusting force. It only reaches its maximum magnitude $F_{\\text{max}} = \\mu R$ when slipping is imminent. For any hanging mass in the range $1.23\\text{ kg} \\le M \\le 6.77\\text{ kg}$, friction takes on intermediate values to maintain stationary equilibrium."
+    }
+},
+{
+    "id": "012174",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Resultant force on a pulley",
+        "Symmetrical wedge",
+        "Vector resolution"
+    ],
+    "img": "images/Mechanics_pngs/012174.png",
+    "question": "The diagram shows a symmetrical triangular wedge fixed to horizontal ground, with both faces inclined at $40^\\circ$ to the horizontal. Two blocks, $M_1$ and $M_2$, each of mass $4.0\\text{ kg}$, rest on the smooth faces of the wedge.<br><br>The blocks are connected by a light inextensible string passing over a small, smooth pulley fixed at the apex. The string lies parallel to the lines of greatest slope on both sides, and the system is in equilibrium.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the tension $T$ in the string.<br><br><strong>(b)</strong> State the direction and calculate the magnitude of the resultant force exerted by the string on the pulley, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Tension in the string:</strong><br><br>Considering either block resting in equilibrium on a smooth $40^\\circ$ slope:\\begin{aligned} T &= mg\\sin 40^\\circ \\cr &= 4.0(9.8)\\sin 40^\\circ \\cr &= 39.2\\sin 40^\\circ \\cr &\\approx 25.2\\text{ N} \\end{aligned}",
+        "<strong>(b) Resultant force on the pulley:</strong><br><br>The two string segments pull along the slopes, each at an angle of $40^\\circ$ below the horizontal.<br><br>By symmetry, the horizontal components cancel out:\\begin{aligned} R_x &= T\\cos 40^\\circ - T\\cos 40^\\circ \\cr &= 0 \\end{aligned}<br>The vertical components both act downwards:\\begin{aligned} R_y &= 2T\\sin 40^\\circ \\cr &= 2(25.197)\\sin 40^\\circ \\cr &\\approx 32.4\\text{ N} \\end{aligned}<br>Therefore, the resultant force has magnitude $32.4\\text{ N}$ acting vertically downwards.",
+        "Final Answer: (a) $T = 25.2\\text{ N}$, (b) $32.4\\text{ N}$ vertically downwards"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T = 25.2\\text{ N}$, (b) $50.4\\text{ N}$ vertically downwards",
+            "feedback": "Forces are vector quantities. You cannot add the two tension magnitudes linearly ($25.2 + 25.2 = 50.4\\text{ N}$); you must account for the angle between them using vector resolution."
+        },
+        {
+            "ans": "(a) $T = 39.2\\text{ N}$, (b) $32.4\\text{ N}$ vertically downwards",
+            "feedback": "Remember that the blocks rest on an inclined plane. The tension balances the component of weight parallel to the slope ($mg\\sin 40^\\circ$), not the full weight $mg$."
+        },
+        {
+            "ans": "(a) $T = 25.2\\text{ N}$, (b) $38.6\\text{ N}$ vertically downwards",
+            "feedback": "Check the trigonometric component used for the vertical direction. Because each slope is inclined at $40^\\circ$ to the horizontal, the downward component is $T\\sin 40^\\circ$, not $T\\cos 40^\\circ$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Resultant Pulley Forces",
+        "content": "A pulley experiences a pull along both segments of the string. When finding the force on the pulley, use vector resolution or the angle bisector formula $R = 2T\\cos(\\theta / 2)$, where $\\theta = 100^\\circ$ is the angle between the two strings: $R = 2(25.197)\\cos 50^\\circ \\approx 32.4\\text{ N}$."
+    }
+},
+{
+    "id": "012175",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Motion under gravity",
+        "String becoming slack",
+        "Multi-stage motion"
+    ],
+    "img": "images/Mechanics_pngs/012175.png",
+    "question": "The diagram shows a block $P$ of mass $2.0\\text{ kg}$ resting on a rough plane inclined at $30^\\circ$ to the horizontal, with coefficient of friction $\\mu = 0.20$. Block $P$ is connected to a block $Q$ of mass $4.0\\text{ kg}$ by a light inextensible string passing over a small, smooth pulley at the top of the incline.<br><br>Block $Q$ hangs vertically at a height of $1.2\\text{ m}$ above horizontal ground. The system is released from rest from this position with the string taut. Block $Q$ descends and hits the ground without rebounding.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$. Assume block $P$ does not reach the pulley.]</em><br><br><strong>(a)</strong> Find the speed of block $Q$ immediately before it strikes the ground.<br><br><strong>(b)</strong> Find the further distance block $P$ travels up the plane after block $Q$ hits the ground before coming momentarily to rest, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Speed before impact:</strong><br><br>Frictional force on Block $P$:\\begin{aligned} R_P &= 2.0(9.8)\\cos 30^\\circ \\cr &\\approx 16.974\\text{ N} \\cr F_P &= 0.20(16.974) \\cr &\\approx 3.395\\text{ N} \\end{aligned}<br>Applying Newton's second law to the connected system before impact:\\begin{aligned} &m_Q g - (m_P g\\sin 30^\\circ + F_P) = (m_P + m_Q)a_1 \\cr &4.0(9.8) - (2.0(9.8)(0.5) + 3.395) = 6.0a_1 \\cr &39.2 - (9.8 + 3.395) = 6.0a_1 \\cr &26.005 = 6.0a_1 \\cr &a_1 \\approx 4.334\\text{ m s}^{-2} \\end{aligned}<br>Speed when Block $Q$ strikes the ground ($s = 1.2\\text{ m}$):\\begin{aligned} v^2 &= u^2 + 2a_1 s \\cr &= 0 + 2(4.334)(1.2) \\cr &\\approx 10.402 \\cr v &\\approx 3.23\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Further distance travelled by $P$:</strong><br><br>When Block $Q$ hits the ground, the string goes slack. Block $P$ decelerates under gravity and friction:\\begin{aligned} &-(m_P g\\sin 30^\\circ + F_P) = m_P a_2 \\cr &-(9.8 + 3.395) = 2.0a_2 \\cr &-13.195 = 2.0a_2 \\cr &a_2 \\approx -6.598\\text{ m s}^{-2} \\end{aligned}<br>Using $v^2 = u^2 + 2as$ with final velocity $0$ and initial speed $3.225\\text{ m s}^{-1}$:\\begin{aligned} &0 = 10.402 + 2(-6.598)s_2 \\cr &13.195s_2 = 10.402 \\cr &s_2 = \\dfrac{10.402}{13.195} \\cr &s_2 \\approx 0.788\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $3.23\\text{ m s}^{-1}$, (b) $0.788\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $3.23\\text{ m s}^{-1}$, (b) $1.06\\text{ m}$",
+            "feedback": "Remember to include friction during the second stage. While Block $P$ continues up the slope, both friction and gravity decelerate it ($a_2 = -(g\\sin 30^\\circ + \\mu g\\cos 30^\\circ)$)."
+        },
+        {
+            "ans": "(a) $3.63\\text{ m s}^{-1}$, (b) $0.788\\text{ m}$",
+            "feedback": "Friction must be accounted for during the first stage as well. Neglecting friction when Block $Q$ descends yields an overestimated impact speed of $3.63\\text{ m s}^{-1}$."
+        },
+        {
+            "ans": "(a) $3.23\\text{ m s}^{-1}$, (b) $1.99\\text{ m}$",
+            "feedback": "The question asks for the further distance travelled after Block $Q$ strikes the ground ($0.788\\text{ m}$), not the total distance from the initial position ($1.2 + 0.788 = 1.99\\text{ m}$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Multi-Stage Mechanics Problems",
+        "content": "A classic two-stage problem requires a two-stage acceleration analysis. When the hanging mass strikes the ground, tension drops to zero and the string becomes slack. The final velocity of stage 1 becomes the initial velocity of stage 2, but the acceleration changes abruptly from $+4.33\\text{ m s}^{-2}$ to $-6.60\\text{ m s}^{-2}$."
+    }
 }
 
 ];
