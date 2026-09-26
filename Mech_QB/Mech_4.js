@@ -979,7 +979,7 @@ window.ALEVEL_QUESTIONS = [
     "img": "images/Mechanics_pngs/012175.png",
     "question": "The diagram shows a block $P$ of mass $2.0\\text{ kg}$ resting on a rough plane inclined at $30^\\circ$ to the horizontal, with coefficient of friction $\\mu = 0.20$. Block $P$ is connected to a block $Q$ of mass $4.0\\text{ kg}$ by a light inextensible string passing over a small, smooth pulley at the top of the incline.<br><br>Block $Q$ hangs vertically at a height of $1.2\\text{ m}$ above horizontal ground. The system is released from rest from this position with the string taut. Block $Q$ descends and hits the ground without rebounding.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$. Assume block $P$ does not reach the pulley.]</em><br><br><strong>(a)</strong> Find the speed of block $Q$ immediately before it strikes the ground.<br><br><strong>(b)</strong> Find the further distance block $P$ travels up the plane after block $Q$ hits the ground before coming momentarily to rest, giving your answer to $3$ significant figures.",
     "steps": [
-        "<strong>(a) Speed before impact:</strong><br><br>Frictional force on Block $P$:\\begin{aligned} R_P &= 2.0(9.8)\\cos 30^\\circ \\cr &\\approx 16.974\\text{ N} \\cr F_P &= 0.20(16.974) \\cr &\\approx 3.395\\text{ N} \\end{aligned}<br>Applying Newton's second law to the connected system before impact:\\begin{aligned} &m_Q g - (m_P g\\sin 30^\\circ + F_P) = (m_P + m_Q)a_1 \\cr &4.0(9.8) - (2.0(9.8)(0.5) + 3.395) = 6.0a_1 \\cr &39.2 - (9.8 + 3.395) = 6.0a_1 \\cr &26.005 = 6.0a_1 \\cr &a_1 \\approx 4.334\\text{ m s}^{-2} \\end{aligned}<br>Speed when Block $Q$ strikes the ground ($s = 1.2\\text{ m}$):\\begin{aligned} v^2 &= u^2 + 2a_1 s \\cr &= 0 + 2(4.334)(1.2) \\cr &\\approx 10.402 \\cr v &\\approx 3.23\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(a) Speed before impact:</strong><br><br>Frictional force on Block $P$:\\begin{aligned} R_P &= 2.0(9.8)\\cos 30^\\circ \\cr &\\approx 16.974\\text{ N} \\cr F_P &= 0.20(16.974) \\cr &\\approx 3.395\\text{ N} \\end{aligned}<br>Applying Newton's second law to the connected system before impact:\\begin{aligned} &m_Q g - (m_P g\\sin 30^\\circ + F_P) \\cr & \\qquad \\qquad= (m_P + m_Q)a_1 \\cr &4.0(9.8) - (2.0(9.8)(0.5) + 3.395) \\cr & \\qquad \\qquad = 6.0a_1 \\cr &39.2 - (9.8 + 3.395) = 6.0a_1 \\cr &26.005 = 6.0a_1 \\cr &a_1 \\approx 4.334\\text{ m s}^{-2} \\end{aligned}<br>Speed when Block $Q$ strikes the ground ($s = 1.2\\text{ m}$):\\begin{aligned} v^2 &= u^2 + 2a_1 s \\cr &= 0 + 2(4.334)(1.2) \\cr &\\approx 10.402 \\cr v &\\approx 3.23\\text{ m s}^{-1} \\end{aligned}",
         "<strong>(b) Further distance travelled by $P$:</strong><br><br>When Block $Q$ hits the ground, the string goes slack. Block $P$ decelerates under gravity and friction:\\begin{aligned} &-(m_P g\\sin 30^\\circ + F_P) = m_P a_2 \\cr &-(9.8 + 3.395) = 2.0a_2 \\cr &-13.195 = 2.0a_2 \\cr &a_2 \\approx -6.598\\text{ m s}^{-2} \\end{aligned}<br>Using $v^2 = u^2 + 2as$ with final velocity $0$ and initial speed $3.225\\text{ m s}^{-1}$:\\begin{aligned} &0 = 10.402 + 2(-6.598)s_2 \\cr &13.195s_2 = 10.402 \\cr &s_2 = \\dfrac{10.402}{13.195} \\cr &s_2 \\approx 0.788\\text{ m} \\end{aligned}",
         "Final Answer: (a) $3.23\\text{ m s}^{-1}$, (b) $0.788\\text{ m}$"
     ],
@@ -1001,6 +1001,209 @@ window.ALEVEL_QUESTIONS = [
         "type": "caution",
         "title": "The Head Teacher's Eye: Multi-Stage Mechanics Problems",
         "content": "A classic two-stage problem requires a two-stage acceleration analysis. When the hanging mass strikes the ground, tension drops to zero and the string becomes slack. The final velocity of stage 1 becomes the initial velocity of stage 2, but the acceleration changes abruptly from $+4.33\\text{ m s}^{-2}$ to $-6.60\\text{ m s}^{-2}$."
+    }
+},
+{
+    "id": "012176",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Piecewise velocity models",
+        "Calculus in kinematics",
+        "Modelling evaluation"
+    ],
+    "img": false,
+    "question": "The velocity of an electric car, $v\\text{ m s}^{-1}$ at time $t$ seconds, is being modelled for the interval $0 \\le t \\le 20$. Initially the car has velocity $4\\text{ m s}^{-1}$ and it accelerates to $10\\text{ m s}^{-1}$ in $4$ seconds.<br><br>In <strong>Model A</strong>, the acceleration is assumed to be uniform throughout the motion.<br><br><strong>(a)</strong> Find an expression for the velocity of the car at time $t$ using Model A, and explain briefly why this model is unrealistic in the long term.<br><br>Model A is refined so that the acceleration remains constant until the car reaches a top speed of $16\\text{ m s}^{-1}$, after which the velocity remains constant.<br><br><strong>(b)</strong> Find the time at which the acceleration changes, and sketch a velocity-time graph for the car over the interval $0 \\le t \\le 20$, showing clearly the coordinates of all key points.<br><br><strong>(c)</strong> Calculate the displacement of the car in the first $20$ seconds according to this refined Model A.<br><br>In <strong>Model B</strong>, the velocity of the car is given by:<br>\\begin{aligned} v(t) &= 4 + 0.5625t^2 \\cr &\\quad - 0.046875t^3,\\text{ }(0 \\le t \\le 8) \\cr v(t) &= 16,\\text{ }(8 < t \\le 20) \\end{aligned}<br><br><strong>(d)</strong> Show that Model B gives consistent values with Model A for the velocity at $t = 4\\text{ s}$ and $t = 8\\text{ s}$.<br><br><strong>(e)</strong> Explain, by considering the acceleration immediately before $t = 8\\text{ s}$, why Model B is a more realistic physical model than refined Model A.<br><br><strong>(f)</strong> Show that Model B gives the same displacement as refined Model A over the first $20$ seconds.",
+    "steps": [
+        "<strong>(a) Model A:</strong><br><br>Constant acceleration:\\begin{aligned} a &= \\dfrac{10 - 4}{4} \\cr &= 1.5\\text{ m s}^{-2} \\end{aligned}<br>Velocity expression:\\begin{aligned} v(t) &= u + at \\cr &= 4 + 1.5t \\end{aligned}<br>This model is unrealistic in the long term because the velocity increases without limit, which is physically impossible for a motor vehicle.",
+        "<strong>(b) Refined Model A:</strong><br><br>Time to reach $16\\text{ m s}^{-1}$:\\begin{aligned} 4 + 1.5t &= 16 \\cr 1.5t &= 12 \\cr t &= 8\\text{ s} \\end{aligned}<br>The acceleration changes at $t = 8\\text{ s}$.<br><br><img src='images/Mechanics_pngs/012176_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+        "<strong>(c) Displacement for refined Model A:</strong><br><br>The area under the $v$-$t$ graph consists of a trapezium from $t = 0$ to $8$ and a rectangle from $t = 8$ to $20$:\\begin{aligned} s_1 &= \\dfrac{4 + 16}{2} \\times 8 \\cr &= 80\\text{ m} \\cr s_2 &= 16 \\times (20 - 8) \\cr &= 192\\text{ m} \\cr s &= 80 + 192 \\cr &= 272\\text{ m} \\end{aligned}",
+        "<strong>(d) Model B consistency:</strong><br><br>At $t = 4\\text{ s}$:\\begin{aligned} v(4) &= 4 + 0.5625(16) \\cr &\\quad - 0.046875(64) \\cr &= 4 + 9 - 3 \\cr &= 10\\text{ m s}^{-1} \\end{aligned}<br>At $t = 8\\text{ s}$:\\begin{aligned} v(8) &= 4 + 0.5625(64) \\cr &\\quad - 0.046875(512) \\cr &= 4 + 36 - 24 \\cr &= 16\\text{ m s}^{-1} \\end{aligned}<br>Both values match Model A exactly.",
+        "<strong>(e) Acceleration at $t = 8\\text{ s}$:</strong><br><br>Differentiating Model B for $0 \\le t \\le 8$:\\begin{aligned} a(t) &= \\dfrac{\\text{d}v}{\\text{d}t} \\cr &= 1.125t - 0.140625t^2 \\end{aligned}<br>At $t = 8\\text{ s}$:\\begin{aligned} a(8) &= 1.125(8) - 0.140625(64) \\cr &= 9 - 9 \\cr &= 0\\text{ m s}^{-2} \\end{aligned}<br>Model B is more realistic because the acceleration transitions smoothly to zero at the cruising speed, whereas refined Model A has an instantaneous drop from $1.5\\text{ m s}^{-2}$ to $0$.",
+        "<strong>(f) Model B displacement:</strong><br><br>Integrating $v(t)$ over $0 \\le t \\le 8$:\\begin{aligned} s_1 &= \\int_0^8 (4 + 0.5625t^2 \\cr &\\qquad - 0.046875t^3)\\,\\text{d}t \\cr &= \\Big[4t + 0.1875t^3 \\cr &\\qquad - 0.01171875t^4\\Big]_0^8 \\cr &= 32 + 96 - 48 \\cr &= 80\\text{ m} \\end{aligned}<br>For $8 < t \\le 20$, velocity is constant at $16\\text{ m s}^{-1}$, giving $s_2 = 16 \\times 12 = 192\\text{ m}$.<br><br>Total displacement $s = 80 + 192 = 272\\text{ m}$, which matches refined Model A.",
+        "Final Answer: $v(t) = 4 + 1.5t$, $t = 8\\text{ s}$, $s = 272\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$v(t) = 4 + 1.5t$, $t = 8\\text{ s}$, $s = 240\\text{ m}$",
+            "feedback": "Check the area of the rectangle for the constant-speed phase. From $t = 8$ to $t = 20$ is an interval of $12\\text{ s}$, giving $s_2 = 16 \\times 12 = 192\\text{ m}$, not $160\\text{ m}$."
+        },
+        {
+            "ans": "$v(t) = 4 + 2.5t$, $t = 4.8\\text{ s}$, $s = 272\\text{ m}$",
+            "feedback": "Check the initial acceleration calculation: $a = (10 - 4)/4 = 6/4 = 1.5\\text{ m s}^{-2}$, not $10/4 = 2.5\\text{ m s}^{-2}$."
+        },
+        {
+            "ans": "$v(t) = 4 + 1.5t$, $t = 10.7\\text{ s}$, $s = 272\\text{ m}$",
+            "feedback": "To find the transition time, solve $4 + 1.5t = 16$, which gives $1.5t = 12 \\implies t = 8\\text{ s}$. Do not divide $16$ directly by $1.5$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Continuity of Acceleration",
+        "content": "In real-world dynamics, a smooth derivative ($\\frac{\\text{d}v}{\\text{d}t} \\to 0$ as $t \\to 8$) avoids infinite 'jerk' (rate of change of acceleration). In refined Model A, acceleration drops discontinuously from $1.5\\text{ m s}^{-2}$ to $0$, which in reality would require an instantaneous drop in engine tractive force."
+    }
+},
+{
+    "id": "012177",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Multi-stage motion",
+        "Quadratic deceleration",
+        "Area under v-t graph"
+    ],
+    "img": false,
+    "question": "The motion of a high-speed train over a $40$-second test run is modelled in three successive stages:<br>\\begin{aligned} v(t) &= 2t,\\text{ }(0 \\le t \\le 12) \\cr v(t) &= 24,\\text{ }(12 < t \\le 30) \\cr v(t) &= 24 - 0.24(t - 30)^2,\\text{ }(30 < t \\le 40) \\end{aligned}<br>where $v\\text{ m s}^{-1}$ is the velocity of the train at time $t$ seconds.<br><br><strong>(a)</strong> Sketch the velocity-time graph for the train for $0 \\le t \\le 40$, showing the coordinates of the vertices between the stages and the final state at $t = 40\\text{ s}$.<br><br><strong>(b)</strong> Show that the acceleration of the train is continuous at $t = 30\\text{ s}$.<br><br><strong>(c)</strong> Calculate the total distance travelled by the train during the $40$-second run.",
+    "steps": [
+        "<strong>(a) Velocity-time graph:</strong><br><br>Vertices between stages:<br>• Start: $(0, 0)$<br>• End of stage 1: $(12, 24)$<br>• End of stage 2: $(30, 24)$<br>• End of stage 3: $v(40) = 24 - 0.24(100) = 0$, giving $(40, 0)$<br><br><img src='images/Mechanics_pngs/012177_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+        "<strong>(b) Continuity of acceleration at $t = 30\\text{ s}$:</strong><br><br>For $12 < t \\le 30$, velocity is constant, so:\\begin{aligned} a_1(t) = 0\\text{ m s}^{-2} \\end{aligned}<br>For $30 < t \\le 40$, differentiating with respect to $t$:\\begin{aligned} a_2(t) &= \\dfrac{\\text{d}}{\\text{d}t}\\big[24 - 0.24(t - 30)^2\\big] \\cr &= -0.48(t - 30) \\end{aligned}<br>Evaluating at $t = 30\\text{ s}$:\\begin{aligned} a_2(30) &= -0.48(0) \\cr &= 0\\text{ m s}^{-2} \\end{aligned}<br>Since $\\lim_{t \\to 30^-} a(t) = \\lim_{t \\to 30^+} a(t) = 0$, the acceleration is continuous at $t = 30\\text{ s}$.",
+        "<strong>(c) Total distance travelled:</strong><br><br>Stage 1 (triangle):\\begin{aligned} s_1 &= \\dfrac{1}{2}(12)(24) \\cr &= 144\\text{ m} \\end{aligned}<br>Stage 2 (rectangle):\\begin{aligned} s_2 &= (30 - 12) \\times 24 \\cr &= 432\\text{ m} \\end{aligned}<br>Stage 3 (calculus):\\begin{aligned} s_3 &= \\int_{30}^{40} \\big[24 - 0.24(t - 30)^2\\big]\\,\\text{d}t \\cr &= \\Big[24(t - 30) - 0.08(t - 30)^3\\Big]_{30}^{40} \\cr &= 24(10) - 0.08(1000) \\cr &= 240 - 80 \\cr &= 160\\text{ m} \\end{aligned}<br>Total distance:\\begin{aligned} s_{\\text{total}} &= 144 + 432 + 160 \\cr &= 736\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $(0,0)$, $(12,24)$, $(30,24)$, $(40,0)$, (b) $a(30) = 0\\text{ m s}^{-2}$, (c) $736\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $(0,0)$, $(12,24)$, $(30,24)$, $(40,0)$, (b) $a(30) = 0\\text{ m s}^{-2}$, (c) $696\\text{ m}$",
+            "feedback": "Check the integration for Stage 3. Integrating $-0.24(t - 30)^2$ yields $-0.08(t - 30)^3$. Be careful not to divide by $2$ instead of $3$."
+        },
+        {
+            "ans": "(a) $(0,0)$, $(12,24)$, $(30,24)$, $(40,0)$, (b) $a(30) = -0.48\\text{ m s}^{-2}$, (c) $736\\text{ m}$",
+            "feedback": "At the boundary $t = 30\\text{ s}$, the term $(t - 30)$ equals zero, giving acceleration $a(30) = -0.48(0) = 0\\text{ m s}^{-2}$, not $-0.48\\text{ m s}^{-2}$."
+        },
+        {
+            "ans": "(a) $(0,0)$, $(12,24)$, $(30,24)$, $(40,0)$, (b) $a(30) = 0\\text{ m s}^{-2}$, (c) $576\\text{ m}$",
+            "feedback": "Remember to include Stage 3. Omitting the deceleration phase omits the final $160\\text{ m}$ of travel."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Shifted Variables in Integration",
+        "content": "When integrating terms like $(t - 30)^2$, use the linear substitution rule $\\int (t - c)^n\\,\\text{d}t = \\frac{(t - c)^{n+1}}{n+1}$. Evaluating from $t = 30$ to $40$ simply means plugging in $u = 0$ and $u = 10$, which avoids expanding the quadratic polynomial."
+    }
+},
+{
+    "id": "012178",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Exponential resistance model",
+        "Asymptotic terminal velocity",
+        "Definite integration"
+    ],
+    "img": "images/Mechanics_pngs/012178.png",
+    "question": "The diagram shows two mathematical models proposed for the velocity $v\\text{ m s}^{-1}$ of a skydiver in a wind tunnel over the first $20$ seconds of flight.<br><br>In <strong>Model A</strong>, the skydiver accelerates uniformly from rest to a terminal velocity $V_{\\max} = 28\\text{ m s}^{-1}$ in $10\\text{ s}$, after which the velocity remains constant.<br><br>In <strong>Model B</strong>, atmospheric drag is taken into account and the velocity is modelled by:<br>$$v(t) = 28(1 - \\text{e}^{-0.1t}),\\text{ for } t \\ge 0$$<br><strong>(a)</strong> State the initial acceleration predicted by Model B at $t = 0$.<br><br><strong>(b)</strong> Find the time taken under Model B for the skydiver to reach a velocity of $20\\text{ m s}^{-1}$, giving your answer to $3$ significant figures.<br><br><strong>(c)</strong> Calculate the displacement of the skydiver during the first $20$ seconds according to Model B, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Initial acceleration under Model B:</strong><br><br>Differentiating $v(t) = 28 - 28\\text{e}^{-0.1t}$ with respect to $t$:\\begin{aligned} a(t) &= \\dfrac{\\text{d}v}{\\text{d}t} \\cr &= 28(0.1\\text{e}^{-0.1t}) \\cr &= 2.8\\text{e}^{-0.1t} \\end{aligned}<br>At $t = 0$:\\begin{aligned} a(0) &= 2.8\\text{e}^{0} \\cr &= 2.8\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Time to reach $20\\text{ m s}^{-1}$:</strong><br><br>Set $v(t) = 20$:\\begin{aligned} &28(1 - \\text{e}^{-0.1t}) = 20 \\cr &1 - \\text{e}^{-0.1t} = \\dfrac{20}{28} \\cr &1 - \\text{e}^{-0.1t} = \\dfrac{5}{7} \\cr &\\text{e}^{-0.1t} = \\dfrac{2}{7} \\cr &-0.1t = \\ln\\left(\\dfrac{2}{7}\\right) \\cr &t = -10\\ln\\left(\\dfrac{2}{7}\\right) \\cr &t = 10\\ln(3.5) \\cr &t \\approx 12.5\\text{ s} \\end{aligned}",
+        "<strong>(c) Displacement over the first $20$ seconds:</strong><br><br>Integrating $v(t)$ from $t = 0$ to $t = 20$:\\begin{aligned} s &= \\int_0^{20} 28(1 - \\text{e}^{-0.1t})\\,\\text{d}t \\cr &= \\Big[28t + 280\\text{e}^{-0.1t}\\Big]_0^{20} \\cr &= \\big(28(20) + 280\\text{e}^{-2}\\big) \\cr &\\quad - \\big(0 + 280\\text{e}^{0}\\big) \\cr &= 560 + 37.89 - 280 \\cr &= 317.89 \\cr &\\approx 318\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $2.8\\text{ m s}^{-2}$, (b) $12.5\\text{ s}$, (c) $318\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $2.8\\text{ m s}^{-2}$, (b) $12.5\\text{ s}$, (c) $598\\text{ m}$",
+            "feedback": "Remember to evaluate the lower limit at $t = 0$. Because $\\text{e}^0 = 1$, the lower limit contributes $-280$, which must be subtracted from the upper limit value."
+        },
+        {
+            "ans": "(a) $2.8\\text{ m s}^{-2}$, (b) $7.14\\text{ s}$, (c) $318\\text{ m}$",
+            "feedback": "Do not divide $20$ by the initial acceleration $2.8$. Because the acceleration is non-uniform, you must solve the exponential equation using natural logarithms."
+        },
+        {
+            "ans": "(a) $28\\text{ m s}^{-2}$, (b) $12.5\\text{ s}$, (c) $318\\text{ m}$",
+            "feedback": "Remember to apply the chain rule when differentiating $\\text{e}^{-0.1t}$, which brings down a factor of $-0.1$. The initial acceleration is $28 \\times 0.1 = 2.8\\text{ m s}^{-2}$, not $28\\text{ m s}^{-2}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Never Forget the Lower Limit of an Exponential",
+        "content": "A very common slip in A-Level definite integration is assuming that evaluating at $t = 0$ gives zero. While polynomial terms $28t$ vanish at $0$, exponential terms like $280\\text{e}^{-0.1t}$ evaluate to $280\\text{e}^0 = 280$. Always write out both limits explicitly."
+    }
+},
+{
+    "id": "012179",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Acceleration-time graphs",
+        "Calculus from a-t to v-t",
+        "Definite integration"
+    ],
+    "img": "images/Mechanics_pngs/012179.png",
+    "question": "The diagram shows the acceleration-time ($a$-$t$) graph for a racing car during a $10$-second performance test. The car starts from rest at the origin at time $t = 0$.<br><br>The acceleration $a\\text{ m s}^{-2}$ at time $t$ seconds is defined by:<br>\\begin{aligned} a(t) &= 1.5t,\\text{ }(0 \\le t \\le 2) \\cr a(t) &= 3,\\text{ }(2 < t \\le 7) \\cr a(t) &= 10 - t,\\text{ }(7 < t \\le 10) \\end{aligned}<br><strong>(a)</strong> Using the area under the acceleration-time graph, find the maximum velocity reached by the car during the test.<br><br><strong>(b)</strong> By integration, find an expression for the displacement of the car during the first stage ($0 \\le t \\le 2$), and hence find the distance travelled in the first $2$ seconds.<br><br><strong>(c)</strong> Calculate the total displacement of the car at $t = 10\\text{ s}$, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Maximum velocity from area:</strong><br><br>The car starts from rest ($u = 0$), so the maximum velocity at $t = 10\\text{ s}$ equals the total area under the $a$-$t$ graph:<br>• Triangle 1 ($0 \\le t \\le 2$): $\\frac{1}{2}(2)(3) = 3\\text{ m s}^{-1}$<br>• Rectangle ($2 < t \\le 7$): $(7 - 2) \\times 3 = 15\\text{ m s}^{-1}$<br>• Triangle 2 ($7 < t \\le 10$): $\\frac{1}{2}(10 - 7)(3) = 4.5\\text{ m s}^{-1}$<br><br>Total area:\\begin{aligned} v_{\\max} &= 3 + 15 + 4.5 \\cr &= 22.5\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Displacement for $0 \\le t \\le 2$:</strong><br><br>Velocity with $v(0) = 0$:\\begin{aligned} v(t) &= \\int 1.5t\\,\\text{d}t \\cr &= 0.75t^2 \\end{aligned}<br>Displacement with $s(0) = 0$:\\begin{aligned} s(t) &= \\int 0.75t^2\\,\\text{d}t \\cr &= 0.25t^3 \\end{aligned}<br>At $t = 2\\text{ s}$:\\begin{aligned} s(2) &= 0.25(2^3) \\cr &= 2\\text{ m} \\end{aligned}",
+        "<strong>(c) Total displacement at $t = 10\\text{ s}$:</strong><br><br>Stage 1 ($0 \\le t \\le 2$): $s_1 = 2\\text{ m}$, $v(2) = 3\\text{ m s}^{-1}$.<br><br>Stage 2 ($2 < t \\le 7$): $a = 3\\text{ m s}^{-2}$, initial velocity $3\\text{ m s}^{-1}$:\\begin{aligned} s_2 &= ut + \\dfrac{1}{2}at^2 \\cr &= 3(5) + \\dfrac{1}{2}(3)(5^2) \\cr &= 15 + 37.5 \\cr &= 52.5\\text{ m} \\end{aligned}<br>Velocity at $t = 7\\text{ s}$ is $v(7) = 3 + 3(5) = 18\\text{ m s}^{-1}$.<br><br>Stage 3 ($7 < t \\le 10$): integrating $a(t) = 10 - t$:\\begin{aligned} v(t) &= 18 + \\int_7^t (10 - u)\\,\\text{d}u \\cr &= 10t - 0.5t^2 - 27.5 \\cr s_3 &= \\int_7^{10} (10t - 0.5t^2 - 27.5)\\,\\text{d}t \\cr &= \\Big[5t^2 - \\dfrac{1}{6}t^3 - 27.5t\\Big]_7^{10} \\cr &= 59.5\\text{ m} \\end{aligned}<br>Total displacement:\\begin{aligned} s_{\\text{total}} &= 2 + 52.5 + 59.5 \\cr &= 114\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $22.5\\text{ m s}^{-1}$, (b) $s = 0.25t^3$, $2\\text{ m}$, (c) $114\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $22.5\\text{ m s}^{-1}$, (b) $s = 0.25t^3$, $2\\text{ m}$, (c) $96.5\\text{ m}$",
+            "feedback": "Remember to include initial velocities when transitioning between stages. For Stage 2, the car enters with speed $v(2) = 3\\text{ m s}^{-1}$, which contributes to the displacement."
+        },
+        {
+            "ans": "(a) $30.0\\text{ m s}^{-1}$, (b) $s = 0.75t^2$, $3\\text{ m}$, (c) $114\\text{ m}$",
+            "feedback": "To find displacement from acceleration, integrate twice. Integrating once gives the velocity expression $v(t) = 0.75t^2$; integrating again yields $s(t) = 0.25t^3$."
+        },
+        {
+            "ans": "(a) $22.5\\text{ m s}^{-1}$, (b) $s = 0.25t^3$, $2\\text{ m}$, (c) $142\\text{ m}$",
+            "feedback": "Check the integration limits and boundary constants for Stage 3. Ensure the initial velocity of $18\\text{ m s}^{-1}$ at $t = 7\\text{ s}$ is properly accounted for."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Area Under a-t Gives Change in Velocity",
+        "content": "Just as the area under a velocity-time graph gives displacement ($\\Delta s = \\int v\\,\\text{d}t$), the area under an acceleration-time graph gives change in velocity ($\\Delta v = \\int a\\,\\text{d}t$). Since the car starts from rest, calculating the geometric area of the trapezium instantly gives the peak velocity without doing algebraic integration."
+    }
+},
+{
+    "id": "012180",
+    "branch": "Mechanics",
+    "board": "OCR B (MEI)",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Velocity-time graphs",
+        "Reversing direction",
+        "Distance vs displacement"
+    ],
+    "img": "images/Mechanics_pngs/012180.png",
+    "question": "The diagram shows the velocity-time graph of a remote-controlled drone moving along a straight track for $0 \\le t \\le 10$. The drone begins with velocity $6\\text{ m s}^{-1}$ at $t = 0$, decelerates uniformly to come momentarily to rest at $t = 4\\text{ s}$, continues to accelerate in the opposite direction until $t = 7\\text{ s}$ when its velocity is $-4\\text{ m s}^{-1}$, and then maintains this constant velocity until $t = 10\\text{ s}$.<br><br><strong>(a)</strong> Find the acceleration of the drone during the first $4$ seconds.<br><br><strong>(b)</strong> Find the displacement of the drone from its starting point at $t = 10\\text{ s}$.<br><br><strong>(c)</strong> Find the total distance travelled by the drone during the entire $10$-second journey.",
+    "steps": [
+        "<strong>(a) Acceleration during the first $4$ seconds:</strong><br><br>Using the gradient of the velocity-time graph:\\begin{aligned} a &= \\dfrac{v(4) - v(0)}{4 - 0} \\cr &= \\dfrac{0 - 6}{4} \\cr &= -1.5\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Displacement at $t = 10\\text{ s}$:</strong><br><br>Displacement equals the signed net area under the $v$-$t$ graph:<br>• Region above $t$-axis ($0 \\le t \\le 4$):\\begin{aligned} A_1 &= \\dfrac{1}{2} \\times 4 \\times 6 \\cr &= +12\\text{ m} \\end{aligned}<br>• Triangle below $t$-axis ($4 < t \\le 7$):\\begin{aligned} A_2 &= \\dfrac{1}{2} \\times (7 - 4) \\times (-4) \\cr &= -6\\text{ m} \\end{aligned}<br>• Rectangle below $t$-axis ($7 < t \\le 10$):\\begin{aligned} A_3 &= (10 - 7) \\times (-4) \\cr &= -12\\text{ m} \\end{aligned}<br>Net displacement:\\begin{aligned} s &= A_1 + A_2 + A_3 \\cr &= 12 - 6 - 12 \\cr &= -6\\text{ m} \\end{aligned}",
+        "<strong>(c) Total distance travelled:</strong><br><br>Distance is the sum of the absolute magnitudes of the areas:\\begin{aligned} d &= |A_1| + |A_2| + |A_3| \\cr &= |12| + |-6| + |-12| \\cr &= 12 + 6 + 12 \\cr &= 30\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $-1.5\\text{ m s}^{-2}$, (b) $-6\\text{ m}$, (c) $30\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $-1.5\\text{ m s}^{-2}$, (b) $6\\text{ m}$, (c) $30\\text{ m}$",
+            "feedback": "Check the sign of the displacement. The area below the time axis ($18\\text{ m}$) is greater than the area above ($12\\text{ m}$), so the final displacement is $12 - 18 = -6\\text{ m}$."
+        },
+        {
+            "ans": "(a) $1.5\\text{ m s}^{-2}$, (b) $-6\\text{ m}$, (c) $30\\text{ m}$",
+            "feedback": "Acceleration is the gradient of the velocity-time graph. Because the velocity decreases from $+6\\text{ m s}^{-1}$ to $0$, the gradient is negative: $(0 - 6)/4 = -1.5\\text{ m s}^{-2}$."
+        },
+        {
+            "ans": "(a) $-1.5\\text{ m s}^{-2}$, (b) $-6\\text{ m}$, (c) $6\\text{ m}$",
+            "feedback": "Do not confuse total distance with displacement. Distance is a scalar quantity equal to the total path length travelled ($|12| + |-18| = 30\\text{ m}$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Distance vs Displacement on v-t Graphs",
+        "content": "Always remember: displacement is a vector quantity represented by the signed area (areas below the $t$-axis count as negative), whereas total distance travelled is a scalar quantity represented by the total absolute area (all regions treated as positive)."
     }
 }
 
