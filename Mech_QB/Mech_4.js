@@ -1402,6 +1402,201 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Distance is Not Equal to Displacement",
         "content": "At $t = 3\\text{ s}$, the particle is back at the origin, so its displacement is $0\\text{ m}$. However, the question asks for total distance travelled. You must split the journey at each turning point where $v = 0$ (here, $t = 1\\text{ s}$) and sum the absolute distances travelled in each direction: $4\\text{ m} + 4\\text{ m} = 8\\text{ m}$."
     }
+},
+{
+    "id": "012186",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Smooth horizontal table",
+        "Newton's second law",
+        "Modelling assumptions"
+    ],
+    "img": "images/Mechanics_pngs/012186.png",
+    "question": "The diagram shows two objects, $A$ and $B$, of mass $4\\text{ kg}$ and $6\\text{ kg}$ respectively, connected by a light inextensible string passing over a small, light, smooth pulley fixed at the edge of a smooth horizontal table. Object $A$ rests on the horizontal table and object $B$ hangs freely vertically below the pulley.<br><br>Initially, the objects are held at rest with the string taut. The system is then released.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the magnitude of the acceleration of object $A$ and the tension in the string.<br><br><strong>(b)</strong> State briefly what effect a rough pulley would have on the tension in the two parts of the string.",
+    "steps": [
+        "<strong>(a) Acceleration and tension:</strong><br><br>Applying Newton's second law ($F = ma$) to each object:<br>• For hanging object $B$ downwards:\\begin{aligned} &6g - T = 6a \\cr &6(9.8) - T = 6a \\cr &58.8 - T = 6a \\end{aligned}<br>• For object $A$ along the smooth table:\\begin{aligned} T = 4a \\end{aligned}<br>Adding the two equations eliminates $T$:\\begin{aligned} &58.8 = 10a \\cr &a = \\dfrac{58.8}{10} \\cr &a = 5.88\\text{ m s}^{-2} \\end{aligned}<br>Substitute $a = 5.88\\text{ m s}^{-2}$ to find tension $T$:\\begin{aligned} T &= 4(5.88) \\cr &= 23.52\\text{ N} \\cr &\\approx 23.5\\text{ N} \\end{aligned}",
+        "<strong>(b) Effect of a rough pulley:</strong><br><br>If the pulley were rough, friction would oppose the motion of the string over the pulley.<br><br>Consequently, the tension would not be uniform throughout the string: the tension in the vertical section supporting $B$ would be greater than the tension in the horizontal section pulling $A$.",
+        "Final Answer: (a) $a = 5.88\\text{ m s}^{-2}$, $T = 23.5\\text{ N}$, (b) Tensions would differ ($T_{\\text{vertical}} > T_{\\text{horizontal}}$)"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $a = 5.88\\text{ m s}^{-2}$, $T = 58.8\\text{ N}$, (b) Tensions would differ ($T_{\\text{vertical}} > T_{\\text{horizontal}}$)",
+            "feedback": "Because block $B$ is accelerating downwards, the tension is strictly less than its static weight ($T = m_B(g - a) = 23.5\\text{ N}$). Using $T = m_B g = 58.8\\text{ N}$ only applies if the system is in stationary equilibrium."
+        },
+        {
+            "ans": "(a) $a = 9.80\\text{ m s}^{-2}$, $T = 23.5\\text{ N}$, (b) Tensions would differ ($T_{\\text{vertical}} > T_{\\text{horizontal}}$)",
+            "feedback": "Block $B$ is not in free fall. The tension in the string pulls upward on $B$ while pulling $A$ along the table, reducing the system acceleration to below $g$."
+        },
+        {
+            "ans": "(a) $a = 5.88\\text{ m s}^{-2}$, $T = 23.5\\text{ N}$, (b) Tension would remain identical throughout",
+            "feedback": "A smooth pulley allows tension to be transmitted equally across both sides. If the pulley is rough, friction creates a tension difference between the two sections."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Why 'Smooth' Matters",
+        "content": "The assumption that the pulley is 'smooth' allows us to model tension as identical throughout the continuous string. If the pulley is rough, friction creates a tension gradient, meaning the tension in the vertical section must exceed the tension in the horizontal section to rotate the pulley."
+    }
+},
+{
+    "id": "012187",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Rough horizontal table",
+        "Friction and normal reaction",
+        "Acceleration"
+    ],
+    "img": "images/Mechanics_pngs/012187.png",
+    "question": "The diagram shows a block $P$ of mass $5\\text{ kg}$ resting on a rough horizontal table. Block $P$ is connected to a block $Q$ of mass $3\\text{ kg}$ by a light inextensible string passing over a small, smooth pulley fixed at the edge of the table. Block $Q$ hangs freely vertically below the pulley.<br><br>The coefficient of friction between block $P$ and the table is $\\mu = 0.25$. The system is released from rest with the string taut.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Show that the system moves, and calculate the magnitude of the acceleration of the blocks, giving your answer to $3$ significant figures.<br><br><strong>(b)</strong> Find the tension in the string during the motion, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Verification of motion and acceleration:</strong><br><br>Normal reaction on block $P$:\\begin{aligned} R_P &= 5(9.8) \\cr &= 49\\text{ N} \\end{aligned}<br>Maximum available friction:\\begin{aligned} F_{\\text{max}} &= \\mu R_P \\cr &= 0.25(49) \\cr &= 12.25\\text{ N} \\end{aligned}<br>Downward weight of hanging block $Q$:\\begin{aligned} W_Q &= 3(9.8) \\cr &= 29.4\\text{ N} \\end{aligned}<br>Since $W_Q > F_{\\text{max}}$ ($29.4\\text{ N} > 12.25\\text{ N}$), the driving force overcomes static friction and the system moves.<br><br>Equation of motion for the system:\\begin{aligned} &W_Q - F_{\\text{max}} = (m_P + m_Q)a \\cr &29.4 - 12.25 = 8a \\cr &17.15 = 8a \\cr &a = \\dfrac{17.15}{8} \\cr &a \\approx 2.14\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Tension in the string:</strong><br><br>Applying Newton's second law to hanging block $Q$:\\begin{aligned} &3(9.8) - T = 3a \\cr &29.4 - T = 3(2.14375) \\cr &29.4 - T = 6.43125 \\cr &T = 29.4 - 6.43125 \\cr &T \\approx 23.0\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $a = 2.14\\text{ m s}^{-2}$, (b) $T = 23.0\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $a = 3.68\\text{ m s}^{-2}$, (b) $T = 23.0\\text{ N}$",
+            "feedback": "Remember to subtract the friction force ($12.25\\text{ N}$) from the net driving force. Neglecting friction gives $a = 29.4 / 8 = 3.68\\text{ m s}^{-2}$."
+        },
+        {
+            "ans": "(a) $a = 2.14\\text{ m s}^{-2}$, (b) $T = 29.4\\text{ N}$",
+            "feedback": "Tension is not equal to the full weight of block $Q$ while it accelerates downwards. Use $29.4 - T = m_Q a$ to find $T = 23.0\\text{ N}$."
+        },
+        {
+            "ans": "(a) $a = 2.14\\text{ m s}^{-2}$, (b) $T = 10.7\\text{ N}$",
+            "feedback": "For block $P$ on the rough surface, $T - F = m_P a$. Therefore, $T = m_P a + F = 5(2.14) + 12.25 = 23.0\\text{ N}$. You must add friction to $m_P a$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Check Impending Motion First",
+        "content": "Whenever friction is present, always compare the driving force ($m_Q g$) against the maximum available static friction ($F_{\\text{max}} = \\mu m_P g$) before writing down dynamic equations. If $m_Q g \\le F_{\\text{max}}$, the system remains stationary ($a = 0$), and static friction simply balances tension."
+    }
+},
+{
+    "id": "012188",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Multi-stage motion",
+        "Constant acceleration formulae",
+        "Impact with the floor"
+    ],
+    "img": "images/Mechanics_pngs/012188.png",
+    "question": "The diagram shows a block $M_1$ of mass $3\\text{ kg}$ on a smooth horizontal table, connected by a light inextensible string passing over a small, smooth pulley at the edge of the table to a block $M_2$ of mass $2\\text{ kg}$ hanging freely.<br><br>Block $M_2$ is initially held at rest at a height of $h = 1.5\\text{ m}$ above horizontal ground. The system is released from rest with the string taut. Block $M_2$ descends and strikes the ground without rebounding.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$. Assume block $M_1$ does not reach the pulley.]</em><br><br><strong>(a)</strong> Find the speed of block $M_2$ immediately before it strikes the ground, giving your answer to $3$ significant figures.<br><br><strong>(b)</strong> Find the time taken for block $M_2$ to reach the ground from release, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Acceleration and impact speed:</strong><br><br>Applying Newton's second law to the system before impact:\\begin{aligned} &m_2 g = (m_1 + m_2)a \\cr &2(9.8) = (3 + 2)a \\cr &19.6 = 5a \\cr &a = 3.92\\text{ m s}^{-2} \\end{aligned}<br>Using $v^2 = u^2 + 2as$ with $u = 0$ and $s = 1.5\\text{ m}$:\\begin{aligned} v^2 &= 0 + 2(3.92)(1.5) \\cr &= 11.76 \\cr v &= \\sqrt{11.76} \\cr &\\approx 3.43\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Time of descent:</strong><br><br>Using $v = u + at$:\\begin{aligned} 3.4293 &= 0 + 3.92t \\cr t &= \\dfrac{3.4293}{3.92} \\cr &\\approx 0.875\\text{ s} \\end{aligned}",
+        "Final Answer: (a) $3.43\\text{ m s}^{-1}$, (b) $0.875\\text{ s}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $5.42\\text{ m s}^{-1}$, (b) $0.553\\text{ s}$",
+            "feedback": "Block $M_2$ does not fall freely under gravity. Its downward pull accelerates both masses ($M_1 + M_2$), so $a = 3.92\\text{ m s}^{-2}$, not $9.8\\text{ m s}^{-2}$."
+        },
+        {
+            "ans": "(a) $3.43\\text{ m s}^{-1}$, (b) $0.765\\text{ s}$",
+            "feedback": "Do not divide distance by final velocity ($1.5 / 3.43$). Because the block accelerates uniformly from rest, the average speed is $\\frac{v}{2}$, giving $t = 1.5 / 1.715 = 0.875\\text{ s}$."
+        },
+        {
+            "ans": "(a) $3.43\\text{ m s}^{-1}$, (b) $1.75\\text{ s}$",
+            "feedback": "Check the kinematic formula $s = \\frac{1}{2}at^2$. Omitting the factor of $\\frac{1}{2}$ doubles the calculated value of $t^2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Connected Inertia Reduces Acceleration",
+        "content": "A hanging mass connected to another block never falls with free-fall acceleration $g$. The downward gravitational force $m_2 g$ must accelerate the entire system mass ($m_1 + m_2$). Always find the combined system acceleration before applying constant acceleration formulae."
+    }
+},
+{
+    "id": "012189",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Resultant force on a pulley",
+        "Vector addition of tensions",
+        "Right-angled pulley"
+    ],
+    "img": "images/Mechanics_pngs/012189.png",
+    "question": "The diagram shows a block $A$ of mass $2\\text{ kg}$ resting on a smooth horizontal table. Block $A$ is connected to a block $B$ of mass $3\\text{ kg}$ by a light inextensible string passing over a small, light, smooth pulley fixed at the corner of the table. Block $B$ hangs freely vertically downwards.<br><br>The system is released from rest with the string taut.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the tension in the string during the motion.<br><br><strong>(b)</strong> State the direction and calculate the magnitude of the resultant force exerted by the string on the pulley, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Tension in the string:</strong><br><br>Applying Newton's second law to the system:\\begin{aligned} &m_B g = (m_A + m_B)a \\cr &3(9.8) = (2 + 3)a \\cr &29.4 = 5a \\cr &a = 5.88\\text{ m s}^{-2} \\end{aligned}<br>For block $A$ on the smooth table:\\begin{aligned} T &= m_A a \\cr &= 2(5.88) \\cr &= 11.76\\text{ N} \\cr &\\approx 11.8\\text{ N} \\end{aligned}",
+        "<strong>(b) Resultant force on the pulley:</strong><br><br>The two segments of string pull away from the pulley at $90^\\circ$ to each other:<br>• A horizontal pull of magnitude $T$ to the left<br>• A vertical pull of magnitude $T$ downwards<br><br>Magnitude of the resultant force $R$:\\begin{aligned} R &= \\sqrt{T^2 + T^2} \\cr &= T\\sqrt{2} \\cr &= 11.76\\sqrt{2} \\cr &\\approx 16.6\\text{ N} \\end{aligned}<br>Direction: By symmetry, the resultant acts at $45^\\circ$ below the horizontal, pointing directly into the corner of the table.",
+        "Final Answer: (a) $T = 11.8\\text{ N}$, (b) $16.6\\text{ N}$ at $45^\\circ$ below the horizontal"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T = 11.8\\text{ N}$, (b) $23.5\\text{ N}$ at $45^\\circ$ below the horizontal",
+            "feedback": "Forces are vector quantities. You cannot add the two perpendicular tension forces linearly ($11.76 + 11.76 = 23.52\\text{ N}$); combine them using Pythagoras ($R = \\sqrt{T^2 + T^2} = T\\sqrt{2}$)."
+        },
+        {
+            "ans": "(a) $T = 29.4\\text{ N}$, (b) $16.6\\text{ N}$ at $45^\\circ$ below the horizontal",
+            "feedback": "The tension is not equal to the static weight of block $B$. Because block $B$ accelerates downwards, $T = m_B(g - a) = 11.76\\text{ N}$."
+        },
+        {
+            "ans": "(a) $T = 11.8\\text{ N}$, (b) $11.8\\text{ N}$ vertically downwards",
+            "feedback": "The pulley experiences forces from both segments of the string. You must include the horizontal pull as well as the vertical pull."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Right-Angled Pulley Resultants",
+        "content": "When a string turns through a right angle ($90^\\circ$) over a smooth pulley, the two tension forces are equal in magnitude and perpendicular. The resultant force is always $R = T\\sqrt{2}$, directed along the angle bisector at $45^\\circ$ to both string segments."
+    }
+},
+{
+    "id": "012190",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Connected Particles",
+    "subtopic": [
+        "Double-pulley system",
+        "Three connected bodies",
+        "Simultaneous equations"
+    ],
+    "img": "images/Mechanics_pngs/012190.png",
+    "question": "The diagram shows a block $C$ of mass $5\\text{ kg}$ resting on a smooth horizontal table. Block $C$ is connected by two separate light inextensible strings passing over smooth pulleys at opposite edges of the table to two hanging blocks, $A$ and $B$, of mass $2\\text{ kg}$ and $7\\text{ kg}$ respectively. Both blocks $A$ and $B$ hang freely vertically downwards.<br><br>The system is released from rest with both strings taut.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the magnitude of the acceleration of the system.<br><br><strong>(b)</strong> Find the tension in the string attached to block $A$ and the tension in the string attached to block $B$.",
+    "steps": [
+        "<strong>(a) Acceleration of the system:</strong><br><br>Block $B$ ($7\\text{ kg}$) is heavier than block $A$ ($2\\text{ kg}$), so block $B$ accelerates downwards, block $C$ moves to the right, and block $A$ accelerates upwards.<br><br>Applying Newton's second law to each block:<br>• For block $B$ (downwards): $7g - T_B = 7a$<br>• For block $C$ (rightwards): $T_B - T_A = 5a$<br>• For block $A$ (upwards): $T_A - 2g = 2a$<br><br>Summing all three equations eliminates both internal tensions:\\begin{aligned} &7g - 2g = (7 + 5 + 2)a \\cr &5g = 14a \\cr &5(9.8) = 14a \\cr &49 = 14a \\cr &a = \\dfrac{49}{14} \\cr &a = 3.5\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Tensions in the strings:</strong><br><br>For string $A$ ($T_A - 2g = 2a$):\\begin{aligned} T_A &= 2(9.8) + 2(3.5) \\cr &= 19.6 + 7 \\cr &= 26.6\\text{ N} \\end{aligned}<br>For string $B$ ($7g - T_B = 7a$):\\begin{aligned} T_B &= 7(9.8) - 7(3.5) \\cr &= 68.6 - 24.5 \\cr &= 44.1\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $a = 3.5\\text{ m s}^{-2}$, (b) $T_A = 26.6\\text{ N}$, $T_B = 44.1\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $a = 3.5\\text{ m s}^{-2}$, (b) $T_A = 44.1\\text{ N}$, $T_B = 26.6\\text{ N}$",
+            "feedback": "The tensions have been swapped. Because block $B$ ($7\\text{ kg}$) accelerates downwards, $T_B = 44.1\\text{ N}$ is pulling it, while block $A$ ($2\\text{ kg}$) is lifted by $T_A = 26.6\\text{ N}$."
+        },
+        {
+            "ans": "(a) $a = 4.9\\text{ m s}^{-2}$, (b) $T_A = 26.6\\text{ N}$, $T_B = 44.1\\text{ N}$",
+            "feedback": "Remember to include the mass of table block $C$ ($5\\text{ kg}$) in the total system inertia ($2 + 5 + 7 = 14\\text{ kg}$). Dividing $49\\text{ N}$ by $10\\text{ kg}$ omits block $C$."
+        },
+        {
+            "ans": "(a) $a = 3.5\\text{ m s}^{-2}$, (b) $T_A = 19.6\\text{ N}$, $T_B = 68.6\\text{ N}$",
+            "feedback": "Because the system is accelerating, neither tension equals the static weight ($mg$) of the hanging blocks. Apply $F = ma$ to each block individually."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Two Separate Strings Mean Two Different Tensions",
+        "content": "Because block $C$ is pulled by two independent strings, never assume the tension is the same across the table. Always assign distinct variables $T_A$ and $T_B$. Adding all three equations together eliminates both tensions in one step, letting you find the system acceleration $a$ instantly."
+    }
 }
 
 ];
