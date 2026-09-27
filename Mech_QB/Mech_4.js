@@ -1205,6 +1205,203 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Distance vs Displacement on v-t Graphs",
         "content": "Always remember: displacement is a vector quantity represented by the signed area (areas below the $t$-axis count as negative), whereas total distance travelled is a scalar quantity represented by the total absolute area (all regions treated as positive)."
     }
+},
+{
+    "id": "012181",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Indefinite integration",
+        "Boundary conditions",
+        "Displacement from velocity"
+    ],
+    "img": false,
+    "question": "A particle $P$ moves along a horizontal straight line such that its velocity $v\\text{ m s}^{-1}$ at time $t$ seconds ($t \\ge 0$) is given by:$$v = 9t^2 - 4t - 7$$At time $t = 2\\text{ s}$, the displacement of the particle from a fixed point $O$ on the line is $10\\text{ m}$.<br><br>Find an expression for the displacement $s$ of the particle from $O$ at time $t$ seconds.",
+    "steps": [
+        "<strong>Integrate velocity to find displacement:</strong><br><br>Displacement is the integral of velocity with respect to time:\\begin{aligned} s &= \\int v\\,\\text{d}t \\cr &= \\int (9t^2 - 4t - 7)\\,\\text{d}t \\cr &= 3t^3 - 2t^2 - 7t + c \\end{aligned}",
+        "<strong>Apply the boundary condition:</strong><br><br>Substitute $t = 2$ and $s = 10$ into the expression:\\begin{aligned} &10 = 3(2^3) - 2(2^2) - 7(2) + c \\cr &10 = 24 - 8 - 14 + c \\cr &10 = 2 + c \\cr &c = 8 \\end{aligned}<br>Therefore, the displacement is:\\begin{aligned} s = 3t^3 - 2t^2 - 7t + 8 \\end{aligned}",
+        "Final Answer: $s = 3t^3 - 2t^2 - 7t + 8$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$s = 3t^3 - 2t^2 - 7t + 10$",
+            "feedback": "Do not assume that the constant of integration $c$ equals the given displacement $s = 10\\text{ m}$. That shortcut only works when $t = 0$; for $t = 2$, you must substitute $t$ into all integrated terms to solve for $c$."
+        },
+        {
+            "ans": "$s = 3t^3 - 2t^2 - 7t - 8$",
+            "feedback": "Check your rearrangement when solving $10 = 2 + c$. Subtracting $2$ from both sides gives $c = 10 - 2 = +8$, not $-8$."
+        },
+        {
+            "ans": "$s = 18t - 4$",
+            "feedback": "You have differentiated the velocity expression instead of integrating it. To find displacement from velocity, integrate $v$ with respect to $t$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Never Assume $c$ Equals the Given Position",
+        "content": "Students often assume the constant of integration $c$ equals the value of $s$ given in the question. While $c = s_0$ holds when initial conditions are given at $t = 0$, for any non-zero time such as $t = 2\\text{ s}$, you must substitute $t$ into all integrated terms before solving for $c$."
+    }
+},
+{
+    "id": "012182",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Differentiation and integration",
+        "Instantaneous acceleration",
+        "Displacement"
+    ],
+    "img": false,
+    "question": "A particle moves along a straight line so that its velocity $v\\text{ m s}^{-1}$ at time $t$ seconds ($t \\ge 0$) is given by:$$v = 12t^2 - 6t - 4$$When $t = 1\\text{ s}$, the displacement of the particle from a fixed origin $O$ is $3\\text{ m}$.<br><br><strong>(a)</strong> Find an expression for the displacement $s$ of the particle from $O$ at time $t$ seconds.<br><br><strong>(b)</strong> Find the acceleration of the particle when $t = 3\\text{ s}$.",
+    "steps": [
+        "<strong>(a) Find displacement $s$:</strong><br><br>Integrating velocity with respect to time:\\begin{aligned} s &= \\int (12t^2 - 6t - 4)\\,\\text{d}t \\cr &= 4t^3 - 3t^2 - 4t + c \\end{aligned}<br>Substitute $t = 1$ and $s = 3$:\\begin{aligned} &3 = 4(1^3) - 3(1^2) - 4(1) + c \\cr &3 = 4 - 3 - 4 + c \\cr &3 = -3 + c \\cr &c = 6 \\end{aligned}<br>Hence:\\begin{aligned} s = 4t^3 - 3t^2 - 4t + 6 \\end{aligned}",
+        "<strong>(b) Find acceleration when $t = 3\\text{ s}$:</strong><br><br>Acceleration is the derivative of velocity:\\begin{aligned} a &= \\dfrac{\\text{d}v}{\\text{d}t} \\cr &= \\dfrac{\\text{d}}{\\text{d}t}(12t^2 - 6t - 4) \\cr &= 24t - 6 \\end{aligned}<br>When $t = 3\\text{ s}$:\\begin{aligned} a(3) &= 24(3) - 6 \\cr &= 72 - 6 \\cr &= 66\\text{ m s}^{-2} \\end{aligned}",
+        "Final Answer: (a) $s = 4t^3 - 3t^2 - 4t + 6$, (b) $66\\text{ m s}^{-2}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $s = 4t^3 - 3t^2 - 4t$, (b) $66\\text{ m s}^{-2}$",
+            "feedback": "Remember to include the constant of integration $c$ and evaluate it using the condition $s(1) = 3$. Omitting $c$ implies the particle starts at the origin when $t = 0$."
+        },
+        {
+            "ans": "(a) $s = 4t^3 - 3t^2 - 4t + 6$, (b) $78\\text{ m s}^{-2}$",
+            "feedback": "Check the sign in the derivative: $\\frac{\\text{d}}{\\text{d}t}(-6t) = -6$, not $+6$. When $t = 3$, $a = 72 - 6 = 66\\text{ m s}^{-2}$."
+        },
+        {
+            "ans": "(a) $s = 4t^3 - 3t^2 - 4t - 6$, (b) $66\\text{ m s}^{-2}$",
+            "feedback": "Check your algebra when finding $c$: $3 = -3 + c \\implies c = 3 + 3 = +6$, not $-6$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Choose the Right Calculus Tool",
+        "content": "Keep your calculus operations distinct: finding displacement requires integration ($s = \\int v\\,\\text{d}t$), which introduces an unknown constant $c$. Finding acceleration requires differentiation ($a = \\frac{\\text{d}v}{\\text{d}t}$), which eliminates the constant term."
+    }
+},
+{
+    "id": "012183",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Fractional indices",
+        "Instantaneous rest",
+        "Maximum displacement"
+    ],
+    "img": false,
+    "question": "A particle moves in a straight line such that its velocity $v\\text{ m s}^{-1}$ at time $t$ seconds ($t \\ge 0$) is given by:$$v = 6\\sqrt{t} - 2t$$Initially, when $t = 0$, the particle is at a fixed origin $O$.<br><br><strong>(a)</strong> Find an expression for the displacement $s$ of the particle from $O$ at time $t$ seconds.<br><br><strong>(b)</strong> Find the non-zero value of $t$ when the particle is momentarily at rest, and calculate the displacement of the particle from $O$ at this instant.",
+    "steps": [
+        "<strong>(a) Find displacement $s$:</strong><br><br>Rewrite using index notation: $v = 6t^{1/2} - 2t$.\\begin{aligned} s &= \\int (6t^{1/2} - 2t)\\,\\text{d}t \\cr &= \\dfrac{6t^{3/2}}{3/2} - t^2 + c \\cr &= 4t^{3/2} - t^2 + c \\end{aligned}<br>Since $s = 0$ when $t = 0$, $c = 0$:\\begin{aligned} s &= 4t^{3/2} - t^2 \\cr &= 4t\\sqrt{t} - t^2 \\end{aligned}",
+        "<strong>(b) Instant of momentary rest:</strong><br><br>Set $v = 0$:\\begin{aligned} &6\\sqrt{t} - 2t = 0 \\cr &2\\sqrt{t}(3 - \\sqrt{t}) = 0 \\end{aligned}<br>For non-zero $t$:\\begin{aligned} \\sqrt{t} &= 3 \\cr t &= 9\\text{ s} \\end{aligned}<br>Displacement at $t = 9\\text{ s}$:\\begin{aligned} s(9) &= 4(9^{3/2}) - 9^2 \\cr &= 4(27) - 81 \\cr &= 108 - 81 \\cr &= 27\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $s = 4t\\sqrt{t} - t^2$, (b) $t = 9\\text{ s}$, $s = 27\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $s = 4t\\sqrt{t} - t^2$, (b) $t = 3\\text{ s}$, $s = 11.8\\text{ m}$",
+            "feedback": "From $\\sqrt{t} = 3$, square both sides to find $t$: $t = 3^2 = 9\\text{ s}$, not $3\\text{ s}$."
+        },
+        {
+            "ans": "(a) $s = 9t\\sqrt{t} - t^2$, (b) $t = 9\\text{ s}$, $s = 27\\text{ m}$",
+            "feedback": "When integrating $6t^{1/2}$, divide by the new index $3/2$ (multiply by $2/3$) to get $4t^{3/2}$. Multiplying by $3/2$ gives an incorrect coefficient of $9$."
+        },
+        {
+            "ans": "(a) $s = 4t\\sqrt{t} - t^2$, (b) $t = 9\\text{ s}$, $s = -27\\text{ m}$",
+            "feedback": "Check the sign of $s(9)$: $4(27) - 81 = 108 - 81 = +27\\text{ m}$, not $-27\\text{ m}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Fractional Indices in Integration",
+        "content": "When integrating $t^{1/2}$, divide by the new power $\\frac{3}{2}$, which is equivalent to multiplying by $\\frac{2}{3}$: $6 \\times \\frac{2}{3} = 4$. Also, note that $\\sqrt{t} = 3$ gives $t = 3^2 = 9\\text{ s}$, a step where students often accidentally write $t = 3$."
+    }
+},
+{
+    "id": "012184",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Double integration",
+        "Initial conditions",
+        "Roots of displacement"
+    ],
+    "img": false,
+    "question": "A particle $P$ moves along a straight line with acceleration $a\\text{ m s}^{-2}$ at time $t$ seconds ($t \\ge 0$) given by:$$a = 6t - 10$$At time $t = 0$, the velocity of $P$ is $8\\text{ m s}^{-1}$ and its displacement from a fixed origin $O$ is $-4\\text{ m}$.<br><br><strong>(a)</strong> Find an expression for the velocity $v$ of the particle at time $t$ seconds.<br><br><strong>(b)</strong> Find an expression for the displacement $s$ of the particle from $O$ at time $t$ seconds.<br><br><strong>(c)</strong> Find the values of $t$ when the particle passes through the origin $O$.",
+    "steps": [
+        "<strong>(a) Velocity expression:</strong><br><br>Integrating acceleration:\\begin{aligned} v &= \\int (6t - 10)\\,\\text{d}t \\cr &= 3t^2 - 10t + c_1 \\end{aligned}<br>Using initial condition $v(0) = 8$:\\begin{aligned} c_1 = 8 \\end{aligned}<br>Hence:\\begin{aligned} v = 3t^2 - 10t + 8 \\end{aligned}",
+        "<strong>(b) Displacement expression:</strong><br><br>Integrating velocity:\\begin{aligned} s &= \\int (3t^2 - 10t + 8)\\,\\text{d}t \\cr &= t^3 - 5t^2 + 8t + c_2 \\end{aligned}<br>Using initial condition $s(0) = -4$:\\begin{aligned} c_2 = -4 \\end{aligned}<br>Hence:\\begin{aligned} s = t^3 - 5t^2 + 8t - 4 \\end{aligned}",
+        "<strong>(c) Times passing through origin ($s = 0$):</strong><br><br>Set displacement to zero:\\begin{aligned} &t^3 - 5t^2 + 8t - 4 = 0 \\end{aligned}<br>Testing integer factors of $-4$, for $t = 1$:\\begin{aligned} 1^3 - 5(1^2) + 8(1) - 4 = 0 \\end{aligned}<br>Thus, $(t - 1)$ is a factor. Factorising the cubic:\\begin{aligned} &(t - 1)(t^2 - 4t + 4) = 0 \\cr &(t - 1)(t - 2)^2 = 0 \\end{aligned}<br>Therefore, the particle passes through the origin at $t = 1\\text{ s}$ and $t = 2\\text{ s}$.",
+        "Final Answer: (a) $v = 3t^2 - 10t + 8$, (b) $s = t^3 - 5t^2 + 8t - 4$, (c) $t = 1\\text{ s}$, $t = 2\\text{ s}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $v = 3t^2 - 10t + 8$, (b) $s = t^3 - 5t^2 + 8t - 4$, (c) $t = 1\\text{ s}$, $t = 4\\text{ s}$",
+            "feedback": "Check your factorisation of the quadratic factor $t^2 - 4t + 4$. It factors as $(t - 2)^2$, yielding the repeated root $t = 2\\text{ s}$, not $t = 4\\text{ s}$."
+        },
+        {
+            "ans": "(a) $v = 3t^2 - 10t + 8$, (b) $s = t^3 - 5t^2 + 8t$, (c) $t = 1\\text{ s}$, $t = 2\\text{ s}$",
+            "feedback": "Remember to include the initial displacement of $-4\\text{ m}$. Omitting $c_2 = -4$ alters the roots of the displacement function."
+        },
+        {
+            "ans": "(a) $v = 6t^2 - 10t + 8$, (b) $s = 2t^3 - 5t^2 + 8t - 4$, (c) $t = 1\\text{ s}$, $t = 2\\text{ s}$",
+            "feedback": "When integrating $6t$, remember to divide by $2$: $\\int 6t\\,\\text{d}t = 3t^2$, not $6t^2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Interpreting Repeated Roots",
+        "content": "At $t = 1\\text{ s}$, the particle crosses the origin with non-zero velocity. At $t = 2\\text{ s}$, we have a repeated root $(t - 2)^2 = 0$, meaning $s = 0$ and $\\frac{\\text{d}s}{\\text{d}t} = v = 0$ simultaneously. The particle touches the origin and instantaneously reverses direction without crossing it."
+    }
+},
+{
+    "id": "012185",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Reversing direction",
+        "Total distance vs displacement",
+        "Turning points"
+    ],
+    "img": false,
+    "question": "A particle moves in a horizontal straight line such that its velocity $v\\text{ m s}^{-1}$ at time $t$ seconds ($t \\ge 0$) is given by:$$v = 3t^2 - 12t + 9$$At time $t = 0$, the particle is at the origin $O$.<br><br><strong>(a)</strong> Find an expression for the displacement $s$ of the particle from $O$ at time $t$ seconds.<br><br><strong>(b)</strong> Find the two values of $t$ at which the particle is momentarily at rest.<br><br><strong>(c)</strong> Calculate the total distance travelled by the particle in the first $3$ seconds of its motion.",
+    "steps": [
+        "<strong>(a) Displacement expression:</strong><br><br>Integrating velocity:\\begin{aligned} s &= \\int (3t^2 - 12t + 9)\\,\\text{d}t \\cr &= t^3 - 6t^2 + 9t + c \\end{aligned}<br>Since $s(0) = 0$, $c = 0$:\\begin{aligned} s = t^3 - 6t^2 + 9t \\end{aligned}",
+        "<strong>(b) Times when momentarily at rest:</strong><br><br>Set $v = 0$:\\begin{aligned} &3t^2 - 12t + 9 = 0 \\cr &3(t^2 - 4t + 3) = 0 \\cr &3(t - 1)(t - 3) = 0 \\end{aligned}<br>The particle is momentarily at rest at $t = 1\\text{ s}$ and $t = 3\\text{ s}$.",
+        "<strong>(c) Total distance in first $3$ seconds:</strong><br><br>Evaluate displacement at key times:<br>• At $t = 0\\text{ s}$: $s(0) = 0\\text{ m}$<br>• At $t = 1\\text{ s}$: $s(1) = 1^3 - 6(1^2) + 9(1) = 4\\text{ m}$<br>• At $t = 3\\text{ s}$: $s(3) = 3^3 - 6(3^2) + 9(3) = 27 - 54 + 27 = 0\\text{ m}$<br><br>Calculate distance for each direction of motion:<br>• Forward motion ($0 \\le t \\le 1$): $|4 - 0| = 4\\text{ m}$<br>• Backward motion ($1 \\le t \\le 3$): $|0 - 4| = 4\\text{ m}$<br><br>Total distance travelled:\\begin{aligned} d &= 4 + 4 \\cr &= 8\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $s = t^3 - 6t^2 + 9t$, (b) $t = 1\\text{ s}$, $t = 3\\text{ s}$, (c) $8\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $s = t^3 - 6t^2 + 9t$, (b) $t = 1\\text{ s}$, $t = 3\\text{ s}$, (c) $0\\text{ m}$",
+            "feedback": "A value of $0\\text{ m}$ is the net displacement ($s(3) - s(0) = 0$). Distance is a scalar quantity measuring the total path length travelled, which is $4 + 4 = 8\\text{ m}$."
+        },
+        {
+            "ans": "(a) $s = t^3 - 6t^2 + 9t$, (b) $t = 1\\text{ s}$, $t = 3\\text{ s}$, (c) $4\\text{ m}$",
+            "feedback": "The value $4\\text{ m}$ only accounts for the forward travel up to the turning point at $t = 1\\text{ s}$. You must also add the distance travelled as the particle returns to the origin between $t = 1$ and $t = 3$."
+        },
+        {
+            "ans": "(a) $s = t^3 - 6t^2 + 9t$, (b) $t = 2\\text{ s}$, $t = 3\\text{ s}$, (c) $8\\text{ m}$",
+            "feedback": "Check your factorisation of $t^2 - 4t + 3$. The roots are $t = 1\\text{ s}$ and $t = 3\\text{ s}$, not $t = 2\\text{ s}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Distance is Not Equal to Displacement",
+        "content": "At $t = 3\\text{ s}$, the particle is back at the origin, so its displacement is $0\\text{ m}$. However, the question asks for total distance travelled. You must split the journey at each turning point where $v = 0$ (here, $t = 1\\text{ s}$) and sum the absolute distances travelled in each direction: $4\\text{ m} + 4\\text{ m} = 8\\text{ m}$."
+    }
 }
 
 ];
