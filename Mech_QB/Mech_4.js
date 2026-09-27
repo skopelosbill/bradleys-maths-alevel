@@ -1667,7 +1667,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(a) $p = 6$, $q = 4$, (b) $\\mathbf{F}_4 = (-12\\mathbf{i} - 8\\mathbf{j})\\text{ N}$, $|\\mathbf{F}_4| = 20.0\\text{ N}$",
-            "feedback": "To find the magnitude of a vector, use Pythagoras ($|\\mathbf{F}_4| = \\sqrt{(-12)^2 + (-8)^2} = \\sqrt{208} \\approx 14.4\\text{ N}$). Do not add the component magnitudes linearly."
+            "feedback": "To find the magnitude of a vector, use Pythagoras \\begin{aligned}|\\mathbf{F}_4|&= \\sqrt{(-12)^2 + (-8)^2} \\cr &= \\sqrt{208} \\cr & \\approx 14.4\\text{ N}\\end{aligned} Do not add the component magnitudes linearly."
         }
     ],
     "bradley_insight": {
@@ -1792,6 +1792,206 @@ window.ALEVEL_QUESTIONS = [
         "type": "deeper",
         "title": "The Head Teacher's Eye: Dividing by Fractional Mass",
         "content": "Dividing by a mass of $0.5\\text{ kg}$ is equivalent to doubling the force: $\\mathbf{a} = \\frac{\\mathbf{F}}{0.5} = 2\\mathbf{F}$. Also remember that 'speed' is a scalar quantity; never leave your answer as a vector $(24\\mathbf{i} + 18\\mathbf{j})$ when asked for speed."
+    }
+},
+{
+    "id": "012196",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Newton's Laws & Connected Bodies",
+    "subtopic": [
+        "Vertical motion",
+        "Lifts and cables",
+        "Normal reaction"
+    ],
+    "img": false,
+    "question": "A person of mass $70\\text{ kg}$ stands on the horizontal floor of a lift of mass $730\\text{ kg}$. The lift is suspended by a single light vertical cable and is moving upwards with constant acceleration. The tension in the cable is $8800\\text{ N}$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Determine the acceleration of the lift, giving your answer correct to two decimal places.<br><br><strong>(b)</strong> State whether the lift is speeding up, travelling at a constant speed, or slowing down.<br><br><strong>(c)</strong> Calculate the magnitude of the normal reaction force exerted by the floor of the lift on the person.",
+    "steps": [
+        "<strong>(a) Acceleration of the lift:</strong><br><br>Total mass of the system:\\begin{aligned} M &= 730 + 70 \\cr &= 800\\text{ kg} \\end{aligned}<br>Applying Newton's second law upwards:\\begin{aligned} &T - Mg = Ma \\cr &8800 - 800(9.8) = 800a \\cr &8800 - 7840 = 800a \\cr &960 = 800a \\cr &a = \\dfrac{960}{800} \\cr &a = 1.20\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Motion status:</strong><br><br>Because the lift is moving upwards and the acceleration is positive (directed upwards), the lift is speeding up.",
+        "<strong>(c) Normal reaction on the person:</strong><br><br>Applying Newton's second law to the person ($m = 70\\text{ kg}$):\\begin{aligned} &R - mg = ma \\cr &R - 70(9.8) = 70(1.20) \\cr &R - 686 = 84 \\cr &R = 686 + 84 \\cr &R = 770\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $a = 1.20\\text{ m s}^{-2}$, (b) Speeding up, (c) $R = 770\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $a = 1.20\\text{ m s}^{-2}$, (b) Speeding up, (c) $R = 686\\text{ N}$",
+            "feedback": "The normal reaction equals $mg$ only when the lift is stationary or at constant speed. Here, upward acceleration adds an inertial force: $R = m(g + a) = 770\\text{ N}$."
+        },
+        {
+            "ans": "(a) $a = 2.25\\text{ m s}^{-2}$, (b) Speeding up, (c) $R = 770\\text{ N}$",
+            "feedback": "Remember to include the passenger mass in the total system inertia ($M = 800\\text{ kg}$). Using only the lift mass ($730\\text{ kg}$) overestimates acceleration."
+        },
+        {
+            "ans": "(a) $a = 1.20\\text{ m s}^{-2}$, (b) Slowing down, (c) $R = 770\\text{ N}$",
+            "feedback": "Because the acceleration acts in the same direction as the upward motion, the speed increases."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: System First, Individual Body Second",
+        "content": "To find the cable tension or overall acceleration, treat the lift and passenger as a single combined body of mass $M = m_1 + m_2$. The normal reaction $R$ between the floor and passenger is an internal force that cancels out. Once you have $a$, isolate the passenger to find $R$."
+    }
+},
+{
+    "id": "012197",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Newton's Laws & Connected Bodies",
+    "subtopic": [
+        "Descending lifts",
+        "Deceleration",
+        "Apparent weight increase"
+    ],
+    "img": false,
+    "question": "A lift of mass $650\\text{ kg}$ carries a crate of mass $150\\text{ kg}$ resting on its horizontal floor. The lift is descending vertically and is brought to rest with a constant deceleration of magnitude $1.4\\text{ m s}^{-2}$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Calculate the tension in the lift cable while the lift is decelerating.<br><br><strong>(b)</strong> Calculate the magnitude of the normal reaction force exerted by the floor of the lift on the crate.<br><br><strong>(c)</strong> Explain briefly why the normal reaction force exerted by the floor on the crate is greater than the weight of the crate during this deceleration.",
+    "steps": [
+        "<strong>(a) Cable tension:</strong><br><br>Total mass of the system:\\begin{aligned} M &= 650 + 150 \\cr &= 800\\text{ kg} \\end{aligned}<br>A downward deceleration of $1.4\\text{ m s}^{-2}$ corresponds to an upward resultant acceleration of $a = 1.4\\text{ m s}^{-2}$.<br><br>Applying Newton's second law upwards:\\begin{aligned} &T - Mg = Ma \\cr &T - 800(9.8) = 800(1.4) \\cr &T - 7840 = 1120 \\cr &T = 7840 + 1120 \\cr &T = 8960\\text{ N} \\end{aligned}",
+        "<strong>(b) Normal reaction on the crate:</strong><br><br>Applying Newton's second law upwards to the crate ($m = 150\\text{ kg}$):\\begin{aligned} &R - mg = ma \\cr &R - 150(9.8) = 150(1.4) \\cr &R - 1470 = 210 \\cr &R = 1470 + 210 \\cr &R = 1680\\text{ N} \\end{aligned}",
+        "<strong>(c) Physical explanation:</strong><br><br>To decelerate while moving downwards, the net force must be directed upwards. Therefore, the upward normal reaction force from the floor must exceed the downward gravitational force (weight) of the crate ($R > mg$).",
+        "Final Answer: (a) $T = 8960\\text{ N}$, (b) $R = 1680\\text{ N}$, (c) Upward resultant force required to decelerate"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T = 6720\\text{ N}$, (b) $R = 1260\\text{ N}$, (c) Upward resultant force required to decelerate",
+            "feedback": "Decelerating while descending means the acceleration points upwards. The upward forces must exceed the weight, so you add $ma$ to $mg$, not subtract it."
+        },
+        {
+            "ans": "(a) $T = 8960\\text{ N}$, (b) $R = 1470\\text{ N}$, (c) Upward resultant force required to decelerate",
+            "feedback": "The normal reaction is not equal to static weight ($1470\\text{ N}$). During upward acceleration, $R = m(g + a) = 1680\\text{ N}$."
+        },
+        {
+            "ans": "(a) $T = 7840\\text{ N}$, (b) $R = 1680\\text{ N}$, (c) Upward resultant force required to decelerate",
+            "feedback": "The cable tension must exceed the total weight to produce upward deceleration: $T = 800(9.8 + 1.4) = 8960\\text{ N}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Direction of Deceleration",
+        "content": "Always identify the direction of the acceleration vector independently of the direction of motion. A descending object that is slowing down has an acceleration pointing upwards. This means upward forces ($T$ and $R$) must exceed the downward gravitational forces."
+    }
+},
+{
+    "id": "012198",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Newton's Laws & Connected Bodies",
+    "subtopic": [
+        "Stacked bodies in a lift",
+        "Internal contact forces",
+        "Downward acceleration"
+    ],
+    "img": false,
+    "question": "A lift of mass $500\\text{ kg}$ is descending with a constant downward acceleration of $2.2\\text{ m s}^{-2}$. Two parcels, $A$ and $B$, of mass $4\\text{ kg}$ and $6\\text{ kg}$ respectively, are placed on the horizontal floor of the lift such that parcel $A$ rests directly on top of parcel $B$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the tension in the lift cable.<br><br><strong>(b)</strong> Find the magnitude of the contact force exerted by parcel $B$ on parcel $A$.<br><br><strong>(c)</strong> Find the magnitude of the normal reaction force exerted by the floor of the lift on parcel $B$.",
+    "steps": [
+        "<strong>(a) Cable tension:</strong><br><br>Total mass of the system:\\begin{aligned} M &= 500 + 4 + 6 \\cr &= 510\\text{ kg} \\end{aligned}<br>Applying Newton's second law downwards ($a = 2.2\\text{ m s}^{-2}$):\\begin{aligned} &Mg - T = Ma \\cr &510(9.8) - T = 510(2.2) \\cr &4998 - T = 1122 \\cr &T = 4998 - 1122 \\cr &T = 3876\\text{ N} \\end{aligned}",
+        "<strong>(b) Contact force on parcel $A$:</strong><br><br>Considering parcel $A$ ($m = 4\\text{ kg}$) accelerating downwards:\\begin{aligned} &m_A g - C = m_A a \\cr &4(9.8) - C = 4(2.2) \\cr &39.2 - C = 8.8 \\cr &C = 39.2 - 8.8 \\cr &C = 30.4\\text{ N} \\end{aligned}",
+        "<strong>(c) Reaction of the floor on parcel $B$:</strong><br><br>Considering the combined stack ($A + B$, mass $10\\text{ kg}$) accelerating downwards:\\begin{aligned} &m_{\\text{stack}}g - R = m_{\\text{stack}}a \\cr &10(9.8) - R = 10(2.2) \\cr &98 - R = 22 \\cr &R = 98 - 22 \\cr &R = 76\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $T = 3876\\text{ N}$, (b) $C = 30.4\\text{ N}$, (c) $R = 76\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T = 3876\\text{ N}$, (b) $C = 39.2\\text{ N}$, (c) $R = 76\\text{ N}$",
+            "feedback": "Contact force $C$ is not equal to the static weight ($39.2\\text{ N}$). During downward acceleration, $C = m_A(g - a) = 30.4\\text{ N}$."
+        },
+        {
+            "ans": "(a) $T = 3876\\text{ N}$, (b) $C = 30.4\\text{ N}$, (c) $R = 45.6\\text{ N}$",
+            "feedback": "The floor must support both parcel $B$ and parcel $A$. Using only the mass of parcel $B$ ($6\\text{ kg}$) ignores the load of parcel $A$."
+        },
+        {
+            "ans": "(a) $T = 6120\\text{ N}$, (b) $C = 30.4\\text{ N}$, (c) $R = 76\\text{ N}$",
+            "feedback": "For downward acceleration, tension is less than weight: $T = M(g - a) = 3876\\text{ N}$, not $M(g + a)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Stacked Objects Share Acceleration",
+        "content": "For stacked objects inside a lift, every sub-system accelerates at the exact same rate. To find the contact force on the top object, isolate the top object alone ($C = m_A(g - a)$). To find the floor reaction, treat the combined stack as a single object of mass $m_A + m_B$."
+    }
+},
+{
+    "id": "012199",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Newton's Laws & Connected Bodies",
+    "subtopic": [
+        "Broken cable",
+        "Free fall under gravity",
+        "Apparent weightlessness"
+    ],
+    "img": false,
+    "question": "A person of mass $80\\text{ kg}$ stands on a set of bathroom scales (calibrated in Newtons) on the floor of a lift of mass $720\\text{ kg}$. The lift is moving vertically upwards with a constant speed of $4.0\\text{ m s}^{-1}$ when the supporting cable suddenly snaps.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$. Air resistance may be neglected.]</em><br><br><strong>(a)</strong> Describe the immediate motion of the lift and person immediately after the cable breaks.<br><br><strong>(b)</strong> State the reading on the bathroom scales immediately after the cable has snapped, and justify your answer.<br><br><strong>(c)</strong> Calculate the time taken for the lift to reach its maximum height after the cable breaks, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Motion immediately after cable break:</strong><br><br>Due to inertia, the lift and person continue to move upwards with decreasing speed, decelerating at $g = 9.8\\text{ m s}^{-2}$ under gravity alone (free fall).",
+        "<strong>(b) Reading on the scales:</strong><br><br>The reading on the scales is $0\\text{ N}$.<br><br>Because both the person and the scales accelerate downwards at $g$, there is no normal reaction force between them ($R = m(g - g) = 0\\text{ N}$), producing apparent weightlessness.",
+        "<strong>(c) Time to reach maximum height:</strong><br><br>Using $v = u + at$ with upwards as positive ($u = 4.0\\text{ m s}^{-1}$, $v = 0$, $a = -9.8\\text{ m s}^{-2}$):\\begin{aligned} 0 &= 4.0 - 9.8t \\cr 9.8t &= 4.0 \\cr t &= \\dfrac{4.0}{9.8} \\cr t &\\approx 0.408\\text{ s} \\end{aligned}",
+        "Final Answer: (a) Continues upwards under gravity, (b) $0\\text{ N}$ (free fall), (c) $0.408\\text{ s}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Immediately falls downwards, (b) $0\\text{ N}$ (free fall), (c) $0.408\\text{ s}$",
+            "feedback": "Objects in motion maintain their velocity unless acted on by an impulse. The lift had an upward speed of $4.0\\text{ m s}^{-1}$, so it continues upwards while decelerating before falling."
+        },
+        {
+            "ans": "(a) Continues upwards under gravity, (b) $784\\text{ N}$ (free fall), (c) $0.408\\text{ s}$",
+            "feedback": "Scales measure normal reaction force, not gravitational pull. In free fall, both the scale and the person accelerate at $g$, so the contact force is $0\\text{ N}$."
+        },
+        {
+            "ans": "(a) Continues upwards under gravity, (b) $0\\text{ N}$ (free fall), (c) $0.816\\text{ s}$",
+            "feedback": "Check the time calculation: $t = u / g = 4.0 / 9.8 \\approx 0.408\\text{ s}$. The value $0.816\\text{ s}$ is the total time to rise and return to the break point."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: What Scales Actually Measure",
+        "content": "Weighing scales never measure mass or gravitational force directly; they measure the normal reaction force $R$ pushing up on your feet. When an enclosure is in free fall ($a = g$ downwards), $R = m(g - g) = 0$, giving the sensation of apparent weightlessness."
+    }
+},
+{
+    "id": "012200",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics",
+    "topic": "Newton's Laws & Connected Bodies",
+    "subtopic": [
+        "Multi-stage motion",
+        "Variable floor reaction",
+        "Total vertical travel"
+    ],
+    "img": false,
+    "question": "A lift of mass $900\\text{ kg}$ carries a passenger of mass $75\\text{ kg}$. The lift makes an upward journey from rest to rest in three successive stages:<br><br>• <strong>Stage 1:</strong> Accelerates uniformly upwards from rest to a speed of $3.0\\text{ m s}^{-1}$ in $2.5\\text{ s}$.<br>• <strong>Stage 2:</strong> Travels upwards at a constant speed of $3.0\\text{ m s}^{-1}$ for $8.0\\text{ s}$.<br>• <strong>Stage 3:</strong> Decelerates uniformly to rest in $2.0\\text{ s}$.<br><br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the tension in the lift cable during Stage 1.<br><br><strong>(b)</strong> Find the magnitude of the force exerted by the passenger on the floor of the lift during Stage 3.<br><br><strong>(c)</strong> Calculate the total vertical height gained by the lift during the entire journey.",
+    "steps": [
+        "<strong>(a) Stage 1 cable tension:</strong><br><br>Total mass of system:\\begin{aligned} M &= 900 + 75 \\cr &= 975\\text{ kg} \\end{aligned}<br>Acceleration in Stage 1:\\begin{aligned} a_1 &= \\dfrac{3.0 - 0}{2.5} \\cr &= 1.2\\text{ m s}^{-2} \\end{aligned}<br>Applying Newton's second law upwards:\\begin{aligned} &T_1 - Mg = Ma_1 \\cr &T_1 = 975(9.8 + 1.2) \\cr &T_1 = 975(11) \\cr &T_1 = 10725\\text{ N} \\end{aligned}",
+        "<strong>(b) Stage 3 floor force:</strong><br><br>Deceleration in Stage 3:\\begin{aligned} a_3 &= \\dfrac{0 - 3.0}{2.0} \\cr &= -1.5\\text{ m s}^{-2} \\end{aligned}<br>For the passenger ($m = 75\\text{ kg}$) with upward acceleration $-1.5\\text{ m s}^{-2}$:\\begin{aligned} &R_3 - mg = ma_3 \\cr &R_3 = 75(9.8 - 1.5) \\cr &R_3 = 75(8.3) \\cr &R_3 = 622.5\\text{ N} \\end{aligned}<br>By Newton's third law, the force on the floor equals $622.5\\text{ N}$.",
+        "<strong>(c) Total vertical height gained:</strong><br><br>The height corresponds to the area of the $v$-$t$ graph (trapezium):<br>• Base $T = 2.5 + 8.0 + 2.0 = 12.5\\text{ s}$<br>• Top $t_{\\text{cruise}} = 8.0\\text{ s}$<br>• Height $v = 3.0\\text{ m s}^{-1}$<br><br>Area of trapezium:\\begin{aligned} H &= \\dfrac{1}{2}(8.0 + 12.5) \\times 3.0 \\cr &= 1.5 \\times 20.5 \\cr &= 30.75\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $T_1 = 10725\\text{ N}$, (b) $622.5\\text{ N}$, (c) $30.75\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T_1 = 10725\\text{ N}$, (b) $847.5\\text{ N}$, (c) $30.75\\text{ m}$",
+            "feedback": "During Stage 3, the lift decelerates while moving upwards, so $a_3 = -1.5\\text{ m s}^{-2}$. The normal reaction decreases: $R = 75(9.8 - 1.5) = 622.5\\text{ N}$, not $847.5\\text{ N}$."
+        },
+        {
+            "ans": "(a) $T_1 = 9900\\text{ N}$, (b) $622.5\\text{ N}$, (c) $30.75\\text{ m}$",
+            "feedback": "Remember to include the passenger mass in Stage 1 ($M = 975\\text{ kg}$). Using only $900\\text{ kg}$ underestimates the cable tension."
+        },
+        {
+            "ans": "(a) $T_1 = 10725\\text{ N}$, (b) $622.5\\text{ N}$, (c) $37.5\\text{ m}$",
+            "feedback": "The lift does not travel at $3.0\\text{ m s}^{-1}$ throughout. Account for the acceleration and deceleration ramps using the trapezium area rule."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Trapezium Rule for Multi-Stage Travel",
+        "content": "Rather than calculating the distance for each stage separately using SUVAT, sketch the velocity-time graph. A journey from rest to rest with a cruise phase forms a trapezium: $\\text{Distance} = \\frac{1}{2}(t_{\\text{cruise}} + t_{\\text{total}}) \\times v_{\\max}$, saving time and algebraic steps."
     }
 }
 
