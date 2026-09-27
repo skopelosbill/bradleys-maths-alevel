@@ -22,7 +22,7 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "(a) $AB = 2835\\text{ m}$, (b) $16\\text{ s}$, (c) $AC = 2955\\text{ m}$",
-            "feedback": "Because point $C$ lies between $A$ and $B$, the car has reversed back towards $A$. You must subtract the reverse distance: $AC = AB - BC = 2835 - 120 = 2715\\text{ m}$."
+            "feedback": "Because point $C$ lies between $A$ and $B$, the car has reversed back towards $A$. You must subtract the reverse distance: \\begin{aligned}AC & = AB - BC \\cr &= 2835 - 120 \\cr &= 2715\\text{ m}\\end{aligned}"
         },
         {
             "ans": "(a) $AB = 180\\text{ m}$, (b) $16\\text{ s}$, (c) $AC = 2715\\text{ m}$",
