@@ -1472,7 +1472,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(a) $a = 2.14\\text{ m s}^{-2}$, (b) $T = 10.7\\text{ N}$",
-            "feedback": "For block $P$ on the rough surface, $T - F = m_P a$. Therefore, $T = m_P a + F = 5(2.14) + 12.25 = 23.0\\text{ N}$. You must add friction to $m_P a$."
+            "feedback": "For block $P$ on the rough surface, $T - F = m_P a$. Therefore, \\begin{aligned}T &= m_P a + F \\cr &= 5(2.14) + 12.25 \\cr &= 23.0\\text{ N}\\end{aligned} You must add friction to $m_P a$."
         }
     ],
     "bradley_insight": {
@@ -1596,6 +1596,202 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Two Separate Strings Mean Two Different Tensions",
         "content": "Because block $C$ is pulled by two independent strings, never assume the tension is the same across the table. Always assign distinct variables $T_A$ and $T_B$. Adding all three equations together eliminates both tensions in one step, letting you find the system acceleration $a$ instantly."
+    }
+},
+{
+    "id": "012191",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics & Statics",
+    "topic": "Vectors & Forces",
+    "subtopic": [
+        "Resultant force",
+        "Vector magnitude",
+        "Direction angle"
+    ],
+    "img": false,
+    "question": "Three forces $\\mathbf{F}_1$, $\\mathbf{F}_2$, and $\\mathbf{F}_3$ act on a particle, where:\\begin{aligned} \\mathbf{F}_1 &= (3\\mathbf{i} - 11\\mathbf{j})\\text{ N} \\cr \\mathbf{F}_2 &= (-7\\mathbf{i} + 6\\mathbf{j})\\text{ N} \\cr \\mathbf{F}_3 &= (16\\mathbf{i} + k\\mathbf{j})\\text{ N} \\end{aligned}<br>and $k$ is a constant. The resultant of the three forces is $\\mathbf{R}$, and the magnitude of $\\mathbf{R}$ is $13\\text{ N}$.<br><br><strong>(a)</strong> Find the two possible values of the constant $k$.<br><br><strong>(b)</strong> For the larger of the two values of $k$, calculate the acute angle that $\\mathbf{R}$ makes with the unit vector $\\mathbf{i}$, giving your answer to the nearest $0.1^\\circ$.",
+    "steps": [
+        "<strong>(a) Find the two possible values of $k$:</strong><br><br>Add the three forces component-wise to find the resultant $\\mathbf{R}$:\\begin{aligned} \\mathbf{R} &= (3 - 7 + 16)\\mathbf{i} \\cr &\\quad + (-11 + 6 + k)\\mathbf{j} \\cr &= 12\\mathbf{i} + (k - 5)\\mathbf{j} \\end{aligned}<br>The magnitude of $\\mathbf{R}$ is given as $13\\text{ N}$:\\begin{aligned} &|\\mathbf{R}|^2 = 12^2 + (k - 5)^2 \\cr &13^2 = 144 + (k - 5)^2 \\cr &169 = 144 + (k - 5)^2 \\cr &(k - 5)^2 = 25 \\cr &k - 5 = \\pm 5 \\end{aligned}<br>Solving for $k$:\\begin{aligned} k = 10 \\quad\\text{or}\\quad k = 0 \\end{aligned}",
+        "<strong>(b) Angle with unit vector $\\mathbf{i}$:</strong><br><br>For the larger value $k = 10$, the resultant is $\\mathbf{R} = 12\\mathbf{i} + 5\\mathbf{j}$.<br><br>Let $\\theta$ be the angle $\\mathbf{R}$ makes with $\\mathbf{i}$:\\begin{aligned} \\tan\\theta &= \\dfrac{5}{12} \\cr \\theta &= \\arctan\\left(\\dfrac{5}{12}\\right) \\cr &\\approx 22.6^\\circ \\end{aligned}",
+        "Final Answer: (a) $k = 10$ or $k = 0$, (b) $22.6^\\circ$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $k = 10$ or $k = 0$, (b) $67.4^\\circ$",
+            "feedback": "This angle is measured relative to the vertical unit vector $\\mathbf{j}$ ($\\arctan(12/5) \\approx 67.4^\\circ$). The question asks for the angle with the unit vector $\\mathbf{i}$, which is $\\arctan(5/12) \\approx 22.6^\\circ$."
+        },
+        {
+            "ans": "(a) $k = 10$ only, (b) $22.6^\\circ$",
+            "feedback": "Remember to include both square roots when solving $(k - 5)^2 = 25$: $k - 5 = \\pm 5$, which gives $k = 10$ or $k = 0$."
+        },
+        {
+            "ans": "(a) $k = 8$ or $k = -2$, (b) $22.6^\\circ$",
+            "feedback": "Check the sum of the $\\mathbf{j}$-components: $-11 + 6 + k = k - 5$, not $k - 3$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Remember Both Roots",
+        "content": "When solving quadratic vector equations like $(k - 5)^2 = 25$, always take both square roots ($k - 5 = \\pm 5$). Forgetting the negative root loses marks. Also check whether the angle is requested with vector $\\mathbf{i}$ (horizontal) or $\\mathbf{j}$ (vertical)."
+    }
+},
+{
+    "id": "012192",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics & Statics",
+    "topic": "Vectors & Forces",
+    "subtopic": [
+        "Newton's second law in vector form",
+        "Equilibrium",
+        "Resolving forces"
+    ],
+    "img": false,
+    "question": "A particle of mass $4\\text{ kg}$ moves under the action of three constant coplanar forces:\\begin{aligned} \\mathbf{F}_1 &= (8\\mathbf{i} - 5\\mathbf{j})\\text{ N} \\cr \\mathbf{F}_2 &= (-2\\mathbf{i} + 9\\mathbf{j})\\text{ N} \\cr \\mathbf{F}_3 &= (p\\mathbf{i} + q\\mathbf{j})\\text{ N} \\end{aligned}<br>where $p$ and $q$ are constants. Under the action of these three forces, the particle accelerates with acceleration $\\mathbf{a} = (3\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Find the values of the constants $p$ and $q$.<br><br><strong>(b)</strong> A fourth constant force $\\mathbf{F}_4$ is now added so that the particle moves with constant velocity. Find $\\mathbf{F}_4$ in terms of $\\mathbf{i}$ and $\\mathbf{j}$, and calculate its magnitude, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Find $p$ and $q$:</strong><br><br>The resultant force is given by Newton's second law $\\mathbf{F} = m\\mathbf{a}$:\\begin{aligned} \\mathbf{F} &= 4(3\\mathbf{i} + 2\\mathbf{j}) \\cr &= 12\\mathbf{i} + 8\\mathbf{j} \\end{aligned}<br>Summing the three forces:\\begin{aligned} \\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3 &= (8 - 2 + p)\\mathbf{i} \\cr &\\quad + (-5 + 9 + q)\\mathbf{j} \\cr &= (6 + p)\\mathbf{i} + (4 + q)\\mathbf{j} \\end{aligned}<br>Equating components:\\begin{aligned} 6 + p &= 12 \\implies p = 6 \\cr 4 + q &= 8 \\implies q = 4 \\end{aligned}",
+        "<strong>(b) Find $\\mathbf{F}_4$ and its magnitude:</strong><br><br>For constant velocity, the acceleration is zero, so the resultant force must be zero:\\begin{aligned} &\\mathbf{F} + \\mathbf{F}_4 = \\mathbf{0} \\cr &(12\\mathbf{i} + 8\\mathbf{j}) + \\mathbf{F}_4 = \\mathbf{0} \\cr &\\mathbf{F}_4 = (-12\\mathbf{i} - 8\\mathbf{j})\\text{ N} \\end{aligned}<br>Magnitude of $\\mathbf{F}_4$:\\begin{aligned} |\\mathbf{F}_4| &= \\sqrt{(-12)^2 + (-8)^2} \\cr &= \\sqrt{144 + 64} \\cr &= \\sqrt{208} \\cr &\\approx 14.4\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $p = 6$, $q = 4$, (b) $\\mathbf{F}_4 = (-12\\mathbf{i} - 8\\mathbf{j})\\text{ N}$, $|\\mathbf{F}_4| = 14.4\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $p = 6$, $q = 4$, (b) $\\mathbf{F}_4 = (12\\mathbf{i} + 8\\mathbf{j})\\text{ N}$, $|\\mathbf{F}_4| = 14.4\\text{ N}$",
+            "feedback": "To bring the resultant force to zero, the balancing force must oppose the resultant: $\\mathbf{F}_4 = -\\mathbf{R} = (-12\\mathbf{i} - 8\\mathbf{j})\\text{ N}$."
+        },
+        {
+            "ans": "(a) $p = -3$, $q = -7$, (b) $\\mathbf{F}_4 = (-12\\mathbf{i} - 8\\mathbf{j})\\text{ N}$, $|\\mathbf{F}_4| = 14.4\\text{ N}$",
+            "feedback": "Remember to multiply acceleration by the mass ($m = 4\\text{ kg}$) when applying $\\mathbf{F} = m\\mathbf{a}$. Equating the forces directly to $\\mathbf{a}$ neglects the mass."
+        },
+        {
+            "ans": "(a) $p = 6$, $q = 4$, (b) $\\mathbf{F}_4 = (-12\\mathbf{i} - 8\\mathbf{j})\\text{ N}$, $|\\mathbf{F}_4| = 20.0\\text{ N}$",
+            "feedback": "To find the magnitude of a vector, use Pythagoras ($|\\mathbf{F}_4| = \\sqrt{(-12)^2 + (-8)^2} = \\sqrt{208} \\approx 14.4\\text{ N}$). Do not add the component magnitudes linearly."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Constant Velocity Means Zero Net Force",
+        "content": "A classic exam keyword is 'constant velocity'. By Newton's first law, constant velocity means zero acceleration ($\\mathbf{a} = \\mathbf{0}$), which in turn means the vector sum of all forces must be zero ($\\sum \\mathbf{F} = \\mathbf{0}$). The added force $\\mathbf{F}_4$ is simply the exact negative of the existing resultant."
+    }
+},
+{
+    "id": "012193",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics & Statics",
+    "topic": "Vectors & Forces",
+    "subtopic": [
+        "Resultant force",
+        "Acceleration magnitude",
+        "Bearings"
+    ],
+    "img": false,
+    "question": "Two forces, $\\mathbf{F}_1$ and $\\mathbf{F}_2$, act on a body of mass $2.5\\text{ kg}$ on a smooth horizontal plane, where:\\begin{aligned} \\mathbf{F}_1 &= (14\\mathbf{i} - 6\\mathbf{j})\\text{ N} \\cr \\mathbf{F}_2 &= (-6\\mathbf{i} + 21\\mathbf{j})\\text{ N} \\end{aligned}<br>The unit vectors $\\mathbf{i}$ and $\\mathbf{j}$ point due East and due North respectively.<br><br><strong>(a)</strong> Find the magnitude of the resultant force acting on the body, and hence find the magnitude of the acceleration of the body.<br><br><strong>(b)</strong> Calculate the direction of the resultant force as a three-figure bearing, giving your answer to the nearest degree.",
+    "steps": [
+        "<strong>(a) Resultant force and acceleration:</strong><br><br>Resultant force $\\mathbf{R}$:\\begin{aligned} \\mathbf{R} &= \\mathbf{F}_1 + \\mathbf{F}_2 \\cr &= (14 - 6)\\mathbf{i} + (-6 + 21)\\mathbf{j} \\cr &= 8\\mathbf{i} + 15\\mathbf{j}\\text{ N} \\end{aligned}<br>Magnitude of $\\mathbf{R}$:\\begin{aligned} |\\mathbf{R}| &= \\sqrt{8^2 + 15^2} \\cr &= \\sqrt{64 + 225} \\cr &= \\sqrt{289} \\cr &= 17\\text{ N} \\end{aligned}<br>Acceleration magnitude:\\begin{aligned} a &= \\dfrac{|\\mathbf{R}|}{m} \\cr &= \\dfrac{17}{2.5} \\cr &= 6.8\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Bearing of the resultant force:</strong><br><br>Since the East component is $+8$ and the North component is $+15$, the force points into the North-East quadrant.<br><br>Angle $\\theta$ clockwise from North:\\begin{aligned} \\tan\\theta &= \\dfrac{\\text{East component}}{\\text{North component}} \\cr &= \\dfrac{8}{15} \\cr \\theta &= \\arctan\\left(\\dfrac{8}{15}\\right) \\cr &\\approx 28.1^\\circ \\end{aligned}<br>Expressed as a three-figure bearing to the nearest degree: $028^\\circ$.",
+        "Final Answer: (a) $|\\mathbf{R}| = 17\\text{ N}$, $a = 6.8\\text{ m s}^{-2}$, (b) $028^\\circ$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $|\\mathbf{R}| = 17\\text{ N}$, $a = 6.8\\text{ m s}^{-2}$, (b) $062^\\circ$",
+            "feedback": "This angle is measured North of East ($\\arctan(15/8) \\approx 62^\\circ$). Bearings are measured clockwise from North, giving $90^\\circ - 62^\\circ = 028^\\circ$."
+        },
+        {
+            "ans": "(a) $|\\mathbf{R}| = 23\\text{ N}$, $a = 9.2\\text{ m s}^{-2}$, (b) $028^\\circ$",
+            "feedback": "Use Pythagoras to calculate the magnitude of perpendicular vector components: $\\sqrt{8^2 + 15^2} = 17\\text{ N}$, rather than adding $8 + 15 = 23\\text{ N}$."
+        },
+        {
+            "ans": "(a) $|\\mathbf{R}| = 17\\text{ N}$, $a = 42.5\\text{ m s}^{-2}$, (b) $028^\\circ$",
+            "feedback": "To find acceleration from force, divide by mass ($a = F/m = 17 / 2.5 = 6.8\\text{ m s}^{-2}$). Multiplying by mass gives $42.5\\text{ m s}^{-2}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Bearings are Measured from North",
+        "content": "A common error on vector mechanics questions is calculating $\\arctan(y/x) = \\arctan(15/8) = 61.9^\\circ$, which gives the angle measured from East. Bearings must always be measured clockwise from North ($y$-axis), so the angle is $\\arctan(x/y) = \\arctan(8/15) \\approx 28^\\circ$, written with three figures as $028^\\circ$."
+    }
+},
+{
+    "id": "012194",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics & Statics",
+    "topic": "Vectors & Forces",
+    "subtopic": [
+        "Parallel vectors",
+        "Vector magnitude",
+        "Unknown components"
+    ],
+    "img": false,
+    "question": "Three forces act on a particle:\\begin{aligned} \\mathbf{F}_1 &= (5\\mathbf{i} + 2\\mathbf{j})\\text{ N} \\cr \\mathbf{F}_2 &= (-8\\mathbf{i} + 7\\mathbf{j})\\text{ N} \\cr \\mathbf{F}_3 &= (p\\mathbf{i} - 3\\mathbf{j})\\text{ N} \\end{aligned}<br>where $p$ is a constant. The resultant of these three forces is denoted by $\\mathbf{R}$.<br><br><strong>(a)</strong> Given that $\\mathbf{R}$ acts parallel to the vector $(2\\mathbf{i} + 3\\mathbf{j})$, find the value of $p$.<br><br><strong>(b)</strong> Given instead that the magnitude of $\\mathbf{R}$ is $10\\text{ N}$ and the $\\mathbf{i}$-component of $\\mathbf{R}$ is strictly positive, find the value of $p$.",
+    "steps": [
+        "<strong>(a) Parallel resultant:</strong><br><br>Sum the forces to find $\\mathbf{R}$:\\begin{aligned} \\mathbf{R} &= (5 - 8 + p)\\mathbf{i} \\cr &\\quad + (2 + 7 - 3)\\mathbf{j} \\cr &= (p - 3)\\mathbf{i} + 6\\mathbf{j} \\end{aligned}<br>If $\\mathbf{R}$ is parallel to $(2\\mathbf{i} + 3\\mathbf{j})$, the ratio of components must be equal:\\begin{aligned} \\dfrac{p - 3}{6} &= \\dfrac{2}{3} \\cr 3(p - 3) &= 12 \\cr p - 3 &= 4 \\cr p &= 7 \\end{aligned}",
+        "<strong>(b) Magnitude condition:</strong><br><br>The magnitude of $\\mathbf{R}$ is $10\\text{ N}$:\\begin{aligned} &|\\mathbf{R}|^2 = (p - 3)^2 + 6^2 \\cr &10^2 = (p - 3)^2 + 36 \\cr &100 = (p - 3)^2 + 36 \\cr &(p - 3)^2 = 64 \\cr &p - 3 = \\pm 8 \\end{aligned}<br>Since the $\\mathbf{i}$-component ($p - 3$) is strictly positive, we take $+8$:\\begin{aligned} &p - 3 = 8 \\cr &p = 11 \\end{aligned}",
+        "Final Answer: (a) $p = 7$, (b) $p = 11$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $p = 7$, (b) $p = -5$ or $p = 11$",
+            "feedback": "Note the condition that the $\\mathbf{i}$-component must be strictly positive. Choosing $p = -5$ gives $\\mathbf{i}$-component $-5 - 3 = -8$, which violates this constraint."
+        },
+        {
+            "ans": "(a) $p = 4$, (b) $p = 11$",
+            "feedback": "Remember to include the constant term in the $\\mathbf{i}$-component ($5 - 8 + p = p - 3$). Solving $p / 6 = 2/3$ ignores the $-3$."
+        },
+        {
+            "ans": "(a) $p = 7$, (b) $p = 7$",
+            "feedback": "Check your calculation when subtracting $36$ from $100$: $100 - 36 = 64$, giving $p - 3 = \\pm 8 \\implies p = 11$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Parallel Vectors and Component Ratios",
+        "content": "When two 2D vectors are parallel, their components are in direct proportion: $\\frac{R_x}{V_x} = \\frac{R_y}{V_y}$. Cross-multiplying gives a simple linear equation that eliminates the need for vector scaling parameters."
+    }
+},
+{
+    "id": "012195",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "AS",
+    "major_area": "Dynamics & Statics",
+    "topic": "Vectors & Forces",
+    "subtopic": [
+        "2D constant acceleration",
+        "Speed from velocity vector",
+        "Position vector"
+    ],
+    "img": false,
+    "question": "A particle $P$ of mass $0.5\\text{ kg}$ is initially at rest at the origin $O$. Two constant forces, $\\mathbf{F}_1 = (6\\mathbf{i} - 2\\mathbf{j})\\text{ N}$ and $\\mathbf{F}_2 = (-2\\mathbf{i} + 5\\mathbf{j})\\text{ N}$, act simultaneously on $P$.<br><br><strong>(a)</strong> Find the acceleration vector $\\mathbf{a}$ of the particle.<br><br><strong>(b)</strong> Find the speed of the particle when $t = 3\\text{ s}$.<br><br><strong>(c)</strong> Find the position vector $\\mathbf{r}$ of the particle from $O$ when $t = 4\\text{ s}$.",
+    "steps": [
+        "<strong>(a) Acceleration vector $\\mathbf{a}$:</strong><br><br>Calculate the resultant force $\\mathbf{F}$:\\begin{aligned} \\mathbf{F} &= \\mathbf{F}_1 + \\mathbf{F}_2 \\cr &= (6 - 2)\\mathbf{i} + (-2 + 5)\\mathbf{j} \\cr &= (4\\mathbf{i} + 3\\mathbf{j})\\text{ N} \\end{aligned}<br>Applying $\\mathbf{a} = \\dfrac{\\mathbf{F}}{m}$ with $m = 0.5\\text{ kg}$:\\begin{aligned} \\mathbf{a} &= \\dfrac{4\\mathbf{i} + 3\\mathbf{j}}{0.5} \\cr &= (8\\mathbf{i} + 6\\mathbf{j})\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Speed when $t = 3\\text{ s}$:</strong><br><br>Velocity vector with $\\mathbf{u} = \\mathbf{0}$:\\begin{aligned} \\mathbf{v}(3) &= \\mathbf{a}t \\cr &= (8\\mathbf{i} + 6\\mathbf{j}) \\times 3 \\cr &= (24\\mathbf{i} + 18\\mathbf{j})\\text{ m s}^{-1} \\end{aligned}<br>Speed is the magnitude of velocity:\\begin{aligned} |\\mathbf{v}| &= \\sqrt{24^2 + 18^2} \\cr &= \\sqrt{576 + 324} \\cr &= \\sqrt{900} \\cr &= 30\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(c) Position vector $\\mathbf{r}$ when $t = 4\\text{ s}$:</strong><br><br>Using $\\mathbf{r} = \\dfrac{1}{2}\\mathbf{a}t^2$ with $t = 4\\text{ s}$:\\begin{aligned} \\mathbf{r}(4) &= \\dfrac{1}{2}(8\\mathbf{i} + 6\\mathbf{j})(4^2) \\cr &= \\dfrac{1}{2}(8\\mathbf{i} + 6\\mathbf{j})(16) \\cr &= 8(8\\mathbf{i} + 6\\mathbf{j}) \\cr &= (64\\mathbf{i} + 48\\mathbf{j})\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $\\mathbf{a} = (8\\mathbf{i} + 6\\mathbf{j})\\text{ m s}^{-2}$, (b) $30\\text{ m s}^{-1}$, (c) $\\mathbf{r} = (64\\mathbf{i} + 48\\mathbf{j})\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\mathbf{a} = (2\\mathbf{i} + 1.5\\mathbf{j})\\text{ m s}^{-2}$, (b) $7.5\\text{ m s}^{-1}$, (c) $\\mathbf{r} = (16\\mathbf{i} + 12\\mathbf{j})\\text{ m}$",
+            "feedback": "Dividing by $m = 0.5\\text{ kg}$ doubles the components: $\\mathbf{a} = \\mathbf{F} / 0.5 = 2\\mathbf{F}$. Multiplying by $0.5$ halves the acceleration."
+        },
+        {
+            "ans": "(a) $\\mathbf{a} = (8\\mathbf{i} + 6\\mathbf{j})\\text{ m s}^{-2}$, (b) $42\\text{ m s}^{-1}$, (c) $\\mathbf{r} = (64\\mathbf{i} + 48\\mathbf{j})\\text{ m}$",
+            "feedback": "Speed is the scalar magnitude of the velocity vector: $\\sqrt{24^2 + 18^2} = 30\\text{ m s}^{-1}$. Do not add the vector components linearly ($24 + 18 = 42$)."
+        },
+        {
+            "ans": "(a) $\\mathbf{a} = (8\\mathbf{i} + 6\\mathbf{j})\\text{ m s}^{-2}$, (b) $30\\text{ m s}^{-1}$, (c) $\\mathbf{r} = (128\\mathbf{i} + 96\\mathbf{j})\\text{ m}$",
+            "feedback": "Remember the factor of $\\frac{1}{2}$ in $\\mathbf{r} = \\frac{1}{2}\\mathbf{a}t^2$. Neglecting this factor gives twice the correct displacement."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Dividing by Fractional Mass",
+        "content": "Dividing by a mass of $0.5\\text{ kg}$ is equivalent to doubling the force: $\\mathbf{a} = \\frac{\\mathbf{F}}{0.5} = 2\\mathbf{F}$. Also remember that 'speed' is a scalar quantity; never leave your answer as a vector $(24\\mathbf{i} + 18\\mathbf{j})$ when asked for speed."
     }
 }
 
