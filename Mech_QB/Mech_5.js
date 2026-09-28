@@ -992,5 +992,203 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Energy Check for Impact Speed",
         "content": "To verify the impact speed in part (d) without having to calculate individual velocity components, apply Conservation of Mechanical Energy: \\begin{aligned}\\frac{1}{2}mv^2 &= \\frac{1}{2}mu^2 + mgh \\cr \\implies v & = \\sqrt{u^2 + 2gh}\\end{aligned} Substituting $u = 24.5\\text{ m s}^{-1},$ $g = 9.8\\text{ m s}^{-2}$, and $h = 49\\text{ m}$ gives \\begin{aligned}v & = \\sqrt{24.5^2 + 2(9.8)(49)}\\cr & = \\sqrt{600.25 + 960.4}\\cr & = \\sqrt{1560.65}\\cr & \\approx 39.5\\text{ m s}^{-1}\\end{aligned} Notice that the final speed depends solely on the initial speed and vertical drop, regardless of the angle of projection!"
     }
+},
+{
+    "id": "012226",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Vectors & Newton's Second Law",
+    "subtopic": [
+        "Newton's Second Law in 3D",
+        "Constant Acceleration Kinematics"
+    ],
+    "img": false,
+    "question": "A particle $P$ of mass $2\\text{ kg}$ is acted upon by a constant force $\\mathbf{F} = (6\\mathbf{i} - 12\\mathbf{j} + 4\\mathbf{k})\\text{ N}$, where $\\mathbf{i}$, $\\mathbf{j}$, and $\\mathbf{k}$ are mutually perpendicular unit vectors.<br><br><strong>(a)</strong> Calculate the magnitude of the acceleration of $P$.<br><br><strong>(b)</strong> At time $t = 0\\text{ s}$, the velocity of $P$ is $\\mathbf{u} = (-4\\mathbf{i} + 5\\mathbf{j} - 3\\mathbf{k})\\text{ m s}^{-1}$ and its position vector relative to a fixed origin $O$ is $\\mathbf{r}_0 = (7\\mathbf{i} - 3\\mathbf{j} + 8\\mathbf{k})\\text{ m}$.<br><br>Find:<br>(i) the velocity vector of $P$ when $t = 2\\text{ s}$,<br>(ii) the position vector of $P$ when $t = 2\\text{ s}$,<br>(iii) the distance of $P$ from the origin $O$ when $t = 2\\text{ s}$, giving your answer to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Find acceleration vector and magnitude:</strong><br><br>Using Newton's Second Law $\\mathbf{F} = m\\mathbf{a}$:\begin{aligned} \\mathbf{a} &= \\dfrac{1}{2}(6\\mathbf{i} - 12\\mathbf{j} + 4\\mathbf{k}) \cr &= (3\\mathbf{i} - 6\\mathbf{j} + 2\\mathbf{k})\\text{ m s}^{-2} \end{aligned}The magnitude of the acceleration is:\begin{aligned} |\\mathbf{a}| &= \\sqrt{3^2 + (-6)^2 + 2^2} \cr &= \\sqrt{9 + 36 + 4} \cr &= \\sqrt{49} \cr &= 7\\text{ m s}^{-2} \end{aligned}",
+        "<strong>(b)(i) Velocity vector at t = 2 s:</strong><br><br>Using $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$:\begin{aligned} \\mathbf{v} &= (-4\\mathbf{i} + 5\\mathbf{j} - 3\\mathbf{k}) \cr &\qquad + 2(3\\mathbf{i} - 6\\mathbf{j} + 2\\mathbf{k}) \cr &= (-4 + 6)\\mathbf{i} \cr &\qquad + (5 - 12)\\mathbf{j} \cr &\qquad + (-3 + 4)\\mathbf{k} \cr &= (2\\mathbf{i} - 7\\mathbf{j} + \\mathbf{k})\\text{ m s}^{-1} \end{aligned}",
+        "<strong>(b)(ii) Position vector at t = 2 s:</strong><br><br>Using $\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{u}t + \\dfrac{1}{2}\\mathbf{a}t^2$:\begin{aligned} \\mathbf{r} &= (7\\mathbf{i} - 3\\mathbf{j} + 8\\mathbf{k}) \cr &\qquad + 2(-4\\mathbf{i} + 5\\mathbf{j} - 3\\mathbf{k}) \cr &\qquad + \\dfrac{1}{2}(2^2)(3\\mathbf{i} - 6\\mathbf{j} + 2\\mathbf{k}) \cr &= (7\\mathbf{i} - 3\\mathbf{j} + 8\\mathbf{k}) \cr &\qquad + (-8\\mathbf{i} + 10\\mathbf{j} - 6\\mathbf{k}) \cr &\qquad + (6\\mathbf{i} - 12\\mathbf{j} + 4\\mathbf{k}) \cr &= (5\\mathbf{i} - 5\\mathbf{j} + 6\\mathbf{k})\\text{ m} \end{aligned}",
+        "<strong>(b)(iii) Distance from origin:</strong><br><br>The distance from $O$ is the magnitude of the position vector:\begin{aligned} |\\mathbf{r}| &= \\sqrt{5^2 + (-5)^2 + 6^2} \cr &= \\sqrt{25 + 25 + 36} \cr &= \\sqrt{86} \cr &\approx 9.27\\text{ m} \end{aligned}",
+        "Final Answer: (a) $7\\text{ m s}^{-2}$, (b)(i) $(2\\mathbf{i} - 7\\mathbf{j} + \\mathbf{k})\\text{ m s}^{-1}$, (ii) $(5\\mathbf{i} - 5\\mathbf{j} + 6\\mathbf{k})\\text{ m}$, (iii) $9.27\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $14\\text{ m s}^{-2}$, (b)(i) $(2\\mathbf{i} - 7\\mathbf{j} + \\mathbf{k})\\text{ m s}^{-1}$, (ii) $(5\\mathbf{i} - 5\\mathbf{j} + 6\\mathbf{k})\\text{ m}$, (iii) $9.27\\text{ m}$",
+            "feedback": "In part (a), you calculated the magnitude of the force $|\\mathbf{F}| = 14\\text{ N}$ instead of dividing by the mass $m = 2\\text{ kg}$ to obtain the acceleration magnitude."
+        },
+        {
+            "ans": "(a) $7\\text{ m s}^{-2}$, (b)(i) $(2\\mathbf{i} - 7\\mathbf{j} + \\mathbf{k})\\text{ m s}^{-1}$, (ii) $(11\\mathbf{i} - 11\\mathbf{j} + 10\\mathbf{k})\\text{ m}$, (iii) $18.5\\text{ m}$",
+            "feedback": "In part (b)(ii), you omitted the factor of $\\frac{1}{2}$ in the $\\frac{1}{2}\\mathbf{a}t^2$ term, using $\\mathbf{a}t^2$ instead."
+        },
+        {
+            "ans": "(a) $7\\text{ m s}^{-2}$, (b)(i) $(2\\mathbf{i} - 7\\mathbf{j} + \\mathbf{k})\\text{ m s}^{-1}$, (ii) $(-2\\mathbf{i} - 2\\mathbf{j} - 2\\mathbf{k})\\text{ m}$, (iii) $3.46\\text{ m}$",
+            "feedback": "In part (b)(ii), you forgot to add the initial position vector $\\mathbf{r}_0$, calculating the net displacement from $t = 0$ rather than the absolute position vector relative to the origin."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Displacements vs Position Vectors",
+        "content": "Always be mindful of the difference between displacement and position. The standard formula $\\mathbf{s} = \\mathbf{u}t + \\frac{1}{2}\\mathbf{a}t^2$ gives the displacement vector from the particle's starting position. To obtain the position vector $\\mathbf{r}$ relative to the fixed origin $O$, you must always add the initial position vector: $\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{s}$. Missing out $\\mathbf{r}_0$ is one of the most frequent marks dropped in 3D mechanics questions."
+    }
+},
+{
+    "id": "012227",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Vectors & Newton's Second Law",
+    "subtopic": [
+        "Resultant Force",
+        "Unknown Components"
+    ],
+    "img": false,
+    "question": "A particle of mass $0.5\\text{ kg}$ is acted upon by two constant forces:$$\\mathbf{F}_1 = (3\\mathbf{i} - 5\\mathbf{j} + 2\\mathbf{k})\\text{ N}$$$$\\mathbf{F}_2 = (p\\mathbf{i} + 6\\mathbf{j} + q\\mathbf{k})\\text{ N}$$where $p$ and $q$ are constants.<br><br>The resultant force produces an acceleration in the direction of the vector $(2\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k})$ with magnitude $6\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Find the values of the constants $p$ and $q$.<br><br><strong>(b)</strong> The particle starts from rest at the point with position vector $(4\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k})\\text{ m}$ relative to a fixed origin $O$.<br><br>Find:<br>(i) the time taken for the particle to reach a speed of $18\\text{ m s}^{-1}$,<br>(ii) the position vector of the particle at this instant.",
+    "steps": [
+        "<strong>(a) Determine acceleration vector and unknown force components:</strong><br><br>Let the direction vector be $\\mathbf{d} = 2\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k}$.<br><br>Its magnitude is:\begin{aligned} |\\mathbf{d}| &= \\sqrt{2^2 + 1^2 + (-2)^2} \cr &= \\sqrt{9} \cr &= 3 \end{aligned}The unit vector in this direction is $\\frac{1}{3}(2\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k})$.<br><br>Since the acceleration has magnitude $6\\text{ m s}^{-2}$:\begin{aligned} \\mathbf{a} &= 6 \\times \\dfrac{1}{3}(2\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k}) \cr &= (4\\mathbf{i} + 2\\mathbf{j} - 4\\mathbf{k})\\text{ m s}^{-2} \end{aligned}The resultant force is $\\mathbf{R} = m\\mathbf{a}$:\begin{aligned} \\mathbf{R} &= 0.5(4\\mathbf{i} + 2\\mathbf{j} - 4\\mathbf{k}) \cr &= (2\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k})\\text{ N} \end{aligned}Summing the forces $\\mathbf{F}_1 + \\mathbf{F}_2$:\begin{aligned} \\mathbf{R} &= (3 + p)\\mathbf{i} + (-5 + 6)\\mathbf{j} \cr &\qquad + (2 + q)\\mathbf{k} \cr &= (3 + p)\\mathbf{i} + \\mathbf{j} + (2 + q)\\mathbf{k} \end{aligned}Equating components:\begin{aligned} 3 + p &= 2 \\implies p = -1 \cr 2 + q &= -2 \\implies q = -4 \end{aligned}",
+        "<strong>(b)(i) Time to reach speed of 18 m s⁻¹:</strong><br><br>Since acceleration is constant and the particle starts from rest ($u = 0$):\begin{aligned} v &= u + at \cr 18 &= 0 + 6t \cr t &= 3\\text{ s} \end{aligned}",
+        "<strong>(b)(ii) Position vector at t = 3 s:</strong><br><br>Using $\\mathbf{r} = \\mathbf{r}_0 + \\dfrac{1}{2}\\mathbf{a}t^2$:\begin{aligned} \\mathbf{r} &= (4\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k}) \cr &\qquad + \\dfrac{1}{2}(3^2)(4\\mathbf{i} + 2\\mathbf{j} - 4\\mathbf{k}) \cr &= (4\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k}) \cr &\qquad + 4.5(4\\mathbf{i} + 2\\mathbf{j} - 4\\mathbf{k}) \cr &= (4\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k}) \cr &\qquad + (18\\mathbf{i} + 9\\mathbf{j} - 18\\mathbf{k}) \cr &= (22\\mathbf{i} + 8\\mathbf{j} - 15\\mathbf{k})\\text{ m} \end{aligned}",
+        "Final Answer: (a) $p = -1$, $q = -4$, (b)(i) $3\\text{ s}$, (ii) $(22\\mathbf{i} + 8\\mathbf{j} - 15\\mathbf{k})\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $p = 1$, $q = 4$, (b)(i) $3\\text{ s}$, (ii) $(22\\mathbf{i} + 8\\mathbf{j} - 15\\mathbf{k})\\text{ m}$",
+            "feedback": "In part (a), you made sign errors when equating components, solving $3 + p = 4$ and $2 + q = 6$ without dividing the acceleration by $m$."
+        },
+        {
+            "ans": "(a) $p = -1$, $q = -4$, (b)(i) $3\\text{ s}$, (ii) $(18\\mathbf{i} + 9\\mathbf{j} - 18\\mathbf{k})\\text{ m}$",
+            "feedback": "In part (b)(ii), you computed the displacement from rest $\\frac{1}{2}\\mathbf{a}t^2$ but forgot to add the initial position vector $\\mathbf{r}_0$."
+        },
+        {
+            "ans": "(a) $p = -1$, $q = -4$, (b)(i) $4.5\\text{ s}$, (ii) $(44.5\\mathbf{i} + 19.3\\mathbf{j} - 37.5\\mathbf{k})\\text{ m}$",
+            "feedback": "In part (b)(i), you used $a = 4\\text{ m s}^{-2}$ (the $\\mathbf{i}$-component of acceleration) instead of the total magnitude $a = 6\\text{ m s}^{-2}$ to determine the elapsed time."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Normalising Direction Vectors",
+        "content": "When a force or acceleration is given in the direction of a specified vector $\\mathbf{d}$, never multiply the scalar magnitude directly by $\\mathbf{d}$! You must first convert $\\mathbf{d}$ into a unit vector $\\hat{\\mathbf{d}} = \\frac{\\mathbf{d}}{|\\mathbf{d}|}$. Here, $|\\mathbf{d}| = \\sqrt{2^2 + 1^2 + (-2)^2} = 3$, so the unit vector is $\\frac{1}{3}(2\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k})$. Multiplying $6$ directly by $\\mathbf{d}$ would yield an acceleration three times too large!"
+    }
+},
+{
+    "id": "012223",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Vectors & Newton's Second Law",
+    "subtopic": [
+        "Variable Force",
+        "Vector Calculus"
+    ],
+    "img": false,
+    "question": "A particle of mass $3\\text{ kg}$ moves in three-dimensional space under the action of a single variable resultant force:$$\\mathbf{F}(t) = (18t\\mathbf{i} - 36t^2\\mathbf{j} + 12\\mathbf{k})\\text{ N}$$where $t \\ge 0$ is the time in seconds.<br><br>At time $t = 0\\text{ s}$, the particle has velocity $\\mathbf{u} = (\\mathbf{i} + 2\\mathbf{j} - 3\\mathbf{k})\\text{ m s}^{-1}$ and position vector $\\mathbf{r}_0 = (4\\mathbf{i} - 5\\mathbf{j} + 6\\mathbf{k})\\text{ m}$ relative to a fixed origin $O$.<br><br><strong>(a)</strong> Find the acceleration vector $\\mathbf{a}(t)$ of the particle at time $t$.<br><br><strong>(b)</strong> Determine an expression for the velocity vector $\\mathbf{v}(t)$ of the particle at time $t$, and calculate the speed of the particle when $t = 2\\text{ s}$, giving your answer to 3 significant figures.<br><br><strong>(c)</strong> Find the position vector $\\mathbf{r}(t)$ of the particle at time $t$, and determine its coordinates when $t = 2\\text{ s}$.",
+    "steps": [
+        "<strong>(a) Find acceleration vector using Newton's Second Law:</strong><br><br>Using $\\mathbf{a}(t) = \\dfrac{\\mathbf{F}(t)}{m}$ with $m = 3\\text{ kg}$:\begin{aligned} \\mathbf{a}(t) &= \\dfrac{1}{3}(18t\\mathbf{i} - 36t^2\\mathbf{j} + 12\\mathbf{k}) \cr &= (6t\\mathbf{i} - 12t^2\\mathbf{j} + 4\\mathbf{k})\\text{ m s}^{-2} \end{aligned}",
+        "<strong>(b) Integrate acceleration to find velocity and speed:</strong><br><br>Integrating $\\mathbf{a}(t)$ with respect to $t$:\begin{aligned} \\mathbf{v}(t) &= \\int (6t\\mathbf{i} - 12t^2\\mathbf{j} + 4\\mathbf{k})\\text{ d}t \cr &= (3t^2 + c_1)\\mathbf{i} \cr &\qquad + (-4t^3 + c_2)\\mathbf{j} \cr &\qquad + (4t + c_3)\\mathbf{k} \end{aligned}Using $\\mathbf{v}(0) = \\mathbf{i} + 2\\mathbf{j} - 3\\mathbf{k}$, we find $c_1 = 1$, $c_2 = 2$, and $c_3 = -3$:\begin{aligned} \\mathbf{v}(t) &= (3t^2 + 1)\\mathbf{i} \cr &\qquad + (2 - 4t^3)\\mathbf{j} \cr &\qquad + (4t - 3)\\mathbf{k}\\text{ m s}^{-1} \end{aligned}At $t = 2\\text{ s}$:\begin{aligned} \\mathbf{v}(2) &= [3(4) + 1]\\mathbf{i} \cr &\qquad + [2 - 4(8)]\\mathbf{j} \cr &\qquad + [4(2) - 3]\\mathbf{k} \cr &= (13\\mathbf{i} - 30\\mathbf{j} + 5\\mathbf{k})\\text{ m s}^{-1} \end{aligned}The speed is the magnitude of $\\mathbf{v}(2)$:\begin{aligned} |\\mathbf{v}(2)| &= \\sqrt{13^2 + (-30)^2 + 5^2} \cr &= \\sqrt{169 + 900 + 25} \cr &= \\sqrt{1094} \cr &\approx 33.1\\text{ m s}^{-1} \end{aligned}",
+        "<strong>(c) Integrate velocity to find position vector and coordinates:</strong><br><br>Integrating $\\mathbf{v}(t)$ with respect to $t$:\begin{aligned} \\mathbf{r}(t) &= (t^3 + t + d_1)\\mathbf{i} \cr &\qquad + (-t^4 + 2t + d_2)\\mathbf{j} \cr &\qquad + (2t^2 - 3t + d_3)\\mathbf{k} \end{aligned}Using $\\mathbf{r}(0) = 4\\mathbf{i} - 5\\mathbf{j} + 6\\mathbf{k}$, we find $d_1 = 4$, $d_2 = -5$, and $d_3 = 6$:\begin{aligned} \\mathbf{r}(t) &= (t^3 + t + 4)\\mathbf{i} \cr &\qquad + (-t^4 + 2t - 5)\\mathbf{j} \cr &\qquad + (2t^2 - 3t + 6)\\mathbf{k}\\text{ m} \end{aligned}Evaluating at $t = 2\\text{ s}$:\begin{aligned} x &= 2^3 + 2 + 4 = 14 \cr y &= -2^4 + 2(2) - 5 = -17 \cr z &= 2(2^2) - 3(2) + 6 = 8 \end{aligned}Coordinates: $(14, -17, 8)$.",
+        "Final Answer: (a) $(6t\\mathbf{i} - 12t^2\\mathbf{j} + 4\\mathbf{k})\\text{ m s}^{-2}$, (b) $33.1\\text{ m s}^{-1}$, (c) $(14, -17, 8)$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $(18t\\mathbf{i} - 36t^2\\mathbf{j} + 12\\mathbf{k})\\text{ m s}^{-2}$, (b) $99.3\\text{ m s}^{-1}$, (c) $(14, -17, 8)$",
+            "feedback": "In part (a), you equated acceleration directly to force without dividing by the particle's mass $m = 3\\text{ kg}$."
+        },
+        {
+            "ans": "(a) $(6t\\mathbf{i} - 12t^2\\mathbf{j} + 4\\mathbf{k})\\text{ m s}^{-2}$, (b) $33.1\\text{ m s}^{-1}$, (c) $(10, -12, 2)$",
+            "feedback": "In part (c), you integrated the velocity components without adding the constants of integration represented by the initial position $\\mathbf{r}_0$."
+        },
+        {
+            "ans": "(a) $(6t\\mathbf{i} - 12t^2\\mathbf{j} + 4\\mathbf{k})\\text{ m s}^{-2}$, (b) $32.6\\text{ m s}^{-1}$, (c) $(14, -17, 8)$",
+            "feedback": "In part (b), you forgot to add the initial velocity constants $c_1, c_2, c_3$ when integrating $\\mathbf{a}(t)$, computing the speed of $\\int_0^2 \\mathbf{a}\\text{d}t$ alone."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Variable Acceleration vs SUVAT",
+        "content": "Because the force depends explicitly on time $t$, acceleration is not constant. SUVAT formulas such as $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$ and $\\mathbf{s} = \\mathbf{u}t + \\frac{1}{2}\\mathbf{a}t^2$ are completely invalid here and will score zero marks. You must use calculus: integrate $\\mathbf{a}(t)$ to find velocity, and integrate $\\mathbf{v}(t)$ to find position, always determining the vector constants of integration from initial conditions."
+    }
+},
+{
+    "id": "012229",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Vectors & Newton's Second Law",
+    "subtopic": [
+        "Relative Motion",
+        "Closest Approach"
+    ],
+    "img": false,
+    "question": "Two drones, $A$ and $B$, move with constant velocities in the airspace above a survey station $O$.<br><br>At time $t = 0\\text{ s}$, drone $A$ has position vector $\\mathbf{r}_{A0} = (4\\mathbf{i} - 2\\mathbf{j} + 8\\mathbf{k})\\text{ m}$ and velocity $\\mathbf{v}_A = (5\\mathbf{i} + 2\\mathbf{j} + 3\\mathbf{k})\\text{ m s}^{-1}$.<br>At the same instant, drone $B$ has position vector $\\mathbf{r}_{B0} = (10\\mathbf{i} - 5\\mathbf{j} + 8\\mathbf{k})\\text{ m}$ and velocity $\\mathbf{v}_B = (3\\mathbf{i} + 4\\mathbf{j} + 2\\mathbf{k})\\text{ m s}^{-1}$.<br><br><strong>(a)</strong> Find an expression in terms of $t$ for the position vector of drone $A$ relative to drone $B$, denoted by ${}_B\\mathbf{r}_A$.<br><br><strong>(b)</strong> Show that the square of the distance, $D^2$, between the two drones at time $t$ is given by:$$D^2 = 9t^2 - 36t + 45$$<strong>(c)</strong> Hence:<br>(i) explain why the two drones do not collide,<br>(ii) find the time $t$ at which the drones are closest together,<br>(iii) determine the minimum distance between the two drones.",
+    "steps": [
+        "<strong>(a) Determine the relative position vector:</strong><br><br>The position vectors of the two drones at time $t$ are:\begin{aligned} \\mathbf{r}_A &= (4 + 5t)\\mathbf{i} \cr &\qquad + (-2 + 2t)\\mathbf{j} \cr &\qquad + (8 + 3t)\\mathbf{k} \cr \\mathbf{r}_B &= (10 + 3t)\\mathbf{i} \cr &\qquad + (-5 + 4t)\\mathbf{j} \cr &\qquad + (8 + 2t)\\mathbf{k} \end{aligned}The position of $A$ relative to $B$ is ${}_B\\mathbf{r}_A = \\mathbf{r}_A - \\mathbf{r}_B$:\begin{aligned} {}_B\\mathbf{r}_A &= (4 + 5t - 10 - 3t)\\mathbf{i} \cr &\qquad + (-2 + 2t + 5 - 4t)\\mathbf{j} \cr &\qquad + (8 + 3t - 8 - 2t)\\mathbf{k} \cr &= (2t - 6)\\mathbf{i} \cr &\qquad + (3 - 2t)\\mathbf{j} + t\\mathbf{k} \end{aligned}",
+        "<strong>(b) Show expression for D²:</strong><br><br>The square of the distance is the dot product of the relative position vector with itself:\begin{aligned} D^2 &= (2t - 6)^2 + (3 - 2t)^2 + t^2 \cr &= (4t^2 - 24t + 36) \cr &\qquad + (9 - 12t + 4t^2) + t^2 \cr &= (4 + 4 + 1)t^2 \cr &\qquad + (-24 - 12)t + (36 + 9) \cr &= 9t^2 - 36t + 45 \end{aligned}",
+        "<strong>(c) Find minimum distance and verify no collision:</strong><br><br>Completing the square on $D^2$:\begin{aligned} D^2 &= 9(t^2 - 4t + 5) \cr &= 9[(t - 2)^2 - 4 + 5] \cr &= 9(t - 2)^2 + 9 \end{aligned}(i) For any real time $t$, $(t - 2)^2 \\ge 0$, so $D^2 \\ge 9 > 0$. Because the separation distance is always at least $3\\text{ m}$ ($D > 0$), the drones never collide.<br><br>(ii) The minimum value of $D^2$ occurs when $(t - 2)^2 = 0$, giving $t = 2\\text{ s}$.<br><br>(iii) The minimum separation distance is:\begin{aligned} D_{\\text{min}} &= \\sqrt{9} \cr &= 3\\text{ m} \end{aligned}",
+        "Final Answer: (a) $(2t - 6)\\mathbf{i} + (3 - 2t)\\mathbf{j} + t\\mathbf{k}$, (b) Proof complete, (c)(i) $D^2 \\ge 9 > 0$, (ii) $2\\text{ s}$, (iii) $3\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $(6 - 2t)\\mathbf{i} + (2t - 3)\\mathbf{j} - t\\mathbf{k}$, (b) Proof complete, (c)(i) $D^2 \\ge 9 > 0$, (ii) $2\\text{ s}$, (iii) $3\\text{ m}$",
+            "feedback": "In part (a), you calculated the position of $B$ relative to $A$ (${}_A\\mathbf{r}_B = \\mathbf{r}_B - \\mathbf{r}_A$) rather than $A$ relative to $B$ (${}_B\\mathbf{r}_A = \\mathbf{r}_A - \\mathbf{r}_B$), reversing all component signs."
+        },
+        {
+            "ans": "(a) $(2t - 6)\\mathbf{i} + (3 - 2t)\\mathbf{j} + t\\mathbf{k}$, (b) Proof complete, (c)(i) $D^2 \\ge 9 > 0$, (ii) $4\\text{ s}$, (iii) $9\\text{ m}$",
+            "feedback": "In part (c)(ii), you located the minimum of $at^2 + bt + c$ using $t = -b/a$ instead of the correct vertex formula $t = -b/(2a) = 36/18 = 2\\text{ s}$."
+        },
+        {
+            "ans": "(a) $(2t - 6)\\mathbf{i} + (3 - 2t)\\mathbf{j} + t\\mathbf{k}$, (b) Proof complete, (c)(i) $D^2 \\ge 9 > 0$, (ii) $2\\text{ s}$, (iii) $9\\text{ m}$",
+            "feedback": "In part (c)(iii), you forgot to take the square root of $D^2_{\\text{min}} = 9$, providing the squared distance rather than the actual distance."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Completing the Square for Distance Extrema",
+        "content": "While you can find the minimum by differentiating $\\frac{\\text{d}(D^2)}{\\text{d}t} = 18t - 36 = 0$, completing the square is both faster and mathematically superior here. Writing $D^2 = 9(t - 2)^2 + 9$ immediately proves that $D^2 \\ge 9$ for all $t \\in \\mathbb{R}$, simultaneously answering part (c)(i) (collision impossibility), part (c)(ii) ($t = 2\\text{ s}$), and part (c)(iii) ($D_{\\text{min}} = \\sqrt{9} = 3\\text{ m}$) without requiring a second derivative test."
+    }
+},
+{
+    "id": "012230",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Vectors & Newton's Second Law",
+    "subtopic": [
+        "Work-Energy Principle",
+        "Direction Cosines"
+    ],
+    "img": false,
+    "question": "A particle of mass $5\\text{ kg}$ is initially at rest at the origin $O$. It is acted upon simultaneously by three constant forces:$$\\mathbf{F}_1 = (8\\mathbf{i} - 14\\mathbf{j} + 6\\mathbf{k})\\text{ N}$$$$\\mathbf{F}_2 = (-2\\mathbf{i} + 6\\mathbf{j} + 4\\mathbf{k})\\text{ N}$$$$\\mathbf{F}_3 = (9\\mathbf{i} + 3\\mathbf{j} - 5\\mathbf{k})\\text{ N}$$<strong>(a)</strong> Find the resultant force $\\mathbf{R}$ acting on the particle, and show that its magnitude is $5\\sqrt{11}\\text{ N}$.<br><br><strong>(b)</strong> State the acceleration vector of the particle.<br><br><strong>(c)</strong> During the first $4\\text{ seconds}$ of motion, the particle travels from the origin to a point $P$.<br>(i) Find the velocity vector and the kinetic energy of the particle when $t = 4\\text{ s}$.<br>(ii) Find the displacement vector $\\mathbf{s} = \\vec{OP}$, and verify the Work-Energy Principle by calculating the work done by $\\mathbf{R}$.<br>(iii) Calculate the acute angle between the direction of motion of the particle and the positive $x$-axis (the vector $\\mathbf{i}$), giving your answer to the nearest $0.1^\\circ$.",
+    "steps": [
+        "<strong>(a) Sum the applied forces and compute magnitude:</strong><br><br>The resultant force is $\\mathbf{R} = \\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3$:\begin{aligned} \\mathbf{R} &= (8 - 2 + 9)\\mathbf{i} \cr &\qquad + (-14 + 6 + 3)\\mathbf{j} \cr &\qquad + (6 + 4 - 5)\\mathbf{k} \cr &= (15\\mathbf{i} - 5\\mathbf{j} + 5\\mathbf{k})\\text{ N} \end{aligned}Its magnitude is:\begin{aligned} |\\mathbf{R}| &= \\sqrt{15^2 + (-5)^2 + 5^2} \cr &= \\sqrt{225 + 25 + 25} \cr &= \\sqrt{275} \cr &= \\sqrt{25 \\times 11} \cr &= 5\\sqrt{11}\\text{ N} \end{aligned}",
+        "<strong>(b) State the acceleration vector:</strong><br><br>Using Newton's Second Law with $m = 5\\text{ kg}$:\begin{aligned} \\mathbf{a} &= \\dfrac{\\mathbf{R}}{5} \cr &= \\dfrac{1}{5}(15\\mathbf{i} - 5\\mathbf{j} + 5\\mathbf{k}) \cr &= (3\\mathbf{i} - \\mathbf{j} + \\mathbf{k})\\text{ m s}^{-2} \end{aligned}",
+        "<strong>(c)(i) Velocity vector and kinetic energy at t = 4 s:</strong><br><br>Starting from rest ($\\mathbf{u} = \\mathbf{0}$):\begin{aligned} \\mathbf{v} &= \\mathbf{a}t \cr &= 4(3\\mathbf{i} - \\mathbf{j} + \\mathbf{k}) \cr &= (12\\mathbf{i} - 4\\mathbf{j} + 4\\mathbf{k})\\text{ m s}^{-1} \end{aligned}The squared speed is:\begin{aligned} v^2 &= 12^2 + (-4)^2 + 4^2 \cr &= 144 + 16 + 16 \cr &= 176\\text{ m}^2\\text{ s}^{-2} \end{aligned}The kinetic energy is:\begin{aligned} E_k &= \\dfrac{1}{2}mv^2 \cr &= \\dfrac{1}{2}(5)(176) \cr &= 440\\text{ J} \end{aligned}",
+        "<strong>(c)(ii) Displacement and work done verification:</strong><br><br>The displacement over $4\\text{ s}$ from rest is:\begin{aligned} \\mathbf{s} &= \\dfrac{1}{2}\\mathbf{a}t^2 \cr &= \\dfrac{1}{2}(16)(3\\mathbf{i} - \\mathbf{j} + \\mathbf{k}) \cr &= 8(3\\mathbf{i} - \\mathbf{j} + \\mathbf{k}) \cr &= (24\\mathbf{i} - 8\\mathbf{j} + 8\\mathbf{k})\\text{ m} \end{aligned}The work done by $\\mathbf{R}$ is the scalar product $W = \\mathbf{R} \\cdot \\mathbf{s}$:\begin{aligned} W &= 15(24) + (-5)(-8) + 5(8) \cr &= 360 + 40 + 40 \cr &= 440\\text{ J} \end{aligned}Since $W = \\Delta E_k = 440 - 0 = 440\\text{ J}$, the Work-Energy Principle is verified.",
+        "<strong>(c)(iii) Calculate angle with positive x-axis:</strong><br><br>The direction of motion is along the velocity vector $\\mathbf{v}$. Let $\\theta$ be the angle between $\\mathbf{v}$ and $\\mathbf{i}$:\begin{aligned} \\cos\\theta &= \\dfrac{\\mathbf{v} \\cdot \\mathbf{i}}{|\\mathbf{v}||\\mathbf{i}|} \cr &= \\dfrac{12}{\\sqrt{176} \\times 1} \cr &= \\dfrac{12}{4\\sqrt{11}} \cr &= \\dfrac{3}{\\sqrt{11}} \cr &\\approx 0.904534 \end{aligned}Calculating $\\theta$:\begin{aligned} \\theta &= \\arccos(0.904534) \cr &\approx 25.2^\\circ \end{aligned}",
+        "Final Answer: (a) $5\\sqrt{11}\\text{ N}$, (b) $(3\\mathbf{i} - \\mathbf{j} + \\mathbf{k})\\text{ m s}^{-2}$, (c)(i) $(12\\mathbf{i} - 4\\mathbf{j} + 4\\mathbf{k})\\text{ m s}^{-1}$, $440\\text{ J}$, (ii) $(24\\mathbf{i} - 8\\mathbf{j} + 8\\mathbf{k})\\text{ m}$, $440\\text{ J}$, (iii) $25.2^\\circ$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $5\\sqrt{11}\\text{ N}$, (b) $(15\\mathbf{i} - 5\\mathbf{j} + 5\\mathbf{k})\\text{ m s}^{-2}$, (c)(i) $(60\\mathbf{i} - 20\\mathbf{j} + 20\\mathbf{k})\\text{ m s}^{-1}$, $11000\\text{ J}$, (ii) $(120\\mathbf{i} - 40\\mathbf{j} + 40\\mathbf{k})\\text{ m}$, $11000\\text{ J}$, (iii) $25.2^\\circ$",
+            "feedback": "In part (b), you equated acceleration directly to the resultant force without dividing by the mass $m = 5\\text{ kg}$."
+        },
+        {
+            "ans": "(a) $5\\sqrt{11}\\text{ N}$, (b) $(3\\mathbf{i} - \\mathbf{j} + \\mathbf{k})\\text{ m s}^{-2}$, (c)(i) $(12\\mathbf{i} - 4\\mathbf{j} + 4\\mathbf{k})\\text{ m s}^{-1}$, $880\\text{ J}$, (ii) $(24\\mathbf{i} - 8\\mathbf{j} + 8\\mathbf{k})\\text{ m}$, $880\\text{ J}$, (iii) $25.2^\\circ$",
+            "feedback": "In part (c)(i), you forgot the factor of $\\frac{1}{2}$ when evaluating kinetic energy, computing $m v^2$ instead of $\\frac{1}{2}m v^2$."
+        },
+        {
+            "ans": "(a) $5\\sqrt{11}\\text{ N}$, (b) $(3\\mathbf{i} - \\mathbf{j} + \\mathbf{k})\\text{ m s}^{-2}$, (c)(i) $(12\\mathbf{i} - 4\\mathbf{j} + 4\\mathbf{k})\\text{ m s}^{-1}$, $440\\text{ J}$, (ii) $(24\\mathbf{i} - 8\\mathbf{j} + 8\\mathbf{k})\\text{ m}$, $440\\text{ J}$, (iii) $64.8^\\circ$",
+            "feedback": "In part (c)(iii), you calculated the complementary angle to the $y$-axis rather than the angle $\\arccos(v_x/|\\mathbf{v}|)$ made with the positive $x$-axis."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Direction Cosines in 3D Kinematics",
+        "content": "To find the angle $\\theta$ between any 3D vector $\\mathbf{v} = v_x\\mathbf{i} + v_y\\mathbf{j} + v_z\\mathbf{k}$ and the positive coordinate axes, use the direction cosine property: $\\cos\\alpha = \\frac{v_x}{|\\mathbf{v}|}$, $\\cos\\beta = \\frac{v_y}{|\\mathbf{v}|}$, and $\\cos\\gamma = \\frac{v_z}{|\\mathbf{v}|}$. Because the dot product with a unit axis vector simplifies to $\\mathbf{v} \\cdot \\mathbf{i} = v_x$, there is no need to set up full matrix or determinant cross products."
+    }
 }
 ];
