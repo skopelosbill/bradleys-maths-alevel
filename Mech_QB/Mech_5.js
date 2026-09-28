@@ -732,7 +732,7 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
         "<strong>(a) Derive the expression for $T$:</strong><br><br>Resolving perpendicular to the plane:\\begin{aligned} R &= mg\\cos 25^\\circ - T\\sin\\beta \\end{aligned}<br>To move up the plane, $F = \\mu R$ acts down the plane:\\begin{aligned} &T\\cos\\beta = mg\\sin 25^\\circ + \\mu R \\cr &T\\cos\\beta = mg\\sin 25^\\circ \\cr &\\qquad + \\mu(mg\\cos 25^\\circ - T\\sin\\beta) \\cr &T(\\cos\\beta + \\mu\\sin\\beta) \\cr &\\qquad = mg(\\sin 25^\\circ + \\mu\\cos 25^\\circ) \\cr &T = \\dfrac{mg(\\sin 25^\\circ + \\mu\\cos 25^\\circ)}{\\cos\\beta + \\mu\\sin\\beta} \\end{aligned}",
         "<strong>(b) Optimal angle $\\beta$:</strong><br><br>Substitute $\\mu = \\tan\\lambda = \\dfrac{\\sin\\lambda}{\\cos\\lambda}$ into the denominator:\\begin{aligned} &\\cos\\beta + \\tan\\lambda\\sin\\beta \\cr &\\quad = \\dfrac{\\cos\\beta\\cos\\lambda + \\sin\\beta\\sin\\lambda}{\\cos\\lambda} \\cr &\\quad = \\dfrac{\\cos(\\beta - \\lambda)}{\\cos\\lambda} \\end{aligned}<br>To minimise $T$, the denominator must be maximised, which occurs when $\\cos(\\beta - \\lambda) = 1$, giving $\\beta = \\lambda$:\\begin{aligned} \\beta &= \\arctan(\\mu) \\cr &= \\arctan(0.6) \\cr &\\approx 31.0^\\circ \\end{aligned}",
-        "<strong>(c) Calculate $T_{\\min}$:</strong><br><br>When $\\beta = 31.0^\\circ$, the denominator evaluates to $\\sqrt{1 + \\mu^2} = \\sqrt{1 + 0.6^2} = \\sqrt{1.36} \\approx 1.1662$:\\begin{aligned} T_{\\min} &= \\dfrac{20(9.8)(\\sin 25^\\circ + 0.6\\cos 25^\\circ)}{\\sqrt{1.36}} \\cr &= \\dfrac{196(0.42262 + 0.54378)}{1.1662} \\cr &= \\dfrac{196(0.9664)}{1.1662} \\cr &\\approx 162\\text{ N} \\end{aligned}",
+        "<strong>(c) Calculate $T_{\\min}$:</strong><br><br>When $\\beta = 31.0^\\circ$, the denominator evaluates to \\begin{aligned}\\sqrt{1 + \\mu^2} &= \\sqrt{1 + 0.6^2}\\cr & = \\sqrt{1.36} \\cr &\\approx 1.1662\\end{aligned}\\begin{aligned} &T_{\\min} \\cr & \\quad= \\dfrac{20(9.8)(\\sin 25^\\circ + 0.6\\cos 25^\\circ)}{\\sqrt{1.36}} \\cr & \\quad= \\dfrac{196(0.42262 + 0.54378)}{1.1662} \\cr & \\quad= \\dfrac{196(0.9664)}{1.1662} \\cr & \\quad\\approx 162\\text{ N} \\end{aligned}",
         "Final Answer: (a) $T = \\dfrac{mg(\\sin 25^\\circ + \\mu\\cos 25^\\circ)}{\\cos\\beta + \\mu\\sin\\beta}$, (b) $\\beta = 31.0^\\circ$, (c) $T_{\\min} = 162\\text{ N}$"
     ],
     "pi_options": [
@@ -772,7 +772,7 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
         "<strong>(a) Normal reaction:</strong><br><br>The pushing force $F$ acts at $30^\\circ$ below the slope, so its component pushing into the surface is $F\\sin 30^\\circ$.<br><br>Resolving perpendicular to the plane:\\begin{aligned} R &= 25g\\cos 20^\\circ + F\\sin 30^\\circ \\end{aligned}",
         "<strong>(b) Effect on maximum friction:</strong><br><br>Because $R$ contains the term $+F\\sin 30^\\circ$, increasing $F$ increases the normal reaction. Since maximum static friction is directly proportional to normal reaction ($F_{\\text{max}} = \\mu R$), the maximum available friction increases as $F$ increases.",
-        "<strong>(c) Condition for downward motion:</strong><br><br>For downward motion to occur, the component of force pulling down the slope must exceed maximum friction:\\begin{aligned} &F\\cos 30^\\circ + mg\\sin 20^\\circ > \\mu R \\cr &F\\cos 30^\\circ + 25g\\sin 20^\\circ \\cr &\\quad > 0.45(25g\\cos 20^\\circ + F\\sin 30^\\circ) \\cr &0.8660F + 83.794 > 103.60 + 0.2250F \\cr &0.6410F > 19.806 \\cr &F > \\dfrac{19.806}{0.6410} \\cr &F > 30.9\\text{ N} \\end{aligned}<br>Because the net driving coefficient ($0.6410$) is positive, increasing $F$ increases the driving force faster than friction. Thus, motion is possible and the minimum force is $30.9\\text{ N}$.",
+        "<strong>(c) Condition for downward motion:</strong><br><br>For downward motion to occur, the component of force pulling down the slope must exceed maximum friction:\\begin{aligned} &F\\cos 30^\\circ + mg\\sin 20^\\circ > \\mu R \\cr &F\\cos 30^\\circ + 25g\\sin 20^\\circ \\cr &\\quad > 0.45(25g\\cos 20^\\circ + F\\sin 30^\\circ) \\cr &0.8660F + 83.794 \\cr & \\qquad \\quad> 103.60 + 0.2250F \\cr &0.6410F > 19.806 \\cr &F > \\dfrac{19.806}{0.6410} \\cr &F > 30.9\\text{ N} \\end{aligned}<br>Because the net driving coefficient ($0.6410$) is positive, increasing $F$ increases the driving force faster than friction. Thus, motion is possible and the minimum force is $30.9\\text{ N}$.",
         "Final Answer: (a) $R = 25g\\cos 20^\\circ + F\\sin 30^\\circ$, (b) Increases $R$ hence increases $\\mu R$, (c) Yes, $F_{\\min} = 30.9\\text{ N}$"
     ],
     "pi_options": [
@@ -786,13 +786,211 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(a) $R = 25g\\cos 20^\\circ + F\\sin 30^\\circ$, (b) Increases $R$ hence increases $\\mu R$, (c) Yes, $F_{\\min} = 45.2\\text{ N}$",
-            "feedback": "Check the friction equation: $0.6410F > 19.806 \\implies F > 19.806 / 0.6410 \\approx 30.9\\text{ N}$."
+            "feedback": "Check the friction equation: \\begin{aligned}0.6410F &> 19.806 \\cr\\implies F &> \\frac{19.806}{0.6410} \\cr & \\approx 30.9\\text{ N}$."
         }
     ],
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Self-Locking Conditions",
-        "content": "A pushing force can only cause motion if its component along the slope exceeds the friction it creates: $F\\cos\\theta > \\mu F\\sin\\theta \\implies \\tan\\theta < \\frac{1}{\\mu}$. Here, $\\tan 30^\\circ \\approx 0.577$ and $\\frac{1}{0.45} \\approx 2.22$, so pushing harder does indeed initiate motion."
+        "content": "A pushing force can only cause motion if its component along the slope exceeds the friction it creates: \\begin{aligned}F\\cos\\theta &> \\mu F\\sin\\theta\\cr \\implies \\tan\\theta &< \\frac{1}{\\mu}\\end{aligned} Here, $\\tan 30^\\circ \\approx 0.577$ and $\\frac{1}{0.45} \\approx 2.22$, so pushing harder does indeed initiate motion."
+    }
+},
+{
+    "id": "012221",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Projectiles",
+    "subtopic": [
+        "Horizontal Range",
+        "Two-Particle Collision"
+    ],
+    "img": false,
+    "question": "Points $A$ and $B$ lie on horizontal ground. At time $t = 0\\text{ s}$, an object $P$ is projected from $A$ towards $B$ such that the range of $P$ is equal to the distance $AB$. The initial speed of projection of $P$ is $29.4\\text{ m s}^{-1}$ at an angle of $30^\\circ$ above the horizontal.<br><br><strong>(a)</strong> Calculate the range $AB$ of object $P$, giving your answer in exact form and to 3 significant figures.<br><br><strong>(b)</strong> At time $t = 1\\text{ s}$, another object $Q$ is projected from $B$ towards $A$ with the same speed of projection of $29.4\\text{ m s}^{-1}$ and at the same angle of $30^\\circ$ above the horizontal.<br><br>Determine the height above the ground at which $P$ and $Q$ collide.",
+    "steps": [
+        "<strong>(a) Resolve initial velocity and find range:</strong><br><br>Resolving the initial velocity of $P$ into horizontal and vertical components:\begin{aligned} u_x &= 29.4\\cos 30^\\circ \cr &= 14.7\\sqrt{3}\\text{ m s}^{-1} \end{aligned}\begin{aligned} u_y &= 29.4\\sin 30^\\circ \cr &= 14.7\\text{ m s}^{-1} \end{aligned}To find the time of flight $T$, set vertical displacement $y = 0$:\begin{aligned} &u_y T - \\dfrac{1}{2}gT^2 = 0 \cr &14.7T - 4.9T^2 = 0 \cr &4.9T(3 - T) = 0 \cr &T = 3\\text{ s} \end{aligned}The horizontal range $AB$ is:\begin{aligned} AB &= u_x T \cr &= 14.7\\sqrt{3} \\times 3 \cr &= 44.1\\sqrt{3}\\text{ m} \cr &\approx 76.4\\text{ m} \end{aligned}",
+        "<strong>(b) Form horizontal equations to find collision time:</strong><br><br>Let $t$ be the time elapsed in seconds since $P$ was launched.<br><br>Horizontal displacement of $P$ from $A$:\begin{aligned} x_P &= 14.7\\sqrt{3}t \end{aligned}Particle $Q$ is launched from $B$ at $t = 1\\text{ s}$ moving towards $A$, so its time of flight is $(t - 1)\\text{ s}$. Its position from $A$ is:\begin{aligned} x_Q &= AB - 14.7\\sqrt{3}(t - 1) \end{aligned}Setting $x_P = x_Q$ for collision:\begin{aligned} &14.7\\sqrt{3}t = 44.1\\sqrt{3} \cr &\qquad - 14.7\\sqrt{3}(t - 1) \cr &t = 3 - (t - 1) \cr &2t = 4 \cr &t = 2\\text{ s} \end{aligned}",
+        "<strong>Calculate the height of collision:</strong><br><br>Substitute $t = 2\\text{ s}$ into the vertical displacement equation for $P$:\begin{aligned} y &= u_y t - \\dfrac{1}{2}gt^2 \cr &= 14.7(2) - 4.9(2^2) \cr &= 29.4 - 19.6 \cr &= 9.8\\text{ m} \end{aligned}",
+        "Final Answer: (a) $44.1\\sqrt{3}\\text{ m} \\approx 76.4\\text{ m}$, (b) $9.8\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $88.2\\sqrt{3}\\text{ m} \\approx 153\\text{ m}$, (b) $9.8\\text{ m}$",
+            "feedback": "In part (a), you used $2u^2\\sin(2\\alpha)/g$ instead of $u^2\\sin(2\\alpha)/g$, erroneously doubling the total horizontal range."
+        },
+        {
+            "ans": "(a) $44.1\\sqrt{3}\\text{ m} \\approx 76.4\\text{ m}$, (b) $14.7\\text{ m}$",
+            "feedback": "In part (b), you assumed the particles meet at $t = 1.5\\text{ s}$ (the midpoint of the total flight time), forgetting that particle $Q$ was launched with a $1\\text{ s}$ delay."
+        },
+        {
+            "ans": "(a) $44.1\\sqrt{3}\\text{ m} \\approx 76.4\\text{ m}$, (b) $4.9\\text{ m}$",
+            "feedback": "In the vertical position equation, you subtracted $gt^2$ rather than $\\frac{1}{2}gt^2$, calculating $29.4 - 9.8(4)/2$ incorrectly."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Symmetry in Opposing Projectiles",
+        "content": "When two particles are projected towards one another with identical launch speeds and elevation angles across a gap equal to their common range $R$, their horizontal closure speed is always $2u_x$. Because $Q$ is launched $t_0 = 1\\text{ s}$ later, the collision time is neatly given by $t = \\frac{T + t_0}{2} = \\frac{3 + 1}{2} = 2\\text{ s}$. Furthermore, because their vertical motion profiles are identical parabolas shifted in time, both particles are guaranteed to be at precisely the same height at this exact moment: $y_P(2) = y_Q(1) = 9.8\\text{ m}$."
+    }
+},
+{
+    "id": "012222",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Projectiles",
+    "subtopic": [
+        "Target Interception",
+        "Simultaneous Projection"
+    ],
+    "img": false,
+    "question": "A particle $P$ is projected from a point $O$ on horizontal ground with speed $20\\text{ m s}^{-1}$ at an angle of elevation $\\alpha$, where $\\tan\\alpha = \\dfrac{3}{4}$.<br><br>A vertical cliff of height $15\\text{ m}$ stands with its base on the ground at a horizontal distance of $32\\text{ m}$ from $O$.<br><br><strong>(a)</strong> Calculate the vertical height of $P$ when it has travelled a horizontal distance of $32\\text{ m}$ from $O$, and explain why $P$ would strike the vertical face of the cliff if its motion were uninterrupted.<br><br><strong>(b)</strong> At the same instant that $P$ is projected from $O$, a second particle $Q$ is projected horizontally with speed $U\\text{ m s}^{-1}$ from the top edge of the cliff directly towards $O$. The particles move in the same vertical plane and collide in mid-air before reaching the ground or the cliff face.<br><br>(i) Find the time $t$ elapsed between projection and collision.<br>(ii) Calculate the required launch speed $U$ of particle $Q$.<br>(iii) Determine the height above the ground at which the collision occurs.",
+    "steps": [
+        "<strong>(a) Find initial components and height at distance 32 m:</strong><br><br>From $\\tan\\alpha = \\frac{3}{4}$, we have $\\cos\\alpha = \\frac{4}{5} = 0.8$ and $\\sin\\alpha = \\frac{3}{5} = 0.6$.\begin{aligned} u_{Px} &= 20(0.8) = 16\\text{ m s}^{-1} \cr u_{Py} &= 20(0.6) = 12\\text{ m s}^{-1} \end{aligned}Time to travel $32\\text{ m}$ horizontally:\begin{aligned} t &= \\dfrac{32}{16} \cr &= 2\\text{ s} \end{aligned}Height of $P$ at $t = 2\\text{ s}$:\begin{aligned} y_P &= 12(2) - 4.9(2^2) \cr &= 24 - 19.6 \cr &= 4.4\\text{ m} \end{aligned}Because $0 < 4.4\\text{ m} < 15\\text{ m}$, the particle has neither cleared the top edge nor hit the ground, meaning it would strike the cliff face.",
+        "<strong>(b)(i) Equate vertical positions to find collision time:</strong><br><br>Taking the ground as $y = 0$, both particles experience downward acceleration $g = 9.8\\text{ m s}^{-2}$.<br><br>Vertical position of $P$:\begin{aligned} y_P &= 12t - 4.9t^2 \end{aligned}Particle $Q$ is projected horizontally from height $15\\text{ m}$, so $u_{Qy} = 0$:\begin{aligned} y_Q &= 15 - 4.9t^2 \end{aligned}For collision, $y_P = y_Q$:\begin{aligned} &12t - 4.9t^2 = 15 - 4.9t^2 \cr &12t = 15 \cr &t = 1.25\\text{ s} \end{aligned}",
+        "<strong>(b)(ii) Determine horizontal speed U:</strong><br><br>In $1.25\\text{ s}$, particle $P$ travels horizontally:\begin{aligned} x_P &= 16 \\times 1.25 \cr &= 20\\text{ m} \end{aligned}Since the total distance between $O$ and the cliff is $32\\text{ m}$, particle $Q$ must travel:\begin{aligned} x_Q &= 32 - 20 \cr &= 12\\text{ m} \end{aligned}Therefore:\begin{aligned} U &= \\dfrac{12}{1.25} \cr &= 9.6\\text{ m s}^{-1} \end{aligned}",
+        "<strong>(b)(iii) Calculate collision height:</strong><br><br>Substitute $t = 1.25\\text{ s}$ into $y_Q$:\begin{aligned} y &= 15 - 4.9(1.25^2) \cr &= 15 - 4.9(1.5625) \cr &= 15 - 7.65625 \cr &= 7.34375\\text{ m} \cr &\approx 7.34\\text{ m} \end{aligned}",
+        "Final Answer: (a) $4.4\\text{ m} < 15\\text{ m}$, (b)(i) $1.25\\text{ s}$, (ii) $9.6\\text{ m s}^{-1}$, (iii) $7.34\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $4.4\\text{ m} < 15\\text{ m}$, (b)(i) $1.25\\text{ s}$, (ii) $16.0\\text{ m s}^{-1}$, (iii) $7.34\\text{ m}$",
+            "feedback": "In part (b)(ii), you computed $U$ by dividing the total distance $20\\text{ m}$ covered by $P$ by $1.25\\text{ s}$, rather than using the remaining distance of $12\\text{ m}$ traversed by $Q$."
+        },
+        {
+            "ans": "(a) $4.4\\text{ m} < 15\\text{ m}$, (b)(i) $1.50\\text{ s}$, (ii) $8.0\\text{ m s}^{-1}$, (iii) $6.98\\text{ m}$",
+            "feedback": "In part (b)(i), you made an arithmetic slip setting $12t = 18$ instead of $12t = 15$, leading to an incorrect time of flight of $1.50\\text{ s}$."
+        },
+        {
+            "ans": "(a) $4.4\\text{ m} < 15\\text{ m}$, (b)(i) $1.25\\text{ s}$, (ii) $9.6\\text{ m s}^{-1}$, (iii) $8.88\\text{ m}$",
+            "feedback": "In part (b)(iii), you evaluated the vertical position using $y = 12t - \\frac{1}{2}gt$ instead of squaring $t$ in the acceleration term."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Quadratic Gravity Cancellation",
+        "content": "Notice how the quadratic terms $-4.9t^2$ cancel out completely when equating $y_P(t) = y_Q(t)$. Because both projectiles experience the identical downward acceleration of gravity, the relative vertical acceleration between them is zero. Particle $P$ effectively approaches particle $Q$ vertically at a constant relative velocity of $12\\text{ m s}^{-1}$. Thus, the collision time is simply the initial vertical separation divided by the initial relative vertical velocity: $t = \\frac{15}{12} = 1.25\\text{ s}$."
+    }
+},
+{
+    "id": "012223",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Projectiles",
+    "subtopic": [
+        "Trajectory Equation",
+        "Clearance Inequality"
+    ],
+    "img": false,
+    "question": "A particle is projected from a point $O$ on horizontal ground with initial speed $u\\text{ m s}^{-1}$ at an angle of elevation $\\theta$ above the horizontal.<br><br><strong>(a)</strong> Show that the Cartesian equation of the trajectory of the particle, referred to horizontal and vertical axes through $O$, is given by:$$y = x\\tan\\theta - \\dfrac{gx^2}{2u^2}(1 + \\tan^2\\theta)$$<strong>(b)</strong> Given that $u = 14\\text{ m s}^{-1}$ and taking $g = 9.8\\text{ m s}^{-2}$, the particle is required to clear a thin vertical barrier of height $5\\text{ m}$ situated at a horizontal distance of $10\\text{ m}$ from $O$.<br><br>Find the range of possible values for the angle of projection $\\theta$, giving the boundary angles in degrees to 1 decimal place.<br><br><strong>(c)</strong> For the smaller of the two boundary angles found in part <strong>(b)</strong>, determine the speed and direction of motion of the particle as it passes directly above the top of the barrier.",
+    "steps": [
+        "<strong>(a) Derive the trajectory equation:</strong><br><br>The parametric equations of motion are:\begin{aligned} x &= (u\\cos\\theta)t \cr y &= (u\\sin\\theta)t - \\dfrac{1}{2}gt^2 \end{aligned}Rearranging for $t$:\begin{aligned} t &= \\dfrac{x}{u\\cos\\theta} \end{aligned}Substitute $t$ into the vertical equation:\begin{aligned} y &= u\\sin\\theta\\left(\\dfrac{x}{u\\cos\\theta}\\right) \cr &\qquad - \\dfrac{g}{2}\\left(\\dfrac{x}{u\\cos\\theta}\\right)^2 \cr &= x\\tan\\theta - \\dfrac{gx^2}{2u^2\\cos^2\\theta} \end{aligned}Using the identity $\\sec^2\\theta = 1 + \\tan^2\\theta$:\begin{aligned} y &= x\\tan\\theta - \\dfrac{gx^2}{2u^2}(1 + \\tan^2\\theta) \end{aligned}",
+        "<strong>(b) Set up and solve the quadratic inequality:</strong><br><br>Substitute $x = 10$, $u = 14$, and $g = 9.8$:\begin{aligned} \\dfrac{gx^2}{2u^2} &= \\dfrac{9.8 \\times 100}{2 \\times 196} \cr &= \\dfrac{980}{392} \cr &= 2.5 \end{aligned}The trajectory equation becomes:\begin{aligned} y &= 10\\tan\\theta - 2.5(1 + \\tan^2\\theta) \end{aligned}To clear the barrier, require $y > 5$:\begin{aligned} &10\\tan\\theta - 2.5 - 2.5\\tan^2\\theta > 5 \cr &2.5\\tan^2\\theta - 10\\tan\\theta + 7.5 < 0 \cr &\\tan^2\\theta - 4\\tan\\theta + 3 < 0 \cr &(\\tan\\theta - 1)(\\tan\\theta - 3) < 0 \cr &1 < \\tan\\theta < 3 \end{aligned}Boundary angles:\begin{aligned} \\theta_1 &= \\arctan(1) = 45.0^\\circ \cr \\theta_2 &= \\arctan(3) \\approx 71.6^\\circ \end{aligned}Thus: $45.0^\\circ < \\theta < 71.6^\\circ$.",
+        "<strong>(c) Find velocity components at barrier for smaller angle:</strong><br><br>For $\\theta = 45^\\circ$:\begin{aligned} u_x &= 14\\cos 45^\\circ = 7\\sqrt{2}\\text{ m s}^{-1} \cr u_y &= 14\\sin 45^\\circ = 7\\sqrt{2}\\text{ m s}^{-1} \end{aligned}Time to reach $x = 10\\text{ m}$:\begin{aligned} t &= \\dfrac{10}{7\\sqrt{2}} = \\dfrac{5\\sqrt{2}}{7}\\text{ s} \end{aligned}Vertical velocity $v_y$ at $x = 10\\text{ m}$:\begin{aligned} v_y &= 7\\sqrt{2} - 9.8\\left(\\dfrac{5\\sqrt{2}}{7}\\right) \cr &= 7\\sqrt{2} - 1.4(5\\sqrt{2}) \cr &= 7\\sqrt{2} - 7\\sqrt{2} \cr &= 0\\text{ m s}^{-1} \end{aligned}Since $v_y = 0$, the particle is at its maximum height. Its speed is purely horizontal:\begin{aligned} v &= v_x \cr &= 7\\sqrt{2} \cr &\approx 9.90\\text{ m s}^{-1}\\text{ horizontally} \end{aligned}",
+        "Final Answer: (a) Proof complete, (b) $45.0^\\circ < \\theta < 71.6^\\circ$, (c) $9.90\\text{ m s}^{-1}$ horizontally"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Proof complete, (b) $35.0^\\circ < \\theta < 65.4^\\circ$, (c) $9.90\\text{ m s}^{-1}$ horizontally",
+            "feedback": "In part (b), an arithmetic error was made when simplifying $980/392$, leading to incorrect quadratic coefficients and angles."
+        },
+        {
+            "ans": "(a) Proof complete, (b) $45.0^\\circ < \\theta < 71.6^\\circ$, (c) $14.0\\text{ m s}^{-1}$ at $45.0^\\circ$",
+            "feedback": "In part (c), you stated the initial velocity at launch instead of evaluating the velocity vector when passing over the barrier."
+        },
+        {
+            "ans": "(a) Proof complete, (b) $45.0^\\circ < \\theta < 71.6^\\circ$, (c) $9.90\\text{ m s}^{-1}$ at $18.4^\\circ$ downwards",
+            "feedback": "In part (c), you miscalculated the vertical velocity by neglecting the initial upward velocity $u_y$, treating $v_y$ as $-gt$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: The Apex Clearance Property",
+        "content": "For a fixed speed $u$, there are generally two distinct trajectories that pass through any given point $(X, Y)$ within range: a direct, low-angle flat trajectory and a high-arching lob trajectory. Here, the lower boundary angle $\\theta = 45^\\circ$ yields $v_y = 0$ exactly at $x = 10\\text{ m}$. This indicates that the apex of this low trajectory occurs precisely at the barrier top $(10, 5)$, touching it tangentially."
+    }
+},
+{
+    "id": "012224",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Projectiles",
+    "subtopic": [
+        "Vectors in Kinematics",
+        "Apex Interception"
+    ],
+    "img": false,
+    "question": "At time $t = 0\\text{ s}$, a distress flare $P$ is fired from the origin $O$ on horizontal ground with initial velocity vector $\\mathbf{u}_P = (18\\mathbf{i} + 24.5\\mathbf{j})\\text{ m s}^{-1}$, where $\\mathbf{i}$ and $\\mathbf{j}$ are horizontal and vertically upward unit vectors respectively. The flare moves freely under gravity, with acceleration $-9.8\\mathbf{j}\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Find the position vector $\\mathbf{r}_P$ of the flare at time $t\\text{ s}$.<br><br><strong>(b)</strong> Find the time taken for $P$ to reach its highest point above the ground, and state its position vector at this instant.<br><br><strong>(c)</strong> At time $t = 1.5\\text{ s}$, an interceptor projectile $Q$ is launched from a point on the ground with position vector $55\\mathbf{i}\\text{ m}$ with initial velocity $\\mathbf{u}_Q = (v_x \\mathbf{i} + v_y \\mathbf{j})\\text{ m s}^{-1}$.<br><br>Given that $Q$ successfully intercepts $P$ at the highest point of $P$'s trajectory:<br><br>(i) Find the velocity vector $\\mathbf{u}_Q$ of the interceptor.<br>(ii) Calculate the speed of projection and angle of elevation at which $Q$ was launched, giving your answers to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Express the position vector of P:</strong><br><br>Integrating acceleration $\\mathbf{a} = -9.8\\mathbf{j}\\text{ m s}^{-2}$ twice with initial velocity $\\mathbf{u}_P = 18\\mathbf{i} + 24.5\\mathbf{j}$ and $\\mathbf{r}(0) = \\mathbf{0}$:\begin{aligned} \\mathbf{r}_P(t) &= \\mathbf{u}_P t + \\dfrac{1}{2}\\mathbf{a}t^2 \cr &= (18t)\\mathbf{i} \cr &\qquad + (24.5t - 4.9t^2)\\mathbf{j}\\text{ m} \end{aligned}",
+        "<strong>(b) Find the apex time and position vector:</strong><br><br>At the maximum height of $P$, the vertical velocity component vanishes:\begin{aligned} v_{Py} &= 24.5 - 9.8t = 0 \cr t &= \\dfrac{24.5}{9.8} \cr &= 2.5\\text{ s} \end{aligned}Substitute $t = 2.5\\text{ s}$ into $\\mathbf{r}_P$:\begin{aligned} x_P(2.5) &= 18(2.5) = 45\\text{ m} \cr y_P(2.5) &= 24.5(2.5) - 4.9(2.5^2) \cr &= 61.25 - 30.625 \cr &= 30.625\\text{ m} \end{aligned}Thus:\begin{aligned} \\mathbf{r}_P(2.5) &= (45\\mathbf{i} + 30.6\\mathbf{j})\\text{ m} \end{aligned}",
+        "<strong>(c)(i) Calculate initial velocity vector of interceptor:</strong><br><br>Interceptor $Q$ is launched at $t = 1.5\\text{ s}$ and reaches $P$ at $t = 2.5\\text{ s}$. The time of flight of $Q$ is:\begin{aligned} \\Delta t &= 2.5 - 1.5 = 1\\text{ s} \end{aligned}Displacement required from $(55, 0)$ to $(45, 30.625)$:\begin{aligned} s_x &= 45 - 55 = -10\\text{ m} \cr s_y &= 30.625\\text{ m} \end{aligned}Horizontal velocity:\begin{aligned} v_x(1) &= -10 \\implies v_x = -10\\text{ m s}^{-1} \end{aligned}Vertical motion over $\\Delta t = 1\\text{ s}$:\begin{aligned} &s_y = v_y(\\Delta t) - \\dfrac{1}{2}g(\\Delta t)^2 \cr &30.625 = v_y(1) - 4.9(1^2) \cr &v_y = 30.625 + 4.9 \cr &v_y = 35.525\\text{ m s}^{-1} \end{aligned}Thus, the initial velocity vector is:\begin{aligned} \\mathbf{u}_Q &= (-10\\mathbf{i} + 35.5\\mathbf{j})\\text{ m s}^{-1} \end{aligned}",
+        "<strong>(c)(ii) Calculate launch speed and elevation angle:</strong><br><br>The speed of projection is the magnitude of $\\mathbf{u}_Q$:\begin{aligned} |\\mathbf{u}_Q| &= \\sqrt{(-10)^2 + 35.525^2} \cr &= \\sqrt{100 + 1262.0256} \cr &= \\sqrt{1362.0256} \cr &\approx 36.9\\text{ m s}^{-1} \end{aligned}The angle of elevation $\\theta$ above the horizontal towards $O$ is:\begin{aligned} \\theta &= \\arctan\\left(\\dfrac{35.525}{|-10|}\\right) \cr &= \\arctan(3.5525) \cr &\approx 74.3^\\circ \end{aligned}",
+        "Final Answer: (a) $\\mathbf{r}_P = 18t\\mathbf{i} + (24.5t - 4.9t^2)\\mathbf{j}\\text{ m}$, (b) $2.5\\text{ s}$, $(45\\mathbf{i} + 30.6\\mathbf{j})\\text{ m}$, (c)(i) $(-10\\mathbf{i} + 35.5\\mathbf{j})\\text{ m s}^{-1}$, (ii) $36.9\\text{ m s}^{-1}$ at $74.3^\\circ$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\mathbf{r}_P = 18t\\mathbf{i} + (24.5t - 4.9t^2)\\mathbf{j}\\text{ m}$, (b) $2.5\\text{ s}$, $(45\\mathbf{i} + 30.6\\mathbf{j})\\text{ m}$, (c)(i) $(10\\mathbf{i} + 35.5\\mathbf{j})\\text{ m s}^{-1}$, (ii) $36.9\\text{ m s}^{-1}$ at $74.3^\\circ$",
+            "feedback": "In part (c)(i), you gave a positive $\\mathbf{i}$ component. Because $Q$ starts at $x = 55$ and moves towards the target at $x = 45$, its horizontal velocity must be directed in the negative $\\mathbf{i}$ direction (towards $O$)."
+        },
+        {
+            "ans": "(a) $\\mathbf{r}_P = 18t\\mathbf{i} + (24.5t - 4.9t^2)\\mathbf{j}\\text{ m}$, (b) $2.5\\text{ s}$, $(45\\mathbf{i} + 30.6\\mathbf{j})\\text{ m}$, (c)(i) $(-10\\mathbf{i} + 25.7\\mathbf{j})\\text{ m s}^{-1}$, (ii) $27.6\\text{ m s}^{-1}$ at $68.7^\\circ$",
+            "feedback": "In part (c)(i), you subtracted $4.9$ from $30.625$ instead of adding it when solving $30.625 = v_y - 4.9$, mismanaging the sign of the gravity term."
+        },
+        {
+            "ans": "(a) $\\mathbf{r}_P = 18t\\mathbf{i} + (24.5t - 4.9t^2)\\mathbf{j}\\text{ m}$, (b) $2.5\\text{ s}$, $(45\\mathbf{i} + 30.6\\mathbf{j})\\text{ m}$, (c)(i) $(-4\\mathbf{i} + 24.5\\mathbf{j})\\text{ m s}^{-1}$, (ii) $24.8\\text{ m s}^{-1}$ at $80.7^\\circ$",
+            "feedback": "In part (c), you used the full flare flight time $t = 2.5\\text{ s}$ instead of the flight duration of the interceptor $\\Delta t = 2.5 - 1.5 = 1\\text{ s}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Shifted Time Frames in Multi-Body Problems",
+        "content": "A very common error in multi-projectile problems is using the absolute time $t = 2.5\\text{ s}$ in the equations of motion for both particles. Particle $Q$ is in the air for only $\\Delta t = 2.5 - 1.5 = 1.0\\text{ s}$. Always define the flight interval $\\Delta t = t - t_{\\text{launch}}$ explicitly before writing down the SUVAT displacements."
+    }
+},
+{
+    "id": "012225",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Projectiles",
+    "subtopic": [
+        "Elevated Projection",
+        "Time Window Above Altitude"
+    ],
+    "img": false,
+    "question": "A stone is projected from a point $A$ at the edge of a vertical cliff of height $49\\text{ m}$ above sea level. The initial speed of projection is $24.5\\text{ m s}^{-1}$ at an angle of elevation $\\theta$ above the horizontal, where $\\tan\\theta = \\dfrac{3}{4}$. The stone travels in a vertical plane perpendicular to the cliff edge and lands in the sea.<br><br><strong>(a)</strong> Show that the time of flight of the stone from $A$ to the surface of the sea is $5\\text{ s}$.<br><br><strong>(b)</strong> Calculate the horizontal distance from the base of the cliff to the point where the stone enters the sea.<br><br><strong>(c)</strong> Determine the total length of time during which the stone is at least $58.8\\text{ m}$ above sea level.<br><br><strong>(d)</strong> Calculate the speed with which the stone enters the sea.",
+    "steps": [
+        "<strong>(a) Show time of flight is 5 s:</strong><br><br>Given $\\tan\\theta = \\frac{3}{4}$, $\\cos\\theta = 0.8$ and $\\sin\\theta = 0.6$.\begin{aligned} u_x &= 24.5(0.8) = 19.6\\text{ m s}^{-1} \cr u_y &= 24.5(0.6) = 14.7\\text{ m s}^{-1} \end{aligned}Taking upwards as positive with origin at $A$, the sea is at $s_y = -49\\text{ m}$:\begin{aligned} &-49 = 14.7t - 4.9t^2 \cr &4.9t^2 - 14.7t - 49 = 0 \end{aligned}Dividing the entire equation by $4.9$:\begin{aligned} &t^2 - 3t - 10 = 0 \cr &(t - 5)(t + 2) = 0 \end{aligned}Since $t > 0$, the time of flight is $t = 5\\text{ s}$.",
+        "<strong>(b) Calculate the horizontal range:</strong><br><br>The horizontal speed is constant throughout flight:\begin{aligned} x &= u_x t \cr &= 19.6 \\times 5 \cr &= 98\\text{ m} \end{aligned}",
+        "<strong>(c) Determine duration above 58.8 m:</strong><br><br>An altitude of $58.8\\text{ m}$ above sea level corresponds to a displacement of $58.8 - 49 = 9.8\\text{ m}$ above the launch point $A$.\begin{aligned} &14.7t - 4.9t^2 \\ge 9.8 \cr &4.9t^2 - 14.7t + 9.8 \\le 0 \cr &t^2 - 3t + 2 \\le 0 \cr &(t - 1)(t - 2) \\le 0 \cr &1 \\le t \\le 2 \end{aligned}The stone is at or above this altitude from $t = 1\\text{ s}$ to $t = 2\\text{ s}$. The total duration is:\begin{aligned} \\Delta t &= 2 - 1 \cr &= 1\\text{ s} \end{aligned}",
+        "<strong>(d) Calculate impact speed:</strong><br><br>Horizontal component at impact remains:\begin{aligned} v_x &= 19.6\\text{ m s}^{-1} \end{aligned}Vertical component at $t = 5\\text{ s}$:\begin{aligned} v_y &= u_y - gt \cr &= 14.7 - 9.8(5) \cr &= 14.7 - 49 \cr &= -34.3\\text{ m s}^{-1} \end{aligned}The speed of impact is:\begin{aligned} v &= \\sqrt{v_x^2 + v_y^2} \cr &= \\sqrt{19.6^2 + (-34.3)^2} \cr &= \\sqrt{384.16 + 1176.49} \cr &= \\sqrt{1560.65} \cr &\approx 39.5\\text{ m s}^{-1} \end{aligned}",
+        "Final Answer: (a) $5\\text{ s}$, (b) $98\\text{ m}$, (c) $1\\text{ s}$, (d) $39.5\\text{ m s}^{-1}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $5\\text{ s}$, (b) $98\\text{ m}$, (c) $2\\text{ s}$, (d) $39.5\\text{ m s}^{-1}$",
+            "feedback": "In part (c), you identified the upper time limit $t = 2\\text{ s}$ as the total elapsed duration, instead of subtracting the entry time $t = 1\\text{ s}$ to obtain the window length $\\Delta t = 2 - 1 = 1\\text{ s}$."
+        },
+        {
+            "ans": "(a) $5\\text{ s}$, (b) $98\\text{ m}$, (c) $1\\text{ s}$, (d) $34.3\\text{ m s}^{-1}$",
+            "feedback": "In part (d), you stated only the magnitude of the vertical velocity component $|v_y|$ rather than combining both horizontal and vertical components to find the resultant speed."
+        },
+        {
+            "ans": "(a) $5\\text{ s}$, (b) $73.5\\text{ m}$, (c) $1\\text{ s}$, (d) $39.5\\text{ m s}^{-1}$",
+            "feedback": "In part (b), you used the vertical speed $u_y = 14.7\\text{ m s}^{-1}$ instead of the horizontal speed $u_x = 19.6\\text{ m s}^{-1}$ to find the horizontal range."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Energy Check for Impact Speed",
+        "content": "To verify the impact speed in part (d) without having to calculate individual velocity components, apply Conservation of Mechanical Energy: $\\frac{1}{2}mv^2 = \\frac{1}{2}mu^2 + mgh \\implies v = \\sqrt{u^2 + 2gh}$. Substituting $u = 24.5\\text{ m s}^{-1}$, $g = 9.8\\text{ m s}^{-2}$, and $h = 49\\text{ m}$ gives $v = \\sqrt{24.5^2 + 2(9.8)(49)} = \\sqrt{600.25 + 960.4} = \\sqrt{1560.65} \\approx 39.5\\text{ m s}^{-1}$. Notice that the final speed depends solely on the initial speed and vertical drop, regardless of the angle of projection!"
     }
 }
 ];
