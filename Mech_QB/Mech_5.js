@@ -229,7 +229,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "$AD = 2.00\\text{ m}$",
-            "feedback": "Check your moment equation: $17 + 4(2.5 - d) = 18 \\implies 4(2.5 - d) = 1$, giving $2.5 - d = 0.25 \\implies d = 2.25\\text{ m}$."
+            "feedback": "Check your moment equation: \\begin{aligned}17 + 4(2.5 - d) &= 18\\cr \\implies 4(2.5 - d)& = 1\\end{aligned} giving $2.5 - d = 0.25 \\implies d = 2.25\\text{ m}$."
         }
     ],
     "bradley_insight": {
@@ -393,6 +393,206 @@ window.ALEVEL_QUESTIONS = [
         "type": "deeper",
         "title": "The Head Teacher's Eye: Non-Uniform Rod Verification",
         "content": "For a uniform rod of length $4\\text{ m}$, the centre of mass would be at $2.0\\text{ m}$. Our result $\\bar{x} = 1.67\\text{ m}$ shows that the rod's mass is concentrated more towards end $A$, which explains why the string at $A$ carries more tension ($115\\text{ N}$) than the string at $B$ ($105\\text{ N}$)."
+    }
+},
+{
+    "id": "012211",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Dynamics & Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Upward vertical motion",
+        "Linear air resistance",
+        "Separation of variables"
+    ],
+    "img": false,
+    "question": "An object of mass $0.4\\text{ kg}$ is projected vertically upwards with an initial speed of $20\\text{ m s}^{-1}$. The velocity of the object at time $t$ seconds is $v\\text{ m s}^{-1}$. During the upward motion, the object experiences a resistance to motion of magnitude $R\\text{ N}$, where $R$ is directly proportional to $v$.<br><br>When the velocity of the object is $0.5\\text{ m s}^{-1}$, the resistance to motion is $0.1\\text{ N}$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Show that the upward motion of the object satisfies the differential equation:<br>$$\\dfrac{\\text{d}v}{\\text{d}t} = -9.8 - 0.5v$$<br><strong>(b)</strong> Solve this differential equation to find an expression for $v$ in terms of $t$.<br><br><strong>(c)</strong> Determine the value of $t$ when the object reaches its highest point, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Form the differential equation:</strong><br><br>Resistance is proportional to velocity: $R = kv$.<br><br>Using $R = 0.1$ when $v = 0.5$:\\begin{aligned} 0.1 &= 0.5k \\cr k &= \\dfrac{0.1}{0.5} \\cr &= 0.2 \\end{aligned}<br>Taking upwards as positive, both gravity and resistance act downwards:\\begin{aligned} &m\\dfrac{\\text{d}v}{\\text{d}t} = -mg - R \\cr &0.4\\dfrac{\\text{d}v}{\\text{d}t} = -0.4(9.8) - 0.2v \\cr &0.4\\dfrac{\\text{d}v}{\\text{d}t} = -3.92 - 0.2v \\end{aligned}<br>Dividing through by $0.4$:\\begin{aligned} \\dfrac{\\text{d}v}{\\text{d}t} &= -9.8 - 0.5v \\end{aligned}",
+        "<strong>(b) Solve the differential equation:</strong><br><br>Separating variables:\\begin{aligned} &\\int \\dfrac{1}{9.8 + 0.5v}\\,\\text{d}v = \\int -1\\,\\text{d}t \\cr &\\dfrac{1}{0.5}\\ln(9.8 + 0.5v) = -t + C \\cr &2\\ln(9.8 + 0.5v) = -t + C \\end{aligned}<br>Substitute initial condition $t = 0$, $v = 20$:\\begin{aligned} C &= 2\\ln(9.8 + 10) \\cr &= 2\\ln(19.8) \\end{aligned}<br>Rearranging for $v$:\\begin{aligned} &2\\ln(9.8 + 0.5v) - 2\\ln(19.8) = -t \\cr &\\ln\\left(\\dfrac{9.8 + 0.5v}{19.8}\\right) = -0.5t \\cr &\\dfrac{9.8 + 0.5v}{19.8} = \\text{e}^{-0.5t} \\cr &9.8 + 0.5v = 19.8\\text{e}^{-0.5t} \\cr &0.5v = 19.8\\text{e}^{-0.5t} - 9.8 \\cr &v = 39.6\\text{e}^{-0.5t} - 19.6 \\end{aligned}",
+        "<strong>(c) Time at highest point ($v = 0$):</strong><br><br>At the maximum height, $v = 0$:\\begin{aligned} &39.6\\text{e}^{-0.5t} - 19.6 = 0 \\cr &39.6\\text{e}^{-0.5t} = 19.6 \\cr &\\text{e}^{-0.5t} = \\dfrac{19.6}{39.6} \\cr &\\text{e}^{-0.5t} = \\dfrac{49}{99} \\cr &-0.5t = \\ln\\left(\\dfrac{49}{99}\\right) \\cr &t = 2\\ln\\left(\\dfrac{99}{49}\\right) \\cr &t \\approx 1.41\\text{ s} \\end{aligned}",
+        "Final Answer: (a) $\\dfrac{\\text{d}v}{\\text{d}t} = -9.8 - 0.5v$, (b) $v = 39.6\\text{e}^{-0.5t} - 19.6$, (c) $1.41\\text{ s}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\dfrac{\\text{d}v}{\\text{d}t} = -9.8 - 0.5v$, (b) $v = 39.6\\text{e}^{-0.5t} - 19.6$, (c) $2.04\\text{ s}$",
+            "feedback": "A time of $2.04\\text{ s}$ ignores air resistance ($t = 20 / 9.8$). Resistance acts downwards with gravity, shortening the ascent time to $1.41\\text{ s}$."
+        },
+        {
+            "ans": "(a) $\\dfrac{\\text{d}v}{\\text{d}t} = -9.8 - 0.5v$, (b) $v = 20\\text{e}^{-0.5t}$, (c) $1.41\\text{ s}$",
+            "feedback": "Remember the constant term $-9.8$ in the differential equation. Integrating does not give a single exponential decay term."
+        },
+        {
+            "ans": "(a) $\\dfrac{\\text{d}v}{\\text{d}t} = -9.8 - 0.5v$, (b) $v = 39.6\\text{e}^{-0.5t} - 19.6$, (c) $0.703\\text{ s}$",
+            "feedback": "Check the factor of $2$: $-0.5t = \\ln(49/99)$ gives $t = 2\\ln(99/49) \\approx 1.41\\text{ s}$, rather than dividing by $2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Air Resistance Shortens Ascent Time",
+        "content": "Under gravity alone, time to peak is $t = u/g = 20/9.8 \\approx 2.04\\text{ s}$. When air resistance opposes the upward motion, the total retarding force increases, so the object decelerates faster. Your calculated time must always be less than $u/g$."
+    }
+},
+{
+    "id": "012212",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Dynamics & Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Downward motion from rest",
+        "Terminal velocity",
+        "Exponential growth"
+    ],
+    "img": false,
+    "question": "A skydiver of mass $80\\text{ kg}$ falls vertically from rest from an aircraft. At time $t$ seconds after release, the downward velocity of the skydiver is $v\\text{ m s}^{-1}$. The air resistance opposing the motion is modelled as $16v\\text{ N}$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Show that the motion satisfies the differential equation:<br>$$\\dfrac{\\text{d}v}{\\text{d}t} = 0.2(49 - v)$$<br>and state the terminal velocity of the skydiver.<br><br><strong>(b)</strong> Find an expression for $v$ in terms of $t$.<br><br><strong>(c)</strong> Calculate the time taken for the skydiver to reach $50\\%$ of their terminal velocity, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Differential equation and terminal velocity:</strong><br><br>Taking downwards as positive:\\begin{aligned} &m\\dfrac{\\text{d}v}{\\text{d}t} = mg - R \\cr &80\\dfrac{\\text{d}v}{\\text{d}t} = 80(9.8) - 16v \\cr &80\\dfrac{\\text{d}v}{\\text{d}t} = 784 - 16v \\cr &\\dfrac{\\text{d}v}{\\text{d}t} = 9.8 - 0.2v \\cr &\\dfrac{\\text{d}v}{\\text{d}t} = 0.2(49 - v) \\end{aligned}<br>Terminal velocity occurs when acceleration is zero ($\\frac{\\text{d}v}{\\text{d}t} = 0$):\\begin{aligned} 49 - v &= 0 \\cr v &= 49\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Find velocity expression:</strong><br><br>Separating variables:\\begin{aligned} &\\int \\dfrac{1}{49 - v}\\,\\text{d}v = \\int 0.2\\,\\text{d}t \\cr &-\\ln(49 - v) = 0.2t + C \\end{aligned}<br>Substitute $t = 0$, $v = 0$:\\begin{aligned} C &= -\\ln(49) \\end{aligned}<br>Rearranging for $v$:\\begin{aligned} &\\ln(49) - \\ln(49 - v) = 0.2t \\cr &\\ln\\left(\\dfrac{49}{49 - v}\\right) = 0.2t \\cr &\\dfrac{49 - v}{49} = \\text{e}^{-0.2t} \\cr &49 - v = 49\\text{e}^{-0.2t} \\cr &v = 49(1 - \\text{e}^{-0.2t}) \\end{aligned}",
+        "<strong>(c) Time to reach $50\\%$ of terminal velocity:</strong><br><br>Set $v = 0.5 \\times 49 = 24.5\\text{ m s}^{-1}$:\\begin{aligned} &24.5 = 49(1 - \\text{e}^{-0.2t}) \\cr &1 - \\text{e}^{-0.2t} = 0.5 \\cr &\\text{e}^{-0.2t} = 0.5 \\cr &-0.2t = -\\ln(2) \\cr &t = \\dfrac{\\ln(2)}{0.2} \\cr &t = 5\\ln(2) \\cr &t \\approx 3.47\\text{ s} \\end{aligned}",
+        "Final Answer: (a) $49\\text{ m s}^{-1}$, (b) $v = 49(1 - \\text{e}^{-0.2t})$, (c) $3.47\\text{ s}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $49\\text{ m s}^{-1}$, (b) $v = 49(1 - \\text{e}^{-0.2t})$, (c) $2.50\\text{ s}$",
+            "feedback": "Using linear constant acceleration gives $t = 24.5 / 9.8 = 2.5\\text{ s}$. As speed builds, drag reduces acceleration, so reaching $24.5\\text{ m s}^{-1}$ takes longer ($3.47\\text{ s}$)."
+        },
+        {
+            "ans": "(a) $49\\text{ m s}^{-1}$, (b) $v = 49\\text{e}^{-0.2t}$, (c) $3.47\\text{ s}$",
+            "feedback": "The term $49\\text{e}^{-0.2t}$ predicts speed decreasing from $49$ to $0$. Acceleration from rest requires $v = 49(1 - \\text{e}^{-0.2t})$."
+        },
+        {
+            "ans": "(a) $9.8\\text{ m s}^{-1}$, (b) $v = 49(1 - \\text{e}^{-0.2t})$, (c) $3.47\\text{ s}$",
+            "feedback": "Terminal velocity is found by setting $\\frac{\\text{d}v}{\\text{d}t} = 0$, giving $49 - v = 0 \\implies v = 49\\text{ m s}^{-1}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Finding Terminal Velocity in One Step",
+        "content": "You never need to solve the full differential equation to find terminal velocity. By definition, terminal velocity occurs when acceleration drops to zero: set $\\frac{\\text{d}v}{\\text{d}t} = 0$ in the original equation of motion and solve for $v$ algebraically."
+    }
+},
+{
+    "id": "012213",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Dynamics & Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Quadratic resistance",
+        "Non-linear differential equations",
+        "Distance by integration"
+    ],
+    "img": false,
+    "question": "A motorboat of mass $500\\text{ kg}$ travels in a straight line on calm water. At time $t = 0$, when the boat is travelling at a speed of $12\\text{ m s}^{-1}$, its engine is switched off.<br><br>The boat then decelerates under the action of water resistance alone, which is modelled as a force of magnitude $20v^2\\text{ N}$, where $v\\text{ m s}^{-1}$ is the speed of the boat at time $t$ seconds.<br><br><strong>(a)</strong> Form and solve a differential equation for $v$ to show that:<br>$$v = \\dfrac{12}{1 + 0.48t}$$<br><strong>(b)</strong> Find the time taken for the speed of the boat to reduce from $12\\text{ m s}^{-1}$ to $3\\text{ m s}^{-1}$.<br><br><strong>(c)</strong> Calculate the distance travelled by the boat while its speed decreases from $12\\text{ m s}^{-1}$ to $3\\text{ m s}^{-1}$, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Form and solve the differential equation:</strong><br><br>Applying Newton's second law with resistance opposing motion:\\begin{aligned} &500\\dfrac{\\text{d}v}{\\text{d}t} = -20v^2 \\cr &\\dfrac{\\text{d}v}{\\text{d}t} = -0.04v^2 \\end{aligned}<br>Separating variables:\\begin{aligned} &\\int v^{-2}\\,\\text{d}v = \\int -0.04\\,\\text{d}t \\cr &-v^{-1} = -0.04t + C \\cr &\\dfrac{1}{v} = 0.04t - C \\end{aligned}<br>Substitute initial condition $t = 0$, $v = 12$:\\begin{aligned} \\dfrac{1}{12} &= -C \\implies -C = \\dfrac{1}{12} \\end{aligned}<br>Rearranging for $v$:\\begin{aligned} \\dfrac{1}{v} &= 0.04t + \\dfrac{1}{12} \\cr \\dfrac{1}{v} &= \\dfrac{0.48t + 1}{12} \\cr v &= \\dfrac{12}{1 + 0.48t} \\end{aligned}",
+        "<strong>(b) Time to decelerate to $3\\text{ m s}^{-1}$:</strong><br><br>Substitute $v = 3$:\\begin{aligned} &3 = \\dfrac{12}{1 + 0.48t} \\cr &1 + 0.48t = 4 \\cr &0.48t = 3 \\cr &t = \\dfrac{3}{0.48} \\cr &t = 6.25\\text{ s} \\end{aligned}",
+        "<strong>(c) Distance travelled:</strong><br><br>Distance is the integral of speed over time from $t = 0$ to $t = 6.25\\text{ s}$:\\begin{aligned} s &= \\int_0^{6.25} \\dfrac{12}{1 + 0.48t}\\,\\text{d}t \\cr &= \\left[\\dfrac{12}{0.48}\\ln(1 + 0.48t)\\right]_0^{6.25} \\cr &= 25\\Big[\\ln(1 + 0.48(6.25)) - \\ln(1)\\Big] \\cr &= 25\\ln(4) \\cr &= 50\\ln(2) \\cr &\\approx 34.7\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $v = \\dfrac{12}{1 + 0.48t}$, (b) $6.25\\text{ s}$, (c) $34.7\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $v = \\dfrac{12}{1 + 0.48t}$, (b) $6.25\\text{ s}$, (c) $16.6\\text{ m}$",
+            "feedback": "Remember to divide by the coefficient of $t$ ($0.48$) when integrating: $\\int \\frac{12}{1 + 0.48t}\\,\\text{d}t = \\frac{12}{0.48}\\ln(1 + 0.48t) = 25\\ln(1 + 0.48t)$."
+        },
+        {
+            "ans": "(a) $v = \\dfrac{12}{1 + 0.48t}$, (b) $6.25\\text{ s}$, (c) $46.9\\text{ m}$",
+            "feedback": "Using linear average speed gives $s = \\frac{12 + 3}{2} \\times 6.25 = 46.9\\text{ m}$. Because the drag is quadratic, deceleration is much higher initially, reducing total distance."
+        },
+        {
+            "ans": "(a) $v = \\dfrac{12}{1 + 0.48t}$, (b) $8.33\\text{ s}$, (c) $34.7\\text{ m}$",
+            "feedback": "Check your rearrangement when solving $3(1 + 0.48t) = 12$: $1 + 0.48t = 4 \\implies 0.48t = 3$, giving $t = 6.25\\text{ s}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Quadratic vs Linear Resistance",
+        "content": "Notice that integrating $v^{-2}\\,\\text{d}v$ produces a rational function $\\frac{1}{v}$, whereas linear resistance produces a natural logarithm $\\ln(v)$. For quadratic drag, speed never reaches absolute zero in finite time, but distance converges logarithmically."
+    }
+},
+{
+    "id": "012214",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Dynamics & Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Acceleration as v dv/dx",
+        "Velocity-displacement relation",
+        "Logarithmic decay"
+    ],
+    "img": false,
+    "question": "A particle of mass $0.5\\text{ kg}$ moves along a horizontal straight line. At distance $x$ metres from a fixed origin $O$, the speed of the particle is $v\\text{ m s}^{-1}$. The particle experiences a resistive force of magnitude $2v^2\\text{ N}$ directed opposite to its motion.<br><br>Initially, when $x = 0$, the speed of the particle is $10\\text{ m s}^{-1}$.<br><br><strong>(a)</strong> By expressing acceleration in the form $v\\dfrac{\\text{d}v}{\\text{d}x}$, show that:<br>$$\\dfrac{\\text{d}v}{\\text{d}x} = -4v$$<br><strong>(b)</strong> Find an expression for $v$ in terms of $x$.<br><br><strong>(c)</strong> Calculate the distance the particle travels before its speed is halved, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Form the differential equation:</strong><br><br>Using $F = ma$ with acceleration $a = v\\dfrac{\\text{d}v}{\\text{d}x}$:\\begin{aligned} &0.5\\left(v\\dfrac{\\text{d}v}{\\text{d}x}\\right) = -2v^2 \\end{aligned}<br>Dividing through by $0.5v$ (since $v > 0$):\\begin{aligned} \\dfrac{\\text{d}v}{\\text{d}x} = -4v \\end{aligned}",
+        "<strong>(b) Find velocity as a function of $x$:</strong><br><br>Separating variables:\\begin{aligned} &\\int \\dfrac{1}{v}\\,\\text{d}v = \\int -4\\,\\text{d}x \\cr &\\ln(v) = -4x + C \\end{aligned}<br>Substitute initial condition $x = 0$, $v = 10$:\\begin{aligned} C &= \\ln(10) \\end{aligned}<br>Rearranging for $v$:\\begin{aligned} &\\ln(v) - \\ln(10) = -4x \\cr &\\ln\\left(\\dfrac{v}{10}\\right) = -4x \\cr &\\dfrac{v}{10} = \\text{e}^{-4x} \\cr &v = 10\\text{e}^{-4x} \\end{aligned}",
+        "<strong>(c) Distance when speed is halved:</strong><br><br>Set $v = 5\\text{ m s}^{-1}$:\\begin{aligned} &5 = 10\\text{e}^{-4x} \\cr &\\text{e}^{-4x} = 0.5 \\cr &-4x = -\\ln(2) \\cr &x = \\dfrac{\\ln(2)}{4} \\cr &x \\approx 0.173\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $\\dfrac{\\text{d}v}{\\text{d}x} = -4v$, (b) $v = 10\\text{e}^{-4x}$, (c) $0.173\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\dfrac{\\text{d}v}{\\text{d}x} = -4v$, (b) $v = 10\\text{e}^{-4x}$, (c) $0.693\\text{ m}$",
+            "feedback": "Remember to divide by the coefficient $4$: $x = \\frac{\\ln(2)}{4} \\approx 0.173\\text{ m}$, rather than quoting $\\ln(2) \\approx 0.693\\text{ m}$ directly."
+        },
+        {
+            "ans": "(a) $\\dfrac{\\text{d}v}{\\text{d}x} = -4v$, (b) $v = 10 - 4x$, (c) $0.173\\text{ m}$",
+            "feedback": "Integrating $\\frac{1}{v}\\,\\text{d}v$ yields $\\ln(v)$, leading to exponential decay $v = 10\\text{e}^{-4x}$, not linear decay."
+        },
+        {
+            "ans": "(a) $\\dfrac{\\text{d}v}{\\text{d}x} = -4v$, (b) $v = 10\\text{e}^{-4x}$, (c) $0.075\\text{ m}$",
+            "feedback": "Check the logarithm: $\\text{e}^{-4x} = 0.5 \\implies -4x = \\ln(0.5) = -\\ln(2)$, giving $x = \\frac{\\ln(2)}{4} \\approx 0.173\\text{ m}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: When to Use v dv/dx",
+        "content": "Whenever a mechanics problem asks for a direct relationship between velocity $v$ and displacement $x$ without mentioning time $t$, replace acceleration $a$ with $v\\frac{\\text{d}v}{\\text{d}x}$. This eliminates $t$ entirely and saves a two-step integration."
+    }
+},
+{
+    "id": "012215",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Dynamics & Calculus",
+    "topic": "Differential Equations",
+    "subtopic": [
+        "Driving force with air resistance",
+        "Terminal speed",
+        "Acceleration from rest"
+    ],
+    "img": false,
+    "question": "A sports car of mass $1000\\text{ kg}$ accelerates from rest along a horizontal straight track. The engine provides a constant forward tractive force of $2400\\text{ N}$.<br><br>At time $t$ seconds, when the speed of the car is $v\\text{ m s}^{-1}$, the car experiences a resistive force of magnitude $40v\\text{ N}$.<br><br><strong>(a)</strong> Write down an equation of motion for the car and show that the terminal velocity is $60\\text{ m s}^{-1}$.<br><br><strong>(b)</strong> Solve the differential equation to find an expression for $v$ in terms of $t$.<br><br><strong>(c)</strong> Find the time taken for the car to accelerate from rest to a speed of $30\\text{ m s}^{-1}$, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Equation of motion and terminal velocity:</strong><br><br>Applying Newton's second law:\\begin{aligned} &1000\\dfrac{\\text{d}v}{\\text{d}t} = 2400 - 40v \\cr &\\dfrac{\\text{d}v}{\\text{d}t} = 2.4 - 0.04v \\cr &\\dfrac{\\text{d}v}{\\text{d}t} = 0.04(60 - v) \\end{aligned}<br>Terminal velocity occurs when acceleration is zero:\\begin{aligned} 60 - v &= 0 \\cr v &= 60\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Find velocity expression:</strong><br><br>Separating variables:\\begin{aligned} &\\int \\dfrac{1}{60 - v}\\,\\text{d}v = \\int 0.04\\,\\text{d}t \\cr &-\\ln(60 - v) = 0.04t + C \\end{aligned}<br>Substitute initial condition $t = 0$, $v = 0$:\\begin{aligned} C &= -\\ln(60) \\end{aligned}<br>Rearranging for $v$:\\begin{aligned} &\\ln(60) - \\ln(60 - v) = 0.04t \\cr &\\ln\\left(\\dfrac{60}{60 - v}\\right) = 0.04t \\cr &\\dfrac{60 - v}{60} = \\text{e}^{-0.04t} \\cr &60 - v = 60\\text{e}^{-0.04t} \\cr &v = 60(1 - \\text{e}^{-0.04t}) \\end{aligned}",
+        "<strong>(c) Time to reach $30\\text{ m s}^{-1}$:</strong><br><br>Substitute $v = 30$:\\begin{aligned} &30 = 60(1 - \\text{e}^{-0.04t}) \\cr &1 - \\text{e}^{-0.04t} = 0.5 \\cr &\\text{e}^{-0.04t} = 0.5 \\cr &-0.04t = -\\ln(2) \\cr &t = \\dfrac{\\ln(2)}{0.04} \\cr &t = 25\\ln(2) \\cr &t \\approx 17.3\\text{ s} \\end{aligned}",
+        "Final Answer: (a) $60\\text{ m s}^{-1}$, (b) $v = 60(1 - \\text{e}^{-0.04t})$, (c) $17.3\\text{ s}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $60\\text{ m s}^{-1}$, (b) $v = 60(1 - \\text{e}^{-0.04t})$, (c) $12.5\\text{ s}$",
+            "feedback": "Using initial acceleration $a = 2.4\\text{ m s}^{-2}$ linearly gives $t = 30 / 2.4 = 12.5\\text{ s}$. Because air resistance increases with speed, the car takes $17.3\\text{ s}$."
+        },
+        {
+            "ans": "(a) $60\\text{ m s}^{-1}$, (b) $v = 60\\text{e}^{-0.04t}$, (c) $17.3\\text{ s}$",
+            "feedback": "The term $60\\text{e}^{-0.04t}$ describes decay from $60$ to $0$. Acceleration from rest requires $v = 60(1 - \\text{e}^{-0.04t})$."
+        },
+        {
+            "ans": "(a) $40\\text{ m s}^{-1}$, (b) $v = 60(1 - \\text{e}^{-0.04t})$, (c) $17.3\\text{ s}$",
+            "feedback": "Terminal velocity is found by setting tractive force equal to resistance: $2400 = 40v \\implies v = 60\\text{ m s}^{-1}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Asymptotic Approach to Terminal Velocity",
+        "content": "The expression $v = V_{\\max}(1 - \\text{e}^{-kt})$ is the universal signature of constant driving force opposed by linear drag. Notice that reaching $50\\%$ of terminal velocity always takes $t = \\frac{\\ln 2}{k}$ seconds, independent of the mass."
     }
 }
 ];
