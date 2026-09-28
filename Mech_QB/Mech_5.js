@@ -990,7 +990,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Energy Check for Impact Speed",
-        "content": "To verify the impact speed in part (d) without having to calculate individual velocity components, apply Conservation of Mechanical Energy: $\\frac{1}{2}mv^2 = \\frac{1}{2}mu^2 + mgh \\implies v = \\sqrt{u^2 + 2gh}$. Substituting $u = 24.5\\text{ m s}^{-1}$, $g = 9.8\\text{ m s}^{-2}$, and $h = 49\\text{ m}$ gives $v = \\sqrt{24.5^2 + 2(9.8)(49)} = \\sqrt{600.25 + 960.4} = \\sqrt{1560.65} \\approx 39.5\\text{ m s}^{-1}$. Notice that the final speed depends solely on the initial speed and vertical drop, regardless of the angle of projection!"
+        "content": "To verify the impact speed in part (d) without having to calculate individual velocity components, apply Conservation of Mechanical Energy: \\begin{aligned}\\frac{1}{2}mv^2 &= \\frac{1}{2}mu^2 + mgh \\cr \\implies v & = \\sqrt{u^2 + 2gh}\\end{aligned} Substituting $u = 24.5\\text{ m s}^{-1},$ $g = 9.8\\text{ m s}^{-2}$, and $h = 49\\text{ m}$ gives \\begin{aligned}v & = \\sqrt{24.5^2 + 2(9.8)(49)}\\cr & = \\sqrt{600.25 + 960.4}\\cr & = \\sqrt{1560.65}\\cr & \\approx 39.5\\text{ m s}^{-1}\\end{aligned} Notice that the final speed depends solely on the initial speed and vertical drop, regardless of the angle of projection!"
     }
 }
 ];
