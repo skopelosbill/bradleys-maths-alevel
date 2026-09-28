@@ -738,15 +738,15 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "(a) $T = \\dfrac{mg(\\sin 25^\\circ + \\mu\\cos 25^\\circ)}{\\cos\\beta + \\mu\\sin\\beta}$, (b) $\\beta = 0.0^\\circ$, (c) $T_{\\min} = 189\\text{ N}$",
-            "feedback": "Pulling parallel to the plane ($\\\\beta = 0^\\\\circ$) does not minimise $T$. Pulling slightly upward lifts the object and reduces friction, achieving a lower minimum force of $162\\text{ N}$."
+            "feedback": "Pulling parallel to the plane ($\\beta = 0^\\circ$) does not minimise $T$. Pulling slightly upward lifts the object and reduces friction, achieving a lower minimum force of $162\\text{ N}$."
         },
         {
             "ans": "(a) $T = \\dfrac{mg(\\sin 25^\\circ + \\mu\\cos 25^\\circ)}{\\cos\\beta + \\mu\\sin\\beta}$, (b) $\\beta = 25.0^\\circ$, (c) $T_{\\min} = 162\\text{ N}$",
-            "feedback": "The optimal pulling angle equals the angle of friction $\\\\lambda = \\\\arctan(\\\\mu) \\\\approx 31.0^\\\\circ$, which is independent of the slope angle of $25^\\\\circ$."
+            "feedback": "The optimal pulling angle equals the angle of friction $\\lambda = \\arctan(\\mu) \\approx 31.0^\\circ$, which is independent of the slope angle of $25^\\circ$."
         },
         {
             "ans": "(a) $T = \\dfrac{mg(\\sin 25^\\circ + \\mu\\cos 25^\\circ)}{\\cos\\beta + \\mu\\sin\\beta}$, (b) $\\beta = 31.0^\\circ$, (c) $T_{\\min} = 189\\text{ N}$",
-            "feedback": "Remember that at the minimum force, the maximum value of the denominator is $\\\\sqrt{1 + \\\\mu^2} \\\\approx 1.166$, rather than $1$."
+            "feedback": "Remember that at the minimum force, the maximum value of the denominator is $\\sqrt{1 + \\mu^2} \\approx 1.166$, rather than $1$."
         }
     ],
     "bradley_insight": {
@@ -778,11 +778,11 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "(a) $R = 25g\\cos 20^\\circ + F\\sin 30^\\circ$, (b) Increases $R$ hence increases $\\mu R$, (c) No, friction always exceeds driving force",
-            "feedback": "Because $\\\\cos 30^\\\\circ > \\\\mu\\\\sin 30^\\\\circ$ ($0.866 > 0.225$), the driving component grows faster than friction as $F$ increases. Motion is initiated once $F > 30.9\\text{ N}$."
+            "feedback": "Because $\\cos 30^\\circ > \\mu\\sin 30^\\circ$ ($0.866 > 0.225$), the driving component grows faster than friction as $F$ increases. Motion is initiated once $F > 30.9\\text{ N}$."
         },
         {
             "ans": "(a) $R = 25g\\cos 20^\\circ + F\\sin 30^\\circ$, (b) Increases $R$ hence increases $\\mu R$, (c) Yes, $F_{\\min} = 22.9\\text{ N}$",
-            "feedback": "Remember to include the $+F\\\\sin 30^\\\\circ$ term when calculating normal reaction. Omitting it underestimates the required pushing force."
+            "feedback": "Remember to include the $+F\\sin 30^\\circ$ term when calculating normal reaction. Omitting it underestimates the required pushing force."
         },
         {
             "ans": "(a) $R = 25g\\cos 20^\\circ + F\\sin 30^\\circ$, (b) Increases $R$ hence increases $\\mu R$, (c) Yes, $F_{\\min} = 45.2\\text{ N}$",
