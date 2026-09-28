@@ -198,5 +198,201 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Acceleration Changes Abruptly at Burnout",
         "content": "Engine burnout divides the problem into two completely distinct physical regimes. During the first $5\\text{ s}$, the rocket accelerates upwards under its motor ($+6.0\\text{ m s}^{-2}$). The moment fuel runs out, acceleration instantly becomes $-9.8\\text{ m s}^{-2}$ downwards, even though the rocket continues climbing upwards due to its inertia."
     }
+},
+{
+    "id": "012206",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Moments",
+    "subtopic": [
+        "Central pivot",
+        "Uniform plank",
+        "Principle of moments"
+    ],
+    "img": "images/Mechanics_pngs/012206.png",
+    "question": "The diagram shows a uniform plank $AB$ of length $5\\text{ m}$ supported in horizontal equilibrium by means of a central pivot.<br><br>On the plank there are three objects of masses $10\\text{ kg}$, $4\\text{ kg}$, and $18\\text{ kg}$ placed in positions $C$, $D$, and $E$ respectively. The distance $AC$ is $0.8\\text{ m}$ and the distance $AE$ is $3.5\\text{ m}$.<br><br>Find the distance $AD$.",
+    "steps": [
+        "<strong>Locate distances from the central pivot:</strong><br><br>The plank is uniform and has length $5\\text{ m}$, so the central pivot $P$ is at the midpoint, $2.5\\text{ m}$ from $A$.<br><br>The weight of the plank acts directly through this pivot and exerts zero moment.<br><br>Distances from the pivot $P$ ($2.5\\text{ m}$ from $A$):<br>• Distance $CP = 2.5 - 0.8 = 1.7\\text{ m}$ (left)<br>• Distance $EP = 3.5 - 2.5 = 1.0\\text{ m}$ (right)",
+        "<strong>Take moments about the pivot:</strong><br><br>Let $d$ be the distance of mass $D$ from end $A$, so its distance from the pivot is $(2.5 - d)$ to the left.<br><br>Equating anticlockwise and clockwise moments about $P$:\\begin{aligned} &10g(1.7) + 4g(2.5 - d) = 18g(1.0) \\cr &17g + 10g - 4gd = 18g \\cr &27 - 4d = 18 \\cr &4d = 9 \\cr &d = 2.25\\text{ m} \\end{aligned}<br>Therefore, the distance $AD = 2.25\\text{ m}$.",
+        "Final Answer: $AD = 2.25\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "$AD = 2.75\\text{ m}$",
+            "feedback": "Mass $D$ must lie to the left of the pivot ($2.25\\text{ m}$ from $A$) to assist mass $C$. Placing it $0.25\\text{ m}$ to the right gives $2.75\\text{ m}$, unbalancing the clockwise side."
+        },
+        {
+            "ans": "$AD = 0.25\\text{ m}$",
+            "feedback": "The value $0.25\\text{ m}$ is the distance from the central pivot to $D$. The question asks for the distance from end $A$, which is $2.5 - 0.25 = 2.25\\text{ m}$."
+        },
+        {
+            "ans": "$AD = 2.00\\text{ m}$",
+            "feedback": "Check your moment equation: $17 + 4(2.5 - d) = 18 \\implies 4(2.5 - d) = 1$, giving $2.5 - d = 0.25 \\implies d = 2.25\\text{ m}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Pivot at Centre of Mass",
+        "content": "Placing the pivot at the midpoint of a uniform plank is an examiner's gift: the weight of the plank acts directly through the pivot line, producing zero turning effect. You only need to balance the moments of the external loads."
+    }
+},
+{
+    "id": "012207",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Moments",
+    "subtopic": [
+        "Off-centre pivot",
+        "Weight of a uniform beam",
+        "Equilibrium"
+    ],
+    "img": "images/Mechanics_pngs/012207.png",
+    "question": "The diagram shows a uniform beam $AB$ of length $6\\text{ m}$ and mass $20\\text{ kg}$ resting horizontally in equilibrium on a smooth pivot at $P$, where $AP = 2\\text{ m}$.<br><br>An object of mass $M\\text{ kg}$ is attached to end $A$ and an object of mass $15\\text{ kg}$ is attached to end $B$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> State the distance from end $A$ to the centre of mass $G$ of the beam.<br><br><strong>(b)</strong> Calculate the mass $M$ required for the beam to rest in horizontal equilibrium.",
+    "steps": [
+        "<strong>(a) Centre of mass:</strong><br><br>Because the beam is uniform, its centre of mass $G$ lies at its geometric midpoint:\\begin{aligned} AG &= \\dfrac{6}{2} \\cr &= 3\\text{ m} \\end{aligned}",
+        "<strong>(b) Calculate mass $M$:</strong><br><br>Distances from the pivot $P$ (located $2\\text{ m}$ from $A$):<br>• Distance to $A$: $2\\text{ m}$ (left)<br>• Distance to $G$: $3 - 2 = 1\\text{ m}$ (right)<br>• Distance to $B$: $6 - 2 = 4\\text{ m}$ (right)<br><br>Taking moments about the pivot $P$:\\begin{aligned} &Mg(2) = 20g(1) + 15g(4) \\cr &2Mg = 20g + 60g \\cr &2M = 80 \\cr &M = 40\\text{ kg} \\end{aligned}",
+        "Final Answer: (a) $3\\text{ m}$, (b) $M = 40\\text{ kg}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $3\\text{ m}$, (b) $M = 30\\text{ kg}$",
+            "feedback": "Remember to include the beam's own weight ($20g\\text{ N}$) acting at its midpoint. Omitting the beam weight gives $2M = 60 \\implies M = 30\\text{ kg}$."
+        },
+        {
+            "ans": "(a) $3\\text{ m}$, (b) $M = 50\\text{ kg}$",
+            "feedback": "The centre of mass is at $3\\text{ m}$ from $A$, which is to the right of the pivot ($2\\text{ m}$ from $A$). Its moment acts clockwise with the $15\\text{ kg}$ mass, not anticlockwise."
+        },
+        {
+            "ans": "(a) $2\\text{ m}$, (b) $M = 40\\text{ kg}$",
+            "feedback": "The centre of mass of a uniform $6\\text{ m}$ beam is at its midpoint ($3\\text{ m}$ from $A$), not at the pivot point $P$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Non-Central Pivots Include Beam Weight",
+        "content": "Whenever the pivot is not at the midpoint of a beam, the weight of the beam produces a non-zero turning moment. Always mark the centre of mass $G$ clearly and measure its distance from your chosen pivot point."
+    }
+},
+{
+    "id": "012208",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Moments",
+    "subtopic": [
+        "Beam on two supports",
+        "Normal reaction forces",
+        "Multiple point loads"
+    ],
+    "img": "images/Mechanics_pngs/012208.png",
+    "question": "The diagram shows a uniform plank $AB$ of length $6\\text{ m}$ and mass $30\\text{ kg}$ resting horizontally on two smooth supports at $C$ and $D$, where $AC = 1.0\\text{ m}$ and $AD = 5.0\\text{ m}$.<br><br>Two loads of masses $18\\text{ kg}$ and $10\\text{ kg}$ are placed on the plank at points $P$ and $Q$ respectively, where $AP = 2.0\\text{ m}$ and $AQ = 5.2\\text{ m}$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Calculate the magnitude of the normal reaction force exerted on the plank by the support at $D$.<br><br><strong>(b)</strong> Calculate the magnitude of the normal reaction force exerted on the plank by the support at $C$.",
+    "steps": [
+        "<strong>(a) Normal reaction at support $D$:</strong><br><br>The plank is uniform, so its weight $30g\\text{ N}$ acts at its midpoint, $3.0\\text{ m}$ from $A$.<br><br>Measure distances from support $C$ ($1.0\\text{ m}$ from $A$):<br>• Distance to load $P$: $2.0 - 1.0 = 1.0\\text{ m}$<br>• Distance to midpoint: $3.0 - 1.0 = 2.0\\text{ m}$<br>• Distance to support $D$: $5.0 - 1.0 = 4.0\\text{ m}$<br>• Distance to load $Q$: $5.2 - 1.0 = 4.2\\text{ m}$<br><br>Taking moments about $C$:\\begin{aligned} &4.0 R_D = 18g(1.0) + 30g(2.0) \\cr &\\qquad + 10g(4.2) \\cr &4.0 R_D = 18g + 60g + 42g \\cr &4.0 R_D = 120g \\cr &R_D = 30g \\cr &R_D = 30(9.8) \\cr &R_D = 294\\text{ N} \\end{aligned}",
+        "<strong>(b) Normal reaction at support $C$:</strong><br><br>Resolving forces vertically for equilibrium:\\begin{aligned} &R_C + R_D = (18 + 30 + 10)g \\cr &R_C + 294 = 58(9.8) \\cr &R_C + 294 = 568.4 \\cr &R_C = 568.4 - 294 \\cr &R_C = 274.4\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $R_D = 294\\text{ N}$, (b) $R_C = 274.4\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $R_D = 274.4\\text{ N}$, (b) $R_C = 294\\text{ N}$",
+            "feedback": "The reactions have been reversed. Support $D$ carries the larger load ($294\\text{ N}$) because the $30\\text{ kg}$ plank weight and $10\\text{ kg}$ mass lie closer to it."
+        },
+        {
+            "ans": "(a) $R_D = 147\\text{ N}$, (b) $R_C = 421.4\\text{ N}$",
+            "feedback": "Remember to include the plank's weight ($30g\\text{ N}$) at the midpoint. Omitting the plank weight underestimates the reaction at $D$."
+        },
+        {
+            "ans": "(a) $R_D = 294\\text{ N}$, (b) $R_C = 250\\text{ N}$",
+            "feedback": "Check the vertical resolution: total weight is $(18 + 30 + 10)(9.8) = 568.4\\text{ N}$. Subtracting $294\\text{ N}$ gives $R_C = 274.4\\text{ N}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Vertical Resolution for the Second Reaction",
+        "content": "Once you find one support reaction by taking moments about the other, never set up a second moment equation. Resolving vertically ($R_C + R_D = \\sum W$) gives the remaining reaction in one simple subtraction."
+    }
+},
+{
+    "id": "012209",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Moments",
+    "subtopic": [
+        "Tilting beam",
+        "Limiting equilibrium",
+        "Overhang"
+    ],
+    "img": "images/Mechanics_pngs/012209.png",
+    "question": "The diagram shows a uniform beam $AB$ of mass $40\\text{ kg}$ and length $6\\text{ m}$ resting horizontally on two smooth supports at $C$ and $D$, where $AC = 1.5\\text{ m}$ and $DB = 1.5\\text{ m}$.<br><br>A person of mass $60\\text{ kg}$ walks along the overhang $DB$ towards end $B$. When the person reaches point $X$, at a distance of $x\\text{ m}$ from support $D$, the beam is on the point of tilting about $D$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> State the magnitude of the normal reaction force exerted by the support at $C$ when the beam is on the point of tilting about $D$.<br><br><strong>(b)</strong> Calculate the distance $x$.<br><br><strong>(c)</strong> State, with a reason, whether the person can safely reach end $B$ without the beam tipping.",
+    "steps": [
+        "<strong>(a) Reaction at support $C$:</strong><br><br>When the beam is on the point of tilting about support $D$, it breaks contact with support $C$.<br><br>Therefore, the normal reaction at $C$ is:\\begin{aligned} R_C = 0\\text{ N} \\end{aligned}",
+        "<strong>(b) Calculate distance $x$:</strong><br><br>The beam is uniform, so its centre of mass lies at its midpoint, $3.0\\text{ m}$ from $A$.<br><br>Distance from support $D$ ($4.5\\text{ m}$ from $A$) to the centre of mass:\\begin{aligned} 4.5 - 3.0 = 1.5\\text{ m} \\end{aligned}<br>Taking moments about $D$ with $R_C = 0$:\\begin{aligned} &40g(1.5) = 60g(x) \\cr &60g = 60gx \\cr &x = 1.0\\text{ m} \\end{aligned}",
+        "<strong>(c) Safety check for end $B$:</strong><br><br>The overhang distance $DB$ is $1.5\\text{ m}$.<br><br>Because tilting occurs when the person is $1.0\\text{ m}$ from $D$, walking past $1.0\\text{ m}$ tips the beam. Therefore, the person cannot safely reach end $B$.",
+        "Final Answer: (a) $R_C = 0\\text{ N}$, (b) $x = 1.0\\text{ m}$, (c) No, tilts at $1.0\\text{ m}$ before reaching $1.5\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $R_C = 0\\text{ N}$, (b) $x = 1.5\\text{ m}$, (c) Yes, reaches end $B$ exactly as it tilts",
+            "feedback": "The beam tilts before the person reaches end $B$. Equating moments about $D$ gives $60x = 40(1.5) = 60 \\implies x = 1.0\\text{ m}$, which is short of the $1.5\\text{ m}$ overhang."
+        },
+        {
+            "ans": "(a) $R_C = 392\\text{ N}$, (b) $x = 1.0\\text{ m}$, (c) No, tilts at $1.0\\text{ m}$ before reaching $1.5\\text{ m}$",
+            "feedback": "At the point of tilting about $D$, contact with support $C$ is broken, so $R_C = 0\\text{ N}$, not $392\\text{ N}$."
+        },
+        {
+            "ans": "(a) $R_C = 0\\text{ N}$, (b) $x = 0.67\\text{ m}$, (c) No, tilts at $0.67\\text{ m}$ before reaching $1.5\\text{ m}$",
+            "feedback": "Check your moment equation: $60x = 40 \\times 1.5 = 60$, which yields $x = 1.0\\text{ m}$, not $40 / 60 = 0.67\\text{ m}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: The Definition of Tilting",
+        "content": "The condition 'on the point of tilting about a support' means the beam is just about to pivot off the other support. Immediately set the normal reaction at the non-tilting support to zero ($R_C = 0$)."
+    }
+},
+{
+    "id": "012210",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Moments",
+    "subtopic": [
+        "Non-uniform beam",
+        "Centre of mass",
+        "Suspended rod"
+    ],
+    "img": "images/Mechanics_pngs/012210.png",
+    "question": "The diagram shows a non-uniform rod $AB$ of length $4\\text{ m}$ and weight $120\\text{ N}$ suspended horizontally in equilibrium by two light vertical strings attached to its ends $A$ and $B$.<br><br>Two point loads of weights $40\\text{ N}$ and $60\\text{ N}$ are attached to the rod at points $C$ and $D$ respectively, where $AC = 1.0\\text{ m}$ and $AD = 3.0\\text{ m}$. The tension in the vertical string attached at end $B$ is measured to be $105\\text{ N}$.<br><br><strong>(a)</strong> Find the tension in the vertical string attached at end $A$.<br><br><strong>(b)</strong> Calculate the distance of the centre of mass of the rod from end $A$.",
+    "steps": [
+        "<strong>(a) Tension in string at $A$:</strong><br><br>For vertical equilibrium, total upward tensions balance total downward weights:\\begin{aligned} &T_A + T_B = 120 + 40 + 60 \\cr &T_A + 105 = 220 \\cr &T_A = 220 - 105 \\cr &T_A = 115\\text{ N} \\end{aligned}",
+        "<strong>(b) Centre of mass distance from $A$:</strong><br><br>Let $\\bar{x}$ be the distance of the centre of mass from end $A$.<br><br>Taking moments about end $A$:\\begin{aligned} &40(1.0) + 120\\bar{x} + 60(3.0) \\cr &\\quad = 105(4.0) \\cr &40 + 120\\bar{x} + 180 = 420 \\cr &120\\bar{x} + 220 = 420 \\cr &120\\bar{x} = 200 \\cr &\\bar{x} = \\dfrac{200}{120} \\cr &\\bar{x} = \\dfrac{5}{3} \\approx 1.67\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $T_A = 115\\text{ N}$, (b) $\\bar{x} = 1.67\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T_A = 115\\text{ N}$, (b) $\\bar{x} = 2.33\\text{ m}$",
+            "feedback": "This distance is measured from end $B$ ($4 - 1.67 = 2.33\\text{ m}$). The question asks for the distance of the centre of mass from end $A$."
+        },
+        {
+            "ans": "(a) $T_A = 105\\text{ N}$, (b) $\\bar{x} = 2.00\\text{ m}$",
+            "feedback": "The rod is non-uniform, so its centre of mass is not at the geometric midpoint ($2.00\\text{ m}$), and the tensions at $A$ and $B$ are not equal."
+        },
+        {
+            "ans": "(a) $T_A = 115\\text{ N}$, (b) $\\bar{x} = 3.50\\text{ m}$",
+            "feedback": "Remember to include the moment of the $40\\text{ N}$ load at $C$. Omitting it gives $120\\bar{x} + 180 = 420 \\implies \\bar{x} = 2.0\\text{ m}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Non-Uniform Rod Verification",
+        "content": "For a uniform rod of length $4\\text{ m}$, the centre of mass would be at $2.0\\text{ m}$. Our result $\\bar{x} = 1.67\\text{ m}$ shows that the rod's mass is concentrated more towards end $A$, which explains why the string at $A$ carries more tension ($115\\text{ N}$) than the string at $B$ ($105\\text{ N}$)."
+    }
 }
 ];
