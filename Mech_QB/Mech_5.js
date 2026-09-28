@@ -498,7 +498,7 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "(a) $v = \\dfrac{12}{1 + 0.48t}$, (b) $6.25\\text{ s}$, (c) $16.6\\text{ m}$",
-            "feedback": "Remember to divide by the coefficient of $t$ ($0.48$) when integrating: $\\int \\frac{12}{1 + 0.48t}\\,\\text{d}t = \\frac{12}{0.48}\\ln(1 + 0.48t) = 25\\ln(1 + 0.48t)$."
+            "feedback": "Remember to divide by the coefficient of $t$ ($0.48$) when integrating: \\begin{aligned}\\int \\frac{12}{1 + 0.48t}\\,\\text{d}t &= \\frac{12}{0.48}\\ln(1 + 0.48t)\\cr & = 25\\ln(1 + 0.48t)\\end{aligned}"
         },
         {
             "ans": "(a) $v = \\dfrac{12}{1 + 0.48t}$, (b) $6.25\\text{ s}$, (c) $46.9\\text{ m}$",
@@ -546,7 +546,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(a) $\\dfrac{\\text{d}v}{\\text{d}x} = -4v$, (b) $v = 10\\text{e}^{-4x}$, (c) $0.075\\text{ m}$",
-            "feedback": "Check the logarithm: $\\text{e}^{-4x} = 0.5 \\implies -4x = \\ln(0.5) = -\\ln(2)$, giving $x = \\frac{\\ln(2)}{4} \\approx 0.173\\text{ m}$."
+            "feedback": "Check the logarithm: \\begin{aligned}\\text{e}^{-4x} &= 0.5 \\cr \\implies -4x &= \\ln(0.5) \\cr &= -\\ln(2)\\end{aligned} giving $x = \\frac{\\ln(2)}{4} \\approx 0.173\\text{ m}$."
         }
     ],
     "bradley_insight": {
@@ -593,6 +593,206 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Asymptotic Approach to Terminal Velocity",
         "content": "The expression $v = V_{\\max}(1 - \\text{e}^{-kt})$ is the universal signature of constant driving force opposed by linear drag. Notice that reaching $50\\%$ of terminal velocity always takes $t = \\frac{\\ln 2}{k}$ seconds, independent of the mass."
+    }
+},
+{
+    "id": "012216",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Inclined Planes & Friction",
+    "subtopic": [
+        "Angled force on an incline",
+        "Limiting equilibrium",
+        "Direction of motion"
+    ],
+    "img": false,
+    "question": "An object of mass $15\\text{ kg}$ is placed on a rough plane inclined at an angle $\\alpha$ to the horizontal, where $\\sin\\alpha = \\dfrac{3}{5}$. The coefficient of friction between the object and the plane is $0.5$.<br><br>A pulling force of magnitude $T\\text{ N}$, acting at an angle $\\beta$ above the line of greatest slope of the plane, is applied to the object. The angle $\\beta$ is such that $\\sin\\beta = \\dfrac{5}{13}$. The line of action of the force and the line of greatest slope lie in the same vertical plane.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Given that the object is on the point of slipping down the plane, find the value of $T$, giving your answer to $3$ significant figures.<br><br><strong>(b)</strong> Given instead that $T = 156\\text{ N}$, determine whether the object moves up the plane, moves down the plane, or remains in equilibrium, justifying your answer fully.",
+    "steps": [
+        "<strong>Resolve forces perpendicular to the plane:</strong><br><br>Weight components for $m = 15\\text{ kg}$:\\begin{aligned} W_\\parallel &= 15(9.8)\\sin\\alpha \\cr &= 147(0.6) \\cr &= 88.2\\text{ N} \\cr W_\\perp &= 15(9.8)\\cos\\alpha \\cr &= 147(0.8) \\cr &= 117.6\\text{ N} \\end{aligned}<br>Resolving perpendicular to the plane:\\begin{aligned} &R + T\\sin\\beta = W_\\perp \\cr &R + \\dfrac{5}{13}T = 117.6 \\cr &R = 117.6 - \\dfrac{5}{13}T \\end{aligned}",
+        "<strong>(a) Value of $T$ for slip down:</strong><br><br>When slipping down is impending, friction $F_{\\text{max}} = \\mu R$ acts up the plane:\\begin{aligned} F_{\\text{max}} &= 0.5\\left(117.6 - \\dfrac{5}{13}T\\right) \\cr &= 58.8 - \\dfrac{2.5}{13}T \\end{aligned}<br>Resolving parallel to the plane:\\begin{aligned} &T\\cos\\beta + F_{\\text{max}} = W_\\parallel \\cr &\\dfrac{12}{13}T + 58.8 - \\dfrac{2.5}{13}T = 88.2 \\cr &\\dfrac{9.5}{13}T = 29.4 \\cr &T = \\dfrac{29.4 \\times 13}{9.5} \\cr &T \\approx 40.2\\text{ N} \\end{aligned}",
+        "<strong>(b) Motion when $T = 156\\text{ N}$:</strong><br><br>Normal reaction:\\begin{aligned} R &= 117.6 - \\dfrac{5}{13}(156) \\cr &= 117.6 - 60 \\cr &= 57.6\\text{ N} \\end{aligned}<br>Maximum available friction:\\begin{aligned} F_{\\text{max}} &= 0.5(57.6) \\cr &= 28.8\\text{ N} \\end{aligned}<br>Net force along plane without friction:\\begin{aligned} &T\\cos\\beta - W_\\parallel \\cr &\\quad = 156\\left(\\dfrac{12}{13}\\right) - 88.2 \\cr &\\quad = 144 - 88.2 \\cr &\\quad = 55.8\\text{ N (upwards)} \\end{aligned}<br>Since $55.8\\text{ N} > 28.8\\text{ N}$, the upward pull exceeds maximum friction. The object moves up the plane.",
+        "Final Answer: (a) $T = 40.2\\text{ N}$, (b) Moves up the plane"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T = 40.2\\text{ N}$, (b) Remains in equilibrium",
+            "feedback": "Compare the net upward pull ($55.8\\text{ N}$) to maximum friction ($28.8\\text{ N}$). Because the driving force exceeds limiting friction, equilibrium cannot be maintained."
+        },
+        {
+            "ans": "(a) $T = 95.6\\text{ N}$, (b) Moves up the plane",
+            "feedback": "For impending motion down the plane, friction acts up the plane. Setting friction to act downwards yields an incorrect value of $T = 95.6\\text{ N}$."
+        },
+        {
+            "ans": "(a) $T = 40.2\\text{ N}$, (b) Moves down the plane",
+            "feedback": "The component of tension up the plane ($144\\text{ N}$) is larger than the component of weight down the plane ($88.2\\text{ N}$), so motion cannot be downwards."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Angled Pull Reduces Normal Reaction",
+        "content": "Pulling at an angle $\\beta$ above the incline has a dual effect: the component $T\\cos\\beta$ pulls the object up the plane, while the component $T\\sin\\beta$ lifts the object slightly, reducing the normal reaction ($R = mg\\cos\\alpha - T\\sin\\beta$) and decreasing the maximum available friction."
+    }
+},
+{
+    "id": "012217",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Inclined Planes & Friction",
+    "subtopic": [
+        "Horizontal applied force",
+        "Normal reaction dependent on force",
+        "Range of equilibrium"
+    ],
+    "img": false,
+    "question": "A block of mass $10\\text{ kg}$ rests on a rough plane inclined at $30^\\circ$ to the horizontal. The coefficient of friction between the block and the plane is $\\mu = 0.3$.<br><br>A horizontal force of magnitude $P\\text{ N}$, acting in a vertical plane containing a line of greatest slope, is applied to the block such that it pushes the block towards the incline.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the value of $P$ for which the block is on the point of sliding down the plane, giving your answer to $3$ significant figures.<br><br><strong>(b)</strong> Find the value of $P$ for which the block is on the point of sliding up the plane, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>Resolve forces perpendicular to the plane:</strong><br><br>The horizontal force $P$ pushes into the plane with component $P\\sin 30^\\circ$:\\begin{aligned} R &= mg\\cos 30^\\circ + P\\sin 30^\\circ \\cr &= 10(9.8)\\cos 30^\\circ + 0.5P \\cr &\\approx 84.87 + 0.5P \\end{aligned}",
+        "<strong>(a) Value of $P$ for slip down:</strong><br><br>Friction $F_{\\text{max}} = 0.3R$ acts up the plane:<br>• Upward forces: $P\\cos 30^\\circ + 0.3R$<br>• Downward weight component: $mg\\sin 30^\\circ = 49\\text{ N}$<br><br>Setting up equilibrium:\\begin{aligned} &P\\cos 30^\\circ + 0.3(84.87 + 0.5P) = 49 \\cr &0.866P + 25.46 + 0.15P = 49 \\cr &1.016P = 23.54 \\cr &P = \\dfrac{23.54}{1.016} \\cr &P \\approx 23.2\\text{ N} \\end{aligned}",
+        "<strong>(b) Value of $P$ for slip up:</strong><br><br>Friction $F_{\\text{max}} = 0.3R$ acts down the plane:\\begin{aligned} &P\\cos 30^\\circ = mg\\sin 30^\\circ + 0.3R \\cr &0.866P = 49 + 25.46 + 0.15P \\cr &0.716P = 74.46 \\cr &P = \\dfrac{74.46}{0.716} \\cr &P \\approx 104\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $P = 23.2\\text{ N}$, (b) $P = 104\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $P = 27.2\\text{ N}$, (b) $P = 85.5\\text{ N}$",
+            "feedback": "Remember that horizontal force $P$ pushes into the slope, so $R = mg\\cos 30^\\circ + P\\sin 30^\\circ$. Using $R = mg\\cos 30^\\circ$ ignores the component of $P$."
+        },
+        {
+            "ans": "(a) $P = 23.2\\text{ N}$, (b) $P = 86.0\\text{ N}$",
+            "feedback": "Check the signs when rearranging the slip-up equation: $0.866P - 0.15P = 0.716P$, giving $P = 74.46 / 0.716 \\approx 104\\text{ N}$."
+        },
+        {
+            "ans": "(a) $P = 104\\text{ N}$, (b) $P = 23.2\\text{ N}$",
+            "feedback": "The two values are reversed. A smaller force ($23.2\\text{ N}$) prevents slipping down, while a larger force ($104\\text{ N}$) causes the block to slip upwards."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Horizontal Forces Increase Normal Reaction",
+        "content": "Unlike a rope pulling upwards at an angle, a horizontal force pushing against an inclined plane pushes the object into the surface. Its perpendicular component $P\\sin\\theta$ adds to the weight component, increasing $R$ and significantly boosting the available friction."
+    }
+},
+{
+    "id": "012218",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Dynamics",
+    "topic": "Inclined Planes & Friction",
+    "subtopic": [
+        "Newton's second law on an incline",
+        "Angled pulling force",
+        "Kinematics"
+    ],
+    "img": false,
+    "question": "A crate of mass $8\\text{ kg}$ is pulled up a rough plane inclined at an angle $\\theta$ to the horizontal, where $\\tan\\theta = \\dfrac{3}{4}$. The coefficient of friction between the crate and the plane is $\\mu = 0.25$.<br><br>The crate is pulled by a rope with a constant tension of $91\\text{ N}$ acting at an angle $\\phi$ above the plane, where $\\cos\\phi = \\dfrac{12}{13}$ and $\\sin\\phi = \\dfrac{5}{13}$. The crate starts from rest and moves along a line of greatest slope.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Calculate the magnitude of the normal reaction force exerted by the plane on the crate.<br><br><strong>(b)</strong> Calculate the acceleration of the crate up the plane, giving your answer to $3$ significant figures.<br><br><strong>(c)</strong> Find the speed of the crate after it has travelled a distance of $4.0\\text{ m}$ up the plane from rest, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Normal reaction force $R$:</strong><br><br>From $\\tan\\theta = \\dfrac{3}{4}$, $\\sin\\theta = 0.6$ and $\\cos\\theta = 0.8$.<br><br>Resolving perpendicular to the plane ($m = 8\\text{ kg}$, $T = 91\\text{ N}$):\\begin{aligned} R &= mg\\cos\\theta - T\\sin\\phi \\cr &= 8(9.8)(0.8) - 91\\left(\\dfrac{5}{13}\\right) \\cr &= 62.72 - 35 \\cr &= 27.72\\text{ N} \\cr &\\approx 27.7\\text{ N} \\end{aligned}",
+        "<strong>(b) Acceleration up the plane:</strong><br><br>Friction force opposing motion:\\begin{aligned} F &= \\mu R \\cr &= 0.25(27.72) \\cr &= 6.93\\text{ N} \\end{aligned}<br>Applying Newton's second law up the plane:\\begin{aligned} &T\\cos\\phi - mg\\sin\\theta - F = ma \\cr &91\\left(\\dfrac{12}{13}\\right) - 8(9.8)(0.6) - 6.93 = 8a \\cr &84 - 47.04 - 6.93 = 8a \\cr &30.03 = 8a \\cr &a = \\dfrac{30.03}{8} \\cr &a \\approx 3.75\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(c) Speed after $4.0\\text{ m}$:</strong><br><br>Using $v^2 = u^2 + 2as$ with $u = 0$ and $s = 4.0\\text{ m}$:\\begin{aligned} v^2 &= 0 + 2(3.75375)(4.0) \\cr &= 30.03 \\cr v &= \\sqrt{30.03} \\cr &\\approx 5.48\\text{ m s}^{-1} \\end{aligned}",
+        "Final Answer: (a) $R = 27.7\\text{ N}$, (b) $a = 3.75\\text{ m s}^{-2}$, (c) $v = 5.48\\text{ m s}^{-1}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $R = 62.7\\text{ N}$, (b) $a = 3.75\\text{ m s}^{-2}$, (c) $v = 5.48\\text{ m s}^{-1}$",
+            "feedback": "Remember that tension pulls at an angle above the plane. You must subtract $T\\sin\\phi = 35\\text{ N}$ from $mg\\cos\\theta$, giving $R = 27.72\\text{ N}$."
+        },
+        {
+            "ans": "(a) $R = 27.7\\text{ N}$, (b) $a = 4.62\\text{ m s}^{-2}$, (c) $v = 6.08\\text{ m s}^{-1}$",
+            "feedback": "Friction opposes motion up the slope. Omitting $F = 6.93\\text{ N}$ overestimates the net accelerating force as $36.96\\text{ N}$."
+        },
+        {
+            "ans": "(a) $R = 27.7\\text{ N}$, (b) $a = 3.75\\text{ m s}^{-2}$, (c) $v = 30.0\\text{ m s}^{-1}$",
+            "feedback": "Remember to take the square root in $v^2 = 2as$. The value $30.03$ is $v^2$, so $v = \\sqrt{30.03} \\approx 5.48\\text{ m s}^{-1}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Keep Unrounded Values in Memory",
+        "content": "Notice that $8a = 30.03$, so $2as = 2(30.03/8)(4) = 30.03$ exactly. Carrying the unrounded fraction through to $v = \\sqrt{30.03} \\approx 5.48\\text{ m s}^{-1}$ prevents rounding discrepancies in multi-part exam questions."
+    }
+},
+{
+    "id": "012219",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Inclined Planes & Friction",
+    "subtopic": [
+        "Optimisation of pulling angle",
+        "Angle of friction",
+        "Minimum force"
+    ],
+    "img": false,
+    "question": "A block of mass $20\\text{ kg}$ rests on a rough horizontal surface that is inclined at an angle of $25^\\circ$ to the horizontal. The coefficient of friction between the block and the plane is $\\mu = 0.6$.<br><br>A force of magnitude $T\\text{ N}$ is applied to the block at an angle $\\beta$ above the inclined plane to pull it up the plane. The angle of friction $\\lambda$ is defined by $\\tan\\lambda = \\mu$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Show that the magnitude of the force $T$ required to move the block up the plane is given by:<br>$$T = \\dfrac{mg(\\sin 25^\\circ + \\mu\\cos 25^\\circ)}{\\cos\\beta + \\mu\\sin\\beta}$$<br><strong>(b)</strong> By expressing the denominator in the form $R\\cos(\\beta - \\lambda)$, find the angle $\\beta$ that minimises the required pulling force $T$.<br><br><strong>(c)</strong> Calculate the minimum force $T_{\\min}$ required to pull the block up the plane, giving your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Derive the expression for $T$:</strong><br><br>Resolving perpendicular to the plane:\\begin{aligned} R &= mg\\cos 25^\\circ - T\\sin\\beta \\end{aligned}<br>To move up the plane, $F = \\mu R$ acts down the plane:\\begin{aligned} &T\\cos\\beta = mg\\sin 25^\\circ + \\mu R \\cr &T\\cos\\beta = mg\\sin 25^\\circ \\cr &\\qquad + \\mu(mg\\cos 25^\\circ - T\\sin\\beta) \\cr &T(\\cos\\beta + \\mu\\sin\\beta) \\cr &\\qquad = mg(\\sin 25^\\circ + \\mu\\cos 25^\\circ) \\cr &T = \\dfrac{mg(\\sin 25^\\circ + \\mu\\cos 25^\\circ)}{\\cos\\beta + \\mu\\sin\\beta} \\end{aligned}",
+        "<strong>(b) Optimal angle $\\beta$:</strong><br><br>Substitute $\\mu = \\tan\\lambda = \\dfrac{\\sin\\lambda}{\\cos\\lambda}$ into the denominator:\\begin{aligned} &\\cos\\beta + \\tan\\lambda\\sin\\beta \\cr &\\quad = \\dfrac{\\cos\\beta\\cos\\lambda + \\sin\\beta\\sin\\lambda}{\\cos\\lambda} \\cr &\\quad = \\dfrac{\\cos(\\beta - \\lambda)}{\\cos\\lambda} \\end{aligned}<br>To minimise $T$, the denominator must be maximised, which occurs when $\\cos(\\beta - \\lambda) = 1$, giving $\\beta = \\lambda$:\\begin{aligned} \\beta &= \\arctan(\\mu) \\cr &= \\arctan(0.6) \\cr &\\approx 31.0^\\circ \\end{aligned}",
+        "<strong>(c) Calculate $T_{\\min}$:</strong><br><br>When $\\beta = 31.0^\\circ$, the denominator evaluates to $\\sqrt{1 + \\mu^2} = \\sqrt{1 + 0.6^2} = \\sqrt{1.36} \\approx 1.1662$:\\begin{aligned} T_{\\min} &= \\dfrac{20(9.8)(\\sin 25^\\circ + 0.6\\cos 25^\\circ)}{\\sqrt{1.36}} \\cr &= \\dfrac{196(0.42262 + 0.54378)}{1.1662} \\cr &= \\dfrac{196(0.9664)}{1.1662} \\cr &\\approx 162\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $T = \\dfrac{mg(\\sin 25^\\circ + \\mu\\cos 25^\\circ)}{\\cos\\beta + \\mu\\sin\\beta}$, (b) $\\beta = 31.0^\\circ$, (c) $T_{\\min} = 162\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T = \\dfrac{mg(\\sin 25^\\circ + \\mu\\cos 25^\\circ)}{\\cos\\beta + \\mu\\sin\\beta}$, (b) $\\beta = 0.0^\\circ$, (c) $T_{\\min} = 189\\text{ N}$",
+            "feedback": "Pulling parallel to the plane ($\\\\beta = 0^\\\\circ$) does not minimise $T$. Pulling slightly upward lifts the object and reduces friction, achieving a lower minimum force of $162\\text{ N}$."
+        },
+        {
+            "ans": "(a) $T = \\dfrac{mg(\\sin 25^\\circ + \\mu\\cos 25^\\circ)}{\\cos\\beta + \\mu\\sin\\beta}$, (b) $\\beta = 25.0^\\circ$, (c) $T_{\\min} = 162\\text{ N}$",
+            "feedback": "The optimal pulling angle equals the angle of friction $\\\\lambda = \\\\arctan(\\\\mu) \\\\approx 31.0^\\\\circ$, which is independent of the slope angle of $25^\\\\circ$."
+        },
+        {
+            "ans": "(a) $T = \\dfrac{mg(\\sin 25^\\circ + \\mu\\cos 25^\\circ)}{\\cos\\beta + \\mu\\sin\\beta}$, (b) $\\beta = 31.0^\\circ$, (c) $T_{\\min} = 189\\text{ N}$",
+            "feedback": "Remember that at the minimum force, the maximum value of the denominator is $\\\\sqrt{1 + \\\\mu^2} \\\\approx 1.166$, rather than $1$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Pulling at the Angle of Friction",
+        "content": "A famous classical mechanics result: to pull an object along any rough plane with minimum effort, you should always pull at an angle equal to the angle of friction $\\lambda = \\arctan\\mu$ above the plane. Pulling slightly upwards lifts the object, reducing friction faster than it reduces forward pulling force."
+    }
+},
+{
+    "id": "012220",
+    "branch": "Mechanics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Statics & Equilibrium",
+    "topic": "Inclined Planes & Friction",
+    "subtopic": [
+        "Pushing into the plane",
+        "Limiting equilibrium condition",
+        "Friction limits"
+    ],
+    "img": false,
+    "question": "A packing case of mass $25\\text{ kg}$ rests on a rough plane inclined at an angle of $20^\\circ$ to the horizontal. The coefficient of friction between the case and the plane is $\\mu = 0.45$.<br><br>A force of magnitude $F\\text{ N}$ is applied to the case, acting downwards at an angle of $30^\\circ$ below the line of greatest slope (pushing the case into the plane).<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Show that the normal reaction force $R$ exerted by the plane on the case is given by $R = 25g\\cos 20^\\circ + F\\sin 30^\\circ$.<br><br><strong>(b)</strong> Explain why increasing the magnitude of the pushing force $F$ increases the maximum available frictional force.<br><br><strong>(c)</strong> Determine whether the case can be made to slide down the plane by increasing $F$ indefinitely, and calculate the minimum value of $F$ required to initiate downward motion if it is possible.",
+    "steps": [
+        "<strong>(a) Normal reaction:</strong><br><br>The pushing force $F$ acts at $30^\\circ$ below the slope, so its component pushing into the surface is $F\\sin 30^\\circ$.<br><br>Resolving perpendicular to the plane:\\begin{aligned} R &= 25g\\cos 20^\\circ + F\\sin 30^\\circ \\end{aligned}",
+        "<strong>(b) Effect on maximum friction:</strong><br><br>Because $R$ contains the term $+F\\sin 30^\\circ$, increasing $F$ increases the normal reaction. Since maximum static friction is directly proportional to normal reaction ($F_{\\text{max}} = \\mu R$), the maximum available friction increases as $F$ increases.",
+        "<strong>(c) Condition for downward motion:</strong><br><br>For downward motion to occur, the component of force pulling down the slope must exceed maximum friction:\\begin{aligned} &F\\cos 30^\\circ + mg\\sin 20^\\circ > \\mu R \\cr &F\\cos 30^\\circ + 25g\\sin 20^\\circ \\cr &\\quad > 0.45(25g\\cos 20^\\circ + F\\sin 30^\\circ) \\cr &0.8660F + 83.794 > 103.60 + 0.2250F \\cr &0.6410F > 19.806 \\cr &F > \\dfrac{19.806}{0.6410} \\cr &F > 30.9\\text{ N} \\end{aligned}<br>Because the net driving coefficient ($0.6410$) is positive, increasing $F$ increases the driving force faster than friction. Thus, motion is possible and the minimum force is $30.9\\text{ N}$.",
+        "Final Answer: (a) $R = 25g\\cos 20^\\circ + F\\sin 30^\\circ$, (b) Increases $R$ hence increases $\\mu R$, (c) Yes, $F_{\\min} = 30.9\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $R = 25g\\cos 20^\\circ + F\\sin 30^\\circ$, (b) Increases $R$ hence increases $\\mu R$, (c) No, friction always exceeds driving force",
+            "feedback": "Because $\\\\cos 30^\\\\circ > \\\\mu\\\\sin 30^\\\\circ$ ($0.866 > 0.225$), the driving component grows faster than friction as $F$ increases. Motion is initiated once $F > 30.9\\text{ N}$."
+        },
+        {
+            "ans": "(a) $R = 25g\\cos 20^\\circ + F\\sin 30^\\circ$, (b) Increases $R$ hence increases $\\mu R$, (c) Yes, $F_{\\min} = 22.9\\text{ N}$",
+            "feedback": "Remember to include the $+F\\\\sin 30^\\\\circ$ term when calculating normal reaction. Omitting it underestimates the required pushing force."
+        },
+        {
+            "ans": "(a) $R = 25g\\cos 20^\\circ + F\\sin 30^\\circ$, (b) Increases $R$ hence increases $\\mu R$, (c) Yes, $F_{\\min} = 45.2\\text{ N}$",
+            "feedback": "Check the friction equation: $0.6410F > 19.806 \\implies F > 19.806 / 0.6410 \\approx 30.9\\text{ N}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Self-Locking Conditions",
+        "content": "A pushing force can only cause motion if its component along the slope exceeds the friction it creates: $F\\cos\\theta > \\mu F\\sin\\theta \\implies \\tan\\theta < \\frac{1}{\\mu}$. Here, $\\tan 30^\\circ \\approx 0.577$ and $\\frac{1}{0.45} \\approx 2.22$, so pushing harder does indeed initiate motion."
     }
 }
 ];
