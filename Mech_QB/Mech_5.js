@@ -1853,7 +1853,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: String Slackness and Mass Separation",
-        "content": "The instant the hanging mass hits the floor, the system ceases to act as connected particles. The tension collapses to zero, and the mass of the hanging block completely leaves the equation of motion. Block $A$ becomes an independent particle moving solely under its own frictional deceleration: $a_2 = -\\mu g = -0.25(9.8) = -2.45\\text{ m s}^{-2}$."
+        "content": "The instant the hanging mass hits the floor, the system ceases to act as connected particles. The tension collapses to zero, and the mass of the hanging block completely leaves the equation of motion. Block $A$ becomes an independent particle moving solely under its own frictional deceleration: \\begin{aligned}a_2 &= -\\mu g = -0.25(9.8)\\cr & = -2.45\\text{ m s}^{-2}\\end{aligned}"
     }
 },
 {
@@ -1931,7 +1931,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Why Pulley Load is Less than Total Weight",
-        "content": "Notice that the downward force on the pulley is $2T = 73.5\\text{ N}$, which is strictly less than the combined static weight of the two masses: $(3 + 5)g = 78.4\\text{ N}$. Because the centre of mass of the system is accelerating downwards, the support force required to hold the pulley is reduced by the downward inertial force $\\Delta F = (m_B - m_A)a = 2(2.45) = 4.9\\text{ N}$."
+        "content": "Notice that the downward force on the pulley is $2T = 73.5\\text{ N}$, which is strictly less than the combined static weight of the two masses: $(3 + 5)g = 78.4\\text{ N}$. Because the centre of mass of the system is accelerating downwards, the support force required to hold the pulley is reduced by the downward inertial force \\begin{aligned}\\Delta F &= (m_B - m_A)a \\cr &= 2(2.45) \\cr &= 4.9\\text{ N}\\end{aligned}"
     }
 },
 {
