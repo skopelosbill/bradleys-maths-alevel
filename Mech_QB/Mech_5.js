@@ -1938,7 +1938,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: The Two-Stage Atwood Ascent",
-        "content": "In Atwood machine questions with ground impact, always divide particle $A$'s motion into two stages: (1) an accelerated ascent of $1.6\\text{ m}$ under net string tension, followed by (2) an upward free-flight projectile phase under gravity alone ($a = -g$). The total height above the start is always $h = s_1 + \\frac{v^2}{2g} = 1.6 + 0.4 = 2.0\\text{ m}$."
+        "content": "In Atwood machine questions with ground impact, always divide particle $A$'s motion into two stages: (1) an accelerated ascent of $1.6\\text{ m}$ under net string tension, followed by (2) an upward free-flight projectile phase under gravity alone ($a = -g$). The total height above the start is always \\begin{aligned}h &= s_1 + \\frac{v^2}{2g}\\cr & = 1.6 + 0.4 \\cr &= 2.0\\text{ m}\\end{aligned}"
     }
 },
 {
