@@ -1190,5 +1190,198 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Direction Cosines in 3D Kinematics",
         "content": "To find the angle $\\theta$ between any 3D vector $\\mathbf{v} = v_x\\mathbf{i} + v_y\\mathbf{j} + v_z\\mathbf{k}$ and the positive coordinate axes, use the direction cosine property: $\\cos\\alpha = \\frac{v_x}{|\\mathbf{v}|}$, $\\cos\\beta = \\frac{v_y}{|\\mathbf{v}|}$, and $\\cos\\gamma = \\frac{v_z}{|\\mathbf{v}|}$. Because the dot product with a unit axis vector simplifies to $\\mathbf{v} \\cdot \\mathbf{i} = v_x$, there is no need to set up full matrix or determinant cross products."
     }
+},
+{
+    "id": "012231",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Concurrent Forces",
+    "subtopic": [
+        "Resolving Forces",
+        "Resultant Vectors"
+    ],
+    "img": "images/Mechanics_pngs/012231.png",
+    "question": "The diagram shows three coplanar forces acting on a particle at a point $O$:<br>• A force of $8\\text{ N}$ acting vertically upwards.<br>• A force of $12\\text{ N}$ acting at an angle of $20^\\circ$ above the horizontal to the left.<br>• A force of $15\\text{ N}$ acting at an angle of $50^\\circ$ below the horizontal to the right.<br><br><strong>(a)</strong> Calculate the horizontal and vertical components of the resultant force.<br><br><strong>(b)</strong> Calculate the magnitude of the resultant force, giving your answer to 3 significant figures.<br><br><strong>(c)</strong> Find the acute angle that the resultant force makes with the horizontal, stating clearly whether it acts above or below the horizontal, and to the left or to the right.",
+    "steps": [
+        "<strong>(a) Resolve horizontally and vertically:</strong><br><br>Taking rightwards as positive horizontal ($R_x$):\\begin{aligned} R_x &= 15\\cos 50^\\circ - 12\\cos 20^\\circ \\cr &= 9.6418 - 11.2763 \\cr &= -1.6345\\text{ N} \\end{aligned}Thus, the horizontal component is $1.63\\text{ N}$ to the left.<br><br>Taking upwards as positive vertical ($R_y$):\\begin{aligned} R_y &= 8 + 12\\sin 20^\\circ - 15\\sin 50^\\circ \\cr &= 8 + 4.1042 - 11.4907 \\cr &= 0.6135\\text{ N} \\end{aligned}Thus, the vertical component is $0.614\\text{ N}$ upwards.",
+        "<strong>(b) Calculate the magnitude of the resultant:</strong><br><br>Using Pythagoras' theorem on the orthogonal components:\\begin{aligned} R &= \\sqrt{R_x^2 + R_y^2} \\cr &= \\sqrt{(-1.6345)^2 + 0.6135^2} \\cr &= \\sqrt{2.6716 + 0.3764} \\cr &= \\sqrt{3.0480} \\cr &\\approx 1.75\\text{ N} \\end{aligned}",
+        "<strong>(c) Determine the direction of the resultant:</strong><br><br>Let $\\theta$ be the acute angle made with the horizontal:\\begin{aligned} \\tan\\theta &= \\dfrac{|R_y|}{|R_x|} \\cr &= \\dfrac{0.6135}{1.6345} \\cr &\\approx 0.3753 \\cr \\theta &= \\arctan(0.3753) \\cr &\\approx 20.6^\\circ \\end{aligned}Since $R_x < 0$ and $R_y > 0$, the resultant acts at $20.6^\\circ$ above the horizontal to the left.",
+        "Final Answer: (a) $1.63\\text{ N}$ left, $0.614\\text{ N}$ up, (b) $1.75\\text{ N}$, (c) $20.6^\\circ$ above horizontal to left"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $1.63\\text{ N}$ right, $0.614\\text{ N}$ down, (b) $1.75\\text{ N}$, (c) $20.6^\\circ$ below horizontal to right",
+            "feedback": "You reversed the signs of the components, treating the leftward force as positive and the downward component of the $15\\text{ N}$ force as positive."
+        },
+        {
+            "ans": "(a) $1.63\\text{ N}$ left, $0.614\\text{ N}$ up, (b) $2.25\\text{ N}$, (c) $20.6^\\circ$ above horizontal to left",
+            "feedback": "In part (b), you added the components directly ($1.6345 + 0.6135$) instead of applying Pythagoras' theorem $\\sqrt{R_x^2 + R_y^2}$ to find the resultant vector magnitude."
+        },
+        {
+            "ans": "(a) $1.63\\text{ N}$ left, $0.614\\text{ N}$ up, (b) $1.75\\text{ N}$, (c) $69.4^\\circ$ above horizontal to left",
+            "feedback": "In part (c), you calculated the angle with the vertical $\\arctan(|R_x|/|R_y|)$ rather than the angle with the horizontal $\\arctan(|R_y|/|R_x|)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Sketching the Quadrant Box",
+        "content": "When finding the direction of a resultant vector, never rely purely on your calculator's raw $\\arctan$ output. Always sketch a small vector triangle with your signed components: here, $R_x = -1.63\\text{ N}$ (left) and $R_y = +0.614\\text{ N}$ (up). This instantly places the resultant in the second quadrant, ensuring you describe the angle correctly as acting $20.6^\\circ$ above the horizontal to the left."
+    }
+},
+{
+    "id": "012232",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Concurrent Forces",
+    "subtopic": [
+        "Equilibrium of a Particle",
+        "Resolving Forces"
+    ],
+    "img": "images/Mechanics_pngs/012232.png",
+    "question": "The diagram shows three coplanar forces acting on a particle $P$, which is held in equilibrium:<br>• A force of magnitude $T\\text{ N}$ acting at an angle of $30^\\circ$ above the horizontal to the left.<br>• A force of magnitude $F\\text{ N}$ acting at an angle of $60^\\circ$ above the horizontal to the right.<br>• A force of magnitude $40\\text{ N}$ acting vertically downwards.<br><br><strong>(a)</strong> By resolving forces horizontally, show that:$$F = T\\sqrt{3}$$<strong>(b)</strong> By resolving forces vertically, determine:<br>(i) the exact value of $T$,<br>(ii) the value of $F$, giving your answer in exact surd form and to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Resolve horizontally for equilibrium:</strong><br><br>For horizontal equilibrium, the sum of horizontal forces must equal zero:\\begin{aligned} &F\\cos 60^\\circ - T\\cos 30^\\circ = 0 \\cr &F\\left(\\dfrac{1}{2}\\right) = T\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &F = T\\sqrt{3} \\end{aligned}",
+        "<strong>(b)(i) Resolve vertically to find T:</strong><br><br>For vertical equilibrium:\\begin{aligned} &F\\sin 60^\\circ + T\\sin 30^\\circ - 40 = 0 \\cr &F\\left(\\dfrac{\\sqrt{3}}{2}\\right) + T\\left(\\dfrac{1}{2}\\right) = 40 \\end{aligned}Substitute $F = T\\sqrt{3}$ into the equation:\\begin{aligned} &(T\\sqrt{3})\\left(\\dfrac{\\sqrt{3}}{2}\\right) + \\dfrac{1}{2}T = 40 \\cr &\\dfrac{3}{2}T + \\dfrac{1}{2}T = 40 \\cr &2T = 40 \\cr &T = 20\\text{ N} \\end{aligned}",
+        "<strong>(b)(ii) Calculate F:</strong><br><br>Using $F = T\\sqrt{3}$ with $T = 20\\text{ N}$:\\begin{aligned} F &= 20\\sqrt{3}\\text{ N} \\cr &\\approx 34.6\\text{ N} \\end{aligned}",
+        "Final Answer: (a) Proof complete, (b)(i) $20\\text{ N}$, (ii) $20\\sqrt{3}\\text{ N} \\approx 34.6\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Proof complete, (b)(i) $40\\text{ N}$, (ii) $40\\sqrt{3}\\text{ N} \\approx 69.3\\text{ N}$",
+            "feedback": "In part (b)(i), you forgot to divide by $2$ when solving $2T = 40$, arriving at $T = 40\\text{ N}$."
+        },
+        {
+            "ans": "(a) Proof complete, (b)(i) $20\\text{ N}$, (ii) $\\dfrac{20\\sqrt{3}}{3}\\text{ N} \\approx 11.5\\text{ N}$",
+            "feedback": "In part (b)(ii), you divided by $\\sqrt{3}$ instead of multiplying by $\\sqrt{3}$, using $F = T/\\sqrt{3}$."
+        },
+        {
+            "ans": "(a) Proof complete, (b)(i) $34.6\\text{ N}$, (ii) $20\\text{ N}$",
+            "feedback": "You swapped the values of $T$ and $F$, misassigning the tensions to their respective angles."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Geometry of Perpendicular Forces",
+        "content": "Notice that the angle between the two upward forces is $(180^\\circ - 60^\\circ - 30^\\circ) = 90^\\circ$. Because the forces $F$ and $T$ are perpendicular, you can also resolve directly along the line of action of each force! Resolving along $T$ gives $T = 40\\cos(90^\\circ - 30^\\circ) = 40\\cos 60^\\circ = 20\\text{ N}$, and resolving along $F$ gives $F = 40\\cos(90^\\circ - 60^\\circ) = 40\\cos 30^\\circ = 20\\sqrt{3}\\text{ N}$ in a single step."
+    }
+},
+{
+    "id": "012233",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Concurrent Forces",
+    "subtopic": [
+        "Suspended Particles",
+        "Tension in Strings"
+    ],
+    "img": "images/Mechanics_pngs/012233.png",
+    "question": "The diagram shows a small body of mass $6\\text{ kg}$ suspended in equilibrium by two light, inextensible strings $AB$ and $AC$.<br><br>The ends $B$ and $C$ are attached to two fixed points on a horizontal ceiling. The string $AB$ is inclined at $30^\\circ$ to the ceiling and has tension $T_1\\text{ N}$. The string $AC$ is inclined at $45^\\circ$ to the ceiling and has tension $T_2\\text{ N}$.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Show that the tensions satisfy the relation:$$T_2 = T_1\\sqrt{\\dfrac{3}{2}}$$<strong>(b)</strong> Calculate the values of $T_1$ and $T_2$, giving your answers in newtons to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Resolve horizontally at point A:</strong><br><br>By alternate angles, string $AB$ pulls at $30^\\circ$ above the horizontal and string $AC$ pulls at $45^\\circ$ above the horizontal.<br><br>For horizontal equilibrium:\\begin{aligned} &T_2\\cos 45^\\circ - T_1\\cos 30^\\circ = 0 \\cr &T_2\\left(\\dfrac{\\sqrt{2}}{2}\\right) = T_1\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &T_2 = T_1\\left(\\dfrac{\\sqrt{3}}{\\sqrt{2}}\\right) \\cr &T_2 = T_1\\sqrt{\\dfrac{3}{2}} \\end{aligned}",
+        "<strong>(b) Resolve vertically to find T₁ and T₂:</strong><br><br>The downward force is the weight $W = mg = 6(9.8) = 58.8\\text{ N}$.<br><br>For vertical equilibrium:\\begin{aligned} &T_1\\sin 30^\\circ + T_2\\sin 45^\\circ = 58.8 \\cr &T_1(0.5) + \\left(T_1\\sqrt{\\dfrac{3}{2}}\\right)\\left(\\dfrac{\\sqrt{2}}{2}\\right) = 58.8 \\cr &0.5T_1 + \\dfrac{\\sqrt{3}}{2}T_1 = 58.8 \\cr &\\left(\\dfrac{1 + \\sqrt{3}}{2}\\right)T_1 = 58.8 \\cr &T_1 = \\dfrac{117.6}{1 + \\sqrt{3}} \\cr &T_1 \\approx 43.0\\text{ N} \\end{aligned}Substitute $T_1$ to find $T_2$:\\begin{aligned} T_2 &= 43.045 \\times \\sqrt{1.5} \\cr &\\approx 52.7\\text{ N} \\end{aligned}",
+        "Final Answer: (a) Proof complete, (b) $T_1 = 43.0\\text{ N}$, $T_2 = 52.7\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Proof complete, (b) $T_1 = 52.7\\text{ N}$, $T_2 = 43.0\\text{ N}$",
+            "feedback": "You inverted the tensions: the steeper string ($45^\\circ$) supports more of the vertical load than the shallower string ($30^\\circ$), so $T_2$ must be greater than $T_1$."
+        },
+        {
+            "ans": "(a) Proof complete, (b) $T_1 = 4.39\\text{ N}$, $T_2 = 5.38\\text{ N}$",
+            "feedback": "You used the mass $m = 6\\text{ kg}$ as the downward force instead of calculating weight $W = mg = 6(9.8) = 58.8\\text{ N}$."
+        },
+        {
+            "ans": "(a) Proof complete, (b) $T_1 = 43.0\\text{ N}$, $T_2 = 35.1\\text{ N}$",
+            "feedback": "In part (b), you evaluated $T_2 = T_1 / \\sqrt{1.5}$ instead of multiplying by $\\sqrt{1.5}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Angles to Ceiling vs Angles to Vertical",
+        "content": "Pay careful attention to whether the angles are measured to the horizontal ceiling or the vertical suspension line. Here, the angles given ($30^\\circ$ and $45^\\circ$) are with the horizontal ceiling. By alternate angles, these are the identical angles made with the horizontal at the knot $A$, meaning horizontal components use cosines and vertical components use sines."
+    }
+},
+{
+    "id": "012234",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Concurrent Forces",
+    "subtopic": [
+        "Inclined Planes",
+        "Resolving Forces"
+    ],
+    "img": "images/Mechanics_pngs/012234.png",
+    "question": "The diagram shows a block of mass $4\\text{ kg}$ resting on a smooth plane inclined at an angle of $30^\\circ$ to the horizontal.<br><br>The block is held in equilibrium by a force of magnitude $P\\text{ N}$ acting at an angle of $20^\\circ$ above the surface of the inclined plane, in the vertical plane containing a line of greatest slope.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> By resolving forces parallel to the inclined plane, calculate the value of $P$, giving your answer to 3 significant figures.<br><br><strong>(b)</strong> Calculate the magnitude of the normal reaction $R$ exerted by the plane on the block, giving your answer to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Resolve parallel to the inclined plane:</strong><br><br>The component of the weight acting down the slope is:\\begin{aligned} W_{\\parallel} &= mg\\sin 30^\\circ \\cr &= 4(9.8)(0.5) \\cr &= 19.6\\text{ N} \\end{aligned}The component of force $P$ acting up the slope is $P\\cos 20^\\circ$.<br><br>For equilibrium parallel to the slope:\\begin{aligned} &P\\cos 20^\\circ - 19.6 = 0 \\cr &P\\cos 20^\\circ = 19.6 \\cr &P = \\dfrac{19.6}{\\cos 20^\\circ} \\cr &P \\approx 20.9\\text{ N} \\end{aligned}",
+        "<strong>(b) Resolve perpendicular to the inclined plane:</strong><br><br>The component of the weight perpendicular to the slope is:\\begin{aligned} W_{\\perp} &= mg\\cos 30^\\circ \\cr &= 4(9.8)\\cos 30^\\circ \\cr &= 39.2\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &\\approx 33.948\\text{ N} \\end{aligned}Force $P$ pulls slightly away from the plane with perpendicular component $P\\sin 20^\\circ$.<br><br>For equilibrium perpendicular to the slope:\\begin{aligned} &R + P\\sin 20^\\circ - mg\\cos 30^\\circ = 0 \\cr &R = 33.948 - (20.858)\\sin 20^\\circ \\cr &R = 33.948 - 7.134 \\cr &R \\approx 26.8\\text{ N} \\end{aligned}",
+        "Final Answer: (a) $20.9\\text{ N}$, (b) $26.8\\text{ N}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $20.9\\text{ N}$, (b) $41.1\\text{ N}$",
+            "feedback": "In part (b), you added the component $P\\sin 20^\\circ$ instead of subtracting it, treating $P$ as pushing into the plane rather than pulling away from it."
+        },
+        {
+            "ans": "(a) $22.6\\text{ N}$, (b) $26.8\\text{ N}$",
+            "feedback": "In part (a), you used $P\\sin 20^\\circ = 19.6$ instead of $P\\cos 20^\\circ = 19.6$, confusing the parallel and perpendicular components of $P$."
+        },
+        {
+            "ans": "(a) $20.9\\text{ N}$, (b) $33.9\\text{ N}$",
+            "feedback": "In part (b), you set the normal reaction equal to $mg\\cos 30^\\circ$, completely neglecting the vertical lift provided by the upward component of $P$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Tilted Force Components on Slopes",
+        "content": "When an applied force acts at an angle to an inclined plane, it contributes to BOTH equilibrium equations. The component parallel to the plane is $P\\cos 20^\\circ$, but because it is angled above the slope, it also exerts an upward component $P\\sin 20^\\circ$ perpendicular to the surface. This partially relieves the plane, reducing the normal reaction to $R = mg\\cos 30^\\circ - P\\sin 20^\\circ$."
+    }
+},
+{
+    "id": "012235",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Mechanics",
+    "topic": "Concurrent Forces",
+    "subtopic": [
+        "Bearings",
+        "Resultant Vectors"
+    ],
+    "img": "images/Mechanics_pngs/012235.png",
+    "question": "The diagram shows three horizontal forces acting on a buoy moored at a point $O$:<br>• A force of $18\\text{ kN}$ on a bearing of $000^\\circ$ (due North).<br>• A force of $24\\text{ kN}$ on a bearing of $060^\\circ$.<br>• A force of $15\\text{ kN}$ on a bearing of $135^\\circ$.<br><br><strong>(a)</strong> Calculate the total easterly component and total northerly component of the resultant force, giving your answers in $\\text{kN}$ to 3 significant figures.<br><br><strong>(b)</strong> Calculate the magnitude of the resultant force, giving your answer in $\\text{kN}$ to 3 significant figures.<br><br><strong>(c)</strong> Determine the bearing of the resultant force, giving your answer to the nearest whole degree.",
+    "steps": [
+        "<strong>(a) Resolve in East and North directions:</strong><br><br>For any force of magnitude $F$ on a three-figure bearing $\\beta$, the components are $F_E = F\\sin\\beta$ and $F_N = F\\cos\\beta$.<br><br>Total Easterly component ($E$):\\begin{aligned} E &= 18\\sin 000^\\circ + 24\\sin 060^\\circ \\cr &\qquad + 15\\sin 135^\\circ \\cr &= 0 + 24\\left(\\dfrac{\\sqrt{3}}{2}\\right) + 15\\left(\\dfrac{\\sqrt{2}}{2}\\right) \\cr &= 20.7846 + 10.6066 \\cr &= 31.3912\\text{ kN} \\cr &\\approx 31.4\\text{ kN} \\end{aligned}Total Northerly component ($N$):\\begin{aligned} N &= 18\\cos 000^\\circ + 24\\cos 060^\\circ \\cr &\qquad + 15\\cos 135^\\circ \\cr &= 18(1) + 24(0.5) - 15\\left(\\dfrac{\\sqrt{2}}{2}\\right) \\cr &= 18 + 12 - 10.6066 \\cr &= 19.3934\\text{ kN} \\cr &\\approx 19.4\\text{ kN} \\end{aligned}",
+        "<strong>(b) Calculate resultant magnitude:</strong><br><br>Using Pythagoras' theorem:\\begin{aligned} R &= \\sqrt{E^2 + N^2} \\cr &= \\sqrt{31.3912^2 + 19.3934^2} \\cr &= \\sqrt{985.408 + 376.104} \\cr &= \\sqrt{1361.512} \\cr &\\approx 36.9\\text{ kN} \\end{aligned}",
+        "<strong>(c) Determine bearing of resultant:</strong><br><br>Because both $E > 0$ and $N > 0$, the resultant lies in the north-east quadrant. The bearing $\\beta$ clockwise from North is:\\begin{aligned} \\tan\\beta &= \\dfrac{E}{N} \\cr &= \\dfrac{31.3912}{19.3934} \\cr &\\approx 1.6187 \\cr \\beta &= \\arctan(1.6187) \\cr &\\approx 58.3^\\circ \\cr &\\approx 058^\\circ \\end{aligned}",
+        "Final Answer: (a) $31.4\\text{ kN}$ East, $19.4\\text{ kN}$ North, (b) $36.9\\text{ kN}$, (c) $058^\\circ$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $19.4\\text{ kN}$ East, $31.4\\text{ kN}$ North, (b) $36.9\\text{ kN}$, (c) $032^\\circ$",
+            "feedback": "You swapped the trigonometric functions for bearings, using $\\cos\\beta$ for East and $\\sin\\beta$ for North, which inverted the components."
+        },
+        {
+            "ans": "(a) $31.4\\text{ kN}$ East, $19.4\\text{ kN}$ North, (b) $50.8\\text{ kN}$, (c) $058^\\circ$",
+            "feedback": "In part (b), you summed the scalar magnitudes of the components ($31.4 + 19.4$) instead of taking the square root of the sum of squares."
+        },
+        {
+            "ans": "(a) $31.4\\text{ kN}$ East, $19.4\\text{ kN}$ North, (b) $36.9\\text{ kN}$, (c) $032^\\circ$",
+            "feedback": "In part (c), you computed $\\arctan(N/E)$ (angle from East) instead of $\\arctan(E/N)$ (bearing clockwise from North)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Bearings Shortcut with Sine and Cosine",
+        "content": "For standard cartesian angles measured anticlockwise from the positive $x$-axis, $x = F\\cos\\theta$ and $y = F\\sin\\theta$. But for a navigation bearing $\\beta$ measured clockwise from North, the roles naturally swap: $\\text{East} = F\\sin\\beta$ and $\\text{North} = F\\cos\\beta$. Using this rule directly avoids converting bearings into cartesian angles and saves precious time in exam conditions."
+    }
 }
 ];
