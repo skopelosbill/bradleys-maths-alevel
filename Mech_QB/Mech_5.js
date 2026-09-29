@@ -1419,7 +1419,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Average Velocity Shortcut",
-        "content": "For motion with constant acceleration, the displacement can also be calculated via the average velocity formula $\\mathbf{s} = \\frac{1}{2}(\\mathbf{u} + \\mathbf{v})t$. Here, $\\frac{1}{2}[(3\\mathbf{i} - 8\\mathbf{j}) + (15\\mathbf{i} + 4\\mathbf{j})](3) = \\frac{1}{2}(18\\mathbf{i} - 4\\mathbf{j})(3) = (9\\mathbf{i} - 2\\mathbf{j})(3) = (27\\mathbf{i} - 6\\mathbf{j})\\text{ m}$. This provides an instantaneous check that avoids squaring time."
+        "content": "For motion with constant acceleration, the displacement can also be calculated via the average velocity formula $\\mathbf{s} = \\frac{1}{2}(\\mathbf{u} + \\mathbf{v})t$. Here, \\begin{aligned}\\frac{1}{2}[(3\\mathbf{i} - 8\\mathbf{j}) &+ (15\\mathbf{i} + 4\\mathbf{j})](3)\\cr & = \\frac{1}{2}(18\\mathbf{i} - 4\\mathbf{j})(3)\\cr & = (9\\mathbf{i} - 2\\mathbf{j})(3) \\cr &= (27\\mathbf{i} - 6\\mathbf{j})\\text{ m}\\end{aligned} This provides an instantaneous check that avoids squaring time."
     }
 },
 {
@@ -1476,7 +1476,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A light aircraft is undertaking an aerial photographic survey in a horizontal plane. At time $t = 0\\text{ s}$, the aircraft passes directly over a ground marker at $O$ with initial velocity $\\mathbf{u} = (-9\\mathbf{i} + 15\\mathbf{j})\\text{ m s}^{-1}$. It maintains a constant acceleration $\\mathbf{a} = (4\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-2}$, where $\\mathbf{i}$ and $\\mathbf{j}$ are perpendicular unit vectors directed East and North respectively.<br><br><strong>(a)</strong> Find the time at which the aircraft is travelling due North, and state its speed at this instant.<br><br><strong>(b)</strong> Find the time at which the aircraft is travelling parallel to the vector $(\\mathbf{i} + \\mathbf{j})$ (i.e. heading North-East).<br><br><strong>(c)</strong> Calculate the straight-line distance of the aircraft from the marker at $O$ at the instant when it is travelling parallel to $(\\mathbf{i} + \\mathbf{j})$, giving your answer to 3 significant figures.",
     "steps": [
-        "<strong>(a) Travelling due North:</strong><br><br>The general velocity vector at time $t$ is:\\begin{aligned} \\mathbf{v}(t) &= \\mathbf{u} + \\mathbf{a}t \\cr &= (-9 + 4t)\\mathbf{i} + (15 - 2t)\\mathbf{j}\\text{ m s}^{-1} \\end{aligned}When travelling due North, the horizontal ($\mathbf{i}$) component must equal zero:\\begin{aligned} &-9 + 4t = 0 \\cr &4t = 9 \\cr &t = 2.25\\text{ s} \\end{aligned}The vertical component at $t = 2.25\\text{ s}$ is:\\begin{aligned} v_y &= 15 - 2(2.25) \\cr &= 15 - 4.5 \\cr &= 10.5\\text{ m s}^{-1} \\end{aligned}Because $v_y > 0$, the aircraft is indeed heading North with speed $10.5\\text{ m s}^{-1}$.",
+        "<strong>(a) Travelling due North:</strong><br><br>The general velocity vector at time $t$ is:\\begin{aligned} \\mathbf{v}(t) &= \\mathbf{u} + \\mathbf{a}t \\cr &= (-9 + 4t)\\mathbf{i} + (15 - 2t)\\mathbf{j}\\text{ m s}^{-1} \\end{aligned}When travelling due North, the horizontal ($\\mathbf{i}$) component must equal zero:\\begin{aligned} &-9 + 4t = 0 \\cr &4t = 9 \\cr &t = 2.25\\text{ s} \\end{aligned}The vertical component at $t = 2.25\\text{ s}$ is:\\begin{aligned} v_y &= 15 - 2(2.25) \\cr &= 15 - 4.5 \\cr &= 10.5\\text{ m s}^{-1} \\end{aligned}Because $v_y > 0$, the aircraft is indeed heading North with speed $10.5\\text{ m s}^{-1}$.",
         "<strong>(b) Travelling parallel to (i + j):</strong><br><br>If velocity is parallel to $\\mathbf{i} + \\mathbf{j}$, its $\\mathbf{i}$ and $\\mathbf{j}$ components must be equal and positive:\\begin{aligned} &-9 + 4t = 15 - 2t \\cr &6t = 24 \\cr &t = 4\\text{ s} \\end{aligned}At $t = 4\\text{ s}$, $\\mathbf{v} = (7\\mathbf{i} + 7\\mathbf{j})\\text{ m s}^{-1} = 7(\\mathbf{i} + \\mathbf{j})\\text{ m s}^{-1}$, confirming it is directed North-East.",
         "<strong>(c) Calculate distance from origin at t = 4 s:</strong><br><br>Using $\\mathbf{s} = \\mathbf{u}t + \\dfrac{1}{2}\\mathbf{a}t^2$:\\begin{aligned} \\mathbf{s} &= 4(-9\\mathbf{i} + 15\\mathbf{j}) \\cr &\\qquad + \\dfrac{1}{2}(4^2)(4\\mathbf{i} - 2\\mathbf{j}) \\cr &= (-36\\mathbf{i} + 60\\mathbf{j}) \\cr &\\qquad + 8(4\\mathbf{i} - 2\\mathbf{j}) \\cr &= (-36\\mathbf{i} + 60\\mathbf{j}) \\cr &\\qquad + (32\\mathbf{i} - 16\\mathbf{j}) \\cr &= (-4\\mathbf{i} + 44\\mathbf{j})\\text{ m} \\end{aligned}The straight-line distance is:\\begin{aligned} |\\mathbf{s}| &= \\sqrt{(-4)^2 + 44^2} \\cr &= \\sqrt{16 + 1936} \\cr &= \\sqrt{1952} \\cr &\\approx 44.2\\text{ m} \\end{aligned}",
         "Final Answer: (a) $2.25\\text{ s}$, $10.5\\text{ m s}^{-1}$, (b) $4\\text{ s}$, (c) $44.2\\text{ m}$"
@@ -1498,7 +1498,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Parallel Vectors vs Collinear Position",
-        "content": "Be careful to distinguish between where an aircraft is *located* and the direction in which it is *moving*. The direction of motion depends entirely on the instantaneous velocity vector $\\mathbf{v}(t)$, not the position vector $\\mathbf{r}(t)$. Travelling parallel to $\\mathbf{i} + \\mathbf{j}$ requires $v_x = v_y > 0$, regardless of whether the aircraft's coordinates happen to lie on the line $y = x$."
+        "content": "Be careful to distinguish between where an aircraft is <strong>located</strong> and the direction in which it is <strong>moving</strong>. The direction of motion depends entirely on the instantaneous velocity vector $\\mathbf{v}(t)$, not the position vector $\\mathbf{r}(t)$. Travelling parallel to $\\mathbf{i} + \\mathbf{j}$ requires $v_x = v_y > 0$, regardless of whether the aircraft's coordinates happen to lie on the line $y = x$."
     }
 },
 {
@@ -1515,8 +1515,8 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "Two radio-controlled toy drones, $A$ and $B$, are flown in a large indoor sports hall in the same horizontal plane.<br><br>At time $t = 0\\text{ s}$, toy drone $A$ passes through the origin $O$ with constant velocity $\\mathbf{v}_A = (8\\mathbf{i} + 7\\mathbf{j})\\text{ m s}^{-1}$.<br><br>At the same instant $t = 0\\text{ s}$, toy drone $B$ starts from rest at the point with position vector $(15\\mathbf{i} + 10\\mathbf{j})\\text{ m}$ and accelerates with constant acceleration $\\mathbf{a}_B = (k\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-2}$, where $k$ is a constant.<br><br>Given that toy drone $B$ intercepts toy drone $A$ at time $t = T\\text{ s}$:<br><br><strong>(a)</strong> Show that $T = 5\\text{ s}$.<br><br><strong>(b)</strong> Find the value of the constant $k$.<br><br><strong>(c)</strong> Calculate the velocity vector and the speed of toy drone $B$ at the instant of interception.",
     "steps": [
-        "<strong>(a) Show that T = 5 s:</strong><br><br>Position vector of toy drone $A$ at time $t$:\\begin{aligned} \\mathbf{r}_A &= (8t\\mathbf{i} + 7t\\mathbf{j})\\text{ m} \\end{aligned}Position vector of toy drone $B$ starting from rest:\\begin{aligned} \\mathbf{r}_B &= (15\\mathbf{i} + 10\\mathbf{j}) + \\dfrac{1}{2}(k\\mathbf{i} + 2\\mathbf{j})t^2 \\cr &= \\left(15 + \\dfrac{1}{2}kt^2\\right)\\mathbf{i} \\cr &\\qquad + (10 + t^2)\\mathbf{j}\\text{ m} \\end{aligned}Equating vertical ($\mathbf{j}$) components for interception:\\begin{aligned} &7t = 10 + t^2 \\cr &t^2 - 7t + 10 = 0 \\cr &(t - 2)(t - 5) = 0 \\end{aligned}For the physical interception under the flight parameters, $T = 5\\text{ s}$.",
-        "<strong>(b) Find the value of k:</strong><br><br>Equating horizontal ($\mathbf{i}$) components at $T = 5\\text{ s}$:\\begin{aligned} &8(5) = 15 + \\dfrac{1}{2}k(5^2) \\cr &40 = 15 + 12.5k \\cr &12.5k = 25 \\cr &k = 2 \\end{aligned}",
+        "<strong>(a) Show that T = 5 s:</strong><br><br>Position vector of toy drone $A$ at time $t$:\\begin{aligned} \\mathbf{r}_A &= (8t\\mathbf{i} + 7t\\mathbf{j})\\text{ m} \\end{aligned}Position vector of toy drone $B$ starting from rest:\\begin{aligned} \\mathbf{r}_B &= (15\\mathbf{i} + 10\\mathbf{j}) + \\dfrac{1}{2}(k\\mathbf{i} + 2\\mathbf{j})t^2 \\cr &= \\left(15 + \\dfrac{1}{2}kt^2\\right)\\mathbf{i} \\cr &\\qquad + (10 + t^2)\\mathbf{j}\\text{ m} \\end{aligned}Equating vertical ($\\mathbf{j}$) components for interception:\\begin{aligned} &7t = 10 + t^2 \\cr &t^2 - 7t + 10 = 0 \\cr &(t - 2)(t - 5) = 0 \\end{aligned}For the physical interception under the flight parameters, $T = 5\\text{ s}$.",
+        "<strong>(b) Find the value of k:</strong><br><br>Equating horizontal ($\\mathbf{i}$) components at $T = 5\\text{ s}$:\\begin{aligned} &8(5) = 15 + \\dfrac{1}{2}k(5^2) \\cr &40 = 15 + 12.5k \\cr &12.5k = 25 \\cr &k = 2 \\end{aligned}",
         "<strong>(c) Calculate velocity vector and speed of B:</strong><br><br>Since toy drone $B$ started from rest with acceleration $\\mathbf{a}_B = (2\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-2}$:\\begin{aligned} \\mathbf{v}_B(5) &= \\mathbf{a}_B T \\cr &= 5(2\\mathbf{i} + 2\\mathbf{j}) \\cr &= (10\\mathbf{i} + 10\\mathbf{j})\\text{ m s}^{-1} \\end{aligned}The speed of $B$ at interception is:\\begin{aligned} |\\mathbf{v}_B| &= \\sqrt{10^2 + 10^2} \\cr &= \\sqrt{200} \\cr &= 10\\sqrt{2} \\cr &\\approx 14.1\\text{ m s}^{-1} \\end{aligned}",
         "Final Answer: (a) Proof complete ($T = 5\\text{ s}$), (b) $k = 2$, (c) $(10\\mathbf{i} + 10\\mathbf{j})\\text{ m s}^{-1}$, $14.1\\text{ m s}^{-1}$"
     ],
@@ -1577,6 +1577,204 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Bridging Dynamics and Kinematics",
         "content": "This question links Newton's Second Law (Dynamics) with SUVAT (Kinematics). The crucial bridge is the acceleration vector $\\mathbf{a} = \\frac{\\Sigma\\mathbf{F}}{m}$. Once $\\mathbf{a}$ is found, verify that it is constant (independent of $t$, $v$, or $x$) before selecting constant acceleration kinematic formulas."
+    }
+},
+{
+    "id": "012241",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Velocity-Time Graphs",
+        "Multi-Stage Motion"
+    ],
+    "img": "images/Mechanics_pngs/012241.png",
+    "question": "The diagram shows the velocity-time graph for a particle moving in a straight line over a period of $14\\text{ seconds}$.<br><br>The motion consists of three distinct stages:<br>• Accelerating uniformly from rest to a speed of $12\\text{ m s}^{-1}$ in the first $4\\text{ seconds}$.<br>• Travelling at a constant speed of $12\\text{ m s}^{-1}$ from $t = 4\\text{ s}$ to $t = T\\text{ s}$.<br>• Decelerating uniformly from $12\\text{ m s}^{-1}$ to $6\\text{ m s}^{-1}$ in the time interval from $t = T\\text{ s}$ to $t = 14\\text{ s}$.<br><br>The total distance travelled by the particle during the $14\\text{ seconds}$ is $135\\text{ m}$.<br><br><strong>(a)</strong> Calculate the acceleration of the particle during the first $4\\text{ seconds}$.<br><br><strong>(b)</strong> Calculate the value of $T$.<br><br><strong>(c)</strong> Determine the deceleration of the particle during the final stage of the motion.",
+    "steps": [
+        "<strong>(a) Calculate acceleration in stage 1:</strong><br><br>The acceleration is the gradient of the velocity-time graph during the first $4\\text{ seconds}$:\\begin{aligned} a &= \\dfrac{v - u}{t} \\cr &= \\dfrac{12 - 0}{4} \\cr &= 3\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Form an area equation to find T:</strong><br><br>Total distance equals the area under the velocity-time graph.<br><br>Stage 1 area (triangle):\\begin{aligned} s_1 &= \\dfrac{1}{2}(4)(12) \\cr &= 24\\text{ m} \\end{aligned}Stage 2 area (rectangle):\\begin{aligned} s_2 &= 12(T - 4) \\cr &= (12T - 48)\\text{ m} \\end{aligned}Stage 3 area (trapezium):\\begin{aligned} s_3 &= \\dfrac{1}{2}(12 + 6)(14 - T) \\cr &= 9(14 - T) \\cr &= (126 - 9T)\\text{ m} \\end{aligned}Summing the three areas to $135\\text{ m}$:\\begin{aligned} &24 + (12T - 48) \\cr &\\qquad + (126 - 9T) = 135 \\cr &3T + 102 = 135 \\cr &3T = 33 \\cr &T = 11\\text{ s} \\end{aligned}",
+        "<strong>(c) Calculate deceleration in stage 3:</strong><br><br>Deceleration is the magnitude of the negative gradient from $t = 11\\text{ s}$ to $t = 14\\text{ s}$:\\begin{aligned} \\text{Deceleration} &= \\dfrac{12 - 6}{14 - 11} \\cr &= \\dfrac{6}{3} \\cr &= 2\\text{ m s}^{-2} \\end{aligned}",
+        "Final Answer: (a) $3\\text{ m s}^{-2}$, (b) $11\\text{ s}$, (c) $2\\text{ m s}^{-2}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $3\\text{ m s}^{-2}$, (b) $9\\text{ s}$, (c) $1.2\\text{ m s}^{-2}$",
+            "feedback": "In part (b), you treated stage 3 as a triangle of height $6$ with area $\\frac{1}{2}(6)(14 - T)$, forgetting that it is a trapezium sitting on top of the ground axis."
+        },
+        {
+            "ans": "(a) $3\\text{ m s}^{-2}$, (b) $11\\text{ s}$, (c) $-2\\text{ m s}^{-2}$",
+            "feedback": "In part (c), deceleration is specifically requested. Deceleration is a scalar rate of slowing down and should be given as positive ($2\\text{ m s}^{-2}$) rather than negative."
+        },
+        {
+            "ans": "(a) $4.8\\text{ m s}^{-2}$, (b) $11\\text{ s}$, (c) $2\\text{ m s}^{-2}$",
+            "feedback": "In part (a), you multiplied velocity by time ($12 \\times 4$) rather than dividing velocity change by time."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Trapezium vs Triangle in Incomplete Decelerations",
+        "content": "A very common error in multi-stage graphs is assuming every final stage drops to zero. Here, the particle decelerates from $12\\text{ m s}^{-1}$ to $6\\text{ m s}^{-1}$. This makes the third region a trapezium of parallel sides $12$ and $6$, with width $(14 - T)$. Using the triangle formula $\\frac{1}{2}bh$ here loses all subsequent marks."
+    }
+},
+{
+    "id": "012242",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Velocity-Time Graphs",
+        "Trapezoidal Profiles"
+    ],
+    "img": "images/Mechanics_pngs/012242.png",
+    "question": "The diagram shows the velocity-time graph for a passenger train travelling along a straight horizontal track between two stations, $A$ and $B$.<br><br>The train starts from rest at station $A$ and accelerates uniformly for $20\\text{ seconds}$ until it reaches a speed of $V\\text{ m s}^{-1}$. It then maintains this constant cruising speed $V\\text{ m s}^{-1}$ for $50\\text{ seconds}$ before decelerating uniformly for $30\\text{ seconds}$, coming to rest at station $B$.<br><br>The total distance between station $A$ and station $B$ is $1800\\text{ m}$.<br><br><strong>(a)</strong> Calculate the value of $V$.<br><br><strong>(b)</strong> Calculate the acceleration of the train during the first $20\\text{ seconds}$.<br><br><strong>(c)</strong> Calculate the deceleration of the train during the final $30\\text{ seconds}$.",
+    "steps": [
+        "<strong>(a) Find cruising speed V from total area:</strong><br><br>The graph forms a trapezium with parallel horizontal sides of length $50\\text{ s}$ and $(20 + 50 + 30) = 100\\text{ s}$.<br><br>Using the area of a trapezium:\\begin{aligned} &\\text{Area} = \\dfrac{1}{2}(a + b)h \\cr &1800 = \\dfrac{1}{2}(50 + 100)V \\cr &1800 = 75V \\cr &V = \\dfrac{1800}{75} \\cr &V = 24\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Calculate initial acceleration:</strong><br><br>Acceleration is the gradient of the graph during the first $20\\text{ seconds}$:\\begin{aligned} a &= \\dfrac{V - 0}{20} \\cr &= \\dfrac{24}{20} \\cr &= 1.2\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(c) Calculate final deceleration:</strong><br><br>Deceleration is the magnitude of the negative gradient during the final $30\\text{ seconds}$:\\begin{aligned} \\text{Deceleration} &= \\dfrac{V - 0}{30} \\cr &= \\dfrac{24}{30} \\cr &= 0.8\\text{ m s}^{-2} \\end{aligned}",
+        "Final Answer: (a) $24\\text{ m s}^{-1}$, (b) $1.2\\text{ m s}^{-2}$, (c) $0.8\\text{ m s}^{-2}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $18\\text{ m s}^{-1}$, (b) $0.9\\text{ m s}^{-2}$, (c) $0.6\\text{ m s}^{-2}$",
+            "feedback": "In part (a), you divided distance by total time ($1800/100 = 18$), calculating average speed rather than the maximum cruising speed $V$."
+        },
+        {
+            "ans": "(a) $24\\text{ m s}^{-1}$, (b) $1.2\\text{ m s}^{-2}$, (c) $-0.8\\text{ m s}^{-2}$",
+            "feedback": "In part (c), deceleration is asked for directly. Giving a negative value implies an acceleration of $-0.8\\text{ m s}^{-2}$, whereas deceleration is $0.8\\text{ m s}^{-2}$."
+        },
+        {
+            "ans": "(a) $36\\text{ m s}^{-1}$, (b) $1.8\\text{ m s}^{-2}$, (c) $1.2\\text{ m s}^{-2}$",
+            "feedback": "In part (a), you used only the cruising time of $50\\text{ s}$ as the base of the area, calculating $1800 = 50V$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: The Single Trapezium Method",
+        "content": "Rather than splitting a standard journey into two triangles and a central rectangle, always treat it as a single trapezium: $\\text{Area} = \\frac{1}{2}(t_{\\text{cruise}} + t_{\\text{total}})V$. Here, $t_{\\text{cruise}} = 50$ and $t_{\\text{total}} = 100$, so $1800 = \\frac{1}{2}(150)V = 75V$, yielding $V = 24\\text{ m s}^{-1}$ in a single algebraic line."
+    }
+},
+{
+    "id": "012243",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Velocity-Time Graphs",
+        "Reversal of Motion"
+    ],
+    "img": "images/Mechanics_pngs/012243.png",
+    "question": "The diagram shows the velocity-time graph for a particle moving along a straight horizontal line over a period of $14\\text{ seconds}$.<br><br>At time $t = 0\\text{ s}$, the particle has an initial velocity of $+12\\text{ m s}^{-1}$. It moves with constant acceleration, coming instantaneously to rest at $t = 6\\text{ s}$, and continues with the same constant acceleration until $t = 10\\text{ s}$, when its velocity is $-8\\text{ m s}^{-1}$.<br><br>From $t = 10\\text{ s}$ to $t = 14\\text{ s}$, the particle decelerates uniformly, coming to rest at $t = 14\\text{ s}$.<br><br><strong>(a)</strong> Find the acceleration of the particle during the first $10\\text{ seconds}$.<br><br><strong>(b)</strong> Calculate the displacement of the particle from its starting position at time $t = 14\\text{ s}$.<br><br><strong>(c)</strong> Calculate the total distance travelled by the particle during the entire $14\\text{ seconds}$.<br><br><strong>(d)</strong> State the greatest distance of the particle from its starting point during the motion.",
+    "steps": [
+        "<strong>(a) Find acceleration in first 10 s:</strong><br><br>The line is straight from $t = 0\\text{ s}$ to $t = 10\\text{ s}$. Using the gradient from $(0, 12)$ to $(6, 0)$:\\begin{aligned} a &= \\dfrac{0 - 12}{6 - 0} \\cr &= -2\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Calculate displacement at t = 14 s:</strong><br><br>Displacement is the net signed area between the curve and the time axis.<br><br>Area above axis ($0 \\le t \\le 6$):\\begin{aligned} A_1 &= \\dfrac{1}{2}(6)(12) \\cr &= 36\\text{ m} \\end{aligned}Area below axis ($6 \\le t \\le 10$):\\begin{aligned} A_2 &= \\dfrac{1}{2}(10 - 6)(-8) \\cr &= \\dfrac{1}{2}(4)(-8) \\cr &= -16\\text{ m} \\end{aligned}Area below axis ($10 \\le t \\le 14$):\\begin{aligned} A_3 &= \\dfrac{1}{2}(14 - 10)(-8) \\cr &= \\dfrac{1}{2}(4)(-8) \\cr &= -16\\text{ m} \\end{aligned}Net displacement:\\begin{aligned} s &= A_1 + A_2 + A_3 \\cr &= 36 - 16 - 16 \\cr &= 4\\text{ m} \\end{aligned}",
+        "<strong>(c) Calculate total distance travelled:</strong><br><br>Distance is the sum of the absolute geometric areas:\\begin{aligned} d &= |A_1| + |A_2| + |A_3| \\cr &= 36 + 16 + 16 \\cr &= 68\\text{ m} \\end{aligned}",
+        "<strong>(d) Determine greatest distance from start:</strong><br><br>The particle moves forward until $t = 6\\text{ s}$, reaching $s = 36\\text{ m}$. After $t = 6\\text{ s}$, velocity becomes negative, meaning the particle reverses and moves back towards the start.<br><br>Thus, the greatest distance from the start is $36\\text{ m}$.",
+        "Final Answer: (a) $-2\\text{ m s}^{-2}$, (b) $4\\text{ m}$, (c) $68\\text{ m}$, (d) $36\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $-2\\text{ m s}^{-2}$, (b) $68\\text{ m}$, (c) $4\\text{ m}$, (d) $36\\text{ m}$",
+            "feedback": "You swapped displacement and total distance: displacement accounts for direction (signed area), whereas distance is the total ground covered (absolute area)."
+        },
+        {
+            "ans": "(a) $2\\text{ m s}^{-2}$, (b) $4\\text{ m}$, (c) $68\\text{ m}$, (d) $68\\text{ m}$",
+            "feedback": "In part (a), the velocity is decreasing, so the acceleration is $-2\\text{ m s}^{-2}$. In part (d), the particle reverses at $36\\text{ m}$, so it never reaches a distance of $68\\text{ m}$ from its start."
+        },
+        {
+            "ans": "(a) $-2\\text{ m s}^{-2}$, (b) $4\\text{ m}$, (c) $68\\text{ m}$, (d) $4\\text{ m}$",
+            "feedback": "In part (d), you stated the final position at $t = 14\\text{ s}$ rather than the maximum displacement achieved during the journey (which occurred at $t = 6\\text{ s}$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Displacement vs Distance on Graphs",
+        "content": "When a velocity-time graph crosses the time axis, direction of motion reverses. <em>Displacement</em> is the vector integral $\\int v\\text{ d}t$, which subtracts areas below the axis. <em>Distance</em> is the scalar path length $\\int |v|\\text{ d}t$, which sums all geometric areas as positive values."
+    }
+},
+{
+    "id": "012244",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Velocity-Time Graphs",
+        "Relative Pursuit"
+    ],
+    "img": "images/Mechanics_pngs/012244.png",
+    "question": "The diagram shows the velocity-time graphs for a car and a police motorcycle travelling along a straight stretch of motorway.<br><br>At time $t = 0\\text{ s}$, the car passes a stationary police motorcycle at a constant speed of $24\\text{ m s}^{-1}$. The motorcycle remains stationary until $t = 2\\text{ s}$, at which point it accelerates uniformly at $3\\text{ m s}^{-2}$ until $t = 12\\text{ s}$, reaching a speed of $30\\text{ m s}^{-1}$.<br><br>The motorcycle then continues at this constant speed of $30\\text{ m s}^{-1}$ until it draws level with the car at time $t = T\\text{ s}$.<br><br><strong>(a)</strong> Find the distance travelled by the car during the time interval $0 \\le t \\le 12\\text{ s}$.<br><br><strong>(b)</strong> Find the distance travelled by the motorcycle during the time interval $0 \\le t \\le 12\\text{ s}$.<br><br><strong>(c)</strong> Form an equation in $T$, and hence determine the time $T$ at which the motorcycle draws level with the car.<br><br><strong>(d)</strong> Calculate the total distance travelled by the motorcycle from its starting position up to the moment it draws level with the car.",
+    "steps": [
+        "<strong>(a) Distance travelled by car in 12 s:</strong><br><br>The car moves at a constant speed of $24\\text{ m s}^{-1}$:\\begin{aligned} s_{\\text{car}} &= 24 \\times 12 \\cr &= 288\\text{ m} \\end{aligned}",
+        "<strong>(b) Distance travelled by motorcycle in 12 s:</strong><br><br>The motorcycle is stationary from $t = 0$ to $t = 2\\text{ s}$, then accelerates from $t = 2$ to $t = 12\\text{ s}$ ($10\\text{ seconds}$ duration):\\begin{aligned} s_{\\text{moto}} &= \\dfrac{1}{2}(12 - 2)(30) \\cr &= \\dfrac{1}{2}(10)(30) \\cr &= 150\\text{ m} \\end{aligned}",
+        "<strong>(c) Form equation in T and solve:</strong><br><br>At time $T$, the car has travelled:\\begin{aligned} s_{\\text{car}}(T) &= 24T \\end{aligned}The motorcycle travels $150\\text{ m}$ during acceleration, plus the distance cruised at $30\\text{ m s}^{-1}$ from $t = 12$ to $t = T$:\\begin{aligned} s_{\\text{moto}}(T) &= 150 + 30(T - 12) \\cr &= 150 + 30T - 360 \\cr &= (30T - 210)\\text{ m} \\end{aligned}Setting distances equal for overtaking:\\begin{aligned} &24T = 30T - 210 \\cr &6T = 210 \\cr &T = 35\\text{ s} \\end{aligned}",
+        "<strong>(d) Calculate total distance at overtake:</strong><br><br>Using the car's distance at $T = 35\\text{ s}$:\\begin{aligned} s &= 24 \\times 35 \\cr &= 840\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $288\\text{ m}$, (b) $150\\text{ m}$, (c) $35\\text{ s}$, (d) $840\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $288\\text{ m}$, (b) $180\\text{ m}$, (c) $35\\text{ s}$, (d) $840\\text{ m}$",
+            "feedback": "In part (b), you used a base of $12\\text{ s}$ instead of $(12 - 2) = 10\\text{ s}$ for the motorcycle's triangle, forgetting it was stationary for the first $2\\text{ seconds}$."
+        },
+        {
+            "ans": "(a) $288\\text{ m}$, (b) $150\\text{ m}$, (c) $25\\text{ s}$, (d) $600\\text{ m}$",
+            "feedback": "In part (c), you wrote the motorcycle's cruise time as $(T - 2)$ instead of $(T - 12)$, ignoring the $10\\text{ s}$ acceleration interval."
+        },
+        {
+            "ans": "(a) $288\\text{ m}$, (b) $150\\text{ m}$, (c) $35\\text{ s}$, (d) $1050\\text{ m}$",
+            "feedback": "In part (d), you evaluated $30 \\times 35$, forgetting that the motorcycle was not travelling at $30\\text{ m s}^{-1}$ for the first $12\\text{ seconds}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Shifted Bases in Multi-Body Graphs",
+        "content": "When two vehicles appear on the same graph, track their time intervals carefully. The motorcycle's triangle has base $(12 - 2) = 10\\text{ s}$, and its subsequent rectangle has base $(T - 12)\\text{ s}$. Summing these segments avoids using shifted SUVAT time equations."
+    }
+},
+{
+    "id": "012245",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Kinematics",
+    "subtopic": [
+        "Velocity-Time Graphs",
+        "Vertical Motion"
+    ],
+    "img": "images/Mechanics_pngs/012245.png",
+    "question": "The diagram shows the velocity-time graph for a lift ascending vertically from the ground floor to the observation deck of a tall building.<br><br>The lift starts from rest and accelerates uniformly at $1.5\\text{ m s}^{-2}$ for $4\\text{ seconds}$ to reach a cruising speed of $6\\text{ m s}^{-1}$. It then travels at this constant speed of $6\\text{ m s}^{-1}$ from $t = 4\\text{ s}$ to $t = t_1\\text{ s}$. Finally, it decelerates uniformly to rest at $2\\text{ m s}^{-2}$ between $t = t_1\\text{ s}$ and $t = t_2\\text{ s}$.<br><br>The total vertical distance ascended by the lift is $93\\text{ m}$.<br><br><strong>(a)</strong> Calculate the distance ascended by the lift during the first $4\\text{ seconds}$.<br><br><strong>(b)</strong> Find the time taken by the lift to decelerate to rest, and hence express $t_2$ in terms of $t_1$.<br><br><strong>(c)</strong> Find the value of $t_1$, and state the total time $t_2$ taken for the complete journey.<br><br><strong>(d)</strong> Calculate the average speed of the lift for the entire journey, giving your answer to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Distance during acceleration stage:</strong><br><br>Using the triangular area under the graph for the first $4\\text{ seconds}$:\\begin{aligned} s_1 &= \\dfrac{1}{2}(4)(6) \\cr &= 12\\text{ m} \\end{aligned}",
+        "<strong>(b) Deceleration time and expression for t₂:</strong><br><br>The lift decelerates from $6\\text{ m s}^{-1}$ to $0\\text{ m s}^{-1}$ at $2\\text{ m s}^{-2}$:\\begin{aligned} \\Delta t_{\\text{dec}} &= \\dfrac{v - 0}{a_{\\text{dec}}} \\cr &= \\dfrac{6}{2} \\cr &= 3\\text{ s} \\end{aligned}Because deceleration begins at $t_1$, the arrival time is:\\begin{aligned} t_2 &= t_1 + 3 \\end{aligned}",
+        "<strong>(c) Calculate t₁ and t₂:</strong><br><br>Distance during the deceleration stage:\\begin{aligned} s_3 &= \\dfrac{1}{2}(3)(6) \\cr &= 9\\text{ m} \\end{aligned}Cruising distance during stage 2:\\begin{aligned} s_2 &= 93 - (s_1 + s_3) \\cr &= 93 - (12 + 9) \\cr &= 72\\text{ m} \\end{aligned}Duration of cruising at $6\\text{ m s}^{-1}$:\\begin{aligned} \\Delta t_{\\text{cruise}} &= \\dfrac{72}{6} \\cr &= 12\\text{ s} \\end{aligned}Thus:\\begin{aligned} t_1 &= 4 + 12 = 16\\text{ s} \\cr t_2 &= 16 + 3 = 19\\text{ s} \\end{aligned}",
+        "<strong>(d) Calculate average speed:</strong><br><br>Using $\\text{Average speed} = \\dfrac{\\text{Total distance}}{\\text{Total time}}$:\\begin{aligned} \\text{Average speed} &= \\dfrac{93}{19} \\cr &\\approx 4.89\\text{ m s}^{-1} \\end{aligned}",
+        "Final Answer: (a) $12\\text{ m}$, (b) $3\\text{ s}$, $t_2 = t_1 + 3$, (c) $t_1 = 16\\text{ s}$, $t_2 = 19\\text{ s}$, (d) $4.89\\text{ m s}^{-1}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $12\\text{ m}$, (b) $3\\text{ s}$, $t_2 = t_1 + 3$, (c) $t_1 = 12\\text{ s}$, $t_2 = 15\\text{ s}$, (d) $6.20\\text{ m s}^{-1}$",
+            "feedback": "In part (c), you equated $t_1$ directly to the cruise duration ($12\\text{ s}$) without adding the initial $4\\text{ s}$ acceleration phase."
+        },
+        {
+            "ans": "(a) $24\\text{ m}$, (b) $3\\text{ s}$, $t_2 = t_1 + 3$, (c) $t_1 = 16\\text{ s}$, $t_2 = 19\\text{ s}$, (d) $4.89\\text{ m s}^{-1}$",
+            "feedback": "In part (a), you computed $4 \\times 6 = 24$ as a rectangle, forgetting the factor of $\\frac{1}{2}$ for the triangular acceleration stage."
+        },
+        {
+            "ans": "(a) $12\\text{ m}$, (b) $3\\text{ s}$, $t_2 = t_1 + 3$, (c) $t_1 = 16\\text{ s}$, $t_2 = 19\\text{ s}$, (d) $5.81\\text{ m s}^{-1}$",
+            "feedback": "In part (d), you divided total distance by $t_1 = 16\\text{ s}$ rather than the total journey duration $t_2 = 19\\text{ s}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Duration vs Time Coordinates",
+        "content": "Always distinguish between a time <em>interval</em> (duration $\\Delta t$) and a time <em>coordinate</em> ($t$). The lift cruises for $\\Delta t = 12\\text{ s}$, so its coordinate is $t_1 = 4 + 12 = 16\\text{ s}$. It decelerates for $\\Delta t = 3\\text{ s}$, so its final arrival coordinate is $t_2 = 16 + 3 = 19\\text{ s}$."
     }
 }
 ];
