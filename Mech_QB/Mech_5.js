@@ -1266,7 +1266,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Geometry of Perpendicular Forces",
-        "content": "Notice that the angle between the two upward forces is $(180^\\circ - 60^\\circ - 30^\\circ) = 90^\\circ$. Because the forces $F$ and $T$ are perpendicular, you can also resolve directly along the line of action of each force! Resolving along $T$ gives $T = 40\\cos(90^\\circ - 30^\\circ) = 40\\cos 60^\\circ = 20\\text{ N}$, and resolving along $F$ gives $F = 40\\cos(90^\\circ - 60^\\circ) = 40\\cos 30^\\circ = 20\\sqrt{3}\\text{ N}$ in a single step."
+        "content": "Notice that the angle between the two upward forces is $(180^\\circ - 60^\\circ - 30^\\circ) = 90^\\circ$. Because the forces $F$ and $T$ are perpendicular, you can also resolve directly along the line of action of each force! Resolving along $T$ gives \\begin{aligned}T &= 40\\cos(90^\\circ - 30^\\circ)\\cr & = 40\\cos 60^\\circ \\cr &= 20\\text{ N}\\end{aligned} and resolving along $F$ gives \\begin{aligned}F &= 40\\cos(90^\\circ - 60^\\circ)\\cr & = 40\\cos 30^\\circ\\cr &= 20\\sqrt{3}\\text{ N}\\end{aligned} in a single step."
     }
 },
 {
@@ -1382,6 +1382,201 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Bearings Shortcut with Sine and Cosine",
         "content": "For standard cartesian angles measured anticlockwise from the positive $x$-axis, $x = F\\cos\\theta$ and $y = F\\sin\\theta$. But for a navigation bearing $\\beta$ measured clockwise from North, the roles naturally swap: $\\text{East} = F\\sin\\beta$ and $\\text{North} = F\\cos\\beta$. Using this rule directly avoids converting bearings into cartesian angles and saves precious time in exam conditions."
+    }
+},
+{
+    "id": "012236",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Kinematics with Constant Acceleration",
+    "subtopic": [
+        "2D Vectors",
+        "SUVAT Equations"
+    ],
+    "img": false,
+    "question": "A helicopter is flying in a horizontal plane during a low-altitude search manoeuvre with constant acceleration.<br><br>At time $t = 0\\text{ s}$, the velocity of the helicopter is $(3\\mathbf{i} - 8\\mathbf{j})\\text{ m s}^{-1}$.<br>At time $t = 3\\text{ s}$, the velocity of the helicopter is $(15\\mathbf{i} + 4\\mathbf{j})\\text{ m s}^{-1}$.<br><br><strong>(a)</strong> Calculate the acceleration vector of the helicopter.<br><br><strong>(b)</strong> Find the displacement of the helicopter from its initial position when $t = 3\\text{ s}$, and hence calculate the straight-line distance it has travelled during these $3\\text{ seconds}$, giving your answer to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Calculate the acceleration vector:</strong><br><br>Using $\\mathbf{a} = \\dfrac{\\mathbf{v} - \\mathbf{u}}{t}$ with $t = 3\\text{ s}$:\\begin{aligned} \\mathbf{a} &= \\dfrac{(15\\mathbf{i} + 4\\mathbf{j}) - (3\\mathbf{i} - 8\\mathbf{j})}{3} \\cr &= \\dfrac{(15 - 3)\\mathbf{i} + (4 - (-8))\\mathbf{j}}{3} \\cr &= \\dfrac{12\\mathbf{i} + 12\\mathbf{j}}{3} \\cr &= (4\\mathbf{i} + 4\\mathbf{j})\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Find the displacement vector and straight-line distance:</strong><br><br>Using $\\mathbf{s} = \\mathbf{u}t + \\dfrac{1}{2}\\mathbf{a}t^2$:\\begin{aligned} \\mathbf{s} &= 3(3\\mathbf{i} - 8\\mathbf{j}) \\cr &\\qquad + \\dfrac{1}{2}(3^2)(4\\mathbf{i} + 4\\mathbf{j}) \\cr &= (9\\mathbf{i} - 24\\mathbf{j}) \\cr &\\qquad + 4.5(4\\mathbf{i} + 4\\mathbf{j}) \\cr &= (9\\mathbf{i} - 24\\mathbf{j}) \\cr &\\qquad + (18\\mathbf{i} + 18\\mathbf{j}) \\cr &= (27\\mathbf{i} - 6\\mathbf{j})\\text{ m} \\end{aligned}The straight-line distance is the magnitude of the displacement:\\begin{aligned} |\\mathbf{s}| &= \\sqrt{27^2 + (-6)^2} \\cr &= \\sqrt{729 + 36} \\cr &= \\sqrt{765} \\cr &\\approx 27.7\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $(4\\mathbf{i} + 4\\mathbf{j})\\text{ m s}^{-2}$, (b) $(27\\mathbf{i} - 6\\mathbf{j})\\text{ m}$, $27.7\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $(4\\mathbf{i} - \\dfrac{4}{3}\\mathbf{j})\\text{ m s}^{-2}$, (b) $(27\\mathbf{i} - 6\\mathbf{j})\\text{ m}$, $27.7\\text{ m}$",
+            "feedback": "In part (a), you subtracted incorrectly when finding the $\\mathbf{j}$ component of velocity change, evaluating $4 - 8 = -4$ instead of $4 - (-8) = 12$."
+        },
+        {
+            "ans": "(a) $(4\\mathbf{i} + 4\\mathbf{j})\\text{ m s}^{-2}$, (b) $(45\\mathbf{i} + 12\\mathbf{j})\\text{ m}$, $46.6\\text{ m}$",
+            "feedback": "In part (b), you evaluated $\\mathbf{s} = \\mathbf{v}t$ as if velocity were constant at its final value, omitting the initial velocity and acceleration."
+        },
+        {
+            "ans": "(a) $(4\\mathbf{i} + 4\\mathbf{j})\\text{ m s}^{-2}$, (b) $(27\\mathbf{i} - 6\\mathbf{j})\\text{ m}$, $33.0\\text{ m}$",
+            "feedback": "In part (b), you added the components scalar-wise ($27 + 6 = 33$) rather than using Pythagoras' theorem to find the vector magnitude."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Average Velocity Shortcut",
+        "content": "For motion with constant acceleration, the displacement can also be calculated via the average velocity formula $\\mathbf{s} = \\frac{1}{2}(\\mathbf{u} + \\mathbf{v})t$. Here, $\\frac{1}{2}[(3\\mathbf{i} - 8\\mathbf{j}) + (15\\mathbf{i} + 4\\mathbf{j})](3) = \\frac{1}{2}(18\\mathbf{i} - 4\\mathbf{j})(3) = (9\\mathbf{i} - 2\\mathbf{j})(3) = (27\\mathbf{i} - 6\\mathbf{j})\\text{ m}$. This provides an instantaneous check that avoids squaring time."
+    }
+},
+{
+    "id": "012237",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Kinematics with Constant Acceleration",
+    "subtopic": [
+        "Velocity & Speed",
+        "Bearings in Kinematics"
+    ],
+    "img": false,
+    "question": "A microlight aircraft operates in a horizontal flight corridor along a coastline. At time $t = 0\\text{ s}$, the aircraft leaves an airfield with velocity $\\mathbf{u} = (5\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-1}$ and moves with constant acceleration $\\mathbf{a} = (1.5\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-2}$, where $\\mathbf{i}$ and $\\mathbf{j}$ are unit vectors directed due East and due North respectively.<br><br><strong>(a)</strong> Find the velocity vector of the microlight when $t = 6\\text{ s}$.<br><br><strong>(b)</strong> Calculate the speed of the microlight when $t = 6\\text{ s}$, giving your answer to 3 significant figures.<br><br><strong>(c)</strong> Determine the direction in which the microlight is travelling when $t = 6\\text{ s}$, expressed as a three-figure bearing to the nearest whole degree.<br><br><strong>(d)</strong> Given that the microlight started from the point with position vector $(10\\mathbf{i} + 25\\mathbf{j})\\text{ m}$ relative to a coastal tracking station at $O$, find its position vector when $t = 6\\text{ s}$.",
+    "steps": [
+        "<strong>(a) Find velocity vector at t = 6 s:</strong><br><br>Using $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$:\\begin{aligned} \\mathbf{v} &= (5\\mathbf{i} + 2\\mathbf{j}) + 6(1.5\\mathbf{i} - 2\\mathbf{j}) \\cr &= (5\\mathbf{i} + 2\\mathbf{j}) + (9\\mathbf{i} - 12\\mathbf{j}) \\cr &= (14\\mathbf{i} - 10\\mathbf{j})\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Calculate speed:</strong><br><br>Speed is the magnitude of the velocity vector:\\begin{aligned} |\\mathbf{v}| &= \\sqrt{14^2 + (-10)^2} \\cr &= \\sqrt{196 + 100} \\cr &= \\sqrt{296} \\cr &\\approx 17.2\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(c) Determine bearing:</strong><br><br>The velocity vector $(14\\mathbf{i} - 10\\mathbf{j})$ points East ($+14$) and South ($-10$).<br><br>Let $\\alpha$ be the angle South of East:\\begin{aligned} \\tan\\alpha &= \\dfrac{10}{14} \\cr &\\approx 0.7143 \\cr \\alpha &= \\arctan(0.7143) \\cr &\\approx 35.5^\\circ \\end{aligned}Since East is on a bearing of $090^\\circ$, the bearing clockwise from North is:\\begin{aligned} \\text{Bearing} &= 90^\\circ + 35.5^\\circ \\cr &= 125.5^\\circ \\cr &\\approx 126^\\circ \\end{aligned}",
+        "<strong>(d) Calculate position vector:</strong><br><br>Using $\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{u}t + \\dfrac{1}{2}\\mathbf{a}t^2$:\\begin{aligned} \\mathbf{r} &= (10\\mathbf{i} + 25\\mathbf{j}) \\cr &\\qquad + 6(5\\mathbf{i} + 2\\mathbf{j}) \\cr &\\qquad + \\dfrac{1}{2}(6^2)(1.5\\mathbf{i} - 2\\mathbf{j}) \\cr &= (10\\mathbf{i} + 25\\mathbf{j}) \\cr &\\qquad + (30\\mathbf{i} + 12\\mathbf{j}) \\cr &\\qquad + 18(1.5\\mathbf{i} - 2\\mathbf{j}) \\cr &= (10\\mathbf{i} + 25\\mathbf{j}) \\cr &\\qquad + (30\\mathbf{i} + 12\\mathbf{j}) \\cr &\\qquad + (27\\mathbf{i} - 36\\mathbf{j}) \\cr &= (67\\mathbf{i} + \\mathbf{j})\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $(14\\mathbf{i} - 10\\mathbf{j})\\text{ m s}^{-1}$, (b) $17.2\\text{ m s}^{-1}$, (c) $126^\\circ$, (d) $(67\\mathbf{i} + \\mathbf{j})\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $(14\\mathbf{i} - 10\\mathbf{j})\\text{ m s}^{-1}$, (b) $17.2\\text{ m s}^{-1}$, (c) $036^\\circ$, (d) $(67\\mathbf{i} + \\mathbf{j})\\text{ m}$",
+            "feedback": "In part (c), you calculated $\\arctan(10/14) \\approx 36^\\circ$ but wrote it down directly as the bearing without referencing clockwise rotation from North."
+        },
+        {
+            "ans": "(a) $(14\\mathbf{i} - 10\\mathbf{j})\\text{ m s}^{-1}$, (b) $17.2\\text{ m s}^{-1}$, (c) $126^\\circ$, (d) $(57\\mathbf{i} - 24\\mathbf{j})\\text{ m}$",
+            "feedback": "In part (d), you calculated the displacement from the airfield $\\mathbf{s} = \\mathbf{u}t + \\frac{1}{2}\\mathbf{a}t^2$ but forgot to add the initial position vector $\\mathbf{r}_0$ relative to $O$."
+        },
+        {
+            "ans": "(a) $(14\\mathbf{i} - 10\\mathbf{j})\\text{ m s}^{-1}$, (b) $24.0\\text{ m s}^{-1}$, (c) $126^\\circ$, (d) $(67\\mathbf{i} + \\mathbf{j})\\text{ m}$",
+            "feedback": "In part (b), you summed the magnitudes of the components ($14 + 10 = 24$) rather than applying Pythagoras' theorem $\\sqrt{14^2 + (-10)^2}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Navigational Bearings vs Cartesian Angles",
+        "content": "Direction questions frequently ask for a bearing. A velocity of $14\\mathbf{i} - 10\\mathbf{j}$ means moving $14\\text{ m s}^{-1}$ East and $10\\text{ m s}^{-1}$ South. The angle with East is $\\arctan(10/14) \\approx 35.5^\\circ$. Because East is $090^\\circ$, turning South adds to the bearing: $090^\\circ + 35.5^\\circ = 125.5^\\circ \\approx 126^\\circ$. Always sketch a compass rose to avoid confusing bearings with trigonometric angles."
+    }
+},
+{
+    "id": "012238",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Kinematics with Constant Acceleration",
+    "subtopic": [
+        "Direction of Motion",
+        "Vector SUVAT"
+    ],
+    "img": false,
+    "question": "A light aircraft is undertaking an aerial photographic survey in a horizontal plane. At time $t = 0\\text{ s}$, the aircraft passes directly over a ground marker at $O$ with initial velocity $\\mathbf{u} = (-9\\mathbf{i} + 15\\mathbf{j})\\text{ m s}^{-1}$. It maintains a constant acceleration $\\mathbf{a} = (4\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-2}$, where $\\mathbf{i}$ and $\\mathbf{j}$ are perpendicular unit vectors directed East and North respectively.<br><br><strong>(a)</strong> Find the time at which the aircraft is travelling due North, and state its speed at this instant.<br><br><strong>(b)</strong> Find the time at which the aircraft is travelling parallel to the vector $(\\mathbf{i} + \\mathbf{j})$ (i.e. heading North-East).<br><br><strong>(c)</strong> Calculate the straight-line distance of the aircraft from the marker at $O$ at the instant when it is travelling parallel to $(\\mathbf{i} + \\mathbf{j})$, giving your answer to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Travelling due North:</strong><br><br>The general velocity vector at time $t$ is:\\begin{aligned} \\mathbf{v}(t) &= \\mathbf{u} + \\mathbf{a}t \\cr &= (-9 + 4t)\\mathbf{i} + (15 - 2t)\\mathbf{j}\\text{ m s}^{-1} \\end{aligned}When travelling due North, the horizontal ($\mathbf{i}$) component must equal zero:\\begin{aligned} &-9 + 4t = 0 \\cr &4t = 9 \\cr &t = 2.25\\text{ s} \\end{aligned}The vertical component at $t = 2.25\\text{ s}$ is:\\begin{aligned} v_y &= 15 - 2(2.25) \\cr &= 15 - 4.5 \\cr &= 10.5\\text{ m s}^{-1} \\end{aligned}Because $v_y > 0$, the aircraft is indeed heading North with speed $10.5\\text{ m s}^{-1}$.",
+        "<strong>(b) Travelling parallel to (i + j):</strong><br><br>If velocity is parallel to $\\mathbf{i} + \\mathbf{j}$, its $\\mathbf{i}$ and $\\mathbf{j}$ components must be equal and positive:\\begin{aligned} &-9 + 4t = 15 - 2t \\cr &6t = 24 \\cr &t = 4\\text{ s} \\end{aligned}At $t = 4\\text{ s}$, $\\mathbf{v} = (7\\mathbf{i} + 7\\mathbf{j})\\text{ m s}^{-1} = 7(\\mathbf{i} + \\mathbf{j})\\text{ m s}^{-1}$, confirming it is directed North-East.",
+        "<strong>(c) Calculate distance from origin at t = 4 s:</strong><br><br>Using $\\mathbf{s} = \\mathbf{u}t + \\dfrac{1}{2}\\mathbf{a}t^2$:\\begin{aligned} \\mathbf{s} &= 4(-9\\mathbf{i} + 15\\mathbf{j}) \\cr &\\qquad + \\dfrac{1}{2}(4^2)(4\\mathbf{i} - 2\\mathbf{j}) \\cr &= (-36\\mathbf{i} + 60\\mathbf{j}) \\cr &\\qquad + 8(4\\mathbf{i} - 2\\mathbf{j}) \\cr &= (-36\\mathbf{i} + 60\\mathbf{j}) \\cr &\\qquad + (32\\mathbf{i} - 16\\mathbf{j}) \\cr &= (-4\\mathbf{i} + 44\\mathbf{j})\\text{ m} \\end{aligned}The straight-line distance is:\\begin{aligned} |\\mathbf{s}| &= \\sqrt{(-4)^2 + 44^2} \\cr &= \\sqrt{16 + 1936} \\cr &= \\sqrt{1952} \\cr &\\approx 44.2\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $2.25\\text{ s}$, $10.5\\text{ m s}^{-1}$, (b) $4\\text{ s}$, (c) $44.2\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $2.25\\text{ s}$, $10.5\\text{ m s}^{-1}$, (b) $4\\text{ s}$, (c) $40.0\\text{ m}$",
+            "feedback": "In part (c), you combined the components as $44 - 4 = 40$ rather than evaluating the magnitude $\\sqrt{(-4)^2 + 44^2}$."
+        },
+        {
+            "ans": "(a) $7.50\\text{ s}$, $21.0\\text{ m s}^{-1}$, (b) $4\\text{ s}$, (c) $44.2\\text{ m}$",
+            "feedback": "In part (a), you set the vertical velocity $v_y = 0$ ($15 - 2t = 0$) instead of setting the horizontal velocity $v_x = 0$, finding when it moves due East rather than due North."
+        },
+        {
+            "ans": "(a) $2.25\\text{ s}$, $10.5\\text{ m s}^{-1}$, (b) $12\\text{ s}$, (c) $44.2\\text{ m}$",
+            "feedback": "In part (b), an algebraic slip occurred: $4t - 2t = 15 - 9 \\implies 2t = 6$, subtracting terms across the equals sign incorrectly."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Parallel Vectors vs Collinear Position",
+        "content": "Be careful to distinguish between where an aircraft is *located* and the direction in which it is *moving*. The direction of motion depends entirely on the instantaneous velocity vector $\\mathbf{v}(t)$, not the position vector $\\mathbf{r}(t)$. Travelling parallel to $\\mathbf{i} + \\mathbf{j}$ requires $v_x = v_y > 0$, regardless of whether the aircraft's coordinates happen to lie on the line $y = x$."
+    }
+},
+{
+    "id": "012239",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Kinematics with Constant Acceleration",
+    "subtopic": [
+        "Two-Body Interception",
+        "Vector Kinematics"
+    ],
+    "img": false,
+    "question": "Two radio-controlled toy drones, $A$ and $B$, are flown in a large indoor sports hall in the same horizontal plane.<br><br>At time $t = 0\\text{ s}$, toy drone $A$ passes through the origin $O$ with constant velocity $\\mathbf{v}_A = (8\\mathbf{i} + 7\\mathbf{j})\\text{ m s}^{-1}$.<br><br>At the same instant $t = 0\\text{ s}$, toy drone $B$ starts from rest at the point with position vector $(15\\mathbf{i} + 10\\mathbf{j})\\text{ m}$ and accelerates with constant acceleration $\\mathbf{a}_B = (k\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-2}$, where $k$ is a constant.<br><br>Given that toy drone $B$ intercepts toy drone $A$ at time $t = T\\text{ s}$:<br><br><strong>(a)</strong> Show that $T = 5\\text{ s}$.<br><br><strong>(b)</strong> Find the value of the constant $k$.<br><br><strong>(c)</strong> Calculate the velocity vector and the speed of toy drone $B$ at the instant of interception.",
+    "steps": [
+        "<strong>(a) Show that T = 5 s:</strong><br><br>Position vector of toy drone $A$ at time $t$:\\begin{aligned} \\mathbf{r}_A &= (8t\\mathbf{i} + 7t\\mathbf{j})\\text{ m} \\end{aligned}Position vector of toy drone $B$ starting from rest:\\begin{aligned} \\mathbf{r}_B &= (15\\mathbf{i} + 10\\mathbf{j}) + \\dfrac{1}{2}(k\\mathbf{i} + 2\\mathbf{j})t^2 \\cr &= \\left(15 + \\dfrac{1}{2}kt^2\\right)\\mathbf{i} \\cr &\\qquad + (10 + t^2)\\mathbf{j}\\text{ m} \\end{aligned}Equating vertical ($\mathbf{j}$) components for interception:\\begin{aligned} &7t = 10 + t^2 \\cr &t^2 - 7t + 10 = 0 \\cr &(t - 2)(t - 5) = 0 \\end{aligned}For the physical interception under the flight parameters, $T = 5\\text{ s}$.",
+        "<strong>(b) Find the value of k:</strong><br><br>Equating horizontal ($\mathbf{i}$) components at $T = 5\\text{ s}$:\\begin{aligned} &8(5) = 15 + \\dfrac{1}{2}k(5^2) \\cr &40 = 15 + 12.5k \\cr &12.5k = 25 \\cr &k = 2 \\end{aligned}",
+        "<strong>(c) Calculate velocity vector and speed of B:</strong><br><br>Since toy drone $B$ started from rest with acceleration $\\mathbf{a}_B = (2\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-2}$:\\begin{aligned} \\mathbf{v}_B(5) &= \\mathbf{a}_B T \\cr &= 5(2\\mathbf{i} + 2\\mathbf{j}) \\cr &= (10\\mathbf{i} + 10\\mathbf{j})\\text{ m s}^{-1} \\end{aligned}The speed of $B$ at interception is:\\begin{aligned} |\\mathbf{v}_B| &= \\sqrt{10^2 + 10^2} \\cr &= \\sqrt{200} \\cr &= 10\\sqrt{2} \\cr &\\approx 14.1\\text{ m s}^{-1} \\end{aligned}",
+        "Final Answer: (a) Proof complete ($T = 5\\text{ s}$), (b) $k = 2$, (c) $(10\\mathbf{i} + 10\\mathbf{j})\\text{ m s}^{-1}$, $14.1\\text{ m s}^{-1}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Proof complete ($T = 5\\text{ s}$), (b) $k = 1$, (c) $(5\\mathbf{i} + 10\\mathbf{j})\\text{ m s}^{-1}$, $11.2\\text{ m s}^{-1}$",
+            "feedback": "In part (b), you forgot the factor of $\\frac{1}{2}$ in the displacement equation, writing $40 = 15 + 25k$ which led to $k = 1$."
+        },
+        {
+            "ans": "(a) Proof complete ($T = 5\\text{ s}$), (b) $k = 2$, (c) $(8\\mathbf{i} + 7\\mathbf{j})\\text{ m s}^{-1}$, $10.6\\text{ m s}^{-1}$",
+            "feedback": "In part (c), you stated the velocity of drone $A$ rather than calculating the velocity of drone $B$ at the moment of impact."
+        },
+        {
+            "ans": "(a) Proof complete ($T = 5\\text{ s}$), (b) $k = 2$, (c) $(10\\mathbf{i} + 10\\mathbf{j})\\text{ m s}^{-1}$, $20.0\\text{ m s}^{-1}$",
+            "feedback": "In part (c), you summed the vector components scalar-wise ($10 + 10 = 20$) rather than taking the Pythagorean magnitude $\\sqrt{10^2 + 10^2}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Component Independence in Interceptions",
+        "content": "In multi-body 2D kinematics, always look for the coordinate component that contains only one unknown. Here, the vertical $\\mathbf{j}$ motion depended solely on $t$ because the vertical acceleration was known ($2\\text{ m s}^{-2}$). Solving the vertical quadratic first locked down the time of flight $T = 5\\text{ s}$, turning the horizontal $\\mathbf{i}$ equation into a trivial linear solve for $k$."
+    }
+},
+{
+    "id": "012240",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Kinematics",
+    "topic": "Kinematics with Constant Acceleration",
+    "subtopic": [
+        "Newton's Second Law",
+        "2D Vector Kinematics"
+    ],
+    "img": false,
+    "question": "A commercial parcel-delivery drone of mass $2.5\\text{ kg}$ flies horizontally between two local distribution hubs.<br><br>At time $t = 0\\text{ s}$, the drone passes through a waypoint with position vector $(6\\mathbf{i} - 10\\mathbf{j})\\text{ m}$ and initial velocity $(4\\mathbf{i} + 3\\mathbf{j})\\text{ m s}^{-1}$.<br><br>The drone is driven by a constant horizontal rotor thrust $\\mathbf{F}_1 = (8\\mathbf{i} + 5\\mathbf{j})\\text{ N}$ and simultaneously encounters a constant horizontal crosswind force $\\mathbf{F}_2 = (-3\\mathbf{i} - 10\\mathbf{j})\\text{ N}$.<br><br><strong>(a)</strong> Find the resultant horizontal force acting on the drone, and show that its acceleration vector is $(2\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-2}$.<br><br><strong>(b)</strong> Find the velocity vector and speed of the drone when $t = 5\\text{ s}$, giving the speed to 3 significant figures.<br><br><strong>(c)</strong> Find the position vector of the drone when $t = 5\\text{ s}$, and calculate its straight-line distance from the origin at this instant to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Find resultant force and acceleration:</strong><br><br>The resultant force is the vector sum $\\mathbf{R} = \\mathbf{F}_1 + \\mathbf{F}_2$:\\begin{aligned} \\mathbf{R} &= (8\\mathbf{i} + 5\\mathbf{j}) + (-3\\mathbf{i} - 10\\mathbf{j}) \\cr &= (8 - 3)\\mathbf{i} + (5 - 10)\\mathbf{j} \\cr &= (5\\mathbf{i} - 5\\mathbf{j})\\text{ N} \\end{aligned}Applying Newton's Second Law with $m = 2.5\\text{ kg}$:\\begin{aligned} \\mathbf{a} &= \\dfrac{\\mathbf{R}}{m} \\cr &= \\dfrac{5\\mathbf{i} - 5\\mathbf{j}}{2.5} \\cr &= (2\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(b) Velocity vector and speed at t = 5 s:</strong><br><br>Using $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$:\\begin{aligned} \\mathbf{v} &= (4\\mathbf{i} + 3\\mathbf{j}) + 5(2\\mathbf{i} - 2\\mathbf{j}) \\cr &= (4\\mathbf{i} + 3\\mathbf{j}) + (10\\mathbf{i} - 10\\mathbf{j}) \\cr &= (14\\mathbf{i} - 7\\mathbf{j})\\text{ m s}^{-1} \\end{aligned}The speed is the magnitude of $\\mathbf{v}$:\\begin{aligned} |\\mathbf{v}| &= \\sqrt{14^2 + (-7)^2} \\cr &= \\sqrt{196 + 49} \\cr &= \\sqrt{245} \\cr &\\approx 15.7\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(c) Position vector and distance from origin:</strong><br><br>Using $\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{u}t + \\dfrac{1}{2}\\mathbf{a}t^2$:\\begin{aligned} \\mathbf{r} &= (6\\mathbf{i} - 10\\mathbf{j}) \\cr &\\qquad + 5(4\\mathbf{i} + 3\\mathbf{j}) \\cr &\\qquad + \\dfrac{1}{2}(5^2)(2\\mathbf{i} - 2\\mathbf{j}) \\cr &= (6\\mathbf{i} - 10\\mathbf{j}) \\cr &\\qquad + (20\\mathbf{i} + 15\\mathbf{j}) \\cr &\\qquad + 12.5(2\\mathbf{i} - 2\\mathbf{j}) \\cr &= (6\\mathbf{i} - 10\\mathbf{j}) \\cr &\\qquad + (20\\mathbf{i} + 15\\mathbf{j}) \\cr &\\qquad + (25\\mathbf{i} - 25\\mathbf{j}) \\cr &= (51\\mathbf{i} - 20\\mathbf{j})\\text{ m} \\end{aligned}The distance from the origin is:\\begin{aligned} |\\mathbf{r}| &= \\sqrt{51^2 + (-20)^2} \\cr &= \\sqrt{2601 + 400} \\cr &= \\sqrt{3001} \\cr &\\approx 54.8\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $(5\\mathbf{i} - 5\\mathbf{j})\\text{ N}$, $(2\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-2}$, (b) $(14\\mathbf{i} - 7\\mathbf{j})\\text{ m s}^{-1}$, $15.7\\text{ m s}^{-1}$, (c) $(51\\mathbf{i} - 20\\mathbf{j})\\text{ m}$, $54.8\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $(5\\mathbf{i} - 5\\mathbf{j})\\text{ N}$, $(2\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-2}$, (b) $(14\\mathbf{i} - 7\\mathbf{j})\\text{ m s}^{-1}$, $15.7\\text{ m s}^{-1}$, (c) $(45\\mathbf{i} - 10\\mathbf{j})\\text{ m}$, $46.1\\text{ m}$",
+            "feedback": "In part (c), you calculated the displacement from the waypoint $\\mathbf{s} = \\mathbf{u}t + \\frac{1}{2}\\mathbf{a}t^2$ but forgot to add the initial waypoint position $\\mathbf{r}_0$."
+        },
+        {
+            "ans": "(a) $(5\\mathbf{i} - 5\\mathbf{j})\\text{ N}$, $(12.5\\mathbf{i} - 12.5\\mathbf{j})\\text{ m s}^{-2}$, (b) $(66.5\\mathbf{i} - 59.5\\mathbf{j})\\text{ m s}^{-1}$, $89.2\\text{ m s}^{-1}$, (c) $(51\\mathbf{i} - 20\\mathbf{j})\\text{ m}$, $54.8\\text{ m}$",
+            "feedback": "In part (a), you multiplied the resultant force by the mass ($m\\mathbf{R}$) instead of dividing by the mass ($\\mathbf{R}/m$) to obtain acceleration."
+        },
+        {
+            "ans": "(a) $(5\\mathbf{i} - 5\\mathbf{j})\\text{ N}$, $(2\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-2}$, (b) $(14\\mathbf{i} - 7\\mathbf{j})\\text{ m s}^{-1}$, $21.0\\text{ m s}^{-1}$, (c) $(51\\mathbf{i} - 20\\mathbf{j})\\text{ m}$, $54.8\\text{ m}$",
+            "feedback": "In part (b), you added the scalar components $14 + 7 = 21$ instead of taking the square root of the sum of squares $\\sqrt{14^2 + (-7)^2}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Bridging Dynamics and Kinematics",
+        "content": "This question links Newton's Second Law (Dynamics) with SUVAT (Kinematics). The crucial bridge is the acceleration vector $\\mathbf{a} = \\frac{\\Sigma\\mathbf{F}}{m}$. Once $\\mathbf{a}$ is found, verify that it is constant (independent of $t$, $v$, or $x$) before selecting constant acceleration kinematic formulas."
     }
 }
 ];
