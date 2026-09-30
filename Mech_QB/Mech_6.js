@@ -934,7 +934,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Non-Uniform Centre of Mass Placement",
-        "content": "When a problem specifies a *non-uniform* body, never place the weight at the geometric midpoint. Here, the centre of mass is located at $2\\text{ m}$ from the base, giving a weight moment of $30g(2\\cos 60^\\circ)$. Using the midpoint distance of $3\\text{ m}$ would distort all subsequent moments."
+        "content": "When a problem specifies a <strong>non-uniform</strong> body, never place the weight at the geometric midpoint. Here, the centre of mass is located at $2\\text{ m}$ from the base, giving a weight moment of $30g(2\\cos 60^\\circ)$. Using the midpoint distance of $3\\text{ m}$ would distort all subsequent moments."
     }
 },
 {
@@ -1017,7 +1017,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Dual Friction in Ladder Equilibrium",
-        "content": "When both the wall and floor are rough, friction acts at both ends. Because the ladder tends to slip down the wall, wall friction $F_B = \\mu_2 R_B$ acts *upwards*. When taking moments about the base $A$, remember that $F_B$ has a perpendicular lever arm of $2a\\cos\\theta$ and exerts an anticlockwise moment opposing the weight."
+        "content": "When both the wall and floor are rough, friction acts at both ends. Because the ladder tends to slip down the wall, wall friction $F_B = \\mu_2 R_B$ acts <strong>upwards</strong>. When taking moments about the base $A$, remember that $F_B$ has a perpendicular lever arm of $2a\\cos\\theta$ and exerts an anticlockwise moment opposing the weight."
     }
 }
 ];
