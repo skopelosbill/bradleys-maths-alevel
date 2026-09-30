@@ -241,7 +241,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Newton's Third Law in Impulse",
-        "content": "To verify the impulse on $A$, calculate the impulse on $B$: $I_B = m_B(v - u_B) = 2(5 - 3) = +4\\text{ N s}$. By Newton's Third Law, the impulse exerted on $A$ by $B$ must be equal in magnitude and opposite in direction: $I_A = -I_B = -4\\text{ N s}$. This quick check eliminates sign errors."
+        "content": "To verify the impulse on $A$, calculate the impulse on $B$: \\begin{aligned}I_B &= m_B(v - u_B)\\cr & = 2(5 - 3) \\cr &= +4\\text{ N s}\\end{aligned} By Newton's Third Law, the impulse exerted on $A$ by $B$ must be equal in magnitude and opposite in direction: $I_A = -I_B = -4\\text{ N s}$. This quick check eliminates sign errors."
     }
 },
 {
@@ -260,7 +260,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "Two railway trucks, $P$ and $Q$, move towards each other along the same straight horizontal track.<br><br>Truck $P$ has a mass of $1200\\text{ kg}$ and is moving at a speed of $4\\text{ m s}^{-1}$.<br>Truck $Q$ has a mass of $800\\text{ kg}$ and is moving at a speed of $3\\text{ m s}^{-1}$.<br><br>The trucks collide directly, and their automatic couplers engage so that they move together as a single unit after the impact.<br><br><strong>(a)</strong> Determine the speed and direction of motion of the coupled trucks immediately after the collision.<br><br><strong>(b)</strong> Calculate the magnitude of the impulse exerted by truck $P$ on truck $Q$ during the impact.<br><br><strong>(c)</strong> Calculate the loss in kinetic energy of the system caused by the collision.",
     "steps": [
-        "<strong>(a) Find velocity of the coupled trucks:</strong><br><br>Taking the initial direction of truck $P$ as positive, $u_P = +4\\text{ m s}^{-1}$ and $u_Q = -3\\text{ m s}^{-1}$.<br><br>Applying conservation of linear momentum:\\begin{aligned} &m_P u_P + m_Q u_Q = (m_P + m_Q)v \\cr &1200(4) + 800(-3) = (1200 + 800)v \\cr &4800 - 2400 = 2000v \\cr &2400 = 2000v \\cr &v = 1.2\\text{ m s}^{-1} \\end{aligned}Because $v > 0$, the coupled trucks move in the original direction of truck $P$ with speed $1.2\\text{ m s}^{-1}$.",
+        "<strong>(a) Find velocity of the coupled trucks:</strong><br><br>Taking the initial direction of truck $P$ as positive, $u_P = +4\\text{ m s}^{-1}$ and $u_Q = -3\\text{ m s}^{-1}$.<br><br>Applying conservation of linear momentum:\\begin{aligned} &m_P u_P + m_Q u_Q = (m_P + m_Q)v \\cr &1200(4) + 800(-3)\\cr & \\qquad \\quad = (1200 + 800)v \\cr &4800 - 2400 = 2000v \\cr &2400 = 2000v \\cr &v = 1.2\\text{ m s}^{-1} \\end{aligned}Because $v > 0$, the coupled trucks move in the original direction of truck $P$ with speed $1.2\\text{ m s}^{-1}$.",
         "<strong>(b) Calculate magnitude of impulse on truck Q:</strong><br><br>Impulse on $Q$ is its change in momentum:\\begin{aligned} I_Q &= m_Q(v - u_Q) \\cr &= 800(1.2 - (-3)) \\cr &= 800(4.2) \\cr &= 3360\\text{ N s} \\end{aligned}",
         "<strong>(c) Calculate loss in kinetic energy:</strong><br><br>Initial kinetic energy:\\begin{aligned} E_{k1} &= \\dfrac{1}{2}m_P u_P^2 + \\dfrac{1}{2}m_Q u_Q^2 \\cr &= \\dfrac{1}{2}(1200)(4^2) + \\dfrac{1}{2}(800)(3^2) \\cr &= 600(16) + 400(9) \\cr &= 9600 + 3600 \\cr &= 13200\\text{ J} \\end{aligned}Final kinetic energy:\\begin{aligned} E_{k2} &= \\dfrac{1}{2}(m_P + m_Q)v^2 \\cr &= \\dfrac{1}{2}(2000)(1.2^2) \\cr &= 1000(1.44) \\cr &= 1440\\text{ J} \\end{aligned}Loss in kinetic energy:\\begin{aligned} \\Delta E_k &= 13200 - 1440 \\cr &= 11760\\text{ J} \\end{aligned}",
         "Final Answer: (a) $1.2\\text{ m s}^{-1}$ in direction of P, (b) $3360\\text{ N s}$, (c) $11760\\text{ J}$"
@@ -282,7 +282,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Signs in Head-On Collisions",
-        "content": "In head-on collisions, establish a positive reference direction immediately. Because velocity is a vector, $u_Q = -3\\text{ m s}^{-1}$. When calculating impulse, subtracting a negative velocity results in addition: $v - u_Q = 1.2 - (-3) = 4.2\\text{ m s}^{-1}$. Conversely, kinetic energy $\\frac{1}{2}mv^2$ is a positive scalar—never assign negative kinetic energy to an opposing body."
+        "content": "In head-on collisions, establish a positive reference direction immediately. Because velocity is a vector, $u_Q = -3\\text{ m s}^{-1}$. When calculating impulse, subtracting a negative velocity results in addition: \\begin{aligned}v - u_Q &= 1.2 - (-3)\\cr & = 4.2\\text{ m s}^{-1}\\end{aligned} Conversely, kinetic energy $\\frac{1}{2}mv^2$ is a positive scalar—never assign negative kinetic energy to an opposing body."
     }
 },
 {
@@ -323,7 +323,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: The Kinematics of Separation",
-        "content": "For particles constrained to a line, a second collision occurs only if the trailing body travels faster than the leading body ($v_{\\text{trailing}} > v_{\\text{leading}}$) or rebounds off a fixed boundary. Here, $X$ trails $Y$, and $v_X = 3.2\\text{ m s}^{-1} < v_Y = 5.0\\text{ m s}^{-1}$, meaning the separation speed is $1.8\\text{ m s}^{-1}$ and no further collision can occur."
+        "content": "For particles constrained to a line, a second collision occurs only if the trailing body travels faster than the leading body ($v_{\\text{trailing}} > v_{\\text{leading}}$) or rebounds off a fixed boundary. Here, $X$ trails $Y$, and \\begin{aligned}v_X &= 3.2\\text{ m s}^{-1} \\cr < v_Y &= 5.0\\text{ m s}^{-1}\\emd{aligned} meaning the separation speed is $1.8\\text{ m s}^{-1}$ and no further collision can occur."
     }
 },
 {
@@ -407,6 +407,211 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Energy Loss via Restitution Formula",
         "content": "For a collision with a fixed barrier, the fractional loss of kinetic energy is always $1 - e^2$. Here, $1 - 0.6^2 = 1 - 0.36 = 0.64$. Since the initial energy is $E_{k1} = \\frac{1}{2}(0.06)(25^2) = 18.75\\text{ J}$, the energy lost is simply $0.64 \\times 18.75 = 12\\text{ J}$."
+    }
+},
+{
+    "id": "012261",
+    "group_id": "012261",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Calculus in Kinematics",
+        "Turning Points",
+        "Total Distance"
+    ],
+    "img": false,
+    "question": "The velocity $v\\text{ m s}^{-1}$ of a particle travelling along a straight line at time $t\\text{ seconds}$ ($t \\ge 0$) is given by:$$v = 3t^2 - 12t + 9$$The particle is instantaneously at rest on two different occasions.<br><br><strong>(a)</strong> Find the two times when the particle is instantaneously at rest.<br><br><strong>(b)</strong> Find the acceleration of the particle when $t = 4\\text{ s}$.<br><br><strong>(c)</strong> Find the total distance covered by the particle in the first $5\\text{ seconds}$ of motion.",
+    "steps": [
+        "<strong>(a) Find the times when the particle is at rest:</strong><br><br>The particle is instantaneously at rest when $v = 0$:\\begin{aligned} &3t^2 - 12t + 9 = 0 \\cr &3(t^2 - 4t + 3) = 0 \\cr &3(t - 1)(t - 3) = 0 \\cr &t = 1\\text{ s},\\ t = 3\\text{ s} \\end{aligned}",
+        "<strong>(b) Find the acceleration when t = 4 s:</strong><br><br>Acceleration is the time derivative of velocity:\\begin{aligned} a(t) &= \\dfrac{\\text{d}v}{\\text{d}t} \\cr &= 6t - 12 \\end{aligned}Evaluating at $t = 4\\text{ s}$:\\begin{aligned} a(4) &= 6(4) - 12 \\cr &= 24 - 12 \\cr &= 12\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(c) Calculate the total distance covered in the first 5 s:</strong><br><br>Because the velocity changes sign at $t = 1\\text{ s}$ and $t = 3\\text{ s}$, distance must be evaluated across three separate intervals.<br><br>Indefinite integral for displacement:\\begin{aligned} s(t) &= \\int (3t^2 - 12t + 9)\\text{ d}t \\cr &= t^3 - 6t^2 + 9t + c \\end{aligned}Taking $s(0) = 0$ gives $c = 0$:\\begin{aligned} s(0) &= 0\\text{ m} \\cr s(1) &= 1^3 - 6(1^2) + 9(1) = 4\\text{ m} \\cr s(3) &= 3^3 - 6(3^2) + 9(3) \\cr &= 27 - 54 + 27 = 0\\text{ m} \\cr s(5) &= 5^3 - 6(5^2) + 9(5) \\cr &= 125 - 150 + 45 = 20\\text{ m} \\end{aligned}Summing the absolute displacements over each interval:\\begin{aligned} d_1 &= |s(1) - s(0)| = |4 - 0| = 4\\text{ m} \\cr d_2 &= |s(3) - s(1)| = |0 - 4| = 4\\text{ m} \\cr d_3 &= |s(5) - s(3)| = |20 - 0| = 20\\text{ m} \\cr d_{\\text{total}} &= 4 + 4 + 20 \\cr &= 28\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $t = 1\\text{ s},\\ t = 3\\text{ s}$, (b) $12\\text{ m s}^{-2}$, (c) $28\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $t = 1\\text{ s},\\ t = 3\\text{ s}$, (b) $12\\text{ m s}^{-2}$, (c) $20\\text{ m}$",
+            "feedback": "In part (c), you evaluated the net displacement $\\int_0^5 v\\text{ d}t = s(5) - s(0) = 20\\text{ m}$ rather than the total distance travelled, ignoring the reversal of motion between $t = 1$ and $t = 3$."
+        },
+        {
+            "ans": "(a) $t = 1\\text{ s},\\ t = 3\\text{ s}$, (b) $9\\text{ m s}^{-2}$, (c) $28\\text{ m}$",
+            "feedback": "In part (b), you evaluated the velocity $v(4)$ rather than differentiating to find the acceleration $a(4) = 6(4) - 12$."
+        },
+        {
+            "ans": "(a) $t = 2\\text{ s},\\ t = 6\\text{ s}$, (b) $12\\text{ m s}^{-2}$, (c) $28\\text{ m}$",
+            "feedback": "In part (a), you made an algebraic error factorising the quadratic equation $t^2 - 4t + 3 = 0$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Displacement vs Distance with Turning Points",
+        "content": "Integrating $\\int_0^5 v\\text{ d}t$ gives net *displacement* ($20\\text{ m}$), which cancels out opposing motion. Whenever you are asked for *total distance*, you must identify all times where $v = 0$ within the interval, evaluate the position at each boundary, and sum the absolute values of the changes in position: $|4 - 0| + |0 - 4| + |20 - 0| = 28\\text{ m}$."
+    }
+},
+{
+    "id": "012262",
+    "group_id": "012261",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Calculus in Kinematics",
+        "Velocity Extrema",
+        "Total Distance"
+    ],
+    "img": false,
+    "question": "A particle moves in a straight line such that its displacement $s\\text{ metres}$ from a fixed origin $O$ at time $t\\text{ seconds}$ ($t \\ge 0$) is given by:$$s = 2t^3 - 15t^2 + 24t + 10$$<strong>(a)</strong> Find the times when the particle is instantaneously at rest.<br><br><strong>(b)</strong> Find the minimum velocity of the particle and the time at which this minimum occurs.<br><br><strong>(c)</strong> Calculate the total distance travelled by the particle during the first $6\\text{ seconds}$ of motion.",
+    "steps": [
+        "<strong>(a) Find times when particle is at rest:</strong><br><br>Differentiate displacement to obtain velocity:\\begin{aligned} v(t) &= \\dfrac{\\text{d}s}{\\text{d}t} \\cr &= 6t^2 - 30t + 24 \\end{aligned}Setting $v = 0$ for instantaneous rest:\\begin{aligned} &6(t^2 - 5t + 4) = 0 \\cr &6(t - 1)(t - 4) = 0 \\cr &t = 1\\text{ s},\\ t = 4\\text{ s} \\end{aligned}",
+        "<strong>(b) Find minimum velocity:</strong><br><br>To find the stationary value of velocity, differentiate to obtain acceleration and set to zero:\\begin{aligned} a(t) &= \\dfrac{\\text{d}v}{\\text{d}t} \\cr &= 12t - 30 \\end{aligned}Setting $a = 0$:\\begin{aligned} &12t = 30 \\cr &t = 2.5\\text{ s} \\end{aligned}Evaluating the minimum velocity:\\begin{aligned} v(2.5) &= 6(2.5^2) - 30(2.5) + 24 \\cr &= 37.5 - 75 + 24 \\cr &= -13.5\\text{ m s}^{-1} \\end{aligned}Since $\\frac{\\text{d}^2v}{\\text{d}t^2} = 12 > 0$, this is a local minimum.",
+        "<strong>(c) Calculate total distance in the first 6 s:</strong><br><br>The particle reverses direction at $t = 1\\text{ s}$ and $t = 4\\text{ s}$.<br><br>Evaluating position at $t = 0, 1, 4, 6$:\\begin{aligned} s(0) &= 10\\text{ m} \\cr s(1) &= 2(1) - 15(1) + 24(1) + 10 \\cr &= 21\\text{ m} \\cr s(4) &= 2(64) - 15(16) + 24(4) + 10 \\cr &= 128 - 240 + 96 + 10 \\cr &= -6\\text{ m} \\cr s(6) &= 2(216) - 15(36) + 24(6) + 10 \\cr &= 432 - 540 + 144 + 10 \\cr &= 46\\text{ m} \\end{aligned}Summing the absolute path lengths:\\begin{aligned} d_1 &= |s(1) - s(0)| = |21 - 10| = 11\\text{ m} \\cr d_2 &= |s(4) - s(1)| = |-6 - 21| = 27\\text{ m} \\cr d_3 &= |s(6) - s(4)| = |46 - (-6)| = 52\\text{ m} \\cr d_{\\text{total}} &= 11 + 27 + 52 \\cr &= 90\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $t = 1\\text{ s},\\ t = 4\\text{ s}$, (b) $-13.5\\text{ m s}^{-1}$ at $t = 2.5\\text{ s}$, (c) $90\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $t = 1\\text{ s},\\ t = 4\\text{ s}$, (b) $-13.5\\text{ m s}^{-1}$ at $t = 2.5\\text{ s}$, (c) $36\\text{ m}$",
+            "feedback": "In part (c), you calculated the net displacement $s(6) - s(0) = 46 - 10 = 36\\text{ m}$ rather than summing the individual segments between turning points."
+        },
+        {
+            "ans": "(a) $t = 1\\text{ s},\\ t = 4\\text{ s}$, (b) $0\\text{ m s}^{-1}$ at $t = 1\\text{ s}$, (c) $90\\text{ m}$",
+            "feedback": "In part (b), you identified instantaneous rest ($v = 0$) as the minimum velocity, overlooking that velocity becomes negative (reaching a minimum of $-13.5\\text{ m s}^{-1}$)."
+        },
+        {
+            "ans": "(a) $t = 2\\text{ s},\\ t = 3\\text{ s}$, (b) $-13.5\\text{ m s}^{-1}$ at $t = 2.5\\text{ s}$, (c) $90\\text{ m}$",
+            "feedback": "In part (a), you solved $t^2 - 5t + 6 = 0$ instead of $t^2 - 5t + 4 = 0$, miscalculating the roots."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Tracking the Origin Offset",
+        "content": "Notice that at $t = 0$, $s(0) = 10\\text{ m}$, not zero. When finding the first segment length, you must calculate $|s(1) - s(0)| = |21 - 10| = 11\\text{ m}$. A frequent blunder is using the coordinate $s(1) = 21\\text{ m}$ directly as the distance travelled, forgetting that the particle began $10\\text{ m}$ ahead of the origin."
+    }
+},
+{
+    "id": "012263",
+    "group_id": "012261",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Calculus in Kinematics",
+        "Integration Constants",
+        "Total Distance"
+    ],
+    "img": false,
+    "question": "A particle moves along a straight line with variable acceleration $a\\text{ m s}^{-2}$ given at time $t\\text{ seconds}$ by:$$a = 6t - 18$$At time $t = 0\\text{ s}$, the particle passes through a fixed origin $O$ with velocity $24\\text{ m s}^{-1}$.<br><br><strong>(a)</strong> Find an expression for the velocity of the particle at time $t$, and determine the values of $t$ for which the particle is instantaneously at rest.<br><br><strong>(b)</strong> Find the maximum speed of the particle while it is travelling in the negative direction.<br><br><strong>(c)</strong> Calculate the total distance travelled by the particle in the time interval $0 \\le t \\le 6\\text{ s}$.",
+    "steps": [
+        "<strong>(a) Find velocity expression and times at rest:</strong><br><br>Integrating acceleration with respect to time:\\begin{aligned} v(t) &= \\int (6t - 18)\\text{ d}t \\cr &= 3t^2 - 18t + c \\end{aligned}Applying the initial condition $v(0) = 24$ gives $c = 24$:\\begin{aligned} v(t) &= 3t^2 - 18t + 24 \\end{aligned}Setting $v = 0$ for instantaneous rest:\\begin{aligned} &3(t^2 - 6t + 8) = 0 \\cr &3(t - 2)(t - 4) = 0 \\cr &t = 2\\text{ s},\\ t = 4\\text{ s} \\end{aligned}",
+        "<strong>(b) Find maximum negative speed:</strong><br><br>The vertex of the parabolic velocity curve occurs when $a = 0$:\\begin{aligned} &6t - 18 = 0 \\cr &t = 3\\text{ s} \\end{aligned}Evaluating velocity at $t = 3\\text{ s}$:\\begin{aligned} v(3) &= 3(3^2) - 18(3) + 24 \\cr &= 27 - 54 + 24 \\cr &= -3\\text{ m s}^{-1} \\end{aligned}The maximum speed in the negative direction is $|-3| = 3\\text{ m s}^{-1}$.",
+        "<strong>(c) Calculate total distance in 0 ≤ t ≤ 6 s:</strong><br><br>Integrating velocity for displacement with $s(0) = 0$:\\begin{aligned} s(t) &= \\int (3t^2 - 18t + 24)\\text{ d}t \\cr &= t^3 - 9t^2 + 24t \\end{aligned}Evaluating positions at $t = 0, 2, 4, 6$:\\begin{aligned} s(0) &= 0\\text{ m} \\cr s(2) &= 2^3 - 9(2^2) + 24(2) \\cr &= 8 - 36 + 48 = 20\\text{ m} \\cr s(4) &= 4^3 - 9(4^2) + 24(4) \\cr &= 64 - 144 + 96 = 16\\text{ m} \\cr s(6) &= 6^3 - 9(6^2) + 24(6) \\cr &= 216 - 324 + 144 = 36\\text{ m} \\end{aligned}Summing the absolute segment distances:\\begin{aligned} d_1 &= |s(2) - s(0)| = |20 - 0| = 20\\text{ m} \\cr d_2 &= |s(4) - s(2)| = |16 - 20| = 4\\text{ m} \\cr d_3 &= |s(6) - s(4)| = |36 - 16| = 20\\text{ m} \\cr d_{\\text{total}} &= 20 + 4 + 20 \\cr &= 44\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $v = 3t^2 - 18t + 24$, $t = 2\\text{ s},\\ t = 4\\text{ s}$, (b) $3\\text{ m s}^{-1}$, (c) $44\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $v = 3t^2 - 18t + 24$, $t = 2\\text{ s},\\ t = 4\\text{ s}$, (b) $3\\text{ m s}^{-1}$, (c) $36\\text{ m}$",
+            "feedback": "In part (c), you calculated the net displacement $s(6) = 36\\text{ m}$ rather than the total distance $44\\text{ m}$, neglecting the $4\\text{ m}$ of reverse travel between $t = 2$ and $t = 4$."
+        },
+        {
+            "ans": "(a) $v = 3t^2 - 18t$, $t = 0\\text{ s},\\ t = 6\\text{ s}$, (b) $3\\text{ m s}^{-1}$, (c) $44\\text{ m}$",
+            "feedback": "In part (a), you omitted the constant of integration $c = 24$ when integrating acceleration, setting $v = 3t^2 - 18t$."
+        },
+        {
+            "ans": "(a) $v = 3t^2 - 18t + 24$, $t = 2\\text{ s},\\ t = 4\\text{ s}$, (b) $-3\\text{ m s}^{-1}$, (c) $44\\text{ m}$",
+            "feedback": "In part (b), speed is a scalar magnitude and must be stated as positive ($3\\text{ m s}^{-1}$), not negative."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Velocity vs Speed in Extrema Questions",
+        "content": "Always read question wording carefully: *velocity* has a sign, whereas *speed* is strictly the magnitude $|v|$. In part (b), the velocity reaches a local minimum of $-3\\text{ m s}^{-1}$. Stating the speed as $-3\\text{ m s}^{-1}$ is a contradictory statement that will be penalised—the speed is simply $3\\text{ m s}^{-1}$."
+    }
+},
+{
+    "id": "012264",
+    "group_id": "012261",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Trigonometric Functions",
+        "Simple Harmonic Motion",
+        "Total Distance"
+    ],
+    "img": false,
+    "question": "A particle moves along a straight line. At time $t\\text{ seconds}$ ($t \\ge 0$), its velocity $v\\text{ m s}^{-1}$ is modelled by:$$v = 6\\cos(2t) - 3$$<strong>(a)</strong> Find the two smallest values of $t$ for which the particle is instantaneously at rest, giving your answers in terms of $\\pi$.<br><br><strong>(b)</strong> Calculate the acceleration of the particle at time $t = \\dfrac{\\pi}{4}\\text{ s}$.<br><br><strong>(c)</strong> Given that the particle is at the origin $O$ when $t = 0\\text{ s}$, calculate the total distance travelled by the particle between $t = 0\\text{ s}$ and $t = \\dfrac{\\pi}{2}\\text{ s}$, giving your answer in exact form and to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Find smallest times at rest:</strong><br><br>Setting $v = 0$:\\begin{aligned} &6\\cos(2t) - 3 = 0 \\cr &\\cos(2t) = \\dfrac{1}{2} \\cr &2t = \\dfrac{\\pi}{3},\\ \\dfrac{5\\pi}{3} \\cr &t = \\dfrac{\\pi}{6}\\text{ s},\\ \\dfrac{5\\pi}{6}\\text{ s} \\end{aligned}",
+        "<strong>(b) Calculate acceleration at t = π/4 s:</strong><br><br>Differentiate velocity with respect to time:\\begin{aligned} a(t) &= \\dfrac{\\text{d}v}{\\text{d}t} \\cr &= -12\\sin(2t) \\end{aligned}At $t = \\dfrac{\\pi}{4}\\text{ s}$:\\begin{aligned} a\\left(\\dfrac{\\pi}{4}\\right) &= -12\\sin\\left(\\dfrac{\\pi}{2}\\right) \\cr &= -12(1) \\cr &= -12\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(c) Calculate total distance in 0 ≤ t ≤ π/2:</strong><br><br>Integrate velocity to find displacement with $s(0) = 0$:\\begin{aligned} s(t) &= \\int (6\\cos(2t) - 3)\\text{ d}t \\cr &= 3\\sin(2t) - 3t \\end{aligned}Within the interval $[0, \\frac{\\pi}{2}]$, velocity crosses zero at $t = \\frac{\\pi}{6}$:\\begin{aligned} s(0) &= 0\\text{ m} \\cr s\\left(\\dfrac{\\pi}{6}\\right) &= 3\\sin\\left(\\dfrac{\\pi}{3}\\right) - 3\\left(\\dfrac{\\pi}{6}\\right) \\cr &= \\dfrac{3\\sqrt{3}}{2} - \\dfrac{\\pi}{2} \\approx 1.0262\\text{ m} \\cr s\\left(\\dfrac{\\pi}{2}\\right) &= 3\\sin(\\pi) - 3\\left(\\dfrac{\\pi}{2}\\right) \\cr &= -\\dfrac{3\\pi}{2} \\approx -4.7124\\text{ m} \\end{aligned}Summing the absolute segment lengths:\\begin{aligned} d_1 &= \\left|\\dfrac{3\\sqrt{3}}{2} - \\dfrac{\\pi}{2}\\right| \\approx 1.0262\\text{ m} \\cr d_2 &= \\left|-\\dfrac{3\\pi}{2} - \\left(\\dfrac{3\\sqrt{3}}{2} - \\dfrac{\\pi}{2}\\right)\\right| \\cr &= \\pi + \\dfrac{3\\sqrt{3}}{2} \\approx 5.7397\\text{ m} \\cr d_{\\text{total}} &= 3\\sqrt{3} + \\dfrac{\\pi}{2} \\cr &\\approx 6.77\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $t = \\dfrac{\\pi}{6}\\text{ s},\\ \\dfrac{5\\pi}{6}\\text{ s}$, (b) $-12\\text{ m s}^{-2}$, (c) $3\\sqrt{3} + \\dfrac{\\pi}{2} \\approx 6.77\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $t = \\dfrac{\\pi}{6}\\text{ s},\\ \\dfrac{5\\pi}{6}\\text{ s}$, (b) $-12\\text{ m s}^{-2}$, (c) $-\\dfrac{3\\pi}{2} \\approx -4.71\\text{ m}$",
+            "feedback": "In part (c), you calculated the net displacement $s(\\pi/2) = -3\\pi/2$ rather than summing the forward and backward paths as positive scalar distances."
+        },
+        {
+            "ans": "(a) $t = \\dfrac{\\pi}{3}\\text{ s},\\ \\dfrac{2\\pi}{3}\\text{ s}$, (b) $-12\\text{ m s}^{-2}$, (c) $3\\sqrt{3} + \\dfrac{\\pi}{2} \\approx 6.77\\text{ m}$",
+            "feedback": "In part (a), you forgot to divide the angle by $2$ when solving $\\cos(2t) = 0.5$, giving $t = \\pi/3$ instead of $t = \\pi/6$."
+        },
+        {
+            "ans": "(a) $t = \\dfrac{\\pi}{6}\\text{ s},\\ \\dfrac{5\\pi}{6}\\text{ s}$, (b) $12\\text{ m s}^{-2}$, (c) $3\\sqrt{3} + \\dfrac{\\pi}{2} \\approx 6.77\\text{ m}$",
+            "feedback": "In part (b), you lost the negative sign when differentiating cosine: $\\frac{\\text{d}}{\\text{d}t}(\\cos(2t)) = -2\\sin(2t)$, not $+2\\sin(2t)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Exact Surd Integration in Trigonometric Kinematics",
+        "content": "When integrating trigonometric velocities, keep exact values in terms of $\\sqrt{3}$ and $\\pi$ until the final line. Notice that the subtraction $\\frac{-\\pi}{2}$ in the first stage and the $-\\pi$ in the second stage combine with the initial $-\\frac{3\\pi}{2}$ boundary to collapse into the elegant exact closed form $3\\sqrt{3} + \\frac{\\pi}{2} \\approx 6.77\\text{ m}$."
+    }
+},
+{
+    "id": "012265",
+    "group_id": "012261",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Kinematics",
+    "topic": "Variable Acceleration",
+    "subtopic": [
+        "Exponential Decay",
+        "Logarithmic Rest Time",
+        "Total Distance"
+    ],
+    "img": false,
+    "question": "A particle moves along a straight line through a medium offering resistance. At time $t\\text{ seconds}$ ($t \\ge 0$), its velocity $v\\text{ m s}^{-1}$ is given by:$$v = 16e^{-0.5t} - 4$$<strong>(a)</strong> Find the value of $t$ when the particle comes instantaneously to rest, giving your answer in exact logarithmic form and to 3 significant figures.<br><br><strong>(b)</strong> Find the acceleration of the particle when $t = 0\\text{ s}$, and when the particle is instantaneously at rest.<br><br><strong>(c)</strong> Calculate the total distance travelled by the particle during the time interval from $t = 0\\text{ s}$ to $t = 4\\text{ s}$, giving your answer to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Find time of instantaneous rest:</strong><br><br>Setting $v = 0$:\\begin{aligned} &16e^{-0.5t} - 4 = 0 \\cr &e^{-0.5t} = \\dfrac{4}{16} = 0.25 \\cr &e^{0.5t} = 4 \\cr &0.5t = \\ln 4 \\cr &t = 2\\ln 4 = \\ln 16 \\cr &\\approx 2.77\\text{ s} \\end{aligned}",
+        "<strong>(b) Find acceleration at t = 0 s and at rest:</strong><br><br>Differentiate velocity with respect to time:\\begin{aligned} a(t) &= \\dfrac{\\text{d}v}{\\text{d}t} \\cr &= 16(-0.5)e^{-0.5t} \\cr &= -8e^{-0.5t} \\end{aligned}At $t = 0\\text{ s}$:\\begin{aligned} a(0) &= -8e^0 \\cr &= -8\\text{ m s}^{-2} \\end{aligned}When the particle is at rest ($e^{-0.5t} = 0.25$):\\begin{aligned} a(2.77) &= -8(0.25) \\cr &= -2\\text{ m s}^{-2} \\end{aligned}",
+        "<strong>(c) Calculate total distance in 0 ≤ t ≤ 4 s:</strong><br><br>Integrate velocity to obtain displacement:\\begin{aligned} s(t) &= \\int (16e^{-0.5t} - 4)\\text{ d}t \\cr &= -32e^{-0.5t} - 4t \\end{aligned}Evaluating position at boundaries $t = 0$, $t = \\ln 16 \\approx 2.7726$, and $t = 4$:\\begin{aligned} s(0) &= -32\\text{ m} \\cr s(2.7726) &= -32(0.25) - 4(2.7726) \\cr &= -8 - 11.0904 \\cr &= -19.0904\\text{ m} \\cr s(4) &= -32e^{-2} - 4(4) \\cr &= -32(0.135335) - 16 \\cr &= -4.3307 - 16 \\cr &= -20.3307\\text{ m} \\end{aligned}Summing the absolute segment distances:\\begin{aligned} d_1 &= |s(2.7726) - s(0)| \\cr &= |-19.0904 - (-32)| \\cr &= 12.9096\\text{ m} \\cr d_2 &= |s(4) - s(2.7726)| \\cr &= |-20.3307 - (-19.0904)| \\cr &= 1.2403\\text{ m} \\cr d_{\\text{total}} &= 12.9096 + 1.2403 \\cr &= 14.1499\\text{ m} \\cr &\\approx 14.2\\text{ m} \\end{aligned}",
+        "Final Answer: (a) $\\ln 16 \\approx 2.77\\text{ s}$, (b) $-8\\text{ m s}^{-2}$, $-2\\text{ m s}^{-2}$, (c) $14.2\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\ln 16 \\approx 2.77\\text{ s}$, (b) $-8\\text{ m s}^{-2}$, $-2\\text{ m s}^{-2}$, (c) $11.7\\text{ m}$",
+            "feedback": "In part (c), you calculated the net displacement $s(4) - s(0) = -20.33 - (-32) = 11.67\\text{ m}$ rather than summing the separate segments before and after the turning point."
+        },
+        {
+            "ans": "(a) $\\ln 4 \\approx 1.39\\text{ s}$, (b) $-8\\text{ m s}^{-2}$, $-2\\text{ m s}^{-2}$, (c) $14.2\\text{ m}$",
+            "feedback": "In part (a), you solved $0.5t = \\ln 4$ as $t = \\ln 4$ instead of multiplying by $2$ to give $t = 2\\ln 4 = \\ln 16$."
+        },
+        {
+            "ans": "(a) $\\ln 16 \\approx 2.77\\text{ s}$, (b) $-16\\text{ m s}^{-2}$, $-4\\text{ m s}^{-2}$, (c) $14.2\\text{ m}$",
+            "feedback": "In part (b), you forgot to multiply by the derivative of the exponent ($-0.5$) when differentiating $e^{-0.5t}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Natural Logarithms in Exponential Models",
+        "content": "When solving $e^{-kt} = c$, taking the reciprocal $e^{kt} = \\frac{1}{c}$ first eliminates negative signs before taking logarithms: $e^{0.5t} = 4 \\implies 0.5t = \\ln 4 \\implies t = 2\\ln 4 = \\ln(4^2) = \\ln 16$. Always simplify to a single logarithm where possible."
     }
 }
 ];
