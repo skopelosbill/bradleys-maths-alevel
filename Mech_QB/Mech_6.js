@@ -427,7 +427,7 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
         "<strong>(a) Find the times when the particle is at rest:</strong><br><br>The particle is instantaneously at rest when $v = 0$:\\begin{aligned} &3t^2 - 12t + 9 = 0 \\cr &3(t^2 - 4t + 3) = 0 \\cr &3(t - 1)(t - 3) = 0 \\cr &t = 1\\text{ s},\\ t = 3\\text{ s} \\end{aligned}",
         "<strong>(b) Find the acceleration when t = 4 s:</strong><br><br>Acceleration is the time derivative of velocity:\\begin{aligned} a(t) &= \\dfrac{\\text{d}v}{\\text{d}t} \\cr &= 6t - 12 \\end{aligned}Evaluating at $t = 4\\text{ s}$:\\begin{aligned} a(4) &= 6(4) - 12 \\cr &= 24 - 12 \\cr &= 12\\text{ m s}^{-2} \\end{aligned}",
-        "<strong>(c) Calculate the total distance covered in the first 5 s:</strong><br><br>Because the velocity changes sign at $t = 1\\text{ s}$ and $t = 3\\text{ s}$, distance must be evaluated across three separate intervals.<br><br>Indefinite integral for displacement:\\begin{aligned} s(t) &= \\int (3t^2 - 12t + 9)\\text{ d}t \\cr &= t^3 - 6t^2 + 9t + c \\end{aligned}Taking $s(0) = 0$ gives $c = 0$:\\begin{aligned} s(0) &= 0\\text{ m} \\cr s(1) &= 1^3 - 6(1^2) + 9(1) = 4\\text{ m} \\cr s(3) &= 3^3 - 6(3^2) + 9(3) \\cr &= 27 - 54 + 27 = 0\\text{ m} \\cr s(5) &= 5^3 - 6(5^2) + 9(5) \\cr &= 125 - 150 + 45 = 20\\text{ m} \\end{aligned}Summing the absolute displacements over each interval:\\begin{aligned} d_1 &= |s(1) - s(0)| = |4 - 0| = 4\\text{ m} \\cr d_2 &= |s(3) - s(1)| = |0 - 4| = 4\\text{ m} \\cr d_3 &= |s(5) - s(3)| = |20 - 0| = 20\\text{ m} \\cr d_{\\text{total}} &= 4 + 4 + 20 \\cr &= 28\\text{ m} \\end{aligned}",
+        "<strong>(c) Calculate the total distance covered in the first 5 s:</strong><br><br>Because the velocity changes sign at $t = 1\\text{ s}$ and $t = 3\\text{ s}$, distance must be evaluated across three separate intervals.<br><br>Indefinite integral for displacement:\\begin{aligned} s(t) &= \\int (3t^2 - 12t + 9)\\text{ d}t \\cr &= t^3 - 6t^2 + 9t + c \\end{aligned}Taking $s(0) = 0$ gives $c = 0$:\\begin{aligned} s(0) &= 0\\text{ m} \\cr s(1) &= 1^3 - 6(1^2) + 9(1) = 4\\text{ m} \\cr s(3) &= 3^3 - 6(3^2) + 9(3) \\cr &= 27 - 54 + 27 = 0\\text{ m} \\cr s(5) &= 5^3 - 6(5^2) + 9(5) \\cr &= 125 - 150 + 45 = 20\\text{ m} \\end{aligned}Summing the absolute displacements over each interval:\\begin{aligned} d_1 &= |s(1) - s(0)|\\cr &= |4 - 0| \\cr &= 4\\text{ m} \\cr d_2 &= |s(3) - s(1)|\\cr & = |0 - 4|\\cr & = 4\\text{ m} \\cr d_3 &= |s(5) - s(3)| \\cr &= |20 - 0|\\cr & = 20\\text{ m} \\cr d_{\\text{total}} &= 4 + 4 + 20 \\cr &= 28\\text{ m} \\end{aligned}",
         "Final Answer: (a) $t = 1\\text{ s},\\ t = 3\\text{ s}$, (b) $12\\text{ m s}^{-2}$, (c) $28\\text{ m}$"
     ],
     "pi_options": [
@@ -447,7 +447,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Displacement vs Distance with Turning Points",
-        "content": "Integrating $\\int_0^5 v\\text{ d}t$ gives net *displacement* ($20\\text{ m}$), which cancels out opposing motion. Whenever you are asked for *total distance*, you must identify all times where $v = 0$ within the interval, evaluate the position at each boundary, and sum the absolute values of the changes in position: $|4 - 0| + |0 - 4| + |20 - 0| = 28\\text{ m}$."
+        "content": "Integrating $\\int_0^5 v\\text{ d}t$ gives net <strong>displacement</strong>> ($20\\text{ m}$), which cancels out opposing motion. Whenever you are asked for <strong>total distance</strong>, you must identify all times where $v = 0$ within the interval, evaluate the position at each boundary, and sum the absolute values of the changes in position: \\begin{aligned}|4 - 0| + |0 - 4| &+ |20 - 0| \\cr &= 28\\text{ m}\\end{aligned}"
     }
 },
 {
@@ -468,7 +468,7 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
         "<strong>(a) Find times when particle is at rest:</strong><br><br>Differentiate displacement to obtain velocity:\\begin{aligned} v(t) &= \\dfrac{\\text{d}s}{\\text{d}t} \\cr &= 6t^2 - 30t + 24 \\end{aligned}Setting $v = 0$ for instantaneous rest:\\begin{aligned} &6(t^2 - 5t + 4) = 0 \\cr &6(t - 1)(t - 4) = 0 \\cr &t = 1\\text{ s},\\ t = 4\\text{ s} \\end{aligned}",
         "<strong>(b) Find minimum velocity:</strong><br><br>To find the stationary value of velocity, differentiate to obtain acceleration and set to zero:\\begin{aligned} a(t) &= \\dfrac{\\text{d}v}{\\text{d}t} \\cr &= 12t - 30 \\end{aligned}Setting $a = 0$:\\begin{aligned} &12t = 30 \\cr &t = 2.5\\text{ s} \\end{aligned}Evaluating the minimum velocity:\\begin{aligned} v(2.5) &= 6(2.5^2) - 30(2.5) + 24 \\cr &= 37.5 - 75 + 24 \\cr &= -13.5\\text{ m s}^{-1} \\end{aligned}Since $\\frac{\\text{d}^2v}{\\text{d}t^2} = 12 > 0$, this is a local minimum.",
-        "<strong>(c) Calculate total distance in the first 6 s:</strong><br><br>The particle reverses direction at $t = 1\\text{ s}$ and $t = 4\\text{ s}$.<br><br>Evaluating position at $t = 0, 1, 4, 6$:\\begin{aligned} s(0) &= 10\\text{ m} \\cr s(1) &= 2(1) - 15(1) + 24(1) + 10 \\cr &= 21\\text{ m} \\cr s(4) &= 2(64) - 15(16) + 24(4) + 10 \\cr &= 128 - 240 + 96 + 10 \\cr &= -6\\text{ m} \\cr s(6) &= 2(216) - 15(36) + 24(6) + 10 \\cr &= 432 - 540 + 144 + 10 \\cr &= 46\\text{ m} \\end{aligned}Summing the absolute path lengths:\\begin{aligned} d_1 &= |s(1) - s(0)| = |21 - 10| = 11\\text{ m} \\cr d_2 &= |s(4) - s(1)| = |-6 - 21| = 27\\text{ m} \\cr d_3 &= |s(6) - s(4)| = |46 - (-6)| = 52\\text{ m} \\cr d_{\\text{total}} &= 11 + 27 + 52 \\cr &= 90\\text{ m} \\end{aligned}",
+        "<strong>(c) Calculate total distance in the first 6 s:</strong><br><br>The particle reverses direction at $t = 1\\text{ s}$ and $t = 4\\text{ s}$.<br><br>Evaluating position at key times:\\begin{aligned} s(0) &= 10\\text{ m} \\cr s(1) &= 21\\text{ m} \\cr s(4) &= -6\\text{ m} \\cr s(6) &= 46\\text{ m} \\end{aligned}<br><br>Calculating path lengths:\\begin{aligned} d_1 &= |21 - 10| \\cr &= 11\\text{ m} \\cr d_2 &= |-6 - 21| \\cr &= 27\\text{ m} \\cr d_3 &= |46 - (-6)| \\cr &= 52\\text{ m} \\end{aligned}<br><br>Total distance:\\begin{aligned} d_{\\text{total}} &= 11 + 27 + 52 \\cr &= 90\\text{ m} \\end{aligned}",
         "Final Answer: (a) $t = 1\\text{ s},\\ t = 4\\text{ s}$, (b) $-13.5\\text{ m s}^{-1}$ at $t = 2.5\\text{ s}$, (c) $90\\text{ m}$"
     ],
     "pi_options": [
@@ -509,7 +509,7 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
         "<strong>(a) Find velocity expression and times at rest:</strong><br><br>Integrating acceleration with respect to time:\\begin{aligned} v(t) &= \\int (6t - 18)\\text{ d}t \\cr &= 3t^2 - 18t + c \\end{aligned}Applying the initial condition $v(0) = 24$ gives $c = 24$:\\begin{aligned} v(t) &= 3t^2 - 18t + 24 \\end{aligned}Setting $v = 0$ for instantaneous rest:\\begin{aligned} &3(t^2 - 6t + 8) = 0 \\cr &3(t - 2)(t - 4) = 0 \\cr &t = 2\\text{ s},\\ t = 4\\text{ s} \\end{aligned}",
         "<strong>(b) Find maximum negative speed:</strong><br><br>The vertex of the parabolic velocity curve occurs when $a = 0$:\\begin{aligned} &6t - 18 = 0 \\cr &t = 3\\text{ s} \\end{aligned}Evaluating velocity at $t = 3\\text{ s}$:\\begin{aligned} v(3) &= 3(3^2) - 18(3) + 24 \\cr &= 27 - 54 + 24 \\cr &= -3\\text{ m s}^{-1} \\end{aligned}The maximum speed in the negative direction is $|-3| = 3\\text{ m s}^{-1}$.",
-        "<strong>(c) Calculate total distance in 0 ≤ t ≤ 6 s:</strong><br><br>Integrating velocity for displacement with $s(0) = 0$:\\begin{aligned} s(t) &= \\int (3t^2 - 18t + 24)\\text{ d}t \\cr &= t^3 - 9t^2 + 24t \\end{aligned}Evaluating positions at $t = 0, 2, 4, 6$:\\begin{aligned} s(0) &= 0\\text{ m} \\cr s(2) &= 2^3 - 9(2^2) + 24(2) \\cr &= 8 - 36 + 48 = 20\\text{ m} \\cr s(4) &= 4^3 - 9(4^2) + 24(4) \\cr &= 64 - 144 + 96 = 16\\text{ m} \\cr s(6) &= 6^3 - 9(6^2) + 24(6) \\cr &= 216 - 324 + 144 = 36\\text{ m} \\end{aligned}Summing the absolute segment distances:\\begin{aligned} d_1 &= |s(2) - s(0)| = |20 - 0| = 20\\text{ m} \\cr d_2 &= |s(4) - s(2)| = |16 - 20| = 4\\text{ m} \\cr d_3 &= |s(6) - s(4)| = |36 - 16| = 20\\text{ m} \\cr d_{\\text{total}} &= 20 + 4 + 20 \\cr &= 44\\text{ m} \\end{aligned}",
+        "<strong>(c) Calculate total distance in 0 ≤ t ≤ 6 s:</strong><br><br>Integrating velocity for displacement with $s(0) = 0$:\\begin{aligned} s(t) &= \\int (3t^2 - 18t + 24)\\text{ d}t \\cr &= t^3 - 9t^2 + 24t \\end{aligned}<br><br>Evaluating position at key times:\\begin{aligned} s(0) &= 0\\text{ m} \\cr s(2) &= 20\\text{ m} \\cr s(4) &= 16\\text{ m} \\cr s(6) &= 36\\text{ m} \\end{aligned}<br><br>Calculating path lengths:\\begin{aligned} d_1 &= |20 - 0| \\cr &= 20\\text{ m} \\cr d_2 &= |16 - 20| \\cr &= 4\\text{ m} \\cr d_3 &= |36 - 16| \\cr &= 20\\text{ m} \\end{aligned}<br><br>Total distance:\\begin{aligned} d_{\\text{total}} &= 20 + 4 + 20 \\cr &= 44\\text{ m} \\end{aligned}",
         "Final Answer: (a) $v = 3t^2 - 18t + 24$, $t = 2\\text{ s},\\ t = 4\\text{ s}$, (b) $3\\text{ m s}^{-1}$, (c) $44\\text{ m}$"
     ],
     "pi_options": [
@@ -529,7 +529,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Velocity vs Speed in Extrema Questions",
-        "content": "Always read question wording carefully: *velocity* has a sign, whereas *speed* is strictly the magnitude $|v|$. In part (b), the velocity reaches a local minimum of $-3\\text{ m s}^{-1}$. Stating the speed as $-3\\text{ m s}^{-1}$ is a contradictory statement that will be penalised—the speed is simply $3\\text{ m s}^{-1}$."
+        "content": "Always read question wording carefully: <em>velocity</em> has a sign, whereas <em>speed</em> is strictly the magnitude $|v|$. In part (b), the velocity reaches a local minimum of $-3\\text{ m s}^{-1}$. Stating the speed as $-3\\text{ m s}^{-1}$ is a contradictory statement that will be penalised—the speed is simply $3\\text{ m s}^{-1}$."
     }
 },
 {
@@ -597,7 +597,7 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
         {
             "ans": "(a) $\\ln 16 \\approx 2.77\\text{ s}$, (b) $-8\\text{ m s}^{-2}$, $-2\\text{ m s}^{-2}$, (c) $11.7\\text{ m}$",
-            "feedback": "In part (c), you calculated the net displacement $s(4) - s(0) = -20.33 - (-32) = 11.67\\text{ m}$ rather than summing the separate segments before and after the turning point."
+            "feedback": "In part (c), you calculated the net displacement $s(4) - s(0) \\approx 11.7\\text{ m}$ rather than summing the separate path segments before and after the turning point."
         },
         {
             "ans": "(a) $\\ln 4 \\approx 1.39\\text{ s}$, (b) $-8\\text{ m s}^{-2}$, $-2\\text{ m s}^{-2}$, (c) $14.2\\text{ m}$",
@@ -615,3 +615,6 @@ window.ALEVEL_QUESTIONS = [
     }
 }
 ];
+
+
+
