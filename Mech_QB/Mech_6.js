@@ -814,6 +814,211 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: The Two-Angle Trajectory Theorem",
         "content": "For any obstacle $(X, Y)$ within maximum range, the trajectory quadratic in $\\tan\\alpha$ yields two distinct angles: a low-angle direct drive (here $18.2^\\circ$) and a high-arching lob (here $76.7^\\circ$). Both paths pass through the exact same point in space. Always verify which angle the question asks for (minimum vs maximum elevation)."
     }
+},
+{
+    "id": "012271",
+    "group_id": "012271",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Statics",
+    "topic": "Moments",
+    "subtopic": [
+        "Ladders",
+        "Limiting Friction",
+        "Rigid Body Equilibrium"
+    ],
+    "img": false,
+    "question": "A uniform ladder of mass $m_1\\text{ kg}$ and length $6\\text{ m}$ rests with its lower end $A$ on rough horizontal ground and its upper end $B$ against a smooth vertical wall. The ladder is inclined at an angle $\\theta$ to the horizontal ground, where $\\sin\\theta = \\dfrac{12}{13}$.<br><br>A window cleaner of mass $m_2\\text{ kg}$ stands on the ladder at a distance of $x\\text{ metres}$ from the base $A$. The coefficient of friction between the ladder and the ground is $\\mu$.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Show that the normal reaction $R_A$ exerted by the ground on the ladder is $(m_1 + m_2)g$.<br><br><strong>(b)</strong> By taking moments about $A$, show that when the ladder is on the point of slipping:$$x = \\dfrac{72\\mu(m_1 + m_2) - 15m_1}{5m_2}$$<strong>(c)</strong> Given that $m_1 = 20\\text{ kg}$, $m_2 = 60\\text{ kg}$, and the ladder is on the point of slipping when the cleaner has climbed a distance of $x = 4.5\\text{ m}$ from $A$, calculate the value of $\\mu$, giving your answer to 3 significant figures.<br><br><strong>(d)</strong> State one modelling assumption you have made about the window cleaner, and explain how it affects your equations.",
+    "steps": [
+        "<strong>(a) Show normal reaction is (m₁ + m₂)g:</strong><br><br>Because the vertical wall is smooth, there is no vertical friction at $B$.<br><br>Resolving vertically for equilibrium:\\begin{aligned} R_A &= m_1 g + m_2 g \\cr &= (m_1 + m_2)g \\end{aligned}",
+        "<strong>(b) Prove expression for x:</strong><br><br>From $\\sin\\theta = \\frac{12}{13}$, we have $\\cos\\theta = \\frac{5}{13}$, so $\\tan\\theta = \\frac{12}{5} = 2.4$.<br><br>At the point of slipping, horizontal friction is limiting ($F_A = \\mu R_A$).<br><br>Resolving horizontally gives $R_B = F_A$:\\begin{aligned} R_B &= \\mu(m_1 + m_2)g \\end{aligned}<br><br>Taking moments about the base $A$:\\begin{aligned} &\\Sigma M_A = 0 \\cr &(m_1 g)(3\\cos\\theta) \\cr &\\qquad + (m_2 g)(x\\cos\\theta) \\cr &\\qquad - R_B(6\\sin\\theta) = 0 \\end{aligned}<br><br>Dividing through by $g\\cos\\theta$:\\begin{aligned} &3m_1 + m_2 x \\cr &\\qquad - 6\\mu(m_1 + m_2)\\tan\\theta = 0 \\cr &3m_1 + m_2 x \\cr &\\qquad - 6\\mu(m_1 + m_2)(2.4) = 0 \\cr &3m_1 + m_2 x \\cr &\\qquad - 14.4\\mu(m_1 + m_2) = 0 \\cr &m_2 x = 14.4\\mu(m_1 + m_2) - 3m_1 \\end{aligned}<br><br>Multiplying numerator and denominator by $5$:\\begin{aligned} x &= \\dfrac{14.4\\mu(m_1 + m_2) - 3m_1}{m_2} \\cr &= \\dfrac{72\\mu(m_1 + m_2) - 15m_1}{5m_2} \\end{aligned}",
+        "<strong>(c) Calculate coefficient of friction μ:</strong><br><br>Substitute $m_1 = 20$, $m_2 = 60$, and $x = 4.5$:\\begin{aligned} &4.5 = \\dfrac{72\\mu(80) - 15(20)}{5(60)} \\cr &4.5 = \\dfrac{5760\\mu - 300}{300} \\cr &1350 = 5760\\mu - 300 \\cr &5760\\mu = 1650 \\cr &\\mu = \\dfrac{1650}{5760} \\cr &\\mu = \\dfrac{55}{192} \\cr &\\mu \\approx 0.286 \\end{aligned}",
+        "<strong>(d) Modelling assumption for cleaner:</strong><br><br>The window cleaner is modelled as a <em>particle</em>. This assumes their entire mass acts at a single point on the ladder, ignoring the physical distribution of their body weight across the rungs.",
+        "Final Answer: (a) Proof complete, (b) Proof complete, (c) $\\mu = \\dfrac{55}{192} \\approx 0.286$, (d) Particle: mass acts at a point"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Proof complete, (b) Proof complete, (c) $\\mu \\approx 0.234$, (d) Particle: mass acts at a point",
+            "feedback": "In part (c), you evaluated the fraction with $m_1 + m_2 = 60$ instead of $20 + 60 = 80\\text{ kg}$, omitting the ladder mass from the total normal reaction."
+        },
+        {
+            "ans": "(a) Proof complete, (b) Proof complete, (c) $\\mu \\approx 0.338$, (d) Particle: mass acts at a point",
+            "feedback": "In part (c), an algebraic slip occurred: you subtracted $300$ from $1350$ instead of adding it, solving $5760\\mu = 1050$."
+        },
+        {
+            "ans": "(a) Proof complete, (b) Proof complete, (c) $\\mu \\approx 0.286$, (d) Light: mass acts at a point",
+            "feedback": "In part (d), treating an object's mass as concentrated at a single geometric point is the definition of a *particle*, not *light*."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Dividing Through by Trig Factors",
+        "content": "In ladder equilibrium, the moments equation contains factors of $g\\cos\\theta$ on the gravity side and $g\\sin\\theta$ on the wall reaction side. Always divide through immediately by $g\\cos\\theta$. This collapses the trigonometric terms into a single $\\tan\\theta$ on the reaction side, saving multiple lines of algebra."
+    }
+},
+{
+    "id": "012272",
+    "group_id": "012271",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Statics",
+    "topic": "Moments",
+    "subtopic": [
+        "Ladders",
+        "Variable Inclination",
+        "Critical Ascent"
+    ],
+    "img": false,
+    "question": "A uniform ladder $AB$ of mass $24\\text{ kg}$ and length $5\\text{ m}$ rests with end $A$ on rough horizontal ground and end $B$ against a smooth vertical wall. The coefficient of friction between the ladder and the ground is $\\mu = 0.4$.<br><br>A roofer of mass $72\\text{ kg}$ ascends the ladder.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> When the ladder is inclined at an angle $\\alpha$ to the horizontal, where $\\tan\\alpha = \\dfrac{4}{3}$, find how far up the ladder the roofer can climb before the ladder begins to slip.<br><br><strong>(b)</strong> The roofer wishes to be able to reach the very top of the ladder ($5\\text{ m}$ from $A$) without the ladder slipping.<br><br>Find the minimum angle of inclination $\\theta_{\\text{min}}$ of the ladder to the horizontal ground that will allow the roofer to safely reach end $B$, giving your answer in degrees to 1 decimal place.",
+    "steps": [
+        "<strong>(a) Find distance climbed before slipping:</strong><br><br>From $\\tan\\alpha = \\frac{4}{3}$, we have $\\cos\\alpha = 0.6$ and $\\sin\\alpha = 0.8$.<br><br>Vertical equilibrium gives:\\begin{aligned} R_A &= (24 + 72)g \\cr &= 96g \\end{aligned}At the point of slipping, limiting friction is:\\begin{aligned} F_A &= \\mu R_A \\cr &= 0.4(96g) \\cr &= 38.4g \\end{aligned}Horizontal equilibrium gives $R_B = F_A = 38.4g$.<br><br>Taking moments about $A$:\\begin{aligned} &\\Sigma M_A = 0 \\cr &(24g)(2.5\\cos\\alpha) \\cr &\\qquad + (72g)(x\\cos\\alpha) \\cr &\\qquad - R_B(5\\sin\\alpha) = 0 \\end{aligned}<br><br>Substituting the values and dividing by $g$:\\begin{aligned} &24(2.5)(0.6) \\cr &\\qquad + 72(0.6x) \\cr &\\qquad - 38.4(5)(0.8) = 0 \\cr &36 + 43.2x - 153.6 = 0 \\cr &43.2x = 117.6 \\cr &x = \\dfrac{117.6}{43.2} \\cr &x = \\dfrac{49}{18} \\cr &x \\approx 2.72\\text{ m} \\end{aligned}",
+        "<strong>(b) Find minimum angle to reach the top:</strong><br><br>At the top of the ladder, $x = 5\\text{ m}$.<br><br>Taking moments about $A$ with unknown angle $\\theta$:\\begin{aligned} &(24g)(2.5\\cos\\theta) \\cr &\\qquad + (72g)(5\\cos\\theta) \\cr &\\qquad - R_B(5\\sin\\theta) = 0 \\end{aligned}<br><br>Since $R_B = 38.4g$:\\begin{aligned} &60g\\cos\\theta + 360g\\cos\\theta \\cr &\\qquad - 38.4g(5\\sin\\theta) = 0 \\cr &420\\cos\\theta = 192\\sin\\theta \\cr &\\tan\\theta = \\dfrac{420}{192} \\cr &\\tan\\theta = 2.1875 \\cr &\\theta = \\arctan(2.1875) \\cr &\\theta \\approx 65.4^\\circ \\end{aligned}",
+        "Final Answer: (a) $2.72\\text{ m}$, (b) $65.4^\\circ$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $3.56\\text{ m}$, (b) $65.4^\\circ$",
+            "feedback": "In part (a), you swapped sine and cosine when resolving perpendicular distances for moments about $A$."
+        },
+        {
+            "ans": "(a) $2.72\\text{ m}$, (b) $24.6^\\circ$",
+            "feedback": "In part (b), you evaluated $\\arctan(192/420)$, finding the complementary angle to the vertical wall rather than the angle to the ground."
+        },
+        {
+            "ans": "(a) $2.72\\text{ m}$, (b) $53.1^\\circ$",
+            "feedback": "In part (b), you calculated the minimum angle without the person on the ladder, using $\\tan\\theta = 1/(2\\mu)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Critical Ascent Thresholds",
+        "content": "As a person climbs a ladder, their weight creates an increasing overturning moment, demanding greater friction at the base. The most dangerous position is always the very top ($x = L$). If the ladder does not slip when the person reaches the top rung, it is stable at every lower rung."
+    }
+},
+{
+    "id": "012273",
+    "group_id": "012271",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Statics",
+    "topic": "Moments",
+    "subtopic": [
+        "Non-Uniform Ladders",
+        "Centre of Mass Shift",
+        "Limiting Equilibrium"
+    ],
+    "img": false,
+    "question": "A non-uniform ladder $AB$ of mass $30\\text{ kg}$ and length $6\\text{ m}$ rests with end $A$ on rough horizontal ground and end $B$ against a smooth vertical wall. The centre of mass of the ladder is located at a distance of $2\\text{ m}$ from the base $A$.<br><br>The ladder is inclined at an angle of $60^\\circ$ to the horizontal ground. The coefficient of friction between the ground and the ladder is $\\mu = 0.35$.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> When no person is on the ladder, determine whether the ladder remains in equilibrium or slips.<br><br><strong>(b)</strong> A decorator of mass $70\\text{ kg}$ steps onto the ladder and climbs upwards from $A$.<br><br>Calculate the distance $d$ the decorator climbs along the ladder before the ladder is on the point of slipping, giving your answer to 3 significant figures.",
+    "steps": [
+        "<strong>(a) Equilibrium check without person:</strong><br><br>For the ladder alone, vertical equilibrium gives:\\begin{aligned} R_A &= 30g \\cr &= 294\\text{ N} \\end{aligned}Maximum available friction at the ground:\\begin{aligned} F_{\\text{max}} &= \\mu R_A \\cr &= 0.35(294) \\cr &= 102.9\\text{ N} \\end{aligned}Taking moments about $A$ to find required wall reaction $R_B$:\\begin{aligned} &\\Sigma M_A = 0 \\cr &(30g)(2\\cos 60^\\circ) \\cr &\\qquad - R_B(6\\sin 60^\\circ) = 0 \\cr &30g(1) = 6R_B\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &30g = 3\\sqrt{3}R_B \\cr &R_B = \\dfrac{10g}{\\sqrt{3}} \\cr &R_B \\approx 56.58\\text{ N} \\end{aligned}Since $R_B = 56.58\\text{ N} < F_{\\text{max}} = 102.9\\text{ N}$, friction is sufficient to prevent slipping, so the ladder remains in equilibrium.",
+        "<strong>(b) Calculate distance d climbed by decorator:</strong><br><br>With the decorator on the ladder, total vertical reaction is:\\begin{aligned} R_A &= (30 + 70)g \\cr &= 100g \\cr &= 980\\text{ N} \\end{aligned}At the point of slipping, limiting friction is:\\begin{aligned} F_A &= 0.35(980) \\cr &= 343\\text{ N} \\cr &= 35g \\end{aligned}Horizontal equilibrium gives $R_B = F_A = 35g$.<br><br>Taking moments about $A$:\\begin{aligned} &\\Sigma M_A = 0 \\cr &(30g)(2\\cos 60^\\circ) \\cr &\\qquad + (70g)(d\\cos 60^\\circ) \\cr &\\qquad - (35g)(6\\sin 60^\\circ) = 0 \\end{aligned}<br><br>Dividing through by $g\\cos 60^\\circ$:\\begin{aligned} &60 + 70d \\cr &\\qquad - 210\\tan 60^\\circ = 0 \\cr &70d = 210\\sqrt{3} - 60 \\cr &70d = 363.73 - 60 \\cr &70d = 303.73 \\cr &d = \\dfrac{303.73}{70} \\cr &d \\approx 4.34\\text{ m} \\end{aligned}",
+        "Final Answer: (a) Equilibrium ($56.6\\text{ N} < 103\\text{ N}$), (b) $4.34\\text{ m}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Slips ($56.6\\text{ N} > 45.2\\text{ N}$), (b) $4.34\\text{ m}$",
+            "feedback": "In part (a), you calculated maximum friction using the wrong coefficient or normal reaction."
+        },
+        {
+            "ans": "(a) Equilibrium ($56.6\\text{ N} < 103\\text{ N}$), (b) $5.20\\text{ m}$",
+            "feedback": "In part (b), you treated the ladder as uniform with its centre of mass at $3\\text{ m}$ rather than using the non-uniform position at $2\\text{ m}$."
+        },
+        {
+            "ans": "(a) Equilibrium ($56.6\\text{ N} < 103\\text{ N}$), (b) $2.50\\text{ m}$",
+            "feedback": "In part (b), you forgot to divide by $\\cos 60^\\circ$ on the weight terms when simplifying the moments equation."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Non-Uniform Centre of Mass Placement",
+        "content": "When a problem specifies a *non-uniform* body, never place the weight at the geometric midpoint. Here, the centre of mass is located at $2\\text{ m}$ from the base, giving a weight moment of $30g(2\\cos 60^\\circ)$. Using the midpoint distance of $3\\text{ m}$ would distort all subsequent moments."
+    }
+},
+{
+    "id": "012274",
+    "group_id": "012271",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Statics",
+    "topic": "Moments",
+    "subtopic": [
+        "Ladders",
+        "Horizontal Tie-Rope",
+        "Breaking Tension"
+    ],
+    "img": false,
+    "question": "A uniform ladder $AB$ of mass $25\\text{ kg}$ and length $6\\text{ m}$ rests with end $B$ against a smooth vertical wall. End $A$ rests on smooth horizontal ground, but is prevented from slipping by a light, inextensible horizontal rope attached from $A$ to the base of the wall.<br><br>The ladder is inclined at an angle $\\theta$ to the horizontal, where $\\cos\\theta = 0.6$ and $\\sin\\theta = 0.8$.<br><br>A firefighter of mass $75\\text{ kg}$ climbs to the top of the ladder at $B$.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Find the normal reaction exerted by the ground on the ladder at $A$.<br><br><strong>(b)</strong> By taking moments about $A$, calculate the tension $T$ in the horizontal rope while the firefighter is at $B$.<br><br><strong>(c)</strong> The rope has a maximum breaking tension of $600\\text{ N}$. Determine whether the rope will break when the firefighter reaches the top of the ladder.",
+    "steps": [
+        "<strong>(a) Calculate normal reaction at ground:</strong><br><br>Because both the ground and the wall are smooth, there is no vertical friction force at either contact point.<br><br>Resolving vertically for equilibrium:\\begin{aligned} R_A &= (25 + 75)g \\cr &= 100(9.8) \\cr &= 980\\text{ N} \\end{aligned}",
+        "<strong>(b) Calculate tension in horizontal rope:</strong><br><br>The weight of the ladder acts at the midpoint ($3\\text{ m}$ from $A$), and the firefighter stands at $B$ ($6\\text{ m}$ from $A$).<br><br>Taking moments about $A$:\\begin{aligned} &\\Sigma M_A = 0 \\cr &(25g)(3\\cos\\theta) \\cr &\\qquad + (75g)(6\\cos\\theta) \\cr &\\qquad - R_B(6\\sin\\theta) = 0 \\end{aligned}<br><br>Substituting $\\cos\\theta = 0.6$ and $\\sin\\theta = 0.8$:\\begin{aligned} &(25g)(1.8) + (75g)(3.6) \\cr &\\qquad - 4.8R_B = 0 \\cr &45g + 270g - 4.8R_B = 0 \\cr &4.8R_B = 315g \\cr &R_B = \\dfrac{315(9.8)}{4.8} \\cr &R_B = 643.125\\text{ N} \\end{aligned}Since the ground is smooth, the tension $T$ in the horizontal rope balances the wall reaction $R_B$:\\begin{aligned} T &= R_B \\cr &= 643.125\\text{ N} \\cr &\\approx 643\\text{ N} \\end{aligned}",
+        "<strong>(c) Check rope breaking condition:</strong><br><br>The tension required to maintain equilibrium is $T = 643.125\\text{ N}$.<br><br>Because $643.125\\text{ N} > 600\\text{ N}$, the tension exceeds the breaking limit, so the rope will break.",
+        "Final Answer: (a) $980\\text{ N}$, (b) $643\\text{ N}$, (c) Rope will break ($643\\text{ N} > 600\\text{ N}$)"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $980\\text{ N}$, (b) $643\\text{ N}$, (c) Rope will not break ($482\\text{ N} < 600\\text{ N}$)",
+            "feedback": "In part (c), you calculated tension with the firefighter at the midpoint rather than at the top of the ladder."
+        },
+        {
+            "ans": "(a) $980\\text{ N}$, (b) $429\\text{ N}$, (c) Rope will not break ($429\\text{ N} < 600\\text{ N}$)",
+            "feedback": "In part (b), you swapped sine and cosine when resolving perpendicular lever arms about $A$."
+        },
+        {
+            "ans": "(a) $245\\text{ N}$, (b) $643\\text{ N}$, (c) Rope will break ($643\\text{ N} > 600\\text{ N}$)",
+            "feedback": "In part (a), you calculated the weight of the ladder alone, omitting the $75\\text{ kg}$ firefighter from the vertical support reaction."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Horizontal Restraints on Smooth Surfaces",
+        "content": "On a completely smooth floor, friction is zero. Equilibrium is possible only if an external horizontal force—such as a peg or tie-rope—restrains the base. By horizontal equilibrium $\\Sigma F_x = 0$, the rope tension must equal the normal reaction at the wall ($T = R_B$). Taking moments about the base isolates this tension cleanly."
+    }
+},
+{
+    "id": "012275",
+    "group_id": "012271",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Statics",
+    "topic": "Moments",
+    "subtopic": [
+        "Rough Wall and Floor",
+        "Limiting Equilibrium",
+        "Algebraic Trig Solve"
+    ],
+    "img": false,
+    "question": "A uniform rod $AB$ of mass $M\\text{ kg}$ and length $2a$ rests in a vertical plane with end $A$ on rough horizontal ground and end $B$ against a rough vertical wall.<br><br>The coefficient of friction between the rod and the ground is $\\mu_1 = 0.5$, and the coefficient of friction between the rod and the wall is $\\mu_2 = 0.25$.<br><br>The rod is inclined at an angle $\\theta$ to the horizontal ground and is in limiting equilibrium, with end $A$ on the point of slipping away from the wall and end $B$ on the point of slipping down the wall.<br><br><strong>(a)</strong> Draw a clear list of all forces acting on the rod, stating their directions.<br><br><strong>(b)</strong> Show that the normal reaction $R_B$ at the wall is related to the normal reaction $R_A$ at the ground by:$$R_B = 0.5R_A$$<strong>(c)</strong> Show that $R_A = \\dfrac{8}{9}Mg$.<br><br><strong>(d)</strong> By taking moments about $A$, calculate the exact value of $\\tan\\theta$, and hence find $\\theta$ to the nearest $0.1^\\circ$.",
+    "steps": [
+        "<strong>(a) Forces acting on the rod:</strong><br><br>The five forces acting on the rod are:<br>• At ground $A$: normal reaction $R_A$ vertically upwards<br>• At ground $A$: friction force $F_A = \\mu_1 R_A$ horizontally towards the wall<br>• At wall $B$: normal reaction $R_B$ horizontally away from the wall<br>• At wall $B$: friction force $F_B = \\mu_2 R_B$ vertically upwards<br>• At midpoint of rod: weight $Mg$ vertically downwards",
+        "<strong>(b) Relate R_B to R_A:</strong><br><br>Because end $A$ is on the point of slipping away from the wall, friction at $A$ is limiting ($F_A = \\mu_1 R_A = 0.5R_A$).<br><br>Resolving horizontally for equilibrium:\\begin{aligned} &\\Sigma F_x = 0 \\cr &F_A - R_B = 0 \\cr &R_B = F_A \\cr &R_B = 0.5R_A \\end{aligned}",
+        "<strong>(c) Show R_A = (8/9)Mg:</strong><br><br>Because end $B$ tends to slip downwards, friction at $B$ acts upwards and is limiting ($F_B = \\mu_2 R_B = 0.25R_B$).<br><br>Resolving vertically for equilibrium:\\begin{aligned} &\\Sigma F_y = 0 \\cr &R_A + F_B - Mg = 0 \\cr &R_A + 0.25R_B = Mg \\end{aligned}Substitute $R_B = 0.5R_A$:\\begin{aligned} &R_A + 0.25(0.5R_A) = Mg \\cr &R_A + 0.125R_A = Mg \\cr &1.125R_A = Mg \\cr &\\dfrac{9}{8}R_A = Mg \\cr &R_A = \\dfrac{8}{9}Mg \\end{aligned}",
+        "<strong>(d) Determine tan θ and θ by moments:</strong><br><br>Evaluate $R_B$ and $F_B$ in terms of $Mg$:\\begin{aligned} R_B &= 0.5\\left(\\dfrac{8}{9}Mg\\right) \\cr &= \\dfrac{4}{9}Mg \\end{aligned}\\begin{aligned} F_B &= 0.25\\left(\\dfrac{4}{9}Mg\\right) \\cr &= \\dfrac{1}{9}Mg \\end{aligned}Taking moments about base $A$ for rod of length $2a$:\\begin{aligned} &\\Sigma M_A = 0 \\cr &(Mg)(a\\cos\\theta) \\cr &\\qquad - R_B(2a\\sin\\theta) \\cr &\\qquad - F_B(2a\\cos\\theta) = 0 \\end{aligned}<br><br>Substitute expressions and divide by $Mga$:\\begin{aligned} &\\cos\\theta \\cr &\\qquad - \\left(\\dfrac{4}{9}\\right)(2\\sin\\theta) \\cr &\\qquad - \\left(\\dfrac{1}{9}\\right)(2\\cos\\theta) = 0 \\cr &\\cos\\theta - \\dfrac{8}{9}\\sin\\theta - \\dfrac{2}{9}\\cos\\theta = 0 \\cr &\\dfrac{7}{9}\\cos\\theta = \\dfrac{8}{9}\\sin\\theta \\cr &7\\cos\\theta = 8\\sin\\theta \\cr &\\tan\\theta = \\dfrac{7}{8} = 0.875 \\cr &\\theta = \\arctan(0.875) \\cr &\\theta \\approx 41.2^\\circ \\end{aligned}",
+        "Final Answer: (a) Listed correctly, (b) Proof complete, (c) Proof complete, (d) $\\tan\\theta = \\dfrac{7}{8}$, $\\theta = 41.2^\\circ$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Listed correctly, (b) Proof complete, (c) Proof complete, (d) $\\tan\\theta = \\dfrac{8}{7}$, $\\theta = 48.8^\\circ$",
+            "feedback": "In part (d), you inverted the ratio, solving for $\\cot\\theta = 8/7$ instead of $\\tan\\theta = 7/8$."
+        },
+        {
+            "ans": "(a) Listed correctly, (b) Proof complete, (c) Proof complete, (d) $\\tan\\theta = \\dfrac{9}{8}$, $\\theta = 48.4^\\circ$",
+            "feedback": "In part (d), you omitted the moment of the wall friction force $F_B$ about the base $A$, using only the normal reaction $R_B$."
+        },
+        {
+            "ans": "(a) Listed correctly, (b) Proof complete, (c) Proof complete, (d) $\\tan\\theta = \\dfrac{7}{8}$, $\\theta = 35.5^\\circ$",
+            "feedback": "In part (d), you calculated $\\arctan(0.875)$ in radians or miscalculated the final angle."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Dual Friction in Ladder Equilibrium",
+        "content": "When both the wall and floor are rough, friction acts at both ends. Because the ladder tends to slip down the wall, wall friction $F_B = \\mu_2 R_B$ acts *upwards*. When taking moments about the base $A$, remember that $F_B$ has a perpendicular lever arm of $2a\\cos\\theta$ and exerts an anticlockwise moment opposing the weight."
+    }
 }
 ];
 
