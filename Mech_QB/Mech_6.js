@@ -203,5 +203,210 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: The Standard Ladder Limiting Friction Identity",
         "content": "For any uniform ladder resting against a smooth vertical wall on the verge of slipping, taking moments about the base and resolving horizontally and vertically always yields the classic relation: $\\mu = \\frac{1}{2\\tan\\theta} = \\frac{1}{2}\\cot\\theta$. Here, $\\mu = \\frac{1}{2\\tan 60^\\circ} = \\frac{1}{2\\sqrt{3}} \\approx 0.289$. Memorising this identity lets you verify your calculated coefficient in seconds."
     }
+},
+{
+    "id": "012256",
+    "group_id": "012256",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Dynamics",
+    "topic": "Momentum and Impulse",
+    "subtopic": [
+        "Conservation of Momentum",
+        "Direct Collision",
+        "Impulse"
+    ],
+    "img": false,
+    "question": "Two particles, $A$ and $B$, are travelling in the same direction along the same straight horizontal line on a smooth surface.<br><br>Particle $A$ has mass $4\\text{ kg}$ and is moving with a speed of $6\\text{ m s}^{-1}$.<br>Particle $B$ has mass $2\\text{ kg}$ and is moving with a speed of $3\\text{ m s}^{-1}$.<br><br>Particle $A$ collides directly with particle $B$.<br><br><strong>(a)</strong> Given that the two particles coalesce upon impact to form a single combined body $C$, find the speed of $C$ immediately after the collision.<br><br><strong>(b)</strong> Find the magnitude and direction of the impulse exerted on $A$ by $B$ during the collision.",
+    "steps": [
+        "<strong>(a) Calculate common speed after coalescing:</strong><br><br>By the principle of conservation of linear momentum:\\begin{aligned} &m_A u_A + m_B u_B = (m_A + m_B)v \\cr &(4)(6) + (2)(3) = (4 + 2)v \\cr &24 + 6 = 6v \\cr &30 = 6v \\cr &v = 5\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Calculate impulse exerted on A by B:</strong><br><br>The impulse exerted on $A$ is given by the change in momentum of $A$:\\begin{aligned} I_A &= m_A(v - u_A) \\cr &= 4(5 - 6) \\cr &= 4(-1) \\cr &= -4\\text{ N s} \\end{aligned}The negative sign indicates that the impulse acts in the direction opposing $A$'s initial motion.<br><br>Magnitude: $4\\text{ N s}$.<br>Direction: Opposite to the direction of motion.",
+        "Final Answer: (a) $5\\text{ m s}^{-1}$, (b) $4\\text{ N s}$ opposite to motion"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $5\\text{ m s}^{-1}$, (b) $4\\text{ N s}$ in direction of motion",
+            "feedback": "In part (b), you identified the correct magnitude but reversed the direction: body $B$ slows body $A$ down from $6\\text{ m s}^{-1}$ to $5\\text{ m s}^{-1}$, so the impulse on $A$ must oppose its forward motion."
+        },
+        {
+            "ans": "(a) $4.5\\text{ m s}^{-1}$, (b) $6\\text{ N s}$ opposite to motion",
+            "feedback": "In part (a), you calculated the average velocity $(6 + 3)/2 = 4.5\\text{ m s}^{-1}$ rather than applying conservation of linear momentum."
+        },
+        {
+            "ans": "(a) $5\\text{ m s}^{-1}$, (b) $20\\text{ N s}$ opposite to motion",
+            "feedback": "In part (b), you evaluated the final momentum $m_A v = 4 \\times 5 = 20\\text{ N s}$ instead of the change in momentum $m_A(v - u_A)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Newton's Third Law in Impulse",
+        "content": "To verify the impulse on $A$, calculate the impulse on $B$: $I_B = m_B(v - u_B) = 2(5 - 3) = +4\\text{ N s}$. By Newton's Third Law, the impulse exerted on $A$ by $B$ must be equal in magnitude and opposite in direction: $I_A = -I_B = -4\\text{ N s}$. This quick check eliminates sign errors."
+    }
+},
+{
+    "id": "012257",
+    "group_id": "012256",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Dynamics",
+    "topic": "Momentum and Impulse",
+    "subtopic": [
+        "Opposing Collisions",
+        "Coalescence",
+        "Loss of Kinetic Energy"
+    ],
+    "img": false,
+    "question": "Two railway trucks, $P$ and $Q$, move towards each other along the same straight horizontal track.<br><br>Truck $P$ has a mass of $1200\\text{ kg}$ and is moving at a speed of $4\\text{ m s}^{-1}$.<br>Truck $Q$ has a mass of $800\\text{ kg}$ and is moving at a speed of $3\\text{ m s}^{-1}$.<br><br>The trucks collide directly, and their automatic couplers engage so that they move together as a single unit after the impact.<br><br><strong>(a)</strong> Determine the speed and direction of motion of the coupled trucks immediately after the collision.<br><br><strong>(b)</strong> Calculate the magnitude of the impulse exerted by truck $P$ on truck $Q$ during the impact.<br><br><strong>(c)</strong> Calculate the loss in kinetic energy of the system caused by the collision.",
+    "steps": [
+        "<strong>(a) Find velocity of the coupled trucks:</strong><br><br>Taking the initial direction of truck $P$ as positive, $u_P = +4\\text{ m s}^{-1}$ and $u_Q = -3\\text{ m s}^{-1}$.<br><br>Applying conservation of linear momentum:\\begin{aligned} &m_P u_P + m_Q u_Q = (m_P + m_Q)v \\cr &1200(4) + 800(-3) = (1200 + 800)v \\cr &4800 - 2400 = 2000v \\cr &2400 = 2000v \\cr &v = 1.2\\text{ m s}^{-1} \\end{aligned}Because $v > 0$, the coupled trucks move in the original direction of truck $P$ with speed $1.2\\text{ m s}^{-1}$.",
+        "<strong>(b) Calculate magnitude of impulse on truck Q:</strong><br><br>Impulse on $Q$ is its change in momentum:\\begin{aligned} I_Q &= m_Q(v - u_Q) \\cr &= 800(1.2 - (-3)) \\cr &= 800(4.2) \\cr &= 3360\\text{ N s} \\end{aligned}",
+        "<strong>(c) Calculate loss in kinetic energy:</strong><br><br>Initial kinetic energy:\\begin{aligned} E_{k1} &= \\dfrac{1}{2}m_P u_P^2 + \\dfrac{1}{2}m_Q u_Q^2 \\cr &= \\dfrac{1}{2}(1200)(4^2) + \\dfrac{1}{2}(800)(3^2) \\cr &= 600(16) + 400(9) \\cr &= 9600 + 3600 \\cr &= 13200\\text{ J} \\end{aligned}Final kinetic energy:\\begin{aligned} E_{k2} &= \\dfrac{1}{2}(m_P + m_Q)v^2 \\cr &= \\dfrac{1}{2}(2000)(1.2^2) \\cr &= 1000(1.44) \\cr &= 1440\\text{ J} \\end{aligned}Loss in kinetic energy:\\begin{aligned} \\Delta E_k &= 13200 - 1440 \\cr &= 11760\\text{ J} \\end{aligned}",
+        "Final Answer: (a) $1.2\\text{ m s}^{-1}$ in direction of P, (b) $3360\\text{ N s}$, (c) $11760\\text{ J}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $3.6\\text{ m s}^{-1}$ in direction of P, (b) $3360\\text{ N s}$, (c) $11760\\text{ J}$",
+            "feedback": "In part (a), you treated both initial velocities as positive ($4800 + 2400 = 7200$), ignoring that the trucks move in opposite directions."
+        },
+        {
+            "ans": "(a) $1.2\\text{ m s}^{-1}$ in direction of P, (b) $1440\\text{ N s}$, (c) $11760\\text{ J}$",
+            "feedback": "In part (b), you evaluated $800(1.2 - 3)$ instead of $800(1.2 - (-3))$, failing to account for the sign change in $Q$'s reversed velocity."
+        },
+        {
+            "ans": "(a) $1.2\\text{ m s}^{-1}$ in direction of P, (b) $3360\\text{ N s}$, (c) $4560\\text{ J}$",
+            "feedback": "In part (c), you subtracted $u_Q^2$ in the initial kinetic energy calculation, forgetting that kinetic energy is a scalar quantity ($E_k \\ge 0$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Signs in Head-On Collisions",
+        "content": "In head-on collisions, establish a positive reference direction immediately. Because velocity is a vector, $u_Q = -3\\text{ m s}^{-1}$. When calculating impulse, subtracting a negative velocity results in addition: $v - u_Q = 1.2 - (-3) = 4.2\\text{ m s}^{-1}$. Conversely, kinetic energy $\\frac{1}{2}mv^2$ is a positive scalar—never assign negative kinetic energy to an opposing body."
+    }
+},
+{
+    "id": "012258",
+    "group_id": "012256",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Dynamics",
+    "topic": "Momentum and Impulse",
+    "subtopic": [
+        "Non-Coalescing Collisions",
+        "Impulse Separation",
+        "Subsequent Motion"
+    ],
+    "img": false,
+    "question": "Two smooth spheres, $X$ and $Y$, of masses $0.5\\text{ kg}$ and $0.8\\text{ kg}$ respectively, move along the same straight line on a smooth horizontal table.<br><br>Sphere $X$ has an initial velocity of $8\\text{ m s}^{-1}$ and collides directly with sphere $Y$, which is moving in the same direction with an initial velocity of $2\\text{ m s}^{-1}$.<br><br>During the collision, the magnitude of the impulse exerted by sphere $X$ on sphere $Y$ is $2.4\\text{ N s}$.<br><br><strong>(a)</strong> Find the velocity of sphere $Y$ immediately after the collision.<br><br><strong>(b)</strong> Find the velocity of sphere $X$ immediately after the collision.<br><br><strong>(c)</strong> Determine whether sphere $X$ and sphere $Y$ will collide again, giving a clear mathematical reason for your answer.",
+    "steps": [
+        "<strong>(a) Velocity of sphere Y:</strong><br><br>The impulse exerted by $X$ on $Y$ acts in the positive forward direction ($I = +2.4\\text{ N s}$):\\begin{aligned} &I = m_Y(v_Y - u_Y) \\cr &2.4 = 0.8(v_Y - 2) \\cr &v_Y - 2 = \\dfrac{2.4}{0.8} \\cr &v_Y - 2 = 3 \\cr &v_Y = 5\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Velocity of sphere X:</strong><br><br>By Newton's Third Law, the impulse exerted on $X$ by $Y$ is equal and opposite ($I = -2.4\\text{ N s}$):\\begin{aligned} &-2.4 = m_X(v_X - u_X) \\cr &-2.4 = 0.5(v_X - 8) \\cr &v_X - 8 = -\\dfrac{2.4}{0.5} \\cr &v_X - 8 = -4.8 \\cr &v_X = 3.2\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(c) Check for subsequent collision:</strong><br><br>Immediately after the collision, both spheres continue moving in the positive direction along the same line.<br><br>Because sphere $Y$ is ahead of sphere $X$ and its speed is greater ($v_Y = 5\\text{ m s}^{-1} > v_X = 3.2\\text{ m s}^{-1}$), the distance between them increases continuously. Therefore, they will not collide again.",
+        "Final Answer: (a) $5\\text{ m s}^{-1}$, (b) $3.2\\text{ m s}^{-1}$, (c) No ($v_Y > v_X$)"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $5\\text{ m s}^{-1}$, (b) $12.8\\text{ m s}^{-1}$, (c) Yes ($v_X > v_Y$)",
+            "feedback": "In part (b), you added the impulse to sphere $X$ instead of subtracting it ($v_X = 8 + 4.8 = 12.8$), violating Newton's Third Law."
+        },
+        {
+            "ans": "(a) $3\\text{ m s}^{-1}$, (b) $3.2\\text{ m s}^{-1}$, (c) Yes ($v_X > v_Y$)",
+            "feedback": "In part (a), you calculated the change in velocity $\\Delta v = 3\\text{ m s}^{-1}$ but forgot to add the initial velocity $u_Y = 2\\text{ m s}^{-1}$."
+        },
+        {
+            "ans": "(a) $5\\text{ m s}^{-1}$, (b) $3.2\\text{ m s}^{-1}$, (c) Yes ($v_Y > v_X$)",
+            "feedback": "In part (c), you misidentified the overtaking condition: when the leading sphere travels faster ($v_Y > v_X$), the gap widens, preventing any subsequent collision."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: The Kinematics of Separation",
+        "content": "For particles constrained to a line, a second collision occurs only if the trailing body travels faster than the leading body ($v_{\\text{trailing}} > v_{\\text{leading}}$) or rebounds off a fixed boundary. Here, $X$ trails $Y$, and $v_X = 3.2\\text{ m s}^{-1} < v_Y = 5.0\\text{ m s}^{-1}$, meaning the separation speed is $1.8\\text{ m s}^{-1}$ and no further collision can occur."
+    }
+},
+{
+    "id": "012259",
+    "group_id": "012256",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Dynamics",
+    "topic": "Momentum and Impulse",
+    "subtopic": [
+        "Newton's Law of Restitution",
+        "Direct Collision",
+        "Percentage Energy Loss"
+    ],
+    "img": false,
+    "question": "A particle $P$ of mass $3\\text{ kg}$ moves across a smooth horizontal floor with a speed of $6\\text{ m s}^{-1}$ towards a stationary particle $Q$ of mass $5\\text{ kg}$.<br><br>The two particles collide directly. The coefficient of restitution between $P$ and $Q$ is $e = 0.6$.<br><br><strong>(a)</strong> Calculate the speed of $P$ and the speed of $Q$ immediately after the collision.<br><br><strong>(b)</strong> Calculate the magnitude of the impulse exerted by $P$ on $Q$.<br><br><strong>(c)</strong> Calculate the percentage of the initial kinetic energy that is lost during the collision.",
+    "steps": [
+        "<strong>(a) Form equations to find post-collision speeds:</strong><br><br>Let $v_P$ and $v_Q$ be the post-collision velocities in the direction of $P$'s initial motion.<br><br>Conservation of linear momentum:\\begin{aligned} &m_P u_P + m_Q u_Q = m_P v_P + m_Q v_Q \\cr &3(6) + 5(0) = 3v_P + 5v_Q \\cr &3v_P + 5v_Q = 18 \\end{aligned}Newton's Law of Restitution ($v_Q - v_P = e(u_P - u_Q)$):\\begin{aligned} &v_Q - v_P = 0.6(6 - 0) \\cr &v_Q - v_P = 3.6 \\end{aligned}Multiplying by $3$ gives $3v_Q - 3v_P = 10.8$. Adding this to the momentum equation:\\begin{aligned} &8v_Q = 28.8 \\cr &v_Q = 3.6\\text{ m s}^{-1} \\cr &v_P = 3.6 - 3.6 = 0\\text{ m s}^{-1} \\end{aligned}",
+        "<strong>(b) Calculate magnitude of impulse on Q:</strong><br><br>The impulse exerted on $Q$ is its change in momentum:\\begin{aligned} I_Q &= m_Q(v_Q - u_Q) \\cr &= 5(3.6 - 0) \\cr &= 18\\text{ N s} \\end{aligned}",
+        "<strong>(c) Calculate percentage loss in kinetic energy:</strong><br><br>Initial kinetic energy:\\begin{aligned} E_{k1} &= \\dfrac{1}{2}(3)(6^2) \\cr &= 1.5(36) \\cr &= 54\\text{ J} \\end{aligned}Final kinetic energy ($v_P = 0$):\\begin{aligned} E_{k2} &= \\dfrac{1}{2}(5)(3.6^2) \\cr &= 2.5(12.96) \\cr &= 32.4\\text{ J} \\end{aligned}Percentage loss:\\begin{aligned} \\text{Percentage loss} &= \\dfrac{54 - 32.4}{54} \\times 100 \\cr &= \\dfrac{21.6}{54} \\times 100 \\cr &= 40\\% \\end{aligned}",
+        "Final Answer: (a) $v_P = 0\\text{ m s}^{-1}$, $v_Q = 3.6\\text{ m s}^{-1}$, (b) $18\\text{ N s}$, (c) $40\\%$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $v_P = 3.6\\text{ m s}^{-1}$, $v_Q = 0\\text{ m s}^{-1}$, (b) $18\\text{ N s}$, (c) $40\\%$",
+            "feedback": "In part (a), you swapped the final velocities: the impacting body $P$ is brought to rest, transferring its momentum to the target body $Q$."
+        },
+        {
+            "ans": "(a) $v_P = 0\\text{ m s}^{-1}$, $v_Q = 3.6\\text{ m s}^{-1}$, (b) $18\\text{ N s}$, (c) $60\\%$",
+            "feedback": "In part (c), you calculated the percentage of kinetic energy *retained* ($32.4/54 = 60\\%$) rather than the percentage *lost* ($21.6/54 = 40\\%$)."
+        },
+        {
+            "ans": "(a) $v_P = 0.6\\text{ m s}^{-1}$, $v_Q = 4.2\\text{ m s}^{-1}$, (b) $21\\text{ N s}$, (c) $35\\%$",
+            "feedback": "In part (a), an algebraic error occurred when setting up Newton's Law of Restitution: you wrote $v_P - v_Q = 3.6$ instead of $v_Q - v_P = 3.6$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Complete Transfer of Momentum",
+        "content": "Notice that particle $P$ is brought completely to rest ($v_P = 0$). This occurs whenever $e = \\frac{m_P}{m_Q}$. Here, $\\frac{m_P}{m_Q} = \\frac{3}{5} = 0.6$, exactly matching $e$. Recognizing this relationship allows you to deduce immediately that $v_P = 0$ and $v_Q = e u_P + v_P = 3.6\\text{ m s}^{-1}$."
+    }
+},
+{
+    "id": "012260",
+    "group_id": "012256",
+    "branch": "Mechanics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Dynamics",
+    "topic": "Momentum and Impulse",
+    "subtopic": [
+        "Rebound from Wall",
+        "Average Force",
+        "Kinetic Energy Loss"
+    ],
+    "img": false,
+    "question": "A tennis ball of mass $0.06\\text{ kg}$ travels horizontally with a speed of $25\\text{ m s}^{-1}$ and strikes a smooth, fixed vertical wall perpendicularly.<br><br>The ball rebounds horizontally along its original line of approach with a speed of $15\\text{ m s}^{-1}$. The duration of the impact between the ball and the wall is $0.008\\text{ seconds}$.<br><br><strong>(a)</strong> Calculate the coefficient of restitution $e$ between the ball and the wall.<br><br><strong>(b)</strong> Calculate the magnitude of the impulse exerted by the wall on the ball during the impact.<br><br><strong>(c)</strong> Calculate the average normal force exerted by the wall on the ball during the collision.<br><br><strong>(d)</strong> Calculate the loss in kinetic energy of the ball during the impact.",
+    "steps": [
+        "<strong>(a) Calculate coefficient of restitution:</strong><br><br>For impact with a fixed barrier:\\begin{aligned} e &= \\dfrac{\\text{Speed of rebound}}{\\text{Speed of approach}} \\cr &= \\dfrac{15}{25} \\cr &= 0.6 \\end{aligned}",
+        "<strong>(b) Calculate magnitude of impulse:</strong><br><br>Taking the direction away from the wall as positive, the initial velocity is $u = -25\\text{ m s}^{-1}$ and the final velocity is $v = +15\\text{ m s}^{-1}$.\\begin{aligned} I &= m(v - u) \\cr &= 0.06(15 - (-25)) \\cr &= 0.06(40) \\cr &= 2.4\\text{ N s} \\end{aligned}",
+        "<strong>(c) Calculate average normal force:</strong><br><br>Using the impulse-force relationship $I = F_{\\text{avg}} \\Delta t$:\\begin{aligned} F_{\\text{avg}} &= \\dfrac{I}{\\Delta t} \\cr &= \\dfrac{2.4}{0.008} \\cr &= 300\\text{ N} \\end{aligned}",
+        "<strong>(d) Calculate loss in kinetic energy:</strong><br><br>Loss in kinetic energy:\\begin{aligned} \\Delta E_k &= \\dfrac{1}{2}m(u^2 - v^2) \\cr &= \\dfrac{1}{2}(0.06)(25^2 - 15^2) \\cr &= 0.03(625 - 225) \\cr &= 0.03(400) \\cr &= 12\\text{ J} \\end{aligned}",
+        "Final Answer: (a) $0.6$, (b) $2.4\\text{ N s}$, (c) $300\\text{ N}$, (d) $12\\text{ J}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.6$, (b) $0.6\\text{ N s}$, (c) $75\\text{ N}$, (d) $12\\text{ J}$",
+            "feedback": "In part (b), you evaluated $0.06(25 - 15)$ by subtracting speeds rather than velocities, ignoring the sign change on rebound."
+        },
+        {
+            "ans": "(a) $1.67$, (b) $2.4\\text{ N s}$, (c) $300\\text{ N}$, (d) $12\\text{ J}$",
+            "feedback": "In part (a), you inverted the restitution ratio, calculating approach speed over separation speed ($25/15$). The coefficient $e$ cannot exceed $1$."
+        },
+        {
+            "ans": "(a) $0.6$, (b) $2.4\\text{ N s}$, (c) $0.0192\\text{ N}$, (d) $12\\text{ J}$",
+            "feedback": "In part (c), you multiplied impulse by time ($2.4 \\times 0.008$) instead of dividing impulse by time ($F = I / \\Delta t$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Energy Loss via Restitution Formula",
+        "content": "For a collision with a fixed barrier, the fractional loss of kinetic energy is always $1 - e^2$. Here, $1 - 0.6^2 = 1 - 0.36 = 0.64$. Since the initial energy is $E_{k1} = \\frac{1}{2}(0.06)(25^2) = 18.75\\text{ J}$, the energy lost is simply $0.64 \\times 18.75 = 12\\text{ J}$."
+    }
 }
 ];
