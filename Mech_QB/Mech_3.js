@@ -1,6 +1,7 @@
 window.ALEVEL_QUESTIONS = [
 {
     "id": "012101",
+    "group_id": "012101",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -40,6 +41,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012102",
+    "group_id": "012101",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -80,6 +82,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012103",
+    "group_id": "012101",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -120,6 +123,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012104",
+    "group_id": "012101",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -162,6 +166,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012105",
+    "group_id": "012101",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -203,6 +208,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012106",
+    "group_id": "012106",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -244,6 +250,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012107",
+    "group_id": "012106",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -284,6 +291,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012108",
+    "group_id": "012106",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -325,6 +333,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012109",
+    "group_id": "012106",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -365,6 +374,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012110",
+    "group_id": "012106",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -406,6 +416,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012111",
+    "group_id": "012111",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -446,6 +457,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012112",
+    "group_id": "012111",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -487,6 +499,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012113",
+    "group_id": "012111",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -527,6 +540,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012114",
+    "group_id": "012111",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -567,6 +581,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012115",
+    "group_id": "012111",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -608,6 +623,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012116",
+    "group_id": "012116",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -649,6 +665,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012117",
+    "group_id": "012116",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -690,6 +707,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012118",
+    "group_id": "012116",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -731,6 +749,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012119",
+    "group_id": "012116",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -772,6 +791,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012120",
+    "group_id": "012116",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -813,6 +833,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012121",
+    "group_id": "012121",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -853,6 +874,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012122",
+    "group_id": "012121",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -893,6 +915,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012123",
+    "group_id": "012121",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -933,6 +956,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012124",
+    "group_id": "012121",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -973,6 +997,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012125",
+    "group_id": "012121",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
@@ -1014,6 +1039,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012126",
+    "group_id": "012126",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1054,6 +1080,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012127",
+    "group_id": "012126",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1094,6 +1121,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012128",
+    "group_id": "012126",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1135,6 +1163,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012129",
+    "group_id": "012126",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1175,6 +1204,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012130",
+    "group_id": "012126",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1217,6 +1247,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012131",
+    "group_id": "012131",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1257,6 +1288,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012132",
+    "group_id": "012131",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1298,6 +1330,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012133",
+    "group_id": "012131",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1338,6 +1371,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012134",
+    "group_id": "012131",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1380,6 +1414,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012135",
+    "group_id": "012131",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1421,6 +1456,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012136",
+    "group_id": "012136",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1462,6 +1498,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012137",
+    "group_id": "012136",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1504,6 +1541,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012138",
+    "group_id": "012136",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1545,6 +1583,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012139",
+    "group_id": "012136",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1586,6 +1625,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012140",
+    "group_id": "012136",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1628,6 +1668,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012141",
+    "group_id": "012141",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1670,6 +1711,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012142",
+    "group_id": "012141",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1712,6 +1754,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012143",
+    "group_id": "012141",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1754,6 +1797,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012144",
+    "group_id": "012141",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1796,6 +1840,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012145",
+    "group_id": "012141",
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
@@ -1838,6 +1883,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012146",
+    "group_id": "012146",
     "branch": "Pure",
     "board": "OCR MEI",
     "level": "AS",
@@ -1882,6 +1928,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012147",
+    "group_id": "012146",
     "branch": "Pure",
     "board": "OCR MEI",
     "level": "AS",
@@ -1925,6 +1972,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012148",
+    "group_id": "012146",
     "branch": "Pure",
     "board": "OCR MEI",
     "level": "AS",
@@ -1968,6 +2016,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012149",
+    "group_id": "012146",
     "branch": "Pure",
     "board": "OCR MEI",
     "level": "AS",
@@ -2011,6 +2060,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012150",
+    "group_id": "012146",
     "branch": "Pure",
     "board": "OCR MEI",
     "level": "AS",

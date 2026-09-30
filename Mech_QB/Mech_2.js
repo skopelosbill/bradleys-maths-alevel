@@ -1,6 +1,7 @@
 window.ALEVEL_QUESTIONS = [
 {
     "id": "012051",
+    "group_id": "012051",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
@@ -42,6 +43,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012052",
+    "group_id": "012051",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
@@ -83,6 +85,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012053",
+    "group_id": "012051",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
@@ -124,6 +127,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012054",
+    "group_id": "012051",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
@@ -165,6 +169,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012055",
+    "group_id": "012051",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
@@ -206,6 +211,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012056",
+    "group_id": "012056",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
@@ -248,6 +254,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012057",
+    "group_id": "012056",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
@@ -290,6 +297,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012058",
+    "group_id": "012056",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
@@ -332,6 +340,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012059",
+    "group_id": "012056",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
@@ -372,6 +381,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012060",
+    "group_id": "012056",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
@@ -416,6 +426,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012061",
+    "group_id": "012061",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -456,6 +467,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012062",
+    "group_id": "012061",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -498,6 +510,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012063",
+    "group_id": "012061",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -539,6 +552,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012064",
+    "group_id": "012061",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -582,6 +596,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012065",
+    "group_id": "012061",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -626,6 +641,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012066",
+    "group_id": "012066",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -669,6 +685,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012067",
+    "group_id": "012066",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -711,6 +728,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012068",
+    "group_id": "012066",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -753,6 +771,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012069",
+    "group_id": "012066",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -796,6 +815,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012070",
+    "group_id": "012066",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -839,6 +859,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012071",
+    "group_id": "012071",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -881,6 +902,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012072",
+    "group_id": "012071",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -923,6 +945,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012073",
+    "group_id": "012071",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -963,6 +986,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012074",
+    "group_id": "012071",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -1003,6 +1027,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012075",
+    "group_id": "012071",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -1046,6 +1071,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012076",
+    "group_id": "012076",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -1086,6 +1112,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012077",
+    "group_id": "012076",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -1126,6 +1153,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012078",
+    "group_id": "012076",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -1166,6 +1194,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012079",
+    "group_id": "012076",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -1206,6 +1235,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012080",
+    "group_id": "012076",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -1246,6 +1276,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012081",
+    "group_id": "012081",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -1286,6 +1317,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012082",
+    "group_id": "012081",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -1326,6 +1358,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012083",
+    "group_id": "012081",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -1366,6 +1399,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012084",
+    "group_id": "012081",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -1406,6 +1440,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012085",
+    "group_id": "012081",
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
@@ -1446,6 +1481,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012086",
+    "group_id": "012086",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -1485,6 +1521,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012087",
+    "group_id": "012086",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -1525,6 +1562,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012088",
+    "group_id": "012086",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -1565,6 +1603,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012089",
+    "group_id": "012086",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -1605,6 +1644,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012090",
+    "group_id": "012086",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -1645,6 +1685,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012091",
+    "group_id": "012091",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -1685,6 +1726,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012092",
+    "group_id": "012091",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -1726,6 +1768,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012093",
+    "group_id": "012091",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -1767,6 +1810,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012094",
+    "group_id": "012091",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -1810,6 +1854,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012095",
+    "group_id": "012091",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -1852,6 +1897,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012096",
+    "group_id": "012096",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -1893,6 +1939,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012097",
+    "group_id": "012096",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -1935,6 +1982,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012098",
+    "group_id": "012096",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -1977,6 +2025,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012099",
+    "group_id": "012096",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
@@ -2019,6 +2068,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "012100",
+    "group_id": "012096",
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",

@@ -1,6 +1,7 @@
 window.ALEVEL_QUESTIONS = [
         {
                 "id": "004051",
+                "group_id": "004051",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -44,6 +45,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004052",
+                "group_id": "004051",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -87,6 +89,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004053",
+                "group_id": "004051",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -130,6 +133,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004054",
+                "group_id": "004051",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -173,6 +177,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004055",
+                "group_id": "004051",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -216,6 +221,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004056",
+                "group_id": "004056",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -258,6 +264,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004057",
+                "group_id": "004056",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -300,6 +307,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004058",
+                "group_id": "004056",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -342,6 +350,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004059",
+                "group_id": "004056",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -384,6 +393,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004060",
+                "group_id": "004056",
                 "board": "Pearson Edexcel",
                 "major_area": "Calculus",
                 "level": "A",
@@ -425,6 +435,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004061",
+                "group_id": "004061",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -473,6 +484,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004062",
+                "group_id": "004061",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -521,6 +533,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004063",
+                "group_id": "004061",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -569,6 +582,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004064",
+                "group_id": "004061",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -617,6 +631,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004065",
+                "group_id": "004061",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -665,6 +680,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004066",
+                "group_id": "004066",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -710,6 +726,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004067",
+                "group_id": "004066",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -755,6 +772,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004068",
+                "group_id": "004066",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -800,6 +818,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004069",
+                "group_id": "004066",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -845,6 +864,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004070",
+                "group_id": "004066",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -890,6 +910,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004071",
+                "group_id": "004071",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
@@ -928,6 +949,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004072",
+                "group_id": "004071",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
@@ -966,6 +988,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004073",
+                "group_id": "004071",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
@@ -1004,6 +1027,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004074",
+                "group_id": "004071",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
@@ -1042,6 +1066,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004075",
+                "group_id": "004071",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
@@ -1080,6 +1105,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004076",
+                "group_id": "004076",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
@@ -1118,6 +1144,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004077",
+                "group_id": "004076",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
@@ -1156,6 +1183,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004078",
+                "group_id": "004076",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
@@ -1194,6 +1222,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004079",
+                "group_id": "004076",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
@@ -1232,6 +1261,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004080",
+                "group_id": "004076",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
@@ -1270,6 +1300,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004081",
+                "group_id": "004081",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1308,6 +1339,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004082",
+                "group_id": "004081",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1346,6 +1378,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004083",
+                "group_id": "004081",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1384,6 +1417,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004084",
+                "group_id": "004081",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1422,6 +1456,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004085",
+                "group_id": "004081",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1460,6 +1495,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004086",
+                "group_id": "004086",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1499,6 +1535,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004087",
+                "group_id": "004086",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1538,6 +1575,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004088",
+                "group_id": "004086",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1577,6 +1615,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004089",
+                "group_id": "004086",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1616,6 +1655,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004090",
+                "group_id": "004086",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1655,6 +1695,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004091",
+                "group_id": "004091",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1695,6 +1736,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004092",
+                "group_id": "004091",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1735,6 +1777,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004093",
+                "group_id": "004091",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1775,6 +1818,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004094",
+                "group_id": "004091",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1815,6 +1859,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004095",
+                "group_id": "004091",
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
@@ -1855,6 +1900,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
         "id": "004096",
+        "group_id": "004096",
         "board": "AQA",
         "branch": "Pure",
         "level": "A",
@@ -1896,6 +1942,7 @@ window.ALEVEL_QUESTIONS = [
 },
        {
         "id": "004097",
+        "group_id": "004096",
         "board": "AQA",
         "branch": "Pure",
         "level": "A",
@@ -1937,6 +1984,7 @@ window.ALEVEL_QUESTIONS = [
 },
         {
         "id": "004098",
+        "group_id": "004096",
         "board": "AQA",
         "branch": "Pure",
         "level": "A",
@@ -1978,6 +2026,7 @@ window.ALEVEL_QUESTIONS = [
 },
         {
         "id": "004099",
+        "group_id": "004096",
         "board": "AQA",
         "branch": "Pure",
         "level": "A",
@@ -2019,6 +2068,7 @@ window.ALEVEL_QUESTIONS = [
 },
         {
         "id": "004100",
+        "group_id": "004096",
         "board": "AQA",
         "branch": "Pure",
         "level": "A",

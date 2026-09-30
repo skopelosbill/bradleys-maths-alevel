@@ -1,6 +1,7 @@
 window.ALEVEL_QUESTIONS = [
  {
         "id": "004451",
+        "group_id": "004451",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -42,6 +43,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004452",
+        "group_id": "004451",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -84,6 +86,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004453",
+                "group_id": "004451",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -126,6 +129,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004454",
+                "group_id": "004451",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -168,6 +172,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004455",
+                "group_id": "004451",
                 "board": "Pearson Edexcel",
                 "branch": "Pure",
                 "level": "A",
@@ -209,6 +214,7 @@ window.ALEVEL_QUESTIONS = [
         },
 {
         "id": "004456",
+        "group_id": "004456",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -250,6 +256,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004457",
+        "group_id": "004456",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -291,6 +298,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004458",
+        "group_id": "004456",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -332,6 +340,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004459",
+        "group_id": "004456",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -373,6 +382,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004460",
+        "group_id": "004456",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -414,6 +424,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004461",
+        "group_id": "004461",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -453,6 +464,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004462",
+        "group_id": "004461",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -492,6 +504,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004463",
+        "group_id": "004461",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -530,6 +543,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004464",
+        "group_id": "004461",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -569,6 +583,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004465",
+        "group_id": "004461",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -608,6 +623,7 @@ window.ALEVEL_QUESTIONS = [
 }, 
 {
         "id": "004466",
+        "group_id": "004466",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -650,6 +666,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004467",
+        "group_id": "004466",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -692,6 +709,7 @@ window.ALEVEL_QUESTIONS = [
         },
 {
         "id": "004468",
+        "group_id": "004466",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -734,6 +752,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004469",
+        "group_id": "004466",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -776,6 +795,7 @@ window.ALEVEL_QUESTIONS = [
         },
 {
         "id": "004470",
+        "group_id": "004466",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -818,6 +838,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004471",
+        "group_id": "004471",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -857,6 +878,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004472",
+        "group_id": "004471",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -896,6 +918,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004473",
+        "group_id": "004471",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -935,6 +958,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004474",
+        "group_id": "004471",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -974,6 +998,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004475",
+        "group_id": "004471",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1013,6 +1038,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004476",
+        "group_id": "004476",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1053,6 +1079,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004477",
+        "group_id": "004476",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1092,6 +1119,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004478",
+        "group_id": "004476",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1132,6 +1160,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004479",
+        "group_id": "004476",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1171,6 +1200,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004480",
+        "group_id": "004476",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1210,6 +1240,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004481",
+        "group_id": "004481",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1249,6 +1280,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004482",
+        "group_id": "004481",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1288,6 +1320,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004483",
+        "group_id": "004481",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1327,6 +1360,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004484",
+        "group_id": "004481",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1366,6 +1400,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004485",
+        "group_id": "004481",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1405,6 +1440,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004486",
+        "group_id": "004486",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1445,6 +1481,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004487",
+        "group_id": "004486",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1486,6 +1523,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004488",
+        "group_id": "004486",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1526,6 +1564,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004489",
+        "group_id": "004486",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1567,6 +1606,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004490",
+        "group_id": "004486",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1607,6 +1647,7 @@ window.ALEVEL_QUESTIONS = [
 },
         {
         "id": "004491",
+        "group_id": "004491",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1648,6 +1689,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004492",
+        "group_id": "004491",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1690,6 +1732,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004493",
+        "group_id": "004491",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1731,6 +1774,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004494",
+        "group_id": "004491",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1772,6 +1816,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004495",
+        "group_id": "004491",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1813,6 +1858,7 @@ window.ALEVEL_QUESTIONS = [
 },
  {
         "id": "004496",
+        "group_id": "004496",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1853,6 +1899,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004497",
+        "group_id": "004496",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1893,6 +1940,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004498",
+        "group_id": "004496",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1933,6 +1981,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004499",
+        "group_id": "004496",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",
@@ -1973,6 +2022,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004500",
+        "group_id": "004496",
         "board": "Pearson Edexcel",
         "branch": "Pure",
         "level": "A",

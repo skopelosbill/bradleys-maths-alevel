@@ -1,6 +1,7 @@
 window.ALEVEL_QUESTIONS = [
 {
         "id": "004601",
+        "group_id": "004601",
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
@@ -44,6 +45,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004602",
+        "group_id": "004601",
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
@@ -85,6 +87,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004603",
+        "group_id": "004601",
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
@@ -125,6 +128,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004604",
+        "group_id": "004601",
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
@@ -167,6 +171,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004605",
+        "group_id": "004601",
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
@@ -207,6 +212,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004606",
+        "group_id": "004606",
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
@@ -253,6 +259,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004607",
+        "group_id": "004606",
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
@@ -296,6 +303,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004608",
+        "group_id": "004606",
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
@@ -340,6 +348,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004609",
+        "group_id": "004606",
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
@@ -385,6 +394,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004610",
+        "group_id": "004606",
         "board": "OCR",
         "branch": "Pure",
         "level": "A",
@@ -426,6 +436,7 @@ window.ALEVEL_QUESTIONS = [
 },
  {
         "id": "004611",
+        "group_id": "004611",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -465,6 +476,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004612",
+        "group_id": "004611",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -506,6 +518,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004613",
+        "group_id": "004611",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -548,6 +561,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004614",
+        "group_id": "004611",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -590,6 +604,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004615",
+        "group_id": "004611",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -633,6 +648,7 @@ window.ALEVEL_QUESTIONS = [
 },
  {
         "id": "004616",
+        "group_id": "004616",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -671,6 +687,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004617",
+        "group_id": "004616",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -709,6 +726,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004618",
+        "group_id": "004616",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -747,6 +765,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004619",
+        "group_id": "004616",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -786,6 +805,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004620",
+        "group_id": "004616",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -824,6 +844,7 @@ window.ALEVEL_QUESTIONS = [
 },
  {
         "id": "004621",
+        "group_id": "004621",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -862,6 +883,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004622",
+        "group_id": "004621",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -903,6 +925,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004623",
+        "group_id": "004621",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -941,6 +964,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004624",
+        "group_id": "004621",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -981,6 +1005,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004625",
+        "group_id": "004621",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
@@ -1020,6 +1045,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004626",
+        "group_id": "004626",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1065,6 +1091,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004627",
+        "group_id": "004626",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1110,6 +1137,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004628",
+        "group_id": "004626",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1157,6 +1185,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004629",
+        "group_id": "004626",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1202,6 +1231,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004630",
+        "group_id": "004626",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1246,6 +1276,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004631",
+        "group_id": "004631",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1291,6 +1322,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004632",
+        "group_id": "004631",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1334,6 +1366,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004633",
+        "group_id": "004631",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1379,6 +1412,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004634",
+        "group_id": "004631",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1423,6 +1457,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004635",
+        "group_id": "004631",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1464,6 +1499,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004636",
+        "group_id": "004636",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1503,6 +1539,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004637",
+        "group_id": "004636",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1542,6 +1579,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004638",
+        "group_id": "004636",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1581,6 +1619,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004639",
+        "group_id": "004636",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1619,6 +1658,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004640",
+        "group_id": "004636",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1661,6 +1701,7 @@ window.ALEVEL_QUESTIONS = [
 }, 
 {
         "id": "004641",
+        "group_id": "004641",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1701,6 +1742,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004642",
+        "group_id": "004641",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1741,6 +1783,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004643",
+        "group_id": "004641",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1781,6 +1824,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004644",
+        "group_id": "004641",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1822,6 +1866,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004645",
+        "group_id": "004641",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1862,6 +1907,7 @@ window.ALEVEL_QUESTIONS = [
 },
  {
         "id": "004646",
+        "group_id": "004646",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1903,6 +1949,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004647",
+        "group_id": "004646",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1942,6 +1989,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004648",
+        "group_id": "004646",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -1983,6 +2031,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004649",
+        "group_id": "004646",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
@@ -2022,6 +2071,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
         "id": "004650",
+        "group_id": "004646",
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",

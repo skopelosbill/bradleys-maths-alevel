@@ -1,6 +1,7 @@
 window.ALEVEL_QUESTIONS = [
   {
     "id": "004351",
+    "group_id": "004351",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -43,6 +44,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004352",
+    "group_id": "004351",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -85,6 +87,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004353",
+    "group_id": "004351",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -127,6 +130,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004354",
+    "group_id": "004351",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -165,6 +169,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004355",
+    "group_id": "004351",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -205,6 +210,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004356",
+    "group_id": "004356",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -243,6 +249,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004357",
+    "group_id": "004356",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -282,6 +289,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004358",
+    "group_id": "004356",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -320,6 +328,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004359",
+    "group_id": "004356",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -358,6 +367,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004360",
+    "group_id": "004356",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -397,6 +407,7 @@ window.ALEVEL_QUESTIONS = [
   },
         {
                 "id": "004361",
+                "group_id": "004361",
                 "board": "WJEC",
                 "branch": "Pure",
                 "level": "AS",
@@ -434,6 +445,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004362",
+                "group_id": "004361",
                 "board": "WJEC",
                 "branch": "Pure",
                 "level": "AS",
@@ -471,6 +483,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004363",
+                "group_id": "004361",
                 "board": "WJEC",
                 "branch": "Pure",
                 "level": "AS",
@@ -508,6 +521,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004364",
+                "group_id": "004361",
                 "board": "WJEC",
                 "branch": "Pure",
                 "level": "AS",
@@ -545,6 +559,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004365",
+                "group_id": "004361",
                 "board": "WJEC",
                 "branch": "Pure",
                 "level": "AS",
@@ -582,6 +597,7 @@ window.ALEVEL_QUESTIONS = [
         },
   {
     "id": "004366",
+    "group_id": "004366",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -621,6 +637,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004367",
+    "group_id": "004366",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -661,6 +678,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004368",
+    "group_id": "004366",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -701,6 +719,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004369",
+    "group_id": "004366",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -742,6 +761,7 @@ window.ALEVEL_QUESTIONS = [
   },
   {
     "id": "004370",
+    "group_id": "004366",
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
@@ -782,6 +802,7 @@ window.ALEVEL_QUESTIONS = [
   },  
   {
   "id": "004371",
+  "group_id": "004371",
   "board": "WJEC",
   "branch": "Pure",
   "level": "AS",
@@ -823,6 +844,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004372",
+  "group_id": "004371",
   "board": "WJEC",
   "branch": "Pure",
   "level": "AS",
@@ -862,6 +884,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004373",
+  "group_id": "004371",
   "board": "WJEC",
   "branch": "Pure",
   "level": "AS",
@@ -902,6 +925,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004374",
+  "group_id": "004371",
   "board": "WJEC",
   "branch": "Pure",
   "level": "AS",
@@ -941,6 +965,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004375",
+  "group_id": "004371",
   "board": "WJEC",
   "branch": "Pure",
   "level": "AS",
@@ -982,6 +1007,7 @@ window.ALEVEL_QUESTIONS = [
 },      
      {
   "id": "004376",
+  "group_id": "004376",
   "board": "WJEC",
   "branch": "Pure",
   "level": "AS",
@@ -1022,6 +1048,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004377",
+  "group_id": "004376",
   "board": "WJEC",
   "branch": "Pure",
   "level": "AS",
@@ -1062,6 +1089,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004378",
+  "group_id": "004376",
   "board": "WJEC",
   "branch": "Pure",
   "level": "AS",
@@ -1102,6 +1130,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004379",
+  "group_id": "004376",
   "board": "WJEC",
   "branch": "Pure",
   "level": "AS",
@@ -1142,6 +1171,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004380",
+  "group_id": "004376",
   "board": "WJEC",
   "branch": "Pure",
   "level": "AS",
@@ -1181,6 +1211,7 @@ window.ALEVEL_QUESTIONS = [
 },
         {
   "id": "004381",
+  "group_id": "004381",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1220,6 +1251,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004382",
+  "group_id": "004381",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1260,6 +1292,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004383",
+  "group_id": "004381",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1300,6 +1333,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004384",
+  "group_id": "004381",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1340,6 +1374,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004385",
+  "group_id": "004381",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1380,6 +1415,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004386",
+  "group_id": "004386",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1418,6 +1454,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004387",
+  "group_id": "004386",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1457,6 +1494,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004388",
+  "group_id": "004386",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1495,6 +1533,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004389",
+  "group_id": "004386",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1533,6 +1572,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004390",
+  "group_id": "004386",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1571,6 +1611,7 @@ window.ALEVEL_QUESTIONS = [
 }, 
 {
   "id": "004391",
+  "group_id": "004391",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1610,6 +1651,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004392",
+  "group_id": "004391",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1648,6 +1690,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004393",
+  "group_id": "004391",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1686,6 +1729,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004394",
+  "group_id": "004391",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1724,6 +1768,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004395",
+  "group_id": "004391",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1762,6 +1807,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004396",
+  "group_id": "004396",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1801,6 +1847,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004397",
+  "group_id": "004396",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1840,6 +1887,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004398",
+  "group_id": "004396",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1879,6 +1927,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004399",
+  "group_id": "004396",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
@@ -1917,6 +1966,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
   "id": "004400",
+  "group_id": "004396",
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
