@@ -1033,11 +1033,11 @@ window.ALEVEL_QUESTIONS = [
         "Critical Value Comparison"
     ],
     "img": false,
-    "question": "A marine biologist investigates whether higher sea surface temperatures lead to higher coral growth rates. She measures mean summer sea surface temperature, $T\\text{ }^\\circ\\text{C}$, and annual skeletal growth, $G\\text{ mm}$, for a random sample of $10$ colonies.<br><br>The sample correlation coefficient is $r = 0.582$.<br><br>Critical values for $n = 10$ are:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>1-tail</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2.5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$1\\%$</th></tr><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>2-tail</th><th style='padding:4px; border:1px solid #ccc;'>$10\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2\\%$</th></tr></thead><tbody><tr><td style='padding:4px; border:1px solid #ccc;'>$r_{\\text{crit}}$</td><td style='padding:4px; border:1px solid #ccc;'>$0.5494$</td><td style='padding:4px; border:1px solid #ccc;'>$0.6319$</td><td style='padding:4px; border:1px solid #ccc;'>$0.7155$</td></tr></tbody></table>Determine the conclusion of the test at the $5\\%$ significance level.",
+    "question": "A marine biologist investigates whether higher sea surface temperatures lead to higher rates of coral bleaching on a reef. She measures mean summer sea surface temperature, $T\\text{ }^\\circ\\text{C}$, and the percentage of bleached coral, $B\\%$, for a random sample of $10$ reef sectors.<br><br>The sample correlation coefficient is $r = 0.582$.<br><br>Critical values for $n = 10$ are:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>1-tail</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2.5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$1\\%$</th></tr><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>2-tail</th><th style='padding:4px; border:1px solid #ccc;'>$10\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2\\%$</th></tr></thead><tbody><tr><td style='padding:4px; border:1px solid #ccc;'>$r_{\\text{crit}}$</td><td style='padding:4px; border:1px solid #ccc;'>$0.5494$</td><td style='padding:4px; border:1px solid #ccc;'>$0.6319$</td><td style='padding:4px; border:1px solid #ccc;'>$0.7155$</td></tr></tbody></table>Determine the conclusion of the test at the $5\\%$ significance level.",
     "steps": [
-        "<strong>Stating the Hypotheses:</strong><br><br>Let $\\rho$ represent the population correlation coefficient between temperature and growth rate.<br><br>The claim specifies that higher temperatures lead to higher growth rates, requiring a one-tailed test:\\begin{aligned} H_0&: \\rho = 0 \\cr H_1&: \\rho > 0 \\end{aligned}",
+        "<strong>Stating the Hypotheses:</strong><br><br>Let $\\rho$ represent the population correlation coefficient between sea temperature and coral bleaching.<br><br>The claim specifies that higher temperatures lead to higher bleaching rates, requiring a one-tailed test:\\begin{aligned} H_0&: \\rho = 0 \\cr H_1&: \\rho > 0 \\end{aligned}",
         "<strong>Identifying the Critical Value:</strong><br><br>For a sample size of $n = 10$ at the $5\\%$ level for a one-tailed test, read the critical value directly from the table:\\begin{aligned} r_{\\text{crit}} = 0.5494 \\end{aligned}The critical region is:\\begin{aligned} r > 0.5494 \\end{aligned}",
-        "<strong>Comparing and Concluding in Context:</strong><br><br>The sample correlation coefficient is $r = 0.582$.<br><br>Compare $r$ with the critical threshold:\\begin{aligned} 0.582 > 0.5494 \\end{aligned}Since $r$ lies inside the critical region, reject $H_0$.<br><br>There is sufficient evidence at the $5\\%$ significance level to support the claim that higher sea temperatures are associated with higher coral growth rates.",
+        "<strong>Comparing and Concluding in Context:</strong><br><br>The sample correlation coefficient is $r = 0.582$.<br><br>Compare $r$ with the critical threshold:\\begin{aligned} 0.582 > 0.5494 \\end{aligned}Since $r$ lies inside the critical region, reject $H_0$.<br><br>There is sufficient evidence at the $5\\%$ significance level to support the claim that higher sea temperatures are associated with higher rates of coral bleaching.",
         "Final Answer: Reject $H_0$ as $0.582 > 0.5494$; significant evidence of positive correlation"
     ],
     "pi_options": [
@@ -1046,8 +1046,8 @@ window.ALEVEL_QUESTIONS = [
             "feedback": "Using $0.6319$ compares the test statistic against the two-tailed $5\\%$ threshold (or one-tailed $2.5\\%$) rather than the one-tailed $5\\%$ threshold ($0.5494$)."
         },
         {
-            "ans": "Reject $H_0$ as $0.582 > 0.5494$; proves that warmer water causes corals to grow faster",
-            "feedback": "Correlation does not imply direct causation. A hypothesis test establishes statistical association, not absolute biological proof of causation."
+            "ans": "Reject $H_0$ as $0.582 > 0.5494$; proves that warmer water causes corals to bleach",
+            "feedback": "Correlation does not imply direct causation. A hypothesis test establishes statistical association, not absolute proof of causation."
         },
         {
             "ans": "Do not reject $H_0$ as $0.582 < 0.7155$; insufficient evidence of positive correlation",
@@ -1098,7 +1098,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Handling Negative Critical Regions",
-        "content": "Formula booklets and exam tables only display positive critical values. When testing a negative sample correlation $r$, remember to insert the negative sign: for a lower tail, the critical region is $r < -r_{\\text{crit}}$. Remember that $-0.528$ is *greater* (less extreme) than $-0.5760$."
+        "content": "Formula booklets and exam tables only display positive critical values. When testing a negative sample correlation $r$, remember to insert the negative sign: for a lower tail, the critical region is $r < -r_{\\text{crit}}$. Remember that $-0.528$ is <strong>greater</strong> (less extreme) than $-0.5760$."
     }
 },
 {
@@ -1138,7 +1138,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Full Marks in Hypothesis Conclusions",
-        "content": "To score full marks on hypothesis testing questions, your conclusion must include: (1) an explicit mathematical comparison ($0.841 > 0.7067$), (2) a clear decision regarding $H_0$ (*'reject $H_0$'*), and (3) an interpretation in context (*'increased revision improves marks'*) stating the significance level."
+        "content": "To score full marks on hypothesis testing questions, your conclusion must include: (1) an explicit mathematical comparison ($0.841 > 0.7067$), (2) a clear decision regarding $H_0$ (<em>>'reject $H_0$'</em>), and (3) an interpretation in context (<em>'increased revision improves marks'</em>) stating the significance level."
     }
 },
 {
@@ -1179,7 +1179,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Bivariate Normality",
-        "content": "Whenever an exam asks *'what assumption is needed to test $\\rho = 0$'*, the required response is *bivariate normality*. Both variables must be normally distributed, and their joint distribution must form a 3D bell shape whose scatter plot produces an elliptical contour."
+        "content": "Whenever an exam asks <em>'what assumption is needed to test $\\rho = 0$'</em>, the required response is <em>bivariate normality</em>. Both variables must be normally distributed, and their joint distribution must form a 3D bell shape whose scatter plot produces an elliptical contour."
     }
 },
 {
