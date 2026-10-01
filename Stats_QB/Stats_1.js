@@ -456,7 +456,7 @@ window.ALEVEL_QUESTIONS = [
         "Outliers"
     ],
     "img": false,
-    "question": "A quality auditor measures the resistance, $R$ ohms, of a sample of $20$ components. The data is coded using:$$y = \\dfrac{R - 100}{10}$$Summary statistics for the coded variable $y$ are:$$\\sum y = 36.0 \\qquad \\sum y^2 = 114.8$$<strong>(a)</strong> Calculate the mean and the standard deviation of $y$.<br><br><strong>(b)</strong> Hence determine the mean and the standard deviation of the original resistance measurements, $R$.<br><br><strong>(c)</strong> An outlier is defined as any value lying more than $2.5$ standard deviations from the mean. Determine whether a component with $R = 152\\text{ ohms}$ is an outlier.",
+    "question": "A quality auditor measures the resistance, $R$ ohms, of a sample of $20$ components. The data is coded using:$$y = \\dfrac{R - 100}{10}$$Summary statistics for the coded variable $y$ are:$$\\sum y = 36.0,\\text{ } \\sum y^2 = 114.8$$<strong>(a)</strong> Calculate the mean and the standard deviation of $y$.<br><br><strong>(b)</strong> Hence determine the mean and the standard deviation of the original resistance measurements, $R$.<br><br><strong>(c)</strong> An outlier is defined as any value lying more than $2.5$ standard deviations from the mean. Determine whether a component with $R = 152\\text{ ohms}$ is an outlier.",
     "steps": [
         "<strong>(a) Calculating Mean and Standard Deviation of $y$:</strong><br><br>Calculate the coded mean:\\begin{aligned} \\bar{y} &= \\dfrac{36.0}{20} \\cr &= 1.8 \\end{aligned}Calculate the coded standard deviation:\\begin{aligned} \\sigma_y &= \\sqrt{\\dfrac{114.8}{20} - 1.8^2} \\cr &= \\sqrt{5.74 - 3.24} \\cr &= \\sqrt{2.5} \\cr &\\approx 1.581 \\end{aligned}",
         "<strong>(b) Decoding Mean and Standard Deviation for $R$:</strong><br><br>Rearrange the coding equation for $R$:\\begin{aligned} R = 10y + 100 \\end{aligned}The mean is affected by both addition and multiplication:\\begin{aligned} \\bar{R} &= 10\\bar{y} + 100 \\cr &= 10(1.8) + 100 \\cr &= 118\\text{ ohms} \\end{aligned}The standard deviation is affected only by scale (multiplication), not by adding constants:\\begin{aligned} \\sigma_R &= 10\\sigma_y \\cr &= 10(1.581) \\cr &= 15.81\\text{ ohms} \\end{aligned}",
@@ -541,9 +541,9 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A tutor records the test marks, $x$, of a group of $25$ students. The mean mark is $\\bar{x} = 62.0$ and the standard deviation is $\\sigma = 8.0$.<br><br>Two recording errors are subsequently identified:<br>&bull; A score of $38$ was incorrectly entered and should have been $58$.<br>&bull; A score of $72$ was incorrectly entered and should have been $77$.<br><br><strong>(a)</strong> Calculate the correct sum of marks, $\\sum x_{\\text{new}}$.<br><br><strong>(b)</strong> Calculate the corrected mean mark.<br><br><strong>(c)</strong> Given that the original sum of squares was $\\sum x^2 = 97600$, calculate the corrected standard deviation to $3$ significant figures.",
     "steps": [
-        "<strong>(a) Calculating the Corrected Sum:</strong><br><br>Find the original sum of scores:\\begin{aligned} \\sum x_{\\text{orig}} &= 25 \\times 62.0 \\cr &= 1550 \\end{aligned}Subtract the incorrect values and add the correct values:\\begin{aligned} \\sum x_{\\text{new}} &= 1550 - 38 + 58 - 72 + 77 \\cr &= 1550 + 20 + 5 \\cr &= 1575 \\end{aligned}",
+        "<strong>(a) Calculating the Corrected Sum:</strong><br><br>Find the original sum of scores:\\begin{aligned} \\sum x_{\\text{orig}} &= 25 \\times 62.0 \\cr &= 1550 \\end{aligned}Subtract the incorrect values and add the correct values:\\begin{aligned} &\\sum x_{\\text{new}}\\cr & \\qquad= 1550 - 38 + 58 - 72 + 77 \\cr &\\qquad= 1550 + 20 + 5 \\cr &\\qquad= 1575 \\end{aligned}",
         "<strong>(b) Calculating the Corrected Mean:</strong><br><br>Divide the corrected sum by the number of students:\\begin{aligned} \\bar{x}_{\\text{new}} &= \\dfrac{1575}{25} \\cr &= 63.0 \\end{aligned}",
-        "<strong>(c) Calculating the Corrected Standard Deviation:</strong><br><br>Adjust the sum of squares by subtracting the squares of incorrect values and adding the squares of correct values:\\begin{aligned} \\sum x^2_{\\text{new}} &= 97600 - 38^2 + 58^2 - 72^2 + 77^2 \\cr &= 97600 - 1444 + 3364 - 5184 + 5929 \\cr &= 100265 \\end{aligned}Calculate the corrected standard deviation:\\begin{aligned} \\sigma_{\\text{new}} &= \\sqrt{\\dfrac{100265}{25} - 63.0^2} \\cr &= \\sqrt{4010.6 - 3969.0} \\cr &= \\sqrt{41.6} \\cr &\\approx 6.45 \\end{aligned}",
+        "<strong>(c) Calculating the Corrected Standard Deviation:</strong><br><br>Adjust the sum of squares by subtracting the squares of incorrect values and adding the squares of correct values:\\begin{aligned} \\sum x^2_{\\text{new}} &= 97600 - 38^2 + 58^2 \\cr & \\qquad - 72^2 + 77^2 \\cr &= 97600 - 1444 + 3364 \\cr & \\qquad - 5184 + 5929 \\cr &= 100265 \\end{aligned}Calculate the corrected standard deviation:\\begin{aligned} \\sigma_{\\text{new}} &= \\sqrt{\\dfrac{100265}{25} - 63.0^2} \\cr &= \\sqrt{4010.6 - 3969.0} \\cr &= \\sqrt{41.6} \\cr &\\approx 6.45 \\end{aligned}",
         "Final Answer: (a) $\\sum x_{\\text{new}} = 1575$, (b) $\\bar{x}_{\\text{new}} = 63.0$, (c) $\\sigma_{\\text{new}} = 6.45$"
     ],
     "pi_options": [
@@ -563,7 +563,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Updating Sums of Squares",
-        "content": "When updating $\\sum x^2$, never make the rookie mistake of squaring the difference: $(58 - 38)^2 = 400$. You must add the difference of the squares: $58^2 - 38^2 = 3364 - 1444 = 1920$. Also remember to substitute the *new* mean ($63.0$) into $\\sigma = \\sqrt{\\dfrac{\\sum x^2}{n} - \\bar{x}^2}$."
+        "content": "When updating $\\sum x^2$, never make the rookie mistake of squaring the difference: $(58 - 38)^2 = 400$. You must add the difference of the squares:\\begin{aligned}58^2 - 38^2 &= 3364 - 1444 \\cr &= 1920\\end{aligned} Also remember to substitute the *new* mean ($63.0$) into $\\sigma = \\sqrt{\\dfrac{\\sum x^2}{n} - \\bar{x}^2}$."
     }
 },
 {
@@ -605,6 +605,211 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Never Average Standard Deviations!",
         "content": "You can never combine standard deviations by calculating a weighted average of $\\sigma_A$ and $\\sigma_B$. Notice that the combined standard deviation ($3.61$) is actually larger than both individual standard deviations ($2.4$ and $3.0$). This happens because the difference between the two group means ($18$ vs $23$) introduces substantial additional spread into the combined distribution."
+    }
+},
+{
+    "id": "050016",
+    "group_id": "050016",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Binomial Distribution",
+    "subtopic": [
+        "Expectation and Variance",
+        "Cumulative Binomial",
+        "Modelling Assumptions"
+    ],
+    "img": false,
+    "question": "A basketball player is practising free throws. On each training day, she takes $25$ independent shots at the basket.<br><br>Every time she attempts a shot, the probability that she misses is $0.25$.<br><br>Assume that the number of misses on any given day may be modelled by a binomial distribution, $X \\sim B(25, 0.25)$.<br><br><strong>(a) (i)</strong> Find the mean number of misses in a day.<br><strong>(a) (ii)</strong> Find the variance of the number of misses in a day.<br><br><strong>(b) (i)</strong> Find the probability that, on a particular day, she misses exactly $8$ shots.<br><strong>(b) (ii)</strong> Find the probability that, on a particular day, she misses $6$ or more shots.<br><br><strong>(c) (i)</strong> The player trains for $4$ consecutive days. Calculate the probability that she misses at least $6$ shots on each of the $4$ days.<br><strong>(c) (ii)</strong> Explain why it may be unrealistic to assume a constant probability of $0.25$ of missing across all attempts over the $4$ days.",
+    "steps": [
+        "<strong>(a) Mean and Variance of $X$:</strong><br><br>For $X \\sim B(n, p)$ where $n = 25$ and $p = 0.25$:<br><br>Calculate the mean:\\begin{aligned} \\mu &= np \\cr &= 25 \\times 0.25 \\cr &= 6.25 \\end{aligned}Calculate the variance:\\begin{aligned} \\sigma^2 &= np(1 - p) \\cr &= 6.25 \\times 0.75 \\cr &= 4.6875 \\end{aligned}",
+        "<strong>(b) Calculating Single-Day Probabilities:</strong><br><br><strong>(i)</strong> Calculate the probability of exactly $8$ misses:\\begin{aligned} \\text{P}(X = 8) &= \\binom{25}{8}(0.25)^8(0.75)^{17} \\cr &\\approx 0.1173 \\cr &\\approx 0.117 \\end{aligned}<strong>(ii)</strong> Calculate the probability of $6$ or more misses using cumulative probabilities:\\begin{aligned} \\text{P}(X \\ge 6) &= 1 - \\text{P}(X \\le 5) \\cr &= 1 - 0.3783 \\cr &= 0.6217 \\end{aligned}",
+        "<strong>(c) Multi-Day Performance and Modelling Critique:</strong><br><br><strong>(i)</strong> Let $Y$ be the number of days she misses at least $6$ shots. Assuming independence between days, $Y \\sim B(4, 0.6217)$:<br><br>Calculate the probability that this occurs on all $4$ days:\\begin{aligned} \\text{P}(Y = 4) &= (0.6217)^4 \\cr &\\approx 0.1494 \\cr &\\approx 0.149 \\end{aligned}<strong>(ii)</strong> In reality, the probability of missing may change: physical fatigue towards the end of a session or over consecutive days could increase $p$, whereas practice and muscle memory could decrease $p$.",
+        "Final Answer: (a) $\\mu = 6.25$, $\\sigma^2 = 4.69$, (b) $0.117$ and $0.622$, (c) $0.149$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\mu = 6.25$, $\\sigma^2 = 2.16$, (b) $0.117$ and $0.622$, (c) $0.149$",
+            "feedback": "In part (a)(ii), $2.165$ is the standard deviation ($\\sqrt{4.6875}$). The variance is $\\sigma^2 = np(1 - p) = 4.6875$."
+        },
+        {
+            "ans": "(a) $\\mu = 6.25$, $\\sigma^2 = 4.69$, (b) $0.117$ and $0.378$, (c) $0.020$",
+            "feedback": "In part (b)(ii), $0.3783$ is $\\text{P}(X \\le 5)$. For $6$ or more misses, you must evaluate $1 - \\text{P}(X \\le 5) = 0.6217$."
+        },
+        {
+            "ans": "(a) $\\mu = 6.25$, $\\sigma^2 = 4.69$, (b) $0.117$ and $0.622$, (c) $0.598$",
+            "feedback": "In part (c)(i), multiplying by $4$ ($4 \\times 0.1494$) is incorrect. The events on separate days are independent, so probabilities multiply: $(0.6217)^4 \\approx 0.149$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Critiquing Binomial Models",
+        "content": "When asked why a binomial assumption may fail in sports contexts, focus on the parameters $n$ and $p$. The probability $p$ is rarely constant: fatigue causes success rates to decline, while warm-up or learning increases success. Additionally, consecutive shots may not be independent if confidence affects subsequent performance."
+    }
+},
+{
+    "id": "050017",
+    "group_id": "050016",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Binomial Distribution",
+    "subtopic": [
+        "Parameter Estimation",
+        "Binomial Formula",
+        "Interval Probabilities"
+    ],
+    "img": false,
+    "question": "A discrete random variable $X$ follows a binomial distribution $X \\sim B(n, p)$.<br><br>The mean of $X$ is $7.2$ and the variance of $X$ is $4.32$.<br><br><strong>(a)</strong> Determine the values of the parameters $n$ and $p$.<br><br><strong>(b)</strong> Calculate $\\text{P}(X = 8)$, giving your answer to $4$ decimal places.<br><br><strong>(c)</strong> Calculate the probability that $X$ lies within one standard deviation of the mean, i.e. find $\\text{P}(\\mu - \\sigma < X < \\mu + \\sigma)$.",
+    "steps": [
+        "<strong>(a) Finding the Parameters $n$ and $p$:</strong><br><br>Set up the standard formulas for mean and variance:\\begin{aligned} np &= 7.2 \\cr np(1 - p) &= 4.32 \\end{aligned}Substitute $np = 7.2$ into the variance formula:\\begin{aligned} 7.2(1 - p) &= 4.32 \\cr 1 - p &= 0.6 \\cr p &= 0.4 \\end{aligned}Substitute $p = 0.4$ back to solve for $n$:\\begin{aligned} n(0.4) &= 7.2 \\cr n &= 18 \\end{aligned}",
+        "<strong>(b) Calculating $\\text{P}(X = 8)$:</strong><br><br>Using $X \\sim B(18, 0.4)$:\\begin{aligned} \\text{P}(X = 8) &= \\binom{18}{8}(0.4)^8(0.6)^{10} \\cr &= 43758 \\times (0.00065536) \\cr &\\qquad \\times (0.0060466) \\cr &\\approx 0.1734 \\end{aligned}",
+        "<strong>(c) Calculating $\\text{P}(\\mu - \\sigma < X < \\mu + \\sigma)$:</strong><br><br>Calculate the standard deviation:\\begin{aligned} \\sigma &= \\sqrt{4.32} \\cr &\\approx 2.078 \\end{aligned}Find the interval limits:\\begin{aligned} \\mu - \\sigma &= 7.2 - 2.078 \\cr &= 5.122 \\cr \\mu + \\sigma &= 7.2 + 2.078 \\cr &= 9.278 \\end{aligned}Since $X$ is a discrete integer variable, $5.122 < X < 9.278$ corresponds to $6 \\le X \\le 9$:\\begin{aligned}& \\text{P}(6 \\le X \\le 9) \\cr &\\quad = \\text{P}(X \\le 9) - \\text{P}(X \\le 5) \\cr &\\quad = 0.8653 - 0.2088 \\cr &\\quad = 0.6565 \\end{aligned}",
+        "Final Answer: (a) $n = 18$, $p = 0.4$, (b) $0.1734$, (c) $0.6565$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $n = 18$, $p = 0.6$, (b) $0.1734$, (c) $0.6565$",
+            "feedback": "In part (a), $1 - p = 0.6$, which means $p = 1 - 0.6 = 0.4$, not $0.6$."
+        },
+        {
+            "ans": "(a) $n = 18$, $p = 0.4$, (b) $0.1734$, (c) $0.7845$",
+            "feedback": "In part (c), the discrete interval strictly between $5.122$ and $9.278$ includes integers $6, 7, 8, 9$. Including $X = 5$ is incorrect because $5 < 5.122$."
+        },
+        {
+            "ans": "(a) $n = 12$, $p = 0.6$, (b) $0.2131$, (c) $0.6565$",
+            "feedback": "In part (a), solving $n(0.6) = 7.2$ resulted from confusing $p$ with $1 - p$. The correct parameters are $p = 0.4$ and $n = 18$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Dividing Variance by Mean",
+        "content": "To solve for $n$ and $p$ from the mean and variance, divide the variance by the mean: $\\dfrac{np(1-p)}{np} = 1 - p$. This eliminates $n$ immediately and yields $1 - p$, avoiding algebraic substitution."
+    }
+},
+{
+    "id": "050018",
+    "group_id": "050016",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Binomial Distribution",
+    "subtopic": [
+        "Two-Stage Testing",
+        "Quality Control",
+        "Conditional Probability"
+    ],
+    "img": false,
+    "question": "A manufacturing process produces light sensors, of which $8\\%$ are defective. A quality-control inspector tests a random sample of $20$ sensors from a large batch.<br><br>Let $X$ denote the number of defective sensors in the sample.<br><br><strong>(a)</strong> State the distribution of $X$, specifying any necessary parameters.<br><br><strong>(b)</strong> Find the probability that the sample contains:<br>&bull; no defective sensors,<br>&bull; at least $3$ defective sensors.<br><br><strong>(c)</strong> A two-stage inspection protocol is used:<br>&bull; The batch is accepted immediately if there is at most $1$ defective sensor in the first sample of $20$.<br>&bull; The batch is rejected immediately if there are $4$ or more defective sensors in the first sample of $20$.<br>&bull; If there are $2$ or $3$ defective sensors, a second sample of $20$ sensors is tested. The batch is accepted if and only if the second sample contains at most $1$ defective sensor.<br><br>Calculate the probability that the batch is accepted.",
+    "steps": [
+        "<strong>(a) Identifying the Distribution:</strong><br><br>Each sensor has a fixed probability of defect $p = 0.08$, sensors are independent, and there is a fixed sample size $n = 20$:\\begin{aligned} X \\sim B(20, 0.08) \\end{aligned}",
+        "<strong>(b) Calculating Basic Probabilities:</strong><br><br>Calculate the probability of zero defects:\\begin{aligned} \\text{P}(X = 0) &= (0.92)^{20} \\cr &\\approx 0.1887 \\end{aligned}Calculate the probability of at least $3$ defects:\\begin{aligned} \\text{P}(X \\ge 3) &= 1 - \\text{P}(X \\le 2) \\cr &= 1 - 0.7879 \\cr &= 0.2121 \\end{aligned}",
+        "<strong>(c) Calculating Overall Acceptance Probability:</strong><br><br>Find the probability of immediate acceptance in sample 1 ($X \\le 1$):\\begin{aligned} \\text{P}(X \\le 1) &= \\text{P}(X = 0) + \\text{P}(X = 1) \\cr &= 0.1887 + 0.3282 \\cr &= 0.5169 \\end{aligned}Find the probability of requiring a second sample ($X = 2$ or $X = 3$):\\begin{aligned} \\text{P}(2 \\le X \\le 3) &= \\text{P}(X \\le 3) - \\text{P}(X \\le 1) \\cr &= 0.9294 - 0.5169 \\cr &= 0.4125 \\end{aligned}A second sample is tested independently with identical acceptance probability $\\text{P}(Y \\le 1) = 0.5169$.<br><br>Combine the probabilities of both paths to acceptance:\\begin{aligned}& \\text{P}(\\text{Accepted}) \\cr &\\quad = 0.5169 + (0.4125 \\times 0.5169) \\cr &\\quad = 0.5169 + 0.2132 \\cr &\\quad = 0.7301 \\end{aligned}",
+        "Final Answer: (a) $X \\sim B(20, 0.08)$, (b) $0.1887$ and $0.2121$, (c) $0.7301$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $X \\sim B(20, 0.08)$, (b) $0.1887$ and $0.2121$, (c) $0.5169$",
+            "feedback": "In part (c), $0.5169$ is only the probability of accepting at the first stage. You must also include the probability of re-testing and then passing the second inspection."
+        },
+        {
+            "ans": "(a) $X \\sim B(20, 0.08)$, (b) $0.1887$ and $0.7879$, (c) $0.7301$",
+            "feedback": "In part (b), $0.7879$ is $\\text{P}(X \\le 2)$. For at least $3$ defects, you must subtract this from $1$, giving $1 - 0.7879 = 0.2121$."
+        },
+        {
+            "ans": "(a) $X \\sim B(20, 0.08)$, (b) $0.1887$ and $0.2121$, (c) $0.9294$",
+            "feedback": "In part (c), $0.9294$ is $\\text{P}(X \\le 3)$ from the first stage, which assumes that all batches requiring a re-test are automatically accepted."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Structuring Multi-Stage Acceptance Models",
+        "content": "In multi-stage quality control, visualize the process as a probability tree with two distinct branches to success: $\\text{P}(\\text{Accept Stage 1}) + \\text{P}(\\text{Stage 1 Retest}) \\times \\text{P}(\\text{Accept Stage 2})$. Remember that each stage uses an independent sample drawn from the same overall population."
+    }
+},
+{
+    "id": "050019",
+    "group_id": "050016",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Binomial Distribution",
+    "subtopic": [
+        "Hypothesis Testing",
+        "Critical Values",
+        "Actual Significance Level"
+    ],
+    "img": false,
+    "question": "A seed supplier claims that $80\\%$ of its wildflower seeds germinate. A horticulturalist suspects that the supplier's germination rate is lower than claimed.<br><br>The horticulturalist plants a random sample of $30$ seeds and observes that $19$ germinate.<br><br><strong>(a)</strong> Stating your hypotheses clearly, carry out a hypothesis test at the $5\\%$ significance level.<br><br><strong>(b)</strong> State the critical value for this test.<br><br><strong>(c)</strong> State the actual significance level of the test.",
+    "steps": [
+        "<strong>(a) Conducting the Hypothesis Test:</strong><br><br>Let $p$ be the population proportion of seeds that germinate, and let $X$ be the number that germinate in a sample of $30$:\\begin{aligned} H_0&: p = 0.8 \\cr H_1&: p < 0.8 \\end{aligned}Under the null hypothesis, $X \\sim B(30, 0.8)$.<br><br>Calculate the $p$-value for the observed result $x = 19$:\\begin{aligned} \\text{P}(X \\le 19) &= 0.0341 \\end{aligned}Compare the $p$-value to the $5\\%$ significance level:<br><br>Since $0.0341 < 0.05$, there is sufficient evidence to reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level to support the horticulturalist's suspicion that the true germination rate is less than $80\\%$.",
+        "<strong>(b) Finding the Critical Value:</strong><br><br>Find the largest integer $c$ such that $\\text{P}(X \\le c) \\le 0.05$ under $H_0$:\\begin{aligned} \\text{P}(X \\le 19) &= 0.0341 \\cr \\text{P}(X \\le 20) &= 0.0671 \\end{aligned}Since $\\text{P}(X \\le 19) \\le 0.05$ while $\\text{P}(X \\le 20) > 0.05$, the critical region is $X \\le 19$.<br><br>The critical value is $19$.",
+        "<strong>(c) Finding the Actual Significance Level:</strong><br><br>The actual significance level is the probability of incorrectly rejecting $H_0$, which is the probability of landing in the critical region when $H_0$ is true:\\begin{aligned} \\text{Actual significance} &= \\text{P}(X \\le 19) \\cr &= 0.0341 \\text{ (or } 3.41\\%\\text{)} \\end{aligned}",
+        "Final Answer: (a) Reject $H_0$ as $0.0341 < 0.05$, (b) $19$, (c) $0.0341$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Accept $H_0$ as $0.0341 < 0.05$, (b) $19$, (c) $0.0341$",
+            "feedback": "When the calculated probability ($0.0341$) is strictly less than the significance level ($0.05$), the observed result is statistically significant and $H_0$ must be rejected, not accepted."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $0.0341 < 0.05$, (b) $20$, (c) $0.0671$",
+            "feedback": "In part (b), $X = 20$ has a cumulative probability of $0.0671$, which exceeds the $5\\%$ threshold. The critical value must stay at or below $5\\%$, so it is $19$."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $0.0341 < 0.05$, (b) $19$, (c) $0.0500$",
+            "feedback": "In part (c), $0.05$ is the nominal significance level. Because the binomial distribution is discrete, the actual probability of falling into the critical region is $0.0341$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Nominal vs Actual Significance Level",
+        "content": "Because the binomial distribution is discrete, it is usually impossible to find a critical region whose probability equals exactly $5\\%$. The nominal significance level is the target ceiling ($5\\%$), whereas the actual significance level is the true probability of landing in the critical region under $H_0$ ($3.41\\%$)."
+    }
+},
+{
+    "id": "050020",
+    "group_id": "050016",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Binomial Distribution",
+    "subtopic": [
+        "Normal Approximation",
+        "Continuity Correction",
+        "Standardisation"
+    ],
+    "img": false,
+    "question": "A postal depot inspects a random sample of $400$ parcels. Historical data indicates that $6\\%$ of parcels have unreadable barcodes.<br><br>Let $X$ denote the number of parcels in the sample with unreadable barcodes.<br><br><strong>(a)</strong> State the exact distribution of $X$, and calculate its mean and variance.<br><br><strong>(b)</strong> Explain why a Normal distribution, $Y \\sim N(\\mu, \\sigma^2)$, can approximate $X$, and state the parameters $\\mu$ and $\\sigma^2$.<br><br><strong>(c)</strong> Using the Normal approximation with a continuity correction, calculate an estimate for $\\text{P}(20 \\le X \\le 30)$.",
+    "steps": [
+        "<strong>(a) Exact Distribution, Mean, and Variance:</strong><br><br>The exact model is binomial with $n = 400$ and $p = 0.06$:\\begin{aligned} X \\sim B(400, 0.06) \\end{aligned}Calculate the mean:\\begin{aligned} \\mu &= np \\cr &= 400 \\times 0.06 \\cr &= 24 \\end{aligned}Calculate the variance:\\begin{aligned} \\sigma^2 &= np(1 - p) \\cr &= 24 \\times 0.94 \\cr &= 22.56 \\end{aligned}",
+        "<strong>(b) Justifying the Normal Approximation:</strong><br><br>A Normal approximation is valid because $n$ is large ($n = 400$) and neither $np$ nor $nq$ is too small:\\begin{aligned} np &= 24 > 5 \\cr n(1 - p) &= 376 > 5 \\end{aligned}Therefore, $X$ is approximated by $Y \\sim N(24, 22.56)$.",
+        "<strong>(c) Applying Continuity Correction and Standardising:</strong><br><br>Applying a continuity correction to the inclusive discrete interval $20 \\le X \\le 30$ gives the continuous interval $19.5 \\le Y \\le 30.5$.<br><br>Standardise both endpoints using $\\mu = 24$ and $\\sigma = \\sqrt{22.56} \\approx 4.7497$:\\begin{aligned} z_1 &= \\dfrac{19.5 - 24}{4.7497} \\cr &\\approx -0.947 \\end{aligned}\\begin{aligned} z_2 &= \\dfrac{30.5 - 24}{4.7497} \\cr &\\approx 1.368 \\end{aligned}Evaluate the probability using standard Normal tables:\\begin{aligned}& \\text{P}(19.5 \\le Y \\le 30.5) \\cr &\\quad = \\Phi(1.368) - \\Phi(-0.947) \\cr &\\quad = 0.9143 - (1 - 0.8282) \\cr &\\quad = 0.9143 - 0.1718 \\cr &\\quad = 0.7425 \\end{aligned}",
+        "Final Answer: (a) $\\mu = 24$, $\\sigma^2 = 22.56$, (b) $Y \\sim N(24, 22.56)$, (c) $0.7425$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\mu = 24$, $\\sigma^2 = 22.56$, (b) $Y \\sim N(24, 22.56)$, (c) $0.6974$",
+            "feedback": "In part (c), forgetting the continuity correction and standardising $20$ and $30$ directly gives $z = -0.842$ and $z = 1.263$, which results in $0.6974$. You must widen the boundaries to $19.5$ and $30.5$."
+        },
+        {
+            "ans": "(a) $\\mu = 24$, $\\sigma^2 = 4.75$, (b) $Y \\sim N(24, 4.75)$, (c) $0.7425$",
+            "feedback": "In part (a), $4.75$ is the standard deviation ($\\sqrt{22.56}$). The variance is $\\sigma^2 = 22.56$."
+        },
+        {
+            "ans": "(a) $\\mu = 24$, $\\sigma^2 = 22.56$, (b) $Y \\sim N(24, 22.56)$, (c) $0.7877$",
+            "feedback": "In part (c), applying the continuity correction in the wrong direction (narrowing the interval to $20.5 \\le Y \\le 29.5$) gives an incorrect probability."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Continuity Correction Rule",
+        "content": "When moving from discrete $X$ to continuous $Y$, each integer $k$ is represented by the interval $[k - 0.5, k + 0.5]$. For an inclusive range $a \\le X \\le b$, always expand both ends outward to cover the full blocks: $a - 0.5 \\le Y \\le b + 0.5$."
     }
 }
 ];
