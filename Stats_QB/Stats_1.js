@@ -707,7 +707,7 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
         "<strong>(a) Identifying the Distribution:</strong><br><br>Each sensor has a fixed probability of defect $p = 0.08$, sensors are independent, and there is a fixed sample size $n = 20$:\\begin{aligned} X \\sim B(20, 0.08) \\end{aligned}",
         "<strong>(b) Calculating Basic Probabilities:</strong><br><br>Calculate the probability of zero defects:\\begin{aligned} \\text{P}(X = 0) &= (0.92)^{20} \\cr &\\approx 0.1887 \\end{aligned}Calculate the probability of at least $3$ defects:\\begin{aligned} \\text{P}(X \\ge 3) &= 1 - \\text{P}(X \\le 2) \\cr &= 1 - 0.7879 \\cr &= 0.2121 \\end{aligned}",
-        "<strong>(c) Calculating Overall Acceptance Probability:</strong><br><br>Find the probability of immediate acceptance in sample 1 ($X \\le 1$):\\begin{aligned} \\text{P}(X \\le 1) &= \\text{P}(X = 0) + \\text{P}(X = 1) \\cr &= 0.1887 + 0.3282 \\cr &= 0.5169 \\end{aligned}Find the probability of requiring a second sample ($X = 2$ or $X = 3$):\\begin{aligned} \\text{P}(2 \\le X \\le 3) &= \\text{P}(X \\le 3) - \\text{P}(X \\le 1) \\cr &= 0.9294 - 0.5169 \\cr &= 0.4125 \\end{aligned}A second sample is tested independently with identical acceptance probability $\\text{P}(Y \\le 1) = 0.5169$.<br><br>Combine the probabilities of both paths to acceptance:\\begin{aligned}& \\text{P}(\\text{Accepted}) \\cr &\\quad = 0.5169 + (0.4125 \\times 0.5169) \\cr &\\quad = 0.5169 + 0.2132 \\cr &\\quad = 0.7301 \\end{aligned}",
+        "<strong>(c) Calculating Overall Acceptance Probability:</strong><br><br>Find the probability of immediate acceptance in sample 1 ($X \\le 1$):\\begin{aligned} \\text{P}(X \\le 1) &= \\text{P}(X = 0) + \\text{P}(X = 1) \\cr &= 0.1887 + 0.3282 \\cr &= 0.5169 \\end{aligned}Find the probability of requiring a second sample ($X = 2$ or $X = 3$):\\begin{aligned} \\text{P}(2 \\le X \\le 3) &= \\text{P}(X \\le 3) \\cr & \\quad - \\text{P}(X \\le 1) \\cr &= 0.9294 - 0.5169 \\cr &= 0.4125 \\end{aligned}A second sample is tested independently with identical acceptance probability $\\text{P}(Y \\le 1) = 0.5169$.<br><br>Combine the probabilities of both paths to acceptance:\\begin{aligned}& \\text{P}(\\text{Accepted}) \\cr &\\quad = 0.5169 + (0.4125 \\times 0.5169) \\cr &\\quad = 0.5169 + 0.2132 \\cr &\\quad = 0.7301 \\end{aligned}",
         "Final Answer: (a) $X \\sim B(20, 0.08)$, (b) $0.1887$ and $0.2121$, (c) $0.7301$"
     ],
     "pi_options": [
@@ -810,6 +810,213 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Continuity Correction Rule",
         "content": "When moving from discrete $X$ to continuous $Y$, each integer $k$ is represented by the interval $[k - 0.5, k + 0.5]$. For an inclusive range $a \\le X \\le b$, always expand both ends outward to cover the full blocks: $a - 0.5 \\le Y \\le b + 0.5$."
+    }
+},
+{
+    "id": "050021",
+    "group_id": "050021",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Contingency Tables",
+        "Mutually Exclusive Events",
+        "Pigeonhole Principle"
+    ],
+    "img": false,
+    "question": "A survey records symptoms reported by $150$ undergraduate students across three faculties:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>Symptom</th><th style='padding:4px; border:1px solid #ccc;'>Arts</th><th style='padding:4px; border:1px solid #ccc;'>Sci</th><th style='padding:4px; border:1px solid #ccc;'>Eng</th></tr></thead><tbody><tr><td style='padding:4px; border:1px solid #ccc;'>Eye strain</td><td style='padding:4px; border:1px solid #ccc;'>$22$</td><td style='padding:4px; border:1px solid #ccc;'>$18$</td><td style='padding:4px; border:1px solid #ccc;'>$15$</td></tr><tr><td style='padding:4px; border:1px solid #ccc;'>Neck pain</td><td style='padding:4px; border:1px solid #ccc;'>$42$</td><td style='padding:4px; border:1px solid #ccc;'>$24$</td><td style='padding:4px; border:1px solid #ccc;'>$16$</td></tr><tr><td style='padding:4px; border:1px solid #ccc;'>Sleep disruption</td><td style='padding:4px; border:1px solid #ccc;'>$35$</td><td style='padding:4px; border:1px solid #ccc;'>$25$</td><td style='padding:4px; border:1px solid #ccc;'>$12$</td></tr><tr><td style='padding:4px; border:1px solid #ccc;'>Wrist fatigue</td><td style='padding:4px; border:1px solid #ccc;'>$15$</td><td style='padding:4px; border:1px solid #ccc;'>$10$</td><td style='padding:4px; border:1px solid #ccc;'>$8$</td></tr></tbody></table>There are $60$ Arts, $50$ Science, and $40$ Engineering students.<br><br><strong>(a)</strong> Find the probability that a randomly chosen student:<br><strong>(i)</strong> experiences eye strain and studies Engineering;<br><strong>(ii)</strong> experiences wrist fatigue;<br><strong>(iii)</strong> experiences neck pain, given that they study Arts.<br><br><strong>(b)</strong> For Arts students, explain why eye strain and neck pain are <strong>not</strong> mutually exclusive.",
+    "steps": [
+        "<strong>(a) (i) Probability of Eye Strain and Engineering:</strong><br><br>From the table, $15$ Engineering students reported eye strain out of the total $150$ students:\\begin{aligned} \\text{P}(E \\cap \\text{Eng}) &= \\dfrac{15}{150} \\cr &= 0.1 \\end{aligned}",
+        "<strong>(a) (ii) Probability of Wrist Fatigue:</strong><br><br>Sum the students reporting wrist fatigue across all three faculties:\\begin{aligned} \\text{Total} &= 15 + 10 + 8 \\cr &= 33 \\end{aligned}Calculate the probability across the entire cohort:\\begin{aligned} \\text{P}(W) &= \\dfrac{33}{150} \\cr &= 0.22 \\end{aligned}",
+        "<strong>(a) (iii) Conditional Probability for Arts Students:</strong><br><br>Restrict the sample space to the $60$ Arts students.<br><br>Of these $60$ students, $42$ reported neck pain:\\begin{aligned} \\text{P}(N \\mid A) &= \\dfrac{42}{60} \\cr &= 0.7 \\end{aligned}",
+        "<strong>(b) Explaining Non-Mutual Exclusivity:</strong><br><br>Consider the $60$ Arts students:<br><br>Number reporting eye strain: $22$<br><br>Number reporting neck pain: $42$<br><br>Sum of the two symptom counts:\\begin{aligned} 22 + 42 = 64 \\end{aligned}Since $64 > 60$, by the pigeonhole principle at least $4$ Arts students must have experienced both symptoms.<br><br>Because $\\text{P}(E \\cap N \\mid A) \\neq 0$, the two events cannot be mutually exclusive.",
+        "Final Answer: (a) (i) $0.1$, (ii) $0.22$, (iii) $0.7$, (b) Not mutually exclusive because $22 + 42 = 64 > 60$, so at least $4$ students have both"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) (i) $0.375$, (ii) $0.22$, (iii) $0.7$, (b) Not mutually exclusive because $22 + 42 = 64 > 60$, so at least $4$ students have both",
+            "feedback": "In part (a)(i), dividing $15$ by the $40$ Engineering students evaluates the conditional probability $\\text{P}(E \\mid \\text{Eng})$. The joint probability requires dividing by the entire sample of $150$ students."
+        },
+        {
+            "ans": "(a) (i) $0.1$, (ii) $0.22$, (iii) $0.28$, (b) Not mutually exclusive because $22 + 42 = 64 > 60$, so at least $4$ students have both",
+            "feedback": "In part (a)(iii), dividing $42$ by $150$ finds the joint probability $\\text{P}(N \\cap A)$. The condition *'given that they study Arts'* restricts the denominator to the $60$ Arts students."
+        },
+        {
+            "ans": "(a) (i) $0.1$, (ii) $0.22$, (iii) $0.7$, (b) Mutually exclusive because they are two completely separate medical symptoms",
+            "feedback": "In part (b), medical distinction does not imply mathematical mutual exclusivity. A student can suffer from multiple symptoms simultaneously, and the numbers ($22 + 42 = 64 > 60$) prove overlap exists."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Sum Exceeding the Total",
+        "content": "Whenever you need to prove two conditions in a category are not mutually exclusive, simply add their counts. If the sum ($22 + 42 = 64$) exceeds the group total ($60$), their intersection cannot be empty. At least $4$ people must experience both."
+    }
+},
+{
+    "id": "050022",
+    "group_id": "050021",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Two-Way Tables",
+        "Statistical Independence",
+        "Multiplication Rule"
+    ],
+    "img": false,
+    "question": "A logistics firm monitors the arrival punctuality of $200$ weekday deliveries:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:5px; border:1px solid #ccc;'>Zone</th><th style='padding:5px; border:1px solid #ccc;'>On time</th><th style='padding:5px; border:1px solid #ccc;'>Late</th><th style='padding:5px; border:1px solid #ccc;'>Total</th></tr></thead><tbody><tr><td style='padding:5px; border:1px solid #ccc;'>Urban</td><td style='padding:5px; border:1px solid #ccc;'>$84$</td><td style='padding:5px; border:1px solid #ccc;'>$36$</td><td style='padding:5px; border:1px solid #ccc;'>$120$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>Rural</td><td style='padding:5px; border:1px solid #ccc;'>$56$</td><td style='padding:5px; border:1px solid #ccc;'>$24$</td><td style='padding:5px; border:1px solid #ccc;'>$80$</td></tr><tr style='border-top:2px solid #333;'><td style='padding:5px; border:1px solid #ccc;'>Total</td><td style='padding:5px; border:1px solid #ccc;'>$140$</td><td style='padding:5px; border:1px solid #ccc;'>$60$</td><td style='padding:5px; border:1px solid #ccc;'>$200$</td></tr></tbody></table><strong>(a)</strong> Find the probability that a randomly selected delivery:<br><strong>(i)</strong> was in an urban zone and was late;<br><strong>(ii)</strong> was on time, given that it was in a rural zone.<br><br><strong>(b)</strong> Determine, with mathematical justification, whether arriving on time is statistically independent of being in an urban zone.",
+    "steps": [
+        "<strong>(a) (i) Joint Probability of Urban and Late:</strong><br><br>Read the intersection of Urban and Late from the table:\\begin{aligned} \\text{P}(U \\cap L) &= \\dfrac{36}{200} \\cr &= 0.18 \\end{aligned}",
+        "<strong>(a) (ii) Conditional Probability of On Time Given Rural:</strong><br><br>Restrict the sample space to the $80$ Rural deliveries:\\begin{aligned} \\text{P}(T \\mid R) &= \\dfrac{56}{80} \\cr &= 0.7 \\end{aligned}",
+        "<strong>(b) Testing for Statistical Independence:</strong><br><br>Two events $T$ and $U$ are independent if and only if $\\text{P}(T \\cap U) = \\text{P}(T) \\times \\text{P}(U)$ (or equivalently $\\text{P}(T \\mid U) = \\text{P}(T)$).<br><br>Calculate the overall probability of being on time:\\begin{aligned} \\text{P}(T) &= \\dfrac{140}{200} \\cr &= 0.7 \\end{aligned}Calculate the conditional probability of being on time given an urban zone:\\begin{aligned} \\text{P}(T \\mid U) &= \\dfrac{84}{120} \\cr &= 0.7 \\end{aligned}Alternatively, compare the joint product:\\begin{aligned} \\text{P}(T) \\times \\text{P}(U) &= 0.7 \\times 0.6 \\cr &= 0.42 \\end{aligned}From the table, the actual joint probability is:\\begin{aligned} \\text{P}(T \\cap U) &= \\dfrac{84}{200} \\cr &= 0.42 \\end{aligned}Since $\\text{P}(T \\cap U) = \\text{P}(T) \\times \\text{P}(U)$, the events are statistically independent.",
+        "Final Answer: (a) (i) $0.18$, (ii) $0.7$, (b) Statistically independent as $\\text{P}(T \\cap U) = \\text{P}(T)\\text{P}(U) = 0.42$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) (i) $0.18$, (ii) $0.7$, (b) Not independent because $84 \\neq 56$",
+            "feedback": "In part (b), comparing absolute frequencies ($84$ vs $56$) is incorrect. Independence depends on proportions: both groups achieve identical on-time rates of $70\\%$."
+        },
+        {
+            "ans": "(a) (i) $0.30$, (ii) $0.7$, (b) Statistically independent as $\\text{P}(T \\cap U) = \\text{P}(T)\\text{P}(U) = 0.42$",
+            "feedback": "In part (a)(i), $36 / 120 = 0.30$ is the conditional probability $\\text{P}(L \\mid U)$. The question asks for the joint probability $\\text{P}(U \\cap L) = 36 / 200 = 0.18$."
+        },
+        {
+            "ans": "(a) (i) $0.18$, (ii) $0.28$, (b) Statistically independent as $\\text{P}(T \\cap U) = \\text{P}(T)\\text{P}(U) = 0.42$",
+            "feedback": "In part (a)(ii), dividing $56$ by the total $200$ gives $\\text{P}(T \\cap R)$. The condition *'given that it was in a rural zone'* requires dividing by the $80$ rural deliveries."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: The Fastest Independence Check",
+        "content": "The quickest test for independence in a two-way table is checking whether conditional probabilities match the marginal probability: $\\text{P}(T \\mid U) = \\text{P}(T)$. Here, $84/120 = 0.7$ and $140/200 = 0.7$. If the success rate is identical across rows, independence holds instantly."
+    }
+},
+{
+    "id": "050023",
+    "group_id": "050021",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Addition Rule",
+        "Complementary Events",
+        "Conditional Formula"
+    ],
+    "img": false,
+    "question": "Two events, $A$ and $B$, in a sample space satisfy:$$\\text{P}(A) = 0.55 \\qquad \\text{P}(B) = 0.40 \\qquad \\text{P}(A \\cup B) = 0.73$$<strong>(a)</strong> Calculate $\\text{P}(A \\cap B)$.<br><br><strong>(b)</strong> Calculate $\\text{P}(A' \\cap B')$.<br><br><strong>(c)</strong> Calculate the conditional probability $\\text{P}(B \\mid A')$.<br><br><strong>(d)</strong> State, with a reason, whether events $A$ and $B$ are mutually exclusive.",
+    "steps": [
+        "<strong>(a) Calculating $\\text{P}(A \\cap B)$:</strong><br><br>Rearrange the addition rule for probability:\\begin{aligned}& \\text{P}(A \\cap B) \\cr &\\quad = \\text{P}(A) + \\text{P}(B) - \\text{P}(A \\cup B) \\cr &\\quad = 0.55 + 0.40 - 0.73 \\cr &\\quad = 0.22 \\end{aligned}",
+        "<strong>(b) Calculating $\\text{P}(A' \\cap B')$:</strong><br><br>By De Morgan's laws, $A' \\cap B' = (A \\cup B)'$:\\begin{aligned} \\text{P}(A' \\cap B') &= 1 - \\text{P}(A \\cup B) \\cr &= 1 - 0.73 \\cr &= 0.27 \\end{aligned}",
+        "<strong>(c) Calculating $\\text{P}(B \\mid A')$:</strong><br><br>Apply the definition of conditional probability:\\begin{aligned} \\text{P}(B \\mid A') &= \\dfrac{\\text{P}(B \\cap A')}{\\text{P}(A')} \\end{aligned}Calculate the numerator and denominator separately:\\begin{aligned} \\text{P}(B \\cap A') &= \\text{P}(B) - \\text{P}(A \\cap B) \\cr &= 0.40 - 0.22 \\cr &= 0.18 \\end{aligned}Calculate the probability of $A'$:\\begin{aligned} \\text{P}(A') &= 1 - \\text{P}(A) \\cr &= 1 - 0.55 \\cr &= 0.45 \\end{aligned}Substitute these values into the conditional formula:\\begin{aligned} \\text{P}(B \\mid A') &= \\dfrac{0.18}{0.45} \\cr &= 0.4 \\end{aligned}",
+        "<strong>(d) Assessing Mutual Exclusivity:</strong><br><br>Two events are mutually exclusive if and only if they cannot occur at the same time, meaning $\\text{P}(A \\cap B) = 0$.<br><br>Since $\\text{P}(A \\cap B) = 0.22 \\neq 0$, events $A$ and $B$ are not mutually exclusive.",
+        "Final Answer: (a) $0.22$, (b) $0.27$, (c) $0.4$, (d) Not mutually exclusive as $\\text{P}(A \\cap B) = 0.22 \\neq 0$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.22$, (b) $0.27$, (c) $0.18$, (d) Not mutually exclusive as $\\text{P}(A \\cap B) = 0.22 \\neq 0$",
+            "feedback": "In part (c), $0.18$ is $\\text{P}(B \\cap A')$. To find conditional probability, you must divide this by $\\text{P}(A') = 0.45$, which gives $0.4$."
+        },
+        {
+            "ans": "(a) $0.22$, (b) $0.27$, (c) $0.4$, (d) Mutually exclusive because $\\text{P}(A \\cup B) < 1$",
+            "feedback": "In part (d), $\\text{P}(A \\cup B) < 1$ simply means the events do not exhaust the sample space. Mutual exclusivity strictly requires $\\text{P}(A \\cap B) = 0$."
+        },
+        {
+            "ans": "(a) $0.05$, (b) $0.27$, (c) $0.4$, (d) Not mutually exclusive as $\\text{P}(A \\cap B) = 0.22 \\neq 0$",
+            "feedback": "In part (a), check your arithmetic: $0.55 + 0.40 - 0.73 = 0.95 - 0.73 = 0.22$, not $0.05$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Finding Set Differences",
+        "content": "To evaluate $\\text{P}(B \\cap A')$, think of circle $B$ with the intersection sliced away: $\\text{P}(B) - \\text{P}(A \\cap B)$. Never try to multiply $\\text{P}(B)$ by $\\text{P}(A')$ unless you have already proved that the events are independent."
+    }
+},
+{
+    "id": "050024",
+    "group_id": "050021",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Tree Diagrams",
+        "Bayes' Theorem",
+        "Medical Screening Paradox"
+    ],
+    "img": false,
+    "question": "A diagnostic screening test detects a virus in orchards. Historical records show that $4\\%$ of trees are infected.<br><br>Field trials for the test show that:<br>&bull; An infected tree tests positive with probability $0.95$.<br>&bull; An uninfected tree tests positive (false positive) with probability $0.05$.<br><br><strong>(a)</strong> Calculate the probability that a randomly chosen tree tests positive.<br><br><strong>(b)</strong> Given that a tree tests positive, calculate the probability that it is infected, giving your answer to $3$ significant figures.<br><br><strong>(c)</strong> Comment on the reliability of a positive test result in this context.",
+    "steps": [
+        "<strong>(a) Total Probability of a Positive Test:</strong><br><br>Let $V$ be the event that a tree is infected, and let $\\text{Pos}$ be a positive result:<br><br>Given parameters:\\begin{aligned} \\text{P}(V) &= 0.04 \\cr \\text{P}(V') &= 0.96 \\cr \\text{P}(\\text{Pos} \\mid V) &= 0.95 \\cr \\text{P}(\\text{Pos} \\mid V') &= 0.05 \\end{aligned}Apply the law of total probability:\\begin{aligned}& \\text{P}(\\text{Pos}) \\cr &\\quad = \\text{P}(V \\cap \\text{Pos}) + \\text{P}(V' \\cap \\text{Pos}) \\cr &\\quad = (0.04)(0.95) + (0.96)(0.05) \\cr &\\quad = 0.038 + 0.048 \\cr &\\quad = 0.086 \\end{aligned}",
+        "<strong>(b) Conditional Probability of Infection Given Positive:</strong><br><br>Apply Bayes' theorem:\\begin{aligned} \\text{P}(V \\mid \\text{Pos}) &= \\dfrac{\\text{P}(V \\cap \\text{Pos})}{\\text{P}(\\text{Pos})} \\cr &= \\dfrac{0.038}{0.086} \\cr &\\approx 0.44186 \\cr &\\approx 0.442 \\end{aligned}",
+        "<strong>(c) Commenting on Reliability:</strong><br><br>A positive test is surprisingly unreliable: there is only a $44.2\\%$ chance that a tree testing positive is genuinely infected.<br><br>Because the virus is rare ($4\\%$), false positives ($0.048$) outnumber true positives ($0.038$) in the overall population.",
+        "Final Answer: (a) $0.086$, (b) $0.442$, (c) Unreliable as a positive tree has only a $44.2\\%$ chance of being infected due to false positives outnumbering true positives"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.086$, (b) $0.950$, (c) Unreliable as a positive tree has only a $44.2\\%$ chance of being infected due to false positives outnumbering true positives",
+            "feedback": "In part (b), $0.95$ is the sensitivity $\\text{P}(\\text{Pos} \\mid V)$. The reversed conditional probability $\\text{P}(V \\mid \\text{Pos})$ must be evaluated using Bayes' theorem, giving $0.442$."
+        },
+        {
+            "ans": "(a) $0.038$, (b) $0.442$, (c) Unreliable as a positive tree has only a $44.2\\%$ chance of being infected due to false positives outnumbering true positives",
+            "feedback": "In part (a), $0.038$ accounts only for true positives. You must add the false positive rate: $0.038 + 0.048 = 0.086$."
+        },
+        {
+            "ans": "(a) $0.086$, (b) $0.442$, (c) Highly reliable because the test has a $95\\%$ detection accuracy",
+            "feedback": "In part (c), high accuracy does not prevent the screening paradox. Because uninfected trees make up $96\\%$ of the population, false positives outnumber true positives."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: The False Positive Paradox",
+        "content": "This is the classic screening paradox. When a condition is rare in a population, even a small false-positive rate produces more uninfected people testing positive than genuine sufferers. Never confuse $\\text{P}(\\text{Pos} \\mid V)$ with $\\text{P}(V \\mid \\text{Pos})$."
+    }
+},
+{
+    "id": "050025",
+    "group_id": "050021",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Sampling Without Replacement",
+        "Complementary Probability",
+        "Sequential Events"
+    ],
+    "img": false,
+    "question": "A committee consists of $12$ members: $5$ teachers, $4$ parents, and $3$ school governors.<br><br>Two different members are chosen at random without replacement.<br><br><strong>(a)</strong> Find the probability that both selected members are teachers.<br><br><strong>(b)</strong> Find the probability that at least one selected member is a governor.<br><br><strong>(c)</strong> Find the probability that the second member chosen is a parent, given that the first member chosen was not a parent.",
+    "steps": [
+        "<strong>(a) Probability Both Are Teachers:</strong><br><br>For selection without replacement from $12$ members:\\begin{aligned} \\text{P}(T_1 \\cap T_2) &= \\dfrac{5}{12} \\times \\dfrac{4}{11} \\cr &= \\dfrac{20}{132} \\cr &= \\dfrac{5}{33} \\end{aligned}",
+        "<strong>(b) Probability of at Least One Governor:</strong><br><br>There are $12 - 3 = 9$ non-governors.<br><br>Apply complementary probability:\\begin{aligned}& \\text{P}(\\text{At least 1 } G) \\cr &\\quad = 1 - \\text{P}(\\text{No } G) \\cr &\\quad = 1 - \\left(\\dfrac{9}{12} \\times \\dfrac{8}{11}\\right) \\cr &\\quad = 1 - \\dfrac{72}{132} \\cr &\\quad = 1 - \\dfrac{6}{11} \\cr &\\quad = \\dfrac{5}{11} \\end{aligned}",
+        "<strong>(c) Conditional Probability for the Second Member:</strong><br><br>Given that the first person chosen was not a parent, the committee now contains $11$ members remaining.<br><br>Because the first selection was not a parent, all $4$ parents remain available in the pool.<br><br>Therefore, the conditional probability is:\\begin{aligned} \\text{P}(P_2 \\mid P_1') &= \\dfrac{4}{11} \\end{aligned}",
+        "Final Answer: (a) $\\dfrac{5}{33}$, (b) $\\dfrac{5}{11}$, (c) $\\dfrac{4}{11}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\dfrac{25}{144}$, (b) $\\dfrac{5}{11}$, (c) $\\dfrac{4}{11}$",
+            "feedback": "In part (a), $\\dfrac{25}{144} = \\left(\\dfrac{5}{12}\\right)^2$ assumes sampling with replacement. When two different members are chosen, the denominator decreases: $\\dfrac{5}{12} \\times \\dfrac{4}{11} = \\dfrac{5}{33}$."
+        },
+        {
+            "ans": "(a) $\\dfrac{5}{33}$, (b) $\\dfrac{6}{11}$, (c) $\\dfrac{4}{11}$",
+            "feedback": "In part (b), $\\dfrac{6}{11}$ is the probability of selecting no governors. For at least one governor, subtract this from $1$, giving $1 - \\dfrac{6}{11} = \\dfrac{5}{11}$."
+        },
+        {
+            "ans": "(a) $\\dfrac{5}{33}$, (b) $\\dfrac{5}{11}$, (c) $\\dfrac{1}{3}$",
+            "feedback": "In part (c), $\\dfrac{4}{12} = \\dfrac{1}{3}$ uses the original pool of $12$ members. After one member is chosen, only $11$ members remain, giving $\\dfrac{4}{11}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Shortcut for Updated Pools",
+        "content": "Do not overcomplicate conditional questions like part (c) with algebraic formulas. Simply update the physical contents of the bag or room: if one non-parent leaves, there are now $11$ people left and all $4$ parents remain, making the probability $\\dfrac{4}{11}$ immediately."
     }
 }
 ];
