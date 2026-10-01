@@ -928,7 +928,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(a) $0.05$, (b) $0.27$, (c) $0.4$, (d) Not mutually exclusive as $\\text{P}(A \\cap B) = 0.22 \\neq 0$",
-            "feedback": "In part (a), check your arithmetic: $0.55 + 0.40 - 0.73 = 0.95 - 0.73 = 0.22$, not $0.05$."
+            "feedback": "In part (a), check your arithmetic: \\begin{aligned}0.55 + 0.40 &- 0.73\\cr &= 0.95 - 0.73\\cr & = 0.22\\end{aligned} not $0.05$."
         }
     ],
     "bradley_insight": {
@@ -1017,6 +1017,209 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Shortcut for Updated Pools",
         "content": "Do not overcomplicate conditional questions like part (c) with algebraic formulas. Simply update the physical contents of the bag or room: if one non-parent leaves, there are now $11$ people left and all $4$ parents remain, making the probability $\\dfrac{4}{11}$ immediately."
+    }
+},
+{
+    "id": "050026",
+    "group_id": "050026",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "Correlation Hypothesis Testing",
+    "subtopic": [
+        "Product Moment Correlation",
+        "One-Tailed Test",
+        "Critical Value Comparison"
+    ],
+    "img": false,
+    "question": "A marine biologist investigates whether higher sea surface temperatures lead to higher coral growth rates. She measures mean summer sea surface temperature, $T\\text{ }^\\circ\\text{C}$, and annual skeletal growth, $G\\text{ mm}$, for a random sample of $10$ colonies.<br><br>The sample correlation coefficient is $r = 0.582$.<br><br>Critical values for $n = 10$ are:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>1-tail</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2.5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$1\\%$</th></tr><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>2-tail</th><th style='padding:4px; border:1px solid #ccc;'>$10\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2\\%$</th></tr></thead><tbody><tr><td style='padding:4px; border:1px solid #ccc;'>$r_{\\text{crit}}$</td><td style='padding:4px; border:1px solid #ccc;'>$0.5494$</td><td style='padding:4px; border:1px solid #ccc;'>$0.6319$</td><td style='padding:4px; border:1px solid #ccc;'>$0.7155$</td></tr></tbody></table>Determine the conclusion of the test at the $5\\%$ significance level.",
+    "steps": [
+        "<strong>Stating the Hypotheses:</strong><br><br>Let $\\rho$ represent the population correlation coefficient between temperature and growth rate.<br><br>The claim specifies that higher temperatures lead to higher growth rates, requiring a one-tailed test:\\begin{aligned} H_0&: \\rho = 0 \\cr H_1&: \\rho > 0 \\end{aligned}",
+        "<strong>Identifying the Critical Value:</strong><br><br>For a sample size of $n = 10$ at the $5\\%$ level for a one-tailed test, read the critical value directly from the table:\\begin{aligned} r_{\\text{crit}} = 0.5494 \\end{aligned}The critical region is:\\begin{aligned} r > 0.5494 \\end{aligned}",
+        "<strong>Comparing and Concluding in Context:</strong><br><br>The sample correlation coefficient is $r = 0.582$.<br><br>Compare $r$ with the critical threshold:\\begin{aligned} 0.582 > 0.5494 \\end{aligned}Since $r$ lies inside the critical region, reject $H_0$.<br><br>There is sufficient evidence at the $5\\%$ significance level to support the claim that higher sea temperatures are associated with higher coral growth rates.",
+        "Final Answer: Reject $H_0$ as $0.582 > 0.5494$; significant evidence of positive correlation"
+    ],
+    "pi_options": [
+        {
+            "ans": "Do not reject $H_0$ as $0.582 < 0.6319$; insufficient evidence of positive correlation",
+            "feedback": "Using $0.6319$ compares the test statistic against the two-tailed $5\\%$ threshold (or one-tailed $2.5\\%$) rather than the one-tailed $5\\%$ threshold ($0.5494$)."
+        },
+        {
+            "ans": "Reject $H_0$ as $0.582 > 0.5494$; proves that warmer water causes corals to grow faster",
+            "feedback": "Correlation does not imply direct causation. A hypothesis test establishes statistical association, not absolute biological proof of causation."
+        },
+        {
+            "ans": "Do not reject $H_0$ as $0.582 < 0.7155$; insufficient evidence of positive correlation",
+            "feedback": "The value $0.7155$ corresponds to the $1\\%$ significance level. The question explicitly specifies testing at the $5\\%$ significance level."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Greek Letters for Population Hypotheses",
+        "content": "Always state hypotheses for correlation tests using the Greek letter $\\rho$ (rho), representing the population parameter: $H_0: \\rho = 0$. Writing $H_0: r = 0$ will immediately lose marks on exam scripts, because $r$ represents the known sample statistic."
+    }
+},
+{
+    "id": "050027",
+    "group_id": "050026",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "Correlation Hypothesis Testing",
+    "subtopic": [
+        "Two-Tailed Test",
+        "Negative Correlation",
+        "Critical Regions"
+    ],
+    "img": false,
+    "question": "An engineer tests $12$ industrial pumps to investigate whether there is an association between age, $t$ years, and efficiency, $E\\%$.<br><br>The sample correlation coefficient is $r = -0.528$.<br><br>Critical values for $n = 12$ are:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>1-tail</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2.5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$1\\%$</th></tr><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>2-tail</th><th style='padding:4px; border:1px solid #ccc;'>$10\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2\\%$</th></tr></thead><tbody><tr><td style='padding:4px; border:1px solid #ccc;'>$r_{\\text{crit}}$</td><td style='padding:4px; border:1px solid #ccc;'>$0.4973$</td><td style='padding:4px; border:1px solid #ccc;'>$0.5760$</td><td style='padding:4px; border:1px solid #ccc;'>$0.6581$</td></tr></tbody></table><strong>(a)</strong> State hypotheses to test for an association at the $5\\%$ significance level.<br><br><strong>(b)</strong> State the critical region.<br><br><strong>(c)</strong> State the conclusion of the test in context.",
+    "steps": [
+        "<strong>(a) Stating the Hypotheses:</strong><br><br>Testing for *'an association'* without specifying direction requires a two-tailed test:\\begin{aligned} H_0&: \\rho = 0 \\cr H_1&: \\rho \\neq 0 \\end{aligned}where $\\rho$ is the population correlation coefficient between pump age and efficiency.",
+        "<strong>(b) Identifying the Critical Region:</strong><br><br>For $n = 12$ and a two-tailed test at the $5\\%$ level, the critical value from the table is $0.5760$.<br><br>Because the test is two-tailed, the critical region covers both tails:\\begin{aligned} r &> 0.5760 \\cr r &< -0.5760 \\end{aligned}This can also be expressed as $|r| > 0.5760$.",
+        "<strong>(c) Comparing and Concluding in Context:</strong><br><br>Compare the sample value $r = -0.528$ with the lower critical boundary:\\begin{aligned} -0.528 > -0.5760 \\end{aligned}Because $-0.528$ does not fall into the critical region, do not reject $H_0$.<br><br>There is insufficient evidence at the $5\\%$ significance level to suggest an association between the age and efficiency of the industrial pumps.",
+        "Final Answer: (a) $H_0: \\rho = 0, H_1: \\rho \\neq 0$, (b) $r > 0.5760$ or $r < -0.5760$, (c) Do not reject $H_0$; insufficient evidence of an association"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: \\rho = 0, H_1: \\rho < 0$, (b) $r < -0.4973$, (c) Reject $H_0$; significant evidence that older pumps have lower efficiency",
+            "feedback": "The question asks to test for *'an association'*, which requires a two-tailed test ($H_1: \\rho \\neq 0$), not a one-tailed test. Setting up a one-tailed test erroneously leads to rejecting $H_0$."
+        },
+        {
+            "ans": "(a) $H_0: \\rho = 0, H_1: \\rho \\neq 0$, (b) $r > 0.5760$ or $r < -0.5760$, (c) Reject $H_0$ as $|-0.528| > 0.4973$; significant evidence of an association",
+            "feedback": "Comparing against $0.4973$ uses the two-tailed $10\\%$ critical value. For a two-tailed test at $5\\%$, the critical value is $0.5760$."
+        },
+        {
+            "ans": "(a) $H_0: \\rho = 0, H_1: \\rho \\neq 0$, (b) $r > 0.5760$, (c) Do not reject $H_0$; insufficient evidence of an association",
+            "feedback": "In part (b), a two-tailed test must include both positive and negative tails ($r > 0.5760$ or $r < -0.5760$). Omitting the negative tail prevents testing negative sample values."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Handling Negative Critical Regions",
+        "content": "Formula booklets and exam tables only display positive critical values. When testing a negative sample correlation $r$, remember to insert the negative sign: for a lower tail, the critical region is $r < -r_{\\text{crit}}$. Remember that $-0.528$ is *greater* (less extreme) than $-0.5760$."
+    }
+},
+{
+    "id": "050028",
+    "group_id": "050026",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "Correlation Hypothesis Testing",
+    "subtopic": [
+        "Calculation of PMCC",
+        "Summary Statistics",
+        "One-Tailed Test"
+    ],
+    "img": false,
+    "question": "A researcher records revision time, $x$ hours, and exam mark, $y\\%$, for $8$ students. Summary statistics are:$$S_{xx} = 128.5 \\qquad S_{yy} = 312.0 \\qquad S_{xy} = 168.4$$Critical values for $n = 8$ are:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>1-tail</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2.5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$1\\%$</th></tr><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>2-tail</th><th style='padding:4px; border:1px solid #ccc;'>$10\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2\\%$</th></tr></thead><tbody><tr><td style='padding:4px; border:1px solid #ccc;'>$r_{\\text{crit}}$</td><td style='padding:4px; border:1px solid #ccc;'>$0.6215$</td><td style='padding:4px; border:1px solid #ccc;'>$0.7067$</td><td style='padding:4px; border:1px solid #ccc;'>$0.7887$</td></tr></tbody></table><strong>(a)</strong> Calculate the product moment correlation coefficient, $r$.<br><br><strong>(b)</strong> Test at the $2.5\\%$ level whether increased revision improves marks.",
+    "steps": [
+        "<strong>(a) Calculating the Correlation Coefficient $r$:</strong><br><br>Apply the formula for PMCC using summary statistics:\\begin{aligned} r &= \\dfrac{S_{xy}}{\\sqrt{S_{xx} S_{yy}}} \\cr &= \\dfrac{168.4}{\\sqrt{128.5 \\times 312.0}} \\cr &= \\dfrac{168.4}{\\sqrt{40092}} \\cr &= \\dfrac{168.4}{200.23} \\cr &\\approx 0.8410 \\cr &\\approx 0.841 \\end{aligned}",
+        "<strong>(b) Conducting the Hypothesis Test:</strong><br><br>State the one-tailed hypotheses:\\begin{aligned} H_0&: \\rho = 0 \\cr H_1&: \\rho > 0 \\end{aligned}From the table for $n = 8$, the critical value for a one-tailed test at the $2.5\\%$ level is $0.7067$.<br><br>Compare the sample coefficient with the threshold:\\begin{aligned} 0.841 > 0.7067 \\end{aligned}Since $r$ is greater than the critical value, reject $H_0$.<br><br>There is significant evidence at the $2.5\\%$ level that increased revision time is associated with improved examination marks.",
+        "Final Answer: (a) $r = 0.841$, (b) Reject $H_0$ as $0.841 > 0.7067$; significant evidence that revision improves marks"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $r = 0.841$, (b) Do not reject $H_0$ as $0.841 > 0.7067$; significant evidence that revision improves marks",
+            "feedback": "When the test statistic ($0.841$) exceeds the critical value ($0.7067$), it falls into the critical region, which means $H_0$ must be rejected, not retained."
+        },
+        {
+            "ans": "(a) $r = 0.707$, (b) Reject $H_0$ as $0.707 > 0.6215$; significant evidence that revision improves marks",
+            "feedback": "In part (a), dividing $168.4$ by $\\dfrac{128.5 + 312.0}{2}$ is an error. The denominator requires the geometric mean $\\sqrt{S_{xx} S_{yy}}$, giving $r \\approx 0.841$."
+        },
+        {
+            "ans": "(a) $r = 0.841$, (b) Do not reject $H_0$ as $0.841 < 0.8872$; insufficient evidence that revision improves marks",
+            "feedback": "In part (b), the critical value for a one-tailed test at $2.5\\%$ is $0.7067$, not $0.8872$. Because $0.841 > 0.7067$, $H_0$ is rejected."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Full Marks in Hypothesis Conclusions",
+        "content": "To score full marks on hypothesis testing questions, your conclusion must include: (1) an explicit mathematical comparison ($0.841 > 0.7067$), (2) a clear decision regarding $H_0$ (*'reject $H_0$'*), and (3) an interpretation in context (*'increased revision improves marks'*) stating the significance level."
+    }
+},
+{
+    "id": "050029",
+    "group_id": "050026",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "Correlation Hypothesis Testing",
+    "subtopic": [
+        "Invariance Under Coding",
+        "Bivariate Normality",
+        "Hypothesis Testing"
+    ],
+    "img": false,
+    "question": "A meteorologist measures daily maximum temperature, $x\\text{ }^\\circ\\text{C}$, and sunshine, $y\\text{ hours}$, for $15$ days. Data are coded using:$$u = \\dfrac{x - 10}{2} \\qquad v = 10y - 25$$The correlation for the coded data is $r_{uv} = 0.468$.<br><br>Critical values for $n = 15$ are:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>1-tail</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2.5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$1\\%$</th></tr><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>2-tail</th><th style='padding:4px; border:1px solid #ccc;'>$10\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2\\%$</th></tr></thead><tbody><tr><td style='padding:4px; border:1px solid #ccc;'>$r_{\\text{crit}}$</td><td style='padding:4px; border:1px solid #ccc;'>$0.4409$</td><td style='padding:4px; border:1px solid #ccc;'>$0.5140$</td><td style='padding:4px; border:1px solid #ccc;'>$0.5923$</td></tr></tbody></table><strong>(a)</strong> State the value of $r_{xy}$, giving a reason.<br><br><strong>(b)</strong> Test at the $5\\%$ level for positive correlation.<br><br><strong>(c)</strong> State the distributional assumption required for this test.",
+    "steps": [
+        "<strong>(a) Finding $r_{xy}$ Using Invariance Under Linear Coding:</strong><br><br>The product moment correlation coefficient measures linear association and is completely invariant under linear transformations of the form $u = ax + b$ and $v = cy + d$ (provided $a > 0$ and $c > 0$).<br><br>Therefore:\\begin{aligned} r_{xy} = r_{uv} = 0.468 \\end{aligned}",
+        "<strong>(b) Conducting the Hypothesis Test:</strong><br><br>State the one-tailed hypotheses:\\begin{aligned} H_0&: \\rho = 0 \\cr H_1&: \\rho > 0 \\end{aligned}From the table for $n = 15$, the critical value for a one-tailed test at the $5\\%$ level is $0.4409$.<br><br>Compare the sample coefficient with the critical threshold:\\begin{aligned} 0.468 > 0.4409 \\end{aligned}Since $0.468 > 0.4409$, reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level to support the claim of a positive correlation between maximum temperature and sunshine.",
+        "<strong>(c) Stating the Required Distributional Assumption:</strong><br><br>For hypothesis testing of the product moment correlation coefficient to be valid, the two variables $(X, Y)$ must follow a <strong>bivariate normal distribution</strong>.",
+        "Final Answer: (a) $r_{xy} = 0.468$ as PMCC is invariant under linear coding, (b) Reject $H_0$ as $0.468 > 0.4409$, (c) Variables must follow a bivariate normal distribution"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $r_{xy} = 0.094$ as PMCC is scaled by coding factors, (b) Reject $H_0$ as $0.468 > 0.4409$, (c) Variables must follow a bivariate normal distribution",
+            "feedback": "In part (a), correlation is scale-invariant. You do not divide or multiply by the coding coefficients: $r_{xy}$ remains exactly equal to $r_{uv} = 0.468$."
+        },
+        {
+            "ans": "(a) $r_{xy} = 0.468$ as PMCC is invariant under linear coding, (b) Do not reject $H_0$ as $0.468 < 0.5140$, (c) Variables must follow a bivariate normal distribution",
+            "feedback": "In part (b), comparing against $0.5140$ applies a $2.5\\%$ one-tailed test (or $5\\%$ two-tailed). For a one-tailed test at $5\\%$, the critical value is $0.4409$."
+        },
+        {
+            "ans": "(a) $r_{xy} = 0.468$ as PMCC is invariant under linear coding, (b) Reject $H_0$ as $0.468 > 0.4409$, (c) Sample size must exceed $30$",
+            "feedback": "In part (c), sample size $n > 30$ is not the underlying assumption. The PMCC test strictly requires the population to follow a bivariate normal distribution."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Bivariate Normality",
+        "content": "Whenever an exam asks *'what assumption is needed to test $\\rho = 0$'*, the required response is *bivariate normality*. Both variables must be normally distributed, and their joint distribution must form a 3D bell shape whose scatter plot produces an elliptical contour."
+    }
+},
+{
+    "id": "050030",
+    "group_id": "050026",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "Correlation Hypothesis Testing",
+    "subtopic": [
+        "Negative Correlation",
+        "Impact of Outliers",
+        "Evaluation of Evidence"
+    ],
+    "img": false,
+    "question": "An economist investigates unemployment rate, $u\\%$, and wage growth, $w\\%$, across $10$ regions. The sample correlation coefficient is $r = -0.584$.<br><br>Critical values for $n = 10$ are:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>1-tail</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2.5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$1\\%$</th></tr><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>2-tail</th><th style='padding:4px; border:1px solid #ccc;'>$10\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2\\%$</th></tr></thead><tbody><tr><td style='padding:4px; border:1px solid #ccc;'>$r_{\\text{crit}}$</td><td style='padding:4px; border:1px solid #ccc;'>$0.5494$</td><td style='padding:4px; border:1px solid #ccc;'>$0.6319$</td><td style='padding:4px; border:1px solid #ccc;'>$0.7155$</td></tr></tbody></table><strong>(a)</strong> Test at the $5\\%$ level for negative correlation.<br><br><strong>(b)</strong> Removing an extreme outlier changes $r$ to $-0.210$ for the remaining $9$ regions (critical value $-0.5822$). Explain the effect on the conclusion.",
+    "steps": [
+        "<strong>(a) Conducting the One-Tailed Negative Test:</strong><br><br>State the hypotheses for a negative correlation:\\begin{aligned} H_0&: \\rho = 0 \\cr H_1&: \\rho < 0 \\end{aligned}For $n = 10$ at the $5\\%$ level (one-tailed), the lower critical value is $-0.5494$.<br><br>Compare the sample value $r = -0.584$ with the critical value:\\begin{aligned} -0.584 < -0.5494 \\end{aligned}Because $-0.584$ is in the critical region, reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level of a negative correlation between unemployment rate and wage growth.",
+        "<strong>(b) Evaluating the Effect of Removing the Outlier:</strong><br><br>When the single extreme point is removed, the correlation coefficient for $n = 9$ weakens to $r = -0.210$.<br><br>Compare this new value with the $n = 9$ critical threshold ($-0.5822$):\\begin{aligned} -0.210 > -0.5822 \\end{aligned}Because $-0.210$ lies outside the critical region, $H_0$ would no longer be rejected.<br><br>This demonstrates that the original conclusion of a significant negative correlation was entirely dependent on a single outlier, rather than a genuine trend across the regions.",
+        "Final Answer: (a) Reject $H_0$ as $-0.584 < -0.5494$; significant negative correlation, (b) Conclusion reverses to do not reject $H_0$ as $-0.210 > -0.5822$, showing the result depended entirely on the outlier"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Do not reject $H_0$ as $-0.584 > -0.5494$; insufficient evidence, (b) Conclusion reverses to do not reject $H_0$ as $-0.210 > -0.5822$, showing the result depended entirely on the outlier",
+            "feedback": "In part (a), $-0.584$ is more negative (smaller) than $-0.5494$, meaning it falls into the critical region and $H_0$ is rejected."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $-0.584 < -0.5494$; significant negative correlation, (b) The conclusion remains unchanged because removing data points is invalid",
+            "feedback": "In part (b), removing an extreme outlier is standard diagnostic practice in statistics. Since $-0.210 > -0.5822$, the conclusion reverses to retaining $H_0$."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $-0.584 < -0.5494$; significant negative correlation, (b) The evidence for negative correlation becomes stronger without the outlier",
+            "feedback": "In part (b), $r$ changes from $-0.584$ to $-0.210$, which represents a substantial weakening towards zero, completely eliminating statistical significance."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Fragility of PMCC to Outliers",
+        "content": "The product moment correlation coefficient is not a resistant statistic. A single extreme leverage point can produce a statistically significant correlation where none exists in the rest of the sample. Always inspect a scatter plot alongside $r$."
     }
 }
 ];
