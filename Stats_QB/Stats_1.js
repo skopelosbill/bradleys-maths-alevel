@@ -276,7 +276,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: The Periodicity Trap",
-        "content": "Whenever an exam question asks for a disadvantage of systematic sampling in a manufacturing or sequential context, the gold-standard answer is *periodicity*. If the sampling interval matches a repeating physical cycle in the machinery, the sample will be completely unrepresentative."
+        "content": "Whenever an exam question asks for a disadvantage of systematic sampling in a manufacturing or sequential context, the gold-standard answer is <em>periodicity</em>. If the sampling interval matches a repeating physical cycle in the machinery, the sample will be completely unrepresentative."
     }
 },
 {
@@ -316,7 +316,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Full Marks on Sampling Selection Questions",
-        "content": "Exam questions asking *'how to select the sample'* require three specific mark-scheme steps: (1) create a numbered list (the sampling frame), (2) generate random numbers within that range, and (3) explicitly state that duplicate numbers must be discarded."
+        "content": "Exam questions asking <em>'how to select the sample'</em> require three specific mark-scheme steps: (1) create a numbered list (the sampling frame), (2) generate random numbers within that range, and (3) explicitly state that duplicate numbers must be discarded."
     }
 },
 {
@@ -357,7 +357,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: What Exactly Is a Sampling Frame?",
-        "content": "Students frequently define a sampling frame as *'the population'* or *'the area where you take data'*. It is neither. A sampling frame is strictly a physical or digital list of individually identifiable sampling units (e.g. an electoral register, a patient database, or a school roll). If you cannot produce a list, a sampling frame does not exist."
+        "content": "Students frequently define a sampling frame as <em>'the population'</em> or <em>'the area where you take data'</em>. It is neither. A sampling frame is strictly a physical or digital list of individually identifiable sampling units (e.g. an electoral register, a patient database, or a school roll). If you cannot produce a list, a sampling frame does not exist."
     }
 },
 {
@@ -398,7 +398,213 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Non-Response vs Non-Randomness",
-        "content": "In an exam, remember that quota sampling does not suffer from *'non-response bias'* in the conventional survey sense (if someone declines, the interviewer simply asks the next passer-by). Instead, its primary weaknesses are *interviewer selection bias* and *systematic exclusion* of demographics unavailable during the survey window."
+        "content": "In an exam, remember that quota sampling does not suffer from <em>'non-response bias'</em> in the conventional survey sense (if someone declines, the interviewer simply asks the next passer-by). Instead, its primary weaknesses are <em>interviewer selection bias</em> and <em>systematic exclusion</em> of demographics unavailable during the survey window."
+    }
+},
+{
+    "id": "050011",
+    "group_id": "050011",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Data Presentation and Interpretation",
+    "topic": "Measures of Location and Spread",
+    "subtopic": [
+        "Mean and Standard Deviation",
+        "Outliers",
+        "Data Cleaning"
+    ],
+    "img": false,
+    "question": "A track coach records the $100\\text{ m}$ sprint times, $t$ seconds, for a random sample of $8$ athletes:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>Athlete</th><th style='padding:4px; border:1px solid #ccc;'>Time (s)</th><th style='padding:4px; border:1px solid #ccc;'>Athlete</th><th style='padding:4px; border:1px solid #ccc;'>Time (s)</th></tr></thead><tbody><tr><td style='padding:4px; border:1px solid #ccc;'>Ben</td><td style='padding:4px; border:1px solid #ccc;'>$12.2$</td><td style='padding:4px; border:1px solid #ccc;'>Zac</td><td style='padding:4px; border:1px solid #ccc;'>$14.1$</td></tr><tr><td style='padding:4px; border:1px solid #ccc;'>Sam</td><td style='padding:4px; border:1px solid #ccc;'>$11.8$</td><td style='padding:4px; border:1px solid #ccc;'>Max</td><td style='padding:4px; border:1px solid #ccc;'>$12.3$</td></tr><tr><td style='padding:4px; border:1px solid #ccc;'>Dan</td><td style='padding:4px; border:1px solid #ccc;'>$12.0$</td><td style='padding:4px; border:1px solid #ccc;'>Tom</td><td style='padding:4px; border:1px solid #ccc;'>$11.7$</td></tr><tr><td style='padding:4px; border:1px solid #ccc;'>Leo</td><td style='padding:4px; border:1px solid #ccc;'>$11.9$</td><td style='padding:4px; border:1px solid #ccc;'>Kai</td><td style='padding:4px; border:1px solid #ccc;'>$12.0$</td></tr></tbody></table>An outlier is defined as any value that lies more than $2$ standard deviations from the mean.<br><br><strong>(a)</strong> Calculate the mean and the standard deviation of these $8$ sprint times.<br><br><strong>(b)</strong> Verify that Zac’s time of $14.1\\text{ s}$ is an outlier, fully justifying your answer.<br><br><strong>(c)</strong> State, with a reason, the effect that discarding Zac’s time would have on the mean and the standard deviation.",
+    "steps": [
+        "<strong>(a) Calculating the Mean and Standard Deviation:</strong><br><br>Calculate the sum of times:\\begin{aligned} \\sum t &= 98.0 \\end{aligned}Calculate the sample mean:\\begin{aligned} \\bar{t} &= \\dfrac{98.0}{8} \\cr &= 12.25\\text{ s} \\end{aligned}Calculate the sum of squares:\\begin{aligned} \\sum t^2 &= 1204.68 \\end{aligned}Calculate the standard deviation:\\begin{aligned} \\sigma &= \\sqrt{\\dfrac{1204.68}{8} - 12.25^2} \\cr &= \\sqrt{150.585 - 150.0625} \\cr &= \\sqrt{0.5225} \\cr &\\approx 0.723\\text{ s} \\end{aligned}",
+        "<strong>(b) Verifying the Outlier:</strong><br><br>Determine the upper outlier boundary:\\begin{aligned}& \\text{Upper boundary} \\cr &\\qquad = \\bar{t} + 2\\sigma \\cr &\\qquad = 12.25 + 2(0.723) \\cr &\\qquad = 13.70\\text{ s} \\end{aligned}Compare Zac's time with the boundary:<br><br>Since $14.1 > 13.70$, Zac’s time is more than $2$ standard deviations above the mean and is confirmed as an outlier.",
+        "<strong>(c) Effect of Discarding Zac's Time:</strong><br><br><strong>1. Mean:</strong> The mean will <strong>decrease</strong> because the discarded value ($14.1\\text{ s}$) is significantly larger than the original mean ($12.25\\text{ s}$).<br><br><strong>2. Standard Deviation:</strong> The standard deviation will <strong>decrease</strong> because removing the most extreme value reduces the overall spread of the remaining data.",
+        "Final Answer: (a) Mean: $12.25\\text{ s}$, SD: $0.723\\text{ s}$, (b) $14.1 > 13.70\\text{ s}$, so it is an outlier, (c) Both the mean and standard deviation will decrease"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Mean: $12.25\\text{ s}$, SD: $0.723\\text{ s}$, (b) $14.1 > 13.70\\text{ s}$, so it is an outlier, (c) Mean decreases, but standard deviation increases",
+            "feedback": "Discarding an extreme outlier always reduces dispersion around the centre, so the standard deviation must decrease, not increase."
+        },
+        {
+            "ans": "(a) Mean: $12.25\\text{ s}$, SD: $0.523\\text{ s}$, (b) $14.1 > 13.70\\text{ s}$, so it is an outlier, (c) Both the mean and standard deviation will decrease",
+            "feedback": "In part (a), $0.5225$ is the variance ($\\sigma^2$). You must take the square root to obtain the standard deviation: $\\sigma = \\sqrt{0.5225} \\approx 0.723\\text{ s}$."
+        },
+        {
+            "ans": "(a) Mean: $12.25\\text{ s}$, SD: $0.723\\text{ s}$, (b) $14.1 < 14.25\\text{ s}$, so not an outlier, (c) Both the mean and standard deviation will decrease",
+            "feedback": "In part (b), check your boundary calculation: $12.25 + 2(0.723) = 13.70\\text{ s}$. Zac's time of $14.1\\text{ s}$ exceeds this threshold, making it an outlier."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Qualitative Effects of Removing Outliers",
+        "content": "You never need to re-calculate values to explain the effect of removing an outlier. If the discarded value is greater than the mean, the mean falls; if smaller, the mean rises. Removing any genuine outlier pulls the data tighter together, so the standard deviation and variance will always decrease."
+    }
+},
+{
+    "id": "050012",
+    "group_id": "050011",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Data Presentation and Interpretation",
+    "topic": "Measures of Location and Spread",
+    "subtopic": [
+        "Coding",
+        "Linear Transformations",
+        "Outliers"
+    ],
+    "img": false,
+    "question": "A quality auditor measures the resistance, $R$ ohms, of a sample of $20$ components. The data is coded using:$$y = \\dfrac{R - 100}{10}$$Summary statistics for the coded variable $y$ are:$$\\sum y = 36.0 \\qquad \\sum y^2 = 114.8$$<strong>(a)</strong> Calculate the mean and the standard deviation of $y$.<br><br><strong>(b)</strong> Hence determine the mean and the standard deviation of the original resistance measurements, $R$.<br><br><strong>(c)</strong> An outlier is defined as any value lying more than $2.5$ standard deviations from the mean. Determine whether a component with $R = 152\\text{ ohms}$ is an outlier.",
+    "steps": [
+        "<strong>(a) Calculating Mean and Standard Deviation of $y$:</strong><br><br>Calculate the coded mean:\\begin{aligned} \\bar{y} &= \\dfrac{36.0}{20} \\cr &= 1.8 \\end{aligned}Calculate the coded standard deviation:\\begin{aligned} \\sigma_y &= \\sqrt{\\dfrac{114.8}{20} - 1.8^2} \\cr &= \\sqrt{5.74 - 3.24} \\cr &= \\sqrt{2.5} \\cr &\\approx 1.581 \\end{aligned}",
+        "<strong>(b) Decoding Mean and Standard Deviation for $R$:</strong><br><br>Rearrange the coding equation for $R$:\\begin{aligned} R = 10y + 100 \\end{aligned}The mean is affected by both addition and multiplication:\\begin{aligned} \\bar{R} &= 10\\bar{y} + 100 \\cr &= 10(1.8) + 100 \\cr &= 118\\text{ ohms} \\end{aligned}The standard deviation is affected only by scale (multiplication), not by adding constants:\\begin{aligned} \\sigma_R &= 10\\sigma_y \\cr &= 10(1.581) \\cr &= 15.81\\text{ ohms} \\end{aligned}",
+        "<strong>(c) Determining Outlier Status for $R = 152\\text{ ohms}$:</strong><br><br>Calculate the upper outlier boundary:\\begin{aligned}& \\text{Upper boundary} \\cr &\\qquad = \\bar{R} + 2.5\\sigma_R \\cr &\\qquad = 118 + 2.5(15.81) \\cr &\\qquad = 118 + 39.53 \\cr &\\qquad = 157.53\\text{ ohms} \\end{aligned}Since $152 < 157.53$, the resistance of $152\\text{ ohms}$ does not exceed the threshold and is therefore not classified as an outlier.",
+        "Final Answer: (a) $\\bar{y} = 1.8$, $\\sigma_y = 1.58$, (b) $\\bar{R} = 118\\text{ ohms}$, $\\sigma_R = 15.8\\text{ ohms}$, (c) Not an outlier as $152 < 157.5\\text{ ohms}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\bar{y} = 1.8$, $\\sigma_y = 1.58$, (b) $\\bar{R} = 118\\text{ ohms}$, $\\sigma_R = 115.8\\text{ ohms}$, (c) Not an outlier as $152 < 157.5\\text{ ohms}$",
+            "feedback": "In part (b), adding $100$ to the standard deviation is incorrect. Adding a constant shifts all data points equally and has no effect on spread; only the scale factor of $10$ multiplies the standard deviation."
+        },
+        {
+            "ans": "(a) $\\bar{y} = 1.8$, $\\sigma_y = 1.58$, (b) $\\bar{R} = 118\\text{ ohms}$, $\\sigma_R = 15.8\\text{ ohms}$, (c) An outlier as $152 > 118 + 2(15.8)$",
+            "feedback": "In part (c), the question specified an outlier threshold of $2.5$ standard deviations, not $2.0$ standard deviations. With $2.5\\sigma$, the boundary is $157.53\\text{ ohms}$."
+        },
+        {
+            "ans": "(a) $\\bar{y} = 1.8$, $\\sigma_y = 2.50$, (b) $\\bar{R} = 118\\text{ ohms}$, $\\sigma_R = 25.0\\text{ ohms}$, (c) Not an outlier as $152 < 157.5\\text{ ohms}$",
+            "feedback": "In part (a), $2.5$ is the variance ($\\sigma_y^2$). You forgot to take the square root to find $\\sigma_y = \\sqrt{2.5} \\approx 1.581$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: The Golden Rule of Coding",
+        "content": "For any linear coding $y = \\dfrac{x - a}{b}$, remember: location measures (mean, median, mode, quartiles) are affected by both shift $a$ and scale $b$. Spread measures (standard deviation, variance, IQR, range) are completely invariant to shift $a$ and are scaled purely by factor $b$."
+    }
+},
+{
+    "id": "050013",
+    "group_id": "050011",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Data Presentation and Interpretation",
+    "topic": "Measures of Location and Spread",
+    "subtopic": [
+        "Linear Interpolation",
+        "Interquartile Range",
+        "Outlier Boundaries"
+    ],
+    "img": false,
+    "question": "The table shows the distribution of daily rainfall, $x\\text{ mm}$, recorded at an environmental monitoring station over a period of $50$ days:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:5px; border:1px solid #ccc;'>Daily rainfall ($x\\text{ mm}$)</th><th style='padding:5px; border:1px solid #ccc;'>Frequency ($f$)</th></tr></thead><tbody><tr><td style='padding:5px; border:1px solid #ccc;'>$0 \\le x < 5$</td><td style='padding:5px; border:1px solid #ccc;'>$18$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$5 \\le x < 10$</td><td style='padding:5px; border:1px solid #ccc;'>$14$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$10 \\le x < 20$</td><td style='padding:5px; border:1px solid #ccc;'>$10$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$20 \\le x < 40$</td><td style='padding:5px; border:1px solid #ccc;'>$6$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$40 \\le x < 70$</td><td style='padding:5px; border:1px solid #ccc;'>$2$</td></tr></tbody></table><strong>(a)</strong> Use linear interpolation to estimate the lower quartile, $Q_1$, and the upper quartile, $Q_3$.<br><br><strong>(b)</strong> Calculate the interquartile range (IQR).<br><br><strong>(c)</strong> An outlier is defined as any value lying more than $1.5 \\times \\text{IQR}$ above $Q_3$. Find the minimum daily rainfall required to be an outlier.<br><br><strong>(d)</strong> State, with a reason, whether the two days recorded in the interval $40 \\le x < 70$ are guaranteed to be outliers.",
+    "steps": [
+        "<strong>(a) Estimating Quartiles Using Linear Interpolation:</strong><br><br>For continuous grouped data with $n = 50$:<br><br>The position for $Q_1$ is:\\begin{aligned} \\dfrac{50}{4} = 12.5 \\end{aligned}This falls in the class $0 \\le x < 5$ (cumulative frequency $18$):\\begin{aligned} Q_1 &= 0 + \\dfrac{12.5}{18} \\times 5 \\cr &\\approx 3.47\\text{ mm} \\end{aligned}The position for $Q_3$ is:\\begin{aligned} \\dfrac{3 \\times 50}{4} = 37.5 \\end{aligned}Cumulative frequency before $10\\text{ mm}$ is $18 + 14 = 32$.<br><br>Thus $37.5$ lies in $10 \\le x < 20$ (width $10$, frequency $10$):\\begin{aligned} Q_3 &= 10 + \\dfrac{37.5 - 32}{10} \\times 10 \\cr &= 10 + 5.5 \\cr &= 15.50\\text{ mm} \\end{aligned}",
+        "<strong>(b) Calculating the Interquartile Range:</strong><br><br>Calculate the difference between the quartiles:\\begin{aligned} \\text{IQR} &= Q_3 - Q_1 \\cr &= 15.50 - 3.47 \\cr &= 12.03\\text{ mm} \\end{aligned}",
+        "<strong>(c) Calculating the Upper Outlier Boundary:</strong><br><br>Calculate the threshold for outliers:\\begin{aligned}& \\text{Upper boundary} \\cr &\\qquad = Q_3 + 1.5 \\times \\text{IQR} \\cr &\\qquad = 15.50 + 1.5(12.03) \\cr &\\qquad = 15.50 + 18.045 \\cr &\\qquad = 33.55\\text{ mm} \\end{aligned}The minimum rainfall required for a day to be classified as an outlier is $33.55\\text{ mm}$.",
+        "<strong>(d) Assessing the Interval $40 \\le x < 70$:</strong><br><br>Every observation in the class $40 \\le x < 70$ has a rainfall of at least $40\\text{ mm}$.<br><br>Since the minimum possible value in this interval ($40\\text{ mm}$) is strictly greater than the outlier boundary of $33.55\\text{ mm}$, both days are guaranteed to be outliers.",
+        "Final Answer: (a) $Q_1 = 3.47\\text{ mm}$, $Q_3 = 15.50\\text{ mm}$, (b) $\\text{IQR} = 12.03\\text{ mm}$, (c) $33.55\\text{ mm}$, (d) Yes, guaranteed because the minimum class value ($40\\text{ mm}$) exceeds the outlier threshold ($33.55\\text{ mm}$)"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $Q_1 = 3.47\\text{ mm}$, $Q_3 = 15.50\\text{ mm}$, (b) $\\text{IQR} = 12.03\\text{ mm}$, (c) $33.55\\text{ mm}$, (d) No, because the exact values within the class are unknown",
+            "feedback": "In part (d), although exact values are unknown, every value in $40 \\le x < 70$ is at least $40\\text{ mm}$. Since $40 > 33.55$, every observation in this interval must exceed the outlier threshold."
+        },
+        {
+            "ans": "(a) $Q_1 = 3.75\\text{ mm}$, $Q_3 = 16.25\\text{ mm}$, (b) $\\text{IQR} = 12.50\\text{ mm}$, (c) $35.00\\text{ mm}$, (d) Yes, guaranteed because the minimum class value ($40\\text{ mm}$) exceeds the outlier threshold ($33.55\\text{ mm}$)",
+            "feedback": "In part (a), ensure you use the exact cumulative frequencies from the table rather than interpolating between class midpoints."
+        },
+        {
+            "ans": "(a) $Q_1 = 3.47\\text{ mm}$, $Q_3 = 15.50\\text{ mm}$, (b) $\\text{IQR} = 12.03\\text{ mm}$, (c) $27.53\\text{ mm}$, (d) Yes, guaranteed because the minimum class value ($40\\text{ mm}$) exceeds the outlier threshold ($33.55\\text{ mm}$)",
+            "feedback": "In part (c), check your formula: upper boundary requires adding $1.5 \\times \\text{IQR}$ to $Q_3$ ($15.50 + 18.05 = 33.55$), not to $Q_1$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Guaranteed Outliers in Grouped Data",
+        "content": "When dealing with continuous grouped data, we rarely know the exact raw values. However, if the lower class boundary of an extreme interval is already greater than the calculated outlier threshold ($40 > 33.55$), every single entry in that interval is mathematically guaranteed to be an outlier."
+    }
+},
+{
+    "id": "050014",
+    "group_id": "050011",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Data Presentation and Interpretation",
+    "topic": "Measures of Location and Spread",
+    "subtopic": [
+        "Correcting Summary Statistics",
+        "Mean and Variance",
+        "Data Cleaning"
+    ],
+    "img": false,
+    "question": "A tutor records the test marks, $x$, of a group of $25$ students. The mean mark is $\\bar{x} = 62.0$ and the standard deviation is $\\sigma = 8.0$.<br><br>Two recording errors are subsequently identified:<br>&bull; A score of $38$ was incorrectly entered and should have been $58$.<br>&bull; A score of $72$ was incorrectly entered and should have been $77$.<br><br><strong>(a)</strong> Calculate the correct sum of marks, $\\sum x_{\\text{new}}$.<br><br><strong>(b)</strong> Calculate the corrected mean mark.<br><br><strong>(c)</strong> Given that the original sum of squares was $\\sum x^2 = 97600$, calculate the corrected standard deviation to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Calculating the Corrected Sum:</strong><br><br>Find the original sum of scores:\\begin{aligned} \\sum x_{\\text{orig}} &= 25 \\times 62.0 \\cr &= 1550 \\end{aligned}Subtract the incorrect values and add the correct values:\\begin{aligned} \\sum x_{\\text{new}} &= 1550 - 38 + 58 - 72 + 77 \\cr &= 1550 + 20 + 5 \\cr &= 1575 \\end{aligned}",
+        "<strong>(b) Calculating the Corrected Mean:</strong><br><br>Divide the corrected sum by the number of students:\\begin{aligned} \\bar{x}_{\\text{new}} &= \\dfrac{1575}{25} \\cr &= 63.0 \\end{aligned}",
+        "<strong>(c) Calculating the Corrected Standard Deviation:</strong><br><br>Adjust the sum of squares by subtracting the squares of incorrect values and adding the squares of correct values:\\begin{aligned} \\sum x^2_{\\text{new}} &= 97600 - 38^2 + 58^2 - 72^2 + 77^2 \\cr &= 97600 - 1444 + 3364 - 5184 + 5929 \\cr &= 100265 \\end{aligned}Calculate the corrected standard deviation:\\begin{aligned} \\sigma_{\\text{new}} &= \\sqrt{\\dfrac{100265}{25} - 63.0^2} \\cr &= \\sqrt{4010.6 - 3969.0} \\cr &= \\sqrt{41.6} \\cr &\\approx 6.45 \\end{aligned}",
+        "Final Answer: (a) $\\sum x_{\\text{new}} = 1575$, (b) $\\bar{x}_{\\text{new}} = 63.0$, (c) $\\sigma_{\\text{new}} = 6.45$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\sum x_{\\text{new}} = 1575$, (b) $\\bar{x}_{\\text{new}} = 63.0$, (c) $\\sigma_{\\text{new}} = 41.6$",
+            "feedback": "In part (c), $41.6$ is the corrected variance ($\\sigma^2$). You must take the square root to obtain the standard deviation: $\\sigma = \\sqrt{41.6} \\approx 6.45$."
+        },
+        {
+            "ans": "(a) $\\sum x_{\\text{new}} = 1525$, (b) $\\bar{x}_{\\text{new}} = 61.0$, (c) $\\sigma_{\\text{new}} = 6.45$",
+            "feedback": "In part (a), the net adjustment is $(-38 + 58) + (-72 + 77) = +25$, which increases the total to $1550 + 25 = 1575$, rather than decreasing it."
+        },
+        {
+            "ans": "(a) $\\sum x_{\\text{new}} = 1575$, (b) $\\bar{x}_{\\text{new}} = 63.0$, (c) $\\sigma_{\\text{new}} = 7.82$",
+            "feedback": "In part (c), ensure you update the mean to $63.0$ when subtracting $\\bar{x}^2$ in the variance formula; using the old mean of $62.0$ will lead to an incorrect standard deviation."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Updating Sums of Squares",
+        "content": "When updating $\\sum x^2$, never make the rookie mistake of squaring the difference: $(58 - 38)^2 = 400$. You must add the difference of the squares: $58^2 - 38^2 = 3364 - 1444 = 1920$. Also remember to substitute the *new* mean ($63.0$) into $\\sigma = \\sqrt{\\dfrac{\\sum x^2}{n} - \\bar{x}^2}$."
+    }
+},
+{
+    "id": "050015",
+    "group_id": "050011",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "AS",
+    "major_area": "Data Presentation and Interpretation",
+    "topic": "Measures of Location and Spread",
+    "subtopic": [
+        "Combined Sets of Data",
+        "Pooled Standard Deviation",
+        "Outliers"
+    ],
+    "img": false,
+    "question": "A clinical trial tests the recovery time, $t$ days, of patients receiving one of two treatments:<br><br>&bull; <strong>Treatment Group A:</strong> $15$ patients had a mean recovery time of $18.0\\text{ days}$ and a standard deviation of $2.4\\text{ days}$.<br>&bull; <strong>Treatment Group B:</strong> $10$ patients had a mean recovery time of $23.0\\text{ days}$ and a standard deviation of $3.0\\text{ days}$.<br><br>The data from both groups are combined into a single cohort of $25$ patients.<br><br><strong>(a)</strong> Calculate the combined mean recovery time.<br><br><strong>(b)</strong> Calculate the combined standard deviation for the cohort, giving your answer to $3$ significant figures.<br><br><strong>(c)</strong> Using the criterion $\\bar{t} \\pm 2\\sigma$, determine whether a patient in the cohort with a recovery time of $29\\text{ days}$ is an outlier.",
+    "steps": [
+        "<strong>(a) Calculating the Combined Mean:</strong><br><br>Find the total sum of recovery times for each group:\\begin{aligned} \\sum t_A &= 15 \\times 18.0 \\cr &= 270 \\cr \\sum t_B &= 10 \\times 23.0 \\cr &= 230 \\end{aligned}Calculate the combined mean for the $25$ patients:\\begin{aligned} \\bar{t}_{\\text{comb}} &= \\dfrac{270 + 230}{25} \\cr &= \\dfrac{500}{25} \\cr &= 20.0\\text{ days} \\end{aligned}",
+        "<strong>(b) Calculating the Combined Standard Deviation:</strong><br><br>Rearrange the variance formula $\\sigma^2 = \\dfrac{\\sum t^2}{n} - \\bar{t}^2$ to find the sum of squares for each group:\\begin{aligned} \\sum t^2 = n(\\sigma^2 + \\bar{t}^2) \\end{aligned}For Group A:\\begin{aligned} \\sum t_A^2 &= 15(2.4^2 + 18.0^2) \\cr &= 15(5.76 + 324) \\cr &= 15(329.76) \\cr &= 4946.4 \\end{aligned}For Group B:\\begin{aligned} \\sum t_B^2 &= 10(3.0^2 + 23.0^2) \\cr &= 10(9 + 529) \\cr &= 10(538) \\cr &= 5380 \\end{aligned}Combine the sums of squares for the entire cohort:\\begin{aligned} \\sum t_{\\text{comb}}^2 &= 4946.4 + 5380 \\cr &= 10326.4 \\end{aligned}Calculate the combined standard deviation:\\begin{aligned} \\sigma_{\\text{comb}} &= \\sqrt{\\dfrac{10326.4}{25} - 20.0^2} \\cr &= \\sqrt{413.056 - 400} \\cr &= \\sqrt{13.056} \\cr &\\approx 3.61\\text{ days} \\end{aligned}",
+        "<strong>(c) Testing Outlier Criterion $\\bar{t} \\pm 2\\sigma$:</strong><br><br>Calculate the upper outlier threshold:\\begin{aligned}& \\text{Upper boundary} \\cr &\\qquad = \\bar{t}_{\\text{comb}} + 2\\sigma_{\\text{comb}} \\cr &\\qquad = 20.0 + 2(3.613) \\cr &\\qquad = 20.0 + 7.23 \\cr &\\qquad = 27.23\\text{ days} \\end{aligned}Since $29 > 27.23$, the patient's recovery time of $29\\text{ days}$ exceeds $2$ standard deviations from the combined mean and is classified as an outlier.",
+        "Final Answer: (a) $20.0\\text{ days}$, (b) $3.61\\text{ days}$, (c) Outlier as $29 > 27.23\\text{ days}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $20.5\\text{ days}$, (b) $3.61\\text{ days}$, (c) Outlier as $29 > 27.23\\text{ days}$",
+            "feedback": "In part (a), the unweighted average $\\dfrac{18.0 + 23.0}{2} = 20.5$ is incorrect because the two groups have different sizes ($15$ and $10$). The mean must be weighted: $\\dfrac{270 + 230}{25} = 20.0$."
+        },
+        {
+            "ans": "(a) $20.0\\text{ days}$, (b) $2.64\\text{ days}$, (c) Outlier as $29 > 27.23\\text{ days}$",
+            "feedback": "In part (b), combining standard deviations by simply averaging them ($\\dfrac{15(2.4) + 10(3.0)}{25} = 2.64$) is mathematically invalid because it completely ignores the variation between the two group means."
+        },
+        {
+            "ans": "(a) $20.0\\text{ days}$, (b) $3.61\\text{ days}$, (c) Not an outlier as $29 < 20 + 3(3.61)$",
+            "feedback": "In part (c), the question specified the outlier threshold as $2$ standard deviations ($\\bar{t} \\pm 2\\sigma$), not $3$ standard deviations. Since $29 > 27.23$, it is an outlier."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Never Average Standard Deviations!",
+        "content": "You can never combine standard deviations by calculating a weighted average of $\\sigma_A$ and $\\sigma_B$. Notice that the combined standard deviation ($3.61$) is actually larger than both individual standard deviations ($2.4$ and $3.0$). This happens because the difference between the two group means ($18$ vs $23$) introduces substantial additional spread into the combined distribution."
     }
 }
 ];
