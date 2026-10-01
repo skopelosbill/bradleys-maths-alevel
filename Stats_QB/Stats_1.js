@@ -1236,9 +1236,9 @@ window.ALEVEL_QUESTIONS = [
         "Data Interpretation"
     ],
     "img": "images/Statistics_pngs/050031.png",
-    "question": "The graph shows the amount of sugar, in grams, purchased per person per week in England between 2001&ndash;02 and 2014, based upon the Large Data Set.<br><br>Toby believes that the amount of sugar consumed by people in England decreased greatly during this period. Sarah says that this is not necessarily the case.<br><br><strong>(a)</strong> Using your knowledge of the Large Data Set, give two reasons why Sarah may be correct.<br><br><strong>(b)</strong> The mean amount of butter purchased per person per week in 2014 was $42.5\\text{ grams}$, with standard deviation $14.0\\text{ grams}$. In 2018, a random sample of $784$ people had a mean of $43.6\\text{ grams}$.<br><br>Test at the $5\\%$ level whether the mean amount of butter purchased has changed, assuming $\\sigma$ remains $14.0\\text{ grams}$.<br><br><strong>(c)</strong> In another test for cheese purchases, $H_0$ is rejected at the $5\\%$ level. With reference to the $5\\%$ level, explain why there may not have been a genuine change.",
+    "question": "The graph shows the amount of sugar, in grams, purchased and brought into the home per person per week in England between 2001&ndash;02 and 2014, based on a national household food survey.<br><br>Toby believes that the amount of sugar consumed by people in England decreased greatly during this period. Sarah says that this is not necessarily the case.<br><br><strong>(a)</strong> Explain two reasons why Sarah may be correct, with reference to how dietary data is collected and consumed.<br><br><strong>(b)</strong> The mean amount of butter purchased per person per week in 2014 was $42.5\\text{ grams}$, with standard deviation $14.0\\text{ grams}$. In 2018, a random sample of $784$ people had a mean of $43.6\\text{ grams}$.<br><br>Test at the $5\\%$ level whether the mean amount of butter purchased has changed, assuming $\\sigma$ remains $14.0\\text{ grams}$.<br><br><strong>(c)</strong> In another test for cheese purchases, $H_0$ is rejected at the $5\\%$ level. With reference to the $5\\%$ level, explain why there may not have been a genuine change.",
     "steps": [
-        "<strong>(a) Two Reasons Why Sarah May Be Correct:</strong><br><br><strong>1. Purchases versus Consumption:</strong> The Large Data Set records food <em>purchased</em> brought into the home, not food actually <em>consumed</em>. Significant amounts of purchased sugar may be wasted, discarded, or used for non-dietary preserving.<br><br><strong>2. Exclusion of Food Eaten Out:</strong> The graph shows household food purchases only, ignoring sugar consumed outside the home in cafes, restaurants, takeaways, and pre-packaged snacks.",
+        "<strong>(a) Two Reasons Why Sarah May Be Correct:</strong><br><br><strong>1. Purchases versus Consumption:</strong> The survey records food <em>purchased</em> and brought into the home, not food actually <em>consumed</em>. Significant amounts of purchased sugar may be wasted, discarded, or used for non-dietary purposes.<br><br><strong>2. Exclusion of Food Eaten Out:</strong> The graph shows household grocery purchases only, ignoring sugar consumed outside the home in cafes, restaurants, takeaways, and pre-packaged snacks.",
         "<strong>(b) Conducting the Hypothesis Test for Butter:</strong><br><br>State the two-tailed hypotheses:\\begin{aligned} H_0&: \\mu = 42.5 \\cr H_1&: \\mu \\neq 42.5 \\end{aligned}Under $H_0$, the sample mean follows $\\bar{X} \\sim N\\left(42.5, \\dfrac{14.0^2}{784}\\right)$.<br><br>Calculate the standard error:\\begin{aligned} \\text{SE} &= \\dfrac{14.0}{\\sqrt{784}} \\cr &= \\dfrac{14.0}{28} \\cr &= 0.5 \\end{aligned}Calculate the test statistic $z$:\\begin{aligned} z &= \\dfrac{43.6 - 42.5}{0.5} \\cr &= \\dfrac{1.1}{0.5} \\cr &= 2.2 \\end{aligned}For a two-tailed test at the $5\\%$ level, the critical values are $\\pm 1.96$.<br><br>Since $2.2 > 1.96$, the result lies in the critical region. Reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level that the mean amount of butter purchased per person has changed between 2014 and 2018.",
         "<strong>(c) Interpreting the Significance Level:</strong><br><br>A test conducted at the $5\\%$ significance level carries an inherent $5\\%$ probability of committing a Type I error (rejecting $H_0$ when $H_0$ is true).<br><br>Therefore, there is a $1$ in $20$ chance that this significant result was simply an unusual random sample from an unchanged population.",
         "Final Answer: (a) Purchases do not equal consumption and food eaten out is excluded, (b) Reject $H_0$ as $2.2 > 1.96$, (c) A $5\\%$ significance level carries a $5\\%$ probability of a Type I error"
@@ -1250,7 +1250,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(a) The sample size was too small and the data was measured in kilograms, (b) Reject $H_0$ as $2.2 > 1.96$, (c) A $5\\%$ significance level carries a $5\\%$ probability of a Type I error",
-            "feedback": "In part (a), the Large Data Set spans thousands of households and explicitly measures food in grams per person per week. The limitations relate to waste and food eaten out."
+            "feedback": "In part (a), the national survey spans thousands of households and explicitly measures food in grams per person per week. The limitations relate to waste and food eaten out."
         },
         {
             "ans": "(a) Purchases do not equal consumption and food eaten out is excluded, (b) Reject $H_0$ as $2.2 > 1.96$, (c) The sample size was too large so the test is automatically invalid",
@@ -1259,8 +1259,8 @@ window.ALEVEL_QUESTIONS = [
     ],
     "bradley_insight": {
         "type": "caution",
-        "title": "The Head Teacher's Eye: Purchased vs Consumed",
-        "content": "A hallmark question in Large Data Set exams tests the difference between purchase and consumption. In the Family Food data, purchases represent food brought into the household, not actual calorie intake. Food waste, pet food use, and eating out mean purchase trends never equate directly to dietary consumption."
+        "title": "The Head Teacher's Eye: Purchases vs Dietary Intake",
+        "content": "A recurring theme in applied statistics exams is distinguishing between acquisition and consumption. In national household surveys, purchases represent food brought into the home, not individual intake. Food waste, pet food use, and dining out mean grocery purchases never equate directly to dietary consumption."
     }
 },
 {
@@ -1277,7 +1277,7 @@ window.ALEVEL_QUESTIONS = [
         "P-Value Calculation"
     ],
     "img": false,
-    "question": "In 2014, the mean volume of sugary drinks purchased per person per week in a region was $850\\text{ ml}$, with standard deviation $180\\text{ ml}$.<br><br>In 2018, a random sample of $400$ people had a sample mean of $832\\text{ ml}$. Assume $\\sigma$ remains $180\\text{ ml}$.<br><br><strong>(a)</strong> Stating your hypotheses clearly, test at the $2.5\\%$ level whether the mean weekly volume purchased has decreased.<br><br><strong>(b)</strong> State the critical value and the critical region for the sample mean $\\bar{X}$.<br><br><strong>(c)</strong> Calculate the $p$-value for the test statistic.",
+    "question": "In 2014, the mean volume of sugary drinks purchased per person per week in a region was $850\\text{ ml}$, with standard deviation $180\\text{ ml}$, based on a national nutritional survey.<br><br>In 2018, a random sample of $400$ people had a sample mean of $832\\text{ ml}$. Assume $\\sigma$ remains $180\\text{ ml}$.<br><br><strong>(a)</strong> Stating your hypotheses clearly, test at the $2.5\\%$ level whether the mean weekly volume purchased has decreased.<br><br><strong>(b)</strong> State the critical value and the critical region for the sample mean $\\bar{X}$.<br><br><strong>(c)</strong> Calculate the $p$-value for the test statistic.",
     "steps": [
         "<strong>(a) Conducting the One-Tailed Hypothesis Test:</strong><br><br>State the one-tailed hypotheses:\\begin{aligned} H_0&: \\mu = 850 \\cr H_1&: \\mu < 850 \\end{aligned}Calculate the standard error of the sample mean:\\begin{aligned} \\text{SE} &= \\dfrac{180}{\\sqrt{400}} \\cr &= \\dfrac{180}{20} \\cr &= 9 \\end{aligned}Calculate the test statistic $z$:\\begin{aligned} z &= \\dfrac{832 - 850}{9} \\cr &= \\dfrac{-18}{9} \\cr &= -2.0 \\end{aligned}For a one-tailed test at the $2.5\\%$ level, the critical value is $-1.96$.<br><br>Since $-2.0 < -1.96$, reject $H_0$.<br><br>There is significant evidence at the $2.5\\%$ level that the mean volume of soft drinks purchased has decreased.",
         "<strong>(b) Determining the Critical Region for $\\bar{X}$:</strong><br><br>Find the boundary value for $\\bar{X}$ corresponding to $z = -1.96$:\\begin{aligned} \\bar{x}_{\\text{crit}} &= 850 - 1.96(9) \\cr &= 850 - 17.64 \\cr &= 832.36\\text{ ml} \\end{aligned}The critical region for the sample mean is:\\begin{aligned} \\bar{X} < 832.36\\text{ ml} \\end{aligned}",
@@ -1301,7 +1301,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Critical Regions in Original Units",
-        "content": "When an exam asks for the critical region *'in terms of $\\bar{X}$'*, convert from standard $z$ back into the variable units: $\\bar{x}_{\\text{crit}} = \\mu_0 \\pm z_{\\text{crit}}\\left(\\dfrac{\\sigma}{\\sqrt{n}}\\right)$. Stating only $z < -1.96$ will lose the final accuracy mark."
+        "content": "When an exam asks for the critical region in terms of $\\bar{X}$, convert from standard $z$ back into the variable units: $\\bar{x}_{\\text{crit}} = \\mu_0 \\pm z_{\\text{crit}}\\left(\\dfrac{\\sigma}{\\sqrt{n}}\\right)$. Stating only $z < -1.96$ will lose the final accuracy mark."
     }
 },
 {
@@ -1360,9 +1360,9 @@ window.ALEVEL_QUESTIONS = [
         "Aggregation Difficulties"
     ],
     "img": false,
-    "question": "A student consults the Family Food Large Data Set to investigate UK nutritional intake.<br><br><strong>(a)</strong> The data records household food purchases in grams per person per week. Explain why using purchase data to infer individual dietary consumption has inherent limitations, giving two distinct reasons.<br><br><strong>(b)</strong> The data provides separate tables for <em>Food Brought Home</em> and <em>Food Eaten Out</em>. State one difficulty in directly aggregating these two tables to determine total nutrient intake.<br><br><strong>(c)</strong> The student takes a sample of households from London across three consecutive months. Give two reasons why this sample may fail to represent national UK food consumption.",
+    "question": "A student consults a national dietary survey to investigate UK nutritional intake.<br><br><strong>(a)</strong> The survey records household grocery purchases in grams per person per week. Explain why using purchase data to infer individual dietary consumption has inherent limitations, giving two distinct reasons.<br><br><strong>(b)</strong> The survey provides separate records for <em>Food Brought Home</em> and <em>Food Eaten Out</em>. State one difficulty in directly aggregating these two categories to determine total nutrient intake.<br><br><strong>(c)</strong> The student takes a sample of households from London across three consecutive months. Give two reasons why this sample may fail to represent national UK food consumption.",
     "steps": [
-        "<strong>(a) Inherent Limitations of Purchase Data:</strong><br><br><strong>1. Food Wastage:</strong> Food purchases do not equal consumption because portions are discarded, spoiled, left uneaten, or fed to domestic pets.<br><br><strong>2. Intra-Household Inequality:</strong> The data divides total purchases equally by household size. In reality, food is not consumed equally; adults and children have very different caloric and nutrient intakes.",
+        "<strong>(a) Inherent Limitations of Purchase Data:</strong><br><br><strong>1. Food Wastage:</strong> Food purchases do not equal consumption because portions are discarded, spoiled, left uneaten, or fed to domestic pets.<br><br><strong>2. Intra-Household Inequality:</strong> The survey divides total purchases equally by household size. In reality, food is not consumed equally; adults and children have very different caloric and nutrient intakes.",
         "<strong>(b) Difficulty in Aggregating Home and Eaten Out Data:</strong><br><br>Food eaten out is frequently recorded by expenditure (£) or by broad menu item categories rather than by weight (grams).<br><br>Converting restaurant meals into exact ingredient weights and nutrient breakdowns is unreliable.",
         "<strong>(c) Sources of Bias in the London Three-Month Sample:</strong><br><br><strong>1. Geographical and Demographic Bias:</strong> London has distinct demographics, average income levels, and cultural food availability compared to rural or other UK regions.<br><br><strong>2. Seasonal Bias:</strong> Three consecutive months (e.g. summer or winter) fail to capture seasonal shifts in food purchases across the full calendar year.",
         "Final Answer: (a) Food wastage and unequal intra-household distribution, (b) Difficult to convert restaurant expenditure into grams of nutrients, (c) Regional demographic differences and seasonal eating patterns"
@@ -1383,8 +1383,8 @@ window.ALEVEL_QUESTIONS = [
     ],
     "bradley_insight": {
         "type": "pro-tip",
-        "title": "The Head Teacher's Eye: Scoring Non-Calculation LDS Marks",
-        "content": "To score full marks on qualitative Large Data Set questions, you must provide context-specific answers. Stating *'the data may be biased'* gets zero marks. You must refer specifically to the context: *'food eaten outside the home'* or *'seasonal variation across winter and summer'*."
+        "title": "The Head Teacher's Eye: Scoring Qualitative Survey Marks",
+        "content": "To score full marks on qualitative data questions, you must provide context-specific answers. Stating that the data may be biased gets zero marks. You must refer specifically to the context: food eaten outside the home or seasonal variation across winter and summer."
     }
 },
 {
@@ -1430,3 +1430,5 @@ window.ALEVEL_QUESTIONS = [
     }
 }
 ];
+
+
