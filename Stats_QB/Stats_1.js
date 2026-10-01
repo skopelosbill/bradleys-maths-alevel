@@ -1318,7 +1318,7 @@ window.ALEVEL_QUESTIONS = [
         "Normal Mean Test"
     ],
     "img": false,
-    "question": "A researcher tests whether mean daily energy intake, $\\mu\\text{ kcal}$, for teenage athletes exceeds $2000\\text{ kcal}$:<br><br>$$H_0: \\mu = 2000 \\qquad H_1: \\mu > 2000$$<br>Intake follows $X \\sim N(\\mu, 240^2)$. A sample of $n = 64$ athletes is tested at the $1\\%$ significance level.<br><br><strong>(a)</strong> Define a Type I error and state its probability for this test.<br><br><strong>(b)</strong> Describe what a Type II error represents in this context.<br><br><strong>(c)</strong> Determine the critical value of the sample mean $\\bar{x}$ above which $H_0$ is rejected.<br><br><strong>(d)</strong> Explain how increasing $n$ to $100$ at the $1\\%$ level affects the probability of a Type II error.",
+    "question": "A researcher tests whether mean daily energy intake, $\\mu\\text{ kcal}$, for teenage athletes exceeds $2000\\text{ kcal}$:<br><br>$$H_0: \\mu = 2000,\\text{ } H_1: \\mu > 2000$$<br>Intake follows $X \\sim N(\\mu, 240^2)$. A sample of $n = 64$ athletes is tested at the $1\\%$ significance level.<br><br><strong>(a)</strong> Define a Type I error and state its probability for this test.<br><br><strong>(b)</strong> Describe what a Type II error represents in this context.<br><br><strong>(c)</strong> Determine the critical value of the sample mean $\\bar{x}$ above which $H_0$ is rejected.<br><br><strong>(d)</strong> Explain how increasing $n$ to $100$ at the $1\\%$ level affects the probability of a Type II error.",
     "steps": [
         "<strong>(a) Defining Type I Error:</strong><br><br>A Type I error occurs when the null hypothesis $H_0$ is rejected when it is actually true.<br><br>For a continuous hypothesis test, the probability of a Type I error equals the significance level:\\begin{aligned} \\text{P}(\\text{Type I error}) &= 0.01 \\text{ (or } 1\\%\\text{)} \\end{aligned}",
         "<strong>(b) Contextualising Type II Error:</strong><br><br>A Type II error occurs when $H_0$ is not rejected despite being false.<br><br>In context: concluding that the athletes' mean intake does not exceed $2000\\text{ kcal}$ when their true mean intake is actually greater than $2000\\text{ kcal}$.",
@@ -1426,7 +1426,211 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Adding Variances for Differences",
-        "content": "When taking the difference between two independent random variables $\\bar{X}_1 - \\bar{X}_2$, never subtract their variances. Variances always add: $\\text{Var}(\\bar{X}_1 - \\bar{X}_2) = \\text{Var}(\\bar{X}_1) + \\text{Var}(\\bar{X}_2)$. Uncertainty always compounds regardless of whether you add or subtract the measurements."
+        "content": "When taking the difference between two independent random variables $\\bar{X}_1 - \\bar{X}_2$, never subtract their variances. Variances always add: \\begin{aligned}&\\text{Var}(\\bar{X}_1 - \\bar{X}_2)\\cr & \\qquad = \\text{Var}(\\bar{X}_1) + \\text{Var}(\\bar{X}_2)\\end{aligned} Uncertainty always compounds regardless of whether you add or subtract the measurements."
+    }
+},
+{
+    "id": "050036",
+    "group_id": "050036",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Normal Distribution",
+    "subtopic": [
+        "Inverse Normal",
+        "Simultaneous Equations",
+        "Compound Normal and Binomial"
+    ],
+    "img": false,
+    "question": "An artisan bakery bakes sourdough loaves. The mass, $X$ grams, of a loaf is modelled by a normal distribution with mean $\\mu$ and standard deviation $\\sigma$.<br><br>&bull; $15\\%$ of loaves have a mass less than $785\\text{ grams}$.<br>&bull; $75\\%$ of loaves have a mass greater than $805\\text{ grams}$.<br><br><strong>(a)</strong> Find the mean and standard deviation of $X$ to $1$ decimal place.<br><br><strong>(b) (i)</strong> Find $\\text{P}(X \\neq 830)$.<br><strong>(b) (ii)</strong> Find $\\text{P}(X < 830)$ to $3$ decimal places.<br><br><strong>(c)</strong> Loaves are packed into crates of $12$. Assuming independence, calculate the probability that no more than $2$ loaves in a crate have a mass less than $830\\text{ grams}$.",
+    "steps": [
+        "<strong>(a) Setting Up and Solving Simultaneous Equations:</strong><br><br>Standardise the two given probabilities:<br><br>For $\\text{P}(X < 785) = 0.15$:\\begin{aligned} \\dfrac{785 - \\mu}{\\sigma} &= -1.0364 \\cr 785 - \\mu &= -1.0364\\sigma \\quad [1] \\end{aligned}For $\\text{P}(X > 805) = 0.75$, the lower tail is $\\text{P}(X < 805) = 0.25$:\\begin{aligned} \\dfrac{805 - \\mu}{\\sigma} &= -0.6745 \\cr 805 - \\mu &= -0.6745\\sigma \\quad [2] \\end{aligned}Subtract equation [1] from equation [2]:\\begin{aligned} 20 &= 0.3619\\sigma \\cr \\sigma &= \\dfrac{20}{0.3619} \\cr &\\approx 55.26 \\approx 55.3\\text{ g} \\end{aligned}Substitute $\\sigma = 55.26$ back into [2]:\\begin{aligned} \\mu &= 805 + 0.6745(55.26) \\cr &= 805 + 37.27 \\cr &\\approx 842.3\\text{ g} \\end{aligned}",
+        "<strong>(b) Calculating Normal Probabilities:</strong><br><br><strong>(i)</strong> For any continuous distribution, the probability of taking any exact single value is zero:\\begin{aligned} \\text{P}(X = 830) &= 0 \\cr \\text{P}(X \\neq 830) &= 1 - 0 \\cr &= 1 \\end{aligned}<strong>(ii)</strong> Standardise $X = 830$ using $\\mu = 842.27$ and $\\sigma = 55.26$:\\begin{aligned} z &= \\dfrac{830 - 842.27}{55.26} \\cr &\\approx -0.222 \\end{aligned}Find the lower tail probability:\\begin{aligned} \\text{P}(X < 830) &= \\Phi(-0.222) \\cr &= 1 - 0.5878 \\cr &= 0.4122 \\approx 0.412 \\end{aligned}",
+        "<strong>(c) Calculating Compound Binomial Probability:</strong><br><br>Let $Y$ be the number of loaves in a crate of $12$ weighing less than $830\\text{ g}$.<br><br>Then $Y \\sim B(12, 0.412)$.<br><br>Calculate $\\text{P}(Y \\le 2)$:\\begin{aligned}& \\text{P}(Y \\le 2) \\cr &\\quad = \\text{P}(Y = 0) + \\text{P}(Y = 1) \\cr &\\qquad + \\text{P}(Y = 2) \\cr &\\quad = 0.0017 + 0.0144 + 0.0554 \\cr &\\quad \\approx 0.0768 \\end{aligned}",
+        "Final Answer: (a) $\\mu = 842.3\\text{ g}$, $\\sigma = 55.3\\text{ g}$, (b) (i) $1$, (ii) $0.412$, (c) $0.0768$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\mu = 842.3\\text{ g}$, $\\sigma = 55.3\\text{ g}$, (b) (i) $0$, (ii) $0.412$, (c) $0.0768$",
+            "feedback": "In part (b)(i), $0$ is the probability that $X$ equals exactly $830$. The probability that $X$ is *not* equal to $830$ is $1 - 0 = 1$."
+        },
+        {
+            "ans": "(a) $\\mu = 795.0\\text{ g}$, $\\sigma = 10.0\\text{ g}$, (b) (i) $1$, (ii) $0.412$, (c) $0.0768$",
+            "feedback": "In part (a), the mean is not simply the average of $785$ and $805$. You must solve the simultaneous equations using inverse normal $z$-values."
+        },
+        {
+            "ans": "(a) $\\mu = 842.3\\text{ g}$, $\\sigma = 55.3\\text{ g}$, (b) (i) $1$, (ii) $0.588$, (c) $0.0768$",
+            "feedback": "In part (b)(ii), $0.588$ is the upper tail $\\text{P}(X > 830)$. The lower tail is $1 - 0.588 = 0.412$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Continuous Variables at Exact Points",
+        "content": "A classic exam trick question is $\\text{P}(X = a)$ or $\\text{P}(X \\neq a)$ for a continuous random variable. Because the area under a continuous curve above an infinitesimally narrow point is zero, $\\text{P}(X = a) = 0$ and $\\text{P}(X \\neq a) = 1$ always."
+    }
+},
+{
+    "id": "050037",
+    "group_id": "050036",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Normal Distribution",
+    "subtopic": [
+        "Inverse Normal",
+        "Asymmetric Percentiles",
+        "Binomial Modelling"
+    ],
+    "img": false,
+    "question": "A bottling plant fills bottles of olive oil. The volume, $V\\text{ ml}$, is modelled by a normal distribution with mean $\\mu$ and standard deviation $\\sigma$.<br><br>&bull; $5\\%$ of bottles contain less than $492.0\\text{ ml}$.<br>&bull; $2.5\\%$ of bottles contain more than $508.5\\text{ ml}$.<br><br><strong>(a)</strong> Find the values of $\\mu$ and $\\sigma$ to $2$ decimal places.<br><br><strong>(b)</strong> A bottle is underfilled if $V < 495.0\\text{ ml}$. Calculate the probability that a randomly chosen bottle is underfilled.<br><br><strong>(c)</strong> A delivery contains $24$ independently filled bottles. Calculate the probability that exactly $2$ bottles are underfilled.",
+    "steps": [
+        "<strong>(a) Setting Up and Solving Simultaneous Equations:</strong><br><br>Standardise the two tail probabilities:<br><br>For $\\text{P}(V < 492.0) = 0.05$:\\begin{aligned} \\dfrac{492.0 - \\mu}{\\sigma} &= -1.6449 \\cr 492.0 - \\mu &= -1.6449\\sigma \\quad [1] \\end{aligned}For $\\text{P}(V > 508.5) = 0.025$, the upper tail $z$-value is $1.9600$:\\begin{aligned} \\dfrac{508.5 - \\mu}{\\sigma} &= 1.9600 \\cr 508.5 - \\mu &= 1.9600\\sigma \\quad [2] \\end{aligned}Subtract equation [1] from equation [2]:\\begin{aligned} 16.5 &= 3.6049\\sigma \\cr \\sigma &= \\dfrac{16.5}{3.6049} \\cr &\\approx 4.58\\text{ ml} \\end{aligned}Substitute $\\sigma = 4.577$ into [2]:\\begin{aligned} \\mu &= 508.5 - 1.9600(4.577) \\cr &= 508.5 - 8.97 \\cr &\\approx 499.53\\text{ ml} \\end{aligned}",
+        "<strong>(b) Calculating Probability of an Underfilled Bottle:</strong><br><br>Standardise $V = 495.0$ using $\\mu = 499.53$ and $\\sigma = 4.58$:\\begin{aligned} z &= \\dfrac{495.0 - 499.53}{4.58} \\cr &= \\dfrac{-4.53}{4.58} \\cr &\\approx -0.989 \\end{aligned}Calculate the underfill probability:\\begin{aligned} \\text{P}(V < 495.0) &= \\Phi(-0.989) \\cr &= 1 - 0.8387 \\cr &= 0.1613 \\end{aligned}",
+        "<strong>(c) Calculating Delivery Binomial Probability:</strong><br><br>Let $Y$ be the number of underfilled bottles in $24$, so $Y \\sim B(24, 0.1613)$:\\begin{aligned} \\text{P}(Y = 2) &= \\binom{24}{2}(0.1613)^2(0.8387)^{22} \\cr &= 276 \\times (0.02602) \\cr &\\qquad \\times (0.02081) \\cr &\\approx 0.149 \\end{aligned}",
+        "Final Answer: (a) $\\mu = 499.53\\text{ ml}$, $\\sigma = 4.58\\text{ ml}$, (b) $0.1613$, (c) $0.149$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\mu = 499.53\\text{ ml}$, $\\sigma = 4.58\\text{ ml}$, (b) $0.1613$, (c) $0.0260$",
+            "feedback": "In part (c), forgetting the binomial coefficient $\\binom{24}{2} = 276$ calculates the probability for one specific order of bottles rather than any $2$ out of $24$."
+        },
+        {
+            "ans": "(a) $\\mu = 500.25\\text{ ml}$, $\\sigma = 5.00\\text{ ml}$, (b) $0.1613$, (c) $0.149$",
+            "feedback": "In part (a), using rounded symmetric $z$-values of $\\pm 2$ leads to incorrect parameter estimates. The precise $z$-values are $-1.6449$ and $1.9600$."
+        },
+        {
+            "ans": "(a) $\\mu = 499.53\\text{ ml}$, $\\sigma = 4.58\\text{ ml}$, (b) $0.8387$, (c) $0.149$",
+            "feedback": "In part (b), $0.8387$ is the probability that a bottle is *not* underfilled ($\\text{P}(V > 495.0)$). For underfilling, evaluate the lower tail: $1 - 0.8387 = 0.1613$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Checking Inverse Normal Signs",
+        "content": "When setting up simultaneous equations for the normal distribution, double-check your signs: percentiles below $50\\%$ must have negative $z$-values (e.g. $5\\% \\implies z = -1.6449$), while percentiles above $50\\%$ must have positive $z$-values (e.g. $97.5\\% \\implies z = +1.9600$)."
+    }
+},
+{
+    "id": "050038",
+    "group_id": "050036",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Normal Distribution",
+    "subtopic": [
+        "Conditional Normal Probability",
+        "Standardisation",
+        "Binomial Application"
+    ],
+    "img": false,
+    "question": "The operating lifetime, $T$ hours, of an LED spotlight is normally distributed with mean $\\mu = 12000\\text{ hours}$ and standard deviation $\\sigma = 1500\\text{ hours}$.<br><br><strong>(a)</strong> Find the probability that a randomly chosen spotlight lasts longer than $13500\\text{ hours}$.<br><br><strong>(b)</strong> A spotlight has functioned for $10500\\text{ hours}$ without failing. Calculate the conditional probability that its total lifetime exceeds $13500\\text{ hours}$.<br><br><strong>(c)</strong> An art gallery installs $8$ of these spotlights. Find the probability that at least $6$ of them last longer than $11000\\text{ hours}$.",
+    "steps": [
+        "<strong>(a) Calculating $\\text{P}(T > 13500)$:</strong><br><br>Standardise $T = 13500$:\\begin{aligned} z &= \\dfrac{13500 - 12000}{1500} \\cr &= \\dfrac{1500}{1500} \\cr &= 1.0 \\end{aligned}Calculate the upper tail probability:\\begin{aligned} \\text{P}(T > 13500) &= 1 - \\Phi(1.0) \\cr &= 1 - 0.8413 \\cr &= 0.1587 \\end{aligned}",
+        "<strong>(b) Calculating Conditional Probability:</strong><br><br>Apply the definition of conditional probability:\\begin{aligned} \\text{P}(T > 13500 \\mid T > 10500) &= \\dfrac{\\text{P}(T > 13500)}{\\text{P}(T > 10500)} \\end{aligned}Standardise $T = 10500$:\\begin{aligned} z &= \\dfrac{10500 - 12000}{1500} \\cr &= -1.0 \\cr \\text{P}(T > 10500) &= \\Phi(1.0) \\cr &= 0.8413 \\end{aligned}Substitute into the conditional ratio:\\begin{aligned} \\text{P}(T > 13500 \\mid T > 10500) &= \\dfrac{0.1587}{0.8413} \\cr &\\approx 0.1886 \\end{aligned}",
+        "<strong>(c) Calculating Multi-Spotlight Binomial Probability:</strong><br><br>Find the probability that an individual spotlight exceeds $11000\\text{ hours}$:\\begin{aligned} z &= \\dfrac{11000 - 12000}{1500} \\cr &\\approx -0.667 \\cr p &= \\Phi(0.667) \\cr &\\approx 0.7476 \\end{aligned}Let $Y \\sim B(8, 0.7476)$ be the number lasting longer than $11000\\text{ hours}$:\\begin{aligned}& \\text{P}(Y \\ge 6) \\cr &\\quad = \\text{P}(Y = 6) + \\text{P}(Y = 7) + \\text{P}(Y = 8) \\cr &\\quad = 0.3107 + 0.2645 + 0.0979 \\cr &\\quad \\approx 0.678 \\end{aligned}",
+        "Final Answer: (a) $0.1587$, (b) $0.1886$, (c) $0.678$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.1587$, (b) $0.1587$, (c) $0.678$",
+            "feedback": "In part (b), conditional probability requires dividing $\\text{P}(T > 13500)$ by the conditioning probability $\\text{P}(T > 10500) = 0.8413$, giving $0.1886$."
+        },
+        {
+            "ans": "(a) $0.8413$, (b) $0.1886$, (c) $0.678$",
+            "feedback": "In part (a), $0.8413$ is $\\text{P}(T < 13500)$. For spotlights lasting longer than $13500\\text{ hours}$, subtract from $1$: $1 - 0.8413 = 0.1587$."
+        },
+        {
+            "ans": "(a) $0.1587$, (b) $0.1886$, (c) $0.322$",
+            "feedback": "In part (c), $0.322$ is $\\text{P}(Y \\le 5)$. For at least $6$ spotlights, calculate $\\text{P}(Y \\ge 6) = 1 - \\text{P}(Y \\le 5) = 0.678$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Conditional Normal Probabilities",
+        "content": "For conditional probability $\\text{P}(A \\mid B) = \\dfrac{\\text{P}(A \\cap B)}{\\text{P}(B)}$, when event $A$ is a subset of $B$ (such as $T > 13500$ being entirely inside $T > 10500$), the numerator simply collapses to $\\text{P}(A)$."
+    }
+},
+{
+    "id": "050039",
+    "group_id": "050036",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Normal Distribution",
+    "subtopic": [
+        "Tolerance Limits",
+        "Standard Deviation Adjustment",
+        "Quality Control"
+    ],
+    "img": false,
+    "question": "A workshop produces cylindrical steel pins with diameter $D\\text{ mm} \\sim N(20.00, 0.08^2)$.<br><br>A pin is acceptable if $19.85\\text{ mm} \\le D \\le 20.15\\text{ mm}$.<br><br><strong>(a)</strong> Find the proportion of pins that meet the specification.<br><br><strong>(b)</strong> The workshop recalibrates its machinery so that $\\mu$ remains $20.00\\text{ mm}$. Find the maximum standard deviation, $\\sigma_{\\text{new}}$, required so that at least $99\\%$ of pins meet the specification, giving your answer to $3$ decimal places.",
+    "steps": [
+        "<strong>(a) Calculating the Proportion Meeting Specification:</strong><br><br>Standardise the boundary values $19.85$ and $20.15$ using $\\mu = 20.00$ and $\\sigma = 0.08$:\\begin{aligned} z &= \\dfrac{20.15 - 20.00}{0.08} \\cr &= \\dfrac{0.15}{0.08} \\cr &= 1.875 \\end{aligned}By symmetry, the lower standardized limit is $z = -1.875$.<br><br>Calculate the proportion between the limits:\\begin{aligned}& \\text{P}(-1.875 \\le Z \\le 1.875) \\cr &\\quad = 2\\Phi(1.875) - 1 \\cr &\\quad = 2(0.9696) - 1 \\cr &\\quad = 0.9392 \\end{aligned}",
+        "<strong>(b) Determining Maximum Allowable Standard Deviation:</strong><br><br>We require $\\text{P}(19.85 \\le D \\le 20.15) = 0.99$.<br><br>By symmetry, this leaves $1\\%$ split equally into two $0.5\\%$ tails ($0.005$ in each tail).<br><br>The upper $z$-value corresponds to cumulative probability $0.995$:\\begin{aligned} z = 2.5758 \\end{aligned}Set up the standardisation equation for the upper bound $20.15$:\\begin{aligned} \\dfrac{20.15 - 20.00}{\\sigma_{\\text{new}}} &= 2.5758 \\cr \\dfrac{0.15}{\\sigma_{\\text{new}}} &= 2.5758 \\cr \\sigma_{\\text{new}} &= \\dfrac{0.15}{2.5758} \\cr &\\approx 0.058\\text{ mm} \\end{aligned}",
+        "Final Answer: (a) $0.9392$, (b) $\\sigma_{\\text{new}} = 0.058\\text{ mm}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.9392$, (b) $\\sigma_{\\text{new}} = 0.065\\text{ mm}$",
+            "feedback": "In part (b), using $z = 2.326$ corresponds to a cumulative probability of $0.99$ (a one-tailed $1\\%$ tail). Because the tolerance limits are two-sided, each tail contains $0.5\\%$, requiring $z = 2.5758$."
+        },
+        {
+            "ans": "(a) $0.4696$, (b) $\\sigma_{\\text{new}} = 0.058\\text{ mm}$",
+            "feedback": "In part (a), evaluating only $\\Phi(1.875) - 0.5 = 0.4696$ calculates the proportion between the mean and the upper limit. You must include both halves: $2(0.4696) = 0.9392$."
+        },
+        {
+            "ans": "(a) $0.9392$, (b) $\\sigma_{\\text{new}} = 0.076\\text{ mm}$",
+            "feedback": "In part (b), dividing $0.15$ by $1.96$ calculates the standard deviation for a $95\\%$ tolerance window rather than a $99\\%$ window."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Two-Tailed Central Tolerance",
+        "content": "When an engineering tolerance specifies a central $99\\%$ interval, remember to split the remaining $1\\%$ equally across both tails ($0.5\\%$ on each side). Always look up $0.995$ on the inverse normal distribution ($z = 2.5758$), never $0.990$."
+    }
+},
+{
+    "id": "050040",
+    "group_id": "050036",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "Hypothesis Testing for a Normal Mean",
+    "subtopic": [
+        "Sample Mean Testing",
+        "Critical Value",
+        "Sampling Assumptions"
+    ],
+    "img": false,
+    "question": "A vending machine dispenses hot chocolate with a target mean volume of $220\\text{ ml}$ and standard deviation $\\sigma = 12\\text{ ml}$.<br><br>A sample of $16$ cups has a sample mean of $\\bar{x} = 213.5\\text{ ml}$. Assume volume follows $X \\sim N(\\mu, 12^2)$.<br><br><strong>(a)</strong> Stating your hypotheses clearly, test at the $1\\%$ level whether the machine is underfilling cups on average.<br><br><strong>(b)</strong> Determine the critical value of the sample mean $\\bar{x}$ for this test.<br><br><strong>(c)</strong> State an essential assumption about the sampling process required for this test.",
+    "steps": [
+        "<strong>(a) Conducting the Hypothesis Test:</strong><br><br>State the one-tailed hypotheses:\\begin{aligned} H_0&: \\mu = 220 \\cr H_1&: \\mu < 220 \\end{aligned}Under $H_0$, the sample mean follows $\\bar{X} \\sim N\\left(220, \\dfrac{12^2}{16}\\right) = N(220, 9)$.<br><br>Calculate the standard error:\\begin{aligned} \\text{SE} &= \\dfrac{12}{\\sqrt{16}} \\cr &= \\dfrac{12}{4} \\cr &= 3 \\end{aligned}Calculate the test statistic $z$:\\begin{aligned} z &= \\dfrac{213.5 - 220}{3} \\cr &= \\dfrac{-6.5}{3} \\cr &\\approx -2.167 \\end{aligned}For a one-tailed test at the $1\\%$ level, the critical value is $-2.326$.<br><br>Compare the test statistic with the critical threshold:\\begin{aligned} -2.167 > -2.326 \\end{aligned}Since $-2.167$ is not in the critical region, do not reject $H_0$.<br><br>There is insufficient evidence at the $1\\%$ significance level to suggest that the machine is underfilling cups on average.",
+        "<strong>(b) Calculating the Critical Value of $\\bar{x}$:</strong><br><br>Convert the critical $z$-value back into millilitres:\\begin{aligned} \\bar{x}_{\\text{crit}} &= 220 - 2.326(3) \\cr &= 220 - 6.978 \\cr &\\approx 213.0\\text{ ml} \\end{aligned}The critical region is $\\bar{X} < 213.0\\text{ ml}$.",
+        "<strong>(c) Stating the Sampling Assumption:</strong><br><br>The $16$ cups must be a <strong>random sample</strong>, meaning that the volume dispensed into each cup is mutually independent and representative of the machine's ongoing output.",
+        "Final Answer: (a) Do not reject $H_0$ as $-2.167 > -2.326$, (b) $\\bar{x}_{\\text{crit}} = 213.0\\text{ ml}$, (c) Cups form a random and mutually independent sample"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Reject $H_0$ as $-2.167 < -1.645$, (b) $\\bar{x}_{\\text{crit}} = 213.0\\text{ ml}$, (c) Cups form a random and mutually independent sample",
+            "feedback": "Using $-1.645$ tests at the $5\\%$ level. The question explicitly specifies testing at the $1\\%$ significance level, where the critical value is $-2.326$."
+        },
+        {
+            "ans": "(a) Do not reject $H_0$ as $-2.167 > -2.326$, (b) $\\bar{x}_{\\text{crit}} = 215.1\\text{ ml}$, (c) Cups form a random and mutually independent sample",
+            "feedback": "In part (b), subtracting $2.326 \\times 12$ forgets to divide by $\\sqrt{n} = 4$. The standard error is $3$, giving $\\bar{x}_{\\text{crit}} = 213.0\\text{ ml}$."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $-2.167 < 0$, (b) $\\bar{x}_{\\text{crit}} = 213.0\\text{ ml}$, (c) Vending machine must be cleaned daily",
+            "feedback": "In part (a), having a negative $z$-score is not sufficient to reject $H_0$; it must be more extreme than the critical threshold $-2.326$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Independence in Machine Sampling",
+        "content": "In sampling questions involving machinery, the essential assumption is independence. If an inspector tests $16$ consecutive cups in $5$ minutes, temperature or pressure buildup may cause successive volumes to correlate, violating the assumption of a random, independent sample."
     }
 }
 ];
