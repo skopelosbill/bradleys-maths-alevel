@@ -1221,5 +1221,212 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Fragility of PMCC to Outliers",
         "content": "The product moment correlation coefficient is not a resistant statistic. A single extreme leverage point can produce a statistically significant correlation where none exists in the rest of the sample. Always inspect a scatter plot alongside $r$."
     }
+},
+{
+    "id": "050031",
+    "group_id": "050031",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "The Large Data Set",
+    "subtopic": [
+        "Normal Hypothesis Testing",
+        "Type I Error",
+        "Data Interpretation"
+    ],
+    "img": "images/Statistics_pngs/050031.png",
+    "question": "The graph shows the amount of sugar, in grams, purchased per person per week in England between 2001&ndash;02 and 2014, based upon the Large Data Set.<br><br>Toby believes that the amount of sugar consumed by people in England decreased greatly during this period. Sarah says that this is not necessarily the case.<br><br><strong>(a)</strong> Using your knowledge of the Large Data Set, give two reasons why Sarah may be correct.<br><br><strong>(b)</strong> The mean amount of butter purchased per person per week in 2014 was $42.5\\text{ grams}$, with standard deviation $14.0\\text{ grams}$. In 2018, a random sample of $784$ people had a mean of $43.6\\text{ grams}$.<br><br>Test at the $5\\%$ level whether the mean amount of butter purchased has changed, assuming $\\sigma$ remains $14.0\\text{ grams}$.<br><br><strong>(c)</strong> In another test for cheese purchases, $H_0$ is rejected at the $5\\%$ level. With reference to the $5\\%$ level, explain why there may not have been a genuine change.",
+    "steps": [
+        "<strong>(a) Two Reasons Why Sarah May Be Correct:</strong><br><br><strong>1. Purchases versus Consumption:</strong> The Large Data Set records food <em>purchased</em> brought into the home, not food actually <em>consumed</em>. Significant amounts of purchased sugar may be wasted, discarded, or used for non-dietary preserving.<br><br><strong>2. Exclusion of Food Eaten Out:</strong> The graph shows household food purchases only, ignoring sugar consumed outside the home in cafes, restaurants, takeaways, and pre-packaged snacks.",
+        "<strong>(b) Conducting the Hypothesis Test for Butter:</strong><br><br>State the two-tailed hypotheses:\\begin{aligned} H_0&: \\mu = 42.5 \\cr H_1&: \\mu \\neq 42.5 \\end{aligned}Under $H_0$, the sample mean follows $\\bar{X} \\sim N\\left(42.5, \\dfrac{14.0^2}{784}\\right)$.<br><br>Calculate the standard error:\\begin{aligned} \\text{SE} &= \\dfrac{14.0}{\\sqrt{784}} \\cr &= \\dfrac{14.0}{28} \\cr &= 0.5 \\end{aligned}Calculate the test statistic $z$:\\begin{aligned} z &= \\dfrac{43.6 - 42.5}{0.5} \\cr &= \\dfrac{1.1}{0.5} \\cr &= 2.2 \\end{aligned}For a two-tailed test at the $5\\%$ level, the critical values are $\\pm 1.96$.<br><br>Since $2.2 > 1.96$, the result lies in the critical region. Reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level that the mean amount of butter purchased per person has changed between 2014 and 2018.",
+        "<strong>(c) Interpreting the Significance Level:</strong><br><br>A test conducted at the $5\\%$ significance level carries an inherent $5\\%$ probability of committing a Type I error (rejecting $H_0$ when $H_0$ is true).<br><br>Therefore, there is a $1$ in $20$ chance that this significant result was simply an unusual random sample from an unchanged population.",
+        "Final Answer: (a) Purchases do not equal consumption and food eaten out is excluded, (b) Reject $H_0$ as $2.2 > 1.96$, (c) A $5\\%$ significance level carries a $5\\%$ probability of a Type I error"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Purchases do not equal consumption and food eaten out is excluded, (b) Do not reject $H_0$ as $2.2 < 2.58$, (c) A $5\\%$ significance level carries a $5\\%$ probability of a Type I error",
+            "feedback": "In part (b), comparing against $2.58$ applies the critical value for a $1\\%$ significance level. At the specified $5\\%$ level, the critical value is $1.96$."
+        },
+        {
+            "ans": "(a) The sample size was too small and the data was measured in kilograms, (b) Reject $H_0$ as $2.2 > 1.96$, (c) A $5\\%$ significance level carries a $5\\%$ probability of a Type I error",
+            "feedback": "In part (a), the Large Data Set spans thousands of households and explicitly measures food in grams per person per week. The limitations relate to waste and food eaten out."
+        },
+        {
+            "ans": "(a) Purchases do not equal consumption and food eaten out is excluded, (b) Reject $H_0$ as $2.2 > 1.96$, (c) The sample size was too large so the test is automatically invalid",
+            "feedback": "In part (c), a large sample size does not invalidate a hypothesis test; it improves precision. The uncertainty stems directly from the significance level (Type I error rate)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Purchased vs Consumed",
+        "content": "A hallmark question in Large Data Set exams tests the difference between purchase and consumption. In the Family Food data, purchases represent food brought into the household, not actual calorie intake. Food waste, pet food use, and eating out mean purchase trends never equate directly to dietary consumption."
+    }
+},
+{
+    "id": "050032",
+    "group_id": "050031",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "Hypothesis Testing for a Normal Mean",
+    "subtopic": [
+        "One-Tailed Normal Test",
+        "Critical Region for Sample Mean",
+        "P-Value Calculation"
+    ],
+    "img": false,
+    "question": "In 2014, the mean volume of sugary drinks purchased per person per week in a region was $850\\text{ ml}$, with standard deviation $180\\text{ ml}$.<br><br>In 2018, a random sample of $400$ people had a sample mean of $832\\text{ ml}$. Assume $\\sigma$ remains $180\\text{ ml}$.<br><br><strong>(a)</strong> Stating your hypotheses clearly, test at the $2.5\\%$ level whether the mean weekly volume purchased has decreased.<br><br><strong>(b)</strong> State the critical value and the critical region for the sample mean $\\bar{X}$.<br><br><strong>(c)</strong> Calculate the $p$-value for the test statistic.",
+    "steps": [
+        "<strong>(a) Conducting the One-Tailed Hypothesis Test:</strong><br><br>State the one-tailed hypotheses:\\begin{aligned} H_0&: \\mu = 850 \\cr H_1&: \\mu < 850 \\end{aligned}Calculate the standard error of the sample mean:\\begin{aligned} \\text{SE} &= \\dfrac{180}{\\sqrt{400}} \\cr &= \\dfrac{180}{20} \\cr &= 9 \\end{aligned}Calculate the test statistic $z$:\\begin{aligned} z &= \\dfrac{832 - 850}{9} \\cr &= \\dfrac{-18}{9} \\cr &= -2.0 \\end{aligned}For a one-tailed test at the $2.5\\%$ level, the critical value is $-1.96$.<br><br>Since $-2.0 < -1.96$, reject $H_0$.<br><br>There is significant evidence at the $2.5\\%$ level that the mean volume of soft drinks purchased has decreased.",
+        "<strong>(b) Determining the Critical Region for $\\bar{X}$:</strong><br><br>Find the boundary value for $\\bar{X}$ corresponding to $z = -1.96$:\\begin{aligned} \\bar{x}_{\\text{crit}} &= 850 - 1.96(9) \\cr &= 850 - 17.64 \\cr &= 832.36\\text{ ml} \\end{aligned}The critical region for the sample mean is:\\begin{aligned} \\bar{X} < 832.36\\text{ ml} \\end{aligned}",
+        "<strong>(c) Calculating the $p$-Value:</strong><br><br>Calculate the probability of observing a value as extreme as $z = -2.0$ under $H_0$:\\begin{aligned} p\\text{-value} &= \\text{P}(Z < -2.0) \\cr &= 1 - \\Phi(2.0) \\cr &= 1 - 0.9772 \\cr &= 0.0228 \\end{aligned}",
+        "Final Answer: (a) Reject $H_0$ as $-2.0 < -1.96$, (b) $\\bar{X} < 832.36\\text{ ml}$, (c) $0.0228$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Do not reject $H_0$ as $-2.0 > -2.326$, (b) $\\bar{X} < 832.36\\text{ ml}$, (c) $0.0228$",
+            "feedback": "Using $-2.326$ tests at the $1\\%$ level. For a one-tailed test at the specified $2.5\\%$ level, the critical value is $-1.96$."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $-2.0 < -1.96$, (b) $\\bar{X} < 835.00\\text{ ml}$, (c) $0.0456$",
+            "feedback": "In part (c), $0.0456 = 2 \\times 0.0228$ is the two-tailed $p$-value. For a one-tailed test of decrease, the $p$-value is $0.0228$."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $-2.0 < -1.96$, (b) $\\bar{X} < 814.72\\text{ ml}$, (c) $0.0228$",
+            "feedback": "In part (b), subtracting $1.96 \\times 180$ forgets to divide the standard deviation by $\\sqrt{n}$. The standard error is $9$, giving $832.36\\text{ ml}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Critical Regions in Original Units",
+        "content": "When an exam asks for the critical region *'in terms of $\\bar{X}$'*, convert from standard $z$ back into the variable units: $\\bar{x}_{\\text{crit}} = \\mu_0 \\pm z_{\\text{crit}}\\left(\\dfrac{\\sigma}{\\sqrt{n}}\\right)$. Stating only $z < -1.96$ will lose the final accuracy mark."
+    }
+},
+{
+    "id": "050033",
+    "group_id": "050031",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "Statistical Hypothesis Testing",
+    "subtopic": [
+        "Type I and Type II Errors",
+        "Sample Size and Power",
+        "Normal Mean Test"
+    ],
+    "img": false,
+    "question": "A researcher tests whether mean daily energy intake, $\\mu\\text{ kcal}$, for teenage athletes exceeds $2000\\text{ kcal}$:<br><br>$$H_0: \\mu = 2000 \\qquad H_1: \\mu > 2000$$<br>Intake follows $X \\sim N(\\mu, 240^2)$. A sample of $n = 64$ athletes is tested at the $1\\%$ significance level.<br><br><strong>(a)</strong> Define a Type I error and state its probability for this test.<br><br><strong>(b)</strong> Describe what a Type II error represents in this context.<br><br><strong>(c)</strong> Determine the critical value of the sample mean $\\bar{x}$ above which $H_0$ is rejected.<br><br><strong>(d)</strong> Explain how increasing $n$ to $100$ at the $1\\%$ level affects the probability of a Type II error.",
+    "steps": [
+        "<strong>(a) Defining Type I Error:</strong><br><br>A Type I error occurs when the null hypothesis $H_0$ is rejected when it is actually true.<br><br>For a continuous hypothesis test, the probability of a Type I error equals the significance level:\\begin{aligned} \\text{P}(\\text{Type I error}) &= 0.01 \\text{ (or } 1\\%\\text{)} \\end{aligned}",
+        "<strong>(b) Contextualising Type II Error:</strong><br><br>A Type II error occurs when $H_0$ is not rejected despite being false.<br><br>In context: concluding that the athletes' mean intake does not exceed $2000\\text{ kcal}$ when their true mean intake is actually greater than $2000\\text{ kcal}$.",
+        "<strong>(c) Calculating the Critical Value of $\\bar{x}$:</strong><br><br>Calculate the standard error for $n = 64$:\\begin{aligned} \\text{SE} &= \\dfrac{240}{\\sqrt{64}} \\cr &= \\dfrac{240}{8} \\cr &= 30 \\end{aligned}For a one-tailed upper test at the $1\\%$ level, the critical $z$-value is $2.326$.<br><br>Calculate the critical value for $\\bar{x}$:\\begin{aligned} \\bar{x}_{\\text{crit}} &= 2000 + 2.326(30) \\cr &= 2000 + 69.78 \\cr &= 2069.8\\text{ kcal} \\end{aligned}",
+        "<strong>(d) Effect of Increasing Sample Size on Type II Error:</strong><br><br>Increasing the sample size from $64$ to $100$ reduces the standard error ($\\text{SE} = 240/10 = 24$).<br><br>This narrows the sampling distributions of $\\bar{X}$, increasing test power and thereby <strong>decreasing</strong> the probability of committing a Type II error.",
+        "Final Answer: (a) Rejecting $H_0$ when true, probability is $0.01$, (b) Concluding intake does not exceed $2000\\text{ kcal}$ when it genuinely does, (c) $2069.8\\text{ kcal}$, (d) Decreases because larger $n$ narrows standard error"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Rejecting $H_0$ when true, probability is $0.05$, (b) Concluding intake does not exceed $2000\\text{ kcal}$ when it genuinely does, (c) $2069.8\\text{ kcal}$, (d) Decreases because larger $n$ narrows standard error",
+            "feedback": "In part (a), the test is conducted at the $1\\%$ significance level, so the probability of committing a Type I error is $0.01$, not $0.05$."
+        },
+        {
+            "ans": "(a) Rejecting $H_0$ when true, probability is $0.01$, (b) Concluding intake does not exceed $2000\\text{ kcal}$ when it genuinely does, (c) $2049.0\\text{ kcal}$, (d) Decreases because larger $n$ narrows standard error",
+            "feedback": "In part (c), using $z = 1.645$ corresponds to a $5\\%$ level. For a $1\\%$ level, $z = 2.326$, yielding $\\bar{x}_{\\text{crit}} = 2069.8\\text{ kcal}$."
+        },
+        {
+            "ans": "(a) Rejecting $H_0$ when true, probability is $0.01$, (b) Concluding intake does not exceed $2000\\text{ kcal}$ when it genuinely does, (c) $2069.8\\text{ kcal}$, (d) Increases because a larger sample detects more variation",
+            "feedback": "In part (d), increasing sample size always reduces standard error and increases power, which decreases (not increases) the chance of a Type II error."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: The Error Trade-Off",
+        "content": "Remember the fundamental relationship: for a fixed sample size, reducing Type I error (e.g. from $5\\%$ to $1\\%$) pushes the critical boundary outward, which increases Type II error. The only way to decrease both Type I and Type II errors simultaneously is to increase the sample size $n$."
+    }
+},
+{
+    "id": "050034",
+    "group_id": "050031",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "The Large Data Set",
+    "topic": "The Large Data Set",
+    "subtopic": [
+        "Data Limitations",
+        "Sampling Bias",
+        "Aggregation Difficulties"
+    ],
+    "img": false,
+    "question": "A student consults the Family Food Large Data Set to investigate UK nutritional intake.<br><br><strong>(a)</strong> The data records household food purchases in grams per person per week. Explain why using purchase data to infer individual dietary consumption has inherent limitations, giving two distinct reasons.<br><br><strong>(b)</strong> The data provides separate tables for <em>Food Brought Home</em> and <em>Food Eaten Out</em>. State one difficulty in directly aggregating these two tables to determine total nutrient intake.<br><br><strong>(c)</strong> The student takes a sample of households from London across three consecutive months. Give two reasons why this sample may fail to represent national UK food consumption.",
+    "steps": [
+        "<strong>(a) Inherent Limitations of Purchase Data:</strong><br><br><strong>1. Food Wastage:</strong> Food purchases do not equal consumption because portions are discarded, spoiled, left uneaten, or fed to domestic pets.<br><br><strong>2. Intra-Household Inequality:</strong> The data divides total purchases equally by household size. In reality, food is not consumed equally; adults and children have very different caloric and nutrient intakes.",
+        "<strong>(b) Difficulty in Aggregating Home and Eaten Out Data:</strong><br><br>Food eaten out is frequently recorded by expenditure (£) or by broad menu item categories rather than by weight (grams).<br><br>Converting restaurant meals into exact ingredient weights and nutrient breakdowns is unreliable.",
+        "<strong>(c) Sources of Bias in the London Three-Month Sample:</strong><br><br><strong>1. Geographical and Demographic Bias:</strong> London has distinct demographics, average income levels, and cultural food availability compared to rural or other UK regions.<br><br><strong>2. Seasonal Bias:</strong> Three consecutive months (e.g. summer or winter) fail to capture seasonal shifts in food purchases across the full calendar year.",
+        "Final Answer: (a) Food wastage and unequal intra-household distribution, (b) Difficult to convert restaurant expenditure into grams of nutrients, (c) Regional demographic differences and seasonal eating patterns"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Food is measured in metric units and surveys are anonymous, (b) Difficult to convert restaurant expenditure into grams of nutrients, (c) Regional demographic differences and seasonal eating patterns",
+            "feedback": "In part (a), metric units and anonymity are standard survey features, not limitations. The critical limitations are food waste and unequal intra-household consumption."
+        },
+        {
+            "ans": "(a) Food wastage and unequal intra-household distribution, (b) Food eaten out is illegal to record under data protection laws, (c) Regional demographic differences and seasonal eating patterns",
+            "feedback": "In part (b), recording eaten-out food is standard public health research; the difficulty is converting commercial meals into exact nutrient weights."
+        },
+        {
+            "ans": "(a) Food wastage and unequal intra-household distribution, (b) Difficult to convert restaurant expenditure into grams of nutrients, (c) London has too few residents to sample properly",
+            "feedback": "In part (c), London has a vast population; the bias arises from its unique demographic profile and the seasonal restriction of a three-month window."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Scoring Non-Calculation LDS Marks",
+        "content": "To score full marks on qualitative Large Data Set questions, you must provide context-specific answers. Stating *'the data may be biased'* gets zero marks. You must refer specifically to the context: *'food eaten outside the home'* or *'seasonal variation across winter and summer'*."
+    }
+},
+{
+    "id": "050035",
+    "group_id": "050031",
+    "branch": "Statistics",
+    "board": "AQA",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "Hypothesis Testing for a Normal Mean",
+    "subtopic": [
+        "Difference Between Two Means",
+        "Central Limit Theorem",
+        "Regional Comparison"
+    ],
+    "img": false,
+    "question": "An economist compares mean weekly vegetable expenditure between households in the South East ($1$) and the North East ($2$):<br><br>&bull; South East: $n_1 = 100$, $\\bar{x}_1 = £8.45$, assumed $\\sigma_1 = £2.20$<br>&bull; North East: $n_2 = 100$, $\\bar{x}_2 = £7.85$, assumed $\\sigma_2 = £2.00$<br><br><strong>(a)</strong> State suitable hypotheses to test whether mean expenditures differ.<br><br><strong>(b)</strong> State the distribution of $\\bar{X}_1 - \\bar{X}_2$ under $H_0$.<br><br><strong>(c)</strong> Test at the $5\\%$ level whether there is a significant difference in mean expenditure.<br><br><strong>(d)</strong> Explain why the test is valid even if individual expenditures are not normally distributed.",
+    "steps": [
+        "<strong>(a) Stating the Hypotheses:</strong><br><br>Testing for a difference without specifying direction requires a two-tailed test:\\begin{aligned} H_0&: \\mu_1 = \\mu_2 \\cr H_1&: \\mu_1 \\neq \\mu_2 \\end{aligned}This can also be written as $H_0: \\mu_1 - \\mu_2 = 0$ and $H_1: \\mu_1 - \\mu_2 \\neq 0$.",
+        "<strong>(b) Distribution of Difference Between Means:</strong><br><br>Under $H_0$, $\\text{E}(\\bar{X}_1 - \\bar{X}_2) = 0$.<br><br>Calculate the combined variance:\\begin{aligned}& \\text{Var}(\\bar{X}_1 - \\bar{X}_2) \\cr &\\quad = \\dfrac{\\sigma_1^2}{n_1} + \\dfrac{\\sigma_2^2}{n_2} \\cr &\\quad = \\dfrac{2.20^2}{100} + \\dfrac{2.00^2}{100} \\cr &\\quad = 0.0484 + 0.0400 \\cr &\\quad = 0.0884 \\end{aligned}Therefore:\\begin{aligned} \\bar{X}_1 - \\bar{X}_2 \\sim N(0, 0.0884) \\end{aligned}",
+        "<strong>(c) Conducting the Two-Tailed Test:</strong><br><br>Calculate the standard error:\\begin{aligned} \\text{SE} &= \\sqrt{0.0884} \\cr &\\approx 0.2973 \\end{aligned}Calculate the test statistic $z$ for observed difference $8.45 - 7.85 = 0.60$:\\begin{aligned} z &= \\dfrac{0.60}{0.2973} \\cr &\\approx 2.018 \\end{aligned}For a two-tailed test at the $5\\%$ level, the critical values are $\\pm 1.96$.<br><br>Since $2.018 > 1.96$, reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level that mean weekly expenditure on fresh vegetables differs between the two regions.",
+        "<strong>(d) Justification via Central Limit Theorem:</strong><br><br>By the <strong>Central Limit Theorem</strong>, because both sample sizes are sufficiently large ($n_1 = 100 \\ge 30$ and $n_2 = 100 \\ge 30$), the sampling distributions of the sample means $\\bar{X}_1$ and $\\bar{X}_2$ are approximately normally distributed regardless of the underlying population distributions.",
+        "Final Answer: (a) $H_0: \\mu_1 = \\mu_2, H_1: \\mu_1 \\neq \\mu_2$, (b) $N(0, 0.0884)$, (c) Reject $H_0$ as $2.018 > 1.96$, (d) Central Limit Theorem applies as both sample sizes exceed $30$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: \\mu_1 = \\mu_2, H_1: \\mu_1 \\neq \\mu_2$, (b) $N(0, 0.0884)$, (c) Do not reject $H_0$ as $2.018 < 2.576$, (d) Central Limit Theorem applies as both sample sizes exceed $30$",
+            "feedback": "In part (c), $2.576$ is the critical value for a $1\\%$ significance level. At the specified $5\\%$ level, the critical value is $1.96$, so $H_0$ is rejected."
+        },
+        {
+            "ans": "(a) $H_0: \\mu_1 = \\mu_2, H_1: \\mu_1 \\neq \\mu_2$, (b) $N(0, 0.0084)$, (c) Reject $H_0$ as $2.018 > 1.96$, (d) Central Limit Theorem applies as both sample sizes exceed $30$",
+            "feedback": "In part (b), $0.0484 + 0.0400 = 0.0884$, not $0.0084$. Check the decimal place when dividing $2.20^2$ by $100$."
+        },
+        {
+            "ans": "(a) $H_0: \\mu_1 = \\mu_2, H_1: \\mu_1 > \\mu_2$, (b) $N(0, 0.0884)$, (c) Reject $H_0$ as $2.018 > 1.96$, (d) Central Limit Theorem applies as both sample sizes exceed $30$",
+            "feedback": "In part (a), testing whether expenditures *'differ'* specifies no direction, requiring a two-tailed test ($H_1: \\mu_1 \\neq \\mu_2$), not a one-tailed test."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Adding Variances for Differences",
+        "content": "When taking the difference between two independent random variables $\\bar{X}_1 - \\bar{X}_2$, never subtract their variances. Variances always add: $\\text{Var}(\\bar{X}_1 - \\bar{X}_2) = \\text{Var}(\\bar{X}_1) + \\text{Var}(\\bar{X}_2)$. Uncertainty always compounds regardless of whether you add or subtract the measurements."
+    }
 }
 ];
