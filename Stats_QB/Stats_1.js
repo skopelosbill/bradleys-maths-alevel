@@ -1632,6 +1632,213 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Independence in Machine Sampling",
         "content": "In sampling questions involving machinery, the essential assumption is independence. If an inspector tests $16$ consecutive cups in $5$ minutes, temperature or pressure buildup may cause successive volumes to correlate, violating the assumption of a random, independent sample."
     }
+},
+{
+    "id": "050041",
+    "group_id": "050041",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "The Large Data Set",
+    "topic": "Discrete Probability Distributions",
+    "subtopic": [
+        "Discrete Uniform Distribution",
+        "Oktas Cloud Cover",
+        "Model Evaluation"
+    ],
+    "img": false,
+    "question": "A meteorologist investigates daily cloud cover, $C$, recorded in the Large Data Set.<br><br>Cloud cover is measured in integers from $0$ to $8$ oktas, where $0$ represents a completely clear sky and $8$ represents completely overcast conditions.<br><br>The meteorologist proposes modelling $C$ using a discrete uniform distribution.<br><br><strong>(a)</strong> Write down the probability distribution for $C$ under this model.<br><br><strong>(b)</strong> Using this model, calculate the probability that on a randomly chosen day:<br><strong>(i)</strong> cloud cover is less than $50\\%$;<br><strong>(ii)</strong> cloud cover is at least $75\\%$ (at least $6$ oktas).<br><br><strong>(c)</strong> Historical records for a coastal station over $360$ days show that cloud cover was at least $6$ oktas on $162$ days. Comment on the suitability of the model in light of this evidence.<br><br><strong>(d)</strong> Suggest an appropriate refinement to the model.",
+    "steps": [
+        "<strong>(a) Writing the Probability Distribution for $C$:</strong><br><br>The possible values of cloud cover in oktas are the $9$ integers $c \\in \\{0, 1, 2, 3, 4, 5, 6, 7, 8\\}$.<br><br>Under a discrete uniform distribution, each outcome has equal probability:\\begin{aligned} \\text{P}(C = c) = \\dfrac{1}{9} \\quad \\text{for } c \\in \\{0, 1, \\dots, 8\\} \\end{aligned}",
+        "<strong>(b) (i) Probability Cloud Cover is Less Than $50\\%$:</strong><br><br>Since $50\\%$ of $8$ oktas is $4$ oktas, *less than $50\\% implication* corresponds to $C < 4$, which includes $c \\in \\{0, 1, 2, 3\\}$ ($4$ outcomes):\\begin{aligned} \\text{P}(C < 4) &= 4 \\times \\dfrac{1}{9} \\cr &= \\dfrac{4}{9} \\approx 0.444 \\end{aligned}",
+        "<strong>(b) (ii) Probability Cloud Cover is at Least $75\\%$:</strong><br><br>Since $75\\%$ of $8$ oktas is $6$ oktas, at least $75\\%$ corresponds to $C \\ge 6$, which includes $c \\in \\{6, 7, 8\\}$ ($3$ outcomes):\\begin{aligned} \\text{P}(C \\ge 6) &= 3 \\times \\dfrac{1}{9} \\cr &= \\dfrac{3}{9} \\cr &= \\dfrac{1}{3} \\approx 0.333 \\end{aligned}",
+        "<strong>(c) Evaluating Model Suitability:</strong><br><br>Calculate the observed relative frequency from the coastal station data:\\begin{aligned} \\text{Relative frequency} &= \\dfrac{162}{360} \\cr &= 0.45 \\end{aligned}Compare with the theoretical uniform probability:\\begin{aligned} 0.45 > 0.333 \\end{aligned}The observed proportion ($0.45$) is substantially higher than the model prediction ($\\dfrac{1}{3} \\approx 0.333$).<br><br>Therefore, the discrete uniform model is <strong>not suitable</strong> because it significantly underestimates the frequency of overcast days.",
+        "<strong>(d) Suggesting a Refinement:</strong><br><br>Refine the model by using an empirical, non-uniform discrete distribution that assigns higher probabilities to high oktas (such as $7$ and $8$) to reflect UK coastal weather patterns.",
+        "Final Answer: (a) $\\text{P}(C = c) = \\dfrac{1}{9}$ for $c \\in \\{0, 1, \\dots, 8\\}$, (b) $\\dfrac{4}{9}$ and $\\dfrac{1}{3}$, (c) Unsuitable as $0.45 > 0.333$, (d) Assign higher probabilities to $7$ and $8$ oktas"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\text{P}(C = c) = \\dfrac{1}{8}$ for $c \\in \\{1, \\dots, 8\\}$, (b) $\\dfrac{4}{9}$ and $\\dfrac{1}{3}$, (c) Unsuitable as $0.45 > 0.333$, (d) Assign higher probabilities to $7$ and $8$ oktas",
+            "feedback": "In part (a), cloud cover includes $0$ oktas (completely clear sky), giving $9$ possible outcomes in total ($\\{0, 1, \\dots, 8\\}$). Dividing by $8$ excludes clear days."
+        },
+        {
+            "ans": "(a) $\\text{P}(C = c) = \\dfrac{1}{9}$ for $c \\in \\{0, 1, \\dots, 8\\}$, (b) $\\dfrac{5}{9}$ and $\\dfrac{1}{3}$, (c) Unsuitable as $0.45 > 0.333$, (d) Assign higher probabilities to $7$ and $8$ oktas",
+            "feedback": "In part (b)(i), *less than $50\\% implication* means strictly less than $4$ oktas ($C \\le 3$), which gives $4$ values. Including $4$ oktas gives $50\\%$, not less than $50\\%$."
+        },
+        {
+            "ans": "(a) $\\text{P}(C = c) = \\dfrac{1}{9}$ for $c \\in \\{0, 1, \\dots, 8\\}$, (b) $\\dfrac{4}{9}$ and $\\dfrac{1}{3}$, (c) Suitable because $0.45 \\approx 0.333$, (d) Assign higher probabilities to $7$ and $8$ oktas",
+            "feedback": "In part (c), a difference of $0.45$ compared to $0.333$ across $360$ days is very large (a difference of over $40$ days), so the uniform model is not an acceptable fit."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: The 9-Value Okta Trap",
+        "content": "A classic trap in Edexcel Large Data Set questions is forgetting that cloud cover starts at $0$ oktas (clear sky) and runs up to $8$ oktas (solid overcast). There are $9$ outcomes in total, not $8$. Any discrete uniform model on oktas must use a denominator of $9$."
+    }
+},
+{
+    "id": "050042",
+    "group_id": "050041",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "Statistical Distributions",
+    "topic": "Discrete Probability Distributions",
+    "subtopic": [
+        "Discrete Uniform Distribution",
+        "Expectation and Variance",
+        "Standard Deviation Boundaries"
+    ],
+    "img": false,
+    "question": "A discrete random variable $X$ follows a discrete uniform distribution over the set of consecutive integers $\\{1, 2, 3, \\dots, n\\}$.<br><br>It is given that the expected value is $\\text{E}(X) = 6$.<br><br><strong>(a)</strong> Determine the value of $n$.<br><br><strong>(b)</strong> Calculate the variance, $\\text{Var}(X)$, using the standard formula:$$\\text{Var}(X) = \\dfrac{n^2 - 1}{12}$$<strong>(c)</strong> Calculate $\\text{P}(X > \\text{E}(X) + \\sqrt{\\text{Var}(X)})$.",
+    "steps": [
+        "<strong>(a) Finding the Value of $n$:</strong><br><br>By symmetry, the expectation of a discrete uniform distribution on $\\{1, \\dots, n\\}$ is:\\begin{aligned} \\text{E}(X) &= \\dfrac{n + 1}{2} \\end{aligned}Set equal to $6$ and solve for $n$:\\begin{aligned} \\dfrac{n + 1}{2} &= 6 \\cr n + 1 &= 12 \\cr n &= 11 \\end{aligned}",
+        "<strong>(b) Calculating the Variance:</strong><br><br>Substitute $n = 11$ into the variance formula:\\begin{aligned} \\text{Var}(X) &= \\dfrac{11^2 - 1}{12} \\cr &= \\dfrac{121 - 1}{12} \\cr &= \\dfrac{120}{12} \\cr &= 10 \\end{aligned}",
+        "<strong>(c) Calculating $\\text{P}(X > \\text{E}(X) + \\sqrt{\\text{Var}(X)})$:</strong><br><br>Calculate the standard deviation:\\begin{aligned} \\sigma &= \\sqrt{10} \\cr &\\approx 3.162 \\end{aligned}Find the threshold value:\\begin{aligned} \\text{Threshold} &= 6 + 3.162 \\cr &= 9.162 \\end{aligned}Since $X$ takes only integer values in $\\{1, 2, \\dots, 11\\}$, the condition $X > 9.162$ requires $X \\in \\{10, 11\\}$ ($2$ outcomes):\\begin{aligned} \\text{P}(X \\ge 10) &= 2 \\times \\dfrac{1}{11} \\cr &= \\dfrac{2}{11} \\approx 0.182 \\end{aligned}",
+        "Final Answer: (a) $n = 11$, (b) $\\text{Var}(X) = 10$, (c) $\\dfrac{2}{11}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $n = 12$, (b) $\\text{Var}(X) = 10$, (c) $\\dfrac{2}{11}$",
+            "feedback": "In part (a), solving $\\dfrac{n+1}{2} = 6$ gives $n + 1 = 12$, which means $n = 11$, not $12$."
+        },
+        {
+            "ans": "(a) $n = 11$, (b) $\\text{Var}(X) = 11.9$, (c) $\\dfrac{2}{11}$",
+            "feedback": "In part (b), check your evaluation: $11^2 - 1 = 120$. Then $120 / 12 = 10$ exactly."
+        },
+        {
+            "ans": "(a) $n = 11$, (b) $\\text{Var}(X) = 10$, (c) $\\dfrac{3}{11}$",
+            "feedback": "In part (c), the threshold is $6 + \\sqrt{10} \\approx 9.162$. For strictly greater than $9.162$, only integers $10$ and $11$ qualify. Including $9$ is incorrect because $9 < 9.162$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Integer Inequalities for Discrete Variables",
+        "content": "Whenever you evaluate probability intervals like $X > 9.162$ for a discrete random variable, immediately translate the inequality into allowed integers. Here, $X > 9.162$ strictly means $X \\ge 10$, giving exactly the two outcomes $10$ and $11$."
+    }
+},
+{
+    "id": "050043",
+    "group_id": "050041",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "Statistical Distributions",
+    "topic": "Discrete Probability Distributions",
+    "subtopic": [
+        "Probability Mass Functions",
+        "Expectation and Variance",
+        "Non-Uniform Distributions"
+    ],
+    "img": false,
+    "question": "A discrete random variable $Y$ has probability mass function:$$\\text{P}(Y = y) = k(4 - y) \\quad \\text{for } y \\in \\{0, 1, 2, 3\\}$$where $k$ is a positive constant.<br><br><strong>(a)</strong> Show that $k = 0.1$.<br><br><strong>(b)</strong> Find $\\text{E}(Y)$ and $\\text{Var}(Y)$.<br><br><strong>(c)</strong> Explain why $Y$ cannot be modelled by a discrete uniform distribution.",
+    "steps": [
+        "<strong>(a) Showing that $k = 0.1$:</strong><br><br>The sum of all probabilities in a discrete distribution must equal $1$:\\begin{aligned} \\sum_{y=0}^3 \\text{P}(Y = y) = 1 \\end{aligned}Substitute each value of $y$ into the formula:\\begin{aligned} k(4 - 0) + k(4 - 1) + k(4 - 2) + k(4 - 3) &= 1 \\cr 4k + 3k + 2k + k &= 1 \\cr 10k &= 1 \\cr k &= 0.1 \\end{aligned}",
+        "<strong>(b) Calculating $\\text{E}(Y)$ and $\\text{Var}(Y)$:</strong><br><br>Tabulate the probability distribution with $k = 0.1$:<br><br>&bull; $\\text{P}(Y = 0) = 0.4$<br>&bull; $\\text{P}(Y = 1) = 0.3$<br>&bull; $\\text{P}(Y = 2) = 0.2$<br>&bull; $\\text{P}(Y = 3) = 0.1$<br><br>Calculate the expectation $\\text{E}(Y)$:\\begin{aligned} \\text{E}(Y) &= 0(0.4) + 1(0.3) + 2(0.2) + 3(0.1) \\cr &= 0 + 0.3 + 0.4 + 0.3 \\cr &= 1.0 \\end{aligned}Calculate $\\text{E}(Y^2)$:\\begin{aligned} \\text{E}(Y^2) &= 0^2(0.4) + 1^2(0.3) + 2^2(0.2) + 3^2(0.1) \\cr &= 0 + 0.3 + 0.8 + 0.9 \\cr &= 2.0 \\end{aligned}Calculate the variance:\\begin{aligned} \\text{Var}(Y) &= \\text{E}(Y^2) - [\\text{E}(Y)]^2 \\cr &= 2.0 - (1.0)^2 \\cr &= 2.0 - 1.0 \\cr &= 1.0 \\end{aligned}",
+        "<strong>(c) Explaining Why $Y$ is Not Uniform:</strong><br><br>A discrete uniform distribution requires every possible outcome to have an identical probability.<br><br>Here, the probabilities vary across outcomes ($\\text{P}(0) = 0.4, \\text{P}(1) = 0.3, \\text{P}(2) = 0.2, \\text{P}(3) = 0.1$), so the distribution is not uniform.",
+        "Final Answer: (a) $10k = 1 \\implies k = 0.1$, (b) $\\text{E}(Y) = 1.0$, $\\text{Var}(Y) = 1.0$, (c) Probabilities are not equal across outcomes"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $10k = 1 \\implies k = 0.1$, (b) $\\text{E}(Y) = 1.0$, $\\text{Var}(Y) = 2.0$, (c) Probabilities are not equal across outcomes",
+            "feedback": "In part (b), $2.0$ is $\\text{E}(Y^2)$. To obtain the variance, you must subtract $[\\text{E}(Y)]^2$: $\\text{Var}(Y) = 2.0 - 1.0^2 = 1.0$."
+        },
+        {
+            "ans": "(a) $6k = 1 \\implies k = 0.1$, (b) $\\text{E}(Y) = 1.0$, $\\text{Var}(Y) = 1.0$, (c) Probabilities are not equal across outcomes",
+            "feedback": "In part (a), the sum of terms is $4 + 3 + 2 + 1 = 10$, not $6$. Forgetting the $y = 0$ term ($4k$) leads to an incorrect sum."
+        },
+        {
+            "ans": "(a) $10k = 1 \\implies k = 0.1$, (b) $\\text{E}(Y) = 1.5$, $\\text{Var}(Y) = 1.0$, (c) Probabilities are not equal across outcomes",
+            "feedback": "In part (b), $1.5$ is the midpoint of the range $\\{0, 1, 2, 3\\}$. Because probabilities are weighted towards $0$ and $1$, the expected value is pulled down to $1.0$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Never Forget the Zero Term",
+        "content": "When evaluating $\\sum \\text{P}(Y = y) = 1$ for a formula like $k(4 - y)$, never skip $y = 0$. While $y = 0$ contributes zero to $\\text{E}(Y)$, it contributes $k(4 - 0) = 4k$ to the total probability sum."
+    }
+},
+{
+    "id": "050044",
+    "group_id": "050041",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "The Large Data Set",
+    "topic": "Discrete Probability Distributions",
+    "subtopic": [
+        "Beaufort Scale",
+        "Probability Distributions",
+        "Linear Transformation Fallacy"
+    ],
+    "img": false,
+    "question": "In the Large Data Set, wind speed is classified using discrete ratings on the Beaufort scale ($0$ to $12$).<br><br>A student models summer afternoon wind ratings, $W$, at an inland station using:$$\\text{P}(W = w) = c(w + 1) \\quad \\text{for } w \\in \\{1, 2, 3, 4, 5\\}$$and $\\text{P}(W = w) = 0$ otherwise, where $c$ is a constant.<br><br><strong>(a)</strong> Determine the exact value of $c$.<br><br><strong>(b)</strong> Calculate $\\text{P}(W \\ge 3)$.<br><br><strong>(c)</strong> Wind speed is also recorded in knots. A student claims that knots can be converted to the Beaufort scale by a linear transformation $W = aK + b$. Explain why this claim is incorrect.",
+    "steps": [
+        "<strong>(a) Finding the Constant $c$:</strong><br><br>The sum of all probabilities must equal $1$:\\begin{aligned} \\sum_{w=1}^5 \\text{P}(W = w) = 1 \\end{aligned}Substitute $w \\in \\{1, 2, 3, 4, 5\\}$ into $c(w + 1)$:\\begin{aligned} c(2) + c(3) + c(4) + c(5) + c(6) &= 1 \\cr c(2 + 3 + 4 + 5 + 6) &= 1 \\cr 20c &= 1 \\cr c &= \\dfrac{1}{20} = 0.05 \\end{aligned}",
+        "<strong>(b) Calculating $\\text{P}(W \\ge 3)$:</strong><br><br>Sum the probabilities for $w = 3, 4, 5$:\\begin{aligned} \\text{P}(W \\ge 3) &= \\text{P}(W = 3) + \\text{P}(W = 4) + \\text{P}(W = 5) \\cr &= 0.05(4) + 0.05(5) + 0.05(6) \\cr &= 0.05(4 + 5 + 6) \\cr &= 0.05(15) \\cr &= 0.75 \\end{aligned}",
+        "<strong>(c) Explaining Why the Linear Claim is Incorrect:</strong><br><br>The Beaufort scale is an ordinal categorical scale based on unequal interval ranges of wind speed (for example, Force 1 spans $1\\text{ to }3\\text{ knots}$, whereas Force 8 spans $34\\text{ to }40\\text{ knots}$).<br><br>Because the scale maps ranges of speeds into discrete integers with non-uniform step sizes, the relationship is a piecewise step function rather than a linear transformation.",
+        "Final Answer: (a) $c = 0.05$, (b) $0.75$, (c) Beaufort scale uses unequal interval ranges, so conversion is non-linear"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $c = 0.067$, (b) $0.75$, (c) Beaufort scale uses unequal interval ranges, so conversion is non-linear",
+            "feedback": "In part (a), evaluating $c(1 + 2 + 3 + 4 + 5) = 15c$ forgets the $+1$ in the term $c(w + 1)$. The sum is $2 + 3 + 4 + 5 + 6 = 20$, giving $c = 0.05$."
+        },
+        {
+            "ans": "(a) $c = 0.05$, (b) $0.55$, (c) Beaufort scale uses unequal interval ranges, so conversion is non-linear",
+            "feedback": "In part (b), $0.55$ corresponds to strictly greater than $3$ ($w = 4, 5$). The condition $W \\ge 3$ includes $w = 3$, giving $0.20 + 0.25 + 0.30 = 0.75$."
+        },
+        {
+            "ans": "(a) $c = 0.05$, (b) $0.75$, (c) Knots cannot be converted because the Beaufort scale only applies at sea",
+            "feedback": "In part (c), the Beaufort scale is widely used for both inland and marine stations in the Large Data Set. The invalidity of the claim is due to unequal range mapping."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Discrete Scales in the Large Data Set",
+        "content": "In Edexcel Large Data Set questions, examiners frequently test whether students understand the nature of variables. Wind speed in knots is continuous, but the Beaufort scale is discrete and ordinal based on descriptive ranges. You cannot convert between them using a linear formula $y = ax + b$."
+    }
+},
+{
+    "id": "050045",
+    "group_id": "050041",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "AS",
+    "major_area": "Statistical Distributions",
+    "topic": "Discrete Probability Distributions",
+    "subtopic": [
+        "Uniform Model vs Binomial Test",
+        "Hypothesis Testing",
+        "Model Validity"
+    ],
+    "img": false,
+    "question": "A game designer tests whether an electronic $6$-sided spinner is fair. The score, $S$, is intended to follow a discrete uniform distribution over $\\{1, 2, 3, 4, 5, 6\\}$.<br><br><strong>(a)</strong> State the theoretical probability of scoring a $6$ under the uniform model.<br><br><strong>(b)</strong> In $120$ spins, the score $6$ appears $30$ times. Using a binomial model, test at the $5\\%$ level whether the spinner is biased towards landing on $6$.<br><br><strong>(c)</strong> State your conclusion in context and comment on the validity of the uniform model.",
+    "steps": [
+        "<strong>(a) Theoretical Probability Under Discrete Uniform Distribution:</strong><br><br>Under a discrete uniform model over $6$ outcomes:\\begin{aligned} \\text{P}(S = 6) = \\dfrac{1}{6} \\approx 0.167 \\end{aligned}",
+        "<strong>(b) Conducting the Binomial Hypothesis Test:</strong><br><br>Let $p$ be the probability of scoring a $6$, and let $X$ be the number of sixes in $120$ spins:\\begin{aligned} H_0&: p = \\dfrac{1}{6} \\cr H_1&: p > \\dfrac{1}{6} \\end{aligned}Under $H_0$, $X \\sim B\\left(120, \\dfrac{1}{6}\\right)$.<br><br>Calculate the $p$-value for the observed result $x = 30$:\\begin{aligned} \\text{P}(X \\ge 30) &= 1 - \\text{P}(X \\le 29) \\cr &= 1 - 0.9855 \\cr &= 0.0145 \\end{aligned}Compare with the $5\\%$ significance level:\\begin{aligned} 0.0145 < 0.05 \\end{aligned}Since the probability is less than $0.05$, reject $H_0$.",
+        "<strong>(c) Concluding in Context and Model Validity:</strong><br><br>There is significant evidence at the $5\\%$ level that the spinner is biased towards landing on $6$.<br><br>Consequently, the assumption of a <strong>discrete uniform distribution is invalid</strong> for this spinner.",
+        "Final Answer: (a) $\\dfrac{1}{6}$, (b) Reject $H_0$ as $0.0145 < 0.05$, (c) Significant evidence of bias towards $6$, so discrete uniform model is invalid"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\dfrac{1}{6}$, (b) Do not reject $H_0$ as $0.0145 < 0.05$, (c) Significant evidence of bias towards $6$, so discrete uniform model is invalid",
+            "feedback": "In part (b), when the $p$-value ($0.0145$) is less than the significance level ($0.05$), the result is statistically significant and $H_0$ must be rejected, not retained."
+        },
+        {
+            "ans": "(a) $\\dfrac{1}{6}$, (b) Reject $H_0$ as $0.0145 < 0.05$, (c) Spinner is fair and the uniform model is completely valid",
+            "feedback": "In part (c), rejecting $H_0$ means there is evidence of bias. If a spinner is biased towards $6$, outcomes are not equally likely, which invalidates the uniform model."
+        },
+        {
+            "ans": "(a) $\\dfrac{1}{5}$, (b) Reject $H_0$ as $0.0145 < 0.05$, (c) Significant evidence of bias towards $6$, so discrete uniform model is invalid",
+            "feedback": "In part (a), a $6$-sided spinner has $6$ possible outcomes, so the uniform probability of each outcome is $\\dfrac{1}{6}$, not $\\dfrac{1}{5}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Cumulative Binomial on Calculators",
+        "content": "For hypothesis testing of $\\text{P}(X \\ge 30)$, remember that statistical calculators only evaluate lower-tail cumulative probabilities $\\text{P}(X \\le k)$. You must evaluate $1 - \\text{P}(X \\le 29)$, never $1 - \\text{P}(X \\le 30)$."
+    }
 }
 ];
 
