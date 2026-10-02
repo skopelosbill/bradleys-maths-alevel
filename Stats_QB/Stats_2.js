@@ -311,7 +311,7 @@ window.ALEVEL_QUESTIONS = [
         "Census vs Sample"
     ],
     "img": false,
-    "question": "A clinic records waiting times, $t$ minutes, for $12$ patients:$$11, \\quad 14, \\quad 18, \\quad 21,$$ $$\\quad 24, \\quad 27, \\quad 30, \\quad 33,$$ $$\\quad 38, \\quad 42, \\quad 48, \\quad 74$$An outlier lies more than $1.5 \\times \\text{IQR}$ outside the quartiles.<br><br><strong>(a)</strong> Find the lower quartile ($Q_1$), median, and upper quartile ($Q_3$).<br><strong>(b)</strong> Show that $74\\text{ minutes}$ is an outlier.<br><strong>(c)</strong> State one advantage of a census over a sample, and one reason why a census might not be preferred.",
+    "question": "A clinic records waiting times, $t$ minutes, for $12$ patients:$$11, \\quad 14, \\quad 18, \\quad 21,$$ $$24, \\quad 27, \\quad 30, \\quad 33,$$ $$38, \\quad 42, \\quad 48, \\quad 74$$An outlier lies more than $1.5 \\times \\text{IQR}$ outside the quartiles.<br><br><strong>(a)</strong> Find the lower quartile ($Q_1$), median, and upper quartile ($Q_3$).<br><strong>(b)</strong> Show that $74\\text{ minutes}$ is an outlier.<br><strong>(c)</strong> State one advantage of a census over a sample, and one reason why a census might not be preferred.",
     "steps": [
         "<strong>(a) Finding Quartiles and Median for $n = 12$:</strong><br><br>The data are already arranged in ascending order.<br><br>Find the lower quartile $Q_1$ (position $0.25 \\times 12 = 3$, average $3^{\\text{rd}}$ and $4^{\\text{th}}$):\\begin{aligned} Q_1 &= \\dfrac{18 + 21}{2} \\cr &= 19.5\\text{ minutes} \\end{aligned}Find the median (position $0.5 \\times 12 = 6$, average $6^{\\text{th}}$ and $7^{\\text{th}}$):\\begin{aligned} \\text{Median} &= \\dfrac{27 + 30}{2} \\cr &= 28.5\\text{ minutes} \\end{aligned}Find the upper quartile $Q_3$ (position $0.75 \\times 12 = 9$, average $9^{\\text{th}}$ and $10^{\\text{th}}$):\\begin{aligned} Q_3 &= \\dfrac{38 + 42}{2} \\cr &= 40.0\\text{ minutes} \\end{aligned}",
         "<strong>(b) Showing That $74\\text{ minutes}$ is an Outlier:</strong><br><br>Calculate the interquartile range:\\begin{aligned} \\text{IQR} &= Q_3 - Q_1 \\cr &= 40.0 - 19.5 \\cr &= 20.5\\text{ minutes} \\end{aligned}Calculate the upper outlier boundary:\\begin{aligned}& \\text{Upper boundary} \\cr &\\quad = Q_3 + 1.5 \\times \\text{IQR} \\cr &\\quad = 40.0 + 1.5(20.5) \\cr &\\quad = 40.0 + 30.75 \\cr &\\quad = 70.75\\text{ minutes} \\end{aligned}Since $74 > 70.75$, the waiting time of $74\\text{ minutes}$ is confirmed as an outlier.",
@@ -419,6 +419,216 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Qualitative Variance Checks",
         "content": "Before doing complex arithmetic, visually check the distance from the mean. Here, extreme values ($£8\\text{ and }£26$) are replaced with values much nearer the centre ($£12\\text{ and }£18$). Any change that concentrates data tighter around the mean must decrease both variance and standard deviation."
+    }
+},
+{
+    "id": "050061",
+    "group_id": "050061",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Normal Distribution and Hypothesis Testing",
+    "subtopic": [
+        "Conditional Normal Probability",
+        "Series Reliability",
+        "Normal Hypothesis Testing"
+    ],
+    "img": false,
+    "question": "The operating lifetime, $L$ hours, of a battery is distributed as $N(24, 6^2)$. A surveying drone requires $4$ of these batteries and shuts down if any one battery fails.<br><br><strong>(a)</strong> Find the probability that a random battery lasts longer than $21\\text{ hours}$.<br><br>An engineer fits $4$ new batteries and flies for $21\\text{ hours}$. The drone needs to fly for a further $6\\text{ hours}$.<br><br><strong>(b)</strong> Find the probability that the drone operates without shutting down for the remaining $6\\text{ hours}$.<br><br>The engineer has only $2$ new spare batteries. After the first $21\\text{ hours}$, while the drone is still working, she replaces $2$ batteries with the $2$ new batteries.<br><br><strong>(c)</strong> Show that the probability the drone operates for the remaining $6\\text{ hours}$ is approximately $0.199$.<br><br>After the expedition, the engineer tests a random sample of batteries:$$n = 25$$$$\\bar{l} = 26.1\\text{ hours}$$$$\\sigma = 6\\text{ hours}$$<strong>(d)</strong> Test at the $5\\%$ level whether the mean battery lifetime is greater than $24\\text{ hours}$.",
+    "steps": [
+        "<strong>(a) Calculating $\\text{P}(L > 21)$:</strong><br><br>Standardise $L = 21$ using $\\mu = 24$ and $\\sigma = 6$:\\begin{aligned} z &= \\dfrac{21 - 24}{6} \\cr &= -0.5 \\end{aligned}Calculate the upper tail probability:\\begin{aligned} \\text{P}(L > 21) &= \\Phi(0.5) \\cr &= 0.6915 \\end{aligned}",
+        "<strong>(b) Calculating Probability All $4$ Original Batteries Survive:</strong><br><br>For the drone to fly a further $6\\text{ hours}$, each battery must last at least $21 + 6 = 27\\text{ hours}$, given it has already lasted $21\\text{ hours}$.<br><br>Calculate the unconditional probability $\\text{P}(L > 27)$:\\begin{aligned} z &= \\dfrac{27 - 24}{6} \\cr &= 0.5 \\cr \\text{P}(L > 27) &= 1 - 0.6915 \\cr &= 0.3085 \\end{aligned}Calculate the conditional probability for one battery:\\begin{aligned}& \\text{P}(L > 27 \\mid L > 21) \\cr &\\quad = \\dfrac{0.3085}{0.6915} \\cr &\\quad \\approx 0.44613 \\end{aligned}All $4$ batteries must survive independently:\\begin{aligned} \\text{P}(\\text{all 4 survive}) &= (0.44613)^4 \\cr &\\approx 0.0396 \\end{aligned}",
+        "<strong>(c) Calculating Probability with $2$ New Batteries:</strong><br><br>For the $2$ new batteries, each must last at least $6\\text{ hours}$ from new:\\begin{aligned} z &= \\dfrac{6 - 24}{6} \\cr &= -3.0 \\cr \\text{P}(L > 6) &= \\Phi(3.0) \\cr &\\approx 0.99865 \\end{aligned}The $2$ retained batteries must survive another $6\\text{ hours}$ (probability $0.44613$ each):\\begin{aligned}& \\text{P}(\\text{drone operates}) \\cr &\\quad = (0.99865)^2 \\cr &\\qquad \\times (0.44613)^2 \\cr &\\quad \\approx (0.9973)(0.1990) \\cr &\\quad \\approx 0.199 \\end{aligned}",
+        "<strong>(d) Conducting the Hypothesis Test:</strong><br><br>State the one-tailed hypotheses:\\begin{aligned} H_0&: \\mu = 24 \\cr H_1&: \\mu > 24 \\end{aligned}Calculate the standard error for $n = 25$:\\begin{aligned} \\text{SE} &= \\dfrac{6}{\\sqrt{25}} \\cr &= 1.2 \\end{aligned}Calculate the test statistic $z$:\\begin{aligned} z &= \\dfrac{26.1 - 24}{1.2} \\cr &= \\dfrac{2.1}{1.2} \\cr &= 1.75 \\end{aligned}For a one-tailed test at the $5\\%$ level, the critical value is $1.6449$.<br><br>Since $1.75 > 1.6449$, reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level that the mean battery lifetime is greater than $24\\text{ hours}$.",
+        "Final Answer: (a) $0.6915$, (b) $0.0396$, (c) $(0.99865)^2(0.44613)^2 \\approx 0.199$, (d) Reject $H_0$ as $1.75 > 1.6449$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.6915$, (b) $0.0396$, (c) $(0.99865)^2(0.44613)^2 \\approx 0.199$, (d) Do not reject $H_0$ as $1.75 < 1.9600$",
+            "feedback": "In part (d), comparing against $1.9600$ applies a two-tailed critical value. The engineer's belief specifies that the mean is greater than $24$, requiring a one-tailed critical value of $1.6449$."
+        },
+        {
+            "ans": "(a) $0.3085$, (b) $0.0396$, (c) $(0.99865)^2(0.44613)^2 \\approx 0.199$, (d) Reject $H_0$ as $1.75 > 1.6449$",
+            "feedback": "In part (a), $0.3085$ is $\\text{P}(L < 21)$. For a battery lasting longer than $21\\text{ hours}$, evaluate the upper tail $\\text{P}(L > 21) = 0.6915$."
+        },
+        {
+            "ans": "(a) $0.6915$, (b) $0.0091$, (c) $(0.99865)^2(0.44613)^2 \\approx 0.199$, (d) Reject $H_0$ as $1.75 > 1.6449$",
+            "feedback": "In part (b), evaluating $(0.3085)^4 = 0.0091$ ignores the conditioning. The batteries have already operated for $21\\text{ hours}$, requiring the conditional probability $\\text{P}(L > 27 \\mid L > 21) = 0.44613$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Series Systems and Memoryless Traps",
+        "content": "For a series system requiring all $k$ components to survive, the overall probability is $p^k$. Crucially, normal distributions are not memoryless: you cannot assume a battery used for $21\\text{ hours}$ behaves like a new battery. You must evaluate the conditional probability $\\text{P}(L > t_1 + t_2 \\mid L > t_1)$."
+    }
+},
+{
+    "id": "050062",
+    "group_id": "050061",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Normal Distribution and Hypothesis Testing",
+    "subtopic": [
+        "Parallel System Reliability",
+        "Conditional Probability",
+        "One-Tailed Test"
+    ],
+    "img": false,
+    "question": "An emergency beacon is powered by two independent battery cells, each with lifespan $T \\sim N(1200, 150^2)\\text{ hours}$. The beacon operates as long as at least one cell functions.<br><br><strong>(a)</strong> Calculate the probability that a single cell lasts longer than $1350\\text{ hours}$.<br><strong>(b)</strong> If a cell has functioned for $1050\\text{ hours}$, find the conditional probability that it reaches at least $1350\\text{ hours}$.<br><strong>(c)</strong> Calculate the probability that the beacon functions for another $300\\text{ hours}$, given that both cells were operational at $1050\\text{ hours}$.<br><br>A safety test on these cells yields:$$n = 36$$$$\\bar{t} = 1155\\text{ hours}$$$$\\sigma = 150\\text{ hours}$$<strong>(d)</strong> Test at the $2.5\\%$ level whether the mean cell lifespan is less than $1200\\text{ hours}$.",
+    "steps": [
+        "<strong>(a) Calculating $\\text{P}(T > 1350)$:</strong><br><br>Standardise $T = 1350$:\\begin{aligned} z &= \\dfrac{1350 - 1200}{150} \\cr &= 1.0 \\end{aligned}Calculate the upper tail probability:\\begin{aligned} \\text{P}(T > 1350) &= 1 - \\Phi(1.0) \\cr &= 1 - 0.8413 \\cr &= 0.1587 \\end{aligned}",
+        "<strong>(b) Calculating Conditional Probability:</strong><br><br>Standardise $T = 1050$:\\begin{aligned} z &= \\dfrac{1050 - 1200}{150} \\cr &= -1.0 \\cr \\text{P}(T > 1050) &= \\Phi(1.0) \\cr &= 0.8413 \\end{aligned}Apply conditional probability:\\begin{aligned}& \\text{P}(T > 1350 \\mid T > 1050) \\cr &\\quad = \\dfrac{0.1587}{0.8413} \\cr &\\quad \\approx 0.1886 \\end{aligned}",
+        "<strong>(c) Calculating Parallel System Reliability:</strong><br><br>Each cell fails before $1350\\text{ hours}$ with probability:\\begin{aligned} \\text{P}(\\text{fails}) &= 1 - 0.1886 \\cr &= 0.8114 \\end{aligned}Because the cells are in parallel, the beacon fails only if both cells fail:\\begin{aligned}& \\text{P}(\\text{beacon functions}) \\cr &\\quad = 1 - (0.8114)^2 \\cr &\\quad = 1 - 0.6584 \\cr &\\quad \\approx 0.342 \\end{aligned}",
+        "<strong>(d) Conducting the Hypothesis Test:</strong><br><br>State the one-tailed hypotheses:\\begin{aligned} H_0&: \\mu = 1200 \\cr H_1&: \\mu < 1200 \\end{aligned}Calculate the standard error for $n = 36$:\\begin{aligned} \\text{SE} &= \\dfrac{150}{\\sqrt{36}} \\cr &= \\dfrac{150}{6} \\cr &= 25 \\end{aligned}Calculate the test statistic $z$:\\begin{aligned} z &= \\dfrac{1155 - 1200}{25} \\cr &= \\dfrac{-45}{25} \\cr &= -1.8 \\end{aligned}For a one-tailed test at the $2.5\\%$ level, the critical value is $-1.96$.<br><br>Since $-1.8 > -1.96$, the test statistic is not in the critical region. Do not reject $H_0$.<br><br>There is insufficient evidence at the $2.5\\%$ level to suggest that the mean cell lifespan is less than $1200\\text{ hours}$.",
+        "Final Answer: (a) $0.1587$, (b) $0.1886$, (c) $0.342$, (d) Do not reject $H_0$ as $-1.8 > -1.96$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.1587$, (b) $0.1886$, (c) $0.342$, (d) Reject $H_0$ as $-1.8 < -1.6449$",
+            "feedback": "In part (d), comparing against $-1.6449$ tests at the $5\\%$ level. At the specified $2.5\\%$ level, the critical value is $-1.96$, so $H_0$ is not rejected."
+        },
+        {
+            "ans": "(a) $0.1587$, (b) $0.1886$, (c) $0.0356$, (d) Do not reject $H_0$ as $-1.8 > -1.96$",
+            "feedback": "In part (c), evaluating $(0.1886)^2 = 0.0356$ assumes both cells must survive (a series system). For a parallel system where at least one cell suffices, evaluate $1 - (0.8114)^2 = 0.342$."
+        },
+        {
+            "ans": "(a) $0.8413$, (b) $0.1886$, (c) $0.342$, (d) Do not reject $H_0$ as $-1.8 > -1.96$",
+            "feedback": "In part (a), $0.8413$ is $\\text{P}(T < 1350)$. For lifespan exceeding $1350\\text{ hours}$, evaluate $1 - 0.8413 = 0.1587$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Series vs Parallel Reliability",
+        "content": "Make sure you distinguish between series and parallel systems. In a series system, all components must work: $\\text{P}(\\text{System}) = p^k$. In a parallel backup system, only one component needs to work: $\\text{P}(\\text{System}) = 1 - (1 - p)^k$."
+    }
+},
+{
+    "id": "050063",
+    "group_id": "050061",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "The Normal Distribution and Hypothesis Testing",
+    "subtopic": [
+        "Normal Mean Test",
+        "Critical Value Calculation",
+        "Type I Error Definition"
+    ],
+    "img": false,
+    "question": "A car maker claims its battery provides a mean range of $320\\text{ km}$ with $\\sigma = 24\\text{ km}$. A tester suspects the range is less, testing a random sample:$$n = 16$$$$\\bar{x} = 307.5\\text{ km}$$$$\\sigma = 24\\text{ km}$$Assume range follows a normal distribution.<br><br><strong>(a)</strong> State suitable hypotheses to test the tester's suspicion.<br><strong>(b)</strong> Conduct the test at the $1\\%$ level, stating your conclusion in context.<br><strong>(c)</strong> Determine the critical value of the sample mean $\\bar{x}$.<br><strong>(d)</strong> Calculate the $p$-value.<br><strong>(e)</strong> Define a Type I error in the context of this test.",
+    "steps": [
+        "<strong>(a) Stating the Hypotheses:</strong><br><br>State the one-tailed hypotheses:\\begin{aligned} H_0&: \\mu = 320 \\cr H_1&: \\mu < 320 \\end{aligned}",
+        "<strong>(b) Conducting the Hypothesis Test:</strong><br><br>Calculate the standard error for $n = 16$:\\begin{aligned} \\text{SE} &= \\dfrac{24}{\\sqrt{16}} \\cr &= \\dfrac{24}{4} \\cr &= 6 \\end{aligned}Calculate the test statistic $z$:\\begin{aligned} z &= \\dfrac{307.5 - 320}{6} \\cr &= \\dfrac{-12.5}{6} \\cr &\\approx -2.083 \\end{aligned}For a one-tailed test at the $1\\%$ level, the critical value is $-2.326$.<br><br>Since $-2.083 > -2.326$, the test statistic does not lie in the critical region. Do not reject $H_0$.<br><br>There is insufficient evidence at the $1\\%$ level to support the suspicion that the mean driving range is less than $320\\text{ km}$.",
+        "<strong>(c) Calculating the Critical Value of $\\bar{x}$:</strong><br><br>Find the boundary value for $\\bar{x}$ using $z = -2.326$:\\begin{aligned} \\bar{x}_{\\text{crit}} &= 320 - 2.326(6) \\cr &= 320 - 13.956 \\cr &= 306.044 \\cr &\\approx 306.0\\text{ km} \\end{aligned}",
+        "<strong>(d) Calculating the $p$-Value:</strong><br><br>Evaluate the lower tail probability for $z = -2.083$:\\begin{aligned} p\\text{-value} &= \\text{P}(Z < -2.083) \\cr &= 1 - \\Phi(2.083) \\cr &= 1 - 0.9814 \\cr &= 0.0186 \\end{aligned}",
+        "<strong>(e) Contextualising Type I Error:</strong><br><br>A Type I error occurs when the null hypothesis is rejected when it is actually true.<br><br>In context: concluding that the mean range is less than $320\\text{ km}$ when the true mean range is genuinely $320\\text{ km}$.",
+        "Final Answer: (a) $H_0: \\mu = 320, H_1: \\mu < 320$, (b) Do not reject $H_0$ as $-2.083 > -2.326$, (c) $306.0\\text{ km}$, (d) $0.0186$, (e) Concluding mean range is under $320\\text{ km}$ when it is genuinely $320\\text{ km}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: \\mu = 320, H_1: \\mu < 320$, (b) Reject $H_0$ as $-2.083 < -1.960$, (c) $306.0\\text{ km}$, (d) $0.0186$, (e) Concluding mean range is under $320\\text{ km}$ when it is genuinely $320\\text{ km}$",
+            "feedback": "In part (b), comparing against $-1.960$ tests at the $2.5\\%$ level. At the specified $1\\%$ level, the critical value is $-2.326$, so $H_0$ is not rejected."
+        },
+        {
+            "ans": "(a) $H_0: \\mu = 320, H_1: \\mu < 320$, (b) Do not reject $H_0$ as $-2.083 > -2.326$, (c) $264.2\\text{ km}$, (d) $0.0186$, (e) Concluding mean range is under $320\\text{ km}$ when it is genuinely $320\\text{ km}$",
+            "feedback": "In part (c), subtracting $2.326 \\times 24$ forgets to divide $\\sigma$ by $\\sqrt{n} = 4$. The standard error is $6$, giving $\\bar{x}_{\\text{crit}} = 306.0\\text{ km}$."
+        },
+        {
+            "ans": "(a) $H_0: \\mu = 320, H_1: \\mu < 320$, (b) Do not reject $H_0$ as $-2.083 > -2.326$, (c) $306.0\\text{ km}$, (d) $0.0372$, (e) Concluding mean range is under $320\\text{ km}$ when it is genuinely $320\\text{ km}$",
+            "feedback": "In part (d), $0.0372 = 2 \\times 0.0186$ is the two-tailed $p$-value. For a one-tailed test, the $p$-value is $0.0186$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: P-Values vs Significance Levels",
+        "content": "Notice how the $p$-value ($0.0186$) directly confirms the test decision: because $0.0186 > 0.01$, the sample is not quite extreme enough to reject $H_0$ at the $1\\%$ level (though it would have been rejected at a $5\\%$ level)."
+    }
+},
+{
+    "id": "050064",
+    "group_id": "050061",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Normal Distribution and Hypothesis Testing",
+    "subtopic": [
+        "Sum of Normal Variables",
+        "Scaling vs Summing",
+        "Payload Capacity"
+    ],
+    "img": false,
+    "question": "Passenger mass on a commuter ferry is distributed as $X \\sim N(74.0, 12.0^2)\\text{ kg}$. A tender boat carries $6$ independent passengers, with a safe capacity of $480\\text{ kg}$.<br><br><strong>(a)</strong> State the distribution of total mass $T = X_1 + \\dots + X_6$, giving its mean and variance.<br><strong>(b)</strong> Calculate the probability that total passenger mass exceeds the safe capacity.<br><strong>(c)</strong> Explain why $T$ is mathematically different from $W = 6X_1$, and state which variable has greater variance.<br><br>A sample of passengers is weighed during an audit:$$n = 36$$$$\\bar{x} = 77.5\\text{ kg}$$$$\\sigma = 12.0\\text{ kg}$$<strong>(d)</strong> Test at the $5\\%$ level whether the mean mass has increased from $74.0\\text{ kg}$.",
+    "steps": [
+        "<strong>(a) Distribution of Total Mass $T$:</strong><br><br>For the sum of $6$ independent normal variables:\\begin{aligned} \\text{E}(T) &= 6 \\times 74.0 \\cr &= 444.0\\text{ kg} \\end{aligned}Variances add for independent variables:\\begin{aligned} \\text{Var}(T) &= 6 \\times 12.0^2 \\cr &= 6 \\times 144 \\cr &= 864\\text{ kg}^2 \\end{aligned}Therefore:\\begin{aligned} T \\sim N(444, 864) \\end{aligned}",
+        "<strong>(b) Calculating Probability of Exceeding Capacity:</strong><br><br>Standardise $T = 480$ using $\\text{SD} = \\sqrt{864} \\approx 29.394$:\\begin{aligned} z &= \\dfrac{480 - 444}{29.394} \\cr &= \\dfrac{36}{29.394} \\cr &\\approx 1.225 \\end{aligned}Calculate the upper tail probability:\\begin{aligned} \\text{P}(T > 480) &= 1 - \\Phi(1.225) \\cr &= 1 - 0.8897 \\cr &= 0.1103 \\end{aligned}",
+        "<strong>(c) Comparing $T$ and $W = 6X_1$:</strong><br><br>$T$ is the sum of $6$ distinct independent passengers, so random variations partially cancel out ($\\text{Var}(T) = 6\\sigma^2 = 864$).<br><br>$W = 6X_1$ represents taking a single passenger's mass and multiplying it by $6$, amplifying extreme values ($\\text{Var}(W) = 6^2 \\sigma^2 = 36 \\times 144 = 5184$).<br><br>Therefore, <strong>$W$ has a much greater variance</strong> than $T$.",
+        "<strong>(d) Conducting the Hypothesis Test:</strong><br><br>State the one-tailed hypotheses:\\begin{aligned} H_0&: \\mu = 74.0 \\cr H_1&: \\mu > 74.0 \\end{aligned}Calculate the standard error for $n = 36$:\\begin{aligned} \\text{SE} &= \\dfrac{12.0}{\\sqrt{36}} \\cr &= \\dfrac{12.0}{6} \\cr &= 2.0 \\end{aligned}Calculate the test statistic $z$:\\begin{aligned} z &= \\dfrac{77.5 - 74.0}{2.0} \\cr &= \\dfrac{3.5}{2.0} \\cr &= 1.75 \\end{aligned}For a one-tailed test at the $5\\%$ level, the critical value is $1.6449$.<br><br>Since $1.75 > 1.6449$, reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level that the population mean passenger mass has increased.",
+        "Final Answer: (a) $T \\sim N(444, 864)$, (b) $0.1103$, (c) $T$ sums $6$ independent variables while $W$ scales one; $W$ has greater variance ($5184$ vs $864$), (d) Reject $H_0$ as $1.75 > 1.6449$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $T \\sim N(444, 5184)$, (b) $0.1103$, (c) $T$ sums $6$ independent variables while $W$ scales one; $W$ has greater variance ($5184$ vs $864$), (d) Reject $H_0$ as $1.75 > 1.6449$",
+            "feedback": "In part (a), the variance of the sum of $6$ independent variables is $6 \\times 12^2 = 864$. Evaluating $6^2 \\times 12^2 = 5184$ calculates the variance of scaling a single variable ($6X$)."
+        },
+        {
+            "ans": "(a) $T \\sim N(444, 864)$, (b) $0.8897$, (c) $T$ sums $6$ independent variables while $W$ scales one; $W$ has greater variance ($5184$ vs $864$), (d) Reject $H_0$ as $1.75 > 1.6449$",
+            "feedback": "In part (b), $0.8897$ is $\\text{P}(T \\le 480)$. For the total mass exceeding safe payload capacity, evaluate the upper tail: $1 - 0.8897 = 0.1103$."
+        },
+        {
+            "ans": "(a) $T \\sim N(444, 864)$, (b) $0.1103$, (c) $T$ sums $6$ independent variables while $W$ scales one; $W$ has greater variance ($5184$ vs $864$), (d) Do not reject $H_0$ as $1.75 < 1.9600$",
+            "feedback": "In part (d), comparing against $1.9600$ applies a two-tailed test. Testing whether the mean has increased specifies a one-tailed test with critical value $1.6449$, so $H_0$ is rejected."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Summing vs Scaling Random Variables",
+        "content": "Never confuse $\\sum_{i=1}^n X_i$ with $nX$. When you sum $n$ independent people, their deviations cancel each other out, giving variance $n\\sigma^2$. When you multiply one person by $n$, extreme weights are multiplied by $n$, giving variance $n^2\\sigma^2$ (which is $n$ times larger)."
+    }
+},
+{
+    "id": "050065",
+    "group_id": "050061",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "The Normal Distribution and Hypothesis Testing",
+    "subtopic": [
+        "Sample Size Determination",
+        "Test Power Specification",
+        "Two-Tailed Decision"
+    ],
+    "img": false,
+    "question": "A machine dispenses water with volume $V \\sim N(\\mu, 8.0^2)\\text{ ml}$, calibrated to $\\mu = 500\\text{ ml}$.<br><br>A supervisor samples $n$ bottles daily to test:$$H_0: \\mu = 500 \\qquad H_1: \\mu \\neq 500$$at the $5\\%$ significance level.<br><br><strong>(a)</strong> Find the critical region for the sample mean $\\bar{V}$ in terms of $n$.<br><strong>(b)</strong> If the true mean drifts to $\\mu = 504\\text{ ml}$, the probability of rejecting $H_0$ must be at least $0.95$. Determine the minimum sample size $n$.<br><br>On a day when $n = 25$ bottles were sampled:$$\\bar{v} = 496.4\\text{ ml}$$<strong>(c)</strong> Determine whether $H_0$ should be rejected at the $5\\%$ level.",
+    "steps": [
+        "<strong>(a) Expressing the Critical Region in Terms of $n$:</strong><br><br>Under $H_0$, $\\bar{V} \\sim N\\left(500, \\dfrac{64}{n}\\right)$, so $\\text{SE} = \\dfrac{8.0}{\\sqrt{n}}$.<br><br>For a two-tailed test at the $5\\%$ level, the critical $z$-values are $\\pm 1.96$:\\begin{aligned} \\text{Margin} &= 1.96 \\times \\dfrac{8.0}{\\sqrt{n}} \\cr &= \\dfrac{15.68}{\\sqrt{n}} \\end{aligned}The critical region is:\\begin{aligned} \\bar{V} &< 500 - \\dfrac{15.68}{\\sqrt{n}} \\cr \\bar{V} &> 500 + \\dfrac{15.68}{\\sqrt{n}} \\end{aligned}",
+        "<strong>(b) Determining Minimum Sample Size $n$:</strong><br><br>When $\\mu = 504$, the distribution of $\\bar{V}$ shifts to $N\\left(504, \\dfrac{64}{n}\\right)$.<br><br>For the probability of rejecting $H_0$ to be at least $0.95$, the upper critical boundary of $H_0$ must lie at least $1.6449$ standard errors below $504$:\\begin{aligned}& 500 + \\dfrac{15.68}{\\sqrt{n}} \\le 504 - 1.6449\\left(\\dfrac{8.0}{\\sqrt{n}}\\right) \\cr &\\dfrac{15.68}{\\sqrt{n}} + \\dfrac{13.1592}{\\sqrt{n}} \\le 4 \\cr &\\dfrac{28.8392}{\\sqrt{n}} \\le 4 \\cr &\\sqrt{n} \\ge \\dfrac{28.8392}{4} \\cr &\\sqrt{n} \\ge 7.2098 \\cr &n \\ge (7.2098)^2 \\approx 51.98 \\end{aligned}Therefore, the minimum integer sample size is $n = 52$.",
+        "<strong>(c) Testing with $n = 25$ and $\\bar{v} = 496.4\\text{ ml}$:</strong><br><br>Calculate the standard error for $n = 25$:\\begin{aligned} \\text{SE} &= \\dfrac{8.0}{\\sqrt{25}} \\cr &= 1.6 \\end{aligned}Calculate the test statistic $z$:\\begin{aligned} z &= \\dfrac{496.4 - 500}{1.6} \\cr &= \\dfrac{-3.6}{1.6} \\cr &= -2.25 \\end{aligned}Compare with the two-tailed $5\\%$ critical thresholds ($\\pm 1.96$):\\begin{aligned} |-2.25| > 1.96 \\end{aligned}Since $-2.25 < -1.96$, the sample mean falls into the critical region. Reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level that the mean volume dispensed differs from $500\\text{ ml}$.",
+        "Final Answer: (a) $\\bar{V} < 500 - \\dfrac{15.68}{\\sqrt{n}}$ or $\\bar{V} > 500 + \\dfrac{15.68}{\\sqrt{n}}$, (b) $n = 52$, (c) Reject $H_0$ as $|-2.25| > 1.96$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\bar{V} < 500 - \\dfrac{15.68}{\\sqrt{n}}$ or $\\bar{V} > 500 + \\dfrac{15.68}{\\sqrt{n}}$, (b) $n = 52$, (c) Do not reject $H_0$ as $|-2.25| < 2.576$",
+            "feedback": "In part (c), comparing against $2.576$ applies a $1\\%$ significance level. At the specified $5\\%$ level, the critical value is $1.96$, so $H_0$ is rejected."
+        },
+        {
+            "ans": "(a) $\\bar{V} < 500 - \\dfrac{13.16}{\\sqrt{n}}$ or $\\bar{V} > 500 + \\dfrac{13.16}{\\sqrt{n}}$, (b) $n = 52$, (c) Reject $H_0$ as $|-2.25| > 1.96$",
+            "feedback": "In part (a), $13.16 / \\sqrt{n}$ uses the one-tailed $5\\%$ critical value ($1.6449$). A two-tailed test at $5\\%$ requires $z = 1.96$, giving $1.96 \\times 8.0 = 15.68$."
+        },
+        {
+            "ans": "(a) $\\bar{V} < 500 - \\dfrac{15.68}{\\sqrt{n}}$ or $\\bar{V} > 500 + \\dfrac{15.68}{\\sqrt{n}}$, (b) $n = 26$, (c) Reject $H_0$ as $|-2.25| > 1.96$",
+            "feedback": "In part (b), $n = 26$ results from forgetting that $\\sigma / \\sqrt{n}$ applies to both the critical threshold and the power offset. Both terms combine to require $\\sqrt{n} \\ge 7.21$, giving $n = 52$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Finding Minimum Sample Sizes for Test Power",
+        "content": "To find sample size $n$ for a specified power: set the distance between the null mean and the alternative mean ($504 - 500 = 4$) equal to $(z_{\\alpha/2} + z_{\\beta})\\dfrac{\\sigma}{\\sqrt{n}}$. Here $(1.96 + 1.6449)\\dfrac{8}{\\sqrt{n}} \\le 4$ yields $n \\ge 51.98$, so $n = 52$."
     }
 }
 ];
