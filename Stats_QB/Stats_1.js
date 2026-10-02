@@ -1650,7 +1650,7 @@ window.ALEVEL_QUESTIONS = [
     "question": "A meteorologist investigates daily cloud cover, $C$, recorded in the Large Data Set.<br><br>Cloud cover is measured in integers from $0$ to $8$ oktas, where $0$ represents a completely clear sky and $8$ represents completely overcast conditions.<br><br>The meteorologist proposes modelling $C$ using a discrete uniform distribution.<br><br><strong>(a)</strong> Write down the probability distribution for $C$ under this model.<br><br><strong>(b)</strong> Using this model, calculate the probability that on a randomly chosen day:<br><strong>(i)</strong> cloud cover is less than $50\\%$;<br><strong>(ii)</strong> cloud cover is at least $75\\%$ (at least $6$ oktas).<br><br><strong>(c)</strong> Historical records for a coastal station over $360$ days show that cloud cover was at least $6$ oktas on $162$ days. Comment on the suitability of the model in light of this evidence.<br><br><strong>(d)</strong> Suggest an appropriate refinement to the model.",
     "steps": [
         "<strong>(a) Writing the Probability Distribution for $C$:</strong><br><br>The possible values of cloud cover in oktas are the $9$ integers $c \\in \\{0, 1, 2, 3, 4, 5, 6, 7, 8\\}$.<br><br>Under a discrete uniform distribution, each outcome has equal probability:\\begin{aligned} \\text{P}(C = c) = \\dfrac{1}{9}\\text{, for } c \\in \\{0, 1, \\dots, 8\\} \\end{aligned}",
-        "<strong>(b) (i) Probability Cloud Cover is Less Than $50\\%$:</strong><br><br>Since $50\\%$ of $8$ oktas is $4$ oktas, <em>less than $50\\%$ implication</em> corresponds to $C < 4$, which includes $c \\in \\{0, 1, 2, 3\\}$ ($4$ outcomes):\\begin{aligned} \\text{P}(C < 4) &= 4 \\times \\dfrac{1}{9} \\cr &= \\dfrac{4}{9} \\approx 0.444 \\end{aligned}",
+        "<strong>(b) (i) Probability Cloud Cover is Less Than $50\\%$:</strong><br><br>Since $50\\%$ of $8$ oktas is $4$ oktas, <em>less than $50\\%$</em> corresponds to $C < 4$, which includes $c \\in \\{0, 1, 2, 3\\}$ ($4$ outcomes):\\begin{aligned} \\text{P}(C < 4) &= 4 \\times \\dfrac{1}{9} \\cr &= \\dfrac{4}{9} \\approx 0.444 \\end{aligned}",
         "<strong>(b) (ii) Probability Cloud Cover is at Least $75\\%$:</strong><br><br>Since $75\\%$ of $8$ oktas is $6$ oktas, at least $75\\%$ corresponds to $C \\ge 6$, which includes $c \\in \\{6, 7, 8\\}$ ($3$ outcomes):\\begin{aligned} \\text{P}(C \\ge 6) &= 3 \\times \\dfrac{1}{9} \\cr &= \\dfrac{3}{9} \\cr &= \\dfrac{1}{3} \\approx 0.333 \\end{aligned}",
         "<strong>(c) Evaluating Model Suitability:</strong><br><br>Calculate the observed relative frequency from the coastal station data:\\begin{aligned} \\text{Relative frequency} &= \\dfrac{162}{360} \\cr &= 0.45 \\end{aligned}Compare with the theoretical uniform probability:\\begin{aligned} 0.45 > 0.333 \\end{aligned}The observed proportion ($0.45$) is substantially higher than the model prediction ($\\dfrac{1}{3} \\approx 0.333$).<br><br>Therefore, the discrete uniform model is <strong>not suitable</strong> because it significantly underestimates the frequency of overcast days.",
         "<strong>(d) Suggesting a Refinement:</strong><br><br>Refine the model by using an empirical, non-uniform discrete distribution that assigns higher probabilities to high oktas (such as $7$ and $8$) to reflect UK coastal weather patterns.",
@@ -1838,6 +1838,215 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Cumulative Binomial on Calculators",
         "content": "For hypothesis testing of $\\text{P}(X \\ge 30)$, remember that statistical calculators only evaluate lower-tail cumulative probabilities $\\text{P}(X \\le k)$. You must evaluate $1 - \\text{P}(X \\le 29)$, never $1 - \\text{P}(X \\le 30)$."
+    }
+},
+{
+    "id": "050046",
+    "group_id": "050046",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "Correlation and Linear Regression",
+    "subtopic": [
+        "PMCC Hypothesis Test",
+        "Linear Regression Suitability",
+        "Interpreting Gradient"
+    ],
+    "img": false,
+    "question": "Chloe owns a tearoom in a small New Forest town. She records her weekly hot soup sales, £s, and the average daily maximum temperature, $t\\text{ }^\\circ\\text{C}$, for $8$ weeks during the autumn.<br><br>The sample correlation coefficient is $r = -0.882$.<br><br>Critical values for $n = 8$ are:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>1-tail</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2.5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$1\\%$</th></tr><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>2-tail</th><th style='padding:4px; border:1px solid #ccc;'>$10\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2\\%$</th></tr></thead><tbody><tr><td style='padding:4px; border:1px solid #ccc;'>$r_{\\text{crit}}$</td><td style='padding:4px; border:1px solid #ccc;'>$0.6215$</td><td style='padding:4px; border:1px solid #ccc;'>$0.7067$</td><td style='padding:4px; border:1px solid #ccc;'>$0.7887$</td></tr></tbody></table><strong>(a)</strong> Stating your hypotheses clearly, test at the $5\\%$ level whether the correlation is negative.<br><br><strong>(b)</strong> Suggest a contextual reason for this correlation.<br><br><strong>(c)</strong> State, with a reason, whether $r$ is consistent with using a linear regression model.<br><br><strong>(d)</strong> State, with a reason, which variable is the explanatory variable.<br><br><strong>(e)</strong> The regression line is $s = 3450 - 128t$. Interpret the gradient in context.",
+    "steps": [
+        "<strong>(a) Hypothesis Test for Negative Correlation:</strong><br><br>State the one-tailed hypotheses:\\begin{aligned} H_0&: \\rho = 0 \\cr H_1&: \\rho < 0 \\end{aligned}For $n = 8$ at the $5\\%$ level (one-tailed), the critical threshold is $-0.6215$.<br><br>Compare the sample coefficient with the threshold:\\begin{aligned} -0.882 < -0.6215 \\end{aligned}Since $-0.882$ lies in the critical region, reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level of a negative correlation between temperature and weekly soup sales.",
+        "<strong>(b) Contextual Reason for the Correlation:</strong><br><br>As outdoor temperature falls, customers seek hot meals to warm up, increasing soup demand.<br><br>Conversely, during warmer weeks, customers prefer cold lunches, decreasing soup sales.",
+        "<strong>(c) Consistency with Linear Regression:</strong><br><br>Yes, $r = -0.882$ indicates a strong negative linear relationship between the two variables, which supports the suitability of a linear model.",
+        "<strong>(d) Identifying the Explanatory Variable:</strong><br><br>Temperature ($t$) is the explanatory (independent) variable because outdoor weather drives customer food choices, whereas tearoom soup sales cannot influence ambient temperature.",
+        "<strong>(e) Interpreting the Gradient:</strong><br><br>The gradient is $-128$.<br><br>For every $1\\text{ }^\\circ\\text{C}$ increase in average daily maximum temperature, weekly soup sales decrease by £128 on average.",
+        "Final Answer: (a) Reject $H_0$ as $-0.882 < -0.6215$, (b) Colder weather increases demand for hot soup, (c) Yes, $r = -0.882$ shows strong linear correlation, (d) Temperature $t$, (e) Sales decrease by £128 per $1\\text{ }^\\circ\\text{C}$ increase"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Do not reject $H_0$ as $-0.882 < -0.6215$, (b) Colder weather increases demand for hot soup, (c) Yes, $r = -0.882$ shows strong linear correlation, (d) Temperature $t$, (e) Sales decrease by £128 per $1\\text{ }^\\circ\\text{C}$ increase",
+            "feedback": "In part (a), $-0.882$ is more negative than $-0.6215$, meaning it falls into the critical region and $H_0$ must be rejected, not retained."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $-0.882 < -0.6215$, (b) Colder weather increases demand for hot soup, (c) No, $r$ must be positive to use linear regression, (d) Temperature $t$, (e) Sales decrease by £128 per $1\\text{ }^\\circ\\text{C}$ increase",
+            "feedback": "In part (c), linear regression is valid for both positive and negative linear associations. A value of $r = -0.882$ indicates a strong linear fit."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $-0.882 < -0.6215$, (b) Colder weather increases demand for hot soup, (c) Yes, $r = -0.882$ shows strong linear correlation, (d) Sales £s, (e) Sales decrease by £128 per $1\\text{ }^\\circ\\text{C}$ increase",
+            "feedback": "In part (d), sales is the response variable, not the explanatory variable. Ambient temperature is the independent factor influencing customer demand."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Interpreting Regression Gradients",
+        "content": "When asked to interpret a regression gradient in context, follow a strict structure: state the unit increase in the explanatory variable ($1\\text{ }^\\circ\\text{C}$), state whether the response variable increases or decreases, include the response units (£), and specify that this is an average or estimated change."
+    }
+},
+{
+    "id": "050047",
+    "group_id": "050046",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "Correlation and Linear Regression",
+    "subtopic": [
+        "Regression Predictions",
+        "Extrapolation Dangers",
+        "Interpreting Intercept"
+    ],
+    "img": false,
+    "question": "A coach records weekly training volume, $x$ hours, and resting heart rate, $y\\text{ bpm}$, for $10$ endurance athletes. The correlation is $r = -0.748$.<br><br>Critical values for $n = 10$ are:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>1-tail</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2.5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$1\\%$</th></tr><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>2-tail</th><th style='padding:4px; border:1px solid #ccc;'>$10\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2\\%$</th></tr></thead><tbody><tr><td style='padding:4px; border:1px solid #ccc;'>$r_{\\text{crit}}$</td><td style='padding:4px; border:1px solid #ccc;'>$0.5494$</td><td style='padding:4px; border:1px solid #ccc;'>$0.6319$</td><td style='padding:4px; border:1px solid #ccc;'>$0.7155$</td></tr></tbody></table><strong>(a)</strong> Test at the $1\\%$ level whether increased training associates with lower resting heart rate.<br><br>The regression line of $y$ on $x$ is $y = 68.4 - 1.65x$, with sample values $4.0 \\le x \\le 14.0$.<br><br><strong>(b)</strong> Interpret the intercept $68.4$ in context.<br><br><strong>(c)</strong> Estimate the resting heart rate for an athlete who trains $8.0\\text{ hours}$ per week.<br><br><strong>(d)</strong> Explain why predicting heart rate for an athlete training $28.0\\text{ hours}$ per week is unreliable.",
+    "steps": [
+        "<strong>(a) Conducting the Hypothesis Test:</strong><br><br>State the one-tailed hypotheses:\\begin{aligned} H_0&: \\rho = 0 \\cr H_1&: \\rho < 0 \\end{aligned}For $n = 10$ at the $1\\%$ level (one-tailed), the critical threshold is $-0.7155$.<br><br>Compare the sample coefficient with the threshold:\\begin{aligned} -0.748 < -0.7155 \\end{aligned}Since $-0.748$ is in the critical region, reject $H_0$.<br><br>There is significant evidence at the $1\\%$ level that increased training volume associates with lower resting heart rate.",
+        "<strong>(b) Interpreting the Intercept:</strong><br><br>The intercept $68.4$ represents the estimated resting heart rate ($68.4\\text{ bpm}$) for an athlete who undertakes zero hours of weekly training ($x = 0$).",
+        "<strong>(c) Estimating for $x = 8.0$:</strong><br><br>Substitute $x = 8.0$ into the regression line:\\begin{aligned} y &= 68.4 - 1.65(8.0) \\cr &= 68.4 - 13.2 \\cr &= 55.2\\text{ bpm} \\end{aligned}",
+        "<strong>(d) Explaining the Danger of Extrapolation:</strong><br><br>A training volume of $28.0\\text{ hours}$ lies far beyond the sample range ($4.0\\text{ to }14.0\\text{ hours}$).<br><br>Predicting outside the data range is extrapolation and is unreliable because the linear trend may change, and human resting heart rate cannot decrease indefinitely without physiological limits.",
+        "Final Answer: (a) Reject $H_0$ as $-0.748 < -0.7155$, (b) Estimated resting heart rate ($68.4\\text{ bpm}$) for an athlete who does not train, (c) $55.2\\text{ bpm}$, (d) Unreliable because $28.0\\text{ hours}$ is an extrapolation"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Do not reject $H_0$ as $-0.748 > -0.7646$, (b) Estimated resting heart rate ($68.4\\text{ bpm}$) for an athlete who does not train, (c) $55.2\\text{ bpm}$, (d) Unreliable because $28.0\\text{ hours}$ is an extrapolation",
+            "feedback": "Using $-0.7646$ tests at the $0.5\\%$ level. For a one-tailed test at the specified $1\\%$ level, the critical value is $-0.7155$, so $H_0$ is rejected."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $-0.748 < -0.7155$, (b) Estimated resting heart rate ($68.4\\text{ bpm}$) for an athlete who does not train, (c) $81.6\\text{ bpm}$, (d) Unreliable because $28.0\\text{ hours}$ is an extrapolation",
+            "feedback": "In part (c), check your sign: the gradient is negative, so $1.65 \\times 8.0 = 13.2$ must be subtracted from $68.4$, yielding $55.2\\text{ bpm}$, not $81.6\\text{ bpm}$."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $-0.748 < -0.7155$, (b) The maximum possible heart rate an athlete can achieve, (c) $55.2\\text{ bpm}$, (d) Unreliable because $28.0\\text{ hours}$ is an extrapolation",
+            "feedback": "In part (b), the intercept represents resting heart rate when $x = 0$ (no training), not maximum heart rate during intense exercise."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Interpolation vs Extrapolation",
+        "content": "In examination mark schemes, predicting within the range of original data ($x = 8.0$) is called interpolation and is generally reliable. Predicting outside the data range ($x = 28.0$) is extrapolation; you must state that the linear pattern may not hold outside the observed domain."
+    }
+},
+{
+    "id": "050048",
+    "group_id": "050046",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "Correlation and Linear Regression",
+    "subtopic": [
+        "Invariance of PMCC",
+        "Decoding Regression Lines",
+        "Two-Tailed Correlation Test"
+    ],
+    "img": false,
+    "question": "A researcher measures distance, $d$ metres, from a motorway and particulate concentration, $p\\text{ }\\mu\\text{g m}^{-3}$, at $12$ stations. Data are coded using:$$u = \\dfrac{d}{50} \\qquad v = \\dfrac{p - 10}{4}$$The correlation between coded variables is $r_{uv} = -0.635$.<br><br>Critical values for $n = 12$ are:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>1-tail</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2.5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$1\\%$</th></tr><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>2-tail</th><th style='padding:4px; border:1px solid #ccc;'>$10\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2\\%$</th></tr></thead><tbody><tr><td style='padding:4px; border:1px solid #ccc;'>$r_{\\text{crit}}$</td><td style='padding:4px; border:1px solid #ccc;'>$0.4973$</td><td style='padding:4px; border:1px solid #ccc;'>$0.5760$</td><td style='padding:4px; border:1px solid #ccc;'>$0.6581$</td></tr></tbody></table><strong>(a)</strong> State $r_{dp}$, explaining your reasoning.<br><br><strong>(b)</strong> Test at the $5\\%$ level for an association between distance and particulate level.<br><br><strong>(c)</strong> The regression line of $v$ on $u$ is $v = 15.2 - 0.85u$. Express the regression line of $p$ on $d$ in the form $p = a + bd$.",
+    "steps": [
+        "<strong>(a) Stating $r_{dp}$ Using Invariance:</strong><br><br>The product moment correlation coefficient measures linear association and is completely invariant under linear transformations with positive scaling factors.<br><br>Therefore:\\begin{aligned} r_{dp} = r_{uv} = -0.635 \\end{aligned}",
+        "<strong>(b) Two-Tailed Hypothesis Test:</strong><br><br>Testing for *'an association'* requires a two-tailed test:\\begin{aligned} H_0&: \\rho = 0 \\cr H_1&: \\rho \\neq 0 \\end{aligned}For $n = 12$ at the $5\\%$ level (two-tailed), critical values are $\\pm 0.5760$.<br><br>Compare the magnitude with the critical threshold:\\begin{aligned} |-0.635| > 0.5760 \\end{aligned}Since $-0.635 < -0.5760$, the result falls into the critical region. Reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level of an association between distance from the motorway and particulate concentration.",
+        "<strong>(c) Decoding the Regression Equation:</strong><br><br>Substitute $u = \\dfrac{d}{50}$ and $v = \\dfrac{p - 10}{4}$ into $v = 15.2 - 0.85u$:\\begin{aligned}& \\dfrac{p - 10}{4} \\cr &\\quad = 15.2 - 0.85\\left(\\dfrac{d}{50}\\right) \\cr &\\quad = 15.2 - 0.017d \\end{aligned}Multiply through by $4$:\\begin{aligned} p - 10 &= 60.8 - 0.068d \\end{aligned}Add $10$ to isolate $p$:\\begin{aligned} p &= 70.8 - 0.068d \\end{aligned}Thus $a = 70.8$ and $b = -0.068$.",
+        "Final Answer: (a) $r_{dp} = -0.635$ due to linear coding invariance, (b) Reject $H_0$ as $|-0.635| > 0.5760$, (c) $p = 70.8 - 0.068d$ ($a = 70.8, b = -0.068$)"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $r_{dp} = -0.032$ due to linear coding invariance, (b) Reject $H_0$ as $|-0.635| > 0.5760$, (c) $p = 70.8 - 0.068d$ ($a = 70.8, b = -0.068$)",
+            "feedback": "In part (a), the correlation coefficient is scale-invariant. You do not multiply or divide $r$ by the coding factors ($50$ or $4$); $r_{dp}$ remains exactly $-0.635$."
+        },
+        {
+            "ans": "(a) $r_{dp} = -0.635$ due to linear coding invariance, (b) Do not reject $H_0$ as $-0.635 < -0.4973$, (c) $p = 70.8 - 0.068d$ ($a = 70.8, b = -0.068$)",
+            "feedback": "In part (b), $-0.635$ is further into the tail than $-0.5760$, which means it lies inside the critical region and $H_0$ is rejected."
+        },
+        {
+            "ans": "(a) $r_{dp} = -0.635$ due to linear coding invariance, (b) Reject $H_0$ as $|-0.635| > 0.5760$, (c) $p = 60.8 - 0.068d$ ($a = 60.8, b = -0.068$)",
+            "feedback": "In part (c), when isolating $p$, you must add $10$ to both sides: $60.8 + 10 = 70.8$, so $a = 70.8$, not $60.8$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Decoding Regression Lines",
+        "content": "While the PMCC $r$ is unchanged by coding, the regression line equation $y = a + bx$ changes completely. Always substitute the algebraic definitions of coded variables back into the line, expand carefully, and collect terms to find the original coefficients."
+    }
+},
+{
+    "id": "050049",
+    "group_id": "050046",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "Correlation and Linear Regression",
+    "subtopic": [
+        "Exponential Models",
+        "Logarithmic Transformation",
+        "Linearisation"
+    ],
+    "img": false,
+    "question": "A microbiologist models bacterial population, $P$ (in thousands), after $t$ hours using $P = a b^t$, where $a$ and $b$ are positive constants.<br><br><strong>(a)</strong> Show that this model can be written as a linear equation connecting $\\log_{10} P$ and $t$.<br><br>The regression line of $\\log_{10} P$ on $t$ for $8$ observations over $6$ hours is:$$\\log_{10} P = 1.20 + 0.25t$$<strong>(b)</strong> Find the values of $a$ and $b$ to $3$ significant figures.<br><br><strong>(c)</strong> Interpret the meaning of constants $a$ and $b$ in context.<br><br><strong>(d)</strong> Estimate the bacterial population when $t = 4.5\\text{ hours}$.",
+    "steps": [
+        "<strong>(a) Linearising the Exponential Equation:</strong><br><br>Take base-$10$ logarithms of both sides of $P = a b^t$:\\begin{aligned} \\log_{10} P &= \\log_{10}(a b^t) \\cr &= \\log_{10} a + \\log_{10}(b^t) \\cr &= \\log_{10} a + t\\log_{10} b \\end{aligned}This is a linear equation $Y = c + mt$, where $Y = \\log_{10} P$, intercept $c = \\log_{10} a$, and gradient $m = \\log_{10} b$.",
+        "<strong>(b) Finding the Values of $a$ and $b$:</strong><br><br>Equate coefficients with the regression line $\\log_{10} P = 1.20 + 0.25t$:<br><br>For constant $a$:\\begin{aligned} \\log_{10} a &= 1.20 \\cr a &= 10^{1.20} \\cr &\\approx 15.849 \\cr &\\approx 15.8 \\end{aligned}For constant $b$:\\begin{aligned} \\log_{10} b &= 0.25 \\cr b &= 10^{0.25} \\cr &\\approx 1.778 \\cr &\\approx 1.78 \\end{aligned}",
+        "<strong>(c) Interpreting $a$ and $b$ in Context:</strong><br><br>&bull; Constant $a \\approx 15.8$ represents the initial population (at $t = 0$), meaning approximately $15,800$ bacteria.<br>&bull; Constant $b \\approx 1.78$ is the hourly growth factor; the population multiplies by $1.78$ every hour (a $78\\%$ hourly increase).",
+        "<strong>(d) Estimating Population at $t = 4.5$:</strong><br><br>Substitute $t = 4.5$ into the logarithmic regression equation:\\begin{aligned} \\log_{10} P &= 1.20 + 0.25(4.5) \\cr &= 1.20 + 1.125 \\cr &= 2.325 \\end{aligned}Solve for $P$ by raising $10$ to the power:\\begin{aligned} P &= 10^{2.325} \\cr &\\approx 211.35 \\end{aligned}The population is approximately $211\\text{ thousand}$ (or $211,000$ bacteria to $3$ significant figures).",
+        "Final Answer: (a) $\\log_{10} P = \\log_{10} a + t\\log_{10} b$, (b) $a = 15.8, b = 1.78$, (c) $a$ is initial population ($15,800$) and $b$ is hourly multiplier ($1.78$), (d) $211\\text{ thousand}$ (or $211,000$)"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\log_{10} P = \\log_{10} a + t\\log_{10} b$, (b) $a = 1.20, b = 0.25$, (c) $a$ is initial population ($15,800$) and $b$ is hourly multiplier ($1.78$), (d) $211\\text{ thousand}$ (or $211,000$)",
+            "feedback": "In part (b), $1.20$ and $0.25$ are $\\log_{10} a$ and $\\log_{10} b$. You must calculate $10^{1.20} \\approx 15.8$ and $10^{0.25} \\approx 1.78$ to find $a$ and $b$."
+        },
+        {
+            "ans": "(a) $\\log_{10} P = \\log_{10} a + t\\log_{10} b$, (b) $a = 15.8, b = 1.78$, (c) $a$ is initial population ($15,800$) and $b$ is hourly multiplier ($1.78$), (d) $2.33\\text{ thousand}$",
+            "feedback": "In part (d), $2.325$ is the value of $\\log_{10} P$. To find the population $P$, evaluate $10^{2.325} \\approx 211.35$, yielding $211,000$ bacteria."
+        },
+        {
+            "ans": "(a) $\\log_{10} P = t\\log_{10}(ab)$, (b) $a = 15.8, b = 1.78$, (c) $a$ is initial population ($15,800$) and $b$ is hourly multiplier ($1.78$), (d) $211\\text{ thousand}$ (or $211,000$)",
+            "feedback": "In part (a), applying log laws to $a b^t$ splits into a sum: $\\log_{10} a + \\log_{10}(b^t) = \\log_{10} a + t\\log_{10} b$, not $t\\log_{10}(ab)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Exponential vs Power Models",
+        "content": "Be ready to distinguish between exponential models $y = ab^x$ (which linearise to $\\log y = \\log a + x \\log b$) and power models $y = ax^n$ (which linearise to $\\log y = \\log a + n \\log x$). With $ab^x$, only the $y$-variable is logged; the $x$-variable remains unlogged."
+    }
+},
+{
+    "id": "050050",
+    "group_id": "050046",
+    "branch": "Statistics",
+    "board": "Edexcel",
+    "level": "A",
+    "major_area": "Statistical Hypothesis Testing",
+    "topic": "Correlation and Linear Regression",
+    "subtopic": [
+        "Regression Directionality",
+        "Correlation vs Causation",
+        "Residual Minimisation"
+    ],
+    "img": false,
+    "question": "A retail analyst studies monthly advertising expenditure, £x, and monthly sales revenue, £y, for $10$ retail stores. The sample correlation is $r = 0.692$.<br><br>Critical values for $n = 10$ are:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>1-tail</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2.5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$1\\%$</th></tr><tr style='border-bottom:2px solid #333;'><th style='padding:4px; border:1px solid #ccc;'>2-tail</th><th style='padding:4px; border:1px solid #ccc;'>$10\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$5\\%$</th><th style='padding:4px; border:1px solid #ccc;'>$2\\%$</th></tr></thead><tbody><tr><td style='padding:4px; border:1px solid #ccc;'>$r_{\\text{crit}}$</td><td style='padding:4px; border:1px solid #ccc;'>$0.5494$</td><td style='padding:4px; border:1px solid #ccc;'>$0.6319$</td><td style='padding:4px; border:1px solid #ccc;'>$0.7155$</td></tr></tbody></table><strong>(a)</strong> Test at the $2.5\\%$ level for a positive correlation.<br><br>The regression line of $y$ on $x$ is $y = 22000 + 4.8x$.<br><br><strong>(b)</strong> A manager rearranges this to predict advertising spend for a £70000 sales target: $x = \\dfrac{70000 - 22000}{4.8} = 10000$. Explain why this is statistically invalid.<br><br><strong>(c)</strong> A director claims increasing advertising guarantees higher sales. Explain why this claim is not justified.",
+    "steps": [
+        "<strong>(a) Conducting the Hypothesis Test:</strong><br><br>State the one-tailed hypotheses:\\begin{aligned} H_0&: \\rho = 0 \\cr H_1&: \\rho > 0 \\end{aligned}For $n = 10$ at the $2.5\\%$ level (one-tailed), the critical threshold is $0.6319$.<br><br>Compare the sample coefficient with the threshold:\\begin{aligned} 0.692 > 0.6319 \\end{aligned}Since $0.692$ lies in the critical region, reject $H_0$.<br><br>There is significant evidence at the $2.5\\%$ level of a positive correlation between advertising expenditure and sales revenue.",
+        "<strong>(b) Explaining Why Rearranging $y$ on $x$ is Invalid:</strong><br><br>The regression line of $y$ on $x$ is calculated specifically to minimise the sum of squared vertical residuals (errors in $y$), assuming $x$ is independent.<br><br>To estimate advertising spend $x$ from target revenue $y$, one must calculate the separate <strong>regression line of $x$ on $y$</strong> (which minimises horizontal residuals).<br><br>Algebraically rearranging $y$ on $x$ produces a biased and statistically incorrect estimator.",
+        "<strong>(c) Explaining Correlation Versus Causation:</strong><br><br>Statistical correlation indicates an association between two variables, not a causal relationship.<br><br>Higher sales and higher advertising could both be driven by external confounding factors (such as store size or consumer wealth), or successful stores may simply have larger budgets to spend on ads.<br><br>Therefore, increasing advertising expenditure cannot guarantee higher sales.",
+        "Final Answer: (a) Reject $H_0$ as $0.692 > 0.6319$, (b) Inappropriate because $y$ on $x$ minimises vertical residuals; predicting $x$ requires the regression line of $x$ on $y$, (c) Correlation does not imply causation; confounding factors may drive revenue"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Do not reject $H_0$ as $0.692 < 0.7155$, (b) Inappropriate because $y$ on $x$ minimises vertical residuals; predicting $x$ requires the regression line of $x$ on $y$, (c) Correlation does not imply causation; confounding factors may drive revenue",
+            "feedback": "Using $0.7155$ compares against the $1\\%$ level. For a one-tailed test at the specified $2.5\\%$ level, the critical value is $0.6319$, so $H_0$ is rejected."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $0.692 > 0.6319$, (b) The calculation is valid because any linear equation can be rearranged, (c) Correlation does not imply causation; confounding factors may drive revenue",
+            "feedback": "In part (b), regression lines are directional. Because $y$ on $x$ minimises errors in $y$, rearranging it does not yield the least-squares line for $x$ on $y$."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $0.692 > 0.6319$, (b) Inappropriate because $y$ on $x$ minimises vertical residuals; predicting $x$ requires the regression line of $x$ on $y$, (c) The claim is justified because $r = 0.692$ proves advertising causes revenue",
+            "feedback": "In part (c), high correlation never proves causation. Other variables (such as seasonal demand or pricing) could be responsible for the observed revenue increase."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Never Rearrange Regression Lines",
+        "content": "A cardinal rule in A-Level Statistics is that you can never rearrange $y = a + bx$ to estimate $x$ from $y$. The regression line of $y$ on $x$ minimises vertical distances. If you need to estimate $x$ given $y$, you must fit the distinct regression line of $x$ on $y$, which minimises horizontal distances."
     }
 }
 ];
