@@ -630,5 +630,195 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Finding Minimum Sample Sizes for Test Power",
         "content": "To find sample size $n$ for a specified power: set the distance between the null mean and the alternative mean ($504 - 500 = 4$) equal to $(z_{\\alpha/2} + z_{\\beta})\\dfrac{\\sigma}{\\sqrt{n}}$. Here $(1.96 + 1.6449)\\dfrac{8}{\\sqrt{n}} \\le 4$ yields $n \\ge 51.98$, so $n = 52$."
     }
+},
+{
+    "id": "050066",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Statistical Sampling",
+    "topic": "Sampling Methods",
+    "subtopic": [
+        "Stratified Sampling",
+        "Representativeness"
+    ],
+    "img": false,
+    "question": "Marcus is investigating reading habits among students at his sixth form college. He plans to survey a sample of 120 students.<br><br><strong>(a)</strong> State one advantage of using a stratified sample based on year group rather than a simple random sample.<br><br><strong>(b)</strong> Explain whether it would be reasonable for Marcus to use his results to draw conclusions about the reading habits of all sixth form students in England.",
+    "steps": [
+        "<strong>(a) Advantage of Stratified Sampling:</strong><br><br>A stratified sample guarantees that each year group is represented in the exact proportion that it occurs in the college population.<br><br>This ensures key subgroups are not under-represented and reduces sampling variation compared to a simple random sample.",
+        "<strong>(b) Generalisability to Wider Population:</strong><br><br>No, it would not be reasonable.<br><br>A sample drawn from a single college is unrepresentative of the national population, as reading habits may vary substantially due to regional, demographic, or socio-economic differences.",
+        "Final Answer: (a) Guarantees proportional representation of each year group, (b) No, a single college cannot represent national demographics"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Guarantees proportional representation of each year group, (b) Yes, 120 students is a large enough sample to generalise nationally",
+            "feedback": "Sample size alone does not overcome selection bias. Surveying only one institution means the sample cannot capture national socio-economic and regional variations."
+        },
+        {
+            "ans": "(a) It is quicker and cheaper than simple random sampling, (b) No, a single college cannot represent national demographics",
+            "feedback": "Stratified sampling is generally more time-consuming and expensive than simple random sampling because a complete sampling frame with subgroup classifications is required."
+        },
+        {
+            "ans": "(a) It completely eliminates all sampling errors and bias, (b) Yes, 120 students is a large enough sample to generalise nationally",
+            "feedback": "No sampling method eliminates all sampling error, as random variation between sample and population always remains. Generalising to a national population from one location is also invalid."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Representativeness vs Method",
+        "content": "Even if your sampling method is mathematically sound, if your sampling frame is restricted to a single school or college, your target population is only that college. You cannot generalise conclusions to all students in England without introducing geographical and socio-economic bias."
+    }
+},
+{
+    "id": "050067",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Statistical Sampling",
+    "topic": "Sampling Methods",
+    "subtopic": [
+        "Sampling Frame",
+        "Stratified Calculations"
+    ],
+    "img": false,
+    "question": "The manager of a leisure centre wishes to survey member satisfaction. The centre has $1\\,200$ adult members, $450$ junior members, and $350$ senior members. The manager decides to take a stratified sample of $80$ members.<br><br><strong>(a)</strong> Calculate the number of junior members that should be included in the sample.<br><br><strong>(b)</strong> State what is meant by a <em>sampling frame</em> in this context, and explain why taking a stratified sample would not be possible if a complete register of members was unavailable.",
+    "steps": [
+        "<strong>(a) Junior Members in Stratified Sample:</strong><br><br>First calculate the total membership of the centre:\begin{aligned} N &= 1200 + 450 + 350 \\cr &= 2000 \end{aligned}Now calculate the proportional number of junior members for a sample of $n = 80$:\begin{aligned} \text{Junior sample} &= \dfrac{450}{2000} \times 80 \\cr &= \dfrac{9}{40} \times 80 \\cr &= 18 \end{aligned}",
+        "<strong>(b) Sampling Frame and Stratification:</strong><br><br>A sampling frame in this context is a complete, unique list or register of all $2\\,000$ members of the leisure centre.<br><br>Without a complete register, members cannot be uniquely identified, categorised accurately into their respective age strata, or selected at random from within each stratum.",
+        "Final Answer: (a) 18, (b) Complete list of all 2000 members; required to identify and randomly select individuals from each stratum"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) 27, (b) Complete list of all 2000 members; required to identify and randomly select individuals from each stratum",
+            "feedback": "This incorrect calculation divides 80 equally among the three strata ($80 / 3 \\approx 27$) rather than weighting proportionally by group size."
+        },
+        {
+            "ans": "(a) 18, (b) The total number of members (2000); required to determine the percentage of each age group",
+            "feedback": "A sampling frame is not merely a single aggregate number. It must be an actual list, database, or register of identifiable members from which random selections can be made."
+        },
+        {
+            "ans": "(a) 14, (b) Complete list of all 2000 members; required to identify and randomly select individuals from each stratum",
+            "feedback": "14 is the number of senior members ($\\frac{350}{2000} \\times 80 = 14$), not junior members."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Sampling Frame vs Population",
+        "content": "Students often confuse the population size with the sampling frame. The population size is the number $N = 2000$, whereas the sampling frame is the physical or electronic list from which individuals are selected. Without an accurate list, true random or stratified sampling cannot take place."
+    }
+},
+{
+    "id": "050068",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Statistical Sampling",
+    "topic": "Sampling Methods",
+    "subtopic": [
+        "Systematic Sampling",
+        "Periodic Bias"
+    ],
+    "img": false,
+    "question": "A food processing factory produces packets of crisps. A quality-control inspector wishes to check packet weights. During a single morning shift, $2\\,400$ packets are produced, numbered sequentially from $1$ to $2\\,400$ along a conveyor belt. The inspector decides to select a systematic sample of $60$ packets.<br><br><strong>(a)</strong> Describe clearly how the inspector should select this systematic sample.<br><br><strong>(b)</strong> State one potential hazard or disadvantage of using systematic sampling in this production environment.",
+    "steps": [
+        "<strong>(a) Selecting the Systematic Sample:</strong><br><br>1. Determine the sampling interval $k$:\begin{aligned} k &= \dfrac{2400}{60} \\cr &= 40 \end{aligned}2. Select a random starting number $r$ from $1$ to $40$ inclusive.<br><br>3. Select packet $r$, followed by every $40\\text{th}$ packet thereafter:\begin{aligned} \text{Packets: } r, r+40, r+80, \dots, r+2360 \end{aligned}",
+        "<strong>(b) Potential Hazard:</strong><br><br>If the production process has an underlying periodic pattern or cyclic fault that coincides with the sampling interval (every $40\\text{th}$ packet), the sample will be severely biased (e.g. consistently picking packets from a faulty machine nozzle or missing periodic dips).",
+        "Final Answer: (a) Choose random start $r \in [1, 40]$, then take every $40\text{th}$ packet ($r, r+40, \dots$), (b) Periodic machine cycles matching the sampling interval introduce severe bias"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Simply select packets 40, 80, 120, ..., 2400, (b) Periodic machine cycles matching the sampling interval introduce severe bias",
+            "feedback": "Starting deterministically at packet 40 eliminates randomness. Systematic sampling requires a random starting integer between 1 and $k$ to give each packet an equal chance of selection."
+        },
+        {
+            "ans": "(a) Choose random start $r \in [1, 40]$, then take every $40\text{th}$ packet ($r, r+40, \dots$), (b) It is impossible to use if items are already sequentially numbered",
+            "feedback": "Sequential numbering makes systematic sampling exceptionally easy to implement. The principal danger is hidden periodic or cyclic behaviour in the production line."
+        },
+        {
+            "ans": "(a) Choose random start $r \in [1, 60]$, then take every $60\text{th}$ packet ($r, r+60, \dots$), (b) A sampling frame is not required, leading to interviewer bias",
+            "feedback": "The sampling interval is $k = 2400 / 60 = 40$, not $60$. Selecting every $60\\text{th}$ packet would yield only $40$ items, failing the required sample size of $60$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Always State the Random Start",
+        "content": "In exam marking schemes for systematic sampling, mentioning the random starting point is almost always worth an independent mark. If you only write 'pick every $40\\text{th}$ item', you lose the mark because the method is not random without a randomised starting index between $1$ and $k$."
+    }
+},
+{
+    "id": "050069",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Statistical Sampling",
+    "topic": "Sampling Methods",
+    "subtopic": [
+        "Quota Sampling",
+        "Non-random Methods"
+    ],
+    "img": false,
+    "question": "A market researcher is investigating consumer attitudes towards electric vehicles in a market town. She stands in the high street on a Tuesday morning and interviews individuals until she has surveyed exactly $40$ car owners and $40$ non-car owners.<br><br><strong>(a)</strong> Identify this method of sampling.<br><br><strong>(b)</strong> State one advantage and one disadvantage of this method compared to stratified random sampling.",
+    "steps": [
+        "<strong>(a) Identification of Sampling Method:</strong><br><br>The method is <strong>quota sampling</strong>.<br><br>The researcher partitions the population into groups (car owners and non-car owners) and fills pre-set quotas opportunistically without a sampling frame.",
+        "<strong>(b) Advantage and Disadvantage vs Stratified Sampling:</strong><br><br><strong>Advantage:</strong><br>Quota sampling does not require a sampling frame (complete list of residents). It is faster, cheaper, and easy to administer since non-respondents can be replaced immediately.<br><br><strong>Disadvantage:</strong><br>It is a non-random method subject to interviewer selection bias. The sample is not representative of the wider population (e.g. individuals on a high street on a Tuesday morning are unlikely to represent full-time workers).",
+        "Final Answer: (a) Quota sampling, (b) Advantage: No sampling frame required; Disadvantage: Non-random and introduces interviewer/time bias"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Stratified sampling, (b) Advantage: Completely random; Disadvantage: Requires a sampling frame",
+            "feedback": "Because the interviewer selects participants non-randomly on the street until a target count is reached, this is quota sampling, not stratified sampling."
+        },
+        {
+            "ans": "(a) Systematic sampling, (b) Advantage: Quick and easy to calculate intervals; Disadvantage: Periodic patterns introduce bias",
+            "feedback": "Systematic sampling involves choosing every $k\\text{th}$ item from an ordered list. Selecting passers-by to fill categories of 40 is quota sampling."
+        },
+        {
+            "ans": "(a) Quota sampling, (b) Advantage: Guarantees zero sampling error; Disadvantage: Requires a complete electoral register",
+            "feedback": "Quota sampling never requires a register or sampling frame (that is its primary practical advantage), and no sampling method eliminates sampling error."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Quota vs Stratified",
+        "content": "Both quota and stratified sampling divide the population into mutually exclusive categories. The critical distinction is that stratified sampling chooses participants at random from an exhaustive sampling frame, whereas quota sampling relies on the researcher opportunistically picking participants until each quota is met."
+    }
+},
+{
+    "id": "050070",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Statistical Sampling",
+    "topic": "Sampling Methods",
+    "subtopic": [
+        "Opportunity Sampling",
+        "Bias and Sampling Frames"
+    ],
+    "img": false,
+    "question": "A headteacher wishes to investigate student opinions on a proposed change to school lunchtime arrangements. She surveys the first $50$ students who enter the school canteen at 12:15.<br><br><strong>(a)</strong> Name the sampling method used, and give two distinct reasons why this sample is likely to be biased.<br><br><strong>(b)</strong> Suggest an improved random sampling method that avoids these biases, stating clearly the sampling frame that should be used.",
+    "steps": [
+        "<strong>(a) Sampling Method and Sources of Bias:</strong><br><br>The method is <strong>opportunity sampling</strong> (or convenience sampling).<br><br>Two distinct reasons for bias:<br>1. <strong>Location bias:</strong> The sample only includes students who eat in the canteen, completely omitting students who bring packed lunches, eat outdoors, attend lunchtime clubs, or go off-site.<br>2. <strong>Time bias:</strong> The sample only captures students arriving earliest at 12:15, whose attitudes, year groups, or hunger levels may differ from those arriving later.",
+        "<strong>(b) Improved Random Sampling Method:</strong><br><br>Use a <strong>simple random sample</strong> (or a stratified sample by year group).<br><br><strong>Sampling frame:</strong> The official, comprehensive school register (a complete list of all enrolled students in the school). Each student is assigned a unique number, and $50$ distinct random numbers are generated using a computer or random number table.",
+        "Final Answer: (a) Opportunity sampling; canteen-only exclusion and early-arrival bias, (b) Simple random sample using the complete school register as the sampling frame"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Systematic sampling; canteen-only exclusion and early-arrival bias, (b) Quota sampling using student ID cards as the sampling frame",
+            "feedback": "Taking the first 50 people who arrive is opportunity sampling, not systematic sampling. Quota sampling is non-random and does not avoid selection bias."
+        },
+        {
+            "ans": "(a) Opportunity sampling; sample size too small and only girls surveyed, (b) Stratified sampling without using any sampling frame",
+            "feedback": "The question does not mention gender, and a sample size of 50 is not inherently biased in itself. Furthermore, stratified sampling strictly requires an accurate sampling frame."
+        },
+        {
+            "ans": "(a) Opportunity sampling; canteen-only exclusion and early-arrival bias, (b) Opportunity sample taken in the school library instead",
+            "feedback": "Moving opportunity sampling to the library simply trades one biased, non-random location for another. A true probability sample requires a complete school register."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Opportunity Sampling Pitfalls",
+        "content": "Opportunity sampling is the easiest to carry out, but exam boards frequently test why it fails. Whenever an exam scenario involves surveying 'the first $n$ people who walk past', highlight both the physical exclusion of those not present at that specific spot and the temporal bias of sampling at that exact moment."
+    }
 }
 ];
