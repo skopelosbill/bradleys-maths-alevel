@@ -909,7 +909,7 @@ window.ALEVEL_QUESTIONS = [
         "Compound Events"
     ],
     "img": false,
-    "question": "A discrete random variable $X$ has the probability distribution defined by:<br><br>$$\\text{P}(X = x) = \\begin{cases} c(4 - x) & x \\in \\{1, 2, 3\\} \\cr c & x = 4 \\cr 0 & \\text{otherwise} \\end{cases}$$<br><br>where $c$ is a positive constant.<br><br><strong>(a)</strong> Show that $c = \\dfrac{1}{7}$.<br><br><strong>(b)</strong> Two independent observations of $X$, denoted by $X_1$ and $X_2$, are made. Find the probability that:<br><strong>(i)</strong> $X_1 = X_2$<br><strong>(ii)</strong> $X_1 + X_2 = 5$",
+    "question": "A discrete random variable $X$ has the probability distribution defined by:\\begin{aligned} &\\text{P}(X = x) = \\cr &\\quad c(4 - x) \\quad \\text{for } x = 1, 2, 3 \\cr &\\quad c \\qquad\\quad \\text{for } x = 4 \\cr &\\quad 0 \\qquad\\quad \\text{otherwise} \\end{aligned}where $c$ is a positive constant.<br><br><strong>(a)</strong> Show that $c = \\dfrac{1}{7}$.<br><br><strong>(b)</strong> Two independent observations of $X$, denoted by $X_1$ and $X_2$, are made. Find the probability that:<br><strong>(i)</strong> $X_1 = X_2$<br><strong>(ii)</strong> $X_1 + X_2 = 5$",
     "steps": [
         "<strong>(a) Showing that $c = \\dfrac{1}{7}$:</strong><br><br>Evaluate the probability for each outcome:\\begin{aligned} &x = 1: \\quad c(4 - 1) = 3c \\cr &x = 2: \\quad c(4 - 2) = 2c \\cr &x = 3: \\quad c(4 - 3) = c \\cr &x = 4: \\quad c \\end{aligned}Since the total probability must equal $1$:\\begin{aligned} 3c + 2c + c + c &= 1 \\cr 7c &= 1 \\cr c &= \\dfrac{1}{7} \\end{aligned}",
         "<strong>(b)(i) Probability that $X_1 = X_2$:</strong><br><br>Sum the squared probabilities for identical pairs:\\begin{aligned} &\\text{P}(X_1 = X_2) \\cr &\\quad = \\left(\\dfrac{3}{7}\\right)^2 + \\left(\\dfrac{2}{7}\\right)^2 \\cr &\\quad\\quad + \\left(\\dfrac{1}{7}\\right)^2 + \\left(\\dfrac{1}{7}\\right)^2 \\cr &\\quad = \\dfrac{9 + 4 + 1 + 1}{49} \\cr &\\quad = \\dfrac{15}{49} \\end{aligned}",
@@ -1010,6 +1010,201 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Product of Three Signs",
         "content": "When determining the sign of a product of three independent observations, first eliminate zero: any factor of $0$ gives a product of $0$, which is neither positive nor negative. Then remember that a negative product requires an odd number of negative factors: either exactly one negative (with two positives, in $3$ orders) or three negatives (in $1$ order)."
+    }
+},
+{
+    "id": "050076",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Statistical Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "Modelling Assumptions",
+        "Two-Stage Binomial"
+    ],
+    "img": false,
+    "question": "The probability that Liam spots a red squirrel during a walk in a local woodland on any particular day is $0.25$. He records the number, $X$, of days in a $7$-day week on which he spots a red squirrel.<br><br><strong>(a)</strong> State one assumption necessary for $X$ to be modelled by a binomial distribution.<br><br>Assume now that $X \\sim B(7, 0.25)$.<br><br><strong>(b)</strong> Find the probability that, in a randomly chosen week, Liam spots a red squirrel on exactly $3$ days.<br><br>Each week, Liam notes whether he spots a red squirrel on exactly $3$ days.<br><br><strong>(c)</strong> Find the probability that Liam spots a red squirrel on exactly $3$ days in a week during at least $2$ of $5$ randomly chosen weeks.",
+    "steps": [
+        "<strong>(a) Modelling Assumption:</strong><br><br>Sightings on different days must be independent (e.g. spotting a squirrel on one day does not affect the probability of spotting one the next day), OR the probability of spotting a squirrel remains constant at $0.25$ throughout the week.",
+        "<strong>(b) Probability of Exactly 3 Days:</strong><br><br>With $X \\sim B(7, 0.25)$:\\begin{aligned} &\\text{P}(X = 3) \\cr &\\quad = \\dbinom{7}{3}(0.25)^3(0.75)^4 \\cr &\\quad = 35(0.015625)(0.3164) \\cr &\\quad = 0.17304 \\cr &\\quad \\approx 0.173\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(c) Multi-Week Binomial:</strong><br><br>Let $Y$ be the number of weeks where a squirrel is spotted on exactly $3$ days. Then $Y \\sim B(5, 0.17304)$.<br><br>Using the complement rule:\\begin{aligned} &\\text{P}(Y \\ge 2) \\cr &\\quad = 1 - [\\text{P}(Y = 0) + \\text{P}(Y = 1)] \\cr &\\text{P}(Y = 0) = (0.82696)^5 \\cr &\\quad = 0.39074 \\cr &\\text{P}(Y = 1) \\cr &\\quad = 5(0.17304)(0.82696)^4 \\cr &\\quad = 0.40871 \\cr &\\text{P}(Y \\ge 2) \\cr &\\quad = 1 - (0.39074 + 0.40871) \\cr &\\quad = 1 - 0.79945 \\cr &\\quad = 0.20055 \\cr &\\quad \\approx 0.201\\text{ (3 s.f.)} \\end{aligned}",
+        "Final Answer: (a) Daily sightings are independent, (b) $0.173$, (c) $0.201$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Daily sightings are independent, (b) $0.173$, (c) $0.799$",
+            "feedback": "$0.799$ is $\\text{P}(Y \\le 1)$. To find $\\text{P}(Y \\ge 2)$, subtract this cumulative probability from $1$."
+        },
+        {
+            "ans": "(a) Exactly two outcomes per walk, (b) $0.173$, (c) $0.218$",
+            "feedback": "Rounding $p$ to $0.173$ too early in part (b) causes compounding rounding errors in part (c). Keep at least $4$ significant figures ($0.17304$) during intermediate steps."
+        },
+        {
+            "ans": "(a) Daily sightings are independent, (b) $0.0577$, (c) $0.201$",
+            "feedback": "In part (b), forgetting the binomial coefficient $\\binom{7}{3} = 35$ gives $(0.25)^3(0.75)^4 = 0.00494$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Intermediate Rounding Drift",
+        "content": "When carrying a calculated probability into a secondary binomial model, never use your 3-significant-figure rounded value. Using $0.173$ instead of $0.17304$ alters higher powers like $0.173^2$ and produces inaccurate final answers that lose accuracy marks."
+    }
+},
+{
+    "id": "050077",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Statistical Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "Modelling Conditions",
+        "Cumulative Probabilities"
+    ],
+    "img": false,
+    "question": "A commuter catches a morning train on each of the $5$ working days in a week. The probability that the train arrives on time on any morning is $0.85$, independently of all other mornings. Let $T$ be the number of days in a $5$-day working week that the train arrives on time.<br><br><strong>(a)</strong> State two conditions required for $T$ to follow a binomial distribution $B(5, 0.85)$.<br><br><strong>(b)</strong> Calculate the probability that, in a given working week, the train is on time on at least $4$ days.<br><br><strong>(c)</strong> Over an $8$-week period, find the probability that the train is on time on at least $4$ days in more than $6$ of the weeks.",
+    "steps": [
+        "<strong>(a) Binomial Conditions:</strong><br><br>1. The probability of the train being on time must be constant ($p = 0.85$) for every journey.<br><br>2. Punctuality on each day must be independent of all other days.",
+        "<strong>(b) Single-Week Probability:</strong><br><br>With $T \\sim B(5, 0.85)$, we find $\\text{P}(T \\ge 4) = \\text{P}(T = 4) + \\text{P}(T = 5)$:\\begin{aligned} &\\text{P}(T = 4) \\cr &\\quad = \\dbinom{5}{4}(0.85)^4(0.15) \\cr &\\quad = 5(0.522006)(0.15) \\cr &\\quad = 0.39150 \\cr &\\text{P}(T = 5) \\cr &\\quad = (0.85)^5 \\cr &\\quad = 0.44371 \\cr &\\text{P}(T \\ge 4) \\cr &\\quad = 0.39150 + 0.44371 \\cr &\\quad = 0.83521 \\cr &\\quad \\approx 0.835\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(c) 8-Week Term Probability:</strong><br><br>Let $W$ be the number of weeks where the train is on time on at least $4$ days. Then $W \\sim B(8, 0.83521)$.<br><br>'More than 6 weeks' means $W = 7$ or $W = 8$:\\begin{aligned} &\\text{P}(W > 6) \\cr &\\quad = \\text{P}(W = 7) + \\text{P}(W = 8) \\cr &\\text{P}(W = 7) \\cr &\\quad = \\dbinom{8}{7}(0.83521)^7(0.16479) \\cr &\\quad = 8(0.27814)(0.16479) \\cr &\\quad = 0.36668 \\cr &\\text{P}(W = 8) \\cr &\\quad = (0.83521)^8 \\cr &\\quad = 0.23231 \\cr &\\text{P}(W > 6) \\cr &\\quad = 0.36668 + 0.23231 \\cr &\\quad = 0.59899 \\cr &\\quad \\approx 0.599\\text{ (3 s.f.)} \\end{aligned}",
+        "Final Answer: (a) Constant probability and independence of trials, (b) $0.835$, (c) $0.599$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Constant probability and independence of trials, (b) $0.835$, (c) $0.877$",
+            "feedback": "'More than 6' does not include 6. Including $\\text{P}(W = 6) = 0.278$ computes $\\text{P}(W \\ge 6) = 0.877$ instead of $\\text{P}(W > 6) = 0.599$."
+        },
+        {
+            "ans": "(a) Constant probability and independence of trials, (b) $0.392$, (c) $0.599$",
+            "feedback": "In part (b), 'at least 4 days' means $T = 4$ or $T = 5$. Omitting $T = 5$ gives only $\\text{P}(T = 4) = 0.392$."
+        },
+        {
+            "ans": "(a) Large sample size and normal data, (b) $0.835$, (c) $0.232$",
+            "feedback": "In part (a), sample size and normality are not requirements for a binomial model. In part (c), $0.232$ is only $\\text{P}(W = 8)$, omitting $W = 7$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Translating Inequality Words",
+        "content": "In discrete distributions, always write out the exact integer outcomes before calculating: 'more than $6$' means strictly $7$ or $8$, whereas 'at least $6$' would mean $6, 7,$ or $8$. Translating the wording into list form prevents costly boundary errors."
+    }
+},
+{
+    "id": "050078",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Statistical Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "Model Limitations",
+        "Logarithmic Inequalities"
+    ],
+    "img": false,
+    "question": "An archer is practising at a target. The probability that she hits the gold bullseye on any single shot is $0.6$.<br><br><strong>(a)</strong> Explain why a binomial distribution may not be a suitable model for the number of bullseyes hit in a series of $10$ consecutive shots taken by the archer.<br><br>Assume now that the archer's shots can be modelled as independent trials with a constant probability of $0.6$ of hitting the bullseye.<br><br><strong>(b)</strong> The archer takes $10$ shots. Find the probability that she hits the bullseye between $4$ and $7$ times inclusive.<br><br><strong>(c)</strong> Find the minimum number of shots the archer must take so that the probability of hitting the bullseye at least once is greater than $0.999$.",
+    "steps": [
+        "<strong>(a) Limitations of the Binomial Model:</strong><br><br>The assumption of independence may not hold: successive shots could be affected by physical fatigue, changing weather/wind conditions, or psychological factors (e.g. confidence after a hit or discouragement after a miss).",
+        "<strong>(b) Cumulative Probability Calculation:</strong><br><br>With $X \\sim B(10, 0.6)$, we find $\\text{P}(4 \\le X \\le 7)$:\\begin{aligned} &\\text{P}(4 \\le X \\le 7) \\cr &\\quad = \\text{P}(X \\le 7) - \\text{P}(X \\le 3) \\cr &\\quad = 0.83271 - 0.05476 \\cr &\\quad = 0.77795 \\cr &\\quad \\approx 0.778\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(c) Finding the Minimum Number of Shots $n$:</strong><br><br>We require $\\text{P}(X \\ge 1) > 0.999$:\\begin{aligned} &1 - \\text{P}(X = 0) > 0.999 \\cr &1 - 0.4^n > 0.999 \\cr &0.4^n < 0.001 \\end{aligned}Taking natural logarithms of both sides:\\begin{aligned} &\\ln(0.4^n) < \\ln(0.001) \\cr &n\\ln(0.4) < \\ln(0.001) \\end{aligned}Since $\\ln(0.4) \\approx -0.9163 < 0$, dividing by $\\ln(0.4)$ reverses the inequality:\\begin{aligned} n &> \\dfrac{\\ln(0.001)}{\\ln(0.4)} \\cr n &> \\dfrac{-6.90776}{-0.91629} \\cr n &> 7.539 \\end{aligned}Since $n$ must be an integer, the minimum number of shots is $n = 8$.",
+        "Final Answer: (a) Independence may fail due to fatigue or confidence, (b) $0.778$, (c) $8$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Independence may fail due to fatigue or confidence, (b) $0.778$, (c) $7$",
+            "feedback": "Because $n > 7.54$, rounding down to $7$ gives a probability of only $1 - 0.4^7 = 0.99836 < 0.999$. You must round up to the next integer, $n = 8$."
+        },
+        {
+            "ans": "(a) Number of shots is not fixed, (b) $0.666$, (c) $8$",
+            "feedback": "In part (b), subtracting $\\text{P}(X \\le 4)$ gives $\\text{P}(5 \\le X \\le 7) = 0.666$. To include $4$ in the interval, subtract $\\text{P}(X \\le 3)$."
+        },
+        {
+            "ans": "(a) Independence may fail due to fatigue or confidence, (b) $0.778$, (c) $6$",
+            "feedback": "In part (c), forgetting to reverse the inequality sign when dividing by the negative value $\\ln(0.4)$ leads to $n < 7.54$ and incorrect rounding."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Inequality Reversal with Logarithms",
+        "content": "When solving $a^n < b$ where $a < 1$, remember that $\\ln(a)$ is negative (since $\\ln(0.4) \\approx -0.916$). Dividing both sides by a negative quantity always flips the inequality from $<$ to $>$. Always double-check your final integer: $1 - 0.4^7 = 0.9984$ (too small), while $1 - 0.4^8 = 0.9993 > 0.999$."
+    }
+},
+{
+    "id": "050079",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Statistical Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "Notation and Parameters",
+        "Conditional Probability"
+    ],
+    "img": false,
+    "question": "In a large dental practice, the probability that a randomly selected child has at least one cavity is $0.2$. A random sample of $12$ children is selected for a dental health study. Let $C$ represent the number of children in the sample who have at least one cavity.<br><br><strong>(a)</strong> State the probability distribution of $C$, including the values of any parameters.<br><br><strong>(b)</strong> Find the probability that $2 \\le C < 6$.<br><br><strong>(c)</strong> Given that at least one child in the sample has a cavity, find the conditional probability that fewer than $4$ children have a cavity. Give your answer to $3$ significant figures.",
+    "steps": [
+        "<strong>(a) Distribution of $C$:</strong><br><br>$$C \\sim B(12, 0.2)$$where $n = 12$ and $p = 0.2$.",
+        "<strong>(b) Interval Probability $2 \\le C < 6$:</strong><br><br>Since $C$ is a discrete variable, $2 \\le C < 6$ corresponds to $2 \\le C \\le 5$:\\begin{aligned} &\\text{P}(2 \\le C \\le 5) \\cr &\\quad = \\text{P}(C \\le 5) - \\text{P}(C \\le 1) \\cr &\\quad = 0.98059 - 0.27488 \\cr &\\quad = 0.70571 \\cr &\\quad \\approx 0.706\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(c) Conditional Probability $\\text{P}(C < 4 \\mid C \\ge 1)$:</strong><br><br>Using the conditional probability definition:\\begin{aligned} &\\text{P}(C < 4 \\mid C \\ge 1) \\cr &\\quad = \\dfrac{\\text{P}(1 \\le C \\le 3)}{\\text{P}(C \\ge 1)} \\end{aligned}Denominator:\\begin{aligned} \\text{P}(C \\ge 1) &= 1 - \\text{P}(C = 0) \\cr &= 1 - 0.8^{12} \\cr &= 1 - 0.06872 \\cr &= 0.93128 \\end{aligned}Numerator:\\begin{aligned} &\\text{P}(1 \\le C \\le 3) \\cr &\\quad = \\text{P}(C \\le 3) - \\text{P}(C = 0) \\cr &\\quad = 0.79457 - 0.06872 \\cr &\\quad = 0.72585 \\end{aligned}Quotient:\\begin{aligned} &\\text{P}(C < 4 \\mid C \\ge 1) \\cr &\\quad = \\dfrac{0.72585}{0.93128} \\cr &\\quad = 0.77941 \\cr &\\quad \\approx 0.779\\text{ (3 s.f.)} \\end{aligned}",
+        "Final Answer: (a) $C \\sim B(12, 0.2)$, (b) $0.706$, (c) $0.779$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $C \\sim B(12, 0.2)$, (b) $0.706$, (c) $0.853$",
+            "feedback": "In part (c), dividing $\\text{P}(C \\le 3) = 0.795$ directly by $\\text{P}(C \\ge 1) = 0.931$ fails to restrict the numerator to the intersection: the outcome $C = 0$ is not part of $C \\ge 1$ and must be subtracted."
+        },
+        {
+            "ans": "(a) $C \\sim B(12, 0.2)$, (b) $0.723$, (c) $0.779$",
+            "feedback": "In part (b), $2 \\le C < 6$ strictly excludes $6$. Including $C = 6$ by computing $\\text{P}(C \\le 6) - \\text{P}(C \\le 1)$ gives $0.723$."
+        },
+        {
+            "ans": "(a) $C \\sim B(2, 0.12)$, (b) $0.706$, (c) $0.726$",
+            "feedback": "In part (c), $0.726$ is simply the numerator $\\text{P}(1 \\le C \\le 3)$. It must be divided by the conditioning probability $\\text{P}(C \\ge 1) = 0.931$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Conditional Binomial Intersections",
+        "content": "Remember the formula $\\text{P}(A \\mid B) = \\frac{\\text{P}(A \\cap B)}{\\text{P}(B)}$. When evaluating the intersection of 'fewer than $4$' ($C \\le 3$) and 'at least $1$' ($C \\ge 1$), the possible values are strictly $1, 2,$ and $3$. You must exclude $C = 0$ from the numerator!"
+    }
+},
+{
+    "id": "050080",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Statistical Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "Modelling Assumptions",
+        "Geometric Sequences of Trials"
+    ],
+    "img": false,
+    "question": "A board game uses a special biased eight-sided die with faces numbered $1$ to $8$. The probability of rolling an $8$ on any single roll is $0.2$. In a turn, a player rolls the die $15$ times. Let $R$ be the number of times an $8$ is rolled in a turn.<br><br><strong>(a)</strong> State two assumptions necessary to model $R$ with a binomial distribution.<br><br><strong>(b)</strong> Find the probability that a player rolls an $8$ on at least $5$ occasions in a turn.<br><br><strong>(c)</strong> To earn a bonus card, a player must roll an $8$ on at least $5$ occasions in a turn. During a game, Sophie takes $4$ turns.<br><br>Find the probability that Sophie earns her first bonus card on her fourth turn.",
+    "steps": [
+        "<strong>(a) Modelling Assumptions:</strong><br><br>1. The outcome of each roll must be independent of all other rolls.<br><br>2. The probability of rolling an $8$ remains constant ($p = 0.2$) on every roll.",
+        "<strong>(b) Probability of at Least 5 Occasions:</strong><br><br>With $R \\sim B(15, 0.2)$:\\begin{aligned} &\\text{P}(R \\ge 5) \\cr &\\quad = 1 - \\text{P}(R \\le 4) \\cr &\\quad = 1 - 0.83577 \\cr &\\quad = 0.16423 \\cr &\\quad \\approx 0.164\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(c) First Bonus on Fourth Turn:</strong><br><br>Let $p = 0.1642$ be the probability of earning a bonus on a single turn, and $q = 1 - p = 0.8358$ be the probability of not earning a bonus.<br><br>The first bonus occurs on turn $4$ only with the specific sequence: Failure, Failure, Failure, Success:\\begin{aligned} &\\text{P}(\\text{first bonus on turn 4}) \\cr &\\quad = q^3 \\times p \\cr &\\quad = (0.8358)^3 \\times 0.1642 \\cr &\\quad = 0.5833 \\times 0.1642 \\cr &\\quad = 0.09578 \\cr &\\quad \\approx 0.0958\\text{ (3 s.f.)} \\end{aligned}",
+        "Final Answer: (a) Constant probability and independent rolls, (b) $0.164$, (c) $0.0958$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Constant probability and independent rolls, (b) $0.164$, (c) $0.383$",
+            "feedback": "This multiplies by $\\binom{4}{1} = 4$, which computes the probability of earning a bonus on *any* one of the 4 turns ($4 \\times 0.0958 = 0.383$). The question asks specifically for the *first* bonus to occur on the fourth turn (order $F, F, F, S$), so no combination coefficient is used."
+        },
+        {
+            "ans": "(a) Constant probability and independent rolls, (b) $0.836$, (c) $0.0958$",
+            "feedback": "In part (b), $0.836$ is $\\text{P}(R \\le 4)$. For 'at least $5$', subtract this cumulative probability from $1$ to get $0.164$."
+        },
+        {
+            "ans": "(a) Equal outcomes on all faces, (b) $0.164$, (c) $0.0221$",
+            "feedback": "In part (c), $(0.1642)^3 \\times 0.8358 = 0.0221$ calculates three successes followed by a failure, rather than three failures followed by a success."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: First Success vs Any Success",
+        "content": "Be careful not to confuse a binomial trial with a geometric first-success sequence. If a question asks for 'the first success on the $4\\text{th}$ turn', there is only one specific sequence: Failure, Failure, Failure, Success ($q^3 p$). You must NOT multiply by $\\binom{4}{1} = 4$, which would give the probability of a single success anywhere in $4$ turns."
     }
 }
 ];
