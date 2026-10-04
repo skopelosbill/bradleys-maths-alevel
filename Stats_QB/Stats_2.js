@@ -1615,7 +1615,7 @@ window.ALEVEL_QUESTIONS = [
         "Parameterised Distribution"
     ],
     "img": false,
-    "question": "<strong>(a)</strong> The continuous random variable $X$ is normally distributed with $X \\sim N(30, 16)$.<br><br><strong>(i)</strong> Find $\\text{P}(X > 35)$.<br><br><strong>(ii)</strong> Given that $\\text{P}(X < c) = 0.15$, find the value of the constant $c$.<br><br><strong>(iii)</strong> Find the value of $d$ such that $\\text{P}(30 - d < X < 30 + d) = 0.8$.<br><br><strong>(b)</strong> The continuous random variable $Y$ has the distribution $N\\left(\\mu, \\dfrac{\\mu^2}{16}\\right)$, where $\\mu > 0$.<br><br>Find $\\text{P}(Y < 0.6\\mu)$.",
+    "question": "<strong>(a)</strong> The continuous random variable $X$ is normally distributed with $X \\sim N(30, 16)$.<br><br><strong>(i)</strong> Find $\\text{P}(X > 35)$.<br><br><strong>(ii)</strong> Given that $\\text{P}(X < c) = 0.15$, find the value of the constant $c$.<br><br><strong>(iii)</strong> Find the value of $d$ such that \\begin{aligned}\\text{P}(30 - d < X ^&< 30 + d) \\cr & \\quad = 0.8\\end{aligned}<strong>(b)</strong> The continuous random variable $Y$ has the distribution $N\\left(\\mu, \\dfrac{\\mu^2}{16}\\right)$, where $\\mu > 0$.<br><br>Find $\\text{P}(Y < 0.6\\mu)$.",
     "steps": [
         "<strong>(a)(i) Finding $\\text{P}(X > 35)$:</strong><br><br>With $\\mu = 30$ and $\\sigma = \\sqrt{16} = 4$:\\begin{aligned} Z &= \\dfrac{35 - 30}{4} \\cr &= 1.25 \\end{aligned}Using the standard normal distribution:\\begin{aligned} \\text{P}(X > 35) &= \\text{P}(Z > 1.25) \\cr &= 1 - 0.8944 \\cr &= 0.1056 \\end{aligned}",
         "<strong>(a)(ii) Finding the Value of $c$:</strong><br><br>We are given $\\text{P}(X < c) = 0.15$. The corresponding $z$-score is negative:\\begin{aligned} Z &= -1.0364 \\end{aligned}Using the standardisation formula:\\begin{aligned} \\dfrac{c - 30}{4} &= -1.0364 \\cr c - 30 &= -4.1456 \\cr c &= 25.85\\text{ (2 d.p.)} \\end{aligned}",
@@ -1800,6 +1800,204 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Dividing by the Square Root of n",
         "content": "The most common error in sample mean hypothesis testing is testing individual variance instead of sample mean variance. Individual pin lengths vary with standard deviation $\\sigma = 0.8$, but the average of $16$ pins is far more clustered around the mean, varying with standard error $\\frac{\\sigma}{\\sqrt{n}} = \\frac{0.8}{4} = 0.2$."
+    }
+},
+{
+    "id": "050096",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Hypothesis Testing",
+    "topic": "Binomial Hypothesis Testing",
+    "subtopic": [
+        "Rejection Region",
+        "Type I Error"
+    ],
+    "img": false,
+    "question": "Callum suspects that a standard four-sided spinner (with faces numbered $1, 2, 3, 4$) is biased in favour of landing on the number $4$. He plans to spin the spinner $40$ times and record the number of times it lands on $4$. He decides to carry out a hypothesis test at the $3\\%$ significance level.<br><br><strong>(a)</strong> State the null and alternative hypotheses for this test.<br><br><strong>(b)</strong> Find the rejection region for the test.<br><br><strong>(c)</strong> State the probability of a Type I error for this test.",
+    "steps": [
+        "<strong>(a) Hypotheses:</strong><br><br>Let $p$ be the probability of the spinner landing on $4$ on any single spin.\\begin{aligned} &H_0: p = 0.25 \\cr &H_1: p > 0.25 \\end{aligned}",
+        "<strong>(b) Finding the Rejection Region:</strong><br><br>Under $H_0$, let $X$ be the number of times the spinner lands on $4$ in $40$ spins:\\begin{aligned} X \\sim B(40, 0.25) \\end{aligned}We test the upper tail to find the smallest integer $c$ such that $\\text{P}(X \\ge c) \\le 0.03$:\\begin{aligned} &\\text{P}(X \\ge 15) \\cr &\\quad = 1 - \\text{P}(X \\le 14) \\cr &\\quad = 1 - 0.9456 \\cr &\\quad = 0.0544\\text{ (or } 5.44\\%\\text{)} \\cr &\\text{P}(X \\ge 16) \\cr &\\quad = 1 - \\text{P}(X \\le 15) \\cr &\\quad = 1 - 0.9738 \\cr &\\quad = 0.0262\\text{ (or } 2.62\\%\\text{)} \\end{aligned}Since $0.0262 \\le 0.03$ and $0.0544 > 0.03$, the rejection region is:\\begin{aligned} X \\ge 16 \\end{aligned}",
+        "<strong>(c) Probability of a Type I Error:</strong><br><br>A Type I error occurs when a true null hypothesis is rejected. Its probability is the actual significance level (the probability of falling in the rejection region under $H_0$):\\begin{aligned} \\text{P}(\\text{Type I error}) &= \\text{P}(X \\ge 16) \\cr &= 0.0262\\text{ (or } 2.62\\%\\text{)} \\end{aligned}",
+        "Final Answer: (a) $H_0: p = 0.25, \\ H_1: p > 0.25$, (b) $X \\ge 16$, (c) $0.0262$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: p = 0.25, \\ H_1: p > 0.25$, (b) $X \\ge 15$, (c) $0.0544$",
+            "feedback": "Choosing $X \\ge 15$ gives a tail probability of $0.0544$ ($5.44\\%$), which exceeds the permitted $3\\%$ significance level. The rejection region must strictly satisfy $\\text{P}(X \\ge c) \\le 0.03$, which gives $X \\ge 16$."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.25, \\ H_1: p > 0.25$, (b) $X \\ge 16$, (c) $0.0300$",
+            "feedback": "$0.03$ ($3\\%$) is the nominal significance level. Because the binomial distribution is discrete, the exact probability of making a Type I error is the actual probability of the rejection region ($0.0262$)."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.25, \\ H_1: p \\neq 0.25$, (b) $X \\ge 16$, (c) $0.0262$",
+            "feedback": "Callum specifically suspects bias *in favour* of $4$, which requires a one-tailed alternative hypothesis ($H_1: p > 0.25$), not a two-tailed test ($p \\neq 0.25$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Rejection Region vs Significance Level",
+        "content": "In discrete hypothesis testing, the rejection region consists of outcomes whose cumulative probability is at most the nominal significance level ($3\\%$ here). The probability of a Type I error (rejecting $H_0$ when it is actually true) is always the exact actual significance level ($0.0262$), which is almost never identical to the nominal level."
+    }
+},
+{
+    "id": "050097",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Hypothesis Testing",
+    "topic": "Binomial Hypothesis Testing",
+    "subtopic": [
+        "Lower-Tailed Rejection Region",
+        "Test Decision"
+    ],
+    "img": false,
+    "question": "A quality assurance manager investigates whether a newly installed cooling process reduces the defect rate of glass bottles below the historical level of $12\\%$. A random sample of $60$ bottles produced using the new process is inspected. The manager carries out a hypothesis test at the $5\\%$ significance level.<br><br>Let $X$ represent the number of defective bottles found in the sample.<br><br><strong>(a)</strong> State the null and alternative hypotheses to test the manager's claim.<br><br><strong>(b)</strong> Determine the rejection region for the test.<br><br><strong>(c)</strong> State the actual significance level of the test.<br><br><strong>(d)</strong> In the sample of $60$ bottles, exactly $3$ are found to be defective. State, with a reason, the conclusion of the test in context.",
+    "steps": [
+        "<strong>(a) Hypotheses:</strong><br><br>Let $p$ be the true proportion of defective bottles under the new cooling process.\\begin{aligned} &H_0: p = 0.12 \\cr &H_1: p < 0.12 \\end{aligned}",
+        "<strong>(b) Determining the Rejection Region:</strong><br><br>Under $H_0$, let $X \\sim B(60, 0.12)$.<br><br>We seek the largest integer $c$ such that $\\text{P}(X \\le c) \\le 0.05$:\\begin{aligned} &\\text{P}(X \\le 2) = 0.0210\\text{ (or } 2.10\\%\\text{)} \\cr &\\text{P}(X \\le 3) = 0.0607\\text{ (or } 6.07\\%\\text{)} \\end{aligned}Since $0.0210 \\le 0.05$ and $0.0607 > 0.05$, the rejection region is:\\begin{aligned} X \\le 2 \\end{aligned}",
+        "<strong>(c) Actual Significance Level:</strong><br><br>The actual significance level is the probability of the rejection region under $H_0$:\\begin{aligned} &\\text{Actual Level} \\cr &\\quad = \\text{P}(X \\le 2) \\cr &\\quad = 0.0210\\text{ (or } 2.10\\%\\text{)} \\end{aligned}",
+        "<strong>(d) Conclusion in Context:</strong><br><br>The observed number of defectives is $X = 3$.<br><br>Since $3$ is not in the rejection region ($3 \\notin \\{0, 1, 2\\}$, as $3 > 2$), do not reject $H_0$.<br><br>There is insufficient evidence at the $5\\%$ significance level to suggest that the new cooling process reduces the defect rate of the bottles.",
+        "Final Answer: (a) $H_0: p = 0.12, \\ H_1: p < 0.12$, (b) $X \\le 2$, (c) $0.0210$, (d) Do not reject $H_0$; $3$ is not in the rejection region"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: p = 0.12, \\ H_1: p < 0.12$, (b) $X \\le 3$, (c) $0.0607$, (d) Reject $H_0$; $3$ is in the rejection region",
+            "feedback": "Including $3$ in the rejection region gives a tail probability of $0.0607$ ($6.07\\%$), which exceeds the $5\\%$ significance limit. Therefore, the rejection region must strictly be $X \\le 2$."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.12, \\ H_1: p < 0.12$, (b) $X \\le 2$, (c) $0.0500$, (d) Do not reject $H_0$; $3$ is not in the rejection region",
+            "feedback": "The actual significance level is not the nominal $0.0500$; it is the exact binomial probability of the critical region occurring under $H_0$, which is $0.0210$."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.12, \\ H_1: p < 0.12$, (b) $X \\le 2$, (c) $0.0210$, (d) Reject $H_0$; $3$ is less than the expected value of 7.2",
+            "feedback": "Observing a value below the expected count ($60 \\times 0.12 = 7.2$) does not mean we reject $H_0$. The test statistic must fall within the rejection region ($X \\le 2$) to provide statistically significant evidence."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Below Expected is Not Enough",
+        "content": "A classic exam trap: students often see that the observed count ($3$) is far below the expected count ($7.2$) and conclude that the defect rate has dropped. You must compare against the rejection region cutoff ($X \\le 2$). Random variation frequently produces $3$ defects even when the defect rate is still $12\\%$."
+    }
+},
+{
+    "id": "050098",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Hypothesis Testing",
+    "topic": "Binomial Hypothesis Testing",
+    "subtopic": [
+        "Two-Tailed Rejection Region",
+        "Type I Error"
+    ],
+    "img": false,
+    "question": "A board game enthusiast suspects that a particular six-sided die is biased (either landing on a $6$ more often or less often than expected). She rolls the die $50$ times and records $Y$, the number of times that a $6$ is obtained. She carries out a two-tailed hypothesis test at the $5\\%$ significance level, allocating a probability of at most $2.5\\%$ to each tail.<br><br><strong>(a)</strong> State the null and alternative hypotheses for this test.<br><br><strong>(b)</strong> Determine the rejection region for the test.<br><br><strong>(c)</strong> Calculate the actual significance level of the test.<br><br><strong>(d)</strong> Explain what is meant by a Type I error in the context of this test, and state its probability.",
+    "steps": [
+        "<strong>(a) Hypotheses:</strong><br><br>Let $p$ be the probability of rolling a $6$ with the die.\\begin{aligned} &H_0: p = \\dfrac{1}{6} \\cr &H_1: p \\neq \\dfrac{1}{6} \\end{aligned}",
+        "<strong>(b) Rejection Region (at most $2.5\\%$ per tail):</strong><br><br>Under $H_0$, let $Y \\sim B\\left(50, \\dfrac{1}{6}\\right)$.<br><br><strong>Lower tail:</strong> Find the largest $c_1$ such that $\\text{P}(Y \\le c_1) \\le 0.025$:\\begin{aligned} &\\text{P}(Y \\le 2) = 0.0092 \\cr &\\text{P}(Y \\le 3) = 0.0284 \\end{aligned}Since $0.0092 \\le 0.025$ and $0.0284 > 0.025$, the lower rejection region is $Y \\le 2$.<br><br><strong>Upper tail:</strong> Find the smallest $c_2$ such that $\\text{P}(Y \\ge c_2) \\le 0.025$:\\begin{aligned} &\\text{P}(Y \\ge 14) \\cr &\\quad = 1 - \\text{P}(Y \\le 13) \\cr &\\quad = 1 - 0.9693 = 0.0307 \\cr &\\text{P}(Y \\ge 15) \\cr &\\quad = 1 - \\text{P}(Y \\le 14) \\cr &\\quad = 1 - 0.9858 = 0.0142 \\end{aligned}Since $0.0142 \\le 0.025$ and $0.0307 > 0.025$, the upper rejection region is $Y \\ge 15$.<br><br>Therefore, the complete rejection region is:\\begin{aligned} \\{Y \\le 2\\} \\cup \\{Y \\ge 15\\} \\end{aligned}",
+        "<strong>(c) Actual Significance Level:</strong><br><br>Sum the probabilities of both tails:\\begin{aligned} &\\text{Actual Level} \\cr &\\quad = \\text{P}(Y \\le 2) + \\text{P}(Y \\ge 15) \\cr &\\quad = 0.0092 + 0.0142 \\cr &\\quad = 0.0234\\text{ (or } 2.34\\%\\text{)} \\end{aligned}",
+        "<strong>(d) Type I Error in Context:</strong><br><br>A Type I error occurs when the enthusiast concludes that the die is biased when it is actually a fair die.\\begin{aligned} \\text{P}(\\text{Type I error}) &= 0.0234\\text{ (or } 2.34\\%\\text{)} \\end{aligned}",
+        "Final Answer: (a) $H_0: p = \\dfrac{1}{6}, \\ H_1: p \\neq \\dfrac{1}{6}$, (b) $\\{Y \\le 2\\} \\cup \\{Y \\ge 15\\}$, (c) $0.0234$, (d) Concluding the die is biased when it is fair; probability $0.0234$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: p = \\dfrac{1}{6}, \\ H_1: p \\neq \\dfrac{1}{6}$, (b) $\\{Y \\le 3\\} \\cup \\{Y \\ge 14\\}$, (c) $0.0591$, (d) Concluding the die is biased when it is fair; probability $0.0234$",
+            "feedback": "Both $Y \\le 3$ ($0.0284$) and $Y \\ge 14$ ($0.0307$) exceed the strict $2.5\\%$ limit for each tail. The boundaries must be chosen so neither tail exceeds $0.025$."
+        },
+        {
+            "ans": "(a) $H_0: p = \\dfrac{1}{6}, \\ H_1: p \\neq \\dfrac{1}{6}$, (b) $\\{Y \\le 2\\} \\cup \\{Y \\ge 15\\}$, (c) $0.0500$, (d) Concluding the die is fair when it is biased; probability $0.0500$",
+            "feedback": "Concluding that the die is fair when it is actually biased is a Type II error, not a Type I error. Furthermore, the actual significance level is $0.0234$, not the nominal $0.0500$."
+        },
+        {
+            "ans": "(a) $H_0: p = \\dfrac{1}{6}, \\ H_1: p > \\dfrac{1}{6}$, (b) $\\{Y \\le 2\\} \\cup \\{Y \\ge 15\\}$, (c) $0.0234$, (d) Concluding the die is biased when it is fair; probability $0.0234$",
+            "feedback": "In part (a), because the enthusiast suspects the die could land on 6 more often *or* less often, the alternative hypothesis must be two-tailed ($H_1: p \\neq 1/6$), not one-tailed."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Asymmetry in Discrete Two-Tailed Tests",
+        "content": "Because $B(50, 1/6)$ is positively skewed (since $p = 1/6 < 0.5$), the distribution is not symmetric around the mean $8.33$. The lower tail probability ($0.0092$) and upper tail probability ($0.0142$) differ noticeably, resulting in an actual significance level ($2.34\\%$) that is well below the nominal $5\\%$ cap."
+    }
+},
+{
+    "id": "050099",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Hypothesis Testing",
+    "topic": "Binomial Hypothesis Testing",
+    "subtopic": [
+        "Normal Approximation to Rejection Region",
+        "Continuity Correction"
+    ],
+    "img": false,
+    "question": "A national courier firm claims that $80\\%$ of parcels sent via its express service are delivered within $24\\text{ hours}$. A consumer protection agency suspects that the true proportion of next-day deliveries is less than $80\\%$. The agency monitors a random sample of $400$ express parcels and conducts a hypothesis test at the $2.5\\%$ significance level.<br><br>Let $W$ be the number of parcels in the sample delivered within $24\\text{ hours}$.<br><br><strong>(a)</strong> State suitable null and alternative hypotheses.<br><br><strong>(b)</strong> Using an appropriate normal approximation with a continuity correction, find the rejection region for the test, giving your boundary as an integer.<br><br><strong>(c)</strong> In the sample, $305$ parcels are delivered within $24\\text{ hours}$. State, with clear statistical justification, the conclusion of the test in context.",
+    "steps": [
+        "<strong>(a) Hypotheses:</strong><br><br>Let $p$ be the true proportion of express parcels delivered within $24\\text{ hours}$.\\begin{aligned} &H_0: p = 0.80 \\cr &H_1: p < 0.80 \\end{aligned}",
+        "<strong>(b) Normal Approximation and Rejection Region:</strong><br><br>Under $H_0$, $W \\sim B(400, 0.80)$.<br><br>Calculate the approximating normal parameters:\\begin{aligned} \\mu &= 400 \\times 0.80 = 320 \\cr \\sigma^2 &= 400 \\times 0.80 \\times 0.20 = 64 \\cr \\sigma &= \\sqrt{64} = 8 \\end{aligned}Approximating distribution: $V \\sim N(320, 64)$.<br><br>For a one-tailed test at the $2.5\\%$ level, the critical $z$-value is:\\begin{aligned} Z &= -1.9600 \\end{aligned}Find the continuous critical threshold $v$:\\begin{aligned} \\dfrac{v - 320}{8} &= -1.9600 \\cr v &= 320 - 15.68 \\cr &= 304.32 \\end{aligned}Apply the lower-tail continuity correction ($W \\le c \\iff V < c + 0.5$):\\begin{aligned} c + 0.5 &\\le 304.32 \\cr c &\\le 303.82 \\end{aligned}Since $c$ must be an integer, the rejection region is:\\begin{aligned} W \\le 303 \\end{aligned}",
+        "<strong>(c) Test Conclusion:</strong><br><br>The observed number of next-day deliveries is $W = 305$.<br><br>Since $305 > 303$, the test statistic $305$ does not lie in the rejection region.<br><br>(Alternatively, standardise $305$ with continuity correction: $z = \\frac{305.5 - 320}{8} = -1.81 > -1.96$).<br><br>Do not reject $H_0$. There is insufficient evidence at the $2.5\\%$ significance level to suggest that the proportion of parcels delivered within $24\\text{ hours}$ is less than $80\\%$.",
+        "Final Answer: (a) $H_0: p = 0.80, \\ H_1: p < 0.80$, (b) $W \\le 303$, (c) Do not reject $H_0$; $305$ is not in the rejection region"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: p = 0.80, \\ H_1: p < 0.80$, (b) $W \\le 304$, (c) Reject $H_0$; $305$ is close to the rejection region",
+            "feedback": "Setting $c = 304$ forgets the $+0.5$ continuity correction: $W \\le 304$ corresponds to continuous $V < 304.5$, where $Z = (304.5 - 320)/8 = -1.9375 > -1.96$, exceeding the $2.5\\%$ significance level. The integer cutoff must be $W \\le 303$."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.80, \\ H_1: p < 0.80$, (b) $W \\le 303$, (c) Reject $H_0$; $305$ is significantly below the expected 320",
+            "feedback": "Observing 305 deliveries is below the expected 320, but it does not fall inside the rejection region ($W \\le 303$). Therefore, the difference is not statistically significant at the $2.5\\%$ level."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.80, \\ H_1: p \\neq 0.80$, (b) $W \\le 300$, (c) Do not reject $H_0$; $305$ is not in the rejection region",
+            "feedback": "The consumer protection agency specifically suspects the proportion is *less* than 80%, which is a one-tailed test ($H_1: p < 0.80$), not a two-tailed test."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Continuity Correction on Rejection Boundaries",
+        "content": "When using a normal approximation to find a rejection region, be very careful with the continuity correction direction. For a lower tail, $W \\le c$ becomes $V < c + 0.5$. Setting $c + 0.5 = 304.32$ gives $c = 303.82$, so the highest integer inside the rejection region is $303$. Choosing $304$ would push the tail probability above $0.025$."
+    }
+},
+{
+    "id": "050100",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Hypothesis Testing",
+    "topic": "Binomial Hypothesis Testing",
+    "subtopic": [
+        "Type II Error",
+        "Statistical Power"
+    ],
+    "img": false,
+    "question": "A coin is suspected of being biased in favour of heads. Let $p$ be the probability of obtaining a head on a single toss.<br><br>To test $H_0: p = 0.5$ against $H_1: p > 0.5$, the coin is tossed $20$ times. The rejection region for the test is chosen to be $X \\ge 15$, where $X$ is the number of heads obtained.<br><br><strong>(a)</strong> Calculate the significance level of this test.<br><br><strong>(b)</strong> Given that the coin is actually biased such that $p = 0.75$:<br><strong>(i)</strong> Calculate the probability of making a Type II error.<br><strong>(ii)</strong> State the statistical power of the test.<br><br><strong>(c)</strong> Suggest one practical change to the experimental design that would reduce the probability of a Type II error without increasing the significance level.",
+    "steps": [
+        "<strong>(a) Significance Level of the Test:</strong><br><br>The significance level is the probability of falling in the rejection region under $H_0$ ($X \\sim B(20, 0.5)$):\\begin{aligned} \\alpha &= \\text{P}(X \\ge 15 \\mid p = 0.5) \\cr &= 1 - \\text{P}(X \\le 14) \\cr &= 1 - 0.9793 \\cr &= 0.0207\\text{ (or } 2.07\\%\\text{)} \\end{aligned}",
+        "<strong>(b)(i) Probability of a Type II Error:</strong><br><br>A Type II error occurs when $H_0$ is not rejected despite $H_1$ being true ($p = 0.75$).<br><br>Under $H_1$, $X \\sim B(20, 0.75)$. We fail to reject $H_0$ when $X < 15$ (i.e. $X \\le 14$):\\begin{aligned} &\\beta = \\text{P}(X \\le 14 \\mid p = 0.75) \\end{aligned}Using the symmetry of binomial tables with $Y = 20 - X \\sim B(20, 0.25)$:\\begin{aligned} \\text{P}(X \\le 14) &= \\text{P}(Y \\ge 6) \\cr &= 1 - \\text{P}(Y \\le 5) \\cr &= 1 - 0.6172 \\cr &= 0.3828\\text{ (or } 38.3\\%\\text{)} \\end{aligned}",
+        "<strong>(b)(ii) Statistical Power of the Test:</strong><br><br>The power of the test is the probability of correctly rejecting a false null hypothesis:\\begin{aligned} \\text{Power} &= 1 - \\beta \\cr &= 1 - 0.3828 \\cr &= 0.6172\\text{ (or } 61.7\\%\\text{)} \\end{aligned}",
+        "<strong>(c) Reducing Type II Error:</strong><br><br><strong>Increase the sample size $n$</strong> (toss the coin more times, e.g. $n = 50$).<br><br>Increasing $n$ reduces the variance of the sample proportion, separating the distributions under $H_0$ and $H_1$ more sharply, which increases power and reduces $\\beta$ while keeping $\\alpha$ fixed.",
+        "Final Answer: (a) $0.0207$, (b)(i) $0.3828$, (ii) $0.6172$, (c) Increase the sample size $n$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.0207$, (b)(i) $0.6172$, (ii) $0.3828$, (c) Increase the sample size $n$",
+            "feedback": "This transposes Type II error and Power. The probability of a Type II error is $\\beta = \\text{P}(X \\le 14) = 0.3828$, while power is $1 - \\beta = 0.6172$."
+        },
+        {
+            "ans": "(a) $0.0500$, (b)(i) $0.3828$, (ii) $0.6172$, (c) Change the rejection region to $X \\ge 14$",
+            "feedback": "Changing the rejection region to $X \\ge 14$ would increase the significance level $\\alpha$ from $2.07\\%$ to $5.77\\%$, violating the requirement not to increase the significance level. Only increasing $n$ reduces $\\beta$ without inflating $\\alpha$."
+        },
+        {
+            "ans": "(a) $0.0207$, (b)(i) $0.3828$, (ii) $0.6172$, (c) Decrease the number of coin tosses",
+            "feedback": "Decreasing the number of tosses increases sampling variability, which widens the overlap between the distributions under $H_0$ and $H_1$, increasing the probability of a Type II error."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Type I vs Type II vs Power",
+        "content": "Think of hypothesis testing in terms of a court trial: Type I error ($\\alpha$) is convicting an innocent person ($H_0$ is true, but rejected). Type II error ($\\beta$) is acquitting a guilty person ($H_1$ is true, but not rejected). Power ($1 - \\beta$) is your ability to convict the guilty. The only way to reduce $\\beta$ without increasing $\\alpha$ is to collect more evidence by increasing sample size $n$."
     }
 }
 ];
