@@ -1206,5 +1206,202 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: First Success vs Any Success",
         "content": "Be careful not to confuse a binomial trial with a geometric first-success sequence. If a question asks for 'the first success on the $4\\text{th}$ turn', there is only one specific sequence: Failure, Failure, Failure, Success ($q^3 p$). You must NOT multiply by $\\binom{4}{1} = 4$, which would give the probability of a single success anywhere in $4$ turns."
     }
+},
+{
+    "id": "050081",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Hypothesis Testing",
+    "topic": "Binomial Hypothesis Testing",
+    "subtopic": [
+        "One-Tailed Test",
+        "P-Value Method"
+    ],
+    "img": false,
+    "question": "It is known that $15\\%$ of precision components produced by a standard manufacturing line are defective. An engineer introduces a modified machine calibration designed to reduce the proportion of defective components. In a random sample of $200$ components produced using this modified calibration, $18$ are found to be defective.<br><br>Test, at the $2\\%$ significance level, whether there is evidence that the modified calibration reduces the proportion of defective components.",
+    "steps": [
+        "<strong>Hypotheses and Model:</strong><br><br>Let $p$ be the population proportion of defective components under the modified calibration.\\begin{aligned} &H_0: p = 0.15 \\cr &H_1: p < 0.15 \\end{aligned}Under $H_0$, let $X$ be the number of defective components in a sample of $200$:\\begin{aligned} X \\sim B(200, 0.15) \\end{aligned}",
+        "<strong>Test Statistic and $p$-Value:</strong><br><br>The observed test statistic is $X = 18$.<br><br>Since $H_1$ specifies $p < 0.15$, calculate the lower-tail probability:\\begin{aligned} &\\text{P}(X \\le 18) \\cr &\\quad = 0.0108\\text{ (or } 1.08\\%\\text{)} \\end{aligned}",
+        "<strong>Comparison and Conclusion:</strong><br><br>Compare the $p$-value with the significance level $\\alpha = 0.02$:\\begin{aligned} &0.0108 < 0.02 \\end{aligned}Since $0.0108 < 0.02$, the result is statistically significant at the $2\\%$ level.<br><br>Reject $H_0$. There is sufficient evidence to suggest that the modified calibration reduces the proportion of defective components.",
+        "Final Answer: Reject $H_0$ ($p = 0.0108 < 0.02$); sufficient evidence that the proportion of defectives has reduced"
+    ],
+    "pi_options": [
+        {
+            "ans": "Do not reject $H_0$ ($p = 0.0108 > 0.01$); insufficient evidence that the proportion of defectives has reduced",
+            "feedback": "The test is conducted at the $2\\%$ level ($0.02$), not the $1\\%$ level ($0.01$). Since $0.0108 < 0.02$, the result is significant and $H_0$ must be rejected."
+        },
+        {
+            "ans": "Do not reject $H_0$ ($p = 0.9892 > 0.02$); insufficient evidence that the proportion of defectives has reduced",
+            "feedback": "This error calculates $\\text{P}(X \\ge 18) = 1 - \\text{P}(X \\le 17) = 0.9892$. Because $H_1$ tests for a reduction ($p < 0.15$), the lower-tail probability $\\text{P}(X \\le 18)$ must be used."
+        },
+        {
+            "ans": "Reject $H_0$ ($p = 0.0108 < 0.02$); proves conclusively that the modified calibration eliminates all defectives",
+            "feedback": "Hypothesis testing evaluates population proportions probabilistically; it never 'proves conclusively' that defectives are eliminated, but rather provides evidence of a reduction."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Writing Exam-Standard Conclusions",
+        "content": "A complete conclusion in a binomial hypothesis test always requires two distinct components: a mathematical comparison (e.g. $0.0108 < 0.02$, reject $H_0$) and a non-definitive contextual conclusion (e.g. 'There is sufficient evidence to suggest...'). Never write absolute statements like 'this proves the calibration works'."
+    }
+},
+{
+    "id": "050082",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Hypothesis Testing",
+    "topic": "Binomial Hypothesis Testing",
+    "subtopic": [
+        "Upper-Tailed Test",
+        "P-Value Method"
+    ],
+    "img": false,
+    "question": "A local council claims that $25\\%$ of households in a borough regularly recycle their food waste. Following an environmental awareness campaign, an officer suspects that the proportion of households recycling food waste has increased. In a random sample of $60$ households, $22$ are found to regularly recycle food waste.<br><br><strong>(a)</strong> State suitable null and alternative hypotheses to test the officer's suspicion.<br><br><strong>(b)</strong> Stating clearly the statistical distribution used, carry out the hypothesis test at the $5\\%$ significance level. State your conclusion in context.",
+    "steps": [
+        "<strong>(a) Null and Alternative Hypotheses:</strong><br><br>Let $p$ represent the true proportion of households in the borough that regularly recycle food waste.\\begin{aligned} &H_0: p = 0.25 \\cr &H_1: p > 0.25 \\end{aligned}",
+        "<strong>(b) Distribution and Test Statistic:</strong><br><br>Under $H_0$, let $X$ be the number of households recycling food waste in a sample of $60$:\\begin{aligned} X \\sim B(60, 0.25) \\end{aligned}The observed test statistic is $X = 22$.<br><br>Since $H_1$ tests for an increase ($p > 0.25$), calculate the upper-tail probability:\\begin{aligned} &\\text{P}(X \\ge 22) \\cr &\\quad = 1 - \\text{P}(X \\le 21) \\cr &\\quad = 1 - 0.9673 \\cr &\\quad = 0.0327\\text{ (or } 3.27\\%\\text{)} \\end{aligned}",
+        "<strong>Conclusion in Context:</strong><br><br>Compare the $p$-value with the significance level $\\alpha = 0.05$:\\begin{aligned} &0.0327 < 0.05 \\end{aligned}Since $0.0327 < 0.05$, the result is significant at the $5\\%$ level.<br><br>Reject $H_0$. There is sufficient evidence at the $5\\%$ significance level to support the officer's suspicion that the proportion of households recycling food waste has increased.",
+        "Final Answer: (a) $H_0: p = 0.25, \\ H_1: p > 0.25$, (b) Reject $H_0$ ($p = 0.0327 < 0.05$); sufficient evidence that the recycling proportion has increased"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: p = 0.25, \\ H_1: p > 0.25$, (b) Do not reject $H_0$ ($p = 0.0327 > 0.025$); insufficient evidence that the recycling proportion has increased",
+            "feedback": "This is a one-tailed test ($p > 0.25$) at the $5\\%$ level, so the full significance level $0.05$ is used, not $0.025$. Halving the significance level only applies to two-tailed tests."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.25, \\ H_1: p > 0.25$, (b) Do not reject $H_0$ ($p = 0.9673 > 0.05$); insufficient evidence that the recycling proportion has increased",
+            "feedback": "$0.9673$ is $\\text{P}(X \\le 21)$. Because the alternative hypothesis is $p > 0.25$, you must calculate the upper-tail probability $\\text{P}(X \\ge 22) = 1 - 0.9673 = 0.0327$."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.22, \\ H_1: p > 0.22$, (b) Reject $H_0$ ($p = 0.0327 < 0.05$); sufficient evidence that the recycling proportion has increased",
+            "feedback": "Hypotheses are always stated about the underlying population parameter ($p = 0.25$), never about the sample proportion ($22/60 \\approx 0.367$ or $0.22$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Upper-Tail Cumulative Logic",
+        "content": "For upper-tail binomial tests ($\text{P}(X \ge x)$), remember that standard tables and calculators give $\text{P}(X \le k)$. To calculate $\text{P}(X \ge 22)$, you must subtract the cumulative probability up to $21$: $1 - \text{P}(X \le 21)$. Subtracting up to $22$ ($1 - \text{P}(X \le 22)$) would mistakenly omit $X = 22$ from your tail."
+    }
+},
+{
+    "id": "050083",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Hypothesis Testing",
+    "topic": "Binomial Hypothesis Testing",
+    "subtopic": [
+        "Critical Region",
+        "Actual Significance Level"
+    ],
+    "img": false,
+    "question": "A pharmaceutical company produces an established painkiller. Historically, $8\\%$ of patients who take this painkiller experience a mild side effect. A researcher reformulates the painkiller and claims that the new formulation reduces the proportion of patients who experience the side effect. A clinical trial is conducted on a random sample of $50$ patients taking the new formulation.<br><br>Let $X$ denote the number of patients in the trial who experience the side effect. A hypothesis test is to be carried out at the $5\\%$ significance level.<br><br><strong>(a)</strong> State the null and alternative hypotheses for this test.<br><br><strong>(b)</strong> Find the critical region for the test.<br><br><strong>(c)</strong> State the actual significance level of the test.<br><br><strong>(d)</strong> In the trial, exactly $1$ patient experiences the side effect. State, with a reason, the conclusion of the test in context.",
+    "steps": [
+        "<strong>(a) Hypotheses:</strong><br><br>Let $p$ be the proportion of patients taking the new formulation who experience the side effect.\\begin{aligned} &H_0: p = 0.08 \\cr &H_1: p < 0.08 \\end{aligned}",
+        "<strong>(b) Finding the Critical Region:</strong><br><br>Under $H_0$, let $X$ be the number of patients experiencing the side effect in a sample of $50$:\\begin{aligned} X \\sim B(50, 0.08) \\end{aligned}Calculate lower-tail cumulative probabilities:\\begin{aligned} &\\text{P}(X \\le 0) \\cr &\\quad = (0.92)^{50} \\cr &\\quad = 0.0155 \\cr &\\text{P}(X \\le 1) \\cr &\\quad = 0.0155 + 50(0.08)(0.92)^{49} \\cr &\\quad = 0.0155 + 0.0673 \\cr &\\quad = 0.0828 \\end{aligned}Since $\\text{P}(X \\le 0) = 0.0155 \\le 0.05$ and $\\text{P}(X \\le 1) = 0.0828 > 0.05$, the critical region is:\\begin{aligned} X = 0 \\end{aligned}",
+        "<strong>(c) Actual Significance Level:</strong><br><br>The actual significance level is the probability of rejecting $H_0$ when $H_0$ is true (the probability of falling in the critical region):\\begin{aligned} &\\text{Actual Level} \\cr &\\quad = \\text{P}(X \\le 0) \\cr &\\quad = 0.0155\\text{ (or } 1.55\\%\\text{)} \\end{aligned}",
+        "<strong>(d) Test Conclusion:</strong><br><br>The observed value is $X = 1$.<br><br>Since $1$ does not lie in the critical region ($1 \\notin \\{0\\}$, or $p = 0.0828 > 0.05$), do not reject $H_0$.<br><br>There is insufficient evidence at the $5\\%$ significance level to suggest that the new formulation reduces the proportion of patients who experience the side effect.",
+        "Final Answer: (a) $H_0: p = 0.08, \\ H_1: p < 0.08$, (b) $X = 0$, (c) $0.0155$, (d) Do not reject $H_0$; $1$ is not in the critical region"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: p = 0.08, \\ H_1: p < 0.08$, (b) $X \\le 1$, (c) $0.0828$, (d) Reject $H_0$; $1$ is in the critical region",
+            "feedback": "Including $X = 1$ in the critical region gives a tail probability of $0.0828$ ($8.28\\%$), which exceeds the allowable $5\\%$ significance level. Therefore, the critical region must strictly be $X = 0$."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.08, \\ H_1: p < 0.08$, (b) $X = 0$, (c) $0.0500$, (d) Do not reject $H_0$; $1$ is not in the critical region",
+            "feedback": "The actual significance level of a discrete test is rarely equal to the nominal $5\\%$ level. It is the exact probability of the critical region occurring under $H_0$, which is $0.0155$ ($1.55\\%$)."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.08, \\ H_1: p \\neq 0.08$, (b) $X = 0$, (c) $0.0155$, (d) Reject $H_0$; $1$ indicates fewer side effects than expected",
+            "feedback": "The researcher specifically claims that the formulation *reduces* side effects, requiring a one-tailed test ($H_1: p < 0.08$). Furthermore, observing a value lower than the expected value ($50 \\times 0.08 = 4$) is not enough to reject $H_0$ unless it falls inside the critical region."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Nominal vs Actual Significance Level",
+        "content": "Because the binomial distribution is discrete, you cannot generally find an integer cutoff whose tail probability equals exactly $5\%$. The nominal level ($5\%$) is the maximum risk of a Type I error you are willing to tolerate; the actual significance level is the exact cumulative probability of the critical region ($1.55\%$), which is strictly $\le 5\%$."
+    }
+},
+{
+    "id": "050084",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Hypothesis Testing",
+    "topic": "Binomial Hypothesis Testing",
+    "subtopic": [
+        "Two-Tailed Test",
+        "P-Value Method"
+    ],
+    "img": false,
+    "question": "A seed merchant claims that $70\\%$ of sunflower seeds of a particular variety germinate successfully when planted under standard conditions. A commercial grower suspects that the true germination rate differs from $70\\%$. The grower plants a random sample of $30$ seeds and observes that $16$ germinate successfully.<br><br>Test the merchant's claim at the $5\\%$ significance level.",
+    "steps": [
+        "<strong>Hypotheses and Distribution:</strong><br><br>Let $p$ be the true probability that a sunflower seed germinates successfully.\\begin{aligned} &H_0: p = 0.70 \\cr &H_1: p \\neq 0.70 \\end{aligned}Under $H_0$, let $X$ be the number of germinating seeds in a sample of $30$:\\begin{aligned} X \\sim B(30, 0.70) \\end{aligned}",
+        "<strong>Expected Value and Tail Selection:</strong><br><br>The expected number of germinating seeds under $H_0$ is:\\begin{aligned} \\text{E}(X) &= 30 \\times 0.70 \\cr &= 21 \\end{aligned}The observed value is $X = 16$.<br><br>Since $16 < 21$, test the lower tail at half the significance level ($\\alpha / 2 = 0.05 / 2 = 0.025$).",
+        "<strong>$p$-Value and Comparison:</strong><br><br>Calculate the lower-tail probability:\\begin{aligned} &\\text{P}(X \\le 16) \\cr &\\quad = 0.0401\\text{ (or } 4.01\\%\\text{)} \\end{aligned}Compare with the two-tailed comparison level $0.025$:\\begin{aligned} &0.0401 > 0.025 \\end{aligned}Alternatively, double the one-tailed $p$-value: $2 \\times 0.0401 = 0.0802 > 0.05$.",
+        "<strong>Conclusion in Context:</strong><br><br>Since $0.0401 > 0.025$, the result is not statistically significant at the $5\\%$ level.<br><br>Do not reject $H_0$. There is insufficient evidence at the $5\\%$ significance level to suggest that the germination rate differs from $70\\%$.",
+        "Final Answer: Do not reject $H_0$ ($p = 0.0401 > 0.025$); insufficient evidence that the germination rate differs from $70\\%$"
+    ],
+    "pi_options": [
+        {
+            "ans": "Reject $H_0$ ($p = 0.0401 < 0.05$); sufficient evidence that the germination rate differs from $70\\%$",
+            "feedback": "Because the test is two-tailed ($H_1: p \\neq 0.70$), the single-tail probability must be compared to half the significance level ($0.05 / 2 = 0.025$). Since $0.0401 > 0.025$, the result is not significant."
+        },
+        {
+            "ans": "Reject $H_0$ ($p = 0.0401 > 0.025$); sufficient evidence that the germination rate differs from $70\\%$",
+            "feedback": "When the tail probability ($0.0401$) exceeds the significance threshold ($0.025$), the observed result is consistent with $H_0$. Therefore, you must *not* reject $H_0$."
+        },
+        {
+            "ans": "Do not reject $H_0$ ($p = 0.9599 > 0.025$); insufficient evidence that the germination rate differs from $70\\%$",
+            "feedback": "Because the observed count ($16$) is below the expected value ($21$), the lower-tail probability $\\text{P}(X \\le 16) = 0.0401$ must be evaluated, rather than the upper-tail probability $\\text{P}(X \\ge 16) = 0.9599$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Two-Tailed Decision Rules",
+        "content": "In a two-tailed test, you have two mathematically equivalent methods to decide whether to reject $H_0$: either compare the single-tail probability to $\\alpha / 2$ ($0.0401$ vs $0.025$) OR double the tail probability to obtain the two-tailed $p$-value and compare to $\\alpha$ ($2 \\times 0.0401 = 0.0802$ vs $0.05$). Both yield the identical non-significant conclusion."
+    }
+},
+{
+    "id": "050085",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Hypothesis Testing",
+    "topic": "Binomial Hypothesis Testing",
+    "subtopic": [
+        "Two-Tailed Critical Region",
+        "Actual Significance Level"
+    ],
+    "img": false,
+    "question": "An online clothing retailer knows from past data that $40\\%$ of customers apply a discount code at checkout. Following a redesign of the checkout webpage, the marketing director wishes to investigate whether the proportion of customers applying a discount code has changed. A random sample of $25$ checkout transactions is monitored.<br><br>Let $Y$ represent the number of customers in the sample who apply a discount code. A two-tailed hypothesis test is to be conducted at the $10\\%$ significance level.<br><br><strong>(a)</strong> State the null and alternative hypotheses.<br><br><strong>(b)</strong> Determine the critical region for this test, allocating a probability of at most $5\\%$ to each tail.<br><br><strong>(c)</strong> Calculate the actual significance level of the test.",
+    "steps": [
+        "<strong>(a) Hypotheses:</strong><br><br>Let $p$ be the proportion of customers using a discount code under the new design.\\begin{aligned} &H_0: p = 0.40 \\cr &H_1: p \\neq 0.40 \\end{aligned}",
+        "<strong>(b) Critical Region (at most $5\\%$ per tail):</strong><br><br>Under $H_0$, let $Y \\sim B(25, 0.40)$.<br><br><strong>Lower tail:</strong> Find the largest $c_1$ such that $\\text{P}(Y \\le c_1) \\le 0.05$:\\begin{aligned} &\\text{P}(Y \\le 4) = 0.0095 \\cr &\\text{P}(Y \\le 5) = 0.0294 \\cr &\\text{P}(Y \\le 6) = 0.0736 \\end{aligned}Since $0.0294 \\le 0.05$ and $0.0736 > 0.05$, the lower critical region is $Y \\le 5$.<br><br><strong>Upper tail:</strong> Find the smallest $c_2$ such that $\\text{P}(Y \\ge c_2) \\le 0.05$:\\begin{aligned} &\\text{P}(Y \\ge 15) \\cr &\\quad = 1 - \\text{P}(Y \\le 14) \\cr &\\quad = 1 - 0.9656 = 0.0344 \\cr &\\text{P}(Y \\ge 14) \\cr &\\quad = 1 - \\text{P}(Y \\le 13) \\cr &\\quad = 1 - 0.9222 = 0.0778 \\end{aligned}Since $0.0344 \\le 0.05$ and $0.0778 > 0.05$, the upper critical region is $Y \\ge 15$.<br><br>Therefore, the complete critical region is:\\begin{aligned} \\{Y \\le 5\\} \\cup \\{Y \\ge 15\\} \\end{aligned}",
+        "<strong>(c) Actual Significance Level:</strong><br><br>The actual significance level is the sum of the probabilities in both critical tails:\\begin{aligned} &\\text{Actual Level} \\cr &\\quad = \\text{P}(Y \\le 5) + \\text{P}(Y \\ge 15) \\cr &\\quad = 0.0294 + 0.0344 \\cr &\\quad = 0.0638\\text{ (or } 6.38\\%\\text{)} \\end{aligned}",
+        "Final Answer: (a) $H_0: p = 0.40, \\ H_1: p \\neq 0.40$, (b) $\\{Y \\le 5\\} \\cup \\{Y \\ge 15\\}$, (c) $0.0638$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: p = 0.40, \\ H_1: p \\neq 0.40$, (b) $\\{Y \\le 6\\} \\cup \\{Y \\ge 14\\}$, (c) $0.1514$",
+            "feedback": "Choosing $Y \\le 6$ and $Y \\ge 14$ exceeds the required 'at most $5\\%$' constraint for each tail, since $\\text{P}(Y \\le 6) = 0.0736 > 0.05$ and $\\text{P}(Y \\ge 14) = 0.0778 > 0.05$."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.40, \\ H_1: p \\neq 0.40$, (b) $\\{Y \\le 5\\} \\cup \\{Y \\ge 15\\}$, (c) $0.1000$",
+            "feedback": "$10\\%$ is the nominal significance level stated in the question. The actual significance level must be calculated by summing the exact binomial probabilities of the two tails: $0.0294 + 0.0344 = 0.0638$."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.40, \\ H_1: p \\neq 0.40$, (b) $\\{Y \\le 4\\} \\cup \\{Y \\ge 16\\}$, (c) $0.0190$",
+            "feedback": "$Y \\le 4$ and $Y \\ge 16$ are overly conservative; $Y \\le 5$ and $Y \\ge 15$ are the largest sets that still satisfy the $\\le 0.05$ constraint for each tail."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: The 'At Most' Critical Region Rule",
+        "content": "When an exam question instructs you to allocate 'at most $5\%$ to each tail', you must ensure neither tail probability exceeds $0.05$. In this case, while $0.0736$ and $0.0778$ are closer to $0.05$ than $0.0294$ and $0.0344$, they exceed the strict $5\%$ cap and must be rejected."
+    }
 }
 ];
