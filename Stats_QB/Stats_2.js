@@ -1601,5 +1601,205 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Linear Interpolation Formula",
         "content": "For linear interpolation from grouped frequency data or histograms, memorize the formula: $\\text{Median} = L + \\frac{\\frac{n}{2} - F}{f} \\times w$, where $L$ is the lower class boundary, $F$ is the cumulative frequency up to that boundary, $f$ is the frequency of the median class, and $w$ is the class width. Setting up these four parameters first prevents algebraic slips."
     }
+},
+{
+    "id": "050091",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Normal Distribution",
+    "subtopic": [
+        "Standardisation",
+        "Inverse Normal",
+        "Parameterised Distribution"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> The continuous random variable $X$ is normally distributed with $X \\sim N(30, 16)$.<br><br><strong>(i)</strong> Find $\\text{P}(X > 35)$.<br><br><strong>(ii)</strong> Given that $\\text{P}(X < c) = 0.15$, find the value of the constant $c$.<br><br><strong>(iii)</strong> Find the value of $d$ such that $\\text{P}(30 - d < X < 30 + d) = 0.8$.<br><br><strong>(b)</strong> The continuous random variable $Y$ has the distribution $N\\left(\\mu, \\dfrac{\\mu^2}{16}\\right)$, where $\\mu > 0$.<br><br>Find $\\text{P}(Y < 0.6\\mu)$.",
+    "steps": [
+        "<strong>(a)(i) Finding $\\text{P}(X > 35)$:</strong><br><br>With $\\mu = 30$ and $\\sigma = \\sqrt{16} = 4$:\\begin{aligned} Z &= \\dfrac{35 - 30}{4} \\cr &= 1.25 \\end{aligned}Using the standard normal distribution:\\begin{aligned} \\text{P}(X > 35) &= \\text{P}(Z > 1.25) \\cr &= 1 - 0.8944 \\cr &= 0.1056 \\end{aligned}",
+        "<strong>(a)(ii) Finding the Value of $c$:</strong><br><br>We are given $\\text{P}(X < c) = 0.15$. The corresponding $z$-score is negative:\\begin{aligned} Z &= -1.0364 \\end{aligned}Using the standardisation formula:\\begin{aligned} \\dfrac{c - 30}{4} &= -1.0364 \\cr c - 30 &= -4.1456 \\cr c &= 25.85\\text{ (2 d.p.)} \\end{aligned}",
+        "<strong>(a)(iii) Finding the Value of $d$:</strong><br><br>The interval $(30 - d, 30 + d)$ is symmetrical about the mean $\\mu = 30$, containing $80\\%$ of the distribution.<br><br>The two tails contain $10\\%$ each:\\begin{aligned} &\\text{P}(X < 30 + d) = 0.90 \\end{aligned}Find the upper critical value:\\begin{aligned} Z &= 1.2816 \\end{aligned}Standardising the upper boundary:\\begin{aligned} \\dfrac{d}{4} &= 1.2816 \\cr d &= 5.13\\text{ (2 d.p.)} \\end{aligned}",
+        "<strong>(b) Finding $\\text{P}(Y < 0.6\\mu)$:</strong><br><br>For $Y \\sim N\\left(\\mu, \\dfrac{\\mu^2}{16}\\right)$, the standard deviation is:\\begin{aligned} \\sigma &= \\sqrt{\\dfrac{\\mu^2}{16}} \\cr &= 0.25\\mu \\end{aligned}Standardise $Y = 0.6\\mu$:\\begin{aligned} Z &= \\dfrac{0.6\\mu - \\mu}{0.25\\mu} \\cr &= \\dfrac{-0.4\\mu}{0.25\\mu} \\cr &= -1.6 \\end{aligned}Notice that $\\mu$ cancels completely:\\begin{aligned} \\text{P}(Y < 0.6\\mu) &= \\text{P}(Z < -1.6) \\cr &= 1 - 0.9452 \\cr &= 0.0548 \\end{aligned}",
+        "Final Answer: (a)(i) 0.1056, (ii) 25.85, (iii) 5.13, (b) 0.0548"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) 0.1056, (ii) 34.15, (iii) 5.13, (b) 0.0548",
+            "feedback": "In (a)(ii), because $\\text{P}(X < c) = 0.15 < 0.5$, $c$ must be below the mean ($30$). Using a positive $z$-score ($+1.0364$) erroneously yields $34.15$."
+        },
+        {
+            "ans": "(a)(i) 0.8944, (ii) 25.85, (iii) 3.38, (b) 0.0548",
+            "feedback": "In (a)(i), $0.8944$ is $\\text{P}(X < 35)$, rather than $\\text{P}(X > 35)$. In (a)(iii), using $Z = 0.8416$ corresponds to an upper tail of $0.20$ rather than $0.10$."
+        },
+        {
+            "ans": "(a)(i) 0.1056, (ii) 25.85, (iii) 5.13, (b) Cannot be determined without knowing the numerical value of \\mu",
+            "feedback": "In part (b), both the numerator $(-0.4\\mu)$ and denominator $(0.25\\mu)$ are linear in $\\mu$. When dividing to find $Z$, the parameter $\\mu$ cancels out completely, yielding an exact numerical probability of $0.0548$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Parameter Cancellation",
+        "content": "When an A Level question defines standard deviation as a constant multiple of $\\mu$ (e.g. $\\sigma = 0.25\\mu$), the $z$-score calculation will always cancel out $\\mu$ algebraically: $\\frac{k\\mu - \\mu}{c\\mu} = \\frac{k - 1}{c}$. Never assume an answer cannot be found just because $\\mu$ is not numerically specified!"
+    }
+},
+{
+    "id": "050092",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Normal Distribution",
+    "subtopic": [
+        "Simultaneous Equations",
+        "Symmetric Tolerance"
+    ],
+    "img": false,
+    "question": "The mass of granulated sugar bags filled by an automated packaging line is modelled by a normal distribution with mean $\\mu\\text{ grams}$ and standard deviation $\\sigma\\text{ grams}$.<br><br>A bag is classified as underweight if its mass is less than $990\\text{ g}$, and overweight if its mass exceeds $1015\\text{ g}$.<br><br>Quality control inspections show that $4\\%$ of bags are underweight and $2.5\\%$ of bags are overweight.<br><br><strong>(a)</strong> By forming and solving a pair of simultaneous equations, calculate the values of $\\mu$ and $\\sigma$, giving each value to $1$ decimal place.<br><br><strong>(b)</strong> A retailer decides to reject any bag whose mass differs from the mean by more than $12\\text{ g}$. Using your values from part <strong>(a)</strong>, find the proportion of bags that are accepted by the retailer.",
+    "steps": [
+        "<strong>(a) Forming Simultaneous Equations:</strong><br><br>For underweight bags, $\\text{P}(X < 990) = 0.04$:\\begin{aligned} \\dfrac{990 - \\mu}{\\sigma} &= -1.7507 \\cr 990 - \\mu &= -1.7507\\sigma \\quad \\text{--- (1)} \\end{aligned}For overweight bags, $\\text{P}(X > 1015) = 0.025$:\\begin{aligned} \\dfrac{1015 - \\mu}{\\sigma} &= 1.9600 \\cr 1015 - \\mu &= 1.9600\\sigma \\quad \\text{--- (2)} \\end{aligned}",
+        "<strong>Solving for $\\mu$ and $\\sigma$:</strong><br><br>Subtract equation (1) from equation (2):\\begin{aligned} 25 &= 3.7107\\sigma \\cr \\sigma &= \\dfrac{25}{3.7107} \\cr &= 6.7373\\text{ g} \\cr &\\approx 6.7\\text{ g (1 d.p.)} \\end{aligned}Substitute $\\sigma = 6.7373$ into equation (2):\\begin{aligned} \\mu &= 1015 - 1.9600(6.7373) \\cr &= 1015 - 13.2051 \\cr &= 1001.79\\text{ g} \\cr &\\approx 1001.8\\text{ g (1 d.p.)} \\end{aligned}",
+        "<strong>(b) Proportion of Bags Accepted:</strong><br><br>A bag is accepted if its mass deviates by at most $12\\text{ g}$ from the mean:\\begin{aligned} &\\text{P}(|X - \\mu| \\le 12) \\cr &\\quad = \\text{P}(-12 \\le X - \\mu \\le 12) \\end{aligned}Standardise using $\\sigma = 6.7373$:\\begin{aligned} Z &= \\dfrac{12}{6.7373} \\cr &= 1.7811 \\end{aligned}Calculate the central probability:\\begin{aligned} &\\text{P}(-1.7811 \\le Z \\le 1.7811) \\cr &\\quad = 2\\,\\Phi(1.7811) - 1 \\cr &\\quad = 2(0.9625) - 1 \\cr &\\quad = 0.925\\text{ (3 s.f.)} \\end{aligned}",
+        "Final Answer: (a) $\\mu = 1001.8\\text{ g}, \\ \\sigma = 6.7\\text{ g}$, (b) $0.925$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\mu = 1001.8\\text{ g}, \\ \\sigma = 6.7\\text{ g}$, (b) $0.963$",
+            "feedback": "$0.963$ is $\\Phi(1.78)$, which includes only the lower tail subtracted from 1. You must subtract both symmetrical tails: $2\\Phi(1.78) - 1 = 0.925$."
+        },
+        {
+            "ans": "(a) $\\mu = 1002.5\\text{ g}, \\ \\sigma = 6.4\\text{ g}$, (b) $0.925$",
+            "feedback": "In part (a), rounding $Z = 1.75$ and $Z = 1.96$ to two decimal places prematurely introduces rounding errors into the simultaneous solution, altering the final values."
+        },
+        {
+            "ans": "(a) $\\mu = 1001.8\\text{ g}, \\ \\sigma = 6.7\\text{ g}$, (b) $0.075$",
+            "feedback": "$0.075$ is the proportion of bags *rejected* ($1 - 0.925 = 0.075$). The question asks for the proportion *accepted* by the retailer."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Full Precision in Simultaneous Steps",
+        "content": "When solving for $\\mu$ and $\\sigma$ simultaneously from normal probabilities, never round $\\sigma$ to $1$ decimal place before calculating $\\mu$. Retain at least $4$ decimal places ($6.7373$) in your calculator memory; otherwise, premature rounding drift will corrupt your value of $\\mu$."
+    }
+},
+{
+    "id": "050093",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Normal Distribution",
+    "subtopic": [
+        "Conditional Probability",
+        "Binomial Sampling"
+    ],
+    "img": false,
+    "question": "The lifespan, $T\\text{ hours}$, of an industrial LED bulb is normally distributed with mean $12000\\text{ hours}$ and standard deviation $800\\text{ hours}$.<br><br><strong>(a)</strong> Find the probability that a randomly chosen bulb has a lifespan exceeding $13000\\text{ hours}$.<br><br><strong>(b)</strong> Given that a particular bulb has already functioned for $11500\\text{ hours}$, find the conditional probability that its total lifespan exceeds $13000\\text{ hours}$. Give your answer to $3$ significant figures.<br><br><strong>(c)</strong> A cluster of $8$ such bulbs is installed in an operating theatre. Assuming the lifespans of the bulbs are mutually independent, find the probability that at least $2$ of the bulbs last for more than $13000\\text{ hours}$.",
+    "steps": [
+        "<strong>(a) Probability Lifespan Exceeds 13000 Hours:</strong><br><br>With $T \\sim N(12000, 800^2)$:\\begin{aligned} Z &= \\dfrac{13000 - 12000}{800} \\cr &= 1.25 \\end{aligned}Calculate the upper-tail probability:\\begin{aligned} \\text{P}(T > 13000) &= \\text{P}(Z > 1.25) \\cr &= 1 - 0.8944 \\cr &= 0.1056 \\end{aligned}",
+        "<strong>(b) Conditional Probability:</strong><br><br>Using the definition of conditional probability:\\begin{aligned} &\\text{P}(T > 13000 \\mid T > 11500) \\cr &\\quad = \\dfrac{\\text{P}(T > 13000)}{\\text{P}(T > 11500)} \\end{aligned}Standardise $T = 11500$:\\begin{aligned} Z &= \\dfrac{11500 - 12000}{800} \\cr &= -0.625 \\end{aligned}Evaluate the denominator:\\begin{aligned} \\text{P}(T > 11500) &= \\text{P}(Z > -0.625) \\cr &= 0.73401 \\end{aligned}Compute the conditional quotient:\\begin{aligned} &\\text{P}(T > 13000 \\mid T > 11500) \\cr &\\quad = \\dfrac{0.10565}{0.73401} \\cr &\\quad = 0.14394 \\cr &\\quad \\approx 0.144\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(c) Binomial Probability for 8 Bulbs:</strong><br><br>Let $X$ be the number of bulbs lasting over $13000\\text{ hours}$. Then $X \\sim B(8, 0.10565)$.<br><br>Calculate $\\text{P}(X \\ge 2)$ using the complement rule:\\begin{aligned} &\\text{P}(X \\ge 2) \\cr &\\quad = 1 - [\\text{P}(X = 0) + \\text{P}(X = 1)] \\cr &\\text{P}(X = 0) = (0.89435)^8 \\cr &\\quad = 0.41324 \\cr &\\text{P}(X = 1) \\cr &\\quad = 8(0.10565)(0.89435)^7 \\cr &\\quad = 0.38993 \\cr &\\text{P}(X \\ge 2) \\cr &\\quad = 1 - (0.41324 + 0.38993) \\cr &\\quad = 1 - 0.80317 \\cr &\\quad = 0.19683 \\cr &\\quad \\approx 0.197\\text{ (3 s.f.)} \\end{aligned}",
+        "Final Answer: (a) $0.1056$, (b) $0.144$, (c) $0.197$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.1056$, (b) $0.1056$, (c) $0.197$",
+            "feedback": "In part (b), the bulb has already survived 11500 hours, which strictly reduces the sample space. The conditional probability must be divided by $\\text{P}(T > 11500) = 0.7340$, yielding $0.144$, not $0.1056$."
+        },
+        {
+            "ans": "(a) $0.1056$, (b) $0.144$, (c) $0.803$",
+            "feedback": "In part (c), $0.803$ is $\\text{P}(X \\le 1)$. To find the probability of 'at least $2$', you must subtract this from 1: $1 - 0.803 = 0.197$."
+        },
+        {
+            "ans": "(a) $0.8944$, (b) $0.144$, (c) $0.197$",
+            "feedback": "In part (a), $0.8944$ is $\\text{P}(T < 13000)$. For bulbs lasting *more* than 13000 hours, evaluate the upper tail: $1 - 0.8944 = 0.1056$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Conditional Normal Probabilities",
+        "content": "When computing conditional probabilities with continuous distributions like $\\text{P}(T > b \\mid T > a)$ where $b > a$, the intersection $(T > b) \\cap (T > a)$ is simply $T > b$. The formula simplifies to $\\frac{\\text{P}(T > b)}{\\text{P}(T > a)}$. Because the denominator is strictly $< 1$, the conditional probability is always greater than the unconditional probability."
+    }
+},
+{
+    "id": "050094",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Statistical Distributions",
+    "topic": "The Normal Distribution",
+    "subtopic": [
+        "Normal Approximation to Binomial",
+        "Continuity Correction"
+    ],
+    "img": false,
+    "question": "In a large metropolitan area, $35\\%$ of morning commuters use a public bicycle-sharing scheme. A random sample of $300$ morning commuters is surveyed.<br><br>Let $B$ represent the number of commuters in the sample who use the public bicycle-sharing scheme.<br><br><strong>(a)</strong> State the exact distribution of $B$, and explain why a normal distribution may be used to approximate it.<br><br><strong>(b)</strong> Specify the parameters of the approximating normal distribution.<br><br><strong>(c)</strong> Using the normal approximation with an appropriate continuity correction, calculate the probability that:<br><strong>(i)</strong> between $95$ and $115$ commuters inclusive use the bicycle scheme,<br><strong>(ii)</strong> strictly fewer than $90$ commuters use the bicycle scheme.",
+    "steps": [
+        "<strong>(a) Exact Distribution and Normal Validity:</strong><br><br>The exact distribution is:\\begin{aligned} B \\sim B(300, 0.35) \\end{aligned}A normal approximation is valid because $n$ is large ($n = 300$) and both expected counts exceed $5$:\\begin{aligned} np &= 300 \\times 0.35 = 105 > 5 \\cr n(1 - p) &= 300 \\times 0.65 = 195 > 5 \\end{aligned}",
+        "<strong>(b) Parameters of Approximating Distribution:</strong><br><br>Calculate the mean and variance:\\begin{aligned} \\mu &= np = 105 \\cr \\sigma^2 &= np(1 - p) \\cr &= 300 \\times 0.35 \\times 0.65 \\cr &= 68.25 \\end{aligned}Standard deviation:\\begin{aligned} \\sigma &= \\sqrt{68.25} \\cr &= 8.26135 \\end{aligned}Approximating distribution: $Y \\sim N(105, 68.25)$.",
+        "<strong>(c)(i) Between 95 and 115 Inclusive:</strong><br><br>Apply the continuity correction to include discrete values $95$ to $115$:\\begin{aligned} &\\text{P}(95 \\le B \\le 115) \\cr &\\quad \\approx \\text{P}(94.5 < Y < 115.5) \\end{aligned}Standardise both endpoints:\\begin{aligned} Z_1 &= \\dfrac{94.5 - 105}{8.26135} = -1.271 \\cr Z_2 &= \\dfrac{115.5 - 105}{8.26135} = 1.271 \\end{aligned}Calculate the probability:\\begin{aligned} &\\text{P}(-1.271 < Z < 1.271) \\cr &\\quad = 2\\,\\Phi(1.271) - 1 \\cr &\\quad = 2(0.8981) - 1 \\cr &\\quad = 0.7962 \\cr &\\quad \\approx 0.796\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(c)(ii) Strictly Fewer Than 90:</strong><br><br>Because $B$ is discrete, strictly fewer than $90$ means $B \\le 89$.<br><br>Apply the continuity correction:\\begin{aligned} &\\text{P}(B < 90) \\cr &\\quad = \\text{P}(B \\le 89) \\cr &\\quad \\approx \\text{P}(Y < 89.5) \\end{aligned}Standardise $Y = 89.5$:\\begin{aligned} Z &= \\dfrac{89.5 - 105}{8.26135} \\cr &= \\dfrac{-15.5}{8.26135} \\cr &= -1.876 \\end{aligned}Calculate the lower-tail probability:\\begin{aligned} \\text{P}(Z < -1.876) &= 1 - \\Phi(1.876) \\cr &= 1 - 0.9697 \\cr &= 0.0303\\text{ (3 s.f.)} \\end{aligned}",
+        "Final Answer: (a) $B \\sim B(300, 0.35)$; valid since $np = 105 > 5$ and $nq = 195 > 5$, (b) $\\mu = 105, \\ \\sigma^2 = 68.25$, (c)(i) $0.796$, (ii) $0.0303$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $B \\sim B(300, 0.35)$; valid since $np = 105 > 5$ and $nq = 195 > 5$, (b) $\\mu = 105, \\ \\sigma^2 = 68.25$, (c)(i) $0.774$, (ii) $0.0345$",
+            "feedback": "This error omits the continuity correction completely, evaluating $\\text{P}(95 < Y < 115)$ with $Z = \\pm 1.21$ and $\\text{P}(Y < 90)$ with $Z = -1.82$. When approximating a discrete distribution with a continuous curve, you must adjust boundaries by $\\pm 0.5$."
+        },
+        {
+            "ans": "(a) $B \\sim B(300, 0.35)$; valid since $np = 105 > 5$ and $nq = 195 > 5$, (b) $\\mu = 105, \\ \\sigma^2 = 68.25$, (c)(i) $0.796$, (ii) $0.0396$",
+            "feedback": "In (c)(ii), 'strictly fewer than 90' means $B \\le 89$, which continuity-corrects to $Y < 89.5$. Using $Y < 90.5$ mistakenly includes 90 in the probability."
+        },
+        {
+            "ans": "(a) $B \\sim N(300, 0.35)$; valid since sample is random, (b) $\\mu = 105, \\ \\sigma^2 = 8.26$, (c)(i) $0.796$, (ii) $0.0303$",
+            "feedback": "In part (a), the exact distribution is Binomial ($B(300, 0.35)$), not Normal. In part (b), $8.26$ is the standard deviation $\\sigma$, not the variance $\\sigma^2 = 68.25$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Continuity Correction Visualization",
+        "content": "Visualize the discrete binomial probabilities as bars of width $1$ centered on whole integers: the bar for $95$ spans $[94.5, 95.5]$ and the bar for $115$ spans $[114.5, 115.5]$. To capture all bars between $95$ and $115$ inclusive, stretch your continuous normal interval to $[94.5, 115.5]$. For 'strictly fewer than $90$', the highest included discrete bar is $89$, giving continuous upper limit $89.5$."
+    }
+},
+{
+    "id": "050095",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Hypothesis Testing",
+    "topic": "The Normal Distribution",
+    "subtopic": [
+        "Sample Mean Distribution",
+        "Hypothesis Test for Mean",
+        "Critical Region"
+    ],
+    "img": false,
+    "question": "A machine is calibrated to produce cylindrical steel pins with a nominal mean length of $50.0\\text{ mm}$. The lengths of the pins are normally distributed with a known standard deviation of $0.8\\text{ mm}$. Following maintenance, an engineer suspects that the machine is out of adjustment and that the mean length has changed.<br><br>A random sample of $16$ pins is measured, and their sample mean length is found to be $50.45\\text{ mm}$.<br><br><strong>(a)</strong> State suitable null and alternative hypotheses to test the engineer's suspicion.<br><br><strong>(b)</strong> State the distribution of the sample mean pin length, $\\bar{X}$, under the null hypothesis, specifying its parameters.<br><br><strong>(c)</strong> Carry out the hypothesis test at the $5\\%$ significance level, stating your conclusion clearly in context.<br><br><strong>(d)</strong> Determine the critical region for $\\bar{X}$ for this test at the $5\\%$ significance level.",
+    "steps": [
+        "<strong>(a) Null and Alternative Hypotheses:</strong><br><br>Let $\\mu$ represent the true population mean length of the pins (in mm).\\begin{aligned} &H_0: \\mu = 50.0 \\cr &H_1: \\mu \\neq 50.0 \\end{aligned}",
+        "<strong>(b) Distribution of Sample Mean:</strong><br><br>Under $H_0$, the sample mean $\\bar{X}$ of $n = 16$ observations is normally distributed:\\begin{aligned} \\bar{X} &\\sim N\\left(\\mu, \\dfrac{\\sigma^2}{n}\\right) \\cr &\\sim N\\left(50.0, \\dfrac{0.8^2}{16}\\right) \\cr &\\sim N(50.0, 0.04) \\end{aligned}The standard error of the mean is:\\begin{aligned} \\sigma_{\\bar{X}} &= \\dfrac{0.8}{\\sqrt{16}} \\cr &= 0.2\\text{ mm} \\end{aligned}",
+        "<strong>(c) Hypothesis Test:</strong><br><br>Calculate the test statistic $z$ for $\\bar{x} = 50.45\\text{ mm}$:\\begin{aligned} z &= \\dfrac{50.45 - 50.0}{0.2} \\cr &= \\dfrac{0.45}{0.2} \\cr &= 2.25 \\end{aligned}For a two-tailed test at the $5\\%$ significance level, the critical value is $z = \\pm 1.960$.<br><br>Since $2.25 > 1.960$, the result is significant at the $5\\%$ level.<br><br>Reject $H_0$. There is sufficient evidence at the $5\\%$ significance level to conclude that the mean length of the pins has changed.",
+        "<strong>(d) Critical Region for $\\bar{X}$:</strong><br><br>The critical region corresponds to $|Z| \\ge 1.960$:\\begin{aligned} \\bar{X} &> 50.0 + 1.960(0.2) \\cr \\bar{X} &> 50.0 + 0.392 \\cr \\bar{X} &> 50.392\\text{ mm} \\cr \\bar{X} &< 50.0 - 1.960(0.2) \\cr \\bar{X} &< 50.0 - 0.392 \\cr \\bar{X} &< 49.608\\text{ mm} \\end{aligned}Therefore, the critical region is:\\begin{aligned} \\bar{X} \\le 49.6\\text{ mm} \\quad \\text{or} \\quad \\bar{X} \\ge 50.4\\text{ mm} \\end{aligned}",
+        "Final Answer: (a) $H_0: \\mu = 50.0, \\ H_1: \\mu \\neq 50.0$, (b) $\\bar{X} \\sim N(50.0, 0.04)$, (c) Reject $H_0$ ($z = 2.25 > 1.960$); significant evidence that mean length has changed, (d) $\\bar{X} \\le 49.6\\text{ mm}$ or $\\bar{X} \\ge 50.4\\text{ mm}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: \\mu = 50.0, \\ H_1: \\mu \\neq 50.0$, (b) $\\bar{X} \\sim N(50.0, 0.04)$, (c) Do not reject $H_0$ ($z = 0.5625 < 1.960$); insufficient evidence that mean length has changed, (d) $\\bar{X} \\le 49.6\\text{ mm}$ or $\\bar{X} \\ge 50.4\\text{ mm}$",
+            "feedback": "This error forgets to divide $\\sigma$ by $\\sqrt{n}$, dividing $0.45$ directly by $0.8$ to get $z = 0.5625$. The sample mean variance is $\\sigma^2 / n$, so you must divide by $\\sigma / \\sqrt{n} = 0.2$, giving $z = 2.25$."
+        },
+        {
+            "ans": "(a) $H_0: \\mu = 50.0, \\ H_1: \\mu \\neq 50.0$, (b) $\\bar{X} \\sim N(50.0, 0.64)$, (c) Reject $H_0$ ($z = 2.25 > 1.960$); significant evidence that mean length has changed, (d) $\\bar{X} \\le 48.4\\text{ mm}$ or $\\bar{X} \\ge 51.6\\text{ mm}$",
+            "feedback": "In part (b), $0.64$ is the population variance $\\sigma^2$. The variance of the sample mean is $\\sigma^2 / n = 0.64 / 16 = 0.04$. Using $0.8$ instead of $0.2$ in part (d) produces an overly wide critical region."
+        },
+        {
+            "ans": "(a) $H_0: \\mu = 50.0, \\ H_1: \\mu > 50.0$, (b) $\\bar{X} \\sim N(50.0, 0.04)$, (c) Reject $H_0$ ($z = 2.25 > 1.645$); significant evidence that mean length has changed, (d) $\\bar{X} \\ge 50.3\\text{ mm}$",
+            "feedback": "The engineer suspects that the mean has *changed* (not specifically increased), which strictly requires a two-tailed test ($H_1: \\mu \\neq 50.0$) with critical values $\\pm 1.960$ rather than a one-tailed test with $1.645$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Dividing by the Square Root of n",
+        "content": "The most common error in sample mean hypothesis testing is testing individual variance instead of sample mean variance. Individual pin lengths vary with standard deviation $\\sigma = 0.8$, but the average of $16$ pins is far more clustered around the mean, varying with standard error $\\frac{\\sigma}{\\sqrt{n}} = \\frac{0.8}{4} = 0.2$."
+    }
 }
 ];
