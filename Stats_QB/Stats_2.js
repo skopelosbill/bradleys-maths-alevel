@@ -681,10 +681,10 @@ window.ALEVEL_QUESTIONS = [
         "Stratified Calculations"
     ],
     "img": false,
-    "question": "The manager of a leisure centre wishes to survey member satisfaction. The centre has $1\\,200$ adult members, $450$ junior members, and $350$ senior members. The manager decides to take a stratified sample of $80$ members.<br><br><strong>(a)</strong> Calculate the number of junior members that should be included in the sample.<br><br><strong>(b)</strong> State what is meant by a <em>sampling frame</em> in this context, and explain why taking a stratified sample would not be possible if a complete register of members was unavailable.",
+    "question": "The manager of a leisure centre wishes to survey member satisfaction. The centre has $1200$ adult members, $450$ junior members, and $350$ senior members. The manager decides to take a stratified sample of $80$ members.<br><br><strong>(a)</strong> Calculate the number of junior members that should be included in the sample.<br><br><strong>(b)</strong> State what is meant by a <em>sampling frame</em> in this context, and explain why taking a stratified sample would not be possible if a complete register of members was unavailable.",
     "steps": [
-        "<strong>(a) Junior Members in Stratified Sample:</strong><br><br>First calculate the total membership of the centre:egin{aligned} N &= 1200 + 450 + 350 \\cr &= 2000 nd{aligned}Now calculate the proportional number of junior members for a sample of $n = 80$:egin{aligned} ext{Junior sample} &= frac{450}{2000} imes 80 \\cr &= frac{9}{40} imes 80 \\cr &= 18 nd{aligned}",
-        "<strong>(b) Sampling Frame and Stratification:</strong><br><br>A sampling frame in this context is a complete, unique list or register of all $2\\,000$ members of the leisure centre.<br><br>Without a complete register, members cannot be uniquely identified, categorised accurately into their respective age strata, or selected at random from within each stratum.",
+        "<strong>(a) Junior Members in Stratified Sample:</strong><br><br>First calculate the total membership of the centre:\\begin{aligned} N &= 1200 + 450 + 350 \\cr &= 2000 \\end{aligned}Now calculate the proportional number of junior members for a sample of $n = 80$:\\begin{aligned} \\text{Junior sample} &= \\dfrac{450}{2000} \\times 80 \\cr &= \\dfrac{9}{40} \\times 80 \\cr &= 18 \\end{aligned}",
+        "<strong>(b) Sampling Frame and Stratification:</strong><br><br>A sampling frame in this context is a complete, unique list or register of all $2000$ members of the leisure centre.<br><br>Without a complete register, members cannot be uniquely identified, categorised accurately into their respective age strata, or selected at random from within each stratum.",
         "Final Answer: (a) 18, (b) Complete list of all 2000 members; required to identify and randomly select individuals from each stratum"
     ],
     "pi_options": [
@@ -698,7 +698,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(a) 14, (b) Complete list of all 2000 members; required to identify and randomly select individuals from each stratum",
-            "feedback": "14 is the number of senior members ($\\frac{350}{2000} \\times 80 = 14$), not junior members."
+            "feedback": "14 is the number of senior members ($\\dfrac{350}{2000} \\times 80 = 14$), not junior members."
         }
     ],
     "bradley_insight": {
@@ -719,11 +719,11 @@ window.ALEVEL_QUESTIONS = [
         "Periodic Bias"
     ],
     "img": false,
-    "question": "A food processing factory produces packets of crisps. A quality-control inspector wishes to check packet weights. During a single morning shift, $2\\,400$ packets are produced, numbered sequentially from $1$ to $2\\,400$ along a conveyor belt. The inspector decides to select a systematic sample of $60$ packets.<br><br><strong>(a)</strong> Describe clearly how the inspector should select this systematic sample.<br><br><strong>(b)</strong> State one potential hazard or disadvantage of using systematic sampling in this production environment.",
+    "question": "A food processing factory produces packets of crisps. A quality-control inspector wishes to check packet weights. During a single morning shift, $2400$ packets are produced, numbered sequentially from $1$ to $2400$ along a conveyor belt. The inspector decides to select a systematic sample of $60$ packets.<br><br><strong>(a)</strong> Describe clearly how the inspector should select this systematic sample.<br><br><strong>(b)</strong> State one potential hazard or disadvantage of using systematic sampling in this production environment.",
     "steps": [
-        "<strong>(a) Selecting the Systematic Sample:</strong><br><br>1. Determine the sampling interval $k$:egin{aligned} k &= frac{2400}{60} \\cr &= 40 nd{aligned}2. Select a random starting number $r$ from $1$ to $40$ inclusive.<br><br>3. Select packet $r$, followed by every $40\\text{th}$ packet thereafter:egin{aligned} ext{Packets: } r, r+40, r+80, ots, r+2360 nd{aligned}",
-        "<strong>(b) Potential Hazard:</strong><br><br>If the production process has an underlying periodic pattern or cyclic fault that coincides with the sampling interval (every $40\\text{th}$ packet), the sample will be severely biased (e.g. consistently picking packets from a faulty machine nozzle or missing periodic dips).",
-        "Final Answer: (a) Choose random start $r n [1, 40]$, then take every $40ext{th}$ packet ($r, r+40, ots$), (b) Periodic machine cycles matching the sampling interval introduce severe bias"
+        "<strong>(a) Selecting the Systematic Sample:</strong><br><br>1. Determine the sampling interval $k$:\\begin{aligned} k &= \\dfrac{2400}{60} \\cr &= 40 \\end{aligned}2. Select a random starting number $r$ from $1$ to $40$ inclusive.<br><br>3. Select packet $r$, followed by every $40$th packet thereafter:\\begin{aligned} \\text{Packets: } r, r+40, r+80, \\dots, r+2360 \\end{aligned}",
+        "<strong>(b) Potential Hazard:</strong><br><br>If the production process has an underlying periodic pattern or cyclic fault that coincides with the sampling interval (every $40$th packet), the sample will be severely biased (e.g. consistently picking packets from a faulty machine nozzle or missing periodic dips).",
+        "Final Answer: (a) Choose random start $r$ from 1 to 40, then take every 40th packet ($r, r+40, \\dots$), (b) Periodic machine cycles matching the sampling interval introduce severe bias"
     ],
     "pi_options": [
         {
@@ -731,18 +731,18 @@ window.ALEVEL_QUESTIONS = [
             "feedback": "Starting deterministically at packet 40 eliminates randomness. Systematic sampling requires a random starting integer between 1 and $k$ to give each packet an equal chance of selection."
         },
         {
-            "ans": "(a) Choose random start $r n [1, 40]$, then take every $40ext{th}$ packet ($r, r+40, ots$), (b) It is impossible to use if items are already sequentially numbered",
+            "ans": "(a) Choose random start $r$ from 1 to 40, then take every 40th packet ($r, r+40, \\dots$), (b) It is impossible to use if items are already sequentially numbered",
             "feedback": "Sequential numbering makes systematic sampling exceptionally easy to implement. The principal danger is hidden periodic or cyclic behaviour in the production line."
         },
         {
-            "ans": "(a) Choose random start $r n [1, 60]$, then take every $60ext{th}$ packet ($r, r+60, ots$), (b) A sampling frame is not required, leading to interviewer bias",
-            "feedback": "The sampling interval is $k = 2400 / 60 = 40$, not $60$. Selecting every $60\\text{th}$ packet would yield only $40$ items, failing the required sample size of $60$."
+            "ans": "(a) Choose random start $r$ from 1 to 60, then take every 60th packet ($r, r+60, \\dots$), (b) A sampling frame is not required, leading to interviewer bias",
+            "feedback": "The sampling interval is $k = 2400 / 60 = 40$, not $60$. Selecting every $60$th packet would yield only $40$ items, failing the required sample size of $60$."
         }
     ],
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Always State the Random Start",
-        "content": "In exam marking schemes for systematic sampling, mentioning the random starting point is almost always worth an independent mark. If you only write 'pick every $40\\text{th}$ item', you lose the mark because the method is not random without a randomised starting index between $1$ and $k$."
+        "content": "In exam marking schemes for systematic sampling, mentioning the random starting point is almost always worth an independent mark. If you only write 'pick every $40$th item', you lose the mark because the method is not random without a randomised starting index between $1$ and $k$."
     }
 },
 {
@@ -770,7 +770,7 @@ window.ALEVEL_QUESTIONS = [
         },
         {
             "ans": "(a) Systematic sampling, (b) Advantage: Quick and easy to calculate intervals; Disadvantage: Periodic patterns introduce bias",
-            "feedback": "Systematic sampling involves choosing every $k\\text{th}$ item from an ordered list. Selecting passers-by to fill categories of 40 is quota sampling."
+            "feedback": "Systematic sampling involves choosing every $k$th item from an ordered list. Selecting passers-by to fill categories of 40 is quota sampling."
         },
         {
             "ans": "(a) Quota sampling, (b) Advantage: Guarantees zero sampling error; Disadvantage: Requires a complete electoral register",
