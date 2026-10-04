@@ -1282,7 +1282,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Upper-Tail Cumulative Logic",
-        "content": "For upper-tail binomial tests ($\text{P}(X \ge x)$), remember that standard tables and calculators give $\text{P}(X \le k)$. To calculate $\text{P}(X \ge 22)$, you must subtract the cumulative probability up to $21$: $1 - \text{P}(X \le 21)$. Subtracting up to $22$ ($1 - \text{P}(X \le 22)$) would mistakenly omit $X = 22$ from your tail."
+        "content": "For upper-tail binomial tests ($\\text{P}(X \\ge x)$), remember that standard tables and calculators give $\\text{P}(X \\le k)$. To calculate $\\text{P}(X \\ge 22)$, you must subtract the cumulative probability up to $21$: $1 - \\text{P}(X \\le 21)$. Subtracting up to $22$ ($1 - \\text{P}(X \\le 22)$) would mistakenly omit $X = 22$ from your tail."
     }
 },
 {
@@ -1322,7 +1322,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Nominal vs Actual Significance Level",
-        "content": "Because the binomial distribution is discrete, you cannot generally find an integer cutoff whose tail probability equals exactly $5\%$. The nominal level ($5\%$) is the maximum risk of a Type I error you are willing to tolerate; the actual significance level is the exact cumulative probability of the critical region ($1.55\%$), which is strictly $\le 5\%$."
+        "content": "Because the binomial distribution is discrete, you cannot generally find an integer cutoff whose tail probability equals exactly $5\\%$. The nominal level ($5\\%$) is the maximum risk of a Type I error you are willing to tolerate; the actual significance level is the exact cumulative probability of the critical region ($1.55\\%$), which is strictly $\\le 5\\%$."
     }
 },
 {
@@ -1402,6 +1402,204 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: The 'At Most' Critical Region Rule",
         "content": "When an exam question instructs you to allocate 'at most $5\%$ to each tail', you must ensure neither tail probability exceeds $0.05$. In this case, while $0.0736$ and $0.0778$ are closer to $0.05$ than $0.0294$ and $0.0344$, they exceed the strict $5\%$ cap and must be rejected."
+    }
+},
+{
+    "id": "050086",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Data Presentation and Interpretation",
+    "topic": "Statistical Diagrams",
+    "subtopic": [
+        "Radar Diagrams",
+        "Comparative Demographics"
+    ],
+    "img": "images/Statistics_pngs/050086.png",
+    "question": "The radar diagrams illustrate census population figures for two Local Authorities: Camden (an urban London borough) and North Norfolk (a rural district).<br><br>Each radius represents an age group:<br>Radius 1: 0–17<br>Radius 2: 18–29<br>Radius 3: 30–44<br>Radius 4: 45–59<br>Radius 5: 60–74<br>Radius 6: 75+<br><br>The distance of each dot from the centre represents the number of people in the relevant age group.<br><br><strong>(a)</strong> The scales on the two diagrams are different. State an advantage and a disadvantage of using different scales in order to make comparisons between the ages of people in these two Local Authorities.<br><br><strong>(b)</strong> Approximately how many people aged 45 to 59 were there in Camden?<br><br><strong>(c)</strong> State the two main differences between the age profiles of the two Local Authorities.<br><br><strong>(d)</strong> A demographer claims that, assuming minimal migration into or out of the regions, future census results are likely to show an increase in the number of primary school-age children in Camden and a decrease in North Norfolk. Use the radar diagrams to give a demographic justification for this claim.",
+    "steps": [
+        "<strong>(a) Advantage and Disadvantage of Different Scales:</strong><br><br><strong>Advantage:</strong> It allows the overall shape and relative age distribution of each population to be clearly seen, preventing the smaller population (North Norfolk) from being compressed into an unreadable dot at the centre.<br><br><strong>Disadvantage:</strong> It can be visually misleading: Camden's polygon may look similar in size to North Norfolk's despite Camden having a vastly larger population, making direct comparisons of absolute population numbers difficult.",
+        "<strong>(b) Reading Camden Population (Aged 45 to 59):</strong><br><br>Age group 45–59 is represented by Radius 4.<br><br>On the Camden diagram, the grid rings increment by $40\\,000$. The plotted point on Radius 4 lies at approximately $1.8$ grid units:\\begin{aligned} \\text{Population} &\\approx 1.8 \\times 40\\,000 \\cr &\\approx 72\\,000 \\end{aligned}(Accept values between $68\\,000$ and $76\\,000$.)",
+        "<strong>(c) Differences in Age Profiles:</strong><br><br>1. <strong>Younger adults:</strong> Camden has a much higher proportion and concentration of young working-age adults (ages 18–44, Radii 2 and 3).<br><br>2. <strong>Older residents:</strong> North Norfolk has a much higher proportion of older adults and retirees (ages 60+, Radii 5 and 6).",
+        "<strong>(d) Demographic Justification:</strong><br><br>Camden has a large population in the primary childbearing age bands (18–44), which is likely to result in a higher birth rate and an increase in primary school children.<br><br>Conversely, North Norfolk has very few residents of childbearing age and a large elderly population, resulting in a low birth rate and a decreasing child population.",
+        "Final Answer: (a) Advantage: reveals relative shape; Disadvantage: obscures absolute population size, (b) Approximately 72 000, (c) Camden has more young adults; North Norfolk has more older residents, (d) Camden has many adults of childbearing age; North Norfolk has few"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Advantage: reveals relative shape; Disadvantage: obscures absolute population size, (b) Approximately 21 000, (c) Camden has more young adults; North Norfolk has more older residents, (d) Camden has many adults of childbearing age; North Norfolk has few",
+            "feedback": "Reading 21 000 mistakes Camden's grid scale for North Norfolk's scale ($8\\,000$ per ring). Camden's rings represent increments of $40\\,000$, giving $1.8 \\times 40\\,000 \\approx 72\\,000$."
+        },
+        {
+            "ans": "(a) Advantage: eliminates all reading errors; Disadvantage: requires complex calculations, (b) Approximately 72 000, (c) Camden has more young adults; North Norfolk has more older residents, (d) Camden has many adults of childbearing age; North Norfolk has few",
+            "feedback": "Different scales do not eliminate reading errors; in fact, having different scales increases the risk of misreading absolute figures."
+        },
+        {
+            "ans": "(a) Advantage: reveals relative shape; Disadvantage: obscures absolute population size, (b) Approximately 72 000, (c) Both populations have identical shapes and median ages, (d) Camden has many adults of childbearing age; North Norfolk has few",
+            "feedback": "The two age profiles are starkly different: Camden's radar polygon bulges strongly at Radii 2 and 3 (young working adults), while North Norfolk bulges at Radii 5 and 6 (older/retirees)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Radar Diagrams and Bulge Direction",
+        "content": "When interpreting population radar diagrams, look at the direction of the 'bulge'. A bulge towards the right and top (Radii 2 and 3) indicates a young urban population with university students and young professionals. A bulge towards the left and bottom (Radii 5 and 6) reflects an aging rural or coastal retirement population. Always check the ring units first before reading values!"
+    }
+},
+{
+    "id": "050087",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Data Presentation and Interpretation",
+    "topic": "Statistical Diagrams",
+    "subtopic": [
+        "Comparative Box Plots",
+        "Outlier Boundaries"
+    ],
+    "img": "images/Statistics_pngs/050087.png",
+    "question": "The comparative box plots show the distributions of daily maximum gust (measured in knots) recorded at two meteorological weather stations, Camborne (a coastal station) and Leeming (an inland station), over a sample period.<br><br>The key summary statistics for Camborne are $Q_1 = 14$, $\\text{Median} = 18$, and $Q_3 = 22$, with an extreme value plotted at $35\\text{ knots}$. For Leeming, $Q_1 = 8$, $\\text{Median} = 11$, and $Q_3 = 15$.<br><br><strong>(a)</strong> An outlier is defined as any value that lies more than $1.5 \\times \\text{IQR}$ above the upper quartile ($Q_3$) or below the lower quartile ($Q_1$). Show that the recorded gust of $35\\text{ knots}$ at Camborne is an outlier.<br><br><strong>(b)</strong> Compare the wind speed distributions of Camborne and Leeming by making two distinct comparisons in context (one regarding location and one regarding spread).<br><br><strong>(c)</strong> State, with a reason, whether the distribution of daily maximum gust at Leeming is positively skewed, negatively skewed, or approximately symmetric.",
+    "steps": [
+        "<strong>(a) Outlier Calculation for Camborne:</strong><br><br>First calculate the interquartile range for Camborne:\\begin{aligned} \\text{IQR} &= Q_3 - Q_1 \\cr &= 22 - 14 \\cr &= 8 \\end{aligned}Calculate the upper outlier boundary:\\begin{aligned} \\text{Upper limit} &= Q_3 + 1.5 \\times \\text{IQR} \\cr &= 22 + 1.5(8) \\cr &= 22 + 12 \\cr &= 34\\text{ knots} \\end{aligned}Since $35 > 34$, the observation at $35\\text{ knots}$ lies above the upper outlier boundary and is confirmed as an outlier.",
+        "<strong>(b) Contextual Comparison:</strong><br><br>1. <strong>Location (Average):</strong> The median daily maximum gust at Camborne ($18\\text{ knots}$) is higher than at Leeming ($11\\text{ knots}$), showing that wind speeds are on average higher at the coastal station than the inland station.<br><br>2. <strong>Spread (Dispersion):</strong> The interquartile range at Camborne ($8\\text{ knots}$) is larger than at Leeming ($15 - 8 = 7\\text{ knots}$), indicating that daily wind speeds are more variable at Camborne than at Leeming.",
+        "<strong>(c) Skewness of Leeming:</strong><br><br>Compare the quartile differences:\\begin{aligned} Q_3 - \\text{Median} &= 15 - 11 \\cr &= 4 \\cr \\text{Median} - Q_1 &= 11 - 8 \\cr &= 3 \\end{aligned}Since $Q_3 - \\text{Median} > \\text{Median} - Q_1$ (and the upper whisker is longer than the lower whisker), the distribution is <strong>positively skewed</strong>.",
+        "Final Answer: (a) Upper limit is 34; 35 > 34, so it is an outlier, (b) Median is higher at Camborne (18 vs 11 knots); IQR is larger at Camborne (8 vs 7 knots), (c) Positively skewed since Q3 - Median > Median - Q1"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Upper limit is 34; 35 > 34, so it is an outlier, (b) Median is higher at Camborne (18 vs 11 knots); IQR is larger at Camborne (8 vs 7 knots), (c) Negatively skewed since the lower whisker is shorter",
+            "feedback": "When the upper whisker is longer and $Q_3 - \\text{Median} > \\text{Median} - Q_1$, the long tail extends to the right, indicating positive skew, not negative skew."
+        },
+        {
+            "ans": "(a) Upper limit is 38; 35 < 38, so it is not an outlier, (b) Median is higher at Camborne (18 vs 11 knots); IQR is larger at Camborne (8 vs 7 knots), (c) Positively skewed since Q3 - Median > Median - Q1",
+            "feedback": "Calculating the limit using $Q_3 + 2 \\times \\text{IQR} = 22 + 16 = 38$ is incorrect. The standard 1.5 multiplier gives an upper boundary of $22 + 1.5(8) = 34$, making 35 an outlier."
+        },
+        {
+            "ans": "(a) Upper limit is 34; 35 > 34, so it is an outlier, (b) Camborne has higher numbers and Leeming has lower numbers, (c) Approximately symmetric because the box is centered",
+            "feedback": "In part (b), comparisons must be stated in context quoting statistical measures (median and IQR) and naming the variable (wind speed or knots). Vague statements like 'higher numbers' earn zero marks."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Box Plot Comparisons In Context",
+        "content": "When an exam question asks you to 'compare the distributions', you must give two distinct statements: one comparing location (quote both medians with units) and one comparing spread (quote both IQRs or ranges with units). Always name the context ($knots$ or wind speed); never just write 'the average is higher'."
+    }
+},
+{
+    "id": "050088",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Data Presentation and Interpretation",
+    "topic": "Statistical Diagrams",
+    "subtopic": [
+        "Cumulative Frequency",
+        "Interquartile Range"
+    ],
+    "img": "images/Statistics_pngs/050088.png",
+    "question": "The diagram shows cumulative frequency curves representing the daily commute times (in minutes) for representative samples of workers in Town A (an outer suburban town) and Town B (a compact urban town).<br><br><strong>(a)</strong> Estimate the median daily commute time for workers in:<br><strong>(i)</strong> Town A<br><strong>(ii)</strong> Town B<br><br><strong>(b)</strong> Estimate the interquartile range (IQR) of commute times for workers in Town A.<br><br><strong>(c)</strong> A transport planner claims that workers in Town B generally experience shorter and more consistent commute times than workers in Town A. State whether the data support this claim, justifying your response using your answers from parts <strong>(a)</strong> and <strong>(b)</strong>.<br><br><strong>(d)</strong> Estimate the percentage of workers in Town A whose daily commute exceeds $45\\text{ minutes}$.",
+    "steps": [
+        "<strong>(a) Estimating Median Commute Times:</strong><br><br>The median corresponds to a cumulative frequency of $50\\%$.<br><br><strong>(i) Town A:</strong> Reading across from $50\\%$ to the blue curve and down to the horizontal axis gives approximately $37\\text{ minutes}$ (accept $36$ to $38\\text{ minutes}$).<br><br><strong>(ii) Town B:</strong> Reading across from $50\\%$ to the red curve gives approximately $20\\text{ minutes}$ (accept $19$ to $21\\text{ minutes}$).",
+        "<strong>(b) Estimating IQR for Town A:</strong><br><br>Read the quartiles for Town A from the vertical axis:<br>Lower quartile ($Q_1$) at $25\\%$: approx $27\\text{ minutes}$ (accept $26$ to $28$).<br>Upper quartile ($Q_3$) at $75\\%$: approx $45\\text{ minutes}$.\\begin{aligned} \\text{IQR} &= Q_3 - Q_1 \\cr &= 45 - 27 \\cr &= 18\\text{ minutes} \\end{aligned}(Accept values between $17$ and $19\\text{ minutes}$.)",
+        "<strong>(c) Evaluating the Planner's Claim:</strong><br><br>Yes, the data support the claim.<br><br>1. <strong>Shorter commutes:</strong> The median commute time in Town B ($20\\text{ min}$) is significantly lower than in Town A ($37\\text{ min}$).<br><br>2. <strong>More consistent:</strong> The curve for Town B is steeper between $10$ and $30\\text{ minutes}$, indicating a narrower spread of data (a smaller IQR of approximately $12\\text{ min}$ vs $18\\text{ min}$), meaning commute times in Town B are more consistent.",
+        "<strong>(d) Percentage Exceeding 45 Minutes in Town A:</strong><br><br>At a commute time of $45\\text{ minutes}$, the cumulative frequency on Town A's curve is $75\\%$.\\begin{aligned} \\text{Percentage} &= 100\\% - 75\\% \\cr &= 25\\% \\end{aligned}",
+        "Final Answer: (a)(i) 37 mins, (ii) 20 mins, (b) 18 mins, (c) Supported; lower median (20 vs 37 mins) and smaller IQR, (d) 25%"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) 37 mins, (ii) 20 mins, (b) 18 mins, (c) Supported; lower median (20 vs 37 mins) and smaller IQR, (d) 75%",
+            "feedback": "75% is the cumulative percentage of workers whose commute is *up to* 45 minutes. To find the percentage who commute for *more* than 45 minutes, subtract from 100%: $100\\% - 75\\% = 25\\%$."
+        },
+        {
+            "ans": "(a)(i) 45 mins, (ii) 28 mins, (b) 28 mins, (c) Supported; lower median (20 vs 37 mins) and smaller IQR, (d) 25%",
+            "feedback": "Reading medians at a cumulative frequency of $50\\%$ yields approximately 37 minutes for Town A and 20 minutes for Town B. 45 minutes is the upper quartile ($Q_3$) for Town A, not the median."
+        },
+        {
+            "ans": "(a)(i) 37 mins, (ii) 20 mins, (b) 18 mins, (c) Not supported; Town A has a higher maximum commute time, (d) 25%",
+            "feedback": "The transport planner claimed that Town B has shorter and more consistent times. Because Town B has a lower median and a smaller IQR (steeper curve), the claim is fully supported by the data."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Steepness and Consistency",
+        "content": "On a cumulative frequency graph, steepness directly reflects consistency. A steep curve means a large proportion of the population is concentrated within a very narrow interval of the horizontal axis, resulting in a small $\\text{IQR}$ and high consistency. A shallow, stretched-out curve indicates high variability."
+    }
+},
+{
+    "id": "050089",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Data Presentation and Interpretation",
+    "topic": "Statistical Diagrams",
+    "subtopic": [
+        "Population Pyramids",
+        "Demographic Comparison"
+    ],
+    "img": "images/Statistics_pngs/050089.png",
+    "question": "The back-to-back horizontal bar chart (population pyramid) displays the percentage age distributions of residents living in two distinct electoral wards: University Ward and Coastal Ward.<br><br><strong>(a)</strong> State the modal age category for:<br><strong>(i)</strong> University Ward<br><strong>(ii)</strong> Coastal Ward<br><br><strong>(b)</strong> Determine the total percentage of residents aged 60 and over in:<br><strong>(i)</strong> University Ward<br><strong>(ii)</strong> Coastal Ward<br><br><strong>(c)</strong> Give one distinct planning implication for local public service providers (such as healthcare, transport, or education) that arises directly from the demographic differences between these two wards.",
+    "steps": [
+        "<strong>(a) Modal Age Categories:</strong><br><br>The modal category is represented by the longest horizontal bar for each ward:<br><strong>(i) University Ward:</strong> The longest bar is in the <strong>18–29</strong> age category ($36\\%$).<br><br><strong>(ii) Coastal Ward:</strong> The longest bar is in the <strong>60–74</strong> age category ($25\\%$).",
+        "<strong>(b) Percentage Aged 60 and Over:</strong><br><br>Sum the percentages in the 60–74 and 75+ categories:<br><br><strong>(i) University Ward:</strong>\\begin{aligned} 9\\% + 5\\% = 14\\% \\end{aligned}<strong>(ii) Coastal Ward:</strong>\\begin{aligned} 25\\% + 15\\% = 40\\% \\end{aligned}",
+        "<strong>(c) Planning Implications:</strong><br><br>Any sensible, contextual public service implication:<br><br>1. <strong>Healthcare / Social Care:</strong> Coastal Ward has a much higher elderly population ($40\\%$ aged 60+ vs $14\\%$), requiring greater investment in geriatric healthcare, chronic care facilities, and mobility support services.<br><br>2. <strong>Housing / Education / Night Economy:</strong> University Ward has $36\\%$ of residents aged 18–29, requiring student accommodation, vocational and higher education infrastructure, and late-night public transport services.",
+        "Final Answer: (a)(i) 18–29, (ii) 60–74, (b)(i) 14%, (ii) 40%, (c) Coastal Ward needs more elderly care; University Ward needs young adult housing/education"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) 18–29, (ii) 60–74, (b)(i) 9%, (ii) 25%, (c) Coastal Ward needs more elderly care; University Ward needs young adult housing/education",
+            "feedback": "In part (b), 'aged 60 and over' includes both the 60–74 category and the 75+ category. Forgetting the 75+ bar gives 9% and 25% instead of 14% and 40%."
+        },
+        {
+            "ans": "(a)(i) 30–44, (ii) 45–59, (b)(i) 14%, (ii) 40%, (c) Coastal Ward needs more elderly care; University Ward needs young adult housing/education",
+            "feedback": "The modal group is the single category with the highest frequency (longest bar). For University Ward this is 18–29 (36%), and for Coastal Ward it is 60–74 (25%)."
+        },
+        {
+            "ans": "(a)(i) 18–29, (ii) 60–74, (b)(i) 14%, (ii) 40%, (c) Both wards have identical demographics and require the same school funding",
+            "feedback": "The demographic structures are strongly polarised: University Ward is heavily skewed towards young working adults and students, while Coastal Ward is an older retirement area."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Interpreting Population Pyramids",
+        "content": "Population pyramids provide an immediate visual diagnostic of a community. An expansive base or middle (wide at 18–29) indicates a university or thriving urban economic centre. A top-heavy pyramid (wide at 60+) indicates a coastal retirement community with high dependency ratios that place heavy demands on health and social services."
+    }
+},
+{
+    "id": "050090",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Data Presentation and Interpretation",
+    "topic": "Statistical Diagrams",
+    "subtopic": [
+        "Comparative Histograms",
+        "Linear Interpolation"
+    ],
+    "img": "images/Statistics_pngs/050090.png",
+    "question": "The histograms illustrate the weekly supermarket expenditure per person (in £) for random samples of $100$ residents each from District A and District B.<br><br><strong>(a)</strong> Using the frequency densities shown in the diagram for District A:<br><strong>(i)</strong> Show that the total frequency of District A is $100$.<br><strong>(ii)</strong> Calculate an estimate for the mean weekly expenditure per person in District A.<br><br><strong>(b)</strong> For District B, use linear interpolation on the histogram data to calculate an estimate of the median weekly expenditure per person. Give your answer to 3 significant figures.<br><br><strong>(c)</strong> State, with reference to the shapes of the distributions, why the median and interquartile range are generally preferred over the mean and standard deviation for comparing household expenditures.",
+    "steps": [
+        "<strong>(a)(i) Total Frequency for District A:</strong><br><br>Calculate the frequency of each bar as $\\text{Frequency} = \\text{Class width} \\times \\text{Frequency density}$:\\begin{aligned} &\\text{Class } [0, 10): \\quad 10 \\times 2.4 = 24 \\cr &\\text{Class } [10, 20): \\quad 10 \\times 4.8 = 48 \\cr &\\text{Class } [20, 30): \\quad 10 \\times 2.0 = 20 \\cr &\\text{Class } [30, 50): \\quad 20 \\times 0.4 = 8 \\end{aligned}Summing the frequencies:\\begin{aligned} 24 + 48 + 20 + 8 = 100 \\end{aligned}",
+        "<strong>(a)(ii) Estimate of the Mean for District A:</strong><br><br>Use the midpoints of each interval ($5, 15, 25, 40$):\\begin{aligned} &\\sum fx \\cr &\\quad = (24 \\times 5) + (48 \\times 15) \\cr &\\quad\\quad + (20 \\times 25) + (8 \\times 40) \\cr &\\quad = 120 + 720 + 500 + 320 \\cr &\\quad = 1660 \\end{aligned}Calculate the mean:\\begin{aligned} \\bar{x} &= \\dfrac{1660}{100} \\cr &= £16.60 \\end{aligned}",
+        "<strong>(b) Median for District B via Linear Interpolation:</strong><br><br>Calculate the frequencies for District B:\\begin{aligned} &\\text{Class } [0, 10): \\quad 10 \\times 0.8 = 8 \\cr &\\text{Class } [10, 20): \\quad 10 \\times 2.2 = 22 \\cr &\\text{Class } [20, 30): \\quad 10 \\times 4.5 = 45 \\cr &\\text{Class } [30, 50): \\quad 20 \\times 1.25 = 25 \\end{aligned}The cumulative frequencies are: $8, 30, 75, 100$.<br><br>The median is the $50\\text{th}$ value, which falls in the class $[20, 30)$ where lower boundary $L = 20$, width $w = 10$, frequency $f = 45$, and cumulative frequency before this class $F = 30$:\\begin{aligned} \\text{Median} &= L + \\dfrac{50 - F}{f} \\times w \\cr &= 20 + \\dfrac{50 - 30}{45} \\times 10 \\cr &= 20 + \\dfrac{200}{45} \\cr &= 20 + 4.444 \\cr &= £24.44 \\cr &\\approx £24.40\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(c) Preference for Median and IQR:</strong><br><br>Expenditure data is positively skewed and often contains high-value outliers (e.g. affluent households spending large amounts).<br><br>The median and interquartile range are resistant (non-parametric) statistics that are not distorted by extreme outliers, whereas the mean and standard deviation are pulled upwards by extreme high values.",
+        "Final Answer: (a)(i) 24 + 48 + 20 + 8 = 100, (ii) £16.60, (b) £24.40, (c) Median and IQR are resistant to positive skew and extreme high outliers"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) 24 + 48 + 20 + 8 = 100, (ii) £16.60, (b) £25.00, (c) Median and IQR are resistant to positive skew and extreme high outliers",
+            "feedback": "£25.00 is simply the midpoint of the median class $[20, 30)$. Linear interpolation uses the frequency distribution within the class: $20 + \\frac{20}{45} \\times 10 = £24.44 \\approx £24.40$."
+        },
+        {
+            "ans": "(a)(i) 24 + 48 + 20 + 8 = 100, (ii) £19.50, (b) £24.40, (c) Median and IQR are resistant to positive skew and extreme high outliers",
+            "feedback": "In part (a)(ii), £19.50 is the unweighted average of the four midpoints: $(5 + 15 + 25 + 40) / 4$. You must multiply each midpoint by its respective frequency and divide by the total frequency ($100$)."
+        },
+        {
+            "ans": "(a)(i) 24 + 48 + 20 + 8 = 100, (ii) £16.60, (b) £24.40, (c) The mean is always larger than the median in symmetric distributions",
+            "feedback": "In symmetric distributions, the mean and median are equal. The reason the median is preferred for financial data is that expenditure distributions are positively skewed with extreme high values that inflate the mean."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Linear Interpolation Formula",
+        "content": "For linear interpolation from grouped frequency data or histograms, memorize the formula: $\\text{Median} = L + \\frac{\\frac{n}{2} - F}{f} \\times w$, where $L$ is the lower class boundary, $F$ is the cumulative frequency up to that boundary, $f$ is the frequency of the median class, and $w$ is the class width. Setting up these four parameters first prevents algebraic slips."
     }
 }
 ];
