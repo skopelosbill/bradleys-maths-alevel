@@ -721,7 +721,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A food processing factory produces packets of crisps. A quality-control inspector wishes to check packet weights. During a single morning shift, $2400$ packets are produced, numbered sequentially from $1$ to $2400$ along a conveyor belt. The inspector decides to select a systematic sample of $60$ packets.<br><br><strong>(a)</strong> Describe clearly how the inspector should select this systematic sample.<br><br><strong>(b)</strong> State one potential hazard or disadvantage of using systematic sampling in this production environment.",
     "steps": [
-        "<strong>(a) Selecting the Systematic Sample:</strong><br><br>1. Determine the sampling interval $k$:\\begin{aligned} k &= \\dfrac{2400}{60} \\cr &= 40 \\end{aligned}2. Select a random starting number $r$ from $1$ to $40$ inclusive.<br><br>3. Select packet $r$, followed by every $40$th packet thereafter:\\begin{aligned} \\text{Packets: } r, r+40, r+80, \\dots, r+2360 \\end{aligned}",
+        "<strong>(a) Selecting the Systematic Sample:</strong><br><br>1. Determine the sampling interval $k$:\\begin{aligned} k &= \\dfrac{2400}{60} \\cr &= 40 \\end{aligned}2. Select a random starting number $r$ from $1$ to $40$ inclusive.<br><br>3. Select packet $r$, followed by every $40$th packet thereafter:\\begin{aligned} &\\text{Packets: } r, r+40, r+80,\\cr & \\qquad \\quad \\dots, r+2360 \\end{aligned}",
         "<strong>(b) Potential Hazard:</strong><br><br>If the production process has an underlying periodic pattern or cyclic fault that coincides with the sampling interval (every $40$th packet), the sample will be severely biased (e.g. consistently picking packets from a faulty machine nozzle or missing periodic dips).",
         "Final Answer: (a) Choose random start $r$ from 1 to 40, then take every 40th packet ($r, r+40, \\dots$), (b) Periodic machine cycles matching the sampling interval introduce severe bias"
     ],
@@ -819,6 +819,197 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Opportunity Sampling Pitfalls",
         "content": "Opportunity sampling is the easiest to carry out, but exam boards frequently test why it fails. Whenever an exam scenario involves surveying 'the first $n$ people who walk past', highlight both the physical exclusion of those not present at that specific spot and the temporal bias of sampling at that exact moment."
+    }
+},
+{
+    "id": "050071",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Probability",
+    "topic": "Discrete Random Variables",
+    "subtopic": [
+        "Probability Distributions",
+        "Independent Observations"
+    ],
+    "img": false,
+    "question": "The probability distribution of a discrete random variable $X$ is given in the table below:<table style='width:100%; max-width:260px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr><td style='border:1px solid #999; padding:5px;'>$x$</td><td style='border:1px solid #999; padding:5px;'>$0$</td><td style='border:1px solid #999; padding:5px;'>$1$</td><td style='border:1px solid #999; padding:5px;'>$2$</td><td style='border:1px solid #999; padding:5px;'>$4$</td></tr><tr><td style='border:1px solid #999; padding:5px;'>$\\text{P}(X = x)$</td><td style='border:1px solid #999; padding:5px;'>$\\dfrac{1}{4}$</td><td style='border:1px solid #999; padding:5px;'>$\\dfrac{3}{8}$</td><td style='border:1px solid #999; padding:5px;'>$3p$</td><td style='border:1px solid #999; padding:5px;'>$p$</td></tr></table><strong>(a)</strong> Find the value of the constant $p$.<br><br><strong>(b)</strong> Two independent observations of $X$ are taken at random. Find the probability that the product of these two values is $0$.",
+    "steps": [
+        "<strong>(a) Finding the Value of $p$:</strong><br><br>The sum of all probabilities in a discrete probability distribution must equal $1$:\\begin{aligned} &\\sum \\text{P}(X = x) = 1 \\cr &\\dfrac{1}{4} + \\dfrac{3}{8} + 3p + p = 1 \\cr &\\dfrac{5}{8} + 4p = 1 \\cr &4p = \\dfrac{3}{8} \\cr &p = \\dfrac{3}{32} \\end{aligned}",
+        "<strong>(b) Finding the Probability that the Product is $0$:</strong><br><br>The product of two values is $0$ if at least one observation is $0$:\\begin{aligned} \\text{P}(X = 0) &= \\dfrac{1}{4} \\cr \\text{P}(X \\neq 0) &= \\dfrac{3}{4} \\end{aligned}Using the complement rule:\\begin{aligned} &\\text{P}(\\text{Product } = 0) \\cr &\\quad = 1 - \\text{P}(\\text{neither is } 0) \\cr &\\quad = 1 - \\left(\\dfrac{3}{4}\\right)^2 \\cr &\\quad = 1 - \\dfrac{9}{16} \\cr &\\quad = \\dfrac{7}{16} \\end{aligned}",
+        "Final Answer: (a) $p = \\dfrac{3}{32}$, (b) $\\dfrac{7}{16}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $p = \\dfrac{3}{32}$, (b) $\\dfrac{1}{16}$",
+            "feedback": "This only considers the single outcome $(0,0)$. The product is also $0$ if one observation is $0$ and the other is non-zero, giving $\\frac{1}{16} + \\frac{6}{16} = \\frac{7}{16}$."
+        },
+        {
+            "ans": "(a) $p = \\dfrac{1}{8}$, (b) $\\dfrac{7}{16}$",
+            "feedback": "In part (a), the probabilities sum to $1$. Having $\\frac{5}{8} + 4p = 1$ leads to $4p = \\frac{3}{8}$, so $p = \\frac{3}{32}$, not $\\frac{3}{8} \\div 3 = \\frac{1}{8}$."
+        },
+        {
+            "ans": "(a) $p = \\dfrac{3}{32}$, (b) $\\dfrac{9}{16}$",
+            "feedback": "$\\frac{9}{16}$ is the probability that neither observation is $0$ (i.e. the product is non-zero). Subtract this from $1$ to find the probability that the product is $0$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Product Equals Zero Shortcut",
+        "content": "For questions asking for the probability that a product is $0$, working directly requires adding three mutually exclusive cases: $(0,0)$, $(0, \\text{non-zero})$, and $(\\text{non-zero}, 0)$. It is almost always quicker to use the complement: $1 - \\text{P}(\\text{neither is } 0) = 1 - (\\frac{3}{4})^2 = \\frac{7}{16}$."
+    }
+},
+{
+    "id": "050072",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Probability",
+    "topic": "Discrete Random Variables",
+    "subtopic": [
+        "Sum of Variables",
+        "Sample Space Combinations"
+    ],
+    "img": false,
+    "question": "The discrete random variable $Y$ has the probability distribution shown in the table below:<table style='width:100%; max-width:260px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr><td style='border:1px solid #999; padding:5px;'>$y$</td><td style='border:1px solid #999; padding:5px;'>$-2$</td><td style='border:1px solid #999; padding:5px;'>$0$</td><td style='border:1px solid #999; padding:5px;'>$1$</td><td style='border:1px solid #999; padding:5px;'>$3$</td></tr><tr><td style='border:1px solid #999; padding:5px;'>$\\text{P}(Y = y)$</td><td style='border:1px solid #999; padding:5px;'>$0.15$</td><td style='border:1px solid #999; padding:5px;'>$0.25$</td><td style='border:1px solid #999; padding:5px;'>$2k$</td><td style='border:1px solid #999; padding:5px;'>$3k$</td></tr></table><strong>(a)</strong> Find the value of the constant $k$.<br><br><strong>(b)</strong> Two independent observations of $Y$, denoted by $Y_1$ and $Y_2$, are taken. Find the probability that the sum $Y_1 + Y_2 > 0$.",
+    "steps": [
+        "<strong>(a) Finding the Value of $k$:</strong><br><br>Total probability must equal $1$:\\begin{aligned} &\\sum \\text{P}(Y = y) = 1 \\cr &0.15 + 0.25 + 2k + 3k = 1 \\cr &0.40 + 5k = 1 \\cr &5k = 0.60 \\cr &k = 0.12 \\end{aligned}This gives $\\text{P}(Y = 1) = 0.24$ and $\\text{P}(Y = 3) = 0.36$.",
+        "<strong>(b) Finding $\\text{P}(Y_1 + Y_2 > 0)$:</strong><br><br>The complement is the event $Y_1 + Y_2 \\le 0$. The pairs yielding a sum $\\le 0$ are:\\begin{aligned} &(-2, -2) \\implies -4 \\cr &(-2, 0), (0, -2) \\implies -2 \\cr &(-2, 1), (1, -2) \\implies -1 \\cr &(0, 0) \\implies 0 \\end{aligned}Summing these probabilities vertically:\\begin{aligned} &\\text{P}(Y_1 + Y_2 \\le 0) \\cr &\\quad = 0.15^2 \\cr &\\quad\\quad + 2(0.15)(0.25) \\cr &\\quad\\quad + 2(0.15)(0.24) \\cr &\\quad\\quad + 0.25^2 \\cr &\\quad = 0.0225 + 0.0750 \\cr &\\quad\\quad + 0.0720 + 0.0625 \\cr &\\quad = 0.232 \\end{aligned}Therefore:\\begin{aligned} &\\text{P}(Y_1 + Y_2 > 0) \\cr &\\quad = 1 - 0.232 \\cr &\\quad = 0.768 \\end{aligned}",
+        "Final Answer: (a) $k = 0.12$, (b) $0.768$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $k = 0.12$, (b) $0.660$",
+            "feedback": "This common error misses the pairs $(3, -2)$ and $(-2, 3)$, which sum to $1 > 0$, omitting $2(0.36 \\times 0.15) = 0.108$ from the probability."
+        },
+        {
+            "ans": "(a) $k = 0.20$, (b) $0.768$",
+            "feedback": "In part (a), $0.15 + 0.25 = 0.40$, leaving $0.60$ for $5k$. Dividing $0.60$ by $5$ gives $k = 0.12$, not $0.20$."
+        },
+        {
+            "ans": "(a) $k = 0.12$, (b) $0.232$",
+            "feedback": "$0.232$ is the probability that $Y_1 + Y_2 \\le 0$. You must subtract this from $1$ to find $\\text{P}(Y_1 + Y_2 > 0)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Complement Grid Strategy",
+        "content": "When finding probabilities of sums exceeding a threshold, counting the complement $\\text{P}(Y_1 + Y_2 \\le 0)$ involves only $6$ outcome cells instead of $10$. Watch out especially for negative pairings like $(3, -2)$: since $3 + (-2) = 1 > 0$, this pair must be included in the $>0$ total."
+    }
+},
+{
+    "id": "050073",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Probability",
+    "topic": "Discrete Random Variables",
+    "subtopic": [
+        "Piecewise Probability Functions",
+        "Compound Events"
+    ],
+    "img": false,
+    "question": "A discrete random variable $X$ has the probability distribution defined by:<br><br>$$\\text{P}(X = x) = \\begin{cases} c(4 - x) & x \\in \\{1, 2, 3\\} \\cr c & x = 4 \\cr 0 & \\text{otherwise} \\end{cases}$$<br><br>where $c$ is a positive constant.<br><br><strong>(a)</strong> Show that $c = \\dfrac{1}{7}$.<br><br><strong>(b)</strong> Two independent observations of $X$, denoted by $X_1$ and $X_2$, are made. Find the probability that:<br><strong>(i)</strong> $X_1 = X_2$<br><strong>(ii)</strong> $X_1 + X_2 = 5$",
+    "steps": [
+        "<strong>(a) Showing that $c = \\dfrac{1}{7}$:</strong><br><br>Evaluate the probability for each outcome:\\begin{aligned} &x = 1: \\quad c(4 - 1) = 3c \\cr &x = 2: \\quad c(4 - 2) = 2c \\cr &x = 3: \\quad c(4 - 3) = c \\cr &x = 4: \\quad c \\end{aligned}Since the total probability must equal $1$:\\begin{aligned} 3c + 2c + c + c &= 1 \\cr 7c &= 1 \\cr c &= \\dfrac{1}{7} \\end{aligned}",
+        "<strong>(b)(i) Probability that $X_1 = X_2$:</strong><br><br>Sum the squared probabilities for identical pairs:\\begin{aligned} &\\text{P}(X_1 = X_2) \\cr &\\quad = \\left(\\dfrac{3}{7}\\right)^2 + \\left(\\dfrac{2}{7}\\right)^2 \\cr &\\quad\\quad + \\left(\\dfrac{1}{7}\\right)^2 + \\left(\\dfrac{1}{7}\\right)^2 \\cr &\\quad = \\dfrac{9 + 4 + 1 + 1}{49} \\cr &\\quad = \\dfrac{15}{49} \\end{aligned}",
+        "<strong>(b)(ii) Probability that $X_1 + X_2 = 5$:</strong><br><br>The pairs $(X_1, X_2)$ that sum to $5$ are $(1,4), (4,1), (2,3), (3,2)$:\\begin{aligned} &\\text{P}(X_1 + X_2 = 5) \\cr &\\quad = 2\\,\\text{P}(1,4) + 2\\,\\text{P}(2,3) \\cr &\\quad = 2\\left(\\dfrac{3}{7} \\times \\dfrac{1}{7}\\right) \\cr &\\quad\\quad + 2\\left(\\dfrac{2}{7} \\times \\dfrac{1}{7}\\right) \\cr &\\quad = \\dfrac{6}{49} + \\dfrac{4}{49} \\cr &\\quad = \\dfrac{10}{49} \\end{aligned}",
+        "Final Answer: (a) $c = \\dfrac{1}{7}$, (b)(i) $\\dfrac{15}{49}$, (ii) $\\dfrac{10}{49}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $c = \\dfrac{1}{7}$, (b)(i) $\\dfrac{14}{49}$, (ii) $\\dfrac{10}{49}$",
+            "feedback": "In (b)(i), remember that $X=4$ has probability $c = \\frac{1}{7}$, so the pair $(4,4)$ contributes $(\\frac{1}{7})^2 = \\frac{1}{49}$. Omitting $(4,4)$ gives $\\frac{14}{49}$ instead of $\\frac{15}{49}$."
+        },
+        {
+            "ans": "(a) $c = \\dfrac{1}{7}$, (b)(i) $\\dfrac{15}{49}$, (ii) $\\dfrac{5}{49}$",
+            "feedback": "In (b)(ii), pairs must be counted in both orders: $(1,4)$ and $(4,1)$, as well as $(2,3)$ and $(3,2)$. Forgetting the reversed order halves the result to $\\frac{5}{49}$."
+        },
+        {
+            "ans": "(a) $c = \\dfrac{1}{6}$, (b)(i) $\\dfrac{15}{49}$, (ii) $\\dfrac{10}{49}$",
+            "feedback": "In part (a), students often forget the separate line for $x=4$, calculating $3c + 2c + c = 6c = 1$. The sum includes all 4 outcomes, so $7c = 1$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Piecewise Conditions",
+        "content": "Read piecewise probability definitions with extreme care. Here $c(4 - x)$ only applies to $x = 1, 2, 3$. If you apply that formula to $x = 4$, you would get $c(4 - 4) = 0$, completely ignoring the actual definition $\\text{P}(X = 4) = c$."
+    }
+},
+{
+    "id": "050074",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Probability",
+    "topic": "Discrete Random Variables",
+    "subtopic": [
+        "Simultaneous Equations",
+        "Independent Trials"
+    ],
+    "img": false,
+    "question": "A discrete random variable $S$ represents the score obtained when a biased four-sided spinner is spun once. The probability distribution of $S$ is shown in the table below:<table style='width:100%; max-width:260px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr><td style='border:1px solid #999; padding:5px;'>$s$</td><td style='border:1px solid #999; padding:5px;'>$1$</td><td style='border:1px solid #999; padding:5px;'>$2$</td><td style='border:1px solid #999; padding:5px;'>$3$</td><td style='border:1px solid #999; padding:5px;'>$4$</td></tr><tr><td style='border:1px solid #999; padding:5px;'>$\\text{P}(S = s)$</td><td style='border:1px solid #999; padding:5px;'>$0.40$</td><td style='border:1px solid #999; padding:5px;'>$a$</td><td style='border:1px solid #999; padding:5px;'>$b$</td><td style='border:1px solid #999; padding:5px;'>$0.15$</td></tr></table>It is given that $\\text{P}(S \\ge 3) = 3 \\times \\text{P}(S = 2)$.<br><br><strong>(a)</strong> By forming a pair of simultaneous equations, find the values of the constants $a$ and $b$.<br><br><strong>(b)</strong> The spinner is spun twice independently. Find the probability that the score on the second spin is strictly greater than the score on the first spin.",
+    "steps": [
+        "<strong>(a) Simultaneous Equations for $a$ and $b$:</strong><br><br>Total probability equals $1$:\\begin{aligned} &0.40 + a + b + 0.15 = 1 \\cr &a + b = 0.45 \\quad \\text{--- (1)} \\end{aligned}Using $\\text{P}(S \\ge 3) = 3 \\times \\text{P}(S = 2)$:\\begin{aligned} &b + 0.15 = 3a \\cr &3a - b = 0.15 \\quad \\text{--- (2)} \\end{aligned}Adding (1) and (2):\\begin{aligned} 4a &= 0.60 \\cr a &= 0.15 \\end{aligned}Substituting into (1):\\begin{aligned} 0.15 + b &= 0.45 \\cr b &= 0.30 \\end{aligned}",
+        "<strong>(b) Probability that $S_2 > S_1$:</strong><br><br>Calculate the probability for each outcome of the first spin:\\begin{aligned} &\\text{P}(s_1 = 1, s_2 > 1) \\cr &\\quad = 0.40(0.15 + 0.30 + 0.15) \\cr &\\quad = 0.40(0.60) \\cr &\\quad = 0.24 \\cr &\\text{P}(s_1 = 2, s_2 > 2) \\cr &\\quad = 0.15(0.30 + 0.15) \\cr &\\quad = 0.15(0.45) \\cr &\\quad = 0.0675 \\cr &\\text{P}(s_1 = 3, s_2 > 3) \\cr &\\quad = 0.30(0.15) \\cr &\\quad = 0.045 \\end{aligned}Summing these values vertically:\\begin{aligned} &\\text{P}(S_2 > S_1) \\cr &\\quad = 0.24 + 0.0675 + 0.045 \\cr &\\quad = 0.3525 \\end{aligned}",
+        "Final Answer: (a) $a = 0.15$, $b = 0.30$, (b) $0.3525$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $a = 0.15$, $b = 0.30$, (b) $0.4675$",
+            "feedback": "This distractor mistakenly includes the cases where the two spins are equal ($S_2 = S_1$). For 'strictly greater than', equal scores must be excluded."
+        },
+        {
+            "ans": "(a) $a = 0.10$, $b = 0.35$, (b) $0.3525$",
+            "feedback": "In part (a), the equation is $3a - b = 0.15$ and $a + b = 0.45$. Adding them gives $4a = 0.60$, so $a = 0.15$ (not $0.10$) and $b = 0.30$."
+        },
+        {
+            "ans": "(a) $a = 0.15$, $b = 0.30$, (b) $0.2925$",
+            "feedback": "This omits the pair $(3,4)$, forgetting that a first spin of $3$ can still be followed by a second spin of $4$ with probability $0.30 \\times 0.15 = 0.045$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Strictly Greater Than",
+        "content": "When a question specifies 'strictly greater than' ($S_2 > S_1$), never include diagonal pairs where both outcomes are identical ($S_1 = S_2$). Notice how factoring the second spin probabilities $\\text{P}(s_1 = 1)(0.60)$ makes calculations much faster than computing six separate terms individually."
+    }
+},
+{
+    "id": "050075",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "AS",
+    "major_area": "Probability",
+    "topic": "Discrete Random Variables",
+    "subtopic": [
+        "Quadratic Probability Equations",
+        "Independent Observations"
+    ],
+    "img": false,
+    "question": "The discrete random variable $T$ has the probability distribution shown in the table below:<table style='width:100%; max-width:260px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr><td style='border:1px solid #999; padding:5px;'>$t$</td><td style='border:1px solid #999; padding:5px;'>$-1$</td><td style='border:1px solid #999; padding:5px;'>$0$</td><td style='border:1px solid #999; padding:5px;'>$1$</td><td style='border:1px solid #999; padding:5px;'>$2$</td></tr><tr><td style='border:1px solid #999; padding:5px;'>$\\text{P}(T = t)$</td><td style='border:1px solid #999; padding:5px;'>$6k^2$</td><td style='border:1px solid #999; padding:5px;'>$\\dfrac{1}{4}$</td><td style='border:1px solid #999; padding:5px;'>$k$</td><td style='border:1px solid #999; padding:5px;'>$\\dfrac{5}{12}$</td></tr></table>where $k$ is a constant.<br><br><strong>(a)</strong> Show that $18k^2 + 3k - 1 = 0$, and hence determine the valid value of $k$, fully justifying why the other root must be rejected.<br><br><strong>(b)</strong> Three independent observations of $T$, denoted by $T_1, T_2,$ and $T_3$, are recorded. Find the probability that the product $T_1 T_2 T_3$ is negative.",
+    "steps": [
+        "<strong>(a) Quadratic Equation for $k$:</strong><br><br>The probabilities must sum to $1$:\\begin{aligned} &6k^2 + \\dfrac{1}{4} + k + \\dfrac{5}{12} = 1 \\cr &6k^2 + k + \\dfrac{8}{12} = 1 \\cr &6k^2 + k - \\dfrac{1}{3} = 0 \\end{aligned}Multiplying through by $3$:\\begin{aligned} &18k^2 + 3k - 1 = 0 \\cr &(6k - 1)(3k + 1) = 0 \\cr &k = \\dfrac{1}{6} \\quad \\text{or} \\quad k = -\\dfrac{1}{3} \\end{aligned}Since $\\text{P}(T = 1) = k$, we must have $k \\ge 0$. Reject $k = -\\dfrac{1}{3}$, leaving $k = \\dfrac{1}{6}$.",
+        "<strong>(b) Finding the Probability that $T_1 T_2 T_3 < 0$:</strong><br><br>With $k = \\dfrac{1}{6}$, the probabilities are:\\begin{aligned} \\text{P}(T = -1) &= \\dfrac{1}{6} \\cr \\text{P}(T = 0) &= \\dfrac{1}{4} \\cr \\text{P}(T > 0) &= \\dfrac{1}{6} + \\dfrac{5}{12} \\cr &= \\dfrac{7}{12} \\end{aligned}Any factor of $0$ gives a product of $0$. A negative product requires either one negative and two positive observations, or three negative observations.<br><br><strong>Case 1: One negative and two positives</strong>\\begin{aligned} &3 \\times \\text{P}(-1) \\times [\\text{P}(T > 0)]^2 \\cr &\\quad = 3 \\times \\dfrac{1}{6} \\times \\left(\\dfrac{7}{12}\\right)^2 \\cr &\\quad = \\dfrac{1}{2} \\times \\dfrac{49}{144} \\cr &\\quad = \\dfrac{49}{288} \\end{aligned}<strong>Case 2: Three negatives</strong>\\begin{aligned} \\left(\\dfrac{1}{6}\\right)^3 &= \\dfrac{1}{216} \\end{aligned}Summing both cases vertically:\\begin{aligned} &\\text{P}(\\text{Product } < 0) \\cr &\\quad = \\dfrac{49}{288} + \\dfrac{1}{216} \\cr &\\quad = \\dfrac{147}{864} + \\dfrac{4}{864} \\cr &\\quad = \\dfrac{151}{864} \\end{aligned}",
+        "Final Answer: (a) $k = \\dfrac{1}{6}$; reject $k = -\\dfrac{1}{3}$ since probabilities must be non-negative, (b) $\\dfrac{151}{864}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $k = \\dfrac{1}{6}$; reject $k = -\\dfrac{1}{3}$ since probabilities must be non-negative, (b) $\\dfrac{49}{288}$",
+            "feedback": "$\\frac{49}{288}$ only accounts for Case 1 (one negative and two positives). You must also add the possibility that all three observations are negative: $(-1)^3 = -1$, adding $\\frac{1}{216}$ to give $\\frac{151}{864}$."
+        },
+        {
+            "ans": "(a) $k = -\\dfrac{1}{3}$; valid because $(-1/3)^2 > 0$, (b) $\\dfrac{151}{864}$",
+            "feedback": "While $6k^2$ would be positive for $k = -1/3$, $\\text{P}(T = 1) = k$, which would make that probability negative ($-1/3$). A probability can never be negative, so this root must be rejected."
+        },
+        {
+            "ans": "(a) $k = \\dfrac{1}{6}$; reject $k = -\\dfrac{1}{3}$ since probabilities must be non-negative, (b) $\\dfrac{53}{864}$",
+            "feedback": "This error forgets the factor of 3 for the different arrangements of one negative and two positive values (e.g. $(-,+,+), (+,-,+), (+,+,-)$), computing $\\frac{49}{864} + \\frac{4}{864} = \\frac{53}{864}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Product of Three Signs",
+        "content": "When determining the sign of a product of three independent observations, first eliminate zero: any factor of $0$ gives a product of $0$, which is neither positive nor negative. Then remember that a negative product requires an odd number of negative factors: either exactly one negative (with two positives, in $3$ orders) or three negatives (in $1$ order)."
     }
 }
 ];
