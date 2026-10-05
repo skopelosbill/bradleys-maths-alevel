@@ -398,5 +398,207 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Leverage Points and the See-Saw Effect",
         "content": "Think of a regression line as a see-saw balanced at the centroid $(\\bar{x}, \\bar{y})$. An outlier with high $x$ but low $y$ pushes down on the far right end of the plank. This flattens the gradient (making it less positive) and forces the opposite left end (the $y$-intercept) to tilt upwards!"
     }
+},
+{
+    "id": "050111",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Discrete Random Variables",
+    "subtopic": [
+        "Recurrence Relations",
+        "Compound Sums"
+    ],
+    "img": false,
+    "question": "The discrete random variable $X$ takes values $1, 2, 3, 4,$ and $5$, and its probability distribution is defined by:\\begin{aligned} &\\text{P}(X = x) = \\cr &\\quad a \\qquad\\qquad\\qquad \\text{for } x = 1 \\cr &\\quad \\dfrac{1}{3}\\text{P}(X = x - 1) \\quad \\text{for } x = 2, 3, 4, 5 \\cr &\\quad 0 \\qquad\\qquad\\qquad \\text{otherwise} \\end{aligned}where $a$ is a constant.<br><br><strong>(a)</strong> Show that $a = \\dfrac{81}{121}$.<br><br>The probability distribution for $X$ is given in the table below:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr><td style='border:1px solid #999; padding:4px;'>$x$</td><td style='border:1px solid #999; padding:4px;'>$1$</td><td style='border:1px solid #999; padding:4px;'>$2$</td><td style='border:1px solid #999; padding:4px;'>$3$</td><td style='border:1px solid #999; padding:4px;'>$4$</td><td style='border:1px solid #999; padding:4px;'>$5$</td></tr><tr><td style='border:1px solid #999; padding:4px;'>$\\text{P}(X = x)$</td><td style='border:1px solid #999; padding:4px;'>$\\dfrac{81}{121}$</td><td style='border:1px solid #999; padding:4px;'>$\\dfrac{27}{121}$</td><td style='border:1px solid #999; padding:4px;'>$\\dfrac{9}{121}$</td><td style='border:1px solid #999; padding:4px;'>$\\dfrac{3}{121}$</td><td style='border:1px solid #999; padding:4px;'>$\\dfrac{1}{121}$</td></tr></table><strong>(b)</strong> Find the probability that $X$ is even.<br><br>Two independent values of $X$, denoted by $X_1$ and $X_2$, are chosen and their sum $S = X_1 + X_2$ is found.<br><br><strong>(c)</strong> Find the probability that $S$ is even.<br><br><strong>(d)</strong> Find the probability that $S \\le 3$, given that $S$ is even.<br><br>A basketball player models the number of attempts, $Y$, needed to score her first three-pointer as follows:\\begin{aligned} \\text{P}(Y = y + 1) = \\dfrac{1}{3}\\text{P}(Y = y) \\quad \\text{for all } y \\ge 1 \\end{aligned}<strong>(e)</strong> Find $\\text{P}(Y = 1)$.<br><br><strong>(f)</strong> Give one reason why $Y$ might be more realistic than $X$ as a model for the number of attempts, and one reason why $X$ might be preferred.",
+    "steps": [
+        "<strong>(a) Showing $a = \\dfrac{81}{121}$:</strong><br><br>Express each probability in terms of $a$:\\begin{aligned} &\\text{P}(X = 1) = a \\cr &\\text{P}(X = 2) = \\dfrac{a}{3} \\cr &\\text{P}(X = 3) = \\dfrac{a}{9} \\cr &\\text{P}(X = 4) = \\dfrac{a}{27} \\cr &\\text{P}(X = 5) = \\dfrac{a}{81} \\end{aligned}The sum of all probabilities is $1$:\\begin{aligned} &a\\left(1 + \\dfrac{1}{3} + \\dfrac{1}{9} + \\dfrac{1}{27} + \\dfrac{1}{81}\\right) = 1 \\cr &a\\left(\\dfrac{81 + 27 + 9 + 3 + 1}{81}\\right) = 1 \\cr &a\\left(\\dfrac{121}{81}\\right) = 1 \\cr &a = \\dfrac{81}{121} \\end{aligned}",
+        "<strong>(b) Probability that $X$ is Even:</strong><br><br>\\begin{aligned} \\text{P}(X \\text{ is even}) &= \\text{P}(X = 2) + \\text{P}(X = 4) \\cr &= \\dfrac{27}{121} + \\dfrac{3}{121} \\cr &= \\dfrac{30}{121} \\end{aligned}",
+        "<strong>(c) Probability that the Sum $S$ is Even:</strong><br><br>The sum of two integers is even if both are even or both are odd:\\begin{aligned} \\text{P}(\\text{Odd}) &= 1 - \\dfrac{30}{121} \\cr &= \\dfrac{91}{121} \\end{aligned}Summing the two independent cases:\\begin{aligned} &\\text{P}(S \\text{ is even}) \\cr &\\quad = [\\text{P}(\\text{Even})]^2 + [\\text{P}(\\text{Odd})]^2 \\cr &\\quad = \\left(\\dfrac{30}{121}\\right)^2 + \\left(\\dfrac{91}{121}\\right)^2 \\cr &\\quad = \\dfrac{900 + 8281}{14641} \\cr &\\quad = \\dfrac{9181}{14641} \\end{aligned}",
+        "<strong>(d) Conditional Probability $\\text{P}(S \\le 3 \\mid S \\text{ is even})$:</strong><br><br>Because $X_1, X_2 \\in \\{1, 2, 3, 4, 5\\}$, the minimum possible sum is $1 + 1 = 2$.<br><br>The only even sum satisfying $S \\le 3$ is $S = 2$, which requires $(X_1 = 1, X_2 = 1)$:\\begin{aligned} \\text{P}(S = 2) &= \\left(\\dfrac{81}{121}\\right)^2 \\cr &= \\dfrac{6561}{14641} \\end{aligned}Using the conditional probability formula:\\begin{aligned} &\\text{P}(S \\le 3 \\mid S \\text{ is even}) \\cr &\\quad = \\dfrac{\\text{P}(S = 2)}{\\text{P}(S \\text{ is even})} \\cr &\\quad = \\dfrac{6561 / 14641}{9181 / 14641} \\cr &\\quad = \\dfrac{6561}{9181} \\cr &\\quad \\approx 0.715\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(e) Finding $\\text{P}(Y = 1)$:</strong><br><br>For all positive integers $y$, let $p = \\text{P}(Y = 1)$. The probabilities form an infinite geometric series with common ratio $r = \\frac{1}{3}$:\\begin{aligned} &\\sum_{y=1}^\\infty \\text{P}(Y = y) = 1 \\cr &p\\left(1 + \\dfrac{1}{3} + \\dfrac{1}{9} + \\dots\\right) = 1 \\cr &\\dfrac{p}{1 - 1/3} = 1 \\cr &\\dfrac{3p}{2} = 1 \\cr &p = \\dfrac{2}{3} \\end{aligned}",
+        "<strong>(f) Comparison of Models $X$ and $Y$:</strong><br><br>1. <strong>Why $Y$ is more realistic:</strong> In reality, there is no physical upper limit of $5$ attempts; a player could take $6$ or more shots before scoring.<br><br>2. <strong>Why $X$ might be preferred:</strong> In a structured practice drill, a coach might impose a strict limit of $5$ attempts, or the player may quit after $5$ misses due to fatigue.",
+        "Final Answer: (a) Show that completed, (b) 30/121, (c) 9181/14641, (d) 6561/9181, (e) 2/3, (f) Y allows unlimited attempts; X allows for a drill cutoff or fatigue"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Show that completed, (b) 30/121, (c) 5460/14641, (d) 6561/9181, (e) 2/3, (f) Y allows unlimited attempts; X allows for a drill cutoff or fatigue",
+            "feedback": "In part (c), $5460 / 14641 = 2(30/121)(91/121)$ is the probability that $S$ is *odd* (one even and one odd). For an even sum, both must be even or both must be odd: $(30^2 + 91^2)/121^2 = 9181/14641$."
+        },
+        {
+            "ans": "(a) Show that completed, (b) 30/121, (c) 9181/14641, (d) 6561/14641, (e) 1/3, (f) Y allows unlimited attempts; X allows for a drill cutoff or fatigue",
+            "feedback": "In part (d), $6561 / 14641$ is the unconditional probability $\\text{P}(S = 2)$. You must divide by the conditioning probability $\\text{P}(S \\text{ is even}) = 9181 / 14641$. In (e), the sum of the geometric series gives $p / (2/3) = 1 \\implies p = 2/3$, not $1/3$."
+        },
+        {
+            "ans": "(a) Show that completed, (b) 91/121, (c) 9181/14641, (d) 6561/9181, (e) 2/3, (f) Y assumes success is impossible; X assumes success is guaranteed",
+            "feedback": "In part (b), $91 / 121$ is the probability that $X$ is *odd*. Even outcomes are $x \\in \\{2, 4\\}$, giving $(27 + 3) / 121 = 30 / 121$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Parity Rules in Sums",
+        "content": "Remember the basic arithmetic parity rules when finding the distribution of sums: $\\text{Even} + \\text{Even} = \\text{Even}$ and $\\text{Odd} + \\text{Odd} = \\text{Even}$, while $\\text{Even} + \\text{Odd} = \\text{Odd}$. For conditional probability with discrete sums like $\\text{P}(S \\le 3 \\mid S \\text{ is even})$, always list the allowed sample space: since the minimum sum of two positive integers is $1 + 1 = 2$, the only even sum $\\le 3$ is $S = 2$."
+    }
+},
+{
+    "id": "050112",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Discrete Random Variables",
+    "subtopic": [
+        "Exponential Weighting",
+        "Conditional Independence"
+    ],
+    "img": false,
+    "question": "The discrete random variable $T$ takes values $0, 1, 2, 3,$ and $4$ with probability distribution given by:$$\\text{P}(T = t) = k \\times 2^t \\quad \\text{for } t = 0, 1, 2, 3, 4$$where $k$ is a constant.<br><br><strong>(a)</strong> Show that $k = \\dfrac{1}{31}$.<br><br><strong>(b)</strong> Find $\\text{P}(T \\ge 2)$.<br><br>Two independent observations of $T$, denoted by $T_1$ and $T_2$, are recorded.<br><br><strong>(c)</strong> Find the probability that the product $T_1 T_2 = 0$.<br><br><strong>(d)</strong> Find the probability that $T_1 + T_2 = 4$, given that the product $T_1 T_2 > 0$.",
+    "steps": [
+        "<strong>(a) Showing $k = \\dfrac{1}{31}$:</strong><br><br>The probabilities must sum to $1$:\\begin{aligned} &\\sum_{t=0}^4 \\text{P}(T = t) = 1 \\cr &k(2^0 + 2^1 + 2^2 + 2^3 + 2^4) = 1 \\cr &k(1 + 2 + 4 + 8 + 16) = 1 \\cr &31k = 1 \\cr &k = \\dfrac{1}{31} \\end{aligned}",
+        "<strong>(b) Finding $\\text{P}(T \\ge 2)$:</strong><br><br>Using the complement rule:\\begin{aligned} \\text{P}(T \\ge 2) &= 1 - [\\text{P}(T = 0) + \\text{P}(T = 1)] \\cr &= 1 - \\left(\\dfrac{1}{31} + \\dfrac{2}{31}\\right) \\cr &= 1 - \\dfrac{3}{31} \\cr &= \\dfrac{28}{31} \\end{aligned}",
+        "<strong>(c) Finding $\\text{P}(T_1 T_2 = 0)$:</strong><br><br>The product is $0$ if at least one of the two observations is $0$:\\begin{aligned} \\text{P}(T = 0) &= \\dfrac{1}{31} \\cr \\text{P}(T > 0) &= \\dfrac{30}{31} \\end{aligned}Using the complement rule:\\begin{aligned} \\text{P}(T_1 T_2 = 0) &= 1 - \\text{P}(\\text{neither is } 0) \\cr &= 1 - [\\text{P}(T > 0)]^2 \\cr &= 1 - \\left(\\dfrac{30}{31}\\right)^2 \\cr &= 1 - \\dfrac{900}{961} \\cr &= \\dfrac{61}{961} \\end{aligned}",
+        "<strong>(d) Conditional Probability $\\text{P}(T_1 + T_2 = 4 \\mid T_1 T_2 > 0)$:</strong><br><br>The condition $T_1 T_2 > 0$ restricts both observations to non-zero values $\\{1, 2, 3, 4\\}$:\\begin{aligned} \\text{P}(T_1 T_2 > 0) &= \\left(\\dfrac{30}{31}\\right)^2 \\cr &= \\dfrac{900}{961} \\end{aligned}The non-zero pairs $(T_1, T_2)$ summing to $4$ are $(1, 3), (2, 2), (3, 1)$:\\begin{aligned} &\\text{P}(1, 3) = \\dfrac{2}{31} \\times \\dfrac{8}{31} = \\dfrac{16}{961} \\cr &\\text{P}(2, 2) = \\left(\\dfrac{4}{31}\\right)^2 = \\dfrac{16}{961} \\cr &\\text{P}(3, 1) = \\dfrac{8}{31} \\times \\dfrac{2}{31} = \\dfrac{16}{961} \\cr &\\text{Numerator} = \\dfrac{16 + 16 + 16}{961} = \\dfrac{48}{961} \\end{aligned}Compute the conditional quotient:\\begin{aligned} &\\text{P}(T_1 + T_2 = 4 \\mid T_1 T_2 > 0) \\cr &\\quad = \\dfrac{48 / 961}{900 / 961} \\cr &\\quad = \\dfrac{48}{900} \\cr &\\quad = \\dfrac{4}{75} \\cr &\\quad \\approx 0.0533\\text{ (3 s.f.)} \\end{aligned}",
+        "Final Answer: (a) Show that completed, (b) 28/31, (c) 61/961, (d) 4/75"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Show that completed, (b) 28/31, (c) 1/961, (d) 4/75",
+            "feedback": "In part (c), $1/961 = (1/31)^2$ only considers the single outcome $(0, 0)$. The product is also zero when one observation is 0 and the other is non-zero, giving $1 - (30/31)^2 = 61/961$."
+        },
+        {
+            "ans": "(a) Show that completed, (b) 28/31, (c) 61/961, (d) 48/961",
+            "feedback": "In part (d), $48/961$ is the unconditional probability $\\text{P}(T_1 + T_2 = 4 \\cap T_1 T_2 > 0)$. You must divide by the conditioning probability $\\text{P}(T_1 T_2 > 0) = 900/961$, simplifying to $48/900 = 4/75$."
+        },
+        {
+            "ans": "(a) Show that completed, (b) 3/31, (c) 61/961, (d) 32/900",
+            "feedback": "In part (b), $3/31$ is $\\text{P}(T \\le 1)$. For $\\text{P}(T \\ge 2)$, subtract this from 1 to obtain $28/31$. In (d), forgetting the pair $(2, 2)$ omits $16/961$ from the numerator."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Product Greater Than Zero as a Condition",
+        "content": "When given that $T_1 T_2 > 0$, notice how this immediately simplifies the problem: it simply means that zero is excluded from both observations! The conditioning denominator is $[\\text{P}(T > 0)]^2 = (30/31)^2$. When finding pairs that sum to $4$, you only need to check combinations of $\\{1, 2, 3, 4\\}$, which prevents you from accidentally including $(0, 4)$ or $(4, 0)$."
+    }
+},
+{
+    "id": "050113",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Discrete Random Variables",
+    "subtopic": [
+        "Geometric Distribution",
+        "Memoryless Property"
+    ],
+    "img": false,
+    "question": "A software testing team models the number of test cycles, $N$, until a critical software bug is triggered as a geometric distribution with probability mass function:$$\\text{P}(N = n) = (0.85)^{n-1}(0.15) \\quad \\text{for } n = 1, 2, 3, \\dots$$<strong>(a)</strong> By considering an infinite geometric series, show that $\\sum_{n=1}^\\infty \\text{P}(N = n) = 1$.<br><br><strong>(b)</strong> Find the probability that the bug is triggered within the first $4$ test cycles ($\text{P}(N \\le 4)$).<br><br><strong>(c)</strong> Show that for any positive integers $k$ and $m$:$$\\text{P}(N > k + m \\mid N > k) = \\text{P}(N > m)$$and evaluate this probability when $k = 5$ and $m = 3$.<br><br><strong>(d)</strong> State the name of this probability property, and explain why this model may be inappropriate for physical machinery subject to mechanical wear and tear.",
+    "steps": [
+        "<strong>(a) Showing the Probabilities Sum to 1:</strong><br><br>The probabilities form an infinite geometric series with first term $a = 0.15$ and common ratio $r = 0.85$:\\begin{aligned} \\sum_{n=1}^\\infty \\text{P}(N = n) &= \\sum_{n=1}^\\infty 0.15(0.85)^{n-1} \\cr &= \\dfrac{a}{1 - r} \\cr &= \\dfrac{0.15}{1 - 0.85} \\cr &= \\dfrac{0.15}{0.15} \\cr &= 1 \\end{aligned}",
+        "<strong>(b) Finding $\\text{P}(N \\le 4)$:</strong><br><br>The bug occurs on or before cycle $4$ if the first $4$ cycles are not all bug-free:\\begin{aligned} \\text{P}(N \\le 4) &= 1 - \\text{P}(N > 4) \\cr &= 1 - (0.85)^4 \\cr &= 1 - 0.522006 \\cr &= 0.47799 \\cr &\\approx 0.478\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(c) Deriving the Memoryless Property:</strong><br><br>For any positive integer $t$, $\\text{P}(N > t) = (0.85)^t$.<br><br>Using the definition of conditional probability:\\begin{aligned} &\\text{P}(N > k + m \\mid N > k) \\cr &\\quad = \\dfrac{\\text{P}(N > k + m)}{\\text{P}(N > k)} \\cr &\\quad = \\dfrac{(0.85)^{k+m}}{(0.85)^k} \\cr &\\quad = (0.85)^m \\cr &\\quad = \\text{P}(N > m) \\end{aligned}Evaluating for $k = 5$ and $m = 3$:\\begin{aligned} \\text{P}(N > 8 \\mid N > 5) &= (0.85)^3 \\cr &= 0.614125 \\cr &\\approx 0.614\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(d) Name of Property and Physical Limitation:</strong><br><br>This is the <strong>memoryless property</strong>.<br><br>It is inappropriate for physical machinery because physical components suffer from mechanical wear, friction, and thermal fatigue over time.<br><br>In reality, the probability of failure increases as a component ages, rather than remaining constant independently of its past operating history.",
+        "Final Answer: (a) Show that completed, (b) 0.478, (c) 0.614, (d) Memoryless property; machinery wears out so failure probability increases with age"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Show that completed, (b) 0.522, (c) 0.614, (d) Memoryless property; machinery wears out so failure probability increases with age",
+            "feedback": "In part (b), $0.522$ is $\\text{P}(N > 4) = 0.85^4$, the probability that the bug is *not* triggered in the first 4 cycles. For $\\text{P}(N \\le 4)$, subtract this from 1 to obtain $0.478$."
+        },
+        {
+            "ans": "(a) Show that completed, (b) 0.478, (c) 0.272, (d) Central Limit Theorem; sample size is too small",
+            "feedback": "In part (c), evaluating $(0.85)^8 = 0.272$ calculates the unconditional probability $\\text{P}(N > 8)$. The conditional probability simplifies by index laws to $(0.85)^3 = 0.614$."
+        },
+        {
+            "ans": "(a) Show that completed, (b) 0.478, (c) 0.614, (d) Law of large numbers; software code does not degrade over time",
+            "feedback": "The mathematical property shown in part (c) is the memoryless property of the geometric distribution, not the law of large numbers."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: The Memoryless Property",
+        "content": "The geometric distribution is the ONLY discrete distribution that possesses the memoryless property: $\\text{P}(N > k + m \\mid N > k) = \\text{P}(N > m)$. This means the system 'forgets' that it has already survived $k$ steps. It is a fantastic model for random electronic glitches or coin tosses, but highly unrealistic for mechanical engines, car batteries, or light bulbs that experience physical wear and tear."
+    }
+},
+{
+    "id": "050114",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Discrete Random Variables",
+    "subtopic": [
+        "Bivariate Dice Game",
+        "Score Differences"
+    ],
+    "img": false,
+    "question": "Two players, Alice and Bob, each roll an independent four-sided die with faces numbered $1, 2, 3,$ and $4$.<br><br>Bob's die is fair, so each score has a probability of $0.25$.<br>Alice's die is biased such that the probability of scoring $a$ is proportional to $a$, giving:$$\\text{P}(A = 1) = 0.1 \\qquad \\text{P}(A = 2) = 0.2 \\qquad \\text{P}(A = 3) = 0.3 \\qquad \\text{P}(A = 4) = 0.4$$Let $A$ be Alice's score and $B$ be Bob's score.<br><br><strong>(a)</strong> Find the probability that Alice and Bob roll the same score ($\\text{P}(A = B)$).<br><br><strong>(b)</strong> Find the probability that Alice's score is strictly greater than Bob's score ($\\text{P}(A > B)$).<br><br><strong>(c)</strong> Given that Alice's score is strictly greater than Bob's score, find the probability that the difference between their scores is at least $2$ ($\\text{P}(A - B \\ge 2 \\mid A > B)$).",
+    "steps": [
+        "<strong>(a) Probability of Equal Scores $\\text{P}(A = B)$:</strong><br><br>Since the dice are independent and each Bob outcome has probability $0.25$:\\begin{aligned} \\text{P}(A = B) &= \\sum_{k=1}^4 \\text{P}(A = k) \\times \\text{P}(B = k) \\cr &= 0.25[\\text{P}(A = 1) + \\text{P}(A = 2) \\cr &\\qquad + \\text{P}(A = 3) + \\text{P}(A = 4)] \\cr &= 0.25(0.1 + 0.2 + 0.3 + 0.4) \\cr &= 0.25(1.0) \\cr &= 0.25 \\end{aligned}",
+        "<strong>(b) Probability that $A > B$:</strong><br><br>Sum the probabilities for each outcome of Alice's die where $B < A$:\\begin{aligned} &A = 2, B = 1: \\cr &\\quad 0.2 \\times 0.25 = 0.05 \\cr &A = 3, B \\in \\{1, 2\\}: \\cr &\\quad 0.3 \\times 0.50 = 0.15 \\cr &A = 4, B \\in \\{1, 2, 3\\}: \\cr &\\quad 0.4 \\times 0.75 = 0.30 \\end{aligned}Summing the probabilities:\\begin{aligned} \\text{P}(A > B) &= 0.05 + 0.15 + 0.30 \\cr &= 0.50 \\end{aligned}",
+        "<strong>(c) Conditional Probability $\\text{P}(A - B \\ge 2 \\mid A > B)$:</strong><br><br>The pairs where $A - B \\ge 2$ and $A > B$ are $(3, 1), (4, 1), (4, 2)$:\\begin{aligned} &\\text{P}(A = 3, B = 1): \\cr &\\quad 0.3 \\times 0.25 = 0.075 \\cr &\\text{P}(A = 4, B = 1): \\cr &\\quad 0.4 \\times 0.25 = 0.100 \\cr &\\text{P}(A = 4, B = 2): \\cr &\\quad 0.4 \\times 0.25 = 0.100 \\cr &\\text{Numerator} = 0.075 + 0.100 + 0.100 \\cr &\\quad = 0.275 \\end{aligned}Using the condition $\\text{P}(A > B) = 0.50$ from part (b):\\begin{aligned} \\text{P}(A - B \\ge 2 \\mid A > B) &= \\dfrac{0.275}{0.50} \\cr &= 0.55 \\end{aligned}",
+        "Final Answer: (a) 0.25, (b) 0.50, (c) 0.55"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) 0.25, (b) 0.50, (c) 0.275",
+            "feedback": "In part (c), $0.275$ is the unconditional probability $\\text{P}(A - B \\ge 2)$. You must divide by the conditioning probability $\\text{P}(A > B) = 0.50$, yielding $0.275 / 0.50 = 0.55$."
+        },
+        {
+            "ans": "(a) 0.25, (b) 0.375, (c) 0.55",
+            "feedback": "In part (b), $0.375$ would be the result if both dice were fair ($6/16$). Because Alice's die is biased towards higher numbers ($3$ and $4$), her probability of beating Bob is $0.50$."
+        },
+        {
+            "ans": "(a) 0.10, (b) 0.50, (c) 0.35",
+            "feedback": "In part (a), factoring out $0.25$ reveals that $\\text{P}(A = B) = 0.25 \\sum \\text{P}(A = k) = 0.25(1) = 0.25$, not $0.10$. In (c), forgetting the pair $(3, 1)$ underestimates the conditional probability."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Factoring Uniform Variables",
+        "content": "When one random variable is discrete uniform (like Bob's fair die with $\\text{P}(B = b) = 0.25$), notice the elegant algebraic trick in part (a): $\\sum \\text{P}(A = k)\\text{P}(B = k) = 0.25 \\sum \\text{P}(A = k) = 0.25(1) = 0.25$. No matter how wildly Alice's die is biased, the probability of rolling the same score against a fair $4$-sided die is ALWAYS $\\frac{1}{4}$!"
+    }
+},
+{
+    "id": "050115",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Discrete Random Variables",
+    "subtopic": [
+        "Expectation and Variance",
+        "Fair Game"
+    ],
+    "img": false,
+    "question": "A fairground attraction features a prize wheel that awards a prize multiplier $M \\in \\{1, 2, 4, 8\\}$ with probabilities defined by the recurrence relation:$$\\text{P}(M = 2m) = \\dfrac{1}{2}\\text{P}(M = m) \\quad \\text{for } m \\in \\{1, 2, 4\\}$$Let $\\text{P}(M = 1) = k$.<br><br><strong>(a)</strong> Show that $k = \\dfrac{8}{15}$, and write down the complete probability distribution of $M$.<br><br><strong>(b)</strong> Calculate the expected value, $\\text{E}(M)$.<br><br><strong>(c)</strong> Calculate the variance, $\\text{Var}(M)$.<br><br><strong>(d)</strong> It costs $£2.50$ to play the game once, and the prize awarded is $£1.00 \\times M$.<br><strong>(i)</strong> Determine the expected financial loss per game for a player.<br><strong>(ii)</strong> State the stake price that the fairground operator should charge to make the game mathematically fair.",
+    "steps": [
+        "<strong>(a) Showing $k = \\dfrac{8}{15}$ and Distribution:</strong><br><br>Express each probability in terms of $k$:\\begin{aligned} &\\text{P}(M = 1) = k \\cr &\\text{P}(M = 2) = \\dfrac{k}{2} \\cr &\\text{P}(M = 4) = \\dfrac{k}{4} \\cr &\\text{P}(M = 8) = \\dfrac{k}{8} \\end{aligned}The sum of all probabilities is $1$:\\begin{aligned} &k\\left(1 + \\dfrac{1}{2} + \\dfrac{1}{4} + \\dfrac{1}{8}\\right) = 1 \\cr &k\\left(\\dfrac{8 + 4 + 2 + 1}{8}\\right) = 1 \\cr &\\dfrac{15k}{8} = 1 \\cr &k = \\dfrac{8}{15} \\end{aligned}The complete probability distribution is:$$\\text{P}(M = 1) = \\dfrac{8}{15}, \\quad \\text{P}(M = 2) = \\dfrac{4}{15}, \\quad \\text{P}(M = 4) = \\dfrac{2}{15}, \\quad \\text{P}(M = 8) = \\dfrac{1}{15}$$",
+        "<strong>(b) Expected Value $\\text{E}(M)$:</strong><br><br>\\begin{aligned} \\text{E}(M) &= \\sum m\\,\\text{P}(M = m) \\cr &= 1\\left(\\dfrac{8}{15}\\right) + 2\\left(\\dfrac{4}{15}\\right) \\cr &\\quad + 4\\left(\\dfrac{2}{15}\\right) + 8\\left(\\dfrac{1}{15}\\right) \\cr &= \\dfrac{8 + 8 + 8 + 8}{15} \\cr &= \\dfrac{32}{15} \\cr &\\approx 2.133 \\end{aligned}",
+        "<strong>(c) Variance $\\text{Var}(M)$:</strong><br><br>First calculate $\\text{E}(M^2)$:\\begin{aligned} \\text{E}(M^2) &= \\sum m^2\\,\\text{P}(M = m) \\cr &= 1^2\\left(\\dfrac{8}{15}\\right) + 2^2\\left(\\dfrac{4}{15}\\right) \\cr &\\quad + 4^2\\left(\\dfrac{2}{15}\\right) + 8^2\\left(\\dfrac{1}{15}\\right) \\cr &= \\dfrac{8 + 16 + 32 + 64}{15} \\cr &= \\dfrac{120}{15} \\cr &= 8 \\end{aligned}Now compute $\\text{Var}(M) = \\text{E}(M^2) - [\\text{E}(M)]^2$:\\begin{aligned} \\text{Var}(M) &= 8 - \\left(\\dfrac{32}{15}\\right)^2 \\cr &= 8 - \\dfrac{1024}{225} \\cr &= \\dfrac{1800 - 1024}{225} \\cr &= \\dfrac{776}{225} \\cr &\\approx 3.449\\text{ (or } 3.45\\text{)} \\end{aligned}",
+        "<strong>(d)(i) Expected Financial Loss:</strong><br><br>The expected payout is $£1.00 \\times \\text{E}(M) = £1.00 \\times \\frac{32}{15} \\approx £2.1333$ (or $£2.13$).\\begin{aligned} \\text{Expected Loss} &= £2.50 - £2.1333 \\cr &= £0.3667 \\cr &\\approx £0.37 \\end{aligned}",
+        "<strong>(d)(ii) Stake for a Mathematically Fair Game:</strong><br><br>A game is mathematically fair when the expected profit is zero, meaning the stake equals the expected payout:\\begin{aligned} \\text{Fair Stake} &= £\\dfrac{32}{15} \\cr &\\approx £2.13 \\end{aligned}",
+        "Final Answer: (a) k = 8/15; distribution is 8/15, 4/15, 2/15, 1/15, (b) 32/15, (c) 776/225, (d)(i) £0.37, (ii) £2.13"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) k = 8/15; distribution is 8/15, 4/15, 2/15, 1/15, (b) 32/15, (c) 8, (d)(i) £0.37, (ii) £2.13",
+            "feedback": "In part (c), $8$ is $\\text{E}(M^2)$. You must subtract $[\\text{E}(M)]^2 = (32/15)^2 = 1024/225$ to obtain $\\text{Var}(M) = 776/225 \\approx 3.45$."
+        },
+        {
+            "ans": "(a) k = 8/15; distribution is 8/15, 4/15, 2/15, 1/15, (b) 32/15, (c) 776/225, (d)(i) £0.50, (ii) £2.00",
+            "feedback": "In part (d), rounding the expected payout down to £2.00 is incorrect. The expected payout is $£32/15 \\approx £2.133$, leaving an expected loss of $£2.50 - £2.133 = £0.37$ and a fair stake of $£2.13$."
+        },
+        {
+            "ans": "(a) k = 1/15; distribution is 1/15, 2/15, 4/15, 8/15, (b) 49/15, (c) 776/225, (d)(i) £0.37, (ii) £2.13",
+            "feedback": "In part (a), the recurrence relation states that $\\text{P}(M = 2m) = \\frac{1}{2}\\text{P}(M = m)$, meaning probabilities *halve* as the multiplier doubles. Setting $\\text{P}(M = 1) = 1/15$ reverses the powers."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: What 'Fair Game' Actually Means",
+        "content": "In probability and financial mathematics, a 'fair game' does NOT mean equal probability of winning and losing. It means that the expected financial return is zero: $\\text{E}(\\text{Profit}) = 0$, which requires that $\\text{Stake} = \\text{Expected Payout}$. If a game pays out an expected $£2.13$, charging a stake of $£2.13$ makes it mathematically fair."
+    }
 }
 ];
