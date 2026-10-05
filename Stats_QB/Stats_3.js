@@ -197,5 +197,206 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Why the CLT is So Powerful",
         "content": "Exam questions frequently ask: 'Was it necessary to assume the population was normally distributed?' If $n \\ge 30$, the answer is always NO, because the Central Limit Theorem ensures the sample mean $\\bar{X}$ is approximately normal regardless of the population distribution. If $n < 30$, the answer would be YES."
     }
+},
+{
+    "id": "050106",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Bivariate Data",
+    "topic": "Correlation and Regression",
+    "subtopic": [
+        "PMCC Interpretation",
+        "Large Data Set Context"
+    ],
+    "img": "images/Statistics_pngs/050106.png",
+    "question": "A researcher uses Pearson's product-moment correlation coefficient, $r$, to investigate the travel-to-work patterns of employees across the UK.<br><br>Using census data for all $348$ UK Local Authorities, she considers the following four variables:<br>$x$: Number of employees using public transport<br>$y$: Number of employees driving a private vehicle<br>$a$: Proportion of employees using public transport<br>$b$: Proportion of employees driving a private vehicle<br><br><strong>(a)(i)</strong> Explain, in context, why you would expect a strong positive correlation between $x$ and $y$ across all UK Local Authorities.<br><br><strong>(a)(ii)</strong> Explain, in context, what type of correlation you would expect between the proportions $a$ and $b$.<br><br><strong>(b)</strong> The researcher examines the data for the $33$ London Boroughs alone and plots the scatter diagram shown, plotting the proportion driving against the proportion using public transport.<br><br>One London Borough is represented by a distinct outlier located near the bottom left at $(0.29, 0.025)$.<br><br><strong>(b)(i)</strong> Suggest what effect removing this outlier is likely to have on the value of $r$ for the remaining $32$ London Boroughs.<br><br><strong>(b)(ii)</strong> What does the position of this outlier suggest about the typical mode of travel to work used by residents in this specific borough?<br><br><strong>(b)(iii)</strong> Deduce, giving a geographical reason, which London Borough is represented by this outlier.",
+    "steps": [
+        "<strong>(a)(i) Reason for Positive Correlation Between Raw Counts:</strong><br><br>Both $x$ and $y$ are raw headcounts driven primarily by the total population size of the Local Authority.<br><br>Heavily populated authorities (e.g. large cities) have high numbers of both public transport users and car drivers, whereas sparsely populated rural districts have low numbers of both, creating a strong positive correlation.",
+        "<strong>(a)(ii) Expected Correlation Between Proportions $a$ and $b$:</strong><br><br>You would expect a <strong>negative correlation</strong>.<br><br>Proportions remove the effect of population size. Because commuters generally choose one primary mode of travel to work, a higher proportion choosing public transport leaves a smaller remaining proportion driving private vehicles.",
+        "<strong>(b)(i) Effect of Removing the Outlier:</strong><br><br>Removing the outlier will make $r$ <strong>more negative</strong> (i.e. strengthen the negative correlation, decreasing its numerical value further from $0$ towards $-1$), because the outlier $(0.29, 0.025)$ lies well below the general downward linear trend.",
+        "<strong>(b)(ii) Travel Mode Inferred from Outlier:</strong><br><br>The outlier exhibits a low proportion using public transport ($0.29$) and an extremely low proportion driving ($0.025$).<br><br>This indicates that the vast majority of residents use active travel methods (walking or cycling) to commute to work.",
+        "<strong>(b)(iii) Identity of the Outlier Borough:</strong><br><br><strong>The City of London</strong> (the 'Square Mile').<br><br>It is a tiny, extraordinarily dense commercial district where almost all resident workers live within short walking distance of their workplace, meaning very few drive or need public transport for their daily commute.",
+        "Final Answer: (a)(i) Driven by total population size, (ii) Negative correlation, (b)(i) Makes r more negative (strengthens negative correlation), (ii) Most residents walk or cycle, (iii) City of London (very small, dense; residents walk to work)"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) Driven by total population size, (ii) Negative correlation, (b)(i) Makes r positive, (ii) Most residents walk or cycle, (iii) City of London (very small, dense; residents walk to work)",
+            "feedback": "Removing a single outlier that lies below a negative trend cannot flip the correlation from negative to positive; it simply makes the existing negative trend cleaner and stronger (more negative)."
+        },
+        {
+            "ans": "(a)(i) Better public transport encourages more driving, (ii) Positive correlation, (b)(i) Makes r more negative (strengthens negative correlation), (ii) Most residents work from home, (iii) Westminster",
+            "feedback": "In (a)(i), the positive correlation is caused by population size, not public transport encouraging driving. In (a)(ii), proportions must trade off against one another, creating negative correlation."
+        },
+        {
+            "ans": "(a)(i) Driven by total population size, (ii) Negative correlation, (b)(i) Has no effect on r, (ii) Most residents drive electric cars, (iii) Croydon",
+            "feedback": "In (b)(i), Pearson's $r$ is sensitive to outliers; removing a point that sits far away from the line always changes $r$. In (b)(iii), the unique outlier in London census data is always the City of London."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Counts vs Proportions in the LDS",
+        "content": "This is a classic Large Data Set insight: raw counts ($x$ and $y$) almost always show strong positive correlation simply because bigger cities have more of everything. Converting counts to proportions ($a$ and $b$) removes the confounding variable of population size and reveals the true competing relationship (negative correlation)."
+    }
+},
+{
+    "id": "050107",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Bivariate Data",
+    "topic": "Correlation and Regression",
+    "subtopic": [
+        "PMCC Calculation",
+        "Correlation Hypothesis Test"
+    ],
+    "img": "images/Statistics_pngs/050107.png",
+    "question": "An automotive engineer investigates the relationship between engine capacity, $x\\text{ litres}$, and tailpipe carbon dioxide emissions, $y\\text{ g/km}$, for new passenger vehicles.<br><br>The scatter diagram shows the data for a sample of $21$ vehicles, including a fitted linear regression line for standard internal combustion engine (ICE) vehicles and a distinct outlier, labelled Vehicle P, at $(3.5, 88)$.<br><br><strong>(a)</strong> For the $20$ standard vehicles (excluding Vehicle P), summary statistics are given below:$$n = 20$$$$\\sum x = 44.0$$$$\\sum y = 3280$$$$S_{xx} = 17.6$$$$S_{yy} = 45800$$$$S_{xy} = 880$$<strong>(a)(i)</strong> Calculate the value of Pearson's product-moment correlation coefficient, $r$, for the $20$ standard vehicles.<br><br><strong>(a)(ii)</strong> Test, at the $1\\%$ significance level, whether there is evidence of positive linear correlation between engine capacity and $\\text{CO}_2$ emissions for standard vehicles. State your hypotheses and conclusion clearly.<br><br><strong>(b)(i)</strong> State the effect on the value of $r$ if Vehicle P is included in the calculation.<br><br><strong>(b)(ii)</strong> Suggest a plausible technological reason why Vehicle P exhibits such low $\\text{CO}_2$ emissions despite having a large $3.5\\text{-litre}$ engine.",
+    "steps": [
+        "<strong>(a)(i) Calculating the PMCC $r$:</strong><br><br>Using the summary statistics for the $20$ standard vehicles:\\begin{aligned} r &= \\dfrac{S_{xy}}{\\sqrt{S_{xx} S_{yy}}} \\cr &= \\dfrac{880}{\\sqrt{17.6 \\times 45800}} \\cr &= \\dfrac{880}{\\sqrt{806080}} \\cr &= \\dfrac{880}{897.8196} \\cr &= 0.98015 \\cr &\\approx 0.980\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(a)(ii) Hypothesis Test for Positive Correlation:</strong><br><br>State the hypotheses for the population correlation coefficient $\\rho$:\\begin{aligned} &H_0: \\rho = 0 \\cr &H_1: \\rho > 0 \\end{aligned}Sample size $n = 20$, one-tailed test at the $1\\%$ significance level.<br><br>The critical value from tables for $n = 20$ at the $1\\%$ level is $0.5155$.<br><br>Since $r = 0.980 > 0.5155$, the result is significant at the $1\\%$ level.<br><br>Reject $H_0$. There is significant evidence at the $1\\%$ level of a positive linear correlation between engine capacity and $\\text{CO}_2$ emissions for standard vehicles.",
+        "<strong>(b)(i) Effect of Vehicle P on $r$:</strong><br><br>Vehicle P has a high engine capacity ($x = 3.5$) but very low emissions ($y = 88$), lying far below the positive trend line.<br><br>Including Vehicle P will <strong>decrease the value of $r$</strong> (weakening the positive linear correlation).",
+        "<strong>(b)(ii) Technological Reason:</strong><br><br>Vehicle P is a <strong>plug-in hybrid (PHEV)</strong> or hybrid electric vehicle.<br><br>The vehicle combines a large displacement combustion engine with a high-capacity electric battery and motor, allowing electric-only propulsion that dramatically lowers test-cycle tailpipe $\\text{CO}_2$ emissions.",
+        "Final Answer: (a)(i) 0.980, (ii) Reject $H_0$ ($0.980 > 0.5155$); significant evidence of positive correlation, (b)(i) Decreases the value of r, (ii) Plug-in hybrid technology / electric motor assistance"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) 0.980, (ii) Reject $H_0$ ($0.980 > 0.5155$); significant evidence of positive correlation, (b)(i) Increases the value of r, (ii) Plug-in hybrid technology / electric motor assistance",
+            "feedback": "In (b)(i), Vehicle P lies far away from the positive regression line. An outlier that contradicts the upward trend always weakens the relationship and decreases $r$."
+        },
+        {
+            "ans": "(a)(i) 0.00109, (ii) Do not reject $H_0$ ($0.00109 < 0.5155$); insufficient evidence of positive correlation, (b)(i) Decreases the value of r, (ii) Plug-in hybrid technology / electric motor assistance",
+            "feedback": "In (a)(i), forgetting the square root over the denominator gives $880 / (17.6 \\times 45800) = 0.00109$. The denominator must be $\\sqrt{S_{xx} S_{yy}}$."
+        },
+        {
+            "ans": "(a)(i) 0.980, (ii) Do not reject $H_0$ ($0.980 < 0.990$); insufficient evidence of positive correlation, (b)(i) Decreases the value of r, (ii) Smaller catalytic converter fitted",
+            "feedback": "In (a)(ii), $0.990$ is not the critical value. For $n = 20$ at the $1\\%$ one-tailed level, the critical value from the formula booklet is $0.5155$. Since $0.980 > 0.5155$, $H_0$ is rejected."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Denominator Square Root Trap",
+        "content": "When computing $r = \\frac{S_{xy}}{\\sqrt{S_{xx} S_{yy}}}$, students frequently forget to take the square root of the denominator product, obtaining an absurdly tiny value like $0.001$. Always check that your calculated $r$ is dimensionless and lies within $[-1, 1]$."
+    }
+},
+{
+    "id": "050108",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Bivariate Data",
+    "topic": "Correlation and Regression",
+    "subtopic": [
+        "Non-Linear Correlation",
+        "PMCC Limitations"
+    ],
+    "img": "images/Statistics_pngs/050108.png",
+    "question": "An energy analyst studies the relationship between daily mean ambient temperature, $x\\text{ }^\\circ\\text{C}$, and daily electricity demand, $y\\text{ GWh}$, in a region over a $20$-day period.<br><br>The scatter diagram shows the recorded data points.<br><br>A junior analyst calculates Pearson's product-moment correlation coefficient for the $20$ observations and finds $r = -0.04$. The junior analyst states:<br><em>'Because $r$ is close to $0$, there is no relationship between temperature and electricity demand.'</em><br><br><strong>(a)</strong> Explain why the junior analyst's conclusion is misleading, stating clearly what a value of $r \\approx 0$ indicates.<br><br><strong>(b)</strong> Referring to the shape of the data in the scatter diagram, give real-world reasons why electricity demand is high at both low temperatures ($0^\\circ\\text{C}$–$5^\\circ\\text{C}$) and high temperatures ($25^\\circ\\text{C}$–$30^\\circ\\text{C}$), but reaches a minimum around $15^\\circ\\text{C}$–$18^\\circ\\text{C}$.<br><br><strong>(c)</strong> Suggest a non-linear mathematical model that would be more appropriate than a linear model for describing the relationship between $y$ and $x$.",
+    "steps": [
+        "<strong>(a) Critique of the Junior Analyst's Conclusion:</strong><br><br>The conclusion is misleading because Pearson's $r$ measures only the strength and direction of a <strong>linear</strong> relationship.<br><br>A value of $r \\approx 0$ indicates only that there is no linear association. It does not imply that there is no relationship: here, the data shows an extremely strong, clear non-linear (U-shaped) relationship.",
+        "<strong>(b) Real-World Explanation of the U-Shape:</strong><br><br>1. <strong>Low temperatures ($0^\\circ\\text{C}$–$5^\\circ\\text{C}$):</strong> Electricity demand is high because households and commercial buildings require substantial electric heating and lighting.<br><br>2. <strong>High temperatures ($25^\\circ\\text{C}$–$30^\\circ\\text{C}$):</strong> Demand rises sharply again due to the widespread use of air conditioning, fans, and refrigeration units.<br><br>3. <strong>Moderate temperatures ($15^\\circ\\text{C}$–$18^\\circ\\text{C}$):</strong> The climate is comfortable, so neither heating nor air conditioning is heavily used, resulting in minimum baseline electricity consumption.",
+        "<strong>(c) Appropriate Non-Linear Model:</strong><br><br>A <strong>quadratic model</strong> of the form:\\begin{aligned} y &= ax^2 + bx + c \\quad (a > 0) \\end{aligned}A parabola with a positive coefficient of $x^2$ accurately captures the U-shaped curve with a minimum turning point near $16^\\circ\\text{C}$–$17^\\circ\\text{C}$.",
+        "Final Answer: (a) r measures only linear relationship; strong non-linear relationship exists, (b) High heating demand in cold weather, high air conditioning demand in hot weather, (c) Quadratic model: $y = ax^2 + bx + c$ with $a > 0$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) r measures only linear relationship; strong non-linear relationship exists, (b) High heating demand in cold weather, high air conditioning demand in hot weather, (c) Exponential model: $y = ae^{bx}$",
+            "feedback": "An exponential model ($ae^{bx}$) is monotonic (strictly increasing or strictly decreasing) and cannot model a U-shaped turning point. A quadratic model ($ax^2 + bx + c$) is required."
+        },
+        {
+            "ans": "(a) The calculation of r was mathematically incorrect; r should be 1, (b) High heating demand in cold weather, high air conditioning demand in hot weather, (c) Quadratic model: $y = ax^2 + bx + c$ with $a > 0$",
+            "feedback": "The calculation of $r \\approx 0$ is mathematically correct because the downward slope on the left cancels with the upward slope on the right. The error is interpreting $r \\approx 0$ as 'no relationship'."
+        },
+        {
+            "ans": "(a) r measures only linear relationship; strong non-linear relationship exists, (b) Electricity production costs rise with temperature, (c) Inverse model: $y = a/x$",
+            "feedback": "In (b), demand is driven by consumer consumption (heating and air conditioning), not production costs. In (c), an inverse model ($y = a/x$) does not produce a U-shape."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: PMCC Measures Straightness Only",
+        "content": "Never write '$r = 0$ means no relationship'. Always write '$r = 0$ means no LINEAR relationship'. A dataset can follow a perfect parabola $y = x^2$ symmetric about zero, and its PMCC will be exactly $0$. Always inspect the scatter diagram before computing or interpreting $r$."
+    }
+},
+{
+    "id": "050109",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Bivariate Data",
+    "topic": "Correlation and Regression",
+    "subtopic": [
+        "Residual Plots",
+        "Coefficient of Determination"
+    ],
+    "img": "images/Statistics_pngs/050109.png",
+    "question": "A linear regression model of the form $y = a + bx$ is fitted to a bivariate dataset of $20$ paired observations $(x_i, y_i)$.<br><br>The scatter diagram shows the residual plot, where the residuals $e_i = y_i - \\hat{y}_i$ are plotted against the fitted values $\\hat{y}_i$.<br><br><strong>(a)</strong> Define what is meant by a <em>residual</em> in the context of linear regression.<br><br><strong>(b)</strong> State two features of the residual plot that confirm that a linear model is appropriate for this data.<br><br><strong>(c)</strong> The sum of the squares of the residuals is $\\sum e_i^2 = 84.5$, and the total sum of squares of $y$ is $S_{yy} = 560.0$.<br><strong>(i)</strong> Calculate the coefficient of determination, $r^2$.<br><strong>(ii)</strong> Given that the gradient of the regression line is positive ($b > 0$), state the value of Pearson's product-moment correlation coefficient, $r$.<br><strong>(iii)</strong> Interpret the value of $r^2$ in the context of the regression model.",
+    "steps": [
+        "<strong>(a) Definition of Residual:</strong><br><br>A residual is the vertical difference between an observed data value $y_i$ and the corresponding fitted value $\\hat{y}_i$ predicted by the regression line:\\begin{aligned} e_i &= y_i - \\hat{y}_i \\end{aligned}",
+        "<strong>(b) Features Confirming Linearity:</strong><br><br>1. <strong>Random scatter:</strong> The residuals are randomly dispersed above and below the zero line with no systematic curved or cyclic pattern.<br><br>2. <strong>Homoscedasticity (constant variance):</strong> The vertical spread of the residuals remains approximately constant across all fitted values $\\hat{y}$, with no 'fan' or 'funnel' shape.",
+        "<strong>(c)(i) Coefficient of Determination $r^2$:</strong><br><br>\\begin{aligned} r^2 &= 1 - \\dfrac{\\sum e_i^2}{S_{yy}} \\cr &= 1 - \\dfrac{84.5}{560.0} \\cr &= 1 - 0.15089 \\cr &= 0.84911 \\cr &\\approx 0.849\\text{ (or } 84.9\\%\\text{)} \\end{aligned}",
+        "<strong>(c)(ii) Value of PMCC $r$:</strong><br><br>Since the gradient $b > 0$, $r$ must be positive:\\begin{aligned} r &= +\\sqrt{0.84911} \\cr &= 0.92147 \\cr &\\approx 0.921\\text{ (3 s.f.)} \\end{aligned}",
+        "<strong>(c)(iii) Interpretation of $r^2$:</strong><br><br>$84.9\\%$ of the total variation in the dependent variable $y$ can be explained by the linear relationship with $x$.",
+        "Final Answer: (a) Difference between observed and predicted value ($y_i - \\hat{y}_i$), (b) Random scatter around zero and constant variance (no curve/fan), (c)(i) 0.849, (ii) 0.921, (iii) 84.9% of variation in y is explained by linear model with x"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Difference between observed and predicted value ($y_i - \\hat{y}_i$), (b) Random scatter around zero and constant variance (no curve/fan), (c)(i) 0.151, (ii) 0.388, (iii) 84.9% of variation in y is explained by linear model with x",
+            "feedback": "In (c)(i), $84.5 / 560.0 = 0.151$ is the proportion of *unexplained* variation. The coefficient of determination is the proportion of *explained* variation: $r^2 = 1 - 0.151 = 0.849$."
+        },
+        {
+            "ans": "(a) The perpendicular distance from a point to the line, (b) All residuals are positive and close to zero, (c)(i) 0.849, (ii) 0.921, (iii) 84.9% of variation in y is explained by linear model with x",
+            "feedback": "In (a), least-squares regression minimizes *vertical* distances ($y - \\hat{y}$), not perpendicular distances. In (b), residuals must be both positive and negative, summing to zero."
+        },
+        {
+            "ans": "(a) Difference between observed and predicted value ($y_i - \\hat{y}_i$), (b) Random scatter around zero and constant variance (no curve/fan), (c)(i) 0.849, (ii) -0.921, (iii) 84.9% of data points lie exactly on the regression line",
+            "feedback": "In (c)(ii), because the gradient $b > 0$, the correlation coefficient must be positive ($+0.921$). In (c)(iii), $r^2 = 0.849$ measures explained variance, not the proportion of points lying on the line."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: What Makes a Residual Plot 'Good'",
+        "content": "A good residual plot should look completely boring: an unstructured, random horizontal band of points centered on $0$. If you see a curve, your linear model is missing a non-linear term. If you see a funnel shape widening to the right, the variance is not constant (heteroscedasticity)."
+    }
+},
+{
+    "id": "050110",
+    "branch": "Statistics",
+    "board": "OCR",
+    "level": "A",
+    "major_area": "Bivariate Data",
+    "topic": "Correlation and Regression",
+    "subtopic": [
+        "Influential Outliers",
+        "Regression Line Sensitivity"
+    ],
+    "img": "images/Statistics_pngs/050110.png",
+    "question": "A teacher investigates the relationship between weekly independent revision time, $x\\text{ hours}$, and mock examination score, $y\\%$, for a class of $20$ students.<br><br>The scatter diagram shows the cohort data and highlights an anomaly, Student A, plotted at $(32, 28)$.<br><br><strong>(a)</strong> For the $19$ students in the cohort (excluding Student A), the value of Pearson's product-moment correlation coefficient is $r = 0.942$.<br><br>Test, at the $0.5\\%$ ($0.005$) significance level, whether there is evidence of positive linear correlation between weekly revision time and mock examination score for these $19$ students.<br><br><strong>(b)(i)</strong> State the effect that including Student A will have on the calculated value of $r$.<br><br><strong>(b)(ii)</strong> State the effect that including Student A will have on the gradient and the $y$-intercept of the least-squares regression line of $y$ on $x$.<br><br><strong>(b)(iii)</strong> Suggest one plausible non-academic explanation for Student A's outlying score.",
+    "steps": [
+        "<strong>(a) Hypothesis Test for Positive Correlation:</strong><br><br>State the hypotheses for the population correlation coefficient $\\rho$:\\begin{aligned} &H_0: \\rho = 0 \\cr &H_1: \\rho > 0 \\end{aligned}Sample size $n = 19$, one-tailed test at the $0.5\\%$ ($0.005$) significance level.<br><br>The critical value from tables for $n = 19$ at $\\alpha = 0.005$ is $0.5833$.<br><br>Since $r = 0.942 > 0.5833$, the result is highly significant.<br><br>Reject $H_0$. There is overwhelming evidence at the $0.5\\%$ significance level of a positive linear correlation between revision time and mock examination score for these $19$ students.",
+        "<strong>(b)(i) Effect on $r$:</strong><br><br>Student A has an unusually high revision time ($32\\text{ hours}$) paired with an exceptionally low score ($28\\%$), lying far to the right and well below the positive trend.<br><br>Including Student A will <strong>decrease the value of $r$</strong> significantly.",
+        "<strong>(b)(ii) Effect on Regression Parameters:</strong><br><br>1. <strong>Gradient ($b$):</strong> <strong>Decreases</strong>. The extreme point at the bottom right acts as a leverage point, pulling the right side of the regression line downwards and flattening the slope.<br><br>2. <strong>$y$-Intercept ($a$):</strong> <strong>Increases</strong>. Because the line of best fit must pass through the mean point $(\\bar{x}, \\bar{y})$, flattening the gradient pivots the line upwards on the left, raising the vertical intercept.",
+        "<strong>(b)(iii) Plausible Explanation for Student A:</strong><br><br>Any sensible non-academic factor: the student may have been taken ill during the exam, arrived late, suffered severe test anxiety, misread the exam instructions/clock, or recorded unproductive 'passive' revision time (e.g. multitasking).",
+        "Final Answer: (a) Reject $H_0$ ($0.942 > 0.5833$); significant evidence of positive correlation, (b)(i) Decreases r, (ii) Gradient decreases; y-intercept increases, (iii) Illness during exam / test anxiety / misread time"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Reject $H_0$ ($0.942 > 0.5833$); significant evidence of positive correlation, (b)(i) Decreases r, (ii) Gradient increases; y-intercept decreases, (iii) Illness during exam / test anxiety / misread time",
+            "feedback": "In (b)(ii), a point with high $x$ and low $y$ pulls the right side of the line downwards, which *flattens* the slope (gradient decreases). Because the line must pass through $(\\bar{x}, \\bar{y})$, flattening the slope rotates the line to raise the $y$-intercept."
+        },
+        {
+            "ans": "(a) Do not reject $H_0$ ($0.942 < 0.950$); insufficient evidence of positive correlation, (b)(i) Increases r, (ii) Gradient decreases; y-intercept increases, (iii) Student revision was completely ineffective",
+            "feedback": "In part (a), $0.950$ is not a critical value; for $n = 19$ at the $0.5\\%$ level, the critical value is $0.5833$. Since $0.942 > 0.5833$, $H_0$ is decisively rejected."
+        },
+        {
+            "ans": "(a) Reject $H_0$ ($0.942 > 0.5833$); significant evidence of positive correlation, (b)(i) Decreases r, (ii) Both gradient and y-intercept decrease, (iii) Student cheated on the revision log",
+            "feedback": "In (b)(ii), the line of best fit always passes through the centroid $(\\bar{x}, \\bar{y})$. When a point at large $x$ pulls the line down, the line pivots about the centroid, which raises the intercept at $x = 0$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Leverage Points and the See-Saw Effect",
+        "content": "Think of a regression line as a see-saw balanced at the centroid $(\\bar{x}, \\bar{y})$. An outlier with high $x$ but low $y$ pushes down on the far right end of the plank. This flattens the gradient (making it less positive) and forces the opposite left end (the $y$-intercept) to tilt upwards!"
+    }
 }
 ];
