@@ -1,6 +1,7 @@
 window.ALEVEL_QUESTIONS = [
 {
     "id": "050101",
+    "group_id": "050101",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -41,6 +42,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050102",
+    "group_id": "050101",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -80,6 +82,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050103",
+    "group_id": "050101",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -120,6 +123,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050104",
+    "group_id": "050101",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -159,6 +163,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050105",
+    "group_id": "050101",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -200,6 +205,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050106",
+    "group_id": "050106",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -241,6 +247,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050107",
+    "group_id": "050106",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -281,6 +288,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050108",
+    "group_id": "050106",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -320,6 +328,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050109",
+    "group_id": "050106",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -361,6 +370,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050110",
+    "group_id": "050106",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -401,6 +411,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050111",
+    "group_id": "050111",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -443,6 +454,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050112",
+    "group_id": "050111",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -483,6 +495,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050113",
+    "group_id": "050111",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -523,6 +536,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050114",
+    "group_id": "050111",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
@@ -562,6 +576,7 @@ window.ALEVEL_QUESTIONS = [
 },
 {
     "id": "050115",
+    "group_id": "050111",
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
