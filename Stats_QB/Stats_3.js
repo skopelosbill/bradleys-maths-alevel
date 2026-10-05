@@ -756,7 +756,7 @@ window.ALEVEL_QUESTIONS = [
     "Normal Interval Estimation"
   ],
   "img": false,
-  "question": "<em>In this question you must show detailed reasoning.</em><br><br>A clinical trial investigates the efficacy of a treatment for a specific condition. The probability that an administered patient experiences complete recovery without side effects is $p = 0.4$, independently of other patients.<br><br><strong>(a)</strong> In an extensive multicentre trial involving $300$ patients, the number of patients who recover completely without side effects is denoted by $Y \\sim \\text{B}(300, 0.4)$.<br><br>Using a suitable Normal approximation, calculate an estimate for the probability that between $110$ and $135$ patients (inclusive) achieve complete recovery without side effects. Give your answer to 3 significant figures.<br><br><strong>(b)</strong> For a general binomial random variable $X \\sim \\text{B}(n, p)$, where $0 < p < 1$ and $q = 1 - p$:<br>Show from the definition of the binomial probability mass function that:<br>$$\\dfrac{\\text{P}(X = r + 1)}{\\text{P}(X = r)} = \\left(\\dfrac{n - r}{r + 1}\\right)\\left(\\dfrac{p}{q}\\right)$$<br><strong>(c)</strong><br><strong>(i)</strong> Deduce that $\\text{P}(X = r + 1) > \\text{P}(X = r)$ if and only if $r < (n + 1)p - 1$.<br><br><strong>(ii)</strong> A secondary trial is conducted with $n = 74$ patients and $p = 0.4$. Use the condition in part <strong>(c)(i)</strong> to determine the most likely number(s) of complete recoveries.",
+  "question": "<em>In this question you must show detailed reasoning.</em><br><br>A clinical trial investigates the efficacy of a treatment for a specific condition. The probability that an administered patient experiences complete recovery without side effects is $p = 0.4$, independently of other patients.<br><br><strong>(a)</strong> In an extensive multicentre trial involving $300$ patients, the number of patients who recover completely without side effects is denoted by $Y \\sim \\text{B}(300, 0.4)$.<br><br>Using a suitable Normal approximation, calculate an estimate for the probability that between $110$ and $135$ patients (inclusive) achieve complete recovery without side effects. Give your answer to 3 significant figures.<br><br><strong>(b)</strong> For a general binomial random variable $X \\sim \\text{B}(n, p)$, where $0 < p < 1$ and $q = 1 - p$:<br>Show from the definition of the binomial probability mass function that:\\begin{aligned) &\\dfrac{\\text{P}(X = r + 1)}{\\text{P}(X = r)} \\cr & \\qquad \\quad = \\left(\\dfrac{n - r}{r + 1}\\right)\\left(\\dfrac{p}{q}\\right)\\end{aligned}<strong>(c)</strong><br><strong>(i)</strong> Deduce that $\\text{P}(X = r + 1) > \\text{P}(X = r)$ if and only if $r < (n + 1)p - 1$.<br><br><strong>(ii)</strong> A secondary trial is conducted with $n = 74$ patients and $p = 0.4$. Use the condition in part <strong>(c)(i)</strong> to determine the most likely number(s) of complete recoveries.",
   "steps": [
     "<strong>(a) Normal Approximation for an Interval:</strong><br><br>For $Y \\sim \\text{B}(300, 0.4)$, calculate parameters:\\begin{aligned} \\mu &= 300(0.4) \\cr &= 120 \\cr \\sigma^2 &= 120(0.6) \\cr &= 72 \\end{aligned}<br>Applying continuity corrections for $110 \\le Y \\le 135$ gives $\\text{P}(109.5 \\le Y_{\\text{norm}} \\le 135.5)$.<br><br>Standardising both endpoints:\\begin{aligned} z_1 &= \\dfrac{109.5 - 120}{\\sqrt{72}} \\cr &\\approx -1.237 \\cr z_2 &= \\dfrac{135.5 - 120}{\\sqrt{72}} \\cr &\\approx 1.827 \\end{aligned}<br>Evaluating the interval probability:\\begin{aligned} &\\text{P}(-1.237 \\le Z \\le 1.827) \\cr &\\quad = \\Phi(1.827) - \\Phi(-1.237) \\cr &\\quad = 0.9661 - 0.1080 \\cr &\\quad = 0.858 \\end{aligned}",
     "<strong>(b) General Successive Ratio Proof:</strong><br><br>Evaluate the combination ratio and probability ratio separately:\\begin{aligned} \\dfrac{\\binom{n}{r+1}}{\\binom{n}{r}} &= \\dfrac{n - r}{r + 1} \\cr \\dfrac{p^{r+1} q^{n-r-1}}{p^r q^{n-r}} &= \\dfrac{p}{q} \\end{aligned}<br>Multiplying these components directly gives:\\begin{aligned} \\dfrac{\\text{P}(X = r + 1)}{\\text{P}(X = r)} &= \\left(\\dfrac{n - r}{r + 1}\\right)\\left(\\dfrac{p}{q}\\right) \\end{aligned}",
@@ -824,6 +824,213 @@ window.ALEVEL_QUESTIONS = [
     "type": "caution",
     "title": "The Head Teacher's Eye: Discreteness in Standard Deviation Intervals",
     "content": "When asked for the probability of being within $1$ standard deviation of the mean for an approximated Binomial distribution, do not simply write down $0.683$. The random variable $Y$ is discrete. First calculate $(\\mu - \\sigma, \\mu + \\sigma) = (56.33, 71.67)$, identify the exact integer bounds $57 \\le Y \\le 71$, and only then apply continuity corrections to get $56.5$ and $71.5$."
+  }
+},
+{
+  "id": "050121",
+  "group_id": "050121",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Data Presentation & Interpretation",
+  "subtopic": [
+    "Histograms",
+    "Frequency Density",
+    "Grouped Continuous Data"
+  ],
+  "img": false,
+  "question": "A local council monitors the journey times, $t$ in minutes, of cyclists using a cycle superhighway during the morning commute. The data have been grouped, and the frequency densities have been calculated to draw a histogram. Some of the data are presented in the table below:<br><br><table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:6px; border:1px solid #ccc;'>Time, $t$ (mins)</th><th style='padding:6px; border:1px solid #ccc;'>Cyclists</th><th style='padding:6px; border:1px solid #ccc;'>FD</th></tr></thead><tbody><tr><td style='padding:6px; border:1px solid #ccc;'>$10 \\le t < 15$</td><td style='padding:6px; border:1px solid #ccc;'>$18$</td><td style='padding:6px; border:1px solid #ccc;'>$3.6$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$15 \\le t < 20$</td><td style='padding:6px; border:1px solid #ccc;'>$31$</td><td style='padding:6px; border:1px solid #ccc;'>$A$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$20 \\le t < 30$</td><td style='padding:6px; border:1px solid #ccc;'>$74$</td><td style='padding:6px; border:1px solid #ccc;'>$7.4$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$30 \\le t < 40$</td><td style='padding:6px; border:1px solid #ccc;'>$62$</td><td style='padding:6px; border:1px solid #ccc;'>$6.2$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$40 \\le t < 60$</td><td style='padding:6px; border:1px solid #ccc;'>$B$</td><td style='padding:6px; border:1px solid #ccc;'>$1.6$</td></tr></tbody></table><br><strong>(a)</strong> Calculate the missing values $A$ and $B$.<br><br><strong>(b)</strong> An analyst labels the horizontal axis of the histogram 'Journey time in minutes' and the vertical axis 'Number of minutes per cyclist'.<br><br>State which one of these axis labels is incorrect and write down a correct version.",
+  "steps": [
+    "<strong>(a) Calculating the Missing Values $A$ and $B$:</strong><br><br>Frequency density is defined as:\\begin{aligned} \\text{FD} &= \\dfrac{\\text{Frequency}}{\\text{Class width}} \\end{aligned}<br>For the class $15 \\le t < 20$:\\begin{aligned} \\text{Width} &= 20 - 15 \\cr &= 5 \\cr A &= \\dfrac{31}{5} \\cr &= 6.2 \\end{aligned}<br>For the class $40 \\le t < 60$:\\begin{aligned} \\text{Width} &= 60 - 40 \\cr &= 20 \\cr B &= 20 \\times 1.6 \\cr &= 32 \\end{aligned}",
+    "<strong>(b) Correcting the Axis Nomenclature:</strong><br><br>The vertical axis label 'Number of minutes per cyclist' is incorrect.<br><br>The vertical axis represents frequency density, which has dimensions of frequency per unit of the continuous variable.<br><br>A correct label is <strong>Frequency density</strong> (or <strong>Number of cyclists per minute</strong>).",
+    "Final Answer: (a) $A = 6.2$, $B = 32$, (b) Vertical axis: Frequency density"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $A = 1.55$, $B = 32$, (b) Vertical axis: Frequency density",
+      "feedback": "Dividing the frequency $31$ by the upper class boundary $20$ rather than the class width of $5$ gives $A = 1.55$."
+    },
+    {
+      "ans": "(a) $A = 6.2$, $B = 0.08$, (b) Vertical axis: Frequency density",
+      "feedback": "Dividing the frequency density $1.6$ by the class width of $20$ rather than multiplying gives $B = 0.08$ instead of $32$."
+    },
+    {
+      "ans": "(a) $A = 6.2$, $B = 32$, (b) Horizontal axis: Frequency",
+      "feedback": "The horizontal axis correctly represents the continuous variable (time in minutes); it is the vertical axis that was incorrectly labelled."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Units of Frequency Density",
+    "content": "Frequency density is calculated as $\\frac{\\text{Frequency}}{\\text{Class width}}$. Its units are always frequency units per continuous variable unit, such as cyclists per minute. Writing minutes per cyclist inverts the ratio, which is a common conceptual slip on exam papers."
+  }
+},
+{
+  "id": "050122",
+  "group_id": "050121",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Data Presentation & Interpretation",
+  "subtopic": [
+    "Unequal Class Widths",
+    "Frequency Density",
+    "Estimation from Grouped Data"
+  ],
+  "img": false,
+  "question": "The times taken, $t$ in minutes, for electric vehicles to recharge at a motorway service station are recorded. The grouped data and corresponding frequency densities are partially recorded in the table below:<br><br><table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:6px; border:1px solid #ccc;'>Time, $t$ (mins)</th><th style='padding:6px; border:1px solid #ccc;'>Vehicles</th><th style='padding:6px; border:1px solid #ccc;'>FD</th></tr></thead><tbody><tr><td style='padding:6px; border:1px solid #ccc;'>$0 \\le t < 20$</td><td style='padding:6px; border:1px solid #ccc;'>$28$</td><td style='padding:6px; border:1px solid #ccc;'>$1.4$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$20 \\le t < 30$</td><td style='padding:6px; border:1px solid #ccc;'>$45$</td><td style='padding:6px; border:1px solid #ccc;'>$P$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$30 \\le t < 45$</td><td style='padding:6px; border:1px solid #ccc;'>$Q$</td><td style='padding:6px; border:1px solid #ccc;'>$4.8$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$45 \\le t < 60$</td><td style='padding:6px; border:1px solid #ccc;'>$51$</td><td style='padding:6px; border:1px solid #ccc;'>$3.4$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$60 \\le t < 90$</td><td style='padding:6px; border:1px solid #ccc;'>$36$</td><td style='padding:6px; border:1px solid #ccc;'>$1.2$</td></tr></tbody></table><br><strong>(a)</strong> Calculate the values of $P$ and $Q$.<br><br><strong>(b)</strong> Use the data in the table to estimate the number of vehicles that had a charging time of at least $35$ minutes.<br><br><strong>(c)</strong> State the modelling assumption about the distribution of charging times that you made in order to calculate your estimate in part <strong>(b)</strong>.",
+  "steps": [
+    "<strong>(a) Calculating $P$ and $Q$:</strong><br><br>For the class $20 \\le t < 30$:\\begin{aligned} \\text{Width} &= 30 - 20 \\cr &= 10 \\cr P &= \\dfrac{45}{10} \\cr &= 4.5 \\end{aligned}<br>For the class $30 \\le t < 45$:\\begin{aligned} \\text{Width} &= 45 - 30 \\cr &= 15 \\cr Q &= 15 \\times 4.8 \\cr &= 72 \\end{aligned}",
+    "<strong>(b) Estimating Vehicles Charging for at Least 35 Minutes:</strong><br><br>The condition $t \\ge 35$ spans part of the interval $30 \\le t < 45$, and the entirety of the subsequent two intervals.<br><br>For the sub-interval $35 \\le t < 45$:\\begin{aligned} \\text{Sub-width} &= 45 - 35 \\cr &= 10 \\cr f_{[35, 45)} &= 10 \\times 4.8 \\cr &= 48 \\end{aligned}<br>Summing with the remaining complete classes:\\begin{aligned} \\text{Total} &= 48 + 51 + 36 \\cr &= 135 \\end{aligned}",
+    "<strong>(c) Identifying the Modelling Assumption:</strong><br><br>To calculate the proportion of vehicles in $35 \\le t < 45$, it is assumed that the charging times are distributed <strong>uniformly</strong> (evenly) across the class interval.",
+    "Final Answer: (a) $P = 4.5$, $Q = 72$, (b) $135$, (c) Uniform distribution across interval"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $P = 4.5$, $Q = 72$, (b) $111$, (c) Uniform distribution across interval",
+      "feedback": "Calculating the lower sub-interval $35 - 30 = 5$ minutes gives $5 \\times 4.8 = 24$, which incorrectly sums to $24 + 51 + 36 = 111$."
+    },
+    {
+      "ans": "(a) $P = 4.5$, $Q = 72$, (b) $135$, (c) Normal distribution across interval",
+      "feedback": "Linear interpolation within grouped continuous frequency classes assumes a uniform distribution, not a normal distribution."
+    },
+    {
+      "ans": "(a) $P = 1.5$, $Q = 72$, (b) $135$, (c) Uniform distribution across interval",
+      "feedback": "Dividing the frequency $45$ by the upper class boundary $30$ rather than the class width $10$ incorrectly yields $P = 1.5$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Sub-Interval Frequency Estimation",
+    "content": "When estimating frequency for a partial class interval like $t \\ge 35$ in $[30, 45)$, multiply the sub-interval width directly by the frequency density: $(45 - 35) \\times 4.8 = 48$. This method avoids converting back and forth through total frequencies."
+  }
+},
+{
+  "id": "050123",
+  "group_id": "050121",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Data Presentation & Interpretation",
+  "subtopic": [
+    "Histogram Scaling on Graph Paper",
+    "Area Proportional to Frequency"
+  ],
+  "img": false,
+  "question": "The masses, $m$ in grams, of a harvest of fruit are summarised in the frequency table below:<br><br><table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:6px; border:1px solid #ccc;'>Mass, $m$ (g)</th><th style='padding:6px; border:1px solid #ccc;'>Freq</th><th style='padding:6px; border:1px solid #ccc;'>FD</th></tr></thead><tbody><tr><td style='padding:6px; border:1px solid #ccc;'>$80 \\le m < 100$</td><td style='padding:6px; border:1px solid #ccc;'>$30$</td><td style='padding:6px; border:1px solid #ccc;'>$1.5$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$100 \\le m < 110$</td><td style='padding:6px; border:1px solid #ccc;'>$42$</td><td style='padding:6px; border:1px solid #ccc;'>$4.2$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$110 \\le m < 125$</td><td style='padding:6px; border:1px solid #ccc;'>$63$</td><td style='padding:6px; border:1px solid #ccc;'>$4.2$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$125 \\le m < 150$</td><td style='padding:6px; border:1px solid #ccc;'>$55$</td><td style='padding:6px; border:1px solid #ccc;'>$2.2$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$150 \\le m < 200$</td><td style='padding:6px; border:1px solid #ccc;'>$40$</td><td style='padding:6px; border:1px solid #ccc;'>$0.8$</td></tr></tbody></table><br>A histogram is drawn on graph paper to represent these data. In this histogram, the bar representing the class $80 \\le m < 100$ has a width of $4\\text{ cm}$ and a height of $3\\text{ cm}$.<br><br><strong>(a)</strong> Find the width and the height, in cm, of the bar representing the class $110 \\le m < 125$.<br><br><strong>(b)</strong> Determine the number of pieces of fruit represented by an area of $1\\text{ cm}^2$ on this histogram.<br><br><strong>(c)</strong> On the same histogram, an additional class of fruit is drawn. The bar has a width of $5\\text{ cm}$ and an area of $16\\text{ cm}^2$. Determine the frequency of this class.",
+  "steps": [
+    "<strong>(a) Calculating Dimensions of the Bar:</strong><br><br>For the reference class $80 \\le m < 100$:\\begin{aligned} \\text{Class width} &= 100 - 80 \\cr &= 20\\text{ g} \\end{aligned}<br>A class width of $20\\text{ g}$ corresponds to $4\\text{ cm}$:\\begin{aligned} \\text{Width scale} &= \\dfrac{4\\text{ cm}}{20\\text{ g}} \\cr &= 0.2\\text{ cm per g} \\end{aligned}<br>For $110 \\le m < 125$, the class width is $15\\text{ g}$:\\begin{aligned} \\text{Bar width} &= 15 \\times 0.2 \\cr &= 3\\text{ cm} \\end{aligned}<br>The frequency density of $1.5$ corresponds to $3\\text{ cm}$:\\begin{aligned} \\text{Height scale} &= \\dfrac{3\\text{ cm}}{1.5} \\cr &= 2\\text{ cm per unit} \\end{aligned}<br>For $110 \\le m < 125$, the frequency density is $4.2$:\\begin{aligned} \\text{Bar height} &= 4.2 \\times 2 \\cr &= 8.4\\text{ cm} \\end{aligned}",
+    "<strong>(b) Frequency Represented by an Area of 1 cm²:</strong><br><br>For the reference bar $80 \\le m < 100$:\\begin{aligned} \\text{Area} &= 4\\text{ cm} \\times 3\\text{ cm} \\cr &= 12\\text{ cm}^2 \\end{aligned}<br>This area represents a frequency of $30$ fruits:\\begin{aligned} \\text{Frequency per cm}^2 &= \\dfrac{30}{12} \\cr &= 2.5 \\end{aligned}",
+    "<strong>(c) Finding Frequency from Given Area:</strong><br><br>Using the established scaling factor of $2.5$ fruits per $\\text{cm}^2$:\\begin{aligned} \\text{Frequency} &= 16 \\times 2.5 \\cr &= 40 \\end{aligned}",
+    "Final Answer: (a) Width $= 3\\text{ cm}$, Height $= 8.4\\text{ cm}$, (b) $2.5$, (c) $40$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Width $= 3\\text{ cm}$, Height $= 8.4\\text{ cm}$, (b) $0.4$, (c) $6.4$",
+      "feedback": "Inverting the area-to-frequency ratio as $\\frac{12}{30} = 0.4$ leads to $16 \\times 0.4 = 6.4$ fruits."
+    },
+    {
+      "ans": "(a) Width $= 3\\text{ cm}$, Height $= 4.2\\text{ cm}$, (b) $2.5$, (c) $40$",
+      "feedback": "Using the frequency density of $4.2$ directly as the bar height in cm ignores the vertical scale factor of $2\\text{ cm}$ per unit."
+    },
+    {
+      "ans": "(a) Width $= 15\\text{ cm}$, Height $= 8.4\\text{ cm}$, (b) $2.5$, (c) $40$",
+      "feedback": "Setting the bar width equal to the class width of $15$ ignores the horizontal scale factor of $0.2\\text{ cm}$ per gram."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Area Proportionality Constant",
+    "content": "In histograms, $\\text{Frequency} = k \\times \\text{Area}$. Find $k$ immediately from the given bar: $k = \\frac{30}{12\\text{ cm}^2} = 2.5\\text{ items per cm}^2$. Once you have $k$, you can determine the frequency of any region directly from its area without calculating class boundaries."
+  }
+},
+{
+  "id": "050124",
+  "group_id": "050121",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Data Presentation & Interpretation",
+  "subtopic": [
+    "Linear Interpolation",
+    "Median",
+    "Interquartile Range",
+    "Grouped Data"
+  ],
+  "img": false,
+  "question": "The speeds, $v$ in miles per hour (mph), of $160$ vehicles passing a speed camera on an urban road are summarised in the table below:<br><br><table style='width:100%; max-width:240px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:6px; border:1px solid #ccc;'>Speed, $v$ (mph)</th><th style='padding:6px; border:1px solid #ccc;'>Frequency</th></tr></thead><tbody><tr><td style='padding:6px; border:1px solid #ccc;'>$20 \\le v < 30$</td><td style='padding:6px; border:1px solid #ccc;'>$14$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$30 \\le v < 36$</td><td style='padding:6px; border:1px solid #ccc;'>$36$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$36 \\le v < 40$</td><td style='padding:6px; border:1px solid #ccc;'>$48$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$40 \\le v < 48$</td><td style='padding:6px; border:1px solid #ccc;'>$44$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$48 \\le v < 60$</td><td style='padding:6px; border:1px solid #ccc;'>$18$</td></tr></tbody></table><br><strong>(a)</strong> Write down the class interval that contains the median speed.<br><br><strong>(b)</strong> Use linear interpolation to calculate an estimate of:<br><strong>(i)</strong> the median speed;<br><strong>(ii)</strong> the interquartile range (IQR) of the speeds.<br>Give your answers to 1 decimal place.<br><br><strong>(c)</strong> The speed limit on this section of road is $40\\text{ mph}$. Estimate the percentage of drivers who were exceeding the speed limit.",
+  "steps": [
+    "<strong>(a) Identifying the Median Class:</strong><br><br>Find the cumulative frequencies:\\begin{aligned} v &< 30: 14 \\cr v &< 36: 14 + 36 = 50 \\cr v &< 40: 50 + 48 = 98 \\cr v &< 48: 98 + 44 = 142 \\cr v &< 60: 142 + 18 = 160 \\end{aligned}<br>The median position for $n = 160$ continuous values is $\\frac{160}{2} = 80$.<br><br>Since $50 < 80 \\le 98$, the median lies in $36 \\le v < 40$.",
+    "<strong>(b)(i) Linear Interpolation for the Median:</strong><br><br>Interpolating within $36 \\le v < 40$:\\begin{aligned} Q_2 &= 36 + \\left(\\dfrac{80 - 50}{48}\\right) \\times 4 \\cr &= 36 + \\left(\\dfrac{30}{48}\\right) \\times 4 \\cr &= 36 + 2.5 \\cr &= 38.5\\text{ mph} \\end{aligned}",
+    "<strong>(b)(ii) Linear Interpolation for Quartiles and IQR:</strong><br><br>Lower quartile position: $\\frac{160}{4} = 40$ (in $30 \\le v < 36$):\\begin{aligned} Q_1 &= 30 + \\left(\\dfrac{40 - 14}{36}\\right) \\times 6 \\cr &= 30 + \\left(\\dfrac{26}{36}\\right) \\times 6 \\cr &= 30 + 4.333 \\cr &= 34.333\\text{ mph} \\end{aligned}<br>Upper quartile position: $\\frac{3(160)}{4} = 120$ (in $40 \\le v < 48$):\\begin{aligned} Q_3 &= 40 + \\left(\\dfrac{120 - 98}{44}\\right) \\times 8 \\cr &= 40 + \\left(\\dfrac{22}{44}\\right) \\times 8 \\cr &= 40 + 4 \\cr &= 44.0\\text{ mph} \\end{aligned}<br>Evaluating the interquartile range:\\begin{aligned} \\text{IQR} &= 44.0 - 34.333 \\cr &= 9.667 \\cr &\\approx 9.7\\text{ mph} \\end{aligned}",
+    "<strong>(c) Estimating Percentage Exceeding the Speed Limit:</strong><br><br>The number of drivers exceeding $40\\text{ mph}$ is:\\begin{aligned} \\text{Exceeding} &= 44 + 18 \\cr &= 62 \\end{aligned}<br>Calculating the percentage of $160$ drivers:\\begin{aligned} \\text{Percentage} &= \\left(\\dfrac{62}{160}\\right) \\times 100\\% \\cr &= 38.75\\% \\cr &\\approx 38.8\\% \\end{aligned}",
+    "Final Answer: (a) $36 \\le v < 40$, (b)(i) $38.5\\text{ mph}$, (ii) $9.7\\text{ mph}$, (c) $38.8\\%"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $36 \\le v < 40$, (b)(i) $38.5\\text{ mph}$, (ii) $9.7\\text{ mph}$, (c) $61.3\\%",
+      "feedback": "Calculating the percentage of drivers obeying the limit ($\frac{98}{160} \\times 100\\% = 61.25\\%$) rather than those exceeding it gives $61.3\\%$."
+    },
+    {
+      "ans": "(a) $36 \\le v < 40$, (b)(i) $38.0\\text{ mph}$, (ii) $9.7\\text{ mph}$, (c) $38.8\\%",
+      "feedback": "Taking the midpoint of the median class $\\frac{36 + 40}{2} = 38.0$ ignores linear interpolation within the frequency group."
+    },
+    {
+      "ans": "(a) $36 \\le v < 40$, (b)(i) $38.5\\text{ mph}$, (ii) $10.0\\text{ mph}$, (c) $38.8\\%",
+      "feedback": "Subtracting class midpoints ($44 - 33$) rather than interpolated quartiles gives $10.0$ instead of $9.7$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Continuous Data Quartile Positions",
+    "content": "For grouped continuous data, use exact fractional positions: $\\frac{n}{2} = 80$, $\\frac{n}{4} = 40$, and $\\frac{3n}{4} = 120$. Do not use the discrete formulas $\\frac{n + 1}{2}$ or $\\frac{n + 1}{4}$ when carrying out linear interpolation on grouped continuous tables."
+  }
+},
+{
+  "id": "050125",
+  "group_id": "050121",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Data Presentation & Interpretation",
+  "subtopic": [
+    "Outliers",
+    "Interquartile Range",
+    "Skewness",
+    "Linear Interpolation"
+  ],
+  "img": false,
+  "question": "The daily rainfall, $r$ in millimetres, was recorded at an environmental monitoring station over a period of $120$ days during autumn. The results are shown in the table below:<br><br><table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:6px; border:1px solid #ccc;'>Rainfall, $r$ (mm)</th><th style='padding:6px; border:1px solid #ccc;'>Days</th><th style='padding:6px; border:1px solid #ccc;'>FD</th></tr></thead><tbody><tr><td style='padding:6px; border:1px solid #ccc;'>$0 \\le r < 5$</td><td style='padding:6px; border:1px solid #ccc;'>$45$</td><td style='padding:6px; border:1px solid #ccc;'>$9.0$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$5 \\le r < 10$</td><td style='padding:6px; border:1px solid #ccc;'>$35$</td><td style='padding:6px; border:1px solid #ccc;'>$7.0$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$10 \\le r < 20$</td><td style='padding:6px; border:1px solid #ccc;'>$24$</td><td style='padding:6px; border:1px solid #ccc;'>$2.4$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$20 \\le r < 35$</td><td style='padding:6px; border:1px solid #ccc;'>$12$</td><td style='padding:6px; border:1px solid #ccc;'>$0.8$</td></tr><tr><td style='padding:6px; border:1px solid #ccc;'>$35 \\le r < 60$</td><td style='padding:6px; border:1px solid #ccc;'>$4$</td><td style='padding:6px; border:1px solid #ccc;'>$0.16$</td></tr></tbody></table><br>For these data, linear interpolation gives the lower quartile as $Q_1 = 3.3\\text{ mm}$ and the upper quartile as $Q_3 = 14.2\\text{ mm}$.<br><br><strong>(a)</strong><br><strong>(i)</strong> Calculate the interquartile range (IQR) of the daily rainfall.<br><strong>(ii)</strong> An outlier is defined as any value that exceeds $Q_3 + 1.5 \\times \\text{IQR}$. Calculate the outlier boundary and explain whether any of the recorded days are definitely outliers.<br><br><strong>(b)</strong> Use linear interpolation to calculate an estimate of the median daily rainfall, giving your answer to 1 decimal place.<br><br><strong>(c)</strong> The mean daily rainfall for these $120$ days is $8.7\\text{ mm}$. By comparing the mean and your estimated median, describe the skewness of the distribution, giving a reason for your answer.",
+  "steps": [
+    "<strong>(a)(i) Calculating the Interquartile Range:</strong><br><br>Using the provided quartiles:\\begin{aligned} \\text{IQR} &= Q_3 - Q_1 \\cr &= 14.2 - 3.3 \\cr &= 10.9\\text{ mm} \\end{aligned}",
+    "<strong>(a)(ii) Outlier Boundary and Identification:</strong><br><br>Evaluating the upper outlier threshold:\\begin{aligned} \\text{Boundary} &= Q_3 + 1.5 \\times \\text{IQR} \\cr &= 14.2 + 1.5(10.9) \\cr &= 14.2 + 16.35 \\cr &= 30.55\\text{ mm} \\end{aligned}<br>The highest class interval $35 \\le r < 60$ contains $4$ days. Because every observation in this class satisfies $r \\ge 35 > 30.55\\text{ mm}$, all $4$ of these days are definitely outliers.",
+    "<strong>(b) Linear Interpolation for the Median:</strong><br><br>The median position for $n = 120$ observations is $\\frac{120}{2} = 60$.<br><br>Cumulative frequency up to $r = 5$ is $45$, so the median lies in $5 \\le r < 10$:\\begin{aligned} \\text{Median} &= 5 + \\left(\\dfrac{60 - 45}{35}\\right) \\times 5 \\cr &= 5 + \\left(\\dfrac{15}{35}\\right) \\times 5 \\cr &= 5 + \\dfrac{15}{7} \\cr &= 5 + 2.143 \\cr &= 7.1\\text{ mm} \\end{aligned}",
+    "<strong>(c) Skewness Analysis:</strong><br><br>Comparing the measures of central tendency:\\begin{aligned} \\text{Mean} &= 8.7\\text{ mm} \\cr \\text{Median} &= 7.1\\text{ mm} \\cr \\text{Mean} &> \\text{Median} \\end{aligned}<br>Because $\\text{Mean} > \\text{Median}$, the distribution is <strong>positively skewed</strong> (skewed to the right). The extreme high-rainfall outliers pull the mean above the median.",
+    "Final Answer: (a)(i) $10.9\\text{ mm}$, (ii) $30.55\\text{ mm}$, outliers exist, (b) $7.1\\text{ mm}$, (c) Positively skewed"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a)(i) $10.9\\text{ mm}$, (ii) $30.55\\text{ mm}$, outliers exist, (b) $7.1\\text{ mm}$, (c) Negatively skewed",
+      "feedback": "When the mean is strictly greater than the median, the distribution is positively skewed, not negatively skewed."
+    },
+    {
+      "ans": "(a)(i) $10.9\\text{ mm}$, (ii) $25.1\\text{ mm}$, outliers exist, (b) $7.1\\text{ mm}$, (c) Positively skewed",
+      "feedback": "Using the lower quartile in the upper outlier formula as $Q_1 + 1.5 \\times \\text{IQR} = 3.3 + 16.35$ incorrectly yields $19.65$ or $25.1$."
+    },
+    {
+      "ans": "(a)(i) $10.9\\text{ mm}$, (ii) $30.55\\text{ mm}$, no outliers, (b) $7.5\\text{ mm}$, (c) Positively skewed",
+      "feedback": "Taking the midpoint $\\frac{5 + 10}{2} = 7.5$ ignores linear interpolation, and concluding no outliers ignores the interval $35 \\le r < 60$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Skewness and Measures of Location",
+    "content": "In a positively skewed distribution, the tail stretches to the right. The mode sits under the main peak, the median is pulled slightly right, and the mean is pulled farthest by extreme high values: $\\text{Mode} < \\text{Median} < \\text{Mean}$. Verifying that $\\text{Mean} > \\text{Median}$ confirms positive skew."
   }
 }
 ];
