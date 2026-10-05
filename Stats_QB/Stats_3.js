@@ -973,7 +973,7 @@ window.ALEVEL_QUESTIONS = [
   "pi_options": [
     {
       "ans": "(a) $36 \\le v < 40$, (b)(i) $38.5\\text{ mph}$, (ii) $9.7\\text{ mph}$, (c) $61.3\\%",
-      "feedback": "Calculating the percentage of drivers obeying the limit ($\frac{98}{160} \\times 100\\% = 61.25\\%$) rather than those exceeding it gives $61.3\\%$."
+      "feedback": "Calculating the percentage of drivers obeying the limit ($\\frac{98}{160} \\times 100\\% = 61.25\\%$) rather than those exceeding it gives $61.3\\%$."
     },
     {
       "ans": "(a) $36 \\le v < 40$, (b)(i) $38.0\\text{ mph}$, (ii) $9.7\\text{ mph}$, (c) $38.8\\%",
@@ -1031,6 +1031,209 @@ window.ALEVEL_QUESTIONS = [
     "type": "deeper",
     "title": "The Head Teacher's Eye: Skewness and Measures of Location",
     "content": "In a positively skewed distribution, the tail stretches to the right. The mode sits under the main peak, the median is pulled slightly right, and the mean is pulled farthest by extreme high values: $\\text{Mode} < \\text{Median} < \\text{Mean}$. Verifying that $\\text{Mean} > \\text{Median}$ confirms positive skew."
+  }
+},
+{
+  "id": "050126",
+  "group_id": "050126",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Discrete Random Variables",
+  "subtopic": [
+    "Probability Distributions",
+    "Total Probability",
+    "Independent Observations"
+  ],
+  "img": false,
+  "question": "The probability distribution of the discrete random variable $Y$ is given in the table below:<br><br><table style='width:100%; max-width:180px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:5px; border:1px solid #ccc;'>$y$</th><th style='padding:5px; border:1px solid #ccc;'>$\\text{P}(Y = y)$</th></tr></thead><tbody><tr><td style='padding:5px; border:1px solid #ccc;'>$1$</td><td style='padding:5px; border:1px solid #ccc;'>$0.1$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$2$</td><td style='padding:5px; border:1px solid #ccc;'>$0.25$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$3$</td><td style='padding:5px; border:1px solid #ccc;'>$k$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$4$</td><td style='padding:5px; border:1px solid #ccc;'>$0.2$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$5$</td><td style='padding:5px; border:1px solid #ccc;'>$0.15$</td></tr></tbody></table><br><strong>(a)</strong> Find the value of $k$.<br><br>$Y_1$ and $Y_2$ are two independent observations of $Y$.<br><br><strong>(b)</strong> Find $\\text{P}(Y_1 + Y_2 = 7)$.",
+  "steps": [
+    "<strong>(a) Finding the Value of $k$:</strong><br><br>The sum of all probabilities in a discrete probability distribution must equal $1$:\\begin{aligned} \\sum \\text{P}(Y = y) &= 1 \\cr 0.1 + 0.25 + k \\cr \\quad + 0.2 + 0.15 &= 1 \\cr 0.7 + k &= 1 \\cr k &= 0.3 \\end{aligned}",
+    "<strong>(b) Finding $\\text{P}(Y_1 + Y_2 = 7)$:</strong><br><br>Identify all pairs $(y_1, y_2)$ that sum to $7$ from the support $\\{1, 2, 3, 4, 5\\}$:<br>$$(2, 5), (3, 4), (4, 3), (5, 2)$$<br>Since $Y_1$ and $Y_2$ are independent, multiply the respective probabilities:\\begin{aligned} \\text{P}(2, 5) &= 0.25 \\times 0.15 \\cr &= 0.0375 \\cr \\text{P}(3, 4) &= 0.3 \\times 0.2 \\cr &= 0.06 \\cr \\text{P}(4, 3) &= 0.2 \\times 0.3 \\cr &= 0.06 \\cr \\text{P}(5, 2) &= 0.15 \\times 0.25 \\cr &= 0.0375 \\end{aligned}<br>Summing these mutually exclusive events:\\begin{aligned} &\\text{P}(Y_1 + Y_2 = 7) \\cr &\\quad = 2(0.0375) + 2(0.06) \\cr &\\quad = 0.075 + 0.12 \\cr &\\quad = 0.195 \\end{aligned}",
+    "Final Answer: (a) $k = 0.3$, (b) $0.195$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $k = 0.3$, (b) $0.0975$",
+      "feedback": "Failing to account for the order of observations by calculating only $(2, 5)$ and $(3, 4)$ halves the correct probability."
+    },
+    {
+      "ans": "(a) $k = 0.4$, (b) $0.195$",
+      "feedback": "An arithmetic error when summing the known probabilities to $0.6$ rather than $0.7$ gives $k = 0.4$."
+    },
+    {
+      "ans": "(a) $k = 0.3$, (b) $0.1575$",
+      "feedback": "Omitting one pair such as $(4, 3)$ from the sum of mutually exclusive outcomes gives $0.1575$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Order Matters in Independent Pairs",
+    "content": "When evaluating the sum of two independent observations, $(2, 5)$ and $(5, 2)$ represent distinct events: $Y_1 = 2, Y_2 = 5$ versus $Y_1 = 5, Y_2 = 2$. Always check whether pairs with distinct values need to be counted twice to avoid losing half your probability."
+  }
+},
+{
+  "id": "050127",
+  "group_id": "050126",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Discrete Random Variables",
+  "subtopic": [
+    "Two Unknown Probabilities",
+    "Cumulative Probability",
+    "Identical Independent Outcomes"
+  ],
+  "img": false,
+  "question": "The discrete random variable $X$ has the probability distribution shown in the table below, where $p$ and $q$ are constants:<br><br><table style='width:100%; max-width:180px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:5px; border:1px solid #ccc;'>$x$</th><th style='padding:5px; border:1px solid #ccc;'>$\\text{P}(X = x)$</th></tr></thead><tbody><tr><td style='padding:5px; border:1px solid #ccc;'>$0$</td><td style='padding:5px; border:1px solid #ccc;'>$0.15$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$1$</td><td style='padding:5px; border:1px solid #ccc;'>$p$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$2$</td><td style='padding:5px; border:1px solid #ccc;'>$0.2$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$3$</td><td style='padding:5px; border:1px solid #ccc;'>$q$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$4$</td><td style='padding:5px; border:1px solid #ccc;'>$0.1$</td></tr></tbody></table><br>It is given that $\\text{P}(X \\le 1) = 0.35$.<br><br><strong>(a)</strong> Find the values of $p$ and $q$.<br><br>$X_1$ and $X_2$ are two independent observations of $X$.<br><br><strong>(b)</strong> Find the probability that $X_1 = X_2$.",
+  "steps": [
+    "<strong>(a) Determining the Unknowns $p$ and $q$:</strong><br><br>Using the given cumulative probability $\\text{P}(X \\le 1) = 0.35$:\\begin{aligned} \\text{P}(X = 0) + \\text{P}(X = 1) &= 0.35 \\cr 0.15 + p &= 0.35 \\cr p &= 0.2 \\end{aligned}<br>Using the fact that all probabilities sum to $1$:\\begin{aligned} \\sum \\text{P}(X = x) &= 1 \\cr 0.15 + 0.2 + 0.2 \\cr \\quad + q + 0.1 &= 1 \\cr 0.65 + q &= 1 \\cr q &= 0.35 \\end{aligned}",
+    "<strong>(b) Finding the Probability $\\text{P}(X_1 = X_2)$:</strong><br><br>Because $X_1$ and $X_2$ are independent, the probability that both observations are equal is:\\begin{aligned} &\\text{P}(X_1 = X_2) \\cr &\\quad = \\sum [\\text{P}(X = x)]^2 \\end{aligned}<br>Squaring the individual probabilities:\\begin{aligned} 0.15^2 &= 0.0225 \\cr 0.2^2 &= 0.04 \\cr 0.2^2 &= 0.04 \\cr 0.35^2 &= 0.1225 \\cr 0.1^2 &= 0.01 \\end{aligned}<br>Summing these values:\\begin{aligned} &\\text{P}(X_1 = X_2) \\cr &\\quad = 0.0225 + 0.04 \\cr &\\qquad + 0.04 + 0.1225 \\cr &\\qquad + 0.01 \\cr &\\quad = 0.235 \\end{aligned}",
+    "Final Answer: (a) $p = 0.2$, $q = 0.35$, (b) $0.235$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $p = 0.2$, $q = 0.35$, (b) $0.470$",
+      "feedback": "Doubling the squared terms inappropriately assumes that identical pairs like $(1, 1)$ must be counted twice."
+    },
+    {
+      "ans": "(a) $p = 0.35$, $q = 0.2$, (b) $0.235$",
+      "feedback": "Swapping the values of $p$ and $q$ ignores the equation $\\text{P}(X = 0) + p = 0.35$."
+    },
+    {
+      "ans": "(a) $p = 0.2$, $q = 0.35$, (b) $0.200$",
+      "feedback": "Omitting the boundary terms $X = 0$ and $X = 4$ when calculating the sum of squares yields $0.200$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Sum of Squared Probabilities",
+    "content": "For two independent observations from the same discrete distribution, the event $X_1 = X_2$ corresponds to the main diagonal of the sample space table. It is always evaluated as $\\sum [\\text{P}(X = x)]^2$. Each diagonal entry appears exactly once."
+  }
+},
+{
+  "id": "050128",
+  "group_id": "050126",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Discrete Random Variables",
+  "subtopic": [
+    "Algebraic PMF",
+    "Products of Independent Variables",
+    "Probability Inequalities"
+  ],
+  "img": false,
+  "question": "The discrete random variable $X$ has probability mass function defined by:<br>$$\\text{P}(X = x) = c x \\quad \\text{for } x \\in \\{1, 2, 3, 4\\}$$<br>where $c$ is a positive constant.<br><br><strong>(a)</strong> Show that $c = 0.1$.<br><br>$X_1$ and $X_2$ are two independent observations of $X$.<br><br><strong>(b)</strong> Find:<br><strong>(i)</strong> $\\text{P}(X_1 X_2 = 6)$<br><strong>(ii)</strong> $\\text{P}(X_1 > X_2)$",
+  "steps": [
+    "<strong>(a) Showing that $c = 0.1$:</strong><br><br>The probabilities must sum to $1$ over the support $\\{1, 2, 3, 4\\}$:\\begin{aligned} \\sum_{x=1}^4 \\text{P}(X = x) &= 1 \\cr c(1 + 2 + 3 + 4) &= 1 \\cr 10c &= 1 \\cr c &= 0.1 \\end{aligned}<br>The distribution of $X$ is therefore:\\begin{aligned} \\text{P}(X = 1) &= 0.1 \\cr \\text{P}(X = 2) &= 0.2 \\cr \\text{P}(X = 3) &= 0.3 \\cr \\text{P}(X = 4) &= 0.4 \\end{aligned}",
+    "<strong>(b)(i) Evaluating $\\text{P}(X_1 X_2 = 6)$:</strong><br><br>Pairs with a product of $6$ are $(2, 3)$ and $(3, 2)$:\\begin{aligned} \\text{P}(2, 3) &= 0.2 \\times 0.3 \\cr &= 0.06 \\cr \\text{P}(3, 2) &= 0.3 \\times 0.2 \\cr &= 0.06 \\end{aligned}<br>Summing these outcomes:\\begin{aligned} \\text{P}(X_1 X_2 = 6) &= 0.06 + 0.06 \\cr &= 0.12 \\end{aligned}",
+    "<strong>(b)(ii) Evaluating $\\text{P}(X_1 > X_2)$:</strong><br><br>List the pairs where $X_1 > X_2$ by conditioning on $X_1$:\\begin{aligned} X_1 = 2&: (2, 1) \\cr X_1 = 3&: (3, 1), (3, 2) \\cr X_1 = 4&: (4, 1), (4, 2), (4, 3) \\end{aligned}<br>Calculate the probability for each value of $X_1$:\\begin{aligned} \\text{P}(X_1 = 2, X_2 < 2) &= 0.2(0.1) \\cr &= 0.02 \\cr \\text{P}(X_1 = 3, X_2 < 3) &= 0.3(0.1 + 0.2) \\cr &= 0.09 \\cr \\text{P}(X_1 = 4, X_2 < 4) &= 0.4(0.1 + 0.2 + 0.3) \\cr &= 0.24 \\end{aligned}<br>Summing these mutually exclusive cases:\\begin{aligned} \\text{P}(X_1 > X_2) &= 0.02 + 0.09 \\cr &\\quad + 0.24 \\cr &= 0.35 \\end{aligned}",
+    "Final Answer: (b)(i) $0.12$, (ii) $0.35$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(b)(i) $0.06$, (ii) $0.35$",
+      "feedback": "Counting only the pair $(2, 3)$ and omitting $(3, 2)$ overlooks that $X_1$ and $X_2$ are distinct independent observations."
+    },
+    {
+      "ans": "(b)(i) $0.12$, (ii) $0.70$",
+      "feedback": "Calculating $1 - \\text{P}(X_1 = X_2) = 0.70$ gives $\\text{P}(X_1 \\neq X_2)$ rather than dividing by $2$ for $\\text{P}(X_1 > X_2)$."
+    },
+    {
+      "ans": "(b)(i) $0.12$, (ii) $0.30$",
+      "feedback": "Evaluating the probability of identical pairs $\\text{P}(X_1 = X_2) = 0.30$ confuses the equality event with the strict inequality event."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Symmetry Shortcuts for Inequalities",
+    "content": "For two independent observations from an identical distribution, symmetry dictates that $\\text{P}(X_1 > X_2) = \\text{P}(X_2 > X_1)$. Since $\\text{P}(X_1 > X_2) + \\text{P}(X_1 < X_2) + \\text{P}(X_1 = X_2) = 1$, you can quickly calculate $\\text{P}(X_1 > X_2) = \\frac{1 - \\text{P}(X_1 = X_2)}{2}$. With $\\text{P}(X_1 = X_2) = 0.01 + 0.04 + 0.09 + 0.16 = 0.30$, we get $\\frac{1 - 0.30}{2} = 0.35$."
+  }
+},
+{
+  "id": "050129",
+  "group_id": "050126",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Discrete Random Variables",
+  "subtopic": [
+    "Negative Supports",
+    "Sums of Independent Variables",
+    "Conditional Probability"
+  ],
+  "img": false,
+  "question": "The discrete random variable $W$ takes integer values from $-2$ to $2$. Its probability distribution is shown in the table below:<br><br><table style='width:100%; max-width:180px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:5px; border:1px solid #ccc;'>$w$</th><th style='padding:5px; border:1px solid #ccc;'>$\\text{P}(W = w)$</th></tr></thead><tbody><tr><td style='padding:5px; border:1px solid #ccc;'>$-2$</td><td style='padding:5px; border:1px solid #ccc;'>$0.1$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$-1$</td><td style='padding:5px; border:1px solid #ccc;'>$0.25$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$0$</td><td style='padding:5px; border:1px solid #ccc;'>$0.3$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$1$</td><td style='padding:5px; border:1px solid #ccc;'>$a$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$2$</td><td style='padding:5px; border:1px solid #ccc;'>$0.15$</td></tr></tbody></table><br><strong>(a)</strong> Find the value of $a$.<br><br>$W_1$ and $W_2$ are two independent observations of $W$.<br><br><strong>(b)</strong> Find $\\text{P}(W_1 + W_2 = 0)$.<br><br><strong>(c)</strong> Find the conditional probability $\\text{P}(W_1 + W_2 = 0 \\mid W_1 > 0)$, giving your answer as an exact fraction in simplest form.",
+  "steps": [
+    "<strong>(a) Finding the Value of $a$:</strong><br><br>Sum of probabilities must equal $1$:\\begin{aligned} \\sum \\text{P}(W = w) &= 1 \\cr 0.1 + 0.25 + 0.3 \\cr \\quad + a + 0.15 &= 1 \\cr 0.8 + a &= 1 \\cr a &= 0.2 \\end{aligned}",
+    "<strong>(b) Evaluating $\\text{P}(W_1 + W_2 = 0)$:</strong><br><br>Identify pairs $(w_1, w_2)$ summing to $0$:<br>$$(-2, 2), (-1, 1), (0, 0), (1, -1), (2, -2)$$<br>Calculate probabilities for each pair:\\begin{aligned} \\text{P}(-2, 2) &= 0.1 \\times 0.15 \\cr &= 0.015 \\cr \\text{P}(-1, 1) &= 0.25 \\times 0.2 \\cr &= 0.05 \\cr \\text{P}(0, 0) &= 0.3 \\times 0.3 \\cr &= 0.09 \\cr \\text{P}(1, -1) &= 0.2 \\times 0.25 \\cr &= 0.05 \\cr \\text{P}(2, -2) &= 0.15 \\times 0.1 \\cr &= 0.015 \\end{aligned}<br>Summing these mutually exclusive events:\\begin{aligned} &\\text{P}(W_1 + W_2 = 0) \\cr &\\quad = 2(0.015) + 2(0.05) \\cr &\\qquad + 0.09 \\cr &\\quad = 0.03 + 0.1 + 0.09 \\cr &\\quad = 0.22 \\end{aligned}",
+    "<strong>(c) Finding the Conditional Probability:</strong><br><br>By definition of conditional probability:\\begin{aligned} &\\text{P}(W_1 + W_2 = 0 \\mid W_1 > 0) \\cr &\\quad = \\dfrac{\\text{P}((W_1 + W_2 = 0) \\cap (W_1 > 0))}{\\text{P}(W_1 > 0)} \\end{aligned}<br>The condition $W_1 > 0$ means $W_1 \\in \\{1, 2\\}$:\\begin{aligned} \\text{P}(W_1 > 0) &= \\text{P}(W = 1) + \\text{P}(W = 2) \\cr &= 0.2 + 0.15 \\cr &= 0.35 \\end{aligned}<br>The intersection contains pairs where $w_1 + w_2 = 0$ and $w_1 > 0$:\\begin{aligned} (1, -1)&: 0.2 \\times 0.25 = 0.05 \\cr (2, -2)&: 0.15 \\times 0.1 = 0.015 \\cr \\text{Intersection} &= 0.05 + 0.015 \\cr &= 0.065 \\end{aligned}<br>Evaluating the ratio:\\begin{aligned} \\text{P} &= \\dfrac{0.065}{0.35} \\cr &= \\dfrac{65}{350} \\cr &= \\dfrac{13}{70} \\end{aligned}",
+    "Final Answer: (a) $a = 0.2$, (b) $0.22$, (c) $\\dfrac{13}{70}$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $a = 0.2$, (b) $0.22$, (c) $\\dfrac{13}{44}$",
+      "feedback": "Conditioning on the sum being zero rather than $W_1 > 0$ evaluates $\\frac{0.065}{0.22} = \\frac{13}{44}$."
+    },
+    {
+      "ans": "(a) $a = 0.2$, (b) $0.13$, (c) $\\dfrac{13}{70}$",
+      "feedback": "Forgetting the pair $(0, 0)$ when calculating the sum gives $0.22 - 0.09 = 0.13$ in part (b)."
+    },
+    {
+      "ans": "(a) $a = 0.2$, (b) $0.22$, (c) $\\dfrac{1}{7}$",
+      "feedback": "Counting only $(1, -1)$ in the intersection gives $\\frac{0.05}{0.35} = \\frac{1}{7}$, missing the pair $(2, -2)$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Zero Sums Include (0, 0)",
+    "content": "When finding pairs summing to zero, candidates often pair up positives with negatives like $(-2, 2)$ and $(-1, 1)$, but completely forget $(0, 0)$. When $0$ is in the support, $0 + 0 = 0$ is a valid outcome that must be included."
+  }
+},
+{
+  "id": "050130",
+  "group_id": "050126",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Discrete Random Variables",
+  "subtopic": [
+    "Exact Fractions",
+    "Absolute Difference of Observations",
+    "Compound Inequalities"
+  ],
+  "img": false,
+  "question": "The discrete random variable $T$ has the probability distribution given in the table below:<br><br><table style='width:100%; max-width:180px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:5px; border:1px solid #ccc;'>$t$</th><th style='padding:5px; border:1px solid #ccc;'>$\\text{P}(T = t)$</th></tr></thead><tbody><tr><td style='padding:5px; border:1px solid #ccc;'>$1$</td><td style='padding:5px; border:1px solid #ccc;'>$\\dfrac{1}{6}$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$2$</td><td style='padding:5px; border:1px solid #ccc;'>$\\dfrac{1}{3}$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$3$</td><td style='padding:5px; border:1px solid #ccc;'>$\\dfrac{1}{4}$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>$4$</td><td style='padding:5px; border:1px solid #ccc;'>$k$</td></tr></tbody></table><br><strong>(a)</strong> Find the value of $k$ as an exact fraction.<br><br>$T_1$ and $T_2$ are two independent observations of $T$.<br><br><strong>(b)</strong> Find the probability that $|T_1 - T_2| = 1$. Give your answer as an irreducible fraction.<br><br><strong>(c)</strong> Find $\\text{P}(T_1 + T_2 \\ge 6)$, giving your answer as an irreducible fraction.",
+  "steps": [
+    "<strong>(a) Finding $k$ as an Exact Fraction:</strong><br><br>Total probability equals $1$:\\begin{aligned} \\sum \\text{P}(T = t) &= 1 \\cr \\dfrac{1}{6} + \\dfrac{1}{3} + \\dfrac{1}{4} + k &= 1 \\cr \\dfrac{2 + 4 + 3}{12} + k &= 1 \\cr \\dfrac{9}{12} + k &= 1 \\cr k &= \\dfrac{3}{12} \\cr &= \\dfrac{1}{4} \\end{aligned}",
+    "<strong>(b) Finding $\\text{P}(|T_1 - T_2| = 1)$:</strong><br><br>Pairs where the absolute difference is $1$ are:<br>$$(1, 2), (2, 1), (2, 3), (3, 2), (3, 4), (4, 3)$$<br>Calculate probabilities for each unordered combination:\\begin{aligned} \\text{P}(1, 2) &= \\dfrac{1}{6} \\times \\dfrac{1}{3} \\cr &= \\dfrac{1}{18} \\cr \\text{P}(2, 3) &= \\dfrac{1}{3} \\times \\dfrac{1}{4} \\cr &= \\dfrac{1}{12} \\cr \\text{P}(3, 4) &= \\dfrac{1}{4} \\times \\dfrac{1}{4} \\cr &= \\dfrac{1}{16} \\end{aligned}<br>Summing all ordered pairs:\\begin{aligned} &\\text{P}(|T_1 - T_2| = 1) \\cr &\\quad = 2\\left(\\dfrac{1}{18}\\right) + 2\\left(\\dfrac{1}{12}\\right) \\cr &\\qquad + 2\\left(\\dfrac{1}{16}\\right) \\cr &\\quad = \\dfrac{1}{9} + \\dfrac{1}{6} + \\dfrac{1}{8} \\cr &\\quad = \\dfrac{8 + 12 + 9}{72} \\cr &\\quad = \\dfrac{29}{72} \\end{aligned}",
+    "<strong>(c) Finding $\\text{P}(T_1 + T_2 \\ge 6)$:</strong><br><br>Outcomes with sums $6$, $7$, or $8$:\\begin{aligned} \\text{Sum } 6&: (2, 4), (3, 3), (4, 2) \\cr \\text{Sum } 7&: (3, 4), (4, 3) \\cr \\text{Sum } 8&: (4, 4) \\end{aligned}<br>Evaluating the probabilities:\\begin{aligned} \\text{P}(2, 4) + \\text{P}(4, 2) &= 2\\left(\\dfrac{1}{3} \\times \\dfrac{1}{4}\\right) \\cr &= \\dfrac{1}{6} \\cr \\text{P}(3, 3) &= \\left(\\dfrac{1}{4}\\right)^2 \\cr &= \\dfrac{1}{16} \\cr \\text{P}(3, 4) + \\text{P}(4, 3) &= 2\\left(\\dfrac{1}{4} \\times \\dfrac{1}{4}\\right) \\cr &= \\dfrac{1}{8} \\cr \\text{P}(4, 4) &= \\left(\\dfrac{1}{4}\\right)^2 \\cr &= \\dfrac{1}{16} \\end{aligned}<br>Summing these components:\\begin{aligned} &\\text{P}(T_1 + T_2 \\ge 6) \\cr &\\quad = \\dfrac{1}{6} + \\dfrac{1}{16} + \\dfrac{1}{8} + \\dfrac{1}{16} \\cr &\\quad = \\dfrac{1}{6} + \\dfrac{1}{4} \\cr &\\quad = \\dfrac{2 + 3}{12} \\cr &\\quad = \\dfrac{5}{12} \\end{aligned}",
+    "Final Answer: (a) $k = \\dfrac{1}{4}$, (b) $\\dfrac{29}{72}$, (c) $\\dfrac{5}{12}$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $k = \\dfrac{1}{4}$, (b) $\\dfrac{29}{144}$, (c) $\\dfrac{5}{12}$",
+      "feedback": "Omitting the factor of $2$ for ordered pairs in part (b) results in $\\frac{1}{18} + \\frac{1}{12} + \\frac{1}{16} = \\frac{29}{144}$."
+    },
+    {
+      "ans": "(a) $k = \\dfrac{1}{4}$, (b) $\\dfrac{29}{72}$, (c) $\\dfrac{3}{8}$",
+      "feedback": "Forgetting the maximum outcome $(4, 4)$ when summing to at least $6$ yields $\\frac{5}{12} - \\frac{1}{16} = \\frac{17}{48}$ or $\\frac{3}{8}$."
+    },
+    {
+      "ans": "(a) $k = \\dfrac{1}{3}$, (b) $\\dfrac{29}{72}$, (c) $\\dfrac{5}{12}$",
+      "feedback": "An arithmetic error when adding the fractions leads to $1 - \\frac{2}{3} = \\frac{1}{3}$ instead of $\\frac{1}{4}$ for $k$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Systematic Summation of Fractions",
+    "content": "When evaluating sums of independent observations with fractional probabilities, group identical terms before converting to a common denominator: $2\\left(\\frac{1}{16}\\right) + \\frac{1}{8} = \\frac{1}{8} + \\frac{1}{8} = \\frac{1}{4}$. Grouping powers of $2$ reduces large denominators and prevents arithmetic errors."
   }
 }
 ];
