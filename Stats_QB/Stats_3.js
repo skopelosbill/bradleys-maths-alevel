@@ -615,5 +615,211 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: What 'Fair Game' Actually Means",
         "content": "In probability and financial mathematics, a 'fair game' does NOT mean equal probability of winning and losing. It means that the expected financial return is zero: $\\text{E}(\\text{Profit}) = 0$, which requires that $\\text{Stake} = \\text{Expected Payout}$. If a game pays out an expected $£2.13$, charging a stake of $£2.13$ makes it mathematically fair."
     }
+},
+{
+  "id": "050116",
+  "group_id": "050116",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Binomial Distribution & Normal Approximation",
+  "subtopic": [
+    "Normal Approximation to Binomial",
+    "Successive Probability Ratios",
+    "Mode of a Binomial Distribution"
+  ],
+  "img": false,
+  "question": "<em>In this question you must show detailed reasoning.</em><br><br>The probability that an electronic component manufactured on a production line is defective is $0.2$, independently of other components.<br><br><strong>(a)</strong> A large batch of $500$ components is inspected. The random variable $Y$ denotes the number of defective components in the batch.<br><br>Using a suitable Normal approximation, find the integer value of $a$ such that $\\text{P}(Y \\le a) \\approx 0.95$.<br><br>In the expansion of $(0.2 + 0.8)^{60}$, the terms involving $0.2^r$ and $0.2^{r+1}$ are denoted by $T_r$ and $T_{r+1}$ respectively.<br><br><strong>(b)</strong> Show that:<br>$$\\dfrac{T_r}{T_{r+1}} = \\dfrac{4(r + 1)}{60 - r}$$<br><strong>(c)</strong> The number of defective components in a random sample of $60$ components is modelled by the random variable $X$.<br><br><strong>(i)</strong> Find the set of integer values of $r$ for which $\\text{P}(X = r) \\le \\text{P}(X = r + 1)$.<br><br><strong>(ii)</strong> Hence determine the most likely number of defective components in the sample of $60$.",
+  "steps": [
+    "<strong>(a) Normal Approximation to the Binomial:</strong><br><br>For $Y \\sim \\text{B}(500, 0.2)$, calculate the mean and variance:\\begin{aligned} \\mu &= 500(0.2) \\cr &= 100 \\cr \\sigma^2 &= 500(0.2)(0.8) \\cr &= 80 \\end{aligned}<br>Since $n p = 100 > 5$ and $n(1 - p) = 400 > 5$, we approximate $Y \\sim \\text{N}(100, 80)$.<br><br>Applying a continuity correction to $\\text{P}(Y \\le a)$:\\begin{aligned} &\\text{P}(Y \\le a) \\approx \\text{P}(Y_{\\text{norm}} \\le a + 0.5) = 0.95 \\cr &\\dfrac{a + 0.5 - 100}{\\sqrt{80}} = 1.6449 \\cr &a + 0.5 - 100 = 14.712 \\cr &a = 114.212 \\end{aligned}<br>Hence, to the nearest integer, $a = 114$.",
+    "<strong>(b) Consecutive Binomial Term Ratio:</strong><br><br>The general term involving $0.2^r$ in the expansion of $(0.2 + 0.8)^{60}$ is:\\begin{aligned} T_r &= \\binom{60}{r}(0.2)^r (0.8)^{60-r} \\cr T_{r+1} &= \\binom{60}{r+1}(0.2)^{r+1} (0.8)^{59-r} \\end{aligned}<br>Taking the ratio of consecutive terms:\\begin{aligned} \\dfrac{T_r}{T_{r+1}} &= \\dfrac{\\frac{60!}{r!(60-r)!}(0.2)^r (0.8)^{60-r}}{\\frac{60!}{(r+1)!(59-r)!}(0.2)^{r+1} (0.8)^{59-r}} \\cr &= \\dfrac{(r+1)!(59-r)!}{r!(60-r)!} \\times \\dfrac{0.8}{0.2} \\cr &= \\dfrac{r+1}{60-r} \\times 4 \\cr &= \\dfrac{4(r+1)}{60-r} \\end{aligned}",
+    "<strong>(c)(i) & (ii) Solving the Inequality and Identifying the Mode:</strong><br><br>Since $\\text{P}(X = r) = T_r$ and $\\text{P}(X = r + 1) = T_{r+1}$:\\begin{aligned} &\\text{P}(X = r) \\le \\text{P}(X = r + 1) \\iff \\dfrac{T_r}{T_{r+1}} \\le 1 \\cr &\\dfrac{4(r + 1)}{60 - r} \\le 1 \\cr &4r + 4 \\le 60 - r \\cr &5r \\le 56 \\cr &r \\le 11.2 \\end{aligned}<br>Since $r$ is an integer in the range $0 \\le r \\le 59$:\\begin{aligned} r \\in \\{0, 1, 2, \\dots, 11\\} \\end{aligned}<br>This inequality implies that probabilities increase up to $r = 11$:\\begin{aligned} \\text{P}(X = 0) < \\dots < \\text{P}(X = 11) < \\text{P}(X = 12) \\end{aligned}<br>For $r \\ge 12$, $\\frac{T_r}{T_{r+1}} > 1$, which means $\\text{P}(X = r) > \\text{P}(X = r + 1)$, so probabilities decrease thereafter.<br><br>Therefore, the most likely number of defective components is $12$.",
+    "Final Answer: (a) $a = 114$, (c)(i) $r \\in \\{0, 1, \\dots, 11\\}$, (ii) $12$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $a = 115$, (c)(i) $r \\in \\{0, 1, \\dots, 11\\}$, (ii) $12$",
+      "feedback": "Omission of the continuity correction $+0.5$ leads to $\\frac{a - 100}{\\sqrt{80}} = 1.6449$, giving $a \\approx 114.71 \\approx 115$."
+    },
+    {
+      "ans": "(a) $a = 114$, (c)(i) $r \\in \\{0, 1, \\dots, 11\\}$, (ii) $11$",
+      "feedback": "Confusing the upper bound index where growth stops ($r = 11$) with the resulting maximum outcome gives $11$ instead of $r + 1 = 12$."
+    },
+    {
+      "ans": "(a) $a = 114$, (c)(i) $r \\in \\{0, 1, \\dots, 12\\}$, (ii) $12$",
+      "feedback": "Incorrectly rounding $11.2$ up to include $12$ in the increasing phase violates the inequality, since at $r = 12$ the ratio exceeds $1$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: The Off-By-One Mode Trap",
+    "content": "When solving $\\text{P}(X = r) \\le \\text{P}(X = r + 1)$, remember what the final inequality means. If the inequality holds for $r \\le 11$, setting $r = 11$ gives $\\text{P}(X = 11) \\le \\text{P}(X = 12)$. The chain of probabilities climbs all the way up to $X = 12$. A common slip is writing down $11$ as the mode because $11$ was the largest integer in your solution set for $r$. Always write out the final step $\\text{P}(11) \\le \\text{P}(12)$ to avoid losing the final accuracy mark."
+  }
+},
+{
+  "id": "050117",
+  "group_id": "050116",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Binomial Distribution & Normal Approximation",
+  "subtopic": [
+    "Normal Approximation to Binomial",
+    "Successive Probability Ratios",
+    "Bimodal Binomial Distributions"
+  ],
+  "img": false,
+  "question": "<em>In this question you must show detailed reasoning.</em><br><br>The probability that an unsolicited telephone call made by a contact centre results in an appointment is $0.25$, independently of all other calls.<br><br><strong>(a)</strong> An agent makes $480$ calls over the course of a month. The random variable $Y$ denotes the total number of appointments made.<br><br>Using a suitable Normal approximation with a continuity correction, calculate the probability that the agent makes at least $130$ appointments. Give your answer to 3 significant figures.<br><br><strong>(b)</strong> In a focused morning session, an agent makes a smaller sample of $39$ calls. The random variable $X$ denotes the number of appointments secured, so that $X \\sim \\text{B}(39, 0.25)$.<br><br>By considering the ratio of consecutive probabilities, show that:<br>$$\\dfrac{\\text{P}(X = r + 1)}{\\text{P}(X = r)} = \\dfrac{39 - r}{3(r + 1)}$$<br><strong>(c)</strong><br><strong>(i)</strong> Determine the integer value of $r$ for which $\\text{P}(X = r + 1) = \\text{P}(X = r)$.<br><br><strong>(ii)</strong> Hence identify all values of $X$ that are most likely to occur, and explain why this distribution is bimodal.",
+  "steps": [
+    "<strong>(a) Normal Approximation with Continuity Correction:</strong><br><br>For $Y \\sim \\text{B}(480, 0.25)$:\\begin{aligned} \\mu &= 480(0.25) \\cr &= 120 \\cr \\sigma^2 &= 480(0.25)(0.75) \\cr &= 90 \\end{aligned}<br>Approximate $Y$ using $Y_{\\text{norm}} \\sim \\text{N}(120, 90)$.<br><br>Applying a continuity correction for $\\text{P}(Y \\ge 130)$:\\begin{aligned} \\text{P}(Y \\ge 130) &\\approx \\text{P}(Y_{\\text{norm}} \\ge 129.5) \\cr &= \\text{P}\\left(Z \\ge \\dfrac{129.5 - 120}{\\sqrt{90}}\\right) \\cr &= \\text{P}(Z \\ge 1.0014) \\cr &= 1 - \\Phi(1.0014) \\cr &= 1 - 0.8417 \\cr &= 0.158 \\end{aligned}",
+    "<strong>(b) Consecutive Probability Ratio Derivation:</strong><br><br>For $X \\sim \\text{B}(39, 0.25)$:\\begin{aligned} \\text{P}(X = r) &= \\binom{39}{r}(0.25)^r (0.75)^{39-r} \\cr \\text{P}(X = r + 1) &= \\binom{39}{r+1}(0.25)^{r+1} (0.75)^{38-r} \\end{aligned}<br>Taking the ratio:\\begin{aligned} \\dfrac{\\text{P}(X = r + 1)}{\\text{P}(X = r)} &= \\dfrac{\\frac{39!}{(r+1)!(38-r)!}}{\\frac{39!}{r!(39-r)!}} \\times \\dfrac{0.25}{0.75} \\cr &= \\dfrac{39 - r}{r + 1} \\times \\dfrac{1}{3} \\cr &= \\dfrac{39 - r}{3(r + 1)} \\end{aligned}",
+    "<strong>(c)(i) & (ii) Equality Condition and Bimodality:</strong><br><br>Setting the ratio equal to $1$:\\begin{aligned} &\\dfrac{39 - r}{3(r + 1)} = 1 \\cr &39 - r = 3r + 3 \\cr &4r = 36 \\cr &r = 9 \\end{aligned}<br>Since $r = 9$ gives a ratio of exactly $1$, we have:\\begin{aligned} \\text{P}(X = 10) = \\text{P}(X = 9) \\end{aligned}<br>For $r < 9$, the ratio is strictly greater than $1$, meaning $\\text{P}(X = r + 1) > \\text{P}(X = r)$.<br><br>For $r > 9$, the ratio is strictly less than $1$, meaning $\\text{P}(X = r + 1) < \\text{P}(X = r)$.<br><br>Therefore, the distribution attains its maximum value at two consecutive points, making it bimodal with modes $9$ and $10$. This occurs because $(n + 1)p = (39 + 1)(0.25) = 10$ is an exact integer.",
+    "Final Answer: (a) $0.158$, (c)(i) $r = 9$, (ii) $9$ and $10$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $0.146$, (c)(i) $r = 9$, (ii) $9$ and $10$",
+      "feedback": "Using an incorrect continuity correction of $130.5$ instead of $129.5$ gives $z = 1.054$ and probability $0.146$."
+    },
+    {
+      "ans": "(a) $0.158$, (c)(i) $r = 9$, (ii) $10$ only",
+      "feedback": "Overlooking that the ratio equals $1$ at $r = 9$ neglects the exact equality $\\text{P}(X = 9) = \\text{P}(X = 10)$, missing the bimodal nature."
+    },
+    {
+      "ans": "(a) $0.158$, (c)(i) $r = 10$, (ii) $9$ and $10$",
+      "feedback": "An algebraic error when expanding $3(r + 1)$ as $3r - 3$ incorrectly yields $4r = 42$ and an incorrect index."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Integer Products and Bimodality",
+    "content": "A Binomial distribution $\\text{B}(n, p)$ is bimodal if and only if $(n + 1)p$ is an integer. When $(n + 1)p = k \\in \\mathbb{Z}^+$, the ratio $\\frac{\\text{P}(X = k)}{\\text{P}(X = k - 1)} = 1$, which produces two equal modal peaks at $X = k - 1$ and $X = k$. Here, $(39 + 1)(0.25) = 10$, creating identical peaks at $X = 9$ and $X = 10$."
+  }
+},
+{
+  "id": "050118",
+  "group_id": "050116",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Binomial Distribution & Normal Approximation",
+  "subtopic": [
+    "Normal Approximation to Binomial",
+    "Probability Ratios",
+    "Mode and Ratio Evaluation"
+  ],
+  "img": false,
+  "question": "<em>In this question you must show detailed reasoning.</em><br><br>A wildlife sanctuary monitors a colony of a rare bird species. The probability that an egg in a nest hatches successfully is $\\dfrac{2}{3}$, independently of all other eggs.<br><br><strong>(a)</strong> During a breeding season, the sanctuary monitors $270$ separate nests, each containing a single egg. The random variable $Y$ denotes the total number of successfully hatched eggs.<br><br>Using a suitable Normal approximation with a continuity correction, find the integer value of $k$ such that $\\text{P}(Y < k) \\approx 0.025$.<br><br><strong>(b)</strong> For a smaller isolated group of $40$ nests, each containing a single egg, the random variable $X$ models the number of eggs that hatch successfully, so that $X \\sim \\text{B}\\left(40, \\dfrac{2}{3}\\right)$.<br><br>Show that:<br>$$\\dfrac{\\text{P}(X = r + 1)}{\\text{P}(X = r)} = \\dfrac{2(40 - r)}{r + 1}$$<br><strong>(c)</strong><br><strong>(i)</strong> Find all integer values of $r$ for which $\\text{P}(X = r + 1) \\ge \\text{P}(X = r)$.<br><br><strong>(ii)</strong> Hence find the most likely number of eggs to hatch in this group of $40$ nests, and find the exact value of the ratio $\\dfrac{\\text{P}(X = \\text{mode})}{\\text{P}(X = \\text{mode} - 1)}$ as an irreducible fraction.",
+  "steps": [
+    "<strong>(a) Normal Approximation Threshold:</strong><br><br>For $Y \\sim \\text{B}\\left(270, \\frac{2}{3}\\right)$:\\begin{aligned} \\mu &= 270\\left(\\dfrac{2}{3}\\right) \\cr &= 180 \\cr \\sigma^2 &= 270\\left(\\dfrac{2}{3}\\right)\\left(\\dfrac{1}{3}\\right) \\cr &= 60 \\end{aligned}<br>For a discrete variable, $Y < k \\iff Y \\le k - 1$.<br><br>Applying a continuity correction:\\begin{aligned} &\\text{P}(Y \\le k - 1) \\approx \\text{P}(Y_{\\text{norm}} \\le k - 0.5) = 0.025 \\cr &\\dfrac{k - 0.5 - 180}{\\sqrt{60}} = -1.960 \\cr &k - 0.5 - 180 = -15.182 \\cr &k = 165.318 \\end{aligned}<br>To the nearest integer, $k = 165$.",
+    "<strong>(b) Consecutive Probability Ratio:</strong><br><br>For $X \\sim \\text{B}\\left(40, \\frac{2}{3}\\right)$:\\begin{aligned} \\dfrac{\\text{P}(X = r + 1)}{\\text{P}(X = r)} &= \\dfrac{\\binom{40}{r+1}\\left(\\frac{2}{3}\\right)^{r+1}\\left(\\frac{1}{3}\\right)^{39-r}}{\\binom{40}{r}\\left(\\frac{2}{3}\\right)^r\\left(\\frac{1}{3}\\right)^{40-r}} \\cr &= \\dfrac{40 - r}{r + 1} \\times \\dfrac{2/3}{1/3} \\cr &= \\dfrac{2(40 - r)}{r + 1} \\end{aligned}",
+    "<strong>(c)(i) & (ii) Inequality, Mode, and Ratio:</strong><br><br>Solve $\\text{P}(X = r + 1) \\ge \\text{P}(X = r)$:\\begin{aligned} &\\dfrac{2(40 - r)}{r + 1} \\ge 1 \\cr &80 - 2r \\ge r + 1 \\cr &3r \\le 79 \\cr &r \\le 26.33 \\end{aligned}<br>For integer $r$, $r \\in \\{0, 1, 2, \\dots, 26\\}$.<br><br>Probabilities increase strictly up to $r = 26$:\\begin{aligned} \\text{P}(X = 0) < \\dots < \\text{P}(X = 26) < \\text{P}(X = 27) \\end{aligned}<br>For $r \\ge 27$, $\\text{P}(X = r + 1) < \\text{P}(X = r)$, so probabilities decrease.<br><br>Hence the mode is $27$.<br><br>Evaluating the ratio at the peak:\\begin{aligned} \\dfrac{\\text{P}(X = 27)}{\\text{P}(X = 26)} &= \\dfrac{2(40 - 26)}{26 + 1} \\cr &= \\dfrac{2(14)}{27} \\cr &= \\dfrac{28}{27} \\end{aligned}",
+    "Final Answer: (a) $k = 165$, (c)(i) $r \\in \\{0, 1, \\dots, 26\\}$, (ii) Mode $= 27$, ratio $= \\dfrac{28}{27}$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $k = 164$, (c)(i) $r \\in \\{0, 1, \\dots, 26\\}$, (ii) Mode $= 27$, ratio $= \\dfrac{28}{27}$",
+      "feedback": "Using an incorrect continuity correction of $k + 0.5$ instead of $k - 0.5$ for $Y < k$ leads to $k = 164$."
+    },
+    {
+      "ans": "(a) $k = 165$, (c)(i) $r \\in \\{0, 1, \\dots, 26\\}$, (ii) Mode $= 26$, ratio $= \\dfrac{27}{28}$",
+      "feedback": "Confusing the upper index of increase ($r = 26$) with the mode selects $26$ and inverts the required probability ratio."
+    },
+    {
+      "ans": "(a) $k = 165$, (c)(i) $r \\in \\{0, 1, \\dots, 27\\}$, (ii) Mode $= 27$, ratio $= \\dfrac{28}{27}$",
+      "feedback": "Rounding $79/3 \\approx 26.33$ up to $27$ erroneously includes $r = 27$ in the set where probabilities are still increasing."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Continuity Corrections on Strict Inequalities",
+    "content": "For a discrete variable $Y$, the strict inequality $Y < k$ translates to $Y \\le k - 1$. The upper boundary of the discrete bar at $k - 1$ is $(k - 1) + 0.5 = k - 0.5$. Writing $k + 0.5$ is a standard mistake that treats the strict inequality as a non-strict inequality and shifts your critical threshold by an entire unit."
+  }
+},
+{
+  "id": "050119",
+  "group_id": "050116",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Binomial Distribution & Normal Approximation",
+  "subtopic": [
+    "General Modal Condition Proof",
+    "Binomial Successive Ratios",
+    "Normal Interval Estimation"
+  ],
+  "img": false,
+  "question": "<em>In this question you must show detailed reasoning.</em><br><br>A clinical trial investigates the efficacy of a treatment for a specific condition. The probability that an administered patient experiences complete recovery without side effects is $p = 0.4$, independently of other patients.<br><br><strong>(a)</strong> In an extensive multicentre trial involving $300$ patients, the number of patients who recover completely without side effects is denoted by $Y \\sim \\text{B}(300, 0.4)$.<br><br>Using a suitable Normal approximation, calculate an estimate for the probability that between $110$ and $135$ patients (inclusive) achieve complete recovery without side effects. Give your answer to 3 significant figures.<br><br><strong>(b)</strong> For a general binomial random variable $X \\sim \\text{B}(n, p)$, where $0 < p < 1$ and $q = 1 - p$:<br>Show from the definition of the binomial probability mass function that:<br>$$\\dfrac{\\text{P}(X = r + 1)}{\\text{P}(X = r)} = \\left(\\dfrac{n - r}{r + 1}\\right)\\left(\\dfrac{p}{q}\\right)$$<br><strong>(c)</strong><br><strong>(i)</strong> Deduce that $\\text{P}(X = r + 1) > \\text{P}(X = r)$ if and only if $r < (n + 1)p - 1$.<br><br><strong>(ii)</strong> A secondary trial is conducted with $n = 74$ patients and $p = 0.4$. Use the condition in part <strong>(c)(i)</strong> to determine the most likely number(s) of complete recoveries.",
+  "steps": [
+    "<strong>(a) Normal Approximation for an Interval:</strong><br><br>For $Y \\sim \\text{B}(300, 0.4)$:\\begin{aligned} \\mu &= 300(0.4) \\cr &= 120 \\cr \\sigma^2 &= 300(0.4)(0.6) \\cr &= 72 \\end{aligned}<br>Applying continuity corrections for $110 \\le Y \\le 135$:\\begin{aligned} \\text{P}(110 \\le Y \\le 135) &\\approx \\text{P}(109.5 \\le Y_{\\text{norm}} \\le 135.5) \\end{aligned}<br>Standardising both endpoints:\\begin{aligned} z_1 &= \\dfrac{109.5 - 120}{\\sqrt{72}} \\cr &\\approx -1.237 \\cr z_2 &= \\dfrac{135.5 - 120}{\\sqrt{72}} \\cr &\\approx 1.827 \\end{aligned}<br>Evaluating probabilities:\\begin{aligned} \\text{P}(-1.237 \\le Z \\le 1.827) &= \\Phi(1.827) - \\Phi(-1.237) \\cr &= 0.9661 - (1 - 0.8920) \\cr &= 0.9661 - 0.1080 \\cr &= 0.858 \\end{aligned}",
+    "<strong>(b) General Successive Ratio Proof:</strong><br><br>By definition of the binomial distribution:\\begin{aligned} \\text{P}(X = r) &= \\dfrac{n!}{r!(n-r)!} p^r q^{n-r} \\cr \\text{P}(X = r + 1) &= \\dfrac{n!}{(r+1)!(n-r-1)!} p^{r+1} q^{n-r-1} \\end{aligned}<br>Taking the ratio:\\begin{aligned} \\dfrac{\\text{P}(X = r + 1)}{\\text{P}(X = r)} &= \\dfrac{\\frac{n!}{(r+1)!(n-r-1)!} p^{r+1} q^{n-r-1}}{\\frac{n!}{r!(n-r)!} p^r q^{n-r}} \\cr &= \\dfrac{r!(n-r)!}{(r+1)!(n-r-1)!} \\times \\dfrac{p^{r+1}}{p^r} \\times \\dfrac{q^{n-r-1}}{q^{n-r}} \\cr &= \\left(\\dfrac{n - r}{r + 1}\\right)\\left(\\dfrac{p}{q}\\right) \\end{aligned}",
+    "<strong>(c)(i) & (ii) Deducing the Inequality and Finding the Mode:</strong><br><br>The probability increases if the ratio exceeds $1$:\\begin{aligned} &\\left(\\dfrac{n - r}{r + 1}\\right)\\left(\\dfrac{p}{q}\\right) > 1 \\cr &(n - r)p > (r + 1)q \\cr &np - rp > rq + q \\cr &np - q > r(p + q) \\cr &np - (1 - p) > r(1) \\cr &r < (n + 1)p - 1 \\end{aligned}<br>For $n = 74$ and $p = 0.4$:\\begin{aligned} (n + 1)p - 1 &= (75)(0.4) - 1 \\cr &= 30 - 1 \\cr &= 29 \\end{aligned}<br>Hence $\\text{P}(X = r + 1) > \\text{P}(X = r)$ for all integers $r \\le 28$.<br><br>At $r = 29$, the ratio equals exactly $1$, giving:\\begin{aligned} \\text{P}(X = 30) = \\text{P}(X = 29) \\end{aligned}<br>For $r \\ge 30$, the ratio is strictly less than $1$.<br><br>Therefore, the distribution is bimodal with joint modes at $29$ and $30$.",
+    "Final Answer: (a) $0.858$, (c)(ii) $29$ and $30$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $0.858$, (c)(ii) $30$ only",
+      "feedback": "Assuming that $r < 29$ strictly isolates $X = 30$ overlooks that when $r = 29$ the ratio equals $1$, making $29$ and $30$ equal modes."
+    },
+    {
+      "ans": "(a) $0.835$, (c)(ii) $29$ and $30$",
+      "feedback": "Neglecting the continuity corrections entirely and evaluating between $110$ and $135$ gives $z_1 = -1.179$ and $z_2 = 1.768$, yielding $0.835$."
+    },
+    {
+      "ans": "(a) $0.858$, (c)(ii) $29$ only",
+      "feedback": "Selecting $29$ alone fails to observe that $r = 29$ yields $\\text{P}(X = 30) = \\text{P}(X = 29)$, so $30$ is also a modal peak."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Deriving the Binomial Mode Rule",
+    "content": "The relation $r < (n + 1)p - 1$ is a powerful result. If $(n + 1)p$ is not an integer, the floor $\\lfloor (n + 1)p \\rfloor$ gives the unique mode. If $(n + 1)p$ is an integer $m$, the probabilities at $m - 1$ and $m$ are identical, creating two modes. Keeping $p + q = 1$ in mind when rearranging $(n - r)p > (r + 1)q$ avoids messy fraction algebra."
+  }
+},
+{
+  "id": "050120",
+  "group_id": "050116",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Binomial Distribution & Normal Approximation",
+  "subtopic": [
+    "Normal Approximation to Binomial",
+    "Ratio Monotonicity",
+    "Exact Mode Probability"
+  ],
+  "img": false,
+  "question": "<em>In this question you must show detailed reasoning.</em><br><br>A manufacturing process produces high-precision ceramic tiles. The probability that any tile has a surface flaw is $0.08$, independently of all other tiles.<br><br><strong>(a)</strong> In a production run of $800$ tiles, the random variable $Y$ denotes the number of flawed tiles.<br><br>Using a suitable Normal approximation with a continuity correction, calculate the probability that the number of flawed tiles lies strictly within $1$ standard deviation of the mean. Give your answer to 3 significant figures.<br><br><strong>(b)</strong> A quality control technician takes a smaller random sample of $50$ tiles. The random variable $X$ denotes the number of flawed tiles in this sample, so that $X \\sim \\text{B}(50, 0.08)$.<br><br><strong>(i)</strong> Show that $\\dfrac{\\text{P}(X = r + 1)}{\\text{P}(X = r)} = \\dfrac{2(50 - r)}{23(r + 1)}$.<br><br><strong>(ii)</strong> Prove that $\\text{P}(X = r)$ is strictly decreasing for all integers $r \\ge 4$.<br><br><strong>(iii)</strong> Hence determine the mode of $X$, and calculate $\\text{P}(X = \\text{mode})$ correct to 4 decimal places.",
+  "steps": [
+    "<strong>(a) Normal Approximation within 1 Standard Deviation:</strong><br><br>For $Y \\sim \\text{B}(800, 0.08)$:\\begin{aligned} \\mu &= 800(0.08) \\cr &= 64 \\cr \\sigma^2 &= 800(0.08)(0.92) \\cr &= 58.88 \\cr \\sigma &= \\sqrt{58.88} \\cr &\\approx 7.6733 \\end{aligned}<br>The interval strictly within $1$ standard deviation of the mean is:\\begin{aligned} (\\mu - \\sigma, \\mu + \\sigma) &= (64 - 7.6733, 64 + 7.6733) \\cr &= (56.327, 71.673) \\end{aligned}<br>The discrete integer values in this range are $57 \\le Y \\le 71$.<br><br>Applying continuity corrections:\\begin{aligned} \\text{P}(57 \\le Y \\le 71) &\\approx \\text{P}(56.5 \\le Y_{\\text{norm}} \\le 71.5) \\end{aligned}<br>Standardising the symmetric boundaries:\\begin{aligned} z &= \\dfrac{71.5 - 64}{7.6733} \\cr &\\approx 0.9774 \\end{aligned}<br>Evaluating the probability:\\begin{aligned} \\text{P}(-0.9774 \\le Z \\le 0.9774) &= 2\\Phi(0.9774) - 1 \\cr &= 2(0.8358) - 1 \\cr &= 0.672 \\end{aligned}",
+    "<strong>(b)(i) Consecutive Probability Ratio:</strong><br><br>With $p = 0.08$ and $q = 0.92$, the ratio $\\frac{p}{q} = \\frac{0.08}{0.92} = \\frac{2}{23}$.<br><br>Taking consecutive binomial terms:\\begin{aligned} \\dfrac{\\text{P}(X = r + 1)}{\\text{P}(X = r)} &= \\dfrac{50 - r}{r + 1} \\times \\dfrac{p}{q} \\cr &= \\dfrac{50 - r}{r + 1} \\times \\dfrac{2}{23} \\cr &= \\dfrac{2(50 - r)}{23(r + 1)} \\end{aligned}",
+    "<strong>(b)(ii) Proof of Strictly Decreasing Sequence for $r \\ge 4$:</strong><br><br>The sequence is strictly decreasing when the ratio is strictly less than $1$:\\begin{aligned} &\\dfrac{2(50 - r)}{23(r + 1)} < 1 \\cr &100 - 2r < 23r + 23 \\cr &25r > 77 \\cr &r > 3.08 \\end{aligned}<br>Since $r$ is an integer, $r > 3.08$ holds for all $r \\ge 4$. Therefore, $\\text{P}(X = r + 1) < \\text{P}(X = r)$ for all $r \\ge 4$, proving the sequence is strictly decreasing.",
+    "<strong>(b)(iii) Mode and Exact Probability:</strong><br><br>Checking the ratio at $r = 3$:\\begin{aligned} \\dfrac{\\text{P}(X = 4)}{\\text{P}(X = 3)} &= \\dfrac{2(50 - 3)}{23(3 + 1)} \\cr &= \\dfrac{94}{92} > 1 \\end{aligned}<br>Since $\\text{P}(X = 4) > \\text{P}(X = 3)$ and probabilities decrease strictly for all $r \\ge 4$, the mode is $4$.<br><br>Calculating the exact binomial probability at the mode:\\begin{aligned} \\text{P}(X = 4) &= \\binom{50}{4}(0.08)^4 (0.92)^{46} \\cr &= 230\\,300 \\times (0.00004096) \\times (0.0215894) \\cr &\\approx 0.2037 \\end{aligned}",
+    "Final Answer: (a) $0.672$, (b)(iii) Mode $= 4$, $\\text{P}(X = 4) = 0.2037$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $0.683$, (b)(iii) Mode $= 4$, $\\text{P}(X = 4) = 0.2037$",
+      "feedback": "Using the continuous standard Normal empirical rule $\\text{P}(-1 < Z < 1) \\approx 0.683$ ignores the discrete integer range and continuity correction."
+    },
+    {
+      "ans": "(a) $0.672$, (b)(iii) Mode $= 3$, $\\text{P}(X = 4) = 0.2037$",
+      "feedback": "Selecting $r = 3$ as the mode confuses the last index of the comparison step with the peak outcome at $r + 1 = 4$."
+    },
+    {
+      "ans": "(a) $0.672$, (b)(iii) Mode $= 4$, $\\text{P}(X = 4) = 0.1954$",
+      "feedback": "Using a Poisson approximation $\\text{Po}(4)$ gives $\\frac{4^4 e^{-4}}{4!} \\approx 0.1954$ rather than computing the exact binomial probability."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Discreteness in Standard Deviation Intervals",
+    "content": "When asked for the probability of being within $1$ standard deviation of the mean for an approximated Binomial distribution, do not simply write down $0.683$. The random variable $Y$ is discrete. First calculate $(\\mu - \\sigma, \\mu + \\sigma) = (56.33, 71.67)$, identify the exact integer bounds $57 \\le Y \\le 71$, and only then apply continuity corrections to get $56.5$ and $71.5$."
+  }
 }
 ];
