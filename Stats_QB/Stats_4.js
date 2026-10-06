@@ -204,5 +204,5 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: Variance Scaling Property",
     "content": "For a linear transformation $Y = aX + b$, the constant shift $b$ disappears in variance and standard deviation: $\\text{Var}(Y) = a^2\\text{Var}(X)$ and $\\sigma_Y = |a|\\sigma_X$. The fixed entry fee of $£1.00$ affects expected earnings but has zero impact on volatility."
   }
-}
+}   
 ];

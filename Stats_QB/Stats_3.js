@@ -2080,5 +2080,5 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: Multi-Category Binomial Deductions",
     "content": "When a problem specifies three outcomes ('Pass', 'Rework', 'Scrap') and asks for $3$ 'Pass' and $0$ 'Scrap' in $4$ boards, the $4\\text{th}$ board is forced to be 'Rework'. This reduces a three-category problem into a simple two-outcome binomial coefficient: $\\binom{4}{3}(0.70)^3(0.20)^1$."
   }
-}
+}  
 ];
