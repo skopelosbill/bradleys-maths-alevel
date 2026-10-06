@@ -1875,5 +1875,210 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: Greek Letters for Population Hypotheses",
     "content": "Always state correlation hypotheses using the Greek letter $\\rho$ (rho), representing the population correlation coefficient: $H_0: \\rho = 0$. Using the sample statistic $r$ (e.g. $H_0: r = 0$) is a common error that will lose the hypothesis mark."
   }
+},
+{
+  "id": "050146",
+  "group_id": "050146",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Probability",
+  "subtopic": [
+    "Independent Events",
+    "Complementary Events",
+    "Exhaustive Outcomes"
+  ],
+  "img": false,
+  "question": "The probability that Redstone HC wins a league hockey match is $\\text{P}(W) = 0.45$, independently of all other matches.<br><br><strong>(a)</strong> Calculate the probability that Redstone HC fails to win each of their next two league hockey matches.<br><br>The probability that Redstone HC loses a league hockey match is $\\text{P}(L) = 0.35$.<br><br><strong>(b)</strong> Explain why $\\text{P}(W) + \\text{P}(L) \\neq 1$, and state the probability that a match ends in a draw.",
+  "steps": [
+    "<strong>(a) Probability of Failing to Win Two Consecutive Matches:</strong><br><br>Find the probability of not winning a single match:\\begin{aligned} &\\text{P}(W') \\cr &\\quad = 1 - 0.45 \\cr &\\quad = 0.55 \\end{aligned}<br>Since match outcomes are independent, multiply the probabilities:\\begin{aligned} &\\text{P}(W' \\cap W') \\cr &\\quad = 0.55 \\times 0.55 \\cr &\\quad = 0.3025 \\end{aligned}",
+    "<strong>(b) Non-Exhaustive Outcomes and Draw Probability:</strong><br><br>Winning and losing are not the only possible outcomes; a league match can also end in a draw ($D$).<br><br>Because winning, losing, and drawing are mutually exclusive and exhaustive:\\begin{aligned} &\\text{P}(W) + \\text{P}(L) \\cr &\\quad + \\text{P}(D) = 1 \\end{aligned}<br>Calculate the probability of a draw:\\begin{aligned} &\\text{P}(D) \\cr &\\quad = 1 - (0.45 + 0.35) \\cr &\\quad = 1 - 0.80 \\cr &\\quad = 0.20 \\end{aligned}",
+    "Final Answer: (a) $0.3025$, (b) Matches can end in a draw, $\\text{P}(D) = 0.20$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $0.2025$, (b) Matches can end in a draw, $\\text{P}(D) = 0.20$",
+      "feedback": "Squaring $0.45$ rather than the complement $1 - 0.45 = 0.55$ gives the probability of winning both matches ($0.2025$)."
+    },
+    {
+      "ans": "(a) $0.3025$, (b) Events are not independent, $\\text{P}(D) = 0.20$",
+      "feedback": "Probabilities fail to sum to $1$ because the outcomes are not exhaustive, not because of a lack of independence."
+    },
+    {
+      "ans": "(a) $0.3025$, (b) Matches can end in a draw, $\\text{P}(D) = 0.10$",
+      "feedback": "An arithmetic error when adding $0.45 + 0.35 = 0.80$ incorrectly calculates $1 - 0.90 = 0.10$ for the draw probability."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Complementary vs Exhaustive Sets",
+    "content": "For probabilities to sum to $1$, the set of events must be both mutually exclusive and exhaustive. In sporting contexts with three outcomes (win, loss, draw), $W$ and $L$ alone are never exhaustive."
+  }
+},
+{
+  "id": "050147",
+  "group_id": "050146",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Probability",
+  "subtopic": [
+    "Discrete Outcome Modelling",
+    "Independent Trials",
+    "Points System"
+  ],
+  "img": false,
+  "question": "A sports analyst models the outcomes of league football matches for a team. In any match, the probabilities of winning, drawing, and losing are modelled as:<br>$$\\text{P}(W) = 0.50, \\quad \\text{P}(D) = 0.20, \\quad \\text{P}(L) = 0.30$$<br>In the league competition, a team is awarded $3$ points for a win, $1$ point for a draw, and $0$ points for a loss. The outcomes of successive matches are assumed to be independent.<br><br><strong>(a)</strong> State what is meant by the assumption that the outcomes of successive matches are independent.<br><br><strong>(b)</strong> Find the probability that the team earns:<br><strong>(i)</strong> exactly $4$ points from their next two matches;<br><strong>(ii)</strong> at least $2$ points from their next two matches.",
+  "steps": [
+    "<strong>(a) Meaning of Independence:</strong><br><br>Independence means that the outcome or result of any match has no effect on the probability of any outcome in any subsequent match.",
+    "<strong>(b)(i) Earning Exactly 4 Points:</strong><br><br>A total of $4$ points from two matches requires one win ($3$ points) and one draw ($1$ point).<br><br>The possible sequences are $(W, D)$ or $(D, W)$:\\begin{aligned} &\\text{P}(W, D) \\cr &\\quad = 0.50 \\times 0.20 \\cr &\\quad = 0.10 \\cr &\\text{P}(D, W) \\cr &\\quad = 0.20 \\times 0.50 \\cr &\\quad = 0.10 \\end{aligned}<br>Summing these mutually exclusive sequences:\\begin{aligned} &\\text{P}(\\text{4 points}) \\cr &\\quad = 0.10 + 0.10 \\cr &\\quad = 0.20 \\end{aligned}",
+    "<strong>(b)(ii) Earning at Least 2 Points:</strong><br><br>The complement of earning at least $2$ points is earning fewer than $2$ points ($0$ or $1$ point):<br><br>Outcomes giving $0$ points:\\begin{aligned} &\\text{P}(L, L) \\cr &\\quad = 0.30 \\times 0.30 \\cr &\\quad = 0.09 \\end{aligned}<br>Outcomes giving $1$ point:\\begin{aligned} &\\text{P}(L, D) \\cr &\\quad = 0.30 \\times 0.20 \\cr &\\quad = 0.06 \\cr &\\text{P}(D, L) \\cr &\\quad = 0.20 \\times 0.30 \\cr &\\quad = 0.06 \\end{aligned}<br>Total probability of the complement:\\begin{aligned} &\\text{P}(< 2\\text{ points}) \\cr &\\quad = 0.09 + 0.06 \\cr &\\qquad + 0.06 \\cr &\\quad = 0.21 \\end{aligned}<br>Using the complement rule:\\begin{aligned} &\\text{P}(\\ge 2\\text{ points}) \\cr &\\quad = 1 - 0.21 \\cr &\\quad = 0.79 \\end{aligned}",
+    "Final Answer: (a) Outcome of one match does not affect another, (b)(i) $0.20$, (ii) $0.79$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Outcome of one match does not affect another, (b)(i) $0.10$, (ii) $0.79$",
+      "feedback": "Calculating only $(W, D)$ and neglecting the reverse order $(D, W)$ halves the required probability."
+    },
+    {
+      "ans": "(a) Outcome of one match does not affect another, (b)(i) $0.20$, (ii) $0.85$",
+      "feedback": "Omitting one of the 1-point combinations ($(D, L)$) subtracts only $0.15$ instead of $0.21$, giving $0.85$."
+    },
+    {
+      "ans": "(a) Probabilities must sum to 1, (b)(i) $0.20$, (ii) $0.79$",
+      "feedback": "Summing to $1$ defines an exhaustive set of outcomes, whereas independence concerns the lack of influence between consecutive events."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Complement Shortcut for Points",
+    "content": "To find $\\text{P}(\\ge 2\\text{ points})$, listing winning pairs requires evaluating $(W, W)$, $(W, D)$, $(D, W)$, and $(D, D)$. The complement is much quicker: only $(L, L)$, $(L, D)$, and $(D, L)$ give fewer than $2$ points."
+  }
+},
+{
+  "id": "050148",
+  "group_id": "050146",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Probability",
+  "subtopic": [
+    "Addition Law",
+    "Multiplication Law",
+    "Mutually Exclusive vs Independent Events"
+  ],
+  "img": false,
+  "question": "Two events, $A$ and $B$, associated with a random experiment satisfy:<br>$$\\text{P}(A) = 0.60, \\quad \\text{P}(B) = 0.35, \\quad \\text{P}(A \\cup B) = 0.74$$<br><strong>(a)</strong> Determine whether events $A$ and $B$ are mutually exclusive. Justify your answer.<br><br><strong>(b)</strong> Determine whether events $A$ and $B$ are statistically independent, showing detailed reasoning.<br><br><strong>(c)</strong> Find $\\text{P}(A \\cap B')$, where $B'$ denotes the complement of event $B$.",
+  "steps": [
+    "<strong>(a) Testing Mutual Exclusivity:</strong><br><br>If events $A$ and $B$ are mutually exclusive, then $\\text{P}(A \\cap B) = 0$, so $\\text{P}(A \\cup B) = \\text{P}(A) + \\text{P}(B)$.<br><br>Calculate the sum:\\begin{aligned} &\\text{P}(A) + \\text{P}(B) \\cr &\\quad = 0.60 + 0.35 \\cr &\\quad = 0.95 \\end{aligned}<br>Compare with $\\text{P}(A \\cup B)$:\\begin{aligned} 0.74 \\neq 0.95 \\end{aligned}<br>Because $\\text{P}(A \\cup B) \\neq \\text{P}(A) + \\text{P}(B)$, the events are <strong>not mutually exclusive</strong>.",
+    "<strong>(b) Testing Statistical Independence:</strong><br><br>First find $\\text{P}(A \\cap B)$ using the addition law:\\begin{aligned} &\\text{P}(A \\cap B) \\cr &\\quad = \\text{P}(A) + \\text{P}(B) \\cr &\\qquad - \\text{P}(A \\cup B) \\cr &\\quad = 0.95 - 0.74 \\cr &\\quad = 0.21 \\end{aligned}<br>Calculate the product of individual probabilities:\\begin{aligned} &\\text{P}(A) \\times \\text{P}(B) \\cr &\\quad = 0.60 \\times 0.35 \\cr &\\quad = 0.21 \\end{aligned}<br>Because $\\text{P}(A \\cap B) = \\text{P}(A)\\text{P}(B) = 0.21$, the events are <strong>independent</strong>.",
+    "<strong>(c) Evaluating $\\text{P}(A \\cap B')$:</strong><br><br>By the subtraction rule for Venn diagram regions:\\begin{aligned} &\\text{P}(A \\cap B') \\cr &\\quad = \\text{P}(A) \\cr &\\qquad - \\text{P}(A \\cap B) \\cr &\\quad = 0.60 - 0.21 \\cr &\\quad = 0.39 \\end{aligned}",
+    "Final Answer: (a) Not mutually exclusive, (b) Independent, (c) $0.39$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Mutually exclusive, (b) Independent, (c) $0.39$",
+      "feedback": "Since $\\text{P}(A \\cap B) = 0.21 \\neq 0$, the events overlap and cannot be mutually exclusive."
+    },
+    {
+      "ans": "(a) Not mutually exclusive, (b) Not independent, (c) $0.39$",
+      "feedback": "Because $\\text{P}(A \\cap B)$ equals the product $\\text{P}(A)\\text{P}(B) = 0.21$, the mathematical definition of independence is satisfied."
+    },
+    {
+      "ans": "(a) Not mutually exclusive, (b) Independent, (c) $0.25$",
+      "feedback": "Calculating $\\text{P}(A) - \\text{P}(B) = 0.25$ ignores the intersection term $\\text{P}(A \\cap B)$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Mutually Exclusive vs Independent",
+    "content": "A frequent misconception is confusing mutually exclusive events with independent events. If two non-zero events are mutually exclusive, they cannot be independent because the occurrence of one prevents the other: $\\text{P}(A \\cap B) = 0 \\neq \\text{P}(A)\\text{P}(B)$."
+  }
+},
+{
+  "id": "050149",
+  "group_id": "050146",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Probability",
+  "subtopic": [
+    "Conditional Probability",
+    "Dependent Consecutive Trials",
+    "Bayes' Inversion"
+  ],
+  "img": false,
+  "question": "A tennis player's performance in consecutive tournament matches is influenced by recent form:<br>• If the player wins a match, the probability they win their subsequent match is $0.70$.<br>• If the player does not win a match, the probability they win their subsequent match is $0.40$.<br><br>Matches cannot end in a draw. The probability that the player wins their opening match of a tournament is $0.60$.<br><br><strong>(a)</strong> Find the probability that the player wins their second match.<br><br><strong>(b)</strong> Find the probability that the player wins exactly one of their first two matches.<br><br><strong>(c)</strong> Given that the player won their second match, calculate the probability that they also won their first match. Give your answer as an exact fraction in simplest form.",
+  "steps": [
+    "<strong>(a) Probability of Winning Match 2:</strong><br><br>Let $W_1$ and $W_2$ be the events of winning match 1 and match 2.<br><br>Using the law of total probability:\\begin{aligned} &\\text{P}(W_2) \\cr &\\quad = \\text{P}(W_1 \\cap W_2) \\cr &\\qquad + \\text{P}(W_1' \\cap W_2) \\cr &\\quad = (0.60)(0.70) \\cr &\\qquad + (0.40)(0.40) \\cr &\\quad = 0.42 + 0.16 \\cr &\\quad = 0.58 \\end{aligned}",
+    "<strong>(b) Winning Exactly One Match:</strong><br><br>The two mutually exclusive winning paths are $(W_1, W_2')$ or $(W_1', W_2)$:\\begin{aligned} &\\text{P}(W_1, W_2') \\cr &\\quad = 0.60 \\times 0.30 \\cr &\\quad = 0.18 \\cr &\\text{P}(W_1', W_2) \\cr &\\quad = 0.40 \\times 0.40 \\cr &\\quad = 0.16 \\end{aligned}<br>Summing the probabilities:\\begin{aligned} &\\text{Total} \\cr &\\quad = 0.18 + 0.16 \\cr &\\quad = 0.34 \\end{aligned}",
+    "<strong>(c) Conditional Probability $\\text{P}(W_1 \\mid W_2)$:</strong><br><br>Using the conditional probability definition:\\begin{aligned} &\\text{P}(W_1 \\mid W_2) \\cr &\\quad = \\dfrac{\\text{P}(W_1 \\cap W_2)}{\\text{P}(W_2)} \\cr &\\quad = \\dfrac{0.42}{0.58} \\cr &\\quad = \\dfrac{42}{58} \\cr &\\quad = \\dfrac{21}{29} \\end{aligned}",
+    "Final Answer: (a) $0.58$, (b) $0.34$, (c) $\\dfrac{21}{29}$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $0.58$, (b) $0.34$, (c) $\\dfrac{21}{50}$",
+      "feedback": "Using the joint probability $0.42$ directly without conditioning on $\\text{P}(W_2) = 0.58$ incorrectly evaluates $\\frac{42}{100} = \\frac{21}{50}$."
+    },
+    {
+      "ans": "(a) $0.58$, (b) $0.42$, (c) $\\dfrac{21}{29}$",
+      "feedback": "Calculating the probability of winning both matches ($0.42$) rather than exactly one match gives $0.42$ in part (b)."
+    },
+    {
+      "ans": "(a) $0.70$, (b) $0.34$, (c) $\\dfrac{21}{29}$",
+      "feedback": "Assuming the second match probability is unconditionally $0.70$ ignores the conditional branch where match 1 was lost."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Inverting Conditioning Paths",
+    "content": "Questions asking for the probability of the first event given the second event (e.g. $\\text{P}(W_1 \\mid W_2)$) always require Bayes' formulation. Your denominator is the total probability from part (a), and the numerator is the single $(W_1, W_2)$ branch."
+  }
+},
+{
+  "id": "050150",
+  "group_id": "050146",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Probability",
+  "subtopic": [
+    "Exhaustive Events",
+    "Sequential Trials",
+    "Compound Outcomes"
+  ],
+  "img": false,
+  "question": "An automated diagnostic tool inspects electronic circuit boards. Each board is classified as either 'Pass', 'Rework', or 'Scrap', independently of all other boards. Long-term quality control records show:<br>$$\\text{P}(\\text{Pass}) = 0.70, \\quad \\text{P}(\\text{Rework}) = 0.20, \\quad \\text{P}(\\text{Scrap}) = 0.10$$<br><strong>(a)</strong> State, with a brief explanation, why the events 'Pass', 'Rework', and 'Scrap' form an exhaustive set of mutually exclusive outcomes.<br><br><strong>(b)</strong> Boards are inspected sequentially one after another.<br><strong>(i)</strong> Find the probability that the first board classified as 'Scrap' is the $4\\text{th}$ board inspected.<br><strong>(ii)</strong> Find the probability that at least one of the first $3$ boards inspected is classified as 'Scrap'.<br><br><strong>(c)</strong> In a random sample of $4$ inspected boards, calculate the probability that exactly $3$ boards 'Pass' and none are 'Scrap'.",
+  "steps": [
+    "<strong>(a) Mutually Exclusive and Exhaustive Property:</strong><br><br>The outcomes are mutually exclusive because each board can be assigned to only one classification category. They are exhaustive because every board must receive one of these classifications, confirmed by the probabilities summing to $1$:\\begin{aligned} &0.70 + 0.20 \\cr &\\quad + 0.10 = 1 \\end{aligned}",
+    "<strong>(b)(i) First Scrap on the 4th Inspection:</strong><br><br>The first $3$ boards must not be 'Scrap', followed by 'Scrap' on the $4\\text{th}$:\\begin{aligned} &\\text{P}(\\text{Not Scrap}) \\cr &\\quad = 1 - 0.10 \\cr &\\quad = 0.90 \\end{aligned}<br>Calculate the sequential probability:\\begin{aligned} &\\text{P}(S', S', S', S) \\cr &\\quad = (0.90)^3 \\times 0.10 \\cr &\\quad = 0.729 \\times 0.10 \\cr &\\quad = 0.0729 \\end{aligned}",
+    "<strong>(b)(ii) At Least One Scrap in First 3 Boards:</strong><br><br>Use the complement of no boards being 'Scrap' in the first $3$:\\begin{aligned} &\\text{P}(\\text{No Scrap in 3}) \\cr &\\quad = (0.90)^3 \\cr &\\quad = 0.729 \\end{aligned}<br>Evaluate the complement:\\begin{aligned} &\\text{P}(\\ge 1\\text{ Scrap}) \\cr &\\quad = 1 - 0.729 \\cr &\\quad = 0.271 \\end{aligned}",
+    "<strong>(c) Exactly 3 Pass and 0 Scrap in 4 Boards:</strong><br><br>Because no boards are 'Scrap', the remaining $1$ board must be classified as 'Rework'.<br><br>The sequence contains three 'Pass' and one 'Rework'. The number of arrangements is:\\begin{aligned} &\\binom{4}{3} = 4 \\end{aligned}<br>Calculate the binomial probability:\\begin{aligned} &\\text{P}(3P, 1R) \\cr &\\quad = 4 \\times (0.70)^3 \\cr &\\qquad \\times (0.20) \\cr &\\quad = 4 \\times 0.343 \\cr &\\qquad \\times 0.20 \\cr &\\quad = 4 \\times 0.0686 \\cr &\\quad = 0.2744 \\end{aligned}",
+    "Final Answer: (a) Mutually exclusive and probabilities sum to $1$, (b)(i) $0.0729$, (ii) $0.271$, (c) $0.2744$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Mutually exclusive and probabilities sum to $1$, (b)(i) $0.0729$, (ii) $0.271$, (c) $0.0686$",
+      "feedback": "Calculating $(0.70)^3 \\times 0.20$ accounts for only one order $(P, P, P, R)$ and omits the combinations multiplier $\\binom{4}{3} = 4$."
+    },
+    {
+      "ans": "(a) Mutually exclusive and probabilities sum to $1$, (b)(i) $0.0810$, (ii) $0.271$, (c) $0.2744$",
+      "feedback": "Using $(0.90)^2 \\times 0.10$ calculates the first scrap on the 3rd trial rather than the 4th trial."
+    },
+    {
+      "ans": "(a) Independent events that sum to $1$, (b)(i) $0.0729$, (ii) $0.300$, (c) $0.2744$",
+      "feedback": "Summing $3 \\times 0.10 = 0.30$ ignores the compounding of independent trials and treats outcomes as mutually exclusive across trials."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Multi-Category Binomial Deductions",
+    "content": "When a problem specifies three outcomes ('Pass', 'Rework', 'Scrap') and asks for $3$ 'Pass' and $0$ 'Scrap' in $4$ boards, the $4\\text{th}$ board is forced to be 'Rework'. This reduces a three-category problem into a simple two-outcome binomial coefficient: $\\binom{4}{3}(0.70)^3(0.20)^1$."
+  }
 }
 ];
