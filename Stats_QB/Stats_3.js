@@ -1235,7 +1235,7 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: Systematic Summation of Fractions",
     "content": "When evaluating sums of independent observations with fractional probabilities, group identical terms before converting to a common denominator: $2\\left(\\frac{1}{16}\\right) + \\frac{1}{8} = \\frac{1}{8} + \\frac{1}{8} = \\frac{1}{4}$. Grouping powers of $2$ reduces large denominators and prevents arithmetic errors."
   }
-}
+},
 {
   "id": "050131",
   "group_id": "050131",
