@@ -408,5 +408,218 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: Two-Stage Nested Binomial Models",
     "content": "This is a classic 'binomial within a binomial' exam structure. Stage 1 finds the probability of an individual box meeting quality control ($p = 0.9139$). Stage 2 treats that probability as the parameter for a new binomial distribution of boxes: $Y \\sim \\text{B}(5, 0.9139)$."
   }
+},
+{
+  "id": "050161",
+  "group_id": "050161",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Statistical Measures",
+  "subtopic": [
+    "Stem-and-Leaf Diagrams",
+    "Skewness",
+    "Mode vs Median",
+    "Outlier Calculations"
+  ],
+  "img": false,
+  "question": "At the end of the autumn term at Oakridge Academy, the marks out of $100$ achieved by the $29$ students in the top mathematics set are recorded in the ordered stem-and-leaf diagram below:<br><br>\\begin{aligned} &\\begin{array}{r|l} \\text{Stem} & \\text{Leaf} \\cr \\hline 4 & 8 \\cr 5 & 2\\,9 \\cr 6 & 1\\,4\\,7 \\cr 7 & 0\\,2\\,3\\,5\\,8 \\cr 8 & 1\\,3\\,4\\,4 \\cr & 5\\,7\\,8\\,8 \\cr 9 & 0\\,1\\,2\\,2\\,2 \\cr & 4\\,6\\,8\\,8\\,9 \\end{array} \\end{aligned}<br><br>$\\text{Key: } 6 \\mid 4 \\text{ represents a mark of } 64$<br><br><strong>(a)</strong> Describe the shape of the distribution.<br><br><strong>(b)</strong> The head of department claims that a typical student in the class achieved a mark of $92$. How did she justify this statement?<br><br><strong>(c)</strong> The class teacher claims that the average mark achieved was $84$. How did he justify this statement?<br><br><strong>(d)</strong> Daniel achieved a mark of $48$ in the test. If any student's mark is an outlier in the lower tail of the distribution, that student must attend compulsory support sessions.<br><br>Determine whether Daniel must attend compulsory support sessions.",
+  "steps": [
+    "<strong>(a) Shape of the Distribution:</strong><br><br>The distribution is <strong>negatively skewed</strong> (skewed to the left). The bulk of the data clusters at the higher marks, with a longer tail stretching towards the lower marks.",
+    "<strong>(b) Justification for Mark 92:</strong><br><br>The head of department used the <strong>mode</strong>.<br><br>The mark $92$ is the most frequent score, appearing three times in the stem of $9$.",
+    "<strong>(c) Justification for Mark 84:</strong><br><br>The class teacher used the <strong>median</strong>.<br><br>For $n = 29$ students, the median rank is:\\begin{aligned} &\\text{Median Rank} \\cr &\\quad = \\dfrac{29 + 1}{2} \\cr &\\quad = 15\\text{th} \\end{aligned}<br>Counting to the $15\\text{th}$ value gives $84$.",
+    "<strong>(d) Lower Tail Outlier Test:</strong><br><br>Find the quartiles for $n = 29$:\\begin{aligned} &Q_1 \\text{ Rank} \\cr &\\quad = \\dfrac{29 + 1}{4} \\cr &\\quad = 7.5 \\to 8\\text{th} \\cr &Q_1 = 70 \\end{aligned}<br>\\begin{aligned} &Q_3 \\text{ Rank} \\cr &\\quad = \\dfrac{3(30)}{4} \\cr &\\quad = 22.5 \\to 22\\text{nd} \\cr &Q_3 = 92 \\end{aligned}<br>Calculate the interquartile range:\\begin{aligned} &\\text{IQR} \\cr &\\quad = 92 - 70 \\cr &\\quad = 22 \\end{aligned}<br>Calculate the lower outlier boundary:\\begin{aligned} &\\text{Lower Bound} \\cr &\\quad = Q_1 - 1.5(\\text{IQR}) \\cr &\\quad = 70 - 1.5(22) \\cr &\\quad = 70 - 33 \\cr &\\quad = 37 \\end{aligned}<br>Because Daniel's mark of $48$ is strictly greater than $37$, it is <strong>not an outlier</strong>.<br><br>Daniel does not need to attend compulsory support sessions.",
+    "Final Answer: (a) Negatively skewed, (b) Mode, (c) Median, (d) Not an outlier, does not attend"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Positively skewed, (b) Mode, (c) Median, (d) Not an outlier, does not attend",
+      "feedback": "Looking at the visual orientation upside-down confuses negative skew with positive skew; the tail points toward the lower values."
+    },
+    {
+      "ans": "(a) Negatively skewed, (b) Mean, (c) Median, (d) Not an outlier, does not attend",
+      "feedback": "A mark of $92$ is the most frequent score (the mode); the mean of this data set is lower than $92$."
+    },
+    {
+      "ans": "(a) Negatively skewed, (b) Mode, (c) Median, (d) Outlier, must attend",
+      "feedback": "Using an incorrect boundary of $Q_1 - \\text{IQR} = 48$ incorrectly flags Daniel's mark as an outlier."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Identifying Skewness in Stem-and-Leaf",
+    "content": "Turn the stem-and-leaf diagram on its side with the stem running horizontally. If the longer tail points left toward lower numbers, it is negatively skewed. If the tail stretches right toward higher numbers, it is positively skewed."
+  }
+},
+{
+  "id": "050162",
+  "group_id": "050161",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Statistical Measures",
+  "subtopic": [
+    "Back-to-Back Stem-and-Leaf",
+    "Comparative Measures",
+    "Skewness"
+  ],
+  "img": false,
+  "question": "A physics teacher gives the same test (marked out of $50$) to two different classes, Group A and Group B, each containing $21$ students. The results are shown in the back-to-back stem-and-leaf diagram below:<br><br>\\begin{aligned} &\\begin{array}{r|c|l} \\text{A} & \\text{Stem} & \\text{B} \\cr \\hline & 1 & 4\\,8\\,9 \\cr 8\\,5 & 2 & 1\\,3\\,5\\,7\\,8 \\cr 9\\,7\\,4\\,2 & 3 & 0\\,2\\,4\\,6 \\cr & & 8\\,9 \\cr 8\\,7\\,6\\,5 & 4 & 1\\,3\\,5\\,7 \\cr 3\\,1\\,0 & & \\cr 9\\,8\\,8\\,6 & 5 & 0 \\cr 5\\,4\\,2\\,0 & & \\end{array} \\end{aligned}<br><br>$\\text{Key: } 5 \\mid 2 \\mid 1 \\text{ represents } 25 \\text{ for A and } 21 \\text{ for B}$<br><br><strong>(a)</strong> For Group A:<br><strong>(i)</strong> Find the median mark.<br><strong>(ii)</strong> Find the interquartile range (IQR).<br><br><strong>(b)</strong> For Group B:<br><strong>(i)</strong> Find the median mark.<br><strong>(ii)</strong> Find the interquartile range (IQR).<br><br><strong>(c)</strong> Compare the performance of Group A and Group B in context, referencing both an appropriate measure of average and an appropriate measure of spread.<br><br><strong>(d)</strong> State, with a reason, whether the mean or the median is the more appropriate measure of central tendency to compare these two distributions.",
+  "steps": [
+    "<strong>(a) Summary Measures for Group A:</strong><br><br>For $n = 21$, the median rank is:\\begin{aligned} &\\text{Rank} \\cr &\\quad = \\dfrac{21 + 1}{2} \\cr &\\quad = 11\\text{th} \\cr &\\text{Median}_A = 45 \\end{aligned}<br>Find the quartiles:\\begin{aligned} &Q_1 \\text{ Rank} \\cr &\\quad = \\dfrac{21 + 1}{4} \\cr &\\quad = 5.5 \\to 6\\text{th} \\cr &Q_1 = 37 \\cr &Q_3 \\text{ Rank} \\cr &\\quad = \\dfrac{3(22)}{4} \\cr &\\quad = 16.5 \\to 16\\text{th} \\cr &Q_3 = 52 \\end{aligned}<br>Calculate the interquartile range:\\begin{aligned} &\\text{IQR}_A \\cr &\\quad = 52 - 37 \\cr &\\quad = 15 \\end{aligned}",
+    "<strong>(b) Summary Measures for Group B:</strong><br><br>For Group B ($n = 21$):\\begin{aligned} &\\text{Median}_B = 32 \\cr &Q_1 = 25 \\cr &Q_3 = 39 \\end{aligned}<br>Calculate the interquartile range:\\begin{aligned} &\\text{IQR}_B \\cr &\\quad = 39 - 25 \\cr &\\quad = 14 \\end{aligned}",
+    "<strong>(c) Comparison in Context:</strong><br><br><strong>Average:</strong> Group A achieved a higher average mark than Group B, with a median of $45$ compared to $32$.<br><br><strong>Spread:</strong> Both groups exhibited very similar consistency, with an IQR of $15$ for Group A and $14$ for Group B.",
+    "<strong>(d) Appropriateness of the Median:</strong><br><br>The <strong>median</strong> is more appropriate because the distribution for Group A is negatively skewed.<br><br>The median is unaffected by skewness or extreme values, whereas the mean would be pulled by the tail.",
+    "Final Answer: (a)(i) $45$, (ii) $15$, (b)(i) $32$, (ii) $14$, (c) Group A higher average, similar spread, (d) Median due to skewness"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a)(i) $45$, (ii) $15$, (b)(i) $32$, (ii) $14$, (c) Group B higher average, similar spread, (d) Median due to skewness",
+      "feedback": "Inverting the average comparison is incorrect; Group A has a higher median of $45$ compared to $32$ for Group B."
+    },
+    {
+      "ans": "(a)(i) $45$, (ii) $15$, (b)(i) $32$, (ii) $14$, (c) Group A higher average, similar spread, (d) Mean due to symmetry",
+      "feedback": "Group A is negatively skewed, so the distributions are not symmetric and the mean is not the preferred measure."
+    },
+    {
+      "ans": "(a)(i) $46$, (ii) $15$, (b)(i) $32$, (ii) $14$, (c) Group A higher average, similar spread, (d) Median due to skewness",
+      "feedback": "Reading leaves from the stem outward for Group A gives $45$ for the 11th value, not $46$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Reading Back-to-Back Leaves",
+    "content": "For the left-hand group in a back-to-back stem-and-leaf diagram, leaves are ordered from the central stem outward to the left: $4 \\mid 0, 1, 3, 5$ means scores are $40, 41, 43, 45$. Do not read them left-to-right from the margin."
+  }
+},
+{
+  "id": "050163",
+  "group_id": "050161",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Statistical Measures",
+  "subtopic": [
+    "Decimal Stem-and-Leaf",
+    "Two-Tailed Outlier Detection",
+    "Measures of Spread"
+  ],
+  "img": false,
+  "question": "A sports scientist measures the sprint times (in seconds) of $25$ athletes over a $100\\text{ m}$ track. The recorded times are displayed in the stem-and-leaf diagram below:<br><br>\\begin{aligned} &\\begin{array}{r|l} \\text{Stem} & \\text{Leaf} \\cr \\hline 11 & 8 \\cr 12 & 2\\,5\\,9 \\cr 13 & 1\\,4\\,4\\,6\\,8 \\cr 14 & 0\\,2\\,3\\,5 \\cr & 5\\,7\\,8\\,9 \\cr 15 & 1\\,2\\,4\\,6\\,8 \\cr 16 & 1\\,9 \\end{array} \\end{aligned}<br><br>$\\text{Key: } 13 \\mid 4 \\text{ represents a time of } 13.4\\text{ seconds}$<br><br><strong>(a)</strong> State the modal sprint time.<br><br><strong>(b)</strong> Calculate:<br><strong>(i)</strong> the median sprint time;<br><strong>(ii)</strong> the interquartile range (IQR) of the sprint times.<br><br><strong>(c)</strong> The fastest athlete recorded a time of $11.8\\text{ seconds}$ and the slowest athlete recorded a time of $16.9\\text{ seconds}$.<br><br>Using the $1.5 \\times \\text{IQR}$ rule, determine whether either of these extreme times is an outlier.",
+  "steps": [
+    "<strong>(a) Modal Sprint Time:</strong><br><br>The times $13.4\\text{ s}$ and $14.5\\text{ s}$ both occur with the highest frequency of $2$.<br><br>The distribution is <strong>bimodal</strong>, with modes $13.4\\text{ s}$ and $14.5\\text{ s}$.",
+    "<strong>(b)(i) Median Sprint Time:</strong><br><br>For $n = 25$, the median rank is:\\begin{aligned} &\\text{Rank} \\cr &\\quad = \\dfrac{25 + 1}{2} \\cr &\\quad = 13\\text{th} \\end{aligned}<br>Counting to the $13\\text{th}$ value gives:\\begin{aligned} &\\text{Median} \\cr &\\quad = 14.3\\text{ s} \\end{aligned}",
+    "<strong>(b)(ii) Interquartile Range:</strong><br><br>Find the quartiles:\\begin{aligned} &Q_1 \\text{ Rank} \\cr &\\quad = \\dfrac{25 + 1}{4} \\cr &\\quad = 6.5 \\to 7\\text{th} \\cr &Q_1 = 13.4\\text{ s} \\end{aligned}<br>\\begin{aligned} &Q_3 \\text{ Rank} \\cr &\\quad = \\dfrac{3(26)}{4} \\cr &\\quad = 19.5 \\to 19\\text{th} \\cr &Q_3 = 15.1\\text{ s} \\end{aligned}<br>Calculate the interquartile range:\\begin{aligned} &\\text{IQR} \\cr &\\quad = 15.1 - 13.4 \\cr &\\quad = 1.7\\text{ s} \\end{aligned}",
+    "<strong>(c) Outlier Checks on Both Tails:</strong><br><br>Calculate the lower outlier boundary:\\begin{aligned} &\\text{Lower Bound} \\cr &\\quad = Q_1 - 1.5(\\text{IQR}) \\cr &\\quad = 13.4 - 1.5(1.7) \\cr &\\quad = 13.4 - 2.55 \\cr &\\quad = 10.85\\text{ s} \\end{aligned}<br>Calculate the upper outlier boundary:\\begin{aligned} &\\text{Upper Bound} \\cr &\\quad = Q_3 + 1.5(\\text{IQR}) \\cr &\\quad = 15.1 + 1.5(1.7) \\cr &\\quad = 15.1 + 2.55 \\cr &\\quad = 17.65\\text{ s} \\end{aligned}<br>Because $11.8 > 10.85$ and $16.9 < 17.65$, <strong>neither</strong> time is classified as an outlier.",
+    "Final Answer: (a) Bimodal ($13.4\\text{ s}$ and $14.5\\text{ s}$), (b)(i) $14.3\\text{ s}$, (ii) $1.7\\text{ s}$, (c) Neither is an outlier"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $14.5\\text{ s}$, (b)(i) $14.3\\text{ s}$, (ii) $1.7\\text{ s}$, (c) Neither is an outlier",
+      "feedback": "The time $13.4\\text{ s}$ also appears twice, making the distribution bimodal rather than having $14.5\\text{ s}$ as a unique mode."
+    },
+    {
+      "ans": "(a) Bimodal ($13.4\\text{ s}$ and $14.5\\text{ s}$), (b)(i) $14.3\\text{ s}$, (ii) $1.7\\text{ s}$, (c) $16.9\\text{ s}$ is an outlier",
+      "feedback": "Using an upper boundary of $Q_3 + \\text{IQR} = 16.8$ ignores the $1.5$ multiplier and incorrectly flags $16.9\\text{ s}$ as an outlier."
+    },
+    {
+      "ans": "(a) Bimodal ($13.4\\text{ s}$ and $14.5\\text{ s}$), (b)(i) $14.2\\text{ s}$, (ii) $1.7\\text{ s}$, (c) Neither is an outlier",
+      "feedback": "Counting error on the 13th value gives $14.2$ instead of $14.3$ for the median."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Tied Modes in Stem-and-Leaf",
+    "content": "Always check for repeated leaves across all stems. When two different leaves appear with the exact same maximum frequency, state that the distribution is bimodal and give both values."
+  }
+},
+{
+  "id": "050164",
+  "group_id": "050161",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Statistical Measures",
+  "subtopic": [
+    "Measures of Central Tendency",
+    "Skewness Comparison",
+    "2-Sigma Outlier Rule"
+  ],
+  "img": false,
+  "question": "A sample of $50$ participants in a cognitive reaction trial completed a puzzle. The number of errors made by each participant, $x$, is summarised in the frequency table below:<br><br><table style='width:100%; max-width:200px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:5px; border:1px solid #ccc;'>Errors ($x$)</th><th style='padding:5px; border:1px solid #ccc;'>Freq ($f$)</th></tr></thead><tbody><tr><td style='padding:5px; border:1px solid #ccc;'>1</td><td style='padding:5px; border:1px solid #ccc;'>2</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>2</td><td style='padding:5px; border:1px solid #ccc;'>5</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>3</td><td style='padding:5px; border:1px solid #ccc;'>8</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>4</td><td style='padding:5px; border:1px solid #ccc;'>14</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>5</td><td style='padding:5px; border:1px solid #ccc;'>12</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>6</td><td style='padding:5px; border:1px solid #ccc;'>9</td></tr></tbody></table><br><strong>(a)</strong> Calculate:<br><strong>(i)</strong> the mode;<br><strong>(ii)</strong> the median;<br><strong>(iii)</strong> the mean, $\\bar{x}$, of the number of errors.<br><br><strong>(b)</strong> State the type of skewness exhibited by this distribution. Justify your answer by comparing your calculated measures of central tendency.<br><br><strong>(c)</strong> For these data, the standard deviation is $s = 1.34$.<br>Using the criterion that an outlier is any value lying more than $2$ standard deviations from the mean, determine whether any participants who made exactly $1$ error are classified as outliers.",
+  "steps": [
+    "<strong>(a)(i) Mode:</strong><br><br>The highest frequency is $14$, which corresponds to:\\begin{aligned} &\\text{Mode} = 4 \\end{aligned}",
+    "<strong>(a)(ii) Median:</strong><br><br>Cumulative frequencies are $2, 7, 15, 29, 41, 50$.<br><br>For $n = 50$, the median rank is $\\frac{50 + 1}{2} = 25.5$. Both the $25\\text{th}$ and $26\\text{th}$ values fall in the category $x = 4$:\\begin{aligned} &\\text{Median} = 4 \\end{aligned}",
+    "<strong>(a)(iii) Mean:</strong><br><br>Calculate $\\sum fx$:\\begin{aligned} &\\sum fx \\cr &\\quad = 1(2) + 2(5) \\cr &\\qquad + 3(8) \\cr &\\qquad + 4(14) \\cr &\\qquad + 5(12) \\cr &\\qquad + 6(9) \\cr &\\quad = 2 + 10 + 24 \\cr &\\qquad + 56 + 60 + 54 \\cr &\\quad = 206 \\end{aligned}<br>Calculate the mean:\\begin{aligned} &\\bar{x} \\cr &\\quad = \\dfrac{206}{50} \\cr &\\quad = 4.12 \\end{aligned}",
+    "<strong>(b) Skewness Justification:</strong><br><br>Compare the measures of location:\\begin{aligned} &\\bar{x} = 4.12 \\cr &\\text{Median} = 4 \\cr &\\bar{x} > \\text{Median} \\end{aligned}<br>Because the mean is strictly greater than the median, the distribution exhibits <strong>positive skew</strong>.",
+    "<strong>(c) 2-Sigma Outlier Test:</strong><br><br>Calculate the lower $2$-sigma threshold:\\begin{aligned} &\\text{Lower Bound} \\cr &\\quad = \\bar{x} - 2s \\cr &\\quad = 4.12 - 2(1.34) \\cr &\\quad = 4.12 - 2.68 \\cr &\\quad = 1.44 \\end{aligned}<br>Because $1 < 1.44$, participants who made exactly $1$ error <strong>are classified as outliers</strong>.",
+    "Final Answer: (a)(i) $4$, (ii) $4$, (iii) $4.12$, (b) Positively skewed ($\text{Mean} > \text{Median}$), (c) Exactly $1$ error is an outlier"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a)(i) $4$, (ii) $4$, (iii) $4.12$, (b) Negatively skewed ($\text{Mean} < \text{Median}$), (c) Exactly $1$ error is an outlier",
+      "feedback": "Since the mean of $4.12$ exceeds the median of $4.00$, the distribution has positive skew, not negative skew."
+    },
+    {
+      "ans": "(a)(i) $4$, (ii) $4$, (iii) $4.12$, (b) Positively skewed ($\text{Mean} > \text{Median}$), (c) No outliers",
+      "feedback": "A score of $1$ falls below the lower boundary of $1.44$, so it is an outlier."
+    },
+    {
+      "ans": "(a)(i) $4$, (ii) $3.5$, (iii) $4.12$, (b) Positively skewed ($\text{Mean} > \text{Median}$), (c) Exactly $1$ error is an outlier",
+      "feedback": "The 25th and 26th values are both 4, so the median is 4, not 3.5."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Skewness Direction Rule",
+    "content": "The mean is pulled in the direction of the long tail. Therefore:\\begin{aligned} &\\text{Mean} > \\text{Median} \\implies \\text{Positive skew} \\cr &\\text{Mean} < \\text{Median} \\implies \\text{Negative skew} \\end{aligned}Always state this explicit comparison when justifying skewness."
+  }
+},
+{
+  "id": "050165",
+  "group_id": "050161",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Statistical Measures",
+  "subtopic": [
+    "Five-Number Summary",
+    "Outlier Identification",
+    "Effect of Cleaning Data"
+  ],
+  "img": false,
+  "question": "An estate agency compiles a five-number summary of the selling prices of a sample of $40$ houses in a market town. The values (in thousands of pounds, $£1000\\text{s}$) are:<br><br>$$\\text{Minimum} = 180$$<br>$$Q_1 = 240$$<br>$$\\text{Median} = 285$$<br>$$Q_3 = 340$$<br>$$\\text{Maximum} = 580$$<br><br>The mean house price for this sample of $40$ houses is $£305\\,000$.<br><br><strong>(a)</strong> Show that the maximum price of $£580\\,000$ is an outlier using the $1.5 \\times \\text{IQR}$ criterion.<br><br><strong>(b)</strong> Show that the minimum price of $£180\\,000$ is not an outlier.<br><br><strong>(c)</strong> If the outlier of $£580\\,000$ is removed from the data set, describe the effect this removal will have on:<br><strong>(i)</strong> the median;<br><strong>(ii)</strong> the mean;<br><strong>(iii)</strong> the standard deviation.",
+  "steps": [
+    "<strong>(a) Upper Outlier Test on £580,000:</strong><br><br>Calculate the interquartile range:\\begin{aligned} &\\text{IQR} \\cr &\\quad = Q_3 - Q_1 \\cr &\\quad = 340 - 240 \\cr &\\quad = 100 \\end{aligned}<br>Calculate the upper outlier boundary:\\begin{aligned} &\\text{Upper Bound} \\cr &\\quad = Q_3 + 1.5(\\text{IQR}) \\cr &\\quad = 340 + 1.5(100) \\cr &\\quad = 340 + 150 \\cr &\\quad = 490 \\end{aligned}<br>Because $580 > 490$, the maximum price of $£580\\,000$ is confirmed as an <strong>outlier</strong>.",
+    "<strong>(b) Lower Outlier Test on £180,000:</strong><br><br>Calculate the lower outlier boundary:\\begin{aligned} &\\text{Lower Bound} \\cr &\\quad = Q_1 - 1.5(\\text{IQR}) \\cr &\\quad = 240 - 1.5(100) \\cr &\\quad = 240 - 150 \\cr &\\quad = 90 \\end{aligned}<br>Because $180 > 90$, the minimum price of $£180\\,000$ is <strong>not an outlier</strong>.",
+    "<strong>(c)(i) Effect on the Median:</strong><br><br>The median is a resistant measure of location. Removing a single extreme high value will have <strong>negligible effect</strong> (it may stay the same or decrease slightly to the new central value).",
+    "<strong>(c)(ii) Effect on the Mean:</strong><br><br>The mean will <strong>decrease</strong>, because removing an unusually high value reduces the overall total sum of the data.",
+    "<strong>(c)(iii) Effect on the Standard Deviation:</strong><br><br>The standard deviation will <strong>decrease</strong>, because removing the most extreme value reduces the overall spread and dispersion around the mean.",
+    "Final Answer: (a) $580 > 490$, outlier, (b) $180 > 90$, not an outlier, (c)(i) Negligible effect, (ii) Decreases, (iii) Decreases"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $580 > 490$, outlier, (b) $180 > 90$, not an outlier, (c)(i) Decreases significantly, (ii) Decreases, (iii) Decreases",
+      "feedback": "The median is resistant to outliers; removing a single extreme value causes negligible or no change, not a significant drop."
+    },
+    {
+      "ans": "(a) $580 > 490$, outlier, (b) $180 > 90$, not an outlier, (c)(i) Negligible effect, (ii) Increases, (iii) Decreases",
+      "feedback": "Removing an extremely high score removes mass from the upper end, causing the mean to decrease, not increase."
+    },
+    {
+      "ans": "(a) $580 > 490$, outlier, (b) $180 < 90$, outlier, (c)(i) Negligible effect, (ii) Decreases, (iii) Decreases",
+      "feedback": "A value of $180$ is strictly greater than the lower boundary of $90$, so the minimum price is not an outlier."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Resistance of Median vs Sensitivity of Mean",
+    "content": "The mean and standard deviation are non-resistant statistics: removing a single high outlier causes both to drop sharply. In contrast, the median and IQR are resistant statistics that remain virtually unchanged."
+  }
 }  
 ];
