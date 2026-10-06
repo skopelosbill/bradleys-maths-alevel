@@ -1373,7 +1373,7 @@ window.ALEVEL_QUESTIONS = [
     "Summary Statistics"
   ],
   "img": false,
-  "question": "A logistics warehouse records the time taken, $t$ in minutes, to dispatch priority parcels across $7$ consecutive shifts. The initial summary statistics for the $7$ shifts are:<br>$$\\sum t = 1400 \\quad \\text{and} \\quad \\sum t^2 = 281\\,400$$<br><strong>(a)</strong> Calculate:<br><strong>(i)</strong> the mean dispatch time, $\\bar{t}$;<br><strong>(ii)</strong> the standard deviation of the dispatch times, correct to 2 decimal places.<br><br>At the end of shift 8, a new 7-shift rolling statistic is computed by omitting shift 1 (where $t = 190\\text{ minutes}$) and including shift 8 (where $t = 211\\text{ minutes}$).<br><br><strong>(b)</strong> Calculate for the new 7-shift period:<br><strong>(i)</strong> the updated mean dispatch time;<br><strong>(ii)</strong> the updated standard deviation, correct to 2 decimal places.<br><br><strong>(c)</strong> State, with a reason, whether the dispatch times in the second 7-shift period were more consistent or less consistent than in the first 7-shift period.",
+  "question": "A logistics warehouse records the time taken, $t$ in minutes, to dispatch priority parcels across $7$ consecutive shifts. The initial summary statistics for the $7$ shifts are:<br>$$\\sum t = 1400 \\quad \\text{and}$$ $$\\sum t^2 = 281\\,400$$<br><strong>(a)</strong> Calculate:<br><strong>(i)</strong> the mean dispatch time, $\\bar{t}$;<br><strong>(ii)</strong> the standard deviation of the dispatch times, correct to 2 decimal places.<br><br>At the end of shift 8, a new 7-shift rolling statistic is computed by omitting shift 1 (where $t = 190\\text{ minutes}$) and including shift 8 (where $t = 211\\text{ minutes}$).<br><br><strong>(b)</strong> Calculate for the new 7-shift period:<br><strong>(i)</strong> the updated mean dispatch time;<br><strong>(ii)</strong> the updated standard deviation, correct to 2 decimal places.<br><br><strong>(c)</strong> State, with a reason, whether the dispatch times in the second 7-shift period were more consistent or less consistent than in the first 7-shift period.",
   "steps": [
     "<strong>(a)(i) Calculating the Initial Mean $\\bar{t}$:</strong><br><br>\\begin{aligned} &\\bar{t} \\cr &\\quad = \\dfrac{\\sum t}{n} \\cr &\\quad = \\dfrac{1400}{7} \\cr &\\quad = 200\\text{ mins} \\end{aligned}",
     "<strong>(a)(ii) Calculating the Initial Standard Deviation:</strong><br><br>Using the summary formula:\\begin{aligned} &\\sigma \\cr &\\quad = \\sqrt{\\dfrac{\\sum t^2}{n} - \\bar{t}^2} \\cr &\\quad = \\sqrt{\\dfrac{281\\,400}{7} - 200^2} \\cr &\\quad = \\sqrt{40\\,200 - 40\\,000} \\cr &\\quad = \\sqrt{200} \\cr &\\quad \\approx 14.14\\text{ mins} \\end{aligned}",
@@ -1443,6 +1443,214 @@ window.ALEVEL_QUESTIONS = [
     "type": "pro-tip",
     "title": "The Head Teacher's Eye: Two-Part Contextual Comparison",
     "content": "When asked to compare two distributions, you must always provide two separate statements with context and numerical support: one comparing a measure of central tendency (median or mean) and one comparing a measure of dispersion (IQR or standard deviation)."
+  }
+},
+{
+  "id": "050136",
+  "group_id": "050136",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Hypothesis Testing",
+  "subtopic": [
+    "Binomial Hypothesis Test",
+    "One-Tailed Test",
+    "p-Value Method"
+  ],
+  "img": false,
+  "question": "<em>In this question you must show detailed reasoning.</em><br><br>A national survey reported that in January 2025, $58\\%$ of households in a region subscribed to at least one streaming service. Later that year, an industry analyst believed that this proportion had increased. In November 2025, a random sample of $65$ households from the region was surveyed. It was found that $47$ of the $65$ households subscribed to at least one streaming service.<br><br>Use a suitable hypothesis test to determine whether there is evidence at the $1\\%$ significance level to suggest that the proportion of households in the region subscribing to at least one streaming service had increased.",
+  "steps": [
+    "<strong>(a) Hypotheses and Distribution:</strong><br><br>Let $p$ be the population proportion of households subscribing to at least one streaming service.<br><br>State the hypotheses:<br>$$H_0: p = 0.58$$<br>$$H_1: p > 0.58$$<br>Let $X$ be the number of households in the sample subscribing to a streaming service.<br><br>Under $H_0$, the test statistic follows:\\begin{aligned} X \\sim \\text{B}(65, 0.58) \\end{aligned}",
+    "<strong>(b) Calculating the Tail Probability:</strong><br><br>The observed value is $X = 47$.<br><br>Calculate the upper tail probability:\\begin{aligned} &\\text{P}(X \\ge 47) \\cr &\\quad = 1 - \\text{P}(X \\le 46) \\cr &\\quad = 1 - 0.9888 \\cr &\\quad = 0.0112 \\end{aligned}",
+    "<strong>(c) Comparison and Conclusion:</strong><br><br>Compare the $p$-value with the significance level $\\alpha = 0.01$:\\begin{aligned} 0.0112 > 0.01 \\end{aligned}<br>Because $0.0112$ exceeds $0.01$, the result is not significant at the $1\\%$ level.<br><br>Do not reject $H_0$. There is insufficient evidence to suggest that the proportion of households subscribing to a streaming service has increased.",
+    "Final Answer: Do not reject $H_0$, insufficient evidence to suggest proportion has increased"
+  ],
+  "pi_options": [
+    {
+      "ans": "Reject $H_0$, sufficient evidence to suggest proportion has increased",
+      "feedback": "Comparing against a $5\\%$ level ($0.0112 < 0.05$) rather than the specified $1\\%$ level incorrectly rejects $H_0$."
+    },
+    {
+      "ans": "Do not reject $H_0$, sufficient evidence to suggest proportion has increased",
+      "feedback": "Failing to reject $H_0$ means there is insufficient evidence to support the claim in $H_1$."
+    },
+    {
+      "ans": "Reject $H_0$, insufficient evidence to suggest proportion has increased",
+      "feedback": "Rejecting $H_0$ is contradictory to concluding that evidence is insufficient."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Significance Level Dictates Decision",
+    "content": "The observed count of $47$ is well above the expected mean:\\begin{aligned} &65 \\times 0.58 \\cr &\\quad = 37.7 \\end{aligned}At the $5\\%$ level ($p < 0.05$), this result would be significant. However, for a strict $1\\%$ test, a probability of $0.0112$ is not quite rare enough to reject $H_0$."
+  }
+},
+{
+  "id": "050137",
+  "group_id": "050136",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Hypothesis Testing",
+  "subtopic": [
+    "One-Tailed Lower Test",
+    "Critical Value",
+    "Critical Region"
+  ],
+  "img": false,
+  "question": "<em>In this question you must show detailed reasoning.</em><br><br>Historically, $35\\%$ of patients diagnosed with a seasonal allergy at a medical clinic report persistent symptoms after receiving standard treatment. A doctor introduces a modified therapy programme and believes it reduces the proportion of patients reporting persistent symptoms.<br><br>In a clinical trial, a random sample of $40$ patients receives the modified therapy programme.<br><br><strong>(a)</strong> State hypotheses to test the doctor's belief, defining any parameter used.<br><br><strong>(b)</strong> Find the critical region for the test at the $5\\%$ significance level.<br><br><strong>(c)</strong> In the trial, $8$ patients report persistent symptoms. State the conclusion of the test in context.",
+  "steps": [
+    "<strong>(a) Stating the Hypotheses:</strong><br><br>Let $p$ be the population proportion of patients reporting persistent symptoms.<br><br>The hypotheses are:<br>$$H_0: p = 0.35$$<br>$$H_1: p < 0.35$$",
+    "<strong>(b) Finding the Critical Region:</strong><br><br>Let $X$ be the number of patients reporting persistent symptoms.<br><br>Under $H_0$:\\begin{aligned} X \\sim \\text{B}(40, 0.35) \\end{aligned}<br>Calculate lower tail probabilities near $5\\%$:\\begin{aligned} &\\text{P}(X \\le 8) \\cr &\\quad = 0.0303 \\cr &\\text{P}(X \\le 9) \\cr &\\quad = 0.0644 \\end{aligned}<br>Because $0.0303 < 0.05$ and $0.0644 > 0.05$, the critical region is:\\begin{aligned} X \\le 8 \\end{aligned}",
+    "<strong>(c) Conclusion in Context:</strong><br><br>The observed number of patients is $X = 8$.<br><br>Because $8$ lies within the critical region ($8 \\le 8$), we reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level to suggest that the modified therapy programme reduces the proportion of patients with persistent symptoms.",
+    "Final Answer: (a) $H_0: p = 0.35$, $H_1: p < 0.35$, (b) $X \\le 8$, (c) Reject $H_0$, evidence therapy reduces symptoms"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $H_0: p = 0.35$, $H_1: p < 0.35$, (b) $X \\le 9$, (c) Reject $H_0$, evidence therapy reduces symptoms",
+      "feedback": "Choosing $X \\le 9$ as the critical region gives a tail probability of $0.0644$, which exceeds the $5\\%$ significance level."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.35$, $H_1: p < 0.35$, (b) $X \\le 8$, (c) Do not reject $H_0$, insufficient evidence of reduction",
+      "feedback": "Since the observed value $8$ falls directly inside the critical region $X \\le 8$, $H_0$ must be rejected."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.35$, $H_1: p \\neq 0.35$, (b) $X \\le 8$, (c) Reject $H_0$, evidence therapy reduces symptoms",
+      "feedback": "The doctor specifically suspects a reduction in symptoms, which requires a one-tailed test ($p < 0.35$) rather than a two-tailed test."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Defining Parameters in Full",
+    "content": "Always define the parameter $p$ explicitly in words. Stating $H_0: p = 0.35$ without writing 'where $p$ is the proportion of patients reporting persistent symptoms' will forfeit an independent communication mark."
+  }
+},
+{
+  "id": "050138",
+  "group_id": "050136",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Hypothesis Testing",
+  "subtopic": [
+    "Two-Tailed Test",
+    "Critical Region",
+    "Actual Significance Level"
+  ],
+  "img": false,
+  "question": "<em>In this question you must show detailed reasoning.</em><br><br>A quality control manager at a component factory knows that historically $8\\%$ of manufactured electronic switches are non-conforming. Following the installation of a new assembly unit, the manager wishes to test at the $5\\%$ level whether the proportion of non-conforming switches has changed.<br><br>A random sample of $50$ switches is tested.<br><br><strong>(a)</strong> State the null and alternative hypotheses, defining the parameter $p$.<br><br><strong>(b)</strong> Determine the critical region for this two-tailed test, ensuring the probability in each tail is as close to $2.5\\%$ as possible without exceeding it.<br><br><strong>(c)</strong> Calculate the actual significance level of the test.<br><br><strong>(d)</strong> In the sample of $50$ switches, $8$ are found to be non-conforming. State the conclusion of the test in context.",
+  "steps": [
+    "<strong>(a) Hypotheses:</strong><br><br>Let $p$ be the population proportion of non-conforming switches.<br><br>The hypotheses are:<br>$$H_0: p = 0.08$$<br>$$H_1: p \\neq 0.08$$",
+    "<strong>(b) Finding the Critical Region:</strong><br><br>Let $X$ be the number of non-conforming switches.<br><br>Under $H_0$, $X \\sim \\text{B}(50, 0.08)$.<br><br>For a $5\\%$ two-tailed test, allocate up to $2.5\\%$ to each tail.<br><br>Lower tail:\\begin{aligned} &\\text{P}(X \\le 0) \\cr &\\quad = 0.0155 < 0.025 \\cr &\\text{P}(X \\le 1) \\cr &\\quad = 0.0827 > 0.025 \\end{aligned}<br>Lower critical region: $X = 0$.<br><br>Upper tail:\\begin{aligned} &\\text{P}(X \\ge 9) \\cr &\\quad = 1 - \\text{P}(X \\le 8) \\cr &\\quad = 1 - 0.9818 \\cr &\\quad = 0.0182 < 0.025 \\cr &\\text{P}(X \\ge 8) \\cr &\\quad = 1 - 0.9510 \\cr &\\quad = 0.0490 > 0.025 \\end{aligned}<br>Upper critical region: $X \\ge 9$.<br><br>The overall critical region is:\\begin{aligned} X = 0 \\text{ or } X \\ge 9 \\end{aligned}",
+    "<strong>(c) Actual Significance Level:</strong><br><br>Sum the probabilities of the two tails:\\begin{aligned} &\\text{Actual Level} \\cr &\\quad = 0.0155 \\cr &\\qquad + 0.0182 \\cr &\\quad = 0.0337 \\cr &\\quad = 3.37\\% \\end{aligned}",
+    "<strong>(d) Conclusion in Context:</strong><br><br>The observed count is $X = 8$.<br><br>Because $8$ is not in the critical region ($1 \\le 8 \\le 8$), we do not reject $H_0$.<br><br>There is insufficient evidence at the $5\\%$ level to suggest that the proportion of non-conforming switches has changed.",
+    "Final Answer: (a) $H_0: p = 0.08$, $H_1: p \\neq 0.08$, (b) $X = 0$ or $X \\ge 9$, (c) $3.37\\%$, (d) Insufficient evidence of change"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $H_0: p = 0.08$, $H_1: p \\neq 0.08$, (b) $X \\le 1$ or $X \\ge 8$, (c) $13.17\\%$, (d) Insufficient evidence of change",
+      "feedback": "Using $X \\le 1$ and $X \\ge 8$ gives tail probabilities of $8.27\\%$ and $4.90\\%$, which exceed the $2.5\\%$ limit per tail."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.08$, $H_1: p \\neq 0.08$, (b) $X = 0$ or $X \\ge 9$, (c) $5.00\\%$, (d) Insufficient evidence of change",
+      "feedback": "Assuming the actual significance level equals the nominal $5\\%$ level ignores the discrete nature of the binomial distribution."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.08$, $H_1: p \\neq 0.08$, (b) $X = 0$ or $X \\ge 9$, (c) $3.37\\%$, (d) Reject $H_0$, evidence of change",
+      "feedback": "The observed value of $8$ lies outside the critical region ($X \\ge 9$), so $H_0$ must not be rejected."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Nominal vs Actual Significance Levels",
+    "content": "Because the Binomial distribution is discrete, you cannot achieve an exact $5\\%$ significance level. The actual significance level is the sum of the true probabilities in the critical region:\\begin{aligned} &0.0155 + 0.0182 \\cr &\\quad = 0.0337 \\end{aligned}This is strictly less than the nominal $5\\%$."
+  }
+},
+{
+  "id": "050139",
+  "group_id": "050136",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Hypothesis Testing",
+  "subtopic": [
+    "One-Tailed Upper Test",
+    "p-Value vs Critical Region",
+    "Type I Error"
+  ],
+  "img": false,
+  "question": "<em>In this question you must show detailed reasoning.</em><br><br>A seed merchant claims that the germination rate of a batch of wildflower seeds is $75\\%$. A horticulturist suspects that the seeds have been stored in optimal conditions and that the germination rate is higher than claimed.<br><br>The horticulturist plants a random sample of $30$ seeds and counts the number of seeds, $X$, that successfully germinate.<br><br><strong>(a)</strong> State suitable hypotheses for the test, defining the parameter $p$.<br><br><strong>(b)</strong> Find the critical value for a test at the $5\\%$ significance level.<br><br><strong>(c)</strong> Given that $27$ seeds germinate:<br><strong>(i)</strong> Calculate the $p$-value of this outcome.<br><strong>(ii)</strong> State, with justification, whether the merchant's claim should be rejected at the $5\\%$ level.<br><br><strong>(d)</strong> State the probability of incorrectly rejecting the null hypothesis for this test.",
+  "steps": [
+    "<strong>(a) Stating the Hypotheses:</strong><br><br>Let $p$ be the population proportion of seeds that germinate.<br><br>The hypotheses are:<br>$$H_0: p = 0.75$$<br>$$H_1: p > 0.75$$",
+    "<strong>(b) Finding the Critical Value:</strong><br><br>Under $H_0$, $X \\sim \\text{B}(30, 0.75)$.<br><br>Calculate upper tail probabilities:\\begin{aligned} &\\text{P}(X \\ge 27) \\cr &\\quad = 1 - \\text{P}(X \\le 26) \\cr &\\quad = 1 - 0.9547 \\cr &\\quad = 0.0453 < 0.05 \\cr &\\text{P}(X \\ge 26) \\cr &\\quad = 1 - \\text{P}(X \\le 25) \\cr &\\quad = 1 - 0.8943 \\cr &\\quad = 0.1057 > 0.05 \\end{aligned}<br>The critical region is $X \\ge 27$, so the critical value is $27$.",
+    "<strong>(c)(i) Calculating the $p$-Value:</strong><br><br>For $X = 27$, the $p$-value is the probability of obtaining at least $27$ germinated seeds under $H_0$:\\begin{aligned} &p\\text{-value} \\cr &\\quad = \\text{P}(X \\ge 27) \\cr &\\quad = 0.0453 \\end{aligned}",
+    "<strong>(c)(ii) Testing the Claim:</strong><br><br>Compare the $p$-value with the significance level:\\begin{aligned} 0.0453 < 0.05 \\end{aligned}<br>Because $0.0453 < 0.05$ (and $27$ lies in the critical region), reject $H_0$.<br><br>There is sufficient evidence at the $5\\%$ level to suggest that the germination rate is higher than $75\\%$.",
+    "<strong>(d) Probability of Incorrectly Rejecting $H_0$:</strong><br><br>Incorrectly rejecting $H_0$ when it is true is a Type I error.<br><br>Its probability equals the actual significance level of the test:\\begin{aligned} &\\text{P}(\\text{Type I Error}) \\cr &\\quad = \\text{P}(X \\ge 27) \\cr &\\quad = 0.0453 \\end{aligned}",
+    "Final Answer: (a) $H_0: p = 0.75$, $H_1: p > 0.75$, (b) $27$, (c)(i) $0.0453$, (ii) Reject $H_0$, (d) $0.0453$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $H_0: p = 0.75$, $H_1: p > 0.75$, (b) $26$, (c)(i) $0.0453$, (ii) Reject $H_0$, (d) $0.0500$",
+      "feedback": "Selecting $26$ as the critical value yields a tail probability of $0.1057$, exceeding the $5\\%$ threshold."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.75$, $H_1: p > 0.75$, (b) $27$, (c)(i) $0.0453$, (ii) Do not reject $H_0$, (d) $0.0453$",
+      "feedback": "Since the $p$-value of $0.0453$ is strictly less than $0.05$, $H_0$ must be rejected."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.75$, $H_1: p > 0.75$, (b) $27$, (c)(i) $0.0453$, (ii) Reject $H_0$, (d) $0.0500$",
+      "feedback": "The probability of incorrectly rejecting $H_0$ is the actual significance level ($0.0453$), not the nominal level of $0.0500$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Type I Error and Actual Level",
+    "content": "A Type I error is rejecting $H_0$ given that $H_0$ is true. This happens whenever the test statistic falls into the critical region under $H_0$. Therefore, the probability of a Type I error is always equal to the actual significance level, which is $0.0453$."
+  }
+},
+{
+  "id": "050140",
+  "group_id": "050136",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Hypothesis Testing",
+  "subtopic": [
+    "Binomial Modelling Assumptions",
+    "One-Tailed Test",
+    "Contextual Interpretation"
+  ],
+  "img": false,
+  "question": "<em>In this question you must show detailed reasoning.</em><br><br>An online retailer knows from long-term records that $20\\%$ of customer enquiries are resolved via its automated chatbot. The software is updated, and the customer service director claims that the update has increased the proportion of enquiries resolved by the chatbot.<br><br>To test this claim at the $2.5\\%$ level of significance, a random sample of $45$ customer enquiries is monitored, and $15$ are successfully resolved by the chatbot.<br><br><strong>(a)</strong> State two assumptions needed to model the number of resolved enquiries using a binomial distribution.<br><br><strong>(b)</strong> Define the test statistic and state the hypotheses to test the director's claim.<br><br><strong>(c)</strong> Carry out the hypothesis test at the $2.5\\%$ significance level, stating your conclusion clearly in context.",
+  "steps": [
+    "<strong>(a) Binomial Assumptions in Context:</strong><br><br>Two required modelling assumptions are:<br>1. Each enquiry is resolved independently of all other enquiries.<br>2. The probability of an enquiry being resolved remains constant for all enquiries.",
+    "<strong>(b) Defining Test Statistic and Hypotheses:</strong><br><br>Let $X$ be the number of enquiries in the sample resolved by the chatbot.<br><br>Let $p$ be the population proportion of enquiries resolved by the chatbot.<br><br>The hypotheses are:<br>$$H_0: p = 0.2$$<br>$$H_1: p > 0.2$$",
+    "<strong>(c) Conducting the Test and Conclusion:</strong><br><br>Under $H_0$, $X \\sim \\text{B}(45, 0.2)$.<br><br>The observed number of resolved enquiries is $X = 15$.<br><br>Calculate the probability of obtaining at least $15$ resolved enquiries:\\begin{aligned} &\\text{P}(X \\ge 15) \\cr &\\quad = 1 - \\text{P}(X \\le 14) \\cr &\\quad = 1 - 0.9774 \\cr &\\quad = 0.0226 \\end{aligned}<br>Compare with the significance level $\\alpha = 0.025$:\\begin{aligned} 0.0226 < 0.025 \\end{aligned}<br>Because $0.0226 < 0.025$, the result is significant at the $2.5\\%$ level.<br><br>Reject $H_0$. There is sufficient evidence at the $2.5\\%$ level to suggest that the update has increased the proportion of enquiries resolved by the chatbot.",
+    "Final Answer: (a) Independent enquiries, constant probability, (b) $X$, $H_0: p = 0.2$, $H_1: p > 0.2$, (c) Reject $H_0$, evidence proportion increased"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Independent enquiries, constant probability, (b) $X$, $H_0: p = 0.2$, $H_1: p > 0.2$, (c) Do not reject $H_0$, insufficient evidence of increase",
+      "feedback": "Because the tail probability of $0.0226$ is strictly less than $0.025$, the test is significant and $H_0$ must be rejected."
+    },
+    {
+      "ans": "(a) Fixed sample size only, constant probability, (b) $X$, $H_0: p = 0.2$, $H_1: p = 0.25$, (c) Reject $H_0$, evidence proportion increased",
+      "feedback": "The alternative hypothesis must state a strict inequality ($p > 0.2$) rather than a specific numerical value."
+    },
+    {
+      "ans": "(a) Independent enquiries, constant probability, (b) $X$, $H_0: p = 0.2$, $H_1: p < 0.2$, (c) Reject $H_0$, evidence proportion increased",
+      "feedback": "The director claims an increase in the resolution rate, so $H_1$ must be $p > 0.2$, not $p < 0.2$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: State Assumptions in Context",
+    "content": "When asked for assumptions of a Binomial model, never just write 'independence and constant probability'. Always frame them in the context of the question: 'each enquiry is independent' and 'the probability of resolution is constant across enquiries'."
   }
 }
 ];
