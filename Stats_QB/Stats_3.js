@@ -1236,4 +1236,213 @@ window.ALEVEL_QUESTIONS = [
     "content": "When evaluating sums of independent observations with fractional probabilities, group identical terms before converting to a common denominator: $2\\left(\\frac{1}{16}\\right) + \\frac{1}{8} = \\frac{1}{8} + \\frac{1}{8} = \\frac{1}{4}$. Grouping powers of $2$ reduces large denominators and prevents arithmetic errors."
   }
 }
+{
+  "id": "050131",
+  "group_id": "050131",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Statistical Measures",
+  "subtopic": [
+    "Mean",
+    "Rolling Means",
+    "Outlier Identification"
+  ],
+  "img": false,
+  "question": "Jack and Oliver each wear a fitness tracker that records the number of steps they take per day. The daily results for a 7-day period are shown in the table below:<br><br><table style='width:100%; max-width:240px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:5px; border:1px solid #ccc;'>Day</th><th style='padding:5px; border:1px solid #ccc;'>Jack</th><th style='padding:5px; border:1px solid #ccc;'>Oliver</th></tr></thead><tbody><tr><td style='padding:5px; border:1px solid #ccc;'>1</td><td style='padding:5px; border:1px solid #ccc;'>$8450$</td><td style='padding:5px; border:1px solid #ccc;'>$7850$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>2</td><td style='padding:5px; border:1px solid #ccc;'>$9210$</td><td style='padding:5px; border:1px solid #ccc;'>$8420$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>3</td><td style='padding:5px; border:1px solid #ccc;'>$8860$</td><td style='padding:5px; border:1px solid #ccc;'>$8190$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>4</td><td style='padding:5px; border:1px solid #ccc;'>$9580$</td><td style='padding:5px; border:1px solid #ccc;'>$8760$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>5</td><td style='padding:5px; border:1px solid #ccc;'>$8940$</td><td style='padding:5px; border:1px solid #ccc;'>$8950$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>6</td><td style='padding:5px; border:1px solid #ccc;'>$9340$</td><td style='padding:5px; border:1px solid #ccc;'>$7630$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>7</td><td style='padding:5px; border:1px solid #ccc;'>$9320$</td><td style='padding:5px; border:1px solid #ccc;'>$9350$</td></tr></tbody></table><br>The 7-day mean is defined as the mean number of steps taken over the last 7 days. The 7-day mean for Jack is $9100$.<br><br><strong>(a)</strong> Calculate the 7-day mean for Oliver.<br><br>At the end of day 8, a new 7-day mean is calculated for each person by including the number of steps taken on day 8 and omitting the number of steps taken on day 1. On day 8, Jack takes $9500$ steps.<br><br><strong>(b)</strong> Determine the number of steps Oliver must take on day 8 so that his new 7-day mean at the end of day 8 is identical to Jack's new 7-day mean.<br><br>Over a long period of monitoring, Oliver's daily step count has a mean of $8800$ and a standard deviation of $920$.<br><br><strong>(c)</strong> Determine whether the number of steps Oliver needs to take on day 8 found in part <strong>(b)</strong> is unusually high, using the criterion of being more than $2$ standard deviations above his long-term mean.",
+  "steps": [
+    "<strong>(a) Calculating Oliver's 7-Day Mean:</strong><br><br>Sum Oliver's step counts for the 7 days:\\begin{aligned} &\\text{Total} \\cr &\\quad = 7850 \\cr &\\qquad + 8420 \\cr &\\qquad + 8190 \\cr &\\qquad + 8760 \\cr &\\qquad + 8950 \\cr &\\qquad + 7630 \\cr &\\qquad + 9350 \\cr &\\quad = 59\\,150 \\end{aligned}<br>Calculate the mean:\\begin{aligned} &\\text{Mean} \\cr &\\quad = \\dfrac{59\\,150}{7} \\cr &\\quad = 8450 \\end{aligned}",
+    "<strong>(b) Updating Rolling Means for Day 8:</strong><br><br>Find Jack's initial total steps:\\begin{aligned} &\\text{Jack Total} \\cr &\\quad = 7 \\times 9100 \\cr &\\quad = 63\\,700 \\end{aligned}<br>Calculate Jack's new total for days 2 to 8:\\begin{aligned} &\\text{New Total} \\cr &\\quad = 63\\,700 \\cr &\\qquad - 8450 \\cr &\\qquad + 9500 \\cr &\\quad = 64\\,750 \\end{aligned}<br>For Oliver to have the same 7-day mean, his total for days 2 to 8 must also equal $64\\,750$.<br><br>Calculate Oliver's sum for days 2 to 7:\\begin{aligned} &\\text{Days 2 to 7} \\cr &\\quad = 59\\,150 \\cr &\\qquad - 7850 \\cr &\\quad = 51\\,300 \\end{aligned}<br>Find Oliver's required steps on day 8:\\begin{aligned} &\\text{Day 8 Steps} \\cr &\\quad = 64\\,750 \\cr &\\qquad - 51\\,300 \\cr &\\quad = 13\\,450 \\end{aligned}",
+    "<strong>(c) Testing for an Unusually High Value:</strong><br><br>Calculate the threshold of $2$ standard deviations above Oliver's long-term mean:\\begin{aligned} &\\text{Threshold} \\cr &\\quad = 8800 \\cr &\\qquad + 2(920) \\cr &\\quad = 8800 \\cr &\\qquad + 1840 \\cr &\\quad = 10\\,640 \\end{aligned}<br>Compare the required day 8 step count:\\begin{aligned} 13\\,450 > 10\\,640 \\end{aligned}<br>Because $13\\,450$ exceeds this threshold, the number of steps is unusually high.",
+    "Final Answer: (a) $8450$, (b) $13\\,450$, (c) Unusually high"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $8450$, (b) $12\\,650$, (c) Unusually high",
+      "feedback": "Subtracting Jack's day 1 value rather than Oliver's day 1 value of $7850$ gives $12\\,650$."
+    },
+    {
+      "ans": "(a) $8450$, (b) $13\\,450$, (c) Not unusually high",
+      "feedback": "Comparing against $3$ standard deviations ($8800 + 2760 = 11\\,560$) or inverting the comparison incorrectly concludes it is not unusually high."
+    },
+    {
+      "ans": "(a) $8450$, (b) $14\\,250$, (c) Unusually high",
+      "feedback": "Adding day 1 rather than subtracting it when updating the 7-day window gives $14\\,250$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Updating Moving Totals Efficiently",
+    "content": "When updating a moving average, you do not need to re-add all the intermediate days. The new total is always:\\begin{aligned} &\\text{New Total} \\cr &\\quad = \\text{Old Total} \\cr &\\qquad - \\text{Oldest Day} \\cr &\\qquad + \\text{Newest Day} \\end{aligned}Working with totals rather than means eliminates rounding errors."
+  }
+},
+{
+  "id": "050132",
+  "group_id": "050131",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Statistical Measures",
+  "subtopic": [
+    "Moving Averages",
+    "Percentage Increase in Mean",
+    "Outlier Testing"
+  ],
+  "img": false,
+  "question": "A local coffee shop records the number of customers served each weekday during a 5-day working week (Monday to Friday):<br><br><table style='width:100%; max-width:180px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:5px; border:1px solid #ccc;'>Day</th><th style='padding:5px; border:1px solid #ccc;'>Customers</th></tr></thead><tbody><tr><td style='padding:5px; border:1px solid #ccc;'>Mon</td><td style='padding:5px; border:1px solid #ccc;'>$142$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>Tue</td><td style='padding:5px; border:1px solid #ccc;'>$158$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>Wed</td><td style='padding:5px; border:1px solid #ccc;'>$165$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>Thu</td><td style='padding:5px; border:1px solid #ccc;'>$149$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>Fri</td><td style='padding:5px; border:1px solid #ccc;'>$186$</td></tr></tbody></table><br><strong>(a)</strong> Calculate the 5-day mean number of customers for this working week.<br><br>At the end of Saturday (Day 6), a new 5-day rolling mean is calculated by including Saturday's customer count and omitting Monday's count. The manager wishes the new 5-day rolling mean to represent a $5\\%$ increase compared to the Monday–Friday mean.<br><br><strong>(b)</strong> Determine the number of customers that must be served on Saturday to achieve this target.<br><br>Historic records show that Saturday customer numbers have a mean of $155$ and a standard deviation of $12$.<br><br><strong>(c)</strong> Determine whether the required number of customers on Saturday found in part <strong>(b)</strong> is an outlier, defined as any value lying more than $2$ standard deviations from the historic Saturday mean.",
+  "steps": [
+    "<strong>(a) Calculating the Initial 5-Day Mean:</strong><br><br>Sum the customer counts from Monday to Friday:\\begin{aligned} &\\text{Total} \\cr &\\quad = 142 \\cr &\\qquad + 158 \\cr &\\qquad + 165 \\cr &\\qquad + 149 \\cr &\\qquad + 186 \\cr &\\quad = 800 \\end{aligned}<br>Calculate the mean:\\begin{aligned} &\\text{Mean} \\cr &\\quad = \\dfrac{800}{5} \\cr &\\quad = 160 \\end{aligned}",
+    "<strong>(b) Finding the Required Saturday Count:</strong><br><br>Calculate the target 5-day mean with a $5\\%$ increase:\\begin{aligned} &\\text{Target Mean} \\cr &\\quad = 160 \\times 1.05 \\cr &\\quad = 168 \\end{aligned}<br>Find the required total for the new 5-day window:\\begin{aligned} &\\text{New Total} \\cr &\\quad = 168 \\times 5 \\cr &\\quad = 840 \\end{aligned}<br>Calculate the sum for Tuesday to Friday:\\begin{aligned} &\\text{Tue to Fri} \\cr &\\quad = 800 - 142 \\cr &\\quad = 658 \\end{aligned}<br>Determine Saturday's required count:\\begin{aligned} &\\text{Saturday} \\cr &\\quad = 840 - 658 \\cr &\\quad = 182 \\end{aligned}",
+    "<strong>(c) Testing Saturday for Outlier Status:</strong><br><br>Calculate the upper outlier boundary for historic Saturday counts:\\begin{aligned} &\\text{Upper Bound} \\cr &\\quad = 155 \\cr &\\qquad + 2(12) \\cr &\\quad = 155 + 24 \\cr &\\quad = 179 \\end{aligned}<br>Compare Saturday's count:\\begin{aligned} 182 > 179 \\end{aligned}<br>Because $182$ exceeds the upper limit of $179$, it is classified as an outlier.",
+    "Final Answer: (a) $160$, (b) $182$, (c) Outlier"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $160$, (b) $174$, (c) Not an outlier",
+      "feedback": "Applying the $5\\%$ increase directly to Saturday's historic mean rather than the rolling weekday mean gives $174$."
+    },
+    {
+      "ans": "(a) $160$, (b) $182$, (c) Not an outlier",
+      "feedback": "Testing against $3$ standard deviations ($155 + 36 = 191$) rather than the specified $2$ standard deviations incorrectly concludes it is not an outlier."
+    },
+    {
+      "ans": "(a) $160$, (b) $196$, (c) Outlier",
+      "feedback": "Forgetting to omit Monday's count from the total window calculation yields $840 - 644 = 196$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Percentage Change on Rolling Means",
+    "content": "A $5\\%$ increase on a 5-day mean increases the total sum by $5 \\times (160 \\times 0.05) = 40$. Since the new day replaces an old day, the change in the total is simply:\\begin{aligned} &\\text{New Day} - \\text{Old Day} \\cr &\\quad = 40 \\end{aligned}Hence Saturday must be $142 + 40 = 182$."
+  }
+},
+{
+  "id": "050133",
+  "group_id": "050131",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Statistical Measures",
+  "subtopic": [
+    "Linear Coding",
+    "Rolling Means",
+    "Standardised Scores"
+  ],
+  "img": false,
+  "question": "A manufacturing facility records its peak daily electrical power demand, $x$ in megawatts (MW), over a 7-day period. To simplify calculations, the data are coded using $y = x - 400$. The recorded values are given below:<br><br><table style='width:100%; max-width:220px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:5px; border:1px solid #ccc;'>Day</th><th style='padding:5px; border:1px solid #ccc;'>$x$ (MW)</th><th style='padding:5px; border:1px solid #ccc;'>$y$</th></tr></thead><tbody><tr><td style='padding:5px; border:1px solid #ccc;'>1</td><td style='padding:5px; border:1px solid #ccc;'>$412$</td><td style='padding:5px; border:1px solid #ccc;'>$12$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>2</td><td style='padding:5px; border:1px solid #ccc;'>$408$</td><td style='padding:5px; border:1px solid #ccc;'>$8$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>3</td><td style='padding:5px; border:1px solid #ccc;'>$415$</td><td style='padding:5px; border:1px solid #ccc;'>$15$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>4</td><td style='padding:5px; border:1px solid #ccc;'>$395$</td><td style='padding:5px; border:1px solid #ccc;'>$-5$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>5</td><td style='padding:5px; border:1px solid #ccc;'>$402$</td><td style='padding:5px; border:1px solid #ccc;'>$2$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>6</td><td style='padding:5px; border:1px solid #ccc;'>$410$</td><td style='padding:5px; border:1px solid #ccc;'>$10$</td></tr><tr><td style='padding:5px; border:1px solid #ccc;'>7</td><td style='padding:5px; border:1px solid #ccc;'>$407$</td><td style='padding:5px; border:1px solid #ccc;'>$7$</td></tr></tbody></table><br><strong>(a)</strong><br><strong>(i)</strong> Calculate the mean of the coded values, $\\bar{y}$.<br><strong>(ii)</strong> Hence find the mean peak power demand, $\\bar{x}$, for the 7-day period.<br><br>At the end of day 8, a new 7-day rolling mean is calculated by including day 8 and omitting day 1. The factory manager requires the new 7-day mean peak demand to be $410\\text{ MW}$.<br><br><strong>(b)</strong> Calculate the peak power demand required on day 8 to achieve this rolling mean.<br><br>Historical records indicate that the daily peak power demand has a mean of $405\\text{ MW}$ and a standard deviation of $10\\text{ MW}$.<br><br><strong>(c)</strong> Calculate the $z$-score for the day 8 power demand found in part <strong>(b)</strong>, and state whether this demand represents an anomalous reading.",
+  "steps": [
+    "<strong>(a)(i) Calculating the Coded Mean $\\bar{y}$:</strong><br><br>Sum the coded values:\\begin{aligned} &\\sum y \\cr &\\quad = 12 + 8 \\cr &\\qquad + 15 - 5 \\cr &\\qquad + 2 + 10 \\cr &\\qquad + 7 \\cr &\\quad = 49 \\end{aligned}<br>Calculate $\\bar{y}$:\\begin{aligned} &\\bar{y} \\cr &\\quad = \\dfrac{49}{7} \\cr &\\quad = 7 \\end{aligned}",
+    "<strong>(a)(ii) Finding the Uncoded Mean $\\bar{x}$:</strong><br><br>Using the coding relation $\\bar{x} = \\bar{y} + 400$:\\begin{aligned} &\\bar{x} \\cr &\\quad = 7 + 400 \\cr &\\quad = 407\\text{ MW} \\end{aligned}",
+    "<strong>(b) Finding the Required Power Demand on Day 8:</strong><br><br>Calculate the initial 7-day total for $x$:\\begin{aligned} &\\text{Initial Total} \\cr &\\quad = 407 \\times 7 \\cr &\\quad = 2849 \\end{aligned}<br>Calculate the target total for the new 7-day window:\\begin{aligned} &\\text{New Total} \\cr &\\quad = 410 \\times 7 \\cr &\\quad = 2870 \\end{aligned}<br>Subtract day 1 demand from the initial total:\\begin{aligned} &\\text{Days 2 to 7} \\cr &\\quad = 2849 - 412 \\cr &\\quad = 2437 \\end{aligned}<br>Determine day 8 demand:\\begin{aligned} &\\text{Day 8 Demand} \\cr &\\quad = 2870 - 2437 \\cr &\\quad = 433\\text{ MW} \\end{aligned}",
+    "<strong>(c) Calculating the $z$-Score and Checking for Anomaly:</strong><br><br>Calculate the standardised $z$-score:\\begin{aligned} &z \\cr &\\quad = \\dfrac{x - \\mu}{\\sigma} \\cr &\\quad = \\dfrac{433 - 405}{10} \\cr &\\quad = \\dfrac{28}{10} \\cr &\\quad = 2.8 \\end{aligned}<br>Because $|z| = 2.8 > 2$, the demand lies more than $2$ standard deviations from the historic mean and represents an anomalous reading.",
+    "Final Answer: (a)(i) $7$, (ii) $407\\text{ MW}$, (b) $433\\text{ MW}$, (c) $z = 2.8$, anomalous"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a)(i) $7$, (ii) $407\\text{ MW}$, (b) $433\\text{ MW}$, (c) $z = 1.4$, not anomalous",
+      "feedback": "Using an incorrect standard deviation of $20$ rather than $10$ gives $z = 1.4$."
+    },
+    {
+      "ans": "(a)(i) $7$, (ii) $407\\text{ MW}$, (b) $421\\text{ MW}$, (c) $z = 1.6$, not anomalous",
+      "feedback": "Omitting day 7 instead of day 1 when updating the window yields $421\\text{ MW}$ and $z = 1.6$."
+    },
+    {
+      "ans": "(a)(i) $7$, (ii) $393\\text{ MW}$, (b) $433\\text{ MW}$, (c) $z = 2.8$, anomalous",
+      "feedback": "Subtracting the coded mean from $400$ instead of adding it incorrectly gives $\\bar{x} = 393\\text{ MW}$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Linear Coding Rules",
+    "content": "For a linear code $y = \\frac{x - a}{b}$, the mean transforms directly according to the formula:\\begin{aligned} &\\bar{y} \\cr &\\quad = \\dfrac{\\bar{x} - a}{b} \\end{aligned}However, the standard deviation is affected only by the scale factor $b$ and is independent of the shift $a$."
+  }
+},
+{
+  "id": "050134",
+  "group_id": "050131",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Statistical Measures",
+  "subtopic": [
+    "Updating Mean and Standard Deviation",
+    "Summary Statistics"
+  ],
+  "img": false,
+  "question": "A logistics warehouse records the time taken, $t$ in minutes, to dispatch priority parcels across $7$ consecutive shifts. The initial summary statistics for the $7$ shifts are:<br>$$\\sum t = 1400 \\quad \\text{and} \\quad \\sum t^2 = 281\\,400$$<br><strong>(a)</strong> Calculate:<br><strong>(i)</strong> the mean dispatch time, $\\bar{t}$;<br><strong>(ii)</strong> the standard deviation of the dispatch times, correct to 2 decimal places.<br><br>At the end of shift 8, a new 7-shift rolling statistic is computed by omitting shift 1 (where $t = 190\\text{ minutes}$) and including shift 8 (where $t = 211\\text{ minutes}$).<br><br><strong>(b)</strong> Calculate for the new 7-shift period:<br><strong>(i)</strong> the updated mean dispatch time;<br><strong>(ii)</strong> the updated standard deviation, correct to 2 decimal places.<br><br><strong>(c)</strong> State, with a reason, whether the dispatch times in the second 7-shift period were more consistent or less consistent than in the first 7-shift period.",
+  "steps": [
+    "<strong>(a)(i) Calculating the Initial Mean $\\bar{t}$:</strong><br><br>\\begin{aligned} &\\bar{t} \\cr &\\quad = \\dfrac{\\sum t}{n} \\cr &\\quad = \\dfrac{1400}{7} \\cr &\\quad = 200\\text{ mins} \\end{aligned}",
+    "<strong>(a)(ii) Calculating the Initial Standard Deviation:</strong><br><br>Using the summary formula:\\begin{aligned} &\\sigma \\cr &\\quad = \\sqrt{\\dfrac{\\sum t^2}{n} - \\bar{t}^2} \\cr &\\quad = \\sqrt{\\dfrac{281\\,400}{7} - 200^2} \\cr &\\quad = \\sqrt{40\\,200 - 40\\,000} \\cr &\\quad = \\sqrt{200} \\cr &\\quad \\approx 14.14\\text{ mins} \\end{aligned}",
+    "<strong>(b)(i) Updating the Mean:</strong><br><br>Update the sum of $t$ by removing shift 1 and adding shift 8:\\begin{aligned} &\\text{New } \\sum t \\cr &\\quad = 1400 - 190 \\cr &\\qquad + 211 \\cr &\\quad = 1421 \\end{aligned}<br>Calculate the updated mean:\\begin{aligned} &\\text{New Mean} \\cr &\\quad = \\dfrac{1421}{7} \\cr &\\quad = 203\\text{ mins} \\end{aligned}",
+    "<strong>(b)(ii) Updating the Standard Deviation:</strong><br><br>Update the sum of squares:\\begin{aligned} &190^2 = 36\\,100 \\cr &211^2 = 44\\,521 \\end{aligned}<br>\\begin{aligned} &\\text{New } \\sum t^2 \\cr &\\quad = 281\\,400 \\cr &\\qquad - 36\\,100 \\cr &\\qquad + 44\\,521 \\cr &\\quad = 289\\,821 \\end{aligned}<br>Calculate the new standard deviation:\\begin{aligned} &\\text{New } \\sigma \\cr &\\quad = \\sqrt{\\dfrac{289\\,821}{7} - 203^2} \\cr &\\quad = \\sqrt{41\\,403 - 41\\,209} \\cr &\\quad = \\sqrt{194} \\cr &\\quad \\approx 13.93\\text{ mins} \\end{aligned}",
+    "<strong>(c) Evaluating Consistency:</strong><br><br>Consistency is measured by the spread of the data.<br><br>Because the standard deviation decreased from $14.14\\text{ mins}$ to $13.93\\text{ mins}$, the dispatch times in the second 7-shift period were <strong>more consistent</strong>.",
+    "Final Answer: (a)(i) $200\\text{ mins}$, (ii) $14.14\\text{ mins}$, (b)(i) $203\\text{ mins}$, (ii) $13.93\\text{ mins}$, (c) More consistent"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a)(i) $200\\text{ mins}$, (ii) $14.14\\text{ mins}$, (b)(i) $203\\text{ mins}$, (ii) $13.93\\text{ mins}$, (c) Less consistent",
+      "feedback": "Confusing an increase in the mean with an increase in variability incorrectly concludes the process is less consistent."
+    },
+    {
+      "ans": "(a)(i) $200\\text{ mins}$, (ii) $14.14\\text{ mins}$, (b)(i) $203\\text{ mins}$, (ii) $15.28\\text{ mins}$, (c) Less consistent",
+      "feedback": "Adding $190^2$ and subtracting $211^2$ reverses the data modification and leads to an incorrect standard deviation of $15.28$."
+    },
+    {
+      "ans": "(a)(i) $200\\text{ mins}$, (ii) $15.28\\text{ mins}$, (b)(i) $203\\text{ mins}$, (ii) $13.93\\text{ mins}$, (c) More consistent",
+      "feedback": "Dividing by $n - 1 = 6$ rather than $n = 7$ applies the sample standard deviation formula instead of the population formula."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Consistency Means Smaller Spread",
+    "content": "In examination questions, consistency refers strictly to measures of dispersion (standard deviation or interquartile range), never to the mean. A higher mean with a lower standard deviation represents faster or higher output with greater consistency."
+  }
+},
+{
+  "id": "050135",
+  "group_id": "050131",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Statistical Measures",
+  "subtopic": [
+    "Quartiles",
+    "Interquartile Range",
+    "Outlier Identification",
+    "Comparing Distributions"
+  ],
+  "img": false,
+  "question": "Two courier drivers, Driver A and Driver B, each record their delivery times (in minutes) for a standard delivery route on $7$ consecutive days. The times are shown below in ascending order:<br><br>Driver A:<br>$$38, \\; 41, \\; 42, \\; 45,$$<br>$$46, \\; 48, \\; 62$$<br><br>Driver B:<br>$$40, \\; 42, \\; 43, \\; 44,$$<br>$$45, \\; 47, \\; 49$$<br><br><strong>(a)</strong> For Driver A:<br><strong>(i)</strong> Find the median delivery time.<br><strong>(ii)</strong> Find the lower quartile ($Q_1$) and upper quartile ($Q_3$).<br><strong>(iii)</strong> Using the rule that an outlier is any value greater than $Q_3 + 1.5 \\times \\text{IQR}$, show that the delivery time of $62\\text{ minutes}$ is an outlier.<br><br><strong>(b)</strong> For Driver B, the median is $44\\text{ minutes}$ and the interquartile range is $5\\text{ minutes}$.<br><br>Compare the delivery times of Driver A and Driver B in context, referencing both an appropriate measure of central tendency and an appropriate measure of spread.",
+  "steps": [
+    "<strong>(a)(i) Finding the Median for Driver A:</strong><br><br>For $n = 7$ ordered items, the median position is $\\frac{7 + 1}{2} = 4$th value:\\begin{aligned} &\\text{Median} \\cr &\\quad = 45\\text{ mins} \\end{aligned}",
+    "<strong>(a)(ii) Finding the Quartiles for Driver A:</strong><br><br>The lower quartile position is $\\frac{7 + 1}{4} = 2$nd value:\\begin{aligned} &Q_1 \\cr &\\quad = 41\\text{ mins} \\end{aligned}<br>The upper quartile position is $\\frac{3(7 + 1)}{4} = 6$th value:\\begin{aligned} &Q_3 \\cr &\\quad = 48\\text{ mins} \\end{aligned}",
+    "<strong>(a)(iii) Demonstrating that 62 is an Outlier:</strong><br><br>Calculate the interquartile range:\\begin{aligned} &\\text{IQR} \\cr &\\quad = Q_3 - Q_1 \\cr &\\quad = 48 - 41 \\cr &\\quad = 7\\text{ mins} \\end{aligned}<br>Calculate the upper outlier boundary:\\begin{aligned} &\\text{Upper Bound} \\cr &\\quad = Q_3 \\cr &\\qquad + 1.5(\\text{IQR}) \\cr &\\quad = 48 \\cr &\\qquad + 1.5(7) \\cr &\\quad = 48 + 10.5 \\cr &\\quad = 58.5\\text{ mins} \\end{aligned}<br>Because $62 > 58.5$, the delivery time of $62\\text{ minutes}$ is confirmed as an outlier.",
+    "<strong>(b) Comparative Analysis in Context:</strong><br><br>Comparing central tendency (median):<br>Driver B's median of $44\\text{ mins}$ is lower than Driver A's median of $45\\text{ mins}$, indicating Driver B is generally faster on average.<br><br>Comparing spread (interquartile range):<br>Driver B's IQR of $5\\text{ mins}$ is smaller than Driver A's IQR of $7\\text{ mins}$, indicating Driver B has more consistent delivery times.",
+    "Final Answer: (a)(i) $45\\text{ mins}$, (ii) $Q_1 = 41\\text{ mins}$, $Q_3 = 48\\text{ mins}$, (iii) $58.5\\text{ mins}$, outlier, (b) Driver B faster and more consistent"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a)(i) $45\\text{ mins}$, (ii) $Q_1 = 41\\text{ mins}$, $Q_3 = 48\\text{ mins}$, (iii) $58.5\\text{ mins}$, outlier, (b) Driver A faster and more consistent",
+      "feedback": "Inverting the comparisons incorrectly identifies Driver A as faster despite having a higher median of $45$ compared to $44$."
+    },
+    {
+      "ans": "(a)(i) $45\\text{ mins}$, (ii) $Q_1 = 41.5\\text{ mins}$, $Q_3 = 47.5\\text{ mins}$, (iii) $56.5\\text{ mins}$, outlier, (b) Driver B faster and more consistent",
+      "feedback": "Interpolating between values rather than using the exact 2nd and 6th discrete ranks gives $Q_1 = 41.5$ and $Q_3 = 47.5$."
+    },
+    {
+      "ans": "(a)(i) $45\\text{ mins}$, (ii) $Q_1 = 41\\text{ mins}$, $Q_3 = 48\\text{ mins}$, (iii) $55.0\\text{ mins}$, not an outlier, (b) Driver B faster and more consistent",
+      "feedback": "Using $1.0 \\times \\text{IQR}$ rather than $1.5 \\times \\text{IQR}$ calculates $48 + 7 = 55$ and incorrectly concludes $62$ is not an outlier."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Two-Part Contextual Comparison",
+    "content": "When asked to compare two distributions, you must always provide two separate statements with context and numerical support: one comparing a measure of central tendency (median or mean) and one comparing a measure of dispersion (IQR or standard deviation)."
+  }
+}
 ];
