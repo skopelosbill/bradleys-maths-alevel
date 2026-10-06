@@ -1652,5 +1652,228 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: State Assumptions in Context",
     "content": "When asked for assumptions of a Binomial model, never just write 'independence and constant probability'. Always frame them in the context of the question: 'each enquiry is independent' and 'the probability of resolution is constant across enquiries'."
   }
+},
+{
+  "id": "050141",
+  "group_id": "050141",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Data Presentation, Correlation & Sampling",
+  "subtopic": [
+    "Chart Critiques",
+    "Linear Regression",
+    "Sampling Techniques"
+  ],
+  "img": "images/Statistics_pngs/050141.png",
+  "question": "A large demographic data set contains records of the death rate per thousand people and the birth rate per thousand people for countries worldwide.<br><br>The diagram in <strong>Fig. 1.1</strong> was generated using spreadsheet software and summarises the birth rates for all countries in Africa from this data set.<br><br><strong>(a)</strong> Identify <strong>two</strong> respects in which the presentation of the data in <strong>Fig. 1.1</strong> is incorrect.<br><br><strong>Fig. 1.2</strong> in the same diagram shows a scatter diagram of death rate, $y$, against birth rate, $x$, for a sample of $55$ countries in Africa. A line of best fit has also been drawn. The equation of the line of best fit is:<br>$$y = 0.15x + 4.72$$<br><strong>(b)</strong><br><strong>(i)</strong> What does the diagram suggest about the relationship between death rate and birth rate?<br><strong>(ii)</strong> The birth rate in a certain African country is recorded as $32.40$ per thousand, but the data on death rate were omitted. Use the equation of the line of best fit to estimate the death rate for this country.<br><strong>(iii)</strong> Explain why it would not be sensible to use the equation of the line of best fit to estimate the death rate in a country where the birth rate is $6.0$ per thousand.<br><strong>(iv)</strong> Explain why it would not be reliable to use this equation to estimate the death rate in an Asian country where the birth rate is known.<br><strong>(v)</strong> Explain why it is unlikely that this sample of $55$ countries is a simple random sample from Africa.<br><br><strong>(c)</strong> In the full demographic data set, there are $56$ African countries available for selection. Describe how a sample of size $14$ could be selected from these $56$ countries using systematic sampling.",
+  "steps": [
+    "<strong>(a) Flaws in the Spreadsheet Chart (Fig. 1.1):</strong><br><br>Two presentation errors in <strong>Fig. 1.1</strong> are:<br>1. Equal bar widths are drawn despite the class intervals being unequal (some intervals have width $5$, others width $10$). The vertical axis should display <strong>frequency density</strong> rather than frequency.<br>2. There are gaps between the bars, which is incorrect for continuous grouped data.",
+    "<strong>(b)(i) Relationship:</strong><br><br>The scatter diagram shows a <strong>positive correlation</strong> (as birth rate increases, death rate tends to increase).",
+    "<strong>(b)(ii) Estimating Death Rate:</strong><br><br>Substitute $x = 32.40$ into the regression line:\\begin{aligned} y &= 0.15(32.40) \\cr &\\quad + 4.72 \\cr &= 4.86 + 4.72 \\cr &= 9.58 \\end{aligned}<br>The estimated death rate is $9.58$ per thousand.",
+    "<strong>(b)(iii) Extrapolation:</strong><br><br>A birth rate of $6.0$ lies well below the minimum birth rate in the sample ($x \\approx 10$). Using the line outside the range of sample data is <strong>extrapolation</strong> and the linear trend may not hold.",
+    "<strong>(b)(iv) Population Validity:</strong><br><br>The regression model is derived exclusively from African countries. Demographic profiles, healthcare systems, and age distributions in Asian countries may differ significantly, making the model invalid for other continents.",
+    "<strong>(b)(v) Non-Random Nature of Sample:</strong><br><br>Since there are $56$ countries in Africa and $55$ are in the sample, nearly the entire population is selected. The single omission was almost certainly due to missing data (opportunity sampling) rather than random selection.",
+    "<strong>(c) Systematic Sampling Process:</strong><br><br>Calculate the sampling interval:\\begin{aligned} k &= \\dfrac{56}{14} \\cr &= 4 \\end{aligned}<br>1. Number the $56$ countries from $1$ to $56$ in an alphabetical list.<br>2. Select a random integer between $1$ and $4$ inclusive as the starting country.<br>3. Select every $4$th country on the list thereafter.",
+    "Final Answer: (a) Equal bar widths for unequal classes, gaps between continuous bars, (b)(i) Positive correlation, (ii) $9.58$, (iii) Extrapolation, (iv) Different population demographics, (v) Nearly whole population, (c) Interval $4$, random start from $1$ to $4$, select every $4$th"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Vertical axis has wrong scale, bars are too dark, (b)(i) Positive correlation, (ii) $9.58$, (iii) Extrapolation, (iv) Different population demographics, (v) Nearly whole population, (c) Interval $4$, random start from $1$ to $4$, select every $4$th",
+      "feedback": "Bar colour and scale choices are stylistic preferences, not mathematical presentation errors for continuous grouped data."
+    },
+    {
+      "ans": "(a) Equal bar widths for unequal classes, gaps between continuous bars, (b)(i) Positive correlation, (ii) $9.58$, (iii) Interpolation, (iv) Different population demographics, (v) Nearly whole population, (c) Interval $14$, random start from $1$ to $14$, select every $14$th",
+      "feedback": "A value of $6.0$ lies outside the data range ($x \\ge 10$) so it is extrapolation, not interpolation, and the sampling interval is $56 / 14 = 4$, not $14$."
+    },
+    {
+      "ans": "(a) Equal bar widths for unequal classes, gaps between continuous bars, (b)(i) Negative correlation, (ii) $8.58$, (iii) Extrapolation, (iv) Different population demographics, (v) Nearly whole population, (c) Interval $4$, random start from $1$ to $4$, select every $4$th",
+      "feedback": "The line of best fit has a positive slope ($+0.15$), indicating positive correlation, not negative correlation."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Spotting Histogram Spreadsheet Errors",
+    "content": "Standard spreadsheet software often defaults to drawing bar charts with equal bar widths and spaces even when given unequal class intervals. In a true histogram for continuous data, the area must be proportional to frequency, requiring frequency density on the vertical axis and touching bars."
+  }
+},
+{
+  "id": "050142",
+  "group_id": "050141",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Bivariate Data & Sampling",
+  "subtopic": [
+    "Scatter Diagrams",
+    "Outliers",
+    "Regression Estimation",
+    "Systematic Sampling"
+  ],
+  "img": "images/Statistics_pngs/050142.png",
+  "question": "A student investigates weather records from a UK meteorological station using the Large Data Set. <strong>Fig. 2.1</strong> shows a scatter diagram of daily total sunshine, $s$ in hours, against daily mean temperature, $t$ in $^\\circ\\text{C}$, for a sample of summer days.<br><br>The equation of the regression line of $s$ on $t$ is:<br>$$s = 0.45t - 1.20$$<br><strong>(a)</strong> State the type of correlation shown by the scatter diagram.<br><br><strong>(b)</strong> Point $P$ on the scatter diagram represents a day where $t = 19.0^\\circ\\text{C}$ and $s = 1.4\\text{ hours}$. Point $P$ is an outlier. Suggest a plausible meteorological reason for this unusual observation.<br><br><strong>(c)</strong> Use the regression equation to estimate the daily total sunshine for a day with a daily mean temperature of $16.0^\\circ\\text{C}$.<br><br><strong>(d)</strong> Explain why it would not be sensible to use this regression equation to estimate the sunshine for a day when the mean temperature is $32.0^\\circ\\text{C}$.<br><br><strong>(e)</strong> The student wishes to select a sample of size $15$ from a sampling frame of $180$ consecutive days from the meteorological records. Describe how systematic sampling could be used to select this sample.",
+  "steps": [
+    "<strong>(a) Type of Correlation:</strong><br><br>The scatter diagram shows <strong>positive correlation</strong> (as daily mean temperature increases, daily total sunshine tends to increase).",
+    "<strong>(b) Plausible Meteorological Reason for Outlier $P$:</strong><br><br>Point $P$ represents a warm day ($19.0^\\circ\\text{C}$) with very little sunshine ($1.4\\text{ hours}$). A plausible explanation is that the day was warm but heavily overcast, humid, or covered by thick cloud.",
+    "<strong>(c) Estimating Daily Sunshine:</strong><br><br>Substitute $t = 16.0$ into the regression line:\\begin{aligned} s &= 0.45(16.0) \\cr &\\quad - 1.20 \\cr &= 7.20 - 1.20 \\cr &= 6.0\\text{ hours} \\end{aligned}",
+    "<strong>(d) Reliability of Estimation at $32.0^\circ$C:</strong><br><br>The temperature $32.0^\\circ\\text{C}$ is well above the maximum recorded temperature in the sample ($t \\approx 22^\\circ\\text{C}$). Making a prediction outside the range of observed data is <strong>extrapolation</strong>, and the linear relationship cannot be assumed to hold.",
+    "<strong>(e) Systematic Sampling Method:</strong><br><br>Calculate the sampling interval:\\begin{aligned} k &= \\dfrac{180}{15} \\cr &= 12 \\end{aligned}<br>1. Number the days sequentially from $1$ to $180$.<br>2. Select a random number between $1$ and $12$ inclusive as the starting day.<br>3. Select every $12$th day thereafter (e.g. $r, r+12, r+24, \\dots$).",
+    "Final Answer: (a) Positive correlation, (b) Warm and heavily overcast day, (c) $6.0\\text{ hours}$, (d) Extrapolation beyond sample range, (e) Interval $12$, random start from $1$ to $12$, select every $12$th"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Positive correlation, (b) Instrument malfunction only, (c) $6.0\\text{ hours}$, (d) Extrapolation beyond sample range, (e) Interval $15$, random start from $1$ to $15$, select every $15$th",
+      "feedback": "A meteorological explanation relates to atmospheric conditions (cloud cover), and the sampling interval is $180 / 15 = 12$, not $15$."
+    },
+    {
+      "ans": "(a) Negative correlation, (b) Warm and heavily overcast day, (c) $6.0\\text{ hours}$, (d) Extrapolation beyond sample range, (e) Interval $12$, random start from $1$ to $12$, select every $12$th",
+      "feedback": "The points rise from bottom-left to top-right with a positive gradient ($+0.45$), indicating positive correlation, not negative."
+    },
+    {
+      "ans": "(a) Positive correlation, (b) Warm and heavily overcast day, (c) $8.4\\text{ hours}$, (d) Interpolation within sample range, (e) Interval $12$, random start from $1$ to $12$, select every $12$th",
+      "feedback": "Adding $1.20$ instead of subtracting gives $7.20 + 1.20 = 8.4$, and $32^\\circ\\text{C}$ is an extrapolation, not an interpolation."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Identifying Contextual Causes for Outliers",
+    "content": "When asked for a reason for a bivariate weather outlier, examiners look for physical weather conditions rather than generic excuses like 'recording error'. A warm day with almost no sunshine represents a humid, overcast summer day."
+  }
+},
+{
+  "id": "050143",
+  "group_id": "050141",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Linear Regression & Correlation",
+  "subtopic": [
+    "Interpretation of Coefficients",
+    "Non-Reversibility of Regression",
+    "Causation",
+    "Stratified Sampling"
+  ],
+  "img": false,
+  "question": "A transport researcher studies the relationship between engine size, $x$ in litres, and carbon dioxide emissions, $y$ in grams per kilometre ($\\text{g/km}$), for a sample of passenger cars.<br><br>The least-squares regression line of $y$ on $x$ for the sample is:<br>$$y = 28.5x + 78.2$$<br>The values of engine size in the sample ranged from $1.0\\text{ litre}$ to $3.5\\text{ litres}$.<br><br><strong>(a)</strong> Interpret in context:<br><strong>(i)</strong> the gradient ($28.5$);<br><strong>(ii)</strong> the intercept ($78.2$), commenting on its practical validity.<br><br><strong>(b)</strong> Estimate the $\\text{CO}_2$ emissions for a car with an engine size of $2.0\\text{ litres}$.<br><br><strong>(c)</strong> A car is known to produce $160\\text{ g/km}$ of $\\text{CO}_2$. Explain why it is statistically inappropriate to rearrange the given regression equation to estimate its engine size $x$.<br><br><strong>(d)</strong> The researcher finds a strong positive correlation between engine size and $\\text{CO}_2$ emissions. Explain whether this demonstrates that having a larger engine causes higher emissions.<br><br><strong>(e)</strong> The sampling frame contains $600$ petrol cars, $300$ diesel cars, and $100$ hybrid cars. Explain how a stratified sample of size $40$ would be chosen, stating the number of cars of each fuel type required.",
+  "steps": [
+    "<strong>(a)(i) Interpreting the Gradient:</strong><br><br>The gradient indicates that for every additional $1\\text{ litre}$ increase in engine size, $\\text{CO}_2$ emissions are estimated to increase by $28.5\\text{ g/km}$.",
+    "<strong>(a)(ii) Interpreting the Intercept:</strong><br><br>The intercept suggests that a car with an engine size of $0\\text{ litres}$ would produce $78.2\\text{ g/km}$ of $\\text{CO}_2$. This has <strong>no practical validity</strong> because an engine cannot have zero volume, and $x = 0$ is an extrapolation outside the data range ($1.0 \\le x \\le 3.5$).",
+    "<strong>(b) Estimating Emissions:</strong><br><br>Substitute $x = 2.0$ into the regression line:\\begin{aligned} y &= 28.5(2.0) \\cr &\\quad + 78.2 \\cr &= 57.0 + 78.2 \\cr &= 135.2\\text{ g/km} \\end{aligned}",
+    "<strong>(c) Non-Reversibility of the Regression Line:</strong><br><br>The regression line of $y$ on $x$ is constructed by minimising the sum of squared vertical residuals in $y$, assuming $x$ is the independent variable. To estimate $x$ from $y$, a separate regression line of <strong>$x$ on $y$</strong> (minimising horizontal residuals) must be calculated.",
+    "<strong>(d) Correlation versus Causation:</strong><br><br><strong>No.</strong> Correlation does not imply causation. While there is a strong association, higher emissions could be caused by confounding variables correlated with engine size, such as total vehicle mass or fuel consumption rate.",
+    "<strong>(e) Stratified Sampling Allocations:</strong><br><br>Total population size:\\begin{aligned} N &= 600 + 300 \\cr &\\qquad + 100 \\cr &= 1000 \\end{aligned}<br>Calculate the quota for each stratum:\\begin{aligned} \\text{Petrol} &= \\left(\\dfrac{600}{1000}\\right) \\times 40 \\cr &= 24 \\cr \\text{Diesel} &= \\left(\\dfrac{300}{1000}\\right) \\times 40 \\cr &= 12 \\cr \\text{Hybrid} &= \\left(\\dfrac{100}{1000}\\right) \\times 40 \\cr &= 4 \\end{aligned}<br>Cars within each fuel type must then be selected using simple random sampling.",
+    "Final Answer: (a)(i) $28.5\\text{ g/km}$ per litre increase, (ii) $78.2\\text{ g/km}$, no practical validity, (b) $135.2\\text{ g/km}$, (c) Line minimises vertical residuals, (d) Correlation does not imply causation, (e) $24$ petrol, $12$ diesel, $4$ hybrid"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a)(i) $28.5\\text{ g/km}$ total emissions, (ii) $78.2\\text{ g/km}$, perfectly valid, (b) $135.2\\text{ g/km}$, (c) Line minimises vertical residuals, (d) Correlation does not imply causation, (e) $24$ petrol, $12$ diesel, $4$ hybrid",
+      "feedback": "The gradient represents the rate of change per unit increase in $x$, not total emissions, and a 0-litre engine is physically meaningless."
+    },
+    {
+      "ans": "(a)(i) $28.5\\text{ g/km}$ per litre increase, (ii) $78.2\\text{ g/km}$, no practical validity, (b) $135.2\\text{ g/km}$, (c) Rearranging equations is algebraically invalid, (d) Correlation proves causation, (e) $24$ petrol, $12$ diesel, $4$ hybrid",
+      "feedback": "Algebraic rearrangement is mathematically valid, but statistically inappropriate because $y$ on $x$ minimises $y$-errors, and correlation never proves causation."
+    },
+    {
+      "ans": "(a)(i) $28.5\\text{ g/km}$ per litre increase, (ii) $78.2\\text{ g/km}$, no practical validity, (b) $135.2\\text{ g/km}$, (c) Line minimises vertical residuals, (d) Correlation does not imply causation, (e) $13$ petrol, $13$ diesel, $14$ hybrid",
+      "feedback": "Dividing the sample equally across strata ignores the population proportions of the three fuel types."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: The One-Way Regression Rule",
+    "content": "A common exam question asks why you cannot rearrange $y = a + bx$ to find $x$. The answer is that the line of $y$ on $x$ is specifically fitted to minimise vertical residuals in $y$. Swapping roles requires calculating the line of $x$ on $y$."
+  }
+},
+{
+  "id": "050144",
+  "group_id": "050141",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Data Presentation & Large Data Set Anomalies",
+  "subtopic": [
+    "Cleaning Data",
+    "Trace Values",
+    "Box Plot Critiques",
+    "Sampling Bias"
+  ],
+  "img": false,
+  "question": "A student uses the Large Data Set to analyse daily weather records from a coastal location.<br><br><strong>(a)</strong> In the Large Data Set, daily total rainfall values are recorded numerically, but on some days the entry is recorded as `'tr'`.<br><strong>(i)</strong> State what the entry `'tr'` represents.<br><strong>(ii)</strong> Explain how `'tr'` values should be treated when calculating the mean daily rainfall.<br><br><strong>(b)</strong> The student generates a box plot using a spreadsheet package. The student notes that the software sets the whiskers to the minimum and maximum data values without identifying outliers.<br><strong>(i)</strong> State the mathematical rule used to identify an outlier at the upper end of a data distribution.<br><strong>(ii)</strong> Describe how outliers should be correctly presented on a standard box plot.<br><br><strong>(c)</strong> To collect data on local attitudes toward weather warnings, the student interviews the first $30$ shoppers exiting a supermarket at $10\\text{: }00\\text{ am}$ on a Tuesday.<br><strong>(i)</strong> Name this sampling method.<br><strong>(ii)</strong> Give <strong>two</strong> distinct reasons why this sampling method is likely to produce a biased sample.<br><strong>(iii)</strong> State one key difference between this method and quota sampling.",
+  "steps": [
+    "<strong>(a)(i) Meaning of 'tr':</strong><br><br>`'tr'` stands for a <strong>trace</strong> amount of rainfall. It represents a non-zero rainfall measurement that is too small to record numerically (typically less than $0.05\\text{ mm}$).",
+    "<strong>(a)(ii) Numerical Treatment of 'tr':</strong><br><br>When calculating statistical summary measures such as the mean or standard deviation, `'tr'` values are treated numerically as <strong>$0$</strong>.",
+    "<strong>(b)(i) Upper Outlier Rule:</strong><br><br>An upper outlier is any data value strictly greater than:\\begin{aligned} Q_3 + 1.5 \\times \\text{IQR} \\end{aligned}<br>where $\\text{IQR} = Q_3 - Q_1$.",
+    "<strong>(b)(ii) Presenting Outliers on a Box Plot:</strong><br><br>Whiskers should extend only to the most extreme data points that are <strong>not</strong> outliers. Outliers should be plotted as individual separate markers (such as crosses or dots).",
+    "<strong>(c)(i) Sampling Method Name:</strong><br><br>This is <strong>opportunity sampling</strong> (or <strong>convenience sampling</strong>).",
+    "<strong>(c)(ii) Sources of Bias:</strong><br><br>1. <strong>Location bias:</strong> It samples only people who shop at that specific supermarket, excluding people who shop elsewhere or online.<br>2. <strong>Time bias:</strong> People shopping at $10\\text{: }00\\text{ am}$ on a weekday morning are likely to be retired or non-working, under-representing employed commuters and students.",
+    "<strong>(c)(iii) Difference from Quota Sampling:</strong><br><br>In quota sampling, the researcher has predetermined category targets (such as specific numbers of people by age or gender) that must be filled. In opportunity sampling, the researcher simply interviews whoever is immediately available until the total sample size is reached.",
+    "Final Answer: (a)(i) Trace amount ($< 0.05\\text{ mm}$), (ii) Treat as $0$ in calculations, (b)(i) $Q_3 + 1.5 \\times \\text{IQR}$, (ii) Whiskers to non-outliers and plot outliers separately, (c)(i) Opportunity sampling, (ii) Location and time biases, (iii) Quota sampling requires demographic targets"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a)(i) Thunderstorm reading, (ii) Omit from calculations, (b)(i) $Q_3 + 1.5 \\times \\text{IQR}$, (ii) Whiskers to non-outliers and plot outliers separately, (c)(i) Opportunity sampling, (ii) Location and time biases, (iii) Quota sampling requires demographic targets",
+      "feedback": "In the UK Large Data Set, 'tr' stands for trace rainfall, not thunderstorms, and must be treated as 0 rather than omitted."
+    },
+    {
+      "ans": "(a)(i) Trace amount ($< 0.05\\text{ mm}$), (ii) Treat as $0$ in calculations, (b)(i) $Q_3 + 2.0 \\times \\text{IQR}$, (ii) Extend whiskers to outliers, (c)(i) Quota sampling, (ii) Location and time biases, (iii) Quota sampling requires demographic targets",
+      "feedback": "The standard IQR outlier multiplier is $1.5$, not $2.0$, and selecting whoever walks past without category quotas is opportunity sampling."
+    },
+    {
+      "ans": "(a)(i) Trace amount ($< 0.05\\text{ mm}$), (ii) Treat as $0$ in calculations, (b)(i) $Q_3 + 1.5 \\times \\text{IQR}$, (ii) Whiskers to non-outliers and plot outliers separately, (c)(i) Systematic sampling, (ii) Location and time biases, (iii) Quota sampling requires demographic targets",
+      "feedback": "Systematic sampling requires an ordered sampling frame and an interval $k$; taking the first 30 available shoppers is opportunity sampling."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Handling 'tr' in the Large Data Set",
+    "content": "A perennial exam question on the Large Data Set tests how trace rainfall is handled. Never omit 'tr' values—that would bias your mean upwards. Always treat trace values as $0$ when calculating means or standard deviations."
+  }
+},
+{
+  "id": "050145",
+  "group_id": "050141",
+  "branch": "Statistics",
+  "board": "OCR MEI",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Correlation & Stratified Sampling",
+  "subtopic": [
+    "PMCC Hypothesis Test",
+    "Regression Line of y on x",
+    "Interpolation vs Extrapolation",
+    "Stratified Sample Size Allocation"
+  ],
+  "img": false,
+  "question": "A regional economic study investigates the relationship between the median annual household income, $x$ in thousands of pounds ($£1000\\text{s}$), and the proportion of home ownership, $y\\%$, across a sample of $30$ local authority districts.<br><br>The sample product moment correlation coefficient is calculated as $r = 0.624$.<br><br><strong>(a)</strong> Stating your hypotheses clearly, test at the $1\\%$ level of significance whether there is evidence of a positive correlation between median household income and home ownership rate.<br><em>(Critical value for $n = 30$ at the $1\\%$ one-tailed level is $0.4226$.)</em><br><br><strong>(b)</strong> The regression line of $y$ on $x$ is given by:<br>$$y = 0.82x + 31.4$$<br>The median incomes in the sample ranged from $£22\\,000$ ($x = 22$) to $£58\\,000$ ($x = 58$).<br><strong>(i)</strong> Estimate the home ownership rate for a district with a median household income of $£45\\,000$.<br><strong>(ii)</strong> State, with a reason, whether your estimate in part <strong>(b)(i)</strong> involves interpolation or extrapolation, and comment on its reliability.<br><br><strong>(c)</strong> The region comprises $240$ urban districts and $60$ rural districts. A researcher wishes to select a stratified sample of size $40$ based on district type. Calculate the number of urban and rural districts that should be sampled.",
+  "steps": [
+    "<strong>(a) Hypothesis Test for Correlation:</strong><br><br>Let $\\rho$ be the population product moment correlation coefficient.<br><br>Hypotheses:<br>$$H_0: \\rho = 0$$<br>$$H_1: \\rho > 0$$<br>For $n = 30$ at the $1\\%$ one-tailed level, the critical value is $0.4226$.<br><br>Compare the test statistic:\\begin{aligned} 0.624 > 0.4226 \\end{aligned}<br>Because $r$ exceeds the critical value, reject $H_0$.<br><br>There is significant evidence at the $1\\%$ level of a positive correlation between median household income and home ownership rate.",
+    "<strong>(b)(i) Estimating Home Ownership:</strong><br><br>Substitute $x = 45$ into the regression line:\\begin{aligned} y &= 0.82(45) \\cr &\\quad + 31.4 \\cr &= 36.9 + 31.4 \\cr &= 68.3\\% \\end{aligned}",
+    "<strong>(b)(ii) Assessing Reliability:</strong><br><br>The value $x = 45$ lies strictly within the range of sample data ($22 \\le x \\le 58$). This is <strong>interpolation</strong>, and because the linear correlation is strong and significant, the estimate is considered <strong>reliable</strong>.",
+    "<strong>(c) Stratified Sample Calculation:</strong><br><br>Total population size:\\begin{aligned} N &= 240 + 60 \\cr &= 300 \\end{aligned}<br>Calculate the sample size for each stratum:\\begin{aligned} \\text{Urban} &= \\left(\\dfrac{240}{300}\\right) \\times 40 \\cr &= 32 \\cr \\text{Rural} &= \\left(\\dfrac{60}{300}\\right) \\times 40 \\cr &= 8 \\end{aligned}",
+    "Final Answer: (a) Reject $H_0$, significant evidence of positive correlation, (b)(i) $68.3\\%$, (ii) Interpolation, reliable, (c) $32$ urban, $8$ rural"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Do not reject $H_0$, insufficient evidence of positive correlation, (b)(i) $68.3\\%$, (ii) Interpolation, reliable, (c) $32$ urban, $8$ rural",
+      "feedback": "Because $r = 0.624$ is strictly greater than the critical value $0.4226$, $H_0$ must be rejected."
+    },
+    {
+      "ans": "(a) Reject $H_0$, significant evidence of positive correlation, (b)(i) $68.3\\%$, (ii) Extrapolation, unreliable, (c) $32$ urban, $8$ rural",
+      "feedback": "An income of $45$ lies inside the observed range of $22$ to $58$, making it an interpolation rather than an extrapolation."
+    },
+    {
+      "ans": "(a) Reject $H_0$, significant evidence of positive correlation, (b)(i) $68.3\\%$, (ii) Interpolation, reliable, (c) $20$ urban, $20$ rural",
+      "feedback": "Dividing the sample equally as $20$ and $20$ ignores the proportional representation of the urban ($80\\%$) and rural ($20\\%$) populations."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Greek Letters for Population Hypotheses",
+    "content": "Always state correlation hypotheses using the Greek letter $\\rho$ (rho), representing the population correlation coefficient: $H_0: \\rho = 0$. Using the sample statistic $r$ (e.g. $H_0: r = 0$) is a common error that will lose the hypothesis mark."
+  }
 }
 ];
