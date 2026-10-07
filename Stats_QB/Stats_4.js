@@ -1046,7 +1046,7 @@ window.ALEVEL_QUESTIONS = [
   "img": false,
   "question": "A large cohort of trainee technicians took professional assessment tests in both Electrical Principles ($E$) and Mechanical Systems ($M$).<br><br>Of these candidates, $62\\%$ passed Electrical Principles and $75\\%$ passed Mechanical Systems. In addition, $18\\%$ of the candidates did not pass either Electrical Principles or Mechanical Systems.<br><br><strong>(a)</strong> Find the probability that a randomly chosen candidate passed both Electrical Principles and Mechanical Systems.<br><br><strong>(b)</strong> Determine, with detailed reasoning, whether passing Electrical Principles and passing Mechanical Systems are independent events.<br><br><strong>(c)</strong> Find the probability that a randomly chosen candidate passed Electrical Principles given that they did not pass Mechanical Systems.",
   "steps": [
-    "<strong>(a) Probability of Passing Both:</strong><br><br>Let $E$ and $M$ denote passing Electrical Principles and Mechanical Systems respectively.<br><br>From the given data:\\begin{aligned} \\text{P}(E) &= 0.62 \\cr \\text{P}(M) &= 0.75 \\cr \\text{P}(E' \\cap M') &= 0.18 \\end{aligned}<br>The union probability is:\\begin{aligned} \\text{P}(E \\cup M) &= 1 - 0.18 \\cr &= 0.82 \\end{aligned}<br>Using the addition rule of probability:\\begin{aligned} &\\text{P}(E \\cup M) = \\text{P}(E) + \\text{P}(M) - \\text{P}(E \\cap M) \\cr &0.82 = 0.62 + 0.75 - \\text{P}(E \\cap M) \\cr &0.82 = 1.37 - \\text{P}(E \\cap M) \\cr &\\text{P}(E \\cap M) = 1.37 - 0.82 \\cr &\\text{P}(E \\cap M) = 0.55 \\end{aligned}",
+    "<strong>(a) Probability of Passing Both:</strong><br><br>Let $E$ and $M$ denote passing Electrical Principles and Mechanical Systems respectively.<br><br>From the given data:\\begin{aligned} \\text{P}(E) &= 0.62 \\cr \\text{P}(M) &= 0.75 \\cr \\text{P}(E' \\cap M') &= 0.18 \\end{aligned}<br>The union probability is:\\begin{aligned} \\text{P}(E \\cup M) &= 1 - 0.18 \\cr &= 0.82 \\end{aligned}<br>Using the addition rule of probability:\\begin{aligned} &\\text{P}(E \\cup M) = \\text{P}(E) + \\text{P}(M)\\cr & \\qquad \\qquad - \\text{P}(E \\cap M) \\cr &0.82 = 0.62 + 0.75 - \\text{P}(E \\cap M) \\cr &0.82 = 1.37 - \\text{P}(E \\cap M) \\cr &\\text{P}(E \\cap M) = 1.37 - 0.82 \\cr &\\text{P}(E \\cap M) = 0.55 \\end{aligned}",
     "<strong>(b) Test for Independence:</strong><br><br>For two events to be independent, the product of their individual probabilities must equal their intersection probability:\\begin{aligned} \\text{P}(E) \\times \\text{P}(M) &= 0.62 \\times 0.75 \\cr &= 0.465 \\end{aligned}<br>Comparing this product with the intersection:\\begin{aligned} \\text{P}(E \\cap M) = 0.55 \\end{aligned}<br>Since $0.55 \\neq 0.465$, passing Electrical Principles and passing Mechanical Systems are <strong>not independent</strong>.",
     "<strong>(c) Conditional Probability:</strong><br><br>Using the definition of conditional probability:\\begin{aligned} \\text{P}(E \\mid M') = \\dfrac{\\text{P}(E \\cap M')}{\\text{P}(M')} \\end{aligned}<br>Finding the required component probabilities:\\begin{aligned} \\text{P}(E \\cap M') &= \\text{P}(E) - \\text{P}(E \\cap M) \\cr &= 0.62 - 0.55 \\cr &= 0.07 \\end{aligned}\\begin{aligned} \\text{P}(M') &= 1 - \\text{P}(M) \\cr &= 1 - 0.75 \\cr &= 0.25 \\end{aligned}<br>Evaluating the conditional probability:\\begin{aligned} \\text{P}(E \\mid M') &= \\dfrac{0.07}{0.25} \\cr &= 0.28 \\end{aligned}",
     "Final Answer: (a) $0.55$, (b) Not independent, (c) $0.28$"
@@ -1103,7 +1103,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
       "ans": "(a) $0.02$, (b) $\\text{P}(C) = 0.070$, (c) Not independent, (d) $0.286$",
-      "feedback": "Remember that $\\text{P}(S' \\cap C) = \\text{P}(S')\\text{P}(C \\mid S') = 0.92 \\times 0.05 = 0.046$. Do not forget to multiply by $\\text{P}(S')$."
+      "feedback": "Remember that \\begin{aligned} \\text{P}(S' \\cap C) &= \\text{P}(S')\\text{P}(C \\mid S') \\cr &= 0.92 \\times 0.05 \\cr &= 0.046 \\end{aligned} Do not forget to multiply by $\\text{P}(S')$."
     }
   ],
   "bradley_insight": {
@@ -1144,7 +1144,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
       "ans": "(a) $0.07$, (b) Independent, (c) Mutually exclusive, (d) $0.4$",
-      "feedback": "When calculating the union, ensure you subtract both two-way intersections: $0.40 + 0.30 + 0.35 - 0.12 - 0.14 = 0.79$, so the complement is $1 - 0.79 = 0.21$."
+     "feedback": "When calculating the union, ensure you subtract both two-way intersections:\\begin{aligned} &\\text{P}(\\text{Union}) \\cr &\\quad = 0.40 + 0.30 \\cr &\\qquad + 0.35 - 0.12 \\cr &\\qquad - 0.14 \\cr &\\quad = 0.79 \\cr &\\text{P}(\\text{None}) \\cr &\\quad = 1 - 0.79 \\cr &\\quad = 0.21 \\end{aligned}"
     }
   ],
   "bradley_insight": {
@@ -1168,7 +1168,7 @@ window.ALEVEL_QUESTIONS = [
   "img": false,
   "question": "Two events $A$ and $B$ are such that$$\\text{P}(A) = p$$$$\\text{P}(B) = 2p$$$$\\text{P}(A \\cup B) = 0.72$$where $p$ is a positive constant.<br><br><strong>(a)</strong> Given that $A$ and $B$ are independent events, show that$$2p^2 - 3p + 0.72 = 0$$<strong>(b)</strong> Hence determine the value of $p$, stating why the alternative root must be rejected.<br><br><strong>(c)</strong> Find $\\text{P}(A' \\cap B)$.<br><br><strong>(d)</strong> Find $\\text{P}(A \\mid A \\cup B)$, giving your answer as an exact fraction in simplest form.",
   "steps": [
-    "<strong>(a) Deriving the Quadratic Equation:</strong><br><br>Since $A$ and $B$ are independent:\\begin{aligned} \\text{P}(A \\cap B) &= \\text{P}(A) \\times \\text{P}(B) \\cr &= p(2p) \\cr &= 2p^2 \\end{aligned}<br>Substituting into the addition rule:\\begin{aligned} &\\text{P}(A \\cup B) = \\text{P}(A) + \\text{P}(B) - \\text{P}(A \\cap B) \\cr &0.72 = p + 2p - 2p^2 \\cr &0.72 = 3p - 2p^2 \\cr &2p^2 - 3p + 0.72 = 0 \\end{aligned}",
+    "<strong>(a) Deriving the Quadratic Equation:</strong><br><br>Since $A$ and $B$ are independent:\\begin{aligned} \\text{P}(A \\cap B) &= \\text{P}(A) \\times \\text{P}(B) \\cr &= p(2p) \\cr &= 2p^2 \\end{aligned}<br>Substituting into the addition rule:\\begin{aligned} \\text{P}(A \\cup B) &= \\text{P}(A) + \\text{P}(B) \\cr &\\quad - \\text{P}(A \\cap B)\\cr &0.72 = p + 2p - 2p^2 \\cr &0.72 = 3p - 2p^2 \\cr &2p^2 - 3p + 0.72 = 0 \\end{aligned}",
     "<strong>(b) Solving for $p$:</strong><br><br>Using the quadratic formula:\\begin{aligned} p &= \\dfrac{-(-3) \\pm \\sqrt{(-3)^2 - 4(2)(0.72)}}{2(2)} \\cr &= \\dfrac{3 \\pm \\sqrt{9 - 5.76}}{4} \\cr &= \\dfrac{3 \\pm \\sqrt{3.24}}{4} \\cr &= \\dfrac{3 \\pm 1.8}{4} \\end{aligned}<br>Evaluating the two roots:\\begin{aligned} p_1 &= \\dfrac{4.8}{4} = 1.2 \\cr p_2 &= \\dfrac{1.2}{4} = 0.3 \\end{aligned}<br>If $p = 1.2$, then $\\text{P}(B) = 2(1.2) = 2.4 > 1$, which is impossible because probabilities cannot exceed $1$.<br><br>Therefore, $p = 0.3$.",
     "<strong>(c) Probability $\\text{P}(A' \\cap B)$:</strong><br><br>With $p = 0.3$:\\begin{aligned} \\text{P}(A) &= 0.3 \\cr \\text{P}(B) &= 0.6 \\cr \\text{P}(A \\cap B) &= 2(0.3)^2 \\cr &= 0.18 \\end{aligned}<br>Finding the required probability:\\begin{aligned} \\text{P}(A' \\cap B) &= \\text{P}(B) - \\text{P}(A \\cap B) \\cr &= 0.6 - 0.18 \\cr &= 0.42 \\end{aligned}",
     "<strong>(d) Conditional Probability $\\text{P}(A \\mid A \\cup B)$:</strong><br><br>Since $A$ is a subset of $A \\cup B$, their intersection is simply $A$:\\begin{aligned} \\text{P}(A \\cap (A \\cup B)) = \\text{P}(A) = 0.3 \\end{aligned}<br>Evaluating the conditional probability:\\begin{aligned} \\text{P}(A \\mid A \\cup B) &= \\dfrac{\\text{P}(A)}{\\text{P}(A \\cup B)} \\cr &= \\dfrac{0.3}{0.72} \\cr &= \\dfrac{30}{72} \\cr &= \\dfrac{5}{12} \\end{aligned}",
@@ -1211,8 +1211,8 @@ window.ALEVEL_QUESTIONS = [
   "steps": [
     "<strong>(a)(i) Mutually Exclusive Intersection:</strong><br><br>By definition, mutually exclusive events cannot occur simultaneously:\\begin{aligned} \\text{P}(E \\cap F) = 0 \\end{aligned}",
     "<strong>(a)(ii) Mutually Exclusive vs Independent:</strong><br><br>For independent events with non-zero probabilities:\\begin{aligned} \\text{P}(E \\cap F) &= \\text{P}(E) \\times \\text{P}(F) \\cr &> 0 \\end{aligned}<br>However, for mutually exclusive events, $\\text{P}(E \\cap F) = 0$.<br><br>Since $\\text{P}(E) \\times \\text{P}(F) \\neq 0$, the two conditions contradict each other. Thus, events with non-zero probabilities cannot be both mutually exclusive and independent.",
-    "<strong>(b) Independent Scenario:</strong><br><br><strong>(i) Intersection:</strong>\\begin{aligned} \\text{P}(E \\cap F) &= \\text{P}(E) \\times \\text{P}(F) \\cr &= 0.4 \\times 0.5 \\cr &= 0.2 \\end{aligned}<br><strong>(ii) Union:</strong>\\begin{aligned} \\text{P}(E \\cup F) &= \\text{P}(E) + \\text{P}(F) - \\text{P}(E \\cap F) \\cr &= 0.4 + 0.5 - 0.2 \\cr &= 0.7 \\end{aligned}<br><strong>(iii) Conditional:</strong> If $E$ and $F$ are independent, the non-occurrence of $F$ does not affect the probability of $E$:\\begin{aligned} \\text{P}(E \\mid F') &= \\text{P}(E) \\cr &= 0.4 \\end{aligned}",
-    "<strong>(c) Independence in Alternate Scenario:</strong><br><br>Using the addition rule to find the intersection:\\begin{aligned} \\text{P}(E \\cap F) &= \\text{P}(E) + \\text{P}(F) - \\text{P}(E \\cup F) \\cr &= 0.4 + 0.5 - 0.7 \\cr &= 0.2 \\end{aligned}<br>Testing the independence product:\\begin{aligned} \\text{P}(E) \\times \\text{P}(F) &= 0.4 \\times 0.5 \\cr &= 0.2 \\end{aligned}<br>Since $\\text{P}(E \\cap F) = \\text{P}(E) \\times \\text{P}(F) = 0.2$, the events $E$ and $F$ are <strong>independent</strong>.",
+    "<strong>(b) Independent Scenario:</strong><br><br><strong>(i) Intersection:</strong>\\begin{aligned} \\text{P}(E \\cap F) &= \\text{P}(E) \\times \\text{P}(F) \\cr &= 0.4 \\times 0.5 \\cr &= 0.2 \\end{aligned}<br><strong>(ii) Union:</strong>\\begin{aligned} \\text{P}(E \\cup F) &= \\text{P}(E) + \\text{P}(F) \\cr &\\quad - \\text{P}(E \\cap F)\\cr &= 0.4 + 0.5 - 0.2 \\cr &= 0.7 \\end{aligned}<br><strong>(iii) Conditional:</strong> If $E$ and $F$ are independent, the non-occurrence of $F$ does not affect the probability of $E$:\\begin{aligned} \\text{P}(E \\mid F') &= \\text{P}(E) \\cr &= 0.4 \\end{aligned}",
+    "<strong>(c) Independence in Alternate Scenario:</strong><br><br>Using the addition rule to find the intersection:\\begin{aligned} \\text{P}(E \\cap F) &= \\text{P}(E) + \\text{P}(F) \\cr &\\quad - \\text{P}(E \\cup F) \\cr &= 0.4 + 0.5 - 0.7 \\cr &= 0.2 \\end{aligned}<br>Testing the independence product:\\begin{aligned} \\text{P}(E) \\times \\text{P}(F) &= 0.4 \\times 0.5 \\cr &= 0.2 \\end{aligned}<br>Since $\\text{P}(E \\cap F) = \\text{P}(E) \\times \\text{P}(F) = 0.2$, the events $E$ and $F$ are <strong>independent</strong>.",
     "Final Answer: (a)(i) $0$, (ii) $\\text{P}(E)\\text{P}(F) \\neq 0$, (b)(i) $0.2$, (ii) $0.7$, (iii) $0.4$, (c) Independent"
   ],
   "pi_options": [
@@ -1234,5 +1234,204 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: The Difference Between ME and Independent",
     "content": "Mutually exclusive means the events cannot happen together (disjoint sets with $\\text{P}(A \\cap B) = 0$). Independent means one event happening provides zero information about the other. If two events are mutually exclusive and one happens, you know with $100\\%$ certainty that the other did not—so they are maximally dependent!"
   }
-} 
+},
+{
+  "id": "050181",
+  "group_id": "050181",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "The Normal Distribution",
+  "subtopic": [
+    "Model Evaluation",
+    "Sample Size Determination"
+  ],
+  "img": false,
+  "question": "An engineer models the operational cycle time, $X\\text{ minutes}$, of an industrial compressor using the distribution$$X \\sim \\text{N}(30, 16)$$Over an extended trial period, the engineer observes that the cycle time is less than $26\\text{ minutes}$ on $6.7\\%$ of cycles, and exceeds $34\\text{ minutes}$ on $30.9\\%$ of cycles.<br><br><strong>(a)</strong> Investigate whether the engineer's initial model is a good fit for the data.<br><br><strong>(b)</strong> The plant manager believes the variance $\\sigma^2 = 16$ is accurate, but that the true mean $\\mu$ has shifted. Calculate, correct to two significant figures, the refined value of $\\mu$ that fits the trial data.<br><br><strong>(c)</strong> Following a system overhaul, the engineer selects a random sample of $n$ operational cycles. The mean cycle time for these $n$ cycles is found to be $30.0\\text{ minutes}$. Using the refined model parameters ($\\mu = 32$, $\\sigma = 4$), the engineer conducts a two-tailed hypothesis test at the $5\\%$ significance level to determine whether the population mean cycle time has changed.<br><br>Given that the test result is statistically significant, determine the smallest possible sample size $n$.",
+  "steps": [
+    "<strong>(a) Model Evaluation:</strong><br><br>Under the initial model $X \\sim \\text{N}(30, 16)$, $\\sigma = 4$.<br><br>Evaluating the lower tail probability:\\begin{aligned} \\text{P}(X < 26) &= \\text{P}\\left(Z < \\dfrac{26 - 30}{4}\\right) \\cr &= \\text{P}(Z < -1) \\cr &= 1 - \\Phi(1) \\cr &= 1 - 0.8413 \\cr &= 0.1587 \\end{aligned}<br>Evaluating the upper tail probability:\\begin{aligned} \\text{P}(X > 34) &= \\text{P}\\left(Z > \\dfrac{34 - 30}{4}\\right) \\cr &= \\text{P}(Z > 1) \\cr &= 1 - \\Phi(1) \\cr &= 0.1587 \\end{aligned}<br>The model predicts $15.9\\%$ in both tails, which does not match the observed $6.7\\%$ and $30.9\\%$. The model is a <strong>poor fit</strong>.",
+    "<strong>(b) Refined Mean $\\mu$:</strong><br><br>For the lower tail proportion of $0.067$:\\begin{aligned} \\Phi(-1.50) \\approx 0.0668 \\end{aligned}<br>Standardising with $\\sigma = 4$:\\begin{aligned} \\dfrac{26 - \\mu}{4} &= -1.50 \\cr 26 - \\mu &= -6 \\cr \\mu &= 32 \\end{aligned}<br>Checking with the upper tail proportion of $0.309$:\\begin{aligned} \\dfrac{34 - 32}{4} &= 0.50 \\cr \\text{P}(Z > 0.50) &= 1 - 0.6915 \\cr &= 0.3085 \\end{aligned}<br>Both tails confirm $\\mu = 32$.",
+    "<strong>(c) Smallest Sample Size $n$:</strong><br><br>Under $H_0: \\mu = 32$, the sampling distribution is:\\begin{aligned} \\bar{X} \\sim \\text{N}\\left(32, \\dfrac{16}{n}\\right) \\end{aligned}<br>For a two-tailed test at the $5\\%$ level, the critical $z$-value is $1.960$.<br><br>Since $\\bar{x} = 30.0 < 32$, the test statistic must lie in the lower rejection tail:\\begin{aligned} &\\dfrac{30 - 32}{4/\\sqrt{n}} \\le -1.960 \\cr &-0.5\\sqrt{n} \\le -1.960 \\cr &0.5\\sqrt{n} \\ge 1.960 \\cr &\\sqrt{n} \\ge 3.920 \\cr &n \\ge 3.920^2 \\cr &n \\ge 15.37 \\end{aligned}<br>Since $n$ must be an integer, the smallest possible sample size is $n = 16$.",
+    "Final Answer: (a) Poor fit, (b) $\\mu = 32$, (c) $n = 16$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Poor fit, (b) $\\mu = 32$, (c) $n = 11$",
+      "feedback": "The test is two-tailed because it investigates whether the mean has changed. The critical value is $1.960$ rather than the one-tailed value $1.645$."
+    },
+    {
+      "ans": "(a) Poor fit, (b) $\\mu = 32$, (c) $n = 15$",
+      "feedback": "Because $n \\ge 15.37$, selecting $n = 15$ yields a test statistic below the critical magnitude, failing to achieve significance. You must round up to $16$."
+    },
+    {
+      "ans": "(a) Poor fit, (b) $\\mu = 20$, (c) $n = 16$",
+      "feedback": "In the lower tail equation, $26 - \\mu = -6$ rearranges to $\\mu = 32$. A sign error yields $20$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Always Round Up for Sample Sizes",
+    "content": "When determining the minimum sample size required to achieve significance, always round up to the next integer. If $n \\ge 15.37$, selecting $n = 15$ leaves the test statistic just outside the rejection region, while $n = 16$ guarantees significance."
+  }
+},
+{
+  "id": "050182",
+  "group_id": "050181",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "The Normal Distribution",
+  "subtopic": [
+    "Inverse Normal",
+    "Sample Size Determination"
+  ],
+  "img": false,
+  "question": "A quality analyst models the weight, $W\\text{ grams}$, of cereal boxes using the distribution$$W \\sim \\text{N}(505, 25)$$Records show that $2.3\\%$ of boxes weigh less than $495\\text{ grams}$ and $15.9\\%$ of boxes weigh more than $512\\text{ grams}$.<br><br><strong>(a)</strong> Show that the current model does not fit these observed proportions.<br><br><strong>(b)</strong> Assuming a normal distribution remains appropriate, determine refined values for both the mean $\\mu$ and the standard deviation $\\sigma$ that match the observed proportions.<br><br><strong>(c)</strong> The packing machinery is adjusted to reduce overweight boxes. A sample of $n$ boxes yields a mean weight of $\\bar{w} = 502.5\\text{ grams}$. A one-tailed hypothesis test is conducted at the $1\\%$ significance level with hypotheses$$H_0: \\mu = 505$$$$H_1: \\mu < 505$$assuming $\\sigma = 5$. Determine the minimum sample size $n$ required for this sample mean to lead to the rejection of $H_0$.",
+  "steps": [
+    "<strong>(a) Model Evaluation:</strong><br><br>Under $W \\sim \\text{N}(505, 25)$, $\\sigma = 5$.<br><br>Evaluating the lower tail:\\begin{aligned} \\text{P}(W < 495) &= \\text{P}\\left(Z < \\dfrac{495 - 505}{5}\\right) \\cr &= \\text{P}(Z < -2) \\cr &= 1 - \\Phi(2) \\cr &= 0.0228 \\cr &\\approx 2.3\\% \\end{aligned}<br>Evaluating the upper tail:\\begin{aligned} \\text{P}(W > 512) &= \\text{P}\\left(Z > \\dfrac{512 - 505}{5}\\right) \\cr &= \\text{P}(Z > 1.4) \\cr &= 1 - \\Phi(1.4) \\cr &= 1 - 0.9192 \\cr &= 0.0808 \\cr &\\approx 8.1\\% \\end{aligned}<br>The model predicts $8.1\\%$ above $512\\text{ g}$, which contradicts the observed $15.9\\%$. Thus the model is invalid.",
+    "<strong>(b) Refined Parameters:</strong><br><br>From normal percentage tables:\\begin{aligned} \\Phi(-2.00) &= 0.0228 \\cr \\Phi(1.00) &= 0.8413 \\end{aligned}<br>Setting up simultaneous equations:\\begin{aligned} 495 &= \\mu - 2\\sigma \\cr 512 &= \\mu + \\sigma \\end{aligned}<br>Subtracting the equations:\\begin{aligned} 512 - 495 &= \\sigma - (-2\\sigma) \\cr 17 &= 3\\sigma \\cr \\sigma &= \\dfrac{17}{3} \\cr &\\approx 5.67 \\end{aligned}<br>Substituting back to find $\\mu$:\\begin{aligned} \\mu &= 512 - \\dfrac{17}{3} \\cr &= \\dfrac{1519}{3} \\cr &\\approx 506.3 \\end{aligned}",
+    "<strong>(c) Sample Size for Hypothesis Test:</strong><br><br>Under $H_0: \\mu = 505$, the test statistic is:\\begin{aligned} z &= \\dfrac{\\bar{w} - 505}{5/\\sqrt{n}} \\cr &= \\dfrac{502.5 - 505}{5/\\sqrt{n}} \\cr &= \\dfrac{-2.5}{5/\\sqrt{n}} \\cr &= -0.5\\sqrt{n} \\end{aligned}<br>For a one-tailed test at the $1\\%$ level, the critical $z$-value is $-2.326$.<br><br>Setting up the rejection inequality:\\begin{aligned} -0.5\\sqrt{n} &\\le -2.326 \\cr 0.5\\sqrt{n} &\\ge 2.326 \\cr \\sqrt{n} &\\ge 4.652 \\cr n &\\ge 4.652^2 \\cr n &\\ge 21.64 \\end{aligned}<br>Hence the minimum sample size is $n = 22$.",
+    "Final Answer: (a) Model invalid, (b) $\\mu = 506.3, \\sigma = 5.67$, (c) $n = 22$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Model invalid, (b) $\\mu = 506.3, \\sigma = 5.67$, (c) $n = 11$",
+      "feedback": "For a $1\\%$ one-tailed test, the critical value is $2.326$. The value $1.645$ corresponds to a $5\\%$ significance level."
+    },
+    {
+      "ans": "(a) Model invalid, (b) $\\mu = 506.3, \\sigma = 5.67$, (c) $n = 21$",
+      "feedback": "Because $n \\ge 21.64$, taking $n = 21$ yields a test statistic of $-2.291$, which does not fall in the critical region. You must round up to $22$."
+    },
+    {
+      "ans": "(a) Model invalid, (b) $\\mu = 478.0, \\sigma = 17.0$, (c) $n = 22$",
+      "feedback": "A weight below the mean has a negative $z$-score ($z = -2$). Setting $495 = \\mu + 2\\sigma$ inverts the direction of the lower tail."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Stringent Significance Levels",
+    "content": "Notice how moving from a $5\\%$ test ($z = 1.645$) to a $1\\%$ test ($z = 2.326$) substantially increases the required sample size from $11$ to $22$. Higher confidence requires greater sample evidence."
+  }
+},
+{
+  "id": "050183",
+  "group_id": "050181",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Hypothesis Testing",
+  "subtopic": [
+    "Statistical Power",
+    "Sample Size Determination"
+  ],
+  "img": false,
+  "question": "The tensile strength of steel cables, $S\\text{ kN}$, is known to follow a normal distribution with mean $\\mu = 450\\text{ kN}$ and standard deviation $\\sigma = 24\\text{ kN}$.<br><br>A metallurgy team tests a new manufacturing process and takes a random sample of size $n$. They test the hypotheses$$H_0: \\mu = 450$$$$H_1: \\mu > 450$$at the $2.5\\%$ significance level.<br><br><strong>(a)</strong> State the sampling distribution of the sample mean $\\bar{S}$ under $H_0$ in terms of $n$.<br><br><strong>(b)</strong> Write down an expression in terms of $n$ for the critical value $c$ of the test.<br><br><strong>(c)</strong> The team requires that if the true population mean has increased to $460\\text{ kN}$, the probability of rejecting $H_0$ (the statistical power) should be at least $0.975$.<br><br>Determine the smallest integer sample size $n$ that satisfies this requirement.",
+  "steps": [
+    "<strong>(a) Sampling Distribution:</strong><br><br>Under $H_0$, the sample mean has distribution:\\begin{aligned} \\bar{S} &\\sim \\text{N}\\left(450, \\dfrac{24^2}{n}\\right) \\cr &\\sim \\text{N}\\left(450, \\dfrac{576}{n}\\right) \\end{aligned}",
+    "<strong>(b) Critical Value $c$:</strong><br><br>For an upper one-tailed test at the $2.5\\%$ level, the critical $z$-value is $1.960$.<br><br>The critical value expression is:\\begin{aligned} c &= 450 + 1.960\\left(\\dfrac{24}{\\sqrt{n}}\\right) \\cr &= 450 + \\dfrac{47.04}{\\sqrt{n}} \\end{aligned}",
+    "<strong>(c) Determining Sample Size $n$:</strong><br><br>Under the alternative distribution where $\\mu = 460$:\\begin{aligned} \\bar{S} \\sim \\text{N}\\left(460, \\dfrac{576}{n}\\right) \\end{aligned}<br>We require the power to satisfy:\\begin{aligned} \\text{P}(\\bar{S} > c \\mid \\mu = 460) \\ge 0.975 \\end{aligned}<br>Standardising under $\\mu = 460$:\\begin{aligned} \\text{P}\\left(Z > \\dfrac{c - 460}{24/\\sqrt{n}}\\right) \\ge 0.975 \\end{aligned}<br>Since $\\text{P}(Z > -1.960) = 0.975$, the standardised threshold requires:\\begin{aligned} &\\dfrac{c - 460}{24/\\sqrt{n}} \\le -1.960 \\cr &c - 460 \\le -1.960\\left(\\dfrac{24}{\\sqrt{n}}\\right) \\end{aligned}<br>Substituting $c = 450 + 1.960\\left(\\dfrac{24}{\\sqrt{n}}\\right)$:\\begin{aligned} &-10 + 1.960\\left(\\dfrac{24}{\\sqrt{n}}\\right) \\cr &\\quad \\le -1.960\\left(\\dfrac{24}{\\sqrt{n}}\\right) \\cr &3.920\\left(\\dfrac{24}{\\sqrt{n}}\\right) \\ge 10 \\cr &\\dfrac{94.08}{\\sqrt{n}} \\ge 10 \\cr &\\sqrt{n} \\ge 9.408 \\cr &n \\ge 9.408^2 \\cr &n \\ge 88.51 \\end{aligned}<br>Hence the smallest integer sample size is $n = 89$.",
+    "Final Answer: (a) $\\bar{S} \\sim \\text{N}\\left(450, \\dfrac{576}{n}\\right)$, (b) $c = 450 + \\dfrac{47.04}{\\sqrt{n}}$, (c) $n = 89$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $\\bar{S} \\sim \\text{N}\\left(450, \\dfrac{576}{n}\\right)$, (b) $c = 450 + \\dfrac{47.04}{\\sqrt{n}}$, (c) $n = 23$",
+      "feedback": "Guaranteeing $97.5\\%$ power requires setting the threshold at $-1.960$ on the alternative distribution, which combines both distances: $1.960 + 1.960 = 3.920$."
+    },
+    {
+      "ans": "(a) $\\bar{S} \\sim \\text{N}\\left(450, \\dfrac{576}{n}\\right)$, (b) $c = 450 + \\dfrac{47.04}{\\sqrt{n}}$, (c) $n = 88$",
+      "feedback": "Since $n \\ge 88.51$, taking $n = 88$ results in a statistical power strictly below $0.975$. The minimum integer sample size is $89$."
+    },
+    {
+      "ans": "(a) $\\bar{S} \\sim \\text{N}\\left(450, \\dfrac{576}{n}\\right)$, (b) $c = 450 + \\dfrac{39.48}{\\sqrt{n}}$, (c) $n = 63$",
+      "feedback": "The significance level is $2.5\\%$, so the critical value is $1.960$ rather than $1.645$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Sample Size and Statistical Power",
+    "content": "To determine sample size for a target power, the shift in mean must span the distance between the two critical thresholds. Here, $10 = (1.960 + 1.960)\\dfrac{24}{\\sqrt{n}}$, directly giving $\\sqrt{n} = 9.408$ and $n = 89$."
+  }
+},
+{
+  "id": "050184",
+  "group_id": "050181",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Hypothesis Testing",
+  "subtopic": [
+    "Confidence Intervals",
+    "Hypothesis Testing Duality"
+  ],
+  "img": false,
+  "question": "The concentration of an active compound in a chemical solution is modelled by a normal distribution with unknown mean $\\mu\\text{ mg/l}$ and known standard deviation $\\sigma = 1.8\\text{ mg/l}$.<br><br><strong>(a)</strong> Find the minimum sample size $n$ required to construct a $95\\%$ confidence interval for $\\mu$ with a total width of at most $0.80\\text{ mg/l}$.<br><br><strong>(b)</strong> A chemist takes a random sample of the size found in part <strong>(a)</strong> and calculates a sample mean of $\\bar{x} = 24.35\\text{ mg/l}$.<br><strong>(i)</strong> Construct the $95\\%$ confidence interval for $\\mu$.<br><strong>(ii)</strong> Using your confidence interval, state the conclusion of a two-tailed hypothesis test at the $5\\%$ significance level for$$H_0: \\mu = 25.0$$$$H_1: \\mu \\neq 25.0$$",
+  "steps": [
+    "<strong>(a) Sample Size for Interval Width:</strong><br><br>A $95\\%$ confidence interval has half-width:\\begin{aligned} E &= 1.960\\left(\\dfrac{\\sigma}{\\sqrt{n}}\\right) \\cr &= 1.960\\left(\\dfrac{1.8}{\\sqrt{n}}\\right) \\cr &= \\dfrac{3.528}{\\sqrt{n}} \\end{aligned}<br>The total width is $2E$:\\begin{aligned} \\text{Width} &= 2\\left(\\dfrac{3.528}{\\sqrt{n}}\\right) \\cr &= \\dfrac{7.056}{\\sqrt{n}} \\end{aligned}<br>Setting $\\text{Width} \\le 0.80$:\\begin{aligned} &\\dfrac{7.056}{\\sqrt{n}} \\le 0.80 \\cr &\\sqrt{n} \\ge \\dfrac{7.056}{0.80} \\cr &\\sqrt{n} \\ge 8.82 \\cr &n \\ge 8.82^2 \\cr &n \\ge 77.79 \\end{aligned}<br>Hence the minimum sample size is $n = 78$.",
+    "<strong>(b)(i) Constructing the $95\\%$ Interval:</strong><br><br>With $n = 78$ and $\\bar{x} = 24.35$:\\begin{aligned} E &= 1.960\\left(\\dfrac{1.8}{\\sqrt{78}}\\right) \\cr &= \\dfrac{3.528}{8.8318} \\cr &\\approx 0.3995 \\end{aligned}<br>Evaluating the interval limits:\\begin{aligned} \\text{Lower} &= 24.35 - 0.3995 \\cr &= 23.95 \\end{aligned}\\begin{aligned} \\text{Upper} &= 24.35 + 0.3995 \\cr &= 24.75 \\end{aligned}<br>The $95\\%$ confidence interval is $[23.95, 24.75]$.",
+    "<strong>(b)(ii) Hypothesis Test Conclusion:</strong><br><br>Under $H_0$, the hypothesised population mean is $\\mu = 25.0$.<br><br>Because $25.0$ lies entirely outside the $95\\%$ confidence interval $[23.95, 24.75]$, we <strong>reject $H_0$</strong>.<br><br>There is sufficient evidence at the $5\\%$ significance level to conclude that the mean concentration is not $25.0\\text{ mg/l}$.",
+    "Final Answer: (a) $n = 78$, (b)(i) $[23.95, 24.75]$, (ii) Reject $H_0$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $n = 20$, (b)(i) $[23.56, 25.14]$, (ii) Accept $H_0$",
+      "feedback": "The total width of a confidence interval is $2E$. Setting the half-width $E \\le 0.80$ produces an interval twice as wide as required."
+    },
+    {
+      "ans": "(a) $n = 77$, (b)(i) $[23.95, 24.75]$, (ii) Reject $H_0$",
+      "feedback": "Because $n \\ge 77.79$, choosing $n = 77$ results in an interval width exceeding $0.80$. You must round up to $78$."
+    },
+    {
+      "ans": "(a) $n = 78$, (b)(i) $[23.95, 24.75]$, (ii) Accept $H_0$",
+      "feedback": "Since the hypothesised value $25.0$ lies outside the $95\\%$ confidence interval, it is an implausible value for $\\mu$ at the $5\\%$ level, so $H_0$ must be rejected."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Confidence Intervals as Hypothesis Tests",
+    "content": "A two-tailed hypothesis test at significance level $\\alpha$ is exactly dual to a $(1 - \\alpha)$ confidence interval: if the null value lies outside the interval, reject $H_0$; if it lies inside, do not reject $H_0$."
+  }
+},
+{
+  "id": "050185",
+  "group_id": "050181",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Hypothesis Testing",
+  "subtopic": [
+    "Difference of Two Means",
+    "Sample Size Determination"
+  ],
+  "img": false,
+  "question": "Two automated assembly lines, Line $A$ and Line $B$, produce identical metal bolts. The lengths of bolts from Line $A$ are distributed as $X_A \\sim \\text{N}(60.0, 1.44)$ and from Line $B$ as $X_B \\sim \\text{N}(\\mu_B, 1.44)$, with lengths independent between lines.<br><br>An engineer collects equal-sized samples of $n$ bolts from each line to test whether Line $B$ produces longer bolts on average:$$H_0: \\mu_B - \\mu_A = 0$$$$H_1: \\mu_B - \\mu_A > 0$$at the $5\\%$ significance level.<br><br><strong>(a)</strong> State the distribution of the difference in sample means $\\bar{X}_B - \\bar{X}_A$ under $H_0$.<br><br><strong>(b)</strong> In a sample with observed difference $\\bar{x}_B - \\bar{x}_A = 0.65\\text{ mm}$, the test result is statistically significant. Find the smallest possible integer value of $n$.",
+  "steps": [
+    "<strong>(a) Distribution of Difference in Sample Means:</strong><br><br>For independent samples of size $n$, the variances add:\\begin{aligned} \\text{Var}(\\bar{X}_B - \\bar{X}_A) &= \\text{Var}(\\bar{X}_B) + \\text{Var}(\\bar{X}_A) \\cr &= \\dfrac{1.44}{n} + \\dfrac{1.44}{n} \\cr &= \\dfrac{2.88}{n} \\end{aligned}<br>Under $H_0$, $\\text{E}(\\bar{X}_B - \\bar{X}_A) = 0$.<br><br>Therefore:\\begin{aligned} (\\bar{X}_B - \\bar{X}_A) \\sim \\text{N}\\left(0, \\dfrac{2.88}{n}\\right) \\end{aligned}",
+    "<strong>(b) Minimum Sample Size $n$:</strong><br><br>For an upper one-tailed test at the $5\\%$ level, the critical $z$-value is $1.645$.<br><br>The standard error of the difference is:\\begin{aligned} \\text{SE} &= \\sqrt{\\dfrac{2.88}{n}} \\cr &= \\dfrac{\\sqrt{2.88}}{\\sqrt{n}} \\end{aligned}<br>The test statistic must satisfy:\\begin{aligned} z &= \\dfrac{0.65 - 0}{\\sqrt{2.88/n}} \\ge 1.645 \\cr &\\dfrac{0.65\\sqrt{n}}{\\sqrt{2.88}} \\ge 1.645 \\end{aligned}<br>Evaluating the numerical terms:\\begin{aligned} \\sqrt{2.88} &\\approx 1.6971 \\cr 0.65\\sqrt{n} &\\ge 1.645(1.6971) \\cr 0.65\\sqrt{n} &\\ge 2.7917 \\cr \\sqrt{n} &\\ge \\dfrac{2.7917}{0.65} \\cr \\sqrt{n} &\\ge 4.2949 \\cr n &\\ge 4.2949^2 \\cr n &\\ge 18.45 \\end{aligned}<br>Since $n$ must be an integer, the smallest possible sample size is $n = 19$.",
+    "Final Answer: (a) $(\\bar{X}_B - \\bar{X}_A) \\sim \\text{N}\\left(0, \\dfrac{2.88}{n}\\right)$, (b) $n = 19$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $(\\bar{X}_B - \\bar{X}_A) \\sim \\text{N}\\left(0, 0\\right)$, (b) $n = 10$",
+      "feedback": "Variances of independent random variables always add: $\\text{Var}(X - Y) = \\text{Var}(X) + \\text{Var}(Y)$. Never subtract variances."
+    },
+    {
+      "ans": "(a) $(\\bar{X}_B - \\bar{X}_A) \\sim \\text{N}\\left(0, \\dfrac{2.88}{n}\\right)$, (b) $n = 27$",
+      "feedback": "The test is one-tailed at the $5\\%$ level, so the critical value is $1.645$, not the two-tailed value $1.960$."
+    },
+    {
+      "ans": "(a) $(\\bar{X}_B - \\bar{X}_A) \\sim \\text{N}\\left(0, \\dfrac{2.88}{n}\\right)$, (b) $n = 18$",
+      "feedback": "Since $n \\ge 18.45$, a sample size of $18$ produces a test statistic of $1.625$, which fails to reach the critical threshold of $1.645$. You must round up to $19$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Independent Variances Always Add",
+    "content": "Even though you are taking the difference between two sample means, the variability increases. The variance of the difference is the sum of the individual variances: $\\dfrac{1.44}{n} + \\dfrac{1.44}{n} = \\dfrac{2.88}{n}$."
+  }
+}
 ];
