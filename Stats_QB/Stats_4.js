@@ -1410,7 +1410,7 @@ window.ALEVEL_QUESTIONS = [
   "img": false,
   "question": "Two automated assembly lines, Line $A$ and Line $B$, produce identical metal bolts. The lengths of bolts from Line $A$ are distributed as $X_A \\sim \\text{N}(60.0, 1.44)$ and from Line $B$ as $X_B \\sim \\text{N}(\\mu_B, 1.44)$, with lengths independent between lines.<br><br>An engineer collects equal-sized samples of $n$ bolts from each line to test whether Line $B$ produces longer bolts on average:$$H_0: \\mu_B - \\mu_A = 0$$$$H_1: \\mu_B - \\mu_A > 0$$at the $5\\%$ significance level.<br><br><strong>(a)</strong> State the distribution of the difference in sample means $\\bar{X}_B - \\bar{X}_A$ under $H_0$.<br><br><strong>(b)</strong> In a sample with observed difference $\\bar{x}_B - \\bar{x}_A = 0.65\\text{ mm}$, the test result is statistically significant. Find the smallest possible integer value of $n$.",
   "steps": [
-    "<strong>(a) Distribution of Difference in Sample Means:</strong><br><br>For independent samples of size $n$, the variances add:\\begin{aligned} \\text{Var}(\\bar{X}_B - \\bar{X}_A) &= \\text{Var}(\\bar{X}_B) + \\text{Var}(\\bar{X}_A) \\cr &= \\dfrac{1.44}{n} + \\dfrac{1.44}{n} \\cr &= \\dfrac{2.88}{n} \\end{aligned}<br>Under $H_0$, $\\text{E}(\\bar{X}_B - \\bar{X}_A) = 0$.<br><br>Therefore:\\begin{aligned} (\\bar{X}_B - \\bar{X}_A) \\sim \\text{N}\\left(0, \\dfrac{2.88}{n}\\right) \\end{aligned}",
+    "<strong>(a) Distribution of Difference in Sample Means:</strong><br><br>For independent samples of size $n$, the variances add:\\begin{aligned} &\\text{Var}(\\bar{X}_B - \\bar{X}_A) \\cr &\\quad = \\text{Var}(\\bar{X}_B) \\cr &\\qquad + \\text{Var}(\\bar{X}_A) \\cr &\\quad = \\dfrac{1.44}{n} + \\dfrac{1.44}{n} \\cr &\\quad = \\dfrac{2.88}{n} \\end{aligned}Under $H_0$, the expected value is zero:\\begin{aligned} &(\\bar{X}_B - \\bar{X}_A) \\cr &\\quad \\sim \\text{N}\\left(0, \\dfrac{2.88}{n}\\right) \\end{aligned}",    
     "<strong>(b) Minimum Sample Size $n$:</strong><br><br>For an upper one-tailed test at the $5\\%$ level, the critical $z$-value is $1.645$.<br><br>The standard error of the difference is:\\begin{aligned} \\text{SE} &= \\sqrt{\\dfrac{2.88}{n}} \\cr &= \\dfrac{\\sqrt{2.88}}{\\sqrt{n}} \\end{aligned}<br>The test statistic must satisfy:\\begin{aligned} z &= \\dfrac{0.65 - 0}{\\sqrt{2.88/n}} \\ge 1.645 \\cr &\\dfrac{0.65\\sqrt{n}}{\\sqrt{2.88}} \\ge 1.645 \\end{aligned}<br>Evaluating the numerical terms:\\begin{aligned} \\sqrt{2.88} &\\approx 1.6971 \\cr 0.65\\sqrt{n} &\\ge 1.645(1.6971) \\cr 0.65\\sqrt{n} &\\ge 2.7917 \\cr \\sqrt{n} &\\ge \\dfrac{2.7917}{0.65} \\cr \\sqrt{n} &\\ge 4.2949 \\cr n &\\ge 4.2949^2 \\cr n &\\ge 18.45 \\end{aligned}<br>Since $n$ must be an integer, the smallest possible sample size is $n = 19$.",
     "Final Answer: (a) $(\\bar{X}_B - \\bar{X}_A) \\sim \\text{N}\\left(0, \\dfrac{2.88}{n}\\right)$, (b) $n = 19$"
   ],
@@ -1432,6 +1432,210 @@ window.ALEVEL_QUESTIONS = [
     "type": "caution",
     "title": "The Head Teacher's Eye: Independent Variances Always Add",
     "content": "Even though you are taking the difference between two sample means, the variability increases. The variance of the difference is the sum of the individual variances: $\\dfrac{1.44}{n} + \\dfrac{1.44}{n} = \\dfrac{2.88}{n}$."
+  }
+},
+{
+  "id": "050186",
+  "group_id": "050186",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Data Presentation and Bivariate Data",
+  "subtopic": [
+    "Cumulative Frequency",
+    "Correlation and Extrapolation"
+  ],
+  "img": false,
+  "question": "An environmental health agency investigates airborne pollution across $40$ regional districts. The particulate concentration, measured as $\\text{PM}_{10}$ in $\\mu\\text{g/m}^3$, has been grouped as shown in the table below:<br><br><table style='width:100%; max-width:320px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:6px; border:1px solid #ccc;'>$\\text{PM}_{10}$</th><th style='padding:6px; border:1px solid #ccc;'>$0\\text{–}$</th><th style='padding:6px; border:1px solid #ccc;'>$10\\text{–}$</th><th style='padding:6px; border:1px solid #ccc;'>$20\\text{–}$</th><th style='padding:6px; border:1px solid #ccc;'>$30\\text{–}$</th><th style='padding:6px; border:1px solid #ccc;'>$40\\text{–}$</th><th style='padding:6px; border:1px solid #ccc;'>$60\\text{–}80$</th></tr></thead><tbody><tr><td style='padding:6px; border:1px solid #ccc;'>Frequency</td><td style='padding:6px; border:1px solid #ccc;'>$12$</td><td style='padding:6px; border:1px solid #ccc;'>$16$</td><td style='padding:6px; border:1px solid #ccc;'>$6$</td><td style='padding:6px; border:1px solid #ccc;'>$4$</td><td style='padding:6px; border:1px solid #ccc;'>$1$</td><td style='padding:6px; border:1px solid #ccc;'>$1$</td></tr></tbody></table><br>A cumulative frequency curve was generated from these data using spreadsheet software, as shown in Diagram A.<br><br><img src='images/Statistics_pngs/050186_a.png' style='width:100%; max-width:400px; margin:15px auto; display:block; border:1px solid #ccc;'></img><br>An analyst uses Diagram A to estimate the median $\\text{PM}_{10}$ concentration and obtains the estimate $10.0\\,\\mu\\text{g/m}^3$. The true median calculated directly from the raw sample data is $14.5\\,\\mu\\text{g/m}^3$.<br><br><strong>(a)</strong><br><strong>(i)</strong> A systematic error was made in generating Diagram A. Identify this error.<br><strong>(ii)</strong> State how this systematic error affects the analyst's estimate of the median.<br><strong>(iii)</strong> State another factor inherent to grouped data that affects the accuracy of this median estimate, explaining its effect.<br><br>The agency also records the childhood respiratory clinic admission rate (admissions per $1000$ residents) for the $38$ districts where full medical records were available. The scatter diagram shown in Diagram B displays admission rate plotted against $\\text{PM}_{10}$ concentration.<br><br><img src='images/Statistics_pngs/050186_b.png' style='width:100%; max-width:400px; margin:15px auto; display:block; border:1px solid #ccc;'></img><br>The product moment correlation coefficient (PMCC) for these $38$ districts is $r = 0.324$, with an associated $p$-value of $0.047$.<br><br><strong>(b)</strong><br><strong>(i)</strong> Does this information suggest that there is a positive association between particulate concentration and respiratory clinic admissions? Justify your conclusion.<br><strong>(ii)</strong> The analyst uses the spreadsheet to fit a linear regression line to these data. A heavily industrialised port district has a recorded $\\text{PM}_{10}$ concentration of $68.0\\,\\mu\\text{g/m}^3$, but no respiratory admission data are available. Is it reliable to use this regression line to estimate the admission rate for this district? Explain your reasoning.",
+  "steps": [
+    "<strong>(a)(i) Systematic Error in Diagram A:</strong><br><br>The cumulative frequencies have been plotted at the <strong>midpoints</strong> of each class interval rather than at the upper class boundaries.",
+    "<strong>(a)(ii) Effect on Median Estimate:</strong><br><br>Because the points are plotted at midpoints instead of upper boundaries, the entire cumulative frequency curve is shifted to the left.<br><br>This causes the estimated median to be <strong>underestimated</strong> (lower than its true value).",
+    "<strong>(a)(iii) Effect of Grouping:</strong><br><br>Linear interpolation assumes that data values are distributed uniformly across each class interval.<br><br>If values within the median class are clustered rather than evenly spread, the interpolated estimate will differ from the true median.",
+    "<strong>(b)(i) Evidence of Association:</strong><br><br>We test $H_0: \\rho = 0$ against $H_1: \\rho > 0$ at the $5\\%$ significance level.<br><br>Since the $p$-value ($0.047$) is less than $0.05$, we reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level to suggest a positive association between particulate concentration and respiratory admissions.",
+    "<strong>(b)(ii) Reliability of Regression Line:</strong><br><br>A value of $\\text{PM}_{10} = 68.0\\,\\mu\\text{g/m}^3$ lies substantially beyond the range of the observed sample data (where nearly all values are below $40\\,\\mu\\text{g/m}^3$).<br><br>Using the regression line for this district involves <strong>extrapolation</strong>, which is unreliable as the linear relationship may not hold at extreme levels.",
+    "Final Answer: (a)(i) Plotted at midpoints, (ii) Underestimated, (iii) Linear interpolation assumption, (b)(i) Significant positive association, (ii) Unreliable due to extrapolation"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a)(i) Plotted at lower boundaries, (ii) Overestimated, (iii) Linear interpolation assumption, (b)(i) Significant positive association, (ii) Unreliable due to extrapolation",
+      "feedback": "Points were plotted at midpoints ($5, 15, 25\\dots$) rather than lower boundaries ($0, 10, 20\\dots$). Plotting to the left of upper boundaries underestimates the median."
+    },
+    {
+      "ans": "(a)(i) Plotted at midpoints, (ii) Underestimated, (iii) Linear interpolation assumption, (b)(i) No significant association, (ii) Unreliable due to extrapolation",
+      "feedback": "Because the $p$-value ($0.047$) is strictly less than the $0.05$ significance threshold, the null hypothesis is rejected, providing significant evidence of positive association."
+    },
+    {
+      "ans": "(a)(i) Plotted at midpoints, (ii) Underestimated, (iii) Linear interpolation assumption, (b)(i) Significant positive association, (ii) Reliable because line fits all data",
+      "feedback": "Predicting for a value far outside the observed explanatory range ($68$ compared to values under $40$) is extrapolation, which is inherently unreliable."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Midpoints vs Upper Boundaries",
+    "content": "Plotting cumulative frequency at class midpoints is a frequent spreadsheet error because software often defaults to category centres. Always ensure cumulative frequency is plotted at the upper class boundary, since cumulative totals count values up to that upper limit."
+  }
+},
+{
+  "id": "050187",
+  "group_id": "050186",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Data Presentation and Bivariate Data",
+  "subtopic": [
+    "Histograms",
+    "Correlation vs Causation"
+  ],
+  "img": "images/Statistics_pngs/050187.png",
+  "question": "The diagram shows a histogram representing the distribution of particulate concentration ($\\mu\\text{g/m}^3$) across a sample of $70$ industrial monitoring stations.<br><br>The recorded frequencies for each interval are:<br>$\\bullet$ $0 \\le x < 10$: $12$ stations<br>$\\bullet$ $10 \\le x < 20$: $24$ stations<br>$\\bullet$ $20 \\le x < 30$: $18$ stations<br>$\\bullet$ $30 \\le x < 50$: $10$ stations<br>$\\bullet$ $50 \\le x < 70$: $6$ stations<br><br><strong>(a)</strong> Identify the error that has been made in drawing the bar for the class $30 \\le x < 50$.<br><br><strong>(b)</strong> Using the correct frequencies, estimate the median particulate concentration using linear interpolation. Give your answer to three significant figures.<br><br><strong>(c)</strong> For these $70$ stations, the correlation coefficient between particulate concentration and sulphur dioxide concentration is $r = 0.428$ ($p$-value $< 0.001$). An environmental officer claims: <em>\"Higher particulate emissions cause higher sulphur dioxide emissions.\"</em> Explain why this claim is not statistically justified.",
+  "steps": [
+    "<strong>(a) Error in Histogram:</strong><br><br>For a histogram with unequal class widths, bar height must represent frequency density:\\begin{aligned} \\text{FD} &= \\dfrac{\\text{Frequency}}{\\text{Class Width}} \\end{aligned}For the class $30 \\le x < 50$, the class width is $20$ and frequency is $10$:\\begin{aligned} \\text{FD} &= \\dfrac{10}{20} \\cr &= 0.5 \\end{aligned}The bar has been drawn with height equal to $1.5$ rather than the correct frequency density of $0.5$.",
+    "<strong>(b) Estimating the Median:</strong><br><br>Total frequency is $n = 70$. The median position is:\\begin{aligned} \\text{Position} &= \\dfrac{70}{2} \\cr &= 35 \\end{aligned}Cumulative frequencies up to class boundaries are:\\begin{aligned} &0 \\le x < 10: 12 \\cr &10 \\le x < 20: 12 + 24 = 36 \\end{aligned}Since $35$ lies between $12$ and $36$, the median lies in $10 \\le x < 20$.<br><br>Applying linear interpolation:\\begin{aligned} \\text{Median} &= 10 + \\left(\\dfrac{35 - 12}{24}\\right) \\times 10 \\cr &= 10 + \\left(\\dfrac{23}{24}\\right) \\times 10 \\cr &= 10 + 9.583 \\cr &\\approx 19.6 \\end{aligned}",
+    "<strong>(c) Correlation vs Causation:</strong><br><br>A statistically significant correlation does not imply a causal relationship.<br><br>A confounding third variable (such as overall volume of industrial activity or weather conditions) could simultaneously cause increases in both pollutants.",
+    "Final Answer: (a) Plotted frequency instead of density, (b) $19.6$, (c) Correlation does not imply causation"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Plotted frequency instead of density, (b) $20.4$, (c) Correlation does not imply causation",
+      "feedback": "Check the interpolation formula. The class runs from $10$ to $20$ with $24$ observations. Adding $\\frac{23}{24} \\times 10$ to the lower bound of $10$ gives $19.6$, not $20.4$."
+    },
+    {
+      "ans": "(a) Plotted frequency instead of density, (b) $19.6$, (c) Claim is valid due to low p-value",
+      "feedback": "Even with an extremely low $p$-value, observational correlation cannot establish a direct causal mechanism between two variables."
+    },
+    {
+      "ans": "(a) Incorrect class width used, (b) $17.5$, (c) Correlation does not imply causation",
+      "feedback": "The error is that the bar height was miscalculated. The class width of $20$ is correct, but dividing $10$ by $20$ gives $0.5$ rather than the plotted height."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Area Represents Frequency",
+    "content": "In a histogram with unequal class widths, area represents frequency. Never plot raw frequencies on the vertical axis, as wider classes will appear artificially inflated."
+  }
+},
+{
+  "id": "050188",
+  "group_id": "050186",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Data Presentation and Bivariate Data",
+  "subtopic": [
+    "Box Plots",
+    "Outliers and Skewness"
+  ],
+  "img": "images/Statistics_pngs/050188.png",
+  "question": "The diagram displays parallel box plots comparing broadband download speeds ($\\text{Mbps}$) across random samples of residential connections in Urban and Rural districts.<br><br>The summary values extracted from the box plots are:<br>$\\bullet$ <strong>Urban:</strong> Minimum $= 30$, $Q_1 = 52$, Median $= 68$, $Q_3 = 84$, Maximum $= 115$<br>$\\bullet$ <strong>Rural:</strong> Minimum $= 8$, $Q_1 = 18$, Median $= 28$, $Q_3 = 42$, Whisker end $= 74$, with one point plotted at $108\\text{ Mbps}$<br><br><strong>(a)</strong> Show that the value $108\\text{ Mbps}$ in the Rural sample is an outlier according to the standard $1.5 \\times \\text{IQR}$ rule.<br><br><strong>(b)</strong> Compare the distributions of broadband speeds in Urban and Rural districts, referring to central tendency, spread, and skewness.<br><br><strong>(c)</strong> A technician suggests removing the data point at $108\\text{ Mbps}$ from the Rural dataset before calculating the mean.<br><strong>(i)</strong> Give one valid reason why this data point should be removed.<br><strong>(ii)</strong> Give one valid reason why this data point should be retained.",
+  "steps": [
+    "<strong>(a) Outlier Verification:</strong><br><br>For the Rural distribution, the interquartile range is:\\begin{aligned} \\text{IQR} &= Q_3 - Q_1 \\cr &= 42 - 18 \\cr &= 24 \\end{aligned}Calculating the upper outlier boundary:\\begin{aligned} \\text{Boundary} &= Q_3 + 1.5(\\text{IQR}) \\cr &= 42 + 1.5(24) \\cr &= 42 + 36 \\cr &= 78 \\end{aligned}Since $108 > 78$, the speed of $108\\text{ Mbps}$ is an <strong>outlier</strong>.",
+    "<strong>(b) Comparison of Distributions:</strong><br><br><strong>Central Tendency:</strong> Urban speeds have a substantially higher median ($68\\text{ Mbps}$) than Rural speeds ($28\\text{ Mbps}$).<br><br><strong>Spread:</strong> Urban speeds have greater spread, with an $\\text{IQR}$ of $32\\text{ Mbps}$ compared to $24\\text{ Mbps}$ for Rural.<br><br><strong>Skewness:</strong> Both distributions are approximately symmetrical within the interquartile box, though the Rural distribution exhibits positive skewness due to the extreme upper outlier.",
+    "<strong>(c) Treatment of Outlier:</strong><br><br><strong>(i) Reason to remove:</strong> It may represent a data entry error or an unrepresentative commercial fibre connection that distorts the sample mean.<br><br><strong>(ii) Reason to retain:</strong> It may be a genuine residential high-speed fibre connection that accurately reflects the full population range.",
+    "Final Answer: (a) $108 > 78$, (b) Urban has higher median and IQR, (c)(i) May distort mean, (ii) May be a genuine reading"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $108 > 88$, (b) Urban has higher median and IQR, (c)(i) May distort mean, (ii) May be a genuine reading",
+      "feedback": "Calculating the upper limit requires $Q_3 + 1.5(\\text{IQR}) = 42 + 1.5(24) = 78$, not $88$."
+    },
+    {
+      "ans": "(a) $108 > 78$, (b) Rural has higher median and IQR, (c)(i) May distort mean, (ii) May be a genuine reading",
+      "feedback": "Urban has a higher median ($68$ vs $28$) and a higher interquartile range ($32$ vs $24$)."
+    },
+    {
+      "ans": "(a) $108 > 78$, (b) Urban has higher median and IQR, (c)(i) Always remove outliers, (ii) Never remove outliers",
+      "feedback": "Outlier removal requires pedagogical justification (such as identifying measurement error or preserving legitimate extreme values), not rigid blanket rules."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Three Strands of Comparison",
+    "content": "Whenever asked to compare two distributions, always structure your answer into three distinct strands: location (median), spread (IQR), and shape (skewness). Always cite figures in context with appropriate units."
+  }
+},
+{
+  "id": "050189",
+  "group_id": "050186",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Data Presentation and Bivariate Data",
+  "subtopic": [
+    "Scatter Diagrams",
+    "Regression and Outliers"
+  ],
+  "img": "images/Statistics_pngs/050189.png",
+  "question": "A retail marketing director collects data on weekly advertising expenditure ($x$, in $£1000\\text{s}$) and weekly sales revenue ($y$, in $£1000\\text{s}$) for $22$ regional stores.<br><br>The scatter diagram shows the data along with a fitted line of best fit. One distinct store is labelled as Point $P$ at $(46, 32)$.<br><br><strong>(a)</strong> Describe the nature of the correlation shown by the main cluster of stores (excluding Point $P$).<br><br><strong>(b)</strong> Point $P$ corresponds to a store that suffered extended power disruptions during the promotional campaign. State the effect that removing Point $P$ would have on:<br><strong>(i)</strong> the value of the product moment correlation coefficient $r$,<br><strong>(ii)</strong> the gradient of the regression line of $y$ on $x$.<br><br><strong>(c)</strong> The equation of the regression line using all $22$ stores is$$y = 1.62x + 16.5$$The director uses this equation to predict the sales revenue for a new flagship store with an advertising budget of $£60,000$ ($x = 60$). Comment on the validity of this prediction.",
+  "steps": [
+    "<strong>(a) Correlation of Main Cluster:</strong><br><br>Excluding Point $P$, the points lie tightly around an upward-sloping line, demonstrating <strong>strong positive linear correlation</strong>.",
+    "<strong>(b)(i) Effect on Correlation Coefficient $r$:</strong><br><br>Point $P$ at $(46, 32)$ lies far below the linear trend established by the main cluster.<br><br>Removing Point $P$ reduces residual scatter, causing $r$ to <strong>increase</strong> (become closer to $+1$).",
+    "<strong>(b)(ii) Effect on Regression Gradient:</strong><br><br>Point $P$ has a high $x$-value and a low $y$-value, exerting downward leverage on the right-hand end of the regression line.<br><br>Removing Point $P$ allows the line to tilt steeper, causing the gradient to <strong>increase</strong>.",
+    "<strong>(c) Validity of Prediction at $x = 60$:</strong><br><br>The observed advertising values range from $x = 4$ to $x = 46$.<br><br>Predicting at $x = 60$ requires <strong>extrapolation</strong> beyond the range of the data. Furthermore, sales revenue may experience diminishing returns at high advertising spend, making the linear model unreliable.",
+    "Final Answer: (a) Strong positive, (b)(i) Increases, (ii) Increases, (c) Unreliable due to extrapolation"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Weak positive, (b)(i) Increases, (ii) Increases, (c) Unreliable due to extrapolation",
+      "feedback": "The points in the main cluster follow a very narrow linear band, which indicates strong rather than weak positive correlation."
+    },
+    {
+      "ans": "(a) Strong positive, (b)(i) Decreases, (ii) Decreases, (c) Unreliable due to extrapolation",
+      "feedback": "Because Point $P$ contradicts the positive trend and pulls the line downward, removing it strengthens the correlation and steepens the slope."
+    },
+    {
+      "ans": "(a) Strong positive, (b)(i) Increases, (ii) Increases, (c) Reliable because equation is linear",
+      "feedback": "Even with a strong linear fit, predicting outside the domain of explanatory data ($x = 60$) is extrapolation and is statistically unreliable."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: High Leverage Outliers",
+    "content": "An outlier with an extreme $x$-value exerts disproportionate leverage on a regression line. Point $P$ acts like a weight on a seesaw, pulling the right side of the line down. Removing it immediately increases both $r$ and the slope."
+  }
+},
+{
+  "id": "050190",
+  "group_id": "050186",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Data Presentation and Bivariate Data",
+  "subtopic": [
+    "Cumulative Frequency",
+    "Evaluating Normal Models"
+  ],
+  "img": "images/Statistics_pngs/050190.png",
+  "question": "The cumulative frequency curve in the diagram models the examination completion times (in minutes) for a large cohort of $400$ candidates.<br><br>The dashed reference lines indicate that:<br>$\\bullet$ The $10\\text{th}$ percentile is $P_{10} = 45\\text{ minutes}$<br>$\\bullet$ The median ($50\\text{th}$ percentile) is $Q_2 = 60\\text{ minutes}$<br>$\\bullet$ The $90\\text{th}$ percentile is $P_{90} = 75\\text{ minutes}$<br><br><strong>(a)</strong> Calculate the $10\\text{th}$ to $90\\text{th}$ interdecile range for this examination.<br><br><strong>(b)</strong> An examiner suggests that completion times $T$ can be modelled by a normal distribution:$$T \\sim \\text{N}(60, 11.7^2)$$<strong>(i)</strong> Explain how the symmetry of $P_{10}$ and $P_{90}$ about the median supports this suggestion.<br><strong>(ii)</strong> Show that for a normal distribution with $\\sigma = 11.7$, the theoretical $10\\text{th}$ to $90\\text{th}$ interdecile range is approximately $30.0\\text{ minutes}$, and comment on the quality of the model.<br><br><strong>(c)</strong> The examination had a strict time limit of $90\\text{ minutes}$. Candidates who did not finish within the time limit were recorded as completing at $90\\text{ minutes}$. State how this data collection constraint affects the upper tail of the distribution.",
+  "steps": [
+    "<strong>(a) Interdecile Range:</strong><br><br>Evaluating the difference between the $90\\text{th}$ and $10\\text{th}$ percentiles:\\begin{aligned} \\text{IDR} &= P_{90} - P_{10} \\cr &= 75 - 45 \\cr &= 30\\text{ minutes} \\end{aligned}",
+    "<strong>(b)(i) Symmetry Supporting Normal Model:</strong><br><br>Evaluating the distances from the median ($Q_2 = 60$):\\begin{aligned} Q_2 - P_{10} &= 60 - 45 \\cr &= 15 \\end{aligned}\\begin{aligned} P_{90} - Q_2 &= 75 - 60 \\cr &= 15 \\end{aligned}Because both percentiles are equidistant ($15\\text{ minutes}$) from the median, the distribution is symmetrical, supporting a normal model.",
+    "<strong>(b)(ii) Theoretical Interdecile Range:</strong><br><br>From standard normal tables, $\\Phi(1.2816) = 0.90$.<br><br>Under $T \\sim \\text{N}(60, 11.7^2)$:\\begin{aligned} P_{90} &= 60 + 1.2816(11.7) \\cr &= 60 + 14.995 \\cr &= 74.995 \\end{aligned}\\begin{aligned} P_{10} &= 60 - 1.2816(11.7) \\cr &= 60 - 14.995 \\cr &= 45.005 \\end{aligned}The theoretical range is:\\begin{aligned} \\text{Range} &= 74.995 - 45.005 \\cr &= 29.99 \\cr &\\approx 30.0\\text{ minutes} \\end{aligned}This matches the observed value ($30\\text{ minutes}$) almost exactly, indicating the normal model provides an excellent fit.",
+    "<strong>(c) Effect of Upper Limit:</strong><br><br>Recording unfinished candidates at exactly $90\\text{ minutes}$ creates an artificial accumulation of values (right-censoring) at the upper boundary.<br><br>This truncates the upper tail, preventing the smooth, tapering tail characteristic of a true normal distribution.",
+    "Final Answer: (a) $30\\text{ minutes}$, (b)(i) Equidistant from median, (ii) $30.0\\text{ minutes}$ matches observed, (c) Right-censoring truncates tail"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $15\\text{ minutes}$, (b)(i) Equidistant from median, (ii) $30.0\\text{ minutes}$ matches observed, (c) Right-censoring truncates tail",
+      "feedback": "The interdecile range is the distance from $P_{10}$ to $P_{90}$, which is $75 - 45 = 30\\text{ minutes}$, rather than the distance from the median to a single decile."
+    },
+    {
+      "ans": "(a) $30\\text{ minutes}$, (b)(i) Equidistant from median, (ii) $37.5\\text{ minutes}$ does not match, (c) Right-censoring truncates tail",
+      "feedback": "For the $90\\text{th}$ percentile, $z = 1.282$, giving $1.282 \\times 11.7 \\approx 15.0\\text{ minutes}$ each side, which totals $30.0\\text{ minutes}$."
+    },
+    {
+      "ans": "(a) $30\\text{ minutes}$, (b)(i) Equidistant from median, (ii) $30.0\\text{ minutes}$ matches observed, (c) Extends tail infinitely",
+      "feedback": "Capping unfinished candidates at $90\\text{ minutes}$ truncates the tail and creates an artificial spike at $90$, rather than extending the tail."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Right-Censoring in Practice",
+    "content": "In real-world data collection, time limits cause right-censoring: we know a candidate took at least $90\\text{ minutes}$, but not their true completion time. A normal distribution assumes tails extend indefinitely, so any capped dataset will diverge from normality at the boundary."
   }
 }
 ];
