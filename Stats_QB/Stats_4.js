@@ -690,7 +690,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
       "ans": "(a) $42.0 = \\mu - 2\\sigma$ and $63.0 = \\mu + 1.5\\sigma$, (b) $\\mu = 54, \\sigma = 6$, (c) $0.0919$",
-      "feedback": "To calculate $\\text{P}(-1.5 < Z < 1.0)$, compute $\\Phi(1.0) - \\Phi(-1.5) = 0.8413 - 0.0668 = 0.7745$. Do not subtract both cumulative values from 1."
+      "feedback": "To calculate $\\text{P}(-1.5 < Z < 1.0)$, compute \\begin{aligned}\\Phi(1.0) - \\Phi(-1.5) &= 0.8413 - 0.0668 \\cr &= 0.7745\\end{aligned} Do not subtract both cumulative values from 1."
     },
     {
       "ans": "(a) $42.0 = \\mu - 2\\sigma$ and $63.0 = \\mu + 1.5\\sigma$, (b) $\\mu = 48, \\sigma = 6$, (c) $0.6687$",
@@ -825,5 +825,210 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: The Continuity Correction Rule of Thumb",
     "content": "Always picture the discrete bar. For $X = 15$, the bar extends from $14.5$ to $15.5$. If the discrete inequality includes $15$ ($X \\ge 15$), your continuous region must include that entire bar, starting at $14.5$. If the inequality is strict ($X > 15$), the bar for $15$ is excluded, meaning the region begins at $15.5$."
   }
-}  
+},
+{
+  "id": "050171",
+  "group_id": "050171",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Discrete Random Variables",
+  "subtopic": [
+    "Probability Mass Functions",
+    "Independent Events"
+  ],
+  "img": false,
+  "question": "The discrete random variable $X$ takes the values $0, 1, 2, 3, 4$ and $5$ with probabilities given by the formula<br><br>$$\\text{P}(X = x) = c(x + 2)(6 - x)$$<br>where $c$ is a constant.<br><br><strong>(a)</strong> Show that $c = \\dfrac{1}{77}$.<br><br><strong>(b)</strong> Over a work placement, an apprentice technician attends a workshop on $77$ shifts. The random variable $X$ is used to model the number of faulty circuit boards repaired by the technician on a given shift. Assuming shifts are independent:<br><br><strong>(i)</strong> Find the probability that the technician repairs no faulty boards on each of the first $2$ shifts of the placement and repairs exactly $2$ faulty boards on each of the next $2$ shifts. Give your answer in exact fractional form.<br><br><strong>(ii)</strong> Find the expected number of shifts during the placement on which the technician repairs no faulty boards.",
+  "steps": [
+    "<strong>(a) Value of $c$:</strong><br><br>Summing all probabilities to $1$ over $x \\in \\{0, 1, 2, 3, 4, 5\\}$:\\begin{aligned} &\\sum_{x=0}^{5} \\text{P}(X = x) = 1 \\cr &c[(2)(6) + (3)(5) + (4)(4) \\cr &\\quad + (5)(3) + (6)(2) + (7)(1)] = 1 \\cr &c(12 + 15 + 16 + 15 + 12 + 7) = 1 \\cr &77c = 1 \\cr &c = \\dfrac{1}{77} \\end{aligned}",
+    "<strong>(b)(i) Combined Probability:</strong><br><br>Calculating individual shift probabilities:\\begin{aligned} \\text{P}(X = 0) &= \\dfrac{(2)(6)}{77} \\cr &= \\dfrac{12}{77} \\end{aligned}\\begin{aligned} \\text{P}(X = 2) &= \\dfrac{(4)(4)}{77} \\cr &= \\dfrac{16}{77} \\end{aligned}<br>For independent shifts, the required combined probability is:\\begin{aligned} \\text{P} &= [\\text{P}(X = 0)]^2 \\times [\\text{P}(X = 2)]^2 \\cr &= \\left(\\dfrac{12}{77}\\right)^2 \\times \\left(\\dfrac{16}{77}\\right)^2 \\cr &= \\dfrac{144}{5929} \\times \\dfrac{256}{5929} \\cr &= \\dfrac{36864}{35153041} \\end{aligned}",
+    "<strong>(b)(ii) Expected Number of Shifts:</strong><br><br>With $N = 77$ shifts and $p = \\text{P}(X = 0) = \\dfrac{12}{77}$:\\begin{aligned} \\text{E}(\\text{shifts}) &= Np \\cr &= 77 \\times \\dfrac{12}{77} \\cr &= 12 \\end{aligned}",
+    "Final Answer: (a) $c = \\dfrac{1}{77}$, (b)(i) $\\dfrac{36864}{35153041}$, (ii) $12$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $c = \\dfrac{1}{77}$, (b)(i) $\\dfrac{192}{5929}$, (ii) $12$",
+      "feedback": "The question requires no repairs on each of the first 2 shifts and 2 repairs on each of the next 2 shifts. Each probability must be squared rather than multiplied once."
+    },
+    {
+      "ans": "(a) $c = \\dfrac{1}{77}$, (b)(i) $\\dfrac{36864}{35153041}$, (ii) $6.23$",
+      "feedback": "The total number of shifts in this placement is 77. Evaluating the expected frequency gives $77 \\times \\frac{12}{77} = 12$."
+    },
+    {
+      "ans": "(a) $c = \\dfrac{1}{75}$, (b)(i) $\\dfrac{36864}{31640625}$, (ii) $12.3$",
+      "feedback": "Carefully sum each term: $12 + 15 + 16 + 15 + 12 + 7 = 77$. An addition slip results in an incorrect constant $c$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Symmetry Simplifies the Sum",
+    "content": "Notice the symmetry in the terms: $(2)(6) = (6)(2) = 12$, and $(3)(5) = (5)(3) = 15$. Pairing these equal terms cuts your calculation time in half and minimizes mental arithmetic slips."
+  }
+},
+{
+  "id": "050172",
+  "group_id": "050171",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Discrete Random Variables",
+  "subtopic": [
+    "Expectation",
+    "Variance"
+  ],
+  "img": false,
+  "question": "The discrete random variable $X$ takes the values $1, 2, 3, 4$ and $5$ with probabilities given by<br><br>$$\\text{P}(X = x) = k(6 - x)$$<br>where $k$ is a positive constant.<br><br><strong>(a)</strong> Determine the value of $k$.<br><br><strong>(b)</strong> Calculate:<br><strong>(i)</strong> $\\text{E}(X)$<br><strong>(ii)</strong> $\\text{Var}(X)$<br><br><strong>(c)</strong> Find $\\text{P}(X > \\text{E}(X))$.<br><br><strong>(d)</strong> In a quality audit, $60$ independent observations of $X$ are recorded. Find the expected number of observations in which $X$ exceeds its mean.",
+  "steps": [
+    "<strong>(a) Value of $k$:</strong><br><br>Summing all probabilities over $x \\in \\{1, 2, 3, 4, 5\\}$:\\begin{aligned} &\\sum_{x=1}^{5} k(6 - x) = 1 \\cr &k(5 + 4 + 3 + 2 + 1) = 1 \\cr &15k = 1 \\cr &k = \\dfrac{1}{15} \\end{aligned}",
+    "<strong>(b)(i) Expectation $\\text{E}(X)$:</strong><br><br>Using $\\text{E}(X) = \\sum x \\text{P}(X = x)$:\\begin{aligned} \\text{E}(X) &= \\dfrac{1(5) + 2(4) + 3(3)}{15} \\cr &\\quad + \\dfrac{4(2) + 5(1)}{15} \\cr &= \\dfrac{5 + 8 + 9 + 8 + 5}{15} \\cr &= \\dfrac{35}{15} \\cr &= \\dfrac{7}{3} \\end{aligned}",
+    "<strong>(b)(ii) Variance $\\text{Var}(X)$:</strong><br><br>First calculating $\\text{E}(X^2)$:\\begin{aligned} \\text{E}(X^2) &= \\dfrac{1^2(5) + 2^2(4) + 3^2(3)}{15} \\cr &\\quad + \\dfrac{4^2(2) + 5^2(1)}{15} \\cr &= \\dfrac{5 + 16 + 27 + 32 + 25}{15} \\cr &= \\dfrac{105}{15} \\cr &= 7 \\end{aligned}<br>Now applying $\\text{Var}(X) = \\text{E}(X^2) - [\\text{E}(X)]^2$:\\begin{aligned} \\text{Var}(X) &= 7 - \\left(\\dfrac{7}{3}\\right)^2 \\cr &= 7 - \\dfrac{49}{9} \\cr &= \\dfrac{63 - 49}{9} \\cr &= \\dfrac{14}{9} \\end{aligned}",
+    "<strong>(c) Probability $\\text{P}(X > \\text{E}(X))$:</strong><br><br>Since $\\text{E}(X) = \\dfrac{7}{3} \\approx 2.33$, the values of $X$ greater than the mean are $3, 4, 5$:\\begin{aligned} \\text{P}\\left(X > \\dfrac{7}{3}\\right) &= \\text{P}(X = 3) + \\text{P}(X = 4) \\cr &\\quad + \\text{P}(X = 5) \\cr &= \\dfrac{3}{15} + \\dfrac{2}{15} + \\dfrac{1}{15} \\cr &= \\dfrac{6}{15} \\cr &= 0.4 \\end{aligned}",
+    "<strong>(d) Expected Frequency:</strong><br><br>Over $N = 60$ independent observations:\\begin{aligned} \\text{Expected} &= 60 \\times 0.4 \\cr &= 24 \\end{aligned}",
+    "Final Answer: (a) $k = \\dfrac{1}{15}$, (b)(i) $\\dfrac{7}{3}$, (ii) $\\dfrac{14}{9}$, (c) $0.4$, (d) $24$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $k = \\dfrac{1}{15}$, (b)(i) $\\dfrac{7}{3}$, (ii) $\\dfrac{14}{3}$, (c) $0.4$, (d) $24$",
+      "feedback": "In the variance formula, remember to subtract the square of the mean: subtracting $(\\frac{7}{3})^2 = \\frac{49}{9}$ yields $\\frac{14}{9}$, not $\\frac{14}{3}$."
+    },
+    {
+      "ans": "(a) $k = \\dfrac{1}{15}$, (b)(i) $\\dfrac{7}{3}$, (ii) $\\dfrac{14}{9}$, (c) $0.667$, (d) $40$",
+      "feedback": "Because the mean is approximately $2.33$, the condition $X > \\text{E}(X)$ requires $X \\ge 3$. Including $X = 2$ overstates the probability."
+    },
+    {
+      "ans": "(a) $k = \\dfrac{1}{15}$, (b)(i) $3$, (ii) $2$, (c) $0.2$, (d) $12$",
+      "feedback": "The probabilities are strictly decreasing across the domain rather than symmetric, which pulls the expected value down to $\\frac{7}{3}$ rather than $3$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Strict Inequalities on Integers",
+    "content": "When evaluating probabilities for discrete distributions, list the integers explicitly. Since $\\text{E}(X) \\approx 2.33$, the inequality $X > 2.33$ translates to $X \\in \\{3, 4, 5\\}$. Never round the mean before interpreting the inequality."
+  }
+},
+{
+  "id": "050173",
+  "group_id": "050171",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Discrete Random Variables",
+  "subtopic": [
+    "Sum of Random Variables",
+    "Binomial Linkage"
+  ],
+  "img": false,
+  "question": "The discrete random variable $X$ has probability distribution defined by<br><br>$$\\text{P}(X = x) = kx^2 \\quad \\text{for } x \\in \\{1, 2, 3, 4\\}$$<br>where $k$ is a constant.<br><br><strong>(a)</strong> Show that $k = \\dfrac{1}{30}$.<br><br><strong>(b)</strong> Find $\\text{P}(2 \\le X \\le 3)$.<br><br><strong>(c)</strong> Two independent observations of $X$, denoted by $X_1$ and $X_2$, are recorded. Find $\\text{P}(X_1 + X_2 = 5)$.<br><br><strong>(d)</strong> In an experiment, $90$ independent trials of $X$ are performed. Let $Y$ be the number of trials in which $X = 4$. Calculate the mean and variance of $Y$.",
+  "steps": [
+    "<strong>(a) Value of $k$:</strong><br><br>Summing probabilities over the domain:\\begin{aligned} &\\sum_{x=1}^{4} kx^2 = 1 \\cr &k(1^2 + 2^2 + 3^2 + 4^2) = 1 \\cr &k(1 + 4 + 9 + 16) = 1 \\cr &30k = 1 \\cr &k = \\dfrac{1}{30} \\end{aligned}",
+    "<strong>(b) Probability $\\text{P}(2 \\le X \\le 3)$:</strong><br><br>Summing the probabilities for $x = 2$ and $x = 3$:\\begin{aligned} \\text{P}(2 \\le X \\le 3) &= \\text{P}(X = 2) + \\text{P}(X = 3) \\cr &= \\dfrac{2^2}{30} + \\dfrac{3^2}{30} \\cr &= \\dfrac{4}{30} + \\dfrac{9}{30} \\cr &= \\dfrac{13}{30} \\end{aligned}",
+    "<strong>(c) Sum $X_1 + X_2 = 5$:</strong><br><br>The mutually exclusive pairs $(X_1, X_2)$ summing to $5$ are $(1, 4)$, $(4, 1)$, $(2, 3)$, and $(3, 2)$:\\begin{aligned} &\\text{P}(1, 4) = \\dfrac{1}{30} \\times \\dfrac{16}{30} = \\dfrac{16}{900} \\cr &\\text{P}(2, 3) = \\dfrac{4}{30} \\times \\dfrac{9}{30} = \\dfrac{36}{900} \\end{aligned}<br>Summing all ordered pairs:\\begin{aligned} \\text{P}(X_1 + X_2 = 5) &= 2\\left(\\dfrac{16}{900}\\right) + 2\\left(\\dfrac{36}{900}\\right) \\cr &= \\dfrac{32 + 72}{900} \\cr &= \\dfrac{104}{900} \\cr &= \\dfrac{26}{225} \\end{aligned}",
+    "<strong>(d) Mean and Variance of $Y$:</strong><br><br>The probability of observing $X = 4$ is:\\begin{aligned} p &= \\dfrac{4^2}{30} \\cr &= \\dfrac{16}{30} \\cr &= \\dfrac{8}{15} \\end{aligned}<br>Thus $Y \\sim \\text{B}\\left(90, \\dfrac{8}{15}\\right)$.<br><br>Mean:\\begin{aligned} \\text{E}(Y) &= 90 \\times \\dfrac{8}{15} \\cr &= 48 \\end{aligned}<br>Variance:\\begin{aligned} \\text{Var}(Y) &= 90 \\times \\dfrac{8}{15} \\times \\left(1 - \\dfrac{8}{15}\\right) \\cr &= 48 \\times \\dfrac{7}{15} \\cr &= 22.4 \\end{aligned}",
+    "Final Answer: (a) $k = \\dfrac{1}{30}$, (b) $\\dfrac{13}{30}$, (c) $\\dfrac{26}{225}$, (d) $\\text{E}(Y) = 48, \\text{Var}(Y) = 22.4$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $k = \\dfrac{1}{30}$, (b) $\\dfrac{13}{30}$, (c) $\\dfrac{13}{225}$, (d) $\\text{E}(Y) = 48, \\text{Var}(Y) = 22.4$",
+      "feedback": "The sum $X_1 + X_2 = 5$ can occur via the distinct ordered pairs $(1, 4)$, $(4, 1)$, $(2, 3)$, and $(3, 2)$. Omitting the reversed pairs halves the probability."
+    },
+    {
+      "ans": "(a) $k = \\dfrac{1}{30}$, (b) $\\dfrac{13}{30}$, (c) $\\dfrac{26}{225}$, (d) $\\text{E}(Y) = 48, \\text{Var}(Y) = 48$",
+      "feedback": "For a binomial distribution, the variance is given by $np(1 - p)$. Remember to multiply by $(1 - p) = \\frac{7}{15}$ rather than stopping at $np$."
+    },
+    {
+      "ans": "(a) $k = \\dfrac{1}{20}$, (b) $\\dfrac{13}{20}$, (c) $\\dfrac{13}{100}$, (d) $\\text{E}(Y) = 72, \\text{Var}(Y) = 14.4$",
+      "feedback": "The domain includes $x = 4$, so the sum of squares is $1 + 4 + 9 + 16 = 30$, which gives $k = \\frac{1}{30}$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Ordered Pairs for Independent Sums",
+    "content": "When calculating the distribution of the sum of two independent variables, always list the outcomes as ordered coordinate pairs $(x_1, x_2)$. Because the observations are distinct, $(1, 4)$ and $(4, 1)$ are distinct mutually exclusive outcomes."
+  }
+},
+{
+  "id": "050174",
+  "group_id": "050171",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Discrete Random Variables",
+  "subtopic": [
+    "Expectation",
+    "Linear Coding"
+  ],
+  "img": false,
+  "question": "The discrete random variable $X$ takes values in $\\{-1, 0, 1, 2, 3\\}$. Its probability distribution is shown in the table below, where $a$ and $b$ are probabilities:<br><br><table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:6px; border:1px solid #ccc;'>$x$</th><th style='padding:6px; border:1px solid #ccc;'>$-1$</th><th style='padding:6px; border:1px solid #ccc;'>$0$</th><th style='padding:6px; border:1px solid #ccc;'>$1$</th><th style='padding:6px; border:1px solid #ccc;'>$2$</th><th style='padding:6px; border:1px solid #ccc;'>$3$</th></tr></thead><tbody><tr><td style='padding:6px; border:1px solid #ccc;'>$\\text{P}(X = x)$</td><td style='padding:6px; border:1px solid #ccc;'>$0.1$</td><td style='padding:6px; border:1px solid #ccc;'>$a$</td><td style='padding:6px; border:1px solid #ccc;'>$0.3$</td><td style='padding:6px; border:1px solid #ccc;'>$b$</td><td style='padding:6px; border:1px solid #ccc;'>$0.1$</td></tr></tbody></table><br>The expected value of $X$ is $\\text{E}(X) = 1.1$.<br><br><strong>(a)</strong> Write down two simultaneous equations in $a$ and $b$, and hence show that $a = 0.2$ and $b = 0.3$.<br><br><strong>(b)</strong> Calculate $\\text{Var}(X)$.<br><br><strong>(c)</strong> The random variable $W$ is defined by $W = 4X - 3$. Find $\\text{E}(W)$ and $\\text{Var}(W)$.",
+  "steps": [
+    "<strong>(a) Simultaneous Equations:</strong><br><br>Total probability equals $1$:\\begin{aligned} &0.1 + a + 0.3 + b + 0.1 = 1 \\cr &a + b + 0.5 = 1 \\cr &a + b = 0.5 \\end{aligned}<br>Using the definition of expectation $\\text{E}(X) = 1.1$:\\begin{aligned} &(-1)(0.1) + 0(a) + 1(0.3) \\cr &\\quad + 2(b) + 3(0.1) = 1.1 \\cr &-0.1 + 0.3 + 2b + 0.3 = 1.1 \\cr &2b + 0.5 = 1.1 \\cr &2b = 0.6 \\cr &b = 0.3 \\end{aligned}<br>Substituting into $a + b = 0.5$ gives:\\begin{aligned} a &= 0.5 - 0.3 \\cr &= 0.2 \\end{aligned}",
+    "<strong>(b) Variance $\\text{Var}(X)$:</strong><br><br>First calculating $\\text{E}(X^2)$:\\begin{aligned} \\text{E}(X^2) &= (-1)^2(0.1) + 0^2(0.2) \\cr &\\quad + 1^2(0.3) + 2^2(0.3) + 3^2(0.1) \\cr &= 0.1 + 0 + 0.3 + 1.2 + 0.9 \\cr &= 2.5 \\end{aligned}<br>Applying the variance formula:\\begin{aligned} \\text{Var}(X) &= \\text{E}(X^2) - [\\text{E}(X)]^2 \\cr &= 2.5 - 1.1^2 \\cr &= 2.5 - 1.21 \\cr &= 1.29 \\end{aligned}",
+    "<strong>(c) Expectation and Variance of $W = 4X - 3$:</strong><br><br>Expected value:\\begin{aligned} \\text{E}(W) &= 4\\text{E}(X) - 3 \\cr &= 4(1.1) - 3 \\cr &= 4.4 - 3 \\cr &= 1.4 \\end{aligned}<br>Variance scales quadratically:\\begin{aligned} \\text{Var}(W) &= 4^2\\text{Var}(X) \\cr &= 16(1.29) \\cr &= 20.64 \\end{aligned}",
+    "Final Answer: (a) $a = 0.2, b = 0.3$, (b) $\\text{Var}(X) = 1.29$, (c) $\\text{E}(W) = 1.4, \\text{Var}(W) = 20.64$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $a = 0.2, b = 0.3$, (b) $\\text{Var}(X) = 1.29$, (c) $\\text{E}(W) = 1.4, \\text{Var}(W) = 5.16$",
+      "feedback": "For a linear transformation $W = aX + b$, variance scales by $a^2$. Multiply by $4^2 = 16$ to obtain $16(1.29) = 20.64$ rather than $4(1.29)$."
+    },
+    {
+      "ans": "(a) $a = 0.2, b = 0.3$, (b) $\\text{Var}(X) = 1.29$, (c) $\\text{E}(W) = 1.4, \\text{Var}(W) = 17.64$",
+      "feedback": "Subtracting a constant shifts the distribution without affecting spread. The constant term $-3$ must not be subtracted from the variance."
+    },
+    {
+      "ans": "(a) $a = 0.2, b = 0.3$, (b) $\\text{Var}(X) = 1.09$, (c) $\\text{E}(W) = 1.4, \\text{Var}(W) = 17.44$",
+      "feedback": "Squaring a negative value gives a positive result: $(-1)^2(0.1) = +0.1$. A sign slip here reduces $\\text{E}(X^2)$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Shift Invariance of Spread",
+    "content": "Subtracting $3$ shifts the entire distribution along the number line, updating the expected value but leaving the spread completely unchanged. Hence $\\text{Var}(4X - 3) = 16\\text{Var}(X)$."
+  }
+},
+{
+  "id": "050175",
+  "group_id": "050171",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "Discrete Random Variables",
+  "subtopic": [
+    "Reciprocal Distribution",
+    "Functions of Random Variables"
+  ],
+  "img": false,
+  "question": "The discrete random variable $X$ takes values in $\\{1, 2, 3, 6\\}$ with probabilities given by<br><br>$$\\text{P}(X = x) = \\dfrac{k}{x}$$<br>where $k$ is a constant.<br><br><strong>(a)</strong> Find the value of $k$.<br><br><strong>(b)</strong> The random variable $Y$ is defined by $Y = (X - 2)^2$.<br><strong>(i)</strong> List the possible values that $Y$ can take.<br><strong>(ii)</strong> Specify the probability distribution of $Y$ in a table.<br><br><strong>(c)</strong> Calculate $\\text{E}(Y)$.<br><br><strong>(d)</strong> In a simulation of $48$ independent trials of $Y$, find the expected number of trials in which $Y = 1$.",
+  "steps": [
+    "<strong>(a) Value of $k$:</strong><br><br>Summing probabilities over $x \\in \\{1, 2, 3, 6\\}$:\\begin{aligned} &\\sum \\text{P}(X = x) = 1 \\cr &k\\left(1 + \\dfrac{1}{2} + \\dfrac{1}{3} + \\dfrac{1}{6}\\right) = 1 \\cr &k\\left(\\dfrac{6 + 3 + 2 + 1}{6}\\right) = 1 \\cr &k\\left(\\dfrac{12}{6}\\right) = 1 \\cr &2k = 1 \\cr &k = 0.5 \\end{aligned}",
+    "<strong>(b)(i) Distinct Values of $Y$:</strong><br><br>Evaluating $Y = (X - 2)^2$ for each outcome:\\begin{aligned} &x = 1 \\implies y = (1 - 2)^2 = 1 \\cr &x = 2 \\implies y = (2 - 2)^2 = 0 \\cr &x = 3 \\implies y = (3 - 2)^2 = 1 \\cr &x = 6 \\implies y = (6 - 2)^2 = 16 \\end{aligned}<br>Hence the distinct values that $Y$ can take are $0, 1, 16$.",
+    "<strong>(b)(ii) Probability Distribution Table:</strong><br><br>Combining probabilities for duplicate outcomes:\\begin{aligned} \\text{P}(Y = 0) &= \\text{P}(X = 2) \\cr &= \\dfrac{0.5}{2} \\cr &= 0.25 \\end{aligned}\\begin{aligned} \\text{P}(Y = 1) &= \\text{P}(X = 1) + \\text{P}(X = 3) \\cr &= \\dfrac{0.5}{1} + \\dfrac{0.5}{3} \\cr &= \\dfrac{1}{2} + \\dfrac{1}{6} \\cr &= \\dfrac{2}{3} \\end{aligned}\\begin{aligned} \\text{P}(Y = 16) &= \\text{P}(X = 6) \\cr &= \\dfrac{0.5}{6} \\cr &= \\dfrac{1}{12} \\end{aligned}<br>The distribution table is:<br><br><table style='width:100%; max-width:220px; margin:15px auto; border-collapse:collapse; text-align:center;'><thead><tr style='border-bottom:2px solid #333;'><th style='padding:6px; border:1px solid #ccc;'>$y$</th><th style='padding:6px; border:1px solid #ccc;'>$0$</th><th style='padding:6px; border:1px solid #ccc;'>$1$</th><th style='padding:6px; border:1px solid #ccc;'>$16$</th></tr></thead><tbody><tr><td style='padding:6px; border:1px solid #ccc;'>$\\text{P}(Y = y)$</td><td style='padding:6px; border:1px solid #ccc;'>$0.25$</td><td style='padding:6px; border:1px solid #ccc;'>$\\dfrac{2}{3}$</td><td style='padding:6px; border:1px solid #ccc;'>$\\dfrac{1}{12}$</td></tr></tbody></table>",
+    "<strong>(c) Expectation $\\text{E}(Y)$:</strong><br><br>Using $\\text{E}(Y) = \\sum y \\text{P}(Y = y)$:\\begin{aligned} \\text{E}(Y) &= 0(0.25) + 1\\left(\\dfrac{2}{3}\\right) + 16\\left(\\dfrac{1}{12}\\right) \\cr &= 0 + \\dfrac{2}{3} + \\dfrac{4}{3} \\cr &= \\dfrac{6}{3} \\cr &= 2 \\end{aligned}",
+    "<strong>(d) Expected Frequency:</strong><br><br>For $N = 48$ independent trials and $\\text{P}(Y = 1) = \\dfrac{2}{3}$:\\begin{aligned} \\text{Expected} &= 48 \\times \\dfrac{2}{3} \\cr &= 32 \\end{aligned}",
+    "Final Answer: (a) $k = 0.5$, (b)(i) $\\{0, 1, 16\\}$, (c) $\\text{E}(Y) = 2$, (d) $32$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $k = 0.5$, (b)(i) $\\{0, 1, 16\\}$, (c) $\\text{E}(Y) = 1.83$, (d) $24$",
+      "feedback": "Both $X = 1$ and $X = 3$ map to $Y = 1$. Add their probabilities together: $\\frac{1}{2} + \\frac{1}{6} = \\frac{2}{3}$, giving an expected frequency of $48 \\times \\frac{2}{3} = 32$."
+    },
+    {
+      "ans": "(a) $k = 0.5$, (b)(i) $\\{0, 1, 16\\}$, (c) $\\text{E}(Y) = 0.25$, (d) $32$",
+      "feedback": "For non-linear transformations, $\\text{E}[g(X)] \\neq g[\\text{E}(X)]$. You cannot calculate $\\text{E}(Y)$ by evaluating $(\\text{E}(X) - 2)^2$."
+    },
+    {
+      "ans": "(a) $k = 0.545$, (b)(i) $\\{0, 1, 16\\}$, (c) $\\text{E}(Y) = 2.18$, (d) $35$",
+      "feedback": "Ensure all four reciprocals are included: $1 + \\frac{1}{2} + \\frac{1}{3} + \\frac{1}{6} = 2$. This leads to $k = 0.5$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Non-Linear Expectations",
+    "content": "A fundamental rule in probability is that expectation is linear but not non-linear: $\\text{E}[g(X)] \\neq g[\\text{E}(X)]$. Always derive the probability distribution of $Y = g(X)$ first, combining duplicate values before evaluating $\\sum y \\text{P}(Y = y)$."
+  }
+} 
 ];
