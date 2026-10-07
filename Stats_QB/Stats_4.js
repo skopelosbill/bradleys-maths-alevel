@@ -621,5 +621,209 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: Resistance of Median vs Sensitivity of Mean",
     "content": "The mean and standard deviation are non-resistant statistics: removing a single high outlier causes both to drop sharply. In contrast, the median and IQR are resistant statistics that remain virtually unchanged."
   }
+},
+{
+  "id": "050166",
+  "group_id": "050166",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "The Normal Distribution",
+  "subtopic": [
+    "Distribution Parameters",
+    "Linear Transformations"
+  ],
+  "img": "images/Statistics_pngs/050166.png",
+  "question": "The screenshot in the diagram shows the probability distribution for the continuous random variable $X$, where $X \\sim \\text{N}(\\mu, \\sigma^2)$.<br><br>The area of each of the unshaded regions under the curve is $0.025$. The lower boundary of the shaded region is at $46.080$ and the upper boundary of the shaded region is at $53.920$.<br><br><strong>(a)</strong> Calculate the value of $\\mu$.<br><br><strong>(b)</strong> Calculate the value of $\\sigma^2$.<br><br><strong>(c)</strong> The random variable $Y$ is given by $Y = 3X + 10$.<br><br><strong>(i)</strong> State the distribution of $Y$.<br><br><strong>(ii)</strong> Find $\\text{P}(Y > 172)$.",
+  "steps": [
+    "<strong>(a) Mean $\\mu$:</strong><br><br>By symmetry of the normal distribution, the population mean $\\mu$ is located at the exact midpoint of the central shaded region:\\begin{aligned} \\mu &= \\dfrac{46.080 + 53.920}{2} \\cr &= 50 \\end{aligned}",
+    "<strong>(b) Variance $\\sigma^2$:</strong><br><br>The unshaded tails each have an area of $0.025$, meaning the central shaded area is $0.95$.<br><br>From standard normal percentage points tables, the upper critical value is $z = 1.960$.<br><br>Standardising the upper boundary $x = 53.920$:\\begin{aligned} &\\dfrac{53.920 - 50}{\\sigma} = 1.960 \\cr &3.920 = 1.960\\sigma \\cr &\\sigma = 2 \\end{aligned}<br>Squaring gives the population variance:\\begin{aligned} \\sigma^2 &= 2^2 \\cr &= 4 \\end{aligned}",
+    "<strong>(c)(i) Distribution of $Y$:</strong><br><br>For the linear transformation $Y = 3X + 10$:\\begin{aligned} \\text{E}(Y) &= 3\\text{E}(X) + 10 \\cr &= 3(50) + 10 \\cr &= 160 \\end{aligned}<br>The variance scales quadratically:\\begin{aligned} \\text{Var}(Y) &= 3^2\\text{Var}(X) \\cr &= 9(4) \\cr &= 36 \\end{aligned}<br>Hence:\\begin{aligned} Y \\sim \\text{N}(160, 36) \\end{aligned}",
+    "<strong>(c)(ii) Probability $\\text{P}(Y > 172)$:</strong><br><br>Standardising with mean $160$ and standard deviation $\\sqrt{36} = 6$:\\begin{aligned} \\text{P}(Y > 172) &= \\text{P}\\left(Z > \\dfrac{172 - 160}{6}\\right) \\cr &= \\text{P}\\left(Z > \\dfrac{12}{6}\\right) \\cr &= \\text{P}(Z > 2) \\cr &= 1 - \\Phi(2) \\cr &= 1 - 0.9772 \\cr &= 0.0228 \\end{aligned}",
+    "Final Answer: (a) $\\mu = 50$, (b) $\\sigma^2 = 4$, (c)(i) $Y \\sim \\text{N}(160, 36)$, (ii) $0.0228$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $\\mu = 50$, (b) $\\sigma^2 = 4$, (c)(i) $Y \\sim \\text{N}(160, 12)$, (ii) $0.0003$",
+      "feedback": "Remember that for a linear transformation $Y = aX + b$, the variance scales quadratically: $\\text{Var}(Y) = a^2\\text{Var}(X) = 3^2(4) = 36$, rather than $3(4)$."
+    },
+    {
+      "ans": "(a) $\\mu = 50$, (b) $\\sigma^2 = 2$, (c)(i) $Y \\sim \\text{N}(160, 18)$, (ii) $0.0023$",
+      "feedback": "In part (b), solving the standardized equation yields the standard deviation $\\sigma = 2$. You must square this to find the population variance $\\sigma^2 = 4$."
+    },
+    {
+      "ans": "(a) $\\mu = 50$, (b) $\\sigma^2 = 5.68$, (c)(i) $Y \\sim \\text{N}(160, 51.1)$, (ii) $0.0465$",
+      "feedback": "With $0.025$ in each unshaded tail, the critical $z$-value is $1.960$, not $1.645$ (which leaves $0.05$ in a single tail)."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Symmetry and Scale",
+    "content": "Always exploit symmetry first: the mean of a symmetric normal distribution is strictly halfway between equal tail boundaries. When evaluating $Y = aX + b$, remember that adding a constant shifts the mean but does not affect spread, while multiplying scales the standard deviation by $|a|$ and the variance by $a^2$."
+  }
+},
+{
+  "id": "050167",
+  "group_id": "050166",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "The Normal Distribution",
+  "subtopic": [
+    "Inverse Normal",
+    "Simultaneous Equations"
+  ],
+  "img": "images/Statistics_pngs/050167.png",
+  "question": "A precision manufacturing process produces metal shafts whose lengths, $W\\text{ cm}$, are modelled by the continuous random variable $W \\sim \\text{N}(\\mu, \\sigma^2)$.<br><br>The screenshot in the diagram shows the distribution with two rejection tails shaded. The lower shaded region has an area of $0.0228$ with an upper boundary at $42.0$. The upper shaded region has an area of $0.0668$ with a lower boundary at $63.0$.<br><br><strong>(a)</strong> Write down two simultaneous equations connecting $\\mu$ and $\\sigma$.<br><br><strong>(b)</strong> Hence determine the value of $\\mu$ and the value of $\\sigma$.<br><br><strong>(c)</strong> A shaft is accepted if its length lies between $45.0\\text{ cm}$ and $60.0\\text{ cm}$. Find the probability that a randomly chosen shaft is accepted.",
+  "steps": [
+    "<strong>(a) Simultaneous Equations:</strong><br><br>For the lower tail:\\begin{aligned} &\\text{P}(W < 42.0) = 0.0228 \\cr &\\Phi(-2.00) = 0.0228 \\cr &\\dfrac{42.0 - \\mu}{\\sigma} = -2.00 \\cr &42.0 = \\mu - 2\\sigma \\end{aligned}<br>For the upper tail:\\begin{aligned} &\\text{P}(W > 63.0) = 0.0668 \\cr &\\text{P}(W < 63.0) = 0.9332 \\cr &\\Phi(1.50) = 0.9332 \\cr &\\dfrac{63.0 - \\mu}{\\sigma} = 1.50 \\cr &63.0 = \\mu + 1.5\\sigma \\end{aligned}",
+    "<strong>(b) Values of $\\mu$ and $\\sigma$:</strong><br><br>Subtracting the first equation from the second:\\begin{aligned} &63.0 - 42.0 = 1.5\\sigma - (-2\\sigma) \\cr &21.0 = 3.5\\sigma \\cr &\\sigma = \\dfrac{21.0}{3.5} \\cr &\\sigma = 6 \\end{aligned}<br>Substituting $\\sigma = 6$ into the first equation:\\begin{aligned} \\mu &= 42.0 + 2(6) \\cr &= 42.0 + 12 \\cr &= 54 \\end{aligned}",
+    "<strong>(c) Acceptance Probability:</strong><br><br>Standardising both limits for $W \\sim \\text{N}(54, 6^2)$:\\begin{aligned} z_1 &= \\dfrac{45.0 - 54}{6} \\cr &= -1.5 \\end{aligned}\\begin{aligned} z_2 &= \\dfrac{60.0 - 54}{6} \\cr &= 1.0 \\end{aligned}<br>Calculating the probability between these values:\\begin{aligned} &\\text{P}(45.0 < W < 60.0) \\cr &\\quad = \\text{P}(-1.5 < Z < 1.0) \\cr &\\quad = \\Phi(1.0) - \\Phi(-1.5) \\cr &\\quad = 0.8413 - (1 - 0.9332) \\cr &\\quad = 0.8413 - 0.0668 \\cr &\\quad = 0.7745 \\end{aligned}",
+    "Final Answer: (a) $42.0 = \\mu - 2\\sigma$ and $63.0 = \\mu + 1.5\\sigma$, (b) $\\mu = 54, \\sigma = 6$, (c) $0.7745$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $42.0 = \\mu + 2\\sigma$ and $63.0 = \\mu + 1.5\\sigma$, (b) $\\mu = 126, \\sigma = -42$, (c) $0.7745$",
+      "feedback": "A boundary below the mean has a negative $z$-score. The standardized equation must be $z = -2.0$, producing $42.0 = \\mu - 2\\sigma$, not $\\mu + 2\\sigma$."
+    },
+    {
+      "ans": "(a) $42.0 = \\mu - 2\\sigma$ and $63.0 = \\mu + 1.5\\sigma$, (b) $\\mu = 54, \\sigma = 6$, (c) $0.0919$",
+      "feedback": "To calculate $\\text{P}(-1.5 < Z < 1.0)$, compute $\\Phi(1.0) - \\Phi(-1.5) = 0.8413 - 0.0668 = 0.7745$. Do not subtract both cumulative values from 1."
+    },
+    {
+      "ans": "(a) $42.0 = \\mu - 2\\sigma$ and $63.0 = \\mu + 1.5\\sigma$, (b) $\\mu = 48, \\sigma = 6$, (c) $0.6687$",
+      "feedback": "When substituting $\\sigma = 6$ into $42.0 = \\mu - 2\\sigma$, rearranging gives $\\mu = 42.0 + 2(6) = 54$, not $42.0 - 12$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Beware the Negative Sign",
+    "content": "The most frequent mistake in inverse normal problems is forgetting the negative sign on lower-tail $z$-scores. Because the tail area ($0.0228$) is well below $0.5$, the observation lies to the left of the mean, meaning $z = -2.00$ must be strictly negative."
+  }
+},
+{
+  "id": "050168",
+  "group_id": "050166",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "The Normal Distribution",
+  "subtopic": [
+    "Sampling Distributions",
+    "Hypothesis Testing"
+  ],
+  "img": "images/Statistics_pngs/050168.png",
+  "question": "The diagram shows the sampling distribution of the sample mean $\\bar{X}$ for random samples of size $n = 25$ taken from a normal population $X \\sim \\text{N}(\\mu, \\sigma^2)$ under the null hypothesis $H_0: \\mu = 120$, where the population standard deviation is known to be $\\sigma = 15$.<br><br>A one-tailed hypothesis test is conducted at the $5\\%$ significance level with alternative hypothesis $H_1: \\mu > 120$.<br><br><strong>(a)</strong> State the sampling distribution of $\\bar{X}$ under $H_0$, giving its mean and standard error.<br><br><strong>(b)</strong> Show that the critical value for this test, rounded to two decimal places, is $c = 124.94$.<br><br><strong>(c)</strong> A quality assurance manager draws a sample of $25$ items and observes a sample mean of $\\bar{x} = 126.2$, as indicated by the arrow in the diagram.<br><br><strong>(i)</strong> State the conclusion of the test in context.<br><br><strong>(ii)</strong> Calculate the $p$-value for this test, giving your answer to four decimal places.",
+  "steps": [
+    "<strong>(a) Sampling Distribution of $\\bar{X}$:</strong><br><br>Under $H_0$, the sample mean is distributed as:\\begin{aligned} \\bar{X} &\\sim \\text{N}\\left(\\mu, \\dfrac{\\sigma^2}{n}\\right) \\cr &\\sim \\text{N}\\left(120, \\dfrac{15^2}{25}\\right) \\cr &\\sim \\text{N}(120, 9) \\end{aligned}<br>The mean is $120$ and the standard error is:\\begin{aligned} \\text{SE} &= \\dfrac{15}{\\sqrt{25}} \\cr &= 3 \\end{aligned}",
+    "<strong>(b) Critical Value $c$:</strong><br><br>For a one-tailed test at the $5\\%$ significance level, the upper percentage point of the standard normal distribution is:\\begin{aligned} z_{0.95} = 1.6449 \\end{aligned}<br>Calculating the critical value on the scale of $\\bar{X}$:\\begin{aligned} c &= 120 + 1.6449(3) \\cr &= 120 + 4.9347 \\cr &= 124.9347... \\cr &\\approx 124.94 \\end{aligned}",
+    "<strong>(c)(i) Test Conclusion:</strong><br><br>The critical region is $\\bar{X} \\ge 124.94$.<br><br>Since the observed sample mean $\\bar{x} = 126.2 > 124.94$, it lies inside the critical region.<br><br>Reject $H_0$. There is significant evidence at the $5\\%$ level to suggest that the population mean is greater than $120$.",
+    "<strong>(c)(ii) Calculation of $p$-value:</strong><br><br>Standardising the observed sample mean:\\begin{aligned} z &= \\dfrac{126.2 - 120}{3} \\cr &= \\dfrac{6.2}{3} \\cr &\\approx 2.0667 \\end{aligned}<br>Finding the upper tail probability:\\begin{aligned} p\\text{-value} &= \\text{P}(\\bar{X} \\ge 126.2) \\cr &= 1 - \\Phi(2.067) \\cr &= 1 - 0.9806 \\cr &= 0.0194 \\end{aligned}",
+    "Final Answer: (a) $\\bar{X} \\sim \\text{N}(120, 9)$, mean $120$, $\\text{SE} = 3$, (b) $c = 124.94$, (c)(i) Reject $H_0$, (ii) $p = 0.0194$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $\\bar{X} \\sim \\text{N}(120, 225)$, mean $120$, $\\text{SE} = 15$, (b) $c = 144.67$, (c)(i) Accept $H_0$, (ii) $p = 0.3409$",
+      "feedback": "When evaluating the distribution of a sample mean, the standard error is $\\dfrac{\\sigma}{\\sqrt{n}} = \\dfrac{15}{\\sqrt{25}} = 3$, not the individual population standard deviation $15$."
+    },
+    {
+      "ans": "(a) $\\bar{X} \\sim \\text{N}(120, 9)$, mean $120$, $\\text{SE} = 3$, (b) $c = 125.88$, (c)(i) Reject $H_0$, (ii) $p = 0.0388$",
+      "feedback": "The test is one-tailed at the $5\\%$ level, so the critical value is $z = 1.6449$. The value $z = 1.960$ applies to a two-tailed test at the $5\\%$ level."
+    },
+    {
+      "ans": "(a) $\\bar{X} \\sim \\text{N}(120, 9)$, mean $120$, $\\text{SE} = 3$, (b) $c = 124.94$, (c)(i) Accept $H_0$, (ii) $p = 0.0194$",
+      "feedback": "Because the observed sample mean $\\bar{x} = 126.2$ is greater than the critical value $124.94$, it falls inside the rejection region, so $H_0$ must be rejected."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Dual Routes to Decision",
+    "content": "Notice how the critical value approach and the $p$-value approach arrive at the identical conclusion: $\\bar{x} = 126.2 > 124.94$ (inside the critical region), which matches the fact that the $p$-value ($0.0194$) is strictly less than $\\alpha = 0.05$. Both methods will always be entirely consistent."
+  }
+},
+{
+  "id": "050169",
+  "group_id": "050166",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "The Normal Distribution",
+  "subtopic": [
+    "Sampling Distributions",
+    "Central Limit Effect"
+  ],
+  "img": "images/Statistics_pngs/050169.png",
+  "question": "The diagram shows the probability density functions of two normally distributed random variables plotted on the same horizontal axis. Curve $A$ represents the population variable $X \\sim \\text{N}(\\mu_A, \\sigma_A^2)$ and Curve $B$ represents the sample mean $\\bar{X}$ of a random sample of size $n$ drawn from the same population.<br><br>Curve $A$ is given by $X \\sim \\text{N}(50, 16)$.<br><br><strong>(a)</strong> State the mean of each distribution, $\\mu_A$ and $\\mu_B$.<br><br><strong>(b)</strong> The standard deviation of the distribution shown by Curve $B$ is $\\sigma_B = 2$.<br><br><strong>(i)</strong> Calculate the sample size $n$.<br><br><strong>(ii)</strong> Explain why the peak of Curve $B$ is higher than the peak of Curve $A$.<br><br><strong>(c)</strong> Using the properties of the normal distribution, determine whether $\\text{P}(46 \\le X \\le 54)$ is greater than, equal to, or less than $\\text{P}(46 \\le \\bar{X} \\le 54)$, justifying your answer clearly.",
+  "steps": [
+    "<strong>(a) Means of the Distributions:</strong><br><br>The sample mean is an unbiased estimator of the population mean, so both curves are centered at the same value:\\begin{aligned} \\mu_A &= 50 \\cr \\mu_B &= 50 \\end{aligned}",
+    "<strong>(b)(i) Sample Size $n$:</strong><br><br>For Curve $A$, the population standard deviation is $\\sigma_A = \\sqrt{16} = 4$.<br><br>Using the standard error formula for Curve $B$:\\begin{aligned} \\sigma_B &= \\dfrac{\\sigma_A}{\\sqrt{n}} \\cr 2 &= \\dfrac{4}{\\sqrt{n}} \\cr \\sqrt{n} &= 2 \\cr n &= 4 \\end{aligned}",
+    "<strong>(b)(ii) Explanation of Peak Height:</strong><br><br>The total area under any probability density function must equal $1$.<br><br>Because Curve $B$ has a smaller standard deviation ($\\\\sigma_B = 2$ compared to $\\sigma_A = 4$), its values are less spread out.<br><br>To preserve a total area of $1$, the curve must be taller around the mean.",
+    "<strong>(c) Probability Comparison:</strong><br><br>Both intervals are centered on $\\mu = 50$:\\begin{aligned} &\\text{For } X: \\cr &[46, 54] = [\\mu - \\sigma, \\mu + \\sigma] \\cr &\\text{P}(46 \\le X \\le 54) \\approx 0.6827 \\end{aligned}\\begin{aligned} &\\text{For } \\bar{X}: \\cr &[46, 54] = [\\mu - 2\\sigma_B, \\mu + 2\\sigma_B] \\cr &\\text{P}(46 \\le \\bar{X} \\le 54) \\approx 0.9545 \\end{aligned}<br>Since $0.6827 < 0.9545$, $\\text{P}(46 \\le X \\le 54)$ is <strong>less than</strong> $\\text{P}(46 \\le \\bar{X} \\le 54)$.",
+    "Final Answer: (a) $\\mu_A = 50, \\mu_B = 50$, (b)(i) $n = 4$, (ii) Total area is $1$, (c) Less than"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $\\mu_A = 50, \\mu_B = 50$, (b)(i) $n = 2$, (ii) Total area is $1$, (c) Less than",
+      "feedback": "The standard error formula is $\\dfrac{\\sigma}{\\sqrt{n}}$. If $\\dfrac{4}{\\sqrt{n}} = 2$, then $\\sqrt{n} = 2$, which gives $n = 2^2 = 4$, not $n = 2$."
+    },
+    {
+      "ans": "(a) $\\mu_A = 50, \\mu_B = 50$, (b)(i) $n = 4$, (ii) Total area is $1$, (c) Greater than",
+      "feedback": "Because the distribution of $\\bar{X}$ is more tightly clustered around the mean, a greater proportion of its area lies within $\\pm 4$ units of the mean ($95.4\\%$ compared to $68.3\\%$)."
+    },
+    {
+      "ans": "(a) $\\mu_A = 50, \\mu_B = 12.5$, (b)(i) $n = 4$, (ii) Total area is $1$, (c) Less than",
+      "feedback": "The expected value of the sample mean equals the population mean: $\\text{E}(\\bar{X}) = \\mu = 50$. The sample size $n$ divides the variance, never the mean."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Preserving Unit Area",
+    "content": "The maximum height of a normal density curve is given by $\\dfrac{1}{\\sigma\\sqrt{2\\pi}}$. Because $\\sigma$ appears in the denominator, halving the standard deviation from $4$ to $2$ doubles the peak height. This inverse relationship ensures the area under the curve remains strictly equal to $1$."
+  }
+},
+{
+  "id": "050170",
+  "group_id": "050166",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Statistics",
+  "topic": "The Normal Distribution",
+  "subtopic": [
+    "Normal Approximation",
+    "Continuity Correction"
+  ],
+  "img": "images/Statistics_pngs/050170.png",
+  "question": "A fair coin is spun $24$ times. The discrete random variable $X$ represents the number of heads obtained, so that $X \\sim \\text{B}(24, 0.5)$.<br><br>The diagram shows the discrete probability bars for $X$ overlaid with the continuous curve of the approximating normal distribution $Y \\sim \\text{N}(\\mu, \\sigma^2)$.<br><br><strong>(a)</strong> State the mean $\\mu$ and variance $\\sigma^2$ of the approximating normal distribution $Y$.<br><br><strong>(b)</strong> Explain why a continuity correction is required when approximating a discrete distribution using a continuous curve.<br><br><strong>(c)</strong> With reference to the dashed boundary line at $x = 14.5$ shown in the diagram, write down the probability statement in terms of $Y$ that approximates $\\text{P}(X \\ge 15)$.<br><br><strong>(d)</strong> Hence calculate an approximation for $\\text{P}(X \\ge 15)$, giving your answer to four decimal places.",
+  "steps": [
+    "<strong>(a) Mean and Variance:</strong><br><br>For $X \\sim \\text{B}(n, p)$ with $n = 24$ and $p = 0.5$:\\begin{aligned} \\mu &= np \\cr &= 24(0.5) \\cr &= 12 \\end{aligned}\\begin{aligned} \\sigma^2 &= np(1 - p) \\cr &= 24(0.5)(0.5) \\cr &= 6 \\end{aligned}",
+    "<strong>(b) Explanation of Continuity Correction:</strong><br><br>A discrete distribution concentrates probability at individual integer values, with each outcome $k$ represented by a bar of width $1$ over the interval $[k - 0.5, k + 0.5]$.<br><br>For a continuous distribution, the probability at any single point is zero:\\begin{aligned} \\text{P}(Y = k) = 0 \\end{aligned}<br>A continuity correction shifts the boundary by $0.5$ so that the area under the continuous curve covers the corresponding discrete bar.",
+    "<strong>(c) Approximating Probability Statement:</strong><br><br>The discrete event $X \\ge 15$ includes the bars for $X = 15, 16, \\dots, 24$.<br><br>The bar for $15$ starts at the lower boundary $14.5$.<br><br>Therefore, the approximating statement is:\\begin{aligned} \\text{P}(Y \\ge 14.5) \\end{aligned}",
+    "<strong>(d) Calculation of $\\text{P}(X \\ge 15)$:</strong><br><br>Standardising $Y \\sim \\text{N}(12, 6)$ with standard deviation $\\sqrt{6} \\approx 2.4495$:\\begin{aligned} z &= \\dfrac{14.5 - 12}{\\sqrt{6}} \\cr &= \\dfrac{2.5}{2.4495} \\cr &\\approx 1.0206 \\end{aligned}<br>Evaluating the probability:\\begin{aligned} \\text{P}(Y \\ge 14.5) &= \\text{P}(Z \\ge 1.0206) \\cr &= 1 - \\Phi(1.0206) \\cr &= 1 - 0.8463 \\cr &= 0.1537 \\end{aligned}",
+    "Final Answer: (a) $\\mu = 12, \\sigma^2 = 6$, (b) Adjusts width of discrete bars, (c) $\\text{P}(Y \\ge 14.5)$, (d) $0.1537$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $\\mu = 12, \\sigma^2 = 6$, (b) Adjusts width of discrete bars, (c) $\\text{P}(Y \\ge 15.5)$, (d) $0.0765$",
+      "feedback": "For $\\text{P}(X \\ge 15)$, the discrete bar for $15$ must be included. Its bar starts at $14.5$, so the integration boundary must be $14.5$, not $15.5$."
+    },
+    {
+      "ans": "(a) $\\mu = 12, \\sigma^2 = 6$, (b) Adjusts width of discrete bars, (c) $\\text{P}(Y \\ge 15.0)$, (d) $0.1103$",
+      "feedback": "Omitting the continuity correction evaluates $\\text{P}(Y \\ge 15.0)$, which cuts through the centre of the bar for $15$ and understates the probability."
+    },
+    {
+      "ans": "(a) $\\mu = 12, \\sigma^2 = 6$, (b) Adjusts width of discrete bars, (c) $\\text{P}(Y \\ge 14.5)$, (d) $0.3385$",
+      "feedback": "When standardising, the denominator is the standard deviation $\\sigma = \\sqrt{6} \\approx 2.4495$, not the variance $\\sigma^2 = 6$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: The Continuity Correction Rule of Thumb",
+    "content": "Always picture the discrete bar. For $X = 15$, the bar extends from $14.5$ to $15.5$. If the discrete inequality includes $15$ ($X \\ge 15$), your continuous region must include that entire bar, starting at $14.5$. If the inequality is strict ($X > 15$), the bar for $15$ is excluded, meaning the region begins at $15.5$."
+  }
 }  
 ];
