@@ -1637,5 +1637,204 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: Right-Censoring in Practice",
     "content": "In real-world data collection, time limits cause right-censoring: we know a candidate took at least $90\\text{ minutes}$, but not their true completion time. A normal distribution assumes tails extend indefinitely, so any capped dataset will diverge from normality at the boundary."
   }
+},
+{
+  "id": "050191",
+  "group_id": "050191",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "The Binomial Distribution",
+  "subtopic": [
+    "Binomial Probability",
+    "Single Outcome Evaluation"
+  ],
+  "img": false,
+  "question": "The random variable $X$ has the binomial distribution $\\text{B}(15, 0.4)$.<br><br>Showing your calculation in full, find $\\text{P}(X = 6)$. Give your answer correct to four decimal places.",
+  "steps": [
+    "<strong>Binomial Probability Formula:</strong><br><br>For $X \\sim \\text{B}(n, p)$, the probability of obtaining exactly $x$ successes is given by:\\begin{aligned} \\text{P}(X = x) &= \\dbinom{n}{x}p^x(1 - p)^{n - x} \\end{aligned}Here $n = 15$, $p = 0.4$, $1 - p = 0.6$, and $x = 6$.",
+    "<strong>Calculation:</strong><br><br>Substituting the values into the formula:\\begin{aligned} \\text{P}(X = 6) &= \\dbinom{15}{6}(0.4)^6(0.6)^9 \\cr &= 5005(0.004096) \\cr &\\qquad \\times 0.010078 \\cr &= 0.2066 \\end{aligned}",
+    "Final Answer: $0.2066$"
+  ],
+  "pi_options": [
+    {
+      "ans": "$0.0000$",
+      "feedback": "Do not forget the binomial coefficient. Multiplying $(0.4)^6(0.6)^9$ without $\\dbinom{15}{6} = 5005$ gives only a single combination of trials."
+    },
+    {
+      "ans": "$0.1240$",
+      "feedback": "Check the indices in your formula. The power for failure must be $15 - 6 = 9$, rather than using $6$ for both powers."
+    },
+    {
+      "ans": "$0.2508$",
+      "feedback": "Ensure you use the specified success probability of $0.4$. Using $0.5$ assumes a symmetric distribution."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Evaluating the Binomial Coefficient",
+    "content": "Always calculate the combination $\\dbinom{n}{x}$ first. Here $\\dbinom{15}{6} = 5005$. Because probabilities of powers like $(0.4)^6$ and $(0.6)^9$ become very small, keep full precision on your calculator before multiplying by the coefficient."
+  }
+},
+{
+  "id": "050192",
+  "group_id": "050191",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "The Binomial Distribution",
+  "subtopic": [
+    "Cumulative Probability",
+    "Inequality Intervals"
+  ],
+  "img": false,
+  "question": "The random variable $Y$ has the binomial distribution $\\text{B}(20, 0.35)$.<br><br><strong>(a)</strong> Showing your calculation, find $\\text{P}(Y = 8)$.<br><br><strong>(b)</strong> Using cumulative binomial tables or statistical calculator functions, find:<br><strong>(i)</strong> $\\text{P}(Y \\le 6)$<br><strong>(ii)</strong> $\\text{P}(Y > 9)$<br><strong>(iii)</strong> $\\text{P}(5 \\le Y \\le 10)$",
+  "steps": [
+    "<strong>(a) Exact Probability $\\text{P}(Y = 8)$:</strong><br><br>Using the binomial probability formula with $n = 20$ and $p = 0.35$:\\begin{aligned} \\text{P}(Y = 8) &= \\dbinom{20}{8}(0.35)^8(0.65)^{12} \\cr &= 125970(0.0002252) \\cr &\\qquad \\times 0.005688 \\cr &= 0.1614 \\end{aligned}",
+    "<strong>(b)(i) Cumulative Probability $\\text{P}(Y \\le 6)$:</strong><br><br>Evaluating directly from the cumulative binomial distribution function:\\begin{aligned} \\text{P}(Y \\le 6) = 0.4166 \\end{aligned}",
+    "<strong>(b)(ii) Upper Tail $\\text{P}(Y > 9)$:</strong><br><br>Rewriting in terms of the cumulative probability:\\begin{aligned} \\text{P}(Y > 9) &= 1 - \\text{P}(Y \\le 9) \\cr &= 1 - 0.8782 \\cr &= 0.1218 \\end{aligned}",
+    "<strong>(b)(iii) Interval $\\text{P}(5 \\le Y \\le 10)$:</strong><br><br>Subtracting the cumulative tail below $5$:\\begin{aligned} &\\text{P}(5 \\le Y \\le 10) \\cr &\\quad = \\text{P}(Y \\le 10) \\cr &\\qquad - \\text{P}(Y \\le 4) \\cr &\\quad = 0.9468 - 0.1182 \\cr &\\quad = 0.8286 \\end{aligned}",
+    "Final Answer: (a) $0.1614$, (b)(i) $0.4166$, (ii) $0.1218$, (iii) $0.8286$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $0.1614$, (b)(i) $0.4166$, (ii) $0.1218$, (iii) $0.7102$",
+      "feedback": "To include $Y = 5$, subtract $\\text{P}(Y \\le 4)$. Subtracting $\\text{P}(Y \\le 5)$ incorrectly removes the outcome $Y = 5$ from the interval."
+    },
+    {
+      "ans": "(a) $0.1614$, (b)(i) $0.4166$, (ii) $0.2452$, (iii) $0.8286$",
+      "feedback": "Because the inequality is strict, $\\text{P}(Y > 9)$ is equivalent to $1 - \\text{P}(Y \\le 9)$. Subtracting $\\text{P}(Y \\le 8)$ incorrectly includes $9$ in the upper tail."
+    },
+    {
+      "ans": "(a) $0.0013$, (b)(i) $0.4166$, (ii) $0.1218$, (iii) $0.8286$",
+      "feedback": "In part (a), do not omit the combination term $\\dbinom{20}{8} = 125970$. Without it, you obtain only the probability of one specific sequence."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Inclusion in Binomial Intervals",
+    "content": "For a discrete variable, always note which values are included. To find $\\text{P}(5 \\le Y \\le 10)$, we want the sum from $5$ to $10$. We take all values up to $10$, which is $\\text{P}(Y \\le 10)$, and remove values up to $4$, which is $\\text{P}(Y \\le 4)$."
+  }
+},
+{
+  "id": "050193",
+  "group_id": "050191",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "The Binomial Distribution",
+  "subtopic": [
+    "Modelling Assumptions",
+    "Contextual Application"
+  ],
+  "img": false,
+  "question": "A manufacturing firm produces precision sensors. Historically, $8\\%$ of the sensors produced have a calibration defect. A quality assurance inspector selects a random sample of $25$ sensors from a day's production run.<br><br>Let $X$ denote the number of defective sensors in the sample.<br><br><strong>(a)</strong> State two assumptions necessary for $X$ to be modelled by a binomial distribution.<br><br><strong>(b)</strong> Showing your calculation in full, find the probability that exactly $2$ sensors in the sample are defective.<br><br><strong>(c)</strong> Find the probability that at least $3$ sensors in the sample are defective.",
+  "steps": [
+    "<strong>(a) Modelling Assumptions:</strong><br><br>Any two of the following conditions:\\begin{aligned} &\\bullet \\text{ The probability of a sensor being defective is constant } (p = 0.08). \\cr &\\bullet \\text{ Whether one sensor is defective is independent of any other sensor.} \\cr &\\bullet \\text{ There is a fixed number of trials } (n = 25). \\end{aligned}",
+    "<strong>(b) Probability of Exactly $2$ Defective Sensors:</strong><br><br>Under $X \\sim \\text{B}(25, 0.08)$:\\begin{aligned} \\text{P}(X = 2) &= \\dbinom{25}{2}(0.08)^2(0.92)^{23} \\cr &= 300(0.0064) \\cr &\\qquad \\times 0.14697 \\cr &= 0.2822 \\end{aligned}",
+    "<strong>(c) Probability of At Least $3$ Defective Sensors:</strong><br><br>Using the complement rule:\\begin{aligned} \\text{P}(X \\ge 3) &= 1 - \\text{P}(X \\le 2) \\end{aligned}From the cumulative binomial distribution for $n = 25$ and $p = 0.08$:\\begin{aligned} \\text{P}(X \\le 2) = 0.6768 \\end{aligned}Evaluating the upper tail:\\begin{aligned} \\text{P}(X \\ge 3) &= 1 - 0.6768 \\cr &= 0.3232 \\end{aligned}",
+    "Final Answer: (a) Constant probability and independent trials, (b) $0.2822$, (c) $0.3232$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Constant probability and independent trials, (b) $0.2822$, (c) $0.6768$",
+      "feedback": "The question asks for at least 3 defective sensors, which is $\\text{P}(X \\ge 3)$. The value $0.6768$ is $\\text{P}(X \\le 2)$; you must subtract this from 1."
+    },
+    {
+      "ans": "(a) Constant probability and independent trials, (b) $0.2822$, (c) $0.1415$",
+      "feedback": "For at least 3, the complement is at most 2. Subtracting $\\text{P}(X \\le 3)$ mistakenly excludes the outcome $X = 3$."
+    },
+    {
+      "ans": "(a) Fixed mean and normal distribution, (b) $0.0009$, (c) $0.3232$",
+      "feedback": "The binomial model requires independent trials and a constant probability of success. In part (b), remember to multiply by the combination $\\dbinom{25}{2} = 300$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Binomial Modelling Conditions",
+    "content": "Exam questions frequently ask for the four conditions of a binomial model: Fixed number of trials ($n$), two possible outcomes (success/failure), constant probability of success ($p$), and independent trials. Stating any two clearly secures full credit."
+  }
+},
+{
+  "id": "050194",
+  "group_id": "050191",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "The Binomial Distribution",
+  "subtopic": [
+    "Mean and Variance",
+    "Parameter Determination"
+  ],
+  "img": false,
+  "question": "The discrete random variable $W$ follows a binomial distribution $\\text{B}(n, p)$.<br><br>The mean and variance of $W$ are given by$$\\text{E}(W) = 7.2$$$$\\text{Var}(W) = 4.32$$<strong>(a)</strong> Determine the value of $n$ and the value of $p$.<br><br><strong>(b)</strong> Showing your calculation, find $\\text{P}(W = 8)$. Give your answer correct to four decimal places.",
+  "steps": [
+    "<strong>(a) Determining $n$ and $p$:</strong><br><br>For $W \\sim \\text{B}(n, p)$, the mean and variance are given by:\\begin{aligned} &\\text{E}(W) = np = 7.2 \\cr &\\text{Var}(W) = np(1 - p) = 4.32 \\end{aligned}Dividing the variance by the mean:\\begin{aligned} &\\dfrac{np(1 - p)}{np} = \\dfrac{4.32}{7.2} \\cr &1 - p = 0.6 \\cr &p = 0.4 \\end{aligned}Substituting $p = 0.4$ back into the mean equation:\\begin{aligned} n(0.4) &= 7.2 \\cr n &= \\dfrac{7.2}{0.4} \\cr n &= 18 \\end{aligned}",
+    "<strong>(b) Calculating $\\text{P}(W = 8)$:</strong><br><br>Using $W \\sim \\text{B}(18, 0.4)$:\\begin{aligned} \\text{P}(W = 8) &= \\dbinom{18}{8}(0.4)^8(0.6)^{10} \\cr &= 43758(0.0006554) \\cr &\\qquad \\times 0.006047 \\cr &= 0.1734 \\end{aligned}",
+    "Final Answer: (a) $n = 18, p = 0.4$, (b) $0.1734$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $n = 12, p = 0.6$, (b) $0.2270$",
+      "feedback": "Dividing variance by mean gives $1 - p = 0.6$, which means $p = 1 - 0.6 = 0.4$. Taking $p = 0.6$ confuses failure with success."
+    },
+    {
+      "ans": "(a) $n = 18, p = 0.4$, (b) $0.0000$",
+      "feedback": "Remember to include the binomial coefficient $\\dbinom{18}{8} = 43758$ in your probability calculation."
+    },
+    {
+      "ans": "(a) $n = 18, p = 0.4$, (b) $0.1892$",
+      "feedback": "Ensure the power of failure is $18 - 8 = 10$. A power slip alters the resulting probability."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Variance to Mean Ratio",
+    "content": "For any binomial distribution, $\\dfrac{\\text{Var}(W)}{\\text{E}(W)} = \\dfrac{np(1 - p)}{np} = 1 - p$. This ratio immediately yields the probability of failure $q = 1 - p$ in one step."
+  }
+},
+{
+  "id": "050195",
+  "group_id": "050191",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "The Binomial Distribution",
+  "subtopic": [
+    "Two-Stage Binomial",
+    "Batch Inspection"
+  ],
+  "img": false,
+  "question": "A specialist nursery sells sunflower seeds with a germination probability of $0.80$. Seeds are planted in planting cells arranged in trays of $10$.<br><br><strong>(a)</strong> Showing your calculation in full, find the probability that exactly $8$ seeds germinate in a randomly selected tray of $10$ seeds.<br><br><strong>(b)</strong> A gardener purchases $5$ independent trays of $10$ seeds. Find the probability that exactly $8$ seeds germinate in at least $4$ of the $5$ trays. Give your answer correct to four decimal places.",
+  "steps": [
+    "<strong>(a) Single Tray Probability:</strong><br><br>Let $X$ denote the number of germinating seeds in a tray of $10$, so $X \\sim \\text{B}(10, 0.80)$:\\begin{aligned} \\text{P}(X = 8) &= \\dbinom{10}{8}(0.80)^8(0.20)^2 \\cr &= 45(0.16777)(0.04) \\cr &= 0.3020 \\end{aligned}",
+    "<strong>(b) Two-Stage Binomial Model:</strong><br><br>Let $Y$ denote the number of trays in which exactly $8$ seeds germinate.<br><br>Since there are $5$ independent trays, $Y$ follows a new binomial distribution:\\begin{aligned} Y \\sim \\text{B}(5, 0.3020) \\end{aligned}We require the probability that at least $4$ trays have this outcome:\\begin{aligned} \\text{P}(Y \\ge 4) &= \\text{P}(Y = 4) + \\text{P}(Y = 5) \\end{aligned}",
+    "<strong>Evaluating the Component Probabilities:</strong><br><br>For $Y = 4$:\\begin{aligned} \\text{P}(Y = 4) &= \\dbinom{5}{4}(0.3020)^4(0.6980)^1 \\cr &= 5(0.008318)(0.6980) \\cr &= 0.0290 \\end{aligned}For $Y = 5$:\\begin{aligned} \\text{P}(Y = 5) &= (0.3020)^5 \\cr &= 0.0025 \\end{aligned}Adding the probabilities:\\begin{aligned} \\text{P}(Y \\ge 4) &= 0.0290 + 0.0025 \\cr &= 0.0315 \\end{aligned}",
+    "Final Answer: (a) $0.3020$, (b) $0.0315$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $0.3020$, (b) $0.0290$",
+      "feedback": "The event at least 4 includes both $Y = 4$ and $Y = 5$. Do not forget to add $\\text{P}(Y = 5) = (0.3020)^5 = 0.0025$."
+    },
+    {
+      "ans": "(a) $0.3020$, (b) $0.0083$",
+      "feedback": "In the second-stage calculation for $\\text{P}(Y = 4)$, remember to multiply by the combination $\\dbinom{5}{4} = 5$."
+    },
+    {
+      "ans": "(a) $0.2684$, (b) $0.0315$",
+      "feedback": "In part (a), evaluate $\\dbinom{10}{8}(0.8)^8(0.2)^2$. Using an index of 8 for both terms alters the probability."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Two-Stage Binomial Distributions",
+    "content": "A classic exam technique is the two-stage binomial: the probability calculated in part (a) becomes the success parameter $p$ for a new binomial distribution in part (b). Always define the new variable explicitly (e.g. $Y \\sim \\text{B}(5, 0.3020)$)."
+  }
 }
 ];
