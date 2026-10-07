@@ -1030,5 +1030,209 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: Non-Linear Expectations",
     "content": "A fundamental rule in probability is that expectation is linear but not non-linear: $\\text{E}[g(X)] \\neq g[\\text{E}(X)]$. Always derive the probability distribution of $Y = g(X)$ first, combining duplicate values before evaluating $\\sum y \\text{P}(Y = y)$."
   }
+},
+{
+  "id": "050176",
+  "group_id": "050176",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Probability",
+  "topic": "Probability and Independence",
+  "subtopic": [
+    "Addition Rule",
+    "Independence Testing"
+  ],
+  "img": false,
+  "question": "A large cohort of trainee technicians took professional assessment tests in both Electrical Principles ($E$) and Mechanical Systems ($M$).<br><br>Of these candidates, $62\\%$ passed Electrical Principles and $75\\%$ passed Mechanical Systems. In addition, $18\\%$ of the candidates did not pass either Electrical Principles or Mechanical Systems.<br><br><strong>(a)</strong> Find the probability that a randomly chosen candidate passed both Electrical Principles and Mechanical Systems.<br><br><strong>(b)</strong> Determine, with detailed reasoning, whether passing Electrical Principles and passing Mechanical Systems are independent events.<br><br><strong>(c)</strong> Find the probability that a randomly chosen candidate passed Electrical Principles given that they did not pass Mechanical Systems.",
+  "steps": [
+    "<strong>(a) Probability of Passing Both:</strong><br><br>Let $E$ and $M$ denote passing Electrical Principles and Mechanical Systems respectively.<br><br>From the given data:\\begin{aligned} \\text{P}(E) &= 0.62 \\cr \\text{P}(M) &= 0.75 \\cr \\text{P}(E' \\cap M') &= 0.18 \\end{aligned}<br>The union probability is:\\begin{aligned} \\text{P}(E \\cup M) &= 1 - 0.18 \\cr &= 0.82 \\end{aligned}<br>Using the addition rule of probability:\\begin{aligned} &\\text{P}(E \\cup M) = \\text{P}(E) + \\text{P}(M) - \\text{P}(E \\cap M) \\cr &0.82 = 0.62 + 0.75 - \\text{P}(E \\cap M) \\cr &0.82 = 1.37 - \\text{P}(E \\cap M) \\cr &\\text{P}(E \\cap M) = 1.37 - 0.82 \\cr &\\text{P}(E \\cap M) = 0.55 \\end{aligned}",
+    "<strong>(b) Test for Independence:</strong><br><br>For two events to be independent, the product of their individual probabilities must equal their intersection probability:\\begin{aligned} \\text{P}(E) \\times \\text{P}(M) &= 0.62 \\times 0.75 \\cr &= 0.465 \\end{aligned}<br>Comparing this product with the intersection:\\begin{aligned} \\text{P}(E \\cap M) = 0.55 \\end{aligned}<br>Since $0.55 \\neq 0.465$, passing Electrical Principles and passing Mechanical Systems are <strong>not independent</strong>.",
+    "<strong>(c) Conditional Probability:</strong><br><br>Using the definition of conditional probability:\\begin{aligned} \\text{P}(E \\mid M') = \\dfrac{\\text{P}(E \\cap M')}{\\text{P}(M')} \\end{aligned}<br>Finding the required component probabilities:\\begin{aligned} \\text{P}(E \\cap M') &= \\text{P}(E) - \\text{P}(E \\cap M) \\cr &= 0.62 - 0.55 \\cr &= 0.07 \\end{aligned}\\begin{aligned} \\text{P}(M') &= 1 - \\text{P}(M) \\cr &= 1 - 0.75 \\cr &= 0.25 \\end{aligned}<br>Evaluating the conditional probability:\\begin{aligned} \\text{P}(E \\mid M') &= \\dfrac{0.07}{0.25} \\cr &= 0.28 \\end{aligned}",
+    "Final Answer: (a) $0.55$, (b) Not independent, (c) $0.28$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $0.465$, (b) Independent, (c) $0.62$",
+      "feedback": "Do not assume independence to find the intersection. The intersection must be deduced from the addition rule using the union probability $1 - 0.18 = 0.82$."
+    },
+    {
+      "ans": "(a) $0.55$, (b) Not independent, (c) $0.07$",
+      "feedback": "The value $0.07$ is the joint probability $\\text{P}(E \\cap M')$. To determine the conditional probability, you must divide by $\\text{P}(M') = 0.25$."
+    },
+    {
+      "ans": "(a) $0.45$, (b) Not independent, (c) $0.68$",
+      "feedback": "Check your arithmetic when rearranging the addition formula: $\\text{P}(E \\cap M) = 0.62 + 0.75 - 0.82 = 0.55$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Never Assume Independence",
+    "content": "A classic exam trap is calculating $\\text{P}(A \\cap B) = \\text{P}(A)\\text{P}(B)$ and then using that very result to conclude the events are independent! Always calculate the intersection from the given data (such as the union or complement) and only then test whether the product equals the intersection."
+  }
+},
+{
+  "id": "050177",
+  "group_id": "050176",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Probability",
+  "topic": "Probability and Independence",
+  "subtopic": [
+    "Conditional Probability",
+    "Total Probability"
+  ],
+  "img": false,
+  "question": "A quality control process inspects microchips for two defects: Surface Flaws ($S$) and Circuit Breaks ($C$).<br><br>From production records, the probability that a randomly chosen microchip has a surface flaw is $\\text{P}(S) = 0.08$. The probability that a microchip has a circuit break given that it has a surface flaw is $\\text{P}(C \\mid S) = 0.25$, whereas the probability that it has a circuit break given that it has no surface flaw is $\\text{P}(C \\mid S') = 0.05$.<br><br><strong>(a)</strong> Calculate $\\text{P}(S \\cap C)$.<br><br><strong>(b)</strong> Show that $\\text{P}(C) = 0.066$.<br><br><strong>(c)</strong> Determine whether having a surface flaw and having a circuit break are independent events.<br><br><strong>(d)</strong> Find $\\text{P}(S \\mid C)$, giving your answer to three significant figures.",
+  "steps": [
+    "<strong>(a) Intersection $\\text{P}(S \\cap C)$:</strong><br><br>Using the multiplication rule:\\begin{aligned} \\text{P}(S \\cap C) &= \\text{P}(S) \\times \\text{P}(C \\mid S) \\cr &= 0.08 \\times 0.25 \\cr &= 0.02 \\end{aligned}",
+    "<strong>(b) Total Probability $\\text{P}(C)$:</strong><br><br>Partitioning by surface flaws:\\begin{aligned} \\text{P}(S') &= 1 - \\text{P}(S) \\cr &= 1 - 0.08 \\cr &= 0.92 \\end{aligned}<br>Applying the law of total probability:\\begin{aligned} \\text{P}(C) &= \\text{P}(S \\cap C) + \\text{P}(S' \\cap C) \\cr &= 0.02 + [\\text{P}(S') \\times \\text{P}(C \\mid S')] \\cr &= 0.02 + (0.92 \\times 0.05) \\cr &= 0.02 + 0.046 \\cr &= 0.066 \\end{aligned}",
+    "<strong>(c) Test for Independence:</strong><br><br>Two events $S$ and $C$ are independent if and only if $\\text{P}(C \\mid S) = \\text{P}(C)$.<br><br>Comparing the conditional and marginal probabilities:\\begin{aligned} \\text{P}(C \\mid S) &= 0.25 \\cr \\text{P}(C) &= 0.066 \\end{aligned}<br>Since $0.25 \\neq 0.066$, having a surface flaw and having a circuit break are <strong>not independent</strong>.",
+    "<strong>(d) Conditional Probability $\\text{P}(S \\mid C)$:</strong><br><br>Using Bayes' theorem:\\begin{aligned} \\text{P}(S \\mid C) &= \\dfrac{\\text{P}(S \\cap C)}{\\text{P}(C)} \\cr &= \\dfrac{0.02}{0.066} \\cr &= \\dfrac{2}{6.6} \\cr &= \\dfrac{10}{33} \\cr &\\approx 0.303 \\end{aligned}",
+    "Final Answer: (a) $0.02$, (b) $\\text{P}(C) = 0.066$, (c) Not independent, (d) $0.303$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $0.02$, (b) $\\text{P}(C) = 0.066$, (c) Not independent, (d) $0.250$",
+      "feedback": "To evaluate $\\text{P}(S \\mid C)$, the denominator must be $\\text{P}(C) = 0.066$, not $\\text{P}(S) = 0.08$. Dividing by $\\text{P}(S)$ simply recalculates $\\text{P}(C \\mid S)$."
+    },
+    {
+      "ans": "(a) $0.02$, (b) $\\text{P}(C) = 0.066$, (c) Independent, (d) $0.303$",
+      "feedback": "Independence requires $\\text{P}(C \\mid S) = \\text{P}(C)$. Here, $0.25 \\neq 0.066$, so the occurrence of $S$ alters the probability of $C$."
+    },
+    {
+      "ans": "(a) $0.02$, (b) $\\text{P}(C) = 0.070$, (c) Not independent, (d) $0.286$",
+      "feedback": "Remember that $\\text{P}(S' \\cap C) = \\text{P}(S')\\text{P}(C \\mid S') = 0.92 \\times 0.05 = 0.046$. Do not forget to multiply by $\\text{P}(S')$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: The Conditional Definition of Independence",
+    "content": "While the product rule $\\text{P}(A \\cap B) = \\text{P}(A)\\text{P}(B)$ is common, verifying whether $\\text{P}(B \\mid A) = \\text{P}(B)$ is often much faster when conditional probabilities are already given in the question stem."
+  }
+},
+{
+  "id": "050178",
+  "group_id": "050176",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Probability",
+  "topic": "Probability and Independence",
+  "subtopic": [
+    "Three-Event Probability",
+    "Mutually Exclusive Events"
+  ],
+  "img": false,
+  "question": "A language academy offers evening courses in French ($F$), German ($G$), and Spanish ($S$). In a cohort of $100$ adult learners:<br><br>$\\bullet$ $40$ study French<br>$\\bullet$ $30$ study German<br>$\\bullet$ $35$ study Spanish<br>$\\bullet$ $12$ study both French and German<br>$\\bullet$ $14$ study both French and Spanish<br>$\\bullet$ No student studies both German and Spanish<br><br><strong>(a)</strong> Find the probability that a randomly selected learner studies none of these three languages.<br><br><strong>(b)</strong> Determine whether studying French and studying German are independent events.<br><br><strong>(c)</strong> State, with a clear reason, whether studying German and studying Spanish are mutually exclusive events.<br><br><strong>(d)</strong> Find the probability that a learner studies French, given that they study Spanish.",
+  "steps": [
+    "<strong>(a) Probability of Studying None:</strong><br><br>Since no student studies both German and Spanish, $\\text{P}(G \\cap S) = 0$ and the triple intersection is zero: $\\text{P}(F \\cap G \\cap S) = 0$.<br><br>Using the addition principle for three events:\\begin{aligned} &\\text{P}(F \\cup G \\cup S) \\cr &\\quad = \\text{P}(F) + \\text{P}(G) + \\text{P}(S) \\cr &\\qquad - \\text{P}(F \\cap G) - \\text{P}(F \\cap S) \\cr &\\qquad - \\text{P}(G \\cap S) \\cr &\\quad = 0.40 + 0.30 + 0.35 \\cr &\\qquad - 0.12 - 0.14 - 0 \\cr &\\quad = 1.05 - 0.26 \\cr &\\quad = 0.79 \\end{aligned}<br>The probability of studying none is:\\begin{aligned} \\text{P}(\\text{None}) &= 1 - \\text{P}(F \\cup G \\cup S) \\cr &= 1 - 0.79 \\cr &= 0.21 \\end{aligned}",
+    "<strong>(b) Test for Independence of $F$ and $G$:</strong><br><br>Evaluating the product of individual probabilities:\\begin{aligned} \\text{P}(F) \\times \\text{P}(G) &= 0.40 \\times 0.30 \\cr &= 0.12 \\end{aligned}<br>Comparing with the intersection probability:\\begin{aligned} \\text{P}(F \\cap G) = 0.12 \\end{aligned}<br>Since $\\text{P}(F \\cap G) = \\text{P}(F) \\times \\text{P}(G) = 0.12$, studying French and studying German are <strong>independent</strong>.",
+    "<strong>(c) Mutually Exclusive Test for $G$ and $S$:</strong><br><br>Two events are mutually exclusive if they cannot occur at the same time, meaning their intersection is empty.<br><br>Because no student studies both languages:\\begin{aligned} \\text{P}(G \\cap S) = 0 \\end{aligned}<br>Therefore, studying German and studying Spanish are <strong>mutually exclusive</strong>.",
+    "<strong>(d) Conditional Probability $\\text{P}(F \\mid S)$:</strong><br><br>Using the conditional probability definition:\\begin{aligned} \\text{P}(F \\mid S) &= \\dfrac{\\text{P}(F \\cap S)}{\\text{P}(S)} \\cr &= \\dfrac{0.14}{0.35} \\cr &= \\dfrac{14}{35} \\cr &= \\dfrac{2}{5} \\cr &= 0.4 \\end{aligned}",
+    "Final Answer: (a) $0.21$, (b) Independent, (c) Mutually exclusive, (d) $0.4$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $0.21$, (b) Not independent, (c) Mutually exclusive, (d) $0.4$",
+      "feedback": "Check the product carefully: $0.40 \\times 0.30 = 0.12$, which exactly equals $\\text{P}(F \\cap G) = 0.12$. Because the product equals the intersection, they are strictly independent."
+    },
+    {
+      "ans": "(a) $0.21$, (b) Independent, (c) Mutually exclusive, (d) $0.35$",
+      "feedback": "The condition is that the student studies Spanish, so divide by $\\text{P}(S) = 0.35$, yielding $\\frac{0.14}{0.35} = 0.4$. Dividing by $\\text{P}(F) = 0.40$ incorrectly computes $\\text{P}(S \\mid F)$."
+    },
+    {
+      "ans": "(a) $0.07$, (b) Independent, (c) Mutually exclusive, (d) $0.4$",
+      "feedback": "When calculating the union, ensure you subtract both two-way intersections: $0.40 + 0.30 + 0.35 - 0.12 - 0.14 = 0.79$, so the complement is $1 - 0.79 = 0.21$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Exact Independence Can Occur",
+    "content": "Students often assume exam questions will always conclude events are not independent. Here, $0.40 \\times 0.30 = 0.12$ exactly matches the intersection. Always trust the arithmetic rather than guessing."
+  }
+},
+{
+  "id": "050179",
+  "group_id": "050176",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Probability",
+  "topic": "Probability and Independence",
+  "subtopic": [
+    "Algebraic Probability",
+    "Quadratic Equations"
+  ],
+  "img": false,
+  "question": "Two events $A$ and $B$ are such that$$\\text{P}(A) = p$$$$\\text{P}(B) = 2p$$$$\\text{P}(A \\cup B) = 0.72$$where $p$ is a positive constant.<br><br><strong>(a)</strong> Given that $A$ and $B$ are independent events, show that$$2p^2 - 3p + 0.72 = 0$$<strong>(b)</strong> Hence determine the value of $p$, stating why the alternative root must be rejected.<br><br><strong>(c)</strong> Find $\\text{P}(A' \\cap B)$.<br><br><strong>(d)</strong> Find $\\text{P}(A \\mid A \\cup B)$, giving your answer as an exact fraction in simplest form.",
+  "steps": [
+    "<strong>(a) Deriving the Quadratic Equation:</strong><br><br>Since $A$ and $B$ are independent:\\begin{aligned} \\text{P}(A \\cap B) &= \\text{P}(A) \\times \\text{P}(B) \\cr &= p(2p) \\cr &= 2p^2 \\end{aligned}<br>Substituting into the addition rule:\\begin{aligned} &\\text{P}(A \\cup B) = \\text{P}(A) + \\text{P}(B) - \\text{P}(A \\cap B) \\cr &0.72 = p + 2p - 2p^2 \\cr &0.72 = 3p - 2p^2 \\cr &2p^2 - 3p + 0.72 = 0 \\end{aligned}",
+    "<strong>(b) Solving for $p$:</strong><br><br>Using the quadratic formula:\\begin{aligned} p &= \\dfrac{-(-3) \\pm \\sqrt{(-3)^2 - 4(2)(0.72)}}{2(2)} \\cr &= \\dfrac{3 \\pm \\sqrt{9 - 5.76}}{4} \\cr &= \\dfrac{3 \\pm \\sqrt{3.24}}{4} \\cr &= \\dfrac{3 \\pm 1.8}{4} \\end{aligned}<br>Evaluating the two roots:\\begin{aligned} p_1 &= \\dfrac{4.8}{4} = 1.2 \\cr p_2 &= \\dfrac{1.2}{4} = 0.3 \\end{aligned}<br>If $p = 1.2$, then $\\text{P}(B) = 2(1.2) = 2.4 > 1$, which is impossible because probabilities cannot exceed $1$.<br><br>Therefore, $p = 0.3$.",
+    "<strong>(c) Probability $\\text{P}(A' \\cap B)$:</strong><br><br>With $p = 0.3$:\\begin{aligned} \\text{P}(A) &= 0.3 \\cr \\text{P}(B) &= 0.6 \\cr \\text{P}(A \\cap B) &= 2(0.3)^2 \\cr &= 0.18 \\end{aligned}<br>Finding the required probability:\\begin{aligned} \\text{P}(A' \\cap B) &= \\text{P}(B) - \\text{P}(A \\cap B) \\cr &= 0.6 - 0.18 \\cr &= 0.42 \\end{aligned}",
+    "<strong>(d) Conditional Probability $\\text{P}(A \\mid A \\cup B)$:</strong><br><br>Since $A$ is a subset of $A \\cup B$, their intersection is simply $A$:\\begin{aligned} \\text{P}(A \\cap (A \\cup B)) = \\text{P}(A) = 0.3 \\end{aligned}<br>Evaluating the conditional probability:\\begin{aligned} \\text{P}(A \\mid A \\cup B) &= \\dfrac{\\text{P}(A)}{\\text{P}(A \\cup B)} \\cr &= \\dfrac{0.3}{0.72} \\cr &= \\dfrac{30}{72} \\cr &= \\dfrac{5}{12} \\end{aligned}",
+    "Final Answer: (a) $2p^2 - 3p + 0.72 = 0$, (b) $p = 0.3$, (c) $0.42$, (d) $\\dfrac{5}{12}$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $2p^2 - 3p + 0.72 = 0$, (b) $p = 0.3\\text{ or }1.2$, (c) $0.42$, (d) $\\dfrac{5}{12}$",
+      "feedback": "Probabilities must lie in the interval $[0, 1]$. If $p = 1.2$, then $\\text{P}(B) = 2p = 2.4$, which violates probability axioms. You must reject $p = 1.2$."
+    },
+    {
+      "ans": "(a) $2p^2 - 3p + 0.72 = 0$, (b) $p = 0.3$, (c) $0.42$, (d) $\\dfrac{3}{10}$",
+      "feedback": "The reduced sample space is $A \\cup B$, so the denominator is $\\text{P}(A \\cup B) = 0.72$. Simplifying $\\frac{0.3}{0.72}$ gives $\\frac{5}{12}$."
+    },
+    {
+      "ans": "(a) $2p^2 - 3p + 0.72 = 0$, (b) $p = 0.235$, (c) $0.360$, (d) $\\dfrac{4}{11}$",
+      "feedback": "Evaluating the discriminant gives $(-3)^2 - 4(2)(0.72) = 9 - 5.76 = 3.24$. Since $\\sqrt{3.24} = 1.8$, the quadratic yields exact rational roots $1.2$ and $0.3$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Boundary Conditions on Probabilities",
+    "content": "Whenever an algebraic equation produces multiple solutions for a probability parameter, verify all defined events: $\\text{P}(A) \\in [0, 1]$, $\\text{P}(B) \\in [0, 1]$, and $\\text{P}(A \\cap B) \\in [0, 1]$. While $p = 1.2$ might seem reasonable alone, it makes $\\text{P}(B) = 2p = 2.4 > 1$, which is invalid."
+  }
+},
+{
+  "id": "050180",
+  "group_id": "050176",
+  "branch": "Statistics",
+  "board": "OCR",
+  "level": "A",
+  "major_area": "Probability",
+  "topic": "Probability and Independence",
+  "subtopic": [
+    "Mutually Exclusive Events",
+    "Probability Axioms"
+  ],
+  "img": false,
+  "question": "The events $E$ and $F$ have non-zero probabilities$$\\text{P}(E) = 0.4$$$$\\text{P}(F) = 0.5$$<strong>(a)</strong> Suppose first that $E$ and $F$ are mutually exclusive events:<br><strong>(i)</strong> State the value of $\\text{P}(E \\cap F)$.<br><strong>(ii)</strong> Explain why two events with non-zero probabilities cannot be both mutually exclusive and independent.<br><br><strong>(b)</strong> Suppose instead that $E$ and $F$ are independent events:<br><strong>(i)</strong> Calculate $\\text{P}(E \\cap F)$.<br><strong>(ii)</strong> Calculate $\\text{P}(E \\cup F)$.<br><strong>(iii)</strong> State the value of $\\text{P}(E \\mid F')$.<br><br><strong>(c)</strong> In a different scenario where $\\text{P}(E) = 0.4$ and $\\text{P}(F) = 0.5$, it is observed that $\\text{P}(E \\cup F) = 0.7$. Determine whether $E$ and $F$ are independent in this scenario.",
+  "steps": [
+    "<strong>(a)(i) Mutually Exclusive Intersection:</strong><br><br>By definition, mutually exclusive events cannot occur simultaneously:\\begin{aligned} \\text{P}(E \\cap F) = 0 \\end{aligned}",
+    "<strong>(a)(ii) Mutually Exclusive vs Independent:</strong><br><br>For independent events with non-zero probabilities:\\begin{aligned} \\text{P}(E \\cap F) &= \\text{P}(E) \\times \\text{P}(F) \\cr &> 0 \\end{aligned}<br>However, for mutually exclusive events, $\\text{P}(E \\cap F) = 0$.<br><br>Since $\\text{P}(E) \\times \\text{P}(F) \\neq 0$, the two conditions contradict each other. Thus, events with non-zero probabilities cannot be both mutually exclusive and independent.",
+    "<strong>(b) Independent Scenario:</strong><br><br><strong>(i) Intersection:</strong>\\begin{aligned} \\text{P}(E \\cap F) &= \\text{P}(E) \\times \\text{P}(F) \\cr &= 0.4 \\times 0.5 \\cr &= 0.2 \\end{aligned}<br><strong>(ii) Union:</strong>\\begin{aligned} \\text{P}(E \\cup F) &= \\text{P}(E) + \\text{P}(F) - \\text{P}(E \\cap F) \\cr &= 0.4 + 0.5 - 0.2 \\cr &= 0.7 \\end{aligned}<br><strong>(iii) Conditional:</strong> If $E$ and $F$ are independent, the non-occurrence of $F$ does not affect the probability of $E$:\\begin{aligned} \\text{P}(E \\mid F') &= \\text{P}(E) \\cr &= 0.4 \\end{aligned}",
+    "<strong>(c) Independence in Alternate Scenario:</strong><br><br>Using the addition rule to find the intersection:\\begin{aligned} \\text{P}(E \\cap F) &= \\text{P}(E) + \\text{P}(F) - \\text{P}(E \\cup F) \\cr &= 0.4 + 0.5 - 0.7 \\cr &= 0.2 \\end{aligned}<br>Testing the independence product:\\begin{aligned} \\text{P}(E) \\times \\text{P}(F) &= 0.4 \\times 0.5 \\cr &= 0.2 \\end{aligned}<br>Since $\\text{P}(E \\cap F) = \\text{P}(E) \\times \\text{P}(F) = 0.2$, the events $E$ and $F$ are <strong>independent</strong>.",
+    "Final Answer: (a)(i) $0$, (ii) $\\text{P}(E)\\text{P}(F) \\neq 0$, (b)(i) $0.2$, (ii) $0.7$, (iii) $0.4$, (c) Independent"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a)(i) $0$, (ii) $\\text{P}(E)\\text{P}(F) \\neq 0$, (b)(i) $0.2$, (ii) $0.7$, (iii) $0$, (c) Independent",
+      "feedback": "If $E$ and $F$ are independent, knowledge that $F$ did not occur gives zero information about $E$. Therefore, $\\text{P}(E \\mid F') = \\text{P}(E) = 0.4$, not $0$."
+    },
+    {
+      "ans": "(a)(i) $0$, (ii) $\\text{P}(E)\\text{P}(F) \\neq 0$, (b)(i) $0.2$, (ii) $0.9$, (iii) $0.4$, (c) Not independent",
+      "feedback": "For independent events, $\\text{P}(E \\cap F) = 0.2 > 0$. You must subtract this intersection from the sum of the probabilities, giving $\\text{P}(E \\cup F) = 0.4 + 0.5 - 0.2 = 0.7$."
+    },
+    {
+      "ans": "(a)(i) $0$, (ii) $\\text{P}(E)\\text{P}(F) \\neq 0$, (b)(i) $0.2$, (ii) $0.7$, (iii) $0.4$, (c) Not independent",
+      "feedback": "The rule $\\text{P}(E \\cup F) = \\text{P}(E) + \\text{P}(F)$ tests for mutually exclusive events, not independence. For independence, verify whether $\\text{P}(E \\cap F) = \\text{P}(E)\\text{P}(F)$, which holds here ($0.2 = 0.2$)."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: The Difference Between ME and Independent",
+    "content": "Mutually exclusive means the events cannot happen together (disjoint sets with $\\text{P}(A \\cap B) = 0$). Independent means one event happening provides zero information about the other. If two events are mutually exclusive and one happens, you know with $100\\%$ certainty that the other did not—so they are maximally dependent!"
+  }
 } 
 ];
