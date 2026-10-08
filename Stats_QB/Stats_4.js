@@ -1733,7 +1733,7 @@ window.ALEVEL_QUESTIONS = [
   "img": false,
   "question": "A manufacturing firm produces precision sensors. Historically, $8\\%$ of the sensors produced have a calibration defect. A quality assurance inspector selects a random sample of $25$ sensors from a day's production run.<br><br>Let $X$ denote the number of defective sensors in the sample.<br><br><strong>(a)</strong> State two assumptions necessary for $X$ to be modelled by a binomial distribution.<br><br><strong>(b)</strong> Showing your calculation in full, find the probability that exactly $2$ sensors in the sample are defective.<br><br><strong>(c)</strong> Find the probability that at least $3$ sensors in the sample are defective.",
   "steps": [
-    "<strong>(a) Modelling Assumptions:</strong><br><br>Any two of the following conditions:<br>> The probability of a sensor being defective is constant  $(p = 0.08)$.<br> Whether one sensor is defective is independent of any other sensor.<br> There is a fixed number of trials $(n = 25)$.",
+    "<strong>(a) Modelling Assumptions:</strong><br><br>Any two of the following conditions:<br><br> The probability of a sensor being defective is constant  $(p = 0.08)$.<br><br> Whether one sensor is defective is independent of any other sensor.<br><br> There is a fixed number of trials $(n = 25)$.",
     "<strong>(b) Probability of Exactly $2$ Defective Sensors:</strong><br><br>Under $X \\sim \\text{B}(25, 0.08)$:\\begin{aligned} \\text{P}(X = 2) &= \\dbinom{25}{2}(0.08)^2(0.92)^{23} \\cr &= 300(0.0064) \\cr &\\qquad \\times 0.14697 \\cr &= 0.2822 \\end{aligned}",
     "<strong>(c) Probability of At Least $3$ Defective Sensors:</strong><br><br>Using the complement rule:\\begin{aligned} \\text{P}(X \\ge 3) &= 1 - \\text{P}(X \\le 2) \\end{aligned}From the cumulative binomial distribution for $n = 25$ and $p = 0.08$:\\begin{aligned} \\text{P}(X \\le 2) = 0.6768 \\end{aligned}Evaluating the upper tail:\\begin{aligned} \\text{P}(X \\ge 3) &= 1 - 0.6768 \\cr &= 0.3232 \\end{aligned}",
     "Final Answer: (a) Constant probability and independent trials, (b) $0.2822$, (c) $0.3232$"
@@ -1835,6 +1835,212 @@ window.ALEVEL_QUESTIONS = [
     "type": "deeper",
     "title": "The Head Teacher's Eye: Two-Stage Binomial Distributions",
     "content": "A classic exam technique is the two-stage binomial: the probability calculated in part (a) becomes the success parameter $p$ for a new binomial distribution in part (b). Always define the new variable explicitly (e.g. $Y \\sim \\text{B}(5, 0.3020)$)."
+  }
+},
+{
+  "id": "050196",
+  "group_id": "050196",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Venn Diagrams and Probability",
+  "subtopic": [
+    "Set Notation",
+    "Statistical Independence"
+  ],
+  "img": "images/Statistics_pngs/050196.png",
+  "question": "The Venn diagram shows the extracurricular clubs attended by $50$ sixth form students. $B$ represents the set of students who attend Badminton club, $C$ represents the set of students who attend Chess club, and $R$ represents the set of students who attend Robotics club.<br><br>The diagram shows the number of students in each set.<br><br><strong>(a)</strong> Explain what $C \\cap R'$ means in this context.<br><br><strong>(b)</strong> One of these students is chosen at random. Find the probability that this student attends:<br><strong>(i)</strong> exactly two of these clubs,<br><strong>(ii)</strong> Chess or Badminton or both.<br><br><strong>(c)</strong> Determine whether attending Chess club and attending Robotics club are statistically independent for these students.",
+  "steps": [
+    "<strong>(a) Contextual Meaning:</strong><br><br>$C \\cap R'$ represents the students who attend Chess club but do not attend Robotics club.",
+    "<strong>(b)(i) Exactly Two Clubs:</strong><br><br>Because Badminton and Robotics do not overlap, the students attending exactly two clubs are in $(B \\cap C)$ and $(C \\cap R)$:\\begin{aligned} \\text{P}(\\text{Exactly 2}) &= \\dfrac{5 + 6}{50} \\cr &= \\dfrac{11}{50} \\cr &= 0.22 \\end{aligned}",
+    "<strong>(b)(ii) Chess or Badminton or Both:</strong><br><br>Summing all regions in $C \\cup B$:\\begin{aligned} \\text{P}(C \\cup B) &= \\dfrac{15 + 5 + 14 + 6}{50} \\cr &= \\dfrac{40}{50} \\cr &= 0.8 \\end{aligned}",
+    "<strong>(c) Test for Independence:</strong><br><br>Finding the individual probabilities:\\begin{aligned} \\text{P}(C) &= \\dfrac{5 + 14 + 6}{50} \\cr &= \\dfrac{25}{50} \\cr &= 0.5 \\end{aligned}\\begin{aligned} \\text{P}(R) &= \\dfrac{6 + 6}{50} \\cr &= \\dfrac{12}{50} \\cr &= 0.24 \\end{aligned}Calculating the product of probabilities:\\begin{aligned} \\text{P}(C) \\times \\text{P}(R) &= 0.5 \\times 0.24 \\cr &= 0.12 \\end{aligned}From the diagram, the intersection probability is:\\begin{aligned} \\text{P}(C \\cap R) &= \\dfrac{6}{50} \\cr &= 0.12 \\end{aligned}Since $\\text{P}(C \\cap R) = \\text{P}(C) \\times \\text{P}(R)$, attending Chess club and attending Robotics club are <strong>statistically independent</strong>.",
+    "Final Answer: (a) Attend Chess but not Robotics, (b)(i) $0.22$, (ii) $0.8$, (c) Independent"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Attend Chess but not Robotics, (b)(i) $0.22$, (ii) $0.8$, (c) Not independent",
+      "feedback": "Evaluate the product test:\\begin{aligned} \\text{P}(C) \\times \\text{P}(R) &= 0.5 \\times 0.24 \\cr &= 0.12 \\end{aligned}Because this matches $\\text{P}(C \\cap R) = 0.12$, the events are independent."
+    },
+    {
+      "ans": "(a) Attend Chess but not Robotics, (b)(i) $0.10$, (ii) $0.8$, (c) Independent",
+      "feedback": "There are two separate overlap regions: $5$ students attend Badminton and Chess, and $6$ students attend Chess and Robotics, giving $11$ students in total."
+    },
+    {
+      "ans": "(a) Attend Chess but not Robotics, (b)(i) $0.22$, (ii) $0.68$, (c) Independent",
+      "feedback": "The union $C \\cup B$ includes all students in Chess, including the $6$ students who also attend Robotics: $15 + 5 + 14 + 6 = 40$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Independence in Venn Diagrams",
+    "content": "Never assume that overlapping sets in a Venn diagram cannot be independent! While mutually exclusive sets with non-zero probability can never be independent, overlapping sets can satisfy $\\text{P}(A \\cap B) = \\text{P}(A)\\text{P}(B)$ perfectly."
+  }
+},
+{
+  "id": "050197",
+  "group_id": "050196",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Venn Diagrams and Probability",
+  "subtopic": [
+    "Conditional Probability",
+    "Three-Set Diagrams"
+  ],
+  "img": "images/Statistics_pngs/050197.png",
+  "question": "The Venn diagram shows the subject choices of $60$ students in a college. $A$ represents Art, $B$ represents Biology, and $C$ represents Chemistry.<br><br><strong>(a)</strong> Describe in words the group of students represented by the set $(A \\cup B) \\cap C'$.<br><br><strong>(b)</strong> A student is selected at random from the cohort. Calculate the probability that this student studies:<br><strong>(i)</strong> at least two of these subjects,<br><strong>(ii)</strong> Chemistry, given that they study Biology.<br><br><strong>(c)</strong> Determine, with detailed reasoning, whether studying Art and studying Biology are statistically independent.",
+  "steps": [
+    "<strong>(a) Set Description:</strong><br><br>$(A \\cup B) \\cap C'$ represents students who study Art or Biology (or both), but do not study Chemistry.",
+    "<strong>(b)(i) At Least Two Subjects:</strong><br><br>Summing the four intersection regions:\\begin{aligned} \\text{P}(\\text{At least 2}) &= \\dfrac{5 + 4 + 6 + 3}{60} \\cr &= \\dfrac{18}{60} \\cr &= 0.3 \\end{aligned}",
+    "<strong>(b)(ii) Conditional Probability $\\text{P}(C \\mid B)$:</strong><br><br>Total students studying Biology:\\begin{aligned} n(B) &= 14 + 5 + 6 + 3 \\cr &= 28 \\end{aligned}Students studying both Chemistry and Biology:\\begin{aligned} n(C \\cap B) &= 6 + 3 \\cr &= 9 \\end{aligned}Calculating the conditional probability:\\begin{aligned} \\text{P}(C \\mid B) &= \\dfrac{n(C \\cap B)}{n(B)} \\cr &= \\dfrac{9}{28} \\end{aligned}",
+    "<strong>(c) Independence of $A$ and $B$:</strong><br><br>Finding the individual probabilities:\\begin{aligned} \\text{P}(A) &= \\dfrac{11 + 5 + 4 + 3}{60} \\cr &= \\dfrac{23}{60} \\end{aligned}\\begin{aligned} \\text{P}(B) &= \\dfrac{28}{60} \\end{aligned}Calculating the product of probabilities:\\begin{aligned} \\text{P}(A) \\times \\text{P}(B) &= \\dfrac{23}{60} \\times \\dfrac{28}{60} \\cr &= \\dfrac{644}{3600} \\cr &\\approx 0.1789 \\end{aligned}From the diagram:\\begin{aligned} \\text{P}(A \\cap B) &= \\dfrac{5 + 3}{60} \\cr &= \\dfrac{8}{60} \\cr &\\approx 0.1333 \\end{aligned}Since $0.1333 \\neq 0.1789$, studying Art and studying Biology are <strong>not independent</strong>.",
+    "Final Answer: (a) Study Art or Biology but not Chemistry, (b)(i) $0.3$, (ii) $\\dfrac{9}{28}$, (c) Not independent"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Study Art or Biology but not Chemistry, (b)(i) $0.3$, (ii) $\\dfrac{3}{20}$, (c) Not independent",
+      "feedback": "For $\\text{P}(C \\mid B)$, the reduced sample space is set $B$, which has $28$ students. Dividing by $60$ evaluates the joint probability $\\text{P}(C \\cap B)$."
+    },
+    {
+      "ans": "(a) Study Art or Biology but not Chemistry, (b)(i) $0.3$, (ii) $\\dfrac{9}{28}$, (c) Independent",
+      "feedback": "Compare the intersection to the product:\\begin{aligned} \\text{P}(A \\cap B) &= \\dfrac{8}{60} \\approx 0.1333 \\cr \\text{P}(A)\\text{P}(B) &= \\dfrac{644}{3600} \\approx 0.1789 \\end{aligned}Because the values differ, the events are not independent."
+    },
+    {
+      "ans": "(a) Study Art or Biology but not Chemistry, (b)(i) $0.25$, (ii) $\\dfrac{9}{28}$, (c) Not independent",
+      "feedback": "The condition at least two includes students taking all three subjects ($3$ students), giving $5 + 4 + 6 + 3 = 18$ students."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Conditional Denominators",
+    "content": "When computing a conditional probability $\\text{P}(X \\mid Y)$ directly from a Venn diagram, always restrict your attention entirely to the circle for $Y$. Its total frequency becomes your new denominator."
+  }
+},
+{
+  "id": "050198",
+  "group_id": "050196",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Venn Diagrams and Probability",
+  "subtopic": [
+    "Algebraic Venn Diagrams",
+    "Conditional Probability"
+  ],
+  "img": "images/Statistics_pngs/050198.png",
+  "question": "A survey of $80$ local residents investigates ownership of alternative fuel vehicles. $E$ represents the set of residents who own a fully Electric car, and $H$ represents the set of residents who own a Hybrid car.<br><br>The number of residents in each region of the Venn diagram is shown in terms of an unknown integer $x$.<br><br><strong>(a)</strong> Form an equation in $x$ and hence show that $x = 12$.<br><br><strong>(b)</strong> A resident from the survey is chosen at random. Find the probability that this resident owns:<br><strong>(i)</strong> an Electric car,<br><strong>(ii)</strong> a Hybrid car, given that they own an Electric car.<br><br><strong>(c)</strong> Determine whether owning an Electric car and owning a Hybrid car are statistically independent events for this group of residents.",
+  "steps": [
+    "<strong>(a) Forming and Solving the Equation:</strong><br><br>The sum of all four regions equals the total surveyed population ($80$):\\begin{aligned} &22 + x + (2x + 6) + 16 = 80 \\cr &3x + 44 = 80 \\cr &3x = 36 \\cr &x = 12 \\end{aligned}",
+    "<strong>(b)(i) Electric Car Ownership:</strong><br><br>Total residents owning an Electric car:\\begin{aligned} n(E) &= 22 + 12 \\cr &= 34 \\end{aligned}Calculating the probability:\\begin{aligned} \\text{P}(E) &= \\dfrac{34}{80} \\cr &= \\dfrac{17}{40} \\cr &= 0.425 \\end{aligned}",
+    "<strong>(b)(ii) Hybrid Given Electric:</strong><br><br>Using the conditional probability definition:\\begin{aligned} \\text{P}(H \\mid E) &= \\dfrac{n(E \\cap H)}{n(E)} \\cr &= \\dfrac{12}{34} \\cr &= \\dfrac{6}{17} \\end{aligned}",
+    "<strong>(c) Test for Independence:</strong><br><br>Total residents owning a Hybrid car with $x = 12$:\\begin{aligned} n(H) &= 12 + [2(12) + 6] \\cr &= 12 + 30 \\cr &= 42 \\end{aligned}Calculating marginal and joint probabilities:\\begin{aligned} \\text{P}(H) &= \\dfrac{42}{80} \\cr &= 0.525 \\end{aligned}\\begin{aligned} \\text{P}(E) \\times \\text{P}(H) &= 0.425 \\times 0.525 \\cr &= 0.2231 \\end{aligned}From the diagram:\\begin{aligned} \\text{P}(E \\cap H) &= \\dfrac{12}{80} \\cr &= 0.15 \\end{aligned}Since $0.15 \\neq 0.2231$, owning an Electric car and owning a Hybrid car are <strong>not independent</strong>.",
+    "Final Answer: (a) $x = 12$, (b)(i) $0.425$, (ii) $\\dfrac{6}{17}$, (c) Not independent"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $x = 12$, (b)(i) $0.425$, (ii) $\\dfrac{2}{7}$, (c) Not independent",
+      "feedback": "The condition is owning an Electric car, so divide by $n(E) = 34$, giving $\\dfrac{12}{34} = \\dfrac{6}{17}$. Dividing by $42$ calculates $\\text{P}(E \\mid H)$."
+    },
+    {
+      "ans": "(a) $x = 12$, (b)(i) $0.425$, (ii) $\\dfrac{6}{17}$, (c) Independent",
+      "feedback": "Notice that $\\text{P}(H \\mid E) = \\dfrac{6}{17} \\approx 0.353$, whereas $\\text{P}(H) = 0.525$. Because knowledge of $E$ changes the probability of $H$, they are not independent."
+    },
+    {
+      "ans": "(a) $x = 12$, (b)(i) $0.275$, (ii) $\\dfrac{6}{17}$, (c) Not independent",
+      "feedback": "The set $E$ includes both residents who own only an Electric car ($22$) and residents who own both ($12$), giving $34$ in total."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Algebraic Regions",
+    "content": "When Venn diagrams contain algebraic terms like $2x + 6$, always write out the total equation first. Once $x$ is found, immediately write down the evaluated numbers for all regions to avoid substitution errors later."
+  }
+},
+{
+  "id": "050199",
+  "group_id": "050196",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Venn Diagrams and Probability",
+  "subtopic": [
+    "Mutually Exclusive Events",
+    "Conditional Probability"
+  ],
+  "img": "images/Statistics_pngs/050199.png",
+  "question": "The Venn diagram shows the probabilities associated with three events $X$, $Y$, and $Z$ defined on the sample space $S$.<br><br><strong>(a)</strong> State, with a clear mathematical reason, whether events $X$ and $Z$ are mutually exclusive.<br><br><strong>(b)</strong> Calculate:<br><strong>(i)</strong> $\\text{P}(X \\cup Y)$<br><strong>(ii)</strong> $\\text{P}(X \\mid Y')$<br><strong>(iii)</strong> $\\text{P}(Y \\mid X \\cup Z)$<br><br><strong>(c)</strong> Determine whether events $X$ and $Y$ are statistically independent.",
+  "steps": [
+    "<strong>(a) Mutually Exclusive Test for $X$ and $Z$:</strong><br><br>Two events are mutually exclusive if they cannot happen together.<br><br>From the diagram, circles $X$ and $Z$ do not intersect:\\begin{aligned} \\text{P}(X \\cap Z) = 0 \\end{aligned}Therefore, $X$ and $Z$ are <strong>mutually exclusive</strong>.",
+    "<strong>(b)(i) Union $\\text{P}(X \\cup Y)$:</strong><br><br>Summing all regions in $X$ and $Y$:\\begin{aligned} \\text{P}(X \\cup Y) &= 0.20 + 0.10 + 0.15 \\cr &= 0.45 \\end{aligned}",
+    "<strong>(b)(ii) Conditional Probability $\\text{P}(X \\mid Y')$:</strong><br><br>Total probability for $Y$:\\begin{aligned} \\text{P}(Y) &= 0.10 + 0.15 + 0.05 \\cr &= 0.30 \\end{aligned}Finding the complement:\\begin{aligned} \\text{P}(Y') &= 1 - 0.30 \\cr &= 0.70 \\end{aligned}Evaluating the conditional probability:\\begin{aligned} \\text{P}(X \\mid Y') &= \\dfrac{\\text{P}(X \\cap Y')}{\\text{P}(Y')} \\cr &= \\dfrac{0.20}{0.70} \\cr &= \\dfrac{2}{7} \\end{aligned}",
+    "<strong>(b)(iii) Conditional Probability $\\text{P}(Y \\mid X \\cup Z)$:</strong><br><br>Finding the intersection of $Y$ with $X \\cup Z$:\\begin{aligned} \\text{P}(Y \\cap (X \\cup Z)) &= 0.10 + 0.05 \\cr &= 0.15 \\end{aligned}Finding the union probability:\\begin{aligned} &\\text{P}(X \\cup Z) \\cr &\\quad = (0.20 + 0.10) \\cr &\\qquad + (0.05 + 0.30) \\cr &\\quad = 0.30 + 0.35 \\cr &\\quad = 0.65 \\end{aligned}Evaluating the conditional probability:\\begin{aligned} \\text{P}(Y \\mid X \\cup Z) &= \\dfrac{0.15}{0.65} \\cr &= \\dfrac{15}{65} \\cr &= \\dfrac{3}{13} \\end{aligned}",
+    "<strong>(c) Test for Independence of $X$ and $Y$:</strong><br><br>Calculating individual probabilities:\\begin{aligned} \\text{P}(X) &= 0.20 + 0.10 \\cr &= 0.30 \\end{aligned}\\begin{aligned} \\text{P}(Y) &= 0.10 + 0.15 + 0.05 \\cr &= 0.30 \\end{aligned}Multiplying the probabilities:\\begin{aligned} \\text{P}(X) \\times \\text{P}(Y) &= 0.30 \\times 0.30 \\cr &= 0.09 \\end{aligned}From the diagram:\\begin{aligned} \\text{P}(X \\cap Y) = 0.10 \\end{aligned}Since $0.10 \\neq 0.09$, events $X$ and $Y$ are <strong>not independent</strong>.",
+    "Final Answer: (a) Mutually exclusive because $\\text{P}(X \\cap Z) = 0$, (b)(i) $0.45$, (ii) $\\dfrac{2}{7}$, (iii) $\\dfrac{3}{13}$, (c) Not independent"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Mutually exclusive because $\\text{P}(X \\cap Z) = 0$, (b)(i) $0.60$, (ii) $\\dfrac{2}{7}$, (iii) $\\dfrac{3}{13}$, (c) Not independent",
+      "feedback": "When calculating the union $X \\cup Y$, simply sum the disjoint regions inside both circles: $0.20 + 0.10 + 0.15 = 0.45$. Adding $\\text{P}(X) + \\text{P}(Y)$ double-counts the intersection."
+    },
+    {
+      "ans": "(a) Mutually exclusive because $\\text{P}(X \\cap Z) = 0$, (b)(i) $0.45$, (ii) $\\dfrac{2}{7}$, (iii) $\\dfrac{3}{13}$, (c) Independent",
+      "feedback": "Notice that $\\text{P}(X \\cap Y) = 0.10$, whereas $\\text{P}(X)\\text{P}(Y) = 0.09$. Because these values are not equal, the events are not independent."
+    },
+    {
+      "ans": "(a) Mutually exclusive because $\\text{P}(X \\cap Z) = 0$, (b)(i) $0.45$, (ii) $0.20$, (iii) $\\dfrac{3}{13}$, (c) Not independent",
+      "feedback": "In part (b)(ii), the condition is $Y'$, so you must divide by $\\text{P}(Y') = 0.70$, giving $\\dfrac{0.20}{0.70} = \\dfrac{2}{7}$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Probabilities Directly on Regions",
+    "content": "When region labels are already given as decimals, they represent probabilities directly rather than frequencies. Verify that all regions (including the outside region) sum to strictly $1.00$ before calculating."
+  }
+},
+{
+  "id": "050200",
+  "group_id": "050196",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Venn Diagrams and Probability",
+  "subtopic": [
+    "Subset Relationships",
+    "Independence"
+  ],
+  "img": "images/Statistics_pngs/050200.png",
+  "question": "The Venn diagram shows the module enrolments of $50$ computing students. $A$ represents Advanced Algorithms, $B$ represents Computer Science, and $C$ represents Cybersecurity. The circle representing set $A$ lies entirely inside the circle representing set $B$.<br><br><strong>(a)</strong> State what the subset relationship $A \\subset B$ means in the context of these course enrolments.<br><br><strong>(b)</strong> A student is chosen at random. Find the probability that this student studies:<br><strong>(i)</strong> Computer Science, given that they study Advanced Algorithms ($\text{P}(B \\mid A)$),<br><strong>(ii)</strong> exactly one of these three modules.<br><br><strong>(c)</strong> Determine whether enrolling in Computer Science ($B$) and enrolling in Cybersecurity ($C$) are statistically independent events.",
+  "steps": [
+    "<strong>(a) Subset Meaning in Context:</strong><br><br>The relation $A \\subset B$ means that every student who enrols in Advanced Algorithms is also enrolled in Computer Science.",
+    "<strong>(b)(i) Conditional Probability $\\text{P}(B \\mid A)$:</strong><br><br>Because set $A$ is completely contained within set $B$:\\begin{aligned} A \\cap B = A \\end{aligned}Applying the conditional probability formula:\\begin{aligned} \\text{P}(B \\mid A) &= \\dfrac{\\text{P}(B \\cap A)}{\\text{P}(A)} \\cr &= \\dfrac{\\text{P}(A)}{\\text{P}(A)} \\cr &= 1 \\end{aligned}If a student studies Advanced Algorithms, it is certain ($100\\%$ probability) that they study Computer Science.",
+    "<strong>(b)(ii) Exactly One Module:</strong><br><br>Because $A \\subset B$, any student taking $A$ is automatically taking at least two modules ($A$ and $B$).<br><br>Students taking exactly one module are those in $B$ only and in $C$ only:\\begin{aligned} \\text{P}(\\text{Exactly 1}) &= \\dfrac{14 + 15}{50} \\cr &= \\dfrac{29}{50} \\cr &= 0.58 \\end{aligned}",
+    "<strong>(c) Independence of $B$ and $C$:</strong><br><br>Total students enrolled in Computer Science ($B$):\\begin{aligned} n(B) &= 8 + 14 + 6 \\cr &= 28 \\end{aligned}\\begin{aligned} \\text{P}(B) &= \\dfrac{28}{50} \\cr &= 0.56 \\end{aligned}Total students enrolled in Cybersecurity ($C$):\\begin{aligned} n(C) &= 6 + 15 \\cr &= 21 \\end{aligned}\\begin{aligned} \\text{P}(C) &= \\dfrac{21}{50} \\cr &= 0.42 \\end{aligned}Calculating the product of probabilities:\\begin{aligned} \\text{P}(B) \\times \\text{P}(C) &= 0.56 \\times 0.42 \\cr &= 0.2352 \\end{aligned}From the diagram, the intersection probability is:\\begin{aligned} \\text{P}(B \\cap C) &= \\dfrac{6}{50} \\cr &= 0.12 \\end{aligned}Since $0.12 \\neq 0.2352$, studying Computer Science and studying Cybersecurity are <strong>not independent</strong>.",
+    "Final Answer: (a) Every Advanced Algorithms student studies Computer Science, (b)(i) $1$, (ii) $0.58$, (c) Not independent"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Every Advanced Algorithms student studies Computer Science, (b)(i) $1$, (ii) $0.74$, (c) Not independent",
+      "feedback": "Because $A$ is a subset of $B$, all $8$ students in $A$ are enrolled in both $A$ and $B$. They take two modules, so they must not be counted in exactly one."
+    },
+    {
+      "ans": "(a) Every Advanced Algorithms student studies Computer Science, (b)(i) $\\dfrac{2}{7}$, (ii) $0.58$, (c) Not independent",
+      "feedback": "The condition is studying $A$, so the denominator is $n(A) = 8$. Since all $8$ students also study $B$, the conditional probability is $\\dfrac{8}{8} = 1$."
+    },
+    {
+      "ans": "(a) Every Advanced Algorithms student studies Computer Science, (b)(i) $1$, (ii) $0.58$, (c) Independent",
+      "feedback": "Compare the intersection to the product:\\begin{aligned} \\text{P}(B \\cap C) &= 0.12 \\cr \\text{P}(B)\\text{P}(C) &= 0.2352 \\end{aligned}Since the values are not equal, the events are not independent."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Subsets and Conditional Certainty",
+    "content": "When one set is entirely contained within another ($A \\subset B$), knowing that event $A$ occurred guarantees that event $B$ has occurred. Hence $\\text{P}(B \\mid A) = 1$ always holds for any subset relationship."
   }
 }
 ];
