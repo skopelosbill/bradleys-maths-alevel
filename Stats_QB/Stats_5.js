@@ -199,5 +199,210 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: When to Use Poisson Approximation",
     "content": "Remember the criteria for approximating $\\text{B}(n, p)$ by $\\text{Po}(\\lambda)$: $n$ must be large ($n > 50$) and $p$ must be small ($p < 0.1$), giving a manageable mean $\\lambda = np \\le 10$. If $np$ exceeds $10$, a Normal approximation is generally preferred."
   }
+},
+{
+  "id": "050206",
+  "group_id": "050206",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Statistical Hypothesis Testing",
+  "subtopic": [
+    "Binomial Test",
+    "Critical Region and Type I Error"
+  ],
+  "img": false,
+  "question": "A trainee archer can historically hit the bullseye on $20\\%$ of her attempts. After completing a specialised training course, she wishes to test whether her accuracy has improved. She takes a random sample of $12$ independent shots.<br><br><strong>(a)</strong><br><strong>(i)</strong> Write down suitable null and alternative hypotheses to test whether her accuracy has improved.<br><strong>(ii)</strong> State a suitable test statistic that she could use.<br><br><strong>(b)</strong> Using a $5\\%$ significance level, find the critical region for this test.<br><br><strong>(c)</strong><br><strong>(i)</strong> State the probability of a Type I error for this test.<br><strong>(ii)</strong> Explain what a Type I error means in this context.<br><br><strong>(d)</strong> In her test sample of $12$ shots, the archer hits the bullseye on $5$ occasions. What conclusion should she reach? Justify your answer.",
+  "steps": [
+    "<strong>(a) Hypotheses and Test Statistic:</strong><br><br>Let $p$ denote the probability that the archer hits the bullseye on any given attempt.\\begin{aligned} &H_0: p = 0.2 \\cr &H_1: p > 0.2 \\end{aligned}The test statistic is $X$, the number of successful bullseye hits achieved in $12$ attempts.",
+    "<strong>(b) Critical Region:</strong><br><br>Under $H_0$, $X \\sim \\text{B}(12, 0.2)$.<br><br>Evaluating probabilities in the upper tail for a $5\\%$ test:\\begin{aligned} \\text{P}(X \\ge 5) &= 1 - \\text{P}(X \\le 4) \\cr &= 1 - 0.9274 \\cr &= 0.0726 \\end{aligned}\\begin{aligned} \\text{P}(X \\ge 6) &= 1 - \\text{P}(X \\le 5) \\cr &= 1 - 0.9806 \\cr &= 0.0194 \\end{aligned}Since $0.0194 \\le 0.05$ and $0.0726 > 0.05$, the critical region is $X \\ge 6$.",
+    "<strong>(c) Type I Error:</strong><br><br><strong>(i) Probability:</strong> The probability of a Type I error equals the actual significance level:\\begin{aligned} \\text{P}(\\text{Type I Error}) &= \\text{P}(X \\ge 6 \\mid H_0) \\cr &= 0.0194 \\end{aligned}<strong>(ii) Contextual meaning:</strong> Concluding that the archer's accuracy has improved when in reality her underlying success probability has remained unchanged at $0.2$.",
+    "<strong>(d) Test Conclusion:</strong><br><br>The observed test statistic is $x = 5$.<br><br>Since $5$ does not lie in the critical region ($5 < 6$), we fail to reject $H_0$.<br><br>There is insufficient evidence at the $5\\%$ significance level to suggest that the archer's accuracy has improved.",
+    "Final Answer: (a)(i) $H_0: p = 0.2, H_1: p > 0.2$, (ii) Number of hits in $12$, (b) $X \\ge 6$, (c)(i) $0.0194$, (ii) Concluding improved when unchanged, (d) Insufficient evidence of improvement"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a)(i) $H_0: p = 0.2, H_1: p > 0.2$, (ii) Number of hits in $12$, (b) $X \\ge 5$, (c)(i) $0.0726$, (ii) Concluding improved when unchanged, (d) Sufficient evidence of improvement",
+      "feedback": "The critical region probability must strictly not exceed the nominal significance level ($0.05$). Because $\\text{P}(X \\ge 5) = 0.0726 > 0.05$, the boundary must be $X \\ge 6$."
+    },
+    {
+      "ans": "(a)(i) $H_0: p = 0.2, H_1: p \\neq 0.2$, (ii) Number of hits in $12$, (b) $X \\ge 6$, (c)(i) $0.0194$, (ii) Concluding improved when unchanged, (d) Insufficient evidence of improvement",
+      "feedback": "The question investigates whether accuracy has improved, requiring an upper one-tailed alternative hypothesis ($H_1: p > 0.2$) rather than a two-tailed test."
+    },
+    {
+      "ans": "(a)(i) $H_0: p = 0.2, H_1: p > 0.2$, (ii) Number of hits in $12$, (b) $X \\ge 6$, (c)(i) $0.0194$, (ii) Concluding unchanged when improved, (d) Insufficient evidence of improvement",
+      "feedback": "A Type I error is rejecting $H_0$ when $H_0$ is true (concluding an improvement occurred when skill remained unchanged)."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Actual vs Nominal Significance Level",
+    "content": "For a discrete distribution like the Binomial, you cannot usually achieve an exact $5\\%$ tail. The nominal level is $5\\%$, but the critical region must contain probability $\\le 0.05$. The actual significance level (here $0.0194$) is the true probability of committing a Type I error."
+  }
+},
+{
+  "id": "050207",
+  "group_id": "050206",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Statistical Hypothesis Testing",
+  "subtopic": [
+    "Lower-Tail Test",
+    "Actual Significance Level"
+  ],
+  "img": false,
+  "question": "A manufacturing process historically produces defective micro-switches at a rate of $25\\%$. Following the installation of new precision tooling, a production engineer claims that the proportion of defective switches has decreased. A random sample of $16$ micro-switches is selected and tested.<br><br>Let $p$ denote the probability that a randomly chosen micro-switch is defective.<br><br><strong>(a)</strong> State the null and alternative hypotheses for this test.<br><br><strong>(b)</strong> Using a $5\\%$ significance level, determine the critical region for this test.<br><br><strong>(c)</strong> Calculate the actual significance level (the probability of a Type I error) of the test.<br><br><strong>(d)</strong> In the sample of $16$ switches, exactly $1$ switch is found to be defective. State the conclusion of the test in context.",
+  "steps": [
+    "<strong>(a) Hypotheses:</strong><br><br>Testing for a reduction in the defect rate:\\begin{aligned} &H_0: p = 0.25 \\cr &H_1: p < 0.25 \\end{aligned}",
+    "<strong>(b) Critical Region:</strong><br><br>Under $H_0$, $X \\sim \\text{B}(16, 0.25)$.<br><br>Evaluating lower tail probabilities:\\begin{aligned} \\text{P}(X \\le 1) &= \\text{P}(X = 0) + \\text{P}(X = 1) \\cr &= 0.0100 + 0.0535 \\cr &= 0.0635 \\end{aligned}\\begin{aligned} \\text{P}(X = 0) &= (0.75)^{16} \\cr &= 0.0100 \\end{aligned}Since $0.0635 > 0.05$ and $0.0100 \\le 0.05$, the critical region is $X = 0$.",
+    "<strong>(c) Actual Significance Level:</strong><br><br>The probability of rejecting $H_0$ given that $H_0$ is true is:\\begin{aligned} \\text{P}(X = 0 \\mid H_0) = 0.0100 \\end{aligned}The actual significance level is $0.0100$ (or $1.00\\%$).",
+    "<strong>(d) Test Conclusion:</strong><br><br>The observed test statistic is $x = 1$.<br><br>Since $1$ is not in the critical region ($1 > 0$), we fail to reject $H_0$.<br><br>There is insufficient evidence at the $5\\%$ level to support the claim that the proportion of defective micro-switches has decreased.",
+    "Final Answer: (a) $H_0: p = 0.25, H_1: p < 0.25$, (b) $X = 0$, (c) $0.0100$, (d) Insufficient evidence defect rate decreased"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $H_0: p = 0.25, H_1: p < 0.25$, (b) $X \\le 1$, (c) $0.0635$, (d) Sufficient evidence defect rate decreased",
+      "feedback": "Because $\\text{P}(X \\le 1) = 0.0635$ exceeds the $0.05$ significance threshold, the outcome $X = 1$ cannot be in the critical region."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.25, H_1: p > 0.25$, (b) $X = 0$, (c) $0.0100$, (d) Insufficient evidence defect rate decreased",
+      "feedback": "The claim is that the defect rate has decreased, requiring a lower-tail alternative hypothesis ($H_1: p < 0.25$)."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.25, H_1: p < 0.25$, (b) $X = 0$, (c) $0.0500$, (d) Insufficient evidence defect rate decreased",
+      "feedback": "The actual significance level is the exact probability of the critical region under $H_0$, which is $0.0100$, rather than the nominal $0.05$ target."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Strict Upper Limits on Tail Probabilities",
+    "content": "In a discrete test, never choose a critical value whose cumulative probability exceeds the nominal significance level. Even though $0.0635$ is close to $0.05$, adopting $X \\le 1$ would inflate the Type I error rate beyond the agreed $5\\%$ risk."
+  }
+},
+{
+  "id": "050208",
+  "group_id": "050206",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Statistical Hypothesis Testing",
+  "subtopic": [
+    "Two-Tailed Binomial Test",
+    "Critical Region"
+  ],
+  "img": false,
+  "question": "A board game uses a four-sided spinner. A player suspects that the spinner is biased towards or against the colour blue, which should theoretically have a probability of $0.25$ of occurring on any spin.<br><br>To investigate this suspicion, the player spins the spinner $20$ times in independent trials.<br><br><strong>(a)</strong> State suitable hypotheses for a two-tailed test.<br><br><strong>(b)</strong> Using a $5\\%$ level of significance ($2.5\\%$ in each tail), find the critical region for this test.<br><br><strong>(c)</strong> Calculate the probability of a Type I error for this test.<br><br><strong>(d)</strong> The spinner lands on blue on $9$ of the $20$ spins. State the conclusion of the test in context.",
+  "steps": [
+    "<strong>(a) Hypotheses:</strong><br><br>Testing for any bias (two-tailed):\\begin{aligned} &H_0: p = 0.25 \\cr &H_1: p \\neq 0.25 \\end{aligned}",
+    "<strong>(b) Critical Region:</strong><br><br>Under $H_0$, $X \\sim \\text{B}(20, 0.25)$. The target significance level is $0.025$ in each tail.<br><br>Lower tail:\\begin{aligned} \\text{P}(X \\le 1) &= 0.0243 \\cr \\text{P}(X \\le 2) &= 0.0913 \\end{aligned}Since $0.0243 \\le 0.025$ and $0.0913 > 0.025$, the lower critical region is $X \\le 1$.<br><br>Upper tail:\\begin{aligned} \\text{P}(X \\ge 9) &= 1 - \\text{P}(X \\le 8) \\cr &= 1 - 0.9591 \\cr &= 0.0409 \\end{aligned}\\begin{aligned} \\text{P}(X \\ge 10) &= 1 - \\text{P}(X \\le 9) \\cr &= 1 - 0.9861 \\cr &= 0.0139 \\end{aligned}Since $0.0139 \\le 0.025$ and $0.0409 > 0.025$, the upper critical region is $X \\ge 10$.<br><br>The critical region is $X \\le 1$ or $X \\ge 10$.",
+    "<strong>(c) Probability of Type I Error:</strong><br><br>Summing the probabilities of both rejection tails:\\begin{aligned} \\text{P}(\\text{Type I Error}) &= \\text{P}(X \\le 1) + \\text{P}(X \\ge 10) \\cr &= 0.0243 + 0.0139 \\cr &= 0.0382 \\end{aligned}",
+    "<strong>(d) Test Conclusion:</strong><br><br>The observed value is $x = 9$.<br><br>Since $9$ does not lie in either tail ($1 < 9 < 10$), we fail to reject $H_0$.<br><br>There is insufficient evidence at the $5\\%$ level to suggest that the spinner is biased.",
+    "Final Answer: (a) $H_0: p = 0.25, H_1: p \\neq 0.25$, (b) $X \\le 1\\text{ or }X \\ge 10$, (c) $0.0382$, (d) Insufficient evidence of bias"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $H_0: p = 0.25, H_1: p \\neq 0.25$, (b) $X \\le 1\\text{ or }X \\ge 9$, (c) $0.0652$, (d) Sufficient evidence of bias",
+      "feedback": "Because $\\text{P}(X \\ge 9) = 0.0409$ exceeds the half-level target of $0.025$, the upper critical boundary must begin at $X = 10$."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.25, H_1: p > 0.25$, (b) $X \\le 1\\text{ or }X \\ge 10$, (c) $0.0382$, (d) Insufficient evidence of bias",
+      "feedback": "The player suspects bias in either direction (towards or against blue), which requires a two-tailed alternative hypothesis ($H_1: p \\neq 0.25$)."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.25, H_1: p \\neq 0.25$, (b) $X \\le 1\\text{ or }X \\ge 10$, (c) $0.0500$, (d) Insufficient evidence of bias",
+      "feedback": "The actual significance level is the sum of the two tail probabilities: $0.0243 + 0.0139 = 0.0382$, rather than the nominal $0.05$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Splitting Two-Tailed Significance",
+    "content": "For a two-tailed test at significance level $\\alpha$, evaluate each tail independently against $\\alpha / 2$. The total probability of a Type I error is then the sum of the actual probabilities in the two separate tails."
+  }
+},
+{
+  "id": "050209",
+  "group_id": "050206",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Statistical Hypothesis Testing",
+  "subtopic": [
+    "p-value Method",
+    "Decision Errors"
+  ],
+  "img": false,
+  "question": "A digital marketing team knows that their current promotional email has a baseline click-through rate of $12\\%$. They redesign the email layout and send it to a random sample of $30$ prospective subscribers to investigate whether the click-through rate has increased.<br><br>Let $X$ denote the number of subscribers in the sample who click the link.<br><br><strong>(a)</strong> State suitable hypotheses to test the marketing team's claim.<br><br><strong>(b)</strong> In the sample of $30$ subscribers, $7$ click the link.<br><strong>(i)</strong> Calculate the $p$-value corresponding to this result.<br><strong>(ii)</strong> Stating your conclusion in context, determine whether the team should adopt the new layout at the $5\\%$ significance level.<br><br><strong>(c)</strong> Explain what a Type I error would represent in this business context, and state whether a Type I error could have occurred based on your conclusion in part <strong>(b)(ii)</strong>.",
+  "steps": [
+    "<strong>(a) Hypotheses:</strong><br><br>Testing for an increase in the click-through rate:\\begin{aligned} &H_0: p = 0.12 \\cr &H_1: p > 0.12 \\end{aligned}",
+    "<strong>(b)(i) Calculation of $p$-value:</strong><br><br>Under $H_0$, $X \\sim \\text{B}(30, 0.12)$.<br><br>The $p$-value is the probability of observing a result at least as extreme as $x = 7$:\\begin{aligned} p\\text{-value} &= \\text{P}(X \\ge 7) \\cr &= 1 - \\text{P}(X \\le 6) \\end{aligned}From the cumulative binomial distribution for $n = 30$ and $p = 0.12$:\\begin{aligned} \\text{P}(X \\le 6) = 0.9416 \\end{aligned}Evaluating the tail probability:\\begin{aligned} p\\text{-value} &= 1 - 0.9416 \\cr &= 0.0584 \\end{aligned}",
+    "<strong>(b)(ii) Decision:</strong><br><br>Comparing the $p$-value to the $0.05$ significance level:\\begin{aligned} 0.0584 > 0.05 \\end{aligned}Since the $p$-value is greater than $0.05$, we fail to reject $H_0$.<br><br>There is insufficient evidence at the $5\\%$ level to show that the new layout improves the click-through rate. The team should not adopt the new layout.",
+    "<strong>(c) Type I Error Analysis:</strong><br><br>A Type I error would occur if the team concluded that the new layout increased click-through rate when it actually had no effect.<br><br>Because the team did not reject $H_0$, a Type I error <strong>could not have occurred</strong> (only a Type II error was possible).",
+    "Final Answer: (a) $H_0: p = 0.12, H_1: p > 0.12$, (b)(i) $0.0584$, (ii) Do not adopt new layout, (c) Adopting when unchanged; could not occur"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $H_0: p = 0.12, H_1: p > 0.12$, (b)(i) $0.0584$, (ii) Adopt new layout, (c) Adopting when unchanged; could have occurred",
+      "feedback": "Because the $p$-value ($0.0584$) is greater than $0.05$, we fail to reject $H_0$. Since $H_0$ was not rejected, a Type I error is impossible."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.12, H_1: p > 0.12$, (b)(i) $0.0218$, (ii) Adopt new layout, (c) Adopting when unchanged; could have occurred",
+      "feedback": "Remember to evaluate $\\text{P}(X \\ge 7) = 1 - \\text{P}(X \\le 6)$. Subtracting $\\text{P}(X \\le 7)$ excludes the observed outcome $X = 7$."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.12, H_1: p \\neq 0.12$, (b)(i) $0.0584$, (ii) Do not adopt new layout, (c) Keeping old when improved; could not occur",
+      "feedback": "The team specifically suspects an increase in click-through rate, which requires an upper one-tailed alternative hypothesis ($H_1: p > 0.12$)."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Which Error Could Have Occurred?",
+    "content": "A classic exam conceptual check asks: Which type of error could have been made? If you fail to reject $H_0$, you could only have made a Type II error (failing to detect a real change). A Type I error can only happen when $H_0$ is rejected."
+  }
+},
+{
+  "id": "050210",
+  "group_id": "050206",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Statistical Hypothesis Testing",
+  "subtopic": [
+    "Type I and Type II Errors",
+    "Statistical Power"
+  ],
+  "img": false,
+  "question": "A clinical diagnostic kit has a known sensitivity of $p = 0.70$ (it correctly detects an antibody in $70\\%$ of infected patients). A biotechnology laboratory develops an enhanced reagent and tests it on a random sample of $20$ verified patient blood samples to see if sensitivity has improved.<br><br>The test is conducted at the $5\\%$ significance level.<br><br><strong>(a)</strong> State suitable hypotheses for this test.<br><br><strong>(b)</strong> Find the critical region for the test.<br><br><strong>(c)</strong> Calculate the probability of a Type I error.<br><br><strong>(d)</strong> Given that the true sensitivity of the enhanced reagent has actually increased to $p = 0.90$, calculate the probability of a Type II error for this test. Give your answer correct to four decimal places.",
+  "steps": [
+    "<strong>(a) Hypotheses:</strong><br><br>Testing for an increase in sensitivity:\\begin{aligned} &H_0: p = 0.70 \\cr &H_1: p > 0.70 \\end{aligned}",
+    "<strong>(b) Critical Region:</strong><br><br>Under $H_0$, $X \\sim \\text{B}(20, 0.70)$.<br><br>Evaluating upper tail probabilities for a $5\\%$ test:\\begin{aligned} \\text{P}(X \\ge 17) &= 1 - \\text{P}(X \\le 16) \\cr &= 1 - 0.8929 \\cr &= 0.1071 \\end{aligned}\\begin{aligned} \\text{P}(X \\ge 18) &= 1 - \\text{P}(X \\le 17) \\cr &= 1 - 0.9645 \\cr &= 0.0355 \\end{aligned}Since $0.0355 \\le 0.05$ and $0.1071 > 0.05$, the critical region is $X \\ge 18$.",
+    "<strong>(c) Probability of Type I Error:</strong><br><br>The probability of rejecting $H_0$ when $H_0$ is true is:\\begin{aligned} \\text{P}(\\text{Type I Error}) &= \\text{P}(X \\ge 18 \\mid p = 0.70) \\cr &= 0.0355 \\end{aligned}",
+    "<strong>(d) Probability of Type II Error:</strong><br><br>A Type II error occurs when we fail to reject $H_0$ even though $H_1$ is true ($p = 0.90$).<br><br>The non-rejection region is $X \\le 17$. Under the true distribution $X \\sim \\text{B}(20, 0.90)$:\\begin{aligned} \\text{P}(\\text{Type II Error}) &= \\text{P}(X \\le 17 \\mid p = 0.90) \\end{aligned}Let $Y = 20 - X \\sim \\text{B}(20, 0.10)$ denote failures:\\begin{aligned} \\text{P}(X \\le 17) &= \\text{P}(Y \\ge 3) \\cr &= 1 - \\text{P}(Y \\le 2) \\cr &= 1 - 0.6769 \\cr &= 0.3231 \\end{aligned}",
+    "Final Answer: (a) $H_0: p = 0.70, H_1: p > 0.70$, (b) $X \\ge 18$, (c) $0.0355$, (d) $0.3231$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $H_0: p = 0.70, H_1: p > 0.70$, (b) $X \\ge 18$, (c) $0.0355$, (d) $0.6769$",
+      "feedback": "The value $0.6769$ is the statistical power (the probability of rejecting $H_0$ when $p = 0.90$). The Type II error probability is $1 - 0.6769 = 0.3231$."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.70, H_1: p > 0.70$, (b) $X \\ge 17$, (c) $0.1071$, (d) $0.1330$",
+      "feedback": "Because $\\text{P}(X \\ge 17) = 0.1071 > 0.05$, adopting $X \\ge 17$ exceeds the allowed significance level. The critical region must be $X \\ge 18$."
+    },
+    {
+      "ans": "(a) $H_0: p = 0.70, H_1: p \\neq 0.70$, (b) $X \\ge 18$, (c) $0.0355$, (d) $0.3231$",
+      "feedback": "The research specifically tests whether sensitivity has improved, requiring a one-tailed alternative hypothesis ($H_1: p > 0.70$)."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: The Balance Between Type I and Type II Errors",
+    "content": "Type I error is the probability of false alarm ($H_0$ rejected when true). Type II error is the probability of missing an effect ($H_0$ accepted when false). Notice how statistical power is strictly $1 - \\text{P}(\\text{Type II Error}) = 1 - 0.3231 = 0.6769$."
+  }
 }
 ];
