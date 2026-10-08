@@ -423,19 +423,19 @@ window.ALEVEL_QUESTIONS = [
     "<strong>(a) Description of Relationship:</strong><br><br>The scatter diagram shows a <strong>strong negative linear correlation</strong> (as the water-to-cement ratio increases, the compressive strength decreases).",
     "<strong>(b)(i) Interpretation of Gradient and Intercept:</strong><br><br><strong>Gradient ($-0.95$):</strong> For every $1\\%$ increase in the water-to-cement ratio, the $28\\text{-day}$ compressive strength is estimated to decrease by $0.95\\text{ MPa}$.<br><br><strong>Vertical Intercept ($86.0$):</strong> The theoretical compressive strength of concrete with a water-to-cement ratio of $0\\%$ is $86.0\\text{ MPa}$ (though this is physically unrealistic as concrete requires water to hydrate and set).",
     "<strong>(b)(ii) Estimation and Reliability:</strong><br><br>Substituting $x = 18$ into the regression equation:\\begin{aligned} y &= 86.0 - 0.95(18) \\cr &= 86.0 - 17.1 \\cr &= 68.9\\text{ MPa} \\end{aligned}<strong>Reliability:</strong> This estimate is <strong>unreliable</strong> because $x = 18\\%$ lies well outside the range of the experimental data ($36.5\\%$ to $67.5\\%$)—making this an <strong>extrapolation</strong>.",
-    "Final Answer: (a) Strong negative linear correlation, (b)(i) $-0.95\\text{ MPa/\\%}$ and $86.0\\text{ MPa}$ at $0\\%$, (ii) $68.9\\text{ MPa}$, unreliable extrapolation"
+    "Final Answer: (a) Strong negative linear correlation, (b)(i) $-0.95\\text{ MPa per }1\\%$ and $86.0\\text{ MPa}$ at $0\\%$, (ii) $68.9\\text{ MPa}$, unreliable extrapolation"
   ],
   "pi_options": [
     {
-      "ans": "(a) Strong negative linear correlation, (b)(i) $-0.95\\text{ MPa/\\%}$ and $86.0\\text{ MPa}$ at $0\\%$, (ii) $68.9\\text{ MPa}$, reliable interpolation",
+      "ans": "(a) Strong negative linear correlation, (b)(i) $-0.95\\text{ MPa per }1\\%$ and $86.0\\text{ MPa}$ at $0\\%$, (ii) $68.9\\text{ MPa}$, reliable interpolation",
       "feedback": "Because $x = 18\\%$ lies far below the lowest observed water-to-cement ratio of $36.5\\%$, this prediction is an extrapolation and is statistically unreliable."
     },
     {
-      "ans": "(a) Strong negative linear correlation, (b)(i) $+0.95\\text{ MPa/\\%}$ and $86.0\\text{ MPa}$ at $0\\%$, (ii) $103.1\\text{ MPa}$, unreliable extrapolation",
+      "ans": "(a) Strong negative linear correlation, (b)(i) $+0.95\\text{ MPa per }1\\%$ and $86.0\\text{ MPa}$ at $0\\%$, (ii) $103.1\\text{ MPa}$, unreliable extrapolation",
       "feedback": "The gradient is negative ($-0.95$), meaning compressive strength decreases as water content increases. Adding $0.95(18)$ inverts the physical relationship."
     },
     {
-      "ans": "(a) Weak positive linear correlation, (b)(i) $-0.95\\text{ MPa/\\%}$ and $86.0\\text{ MPa}$ at $0\\%$, (ii) $68.9\\text{ MPa}$, unreliable extrapolation",
+      "ans": "(a) Weak positive linear correlation, (b)(i) $-0.95\\text{ MPa per }1\\%$ and $86.0\\text{ MPa}$ at $0\\%$, (ii) $68.9\\text{ MPa}$, unreliable extrapolation",
       "feedback": "The points in the scatter diagram slope downwards from top-left to bottom-right, demonstrating negative correlation rather than positive."
     }
   ],
@@ -594,7 +594,7 @@ window.ALEVEL_QUESTIONS = [
     },
     {
       "ans": "(a) Distinct curved pattern in residuals, (b) $+0.2\\text{ m}$, acceptable prediction, (c) Quadratic model $y = ax^2 + bx + c$",
-      "feedback": "Evaluating $1.74(15) - 26.3 = 26.1 - 26.3 = -0.2\\text{ m}$. A negative stopping distance is impossible in reality."
+      "feedback": "Evaluating: \\begin{aligned}1.74(15) - 26.3 &= 26.1 - 26.3\\cr & = -0.2\\text{ m}\\end{aligned} A negative stopping distance is impossible in reality."
     },
     {
       "ans": "(a) Distinct curved pattern in residuals, (b) $-0.2\\text{ m}$, physically impossible distance, (c) Exponential model $y = a\\text{e}^{bx}$",
@@ -605,6 +605,210 @@ window.ALEVEL_QUESTIONS = [
     "type": "deeper",
     "title": "The Head Teacher's Eye: Residual Patterns Indicate Model Form",
     "content": "A good linear fit produces residuals that are randomly scattered above and below the line. If residuals show a U-shape (positive at ends, negative in the middle), it is definitive visual proof that the underlying relationship is non-linear."
+  }
+},
+{
+  "id": "050216",
+  "group_id": "050216",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Measures of Location, Spread, and Box Plots",
+  "subtopic": [
+    "Outlier Boundaries",
+    "Comparing Distributions"
+  ],
+  "img": "images/Statistics_pngs/050216.png",
+  "question": "Rowan investigates the hourly fees charged by private driving instructors in County A. He collects a random sample of hourly rates, in pounds (£), and computes the following summary statistics:$$\\begin{aligned} &\\text{Min.} &&: 22.0 \\cr &\\text{1st Qu.} &&: 28.0 \\cr &\\text{Median} &&: 31.0 \\cr &\\text{Mean} &&: 33.5 \\cr &\\text{3rd Qu.} &&: 36.0 \\cr &\\text{Max.} &&: 58.0 \\end{aligned}$$<strong>(a)</strong> Showing all calculations, comment on any outliers for the hourly fees in Rowan's sample.<br><br><strong>(b)</strong> Describe the skewness of the data and explain what it means in this context.<br><br>Cerys also investigates driving instructor fees. She collects an independent random sample of hourly fees in County B and produces the box plot shown in the diagram below.<br><br><strong>(c)</strong><br><strong>(i)</strong> What will happen to the mean of Cerys's sample if the outlier is removed?<br><strong>(ii)</strong> What will happen to the median of Cerys's sample if the outlier is removed?<br><br><strong>(d)</strong> Compare and contrast the distributions of driving instructor hourly fees for Cerys's sample and Rowan's sample.",
+  "steps": [
+    "<strong>(a) Outlier Calculations for Rowan's Sample:</strong><br><br>Finding the interquartile range:\\begin{aligned} \\text{IQR} &= Q_3 - Q_1 \\cr &= 36.0 - 28.0 \\cr &= 8.0 \\end{aligned}Calculating the outlier boundaries:\\begin{aligned} \\text{Lower} &= Q_1 - 1.5(\\text{IQR}) \\cr &= 28.0 - 1.5(8.0) \\cr &= 28.0 - 12.0 \\cr &= 16.0 \\end{aligned}\\begin{aligned} \\text{Upper} &= Q_3 + 1.5(\\text{IQR}) \\cr &= 36.0 + 1.5(8.0) \\cr &= 36.0 + 12.0 \\cr &= 48.0 \\end{aligned}Since the minimum fee ($£22.0$) is greater than $16.0$, there are no lower outliers.<br><br>Since the maximum fee ($£58.0$) is greater than $48.0$, there is at least one outlier at the upper end.",
+    "<strong>(b) Skewness of Rowan's Data:</strong><br><br>The mean ($£33.5$) is greater than the median ($£31.0$), and $Q_3 - Q_2 = 5.0$ is greater than $Q_2 - Q_1 = 3.0$.<br><br>This indicates <strong>positive skewness</strong>.<br><br>In context, this means that most driving instructors charge between $£28$ and $£36$, while a small number of instructors charge substantially higher fees.",
+    "<strong>(c) Effect of Removing Outlier in Cerys's Sample:</strong><br><br><strong>(i) Mean:</strong> Removing the extreme high outlier at $£55$ will cause the mean to <strong>decrease</strong>.<br><br><strong>(ii) Median:</strong> Because the median is resistant to extreme values, it will <strong>stay the same</strong> (or change very little).",
+    "<strong>(d) Comparing Distributions:</strong><br><br><strong>Location:</strong> The median fee in County A ($£31.0$) is higher than in County B ($£29.0$).<br><br><strong>Spread:</strong> The interquartile range in County B ($34 - 25 = 9.0$) is slightly higher than in County A ($8.0$), indicating slightly more varied fees in County B.<br><br><strong>Shape:</strong> Both distributions exhibit positive skewness with high outliers.",
+    "Final Answer: (a) Outlier at $£58.0$, (b) Positive skew; majority lower with few high fees, (c)(i) Decreases, (ii) Little to no change, (d) County A has higher median, County B has higher IQR"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Outlier at $£58.0$, (b) Positive skew; majority lower with few high fees, (c)(i) Increases, (ii) Decreases, (d) County A has higher median, County B has higher IQR",
+      "feedback": "Removing an extremely high outlier removes a large value from the total sum, which causes the mean to decrease, while the median remains resistant."
+    },
+    {
+      "ans": "(a) No outliers present, (b) Positive skew; majority lower with few high fees, (c)(i) Decreases, (ii) Little to no change, (d) County A has higher median, County B has higher IQR",
+      "feedback": "The upper boundary is $Q_3 + 1.5(\\text{IQR}) = 36.0 + 12.0 = 48.0$. Because the maximum value of $58.0$ exceeds $48.0$, it is an outlier."
+    },
+    {
+      "ans": "(a) Outlier at $£58.0$, (b) Negative skew; majority higher with few low fees, (c)(i) Decreases, (ii) Little to no change, (d) County A has higher median, County B has higher IQR",
+      "feedback": "Because the mean ($33.5$) is greater than the median ($31.0$), the tail extends towards higher values, which indicates positive skewness."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Comparing Summary Distributions",
+    "content": "When comparing two distributions from summary data, always provide context and state three specific elements: a measure of central tendency (median), a measure of dispersion (IQR), and the presence of skewness or outliers."
+  }
+},
+{
+  "id": "050217",
+  "group_id": "050216",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Measures of Location, Spread, and Box Plots",
+  "subtopic": [
+    "Parallel Box Plots",
+    "Consistency and Spread"
+  ],
+  "img": "images/Statistics_pngs/050217.png",
+  "question": "A logistics manager monitors the delivery times (in minutes) for urgent packages dispatched by two rival courier firms, Courier A and Courier B. Random samples of delivery times are displayed in the parallel box plots below.<br><br><strong>(a)</strong> Using the summary values from the box plot for Courier B, show that the delivery time of $58\\text{ minutes}$ is an outlier according to the standard $1.5 \\times \\text{IQR}$ rule.<br><br><strong>(b)</strong> A medical laboratory requires predictable, consistent delivery times for blood samples. Advise the laboratory on which courier to select, justifying your choice using appropriate statistical measures of location and spread.<br><br><strong>(c)</strong> Describe the skewness of the delivery times for Courier A, justifying your answer using the quartiles.",
+  "steps": [
+    "<strong>(a) Outlier Calculation for Courier B:</strong><br><br>From the box plot for Courier B, $Q_1 = 28$ and $Q_3 = 38$:\\begin{aligned} \\text{IQR} &= 38 - 28 \\cr &= 10 \\end{aligned}Calculating the upper outlier boundary:\\begin{aligned} \\text{Upper} &= Q_3 + 1.5(\\text{IQR}) \\cr &= 38 + 1.5(10) \\cr &= 38 + 15 \\cr &= 53 \\end{aligned}Since $58 > 53$, the delivery time of $58\\text{ minutes}$ is an <strong>outlier</strong>.",
+    "<strong>(b) Courier Recommendation:</strong><br><br>The laboratory should choose <strong>Courier A</strong>.<br><br>Although Courier A has a slightly higher median ($30\\text{ minutes}$ compared to $28\\text{ minutes}$ for Courier B), Courier A has a smaller interquartile range ($34 - 26 = 8\\text{ minutes}$ compared to $10\\text{ minutes}$ for Courier B) and no extreme outliers, indicating more consistent and predictable delivery times.",
+    "<strong>(c) Skewness of Courier A:</strong><br><br>Evaluating quartile distances:\\begin{aligned} Q_2 - Q_1 &= 30 - 26 \\cr &= 4 \\end{aligned}\\begin{aligned} Q_3 - Q_2 &= 34 - 30 \\cr &= 4 \\end{aligned}Since $Q_3 - Q_2 = Q_2 - Q_1 = 4$, the distribution of delivery times for Courier A is <strong>approximately symmetrical</strong>.",
+    "Final Answer: (a) $58 > 53$, (b) Courier A due to lower IQR and no outliers, (c) Symmetrical as $Q_3 - Q_2 = Q_2 - Q_1 = 4$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $58 > 53$, (b) Courier B due to higher median, (c) Symmetrical as $Q_3 - Q_2 = Q_2 - Q_1 = 4$",
+      "feedback": "For a laboratory requiring predictability, consistency is measured by spread (IQR). Courier A has a smaller IQR and no outliers, making it more reliable."
+    },
+    {
+      "ans": "(a) $58 \\le 53$, (b) Courier A due to lower IQR and no outliers, (c) Symmetrical as $Q_3 - Q_2 = Q_2 - Q_1 = 4$",
+      "feedback": "Calculating the upper limit gives $38 + 1.5(10) = 53$. Because $58$ exceeds $53$, it lies outside the boundary and is an outlier."
+    },
+    {
+      "ans": "(a) $58 > 53$, (b) Courier A due to lower IQR and no outliers, (c) Positive skew as upper whisker is longer",
+      "feedback": "Inside the box, the median ($30$) is situated exactly halfway between $Q_1 = 26$ and $Q_3 = 34$, indicating approximate symmetry."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Consistency Means Smaller Spread",
+    "content": "In examination questions, the words 'consistent', 'reliable', or 'predictable' always direct you to compare a measure of spread (the IQR or standard deviation). The distribution with the smaller spread is the more consistent one."
+  }
+},
+{
+  "id": "050218",
+  "group_id": "050216",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Measures of Location, Spread, and Box Plots",
+  "subtopic": [
+    "Two-Sided Outliers",
+    "Robust Statistics"
+  ],
+  "img": "images/Statistics_pngs/050218.png",
+  "question": "The box plot in the diagram displays the daily wait times (in minutes) for a random sample of patients attending an urgent care walk-in clinic.<br><br><strong>(a)</strong> Showing your working, calculate the lower and upper outlier boundaries for these wait times.<br><br><strong>(b)</strong> Confirm that both the recorded values of $4\\text{ minutes}$ and $68\\text{ minutes}$ are outliers.<br><br><strong>(c)</strong> A late audit record reveals another patient who waited $12\\text{ minutes}$. State, with a clear reason, whether this wait time would be classified as an outlier.<br><br><strong>(d)</strong> Explain why the median and interquartile range are more appropriate measures for summarising these data than the mean and standard deviation.",
+  "steps": [
+    "<strong>(a) Outlier Boundaries:</strong><br><br>From the box plot, $Q_1 = 24$ and $Q_3 = 36$:\\begin{aligned} \\text{IQR} &= 36 - 24 \\cr &= 12 \\end{aligned}Calculating the lower boundary:\\begin{aligned} \\text{Lower} &= Q_1 - 1.5(\\text{IQR}) \\cr &= 24 - 1.5(12) \\cr &= 24 - 18 \\cr &= 6 \\end{aligned}Calculating the upper boundary:\\begin{aligned} \\text{Upper} &= Q_3 + 1.5(\\text{IQR}) \\cr &= 36 + 1.5(12) \\cr &= 36 + 18 \\cr &= 54 \\end{aligned}",
+    "<strong>(b) Confirming Outliers:</strong><br><br>Comparing the recorded wait times against the boundaries:\\begin{aligned} 4 &< 6 \\cr 68 &> 54 \\end{aligned}Because $4\\text{ minutes}$ is below the lower boundary and $68\\text{ minutes}$ is above the upper boundary, both values are <strong>outliers</strong>.",
+    "<strong>(c) Classification of $12\\text{ Minutes}$:</strong><br><br>A wait time of $12\\text{ minutes}$ lies comfortably within the non-outlier interval ($6 \\le 12 \\le 54$). Therefore, it is <strong>not an outlier</strong>.",
+    "<strong>(d) Justification of Measures:</strong><br><br>The median and interquartile range are more appropriate because the dataset contains extreme outliers and exhibits skewness.<br><br>The mean and standard deviation are heavily influenced by extreme values, whereas the median and $\\text{IQR}$ are robust measures of location and spread.",
+    "Final Answer: (a) Lower $= 6$, Upper $= 54$, (b) Both outside boundaries, (c) Not an outlier as $6 \\le 12 \\le 54$, (d) Median and IQR are robust to outliers"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Lower $= 12$, Upper $= 48$, (b) Both outside boundaries, (c) Not an outlier as $6 \\le 12 \\le 54$, (d) Median and IQR are robust to outliers",
+      "feedback": "Remember to multiply the IQR by $1.5$: $1.5 \\times 12 = 18$. Subtracting $12$ directly without multiplying by $1.5$ gives incorrect boundaries."
+    },
+    {
+      "ans": "(a) Lower $= 6$, Upper $= 54$, (b) Both outside boundaries, (c) Outlier because it lies below the whisker, (d) Median and IQR are robust to outliers",
+      "feedback": "A value is an outlier only if it falls beyond the calculated boundaries ($< 6$ or $> 54$). Since $12 \\ge 6$, it is not an outlier."
+    },
+    {
+      "ans": "(a) Lower $= 6$, Upper $= 54$, (b) Both outside boundaries, (c) Not an outlier as $6 \\le 12 \\le 54$, (d) Mean and standard deviation are always preferred",
+      "feedback": "When data contain outliers or skewness, the mean and standard deviation are distorted, making the median and IQR far more representative."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Non-Symmetric Outlier Boundaries",
+    "content": "Notice that lower and upper boundaries are calculated relative to their respective quartiles ($Q_1 - 1.5\\text{IQR}$ and $Q_3 + 1.5\\text{IQR}$), not the median. Always calculate both boundaries independently."
+  }
+},
+{
+  "id": "050219",
+  "group_id": "050216",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Measures of Location, Spread, and Box Plots",
+  "subtopic": [
+    "Cumulative Frequency and Box Plots",
+    "Percentiles"
+  ],
+  "img": "images/Statistics_pngs/050219.png",
+  "question": "A national examining body displays the distribution of scores achieved by candidates in a qualifying examination using both a cumulative frequency curve and a directly aligned box plot, as shown in the diagram.<br><br><strong>(a)</strong> Using the box plot, state the median score and calculate the interquartile range.<br><br><strong>(b)</strong> Determine whether the examination scores exhibit positive skewness, negative skewness, or are approximately symmetrical. Justify your answer using quartile differences.<br><br><strong>(c)</strong> A teacher claims that at least $75\\%$ of candidates scored $38$ marks or more. Explain, with reference to the box plot, whether this claim is correct.<br><br><strong>(d)</strong> A certificate of distinction is awarded to the top $10\\%$ of candidates. Use the cumulative frequency curve to estimate the minimum score required to achieve a distinction.",
+  "steps": [
+    "<strong>(a) Median and Interquartile Range:</strong><br><br>From the box plot and aligned cumulative frequency curve:\\begin{aligned} \\text{Median} = 50 \\end{aligned}Finding the interquartile range with $Q_1 = 38$ and $Q_3 = 64$:\\begin{aligned} \\text{IQR} &= Q_3 - Q_1 \\cr &= 64 - 38 \\cr &= 26 \\end{aligned}",
+    "<strong>(b) Skewness:</strong><br><br>Comparing quartile differences:\\begin{aligned} Q_2 - Q_1 &= 50 - 38 \\cr &= 12 \\end{aligned}\\begin{aligned} Q_3 - Q_2 &= 64 - 50 \\cr &= 14 \\end{aligned}Since $Q_3 - Q_2 > Q_2 - Q_1$ ($14 > 12$), the distribution exhibits <strong>slight positive skewness</strong>.",
+    "<strong>(c) Evaluating the Teacher's Claim:</strong><br><br>The claim is <strong>correct</strong>.<br><br>The lower quartile $Q_1 = 38$ marks represents the $25\\text{th}$ percentile, meaning exactly $75\\%$ of candidates achieved a score greater than or equal to $38$.",
+    "<strong>(d) Distinction Score (Top $10\\%$):</strong><br><br>The top $10\\%$ corresponds to the $90\\text{th}$ percentile ($90\\%$ cumulative frequency).<br><br>Reading horizontally from $90\\%$ on the cumulative frequency curve and down to the horizontal axis gives an estimated minimum score of approximately $73$ marks.",
+    "Final Answer: (a) Median $= 50, \\text{IQR} = 26$, (b) Slight positive skew as $14 > 12$, (c) Correct as $Q_1 = 38$ leaves $75\\%$ above, (d) $73$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Median $= 50, \\text{IQR} = 26$, (b) Symmetrical as $14 \\approx 12$, (c) Correct as $Q_1 = 38$ leaves $75\\%$ above, (d) $73$",
+      "feedback": "Because $Q_3 - Q_2 = 14$ is strictly greater than $Q_2 - Q_1 = 12$, the upper half of the interquartile box is more stretched, indicating positive skewness."
+    },
+    {
+      "ans": "(a) Median $= 50, \\text{IQR} = 26$, (b) Slight positive skew as $14 > 12$, (c) Incorrect as only $25\\%$ scored above, (d) $73$",
+      "feedback": "$Q_1$ marks the bottom $25\\%$. Therefore, the remaining $75\\%$ of candidates scored at or above $Q_1 = 38$, confirming the claim."
+    },
+    {
+      "ans": "(a) Median $= 50, \\text{IQR} = 26$, (b) Slight positive skew as $14 > 12$, (c) Correct as $Q_1 = 38$ leaves $75\\%$ above, (d) $90$",
+      "feedback": "The top $10\\%$ requires finding the score at $90\\%$ cumulative frequency on the vertical axis, which reads as $73$ marks, not $90$ marks."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Dual Representation Alignment",
+    "content": "Notice how the key landmarks on a box plot align with the cumulative frequency curve: $Q_1$ is at $25\\%$, the median is at $50\\%$, and $Q_3$ is at $75\\%$. Projecting vertically between the two plots provides immediate cross-verification."
+  }
+},
+{
+  "id": "050220",
+  "group_id": "050216",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Measures of Location, Spread, and Box Plots",
+  "subtopic": [
+    "Linear Coding",
+    "Outlier Invariance"
+  ],
+  "img": "images/Statistics_pngs/050220.png",
+  "question": "The weekly overtime hours worked by a random sample of factory technicians are summarised in the box plot shown in the diagram.<br><br><strong>(a)</strong> Show that the value of $35\\text{ hours}$ is an outlier.<br><br><strong>(b)</strong> Factory management introduces a revised overtime pay formula. Each technician receives weekly overtime pay, $P$ (in pounds, £), calculated from their overtime hours, $x$, according to the linear formula:$$P = 25x + 50$$<strong>(i)</strong> Find the median weekly overtime pay.<br><strong>(ii)</strong> Calculate the interquartile range of weekly overtime pay.<br><br><strong>(c)</strong> State, with mathematical justification, whether the technician who worked $35\\text{ hours}$ of overtime will remain an outlier in the distribution of overtime pay $P$.",
+  "steps": [
+    "<strong>(a) Outlier Verification:</strong><br><br>From the box plot, $Q_1 = 4$ and $Q_3 = 16$:\\begin{aligned} \\text{IQR} &= 16 - 4 \\cr &= 12 \\end{aligned}Calculating the upper outlier boundary:\\begin{aligned} \\text{Upper} &= Q_3 + 1.5(\\text{IQR}) \\cr &= 16 + 1.5(12) \\cr &= 16 + 18 \\cr &= 34 \\end{aligned}Since $35 > 34$, the value of $35\\text{ hours}$ is an <strong>outlier</strong>.",
+    "<strong>(b)(i) Median Overtime Pay:</strong><br><br>The median of the original hours is $x = 10$. Applying the linear transformation $P = 25x + 50$:\\begin{aligned} \\text{Median}(P) &= 25(10) + 50 \\cr &= 250 + 50 \\cr &= £300 \\end{aligned}",
+    "<strong>(b)(ii) Interquartile Range of Pay:</strong><br><br>The constant addition ($+50$) shifts the position but does not affect spread. The interquartile range scales solely by $25$:\\begin{aligned} \\text{IQR}(P) &= 25 \\times \\text{IQR}(x) \\cr &= 25 \\times 12 \\cr &= £300 \\end{aligned}",
+    "<strong>(c) Outlier Status Under Linear Transformation:</strong><br><br><strong>Yes, it remains an outlier.</strong><br><br>Evaluating the pay for $35\\text{ hours}$:\\begin{aligned} P(35) &= 25(35) + 50 \\cr &= 875 + 50 \\cr &= £925 \\end{aligned}Evaluating the transformed upper boundary:\\begin{aligned} \\text{Upper}(P) &= 25(34) + 50 \\cr &= 850 + 50 \\cr &= £900 \\end{aligned}Since $£925 > £900$, the value remains an outlier.<br><br>In general, linear coding ($ax + b$ with $a > 0$) scales all data points and boundaries by the exact same factors, preserving outlier classification.",
+    "Final Answer: (a) $35 > 34$, (b)(i) $£300$, (ii) $£300$, (c) Yes, linear coding preserves outlier boundaries"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $35 > 34$, (b)(i) $£300$, (ii) $£350$, (c) Yes, linear coding preserves outlier boundaries",
+      "feedback": "Adding a constant shifts the distribution without affecting spread. The IQR is simply $25 \\times 12 = £300$. Do not add 50 to the IQR."
+    },
+    {
+      "ans": "(a) $35 \\le 34$, (b)(i) $£300$, (ii) $£300$, (c) Yes, linear coding preserves outlier boundaries",
+      "feedback": "Calculating the boundary gives $16 + 1.5(12) = 34$. Because $35$ exceeds $34$, it is an outlier."
+    },
+    {
+      "ans": "(a) $35 > 34$, (b)(i) $£300$, (ii) $£300$, (c) No, adding base pay eliminates outlier status",
+      "feedback": "Linear coding scales and shifts every observation and boundary identically, so relative outlier status is strictly preserved."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Invariance Under Linear Coding",
+    "content": "For any linear coding $y = ax + b$ with $a > 0$, the interquartile range scales by $a$, while the constant $b$ cancels out: $\\text{IQR}(y) = a\\text{IQR}(x)$. Because both the data points and the boundary thresholds shift and scale together, outlier status is invariant under linear transformations."
   }
 }
 ];
