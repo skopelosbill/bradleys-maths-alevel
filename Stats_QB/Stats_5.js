@@ -299,7 +299,7 @@ window.ALEVEL_QUESTIONS = [
   "steps": [
     "<strong>(a) Hypotheses:</strong><br><br>Testing for any bias (two-tailed):\\begin{aligned} &H_0: p = 0.25 \\cr &H_1: p \\neq 0.25 \\end{aligned}",
     "<strong>(b) Critical Region:</strong><br><br>Under $H_0$, $X \\sim \\text{B}(20, 0.25)$. The target significance level is $0.025$ in each tail.<br><br>Lower tail:\\begin{aligned} \\text{P}(X \\le 1) &= 0.0243 \\cr \\text{P}(X \\le 2) &= 0.0913 \\end{aligned}Since $0.0243 \\le 0.025$ and $0.0913 > 0.025$, the lower critical region is $X \\le 1$.<br><br>Upper tail:\\begin{aligned} \\text{P}(X \\ge 9) &= 1 - \\text{P}(X \\le 8) \\cr &= 1 - 0.9591 \\cr &= 0.0409 \\end{aligned}\\begin{aligned} \\text{P}(X \\ge 10) &= 1 - \\text{P}(X \\le 9) \\cr &= 1 - 0.9861 \\cr &= 0.0139 \\end{aligned}Since $0.0139 \\le 0.025$ and $0.0409 > 0.025$, the upper critical region is $X \\ge 10$.<br><br>The critical region is $X \\le 1$ or $X \\ge 10$.",
-    "<strong>(c) Probability of Type I Error:</strong><br><br>Summing the probabilities of both rejection tails:\\begin{aligned} \\text{P}(\\text{Type I Error}) &= \\text{P}(X \\le 1) + \\text{P}(X \\ge 10) \\cr &= 0.0243 + 0.0139 \\cr &= 0.0382 \\end{aligned}",
+    "<strong>(c) Probability of Type I Error:</strong><br><br>Summing the probabilities of both rejection tails:\\begin{aligned} &\\text{P}(\\text{Type I Error}) \\cr & \\qquad= \\text{P}(X \\le 1) + \\text{P}(X \\ge 10) \\cr &\\qquad= 0.0243 + 0.0139 \\cr & \\qquad= 0.0382 \\end{aligned}",
     "<strong>(d) Test Conclusion:</strong><br><br>The observed value is $x = 9$.<br><br>Since $9$ does not lie in either tail ($1 < 9 < 10$), we fail to reject $H_0$.<br><br>There is insufficient evidence at the $5\\%$ level to suggest that the spinner is biased.",
     "Final Answer: (a) $H_0: p = 0.25, H_1: p \\neq 0.25$, (b) $X \\le 1\\text{ or }X \\ge 10$, (c) $0.0382$, (d) Insufficient evidence of bias"
   ],
@@ -381,8 +381,8 @@ window.ALEVEL_QUESTIONS = [
   "steps": [
     "<strong>(a) Hypotheses:</strong><br><br>Testing for an increase in sensitivity:\\begin{aligned} &H_0: p = 0.70 \\cr &H_1: p > 0.70 \\end{aligned}",
     "<strong>(b) Critical Region:</strong><br><br>Under $H_0$, $X \\sim \\text{B}(20, 0.70)$.<br><br>Evaluating upper tail probabilities for a $5\\%$ test:\\begin{aligned} \\text{P}(X \\ge 17) &= 1 - \\text{P}(X \\le 16) \\cr &= 1 - 0.8929 \\cr &= 0.1071 \\end{aligned}\\begin{aligned} \\text{P}(X \\ge 18) &= 1 - \\text{P}(X \\le 17) \\cr &= 1 - 0.9645 \\cr &= 0.0355 \\end{aligned}Since $0.0355 \\le 0.05$ and $0.1071 > 0.05$, the critical region is $X \\ge 18$.",
-    "<strong>(c) Probability of Type I Error:</strong><br><br>The probability of rejecting $H_0$ when $H_0$ is true is:\\begin{aligned} \\text{P}(\\text{Type I Error}) &= \\text{P}(X \\ge 18 \\mid p = 0.70) \\cr &= 0.0355 \\end{aligned}",
-    "<strong>(d) Probability of Type II Error:</strong><br><br>A Type II error occurs when we fail to reject $H_0$ even though $H_1$ is true ($p = 0.90$).<br><br>The non-rejection region is $X \\le 17$. Under the true distribution $X \\sim \\text{B}(20, 0.90)$:\\begin{aligned} \\text{P}(\\text{Type II Error}) &= \\text{P}(X \\le 17 \\mid p = 0.90) \\end{aligned}Let $Y = 20 - X \\sim \\text{B}(20, 0.10)$ denote failures:\\begin{aligned} \\text{P}(X \\le 17) &= \\text{P}(Y \\ge 3) \\cr &= 1 - \\text{P}(Y \\le 2) \\cr &= 1 - 0.6769 \\cr &= 0.3231 \\end{aligned}",
+    "<strong>(c) Probability of Type I Error:</strong><br><br>The probability of rejecting $H_0$ when $H_0$ is true is:\\begin{aligned} &\\text{P}(\\text{Type I Error})\\cr & \\qquad= \\text{P}(X \\ge 18 \\mid p = 0.70) \\cr & \\qquad= 0.0355 \\end{aligned}",
+    "<strong>(d) Probability of Type II Error:</strong><br><br>A Type II error occurs when we fail to reject $H_0$ even though $H_1$ is true ($p = 0.90$).<br><br>The non-rejection region is $X \\le 17$. Under the true distribution $X \\sim \\text{B}(20, 0.90)$:\\begin{aligned} &\\text{P}(\\text{Type II Error})\\cr & \\qquad= \\text{P}(X \\le 17 \\mid p = 0.90) \\end{aligned}Let $Y = 20 - X \\sim \\text{B}(20, 0.10)$ denote failures:\\begin{aligned} \\text{P}(X \\le 17) &= \\text{P}(Y \\ge 3) \\cr &= 1 - \\text{P}(Y \\le 2) \\cr &= 1 - 0.6769 \\cr &= 0.3231 \\end{aligned}",
     "Final Answer: (a) $H_0: p = 0.70, H_1: p > 0.70$, (b) $X \\ge 18$, (c) $0.0355$, (d) $0.3231$"
   ],
   "pi_options": [
@@ -402,7 +402,209 @@ window.ALEVEL_QUESTIONS = [
   "bradley_insight": {
     "type": "deeper",
     "title": "The Head Teacher's Eye: The Balance Between Type I and Type II Errors",
-    "content": "Type I error is the probability of false alarm ($H_0$ rejected when true). Type II error is the probability of missing an effect ($H_0$ accepted when false). Notice how statistical power is strictly $1 - \\text{P}(\\text{Type II Error}) = 1 - 0.3231 = 0.6769$."
+    "content": "Type I error is the probability of false alarm ($H_0$ rejected when true). Type II error is the probability of missing an effect ($H_0$ accepted when false). Notice how statistical power is strictly $$1 - \\text{P}(\\text{Type II Error})$$ $$= 1 - 0.3231$$ $$= 0.6769$$."
+  }
+},
+{
+  "id": "050211",
+  "group_id": "050211",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Linear Regression and Correlation",
+  "subtopic": [
+    "Scatter Diagrams",
+    "Extrapolation and Reliability"
+  ],
+  "img": "images/Statistics_pngs/050211.png",
+  "question": "A civil engineer conducts quality-control tests on concrete mixes. She investigates how the water-to-cement ratio, $x$ (measured as a percentage, $\\%$), affects the $28\\text{-day}$ compressive strength of the concrete, $y$ (measured in megapascals, $\\text{MPa}$).<br><br>The results of her test batches are shown in the scatter diagram below.<br><br><strong>(a)</strong> Describe the relationship between compressive strength and water-to-cement ratio shown in the diagram.<br><br><strong>(b)</strong> The equation of the regression line of $y$ on $x$ for these data is$$y = 86.0 - 0.95x$$<strong>(i)</strong> Interpret the gradient and the vertical intercept of the regression line in this context.<br><strong>(ii)</strong> Estimate the compressive strength of concrete when the water-to-cement ratio is $18\\%$. Comment on the reliability of this estimate.",
+  "steps": [
+    "<strong>(a) Description of Relationship:</strong><br><br>The scatter diagram shows a <strong>strong negative linear correlation</strong> (as the water-to-cement ratio increases, the compressive strength decreases).",
+    "<strong>(b)(i) Interpretation of Gradient and Intercept:</strong><br><br><strong>Gradient ($-0.95$):</strong> For every $1\\%$ increase in the water-to-cement ratio, the $28\\text{-day}$ compressive strength is estimated to decrease by $0.95\\text{ MPa}$.<br><br><strong>Vertical Intercept ($86.0$):</strong> The theoretical compressive strength of concrete with a water-to-cement ratio of $0\\%$ is $86.0\\text{ MPa}$ (though this is physically unrealistic as concrete requires water to hydrate and set).",
+    "<strong>(b)(ii) Estimation and Reliability:</strong><br><br>Substituting $x = 18$ into the regression equation:\\begin{aligned} y &= 86.0 - 0.95(18) \\cr &= 86.0 - 17.1 \\cr &= 68.9\\text{ MPa} \\end{aligned}<strong>Reliability:</strong> This estimate is <strong>unreliable</strong> because $x = 18\\%$ lies well outside the range of the experimental data ($36.5\\%$ to $67.5\\%$)—making this an <strong>extrapolation</strong>.",
+    "Final Answer: (a) Strong negative linear correlation, (b)(i) $-0.95\\text{ MPa/\\%}$ and $86.0\\text{ MPa}$ at $0\\%$, (ii) $68.9\\text{ MPa}$, unreliable extrapolation"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Strong negative linear correlation, (b)(i) $-0.95\\text{ MPa/\\%}$ and $86.0\\text{ MPa}$ at $0\\%$, (ii) $68.9\\text{ MPa}$, reliable interpolation",
+      "feedback": "Because $x = 18\\%$ lies far below the lowest observed water-to-cement ratio of $36.5\\%$, this prediction is an extrapolation and is statistically unreliable."
+    },
+    {
+      "ans": "(a) Strong negative linear correlation, (b)(i) $+0.95\\text{ MPa/\\%}$ and $86.0\\text{ MPa}$ at $0\\%$, (ii) $103.1\\text{ MPa}$, unreliable extrapolation",
+      "feedback": "The gradient is negative ($-0.95$), meaning compressive strength decreases as water content increases. Adding $0.95(18)$ inverts the physical relationship."
+    },
+    {
+      "ans": "(a) Weak positive linear correlation, (b)(i) $-0.95\\text{ MPa/\\%}$ and $86.0\\text{ MPa}$ at $0\\%$, (ii) $68.9\\text{ MPa}$, unreliable extrapolation",
+      "feedback": "The points in the scatter diagram slope downwards from top-left to bottom-right, demonstrating negative correlation rather than positive."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Interpreting Contextual Gradients",
+    "content": "When asked to interpret the gradient of a regression line $y = a + bx$, always state three components: the direction of change (increase or decrease), the numerical amount ($b$), and the specific contextual units for both variables ($y\\text{ per unit }x$)."
+  }
+},
+{
+  "id": "050212",
+  "group_id": "050211",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Linear Regression and Correlation",
+  "subtopic": [
+    "Interpreting Coefficients",
+    "Interpolation"
+  ],
+  "img": "images/Statistics_pngs/050212.png",
+  "question": "An automotive engineer evaluates a diesel engine on a dynamometer. He measures the engine torque output, $x$ (in $\\text{N}\\cdot\\text{m}$), and the corresponding fuel flow rate, $y$ (in litres per hour, $\\text{L/h}$).<br><br>The scatter diagram shows his test results along with the fitted line of best fit.<br><br>The equation of the regression line of $y$ on $x$ is$$y = 2.5 + 0.07x$$<strong>(a)</strong> State the type of correlation shown in the diagram.<br><br><strong>(b)</strong> Give an interpretation in context for:<br><strong>(i)</strong> the gradient value of $0.07$,<br><strong>(ii)</strong> the intercept value of $2.5$.<br><br><strong>(c)</strong> Estimate the fuel flow rate when the engine torque is $210\\,\\text{N}\\cdot\\text{m}$. Comment on the reliability of this estimate.",
+  "steps": [
+    "<strong>(a) Correlation:</strong><br><br>The scatter diagram shows a <strong>strong positive linear correlation</strong> (as engine torque increases, fuel flow rate increases).",
+    "<strong>(b)(i) Gradient ($0.07$):</strong><br><br>For each $1\\text{ N}\\cdot\\text{m}$ increase in engine torque output, the fuel flow rate is estimated to increase by $0.07\\text{ L/h}$.",
+    "<strong>(b)(ii) Intercept ($2.5$):</strong><br><br>When the engine produces zero torque (for example, while idling), the baseline fuel flow rate is estimated to be $2.5\\text{ L/h}$.",
+    "<strong>(c) Estimation and Reliability:</strong><br><br>Substituting $x = 210$ into the regression equation:\\begin{aligned} y &= 2.5 + 0.07(210) \\cr &= 2.5 + 14.7 \\cr &= 17.2\\text{ L/h} \\end{aligned}<strong>Reliability:</strong> This estimate is <strong>reliable</strong> because $x = 210\\,\\text{N}\\cdot\\text{m}$ lies comfortably within the range of the observed test data ($110$ to $290\\,\\text{N}\\cdot\\text{m}$)—making this an <strong>interpolation</strong>.",
+    "Final Answer: (a) Positive linear correlation, (b)(i) $0.07\\text{ L/h per N}\\cdot\\text{m}$, (ii) Idle rate $2.5\\text{ L/h}$, (c) $17.2\\text{ L/h}$, reliable interpolation"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Positive linear correlation, (b)(i) $0.07\\text{ L/h per N}\\cdot\\text{m}$, (ii) Idle rate $2.5\\text{ L/h}$, (c) $17.2\\text{ L/h}$, unreliable extrapolation",
+      "feedback": "Because $x = 210\\,\\text{N}\\cdot\\text{m}$ lies within the range of measured torque values ($110$ to $290\\,\\text{N}\\cdot\\text{m}$), this is interpolation, making the estimate reliable."
+    },
+    {
+      "ans": "(a) Positive linear correlation, (b)(i) $2.5\\text{ L/h per N}\\cdot\\text{m}$, (ii) Idle rate $0.07\\text{ L/h}$, (c) $17.2\\text{ L/h}$, reliable interpolation",
+      "feedback": "The gradient is $0.07$ (the coefficient of $x$), while $2.5$ is the constant vertical intercept. Do not confuse the gradient with the intercept."
+    },
+    {
+      "ans": "(a) Negative linear correlation, (b)(i) $0.07\\text{ L/h per N}\\cdot\\text{m}$, (ii) Idle rate $2.5\\text{ L/h}$, (c) $17.2\\text{ L/h}$, reliable interpolation",
+      "feedback": "The slope of the line is positive and points rise from left to right, indicating positive correlation."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Interpolation vs Extrapolation",
+    "content": "Estimating within the domain of the explanatory variable is interpolation and is generally reliable. Estimating outside that domain is extrapolation and carries substantial risk because the linear trend may not continue."
+  }
+},
+{
+  "id": "050213",
+  "group_id": "050211",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Linear Regression and Correlation",
+  "subtopic": [
+    "Influential Outliers",
+    "Extrapolation"
+  ],
+  "img": "images/Statistics_pngs/050213.png",
+  "question": "A battery technology company monitors the degradation of lithium-ion cells. For a sample of cells, engineers record the number of complete discharge cycles, $x$ (measured in hundreds of cycles), and the internal electrical resistance, $y$ (in milliohms, $\\text{m}\\Omega$).<br><br>The results are plotted in the scatter diagram below. One anomalous cell is identified and labelled as Point $Q$ at $(8.5, 18)$.<br><br><strong>(a)</strong> Describe the correlation shown by the main cluster of cells (excluding Point $Q$).<br><br><strong>(b)</strong> Point $Q$ was found to have a faulty internal sensor that under-reported resistance. State the effect that removing Point $Q$ from the dataset would have on:<br><strong>(i)</strong> the product moment correlation coefficient $r$,<br><strong>(ii)</strong> the gradient of the regression line of $y$ on $x$.<br><br><strong>(c)</strong> The equation of the regression line calculated using all data points is$$y = 11.2 + 3.9x$$Explain why it is not appropriate to use this equation to predict the internal resistance of a cell after $1500$ discharge cycles ($x = 15$).",
+  "steps": [
+    "<strong>(a) Correlation of Main Cluster:</strong><br><br>The main cluster exhibits a <strong>strong positive linear correlation</strong> (as discharge cycles increase, internal resistance increases).",
+    "<strong>(b)(i) Effect on Correlation Coefficient $r$:</strong><br><br>Point $Q$ at $(8.5, 18)$ lies well below the positive linear trend established by the other cells.<br><br>Removing Point $Q$ reduces residual scatter around the line, so $r$ will <strong>increase</strong> (become closer to $+1$).",
+    "<strong>(b)(ii) Effect on Regression Gradient:</strong><br><br>Point $Q$ is located at a high $x$-value ($8.5$) and a low $y$-value ($18$), exerting downward leverage on the right-hand end of the regression line.<br><br>Removing Point $Q$ will allow the line to tilt steeper, meaning the gradient will <strong>increase</strong>.",
+    "<strong>(c) Inappropriateness of Prediction at $x = 15$:</strong><br><br>The observed data only extend up to approximately $x = 9.2$ ($920$ cycles).<br><br>Predicting at $x = 15$ ($1500$ cycles) is an <strong>extrapolation</strong> beyond the experimental domain. The linear degradation rate may alter or the battery may fail entirely, making the estimate unreliable.",
+    "Final Answer: (a) Strong positive linear correlation, (b)(i) Increases, (ii) Increases, (c) Unreliable due to extrapolation"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Strong positive linear correlation, (b)(i) Decreases, (ii) Increases, (c) Unreliable due to extrapolation",
+      "feedback": "Because Point $Q$ contradicts the strong positive linear trend, removing it reduces unexplained variation, which increases $r$ towards $+1$."
+    },
+    {
+      "ans": "(a) Strong positive linear correlation, (b)(i) Increases, (ii) Decreases, (c) Unreliable due to extrapolation",
+      "feedback": "Point $Q$ pulls the right-hand end of the line downwards. Removing it allows the line to rotate upwards, increasing the gradient."
+    },
+    {
+      "ans": "(a) Weak negative linear correlation, (b)(i) Increases, (ii) Increases, (c) Reliable because regression equation is known",
+      "feedback": "The main cluster clearly rises from left to right, showing positive correlation. Predictions beyond $x = 9.2$ are extrapolations regardless of the equation."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: High-Leverage Outliers",
+    "content": "An outlier near the extremes of the horizontal axis acts like a weight on a seesaw, exerting high leverage on both the slope and the correlation coefficient. Removing an outlier below the line at high $x$ pulls the gradient up and tightens the fit."
+  }
+},
+{
+  "id": "050214",
+  "group_id": "050211",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Linear Regression and Correlation",
+  "subtopic": [
+    "Least Squares Principles",
+    "Residuals"
+  ],
+  "img": "images/Statistics_pngs/050214.png",
+  "question": "An education researcher investigates the relationship between weekly study time, $x$ (in hours), and performance in a modular test, $y$ (scored as a percentage, $\\%$).<br><br>The scatter diagram shows the data for $10$ students. The line of best fit of $y$ on $x$ is plotted, with vertical dashed lines indicating the residual deviations for three selected students.<br><br>The equation of the regression line of $y$ on $x$ is$$y = 26 + 2x$$<strong>(a)</strong> Explain why the method of least squares minimizes the sum of squares of the <em>vertical</em> deviations rather than the <em>horizontal</em> deviations.<br><br><strong>(b)</strong> A student achieves a score of $80\\%$ in the test. Explain why it is statistically inappropriate to rearrange the equation $y = 26 + 2x$ to estimate this student's weekly study time.<br><br><strong>(c)</strong> Calculate the residual for the student who studied for $12\\text{ hours}$ and scored $58\\%$.",
+  "steps": [
+    "<strong>(a) Vertical Deviations in Least Squares:</strong><br><br>In the regression model of $y$ on $x$, $y$ is the <strong>dependent (response) variable</strong> and $x$ is the <strong>independent (explanatory) variable</strong>.<br><br>The model assumes that values of $x$ are known or measured with minimal error, while random variation occurs in $y$. Therefore, the line is chosen to minimize the sum of squared vertical errors in the predicted response $y$.",
+    "<strong>(b) Inappropriateness of Rearranging the Equation:</strong><br><br>The regression line of $y$ on $x$ is calculated specifically to minimize vertical errors for predicting $y$ from $x$.<br><br>Rearranging this equation does not minimize horizontal errors. To predict $x$ given $y$, a separate regression line of <strong>$x$ on $y$</strong> must be calculated.",
+    "<strong>(c) Calculating the Residual:</strong><br><br>For $x = 12\\text{ hours}$, the predicted test score $\\hat{y}$ is:\\begin{aligned} \\hat{y} &= 26 + 2(12) \\cr &= 26 + 24 \\cr &= 50 \\end{aligned}The residual is the actual value minus the predicted value:\\begin{aligned} \\text{Residual} &= y - \\hat{y} \\cr &= 58 - 50 \\cr &= +8 \\end{aligned}",
+    "Final Answer: (a) $y$ is response variable containing error, (b) Requires regression of $x$ on $y$, (c) $+8$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) $x$ is response variable containing error, (b) Requires regression of $x$ on $y$, (c) $+8$",
+      "feedback": "The response variable plotted on the vertical axis is $y$ (the test score), not $x$. Least squares minimizes vertical errors in the response variable."
+    },
+    {
+      "ans": "(a) $y$ is response variable containing error, (b) Valid to rearrange the equation, (c) $+8$",
+      "feedback": "Rearranging the regression line of $y$ on $x$ to predict $x$ produces biased estimates because it minimizes vertical deviations rather than horizontal deviations."
+    },
+    {
+      "ans": "(a) $y$ is response variable containing error, (b) Requires regression of $x$ on $y$, (c) $-8$",
+      "feedback": "Residual is defined as $\\text{Actual } y - \\text{Predicted } \\hat{y}$. Because $58 - 50 = +8$, the point lies above the line, giving a positive residual."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Residual Sign Convention",
+    "content": "Always remember the order: $\\text{Residual} = y - \\hat{y}$ (Actual minus Predicted). A point lying above the regression line has a positive residual, while a point below the line has a negative residual."
+  }
+},
+{
+  "id": "050215",
+  "group_id": "050211",
+  "branch": "Statistics",
+  "board": "WJEC",
+  "level": "AS",
+  "major_area": "Statistics",
+  "topic": "Linear Regression and Correlation",
+  "subtopic": [
+    "Evaluating Linear Models",
+    "Non-Linear Relationships"
+  ],
+  "img": "images/Statistics_pngs/050215.png",
+  "question": "A transport safety agency records the stopping distance, $y$ (in metres), of a test vehicle travelling at various speeds, $x$ (in miles per hour, $\\text{mph}$).<br><br>A technician fits a linear regression line to the data:$$y = 1.74x - 26.3$$The data points and the fitted regression line are displayed in the scatter diagram below.<br><br><strong>(a)</strong> With reference to the distribution of points relative to the line in the diagram, explain why a linear regression model is not suitable for these data.<br><br><strong>(b)</strong> Using the technician's equation, estimate the stopping distance of a vehicle travelling at $15\\text{ mph}$. Explain what this result demonstrates regarding the validity of the linear model.<br><br><strong>(c)</strong> Based on physical principles (such as kinetic energy), suggest a more appropriate mathematical relationship between stopping distance $y$ and vehicle speed $x$.",
+  "steps": [
+    "<strong>(a) Unsuitability of Linear Model:</strong><br><br>The points form a distinct curved (non-linear) pattern rather than a straight line.<br><br>The data points lie above the line at both ends and below the line in the middle, indicating a systematic pattern in the residuals that violates the assumption of linearity.",
+    "<strong>(b) Estimate at $15\\text{ mph}$ and Model Validity:</strong><br><br>Substituting $x = 15$ into the linear equation:\\begin{aligned} y &= 1.74(15) - 26.3 \\cr &= 26.1 - 26.3 \\cr &= -0.2\\text{ m} \\end{aligned}A negative stopping distance is physically impossible, which demonstrates that the linear model breaks down and is invalid at low speeds.",
+    "<strong>(c) Appropriate Physical Model:</strong><br><br>Because kinetic energy is proportional to the square of velocity, the work required to stop a vehicle scales with $v^2$.<br><br>A <strong>quadratic model</strong> of the form $y = ax^2 + bx + c$ (or $y = kx^2$) would be much more appropriate.",
+    "Final Answer: (a) Distinct curved pattern in residuals, (b) $-0.2\\text{ m}$, physically impossible distance, (c) Quadratic model $y = ax^2 + bx + c$"
+  ],
+  "pi_options": [
+    {
+      "ans": "(a) Points are randomly scattered around line, (b) $-0.2\\text{ m}$, physically impossible distance, (c) Quadratic model $y = ax^2 + bx + c$",
+      "feedback": "The points are not randomly scattered; they follow a clear upward curve, which demonstrates that the linear assumption is incorrect."
+    },
+    {
+      "ans": "(a) Distinct curved pattern in residuals, (b) $+0.2\\text{ m}$, acceptable prediction, (c) Quadratic model $y = ax^2 + bx + c$",
+      "feedback": "Evaluating $1.74(15) - 26.3 = 26.1 - 26.3 = -0.2\\text{ m}$. A negative stopping distance is impossible in reality."
+    },
+    {
+      "ans": "(a) Distinct curved pattern in residuals, (b) $-0.2\\text{ m}$, physically impossible distance, (c) Exponential model $y = a\\text{e}^{bx}$",
+      "feedback": "Stopping distance physically relates to kinetic energy $\\frac{1}{2}mv^2$, which indicates a quadratic relationship with velocity squared rather than exponential growth."
+    }
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Residual Patterns Indicate Model Form",
+    "content": "A good linear fit produces residuals that are randomly scattered above and below the line. If residuals show a U-shape (positive at ends, negative in the middle), it is definitive visual proof that the underlying relationship is non-linear."
   }
 }
 ];
