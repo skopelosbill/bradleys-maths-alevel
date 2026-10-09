@@ -1308,7 +1308,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "caution",
         "title": "The Head Teacher's Eye: Uniform Distributions Have Memory",
-        "content": "Unlike the exponential distribution, the continuous uniform distribution is not memoryless. When given $T > 18$, the remaining time is uniformly distributed over the shortened interval $[18, 30]$ of width $12$. Hence $P(T > 24 \\mid T > 18) = \\dfrac{30 - 24}{30 - 18} = \\dfrac{6}{12} = 0.5$."
+        "content": "Unlike the exponential distribution, the continuous uniform distribution is not memoryless. When given $T > 18$, the remaining time is uniformly distributed over the shortened interval $[18, 30]$ of width $12$. Hence \\begin{aligned}P(T > 24 \\mid T > 18) &= \\dfrac{30 - 24}{30 - 18}\\cr & = \\dfrac{6}{12} \\cr & = 0.5\\end{aligned}"
     }
 },
 {
@@ -1376,7 +1376,7 @@ window.ALEVEL_QUESTIONS = [
         "<strong>(b)(ii) Probability a call lasts between $2$ and $5$ minutes:</strong><br><br>Evaluating the interval probability:\\begin{aligned} P(2 < T < 5) &= \\dfrac{5 - 2}{8} \\cr &= \\dfrac{3}{8} \\cr &= 0.375 \\end{aligned}",
         "<strong>(c)(i) Distribution of $Y$:</strong><br><br>Since there are $n = 10$ independent trials and the probability of success on each trial is $p = 0.25$:\\begin{aligned} Y \\sim B(10, 0.25) \\end{aligned}",
         "<strong>(c)(ii) Probability of exactly $3$ calls:</strong><br><br>Applying the binomial probability formula:\\begin{aligned} P(Y = 3) &= \\binom{10}{3} (0.25)^3 (0.75)^7 \\cr &= 120 \\times 0.015625 \\cr &\\qquad \\times 0.133484 \\cr &\\approx 0.2503 \\end{aligned}",
-        "<strong>(c)(iii) Probability of at least $2$ calls:</strong><br><br>Using the complement rule:\\begin{aligned} P(Y \\ge 2) &= 1 - [P(Y = 0) + P(Y = 1)] \\end{aligned}Calculating the individual probabilities:\\begin{aligned} P(Y = 0) &= (0.75)^{10} \\cr &\\approx 0.05631 \\end{aligned}\\begin{aligned} P(Y = 1) &= 10(0.25)(0.75)^9 \\cr &\\approx 0.18771 \\end{aligned}Summing and subtracting from $1$:\\begin{aligned} P(Y \\ge 2) &= 1 - [0.05631 + 0.18771] \\cr &= 1 - 0.24402 \\cr &= 0.7560 \\end{aligned}",
+        "<strong>(c)(iii) Probability of at least $2$ calls:</strong><br><br>Using the complement rule:\\begin{aligned} &P(Y \\ge 2)\\cr &= 1 - [P(Y = 0) + P(Y = 1)] \\end{aligned}Calculating the individual probabilities:\\begin{aligned} P(Y = 0) &= (0.75)^{10} \\cr &\\approx 0.05631 \\end{aligned}\\begin{aligned} P(Y = 1) &= 10(0.25)(0.75)^9 \\cr &\\approx 0.18771 \\end{aligned}Summing and subtracting from $1$:\\begin{aligned} P(Y \\ge 2) &= 1 - [0.05631 + 0.18771] \\cr &= 1 - 0.24402 \\cr &= 0.7560 \\end{aligned}",
         "Final Answer: (a) $f(t) = 0.125$, (b)(i) $0.25$, (ii) $0.375$, (c)(i) $Y \\sim B(10, 0.25)$, (ii) $0.2503$, (iii) $0.7560$"
     ],
     "pi_options": [
@@ -1439,6 +1439,218 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Truncation Preserves Uniformity",
         "content": "A crucial property of the continuous uniform distribution is that conditioning on a sub-interval simply creates a new continuous uniform distribution over that sub-interval. Truncating $W \\sim U(2, 10)$ to $4 < W \\le 8$ directly yields $W \\sim U(4, 8)$."
+    }
+},
+{
+    "id": "050236",
+    "group_id": "050236",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Statistical Modelling",
+        "Expected Frequencies",
+        "Model Evaluation"
+    ],
+    "img": false,
+    "question": "A transport planner investigates the daily commuting times of office workers in a metropolitan district. She records the daily commuting time, $t$ minutes, for $100$ randomly selected workers:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr style='border-bottom:1px solid #ccc;'><th style='padding:6px; text-align:left;'>Commuting time, $t$ (min)</th><th style='padding:6px;'>Number of workers</th></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'>$t < 20$</td><td style='padding:6px;'>6</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'>$20 \\le t < 30$</td><td style='padding:6px;'>14</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'>$30 \\le t < 40$</td><td style='padding:6px;'>22</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'>$40 \\le t < 50$</td><td style='padding:6px;'>26</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'>$50 \\le t < 60$</td><td style='padding:6px;'>18</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'>$60 \\le t < 70$</td><td style='padding:6px;'>10</td></tr><tr><td style='padding:6px; text-align:left;'>$t \\ge 70$</td><td style='padding:6px;'>4</td></tr></table><strong>(a)</strong> Explain why a normal distribution may be an appropriate model for the commuting times in this sample.<br><br>The planner uses the distribution $\\text{N}(44, 14^2)$ to model the commuting times.<br><br><strong>(b)</strong> Find the number of workers in the sample that this model would predict to have a daily commuting time in the range:<br>&emsp;<strong>(i)</strong> $40 \\le t < 50$,<br>&emsp;<strong>(ii)</strong> $t \\ge 70$.<br><br><strong>(c)</strong> Use your answers to part <strong>(b)</strong>:<br>&emsp;<strong>(i)</strong> to comment on the suitability of this model,<br>&emsp;<strong>(ii)</strong> to explain how the planner could improve the model by changing one of its parameters.<br><br><strong>(d)</strong> A colleague wishes to use the improved model to predict the commuting times of workers in a remote rural district. Comment on this plan.",
+    "steps": [
+        "<strong>(a) Justifying the model choice:</strong><br><br>The observed frequencies are unimodal and roughly symmetrical, peaking in the central modal interval $40 \\le t < 50$ ($26$ workers) and decreasing smoothly into both tails.",
+        "<strong>(b)(i) Expected frequency for $40 \\le t < 50$:</strong><br><br>Standardising under $T \\sim \\text{N}(44, 14^2)$:\\begin{aligned} &P(40 \\le T < 50) \\cr &\\quad = P\\left(\\dfrac{40 - 44}{14} \\le Z < \\dfrac{50 - 44}{14}\\right) \\cr &\\quad = P(-0.286 \\le Z < 0.429) \\cr &\\quad = \\Phi(0.429) - \\Phi(-0.286) \\cr &\\quad = 0.6659 - (1 - 0.6124) \\cr &\\quad = 0.6659 - 0.3876 \\cr &\\quad = 0.2783 \\end{aligned}Multiplying by the sample size $N = 100$:\\begin{aligned} 100 \\times 0.2783 &= 27.83 \\cr &\\approx 28 \\end{aligned}",
+        "<strong>(b)(ii) Expected frequency for $t \\ge 70$:</strong><br><br>Standardising the upper tail:\\begin{aligned} P(T \\ge 70) &= P\\left(Z \\ge \\dfrac{70 - 44}{14}\\right) \\cr &= P(Z \\ge 1.857) \\cr &= 1 - \\Phi(1.857) \\cr &= 1 - 0.9683 \\cr &= 0.0317 \\end{aligned}Multiplying by $N = 100$:\\begin{aligned} 100 \\times 0.0317 &= 3.17 \\cr &\\approx 3 \\end{aligned}",
+        "<strong>(c)(i) Comment on model suitability:</strong><br><br>The model is suitable because the predicted frequencies ($28$ and $3$) closely match the observed frequencies ($26$ and $4$).",
+        "<strong>(c)(ii) Improving the model:</strong><br><br>The planner could calculate the sample mean and sample standard deviation directly from the grouped frequency table and update $\\mu$ and $\\sigma$ accordingly.",
+        "<strong>(d) Comment on transferring the model:</strong><br><br>The model is unsuitable for a rural district because commuting distances, transport modes, and traffic conditions in rural areas differ substantially from metropolitan areas.",
+        "Final Answer: (b)(i) $28$, (ii) $3$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b)(i) $26$, (ii) $4$",
+            "feedback": "These values are the observed frequencies from the table, not the predicted frequencies generated by the normal model $\\text{N}(44, 14^2)$."
+        },
+        {
+            "ans": "(b)(i) $28$, (ii) $7$",
+            "feedback": "In part (b)(ii), you may have used $\\Phi(1.857)$ or an incorrect tail probability calculation rather than $1 - \\Phi(1.857) = 0.0317$."
+        },
+        {
+            "ans": "(b)(i) $35$, (ii) $3$",
+            "feedback": "In part (b)(i), you evaluated $\\Phi(0.429) - 0.5 = 0.1659$ or omitted the lower tail below the mean, leading to an incorrect predicted count."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Transposing Wide Tables",
+        "content": "Notice how the original frequency table has been transposed so that categories run down rows rather than across columns. When auditing data tables on portrait screens, keeping categories vertical ensures that boundary signs and numbers remain fully legible without horizontal scrolling."
+    }
+},
+{
+    "id": "050237",
+    "group_id": "050236",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Finding Unknown Parameters",
+        "Simultaneous Equations",
+        "Binomial Combination"
+    ],
+    "img": false,
+    "question": "A manufacturer of electric vehicle batteries models the full-charge driving range, $X\\text{ km}$, as a normal distribution $\\text{N}(\\mu, \\sigma^2)$. Quality control testing reveals that $10\\%$ of the batteries achieve a range of less than $380\\text{ km}$, whilst $5\\%$ of the batteries achieve a range of more than $460\\text{ km}$.<br><br><strong>(a)</strong> Write down two simultaneous equations in $\\mu$ and $\\sigma$.<br><br><strong>(b)</strong> Find the values of $\\mu$ and $\\sigma$, giving each value to three significant figures.<br><br><strong>(c)</strong> Batteries with a range of less than $370\\text{ km}$ are classed as sub-standard and must be recycled. Find the percentage of batteries that must be recycled.<br><br><strong>(d)</strong> A random sample of $5$ batteries is selected independently from the production line. Find the probability that exactly one battery has a range greater than $450\\text{ km}$.",
+    "steps": [
+        "<strong>(a) Setting up simultaneous equations:</strong><br><br>For the lower tail $P(X < 380) = 0.10$:\\begin{aligned} \\dfrac{380 - \\mu}{\\sigma} &= -1.2816 \\cr 380 &= \\mu - 1.2816\\sigma \\end{aligned}For the upper tail $P(X > 460) = 0.05$:\\begin{aligned} \\dfrac{460 - \\mu}{\\sigma} &= 1.6449 \\cr 460 &= \\mu + 1.6449\\sigma \\end{aligned}",
+        "<strong>(b) Solving for $\\mu$ and $\\sigma$:</strong><br><br>Subtracting the first equation from the second:\\begin{aligned} 460 - 380 &= 2.9265\\sigma \\cr 80 &= 2.9265\\sigma \\cr \\sigma &= \\dfrac{80}{2.9265} \\cr &\\approx 27.336 \\cr &\\approx 27.3\\text{ km} \\end{aligned}Substituting $\\sigma$ back to find $\\mu$:\\begin{aligned} \\mu &= 460 - 1.6449(27.336) \\cr &= 460 - 44.965 \\cr &\\approx 415.035 \\cr &\\approx 415\\text{ km} \\end{aligned}",
+        "<strong>(c) Percentage of batteries to be recycled:</strong><br><br>Standardising for $X < 370$ using unrounded values:\\begin{aligned} Z &= \\dfrac{370 - 415.035}{27.336} \\cr &\\approx -1.648 \\end{aligned}Evaluating the tail probability:\\begin{aligned} P(Z < -1.648) &= 1 - \\Phi(1.648) \\cr &= 1 - 0.9503 \\cr &= 0.0497 \\cr &= 4.97\\% \\end{aligned}",
+        "<strong>(d) Binomial probability for a sample of $5$:</strong><br><br>First, find the probability that a single battery exceeds $450\\text{ km}$:\\begin{aligned} Z &= \\dfrac{450 - 415.035}{27.336} \\cr &\\approx 1.279 \\end{aligned}\\begin{aligned} p &= 1 - \\Phi(1.279) \\cr &= 1 - 0.8995 \\cr &= 0.1005 \\end{aligned}Let $Y \\sim B(5, 0.1005)$ denote the number of such batteries:\\begin{aligned} P(Y = 1) &= \\binom{5}{1} (0.1005)^1 (0.8995)^4 \\cr &= 5 \\times 0.1005 \\times 0.6547 \\cr &\\approx 0.329 \\end{aligned}",
+        "Final Answer: (b) $\\mu = 415\\text{ km}$, $\\sigma = 27.3\\text{ km}$, (c) $4.97\\%$, (d) $0.329$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $\\mu = 415\\text{ km}$, $\\sigma = 27.3\\text{ km}$, (c) $4.97\\%$, (d) $0.101$",
+            "feedback": "In part (d), $0.101$ is the single-battery probability $p = P(X > 450)$. You must evaluate the binomial probability for $1$ battery out of $5$: $\\binom{5}{1} p (1 - p)^4$."
+        },
+        {
+            "ans": "(b) $\\mu = 420\\text{ km}$, $\\sigma = 24.3\\text{ km}$, (c) $4.97\\%$, (d) $0.329$",
+            "feedback": "In part (a), you used positive $z$-scores for both tails, forgetting that a lower tail of $10\\%$ requires a negative $z$-value: $z = -1.2816$."
+        },
+        {
+            "ans": "(b) $\\mu = 415\\text{ km}$, $\\sigma = 27.3\\text{ km}$, (c) $9.94\\%$, (d) $0.329$",
+            "feedback": "In part (c), you doubled the tail probability, treating the condition as two-tailed rather than strictly $X < 370$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Signs in Inverse Normal Tail Values",
+        "content": "A frequent sign error occurs when writing the equation for a lower tail like $P(X < 380) = 0.10$. Because $380$ lies below the mean, the standardised value must be negative: $z = -1.2816$. Forgetting this negative sign will produce an impossible negative or inflated standard deviation."
+    }
+},
+{
+    "id": "050238",
+    "group_id": "050236",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Normal Approximation to Binomial",
+        "Continuity Correction",
+        "Interval Probabilities"
+    ],
+    "img": false,
+    "question": "A commercial seed merchant claims that $65\\%$ of its heirloom tomato seeds successfully germinate under standard nursery conditions. A grower sows a random sample of $200$ seeds. Let $X$ denote the number of seeds that successfully germinate.<br><br><strong>(a)</strong> State why a normal approximation to the distribution of $X$ is appropriate in this case.<br><br><strong>(b)</strong> Specify the mean and the variance of the approximating normal distribution.<br><br><strong>(c)</strong> Using the normal approximation with a continuity correction, find the probability that:<br>&emsp;<strong>(i)</strong> at least $140$ seeds germinate,<br>&emsp;<strong>(ii)</strong> between $120$ and $135$ seeds germinate (inclusive).",
+    "steps": [
+        "<strong>(a) Justifying the normal approximation:</strong><br><br>Here $X \\sim B(200, 0.65)$. The sample size $n = 200$ is large, and neither $p = 0.65$ nor $q = 0.35$ is close to $0$ or $1$ ($np = 130 > 5$ and $nq = 70 > 5$).",
+        "<strong>(b) Specifying parameters:</strong><br><br>Calculating the mean and variance:\\begin{aligned} \\mu &= np \\cr &= 200 \\times 0.65 \\cr &= 130 \\end{aligned}\\begin{aligned} \\sigma^2 &= np(1 - p) \\cr &= 200 \\times 0.65 \\times 0.35 \\cr &= 45.5 \\end{aligned}Hence $Y \\sim \\text{N}(130, 45.5)$, with $\\sigma = \\sqrt{45.5} \\approx 6.745$.",
+        "<strong>(c)(i) Probability of at least $140$ seeds:</strong><br><br>Applying the continuity correction for $X \\ge 140$ gives $Y \\ge 139.5$:\\begin{aligned} P(X \\ge 140) &\\approx P(Y \\ge 139.5) \\cr &= P\\left(Z \\ge \\dfrac{139.5 - 130}{6.745}\\right) \\cr &= P(Z \\ge 1.408) \\cr &= 1 - \\Phi(1.408) \\cr &= 1 - 0.9205 \\cr &= 0.0795 \\end{aligned}",
+        "<strong>(c)(ii) Probability between $120$ and $135$ seeds (inclusive):</strong><br><br>Applying continuity corrections for $120 \\le X \\le 135$ gives $119.5 \\le Y \\le 135.5$:\\begin{aligned} Z_1 &= \\dfrac{119.5 - 130}{6.745} \\cr &= -1.557 \\end{aligned}\\begin{aligned} Z_2 &= \\dfrac{135.5 - 130}{6.745} \\cr &= 0.815 \\end{aligned}Evaluating the interval probability:\\begin{aligned} &P(-1.557 \\le Z \\le 0.815) \\cr &\\quad = \\Phi(0.815) - \\Phi(-1.557) \\cr &\\quad = 0.7925 - (1 - 0.9402) \\cr &\\quad = 0.7925 - 0.0598 \\cr &\\quad = 0.7328 \\end{aligned}",
+        "Final Answer: (b) $\\mu = 130$, $\\sigma^2 = 45.5$, (c)(i) $0.0795$, (ii) $0.7328$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) $\\mu = 130$, $\\sigma^2 = 45.5$, (c)(i) $0.0694$, (ii) $0.7328$",
+            "feedback": "In part (c)(i), you used $140.5$ instead of $139.5$ for the continuity correction. 'At least $140$' includes $140$, so the continuous interval must start at $139.5$."
+        },
+        {
+            "ans": "(b) $\\mu = 130$, $\\sigma^2 = 45.5$, (c)(i) $0.0795$, (ii) $0.7012$",
+            "feedback": "In part (c)(ii), you applied the continuity corrections in the wrong direction ($120.5$ and $134.5$), shrinking the interval rather than expanding it to cover the inclusive integer bounds."
+        },
+        {
+            "ans": "(b) $\\mu = 130$, $\\sigma^2 = 6.75$, (c)(i) $0.0795$, (ii) $0.7328$",
+            "feedback": "In part (b), you gave the standard deviation $\\sigma = 6.75$ as the variance. The variance is $\\sigma^2 = npq = 45.5$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Direction of Continuity Corrections",
+        "content": "To avoid getting continuity corrections backwards, think of discrete integers as blocks of width $1$ centred on each integer. The integer $140$ occupies the interval $[139.5, 140.5]$. Therefore, 'at least $140$' must include the entire block for $140$, beginning at $139.5$."
+    }
+},
+{
+    "id": "050239",
+    "group_id": "050236",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Hypothesis Testing for the Mean",
+        "Sample Mean Distribution",
+        "Critical Values"
+    ],
+    "img": false,
+    "question": "A bottling plant fills bottles of cold-pressed olive oil. The volume of oil dispensed, $X\\text{ ml}$, is normally distributed with a known standard deviation of $\\sigma = 4.5\\text{ ml}$. The dispensing machine is calibrated to deliver a population mean volume of $\\mu = 500\\text{ ml}$.<br><br>Following routine maintenance, the quality assurance manager suspects that the machine is underfilling bottles. A random sample of $16$ bottles is inspected, yielding a sample mean volume of $\\bar{x} = 497.8\\text{ ml}$.<br><br><strong>(a)</strong> State suitable null and alternative hypotheses to test the manager's suspicion.<br><br><strong>(b)</strong> State the distribution of the sample mean, $\\bar{X}$, assuming the null hypothesis is true.<br><br><strong>(c)</strong> Test, at the $5\\%$ significance level, whether there is evidence that the machine is underfilling bottles. State your conclusion clearly in context.<br><br><strong>(d)</strong> Determine the critical value of the sample mean, $\\bar{x}$, for this test at the $5\\%$ significance level.",
+    "steps": [
+        "<strong>(a) Hypotheses:</strong><br><br>The test is one-tailed because the manager suspects underfilling:\\begin{aligned} &H_0: \\mu = 500 \\cr &H_1: \\mu < 500 \\end{aligned}",
+        "<strong>(b) Distribution of the sample mean under $H_0$:</strong><br><br>For a sample of size $n = 16$ from a normal population:\\begin{aligned} \\bar{X} \\sim \\text{N}\\left(500, \\dfrac{4.5^2}{16}\\right) \\end{aligned}The standard error is:\\begin{aligned} \\sigma_{\\bar{x}} &= \\dfrac{4.5}{\\sqrt{16}} \\cr &= \\dfrac{4.5}{4} \\cr &= 1.125 \\end{aligned}Hence $\\bar{X} \\sim \\text{N}(500, 1.125^2)$.",
+        "<strong>(c) Calculating test statistic and conclusion:</strong><br><br>Standardising the observed sample mean $\\bar{x} = 497.8$:\\begin{aligned} z &= \\dfrac{497.8 - 500}{1.125} \\cr &= \\dfrac{-2.2}{1.125} \\cr &\\approx -1.956 \\end{aligned}At the $5\\%$ significance level for a lower-tail test, the critical value is $z_{\\text{crit}} = -1.645$.<br><br>Since $-1.956 < -1.645$, the test statistic falls into the critical region. We reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level that the dispensing machine is underfilling bottles.",
+        "<strong>(d) Determining the critical value of $\\bar{x}$:</strong><br><br>Using the critical $z$-value:\\begin{aligned} \\bar{x}_{\\text{crit}} &= 500 - 1.645(1.125) \\cr &= 500 - 1.851 \\cr &= 498.15\\text{ ml} \\end{aligned}",
+        "Final Answer: (a) $H_0: \\mu = 500$, $H_1: \\mu < 500$, (b) $\\bar{X} \\sim N(500, 1.125^2)$, (c) Reject $H_0$, (d) $498.15\\text{ ml}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: \\mu = 500$, $H_1: \\mu \\neq 500$, (b) $\\bar{X} \\sim N(500, 1.125^2)$, (c) Reject $H_0$, (d) $498.15\\text{ ml}$",
+            "feedback": "In part (a), you stated a two-tailed alternative hypothesis $H_1: \\mu \\neq 500$. The question specifies that the manager suspects underfilling, which requires a one-tailed test $H_1: \\mu < 500$."
+        },
+        {
+            "ans": "(a) $H_0: \\mu = 500$, $H_1: \\mu < 500$, (b) $\\bar{X} \\sim N(500, 4.5^2)$, (c) Reject $H_0$, (d) $498.15\\text{ ml}$",
+            "feedback": "In part (b), you used the population variance $\\sigma^2 = 4.5^2$ for the sample mean. The variance of the sample mean is $\\dfrac{\\sigma^2}{n} = \\dfrac{4.5^2}{16} = 1.125^2$."
+        },
+        {
+            "ans": "(a) $H_0: \\mu = 500$, $H_1: \\mu < 500$, (b) $\\bar{X} \\sim N(500, 1.125^2)$, (c) Accept $H_0$, (d) $492.60\\text{ ml}$",
+            "feedback": "In part (c), you divided by $\\sigma = 4.5$ instead of the standard error $1.125$, leading to an underestimated test statistic and an incorrect non-rejection decision."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Dividing by the Square Root of n",
+        "content": "The most common blunder in sample mean hypothesis testing is standardising with $\\sigma$ instead of the standard error $\\dfrac{\\sigma}{\\sqrt{n}}$. Always remember that sample means have much less variability than individual observations: $\\text{Var}(\\bar{X}) = \\dfrac{\\sigma^2}{n}$."
+    }
+},
+{
+    "id": "050240",
+    "group_id": "050236",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Linear Combinations of Normal Variables",
+        "Sums and Differences",
+        "Independent Variables"
+    ],
+    "img": false,
+    "question": "An airline imposes weight limits on passenger luggage. The weight of an empty hard-shell suitcase, $S\\text{ kg}$, is modelled by $S \\sim \\text{N}(3.2, 0.4^2)$. The weight of the packed contents, $C\\text{ kg}$, is modelled by $C \\sim \\text{N}(18.5, 2.5^2)$. The variables $S$ and $C$ are assumed to be independent.<br><br><strong>(a)</strong> Let $T = S + C$ denote the total weight of a randomly chosen packed suitcase.<br>&emsp;<strong>(i)</strong> Find the mean and the standard deviation of $T$.<br>&emsp;<strong>(ii)</strong> The airline charges an excess baggage fee if $T > 23.0\\text{ kg}$. Find the probability that a randomly chosen packed suitcase incurs this fee.<br><br><strong>(b)</strong> Two independent packed suitcases, $T_1$ and $T_2$, are checked in by two travelling companions. Find the probability that the combined weight of the two suitcases exceeds $45.0\\text{ kg}$.<br><br><strong>(c)</strong> Find the probability that the magnitude of the difference in weight between the two suitcases, $|T_1 - T_2|$, is greater than $3.0\\text{ kg}$.",
+    "steps": [
+        "<strong>(a)(i) Mean and standard deviation of $T$:</strong><br><br>Using properties of linear combinations of independent normal variables:\\begin{aligned} \\text{E}(T) &= \\text{E}(S) + \\text{E}(C) \\cr &= 3.2 + 18.5 \\cr &= 21.7\\text{ kg} \\end{aligned}For the variance:\\begin{aligned} \\text{Var}(T) &= \\text{Var}(S) + \\text{Var}(C) \\cr &= 0.4^2 + 2.5^2 \\cr &= 0.16 + 6.25 \\cr &= 6.41 \\end{aligned}The standard deviation is:\\begin{aligned} \\text{SD}(T) &= \\sqrt{6.41} \\cr &\\approx 2.532 \\cr &\\approx 2.53\\text{ kg} \\end{aligned}",
+        "<strong>(a)(ii) Probability of excess baggage fee:</strong><br><br>Standardising for $T > 23.0$:\\begin{aligned} P(T > 23.0) &= P\\left(Z > \\dfrac{23.0 - 21.7}{2.532}\\right) \\cr &= P(Z > 0.513) \\cr &= 1 - \\Phi(0.513) \\cr &= 1 - 0.6960 \\cr &= 0.304 \\end{aligned}",
+        "<strong>(b) Combined weight of two suitcases:</strong><br><br>Let $W = T_1 + T_2$. Since $T_1$ and $T_2$ are independent:\\begin{aligned} \\text{E}(W) &= 21.7 + 21.7 = 43.4\\text{ kg} \\cr \\text{Var}(W) &= 6.41 + 6.41 = 12.82 \\end{aligned}So $W \\sim \\text{N}(43.4, 12.82)$ with $\\text{SD}(W) = \\sqrt{12.82} \\approx 3.581$. Standardising for $W > 45.0$:\\begin{aligned} P(W > 45.0) &= P\\left(Z > \\dfrac{45.0 - 43.4}{3.581}\\right) \\cr &= P(Z > 0.447) \\cr &= 1 - \\Phi(0.447) \\cr &= 1 - 0.6726 \\cr &= 0.3274 \\end{aligned}",
+        "<strong>(c) Difference in weight between two suitcases:</strong><br><br>Let $D = T_1 - T_2$. The parameters are:\\begin{aligned} \\text{E}(D) &= 21.7 - 21.7 = 0 \\cr \\text{Var}(D) &= \\text{Var}(T_1) + \\text{Var}(T_2) \\cr &= 6.41 + 6.41 = 12.82 \\end{aligned}So $D \\sim \\text{N}(0, 12.82)$. Because the distribution is symmetric about $0$:\\begin{aligned} P(|D| > 3.0) &= 2P(D > 3.0) \\cr &= 2P\\left(Z > \\dfrac{3.0 - 0}{3.581}\\right) \\cr &= 2P(Z > 0.838) \\cr &= 2(1 - 0.7990) \\cr &= 2(0.2010) \\cr &= 0.402 \\end{aligned}",
+        "Final Answer: (a)(i) $21.7\\text{ kg}$ and $2.53\\text{ kg}$, (ii) $0.304$, (b) $0.3274$, (c) $0.402$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $21.7\\text{ kg}$ and $2.90\\text{ kg}$, (ii) $0.304$, (b) $0.3274$, (c) $0.402$",
+            "feedback": "In part (a)(i), you added the standard deviations directly ($0.4 + 2.5 = 2.9$) rather than adding variances. For independent variables, $\\text{Var}(S + C) = \\text{Var}(S) + \\text{Var}(C)$."
+        },
+        {
+            "ans": "(a)(i) $21.7\\text{ kg}$ and $2.53\\text{ kg}$, (ii) $0.304$, (b) $0.3274$, (c) $0.201$",
+            "feedback": "In part (c), you calculated a single tail $P(D > 3.0) = 0.2010$. The condition asks for the magnitude $|T_1 - T_2| > 3.0$, so you must double this to account for both tails."
+        },
+        {
+            "ans": "(a)(i) $21.7\\text{ kg}$ and $2.53\\text{ kg}$, (ii) $0.304$, (b) $0.3274$, (c) $0.000$",
+            "feedback": "In part (c), you subtracted the variances, setting $\\text{Var}(T_1 - T_2) = 0$. Variances always add for independent random variables: $\\text{Var}(T_1 - T_2) = \\text{Var}(T_1) + \\text{Var}(T_2)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Variances Always Add",
+        "content": "A perennial trap in A Level Statistics is subtracting variances when finding the distribution of a difference, such as $T_1 - T_2$. Because $\\text{Var}(-X) = (-1)^2 \\text{Var}(X) = \\text{Var}(X)$, uncertainties always compound: $\\text{Var}(T_1 - T_2) = \\text{Var}(T_1) + \\text{Var}(T_2)$."
     }
 }
 ];
