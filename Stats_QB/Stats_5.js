@@ -1652,5 +1652,215 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Variances Always Add",
         "content": "A perennial trap in A Level Statistics is subtracting variances when finding the distribution of a difference, such as $T_1 - T_2$. Because $\\text{Var}(-X) = (-1)^2 \\text{Var}(X) = \\text{Var}(X)$, uncertainties always compound: $\\text{Var}(T_1 - T_2) = \\text{Var}(T_1) + \\text{Var}(T_2)$."
     }
+},
+{
+    "id": "050241",
+    "group_id": "050241",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Correlation and Regression",
+    "topic": "Product Moment Correlation",
+    "subtopic": [
+        "Interpretation of PMCC",
+        "Hypothesis Testing for Correlation",
+        "Contextual Explanation"
+    ],
+    "img": false,
+    "question": "Marcus is an energy commodities analyst monitoring wholesale energy prices. He records the monthly prices of two energy commodities derived from different extraction sources, Crude Oil and Natural Gas, across $12$ randomly selected months, to investigate whether there is any correlation.<br><img src='images/Statistics_pngs/050241_1.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>The product moment correlation coefficient for this first dataset is $r = 0.238$. There are $12$ data points, and the corresponding $p$-value for a two-tailed test is $0.456$.<br><br><strong>(a)</strong> Comment on the correlation between the prices of Crude Oil and Natural Gas in this sample.<br><br>Marcus also records the monthly prices of two refined petroleum products, Crude Oil and Heating Oil, across $12$ randomly selected months, to investigate whether there is any correlation.<br><img src='images/Statistics_pngs/050241_2.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>The product moment correlation coefficient for this second dataset is $r = 0.672$. There are $12$ data points.<br><br><strong>(b)</strong> Stating your hypotheses clearly, test at the $5\\%$ level of significance whether there is any evidence of correlation between the prices of these two products.<br><br><strong>(c)</strong> Without referring to the positioning of the points on the scatter diagrams, suggest why the product moment correlation coefficient is higher for the second dataset than for the first.",
+    "steps": [
+        "<strong>(a) Commenting on the first dataset:</strong><br><br>There is a weak positive linear correlation in the sample ($r = 0.238$). However, because the $p$-value ($0.456$) is much greater than $0.05$, there is no statistically significant evidence of correlation in the population.",
+        "<strong>(b) Hypothesis test for Crude Oil vs Heating Oil:</strong><br><br>State the null and alternative hypotheses, where $\\rho$ denotes the population correlation coefficient:\\begin{aligned} &H_0: \\rho = 0 \\cr &H_1: \\rho \\neq 0 \\end{aligned}For a two-tailed test with sample size $n = 12$ at the $5\\%$ significance level (degrees of freedom $\\nu = 12 - 2 = 10$), the critical value from statistical tables is:\\begin{aligned} r_{\\text{crit}} = \\pm 0.5760 \\end{aligned}Comparing the sample correlation coefficient $r = 0.672$:\\begin{aligned} |0.672| > 0.5760 \\end{aligned}Since the test statistic exceeds the critical value, we reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level of a correlation between the prices of Crude Oil and Heating Oil.",
+        "<strong>(c) Contextual reason for higher correlation:</strong><br><br>Heating oil is directly refined from crude oil (crude oil is its raw material feedstock), meaning their production and refining costs are inextricably linked, whereas natural gas has different extraction and market dynamics.",
+        "Final Answer: (b) Reject $H_0$ as $|0.672| > 0.5760$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b) Accept $H_0$ as $0.672 < 0.7079$",
+            "feedback": "You used the critical value for $n = 8$ or applied a $1\\%$ two-tailed significance level instead of the $5\\%$ level for $n = 12$ ($0.5760$)."
+        },
+        {
+            "ans": "(b) Reject $H_0$ as $|0.672| > 0.4973$",
+            "feedback": "You used the one-tailed critical value ($0.4973$). The question asks whether there is 'any evidence of correlation', which requires a two-tailed test with critical value $0.5760$."
+        },
+        {
+            "ans": "(b) Accept $H_0$ as $0.672 < 0.5760$",
+            "feedback": "The sample value is $r = 0.672$, which is strictly greater than the critical value $0.5760$, so $H_0$ must be rejected, not accepted."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: One-Tailed vs Two-Tailed Phrasing",
+        "content": "Look carefully at the wording in correlation hypothesis tests: 'is there any evidence of correlation' mandates a two-tailed test ($H_1: \\rho \\neq 0$), whereas 'is there evidence of positive correlation' specifies a one-tailed test ($H_1: \\rho > 0$). Using the wrong tail cuts or doubles your critical significance threshold."
+    }
+},
+{
+    "id": "050242",
+    "group_id": "050241",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Correlation and Regression",
+    "topic": "Product Moment Correlation",
+    "subtopic": [
+        "Impact of Outliers",
+        "One-Tailed PMCC Hypothesis Test",
+        "Bivariate Normality Assumption"
+    ],
+    "img": false,
+    "question": "A teacher records the weekly independent study hours, $h$, and the subsequent assessment scores, $s\\%$, for a sample of $11$ students.<br><img src='images/Statistics_pngs/050242.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>For the full sample of $11$ students, the product moment correlation coefficient is $r = 0.384$. A particular student, labelled as Point $P$ on the scatter diagram, logged $8.5$ study hours but achieved an anomalous score of $18\\%$.<br><br><strong>(a)</strong> Stating your hypotheses clearly, test at the $5\\%$ level of significance whether there is evidence of positive correlation between study hours and assessment scores for the full sample of $11$ students.<br><br><strong>(b)</strong> If Point $P$ is removed from the dataset, explain what effect this will have on:<br>&emsp;<strong>(i)</strong> the value of the product moment correlation coefficient, $r$,<br>&emsp;<strong>(ii)</strong> the gradient of the least-squares regression line of $s$ on $h$.<br><br><strong>(c)</strong> State an assumption required about the underlying bivariate population when carrying out a hypothesis test for the product moment correlation coefficient.",
+    "steps": [
+        "<strong>(a) One-tailed hypothesis test for positive correlation:</strong><br><br>Set up the hypotheses:\\begin{aligned} &H_0: \\rho = 0 \\cr &H_1: \\rho > 0 \\end{aligned}For a one-tailed test with sample size $n = 11$ at the $5\\%$ significance level, the critical value from tables is:\\begin{aligned} r_{\\text{crit}} = 0.5214 \\end{aligned}Comparing the test statistic:\\begin{aligned} 0.384 < 0.5214 \\end{aligned}Since $r < r_{\\text{crit}}$, we do not reject $H_0$.<br><br>There is insufficient evidence at the $5\\%$ level to conclude that there is a positive correlation between study hours and scores for the full sample.",
+        "<strong>(b)(i) Effect of removing Point $P$ on $r$:</strong><br><br>Point $P$ is a severe outlier that contradicts the overall strong positive trend (high study hours with a very low score). Removing Point $P$ will cause $r$ to increase significantly closer to $+1$.",
+        "<strong>(b)(ii) Effect of removing Point $P$ on the regression gradient:</strong><br><br>Point $P$ acts as an influential point that pulls down the right end of the line. Removing Point $P$ will cause the gradient of the regression line of $s$ on $h$ to increase.",
+        "<strong>(c) Underlying distributional assumption:</strong><br><br>The bivariate data $(H, S)$ must follow a bivariate normal distribution.",
+        "Final Answer: (a) Do not reject $H_0$ as $0.384 < 0.5214$, (b)(i) $r$ increases, (ii) Gradient increases, (c) Bivariate normality"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Reject $H_0$ as $0.384 > 0.300$, (b)(i) $r$ increases, (ii) Gradient increases, (c) Bivariate normality",
+            "feedback": "In part (a), you used an arbitrary threshold or an incorrect critical value. For $n = 11$ at the $5\\%$ one-tailed level, the critical value is $0.5214$."
+        },
+        {
+            "ans": "(a) Do not reject $H_0$ as $0.384 < 0.5214$, (b)(i) $r$ decreases, (ii) Gradient increases, (c) Bivariate normality",
+            "feedback": "In part (b)(i), removing an outlier that contradicts the positive trend tightens the remaining points along a straight line, which increases $r$, not decreases it."
+        },
+        {
+            "ans": "(a) Do not reject $H_0$ as $0.384 < 0.5214$, (b)(i) $r$ increases, (ii) Gradient decreases, (c) Independent normal errors only",
+            "feedback": "In part (b)(ii), Point $P$ pulls the right-hand tail of the regression line downward. Removing it pivots the line upward at high $h$, meaning the gradient increases."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: PMCC Requires Bivariate Normality",
+        "content": "A standard A Level bookwork question asks for the assumption behind PMCC hypothesis testing. Students often write 'the data is normally distributed'. The precise requirement is that the variables follow a *bivariate normal distribution* (both variables are individually normal, and their joint distribution forms a 3D bell shape)."
+    }
+},
+{
+    "id": "050243",
+    "group_id": "050241",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Correlation and Regression",
+    "topic": "Product Moment Correlation",
+    "subtopic": [
+        "Non-linear Models",
+        "Logarithmic Transformation",
+        "Transformed Hypothesis Testing"
+    ],
+    "img": false,
+    "question": "A microbiologist measures the incubation time, $t$ hours, and the bacterial colony population, $N$ (in thousands), for $10$ laboratory cultures.<br><img src='images/Statistics_pngs/050243.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>The scatter diagram illustrates a non-linear relationship between $t$ and $N$. The product moment correlation coefficient between $t$ and $N$ is calculated as $r = 0.885$.<br><br>The microbiologist suspects that the population growth follows an exponential model of the form:$$N = a b^t$$where $a$ and $b$ are positive constants.<br><br><strong>(a)</strong> Show that this model can be expressed in the linear form $\\log_{10} N = \\alpha + \\beta t$, stating expressions for $\\alpha$ and $\\beta$ in terms of $a$ and $b$.<br><br><strong>(b)</strong> When the transformed variable $y = \\log_{10} N$ is plotted against $t$, the product moment correlation coefficient between $t$ and $y$ is found to be $r' = 0.994$.<br>&emsp;<strong>(i)</strong> Explain why $r'$ is substantially higher than $r$.<br>&emsp;<strong>(ii)</strong> Stating your hypotheses clearly, test at the $1\\%$ level of significance whether there is evidence of positive linear correlation between $t$ and $y$.",
+    "steps": [
+        "<strong>(a) Linearising the exponential model:</strong><br><br>Taking base-$10$ logarithms of both sides:\\begin{aligned} N &= a b^t \\cr \\log_{10} N &= \\log_{10}(a b^t) \\cr &= \\log_{10} a + \\log_{10}(b^t) \\cr &= \\log_{10} a + t \\log_{10} b \\end{aligned}Comparing this with $\\log_{10} N = \\alpha + \\beta t$:\\begin{aligned} \\alpha &= \\log_{10} a \\cr \\beta &= \\log_{10} b \\end{aligned}",
+        "<strong>(b)(i) Explaining why $r'$ is higher:</strong><br><br>The PMCC $r$ measures the strength of a *linear* relationship. Because the original data is non-linear (exponential growth), $r = 0.885$ underestimates the strength of the association. The logarithmic transformation linearises the relationship, so the transformed points lie almost exactly on a straight line, yielding $r' = 0.994$.",
+        "<strong>(b)(ii) Testing for positive linear correlation at $1\\%$ level:</strong><br><br>State the hypotheses for the transformed variables:\\begin{aligned} &H_0: \\rho = 0 \\cr &H_1: \\rho > 0 \\end{aligned}For a one-tailed test with sample size $n = 10$ at the $1\\%$ level, the critical value from statistical tables is:\\begin{aligned} r_{\\text{crit}} = 0.7155 \\end{aligned}Comparing the transformed correlation coefficient:\\begin{aligned} 0.994 > 0.7155 \\end{aligned}Since $r' > r_{\\text{crit}}$, we reject $H_0$.<br><br>There is overwhelming evidence at the $1\\%$ significance level of a positive linear correlation between $t$ and $\\log_{10} N$.",
+        "Final Answer: (a) $\\alpha = \\log_{10} a$, $\\beta = \\log_{10} b$, (b)(ii) Reject $H_0$ as $0.994 > 0.7155$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\alpha = a$, $\\beta = b$, (b)(ii) Reject $H_0$ as $0.994 > 0.7155$",
+            "feedback": "In part (a), you did not take logarithms of the parameters $a$ and $b$. Comparing $\\log_{10} N = \\log_{10} a + t \\log_{10} b$ shows $\\alpha = \\log_{10} a$ and $\\beta = \\log_{10} b$."
+        },
+        {
+            "ans": "(a) $\\alpha = \\log_{10} a$, $\\beta = \\log_{10} b$, (b)(ii) Accept $H_0$ as $0.994 < 0.995$",
+            "feedback": "In part (b)(ii), $0.995$ is not a critical value from statistical tables. For $n = 10$ at the $1\\%$ one-tailed level, $r_{\\text{crit}} = 0.7155$."
+        },
+        {
+            "ans": "(a) $\\alpha = \\log_{10} a$, $\\beta = \\log_{10} b$, (b)(ii) Reject $H_0$ as $0.994 > 0.5494$",
+            "feedback": "In part (b)(ii), $0.5494$ is the critical value at the $5\\%$ level. The question specifically asked for a test at the $1\\%$ level ($r_{\\text{crit}} = 0.7155$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: PMCC Measures Linearity Only",
+        "content": "A high correlation of $r = 0.885$ does not mean the relationship is linear! As this problem illustrates, a curved exponential curve can produce a misleadingly depressed PMCC. Transforming variables to achieve linearity is the proper mathematical tool for modelling power and exponential laws."
+    }
+},
+{
+    "id": "050244",
+    "group_id": "050241",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Correlation and Regression",
+    "topic": "Linear Regression",
+    "subtopic": [
+        "Interpretation of Coefficients",
+        "Interpolation vs Extrapolation",
+        "Causality"
+    ],
+    "img": false,
+    "question": "A materials engineer investigates the effect of curing temperature, $x\\text{ }^\\circ\\text{C}$, on the tensile strength, $y\\text{ MPa}$, of a new composite polymer. The experiment is conducted at $10$ temperatures between $12^\\circ\\text{C}$ and $50^\\circ\\text{C}$.<br><img src='images/Statistics_pngs/050244.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>The equation of the least-squares regression line of $y$ on $x$ is:$$y = 10.5 + 0.710x$$<strong>(a)</strong> Give an interpretation of:<br>&emsp;<strong>(i)</strong> the gradient ($0.710$), in the context of the experiment,<br>&emsp;<strong>(ii)</strong> the intercept ($10.5$), commenting on whether it has a sensible physical interpretation.<br><br><strong>(b)</strong> The engineer uses the regression equation to estimate the tensile strength for a curing temperature of:<br>&emsp;<strong>(i)</strong> $30^\\circ\\text{C}$,<br>&emsp;<strong>(ii)</strong> $65^\\circ\\text{C}$.<br><br><strong>(c)</strong> Comment on the reliability of each of your estimates in part <strong>(b)</strong>.<br><br><strong>(d)</strong> A technician claims that increasing the curing temperature causes the increase in tensile strength. Explain why a strong statistical correlation does not necessarily prove causality.",
+    "steps": [
+        "<strong>(a)(i) Interpretation of the gradient:</strong><br><br>For every $1^\\circ\\text{C}$ increase in curing temperature, the model predicts an increase of $0.710\\text{ MPa}$ in the tensile strength of the polymer.",
+        "<strong>(a)(ii) Interpretation of the intercept:</strong><br><br>The intercept $10.5\\text{ MPa}$ represents the predicted tensile strength at a curing temperature of $0^\\circ\\text{C}$. However, this may not be physically meaningful because the polymer resin might not cure or set at $0^\\circ\\text{C}$, and $0^\\circ\\text{C}$ lies well outside the experimental range $[12, 50]$.",
+        "<strong>(b)(i) Estimate for $x = 30^\\circ\\text{C}$:</strong><br><br>Substituting $x = 30$ into the regression line:\\begin{aligned} y &= 10.5 + 0.710(30) \\cr &= 10.5 + 21.3 \\cr &= 31.8\\text{ MPa} \\end{aligned}",
+        "<strong>(b)(ii) Estimate for $x = 65^\\circ\\text{C}$:</strong><br><br>Substituting $x = 65$ into the regression line:\\begin{aligned} y &= 10.5 + 0.710(65) \\cr &= 10.5 + 46.15 \\cr &= 56.65\\text{ MPa} \\end{aligned}",
+        "<strong>(c) Reliability of estimates:</strong><br><br>• The estimate at $30^\\circ\\text{C}$ is **reliable** because it is an **interpolation** within the experimental range $[12, 50]$.<br>• The estimate at $65^\\circ\\text{C}$ is **unreliable** because it is an **extrapolation** far beyond the experimental range, where the polymer may degrade or change state.",
+        "<strong>(d) Correlation versus causality:</strong><br><br>Correlation indicates an association between two variables, but it does not prove cause and effect. The observed relationship could be driven by a confounding third variable (e.g. chemical reaction rate or pressure), or the material structure could alter at higher temperatures.",
+        "Final Answer: (b)(i) $31.8\\text{ MPa}$, (ii) $56.65\\text{ MPa}$, (c) (i) Reliable, (ii) Unreliable"
+    ],
+    "pi_options": [
+        {
+            "ans": "(b)(i) $31.8\\text{ MPa}$, (ii) $56.65\\text{ MPa}$, (c) (i) Reliable, (ii) Reliable",
+            "feedback": "In part (c), predicting at $65^\\circ\\text{C}$ is an extrapolation outside the range of observed data $[12, 50]$. We cannot assume the linear relationship continues beyond the measured bounds, making it unreliable."
+        },
+        {
+            "ans": "(b)(i) $27.5\\text{ MPa}$, (ii) $56.65\\text{ MPa}$, (c) (i) Reliable, (ii) Unreliable",
+            "feedback": "In part (b)(i), you computed $0.710 \\times 30 = 21.3$ and added an incorrect constant instead of $10.5 + 21.3 = 31.8\\text{ MPa}$."
+        },
+        {
+            "ans": "(b)(i) $31.8\\text{ MPa}$, (ii) $56.65\\text{ MPa}$, (c) (i) Unreliable, (ii) Reliable",
+            "feedback": "In part (c), you reversed the definitions of interpolation and extrapolation. Interpolation within the domain is reliable; extrapolation beyond it is unreliable."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: The Danger of Extrapolation",
+        "content": "Examiners love testing extrapolation. Even if a linear regression model has an $r$ value close to $1$, extending the line beyond the observed range of explanatory values ($x > 50$) assumes without justification that physical properties do not alter. Always state that extrapolation is unreliable."
+    }
+},
+{
+    "id": "050245",
+    "group_id": "050241",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Correlation and Regression",
+    "topic": "Product Moment Correlation",
+    "subtopic": [
+        "Calculation from Summary Statistics",
+        "Negative Correlation Testing",
+        "Coding Invariance"
+    ],
+    "img": false,
+    "question": "A meteorologist investigates the relationship between altitude, $h$ (in hundreds of metres above sea level), and atmospheric temperature, $T\\text{ (}^\\circ\\text{C)}$, on a mountain range. Measurements are recorded simultaneously at $12$ weather stations:<br><img src='images/Statistics_pngs/050245.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>The summary statistics for the $12$ pairs of observations are:$$\\sum h = 156, \\quad \\sum T = 87.5, \\quad \\sum h^2 = 2608, \\quad \\sum T^2 = 1118.75, \\quad \\sum hT = 761.5$$<strong>(a)</strong> Calculate:<br>&emsp;<strong>(i)</strong> $S_{hh}$, $S_{TT}$, and $S_{hT}$,<br>&emsp;<strong>(ii)</strong> the product moment correlation coefficient, $r$, between $h$ and $T$.<br><br><strong>(b)</strong> Stating your hypotheses clearly, test at the $1\\%$ significance level whether there is evidence of negative correlation between altitude and temperature.<br><br><strong>(c)</strong> State the effect on the value of $r$ if the temperature had been recorded in degrees Fahrenheit ($F = 1.8T + 32$) instead of degrees Celsius.",
+    "steps": [
+        "<strong>(a)(i) Calculating summary sums of squares:</strong><br><br>Using the standard formulas with $n = 12$:\\begin{aligned} S_{hh} &= \\sum h^2 - \\dfrac{(\\sum h)^2}{n} \\cr &= 2608 - \\dfrac{156^2}{12} \\cr &= 2608 - 2028 \\cr &= 580 \\end{aligned}\\begin{aligned} S_{TT} &= \\sum T^2 - \\dfrac{(\\sum T)^2}{n} \\cr &= 1118.75 - \\dfrac{87.5^2}{12} \\cr &= 1118.75 - 638.02 \\cr &= 480.73 \\end{aligned}\\begin{aligned} S_{hT} &= \\sum hT - \\dfrac{(\\sum h)(\\sum T)}{n} \\cr &= 761.5 - \\dfrac{156 \\times 87.5}{12} \\cr &= 761.5 - 1137.5 \\cr &= -376 \\end{aligned}",
+        "<strong>(a)(ii) Calculating the PMCC $r$:</strong><br><br>Applying the correlation formula:\\begin{aligned} r &= \\dfrac{S_{hT}}{\\sqrt{S_{hh} S_{TT}}} \\cr &= \\dfrac{-376}{\\sqrt{580 \\times 480.73}} \\cr &= \\dfrac{-376}{\\sqrt{278823.4}} \\cr &= \\dfrac{-376}{528.04} \\cr &\\approx -0.712 \\end{aligned}",
+        "<strong>(b) One-tailed hypothesis test for negative correlation:</strong><br><br>State the hypotheses:\\begin{aligned} &H_0: \\rho = 0 \\cr &H_1: \\rho < 0 \\end{aligned}For a one-tailed test with sample size $n = 12$ at the $1\\%$ significance level, the critical value from statistical tables is:\\begin{aligned} r_{\\text{crit}} = -0.6581 \\end{aligned}Comparing the test statistic:\\begin{aligned} -0.712 < -0.6581 \\end{aligned}Since $r < r_{\\text{crit}}$, the test statistic lies in the critical region. We reject $H_0$.<br><br>There is significant evidence at the $1\\%$ level that there is a negative correlation between altitude and temperature.",
+        "<strong>(c) Effect of linear coding on $r$:</strong><br><br>The linear transformation $F = 1.8T + 32$ is a positive linear scaling ($1.8 > 0$). The product moment correlation coefficient is invariant under positive linear transformations, so the value of $r$ remains completely unchanged ($r = -0.712$).",
+        "Final Answer: (a)(i) $S_{hh} = 580$, $S_{TT} = 480.73$, $S_{hT} = -376$, (ii) $r = -0.712$, (b) Reject $H_0$ as $-0.712 < -0.6581$, (c) Unchanged"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $S_{hh} = 580$, $S_{TT} = 480.73$, $S_{hT} = -376$, (ii) $r = -0.712$, (b) Do not reject $H_0$ as $-0.712 > -0.7079$, (c) Unchanged",
+            "feedback": "In part (b), $-0.7079$ is the two-tailed $1\\%$ critical value. The question asks whether there is evidence of negative correlation, which is a one-tailed test with critical value $-0.6581$."
+        },
+        {
+            "ans": "(a)(i) $S_{hh} = 580$, $S_{TT} = 480.73$, $S_{hT} = -376$, (ii) $r = 0.712$, (b) Reject $H_0$ as $-0.712 < -0.6581$, (c) Unchanged",
+            "feedback": "In part (a)(ii), you omitted the negative sign on $S_{hT} = -376$. Since temperature decreases as altitude increases, the correlation coefficient must be negative ($r = -0.712$)."
+        },
+        {
+            "ans": "(a)(i) $S_{hh} = 580$, $S_{TT} = 480.73$, $S_{hT} = -376$, (ii) $r = -0.712$, (b) Reject $H_0$ as $-0.712 < -0.6581$, (c) Multiplied by $1.8$",
+            "feedback": "In part (c), linear coding does not scale the PMCC. The product moment correlation coefficient is dimensionless and completely invariant under positive linear transformations."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Coding Invariance of Correlation",
+        "content": "A classic revision test: if $Y' = aY + b$ with $a > 0$, the correlation coefficient $r$ remains identical! The units cancel completely in the fraction $\\dfrac{S_{xY'}}{\\sqrt{S_{xx} S_{Y'Y'}}}$. Only if you multiply by a negative scale factor ($a < 0$) would the sign of $r$ flip."
+    }
 }
 ];
