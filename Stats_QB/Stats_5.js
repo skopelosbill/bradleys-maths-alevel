@@ -828,7 +828,7 @@ window.ALEVEL_QUESTIONS = [
     "question": "A logistics firm tenders for two separate transport contracts: Contract $R$ (regional) and Contract $N$ (national). The managing director estimates that the probability of winning Contract $R$ is $0.60$, the probability of winning Contract $N$ is $0.45$, and the probability of winning both contracts is $0.25$.<br><br><strong>(a)</strong> Show that the probability that the firm wins neither contract is $0.20$.<br><br><strong>(b)</strong> Find the probability that the firm wins exactly one contract.<br><br><strong>(c)</strong> Given that the firm does not win Contract $R$, find the probability that it wins Contract $N$.",
     "steps": [
         "<strong>(a) Probability of neither contract:</strong><br><br>We first find the probability of winning at least one contract using the addition rule of probability:\\begin{aligned} &P(R \\cup N) \\cr &\\quad = P(R) + P(N) - P(R \\cap N) \\cr &\\quad = 0.60 + 0.45 - 0.25 \\cr &\\quad = 0.80 \\end{aligned}The probability of winning neither contract is the complement of the union:\\begin{aligned} P(R' \\cap N') &= 1 - P(R \\cup N) \\cr &= 1 - 0.80 \\cr &= 0.20 \\end{aligned}",
-        "<strong>(b) Probability of exactly one contract:</strong><br><br>Winning exactly one contract corresponds to the union minus the intersection:\\begin{aligned} P(\\text{exactly one}) &= P(R \\cup N) - P(R \\cap N) \\cr &= 0.80 - 0.25 \\cr &= 0.55 \\end{aligned}Alternatively, we can sum the two mutually exclusive exclusive regions directly:\\begin{aligned} &P(R \\cap N') + P(R' \\cap N) \\cr &\\quad = (0.60 - 0.25) + (0.45 - 0.25) \\cr &\\quad = 0.35 + 0.20 \\cr &\\quad = 0.55 \\end{aligned}",
+        "<strong>(b) Probability of exactly one contract:</strong><br><br>Winning exactly one contract corresponds to the union minus the intersection:\\begin{aligned} P(\\text{exactly one}) &= P(R \\cup N) \\cr & \\quad - P(R \\cap N) \\cr &= 0.80 - 0.25 \\cr &= 0.55 \\end{aligned}Alternatively, we can sum the two mutually exclusive exclusive regions directly:\\begin{aligned} &P(R \\cap N') + P(R' \\cap N) \\cr &\\quad = (0.60 - 0.25) + (0.45 - 0.25) \\cr &\\quad = 0.35 + 0.20 \\cr &\\quad = 0.55 \\end{aligned}",
         "<strong>(c) Conditional probability:</strong><br><br>Using the definition of conditional probability:\\begin{aligned} P(N \\mid R') &= \\dfrac{P(N \\cap R')}{P(R')} \\end{aligned}We determine the numerator and denominator separately:\\begin{aligned} P(N \\cap R') &= P(N) - P(R \\cap N) \\cr &= 0.45 - 0.25 \\cr &= 0.20 \\end{aligned}\\begin{aligned} P(R') &= 1 - P(R) \\cr &= 1 - 0.60 \\cr &= 0.40 \\end{aligned}Substituting these values into the ratio gives:\\begin{aligned} P(N \\mid R') &= \\dfrac{0.20}{0.40} \\cr &= 0.5 \\end{aligned}",
         "Final Answer: (a) $0.20$, (b) $0.55$, (c) $0.5$"
     ],
@@ -869,9 +869,9 @@ window.ALEVEL_QUESTIONS = [
     "question": "A quality-assurance system inspects precision components for two types of defect: electrical defect ($E$) and mechanical defect ($M$). For a randomly selected component from Batch 1, $P(E) = 0.15$ and $P(M) = 0.20$.<br><br><strong>(a)</strong> Given that for Batch 1 the two defects occur independently, find the probability that a randomly selected component:<br>&emsp;<strong>(i)</strong> has both defects,<br>&emsp;<strong>(ii)</strong> has at least one defect,<br>&emsp;<strong>(iii)</strong> has an electrical defect, given that it has at least one defect.<br><br><strong>(b)</strong> For a second batch, Batch 2, the probability of an electrical defect remains $0.15$, but the defects are no longer independent. It is found that $P(E \\cup M) = 0.28$ and $P(E \\mid M) = 0.35$. Find $P(M)$ for Batch 2.",
     "steps": [
         "<strong>(a)(i) Probability of both defects (independent):</strong><br><br>Since defects $E$ and $M$ occur independently in Batch 1, the multiplication rule applies directly:\\begin{aligned} P(E \\cap M) &= P(E) \\times P(M) \\cr &= 0.15 \\times 0.20 \\cr &= 0.03 \\end{aligned}",
-        "<strong>(a)(ii) Probability of at least one defect:</strong><br><br>Applying the addition rule of probability:\\begin{aligned} P(E \\cup M) &= P(E) + P(M) - P(E \\cap M) \\cr &= 0.15 + 0.20 - 0.03 \\cr &= 0.32 \\end{aligned}",
+        "<strong>(a)(ii) Probability of at least one defect:</strong><br><br>Applying the addition rule of probability:\\begin{aligned} P(E \\cup M) &= P(E) + P(M)\\cr & \\quad - P(E \\cap M) \\cr &= 0.15 + 0.20 - 0.03 \\cr &= 0.32 \\end{aligned}",
         "<strong>(a)(iii) Conditional probability:</strong><br><br>Applying the conditional probability definition:\\begin{aligned} P(E \\mid E \\cup M) &= \\dfrac{P(E \\cap (E \\cup M))}{P(E \\cup M)} \\end{aligned}Because $E \\subseteq (E \\cup M)$, the intersection simplifies to $E$:\\begin{aligned} P(E \\mid E \\cup M) &= \\dfrac{P(E)}{P(E \\cup M)} \\cr &= \\dfrac{0.15}{0.32} \\cr &= \\dfrac{15}{32} \\quad (0.46875) \\end{aligned}",
-        "<strong>(b) Finding $P(M)$ for Batch 2:</strong><br><br>From the definition of conditional probability:\\begin{aligned} P(E \\cap M) &= P(E \\mid M) P(M) \\cr &= 0.35 P(M) \\end{aligned}Substituting into the general addition rule:\\begin{aligned} &P(E \\cup M) = P(E) + P(M) - P(E \\cap M) \\cr &0.28 = 0.15 + P(M) - 0.35 P(M) \\cr &0.28 - 0.15 = 0.65 P(M) \\cr &0.13 = 0.65 P(M) \\cr &P(M) = \\dfrac{0.13}{0.65} \\cr &P(M) = 0.2 \\end{aligned}",
+        "<strong>(b) Finding $P(M)$ for Batch 2:</strong><br><br>From the definition of conditional probability:\\begin{aligned} P(E \\cap M) &= P(E \\mid M) P(M) \\cr &= 0.35 P(M) \\end{aligned}Substituting into the general addition rule:\\begin{aligned} &P(E \\cup M) = P(E) + P(M) \\cr & \\qquad \\qquad \\quad- P(E \\cap M) \\cr &0.28 = 0.15 + P(M) - 0.35 P(M) \\cr &0.28 - 0.15 = 0.65 P(M) \\cr &0.13 = 0.65 P(M) \\cr &P(M) = \\dfrac{0.13}{0.65} \\cr &P(M) = 0.2 \\end{aligned}",
         "Final Answer: (a)(i) $0.03$, (ii) $0.32$, (iii) $\\dfrac{15}{32}$, (b) $0.2$"
     ],
     "pi_options": [
@@ -910,10 +910,10 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "A survey of $120$ college students investigated membership in three enrichment societies: Chess ($C$), Debate ($D$), and Robotics ($R$). The findings were as follows:<br>• $15$ students belong to none of the three societies.<br>• $65$ students belong to Chess.<br>• $55$ students belong to Debate.<br>• $48$ students belong to Robotics.<br>• $28$ students belong to both Chess and Debate.<br>• $22$ students belong to both Debate and Robotics.<br>• $25$ students belong to both Chess and Robotics.<br>• $x$ students belong to all three societies.<br><br>A student is chosen at random from the survey.<br><br><strong>(a)</strong> Show that $x = 12$.<br><br><strong>(b)</strong> Find the probability that the student belongs to:<br>&emsp;<strong>(i)</strong> exactly two societies,<br>&emsp;<strong>(ii)</strong> Robotics, given that the student does not belong to Chess.<br><br><strong>(c)</strong> Determine, with mathematical justification, whether the events \"belongs to Chess\" and \"belongs to Robotics\" are statistically independent.",
     "steps": [
-        "<strong>(a) Determining $x$:</strong><br><br>The number of students belonging to at least one society is:\\begin{aligned} n(C \\cup D \\cup R) &= 120 - 15 \\cr &= 105 \\end{aligned}Applying the principle of inclusion-exclusion for three sets:\\begin{aligned} &n(C \\cup D \\cup R) \\cr &= n(C) + n(D) + n(R) \\cr &\\quad - n(C \\cap D) - n(D \\cap R) - n(C \\cap R) \\cr &\\quad + n(C \\cap D \\cap R) \\end{aligned}Substituting the known counts:\\begin{aligned} &105 = 65 + 55 + 48 \\cr &\\qquad - (28 + 22 + 25) + x \\cr &105 = 168 - 75 + x \\cr &105 = 93 + x \\cr &x = 105 - 93 \\cr &x = 12 \\end{aligned}",
+        "<strong>(a) Determining $x$:</strong><br><br>The number of students belonging to at least one society is:\\begin{aligned} n(C \\cup D \\cup R) &= 120 - 15 \\cr &= 105 \\end{aligned}Applying the principle of inclusion-exclusion for three sets:\\begin{aligned} &n(C \\cup D \\cup R) \\cr &= n(C) + n(D) + n(R) \\cr &\\quad - n(C \\cap D) - n(D \\cap R)\\cr &\\quad - n(C \\cap R) + n(C \\cap D \\cap R) \\end{aligned}Substituting the known counts:\\begin{aligned} &105 = 65 + 55 + 48 \\cr &\\qquad - (28 + 22 + 25) + x \\cr &105 = 168 - 75 + x \\cr &105 = 93 + x \\cr &x = 105 - 93 \\cr &x = 12 \\end{aligned}",
         "<strong>(b)(i) Probability of exactly two societies:</strong><br><br>We determine the counts belonging to exactly two societies by removing the central intersection $x = 12$ from each two-set overlap:\\begin{aligned} &n(C \\cap D \\text{ only}) = 28 - 12 = 16 \\cr &n(D \\cap R \\text{ only}) = 22 - 12 = 10 \\cr &n(C \\cap R \\text{ only}) = 25 - 12 = 13 \\end{aligned}Summing these counts:\\begin{aligned} n(\\text{exactly two}) &= 16 + 10 + 13 \\cr &= 39 \\end{aligned}Thus the probability is:\\begin{aligned} P(\\text{exactly two}) &= \\dfrac{39}{120} \\cr &= \\dfrac{13}{40} \\quad (0.325) \\end{aligned}",
         "<strong>(b)(ii) Conditional probability $P(R \\mid C')$:</strong><br><br>The total number of students not belonging to Chess is:\\begin{aligned} n(C') &= 120 - 65 \\cr &= 55 \\end{aligned}The number of students in Robotics who do not belong to Chess is:\\begin{aligned} n(R \\cap C') &= n(R) - n(C \\cap R) \\cr &= 48 - 25 \\cr &= 23 \\end{aligned}Hence:\\begin{aligned} P(R \\mid C') &= \\dfrac{n(R \\cap C')}{n(C')} \\cr &= \\dfrac{23}{55} \\end{aligned}",
-        "<strong>(c) Testing statistical independence of $C$ and $R$:</strong><br><br>For $C$ and $R$ to be independent, we require $P(C \\cap R) = P(C) \\times P(R)$.<br><br>Evaluating each probability:\\begin{aligned} P(C \\cap R) &= \\dfrac{25}{120} = \\dfrac{5}{24} \\approx 0.2083 \\cr P(C) &= \\dfrac{65}{120} = \\dfrac{13}{24} \\cr P(R) &= \\dfrac{48}{120} = \\dfrac{2}{5} \\end{aligned}Evaluating the product:\\begin{aligned} P(C) \\times P(R) &= \\dfrac{13}{24} \\times \\dfrac{2}{5} \\cr &= \\dfrac{26}{120} = \\dfrac{13}{60} \\approx 0.2167 \\end{aligned}Since $\\dfrac{5}{24} \\neq \\dfrac{13}{60}$, the events are not independent.",
+        "<strong>(c) Testing statistical independence of $C$ and $R$:</strong><br><br>For $C$ and $R$ to be independent, we require $P(C \\cap R) = P(C) \\times P(R)$.<br><br>Evaluating each probability:\\begin{aligned} P(C \\cap R) &= \\dfrac{25}{120} = \\dfrac{5}{24} \\approx 0.2083 \\cr P(C) &= \\dfrac{65}{120} = \\dfrac{13}{24} \\cr P(R) &= \\dfrac{48}{120} = \\dfrac{2}{5} \\end{aligned}Evaluating the product:\\begin{aligned} P(C) \\times P(R) &= \\dfrac{13}{24} \\times \\dfrac{2}{5} \\cr &= \\dfrac{26}{120}\\cr & = \\dfrac{13}{60}\\cr & \\approx 0.2167 \\end{aligned}Since $\\dfrac{5}{24} \\neq \\dfrac{13}{60}$, the events are not independent.",
         "Final Answer: (a) $x = 12$, (b)(i) $\\dfrac{13}{40}$, (ii) $\\dfrac{23}{55}$, (c) Not independent as $P(C \\cap R) \\neq P(C) \\times P(R)$"
     ],
     "pi_options": [
@@ -933,7 +933,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Pairwise Overlaps in 3-Set Venns",
-        "content": "A frequent mistake in three-set Venn problems is assuming that 'belongs to Chess and Debate' means *only* those two. In examination questions, stated intersections include the central three-way region $x$ unless the word 'only' is explicitly included."
+        "content": "A frequent mistake in three-set Venn problems is assuming that 'belongs to Chess and Debate' means <em>only</em> those two. In examination questions, stated intersections include the central three-way region $x$ unless the word 'only' is explicitly included."
     }
 },
 {
@@ -994,7 +994,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "Two events $A$ and $B$ are such that $P(A) = 0.60$, $P(B) = p$, and $P(A \\cup B) = 0.85$.<br><br><strong>(a)</strong> Find an expression for $P(A \\cap B)$ in terms of $p$.<br><br><strong>(b)</strong> Determine the range of possible values of $p$.<br><br><strong>(c)</strong> Given that $A$ and $B$ are independent:<br>&emsp;<strong>(i)</strong> show that $p = 0.625$,<br>&emsp;<strong>(ii)</strong> find the value of $P(A' \\mid B)$.<br><br><strong>(d)</strong> Given instead that $P(A \\mid B) = 0.50$, find the value of $p$.",
     "steps": [
-        "<strong>(a) Expression for $P(A \\cap B)$:</strong><br><br>Applying the addition rule of probability:\\begin{aligned} &P(A \\cup B) = P(A) + P(B) - P(A \\cap B) \\cr &0.85 = 0.60 + p - P(A \\cap B) \\cr &P(A \\cap B) = p + 0.60 - 0.85 \\cr &P(A \\cap B) = p - 0.25 \\end{aligned}",
+        "<strong>(a) Expression for $P(A \\cap B)$:</strong><br><br>Applying the addition rule of probability:\\begin{aligned} &P(A \\cup B) = P(A) + P(B)\\cr & \\qquad- P(A \\cap B) \\cr &0.85 = 0.60 + p - P(A \\cap B) \\cr &P(A \\cap B) = p + 0.60 - 0.85 \\cr &P(A \\cap B) = p - 0.25 \\end{aligned}",
         "<strong>(b) Range of possible values of $p$:</strong><br><br>Every probability must lie between $0$ and $1$.<br><br>Since the intersection cannot be negative:\\begin{aligned} P(A \\cap B) \\ge 0 &\\implies p - 0.25 \\ge 0 \\cr &\\implies p \\ge 0.25 \\end{aligned}Furthermore, since $B \\subseteq (A \\cup B)$:\\begin{aligned} P(B) \\le P(A \\cup B) &\\implies p \\le 0.85 \\end{aligned}Therefore, the allowable range for $p$ is:\\begin{aligned} 0.25 \\le p \\le 0.85 \\end{aligned}",
         "<strong>(c)(i) Showing $p = 0.625$ under independence:</strong><br><br>If $A$ and $B$ are independent, $P(A \\cap B) = P(A) \\times P(B)$:\\begin{aligned} &p - 0.25 = 0.60p \\cr &p - 0.60p = 0.25 \\cr &0.40p = 0.25 \\cr &p = \\dfrac{0.25}{0.40} \\cr &p = 0.625 \\end{aligned}",
         "<strong>(c)(ii) Value of $P(A' \\mid B)$:</strong><br><br>Because $A$ and $B$ are independent, knowing that $B$ has occurred does not affect the probability of $A$ or its complement $A'$:\\begin{aligned} P(A' \\mid B) &= P(A') \\cr &= 1 - P(A) \\cr &= 1 - 0.60 \\cr &= 0.4 \\end{aligned}",
@@ -1018,7 +1018,211 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Independence Simplifies Conditionals",
-        "content": "In part (c)(ii), do not waste time setting up Bayes' formula: if $A$ and $B$ are independent, knowing that $B$ has occurred provides zero information about $A$ (or $A'$). Hence $P(A' \\mid B) = P(A') = 1 - P(A) = 0.40$ immediately."
+        "content": "In part (c)(ii), do not waste time setting up Bayes' formula: if $A$ and $B$ are independent, knowing that $B$ has occurred provides zero information about $A$ (or $A'$). Hence \\begin{aligned}P(A' \\mid B) & = P(A')\\cr &= 1 - P(A) \\cr &= 0.40\\end{aligned} immediately."
+    }
+},
+{
+    "id": "050226",
+    "group_id": "050226",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Sequential Events",
+        "Contingency Tables",
+        "Conditional Probability"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> An autonomous exploration rover is programmed to cross a difficult terrain ditch. In a trial run, it is allowed up to two attempts to cross the ditch, but if it succeeds on its first attempt, it does not attempt the crossing again. The probability that the rover is successful on its first attempt is $p$. If it fails the first attempt, the probability that it is successful on its second attempt is also $p$. The overall probability that the rover successfully clears the ditch within the two attempts is $0.51$.<br>Find the value of $p$.<br><br><strong>(b)</strong> The following table shows the numbers of research officers employed by a wildlife conservation trust, classified by base region and scientific department:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr style='border-bottom:1px solid #ccc;'><th style='padding:6px; text-align:left;'>Region</th><th style='padding:6px;'>Ecology</th><th style='padding:6px;'>Genetics</th></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'><strong>North</strong></td><td style='padding:6px;'>14</td><td style='padding:6px;'>6</td></tr><tr><td style='padding:6px; text-align:left;'><strong>South</strong></td><td style='padding:6px;'>7</td><td style='padding:6px;'>8</td></tr></table>Two research officers are chosen at random without replacement to attend an international symposium. Given that the first officer chosen is based in the North region, find the probability that both chosen officers are from the Ecology department.",
+    "steps": [
+        "<strong>(a) Setting up the probability equation for $p$:</strong><br><br>The rover clears the ditch if it succeeds on attempt 1, or fails attempt 1 and succeeds on attempt 2:\\begin{aligned} &P(\\text{clears}) \\cr &\\quad = P(\\text{1st}) + P(\\text{fails 1st})P(\\text{2nd}) \\cr &\\quad = p + (1 - p)p \\cr &\\quad = 2p - p^2 \\end{aligned}Equating this to $0.51$ gives a quadratic equation:\\begin{aligned} &2p - p^2 = 0.51 \\cr &p^2 - 2p + 0.51 = 0 \\cr &(p - 0.3)(p - 1.7) = 0 \\end{aligned}Since $p$ represents a probability, $0 \\le p \\le 1$, we reject $p = 1.7$:\\begin{aligned} p = 0.3 \\end{aligned}",
+        "<strong>(b) Conditional probability without replacement:</strong><br><br>First, determine the totals from the table:<br>• Total officers: $14 + 6 + 7 + 8 = 35$<br>• North officers: $14 + 6 = 20$<br>• Ecology officers: $14 + 7 = 21$<br><br>We require $P(\\text{both Ecology} \\mid \\text{1st North})$. Using the conditional definition:\\begin{aligned} &P(\\text{both Eco} \\mid \\text{1st North}) \\cr &\\quad = \\dfrac{P(\\text{1st North Eco} \\cap \\text{2nd Eco})}{P(\\text{1st North})} \\end{aligned}Calculating the joint and marginal probabilities:\\begin{aligned} P(\\text{1st North}) &= \\dfrac{20}{35} \\end{aligned}For the numerator, the first officer must be North Ecology and the second must be any remaining Ecology officer:\\begin{aligned} &P(\\text{1st North Eco} \\cap \\text{2nd Eco}) \\cr &\\quad = \\dfrac{14}{35} \\times \\dfrac{20}{34} \\end{aligned}Substituting these into the conditional probability expression:\\begin{aligned} &P(\\text{both Eco} \\mid \\text{1st North}) \\cr &\\quad = \\dfrac{\\frac{14}{35} \\times \\frac{20}{34}}{\\frac{20}{35}} \\cr &\\quad = \\dfrac{14}{20} \\times \\dfrac{20}{34} \\cr &\\quad = \\dfrac{14}{34} \\cr &\\quad = \\dfrac{7}{17} \\end{aligned}",
+        "Final Answer: (a) $p = 0.3$, (b) $\\dfrac{7}{17}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $p = 0.3$, (b) $\\dfrac{14}{35}$",
+            "feedback": "In part (b), you evaluated the probability of picking a single North Ecology officer out of the total staff, rather than finding the conditional probability that both chosen officers belong to Ecology given that the first is from the North."
+        },
+        {
+            "ans": "(a) $p = 1.7$, (b) $\\dfrac{7}{17}$",
+            "feedback": "In part (a), you solved the quadratic equation correctly but failed to reject the root $p = 1.7$. Probabilities must strictly satisfy $0 \\le p \\le 1$."
+        },
+        {
+            "ans": "(a) $p = 0.3$, (b) $\\dfrac{6}{17}$",
+            "feedback": "In part (b), you used with-replacement probabilities or incorrectly reduced the remaining pool of Ecology officers to $19$ instead of $20$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Cancelling the First Pick",
+        "content": "Notice how the fraction simplifies directly when applying conditional probability. The condition that the first officer is from the North immediately restricts the first selection to the $20$ North officers, of which $14$ are Ecology: $\\dfrac{14}{20}$. Then, for the second pick, $20$ Ecology officers remain out of $34$ total staff: $\\dfrac{14}{20} \\times \\dfrac{20}{34} = \\dfrac{14}{34} = \\dfrac{7}{17}$."
+    }
+},
+{
+    "id": "050227",
+    "group_id": "050226",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Sequential Events",
+        "Quadratic Probability Models",
+        "Sampling Without Replacement"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> A candidate takes a professional certification test. She is permitted up to two attempts. The probability that she passes on her first attempt is $p$. If she fails the first attempt, she attends an intensive revision workshop, and the probability that she passes on her second attempt increases to $p + 0.20$. If she passes on her first attempt, she does not take the test again. The probability that she passes the test within the two attempts is $0.76$.<br>Find the value of $p$.<br><br><strong>(b)</strong> A healthcare audit classifies $40$ medical consultants by employment status and specialty:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr style='border-bottom:1px solid #ccc;'><th style='padding:6px; text-align:left;'>Status</th><th style='padding:6px;'>Surgical</th><th style='padding:6px;'>Medical</th></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'><strong>Full-time</strong></td><td style='padding:6px;'>16</td><td style='padding:6px;'>8</td></tr><tr><td style='padding:6px; text-align:left;'><strong>Part-time</strong></td><td style='padding:6px;'>6</td><td style='padding:6px;'>10</td></tr></table>Two consultants are chosen at random without replacement to serve on an advisory panel. Given that the first consultant chosen is employed Full-time, find the probability that both chosen consultants belong to the Surgical specialty.",
+    "steps": [
+        "<strong>(a) Setting up and solving the quadratic equation for $p$:</strong><br><br>The candidate passes if she succeeds on attempt 1, or fails attempt 1 and succeeds on attempt 2:\\begin{aligned} &P(\\text{passes}) \\cr &\\quad = p + (1 - p)(p + 0.20) \\cr &\\quad = p + p + 0.20 - p^2 - 0.20p \\cr &\\quad = 1.8p - p^2 + 0.20 \\end{aligned}Equating this expression to $0.76$:\\begin{aligned} &1.8p - p^2 + 0.20 = 0.76 \\cr &p^2 - 1.8p + 0.56 = 0 \\cr &(p - 0.4)(p - 1.4) = 0 \\end{aligned}Since $p$ is a probability, $0 \\le p \\le 1$, we reject $p = 1.4$:\\begin{aligned} p = 0.4 \\end{aligned}",
+        "<strong>(b) Calculating the conditional probability:</strong><br><br>Find the group totals from the table:<br>• Total consultants: $16 + 8 + 6 + 10 = 40$<br>• Full-time consultants: $16 + 8 = 24$<br>• Surgical consultants: $16 + 6 = 22$<br><br>For both consultants to be Surgical given that the first is Full-time, the first must be a Full-time Surgical consultant and the second must be any remaining Surgical consultant:\\begin{aligned} &P(\\text{1st FT Surg} \\mid \\text{1st FT}) \\cr &\\quad = \\dfrac{16}{24} = \\dfrac{2}{3} \\end{aligned}Given that the first consultant was Surgical, $21$ Surgical consultants remain out of $39$ total remaining consultants:\\begin{aligned} &P(\\text{2nd Surg} \\mid \\text{1st FT Surg}) \\cr &\\quad = \\dfrac{21}{39} = \\dfrac{7}{13} \\end{aligned}Multiplying these dependent probabilities:\\begin{aligned} &P(\\text{both Surg} \\mid \\text{1st FT}) \\cr &\\quad = \\dfrac{2}{3} \\times \\dfrac{7}{13} \\cr &\\quad = \\dfrac{14}{39} \\end{aligned}",
+        "Final Answer: (a) $p = 0.4$, (b) $\\dfrac{14}{39}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $p = 0.4$, (b) $\\dfrac{16}{39}$",
+            "feedback": "In part (b), you forgot to reduce the number of Surgical consultants by $1$ for the second pick, using $\\dfrac{22}{39}$ instead of $\\dfrac{21}{39}$."
+        },
+        {
+            "ans": "(a) $p = 1.4$, (b) $\\dfrac{14}{39}$",
+            "feedback": "In part (a), you accepted the extraneous root $p = 1.4$. A probability cannot exceed $1$."
+        },
+        {
+            "ans": "(a) $p = 0.4$, (b) $\\dfrac{7}{26}$",
+            "feedback": "In part (b), you calculated the unconditional joint probability of selecting two Surgical consultants without conditioning on the first consultant being Full-time."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Check the Boundary Range",
+        "content": "Whenever solving quadratic equations in probability problems, always check the physical feasibility of both algebraic solutions. Since any probability must satisfy $0 \\le p \\le 1$, an extraneous root like $p = 1.4$ must be explicitly rejected."
+    }
+},
+{
+    "id": "050228",
+    "group_id": "050226",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Geometric Trials",
+        "Three-Way Contingency Tables",
+        "Sampling Without Replacement"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> A trainee technician attempts a complex precision calibration task. The probability that he completes the calibration successfully on any single attempt is a constant probability $p$, where $0 < p < 1$. Once he succeeds, no further attempts are made. The probability that he succeeds on his second attempt is $0.24$.<br>Given that $p < 0.50$:<br>&emsp;<strong>(i)</strong> find the value of $p$,<br>&emsp;<strong>(ii)</strong> find the probability that he requires all three attempts and succeeds on the third attempt.<br><br><strong>(b)</strong> A technology firm employs $60$ software engineers classified by primary programming language and working arrangement:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr style='border-bottom:1px solid #ccc;'><th style='padding:6px; text-align:left;'>Language</th><th style='padding:6px;'>Remote</th><th style='padding:6px;'>Office</th></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'><strong>Python</strong></td><td style='padding:6px;'>18</td><td style='padding:6px;'>10</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'><strong>Java</strong></td><td style='padding:6px;'>12</td><td style='padding:6px;'>8</td></tr><tr><td style='padding:6px; text-align:left;'><strong>C++</strong></td><td style='padding:6px;'>6</td><td style='padding:6px;'>6</td></tr></table>Two software engineers are selected at random without replacement to lead a pilot project. Given that the first engineer selected works Remotely, find the probability that both selected engineers specialise in Python.",
+    "steps": [
+        "<strong>(a)(i) Finding the value of $p$:</strong><br><br>Success on the second attempt requires failing the first attempt and succeeding on the second:\\begin{aligned} P(\\text{success on 2nd}) &= (1 - p)p \\cr 0.24 &= p - p^2 \\cr p^2 - p + 0.24 &= 0 \\cr (p - 0.4)(p - 0.6) &= 0 \\end{aligned}Since we are given that $p < 0.50$:\\begin{aligned} p = 0.4 \\end{aligned}",
+        "<strong>(a)(ii) Probability of succeeding on the third attempt:</strong><br><br>This corresponds to failing the first two attempts and succeeding on the third:\\begin{aligned} P(\\text{fail, fail, pass}) &= (1 - p)^2 p \\cr &= (1 - 0.4)^2 \\times 0.4 \\cr &= (0.6)^2 \\times 0.4 \\cr &= 0.36 \\times 0.4 \\cr &= 0.144 \\end{aligned}",
+        "<strong>(b) Conditional probability without replacement:</strong><br><br>Determine the totals from the transposed table:<br>• Total engineers: $60$<br>• Remote engineers: $18 + 12 + 6 = 36$<br>• Python engineers: $18 + 10 = 28$<br><br>Given that the first engineer works Remotely, the probability that this engineer specialises in Python is:\\begin{aligned} P(\\text{1st Python} \\mid \\text{1st Remote}) &= \\dfrac{18}{36} = \\dfrac{1}{2} \\end{aligned}For the second selection, $27$ Python engineers remain out of $59$ total remaining engineers:\\begin{aligned} P(\\text{2nd Python} \\mid \\text{1st Python}) &= \\dfrac{27}{59} \\end{aligned}Multiplying these probabilities:\\begin{aligned} &P(\\text{both Python} \\mid \\text{1st Remote}) \\cr &\\quad = \\dfrac{1}{2} \\times \\dfrac{27}{59} \\cr &\\quad = \\dfrac{27}{118} \\end{aligned}",
+        "Final Answer: (a)(i) $p = 0.4$, (ii) $0.144$, (b) $\\dfrac{27}{118}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $p = 0.6$, (ii) $0.144$, (b) $\\dfrac{27}{118}$",
+            "feedback": "In part (a)(i), you chose the root $p = 0.6$, violating the given condition that $p < 0.50$."
+        },
+        {
+            "ans": "(a)(i) $p = 0.4$, (ii) $0.216$, (b) $\\dfrac{27}{118}$",
+            "feedback": "In part (a)(ii), you computed $(1 - p)^3 = (0.6)^3 = 0.216$, which is the probability of failing all three attempts rather than succeeding on the third attempt."
+        },
+        {
+            "ans": "(a)(i) $p = 0.4$, (ii) $0.144$, (b) $\\dfrac{9}{59}$",
+            "feedback": "In part (b), you used $\\dfrac{18}{60}$ as the initial probability instead of conditioning on the first engineer being Remote ($\\dfrac{18}{36}$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Transposed Contingency Tables",
+        "content": "When reading tables where categories are arranged by row rather than column, always sum along the relevant row or column carefully before setting up conditional fractions. Here, summing the Remote column gives $18 + 12 + 6 = 36$, which forms the reduced sample space for the first pick."
+    }
+},
+{
+    "id": "050229",
+    "group_id": "050226",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Law of Total Probability",
+        "Bayes' Theorem",
+        "Sampling Without Replacement"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> In a tennis tournament, a player is allowed up to two serves on each point. The probability that her first serve is in is $0.65$. If her first serve is in, the probability that she wins the point is $0.70$. If her first serve is out (a fault), she takes a second serve. The probability that her second serve is in is $0.80$. If her second serve is in, the probability that she wins the point is $0.45$. If her second serve is out (a double fault), she loses the point immediately.<br>&emsp;<strong>(i)</strong> Find the probability that the player wins the point on her serve.<br>&emsp;<strong>(ii)</strong> Given that the player won the point, find the probability that she won it on her second serve.<br><br><strong>(b)</strong> A Sixth Form college records the science subject chosen by $80$ students across two year groups:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr style='border-bottom:1px solid #ccc;'><th style='padding:6px; text-align:left;'>Subject</th><th style='padding:6px;'>Year 12</th><th style='padding:6px;'>Year 13</th></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'><strong>Physics</strong></td><td style='padding:6px;'>15</td><td style='padding:6px;'>10</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'><strong>Chemistry</strong></td><td style='padding:6px;'>12</td><td style='padding:6px;'>14</td></tr><tr><td style='padding:6px; text-align:left;'><strong>Biology</strong></td><td style='padding:6px;'>18</td><td style='padding:6px;'>11</td></tr></table>Two students are chosen at random without replacement to represent the college at a science fair. Given that the first student chosen is from Year 13, find the probability that both chosen students study Physics.",
+    "steps": [
+        "<strong>(a)(i) Overall probability of winning the point:</strong><br><br>The player can win the point via two mutually exclusive sequences:<br>• First serve in and win: $0.65 \\times 0.70 = 0.455$<br>• First serve out, second serve in and win: $(1 - 0.65) \\times 0.80 \\times 0.45 = 0.35 \\times 0.80 \\times 0.45 = 0.126$<br><br>Summing these probabilities:\\begin{aligned} P(\\text{win}) &= 0.455 + 0.126 \\cr &= 0.581 \\end{aligned}",
+        "<strong>(a)(ii) Conditional probability of winning on second serve:</strong><br><br>Applying Bayes' theorem:\\begin{aligned} &P(\\text{2nd serve win} \\mid \\text{win}) \\cr &\\quad = \\dfrac{P(\\text{2nd serve win})}{P(\\text{win})} \\cr &\\quad = \\dfrac{0.126}{0.581} \\cr &\\quad = \\dfrac{126}{581} \\cr &\\quad = \\dfrac{18}{83} \\end{aligned}",
+        "<strong>(b) Two selections without replacement:</strong><br><br>Total students: $80$.<br>• Total Year 13: $10 + 14 + 11 = 35$<br>• Total Physics: $15 + 10 = 25$<br><br>Given that the first student is from Year 13, the probability that this student studies Physics is:\\begin{aligned} P(\\text{1st Physics} \\mid \\text{1st Y13}) &= \\dfrac{10}{35} = \\dfrac{2}{7} \\end{aligned}For the second selection, $24$ Physics students remain out of $79$ total remaining students:\\begin{aligned} P(\\text{2nd Physics} \\mid \\text{1st Physics}) &= \\dfrac{24}{79} \\end{aligned}Multiplying these probabilities:\\begin{aligned} &P(\\text{both Physics} \\mid \\text{1st Y13}) \\cr &\\quad = \\dfrac{2}{7} \\times \\dfrac{24}{79} \\cr &\\quad = \\dfrac{48}{553} \\end{aligned}",
+        "Final Answer: (a)(i) $0.581$, (ii) $\\dfrac{18}{83}$, (b) $\\dfrac{48}{553}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $0.581$, (ii) $0.126$, (b) $\\dfrac{48}{553}$",
+            "feedback": "In part (a)(ii), you stated the joint probability $0.126$ rather than dividing by $P(\\text{win}) = 0.581$ to obtain the conditional probability."
+        },
+        {
+            "ans": "(a)(i) $0.815$, (ii) $\\dfrac{18}{83}$, (b) $\\dfrac{48}{553}$",
+            "feedback": "In part (a)(i), you did not account for the probability of faulting the first serve ($0.35$), erroneously adding $(0.65 \\times 0.70) + (0.80 \\times 0.45)$."
+        },
+        {
+            "ans": "(a)(i) $0.581$, (ii) $\\dfrac{18}{83}$, (b) $\\dfrac{5}{56}$",
+            "feedback": "In part (b), you sampled with replacement or calculated the joint unconditional probability over the full $80$ students instead of conditioning on Year 13."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Don't Forget the First Fault",
+        "content": "In multi-stage service models, a very common error in part (a)(i) is multiplying $0.80 \\times 0.45$ without the preceding factor of $0.35$. The second serve is only taken when the first serve is a fault, so the branch probability must begin with $1 - 0.65 = 0.35$."
+    }
+},
+{
+    "id": "050230",
+    "group_id": "050226",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Geometric Models",
+        "Contingency Tables",
+        "Complementary Events"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> A board game requires a player to roll a double six with two dice to begin play. With a pair of weighted dice, the probability of rolling a double six on any single throw is $p$. A player is allowed up to two throws to roll a double six, stopping immediately if successful on the first throw. The probability that the player begins play within the two throws is $\\frac{7}{16}$.<br>&emsp;<strong>(i)</strong> Show that $p = \\frac{1}{4}$.<br>&emsp;<strong>(ii)</strong> If the player is instead allowed up to three throws, find the probability that they roll their first double six on the third throw.<br><br><strong>(b)</strong> A veterinary clinic treats $50$ animals over a weekend, categorized by appointment type and species:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr style='border-bottom:1px solid #ccc;'><th style='padding:6px; text-align:left;'>Appointment</th><th style='padding:6px;'>Dog</th><th style='padding:6px;'>Cat</th></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'><strong>Routine</strong></td><td style='padding:6px;'>16</td><td style='padding:6px;'>14</td></tr><tr><td style='padding:6px; text-align:left;'><strong>Emergency</strong></td><td style='padding:6px;'>8</td><td style='padding:6px;'>12</td></tr></table>Two animal records are chosen at random without replacement.<br>&emsp;<strong>(i)</strong> Given that the first record chosen is an Emergency appointment, find the probability that both records chosen are for Dogs.<br>&emsp;<strong>(ii)</strong> Given that both records chosen are for Cats, find the probability that at least one of the two appointments was an Emergency appointment.",
+    "steps": [
+        "<strong>(a)(i) Showing $p = \\frac{1}{4}$:</strong><br><br>The probability of rolling a double six within two throws is:\\begin{aligned} &P(\\text{success}) \\cr &\\quad = p + (1 - p)p \\cr &\\quad = 2p - p^2 \\end{aligned}Setting this equal to $\\frac{7}{16}$:\\begin{aligned} &2p - p^2 = \\dfrac{7}{16} \\cr &32p - 16p^2 = 7 \\cr &16p^2 - 32p + 7 = 0 \\cr &(4p - 1)(4p - 7) = 0 \\end{aligned}Since $p$ is a probability, $p \\le 1$, rejecting $p = \\frac{7}{4}$ gives:\\begin{aligned} p = \\dfrac{1}{4} \\end{aligned}",
+        "<strong>(a)(ii) Probability of success on the third throw:</strong><br><br>This requires two initial failures followed by a success:\\begin{aligned} P(\\text{fail, fail, pass}) &= (1 - p)^2 p \\cr &= \\left(1 - \\dfrac{1}{4}\\right)^2 \\times \\dfrac{1}{4} \\cr &= \\left(\\dfrac{3}{4}\\right)^2 \\times \\dfrac{1}{4} \\cr &= \\dfrac{9}{16} \\times \\dfrac{1}{4} \\cr &= \\dfrac{9}{64} \\end{aligned}",
+        "<strong>(b)(i) Finding $P(\\text{both Dogs} \\mid \\text{1st Emergency})$:</strong><br><br>From the table:<br>• Emergency appointments: $8 + 12 = 20$<br>• Total Dogs: $16 + 8 = 24$<br><br>The first appointment is an Emergency Dog with conditional probability:\\begin{aligned} P(\\text{1st Dog} \\mid \\text{1st Emer}) &= \\dfrac{8}{20} = \\dfrac{2}{5} \\end{aligned}For the second selection, $23$ Dogs remain out of $49$ total remaining records:\\begin{aligned} P(\\text{2nd Dog} \\mid \\text{1st Dog}) &= \\dfrac{23}{49} \\end{aligned}Multiplying these probabilities:\\begin{aligned} &P(\\text{both Dogs} \\mid \\text{1st Emer}) \\cr &\\quad = \\dfrac{2}{5} \\times \\dfrac{23}{49} \\cr &\\quad = \\dfrac{46}{245} \\end{aligned}",
+        "<strong>(b)(ii) Finding $P(\\ge 1\\text{ Emer} \\mid \\text{both Cats})$:</strong><br><br>There are $14 + 12 = 26$ Cats in total, of which $14$ are Routine and $12$ are Emergency.<br><br>We use the complementary probability of selecting two Routine appointments given both are Cats:\\begin{aligned} &P(\\text{both Rout} \\mid \\text{both Cats}) \\cr &\\quad = \\dfrac{14}{26} \\times \\dfrac{13}{25} \\cr &\\quad = \\dfrac{7}{13} \\times \\dfrac{13}{25} \\cr &\\quad = \\dfrac{7}{25} \\end{aligned}Subtracting from $1$:\\begin{aligned} &P(\\ge 1\\text{ Emer} \\mid \\text{both Cats}) \\cr &\\quad = 1 - \\dfrac{7}{25} \\cr &\\quad = \\dfrac{18}{25} \\end{aligned}",
+        "Final Answer: (a)(i) $p = \\dfrac{1}{4}$, (ii) $\\dfrac{9}{64}$, (b)(i) $\\dfrac{46}{245}$, (ii) $\\dfrac{18}{25}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $p = \\dfrac{1}{4}$, (ii) $\\dfrac{27}{64}$, (b)(i) $\\dfrac{46}{245}$, (ii) $\\dfrac{18}{25}$",
+            "feedback": "In part (a)(ii), you calculated $(1 - p)^3 = \\left(\\dfrac{3}{4}\\right)^3 = \\dfrac{27}{64}$, which is the probability of failing all three throws rather than succeeding on the third throw."
+        },
+        {
+            "ans": "(a)(i) $p = \\dfrac{7}{4}$, (ii) $\\dfrac{9}{64}$, (b)(i) $\\dfrac{46}{245}$, (ii) $\\dfrac{18}{25}$",
+            "feedback": "In part (a)(i), you selected the root $p = \\dfrac{7}{4} = 1.75$. Probabilities cannot be greater than $1$."
+        },
+        {
+            "ans": "(a)(i) $p = \\dfrac{1}{4}$, (ii) $\\dfrac{9}{64}$, (b)(i) $\\dfrac{46}{245}$, (ii) $\\dfrac{7}{25}$",
+            "feedback": "In part (b)(ii), $\\dfrac{7}{25}$ is the probability that both Cat appointments were Routine. To find the probability of at least one Emergency appointment, you must subtract this from $1$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Complementary Shortcut with Two Cats",
+        "content": "For 'at least one' conditions within a restricted subpopulation, it is almost always faster to use $1 - P(\\text{none})$. In part (b)(ii), once we restrict to the $26$ Cats, the probability that neither is an Emergency appointment is simply the probability that both are Routine: $\\dfrac{14}{26} \\times \\dfrac{13}{25} = \\dfrac{7}{25}$. Subtracting from $1$ gives $\\dfrac{18}{25}$ immediately."
     }
 }
 ];
