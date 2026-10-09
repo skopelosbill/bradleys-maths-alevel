@@ -1119,7 +1119,7 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
         "<strong>(a)(i) Finding the value of $p$:</strong><br><br>Success on the second attempt requires failing the first attempt and succeeding on the second:\\begin{aligned} P(\\text{success on 2nd}) &= (1 - p)p \\cr 0.24 &= p - p^2 \\cr p^2 - p + 0.24 &= 0 \\cr (p - 0.4)(p - 0.6) &= 0 \\end{aligned}Since we are given that $p < 0.50$:\\begin{aligned} p = 0.4 \\end{aligned}",
         "<strong>(a)(ii) Probability of succeeding on the third attempt:</strong><br><br>This corresponds to failing the first two attempts and succeeding on the third:\\begin{aligned} P(\\text{fail, fail, pass}) &= (1 - p)^2 p \\cr &= (1 - 0.4)^2 \\times 0.4 \\cr &= (0.6)^2 \\times 0.4 \\cr &= 0.36 \\times 0.4 \\cr &= 0.144 \\end{aligned}",
-        "<strong>(b) Conditional probability without replacement:</strong><br><br>Determine the totals from the transposed table:<br>• Total engineers: $60$<br>• Remote engineers: $18 + 12 + 6 = 36$<br>• Python engineers: $18 + 10 = 28$<br><br>Given that the first engineer works Remotely, the probability that this engineer specialises in Python is:\\begin{aligned} P(\\text{1st Python} \\mid \\text{1st Remote}) &= \\dfrac{18}{36} = \\dfrac{1}{2} \\end{aligned}For the second selection, $27$ Python engineers remain out of $59$ total remaining engineers:\\begin{aligned} P(\\text{2nd Python} \\mid \\text{1st Python}) &= \\dfrac{27}{59} \\end{aligned}Multiplying these probabilities:\\begin{aligned} &P(\\text{both Python} \\mid \\text{1st Remote}) \\cr &\\quad = \\dfrac{1}{2} \\times \\dfrac{27}{59} \\cr &\\quad = \\dfrac{27}{118} \\end{aligned}",
+        "<strong>(b) Conditional probability without replacement:</strong><br><br>Determine the totals from the transposed table:<br>• Total engineers: $60$<br>• Remote engineers: $18 + 12 + 6 = 36$<br>• Python engineers: $18 + 10 = 28$<br><br>Given that the first engineer works Remotely, the probability that this engineer specialises in Python is:\\begin{aligned} P(\\text{1st Python} \\mid \\text{1st Remote}) &= \\dfrac{18}{36}\\cr & = \\dfrac{1}{2} \\end{aligned}For the second selection, $27$ Python engineers remain out of $59$ total remaining engineers:\\begin{aligned} P(\\text{2nd Python} \\mid \\text{1st Python}) &= \\dfrac{27}{59} \\end{aligned}Multiplying these probabilities:\\begin{aligned} &P(\\text{both Python} \\mid \\text{1st Remote}) \\cr &\\quad = \\dfrac{1}{2} \\times \\dfrac{27}{59} \\cr &\\quad = \\dfrac{27}{118} \\end{aligned}",
         "Final Answer: (a)(i) $p = 0.4$, (ii) $0.144$, (b) $\\dfrac{27}{118}$"
     ],
     "pi_options": [
@@ -1158,7 +1158,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "<strong>(a)</strong> In a tennis tournament, a player is allowed up to two serves on each point. The probability that her first serve is in is $0.65$. If her first serve is in, the probability that she wins the point is $0.70$. If her first serve is out (a fault), she takes a second serve. The probability that her second serve is in is $0.80$. If her second serve is in, the probability that she wins the point is $0.45$. If her second serve is out (a double fault), she loses the point immediately.<br>&emsp;<strong>(i)</strong> Find the probability that the player wins the point on her serve.<br>&emsp;<strong>(ii)</strong> Given that the player won the point, find the probability that she won it on her second serve.<br><br><strong>(b)</strong> A Sixth Form college records the science subject chosen by $80$ students across two year groups:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr style='border-bottom:1px solid #ccc;'><th style='padding:6px; text-align:left;'>Subject</th><th style='padding:6px;'>Year 12</th><th style='padding:6px;'>Year 13</th></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'><strong>Physics</strong></td><td style='padding:6px;'>15</td><td style='padding:6px;'>10</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'><strong>Chemistry</strong></td><td style='padding:6px;'>12</td><td style='padding:6px;'>14</td></tr><tr><td style='padding:6px; text-align:left;'><strong>Biology</strong></td><td style='padding:6px;'>18</td><td style='padding:6px;'>11</td></tr></table>Two students are chosen at random without replacement to represent the college at a science fair. Given that the first student chosen is from Year 13, find the probability that both chosen students study Physics.",
     "steps": [
-        "<strong>(a)(i) Overall probability of winning the point:</strong><br><br>The player can win the point via two mutually exclusive sequences:<br>• First serve in and win: $0.65 \\times 0.70 = 0.455$<br>• First serve out, second serve in and win: $(1 - 0.65) \\times 0.80 \\times 0.45 = 0.35 \\times 0.80 \\times 0.45 = 0.126$<br><br>Summing these probabilities:\\begin{aligned} P(\\text{win}) &= 0.455 + 0.126 \\cr &= 0.581 \\end{aligned}",
+        "<strong>(a)(i) Overall probability of winning the point:</strong><br><br>The player can win the point via two mutually exclusive sequences:<br>• First serve in and win: $0.65 \\times 0.70 = 0.455$<br>• First serve out, second serve in and win: $$(1 - 0.65) \\times 0.80 \\times 0.45$$ $$= 0.35 \\times 0.80 \\times 0.45$$ $$= 0.126$$ Summing these probabilities:\\begin{aligned} P(\\text{win}) &= 0.455 + 0.126 \\cr &= 0.581 \\end{aligned}",
         "<strong>(a)(ii) Conditional probability of winning on second serve:</strong><br><br>Applying Bayes' theorem:\\begin{aligned} &P(\\text{2nd serve win} \\mid \\text{win}) \\cr &\\quad = \\dfrac{P(\\text{2nd serve win})}{P(\\text{win})} \\cr &\\quad = \\dfrac{0.126}{0.581} \\cr &\\quad = \\dfrac{126}{581} \\cr &\\quad = \\dfrac{18}{83} \\end{aligned}",
         "<strong>(b) Two selections without replacement:</strong><br><br>Total students: $80$.<br>• Total Year 13: $10 + 14 + 11 = 35$<br>• Total Physics: $15 + 10 = 25$<br><br>Given that the first student is from Year 13, the probability that this student studies Physics is:\\begin{aligned} P(\\text{1st Physics} \\mid \\text{1st Y13}) &= \\dfrac{10}{35} = \\dfrac{2}{7} \\end{aligned}For the second selection, $24$ Physics students remain out of $79$ total remaining students:\\begin{aligned} P(\\text{2nd Physics} \\mid \\text{1st Physics}) &= \\dfrac{24}{79} \\end{aligned}Multiplying these probabilities:\\begin{aligned} &P(\\text{both Physics} \\mid \\text{1st Y13}) \\cr &\\quad = \\dfrac{2}{7} \\times \\dfrac{24}{79} \\cr &\\quad = \\dfrac{48}{553} \\end{aligned}",
         "Final Answer: (a)(i) $0.581$, (ii) $\\dfrac{18}{83}$, (b) $\\dfrac{48}{553}$"
@@ -1223,6 +1223,222 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Complementary Shortcut with Two Cats",
         "content": "For 'at least one' conditions within a restricted subpopulation, it is almost always faster to use $1 - P(\\text{none})$. In part (b)(ii), once we restrict to the $26$ Cats, the probability that neither is an Emergency appointment is simply the probability that both are Routine: $\\dfrac{14}{26} \\times \\dfrac{13}{25} = \\dfrac{7}{25}$. Subtracting from $1$ gives $\\dfrac{18}{25}$ immediately."
+    }
+},
+{
+    "id": "050231",
+    "group_id": "050231",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Continuous Uniform Distribution",
+    "subtopic": [
+        "Uniform Distribution Parameters",
+        "Total Probability",
+        "Conditional Probability"
+    ],
+    "img": false,
+    "question": "Elena arrives at a harbour terminal at a random point in time to catch a passenger ferry across an estuary. The ferries are scheduled to depart at regular $15$-minute intervals.<br><br><strong>(a)</strong> Assume that Elena boards the next available ferry.<br>&emsp;<strong>(i)</strong> Suggest an appropriate distribution to model her waiting time, in minutes, and state its parameters.<br>&emsp;<strong>(ii)</strong> State the mean and the variance of this distribution.<br>&emsp;<strong>(iii)</strong> State an assumption you have made in proposing this model.<br><br><strong>(b)</strong> Now assume that the probability that Elena misses the next available ferry because she is purchasing a refreshment is $0.20$. If she misses the next ferry, she is certain to board the one after that.<br>&emsp;<strong>(i)</strong> Find the probability that her total waiting time is between $10$ and $22$ minutes.<br>&emsp;<strong>(ii)</strong> Given that she waits between $10$ and $22$ minutes, find the probability that she boards the first available ferry.",
+    "steps": [
+        "<strong>(a)(i) Suggesting the distribution:</strong><br><br>Since Elena arrives at a random point in time throughout the $15$-minute cycle, her waiting time $X$ is uniformly spread over the interval $[0, 15]$:<br><br>Continuous Uniform (Rectangular) distribution, $X \\sim U(0, 15)$, with lower parameter $a = 0$ and upper parameter $b = 15$.",
+        "<strong>(a)(ii) Mean and variance:</strong><br><br>Using the standard formulas for $U(a, b)$:\\begin{aligned} \\text{E}(X) &= \\dfrac{a + b}{2} \\cr &= \\dfrac{0 + 15}{2} \\cr &= 7.5 \\end{aligned}For the variance:\\begin{aligned} \\text{Var}(X) &= \\dfrac{(b - a)^2}{12} \\cr &= \\dfrac{(15 - 0)^2}{12} \\cr &= \\dfrac{225}{12} \\cr &= 18.75 \\end{aligned}",
+        "<strong>(a)(iii) Stating an assumption:</strong><br><br>Ferries depart strictly on schedule and Elena's arrival time is completely independent of the timetable (uniformly distributed over the interval).",
+        "<strong>(b)(i) Probability total waiting time is between $10$ and $22$ minutes:</strong><br><br>Let $W \\sim U(0, 15)$ be the initial arrival wait.<br><br>Let $M'$ be the event that she boards the first ferry, with $P(M') = 0.80$, so her waiting time is $T = W$.<br><br>Let $M$ be the event that she misses the first ferry, with $P(M) = 0.20$, so her waiting time is $T = W + 15$.<br><br>Using the law of total probability:\\begin{aligned} &P(10 < T < 22) \\cr &\\quad = P(M') P(10 < W < 15) \\cr &\\qquad + P(M) P(10 < W + 15 < 22) \\cr &\\quad = 0.80 P(10 < W < 15) \\cr &\\qquad + 0.20 P(0 < W < 7) \\end{aligned}Evaluating the uniform probabilities with $f(w) = \\dfrac{1}{15}$:\\begin{aligned} &P(10 < T < 22) \\cr &\\quad = 0.80\\left(\\dfrac{5}{15}\\right) \\cr &\\qquad + 0.20\\left(\\dfrac{7}{15}\\right) \\cr &\\quad = \\dfrac{4}{15} + \\dfrac{1.4}{15} \\cr &\\quad = \\dfrac{5.4}{15} \\cr &\\quad = 0.36 \\end{aligned}",
+        "<strong>(b)(ii) Conditional probability of boarding the first ferry:</strong><br><br>Applying the definition of conditional probability:\\begin{aligned} &P(\\text{1st ferry} \\mid 10 < T < 22) \\cr &\\quad = \\dfrac{P(M' \\cap 10 < T < 22)}{P(10 < T < 22)} \\cr &\\quad = \\dfrac{4 / 15}{5.4 / 15} \\cr &\\quad = \\dfrac{4}{5.4} \\cr &\\quad = \\dfrac{40}{54} \\cr &\\quad = \\dfrac{20}{27} \\end{aligned}",
+        "Final Answer: (a)(i) $X \\sim U(0, 15)$, (ii) $\\text{E}(X) = 7.5$, $\\text{Var}(X) = 18.75$, (b)(i) $0.36$, (ii) $\\dfrac{20}{27}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $X \\sim U(0, 15)$, (ii) $\\text{E}(X) = 7.5$, $\\text{Var}(X) = 18.75$, (b)(i) $0.48$, (ii) $\\dfrac{20}{27}$",
+            "feedback": "In part (b)(i), you evaluated $P(10 < W < 22)$ directly using a single uniform interval rather than conditioning on whether the first ferry was caught or missed."
+        },
+        {
+            "ans": "(a)(i) $X \\sim U(0, 15)$, (ii) $\\text{E}(X) = 7.5$, $\\text{Var}(X) = 18.75$, (b)(i) $0.36$, (ii) $\\dfrac{4}{15}$",
+            "feedback": "In part (b)(ii), you gave the joint probability $\\dfrac{4}{15} \\approx 0.267$ instead of dividing by the total probability $P(10 < T < 22) = 0.36$."
+        },
+        {
+            "ans": "(a)(i) $X \\sim U(0, 15)$, (ii) $\\text{E}(X) = 7.5$, $\\text{Var}(X) = 15$, (b)(i) $0.36$, (ii) $\\dfrac{20}{27}$",
+            "feedback": "In part (a)(ii), you computed the variance as $\\dfrac{15^2}{15} = 15$ instead of dividing by $12$: $\\text{Var}(X) = \\dfrac{15^2}{12} = 18.75$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Partitioning Waiting Times",
+        "content": "Notice how the missing-ferry event creates two disjoint intervals for $T$: if Elena catches the first ferry, her wait is $W \\in [0, 15]$; if she misses it, her wait is $W + 15 \\in [15, 30]$. To find $P(10 < T < 22)$, split the interval into $[10, 15]$ for the first ferry and $[15, 22]$ for the second, weighting each by its respective probability."
+    }
+},
+{
+    "id": "050232",
+    "group_id": "050231",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Continuous Uniform Distribution",
+    "subtopic": [
+        "Probability Density Function",
+        "Linear Transformations",
+        "Conditional Probability"
+    ],
+    "img": false,
+    "question": "The duration of a specialised chemical curing process, $T$ minutes, is modelled by a continuous uniform distribution over the interval $[12, 30]$.<br><br><strong>(a)</strong> Write down the probability density function, $f(t)$, for all values of $t$.<br><br><strong>(b)</strong> Find:<br>&emsp;<strong>(i)</strong> $\\text{E}(T)$ and $\\text{Var}(T)$,<br>&emsp;<strong>(ii)</strong> $\\text{P}(T > 24)$,<br>&emsp;<strong>(iii)</strong> the conditional probability $\\text{P}(T > 24 \\mid T > 18)$.<br><br><strong>(c)</strong> The operational cost of monitoring the curing process is given by $C = 4T + 15$ pounds.<br>Find the expected cost and the standard deviation of the cost.",
+    "steps": [
+        "<strong>(a) Probability density function $f(t)$:</strong><br><br>The width of the interval is $b - a = 30 - 12 = 18$. The constant density is $\\dfrac{1}{18}$:\\begin{aligned} f(t) = \\begin{cases} \\dfrac{1}{18} & 12 \\le t \\le 30 \\cr 0 & \\text{otherwise} \\end{cases} \\end{aligned}",
+        "<strong>(b)(i) Finding $\\text{E}(T)$ and $\\text{Var}(T)$:</strong><br><br>Using the standard formulas for $U(a, b)$:\\begin{aligned} \\text{E}(T) &= \\dfrac{12 + 30}{2} \\cr &= 21 \\end{aligned}For the variance:\\begin{aligned} \\text{Var}(T) &= \\dfrac{(30 - 12)^2}{12} \\cr &= \\dfrac{18^2}{12} \\cr &= \\dfrac{324}{12} \\cr &= 27 \\end{aligned}",
+        "<strong>(b)(ii) Finding $\\text{P}(T > 24)$:</strong><br><br>Using the uniform probability formula:\\begin{aligned} P(T > 24) &= \\dfrac{30 - 24}{18} \\cr &= \\dfrac{6}{18} \\cr &= \\dfrac{1}{3} \\end{aligned}",
+        "<strong>(b)(iii) Finding $\\text{P}(T > 24 \\mid T > 18)$:</strong><br><br>Using the definition of conditional probability:\\begin{aligned} &P(T > 24 \\mid T > 18) \\cr &\\quad = \\dfrac{P(T > 24)}{P(T > 18)} \\cr &\\quad = \\dfrac{(30 - 24) / 18}{(30 - 18) / 18} \\cr &\\quad = \\dfrac{6 / 18}{12 / 18} \\cr &\\quad = \\dfrac{6}{12} \\cr &\\quad = 0.5 \\end{aligned}",
+        "<strong>(c) Finding $\\text{E}(C)$ and $\\text{SD}(C)$:</strong><br><br>For expectation, applying linear properties:\\begin{aligned} \\text{E}(C) &= 4\\text{E}(T) + 15 \\cr &= 4(21) + 15 \\cr &= 84 + 15 \\cr &= 99 \\end{aligned}For the standard deviation:\\begin{aligned} \\text{SD}(C) &= 4\\sqrt{\\text{Var}(T)} \\cr &= 4\\sqrt{27} \\cr &= 4(3\\sqrt{3}) \\cr &= 12\\sqrt{3} \\cr &\\approx 20.78 \\end{aligned}",
+        "Final Answer: (a) $f(t) = \\dfrac{1}{18}$, (b)(i) $21$ and $27$, (ii) $\\dfrac{1}{3}$, (iii) $0.5$, (c) $\\text{E}(C) = 99$, $\\text{SD}(C) = 12\\sqrt{3}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $f(t) = \\dfrac{1}{18}$, (b)(i) $21$ and $27$, (ii) $\\dfrac{1}{3}$, (iii) $0.5$, (c) $\\text{E}(C) = 99$, $\\text{SD}(C) = 432$",
+            "feedback": "In part (c), $432$ is the variance $\\text{Var}(C) = 16 \\times 27$. The question asks for the standard deviation, so you must take the square root: $\\sqrt{432} = 12\\sqrt{3}$."
+        },
+        {
+            "ans": "(a) $f(t) = \\dfrac{1}{18}$, (b)(i) $21$ and $27$, (ii) $\\dfrac{1}{3}$, (iii) $\\dfrac{1}{3}$, (c) $\\text{E}(C) = 99$, $\\text{SD}(C) = 12\\sqrt{3}$",
+            "feedback": "In part (b)(iii), you assumed that the continuous uniform distribution is memoryless. It is not; the condition $T > 18$ truncates the domain to $[18, 30]$, giving $\\dfrac{30 - 24}{30 - 18} = 0.5$."
+        },
+        {
+            "ans": "(a) $f(t) = \\dfrac{1}{18}$, (b)(i) $21$ and $18$, (ii) $\\dfrac{1}{3}$, (iii) $0.5$, (c) $\\text{E}(C) = 99$, $\\text{SD}(C) = 12\\sqrt{3}$",
+            "feedback": "In part (b)(i), you divided $18^2$ by $18$ instead of by $12$. The variance formula for a continuous uniform distribution has a fixed denominator of $12$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Uniform Distributions Have Memory",
+        "content": "Unlike the exponential distribution, the continuous uniform distribution is not memoryless. When given $T > 18$, the remaining time is uniformly distributed over the shortened interval $[18, 30]$ of width $12$. Hence $P(T > 24 \\mid T > 18) = \\dfrac{30 - 24}{30 - 18} = \\dfrac{6}{12} = 0.5$."
+    }
+},
+{
+    "id": "050233",
+    "group_id": "050231",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Continuous Uniform Distribution",
+    "subtopic": [
+        "Symmetric Uniform Distributions",
+        "Non-linear Functions",
+        "Expectation of Squared Variables"
+    ],
+    "img": false,
+    "question": "In a precision engineering workshop, components are cut to nominal lengths. The measurement error, $X\\text{ mm}$, is modelled by a continuous uniform distribution on the interval $[-0.5, 0.5]$.<br><br><strong>(a)</strong> State:<br>&emsp;<strong>(i)</strong> $\\text{E}(X)$,<br>&emsp;<strong>(ii)</strong> $\\text{Var}(X)$.<br><br><strong>(b)</strong> Find the probability that a randomly chosen component has a measurement error:<br>&emsp;<strong>(i)</strong> greater than $0.2\\text{ mm}$,<br>&emsp;<strong>(ii)</strong> with a magnitude (absolute value) greater than $0.35\\text{ mm}$.<br><br><strong>(c)</strong> A square metal plate is designed to have a side length of $20\\text{ mm}$. Due to measurement error, the actual side length is $Y = 20 + X\\text{ mm}$. The recorded area of the plate is $A = Y^2\\text{ mm}^2$.<br>&emsp;<strong>(i)</strong> Expand $(20 + X)^2$ and hence determine the expected area, $\\text{E}(A)$.<br>&emsp;<strong>(ii)</strong> Explain why the expected area is strictly greater than the nominal area of $400\\text{ mm}^2$.",
+    "steps": [
+        "<strong>(a)(i) Finding $\\text{E}(X)$:</strong><br><br>By symmetry about zero:\\begin{aligned} \\text{E}(X) &= \\dfrac{-0.5 + 0.5}{2} \\cr &= 0 \\end{aligned}",
+        "<strong>(a)(ii) Finding $\\text{Var}(X)$:</strong><br><br>The width of the interval is $0.5 - (-0.5) = 1$:\\begin{aligned} \\text{Var}(X) &= \\dfrac{1^2}{12} \\cr &= \\dfrac{1}{12} \\end{aligned}",
+        "<strong>(b)(i) Probability error is greater than $0.2$:</strong><br><br>Since the total width is $1$:\\begin{aligned} P(X > 0.2) &= \\dfrac{0.5 - 0.2}{1} \\cr &= 0.3 \\end{aligned}",
+        "<strong>(b)(ii) Probability magnitude is greater than $0.35$:</strong><br><br>The event $|X| > 0.35$ means $X > 0.35$ or $X < -0.35$:\\begin{aligned} &P(|X| > 0.35) \\cr &\\quad = P(X > 0.35) \\cr &\\qquad + P(X < -0.35) \\cr &\\quad = (0.5 - 0.35) \\cr &\\qquad + (-0.35 - (-0.5)) \\cr &\\quad = 0.15 + 0.15 \\cr &\\quad = 0.3 \\end{aligned}",
+        "<strong>(c)(i) Expanding and finding $\\text{E}(A)$:</strong><br><br>Expanding the area expression:\\begin{aligned} A &= (20 + X)^2 \\cr &= 400 + 40X + X^2 \\end{aligned}Taking expectations:\\begin{aligned} \\text{E}(A) &= \\text{E}(400 + 40X + X^2) \\cr &= 400 + 40\\text{E}(X) + \\text{E}(X^2) \\end{aligned}Since $\\text{E}(X) = 0$, we have $\\text{E}(X^2) = \\text{Var}(X) + [\\text{E}(X)]^2 = \\dfrac{1}{12}$:\\begin{aligned} \\text{E}(A) &= 400 + 0 + \\dfrac{1}{12} \\cr &= 400\\dfrac{1}{12} \\quad (\\approx 400.083) \\end{aligned}",
+        "<strong>(c)(ii) Explanation of positive bias:</strong><br><br>Because $\\text{Var}(X) > 0$, the squared error term $X^2$ is strictly positive for all non-zero errors. Therefore, its expectation $\\text{E}(X^2) = \\dfrac{1}{12}$ systematically increases the expected area above the nominal area.",
+        "Final Answer: (a)(i) $0$, (ii) $\\dfrac{1}{12}$, (b)(i) $0.3$, (ii) $0.3$, (c)(i) $400\\dfrac{1}{12}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $0$, (ii) $\\dfrac{1}{12}$, (b)(i) $0.3$, (ii) $0.15$, (c)(i) $400\\dfrac{1}{12}$",
+            "feedback": "In part (b)(ii), $0.15$ accounts for only the upper tail $X > 0.35$. Because the condition involves magnitude $|X| > 0.35$, you must also include the symmetric lower tail $X < -0.35$."
+        },
+        {
+            "ans": "(a)(i) $0$, (ii) $\\dfrac{1}{12}$, (b)(i) $0.3$, (ii) $0.3$, (c)(i) $400$",
+            "feedback": "In part (c)(i), you assumed $\\text{E}(Y^2) = [\\text{E}(Y)]^2 = 20^2 = 400$. In general, $\\text{E}(Y^2) = [\\text{E}(Y)]^2 + \\text{Var}(Y)$, so the non-zero variance adds $\\dfrac{1}{12}$ to the expected area."
+        },
+        {
+            "ans": "(a)(i) $0$, (ii) $\\dfrac{1}{6}$, (b)(i) $0.3$, (ii) $0.3$, (c)(i) $400\\dfrac{1}{6}$",
+            "feedback": "In part (a)(ii), you computed the variance with a denominator of $6$ instead of $12$. The variance of $U(-0.5, 0.5)$ is $\\dfrac{1^2}{12} = \\dfrac{1}{12}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Jensen's Inequality in Area Models",
+        "content": "A classic theoretical question asks why $\\text{E}(Y^2) > [\\text{E}(Y)]^2$. Because squaring is a strictly convex function, $\\text{E}(Y^2) = [\\text{E}(Y)]^2 + \\text{Var}(Y)$. Any uncertainty in measuring the side length introduces a positive bias into the expected area."
+    }
+},
+{
+    "id": "050234",
+    "group_id": "050231",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Continuous Uniform Distribution",
+    "subtopic": [
+        "Uniform to Binomial Bridge",
+        "Binomial Probability Calculations",
+        "Complement Rule"
+    ],
+    "img": false,
+    "question": "The duration of customer technical support calls, $T$ minutes, is modelled by a continuous uniform distribution over the interval $[0, 8]$.<br><br><strong>(a)</strong> Write down the probability density function of $T$.<br><br><strong>(b)</strong> Find the probability that a randomly chosen call lasts:<br>&emsp;<strong>(i)</strong> more than $6$ minutes,<br>&emsp;<strong>(ii)</strong> between $2$ and $5$ minutes.<br><br><strong>(c)</strong> A quality auditor monitors a random sample of $10$ independent customer support calls.<br>Let $Y$ denote the number of calls in the sample that last more than $6$ minutes.<br>&emsp;<strong>(i)</strong> State the distribution of $Y$, including its parameters.<br>&emsp;<strong>(ii)</strong> Find the probability that exactly $3$ of the $10$ calls last more than $6$ minutes. Give your answer to four decimal places.<br>&emsp;<strong>(iii)</strong> Find the probability that at least $2$ of the $10$ calls last more than $6$ minutes. Give your answer to four decimal places.",
+    "steps": [
+        "<strong>(a) Probability density function:</strong><br><br>The constant density on $[0, 8]$ is $\\dfrac{1}{8 - 0} = 0.125$:\\begin{aligned} f(t) = \\begin{cases} 0.125 & 0 \\le t \\le 8 \\cr 0 & \\text{otherwise} \\end{cases} \\end{aligned}",
+        "<strong>(b)(i) Probability a call lasts more than $6$ minutes:</strong><br><br>Using the uniform distribution:\\begin{aligned} P(T > 6) &= \\dfrac{8 - 6}{8} \\cr &= \\dfrac{2}{8} \\cr &= 0.25 \\end{aligned}",
+        "<strong>(b)(ii) Probability a call lasts between $2$ and $5$ minutes:</strong><br><br>Evaluating the interval probability:\\begin{aligned} P(2 < T < 5) &= \\dfrac{5 - 2}{8} \\cr &= \\dfrac{3}{8} \\cr &= 0.375 \\end{aligned}",
+        "<strong>(c)(i) Distribution of $Y$:</strong><br><br>Since there are $n = 10$ independent trials and the probability of success on each trial is $p = 0.25$:\\begin{aligned} Y \\sim B(10, 0.25) \\end{aligned}",
+        "<strong>(c)(ii) Probability of exactly $3$ calls:</strong><br><br>Applying the binomial probability formula:\\begin{aligned} P(Y = 3) &= \\binom{10}{3} (0.25)^3 (0.75)^7 \\cr &= 120 \\times 0.015625 \\cr &\\qquad \\times 0.133484 \\cr &\\approx 0.2503 \\end{aligned}",
+        "<strong>(c)(iii) Probability of at least $2$ calls:</strong><br><br>Using the complement rule:\\begin{aligned} P(Y \\ge 2) &= 1 - [P(Y = 0) + P(Y = 1)] \\end{aligned}Calculating the individual probabilities:\\begin{aligned} P(Y = 0) &= (0.75)^{10} \\cr &\\approx 0.05631 \\end{aligned}\\begin{aligned} P(Y = 1) &= 10(0.25)(0.75)^9 \\cr &\\approx 0.18771 \\end{aligned}Summing and subtracting from $1$:\\begin{aligned} P(Y \\ge 2) &= 1 - [0.05631 + 0.18771] \\cr &= 1 - 0.24402 \\cr &= 0.7560 \\end{aligned}",
+        "Final Answer: (a) $f(t) = 0.125$, (b)(i) $0.25$, (ii) $0.375$, (c)(i) $Y \\sim B(10, 0.25)$, (ii) $0.2503$, (iii) $0.7560$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $f(t) = 0.125$, (b)(i) $0.25$, (ii) $0.375$, (c)(i) $Y \\sim B(10, 0.25)$, (ii) $0.2503$, (iii) $0.2440$",
+            "feedback": "In part (c)(iii), $0.2440$ is $P(Y \\le 1)$. To find the probability of at least $2$ calls, you must subtract this from $1$."
+        },
+        {
+            "ans": "(a) $f(t) = 0.125$, (b)(i) $0.25$, (ii) $0.375$, (c)(i) $Y \\sim B(10, 0.25)$, (ii) $0.0751$, (iii) $0.7560$",
+            "feedback": "In part (c)(ii), you omitted the binomial coefficient $\\binom{10}{3} = 120$, evaluating $(0.25)^3 (0.75)^7$ only."
+        },
+        {
+            "ans": "(a) $f(t) = 0.125$, (b)(i) $0.75$, (ii) $0.375$, (c)(i) $Y \\sim B(10, 0.75)$, (ii) $0.2503$, (iii) $0.7560$",
+            "feedback": "In part (b)(i), you found $P(T < 6) = \\dfrac{6}{8} = 0.75$ instead of $P(T > 6) = \\dfrac{8 - 6}{8} = 0.25$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Bridging Continuous and Discrete Distributions",
+        "content": "Examination boards frequently connect continuous distributions with the Binomial distribution. The continuous uniform distribution provides the single-trial success probability $p = P(T > 6) = 0.25$, which then acts as the parameter for a discrete sample of size $n = 10$."
+    }
+},
+{
+    "id": "050235",
+    "group_id": "050231",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Continuous Uniform Distribution",
+    "subtopic": [
+        "Truncated Uniform Distributions",
+        "Linear Transformations",
+        "Conditional Expectation and Variance"
+    ],
+    "img": false,
+    "question": "An automated sorting facility processes parcel weights, $W\\text{ kg}$, which are uniformly distributed over the interval $[2, 10]$.<br>• Parcels with $W \\le 4$ are routed to Conveyor 1.<br>• Parcels with $4 < W \\le 8$ are routed to Conveyor 2.<br>• Parcels with $W > 8$ are routed to the Heavy Goods Station.<br><br><strong>(a)</strong> Find the probability that a randomly selected parcel:<br>&emsp;<strong>(i)</strong> is routed to Conveyor 1,<br>&emsp;<strong>(ii)</strong> is routed to Conveyor 2,<br>&emsp;<strong>(iii)</strong> is routed to the Heavy Goods Station.<br><br><strong>(b)</strong> Parcels routed to Conveyor 2 undergo an automated scanning check. The time taken to scan a parcel, $S$ seconds, depends linearly on its weight: $S = 3W + 5$.<br>Given that a parcel is routed to Conveyor 2:<br>&emsp;<strong>(i)</strong> state the conditional distribution of its weight, $W$,<br>&emsp;<strong>(ii)</strong> find the expected scanning time, $\\text{E}(S)$,<br>&emsp;<strong>(iii)</strong> find the variance of the scanning time, $\\text{Var}(S)$.",
+    "steps": [
+        "<strong>(a) Routing probabilities:</strong><br><br>The parcel weight is $W \\sim U(2, 10)$ with interval width $10 - 2 = 8$.<br><br><strong>(i)</strong> Conveyor 1:\\begin{aligned} P(W \\le 4) &= \\dfrac{4 - 2}{8} \\cr &= \\dfrac{2}{8} \\cr &= 0.25 \\end{aligned}<strong>(ii)</strong> Conveyor 2:\\begin{aligned} P(4 < W \\le 8) &= \\dfrac{8 - 4}{8} \\cr &= \\dfrac{4}{8} \\cr &= 0.5 \\end{aligned}<strong>(iii)</strong> Heavy Goods Station:\\begin{aligned} P(W > 8) &= \\dfrac{10 - 8}{8} \\cr &= \\dfrac{2}{8} \\cr &= 0.25 \\end{aligned}",
+        "<strong>(b)(i) Conditional distribution of $W$:</strong><br><br>Given that the parcel is on Conveyor 2, its weight is restricted to the interval $[4, 8]$. Since the density was constant over $[2, 10]$, it remains constant over $[4, 8]$:<br><br>$W \\mid \\text{Conveyor 2} \\sim U(4, 8)$.",
+        "<strong>(b)(ii) Expected scanning time $\\text{E}(S)$:</strong><br><br>For $W \\sim U(4, 8)$:\\begin{aligned} \\text{E}(W) &= \\dfrac{4 + 8}{2} \\cr &= 6 \\end{aligned}Using linear properties of expectation:\\begin{aligned} \\text{E}(S) &= 3\\text{E}(W) + 5 \\cr &= 3(6) + 5 \\cr &= 18 + 5 \\cr &= 23 \\end{aligned}",
+        "<strong>(b)(iii) Variance of the scanning time $\\text{Var}(S)$:</strong><br><br>For $W \\sim U(4, 8)$, the variance is:\\begin{aligned} \\text{Var}(W) &= \\dfrac{(8 - 4)^2}{12} \\cr &= \\dfrac{16}{12} \\cr &= \\dfrac{4}{3} \\end{aligned}Using the variance transformation rule $\\text{Var}(aW + b) = a^2 \\text{Var}(W)$:\\begin{aligned} \\text{Var}(S) &= 3^2 \\text{Var}(W) \\cr &= 9 \\times \\dfrac{4}{3} \\cr &= 12 \\end{aligned}",
+        "Final Answer: (a)(i) $0.25$, (ii) $0.5$, (iii) $0.25$, (b)(i) $U(4, 8)$, (ii) $23$, (iii) $12$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $0.25$, (ii) $0.5$, (iii) $0.25$, (b)(i) $U(4, 8)$, (ii) $23$, (iii) $4$",
+            "feedback": "In part (b)(iii), you multiplied $\\text{Var}(W)$ by $3$ instead of $3^2 = 9$. Remember that $\\text{Var}(aW + b) = a^2 \\text{Var}(W)$."
+        },
+        {
+            "ans": "(a)(i) $0.25$, (ii) $0.5$, (iii) $0.25$, (b)(i) $U(2, 10)$, (ii) $23$, (iii) $12$",
+            "feedback": "In part (b)(i), you stated the unconditional distribution $U(2, 10)$. Given that the parcel is on Conveyor 2, its weight is restricted to the interval $[4, 8]$, so the conditional distribution is $U(4, 8)$."
+        },
+        {
+            "ans": "(a)(i) $0.25$, (ii) $0.5$, (iii) $0.25$, (b)(i) $U(4, 8)$, (ii) $23$, (iii) $17$",
+            "feedback": "In part (b)(iii), you added the constant $5$ to the variance. Adding a constant shifts the distribution but does not change its spread: $\\text{Var}(aW + b) = a^2 \\text{Var}(W)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Truncation Preserves Uniformity",
+        "content": "A crucial property of the continuous uniform distribution is that conditioning on a sub-interval simply creates a new continuous uniform distribution over that sub-interval. Truncating $W \\sim U(2, 10)$ to $4 < W \\le 8$ directly yields $W \\sim U(4, 8)$."
     }
 }
 ];
