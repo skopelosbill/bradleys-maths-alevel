@@ -810,5 +810,215 @@ window.ALEVEL_QUESTIONS = [
     "title": "The Head Teacher's Eye: Invariance Under Linear Coding",
     "content": "For any linear coding $y = ax + b$ with $a > 0$, the interquartile range scales by $a$, while the constant $b$ cancels out: $\\text{IQR}(y) = a\\text{IQR}(x)$. Because both the data points and the boundary thresholds shift and scale together, outlier status is invariant under linear transformations."
   }
+},
+{
+    "id": "050221",
+    "group_id": "050221",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Venn Diagrams",
+        "Addition Rule",
+        "Conditional Probability"
+    ],
+    "img": false,
+    "question": "A logistics firm tenders for two separate transport contracts: Contract $R$ (regional) and Contract $N$ (national). The managing director estimates that the probability of winning Contract $R$ is $0.60$, the probability of winning Contract $N$ is $0.45$, and the probability of winning both contracts is $0.25$.<br><br><strong>(a)</strong> Show that the probability that the firm wins neither contract is $0.20$.<br><br><strong>(b)</strong> Find the probability that the firm wins exactly one contract.<br><br><strong>(c)</strong> Given that the firm does not win Contract $R$, find the probability that it wins Contract $N$.",
+    "steps": [
+        "<strong>(a) Probability of neither contract:</strong><br><br>We first find the probability of winning at least one contract using the addition rule of probability:\\begin{aligned} &P(R \\cup N) \\cr &\\quad = P(R) + P(N) - P(R \\cap N) \\cr &\\quad = 0.60 + 0.45 - 0.25 \\cr &\\quad = 0.80 \\end{aligned}The probability of winning neither contract is the complement of the union:\\begin{aligned} P(R' \\cap N') &= 1 - P(R \\cup N) \\cr &= 1 - 0.80 \\cr &= 0.20 \\end{aligned}",
+        "<strong>(b) Probability of exactly one contract:</strong><br><br>Winning exactly one contract corresponds to the union minus the intersection:\\begin{aligned} P(\\text{exactly one}) &= P(R \\cup N) - P(R \\cap N) \\cr &= 0.80 - 0.25 \\cr &= 0.55 \\end{aligned}Alternatively, we can sum the two mutually exclusive exclusive regions directly:\\begin{aligned} &P(R \\cap N') + P(R' \\cap N) \\cr &\\quad = (0.60 - 0.25) + (0.45 - 0.25) \\cr &\\quad = 0.35 + 0.20 \\cr &\\quad = 0.55 \\end{aligned}",
+        "<strong>(c) Conditional probability:</strong><br><br>Using the definition of conditional probability:\\begin{aligned} P(N \\mid R') &= \\dfrac{P(N \\cap R')}{P(R')} \\end{aligned}We determine the numerator and denominator separately:\\begin{aligned} P(N \\cap R') &= P(N) - P(R \\cap N) \\cr &= 0.45 - 0.25 \\cr &= 0.20 \\end{aligned}\\begin{aligned} P(R') &= 1 - P(R) \\cr &= 1 - 0.60 \\cr &= 0.40 \\end{aligned}Substituting these values into the ratio gives:\\begin{aligned} P(N \\mid R') &= \\dfrac{0.20}{0.40} \\cr &= 0.5 \\end{aligned}",
+        "Final Answer: (a) $0.20$, (b) $0.55$, (c) $0.5$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.20$, (b) $0.55$, (c) $0.45$",
+            "feedback": "In part (c), you evaluated the unconditioned probability $P(N) = 0.45$ rather than the conditional probability $P(N \\mid R') = \\dfrac{P(N \\cap R')}{P(R')}$. The given condition that Contract $R$ is not won restricts the sample space to $R'$, which has probability $0.40$."
+        },
+        {
+            "ans": "(a) $0.20$, (b) $0.80$, (c) $0.5$",
+            "feedback": "In part (b), $0.80$ is the probability of winning at least one contract, $P(R \\cup N)$, which includes winning both contracts. To find the probability of winning exactly one contract, you must subtract the intersection $P(R \\cap N) = 0.25$."
+        },
+        {
+            "ans": "(a) $0.20$, (b) $0.55$, (c) $0.25$",
+            "feedback": "In part (c), you evaluated the intersection $P(R \\cap N)$ or divided by an incorrect total instead of dividing $P(N \\cap R') = 0.20$ by $P(R') = 0.40$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: The Restricted Sample Space",
+        "content": "When calculating a conditional probability such as $P(N \\mid R')$, students often mistakenly divide by the entire sample space or divide by $P(N)$ rather than $P(R')$. Always identify the given condition first—here, the firm has failed to win Contract $R$, which immediately shrinks the total possible outcomes to $R'$ with total probability $1 - 0.60 = 0.40$."
+    }
+},
+{
+    "id": "050222",
+    "group_id": "050221",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Independent Events",
+        "Addition Rule",
+        "Conditional Probability"
+    ],
+    "img": false,
+    "question": "A quality-assurance system inspects precision components for two types of defect: electrical defect ($E$) and mechanical defect ($M$). For a randomly selected component from Batch 1, $P(E) = 0.15$ and $P(M) = 0.20$.<br><br><strong>(a)</strong> Given that for Batch 1 the two defects occur independently, find the probability that a randomly selected component:<br>&emsp;<strong>(i)</strong> has both defects,<br>&emsp;<strong>(ii)</strong> has at least one defect,<br>&emsp;<strong>(iii)</strong> has an electrical defect, given that it has at least one defect.<br><br><strong>(b)</strong> For a second batch, Batch 2, the probability of an electrical defect remains $0.15$, but the defects are no longer independent. It is found that $P(E \\cup M) = 0.28$ and $P(E \\mid M) = 0.35$. Find $P(M)$ for Batch 2.",
+    "steps": [
+        "<strong>(a)(i) Probability of both defects (independent):</strong><br><br>Since defects $E$ and $M$ occur independently in Batch 1, the multiplication rule applies directly:\\begin{aligned} P(E \\cap M) &= P(E) \\times P(M) \\cr &= 0.15 \\times 0.20 \\cr &= 0.03 \\end{aligned}",
+        "<strong>(a)(ii) Probability of at least one defect:</strong><br><br>Applying the addition rule of probability:\\begin{aligned} P(E \\cup M) &= P(E) + P(M) - P(E \\cap M) \\cr &= 0.15 + 0.20 - 0.03 \\cr &= 0.32 \\end{aligned}",
+        "<strong>(a)(iii) Conditional probability:</strong><br><br>Applying the conditional probability definition:\\begin{aligned} P(E \\mid E \\cup M) &= \\dfrac{P(E \\cap (E \\cup M))}{P(E \\cup M)} \\end{aligned}Because $E \\subseteq (E \\cup M)$, the intersection simplifies to $E$:\\begin{aligned} P(E \\mid E \\cup M) &= \\dfrac{P(E)}{P(E \\cup M)} \\cr &= \\dfrac{0.15}{0.32} \\cr &= \\dfrac{15}{32} \\quad (0.46875) \\end{aligned}",
+        "<strong>(b) Finding $P(M)$ for Batch 2:</strong><br><br>From the definition of conditional probability:\\begin{aligned} P(E \\cap M) &= P(E \\mid M) P(M) \\cr &= 0.35 P(M) \\end{aligned}Substituting into the general addition rule:\\begin{aligned} &P(E \\cup M) = P(E) + P(M) - P(E \\cap M) \\cr &0.28 = 0.15 + P(M) - 0.35 P(M) \\cr &0.28 - 0.15 = 0.65 P(M) \\cr &0.13 = 0.65 P(M) \\cr &P(M) = \\dfrac{0.13}{0.65} \\cr &P(M) = 0.2 \\end{aligned}",
+        "Final Answer: (a)(i) $0.03$, (ii) $0.32$, (iii) $\\dfrac{15}{32}$, (b) $0.2$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $0.03$, (ii) $0.35$, (iii) $\\dfrac{15}{32}$, (b) $0.2$",
+            "feedback": "In part (a)(ii), you computed $P(E) + P(M) = 0.15 + 0.20 = 0.35$ without subtracting the intersection $P(E \\cap M) = 0.03$. The events are independent, not mutually exclusive."
+        },
+        {
+            "ans": "(a)(i) $0.03$, (ii) $0.32$, (iii) $0.15$, (b) $0.2$",
+            "feedback": "In part (a)(iii), you stated $P(E) = 0.15$ without conditioning on the restricted sample space $E \\cup M$. The denominator must be $P(E \\cup M) = 0.32$."
+        },
+        {
+            "ans": "(a)(i) $0.03$, (ii) $0.32$, (iii) $\\dfrac{15}{32}$, (b) $0.371$",
+            "feedback": "In part (b), you substituted $0.35$ directly for $P(E \\cap M)$ instead of $0.35 P(M)$. Remember that $P(E \\cap M) = P(E \\mid M) P(M)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Subsets in Conditional Probability",
+        "content": "Notice in part (a)(iii) that event $E$ is entirely contained within the union $E \\cup M$. Therefore, $E \\cap (E \\cup M) = E$. Whenever event $A$ is a subset of event $B$, the conditional probability simplifies neatly to $P(A \\mid B) = \\dfrac{P(A)}{P(B)}$."
+    }
+},
+{
+    "id": "050223",
+    "group_id": "050221",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Venn Diagrams",
+        "Inclusion-Exclusion Principle",
+        "Statistical Independence"
+    ],
+    "img": false,
+    "question": "A survey of $120$ college students investigated membership in three enrichment societies: Chess ($C$), Debate ($D$), and Robotics ($R$). The findings were as follows:<br>• $15$ students belong to none of the three societies.<br>• $65$ students belong to Chess.<br>• $55$ students belong to Debate.<br>• $48$ students belong to Robotics.<br>• $28$ students belong to both Chess and Debate.<br>• $22$ students belong to both Debate and Robotics.<br>• $25$ students belong to both Chess and Robotics.<br>• $x$ students belong to all three societies.<br><br>A student is chosen at random from the survey.<br><br><strong>(a)</strong> Show that $x = 12$.<br><br><strong>(b)</strong> Find the probability that the student belongs to:<br>&emsp;<strong>(i)</strong> exactly two societies,<br>&emsp;<strong>(ii)</strong> Robotics, given that the student does not belong to Chess.<br><br><strong>(c)</strong> Determine, with mathematical justification, whether the events \"belongs to Chess\" and \"belongs to Robotics\" are statistically independent.",
+    "steps": [
+        "<strong>(a) Determining $x$:</strong><br><br>The number of students belonging to at least one society is:\\begin{aligned} n(C \\cup D \\cup R) &= 120 - 15 \\cr &= 105 \\end{aligned}Applying the principle of inclusion-exclusion for three sets:\\begin{aligned} &n(C \\cup D \\cup R) \\cr &= n(C) + n(D) + n(R) \\cr &\\quad - n(C \\cap D) - n(D \\cap R) - n(C \\cap R) \\cr &\\quad + n(C \\cap D \\cap R) \\end{aligned}Substituting the known counts:\\begin{aligned} &105 = 65 + 55 + 48 \\cr &\\qquad - (28 + 22 + 25) + x \\cr &105 = 168 - 75 + x \\cr &105 = 93 + x \\cr &x = 105 - 93 \\cr &x = 12 \\end{aligned}",
+        "<strong>(b)(i) Probability of exactly two societies:</strong><br><br>We determine the counts belonging to exactly two societies by removing the central intersection $x = 12$ from each two-set overlap:\\begin{aligned} &n(C \\cap D \\text{ only}) = 28 - 12 = 16 \\cr &n(D \\cap R \\text{ only}) = 22 - 12 = 10 \\cr &n(C \\cap R \\text{ only}) = 25 - 12 = 13 \\end{aligned}Summing these counts:\\begin{aligned} n(\\text{exactly two}) &= 16 + 10 + 13 \\cr &= 39 \\end{aligned}Thus the probability is:\\begin{aligned} P(\\text{exactly two}) &= \\dfrac{39}{120} \\cr &= \\dfrac{13}{40} \\quad (0.325) \\end{aligned}",
+        "<strong>(b)(ii) Conditional probability $P(R \\mid C')$:</strong><br><br>The total number of students not belonging to Chess is:\\begin{aligned} n(C') &= 120 - 65 \\cr &= 55 \\end{aligned}The number of students in Robotics who do not belong to Chess is:\\begin{aligned} n(R \\cap C') &= n(R) - n(C \\cap R) \\cr &= 48 - 25 \\cr &= 23 \\end{aligned}Hence:\\begin{aligned} P(R \\mid C') &= \\dfrac{n(R \\cap C')}{n(C')} \\cr &= \\dfrac{23}{55} \\end{aligned}",
+        "<strong>(c) Testing statistical independence of $C$ and $R$:</strong><br><br>For $C$ and $R$ to be independent, we require $P(C \\cap R) = P(C) \\times P(R)$.<br><br>Evaluating each probability:\\begin{aligned} P(C \\cap R) &= \\dfrac{25}{120} = \\dfrac{5}{24} \\approx 0.2083 \\cr P(C) &= \\dfrac{65}{120} = \\dfrac{13}{24} \\cr P(R) &= \\dfrac{48}{120} = \\dfrac{2}{5} \\end{aligned}Evaluating the product:\\begin{aligned} P(C) \\times P(R) &= \\dfrac{13}{24} \\times \\dfrac{2}{5} \\cr &= \\dfrac{26}{120} = \\dfrac{13}{60} \\approx 0.2167 \\end{aligned}Since $\\dfrac{5}{24} \\neq \\dfrac{13}{60}$, the events are not independent.",
+        "Final Answer: (a) $x = 12$, (b)(i) $\\dfrac{13}{40}$, (ii) $\\dfrac{23}{55}$, (c) Not independent as $P(C \\cap R) \\neq P(C) \\times P(R)$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $x = 12$, (b)(i) $\\dfrac{5}{8}$, (ii) $\\dfrac{23}{55}$, (c) Not independent as $P(C \\cap R) \\neq P(C) \\times P(R)$",
+            "feedback": "In part (b)(i), you summed the full overlaps $28 + 22 + 25 = 75$ and divided by $120$. This includes the $12$ students belonging to all three societies three times. You must subtract $12$ from each overlap before adding."
+        },
+        {
+            "ans": "(a) $x = 12$, (b)(i) $\\dfrac{13}{40}$, (ii) $\\dfrac{23}{120}$, (c) Not independent as $P(C \\cap R) \\neq P(C) \\times P(R)$",
+            "feedback": "In part (b)(ii), you computed the joint probability $P(R \\cap C') = \\dfrac{23}{120}$ over all $120$ students instead of conditioning on $n(C') = 55$."
+        },
+        {
+            "ans": "(a) $x = 12$, (b)(i) $\\dfrac{13}{40}$, (ii) $\\dfrac{23}{55}$, (c) Independent as both probabilities are close to $0.21$",
+            "feedback": "In part (c), statistical independence requires exact algebraic equality: $P(C \\cap R) = P(C) \\times P(R)$. Since $\\dfrac{25}{120} \\neq \\dfrac{26}{120}$, they cannot be claimed as independent."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Pairwise Overlaps in 3-Set Venns",
+        "content": "A frequent mistake in three-set Venn problems is assuming that 'belongs to Chess and Debate' means *only* those two. In examination questions, stated intersections include the central three-way region $x$ unless the word 'only' is explicitly included."
+    }
+},
+{
+    "id": "050224",
+    "group_id": "050221",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Law of Total Probability",
+        "Bayes' Theorem",
+        "Independent Multi-Stage Events"
+    ],
+    "img": false,
+    "question": "An aerospace manufacturing facility sources microchips from three suppliers: $A$, $B$, and $C$.<br>• Supplier $A$ supplies $50\\%$ of the microchips, and $2\\%$ of these are defective.<br>• Supplier $B$ supplies $30\\%$ of the microchips, and $3\\%$ of these are defective.<br>• Supplier $C$ supplies $20\\%$ of the microchips, and $5\\%$ of these are defective.<br><br><strong>(a)</strong> A microchip is selected at random from the total supply.<br>&emsp;<strong>(i)</strong> Show that the probability that the microchip is defective is $0.029$.<br>&emsp;<strong>(ii)</strong> Given that the microchip is defective, find the probability that it was supplied by Supplier $B$. Give your answer as an exact fraction in simplest form.<br><br><strong>(b)</strong> Two microchips are chosen at random from the total supply, independently of each other. Find the probability that exactly one of the two microchips is defective and that this defective microchip came from Supplier $A$.",
+    "steps": [
+        "<strong>(a)(i) Overall probability of a defective chip:</strong><br><br>By the law of total probability:\\begin{aligned} &P(D) \\cr &= P(A)P(D \\mid A) + P(B)P(D \\mid B) \\cr &\\quad + P(C)P(D \\mid C) \\end{aligned}Substituting the given values:\\begin{aligned} P(D) &= (0.50)(0.02) + (0.30)(0.03) \\cr &\\quad + (0.20)(0.05) \\cr &= 0.010 + 0.009 + 0.010 \\cr &= 0.029 \\end{aligned}",
+        "<strong>(a)(ii) Conditional probability of Supplier $B$:</strong><br><br>Applying Bayes' theorem:\\begin{aligned} P(B \\mid D) &= \\dfrac{P(B \\cap D)}{P(D)} \\cr &= \\dfrac{P(B)P(D \\mid B)}{P(D)} \\cr &= \\dfrac{0.30 \\times 0.03}{0.029} \\cr &= \\dfrac{0.009}{0.029} \\cr &= \\dfrac{9}{29} \\end{aligned}",
+        "<strong>(b) Multi-stage probability with two chips:</strong><br><br>Let $D_A$ denote the event that a chip is defective and from Supplier $A$:\\begin{aligned} P(D_A) &= P(A \\cap D) \\cr &= 0.50 \\times 0.02 \\cr &= 0.010 \\end{aligned}Let $D'$ denote the event that a chip is not defective (from any supplier):\\begin{aligned} P(D') &= 1 - P(D) \\cr &= 1 - 0.029 \\cr &= 0.971 \\end{aligned}The event that exactly one chip is defective and comes from Supplier $A$ can happen in two mutually exclusive orders: $(D_A, D')$ or $(D', D_A)$:\\begin{aligned} P &= 2 \\times P(D_A) \\times P(D') \\cr &= 2 \\times 0.010 \\times 0.971 \\cr &= 0.01942 \\end{aligned}",
+        "Final Answer: (a)(i) $0.029$, (ii) $\\dfrac{9}{29}$, (b) $0.01942$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $0.029$, (ii) $\\dfrac{9}{29}$, (b) $0.00971$",
+            "feedback": "In part (b), you evaluated only a single sequence $(D_A, D')$. Because either the first chip or the second chip could be the defective one from Supplier $A$, you must multiply by $2$ to account for both orders."
+        },
+        {
+            "ans": "(a)(i) $0.029$, (ii) $0.03$, (b) $0.01942$",
+            "feedback": "In part (a)(ii), you stated $P(D \\mid B) = 0.03$ instead of reversing the condition to find $P(B \\mid D)$. The condition restricts the sample space to defective chips, giving denominator $P(D) = 0.029$."
+        },
+        {
+            "ans": "(a)(i) $0.029$, (ii) $\\dfrac{9}{29}$, (b) $0.00980$",
+            "feedback": "In part (b), you paired the defective chip from $A$ with a non-defective chip restricted to Supplier $A$ ($0.49$) rather than any non-defective chip across all suppliers ($0.971$)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Order in Independent Pair Selections",
+        "content": "In multi-stage independent trials, students often calculate the probability of one specific sequence (e.g. chip 1 is defective from $A$, chip 2 is non-defective) and forget the factor of $2$. Unless the question specifies a particular draw order, always account for both permutations."
+    }
+},
+{
+    "id": "050225",
+    "group_id": "050221",
+    "branch": "Statistics",
+    "board": "WJEC",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": [
+        "Addition Rule",
+        "Independent Events",
+        "Conditional Probability",
+        "Probability Inequalities"
+    ],
+    "img": false,
+    "question": "Two events $A$ and $B$ are such that $P(A) = 0.60$, $P(B) = p$, and $P(A \\cup B) = 0.85$.<br><br><strong>(a)</strong> Find an expression for $P(A \\cap B)$ in terms of $p$.<br><br><strong>(b)</strong> Determine the range of possible values of $p$.<br><br><strong>(c)</strong> Given that $A$ and $B$ are independent:<br>&emsp;<strong>(i)</strong> show that $p = 0.625$,<br>&emsp;<strong>(ii)</strong> find the value of $P(A' \\mid B)$.<br><br><strong>(d)</strong> Given instead that $P(A \\mid B) = 0.50$, find the value of $p$.",
+    "steps": [
+        "<strong>(a) Expression for $P(A \\cap B)$:</strong><br><br>Applying the addition rule of probability:\\begin{aligned} &P(A \\cup B) = P(A) + P(B) - P(A \\cap B) \\cr &0.85 = 0.60 + p - P(A \\cap B) \\cr &P(A \\cap B) = p + 0.60 - 0.85 \\cr &P(A \\cap B) = p - 0.25 \\end{aligned}",
+        "<strong>(b) Range of possible values of $p$:</strong><br><br>Every probability must lie between $0$ and $1$.<br><br>Since the intersection cannot be negative:\\begin{aligned} P(A \\cap B) \\ge 0 &\\implies p - 0.25 \\ge 0 \\cr &\\implies p \\ge 0.25 \\end{aligned}Furthermore, since $B \\subseteq (A \\cup B)$:\\begin{aligned} P(B) \\le P(A \\cup B) &\\implies p \\le 0.85 \\end{aligned}Therefore, the allowable range for $p$ is:\\begin{aligned} 0.25 \\le p \\le 0.85 \\end{aligned}",
+        "<strong>(c)(i) Showing $p = 0.625$ under independence:</strong><br><br>If $A$ and $B$ are independent, $P(A \\cap B) = P(A) \\times P(B)$:\\begin{aligned} &p - 0.25 = 0.60p \\cr &p - 0.60p = 0.25 \\cr &0.40p = 0.25 \\cr &p = \\dfrac{0.25}{0.40} \\cr &p = 0.625 \\end{aligned}",
+        "<strong>(c)(ii) Value of $P(A' \\mid B)$:</strong><br><br>Because $A$ and $B$ are independent, knowing that $B$ has occurred does not affect the probability of $A$ or its complement $A'$:\\begin{aligned} P(A' \\mid B) &= P(A') \\cr &= 1 - P(A) \\cr &= 1 - 0.60 \\cr &= 0.4 \\end{aligned}",
+        "<strong>(d) Finding $p$ when $P(A \\mid B) = 0.50$:</strong><br><br>Using the definition of conditional probability:\\begin{aligned} P(A \\mid B) &= \\dfrac{P(A \\cap B)}{P(B)} \\cr 0.50 &= \\dfrac{p - 0.25}{p} \\end{aligned}Solving for $p$:\\begin{aligned} &0.50p = p - 0.25 \\cr &0.25 = p - 0.50p \\cr &0.25 = 0.50p \\cr &p = \\dfrac{0.25}{0.50} \\cr &p = 0.5 \\end{aligned}",
+        "Final Answer: (a) $p - 0.25$, (b) $0.25 \\le p \\le 0.85$, (c)(i) $p = 0.625$, (ii) $0.4$, (d) $0.5$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $p - 0.25$, (b) $0 \\le p \\le 1$, (c)(i) $p = 0.625$, (ii) $0.4$, (d) $0.5$",
+            "feedback": "In part (b), stating $0 \\le p \\le 1$ ignores the constraints given by $P(A) = 0.60$ and $P(A \\cup B) = 0.85$. If $p < 0.25$, the intersection $p - 0.25$ would be negative; if $p > 0.85$, $P(B)$ would exceed the union $P(A \\cup B)$."
+        },
+        {
+            "ans": "(a) $p - 0.25$, (b) $0.25 \\le p \\le 0.85$, (c)(i) $p = 0.625$, (ii) $0.6$, (d) $0.5$",
+            "feedback": "In part (c)(ii), $0.6$ is $P(A \\mid B) = P(A)$, but the question asks for the complement $P(A' \\mid B) = 1 - P(A) = 0.4$."
+        },
+        {
+            "ans": "(a) $p - 0.25$, (b) $0.25 \\le p \\le 0.85$, (c)(i) $p = 0.625$, (ii) $0.4$, (d) $0.25$",
+            "feedback": "In part (d), you solved $p - 0.25 = 0$ instead of $p - 0.25 = 0.50p$. Make sure to multiply through by the denominator $P(B) = p$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Independence Simplifies Conditionals",
+        "content": "In part (c)(ii), do not waste time setting up Bayes' formula: if $A$ and $B$ are independent, knowing that $B$ has occurred provides zero information about $A$ (or $A'$). Hence $P(A' \\mid B) = P(A') = 1 - P(A) = 0.40$ immediately."
+    }
 }
 ];
