@@ -350,7 +350,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "Two culinary critics independently assess and score $8$ competitors at a regional cooking competition. The scores awarded by Critic A ($x$) and Critic B ($y$) are shown in the table below:<table style='width:100%; max-width:260px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr style='border-bottom:1px solid #ccc;'><th style='padding:6px; text-align:left;'>Chef</th><th style='padding:6px;'>Critic A ($x$)</th><th style='padding:6px;'>Critic B ($y$)</th></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'>A</td><td style='padding:6px;'>65</td><td style='padding:6px;'>70</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'>B</td><td style='padding:6px;'>78</td><td style='padding:6px;'>75</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'>C</td><td style='padding:6px;'>82</td><td style='padding:6px;'>80</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'>D</td><td style='padding:6px;'>54</td><td style='padding:6px;'>58</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'>E</td><td style='padding:6px;'>91</td><td style='padding:6px;'>88</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'>F</td><td style='padding:6px;'>70</td><td style='padding:6px;'>66</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'>G</td><td style='padding:6px;'>85</td><td style='padding:6px;'>86</td></tr><tr><td style='padding:6px; text-align:left;'>H</td><td style='padding:6px;'>60</td><td style='padding:6px;'>62</td></tr></table><strong>(a)</strong> Calculate Spearman's rank correlation coefficient between the scores awarded by the two critics.<br><br><strong>(b)</strong> State two conditions under which Spearman's rank correlation coefficient is preferred over the product moment correlation coefficient.<br><br><strong>(c)</strong> Comment on the level of agreement between the two critics.",
     "steps": [
-        "<strong>(a) Ranking the scores and calculating $r_s$:</strong><br><br>Assign ranks from $1$ (lowest) to $8$ (highest):<br><br>• <strong>Chef A:</strong> Rank A $= 3$, Rank B $= 4 \\implies d = -1 \\implies d^2 = 1$<br>• <strong>Chef B:</strong> Rank A $= 5$, Rank B $= 5 \\implies d = 0 \\implies d^2 = 0$<br>• <strong>Chef C:</strong> Rank A $= 6$, Rank B $= 6 \\implies d = 0 \\implies d^2 = 0$<br>• <strong>Chef D:</strong> Rank A $= 1$, Rank B $= 1 \\implies d = 0 \\implies d^2 = 0$<br>• <strong>Chef E:</strong> Rank A $= 8$, Rank B $= 8 \\implies d = 0 \\implies d^2 = 0$<br>• <strong>Chef F:</strong> Rank A $= 4$, Rank B $= 3 \\implies d = 1 \\implies d^2 = 1$<br>• <strong>Chef G:</strong> Rank A $= 7$, Rank B $= 7 \\implies d = 0 \\implies d^2 = 0$<br>• <strong>Chef H:</strong> Rank A $= 2$, Rank B $= 2 \\implies d = 0 \\implies d^2 = 0$<br><br>Summing the squared rank differences:\\begin{aligned} \\sum d^2 &= 1 + 0 + 0 + 0 + 0 + 1 + 0 + 0 \\cr &= 2 \\end{aligned}Applying Spearman's formula with $n = 8$:\\begin{aligned} r_s &= 1 - \\dfrac{6\\sum d^2}{n(n^2 - 1)} \\cr &= 1 - \\dfrac{6(2)}{8(64 - 1)} \\cr &= 1 - \\dfrac{12}{8(63)} \\cr &= 1 - \\dfrac{12}{504} \\cr &= 1 - \\dfrac{1}{42} \\cr &= \\dfrac{41}{42} \\cr &\\approx 0.976 \\end{aligned}",
+        "<strong>(a) Ranking the scores and calculating $r_s$:</strong><br><br>Assign ranks from $1$ (lowest) to $8$ (highest):<br><br>• <strong>Chef A:</strong> Rank A $= 3$, Rank B $= 4 \\implies d = -1 \\implies d^2 = 1$<br>• <strong>Chef B:</strong> Rank A $= 5$, Rank B $= 5 \\implies d = 0 \\implies d^2 = 0$<br>• <strong>Chef C:</strong> Rank A $= 6$, Rank B $= 6 \\implies d = 0 \\implies d^2 = 0$<br>• <strong>Chef D:</strong> Rank A $= 1$, Rank B $= 1 \\implies d = 0 \\implies d^2 = 0$<br>• <strong>Chef E:</strong> Rank A $= 8$, Rank B $= 8 \\implies d = 0 \\implies d^2 = 0$<br>• <strong>Chef F:</strong> Rank A $= 4$, Rank B $= 3 \\implies d = 1 \\implies d^2 = 1$<br>• <strong>Chef G:</strong> Rank A $= 7$, Rank B $= 7 \\implies d = 0 \\implies d^2 = 0$<br>• <strong>Chef H:</strong> Rank A $= 2$, Rank B $= 2 \\implies d = 0 \\implies d^2 = 0$<br><br>Summing the squared rank differences:\\begin{aligned} &\\sum d^2\\cr & = 1 + 0 + 0 + 0 + 0 + 1 + 0 + 0 \\cr &= 2 \\end{aligned}Applying Spearman's formula with $n = 8$:\\begin{aligned} r_s &= 1 - \\dfrac{6\\sum d^2}{n(n^2 - 1)} \\cr &= 1 - \\dfrac{6(2)}{8(64 - 1)} \\cr &= 1 - \\dfrac{12}{8(63)} \\cr &= 1 - \\dfrac{12}{504} \\cr &= 1 - \\dfrac{1}{42} \\cr &= \\dfrac{41}{42} \\cr &\\approx 0.976 \\end{aligned}",
         "<strong>(b) Conditions favouring Spearman's rank:</strong><br><br>1. When the data is non-linear but monotonic.<br>2. When the data is qualitative or ordinal (already ranked or based on subjective scores).<br>3. When the dataset contains extreme outliers or does not follow a bivariate normal distribution.",
         "<strong>(c) Commenting on agreement:</strong><br><br>There is an exceptionally high level of agreement between the rankings given by the two culinary critics ($r_s = 0.976$).",
         "Final Answer: (a) $0.976$, (c) Very high level of agreement"
@@ -414,6 +414,215 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Connecting Slope and Correlation",
         "content": "A neat connection to remember is $b = r\\left(\\dfrac{s_y}{s_x}\\right)$. Because standard deviations $s_y$ and $s_x$ are always positive, the regression slope $b$ and correlation coefficient $r$ must always share identical signs."
+    }
+},
+{
+    "id": "050261",
+    "group_id": "050261",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Probability Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "Algebraic Binomial Ratios",
+        "Proof of Parameter",
+        "Cumulative Probability"
+    ],
+    "img": false,
+    "question": "A robotics laboratory conducts a series of $10$ autonomous test flights with a prototype delivery drone. The probability of any individual test flight encountering a navigation sensor error is $p$, where errors occur independently from flight to flight.<br><br>Let $X$ denote the random variable \"the number of test flights that encounter a navigation sensor error\".<br><br><strong>(a)</strong> Find an expression, in terms of $p$, for $\\text{P}(X = 1)$.<br><br>It is known that $\\text{P}(X = 2) = 3\\text{P}(X = 1)$.<br><br><strong>(b)</strong> Prove that $p = 0.4$.<br><br><strong>(c)</strong> Hence find the probability that at least three test flights encounter a navigation sensor error.",
+    "steps": [
+        "<strong>(a) Expression for $\\text{P}(X = 1)$:</strong><br><br>Since $X \\sim \\text{B}(10, p)$, using the binomial probability formula:\\begin{aligned} P(X = 1) &= \\binom{10}{1} p^1 (1 - p)^{10 - 1} \\cr &= 10p(1 - p)^9 \\end{aligned}",
+        "<strong>(b) Proving that $p = 0.4$:</strong><br><br>First, write the expression for $\\text{P}(X = 2)$:\\begin{aligned} P(X = 2) &= \\binom{10}{2} p^2 (1 - p)^8 \\cr &= 45p^2(1 - p)^8 \\end{aligned}Using the given relationship $\\text{P}(X = 2) = 3\\text{P}(X = 1)$:\\begin{aligned} 45p^2(1 - p)^8 &= 3[10p(1 - p)^9] \\cr 45p^2(1 - p)^8 &= 30p(1 - p)^9 \\end{aligned}Since $0 < p < 1$, divide both sides by $15p(1 - p)^8$:\\begin{aligned} 3p &= 2(1 - p) \\cr 3p &= 2 - 2p \\cr 5p &= 2 \\cr p &= \\dfrac{2}{5} \\cr p &= 0.4 \\end{aligned}",
+        "<strong>(c) Finding $\\text{P}(X \\ge 3)$:</strong><br><br>With $X \\sim \\text{B}(10, 0.4)$, use the complement rule:\\begin{aligned} P(X \\ge 3) &= 1 - P(X \\le 2) \\cr &= 1 - [P(X = 0) + P(X = 1) + P(X = 2)] \\end{aligned}Evaluating each term:\\begin{aligned} P(X = 0) &= (0.6)^{10} \\cr &\\approx 0.006047 \\cr P(X = 1) &= 10(0.4)(0.6)^9 \\cr &\\approx 0.040311 \\cr P(X = 2) &= 3 \\times 0.040311 \\cr &\\approx 0.120932 \\end{aligned}Summing the terms:\\begin{aligned} P(X \\le 2) &= 0.006047 + 0.040311 + 0.120932 \\cr &= 0.167290 \\end{aligned}Subtracting from $1$:\\begin{aligned} P(X \\ge 3) &= 1 - 0.167290 \\cr &= 0.8327 \\end{aligned}",
+        "Final Answer: (a) $10p(1 - p)^9$, (b) $p = 0.4$, (c) $0.8327$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $10p(1 - p)^9$, (b) $p = 0.4$, (c) $0.1673$",
+            "feedback": "In part (c), $0.1673$ is $P(X \\le 2)$. The question asks for the probability of *at least three* flights, so you must evaluate $1 - P(X \\le 2) = 0.8327$."
+        },
+        {
+            "ans": "(a) $p(1 - p)^9$, (b) $p = 0.4$, (c) $0.8327$",
+            "feedback": "In part (a), you omitted the binomial coefficient $\\binom{10}{1} = 10$. The formula requires $\\binom{n}{x} p^x (1 - p)^{n - x}$."
+        },
+        {
+            "ans": "(a) $10p(1 - p)^9$, (b) $p = 0.25$, (c) $0.8327$",
+            "feedback": "In part (b), check your algebraic division: $45p = 30(1 - p)$ expands to $45p = 30 - 30p$, giving $75p = 30 \\implies p = 0.4$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Dividing Common Powers in Binomial Ratios",
+        "content": "When solving equations of the form $P(X = r+1) = k P(X = r)$, do not expand the brackets. Dividing both sides by $p^r (1 - p)^{n - r - 1}$ instantly reduces the equation to a simple linear equation in $p$."
+    }
+},
+{
+    "id": "050262",
+    "group_id": "050261",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Probability Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "Algebraic Parameter Derivation",
+        "Binomial Probabilities",
+        "Repeated Binomial Trials"
+    ],
+    "img": false,
+    "question": "A quality assurance inspector inspects batches of $8$ micro-controllers manufactured on an assembly line. The probability that any micro-controller is defective is a constant value $p$, independently of all other micro-controllers.<br><br>Let $Y$ denote the number of defective micro-controllers in a randomly selected batch.<br><br><strong>(a)</strong> Given that $\\text{P}(Y = 1) = 4\\text{P}(Y = 0)$, show that $p = \\dfrac{1}{3}$.<br><br><strong>(b)</strong> Using $p = \\dfrac{1}{3}$, find the probability that a randomly chosen batch contains:<br>&emsp;<strong>(i)</strong> exactly $2$ defective micro-controllers,<br>&emsp;<strong>(ii)</strong> more than $3$ defective micro-controllers.<br><br><strong>(c)</strong> The inspector checks $5$ independent batches. Find the probability that exactly $4$ of these batches contain no defective micro-controllers.",
+    "steps": [
+        "<strong>(a) Showing $p = \\dfrac{1}{3}$:</strong><br><br>Since $Y \\sim \\text{B}(8, p)$, write the expressions for $Y = 1$ and $Y = 0$:\\begin{aligned} P(Y = 1) &= \\binom{8}{1} p^1 (1 - p)^7 \\cr &= 8p(1 - p)^7 \\cr P(Y = 0) &= (1 - p)^8 \\end{aligned}Equating using $\\text{P}(Y = 1) = 4\\text{P}(Y = 0)$:\\begin{aligned} 8p(1 - p)^7 &= 4(1 - p)^8 \\cr 8p &= 4(1 - p) \\cr 8p &= 4 - 4p \\cr 12p &= 4 \\cr p &= \\dfrac{4}{12} \\cr p &= \\dfrac{1}{3} \\end{aligned}",
+        "<strong>(b)(i) Probability of exactly $2$ defectives:</strong><br><br>With $Y \\sim \\text{B}\\left(8, \\dfrac{1}{3}\\right)$:\\begin{aligned} P(Y = 2) &= \\binom{8}{2} \\left(\\dfrac{1}{3}\\right)^2 \\left(\\dfrac{2}{3}\\right)^6 \\cr &= 28 \\times \\dfrac{1}{9} \\times \\dfrac{64}{729} \\cr &= \\dfrac{1792}{6561} \\cr &\\approx 0.2731 \\end{aligned}",
+        "<strong>(b)(ii) Probability of more than $3$ defectives:</strong><br><br>Using the complement rule:\\begin{aligned} P(Y > 3) &= 1 - P(Y \\le 3) \\cr &= 1 - [P(0) + P(1) + P(2) + P(3)] \\end{aligned}Summing the terms:\\begin{aligned} P(Y \\le 3) &\\approx 0.0390 + 0.1561 + 0.2731 + 0.2731 \\cr &= 0.7415 \\end{aligned}Subtracting from $1$:\\begin{aligned} P(Y > 3) &= 1 - 0.7415 \\cr &= 0.2585 \\end{aligned}",
+        "<strong>(c) Repeated batches:</strong><br><br>The probability that a single batch contains no defectives is:\\begin{aligned} P(\\text{no defectives}) &= \\left(\\dfrac{2}{3}\\right)^8 \\cr &\\approx 0.039018 \\end{aligned}Let $W$ be the number of batches out of $5$ with zero defectives, so $W \\sim \\text{B}(5, 0.039018)$:\\begin{aligned} P(W = 4) &= \\binom{5}{4} (0.039018)^4 (1 - 0.039018)^1 \\cr &= 5 \\times (2.318 \\times 10^{-6}) \\times 0.96098 \\cr &\\approx 0.000011 \\end{aligned}",
+        "Final Answer: (a) $p = \\dfrac{1}{3}$, (b)(i) $0.2731$, (ii) $0.2585$, (c) $0.000011$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $p = \\dfrac{1}{3}$, (b)(i) $0.2731$, (ii) $0.7415$, (c) $0.000011$",
+            "feedback": "In part (b)(ii), $0.7415$ is $P(Y \\le 3)$. For 'more than $3$', you must calculate $1 - P(Y \\le 3) = 0.2585$."
+        },
+        {
+            "ans": "(a) $p = \\dfrac{1}{2}$, (b)(i) $0.2731$, (ii) $0.2585$, (c) $0.000011$",
+            "feedback": "In part (a), check your algebra: $8p = 4 - 4p$ gives $12p = 4 \\implies p = \\dfrac{1}{3}$, not $\\dfrac{1}{2}$."
+        },
+        {
+            "ans": "(a) $p = \\dfrac{1}{3}$, (b)(i) $0.2731$, (ii) $0.2585$, (c) $0.000055$",
+            "feedback": "In part (c), you forgot to multiply by $(1 - p) = 0.961$, evaluating $5 \\times (0.0390)^4$ directly."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Binomial Within Binomial",
+        "content": "Part (c) is a classic two-tier examination question. First, use the primary binomial model to find the probability of a single event (here, a batch with zero defectives). Then treat that result as the success probability parameter for a second, separate binomial trial of size $5$."
+    }
+},
+{
+    "id": "050263",
+    "group_id": "050261",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Probability Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "One-Tailed Hypothesis Testing",
+        "Critical Region",
+        "Actual Significance Level"
+    ],
+    "img": false,
+    "question": "An artisan bakery claims that at least $80\\%$ of its regular customers prefer its traditional sourdough loaf to standard sliced bread. A local consumer watchdog suspects that the true proportion is lower than $80\\%$.<br><br>The watchdog surveys a random sample of $20$ regular customers. Let $X$ denote the number of customers in the sample who prefer the sourdough loaf.<br><br><strong>(a)</strong> Stating your hypotheses clearly, set up a suitable one-tailed hypothesis test to investigate the watchdog's suspicion.<br><br><strong>(b)</strong> State the distribution of $X$ assuming that the bakery's claim is true.<br><br><strong>(c)</strong> In the survey, $12$ of the $20$ customers state a preference for the sourdough loaf. Test, at the $5\\%$ level of significance, whether there is evidence to support the watchdog's suspicion.<br><br><strong>(d)</strong> Determine the critical region for this test at the $5\\%$ significance level, and state the actual significance level of the test.",
+    "steps": [
+        "<strong>(a) Setting up hypotheses:</strong><br><br>Where $p$ represents the population proportion of customers preferring the sourdough loaf:\\begin{aligned} &H_0: p = 0.8 \\cr &H_1: p < 0.8 \\end{aligned}",
+        "<strong>(b) Null distribution:</strong><br><br>Under $H_0$, the number of preferring customers follows:\\begin{aligned} X \\sim \\text{B}(20, 0.8) \\end{aligned}",
+        "<strong>(c) Calculating test probability and conclusion:</strong><br><br>We calculate the lower-tail probability of observing $12$ or fewer successes under $X \\sim \\text{B}(20, 0.8)$:\\begin{aligned} P(X \\le 12) &= \\sum_{k=0}^{12} \\binom{20}{k} (0.8)^k (0.2)^{20 - k} \\end{aligned}Alternatively, let $Y = 20 - X \\sim \\text{B}(20, 0.2)$ be the number who do not prefer sourdough:\\begin{aligned} P(X \\le 12) &= P(Y \\ge 8) \\cr &= 1 - P(Y \\le 7) \\cr &= 1 - 0.9679 \\cr &= 0.0321 \\end{aligned}Comparing to the significance level $\\alpha = 0.05$:\\begin{aligned} 0.0321 < 0.05 \\end{aligned}Since the $p$-value is less than $0.05$, we reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level to support the watchdog's suspicion that the proportion preferring sourdough is less than $80\\%$.",
+        "<strong>(d) Determining critical region and actual significance level:</strong><br><br>We find the largest integer $c$ such that $P(X \\le c) \\le 0.05$:\\begin{aligned} P(X \\le 11) &= 0.0100 \\le 0.05 \\cr P(X \\le 12) &= 0.0321 \\le 0.05 \\cr P(X \\le 13) &= 0.0867 > 0.05 \\end{aligned}Therefore, the critical region is:\\begin{aligned} X \\le 12 \\end{aligned}The actual significance level is the probability of rejecting $H_0$ when it is true:\\begin{aligned} P(X \\le 12) &= 0.0321 \\quad (3.21\\%) \\end{aligned}",
+        "Final Answer: (a) $H_0: p = 0.8$, $H_1: p < 0.8$, (b) $B(20, 0.8)$, (c) Reject $H_0$, (d) $X \\le 12$ and $0.0321$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: p = 0.8$, $H_1: p < 0.8$, (b) $B(20, 0.8)$, (c) Do not reject $H_0$, (d) $X \\le 12$ and $0.0321$",
+            "feedback": "In part (c), because $p = 0.0321$ is strictly less than $0.05$, the result falls in the critical region, so $H_0$ must be rejected."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.8$, $H_1: p < 0.8$, (b) $B(20, 0.8)$, (c) Reject $H_0$, (d) $X \\le 11$ and $0.0100$",
+            "feedback": "In part (d), $P(X \\le 12) = 0.0321$ is also less than or equal to $0.05$. The critical region includes all values with cumulative probability $\\le 0.05$, so $c = 12$."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.8$, $H_1: p \\neq 0.8$, (b) $B(20, 0.8)$, (c) Reject $H_0$, (d) $X \\le 12$ and $0.0500$",
+            "feedback": "In part (a), the watchdog suspects the proportion is *lower*, which requires a one-tailed test $H_1: p < 0.8$. In part (d), the actual significance level is $0.0321$, not $0.05$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Actual vs Nominal Significance Level",
+        "content": "Because the binomial distribution is discrete, you cannot usually achieve an exact $5\\%$ significance level. The nominal level is $5\\%$, but the *actual significance level* is the exact probability of landing in the critical region ($P(X \\le 12) = 0.0321$ or $3.21\\%$)."
+    }
+},
+{
+    "id": "050264",
+    "group_id": "050261",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Probability Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "Two-Tailed Hypothesis Testing",
+        "Symmetric Critical Regions",
+        "Significance Levels"
+    ],
+    "img": false,
+    "question": "A coin is suspected of being biased. To investigate this, an experimenter tosses the coin $25$ times and records $X$, the number of heads obtained.<br><br><strong>(a)</strong> State suitable null and alternative hypotheses to test whether the coin is biased.<br><br><strong>(b)</strong> The experimenter conducts a two-tailed test at the $5\\%$ level of significance, allocating as close to $2.5\\%$ as possible to each tail. Determine the critical region for this test.<br><br><strong>(c)</strong> State the actual significance level of the test.<br><br><strong>(d)</strong> In the experiment, the coin lands on heads $19$ times. State, with justification, the conclusion of the test in context.",
+    "steps": [
+        "<strong>(a) Hypotheses:</strong><br><br>Where $p$ is the probability of landing on heads:\\begin{aligned} &H_0: p = 0.5 \\cr &H_1: p \\neq 0.5 \\end{aligned}",
+        "<strong>(b) Determining the critical region:</strong><br><br>Under $H_0$, $X \\sim \\text{B}(25, 0.5)$. We seek critical values in each tail with probability $\\le 0.025$.<br><br>For the lower tail:\\begin{aligned} P(X \\le 6) &= 0.0073 \\le 0.025 \\cr P(X \\le 7) &= 0.0216 \\le 0.025 \\cr P(X \\le 8) &= 0.0539 > 0.025 \\end{aligned}Thus the lower critical region is $X \\le 7$.<br><br>By symmetry of $\\text{B}(25, 0.5)$, the upper critical value is $25 - 7 = 18$:\\begin{aligned} P(X \\ge 18) &= P(X \\le 7) \\cr &= 0.0216 \\end{aligned}Combining both tails, the critical region is:\\begin{aligned} X \\le 7 \\quad \\text{or} \\quad X \\ge 18 \\end{aligned}",
+        "<strong>(c) Actual significance level:</strong><br><br>Summing the probabilities of both tails:\\begin{aligned} \\text{Actual level} &= P(X \\le 7) + P(X \\ge 18) \\cr &= 0.0216 + 0.0216 \\cr &= 0.0432 \\quad (4.32\\%) \\end{aligned}",
+        "<strong>(d) Conclusion for $19$ heads:</strong><br><br>The observed value $x = 19$ satisfies $19 \\ge 18$, which falls inside the upper critical region.<br><br>Therefore, we <strong>reject $H_0$</strong>.<br><br>There is significant evidence at the $5\\%$ level that the coin is biased.",
+        "Final Answer: (a) $H_0: p = 0.5$, $H_1: p \\neq 0.5$, (b) $X \\le 7$ or $X \\ge 18$, (c) $0.0432$, (d) Reject $H_0$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: p = 0.5$, $H_1: p \\neq 0.5$, (b) $X \\le 8$ or $X \\ge 17$, (c) $0.0432$, (d) Reject $H_0$",
+            "feedback": "In part (b), $P(X \\le 8) = 0.0539 > 0.025$, which exceeds the allocated $2.5\\%$ tail probability. The lower critical value must be $7$."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.5$, $H_1: p > 0.5$, (b) $X \\le 7$ or $X \\ge 18$, (c) $0.0432$, (d) Reject $H_0$",
+            "feedback": "In part (a), testing whether a coin is 'biased' can mean biased towards heads or tails, requiring a two-tailed test $H_1: p \\neq 0.5$."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.5$, $H_1: p \\neq 0.5$, (b) $X \\le 7$ or $X \\ge 18$, (c) $0.0216$, (d) Accept $H_0$",
+            "feedback": "In part (c), $0.0216$ is the probability of a single tail. For a two-tailed test, the actual significance level is the sum of both tails: $0.0216 + 0.0216 = 0.0432$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Symmetry in Two-Tailed Binomials",
+        "content": "Whenever $p = 0.5$, the binomial distribution is perfectly symmetric. Once you calculate the lower critical boundary $c_1 = 7$, the upper boundary is immediately $c_2 = n - c_1 = 25 - 7 = 18$, and the total significance level is simply double the lower-tail probability."
+    }
+},
+{
+    "id": "050265",
+    "group_id": "050261",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Probability Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "Mean and Variance Formulas",
+        "Simultaneous Equations",
+        "Mode of Binomial Distribution"
+    ],
+    "img": false,
+    "question": "A discrete random variable $X$ follows a binomial distribution:$$X \\sim \\text{B}(n, p)$$The expected value of $X$ is $7.2$ and the variance of $X$ is $2.88$.<br><br><strong>(a)</strong> Determine the value of $n$ and the value of $p$.<br><br><strong>(b)</strong> Find:<br>&emsp;<strong>(i)</strong> $\\text{P}(X = 8)$,<br>&emsp;<strong>(ii)</strong> $\\text{P}(X \\le 2)$.<br><br><strong>(c)</strong> State the most likely value (the mode) of $X$, justifying your answer.",
+    "steps": [
+        "<strong>(a) Finding $n$ and $p$:</strong><br><br>Using the standard formulas for expectation and variance:\\begin{aligned} \\text{E}(X) &= np = 7.2 \\cr \\text{Var}(X) &= np(1 - p) = 2.88 \\end{aligned}Dividing the variance by the expectation:\\begin{aligned} \\dfrac{np(1 - p)}{np} &= \\dfrac{2.88}{7.2} \\cr 1 - p &= 0.4 \\cr p &= 1 - 0.4 \\cr p &= 0.6 \\end{aligned}Substituting $p = 0.6$ into the expectation equation:\\begin{aligned} n(0.6) &= 7.2 \\cr n &= \\dfrac{7.2}{0.6} \\cr n &= 12 \\end{aligned}Hence $X \\sim \\text{B}(12, 0.6)$.",
+        "<strong>(b)(i) Finding $\\text{P}(X = 8)$:</strong><br><br>Using the binomial probability formula:\\begin{aligned} P(X = 8) &= \\binom{12}{8} (0.6)^8 (0.4)^4 \\cr &= 495 \\times 0.016796 \\times 0.0256 \\cr &= 495 \\times 0.000430 \\cr &\\approx 0.2128 \\end{aligned}",
+        "<strong>(b)(ii) Finding $\\text{P}(X \\le 2)$:</strong><br><br>Summing the probabilities for $X = 0, 1, 2$:\\begin{aligned} P(X = 0) &= (0.4)^{12} \\approx 0.000002 \\cr P(X = 1) &= 12(0.6)(0.4)^{11} \\approx 0.000252 \\cr P(X = 2) &= 66(0.6)^2(0.4)^{10} \\approx 0.002491 \\end{aligned}Adding these values:\\begin{aligned} P(X \\le 2) &= 0.000002 + 0.000252 + 0.002491 \\cr &= 0.0028 \\end{aligned}",
+        "<strong>(c) Finding the mode:</strong><br><br>For a binomial distribution, the mode is the integer $m$ satisfying $(n + 1)p - 1 \\le m \\le (n + 1)p$:\\begin{aligned} (n + 1)p &= (12 + 1)(0.6) \\cr &= 13 \\times 0.6 \\cr &= 7.8 \\end{aligned}Because $(n + 1)p = 7.8$ is not an integer, the unique mode is the floor integer:\\begin{aligned} \\text{Mode} = 7 \\end{aligned}(Confirming probabilities: $P(X = 7) \\approx 0.2270$ and $P(X = 8) \\approx 0.2128$, so $7$ is the most likely value).",
+        "Final Answer: (a) $n = 12$, $p = 0.6$, (b)(i) $0.2128$, (ii) $0.0028$, (c) $\\text{Mode} = 7$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $n = 12$, $p = 0.4$, (b)(i) $0.2128$, (ii) $0.0028$, (c) $\\text{Mode} = 7$",
+            "feedback": "In part (a), $\\dfrac{2.88}{7.2} = 0.4$ equals $1 - p$ (the failure probability). Therefore, $p = 1 - 0.4 = 0.6$."
+        },
+        {
+            "ans": "(a) $n = 12$, $p = 0.6$, (b)(i) $0.2128$, (ii) $0.0028$, (c) $\\text{Mode} = 8$",
+            "feedback": "In part (c), students often round the mean $7.2$ to $7$ or $8$. The exact formula $(n + 1)p = 13 \\times 0.6 = 7.8$ indicates the mode is $7$ ($P(7) \\approx 0.227$ vs $P(8) \\approx 0.213$)."
+        },
+        {
+            "ans": "(a) $n = 10$, $p = 0.72$, (b)(i) $0.2128$, (ii) $0.0028$, (c) $\\text{Mode} = 7$",
+            "feedback": "In part (a), you assumed $n = 10$. Solving $\\text{Var} / \\text{Mean} = 1 - p$ yields $p = 0.6$, from which $n = 7.2 / 0.6 = 12$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Finding the Mode of a Binomial",
+        "content": "To find the mode of a binomial distribution without calculating every probability, evaluate $(n + 1)p$. If this is not an integer, the mode is simply the integer part $\\lfloor (n + 1)p \\rfloor$. Here $13 \\times 0.6 = 7.8$, so the mode is $7$."
     }
 }
 ];
