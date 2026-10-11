@@ -1797,7 +1797,7 @@ window.ALEVEL_QUESTIONS = [
         "<strong>(a)(ii) Interpretation of the intercept:</strong><br><br>The intercept $10.5\\text{ MPa}$ represents the predicted tensile strength at a curing temperature of $0^\\circ\\text{C}$. However, this may not be physically meaningful because the polymer resin might not cure or set at $0^\\circ\\text{C}$, and $0^\\circ\\text{C}$ lies well outside the experimental range $[12, 50]$.",
         "<strong>(b)(i) Estimate for $x = 30^\\circ\\text{C}$:</strong><br><br>Substituting $x = 30$ into the regression line:\\begin{aligned} y &= 10.5 + 0.710(30) \\cr &= 10.5 + 21.3 \\cr &= 31.8\\text{ MPa} \\end{aligned}",
         "<strong>(b)(ii) Estimate for $x = 65^\\circ\\text{C}$:</strong><br><br>Substituting $x = 65$ into the regression line:\\begin{aligned} y &= 10.5 + 0.710(65) \\cr &= 10.5 + 46.15 \\cr &= 56.65\\text{ MPa} \\end{aligned}",
-        "<strong>(c) Reliability of estimates:</strong><br><br>• The estimate at $30^\\circ\\text{C}$ is **reliable** because it is an **interpolation** within the experimental range $[12, 50]$.<br>• The estimate at $65^\\circ\\text{C}$ is **unreliable** because it is an **extrapolation** far beyond the experimental range, where the polymer may degrade or change state.",
+        "<strong>(c) Reliability of estimates:</strong><br><br>• The estimate at $30^\\circ\\text{C}$ is <em>reliable</em> because it is an <em>interpolation</em> within the experimental range $[12, 50]$.<br>• The estimate at $65^\\circ\\text{C}$ is <em>unreliable</em> because it is an <em>extrapolation</em> far beyond the experimental range, where the polymer may degrade or change state.",
         "<strong>(d) Correlation versus causality:</strong><br><br>Correlation indicates an association between two variables, but it does not prove cause and effect. The observed relationship could be driven by a confounding third variable (e.g. chemical reaction rate or pressure), or the material structure could alter at higher temperatures.",
         "Final Answer: (b)(i) $31.8\\text{ MPa}$, (ii) $56.65\\text{ MPa}$, (c) (i) Reliable, (ii) Unreliable"
     ],
@@ -1835,7 +1835,7 @@ window.ALEVEL_QUESTIONS = [
         "Coding Invariance"
     ],
     "img": false,
-    "question": "A meteorologist investigates the relationship between altitude, $h$ (in hundreds of metres above sea level), and atmospheric temperature, $T\\text{ (}^\\circ\\text{C)}$, on a mountain range. Measurements are recorded simultaneously at $12$ weather stations:<br><img src='images/Statistics_pngs/050245.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>The summary statistics for the $12$ pairs of observations are:$$\\sum h = 156, \\quad \\sum T = 87.5, \\quad \\sum h^2 = 2608, \\quad \\sum T^2 = 1118.75, \\quad \\sum hT = 761.5$$<strong>(a)</strong> Calculate:<br>&emsp;<strong>(i)</strong> $S_{hh}$, $S_{TT}$, and $S_{hT}$,<br>&emsp;<strong>(ii)</strong> the product moment correlation coefficient, $r$, between $h$ and $T$.<br><br><strong>(b)</strong> Stating your hypotheses clearly, test at the $1\\%$ significance level whether there is evidence of negative correlation between altitude and temperature.<br><br><strong>(c)</strong> State the effect on the value of $r$ if the temperature had been recorded in degrees Fahrenheit ($F = 1.8T + 32$) instead of degrees Celsius.",
+    "question": "A meteorologist investigates the relationship between altitude, $h$ (in hundreds of metres above sea level), and atmospheric temperature, $T\\text{ (}^\\circ\\text{C)}$, on a mountain range. Measurements are recorded simultaneously at $12$ weather stations:<br><img src='images/Statistics_pngs/050245.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>The summary statistics for the $12$ pairs of observations are:\\begin{aligned} \\sum h &= 156 \\cr \\sum T &= 87.5 \\cr \\sum h^2 &= 2608 \\cr \\sum T^2 &= 1118.75 \\cr \\sum hT &= 761.5 \\end{aligned}<strong>(a)</strong> Calculate:<br>&emsp;<strong>(i)</strong> $S_{hh}$, $S_{TT}$, and $S_{hT}$,<br>&emsp;<strong>(ii)</strong> the product moment correlation coefficient, $r$, between $h$ and $T$.<br><br><strong>(b)</strong> Stating your hypotheses clearly, test at the $1\\%$ significance level whether there is evidence of negative correlation between altitude and temperature.<br><br><strong>(c)</strong> State the effect on the value of $r$ if the temperature had been recorded in degrees Fahrenheit ($F = 1.8T + 32$) instead of degrees Celsius.",
     "steps": [
         "<strong>(a)(i) Calculating summary sums of squares:</strong><br><br>Using the standard formulas with $n = 12$:\\begin{aligned} S_{hh} &= \\sum h^2 - \\dfrac{(\\sum h)^2}{n} \\cr &= 2608 - \\dfrac{156^2}{12} \\cr &= 2608 - 2028 \\cr &= 580 \\end{aligned}\\begin{aligned} S_{TT} &= \\sum T^2 - \\dfrac{(\\sum T)^2}{n} \\cr &= 1118.75 - \\dfrac{87.5^2}{12} \\cr &= 1118.75 - 638.02 \\cr &= 480.73 \\end{aligned}\\begin{aligned} S_{hT} &= \\sum hT - \\dfrac{(\\sum h)(\\sum T)}{n} \\cr &= 761.5 - \\dfrac{156 \\times 87.5}{12} \\cr &= 761.5 - 1137.5 \\cr &= -376 \\end{aligned}",
         "<strong>(a)(ii) Calculating the PMCC $r$:</strong><br><br>Applying the correlation formula:\\begin{aligned} r &= \\dfrac{S_{hT}}{\\sqrt{S_{hh} S_{TT}}} \\cr &= \\dfrac{-376}{\\sqrt{580 \\times 480.73}} \\cr &= \\dfrac{-376}{\\sqrt{278823.4}} \\cr &= \\dfrac{-376}{528.04} \\cr &\\approx -0.712 \\end{aligned}",
@@ -1861,6 +1861,214 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Coding Invariance of Correlation",
         "content": "A classic revision test: if $Y' = aY + b$ with $a > 0$, the correlation coefficient $r$ remains identical! The units cancel completely in the fraction $\\dfrac{S_{xY'}}{\\sqrt{S_{xx} S_{Y'Y'}}}$. Only if you multiply by a negative scale factor ($a < 0$) would the sign of $r$ flip."
+    }
+},
+{
+    "id": "050246",
+    "group_id": "050246",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Statistical Sampling",
+    "topic": "Sampling Methods",
+    "subtopic": [
+        "Census vs Sample",
+        "Sampling Bias",
+        "Opportunity Sampling"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Explain the difference between a census and a sample.<br><br><strong>(b)</strong> A local council transport officer wishes to investigate the commuting habits of secondary school teachers working across a county.<br><br>To obtain a sample, she interviews adults dressed in professional attire entering St Jude’s High School on a Wednesday morning at 8:45 am.<br><br>Give two reasons to explain why this sampling procedure is not satisfactory.",
+    "steps": [
+        "<strong>(a) Difference between a census and a sample:</strong><br><br>• A <strong>census</strong> gathers data from every single member of the target population.<br>• A <strong>sample</strong> gathers data from a selected subset or part of the population to draw inferences about the whole.",
+        "<strong>(b) Evaluating the sampling procedure:</strong><br><br>The procedure is unsatisfactory for several reasons:<br><br>1. <strong>Geographical / institutional bias:</strong> Surveying only one specific school (St Jude’s High School) is not representative of teachers across the entire county, whose commuting patterns (such as rural vs urban transit) may differ substantially.<br><br>2. <strong>Selection / observational bias:</strong> Selecting individuals based on 'professional attire' is subjective and unreliable. It may exclude teachers wearing practical or casual dress (e.g. PE, science, or art teachers) while mistakenly interviewing non-teaching staff (e.g. administrative staff, governors, or visiting parents).<br><br>3. <strong>Time / opportunity bias:</strong> Surveying only at 8:45 am on a single weekday excludes teachers arriving earlier (e.g. 7:30–8:00 am), part-time staff arriving later, or staff who are already inside the building.",
+        "Final Answer: (a) Census observes every member; sample observes a subset, (b) Non-representative of county and subjective attire filter"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Census is an estimate; sample is exact, (b) Non-representative of county and subjective attire filter",
+            "feedback": "In part (a), you reversed the definitions. A census collects data from the entire population and gives an exact picture (free from sampling error), whereas a sample provides an estimate."
+        },
+        {
+            "ans": "(a) Census observes every member; sample observes a subset, (b) Sample size is too large and teachers are difficult to interview",
+            "feedback": "In part (b), the flaw is not the sample size or difficulty of interviewing, but the severe bias introduced by opportunity sampling at a single school location using visual clothing criteria."
+        },
+        {
+            "ans": "(a) Census observes every member; sample observes a subset, (b) A census should always be carried out instead of a sample",
+            "feedback": "In part (b), taking a sample is completely acceptable; the issue lies in the flawed, non-random sampling methodology used by the officer."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Identifying Sampling Bias",
+        "content": "When exam boards ask why a sampling method is flawed, look for three classic traps: location bias (only one site surveyed), time bias (only one restrictive time slot), and inclusion criteria (an arbitrary visual filter like 'professional attire' that does not map directly to the target population)."
+    }
+},
+{
+    "id": "050247",
+    "group_id": "050246",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Statistical Sampling",
+    "topic": "Sampling Methods",
+    "subtopic": [
+        "Census vs Sample",
+        "Sampling Frame",
+        "Systematic Sampling"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> State one advantage and one disadvantage of carrying out a census rather than taking a sample.<br><br><strong>(b)</strong> Define what is meant by a sampling frame.<br><br><strong>(c)</strong> A logistics firm employs $480$ warehouse operatives, each assigned a payroll number from $1$ to $480$. The operations director wishes to select a systematic sample of $30$ operatives to inspect safety equipment.<br>&emsp;<strong>(i)</strong> Describe how this systematic sample should be selected.<br>&emsp;<strong>(ii)</strong> Given that the second operative selected has payroll number $23$, determine the payroll numbers of the first and third operatives selected.",
+    "steps": [
+        "<strong>(a) Advantage and disadvantage of a census:</strong><br><br>• <strong>Advantage:</strong> It provides completely accurate information about the population with zero sampling error.<br>• <strong>Disadvantage:</strong> It is time-consuming, expensive, and impractical if testing destroys the items.",
+        "<strong>(b) Definition of a sampling frame:</strong><br><br>A <strong>sampling frame</strong> is an exhaustive, uniquely identifiable list of all members or sampling units in the population from which a sample is drawn.",
+        "<strong>(c)(i) Procedure for systematic sampling:</strong><br><br>1. Calculate the sampling interval $k$:\\begin{aligned} k &= \\dfrac{N}{n} \\cr &= \\dfrac{480}{30} \\cr &= 16 \\end{aligned}2. Generate a random integer $r$ between $1$ and $16$ inclusive to serve as the starting point.<br>3. Select the operative numbered $r$, and then select every $16^{\\text{th}}$ operative thereafter: $r, r + 16, r + 32, \\dots$",
+        "<strong>(c)(ii) Finding the first and third operative numbers:</strong><br><br>Since the second operative is numbered $23$ and the constant interval is $k = 16$:\\begin{aligned} \\text{First} &= 23 - 16 \\cr &= 7 \\end{aligned}For the third operative:\\begin{aligned} \\text{Third} &= 23 + 16 \\cr &= 39 \\end{aligned}",
+        "Final Answer: (a) Advantage: Completely accurate; Disadvantage: Expensive/time-consuming, (b) List of all population members, (c)(i) Interval $k = 16$, (ii) First: $7$; Third: $39$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Advantage: Completely accurate; Disadvantage: Expensive/time-consuming, (b) The size of the sample, (c)(i) Interval $k = 16$, (ii) First: $7$; Third: $39$",
+            "feedback": "In part (b), a sampling frame is not the sample size; it is the physical or electronic list of all population units (e.g. an electoral register or staff payroll list) from which the sample is drawn."
+        },
+        {
+            "ans": "(a) Advantage: Completely accurate; Disadvantage: Expensive/time-consuming, (b) List of all population members, (c)(i) Interval $k = 16$, (ii) First: $15$; Third: $31$",
+            "feedback": "In part (c)(ii), you used an incorrect interval of $8$ instead of $k = 16$. With $k = 16$, the first number is $23 - 16 = 7$ and the third is $23 + 16 = 39$."
+        },
+        {
+            "ans": "(a) Advantage: Cheap to carry out; Disadvantage: Introduces bias, (b) List of all population members, (c)(i) Interval $k = 16$, (ii) First: $7$; Third: $39$",
+            "feedback": "In part (a), a census is typically very expensive and time-consuming, not cheap. Its primary strength is complete accuracy and the absence of sampling error."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Describing Systematic Sampling",
+        "content": "To earn full marks when describing systematic sampling, you must explicitly state three steps: (1) calculating the interval $k = \\dfrac{N}{n}$, (2) choosing a random starting number between $1$ and $k$, and (3) taking every $k^{\\text{th}}$ member thereafter."
+    }
+},
+{
+    "id": "050248",
+    "group_id": "050246",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Statistical Sampling",
+    "topic": "Sampling Methods",
+    "subtopic": [
+        "Stratified Sampling",
+        "Quota Sampling",
+        "Proportional Allocation"
+    ],
+    "img": false,
+    "question": "A Sixth Form college has $600$ students enrolled across Year 12 and Year 13. The distribution of students by year group and study pathway is shown in the table below:<table style='width:100%; max-width:280px; margin:15px auto; border-collapse:collapse; text-align:center;'><tr style='border-bottom:1px solid #ccc;'><th style='padding:6px; text-align:left;'>Year Group</th><th style='padding:6px;'>Academic</th><th style='padding:6px;'>Vocational</th></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:6px; text-align:left;'><strong>Year 12</strong></td><td style='padding:6px;'>210</td><td style='padding:6px;'>90</td></tr><tr><td style='padding:6px; text-align:left;'><strong>Year 13</strong></td><td style='padding:6px;'>180</td><td style='padding:6px;'>120</td></tr></table>A researcher wishes to take a sample of $60$ students, stratified by Year Group and Study Pathway.<br><br><strong>(a)</strong> Calculate the number of students that should be selected from each of the four categories.<br><br><strong>(b)</strong> State one advantage of using stratified sampling rather than simple random sampling in this scenario.<br><br><strong>(c)</strong> Describe how quota sampling differs from stratified sampling, and state one disadvantage of quota sampling.",
+    "steps": [
+        "<strong>(a) Calculating stratified sample sizes:</strong><br><br>The overall population size is $N = 600$, and the sample size is $n = 60$. The constant sampling fraction is:\\begin{aligned} \\text{Fraction} &= \\dfrac{60}{600} \\cr &= 0.1 \\end{aligned}Multiplying each stratum frequency by $0.1$:\\begin{aligned} \\text{Year 12 Academic} &= 210 \\times 0.1 = 21 \\cr \\text{Year 12 Vocational} &= 90 \\times 0.1 = 9 \\cr \\text{Year 13 Academic} &= 180 \\times 0.1 = 18 \\cr \\text{Year 13 Vocational} &= 120 \\times 0.1 = 12 \\end{aligned}Checking the sum: $21 + 9 + 18 + 12 = 60$.",
+        "<strong>(b) Advantage of stratified sampling:</strong><br><br>It guarantees that every year group and pathway is represented in the exact proportion in which it exists in the population, eliminating the risk of under-representing smaller subsets.",
+        "<strong>(c) Quota sampling vs stratified sampling:</strong><br><br>• <strong>Difference:</strong> In stratified sampling, participants within each stratum are chosen using a random sampling method from an existing sampling frame. In quota sampling, participants are chosen non-randomly (often via opportunity sampling by an interviewer) until the predetermined quota for each stratum is filled.<br>• <strong>Disadvantage of quota sampling:</strong> It introduces interviewer bias, non-response cannot be measured, and it is non-random.",
+        "Final Answer: (a) Y12 Acad: $21$, Y12 Voc: $9$, Y13 Acad: $18$, Y13 Voc: $12$, (b) Preserves exact population proportions, (c) Quota is non-random; introduces interviewer bias"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Y12 Acad: $15$, Y12 Voc: $15$, Y13 Acad: $15$, Y13 Voc: $15$, (b) Preserves exact population proportions, (c) Quota is non-random; introduces interviewer bias",
+            "feedback": "In part (a), you took equal sample sizes of $15$ from each category. Stratified sampling requires proportional allocation according to the size of each subgroup in the population."
+        },
+        {
+            "ans": "(a) Y12 Acad: $21$, Y12 Voc: $9$, Y13 Acad: $18$, Y13 Voc: $12$, (b) It is faster and requires no sampling frame, (c) Quota is non-random; introduces interviewer bias",
+            "feedback": "In part (b), stratified sampling requires an exhaustive sampling frame and is often slower and more complex than simple random sampling. Its main advantage is proportional representation."
+        },
+        {
+            "ans": "(a) Y12 Acad: $21$, Y12 Voc: $9$, Y13 Acad: $18$, Y13 Voc: $12$, (b) Preserves exact population proportions, (c) Quota sampling is always completely random",
+            "feedback": "In part (c), quota sampling is strictly a non-random sampling technique because the interviewer decides whom to question until each category quota is filled."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Stratified vs Quota Distinction",
+        "content": "Examiners frequently test the contrast between stratified and quota sampling. Both divide the population into mutually exclusive subgroups, but stratified sampling uses a random selection method from an existing list (sampling frame), whereas quota sampling uses non-random selection and requires no sampling frame."
+    }
+},
+{
+    "id": "050249",
+    "group_id": "050246",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Statistical Sampling",
+    "topic": "Sampling Methods",
+    "subtopic": [
+        "Simple Random Sampling",
+        "Non-Response Bias",
+        "Alternative Sampling"
+    ],
+    "img": false,
+    "question": "A dental practice has $1200$ registered patients listed in alphabetical order on its electronic database. The practice manager wishes to conduct a patient satisfaction survey using a simple random sample of $50$ patients.<br><br><strong>(a)</strong> Describe how the practice manager could select this simple random sample using a random number generator.<br><br><strong>(b)</strong> The practice posts satisfaction questionnaires to the $50$ selected patients, but only $18$ completed questionnaires are returned.<br>&emsp;<strong>(i)</strong> State the statistical term used to describe this problem.<br>&emsp;<strong>(ii)</strong> Explain why this low response rate may introduce bias into the survey results.<br><br><strong>(c)</strong> Suggest an alternative sampling method that could be used if no sampling frame was available.",
+    "steps": [
+        "<strong>(a) Selecting a simple random sample:</strong><br><br>1. Allocate a unique integer from $1$ to $1200$ to each patient on the database.<br>2. Use a computer random number generator (or calculator) to generate integers between $1$ and $1200$.<br>3. Discard any duplicate numbers until $50$ distinct numbers are obtained.<br>4. Select the patients whose assigned numbers correspond to these $50$ generated numbers.",
+        "<strong>(b)(i) Statistical term for unreturned surveys:</strong><br><br><strong>Non-response</strong> (or non-response bias).",
+        "<strong>(b)(ii) Why non-response introduces bias:</strong><br><br>Those patients who take the time to complete and return the survey may not be representative of the typical patient population. For example, individuals with extreme views (very dissatisfied or exceptionally pleased patients) are far more motivated to respond, distorting the satisfaction score.",
+        "<strong>(c) Alternative method without a sampling frame:</strong><br><br><strong>Quota sampling</strong> (or opportunity / convenience sampling).",
+        "Final Answer: (a) Number $1$ to $1200$, generate $50$ unique numbers, (b)(i) Non-response, (ii) Extreme views over-represented, (c) Quota or opportunity sampling"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Number $1$ to $1200$, pick first $50$, (b)(i) Non-response, (ii) Extreme views over-represented, (c) Quota or opportunity sampling",
+            "feedback": "In part (a), taking the first $50$ patients is an opportunity/convenience sample from an alphabetical list, which gives patients with later surnames zero chance of selection."
+        },
+        {
+            "ans": "(a) Number $1$ to $1200$, generate $50$ unique numbers, (b)(i) Measurement error, (ii) Extreme views over-represented, (c) Quota or opportunity sampling",
+            "feedback": "In part (b)(i), failure to return postal surveys is termed 'non-response', not measurement error. Measurement error refers to inaccuracies in recording data values."
+        },
+        {
+            "ans": "(a) Number $1$ to $1200$, generate $50$ unique numbers, (b)(i) Non-response, (ii) Extreme views over-represented, (c) Stratified sampling",
+            "feedback": "In part (c), stratified sampling strictly requires an existing sampling frame so that participants can be randomly chosen from each stratum."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Remember to Ignore Duplicates",
+        "content": "Whenever you describe selecting a random sample using random numbers, you must explicitly write that repeat numbers (duplicates) must be ignored or discarded. Without that phrase, you risk losing a method mark under strict mark schemes."
+    }
+},
+{
+    "id": "050250",
+    "group_id": "050246",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "AS",
+    "major_area": "Statistical Sampling",
+    "topic": "Sampling Methods",
+    "subtopic": [
+        "Opportunity Sampling",
+        "Cluster Sampling",
+        "Systematic Environmental Sampling"
+    ],
+    "img": false,
+    "question": "An environmental agency is investigating water pollution levels along a $50\\text{ km}$ stretch of a river.<br><br><strong>(a)</strong> A trainee field officer suggests collecting water samples at $10$ easily accessible points located immediately beneath public road bridges.<br>&emsp;<strong>(i)</strong> Name this sampling method.<br>&emsp;<strong>(ii)</strong> Give two distinct reasons why this method may introduce bias into the investigation.<br><br><strong>(b)</strong> A senior hydrologist suggests dividing the $50\\text{ km}$ river into five contiguous $10\\text{ km}$ sections, randomly choosing two of these sections, and taking multiple samples within those two sections only.<br>&emsp;<strong>(i)</strong> Name this sampling method.<br>&emsp;<strong>(ii)</strong> State one advantage and one disadvantage of this method compared to taking a simple random sample along the entire river.<br><br><strong>(c)</strong> Explain how a systematic sample of water could be collected along the $50\\text{ km}$ river.",
+    "steps": [
+        "<strong>(a)(i) Naming the method:</strong><br><br><strong>Opportunity sampling</strong> (or convenience sampling).",
+        "<strong>(a)(ii) Sources of bias:</strong><br><br>1. <strong>Localised contamination:</strong> Water directly beneath road bridges is subjected to vehicle runoff, litter, and road pollutants, which may artificially inflate measured pollution levels.<br>2. <strong>Exclusion of remote sections:</strong> Accessible bridge locations systematically exclude inaccessible, pristine, or rural river stretches, failing to reflect overall water quality.",
+        "<strong>(b)(i) Naming the hydrologist's method:</strong><br><br><strong>Cluster sampling</strong>.",
+        "<strong>(b)(ii) Advantage and disadvantage of cluster sampling:</strong><br><br>• <strong>Advantage:</strong> Field workers only need to travel to two $10\\text{ km}$ sections, significantly reducing travel time, logistics, and cost.<br>• <strong>Disadvantage:</strong> If the two chosen sections happen to have unusual local conditions (e.g. an industrial outflow or a nature reserve), the sample will not reflect the river as a whole.",
+        "<strong>(c) Systematic sampling along the river:</strong><br><br>1. Choose an interval (for example, taking $10$ samples means an interval of $5\\text{ km}$).<br>2. Select a random starting distance within the first $5\\text{ km}$ from the river source (e.g. at distance $d$).<br>3. Collect subsequent water samples at fixed intervals of $5\\text{ km}$ thereafter: $d, d + 5, d + 10, \\dots, d + 45$.",
+        "Final Answer: (a)(i) Opportunity sampling, (ii) Road runoff and inaccessible stretches excluded, (b)(i) Cluster sampling, (ii) Cheaper but high risk of unrepresentative clusters, (c) Systematic sample at regular intervals"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) Stratified sampling, (ii) Road runoff and inaccessible stretches excluded, (b)(i) Cluster sampling, (ii) Cheaper but high risk of unrepresentative clusters, (c) Systematic sample at regular intervals",
+            "feedback": "In part (a)(i), collecting samples purely based on convenience of bridge access is opportunity/convenience sampling, not stratified sampling."
+        },
+        {
+            "ans": "(a)(i) Opportunity sampling, (ii) Road runoff and inaccessible stretches excluded, (b)(i) Quota sampling, (ii) Cheaper but high risk of unrepresentative clusters, (c) Systematic sample at regular intervals",
+            "feedback": "In part (b)(i), dividing a population into geographical chunks (clusters) and surveying only a randomly selected subset of those chunks is cluster sampling, not quota sampling."
+        },
+        {
+            "ans": "(a)(i) Opportunity sampling, (ii) Water is moving and weather changes, (b)(i) Cluster sampling, (ii) Cheaper but high risk of unrepresentative clusters, (c) Systematic sample at regular intervals",
+            "feedback": "In part (a)(ii), changes in weather or flowing water apply to all sampling methods. The specific bias here stems from road runoff under bridges and the exclusion of remote stretches."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Cluster vs Stratified Sampling",
+        "content": "Students frequently confuse cluster sampling with stratified sampling. In stratified sampling, you take a small random sample from *every* single group. In cluster sampling, you randomly select *a few entire groups* and sample only within those chosen groups."
     }
 }
 ];
