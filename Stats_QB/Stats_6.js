@@ -624,5 +624,217 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Finding the Mode of a Binomial",
         "content": "To find the mode of a binomial distribution without calculating every probability, evaluate $(n + 1)p$. If this is not an integer, the mode is simply the integer part $\\lfloor (n + 1)p \\rfloor$. Here $13 \\times 0.6 = 7.8$, so the mode is $7$."
     }
+},
+{
+    "id": "050266",
+    "group_id": "050266",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Probability of Events",
+    "subtopic": [
+        "Venn Diagrams",
+        "Conditional Probability",
+        "Testing Independence"
+    ],
+    "img": false,
+    "question": "A theatre manager analyses the purchasing habits of audience members during an evening performance. She records that $45\\%$ of audience members purchase a souvenir programme, $30\\%$ purchase an interval refreshment, and $40\\%$ purchase neither.<br><br>An audience member is selected at random from the performance.<br><br><strong>(a)</strong> Calculate the probability that the selected audience member purchases an interval refreshment and no souvenir programme.<br><br><strong>(b)</strong> Calculate the probability that the selected audience member purchases an interval refreshment given that they purchased a souvenir programme.<br><br><strong>(c)</strong> Determine whether the event \"purchasing a souvenir programme\" is statistically independent of the event \"purchasing an interval refreshment\".",
+    "steps": [
+        "<strong>(a) Probability of refreshment and no programme:</strong><br><br>Let $S$ be the event of purchasing a souvenir programme and $R$ be the event of purchasing an interval refreshment. From the data:\\begin{aligned} P(S) &= 0.45 \\cr P(R) &= 0.30 \\cr P(S' \\cap R') &= 0.40 \\end{aligned}The probability of purchasing at least one item is the complement:\\begin{aligned} P(S \\cup R) &= 1 - P(S' \\cap R') \\cr &= 1 - 0.40 \\cr &= 0.60 \\end{aligned}Using the addition rule to find the intersection:\\begin{aligned} P(S \\cap R) &= P(S) + P(R) - P(S \\cup R) \\cr &= 0.45 + 0.30 - 0.60 \\cr &= 0.15 \\end{aligned}The probability of purchasing an interval refreshment and no programme is:\\begin{aligned} P(R \\cap S') &= P(R) - P(S \\cap R) \\cr &= 0.30 - 0.15 \\cr &= 0.15 \\end{aligned}",
+        "<strong>(b) Conditional probability:</strong><br><br>Applying the definition of conditional probability:\\begin{aligned} P(R \\mid S) &= \\dfrac{P(R \\cap S)}{P(S)} \\cr &= \\dfrac{0.15}{0.45} \\cr &= \\dfrac{1}{3} \\quad (\\approx 0.333) \\end{aligned}",
+        "<strong>(c) Testing statistical independence:</strong><br><br>Two events are independent if and only if $P(S \\cap R) = P(S) \\times P(R)$.<br><br>Evaluating the product of the individual probabilities:\\begin{aligned} P(S) \\times P(R) &= 0.45 \\times 0.30 \\cr &= 0.135 \\end{aligned}Comparing with the intersection:\\begin{aligned} P(S \\cap R) &= 0.15 \\end{aligned}Since $0.15 \\neq 0.135$, the events are <strong>not statistically independent</strong>.",
+        "Final Answer: (a) $0.15$, (b) $\\dfrac{1}{3}$, (c) Not independent"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.15$, (b) $0.50$, (c) Not independent",
+            "feedback": "In part (b), you evaluated $P(S \\mid R) = \\dfrac{0.15}{0.30} = 0.50$. The condition is that they purchased a programme, so you must divide by $P(S) = 0.45$, giving $\\dfrac{1}{3}$."
+        },
+        {
+            "ans": "(a) $0.30$, (b) $\\dfrac{1}{3}$, (c) Not independent",
+            "feedback": "In part (a), $0.30$ is the total probability $P(R)$. You must subtract the intersection $P(S \\cap R) = 0.15$ to find those who bought a refreshment *only* ($0.15$)."
+        },
+        {
+            "ans": "(a) $0.15$, (b) $\\dfrac{1}{3}$, (c) Independent",
+            "feedback": "In part (c), independence requires strict equality $P(S \\cap R) = P(S) \\times P(R)$. Since $0.15 \\neq 0.135$, the events are not independent."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Testing Independence Two Ways",
+        "content": "You can test independence using either $P(A \\cap B) = P(A)P(B)$ or by checking whether the condition alters the baseline probability: $P(R \\mid S) = P(R)$. Here, $P(R \\mid S) = \\dfrac{1}{3} \\approx 0.333$ while $P(R) = 0.30$. Because buying a programme increases the chance of buying a refreshment, they cannot be independent."
+    }
+},
+{
+    "id": "050267",
+    "group_id": "050266",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Probability of Events",
+    "subtopic": [
+        "Independent Events",
+        "Mutually Exclusive Events",
+        "Conditional Probability"
+    ],
+    "img": false,
+    "question": "Two events $E$ and $F$ are defined on a sample space such that:$$\\text{P}(E) = 0.60 \\quad \\text{and} \\quad \\text{P}(E \\cup F) = 0.84$$<strong>(a)</strong> Given that $E$ and $F$ are statistically independent events:<br>&emsp;<strong>(i)</strong> find $\\text{P}(F)$,<br>&emsp;<strong>(ii)</strong> find $\\text{P}(E' \\cap F)$.<br><br><strong>(b)</strong> Given instead that $E$ and $F$ are mutually exclusive events:<br>&emsp;<strong>(i)</strong> determine the value of $\\text{P}(F)$,<br>&emsp;<strong>(ii)</strong> explain why two non-empty events with non-zero probabilities cannot be simultaneously mutually exclusive and statistically independent.<br><br><strong>(c)</strong> Given instead that $\\text{P}(E \\mid F) = 0.40$, calculate $\\text{P}(F \\mid E)$.",
+    "steps": [
+        "<strong>(a)(i) Finding $P(F)$ under independence:</strong><br><br>If $E$ and $F$ are independent, $P(E \\cap F) = P(E) \\times P(F)$. Applying the addition rule:\\begin{aligned} &P(E \\cup F) = P(E) + P(F) - P(E)P(F) \\cr &0.84 = 0.60 + P(F) - 0.60P(F) \\cr &0.84 - 0.60 = 0.40P(F) \\cr &0.24 = 0.40P(F) \\cr &P(F) = \\dfrac{0.24}{0.40} \\cr &P(F) = 0.60 \\end{aligned}",
+        "<strong>(a)(ii) Finding $P(E' \\cap F)$:</strong><br><br>Since $E$ and $F$ are independent, their complements are also independent:\\begin{aligned} P(E' \\cap F) &= P(E') \\times P(F) \\cr &= (1 - 0.60) \\times 0.60 \\cr &= 0.40 \\times 0.60 \\cr &= 0.24 \\end{aligned}",
+        "<strong>(b)(i) Value of $P(F)$ under mutual exclusivity:</strong><br><br>If $E$ and $F$ are mutually exclusive, $P(E \\cap F) = 0$:\\begin{aligned} P(E \\cup F) &= P(E) + P(F) \\cr 0.84 &= 0.60 + P(F) \\cr P(F) &= 0.24 \\end{aligned}",
+        "<strong>(b)(ii) Why events cannot be both mutually exclusive and independent:</strong><br><br>For mutually exclusive events, $P(E \\cap F) = 0$. For independent events with non-zero probabilities, $P(E \\cap F) = P(E) \\times P(F) > 0$. Because a probability cannot simultaneously be zero and strictly positive, two non-empty events cannot be both mutually exclusive and independent.",
+        "<strong>(c) Finding $P(F \\mid E)$ when $P(E \\mid F) = 0.40$:</strong><br><br>From the definition of conditional probability, $P(E \\cap F) = 0.40P(F)$. Substituting into the addition rule:\\begin{aligned} &0.84 = 0.60 + P(F) - 0.40P(F) \\cr &0.24 = 0.60P(F) \\cr &P(F) = \\dfrac{0.24}{0.60} \\cr &P(F) = 0.40 \\end{aligned}The intersection is:\\begin{aligned} P(E \\cap F) &= 0.40 \\times 0.40 \\cr &= 0.16 \\end{aligned}Now calculate the reverse conditional probability:\\begin{aligned} P(F \\mid E) &= \\dfrac{P(E \\cap F)}{P(E)} \\cr &= \\dfrac{0.16}{0.60} \\cr &= \\dfrac{4}{15} \\quad (\\approx 0.267) \\end{aligned}",
+        "Final Answer: (a)(i) $0.60$, (ii) $0.24$, (b)(i) $0.24$, (c) $\\dfrac{4}{15}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $0.40$, (ii) $0.24$, (b)(i) $0.24$, (c) $\\dfrac{4}{15}$",
+            "feedback": "In part (a)(i), solving $0.24 = 0.40P(F)$ gives $P(F) = \\dfrac{0.24}{0.40} = 0.60$, not $0.40$."
+        },
+        {
+            "ans": "(a)(i) $0.60$, (ii) $0.24$, (b)(i) $0.24$, (c) $0.40$",
+            "feedback": "In part (c), $0.40$ is the given value $P(E \\mid F)$ and $P(F)$. The question asks for the reverse conditional probability $P(F \\mid E) = \\dfrac{0.16}{0.60} = \\dfrac{4}{15}$."
+        },
+        {
+            "ans": "(a)(i) $0.60$, (ii) $0.36$, (b)(i) $0.24$, (c) $\\dfrac{4}{15}$",
+            "feedback": "In part (a)(ii), you computed $P(E \\cap F) = 0.36$ instead of $P(E' \\cap F) = (1 - 0.60)(0.60) = 0.24$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Mutually Exclusive vs Independent",
+        "content": "Never confuse mutually exclusive with independent! Mutually exclusive means the events *cannot happen together* ($P(A \\cap B) = 0$). Independent means one event happening *does not change the chance of the other*. If two events cannot happen together, knowing one occurred means the other definitely didn't—so they are strongly dependent!"
+    }
+},
+{
+    "id": "050268",
+    "group_id": "050266",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Probability of Events",
+    "subtopic": [
+        "Three Independent Events",
+        "System Reliability",
+        "Conditional Probability"
+    ],
+    "img": false,
+    "question": "A high-security database server employs three separate automated threat-detection modules: Firewall ($F$), Antivirus ($A$), and Intrusion Detection ($D$).<br><br>When a cyber attack occurs, the probabilities that each module successfully detects the threat are:$$\\text{P}(F) = 0.90, \\quad \\text{P}(A) = 0.85, \\quad \\text{P}(D) = 0.70$$Because the three modules operate on completely independent hardware layers, detection by any module is statistically independent of detection by the others.<br><br>A cyber attack is launched against the server.<br><br><strong>(a)</strong> Find the probability that the attack is detected by all three modules.<br><br><strong>(b)</strong> Find the probability that the attack is detected by at least one of the three modules.<br><br><strong>(c)</strong> Find the probability that the attack is detected by exactly two of the three modules.<br><br><strong>(d)</strong> Given that the attack was detected by exactly two modules, find the probability that the Firewall ($F$) was one of the detecting modules.",
+    "steps": [
+        "<strong>(a) Detected by all three modules:</strong><br><br>Using the multiplication rule for independent events:\\begin{aligned} P(F \\cap A \\cap D) &= P(F) \\times P(A) \\times P(D) \\cr &= 0.90 \\times 0.85 \\times 0.70 \\cr &= 0.5355 \\end{aligned}",
+        "<strong>(b) Detected by at least one module:</strong><br><br>Using the complement rule with failure probabilities:\\begin{aligned} P(F') &= 1 - 0.90 = 0.10 \\cr P(A') &= 1 - 0.85 = 0.15 \\cr P(D') &= 1 - 0.70 = 0.30 \\end{aligned}The probability of complete failure is:\\begin{aligned} P(F' \\cap A' \\cap D') &= 0.10 \\times 0.15 \\times 0.30 \\cr &= 0.0045 \\end{aligned}Subtracting from $1$:\\begin{aligned} P(\\text{at least one}) &= 1 - 0.0045 \\cr &= 0.9955 \\end{aligned}",
+        "<strong>(c) Detected by exactly two modules:</strong><br><br>Summing the three mutually exclusive pairs where two modules succeed and one fails:\\begin{aligned} P(F \\cap A \\cap D') &= 0.90 \\times 0.85 \\times 0.30 \\cr &= 0.2295 \\cr P(F \\cap A' \\cap D) &= 0.90 \\times 0.15 \\times 0.70 \\cr &= 0.0945 \\cr P(F' \\cap A \\cap D) &= 0.10 \\times 0.85 \\times 0.70 \\cr &= 0.0595 \\end{aligned}Summing these probabilities:\\begin{aligned} P(\\text{exactly two}) &= 0.2295 + 0.0945 + 0.0595 \\cr &= 0.3835 \\end{aligned}",
+        "<strong>(d) Conditional probability that Firewall was involved:</strong><br><br>We restrict to the outcomes where exactly two modules detected the threat and $F$ succeeded:\\begin{aligned} &P(F \\text{ detected} \\cap \\text{exactly two}) \\cr &\\quad = P(F \\cap A \\cap D') + P(F \\cap A' \\cap D) \\cr &\\quad = 0.2295 + 0.0945 \\cr &\\quad = 0.3240 \\end{aligned}Dividing by the probability of exactly two modules detecting:\\begin{aligned} P(F \\mid \\text{exactly two}) &= \\dfrac{0.3240}{0.3835} \\cr &= \\dfrac{3240}{3835} \\cr &= \\dfrac{648}{767} \\quad (\\approx 0.845) \\end{aligned}",
+        "Final Answer: (a) $0.5355$, (b) $0.9955$, (c) $0.3835$, (d) $\\dfrac{648}{767}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.5355$, (b) $0.9955$, (c) $0.3835$, (d) $0.3240$",
+            "feedback": "In part (d), $0.3240$ is the joint probability. To find the conditional probability, you must divide by $P(\\text{exactly two}) = 0.3835$."
+        },
+        {
+            "ans": "(a) $0.5355$, (b) $0.9955$, (c) $0.2295$, (d) $\\dfrac{648}{767}$",
+            "feedback": "In part (c), you calculated only one specific combination ($F$ and $A$ succeed, $D$ fails). You must sum all three ways exactly two modules can succeed."
+        },
+        {
+            "ans": "(a) $0.5355$, (b) $0.8150$, (c) $0.3835$, (d) $\\dfrac{648}{767}$",
+            "feedback": "In part (b), you added the probabilities directly without accounting for overlap. Use $1 - P(\\text{none detected}) = 1 - (0.10 \\times 0.15 \\times 0.30)$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: The 'At Least One' Complement Trick",
+        "content": "For three or more independent events, never calculate 'at least one' by adding together all single, double, and triple unions. Always use $1 - P(\\text{all fail})$. Multiplying the failure probabilities $(0.10 \\times 0.15 \\times 0.30 = 0.0045)$ and subtracting from $1$ takes two lines of working."
+    }
+},
+{
+    "id": "050269",
+    "group_id": "050266",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Probability of Events",
+    "subtopic": [
+        "Algebraic Probability",
+        "Range Constraints",
+        "Independence Constraints"
+    ],
+    "img": false,
+    "question": "Two events $A$ and $B$ are such that:$$\\text{P}(A) = 0.50, \\quad \\text{P}(B) = p, \\quad \\text{P}(A \\cap B) = q, \\quad \\text{and} \\quad \\text{P}(A' \\cap B') = 0.20$$<strong>(a)</strong> Express $q$ in terms of $p$.<br><br><strong>(b)</strong> Determine the allowable range of possible values of $p$.<br><br><strong>(c)</strong> Given that the events $A$ and $B$ are statistically independent:<br>&emsp;<strong>(i)</strong> show that $p = 0.60$ and state the value of $q$,<br>&emsp;<strong>(ii)</strong> find the value of $\\text{P}(A \\cup B')$.<br><br><strong>(d)</strong> Given instead that $\\text{P}(A \\mid B) = 0.40$, find the value of $p$.",
+    "steps": [
+        "<strong>(a) Expressing $q$ in terms of $p$:</strong><br><br>The probability of the union is the complement of neither event occurring:\\begin{aligned} P(A \\cup B) &= 1 - P(A' \\cap B') \\cr &= 1 - 0.20 \\cr &= 0.80 \\end{aligned}Applying the addition rule of probability:\\begin{aligned} &P(A \\cup B) = P(A) + P(B) - P(A \\cap B) \\cr &0.80 = 0.50 + p - q \\cr &q = p + 0.50 - 0.80 \\cr &q = p - 0.30 \\end{aligned}",
+        "<strong>(b) Range of possible values for $p$:</strong><br><br>Because all probabilities must be non-negative, the intersection cannot be negative:\\begin{aligned} q \\ge 0 &\\implies p - 0.30 \\ge 0 \\cr &\\implies p \\ge 0.30 \\end{aligned}Furthermore, since $B \\subseteq (A \\cup B)$, the probability of $B$ cannot exceed the union:\\begin{aligned} P(B) \\le P(A \\cup B) &\\implies p \\le 0.80 \\end{aligned}Therefore, the allowable range for $p$ is:\\begin{aligned} 0.30 \\le p \\le 0.80 \\end{aligned}",
+        "<strong>(c)(i) Showing $p = 0.60$ under independence:</strong><br><br>If $A$ and $B$ are independent, $P(A \\cap B) = P(A) \\times P(B)$:\\begin{aligned} &q = 0.50p \\cr &p - 0.30 = 0.50p \\cr &p - 0.50p = 0.30 \\cr &0.50p = 0.30 \\cr &p = \\dfrac{0.30}{0.50} \\cr &p = 0.60 \\end{aligned}Then $q = 0.60 - 0.30 = 0.30$.",
+        "<strong>(c)(ii) Evaluating $P(A \\cup B')$:</strong><br><br>Using set identities:\\begin{aligned} P(B') &= 1 - p = 1 - 0.60 = 0.40 \\cr P(A \\cap B') &= P(A) - P(A \\cap B) \\cr &= 0.50 - 0.30 \\cr &= 0.20 \\end{aligned}Applying the addition rule:\\begin{aligned} P(A \\cup B') &= P(A) + P(B') - P(A \\cap B') \\cr &= 0.50 + 0.40 - 0.20 \\cr &= 0.70 \\end{aligned}",
+        "<strong>(d) Finding $p$ when $P(A \\mid B) = 0.40$:</strong><br><br>Using the definition of conditional probability:\\begin{aligned} P(A \\mid B) &= \\dfrac{P(A \\cap B)}{P(B)} \\cr 0.40 &= \\dfrac{q}{p} \\cr 0.40 &= \\dfrac{p - 0.30}{p} \\cr 0.40p &= p - 0.30 \\cr 0.30 &= p - 0.40p \\cr 0.60p &= 0.30 \\cr p &= \\dfrac{0.30}{0.60} \\cr p &= 0.50 \\end{aligned}",
+        "Final Answer: (a) $q = p - 0.30$, (b) $0.30 \\le p \\le 0.80$, (c)(i) $p = 0.60$, $q = 0.30$, (ii) $0.70$, (d) $0.50$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $q = p - 0.30$, (b) $0 \\le p \\le 1$, (c)(i) $p = 0.60$, $q = 0.30$, (ii) $0.70$, (d) $0.50$",
+            "feedback": "In part (b), stating $0 \\le p \\le 1$ fails to account for the constraints $P(A) = 0.50$ and $P(A \\cup B) = 0.80$. If $p < 0.30$, the intersection $q$ would be negative; if $p > 0.80$, $P(B)$ would exceed the union."
+        },
+        {
+            "ans": "(a) $q = p - 0.30$, (b) $0.30 \\le p \\le 0.80$, (c)(i) $p = 0.60$, $q = 0.30$, (ii) $0.90$, (d) $0.50$",
+            "feedback": "In part (c)(ii), you added $P(A) + P(B') = 0.50 + 0.40 = 0.90$ without subtracting the intersection $P(A \\cap B') = 0.20$."
+        },
+        {
+            "ans": "(a) $q = p - 0.30$, (b) $0.30 \\le p \\le 0.80$, (c)(i) $p = 0.60$, $q = 0.30$, (ii) $0.70$, (d) $0.75$",
+            "feedback": "In part (d), you solved $0.40p = 0.30$, forgetting that $0.40p = p - 0.30 \\implies 0.60p = 0.30 \\implies p = 0.50$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Bounding Probability Parameters",
+        "content": "Whenever an algebraic probability variable appears, always test its physical boundaries. The lower bound comes from ensuring the intersection $q \\ge 0$, and the upper bound comes from ensuring $P(B) \\le P(A \\cup B)$. This immediately confines $p$ to $[0.30, 0.80]$."
+    }
+},
+{
+    "id": "050270",
+    "group_id": "050266",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Probability of Events",
+    "subtopic": [
+        "Three-Set Disjoint Events",
+        "Conditional Probability",
+        "Independence Test"
+    ],
+    "img": false,
+    "question": "A survey of $150$ sports club members records participation in three activities: Tennis ($T$), Squash ($S$), and Badminton ($B$).<br><br>It is known that no member plays both Squash and Badminton ($S \\cap B = \\emptyset$). The remaining participation numbers are:<br>• $20$ members play Tennis only.<br>• $15$ members play Squash only.<br>• $25$ members play Badminton only.<br>• $30$ members play Tennis and Squash.<br>• $20$ members play Tennis and Badminton.<br>• $40$ members play none of these three sports.<br><br>A club member is selected at random from the survey.<br><br><strong>(a)</strong> State the probability that the selected member plays both Squash and Badminton, and write down the formal statistical term for this relationship.<br><br><strong>(b)</strong> Find the probability that the selected member:<br>&emsp;<strong>(i)</strong> plays Tennis,<br>&emsp;<strong>(ii)</strong> plays Tennis, given that they play Squash,<br>&emsp;<strong>(iii)</strong> plays at least one of Squash or Badminton.<br><br><strong>(c)</strong> Determine, with mathematical justification, whether the events \"plays Tennis\" and \"plays Squash\" are statistically independent.",
+    "steps": [
+        "<strong>(a) Mutual exclusivity of Squash and Badminton:</strong><br><br>Since no member plays both Squash and Badminton:\\begin{aligned} P(S \\cap B) &= 0 \\end{aligned}The formal statistical term is <strong>mutually exclusive</strong>.",
+        "<strong>(b)(i) Probability of playing Tennis:</strong><br><br>Summing the Tennis regions:\\begin{aligned} n(T) &= n(T \\text{ only}) + n(T \\cap S) + n(T \\cap B) \\cr &= 20 + 30 + 20 \\cr &= 70 \\end{aligned}The probability is:\\begin{aligned} P(T) &= \\dfrac{70}{150} \\cr &= \\dfrac{7}{15} \\quad (\\approx 0.467) \\end{aligned}",
+        "<strong>(b)(ii) Conditional probability of Tennis given Squash:</strong><br><br>The total number of members who play Squash is:\\begin{aligned} n(S) &= n(S \\text{ only}) + n(T \\cap S) \\cr &= 15 + 30 \\cr &= 45 \\end{aligned}Using the conditional probability definition:\\begin{aligned} P(T \\mid S) &= \\dfrac{n(T \\cap S)}{n(S)} \\cr &= \\dfrac{30}{45} \\cr &= \\dfrac{2}{3} \\quad (\\approx 0.667) \\end{aligned}",
+        "<strong>(b)(iii) Probability of playing Squash or Badminton:</strong><br><br>Because $S$ and $B$ are mutually exclusive, there is no overlap:\\begin{aligned} n(S \\cup B) &= n(S) + n(B) \\cr &= 45 + (25 + 20) \\cr &= 45 + 45 \\cr &= 90 \\end{aligned}The probability is:\\begin{aligned} P(S \\cup B) &= \\dfrac{90}{150} \\cr &= \\dfrac{3}{5} \\cr &= 0.60 \\end{aligned}",
+        "<strong>(c) Testing statistical independence of $T$ and $S$:</strong><br><br>Two events are independent if and only if $P(T \\cap S) = P(T) \\times P(S)$.<br><br>Evaluating the product of the marginal probabilities:\\begin{aligned} P(T) \\times P(S) &= \\dfrac{7}{15} \\times \\dfrac{3}{10} \\cr &= \\dfrac{21}{150} \\cr &= 0.14 \\end{aligned}The joint probability from the survey is:\\begin{aligned} P(T \\cap S) &= \\dfrac{30}{150} \\cr &= 0.20 \\end{aligned}Since $0.20 \\neq 0.14$ (equivalently $P(T \\mid S) = \\dfrac{2}{3} \\neq P(T) = \\dfrac{7}{15}$), the events are <strong>not statistically independent</strong>.",
+        "Final Answer: (a) $0$, mutually exclusive, (b)(i) $\\dfrac{7}{15}$, (ii) $\\dfrac{2}{3}$, (iii) $0.60$, (c) Not independent"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0$, mutually exclusive, (b)(i) $\\dfrac{7}{15}$, (ii) $\\dfrac{1}{5}$, (iii) $0.60$, (c) Not independent",
+            "feedback": "In part (b)(ii), you divided the joint count $30$ by the total club membership $150$ rather than conditioning on Squash players: $\\dfrac{30}{45} = \\dfrac{2}{3}$."
+        },
+        {
+            "ans": "(a) $0$, independent, (b)(i) $\\dfrac{7}{15}$, (ii) $\\dfrac{2}{3}$, (iii) $0.60$, (c) Not independent",
+            "feedback": "In part (a), two events that cannot occur together ($P = 0$) are termed 'mutually exclusive', not independent."
+        },
+        {
+            "ans": "(a) $0$, mutually exclusive, (b)(i) $\\dfrac{2}{15}$, (ii) $\\dfrac{2}{3}$, (iii) $0.60$, (c) Independent",
+            "feedback": "In part (b)(i), you only counted the $20$ members playing Tennis *only*. The total playing Tennis includes those who also play Squash and Badminton: $20 + 30 + 20 = 70$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Disjoint Sub-regions in 3-Set Venns",
+        "content": "When an examination specifies that two sets are disjoint ($S \\cap B = \\emptyset$), the three-set Venn diagram simplifies nicely: the central three-way intersection and the $S \\cap B$ football-shaped overlap are both zero. Tennis acts as the bridge connecting two mutually exclusive sports."
+    }
 }
 ];
