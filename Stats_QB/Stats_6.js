@@ -1458,7 +1458,7 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Power and Error Duality",
         "content": "Always remember the relationship $\\text{Power} = 1 - \\beta$, where $\\beta$ is the probability of a Type II error. Power measures the test's ability to detect a defect when one actually exists—here, an $83.29\\%$ chance of intercepting a substandard consignment."
     }
-}
+},
 {
     "id": "050286",
     "group_id": "050286",
