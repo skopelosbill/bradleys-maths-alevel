@@ -1459,4 +1459,210 @@ window.ALEVEL_QUESTIONS = [
         "content": "Always remember the relationship $\\text{Power} = 1 - \\beta$, where $\\beta$ is the probability of a Type II error. Power measures the test's ability to detect a defect when one actually exists—here, an $83.29\\%$ chance of intercepting a substandard consignment."
     }
 }
+{
+    "id": "050286",
+    "group_id": "050286",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Hypothesis Testing for the Mean",
+        "Two-Tailed Test",
+        "Contextual Explanation"
+    ],
+    "img": false,
+    "question": "A long-serving fleet operations manager at a logistics company informs the newly appointed manager that the daily delivery mileage of company vans is normally distributed with a mean of $145.0\\text{ km}$ and a standard deviation of $18.0\\text{ km}$.<br><br>The new manager believes that the daily delivery mileage during the peak holiday season will have a different mean. Subsequently, she randomly selects $36$ daily delivery mileage records from the holiday season. The sample mean for this sample is $150.8\\text{ km}$.<br><br><strong>(a)</strong> Stating your hypotheses clearly, carry out a hypothesis test to show that the new manager's belief can be supported at the $10\\%$ level of significance.<br><br><strong>(b)</strong> In this context, give one practical reason why the new manager's belief could be true.",
+    "steps": [
+        "<strong>(a) Hypothesis test for a difference in mean mileage:</strong><br><br>State the null and alternative hypotheses, where $\\mu$ is the population mean daily mileage during the holiday season:\\begin{aligned} &H_0: \\mu = 145.0 \\cr &H_1: \\mu \\neq 145.0 \\end{aligned}Under $H_0$, the sample mean follows:\\begin{aligned} \\bar{X} \\sim \\text{N}\\left(145.0, \\dfrac{18.0^2}{36}\\right) \\end{aligned}Calculate the standard error:\\begin{aligned} \\sigma_{\\bar{x}} &= \\dfrac{18.0}{\\sqrt{36}} \\cr &= \\dfrac{18.0}{6} \\cr &= 3.0\\text{ km} \\end{aligned}Calculate the test statistic:\\begin{aligned} z &= \\dfrac{150.8 - 145.0}{3.0} \\cr &= \\dfrac{5.8}{3.0} \\cr &\\approx 1.933 \\end{aligned}For a two-tailed test at the $10\\%$ significance level, the critical values are:\\begin{aligned} z_{\\text{crit}} = \\pm 1.645 \\end{aligned}Comparing the test statistic:\\begin{aligned} 1.933 > 1.645 \\end{aligned}Because the test statistic exceeds the critical value, we reject $H_0$.<br><br>There is significant evidence at the $10\\%$ level to support the new manager's belief that the mean daily mileage differs during the peak holiday season.",
+        "<strong>(b) Practical context:</strong><br><br>During the peak holiday season, increased consumer demand requires vans to make more deliveries and complete longer routes, leading to a higher average daily mileage.",
+        "Final Answer: (a) Reject $H_0$ as $1.933 > 1.645$, (b) Increased seasonal delivery volume"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Do not reject $H_0$ as $1.933 < 1.960$, (b) Increased seasonal delivery volume",
+            "feedback": "In part (a), $1.960$ is the critical value for a $5\\%$ two-tailed test. The question specifies a $10\\%$ significance level, which has critical values $z = \\pm 1.645$, leading to the rejection of $H_0$."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $1.933 > 1.282$, (b) Increased seasonal delivery volume",
+            "feedback": "In part (a), $1.282$ is the critical value for a $10\\%$ one-tailed test. The belief states that the mean is 'different', requiring a two-tailed test with critical values $\\pm 1.645$."
+        },
+        {
+            "ans": "(a) Reject $H_0$ as $1.933 > 1.645$, (b) Vans require more frequent servicing",
+            "feedback": "In part (b), more frequent servicing does not explain why delivery mileage changes; the change in mileage is driven by higher delivery volume and extended delivery routes."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Matching Alpha to Tail Structure",
+        "content": "Notice that at the $5\\%$ two-tailed level ($z_{\\text{crit}} = 1.960$), we would fail to reject $H_0$ because $1.933 < 1.960$. Specifying a $10\\%$ two-tailed level puts $5\\%$ into each tail ($z_{\\text{crit}} = 1.645$), allowing the manager's claim to be accepted."
+    }
+},
+{
+    "id": "050287",
+    "group_id": "050286",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "One-Tailed Test for the Mean",
+        "P-Value Calculation",
+        "Critical Value of Sample Mean"
+    ],
+    "img": false,
+    "question": "A bottling plant fills bottles of sparkling mineral water. The volume of water dispensed per bottle, $V\\text{ ml}$, is normally distributed with mean $750.0\\text{ ml}$ and standard deviation $8.0\\text{ ml}$.<br><br>Following the installation of a new dispensing valve, the quality assurance manager suspects that the machine is overfilling the bottles.<br><br>A random sample of $16$ bottles is tested, yielding a sample mean volume of $754.2\\text{ ml}$.<br><br><strong>(a)</strong> State suitable null and alternative hypotheses to test the manager's suspicion.<br><br><strong>(b)</strong> Stating the distribution of the sample mean under the null hypothesis, test the manager's suspicion at the $5\\%$ level of significance.<br><br><strong>(c)</strong> Calculate the $p$-value for this test.<br><br><strong>(d)</strong> Determine the critical value of the sample mean, $\\bar{v}$, for this test at the $5\\%$ level of significance.",
+    "steps": [
+        "<strong>(a) Hypotheses:</strong><br><br>The manager suspects overfilling, which specifies an upper-tail test:\\begin{aligned} &H_0: \\mu = 750.0 \\cr &H_1: \\mu > 750.0 \\end{aligned}",
+        "<strong>(b) Test of the manager's suspicion:</strong><br><br>Under $H_0$, the sample mean follows:\\begin{aligned} \\bar{V} \\sim \\text{N}\\left(750.0, \\dfrac{8.0^2}{16}\\right) \\end{aligned}The standard error is:\\begin{aligned} \\sigma_{\\bar{v}} &= \\dfrac{8.0}{\\sqrt{16}} \\cr &= \\dfrac{8.0}{4} \\cr &= 2.0\\text{ ml} \\end{aligned}Calculate the test statistic:\\begin{aligned} z &= \\dfrac{754.2 - 750.0}{2.0} \\cr &= \\dfrac{4.2}{2.0} \\cr &= 2.10 \\end{aligned}For an upper-tail test at the $5\\%$ significance level, the critical value is:\\begin{aligned} z_{\\text{crit}} = 1.645 \\end{aligned}Comparing the test statistic:\\begin{aligned} 2.10 > 1.645 \\end{aligned}Because $z > z_{\\text{crit}}$, we reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level that the machine is overfilling bottles.",
+        "<strong>(c) Calculating the $p$-value:</strong><br><br>Evaluating the upper-tail probability for $z = 2.10$:\\begin{aligned} p\\text{-value} &= P(Z > 2.10) \\cr &= 1 - \\Phi(2.10) \\cr &= 1 - 0.9821 \\cr &= 0.0179 \\end{aligned}",
+        "<strong>(d) Critical value of $\\bar{v}$:</strong><br><br>Using the critical value $z_{\\text{crit}} = 1.645$:\\begin{aligned} \\bar{v}_{\\text{crit}} &= 750.0 + 1.645(2.0) \\cr &= 750.0 + 3.29 \\cr &= 753.29 \\cr &\\approx 753.3\\text{ ml} \\end{aligned}",
+        "Final Answer: (a) $H_0: \\mu = 750$, $H_1: \\mu > 750$, (b) Reject $H_0$, (c) $0.0179$, (d) $753.3\\text{ ml}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: \\mu = 750$, $H_1: \\mu \\neq 750$, (b) Reject $H_0$, (c) $0.0179$, (d) $753.3\\text{ ml}$",
+            "feedback": "In part (a), the manager specifically suspects overfilling, which requires a one-tailed test $H_1: \\mu > 750$, not a two-tailed test."
+        },
+        {
+            "ans": "(a) $H_0: \\mu = 750$, $H_1: \\mu > 750$, (b) Reject $H_0$, (c) $0.0358$, (d) $753.3\\text{ ml}$",
+            "feedback": "In part (c), you doubled the tail probability ($2 \\times 0.0179 = 0.0358$). For a one-tailed test, the $p$-value is simply the single tail probability $P(Z > 2.10) = 0.0179$."
+        },
+        {
+            "ans": "(a) $H_0: \\mu = 750$, $H_1: \\mu > 750$, (b) Do not reject $H_0$, (c) $0.0179$, (d) $763.2\\text{ ml}$",
+            "feedback": "In part (b), you standardised using $\\sigma = 8.0$ instead of the standard error $\\dfrac{\\sigma}{\\sqrt{n}} = 2.0$, producing an incorrect $z$-score of $0.525$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Critical Value vs Test Statistic Equivalence",
+        "content": "Notice how parts (b) and (d) confirm each other: the observed sample mean of $754.2\\text{ ml}$ exceeds the critical boundary of $753.3\\text{ ml}$, which corresponds directly to the test statistic $z = 2.10$ exceeding $z_{\\text{crit}} = 1.645$."
+    }
+},
+{
+    "id": "050288",
+    "group_id": "050286",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Central Limit Theorem",
+        "Two-Tailed Hypothesis Testing",
+        "Confidence Intervals"
+    ],
+    "img": false,
+    "question": "The duration of service transactions, $T$ seconds, at an automated banking kiosk has an unknown distribution with mean $\\mu = 85.0\\text{ seconds}$ and standard deviation $\\sigma = 24.0\\text{ seconds}$.<br><br>A branch manager suspects that the introduction of a redesigned touch-screen interface has altered the population mean transaction time.<br><br>She records the transaction times for a random sample of $64$ customers using the redesigned interface, obtaining a sample mean of $\\bar{t} = 79.5\\text{ seconds}$.<br><br><strong>(a)</strong> Explain how the Central Limit Theorem enables a hypothesis test to be carried out even though the population distribution of $T$ is unknown.<br><br><strong>(b)</strong> Stating your hypotheses clearly, test at the $5\\%$ level of significance whether there is evidence that the mean transaction time has changed.<br><br><strong>(c)</strong> Calculate a $95\\%$ confidence interval for the new population mean transaction time, $\\mu$.",
+    "steps": [
+        "<strong>(a) Application of the Central Limit Theorem:</strong><br><br>The Central Limit Theorem states that for a large sample size ($n \\ge 30$), the distribution of the sample mean $\\bar{T}$ is approximately normal regardless of the underlying population distribution. Because $n = 64$ is large, we can model $\\bar{T}$ as normally distributed.",
+        "<strong>(b) Hypothesis test:</strong><br><br>State the hypotheses for a two-tailed test:\\begin{aligned} &H_0: \\mu = 85.0 \\cr &H_1: \\mu \\neq 85.0 \\end{aligned}Calculate the standard error:\\begin{aligned} \\sigma_{\\bar{t}} &= \\dfrac{24.0}{\\sqrt{64}} \\cr &= \\dfrac{24.0}{8} \\cr &= 3.0\\text{ s} \\end{aligned}Calculate the test statistic:\\begin{aligned} z &= \\dfrac{79.5 - 85.0}{3.0} \\cr &= \\dfrac{-5.5}{3.0} \\cr &\\approx -1.833 \\end{aligned}For a two-tailed test at the $5\\%$ significance level, the critical values are:\\begin{aligned} z_{\\text{crit}} = \\pm 1.960 \\end{aligned}Comparing the test statistic:\\begin{aligned} -1.833 > -1.960 \\end{aligned}Because $-1.833$ does not fall into the critical region, we do not reject $H_0$.<br><br>There is insufficient evidence at the $5\\%$ level to suggest that the mean transaction time has changed.",
+        "<strong>(c) $95\\%$ confidence interval:</strong><br><br>Using the formula $\\bar{t} \\pm 1.960\\sigma_{\\bar{t}}$:\\begin{aligned} \\bar{t} \\pm 1.960(3.0) &= 79.5 \\pm 5.88 \\end{aligned}Evaluating the limits:\\begin{aligned} [79.5 - 5.88, 79.5 + 5.88] &= [73.62, 85.38] \\cr &\\approx [73.6, 85.4]\\text{ s} \\end{aligned}",
+        "Final Answer: (a) CLT guarantees normal sample mean for large $n$, (b) Do not reject $H_0$, (c) $[73.6, 85.4]\\text{ s}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) CLT guarantees normal sample mean for large $n$, (b) Reject $H_0$, (c) $[73.6, 85.4]\\text{ s}$",
+            "feedback": "In part (b), $|-1.833| = 1.833 < 1.960$, so the test statistic falls outside the critical region. $H_0$ must not be rejected."
+        },
+        {
+            "ans": "(a) CLT guarantees the population is normal, (b) Do not reject $H_0$, (c) $[73.6, 85.4]\\text{ s}$",
+            "feedback": "In part (a), the Central Limit Theorem applies to the distribution of the *sample mean*, not the population itself. The population distribution remains non-normal."
+        },
+        {
+            "ans": "(a) CLT guarantees normal sample mean for large $n$, (b) Do not reject $H_0$, (c) $[76.5, 82.5]\\text{ s}$",
+            "feedback": "In part (c), you used a critical value of $1.0$ instead of $1.960$. The margin of error is $1.960 \\times 3.0 = 5.88\\text{ s}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Duality of Tests and Confidence Intervals",
+        "content": "Notice how the $95\\%$ confidence interval $[73.6, 85.4]\\text{ s}$ contains the baseline value $85.0\\text{ s}$. When a $95\\%$ confidence interval contains the hypothesized null parameter, a two-tailed test at the $5\\%$ level will always fail to reject $H_0$."
+    }
+},
+{
+    "id": "050289",
+    "group_id": "050286",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Critical Regions",
+        "Type II Error",
+        "Sample Size Determination"
+    ],
+    "img": false,
+    "question": "A food packaging facility produces packets of breakfast cereal with a stated nominal net mass of $500.0\\text{ g}$. The mass of a packet, $W\\text{ g}$, is normally distributed with standard deviation $\\sigma = 15.0\\text{ g}$.<br><br>The quality control team tests the null hypothesis $H_0: \\mu = 500.0\\text{ g}$ against the alternative hypothesis $H_1: \\mu < 500.0\\text{ g}$ at the $2.5\\%$ level of significance using a random sample of size $n$.<br><br><strong>(a)</strong> If a sample of size $n = 25$ packets is taken:<br>&emsp;<strong>(i)</strong> find the critical region for the sample mean $\\bar{w}$,<br>&emsp;<strong>(ii)</strong> find the probability of committing a Type II error if the true population mean mass has slipped to $\\mu = 490.0\\text{ g}$.<br><br><strong>(b)</strong> The quality control team wishes to adjust the sample size so that the lower boundary of the critical region is exactly $\\bar{w} = 494.0\\text{ g}$ at the $2.5\\%$ significance level ($z = -1.960$). Determine the required sample size, $n$.",
+    "steps": [
+        "<strong>(a)(i) Finding the critical region for $n = 25$:</strong><br><br>Calculate the standard error:\\begin{aligned} \\sigma_{\\bar{w}} &= \\dfrac{15.0}{\\sqrt{25}} \\cr &= \\dfrac{15.0}{5} \\cr &= 3.0\\text{ g} \\end{aligned}For a lower-tail test at the $2.5\\%$ significance level, $z_{\\text{crit}} = -1.960$:\\begin{aligned} \\bar{w}_{\\text{crit}} &= 500.0 - 1.960(3.0) \\cr &= 500.0 - 5.88 \\cr &= 494.12\\text{ g} \\end{aligned}The critical region is:\\begin{aligned} \\bar{w} \\le 494.12\\text{ g} \\end{aligned}",
+        "<strong>(a)(ii) Probability of a Type II error when $\\mu = 490.0$:</strong><br><br>A Type II error occurs when $H_0$ is accepted despite being false. We accept $H_0$ when $\\bar{w} > 494.12\\text{ g}$:\\begin{aligned} P(\\text{Type II}) &= P(\\bar{W} > 494.12 \\mid \\mu = 490.0) \\end{aligned}Standardising under the true mean $\\mu = 490.0\\text{ g}$:\\begin{aligned} z &= \\dfrac{494.12 - 490.0}{3.0} \\cr &= \\dfrac{4.12}{3.0} \\cr &\\approx 1.373 \\end{aligned}Evaluating the upper-tail probability:\\begin{aligned} P(Z > 1.373) &= 1 - \\Phi(1.373) \\cr &= 1 - 0.9151 \\cr &= 0.0849 \\quad (8.49\\%) \\end{aligned}",
+        "<strong>(b) Finding required sample size $n$:</strong><br><br>Setting the critical boundary equal to $494.0\\text{ g}$:\\begin{aligned} 500.0 - 1.960\\left(\\dfrac{15.0}{\\sqrt{n}}\\right) &= 494.0 \\cr 6.0 &= \\dfrac{29.4}{\\sqrt{n}} \\cr \\sqrt{n} &= \\dfrac{29.4}{6.0} \\cr &= 4.9 \\cr n &= 4.9^2 \\cr &= 24.01 \\end{aligned}Rounding to the nearest integer gives:\\begin{aligned} n = 24 \\end{aligned}",
+        "Final Answer: (a)(i) $\\bar{w} \\le 494.12\\text{ g}$, (ii) $0.0849$, (b) $n = 24$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $\\bar{w} \\le 494.12\\text{ g}$, (ii) $0.9151$, (b) $n = 24$",
+            "feedback": "In part (a)(ii), $0.9151$ is $\\Phi(1.373)$, the probability of rejecting $H_0$. A Type II error is accepting $H_0$, which is the upper tail: $1 - 0.9151 = 0.0849$."
+        },
+        {
+            "ans": "(a)(i) $\\bar{w} \\ge 494.12\\text{ g}$, (ii) $0.0849$, (b) $n = 24$",
+            "feedback": "In part (a)(i), the test is for underfilling ($H_1: \\mu < 500$), so the critical region lies in the lower tail: $\\bar{w} \\le 494.12\\text{ g}$."
+        },
+        {
+            "ans": "(a)(i) $\\bar{w} \\le 494.12\\text{ g}$, (ii) $0.0849$, (b) $n = 5$",
+            "feedback": "In part (b), $\\sqrt{n} = 4.9$, so $n = 4.9^2 = 24.01 \\approx 24$. You must square $4.9$ rather than leaving it unsquared."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Shifting Distributions for Type II Error",
+        "content": "To calculate the probability of a Type II error, keep the acceptance boundary fixed from the original test ($\\bar{w} > 494.12$) and re-standardise using the new, true mean ($\\mu = 490.0$). The standard error $\\sigma_{\\bar{w}} = 3.0$ remains unchanged."
+    }
+},
+{
+    "id": "050290",
+    "group_id": "050286",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Difference of Two Sample Means",
+        "Two-Sample Hypothesis Testing",
+        "Variance Addition Rule"
+    ],
+    "img": false,
+    "question": "An agricultural research station investigates the efficacy of two distinct soil conditioning treatments, Treatment A and Treatment B, on the yield of commercial tomato crops.<br><br>• The yield per plot using Treatment A follows a normal distribution with mean $\\mu_A$ and standard deviation $\\sigma_A = 4.2\\text{ kg}$.<br>• The yield per plot using Treatment B follows a normal distribution with mean $\\mu_B$ and standard deviation $\\sigma_B = 3.6\\text{ kg}$.<br><br>A random sample of $36$ plots given Treatment A produces a sample mean yield of $\\bar{x}_A = 48.5\\text{ kg}$.<br>An independent random sample of $49$ plots given Treatment B produces a sample mean yield of $\\bar{x}_B = 46.2\\text{ kg}$.<br><br><strong>(a)</strong> State suitable null and alternative hypotheses to test whether Treatment A produces a higher mean yield than Treatment B.<br><br><strong>(b)</strong> State the distribution of the difference in sample means, $\\bar{X}_A - \bar{X}_B$, assuming the null hypothesis is true.<br><br><strong>(c)</strong> Test, at the $1\\%$ level of significance, whether there is evidence that Treatment A produces a higher mean yield than Treatment B.<br><br><strong>(d)</strong> State an essential statistical assumption regarding the two samples required for this test to be valid.",
+    "steps": [
+        "<strong>(a) Hypotheses:</strong><br><br>Testing whether Treatment A produces a higher mean yield than Treatment B:\\begin{aligned} &H_0: \\mu_A = \\mu_B \\cr &H_1: \\mu_A > \\mu_B \\end{aligned}(Equivalently, $H_0: \\mu_A - \\mu_B = 0$ versus $H_1: \\mu_A - \\mu_B > 0$).",
+        "<strong>(b) Distribution of $\\bar{X}_A - \\bar{X}_B$ under $H_0$:</strong><br><br>Under $H_0$, the mean difference is $0$. Summing the independent variances of the sample means:\\begin{aligned} \\text{Var}(\\bar{X}_A - \\bar{X}_B) &= \\dfrac{\\sigma_A^2}{n_A} + \\dfrac{\\sigma_B^2}{n_B} \\cr &= \\dfrac{4.2^2}{36} + \\dfrac{3.6^2}{49} \\cr &= \\dfrac{17.64}{36} + \\dfrac{12.96}{49} \\cr &= 0.49 + 0.2645 \\cr &= 0.7545 \\end{aligned}Therefore:\\begin{aligned} \\bar{X}_A - \\bar{X}_B \\sim \\text{N}(0, 0.7545) \\end{aligned}",
+        "<strong>(c) Hypothesis test at $1\\%$ significance level:</strong><br><br>Calculate the standard error:\\begin{aligned} \\text{SE} &= \\sqrt{0.7545} \\cr &\\approx 0.8686\\text{ kg} \\end{aligned}Observed difference in sample means:\\begin{aligned} \\bar{x}_A - \\bar{x}_B &= 48.5 - 46.2 \\cr &= 2.3\\text{ kg} \\end{aligned}Calculate the test statistic:\\begin{aligned} z &= \\dfrac{2.3 - 0}{0.8686} \\cr &\\approx 2.648 \\end{aligned}For an upper-tail test at the $1\\%$ level, the critical value is:\\begin{aligned} z_{\\text{crit}} = 2.326 \\end{aligned}Comparing the test statistic:\\begin{aligned} 2.648 > 2.326 \\end{aligned}Because $z > z_{\\text{crit}}$, we reject $H_0$.<br><br>There is significant evidence at the $1\\%$ level that Treatment A produces a higher mean yield than Treatment B.",
+        "<strong>(d) Essential statistical assumption:</strong><br><br>The two samples must be completely independent of each other.",
+        "Final Answer: (a) $H_0: \\mu_A = \\mu_B$, $H_1: \\mu_A > \\mu_B$, (b) $N(0, 0.7545)$, (c) Reject $H_0$, (d) Independent samples"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: \\mu_A = \\mu_B$, $H_1: \\mu_A > \\mu_B$, (b) $N(0, 0.7545)$, (c) Do not reject $H_0$, (d) Independent samples",
+            "feedback": "In part (c), because the test statistic $z = 2.648$ is strictly greater than the critical value $2.326$, $H_0$ must be rejected."
+        },
+        {
+            "ans": "(a) $H_0: \\mu_A = \\mu_B$, $H_1: \\mu_A \\neq \\mu_B$, (b) $N(0, 0.7545)$, (c) Reject $H_0$, (d) Independent samples",
+            "feedback": "In part (a), the research question asks whether Treatment A produces a *higher* yield, which requires a one-tailed test $H_1: \\mu_A > \\mu_B$."
+        },
+        {
+            "ans": "(a) $H_0: \\mu_A = \\mu_B$, $H_1: \\mu_A > \\mu_B$, (b) $N(0, 0.2255)$, (c) Reject $H_0$, (d) Samples must have equal variance",
+            "feedback": "In part (b), variances always add: $\\text{Var}(\\bar{X}_A - \\bar{X}_B) = 0.49 + 0.2645 = 0.7545$. You must never subtract the variances."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Variances Always Add in Differences",
+        "content": "A perennial error in two-sample normal tests is subtracting the variances because of the minus sign in $\\bar{X}_A - \\bar{X}_B$. Differences in independent random variables always increase total uncertainty, so variances must always be added: $\\dfrac{\\sigma_A^2}{n_A} + \\dfrac{\\sigma_B^2}{n_B}$."
+    }
+}
 ];
