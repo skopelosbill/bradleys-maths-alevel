@@ -999,7 +999,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Complementary Posteriors",
-        "content": "In part (b)(ii), do not recalculate Bayes' formula from scratch. Because the game only uses two boxes (Gold and Silver), the posterior probabilities must sum to $1$: $P(S \\mid W) = 1 - P(G \\mid W) = 1 - \\dfrac{8}{23} = \\dfrac{15}{23}$."
+        "content": "In part (b)(ii), do not recalculate Bayes' formula from scratch. Because the game only uses two boxes (Gold and Silver), the posterior probabilities must sum to $1$: \\begin{aligned}P(S \\mid W) &= 1 - P(G \\mid W)\\cr &= 1 - \\dfrac{8}{23}\\cr & = \\dfrac{15}{23}\\end{aligned}"
     }
 },
 {
@@ -1043,6 +1043,215 @@ window.ALEVEL_QUESTIONS = [
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Direct Sub-population Conditioning",
         "content": "For part (c)(i), never set up a complicated Bayes formula when the history is already completely known. If the first two draws were yellow, simply remove two yellow counters from the bag. You are left with $4$ red and $4$ yellow, making the probability $\\dfrac{4}{8} = 0.5$ immediately."
+    }
+},
+{
+    "id": "050276",
+    "group_id": "050276",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Finding Unknown Parameters",
+        "Simultaneous Equations",
+        "Modelling Justification"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> A precision manufacturing firm produces structural steel rods. The length of a rod, $X\\text{ cm}$, is modelled by a normal distribution with mean $\\mu$ and variance $\\sigma^2$.<br><br>Quality control testing reveals that $10\\%$ of the rods exceed $25.4\\text{ cm}$ in length and that $20\\%$ of the rods are shorter than $24.2\\text{ cm}$.<br><br>&emsp;<strong>(i)</strong> Find the values of $\\mu$ and $\\sigma^2$.<br><br>A specialised modular assembly requires rods that are less than $25.0\\text{ cm}$ in length.<br><br>&emsp;<strong>(ii)</strong> Calculate the percentage of steel rods that will be too long for this assembly.<br><br><strong>(b)</strong> Give one reason why the normal distribution is widely used in statistical modelling.",
+    "steps": [
+        "<strong>(a)(i) Finding $\\mu$ and $\\sigma^2$:</strong><br><br>For the upper tail where $10\\%$ exceed $25.4\\text{ cm}$:\\begin{aligned} P(X > 25.4) &= 0.10 \\cr \\dfrac{25.4 - \\mu}{\\sigma} &= 1.2816 \\cr 25.4 &= \\mu + 1.2816\\sigma \\end{aligned}For the lower tail where $20\\%$ are below $24.2\\text{ cm}$:\\begin{aligned} P(X < 24.2) &= 0.20 \\cr \\dfrac{24.2 - \\mu}{\\sigma} &= -0.8416 \\cr 24.2 &= \\mu - 0.8416\\sigma \\end{aligned}Subtracting the two equations:\\begin{aligned} 1.2 &= 2.1232\\sigma \\cr \\sigma &= \\dfrac{1.2}{2.1232} \\cr &\\approx 0.5652 \\cr \\sigma^2 &\\approx 0.319 \\end{aligned}Substituting $\\sigma$ to find $\\mu$:\\begin{aligned} \\mu &= 24.2 \\cr &\\quad + 0.8416(0.5652) \\cr &\\approx 24.676 \\cr &\\approx 24.7\\text{ cm} \\end{aligned}",
+        "<strong>(a)(ii) Percentage too long for assembly:</strong><br><br>Too long means length $X > 25.0\\text{ cm}$:\\begin{aligned} z &= \\dfrac{25.0 - 24.676}{0.5652} \\cr &\\approx 0.573 \\end{aligned}Evaluating the upper-tail probability:\\begin{aligned} P(X > 25.0) &= 1 - \\Phi(0.573) \\cr &= 1 - 0.7167 \\cr &= 0.2833 \\cr &= 28.3\\% \\end{aligned}",
+        "<strong>(b) Importance of the normal distribution:</strong><br><br>By the Central Limit Theorem, the distribution of the sample mean (or the sum of many independent random effects) tends towards a normal distribution as the sample size increases, regardless of the underlying population shape.",
+        "Final Answer: (a)(i) $\\mu = 24.7\\text{ cm}$, $\\sigma^2 = 0.319$, (ii) $28.3\\%$, (b) Central Limit Theorem"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $\\mu = 24.7\\text{ cm}$, $\\sigma^2 = 0.565$, (ii) $28.3\\%$, (b) Central Limit Theorem",
+            "feedback": "In part (a)(i), $0.565$ is the standard deviation $\\sigma$. The question asks for the variance $\\sigma^2$, which is $0.5652^2 \\approx 0.319$."
+        },
+        {
+            "ans": "(a)(i) $\\mu = 24.7\\text{ cm}$, $\\sigma^2 = 0.319$, (ii) $71.7\\%$, (b) Central Limit Theorem",
+            "feedback": "In part (a)(ii), $71.7\\%$ is the percentage that are acceptable ($X < 25.0$). The question asks for the percentage that are too long ($X > 25.0$), which is $100\\% - 71.7\\% = 28.3\\%$."
+        },
+        {
+            "ans": "(a)(i) $\\mu = 25.1\\text{ cm}$, $\\sigma^2 = 0.319$, (ii) $28.3\\%$, (b) Data is always symmetrical",
+            "feedback": "In part (a)(i), you used a positive $z$-value for the lower tail ($20\\%$). Because $24.2$ lies below the mean, $z = -0.8416$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: State Variance When Asked for Variance",
+        "content": "A frequent lost mark in part (a)(i) is providing $\\sigma = 0.565$ and forgetting to square it. When an exam question specifies $\\sigma^2$, always compute both: $\\sigma = 0.565\\text{ cm}$ and $\\sigma^2 = 0.319\\text{ cm}^2$."
+    }
+},
+{
+    "id": "050277",
+    "group_id": "050276",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Linear Combinations of Normal Variables",
+        "Sums of Independent Variables",
+        "Differences of Variables"
+    ],
+    "img": false,
+    "question": "An engineering factory manufactures steel bolts and matching nuts.<br>The mass of a bolt, $B\\text{ g}$, is modelled by $B \\sim \\text{N}(45.0, 1.8^2)$.<br>The mass of a nut, $N\\text{ g}$, is modelled by $N \\sim \\text{N}(22.0, 1.2^2)$.<br>Bolts and nuts are manufactured independently.<br><br><strong>(a)</strong> A single bolt and a single nut are fastened together. Find the probability that their combined mass exceeds $70.0\\text{ g}$.<br><br><strong>(b)</strong> A standard trade pack contains $10$ bolts and $10$ nuts packed into an empty container. The mass of the empty container, $C\\text{ g}$, is modelled by $C \\sim \\text{N}(60.0, 4.0^2)$ independently of the contents.<br>Find the probability that the total mass of a randomly chosen trade pack exceeds $740\\text{ g}$.<br><br><strong>(c)</strong> Find the probability that the mass of a randomly chosen bolt is more than twice the mass of a randomly chosen nut.",
+    "steps": [
+        "<strong>(a) Combined mass of one bolt and one nut:</strong><br><br>Let $T = B + N$:\\begin{aligned} \\text{E}(T) &= 45.0 + 22.0 \\cr &= 67.0\\text{ g} \\end{aligned}Since $B$ and $N$ are independent, add their variances:\\begin{aligned} \\text{Var}(T) &= 1.8^2 + 1.2^2 \\cr &= 3.24 + 1.44 \\cr &= 4.68 \\end{aligned}So $T \\sim \\text{N}(67.0, 4.68)$. Standardising for $T > 70.0$:\\begin{aligned} P(T > 70.0) &= 1 - \\Phi\\left(\\dfrac{70 - 67}{\\sqrt{4.68}}\\right) \\cr &= 1 - \\Phi(1.387) \\cr &= 1 - 0.9173 \\cr &= 0.0827 \\end{aligned}",
+        "<strong>(b) Total mass of a trade pack:</strong><br><br>Let $W = \\sum_{i=1}^{10} B_i + \\sum_{i=1}^{10} N_i + C$:\\begin{aligned} \\text{E}(W) &= 10(45) + 10(22) \\cr &\\quad + 60 \\cr &= 730\\text{ g} \\end{aligned}For the variance, sum the individual variances:\\begin{aligned} \\text{Var}(W) &= 10(1.8^2) \\cr &\\quad + 10(1.2^2) \\cr &\\quad + 4.0^2 \\cr &= 32.4 + 14.4 \\cr &\\quad + 16.0 \\cr &= 62.8 \\end{aligned}Standardising for $W > 740$:\\begin{aligned} P(W > 740) &= 1 - \\Phi\\left(\\dfrac{740 - 730}{\\sqrt{62.8}}\\right) \\cr &= 1 - \\Phi(1.262) \\cr &= 1 - 0.8965 \\cr &= 0.1035 \\end{aligned}",
+        "<strong>(c) Bolt mass more than twice nut mass:</strong><br><br>We require $P(B > 2N)$, which rearranges to $P(B - 2N > 0)$.<br><br>Let $D = B - 2N$:\\begin{aligned} \\text{E}(D) &= 45 - 2(22) \\cr &= 1\\text{ g} \\end{aligned}Applying the linear variance rule $\\text{Var}(aX + bY) = a^2\\text{Var}(X) + b^2\\text{Var}(Y)$:\\begin{aligned} \\text{Var}(D) &= 1.8^2 + (-2)^2(1.2^2) \\cr &= 3.24 + 4(1.44) \\cr &= 3.24 + 5.76 \\cr &= 9.0 \\end{aligned}So $\\sigma_D = \\sqrt{9.0} = 3.0$. Standardising for $D > 0$:\\begin{aligned} P(D > 0) &= P\\left(Z > \\dfrac{0 - 1}{3.0}\\right) \\cr &= P(Z > -0.333) \\cr &= \\Phi(0.333) \\cr &= 0.6305 \\end{aligned}",
+        "Final Answer: (a) $0.0827$, (b) $0.1035$, (c) $0.6305$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.0827$, (b) $0.1035$, (c) $0.3695$",
+            "feedback": "In part (c), you calculated $1 - \\Phi(0.333) = 0.3695$. Because $z = -0.333$ is negative, $P(Z > -0.333) = \\Phi(0.333) = 0.6305$."
+        },
+        {
+            "ans": "(a) $0.0827$, (b) $0.0031$, (c) $0.6305$",
+            "feedback": "In part (b), you evaluated $\\text{Var}(10B) = 10^2(1.8^2) = 324$. Because the pack contains $10$ independent bolts, you must add $10$ separate variances: $10 \\times 1.8^2 = 32.4$."
+        },
+        {
+            "ans": "(a) $0.1587$, (b) $0.1035$, (c) $0.6305$",
+            "feedback": "In part (a), you added the standard deviations directly ($1.8 + 1.2 = 3.0$). For independent variables, variances add: $\\sigma^2 = 1.8^2 + 1.2^2 = 4.68$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Sum of 10 Items vs 10 Times One Item",
+        "content": "A classic trap is confusing the sum of $10$ independent items with scaling one item by $10$. When packing $10$ independent bolts, $\\text{Var}(B_1 + \\dots + B_{10}) = 10\\text{Var}(B) = 32.4$. In contrast, multiplying a single bolt by $10$ gives $\\text{Var}(10B) = 10^2\\text{Var}(B) = 324$."
+    }
+},
+{
+    "id": "050278",
+    "group_id": "050276",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Sample Mean Hypothesis Testing",
+        "Critical Values",
+        "Type I Error"
+    ],
+    "img": false,
+    "question": "A regional dairy fills cartons of fresh milk. The volume dispensed, $X\\text{ ml}$, is normally distributed with a known population standard deviation of $\\sigma = 12.0\\text{ ml}$ and a nominal target mean of $\\mu = 1000\\text{ ml}$.<br><br>Following maintenance work, the production manager suspects that the machine is underfilling cartons. A random sample of $25$ cartons is taken, yielding a sample mean volume of $\\bar{x} = 995.2\\text{ ml}$.<br><br><strong>(a)</strong> State suitable null and alternative hypotheses to test the manager's suspicion.<br><br><strong>(b)</strong> State the distribution of the sample mean, $\\bar{X}$, assuming the null hypothesis is true.<br><br><strong>(c)</strong> Test, at the $2.5\\%$ level of significance, whether there is evidence that the machine is underfilling cartons.<br><br><strong>(d)</strong> Determine the critical value of the sample mean, $\\bar{x}$, for this test at the $2.5\\%$ level of significance.<br><br><strong>(e)</strong> State the probability of making a Type I error in this test.",
+    "steps": [
+        "<strong>(a) Hypotheses:</strong><br><br>The manager specifically suspects underfilling, so the test is one-tailed:\\begin{aligned} &H_0: \\mu = 1000 \\cr &H_1: \\mu < 1000 \\end{aligned}",
+        "<strong>(b) Distribution of $\\bar{X}$ under $H_0$:</strong><br><br>For sample size $n = 25$:\\begin{aligned} \\bar{X} \\sim \\text{N}\\left(1000, \\dfrac{12.0^2}{25}\\right) \\end{aligned}The standard error is:\\begin{aligned} \\sigma_{\\bar{x}} &= \\dfrac{12.0}{\\sqrt{25}} \\cr &= \\dfrac{12.0}{5} \\cr &= 2.4\\text{ ml} \\end{aligned}So $\\bar{X} \\sim \\text{N}(1000, 2.4^2)$.",
+        "<strong>(c) Test statistic and conclusion:</strong><br><br>Standardising the observed sample mean:\\begin{aligned} z &= \\dfrac{995.2 - 1000}{2.4} \\cr &= \\dfrac{-4.8}{2.4} \\cr &= -2.0 \\end{aligned}For a lower-tail test at the $2.5\\%$ significance level, the critical value is:\\begin{aligned} z_{\\text{crit}} = -1.96 \\end{aligned}Comparing the test statistic:\\begin{aligned} -2.0 < -1.96 \\end{aligned}Because $-2.0$ falls inside the critical region, we reject $H_0$.<br><br>There is significant evidence at the $2.5\\%$ level that the machine is underfilling cartons.",
+        "<strong>(d) Critical value of $\\bar{x}$:</strong><br><br>Using the critical $z$-value:\\begin{aligned} \\bar{x}_{\\text{crit}} &= 1000 - 1.96(2.4) \\cr &= 1000 - 4.704 \\cr &= 995.3\\text{ ml} \\end{aligned}",
+        "<strong>(e) Probability of a Type I error:</strong><br><br>The probability of a Type I error (rejecting $H_0$ when it is actually true) is precisely the significance level of the test: $0.025$ (or $2.5\\%$).",
+        "Final Answer: (a) $H_0: \\mu = 1000$, $H_1: \\mu < 1000$, (b) $\\bar{X} \\sim N(1000, 2.4^2)$, (c) Reject $H_0$, (d) $995.3\\text{ ml}$, (e) $0.025$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: \\mu = 1000$, $H_1: \\mu \\neq 1000$, (b) $\\bar{X} \\sim N(1000, 2.4^2)$, (c) Reject $H_0$, (d) $995.3\\text{ ml}$, (e) $0.025$",
+            "feedback": "In part (a), the manager suspects underfilling, requiring a one-tailed test $H_1: \\mu < 1000$. A two-tailed test $H_1: \\mu \\neq 1000$ would only be used if testing for any change in fill volume."
+        },
+        {
+            "ans": "(a) $H_0: \\mu = 1000$, $H_1: \\mu < 1000$, (b) $\\bar{X} \\sim N(1000, 12^2)$, (c) Reject $H_0$, (d) $995.3\\text{ ml}$, (e) $0.025$",
+            "feedback": "In part (b), you used the population variance $\\sigma^2 = 12^2$ instead of the sample mean variance $\\dfrac{\\sigma^2}{n} = \\dfrac{12^2}{25} = 2.4^2$."
+        },
+        {
+            "ans": "(a) $H_0: \\mu = 1000$, $H_1: \\mu < 1000$, (b) $\\bar{X} \\sim N(1000, 2.4^2)$, (c) Do not reject $H_0$, (d) $976.5\\text{ ml}$, (e) $0.050$",
+            "feedback": "In part (c), $-2.0$ is more extreme than $-1.96$, so $H_0$ must be rejected. In part (e), the probability of a Type I error equals the chosen significance level of $0.025$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Type I Error Equals Significance Level",
+        "content": "A Type I error is defined as rejecting the null hypothesis when it is true. The probability of this happening is simply the size of the critical region, which is always equal to the significance level $\\alpha$ (here, $0.025$)."
+    }
+},
+{
+    "id": "050279",
+    "group_id": "050276",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Normal Approximation to Poisson",
+        "Continuity Correction",
+        "Interval Probabilities"
+    ],
+    "img": false,
+    "question": "The number of incoming emergency calls received per hour by an emergency dispatch switchboard follows a Poisson distribution with mean $\\lambda = 36$.<br><br>Let $Y$ denote the total number of emergency calls received during a $2$-hour shift.<br><br><strong>(a)</strong> State the exact distribution of $Y$, including its parameter.<br><br><strong>(b)</strong> Explain why a normal distribution provides an appropriate approximation for the distribution of $Y$.<br><br><strong>(c)</strong> State the mean and the variance of the approximating normal distribution.<br><br><strong>(d)</strong> Using the normal approximation with a continuity correction, find the probability that the dispatch switchboard receives:<br>&emsp;<strong>(i)</strong> at least $80$ calls during a $2$-hour shift,<br>&emsp;<strong>(ii)</strong> between $65$ and $75$ calls inclusive during a $2$-hour shift.",
+    "steps": [
+        "<strong>(a) Exact distribution of $Y$:</strong><br><br>For a $2$-hour interval, the mean scales proportionally: $\\lambda = 36 \\times 2 = 72$:\\begin{aligned} Y \\sim \\text{Po}(72) \\end{aligned}",
+        "<strong>(b) Justifying normal approximation:</strong><br><br>A normal approximation is appropriate because the Poisson parameter $\\lambda = 72$ is large (typically $\\lambda > 15$).",
+        "<strong>(c) Parameters of approximating distribution:</strong><br><br>For a Poisson distribution, the mean and variance are both equal to $\\lambda$:\\begin{aligned} \\mu &= 72 \\cr \\sigma^2 &= 72 \\end{aligned}So the approximating distribution is $X \\sim \\text{N}(72, 72)$, with $\\sigma = \\sqrt{72} \\approx 8.485$.",
+        "<strong>(d)(i) Probability of at least $80$ calls:</strong><br><br>Applying the continuity correction for $Y \\ge 80$ gives $X > 79.5$:\\begin{aligned} z &= \\dfrac{79.5 - 72}{\\sqrt{72}} \\cr &= \\dfrac{7.5}{8.485} \\cr &\\approx 0.884 \\end{aligned}Evaluating the upper-tail probability:\\begin{aligned} P(Y \\ge 80) &\\approx 1 - \\Phi(0.884) \\cr &= 1 - 0.8117 \\cr &= 0.1883 \\cr &\\approx 0.188 \\end{aligned}",
+        "<strong>(d)(ii) Probability between $65$ and $75$ calls inclusive:</strong><br><br>Applying continuity corrections for $65 \\le Y \\le 75$ gives $64.5 < X < 75.5$:\\begin{aligned} z_1 &= \\dfrac{64.5 - 72}{8.485} \\cr &= \\dfrac{-7.5}{8.485} \\cr &\\approx -0.884 \\cr z_2 &= \\dfrac{75.5 - 72}{8.485} \\cr &= \\dfrac{3.5}{8.485} \\cr &\\approx 0.412 \\end{aligned}Evaluating the interval probability:\\begin{aligned} &P(-0.884 < Z < 0.412) \\cr &\\quad = \\Phi(0.412) - \\Phi(-0.884) \\cr &\\quad = 0.6599 - (1 - 0.8117) \\cr &\\quad = 0.6599 - 0.1883 \\cr &\\quad = 0.4716 \\cr &\\quad \\approx 0.472 \\end{aligned}",
+        "Final Answer: (a) $Y \\sim \\text{Po}(72)$, (c) $\\mu = 72$, $\\sigma^2 = 72$, (d)(i) $0.188$, (ii) $0.472$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $Y \\sim \\text{Po}(72)$, (c) $\\mu = 72$, $\\sigma^2 = 72$, (d)(i) $0.161$, (ii) $0.472$",
+            "feedback": "In part (d)(i), you used $80.5$ for the continuity correction. 'At least $80$' includes $80$, so the continuous interval starts at $79.5$, giving $z = 0.884$ and probability $0.188$."
+        },
+        {
+            "ans": "(a) $Y \\sim \\text{Po}(72)$, (c) $\\mu = 72$, $\\sigma^2 = 72$, (d)(i) $0.188$, (ii) $0.428$",
+            "feedback": "In part (d)(ii), you shrunk the interval to $[65.5, 74.5]$. Because the bounds are inclusive, the continuous region expands to $[64.5, 75.5]$."
+        },
+        {
+            "ans": "(a) $Y \\sim \\text{Po}(36)$, (c) $\\mu = 36$, $\\sigma^2 = 36$, (d)(i) $0.188$, (ii) $0.472$",
+            "feedback": "In part (a), you did not adjust the rate parameter for a $2$-hour period. The hourly rate is $36$, so for $2$ hours the parameter is $\\lambda = 36 \\times 2 = 72$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Poisson Mean and Variance Equality",
+        "content": "A key feature of the Poisson distribution is that its mean and variance are identical: $\\text{E}(Y) = \\text{Var}(Y) = \\lambda$. When approximating $\\text{Po}(72)$ with a normal distribution, the standard deviation is always $\\sqrt{\\lambda} = \\sqrt{72}$."
+    }
+},
+{
+    "id": "050280",
+    "group_id": "050276",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Continuous Distributions",
+    "topic": "Normal Distribution",
+    "subtopic": [
+        "Symmetric Tolerance Intervals",
+        "Standard Error",
+        "Sample Size Determination"
+    ],
+    "img": false,
+    "question": "The external diameter, $D\\text{ mm}$, of precision ball bearings produced by an automated lathe is modelled by a normal distribution with mean $\\mu = 15.00\\text{ mm}$ and standard deviation $\\sigma = 0.08\\text{ mm}$.<br><br><strong>(a)</strong> Find the probability that a randomly selected ball bearing has a diameter within $0.10\\text{ mm}$ of the target mean.<br><br><strong>(b)</strong> Bearings are considered acceptable for aerospace use if their diameter lies within the symmetric tolerance interval $[15.00 - k, 15.00 + k]$. Given that $98\\%$ of the manufactured bearings are acceptable, determine the value of $k$ to three significant figures.<br><br><strong>(c)</strong> A random sample of $n$ ball bearings is selected from the production line. Find the minimum sample size, $n$, required such that the probability that the sample mean diameter $\\bar{D}$ lies within $0.02\\text{ mm}$ of the true population mean is at least $0.95$.",
+    "steps": [
+        "<strong>(a) Probability within $0.10\\text{ mm}$ of the mean:</strong><br><br>We require $P(14.90 < D < 15.10)$:\\begin{aligned} z &= \\dfrac{0.10}{0.08} \\cr &= 1.25 \\end{aligned}Using the symmetry of the standard normal distribution:\\begin{aligned} P(-1.25 < Z < 1.25) &= 2\\Phi(1.25) - 1 \\cr &= 2(0.8944) - 1 \\cr &= 1.7888 - 1 \\cr &= 0.7888 \\end{aligned}",
+        "<strong>(b) Finding tolerance limit $k$ for $98\\%$ acceptability:</strong><br><br>A central area of $0.98$ leaves $0.01$ in each tail, so $\\Phi(z) = 0.99$:\\begin{aligned} z = 2.326 \\end{aligned}Relating $z$ to $k$:\\begin{aligned} \\dfrac{k}{0.08} &= 2.326 \\cr k &= 2.326 \\times 0.08 \\cr &= 0.18608 \\cr &\\approx 0.186\\text{ mm} \\end{aligned}",
+        "<strong>(c) Determining minimum sample size $n$:</strong><br><br>The sample mean follows $\\bar{D} \\sim \\text{N}\\left(15.00, \\dfrac{0.08^2}{n}\\right)$. We require:\\begin{aligned} P(|\\bar{D} - 15.00| < 0.02) \\ge 0.95 \\end{aligned}Standardising the boundary:\\begin{aligned} z = \\dfrac{0.02}{0.08 / \\sqrt{n}} \\end{aligned}For a central probability of $0.95$, the critical $z$-value is $1.96$:\\begin{aligned} \\dfrac{0.02}{0.08 / \\sqrt{n}} &\\ge 1.96 \\cr 0.25\\sqrt{n} &\\ge 1.96 \\cr \\sqrt{n} &\\ge \\dfrac{1.96}{0.25} \\cr \\sqrt{n} &\\ge 7.84 \\cr n &\\ge 7.84^2 \\cr n &\\ge 61.4656 \\end{aligned}Since $n$ must be an integer, the minimum sample size is:\\begin{aligned} n = 62 \\end{aligned}",
+        "Final Answer: (a) $0.7888$, (b) $k = 0.186\\text{ mm}$, (c) $n = 62$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.7888$, (b) $k = 0.164\\text{ mm}$, (c) $n = 62$",
+            "feedback": "In part (b), you used $z = 2.054$ (from a one-tailed $98\\%$ value). For a symmetric central interval of $98\\%$, the upper tail contains $1\\%$, which gives $z = 2.326$ and $k = 0.186\\text{ mm}$."
+        },
+        {
+            "ans": "(a) $0.7888$, (b) $k = 0.186\\text{ mm}$, (c) $n = 61$",
+            "feedback": "In part (c), rounding down to $61$ gives a probability strictly below $0.95$. Because $n \\ge 61.47$, you must round up to the next integer: $n = 62$."
+        },
+        {
+            "ans": "(a) $0.8944$, (b) $k = 0.186\\text{ mm}$, (c) $n = 62$",
+            "feedback": "In part (a), $0.8944$ is $\\Phi(1.25)$. For the interval between $-1.25$ and $1.25$, you must calculate $2\\Phi(1.25) - 1 = 0.7888$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Always Round Sample Sizes Up",
+        "content": "Whenever solving an inequality for sample size ($n \\ge 61.47$), you must always round *up* to the next integer, regardless of decimal size. Choosing $n = 61$ would fail the specification, making $n = 62$ the true minimum required sample."
     }
 }
 ];
