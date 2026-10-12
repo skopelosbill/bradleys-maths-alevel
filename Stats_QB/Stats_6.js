@@ -836,5 +836,213 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Disjoint Sub-regions in 3-Set Venns",
         "content": "When an examination specifies that two sets are disjoint ($S \\cap B = \\emptyset$), the three-set Venn diagram simplifies nicely: the central three-way intersection and the $S \\cap B$ football-shaped overlap are both zero. Tennis acts as the bridge connecting two mutually exclusive sports."
     }
+},
+{
+    "id": "050271",
+    "group_id": "050271",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Sequential Events",
+    "subtopic": [
+        "Transfer Problems",
+        "Total Probability",
+        "Bayes' Theorem"
+    ],
+    "img": false,
+    "question": "A quality technician inspects batches of precision electronic fuses stored in two containers: Container X and Container Y.<br><br>Container X contains $4$ gold-tipped fuses and $3$ silver-tipped fuses.<br>Container Y contains $3$ gold-tipped fuses and $5$ silver-tipped fuses.<br><br>One fuse is selected at random from Container X and placed into Container Y. One fuse is then selected at random from Container Y.<br><br><strong>(a)</strong> Find the probability that the selected fuses are both gold-tipped.<br><br><strong>(b)</strong> Find the probability that the second fuse selected is gold-tipped.<br><br><strong>(c)</strong> Find the probability that the first fuse selected was silver-tipped, given that the second fuse selected is gold-tipped.",
+    "steps": [
+        "<strong>(a) Probability both are gold-tipped:</strong><br><br>Container X has $4 + 3 = 7$ fuses. Container Y initially has $3 + 5 = 8$ fuses, and receives $1$ transferred fuse, giving $9$ fuses total.<br><br>Using the multiplication rule:\\begin{aligned} &P(G_1 \\cap G_2) \\cr &\\quad = P(G_1) P(G_2 \\mid G_1) \\cr &\\quad = \\dfrac{4}{7} \\times \\dfrac{4}{9} \\cr &\\quad = \\dfrac{16}{63} \\end{aligned}",
+        "<strong>(b) Total probability second fuse is gold-tipped:</strong><br><br>The first fuse transferred can be either gold-tipped ($G_1$) or silver-tipped ($S_1$):\\begin{aligned} &P(G_2) \\cr &\\quad = P(G_1 \\cap G_2) \\cr &\\qquad + P(S_1 \\cap G_2) \\cr &\\quad = \\dfrac{16}{63} \\cr &\\qquad + \\left(\\dfrac{3}{7} \\times \\dfrac{3}{9}\\right) \\cr &\\quad = \\dfrac{16}{63} + \\dfrac{9}{63} \\cr &\\quad = \\dfrac{25}{63} \\end{aligned}",
+        "<strong>(c) Conditional probability (Bayes' theorem):</strong><br><br>Applying the definition of conditional probability:\\begin{aligned} &P(S_1 \\mid G_2) \\cr &\\quad = \\dfrac{P(S_1 \\cap G_2)}{P(G_2)} \\cr &\\quad = \\dfrac{9 / 63}{25 / 63} \\cr &\\quad = \\dfrac{9}{25} \\cr &\\quad = 0.36 \\end{aligned}",
+        "Final Answer: (a) $\\dfrac{16}{63}$, (b) $\\dfrac{25}{63}$, (c) $\\dfrac{9}{25}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\dfrac{16}{63}$, (b) $\\dfrac{25}{63}$, (c) $\\dfrac{9}{63}$",
+            "feedback": "In part (c), $\\dfrac{9}{63}$ is the joint probability $P(S_1 \\cap G_2)$. To find the conditional probability, you must divide by the total probability $P(G_2) = \\dfrac{25}{63}$."
+        },
+        {
+            "ans": "(a) $\\dfrac{12}{63}$, (b) $\\dfrac{25}{63}$, (c) $\\dfrac{9}{25}$",
+            "feedback": "In part (a), you did not add the transferred gold fuse to Container Y's gold count. When a gold fuse is transferred, Container Y contains $3 + 1 = 4$ gold fuses out of $9$, so $P(G_2 \\mid G_1) = \\dfrac{4}{9}$."
+        },
+        {
+            "ans": "(a) $\\dfrac{16}{63}$, (b) $\\dfrac{19}{63}$, (c) $\\dfrac{9}{25}$",
+            "feedback": "In part (b), check your evaluation of the second branch. If a silver fuse is transferred, Container Y has $3$ gold fuses out of $9$, giving $\\dfrac{3}{7} \\times \\dfrac{3}{9} = \\dfrac{9}{63}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Updating the Transferred Count",
+        "content": "In transfer problems, always track how the transferred item alters both the total count and the specific color count of the receiving container. When a gold fuse moves to Container Y, the total increases to $9$ and the gold count increases to $4$."
+    }
+},
+{
+    "id": "050272",
+    "group_id": "050271",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Sequential Events",
+    "subtopic": [
+        "Multi-Item Transfers",
+        "Tree Diagrams",
+        "Bayes' Theorem"
+    ],
+    "img": false,
+    "question": "Two storage boxes contain coloured tokens:<br>• Box A contains $6$ red tokens and $4$ blue tokens.<br>• Box B contains $3$ red tokens and $7$ blue tokens.<br><br>Two tokens are selected at random without replacement from Box A and placed into Box B. A single token is then selected at random from Box B.<br><br><strong>(a)</strong> Find the probability that:<br>&emsp;<strong>(i)</strong> both tokens transferred from Box A to Box B are red,<br>&emsp;<strong>(ii)</strong> one red and one blue token are transferred from Box A to Box B.<br><br><strong>(b)</strong> Find the probability that the token selected from Box B is red.<br><br><strong>(c)</strong> Given that the token selected from Box B is red, find the probability that two red tokens were transferred from Box A.",
+    "steps": [
+        "<strong>(a)(i) Both tokens transferred are red:</strong><br><br>Box A has $10$ tokens total:\\begin{aligned} P(RR) &= \\dfrac{6}{10} \\times \\dfrac{5}{9} \\cr &= \\dfrac{30}{90} \\cr &= \\dfrac{1}{3} \\end{aligned}",
+        "<strong>(a)(ii) One red and one blue token transferred:</strong><br><br>Accounting for both selection orders ($RB$ or $BR$):\\begin{aligned} &P(\\text{one } R, \\text{one } B) \\cr &\\quad = \\left(\\dfrac{6}{10} \\times \\dfrac{4}{9}\\right) \\cr &\\qquad + \\left(\\dfrac{4}{10} \\times \\dfrac{6}{9}\\right) \\cr &\\quad = \\dfrac{24}{90} + \\dfrac{24}{90} \\cr &\\quad = \\dfrac{48}{90} \\cr &\\quad = \\dfrac{8}{15} \\end{aligned}",
+        "<strong>(b) Total probability of drawing red from Box B:</strong><br><br>Box B receives $2$ tokens, increasing its total from $10$ to $12$ tokens.<br><br>Also, $P(BB) = \\dfrac{4}{10} \\times \\dfrac{3}{9} = \\dfrac{12}{90} = \\dfrac{2}{15}$.<br><br>By the law of total probability:\\begin{aligned} &P(R_B) \\cr &\\quad = P(RR) P(R \\mid RR) \\cr &\\qquad + P(RB) P(R \\mid RB) \\cr &\\qquad + P(BB) P(R \\mid BB) \\cr &\\quad = \\left(\\dfrac{1}{3} \\times \\dfrac{5}{12}\\right) \\cr &\\qquad + \\left(\\dfrac{8}{15} \\times \\dfrac{4}{12}\\right) \\cr &\\qquad + \\left(\\dfrac{2}{15} \\times \\dfrac{3}{12}\\right) \\cr &\\quad = \\dfrac{25}{180} + \\dfrac{32}{180} \\cr &\\qquad + \\dfrac{3}{180} \\cr &\\quad = \\dfrac{60}{180} \\cr &\\quad = \\dfrac{1}{3} \\end{aligned}",
+        "<strong>(c) Conditional probability (Bayes' theorem):</strong><br><br>Applying Bayes' formula:\\begin{aligned} &P(RR \\mid R_B) \\cr &\\quad = \\dfrac{P(RR \\cap R_B)}{P(R_B)} \\cr &\\quad = \\dfrac{25 / 180}{60 / 180} \\cr &\\quad = \\dfrac{25}{60} \\cr &\\quad = \\dfrac{5}{12} \\end{aligned}",
+        "Final Answer: (a)(i) $\\dfrac{1}{3}$, (ii) $\\dfrac{8}{15}$, (b) $\\dfrac{1}{3}$, (c) $\\dfrac{5}{12}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a)(i) $\\dfrac{1}{3}$, (ii) $\\dfrac{4}{15}$, (b) $\\dfrac{1}{3}$, (c) $\\dfrac{5}{12}$",
+            "feedback": "In part (a)(ii), you forgot to multiply by $2$. One red and one blue token can be drawn in two mutually exclusive orders: $RB$ or $BR$."
+        },
+        {
+            "ans": "(a)(i) $\\dfrac{1}{3}$, (ii) $\\dfrac{8}{15}$, (b) $\\dfrac{1}{3}$, (c) $\\dfrac{25}{180}$",
+            "feedback": "In part (c), $\\dfrac{25}{180}$ is the joint probability $P(RR \\cap R_B)$. To find the conditional probability, you must divide by $P(R_B) = \\dfrac{60}{180}$."
+        },
+        {
+            "ans": "(a)(i) $\\dfrac{1}{3}$, (ii) $\\dfrac{8}{15}$, (b) $\\dfrac{7}{20}$, (c) $\\dfrac{5}{12}$",
+            "feedback": "In part (b), check the conditional fractions for Box B: with $2$ tokens transferred, the new total is $12$ tokens, giving branches $\\dfrac{5}{12}$, $\\dfrac{4}{12}$, and $\\dfrac{3}{12}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Order in Multi-Token Transfers",
+        "content": "When transferring two items of different colours, remember that the transfer can happen in either order ($RB$ or $BR$). Always include the permutation factor of $2$: $\\dfrac{6}{10} \\times \\dfrac{4}{9} \\times 2 = \\dfrac{48}{90} = \\dfrac{8}{15}$."
+    }
+},
+{
+    "id": "050273",
+    "group_id": "050271",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Sequential Events",
+    "subtopic": [
+        "Diagnostic Screening",
+        "Bayes' Theorem",
+        "Repeated Testing"
+    ],
+    "img": false,
+    "question": "An aircraft engine component is inspected using an automated ultrasound scanner to detect microscopic fatigue cracks.<br><br>From extensive historical testing, $3\\%$ of components entering the inspection bay possess a fatigue crack.<br>• For a component with a fatigue crack, the scanner correctly triggers an alarm with probability $0.98$.<br>• For a component with no fatigue crack, the scanner incorrectly triggers a false alarm with probability $0.04$.<br><br>A component is selected at random and scanned.<br><br><strong>(a)</strong> Find the probability that the scanner triggers an alarm.<br><br><strong>(b)</strong> Given that the scanner triggers an alarm, find the probability that the component actually possesses a fatigue crack. Give your answer to three significant figures.<br><br><strong>(c)</strong> Any component that triggers an alarm is immediately re-tested with a second, independent ultrasound scan. Assuming the scans are statistically independent, find the probability that the second scan also triggers an alarm.",
+    "steps": [
+        "<strong>(a) Probability scanner triggers an alarm:</strong><br><br>Let $C$ denote the event that a component has a crack, and $A_1$ denote an alarm on the first scan:\\begin{aligned} P(C) &= 0.03 \\cr P(C') &= 0.97 \\end{aligned}Using the law of total probability:\\begin{aligned} &P(A_1) \\cr &\\quad = P(C) P(A_1 \\mid C) \\cr &\\qquad + P(C') P(A_1 \\mid C') \\cr &\\quad = (0.03)(0.98) \\cr &\\qquad + (0.97)(0.04) \\cr &\\quad = 0.0294 + 0.0388 \\cr &\\quad = 0.0682 \\end{aligned}",
+        "<strong>(b) Probability component actually has a crack:</strong><br><br>Applying Bayes' theorem:\\begin{aligned} P(C \\mid A_1) &= \\dfrac{P(C \\cap A_1)}{P(A_1)} \\cr &= \\dfrac{0.0294}{0.0682} \\cr &= \\dfrac{294}{682} \\cr &= \\dfrac{147}{341} \\cr &\\approx 0.431 \\end{aligned}",
+        "<strong>(c) Probability of alarm on second scan:</strong><br><br>Conditioning on the updated probabilities from the first scan:\\begin{aligned} P(C \\mid A_1) &= \\dfrac{147}{341} \\cr P(C' \\mid A_1) &= \\dfrac{194}{341} \\end{aligned}Applying total probability for the second scan $A_2$:\\begin{aligned} &P(A_2 \\mid A_1) \\cr &\\quad = P(C \\mid A_1) P(A_2 \\mid C) \\cr &\\qquad + P(C' \\mid A_1) P(A_2 \\mid C') \\cr &\\quad = \\left(\\dfrac{147}{341}\\right)(0.98) \\cr &\\qquad + \\left(\\dfrac{194}{341}\\right)(0.04) \\cr &\\quad = \\dfrac{144.06 + 7.76}{341} \\cr &\\quad = \\dfrac{151.82}{341} \\cr &\\approx 0.445 \\end{aligned}",
+        "Final Answer: (a) $0.0682$, (b) $0.431$, (c) $0.445$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.0682$, (b) $0.980$, (c) $0.445$",
+            "feedback": "In part (b), $0.98$ is $P(A_1 \\mid C)$, the sensitivity of the scanner. You must evaluate the reverse conditional probability $P(C \\mid A_1) = \\dfrac{0.0294}{0.0682} \\approx 0.431$."
+        },
+        {
+            "ans": "(a) $0.0682$, (b) $0.431$, (c) $0.0682$",
+            "feedback": "In part (c), the component is already known to have triggered an alarm on scan 1. Its probability of being defective has jumped from $0.03$ to $0.431$, so the chance of a second alarm increases significantly."
+        },
+        {
+            "ans": "(a) $0.0294$, (b) $0.431$, (c) $0.445$",
+            "feedback": "In part (a), $0.0294$ only accounts for true alarms. You must also include false alarms: $0.0294 + (0.97 \\times 0.04) = 0.0682$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: The False Positive Paradox",
+        "content": "Even with $98\\%$ sensitivity and a low $4\\%$ false-alarm rate, only $43.1\\%$ of components triggering an alarm are genuinely defective. Because defects are rare ($3\\%$), the absolute number of false alarms exceeds true alarms."
+    }
+},
+{
+    "id": "050274",
+    "group_id": "050271",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Sequential Events",
+    "subtopic": [
+        "Two-Stage Tree Diagrams",
+        "Total Probability",
+        "Inverse Probability"
+    ],
+    "img": false,
+    "question": "At a charity fete, a game involves rolling a fair six-sided die to determine which prize box a player draws from:<br>• If the die lands on a $6$, the player draws one token from the Gold Box.<br>• If the die lands on any other number ($1$ to $5$), the player draws one token from the Silver Box.<br><br>The Gold Box contains $8$ winning tokens and $2$ losing tokens.<br>The Silver Box contains $3$ winning tokens and $7$ losing tokens.<br><br>A player rolls the die and draws a token from the designated box.<br><br><strong>(a)</strong> Find the probability that the player wins a prize.<br><br><strong>(b)</strong> Given that the player won a prize:<br>&emsp;<strong>(i)</strong> find the probability that the die landed on a $6$,<br>&emsp;<strong>(ii)</strong> find the probability that the die landed on a number less than $6$.",
+    "steps": [
+        "<strong>(a) Probability of winning a prize:</strong><br><br>The probabilities of choosing each box are:\\begin{aligned} P(G) &= \\dfrac{1}{6} \\cr P(S) &= \\dfrac{5}{6} \\end{aligned}By the law of total probability:\\begin{aligned} &P(W) \\cr &\\quad = P(G) P(W \\mid G) \\cr &\\qquad + P(S) P(W \\mid S) \\cr &\\quad = \\left(\\dfrac{1}{6} \\times \\dfrac{8}{10}\\right) \\cr &\\qquad + \\left(\\dfrac{5}{6} \\times \\dfrac{3}{10}\\right) \\cr &\\quad = \\dfrac{8}{60} + \\dfrac{15}{60} \\cr &\\quad = \\dfrac{23}{60} \\end{aligned}",
+        "<strong>(b)(i) Probability die was a $6$ given a win:</strong><br><br>Applying Bayes' theorem:\\begin{aligned} P(G \\mid W) &= \\dfrac{P(G \\cap W)}{P(W)} \\cr &= \\dfrac{8 / 60}{23 / 60} \\cr &= \\dfrac{8}{23} \\end{aligned}",
+        "<strong>(b)(ii) Probability die was less than $6$ given a win:</strong><br><br>Using the complement of landing on a $6$ given a win:\\begin{aligned} P(S \\mid W) &= 1 - P(G \\mid W) \\cr &= 1 - \\dfrac{8}{23} \\cr &= \\dfrac{15}{23} \\end{aligned}",
+        "Final Answer: (a) $\\dfrac{23}{60}$, (b)(i) $\\dfrac{8}{23}$, (ii) $\\dfrac{15}{23}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\dfrac{23}{60}$, (b)(i) $\\dfrac{8}{60}$, (ii) $\\dfrac{15}{23}$",
+            "feedback": "In part (b)(i), $\\dfrac{8}{60}$ is the joint probability $P(G \\cap W)$. The conditional probability requires dividing by the winning probability $P(W) = \\dfrac{23}{60}$."
+        },
+        {
+            "ans": "(a) $\\dfrac{11}{20}$, (b)(i) $\\dfrac{8}{23}$, (ii) $\\dfrac{15}{23}$",
+            "feedback": "In part (a), you weighted the two boxes equally ($\\dfrac{1}{2}$ each). The die roll gives probability $\\dfrac{1}{6}$ for the Gold Box and $\\dfrac{5}{6}$ for the Silver Box."
+        },
+        {
+            "ans": "(a) $\\dfrac{23}{60}$, (b)(i) $\\dfrac{8}{23}$, (ii) $\\dfrac{5}{6}$",
+            "feedback": "In part (b)(ii), $\\dfrac{5}{6}$ is the unconditioned prior probability $P(S)$. Knowing that the player won alters the probability to $P(S \\mid W) = \\dfrac{15}{23}$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Complementary Posteriors",
+        "content": "In part (b)(ii), do not recalculate Bayes' formula from scratch. Because the game only uses two boxes (Gold and Silver), the posterior probabilities must sum to $1$: $P(S \\mid W) = 1 - P(G \\mid W) = 1 - \\dfrac{8}{23} = \\dfrac{15}{23}$."
+    }
+},
+{
+    "id": "050275",
+    "group_id": "050271",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability",
+    "topic": "Sequential Events",
+    "subtopic": [
+        "Algebraic Probability",
+        "Sampling Without Replacement",
+        "Conditional Selection"
+    ],
+    "img": false,
+    "question": "A bag contains $n$ counters, of which $4$ are red and the remainder are yellow.<br>Two counters are drawn at random from the bag, one after the other, without replacement.<br><br><strong>(a)</strong> Show that the probability that both counters drawn are red is $\\dfrac{12}{n(n - 1)}$.<br><br><strong>(b)</strong> Given that the probability that both counters drawn are red is $\\dfrac{2}{15}$:<br>&emsp;<strong>(i)</strong> show that $n^2 - n - 90 = 0$,<br>&emsp;<strong>(ii)</strong> hence deduce the total number of counters in the bag, and state the number of yellow counters.<br><br><strong>(c)</strong> Using the total number of counters found in part <strong>(b)</strong>, three counters are now drawn at random one after the other without replacement.<br>Find the probability that:<br>&emsp;<strong>(i)</strong> the third counter drawn is red, given that the first two counters drawn were yellow,<br>&emsp;<strong>(ii)</strong> exactly one red counter is drawn in the three selections.",
+    "steps": [
+        "<strong>(a) Showing $P(RR) = \\dfrac{12}{n(n - 1)}$:</strong><br><br>Sampling without replacement:\\begin{aligned} P(RR) &= \\dfrac{4}{n} \\times \\dfrac{3}{n - 1} \\cr &= \\dfrac{12}{n(n - 1)} \\end{aligned}",
+        "<strong>(b)(i) Forming the quadratic equation:</strong><br><br>Setting the probability equal to $\\dfrac{2}{15}$:\\begin{aligned} &\\dfrac{12}{n^2 - n} = \\dfrac{2}{15} \\cr &12 \\times 15 = 2(n^2 - n) \\cr &180 = 2n^2 - 2n \\cr &2n^2 - 2n - 180 = 0 \\cr &n^2 - n - 90 = 0 \\end{aligned}",
+        "<strong>(b)(ii) Finding $n$ and yellow counters:</strong><br><br>Factorising the quadratic:\\begin{aligned} (n - 10)(n + 9) = 0 \\end{aligned}Since $n > 0$, we reject $n = -9$:\\begin{aligned} n = 10 \\end{aligned}The number of yellow counters is:\\begin{aligned} 10 - 4 = 6 \\end{aligned}",
+        "<strong>(c)(i) Conditional probability for third counter:</strong><br><br>Given that the first two counters drawn were yellow, $4$ red and $4$ yellow counters remain out of $8$ counters:\\begin{aligned} &P(R_3 \\mid Y_1 \\cap Y_2) \\cr &\\quad = \\dfrac{4}{8} \\cr &\\quad = \\dfrac{1}{2} \\cr &\\quad = 0.5 \\end{aligned}",
+        "<strong>(c)(ii) Exactly one red counter in three draws:</strong><br><br>The single red counter can be drawn in three mutually exclusive positions ($RYY$, $YRY$, or $YYR$):\\begin{aligned} &P(RYY) \\cr &\\quad = \\dfrac{4}{10} \\times \\dfrac{6}{9} \\times \\dfrac{5}{8} \\cr &\\quad = \\dfrac{120}{720} \\cr &\\quad = \\dfrac{1}{6} \\end{aligned}Since all three orders have equal probability:\\begin{aligned} &P(\\text{exactly } 1R) \\cr &\\quad = 3 \\times \\dfrac{1}{6} \\cr &\\quad = \\dfrac{1}{2} \\cr &\\quad = 0.5 \\end{aligned}",
+        "Final Answer: (a) $\\dfrac{12}{n(n - 1)}$, (b)(i) $n^2 - n - 90 = 0$, (ii) $10$ counters ($6$ yellow), (c)(i) $0.5$, (ii) $0.5$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $\\dfrac{12}{n(n - 1)}$, (b)(i) $n^2 - n - 90 = 0$, (ii) $10$ counters ($6$ yellow), (c)(i) $0.5$, (ii) $\\dfrac{1}{6}$",
+            "feedback": "In part (c)(ii), $\\dfrac{1}{6}$ accounts for only one specific sequence ($RYY$). The red counter can be first, second, or third, so you must multiply by $3$ to give $\\dfrac{3}{6} = 0.5$."
+        },
+        {
+            "ans": "(a) $\\dfrac{12}{n(n - 1)}$, (b)(i) $n^2 - n - 90 = 0$, (ii) $9$ counters ($5$ yellow), (c)(i) $0.5$, (ii) $0.5$",
+            "feedback": "In part (b)(ii), solving $(n - 10)(n + 9) = 0$ gives $n = 10$. The total number of counters must be positive, so $n = 10$, leaving $6$ yellow counters."
+        },
+        {
+            "ans": "(a) $\\dfrac{12}{n(n - 1)}$, (b)(i) $n^2 - n - 90 = 0$, (ii) $10$ counters ($6$ yellow), (c)(i) $0.4$, (ii) $0.5$",
+            "feedback": "In part (c)(i), knowing that two yellow counters were removed leaves $8$ counters in total, of which $4$ are red: $\\dfrac{4}{8} = 0.5$, not $\\dfrac{4}{10} = 0.4$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Direct Sub-population Conditioning",
+        "content": "For part (c)(i), never set up a complicated Bayes formula when the history is already completely known. If the first two draws were yellow, simply remove two yellow counters from the bag. You are left with $4$ red and $4$ yellow, making the probability $\\dfrac{4}{8} = 0.5$ immediately."
+    }
 }
 ];
