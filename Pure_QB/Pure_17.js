@@ -384,5 +384,49 @@ window.ALEVEL_QUESTIONS = [
         "content": "When deposits are made at the beginning of each year, every deposit receives interest at the end of that year. This means the first term of your geometric series is $1000(1.05) = 1050$ instead of $1000$. Paying attention to this detail is the key to setting up your series correctly."
     }
 },
+{
+    "id": "004810",
+    "group_id": "004806",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Sequences and Series",
+    "subtopic": [
+        "Geometric Progressions",
+        "Quadratic Equations",
+        "Financial Modelling"
+    ],
+    "img": false,
+    "question": "<strong>Section (a)</strong><br><br><strong>(i)</strong> The first three terms of a geometric progression are $x - 1$, $x + 2$, and $3x$, where $x > 1$. Show that:$$2x^2 - 7x - 4 = 0$$and hence deduce that $x = 4$.<br><br><strong>(ii)</strong> Write down the common ratio, $r$, and the first term, $a$, of this progression.<br><br><strong>(iii)</strong> Find the sum of the first $10$ terms of this progression.<br><br><strong>Section (b)</strong><br><br>A person borrows £10,000 to purchase a car. The loan is subject to compound interest at a rate of 5% per annum, which is calculated and added to the outstanding balance at the end of each year. Immediately after the interest is added at the end of each year, a fixed annual repayment of £1,200 is made.<br><br><strong>(i)</strong> Show that the amount owed at the end of Year 2 is £8,565.<br><br><strong>(ii)</strong> Form and sum a geometric series to prove that the amount owed, £$A_n$, at the end of $n$ years is given by:$$A_n = 24000 - 14000(1.05^n)$$<strong>(iii)</strong> Hence, find the least number of years required to completely pay off the loan.",
+    "steps": [
+        "<strong>Section (a)</strong><br><br><strong>Part (i):</strong> Since the terms $x - 1$, $x + 2$, and $3x$ form a geometric progression, the ratio between consecutive terms must be constant:\\begin{aligned} &\\dfrac{ x + 2 }{ x - 1 } = \\dfrac{ 3x }{ x + 2 } \\cr &(x + 2)^2 = 3x(x - 1) \\cr &x^2 + 4x + 4 = 3x^2 - 3x \\cr &2x^2 - 7x - 4 = 0 \\end{aligned}Factorise this quadratic equation:\\begin{aligned} &(2x + 1)(x - 4) = 0 \\end{aligned}This gives $x = -\\dfrac{ 1 }{ 2 }$ or $x = 4$. Since $x > 1$, we reject the negative root. Thus, $x = 4$.",
+        "<strong>Part (ii):</strong> Substitute $x = 4$ to evaluate the first term $a$ and common ratio $r$:\\begin{aligned} &a = 4 - 1 \\cr &\\phantom{a} = 3 \\cr &r = \\dfrac{ 4 + 2 }{ 4 - 1 } \\cr &\\phantom{r} = \\dfrac{ 6 }{ 3 } \\cr &\\phantom{r} = 2 \\end{aligned}Thus, $a = 3$ and $r = 2$.",
+        "<strong>Part (iii):</strong> Calculate the sum of the first $10$ terms using the geometric sum formula with $a = 3$ and $r = 2$:\\begin{aligned} &S_{10} \\cr &\\quad = \\dfrac{ a(r^{10} - 1) }{ r - 1 } \\cr &\\quad = \\dfrac{ 3(2^{10} - 1) }{ 2 - 1 } \\cr &\\quad = 3(1024 - 1) \\cr &\\quad = 3(1023) \\cr &\\quad = 3069 \\end{aligned}",
+        "<strong>Section (b)</strong><br><br><strong>Part (i):</strong> Interest is added at the end of each year at 5% (multiplier $1.05$), followed immediately by a repayment of £$1200$:<br><br>• End of Year 1:\\begin{aligned} &\\text{Balance} \\cr &\\quad = 10000(1.05) - 1200 \\cr &\\quad = 10500 - 1200 \\cr &\\quad = 9300 \\end{aligned}<br>• End of Year 2:\\begin{aligned} &\\text{Balance} \\cr &\\quad = 9300(1.05) - 1200 \\cr &\\quad = 9765 - 1200 \\cr &\\quad = 8565 \\end{aligned}Thus, the amount owed at the end of Year 2 is £8,565.",
+        "<strong>Part (ii):</strong> Expanding the balance year by year reveals the structure of the remaining debt:\\begin{aligned} &A_n = 10000(1.05)^n \\cr &\\qquad - [1200(1.05)^{ n-1 } \\cr &\\qquad\\quad + 1200(1.05)^{ n-2 } \\cr &\\qquad\\quad + \\dots + 1200] \\end{aligned}The repayments form a geometric series with first term $1200$, common ratio $1.05$, and $n$ terms. Sum this series:\\begin{aligned} &\\text{Sum} \\cr &\\quad = \\dfrac{ 1200(1.05^n - 1) }{ 1.05 - 1 } \\cr &\\quad = \\dfrac{ 1200(1.05^n - 1) }{ 0.05 } \\cr &\\quad = 24000(1.05^n - 1) \\end{aligned}Substitute this into the expression for $A_n$:\\begin{aligned} &A_n = 10000(1.05^n) \\cr &\\qquad - 24000(1.05^n - 1) \\cr &A_n = 10000(1.05^n) \\cr &\\qquad - 24000(1.05^n) + 24000 \\cr &A_n = 24000 - 14000(1.05^n) \\end{aligned}",
+        "<strong>Part (iii):</strong> The loan is completely paid off when the outstanding balance is less than or equal to zero ($A_n \\le 0$):\\begin{aligned} &24000 - 14000(1.05^n) \\le 0 \\cr &14000(1.05^n) \\ge 24000 \\cr &1.05^n \\ge \\dfrac{ 24000 }{ 14000 } \\cr &1.05^n \\ge \\dfrac{ 12 }{ 7 } \\end{aligned}Taking natural logarithms of both sides:\\begin{aligned} &n \\ln(1.05) \\ge \\ln\\left( \\dfrac{ 12 }{ 7 } \\right) \\cr &n \\ge \\dfrac{ \\ln(1.7143) }{ \\ln(1.05) } \\cr &n \\ge 11.05 \\end{aligned}Evaluating the balance at integer years:<br><br>• At $n = 11$, $A_{11} = 24000 - 14000(1.05^{11}) \\approx £55.25 > 0$, so the debt remains.<br><br>• At $n = 12$, $A_{12} = 24000 - 14000(1.05^{12}) \\le 0$, so the debt is cleared.<br><br>Thus, the least number of years required is $12\\text{ years}$.",
+        "Final Answer: <strong>Section (a) (ii)</strong> $a = 3,\\text{ }r = 2$, <strong>(iii)</strong> $S_{10} = 3069$<br><strong>Section (b) (iii)</strong> $12\\text{ years}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>Section (a) (ii)</strong> $a = 3,\\text{ }r = 2$, <strong>(iii)</strong> $S_{10} = 3069$<br><strong>Section (b) (iii)</strong> $11\\text{ years}$",
+            "feedback": "This error occurs in part (b)(iii) if you incorrectly round down your decimal value of $n \\ge 11.05$ to $11$. At $11$ years, the outstanding debt is $24000 - 14000(1.05^{11}) \\approx £55.25$, which means the loan is not yet cleared. You must round up to the next integer, which is $12$."
+        },
+        {
+            "ans": "<strong>Section (a) (ii)</strong> $a = 3,\\text{ }r = 2$, <strong>(iii)</strong> $S_{10} = 1023$<br><strong>Section (b) (iii)</strong> $12\\text{ years}$",
+            "feedback": "Your part (b) calculation is correct. However, this error occurs in Section (a)(iii) if you omitted the first term $a = 3$ when using the sum formula, evaluating $\\dfrac{ 2^{10} - 1 }{ 2 - 1 } = 1023$ instead of multiplying by $a$."
+        },
+        {
+            "ans": "<strong>Section (a) (ii)</strong> $a = 3,\\text{ }r = 2$, <strong>(iii)</strong> $S_{10} = 3069$<br><strong>Section (b) (iii)</strong> $16\\text{ years}$",
+            "feedback": "Your Section (a) calculations are correct. In Section (b)(iii), this error occurs if you set up the series sum incorrectly by shifting the powers of $(1.05)$ or using an incorrect first term of $1200(1.05) = 1260$, which distorts the coefficient of the exponential term."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Reducing Balances and Negative Exponents",
+        "content": "In loan repayment models, the compound interest works against the borrower while regular repayments work for them. When setting up $A_n \\le 0$, students often flip the inequality sign incorrectly when dividing by negative coefficients. Always ensure the balance decreases each year and verify your boundary values directly."
+    }
+}
 
 ];
