@@ -1104,7 +1104,7 @@ window.ALEVEL_QUESTIONS = [
     "steps": [
         "<strong>(a) Combined mass of one bolt and one nut:</strong><br><br>Let $T = B + N$:\\begin{aligned} \\text{E}(T) &= 45.0 + 22.0 \\cr &= 67.0\\text{ g} \\end{aligned}Since $B$ and $N$ are independent, add their variances:\\begin{aligned} \\text{Var}(T) &= 1.8^2 + 1.2^2 \\cr &= 3.24 + 1.44 \\cr &= 4.68 \\end{aligned}So $T \\sim \\text{N}(67.0, 4.68)$. Standardising for $T > 70.0$:\\begin{aligned} P(T > 70.0) &= 1 - \\Phi\\left(\\dfrac{70 - 67}{\\sqrt{4.68}}\\right) \\cr &= 1 - \\Phi(1.387) \\cr &= 1 - 0.9173 \\cr &= 0.0827 \\end{aligned}",
         "<strong>(b) Total mass of a trade pack:</strong><br><br>Let $W = \\sum_{i=1}^{10} B_i + \\sum_{i=1}^{10} N_i + C$:\\begin{aligned} \\text{E}(W) &= 10(45) + 10(22) \\cr &\\quad + 60 \\cr &= 730\\text{ g} \\end{aligned}For the variance, sum the individual variances:\\begin{aligned} \\text{Var}(W) &= 10(1.8^2) \\cr &\\quad + 10(1.2^2) \\cr &\\quad + 4.0^2 \\cr &= 32.4 + 14.4 \\cr &\\quad + 16.0 \\cr &= 62.8 \\end{aligned}Standardising for $W > 740$:\\begin{aligned} P(W > 740) &= 1 - \\Phi\\left(\\dfrac{740 - 730}{\\sqrt{62.8}}\\right) \\cr &= 1 - \\Phi(1.262) \\cr &= 1 - 0.8965 \\cr &= 0.1035 \\end{aligned}",
-        "<strong>(c) Bolt mass more than twice nut mass:</strong><br><br>We require $P(B > 2N)$, which rearranges to $P(B - 2N > 0)$.<br><br>Let $D = B - 2N$:\\begin{aligned} \\text{E}(D) &= 45 - 2(22) \\cr &= 1\\text{ g} \\end{aligned}Applying the linear variance rule $\\text{Var}(aX + bY) = a^2\\text{Var}(X) + b^2\\text{Var}(Y)$:\\begin{aligned} \\text{Var}(D) &= 1.8^2 + (-2)^2(1.2^2) \\cr &= 3.24 + 4(1.44) \\cr &= 3.24 + 5.76 \\cr &= 9.0 \\end{aligned}So $\\sigma_D = \\sqrt{9.0} = 3.0$. Standardising for $D > 0$:\\begin{aligned} P(D > 0) &= P\\left(Z > \\dfrac{0 - 1}{3.0}\\right) \\cr &= P(Z > -0.333) \\cr &= \\Phi(0.333) \\cr &= 0.6305 \\end{aligned}",
+        "<strong>(c) Bolt mass more than twice nut mass:</strong><br><br>We require $P(B > 2N)$, which rearranges to $P(B - 2N > 0)$.<br><br>Let $D = B - 2N$:\\begin{aligned} \\text{E}(D) &= 45 - 2(22) \\cr &= 1\\text{ g} \\end{aligned}Applying the linear variance rule $$\\text{Var}(aX + bY)$$ $$= a^2\\text{Var}(X) + b^2\\text{Var}(Y)$$:\\begin{aligned} \\text{Var}(D) &= 1.8^2 + (-2)^2(1.2^2) \\cr &= 3.24 + 4(1.44) \\cr &= 3.24 + 5.76 \\cr &= 9.0 \\end{aligned}So $\\sigma_D = \\sqrt{9.0} = 3.0$. Standardising for $D > 0$:\\begin{aligned} P(D > 0) &= P\\left(Z > \\dfrac{0 - 1}{3.0}\\right) \\cr &= P(Z > -0.333) \\cr &= \\Phi(0.333) \\cr &= 0.6305 \\end{aligned}",
         "Final Answer: (a) $0.0827$, (b) $0.1035$, (c) $0.6305$"
     ],
     "pi_options": [
@@ -1229,7 +1229,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "The external diameter, $D\\text{ mm}$, of precision ball bearings produced by an automated lathe is modelled by a normal distribution with mean $\\mu = 15.00\\text{ mm}$ and standard deviation $\\sigma = 0.08\\text{ mm}$.<br><br><strong>(a)</strong> Find the probability that a randomly selected ball bearing has a diameter within $0.10\\text{ mm}$ of the target mean.<br><br><strong>(b)</strong> Bearings are considered acceptable for aerospace use if their diameter lies within the symmetric tolerance interval $[15.00 - k, 15.00 + k]$. Given that $98\\%$ of the manufactured bearings are acceptable, determine the value of $k$ to three significant figures.<br><br><strong>(c)</strong> A random sample of $n$ ball bearings is selected from the production line. Find the minimum sample size, $n$, required such that the probability that the sample mean diameter $\\bar{D}$ lies within $0.02\\text{ mm}$ of the true population mean is at least $0.95$.",
     "steps": [
-        "<strong>(a) Probability within $0.10\\text{ mm}$ of the mean:</strong><br><br>We require $P(14.90 < D < 15.10)$:\\begin{aligned} z &= \\dfrac{0.10}{0.08} \\cr &= 1.25 \\end{aligned}Using the symmetry of the standard normal distribution:\\begin{aligned} P(-1.25 < Z < 1.25) &= 2\\Phi(1.25) - 1 \\cr &= 2(0.8944) - 1 \\cr &= 1.7888 - 1 \\cr &= 0.7888 \\end{aligned}",
+        "<strong>(a) Probability within $0.10\\text{ mm}$ of the mean:</strong><br><br>We require $P(14.90 < D < 15.10)$:\\begin{aligned} z &= \\dfrac{0.10}{0.08} \\cr &= 1.25 \\end{aligned}Using the symmetry of the standard normal distribution:\\begin{aligned} & P(-1.25 < Z < 1.25) \\cr & \\qquad= 2\\Phi(1.25) - 1 \\cr & \\qquad= 2(0.8944) - 1 \\cr & \\qquad= 1.7888 - 1 \\cr & \\qquad= 0.7888 \\end{aligned}",
         "<strong>(b) Finding tolerance limit $k$ for $98\\%$ acceptability:</strong><br><br>A central area of $0.98$ leaves $0.01$ in each tail, so $\\Phi(z) = 0.99$:\\begin{aligned} z = 2.326 \\end{aligned}Relating $z$ to $k$:\\begin{aligned} \\dfrac{k}{0.08} &= 2.326 \\cr k &= 2.326 \\times 0.08 \\cr &= 0.18608 \\cr &\\approx 0.186\\text{ mm} \\end{aligned}",
         "<strong>(c) Determining minimum sample size $n$:</strong><br><br>The sample mean follows $\\bar{D} \\sim \\text{N}\\left(15.00, \\dfrac{0.08^2}{n}\\right)$. We require:\\begin{aligned} P(|\\bar{D} - 15.00| < 0.02) \\ge 0.95 \\end{aligned}Standardising the boundary:\\begin{aligned} z = \\dfrac{0.02}{0.08 / \\sqrt{n}} \\end{aligned}For a central probability of $0.95$, the critical $z$-value is $1.96$:\\begin{aligned} \\dfrac{0.02}{0.08 / \\sqrt{n}} &\\ge 1.96 \\cr 0.25\\sqrt{n} &\\ge 1.96 \\cr \\sqrt{n} &\\ge \\dfrac{1.96}{0.25} \\cr \\sqrt{n} &\\ge 7.84 \\cr n &\\ge 7.84^2 \\cr n &\\ge 61.4656 \\end{aligned}Since $n$ must be an integer, the minimum sample size is:\\begin{aligned} n = 62 \\end{aligned}",
         "Final Answer: (a) $0.7888$, (b) $k = 0.186\\text{ mm}$, (c) $n = 62$"
@@ -1251,7 +1251,212 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Always Round Sample Sizes Up",
-        "content": "Whenever solving an inequality for sample size ($n \\ge 61.47$), you must always round *up* to the next integer, regardless of decimal size. Choosing $n = 61$ would fail the specification, making $n = 62$ the true minimum required sample."
+        "content": "Whenever solving an inequality for sample size ($n \\ge 61.47$), you must always round up to the next integer, regardless of decimal size. Choosing $n = 61$ would fail the specification, making $n = 62$ the true minimum required sample."
+    }
+},
+{
+    "id": "050281",
+    "group_id": "050281",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "At Least One Probability",
+        "One-Tailed Hypothesis Testing",
+        "Test Improvement"
+    ],
+    "img": false,
+    "question": "A software company has established that $30\\%$ of users who register for a free trial of an application upgrade to a paid subscription within their first month.<br><br>A random sample of $12$ new trial users is selected.<br><br><strong>(a)</strong> Calculate the probability that at least one of these $12$ users upgrades to a paid subscription within their first month.<br><br>Following the introduction of an interactive onboarding tutorial, the head of product believes that the proportion of users upgrading to a paid subscription has increased.<br><br>A random sample of $12$ new trial users who completed the interactive tutorial is selected. It is found that $7$ of them upgraded to a paid subscription within their first month.<br><br><strong>(b)</strong> Stating your hypotheses clearly, carry out a hypothesis test at the $5\\%$ level of significance to determine whether there is evidence to support the head of product's belief.<br><br><strong>(c)</strong> Suggest one way in which the design of this statistical test could be improved.",
+    "steps": [
+        "<strong>(a) Probability of at least one upgrade:</strong><br><br>Let $X \\sim \\text{B}(12, 0.30)$ denote the number of users upgrading. Using the complement of zero upgrades:\\begin{aligned} P(X \\ge 1) &= 1 - P(X = 0) \\cr &= 1 - (1 - 0.30)^{12} \\cr &= 1 - (0.70)^{12} \\cr &= 1 - 0.01384 \\cr &= 0.9862 \\end{aligned}",
+        "<strong>(b) Hypothesis test:</strong><br><br>State the null and alternative hypotheses, where $p$ is the true population upgrade proportion:\\begin{aligned} &H_0: p = 0.30 \\cr &H_1: p > 0.30 \\end{aligned}Under $H_0$, the test distribution is $X \\sim \\text{B}(12, 0.30)$.<br><br>Calculate the probability of observing $7$ or more upgrades (the upper tail):\\begin{aligned} P(X \\ge 7) &= 1 - P(X \\le 6) \\cr &= 1 - 0.9614 \\cr &= 0.0386 \\end{aligned}Comparing to the significance level $\\alpha = 0.05$:\\begin{aligned} 0.0386 < 0.05 \\end{aligned}Because the $p$-value is less than $0.05$, we reject $H_0$.<br><br>There is significant evidence at the $5\\%$ level to support the head of product's belief that the upgrade proportion has increased.",
+        "<strong>(c) Improving the test design:</strong><br><br>Use a larger sample size ($n > 12$). A larger sample increases the statistical power of the test, reduces the probability of a Type II error, and decreases the granularity of the discrete binomial distribution.",
+        "Final Answer: (a) $0.9862$, (b) Reject $H_0$ as $0.0386 < 0.05$, (c) Increase sample size"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $0.9862$, (b) Do not reject $H_0$ as $0.0386 < 0.05$, (c) Increase sample size",
+            "feedback": "In part (b), when the $p$-value ($0.0386$) is less than the significance level ($0.05$), the decision rule is to reject $H_0$, not accept it."
+        },
+        {
+            "ans": "(a) $0.0138$, (b) Reject $H_0$ as $0.0386 < 0.05$, (c) Increase sample size",
+            "feedback": "In part (a), $0.0138$ is $P(X = 0)$. To find the probability of at least one upgrade, you must subtract this from $1$."
+        },
+        {
+            "ans": "(a) $0.9862$, (b) Do not reject $H_0$ as $0.0792 > 0.05$, (c) Decrease sample size",
+            "feedback": "In part (b), $P(X \\ge 7) = 1 - P(X \\le 6) = 0.0386$. In part (c), decreasing the sample size would increase error rates rather than improving the test."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: P-Value vs Critical Region Decision",
+        "content": "In a one-tailed upper test, you reject $H_0$ if $P(X \\ge x) \\le \\alpha$. Here, $P(X \\ge 7) = 0.0386$, which is strictly less than $0.05$, placing the observation $7$ firmly inside the critical region."
+    }
+},
+{
+    "id": "050282",
+    "group_id": "050281",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "Lower-Tail Hypothesis Testing",
+        "Critical Region",
+        "Type I Error"
+    ],
+    "img": false,
+    "question": "A manufacturing process produces microchips, of which historically $15\\%$ have minor cosmetic defects.<br><br>An engineering team introduces an upgraded laser-cutting tool intended to reduce the proportion of defective microchips. A random sample of $20$ microchips produced using the new tool is inspected, and exactly $1$ microchip is found to have a defect.<br><br><strong>(a)</strong> Stating your hypotheses clearly, test at the $5\\%$ significance level whether there is evidence that the new tool has reduced the defect rate.<br><br><strong>(b)</strong> Determine the critical region for this test at the $5\\%$ level of significance.<br><br><strong>(c)</strong> State the probability of committing a Type I error in this test.",
+    "steps": [
+        "<strong>(a) Lower-tail hypothesis test:</strong><br><br>State the hypotheses, where $p$ represents the true defect rate:\\begin{aligned} &H_0: p = 0.15 \\cr &H_1: p < 0.15 \\end{aligned}Under $H_0$, $X \\sim \\text{B}(20, 0.15)$, where $X$ is the number of defective microchips.<br><br>Calculate the probability of observing $1$ or fewer defects:\\begin{aligned} P(X = 0) &= (0.85)^{20} \\cr &\\approx 0.0388 \\end{aligned}\\begin{aligned} P(X = 1) &= 20(0.15)(0.85)^{19} \\cr &\\approx 0.1368 \\end{aligned}Summing these probabilities:\\begin{aligned} P(X \\le 1) &= 0.0388 + 0.1368 \\cr &= 0.1756 \\end{aligned}Comparing to the significance level $\\alpha = 0.05$:\\begin{aligned} 0.1756 > 0.05 \\end{aligned}Because $0.1756 > 0.05$, we do not reject $H_0$.<br><br>There is insufficient evidence at the $5\\%$ level to conclude that the new tool has reduced the defect rate.",
+        "<strong>(b) Determining the critical region:</strong><br><br>We find the values in the lower tail where the cumulative probability is less than or equal to $0.05$:\\begin{aligned} P(X = 0) &= 0.0388 \\le 0.05 \\cr P(X \\le 1) &= 0.1756 > 0.05 \\end{aligned}Therefore, the critical region is:\\begin{aligned} X = 0 \\end{aligned}",
+        "<strong>(c) Probability of a Type I error:</strong><br><br>A Type I error occurs when $H_0$ is rejected despite being true. This equals the probability of falling into the critical region under $H_0$:\\begin{aligned} P(X = 0) = 0.0388 \\quad (3.88\\%) \\end{aligned}",
+        "Final Answer: (a) Do not reject $H_0$ as $0.1756 > 0.05$, (b) $X = 0$, (c) $0.0388$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) Reject $H_0$ as $0.1756 > 0.05$, (b) $X = 0$, (c) $0.0388$",
+            "feedback": "In part (a), when the $p$-value ($0.1756$) is greater than the significance level ($0.05$), the evidence is not strong enough to reject $H_0$."
+        },
+        {
+            "ans": "(a) Do not reject $H_0$ as $0.1756 > 0.05$, (b) $X \\le 1$, (c) $0.0388$",
+            "feedback": "In part (b), $P(X \\le 1) = 0.1756$, which is greater than $0.05$. Therefore, $X = 1$ cannot be part of the critical region at the $5\\%$ level."
+        },
+        {
+            "ans": "(a) Do not reject $H_0$ as $0.1756 > 0.05$, (b) $X = 0$, (c) $0.0500$",
+            "feedback": "In part (c), for a discrete distribution the probability of a Type I error is the actual significance level ($P(X = 0) = 0.0388$), not the nominal $0.05$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Critical Regions in Small Discrete Samples",
+        "content": "Notice how strict the critical region becomes with $n = 20$ and $p = 0.15$. Only $X = 0$ achieves a cumulative probability below $0.05$. Observing even a single defect ($X = 1$) pushes the cumulative probability to $0.1756$, falling well outside the rejection zone."
+    }
+},
+{
+    "id": "050283",
+    "group_id": "050281",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "Two-Tailed Hypothesis Testing",
+        "Asymmetric Critical Regions",
+        "Actual Significance Level"
+    ],
+    "img": false,
+    "question": "A plant geneticist investigates the inheritance of flower colour in a hybrid cross of sweet peas. Under standard genetic theory, the expected proportion of plants bearing purple flowers is $0.75$.<br><br>The geneticist suspects that environmental factors in a new greenhouse may be altering this inheritance ratio. A random sample of $20$ plants is grown in the greenhouse, and $11$ of them produce purple flowers.<br><br><strong>(a)</strong> State suitable null and alternative hypotheses to test whether the true proportion of plants producing purple flowers differs from $0.75$.<br><br><strong>(b)</strong> Test, at the $5\\%$ level of significance, whether there is evidence that the proportion of purple-flowered plants differs from $0.75$.<br><br><strong>(c)</strong> Determine the critical region for this two-tailed test, allocating as close to $2.5\\%$ as possible to each tail, and state the actual significance level of the test.",
+    "steps": [
+        "<strong>(a) Hypotheses:</strong><br><br>Where $p$ is the true proportion of plants with purple flowers:\\begin{aligned} &H_0: p = 0.75 \\cr &H_1: p \\neq 0.75 \\end{aligned}",
+        "<strong>(b) Two-tailed hypothesis test:</strong><br><br>Under $H_0$, $X \\sim \\text{B}(20, 0.75)$, where $X$ is the number of purple-flowered plants.<br><br>Because the observed value $x = 11$ is less than the expected mean $\\text{E}(X) = 20(0.75) = 15$, we evaluate the lower tail:\\begin{aligned} P(X \\le 11) \\end{aligned}Letting $Y = 20 - X \\sim \\text{B}(20, 0.25)$ denote non-purple plants:\\begin{aligned} P(X \\le 11) &= P(Y \\ge 9) \\cr &= 1 - P(Y \\le 8) \\cr &= 1 - 0.9591 \\cr &= 0.0409 \\end{aligned}For a two-tailed test, double the one-tailed probability to find the $p$-value:\\begin{aligned} p\\text{-value} &= 2 \\times 0.0409 \\cr &= 0.0818 \\end{aligned}Comparing to $\\alpha = 0.05$:\\begin{aligned} 0.0818 > 0.05 \\end{aligned}Because the $p$-value exceeds $0.05$, we do not reject $H_0$.<br><br>There is insufficient evidence at the $5\\%$ level to suggest that the proportion differs from $0.75$.",
+        "<strong>(c) Determining the critical region:</strong><br><br>We allocate up to $0.025$ to each tail.<br><br>For the lower tail:\\begin{aligned} P(X \\le 10) &= P(Y \\ge 10) \\cr &= 1 - 0.9861 \\cr &= 0.0139 \\le 0.025 \\cr P(X \\le 11) &= 0.0409 > 0.025 \\end{aligned}So the lower critical region is $X \\le 10$.<br><br>For the upper tail:\\begin{aligned} P(X \\ge 19) &= P(Y \\le 1) \\cr &= 0.0243 \\le 0.025 \\cr P(X \\ge 18) &= P(Y \\le 2) \\cr &= 0.0913 > 0.025 \\end{aligned}So the upper critical region is $X \\ge 19$.<br><br>The combined critical region is:\\begin{aligned} X \\le 10 \\quad \\text{or} \\quad X \\ge 19 \\end{aligned}Summing the two tails gives the actual significance level:\\begin{aligned} \\text{Actual level} &= 0.0139 + 0.0243 \\cr &= 0.0382 \\quad (3.82\\%) \\end{aligned}",
+        "Final Answer: (a) $H_0: p = 0.75$, $H_1: p \\neq 0.75$, (b) Do not reject $H_0$, (c) $X \\le 10$ or $X \\ge 19$, and $0.0382$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $H_0: p = 0.75$, $H_1: p \\neq 0.75$, (b) Reject $H_0$, (c) $X \\le 10$ or $X \\ge 19$, and $0.0382$",
+            "feedback": "In part (b), you compared the single-tail probability $0.0409$ to $0.05$ instead of doubling it for a two-tailed test ($2 \\times 0.0409 = 0.0818 > 0.05$)."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.75$, $H_1: p < 0.75$, (b) Do not reject $H_0$, (c) $X \\le 10$ or $X \\ge 19$, and $0.0382$",
+            "feedback": "In part (a), the question asks whether the proportion *differs* from $0.75$, which specifies a two-tailed alternative hypothesis $H_1: p \\neq 0.75$."
+        },
+        {
+            "ans": "(a) $H_0: p = 0.75$, $H_1: p \\neq 0.75$, (b) Do not reject $H_0$, (c) $X \\le 11$ or $X \\ge 18$, and $0.0500$",
+            "feedback": "In part (c), $P(X \\le 11) = 0.0409 > 0.025$, so $11$ cannot be in the lower critical region. The actual significance level is $0.0139 + 0.0243 = 0.0382$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Doubling P-Values for Two-Tailed Tests",
+        "content": "When evaluating a two-tailed binomial hypothesis using the $p$-value method, you must double the single tail probability: $p\\text{-value} = 2 \\times P(X \\le 11) = 0.0818$. Alternatively, compare the single-tail probability directly to half the significance level: $0.0409 > 0.025$."
+    }
+},
+{
+    "id": "050284",
+    "group_id": "050281",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "Sample Size Inequalities",
+        "Logarithmic Solving",
+        "High-Significance Testing"
+    ],
+    "img": false,
+    "question": "The probability that an automated smoke detector triggers an audible alarm during a fire incident is $0.85$.<br><br><strong>(a)</strong> Find the minimum number of independent detectors, $n$, that must be installed in an auditorium to ensure that the probability that at least one detector triggers an alarm during an incident is greater than $0.999$.<br><br><strong>(b)</strong> A safety equipment manufacturer claims that an upgraded optical sensor has an alarm activation rate greater than $0.85$. In a trial of $25$ simulated fire incidents, the upgraded sensor successfully triggers an alarm on $24$ occasions.<br><br>Stating your hypotheses clearly, test the manufacturer's claim at the $1\\%$ level of significance.",
+    "steps": [
+        "<strong>(a) Finding minimum number of detectors $n$:</strong><br><br>Let $X \\sim \\text{B}(n, 0.85)$ denote the number of sounding detectors:\\begin{aligned} P(X \\ge 1) &> 0.999 \\cr 1 - P(X = 0) &> 0.999 \\cr 1 - (0.15)^n &> 0.999 \\cr (0.15)^n &< 0.001 \\end{aligned}Taking logarithms of both sides (reversing the inequality as $\\log(0.15) < 0$):\\begin{aligned} n\\log(0.15) &< \\log(0.001) \\cr n &> \\dfrac{\\log(0.001)}{\\log(0.15)} \\cr n &> \\dfrac{-3}{-0.8239} \\cr n &> 3.64 \\end{aligned}Since $n$ must be an integer, the minimum number is:\\begin{aligned} n = 4 \\end{aligned}",
+        "<strong>(b) Testing the manufacturer's claim:</strong><br><br>State the hypotheses, where $p$ is the true activation probability:\\begin{aligned} &H_0: p = 0.85 \\cr &H_1: p > 0.85 \\end{aligned}Under $H_0$, $X \\sim \\text{B}(25, 0.85)$.<br><br>Calculate the upper tail probability for $x \\ge 24$:\\begin{aligned} P(X \\ge 24) &= P(X = 24) + P(X = 25) \\end{aligned}Evaluating each term:\\begin{aligned} P(X = 24) &= 25(0.85)^{24}(0.15) \\cr &\\approx 0.0759 \\cr P(X = 25) &= (0.85)^{25} \\cr &\\approx 0.0172 \\end{aligned}Summing these values:\\begin{aligned} P(X \\ge 24) &= 0.0759 + 0.0172 \\cr &= 0.0931 \\end{aligned}Comparing to the significance level $\\alpha = 0.01$:\\begin{aligned} 0.0931 > 0.01 \\end{aligned}Because $0.0931 > 0.01$, we do not reject $H_0$.<br><br>There is insufficient evidence at the $1\\%$ level to support the manufacturer's claim that the activation rate exceeds $0.85$.",
+        "Final Answer: (a) $n = 4$, (b) Do not reject $H_0$ as $0.0931 > 0.01$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $n = 3$, (b) Do not reject $H_0$ as $0.0931 > 0.01$",
+            "feedback": "In part (a), with $n = 3$, $1 - 0.15^3 = 1 - 0.003375 = 0.996625 < 0.999$. You must round up from $3.64$ to $n = 4$."
+        },
+        {
+            "ans": "(a) $n = 4$, (b) Reject $H_0$ as $0.0931 > 0.01$",
+            "feedback": "In part (b), because the $p$-value ($0.0931$) is greater than the significance level ($0.01$), the null hypothesis must not be rejected."
+        },
+        {
+            "ans": "(a) $n = 4$, (b) Reject $H_0$ as $0.0172 > 0.01$",
+            "feedback": "In part (b), you evaluated $P(X = 25)$ only. The test statistic requires the cumulative tail $P(X \\ge 24) = 0.0759 + 0.0172 = 0.0931$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Inequality Reversal with Logarithms",
+        "content": "When solving $(0.15)^n < 0.001$, remember that the logarithm of any number strictly between $0$ and $1$ is negative. Dividing by $\\log(0.15)$ flips the inequality sign from $<$ to $>$, giving $n > 3.64$, so $n = 4$."
+    }
+},
+{
+    "id": "050285",
+    "group_id": "050281",
+    "branch": "Statistics",
+    "board": "CCEA",
+    "level": "A",
+    "major_area": "Probability Distributions",
+    "topic": "Binomial Distribution",
+    "subtopic": [
+        "Acceptance Sampling",
+        "Type I and Type II Errors",
+        "Statistical Power"
+    ],
+    "img": false,
+    "question": "A component manufacturer supplies batches of precision resistors. A client applies an acceptance sampling plan to decide whether to accept or reject a large consignment:<br>• A random sample of $15$ resistors is tested from the consignment.<br>• The consignment is accepted if at most $1$ resistor is defective ($X \\le 1$).<br>• The consignment is rejected if $2$ or more resistors are defective ($X \\ge 2$).<br><br>The client tests the null hypothesis $H_0: p = 0.05$ against the alternative hypothesis $H_1: p > 0.05$, where $p$ is the true proportion of defective resistors in the consignment.<br><br><strong>(a)</strong> State the critical region for rejecting the consignment.<br><br><strong>(b)</strong> Calculate the probability of a Type I error (the producer's risk of having an acceptable consignment rejected).<br><br><strong>(c)</strong> If a substandard consignment with a true defect rate of $p = 0.20$ is delivered, calculate the probability of a Type II error (the consumer's risk of accepting a substandard consignment).<br><br><strong>(d)</strong> Calculate the statistical power of the test against the specific alternative $p = 0.20$.",
+    "steps": [
+        "<strong>(a) Critical region:</strong><br><br>The consignment is rejected when $2$ or more defective resistors are found:\\begin{aligned} X \\ge 2 \\end{aligned}",
+        "<strong>(b) Probability of a Type I error:</strong><br><br>A Type I error is rejecting $H_0$ when $H_0$ is true ($p = 0.05$):\\begin{aligned} P(\\text{Type I}) &= P(X \\ge 2 \\mid p = 0.05) \\cr &= 1 - P(X \\le 1 \\mid p = 0.05) \\end{aligned}Under $X \\sim \\text{B}(15, 0.05)$:\\begin{aligned} P(X = 0) &= (0.95)^{15} \\cr &\\approx 0.4633 \\cr P(X = 1) &= 15(0.05)(0.95)^{14} \\cr &\\approx 0.3658 \\end{aligned}Summing these values:\\begin{aligned} P(X \\le 1) &= 0.4633 + 0.3658 \\cr &= 0.8291 \\end{aligned}Subtracting from $1$:\\begin{aligned} P(\\text{Type I}) &= 1 - 0.8291 \\cr &= 0.1709 \\quad (17.09\\%) \\end{aligned}",
+        "<strong>(c) Probability of a Type II error:</strong><br><br>A Type II error is accepting $H_0$ when $H_1$ is true ($p = 0.20$):\\begin{aligned} P(\\text{Type II}) &= P(X \\le 1 \\mid p = 0.20) \\end{aligned}Under $X \\sim \\text{B}(15, 0.20)$:\\begin{aligned} P(X = 0) &= (0.80)^{15} \\cr &\\approx 0.0352 \\cr P(X = 1) &= 15(0.20)(0.80)^{14} \\cr &\\approx 0.1319 \\end{aligned}Adding these values:\\begin{aligned} P(\\text{Type II}) &= 0.0352 + 0.1319 \\cr &= 0.1671 \\quad (16.71\\%) \\end{aligned}",
+        "<strong>(d) Statistical power of the test:</strong><br><br>The power is the probability of correctly rejecting a false null hypothesis:\\begin{aligned} \\text{Power} &= 1 - P(\\text{Type II}) \\cr &= 1 - 0.1671 \\cr &= 0.8329 \\quad (83.29\\%) \\end{aligned}",
+        "Final Answer: (a) $X \\ge 2$, (b) $0.1709$, (c) $0.1671$, (d) $0.8329$"
+    ],
+    "pi_options": [
+        {
+            "ans": "(a) $X \\ge 2$, (b) $0.8291$, (c) $0.1671$, (d) $0.8329$",
+            "feedback": "In part (b), $0.8291$ is the probability of accepting $H_0$. A Type I error is rejecting $H_0$ when it is true, which equals $1 - 0.8291 = 0.1709$."
+        },
+        {
+            "ans": "(a) $X \\ge 2$, (b) $0.1709$, (c) $0.8329$, (d) $0.1671$",
+            "feedback": "In parts (c) and (d), you reversed the Type II error and the power. The Type II error is accepting $H_0$ ($0.1671$), and the power is rejecting $H_0$ ($1 - 0.1671 = 0.8329$)."
+        },
+        {
+            "ans": "(a) $X \\le 1$, (b) $0.1709$, (c) $0.1671$, (d) $0.8329$",
+            "feedback": "In part (a), the critical region is the set of values that lead to the *rejection* of $H_0$, which is $X \\ge 2$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Power and Error Duality",
+        "content": "Always remember the relationship $\\text{Power} = 1 - \\beta$, where $\\beta$ is the probability of a Type II error. Power measures the test's ability to detect a defect when one actually exists—here, an $83.29\\%$ chance of intercepting a substandard consignment."
     }
 }
 ];
