@@ -476,7 +476,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Limit Equality in Recurrence Relations",
-        "content": "The step $$\\lim_{n \\to \\infty} R_n$$ = \\lim_{n \\to \\infty} R_{n-1} = L$$ is standard in A-Level and university analysis. If a sequence settles down to a steady-state limit $L$, shifting the index backwards by one step does not change the destination."
+        "content": "The step $$\\lim_{n \\to \\infty} R_n$$ $$= \\lim_{n \\to \\infty} R_{n-1} = L$$ is standard in A-Level and university analysis. If a sequence settles down to a steady-state limit $L$, shifting the index backwards by one step does not change the destination."
     }
 },
 {
@@ -492,7 +492,7 @@ window.ALEVEL_QUESTIONS = [
         "Telescoping Sums"
     ],
     "img": false,
-    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 3: The Total Probability of Benford's Distribution</strong><br>Benford's Law states that the probability of the first significant digit being $d \\in \\{1, 2, \\dots, 9\\}$ is given by:\\begin{aligned}P(d) &= \\log_{10}\\left(1 + \\dfrac{1}{d}\\right)\\cr & = \\log_{10}\\left(\\dfrac{d + 1}{d}\\right)$$A fundamental axiom of probability requires that the sum of the probabilities of all mutually exclusive and exhaustive outcomes must equal $1$.</div><strong>(a)</strong> Using the quotient law of logarithms, express the total probability $\\sum_{d=1}^{9} P(d)$ as a sum of logarithmic differences:$$\\sum_{d=1}^{9} \\big[ \\log_{10}(d + 1) - \\log_{10}(d) \\big]$$<strong>(b)</strong> Write out the first two terms and the final two terms of this expansion, and prove algebraically that the sum telescopes to $\\log_{10}(10)$.<br><br><strong>(c)</strong> Hence, deduce that $\\sum_{d=1}^{9} P(d) = 1$, verifying that Benford's Law forms a mathematically valid probability distribution.",
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 3: The Total Probability of Benford's Distribution</strong><br>Benford's Law states that the probability of the first significant digit being $d \\in \\{1, 2, \\dots, 9\\}$ is given by:\\begin{aligned}P(d) &= \\log_{10}\\left(1 + \\dfrac{1}{d}\\right)\\cr & = \\log_{10}\\left(\\dfrac{d + 1}{d}\\right)\\end{aligned}A fundamental axiom of probability requires that the sum of the probabilities of all mutually exclusive and exhaustive outcomes must equal $1$.</div><strong>(a)</strong> Using the quotient law of logarithms, express the total probability $\\sum_{d=1}^{9} P(d)$ as a sum of logarithmic differences:$$\\sum_{d=1}^{9} \\big[ \\log_{10}(d + 1) - \\log_{10}(d) \\big]$$<strong>(b)</strong> Write out the first two terms and the final two terms of this expansion, and prove algebraically that the sum telescopes to $\\log_{10}(10)$.<br><br><strong>(c)</strong> Hence, deduce that $\\sum_{d=1}^{9} P(d) = 1$, verifying that Benford's Law forms a mathematically valid probability distribution.",
     "steps": [
         "<strong>(a) Expressing as Logarithmic Differences:</strong><br><br>Apply the quotient law $\\log_{10}\\left(\\dfrac{u}{v}\\right) = \\log_{10}(u) - \\log_{10}(v)$:\\begin{aligned} P(d) &= \\log_{10}\\left(\\dfrac{d + 1}{d}\\right) \\cr &= \\log_{10}(d + 1) - \\log_{10}(d) \\end{aligned}Summing from $d = 1$ to $9$:\\begin{aligned} &\\sum_{d=1}^{9} P(d) \\cr &\\quad = \\sum_{d=1}^{9} [\\log_{10}(d + 1) - \\log_{10}(d)] \\end{aligned}",
         "<strong>(b) Telescoping Sum Expansion:</strong><br><br>Write out the terms explicitly:\\begin{aligned} &d = 1: \\; \\log_{10}(2) - \\log_{10}(1) \\cr &d = 2: \\; \\log_{10}(3) - \\log_{10}(2) \\cr &\\quad \\vdots \\cr &d = 8: \\; \\log_{10}(9) - \\log_{10}(8) \\cr &d = 9: \\; \\log_{10}(10) - \\log_{10}(9) \\end{aligned}Adding these terms together, all intermediate terms cancel pairwise:\\begin{aligned} &\\sum_{d=1}^{9} P(d) \\cr &\\quad = [\\log_{10}(2) - \\log_{10}(1)] \\cr &\\qquad + [\\log_{10}(3) - \\log_{10}(2)] \\cr &\\qquad + \\dots \\cr &\\qquad + [\\log_{10}(10) - \\log_{10}(9)] \\cr &\\quad = \\log_{10}(10) - \\log_{10}(1) \\end{aligned}Since $\\log_{10}(1) = 0$, the sum telescopes to:\\begin{aligned} \\sum_{d=1}^{9} P(d) &= \\log_{10}(10) \\end{aligned}",
@@ -597,6 +597,206 @@ window.ALEVEL_QUESTIONS = [
         "type": "deeper",
         "title": "The Head Teacher's Eye: Why Pick's Theorem Works",
         "content": "Part (c) is the heart of the general proof of Pick's Theorem! When two polygons merge, the $k - 2$ shared boundary points become interior points ($I_{1+2} = I_1 + I_2 + k - 2$). When you substitute $I_{1+2}$ and $B_{1+2}$ into Pick's formula, the $k$ terms cancel out, proving that Pick's area is additive ($A_{1+2} = A_1 + A_2$)."
+    }
+},
+{
+    "id": "009016",
+    "group_id": "009016",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "The Harmonic Mean",
+    "subtopic": [
+        "Modelling",
+        "Parallel Systems"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 4: Parallel Systems</strong><br>For two components working in parallel with completion times $T_1$ and $T_2$, the combined time $T_{\\text{total}}$ is half of their Harmonic Mean, $H$:$$\\begin{aligned} H &= \\dfrac{2 T_1 T_2}{T_1 + T_2} \\cr T_{\\text{total}} &= \\dfrac{H}{2} \\end{aligned}$$For three parallel components:\\begin{aligned} \\dfrac{1}{T_{\\text{total}}} &= \\dfrac{1}{T_1} + \\dfrac{1}{T_2} + \\dfrac{1}{T_3} \\end{aligned}</div>Two pumps, Pump A and Pump B, drain a basement. Pump A takes $6\\text{ hours}$ alone and Pump B takes $3\\text{ hours}$ alone.<br><br><strong>(a)</strong> Calculate the Harmonic Mean, $H$, of the two times.<br><br><strong>(b)</strong> Show that working together, they drain the basement in $2\\text{ hours}$.<br><br><strong>(c)</strong> Pump C is added. Working together, all three pumps drain the basement in $1.2\\text{ hours}$. Find the time taken for Pump C to drain the basement alone.",
+    "steps": [
+        "<strong>(a) Harmonic Mean $H$:</strong><br><br>Calculate $H$ for $T_1 = 6$ and $T_2 = 3$:\\begin{aligned} H &= \\dfrac{2(6)(3)}{6 + 3} \\cr &= \\dfrac{36}{9} \\cr &= 4\\text{ hours} \\end{aligned}",
+        "<strong>(b) Combined Time:</strong><br><br>Using the relationship from the extract:\\begin{aligned} T_{\\text{total}} &= \\dfrac{H}{2} \\cr &= \\dfrac{4}{2} \\cr &= 2\\text{ hours} \\end{aligned}",
+        "<strong>(c) Drainage Time for Pump C:</strong><br><br>Substitute $T_{\\text{total}} = 1.2$, $T_1 = 6$, and $T_2 = 3$ into the rate formula:<br><br>Note that $1.2 = \\dfrac{6}{5}$, so $\\dfrac{1}{1.2} = \\dfrac{5}{6}$.\\begin{aligned} &\\dfrac{1}{T_{\\text{total}}} = \\dfrac{1}{T_1} + \\dfrac{1}{T_2} + \\dfrac{1}{T_3} \\cr &\\dfrac{5}{6} = \\dfrac{1}{6} + \\dfrac{1}{3} + \\dfrac{1}{T_3} \\cr &\\dfrac{5}{6} = \\dfrac{3}{6} + \\dfrac{1}{T_3} \\cr &\\dfrac{1}{T_3} = \\dfrac{5}{6} - \\dfrac{3}{6} \\cr &\\dfrac{1}{T_3} = \\dfrac{2}{6} \\cr &\\dfrac{1}{T_3} = \\dfrac{1}{3} \\cr &T_3 = 3\\text{ hours} \\end{aligned}Thus, Pump C takes $3\\text{ hours}$ alone.",
+        "Final Answer: <strong>(a)</strong> $H = 4\\text{ hours}$, <strong>(b)</strong> $2\\text{ hours}$, <strong>(c)</strong> $3\\text{ hours}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $H = 4.5\\text{ hours}$, <strong>(b)</strong> $2.25\\text{ hours}$, <strong>(c)</strong> $3\\text{ hours}$",
+            "feedback": "This error uses the arithmetic mean (6 + 3) / 2 = 4.5 rather than the harmonic mean. Rates combined over equal work must use the harmonic mean."
+        },
+        {
+            "ans": "<strong>(a)</strong> $H = 4\\text{ hours}$, <strong>(b)</strong> $2\\text{ hours}$, <strong>(c)</strong> $2.4\\text{ hours}$",
+            "feedback": "This error occurs in part (c) if you evaluate the reciprocals incorrectly, such as taking 1 / 1.2 as 0.83 and subtracting (1/6 + 1/3) with rounding errors."
+        },
+        {
+            "ans": "<strong>(a)</strong> $H = 4\\text{ hours}$, <strong>(b)</strong> $2\\text{ hours}$, <strong>(c)</strong> $4.5\\text{ hours}$",
+            "feedback": "This error occurs in part (c) by adding the individual times directly (6 + 3 = 9) rather than summing their rates."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Parallel Rates and the Factor of Half",
+        "content": "Students often wonder why the combined time is half the harmonic mean: $T = H/2$. This happens because the harmonic mean $H$ represents the average time per single agent. Since two agents work simultaneously, the total elapsed time is halved: $H/2$."
+    }
+},
+{
+    "id": "009017",
+    "group_id": "009016",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "The Golden Ratio",
+    "subtopic": [
+        "Modelling",
+        "Trigonometric Identities"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 4: The Golden Triangle</strong><br>A Golden Triangle is an isosceles triangle with side $s$, base $b$, and ratio $\\dfrac{s}{b} = \\phi$. The vertex angle is $36^\\circ$.<br><br>Applying the Cosine Rule gives:\\begin{aligned} b^2 &= 2s^2 - 2s^2 \\cos(36^\\circ) \\cr \\dfrac{1}{\\phi^2} &= 2 - 2\\cos(36^\\circ) \\end{aligned}</div><strong>(a)</strong> Using $\\phi^2 = \\phi + 1$, show that:\\begin{aligned} \\dfrac{1}{\\phi^2} = 2 - \\phi \\end{aligned}<strong>(b)</strong> By substituting this result into the equation from the extract, prove that:\\begin{aligned} \\cos(36^\\circ) = \\dfrac{\\phi}{2} \\end{aligned}<strong>(c)</strong> Hence, find the exact value of $\\cos(36^\\circ)$ in the form $\\dfrac{a + \\sqrt{b}}{c}$, where $a, b, c \\in \\mathbb{Z}$.",
+    "steps": [
+        "<strong>(a) Expressing $\\dfrac{1}{\\phi^2}$ Linearly:</strong><br><br>From $\\phi^2 = \\phi + 1$, divide both sides by $\\phi$:\\begin{aligned} &\\phi = 1 + \\dfrac{1}{\\phi} \\cr &\\dfrac{1}{\\phi} = \\phi - 1 \\end{aligned}Divide both sides by $\\phi$ again:\\begin{aligned} &\\dfrac{1}{\\phi^2} = 1 - \\dfrac{1}{\\phi} \\cr &\\dfrac{1}{\\phi^2} = 1 - (\\phi - 1) \\cr &\\dfrac{1}{\\phi^2} = 2 - \\phi \\end{aligned}",
+        "<strong>(b) Proving $\\cos(36^\\circ) = \\dfrac{\\phi}{2}$:</strong><br><br>Substitute $\\dfrac{1}{\\phi^2} = 2 - \\phi$ into the Cosine Rule formula:\\begin{aligned} &2 - \\phi = 2 - 2\\cos(36^\\circ) \\cr &-\\phi = -2\\cos(36^\\circ) \\cr &2\\cos(36^\\circ) = \\phi \\cr &\\cos(36^\\circ) = \\dfrac{\\phi}{2} \\end{aligned}",
+        "<strong>(c) Exact Surd Form of $\\cos(36^\\circ)$:</strong><br><br>Substitute $\\phi = \\dfrac{1 + \\sqrt{5}}{2}$:\\begin{aligned} \\cos(36^\\circ) &= \\dfrac{\\dfrac{1 + \\sqrt{5}}{2}}{2} \\cr &= \\dfrac{1 + \\sqrt{5}}{4} \\end{aligned}Thus, $a = 1$, $b = 5$, and $c = 4$.",
+        "Final Answer: <strong>(c)</strong> $\\cos(36^\\circ) = \\dfrac{1 + \\sqrt{5}}{4}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(c)</strong> $\\cos(36^\\circ) = \\dfrac{1 + \\sqrt{5}}{2}$",
+            "feedback": "This error forgets to divide by 2 when evaluating cos(36) = phi / 2, returning phi itself instead of half of phi."
+        },
+        {
+            "ans": "<strong>(c)</strong> $\\cos(36^\\circ) = \\dfrac{-1 + \\sqrt{5}}{4}$",
+            "feedback": "This error occurs in part (c) from a sign slip in the definition of the golden ratio, using (-1 + sqrt(5)) / 2 instead of (1 + sqrt(5)) / 2."
+        },
+        {
+            "ans": "<strong>(c)</strong> $\\cos(36^\\circ) = \\dfrac{1 + \\sqrt{3}}{4}$",
+            "feedback": "This error occurs from an incorrect surd evaluation, mistakenly writing sqrt(3) instead of sqrt(5) inside the golden ratio."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Exact Values of $36^\\circ$ and $72^\\circ$",
+        "content": "While standard A-Level trigonometric tables include $30^\\circ, 45^\\circ,$ and $60^\\circ$, angles of $36^\\circ$ and $72^\\circ$ are foundational in geometry. Because a regular pentagon has internal angles of $108^\\circ$, its diagonals construct Golden Triangles, yielding $\\cos(36^\\circ) = \\dfrac{1 + \\sqrt{5}}{4}$."
+    }
+},
+{
+    "id": "009018",
+    "group_id": "009016",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Exponentials and Logarithms",
+    "topic": "Benford's Law",
+    "subtopic": [
+        "Modelling",
+        "Fraud Detection"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 4: Fraud Detection</strong><br>A data set spanning multiple orders of magnitude follows Benford's Law:$$P(d) = \\log_{10}\\left(1 + \\dfrac{1}{d}\\right)$$For a sample of $N$ items, the expected count of digit $d$ is $E(d) = N \\times P(d)$. Significant departures indicate artificial data manipulation.</div>An auditor reviews $500$ expense claims.<br><br><strong>(a)</strong> Calculate the expected count of claims starting with digit $9$, to the nearest integer.<br><br><strong>(b)</strong> If $45$ claims start with digit $9$, calculate the percentage error from the expected count to $1\\text{ d.p.}$ (using the unrounded expected value).<br><br><strong>(c)</strong> The auditor counts $150$ claims starting with digit $5$. Given $P(5) \\approx 0.0792$, calculate the expected count for digit $5$ to the nearest integer, and conclude if manipulation is likely.",
+    "steps": [
+        "<strong>(a) Expected Count for Digit 9:</strong><br><br>Calculate the probability $P(9)$:\\begin{aligned} P(9) &= \\log_{10}\\left(1 + \\dfrac{1}{9}\\right) \\cr &= \\log_{10}\\left(\\dfrac{10}{9}\\right) \\cr &= 1 - \\log_{10}(9) \\cr &\\approx 0.04576 \\end{aligned}Multiply by $N = 500$:\\begin{aligned} E(9) &= 500 \\times 0.04576 \\cr &= 22.88 \\cr &\\approx 23\\text{ claims} \\end{aligned}",
+        "<strong>(b) Percentage Error:</strong><br><br>Calculate the relative error between the observed ($45$) and expected ($22.88$):\\begin{aligned} \\text{Error} &= \\dfrac{|45 - 22.88|}{22.88} \\times 100\\% \\cr &= \\dfrac{22.12}{22.88} \\times 100\\% \\cr &\\approx 96.7\\% \\end{aligned}",
+        "<strong>(c) Digit 5 Analysis:</strong><br><br>Calculate the expected count for digit $5$:\\begin{aligned} E(5) &= 500 \\times 0.0792 \\cr &= 39.6 \\cr &\\approx 40\\text{ claims} \\end{aligned}Compare observed and expected counts:\\begin{aligned} \\dfrac{\\text{Observed}}{\\text{Expected}} &= \\dfrac{150}{39.6} \\cr &\\approx 3.8 \\end{aligned}The observed count is nearly $4$ times the expected value. Such an extreme anomaly strongly suggests human manipulation (e.g. fabricated claims clustered just below approval limits).",
+        "Final Answer: <strong>(a)</strong> $23$, <strong>(b)</strong> $96.7\\%$, <strong>(c)</strong> $E(5) = 40$ (manipulation likely)"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $23$, <strong>(b)</strong> $95.7\\%$, <strong>(c)</strong> $E(5) = 40$ (natural variation)",
+            "feedback": "This error concludes that 150 claims is natural variation. In Benford analysis, a fourfold increase over expected count is an overwhelming statistical signal of artificial fabrication."
+        },
+        {
+            "ans": "<strong>(a)</strong> $56$, <strong>(b)</strong> $19.6\\%$, <strong>(c)</strong> $E(5) = 56$ (manipulation likely)",
+            "feedback": "This error assumes a uniform distribution of digits (500 / 9 approx 56). Benford's Law is logarithmic, so lower digits appear far more frequently than higher digits."
+        },
+        {
+            "ans": "<strong>(a)</strong> $23$, <strong>(b)</strong> $49.2\\%$, <strong>(c)</strong> $E(5) = 40$ (manipulation likely)",
+            "feedback": "This error divides the difference |45 - 22.88| by the observed count 45 rather than the expected baseline 22.88."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Uniform Fallacy in Fraud Detection",
+        "content": "Untrained fraudsters typically invent numbers using uniform distributions, expecting each digit $1$ to $9$ to appear $\\approx 11.1\\%$ of the time ($500/9 \\approx 56$). Because Benford's Law expects digit $9$ only $4.6\\%$ of the time, fabricated accounts inevitably show huge positive percentage errors for high digits."
+    }
+},
+{
+    "id": "009019",
+    "group_id": "009016",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Coordinate Geometry",
+    "topic": "Taxicab Geometry",
+    "subtopic": [
+        "Modelling",
+        "Taxicab Ellipse"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 4: The Taxicab Ellipse</strong><br>In Taxicab geometry, an ellipse with foci $F_1(-2, 0)$ and $F_2(2, 0)$ and constant sum $k = 6$ satisfies:\\begin{aligned} d_T(P, F_1) + d_T(P, F_2) &= 6 \\cr |x + 2| + |y| + |x - 2| + |y| &= 6 \\end{aligned}</div><strong>(a)</strong> Simplify this equation to the form:\\begin{aligned} |x + 2| + |x - 2| + 2|y| = 6 \\end{aligned}<strong>(b)</strong> Find the $y$-intercepts of this locus by setting $x = 0$.<br><br><strong>(c)</strong> For $-2 \\le x \\le 2$, the term $|x + 2| + |x - 2|$ equals $4$. Find the equation of the locus in this interval, and describe its geometric shape.",
+    "steps": [
+        "<strong>(a) Simplifying the Equation:</strong><br><br>Combine the identical $|y|$ terms:\\begin{aligned} &|x + 2| + |y| + |x - 2| + |y| = 6 \\cr &|x + 2| + |x - 2| + 2|y| = 6 \\end{aligned}",
+        "<strong>(b) $y$-Intercepts ($x = 0$):</strong><br><br>Substitute $x = 0$ into the equation:\\begin{aligned} &|0 + 2| + |0 - 2| + 2|y| = 6 \\cr &2 + 2 + 2|y| = 6 \\cr &4 + 2|y| = 6 \\cr &2|y| = 2 \\cr &|y| = 1 \\cr &y = \\pm 1 \\end{aligned}Thus, the $y$-intercepts are $(0, 1)$ and $(0, -1)$.",
+        "<strong>(c) Locus for $-2 \\le x \\le 2$:</strong><br><br>Substitute $|x + 2| + |x - 2| = 4$ into the equation:\\begin{aligned} &4 + 2|y| = 6 \\cr &2|y| = 2 \\cr &|y| = 1 \\cr &y = 1 \\quad \\text{or} \\quad y = -1 \\end{aligned}Geometric description: In the interval $-2 \\le x \\le 2$, the locus consists of two horizontal parallel line segments of length $4$, situated at $y = 1$ and $y = -1$.",
+        "Final Answer: <strong>(b)</strong> $(0, \\pm 1)$, <strong>(c)</strong> $y = \\pm 1$ (two horizontal parallel segments for $-2 \\le x \\le 2$)"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(b)</strong> $(0, \\pm 2)$, <strong>(c)</strong> $y = \\pm 2$ (two horizontal parallel segments for $-2 \\le x \\le 2$)",
+            "feedback": "This error occurs in part (b) by writing 2|y| = 4 instead of 2|y| = 2 when subtracting 4 from 6."
+        },
+        {
+            "ans": "<strong>(b)</strong> $(0, \\pm 1)$, <strong>(c)</strong> $y = -x \\pm 1$ (slanted diamond segments)",
+            "feedback": "This error incorrectly assumes the locus remains diagonal throughout. Between the foci, |x + 2| + |x - 2| is constant, producing flat horizontal segments."
+        },
+        {
+            "ans": "<strong>(b)</strong> $(0, \\pm 3)$, <strong>(c)</strong> $x^2 + y^2 = 9$ (smooth ellipse)",
+            "feedback": "This error treats the equation as a standard Euclidean ellipse rather than evaluating the Taxicab modulus components."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Flattened Loci in Taxicab Geometry",
+        "content": "A Taxicab ellipse is not curved! Between the two foci (where $-2 \\le x \\le 2$), horizontal movement swaps distance from $F_1$ to $F_2$ at an exact $1:1$ rate, so the $x$-component is constant ($4$). This leaves $2|y| = 2$, producing flat horizontal edges and turning the ellipse into a hexagon."
+    }
+},
+{
+    "id": "009020",
+    "group_id": "009016",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Geometry and Proof",
+    "topic": "Pick's Theorem",
+    "subtopic": [
+        "Modelling",
+        "Area Approximation"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 4: Approximating Irregular Areas</strong><br>Pick's Theorem calculates the area of a simple lattice polygon:$$A = I + \\dfrac{B}{2} - 1$$where $I$ is the number of interior points and $B$ is the number of boundary points. For map scaling, $1\\text{ cm}^2$ on grid corresponds to $(\\text{scale factor})^2$ in reality.</div>An irregular lake is modelled on a $1\\text{ cm}$ grid with $I = 42$ and $B = 18$.<br><br><strong>(a)</strong> Calculate the estimated map area, $A$, using Pick's Theorem.<br><br><strong>(b)</strong> The map scale is $1:10000$ ($1\\text{ cm} = 100\\text{ m}$). Find the actual surface area of the lake in $\\text{m}^2$.<br><br><strong>(c)</strong> Moving one misplaced vertex increases $B$ by $2$ and decreases $I$ by $1$. Show that the estimated area $A$ remains unchanged.",
+    "steps": [
+        "<strong>(a) Map Area via Pick's Theorem:</strong><br><br>Substitute $I = 42$ and $B = 18$ into the formula:\\begin{aligned} A &= I + \\dfrac{B}{2} - 1 \\cr &= 42 + \\dfrac{18}{2} - 1 \\cr &= 42 + 9 - 1 \\cr &= 50\\text{ cm}^2 \\end{aligned}",
+        "<strong>(b) Actual Area in $\\text{m}^2$:</strong><br><br>Convert linear scale to area scale:\\begin{aligned} 1\\text{ cm} &= 100\\text{ m} \\cr 1\\text{ cm}^2 &= (100\\text{ m})^2 \\cr &= 10000\\text{ m}^2 \\end{aligned}Calculate the actual area:\\begin{aligned} \\text{Area} &= 50 \\times 10000 \\cr &= 500000\\text{ m}^2 \\end{aligned}",
+        "<strong>(c) Area Invariance under Vertex Shift:</strong><br><br>Let the changes in lattice points be $\\Delta B = +2$ and $\\Delta I = -1$.<br><br>Calculate the change in area $\\Delta A$:\\begin{aligned} \\Delta A &= \\Delta I + \\dfrac{\\Delta B}{2} \\cr &= -1 + \\dfrac{2}{2} \\cr &= -1 + 1 \\cr &= 0 \\end{aligned}Since $\\Delta A = 0$, the new area is:\\begin{aligned} A_{\\text{new}} &= A + \\Delta A \\cr &= 50 + 0 \\cr &= 50\\text{ cm}^2 \\end{aligned}Thus, the estimated area remains completely unchanged.",
+        "Final Answer: <strong>(a)</strong> $50\\text{ cm}^2$, <strong>(b)</strong> $500000\\text{ m}^2$, <strong>(c)</strong> $\\Delta A = 0\\text{ cm}^2$ (unchanged)"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $50\\text{ cm}^2$, <strong>(b)</strong> $5000\\text{ m}^2$, <strong>(c)</strong> $\\Delta A = 0\\text{ cm}^2$ (unchanged)",
+            "feedback": "This error occurs in part (b) by multiplying by 100 rather than 100^2 = 10000 when converting from cm^2 to m^2."
+        },
+        {
+            "ans": "<strong>(a)</strong> $51\\text{ cm}^2$, <strong>(b)</strong> $510000\\text{ m}^2$, <strong>(c)</strong> $\\Delta A = 0\\text{ cm}^2$ (unchanged)",
+            "feedback": "This error occurs in part (a) by omitting the -1 term from Pick's Theorem, evaluating 42 + 9 = 51."
+        },
+        {
+            "ans": "<strong>(a)</strong> $50\\text{ cm}^2$, <strong>(b)</strong> $500000\\text{ m}^2$, <strong>(c)</strong> $\\Delta A = +1\\text{ cm}^2$ (increased)",
+            "feedback": "This error evaluates the change in area as Delta I + Delta B = -1 + 2 = +1, forgetting that boundary points carry a weighting factor of 1/2."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Invariance and Half-Integers in Pick's Grid",
+        "content": "Notice the exact rate of trade-off: each interior point is worth an area of $1$, while each boundary point is worth an area of $1/2$. Therefore, losing $1$ interior point is precisely balanced by gaining $2$ boundary points, leaving the total area invariant."
     }
 }
 ];
