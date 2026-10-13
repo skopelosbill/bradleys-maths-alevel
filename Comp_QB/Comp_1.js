@@ -876,7 +876,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "deeper",
         "title": "The Head Teacher's Eye: Structuring Proofs by Contradiction",
-        "content": "Every contradiction proof requires three clear milestones: 1) State the negation clearly ($\"\\text{Assume } \\phi = p/q \\text{ with } \\gcd(p, q) = 1\"$), 2) Derive a strict algebraic consequence ($k \\mid p \\text{ and } k \\mid q$), and 3) Explicitly identify the clash with the premise."
+        "content": "Every contradiction proof requires three clear milestones:<br><br> 1) State the negation clearly: ($$\"\\text{Assume } \\phi = p/q \\text{ with }$$ $$\\gcd(p, q) = 1\"$$) 2) Derive a strict algebraic consequence: $$k \\mid p \\text{ and } k \\mid q$$ 3) Explicitly identify the clash with the premise."
     }
 },
 {
@@ -916,7 +916,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Why Logarithms Ensure Scale Invariance",
-        "content": "Why is Benford's Law scale invariant? Because $\\log_{10}(c \\cdot x) = \\log_{10}(c) + \\log_{10}(x)$. Multiplying by a constant simply shifts the logarithmic mantissas by a fixed translation $\\log_{10}(c)$ modulo 1, preserving the relative interval widths across all digits."
+        "content": "Why is Benford's Law scale invariant? Because $$\\log_{10}(c \\cdot x) $$= \\log_{10}(c) + \\log_{10}(x)$$ Multiplying by a constant simply shifts the logarithmic mantissas by a fixed translation $\\log_{10}(c)$ modulo 1, preserving the relative interval widths across all digits."
     }
 },
 {
@@ -932,7 +932,7 @@ window.ALEVEL_QUESTIONS = [
         "Equilateral Triangles"
     ],
     "img": false,
-    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 5: Taxicab Triangles</strong><br>In Taxicab geometry, the distance between points is $d_T(P, Q) = |x_1 - x_2| + |y_1 - y_2|$.<br><br>A triangle $ABC$ is Taxicab-equilateral if all three Taxicab side lengths are equal:$$d_T(A, B) = d_T(B, C) = d_T(C, A) = s$$</div>Consider vertices $A(0, 0)$ and $B(s, 0)$ with $s > 0$.<br><br><strong>(a)</strong> Verify that vertex $C\\left(\\dfrac{s}{2}, \\dfrac{s}{2}\\right)$ produces a Taxicab-equilateral triangle with side length $s$.<br><br><strong>(b)</strong> Find the Euclidean angles of triangle $ABC$, and state how they differ from a standard Euclidean equilateral triangle.<br><br><strong>(c)</strong> Now suppose a triangle has two sides parallel to the coordinate axes: $A(0, 0)$, $B(s, 0)$, and $D(0, s)$. Prove by contradiction that no triangle with two perpendicular sides parallel to the axes can be Taxicab-equilateral.",
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 5: Taxicab Triangles</strong><br>In Taxicab geometry, the distance between points is $$d_T(P, Q)$$ $$= |x_1 - x_2| + |y_1 - y_2|$$A triangle $ABC$ is Taxicab-equilateral if all three Taxicab side lengths are equal:$$d_T(A, B)$$ $$= d_T(B,C)$$ $$= d_T(C, A)$$ $$= s$$</div>Consider vertices $A(0, 0)$ and $B(s, 0)$ with $s > 0$.<br><br><strong>(a)</strong> Verify that vertex $C\\left(\\dfrac{s}{2}, \\dfrac{s}{2}\\right)$ produces a Taxicab-equilateral triangle with side length $s$.<br><br><strong>(b)</strong> Find the Euclidean angles of triangle $ABC$, and state how they differ from a standard Euclidean equilateral triangle.<br><br><strong>(c)</strong> Now suppose a triangle has two sides parallel to the coordinate axes: $A(0, 0)$, $B(s, 0)$, and $D(0, s)$. Prove by contradiction that no triangle with two perpendicular sides parallel to the axes can be Taxicab-equilateral.",
     "steps": [
         "<strong>(a) Verifying Taxicab-Equilateral Triangle:</strong><br><br>Calculate the three Taxicab side lengths:\\begin{aligned} d_T(A, B) &= |s - 0| + |0 - 0| \\cr &= s \\end{aligned}For side $AC$ with $C(s/2, s/2)$:\\begin{aligned} d_T(A, C) &= \\left|\\dfrac{s}{2} - 0\\right| + \\left|\\dfrac{s}{2} - 0\\right| \\cr &= \\dfrac{s}{2} + \\dfrac{s}{2} \\cr &= s \\end{aligned}For side $BC$:\\begin{aligned} d_T(B, C) &= \\left|\\dfrac{s}{2} - s\\right| + \\left|\\dfrac{s}{2} - 0\\right| \\cr &= \\left|-\\dfrac{s}{2}\\right| + \\dfrac{s}{2} \\cr &= \\dfrac{s}{2} + \\dfrac{s}{2} \\cr &= s \\end{aligned}Since all three sides equal $s$, triangle $ABC$ is Taxicab-equilateral.",
         "<strong>(b) Euclidean Angles of Triangle $ABC$:</strong><br><br>Find the gradients of the sides:\\begin{aligned} m_{AB} &= 0 \\cr m_{AC} &= \\dfrac{s/2}{s/2} = 1 \\cr m_{BC} &= \\dfrac{s/2 - 0}{s/2 - s} = -1 \\end{aligned}Since $m_{AC} \\times m_{BC} = (1)(-1) = -1$, the angle at vertex $C$ is $90^\\circ$.<br><br>The angles at $A$ and $B$ are each $45^\\circ$.<br><br>Thus, the Euclidean angles are $45^\\circ, 45^\\circ, 90^\\circ$, completely differing from the $60^\\circ, 60^\\circ, 60^\\circ$ of a Euclidean equilateral triangle.",
