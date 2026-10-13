@@ -398,5 +398,205 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Half-Integers and Elementary Polygons",
         "content": "Pick's Theorem reveals that the area of any lattice polygon must be a multiple of $0.5$! Notice that $A = I + \\dfrac{B}{2} - 1$ means $2A = 2I + B - 2$, which is always an integer. An area of $0.5$ (achieved when $I = 0, B = 3$) is the fundamental 'quantum' of lattice area—no lattice polygon can ever have an area smaller than $0.5$."
     }
+},
+{
+    "id": "009011",
+    "group_id": "009011",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "The Harmonic Mean",
+    "subtopic": [
+        "Deductive Proof",
+        "Mean Inequalities"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 3: The Arithmetic-Harmonic Mean Inequality</strong><br>For any two positive real numbers $x$ and $y$, the Arithmetic Mean is $A = \\dfrac{x + y}{2}$ and the Harmonic Mean is $H = \\dfrac{2xy}{x + y}$.<br><br>Because the square of any real number is non-negative, $(x - y)^2 \\ge 0$ for all $x, y \\in \\mathbb{R}$, with equality holding if and only if $x = y$.</div><strong>(a)</strong> Starting from the expansion of $(x - y)^2 \\ge 0$, prove algebraically that:$$(x + y)^2 \\ge 4xy$$for all real numbers $x$ and $y$.<br><br><strong>(b)</strong> For positive numbers $x > 0$ and $y > 0$, divide both sides of this inequality by $2(x + y)$ to deduce that:$$A \\ge H$$<strong>(c)</strong> State the necessary and sufficient condition on $x$ and $y$ for $A = H$.",
+    "steps": [
+        "<strong>(a) Algebraic Proof of $(x + y)^2 \\ge 4xy$:</strong><br><br>Start with the fundamental inequality:\\begin{aligned} &(x - y)^2 \\ge 0 \\cr &x^2 - 2xy + y^2 \\ge 0 \\cr &x^2 + y^2 \\ge 2xy \\end{aligned}Add $2xy$ to both sides:\\begin{aligned} &x^2 + 2xy + y^2 \\ge 4xy \\cr &(x + y)^2 \\ge 4xy \\end{aligned}",
+        "<strong>(b) Deducing $A \\ge H$:</strong><br><br>Since $x > 0$ and $y > 0$, the sum $x + y > 0$, so $2(x + y) > 0$.<br><br>Divide both sides by $2(x + y)$:\\begin{aligned} &\\dfrac{(x + y)^2}{2(x + y)} \\cr &\\quad \\ge \\dfrac{4xy}{2(x + y)} \\cr &\\dfrac{x + y}{2} \\ge \\dfrac{2xy}{x + y} \\cr &A \\ge H \\end{aligned}",
+        "<strong>(c) Equality Condition:</strong><br><br>Tracing back through the derivation, equality holds if and only if the initial squared term vanishes:\\begin{aligned} &(x - y)^2 = 0 \\cr &x - y = 0 \\cr &x = y \\end{aligned}Thus, the Arithmetic Mean equals the Harmonic Mean if and only if $x = y$.",
+        "Final Answer: <strong>(a)</strong> $(x + y)^2 \\ge 4xy$, <strong>(b)</strong> $A \\ge H$, <strong>(c)</strong> $x = y$"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $(x + y)^2 \\ge 4xy$, <strong>(b)</strong> $A \\ge H$, <strong>(c)</strong> $xy = 1$",
+            "feedback": "This error occurs in part (c) if you assume equality requires the geometric mean or product to equal 1. Tracing back to the initial line (x - y)^2 >= 0 reveals that equality occurs strictly when (x - y)^2 = 0, which requires x = y."
+        },
+        {
+            "ans": "<strong>(a)</strong> $(x + y)^2 \\ge 4xy$, <strong>(b)</strong> $H \\ge A$, <strong>(c)</strong> $x = y$",
+            "feedback": "This error inverts the inequality in part (b). Because dividing by positive 2(x + y) preserves inequality direction, (x + y)/2 >= 2xy/(x + y), which proves that A >= H (the Arithmetic Mean is always greater than or equal to the Harmonic Mean)."
+        },
+        {
+            "ans": "<strong>(a)</strong> $(x + y)^2 \\le 4xy$, <strong>(b)</strong> $A \\ge H$, <strong>(c)</strong> $x = y$",
+            "feedback": "This error occurs in part (a) from an incorrect rearrangement. Expanding (x - y)^2 >= 0 gives x^2 + y^2 >= 2xy. Adding 2xy to both sides yields (x + y)^2 >= 4xy, not <= 4xy."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Divisor Positivity in Proofs",
+        "content": "In part (b), students frequently divide by $2(x + y)$ without stating that $x + y > 0$. In A-Level proof questions, you must explicitly justify why the inequality direction is preserved: dividing an inequality by an expression whose sign is unknown is an instant mark-loss trap."
+    }
+},
+{
+    "id": "009012",
+    "group_id": "009011",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "The Golden Ratio",
+    "subtopic": [
+        "Fibonacci Recurrence",
+        "Deductive Limits"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 3: Limit of Consecutive Fibonacci Ratios</strong><br>The Fibonacci sequence satisfies the recurrence relation $F_{n+1} = F_n + F_{n-1}$ for $n \\ge 2$, with initial terms $F_1 = 1$ and $F_2 = 1$.<br><br>The ratio of consecutive terms is defined as $R_n = \\dfrac{F_{n+1}}{F_n}$. If a sequence defined by a recurrence relation converges to a finite positive limit $L$, then $\\lim_{n \\to \\infty} R_n = \\lim_{n \\to \\infty} R_{n-1} = L$.</div><strong>(a)</strong> By dividing both sides of the recurrence relation $F_{n+1} = F_n + F_{n-1}$ by $F_n$, show that:$$R_n = 1 + \\dfrac{1}{R_{n-1}}$$<strong>(b)</strong> Assuming that the sequence of ratios converges to a finite positive limit $L$, take limits as $n \\to \\infty$ on both sides of this equation to form a quadratic equation in $L$.<br><br><strong>(c)</strong> Deduce that $L = \\phi$, where $\\phi = \\dfrac{1 + \\sqrt{5}}{2}$, explaining clearly why the negative root must be rejected.",
+    "steps": [
+        "<strong>(a) Recurrence for Ratios $R_n$:</strong><br><br>Divide the Fibonacci recurrence by $F_n$:\\begin{aligned} &\\dfrac{F_{n+1}}{F_n} = \\dfrac{F_n + F_{n-1}}{F_n} \\cr &\\dfrac{F_{n+1}}{F_n} = 1 + \\dfrac{F_{n-1}}{F_n} \\end{aligned}Recognise that $\\dfrac{F_n}{F_{n-1}} = R_{n-1}$, so its reciprocal is:\\begin{aligned} &\\dfrac{F_{n-1}}{F_n} = \\dfrac{1}{R_{n-1}} \\end{aligned}Substitute this into the equation:\\begin{aligned} &R_n = 1 + \\dfrac{1}{R_{n-1}} \\end{aligned}",
+        "<strong>(b) Quadratic Equation in $L$:</strong><br><br>Take the limit as $n \\to \\infty$ on both sides:\\begin{aligned} &\\lim_{n \\to \\infty} R_n \\cr &\\quad = 1 + \\dfrac{1}{\\lim_{n \\to \\infty} R_{n-1}} \\cr &L = 1 + \\dfrac{1}{L} \\end{aligned}Multiply through by $L$ (since $L \\ne 0$):\\begin{aligned} &L^2 = L + 1 \\cr &L^2 - L - 1 = 0 \\end{aligned}",
+        "<strong>(c) Deducing $L = \\phi$:</strong><br><br>Solve $L^2 - L - 1 = 0$ using the quadratic formula:\\begin{aligned} L &= \\dfrac{-(-1) \\pm \\sqrt{(-1)^2 - 4(1)(-1)}}{2(1)} \\cr &= \\dfrac{1 \\pm \\sqrt{5}}{2} \\end{aligned}Because all Fibonacci numbers are positive ($F_n > 0$ for all $n$), the ratio $R_n = \\dfrac{F_{n+1}}{F_n} > 0$.<br><br>Therefore, the limit must satisfy $L \\ge 0$.<br><br>Since $\\sqrt{5} > 1$, the root $\\dfrac{1 - \\sqrt{5}}{2} < 0$. We must reject this negative root.<br><br>Hence:$$L = \\dfrac{1 + \\sqrt{5}}{2} = \\phi$$",
+        "Final Answer: <strong>(a)</strong> $R_n = 1 + \\dfrac{1}{R_{n-1}}$, <strong>(b)</strong> $L^2 - L - 1 = 0$, <strong>(c)</strong> $L = \\dfrac{1 + \\sqrt{5}}{2}$"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $R_n = 1 + \\dfrac{1}{R_{n-1}}$, <strong>(b)</strong> $L^2 + L - 1 = 0$, <strong>(c)</strong> $L = \\dfrac{-1 + \\sqrt{5}}{2}$",
+            "feedback": "This error occurs in part (b) from an algebraic sign error when rearranging L = 1 + 1/L, incorrectly writing L^2 + L - 1 = 0 instead of L^2 - L - 1 = 0."
+        },
+        {
+            "ans": "<strong>(a)</strong> $R_n = 1 + \\dfrac{1}{R_{n-1}}$, <strong>(b)</strong> $L^2 - L - 1 = 0$, <strong>(c)</strong> $L = \\dfrac{1 \\pm \\sqrt{5}}{2}$",
+            "feedback": "This error occurs in part (c) if you fail to reject the negative root. Because all Fibonacci numbers are positive, the sequence of ratios consists strictly of positive numbers, forcing the limit L to be positive."
+        },
+        {
+            "ans": "<strong>(a)</strong> $R_n = 1 + R_{n-1}$, <strong>(b)</strong> $L^2 - L - 1 = 0$, <strong>(c)</strong> $L = \\dfrac{1 + \\sqrt{5}}{2}$",
+            "feedback": "This error occurs in part (a) by failing to invert the ratio, incorrectly writing F_(n-1) / F_n as R_(n-1) instead of 1 / R_(n-1)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Limit Equality in Recurrence Relations",
+        "content": "The step $\\lim_{n \\to \\infty} R_n = \\lim_{n \\to \\infty} R_{n-1} = L$ is standard in A-Level and university analysis. If a sequence settles down to a steady-state limit $L$, shifting the index backwards by one step does not change the destination."
+    }
+},
+{
+    "id": "009013",
+    "group_id": "009011",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Exponentials and Logarithms",
+    "topic": "Benford's Law",
+    "subtopic": [
+        "Deductive Proof",
+        "Telescoping Sums"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 3: The Total Probability of Benford's Distribution</strong><br>Benford's Law states that the probability of the first significant digit being $d \\in \\{1, 2, \\dots, 9\\}$ is given by:$$P(d) = \\log_{10}\\left(1 + \\dfrac{1}{d}\\right) = \\log_{10}\\left(\\dfrac{d + 1}{d}\\right)$$A fundamental axiom of probability requires that the sum of the probabilities of all mutually exclusive and exhaustive outcomes must equal $1$.</div><strong>(a)</strong> Using the quotient law of logarithms, express the total probability $\\sum_{d=1}^{9} P(d)$ as a sum of logarithmic differences:$$\\sum_{d=1}^{9} \\big[ \\log_{10}(d + 1) - \\log_{10}(d) \\big]$$<strong>(b)</strong> Write out the first two terms and the final two terms of this expansion, and prove algebraically that the sum telescopes to $\\log_{10}(10)$.<br><br><strong>(c)</strong> Hence, deduce that $\\sum_{d=1}^{9} P(d) = 1$, verifying that Benford's Law forms a mathematically valid probability distribution.",
+    "steps": [
+        "<strong>(a) Expressing as Logarithmic Differences:</strong><br><br>Apply the quotient law $\\log_{10}\\left(\\dfrac{u}{v}\\right) = \\log_{10}(u) - \\log_{10}(v)$:\\begin{aligned} P(d) &= \\log_{10}\\left(\\dfrac{d + 1}{d}\\right) \\cr &= \\log_{10}(d + 1) - \\log_{10}(d) \\end{aligned}Summing from $d = 1$ to $9$:\\begin{aligned} &\\sum_{d=1}^{9} P(d) \\cr &\\quad = \\sum_{d=1}^{9} [\\log_{10}(d + 1) - \\log_{10}(d)] \\end{aligned}",
+        "<strong>(b) Telescoping Sum Expansion:</strong><br><br>Write out the terms explicitly:\\begin{aligned} &d = 1: \\; \\log_{10}(2) - \\log_{10}(1) \\cr &d = 2: \\; \\log_{10}(3) - \\log_{10}(2) \\cr &\\quad \\vdots \\cr &d = 8: \\; \\log_{10}(9) - \\log_{10}(8) \\cr &d = 9: \\; \\log_{10}(10) - \\log_{10}(9) \\end{aligned}Adding these terms together, all intermediate terms cancel pairwise:\\begin{aligned} &\\sum_{d=1}^{9} P(d) \\cr &\\quad = [\\log_{10}(2) - \\log_{10}(1)] \\cr &\\qquad + [\\log_{10}(3) - \\log_{10}(2)] \\cr &\\qquad + \\dots \\cr &\\qquad + [\\log_{10}(10) - \\log_{10}(9)] \\cr &\\quad = \\log_{10}(10) - \\log_{10}(1) \\end{aligned}Since $\\log_{10}(1) = 0$, the sum telescopes to:\\begin{aligned} \\sum_{d=1}^{9} P(d) &= \\log_{10}(10) \\end{aligned}",
+        "<strong>(c) Verifying Valid Probability Distribution:</strong><br><br>Evaluate the base-10 logarithm:\\begin{aligned} \\log_{10}(10) &= 1 \\end{aligned}Therefore:\\begin{aligned} \\sum_{d=1}^{9} P(d) &= 1 \\end{aligned}Since every probability is non-negative ($P(d) > 0$ for all $d \\in \\{1, \\dots, 9\\}$) and the total probability equals $1$, Benford's Law satisfies Kolmogorov's axioms and forms a valid discrete probability distribution.",
+        "Final Answer: <strong>(b)</strong> Telescopes to $\\log_{10}(10) - \\log_{10}(1) = \\log_{10}(10)$, <strong>(c)</strong> $\\sum_{d=1}^{9} P(d) = 1$"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(b)</strong> Telescopes to $\\log_{10}(9) - \\log_{10}(1) = \\log_{10}(9)$, <strong>(c)</strong> $\\sum_{d=1}^{9} P(d) = 0.954$",
+            "feedback": "This error occurs in part (b) by failing to evaluate the upper limit at d = 9 properly, using log_10(d) instead of log_10(d + 1) for the positive leading term, which gives log_10(9) instead of log_10(10)."
+        },
+        {
+            "ans": "<strong>(b)</strong> Telescopes to $\\log_{10}(10) - \\log_{10}(1) = \\log_{10}(10)$, <strong>(c)</strong> $\\sum_{d=1}^{9} P(d) = 10$",
+            "feedback": "This error occurs in part (c) if you evaluate log_10(10) as 10 rather than 1. Base-10 log of 10 is 1, which represents 100% total probability."
+        },
+        {
+            "ans": "<strong>(b)</strong> Telescopes to $\\log_{10}(10) + \\log_{10}(1) = \\log_{10}(10)$, <strong>(c)</strong> $\\sum_{d=1}^{9} P(d) = 1$",
+            "feedback": "This error occurs in part (b) by writing an addition sign instead of subtraction between the boundary terms. In telescoping differences, the lower boundary term carries a negative sign: -log_10(1)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: The Beauty of Telescoping Sums",
+        "content": "A telescoping sum collapses just like an antique folding telescope: each positive term is cancelled by the negative term of the subsequent step. Only the very first tail term and very last head term survive: $\\sum_{d=1}^n [f(d+1) - f(d)] = f(n+1) - f(1)$."
+    }
+},
+{
+    "id": "009014",
+    "group_id": "009011",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Coordinate Geometry",
+    "topic": "Taxicab Geometry",
+    "subtopic": [
+        "Deductive Proof",
+        "Metric Axioms"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 3: The Triangle Inequality in Metric Spaces</strong><br>In any valid metric geometry, the distance between two points cannot be shortened by travelling via an intermediate point.<br><br>For any three points $P(x_1, y_1)$, $Q(x_2, y_2)$, and $R(x_3, y_3)$, the Triangle Inequality states:$$d(P, R) \\le d(P, Q) + d(Q, R)$$The scalar modulus satisfies the triangle inequality $|u + v| \\le |u| + |v|$ for all real numbers $u, v \\in \\mathbb{R}$.</div><strong>(a)</strong> By writing $x_1 - x_3 = (x_1 - x_2) + (x_2 - x_3)$, prove using the scalar modulus inequality that:$$|x_1 - x_3| \\le |x_1 - x_2| + |x_2 - x_3|$$<strong>(b)</strong> Using the definition of the Taxicab metric $d_T(A, B) = |x_A - x_B| + |y_A - y_B|$, prove that:$$d_T(P, R) \\le d_T(P, Q) + d_T(Q, R)$$<strong>(c)</strong> State the geometric condition under which the equality $d_T(P, R) = d_T(P, Q) + d_T(Q, R)$ holds.",
+    "steps": [
+        "<strong>(a) Scalar Modulus Inequality:</strong><br><br>Let $u = x_1 - x_2$ and $v = x_2 - x_3$.<br><br>Add $u$ and $v$:\\begin{aligned} u + v &= (x_1 - x_2) + (x_2 - x_3) \\cr &= x_1 - x_3 \\end{aligned}Apply the scalar modulus inequality $|u + v| \\le |u| + |v|$:\\begin{aligned} &|(x_1 - x_2) + (x_2 - x_3)| \\cr &\\quad \\le |x_1 - x_2| + |x_2 - x_3| \\cr &|x_1 - x_3| \\le |x_1 - x_2| + |x_2 - x_3| \\end{aligned}",
+        "<strong>(b) Taxicab Triangle Inequality:</strong><br><br>By definition of the Taxicab distance:\\begin{aligned} &d_T(P, R) = |x_1 - x_3| + |y_1 - y_3| \\end{aligned}Applying the result from part (a) to both coordinates:\\begin{aligned} &|x_1 - x_3| \\le |x_1 - x_2| + |x_2 - x_3| \\cr &|y_1 - y_3| \\le |y_1 - y_2| + |y_2 - y_3| \\end{aligned}Add these two inequalities together:\\begin{aligned} &d_T(P, R) \\cr &\\quad \\le [|x_1 - x_2| + |x_2 - x_3|] \\cr &\\qquad + [|y_1 - y_2| + |y_2 - y_3|] \\cr &\\quad = [|x_1 - x_2| + |y_1 - y_2|] \\cr &\\qquad + [|x_2 - x_3| + |y_2 - y_3|] \\cr &\\quad = d_T(P, Q) + d_T(Q, R) \\end{aligned}",
+        "<strong>(c) Geometric Condition for Equality:</strong><br><br>In the scalar modulus inequality $|u + v| = |u| + |v|$, equality holds if and only if $u$ and $v$ have the same sign ($uv \\ge 0$).<br><br>For Taxicab distance, this requires:\\begin{aligned} &(x_1 - x_2)(x_2 - x_3) \\ge 0 \\cr &(y_1 - y_2)(y_2 - y_3) \\ge 0 \\end{aligned}Geometrically, this means $x_2$ lies between $x_1$ and $x_3$, and $y_2$ lies between $y_1$ and $y_3$.<br><br>Therefore, equality holds if and only if $Q$ lies inside or on the boundary of the bounding box (rectangle with sides parallel to axes) formed by $P$ and $R$.",
+        "Final Answer: <strong>(b)</strong> $d_T(P, R) \\le d_T(P, Q) + d_T(Q, R)$, <strong>(c)</strong> $Q$ lies within the bounding box formed by $P$ and $R$"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(b)</strong> $d_T(P, R) \\le d_T(P, Q) + d_T(Q, R)$, <strong>(c)</strong> $Q$ lies strictly on the straight line segment connecting $P$ and $R$",
+            "feedback": "This is a classic Euclidean misconception. In Euclidean geometry, equality requires Q to lie on the straight line segment PR. In Taxicab geometry, because motion is along a grid, ANY point Q within the entire bounding box formed by P and R yields the exact same minimal grid distance."
+        },
+        {
+            "ans": "<strong>(b)</strong> $d_T(P, R) \\ge d_T(P, Q) + d_T(Q, R)$, <strong>(c)</strong> $Q$ lies within the bounding box formed by $P$ and $R$",
+            "feedback": "This error inverts the triangle inequality in part (b). A fundamental property of all metric spaces is that direct distance is less than or equal to detour distance, so d_T(P, R) <= d_T(P, Q) + d_T(Q, R)."
+        },
+        {
+            "ans": "<strong>(b)</strong> $d_T(P, R) \\le d_T(P, Q) + d_T(Q, R)$, <strong>(c)</strong> $Q$ is equidistant from $P$ and $R$",
+            "feedback": "This error confuses the triangle inequality equality condition with the definition of a midpoint or perpendicular bisector. Equality holds whenever Q does not require moving backwards along either coordinate axis."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Euclidean vs Taxicab Geodesics",
+        "content": "In Euclidean geometry, the shortest path between two points is unique (the straight line segment). In Taxicab geometry, there are infinitely many shortest paths between $P$ and $R$! Any monotonic staircase path that stays within the bounding box rectangle has the exact same minimum distance $d_T(P, R)$."
+    }
+},
+{
+    "id": "009015",
+    "group_id": "009011",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Geometry and Proof",
+    "topic": "Pick's Theorem",
+    "subtopic": [
+        "Deductive Proof",
+        "Additive Invariance"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 3: Additivity and Invariance of Pick's Area</strong><br>Pick's Theorem states that the area of a simple lattice polygon is $A = I + \\dfrac{B}{2} - 1$.<br><br>When two simple lattice polygons $P_1$ and $P_2$ share a common boundary edge containing $k$ lattice points (including the two shared end vertices), they combine to form a new simple polygon $P_{1+2}$ whose area is $A_{1+2} = A_1 + A_2$.</div><strong>(a)</strong> For an axis-aligned rectangle with integer side lengths $m$ and $n$, express the number of strictly interior lattice points $I$ and boundary lattice points $B$ in terms of $m$ and $n$.<br><br><strong>(b)</strong> Substitute your expressions for $I$ and $B$ from part (a) into Pick's formula, and expand algebraically to prove that $A = mn$.<br><br><strong>(c)</strong> If two simple lattice polygons $P_1$ and $P_2$ have boundary point counts $B_1$ and $B_2$ respectively and share a common boundary of $k$ lattice points, show that the boundary count of the combined polygon $P_{1+2}$ is:$$B_{1+2} = B_1 + B_2 - 2k + 2$$",
+    "steps": [
+        "<strong>(a) Lattice Points of an $m \\times n$ Rectangle:</strong><br><br>Consider an axis-aligned rectangle spanning $m$ units horizontally and $n$ units vertically:<br><br>• Interior points $I$: The strictly interior grid points form a grid of $(m - 1) \\times (n - 1)$ points:\\begin{aligned} I &= (m - 1)(n - 1) \\end{aligned}<br>• Boundary points $B$: The perimeter consists of two horizontal sides of length $m$ and two vertical sides of length $n$:\\begin{aligned} B &= 2m + 2n \\end{aligned}",
+        "<strong>(b) Algebraic Proof of Pick's Formula for Rectangles:</strong><br><br>Substitute $I = (m - 1)(n - 1)$ and $B = 2m + 2n$ into Pick's formula:\\begin{aligned} A &= I + \\dfrac{B}{2} - 1 \\cr &= (m - 1)(n - 1) + \\dfrac{2m + 2n}{2} - 1 \\cr &= (mn - m - n + 1) + (m + n) - 1 \\cr &= mn - m - n + 1 + m + n - 1 \\cr &= mn \\end{aligned}This matches the geometric area of the rectangle, proving Pick's Theorem for rectangles.",
+        "<strong>(c) Combined Boundary Formula:</strong><br><br>When $P_1$ and $P_2$ are glued along a shared path of $k$ lattice points:<br><br>• The $k - 2$ strictly intermediate shared points are enclosed inside the interior of $P_{1+2}$ and are no longer on the boundary.<br><br>• The $2$ shared endpoint vertices remain on the boundary of $P_{1+2}$, but are counted in both $B_1$ and $B_2$.<br><br>Calculate the boundary points of $P_{1+2}$:\\begin{aligned} B_{1+2} &= (B_1 - k) + (B_2 - k) + 2 \\cr &= B_1 + B_2 - 2k + 2 \\end{aligned}",
+        "Final Answer: <strong>(a)</strong> $I = (m - 1)(n - 1),\\; B = 2m + 2n$, <strong>(b)</strong> $A = mn$, <strong>(c)</strong> $B_{1+2} = B_1 + B_2 - 2k + 2$"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $I = mn,\\; B = 2m + 2n$, <strong>(b)</strong> $A = mn$, <strong>(c)</strong> $B_{1+2} = B_1 + B_2 - 2k + 2$",
+            "feedback": "This error occurs in part (a) by setting I = mn. The total number of points strictly interior to the rectangle excludes the perimeter lines, giving (m - 1)(n - 1) points, not mn."
+        },
+        {
+            "ans": "<strong>(a)</strong> $I = (m - 1)(n - 1),\\; B = 2m + 2n$, <strong>(b)</strong> $A = mn$, <strong>(c)</strong> $B_{1+2} = B_1 + B_2 - k$",
+            "feedback": "This error occurs in part (c) by simply subtracting k. The k shared points appear in both B_1 and B_2, and the 2 end vertices remain on the perimeter of the combined shape, giving B_1 + B_2 - 2k + 2."
+        },
+        {
+            "ans": "<strong>(a)</strong> $I = (m - 1)(n - 1),\\; B = m + n$, <strong>(b)</strong> $A = mn$, <strong>(c)</strong> $B_{1+2} = B_1 + B_2 - 2k + 2$",
+            "feedback": "This error occurs in part (a) by halving the boundary points, writing B = m + n instead of 2m + 2n (which represents all four edges of the rectangle)."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Why Pick's Theorem Works",
+        "content": "Part (c) is the heart of the general proof of Pick's Theorem! When two polygons merge, the $k - 2$ shared boundary points become interior points ($I_{1+2} = I_1 + I_2 + k - 2$). When you substitute $I_{1+2}$ and $B_{1+2}$ into Pick's formula, the $k$ terms cancel out, proving that Pick's area is additive ($A_{1+2} = A_1 + A_2$)."
+    }
 }
 ];
