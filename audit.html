@@ -109,6 +109,7 @@
                 <option value="Pure_QB">Pure Maths</option>
                 <option value="Mech_QB">Mechanics</option>
                 <option value="Stats_QB">Statistics</option>
+                <option value="Comp_QB">Comprehension</option>
             </select>
         </div>
 
@@ -133,9 +134,10 @@
 
           // Configuration for sets per subject
           const config = {
-              "Pure_QB": { prefix: "Pure", count: 19 },
-              "Mech_QB": { prefix: "Mech", count: 19 }, // Adjust counts as you seed
-              "Stats_QB": { prefix: "Stats", count: 19 }
+              "Pure_QB": { prefix: "Pure", count: 17 },
+              "Mech_QB": { prefix: "Mech", count: 6 }, // Adjust counts as you seed
+              "Stats_QB": { prefix: "Stats", count: 6 },
+              "Comp_QB": { prefix: "Comp", count: 1 }
           };
 
           function populateSets() {
@@ -174,38 +176,6 @@
         <!-- A Level questions will appear here -->
     </main>
 
-    <!-- ENGINE -->
-  <!-- <script src="a-level-engine.js"></script>--> 
-<!--
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-          // Initialize default dataset (Pure Set 1) directly
-          ALevelHub.init();
-
-          // Bind dropdown select listener
-          const setSelect = document.getElementById("setSelect");
-          if (setSelect) {
-              setSelect.addEventListener("change", (e) => {
-                  ALevelHub.loadSet(e.target.value);
-              });
-          }
-      });
-    </script>
--->
-<!--
-<script>
-      document.addEventListener("DOMContentLoaded", () => {
-          // Initialize default dataset (New Pure Set 1) directly
-          ALevelHub.loadSet("Pure_QB/Pure_1");
-
-          // Bind dropdown select listener
-          const setSelect = document.getElementById("setSelect");
-          if (setSelect) {
-              setSelect.addEventListener("change", (e) => {
-                  ALevelHub.loadSet(e.target.value);
-              });
-          }
-      });
-    </script>-->
+  
 </body>
 </html>
