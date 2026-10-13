@@ -1,3 +1,0 @@
-window.ALEVEL_QUESTIONS = [
-
-];
