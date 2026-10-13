@@ -198,5 +198,170 @@ window.ALEVEL_QUESTIONS = [
         "title": "The Head Teacher's Eye: Vertex Double-Counting in Pick's Theorem",
         "content": "When calculating the boundary points $B$ of a polygon, students often count the points on each edge and simply add them up, inadvertently counting each corner vertex twice! To avoid this, count the number of unit vectors or segments along each edge: the sum of segments on the perimeter always equals the exact number of boundary points $B$."
     }
-}
+},
+    {
+        "id": "009006",
+        "group_id": "009006",
+        "board": "OCR MEI",
+        "branch": "Comprehension",
+        "level": "A",
+        "major_area": "Algebra and Functions",
+        "topic": "The Harmonic Mean",
+        "subtopic": [
+            "Algebraic Rearrangement",
+            "Variable Relationships"
+        ],
+        "img": false,
+        "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 2: The Harmonic Mean</strong><br>The relationship between the Harmonic Mean $H$ and two rates $x$ and $y$ can be expressed as:$$H = \\dfrac{2xy}{x + y}$$Equivalently, the reciprocal of the Harmonic Mean is the arithmetic mean of the reciprocals:$$\\dfrac{1}{H} = \\dfrac{1}{2} \\left( \\dfrac{1}{x} + \\dfrac{1}{y} \\right)$$</div>A delivery van travels at a constant speed of $x\\text{ mph}$ for the outward journey and $y\\text{ mph}$ for the return journey. The true average speed for the total trip is $H = 40\\text{ mph}$.<br><br><strong>(a)</strong> Show that $y = \\dfrac{20x}{x - 20}$.<br><br><strong>(b)</strong> State the horizontal asymptote of the graph of $y$ against $x$.<br><br><strong>(c)</strong> If $x = 30$, find $y$. If $x = 20$, explain why no real value of $y$ can satisfy the model.",
+        "steps": [
+            "<strong>(a) Rearranging for $y$:</strong><br><br>Substitute $H = 40$ into the formula:\\begin{aligned} 40 &= \\dfrac{2xy}{x + y} \\cr 40(x + y) &= 2xy \\cr 20(x + y) &= xy \\cr 20x + 20y &= xy \\cr 20x &= xy - 20y \\cr 20x &= y(x - 20) \\cr y &= \\dfrac{20x}{x - 20} \\end{aligned}",
+            "<strong>(b) Horizontal Asymptote:</strong><br><br>As $x \\to \\infty$, we can divide numerator and denominator by $x$:\\begin{aligned} y &= \\dfrac{20}{1 - \\frac{20}{x}} \\cr y &\\to 20 \\end{aligned}The horizontal asymptote is <strong>$y = 20$</strong>. Physically, this means if the outward speed was infinitely fast, the return speed must still be at least $20\\text{ mph}$ to maintain an average of $40\\text{ mph}$.",
+            "<strong>(c) Numerical Evaluation:</strong><br><br>• For $x = 30$:\\begin{aligned} y &= \\dfrac{20(30)}{30 - 20} \\cr &= \\dfrac{600}{10} \\cr &= 60\\text{ mph} \\end{aligned}<br>• For $x = 20$:\\begin{aligned} y &= \\dfrac{400}{0} \\end{aligned}This is undefined. If the outward leg is $20\\text{ mph}$, the driver uses all the time allowed for the total journey (since the average must be $40\\text{ mph}$), leaving no time for the return leg.",
+            "Final Answer: <strong>(a)</strong> Proof shown, <strong>(b)</strong> $y = 20$, <strong>(c)</strong> $60\\text{ mph}$ and Undefined."
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(b)</strong> $y = 40$, <strong>(c)</strong> $60\\text{ mph}$",
+                "feedback": "Check the horizontal asymptote again. As $x$ becomes very large, the term $-20$ becomes negligible, so $y \\approx 20x/x = 20$."
+            },
+            {
+                "ans": "<strong>(b)</strong> $y = 20$, <strong>(c)</strong> $40\\text{ mph}$",
+                "feedback": "For $x=30$, the calculation $600/10$ results in $60$, not $40$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "theory",
+            "title": "The Speed Barrier",
+            "content": "Notice the asymptote $y=20$. Because the distance is equal, you can never average $40\\text{ mph}$ if one leg is performed at half that speed ($20\\text{ mph}$) or less, because you would spend an infinite amount of time on that leg."
+        }
+    },
+    {
+        "id": "009007",
+        "group_id": "009006",
+        "board": "OCR MEI",
+        "branch": "Comprehension",
+        "level": "A",
+        "major_area": "Sequences and Series",
+        "topic": "The Golden Ratio",
+        "subtopic": [
+            "Quadratic Derivation",
+            "Exact Surd Form"
+        ],
+        "img": false,
+        "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 2: The Golden Ratio</strong><br>The Golden Ratio, $\\phi$, describes a proportion where:$$\\dfrac{a + b}{a} = \\dfrac{a}{b} = \\phi$$</div><strong>(a)</strong> By letting $b = 1$ and $a = \\phi$, show that the definition leads to: $\\phi^2 - \\phi - 1 = 0$.<br><br><strong>(b)</strong> Use the quadratic formula to find the exact value of $\\phi$.<br><br><strong>(c)</strong> Express $\\phi^3$ in the form $p\\phi + q$, where $p$ and $q$ are integers.",
+        "steps": [
+            "<strong>(a) Deriving the Quadratic:</strong><br><br>Substitute $b=1$ and $a=\\phi$ into the first part of the equality:\\begin{aligned} \\dfrac{\\phi + 1}{\\phi} &= \\phi \\cr \\phi + 1 &= \\phi^2 \\cr \\phi^2 - \\phi - 1 &= 0 \\end{aligned}",
+            "<strong>(b) Exact Value:</strong><br><br>Using the quadratic formula $x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$:\\begin{aligned} \\phi &= \\dfrac{-(-1) \\pm \\sqrt{(-1)^2 - 4(1)(-1)}}{2} \\cr &= \\dfrac{1 \\pm \\sqrt{5}}{2} \\end{aligned}Since the ratio must be positive, $\\phi = \\dfrac{1 + \\sqrt{5}}{2}$.",
+            "<strong>(c) Expressing $\\phi^3$:</strong><br><br>From $\\phi^2 = \\phi + 1$:\\begin{aligned} \\phi^3 &= \\phi(\\phi^2) \\cr &= \\phi(\\phi + 1) \\cr &= \\phi^2 + \\phi \\cr &= (\\phi + 1) + \\phi \\cr &= 2\\phi + 1 \\end{aligned}So $p = 2$ and $q = 1$.",
+            "Final Answer: <strong>(b)</strong> $\\frac{1+\\sqrt{5}}{2}$, <strong>(c)</strong> $2\\phi + 1$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(b)</strong> $\\frac{1-\\sqrt{5}}{2}$, <strong>(c)</strong> $2\\phi + 1$",
+                "feedback": "The Golden Ratio must be a positive number. The value $(1-\\sqrt{5})/2$ is negative."
+            }
+        ],
+        "bradley_insight": {
+            "type": "lightbulb",
+            "title": "Recursive Powers",
+            "content": "One of the most beautiful properties of $\\phi$ is that its powers can always be broken back down into linear combinations of itself ($p\\phi + q$). This is why it appears so often in recursive patterns in nature."
+        }
+    },
+    {
+        "id": "009008",
+        "group_id": "009006",
+        "board": "OCR MEI",
+        "branch": "Comprehension",
+        "level": "A",
+        "major_area": "Exponentials and Logarithms",
+        "topic": "Benford's Law",
+        "subtopic": [
+            "Probability Calculations",
+            "Logarithmic Identities"
+        ],
+        "img": false,
+        "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 2: Benford's Law</strong><br>The probability $P(d)$ that the first significant digit of a number is $d$ is given by:$$P(d) = \\log_{10} \\left( 1 + \\dfrac{1}{d} \\right)$$This can be rewritten as $P(d) = \\log_{10}(d + 1) - \\log_{10}(d)$.</div><strong>(a)</strong> Show that the probability of the first digit being $1$ is approx $30.1\\%$.<br><br><strong>(b)</strong> Calculate the exact total probability that the first digit is either $1$ or $2$, in the form $\\log_{10} A$ where $A$ is an integer.<br><br><strong>(c)</strong> Show that $P(d) + P(d+1) = \\log_{10} \\left( \\dfrac{d+2}{d} \\right)$.",
+        "steps": [
+            "<strong>(a) Probability of $d=1$:</strong><br><br>\\begin{aligned} P(1) &= \\log_{10}(1 + 1) \\cr &= \\log_{10}(2) \\cr &\\approx 0.30103 \\dots \\cr &\\approx 30.1\\% \\end{aligned}",
+            "<strong>(b) Combined Probability $P(1) + P(2)$:</strong><br><br>Using the identity $\\log A + \\log B = \\log(AB)$:\\begin{aligned} P(1) + P(2) &= \\log_{10}(2) + \\log_{10}(1.5) \\cr &= \\log_{10}(2 \\times 1.5) \\cr &= \\log_{10}(3) \\end{aligned}So $A = 3$.",
+            "<strong>(c) Algebraic Proof:</strong><br><br>\\begin{aligned} P(d) + P(d+1) &= [\\log_{10}(d+1) - \\log_{10}(d)] + [\\log_{10}(d+2) - \\log_{10}(d+1)] \\cr &= \\log_{10}(d+2) - \\log_{10}(d) \\cr &= \\log_{10} \\left( \\dfrac{d+2}{d} \\right) \\end{aligned}This is a 'telescoping' sum where the middle terms cancel out.",
+            "Final Answer: <strong>(a)</strong> $30.1\\%$, <strong>(b)</strong> $\\log_{10} 3$, <strong>(c)</strong> Proof shown."
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(b)</strong> $\\log_{10} 2.5$",
+                "feedback": "Careful! Logarithms add by multiplying their arguments: $2 \\times 1.5 = 3$, not $2.5$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "theory",
+            "title": "The Telescoping Property",
+            "content": "Because $P(d)$ is defined as a difference of logs, adding consecutive probabilities results in 'telescoping' cancellation. This explains why the total probability across all digits $1$ to $9$ sums perfectly to $\\log_{10}(10) = 1$."
+        }
+    },
+    {
+        "id": "009009",
+        "group_id": "009006",
+        "board": "OCR MEI",
+        "branch": "Comprehension",
+        "level": "A",
+        "major_area": "Geometry and Proof",
+        "topic": "Taxicab Geometry",
+        "subtopic": [
+            "Locus of Points",
+            "Modulus Equations"
+        ],
+        "img": false,
+        "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 2: The Taxicab Metric</strong><br>In Taxicab geometry, the distance between $P(x_1, y_1)$ and $Q(x_2, y_2)$ is:$$d_T(P, Q) = |x_1 - x_2| + |y_1 - y_2|$$</div>Consider a Taxicab circle centered at $(0, 0)$ with radius $r = 4$.<br><br><strong>(a)</strong> Write down the equation of this locus using modulus notation.<br><br><strong>(b)</strong> Find the four points where this locus intersects the axes.<br><br><strong>(c)</strong> Show that the locus in the first quadrant is a straight line $y = mx + c$.",
+        "steps": [
+            "<strong>(a) The Equation:</strong><br><br>The distance from $(x, y)$ to $(0, 0)$ must be $4$:\\begin{aligned} |x - 0| + |y - 0| &= 4 \\cr |x| + |y| &= 4 \\end{aligned}",
+            "<strong>(b) Axis Intersects:</strong><br><br>• $x$-axis ($y=0$): $|x| = 4 \\implies x = \\pm 4$. Points are <strong>$(4, 0)$ and $(-4, 0)$</strong>.<br>• $y$-axis ($x=0$): $|y| = 4 \\implies y = \\pm 4$. Points are <strong>$(0, 4)$ and $(0, -4)$</strong>.",
+            "<strong>(c) First Quadrant Locus:</strong><br><br>In the first quadrant, $x \\ge 0$ and $y \\ge 0$, so $|x| = x$ and $|y| = y$.<br>The equation becomes:\\begin{aligned} x + y &= 4 \\cr y &= -x + 4 \\end{aligned}This is a straight line with $m = -1$ and $c = 4$.",
+            "Final Answer: <strong>(a)</strong> $|x| + |y| = 4$, <strong>(b)</strong> $(\\pm 4, 0), (0, \\pm 4)$, <strong>(c)</strong> $y = -x + 4$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(a)</strong> $x^2 + y^2 = 16$",
+                "feedback": "That is the equation for a Euclidean circle. In Taxicab geometry, we sum the absolute differences of the coordinates, not their squares."
+            }
+        ],
+        "bradley_insight": {
+            "type": "theory",
+            "title": "Square Circles",
+            "content": "In Taxicab geometry, a 'circle' is actually a square tilted at $45$ degrees. This is because the distance is measured in 'blocks'—like walking around a city grid."
+        }
+    },
+    {
+        "id": "009010",
+        "group_id": "009006",
+        "board": "OCR MEI",
+        "branch": "Comprehension",
+        "level": "A",
+        "major_area": "Geometry and Proof",
+        "topic": "Pick's Theorem",
+        "subtopic": [
+            "Formula Inversion",
+            "Variable Constraints"
+        ],
+        "img": false,
+        "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 2: Pick's Theorem</strong><br>Pick's Theorem relates Area ($A$), interior points ($I$) and boundary points ($B$):$$A = I + \\dfrac{B}{2} - 1$$</div><strong>(a)</strong> Express $B$ in terms of $A$ and $I$.<br><br><strong>(b)</strong> A lattice polygon has an area of $6.5$. Explain why the number of boundary points $B$ must be an odd number.<br><br><strong>(c)</strong> If $I = 0$, show that the minimum $B$ required is $3$, and state the area.",
+        "steps": [
+            "<strong>(a) Rearranging for $B$:</strong><br><br>\\begin{aligned} A + 1 - I &= \\dfrac{B}{2} \\cr B &= 2(A - I + 1) \\end{aligned}",
+            "<strong>(b) Parity Argument:</strong><br><br>Substitute $A = 6.5$ into the formula for $B$:\\begin{aligned} B &= 2(6.5 - I + 1) \\cr B &= 13 - 2I + 2 \\cr B &= 15 - 2I \\end{aligned}Since $I$ is an integer, $2I$ is always even. Subtracting an even number from an odd number ($15$) always results in an <strong>odd</strong> number.",
+            "<strong>(c) Minimum $B$ and Area:</strong><br><br>A polygon must have at least $3$ vertices (boundary points) to enclose any area. Thus, min $B = 3$.<br>For $I = 0$ and $B = 3$:\\begin{aligned} A &= 0 + \\dfrac{3}{2} - 1 \\cr &= 0.5 \\end{aligned}",
+            "Final Answer: <strong>(a)</strong> $B = 2(A - I + 1)$, <strong>(b)</strong> Proof shown, <strong>(c)</strong> $B = 3, A = 0.5$"
+        ],
+        "pi_options": [
+            {
+                "ans": "<strong>(b)</strong> $B$ is always even.",
+                "feedback": "Look closely at the formula. If $A$ has a '.5' fractional part, $2A$ will be an odd integer, forcing $B$ to be odd."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Lattice Constraints",
+            "content": "Because $I$ and $B$ are integers, Pick's Theorem implies that the area of any lattice polygon must be a multiple of $0.5$. You will never find a lattice polygon with an area of $6.7$, for example!"
+        }
+    }
+
 ];
