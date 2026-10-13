@@ -732,7 +732,7 @@ window.ALEVEL_QUESTIONS = [
         "Taxicab Ellipse"
     ],
     "img": false,
-    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 4: The Taxicab Ellipse</strong><br>In Taxicab geometry, an ellipse with foci $F_1(-2, 0)$ and $F_2(2, 0)$ and constant sum $k = 6$ satisfies:\\begin{aligned} d_T(P, F_1) + d_T(P, F_2) &= 6 \\cr |x + 2| + |y| + |x - 2| + |y| &= 6 \\end{aligned}</div><strong>(a)</strong> Simplify this equation to the form:\\begin{aligned} |x + 2| + |x - 2| + 2|y| = 6 \\end{aligned}<strong>(b)</strong> Find the $y$-intercepts of this locus by setting $x = 0$.<br><br><strong>(c)</strong> For $-2 \\le x \\le 2$, the term $|x + 2| + |x - 2|$ equals $4$. Find the equation of the locus in this interval, and describe its geometric shape.",
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 4: The Taxicab Ellipse</strong><br>In Taxicab geometry, an ellipse with foci $F_1(-2, 0)$ and $F_2(2, 0)$ and constant sum $k = 6$ satisfies:\\begin{aligned} &d_T(P, F_1) + d_T(P, F_2) = 6 \\cr& |x + 2| + |y| + |x - 2|\\cr & \\qquad \\qquad + |y| &= 6 \\end{aligned}</div><strong>(a)</strong> Simplify this equation to the form:\\begin{aligned} |x + 2| + |x - 2| + 2|y| = 6 \\end{aligned}<strong>(b)</strong> Find the $y$-intercepts of this locus by setting $x = 0$.<br><br><strong>(c)</strong> For $-2 \\le x \\le 2$, the term $|x + 2| + |x - 2|$ equals $4$. Find the equation of the locus in this interval, and describe its geometric shape.",
     "steps": [
         "<strong>(a) Simplifying the Equation:</strong><br><br>Combine the identical $|y|$ terms:\\begin{aligned} &|x + 2| + |y| + |x - 2| + |y| = 6 \\cr &|x + 2| + |x - 2| + 2|y| = 6 \\end{aligned}",
         "<strong>(b) $y$-Intercepts ($x = 0$):</strong><br><br>Substitute $x = 0$ into the equation:\\begin{aligned} &|0 + 2| + |0 - 2| + 2|y| = 6 \\cr &2 + 2 + 2|y| = 6 \\cr &4 + 2|y| = 6 \\cr &2|y| = 2 \\cr &|y| = 1 \\cr &y = \\pm 1 \\end{aligned}Thus, the $y$-intercepts are $(0, 1)$ and $(0, -1)$.",
@@ -797,6 +797,206 @@ window.ALEVEL_QUESTIONS = [
         "type": "deeper",
         "title": "The Head Teacher's Eye: Invariance and Half-Integers in Pick's Grid",
         "content": "Notice the exact rate of trade-off: each interior point is worth an area of $1$, while each boundary point is worth an area of $1/2$. Therefore, losing $1$ interior point is precisely balanced by gaining $2$ boundary points, leaving the total area invariant."
+    }
+},
+{
+    "id": "009021",
+    "group_id": "009021",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "The Harmonic Mean",
+    "subtopic": [
+        "Critical Analysis",
+        "Domain Failures"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 5: Domain Limitations</strong><br>For two real numbers $x$ and $y$, the Arithmetic Mean is $A = \\dfrac{x + y}{2}$ and the Harmonic Mean is $H = \\dfrac{2xy}{x + y}$.<br><br>While $A$ is defined for all real numbers, $H$ is undefined when $x + y = 0$. The inequality $A \\ge H$ assumes $x, y > 0$, and can fail if negative numbers are admitted.</div>Consider the two real numbers $x = 2$ and $y = -6$.<br><br><strong>(a)</strong> Calculate the Arithmetic Mean, $A$, and the Harmonic Mean, $H$, of these two numbers.<br><br><strong>(b)</strong> Show that for these values, $A < H$, and explain algebraically why the inequality $A \\ge H$ reversed.<br><br><strong>(c)</strong> Consider the pair $x = k$ and $y = -k$, where $k \\ne 0$. State the value of $A$, and explain why no finite value of $H$ can exist.",
+    "steps": [
+        "<strong>(a) Calculating $A$ and $H$:</strong><br><br>Calculate the Arithmetic Mean:\\begin{aligned} A &= \\dfrac{2 + (-6)}{2} \\cr &= \\dfrac{-4}{2} \\cr &= -2 \\end{aligned}Calculate the Harmonic Mean:\\begin{aligned} H &= \\dfrac{2(2)(-6)}{2 + (-6)} \\cr &= \\dfrac{-24}{-4} \\cr &= 6 \\end{aligned}",
+        "<strong>(b) Inequality Reversal:</strong><br><br>Comparing the two values:\\begin{aligned} A = -2 &< 6 = H \\end{aligned}Thus, $A < H$.<br><br>To see why algebraically, consider the difference $A - H$:\\begin{aligned} A - H &= \\dfrac{x + y}{2} - \\dfrac{2xy}{x + y} \\cr &= \\dfrac{(x + y)^2 - 4xy}{2(x + y)} \\cr &= \\dfrac{(x - y)^2}{2(x + y)} \\end{aligned}Because $(x - y)^2 \\ge 0$ for all real numbers, the sign of $A - H$ is determined entirely by the denominator $x + y$.<br><br>Since $x + y = -4 < 0$, the denominator is negative, which forces $A - H < 0$, reversing the inequality to $A < H$.",
+        "<strong>(c) Asymptotic Failure ($y = -k$):</strong><br><br>For $x = k$ and $y = -k$:\\begin{aligned} A &= \\dfrac{k + (-k)}{2} \\cr &= 0 \\end{aligned}For the Harmonic Mean:\\begin{aligned} H &= \\dfrac{2(k)(-k)}{k + (-k)} \\cr &= \\dfrac{-2k^2}{0} \\end{aligned}Division by zero is undefined. Hence, no finite value of $H$ exists.",
+        "Final Answer: <strong>(a)</strong> $A = -2,\\; H = 6$, <strong>(b)</strong> $A < H$ because $x + y < 0$, <strong>(c)</strong> $A = 0,\\; H$ undefined"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $A = -2,\\; H = -6$, <strong>(b)</strong> $A > H$ because $x + y < 0$, <strong>(c)</strong> $A = 0,\\; H$ undefined",
+            "feedback": "This error occurs in part (a) from a sign slip when evaluating -24 / -4, writing -6 instead of +6, which masks the reversal of the inequality."
+        },
+        {
+            "ans": "<strong>(a)</strong> $A = -2,\\; H = 6$, <strong>(b)</strong> $A < H$ because $x + y < 0$, <strong>(c)</strong> $A = 0,\\; H = 0$",
+            "feedback": "This error occurs in part (c) by assuming that -2k^2 / 0 equals 0. Division by zero is undefined, meaning no finite harmonic mean exists."
+        },
+        {
+            "ans": "<strong>(a)</strong> $A = 2,\\; H = -6$, <strong>(b)</strong> $A > H$ because $x + y > 0$, <strong>(c)</strong> $A = 0,\\; H$ undefined",
+            "feedback": "This error occurs in part (a) by calculating the arithmetic mean as (6 - 2) / 2 = 2 rather than (2 + (-6)) / 2 = -2."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: The Hidden Positivity Condition",
+        "content": "Classical inequalities such as $A \\ge H$ or $A \\ge G$ carry a strict condition: all variables must be positive ($x, y > 0$). If $x + y < 0$, the divisor in the identity $(x-y)^2 / [2(x+y)]$ turns negative, flipping the inequality to $A < H$."
+    }
+},
+{
+    "id": "009022",
+    "group_id": "009021",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "The Golden Ratio",
+    "subtopic": [
+        "Proof by Contradiction",
+        "Irrationality"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 5: Proof of Irrationality</strong><br>A number is rational if it can be written as $\\dfrac{p}{q}$, where $p, q \\in \\mathbb{Z}^+$ are coprime ($\\gcd(p, q) = 1$).<br><br>A proof by contradiction assumes the proposition is false and deduces a logical impossibility.<br><br>The Golden Ratio satisfies $\\phi^2 - \\phi - 1 = 0$, giving $\\phi = \\dfrac{1 + \\sqrt{5}}{2}$.</div><strong>(a)</strong> Assume for contradiction that $\\phi = \\dfrac{p}{q}$ with $\\gcd(p, q) = 1$. Substitute into $\\phi^2 - \\phi - 1 = 0$ to show that:\\begin{aligned} p^2 - pq - q^2 = 0 \\end{aligned}<strong>(b)</strong> Rearrange this equation to:\\begin{aligned} p(p - q) = q^2 \\end{aligned}Explain why any prime factor of $q$ must also be a prime factor of $p$.<br><br><strong>(c)</strong> Explain why this contradicts $\\gcd(p, q) = 1$, and conclude what this proves about $\\phi$.",
+    "steps": [
+        "<strong>(a) Substituting $\\phi = \\dfrac{p}{q}$:</strong><br><br>Substitute $\\phi = \\dfrac{p}{q}$ into the quadratic equation:\\begin{aligned} &\\left(\\dfrac{p}{q}\\right)^2 - \\dfrac{p}{q} - 1 = 0 \\cr &\\dfrac{p^2}{q^2} - \\dfrac{p}{q} - 1 = 0 \\end{aligned}Multiply through by $q^2$:\\begin{aligned} &p^2 - pq - q^2 = 0 \\end{aligned}",
+        "<strong>(b) Prime Divisibility Deduction:</strong><br><br>Rearrange the equation:\\begin{aligned} &p^2 - pq = q^2 \\cr &p(p - q) = q^2 \\end{aligned}Let $k$ be any prime factor of $q$. Then $k$ divides $q^2$.<br><br>Since $p(p - q) = q^2$, $k$ must divide the product $p(p - q)$.<br><br>By Euclid's lemma, $k$ must divide $p$ or $k$ must divide $(p - q)$:<br><br>• If $k$ divides $p$, then $k$ is a factor of $p$.<br><br>• If $k$ divides $(p - q)$, then since $k$ divides $q$, $k$ must also divide $(p - q) + q = p$.<br><br>In both cases, any prime factor of $q$ must also divide $p$.",
+        "<strong>(c) The Contradiction:</strong><br><br>Since $q > 1$ (as $\\phi$ is not an integer), $q$ has at least one prime factor $k$.<br><br>From part (b), this prime factor $k$ also divides $p$.<br><br>Therefore:\\begin{aligned} \\gcd(p, q) \\ge k > 1 \\end{aligned}This directly contradicts the initial assumption that $\\gcd(p, q) = 1$ (that the fraction was in simplest form).<br><br>Therefore, the initial assumption must be false, proving that $\\phi$ is irrational.",
+        "Final Answer: <strong>(a)</strong> $p^2 - pq - q^2 = 0$, <strong>(b)</strong> Prime $k \\mid q \\implies k \\mid p$, <strong>(c)</strong> $\\gcd(p, q) > 1$ (contradiction, $\\phi$ is irrational)"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $p^2 - pq - q^2 = 0$, <strong>(b)</strong> Prime $k \\mid q \\implies k \\mid p$, <strong>(c)</strong> $\\gcd(p, q) = 1$ (consistent, $\\phi$ is rational)",
+            "feedback": "This error claims the result is consistent with rationality. Because a prime factor divides both p and q, gcd(p, q) >= k > 1, which contradicts coprime fraction form."
+        },
+        {
+            "ans": "<strong>(a)</strong> $p^2 + pq - q^2 = 0$, <strong>(b)</strong> Prime $k \\mid q \\implies k \\mid p$, <strong>(c)</strong> $\\gcd(p, q) > 1$ (contradiction, $\\phi$ is irrational)",
+            "feedback": "This error occurs in part (a) from a sign slip, writing +pq instead of -pq when substituting into phi^2 - phi - 1 = 0."
+        },
+        {
+            "ans": "<strong>(a)</strong> $p^2 - pq - q^2 = 0$, <strong>(b)</strong> Prime $k \\mid p \\implies k \\mid (p + q)$, <strong>(c)</strong> $\\gcd(p, q) > 1$ (contradiction, $\\phi$ is irrational)",
+            "feedback": "This error in part (b) inverts the divisibility argument by starting with factors of p rather than using p(p - q) = q^2 to show that factors of q must divide p."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Structuring Proofs by Contradiction",
+        "content": "Every contradiction proof requires three clear milestones: 1) State the negation clearly ($\"\\text{Assume } \\phi = p/q \\text{ with } \\gcd(p, q) = 1\"$), 2) Derive a strict algebraic consequence ($k \\mid p \\text{ and } k \\mid q$), and 3) Explicitly identify the clash with the premise."
+    }
+},
+{
+    "id": "009023",
+    "group_id": "009021",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Exponentials and Logarithms",
+    "topic": "Benford's Law",
+    "subtopic": [
+        "Critical Analysis",
+        "Scale Invariance"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 5: Scale Invariance</strong><br>A key property of Benford's Law is scale invariance: multiplying a dataset by a constant $c > 0$ preserves the distribution:$$P(d) = \\log_{10}\\left(1 + \\dfrac{1}{d}\\right)$$A discrete uniform distribution on digits $\\{1, \\dots, 9\\}$ assigns equal probability $P(d) = \\dfrac{1}{9}$.</div>A researcher claims financial assets follow a uniform first-digit distribution with $P(d) = \\dfrac{1}{9}$.<br><br><strong>(a)</strong> Calculate the probability that the first digit is $1, 2,$ or $3$ under this uniform model.<br><br><strong>(b)</strong> Under Benford's Law, calculate the exact probability that the first digit is $1, 2,$ or $3$, in the form $\\log_{10} k$, where $k \\in \\mathbb{Z}$.<br><br><strong>(c)</strong> If all values are doubled ($x \\mapsto 2x$), explain why a uniform distribution cannot be scale invariant.",
+    "steps": [
+        "<strong>(a) Uniform Model Probability:</strong><br><br>Under the uniform model:\\begin{aligned} P(1, 2, 3) &= P(1) + P(2) + P(3) \\cr &= \\dfrac{1}{9} + \\dfrac{1}{9} + \\dfrac{1}{9} \\cr &= \\dfrac{3}{9} \\cr &= \\dfrac{1}{3} \\cr &\\approx 33.3\\% \\end{aligned}",
+        "<strong>(b) Benford's Model Probability:</strong><br><br>Sum the probabilities under Benford's Law:\\begin{aligned} &P(1, 2, 3) \\cr &\\quad = P(1) + P(2) + P(3) \\cr &\\quad = \\log_{10}(2) + \\log_{10}\\left(\\dfrac{3}{2}\\right) \\cr &\\qquad + \\log_{10}\\left(\\dfrac{4}{3}\\right) \\end{aligned}Apply the logarithm product law:\\begin{aligned} P(1, 2, 3) &= \\log_{10}\\left(2 \\times \\dfrac{3}{2} \\times \\dfrac{4}{3}\\right) \\cr &= \\log_{10}(4) \\cr &\\approx 0.602 \\cr &\\approx 60.2\\% \\end{aligned}Thus, $k = 4$.",
+        "<strong>(c) Failure of Scale Invariance:</strong><br><br>Consider what happens when all values are doubled ($x \\mapsto 2x$):<br><br>• Numbers starting with $5, 6, 7, 8, 9$ have values in $[5, 10) \\times 10^m$. Doubling them gives values in $[10, 20) \\times 10^m$, meaning they now all start with digit $1$.<br><br>• In the uniform model, digits $5, 6, 7, 8, 9$ originally held a combined probability of:\\begin{aligned} \\dfrac{5}{9} &\\approx 55.6\\% \\end{aligned}After doubling, all these values now start with digit $1$, so digit $1$ now holds well over $50\\%$ of the probability, destroying the uniform $1/9$ balance.<br><br>Thus, a uniform distribution cannot be scale invariant, whereas Benford's logarithmic distribution naturally absorbs scalar factors.",
+        "Final Answer: <strong>(a)</strong> $\\dfrac{1}{3}$, <strong>(b)</strong> $\\log_{10}(4)$, <strong>(c)</strong> Doubling shifts digits 5–9 to digit 1 (breaks $1/9$ balance)"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $\\dfrac{1}{3}$, <strong>(b)</strong> $\\log_{10}(3)$, <strong>(c)</strong> Doubling shifts digits 5–9 to digit 1 (breaks $1/9$ balance)",
+            "feedback": "This error occurs in part (b) by summing only P(1) and P(2), which gives log_10(3). Including P(3) telescopes to log_10(4)."
+        },
+        {
+            "ans": "<strong>(a)</strong> $\\dfrac{3}{10}$, <strong>(b)</strong> $\\log_{10}(4)$, <strong>(c)</strong> Doubling shifts digits 5–9 to digit 1 (breaks $1/9$ balance)",
+            "feedback": "This error assumes there are 10 possible leading digits (0 to 9), evaluating 3/10. Leading significant digits cannot be zero, so there are only 9 digits (1 to 9)."
+        },
+        {
+            "ans": "<strong>(a)</strong> $\\dfrac{1}{3}$, <strong>(b)</strong> $\\log_{10}(4)$, <strong>(c)</strong> Doubling preserves equal frequencies (scale invariant)",
+            "feedback": "This error claims the uniform distribution remains invariant under doubling. Doubling compresses the entire upper half of digits (5 to 9) into leading digit 1, causing a massive surge in digit 1."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Why Logarithms Ensure Scale Invariance",
+        "content": "Why is Benford's Law scale invariant? Because $\\log_{10}(c \\cdot x) = \\log_{10}(c) + \\log_{10}(x)$. Multiplying by a constant simply shifts the logarithmic mantissas by a fixed translation $\\log_{10}(c)$ modulo 1, preserving the relative interval widths across all digits."
+    }
+},
+{
+    "id": "009024",
+    "group_id": "009021",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Coordinate Geometry",
+    "topic": "Taxicab Geometry",
+    "subtopic": [
+        "Critical Analysis",
+        "Equilateral Triangles"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 5: Taxicab Triangles</strong><br>In Taxicab geometry, the distance between points is $d_T(P, Q) = |x_1 - x_2| + |y_1 - y_2|$.<br><br>A triangle $ABC$ is Taxicab-equilateral if all three Taxicab side lengths are equal:$$d_T(A, B) = d_T(B, C) = d_T(C, A) = s$$</div>Consider vertices $A(0, 0)$ and $B(s, 0)$ with $s > 0$.<br><br><strong>(a)</strong> Verify that vertex $C\\left(\\dfrac{s}{2}, \\dfrac{s}{2}\\right)$ produces a Taxicab-equilateral triangle with side length $s$.<br><br><strong>(b)</strong> Find the Euclidean angles of triangle $ABC$, and state how they differ from a standard Euclidean equilateral triangle.<br><br><strong>(c)</strong> Now suppose a triangle has two sides parallel to the coordinate axes: $A(0, 0)$, $B(s, 0)$, and $D(0, s)$. Prove by contradiction that no triangle with two perpendicular sides parallel to the axes can be Taxicab-equilateral.",
+    "steps": [
+        "<strong>(a) Verifying Taxicab-Equilateral Triangle:</strong><br><br>Calculate the three Taxicab side lengths:\\begin{aligned} d_T(A, B) &= |s - 0| + |0 - 0| \\cr &= s \\end{aligned}For side $AC$ with $C(s/2, s/2)$:\\begin{aligned} d_T(A, C) &= \\left|\\dfrac{s}{2} - 0\\right| + \\left|\\dfrac{s}{2} - 0\\right| \\cr &= \\dfrac{s}{2} + \\dfrac{s}{2} \\cr &= s \\end{aligned}For side $BC$:\\begin{aligned} d_T(B, C) &= \\left|\\dfrac{s}{2} - s\\right| + \\left|\\dfrac{s}{2} - 0\\right| \\cr &= \\left|-\\dfrac{s}{2}\\right| + \\dfrac{s}{2} \\cr &= \\dfrac{s}{2} + \\dfrac{s}{2} \\cr &= s \\end{aligned}Since all three sides equal $s$, triangle $ABC$ is Taxicab-equilateral.",
+        "<strong>(b) Euclidean Angles of Triangle $ABC$:</strong><br><br>Find the gradients of the sides:\\begin{aligned} m_{AB} &= 0 \\cr m_{AC} &= \\dfrac{s/2}{s/2} = 1 \\cr m_{BC} &= \\dfrac{s/2 - 0}{s/2 - s} = -1 \\end{aligned}Since $m_{AC} \\times m_{BC} = (1)(-1) = -1$, the angle at vertex $C$ is $90^\\circ$.<br><br>The angles at $A$ and $B$ are each $45^\\circ$.<br><br>Thus, the Euclidean angles are $45^\\circ, 45^\\circ, 90^\\circ$, completely differing from the $60^\\circ, 60^\\circ, 60^\\circ$ of a Euclidean equilateral triangle.",
+        "<strong>(c) Impossibility with Axial Sides:</strong><br><br>Assume for contradiction that a triangle with two sides parallel to the coordinate axes could be Taxicab-equilateral.<br><br>Let the perpendicular sides have length $s$:\\begin{aligned} d_T(A, B) &= s \\quad (\\text{horizontal}) \\cr d_T(A, D) &= s \\quad (\\text{vertical}) \\end{aligned}Calculate the third Taxicab side length $d_T(B, D)$ between $B(s, 0)$ and $D(0, s)$:\\begin{aligned} d_T(B, D) &= |0 - s| + |s - 0| \\cr &= |-s| + |s| \\cr &= s + s \\cr &= 2s \\end{aligned}For the triangle to be Taxicab-equilateral, we require $d_T(B, D) = s$. This requires:\\begin{aligned} 2s &= s \\cr s &= 0 \\end{aligned}Since $s > 0$, this is a contradiction. Thus, no such triangle can be Taxicab-equilateral.",
+        "Final Answer: <strong>(a)</strong> Sides all equal $s$, <strong>(b)</strong> $45^\\circ, 45^\\circ, 90^\\circ$ (right-angled), <strong>(c)</strong> Third side $d_T(B, D) = 2s \\ne s$ (contradiction)"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> Sides all equal $s$, <strong>(b)</strong> $60^\\circ, 60^\\circ, 60^\\circ$ (equiangular), <strong>(c)</strong> Third side $d_T(B, D) = 2s \\ne s$ (contradiction)",
+            "feedback": "This error assumes equal Taxicab side lengths imply 60-degree Euclidean angles. The gradients of AC and BC are 1 and -1, meaning the Euclidean angle at C is 90 degrees."
+        },
+        {
+            "ans": "<strong>(a)</strong> Side $BC = s\\sqrt{2} \\ne s$, <strong>(b)</strong> $45^\\circ, 45^\\circ, 90^\\circ$ (right-angled), <strong>(c)</strong> Third side $d_T(B, D) = 2s \\ne s$ (contradiction)",
+            "feedback": "This error calculates side BC using the Euclidean distance formula rather than the Taxicab metric |x_1 - x_2| + |y_1 - y_2|, which yields s/2 + s/2 = s."
+        },
+        {
+            "ans": "<strong>(a)</strong> Sides all equal $s$, <strong>(b)</strong> $45^\\circ, 45^\\circ, 90^\\circ$ (right-angled), <strong>(c)</strong> Third side $d_T(B, D) = s\\sqrt{2} \\ne s$ (contradiction)",
+            "feedback": "This error occurs in part (c) by calculating the third side using Pythagoras (Euclidean distance s*sqrt(2)) rather than the Taxicab metric, which evaluates to |s| + |s| = 2s."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: The Taxicab Angle Paradox",
+        "content": "In Taxicab geometry, an 'equilateral' triangle does not have $60^\\circ$ interior angles! The triangle with vertices $(0, 0), (s, 0),$ and $(s/2, s/2)$ has three equal Taxicab sides of length $s$, yet its Euclidean angles are $45^\\circ, 45^\\circ,$ and $90^\\circ$. Metric geometry separates side length from angular measure."
+    }
+},
+{
+    "id": "009025",
+    "group_id": "009021",
+    "board": "OCR MEI",
+    "branch": "Comprehension",
+    "level": "A",
+    "major_area": "Geometry and Proof",
+    "topic": "Pick's Theorem",
+    "subtopic": [
+        "Proof by Contradiction",
+        "Lattice Impossibility"
+    ],
+    "img": false,
+    "question": "<div style='background:#f4f6f8; border-left:4px solid #005a9c; padding:10px; margin-bottom:12px;'><strong>Extract 5: Irrational Area and Lattice Impossibility</strong><br>Pick's Theorem states that the area of a simple lattice polygon with vertices in $\\mathbb{Z}^2$ is:$$A = I + \\dfrac{B}{2} - 1$$where $I \\in \\mathbb{Z}_{\\ge 0}$ and $B \\in \\mathbb{Z}^+$. Therefore, $2A = 2I + B - 2$ is an integer, proving that the area $A$ must be a rational number (an integer or half-integer).</div>An equilateral triangle has side length $s$.<br><br><strong>(a)</strong> Show that the area of an equilateral triangle with side length $s$ is:\\begin{aligned} A = \\dfrac{\\sqrt{3}}{4}s^2 \\end{aligned}<strong>(b)</strong> Suppose for contradiction that an equilateral triangle has all three vertices on integer lattice points. Explain why the squared side length $s^2$ must be an integer.<br><br><strong>(c)</strong> Using Pick's Theorem and part (a), deduce a contradiction regarding $\\sqrt{3}$, and conclude whether an equilateral triangle can exist on an integer lattice.",
+    "steps": [
+        "<strong>(a) Area of an Equilateral Triangle:</strong><br><br>Using the standard area formula $\\text{Area} = \\dfrac{1}{2}ab\\sin(\\theta)$ with $a = b = s$ and $\\theta = 60^\\circ$:\\begin{aligned} A &= \\dfrac{1}{2}s^2 \\sin(60^\\circ) \\cr &= \\dfrac{1}{2}s^2 \\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &= \\dfrac{\\sqrt{3}}{4}s^2 \\end{aligned}",
+        "<strong>(b) Integer Squared Side Length:</strong><br><br>Let the vertices of the triangle be $(x_1, y_1)$ and $(x_2, y_2)$, where $x_1, y_1, x_2, y_2 \\in \\mathbb{Z}$.<br><br>By Pythagoras' theorem, the squared distance between these two vertices is:\\begin{aligned} s^2 &= (x_2 - x_1)^2 + (y_2 - y_1)^2 \\end{aligned}Since the coordinates are integers, the differences $(x_2 - x_1)$ and $(y_2 - y_1)$ are integers.<br><br>The square of an integer is an integer, and the sum of two integers is an integer.<br><br>Therefore, $s^2$ must be an integer.",
+        "<strong>(c) The Contradiction:</strong><br><br>By Pick's Theorem, the area of any lattice polygon satisfies:\\begin{aligned} 2A &= 2I + B - 2 \\end{aligned}Since $I$ and $B$ are integers, $2A \\in \\mathbb{Z}$, which means $A$ is a rational number ($A \\in \\mathbb{Q}$).<br><br>From part (a), $A = \\dfrac{\\sqrt{3}}{4}s^2$. Rearranging for $\\sqrt{3}$ gives:\\begin{aligned} \\sqrt{3} &= \\dfrac{4A}{s^2} \\end{aligned}Since $A$ is rational and $s^2$ is a non-zero integer, $\\dfrac{4A}{s^2}$ must be a rational number.<br><br>This implies that $\\sqrt{3}$ is rational, which is a known contradiction (as $\\sqrt{3}$ is irrational).<br><br>Therefore, an equilateral triangle can never be constructed on an integer lattice.",
+        "Final Answer: <strong>(a)</strong> $A = \\dfrac{\\sqrt{3}}{4}s^2$, <strong>(b)</strong> $s^2 = (\\Delta x)^2 + (\\Delta y)^2 \\in \\mathbb{Z}$, <strong>(c)</strong> Forces $\\sqrt{3} = \\dfrac{4A}{s^2} \\in \\mathbb{Q}$ (contradiction, impossible)"
+    ],
+    "pi_options": [
+        {
+            "ans": "<strong>(a)</strong> $A = \\dfrac{\\sqrt{3}}{4}s^2$, <strong>(b)</strong> $s^2 = (\\Delta x)^2 + (\\Delta y)^2 \\in \\mathbb{Z}$, <strong>(c)</strong> Forces $\\sqrt{3} \\in \\mathbb{Q}$ (consistent, possible)",
+            "feedback": "This error claims that the result allows equilateral triangles on a lattice. Because sqrt(3) is proven irrational, forcing sqrt(3) to be rational is an absolute contradiction."
+        },
+        {
+            "ans": "<strong>(a)</strong> $A = \\dfrac{\\sqrt{3}}{2}s^2$, <strong>(b)</strong> $s^2 = (\\Delta x)^2 + (\\Delta y)^2 \\in \\mathbb{Z}$, <strong>(c)</strong> Forces $\\sqrt{3} = \\dfrac{4A}{s^2} \\in \\mathbb{Q}$ (contradiction, impossible)",
+            "feedback": "This error occurs in part (a) by forgetting the 1/2 factor in the area formula, writing (sqrt(3)/2)s^2 instead of (sqrt(3)/4)s^2."
+        },
+        {
+            "ans": "<strong>(a)</strong> $A = \\dfrac{\\sqrt{3}}{4}s^2$, <strong>(b)</strong> $s \\in \\mathbb{Z}$ (side must be integer), <strong>(c)</strong> Forces $\\sqrt{3} = \\dfrac{4A}{s^2} \\in \\mathbb{Q}$ (contradiction, impossible)",
+            "feedback": "This error occurs in part (b) by claiming that the side length s must be an integer. Pythagoras guarantees that s^2 is an integer, but s itself can be a surd (such as sqrt(5))."
+        }
+    ],
+    "bradley_insight": {
+        "type": "deeper",
+        "title": "The Head Teacher's Eye: Geometry Meets Number Theory",
+        "content": "This proof is one of the crowning jewels of pure mathematics. It bridges continuous Euclidean geometry with discrete number theory: Pick's Theorem forces all lattice areas to be half-integers, while trigonometry requires $\\sqrt{3}$, proving that regular equilateral triangles are completely incompatible with square integer grids!"
     }
 }
 ];
