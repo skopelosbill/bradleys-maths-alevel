@@ -421,8 +421,9 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "To find the value of the constants, we first use the initial condition. When the motorcycle is new, $t = 0$ and $V = 16000$.<br><br>Substitute these values into the model equation:<br>\\begin{aligned} 16000 &= Ae^{k(0)} \\cr 16000 &= A(1) \\cr A &= 16000 \\end{aligned}<br><br>So, the model becomes $V = 16000e^{kt}$.",
                         "Next, we use the second condition. When the motorcycle is three years old, $t = 3$ and $V = 12000$.<br><br>Substitute these values into our updated equation:<br>\\begin{aligned} 12000 &= 16000e^{3k} \\cr e^{3k} &= \\dfrac{ 12000 }{ 16000 } \\cr e^{3k} &= \\dfrac{ 3 }{ 4 } \\end{aligned}<br><br>We can leave the expression in this form instead of solving for $k$ as a decimal, which avoids rounding errors in the next step.",
-                        "We want to find the value of the motorcycle when it is nine years old, so we set $t = 9$:<br>$$V = 16000e^{9k}$$<br>$$V = 16000\\left( e^{3k} \\right)^3$$<br><br>Substitute $e^{3k} = \\dfrac{ 3 }{ 4 }$ into this equation:<br>\\begin{aligned} V &= 16000\\left( \\dfrac{ 3 }{ 4 } \\right)^3 \\cr V &= 16000\\left( \\dfrac{ 27 }{ 64 } \\right) \\cr V &= 250 \\times 27 \\cr V &= 6750 \\end{aligned}<br><br>Thus, the predicted value of the motorcycle after nine years is £6,750."
-                ],
+                        "We want to find the value of the motorcycle when it is nine years old, so we set $t = 9$:<br>$$V = 16000e^{9k}$$<br>$$V = 16000\\left( e^{3k} \\right)^3$$<br><br>Substitute $e^{3k} = \\dfrac{ 3 }{ 4 }$ into this equation:<br>\\begin{aligned} V &= 16000\\left( \\dfrac{ 3 }{ 4 } \\right)^3 \\cr V &= 16000\\left( \\dfrac{ 27 }{ 64 } \\right) \\cr V &= 250 \\times 27 \\cr V &= 6750 \\end{aligned}<br><br>Thus, the predicted value of the motorcycle after nine years is £6,750.",
+        "Final Answer: £$6{}750$"
+    ],
                 "pi_options": [
                         {
                                 "ans": "£$4{,}000$",
@@ -459,8 +460,9 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "<strong>Part (a): Finding $M_0$ and $k$</strong><br><br>The initial mass is $80\\text{ grams}$, which means $M = 80$ when $t = 0$.<br>\\begin{aligned} 80 &= M_0 e^{-k(0)} \\cr M_0 &= 80 \\end{aligned}<br><br>Now we use the second condition: $M = 50$ when $t = 5$.<br>\\begin{aligned} 50 &= 80e^{-5k} \\cr e^{-5k} &= \\dfrac{ 50 }{ 80 } \\cr e^{-5k} &= 0.625 \\end{aligned}",
                         "Take the natural logarithm of both sides to solve for $k$:<br>\\begin{aligned} -5k &= \\ln(0.625) \\cr k &= -\\dfrac{ 1 }{ 5 }\\ln(0.625) \\cr k &\\approx 0.0940007 \\cr k &\\approx 0.0940 \\text{ (to 4 d.p.)} \\end{aligned}",
-                        "<strong>Part (b): Finding the time to decay to $20\\text{ grams}$</strong><br><br>Set $M = 20$ and solve for $t$ using our model $M = 80e^{-0.0940t}$:<br>\\begin{aligned} 20 &= 80e^{-0.0940t} \\cr e^{-0.0940t} &= \\dfrac{ 20 }{ 80 } \\cr e^{-0.0940t} &= 0.25 \\end{aligned}<br><br>Take the natural logarithm of both sides:<br>\\begin{aligned} -0.0940t &= \\ln(0.25) \\cr t &= \\dfrac{ \\ln(0.25) }{ -0.0940 } \\cr t &\\approx 14.74787 \\end{aligned}<br><br>Rounding $14.74787$ to the nearest tenth of a year gives $14.7$ years."
-                ],
+                        "<strong>Part (b): Finding the time to decay to $20\\text{ grams}$</strong><br><br>Set $M = 20$ and solve for $t$ using our model $M = 80e^{-0.0940t}$:<br>\\begin{aligned} 20 &= 80e^{-0.0940t} \\cr e^{-0.0940t} &= \\dfrac{ 20 }{ 80 } \\cr e^{-0.0940t} &= 0.25 \\end{aligned}<br><br>Take the natural logarithm of both sides:<br>\\begin{aligned} -0.0940t &= \\ln(0.25) \\cr t &= \\dfrac{ \\ln(0.25) }{ -0.0940 } \\cr t &\\approx 14.74787 \\end{aligned}<br><br>Rounding $14.74787$ to the nearest tenth of a year gives $14.7$ years.",
+        "Final Answer: $14.7$ years"
+    ],
                 "pi_options": [
                         {
                                 "ans": "$14.8$ years",
@@ -497,8 +499,9 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "<strong>Part (a): Finding $A$</strong><br><br>The initial temperature is $85^\\circ\\text{C}$, so $\\theta = 85$ when $t = 0$.<br>\\begin{aligned} 85 &= 20 + Ae^{-k(0)} \\cr 85 &= 20 + A \\cr A &= 65 \\end{aligned}",
                         "<strong>Part (b): Finding $k$</strong><br><br>We are given that $\\theta = 50$ when $t = 10$. Substitute $A = 65$ and these values into the model:<br>\\begin{aligned} 50 &= 20 + 65e^{-10k} \\cr 30 &= 65e^{-10k} \\cr e^{-10k} &= \\dfrac{ 30 }{ 65 } \\cr e^{-10k} &= \\dfrac{ 6 }{ 13 } \\end{aligned}<br><br>Take the natural logarithm of both sides:<br>\\begin{aligned} -10k &= \\ln\\left( \\dfrac{ 6 }{ 13 } \\right) \\cr k &= -\\dfrac{ 1 }{ 10 }\\ln\\left( \\dfrac{ 6 }{ 13 } \\right) \\cr k &\\approx 0.0773189 \\cr k &\\approx 0.0773 \\text{ (to 4 d.p.)} \\end{aligned}",
-                        "<strong>Part (c): Finding the temperature after $25$ minutes</strong><br><br>Substitute $t = 25$, $A = 65$, and $k = 0.0773$ into the model:<br>\\begin{aligned} \\theta &= 20 + 65e^{-0.0773(25)} \\cr \\theta &= 20 + 65e^{-1.9325} \\cr \\theta &\\approx 20 + 65(0.144783) \\cr \\theta &\\approx 20 + 9.4109 \\cr \\theta &\\approx 29.4109 \\end{aligned}<br><br>Rounding to the nearest degree gives $29^\\circ\\text{C}$."
-                ],
+                        "<strong>Part (c): Finding the temperature after $25$ minutes</strong><br><br>Substitute $t = 25$, $A = 65$, and $k = 0.0773$ into the model:<br>\\begin{aligned} \\theta &= 20 + 65e^{-0.0773(25)} \\cr \\theta &= 20 + 65e^{-1.9325} \\cr \\theta &\\approx 20 + 65(0.144783) \\cr \\theta &\\approx 20 + 9.4109 \\cr \\theta &\\approx 29.4109 \\end{aligned}<br><br>Rounding to the nearest degree gives $29^\\circ\\text{C}$.",
+        "Final Answer: $29^\\circ\\text{C}"
+    ],
                 "pi_options": [
                         {
                                 "ans": "$30^\\circ\\text{C}$",
@@ -535,8 +538,9 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "<strong>Part (a): Finding $A$</strong><br><br>The initial population of bacteria is $500$, which means $N = 500$ when $t = 0$.<br>\\begin{aligned} 500 &= Ae^{k(0)} \\cr A &= 500 \\end{aligned}",
                         "<strong>Part (b): Finding $k$</strong><br><br>We are given that $N = 1500$ when $t = 4$. Substitute $A = 500$ into the equation:<br>\\begin{aligned} 1500 &= 500e^{4k} \\cr e^{4k} &= \\dfrac{ 1500 }{ 500 } \\cr e^{4k} &= 3 \\end{aligned}<br><br>Taking the natural logarithm of both sides to find the exact value of $k$:<br>\\begin{aligned} 4k &= \\ln(3) \\cr k &= \\dfrac{ \\ln(3) }{ 4 } \\end{aligned}",
-                        "<strong>Part (c): Finding the population after $12$ hours</strong><br><br>We want to evaluate $N$ when $t = 12$. Substitute $A = 500$ and $t = 12$ into our model equation:<br>\\begin{aligned} N &= 500e^{12k} \\cr N &= 500\\left( e^{4k} \\right)^3 \\end{aligned}<br><br>Since we know from Part (b) that $e^{4k} = 3$, we can substitute this directly:<br>\\begin{aligned} N &= 500(3)^3 \\cr N &= 500(27) \\cr N &= 13500 \\end{aligned}<br><br>Thus, the population of bacteria after 12 hours is $13,500$."
-                ],
+                        "<strong>Part (c): Finding the population after $12$ hours</strong><br><br>We want to evaluate $N$ when $t = 12$. Substitute $A = 500$ and $t = 12$ into our model equation:<br>\\begin{aligned} N &= 500e^{12k} \\cr N &= 500\\left( e^{4k} \\right)^3 \\end{aligned}<br><br>Since we know from Part (b) that $e^{4k} = 3$, we can substitute this directly:<br>\\begin{aligned} N &= 500(3)^3 \\cr N &= 500(27) \\cr N &= 13500 \\end{aligned}<br><br>Thus, the population of bacteria after 12 hours is $13,500$.",
+        "Final Answer: $13{}500$"
+    ],
                 "pi_options": [
                         {
                                 "ans": "$4{,}500$",
@@ -573,8 +577,9 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "<strong>Part (a): Growth vs Decay</strong><br><br>The behavior of an exponential model $y = Ae^{kt}$ depends on the sign of the constant exponent coefficient, $k$:<br>1. For Town $X$, $k = 0.02 > 0$. Since the exponent is positive, the population is predicted to **grow**.<br>2. For Town $Y$, $k = -0.01 < 0$. Since the exponent is negative, the population is predicted to **decay**.",
                         "<strong>Part (b): Finding when populations are equal</strong><br><br>To find when the populations are equal, set $P = Q$ and solve for $t$:<br>\\begin{aligned} 15000e^{0.02t} &= 22000e^{-0.01t} \\end{aligned}<br><br>Divide both sides by $15000$:<br>\\begin{aligned} e^{0.02t} &= \\dfrac{ 22000 }{ 15000 }e^{-0.01t} \\cr e^{0.02t} &= \\dfrac{ 22 }{ 15 }e^{-0.01t} \\end{aligned}",
-                        "To combine the exponential terms, divide both sides by $e^{-0.01t}$ (which is equivalent to multiplying both sides by $e^{0.01t}$):<br>\\begin{aligned} \\dfrac{ e^{0.02t} }{ e^{-0.01t} } &= \\dfrac{ 22 }{ 15 } \\cr e^{0.02t - (-0.01t)} &= \\dfrac{ 22 }{ 15 } \\cr e^{0.03t} &= \\dfrac{ 22 }{ 15 } \\end{aligned}<br><br>Take the natural logarithm of both sides:<br>\\begin{aligned} 0.03t &= \\ln\\left( \\dfrac{ 22 }{ 15 } \\right) \\cr t &= \\dfrac{ 1 }{ 0.03 }\\ln\\left( \\dfrac{ 22 }{ 15 } \\right) \\cr t &\\approx 12.729 \\end{aligned}<br><br>Rounding to the nearest tenth of a year gives $12.7$ years."
-                ],
+                        "To combine the exponential terms, divide both sides by $e^{-0.01t}$ (which is equivalent to multiplying both sides by $e^{0.01t}$):<br>\\begin{aligned} \\dfrac{ e^{0.02t} }{ e^{-0.01t} } &= \\dfrac{ 22 }{ 15 } \\cr e^{0.02t - (-0.01t)} &= \\dfrac{ 22 }{ 15 } \\cr e^{0.03t} &= \\dfrac{ 22 }{ 15 } \\end{aligned}<br><br>Take the natural logarithm of both sides:<br>\\begin{aligned} 0.03t &= \\ln\\left( \\dfrac{ 22 }{ 15 } \\right) \\cr t &= \\dfrac{ 1 }{ 0.03 }\\ln\\left( \\dfrac{ 22 }{ 15 } \\right) \\cr t &\\approx 12.729 \\end{aligned}<br><br>Rounding to the nearest tenth of a year gives $12.7$ years.",
+        "Final Answer: $12.7$ years"
+    ],
                 "pi_options": [
                         {
                                 "ans": "$12.8$ years",

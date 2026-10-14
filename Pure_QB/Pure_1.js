@@ -2,7 +2,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004001",
                 "group_id": "004001",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
@@ -43,7 +43,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004002",
                 "group_id": "004001",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
@@ -84,7 +84,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004003",
                 "group_id": "004001",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
@@ -125,7 +125,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004004",
                 "group_id": "004001",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
@@ -166,7 +166,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004005",
                 "group_id": "004001",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
@@ -207,7 +207,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004006",
                 "group_id": "004006",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
@@ -252,7 +252,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004007",
                 "group_id": "004006",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
@@ -297,7 +297,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004008",
                 "group_id": "004006",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
@@ -343,7 +343,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004009",
                 "group_id": "004006",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
@@ -387,7 +387,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004010",
                 "group_id": "004006",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
@@ -432,7 +432,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004011",
                 "group_id": "004011",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
@@ -475,7 +475,7 @@ window.ALEVEL_QUESTIONS = [
        {
         "id": "004012",
         "group_id": "004011",
-        "board": "Pearson Edexcel",
+        "board": "Edexcel",
         "branch": "Pure",
         "level": "A",
         "major_area": "Differentiation",
@@ -518,7 +518,7 @@ window.ALEVEL_QUESTIONS = [
         {
         "id": "004013",
         "group_id": "004011",
-        "board": "Pearson Edexcel",
+        "board": "Edexcel",
         "branch": "Pure",
         "level": "A",
         "major_area": "Differentiation",
@@ -561,7 +561,7 @@ window.ALEVEL_QUESTIONS = [
         {
         "id": "004014",
         "group_id": "004011",
-        "board": "Pearson Edexcel",
+        "board": "Edexcel",
         "branch": "Pure",
         "level": "A",
         "major_area": "Differentiation",
@@ -604,7 +604,7 @@ window.ALEVEL_QUESTIONS = [
         {
         "id": "004015",
         "group_id": "004011",
-        "board": "Pearson Edexcel",
+        "board": "Edexcel",
         "branch": "Pure",
         "level": "A",
         "major_area": "Differentiation",
@@ -647,7 +647,7 @@ window.ALEVEL_QUESTIONS = [
            {
                 "id": "004016",
                 "group_id": "004016",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
@@ -690,7 +690,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004017",
                 "group_id": "004016",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
@@ -733,7 +733,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004018",
                 "group_id": "004016",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
@@ -776,7 +776,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004019",
                 "group_id": "004016",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
@@ -819,7 +819,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004020",
                 "group_id": "004016",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
@@ -862,7 +862,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004021",
                 "group_id": "004021",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
@@ -904,7 +904,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004022",
                 "group_id": "004021",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
@@ -946,7 +946,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004023",
                 "group_id": "004021",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
@@ -988,7 +988,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004024",
                 "group_id": "004021",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
@@ -1030,7 +1030,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004025",
                 "group_id": "004021",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Algebra and Functions",
@@ -1072,7 +1072,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004026",
                 "group_id": "004026",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
@@ -1110,7 +1110,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004027",
                 "group_id": "004026",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
@@ -1148,7 +1148,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004028",
                 "group_id": "004026",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
@@ -1186,7 +1186,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004029",
                 "group_id": "004026",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
@@ -1224,7 +1224,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004030",
                 "group_id": "004026",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Trigonometry",
@@ -1262,7 +1262,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004031",
                 "group_id": "004031",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
@@ -1305,7 +1305,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004032",
                 "group_id": "004031",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
@@ -1348,7 +1348,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004033",
                 "group_id": "004031",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
@@ -1391,7 +1391,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004034",
                 "group_id": "004031",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
@@ -1434,7 +1434,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004035",
                 "group_id": "004031",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
@@ -1477,7 +1477,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004036",
                 "group_id": "004036",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
@@ -1521,7 +1521,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004037",
                 "group_id": "004036",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
@@ -1565,7 +1565,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004038",
                 "group_id": "004036",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
@@ -1609,7 +1609,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004039",
                 "group_id": "004036",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
@@ -1653,7 +1653,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004040",
                 "group_id": "004036",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Integration",
@@ -1697,7 +1697,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004041",
                 "group_id": "004041",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
@@ -1740,7 +1740,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004042",
                 "group_id": "004041",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
@@ -1785,7 +1785,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004043",
                 "group_id": "004041",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
@@ -1831,7 +1831,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004044",
                 "group_id": "004041",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
@@ -1875,7 +1875,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004045",
                 "group_id": "004041",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Exponentials and Logarithms",
@@ -1920,7 +1920,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004046",
                 "group_id": "004046",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Proof",
@@ -1965,7 +1965,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004047",
                 "group_id": "004046",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Proof",
@@ -2009,7 +2009,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004048",
                 "group_id": "004046",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Proof",
@@ -2053,7 +2053,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004049",
                 "group_id": "004046",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "major_area": "Proof",
@@ -2099,7 +2099,7 @@ window.ALEVEL_QUESTIONS = [
                 "id": "004050",
                 "group_id": "004046",
                 "major_area": "Proof",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "AS",
                 "topic": "Proof",

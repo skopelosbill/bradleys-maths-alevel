@@ -2,7 +2,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004051",
                 "group_id": "004051",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences & Series",
@@ -46,7 +46,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004052",
                 "group_id": "004051",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences & Series",
@@ -90,7 +90,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004053",
                 "group_id": "004051",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences & Series",
@@ -134,7 +134,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004054",
                 "group_id": "004051",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences & Series",
@@ -178,7 +178,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004055",
                 "group_id": "004051",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences & Series",
@@ -222,7 +222,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004056",
                 "group_id": "004056",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",
@@ -265,7 +265,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004057",
                 "group_id": "004056",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",
@@ -308,7 +308,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004058",
                 "group_id": "004056",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",
@@ -351,7 +351,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004059",
                 "group_id": "004056",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",
@@ -393,8 +393,9 @@ window.ALEVEL_QUESTIONS = [
         },
         {
                 "id": "004060",
+        "branch": "Pure",
                 "group_id": "004056",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "major_area": "Calculus",
                 "level": "A",
                 "topic": "Differentiation",
@@ -436,7 +437,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004061",
                 "group_id": "004061",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",
@@ -485,7 +486,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004062",
                 "group_id": "004061",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",
@@ -534,7 +535,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004063",
                 "group_id": "004061",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",
@@ -583,7 +584,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004064",
                 "group_id": "004061",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",
@@ -632,7 +633,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004065",
                 "group_id": "004061",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",
@@ -681,7 +682,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004066",
                 "group_id": "004066",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",
@@ -727,7 +728,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004067",
                 "group_id": "004066",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",
@@ -773,7 +774,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004068",
                 "group_id": "004066",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",
@@ -819,7 +820,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004069",
                 "group_id": "004066",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",
@@ -865,7 +866,7 @@ window.ALEVEL_QUESTIONS = [
         {
                 "id": "004070",
                 "group_id": "004066",
-                "board": "Pearson Edexcel",
+                "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Calculus",

@@ -1591,8 +1591,9 @@ window.ALEVEL_QUESTIONS = [
                         "Rearrange this into standard quadratic inequality form with a positive $x^2$ coefficient:<br>\\begin{aligned} -x^2 + 14x - 40 &\\ge 0 \\cr x^2 - 14x + 40 &\\le 0 \\end{aligned}",
                         "Solve $x^2 - 14x + 40 \\le 0$ by finding the critical values. Factorise the quadratic expression:<br>\\begin{aligned} (x - 4)(x - 10) &= 0 \\end{aligned}<br>This gives critical values of $x = 4$ and $x = 10$.",
                         "The quadratic expression is non-positive between its roots, which gives:<br>$4 \\le x \\le 10$",
-                        "Now, combine this with the constraint that the number of units produced is strictly greater than $5$ ($x > 5$):<br>The overlapping region between $4 \\le x \\le 10$ and $x > 5$ is:<br>$5 < x \\le 10$"
-                ],
+                        "Now, combine this with the constraint that the number of units produced is strictly greater than $5$ ($x > 5$):<br>The overlapping region between $4 \\le x \\le 10$ and $x > 5$ is:<br>$5 < x \\le 10$",
+        "Final Answer: $5 < x \\le 10$"
+    ],
                 "pi_options": [
                         {
                                 "ans": "$4 \\le x \\le 10$",
