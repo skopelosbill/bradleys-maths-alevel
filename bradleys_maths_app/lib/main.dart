@@ -23,7 +23,7 @@ class QuestionPage extends StatefulWidget {
   const QuestionPage({super.key});
 
   @override
-  State<QuestionPage> createState() => _QuestionPageState();
+  State< QuestionPage> createState() => _QuestionPageState();
 }
 
 class _QuestionPageState extends State<QuestionPage> {
@@ -36,7 +36,7 @@ class _QuestionPageState extends State<QuestionPage> {
     _loadRandomQuestion();
   }
 
-  void _loadRandomQuestion() async {
+   void _loadRandomQuestion() async {
     var q = await _dbHelper.getRandomQuestion();
     setState(() {
       _question = q;
