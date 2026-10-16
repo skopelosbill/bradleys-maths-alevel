@@ -13,7 +13,10 @@ class BradleysMathsApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Bradley's Maths",
-      theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        useMaterial3: true,
+      ),
       home: const QuestionPage(),
     );
   }
@@ -27,73 +30,78 @@ class QuestionPage extends StatefulWidget {
 }
 
 class _QuestionPageState extends State<QuestionPage> {
-  // We start with the Welcome message so the wheel never spins on startup
+  // 1. Setup the initial state
   Map<String, dynamic> _question = {
     'topic': 'System Check',
-    'question_text': 'Welcome, Bill! The App Chassis is ALIVE.\n\nTap the button below to attempt a database connection.'
+    'question_text': 'Welcome, Bill!\n\nThe App Chassis is ALIVE.\n\nTap the button below to test the logic.'
   };
   
   final DatabaseHelper _dbHelper = DatabaseHelper();
 
-  void _loadRandomQuestion() async {
+  // 2. The Logic Function
+   void _loadRandomQuestion() async {
     try {
-      var q = await _dbHelper.getRandomQuestion();
+      final q = await _dbHelper.getRandomQuestion();
       setState(() {
-        _question = q;
+        // The ?? operator provides a fallback if q is null
+        _question = q ?? {
+          'topic': 'Database Note',
+          'question_text': 'No question found or database restricted.'
+        };
       });
     } catch (e) {
       setState(() {
         _question = {
-          'topic': 'Connection Note',
-          'question_text': 'Database access is restricted in Chrome.\n\nError: $e'
+          'topic': 'Environment Note',
+          'question_text': 'Database restricted in Browser.\n\nError: $e'
         };
       });
     }
   }
 
+  // 3. The Visual Layout
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Bradley's Maths Prototype"),
-        backgroundColor: Colors.blue.shade100,
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
+      body: Center(
+        child: Container(
+          constraints: const BoxConstraints(maxWidth: 360), // Our 360px Rule!
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Card(
                 color: Colors.blue.shade50,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                "TOPIC: ${_question['topic']}",
-                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-              ),
-            ),
-            const SizedBox(height: 30),
-            Expanded(
-              child: SingleChildScrollView(
-                child: Text(
-                  _question['question_text'].toString().replaceAll('<br>', '\n'),
-                  style: const TextStyle(fontSize: 16),
-                  textAlign: TextAlign.center,
+                child: Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Text(
+                    "TOPIC: ${_question['topic']}",
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                minimumSize: const Size(200, 50),
+              const SizedBox(height: 30),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Text(
+                    _question['question_text'].toString().replaceAll('<br>', '\n'),
+                    style: const TextStyle(fontSize: 16),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
               ),
-              onPressed: _loadRandomQuestion,
-              child: const Text("Try Database Connection"),
-            ),
-          ],
+              const SizedBox(height: 20),
+              ElevatedButton.icon(
+                icon: const Icon(Icons.refresh),
+                label: const Text("Try Database Connection"),
+                onPressed: _loadRandomQuestion,
+              ),
+            ],
+          ),
         ),
       ),
     );
