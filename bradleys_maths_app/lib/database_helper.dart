@@ -309,7 +309,7 @@ class DatabaseHelper {
     ];
   }
 
-  String _getWebInsight(dynamic questionId) {
-    return "Head Teacher's Eye: In questions of the form $\\int x f(x) dx$, always choose $u = x$ so that differentiation eliminates the polynomial term. Remember to divide by the coefficient inside trigonometric arguments!";
+ String _getWebInsight(dynamic questionId) {
+    return r"Head Teacher's Eye: In questions of the form $\int x f(x) dx$, always choose $u = x$ so that differentiation eliminates the polynomial term. Remember to divide by the coefficient inside trigonometric arguments!";
   }
 }
