@@ -2,40 +2,36 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart'; 
+import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
 import 'package:path/path.dart';
 import 'models/filter_state.dart';
 
 class DatabaseHelper {
   static Database? _db;
 
-    Future<Database> get database async {
+  Future<Database> get database async {
     if (_db != null) return _db!;
 
     if (kIsWeb) {
-      // --- WEB IMPLEMENTATION ---
-      var factory = databaseFactoryFfiWeb;
-      
-      // 1. Load the REAL database bytes from your assets folder
-      final data = await rootBundle.load(join("assets", "bradleys_maths.db"));
-      final bytes = data.buffer.asUint8List();
-
-      // 2. FORCE the web factory to use these bytes for 'bradleys_maths.db'
-      // This overwrites any empty 'place-holder' the browser created.
-      await factory.writeDatabaseBytes('bradleys_maths.db', bytes);
-
-      // 3. Open it
-      _db = await factory.openDatabase('bradleys_maths.db');
+      print("--- WEB DATABASE DEBUG START ---");
+      try {
+        var factory = databaseFactoryFfiWebNoWebWorker;
+        final data = await rootBundle.load("assets/bradleys_maths.db");
+        final bytes = data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
+        await factory.writeDatabaseBytes('bradleys_maths.db', bytes);
+        _db = await factory.openDatabase('bradleys_maths.db');
+        print("WEB DB OPENED SUCCESSFULLY");
+      } catch (e) {
+        print("!!! WEB DATABASE ERROR: $e");
+        rethrow;
+      }
     } else {
-      // --- MOBILE IMPLEMENTATION ---
       var databasesPath = await getDatabasesPath();
       var path = join(databasesPath, "bradleys_maths.db");
-
       var exists = await databaseExists(path);
       if (!exists) {
         ByteData data = await rootBundle.load(join("assets", "bradleys_maths.db"));
-        List<int> bytes =
-            data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
+        List<int> bytes = data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
         await Directory(dirname(path)).create(recursive: true);
         await File(path).writeAsBytes(bytes, flush: true);
       }
@@ -45,7 +41,7 @@ class DatabaseHelper {
   }
 
   // ==========================================
-  // 1. CASCADING TAXONOMY QUERIES (STEPS 4 - 6)
+  // 1. CASCADING TAXONOMY QUERIES
   // ==========================================
 
   Future<List<String>> getMajorAreas({String? branch}) async {
@@ -59,10 +55,9 @@ class DatabaseHelper {
     } else {
       results = await db.rawQuery(
         'SELECT DISTINCT major_area FROM questions WHERE branch != ? ORDER BY major_area ASC',
-        ['Comprehension'], 
+        ['Comprehension'],
       );
     }
-
     return results
         .map((row) => row['major_area']?.toString() ?? '')
         .where((s) => s.isNotEmpty)
@@ -92,7 +87,6 @@ class DatabaseHelper {
       'SELECT DISTINCT topic FROM questions $whereClause ORDER BY topic ASC',
       args,
     );
-
     return results
         .map((row) => row['topic']?.toString() ?? '')
         .where((s) => s.isNotEmpty)
@@ -100,7 +94,7 @@ class DatabaseHelper {
   }
 
   // ==========================================
-  // 2. QUESTION & OPTION QUERIES (STEPS 7 - 11)
+  // 2. QUESTION & OPTION QUERIES
   // ==========================================
 
   Future<Map<String, dynamic>?> fetchQuestion(FilterState filter) async {
