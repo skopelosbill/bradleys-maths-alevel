@@ -31,6 +31,8 @@ dependencies:
   flutter:
     sdk: flutter
   sqflite: ^2.3.0
+  sqflite_common_ffi_web: ^0.4.0   # Add this
+  sqlite3_flutter_libs: ^0.5.20    # Add this (check version compatibility)
   path: ^1.8.3
   flutter_math_fork: ^0.7.2
   google_fonts: ^6.1.0

@@ -342,43 +342,48 @@ class _QuestionScreenState extends State<QuestionScreen> {
               ],
 
               // ------------------------------------
-              // STEP 11: DIAGNOSTIC EVALUATION FEEDBACK
-              // ------------------------------------
-              if (_feedbackText != null) ...[
-                const SizedBox(height: 18),
-                Container(
-                  padding: const EdgeInsets.all(14),
-                  decoration: BoxDecoration(
-                    color: _isCorrect ? Colors.green.shade50 : Colors.orange.shade50,
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: _isCorrect ? Colors.green : Colors.orange, width: 1.5),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Icon(_isCorrect ? Icons.check_circle : Icons.warning_amber,
-                              color: _isCorrect ? Colors.green.shade800 : Colors.orange.shade900),
-                          const SizedBox(width: 8),
-                          Text(
-                            _isCorrect ? "Correct!" : (_attemptCount == 1 && !_isSubmitted ? "Second Chance" : "Review Needed"),
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: _isCorrect ? Colors.green.shade800 : Colors.orange.shade900,
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 6),
-                      Text(
-                        _feedbackText!,
-                        style: const TextStyle(fontSize: 13, height: 1.35),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
+// STEP 11: DIAGNOSTIC EVALUATION FEEDBACK
+// ------------------------------------
+if (_feedbackText != null) ...[
+  const SizedBox(height: 18),
+  Container(
+    padding: const EdgeInsets.all(14),
+    decoration: BoxDecoration(
+      color: _isCorrect ? Colors.green.shade50 : Colors.orange.shade50,
+      borderRadius: BorderRadius.circular(12),
+      border: Border.all(
+        color: _isCorrect ? Colors.green : Colors.orange, 
+        width: 1.5
+      ),
+    ),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Icon(
+              _isCorrect ? Icons.check_circle : Icons.warning_amber,
+              color: _isCorrect ? Colors.green.shade800 : Colors.orange.shade900,
+            ),
+            const SizedBox(width: 8),
+            Text(
+              _isCorrect 
+                  ? "Correct!" 
+                  : (_attemptCount == 1 && !_isSubmitted ? "Second Chance" : "Review Needed"),
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: _isCorrect ? Colors.green.shade800 : Colors.orange.shade900,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 6),
+        // FIXED: Now uses the math builder instead of raw Text
+        _buildMathContent(_feedbackText!),
+      ],
+    ),
+  ),
+],
 
               // ------------------------------------
               // MODEL ANSWER STEP-THROUGH & INSIGHT
@@ -490,18 +495,43 @@ class _QuestionScreenState extends State<QuestionScreen> {
     );
   }
 
-  Widget _buildMathContent(String rawText) {
-    final clean = rawText.replaceAll('<br>', '\n');
-    try {
-      if (clean.contains(r'\') || clean.contains('^') || clean.contains('_')) {
-        return Math.tex(
-          clean,
-          textStyle: const TextStyle(fontSize: 15),
-          mathStyle: MathStyle.display,
-          onErrorFallback: (_) => Text(clean, style: const TextStyle(fontSize: 15)),
+ Widget _buildMathContent(String rawText) {
+  final clean = rawText.replaceAll('<br>', '\n');
+  
+  // This Regex looks for LaTeX commands, powers, or subscripts
+  // It captures the math part separately from the text
+  final regex = RegExp(r'(\\[a-zA-Z]+(?:\{.*?\})?|[\^_{}]|[0-9]+/[0-9]+)');
+  final parts = clean.split(RegExp(r'\s+')); // Still split by space for basic layout
+
+  return Wrap(
+    crossAxisAlignment: WrapCrossAlignment.center,
+    children: parts.map((part) {
+      // If the part contains a backslash or math symbol
+      bool isMath = part.contains(r'\') || part.contains('^') || part.contains('_');
+      
+      if (isMath) {
+        // Separate math from trailing punctuation (like a period)
+        final mathMatch = RegExp(r'([^\.,!?]*)([\.,!?]*)').firstMatch(part);
+        final mathPart = mathMatch?.group(1) ?? part;
+        final punctuation = mathMatch?.group(2) ?? '';
+
+        return Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Math.tex(
+              mathPart,
+              textStyle: const TextStyle(fontSize: 15),
+              onErrorFallback: (_) => Text(mathPart, style: const TextStyle(fontSize: 15)),
+            ),
+            if (punctuation.isNotEmpty) 
+              Text(punctuation, style: const TextStyle(fontSize: 15)),
+            const Text(' '), // Add the space back
+          ],
         );
+      } else {
+        return Text('$part ', style: const TextStyle(fontSize: 15, height: 1.3));
       }
-    } catch (_) {}
-    return Text(clean, style: const TextStyle(fontSize: 15, height: 1.3));
-  }
+    }).toList(),
+  );
+}
 }

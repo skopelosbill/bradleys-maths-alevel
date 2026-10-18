@@ -141,29 +141,26 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               // ------------------------------------
               // STEP 2: EXAM BOARD SELECTOR
               // ------------------------------------
-              _buildSectionHeader("Step 2: Choose Board"),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: _boards.map((b) {
-                    final isSelected = (_filter.board ?? 'Random') == b;
-                    return Padding(
-                      padding: const EdgeInsets.only(right: 8.0),
-                      child: ChoiceChip(
-                        label: Text(b),
-                        selected: isSelected,
-                        onSelected: (selected) {
-                          if (selected) {
-                            setState(() {
-                              _filter.board = b == 'Random' ? null : b;
-                            });
-                          }
-                        },
-                      ),
-                    );
-                  }).toList(),
-                ),
-              ),
+             _buildSectionHeader("Step 2: Choose Board"),
+             Wrap(
+               alignment: WrapAlignment.center, // Centralises buttons within the Wrap
+               spacing: 8.0, // Horizontal space between chips
+               runSpacing: 4.0, // Vertical space if they wrap to a new line
+               children: _boards.map((b) {
+                final isSelected = (_filter.board ?? 'Random') == b;
+                return ChoiceChip(
+                  label: Text(b),
+                  selected: isSelected,
+                   onSelected: (selected) {
+                    if (selected) {
+                      setState(() {
+                        _filter.board = b == 'Random' ? null : b;
+                      });
+                    }
+                   },
+                 );
+              }).toList(),
+            ),
 
               const SizedBox(height: 16),
 
@@ -203,6 +200,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                 subtext: "Rule: 'Random' automatically excludes Comprehension",
               ),
               Wrap(
+                alignment: WrapAlignment.center, // Centralises buttons within the Wrap
                 spacing: 8.0,
                 runSpacing: 8.0,
                 children: _branches.map((br) {
