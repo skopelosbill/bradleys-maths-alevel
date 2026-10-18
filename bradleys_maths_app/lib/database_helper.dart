@@ -9,17 +9,23 @@ import 'models/filter_state.dart';
 class DatabaseHelper {
   static Database? _db;
 
-  Future<Database> get database async {
+    Future<Database> get database async {
     if (_db != null) return _db!;
 
     if (kIsWeb) {
       // --- WEB IMPLEMENTATION ---
       var factory = databaseFactoryFfiWeb;
+      
+      // 1. Load the REAL database bytes from your assets folder
       final data = await rootBundle.load(join("assets", "bradleys_maths.db"));
       final bytes = data.buffer.asUint8List();
 
-      _db = await factory.openDatabase('bradleys_maths.db');
+      // 2. FORCE the web factory to use these bytes for 'bradleys_maths.db'
+      // This overwrites any empty 'place-holder' the browser created.
       await factory.writeDatabaseBytes('bradleys_maths.db', bytes);
+
+      // 3. Open it
+      _db = await factory.openDatabase('bradleys_maths.db');
     } else {
       // --- MOBILE IMPLEMENTATION ---
       var databasesPath = await getDatabasesPath();
