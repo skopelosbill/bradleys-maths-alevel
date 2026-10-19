@@ -15,22 +15,15 @@ class DatabaseHelper {
     if (kIsWeb) {
       var factory = databaseFactoryFfiWeb;
       try {
-        // 1. Explicitly load the asset bytes
         final data = await rootBundle.load("assets/bradleys_maths.db");
         final bytes = data.buffer.asUint8List();
-
-        // 2. Overwrite the virtual file in browser memory
         await factory.writeDatabaseBytes('bradleys_maths.db', bytes);
-
-        // 3. Open the database
         _db = await factory.openDatabase('bradleys_maths.db');
-        print("WEB DB: Successfully opened real question bank.");
       } catch (e) {
         print("WEB DB ERROR: $e");
         rethrow;
       }
     } else {
-      // MOBILE IMPLEMENTATION
       var databasesPath = await getDatabasesPath();
       var path = join(databasesPath, "bradleys_maths.db");
       var exists = await databaseExists(path);
@@ -45,22 +38,20 @@ class DatabaseHelper {
     return _db!;
   }
 
-  // --- CASCADING QUERIES ---
-
   Future<List<String>> getMajorAreas({String? branch}) async {
     final db = await database;
-    String query;
-    List<dynamic> args = [];
-
+    List<Map<String, dynamic>> results;
     if (branch != null && branch != 'Random') {
-      query = 'SELECT DISTINCT major_area FROM questions WHERE branch = ? ORDER BY major_area ASC';
-      args = [branch];
+      results = await db.rawQuery(
+        'SELECT DISTINCT major_area FROM questions WHERE branch = ? ORDER BY major_area ASC',
+        [branch],
+      );
     } else {
-      query = 'SELECT DISTINCT major_area FROM questions WHERE branch != ? ORDER BY major_area ASC';
-      args = ['Comprehension'];
+      results = await db.rawQuery(
+        'SELECT DISTINCT major_area FROM questions WHERE branch != ? ORDER BY major_area ASC',
+        ['Comprehension'],
+      );
     }
-
-    final results = await db.rawQuery(query, args);
     return results.map((row) => row['major_area']?.toString() ?? '').where((s) => s.isNotEmpty).toList();
   }
 
@@ -68,7 +59,6 @@ class DatabaseHelper {
     final db = await database;
     List<String> conditions = [];
     List<dynamic> args = [];
-
     if (branch != null && branch != 'Random') {
       conditions.add('branch = ?');
       args.add(branch);
@@ -76,24 +66,19 @@ class DatabaseHelper {
       conditions.add('branch != ?');
       args.add('Comprehension');
     }
-
     if (majorArea != null && majorArea != 'Random') {
       conditions.add('major_area = ?');
       args.add(majorArea);
     }
-
     String whereClause = conditions.isNotEmpty ? 'WHERE ${conditions.join(' AND ')}' : '';
     final results = await db.rawQuery('SELECT DISTINCT topic FROM questions $whereClause ORDER BY topic ASC', args);
     return results.map((row) => row['topic']?.toString() ?? '').where((s) => s.isNotEmpty).toList();
   }
 
-  // --- QUESTION FETCH ---
-
   Future<Map<String, dynamic>?> fetchQuestion(FilterState filter) async {
     final db = await database;
     List<String> conditions = [];
     List<dynamic> args = [];
-
     if (!filter.isRandomBoard) { conditions.add('board = ?'); args.add(filter.board); }
     if (!filter.isRandomLevel) { conditions.add('level = ?'); args.add(filter.level); }
     if (!filter.isRandomBranch) { conditions.add('branch = ?'); args.add(filter.branch); }
@@ -103,10 +88,8 @@ class DatabaseHelper {
 
     String whereClause = conditions.isNotEmpty ? 'WHERE ${conditions.join(' AND ')}' : '';
     final results = await db.rawQuery('SELECT * FROM questions $whereClause ORDER BY RANDOM() LIMIT 1', args);
-
     if (results.isNotEmpty) return results.first;
 
-    // Fallback logic
     final fallback = await db.rawQuery('SELECT * FROM questions WHERE branch != ? ORDER BY RANDOM() LIMIT 1', ['Comprehension']);
     return fallback.isNotEmpty ? fallback.first : null;
   }
@@ -114,5 +97,19 @@ class DatabaseHelper {
   Future<List<Map<String, dynamic>>> fetchOptions(dynamic questionId) async {
     final db = await database;
     return await db.rawQuery('SELECT * FROM options WHERE question_id = ? ORDER BY RANDOM()', [questionId]);
+  }
+
+  // RESTORED: fetchSteps
+  Future<List<Map<String, dynamic>>> fetchSteps(dynamic questionId) async {
+    final db = await database;
+    return await db.rawQuery('SELECT * FROM steps WHERE question_id = ? ORDER BY step_number ASC', [questionId]);
+  }
+
+  // RESTORED: fetchInsight
+  Future<String?> fetchInsight(dynamic questionId) async {
+    final db = await database;
+    final results = await db.rawQuery('SELECT insight_text FROM insights WHERE question_id = ? LIMIT 1', [questionId]);
+    if (results.isNotEmpty) return results.first['insight_text'] as String?;
+    return null;
   }
 }
