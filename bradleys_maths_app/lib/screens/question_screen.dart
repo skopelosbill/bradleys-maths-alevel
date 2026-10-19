@@ -98,22 +98,23 @@ class _QuestionScreenState extends State<QuestionScreen> {
         _feedbackText = "Revision Needed: You recognized that none of the mathematical forms matched your working. Step through the model answer to consolidate the concept.";
         _showModelAnswer = true;
       } else {
-        // ------------------------------------
-        // 11b: DIAGNOSTIC DISTRACTOR (PI)
-        // ------------------------------------
-        if (_attemptCount == 0) {
-          // First Miss -> Second Chance
-          _attemptCount = 1;
-          _feedbackText = "${selected['feedback']}\n\nCheck your paper working carefully and give it a Second Chance!";
-          _selectedOptionIndex = null; // Let them pick again
-        } else {
-          // Missed Second Chance -> Reveal Answer
-          _isCorrect = false;
-          _isSubmitted = true;
-          _feedbackText = "${selected['feedback']}\n\nHere is the full step-by-step model answer to guide your revision.";
-          _showModelAnswer = true;
-        }
-      }
+      // ------------------------------------
+// 11b: DIAGNOSTIC DISTRACTOR (PI)
+// ------------------------------------
+if (_attemptCount == 0) {
+  // First Miss -> Second Chance
+  _attemptCount = 1;
+  _isCorrect = false; // Triggers the "Second Chance" styling
+  _isSubmitted = false; // CRITICAL: Keep the gate open
+  _feedbackText = "${selected['feedback']}\n\nCheck your paper working carefully and give it a Second Chance!";
+  _selectedOptionIndex = null; 
+} else {
+  // Missed Second Chance -> Reveal Answer
+  _isCorrect = false;
+  _isSubmitted = true; // Lock the gate
+  _feedbackText = "Review Needed\n\n${selected['feedback']}\n\nHere is the full step-by-step model answer.";
+  _showModelAnswer = true;
+}
     });
   }
 
