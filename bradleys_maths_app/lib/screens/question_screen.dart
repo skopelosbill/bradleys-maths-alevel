@@ -98,7 +98,10 @@ class _QuestionScreenState extends State<QuestionScreen> {
         _feedbackText = "Revision Needed: You recognized that none of the mathematical forms matched your working. Step through the model answer to consolidate the concept.";
         _showModelAnswer = true;
       } else {
-      // ------------------------------------
+        // ------------------------------------
+        // 11b: DIAGNOSTIC DISTRACTOR (PI)
+        // ------------------------------------
+       // ------------------------------------
 // 11b: DIAGNOSTIC DISTRACTOR (PI)
 // ------------------------------------
 if (_attemptCount == 0) {
@@ -115,6 +118,7 @@ if (_attemptCount == 0) {
   _feedbackText = "Review Needed\n\n${selected['feedback']}\n\nHere is the full step-by-step model answer.";
   _showModelAnswer = true;
 }
+      }
     });
   }
 
