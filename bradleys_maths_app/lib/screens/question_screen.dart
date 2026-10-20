@@ -444,33 +444,109 @@ class _QuestionScreenState extends State<QuestionScreen> {
                     },
                   ),
 
-                // Bradley Insight Card
+              // ------------------------------------
+                // BRADLEY INSIGHT: CENTERED 2-LINE CARD
+                // ------------------------------------
                 if (_revealedStepsCount >= _steps.length && _insight != null) ...[
-                  const SizedBox(height: 14),
-                  Container(
-                    padding: const EdgeInsets.all(14),
-                    decoration: BoxDecoration(
-                      color: Colors.indigo.shade50,
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: Colors.indigo.shade200),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
+                  Builder(
+                    builder: (context) {
+                      final type = (_insight!['type']?.toString() ?? 'pro-tip').toLowerCase();
+                      final rawTitle = _insight!['title']?.toString() ?? "The Head Teacher's Eye";
+                      final content = _insight!['content']?.toString() ?? '';
+
+                      // 1. Color Themes from Schema: Deeper, Pro-tip, Caution
+                      Color bgColor;
+                      Color borderColor;
+                      Color primaryColor;
+                      Color subtitleColor;
+
+                      if (type.contains('deeper')) {
+                        bgColor = const Color(0xFFF3E8FF); // Soft purple
+                        borderColor = const Color(0xFFD8B4FE);
+                        primaryColor = const Color(0xFF581C87); // Deep purple
+                        subtitleColor = const Color(0xFF6B21A8);
+                      } else if (type.contains('caution')) {
+                        bgColor = const Color(0xFFFEF9C3); // Soft yellow
+                        borderColor = const Color(0xFFFDE047);
+                        primaryColor = const Color(0xFF78350F); // Deep browny-orange
+                        subtitleColor = const Color(0xFF92400E);
+                      } else {
+                        // Default / Pro-tip: Blue
+                        bgColor = const Color(0xFFEFF6FF); // Soft blue
+                        borderColor = const Color(0xFFBFDBFE);
+                        primaryColor = const Color(0xFF1E3A8A); // Deep blue
+                        subtitleColor = const Color(0xFF1E40AF);
+                      }
+
+                      // 2. Parse into 2 Centered Lines
+                      String line1 = "The Head Teacher's Eye";
+                      String line2 = "";
+
+                      if (rawTitle.contains(':')) {
+                        final parts = rawTitle.split(':');
+                        line1 = parts[0].trim();
+                        line2 = parts.sublist(1).join(':').trim();
+                      } else {
+                        line2 = rawTitle.trim();
+                      }
+
+                      return Container(
+                        margin: const EdgeInsets.only(top: 16),
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: bgColor,
+                          borderRadius: BorderRadius.circular(14),
+                          border: Border.all(color: borderColor, width: 1.5),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Icon(Icons.lightbulb, color: Colors.indigo.shade800, size: 20),
-                            const SizedBox(width: 8),
-                            Text(
-                              _insight!['title']?.toString() ?? "Head Teacher's Eye",
-                              style: TextStyle(fontWeight: FontWeight.bold, color: Colors.indigo.shade900),
+                            // Line 1: Centered Brand Badge
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(Icons.lightbulb, color: primaryColor, size: 20),
+                                const SizedBox(width: 6),
+                                Text(
+                                  line1,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w800,
+                                    fontSize: 13,
+                                    letterSpacing: 0.5,
+                                    color: primaryColor,
+                                  ),
+                                ),
+                              ],
+                            ),
+
+                            // Line 2: Centered Subtitle
+                            if (line2.isNotEmpty) ...[
+                              const SizedBox(height: 6),
+                              Text(
+                                line2,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 14.5,
+                                  color: subtitleColor,
+                                ),
+                              ),
+                            ],
+
+                            const SizedBox(height: 12),
+                            Divider(color: borderColor, height: 1),
+                            const SizedBox(height: 12),
+
+                            // Content Body (Left-aligned for natural reading)
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: _renderMixedMath(content),
                             ),
                           ],
                         ),
-                        const SizedBox(height: 6),
-                        _renderMixedMath(_insight!['content']?.toString() ?? ''),
-                      ],
-                    ),
+                      );
+                    },
                   ),
                 ],
 
