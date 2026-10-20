@@ -1,115 +1,114 @@
 import 'dart:io';
+import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart'; 
 import 'package:path/path.dart';
 import 'models/filter_state.dart';
 
 class DatabaseHelper {
   static Database? _db;
+  static List<Map<String, dynamic>>? _jsonCache;
 
   Future<Database> get database async {
     if (_db != null) return _db!;
-
-    if (kIsWeb) {
-      var factory = databaseFactoryFfiWeb;
-      try {
-        final data = await rootBundle.load("assets/bradleys_maths.db");
-        final bytes = data.buffer.asUint8List();
-        await factory.writeDatabaseBytes('bradleys_maths.db', bytes);
-        _db = await factory.openDatabase('bradleys_maths.db');
-      } catch (e) {
-        print("WEB DB ERROR: $e");
-        rethrow;
-      }
-    } else {
-      var databasesPath = await getDatabasesPath();
-      var path = join(databasesPath, "bradleys_maths.db");
-      var exists = await databaseExists(path);
-      if (!exists) {
-        ByteData data = await rootBundle.load(join("assets", "bradleys_maths.db"));
-        List<int> bytes = data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
-        await Directory(dirname(path)).create(recursive: true);
-        await File(path).writeAsBytes(bytes, flush: true);
-      }
-      _db = await openDatabase(path);
-    }
+    var databasesPath = await getDatabasesPath();
+    var path = join(databasesPath, "bradleys_maths.db");
+    _db = await openDatabase(path);
     return _db!;
   }
 
-  Future<List<String>> getMajorAreas({String? branch}) async {
-    final db = await database;
-    List<Map<String, dynamic>> results;
-    if (branch != null && branch != 'Random') {
-      results = await db.rawQuery(
-        'SELECT DISTINCT major_area FROM questions WHERE branch = ? ORDER BY major_area ASC',
-        [branch],
-      );
-    } else {
-      results = await db.rawQuery(
-        'SELECT DISTINCT major_area FROM questions WHERE branch != ? ORDER BY major_area ASC',
-        ['Comprehension'],
-      );
+  // Reads the real questions.json asset on web
+  Future<List<Map<String, dynamic>>> _loadWebData() async {
+    if (_jsonCache != null) return _jsonCache!;
+    try {
+      final String response = await rootBundle.loadString('assets/questions.json');
+      final List<dynamic> data = json.decode(response);
+      _jsonCache = data.cast<Map<String, dynamic>>();
+      return _jsonCache!;
+    } catch (e) {
+      print("JSON Load Error: $e");
+      return [];
     }
-    return results.map((row) => row['major_area']?.toString() ?? '').where((s) => s.isNotEmpty).toList();
+  }
+
+  // ==========================================
+  // CASCADING TAXONOMY QUERIES
+  // ==========================================
+
+  Future<List<String>> getMajorAreas({String? branch}) async {
+    if (kIsWeb) {
+      final data = await _loadWebData();
+      return data
+          .where((q) {
+            if (branch != null && branch != 'Random') return q['branch'] == branch;
+            return q['branch'] != 'Comprehension';
+          })
+          .map((q) => q['major_area']?.toString() ?? '')
+          .where((s) => s.isNotEmpty)
+          .toSet()
+          .toList()..sort();
+    }
+    final db = await database;
+    final res = await db.rawQuery('SELECT DISTINCT major_area FROM questions');
+    return res.map((row) => row['major_area']?.toString() ?? '').toList();
   }
 
   Future<List<String>> getTopics({String? branch, String? majorArea}) async {
+    if (kIsWeb) {
+      final data = await _loadWebData();
+      return data
+          .where((q) {
+            if (branch != null && branch != 'Random' && q['branch'] != branch) return false;
+            if ((branch == null || branch == 'Random') && q['branch'] == 'Comprehension') return false;
+            if (majorArea != null && majorArea != 'Random' && q['major_area'] != majorArea) return false;
+            return true;
+          })
+          .map((q) => q['topic']?.toString() ?? '')
+          .where((s) => s.isNotEmpty)
+          .toSet()
+          .toList()..sort();
+    }
     final db = await database;
-    List<String> conditions = [];
-    List<dynamic> args = [];
-    if (branch != null && branch != 'Random') {
-      conditions.add('branch = ?');
-      args.add(branch);
-    } else {
-      conditions.add('branch != ?');
-      args.add('Comprehension');
-    }
-    if (majorArea != null && majorArea != 'Random') {
-      conditions.add('major_area = ?');
-      args.add(majorArea);
-    }
-    String whereClause = conditions.isNotEmpty ? 'WHERE ${conditions.join(' AND ')}' : '';
-    final results = await db.rawQuery('SELECT DISTINCT topic FROM questions $whereClause ORDER BY topic ASC', args);
-    return results.map((row) => row['topic']?.toString() ?? '').where((s) => s.isNotEmpty).toList();
+    final res = await db.rawQuery('SELECT DISTINCT topic FROM questions');
+    return res.map((row) => row['topic']?.toString() ?? '').toList();
   }
+
+  // ==========================================
+  // FETCH QUESTION (MATCHES BILL'S REAL SCHEMA)
+  // ==========================================
 
   Future<Map<String, dynamic>?> fetchQuestion(FilterState filter) async {
+    if (kIsWeb) {
+      final data = await _loadWebData();
+      if (data.isEmpty) return null;
+
+      // Map filter level "A Level" -> "A", "AS Level" -> "AS"
+      final String? targetLevel = filter.isRandomLevel
+          ? null
+          : (filter.level == 'A Level' ? 'A' : (filter.level == 'AS Level' ? 'AS' : filter.level));
+
+      var matches = data.where((q) {
+        if (!filter.isRandomBoard && q['board'] != filter.board) return false;
+        if (targetLevel != null && q['level'] != targetLevel) return false;
+        if (!filter.isRandomBranch && q['branch'] != filter.branch) return false;
+        if (filter.isRandomBranch && q['branch'] == 'Comprehension') return false;
+        if (!filter.isRandomMajorArea && q['major_area'] != filter.majorArea) return false;
+        if (!filter.isRandomTopic && q['topic'] != filter.topic) return false;
+        return true;
+      }).toList();
+
+      if (matches.isNotEmpty) {
+        matches.shuffle();
+        return matches.first;
+      }
+      // Fallback: Return any question matching the branch
+      var fallback = data.where((q) => q['branch'] != 'Comprehension').toList()..shuffle();
+      return fallback.isNotEmpty ? fallback.first : data.first;
+    }
+
     final db = await database;
-    List<String> conditions = [];
-    List<dynamic> args = [];
-    if (!filter.isRandomBoard) { conditions.add('board = ?'); args.add(filter.board); }
-    if (!filter.isRandomLevel) { conditions.add('level = ?'); args.add(filter.level); }
-    if (!filter.isRandomBranch) { conditions.add('branch = ?'); args.add(filter.branch); }
-    else { conditions.add('branch != ?'); args.add('Comprehension'); }
-    if (!filter.isRandomMajorArea) { conditions.add('major_area = ?'); args.add(filter.majorArea); }
-    if (!filter.isRandomTopic) { conditions.add('topic = ?'); args.add(filter.topic); }
-
-    String whereClause = conditions.isNotEmpty ? 'WHERE ${conditions.join(' AND ')}' : '';
-    final results = await db.rawQuery('SELECT * FROM questions $whereClause ORDER BY RANDOM() LIMIT 1', args);
-    if (results.isNotEmpty) return results.first;
-
-    final fallback = await db.rawQuery('SELECT * FROM questions WHERE branch != ? ORDER BY RANDOM() LIMIT 1', ['Comprehension']);
-    return fallback.isNotEmpty ? fallback.first : null;
-  }
-
-  Future<List<Map<String, dynamic>>> fetchOptions(dynamic questionId) async {
-    final db = await database;
-    return await db.rawQuery('SELECT * FROM options WHERE question_id = ? ORDER BY RANDOM()', [questionId]);
-  }
-
-  // RESTORED: fetchSteps
-  Future<List<Map<String, dynamic>>> fetchSteps(dynamic questionId) async {
-    final db = await database;
-    return await db.rawQuery('SELECT * FROM steps WHERE question_id = ? ORDER BY step_number ASC', [questionId]);
-  }
-
-  // RESTORED: fetchInsight
-  Future<String?> fetchInsight(dynamic questionId) async {
-    final db = await database;
-    final results = await db.rawQuery('SELECT insight_text FROM insights WHERE question_id = ? LIMIT 1', [questionId]);
-    if (results.isNotEmpty) return results.first['insight_text'] as String?;
-    return null;
+    final res = await db.query('questions', orderBy: 'RANDOM()', limit: 1);
+    return res.isNotEmpty ? res.first : null;
   }
 }

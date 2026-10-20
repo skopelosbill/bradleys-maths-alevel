@@ -22,8 +22,8 @@ class QuestionScreen extends StatefulWidget {
 class _QuestionScreenState extends State<QuestionScreen> {
   late Map<String, dynamic> _currentQuestion;
   List<Map<String, dynamic>> _options = [];
-  List<Map<String, dynamic>> _steps = [];
-  String? _insight;
+  List<String> _steps = [];
+  Map<String, dynamic>? _insight;
 
   // Flow State
   bool _optionsUnlocked = false; // Step 8 & 9 Gate
@@ -40,28 +40,65 @@ class _QuestionScreenState extends State<QuestionScreen> {
   @override
   void initState() {
     super.initState();
-    _currentQuestion = widget.question;
-    _loadQuestionAssets(_currentQuestion['id']);
+    _loadQuestionData(widget.question);
   }
 
-  Future<void> _loadQuestionAssets(dynamic qId) async {
-    final opts = await widget.dbHelper.fetchOptions(qId);
-    final stps = await widget.dbHelper.fetchSteps(qId);
-    final ins = await widget.dbHelper.fetchInsight(qId);
+  void _loadQuestionData(Map<String, dynamic> q) {
+    _currentQuestion = q;
+
+    // 1. Parse steps
+    final List<dynamic> rawSteps = q['steps'] ?? [];
+    _steps = rawSteps.map((s) => s.toString()).toList();
+
+    // 2. Extract Correct Answer from the last step
+    String correctAnswer = "";
+    if (_steps.isNotEmpty) {
+      correctAnswer = _steps.last
+          .replaceAll('<strong>Final Answer</strong>', '')
+          .replaceAll('Final Answer', '')
+          .replaceAll('<br>', '')
+          .trim();
+    }
+
+    // 3. Extract 3 Distractors from pi_options
+    final List<dynamic> piList = q['pi_options'] ?? [];
+    List<Map<String, dynamic>> choices = [];
+
+    // Add Correct Choice
+    choices.add({
+      'ans': correctAnswer,
+      'is_correct': 1,
+      'feedback': 'Correct! Textbook derivation.',
+    });
+
+    // Add 3 Distractors
+    for (var pi in piList) {
+      choices.add({
+        'ans': pi['ans']?.toString() ?? '',
+        'is_correct': 0,
+        'feedback': pi['feedback']?.toString() ?? 'Check your paper working carefully.',
+      });
+    }
+
+    // Shuffle 1 Correct + 3 Distractors
+    choices.shuffle();
 
     // Box 5: Fixed "None of the Above"
-    final fullOptions = List<Map<String, dynamic>>.from(opts);
-    fullOptions.add({
-      'id': -1,
-      'option_text': 'None of the Above',
+    choices.add({
+      'ans': 'None of the Above',
       'is_correct': 0,
       'feedback': 'None of the Above selected. Targeted coaching: Concept revision is recommended.',
     });
 
+    // 4. Extract Bradley Insight
+    if (q['bradley_insight'] != null && q['bradley_insight'] is Map) {
+      _insight = Map<String, dynamic>.from(q['bradley_insight']);
+    } else {
+      _insight = null;
+    }
+
     setState(() {
-      _options = fullOptions;
-      _steps = stps;
-      _insight = ins;
+      _options = choices;
       _optionsUnlocked = false;
       _selectedOptionIndex = null;
       _isSubmitted = false;
@@ -77,47 +114,34 @@ class _QuestionScreenState extends State<QuestionScreen> {
     if (_selectedOptionIndex == null) return;
 
     final selected = _options[_selectedOptionIndex!];
-    final isNoneOfAbove = selected['id'] == -1;
+    final isNoneOfAbove = _selectedOptionIndex == _options.length - 1;
     final isCorrectChoice = selected['is_correct'] == 1;
 
     setState(() {
       if (isCorrectChoice) {
-        // ------------------------------------
         // 11a: CORRECT
-        // ------------------------------------
         _isCorrect = true;
         _isSubmitted = true;
         _feedbackText = "Outstanding! That is spot on. Study the textbook model answer below.";
         _showModelAnswer = true;
       } else if (isNoneOfAbove) {
-        // ------------------------------------
         // 11c: NONE OF THE ABOVE
-        // ------------------------------------
         _isCorrect = false;
         _isSubmitted = true;
-        _feedbackText = "Revision Needed: You recognized that none of the mathematical forms matched your working. Step through the model answer to consolidate the concept.";
+        _feedbackText = selected['feedback'];
         _showModelAnswer = true;
       } else {
-        // ------------------------------------
         // 11b: DIAGNOSTIC DISTRACTOR (PI)
-        // ------------------------------------
-       // ------------------------------------
-// 11b: DIAGNOSTIC DISTRACTOR (PI)
-// ------------------------------------
-if (_attemptCount == 0) {
-  // First Miss -> Second Chance
-  _attemptCount = 1;
-  _isCorrect = false; // Triggers the "Second Chance" styling
-  _isSubmitted = false; // CRITICAL: Keep the gate open
-  _feedbackText = "${selected['feedback']}\n\nCheck your paper working carefully and give it a Second Chance!";
-  _selectedOptionIndex = null; 
-} else {
-  // Missed Second Chance -> Reveal Answer
-  _isCorrect = false;
-  _isSubmitted = true; // Lock the gate
-  _feedbackText = "Review Needed\n\n${selected['feedback']}\n\nHere is the full step-by-step model answer.";
-  _showModelAnswer = true;
-}
+        if (_attemptCount == 0) {
+          _attemptCount = 1;
+          _feedbackText = "${selected['feedback']}\n\nCheck your paper working carefully and take a Second Chance!";
+          _selectedOptionIndex = null;
+        } else {
+          _isCorrect = false;
+          _isSubmitted = true;
+          _feedbackText = "${selected['feedback']}\n\nHere is the full step-by-step model answer to guide your revision.";
+          _showModelAnswer = true;
+        }
       }
     });
   }
@@ -125,8 +149,7 @@ if (_attemptCount == 0) {
   void _loadNextQuestion() async {
     final nextQ = await widget.dbHelper.fetchQuestion(widget.filterState);
     if (nextQ != null) {
-      _currentQuestion = nextQ;
-      _loadQuestionAssets(nextQ['id']);
+      _loadQuestionData(nextQ);
     } else {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -148,7 +171,7 @@ if (_attemptCount == 0) {
       ),
       body: Center(
         child: Container(
-          constraints: const BoxConstraints(maxWidth: 420), // Mobile viewport rule
+          constraints: const BoxConstraints(maxWidth: 420),
           child: ListView(
             padding: const EdgeInsets.all(16.0),
             children: [
@@ -168,7 +191,7 @@ if (_attemptCount == 0) {
                     visualDensity: VisualDensity.compact,
                     backgroundColor: Colors.purple.shade50,
                     label: Text(
-                      _currentQuestion['level']?.toString() ?? 'A Level',
+                      _currentQuestion['level'] == 'A' ? 'A Level' : (_currentQuestion['level'] == 'AS' ? 'AS Level' : 'A Level'),
                       style: TextStyle(fontSize: 11, color: Colors.purple.shade900, fontWeight: FontWeight.bold),
                     ),
                   ),
@@ -178,7 +201,7 @@ if (_attemptCount == 0) {
               const SizedBox(height: 12),
 
               // ------------------------------------
-              // STEP 7: QUESTION PRESENTATION
+              // STEP 7: QUESTION STATEMENT
               // ------------------------------------
               Card(
                 elevation: 1,
@@ -193,7 +216,7 @@ if (_attemptCount == 0) {
                         style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.grey, letterSpacing: 1.2),
                       ),
                       const SizedBox(height: 10),
-                      _buildMathContent(_currentQuestion['question_text'] ?? ''),
+                      _renderMixedMath(_currentQuestion['question'] ?? ''),
                     ],
                   ),
                 ),
@@ -202,7 +225,7 @@ if (_attemptCount == 0) {
               const SizedBox(height: 16),
 
               // ------------------------------------
-              // STEP 8: THE "PAPER FIRST" MANDATE BANNER
+              // STEP 8: PAPER FIRST MANDATE BANNER
               // ------------------------------------
               if (!_optionsUnlocked) ...[
                 Container(
@@ -275,7 +298,7 @@ if (_attemptCount == 0) {
                 ...List.generate(_options.length, (index) {
                   final opt = _options[index];
                   final isSelected = _selectedOptionIndex == index;
-                  final isNoneOfAbove = opt['id'] == -1;
+                  final isNoneOfAbove = index == _options.length - 1;
 
                   Color borderColor = Colors.grey.shade300;
                   Color bgColor = Colors.white;
@@ -320,7 +343,7 @@ if (_attemptCount == 0) {
                               ),
                             ),
                             const SizedBox(width: 12),
-                            Expanded(child: _buildMathContent(opt['option_text'] ?? '')),
+                            Expanded(child: _renderMixedMath(opt['ans'] ?? '')),
                           ],
                         ),
                       ),
@@ -347,51 +370,43 @@ if (_attemptCount == 0) {
               ],
 
               // ------------------------------------
-// STEP 11: DIAGNOSTIC EVALUATION FEEDBACK
-// ------------------------------------
-if (_feedbackText != null) ...[
-  const SizedBox(height: 18),
-  Container(
-    padding: const EdgeInsets.all(14),
-    decoration: BoxDecoration(
-      color: _isCorrect ? Colors.green.shade50 : Colors.orange.shade50,
-      borderRadius: BorderRadius.circular(12),
-      border: Border.all(
-        color: _isCorrect ? Colors.green : Colors.orange, 
-        width: 1.5
-      ),
-    ),
-    child: Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            Icon(
-              _isCorrect ? Icons.check_circle : Icons.warning_amber,
-              color: _isCorrect ? Colors.green.shade800 : Colors.orange.shade900,
-            ),
-            const SizedBox(width: 8),
-            Text(
-              _isCorrect 
-                  ? "Correct!" 
-                  : (_attemptCount == 1 && !_isSubmitted ? "Second Chance" : "Review Needed"),
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: _isCorrect ? Colors.green.shade800 : Colors.orange.shade900,
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: 6),
-        // FIXED: Now uses the math builder instead of raw Text
-        _buildMathContent(_feedbackText!),
-      ],
-    ),
-  ),
-],
+              // STEP 11: DIAGNOSTIC FEEDBACK
+              // ------------------------------------
+              if (_feedbackText != null) ...[
+                const SizedBox(height: 18),
+                Container(
+                  padding: const EdgeInsets.all(14),
+                  decoration: BoxDecoration(
+                    color: _isCorrect ? Colors.green.shade50 : Colors.orange.shade50,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: _isCorrect ? Colors.green : Colors.orange, width: 1.5),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(_isCorrect ? Icons.check_circle : Icons.warning_amber,
+                              color: _isCorrect ? Colors.green.shade800 : Colors.orange.shade900),
+                          const SizedBox(width: 8),
+                          Text(
+                            _isCorrect ? "Correct!" : (_attemptCount == 1 && !_isSubmitted ? "Second Chance" : "Review Needed"),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: _isCorrect ? Colors.green.shade800 : Colors.orange.shade900,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 6),
+                      _renderMixedMath(_feedbackText!),
+                    ],
+                  ),
+                ),
+              ],
 
               // ------------------------------------
-              // MODEL ANSWER STEP-THROUGH & INSIGHT
+              // MODEL ANSWER & HEAD TEACHER INSIGHT
               // ------------------------------------
               if (_showModelAnswer) ...[
                 const SizedBox(height: 24),
@@ -405,25 +420,19 @@ if (_feedbackText != null) ...[
 
                 ...List.generate(
                   _revealedStepsCount.clamp(0, _steps.length),
-                  (i) => Container(
-                    margin: const EdgeInsets.only(bottom: 8),
-                    padding: const EdgeInsets.all(12),
-                    decoration: BoxDecoration(
-                      color: Colors.grey.shade50,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.grey.shade300),
-                    ),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Step ${i + 1}: ",
-                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                        ),
-                        Expanded(child: _buildMathContent(_steps[i]['step_text'] ?? '')),
-                      ],
-                    ),
-                  ),
+                  (i) {
+                    final cleanStep = _steps[i].replaceAll('<br>', '\n');
+                    return Container(
+                      margin: const EdgeInsets.only(bottom: 8),
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade50,
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.grey.shade300),
+                      ),
+                      child: _renderMixedMath(cleanStep),
+                    );
+                  },
                 ),
 
                 if (_revealedStepsCount < _steps.length)
@@ -435,7 +444,7 @@ if (_feedbackText != null) ...[
                     },
                   ),
 
-                // Head Teacher's Eye Insight
+                // Bradley Insight Card
                 if (_revealedStepsCount >= _steps.length && _insight != null) ...[
                   const SizedBox(height: 14),
                   Container(
@@ -453,16 +462,13 @@ if (_feedbackText != null) ...[
                             Icon(Icons.lightbulb, color: Colors.indigo.shade800, size: 20),
                             const SizedBox(width: 8),
                             Text(
-                              "Head Teacher's Eye",
+                              _insight!['title']?.toString() ?? "Head Teacher's Eye",
                               style: TextStyle(fontWeight: FontWeight.bold, color: Colors.indigo.shade900),
                             ),
                           ],
                         ),
                         const SizedBox(height: 6),
-                        Text(
-                          _insight!,
-                          style: TextStyle(fontSize: 12.5, color: Colors.indigo.shade900, height: 1.35),
-                        ),
+                        _renderMixedMath(_insight!['content']?.toString() ?? ''),
                       ],
                     ),
                   ),
@@ -500,43 +506,110 @@ if (_feedbackText != null) ...[
     );
   }
 
- Widget _buildMathContent(String rawText) {
-  final clean = rawText.replaceAll('<br>', '\n');
-  
-  // This Regex looks for LaTeX commands, powers, or subscripts
-  // It captures the math part separately from the text
-  final regex = RegExp(r'(\\[a-zA-Z]+(?:\{.*?\})?|[\^_{}]|[0-9]+/[0-9]+)');
-  final parts = clean.split(RegExp(r'\s+')); // Still split by space for basic layout
+  // =======================================================
+  // MATHEMATICS & PROSE PARSER (Eliminates 1286px Overflows)
+  // =======================================================
 
-  return Wrap(
-    crossAxisAlignment: WrapCrossAlignment.center,
-    children: parts.map((part) {
-      // If the part contains a backslash or math symbol
-      bool isMath = part.contains(r'\') || part.contains('^') || part.contains('_');
-      
-      if (isMath) {
-        // Separate math from trailing punctuation (like a period)
-        final mathMatch = RegExp(r'([^\.,!?]*)([\.,!?]*)').firstMatch(part);
-        final mathPart = mathMatch?.group(1) ?? part;
-        final punctuation = mathMatch?.group(2) ?? '';
+  Widget _renderMixedMath(String raw) {
+    if (raw.isEmpty) return const SizedBox.shrink();
 
-        return Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Math.tex(
-              mathPart,
-              textStyle: const TextStyle(fontSize: 15),
-              onErrorFallback: (_) => Text(mathPart, style: const TextStyle(fontSize: 15)),
+    // 1. Clean HTML tags
+    String text = raw.replaceAll('<br>', '\n').replaceAll(RegExp(r'</?strong>'), '');
+
+    // 2. Normalize standalone \begin{aligned} blocks so they are treated as display math
+    if (text.contains(r'\begin{aligned}') && !text.contains(r'$$')) {
+      text = text.replaceAll(r'\begin{aligned}', r'$$\begin{aligned}')
+                 .replaceAll(r'\end{aligned}', r'\end{aligned}$$');
+    }
+
+    // 3. Split by display math: $$...$$
+    final displayParts = text.split(r'$$');
+    List<Widget> columnChildren = [];
+
+    for (int i = 0; i < displayParts.length; i++) {
+      final part = displayParts[i].trim();
+      if (part.isEmpty) continue;
+
+      if (i % 2 == 1) {
+        // Odd index = Display Math Equation ($$...$$)
+        // Wrapped in horizontal scroll protection so big fractions never overflow screen
+        columnChildren.add(
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
+            child: Center(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Math.tex(
+                  part,
+                  mathStyle: MathStyle.display,
+                  textStyle: const TextStyle(fontSize: 16),
+                  onErrorFallback: (_) => Text(part, style: const TextStyle(fontSize: 14)),
+                ),
+              ),
             ),
-            if (punctuation.isNotEmpty) 
-              Text(punctuation, style: const TextStyle(fontSize: 15)),
-            const Text(' '), // Add the space back
-          ],
+          ),
         );
       } else {
-        return Text('$part ', style: const TextStyle(fontSize: 15, height: 1.3));
+        // Even index = English sentences with potential inline $...$ math
+        final paragraphs = part.split('\n');
+        for (final p in paragraphs) {
+          final trimmed = p.trim();
+          if (trimmed.isEmpty) continue;
+          columnChildren.add(
+            Padding(
+              padding: const EdgeInsets.only(bottom: 6.0),
+              child: _buildInlineMathParagraph(trimmed),
+            ),
+          );
+        }
       }
-    }).toList(),
-  );
-}
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: columnChildren,
+    );
+  }
+
+  Widget _buildInlineMathParagraph(String paragraph) {
+    // Split by single dollar sign: $...$
+    final parts = paragraph.split(r'$');
+    List<InlineSpan> spans = [];
+
+    for (int i = 0; i < parts.length; i++) {
+      final chunk = parts[i];
+      if (chunk.isEmpty) continue;
+
+      if (i % 2 == 1) {
+        // Odd index = Inline Math ($...$)
+        spans.add(
+          WidgetSpan(
+            alignment: PlaceholderAlignment.middle,
+            child: Math.tex(
+              chunk,
+              mathStyle: MathStyle.text,
+              textStyle: const TextStyle(fontSize: 15),
+              onErrorFallback: (_) => Text(chunk, style: const TextStyle(fontSize: 15)),
+            ),
+          ),
+        );
+      } else {
+        // Even index = Plain English words that wrap naturally across lines
+        spans.add(
+          TextSpan(
+            text: chunk,
+            style: const TextStyle(
+              fontSize: 15,
+              height: 1.45,
+              color: Colors.black87,
+            ),
+          ),
+        );
+      }
+    }
+
+    return Text.rich(
+      TextSpan(children: spans),
+    );
+  }
 }
