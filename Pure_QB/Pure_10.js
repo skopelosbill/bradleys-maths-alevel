@@ -19,19 +19,19 @@ window.ALEVEL_QUESTIONS = [
                 "<strong>Step 3: Combine into a single algebraic fraction to complete part (a)</strong><br>Combine the terms over a common denominator.<br><br>The numerator expands to:\\begin{aligned} &x_n(9x_n^2 + 2x_n) \\cr &\\quad - (3x_n^3 + x_n^2 - 2) \\cr &\\quad = 9x_n^3 + 2x_n^2 - 3x_n^3 \\cr &\\qquad - x_n^2 + 2 \\cr &\\quad = 6x_n^3 + x_n^2 + 2 \\end{aligned}Placing this over the common denominator gives:\\begin{aligned} x_{n+1} &= \\dfrac{6x_n^3 + x_n^2 + 2}{9x_n^2 + 2x_n} \\end{aligned}This matches the required formula.",
                 "<strong>Step 4: Perform the iterations for part (b)</strong><br>Substitute $x_1 = 1$ into the formula to calculate $x_2$:\\begin{aligned} x_2 &= \\dfrac{6(1)^3 + 1^2 + 2}{9(1)^2 + 2(1)} \\cr &= \\dfrac{9}{11} \\cr &\\approx 0.818 \\end{aligned}Now, substitute $x_2 = \\dfrac{9}{11}$ back into the formula to find $x_3$:\\begin{aligned} x_3 &= \\dfrac{6\\left(\\dfrac{9}{11}\\right)^3 + \\left(\\dfrac{9}{11}\\right)^2 + 2}{9\\left(\\dfrac{9}{11}\\right)^2 + 2\\left(\\dfrac{9}{11}\\right)} \\cr &= \\dfrac{7927}{10197} \\cr &\\approx 0.777 \\end{aligned}",
                 "<strong>Step 5: Formulate the explanation for part (c)</strong><br>Evaluate the derivative $f'(x)$ at our starting value $x_1 = 0$:\\begin{aligned} f'(0) &= 9(0)^2 + 2(0) \\cr &= 0 \\end{aligned}The Newton-Raphson formula involves dividing by the value of the derivative, $f'(x_n)$. Because $f'(0) = 0$, starting with $x_1 = 0$ results in division by zero, which is undefined. Geometrically, this means the tangent to the curve at $x = 0$ is completely horizontal and does not intersect the $x$-axis to provide a next approximation.",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) Formula verified} \\cr &\\text{(b) } x_2 \\approx 0.818, \\; x_3 \\approx 0.777 \\cr &\\text{(c) } f'(0) = 0 \\cr &\\quad\\implies \\text{division by zero} \\end{aligned}"
+                "<strong>Final Answer</strong>\\begin{aligned}  &\\text{(b) } x_2 \\approx 0.818, \\; x_3 \\approx 0.777 \\cr &\\text{(c) } f'(0) = 0 \\cr &\\quad\\implies \\text{division by zero} \\end{aligned}"
         ],
         "pi_options": [
                 {
-                        "ans": "\\begin{aligned} &x_2 \\approx 0.818, \\; x_3 \\approx 0.777 \\cr &\\text{Curve not defined at } x = 0 \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) } x_2 \\approx 0.818, \\; x_3 \\approx 0.777 \\cr &\\text{(c) }\\text{Curve not defined at } x = 0 \\end{aligned}",
                         "feedback": "You may have correctly calculated the values, but your explanation in part (c) is incorrect. The original cubic polynomial $f(x) = 3x^3 + x^2 - 2$ is fully defined at $x = 0$ (yielding $f(0) = -2$). The method fails because the derivative $f'(0) = 0$, leading to an undefined division by zero."
                 },
                 {
-                        "ans": "\\begin{aligned} &x_2 \\approx 0.818, \\; x_3 \\approx 0.777 \\cr &x_1 = 0 \\text{ is too far from root} \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 \\approx 0.818, \\; x_3 \\approx 0.777 \\cr &\\text{(c) }x_1 = 0 \\text{ is too far from root} \\end{aligned}",
                         "feedback": "Your numerical approximations are correct, but your explanation in part (c) is physically incorrect. While Newton-Raphson can fail or diverge if a starting value is too far from the root, a starting value of $x_1 = 0$ fails immediately and strictly because the derivative $f'(0) = 0$, causing division by zero."
                 },
                 {
-                        "ans": "\\begin{aligned} &x_2 \\approx 0.818, \\; x_3 \\approx 0.818 \\cr &\\text{Derivative is zero} \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 \\approx 0.818, \\; x_3 \\approx 0.818 \\cr &\\text{(c) } \\text{Derivative is zero} \\end{aligned}",
                         "feedback": "You may have made an error when calculating $x_3$, perhaps by using $x_2$ directly or making a rounding slip. Additionally, check that you worked with the exact fraction $9/11$ on your calculator to maintain numerical accuracy before rounding to 3 decimal places."
                 }
         ],
@@ -62,19 +62,19 @@ window.ALEVEL_QUESTIONS = [
                 "<strong>Step 3: Combine into a single algebraic fraction to complete part (a)</strong><br>Combine the terms over a common denominator.<br><br>The numerator expands to:\\begin{aligned} &x_n(1 + \\sin x_n) \\cr &\\quad - (x_n - \\cos x_n) \\cr &\\quad = x_n + x_n \\sin x_n \\cr &\\qquad - x_n + \\cos x_n \\cr &\\quad = x_n \\sin x_n + \\cos x_n \\end{aligned}Placing this over the common denominator yields:\\begin{aligned} x_{n+1} &= \\dfrac{x_n \\sin x_n + \\cos x_n}{1 + \\sin x_n} \\end{aligned}This matches the required formula.",
                 "<strong>Step 4: Perform the iterations for part (b)</strong><br>Ensure your calculator is strictly in <strong>radian</strong> mode. Substitute $x_1 = 0$ into the formula to calculate $x_2$:\\begin{aligned} x_2 &= \\dfrac{0 \\sin 0 + \\cos 0}{1 + \\sin 0} \\cr &= \\dfrac{0 + 1}{1 + 0} \\cr &= 1 \\end{aligned}Now, substitute $x_2 = 1$ back into the formula to find $x_3$:\\begin{aligned} x_3 &= \\dfrac{1 \\sin 1 + \\cos 1}{1 + \\sin 1} \\cr &\\approx \\dfrac{1(0.84147) + 0.54030}{1 + 0.84147} \\cr &\\approx \\dfrac{1.38177}{1.84147} \\cr &\\approx 0.750 \\end{aligned}",
                 "<strong>Step 5: Formulate the explanation for part (c)</strong><br>Evaluate the derivative $f'(x) = 1 + \\sin x$ at our starting value $x_1 = -\\dfrac{\\pi}{2}$:\\begin{aligned} &f'\\left(-\\dfrac{\\pi}{2}\\right) \\cr &\\quad = 1 + \\sin\\left(-\\dfrac{\\pi}{2}\\right) \\cr &\\quad = 1 + (-1) \\cr &\\quad = 0 \\end{aligned}Because the derivative is $0$ at this starting point, the Newton-Raphson formula would require division by zero, which is mathematically undefined. Therefore, the method cannot be used.",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) Formula verified} \\cr &\\text{(b) } x_2 = 1.000, \\; x_3 \\approx 0.750 \\cr &\\text{(c) } f'\\left(-\\dfrac{\\pi}{2}\\right) = 0 \\cr &\\quad\\implies \\text{division by zero} \\end{aligned}"
+                "<strong>Final Answer</strong>\\begin{aligned}  &\\text{(b) } x_2 = 1.000, \\; x_3 \\approx 0.750 \\cr &\\text{(c) } f'\\left(-\\dfrac{\\pi}{2}\\right) = 0 \\cr &\\quad\\implies \\text{division by zero} \\end{aligned}"
         ],
         "pi_options": [
                 {
-                        "ans": "\\begin{aligned} &x_2 = 1.000, \\; x_3 \\approx 0.750 \\cr &\\cos\\left(-\\dfrac{\\pi}{2}\\right) = 0 \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 = 1.000, \\; x_3 \\approx 0.750 \\cr &\\text{(c) }\\cos\\left(-\\dfrac{\\pi}{2}\\right) = 0 \\end{aligned}",
                         "feedback": "You may have correctly calculated the values, but your explanation in part (c) is incorrect. The value of $\\cos\\left(-\\dfrac{\\pi}{2}\\right) = 0$ is perfectly fine and is just part of the function's numerator. The method breaks because the derivative $f'\\left(-\\dfrac{\\pi}{2}\\right) = 1 + \\sin\\left(-\\dfrac{\\pi}{2}\\right) = 0$, leading to division by zero."
                 },
                 {
-                        "ans": "\\begin{aligned} &x_2 = 1.000, \\; x_3 \\approx 0.999 \\cr &\\text{Derivative is zero} \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 = 1.000, \\; x_3 \\approx 0.999 \\cr &\\text{(c) }\\text{Derivative is zero} \\end{aligned}",
                         "feedback": "You may have worked in <strong>degree</strong> mode instead of <strong>radian</strong> mode when calculating $x_3$. For calculus and numerical methods involving trigonometric functions, always make sure your calculator is set to radians."
                 },
                 {
-                        "ans": "\\begin{aligned} &x_2 = 1.000, \\; x_3 \\approx 0.750 \\cr &\\text{Angle is negative} \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 = 1.000, \\; x_3 \\approx 0.750 \\cr &\\text{(c) }\\text{Angle is negative} \\end{aligned}",
                         "feedback": "Your numerical approximations are correct, but your explanation is incorrect. The Newton-Raphson method can easily handle negative numbers. The failure is strictly caused by the derivative equaling zero at $x_1 = -\\dfrac{\\pi}{2}$."
                 }
         ],
@@ -105,19 +105,19 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Step 3: Combine into a single algebraic fraction to complete part (a)</strong><br>Express the fraction with a common denominator in the derivative:<br><br>First, write the denominator as $\\dfrac{2x_n^2 - 1}{x_n}$, which gives:\\begin{aligned} x_{n+1} &= x_n - \\dfrac{x_n(x_n^2 - \\ln x_n - 3)}{2x_n^2 - 1} \\end{aligned}Now combine over the common denominator $2x_n^2 - 1$. The numerator expands to:\\begin{aligned} &x_n(2x_n^2 - 1) \\cr &\\quad - (x_n^3 - x_n \\ln x_n - 3x_n) \\cr &\\quad = 2x_n^3 - x_n - x_n^3 \\cr &\\qquad + x_n \\ln x_n + 3x_n \\cr &\\quad = x_n^3 + x_n \\ln x_n + 2x_n \\end{aligned}Placing this over the common denominator yields:\\begin{aligned} x_{n+1} &= \\dfrac{x_n^3 + x_n \\ln x_n + 2x_n}{2x_n^2 - 1} \\end{aligned}This matches the required formula.",
                         "<strong>Step 4: Perform the iterations for part (b)</strong><br>Substitute $x_1 = 2$ into the formula to calculate $x_2$:\\begin{aligned} x_2 &= \\dfrac{2^3 + 2\\ln 2 + 2(2)}{2(2)^2 - 1} \\cr &= \\dfrac{8 + 2\\ln 2 + 4}{7} \\cr &= \\dfrac{12 + 2\\ln 2}{7} \\cr &\\approx 1.912 \\cr &\\approx 1.91 \\text{ (to 3 s.f.)} \\end{aligned}Now, substitute $x_2 \\approx 1.912$ back into the formula to find $x_3$:\\begin{aligned} x_3 &\\approx \\dfrac{6.990 + 1.239 + 3.824}{6.311} \\cr &\\approx \\dfrac{12.053}{6.311} \\cr &\\approx 1.91 \\text{ (to 3 s.f.)} \\end{aligned}",
                         "<strong>Step 5: Formulate the explanation for part (c)</strong><br>Evaluate the derivative $f'(x) = 2x - \\dfrac{1}{x}$ at our starting value $x_1 = \\dfrac{1}{\\sqrt{2}}$:\\begin{aligned} &f'\\left(\\dfrac{1}{\\sqrt{2}}\\right) \\cr &\\quad = 2\\left(\\dfrac{1}{\\sqrt{2}}\\right) \\cr &\\qquad - \\dfrac{1}{\\left(\\dfrac{1}{\\sqrt{2}}\\right)} \\cr &\\quad = \\sqrt{2} - \\sqrt{2} \\cr &\\quad = 0 \\end{aligned}Because the derivative $f'(x_n)$ is $0$, the Newton-Raphson formula is undefined due to division by zero. Thus, the method cannot be used.",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) Formula verified} \\cr &\\text{(b) } x_2 \\approx 1.91, \\; x_3 \\approx 1.91 \\cr &\\text{(c) } f'\\left(\\dfrac{1}{\\sqrt{2}}\\right) = 0 \\cr &\\quad\\implies \\text{division by zero} \\end{aligned}"
+                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(b) } x_2 \\approx 1.91, \\; x_3 \\approx 1.91 \\cr &\\text{(c) } f'\\left(\\dfrac{1}{\\sqrt{2}}\\right) = 0 \\cr &\\quad\\implies \\text{division by zero} \\end{aligned}"
         ],
         "pi_options": [
                 {
-                        "ans": "\\begin{aligned} &x_2 \\approx 1.91, \\; x_3 \\approx 1.91 \\cr &\\ln\\left(\\dfrac{1}{\\sqrt{2}}\\right) \\text{ is negative} \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 \\approx 1.91, \\; x_3 \\approx 1.91 \\cr &\\text{(c) }\\ln\\left(\\dfrac{1}{\\sqrt{2}}\\right) \\text{ is negative} \\end{aligned}",
                         "feedback": "You may have correctly calculated the values, but your explanation in part (c) is incorrect. While $\\ln\\left(\\dfrac{1}{\\sqrt{2}}\\right) \\approx -0.347$ is indeed negative, logarithms can be negative (they are only undefined for non-positive inputs). The method fails because the derivative $f'\\left(\\dfrac{1}{\\sqrt{2}}\\right) = 0$, causing division by zero."
                 },
                 {
-                        "ans": "\\begin{aligned} &x_2 \\approx 1.91, \\; x_3 \\approx 1.91 \\cr &\\text{Starting value is a fraction} \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 \\approx 1.91, \\; x_3 \\approx 1.91 \\cr &\\text{(c) }\\text{Starting value is a fraction} \\end{aligned}",
                         "feedback": "Your numerical approximations are correct, but your explanation is incorrect. The Newton-Raphson method can easily handle fractional values. The failure is strictly caused by the derivative equaling zero at $x_1 = \\dfrac{1}{\\sqrt{2}}$."
                 },
                 {
-                        "ans": "\\begin{aligned} &x_2 \\approx 1.71, \\; x_3 \\approx 1.71 \\cr &\\text{Derivative is zero} \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 \\approx 1.71, \\; x_3 \\approx 1.71 \\cr &\\text{(c) }\\text{Derivative is zero} \\end{aligned}",
                         "feedback": "You may have made an error when simplifying your numerator calculation in Step 4, perhaps by omitting the $2x_n$ term, leading to incorrect numerical approximations."
                 }
         ],
@@ -148,19 +148,19 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Step 3: Combine into a single algebraic fraction to complete part (a)</strong><br>Combine over a common denominator.<br><br>The numerator expands to:\\begin{aligned} &x_n(\\mathrm{e}^{x_n} + 3) \\cr &\\quad - (\\mathrm{e}^{x_n} + 3x_n - 4) \\cr &\\quad = x_n \\mathrm{e}^{x_n} + 3x_n - \\mathrm{e}^{x_n} \\cr &\\qquad - 3x_n + 4 \\cr &\\quad = x_n \\mathrm{e}^{x_n} - \\mathrm{e}^{x_n} + 4 \\cr &\\quad = (x_n - 1)\\mathrm{e}^{x_n} + 4 \\end{aligned}Placing this over the common denominator yields:\\begin{aligned} x_{n+1} &= \\dfrac{(x_n - 1)\\mathrm{e}^{x_n} + 4}{\\mathrm{e}^{x_n} + 3} \\end{aligned}This matches the required formula.",
                         "<strong>Step 4: Perform the iterations for part (b)</strong><br>Substitute $x_1 = 0$ into the formula to calculate $x_2$:\\begin{aligned} x_2 &= \\dfrac{(0 - 1)\\mathrm{e}^0 + 4}{\\mathrm{e}^0 + 3} \\cr &= \\dfrac{(-1)(1) + 4}{1 + 3} \\cr &= \\dfrac{3}{4} \\cr &= 0.750 \\quad \\text{(to 3 s.f.)} \\end{aligned}Now, substitute $x_2 = 0.75$ back into the formula to find $x_3$:\\begin{aligned} x_3 &= \\dfrac{(0.75 - 1)\\mathrm{e}^{0.75} + 4}{\\mathrm{e}^{0.75} + 3} \\cr &\\approx \\dfrac{(-0.25)(2.1170) + 4}{2.1170 + 3} \\cr &\\approx \\dfrac{3.47075}{5.1170} \\cr &\\approx 0.678 \\quad \\text{(to 3 s.f.)} \\end{aligned}",
                         "<strong>Step 5: Formulate the explanation for part (c)</strong><br>For the Newton-Raphson method to fail due to division by zero, the derivative $f'(x)$ must be equal to zero at some starting value $x_1$.<br><br>Our derivative is $f'(x) = \\mathrm{e}^x + 3$.<br><br>Since $\\mathrm{e}^x > 0$ for all real values of $x$, it follows that:\\begin{aligned} &f'(x) \\ge 3 > 0 \\cr &\\text{for all } x \\in \\mathbb{R} \\end{aligned}Since the derivative is strictly positive and can never be zero, the Newton-Raphson method <strong>cannot</strong> fail due to division by zero for any real starting value.",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) Formula verified} \\cr &\\text{(b) } x_2 = 0.750, \\; x_3 \\approx 0.678 \\cr &\\text{(c) } f'(x) \\ge 3 > 0 \\text{ for all } x \\cr &\\quad\\implies \\text{cannot divide by zero} \\end{aligned}"
+                "<strong>Final Answer</strong>\\begin{aligned}  &\\text{(b) } x_2 = 0.750, \\; x_3 \\approx 0.678 \\cr &\\text{(c) } f'(x) \\ge 3 > 0 \\text{ for all } x \\cr &\\quad\\implies \\text{cannot divide by zero} \\end{aligned}"
         ],
         "pi_options": [
                 {
-                        "ans": "\\begin{aligned} &x_2 = 0.750, \\; x_3 \\approx 0.678 \\cr &\\mathrm{e}^x + 3 = 0 \\implies x = \\ln(-3) \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 = 0.750, \\; x_3 \\approx 0.678 \\cr &\\text{(c) }\\mathrm{e}^x + 3 = 0 \\implies x = \\ln(-3) \\end{aligned}",
                         "feedback": "You may have correctly calculated the values, but your algebraic logic in part (c) is incorrect. The equation $\\mathrm{e}^x = -3$ has no real solutions because $\\mathrm{e}^x$ is strictly positive for all real $x$. Since $\\ln(-3)$ is undefined in the real number system, the derivative can never be zero."
                 },
                 {
-                        "ans": "\\begin{aligned} &x_2 = 0.750, \\; x_3 \\approx 0.678 \\cr &\\text{Fails for } x_1 = -4 \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 = 0.750, \\; x_3 \\approx 0.678 \\cr &\\text{(c) }\\text{Fails for } x_1 = -4 \\end{aligned}",
                         "feedback": "Your numerical approximations are correct, but your assertion is incorrect. Starting with $x_1 = -4$ is perfectly valid; the derivative $f'(-4) = \\mathrm{e}^{-4} + 3 \\approx 3.018 \\neq 0$, so no division by zero occurs."
                 },
                 {
-                        "ans": "\\begin{aligned} &x_2 = 0.500, \\; x_3 \\approx 0.450 \\cr &\\text{Cannot fail by division by } 0 \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 = 0.500, \\; x_3 \\approx 0.450 \\cr &\\text{(c) }\\text{Cannot fail by division by } 0 \\end{aligned}",
                         "feedback": "Your explanation in part (c) is correct, but you made an arithmetic slip in Step 4. Check that you calculated $\\mathrm{e}^0 = 1$ when evaluating $x_2$, yielding $\\dfrac{3}{4} = 0.75$ instead of $0.5$."
                 }
         ],
@@ -190,19 +190,19 @@ window.ALEVEL_QUESTIONS = [
                         "<strong>Step 3: Combine into a single algebraic fraction to complete part (a)</strong><br>Combine over a common denominator.<br><br>The numerator expands to:\\begin{aligned} &x_n(3x_n^2 - 3) \\cr &\\quad - (x_n^3 - 3x_n - 1) \\cr &\\quad = 3x_n^3 - 3x_n - x_n^3 \\cr &\\qquad + 3x_n + 1 \\cr &\\quad = 2x_n^3 + 1 \\end{aligned}Placing this over the common denominator yields:\\begin{aligned} x_{n+1} &= \\dfrac{2x_n^3 + 1}{3x_n^2 - 3} \\end{aligned}This matches the required formula.",
                         "<strong>Step 4: Perform the iterations for part (b)</strong><br>Substitute $x_1 = 2$ into the formula to calculate $x_2$:\\begin{aligned} x_2 &= \\dfrac{2(2)^3 + 1}{3(2)^2 - 3} \\cr &= \\dfrac{16 + 1}{12 - 3} \\cr &= \\dfrac{17}{9} \\cr &\\approx 1.89 \\quad \\text{(to 3 s.f.)} \\end{aligned}Now, substitute $x_2 = \\dfrac{17}{9}$ back into the formula to find $x_3$:\\begin{aligned} x_3 &= \\dfrac{2\\left(\\dfrac{17}{9}\\right)^3 + 1}{3\\left(\\dfrac{17}{9}\\right)^2 - 3} \\cr &= \\dfrac{10555}{5616} \\cr &\\approx 1.88 \\quad \\text{(to 3 s.f.)} \\end{aligned}",
                         "<strong>Step 5: Formulate the explanation for part (c)</strong><br>Evaluate the derivative $f'(x) = 3x^2 - 3$ at our starting value $x_1 = 1$:\\begin{aligned} f'(1) &= 3(1)^2 - 3 \\cr &= 0 \\end{aligned}The Newton-Raphson formula involves dividing by the value of the derivative, $f'(x_n)$. Because $f'(1) = 0$, starting with $x_1 = 1$ results in division by zero, which is undefined. Geometrically, this means the tangent to the curve at $x = 1$ is horizontal and does not intersect the $x$-axis to provide a next approximation.",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) Formula verified} \\cr &\\text{(b) } x_2 \\approx 1.89, \\; x_3 \\approx 1.88 \\cr &\\text{(c) } f'(1) = 0 \\cr &\\quad\\implies \\text{division by zero} \\end{aligned}"
+                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(b) } x_2 \\approx 1.89, \\; x_3 \\approx 1.88 \\cr &\\text{(c) } f'(1) = 0 \\cr &\\quad\\implies \\text{division by zero} \\end{aligned}"
         ],
         "pi_options": [
                 {
-                        "ans": "\\begin{aligned} &x_2 \\approx 1.89, \\; x_3 \\approx 1.88 \\cr &1 \\text{ is too close to the root} \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 \\approx 1.89, \\; x_3 \\approx 1.88 \\cr &\\text{(c) }1 \\text{ is too close to the root} \\end{aligned}",
                         "feedback": "You may have correctly calculated the values, but your explanation in part (c) is incorrect. The proximity of a starting value to the root does not cause the method to break down. The failure is strictly caused by the derivative equaling zero ($f'(1) = 0$), causing division by zero."
                 },
                 {
-                        "ans": "\\begin{aligned} &x_2 \\approx 1.89, \\; x_3 \\approx 1.88 \\cr &\\text{Curve has an asymptote at } x = 1 \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 \\approx 1.89, \\; x_3 \\approx 1.88 \\cr &\\text{(c) }\\text{Curve has an asymptote at } x = 1 \\end{aligned}",
                         "feedback": "Your numerical approximations are correct, but your explanation is incorrect. The polynomial $f(x) = x^3 - 3x - 1$ is continuous for all real $x$ and has no asymptotes. The method fails because $f'(1) = 0$, resulting in an undefined division by zero."
                 },
                 {
-                        "ans": "\\begin{aligned} &x_2 \\approx 1.89, \\; x_3 \\approx 1.89 \\cr &\\text{Derivative is zero} \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 \\approx 1.89, \\; x_3 \\approx 1.89 \\cr &\\text{(c) }\\text{Derivative is zero} \\end{aligned}",
                         "feedback": "Your explanation in part (c) is correct, but you made an error when calculating $x_3$, perhaps by using $x_2$ directly or making a rounding slip. Check that you worked with the exact fraction $17/9$ on your calculator to maintain numerical accuracy before rounding to 3 significant figures."
                 }
         ],
