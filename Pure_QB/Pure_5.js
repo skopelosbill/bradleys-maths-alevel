@@ -1222,7 +1222,7 @@ window.ALEVEL_QUESTIONS = [
                 "major_area": "Sequences and Series",
                 "topic": "Sequences and Series",
                 "subtopic": [
-                        "Recurrence relations",
+                        "Recurrence relations"
                 ],
                 "img": false,
                 "question": "In this question you must show detailed reasoning.<br><br>A sequence is defined by the recurrence relation:\\begin{aligned} u_{n+1} = p u_n + q, \\quad \\text{for } n \\ge 1 \\end{aligned}where $p$ and $q$ are constants.<br><br>Given that $u_1 = 4$, $u_2 = 14$, and $u_3 = 44$:<br><br>1. Find the values of $p$ and $q$.<br><br>2. Calculate the value of $u_4$.",
