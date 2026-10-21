@@ -198,7 +198,7 @@ window.ALEVEL_QUESTIONS = [
                         "feedback": "You may have correctly calculated the values, but your explanation in part (c) is incorrect. The proximity of a starting value to the root does not cause the method to break down. The failure is strictly caused by the derivative equaling zero ($f'(1) = 0$), causing division by zero."
                 },
                 {
-                        "ans": "\\begin{aligned} &\\text{(b) }x_2 \\approx 1.89, \\; x_3 \\approx 1.88 \\cr &\\text{(c) }\\text{Curve has an asymptote at } x = 1 \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(b) }x_2 \\approx 1.89, \\; x_3 \\approx 1.88 \\cr &\\text{(c) } x = 1 \\text{ is an asymptote.}\\end{aligned}",
                         "feedback": "Your numerical approximations are correct, but your explanation is incorrect. The polynomial $f(x) = x^3 - 3x - 1$ is continuous for all real $x$ and has no asymptotes. The method fails because $f'(1) = 0$, resulting in an undefined division by zero."
                 },
                 {
@@ -212,216 +212,216 @@ window.ALEVEL_QUESTIONS = [
                         "content": "The Newton-Raphson method strictly breaks down at any point $x$ where $f'(x) = 0$. Geometrically, this corresponds to stationary points (local maximums, minimums, or stationary points of inflection) where the tangent is horizontal. Since a horizontal tangent has a gradient of 0, it runs parallel to the $x$-axis and can never cross it to find a new approximation."
                 }
         },
-{
-        "id": "004456",
-        "group_id": "004456",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Algebra and Functions",
-        "topic": "Algebraic Methods",
-        "subtopic": [
-                "Algebraic Methods",
-                "Proof",
-                "Trigonometry"
-        ],
-        "img": false,
-        "question": "\\begin{aligned} &f(x) = -2x^3 + 8x^2 - 9x + 9 \\cr &x \\in \\mathbb{R} \\end{aligned}<strong>(a) (i)</strong> Calculate $f(3)$.<br><br><strong>(ii)</strong> Write $f(x)$ as a product of two algebraic factors.<br><br>Using the answer to <strong>(a)(ii)</strong>:<br><br><strong>(b)</strong> Prove that there are exactly two real solutions to the equation $-2y^6 + 8y^4 - 9y^2 + 9 = 0$.<br><br><strong>(c)</strong> Deduce the number of real solutions, for $5\\pi \\le \\theta < 9\\pi$, to the equation:\\begin{aligned} &2\\tan^3\\theta - 8\\tan^2\\theta \\cr &\\quad + 9\\tan\\theta - 9 = 0 \\end{aligned}State the real solutions to the equation in <strong>(b)</strong> and the number of solutions in <strong>(c)</strong>.",
-        "steps": [
-                "<strong>Part (a)(i):</strong><br>Substitute $x = 3$ into the expression for $f(x)$:\\begin{aligned} &f(3) = -2(3)^3 + 8(3)^2 \\cr &\\qquad - 9(3) + 9 \\cr &\\quad = -54 + 72 - 27 + 9 \\cr &\\quad = 0 \\end{aligned}Since $f(3) = 0$, $x = 3$ is a root, which means $(x - 3)$ is a linear factor of $f(x)$.",
-                "<strong>Part (a)(ii):</strong><br>Divide $-2x^3 + 8x^2 - 9x + 9$ by $(x - 3)$ using equating coefficients:\\begin{aligned} &f(x) \\cr &\\quad = (x - 3)(-2x^2 + px + q) \\cr &\\quad = -2x^3 + (p + 6)x^2 \\cr &\\qquad + (q - 3p)x - 3q \\end{aligned}Equating coefficients gives:\\begin{aligned} p + 6 &= 8 \\cr p &= 2 \\cr -3q &= 9 \\cr q &= -3 \\end{aligned}Thus, the factored expression is:\\begin{aligned} f(x) &= (x - 3)(-2x^2 + 2x - 3) \\cr &= (3 - x)(2x^2 - 2x + 3) \\end{aligned}We check the discriminant of the quadratic factor $2x^2 - 2x + 3$:\\begin{aligned} \\Delta &= (-2)^2 - 4(2)(3) \\cr &= 4 - 24 \\cr &= -20 \\end{aligned}Since $\\Delta = -20 < 0$, the quadratic factor has no real roots. Therefore, $x = 3$ is the unique real root of $f(x) = 0$.",
-                "<strong>Part (b):</strong><br>We want to find the real solutions to:$$-2y^6 + 8y^4 - 9y^2 + 9 = 0$$Let $x = y^2$. This transforms the equation into:$$-2x^3 + 8x^2 - 9x + 9 = 0$$Which is exactly $f(x) = 0$. Since we showed in part <strong>(a)(ii)</strong> that the only real root is $x = 3$, we have:\\begin{aligned} y^2 &= 3 \\cr y &= \\pm\\sqrt{3} \\end{aligned}The other factor yields $-2(y^2)^2 + 2(y^2) - 3 = 0$, which has no real solutions because its discriminant is negative. Thus, there are exactly two real solutions:$$y = \\pm\\sqrt{3}$$",
-                "<strong>Part (c):</strong><br>The equation is:\\begin{aligned} &2\\tan^3\\theta - 8\\tan^2\\theta \\cr &\\quad + 9\\tan\\theta - 9 = 0 \\end{aligned}Multiplying the entire equation by $-1$, we get:\\begin{aligned} &-2\\tan^3\\theta + 8\\tan^2\\theta \\cr &\\quad - 9\\tan\\theta + 9 = 0 \\end{aligned}Let $x = \\tan\\theta$. This equation becomes $f(x) = 0$, which has only one real root, $x = 3$. Therefore:$$\\tan\\theta = 3$$We need to find the number of solutions in the interval $5\\pi \\le \\theta < 9\\pi$.<br><br>The width of the interval is $9\\pi - 5\\pi = 4\\pi$. Since the tangent function $\\tan\\theta$ has a period of $\\pi$, it completes exactly $4$ full cycles over this interval.<br><br>In each period, the equation $\\tan\\theta = 3$ has exactly one unique solution. Thus, there are exactly $4$ real solutions.",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a)(i) } f(3) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (3 - x)(2x^2 - 2x + 3) \\cr &\\text{(b) } y = \\pm\\sqrt{3} \\cr &\\text{(c) } 4 \\text{ real solutions} \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &y = \\pm 3 \\cr &8\\text{ solutions} \\end{aligned}",
-                        "feedback": "This error occurs if you mistakenly solve $y^2 = 9$ (perhaps by misidentifying the root of $f(x) = 0$ as $9$ instead of $3$) and double the number of trig solutions by assuming a period of $\\frac{\\pi}{2}$ instead of $\\pi$ for $\\tan\\theta$."
-                },
-                {
-                        "ans": "\\begin{aligned} &y = \\sqrt{3} \\cr &2\\text{ solutions} \\end{aligned}",
-                        "feedback": "This mistake arises from forgetting that $y^2 = 3$ yields two real solutions ($y = \\pm\\sqrt{3}$) rather than only the positive square root, and incorrectly assuming the interval contains only two periods of the tangent function."
-                },
-                {
-                        "ans": "\\begin{aligned} &y = \\pm\\sqrt{3} \\cr &2\\text{ solutions} \\end{aligned}",
-                        "feedback": "This occurs if you correctly identify the roots of $y^2 = 3$ but miscount the number of solutions to $\\tan\\theta = 3$ in the interval $5\\pi \\le \\theta < 9\\pi$. Since the width of this interval is $4\\pi$ and the period of $\\tan\\theta$ is $\\pi$, there must be exactly 4 real solutions."
-                }
-        ],
-        "bradley_insight": {
-                "type": "pro-tip",
-                "title": "Substitution Boundaries",
-                "content": "When making algebraic substitutions like $x = y^2$ or $x = e^y$, always check the domain restrictions of the new variable. For example, $y^2 \\ge 0$ and $e^y > 0$ mean that any negative roots of the original cubic $f(x) = 0$ will not yield real values for $y$."
-        }
-},
-{
-        "id": "004457",
-        "group_id": "004456",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Algebra and Functions",
-        "topic": "Algebraic Methods",
-        "subtopic": [
-                "Algebraic Methods",
-                "Proof",
-                "Trigonometry"
-        ],
-        "img": false,
-        "question": "\\begin{aligned} &f(x) = 2x^3 + x^2 + x - 4 \\cr &x \\in \\mathbb{R} \\end{aligned}<strong>(a) (i)</strong> Calculate $f(1)$.<br><br><strong>(ii)</strong> Write $f(x)$ as a product of two algebraic factors.<br><br>Using the answer to <strong>(a)(ii)</strong>:<br><br><strong>(b)</strong> Prove that there are exactly two real solutions to the equation $2y^{12} + y^8 + y^4 - 4 = 0$.<br><br><strong>(c)</strong> Deduce the number of real solutions, for $0 \\le \\theta < 4\\pi$, to the equation:\\begin{aligned} &2\\sin^3\\theta + \\sin^2\\theta \\cr &\\quad + \\sin\\theta - 4 = 0 \\end{aligned}State the real solutions to the equation in <strong>(b)</strong> and the number of solutions in <strong>(c)</strong>.",
-        "steps": [
-                "<strong>Part (a)(i):</strong><br>Substitute $x = 1$ into the expression for $f(x)$:\\begin{aligned} f(1) &= 2(1)^3 + 1^2 + 1 - 4 \\cr &= 2 + 1 + 1 - 4 \\cr &= 0 \\end{aligned}Since $f(1) = 0$, $x = 1$ is a root, meaning $(x - 1)$ is a linear factor of $f(x)$.",
-                "<strong>Part (a)(ii):</strong><br>Divide $2x^3 + x^2 + x - 4$ by $(x - 1)$:\\begin{aligned} &2x^3 + x^2 + x - 4 \\cr &\\quad = (x - 1)(2x^2 + 3x + 4) \\end{aligned}We check the discriminant of the quadratic factor $2x^2 + 3x + 4$:\\begin{aligned} \\Delta &= 3^2 - 4(2)(4) \\cr &= 9 - 32 \\cr &= -23 \\end{aligned}Since $\\Delta = -23 < 0$, the quadratic factor has no real roots. Thus, $x = 1$ is the unique real root of $f(x) = 0$.",
-                "<strong>Part (b):</strong><br>We solve:$$2y^{12} + y^8 + y^4 - 4 = 0$$Let $x = y^4$. The equation becomes:$$2x^3 + x^2 + x - 4 = 0$$This is exactly $f(x) = 0$. Since $x = 1$ is the unique real root, we have:\\begin{aligned} y^4 &= 1 \\cr y^2 &= 1 \\cr y &= \\pm 1 \\end{aligned}The other branch $y^4 < 0$ has no real roots. Thus, there are exactly two real solutions: $y = \\pm 1$.",
-                "<strong>Part (c):</strong><br>The equation is:\\begin{aligned} &2\\sin^3\\theta + \\sin^2\\theta \\cr &\\quad + \\sin\\theta - 4 = 0 \\end{aligned}Let $x = \\sin\\theta$. This yields $f(x) = 0 \\implies \\sin\\theta = 1$.<br><br>We look for solutions in the interval $0 \\le \\theta < 4\\pi$, which represents two complete periods of the sine function.<br><br>The sine function equals $1$ exactly once per period (at the maximum point of each cycle):\\begin{aligned} \\theta &= \\dfrac{\\pi}{2} \\cr \\theta &= \\dfrac{5\\pi}{2} \\end{aligned}Thus, there are exactly $2$ real solutions.",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a)(i) } f(1) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x - 1)(2x^2 + 3x + 4) \\cr &\\text{(b) } y = \\pm 1 \\cr &\\text{(c) } 2 \\text{ real solutions} \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &y = 1 \\cr &4\\text{ solutions} \\end{aligned}",
-                        "feedback": "This error occurs if you forget that $y^4 = 1$ has two real solutions ($y = \\pm 1$) and also miscalculate the number of solutions to $\\sin\\theta = 1$ in the interval $[0, 4\\pi)$, which has only 2 peaks."
-                },
-                {
-                        "ans": "\\begin{aligned} &y = \\pm 1 \\cr &4\\text{ solutions} \\end{aligned}",
-                        "feedback": "This mistake arises from correctly identifying the roots of $y^4 = 1$ but miscounting the number of real solutions to $\\sin\\theta = 1$ in the interval $0 \\le \\theta < 4\\pi$. Over two full cycles of the sine wave, the value $1$ is only reached at the peak of each cycle, giving exactly 2 solutions, not 4."
-                },
-                {
-                        "ans": "\\begin{aligned} &y = \\pm 1 \\cr &0\\text{ solutions} \\end{aligned}",
-                        "feedback": "This occurs if you believe that $\\sin\\theta = 1$ has no real solutions, possibly by confusing it with a value outside the range $[-1, 1]$. Since $1$ is within the range of the sine function, solutions exist."
-                }
-        ],
-        "bradley_insight": {
-                "type": "caution",
-                "title": "Sine Wave Maxima Counting",
-                "content": "Unlike general values of $k$ where $\\sin\\theta = k$ has two solutions per cycle, the boundary values $k = \\pm 1$ only occur at the single peak or trough of each cycle. Therefore, $\\sin\\theta = 1$ yields exactly one solution per $2\\pi$ period."
-        }
-},
-{
-        "id": "004458",
-        "group_id": "004456",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Algebra and Functions",
-        "topic": "Algebraic Methods",
-        "subtopic": [
-                "Algebraic Methods",
-                "Proof",
-                "Trigonometry"
-        ],
-        "img": false,
-        "question": "\\begin{aligned} &f(x) = x^3 + x^2 + x + 6 \\cr &x \\in \\mathbb{R} \\end{aligned}<strong>(a) (i)</strong> Calculate $f(-2)$.<br><br><strong>(ii)</strong> Write $f(x)$ as a product of two algebraic factors.<br><br>Using the answer to <strong>(a)(ii)</strong>:<br><br><strong>(b)</strong> Prove that there is exactly one real solution to the equation $y^9 + y^6 + y^3 + 6 = 0$.<br><br><strong>(c)</strong> Deduce the number of real solutions, for $0 \\le \\theta < 2\\pi$, to the equation:\\begin{aligned} &\\cos^3\\theta + \\cos^2\\theta \\cr &\\quad + \\cos\\theta + 6 = 0 \\end{aligned}State the real solutions to the equation in <strong>(b)</strong> and the number of solutions in <strong>(c)</strong>.",
-        "steps": [
-                "<strong>Part (a)(i):</strong><br>Substitute $x = -2$ into $f(x)$:\\begin{aligned} f(-2) &= (-2)^3 + (-2)^2 - 2 + 6 \\cr &= -8 + 4 - 2 + 6 \\cr &= 0 \\end{aligned}Since $f(-2) = 0$, $x = -2$ is a root, meaning $(x + 2)$ is a linear factor of $f(x)$.",
-                "<strong>Part (a)(ii):</strong><br>Divide $x^3 + x^2 + x + 6$ by $(x + 2)$:\\begin{aligned} &x^3 + x^2 + x + 6 \\cr &\\quad = (x + 2)(x^2 - x + 3) \\end{aligned}We check the discriminant of the quadratic factor $x^2 - x + 3$:\\begin{aligned} \\Delta &= (-1)^2 - 4(1)(3) \\cr &= 1 - 12 \\cr &= -11 \\end{aligned}Since $\\Delta = -11 < 0$, there are no real roots from this quadratic factor. Thus, $x = -2$ is the unique real root of $f(x) = 0$.",
-                "<strong>Part (b):</strong><br>We solve:$$y^9 + y^6 + y^3 + 6 = 0$$Let $x = y^3$. The equation becomes:$$x^3 + x^2 + x + 6 = 0$$This is $f(x) = 0$. Since $x = -2$ is the only real root, we have:\\begin{aligned} y^3 &= -2 \\cr y &= -\\sqrt[3]{2} \\end{aligned}Unlike even powers, a real number has exactly one real cube root. Hence, there is exactly one real solution: $y = -\\sqrt[3]{2}$.",
-                "<strong>Part (c):</strong><br>The equation is:\\begin{aligned} &\\cos^3\\theta + \\cos^2\\theta \\cr &\\quad + \\cos\\theta + 6 = 0 \\end{aligned}Let $x = \\cos\\theta$. This equation becomes $f(x) = 0$, which requires:$$\\cos\\theta = -2$$However, the cosine function has a strict range of $[-1, 1]$. Since $-2$ is outside this range, there are no real values of $\\theta$ that satisfy this equation. Thus, there are $0$ real solutions.",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a)(i) } f(-2) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x + 2)(x^2 - x + 3) \\cr &\\text{(b) } y = -\\sqrt[3]{2} \\cr &\\text{(c) } 0 \\text{ real solutions} \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &y = \\pm\\sqrt[3]{2} \\cr &2\\text{ solutions} \\end{aligned}",
-                        "feedback": "This error occurs if you assume a cubic root equation $y^3 = -2$ has both positive and negative real solutions (which is only true for even powers) and if you mistakenly find solutions to $\\cos\\theta = -2$."
-                },
-                {
-                        "ans": "\\begin{aligned} &y = -\\sqrt[3]{2} \\cr &1\\text{ solution} \\end{aligned}",
-                        "feedback": "This mistake arises from assuming that the equation $\\cos\\theta = -2$ must have a real solution, overlooking the fact that $-2$ lies entirely outside the range $[-1, 1]$ of the cosine function."
-                },
-                {
-                        "ans": "\\begin{aligned} &y = -2 \\cr &0\\text{ solutions} \\end{aligned}",
-                        "feedback": "This occurs if you find the root $x = -2$ but fail to apply the substitution $y^3 = x$, leaving the final answer as $y = -2$ instead of taking the cube root."
-                }
-        ],
-        "bradley_insight": {
-                "type": "deeper",
-                "title": "Range Constraints in Trigonometry",
-                "content": "Always check whether algebraic solutions are physically possible when substituting transcendental functions like $\\cos\\theta$ or $\\sin\\theta$. Any intermediate root outside of $[-1, 1]$ is rejected immediately."
-        }
-},
-{
-        "id": "004459",
-        "group_id": "004456",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Algebra and Functions",
-        "topic": "Algebraic Methods",
-        "subtopic": [
-                "Algebraic Methods",
-                "Proof",
-                "Trigonometry"
-        ],
-        "img": false,
-        "question": "\\begin{aligned} &f(x) = 2x^3 + 3x^2 + 2x - 2 \\cr &x \\in \\mathbb{R} \\end{aligned}<strong>(a) (i)</strong> Calculate $f(0.5)$.<br><br><strong>(ii)</strong> Write $f(x)$ as a product of two algebraic factors.<br><br>Using the answer to <strong>(a)(ii)</strong>:<br><br><strong>(b)</strong> Prove that there are exactly two real solutions to the equation $2y^6 + 3y^4 + 2y^2 - 2 = 0$.<br><br><strong>(c)</strong> Deduce the number of real solutions, for $0 \\le \\theta < 4\\pi$, to the equation:\\begin{aligned} &2\\cos^3\\theta + 3\\cos^2\\theta \\cr &\\quad + 2\\cos\\theta - 2 = 0 \\end{aligned}State the real solutions to the equation in <strong>(b)</strong> and the number of solutions in <strong>(c)</strong>.",
-        "steps": [
-                "<strong>Part (a)(i):</strong><br>Substitute $x = 0.5$ (or $x = \\dfrac{1}{2}$) into $f(x)$:\\begin{aligned} &f\\left(\\dfrac{1}{2}\\right) \\cr &\\quad = 2\\left(\\dfrac{1}{2}\\right)^3 + 3\\left(\\dfrac{1}{2}\\right)^2 \\cr &\\qquad + 2\\left(\\dfrac{1}{2}\\right) - 2 \\cr &\\quad = 2\\left(\\dfrac{1}{8}\\right) + 3\\left(\\dfrac{1}{4}\\right) + 1 - 2 \\cr &\\quad = \\dfrac{1}{4} + \\dfrac{3}{4} + 1 - 2 \\cr &\\quad = 0 \\end{aligned}Since $f(0.5) = 0$, $x = 0.5$ is a root, meaning $(2x - 1)$ is a linear factor of $f(x)$.",
-                "<strong>Part (a)(ii):</strong><br>Divide $2x^3 + 3x^2 + 2x - 2$ by $(2x - 1)$:\\begin{aligned} &2x^3 + 3x^2 + 2x - 2 \\cr &\\quad = (2x - 1)(x^2 + 2x + 2) \\end{aligned}We check the discriminant of the quadratic factor $x^2 + 2x + 2$:\\begin{aligned} \\Delta &= 2^2 - 4(1)(2) \\cr &= 4 - 8 \\cr &= -4 \\end{aligned}Since $\\Delta = -4 < 0$, the quadratic factor has no real roots. Thus, $x = 0.5$ is the only real root of $f(x) = 0$.",
-                "<strong>Part (b):</strong><br>We solve:$$2y^6 + 3y^4 + 2y^2 - 2 = 0$$Let $x = y^2$. The equation transforms to $f(x) = 0$, which has the unique real solution $x = 0.5$. Therefore:\\begin{aligned} y^2 &= \\dfrac{1}{2} \\cr y &= \\pm\\dfrac{1}{\\sqrt{2}} \\cr &= \\pm\\dfrac{\\sqrt{2}}{2} \\end{aligned}Since the other factor has a negative discriminant, no further real solutions exist. There are exactly two real solutions: $y = \\pm\\dfrac{\\sqrt{2}}{2}$.",
-                "<strong>Part (c):</strong><br>The equation is:\\begin{aligned} &2\\cos^3\\theta + 3\\cos^2\\theta \\cr &\\quad + 2\\cos\\theta - 2 = 0 \\end{aligned}Let $x = \\cos\\theta$. This equation becomes $f(x) = 0$, which has only one real solution, $x = 0.5$. Thus:\\begin{aligned} \\cos\\theta &= \\dfrac{1}{2} \\end{aligned}We seek solutions in the interval $0 \\le \\theta < 4\\pi$, representing two complete periods of the cosine function.<br><br>In each period $[0, 2\\pi)$, the equation $\\cos\\theta = 0.5$ has exactly 2 solutions (at $\\theta = \\dfrac{\\pi}{3}$ and $\\theta = \\dfrac{5\\pi}{3}$).<br><br>Therefore, over two full periods, there are exactly $4$ real solutions.",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a)(i) } f(0.5) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (2x - 1)(x^2 + 2x + 2) \\cr &\\text{(b) } y = \\pm\\dfrac{\\sqrt{2}}{2} \\cr &\\text{(c) } 4 \\text{ real solutions} \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &y = \\pm\\dfrac{1}{2} \\cr &2\\text{ solutions} \\end{aligned}",
-                        "feedback": "This error occurs if you resolve $y^2 = 0.5$ as $y = \\pm 0.5$ (mistaking the square root of $0.5$ for $0.25$) and incorrectly assume there is only 1 solution to $\\cos\\theta = 0.5$ per period."
-                },
-                {
-                        "ans": "\\begin{aligned} &y = \\pm\\dfrac{\\sqrt{2}}{2} \\cr &2\\text{ solutions} \\end{aligned}",
-                        "feedback": "This mistake arises from correctly identifying $y = \\pm \\frac{\\sqrt{2}}{2}$ but miscounting the number of real solutions to $\\cos\\theta = 0.5$ in $0 \\le \\theta < 4\\pi$. Since the interval covers two complete periods and each period has exactly 2 solutions, there must be 4 real solutions."
-                },
-                {
-                        "ans": "\\begin{aligned} &y = \\dfrac{\\sqrt{2}}{2} \\cr &4\\text{ solutions} \\end{aligned}",
-                        "feedback": "This occurs if you neglect the negative square root of $y^2 = 0.5$, which yields the valid real solution $-\\frac{\\sqrt{2}}{2}$ along with the positive one."
-                }
-        ],
-        "bradley_insight": {
-                "type": "pro-tip",
-                "title": "Exact Value Rationalisation",
-                "content": "Always rationalise denominators for exact value answers (e.g. write $y = \\pm\\frac{\\sqrt{2}}{2}$ instead of $y = \\pm\\frac{1}{\\sqrt{2}}$). This helps when matching option choices on standard examinations."
-        }
-},
-{
-        "id": "004460",
-        "group_id": "004456",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Algebra and Functions",
-        "topic": "Algebraic Methods",
-        "subtopic": [
-                "Algebraic Methods",
-                "Proof",
-                "Trigonometry"
-        ],
-        "img": false,
-        "question": "\\begin{aligned} &f(x) = 4x^3 - 2x^2 + x - 3 \\cr &x \\in \\mathbb{R} \\end{aligned}<strong>(a) (i)</strong> Calculate $f(1)$.<br><br><strong>(ii)</strong> Write $f(x)$ as a product of two algebraic factors.<br><br>Using the answer to <strong>(a)(ii)</strong>:<br><br><strong>(b)</strong> Prove that there is exactly one real solution to the equation $4\\mathrm{e}^{3y} - 2\\mathrm{e}^{2y} + \\mathrm{e}^y - 3 = 0$.<br><br><strong>(c)</strong> Deduce the number of real solutions, for $0 \\le \\theta < \\pi$, to the equation:\\begin{aligned} &4\\tan^3(2\\theta) - 2\\tan^2(2\\theta) \\cr &\\quad + \\tan(2\\theta) - 3 = 0 \\end{aligned}State the real solutions to the equation in <strong>(b)</strong> and the number of solutions in <strong>(c)</strong>.",
-        "steps": [
-                "<strong>Part (a)(i):</strong><br>Substitute $x = 1$ into $f(x)$:\\begin{aligned} f(1) &= 4(1)^3 - 2(1)^2 + 1 - 3 \\cr &= 4 - 2 + 1 - 3 \\cr &= 0 \\end{aligned}Since $f(1) = 0$, $x = 1$ is a root, meaning $(x - 1)$ is a linear factor of $f(x)$.",
-                "<strong>Part (a)(ii):</strong><br>Divide $4x^3 - 2x^2 + x - 3$ by $(x - 1)$:\\begin{aligned} &4x^3 - 2x^2 + x - 3 \\cr &\\quad = (x - 1)(4x^2 + 2x + 3) \\end{aligned}We check the discriminant of the quadratic factor $4x^2 + 2x + 3$:\\begin{aligned} \\Delta &= 2^2 - 4(4)(3) \\cr &= 4 - 48 \\cr &= -44 \\end{aligned}Since $\\Delta = -44 < 0$, the quadratic factor has no real roots. Thus, $x = 1$ is the unique real root of $f(x) = 0$.",
-                "<strong>Part (b):</strong><br>We solve:$$4\\mathrm{e}^{3y} - 2\\mathrm{e}^{2y} + \\mathrm{e}^y - 3 = 0$$Let $x = \\mathrm{e}^y$ (where $x > 0$). The equation becomes $f(x) = 0$.<br><br>Since the unique real root is $x = 1$, we have:\\begin{aligned} \\mathrm{e}^y &= 1 \\cr y &= \\ln(1) \\cr &= 0 \\end{aligned}Since the quadratic factor yields no real roots, $y = 0$ is the single unique real solution.",
-                "<strong>Part (c):</strong><br>The equation is:\\begin{aligned} &4\\tan^3(2\\theta) - 2\\tan^2(2\\theta) \\cr &\\quad + \\tan(2\\theta) - 3 = 0 \\end{aligned}Let $u = \\tan(2\\theta)$. This equation becomes $f(u) = 0$, which has only one real solution, $u = 1$. Thus:$$\\tan(2\\theta) = 1$$We search for solutions in the interval $0 \\le \\theta < \\pi$. Since the argument of the tangent function is $2\\theta$, we must scale the domain:$$0 \\le 2\\theta < 2\\pi$$The tangent function $\\tan(2\\theta)$ has a period of $\\pi$. Therefore, in the interval $[0, 2\\pi)$, the equation $\\tan(2\\theta) = 1$ has exactly two solutions (at $2\\theta = \\dfrac{\\pi}{4}$ and $2\\theta = \\dfrac{5\\pi}{4}$).<br><br>Thus, there are exactly $2$ real solutions for $\\theta$.",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a)(i) } f(1) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x - 1)(4x^2 + 2x + 3) \\cr &\\text{(b) } y = 0 \\cr &\\text{(c) } 2 \\text{ real solutions} \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &y = 1 \\cr &4\\text{ solutions} \\end{aligned}",
-                        "feedback": "This error occurs if you solve $e^y = 1$ to get $y = 1$ instead of $y = 0$, and if you fail to scale the domain for the double angle $2\\theta$, resulting in an incorrect count of solutions."
-                },
-                {
-                        "ans": "\\begin{aligned} &y = 0 \\cr &1\\text{ solution} \\end{aligned}",
-                        "feedback": "This mistake arises from forgetting that the argument of the tangent function is $2\\theta$ instead of $\\theta$. In the interval $[0, \\pi)$, the double-angle $2\\theta$ ranges from $0$ to $2\\pi$, which contains two full periods of the tangent function, giving 2 solutions rather than 1."
-                },
-                {
-                        "ans": "\\begin{aligned} &\\text{No real solutions for } y \\cr &2\\text{ solutions} \\end{aligned}",
-                        "feedback": "This occurs if you mistakenly believe that the exponential equation $e^y = 1$ has no real solutions. In fact, since 1 is a positive real number, it has the unique real solution $y = \\ln(1) = 0$."
-                }
-        ],
-        "bradley_insight": {
-                "type": "caution",
-                "title": "Double-Angle Domain Scaling",
-                "content": "When solving trigonometric equations with scaled arguments like $\\tan(2\\theta)$, always multiply the domain boundaries by the coefficient (e.g., $0 \\le 2\\theta < 2\\pi$) before counting solutions. Failing to do this often results in missing half of the valid solutions."
-        }
-},
+  {
+    "id": "004456",
+    "group_id": "004456",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Methods",
+    "subtopic": [
+      "Algebraic Methods",
+      "Proof",
+      "Trigonometry"
+    ],
+    "img": false,
+    "question": "\\begin{aligned} &f(x) = -2x^3 + 8x^2 - 9x + 9 \\cr &x \\in \\mathbb{R} \\end{aligned}<strong>(a) (i)</strong> Calculate $f(3)$.<br><br><strong>(ii)</strong> Write $f(x)$ as a product of two algebraic factors.<br><br>Using the answer to <strong>(a)(ii)</strong>:<br><br><strong>(b)</strong> Prove that there are exactly two real solutions to the equation $-2y^6 + 8y^4 - 9y^2 + 9 = 0$.<br><br><strong>(c)</strong> Deduce the number of real solutions, for $5\\pi \\le \\theta < 9\\pi$, to the equation:\\begin{aligned} &2\\tan^3\\theta - 8\\tan^2\\theta \\cr &\\quad + 9\\tan\\theta - 9 = 0 \\end{aligned}State the real solutions to the equation in <strong>(b)</strong> and the number of solutions in <strong>(c)</strong>.",
+    "steps": [
+      "<strong>Part (a)(i):</strong><br>Substitute $x = 3$ into the expression for $f(x)$:\\begin{aligned} &f(3) = -2(3)^3 + 8(3)^2 \\cr &\\qquad - 9(3) + 9 \\cr &\\quad = -54 + 72 - 27 + 9 \\cr &\\quad = 0 \\end{aligned}Since $f(3) = 0$, $x = 3$ is a root, which means $(x - 3)$ is a linear factor of $f(x)$.",
+      "<strong>Part (a)(ii):</strong><br>Divide $-2x^3 + 8x^2 - 9x + 9$ by $(x - 3)$ using equating coefficients:\\begin{aligned} &f(x) \\cr &\\quad = (x - 3)(-2x^2 + px + q) \\cr &\\quad = -2x^3 + (p + 6)x^2 \\cr &\\qquad + (q - 3p)x - 3q \\end{aligned}Equating coefficients gives:\\begin{aligned} p + 6 &= 8 \\cr p &= 2 \\cr -3q &= 9 \\cr q &= -3 \\end{aligned}Thus, the factored expression is:\\begin{aligned} f(x) &= (x - 3)(-2x^2 + 2x - 3) \\cr &= (3 - x)(2x^2 - 2x + 3) \\end{aligned}We check the discriminant of the quadratic factor $2x^2 - 2x + 3$:\\begin{aligned} \\Delta &= (-2)^2 - 4(2)(3) \\cr &= 4 - 24 \\cr &= -20 \\end{aligned}Since $\\Delta = -20 < 0$, the quadratic factor has no real roots. Therefore, $x = 3$ is the unique real root of $f(x) = 0$.",
+      "<strong>Part (b):</strong><br>We want to find the real solutions to:$$-2y^6 + 8y^4 - 9y^2 + 9 = 0$$Let $x = y^2$. This transforms the equation into:$$-2x^3 + 8x^2 - 9x + 9 = 0$$Which is exactly $f(x) = 0$. Since we showed in part <strong>(a)(ii)</strong> that the only real root is $x = 3$, we have:\\begin{aligned} y^2 &= 3 \\cr y &= \\pm\\sqrt{3} \\end{aligned}The other factor yields $-2(y^2)^2 + 2(y^2) - 3 = 0$, which has no real solutions because its discriminant is negative. Thus, there are exactly two real solutions:$$y = \\pm\\sqrt{3}$$",
+      "<strong>Part (c):</strong><br>The equation is:\\begin{aligned} &2\\tan^3\\theta - 8\\tan^2\\theta \\cr &\\quad + 9\\tan\\theta - 9 = 0 \\end{aligned}Multiplying the entire equation by $-1$, we get:\\begin{aligned} &-2\\tan^3\\theta + 8\\tan^2\\theta \\cr &\\quad - 9\\tan\\theta + 9 = 0 \\end{aligned}Let $x = \\tan\\theta$. This equation becomes $f(x) = 0$, which has only one real root, $x = 3$. Therefore:$$\\tan\\theta = 3$$We need to find the number of solutions in the interval $5\\pi \\le \\theta < 9\\pi$.<br><br>The width of the interval is $9\\pi - 5\\pi = 4\\pi$. Since the tangent function $\\tan\\theta$ has a period of $\\pi$, it completes exactly $4$ full cycles over this interval.<br><br>In each period, the equation $\\tan\\theta = 3$ has exactly one unique solution. Thus, there are exactly $4$ real solutions.",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a)(i) } f(3) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (3 - x)(2x^2 - 2x + 3) \\cr &\\text{(b) } y = \\pm\\sqrt{3} \\cr &\\text{(c) } 4 \\text{ real solutions} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(3) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (3 - x)(2x^2 - 2x + 3) \\cr &\\text{(b) } y = \\pm 3 \\cr &\\text{(c) } 8 \\text{ real solutions} \\end{aligned}",
+        "feedback": "This error in parts (b) and (c) occurs if you mistakenly solve $y^2 = 9$ (perhaps by misidentifying the root of $f(x) = 0$ as $9$ instead of $3$) and double the number of trig solutions by assuming a period of $\\frac{\\pi}{2}$ instead of $\\pi$ for $\\tan\\theta$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(3) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (3 - x)(2x^2 - 2x + 3) \\cr &\\text{(b) } y = \\sqrt{3} \\cr &\\text{(c) } 2 \\text{ real solutions} \\end{aligned}",
+        "feedback": "This mistake in parts (b) and (c) arises from forgetting that $y^2 = 3$ yields two real solutions ($y = \\pm\\sqrt{3}$) rather than only the positive square root, and incorrectly assuming the interval contains only two periods of the tangent function."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(3) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (3 - x)(2x^2 - 2x + 3) \\cr &\\text{(b) } y = \\pm\\sqrt{3} \\cr &\\text{(c) } 2 \\text{ real solutions} \\end{aligned}",
+        "feedback": "This version identifies parts (a) and (b) correctly but miscounts the number of solutions to $\\tan\\theta = 3$ in the interval $5\\pi \\le \\theta < 9\\pi$. Since the width of this interval is $4\\pi$ and the period of $\\tan\\theta$ is $\\pi$, there must be exactly 4 real solutions."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "Substitution Boundaries",
+      "content": "When making algebraic substitutions like $x = y^2$ or $x = e^y$, always check the domain restrictions of the new variable. For example, $y^2 \\ge 0$ and $e^y > 0$ mean that any negative roots of the original cubic $f(x) = 0$ will not yield real values for $y$."
+    }
+  },
+  {
+    "id": "004457",
+    "group_id": "004456",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Methods",
+    "subtopic": [
+      "Algebraic Methods",
+      "Proof",
+      "Trigonometry"
+    ],
+    "img": false,
+    "question": "\\begin{aligned} &f(x) = 2x^3 + x^2 + x - 4 \\cr &x \\in \\mathbb{R} \\end{aligned}<strong>(a) (i)</strong> Calculate $f(1)$.<br><br><strong>(ii)</strong> Write $f(x)$ as a product of two algebraic factors.<br><br>Using the answer to <strong>(a)(ii)</strong>:<br><br><strong>(b)</strong> Prove that there are exactly two real solutions to the equation $2y^{12} + y^8 + y^4 - 4 = 0$.<br><br><strong>(c)</strong> Deduce the number of real solutions, for $0 \\le \\theta < 4\\pi$, to the equation:\\begin{aligned} &2\\sin^3\\theta + \\sin^2\\theta \\cr &\\quad + \\sin\\theta - 4 = 0 \\end{aligned}State the real solutions to the equation in <strong>(b)</strong> and the number of solutions in <strong>(c)</strong>.",
+    "steps": [
+      "<strong>Part (a)(i):</strong><br>Substitute $x = 1$ into the expression for $f(x)$:\\begin{aligned} f(1) &= 2(1)^3 + 1^2 + 1 - 4 \\cr &= 2 + 1 + 1 - 4 \\cr &= 0 \\end{aligned}Since $f(1) = 0$, $x = 1$ is a root, meaning $(x - 1)$ is a linear factor of $f(x)$.",
+      "<strong>Part (a)(ii):</strong><br>Divide $2x^3 + x^2 + x - 4$ by $(x - 1)$:\\begin{aligned} &2x^3 + x^2 + x - 4 \\cr &\\quad = (x - 1)(2x^2 + 3x + 4) \\end{aligned}We check the discriminant of the quadratic factor $2x^2 + 3x + 4$:\\begin{aligned} \\Delta &= 3^2 - 4(2)(4) \\cr &= 9 - 32 \\cr &= -23 \\end{aligned}Since $\\Delta = -23 < 0$, the quadratic factor has no real roots. Thus, $x = 1$ is the unique real root of $f(x) = 0$.",
+      "<strong>Part (b):</strong><br>We solve:$$2y^{12} + y^8 + y^4 - 4 = 0$$Let $x = y^4$. The equation becomes:$$2x^3 + x^2 + x - 4 = 0$$This is exactly $f(x) = 0$. Since $x = 1$ is the unique real root, we have:\\begin{aligned} y^4 &= 1 \\cr y^2 &= 1 \\cr y &= \\pm 1 \\end{aligned}The other branch $y^4 < 0$ has no real roots. Thus, there are exactly two real solutions: $y = \\pm 1$.",
+      "<strong>Part (c):</strong><br>The equation is:\\begin{aligned} &2\\sin^3\\theta + \\sin^2\\theta \\cr &\\quad + \\sin\\theta - 4 = 0 \\end{aligned}Let $x = \\sin\\theta$. This yields $f(x) = 0 \\implies \\sin\\theta = 1$.<br><br>We look for solutions in the interval $0 \\le \\theta < 4\\pi$, which represents two complete periods of the sine function.<br><br>The sine function equals $1$ exactly once per period (at the maximum point of each cycle):\\begin{aligned} \\theta &= \\dfrac{\\pi}{2} \\cr \\theta &= \\dfrac{5\\pi}{2} \\end{aligned}Thus, there are exactly $2$ real solutions.",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a)(i) } f(1) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x - 1)(2x^2 + 3x + 4) \\cr &\\text{(b) } y = \\pm 1 \\cr &\\text{(c) } 2 \\text{ real solutions} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(1) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x - 1)(2x^2 + 3x + 4) \\cr &\\text{(b) } y = 1 \\cr &\\text{(c) } 4 \\text{ real solutions} \\end{aligned}",
+        "feedback": "This error in parts (b) and (c) occurs if you forget that $y^4 = 1$ has two real solutions ($y = \\pm 1$) and also miscalculate the number of solutions to $\\sin\\theta = 1$ in the interval $[0, 4\\pi)$, which has only 2 peaks."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(1) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x - 1)(2x^2 + 3x + 4) \\cr &\\text{(b) } y = \\pm 1 \\cr &\\text{(c) } 4 \\text{ real solutions} \\end{aligned}",
+        "feedback": "This mistake in part (c) arises from correctly identifying the roots of $y^4 = 1$ but miscounting the number of real solutions to $\\sin\\theta = 1$ in the interval $0 \\le \\theta < 4\\pi$. Over two full cycles, the peak value is only reached twice, not four times."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(1) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x - 1)(2x^2 + 3x + 4) \\cr &\\text{(b) } y = \\pm 1 \\cr &\\text{(c) } 0 \\text{ real solutions} \\end{aligned}",
+        "feedback": "This version correctly solves the algebraic parts but incorrectly concludes that $\\sin\\theta = 1$ has no real solutions, perhaps by confusing the required range with values outside $[-1, 1]$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "Sine Wave Maxima Counting",
+      "content": "Unlike general values of $k$ where $\\sin\\theta = k$ has two solutions per cycle, the boundary values $k = \\pm 1$ only occur at the single peak or trough of each cycle. Therefore, $\\sin\\theta = 1$ yields exactly one solution per $2\\pi$ period."
+    }
+  },
+  {
+    "id": "004458",
+    "group_id": "004456",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Methods",
+    "subtopic": [
+      "Algebraic Methods",
+      "Proof",
+      "Trigonometry"
+    ],
+    "img": false,
+    "question": "\\begin{aligned} &f(x) = x^3 + x^2 + x + 6 \\cr &x \\in \\mathbb{R} \\end{aligned}<strong>(a) (i)</strong> Calculate $f(-2)$.<br><br><strong>(ii)</strong> Write $f(x)$ as a product of two algebraic factors.<br><br>Using the answer to <strong>(a)(ii)</strong>:<br><br><strong>(b)</strong> Prove that there is exactly one real solution to the equation $y^9 + y^6 + y^3 + 6 = 0$.<br><br><strong>(c)</strong> Deduce the number of real solutions, for $0 \\le \\theta < 2\\pi$, to the equation:\\begin{aligned} &\\cos^3\\theta + \\cos^2\\theta \\cr &\\quad + \\cos\\theta + 6 = 0 \\end{aligned}State the real solutions to the equation in <strong>(b)</strong> and the number of solutions in <strong>(c)</strong>.",
+    "steps": [
+      "<strong>Part (a)(i):</strong><br>Substitute $x = -2$ into $f(x)$:\\begin{aligned} f(-2) &= (-2)^3 + (-2)^2 - 2 + 6 \\cr &= -8 + 4 - 2 + 6 \\cr &= 0 \\end{aligned}Since $f(-2) = 0$, $x = -2$ is a root, meaning $(x + 2)$ is a linear factor of $f(x)$.",
+      "<strong>Part (a)(ii):</strong><br>Divide $x^3 + x^2 + x + 6$ by $(x + 2)$:\\begin{aligned} &x^3 + x^2 + x + 6 \\cr &\\quad = (x + 2)(x^2 - x + 3) \\end{aligned}We check the discriminant of the quadratic factor $x^2 - x + 3$:\\begin{aligned} \\Delta &= (-1)^2 - 4(1)(3) \\cr &= 1 - 12 \\cr &= -11 \\end{aligned}Since $\\Delta = -11 < 0$, there are no real roots from this quadratic factor. Thus, $x = -2$ is the unique real root of $f(x) = 0$.",
+      "<strong>Part (b):</strong><br>We solve:$$y^9 + y^6 + y^3 + 6 = 0$$Let $x = y^3$. The equation becomes:$$x^3 + x^2 + x + 6 = 0$$This is $f(x) = 0$. Since $x = -2$ is the only real root, we have:\\begin{aligned} y^3 &= -2 \\cr y &= -\\sqrt[3]{2} \\end{aligned}Unlike even powers, a real number has exactly one real cube root. Hence, there is exactly one real solution: $y = -\\sqrt[3]{2}$.",
+      "<strong>Part (c):</strong><br>The equation is:\\begin{aligned} &\\cos^3\\theta + \\cos^2\\theta \\cr &\\quad + \\cos\\theta + 6 = 0 \\end{aligned}Let $x = \\cos\\theta$. This equation becomes $f(x) = 0$, which requires:$$\\cos\\theta = -2$$However, the cosine function has a strict range of $[-1, 1]$. Since $-2$ is outside this range, there are no real values of $\\theta$ that satisfy this equation. Thus, there are $0$ real solutions.",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a)(i) } f(-2) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x + 2)(x^2 - x + 3) \\cr &\\text{(b) } y = -\\sqrt[3]{2} \\cr &\\text{(c) } 0 \\text{ real solutions} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(-2) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x + 2)(x^2 - x + 3) \\cr &\\text{(b) } y = \\pm\\sqrt[3]{2} \\cr &\\text{(c) } 2 \\text{ real solutions} \\end{aligned}",
+        "feedback": "This error in parts (b) and (c) occurs if you assume a cube root $y^3 = -2$ has two real solutions and mistakenly find solutions to the impossible equation $\\cos\\theta = -2$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(-2) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x + 2)(x^2 - x + 3) \\cr &\\text{(b) } y = -\\sqrt[3]{2} \\cr &\\text{(c) } 1 \\text{ real solution} \\end{aligned}",
+        "feedback": "This mistake in part (c) arises from assuming that the equation $\\cos\\theta = -2$ must have a real solution, overlooking that $-2$ is outside the valid range of the cosine function."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(-2) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x + 2)(x^2 - x + 3) \\cr &\\text{(b) } y = -2 \\cr &\\text{(c) } 0 \\text{ real solutions} \\end{aligned}",
+        "feedback": "This occurs in part (b) if you identify the root $x = -2$ but fail to apply the $y^3 = x$ cube root substitution, leaving the final answer as $y = -2$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "deeper",
+      "title": "Range Constraints in Trigonometry",
+      "content": "Always check whether algebraic solutions are physically possible when substituting transcendental functions like $\\cos\\theta$ or $\\sin\\theta$. Any intermediate root outside of $[-1, 1]$ is rejected immediately."
+    }
+  },
+  {
+    "id": "004459",
+    "group_id": "004456",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Methods",
+    "subtopic": [
+      "Algebraic Methods",
+      "Proof",
+      "Trigonometry"
+    ],
+    "img": false,
+    "question": "\\begin{aligned} &f(x) = 2x^3 + 3x^2 + 2x - 2 \\cr &x \\in \\mathbb{R} \\end{aligned}<strong>(a) (i)</strong> Calculate $f(0.5)$.<br><br><strong>(ii)</strong> Write $f(x)$ as a product of two algebraic factors.<br><br>Using the answer to <strong>(a)(ii)</strong>:<br><br><strong>(b)</strong> Prove that there are exactly two real solutions to the equation $2y^6 + 3y^4 + 2y^2 - 2 = 0$.<br><br><strong>(c)</strong> Deduce the number of real solutions, for $0 \\le \\theta < 4\\pi$, to the equation:\\begin{aligned} &2\\cos^3\\theta + 3\\cos^2\\theta \\cr &\\quad + 2\\cos\\theta - 2 = 0 \\end{aligned}State the real solutions to the equation in <strong>(b)</strong> and the number of solutions in <strong>(c)</strong>.",
+    "steps": [
+      "<strong>Part (a)(i):</strong><br>Substitute $x = 0.5$ (or $x = \\dfrac{1}{2}$) into $f(x)$:\\begin{aligned} &f\\left(\\dfrac{1}{2}\\right) \\cr &\\quad = 2\\left(\\dfrac{1}{2}\\right)^3 + 3\\left(\\dfrac{1}{2}\\right)^2 \\cr &\\qquad + 2\\left(\\dfrac{1}{2}\\right) - 2 \\cr &\\quad = 2\\left(\\dfrac{1}{8}\\right) + 3\\left(\\dfrac{1}{4}\\right) + 1 - 2 \\cr &\\quad = \\dfrac{1}{4} + \\dfrac{3}{4} + 1 - 2 \\cr &\\quad = 0 \\end{aligned}Since $f(0.5) = 0$, $x = 0.5$ is a root, meaning $(2x - 1)$ is a linear factor of $f(x)$.",
+      "<strong>Part (a)(ii):</strong><br>Divide $2x^3 + 3x^2 + 2x - 2$ by $(2x - 1)$:\\begin{aligned} &2x^3 + 3x^2 + 2x - 2 \\cr &\\quad = (2x - 1)(x^2 + 2x + 2) \\end{aligned}We check the discriminant of the quadratic factor $x^2 + 2x + 2$:\\begin{aligned} \\Delta &= 2^2 - 4(1)(2) \\cr &= 4 - 8 \\cr &= -4 \\end{aligned}Since $\\Delta = -4 < 0$, the quadratic factor has no real roots. Thus, $x = 0.5$ is the only real root of $f(x) = 0$.",
+      "<strong>Part (b):</strong><br>We solve:$$2y^6 + 3y^4 + 2y^2 - 2 = 0$$Let $x = y^2$. The equation transforms to $f(x) = 0$, which has the unique real solution $x = 0.5$. Therefore:\\begin{aligned} y^2 &= \\dfrac{1}{2} \\cr y &= \\pm\\dfrac{1}{\\sqrt{2}} \\cr &= \\pm\\dfrac{\\sqrt{2}}{2} \\end{aligned}Since the other factor has a negative discriminant, no further real solutions exist. There are exactly two real solutions: $y = \\pm\\dfrac{\\sqrt{2}}{2}$.",
+      "<strong>Part (c):</strong><br>The equation is:\\begin{aligned} &2\\cos^3\\theta + 3\\cos^2\\theta \\cr &\\quad + 2\\cos\\theta - 2 = 0 \\end{aligned}Let $x = \\cos\\theta$. This equation becomes $f(x) = 0$, which has only one real solution, $x = 0.5$. Thus:\\begin{aligned} \\cos\\theta &= \\dfrac{1}{2} \\end{aligned}We seek solutions in the interval $0 \\le \\theta < 4\\pi$, representing two complete periods of the cosine function.<br><br>In each period $[0, 2\\pi)$, the equation $\\cos\\theta = 0.5$ has exactly 2 solutions (at $\\theta = \\dfrac{\\pi}{3}$ and $\\theta = \\dfrac{5\\pi}{3}$).<br><br>Therefore, over two full periods, there are exactly $4$ real solutions.",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a)(i) } f(0.5) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (2x - 1)(x^2 + 2x + 2) \\cr &\\text{(b) } y = \\pm\\dfrac{\\sqrt{2}}{2} \\cr &\\text{(c) } 4 \\text{ real solutions} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(0.5) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (2x - 1)(x^2 + 2x + 2) \\cr &\\text{(b) } y = \\pm\\dfrac{1}{2} \\cr &\\text{(c) } 2 \\text{ real solutions} \\end{aligned}",
+        "feedback": "This error in parts (b) and (c) occurs if you resolve $y^2 = 0.5$ as $y = \\pm 0.5$ (mistaking the square root for a square) and incorrectly assume there is only one solution to $\\cos\\theta = 0.5$ per period."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(0.5) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (2x - 1)(x^2 + 2x + 2) \\cr &\\text{(b) } y = \\pm\\dfrac{\\sqrt{2}}{2} \\cr &\\text{(c) } 2 \\text{ real solutions} \\end{aligned}",
+        "feedback": "This mistake in part (c) arises from miscounting the number of solutions to $\\cos\\theta = 0.5$ in $0 \\le \\theta < 4\\pi$. Since the interval covers two complete cycles and each cycle has two solutions, there must be 4 in total."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(0.5) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (2x - 1)(x^2 + 2x + 2) \\cr &\\text{(b) } y = \\dfrac{\\sqrt{2}}{2} \\cr &\\text{(c) } 4 \\text{ real solutions} \\end{aligned}",
+        "feedback": "This error in part (b) occurs if you neglect the negative square root of $y^2 = 0.5$, which yields the valid real solution $-\\frac{\\sqrt{2}}{2}$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "Exact Value Rationalisation",
+      "content": "Always rationalise denominators for exact value answers (e.g. write $y = \\pm\\frac{\\sqrt{2}}{2}$ instead of $y = \\pm\\frac{1}{\\sqrt{2}}$). This helps when matching option choices on standard examinations."
+    }
+  },
+  {
+    "id": "004460",
+    "group_id": "004456",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Algebraic Methods",
+    "subtopic": [
+      "Algebraic Methods",
+      "Proof",
+      "Trigonometry"
+    ],
+    "img": false,
+    "question": "\\begin{aligned} &f(x) = 4x^3 - 2x^2 + x - 3 \\cr &x \\in \\mathbb{R} \\end{aligned}<strong>(a) (i)</strong> Calculate $f(1)$.<br><br><strong>(ii)</strong> Write $f(x)$ as a product of two algebraic factors.<br><br>Using the answer to <strong>(a)(ii)</strong>:<br><br><strong>(b)</strong> Prove that there is exactly one real solution to the equation $4\\mathrm{e}^{3y} - 2\\mathrm{e}^{2y} + \\mathrm{e}^y - 3 = 0$.<br><br><strong>(c)</strong> Deduce the number of real solutions, for $0 \\le \\theta < \\pi$, to the equation:\\begin{aligned} &4\\tan^3(2\\theta) - 2\\tan^2(2\\theta) \\cr &\\quad + \\tan(2\\theta) - 3 = 0 \\end{aligned}State the real solutions to the equation in <strong>(b)</strong> and the number of solutions in <strong>(c)</strong>.",
+    "steps": [
+      "<strong>Part (a)(i):</strong><br>Substitute $x = 1$ into $f(x)$:\\begin{aligned} f(1) &= 4(1)^3 - 2(1)^2 + 1 - 3 \\cr &= 4 - 2 + 1 - 3 \\cr &= 0 \\end{aligned}Since $f(1) = 0$, $x = 1$ is a root, meaning $(x - 1)$ is a linear factor of $f(x)$.",
+      "<strong>Part (a)(ii):</strong><br>Divide $4x^3 - 2x^2 + x - 3$ by $(x - 1)$:\\begin{aligned} &4x^3 - 2x^2 + x - 3 \\cr &\\quad = (x - 1)(4x^2 + 2x + 3) \\end{aligned}We check the discriminant of the quadratic factor $4x^2 + 2x + 3$:\\begin{aligned} \\Delta &= 2^2 - 4(4)(3) \\cr &= 4 - 48 \\cr &= -44 \\end{aligned}Since $\\Delta = -44 < 0$, the quadratic factor has no real roots. Thus, $x = 1$ is the unique real root of $f(x) = 0$.",
+      "<strong>Part (b):</strong><br>We solve:$$4\\mathrm{e}^{3y} - 2\\mathrm{e}^{2y} + \\mathrm{e}^y - 3 = 0$$Let $x = \\mathrm{e}^y$ (where $x > 0$). The equation becomes $f(x) = 0$.<br><br>Since the unique real root is $x = 1$, we have:\\begin{aligned} \\mathrm{e}^y &= 1 \\cr y &= \\ln(1) \\cr &= 0 \\end{aligned}Since the quadratic factor yields no real roots, $y = 0$ is the single unique real solution.",
+      "<strong>Part (c):</strong><br>The equation is:\\begin{aligned} &4\\tan^3(2\\theta) - 2\\tan^2(2\\theta) \\cr &\\quad + \\tan(2\\theta) - 3 = 0 \\end{aligned}Let $u = \\tan(2\\theta)$. This equation becomes $f(u) = 0$, which has only one real solution, $u = 1$. Thus:$$\\tan(2\\theta) = 1$$We search for solutions in the interval $0 \\le \\theta < \\pi$. Since the argument of the tangent function is $2\\theta$, we must scale the domain:$$0 \\le 2\\theta < 2\\pi$$The tangent function $\\tan(2\\theta)$ has a period of $\\pi$. Therefore, in the interval $[0, 2\\pi)$, the equation $\\tan(2\\theta) = 1$ has exactly two solutions (at $2\\theta = \\dfrac{\\pi}{4}$ and $2\\theta = \\dfrac{5\\pi}{4}$).<br><br>Thus, there are exactly $2$ real solutions for $\\theta$.",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a)(i) } f(1) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x - 1)(4x^2 + 2x + 3) \\cr &\\text{(b) } y = 0 \\cr &\\text{(c) } 2 \\text{ real solutions} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(1) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x - 1)(4x^2 + 2x + 3) \\cr &\\text{(b) } y = 1 \\cr &\\text{(c) } 4 \\text{ real solutions} \\end{aligned}",
+        "feedback": "This error in parts (b) and (c) occurs if you solve $e^y = 1$ to get $y = 1$ instead of $y = 0$, and if you fail to scale the domain for the double angle, leading to a count for four cycles instead of two."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(1) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x - 1)(4x^2 + 2x + 3) \\cr &\\text{(b) } y = 0 \\cr &\\text{(c) } 1 \\text{ real solution} \\end{aligned}",
+        "feedback": "This mistake in part (c) arises from forgetting that the argument is $2\\theta$. In the interval $0 \\le \\theta < \\pi$, the argument $2\\theta$ spans $0$ to $2\\pi$, containing two periods and thus 2 solutions."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a)(i) } f(1) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x - 1)(4x^2 + 2x + 3) \\cr &\\text{(b) } \\text{No real solutions for } y \\cr &\\text{(c) } 2 \\text{ real solutions} \\end{aligned}",
+        "feedback": "This occurs in part (b) if you mistakenly believe the exponential equation $e^y = 1$ has no real solutions, whereas $y = \ln(1) = 0$ is a valid unique real solution."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "Double-Angle Domain Scaling",
+      "content": "When solving trigonometric equations with scaled arguments like $\\tan(2\\theta)$, always multiply the domain boundaries by the coefficient (e.g., $0 \\le 2\\theta < 2\\pi$) before counting solutions. Failing to do this often results in missing half of the valid solutions."
+    }
+  },
 {
         "id": "004461",
         "group_id": "004461",
@@ -444,15 +444,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{6}, \\; \\dfrac{5\\pi}{6} \\cr &\\theta = 73.1^\\circ, \\; 196.9^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{6}, \\; \\dfrac{5\\pi}{6} \\cr &\\text{(b) } \\theta = 73.1^\\circ, \\; 196.9^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(a)</strong> if you find the correct angles for $2x$ in the equation $\\sin(2x) = \\dfrac{1}{2}$ (which are $\\dfrac{\\pi}{6}$ and $\\dfrac{5\\pi}{6}$) but forget to divide by 2 to solve for $x$."
                 },
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{12}, \\; \\dfrac{5\\pi}{12} \\cr &\\theta = 28.1^\\circ, \\; 151.9^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{12}, \\; \\dfrac{5\\pi}{12} \\cr &\\text{(b) } \\theta = 28.1^\\circ, \\; 151.9^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(b)</strong> if you find the correct values for the shifted angle $\\theta - 45^\\circ$ (which are approximately $28.1^\\circ$ and $151.9^\\circ$) but forget to add $45^\\circ$ to solve for $\\theta$."
                 },
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{12}, \\; \\dfrac{5\\pi}{12} \\cr &\\theta = 73.1^\\circ, \\; 286.9^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{12}, \\; \\dfrac{5\\pi}{12} \\cr &\\text{(b) } \\theta = 73.1^\\circ, \\; 286.9^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(b)</strong> if you incorrectly find the second quadrant boundary value for the shifted angle, possibly by calculating $180^\\circ + 28.1^\\circ$ instead of $180^\\circ - 28.1^\\circ$ before adding $45^\\circ$."
                 }
         ],
@@ -484,15 +484,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{6}, \\; \\dfrac{5\\pi}{6} \\cr &\\theta = 119.6^\\circ, \\; 346.7^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{6}, \\; \\dfrac{5\\pi}{6} \\cr &\\text{(b) } \\theta = 119.6^\\circ, \\; 346.7^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(a)</strong> if you solve the factored quadratic equation to find the solutions to $\\sin x = \\dfrac{1}{2}$ but forget to include the critical solution resulting from $\\sin x = 1$."
                 },
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{6}, \\; \\dfrac{\\pi}{2}, \\; \\dfrac{5\\pi}{6} \\cr &\\theta = 119.6^\\circ, \\; 156.4^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{6}, \\; \\dfrac{\\pi}{2}, \\; \\dfrac{5\\pi}{6} \\cr &\\text{(b) } \\theta = 119.6^\\circ, \\; 156.4^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(b)</strong> if you use the second quadrant shifted value $156.4^\\circ$ directly as a final solution for $\\theta$ instead of subtracting $\\alpha \\approx 36.9^\\circ$ to solve for $\\theta$."
                 },
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{6}, \\; \\dfrac{\\pi}{2}, \\; \\dfrac{5\\pi}{6} \\cr &\\theta = -13.3^\\circ, \\; 119.6^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{6}, \\; \\dfrac{\\pi}{2}, \\; \\dfrac{5\\pi}{6} \\cr &\\text{(b) } \\theta = -13.3^\\circ, \\; 119.6^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(b)</strong> if you correctly find the negative coordinate value of $-13.3^\\circ$ but forget to add $360^\\circ$ to bring it within the correct positive interval of $0 \\le \\theta < 360^\\circ$."
                 }
         ],
@@ -523,15 +523,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{6} \\cr &\\theta = 49.5^\\circ, \\; 265.3^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{6} \\cr &\\text{(b) } \\theta = 49.5^\\circ, \\; 265.3^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(a)</strong> if you only solve for the principal value $2x = \\dfrac{\\pi}{3}$ but forget to find the second valid solution $2x = \\dfrac{4\\pi}{3}$ over the scaled domain $0 \\le 2x < 2\\pi$."
                 },
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{6}, \\; \\dfrac{2\\pi}{3} \\cr &\\theta = 49.5^\\circ, \\; 114.7^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{6}, \\; \\dfrac{2\\pi}{3} \\cr &\\text{(b) } \\theta = 49.5^\\circ, \\; 114.7^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(b)</strong> if you incorrectly solve the cosine equation, possibly by writing $180^\\circ - 72.1^\\circ$ instead of $360^\\circ - 72.1^\\circ$ when calculating the second boundary value for $\\theta + 22.6^\\circ$."
                 },
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{3}, \\; \\dfrac{4\\pi}{3} \\cr &\\theta = 49.5^\\circ, \\; 265.3^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{3}, \\; \\dfrac{4\\pi}{3} \\cr &\\text{(b) } \\theta = 49.5^\\circ, \\; 265.3^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(a)</strong> if you correctly identify the solutions for the double angle $2x$ as $\\dfrac{\\pi}{3}$ and $\\dfrac{4\\pi}{3}$ but forget to divide by 2 to solve for $x$."
                 }
         ],
@@ -563,15 +563,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{3}, \\; \\dfrac{2\\pi}{3} \\cr &\\theta = 77.9^\\circ, \\; 325.7^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{3}, \\; \\dfrac{2\\pi}{3} \\cr &\\text{(b) } \\theta = 77.9^\\circ, \\; 325.7^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(a)</strong> if you assume the second valid coordinate for $\\cos x = \\dfrac{1}{2}$ lies in the second quadrant ($\\dfrac{2\\pi}{3}$) instead of the fourth quadrant ($\\dfrac{5\\pi}{3}$)."
                 },
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{3}, \\; \\dfrac{5\\pi}{3} \\cr &\\theta = 33.9^\\circ, \\; 146.1^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{3}, \\; \\dfrac{5\\pi}{3} \\cr &\\text{(b) } \\theta = 33.9^\\circ, \\; 146.1^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(b)</strong> if you find the correct values for the shifted angle $\\theta + 68.2^\\circ$ (which are approximately $33.9^\\circ$ and $146.1^\\circ$) but forget to subtract $68.2^\\circ$ to solve for $\\theta$."
                 },
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{3}, \\; \\dfrac{5\\pi}{3} \\cr &\\theta = -34.3^\\circ, \\; 77.9^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{3}, \\; \\dfrac{5\\pi}{3} \\cr &\\text{(b) } \\theta = -34.3^\\circ, \\; 77.9^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(b)</strong> if you correctly find the negative coordinate value of $-34.3^\\circ$ but forget to add $360^\\circ$ to bring it within the correct positive interval of $0 \\le \\theta < 360^\\circ$."
                 }
         ],
@@ -603,15 +603,15 @@ window.ALEVEL_QUESTIONS = [
         ],
         "pi_options": [
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{3}, \\; \\dfrac{2\\pi}{3} \\cr &\\quad \\dfrac{4\\pi}{3}, \\; \\dfrac{5\\pi}{3} \\cr &\\theta = 72.4^\\circ, \\; 220.2^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{3}, \\; \\dfrac{2\\pi}{3} \\cr &\\quad \\dfrac{4\\pi}{3}, \\; \\dfrac{5\\pi}{3} \\cr &\\text{(b) } \\theta = 72.4^\\circ, \\; 220.2^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(a)</strong> if you solve the square equation to get $\\sin x = \\pm\\dfrac{\\sqrt{3}}{2}$ and include the negative solutions from the third and fourth quadrants, forgetting that the domain is strictly restricted to $0 \\le x < \\pi$."
                 },
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{3}, \\; \\dfrac{2\\pi}{3} \\cr &\\theta = 16.1^\\circ, \\; 163.9^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{3}, \\; \\dfrac{2\\pi}{3} \\cr &\\text{(b) } \\theta = 16.1^\\circ, \\; 163.9^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(b)</strong> if you find the correct shifted values for $\\theta - 56.3^\\circ$ (which are approximately $16.1^\\circ$ and $163.9^\\circ$) but forget to add $56.3^\\circ$ to solve for $\\theta$."
                 },
                 {
-                        "ans": "\\begin{aligned} &x = \\dfrac{\\pi}{3}, \\; \\dfrac{2\\pi}{3} \\cr &\\theta = 72.4^\\circ, \\; 127.6^\\circ \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }x = \\dfrac{\\pi}{3}, \\; \\dfrac{2\\pi}{3} \\cr &\\text{(b) } \\theta = 72.4^\\circ, \\; 127.6^\\circ \\end{aligned}",
                         "feedback": "This error occurs in part <strong>(b)</strong> if you correctly calculate the second quadrant value for the shifted angle as $180^\\circ - 16.1^\\circ$ but then subtract $56.3^\\circ$ instead of adding it."
                 }
         ],
