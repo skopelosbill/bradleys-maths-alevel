@@ -911,7 +911,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Radians Mode and Domain Limits",
-        "content": "Ensure your calculator is in <strong>>Radian<\strong> mode. When solving $x - \\alpha = \\dfrac{\\pi}{2}$, add $\\alpha$ to both sides and check that the resulting angle is positive and in range."
+        "content": "Ensure your calculator is in <strong>>Radian<\\strong> mode. When solving $x - \\alpha = \\dfrac{\\pi}{2}$, add $\\alpha$ to both sides and check that the resulting angle is positive and in range."
     }
 },
 {
