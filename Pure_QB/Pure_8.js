@@ -229,16 +229,16 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
       {
-        "ans": "Statement A is true, and Statement B is false",
-        "feedback": "A student might make the common algebraic error of distributing the exponent, believing that $(3c + d)^2 = 9c^2 + d^2$. However, squaring a binomial always produces a middle term: $(3c + d)^2 = 9c^2 + 6cd + d^2$."
+        "ans": "\\begin{aligned} &\\text{(a) Statement B is false} \\cr &\\quad \\text{Counterexample: } c = 1, \\; d = 1 \\cr &\\text{(b) Statement A is true} \\end{aligned}",
+        "feedback": "This distractor incorrectly identifies the truth values. Statement A is false because squaring a binomial $(3c+d)^2$ produces a middle term $6cd$, which is missing on the right-hand side."
       },
       {
-        "ans": "Statement A is false, but the counterexample $c = 0, \\; d = 0$ proves it",
-        "feedback": "While Statement A is indeed false, choosing $c = 0, d = 0$ as a counterexample yields $0 = 0$, which is a true statement. A counterexample must show a case where the equation does not hold, such as $c = 1, d = 1$."
+        "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } c = 0, \\; d = 0 \\cr &\\text{(b) Statement B is true} \\end{aligned}",
+        "feedback": "While Statement A is false, $c=0, d=0$ is not a valid counterexample because $0=0$ is true. A counterexample must show a case where the equation fails, such as $c=1, d=1$."
       },
       {
-        "ans": "Both Statement A and Statement B are true",
-        "feedback": "Statement A is false because $(3c + d)^2 = 9c^2 + 6cd + d^2 \\ne 9c^2 + d^2$ for general non-zero values of $c$ and $d$. Double-check the expansion of the square of a sum."
+        "ans": "\\begin{aligned} &\\text{(a) Neither statement is false} \\cr &\\quad \\text{Counterexample: None} \\cr &\\text{(b) Both A and B are true} \\end{aligned}",
+        "feedback": "Statement A is not an identity; it only holds if $c$ or $d$ is zero. In general, $(3c+d)^2 = 9c^2 + 6cd + d^2$, so it is false for all real $c$ and $d$."
       }
     ],
     "bradley_insight": {
@@ -269,16 +269,16 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
       {
-        "ans": "Statement A is true, and Statement B is false",
-        "feedback": "Remember that the square root of a sum is not equal to the sum of the square roots. For example, $\\sqrt{3^2 + 4^2} = \\sqrt{25} = 5$, whereas $3 + 4 = 7$."
+        "ans": "\\begin{aligned} &\\text{(a) Statement B is false} \\cr &\\quad \\text{Counterexample: } a = -1, \\; b = 1 \\cr &\\text{(b) Statement A is true} \\end{aligned}",
+        "feedback": "This distractor incorrectly identifies Statement B as false. However, even for negative numbers, $a^2+b^2 \\ge 2ab$ holds because $(a-b)^2$ is never negative."
       },
       {
-        "ans": "Statement B is false because it does not hold when $a$ and $b$ are negative",
-        "feedback": "Even if $a$ and $b$ are negative, their product $ab$ is positive, and the inequality $(a-b)^2 \\ge 0$ always holds because the square of any real number is non-negative."
+        "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } a = 0, \\; b = 0 \\cr &\\text{(b) Statement B is true} \\end{aligned}",
+        "feedback": "The question specifies $a$ and $b$ must be positive real numbers ($a, b > 0$). $a=0, b=0$ is not a valid counterexample under those constraints, and it actually results in $0=0$, which is a true case."
       },
       {
-        "ans": "Statement A is false, and the counterexample $a = 0, \\; b = 0$ proves it",
-        "feedback": "The question specifies that $a$ and $b$ must be positive real numbers ($a, b > 0$). Therefore, $a = 0, b = 0$ is not a valid counterexample because it violates the given condition."
+        "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } a = 1, \\; b = 1 \\cr &\\text{(b) Statement B is false} \\end{aligned}",
+        "feedback": "While Statement A is false ($ \sqrt{2} \\ne 2$), Statement B is a fundamental truth in algebra derived from $(a-b)^2 \ge 0$. It cannot be false for any real numbers $a$ and $b$."
       }
     ],
     "bradley_insight": {
@@ -308,16 +308,16 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
       {
-        "ans": "Statement A is true, and Statement B is false",
-        "feedback": "While $n^2 + n + 11$ produces prime numbers for small values of $n$ (such as $n = 1, 2, 3$), it fails for $n = 10$ or $n = 11$. Always test multiple values, especially those related to the constant term."
+        "ans": "\\begin{aligned} &\\text{(a) Statement B is false} \\cr &\\quad \\text{Counterexample: } n = 1 \\cr &\\text{(b) Statement A is true} \\end{aligned}",
+        "feedback": "When $n=1$, $n^3-n = 0$. Since 0 is a multiple of 6 ($6 \times 0 = 0$), $n=1$ is not a counterexample. Statement A fails for larger $n$, such as $n=10$ or $n=11$."
       },
       {
-        "ans": "Statement A is false, and the counterexample $n = 1$ proves it",
-        "feedback": "If we substitute $n = 1$ into Statement A, we get $1^2 + 1 + 11 = 13$, which is a prime number. Therefore, $n = 1$ is not a valid counterexample because it supports the statement rather than disproving it."
+        "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } n = 1 \\cr &\\text{(b) Statement B is true} \\end{aligned}",
+        "feedback": "Substituting $n=1$ into $n^2+n+11$ gives $13$, which is prime. A counterexample must result in a composite number to show the statement is false."
       },
       {
-        "ans": "Statement B is false because $n^3 - n$ is $0$ when $n = 1$, which is not a multiple of $6$",
-        "feedback": "When $n = 1$, $n^3 - n = 0$. By definition, 0 is a multiple of any integer since $0 = 6 \\times 0$. Thus, $n = 1$ is not a counterexample."
+        "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } n = 10 \\cr &\\text{(b) Statement B is true, multiple of 3 only} \\end{aligned}",
+        "feedback": "Statement B is a multiple of 6, not just 3. Because $(n-1)n(n+1)$ is a product of three consecutive integers, it must contain at least one even number (multiple of 2) and one multiple of 3."
       }
     ],
     "bradley_insight": {
@@ -334,7 +334,7 @@ window.ALEVEL_QUESTIONS = [
     "level": "AS",
     "major_area": "Algebra and Functions",
     "topic": "Proof",
-    "subtopic": [
+    "class_subtopic": [
       "Proof"
     ],
     "img": false,
@@ -347,16 +347,16 @@ window.ALEVEL_QUESTIONS = [
     ],
     "pi_options": [
       {
-        "ans": "Statement A is true, and Statement B is false",
-        "feedback": "The sum of two irrational numbers is not always irrational. For instance, if you add $\\sqrt{2}$ and $-\\sqrt{2}$ (both irrational), the sum is 0 (rational)."
+        "ans": "\\begin{aligned} &\\text{(a) Statement B is false} \\cr &\\quad \\text{Counterexample: } n = 1 \\cr &\\text{(b) Statement A is true} \\end{aligned}",
+        "feedback": "For $n=1$, $n^2-1=0$, which is a multiple of 8 ($8 \times 0$). Statement A is false because adding $\sqrt{2}$ and $-\sqrt{2}$ (both irrational) results in 0 (rational)."
       },
       {
-        "ans": "Statement B is false because if $n = 1$, then $n^2 - 1 = 0$, which is not a multiple of $8$",
-        "feedback": "When $n = 1$, $n^2 - 1 = 0$. Since $0 = 8 \\times 0$, 0 is a multiple of 8. Therefore, $n = 1$ is not a counterexample."
+        "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } \sqrt{2} + \sqrt{3} \\cr &\\text{(b) Statement B is true} \\end{aligned}",
+        "feedback": "The sum $\sqrt{2} + \sqrt{3}$ is irrational, so it does not serve as a counterexample. To disprove Statement A, you must find a sum of irrationals that results in a rational number."
       },
       {
-        "ans": "Statement A is false, and the counterexample $x = \\sqrt{2}$ and $y = \\sqrt{3}$ proves it",
-        "feedback": "The sum $\\sqrt{2} + \\sqrt{3}$ is irrational, so this pair does not serve as a counterexample. To disprove Statement A, you must find a pair of irrational numbers whose sum is rational."
+        "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } \sqrt{2} + (2 - \sqrt{2}) = 2 \\cr &\\text{(b) Statement B is false} \\end{aligned}",
+        "feedback": "Statement B is a provable identity for odd integers. By expressing an odd number as $2k+1$, you can show the expression always contains a factor of $4 \times 2 = 8$."
       }
     ],
     "bradley_insight": {
@@ -383,20 +383,20 @@ window.ALEVEL_QUESTIONS = [
       "First, we analyze both statements.<br><br>Statement A claims that $x^2 > x$ for all real numbers $x$. This is false because squaring real numbers between 0 and 1 (inclusive) does not make them strictly larger.<br><br>Statement B claims that $x^2 - 6x + 10 > 0$ for all real numbers $x$. This is a true quadratic inequality.",
       "<strong>Part (a): Disproving Statement A</strong><br><br>To prove Statement A is false, we need to find a single real number $x$ for which $x^2$ is not strictly greater than $x$.<br><br>Let $x = 0$.<br><br>Substituting $x = 0$ into the inequality $x^2 > x$:\\begin{aligned} 0^2 &> 0 \\cr 0 &> 0 \\end{aligned}Since $0 > 0$ is a false statement, $x = 0$ is a valid counterexample. (Alternatively, choosing $x = 1$ yields $1 > 1$, which is also false, and choosing $x = 0.5$ yields $0.25 > 0.5$, which is false). Thus, Statement A is false.",
       "<strong>Part (b): Proving Statement B</strong><br><br>To prove Statement B is true for all real numbers $x$, we complete the square for the quadratic expression $x^2 - 6x + 10$:\\begin{aligned} x^2 - 6x + 10 &= (x^2 - 6x + 9) + 1 \\cr &= (x - 3)^2 + 1 \\end{aligned}We now analyze the components of this rewritten expression:<br><br>1. Since the square of any real number is always non-negative, we have:\\begin{aligned} (x - 3)^2 \\ge 0 \\end{aligned}for all real numbers $x$.<br><br>2. Adding 1 to both sides of this inequality:\\begin{aligned} (x - 3)^2 + 1 \\ge 1 \\end{aligned}Since $(x - 3)^2 + 1 \\ge 1$ and $1 > 0$, we have:\\begin{aligned} x^2 - 6x + 10 &> 0 \\end{aligned}Therefore, $x^2 - 6x + 10 > 0$ for all real numbers $x$, which proves Statement B is true.",
-      "Final Answer: \\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } x = 0 \\implies 0^2 \\not> 0 \\cr &\\text{(b) Statement B is true (proved)} \\end{aligned}"
+      "Final Answer: \\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } x = 0 \\cr &\\text{(b) Statement B is true (proved)} \\end{aligned}"
     ],
     "pi_options": [
       {
-        "ans": "Statement A is true, and Statement B is false",
-        "feedback": "Statement A is false because squaring a number does not always make it larger (for example, if $0 \\le x \\le 1$). Statement B is true because the quadratic $(x-3)^2 + 1$ is always positive."
+        "ans": "\\begin{aligned} &\\text{(a) Statement B is false} \\cr &\\quad \\text{Counterexample: } x = 3 \\cr &\\text{(b) Statement A is true} \\end{aligned}",
+        "feedback": "For $x=3$, the quadratic $x^2-6x+10$ equals 1, which is $>0$, so this is not a counterexample. Statement A is false because $0^2$ is not strictly greater than 0."
       },
       {
-        "ans": "Statement A is false, and the counterexample $x = 2$ disproves it",
-        "feedback": "If $x = 2$, then $x^2 = 4$. Since $4 > 2$, $x = 2$ satisfies the inequality $x^2 > x$. A counterexample must show a value that makes the statement false, such as $x = 0$, $x = 1$, or $x = 0.5$."
+        "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } x = 2 \\cr &\\text{(b) Statement B is true} \\end{aligned}",
+        "feedback": "If $x=2$, then $x^2=4$. Since $4>2$, $x=2$ is not a counterexample for Statement A. You must choose a value in the range $[0, 1]$ to disprove Statement A."
       },
       {
-        "ans": "Statement B is false because if $x = 3$, the expression equals $1$, which is not greater than $0$",
-        "feedback": "If $x = 3$, the expression $x^2 - 6x + 10$ evaluates to $9 - 18 + 10 = 1$. Since $1 > 0$, this value does not make the statement false."
+        "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } x = 0 \\cr &\\text{(b) Statement B is false} \\end{aligned}",
+        "feedback": "Statement B is true for all real $x$ because it can be rewritten as $(x-3)^2+1$. Since a square is always $\ge 0$, adding 1 ensures the expression is always positive."
       }
     ],
     "bradley_insight": {
@@ -1988,7 +1988,7 @@ window.ALEVEL_QUESTIONS = [
     "<strong>Part (b): Solving the equation</strong><br><br>Using the identity proved in Part (a), we can replace the term $\\log_4 \\left( \\dfrac{1}{x} \\right)$ with $-\\log_4 x$:\\begin{aligned} \\log_4 (x - 3) - \\log_4 x = -1 \\end{aligned}Apply the subtraction law of logarithms:\\begin{aligned} \\log_4 \\left( \\dfrac{x - 3}{x} \\right) = -1 \\end{aligned}",
     "Convert to exponential form to remove the logarithm:\\begin{aligned} \\dfrac{x - 3}{x} &= 4^{-1} \\cr &= \\dfrac{1}{4} \\end{aligned}",
     "Solve the resulting linear equation for $x$:\\begin{aligned} 4(x - 3) &= x \\cr 4x - 12 &= x \\cr 3x &= 12 \\cr x &= 4 \\end{aligned}Check the domain: for $x = 4$, the arguments are $x - 3 = 1 > 0$ and $x = 4 > 0$. Both are valid. Thus, $x = 4$.",
-    "Final Answer:\\begin{aligned} &\\text{(a) Identity proven} \\cr &\\text{(b) } x = 4 \\end{aligned}"
+    "Final Answer:$$ x = 4 $$"
   ],
   "pi_options": [
     {
