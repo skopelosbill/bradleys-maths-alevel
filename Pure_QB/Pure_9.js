@@ -1244,423 +1244,423 @@ window.ALEVEL_QUESTIONS = [
       "content": "Always remember the theorem: 'The angle in a semicircle is a right angle.' Whenever you see a triangle drawn inside a circle where one side is the diameter, you can instantly assume the opposite vertex has a $90^\\circ$ angle."
     }
   },
-{
-        "id": "004431",
-        "group_id": "004431",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Algebra and Functions",
-        "topic": "Functions",
-        "subtopic": [
-                "Functions and Mappings"
-        ],
-        "img": false,
-        "question": "The function $g$ is defined by:\\begin{aligned} &g(x) = \\dfrac{3x + 1}{x - 1} \\cr &x \\ge 3 \\end{aligned}<strong>(a)</strong> Find $gg(3)$. [2]<br><br><strong>(b)</strong> State the range of $g$. [1]<br><br><strong>(c)</strong> Find $g^{-1}(x)$, stating its domain. [3]",
-        "steps": [
-                "<strong>Step 1: Evaluate the inner function for part (a)</strong><br>To evaluate the composite function $gg(3)$, first substitute $x = 3$ directly into the definition of $g(x)$:\\begin{aligned} g(3) &= \\dfrac{3(3) + 1}{3 - 1} \\cr &= \\dfrac{10}{2} \\cr &= 5 \\end{aligned}",
-                "<strong>Step 2: Evaluate the outer function to find $gg(3)$</strong><br>Now, substitute your result $5$ back into the function $g(x)$:\\begin{aligned} gg(3) &= g(5) \\cr &= \\dfrac{3(5) + 1}{5 - 1} \\cr &= \\dfrac{16}{4} \\cr &= 4 \\end{aligned}",
-                "<strong>Step 3: Analyze the behavior of the function for part (b)</strong><br>As $x \\to \\infty$, the rational function $g(x) = \\dfrac{3x + 1}{x - 1}$ approaches its horizontal asymptote:\\begin{aligned} y &\\to \\dfrac{3}{1} \\cr &= 3 \\end{aligned}Since the function is strictly decreasing for $x \\ge 3$, its maximum value occurs at the starting boundary $x = 3$, where $g(3) = 5$. Therefore, the range of outputs is restricted to:$$3 < g(x) \\le 5$$",
-                "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = g(x)$ and rearrange the equation to make $x$ the subject:\\begin{aligned} y &= \\dfrac{3x + 1}{x - 1} \\cr y(x - 1) &= 3x + 1 \\cr yx - y &= 3x + 1 \\end{aligned}",
-                "<strong>Step 5: Isolate and solve for $x$</strong><br>Group all terms containing $x$ on one side and factorise:\\begin{aligned} yx - 3x &= y + 1 \\cr x(y - 3) &= y + 1 \\cr x &= \\dfrac{y + 1}{y - 3} \\end{aligned}Replacing $y$ with $x$ yields:$$g^{-1}(x) = \\dfrac{x + 1}{x - 3}$$",
-                "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of the inverse function $g^{-1}(x)$ is identical to the range of the original function $g(x)$ calculated in Step 3:$$\\text{Domain: } 3 < x \\le 5$$",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } gg(3) = 4 \\cr &\\text{(b) } 3 < g(x) \\le 5 \\cr &\\text{(c) } g^{-1}(x) = \\dfrac{x + 1}{x - 3} \\cr &\\quad\\text{Domain: } 3 < x \\le 5 \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &g^{-1}(x) = \\dfrac{x + 1}{x - 3} \\cr &\\text{Domain: } x \\ge 3 \\end{aligned}",
-                        "feedback": "You may have made the common mistake of assuming the domain of $g^{-1}(x)$ is the same as the domain of $g(x)$. Remember that the domain of an inverse function is strictly equal to the range of the original function, which is bounded by the restricted domain."
-                },
-                {
-                        "ans": "\\begin{aligned} &g^{-1}(x) = \\dfrac{x + 1}{x - 3} \\cr &\\text{Domain: } x \\neq 3 \\end{aligned}",
-                        "feedback": "You may have found the domain of the inverse function by looking only at its algebraic expression, which suggests $x$ cannot be 3. However, because the original function has a restricted domain $x \\ge 3$, the range of $g(x)$ is restricted to $3 < y \\le 5$. Thus, the domain of $g^{-1}(x)$ must be restricted to $3 < x \\le 5$."
-                },
-                {
-                        "ans": "\\begin{aligned} &g^{-1}(x) = \\dfrac{x + 1}{x - 3} \\cr &\\text{Domain: } 3 \\le x \\le 5 \\end{aligned}",
-                        "feedback": "You may have used a weak inequality ($\\le$) for the lower bound of the domain. Because $y = 3$ is a horizontal asymptote that the curve approaches but never reaches as $x \\to \\infty$, the lower bound of the range is strictly greater than 3 ($x > 3$)."
-                }
-        ],
-        "bradley_insight": {
-                "type": "caution",
-                "title": "The Head Teacher's Eye: Mapping Domains and Ranges",
-                "content": "Always remember the golden rule of inverse functions: the domain of $g^{-1}(x)$ is exactly equal to the range of $g(x)$, and the range of $g^{-1}(x)$ is exactly equal to the domain of $g(x)$. Never attempt to find the domain of an inverse function simply by looking at its algebraic expression; you must evaluate the output boundaries of your original function."
-        }
-},
-{
-        "id": "004432",
-        "group_id": "004431",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Algebra and Functions",
-        "topic": "Functions",
-        "subtopic": [
-                "Functions and Mappings"
-        ],
-        "img": false,
-        "question": "The function $h$ is defined by:\\begin{aligned} &h(x) = \\dfrac{4x + 2}{x - 2} \\cr &x \\ge 3 \\end{aligned}<strong>(a)</strong> Find $hh(3)$. [2]<br><br><strong>(b)</strong> State the range of $h$. [1]<br><br><strong>(c)</strong> Find $h^{-1}(x)$, stating its domain. [3]",
-        "steps": [
-                "<strong>Step 1: Evaluate the inner function for part (a)</strong><br>To find the composite function value $hh(3)$, first substitute $x = 3$ into the function $h(x)$:\\begin{aligned} h(3) &= \\dfrac{4(3) + 2}{3 - 2} \\cr &= \\dfrac{14}{1} \\cr &= 14 \\end{aligned}",
-                "<strong>Step 2: Evaluate the outer function to find $hh(3)$</strong><br>Now, substitute $14$ back into the function $h(x)$:\\begin{aligned} hh(3) &= h(14) \\cr &= \\dfrac{4(14) + 2}{14 - 2} \\cr &= \\dfrac{58}{12} \\cr &= \\dfrac{29}{6} \\end{aligned}",
-                "<strong>Step 3: Determine the range of $h$ for part (b)</strong><br>As $x \\to \\infty$, the rational function $h(x) = \\dfrac{4x + 2}{x - 2}$ approaches its horizontal asymptote:\\begin{aligned} y &\\to \\dfrac{4}{1} \\cr &= 4 \\end{aligned}Since the function is continuous and decreasing for $x \\ge 3$, its maximum value occurs at the boundary $x = 3$, where $h(3) = 14$. Thus, the range of $h$ is restricted to:$$4 < h(x) \\le 14$$",
-                "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = h(x)$ and rearrange the expression to make $x$ the subject:\\begin{aligned} y &= \\dfrac{4x + 2}{x - 2} \\cr y(x - 2) &= 4x + 2 \\cr yx - 2y &= 4x + 2 \\end{aligned}",
-                "<strong>Step 5: Isolate and solve for $x$</strong><br>Move all terms containing $x$ to one side and factorise:\\begin{aligned} yx - 4x &= 2y + 2 \\cr x(y - 4) &= 2(y + 1) \\cr x &= \\dfrac{2y + 2}{y - 4} \\end{aligned}Replacing $y$ with $x$ gives:$$h^{-1}(x) = \\dfrac{2x + 2}{x - 4}$$",
-                "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of $h^{-1}(x)$ is equal to the range of the original function $h(x)$ calculated in Step 3:$$\\text{Domain: } 4 < x \\le 14$$",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } hh(3) = \\dfrac{29}{6} \\cr &\\text{(b) } 4 < h(x) \\le 14 \\cr &\\text{(c) } h^{-1}(x) = \\dfrac{2x + 2}{x - 4} \\cr &\\quad\\text{Domain: } 4 < x \\le 14 \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &h^{-1}(x) = \\dfrac{2x + 2}{x - 4} \\cr &\\text{Domain: } x \\ge 3 \\end{aligned}",
-                        "feedback": "You may have incorrectly written the original domain of $h(x)$ as the domain for $h^{-1}(x)$. The domain of an inverse function must always equal the range of the original function, which is bounded by the restricted domain."
-                },
-                {
-                        "ans": "\\begin{aligned} &h^{-1}(x) = \\dfrac{2x + 2}{x - 4} \\cr &\\text{Domain: } x \\neq 4 \\end{aligned}",
-                        "feedback": "You may have found the domain of the inverse function by looking only at its algebraic expression, which suggests $x$ cannot be 4. However, because the original function has a restricted domain $x \\ge 3$, the range of $h(x)$ is restricted to $4 < y \\le 14$. Thus, the domain of $h^{-1}(x)$ must be restricted to $4 < x \\le 14$."
-                },
-                {
-                        "ans": "\\begin{aligned} &h^{-1}(x) = \\dfrac{2x + 2}{x - 4} \\cr &\\text{Domain: } 4 \\le x \\le 14 \\end{aligned}",
-                        "feedback": "You may have used a non-strict inequality for the lower boundary. Because $y = 4$ is a horizontal asymptote that the graph approaches but never touches as $x \\to \\infty$, the lower bound of the range is strictly greater than 4 ($x > 4$)."
-                }
-        ],
-        "bradley_insight": {
-                "type": "pro-tip",
-                "title": "The Head Teacher's Eye: Finding Horizontal Asymptotes",
-                "content": "For a rational function of the form $y = \\dfrac{ax + b}{cx + d}$, the horizontal asymptote as $x \\to \\infty$ is always given by the ratio of the leading coefficients, $y = \\dfrac{a}{c}$. Recognizing this allows you to instantly determine the lower limit (or upper limit) of your range without needing to sketch a complex graph."
-        }
-},
-{
-        "id": "004433",
-        "group_id": "004431",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Exponentials and Logarithms",
-        "topic": "Functions",
-        "subtopic": [
-                "Exponential and Logarithmic Functions and Graphs",
-                "Functions and Mappings"
-        ],
-        "img": false,
-        "question": "The functions $f$ and $g$ are defined by:\\begin{aligned} &f(x) = \\ln(x - 2) \\cr &\\quad x > 3 \\cr &g(x) = \\mathrm{e}^{2x} + 2 \\cr &\\quad x \\in \\mathbb{R} \\end{aligned}<strong>(a)</strong> Find an expression for the composite function $fg(x)$, writing your answer in its simplest form. [2]<br><br><strong>(b)</strong> State the range of $f$. [1]<br><br><strong>(c)</strong> Find $f^{-1}(x)$, stating its domain. [3]",
-        "steps": [
-                "<strong>Step 1: Set up the composite function for part (a)</strong><br>To find the composite function $fg(x)$, substitute the entire expression of $g(x)$ as the input inside $f(x)$:\\begin{aligned} fg(x) &= f(g(x)) \\cr &= \\ln((\\mathrm{e}^{2x} + 2) - 2) \\end{aligned}",
-                "<strong>Step 2: Simplify the composite expression</strong><br>Simplify the terms inside the natural logarithm:\\begin{aligned} fg(x) &= \\ln(\\mathrm{e}^{2x}) \\cr &= 2x \\end{aligned}",
-                "<strong>Step 3: Determine the range of $f$ for part (b)</strong><br>Since the domain of $f(x) = \\ln(x - 2)$ is $x > 3$, evaluate the boundary value:\\begin{aligned} f(3) &= \\ln(3 - 2) \\cr &= \\ln(1) \\cr &= 0 \\end{aligned}Since $\\ln(x - 2)$ is a strictly increasing function, for all $x > 3$, $f(x)$ will be greater than $0$. Thus, the range of $f$ is:$$f(x) > 0$$",
-                "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = f(x)$ and rearrange the logarithmic equation to solve for $x$:\\begin{aligned} y &= \\ln(x - 2) \\cr \\mathrm{e}^y &= x - 2 \\end{aligned}",
-                "<strong>Step 5: Solve for $x$ to find the inverse</strong><br>Isolate $x$ on one side:\\begin{aligned} x &= \\mathrm{e}^y + 2 \\end{aligned}Replacing $y$ with $x$ gives:$$f^{-1}(x) = \\mathrm{e}^x + 2$$",
-                "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of $f^{-1}(x)$ is equal to the range of the original function $f(x)$ calculated in Step 3:$$\\text{Domain: } x > 0$$",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } fg(x) = 2x \\cr &\\text{(b) } f(x) > 0 \\cr &\\text{(c) } f^{-1}(x) = \\mathrm{e}^x + 2 \\cr &\\quad\\text{Domain: } x > 0 \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &f^{-1}(x) = \\mathrm{e}^x + 2 \\cr &\\text{Domain: } x > 3 \\end{aligned}",
-                        "feedback": "You may have incorrectly written the original domain of $f(x)$ as the domain of $f^{-1}(x)$. Remember that the domain of $f^{-1}(x)$ must equal the range of $f(x)$, which is $x > 0$."
-                },
-                {
-                        "ans": "\\begin{aligned} &f^{-1}(x) = \\mathrm{e}^{x + 2} \\cr &\\text{Domain: } x > 0 \\end{aligned}",
-                        "feedback": "You may have made an algebraic error when eliminating the natural logarithm, incorrectly writing $\\mathrm{e}^y = x - 2$ as $\\mathrm{e}^{y+2} = x$. Make sure you add 2 outside of the exponential power."
-                },
-                {
-                        "ans": "\\begin{aligned} &f^{-1}(x) = \\mathrm{e}^x - 2 \\cr &\\text{Domain: } x > 0 \\end{aligned}",
-                        "feedback": "You may have made a sign error when isolating $x$, writing $\\mathrm{e}^y = x - 2$ as $x = \\mathrm{e}^y - 2$. Check your sign transposition."
-                }
-        ],
-        "bradley_insight": {
-                "type": "pro-tip",
-                "title": "The Head Teacher's Eye: Exponential and Logarithmic Inverses",
-                "content": "Since logarithmic and exponential functions are inverses of each other, applying $\\mathrm{e}$ to both sides of an equation is the standard way to clear a natural logarithm $\\ln$. Always make sure to isolate the $\\ln$ term entirely before raising both sides to the power of $\\mathrm{e}$."
-        }
-},
-{
-        "id": "004434",
-        "group_id": "004431",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Algebra and Functions",
-        "topic": "Functions",
-        "subtopic": [
-                "Functions and Mappings",
-                "Quadratics"
-        ],
-        "img": false,
-        "question": "The function $f$ is defined by:\\begin{aligned} &f(x) = x^2 - 4x + 9 \\cr &x \\ge 2 \\end{aligned}<strong>(a)</strong> Find $ff(3)$. [2]<br><br><strong>(b)</strong> State the range of $f$. [1]<br><br><strong>(c)</strong> Find $f^{-1}(x)$, stating its domain. [3]",
-        "steps": [
-                "<strong>Step 1: Evaluate the inner function for part (a)</strong><br>To find the composite function value $ff(3)$, first evaluate the function at $x = 3$:\\begin{aligned} f(3) &= 3^2 - 4(3) + 9 \\cr &= 9 - 12 + 9 \\cr &= 6 \\end{aligned}",
-                "<strong>Step 2: Evaluate the outer function to find $ff(3)$</strong><br>Now, substitute your result $6$ back into the function $f(x)$:\\begin{aligned} ff(3) &= f(6) \\cr &= 6^2 - 4(6) + 9 \\cr &= 36 - 24 + 9 \\cr &= 21 \\end{aligned}",
-                "<strong>Step 3: Determine the range of $f$ for part (b)</strong><br>To find the range of the quadratic function $f(x) = x^2 - 4x + 9$, complete the square to locate its vertex:\\begin{aligned} f(x) &= (x - 2)^2 - 4 + 9 \\cr &= (x - 2)^2 + 5 \\end{aligned}Since $x \\ge 2$, the term $(x - 2)^2 \\ge 0$, meaning the minimum value of $f(x)$ is $5$. The range of $f$ is:$$f(x) \\ge 5$$",
-                "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = f(x)$ and use the completed square form to rearrange for $x$:\\begin{aligned} y &= (x - 2)^2 + 5 \\cr y - 5 &= (x - 2)^2 \\end{aligned}",
-                "<strong>Step 5: Solve for $x$ to find the inverse</strong><br>Take the square root of both sides. Since our domain is restricted to $x \\ge 2$, we take the positive square root:\\begin{aligned} x - 2 &= \\sqrt{y - 5} \\cr x &= 2 + \\sqrt{y - 5} \\end{aligned}Replacing $y$ with $x$ yields:$$f^{-1}(x) = 2 + \\sqrt{x - 5}$$",
-                "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of $f^{-1}(x)$ is equal to the range of the original function $f(x)$ calculated in Step 3:$$\\text{Domain: } x \\ge 5$$",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } ff(3) = 21 \\cr &\\text{(b) } f(x) \\ge 5 \\cr &\\text{(c) } f^{-1}(x) = 2 + \\sqrt{x - 5} \\cr &\\quad\\text{Domain: } x \\ge 5 \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &f^{-1}(x) = 2 + \\sqrt{x - 5} \\cr &\\text{Domain: } x \\ge 2 \\end{aligned}",
-                        "feedback": "You may have incorrectly stated the original domain of $f(x)$ as the domain of $f^{-1}(x)$. Always remember that the domain of $f^{-1}(x)$ must equal the range of $f(x)$."
-                },
-                {
-                        "ans": "\\begin{aligned} &f^{-1}(x) = 2 - \\sqrt{x - 5} \\cr &\\text{Domain: } x \\ge 5 \\end{aligned}",
-                        "feedback": "You may have taken the negative square root in Step 5. Because the original domain is $x \\ge 2$, $x - 2$ must be non-negative, so you must select the positive square root."
-                },
-                {
-                        "ans": "\\begin{aligned} &f^{-1}(x) = 2 + \\sqrt{x + 5} \\cr &\\text{Domain: } x \\ge 5 \\end{aligned}",
-                        "feedback": "You may have made a sign error when rearranging $y = (x-2)^2 + 5$, writing $y + 5 = (x-2)^2$ instead of $y - 5$."
-                }
-        ],
-        "bradley_insight": {
-                "type": "caution",
-                "title": "The Head Teacher's Eye: Completing the Square for Inverses",
-                "content": "To find the inverse of a quadratic function, you cannot easily rearrange $y = ax^2 + bx + c$ directly. You must first complete the square to write it in the form $y = a( x - h )^2 + k$. This allows you to isolate the squared bracket and cleanly take the square root."
-        }
-},
-{
-        "id": "004435",
-        "group_id": "004431",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Algebra and Functions",
-        "topic": "Functions",
-        "subtopic": [
-                "Functions and Mappings"
-        ],
-        "img": false,
-        "question": "The function $g$ is defined by:\\begin{aligned} &g(x) = 1 + \\sqrt{x - 3} \\cr &x \\ge 3 \\end{aligned}<strong>(a)</strong> Find $gg(7)$. [2]<br><br><strong>(b)</strong> State the range of $g$. [1]<br><br><strong>(c)</strong> Find $g^{-1}(x)$, stating its domain. [3]",
-        "steps": [
-                "<strong>Step 1: Evaluate the inner function for part (a)</strong><br>To evaluate the composite function $gg(7)$, first find the value of $g(7)$ by substituting $x = 7$:\\begin{aligned} g(7) &= 1 + \\sqrt{7 - 3} \\cr &= 1 + \\sqrt{4} \\cr &= 1 + 2 \\cr &= 3 \\end{aligned}",
-                "<strong>Step 2: Evaluate the outer function to find $gg(7)$</strong><br>Now substitute $3$ back into the function $g(x)$:\\begin{aligned} gg(7) &= g(3) \\cr &= 1 + \\sqrt{3 - 3} \\cr &= 1 + 0 \\cr &= 1 \\end{aligned}",
-                "<strong>Step 3: Determine the range of $g$ for part (b)</strong><br>For $x \\ge 3$, the square root term $\\sqrt{x - 3}$ is always non-negative ($\\ge 0$). Thus, the minimum value of $g(x)$ occurs when $\\sqrt{x - 3} = 0$, which yields $g(3) = 1$. The range of $g$ is:$$g(x) \\ge 1$$",
-                "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = g(x)$ and rearrange the radical equation to solve for $x$:\\begin{aligned} y &= 1 + \\sqrt{x - 3} \\cr y - 1 &= \\sqrt{x - 3} \\end{aligned}",
-                "<strong>Step 5: Square both sides and isolate $x$</strong><br>Square both sides of the equation to eliminate the radical:\\begin{aligned} (y - 1)^2 &= x - 3 \\cr x &= (y - 1)^2 + 3 \\end{aligned}Replacing $y$ with $x$ yields:$$g^{-1}(x) = (x - 1)^2 + 3$$",
-                "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of $g^{-1}(x)$ is equal to the range of the original function $g(x)$ calculated in Step 3:$$\\text{Domain: } x \\ge 1$$",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } gg(7) = 1 \\cr &\\text{(b) } g(x) \\ge 1 \\cr &\\text{(c) } g^{-1}(x) = (x - 1)^2 + 3 \\cr &\\quad\\text{Domain: } x \\ge 1 \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &g^{-1}(x) = (x - 1)^2 + 3 \\cr &\\text{Domain: } x \\ge 3 \\end{aligned}",
-                        "feedback": "You may have incorrectly written the original domain of $g(x)$ as the domain of $g^{-1}(x)$. Always remember that the domain of $g^{-1}(x)$ must equal the range of $g(x)$."
-                },
-                {
-                        "ans": "\\begin{aligned} &g^{-1}(x) = (x + 1)^2 + 3 \\cr &\\text{Domain: } x \\ge 1 \\end{aligned}",
-                        "feedback": "You may have made a sign error when subtracting 1 from both sides in Step 4, writing $y + 1 = \\sqrt{x-3}$ instead of $y - 1$."
-                },
-                {
-                        "ans": "\\begin{aligned} &g^{-1}(x) = (x - 1)^2 - 3 \\cr &\\text{Domain: } x \\ge 1 \\end{aligned}",
-                        "feedback": "You may have made a sign error when rearranging $(y-1)^2 = x - 3$, writing $x = (y-1)^2 - 3$ instead of adding 3 to both sides."
-                }
-        ],
-        "bradley_insight": {
-                "type": "caution",
-                "title": "The Head Teacher's Eye: Restricting Quadratic Inverses",
-                "content": "A quadratic function is normally many-to-one, meaning it does not have a unique inverse. However, the inverse $g^{-1}(x) = ( x - 1 )^2 + 3$ is valid here because its domain is strictly restricted to $x \\ge 1$. This restriction ensures that the inverse corresponds exactly to the one-to-one radical branch of our original function."
-        }
-},
-{
-        "id": "004436",
-        "group_id": "004436",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Vectors",
-        "topic": "Vectors",
-        "subtopic": [
-                "Vector Properties"
-        ],
-        "img": false,
-        "question": "Relative to a fixed origin $O$, the point $A$ has position vector $(3\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k})$, the point $B$ has position vector $(5\\mathbf{i} - \\mathbf{j} + 4\\mathbf{k})$, and the point $C$ has position vector $(p\\mathbf{i} + 4\\mathbf{j} - \\mathbf{k})$, where $p$ is a constant and $p < 0$. $D$ is the point such that $\\vec{AB} = \\vec{BD}$.<br><br><strong>(a)</strong> Find the position vector of $D$. [2]<br><br><strong>(b)</strong> Given that $|\\vec{AC}| = 5$, find the value of $p$. [3]",
-        "steps": [
-                "<strong>Step 1: Calculate the displacement vector $\\vec{AB}$ for part (a)</strong><br>Subtract the position vector of $A$ from the position vector of $B$:\\begin{aligned} &\\vec{AB} = \\mathbf{b} - \\mathbf{a} \\cr &\\quad = (5\\mathbf{i} - \\mathbf{j} + 4\\mathbf{k}) \\cr &\\qquad - (3\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k}) \\cr &\\quad = 2\\mathbf{i} - 2\\mathbf{j} + 6\\mathbf{k} \\end{aligned}",
-                "<strong>Step 2: Solve for the position vector of $D$</strong><br>Since $\\vec{AB} = \\vec{BD}$, the point $B$ is the midpoint of the line segment $AD$. We can find the position vector of $D$ by adding $\\vec{AB}$ to the position vector of $B$:\\begin{aligned} &\\mathbf{d} = \\mathbf{b} + \\vec{BD} \\cr &\\quad = \\mathbf{b} + \\vec{AB} \\cr &\\quad = (5\\mathbf{i} - \\mathbf{j} + 4\\mathbf{k}) \\cr &\\qquad + (2\\mathbf{i} - 2\\mathbf{j} + 6\\mathbf{k}) \\cr &\\quad = 7\\mathbf{i} - 3\\mathbf{j} + 10\\mathbf{k} \\end{aligned}",
-                "<strong>Step 3: Express the displacement vector $\\vec{AC}$ for part (b)</strong><br>Subtract the position vector of $A$ from the position vector of $C$:\\begin{aligned} &\\vec{AC} = \\mathbf{c} - \\mathbf{a} \\cr &\\quad = (p\\mathbf{i} + 4\\mathbf{j} - \\mathbf{k}) \\cr &\\qquad - (3\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k}) \\cr &\\quad = (p - 3)\\mathbf{i} + 3\\mathbf{j} + \\mathbf{k} \\end{aligned}",
-                "<strong>Step 4: Set up the magnitude equation</strong><br>The magnitude of a vector $\\mathbf{v} = x\\mathbf{i} + y\\mathbf{j} + z\\mathbf{k}$ is $|\\mathbf{v}| = \\sqrt{x^2 + y^2 + z^2}$. Set the squared magnitude of $\\vec{AC}$ equal to $5^2$:\\begin{aligned} |\\vec{AC}|^2 &= (p - 3)^2 + 3^2 + 1^2 \\cr 5^2 &= (p - 3)^2 + 9 + 1 \\cr 25 &= (p - 3)^2 + 10 \\end{aligned}",
-                "<strong>Step 5: Solve the quadratic equation for $p$</strong><br>Isolate the squared term and solve:\\begin{aligned} (p - 3)^2 &= 15 \\cr p - 3 &= \\pm\\sqrt{15} \\cr p &= 3 \\pm \\sqrt{15} \\end{aligned}Since the question specifies that $p < 0$, we must discard the positive root, leaving us with:$$p = 3 - \\sqrt{15}$$",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } \\mathbf{d} = 7\\mathbf{i} - 3\\mathbf{j} + 10\\mathbf{k} \\cr &\\text{(b) } p = 3 - \\sqrt{15} \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &\\mathbf{d} = 7\\mathbf{i} - 3\\mathbf{j} + 10\\mathbf{k} \\cr &p = 3 + \\sqrt{15} \\end{aligned}",
-                        "feedback": "You successfully solved the algebra for part (b), but you may have forgotten to check the initial constraint $p < 0$. Since $\\sqrt{15} \\approx 3.87$, the value $3 + \\sqrt{15}$ is positive, so you must discard it and keep only the negative root $3 - \\sqrt{15}$."
-                },
-                {
-                        "ans": "\\begin{aligned} &\\mathbf{d} = 7\\mathbf{i} - 3\\mathbf{j} + 10\\mathbf{k} \\cr &p = 3 - \\sqrt{5} \\end{aligned}",
-                        "feedback": "You may have made an arithmetic slip in Step 4 when squaring the components. Check that you calculated $3^2 + 1^2 = 9 + 1 = 10$, rather than mistakenly writing $3 + 1 = 4$ or subtracting terms incorrectly."
-                },
-                {
-                        "ans": "\\begin{aligned} &\\mathbf{d} = 2\\mathbf{i} - 2\\mathbf{j} + 6\\mathbf{k} \\cr &p = 3 - \\sqrt{15} \\end{aligned}",
-                        "feedback": "You may have written the displacement vector $\\vec{AB}$ as your final answer for the position vector of $D$. Remember to add $\\vec{AB}$ to the position vector of $B$ to find the absolute position vector of $D$ relative to the origin."
-                }
-        ],
-        "bradley_insight": {
-                "type": "caution",
-                "title": "The Head Teacher's Eye: Displacement vs. Position Vectors",
-                "content": "Always distinguish between a displacement vector (the vector path from one point to another, like $\\vec{ AB }$) and a position vector (the coordinates of a point relative to the origin, like $\\mathbf{ a }$ or $\\mathbf{ d }$). A very common exam slip is writing down $\\vec{ AB }$ as your final answer for point $D$ instead of adding it to the reference point $\\mathbf{ b }$."
-        }
-},
-{
-        "id": "004437",
-        "group_id": "004436",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Vectors",
-        "topic": "Vectors",
-        "subtopic": [
-                "Vector Properties"
-        ],
-        "img": false,
-        "question": "Relative to a fixed origin $O$, the point $A$ has position vector $(\\mathbf{i} + 4\\mathbf{j} - 3\\mathbf{k})$, the point $B$ has position vector $(3\\mathbf{i} + \\mathbf{j} + 2\\mathbf{k})$, and the point $C$ has position vector $(5\\mathbf{i} + q\\mathbf{j} + \\mathbf{k})$, where $q$ is a constant and $q > 0$. $D$ is the point such that $\\vec{AD} = 3\\vec{AB}$.<br><br><strong>(a)</strong> Find the position vector of $D$. [2]<br><br><strong>(b)</strong> Given that $|\\vec{BC}| = \\sqrt{21}$, find the value of $q$. [3]",
-        "steps": [
-                "<strong>Step 1: Calculate the displacement vector $\\vec{AB}$ for part (a)</strong><br>Subtract the position vector of $A$ from the position vector of $B$:\\begin{aligned} &\\vec{AB} = \\mathbf{b} - \\mathbf{a} \\cr &\\quad = (3\\mathbf{i} + \\mathbf{j} + 2\\mathbf{k}) \\cr &\\qquad - (\\mathbf{i} + 4\\mathbf{j} - 3\\mathbf{k}) \\cr &\\quad = 2\\mathbf{i} - 3\\mathbf{j} + 5\\mathbf{k} \\end{aligned}",
-                "<strong>Step 2: Find the position vector of $D$</strong><br>Multiply $\\vec{AB}$ by $3$ to find the displacement vector $\\vec{AD}$:\\begin{aligned} \\vec{AD} &= 3\\vec{AB} \\cr &= 3(2\\mathbf{i} - 3\\mathbf{j} + 5\\mathbf{k}) \\cr &= 6\\mathbf{i} - 9\\mathbf{j} + 15\\mathbf{k} \\end{aligned}Now, add $\\vec{AD}$ to the position vector of $A$ to obtain the position vector of $D$:\\begin{aligned} &\\mathbf{d} = \\mathbf{a} + \\vec{AD} \\cr &\\quad = (\\mathbf{i} + 4\\mathbf{j} - 3\\mathbf{k}) \\cr &\\qquad + (6\\mathbf{i} - 9\\mathbf{j} + 15\\mathbf{k}) \\cr &\\quad = 7\\mathbf{i} - 5\\mathbf{j} + 12\\mathbf{k} \\end{aligned}",
-                "<strong>Step 3: Express the displacement vector $\\vec{BC}$ for part (b)</strong><br>Subtract the position vector of $B$ from the position vector of $C$:\\begin{aligned} &\\vec{BC} = \\mathbf{c} - \\mathbf{b} \\cr &\\quad = (5\\mathbf{i} + q\\mathbf{j} + \\mathbf{k}) \\cr &\\qquad - (3\\mathbf{i} + \\mathbf{j} + 2\\mathbf{k}) \\cr &\\quad = 2\\mathbf{i} + (q - 1)\\mathbf{j} - \\mathbf{k} \\end{aligned}",
-                "<strong>Step 4: Set up the magnitude equation</strong><br>Use the 3D magnitude formula and square both sides to remove the square root, setting $|\\vec{BC}|^2 = (\\sqrt{21})^2$:\\begin{aligned} |\\vec{BC}|^2 &= 2^2 + (q - 1)^2 + (-1)^2 \\cr 21 &= 4 + (q - 1)^2 + 1 \\cr 21 &= (q - 1)^2 + 5 \\end{aligned}",
-                "<strong>Step 5: Solve the quadratic equation for $q$</strong><br>Isolate the squared term and solve for $q$:\\begin{aligned} (q - 1)^2 &= 16 \\cr q - 1 &= \\pm 4 \\cr q &= 1 \\pm 4 \\end{aligned}This yields two potential values: $q = 5$ or $q = -3$. Since the question specifies that $q > 0$, we discard $q = -3$ to get:$$q = 5$$",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } \\mathbf{d} = 7\\mathbf{i} - 5\\mathbf{j} + 12\\mathbf{k} \\cr &\\text{(b) } q = 5 \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &\\mathbf{d} = 7\\mathbf{i} - 5\\mathbf{j} + 12\\mathbf{k} \\cr &q = 5 \\text{ or } q = -3 \\end{aligned}",
-                        "feedback": "You successfully solved the quadratic equation, but you may have forgotten to apply the boundary constraint $q > 0$. Since $q$ must be strictly positive, you must discard the negative root $q = -3$."
-                },
-                {
-                        "ans": "\\begin{aligned} &\\mathbf{d} = 6\\mathbf{i} - 9\\mathbf{j} + 15\\mathbf{k} \\cr &q = 5 \\end{aligned}",
-                        "feedback": "You may have written down the displacement vector $\\vec{AD}$ as your final answer for the position vector of $D$. Remember to add $\\vec{AD}$ to the position vector of $A$ to find the absolute position vector relative to the origin."
-                },
-                {
-                        "ans": "\\begin{aligned} &\\mathbf{d} = 7\\mathbf{i} - 5\\mathbf{j} + 12\\mathbf{k} \\cr &q = 1 + \\sqrt{17} \\end{aligned}",
-                        "feedback": "You may have made an arithmetic slip in Step 4 when squaring the components of $\\vec{BC}$. Check that you calculated $2^2 + (-1)^2 = 4 + 1 = 5$, rather than writing $2 + 1 = 3$ or another value."
-                }
-        ],
-        "bradley_insight": {
-                "type": "caution",
-                "title": "The Head Teacher's Eye: Tracking Scaling Reference Points",
-                "content": "When a vector scaling relation is defined as $\\vec{ AD } = 3\\vec{ AB }$, always remember that the starting point of the path is $A$. Therefore, the position vector of $D$ must be found relative to $A$, which means $\\mathbf{ d } = \\mathbf{ a } + 3\\vec{ AB }$. Adding the scaled vector to $\\mathbf{ b }$ instead of $\\mathbf{ a }$ is a very common source of lost marks."
-        }
-},
-{
-        "id": "004438",
-        "group_id": "004436",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Vectors",
-        "topic": "Vectors",
-        "subtopic": [
-                "Vector Properties"
-        ],
-        "img": false,
-        "question": "Relative to a fixed origin $O$, the points $A$ and $B$ have position vectors:\\begin{aligned} \\mathbf{a} &= 4\\mathbf{i} - 2\\mathbf{j} + \\lambda\\mathbf{k} \\cr \\mathbf{b} &= 2\\mathbf{i} + 3\\mathbf{j} - \\mathbf{k} \\end{aligned}where $\\lambda$ is a constant.<br><br><strong>(a)</strong> Find the vector $\\vec{AB}$ in terms of $\\lambda$. [2]<br><br><strong>(b)</strong> Given that the vector $\\vec{AB}$ is perpendicular to the vector $\\mathbf{u} = 2\\mathbf{i} + 2\\mathbf{j} + 3\\mathbf{k}$, find the value of $\\lambda$. [3]",
-        "steps": [
-                "<strong>Step 1: Calculate the displacement vector $\\vec{AB}$ in terms of $\\lambda$</strong><br>Subtract the position vector of $A$ from the position vector of $B$:\\begin{aligned} &\\vec{AB} = \\mathbf{b} - \\mathbf{a} \\cr &\\quad = (2\\mathbf{i} + 3\\mathbf{j} - \\mathbf{k}) \\cr &\\qquad - (4\\mathbf{i} - 2\\mathbf{j} + \\lambda\\mathbf{k}) \\cr &\\quad = -2\\mathbf{i} + 5\\mathbf{j} - (1 + \\lambda)\\mathbf{k} \\end{aligned}",
-                "<strong>Step 2: Understand the condition for perpendicular vectors</strong><br>Two vectors are perpendicular if and only if their scalar (dot) product is exactly equal to zero:$$\\vec{AB} \\cdot \\mathbf{u} = 0$$",
-                "<strong>Step 3: Calculate the dot product</strong><br>Multiply the corresponding components of $\\vec{AB}$ and $\\mathbf{u}$ and add them together:\\begin{aligned} &\\vec{AB} \\cdot \\mathbf{u} \\cr &\\quad = (-2)(2) + (5)(2) \\cr &\\qquad - 3(1 + \\lambda) \\cr &\\quad = -4 + 10 - 3 - 3\\lambda \\cr &\\quad = 3 - 3\\lambda \\end{aligned}",
-                "<strong>Step 4: Solve for $\\lambda$</strong><br>Set the scalar product equal to zero and solve the linear equation:\\begin{aligned} 3 - 3\\lambda &= 0 \\cr 3\\lambda &= 3 \\cr \\lambda &= 1 \\end{aligned}",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } \\vec{AB} \\cr &\\quad = -2\\mathbf{i} + 5\\mathbf{j} - (1 + \\lambda)\\mathbf{k} \\cr &\\text{(b) } \\lambda = 1 \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &\\vec{AB} \\cr &\\quad = -2\\mathbf{i} + 5\\mathbf{j} - (1 + \\lambda)\\mathbf{k} \\cr &\\lambda = -1 \\end{aligned}",
-                        "feedback": "You may have made a sign error when solving the equation $3 - 3\\lambda = 0$ in Step 4, leading to the incorrect root of $\\lambda = -1$."
-                },
-                {
-                        "ans": "\\begin{aligned} &\\vec{AB} \\cr &\\quad = -2\\mathbf{i} + 5\\mathbf{j} - (1 + \\lambda)\\mathbf{k} \\cr &\\lambda = 3 \\end{aligned}",
-                        "feedback": "You may have made an algebraic slip when expanding $-3(1 + \\lambda)$ in Step 3, perhaps writing it as $-3 + 3\\lambda$, which leads to the incorrect linear equation $3 + 3\\lambda = 0$ or another slip."
-                },
-                {
-                        "ans": "\\begin{aligned} &\\vec{AB} \\cr &\\quad = 2\\mathbf{i} - 5\\mathbf{j} + (1 + \\lambda)\\mathbf{k} \\cr &\\lambda = 1 \\end{aligned}",
-                        "feedback": "You may have subtracted the vectors in the wrong order in part (a), calculating $\\mathbf{a} - \\mathbf{b}$ instead of $\\mathbf{b} - \\mathbf{a}$. Remember that the displacement vector from $A$ to $B$ is always $\\vec{AB} = \\mathbf{b} - \\mathbf{a}$."
-                }
-        ],
-        "bradley_insight": {
-                "type": "pro-tip",
-                "title": "The Head Teacher's Eye: Perpendicular Dot Product",
-                "content": "The scalar product (dot product) is the most standard tool for proving or utilizing perpendicularity in vector geometry. Always remember: $\\mathbf{ a } \\cdot \\mathbf{ b } = 0 \\iff \\mathbf{ a } \\perp \\mathbf{ b }$. Be extremely careful with signs when multiplying negative coordinates in the dot product summation."
-        }
-},
-{
-        "id": "004439",
-        "group_id": "004436",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Vectors",
-        "topic": "Vectors",
-        "subtopic": [
-                "Vector Properties"
-        ],
-        "img": false,
-        "question": "The points $A$, $B$, and $C$ have position vectors relative to a fixed origin $O$ given by:\\begin{aligned} \\mathbf{a} &= 2\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k} \\cr \\mathbf{b} &= 5\\mathbf{i} + 5\\mathbf{j} - 3\\mathbf{k} \\cr \\mathbf{c} &= \\mu\\mathbf{i} + 13\\mathbf{j} - 11\\mathbf{k} \\end{aligned}where $\\mu$ is a constant.<br><br><strong>(a)</strong> Given that the points $A$, $B$, and $C$ lie on a straight line, find the value of the constant $\\mu$. [4]<br><br><strong>(b)</strong> Find the ratio in which the point $B$ divides the line segment $AC$. [2]",
-        "steps": [
-                "<strong>Step 1: Calculate the displacement vectors $\\vec{AB}$ and $\\vec{AC}$ for part (a)</strong><br>Subtract the corresponding coordinates to find the vectors:\\begin{aligned} &\\vec{AB} = \\mathbf{b} - \\mathbf{a} \\cr &\\quad = (5\\mathbf{i} + 5\\mathbf{j} - 3\\mathbf{k}) \\cr &\\qquad - (2\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k}) \\cr &\\quad = 3\\mathbf{i} + 6\\mathbf{j} - 6\\mathbf{k} \\end{aligned}and:\\begin{aligned} &\\vec{AC} = \\mathbf{c} - \\mathbf{a} \\cr &\\quad = (\\mu\\mathbf{i} + 13\\mathbf{j} - 11\\mathbf{k}) \\cr &\\qquad - (2\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k}) \\cr &\\quad = (\\mu - 2)\\mathbf{i} \\cr &\\qquad + 14\\mathbf{j} - 14\\mathbf{k} \\end{aligned}",
-                "<strong>Step 2: Apply the condition for collinear points</strong><br>For points $A$, $B$, and $C$ to lie on a straight line (collinear), the displacement vectors $\\vec{AB}$ and $\\vec{AC}$ must be parallel. This means there exists a scalar constant $k$ such that:$$\\vec{AC} = k\\vec{AB}$$",
-                "<strong>Step 3: Solve for $k$ using the known components</strong><br>Compare the $\\mathbf{j}$ components of the two vectors:\\begin{aligned} 14 &= 6k \\cr k &= \\dfrac{14}{6} \\cr &= \\dfrac{7}{3} \\end{aligned}Comparing the $\\mathbf{k}$ components confirms consistency:\\begin{aligned} -14 &= -6k \\cr k &= \\dfrac{-14}{-6} \\cr &= \\dfrac{7}{3} \\end{aligned}",
-                "<strong>Step 4: Solve for the constant $\\mu$</strong><br>Equate the $\\mathbf{i}$ components using $k = \\dfrac{7}{3}$:\\begin{aligned} \\mu - 2 &= 3k \\cr \\mu - 2 &= 3\\left(\\dfrac{7}{3}\\right) \\cr \\mu - 2 &= 7 \\cr \\mu &= 9 \\end{aligned}",
-                "<strong>Step 5: Determine the ratio in part (b)</strong><br>From our calculations, we have established that $\\vec{AC} = \\dfrac{7}{3}\\vec{AB}$. This means:\\begin{aligned} 3\\vec{AC} &= 7\\vec{AB} \\end{aligned}The total segment length $AC$ is represented by $7$ units of length, while the segment $AB$ is represented by $3$ units. Therefore, the remaining segment $BC$ is:\\begin{aligned} BC &= AC - AB \\cr &= 7 - 3 \\cr &= 4 \\end{aligned}Thus, the ratio in which $B$ divides $AC$ is:$$AB : BC = 3 : 4$$",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } \\mu = 9 \\cr &\\text{(b) } AB : BC = 3 : 4 \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &\\mu = 9 \\cr &\\text{Ratio } 3 : 7 \\end{aligned}",
-                        "feedback": "You may have written the ratio of the segment $AB$ to the entire segment $AC$ ($3 : 7$). The question asks for the ratio in which the point $B$ *divides* the line segment $AC$, which refers to the ratio of the two separate parts, $AB : BC = 3 : 4$."
-                },
-                {
-                        "ans": "\\begin{aligned} &\\mu = 7 \\cr &\\text{Ratio } 3 : 4 \\end{aligned}",
-                        "feedback": "You may have made an algebraic slip in Step 4, equating $\\mu = 7$ directly without adding the 2 from the term $(\\mu - 2)$ on the left-hand side."
-                },
-                {
-                        "ans": "\\begin{aligned} &\\mu = 9 \\cr &\\text{Ratio } 4 : 3 \\end{aligned}",
-                        "feedback": "You may have written the ratio backwards. Since $AB$ is shorter than $BC$ ($3$ units vs $4$ units), the ratio of division is $3 : 4$ (not $4 : 3$)."
-                }
-        ],
-        "bradley_insight": {
-                "type": "pro-tip",
-                "title": "The Head Teacher's Eye: Collinear Vectors",
-                "content": "To prove that three points $A$, $B$, and $C$ are collinear, you must show two things: first, that two vectors formed by these points are parallel (i.e., $\\vec{ AC } = k\\vec{ AB }$); second, that they share a common point (such as $A$ or $B$). Simply showing parallel gradients is not enough, as parallel lines do not necessarily lie on the same straight line."
-        }
-},
-{
-        "id": "004440",
-        "group_id": "004436",
-        "board": "Edexcel",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Vectors",
-        "topic": "Vectors",
-        "subtopic": [
-                "Trigonometry",
-                "Vector Properties"
-        ],
-        "img": false,
-        "question": "Relative to a fixed origin $O$, the points $A$, $B$, and $C$ have position vectors:\\begin{aligned} \\mathbf{a} &= \\mathbf{i} + 2\\mathbf{j} \\cr \\mathbf{b} &= 3\\mathbf{i} + \\mathbf{j} + 3\\mathbf{k} \\cr \\mathbf{c} &= 2\\mathbf{i} + 5\\mathbf{j} + 2\\mathbf{k} \\end{aligned}<strong>(a)</strong> Show that the triangle $ABC$ is isosceles. [3]<br><br><strong>(b)</strong> Find the exact perimeter of triangle $ABC$, giving your answer in the form $a\\sqrt{14} + b\\sqrt{2}$, where $a$ and $b$ are integers. [2]",
-        "steps": [
-                "<strong>Step 1: Calculate the displacement vectors representing the sides of the triangle</strong><br>Find the vectors $\\vec{AB}$, $\\vec{AC}$, and $\\vec{BC}$ by subtracting position vectors:\\begin{aligned} &\\vec{AB} = \\mathbf{b} - \\mathbf{a} \\cr &\\quad = (3\\mathbf{i} + \\mathbf{j} + 3\\mathbf{k}) \\cr &\\qquad - (\\mathbf{i} + 2\\mathbf{j}) \\cr &\\quad = 2\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k} \\end{aligned}and:\\begin{aligned} &\\vec{AC} = \\mathbf{c} - \\mathbf{a} \\cr &\\quad = (2\\mathbf{i} + 5\\mathbf{j} + 2\\mathbf{k}) \\cr &\\qquad - (\\mathbf{i} + 2\\mathbf{j}) \\cr &\\quad = \\mathbf{i} + 3\\mathbf{j} + 2\\mathbf{k} \\end{aligned}and:\\begin{aligned} &\\vec{BC} = \\mathbf{c} - \\mathbf{b} \\cr &\\quad = (2\\mathbf{i} + 5\\mathbf{j} + 2\\mathbf{k}) \\cr &\\qquad - (3\\mathbf{i} + \\mathbf{j} + 3\\mathbf{k}) \\cr &\\quad = -\\mathbf{i} + 4\\mathbf{j} - \\mathbf{k} \\end{aligned}",
-                "<strong>Step 2: Calculate the lengths of sides $AB$ and $AC$</strong><br>Using the 3D magnitude formula, find the side lengths of the triangle:\\begin{aligned} |\\vec{AB}| &= \\sqrt{2^2 + (-1)^2 + 3^2} \\cr &= \\sqrt{4 + 1 + 9} \\cr &= \\sqrt{14} \\end{aligned}and:\\begin{aligned} |\\vec{AC}| &= \\sqrt{1^2 + 3^2 + 2^2} \\cr &= \\sqrt{1 + 9 + 4} \\cr &= \\sqrt{14} \\end{aligned}",
-                "<strong>Step 3: Complete the proof for part (a)</strong><br>Since the side lengths $AB$ and $AC$ are exactly equal ($AB = AC = \\sqrt{14}$), the triangle $ABC$ has at least two equal sides. By definition, this proves that triangle $ABC$ is an isosceles triangle.",
-                "<strong>Step 4: Find the length of the third side $BC$ for part (b)</strong><br>Calculate the magnitude of the final displacement vector $\\vec{BC}$:\\begin{aligned} |\\vec{BC}| &= \\sqrt{(-1)^2 + 4^2 + (-1)^2} \\cr &= \\sqrt{1 + 16 + 1} \\cr &= \\sqrt{18} \\cr &= \\sqrt{9 \\cdot 2} \\cr &= 3\\sqrt{2} \\end{aligned}",
-                "<strong>Step 5: Calculate the perimeter of the triangle</strong><br>The perimeter is the sum of all three side lengths:\\begin{aligned} \\text{Perimeter} &= AB + AC + BC \\cr &= \\sqrt{14} + \\sqrt{14} + 3\\sqrt{2} \\cr &= 2\\sqrt{14} + 3\\sqrt{2} \\end{aligned}This is in the required form $a\\sqrt{14} + b\\sqrt{2}$ with integers $a = 2$ and $b = 3$.",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } AB = AC = \\sqrt{14} \\cr &\\quad\\implies \\triangle ABC \\text{ is isosceles} \\cr &\\text{(b) } \\text{Perimeter} = 2\\sqrt{14} + 3\\sqrt{2} \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "\\begin{aligned} &\\text{Perimeter} = 2\\sqrt{14} + 3\\sqrt{2} \\cr &\\text{Triangle is isosceles} \\end{aligned}",
-                        "feedback": "You successfully calculated the correct perimeter, but make sure you wrote a concluding sentence in part (a) explicitly stating that $AB = AC = \\sqrt{14}$ to earn the final communication mark for the proof."
-                },
-                {
-                        "ans": "\\begin{aligned} &\\text{Perimeter} = 2\\sqrt{14} + \\sqrt{18} \\cr &\\text{Triangle is isosceles} \\end{aligned}",
-                        "feedback": "You calculated the correct lengths, but you did not write the final expression in the exact simplified surd form required. You must simplify $\\sqrt{18}$ to $3\\sqrt{2}$ to match the form $a\\sqrt{14} + b\\sqrt{2}$."
-                },
-                {
-                        "ans": "\\begin{aligned} &\\text{Perimeter} = 2\\sqrt{12} + 3\\sqrt{2} \\cr &\\text{Triangle is isosceles} \\end{aligned}",
-                        "feedback": "You may have made an arithmetic error when calculating the magnitude of $\\vec{AB}$ or $\\vec{AC}$, perhaps by subtracting the components instead of adding them ($4 - 1 + 9 = 12$ instead of $4 + 1 + 9 = 14$)."
-                }
-        ],
-        "bradley_insight": {
-                "type": "pro-tip",
-                "title": "The Head Teacher's Eye: Simplifying Surds for Perimeters",
-                "content": "Whenever an exam question specifies a surd form like $a\\sqrt{14} + b\\sqrt{2}$, it is a strong hint that one of your calculated side lengths (such as $\\sqrt{18}$) can be simplified by factorising out a perfect square: $\\sqrt{18} = \\sqrt{9 \\cdot 2} = 3\\sqrt{2}$. Always simplify your surds fully before summing your perimeter terms."
-        }
-}, 
+  {
+    "id": "004431",
+    "group_id": "004431",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+      "Functions and Mappings"
+    ],
+    "img": false,
+    "question": "The function $g$ is defined by:\\begin{aligned} &g(x) = \\dfrac{3x + 1}{x - 1} \\cr &x \\ge 3 \\end{aligned}<strong>(a)</strong> Find $gg(3)$. [2]<br><br><strong>(b)</strong> State the range of $g$. [1]<br><br><strong>(c)</strong> Find $g^{-1}(x)$, stating its domain. [3]",
+    "steps": [
+      "<strong>Step 1: Evaluate the inner function for part (a)</strong><br>To evaluate the composite function $gg(3)$, first substitute $x = 3$ directly into the definition of $g(x)$:\\begin{aligned} g(3) &= \\dfrac{3(3) + 1}{3 - 1} \\cr &= \\dfrac{10}{2} \\cr &= 5 \\end{aligned}",
+      "<strong>Step 2: Evaluate the outer function to find $gg(3)$</strong><br>Now, substitute your result $5$ back into the function $g(x)$:\\begin{aligned} gg(3) &= g(5) \\cr &= \\dfrac{3(5) + 1}{5 - 1} \\cr &= \\dfrac{16}{4} \\cr &= 4 \\end{aligned}",
+      "<strong>Step 3: Analyze the behavior of the function for part (b)</strong><br>As $x \\to \\infty$, the rational function $g(x) = \\dfrac{3x + 1}{x - 1}$ approaches its horizontal asymptote:\\begin{aligned} y &\\to \\dfrac{3}{1} \\cr &= 3 \\end{aligned}Since the function is strictly decreasing for $x \\ge 3$, its maximum value occurs at the starting boundary $x = 3$, where $g(3) = 5$. Therefore, the range of outputs is restricted to:$$3 < g(x) \\le 5$$",
+      "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = g(x)$ and rearrange the equation to make $x$ the subject:\\begin{aligned} y &= \\dfrac{3x + 1}{x - 1} \\cr y(x - 1) &= 3x + 1 \\cr yx - y &= 3x + 1 \\end{aligned}",
+      "<strong>Step 5: Isolate and solve for $x$</strong><br>Group all terms containing $x$ on one side and factorise:\\begin{aligned} yx - 3x &= y + 1 \\cr x(y - 3) &= y + 1 \\cr x &= \\dfrac{y + 1}{y - 3} \\end{aligned}Replacing $y$ with $x$ yields:$$g^{-1}(x) = \\dfrac{x + 1}{x - 3}$$",
+      "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of the inverse function $g^{-1}(x)$ is identical to the range of the original function $g(x)$ calculated in Step 3:$$\\text{Domain: } 3 < x \\le 5$$",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } gg(3) = 4 \\cr &\\text{(b) } 3 < g(x) \\le 5 \\cr &\\text{(c) } g^{-1}(x) = \\dfrac{x + 1}{x - 3} \\cr &\\quad\\text{Domain: } 3 < x \\le 5 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } gg(3) = 4 \\cr &\\text{(b) } 3 < g(x) \\le 5 \\cr &\\text{(c) } g^{-1}(x) = \\dfrac{x + 1}{x - 3} \\cr &\\quad\\text{Domain: } x \\ge 3 \\end{aligned}",
+        "feedback": "Your calculation for part (a) is correct. However, for part (c), you assumed the domain of the inverse is the same as the domain of the original function. The domain of $g^{-1}(x)$ must equal the range of $g(x)$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } gg(3) = 5 \\cr &\\text{(b) } g(x) \\neq 3 \\cr &\\text{(c) } g^{-1}(x) = \\dfrac{x + 1}{x - 3} \\cr &\\quad\\text{Domain: } x \\neq 3 \\end{aligned}",
+        "feedback": "In part (a), you only calculated $g(3)$ and forgot the second application of the function. In part (c), you identified the algebraic restriction $x \\neq 3$ but ignored the bounds created by the original domain $x \\ge 3$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } gg(3) = 4 \\cr &\\text{(b) } 3 \\le g(x) \\le 5 \\cr &\\text{(c) } g^{-1}(x) = \\dfrac{x + 1}{x - 3} \\cr &\\quad\\text{Domain: } 3 \\le x \\le 5 \\end{aligned}",
+        "feedback": "In part (b), you used a non-strict inequality for the lower bound. Since $y=3$ is a horizontal asymptote that the curve never actually reaches, the range (and inverse domain) must be strictly $x > 3$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Mapping Domains and Ranges",
+      "content": "Always remember the golden rule of inverse functions: the domain of $g^{-1}(x)$ is exactly equal to the range of $g(x)$, and the range of $g^{-1}(x)$ is exactly equal to the domain of $g(x)$. Never attempt to find the domain of an inverse function simply by looking at its algebraic expression; you must evaluate the output boundaries of your original function."
+    }
+  },
+  {
+    "id": "004432",
+    "group_id": "004431",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+      "Functions and Mappings"
+    ],
+    "img": false,
+    "question": "The function $h$ is defined by:\\begin{aligned} &h(x) = \\dfrac{4x + 2}{x - 2} \\cr &x \\ge 3 \\end{aligned}<strong>(a)</strong> Find $hh(3)$. [2]<br><br><strong>(b)</strong> State the range of $h$. [1]<br><br><strong>(c)</strong> Find $h^{-1}(x)$, stating its domain. [3]",
+    "steps": [
+      "<strong>Step 1: Evaluate the inner function for part (a)</strong><br>To find the composite function value $hh(3)$, first substitute $x = 3$ into the function $h(x)$:\\begin{aligned} h(3) &= \\dfrac{4(3) + 2}{3 - 2} \\cr &= \\dfrac{14}{1} \\cr &= 14 \\end{aligned}",
+      "<strong>Step 2: Evaluate the outer function to find $hh(3)$</strong><br>Now, substitute $14$ back into the function $h(x)$:\\begin{aligned} hh(3) &= h(14) \\cr &= \\dfrac{4(14) + 2}{14 - 2} \\cr &= \\dfrac{58}{12} \\cr &= \\dfrac{29}{6} \\end{aligned}",
+      "<strong>Step 3: Determine the range of $h$ for part (b)</strong><br>As $x \\to \\infty$, the rational function $h(x) = \\dfrac{4x + 2}{x - 2} approaches its horizontal asymptote:\\begin{aligned} y &\\to \\dfrac{4}{1} \\cr &= 4 \\end{aligned}Since the function is continuous and decreasing for $x \\ge 3$, its maximum value occurs at the boundary $x = 3$, where $h(3) = 14$. Thus, the range of $h$ is restricted to:$$4 < h(x) \\le 14$$",
+      "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = h(x)$ and rearrange the expression to make $x$ the subject:\\begin{aligned} y &= \\dfrac{4x + 2}{x - 2} \\cr y(x - 2) &= 4x + 2 \\cr yx - 2y &= 4x + 2 \\end{aligned}",
+      "<strong>Step 5: Isolate and solve for $x$</strong><br>Move all terms containing $x$ to one side and factorise:\\begin{aligned} yx - 4x &= 2y + 2 \\cr x(y - 4) &= 2(y + 1) \\cr x &= \\dfrac{2y + 2}{y - 4} \\end{aligned}Replacing $y$ with $x$ gives:$$h^{-1}(x) = \\dfrac{2x + 2}{x - 4}$$",
+      "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of $h^{-1}(x)$ is equal to the range of the original function $h(x)$ calculated in Step 3:$$\\text{Domain: } 4 < x \\le 14$$",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } hh(3) = \\dfrac{29}{6} \\cr &\\text{(b) } 4 < h(x) \\le 14 \\cr &\\text{(c) } h^{-1}(x) = \\dfrac{2x + 2}{x - 4} \\cr &\\quad\\text{Domain: } 4 < x \\le 14 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } hh(3) = \\dfrac{29}{6} \\cr &\\text{(b) } 4 < h(x) \\le 14 \\cr &\\text{(c) } h^{-1}(x) = \\dfrac{2x + 2}{x - 4} \\cr &\\quad\\text{Domain: } x \\ge 3 \\end{aligned}",
+        "feedback": "Parts (a) and (b) are correct, but for part (c), you correctly found the inverse expression but incorrectly stated the domain of the original function instead of its range."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } hh(3) = 14 \\cr &\\text{(b) } h(x) \\neq 4 \\cr &\\text{(c) } h^{-1}(x) = \\dfrac{2x + 2}{x - 4} \\cr &\\quad\\text{Domain: } x \\neq 4 \\end{aligned}",
+        "feedback": "In part (a), you only calculated the first stage of the composition. In part (c), you provided the algebraic domain of the expression rather than the domain restricted by the original function's range."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } hh(3) = \\dfrac{29}{6} \\cr &\\text{(b) } 4 \\le h(x) \\le 14 \\cr &\\text{(c) } h^{-1}(x) = \\dfrac{2x + 2}{x - 4} \\cr &\\quad\\text{Domain: } 4 \\le x \\le 14 \\end{aligned}",
+        "feedback": "Your calculation for part (a) is correct. In part (b) and (c), however, you must use a strict inequality for the lower bound because the function never actually reaches its horizontal asymptote at $y=4$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Finding Horizontal Asymptotes",
+      "content": "For a rational function of the form $y = \\dfrac{ax + b}{cx + d}$, the horizontal asymptote as $x \\to \\infty$ is always given by the ratio of the leading coefficients, $y = \\dfrac{a}{c}$. Recognizing this allows you to instantly determine the lower limit (or upper limit) of your range without needing to sketch a complex graph."
+    }
+  },
+  {
+    "id": "004433",
+    "group_id": "004431",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Exponentials and Logarithms",
+    "topic": "Functions",
+    "subtopic": [
+      "Exponential and Logarithmic Functions and Graphs",
+      "Functions and Mappings"
+    ],
+    "img": false,
+    "question": "The functions $f$ and $g$ are defined by:\\begin{aligned} &f(x) = \\ln(x - 2) \\cr &\\quad x > 3 \\cr &g(x) = \\mathrm{e}^{2x} + 2 \\cr &\\quad x \\in \\mathbb{R} \\end{aligned}<strong>(a)</strong> Find an expression for the composite function $fg(x)$, writing your answer in its simplest form. [2]<br><br><strong>(b)</strong> State the range of $f$. [1]<br><br><strong>(c)</strong> Find $f^{-1}(x)$, stating its domain. [3]",
+    "steps": [
+      "<strong>Step 1: Set up the composite function for part (a)</strong><br>To find the composite function $fg(x)$, substitute the entire expression of $g(x)$ as the input inside $f(x)$:\\begin{aligned} fg(x) &= f(g(x)) \\cr &= \\ln((\\mathrm{e}^{2x} + 2) - 2) \\end{aligned}",
+      "<strong>Step 2: Simplify the composite expression</strong><br>Simplify the terms inside the natural logarithm:\\begin{aligned} fg(x) &= \\ln(\\mathrm{e}^{2x}) \\cr &= 2x \\end{aligned}",
+      "<strong>Step 3: Determine the range of $f$ for part (b)</strong><br>Since the domain of $f(x) = \\ln(x - 2)$ is $x > 3$, evaluate the boundary value:\\begin{aligned} f(3) &= \\ln(3 - 2) \\cr &= \\ln(1) \\cr &= 0 \\end{aligned}Since $\\ln(x - 2)$ is a strictly increasing function, for all $x > 3$, $f(x)$ will be greater than $0$. Thus, the range of $f$ is:$$f(x) > 0$$",
+      "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = f(x)$ and rearrange the logarithmic equation to solve for $x$:\\begin{aligned} y &= \\ln(x - 2) \\cr \\mathrm{e}^y &= x - 2 \\end{aligned}",
+      "<strong>Step 5: Solve for $x$ to find the inverse</strong><br>Isolate $x$ on one side:\\begin{aligned} x &= \\mathrm{e}^y + 2 \\end{aligned}Replacing $y$ with $x$ gives:$$f^{-1}(x) = \\mathrm{e}^x + 2$$",
+      "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of $f^{-1}(x)$ is equal to the range of the original function $f(x)$ calculated in Step 3:$$\\text{Domain: } x > 0$$",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } fg(x) = 2x \\cr &\\text{(b) } f(x) > 0 \\cr &\\text{(c) } f^{-1}(x) = \\mathrm{e}^x + 2 \\cr &\\quad\\text{Domain: } x > 0 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } fg(x) = 2x \\cr &\\text{(b) } f(x) > 0 \\cr &\\text{(c) } f^{-1}(x) = \\mathrm{e}^x + 2 \\cr &\\quad\\text{Domain: } x > 3 \\end{aligned}",
+        "feedback": "Parts (a) and (b) are correct. In part (c), you correctly found the inverse but erroneously used the domain of $f$ as the domain of $f^{-1}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } fg(x) = \\ln(e^{2x}) \\cr &\\text{(b) } f(x) > 0 \\cr &\\text{(c) } f^{-1}(x) = \\mathrm{e}^{x + 2} \\cr &\\quad\\text{Domain: } x > 0 \\end{aligned}",
+        "feedback": "In part (a), you did not provide the simplest form. In part (c), you incorrectly applied the addition of 2 inside the exponential power instead of as a separate constant term."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } fg(x) = 2x \\cr &\\text{(b) } f(x) < 0 \\cr &\\text{(c) } f^{-1}(x) = \\mathrm{e}^x - 2 \\cr &\\quad\\text{Domain: } x > 0 \\end{aligned}",
+        "feedback": "In part (b), you reversed the inequality; $f(x)$ is increasing. In part (c), you made a sign error when rearranging the equation to isolate $x$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Exponential and Logarithmic Inverses",
+      "content": "Since logarithmic and exponential functions are inverses of each other, applying $\\mathrm{e}$ to both sides of an equation is the standard way to clear a natural logarithm $\\ln$. Always make sure to isolate the $\\ln$ term entirely before raising both sides to the power of $\\mathrm{e}$."
+    }
+  },
+  {
+    "id": "004434",
+    "group_id": "004431",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+      "Functions and Mappings",
+      "Quadratics"
+    ],
+    "img": false,
+    "question": "The function $f$ is defined by:\\begin{aligned} &f(x) = x^2 - 4x + 9 \\cr &x \\ge 2 \\end{aligned}<strong>(a)</strong> Find $ff(3)$. [2]<br><br><strong>(b)</strong> State the range of $f$. [1]<br><br><strong>(c)</strong> Find $f^{-1}(x)$, stating its domain. [3]",
+    "steps": [
+      "<strong>Step 1: Evaluate the inner function for part (a)</strong><br>To find the composite function value $ff(3)$, first evaluate the function at $x = 3$:\\begin{aligned} f(3) &= 3^2 - 4(3) + 9 \\cr &= 9 - 12 + 9 \\cr &= 6 \\end{aligned}",
+      "<strong>Step 2: Evaluate the outer function to find $ff(3)$</strong><br>Now, substitute your result $6$ back into the function $f(x)$:\\begin{aligned} ff(3) &= f(6) \\cr &= 6^2 - 4(6) + 9 \\cr &= 36 - 24 + 9 \\cr &= 21 \\end{aligned}",
+      "<strong>Step 3: Determine the range of $f$ for part (b)</strong><br>To find the range of the quadratic function $f(x) = x^2 - 4x + 9$, complete the square to locate its vertex:\\begin{aligned} f(x) &= (x - 2)^2 - 4 + 9 \\cr &= (x - 2)^2 + 5 \\end{aligned}Since $x \\ge 2$, the term $(x - 2)^2 \\ge 0$, meaning the minimum value of $f(x)$ is $5$. The range of $f$ is:$$f(x) \\ge 5$$",
+      "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = f(x)$ and use the completed square form to rearrange for $x$:\\begin{aligned} y &= (x - 2)^2 + 5 \\cr y - 5 &= (x - 2)^2 \\end{aligned}",
+      "<strong>Step 5: Solve for $x$ to find the inverse</strong><br>Take the square root of both sides. Since our domain is restricted to $x \\ge 2$, we take the positive square root:\\begin{aligned} x - 2 &= \\sqrt{y - 5} \\cr x &= 2 + \\sqrt{y - 5} \\end{aligned}Replacing $y$ with $x$ yields:$$f^{-1}(x) = 2 + \\sqrt{x - 5}$$",
+      "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of $f^{-1}(x)$ is equal to the range of the original function $f(x)$ calculated in Step 3:$$\\text{Domain: } x \\ge 5$$",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } ff(3) = 21 \\cr &\\text{(b) } f(x) \\ge 5 \\cr &\\text{(c) } f^{-1}(x) = 2 + \\sqrt{x - 5} \\cr &\\quad\\text{Domain: } x \\ge 5 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } ff(3) = 21 \\cr &\\text{(b) } f(x) \\ge 5 \\cr &\\text{(c) } f^{-1}(x) = 2 + \\sqrt{x - 5} \\cr &\\quad\\text{Domain: } x \\ge 2 \\end{aligned}",
+        "feedback": "Parts (a) and (b) are correct. For part (c), you must remember that the domain of an inverse function is strictly defined by the range of the original function, which is $x \ge 5$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } ff(3) = 6 \\cr &\\text{(b) } f(x) \\ge 5 \\cr &\\text{(c) } f^{-1}(x) = 2 - \\sqrt{x - 5} \\cr &\\quad\\text{Domain: } x \\ge 5 \\end{aligned}",
+        "feedback": "In part (a), you only calculated $f(3)$. In part (c), because the original domain is $x \ge 2$, the term $x-2$ is positive, so you must use the positive square root for the inverse."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } ff(3) = 21 \\cr &\\text{(b) } f(x) \\ge 9 \\cr &\\text{(c) } f^{-1}(x) = 2 + \\sqrt{x + 5} \\cr &\\quad\\text{Domain: } x \\ge 5 \\end{aligned}",
+        "feedback": "In part (b), you likely used the constant term 9 as the range boundary instead of finding the vertex. In part (c), you made a sign error when rearranging the equation."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Completing the Square for Inverses",
+      "content": "To find the inverse of a quadratic function, you cannot easily rearrange $y = ax^2 + bx + c$ directly. You must first complete the square to write it in the form $y = a( x - h )^2 + k$. This allows you to isolate the squared bracket and cleanly take the square root."
+    }
+  },
+  {
+    "id": "004435",
+    "group_id": "004431",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Algebra and Functions",
+    "topic": "Functions",
+    "subtopic": [
+      "Functions and Mappings"
+    ],
+    "img": false,
+    "question": "The function $g$ is defined by:\\begin{aligned} &g(x) = 1 + \\sqrt{x - 3} \\cr &x \\ge 3 \\end{aligned}<strong>(a)</strong> Find $gg(7)$. [2]<br><br><strong>(b)</strong> State the range of $g$. [1]<br><br><strong>(c)</strong> Find $g^{-1}(x)$, stating its domain. [3]",
+    "steps": [
+      "<strong>Step 1: Evaluate the inner function for part (a)</strong><br>To evaluate the composite function $gg(7)$, first find the value of $g(7)$ by substituting $x = 7$:\\begin{aligned} g(7) &= 1 + \\sqrt{7 - 3} \\cr &= 1 + \\sqrt{4} \\cr &= 1 + 2 \\cr &= 3 \\end{aligned}",
+      "<strong>Step 2: Evaluate the outer function to find $gg(7)$</strong><br>Now substitute $3$ back into the function $g(x)$:\\begin{aligned} gg(7) &= g(3) \\cr &= 1 + \\sqrt{3 - 3} \\cr &= 1 + 0 \\cr &= 1 \\end{aligned}",
+      "<strong>Step 3: Determine the range of $g$ for part (b)</strong><br>For $x \\ge 3$, the square root term $\\sqrt{x - 3}$ is always non-negative ($\\ge 0$). Thus, the minimum value of $g(x)$ occurs when $\\sqrt{x - 3} = 0$, which yields $g(3) = 1$. The range of $g$ is:$$g(x) \\ge 1$$",
+      "<strong>Step 4: Set up the inverse function equation for part (c)</strong><br>Let $y = g(x)$ and rearrange the radical equation to solve for $x$:\\begin{aligned} y &= 1 + \\sqrt{x - 3} \\cr y - 1 &= \\sqrt{x - 3} \\end{aligned}",
+      "<strong>Step 5: Square both sides and isolate $x$</strong><br>Square both sides of the equation to eliminate the radical:\\begin{aligned} (y - 1)^2 &= x - 3 \\cr x &= (y - 1)^2 + 3 \\end{aligned}Replacing $y$ with $x$ yields:$$g^{-1}(x) = (x - 1)^2 + 3$$",
+      "<strong>Step 6: State the domain of the inverse function</strong><br>The domain of $g^{-1}(x)$ is equal to the range of the original function $g(x)$ calculated in Step 3:$$\\text{Domain: } x \\ge 1$$",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } gg(7) = 1 \\cr &\\text{(b) } g(x) \\ge 1 \\cr &\\text{(c) } g^{-1}(x) = (x - 1)^2 + 3 \\cr &\\quad\\text{Domain: } x \\ge 1 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } gg(7) = 1 \\cr &\\text{(b) } g(x) \\ge 1 \\cr &\\text{(c) } g^{-1}(x) = (x - 1)^2 + 3 \\cr &\\quad\\text{Domain: } x \\ge 3 \\end{aligned}",
+        "feedback": "Parts (a) and (b) are correct. In part (c), you correctly calculated the inverse expression but mistakenly reused the domain of the original function as the domain for $g^{-1}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } gg(7) = 3 \\cr &\\text{(b) } g(x) \\ge 1 \\cr &\\text{(c) } g^{-1}(x) = (x + 1)^2 + 3 \\cr &\\quad\\text{Domain: } x \\ge 1 \\end{aligned}",
+        "feedback": "In part (a), you stopped after the first stage. In part (c), you made a sign error when moving the 1 to the other side of the equation before squaring."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } gg(7) = 1 \\cr &\\text{(b) } g(x) \\ge 3 \\cr &\\text{(c) } g^{-1}(x) = (x - 1)^2 - 3 \\cr &\\quad\\text{Domain: } x \\ge 1 \\end{aligned}",
+        "feedback": "In part (b), you used the domain boundary as the range boundary. In part (c), you made a sign error when isolating $x$ at the final step."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Restricting Quadratic Inverses",
+      "content": "A quadratic function is normally many-to-one, meaning it does not have a unique inverse. However, the inverse $g^{-1}(x) = ( x - 1 )^2 + 3$ is valid here because its domain is strictly restricted to $x \\ge 1$. This restriction ensures that the inverse corresponds exactly to the one-to-one radical branch of our original function."
+    }
+  },
+  {
+    "id": "004436",
+    "group_id": "004436",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Vectors",
+    "topic": "Vectors",
+    "subtopic": [
+      "Vector Properties"
+    ],
+    "img": false,
+    "question": "Relative to a fixed origin $O$, the point $A$ has position vector $(3\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k})$, the point $B$ has position vector $(5\\mathbf{i} - \\mathbf{j} + 4\\mathbf{k})$, and the point $C$ has position vector $(p\\mathbf{i} + 4\\mathbf{j} - \\mathbf{k})$, where $p$ is a constant and $p < 0$. $D$ is the point such that $\\vec{AB} = \\vec{BD}$.<br><br><strong>(a)</strong> Find the position vector of $D$. [2]<br><br><strong>(b)</strong> Given that $|\\vec{AC}| = 5$, find the value of $p$. [3]",
+    "steps": [
+      "<strong>Step 1: Calculate the displacement vector $\\vec{AB}$ for part (a)</strong><br>Subtract the position vector of $A$ from the position vector of $B$:\\begin{aligned} &\\vec{AB} = \\mathbf{b} - \\mathbf{a} \\cr &\\quad = (5\\mathbf{i} - \\mathbf{j} + 4\\mathbf{k}) \\cr &\\qquad - (3\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k}) \\cr &\\quad = 2\\mathbf{i} - 2\\mathbf{j} + 6\\mathbf{k} \\end{aligned}",
+      "<strong>Step 2: Solve for the position vector of $D$</strong><br>Since $\\vec{AB} = \\vec{BD}$, the point $B$ is the midpoint of the line segment $AD$. We can find the position vector of $D$ by adding $\\vec{AB}$ to the position vector of $B$:\\begin{aligned} &\\mathbf{d} = \\mathbf{b} + \\vec{BD} \\cr &\\quad = \\mathbf{b} + \\vec{AB} \\cr &\\quad = (5\\mathbf{i} - \\mathbf{j} + 4\\mathbf{k}) \\cr &\\qquad + (2\\mathbf{i} - \\mathbf{j} + 6\\mathbf{k}) \\cr &\\quad = 7\\mathbf{i} - 3\\mathbf{j} + 10\\mathbf{k} \\end{aligned}",
+      "<strong>Step 3: Express the displacement vector $\\vec{AC}$ for part (b)</strong><br>Subtract the position vector of $A$ from the position vector of $C$:\\begin{aligned} &\\vec{AC} = \\mathbf{c} - \\mathbf{a} \\cr &\\quad = (p\\mathbf{i} + 4\\mathbf{j} - \\mathbf{k}) \\cr &\\qquad - (3\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k}) \\cr &\\quad = (p - 3)\\mathbf{i} + 3\\mathbf{j} + \\mathbf{k} \\end{aligned}",
+      "<strong>Step 4: Set up the magnitude equation</strong><br>The magnitude of a vector $\\mathbf{v} = x\\mathbf{i} + y\\mathbf{j} + z\\mathbf{k}$ is $|\\mathbf{v}| = \\sqrt{x^2 + y^2 + z^2}$. Set the squared magnitude of $\\vec{AC}$ equal to $5^2$:\\begin{aligned} |\\vec{AC}|^2 &= (p - 3)^2 + 3^2 + 1^2 \\cr 5^2 &= (p - 3)^2 + 9 + 1 \\cr 25 &= (p - 3)^2 + 10 \\end{aligned}",
+      "<strong>Step 5: Solve the quadratic equation for $p$</strong><br>Isolate the squared term and solve:\\begin{aligned} (p - 3)^2 &= 15 \\cr p - 3 &= \\pm\\sqrt{15} \\cr p &= 3 \\pm \\sqrt{15} \\end{aligned}Since the question specifies that $p < 0$, we must discard the positive root, leaving us with:$$p = 3 - \\sqrt{15}$$",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } \\mathbf{d} = 7\\mathbf{i} - 3\\mathbf{j} + 10\\mathbf{k} \\cr &\\text{(b) } p = 3 - \\sqrt{15} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } \\mathbf{d} = 7\\mathbf{i} - 3\\mathbf{j} + 10\\mathbf{k} \\cr &\\text{(b) } p = 3 + \\sqrt{15} \\end{aligned}",
+        "feedback": "Your vector for part (a) is correct, but for part (b), you failed to apply the constraint $p < 0$. $3 + \\sqrt{15}$ is positive, so only the negative root is valid."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } \\mathbf{d} = 7\\mathbf{i} - 3\\mathbf{j} + 10\\mathbf{k} \\cr &\\text{(b) } p = 3 - \\sqrt{5} \\end{aligned}",
+        "feedback": "Check your arithmetic in part (b). When calculating the constant term in the magnitude equation, $3^2 + 1^2 = 10$. Subtracting this from 25 gives 15, not 5."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } \\mathbf{d} = 2\\mathbf{i} - 2\\mathbf{j} + 6\\mathbf{k} \\cr &\\text{(b) } p = 3 - \\sqrt{15} \\end{aligned}",
+        "feedback": "In part (a), you provided the displacement vector $\\vec{AB}$ as the position vector of $D$. You must add this displacement to point $B$ to find the final position of $D$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Displacement vs. Position Vectors",
+      "content": "Always distinguish between a displacement vector (the vector path from one point to another, like $\\vec{ AB }$) and a position vector (the coordinates of a point relative to the origin, like $\\mathbf{ a }$ or $\\mathbf{ d }$)."
+    }
+  },
+  {
+    "id": "004437",
+    "group_id": "004436",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Vectors",
+    "topic": "Vectors",
+    "subtopic": [
+      "Vector Properties"
+    ],
+    "img": false,
+    "question": "Relative to a fixed origin $O$, the point $A$ has position vector $(\\mathbf{i} + 4\\mathbf{j} - 3\\mathbf{k})$, the point $B$ has position vector $(3\\mathbf{i} + \\mathbf{j} + 2\\mathbf{k})$, and the point $C$ has position vector $(5\\mathbf{i} + q\\mathbf{j} + \\mathbf{k})$, where $q$ is a constant and $q > 0$. $D$ is the point such that $\\vec{AD} = 3\\vec{AB}$.<br><br><strong>(a)</strong> Find the position vector of $D$. [2]<br><br><strong>(b)</strong> Given that $|\\vec{BC}| = \\sqrt{21}$, find the value of $q$. [3]",
+    "steps": [
+      "<strong>Step 1: Calculate the displacement vector $\\vec{AB}$ for part (a)</strong><br>Subtract the position vector of $A$ from the position vector of $B$:\\begin{aligned} &\\vec{AB} = \\mathbf{b} - \\mathbf{a} \\cr &\\quad = (3\\mathbf{i} + \\mathbf{j} + 2\\mathbf{k}) \\cr &\\qquad - (\\mathbf{i} + 4\\mathbf{j} - 3\\mathbf{k}) \\cr &\\quad = 2\\mathbf{i} - 3\\mathbf{j} + 5\\mathbf{k} \\end{aligned}",
+      "<strong>Step 2: Find the position vector of $D$</strong><br>Multiply $\\vec{AB}$ by $3$ to find the displacement vector $\\vec{AD}$:\\begin{aligned} \\vec{AD} &= 3\\vec{AB} \\cr &= 3(2\\mathbf{i} - 3\\mathbf{j} + 5\\mathbf{k}) \\cr &= 6\\mathbf{i} - 9\\mathbf{j} + 15\\mathbf{k} \\end{aligned}Now, add $\\vec{AD}$ to the position vector of $A$ to obtain the position vector of $D$:\\begin{aligned} &\\mathbf{d} = \\mathbf{a} + \\vec{AD} \\cr &\\quad = (\\mathbf{i} + 4\\mathbf{j} - 3\\mathbf{k}) \\cr &\\qquad + (6\\mathbf{i} - 9\\mathbf{j} + 15\\mathbf{k}) \\cr &\\quad = 7\\mathbf{i} - 5\\mathbf{j} + 12\\mathbf{k} \\end{aligned}",
+      "<strong>Step 3: Express the displacement vector $\\vec{BC}$ for part (b)</strong><br>Subtract the position vector of $B$ from the position vector of $C$:\\begin{aligned} &\\vec{BC} = \\mathbf{c} - \\mathbf{b} \\cr &\\quad = (5\\mathbf{i} + q\\mathbf{j} + \\mathbf{k}) \\cr &\\qquad - (3\\mathbf{i} + \\mathbf{j} + 2\\mathbf{k}) \\cr &\\quad = 2\\mathbf{i} + (q - 1)\\mathbf{j} - \\mathbf{k} \\end{aligned}",
+      "<strong>Step 4: Set up the magnitude equation</strong><br>Use the 3D magnitude formula and square both sides to remove the square root, setting $|\\vec{BC}|^2 = (\\sqrt{21})^2$:\\begin{aligned} |\\vec{BC}|^2 &= 2^2 + (q - 1)^2 + (-1)^2 \\cr 21 &= 4 + (q - 1)^2 + 1 \\cr 21 &= (q - 1)^2 + 5 \\end{aligned}",
+      "<strong>Step 5: Solve the quadratic equation for $q$</strong><br>Isolate the squared term and solve for $q$:\\begin{aligned} (q - 1)^2 &= 16 \\cr q - 1 &= \\pm 4 \\cr q &= 1 \\pm 4 \\end{aligned}This yields two potential values: $q = 5$ or $q = -3$. Since the question specifies that $q > 0$, we discard $q = -3$ to get:$$q = 5$$",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } \\mathbf{d} = 7\\mathbf{i} - 5\\mathbf{j} + 12\\mathbf{k} \\cr &\\text{(b) } q = 5 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } \\mathbf{d} = 7\\mathbf{i} - 5\\mathbf{j} + 12\\mathbf{k} \\cr &\\text{(b) } q = 5 \\text{ or } q = -3 \\end{aligned}",
+        "feedback": "While your work in part (a) is correct, for part (b) you must discard the negative root because the question explicitly specifies that $q > 0$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } \\mathbf{d} = 6\\mathbf{i} - 9\\mathbf{j} + 15\\mathbf{k} \\cr &\\text{(b) } q = 5 \\end{aligned}",
+        "feedback": "In part (a), you provided the displacement vector $\\vec{AD}$. Position vectors are measured from the origin, so you must add $\\vec{AD}$ to the position vector of $A$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } \\mathbf{d} = 7\\mathbf{i} - 5\\mathbf{j} + 12\\mathbf{k} \\cr &\\text{(b) } q = 1 + \\sqrt{17} \\end{aligned}",
+        "feedback": "Check your magnitude algebra for part (b). $2^2 + (-1)^2 = 5$. Subtracting this from 21 gives 16, which is a perfect square. It appears you made a subtraction or component-squaring error."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Tracking Scaling Reference Points",
+      "content": "When a vector scaling relation is defined as $\\vec{ AD } = 3\\vec{ AB }$, always remember that the starting point of the path is $A$. Therefore, the position vector of $D$ must be found relative to $A$, which means $\\mathbf{ d } = \\mathbf{ a } + 3\\vec{ AB }$. Adding the scaled vector to $\\mathbf{ b }$ instead of $\\mathbf{ a }$ is a very common source of lost marks."
+    }
+  },
+  {
+    "id": "004438",
+    "group_id": "004436",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Vectors",
+    "topic": "Vectors",
+    "subtopic": [
+      "Vector Properties"
+    ],
+    "img": false,
+    "question": "Relative to a fixed origin $O$, the points $A$ and $B$ have position vectors:\\begin{aligned} \\mathbf{a} &= 4\\mathbf{i} - 2\\mathbf{j} + \\lambda\\mathbf{k} \\cr \\mathbf{b} &= 2\\mathbf{i} + 3\\mathbf{j} - \\mathbf{k} \\end{aligned}where $\\lambda$ is a constant.<br><br><strong>(a)</strong> Find the vector $\\vec{AB}$ in terms of $\\lambda$. [2]<br><br><strong>(b)</strong> Given that the vector $\\vec{AB}$ is perpendicular to the vector $\\mathbf{u} = 2\\mathbf{i} + 2\\mathbf{j} + 3\\mathbf{k}$, find the value of $\\lambda$. [3]",
+    "steps": [
+      "<strong>Step 1: Calculate the displacement vector $\\vec{AB}$ in terms of $\\lambda$</strong><br>Subtract the position vector of $A$ from the position vector of $B$:\\begin{aligned} &\\vec{AB} = \\mathbf{b} - \\mathbf{a} \\cr &\\quad = (2\\mathbf{i} + 3\\mathbf{j} - \\mathbf{k}) \\cr &\\qquad - (4\\mathbf{i} - 2\\mathbf{j} + \\lambda\\mathbf{k}) \\cr &\\quad = -2\\mathbf{i} + 5\\mathbf{j} - (1 + \\lambda)\\mathbf{k} \\end{aligned}",
+      "<strong>Step 2: Understand the condition for perpendicular vectors</strong><br>Two vectors are perpendicular if and only if their scalar (dot) product is exactly equal to zero:$$\\vec{AB} \\cdot \\mathbf{u} = 0$$",
+      "<strong>Step 3: Calculate the dot product</strong><br>Multiply the corresponding components of $\\vec{AB}$ and $\\mathbf{u}$ and add them together:\\begin{aligned} &\\vec{AB} \\cdot \\mathbf{u} \\cr &\\quad = (-2)(2) + (5)(2) \\cr &\\qquad - 3(1 + \\lambda) \\cr &\\quad = -4 + 10 - 3 - 3\\lambda \\cr &\\quad = 3 - 3\\lambda \\end{aligned}",
+      "<strong>Step 4: Solve for $\\lambda$</strong><br>Set the scalar product equal to zero and solve the linear equation:\\begin{aligned} 3 - 3\\lambda &= 0 \\cr 3\\lambda &= 3 \\cr \\lambda &= 1 \\end{aligned}",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } \\vec{AB} = -2\\mathbf{i} + 5\\mathbf{j} - (1 + \\lambda)\\mathbf{k} \\cr &\\text{(b) } \\lambda = 1 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } \\vec{AB} = -2\\mathbf{i} + 5\\mathbf{j} - (1 + \\lambda)\\mathbf{k} \\cr &\\text{(b) } \\lambda = -1 \\end{aligned}",
+        "feedback": "You correctly found $\\vec{AB}$ but made a sign error when solving the dot product equation $3 - 3\\lambda = 0$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } \\vec{AB} = -2\\mathbf{i} + 5\\mathbf{j} - (1 + \\lambda)\\mathbf{k} \\cr &\\text{(b) } \\lambda = 3 \\end{aligned}",
+        "feedback": "Check your expansion of the dot product in part (b). Specifically, make sure you distributed the constant 3 correctly across $(1 + \\lambda)$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } \\vec{AB} = 2\\mathbf{i} - 5\\mathbf{j} + (1 + \\lambda)\\mathbf{k} \\cr &\\text{(b) } \\lambda = 1 \\end{aligned}",
+        "feedback": "In part (a), you subtracted the vectors in the wrong order. The displacement from $A$ to $B$ is always terminal minus initial: $\\mathbf{b} - \\mathbf{a}$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Perpendicular Dot Product",
+      "content": "The scalar product (dot product) is the most standard tool for proving or utilizing perpendicularity in vector geometry. Always remember: $\\mathbf{ a } \\cdot \\mathbf{ b } = 0 \\iff \\mathbf{ a } \\perp \\mathbf{ b }$."
+    }
+  },
+  {
+    "id": "004439",
+    "group_id": "004436",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Vectors",
+    "topic": "Vectors",
+    "subtopic": [
+      "Vector Properties"
+    ],
+    "img": false,
+    "question": "The points $A$, $B$, and $C$ have position vectors relative to a fixed origin $O$ given by:\\begin{aligned} \\mathbf{a} &= 2\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k} \\cr \\mathbf{b} &= 5\\mathbf{i} + 5\\mathbf{j} - \\mathbf{k} \\cr \\mathbf{c} &= \\mu\\mathbf{i} + 13\\mathbf{j} - 11\\mathbf{k} \\end{aligned}where $\\mu$ is a constant.<br><br><strong>(a)</strong> Given that the points $A$, $B$, and $C$ lie on a straight line, find the value of the constant $\\mu$. [4]<br><br><strong>(b)</strong> Find the ratio in which the point $B$ divides the line segment $AC$. [2]",
+    "steps": [
+      "<strong>Step 1: Calculate the displacement vectors $\\vec{AB}$ and $\\vec{AC}$ for part (a)</strong><br>Subtract the corresponding coordinates to find the vectors:\\begin{aligned} &\\vec{AB} = \\mathbf{b} - \\mathbf{a} \\cr &\\quad = (5\\mathbf{i} + 5\\mathbf{j} - 3\\mathbf{k}) \\cr &\\qquad - (2\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k}) \\cr &\\quad = 3\\mathbf{i} + 6\\mathbf{j} - 6\\mathbf{k} \\end{aligned}and:\\begin{aligned} &\\vec{AC} = \\mathbf{c} - \\mathbf{a} \\cr &\\quad = (\\mu\\mathbf{i} + 13\\mathbf{j} - 11\\mathbf{k}) \\cr &\\qquad - (2\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k}) \\cr &\\quad = (\\mu - 2)\\mathbf{i} \\cr &\\qquad + 14\\mathbf{j} - 14\\mathbf{k} \\end{aligned}",
+      "<strong>Step 2: Apply the condition for collinear points</strong><br>For points $A$, $B$, and $C$ to lie on a straight line (collinear), the displacement vectors $\\vec{AB}$ and $\\vec{AC}$ must be parallel. This means there exists a scalar constant $k$ such that:$$\\vec{AC} = k\\vec{AB}$$",
+      "<strong>Step 3: Solve for $k$ using the known components</strong><br>Compare the $\\mathbf{j}$ components of the two vectors:\\begin{aligned} 14 &= 6k \\cr k &= \\dfrac{14}{6} \\cr &= \\dfrac{7}{3} \\end{aligned}Comparing the $\\mathbf{k}$ components confirms consistency:\\begin{aligned} -14 &= -6k \\cr k &= \\dfrac{-14}{-6} \\cr &= \\dfrac{7}{3} \\end{aligned}",
+      "<strong>Step 4: Solve for the constant $\\mu$</strong><br>Equate the $\\mathbf{i}$ components using $k = \\dfrac{7}{3}$:\\begin{aligned} \\mu - 2 &= 3k \\cr \\mu - 2 &= 3\\left(\\dfrac{7}{3}\\right) \\cr \\mu - 2 &= 7 \\cr \\mu &= 9 \\end{aligned}",
+      "<strong>Step 5: Determine the ratio in part (b)</strong><br>From our calculations, we have established that $\\vec{AC} = \\dfrac{7}{3}\\vec{AB}$. This means:\\begin{aligned} 3\\vec{AC} &= 7\\vec{AB} \\end{aligned}The total segment length $AC$ is represented by $7$ units of length, while the segment $AB$ is represented by $3$ units. Therefore, the remaining segment $BC$ is:\\begin{aligned} BC &= AC - AB \\cr &= 7 - 3 \\cr &= 4 \\end{aligned}Thus, the ratio in which $B$ divides $AC$ is:$$AB : BC = 3 : 4$$",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } \\mu = 9 \\cr &\\text{(b) } AB : BC = 3 : 4 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } \\mu = 9 \\cr &\\text{(b) } AB : BC = 3 : 7 \\end{aligned}",
+        "feedback": "In part (b), you gave the ratio of part to whole ($AB:AC$) instead of the ratio of the two internal segments ($AB:BC$)."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } \\mu = 7 \\cr &\\text{(b) } AB : BC = 3 : 4 \\end{aligned}",
+        "feedback": "In part (a), you forgot to add the constant 2 when isolating $\\mu$ from the term $(\\mu - 2) = 7$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } \\mu = 9 \\cr &\\text{(b) } AB : BC = 4 : 3 \\end{aligned}",
+        "feedback": "In part (b), you reversed the ratio. Since $AB$ represents 3 parts of the 7-part total length $AC$, the ratio must be $3:4$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Collinear Vectors",
+      "content": "To prove that three points $A$, $B$, and $C$ are collinear, you must show two things: first, that two vectors formed by these points are parallel (i.e., $\\vec{ AC } = k\\vec{ AB }$); second, that they share a common point."
+    }
+  },
+  {
+    "id": "004440",
+    "group_id": "004436",
+    "board": "Edexcel",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Vectors",
+    "topic": "Vectors",
+    "subtopic": [
+      "Trigonometry",
+      "Vector Properties"
+    ],
+    "img": false,
+    "question": "Relative to a fixed origin $O$, the points $A$, $B$, and $C$ have position vectors:\\begin{aligned} \\mathbf{a} &= \\mathbf{i} + 2\\mathbf{j} \\cr \\mathbf{b} &= 3\\mathbf{i} + \\mathbf{j} + 3\\mathbf{k} \\cr \\mathbf{c} &= 2\\mathbf{i} + 5\\mathbf{j} + 2\\mathbf{k} \\end{aligned}<strong>(a)</strong> Show that the triangle $ABC$ is isosceles. [3]<br><br><strong>(b)</strong> Find the exact perimeter of triangle $ABC$, giving your answer in the form $a\\sqrt{14} + b\\sqrt{2}$, where $a$ and $b$ are integers. [2]",
+    "steps": [
+      "<strong>Step 1: Calculate the displacement vectors representing the sides of the triangle</strong><br>Find the vectors $\\vec{AB}$, $\\vec{AC}$, and $\\vec{BC}$ by subtracting position vectors:\\begin{aligned} &\\vec{AB} = \\mathbf{b} - \\mathbf{a} \\cr &\\quad = (3\\mathbf{i} + \\mathbf{j} + 3\\mathbf{k}) \\cr &\\qquad - (\\mathbf{i} + 2\\mathbf{j}) \\cr &\\quad = 2\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k} \\end{aligned}and:\\begin{aligned} &\\vec{AC} = \\mathbf{c} - \\mathbf{a} \\cr &\\quad = (2\\mathbf{i} + 5\\mathbf{j} + 2\\mathbf{k}) \\cr &\\qquad - (\\mathbf{i} + 2\\mathbf{j}) \\cr &\\quad = \\mathbf{i} + 3\\mathbf{j} + 2\\mathbf{k} \\end{aligned}and:\\begin{aligned} &\\vec{BC} = \\mathbf{c} - \\mathbf{b} \\cr &\\quad = (2\\mathbf{i} + 5\\mathbf{j} + 2\\mathbf{k}) \\cr &\\qquad - (3\\mathbf{i} + \\mathbf{j} + 3\\mathbf{k}) \\cr &\\quad = -\\mathbf{i} + 4\\mathbf{j} - \\mathbf{k} \\end{aligned}",
+      "<strong>Step 2: Calculate the lengths of sides $AB$ and $AC$</strong><br>Using the 3D magnitude formula, find the side lengths of the triangle:\\begin{aligned} |\\vec{AB}| &= \\sqrt{2^2 + (-1)^2 + 3^2} \\cr &= \\sqrt{4 + 1 + 9} \\cr &= \\sqrt{14} \\end{aligned}and:\\begin{aligned} |\\vec{AC}| &= \\sqrt{1^2 + 3^2 + 2^2} \\cr &= \\sqrt{1 + 9 + 4} \\cr &= \\sqrt{14} \\end{aligned}",
+      "<strong>Step 3: Complete the proof for part (a)</strong><br>Since the side lengths $AB$ and $AC$ are exactly equal ($AB = AC = \\sqrt{14}$), the triangle $ABC$ has at least two equal sides. By definition, this proves that triangle $ABC$ is an isosceles triangle.",
+      "<strong>Step 4: Find the length of the third side $BC$ for part (b)</strong><br>Calculate the magnitude of the final displacement vector $\\vec{BC}$:\\begin{aligned} |\\vec{BC}| &= \\sqrt{(-1)^2 + 4^2 + (-1)^2} \\cr &= \\sqrt{1 + 16 + 1} \\cr &= \\sqrt{18} \\cr &= \\sqrt{9 \\cdot 2} \\cr &= 3\\sqrt{2} \\end{aligned}",
+      "<strong>Step 5: Calculate the perimeter of the triangle</strong><br>The perimeter is the sum of all three side lengths:\\begin{aligned} \\text{Perimeter} &= AB + AC + BC \\cr &= \\sqrt{14} + \\sqrt{14} + 3\\sqrt{2} \\cr &= 2\\sqrt{14} + 3\\sqrt{2} \\end{aligned}This is in the required form $a\\sqrt{14} + b\\sqrt{2}$ with integers $a = 2$ and $b = 3$.",
+      "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } AB = AC = \\sqrt{14} \\implies \\text{Isosceles} \\cr &\\text{(b) } \\text{Perimeter} = 2\\sqrt{14} + 3\\sqrt{2} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } \\triangle ABC \\text{ is equilateral} \\cr &\\text{(b) } \\text{Perimeter} = 3\\sqrt{14} \\end{aligned}",
+        "feedback": "You assumed all three sides were equal. However, the third side $BC$ has a magnitude of $\\sqrt{18}$, which is not equal to $\\sqrt{14}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } AB = AC = \\sqrt{14} \\implies \\text{Isosceles} \\cr &\\text{(b) } \\text{Perimeter} = 2\\sqrt{14} + \\sqrt{18} \\end{aligned}",
+        "feedback": "Your side lengths are correct, but you did not fully simplify the surd $\\sqrt{18}$ to $3\\sqrt{2}$ as required by the question's format."
+      },
+      {
+        "ans": "\\begin{aligned} &\\text{(a) } AB = AC = \\sqrt{12} \\implies \\text{Isosceles} \\cr &\\text{(b) } \\text{Perimeter} = 2\\sqrt{12} + 3\\sqrt{2} \\end{aligned}",
+        "feedback": "Check your magnitude calculation in part (a). $2^2 + (-1)^2 + 3^2 = 4 + 1 + 9 = 14$, not 12."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Simplifying Surds for Perimeters",
+      "content": "Whenever an exam question specifies a surd form like $a\\sqrt{14} + b\\sqrt{2}$, it is a strong hint that one of your calculated side lengths (such as $\\sqrt{18}$) can be simplified by factorising out a perfect square: $\\sqrt{18} = \\sqrt{9 \\cdot 2} = 3\\sqrt{2}$."
+    }
+  },
 {
         "id": "004441",
         "group_id": "004441",
