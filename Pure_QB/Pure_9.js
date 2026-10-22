@@ -180,7 +180,7 @@ window.ALEVEL_QUESTIONS = [
     "<strong>Step 3: Complete the square for the circle in part (b)</strong><br><br>Rewrite the circle equation $x^2 + y^2 - 10x + 2y - 10 = 0$ to find its centre and radius squared:\\begin{aligned} x^2 - 10x &= (x - 5)^2 - 25 \\cr y^2 + 2y &= (y + 1)^2 - 1 \\end{aligned}",
     "<strong>Step 4: Write the circle equation in standard form</strong><br><br>Substitute these back into the original equation:\\begin{aligned} &(x - 5)^2 - 25 + (y + 1)^2 \\cr &\\qquad - 1 - 10 = 0 \\cr &(x - 5)^2 + (y + 1)^2 - 36 = 0 \\cr &(x - 5)^2 + (y + 1)^2 = 36 \\end{aligned}The centre is $C(5, -1)$ and the radius squared is $r^2 = 36$ (so the radius is $r = 6$).",
     "<strong>Step 5: Determine the position of the point $P(8, 4)$</strong><br><br>Calculate the distance squared from the circle's centre $C(5, -1)$ to the point $P(8, 4)$:\\begin{aligned} CP^2 &= (8 - 5)^2 + (4 - (-1))^2 \\cr &= 3^2 + 5^2 \\cr &= 9 + 25 \\cr &= 34 \\end{aligned}Now compare this distance squared to the radius squared ($r^2 = 36$):<br><br>Since $34 < 36$ (meaning the distance to $P$ is less than the radius), the point $P(8, 4)$ lies <strong>inside</strong> the circle.",
-    "Final Answer:\\begin{aligned} &\\text{(a) Real roots proven: } \\cr &\\Delta = (k+2)^2 \\ge 0 \\cr &\\text{(b) Inside the circle (since } 34 < 36\\text{)} \\end{aligned}"
+    "Final Answer:\\begin{aligned}  &\\Delta = (k+2)^2 \\ge 0 \\cr &\\text{ Inside the circle (since } 34 < 36\\text{)} \\end{aligned}"
   ],
   "pi_options": [
     {
@@ -415,220 +415,220 @@ window.ALEVEL_QUESTIONS = [
     "content": "A very common integration term is $\\dfrac{1}{\\sqrt{x}} = x^{-1/2}$. Integrating this yields $\\dfrac{x^{1/2}}{1/2} = 2\\sqrt{x}$. Memorising that $\\int \\dfrac{1}{\\sqrt{x}} \\text{d}x = 2\\sqrt{x}$ can save you valuable time and prevent division-by-fraction errors in your exam."
   }
 },
- {
-  "id": "004411",
-  "group_id": "004411",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Differentiation",
-  "topic": "Applications of Differentiation",
-  "subtopic": [
-    "Geometry: Solids",
-    "Maximum Volume"
-  ],
-  "img": false,
-  "question": "An open container in the shape of a cylinder has a base radius $r$ cm and height $h$ cm. The total surface area of the container is $108\\pi \\text{ cm}^2$.<br><br><strong>(a)</strong> Express $h$ in terms of $r$. [4]<br><br><strong>(b)</strong> Hence show that the volume of the container, $V\\text{ cm}^3$, can be expressed as:$$V = 54\\pi r - \\dfrac{1}{2}\\pi r^3$$[3]<br><br><strong>(c)</strong> Using calculus, find the values of $r$ and $h$ for which the volume of the container is a maximum. [6]",
-  "steps": [
-    "<strong>Step 1: Set up the surface area equation for part (a)</strong><br><br>The surface area of an open cylinder consists of the area of the circular base and the curved surface area. Setting this equal to $108\\pi$:\\begin{aligned} \\pi r^2 + 2\\pi rh &= 108\\pi \\cr r^2 + 2rh &= 108 \\end{aligned}",
-    "<strong>Step 2: Express $h$ in terms of $r$</strong><br><br>Rearrange the surface area equation to isolate $h$:\\begin{aligned} 2rh &= 108 - r^2 \\cr h &= \\dfrac{108 - r^2}{2r} \\end{aligned}",
-    "<strong>Step 3: Substitute $h$ to find the volume in part (b)</strong><br><br>The volume $V$ of a cylinder is given by $V = \\pi r^2 h$. Substitute the expression for $h$ from Step 2 into the volume formula:\\begin{aligned} V &= \\pi r^2 \\left( \\dfrac{108 - r^2}{2r} \\right) \\cr &= \\dfrac{\\pi r (108 - r^2)}{2} \\cr &= 54\\pi r - \\dfrac{1}{2}\\pi r^3 \\end{aligned}",
-    "<strong>Step 4: Differentiate the volume function with respect to $r$ in part (c)</strong><br><br>To find the value of $r$ that maximises the volume, differentiate $V$ with respect to $r$:\\begin{aligned} \\dfrac{\\text{d}V}{\\text{d}r} &= \\dfrac{\\text{d}}{\\text{d}r}\\left( 54\\pi r - \\dfrac{1}{2}\\pi r^3 \\right) \\cr &= 54\\pi - \\dfrac{3}{2}\\pi r^2 \\end{aligned}",
-    "<strong>Step 5: Set the derivative equal to zero to find stationary points</strong><br><br>Set $\\dfrac{\\text{d}V}{\\text{d}r} = 0$ to find the stationary values of $r$:\\begin{aligned} 54\\pi - \\dfrac{3}{2}\\pi r^2 &= 0 \\cr 54 - \\dfrac{3}{2}r^2 &= 0 \\cr \\dfrac{3}{2}r^2 &= 54 \\cr r^2 &= 36 \\cr r &= 6 \\end{aligned}Since $r$ is a physical radius, we discard $r = -6$ and keep $r = 6$ cm.",
-    "<strong>Step 6: Find the corresponding height $h$ and verify the maximum</strong><br><br>Substitute $r = 6$ back into the expression for $h$:\\begin{aligned} h &= \\dfrac{108 - 6^2}{2(6)} \\cr &= \\dfrac{72}{12} \\cr &= 6 \\text{ cm} \\end{aligned}To verify that this is a maximum, find the second derivative:\\begin{aligned} \\dfrac{\\text{d}^2V}{\\text{d}r^2} = -3\\pi r \\end{aligned}Substituting $r = 6$ yields $-18\\pi < 0$, which confirms that the volume is indeed a maximum at $r = 6$ cm and $h = 6$ cm.",
-    "Final Answer:\\begin{aligned} &\\text{(a) } h = \\dfrac{108 - r^2}{2r} \\cr &\\text{(b) Volume formula shown} \\cr &\\text{(c) } r = 6\\text{ cm}, \\ h = 6\\text{ cm} \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} &r = 6\\text{ cm} \\cr &h = 3\\text{ cm} \\end{aligned}",
-      "feedback": "You made an error when calculating $h$ in Step 6, perhaps by forgetting the factor of 2 in the denominator of the expression $h = \\dfrac{108 - r^2}{2r}$."
-    },
-    {
-      "ans": "\\begin{aligned} &r = 12\\text{ cm} \\cr &h = -1.5\\text{ cm} \\end{aligned}",
-      "feedback": "You have made an algebraic error in Step 5 when solving $54 - \\dfrac{3}{2}r^2 = 0$. For instance, writing $\\dfrac{3}{2}r^2 = 54$, which gives $3r^2 = 108$, so $r^2 = 144$ (mistakenly multiplying by 4) yields $r = 12$ and a physically impossible negative height."
-    },
-    {
-      "ans": "\\begin{aligned} &r = 6\\text{ cm} \\cr &h = 12\\text{ cm} \\end{aligned}",
-      "feedback": "You used the closed cylinder surface area formula $2\\pi r^2 + 2\\pi r h$ instead of the open cylinder formula $\\pi r^2 + 2\\pi r h$ in Step 1, which alters the relationship between $h$ and $r$."
+  {
+    "id": "004411",
+    "group_id": "004411",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Applications of Differentiation",
+    "subtopic": [
+      "Geometry: Solids",
+      "Maximum Volume"
+    ],
+    "img": false,
+    "question": "An open container in the shape of a cylinder has a base radius $r$ cm and height $h$ cm. The total surface area of the container is $108\\pi \\text{ cm}^2$.<br><br><strong>(a)</strong> Express $h$ in terms of $r$. [4]<br><br><strong>(b)</strong> Hence show that the volume of the container, $V\\text{ cm}^3$, can be expressed as:$$V = 54\\pi r - \\dfrac{1}{2}\\pi r^3$$[3]<br><br><strong>(c)</strong> Using calculus, find the values of $r$ and $h$ for which the volume of the container is a maximum. [6]",
+    "steps": [
+      "<strong>Step 1: Set up the surface area equation for part (a)</strong><br><br>The surface area of an open cylinder consists of the area of the circular base and the curved surface area. Setting this equal to $108\\pi$:\\begin{aligned} \\pi r^2 + 2\\pi rh &= 108\\pi \\cr r^2 + 2rh &= 108 \\end{aligned}",
+      "<strong>Step 2: Express $h$ in terms of $r$</strong><br><br>Rearrange the surface area equation to isolate $h$:\\begin{aligned} 2rh &= 108 - r^2 \\cr h &= \\dfrac{108 - r^2}{2r} \\end{aligned}",
+      "<strong>Step 3: Substitute $h$ to find the volume in part (b)</strong><br><br>The volume $V$ of a cylinder is given by $V = \\pi r^2 h$. Substitute the expression for $h$ from Step 2 into the volume formula:\\begin{aligned} V &= \\pi r^2 \\left( \\dfrac{108 - r^2}{2r} \\right) \\cr &= \\dfrac{\\pi r (108 - r^2)}{2} \\cr &= 54\\pi r - \\dfrac{1}{2}\\pi r^3 \\end{aligned}",
+      "<strong>Step 4: Differentiate the volume function with respect to $r$ in part (c)</strong><br><br>To find the value of $r$ that maximises the volume, differentiate $V$ with respect to $r$:\\begin{aligned} \\dfrac{\\text{d}V}{\\text{d}r} &= \\dfrac{\\text{d}}{\\text{d}r}\\left( 54\\pi r - \\dfrac{1}{2}\\pi r^3 \\right) \\cr &= 54\\pi - \\dfrac{3}{2}\\pi r^2 \\end{aligned}",
+      "<strong>Step 5: Set the derivative equal to zero to find stationary points</strong><br><br>Set $\\dfrac{\\text{d}V}{\\text{d}r} = 0$ to find the stationary values of $r$:\\begin{aligned} 54\\pi - \\dfrac{3}{2}\\pi r^2 &= 0 \\cr 54 - \\dfrac{3}{2}r^2 &= 0 \\cr \\dfrac{3}{2}r^2 &= 54 \\cr r^2 &= 36 \\cr r &= 6 \\end{aligned}Since $r$ is a physical radius, we discard $r = -6$ and keep $r = 6$ cm.",
+      "<strong>Step 6: Find the corresponding height $h$ and verify the maximum</strong><br><br>Substitute $r = 6$ back into the expression for $h$:\\begin{aligned} h &= \\dfrac{108 - 6^2}{2(6)} \\cr &= \\dfrac{72}{12} \\cr &= 6 \\text{ cm} \\end{aligned}To verify that this is a maximum, find the second derivative:\\begin{aligned} \\dfrac{\\text{d}^2V}{\\text{d}r^2} = -3\\pi r \\end{aligned}Substituting $r = 6$ yields $-18\\pi < 0$, which confirms that the volume is indeed a maximum at $r = 6$ cm and $h = 6$ cm.",
+      "<strong>Final Answer</strong><br><strong>(a)</strong> $h = \\dfrac{108 - r^2}{2r}$ <br><strong>(c)</strong> $r = 6\\text{ cm}, h = 6\\text{ cm}$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $h = \\dfrac{108 - r^2}{2r}$ <br><strong>(c)</strong> $r = 6\\text{ cm}, h = 3\\text{ cm}$",
+        "feedback": "Your expression for $h$ in part (a) is correct, but you made an error when calculating the numerical value for $h$ in part (c), perhaps by forgetting the factor of 2 in the denominator when substituting $r=6$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $h = \\dfrac{108 - r^2}{r}$ <br><strong>(c)</strong> $r = 12\\text{ cm}, h = -1.5\\text{ cm}$",
+        "feedback": "In part (a), you missed the factor of 2 from the $2rh$ term in the surface area. This led to an incorrect volume function and a physically impossible negative height in part (c)."
+      },
+      {
+        "ans": "<strong>(a)</strong> $h = \\dfrac{108 - 2r^2}{2r}$ <br><strong>(c)</strong> $r = 6\\text{ cm}, h = 12\\text{ cm}$",
+        "feedback": "You used the closed cylinder surface area formula $2\\pi r^2 + 2\\pi rh$ in part (a) instead of the open cylinder formula $\\pi r^2 + 2\\pi rh$. This error changed the relationship between $r$ and $h$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Open vs. Closed Containers",
+      "content": "Pay extremely close attention to whether a container is described as 'open' or 'closed'. An open cylinder has only one circular end (the base), so its total surface area is $\\pi r^2 + 2\\pi rh$. A closed cylinder has two circular ends (base and top), making its surface area $2\\pi r^2 + 2\\pi rh$. Using the wrong formula will carry a major penalty from the start."
     }
-  ],
-  "bradley_insight": {
-    "type": "caution",
-    "title": "The Head Teacher's Eye: Open vs. Closed Containers",
-    "content": "Pay extremely close attention to whether a container is described as 'open' or 'closed'. An open cylinder has only one circular end (the base), so its total surface area is $\\pi r^2 + 2\\pi rh$. A closed cylinder has two circular ends (base and top), making its surface area $2\\pi r^2 + 2\\pi rh$. Using the wrong formula will carry a major penalty from the start."
-  }
-},
-{
-  "id": "004412",
-  "group_id": "004411",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Differentiation",
-  "topic": "Applications of Differentiation",
-  "subtopic": [
-    "Geometry: Solids",
-    "Maximum Volume"
-  ],
-  "img": false,
-  "question": "A closed metal cylinder (with a circular top and bottom) has a base radius $r$ cm and height $h$ cm. The total surface area of the cylinder is $150\\pi \\text{ cm}^2$.<br><br><strong>(a)</strong> Express $h$ in terms of $r$. [4]<br><br><strong>(b)</strong> Hence show that the volume of the cylinder, $V\\text{ cm}^3$, is given by:$$V = 75\\pi r - \\pi r^3$$[3]<br><br><strong>(c)</strong> Using calculus, find the values of $r$ and $h$ for which the volume of the cylinder is a maximum. [6]",
-  "steps": [
-    "<strong>Step 1: Set up the surface area equation for part (a)</strong><br><br>Since the cylinder is closed, it has both a base and a top lid. Its total surface area is the sum of the curved surface area and the areas of both circular faces:\\begin{aligned} 2\\pi r^2 + 2\\pi rh &= 150\\pi \\cr 2r^2 + 2rh &= 150 \\cr r^2 + rh &= 75 \\end{aligned}",
-    "<strong>Step 2: Express $h$ in terms of $r$</strong><br><br>Isolate $h$ in the simplified equation:\\begin{aligned} rh &= 75 - r^2 \\cr h &= \\dfrac{75 - r^2}{r} \\end{aligned}",
-    "<strong>Step 3: Substitute $h$ into the volume formula for part (b)</strong><br><br>The volume $V$ of a cylinder is $V = \\pi r^2 h$. Substitute the expression for $h$:\\begin{aligned} V &= \\pi r^2 \\left( \\dfrac{75 - r^2}{r} \\right) \\cr &= \\pi r (75 - r^2) \\cr &= 75\\pi r - \\pi r^3 \\end{aligned}",
-    "<strong>Step 4: Differentiate the volume function with respect to $r$ in part (c)</strong><br><br>To find the dimensions that maximise the volume, differentiate $V$ with respect to $r$:\\begin{aligned} \\dfrac{\\text{d}V}{\\text{d}r} &= \\dfrac{\\text{d}}{\\text{d}r}(75\\pi r - \\pi r^3) \\cr &= 75\\pi - 3\\pi r^2 \\end{aligned}",
-    "<strong>Step 5: Set the derivative equal to zero to find stationary points</strong><br><br>Set $\\dfrac{\\text{d}V}{\\text{d}r} = 0$ and solve for $r$:\\begin{aligned} 75\\pi - 3\\pi r^2 &= 0 \\cr 75 - 3r^2 &= 0 \\cr 3r^2 &= 75 \\cr r^2 &= 25 \\cr r &= 5 \\end{aligned}Discard $r = -5$ because the radius must be positive. Thus, $r = 5$ cm.",
-    "<strong>Step 6: Find the height $h$ and verify the maximum</strong><br><br>Substitute $r = 5$ back into the height equation:\\begin{aligned} h &= \\dfrac{75 - 5^2}{5} \\cr &= \\dfrac{50}{5} \\cr &= 10 \\text{ cm} \\end{aligned}To verify that this point is a maximum, check the sign of the second derivative:\\begin{aligned} \\dfrac{\\text{d}^2V}{\\text{d}r^2} = -6\\pi r \\end{aligned}At $r = 5$, this equals $-30\\pi < 0$, confirming a maximum. Thus, max volume is achieved at $r = 5$ cm and $h = 10$ cm.",
-    "Final Answer:\\begin{aligned} &\\text{(a) } h = \\dfrac{75 - r^2}{r} \\cr &\\text{(b) Volume formula shown} \\cr &\\text{(c) } r = 5\\text{ cm}, \\ h = 10\\text{ cm} \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} &r = 5\\text{ cm} \\cr &h = 5\\text{ cm} \\end{aligned}",
-      "feedback": "You used the open cylinder formula $\\pi r^2 + 2\\pi rh$ in Step 1, which yields the incorrect relationship $h = \\dfrac{150 - r^2}{2r}$ and subsequently an incorrect height of 5 cm."
-    },
-    {
-      "ans": "\\begin{aligned} &r = 5\\text{ cm} \\cr &h = 20\\text{ cm} \\end{aligned}",
-      "feedback": "You made a sign error when rearranging the surface area equation, writing $rh = 75 + r^2$ in Step 2, leading to $h = 20$ cm instead of $10$ cm."
-    },
-    {
-      "ans": "\\begin{aligned} &r = 15\\text{ cm} \\cr &h = 10\\text{ cm} \\end{aligned}",
-      "feedback": "You made an arithmetic error in Step 5 when dividing 75 by 3, mistakenly writing $75/3 = 225$ instead of $25$."
+  },
+  {
+    "id": "004412",
+    "group_id": "004411",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Applications of Differentiation",
+    "subtopic": [
+      "Geometry: Solids",
+      "Maximum Volume"
+    ],
+    "img": false,
+    "question": "A closed metal cylinder (with a circular top and bottom) has a base radius $r$ cm and height $h$ cm. The total surface area of the cylinder is $150\\pi \\text{ cm}^2$.<br><br><strong>(a)</strong> Express $h$ in terms of $r$. [4]<br><br><strong>(b)</strong> Hence show that the volume of the cylinder, $V\\text{ cm}^3$, is given by:$$V = 75\\pi r - \\pi r^3$$[3]<br><br><strong>(c)</strong> Using calculus, find the values of $r$ and $h$ for which the volume of the cylinder is a maximum. [6]",
+    "steps": [
+      "<strong>Step 1: Set up the surface area equation for part (a)</strong><br><br>Since the cylinder is closed, it has both a base and a top lid. Its total surface area is the sum of the curved surface area and the areas of both circular faces:\\begin{aligned} 2\\pi r^2 + 2\\pi rh &= 150\\pi \\cr 2r^2 + 2rh &= 150 \\cr r^2 + rh &= 75 \\end{aligned}",
+      "<strong>Step 2: Express $h$ in terms of $r$</strong><br><br>Isolate $h$ in the simplified equation:\\begin{aligned} rh &= 75 - r^2 \\cr h &= \\dfrac{75 - r^2}{r} \\end{aligned}",
+      "<strong>Step 3: Substitute $h$ into the volume formula for part (b)</strong><br><br>The volume $V$ of a cylinder is $V = \\pi r^2 h$. Substitute the expression for $h$:\\begin{aligned} V &= \\pi r^2 \\left( \\dfrac{75 - r^2}{r} \\right) \\cr &= \\pi r (75 - r^2) \\cr &= 75\\pi r - \\pi r^3 \\end{aligned}",
+      "<strong>Step 4: Differentiate the volume function with respect to $r$ in part (c)</strong><br><br>To find the dimensions that maximise the volume, differentiate $V$ with respect to $r$:\\begin{aligned} \\dfrac{\\text{d}V}{\\text{d}r} &= \\dfrac{\\text{d}}{\\text{d}r}(75\\pi r - \\pi r^3) \\cr &= 75\\pi - 3\\pi r^2 \\end{aligned}",
+      "<strong>Step 5: Set the derivative equal to zero to find stationary points</strong><br><br>Set $\\dfrac{\\text{d}V}{\\text{d}r} = 0$ and solve for $r$:\\begin{aligned} 75\\pi - 3\\pi r^2 &= 0 \\cr 75 - 3r^2 &= 0 \\cr 3r^2 &= 75 \\cr r^2 &= 25 \\cr r &= 5 \\end{aligned}Discard $r = -5$ because the radius must be positive. Thus, $r = 5$ cm.",
+      "<strong>Step 6: Find the height $h$ and verify the maximum</strong><br><br>Substitute $r = 5$ back into the height equation:\\begin{aligned} h &= \\dfrac{75 - 5^2}{5} \\cr &= \\dfrac{50}{5} \\cr &= 10 \\text{ cm} \\end{aligned}To verify that this point is a maximum, check the sign of the second derivative:\\begin{aligned} \\dfrac{\\text{d}^2V}{\\text{d}r^2} = -6\\pi r \\end{aligned}At $r = 5$, this equals $-30\\pi < 0$, confirming a maximum. Thus, max volume is achieved at $r = 5$ cm and $h = 10$ cm.",
+      "<strong>Final Answer</strong><br><strong>(a)</strong> $h = \\dfrac{75 - r^2}{r}$ <br><strong>(c)</strong> $r = 5\\text{ cm}, h = 10\\text{ cm}$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $h = \\dfrac{75 - r^2}{r}$ <br><strong>(c)</strong> $r = 5\\text{ cm}, h = 5\\text{ cm}$",
+        "feedback": "Your rearrangement in part (a) is correct for a closed cylinder. However, in part (c), you have calculated a height that does not match the $h = 2r$ ratio expected for a closed cylinder of maximum volume."
+      },
+      {
+        "ans": "<strong>(a)</strong> $h = \\dfrac{150 - r^2}{2r}$ <br><strong>(c)</strong> $r = 5\\text{ cm}, h = 6.25\\text{ cm}$",
+        "feedback": "In part (a), you mistakenly used the open cylinder formula $\\pi r^2 + 2\\pi rh$. This cylinder is closed, meaning it has two circular ends, so the surface area is $2\\pi r^2 + 2\\pi rh$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $h = \\dfrac{75 - r^2}{r}$ <br><strong>(c)</strong> $r = 15\\text{ cm}, h = 10\\text{ cm}$",
+        "feedback": "While your expression for $h$ is correct, you made an arithmetic error in part (c) when solving $3r^2 = 75$. Dividing 75 by 3 gives 25, so $r = 5$, not 15."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: The Golden Ratio of Cylinders",
+      "content": "For a closed cylinder of fixed surface area, the maximum volume is always achieved when the height is exactly equal to the diameter of the base ($h = 2r$). Since we calculated $r = 5$ and $h = 10$, this perfectly aligns with the ratio! Knowing this rule of thumb lets you instantly verify your answer during your exam."
     }
-  ],
-  "bradley_insight": {
-    "type": "pro-tip",
-    "title": "The Head Teacher's Eye: The Golden Ratio of Cylinders",
-    "content": "For a closed cylinder of fixed surface area, the maximum volume is always achieved when the height is exactly equal to the diameter of the base ($h = 2r$). Since we calculated $r = 5$ and $h = 10$, this perfectly aligns with the ratio! Knowing this rule of thumb lets you instantly verify your answer during your exam."
-  }
-},
-{
-  "id": "004413",
-  "group_id": "004411",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Differentiation",
-  "topic": "Applications of Differentiation",
-  "subtopic": [
-    "Geometry: Solids",
-    "Minimum Surface Area"
-  ],
-  "img": false,
-  "question": "An open-topped rectangular storage box is to be constructed with a square base of side length $x$ cm and height $y$ cm. The total surface area of the box is $432\\text{ cm}^2$.<br><br><strong>(a)</strong> Express $y$ in terms of $x$. [4]<br><br><strong>(b)</strong> Hence show that the volume of the box, $V\\text{ cm}^3$, can be expressed as:$$V = 108x - \\dfrac{1}{4}x^3$$[3]<br><br><strong>(c)</strong> Using calculus, find the values of $x$ and $y$ for which the volume of the box is a maximum. [6]",
-  "steps": [
-    "<strong>Step 1: Set up the surface area equation for part (a)</strong><br><br>An open-topped box with a square base has 1 square bottom of area $x^2$, and 4 vertical rectangular sides of area $xy$ each. Setting this total area equal to $432$:\\begin{aligned} x^2 + 4xy = 432 \\end{aligned}",
-    "<strong>Step 2: Express $y$ in terms of $x$</strong><br><br>Rearrange this equation to isolate the height $y$:\\begin{aligned} 4xy &= 432 - x^2 \\cr y &= \\dfrac{432 - x^2}{4x} \\end{aligned}",
-    "<strong>Step 3: Substitute $y$ into the volume formula for part (b)</strong><br><br>The volume $V$ of a cuboid is given by $\\text{base area} \\times \\text{height}$, which is $V = x^2 y$. Substitute the expression for $y$:\\begin{aligned} V &= x^2 \\left( \\dfrac{432 - x^2}{4x} \\right) \\cr &= \\dfrac{x(432 - x^2)}{4} \\cr &= 108x - \\dfrac{1}{4}x^3 \\end{aligned}",
-    "<strong>Step 4: Differentiate the volume function with respect to $x$ in part (c)</strong><br><br>To find the values of $x$ and $y$ that maximise the volume, differentiate $V$ with respect to $x$:\\begin{aligned} \\dfrac{\\text{d}V}{\\text{d}x} &= \\dfrac{\\text{d}}{\\text{d}x}\\left( 108x - \\dfrac{1}{4}x^3 \\right) \\cr &= 108 - \\dfrac{3}{4}x^2 \\end{aligned}",
-    "<strong>Step 5: Set the derivative equal to zero to find the stationary base length</strong><br><br>Set $\\dfrac{\\text{d}V}{\\text{d}x} = 0$ to locate the stationary point:\\begin{aligned} 108 - \\dfrac{3}{4}x^2 &= 0 \\cr \\dfrac{3}{4}x^2 &= 108 \\cr 3x^2 &= 432 \\cr x^2 &= 144 \\cr x &= 12 \\end{aligned}Since a physical length must be positive, we discard $x = -12$ to get $x = 12$ cm.",
-    "<strong>Step 6: Determine the height $y$ and verify the maximum</strong><br><br>Substitute $x = 12$ back into the expression for $y$:\\begin{aligned} y &= \\dfrac{432 - 12^2}{4(12)} \\cr &= \\dfrac{432 - 144}{48} \\cr &= \\dfrac{288}{48} \\cr &= 6 \\text{ cm} \\end{aligned}To verify that this point yields a maximum volume, calculate the second derivative:\\begin{aligned} \\dfrac{\\text{d}^2V}{\\text{d}x^2} = -\\dfrac{3}{2}x \\end{aligned}At $x = 12$, we have $-18 < 0$, which confirms that the volume is a maximum. Thus, maximum volume is achieved when $x = 12$ cm and $y = 6$ cm.",
-    "Final Answer:\\begin{aligned} &\\text{(a) } y = \\dfrac{432 - x^2}{4x} \\cr &\\text{(b) Volume formula shown} \\cr &\\text{(c) } x = 12\\text{ cm}, \\ y = 6\\text{ cm} \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} &x = 12\\text{ cm} \\cr &y = 12\\text{ cm} \\end{aligned}",
-      "feedback": "You used the closed box surface area formula $2x^2 + 4xy$ instead of the open-topped box formula $x^2 + 4xy$ in Step 1, which changes the relationship between $y$ and $x$."
-    },
-    {
-      "ans": "\\begin{aligned} &x = 6\\text{ cm} \\cr &y = 16.5\\text{ cm} \\end{aligned}",
-      "feedback": "You made a basic differentiation error in Step 4, differentiating $-\\dfrac{1}{4}x^3$ to get $-3x^2$ instead of $-\\dfrac{3}{4}x^2$."
-    },
-    {
-      "ans": "\\begin{aligned} &x = 12\\text{ cm} \\cr &y = 9\\text{ cm} \\end{aligned}",
-      "feedback": "You made a subtraction or division slip when calculating $y$ in Step 6, perhaps by forgetting to subtract $x^2$ from 432, or using $y = \\dfrac{432}{4x}$."
+  },
+  {
+    "id": "004413",
+    "group_id": "004411",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Applications of Differentiation",
+    "subtopic": [
+      "Geometry: Solids",
+      "Minimum Surface Area"
+    ],
+    "img": false,
+    "question": "An open-topped rectangular storage box is to be constructed with a square base of side length $x$ cm and height $y$ cm. The total surface area of the box is $432\\text{ cm}^2$.<br><br><strong>(a)</strong> Express $y$ in terms of $x$. [4]<br><br><strong>(b)</strong> Hence show that the volume of the box, $V\\text{ cm}^3$, can be expressed as:$$V = 108x - \\dfrac{1}{4}x^3$$[3]<br><br><strong>(c)</strong> Using calculus, find the values of $x$ and $y$ for which the volume of the box is a maximum. [6]",
+    "steps": [
+      "<strong>Step 1: Set up the surface area equation for part (a)</strong><br><br>An open-topped box with a square base has 1 square bottom of area $x^2$, and 4 vertical rectangular sides of area $xy$ each. Setting this total area equal to $432$:\\begin{aligned} x^2 + 4xy = 432 \\end{aligned}",
+      "<strong>Step 2: Express $y$ in terms of $x$</strong><br><br>Rearrange this equation to isolate the height $y$:\\begin{aligned} 4xy &= 432 - x^2 \\cr y &= \\dfrac{432 - x^2}{4x} \\end{aligned}",
+      "<strong>Step 3: Substitute $y$ into the volume formula for part (b)</strong><br><br>The volume $V$ of a cuboid is given by $\\text{base area} \\times \\text{height}$, which is $V = x^2 y$. Substitute the expression for $y$:\\begin{aligned} V &= x^2 \\left( \\dfrac{432 - x^2}{4x} \\right) \\cr &= \\dfrac{x(432 - x^2)}{4} \\cr &= 108x - \\dfrac{1}{4}x^3 \\end{aligned}",
+      "<strong>Step 4: Differentiate the volume function with respect to $x$ in part (c)</strong><br><br>To find the values of $x$ and $y$ that maximise the volume, differentiate $V$ with respect to $x$:\\begin{aligned} \\dfrac{\\text{d}V}{\\text{d}x} &= \\dfrac{\\text{d}}{\\text{d}x}\\left( 108x - \\dfrac{1}{4}x^3 \\right) \\cr &= 108 - \\dfrac{3}{4}x^2 \\end{aligned}",
+      "<strong>Step 5: Set the derivative equal to zero to find the stationary base length</strong><br><br>Set $\\dfrac{\\text{d}V}{\\text{d}x} = 0$ to locate the stationary point:\\begin{aligned} 108 - \\dfrac{3}{4}x^2 &= 0 \\cr \\dfrac{3}{4}x^2 &= 108 \\cr 3x^2 &= 432 \\cr x^2 &= 144 \\cr x &= 12 \\end{aligned}Since a physical length must be positive, we discard $x = -12$ to get $x = 12$ cm.",
+      "<strong>Step 6: Determine the height $y$ and verify the maximum</strong><br><br>Substitute $x = 12$ back into the expression for $y$:\\begin{aligned} y &= \\dfrac{432 - 12^2}{4(12)} \\cr &= \\dfrac{432 - 144}{48} \\cr &= \\dfrac{288}{48} \\cr &= 6 \\text{ cm} \\end{aligned}To verify that this point yields a maximum volume, calculate the second derivative:\\begin{aligned} \\dfrac{\\text{d}^2V}{\\text{d}x^2} = -\\dfrac{3}{2}x \\end{aligned}At $x = 12$, we have $-18 < 0$, which confirms that the volume is a maximum. Thus, maximum volume is achieved when $x = 12$ cm and $y = 6$ cm.",
+      "<strong>Final Answer</strong><br><strong>(a)</strong> $y = \\dfrac{432 - x^2}{4x}$ <br><strong>(c)</strong> $x = 12\\text{ cm}, y = 6\\text{ cm}$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $y = \\dfrac{432 - 2x^2}{4x}$ <br><strong>(c)</strong> $x = 12\\text{ cm}, y = 12\\text{ cm}$",
+        "feedback": "In part (a), you used the closed box formula $2x^2 + 4xy$. However, this is an open-topped box, so it only has one square base, meaning the surface area should be $x^2 + 4xy$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $y = \\dfrac{432 - x^2}{4x}$ <br><strong>(c)</strong> $x = 6\\text{ cm}, y = 16.5\\text{ cm}$",
+        "feedback": "Your expression for $y$ in part (a) is correct, but you made a differentiation error in part (c) when calculating $x$, resulting in the wrong dimensions for the maximum volume."
+      },
+      {
+        "ans": "<strong>(a)</strong> $y = \\dfrac{432 - x^2}{4x}$ <br><strong>(c)</strong> $x = 12\\text{ cm}, y = 9\\text{ cm}$",
+        "feedback": "While you correctly expressed $y$ in terms of $x$, you made an arithmetic slip in the final calculation of $y$ in part (c), perhaps by failing to correctly subtract $x^2$ before dividing."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Base vs. Side Area Ratio",
+      "content": "For any open-topped box with a square base of side length $x$ and height $y$ that is optimized for maximum volume, the height is always exactly half of the base length ($y = 0.5x$). Since $12 \\times 0.5 = 6$, our results perfectly match this design ratio. Keeping this rule in mind acts as an immediate sanity check during exam conditions."
     }
-  ],
-  "bradley_insight": {
-    "type": "pro-tip",
-    "title": "The Head Teacher's Eye: Base vs. Side Area Ratio",
-    "content": "For any open-topped box with a square base of side length $x$ and height $y$ that is optimized for maximum volume, the height is always exactly half of the base length ($y = 0.5x$). Since $12 \\times 0.5 = 6$, our results perfectly match this design ratio. Keeping this rule in mind acts as an immediate sanity check during exam conditions."
-  }
-},
-{
-  "id": "004414",
-  "group_id": "004411",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Differentiation",
-  "topic": "Applications of Differentiation",
-  "subtopic": [
-    "Geometry: Solids",
-    "Minimum Surface Area"
-  ],
-  "img": false,
-  "question": "A closed rectangular packaging box has a square base of side length $x$ cm and height $y$ cm. The volume of the box is fixed at $216\\text{ cm}^3$.<br><br><strong>(a)</strong> Express $y$ in terms of $x$. [3]<br><br><strong>(b)</strong> Hence show that the total surface area of the box, $A\\text{ cm}^2$, can be expressed as:$$A = 2x^2 + \\dfrac{864}{x}$$[4]<br><br><strong>(c)</strong> Using calculus, find the minimum surface area of the box. [6]",
-  "steps": [
-    "<strong>Step 1: Set up the volume constraint for part (a)</strong><br><br>The volume of a closed box with a square base is given by $V = x^2 y$. Since the volume is fixed at $216$:\\begin{aligned} x^2 y &= 216 \\cr y &= \\dfrac{216}{x^2} \\end{aligned}",
-    "<strong>Step 2: Express the surface area in terms of $x$ for part (b)</strong><br><br>The total surface area $A$ of a closed rectangular box is the sum of the top and bottom areas ($2x^2$) and the four rectangular side faces ($4xy$):\\begin{aligned} A &= 2x^2 + 4xy \\end{aligned}Substitute $y = \\dfrac{216}{x^2}$ into this formula:\\begin{aligned} A &= 2x^2 + 4x\\left( \\dfrac{216}{x^2} \\right) \\cr &= 2x^2 + \\dfrac{864}{x} \\end{aligned}",
-    "<strong>Step 3: Differentiate the surface area function in part (c)</strong><br><br>To find the value of $x$ that minimises the surface area, write the function as $A = 2x^2 + 864x^{-1}$ and differentiate with respect to $x$:\\begin{aligned} \\dfrac{\\text{d}A}{\\text{d}x} &= \\dfrac{\\text{d}}{\\text{d}x}(2x^2 + 864x^{-1}) \\cr &= 4x - 864x^{-2} \\cr &= 4x - \\dfrac{864}{x^2} \\end{aligned}",
-    "<strong>Step 4: Set the derivative to zero to find the optimal base length $x$</strong><br><br>Set $\\dfrac{\\text{d}A}{\\text{d}x} = 0$ to find the optimal base length $x$:\\begin{aligned} 4x - \\dfrac{864}{x^2} &= 0 \\cr 4x &= \\dfrac{864}{x^2} \\cr 4x^3 &= 864 \\cr x^3 &= 216 \\cr x &= 6 \\end{aligned}So the optimal base length is $x = 6$ cm.",
-    "<strong>Step 5: Verify that this stationary point represents a minimum</strong><br><br>Find the second derivative of the surface area function:\\begin{aligned} \\dfrac{\\text{d}^2A}{\\text{d}x^2} &= 4 + 1728x^{-3} \\cr &= 4 + \\dfrac{1728}{x^3} \\end{aligned}Substituting $x = 6$ gives $4 + \\dfrac{1728}{216} = 12$, which is $> 0$. Since the second derivative is positive, this represents a local minimum.",
-    "<strong>Step 6: Calculate the minimum surface area of the box</strong><br><br>Substitute $x = 6$ back into the surface area equation to find $A_{\\min}$:\\begin{aligned} A_{\\min} &= 2(6)^2 + \\dfrac{864}{6} \\cr &= 2(36) + 144 \\cr &= 72 + 144 \\cr &= 216 \\text{ cm}^2 \\end{aligned}The minimum surface area of the packaging box is $216 \\text{ cm}^2$ (achieved when $x = 6$ cm and $y = 6$ cm).",
-    "Final Answer:\\begin{aligned} &\\text{(a) } y = \\dfrac{216}{x^2} \\cr &\\text{(b) Surface area formula shown} \\cr &\\text{(c) } A_{\\min} = 216\\text{ cm}^2 \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} A_{\\min} = 144\\text{ cm}^2 \\end{aligned}",
-      "feedback": "You used an open-topped box formula $A = x^2 + 4xy$, which gives $A = x^2 + \\dfrac{864}{x}$ in Step 2. This would lead to a different minimum area."
-    },
-    {
-      "ans": "\\begin{aligned} &A_{\\min} = 216\\text{ cm}^2 \\cr &\\text{with } x = 3\\text{ cm} \\end{aligned}",
-      "feedback": "You made an algebraic error when solving $4x^3 = 864$. For example, writing $x^3 = 108$ instead of $216$ would lead to a calculation breakdown."
-    },
-    {
-      "ans": "\\begin{aligned} A_{\\min} = 180\\text{ cm}^2 \\end{aligned}",
-      "feedback": "You found the correct value $x = 6$, but made an arithmetic slip in Step 6 when evaluating $A = 2(36) + \\dfrac{864}{6}$."
+  },
+  {
+    "id": "004414",
+    "group_id": "004411",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Applications of Differentiation",
+    "subtopic": [
+      "Geometry: Solids",
+      "Minimum Surface Area"
+    ],
+    "img": false,
+    "question": "A closed rectangular packaging box has a square base of side length $x$ cm and height $y$ cm. The volume of the box is fixed at $216\\text{ cm}^3$.<br><br><strong>(a)</strong> Express $y$ in terms of $x$. [3]<br><br><strong>(b)</strong> Hence show that the total surface area of the box, $A\\text{ cm}^2$, can be expressed as:$$A = 2x^2 + \\dfrac{864}{x}$$[4]<br><br><strong>(c)</strong> Using calculus, find the minimum surface area of the box. [6]",
+    "steps": [
+      "<strong>Step 1: Set up the volume constraint for part (a)</strong><br><br>The volume of a closed box with a square base is given by $V = x^2 y$. Since the volume is fixed at $216$:\\begin{aligned} x^2 y &= 216 \\cr y &= \\dfrac{216}{x^2} \\end{aligned}",
+      "<strong>Step 2: Express the surface area in terms of $x$ for part (b)</strong><br><br>The total surface area $A$ of a closed rectangular box is the sum of the top and bottom areas ($2x^2$) and the four rectangular side faces ($4xy$):\\begin{aligned} A &= 2x^2 + 4xy \\end{aligned}Substitute $y = \\dfrac{216}{x^2}$ into this formula:\\begin{aligned} A &= 2x^2 + 4x\\left( \\dfrac{216}{x^2} \\right) \\cr &= 2x^2 + \\dfrac{864}{x} \\end{aligned}",
+      "<strong>Step 3: Differentiate the surface area function in part (c)</strong><br><br>To find the value of $x$ that minimises the surface area, write the function as $A = 2x^2 + 864x^{-1}$ and differentiate with respect to $x$:\\begin{aligned} \\dfrac{\\text{d}A}{\\text{d}x} &= \\dfrac{\\text{d}}{\\text{d}x}(2x^2 + 864x^{-1}) \\cr &= 4x - 864x^{-2} \\cr &= 4x - \\dfrac{864}{x^2} \\end{aligned}",
+      "<strong>Step 4: Set the derivative to zero to find the optimal base length $x$</strong><br><br>Set $\\dfrac{\\text{d}A}{\\text{d}x} = 0$ to find the optimal base length $x$:\\begin{aligned} 4x - \\dfrac{864}{x^2} &= 0 \\cr 4x &= \\dfrac{864}{x^2} \\cr 4x^3 &= 864 \\cr x^3 &= 216 \\cr x &= 6 \\end{aligned}So the optimal base length is $x = 6$ cm.",
+      "<strong>Step 5: Verify that this stationary point represents a minimum</strong><br><br>Find the second derivative of the surface area function:\\begin{aligned} \\dfrac{\\text{d}^2A}{\\text{d}x^2} &= 4 + 1728x^{-3} \\cr &= 4 + \\dfrac{1728}{x^3} \\end{aligned}Substituting $x = 6$ gives $4 + \\dfrac{1728}{216} = 12$, which is $> 0$. Since the second derivative is positive, this represents a local minimum.",
+      "<strong>Step 6: Calculate the minimum surface area of the box</strong><br><br>Substitute $x = 6$ back into the surface area equation to find $A_{\\min}$:\\begin{aligned} A_{\\min} &= 2(6)^2 + \\dfrac{864}{6} \\cr &= 2(36) + 144 \\cr &= 72 + 144 \\cr &= 216 \\text{ cm}^2 \\end{aligned}The minimum surface area of the packaging box is $216 \\text{ cm}^2$ (achieved when $x = 6$ cm and $y = 6$ cm).",
+      "<strong>Final Answer</strong><br><strong>(a)</strong> $y = \\dfrac{216}{x^2}$ <br><strong>(c)</strong> $A_{\\min} = 216\\text{ cm}^2$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $y = \\dfrac{216}{x^2}$ <br><strong>(c)</strong> $A_{\\min} = 144\\text{ cm}^2$",
+        "feedback": "Your expression for $y$ is correct, but you used the area formula for an open-topped box ($x^2 + 4xy$) in part (c) rather than the closed box formula required by the question."
+      },
+      {
+        "ans": "<strong>(a)</strong> $y = \\dfrac{108}{x^2}$ <br><strong>(c)</strong> $A_{\\min} = 216\\text{ cm}^2$ (with $x = 3\\text{ cm}$)",
+        "feedback": "In part (a), your substitution logic was flawed. In part (c), you made an algebraic error when solving $4x^3 = 864$, leading to an incorrect base length $x=3$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $y = \\dfrac{216}{x^2}$ <br><strong>(c)</strong> $A_{\\min} = 180\\text{ cm}^2$",
+        "feedback": "While you correctly expressed $y$ and found $x = 6$, you made an arithmetic slip in the final calculation of the area $A$ in part (c)."
+      }
+    ],
+    "bradley_insight": {
+      "type": "deeper",
+      "title": "The Head Teacher's Eye: Cube Symmetry in Minimization",
+      "content": "For a closed rectangular box with a square base of side length $x$ and height $y$, the absolute minimum surface area for a fixed volume is always achieved when the box is a perfect cube ($x = y$). Since our calculations show $x = 6$ and $y = \\dfrac{216}{36} = 6$, our result represents a perfect cube, confirming the highest degree of geometric efficiency!"
     }
-  ],
-  "bradley_insight": {
-    "type": "deeper",
-    "title": "The Head Teacher's Eye: Cube Symmetry in Minimization",
-    "content": "For a closed rectangular box with a square base of side length $x$ and height $y$, the absolute minimum surface area for a fixed volume is always achieved when the box is a perfect cube ($x = y$). Since our calculations show $x = 6$ and $y = \\dfrac{216}{36} = 6$, our result represents a perfect cube, confirming the highest degree of geometric efficiency!"
-  }
-},
-{
-  "id": "004415",
-  "group_id": "004411",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Differentiation",
-  "topic": "Applications of Differentiation",
-  "subtopic": [
-    "Maximum Area"
-  ],
-  "img": false,
-  "question": "A rectangular sheep pen is to be constructed against a long, straight stone wall using exactly $120\\text{ m}$ of fencing wire for the remaining three sides. The pen has width $x\\text{ m}$ (perpendicular to the wall) and length $y\\text{ m}$ (parallel to the wall).<br><br><strong>(a)</strong> Express $y$ in terms of $x$. [3]<br><br><strong>(b)</strong> Hence show that the area of the pen, $A\\text{ m}^2$, is given by:$$A = 120x - 2x^2$$[3]<br><br><strong>(c)</strong> Using calculus, find the maximum possible area of the pen and the dimensions $x$ and $y$ that produce this maximum. [7]",
-  "steps": [
-    "<strong>Step 1: Set up the perimeter constraint for part (a)</strong><br><br>Since the stone wall forms one of the lengths of the rectangle, only three sides require fencing wire: two widths ($x$) and one length ($y$). Set the total length of fencing equal to $120$:\\begin{aligned} 2x + y = 120 \\end{aligned}",
-    "<strong>Step 2: Express $y$ in terms of $x$</strong><br><br>Isolate $y$ in the linear equation:\\begin{aligned} y = 120 - 2x \\end{aligned}",
-    "<strong>Step 3: Find the area formula for part (b)</strong><br><br>The area $A$ of a rectangle is given by $\\text{width} \\times \\text{length}$, which is $A = xy$. Substitute the expression for $y$ from Step 2 into the area equation:\\begin{aligned} A &= x(120 - 2x) \\cr &= 120x - 2x^2 \\end{aligned}",
-    "<strong>Step 4: Differentiate the area function with respect to $x$ in part (c)</strong><br><br>To find the maximum area, differentiate $A$ with respect to $x$:\\begin{aligned} \\dfrac{\\text{d}A}{\\text{d}x} &= \\dfrac{\\text{d}}{\\text{d}x}(120x - 2x^2) \\cr &= 120 - 4x \\end{aligned}",
-    "<strong>Step 5: Locate the stationary point</strong><br><br>Set $\\dfrac{\\text{d}A}{\\text{d}x} = 0$ to find the width that produces a stationary area:\\begin{aligned} 120 - 4x &= 0 \\cr 4x &= 120 \\cr x &= 30 \\end{aligned}To verify that this yields a maximum area, find the second derivative:\\begin{aligned} \\dfrac{\\text{d}^2A}{\\text{d}x^2} = -4 \\end{aligned}Since $-4 < 0$ for all values of $x$, this stationary point is confirmed to be a maximum.",
-    "<strong>Step 6: Find the corresponding dimensions and the maximum area</strong><br><br>Substitute $x = 30$ back into the linear expression for the length $y$:\\begin{aligned} y &= 120 - 2(30) \\cr &= 120 - 60 \\cr &= 60 \\text{ m} \\end{aligned}Now calculate the maximum area $A_{\\max}$:\\begin{aligned} A_{\\max} &= xy \\cr &= (30)(60) \\cr &= 1800 \\text{ m}^2 \\end{aligned}The maximum area of the sheep pen is $1800 \\text{ m}^2$, with dimensions $x = 30$ m and $y = 60$ m.",
-    "Final Answer:\\begin{aligned} &\\text{(a) } y = 120 - 2x \\cr &\\text{(b) Area formula shown} \\cr &\\text{(c) } A_{\\max} = 1800\\text{ m}^2 \\cr &\\quad x = 30\\text{ m}, \\ y = 60\\text{ m} \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} &A_{\\max} = 1800\\text{ m}^2 \\cr &\\text{with } x = 30\\text{ m}, \\ y = 30\\text{ m} \\end{aligned}",
-      "feedback": "You assumed the optimal shape of any rectangular area must be a square ($x = y = 30$), which is only true if all four sides of the pen require fencing wire. Since one side is formed by a stone wall, the optimal length is actually twice the width."
-    },
-    {
-      "ans": "\\begin{aligned} &A_{\\max} = 900\\text{ m}^2 \\cr &\\text{with } x = 30\\text{ m}, \\ y = 30\\text{ m} \\end{aligned}",
-      "feedback": "You used the traditional four-sided perimeter constraint $2x + 2y = 120$, giving $y = 60 - x$, forgetting that the wall acts as one of the boundaries and requires no fencing."
-    },
-    {
-      "ans": "\\begin{aligned} &A_{\\max} = 1800\\text{ m}^2 \\cr &\\text{with } x = 40\\text{ m}, \\ y = 40\\text{ m} \\end{aligned}",
-      "feedback": "You made a differentiation slip in Step 4, such as differentiating $-2x^2$ to get $-3x$ or $-2x$ instead of $-4x$, leading to an incorrect stationary point."
+  },
+  {
+    "id": "004415",
+    "group_id": "004411",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Applications of Differentiation",
+    "subtopic": [
+      "Maximum Area"
+    ],
+    "img": false,
+    "question": "A rectangular sheep pen is to be constructed against a long, straight stone wall using exactly $120\\text{ m}$ of fencing wire for the remaining three sides. The pen has width $x\\text{ m}$ (perpendicular to the wall) and length $y\\text{ m}$ (parallel to the wall).<br><br><strong>(a)</strong> Express $y$ in terms of $x$. [3]<br><br><strong>(b)</strong> Hence show that the area of the pen, $A\\text{ m}^2$, is given by:$$A = 120x - 2x^2$$[3]<br><br><strong>(c)</strong> Using calculus, find the maximum possible area of the pen and the dimensions $x$ and $y$ that produce this maximum. [7]",
+    "steps": [
+      "<strong>Step 1: Set up the perimeter constraint for part (a)</strong><br><br>Since the stone wall forms one of the lengths of the rectangle, only three sides require fencing wire: two widths ($x$) and one length ($y$). Set the total length of fencing equal to $120$:\\begin{aligned} 2x + y = 120 \\end{aligned}",
+      "<strong>Step 2: Express $y$ in terms of $x$</strong><br><br>Isolate $y$ in the linear equation:\\begin{aligned} y = 120 - 2x \\end{aligned}",
+      "<strong>Step 3: Find the area formula for part (b)</strong><br><br>The area $A$ of a rectangle is given by $\\text{width} \\times \\text{length}$, which is $A = xy$. Substitute the expression for $y$ from Step 2 into the area equation:\\begin{aligned} A &= x(120 - 2x) \\cr &= 120x - 2x^2 \\end{aligned}",
+      "<strong>Step 4: Differentiate the area function with respect to $x$ in part (c)</strong><br><br>To find the maximum area, differentiate $A$ with respect to $x$:\\begin{aligned} \\dfrac{\\text{d}A}{\\text{d}x} &= \\dfrac{\\text{d}}{\\text{d}x}(120x - 2x^2) \\cr &= 120 - 4x \\end{aligned}",
+      "<strong>Step 5: Locate the stationary point</strong><br><br>Set $\\dfrac{\\text{d}A}{\\text{d}x} = 0$ to find the width that produces a stationary area:\\begin{aligned} 120 - 4x &= 0 \\cr 4x &= 120 \\cr x &= 30 \\end{aligned}To verify that this yields a maximum area, find the second derivative:\\begin{aligned} \\dfrac{\\text{d}^2A}{\\text{d}x^2} = -4 \\end{aligned}Since $-4 < 0$ for all values of $x$, this stationary point is confirmed to be a maximum.",
+      "<strong>Step 6: Find the corresponding dimensions and the maximum area</strong><br><br>Substitute $x = 30$ back into the linear expression for the length $y$:\\begin{aligned} y &= 120 - 2(30) \\cr &= 120 - 60 \\cr &= 60 \\text{ m} \\end{aligned}Now calculate the maximum area $A_{\\max}$:\\begin{aligned} A_{\\max} &= xy \\cr &= (30)(60) \\cr &= 1800 \\text{ m}^2 \\end{aligned}The maximum area of the sheep pen is $1800 \\text{ m}^2$, with dimensions $x = 30$ m and $y = 60$ m.",
+      "<strong>Final Answer</strong><br><strong>(a)</strong> $y = 120 - 2x$ <br><strong>(c)</strong> $A_{\\max} = 1800\\text{ m}^2, x = 30\\text{ m}, y = 60\\text{ m}$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $y = 120 - 2x$ <br><strong>(c)</strong> $A_{\\max} = 1800\\text{ m}^2, x = 30\\text{ m}, y = 30\\text{ m}$",
+        "feedback": "Your expression for $y$ in part (a) is correct, but you assumed the optimal shape must be a square ($x=y=30$) in part (c). This is only true if four sides are fenced; against a wall, the length $y$ should be $2x$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $y = 60 - x$ <br><strong>(c)</strong> $A_{\\max} = 900\\text{ m}^2, x = 30\\text{ m}, y = 30\\text{ m}$",
+        "feedback": "In part (a), you used the four-sided perimeter formula $2x+2y=120$. Since the wall is one side, the wire only covers $2x+y=120$. This error led to an incorrect area in part (c)."
+      },
+      {
+        "ans": "<strong>(a)</strong> $y = 120 - 2x$ <br><strong>(c)</strong> $A_{\\max} = 1800\\text{ m}^2, x = 40\\text{ m}, y = 40\\text{ m}$",
+        "feedback": "You correctly identified $y$ in part (a), but made a differentiation slip in part (c) when calculating the stationary point for the maximum area."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Three-Sided Fencing Rule",
+      "content": "For any rectangular enclosure optimized against a wall (requiring only three sides of fencing), the maximum area is always achieved when the length parallel to the wall is exactly twice the width perpendicular to it ($y = 2x$). Since our width is $30$ m and length is $60$ m, this matches the rule perfectly! Memorising this can help you instantly cross-check your results."
     }
-  ],
-  "bradley_insight": {
-    "type": "pro-tip",
-    "title": "The Head Teacher's Eye: Three-Sided Fencing Rule",
-    "content": "For any rectangular enclosure optimized against a wall (requiring only three sides of fencing), the maximum area is always achieved when the length parallel to the wall is exactly twice the width perpendicular to it ($y = 2x$). Since our width is $30$ m and length is $60$ m, this matches the rule perfectly! Memorising this can help you instantly cross-check your results."
-  }
-},
+  },
  {
   "id": "004416",
   "group_id": "004416",
