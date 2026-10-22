@@ -829,421 +829,421 @@ window.ALEVEL_QUESTIONS = [
     "content": "When simplifying expressions like $\\frac{6 \\pm 2\\sqrt{3}}{4}$, do not cancel terms individually! First, factorise out the greatest common factor from the numerator: $2(3 \\pm \\sqrt{3})$. Then, divide both the numerator GCF and the denominator by 2 to yield $\\frac{3 \\pm \\sqrt{3}}{2}$. This prevents the extremely common error of only dividing one of the terms in the numerator."
   }
 },
- {
-  "id": "004421",
-  "group_id": "004421",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Coordinate Geometry",
-  "topic": "Gradient, Perpendicularity, Midpoint",
-  "subtopic": [
-    "Coordinate Geometry using Algebraic Values"
-  ],
-  "img": false,
-  "question": "The points $A$ and $B$ have coordinates $(3a, a^2)$ and $(2a + 2, 2a)$ respectively, where $a \\neq 0$ and $a \\neq 2$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $A$, cuts the $x$-axis at the point $P$. Find, in terms of $a$, the coordinates of the point $P$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ has equal $x$ and $y$ ordinates. Find the possible values of $a$ in their simplest surd form. [5]",
-  "steps": [
-    "<strong>Step 1: Find the gradient of the line segment $AB$</strong><br><br>The gradient $m_{AB}$ is given by the gradient formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:\\begin{aligned} m_{AB} &= \\dfrac{2a - a^2}{(2a + 2) - 3a} \\cr &= \\dfrac{2a - a^2}{2 - a} \\cr &= \\dfrac{a(2 - a)}{2 - a} \\cr &= a \\end{aligned}Since $a \\neq 2$, the denominator is non-zero, and the gradient simplifies to $a$.",
-    "<strong>Step 2: Determine the equation of the perpendicular line</strong><br><br>Since the required line is perpendicular to $AB$, its gradient is the negative reciprocal of $m_{AB}$:\\begin{aligned} m_{\\perp} = -\\dfrac{1}{a} \\end{aligned}The equation of the line passing through $A(3a, a^2)$ is:\\begin{aligned} y - a^2 = -\\dfrac{1}{a}(x - 3a) \\end{aligned}",
-    "<strong>Step 3: Solve for the coordinates of $P$</strong><br><br>The line cuts the $x$-axis at $P$, so we set $y = 0$ to find the $x$-coordinate:\\begin{aligned} 0 - a^2 &= -\\dfrac{1}{a}(x - 3a) \\cr -a^2 &= -\\dfrac{x - 3a}{a} \\cr a^3 &= x - 3a \\cr x &= a^3 + 3a \\end{aligned}Thus, the coordinates of the point $P$ are $(a^3 + 3a, 0)$.",
-    "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br><br>The coordinates of the midpoint $M$ are found by averaging the coordinates of $A$ and $B$:\\begin{aligned} x_M &= \\dfrac{3a + (2a + 2)}{2} \\cr &= \\dfrac{5a + 2}{2} \\cr y_M &= \\dfrac{a^2 + 2a}{2} \\end{aligned}",
-    "<strong>Step 5: Set up and solve the quadratic equation</strong><br><br>Since the midpoint has equal $x$ and $y$ ordinates, set the $x$-coordinate equal to the $y$-coordinate:\\begin{aligned} \\dfrac{5a + 2}{2} &= \\dfrac{a^2 + 2a}{2} \\cr 5a + 2 &= a^2 + 2a \\cr a^2 - 3a - 2 &= 0 \\end{aligned}Solve this quadratic equation using the quadratic formula with $a=1$, $b=-3$, and $c=-2$:\\begin{aligned} a &= \\dfrac{-(-3) \\pm \\sqrt{(-3)^2 - 4(1)(-2)}}{2(1)} \\cr &= \\dfrac{3 \\pm \\sqrt{9 + 8}}{2} \\cr &= \\dfrac{3 \\pm \\sqrt{17}}{2} \\end{aligned}",
-    "Final Answer:\\begin{aligned} &\\text{(a) } P(a^3 + 3a, 0) \\cr &\\text{(b) } a = \\dfrac{3 \\pm \\sqrt{17}}{2} \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} &P(a^3 + 3a, 0) \\cr &a = \\dfrac{3 \\pm \\sqrt{5}}{2} \\end{aligned}",
-      "feedback": "You may have made a sign error when calculating the discriminant in the quadratic formula. Check that you used $-4ac = -4(1)(-2)$, which gives $+8$, leading to $9 + 8 = 17$, rather than subtracting to get $9 - 8 = 1$."
-    },
-    {
-      "ans": "\\begin{aligned} &P(a^3 - 3a, 0) \\cr &a = \\dfrac{3 \\pm \\sqrt{17}}{2} \\end{aligned}",
-      "feedback": "You may have made a sign error in Step 3 when rearranging $-a^2 = -\\dfrac{x - 3a}{a}$. Multiplying both sides by $-a$ gives $a^3 = x - 3a$, which rearranges to $x = a^3 + 3a$ (not $a^3 - 3a$)."
-    },
-    {
-      "ans": "\\begin{aligned} &P(a^3 + 3a, 0) \\cr &a = \\dfrac{-3 \\pm \\sqrt{17}}{2} \\end{aligned}",
-      "feedback": "You may have made a sign error in the quadratic formula when substituting $-b$. Since $b = -3$, $-b$ must be $+3$ (not $-3$)."
+  {
+    "id": "004421",
+    "group_id": "004421",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Gradient, Perpendicularity, Midpoint",
+    "subtopic": [
+      "Coordinate Geometry using Algebraic Values"
+    ],
+    "img": false,
+    "question": "The points $A$ and $B$ have coordinates $(3a, a^2)$ and $(2a + 2, 2a)$ respectively, where $a \\neq 0$ and $a \\neq 2$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $A$, cuts the $x$-axis at the point $P$. Find, in terms of $a$, the coordinates of the point $P$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ has equal $x$ and $y$ ordinates. Find the possible values of $a$ in their simplest surd form. [5]",
+    "steps": [
+      "<strong>Step 1: Find the gradient of the line segment $AB$</strong><br><br>The gradient $m_{AB}$ is given by the gradient formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:\\begin{aligned} m_{AB} &= \\dfrac{2a - a^2}{(2a + 2) - 3a} \\cr &= \\dfrac{2a - a^2}{2 - a} \\cr &= \\dfrac{a(2 - a)}{2 - a} \\cr &= a \\end{aligned}Since $a \\neq 2$, the denominator is non-zero, and the gradient simplifies to $a$.",
+      "<strong>Step 2: Determine the equation of the perpendicular line</strong><br><br>Since the required line is perpendicular to $AB$, its gradient is the negative reciprocal of $m_{AB}$:\\begin{aligned} m_{\\perp} = -\\dfrac{1}{a} \\end{aligned}The equation of the line passing through $A(3a, a^2)$ is:\\begin{aligned} y - a^2 = -\\dfrac{1}{a}(x - 3a) \\end{aligned}",
+      "<strong>Step 3: Solve for the coordinates of $P$</strong><br><br>The line cuts the $x$-axis at $P$, so we set $y = 0$ to find the $x$-coordinate:\\begin{aligned} 0 - a^2 &= -\\dfrac{1}{a}(x - 3a) \\cr -a^2 &= -\\dfrac{x - 3a}{a} \\cr a^3 &= x - 3a \\cr x &= a^3 + 3a \\end{aligned}Thus, the coordinates of the point $P$ are $(a^3 + 3a, 0)$.",
+      "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br><br>The coordinates of the midpoint $M$ are found by averaging the coordinates of $A$ and $B$:\\begin{aligned} x_M &= \\dfrac{3a + (2a + 2)}{2} \\cr &= \\dfrac{5a + 2}{2} \\cr y_M &= \\dfrac{a^2 + 2a}{2} \\end{aligned}",
+      "<strong>Step 5: Set up and solve the quadratic equation</strong><br><br>Since the midpoint has equal $x$ and $y$ ordinates, set the $x$-coordinate equal to the $y$-coordinate:\\begin{aligned} \\dfrac{5a + 2}{2} &= \\dfrac{a^2 + 2a}{2} \\cr 5a + 2 &= a^2 + 2a \\cr a^2 - 3a - 2 &= 0 \\end{aligned}Solve this quadratic equation using the quadratic formula with $a=1$, $b=-3$, and $c=-2$:\\begin{aligned} a &= \\dfrac{-(-3) \\pm \\sqrt{(-3)^2 - 4(1)(-2)}}{2(1)} \\cr &= \\dfrac{3 \\pm \\sqrt{9 + 8}}{2} \\cr &= \\dfrac{3 \\pm \\sqrt{17}}{2} \\end{aligned}",
+      "Final Answer:<br><strong>(a)</strong> $P(a^3 + 3a, 0)$ <br><strong>(b)</strong> $a = \\dfrac{3 \\pm \\sqrt{17}}{2}$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $P(a^3 + 3a, 0)$ <br><strong>(b)</strong> $a = \\dfrac{3 \\pm \\sqrt{5}}{2}$ ",
+        "feedback": "In part (b), you may have made a sign error when calculating the discriminant. $9 - 4(1)(-2) = 17$, not 5."
+      },
+      {
+        "ans": "<strong>(a)</strong> $P(a^3 - 3a, 0)$ <br><strong>(b)</strong> $a = \\dfrac{3 \\pm \\sqrt{17}}{2}$ ",
+        "feedback": "In part (a), you made a sign error when rearranging the equation for $x$. Multiplying $-a^2$ by $-a$ gives positive $a^3$, and adding $3a$ to the other side gives $a^3 + 3a$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $P(a^3 + 3a, 0)$ <br><strong>(b)</strong> $a = \\dfrac{-3 \\pm \\sqrt{17}}{2}$ ",
+        "feedback": "In part (b), you made a sign error when substituting $-b$ into the quadratic formula. Since $b = -3$, the leading term should be positive 3."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Algebraic Simplification of Gradients",
+      "content": "When dealing with coordinates containing variables, always look for factorisation in your gradient calculations. Factoring out $a$ in $2a - a^2 = a(2 - a)$ allowed us to cleanly cancel $(2 - a)$. If you had not noticed this factorisation, your perpendicular line equation would have become algebraically unmanageable!"
     }
-  ],
-  "bradley_insight": {
-    "type": "pro-tip",
-    "title": "The Head Teacher's Eye: Algebraic Simplification of Gradients",
-    "content": "When dealing with coordinates containing variables, always look for factorisation in your gradient calculations. Factoring out $a$ in $2a - a^2 = a(2 - a)$ allowed us to cleanly cancel $(2 - a)$. If you had not noticed this factorisation, your perpendicular line equation would have become algebraically unmanageable!"
-  }
-},
-{
-  "id": "004422",
-  "group_id": "004421",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Coordinate Geometry",
-  "topic": "Gradient, Perpendicularity, Midpoint",
-  "subtopic": [
-    "Coordinate Geometry using Algebraic Values"
-  ],
-  "img": false,
-  "question": "The points $A$ and $B$ have coordinates $(4a, a^2)$ and $(3a + 3, 3a)$ respectively, where $a \\neq 0$ and $a \\neq 3$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $B$, cuts the $y$-axis at the point $Q$. Find, in terms of $a$, the coordinates of the point $Q$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ has equal $x$ and $y$ ordinates. Find the possible values of $a$ in their simplest surd form. [5]",
-  "steps": [
-    "<strong>Step 1: Find the gradient of the line segment $AB$</strong><br><br>The gradient $m_{AB}$ is given by the gradient formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:\\begin{aligned} m_{AB} &= \\dfrac{3a - a^2}{(3a + 3) - 4a} \\cr &= \\dfrac{3a - a^2}{3 - a} \\cr &= \\dfrac{a(3 - a)}{3 - a} \\cr &= a \\end{aligned}Since $a \\neq 3$, the denominator is non-zero, and the gradient simplifies to $a$.",
-    "<strong>Step 2: Determine the equation of the perpendicular line</strong><br><br>Since the required line is perpendicular to $AB$, its gradient is the negative reciprocal of $m_{AB}$:\\begin{aligned} m_{\\perp} = -\\dfrac{1}{a} \\end{aligned}The equation of the line passing through $B(3a + 3, 3a)$ is:\\begin{aligned} y - 3a = -\\dfrac{1}{a}(x - (3a + 3)) \\end{aligned}",
-    "<strong>Step 3: Solve for the coordinates of $Q$</strong><br><br>The line cuts the $y$-axis at $Q$, so we set $x = 0$ to find the $y$-coordinate:\\begin{aligned} y - 3a &= -\\dfrac{1}{a}(0 - (3a + 3)) \\cr y - 3a &= \\dfrac{3a + 3}{a} \\cr y &= 3a + \\dfrac{3a + 3}{a} \\cr &= 3a + 3 + \\dfrac{3}{a} \\end{aligned}Thus, the coordinates of the point $Q$ are $\\left(0, 3a + 3 + \\dfrac{3}{a}\\right)$.",
-    "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br><br>The coordinates of the midpoint $M$ are found by averaging the coordinates of $A$ and $B$:\\begin{aligned} x_M &= \\dfrac{4a + (3a + 3)}{2} \\cr &= \\dfrac{7a + 3}{2} \\cr y_M &= \\dfrac{a^2 + 3a}{2} \\end{aligned}",
-    "<strong>Step 5: Set up and solve the quadratic equation</strong><br><br>Since the midpoint has equal $x$ and $y$ ordinates, set the $x$-coordinate equal to the $y$-coordinate:\\begin{aligned} \\dfrac{7a + 3}{2} &= \\dfrac{a^2 + 3a}{2} \\cr 7a + 3 &= a^2 + 3a \\cr a^2 - 4a - 3 &= 0 \\end{aligned}Solve this quadratic equation using the quadratic formula with $a=1$, $b=-4$, and $c=-3$:\\begin{aligned} a &= \\dfrac{-(-4) \\pm \\sqrt{(-4)^2 - 4(1)(-3)}}{2(1)} \\cr &= \\dfrac{4 \\pm \\sqrt{16 + 12}}{2} \\cr &= \\dfrac{4 \\pm \\sqrt{28}}{2} \\cr &= \\dfrac{4 \\pm 2\\sqrt{7}}{2} \\cr &= 2 \\pm \\sqrt{7} \\end{aligned}",
-    "Final Answer:\\begin{aligned} &\\text{(a) } Q\\left(0, 3a + 3 + \\dfrac{3}{a}\\right) \\cr &\\text{(b) } a = 2 \\pm \\sqrt{7} \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} &Q\\left(0, 3a + 3 + \\dfrac{3}{a}\\right) \\cr &a = 2 \\pm \\sqrt{5} \\end{aligned}",
-      "feedback": "You may have made an arithmetic sign error in Step 5 when calculating the discriminant, writing $-4ac = -12$ instead of $+12$, which leads to $\\sqrt{16 - 12} = 2$."
-    },
-    {
-      "ans": "\\begin{aligned} &Q\\left(0, 3a - 3 - \\dfrac{3}{a}\\right) \\cr &a = 2 \\pm \\sqrt{7} \\end{aligned}",
-      "feedback": "You may have made a sign distribution error in Step 3 when simplifying the double negatives. Note that $-\\dfrac{1}{a}(0 - (3a + 3)) = +\\dfrac{3a + 3}{a}$."
-    },
-    {
-      "ans": "\\begin{aligned} &Q\\left(0, 3a + 3 + \\dfrac{3}{a}\\right) \\cr &a = -2 \\pm \\sqrt{7} \\end{aligned}",
-      "feedback": "You may have made a sign error when substituting $-b$ in the quadratic formula. Since $b = -4$, your $-b$ term must be $+4$ (not $-4$)."
+  },
+  {
+    "id": "004422",
+    "group_id": "004421",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Gradient, Perpendicularity, Midpoint",
+    "subtopic": [
+      "Coordinate Geometry using Algebraic Values"
+    ],
+    "img": false,
+    "question": "The points $A$ and $B$ have coordinates $(4a, a^2)$ and $(3a + 3, 3a)$ respectively, where $a \\neq 0$ and $a \\neq 3$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $B$, cuts the $y$-axis at the point $Q$. Find, in terms of $a$, the coordinates of the point $Q$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ has equal $x$ and $y$ ordinates. Find the possible values of $a$ in their simplest surd form. [5]",
+    "steps": [
+      "<strong>Step 1: Find the gradient of the line segment $AB$</strong><br><br>The gradient $m_{AB}$ is given by the gradient formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:\\begin{aligned} m_{AB} &= \\dfrac{3a - a^2}{(3a + 3) - 4a} \\cr &= \\dfrac{3a - a^2}{3 - a} \\cr &= \\dfrac{a(3 - a)}{3 - a} \\cr &= a \\end{aligned}Since $a \\neq 3$, the denominator is non-zero, and the gradient simplifies to $a$.",
+      "<strong>Step 2: Determine the equation of the perpendicular line</strong><br><br>Since the required line is perpendicular to $AB$, its gradient is the negative reciprocal of $m_{AB}$:\\begin{aligned} m_{\\perp} = -\\dfrac{1}{a} \\end{aligned}The equation of the line passing through $B(3a + 3, 3a)$ is:\\begin{aligned} y - 3a = -\\dfrac{1}{a}(x - (3a + 3)) \\end{aligned}",
+      "<strong>Step 3: Solve for the coordinates of $Q$</strong><br><br>The line cuts the $y$-axis at $Q$, so we set $x = 0$ to find the $y$-coordinate:\\begin{aligned} y - 3a &= -\\dfrac{1}{a}(0 - (3a + 3)) \\cr y - 3a &= \\dfrac{3a + 3}{a} \\cr y &= 3a + \\dfrac{3a + 3}{a} \\cr &= 3a + 3 + \\dfrac{3}{a} \\end{aligned}Thus, the coordinates of the point $Q$ are $\\left(0, 3a + 3 + \\dfrac{3}{a}\\right)$.",
+      "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br><br>The coordinates of the midpoint $M$ are found by averaging the coordinates of $A$ and $B$:\\begin{aligned} x_M &= \\dfrac{4a + (3a + 3)}{2} \\cr &= \\dfrac{7a + 3}{2} \\cr y_M &= \\dfrac{a^2 + 3a}{2} \\end{aligned}",
+      "<strong>Step 5: Set up and solve the quadratic equation</strong><br><br>Since the midpoint has equal $x$ and $y$ ordinates, set the $x$-coordinate equal to the $y$-coordinate:\\begin{aligned} \\dfrac{7a + 3}{2} &= \\dfrac{a^2 + 3a}{2} \\cr 7a + 3 &= a^2 + 3a \\cr a^2 - 4a - 3 &= 0 \\end{aligned}Solve this quadratic equation using the quadratic formula with $a=1$, $b=-4$, and $c=-3$:\\begin{aligned} a &= \\dfrac{-(-4) \\pm \\sqrt{(-4)^2 - 4(1)(-3)}}{2(1)} \\cr &= \\dfrac{4 \\pm \\sqrt{16 + 12}}{2} \\cr &= \\dfrac{4 \\pm \\sqrt{28}}{2} \\cr &= \\dfrac{4 \\pm 2\\sqrt{7}}{2} \\cr &= 2 \\pm \\sqrt{7} \\end{aligned}",
+      "Final Answer:<br><strong>(a)</strong> $Q\\left(0, 3a + 3 + \\dfrac{3}{a}\\right)$ <br><strong>(b)</strong> $a = 2 \\pm \\sqrt{7}$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $Q\\left(0, 3a + 3 + \\dfrac{3}{a}\\right)$ <br><strong>(b)</strong> $a = 2 \\pm \\sqrt{5}$ ",
+        "feedback": "In part (b), check your discriminant calculation. $16 - 4(1)(-3) = 28$, not 20. This leads to the $\\sqrt{7}$ term after simplification."
+      },
+      {
+        "ans": "<strong>(a)</strong> $Q\\left(0, 3a - 3 - \\dfrac{3}{a}\\right)$ <br><strong>(b)</strong> $a = 2 \\pm \\sqrt{7}$ ",
+        "feedback": "In part (a), you made a sign error when handling the double negatives. The negative gradient and the negative constant in the bracket should combine to a positive fraction."
+      },
+      {
+        "ans": "<strong>(a)</strong> $Q\\left(0, 3a + 3 + \\dfrac{3}{a}\\right)$ <br><strong>(b)</strong> $a = -2 \\pm \\sqrt{7}$ ",
+        "feedback": "In part (b), the quadratic formula $-b$ term should be positive 4, as $b = -4$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Expanding Brackets with Negative Signs",
+      "content": "In part (a), pay extremely close attention to the negative signs when setting up the perpendicular line. The term $x - (3a + 3)$ has nested brackets. Distributing the negative gradient $-1/a$ across a negative bracket requires careful sign-tracking: the double negatives cancel to produce a clean, positive fraction $\\frac{3a + 3}{a}$. Work slowly on these steps to avoid dropping easy accuracy marks."
     }
-  ],
-  "bradley_insight": {
-    "type": "caution",
-    "title": "The Head Teacher's Eye: Expanding Brackets with Negative Signs",
-    "content": "In part (a), pay extremely close attention to the negative signs when setting up the perpendicular line. The term $x - (3a + 3)$ has nested brackets. Distributing the negative gradient $-1/a$ across a negative bracket requires careful sign-tracking: the double negatives cancel to produce a clean, positive fraction $\\frac{3a + 3}{a}$. Work slowly on these steps to avoid dropping easy accuracy marks."
-  }
-},
-{
-  "id": "004423",
-  "group_id": "004421",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Coordinate Geometry",
-  "topic": "Gradient, Perpendicularity, Midpoint",
-  "subtopic": [
-    "Coordinate Geometry using Algebraic Values"
-  ],
-  "img": false,
-  "question": "The points $A$ and $B$ have coordinates $(2a, 2a^2)$ and $(a + 1, 2a)$ respectively, where $a \\neq 0$ and $a \\neq 1$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $B$, cuts the $x$-axis at the point $P$. Find, in terms of $a$, the coordinates of the point $P$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ has equal $x$ and $y$ ordinates. Find the possible values of $a$. [5]",
-  "steps": [
-    "<strong>Step 1: Find the gradient of the line segment $AB$</strong><br><br>The gradient $m_{AB}$ is calculated using the gradient formula:\\begin{aligned} m_{AB} &= \\dfrac{2a - 2a^2}{(a + 1) - 2a} \\cr &= \\dfrac{2a(1 - a)}{1 - a} \\cr &= 2a \\end{aligned}Since $a \\neq 1$, the denominator is non-zero, and the gradient simplifies to $2a$.",
-    "<strong>Step 2: Determine the equation of the perpendicular line</strong><br><br>Since the required line is perpendicular to $AB$, its gradient is the negative reciprocal of $2a$:\\begin{aligned} m_{\\perp} = -\\dfrac{1}{2a} \\end{aligned}The equation of the line passing through $B(a + 1, 2a)$ is:\\begin{aligned} y - 2a = -\\dfrac{1}{2a}(x - (a + 1)) \\end{aligned}",
-    "<strong>Step 3: Solve for the coordinates of $P$</strong><br><br>The line cuts the $x$-axis at $P$, so we set $y = 0$ to find the $x$-coordinate:\\begin{aligned} 0 - 2a &= -\\dfrac{1}{2a}(x - a - 1) \\cr -2a &= -\\dfrac{x - a - 1}{2a} \\cr 4a^2 &= x - a - 1 \\cr x &= 4a^2 + a + 1 \\end{aligned}Thus, the coordinates of the point $P$ are $(4a^2 + a + 1, 0)$.",
-    "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br><br>The coordinates of the midpoint $M$ are calculated by averaging coordinates:\\begin{aligned} x_M &= \\dfrac{2a + (a + 1)}{2} \\cr &= \\dfrac{3a + 1}{2} \\cr y_M &= \\dfrac{2a^2 + 2a}{2} \\cr &= a^2 + a \\end{aligned}",
-    "<strong>Step 5: Set up and solve the quadratic equation</strong><br><br>Since the midpoint has equal $x$ and $y$ ordinates, set the $x$-coordinate equal to the $y$-coordinate:\\begin{aligned} \\dfrac{3a + 1}{2} &= a^2 + a \\cr 3a + 1 &= 2a^2 + 2a \\cr 2a^2 - a - 1 &= 0 \\cr (2a + 1)(a - 1) &= 0 \\cr a &= -\\dfrac{1}{2} \\text{ or } a = 1 \\end{aligned}Since the initial conditions of the problem specify that $a \\neq 1$, we must discard $a = 1$. This leaves the only valid solution as $a = -\\dfrac{1}{2}$.",
-    "Final Answer:\\begin{aligned} &\\text{(a) } P(4a^2 + a + 1, 0) \\cr &\\text{(b) } a = -\\dfrac{1}{2} \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} &P(4a^2 + a + 1, 0) \\cr &a = 1 \\text{ or } a = -\\dfrac{1}{2} \\end{aligned}",
-      "feedback": "You did some excellent algebraic work, but you forgot to check the boundary constraints given in the question. Since the problem explicitly states $a \\neq 1$, you must discard the root $a = 1$."
-    },
-    {
-      "ans": "\\begin{aligned} &P(4a^2 - a - 1, 0) \\cr &a = -\\dfrac{1}{2} \\end{aligned}",
-      "feedback": "You may have made a sign error when solving the equation $-2a = -\\dfrac{x - a - 1}{2a}$. This should simplify to $4a^2 = x - a - 1$, which gives $x = 4a^2 + a + 1$ (not $4a^2 - a - 1$)."
-    },
-    {
-      "ans": "\\begin{aligned} &P(4a^2 + a + 1, 0) \\cr &a = \\dfrac{1}{2} \\end{aligned}",
-      "feedback": "You may have made a sign error when factorising the quadratic equation $2a^2 - a - 1 = 0$. It factorises to $(2a + 1)(a - 1) = 0$, which yields $a = -\\dfrac{1}{2}$ (not $+\\dfrac{1}{2}$)."
+  },
+  {
+    "id": "004423",
+    "group_id": "004421",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Gradient, Perpendicularity, Midpoint",
+    "subtopic": [
+      "Coordinate Geometry using Algebraic Values"
+    ],
+    "img": false,
+    "question": "The points $A$ and $B$ have coordinates $(2a, 2a^2)$ and $(a + 1, 2a)$ respectively, where $a \\neq 0$ and $a \\neq 1$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $B$, cuts the $x$-axis at the point $P$. Find, in terms of $a$, the coordinates of the point $P$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ has equal $x$ and $y$ ordinates. Find the possible values of $a$. [5]",
+    "steps": [
+      "<strong>Step 1: Find the gradient of the line segment $AB$</strong><br><br>The gradient $m_{AB}$ is calculated using the gradient formula:\\begin{aligned} m_{AB} &= \\dfrac{2a - 2a^2}{(a + 1) - 2a} \\cr &= \\dfrac{2a(1 - a)}{1 - a} \\cr &= 2a \\end{aligned}Since $a \\neq 1$, the denominator is non-zero, and the gradient simplifies to $2a$.",
+      "<strong>Step 2: Determine the equation of the perpendicular line</strong><br><br>Since the required line is perpendicular to $AB$, its gradient is the negative reciprocal of $2a$:\\begin{aligned} m_{\\perp} = -\\dfrac{1}{2a} \\end{aligned}The equation of the line passing through $B(a + 1, 2a)$ is:\\begin{aligned} y - 2a = -\\dfrac{1}{2a}(x - (a + 1)) \\end{aligned}",
+      "<strong>Step 3: Solve for the coordinates of $P$</strong><br><br>The line cuts the $x$-axis at $P$, so we set $y = 0$ to find the $x$-coordinate:\\begin{aligned} 0 - 2a &= -\\dfrac{1}{2a}(x - a - 1) \\cr -2a &= -\\dfrac{x - a - 1}{2a} \\cr 4a^2 &= x - a - 1 \\cr x &= 4a^2 + a + 1 \\end{aligned}Thus, the coordinates of the point $P$ are $(4a^2 + a + 1, 0)$.",
+      "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br><br>The coordinates of the midpoint $M$ are calculated by averaging coordinates:\\begin{aligned} x_M &= \\dfrac{2a + (a + 1)}{2} \\cr &= \\dfrac{3a + 1}{2} \\cr y_M &= \\dfrac{2a^2 + 2a}{2} \\cr &= a^2 + a \\end{aligned}",
+      "<strong>Step 5: Set up and solve the quadratic equation</strong><br><br>Since the midpoint has equal $x$ and $y$ ordinates, set the $x$-coordinate equal to the $y$-coordinate:\\begin{aligned} \\dfrac{3a + 1}{2} &= a^2 + a \\cr 3a + 1 &= 2a^2 + 2a \\cr 2a^2 - a - 1 &= 0 \\cr (2a + 1)(a - 1) &= 0 \\cr a &= -\\dfrac{1}{2} \\text{ or } a = 1 \\end{aligned}Since the initial conditions of the problem specify that $a \\neq 1$, we must discard $a = 1$. This leaves the only valid solution as $a = -\\dfrac{1}{2}$.",
+      "Final Answer:<br><strong>(a)</strong> $P(4a^2 + a + 1, 0)$ <br><strong>(b)</strong> $a = -\\dfrac{1}{2}$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $P(4a^2 + a + 1, 0)$ <br><strong>(b)</strong> $a = 1 \\text{ or } a = -\\dfrac{1}{2}$ ",
+        "feedback": "You found both roots in part (b) but forgot to apply the constraint $a \\neq 1$ given in the question. Undefined gradients must be discarded."
+      },
+      {
+        "ans": "<strong>(a)</strong> $P(4a^2 - a - 1, 0)$ <br><strong>(b)</strong> $a = -\\dfrac{1}{2}$ ",
+        "feedback": "In part (a), you made a sign error when solving the algebraic equation for $x$. Multiplying $-2a$ by $-2a$ results in positive $4a^2$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $P(4a^2 + a + 1, 0)$ <br><strong>(b)</strong> $a = \\dfrac{1}{2}$ ",
+        "feedback": "In part (b), you made a sign error during factorization. $2a^2 - a - 1 = 0$ gives $a = -1/2$ and $a = 1$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "deeper",
+      "title": "The Head Teacher's Eye: Discarding Invalid Roots From Constraints",
+      "content": "Always read the first sentence of a coordinate geometry question carefully! The condition $a \\neq 1$ is not just decorative; it is mathematically required because if $a = 1$, the gradient of $AB$ would have a zero in the denominator and be undefined. In part (b), we had to discard $a = 1$ to maintain mathematical consistency. Leaving it in would cost you accuracy marks."
     }
-  ],
-  "bradley_insight": {
-    "type": "deeper",
-    "title": "The Head Teacher's Eye: Discarding Invalid Roots From Constraints",
-    "content": "Always read the first sentence of a coordinate geometry question carefully! The condition $a \\neq 1$ is not just decorative; it is mathematically required because if $a = 1$, the gradient of $AB$ would have a zero in the denominator and be undefined. In part (b), we had to discard $a = 1$ to maintain mathematical consistency. Leaving it in would cost you accuracy marks."
-  }
-},
-{
-  "id": "004424",
-  "group_id": "004421",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Coordinate Geometry",
-  "topic": "Gradient, Perpendicularity, Midpoint",
-  "subtopic": [
-    "Coordinate Geometry using Algebraic Values"
-  ],
-  "img": false,
-  "question": "The points $A$ and $B$ have coordinates $(2a, a^2)$ and $(a + 1, a)$ respectively, where $a \\neq 0$ and $a \\neq 1$.<br><br><strong>(a)</strong> A straight line, parallel to $AB$ and passing through the origin $O(0,0)$, cuts the vertical line $x = a$ at the point $Q$. Find, in terms of $a$, the coordinates of the point $Q$. [6]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ lies on the line $y = 2x$. Find the possible values of $a$ in their simplest surd form. [7]",
-  "steps": [
-    "<strong>Step 1: Find the gradient of $AB$</strong><br><br>The gradient $m_{AB}$ is given by the change in $y$ over change in $x$:\\begin{aligned} m_{AB} &= \\dfrac{a - a^2}{(a + 1) - 2a} \\cr &= \\dfrac{a(1 - a)}{1 - a} \\cr &= a \\end{aligned}Since $a \\neq 1$, the gradient simplifies to $a$.",
-    "<strong>Step 2: Find the equation of the parallel line</strong><br><br>Since the required line is parallel to $AB$, its gradient is equal to $m_{AB} = a$. The line passes through the origin $O(0,0)$, so its equation is simply:\\begin{aligned} y = ax \\end{aligned}",
-    "<strong>Step 3: Solve for the coordinates of $Q$</strong><br><br>The line cuts the vertical line $x = a$ at the point $Q$. Substitute $x = a$ into your line equation to find $y$:\\begin{aligned} y &= a(a) \\cr &= a^2 \\end{aligned}Thus, the coordinates of the point $Q$ are $(a, a^2)$.",
-    "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br><br>The coordinates of the midpoint $M$ are calculated using the midpoint formula:\\begin{aligned} x_M &= \\dfrac{2a + (a + 1)}{2} \\cr &= \\dfrac{3a + 1}{2} \\cr y_M &= \\dfrac{a^2 + a}{2} \\end{aligned}",
-    "<strong>Step 5: Set up and solve the equation under the line constraint</strong><br><br>Since the midpoint lies on $y = 2x$, substitute the coordinates of $M$ directly into this line equation:\\begin{aligned} \\dfrac{a^2 + a}{2} &= 2\\left( \\dfrac{3a + 1}{2} \\right) \\cr a^2 + a &= 2(3a + 1) \\cr a^2 + a &= 6a + 2 \\cr a^2 - 5a - 2 &= 0 \\end{aligned}Solve this using the quadratic formula with $a=1$, $b=-5$, and $c=-2$:\\begin{aligned} a &= \\dfrac{-(-5) \\pm \\sqrt{(-5)^2 - 4(1)(-2)}}{2(1)} \\cr &= \\dfrac{5 \\pm \\sqrt{25 + 8}}{2} \\cr &= \\dfrac{5 \\pm \\sqrt{33}}{2} \\end{aligned}",
-    "Final Answer:\\begin{aligned} &\\text{(a) } Q(a, a^2) \\cr &\\text{(b) } a = \\dfrac{5 \\pm \\sqrt{33}}{2} \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} &Q(a, a^2) \\cr &a = \\dfrac{5 \\pm \\sqrt{17}}{2} \\end{aligned}",
-      "feedback": "You may have made an arithmetic sign error in Step 5 when calculating the discriminant, writing $-4ac = -8$ instead of $+8$, leading to $25 - 8 = 17$ instead of $25 + 8 = 33$."
-    },
-    {
-      "ans": "\\begin{aligned} &Q\\left(a, -\\dfrac{1}{a}\\right) \\cr &a = \\dfrac{5 \\pm \\sqrt{33}}{2} \\end{aligned}",
-      "feedback": "You may have misread the question and assumed the line was perpendicular to $AB$ rather than parallel. Parallel lines share the exact same gradient, so $m = a$ (not $-1/a$)."
-    },
-    {
-      "ans": "\\begin{aligned} &Q(a, a^2) \\cr &a = \\dfrac{-5 \\pm \\sqrt{33}}{2} \\end{aligned}",
-      "feedback": "You may have made a sign error when substituting $-b$ in the quadratic formula. Since $b = -5$, $-b$ must be $+5$ (not $-5$)."
+  },
+  {
+    "id": "004424",
+    "group_id": "004421",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Gradient, Perpendicularity, Midpoint",
+    "subtopic": [
+      "Coordinate Geometry using Algebraic Values"
+    ],
+    "img": false,
+    "question": "The points $A$ and $B$ have coordinates $(2a, a^2)$ and $(a + 1, a)$ respectively, where $a \\neq 0$ and $a \\neq 1$.<br><br><strong>(a)</strong> A straight line, parallel to $AB$ and passing through the origin $O(0,0)$, cuts the vertical line $x = a$ at the point $Q$. Find, in terms of $a$, the coordinates of the point $Q$. [6]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ lies on the line $y = 2x$. Find the possible values of $a$ in their simplest surd form. [7]",
+    "steps": [
+      "<strong>Step 1: Find the gradient of $AB$</strong><br><br>The gradient $m_{AB}$ is given by the change in $y$ over change in $x$:\\begin{aligned} m_{AB} &= \\dfrac{a - a^2}{(a + 1) - 2a} \\cr &= \\dfrac{a(1 - a)}{1 - a} \\cr &= a \\end{aligned}Since $a \\neq 1$, the gradient simplifies to $a$.",
+      "<strong>Step 2: Find the equation of the parallel line</strong><br><br>Since the required line is parallel to $AB$, its gradient is equal to $m_{AB} = a$. The line passes through the origin $O(0,0)$, so its equation is simply:\\begin{aligned} y = ax \\end{aligned}",
+      "<strong>Step 3: Solve for the coordinates of $Q$</strong><br><br>The line cuts the vertical line $x = a$ at the point $Q$. Substitute $x = a$ into your line equation to find $y$:\\begin{aligned} y &= a(a) \\cr &= a^2 \\end{aligned}Thus, the coordinates of the point $Q$ are $(a, a^2)$.",
+      "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br><br>The coordinates of the midpoint $M$ are calculated using the midpoint formula:\\begin{aligned} x_M &= \\dfrac{2a + (a + 1)}{2} \\cr &= \\dfrac{3a + 1}{2} \\cr y_M &= \\dfrac{a^2 + a}{2} \\end{aligned}",
+      "<strong>Step 5: Set up and solve the equation under the line constraint</strong><br><br>Since the midpoint lies on $y = 2x$, substitute the coordinates of $M$ directly into this line equation:\\begin{aligned} \\dfrac{a^2 + a}{2} &= 2\\left( \\dfrac{3a + 1}{2} \\right) \\cr a^2 + a &= 2(3a + 1) \\cr a^2 + a &= 6a + 2 \\cr a^2 - 5a - 2 &= 0 \\end{aligned}Solve this using the quadratic formula with $a=1$, $b=-5$, and $c=-2$:\\begin{aligned} a &= \\dfrac{-(-5) \\pm \\sqrt{(-5)^2 - 4(1)(-2)}}{2(1)} \\cr &= \\dfrac{5 \\pm \\sqrt{25 + 8}}{2} \\cr &= \\dfrac{5 \\pm \\sqrt{33}}{2} \\end{aligned}",
+      "Final Answer:<br><strong>(a)</strong> $Q(a, a^2)$ <br><strong>(b)</strong> $a = \\dfrac{5 \\pm \\sqrt{33}}{2}$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $Q(a, a^2)$ <br><strong>(b)</strong> $a = \\dfrac{5 \\pm \\sqrt{17}}{2}$ ",
+        "feedback": "In part (b), check the discriminant calculation. $-4(1)(-2)$ results in $+8$, so you should have $\\sqrt{25+8} = \\sqrt{33}$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $Q\\left(a, -\\dfrac{1}{a}\\right)$ <br><strong>(b)</strong> $a = \\dfrac{5 \\pm \\sqrt{33}}{2}$ ",
+        "feedback": "In part (a), you used a perpendicular gradient. The question specifies a parallel line, which must use the same gradient, $m = a$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $Q(a, a^2)$ <br><strong>(b)</strong> $a = \\dfrac{-5 \\pm \\sqrt{33}}{2}$ ",
+        "feedback": "In part (b), the quadratic formula term $-b$ should be positive 5, as $b = -5$ in our equation."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Parallel vs. Perpendicular Gradients",
+      "content": "Do not automatically assume coordinate geometry lines are perpendicular! This is a common habit because perpendicular lines are frequently tested. Read carefully: parallel lines have identical gradients $(m_1 = m_2)$, whereas perpendicular lines have negative reciprocal gradients $(m_1 \\cdot m_2 = -1)$. A simple misread here will change your entire algebra path."
     }
-  ],
-  "bradley_insight": {
-    "type": "pro-tip",
-    "title": "The Head Teacher's Eye: Parallel vs. Perpendicular Gradients",
-    "content": "Do not automatically assume coordinate geometry lines are perpendicular! This is a common habit because perpendicular lines are frequently tested. Read carefully: parallel lines have identical gradients $(m_1 = m_2)$, whereas perpendicular lines have negative reciprocal gradients $(m_1 \\cdot m_2 = -1)$. A simple misread here will change your entire algebra path."
-  }
-},
-{
-  "id": "004425",
-  "group_id": "004421",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-   "major_area": "Coordinate Geometry",
-  "topic": "Gradient, Perpendicularity, Midpoint",
-  "subtopic": [
-    "Coordinate Geometry using Algebraic Values"
-  ],
-  "img": false,
-  "question": "The points $A$ and $B$ have coordinates $(2a, a^2)$ and $(a + 2, 2a)$ respectively, where $a \\neq 0$ and $a \\neq 2$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $B$, cuts the $y$-axis at the point $Q$. Find, in terms of $a$, the coordinates of the point $Q$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ lies on the line $y = x - 1$. Find the possible value of $a$. [5]",
-  "steps": [
-    "<strong>Step 1: Find the gradient of the line segment $AB$</strong><br><br>The gradient $m_{AB}$ is:\\begin{aligned} m_{AB} &= \\dfrac{2a - a^2}{(a + 2) - 2a} \\cr &= \\dfrac{2a - a^2}{2 - a} \\cr &= \\dfrac{a(2 - a)}{2 - a} \\cr &= a \\end{aligned}Since $a \\neq 2$, the gradient simplifies to $a$.",
-    "<strong>Step 2: Determine the equation of the perpendicular line</strong><br><br>Since the required line is perpendicular to $AB$, its gradient is the negative reciprocal of $m_{AB}$:\\begin{aligned} m_{\\perp} = -\\dfrac{1}{a} \\end{aligned}The equation of the line passing through $B(a + 2, 2a)$ is:\\begin{aligned} y - 2a = -\\dfrac{1}{a}(x - (a + 2)) \\end{aligned}",
-    "<strong>Step 3: Solve for the coordinates of $Q$</strong><br><br>The line cuts the $y$-axis at $Q$, so we set $x = 0$ to find the $y$-coordinate:\\begin{aligned} y - 2a &= -\\dfrac{1}{a}(0 - (a + 2)) \\cr y - 2a &= \\dfrac{a + 2}{a} \\cr y &= 2a + \\dfrac{a + 2}{a} \\end{aligned}Thus, the coordinates of the point $Q$ are $\\left(0, 2a + \\dfrac{a + 2}{a}\\right)$.",
-    "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br><br>The coordinates of the midpoint $M$ are:\\begin{aligned} x_M &= \\dfrac{2a + (a + 2)}{2} \\cr &= \\dfrac{3a + 2}{2} \\cr y_M &= \\dfrac{a^2 + 2a}{2} \\end{aligned}",
-    "<strong>Step 5: Set up and solve the equation under the line constraint</strong><br><br>Since the midpoint lies on $y = x - 1$, substitute the coordinates of $M$ directly into this line equation:\\begin{aligned} \\dfrac{a^2 + 2a}{2} &= \\dfrac{3a + 2}{2} - 1 \\cr &= \\dfrac{3a + 2 - 2}{2} \\cr &= \\dfrac{3a}{2} \\cr a^2 + 2a &= 3a \\cr a^2 - a &= 0 \\cr a(a - 1) &= 0 \\cr a &= 0 \\text{ or } a = 1 \\end{aligned}Since the initial conditions specify $a \\neq 0$, we discard $a = 0$. This leaves our only valid solution as $a = 1$.",
-    "Final Answer:\\begin{aligned} &\\text{(a) } Q\\left(0, 2a + \\dfrac{a + 2}{a}\\right) \\cr &\\text{(b) } a = 1 \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} &Q\\left(0, 2a + \\dfrac{a + 2}{a}\\right) \\cr &a = 0 \\text{ or } a = 1 \\end{aligned}",
-      "feedback": "You successfully solved the algebra, but you forgot to check the boundary constraints stated at the very beginning of the question. Since $a \\neq 0$, you must discard $a = 0$ as an invalid solution."
-    },
-    {
-      "ans": "\\begin{aligned} &Q\\left(0, 2a - \\dfrac{a + 2}{a}\\right) \\cr &a = 1 \\end{aligned}",
-      "feedback": "You may have made a sign error in Step 3 when simplifying $-a - 2$. The term in the brackets is $(x - (a + 2))$. Substituting $x = 0$ gives $0 - (a + 2) = -a - 2$. Multiplying by $-1/a$ yields $+\\dfrac{a+2}{a}$."
-    },
-    {
-      "ans": "\\begin{aligned} &Q\\left(0, 2a + \\dfrac{a + 2}{a}\\right) \\cr &a = 5 \\end{aligned}",
-      "feedback": "You may have made an algebraic slip when simplifying the line constraint equation in Step 5, perhaps by forgetting to subtract the constant 1 correctly after multiplying both sides by 2."
+  },
+  {
+    "id": "004425",
+    "group_id": "004421",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Gradient, Perpendicularity, Midpoint",
+    "subtopic": [
+      "Coordinate Geometry using Algebraic Values"
+    ],
+    "img": false,
+    "question": "The points $A$ and $B$ have coordinates $(2a, a^2)$ and $(a + 2, 2a)$ respectively, where $a \\neq 0$ and $a \\neq 2$.<br><br><strong>(a)</strong> A straight line, perpendicular to $AB$ and passing through the point $B$, cuts the $y$-axis at the point $Q$. Find, in terms of $a$, the coordinates of the point $Q$. [8]<br><br><strong>(b)</strong> The midpoint of the line segment $AB$ lies on the line $y = x - 1$. Find the possible value of $a$. [5]",
+    "steps": [
+      "<strong>Step 1: Find the gradient of the line segment $AB$</strong><br><br>The gradient $m_{AB}$ is:\\begin{aligned} m_{AB} &= \\dfrac{2a - a^2}{(a + 2) - 2a} \\cr &= \\dfrac{2a - a^2}{2 - a} \\cr &= \\dfrac{a(2 - a)}{2 - a} \\cr &= a \\end{aligned}Since $a \\neq 2$, the gradient simplifies to $a$.",
+      "<strong>Step 2: Determine the equation of the perpendicular line</strong><br><br>Since the required line is perpendicular to $AB$, its gradient is the negative reciprocal of $m_{AB}$:\\begin{aligned} m_{\\perp} = -\\dfrac{1}{a} \\end{aligned}The equation of the line passing through $B(a + 2, 2a)$ is:\\begin{aligned} y - 2a = -\\dfrac{1}{2a}(x - (a + 2)) \\end{aligned}",
+      "<strong>Step 3: Solve for the coordinates of $Q$</strong><br><br>The line cuts the $y$-axis at $Q$, so we set $x = 0$ to find the $y$-coordinate:\\begin{aligned} y - 2a &= -\\dfrac{1}{a}(0 - (a + 2)) \\cr y - 2a &= \\dfrac{a + 2}{a} \\cr y &= 2a + \\dfrac{a + 2}{a} \\end{aligned}Thus, the coordinates of the point $Q$ are $\\left(0, 2a + \\dfrac{a + 2}{a}\\right)$.",
+      "<strong>Step 4: Express the midpoint of $AB$ algebraically</strong><br><br>The coordinates of the midpoint $M$ are:\\begin{aligned} x_M &= \\dfrac{2a + (a + 2)}{2} \\cr &= \\dfrac{3a + 2}{2} \\cr y_M &= \\dfrac{a^2 + 2a}{2} \\end{aligned}",
+      "<strong>Step 5: Set up and solve the equation under the line constraint</strong><br><br>Since the midpoint lies on $y = x - 1$, substitute the coordinates of $M$ directly into this line equation:\\begin{aligned} \\dfrac{a^2 + 2a}{2} &= \\dfrac{3a + 2}{2} - 1 \\cr &= \\dfrac{3a + 2 - 2}{2} \\cr &= \\dfrac{3a}{2} \\cr a^2 + 2a &= 3a \\cr a^2 - a &= 0 \\cr a(a - 1) &= 0 \\cr a &= 0 \\text{ or } a = 1 \\end{aligned}Since the initial conditions specify $a \\neq 0$, we discard $a = 0$. This leaves our only valid solution as $a = 1$.",
+      "Final Answer:<br><strong>(a)</strong> $Q\\left(0, 2a + \\dfrac{a + 2}{a}\\right)$ <br><strong>(b)</strong> $a = 1$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $Q\\left(0, 2a + \\dfrac{a + 2}{a}\\right)$ <br><strong>(b)</strong> $a = 0 \\text{ or } a = 1 $",
+        "feedback": "You successfully solved the algebra in part (b) but forgot to apply the boundary constraint $a \\neq 0$ given at the start of the question."
+      },
+      {
+        "ans": "<strong>(a)</strong> $Q\\left(0, 2a - \\dfrac{a + 2}{a}\\right)$ <br><strong>(b)</strong> $a = 1 $",
+        "feedback": "In part (a), check your sign distribution. The $-1/a$ and the $-(a+2)$ in the bracket should combine to give a positive term."
+      },
+      {
+        "ans": "<strong>(a)</strong> $Q\\left(0, 2a + \\dfrac{a + 2}{a}\\right)$ <br><strong>(b)</strong> $a = 5 $",
+        "feedback": "In part (b), you made an arithmetic slip when applying the line constraint $y = x - 1$, possibly failing to correctly handle the constant subtraction."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Checking Initial Conditions",
+      "content": "Always circle or highlight constraints like $a \\neq 0$ at the start of an exam question. It is very easy to solve a quadratic equation like $a(a - 1) = 0$, write down both roots, and lose an accuracy mark because you forgot to discard the boundary value. Be disciplined about checking your final answers against the initial conditions."
     }
-  ],
-  "bradley_insight": {
-    "type": "caution",
-    "title": "The Head Teacher's Eye: Checking Initial Conditions",
-    "content": "Always circle or highlight constraints like $a \\neq 0$ at the start of an exam question. It is very easy to solve a quadratic equation like $a(a - 1) = 0$, write down both roots, and lose an accuracy mark because you forgot to discard the boundary value. Be disciplined about checking your final answers against the initial conditions."
-  }
-},
-{
-  "id": "004426",
-  "group_id": "004426",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Coordinate Geometry",
-  "topic": "Circles",
-  "subtopic": [
-    "Circle Geometry",
-    "Proof"
-  ],
-  "img": "images/Pure_SVGs/004426.svg",
-  "question": "The diagram shows a circle with centre $O$ and radius $r$. $AB$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $B$ to $OS$. The acute angle $\\angle BOS$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> By applying the cosine rule to triangle $AOD$, show that:$$AD^2 = r^2(1 + 3\\cos^2 \\theta)$$[7]<br><br><strong>(b)</strong> When $BD$ bisects $OS$,$$AD = r\\sqrt{\\dfrac{7}{k}}$$Find the value of $k$, where $k$ is a positive integer. [5]",
-  "steps": [
-    "<strong>Step 1: Relate the length $OD = x$ to the radius and angle $\\theta$</strong><br><br>In triangle $BOS$, $BD$ is perpendicular to $OS$, making $OBD$ a right-angled triangle at $D$. The projection of $OB$ onto $OS$ gives:\\begin{aligned} \\cos \\theta &= \\dfrac{OD}{OB} \\cr &= \\dfrac{x}{r} \\cr x &= r\\cos \\theta \\end{aligned}",
-    "<strong>Step 2: Find the angle $\\angle AOD$</strong><br><br>The points $A$, $O$, and $B$ lie along a straight line because $AB$ is a diameter of the circle. This means the angles on either side of the center are supplementary:\\begin{aligned} \\angle AOD = 180^\\circ - \\theta \\end{aligned}",
-    "<strong>Step 3: Apply the Cosine Rule to triangle $AOD$</strong><br><br>Use the cosine rule on triangle $AOD$ with sides $AO = r$, $OD = x$, and angle $\\angle AOD = 180^\\circ - \\theta$:\\begin{aligned} &AD^2 \\cr &\\quad = AO^2 + OD^2 \\cr &\\qquad - 2(AO)(OD)\\cos(\\angle AOD) \\cr &\\quad = r^2 + x^2 \\cr &\\qquad - 2rx\\cos(180^\\circ - \\theta) \\end{aligned}Using the trigonometric identity $\\cos(180^\\circ - \\theta) = -\\cos \\theta$, this simplifies to:\\begin{aligned} AD^2 = r^2 + x^2 + 2rx\\cos \\theta \\end{aligned}",
-    "<strong>Step 4: Substitute $x = r \\cos \\theta$ to complete the proof for part (a)</strong><br><br>Substitute $x = r \\cos \\theta$ into the simplified expression:\\begin{aligned} &AD^2 \\cr &\\quad = r^2 + (r\\cos \\theta)^2 \\cr &\\qquad + 2r(r\\cos \\theta)\\cos \\theta \\cr &\\quad = r^2 + r^2\\cos^2 \\theta \\cr &\\qquad + 2r^2\\cos^2 \\theta \\cr &\\quad = r^2(1 + 3\\cos^2 \\theta) \\end{aligned}",
-    "<strong>Step 5: Apply the bisection condition in part (b)</strong><br><br>If $BD$ bisects $OS$, then $D$ is the midpoint of the radius $OS$. This gives us:\\begin{aligned} OD &= \\dfrac{r}{2} \\cr r\\cos \\theta &= \\dfrac{r}{2} \\cr \\cos \\theta &= \\dfrac{1}{2} \\cr \\theta &= 60^\\circ \\end{aligned}",
-    "<strong>Step 6: Calculate $AD$ and solve for $k$</strong><br><br>Substitute $\\cos \\theta = \\dfrac{1}{2}$ into your $AD^2$ formula from part (a):\\begin{aligned} AD^2 &= r^2\\left( 1 + 3\\left(\\dfrac{1}{2}\\right)^2 \\right) \\cr &= r^2\\left( 1 + 3\\left(\\dfrac{1}{4}\\right) \\right) \\cr &= r^2\\left( 1 + \\dfrac{3}{4} \\right) \\cr &= r^2\\left(\\dfrac{7}{4}\\right) \\end{aligned}Taking the square root yields:\\begin{aligned} AD = r\\sqrt{\\dfrac{7}{4}} \\end{aligned}Comparing this to the given expression $AD = r\\sqrt{\\dfrac{7}{k}}$, we get $k = 4$.",
-    "Final Answer:\\begin{aligned} &\\text{(a) Formula shown} \\cr &\\text{(b) } k = 4 \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} k = 2 \\end{aligned}",
-      "feedback": "You may have made an error when squaring $\\cos \\theta = \\dfrac{1}{2}$ in Step 6, mistakenly writing $\\left(\\dfrac{1}{2}\\right)^2 = \\dfrac{1}{2}$ instead of $\\dfrac{1}{4}$."
-    },
-    {
-      "ans": "\\begin{aligned} k = 16 \\end{aligned}",
-      "feedback": "You may have made an algebraic slip when equating $AD = r\\sqrt{\\dfrac{7}{4}}$ to $r\\sqrt{\\dfrac{7}{k}}$, perhaps by squaring the denominator a second time."
-    },
-    {
-      "ans": "\\begin{aligned} k = 3 \\end{aligned}",
-      "feedback": "You may have made an arithmetic slip when simplifying the terms inside the parentheses in Step 6, evaluating $1 + \\dfrac{3}{4}$ as $\\dfrac{6}{4}$ instead of $\\dfrac{7}{4}$."
+  },
+  {
+    "id": "004426",
+    "group_id": "004426",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Coordinate Geometry",
+    "topic": "Circles",
+    "subtopic": [
+      "Circle Geometry",
+      "Proof"
+    ],
+    "img": "images/Pure_SVGs/004426.svg",
+    "question": "The diagram shows a circle with centre $O$ and radius $r$. $AB$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $B$ to $OS$. The acute angle $\\angle BOS$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> By applying the cosine rule to triangle $AOD$, show that:$$AD^2 = r^2(1 + 3\\cos^2 \\theta)$$[7]<br><br><strong>(b)</strong> When $BD$ bisects $OS$,$$AD = r\\sqrt{\\dfrac{7}{k}}$$Find the value of $k$, where $k$ is a positive integer. [5]",
+    "steps": [
+      "<strong>Step 1: Relate the length $OD = x$ to the radius and angle $\\theta$</strong><br><br>In triangle $BOS$, $BD$ is perpendicular to $OS$, making $OBD$ a right-angled triangle at $D$. The projection of $OB$ onto $OS$ gives:\\begin{aligned} \\cos \\theta &= \\dfrac{OD}{OB} \\cr &= \\dfrac{x}{r} \\cr x &= r\\cos \\theta \\end{aligned}",
+      "<strong>Step 2: Find the angle $\\angle AOD$</strong><br><br>The points $A$, $O$, and $B$ lie along a straight line because $AB$ is a diameter of the circle. This means the angles on either side of the center are supplementary:\\begin{aligned} \\angle AOD = 180^\\circ - \\theta \\end{aligned}",
+      "<strong>Step 3: Apply the Cosine Rule to triangle $AOD$</strong><br><br>Use the cosine rule on triangle $AOD$ with sides $AO = r$, $OD = x$, and angle $\\angle AOD = 180^\\circ - \\theta$:\\begin{aligned} &AD^2 \\cr &\\quad = AO^2 + OD^2 \\cr &\\qquad - 2(AO)(OD)\\cos(\\angle AOD) \\cr &\\quad = r^2 + x^2 \\cr &\\qquad - 2rx\\cos(180^\\circ - \\theta) \\end{aligned}Using the trigonometric identity $\\cos(180^\\circ - \\theta) = -\\cos \\theta$, this simplifies to:\\begin{aligned} AD^2 = r^2 + x^2 + 2rx\\cos \\theta \\end{aligned}",
+      "<strong>Step 4: Substitute $x = r \\cos \\theta$ to complete the proof for part (a)</strong><br><br>Substitute $x = r \\cos \\theta$ into the simplified expression:\\begin{aligned} &AD^2 \\cr &\\quad = r^2 + (r\\cos \\theta)^2 \\cr &\\qquad + 2r(r\\cos \\theta)\\cos \\theta \\cr &\\quad = r^2 + r^2\\cos^2 \\theta \\cr &\\qquad + 2r^2\\cos^2 \\theta \\cr &\\quad = r^2(1 + 3\\cos^2 \\theta) \\end{aligned}",
+      "<strong>Step 5: Apply the bisection condition in part (b)</strong><br><br>If $BD$ bisects $OS$, then $D$ is the midpoint of the radius $OS$. This gives us:\\begin{aligned} OD &= \\dfrac{r}{2} \\cr r\\cos \\theta &= \\dfrac{r}{2} \\cr \\cos \\theta &= \\dfrac{1}{2} \\cr \\theta &= 60^\\circ \\end{aligned}",
+      "<strong>Step 6: Calculate $AD$ and solve for $k$</strong><br><br>Substitute $\\cos \\theta = \\dfrac{1}{2}$ into your $AD^2$ formula from part (a):\\begin{aligned} AD^2 &= r^2\\left( 1 + 3\\left(\\dfrac{1}{2}\\right)^2 \\right) \\cr &= r^2\\left( 1 + 3\\left(\\dfrac{1}{4}\\right) \\right) \\cr &= r^2\\left( 1 + \\dfrac{3}{4} \\right) \\cr &= r^2\\left(\\dfrac{7}{4}\\right) \\end{aligned}Taking the square root yields:\\begin{aligned} AD = r\\sqrt{\\dfrac{7}{4}} \\end{aligned}Comparing this to the given expression $AD = r\\sqrt{\\dfrac{7}{k}}$, we get $k = 4$.",
+      "<strong>Final Answer</strong><br><strong>(a)</strong> $AD^2 = r^2(1 + 3\\cos^2 \\theta)$ <br><strong>(b)</strong> $k = 4$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $AD^2 = r^2(1 + 3\\cos^2 \\theta)$ <br><strong>(b)</strong> $k = 2$",
+        "feedback": "In part (b), you may have made an error when squaring $\\cos \\theta = 1/2$, writing it as $1/2$ instead of $1/4$, which led to a coefficient of $1 + 3/2 = 5/2$ inside the root."
+      },
+      {
+        "ans": "<strong>(a)</strong> $AD^2 = r^2(1 + 3\\cos^2 \\theta)$ <br><strong>(b)</strong> $k = 16$",
+        "feedback": "In part (b), after finding $AD^2 = r^2(7/4)$, you might have squared the denominator again when determining $k$ instead of identifying $k$ as the value already under the square root."
+      },
+      {
+        "ans": "<strong>(a)</strong> $AD^2 = r^2(1 + 3\\cos^2 \\theta)$ <br><strong>(b)</strong> $k = 3$",
+        "feedback": "In part (b), you likely made an arithmetic slip in Step 6, miscalculating $1 + 3/4$ as $6/4$ instead of $7/4$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Supplementary Angle Trigonometry",
+      "content": "In geometry proofs, the relation $\\cos(180^\\circ - \\theta) = -\\cos \\theta$ is one of the most frequently used identities. If you forget to flip the sign, you will end up with a subtraction $1 - \\cos^2 \\theta$, which will prevent you from completing the proof. Always write down your supplementary angle identities explicitly."
     }
-  ],
-  "bradley_insight": {
-    "type": "pro-tip",
-    "title": "The Head Teacher's Eye: Supplementary Angle Trigonometry",
-    "content": "In geometry proofs, the relation $\\cos(180^\\circ - \\theta) = -\\cos \\theta$ is one of the most frequently used identities. If you forget to flip the sign, you will end up with a subtraction $1 - \\cos^2 \\theta$, which will prevent you from completing the proof. Always write down your supplementary angle identities explicitly."
-  }
-},
-{
-  "id": "004427",
-  "group_id": "004426",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Trigonometry",
-  "topic": "Circles",
-  "subtopic": [
-    "Circle Geometry",
-    "Proof"
-  ],
-  "img": "images/Pure_SVGs/004427.svg",
-  "question": "The diagram shows a circle with centre $O$ and radius $r$. $BA$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $A$ to $OS$. The angle $\\angle AOS$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> By applying the cosine rule to triangle $BOD$, show that:$$BD^2 = r^2(1 + 3\\cos^2 \\theta)$$[7]<br><br><strong>(b)</strong> When $AD$ bisects $OS$,$$BD = r\\sqrt{\\dfrac{7}{k}}$$Find the value of $k$, where $k$ is a positive integer. [5]",
-  "steps": [
-    "<strong>Step 1: Relate the length $OD = x$ to the radius and angle $\\theta$</strong><br><br>In right-angled triangle $ADO$, $D$ is the foot of the perpendicular from $A$ to $OS$, making $\\angle ADO = 90^\\circ$. The projection of $OA$ onto $OS$ gives:\\begin{aligned} \\cos \\theta &= \\dfrac{OD}{OA} \\cr &= \\dfrac{x}{r} \\cr x &= r\\cos \\theta \\end{aligned}",
-    "<strong>Step 2: Find the angle $\\angle BOD$</strong><br><br>The points $B$, $O$, and $A$ lie along a straight line because $BA$ is a diameter of the circle. This means the angles on either side of the center are supplementary:\\begin{aligned} \\angle BOD = 180^\\circ - \\theta \\end{aligned}",
-    "<strong>Step 3: Apply the Cosine Rule to triangle $BOD$</strong><br><br>Use the cosine rule on triangle $BOD$ with sides $OB = r$, $OD = x$, and angle $\\angle BOD = 180^\\circ - \\theta$:\\begin{aligned} &BD^2 \\cr &\\quad = BO^2 + OD^2 \\cr &\\qquad - 2(BO)(OD)\\cos(\\angle BOD) \\cr &\\quad = r^2 + x^2 \\cr &\\qquad - 2rx\\cos(180^\\circ - \\theta) \\end{aligned}Using the trigonometric identity $\\cos(180^\\circ - \\theta) = -\\cos \\theta$, this simplifies to:\\begin{aligned} BD^2 = r^2 + x^2 + 2rx\\cos \\theta \\end{aligned}",
-    "<strong>Step 4: Substitute $x = r \\cos \\theta$ to complete the proof for part (a)</strong><br><br>Substitute $x = r \\cos \\theta$ into the simplified expression:\\begin{aligned} &BD^2 \\cr &\\quad = r^2 + (r\\cos \\theta)^2 \\cr &\\qquad + 2r(r\\cos \\theta)\\cos \\theta \\cr &\\quad = r^2 + r^2\\cos^2 \\theta \\cr &\\qquad + 2r^2\\cos^2 \\theta \\cr &\\quad = r^2(1 + 3\\cos^2 \\theta) \\end{aligned}",
-    "<strong>Step 5: Apply the bisection condition in part (b)</strong><br><br>If $AD$ bisects $OS$, then $D$ is the midpoint of the radius $OS$. This gives us:\\begin{aligned} OD &= \\dfrac{r}{2} \\cr r\\cos \\theta &= \\dfrac{r}{2} \\cr \\cos \\theta &= \\dfrac{1}{2} \\cr \\theta &= 60^\\circ \\end{aligned}",
-    "<strong>Step 6: Calculate $BD$ and solve for $k$</strong><br><br>Substitute $\\cos \\theta = \\dfrac{1}{2}$ into your $BD^2$ formula from part (a):\\begin{aligned} BD^2 &= r^2\\left( 1 + 3\\left(\\dfrac{1}{2}\\right)^2 \\right) \\cr &= r^2\\left( 1 + 3\\left(\\dfrac{1}{4}\\right) \\right) \\cr &= r^2\\left( 1 + \\dfrac{3}{4} \\right) \\cr &= r^2\\left(\\dfrac{7}{4}\\right) \\end{aligned}Taking the square root yields:\\begin{aligned} BD = r\\sqrt{\\dfrac{7}{4}} \\end{aligned}Comparing this to the given expression $BD = r\\sqrt{\\dfrac{7}{k}}$, we get $k = 4$.",
-    "Final Answer:\\begin{aligned} &\\text{(a) Formula shown} \\cr &\\text{(b) } k = 4 \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} k = 2 \\end{aligned}",
-      "feedback": "You may have made an error when squaring $\\cos \\theta = \\dfrac{1}{2}$ in Step 6, mistakenly writing $\\left(\\dfrac{1}{2}\\right)^2 = \\dfrac{1}{2}$ instead of $\\dfrac{1}{4}$."
-    },
-    {
-      "ans": "\\begin{aligned} k = 16 \\end{aligned}",
-      "feedback": "You may have made an algebraic slip when equating $BD = r\\sqrt{\\dfrac{7}{4}}$ to $r\\sqrt{\\dfrac{7}{k}}$, perhaps by squaring the denominator a second time."
-    },
-    {
-      "ans": "\\begin{aligned} k = 3 \\end{aligned}",
-      "feedback": "You may have made an arithmetic slip when simplifying the terms inside the parentheses in Step 6, evaluating $1 + \\dfrac{3}{4}$ as $\\dfrac{6}{4}$ instead of $\\dfrac{7}{4}$."
+  },
+  {
+    "id": "004427",
+    "group_id": "004426",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Trigonometry",
+    "topic": "Circles",
+    "subtopic": [
+      "Circle Geometry",
+      "Proof"
+    ],
+    "img": "images/Pure_SVGs/004427.svg",
+    "question": "The diagram shows a circle with centre $O$ and radius $r$. $BA$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $A$ to $OS$. The angle $\\angle AOS$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> By applying the cosine rule to triangle $BOD$, show that:$$BD^2 = r^2(1 + 3\\cos^2 \\theta)$$[7]<br><br><strong>(b)</strong> When $AD$ bisects $OS$,$$BD = r\\sqrt{\\dfrac{7}{k}}$$Find the value of $k$, where $k$ is a positive integer. [5]",
+    "steps": [
+      "<strong>Step 1: Relate the length $OD = x$ to the radius and angle $\\theta$</strong><br><br>In right-angled triangle $ADO$, $D$ is the foot of the perpendicular from $A$ to $OS$, making $\\angle ADO = 90^\\circ$. The projection of $OA$ onto $OS$ gives:\\begin{aligned} \\cos \\theta &= \\dfrac{OD}{OA} \\cr &= \\dfrac{x}{r} \\cr x &= r\\cos \\theta \\end{aligned}",
+      "<strong>Step 2: Find the angle $\\angle BOD$</strong><br><br>The points $B$, $O$, and $A$ lie along a straight line because $BA$ is a diameter of the circle. This means the angles on either side of the center are supplementary:\\begin{aligned} \\angle BOD = 180^\\circ - \\theta \\end{aligned}",
+      "<strong>Step 3: Apply the Cosine Rule to triangle $BOD$</strong><br><br>Use the cosine rule on triangle $BOD$ with sides $OB = r$, $OD = x$, and angle $\\angle BOD = 180^\\circ - \\theta$:\\begin{aligned} &BD^2 \\cr &\\quad = BO^2 + OD^2 \\cr &\\qquad - 2(BO)(OD)\\cos(\\angle BOD) \\cr &\\quad = r^2 + x^2 \\cr &\\qquad - 2rx\\cos(180^\\circ - \\theta) \\end{aligned}Using the trigonometric identity $\\cos(180^\\circ - \\theta) = -\\cos \\theta$, this simplifies to:\\begin{aligned} BD^2 = r^2 + x^2 + 2rx\\cos \\theta \\end{aligned}",
+      "<strong>Step 4: Substitute $x = r \\cos \\theta$ to complete the proof for part (a)</strong><br><br>Substitute $x = r \\cos \\theta$ into the simplified expression:\\begin{aligned} &BD^2 \\cr &\\quad = r^2 + (r\\cos \\theta)^2 \\cr &\\qquad + 2r(r\\cos \\theta)\\cos \\theta \\cr &\\quad = r^2 + r^2\\cos^2 \\theta \\cr &\\qquad + 2r^2\\cos^2 \\theta \\cr &\\quad = r^2(1 + 3\\cos^2 \\theta) \\end{aligned}",
+      "<strong>Step 5: Apply the bisection condition in part (b)</strong><br><br>If $AD$ bisects $OS$, then $D$ is the midpoint of the radius $OS$. This gives us:\\begin{aligned} OD &= \\dfrac{r}{2} \\cr r\\cos \\theta &= \\dfrac{r}{2} \\cr \\cos \\theta &= \\dfrac{1}{2} \\cr \\theta &= 60^\\circ \\end{aligned}",
+      "<strong>Step 6: Calculate $BD$ and solve for $k$</strong><br><br>Substitute $\\cos \\theta = \\dfrac{1}{2}$ into your $BD^2$ formula from part (a):\\begin{aligned} BD^2 &= r^2\\left( 1 + 3\\left(\\dfrac{1}{2}\\right)^2 \\right) \\cr &= r^2\\left( 1 + 3\\left(\\dfrac{1}{4}\\right) \\right) \\cr &= r^2\\left( 1 + \\dfrac{3}{4} \\right) \\cr &= r^2\\left(\\dfrac{7}{4}\\right) \\end{aligned}Taking the square root yields:\\begin{aligned} BD = r\\sqrt{\\dfrac{7}{4}} \\end{aligned}Comparing this to the given expression $BD = r\\sqrt{\\dfrac{7}{k}}$, we get $k = 4$.",
+      "<strong>Final Answer</strong><br><strong>(a)</strong> $BD^2 = r^2(1 + 3\\cos^2 \\theta)$ <br><strong>(b)</strong> $k = 4$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $BD^2 = r^2(1 + 3\\cos^2 \\theta)$ <br><strong>(b)</strong> $k = 2$",
+        "feedback": "In part (b), you may have made an error when squaring $\\cos \\theta = 1/2$. Ensure you use $(1/2)^2 = 1/4$ rather than $1/2$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $BD^2 = r^2(1 + 3\\cos^2 \\theta)$ <br><strong>(b)</strong> $k = 16$",
+        "feedback": "In part (b), after getting $BD = r\\sqrt{7/4}$, you may have squared the denominator again to get 16 instead of identifying $k$ as the value currently inside the root."
+      },
+      {
+        "ans": "<strong>(a)</strong> $BD^2 = r^2(1 + 3\\cos^2 \\theta)$ <br><strong>(b)</strong> $k = 3$",
+        "feedback": "In part (b), you likely made an arithmetic slip when summing the terms $1 + 3/4$, misidentifying the result as $6/4$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Symmetry in Circle Proofs",
+      "content": "When proving trigonometric relations on opposite sides of a circle, the horizontal orientation of your diameter does not change the core projection. Recognizing that supplementary angles share this symmetrical relationship allows you to solve coordinate geometry proofs with confidence."
     }
-  ],
-  "bradley_insight": {
-    "type": "pro-tip",
-    "title": "The Head Teacher's Eye: Symmetry in Circle Proofs",
-    "content": "When proving trigonometric relations on opposite sides of a circle, the horizontal orientation of your diameter does not change the core projection. Whether you are projecting $OA$ or $OB$ onto a radius $OS$, the projection length remains $r \\cos \\theta$. Recognizing that supplementary angles (like $\\angle AOS = \\theta$ and $\\angle BOS = 180^\\circ - \\theta$) share this symmetrical relationship allows you to solve coordinate geometry proofs with confidence, regardless of which side you are working on."
-  }
-},
-{
-  "id": "004428",
-  "group_id": "004426",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Trigonometry",
-  "topic": "Circles",
-  "subtopic": [
-    "Proof"
-  ],
-  "img": "images/Pure_SVGs/004428.svg",
-  "question": "The diagram shows a circle with centre $O$ and radius $r$. $AB$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $S$ to $AB$. The acute angle $\\angle SOB$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> Show that the length $AS$ and length $AD$ satisfy:$$AS^2 = 2r \\cdot AD$$[6]<br><br><strong>(b)</strong> When $D$ is the midpoint of $OB$, find the exact value of $\\theta$ in degrees and express the length of $AS$ in terms of $r$. [6]",
-  "steps": [
-    "<strong>Step 1: Set up coordinates for part (a)</strong><br><br>For clarity, we place the circle on a Cartesian grid with centre $O$ at the origin $(0,0)$ and diameter $AB$ along the $x$-axis. This gives:\\begin{aligned} A &= (-r, 0) \\cr B &= (r, 0) \\end{aligned}",
-    "<strong>Step 2: Express the coordinates of $S$ and $D$ in terms of $\\theta$</strong><br><br>Using polar coordinates, the point $S$ on the circle has coordinates:\\begin{aligned} S = (r\\cos \\theta, r\\sin \\theta) \\end{aligned}Since $D$ is the foot of the perpendicular from $S$ to the $x$-axis (the line segment $AB$), its coordinates are:\\begin{aligned} D = (r\\cos \\theta, 0) \\end{aligned}",
-    "<strong>Step 3: Calculate the length squared $AS^2$</strong><br><br>Using the distance formula, find the distance squared between $A(-r, 0)$ and $S(r\\cos \\theta, r\\sin \\theta)$:\\begin{aligned} &AS^2 \\cr &\\quad = (r\\cos \\theta - (-r))^2 \\cr &\\qquad + (r\\sin \\theta - 0)^2 \\cr &\\quad = (r\\cos \\theta + r)^2 \\cr &\\qquad + r^2\\sin^2 \\theta \\cr &\\quad = r^2(\\cos^2 \\theta + 2\\cos \\theta \\cr &\\qquad + 1 + \\sin^2 \\theta) \\cr &\\quad = r^2(2 + 2\\cos \\theta) \\cr &\\quad = 2r^2(1 + \\cos \\theta) \\end{aligned}",
-    "<strong>Step 4: Calculate the length $AD$ and complete the proof</strong><br><br>The distance from $A(-r, 0)$ to $D(r\\cos \\theta, 0)$ along the horizontal $x$-axis is:\\begin{aligned} AD &= r\\cos \\theta - (-r) \\cr &= r(1 + \\cos \\theta) \\end{aligned}Multiply this by $2r$:\\begin{aligned} 2r \\cdot AD &= 2r \\cdot r(1 + \\cos \\theta) \\cr &= 2r^2(1 + \\cos \\theta) \\end{aligned}This is exactly equal to $AS^2$, completing the proof.",
-    "<strong>Step 5: Apply the midpoint condition in part (b)</strong><br><br>If $D$ is the midpoint of $OB$, then its $x$-coordinate must be half of $OB = r$:\\begin{aligned} r\\cos \\theta &= \\dfrac{r}{2} \\cr \\cos \\theta &= \\dfrac{1}{2} \\cr \\theta &= 60^\\circ \\end{aligned}",
-    "<strong>Step 6: Express the length of $AS$ in terms of $r$</strong><br><br>Substitute $\\cos \\theta = \\dfrac{1}{2}$ into the formula for $AS^2$:\\begin{aligned} AS^2 &= 2r^2\\left( 1 + \\dfrac{1}{2} \\right) \\cr &= 2r^2\\left( \\dfrac{3}{2} \\right) \\cr &= 3r^2 \\end{aligned}Taking the square root yields:\\begin{aligned} AS = r\\sqrt{3} \\end{aligned}",
-    "Final Answer:\\begin{aligned} &\\text{(a) Identity shown: } AS^2 = 2r \\cdot AD \\cr &\\text{(b) } \\theta = 60^\\circ, \\ AS = r\\sqrt{3} \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} &\\theta = 60^\\circ \\cr &AS = r\\sqrt{2} \\end{aligned}",
-      "feedback": "You may have made an arithmetic slip in Step 6 when evaluating $1 + \\cos\\theta$, perhaps by writing $1 + \\dfrac{1}{2} = 1$ or making a sign error, leading to $AS^2 = 2r^2$."
-    },
-    {
-      "ans": "\\begin{aligned} &\\theta = 30^\\circ \\cr &AS = r\\sqrt{3} \\end{aligned}",
-      "feedback": "You may have misidentified $\\cos\\theta = \\dfrac{1}{2}$ as $\\theta = 30^\\circ$ instead of $60^\\circ$. Remember that $\\cos 60^\\circ = 0.5$ and $\\sin 30^\\circ = 0.5$."
-    },
-    {
-      "ans": "\\begin{aligned} &\\theta = 60^\\circ \\cr &AS = 3r \\end{aligned}",
-      "feedback": "You may have forgotten to take the square root of both sides of the equation $AS^2 = 3r^2$ when finding the length $AS$."
+  },
+  {
+    "id": "004428",
+    "group_id": "004426",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Trigonometry",
+    "topic": "Circles",
+    "subtopic": [
+      "Proof"
+    ],
+    "img": "images/Pure_SVGs/004428.svg",
+    "question": "The diagram shows a circle with centre $O$ and radius $r$. $AB$ is a diameter of the circle. $S$ lies on the circumference of the circle. $D$ is the foot of the perpendicular from $S$ to $AB$. The acute angle $\\angle SOB$ is $\\theta$. $OA = OB = r$ and $OD = x$.<br><br><strong>(a)</strong> Show that the length $AS$ and length $AD$ satisfy:$$AS^2 = 2r \\cdot AD$$[6]<br><br><strong>(b)</strong> When $D$ is the midpoint of $OB$, find the exact value of $\\theta$ in degrees and express the length of $AS$ in terms of $r$. [6]",
+    "steps": [
+      "<strong>Step 1: Set up coordinates for part (a)</strong><br><br>For clarity, we place the circle on a Cartesian grid with centre $O$ at the origin $(0,0)$ and diameter $AB$ along the $x$-axis. This gives:\\begin{aligned} A &= (-r, 0) \\cr B &= (r, 0) \\end{aligned}",
+      "<strong>Step 2: Express the coordinates of $S$ and $D$ in terms of $\\theta$</strong><br><br>Using polar coordinates, the point $S$ on the circle has coordinates:\\begin{aligned} S = (r\\cos \\theta, r\\sin \\theta) \\end{aligned}Since $D$ is the foot of the perpendicular from $S$ to the $x$-axis (the line segment $AB$), its coordinates are:\\begin{aligned} D = (r\\cos \\theta, 0) \\end{aligned}",
+      "<strong>Step 3: Calculate the length squared $AS^2$</strong><br><br>Using the distance formula, find the distance squared between $A(-r, 0)$ and $S(r\\cos \\theta, r\\sin \\theta)$:\\begin{aligned} &AS^2 \\cr &\\quad = (r\\cos \\theta - (-r))^2 \\cr &\\qquad + (r\\sin \\theta - 0)^2 \\cr &\\quad = (r\\cos \\theta + r)^2 \\cr &\\qquad + r^2\\sin^2 \\theta \\cr &\\quad = r^2(\\cos^2 \\theta + 2\\cos \\theta \\cr &\\qquad + 1 + \\sin^2 \\theta) \\cr &\\quad = r^2(2 + 2\\cos \\theta) \\cr &\\quad = 2r^2(1 + \\cos \\theta) \\end{aligned}",
+      "<strong>Step 4: Calculate the length $AD$ and complete the proof</strong><br><br>The distance from $A(-r, 0)$ to $D(r\\cos \\theta, 0)$ along the horizontal $x$-axis is:\\begin{aligned} AD &= r\\cos \\theta - (-r) \\cr &= r(1 + \\cos \\theta) \\end{aligned}Multiply this by $2r$:\\begin{aligned} 2r \\cdot AD &= 2r \\cdot r(1 + \\cos \\theta) \\cr &= 2r^2(1 + \\cos \\theta) \\end{aligned}This is exactly equal to $AS^2$, completing the proof.",
+      "<strong>Step 5: Apply the midpoint condition in part (b)</strong><br><br>If $D$ is the midpoint of $OB$, then its $x$-coordinate must be half of $OB = r$:\\begin{aligned} r\\cos \\theta &= \\dfrac{r}{2} \\cr \\cos \\theta &= \\dfrac{1}{2} \\cr \\theta &= 60^\\circ \\end{aligned}",
+      "<strong>Step 6: Express the length of $AS$ in terms of $r$</strong><br><br>Substitute $\\cos \\theta = \\dfrac{1}{2}$ into the formula for $AS^2$:\\begin{aligned} AS^2 &= 2r^2\\left( 1 + \\dfrac{1}{2} \\right) \\cr &= 2r^2\\left( \\dfrac{3}{2} \\right) \\cr &= 3r^2 \\end{aligned}Taking the square root yields:\\begin{aligned} AS = r\\sqrt{3} \\end{aligned}",
+      "<strong>Final Answer</strong><br><strong>(a)</strong> $AS^2 = 2r \\cdot AD$ <br><strong>(b)</strong> $\\theta = 60^\\circ, AS = r\\sqrt{3}$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $AS^2 = 2r \\cdot AD$ <br><strong>(b)</strong> $\\theta = 60^\\circ, AS = r\\sqrt{2}$ ",
+        "feedback": "In part (b), check your arithmetic in Step 6. $2r^2(1 + 1/2) = 3r^2$, which leads to $r\\sqrt{3}$, not $r\\sqrt{2}$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $AS^2 = 2r \\cdot AD$ <br><strong>(b)</strong> $\\theta = 30^\\circ, AS = r\\sqrt{3}$ ",
+        "feedback": "In part (b), you misidentified the angle. While $\\sin(30^\\circ) = 1/2$, it is $\\cos(60^\\circ)$ that equals $1/2$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $AS^2 = 2r \\cdot AD$ <br><strong>(b)</strong> $\\theta = 60^\\circ, AS = 3r$ ",
+        "feedback": "In part (b), you forgot to take the square root of the $3r^2$ term to find the length $AS$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Coordinate Geometry as a Proof Tool",
+      "content": "When asked to prove geometric relations inside a circle, do not hesitate to overlay a Cartesian coordinate system. Placing the centre of the circle at the origin often transforms complicated trigonometric proofs into simple distance-formula algebra!"
     }
-  ],
-  "bradley_insight": {
-    "type": "pro-tip",
-    "title": "The Head Teacher's Eye: Coordinate Geometry as a Proof Tool",
-    "content": "When asked to prove geometric relations inside a circle, do not hesitate to overlay a Cartesian coordinate system. Placing the centre of the circle at the origin $(0,0)$ and aligning the diameter with the $x$-axis often transforms complicated trigonometric proofs into simple distance-formula algebra!"
-  }
-},
-{
-  "id": "004429",
-  "group_id": "004426",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Differentiation",
-  "topic": "Circles",
-  "subtopic": [
-    "Tangents and Normals",
-    "Trigonometry"
-  ],
-  "img": "images/Pure_SVGs/004429.svg",
-  "question": "The diagram shows a circle with centre $O$ and radius $r$. $AOB$ is a diameter of the circle. $T$ lies on the circumference. The tangent to the circle at $T$ meets the extension of the diameter $AB$ at $P$. The acute angle $\\angle TOP$ is $\\theta$. $OA = OB = r$ and $OP = x$.<br><br><strong>(a)</strong> Show that the length of the tangent $TP$ satisfies:$$TP^2 = r^2\\tan^2 \\theta$$[5]<br><br><strong>(b)</strong> When the distance $BP$ is exactly equal to the radius $r$, find the exact value of $\\theta$ in degrees. [7]",
-  "steps": [
-    "<strong>Step 1: Set up the right-angled triangle relations for part (a)</strong><br><br>A fundamental circle theorem states that a tangent line is always perpendicular to the radius at the point of contact. Therefore, the radius $OT$ is perpendicular to the tangent $TP$, making $OTP$ a right-angled triangle with $\\angle OTP = 90^\\circ$.",
-    "<strong>Step 2: Relate the tangent to $\\theta$ and complete part (a)</strong><br><br>In the right-angled triangle $OTP$, the angle at $O$ is $\\theta$. Using basic right-angled trigonometry:\\begin{aligned} \\tan \\theta &= \\dfrac{TP}{OT} \\cr &= \\dfrac{TP}{r} \\cr TP &= r\\tan \\theta \\cr TP^2 &= r^2\\tan^2 \\theta \\end{aligned}",
-    "<strong>Step 3: Analyze the boundary conditions in part (b)</strong><br><br>The diameter $AB$ lies along the straight line through $O$, with $B$ located between the center $O$ and the point $P$. Since the distance $BP$ is given as exactly equal to the radius $r$, calculate the total hypotenuse length $OP$:\\begin{aligned} OP &= OB + BP \\cr &= r + r \\cr &= 2r \\end{aligned}",
-    "<strong>Step 4: Solve for the exact angle $\\theta$</strong><br><br>In right-angled triangle $OTP$ (where the hypotenuse is $OP = 2r$ and the adjacent side to angle $\\theta$ is $OT = r$), use the cosine ratio:\\begin{aligned} \\cos \\theta &= \\dfrac{OT}{OP} \\cr &= \\dfrac{r}{2r} \\cr &= \\dfrac{1}{2} \\end{aligned}Since $\\theta$ is acute, we solve to get:$$\\theta = 60^\\circ$$",
-    "Final Answer:\\begin{aligned} &\\text{(a) Formula shown: }\\cr & \\quad TP^2 = r^2\\tan^2 \\theta \\cr &\\text{(b) } \\theta = 60^\\circ \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} \\theta = 30^\\circ \\end{aligned}",
-      "feedback": "You may have misidentified the ratio $\\cos \\theta = \\dfrac{1}{2}$ as $\\theta = 30^\\circ$. Double-check your exact values: $\\cos 60^\\circ = 0.5$ while $\\sin 30^\\circ = 0.5$."
-    },
-    {
-      "ans": "\\begin{aligned} \\theta = 45^\\circ \\end{aligned}",
-      "feedback": "You may have assumed the triangle is an isosceles right-angled triangle. However, the hypotenuse $OP = 2r$ is twice the adjacent side $OT = r$, which determines a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle."
-    },
-    {
-      "ans": "\\begin{aligned} \\theta = 41.8^\\circ \\end{aligned}",
-      "feedback": "You may have used the sine ratio instead of the cosine ratio, solving $\\sin \\theta = \\dfrac{r}{2r} = 0.5$, but then mistakenly used your calculator in radian mode or made an inverse trigonometric calculation error."
+  },
+  {
+    "id": "004429",
+    "group_id": "004426",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Circles",
+    "subtopic": [
+      "Tangents and Normals",
+      "Trigonometry"
+    ],
+    "img": "images/Pure_SVGs/004429.svg",
+    "question": "The diagram shows a circle with centre $O$ and radius $r$. $AOB$ is a diameter of the circle. $T$ lies on the circumference. The tangent to the circle at $T$ meets the extension of the diameter $AB$ at $P$. The acute angle $\\angle TOP$ is $\\theta$. $OA = OB = r$ and $OP = x$.<br><br><strong>(a)</strong> Show that the length of the tangent $TP$ satisfies:$$TP^2 = r^2\\tan^2 \\theta$$[5]<br><br><strong>(b)</strong> When the distance $BP$ is exactly equal to the radius $r$, find the exact value of $\\theta$ in degrees. [7]",
+    "steps": [
+      "<strong>Step 1: Set up the right-angled triangle relations for part (a)</strong><br><br>A fundamental circle theorem states that a tangent line is always perpendicular to the radius at the point of contact. Therefore, the radius $OT$ is perpendicular to the tangent $TP$, making $OTP$ a right-angled triangle with $\\angle OTP = 90^\\circ$.",
+      "<strong>Step 2: Relate the tangent to $\\theta$ and complete part (a)</strong><br><br>In the right-angled triangle $OTP$, the angle at $O$ is $\\theta$. Using basic right-angled trigonometry:\\begin{aligned} \\tan \\theta &= \\dfrac{TP}{OT} \\cr &= \\dfrac{TP}{r} \\cr TP &= r\\tan \\theta \\cr TP^2 &= r^2\\tan^2 \\theta \\end{aligned}",
+      "<strong>Step 3: Analyze the boundary conditions in part (b)</strong><br><br>The diameter $AB$ lies along the straight line through $O$, with $B$ located between the center $O$ and the point $P$. Since the distance $BP$ is given as exactly equal to the radius $r$, calculate the total hypotenuse length $OP$:\\begin{aligned} OP &= OB + BP \\cr &= r + r \\cr &= 2r \\end{aligned}",
+      "<strong>Step 4: Solve for the exact angle $\\theta$</strong><br><br>In right-angled triangle $OTP$ (where the hypotenuse is $OP = 2r$ and the adjacent side to angle $\\theta$ is $OT = r$), use the cosine ratio:\\begin{aligned} \\cos \\theta &= \\dfrac{OT}{OP} \\cr &= \\dfrac{r}{2r} \\cr &= \\dfrac{1}{2} \\end{aligned}Since $\\theta$ is acute, we solve to get:$$\\theta = 60^\\circ$$",
+      "<strong>Final Answer</strong><br><strong>(a)</strong> $TP^2 = r^2\\tan^2 \\theta$ <br><strong>(b)</strong> $\\theta = 60^\\circ$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $TP^2 = r^2\\tan^2 \\theta$ <br><strong>(b)</strong> $\\theta = 30^\\circ$ ",
+        "feedback": "In part (b), check your exact values. While $\\sin(30^\\circ) = 1/2$, the cosine ratio in this triangle adjacent/hypotenuse requires $\\cos(60^\\circ) = 1/2$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $TP^2 = r^2\\tan^2 \\theta$ <br><strong>(b)</strong> $\\theta = 45^\\circ$ ",
+        "feedback": "In part (b), you may have assumed the triangle was isosceles. However, the hypotenuse $2r$ is twice the adjacent side $r$, which determines a $60^\\circ$ angle."
+      },
+      {
+        "ans": "<strong>(a)</strong> $TP^2 = r^2\\tan^2 \\theta$ <br><strong>(b)</strong> $\\theta = 41.8^\\circ$ ",
+        "feedback": "In part (b), you may have used the sine ratio instead of the cosine ratio or had your calculator in the wrong mode."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Tangent Perpendicularity",
+      "content": "In any coordinate or geometric problem involving circle tangents, your first step should always be to indicate a right angle between the tangent and the radius at the point of tangency."
     }
-  ],
-  "bradley_insight": {
-    "type": "pro-tip",
-    "title": "The Head Teacher's Eye: Tangent Perpendicularity",
-    "content": "In any coordinate or geometric problem involving circle tangents, your first step should always be to draw or indicate a right angle $(90^\\circ)$ between the tangent and the radius at the point of tangency. This immediately unlocks right-angled triangle properties like Pythagoras and standard SOH CAH TOA trigonometry."
-  }
-},
-{
-  "id": "004430",
-  "group_id": "004426",
-  "board": "CCEA",
-  "branch": "Pure",
-  "level": "AS",
-  "major_area": "Trigonometry",
-  "topic": "Circles",
-  "subtopic": [
-    "Circle Geometry",
-    "Trigonometry"
-  ],
-  "img": "images/Pure_SVGs/004430.svg",
-  "question": "The diagram shows a sketch of a semicircle with diameter $AB$ and centre $O$. $C$ lies on the circumference of the semicircle. The angle $\\angle CAB$ is $\\theta$ and $OA = OB = r$.<br><br><strong>(a)</strong> By considering the right-angled triangle $ACB$ in the semicircle, show that:$$BC^2 = 4r^2\\sin^2 \\theta$$[5]<br><br><strong>(b)</strong> When $BC = r$, find the exact value of the angle $\\theta$ in degrees. [7]",
-  "steps": [
-    "<strong>Step 1: Apply the circle theorem for angles in a semicircle for part (a)</strong><br><br>A fundamental circle theorem states that the angle subtended by a diameter at any point on the circumference of a circle is a right angle ($90^\\circ$). Since $AB$ is a diameter, we have:$$\\angle ACB = 90^\\circ$$",
-    "<strong>Step 2: Set up the trigonometric ratio and complete part (a)</strong><br><br>In right-angled triangle $ACB$, the hypotenuse is the diameter $AB = 2r$. The side opposite angle $\\theta$ is $BC$. Apply the sine ratio:\\begin{aligned} \\sin \\theta &= \\dfrac{BC}{AB} \\cr &= \\dfrac{BC}{2r} \\cr BC &= 2r\\sin \\theta \\end{aligned}Square both sides of this equation to get the required proof:\\begin{aligned} BC^2 &= (2r\\sin \\theta)^2 \\cr &= 4r^2\\sin^2 \\theta \\end{aligned}",
-    "<strong>Step 3: Apply the condition in part (b) and simplify</strong><br><br>We are given that $BC = r$. Substitute this into the formula from part (a):\\begin{aligned} r^2 &= 4r^2\\sin^2 \\theta \\end{aligned}",
-    "<strong>Step 4: Solve for the exact angle $\\theta$</strong><br><br>Since $r \\neq 0$, we can divide both sides of the equation by $r^2$:\\begin{aligned} 1 &= 4\\sin^2 \\theta \\cr \\sin^2 \\theta &= \\dfrac{1}{4} \\cr \\sin \\theta &= \\dfrac{1}{2} \\end{aligned}Since $\\theta$ is an acute angle in the triangle, we solve to find the principal angle:$$\\theta = 30^\\circ$$",
-    "Final Answer:\\begin{aligned} &\\text{(a) Formula shown: }\\cr &\\quad BC^2 = 4r^2\\sin^2 \\theta \\cr &\\text{(b) } \\theta = 30^\\circ \\end{aligned}"
-  ],
-  "pi_options": [
-    {
-      "ans": "\\begin{aligned} \\theta = 60^\\circ \\end{aligned}",
-      "feedback": "You may have misidentified the ratio $\\sin \\theta = \\dfrac{1}{2}$ as $\\theta = 60^\\circ$ instead of $30^\\circ$. Remember that $\\sin 30^\\circ = 0.5$ and $\\cos 60^\\circ = 0.5$."
-    },
-    {
-      "ans": "\\begin{aligned} \\theta = 45^\\circ \\end{aligned}",
-      "feedback": "You may have assumed the triangle is an isosceles right-angled triangle. However, the side $BC = r$ is exactly half of the hypotenuse $AB = 2r$, which defines a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle."
-    },
-    {
-      "ans": "\\begin{aligned} \\theta = 14.5^\\circ \\end{aligned}",
-      "feedback": "You may have made an error when dividing, solving $\\sin^2 \\theta = 4$, which gives $\\sin \\theta = 2$, or made an incorrect inverse trigonometric calculation on your calculator."
+  },
+  {
+    "id": "004430",
+    "group_id": "004426",
+    "board": "CCEA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Trigonometry",
+    "topic": "Circles",
+    "subtopic": [
+      "Circle Geometry",
+      "Trigonometry"
+    ],
+    "img": "images/Pure_SVGs/004430.svg",
+    "question": "The diagram shows a sketch of a semicircle with diameter $AB$ and centre $O$. $C$ lies on the circumference of the semicircle. The angle $\\angle CAB$ is $\\theta$ and $OA = OB = r$.<br><br><strong>(a)</strong> By considering the right-angled triangle $ACB$ in the semicircle, show that:$$BC^2 = 4r^2\\sin^2 \\theta$$[5]<br><br><strong>(b)</strong> When $BC = r$, find the exact value of the angle $\\theta$ in degrees. [7]",
+    "steps": [
+      "<strong>Step 1: Apply the circle theorem for angles in a semicircle for part (a)</strong><br><br>A fundamental circle theorem states that the angle subtended by a diameter at any point on the circumference of a circle is a right angle ($90^\\circ$). Since $AB$ is a diameter, we have:$$\\angle ACB = 90^\\circ$$",
+      "<strong>Step 2: Set up the trigonometric ratio and complete part (a)</strong><br><br>In right-angled triangle $ACB$, the hypotenuse is the diameter $AB = 2r$. The side opposite angle $\\theta$ is $BC$. Apply the sine ratio:\\begin{aligned} \\sin \\theta &= \\dfrac{BC}{AB} \\cr &= \\dfrac{BC}{2r} \\cr BC &= 2r\\sin \\theta \\end{aligned}Square both sides of this equation to get the required proof:\\begin{aligned} BC^2 &= (2r\\sin \\theta)^2 \\cr &= 4r^2\\sin^2 \\theta \\end{aligned}",
+      "<strong>Step 3: Apply the condition in part (b) and simplify</strong><br><br>We are given that $BC = r$. Substitute this into the formula from part (a):\\begin{aligned} r^2 &= 4r^2\\sin^2 \\theta \\end{aligned}",
+      "<strong>Step 4: Solve for the exact angle $\\theta$</strong><br><br>Since $r \\neq 0$, we can divide both sides of the equation by $r^2$:\\begin{aligned} 1 &= 4\\sin^2 \\theta \\cr \\sin^2 \\theta &= \\dfrac{1}{4} \\cr \\sin \\theta &= \\dfrac{1}{2} \\end{aligned}Since $\\theta$ is an acute angle in the triangle, we solve to find the principal angle:$$\\theta = 30^\\circ$$",
+      "<strong>Final Answer</strong><br><strong>(a)</strong> $BC^2 = 4r^2\\sin^2 \\theta$ <br><strong>(b)</strong> $\\theta = 30^\\circ$"
+    ],
+    "pi_options": [
+      {
+        "ans": "<strong>(a)</strong> $BC^2 = 4r^2\\sin^2 \\theta$ <br><strong>(b)</strong> $\\theta = 60^\\circ$ ",
+        "feedback": "In part (b), check your exact values. While $\\cos(60^\\circ) = 1/2$, the sine ratio $\\sin(\\theta) = 1/2$ corresponds to $30^\\circ$."
+      },
+      {
+        "ans": "<strong>(a)</strong> $BC^2 = 4r^2\\sin^2 \\theta$ <br><strong>(b)</strong> $\\theta = 45^\\circ$ ",
+        "feedback": "In part (b), you may have assumed an isosceles triangle. However, the side $BC=r$ is exactly half the length of the hypotenuse $AB=2r$, which defines a $30$-$60$-$90$ triangle."
+      },
+      {
+        "ans": "<strong>(a)</strong> $BC^2 = 4r^2\\sin^2 \\theta$ <br><strong>(b)</strong> $\\theta = 14.5^\\circ$ ",
+        "feedback": "In part (b), you may have made an error when rearranging $\\sin^2 \\theta = 1/4$ or used the wrong mode on your calculator."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Semicircle Right Angles",
+      "content": "Always remember the theorem: 'The angle in a semicircle is a right angle.' Whenever you see a triangle drawn inside a circle where one side is the diameter, you can instantly assume the opposite vertex has a $90^\\circ$ angle."
     }
-  ],
-  "bradley_insight": {
-    "type": "pro-tip",
-    "title": "The Head Teacher's Eye: Semicircle Right Angles",
-    "content": "Always remember the theorem: 'The angle in a semicircle is a right angle.' Whenever you see a triangle drawn inside a circle where one side is the diameter, you can instantly assume the opposite vertex has a $90^\\circ$ angle. This simple realization is the key to setting up trigonometric equations for semicircle problems."
-  }
-}, 
+  },
 {
         "id": "004431",
         "group_id": "004431",
