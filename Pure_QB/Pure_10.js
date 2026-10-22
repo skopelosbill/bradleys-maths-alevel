@@ -2039,19 +2039,19 @@ window.ALEVEL_QUESTIONS = [
                 "Substitute this expression back into the derivative to express $\\dfrac{\\text{d}S}{\\text{d}t}$ purely in terms of $S$:\\begin{aligned} &\\dfrac{\\text{d}S}{\\text{d}t} \\cr &\\quad = 0.5 \\left(\\dfrac{500}{2 + 3\\mathrm{e}^{-0.5t}}\\right) \\cr &\\qquad \\times \\left(\\dfrac{3\\mathrm{e}^{-0.5t}}{2 + 3\\mathrm{e}^{-0.5t}}\\right) \\cr &\\quad = 0.5S \\left(\\dfrac{2(250 - S)}{500}\\right) \\cr &\\quad = \\dfrac{S(250 - S)}{500} \\end{aligned}",
                 "<strong>(c) Finding the time $T$ of maximum rate of growth:</strong><br>The rate of growth is modeled by the quadratic equation $R(S) = \\dfrac{250S - S^2}{500}$. The maximum of this quadratic occurs at its vertex:\\begin{aligned} S &= \\dfrac{250}{2} \\cr &= 125 \\end{aligned}We find the value of $T$ when $S = 125$ using our model equation:\\begin{aligned} 125 &= \\dfrac{500}{2 + 3\\mathrm{e}^{-0.5T}} \\cr 2 + 3\\mathrm{e}^{-0.5T} &= \\dfrac{500}{125} \\cr &= 4 \\cr 3\\mathrm{e}^{-0.5T} &= 2 \\cr \\mathrm{e}^{-0.5T} &= \\dfrac{2}{3} \\cr -0.5T &= \\ln\\left(\\dfrac{2}{3}\\right) \\cr &= -\\ln(1.5) \\cr T &= 2\\ln(1.5) \\cr &\\approx 0.81\\text{ years} \\end{aligned}",
                 "<strong>(d) Finding the carrying capacity $P$:</strong><br>The maximum squirrel population occurs as $t \\to \\infty$. In this limit, $\\mathrm{e}^{-0.5t} \\to 0$. Therefore:\\begin{aligned} P &= \\lim_{t \\to \\infty} \\dfrac{500}{2 + 3\\mathrm{e}^{-0.5t}} \\cr &= \\dfrac{500}{2 + 0} \\cr &= 250 \\end{aligned}Therefore, the maximum number of squirrels in the woodland sanctuary is $P = 250$.",
-                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } 100\\cr &\\text{(c) } T \\approx 0.81\\text{ years} \\cr &\\text{(d) } P = 250 \\end{aligned}"
+                "<strong>Final Answer</strong>\\begin{aligned} &\\text{(a) } S(0)=100\\cr &\\text{(c) } T \\approx 0.81\\text{ years} \\cr &\\text{(d) } P = 250 \\end{aligned}"
         ],
         "pi_options": [
                 {
-                        "ans": "\\begin{aligned} &S(0) = 100 \\cr &T \\approx 0.81\\text{ years} \\cr &P = 500 \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }S(0) = 100 \\cr &\\text{(c) }T \\approx 0.81\\text{ years} \\cr &\\text{(d) }P = 500 \\end{aligned}",
                         "feedback": "This is a misinterpretation of the carrying capacity $P$. The value of $P$ is not the numerator of the fraction ($500$), but rather the limit as $t \\to \\infty$, which is $\\dfrac{500}{2} = 250$."
                 },
                 {
-                        "ans": "\\begin{aligned} &S(0) = 100 \\cr &T \\approx 1.62\\text{ years} \\cr &P = 250 \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }S(0) = 100 \\cr &\\text{(c) } \\approx 1.62\\text{ years} \\cr &\\text{(d) }P = 250 \\end{aligned}",
                         "feedback": "This error occurs if you make a calculation slip when taking logarithms in Step 4, such as dividing by $0.25$ instead of $0.5$, which yields a larger value of $T \\approx 1.62\\text{ years}$."
                 },
                 {
-                        "ans": "\\begin{aligned} &S(0) = 250 \\cr &T \\approx 0.81\\text{ years} \\cr &P = 100 \\end{aligned}",
+                        "ans": "\\begin{aligned} &\\text{(a) }S(0) = 250 \\cr &\\text{(c) }T \\approx 0.81\\text{ years} \\cr &\\text{(d) }P = 100 \\end{aligned}",
                         "feedback": "This is a calculation slip where the initial population and carrying capacity are swapped, setting $S(0) = 250$ and $P = 100$."
                 }
         ],

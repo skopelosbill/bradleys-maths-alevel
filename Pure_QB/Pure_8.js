@@ -348,14 +348,14 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
       {
         "ans": "\\begin{aligned} &\\text{(a) Statement B is false} \\cr &\\quad \\text{Counterexample: } n = 1 \\cr &\\text{(b) Statement A is true} \\end{aligned}",
-        "feedback": "For $n=1$, $n^2-1=0$, which is a multiple of 8 ($8 \times 0$). Statement A is false because adding $\sqrt{2}$ and $-\sqrt{2}$ (both irrational) results in 0 (rational)."
+        "feedback": "For $n=1$, $n^2-1=0$, which is a multiple of 8 ($8 \\times 0$). Statement A is false because adding $\\sqrt{2}$ and $-\\sqrt{2}$ (both irrational) results in 0 (rational)."
       },
       {
-        "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } \sqrt{2} + \sqrt{3} \\cr &\\text{(b) Statement B is true} \\end{aligned}",
-        "feedback": "The sum $\sqrt{2} + \sqrt{3}$ is irrational, so it does not serve as a counterexample. To disprove Statement A, you must find a sum of irrationals that results in a rational number."
+        "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } \\sqrt{2} + \\sqrt{3} \\cr &\\text{(b) Statement B is true} \\end{aligned}",
+        "feedback": "The sum $\\sqrt{2} + \\sqrt{3}$ is irrational, so it does not serve as a counterexample. To disprove Statement A, you must find a sum of irrationals that results in a rational number."
       },
       {
-        "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } \sqrt{2} + (2 - \sqrt{2}) = 2 \\cr &\\text{(b) Statement B is false} \\end{aligned}",
+        "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } \\sqrt{2} + (2 - \\sqrt{2}) = 2 \\cr &\\text{(b) Statement B is false} \\end{aligned}",
         "feedback": "Statement B is a provable identity for odd integers. By expressing an odd number as $2k+1$, you can show the expression always contains a factor of $4 \times 2 = 8$."
       }
     ],
@@ -396,7 +396,7 @@ window.ALEVEL_QUESTIONS = [
       },
       {
         "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } x = 0 \\cr &\\text{(b) Statement B is false} \\end{aligned}",
-        "feedback": "Statement B is true for all real $x$ because it can be rewritten as $(x-3)^2+1$. Since a square is always $\ge 0$, adding 1 ensures the expression is always positive."
+        "feedback": "Statement B is true for all real $x$ because it can be rewritten as $(x-3)^2+1$. Since a square is always $\\ge 0$, adding 1 ensures the expression is always positive."
       }
     ],
     "bradley_insight": {

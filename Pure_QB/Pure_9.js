@@ -1401,7 +1401,7 @@ window.ALEVEL_QUESTIONS = [
       },
       {
         "ans": "\\begin{aligned} &\\text{(a) } ff(3) = 6 \\cr &\\text{(b) } f(x) \\ge 5 \\cr &\\text{(c) } f^{-1}(x) = 2 - \\sqrt{x - 5} \\cr &\\quad\\text{Domain: } x \\ge 5 \\end{aligned}",
-        "feedback": "In part (a), you only calculated $f(3)$. In part (c), because the original domain is $x \ge 2$, the term $x-2$ is positive, so you must use the positive square root for the inverse."
+        "feedback": "In part (a), you only calculated $f(3)$. In part (c), because the original domain is $x \\ge 2$, the term $x-2$ is positive, so you must use the positive square root for the inverse."
       },
       {
         "ans": "\\begin{aligned} &\\text{(a) } ff(3) = 21 \\cr &\\text{(b) } f(x) \\ge 9 \\cr &\\text{(c) } f^{-1}(x) = 2 + \\sqrt{x + 5} \\cr &\\quad\\text{Domain: } x \\ge 5 \\end{aligned}",

@@ -1,7 +1,4 @@
 
-[Pure_10.js] (1 issues found):
-  • Error reading C:\Users\user\Desktop\Bradleys Maths\A Level\bradleys-maths-alevel\Pure_QB\Pure_10.js: Invalid \escape: line 416 column 143 (char 54257)
-
 [Pure_2.js] (10 issues found):
   • Q 004071 (Differentiation): Subpart mismatch!
    - Final Answer parts: ['c']
@@ -33,17 +30,3 @@
   • Q 004080 (Graph transformations): Subpart mismatch!
    - Final Answer parts: ['a']
    - PI #1 parts:       ['b']
-
-[Pure_8.js] (1 issues found):
-  • Error reading C:\Users\user\Desktop\Bradleys Maths\A Level\bradleys-maths-alevel\Pure_QB\Pure_8.js: Invalid \escape: line 281 column 52 (char 31085)
-
-[Pure_9.js] (1 issues found):
-  • Error reading C:\Users\user\Desktop\Bradleys Maths\A Level\bradleys-maths-alevel\Pure_QB\Pure_9.js: Invalid \escape: line 1400 column 195 (char 140461)
-
-[Mech_5.js] (1 issues found):
-  • Q 012205 (Constant Acceleration): Subpart mismatch!
-   - Final Answer parts: ['a', 'b', 'c']
-   - PI #2 parts:       ['a', 'b', 'b', 'c']
-
-[Stats_3.js] (1 issues found):
-  • Error reading C:\Users\user\Desktop\Bradleys Maths\A Level\bradleys-maths-alevel\Stats_QB\Stats_3.js: Invalid \escape: line 1721 column 53 (char 207919)
