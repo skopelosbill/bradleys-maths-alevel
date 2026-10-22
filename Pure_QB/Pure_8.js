@@ -278,7 +278,7 @@ window.ALEVEL_QUESTIONS = [
       },
       {
         "ans": "\\begin{aligned} &\\text{(a) Statement A is false} \\cr &\\quad \\text{Counterexample: } a = 1, \\; b = 1 \\cr &\\text{(b) Statement B is false} \\end{aligned}",
-        "feedback": "While Statement A is false ($ \sqrt{2} \\ne 2$), Statement B is a fundamental truth in algebra derived from $(a-b)^2 \ge 0$. It cannot be false for any real numbers $a$ and $b$."
+        "feedback": "While Statement A is false ($ \\sqrt{2} \\ne 2$), Statement B is a fundamental truth in algebra derived from $(a-b)^2 \\ge 0$. It cannot be false for any real numbers $a$ and $b$."
       }
     ],
     "bradley_insight": {

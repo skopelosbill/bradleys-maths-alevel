@@ -190,7 +190,7 @@ window.ALEVEL_QUESTIONS = [
             "feedback": "The value $45.9\\text{ m}$ is only the height gained after the engine cuts out. You must add the initial $75\\text{ m}$ gained during powered flight to get the maximum height ($121\\text{ m}$)."
         },
         {
-            "ans": "(a) $30\\text{ m s}^{-1}$, (b) $75\\text{ m}$, (b) $121\\text{ m}$, (c) $8.06\\text{ s}$",
+            "ans": "(a) $30\\text{ m s}^{-1}$, (b) $75\\text{ m}$, (c) $8.06\\text{ s}$",
             "feedback": "The value $8.06\\text{ s}$ is only the time to reach maximum height ($5.0 + 3.06\\text{ s}$). You must also add the time taken to fall back to the ground ($4.97\\text{ s}$)."
         },
         {

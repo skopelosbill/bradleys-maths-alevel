@@ -413,7 +413,7 @@ window.ALEVEL_QUESTIONS = [
       },
       {
         "ans": "\\begin{aligned} &\\text{(a)(i) } f(1) = 0 \\cr &\\text{(a)(ii) } f(x) \\cr &\\quad = (x - 1)(4x^2 + 2x + 3) \\cr &\\text{(b) } \\text{No real solutions for } y \\cr &\\text{(c) } 2 \\text{ real solutions} \\end{aligned}",
-        "feedback": "This occurs in part (b) if you mistakenly believe the exponential equation $e^y = 1$ has no real solutions, whereas $y = \ln(1) = 0$ is a valid unique real solution."
+        "feedback": "This occurs in part (b) if you mistakenly believe the exponential equation $e^y = 1$ has no real solutions, whereas $y = \\ln(1) = 0$ is a valid unique real solution."
       }
     ],
     "bradley_insight": {

@@ -1397,7 +1397,7 @@ window.ALEVEL_QUESTIONS = [
     "pi_options": [
       {
         "ans": "\\begin{aligned} &\\text{(a) } ff(3) = 21 \\cr &\\text{(b) } f(x) \\ge 5 \\cr &\\text{(c) } f^{-1}(x) = 2 + \\sqrt{x - 5} \\cr &\\quad\\text{Domain: } x \\ge 2 \\end{aligned}",
-        "feedback": "Parts (a) and (b) are correct. For part (c), you must remember that the domain of an inverse function is strictly defined by the range of the original function, which is $x \ge 5$."
+        "feedback": "Parts (a) and (b) are correct. For part (c), you must remember that the domain of an inverse function is strictly defined by the range of the original function, which is $x \\ge 5$."
       },
       {
         "ans": "\\begin{aligned} &\\text{(a) } ff(3) = 6 \\cr &\\text{(b) } f(x) \\ge 5 \\cr &\\text{(c) } f^{-1}(x) = 2 - \\sqrt{x - 5} \\cr &\\quad\\text{Domain: } x \\ge 5 \\end{aligned}",
