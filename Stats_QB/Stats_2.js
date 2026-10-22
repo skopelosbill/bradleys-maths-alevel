@@ -1421,7 +1421,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: The 'At Most' Critical Region Rule",
-        "content": "When an exam question instructs you to allocate 'at most $5\%$ to each tail', you must ensure neither tail probability exceeds $0.05$. In this case, while $0.0736$ and $0.0778$ are closer to $0.05$ than $0.0294$ and $0.0344$, they exceed the strict $5\%$ cap and must be rejected."
+        "content": "When an exam question instructs you to allocate 'at most $5\\%$ to each tail', you must ensure neither tail probability exceeds $0.05$. In this case, while $0.0736$ and $0.0778$ are closer to $0.05$ than $0.0294$ and $0.0344$, they exceed the strict $5\\%$ cap and must be rejected."
     }
 },
 {

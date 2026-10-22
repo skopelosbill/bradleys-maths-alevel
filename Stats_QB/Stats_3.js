@@ -77,7 +77,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Two-Tailed Critical Boundaries",
-        "content": "When testing $H_1: \\mu \\neq \\mu_0$, always write down the two-tailed critical values ($\pm 1.960$ at $5\\%$, or $\pm 2.576$ at $1\\%$). State explicitly that the test statistic lies in the upper critical tail ($z = 2.000 > 1.960$) to secure all method and communication marks."
+        "content": "When testing $H_1: \\mu \\neq \\mu_0$, always write down the two-tailed critical values ($\\pm 1.960$ at $5\\%$, or $\\pm 2.576$ at $1\\%$). State explicitly that the test statistic lies in the upper critical tail ($z = 2.000 > 1.960$) to secure all method and communication marks."
     }
 },
 {
