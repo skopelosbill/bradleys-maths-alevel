@@ -28,3 +28,6 @@ flutter:
   assets:
     - assets/bradleys_maths.db
     - assets/questions.json
+    - assets/images/Pure_SVGs/
+    - assets/images/Mechanics_SVGs/
+    - assets/images/Statistics_SVGs/

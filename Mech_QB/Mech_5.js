@@ -217,7 +217,7 @@ window.ALEVEL_QUESTIONS = [
         "Uniform plank",
         "Principle of moments"
     ],
-    "img": "images/Mechanics_pngs/012206.png",
+    "img": "images/Mechanics_SVGs/012206.svg",
     "question": "The diagram shows a uniform plank $AB$ of length $5\\text{ m}$ supported in horizontal equilibrium by means of a central pivot.<br><br>On the plank there are three objects of masses $10\\text{ kg}$, $4\\text{ kg}$, and $18\\text{ kg}$ placed in positions $C$, $D$, and $E$ respectively. The distance $AC$ is $0.8\\text{ m}$ and the distance $AE$ is $3.5\\text{ m}$.<br><br>Find the distance $AD$.",
     "steps": [
         "<strong>Locate distances from the central pivot:</strong><br><br>The plank is uniform and has length $5\\text{ m}$, so the central pivot $P$ is at the midpoint, $2.5\\text{ m}$ from $A$.<br><br>The weight of the plank acts directly through this pivot and exerts zero moment.<br><br>Distances from the pivot $P$ ($2.5\\text{ m}$ from $A$):<br>• Distance $CP = 2.5 - 0.8 = 1.7\\text{ m}$ (left)<br>• Distance $EP = 3.5 - 2.5 = 1.0\\text{ m}$ (right)",
@@ -257,7 +257,7 @@ window.ALEVEL_QUESTIONS = [
         "Weight of a uniform beam",
         "Equilibrium"
     ],
-    "img": "images/Mechanics_pngs/012207.png",
+    "img": "images/Mechanics_SVGs/012207.svg",
     "question": "The diagram shows a uniform beam $AB$ of length $6\\text{ m}$ and mass $20\\text{ kg}$ resting horizontally in equilibrium on a smooth pivot at $P$, where $AP = 2\\text{ m}$.<br><br>An object of mass $M\\text{ kg}$ is attached to end $A$ and an object of mass $15\\text{ kg}$ is attached to end $B$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> State the distance from end $A$ to the centre of mass $G$ of the beam.<br><br><strong>(b)</strong> Calculate the mass $M$ required for the beam to rest in horizontal equilibrium.",
     "steps": [
         "<strong>(a) Centre of mass:</strong><br><br>Because the beam is uniform, its centre of mass $G$ lies at its geometric midpoint:\\begin{aligned} AG &= \\dfrac{6}{2} \\cr &= 3\\text{ m} \\end{aligned}",
@@ -297,7 +297,7 @@ window.ALEVEL_QUESTIONS = [
         "Normal reaction forces",
         "Multiple point loads"
     ],
-    "img": "images/Mechanics_pngs/012208.png",
+    "img": "images/Mechanics_SVGs/012208.svg",
     "question": "The diagram shows a uniform plank $AB$ of length $6\\text{ m}$ and mass $30\\text{ kg}$ resting horizontally on two smooth supports at $C$ and $D$, where $AC = 1.0\\text{ m}$ and $AD = 5.0\\text{ m}$.<br><br>Two loads of masses $18\\text{ kg}$ and $10\\text{ kg}$ are placed on the plank at points $P$ and $Q$ respectively, where $AP = 2.0\\text{ m}$ and $AQ = 5.2\\text{ m}$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Calculate the magnitude of the normal reaction force exerted on the plank by the support at $D$.<br><br><strong>(b)</strong> Calculate the magnitude of the normal reaction force exerted on the plank by the support at $C$.",
     "steps": [
         "<strong>(a) Normal reaction at support $D$:</strong><br><br>The plank is uniform, so its weight $30g\\text{ N}$ acts at its midpoint, $3.0\\text{ m}$ from $A$.<br><br>Measure distances from support $C$ ($1.0\\text{ m}$ from $A$):<br>• Distance to load $P$: $2.0 - 1.0 = 1.0\\text{ m}$<br>• Distance to midpoint: $3.0 - 1.0 = 2.0\\text{ m}$<br>• Distance to support $D$: $5.0 - 1.0 = 4.0\\text{ m}$<br>• Distance to load $Q$: $5.2 - 1.0 = 4.2\\text{ m}$<br><br>Taking moments about $C$:\\begin{aligned} &4.0 R_D = 18g(1.0) + 30g(2.0) \\cr &\\qquad + 10g(4.2) \\cr &4.0 R_D = 18g + 60g + 42g \\cr &4.0 R_D = 120g \\cr &R_D = 30g \\cr &R_D = 30(9.8) \\cr &R_D = 294\\text{ N} \\end{aligned}",
@@ -337,7 +337,7 @@ window.ALEVEL_QUESTIONS = [
         "Limiting equilibrium",
         "Overhang"
     ],
-    "img": "images/Mechanics_pngs/012209.png",
+    "img": "images/Mechanics_SVGs/012209.svg",
     "question": "The diagram shows a uniform beam $AB$ of mass $40\\text{ kg}$ and length $6\\text{ m}$ resting horizontally on two smooth supports at $C$ and $D$, where $AC = 1.5\\text{ m}$ and $DB = 1.5\\text{ m}$.<br><br>A person of mass $60\\text{ kg}$ walks along the overhang $DB$ towards end $B$. When the person reaches point $X$, at a distance of $x\\text{ m}$ from support $D$, the beam is on the point of tilting about $D$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> State the magnitude of the normal reaction force exerted by the support at $C$ when the beam is on the point of tilting about $D$.<br><br><strong>(b)</strong> Calculate the distance $x$.<br><br><strong>(c)</strong> State, with a reason, whether the person can safely reach end $B$ without the beam tipping.",
     "steps": [
         "<strong>(a) Reaction at support $C$:</strong><br><br>When the beam is on the point of tilting about support $D$, it breaks contact with support $C$.<br><br>Therefore, the normal reaction at $C$ is:\\begin{aligned} R_C = 0\\text{ N} \\end{aligned}",
@@ -378,7 +378,7 @@ window.ALEVEL_QUESTIONS = [
         "Centre of mass",
         "Suspended rod"
     ],
-    "img": "images/Mechanics_pngs/012210.png",
+    "img": "images/Mechanics_SVGs/012210.svg",
     "question": "The diagram shows a non-uniform rod $AB$ of length $4\\text{ m}$ and weight $120\\text{ N}$ suspended horizontally in equilibrium by two light vertical strings attached to its ends $A$ and $B$.<br><br>Two point loads of weights $40\\text{ N}$ and $60\\text{ N}$ are attached to the rod at points $C$ and $D$ respectively, where $AC = 1.0\\text{ m}$ and $AD = 3.0\\text{ m}$. The tension in the vertical string attached at end $B$ is measured to be $105\\text{ N}$.<br><br><strong>(a)</strong> Find the tension in the vertical string attached at end $A$.<br><br><strong>(b)</strong> Calculate the distance of the centre of mass of the rod from end $A$.",
     "steps": [
         "<strong>(a) Tension in string at $A$:</strong><br><br>For vertical equilibrium, total upward tensions balance total downward weights:\\begin{aligned} &T_A + T_B = 120 + 40 + 60 \\cr &T_A + 105 = 220 \\cr &T_A = 220 - 105 \\cr &T_A = 115\\text{ N} \\end{aligned}",
@@ -1233,7 +1233,7 @@ window.ALEVEL_QUESTIONS = [
         "Resolving Forces",
         "Resultant Vectors"
     ],
-    "img": "images/Mechanics_pngs/012231.png",
+    "img": "images/Mechanics_SVGs/012231.svg",
     "question": "The diagram shows three coplanar forces acting on a particle at a point $O$:<br>• A force of $8\\text{ N}$ acting vertically upwards.<br>• A force of $12\\text{ N}$ acting at an angle of $20^\\circ$ above the horizontal to the left.<br>• A force of $15\\text{ N}$ acting at an angle of $50^\\circ$ below the horizontal to the right.<br><br><strong>(a)</strong> Calculate the horizontal and vertical components of the resultant force.<br><br><strong>(b)</strong> Calculate the magnitude of the resultant force, giving your answer to 3 significant figures.<br><br><strong>(c)</strong> Find the acute angle that the resultant force makes with the horizontal, stating clearly whether it acts above or below the horizontal, and to the left or to the right.",
     "steps": [
         "<strong>(a) Resolve horizontally and vertically:</strong><br><br>Taking rightwards as positive horizontal ($R_x$):\\begin{aligned} R_x &= 15\\cos 50^\\circ - 12\\cos 20^\\circ \\cr &= 9.6418 - 11.2763 \\cr &= -1.6345\\text{ N} \\end{aligned}Thus, the horizontal component is $1.63\\text{ N}$ to the left.<br><br>Taking upwards as positive vertical ($R_y$):\\begin{aligned} R_y &= 8 + 12\\sin 20^\\circ - 15\\sin 50^\\circ \\cr &= 8 + 4.1042 - 11.4907 \\cr &= 0.6135\\text{ N} \\end{aligned}Thus, the vertical component is $0.614\\text{ N}$ upwards.",
@@ -1273,7 +1273,7 @@ window.ALEVEL_QUESTIONS = [
         "Equilibrium of a Particle",
         "Resolving Forces"
     ],
-    "img": "images/Mechanics_pngs/012232.png",
+    "img": "images/Mechanics_SVGs/012232.svg",
     "question": "The diagram shows three coplanar forces acting on a particle $P$, which is held in equilibrium:<br>• A force of magnitude $T\\text{ N}$ acting at an angle of $30^\\circ$ above the horizontal to the left.<br>• A force of magnitude $F\\text{ N}$ acting at an angle of $60^\\circ$ above the horizontal to the right.<br>• A force of magnitude $40\\text{ N}$ acting vertically downwards.<br><br><strong>(a)</strong> By resolving forces horizontally, show that:$$F = T\\sqrt{3}$$<strong>(b)</strong> By resolving forces vertically, determine:<br>(i) the exact value of $T$,<br>(ii) the value of $F$, giving your answer in exact surd form and to 3 significant figures.",
     "steps": [
         "<strong>(a) Resolve horizontally for equilibrium:</strong><br><br>For horizontal equilibrium, the sum of horizontal forces must equal zero:\\begin{aligned} &F\\cos 60^\\circ - T\\cos 30^\\circ = 0 \\cr &F\\left(\\dfrac{1}{2}\\right) = T\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &F = T\\sqrt{3} \\end{aligned}",
@@ -1313,7 +1313,7 @@ window.ALEVEL_QUESTIONS = [
         "Suspended Particles",
         "Tension in Strings"
     ],
-    "img": "images/Mechanics_pngs/012233.png",
+    "img": "images/Mechanics_SVGs/012233.svg",
     "question": "The diagram shows a small body of mass $6\\text{ kg}$ suspended in equilibrium by two light, inextensible strings $AB$ and $AC$.<br><br>The ends $B$ and $C$ are attached to two fixed points on a horizontal ceiling. The string $AB$ is inclined at $30^\\circ$ to the ceiling and has tension $T_1\\text{ N}$. The string $AC$ is inclined at $45^\\circ$ to the ceiling and has tension $T_2\\text{ N}$.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Show that the tensions satisfy the relation:$$T_2 = T_1\\sqrt{\\dfrac{3}{2}}$$<strong>(b)</strong> Calculate the values of $T_1$ and $T_2$, giving your answers in newtons to 3 significant figures.",
     "steps": [
         "<strong>(a) Resolve horizontally at point A:</strong><br><br>By alternate angles, string $AB$ pulls at $30^\\circ$ above the horizontal and string $AC$ pulls at $45^\\circ$ above the horizontal.<br><br>For horizontal equilibrium:\\begin{aligned} &T_2\\cos 45^\\circ - T_1\\cos 30^\\circ = 0 \\cr &T_2\\left(\\dfrac{\\sqrt{2}}{2}\\right) = T_1\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &T_2 = T_1\\left(\\dfrac{\\sqrt{3}}{\\sqrt{2}}\\right) \\cr &T_2 = T_1\\sqrt{\\dfrac{3}{2}} \\end{aligned}",
@@ -1352,7 +1352,7 @@ window.ALEVEL_QUESTIONS = [
         "Inclined Planes",
         "Resolving Forces"
     ],
-    "img": "images/Mechanics_pngs/012234.png",
+    "img": "images/Mechanics_SVGs/012234.svg",
     "question": "The diagram shows a block of mass $4\\text{ kg}$ resting on a smooth plane inclined at an angle of $30^\\circ$ to the horizontal.<br><br>The block is held in equilibrium by a force of magnitude $P\\text{ N}$ acting at an angle of $20^\\circ$ above the surface of the inclined plane, in the vertical plane containing a line of greatest slope.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> By resolving forces parallel to the inclined plane, calculate the value of $P$, giving your answer to 3 significant figures.<br><br><strong>(b)</strong> Calculate the magnitude of the normal reaction $R$ exerted by the plane on the block, giving your answer to 3 significant figures.",
     "steps": [
         "<strong>(a) Resolve parallel to the inclined plane:</strong><br><br>The component of the weight acting down the slope is:\\begin{aligned} W_{\\parallel} &= mg\\sin 30^\\circ \\cr &= 4(9.8)(0.5) \\cr &= 19.6\\text{ N} \\end{aligned}The component of force $P$ acting up the slope is $P\\cos 20^\\circ$.<br><br>For equilibrium parallel to the slope:\\begin{aligned} &P\\cos 20^\\circ - 19.6 = 0 \\cr &P\\cos 20^\\circ = 19.6 \\cr &P = \\dfrac{19.6}{\\cos 20^\\circ} \\cr &P \\approx 20.9\\text{ N} \\end{aligned}",
@@ -1391,7 +1391,7 @@ window.ALEVEL_QUESTIONS = [
         "Bearings",
         "Resultant Vectors"
     ],
-    "img": "images/Mechanics_pngs/012235.png",
+    "img": "images/Mechanics_SVGs/012235.svg",
     "question": "The diagram shows three horizontal forces acting on a buoy moored at a point $O$:<br>• A force of $18\\text{ kN}$ on a bearing of $000^\\circ$ (due North).<br>• A force of $24\\text{ kN}$ on a bearing of $060^\\circ$.<br>• A force of $15\\text{ kN}$ on a bearing of $135^\\circ$.<br><br><strong>(a)</strong> Calculate the total easterly component and total northerly component of the resultant force, giving your answers in $\\text{kN}$ to 3 significant figures.<br><br><strong>(b)</strong> Calculate the magnitude of the resultant force, giving your answer in $\\text{kN}$ to 3 significant figures.<br><br><strong>(c)</strong> Determine the bearing of the resultant force, giving your answer to the nearest whole degree.",
     "steps": [
         "<strong>(a) Resolve in East and North directions:</strong><br><br>For any force of magnitude $F$ on a three-figure bearing $\\beta$, the components are $F_E = F\\sin\\beta$ and $F_N = F\\cos\\beta$.<br><br>Total Easterly component ($E$):\\begin{aligned} E &= 18\\sin 000^\\circ + 24\\sin 060^\\circ \\cr &\\qquad + 15\\sin 135^\\circ \\cr &= 0 + 24\\left(\\dfrac{\\sqrt{3}}{2}\\right) + 15\\left(\\dfrac{\\sqrt{2}}{2}\\right) \\cr &= 20.7846 + 10.6066 \\cr &= 31.3912\\text{ kN} \\cr &\\approx 31.4\\text{ kN} \\end{aligned}Total Northerly component ($N$):\\begin{aligned} N &= 18\\cos 000^\\circ + 24\\cos 060^\\circ \\cr &\\qquad + 15\\cos 135^\\circ \\cr &= 18(1) + 24(0.5) - 15\\left(\\dfrac{\\sqrt{2}}{2}\\right) \\cr &= 18 + 12 - 10.6066 \\cr &= 19.3934\\text{ kN} \\cr &\\approx 19.4\\text{ kN} \\end{aligned}",
@@ -1631,7 +1631,7 @@ window.ALEVEL_QUESTIONS = [
         "Velocity-Time Graphs",
         "Multi-Stage Motion"
     ],
-    "img": "images/Mechanics_pngs/012241.png",
+    "img": "images/Mechanics_SVGs/012241.svg",
     "question": "The diagram shows the velocity-time graph for a particle moving in a straight line over a period of $14\\text{ seconds}$.<br><br>The motion consists of three distinct stages:<br>• Accelerating uniformly from rest to a speed of $12\\text{ m s}^{-1}$ in the first $4\\text{ seconds}$.<br>• Travelling at a constant speed of $12\\text{ m s}^{-1}$ from $t = 4\\text{ s}$ to $t = T\\text{ s}$.<br>• Decelerating uniformly from $12\\text{ m s}^{-1}$ to $6\\text{ m s}^{-1}$ in the time interval from $t = T\\text{ s}$ to $t = 14\\text{ s}$.<br><br>The total distance travelled by the particle during the $14\\text{ seconds}$ is $135\\text{ m}$.<br><br><strong>(a)</strong> Calculate the acceleration of the particle during the first $4\\text{ seconds}$.<br><br><strong>(b)</strong> Calculate the value of $T$.<br><br><strong>(c)</strong> Determine the deceleration of the particle during the final stage of the motion.",
     "steps": [
         "<strong>(a) Calculate acceleration in stage 1:</strong><br><br>The acceleration is the gradient of the velocity-time graph during the first $4\\text{ seconds}$:\\begin{aligned} a &= \\dfrac{v - u}{t} \\cr &= \\dfrac{12 - 0}{4} \\cr &= 3\\text{ m s}^{-2} \\end{aligned}",
@@ -1671,7 +1671,7 @@ window.ALEVEL_QUESTIONS = [
         "Velocity-Time Graphs",
         "Trapezoidal Profiles"
     ],
-    "img": "images/Mechanics_pngs/012242.png",
+    "img": "images/Mechanics_SVGs/012242.svg",
     "question": "The diagram shows the velocity-time graph for a passenger train travelling along a straight horizontal track between two stations, $A$ and $B$.<br><br>The train starts from rest at station $A$ and accelerates uniformly for $20\\text{ seconds}$ until it reaches a speed of $V\\text{ m s}^{-1}$. It then maintains this constant cruising speed $V\\text{ m s}^{-1}$ for $50\\text{ seconds}$ before decelerating uniformly for $30\\text{ seconds}$, coming to rest at station $B$.<br><br>The total distance between station $A$ and station $B$ is $1800\\text{ m}$.<br><br><strong>(a)</strong> Calculate the value of $V$.<br><br><strong>(b)</strong> Calculate the acceleration of the train during the first $20\\text{ seconds}$.<br><br><strong>(c)</strong> Calculate the deceleration of the train during the final $30\\text{ seconds}$.",
     "steps": [
         "<strong>(a) Find cruising speed V from total area:</strong><br><br>The graph forms a trapezium with parallel horizontal sides of length $50\\text{ s}$ and $(20 + 50 + 30) = 100\\text{ s}$.<br><br>Using the area of a trapezium:\\begin{aligned} &\\text{Area} = \\dfrac{1}{2}(a + b)h \\cr &1800 = \\dfrac{1}{2}(50 + 100)V \\cr &1800 = 75V \\cr &V = \\dfrac{1800}{75} \\cr &V = 24\\text{ m s}^{-1} \\end{aligned}",
@@ -1711,7 +1711,7 @@ window.ALEVEL_QUESTIONS = [
         "Velocity-Time Graphs",
         "Reversal of Motion"
     ],
-    "img": "images/Mechanics_pngs/012243.png",
+    "img": "images/Mechanics_SVGs/012243.svg",
     "question": "The diagram shows the velocity-time graph for a particle moving along a straight horizontal line over a period of $14\\text{ seconds}$.<br><br>At time $t = 0\\text{ s}$, the particle has an initial velocity of $+12\\text{ m s}^{-1}$. It moves with constant acceleration, coming instantaneously to rest at $t = 6\\text{ s}$, and continues with the same constant acceleration until $t = 10\\text{ s}$, when its velocity is $-8\\text{ m s}^{-1}$.<br><br>From $t = 10\\text{ s}$ to $t = 14\\text{ s}$, the particle decelerates uniformly, coming to rest at $t = 14\\text{ s}$.<br><br><strong>(a)</strong> Find the acceleration of the particle during the first $10\\text{ seconds}$.<br><br><strong>(b)</strong> Calculate the displacement of the particle from its starting position at time $t = 14\\text{ s}$.<br><br><strong>(c)</strong> Calculate the total distance travelled by the particle during the entire $14\\text{ seconds}$.<br><br><strong>(d)</strong> State the greatest distance of the particle from its starting point during the motion.",
     "steps": [
         "<strong>(a) Find acceleration in first 10 s:</strong><br><br>The line is straight from $t = 0\\text{ s}$ to $t = 10\\text{ s}$. Using the gradient from $(0, 12)$ to $(6, 0)$:\\begin{aligned} a &= \\dfrac{0 - 12}{6 - 0} \\cr &= -2\\text{ m s}^{-2} \\end{aligned}",
@@ -1752,7 +1752,7 @@ window.ALEVEL_QUESTIONS = [
         "Velocity-Time Graphs",
         "Relative Pursuit"
     ],
-    "img": "images/Mechanics_pngs/012244.png",
+    "img": "images/Mechanics_SVGs/012244.svg",
     "question": "The diagram shows the velocity-time graphs for a car and a police motorcycle travelling along a straight stretch of motorway.<br><br>At time $t = 0\\text{ s}$, the car passes a stationary police motorcycle at a constant speed of $24\\text{ m s}^{-1}$. The motorcycle remains stationary until $t = 2\\text{ s}$, at which point it accelerates uniformly at $3\\text{ m s}^{-2}$ until $t = 12\\text{ s}$, reaching a speed of $30\\text{ m s}^{-1}$.<br><br>The motorcycle then continues at this constant speed of $30\\text{ m s}^{-1}$ until it draws level with the car at time $t = T\\text{ s}$.<br><br><strong>(a)</strong> Find the distance travelled by the car during the time interval $0 \\le t \\le 12\\text{ s}$.<br><br><strong>(b)</strong> Find the distance travelled by the motorcycle during the time interval $0 \\le t \\le 12\\text{ s}$.<br><br><strong>(c)</strong> Form an equation in $T$, and hence determine the time $T$ at which the motorcycle draws level with the car.<br><br><strong>(d)</strong> Calculate the total distance travelled by the motorcycle from its starting position up to the moment it draws level with the car.",
     "steps": [
         "<strong>(a) Distance travelled by car in 12 s:</strong><br><br>The car moves at a constant speed of $24\\text{ m s}^{-1}$:\\begin{aligned} s_{\\text{car}} &= 24 \\times 12 \\cr &= 288\\text{ m} \\end{aligned}",
@@ -1793,7 +1793,7 @@ window.ALEVEL_QUESTIONS = [
         "Velocity-Time Graphs",
         "Vertical Motion"
     ],
-    "img": "images/Mechanics_pngs/012245.png",
+    "img": "images/Mechanics_SVGs/012245.svg",
     "question": "The diagram shows the velocity-time graph for a lift ascending vertically from the ground floor to the observation deck of a tall building.<br><br>The lift starts from rest and accelerates uniformly at $1.5\\text{ m s}^{-2}$ for $4\\text{ seconds}$ to reach a cruising speed of $6\\text{ m s}^{-1}$. It then travels at this constant speed of $6\\text{ m s}^{-1}$ from $t = 4\\text{ s}$ to $t = t_1\\text{ s}$. Finally, it decelerates uniformly to rest at $2\\text{ m s}^{-2}$ between $t = t_1\\text{ s}$ and $t = t_2\\text{ s}$.<br><br>The total vertical distance ascended by the lift is $93\\text{ m}$.<br><br><strong>(a)</strong> Calculate the distance ascended by the lift during the first $4\\text{ seconds}$.<br><br><strong>(b)</strong> Find the time taken by the lift to decelerate to rest, and hence express $t_2$ in terms of $t_1$.<br><br><strong>(c)</strong> Find the value of $t_1$, and state the total time $t_2$ taken for the complete journey.<br><br><strong>(d)</strong> Calculate the average speed of the lift for the entire journey, giving your answer to 3 significant figures.",
     "steps": [
         "<strong>(a) Distance during acceleration stage:</strong><br><br>Using the triangular area under the graph for the first $4\\text{ seconds}$:\\begin{aligned} s_1 &= \\dfrac{1}{2}(4)(6) \\cr &= 12\\text{ m} \\end{aligned}",
@@ -1835,10 +1835,10 @@ window.ALEVEL_QUESTIONS = [
         "Two-Stage Motion",
         "Modelling Assumptions"
     ],
-    "img": "images/Mechanics_pngs/012246.png",
+    "img": "images/Mechanics_SVGs/012246.svg",
     "question": "The diagram shows a block $A$ of mass $3\\text{ kg}$ held at rest on a rough horizontal table at a distance of $2.0\\text{ m}$ from a small, smooth, light fixed pulley at the edge of the table.<br><br>Block $A$ is connected to a block $B$ of mass $2\\text{ kg}$ by a light, inextensible rope passing over the pulley. Block $B$ hangs vertically at a height of $1.5\\text{ m}$ above a horizontal floor.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br>Box $A$ is released from rest.<br><br><strong>(a)</strong> On a sketch of the diagram, show all the external forces acting on block $A$ and block $B$.<br><br><strong>(b)</strong> Given that block $B$ hits the floor with a speed of $2.1\\text{ m s}^{-1}$, find the value of the coefficient of friction $\\mu$ between block $A$ and the table, giving your answer as an exact fraction and to 3 significant figures.<br><br><strong>(c)</strong> When block $B$ hits the floor, it does not rebound and the rope becomes slack. Determine whether block $A$ will collide with the pulley.<br><br><strong>(d)</strong> State one modelling assumption you have made about the rope, and explain how this assumption has been used in your mathematical model.",
     "steps": [
-        "<strong>(a) Complete the force diagram:</strong><br><br>The external forces acting on the two blocks are shown in the completed diagram below:<br><img src='images/Mechanics_pngs/012246_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br>For block $A$ on the table:<br>• Normal reaction $R$ vertically upwards<br>• Weight $3g$ vertically downwards<br>• Tension $T$ horizontally to the right<br>• Friction $F_r$ horizontally to the left<br><br>For hanging block $B$:<br>• Weight $2g$ vertically downwards<br>• Tension $T$ vertically upwards",
+        "<strong>(a) Complete the force diagram:</strong><br><br>The external forces acting on the two blocks are shown in the completed diagram below:<br><img src='images/Mechanics_SVGs/012246_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br>For block $A$ on the table:<br>• Normal reaction $R$ vertically upwards<br>• Weight $3g$ vertically downwards<br>• Tension $T$ horizontally to the right<br>• Friction $F_r$ horizontally to the left<br><br>For hanging block $B$:<br>• Weight $2g$ vertically downwards<br>• Tension $T$ vertically upwards",
         "<strong>(b) Deduce acceleration and coefficient of friction μ:</strong><br><br>Using $v^2 = u^2 + 2as_1$ for block $B$ descending $1.5\\text{ m}$ from rest:\\begin{aligned} &2.1^2 = 0 + 2a(1.5) \\cr &4.41 = 3a \\cr &a = 1.47\\text{ m s}^{-2} \\end{aligned}For block $A$, vertical equilibrium gives $R = 3g = 29.4\\text{ N}$.<br><br>Since block $A$ accelerates, friction is limiting: $F_r = \\mu R = 29.4\\mu$.<br><br>Applying Newton's Second Law to the system:\\begin{aligned} &m_B g - F_r = (m_A + m_B)a \\cr &2(9.8) - 29.4\\mu = (3 + 2)(1.47) \\cr &19.6 - 29.4\\mu = 7.35 \\cr &29.4\\mu = 12.25 \\cr &\\mu = \\dfrac{12.25}{29.4} = \\dfrac{5}{12} \\cr &\\mu \\approx 0.417 \\end{aligned}",
         "<strong>(c) Determine whether block A collides with the pulley:</strong><br><br>When block $B$ hits the floor, block $A$ has moved $1.5\\text{ m}$. Its remaining distance to the pulley is:\\begin{aligned} d_{\\text{rem}} &= 2.0 - 1.5 \\cr &= 0.5\\text{ m} \\end{aligned}The rope becomes slack ($T = 0$). Only friction decelerates block $A$:\\begin{aligned} &-F_r = m_A a_2 \\cr &-29.4\\left(\\dfrac{5}{12}\\right) = 3a_2 \\cr &-12.25 = 3a_2 \\cr &a_2 = -4.0833\\text{ m s}^{-2} \\end{aligned}Using $v^2 = u_2^2 + 2a_2 s_2$ with $u_2 = 2.1\\text{ m s}^{-1}$ and $v = 0$:\\begin{aligned} &0 = 2.1^2 + 2(-4.0833)s_2 \\cr &0 = 4.41 - 8.1667s_2 \\cr &s_2 = \\dfrac{4.41}{8.1667} \\cr &s_2 = 0.54\\text{ m} \\end{aligned}Since the sliding distance $0.54\\text{ m} > 0.5\\text{ m}$ (total distance $2.04\\text{ m} > 2.0\\text{ m}$), block $A$ collides with the pulley.",
         "<strong>(d) Modelling assumption:</strong><br><br>Assuming the rope is <em>inextensible</em> means both blocks have the exact same magnitude of acceleration at any instant while the rope is taut.<br><br>(Alternatively: assuming the rope is <em>light</em> means its mass is negligible, so the tension $T$ is uniform throughout its length).",
@@ -1877,7 +1877,7 @@ window.ALEVEL_QUESTIONS = [
         "Two-Stage Motion",
         "Modelling Assumptions"
     ],
-    "img": "images/Mechanics_pngs/012247.png",
+    "img": "images/Mechanics_SVGs/012247.svg",
     "question": "The diagram shows a block $A$ of mass $2\\text{ kg}$ held at rest on a rough horizontal table at a distance of $2.2\\text{ m}$ from a small, smooth pulley fixed at the edge of the table. Block $A$ is connected to a block $B$ of mass $3\\text{ kg}$ by a light, inextensible string passing over the pulley.<br><br>Block $B$ hangs vertically at a height of $1.0\\text{ m}$ above the floor. The coefficient of friction between block $A$ and the table is $\\mu = 0.25$.<br><br>The system is released from rest with the string taut. Block $B$ descends and strikes the floor without rebounding, causing the string to become slack.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the acceleration of the system while block $B$ is descending.<br><br><strong>(b)</strong> Find the speed of block $B$ at the instant it strikes the floor.<br><br><strong>(c)</strong> Determine whether block $A$ will reach the pulley before coming to rest.<br><br><strong>(d)</strong> State what effect taking into account the mass of the string would have on the acceleration of the system as block $B$ descends.",
     "steps": [
         "<strong>(a) Calculate acceleration of the system:</strong><br><br>Vertical equilibrium on block $A$ gives $R = 2g = 19.6\\text{ N}$.<br><br>Friction force on block $A$:\\begin{aligned} F_r &= \\mu R \\cr &= 0.25(19.6) \\cr &= 4.9\\text{ N} \\end{aligned}Applying Newton's Second Law to the system:\\begin{aligned} &m_B g - F_r = (m_A + m_B)a \\cr &3(9.8) - 4.9 = (2 + 3)a \\cr &29.4 - 4.9 = 5a \\cr &24.5 = 5a \\cr &a = 4.9\\text{ m s}^{-2} \\end{aligned}",
@@ -1919,7 +1919,7 @@ window.ALEVEL_QUESTIONS = [
         "Inclined Planes",
         "Modelling Assumptions"
     ],
-    "img": "images/Mechanics_pngs/012248.png",
+    "img": "images/Mechanics_SVGs/012248.svg",
     "question": "The diagram shows a block $P$ of mass $6\\text{ kg}$ resting on a smooth plane inclined at an angle of $30^\\circ$ to the horizontal. Block $P$ is held at rest on the incline at a distance of $1.8\\text{ m}$ below a small, smooth pulley fixed at the apex of the plane.<br><br>Block $P$ is attached to one end of a light, inextensible string that lies parallel to a line of greatest slope of the plane. The other end of the string passes over the pulley and is attached to a vertically hanging block $Q$ of mass $4\\text{ kg}$.<br><br>The system is released from rest. Block $Q$ descends vertically through a distance of $0.9\\text{ m}$ before striking a horizontal buffer, which brings block $Q$ to rest instantaneously and leaves the string slack.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the acceleration of the blocks before block $Q$ hits the buffer.<br><br><strong>(b)</strong> Calculate the speed of block $Q$ at the instant it hits the buffer.<br><br><strong>(c)</strong> Determine whether block $P$ reaches the apex pulley before coming instantaneously to rest.<br><br><strong>(d)</strong> State one modelling assumption you have made about the pulley, and explain its physical consequence for the tension in the string.",
     "steps": [
         "<strong>(a) Calculate acceleration before impact:</strong><br><br>Component of weight of $P$ down the plane:\\begin{aligned} W_{P\\parallel} &= 6(9.8)\\sin 30^\\circ \\cr &= 29.4\\text{ N} \\end{aligned}Weight of block $Q$ downwards:\\begin{aligned} W_Q &= 4(9.8) \\cr &= 39.2\\text{ N} \\end{aligned}Since $39.2\\text{ N} > 29.4\\text{ N}$, block $Q$ accelerates downwards and block $P$ accelerates up the slope.\\begin{aligned} &W_Q - W_{P\\parallel} = (m_P + m_Q)a \\cr &39.2 - 29.4 = (6 + 4)a \\cr &9.8 = 10a \\cr &a = 0.98\\text{ m s}^{-2} \\end{aligned}",
@@ -1961,7 +1961,7 @@ window.ALEVEL_QUESTIONS = [
         "Projectile Motion",
         "Modelling Assumptions"
     ],
-    "img": "images/Mechanics_pngs/012249.png",
+    "img": "images/Mechanics_SVGs/012249.svg",
     "question": "The diagram shows two particles, $A$ and $B$, of masses $3\\text{ kg}$ and $5\\text{ kg}$ respectively, connected by a light, inextensible string of length $4\\text{ m}$ that passes over a small, smooth, fixed pulley.<br><br>Initially, the particles hang vertically at the same horizontal level, with particle $B$ held at a height of $1.6\\text{ m}$ above a horizontal floor. The system is released from rest. Particle $B$ strikes the floor and does not rebound, leaving the string slack.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the acceleration of the particles while both are in motion.<br><br><strong>(b)</strong> Find the speed with which particle $B$ strikes the floor.<br><br><strong>(c)</strong> Calculate the greatest height reached by particle $A$ above its initial starting position.<br><br><strong>(d)</strong> State how you have used the assumption that the string is inextensible in your calculations for part <strong>(a)</strong>.",
     "steps": [
         "<strong>(a) Calculate acceleration of the particles:</strong><br><br>Since $m_B > m_A$, particle $B$ accelerates downwards and particle $A$ accelerates upwards.<br><br>Applying Newton's Second Law to the system:\\begin{aligned} &m_B g - m_A g = (m_A + m_B)a \\cr &5(9.8) - 3(9.8) = (3 + 5)a \\cr &49 - 29.4 = 8a \\cr &19.6 = 8a \\cr &a = 2.45\\text{ m s}^{-2} \\end{aligned}",
@@ -2003,7 +2003,7 @@ window.ALEVEL_QUESTIONS = [
         "Resultant Force on Peg",
         "Two-Stage Motion"
     ],
-    "img": "images/Mechanics_pngs/012250.png",
+    "img": "images/Mechanics_SVGs/012250.svg",
     "question": "The diagram shows a block $A$ of mass $4\\text{ kg}$ held at rest on a rough horizontal table at a distance of $3.2\\text{ m}$ from a small, smooth pulley fixed at the edge of the table. Block $A$ is connected to a hanging block $B$ of mass $6\\text{ kg}$ by a light, inextensible string passing over the pulley.<br><br>Block $B$ is released from rest at a height of $1.5\\text{ m}$ above the floor. It is observed that block $B$ hits the floor with a speed of $3.6\\text{ m s}^{-1}$.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the acceleration of the system while block $B$ is descending.<br><br><strong>(b)</strong> Find the coefficient of friction $\\mu$ between block $A$ and the table, giving your answer to 3 significant figures.<br><br><strong>(c)</strong> Calculate the magnitude and direction of the resultant force exerted by the string on the pulley while the blocks are moving.<br><br><strong>(d)</strong> When block $B$ hits the floor, the string becomes slack. Determine whether block $A$ will collide with the pulley.",
     "steps": [
         "<strong>(a) Calculate acceleration of the system:</strong><br><br>Using $v^2 = u^2 + 2as_1$ for block $B$ descending $1.5\\text{ m}$ from rest:\\begin{aligned} &3.6^2 = 0 + 2a(1.5) \\cr &12.96 = 3a \\cr &a = 4.32\\text{ m s}^{-2} \\end{aligned}",

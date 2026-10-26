@@ -12,10 +12,10 @@ window.ALEVEL_QUESTIONS = [
         "Parallel Vertical Supports",
         "Modelling Assumptions"
     ],
-    "img": "images/Mechanics_pngs/012251.png",
+    "img": "images/Mechanics_SVGs/012251.svg",
     "question": "The diagram shows a uniform rod $AB$ of mass $20\\text{ kg}$ and length $8\\text{ m}$ held horizontally in equilibrium by two light, inextensible vertical strings attached at points $C$ and $D$ on the rod.<br><br>Point $C$ is at a distance of $2\\text{ m}$ from $A$, and point $D$ is at a distance of $1\\text{ m}$ from $B$, so that the distance $CD = 5\\text{ m}$.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> On a sketch of the diagram, show all the external forces acting on the rod.<br><br><strong>(b)</strong> Calculate the tension in the string at $C$ and the tension in the string at $D$.<br><br><strong>(c)</strong> State how you have used the assumption that the rod is uniform in your mathematical model.",
     "steps": [
-        "<strong>(a) Complete the force diagram:</strong><br><br>The external forces acting on the rod are shown in the completed diagram below:<br><img src='images/Mechanics_pngs/012251_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br>• Tension $T_C$ vertically upwards at point $C$<br>• Tension $T_D$ vertically upwards at point $D$<br>• Weight $20g = 196\\text{ N}$ vertically downwards at the midpoint $M$ ($4\\text{ m}$ from $A$)",
+        "<strong>(a) Complete the force diagram:</strong><br><br>The external forces acting on the rod are shown in the completed diagram below:<br><img src='images/Mechanics_SVGs/012251_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img><br>• Tension $T_C$ vertically upwards at point $C$<br>• Tension $T_D$ vertically upwards at point $D$<br>• Weight $20g = 196\\text{ N}$ vertically downwards at the midpoint $M$ ($4\\text{ m}$ from $A$)",
         "<strong>(b) Calculate tensions by moments and vertical resolution:</strong><br><br>The midpoint $M$ is $4\\text{ m}$ from $A$, so its distance from $C$ is $4 - 2 = 2\\text{ m}$.<br><br>Taking moments about $C$ eliminates $T_C$:\\begin{aligned} &\\Sigma M_C = 0 \\cr &(20g)(2) - T_D(5) = 0 \\cr &5T_D = 40g \\cr &T_D = 8g \\cr &T_D = 8(9.8) \\cr &T_D = 78.4\\text{ N} \\end{aligned}Resolving forces vertically for equilibrium:\\begin{aligned} &T_C + T_D = 20g \\cr &T_C + 78.4 = 20(9.8) \\cr &T_C + 78.4 = 196 \\cr &T_C = 196 - 78.4 \\cr &T_C = 117.6\\text{ N} \\cr &\\approx 118\\text{ N} \\end{aligned}",
         "<strong>(c) State use of the uniformity assumption:</strong><br><br>Assuming the rod is uniform means its mass is distributed symmetrically along its length, so its centre of mass is located at its geometric midpoint, exactly $4\\text{ m}$ from end $A$. The entire weight of $20g$ therefore acts through this single point.",
         "Final Answer: (a) Diagram complete, (b) $T_C = 118\\text{ N}$, $T_D = 78.4\\text{ N}$, (c) Weight acts at midpoint"
@@ -53,7 +53,7 @@ window.ALEVEL_QUESTIONS = [
         "Concentrated Loads",
         "Tilting Conditions"
     ],
-    "img": "images/Mechanics_pngs/012252.png",
+    "img": "images/Mechanics_SVGs/012252.svg",
     "question": "The diagram shows a uniform plank $AB$ of mass $18\\text{ kg}$ and length $6\\text{ m}$ held horizontally in equilibrium by two light vertical cables attached at $A$ and at a point $D$ on the plank, where $BD = 1.5\\text{ m}$.<br><br>A heavy load of mass $60\\text{ kg}$ is placed on the plank at a point $M$ situated at a distance of $x\\text{ metres}$ from end $A$.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Find expressions in terms of $x$ and $g$ for the tension $T_A$ in the cable at $A$ and the tension $T_D$ in the cable at $D$.<br><br><strong>(b)</strong> Given that the tension in the cable at $D$ is three times the tension in the cable at $A$, calculate the value of $x$.<br><br><strong>(c)</strong> The load is now removed. Find the maximum mass of an object that could be placed at end $B$ without causing the plank to tilt about $D$.",
     "steps": [
         "<strong>(a) Express tensions in terms of x and g:</strong><br><br>Distance $AD = 6 - 1.5 = 4.5\\text{ m}$. The weight of the uniform plank ($18g$) acts at its midpoint ($3\\text{ m}$ from $A$).<br><br>Taking moments about $A$:\\begin{aligned} &\\Sigma M_A = 0 \\cr &(18g)(3) + (60g)(x) - T_D(4.5) = 0 \\cr &4.5T_D = 54g + 60gx \\cr &T_D = \\dfrac{54g + 60gx}{4.5} \\cr &T_D = 12g + \\dfrac{40}{3}gx \\end{aligned}Resolving vertically ($T_A + T_D = 18g + 60g = 78g$):\\begin{aligned} T_A &= 78g - T_D \\cr &= 78g - \\left(12g + \\dfrac{40}{3}gx\\right) \\cr &= 66g - \\dfrac{40}{3}gx \\end{aligned}",
@@ -94,7 +94,7 @@ window.ALEVEL_QUESTIONS = [
         "Tilting about a Pivot",
         "Reaction Forces"
     ],
-    "img": "images/Mechanics_pngs/012253.png",
+    "img": "images/Mechanics_SVGs/012253.svg",
     "question": "The diagram shows a uniform beam $AB$ of mass $40\\text{ kg}$ and length $6\\text{ m}$ resting horizontally on two smooth knife-edge supports at $C$ and $D$.<br><br>Support $C$ is situated $1\\text{ m}$ from end $A$, and support $D$ is situated $4.5\\text{ m}$ from end $A$, leaving an overhang of $1.5\\text{ m}$ between $D$ and end $B$.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the normal reaction exerted by support $C$ and by support $D$ on the beam when no additional load is present.<br><br><strong>(b)</strong> A load of mass $W\\text{ kg}$ is attached to end $B$. Find the maximum value of $W$ for which the beam remains in horizontal equilibrium resting on both supports.<br><br><strong>(c)</strong> State the value of the normal reaction at support $C$ when the beam is on the point of tilting.",
     "steps": [
         "<strong>(a) Calculate reactions R_C and R_D:</strong><br><br>Distance $CD = 4.5 - 1.0 = 3.5\\text{ m}$. The weight of the beam ($40g$) acts at the midpoint ($3\\text{ m}$ from $A$), which is $3 - 1 = 2\\text{ m}$ from $C$.<br><br>Taking moments about $C$:\\begin{aligned} &\\Sigma M_C = 0 \\cr &(40g)(2) - R_D(3.5) = 0 \\cr &3.5R_D = 80g \\cr &R_D = \\dfrac{80g}{3.5} = \\dfrac{160}{7}g \\cr &R_D = \\dfrac{160(9.8)}{7} \\cr &R_D = 224\\text{ N} \\end{aligned}Resolving vertically:\\begin{aligned} R_C &= 40g - R_D \\cr &= 40(9.8) - 224 \\cr &= 392 - 224 \\cr &= 168\\text{ N} \\end{aligned}",
@@ -135,7 +135,7 @@ window.ALEVEL_QUESTIONS = [
         "Non-Parallel Forces",
         "Trigonometric Resolution"
     ],
-    "img": "images/Mechanics_pngs/012254.png",
+    "img": "images/Mechanics_SVGs/012254.svg",
     "question": "The diagram shows a uniform rod $AB$ of mass $8\\text{ kg}$ and length $4\\text{ m}$ smoothly hinged at end $A$ to a vertical wall.<br><br>The rod is held in a horizontal position in equilibrium by a light wire attached to a point $C$ on the rod and to a point $D$ on the vertical wall directly above $A$. Point $C$ is at a distance of $3\\text{ m}$ from $A$, and point $D$ is at a vertical distance of $3\\text{ m}$ above $A$.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Show that the angle between the wire $CD$ and the horizontal rod is $45^\\circ$.<br><br><strong>(b)</strong> By taking moments about $A$, calculate the tension in the wire $CD$, giving your answer in newtons to 3 significant figures.<br><br><strong>(c)</strong> Calculate the magnitude and direction of the reaction force exerted by the hinge on the rod at $A$.",
     "steps": [
         "<strong>(a) Determine angle of inclination:</strong><br><br>In right-angled triangle $\\triangle DAC$, the horizontal side is $AC = 3\\text{ m}$ and the vertical side is $AD = 3\\text{ m}$:\\begin{aligned} \\tan\\alpha &= \\dfrac{AD}{AC} \\cr &= \\dfrac{3}{3} \\cr &= 1 \\cr \\alpha &= 45^\\circ \\end{aligned}",
@@ -176,7 +176,7 @@ window.ALEVEL_QUESTIONS = [
         "Limiting Friction",
         "Angle of Friction"
     ],
-    "img": "images/Mechanics_pngs/012255.png",
+    "img": "images/Mechanics_SVGs/012255.svg",
     "question": "The diagram shows a uniform ladder $AB$ of mass $20\\text{ kg}$ and length $5\\text{ m}$ resting in equilibrium with its upper end $B$ against a smooth vertical wall and its lower end $A$ on rough horizontal ground.<br><br>The ladder rests in a vertical plane perpendicular to the wall and is inclined at an angle $\\theta$ to the horizontal ground.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Find the normal reaction exerted by the ground on the ladder at $A$.<br><br><strong>(b)</strong> Given that the ladder is on the point of slipping when $\\theta = 60^\\circ$, calculate:<br>(i) the magnitude of the normal reaction exerted by the wall on the ladder at $B$,<br>(ii) the coefficient of friction $\\mu$ between the ladder and the ground, giving your answer to 3 significant figures.",
     "steps": [
         "<strong>(a) Resolve vertically to find normal reaction R_A:</strong><br><br>Because the vertical wall is smooth, there is no vertical friction force at $B$. The only vertical forces are the upward normal reaction $R_A$ and the downward weight $20g$:\\begin{aligned} R_A &= 20g \\cr &= 20(9.8) \\cr &= 196\\text{ N} \\end{aligned}",
@@ -627,7 +627,7 @@ window.ALEVEL_QUESTIONS = [
         "Velocity Vector at Time t",
         "Ground Projection"
     ],
-    "img": "images/Mechanics_pngs/012266.png",
+    "img": "images/Mechanics_SVGs/012266.svg",
     "question": "The diagram shows a ball struck from a point $O$ on horizontal ground with an initial speed of $30\\text{ m s}^{-1}$ at an angle of $60^\\circ$ above the horizontal.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the magnitude and direction of the velocity of the ball after $2\\text{ seconds}$ of flight, giving the speed and the angle with the horizontal to 3 significant figures.<br><br><strong>(b)</strong> In the plane of projection, a tree of height $24\\text{ m}$ stands at a horizontal distance of $60\\text{ m}$ from $O$.<br><br>Determine whether the ball will clear the top of the tree, stating clearly its vertical height above the ground at this horizontal distance.",
     "steps": [
         "<strong>(a) Calculate velocity vector after 2 s:</strong><br><br>Resolve initial velocity into components:\\begin{aligned} u_x &= 30\\cos 60^\\circ \\cr &= 15\\text{ m s}^{-1} \\end{aligned}<br><br>Vertical component:\\begin{aligned} u_y &= 30\\sin 60^\\circ \\cr &= 15\\sqrt{3}\\text{ m s}^{-1} \\cr &\\approx 25.981\\text{ m s}^{-1} \\end{aligned}<br><br>At $t = 2\\text{ s}$, horizontal velocity remains constant:\\begin{aligned} v_x &= 15\\text{ m s}^{-1} \\end{aligned}<br><br>Vertical velocity at $t = 2\\text{ s}$:\\begin{aligned} v_y &= u_y - gt \\cr &= 25.981 - 9.8(2) \\cr &= 25.981 - 19.6 \\cr &= 6.381\\text{ m s}^{-1} \\end{aligned}<br><br>Speed is the resultant magnitude:\\begin{aligned} v &= \\sqrt{v_x^2 + v_y^2} \\cr &= \\sqrt{15^2 + 6.381^2} \\cr &= \\sqrt{225 + 40.717} \\cr &= \\sqrt{265.717} \\cr &\\approx 16.3\\text{ m s}^{-1} \\end{aligned}<br><br>Direction above the horizontal:\\begin{aligned} \\theta &= \\arctan\\left(\\dfrac{6.381}{15}\\right) \\cr &\\approx 23.0^\\circ \\end{aligned}",
@@ -667,7 +667,7 @@ window.ALEVEL_QUESTIONS = [
         "Velocity Vector at Time t",
         "Obstacle Clearance"
     ],
-    "img": "images/Mechanics_pngs/012267.png",
+    "img": "images/Mechanics_SVGs/012267.svg",
     "question": "The diagram shows a projectile fired from a point $O$ at the edge of a vertical cliff of height $20\\text{ m}$ above horizontal ground. The initial speed of projection is $25\\text{ m s}^{-1}$ at an angle of elevation of $30^\\circ$ above the horizontal.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the speed and angle of inclination to the horizontal of the projectile after $1.5\\text{ seconds}$ of flight, giving your answers to 3 significant figures.<br><br><strong>(b)</strong> A vertical radio mast of height $12\\text{ m}$ stands on the ground at a horizontal distance of $40\\text{ m}$ from the base of the cliff.<br><br>Determine whether the projectile clears the top of the mast, and calculate its vertical clearance above the top of the mast to 3 significant figures.",
     "steps": [
         "<strong>(a) Calculate velocity after 1.5 s:</strong><br><br>Resolve initial velocity:\\begin{aligned} u_x &= 25\\cos 30^\\circ \\cr &= 12.5\\sqrt{3} \\cr &\\approx 21.651\\text{ m s}^{-1} \\end{aligned}<br><br>Vertical component:\\begin{aligned} u_y &= 25\\sin 30^\\circ \\cr &= 12.5\\text{ m s}^{-1} \\end{aligned}<br><br>At $t = 1.5\\text{ s}$, horizontal component is unchanged:\\begin{aligned} v_x &= 21.651\\text{ m s}^{-1} \\end{aligned}<br><br>Vertical component:\\begin{aligned} v_y &= u_y - gt \\cr &= 12.5 - 9.8(1.5) \\cr &= 12.5 - 14.7 \\cr &= -2.2\\text{ m s}^{-1} \\end{aligned}<br><br>Speed is the magnitude:\\begin{aligned} v &= \\sqrt{21.651^2 + (-2.2)^2} \\cr &= \\sqrt{468.75 + 4.84} \\cr &= \\sqrt{473.59} \\cr &\\approx 21.8\\text{ m s}^{-1} \\end{aligned}<br><br>Direction below the horizontal:\\begin{aligned} \\theta &= \\arctan\\left(\\dfrac{2.2}{21.651}\\right) \\cr &\\approx 5.80^\\circ \\end{aligned}",
@@ -707,7 +707,7 @@ window.ALEVEL_QUESTIONS = [
         "Velocity Vector at Time t",
         "Obstacle Clearance"
     ],
-    "img": "images/Mechanics_pngs/012268.png",
+    "img": "images/Mechanics_SVGs/012268.svg",
     "question": "The diagram shows a stone thrown horizontally with an initial speed of $14\\text{ m s}^{-1}$ from a point $O$ at the top of a vertical tower of height $35\\text{ m}$ above horizontal ground.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the speed and direction of motion of the stone after $1.5\\text{ seconds}$, giving your answers to 3 significant figures.<br><br><strong>(b)</strong> A vertical boundary wall of height $10\\text{ m}$ stands on the ground at a horizontal distance of $28\\text{ m}$ from the base of the tower.<br><br>Determine whether the stone clears the wall, and calculate its height above the top of the wall as it passes directly over it.",
     "steps": [
         "<strong>(a) Calculate velocity after 1.5 s:</strong><br><br>Because the stone is thrown horizontally, $u_x = 14\\text{ m s}^{-1}$ and $u_y = 0$.<br><br>At $t = 1.5\\text{ s}$:\\begin{aligned} v_x &= 14\\text{ m s}^{-1} \\end{aligned}<br><br>Vertical velocity:\\begin{aligned} v_y &= 0 - gt \\cr &= -9.8(1.5) \\cr &= -14.7\\text{ m s}^{-1} \\end{aligned}<br><br>Speed is the resultant magnitude:\\begin{aligned} v &= \\sqrt{v_x^2 + v_y^2} \\cr &= \\sqrt{14^2 + (-14.7)^2} \\cr &= \\sqrt{196 + 216.09} \\cr &= \\sqrt{412.09} \\cr &\\approx 20.3\\text{ m s}^{-1} \\end{aligned}<br><br>Direction below the horizontal:\\begin{aligned} \\theta &= \\arctan\\left(\\dfrac{14.7}{14}\\right) \\cr &\\approx 46.4^\\circ \\end{aligned}",
@@ -747,7 +747,7 @@ window.ALEVEL_QUESTIONS = [
         "Net Clearance",
         "Boundary Range"
     ],
-    "img": "images/Mechanics_pngs/012269.png",
+    "img": "images/Mechanics_SVGs/012269.svg",
     "question": "The diagram shows a tennis player serving a ball from a height of $2.5\\text{ m}$ above the court with an initial horizontal speed of $30\\text{ m s}^{-1}$.<br><br>The net stands at a horizontal distance of $12\\text{ m}$ from the server and has a height of $0.9\\text{ m}$. The service line marks the boundary of the service box at a horizontal distance of $18\\text{ m}$ from the server.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Determine whether the serve clears the net, and calculate the vertical clearance between the ball and the top of the net.<br><br><strong>(b)</strong> Determine whether the ball lands within the service court (that is, whether it strikes the court surface before reaching the service line at $18\\text{ m}$).",
     "steps": [
         "<strong>(a) Calculate net clearance:</strong><br><br>Time taken to reach the net at $x = 12\\text{ m}$:\\begin{aligned} t_{\\text{net}} &= \\dfrac{12}{30} \\cr &= 0.4\\text{ s} \\end{aligned}<br><br>Vertical drop during this time:\\begin{aligned} h_{\\text{drop}} &= \\dfrac{1}{2}gt_{\\text{net}}^2 \\cr &= 4.9(0.4^2) \\cr &= 4.9(0.16) \\cr &= 0.784\\text{ m} \\end{aligned}<br><br>Height of ball above the court at the net:\\begin{aligned} y_{\\text{net}} &= 2.5 - 0.784 \\cr &= 1.716\\text{ m} \\end{aligned}<br><br>Vertical clearance above the $0.9\\text{ m}$ net:\\begin{aligned} \\text{Clearance} &= 1.716 - 0.9 \\cr &= 0.816\\text{ m} \\end{aligned}<br><br>Since $1.716\\text{ m} > 0.9\\text{ m}$, the serve clears the net by $0.816\\text{ m}$.",
@@ -787,7 +787,7 @@ window.ALEVEL_QUESTIONS = [
         "Obstacle Clearance",
         "Angle of Projection"
     ],
-    "img": "images/Mechanics_pngs/012270.png",
+    "img": "images/Mechanics_SVGs/012270.svg",
     "question": "The diagram shows a rugby ball kicked from a point $O$ on horizontal ground with an initial speed of $28\\text{ m s}^{-1}$ at an angle of elevation of $48^\\circ$ towards the goalposts.<br><br>The goalposts are situated at a horizontal distance of $35\\text{ m}$ from $O$, and the horizontal crossbar is at a height of $3\\text{ m}$ above the ground.<br><br>Take $g = 9.8\\text{ m s}^{-2}$.<br><br><strong>(a)</strong> Calculate the time taken for the ball to reach the plane of the goalposts, giving your answer to 3 significant figures.<br><br><strong>(b)</strong> Determine whether the kick is successful by passing above the crossbar, calculating the height of the ball as it reaches the posts.<br><br><strong>(c)</strong> For a kick taken from the same point with the same initial speed of $28\\text{ m s}^{-1}$, use the Cartesian equation of the trajectory to find the minimum angle of elevation $\\alpha$ required for the ball to clear the crossbar, giving your answer in degrees to 1 decimal place.",
     "steps": [
         "<strong>(a) Calculate time to reach goalposts:</strong><br><br>Horizontal component of velocity:\\begin{aligned} u_x &= 28\\cos 48^\\circ \\cr &\\approx 18.736\\text{ m s}^{-1} \\end{aligned}<br><br>Time to travel $35\\text{ m}$ horizontally:\\begin{aligned} t &= \\dfrac{35}{u_x} \\cr &= \\dfrac{35}{18.736} \\cr &\\approx 1.868\\text{ s} \\cr &\\approx 1.87\\text{ s} \\end{aligned}",
