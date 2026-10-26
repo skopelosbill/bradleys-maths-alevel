@@ -89,7 +89,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Forces and Newton's Laws",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and Multi-Stage Motion",
     "subtopic": [
         "Acceleration under Driving Force",
@@ -431,7 +431,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments and Rigid Bodies",
     "subtopic": [
         "Parallel forces",
@@ -471,7 +471,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments and Rigid Bodies",
     "subtopic": [
         "Uniform beams",
@@ -511,7 +511,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments and Rigid Bodies",
     "subtopic": [
         "Non-uniform rod",
@@ -551,7 +551,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments and Rigid Bodies",
     "subtopic": [
         "Hinged rods",
@@ -591,7 +591,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments and Rigid Bodies",
     "subtopic": [
         "Ladder problems",
@@ -834,7 +834,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Double inclined plane",
@@ -874,7 +874,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Newton's second law",
@@ -914,7 +914,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Inclined plane with hanging mass",
@@ -954,7 +954,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Resultant force on a pulley",
@@ -994,7 +994,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Motion under gravity",
@@ -1444,7 +1444,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Smooth horizontal table",
@@ -1484,7 +1484,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Rough horizontal table",
@@ -1524,7 +1524,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Multi-stage motion",
@@ -1564,7 +1564,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Resultant force on a pulley",
@@ -1604,7 +1604,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Double-pulley system",
@@ -1644,7 +1644,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics & Statics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Forces",
     "subtopic": [
         "Resultant force",
@@ -1684,7 +1684,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics & Statics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Forces",
     "subtopic": [
         "Newton's second law in vector form",
@@ -1724,7 +1724,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics & Statics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Forces",
     "subtopic": [
         "Resultant force",
@@ -1764,7 +1764,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics & Statics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Forces",
     "subtopic": [
         "Parallel vectors",
@@ -1804,7 +1804,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics & Statics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Forces",
     "subtopic": [
         "2D constant acceleration",
@@ -1845,7 +1845,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Newton's Laws & Connected Bodies",
     "subtopic": [
         "Vertical motion",
@@ -1886,7 +1886,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Newton's Laws & Connected Bodies",
     "subtopic": [
         "Descending lifts",
@@ -1927,7 +1927,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Newton's Laws & Connected Bodies",
     "subtopic": [
         "Stacked bodies in a lift",
@@ -1968,7 +1968,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Newton's Laws & Connected Bodies",
     "subtopic": [
         "Broken cable",
@@ -2009,7 +2009,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Newton's Laws & Connected Bodies",
     "subtopic": [
         "Multi-stage motion",

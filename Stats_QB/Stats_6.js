@@ -217,7 +217,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
         "Calculation of PMCC",
@@ -257,7 +257,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
         "Coded Summary Statistics",
@@ -298,7 +298,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
         "Hypothesis Testing for Correlation",
@@ -340,7 +340,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Spearman's Rank Correlation",
     "subtopic": [
         "Ranking Data",
@@ -381,7 +381,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Linear Regression and Correlation",
     "subtopic": [
         "Regression Slope",
@@ -422,7 +422,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
         "Algebraic Binomial Ratios",
@@ -463,7 +463,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
         "Algebraic Parameter Derivation",
@@ -505,7 +505,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
         "One-Tailed Hypothesis Testing",
@@ -547,7 +547,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
         "Two-Tailed Hypothesis Testing",
@@ -589,7 +589,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
         "Mean and Variance Formulas",
@@ -1051,7 +1051,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Finding Unknown Parameters",
@@ -1092,7 +1092,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Linear Combinations of Normal Variables",
@@ -1133,7 +1133,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Sample Mean Hypothesis Testing",
@@ -1176,7 +1176,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Normal Approximation to Poisson",
@@ -1219,7 +1219,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Symmetric Tolerance Intervals",
@@ -1260,7 +1260,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
         "At Least One Probability",
@@ -1301,7 +1301,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
         "Lower-Tail Hypothesis Testing",
@@ -1342,7 +1342,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
         "Two-Tailed Hypothesis Testing",
@@ -1383,7 +1383,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
         "Sample Size Inequalities",
@@ -1423,7 +1423,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
         "Acceptance Sampling",
@@ -1465,7 +1465,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Hypothesis Testing for the Mean",
@@ -1505,7 +1505,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "One-Tailed Test for the Mean",
@@ -1547,7 +1547,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Central Limit Theorem",
@@ -1588,7 +1588,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Critical Regions",
@@ -1629,7 +1629,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Difference of Two Sample Means",

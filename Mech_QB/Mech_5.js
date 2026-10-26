@@ -210,7 +210,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Central pivot",
@@ -250,7 +250,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Off-centre pivot",
@@ -290,7 +290,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Beam on two supports",
@@ -330,7 +330,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Tilting beam",
@@ -371,7 +371,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Non-uniform beam",
@@ -411,7 +411,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Dynamics & Calculus",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Differential Equations",
     "subtopic": [
         "Upward vertical motion",
@@ -452,7 +452,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Dynamics & Calculus",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Differential Equations",
     "subtopic": [
         "Downward motion from rest",
@@ -493,7 +493,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Dynamics & Calculus",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Differential Equations",
     "subtopic": [
         "Quadratic resistance",
@@ -534,7 +534,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Dynamics & Calculus",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Differential Equations",
     "subtopic": [
         "Acceleration as v dv/dx",
@@ -575,7 +575,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Dynamics & Calculus",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Differential Equations",
     "subtopic": [
         "Driving force with air resistance",
@@ -616,7 +616,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Inclined Planes & Friction",
     "subtopic": [
         "Angled force on an incline",
@@ -657,7 +657,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Inclined Planes & Friction",
     "subtopic": [
         "Horizontal applied force",
@@ -698,7 +698,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Inclined Planes & Friction",
     "subtopic": [
         "Newton's second law on an incline",
@@ -739,7 +739,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Inclined Planes & Friction",
     "subtopic": [
         "Optimisation of pulling angle",
@@ -780,7 +780,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Inclined Planes & Friction",
     "subtopic": [
         "Pushing into the plane",
@@ -1024,7 +1024,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Newton's Second Law",
     "subtopic": [
         "Newton's Second Law in 3D",
@@ -1065,7 +1065,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Newton's Second Law",
     "subtopic": [
         "Resultant Force",
@@ -1105,7 +1105,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Newton's Second Law",
     "subtopic": [
         "Variable Force",
@@ -1145,7 +1145,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Newton's Second Law",
     "subtopic": [
         "Relative Motion",
@@ -1185,7 +1185,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Newton's Second Law",
     "subtopic": [
         "Work-Energy Principle",
@@ -1227,7 +1227,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Concurrent Forces",
     "subtopic": [
         "Resolving Forces",
@@ -1267,7 +1267,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Concurrent Forces",
     "subtopic": [
         "Equilibrium of a Particle",
@@ -1307,7 +1307,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Concurrent Forces",
     "subtopic": [
         "Suspended Particles",
@@ -1346,7 +1346,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Concurrent Forces",
     "subtopic": [
         "Inclined Planes",
@@ -1385,7 +1385,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Concurrent Forces",
     "subtopic": [
         "Bearings",
@@ -1828,7 +1828,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Pulleys",
@@ -1870,7 +1870,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Pulleys",
@@ -1912,7 +1912,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Pulleys",
@@ -1954,7 +1954,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Atwood Machine",
@@ -1996,7 +1996,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Pulleys",

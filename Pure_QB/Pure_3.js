@@ -5,7 +5,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Differentiation",
+                "major_area": "Coordinate Geometry",
                 "topic": "Circles",
                 "subtopic": [
                         "Circle Geometry"
@@ -183,7 +183,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Differentiation",
+                "major_area": "Coordinate Geometry",
                 "topic": "Circles",
                 "subtopic": [
                         "Circle Geometry"
@@ -457,7 +457,7 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
-                "topic": "Arithmetic series",
+                "topic": "Arithmetic Series",
                 "subtopic": [
                         "Sum of an AP"
                 ],
@@ -504,7 +504,7 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
-                "topic": "Arithmetic series",
+                "topic": "Arithmetic Series",
                 "subtopic": [
                         "Sum of an AP"
                 ],
@@ -549,7 +549,7 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
-                "topic": "Arithmetic series",
+                "topic": "Arithmetic Series",
                 "subtopic": [
                         "Sum of an AP"
                 ],
@@ -594,7 +594,7 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
-                "topic": "Arithmetic series",
+                "topic": "Arithmetic Series",
                 "subtopic": [
                         "Sum of an AP"
                 ],
@@ -640,7 +640,7 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
-                "topic": "Arithmetic series",
+                "topic": "Arithmetic Series",
                 "subtopic": [
                         "Sum of an AP"
                 ],

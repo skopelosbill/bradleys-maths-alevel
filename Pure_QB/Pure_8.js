@@ -1057,7 +1057,7 @@ window.ALEVEL_QUESTIONS = [
   "board": "WJEC",
   "branch": "Pure",
   "level": "AS",
-  "major_area": "Differentiation",
+  "major_area": "Coordinate Geometry",
   "topic": "Circles",
  "subtopic": [
     "Circle Geometry",
@@ -1463,7 +1463,7 @@ window.ALEVEL_QUESTIONS = [
   "board": "CCEA",
   "branch": "Pure",
   "level": "AS",
-  "major_area": "Differentiation",
+  "major_area": "Vectors",
   "topic": "Vectors",
   "subtopic": [
     "Vector Properties"

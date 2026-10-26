@@ -388,7 +388,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Integration",
+    "major_area": "Coordinate Geometry",
     "topic": "Parametric Curves",
     "subtopic": [
         "Parametric Integration",
@@ -1485,7 +1485,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
         "Implicit Differentiation",
@@ -1526,7 +1526,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
         "Implicit Differentiation",
@@ -1568,7 +1568,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
         "Implicit Differentiation",
@@ -1610,7 +1610,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
         "Implicit Differentiation",
@@ -1652,7 +1652,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
         "Implicit Differentiation",
@@ -1903,7 +1903,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
         "Implicit Differentiation"
@@ -1941,7 +1941,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
         "Implicit Differentiation",
@@ -1981,7 +1981,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
         "Implicit Differentiation",
@@ -2021,7 +2021,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
         "Implicit Differentiation",
@@ -2061,7 +2061,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
         "Implicit Differentiation",

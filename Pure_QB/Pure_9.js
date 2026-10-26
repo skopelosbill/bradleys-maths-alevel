@@ -1083,7 +1083,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Trigonometry",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry",
@@ -1126,7 +1126,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Trigonometry",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Proof"
@@ -1168,7 +1168,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Tangents and Normals",
@@ -1209,7 +1209,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Trigonometry",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry",

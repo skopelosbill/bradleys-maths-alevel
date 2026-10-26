@@ -5,7 +5,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Poisson Distribution",
   "subtopic": [
     "Rate Scaling",
@@ -44,7 +44,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Poisson Distribution",
   "subtopic": [
     "Modelling Assumptions",
@@ -85,7 +85,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Poisson Distribution",
   "subtopic": [
     "Sum of Poisson Variables",
@@ -125,7 +125,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Poisson Distribution",
   "subtopic": [
     "Parameter Determination",
@@ -165,7 +165,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Poisson Distribution",
   "subtopic": [
     "Poisson Approximation",
@@ -206,7 +206,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Hypothesis Testing",
   "topic": "Statistical Hypothesis Testing",
   "subtopic": [
     "Binomial Test",
@@ -247,7 +247,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Hypothesis Testing",
   "topic": "Statistical Hypothesis Testing",
   "subtopic": [
     "Lower-Tail Test",
@@ -288,7 +288,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Hypothesis Testing",
   "topic": "Statistical Hypothesis Testing",
   "subtopic": [
     "Two-Tailed Binomial Test",
@@ -329,7 +329,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Hypothesis Testing",
   "topic": "Statistical Hypothesis Testing",
   "subtopic": [
     "p-value Method",
@@ -370,7 +370,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Hypothesis Testing",
   "topic": "Statistical Hypothesis Testing",
   "subtopic": [
     "Type I and Type II Errors",
@@ -411,7 +411,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Linear Regression and Correlation",
   "subtopic": [
     "Scatter Diagrams",
@@ -451,7 +451,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Linear Regression and Correlation",
   "subtopic": [
     "Interpreting Coefficients",
@@ -492,7 +492,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Linear Regression and Correlation",
   "subtopic": [
     "Influential Outliers",
@@ -533,7 +533,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Linear Regression and Correlation",
   "subtopic": [
     "Least Squares Principles",
@@ -573,7 +573,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Linear Regression and Correlation",
   "subtopic": [
     "Evaluating Linear Models",
@@ -613,7 +613,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Measures of Location, Spread, and Box Plots",
   "subtopic": [
     "Outlier Boundaries",
@@ -654,7 +654,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Measures of Location, Spread, and Box Plots",
   "subtopic": [
     "Parallel Box Plots",
@@ -694,7 +694,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Measures of Location, Spread, and Box Plots",
   "subtopic": [
     "Two-Sided Outliers",
@@ -735,7 +735,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Measures of Location, Spread, and Box Plots",
   "subtopic": [
     "Cumulative Frequency and Box Plots",
@@ -776,7 +776,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Measures of Location, Spread, and Box Plots",
   "subtopic": [
     "Linear Coding",
@@ -1231,7 +1231,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Continuous Uniform Distribution",
     "subtopic": [
         "Uniform Distribution Parameters",
@@ -1274,7 +1274,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Continuous Uniform Distribution",
     "subtopic": [
         "Probability Density Function",
@@ -1317,7 +1317,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Continuous Uniform Distribution",
     "subtopic": [
         "Symmetric Uniform Distributions",
@@ -1361,7 +1361,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Continuous Uniform Distribution",
     "subtopic": [
         "Uniform to Binomial Bridge",
@@ -1405,7 +1405,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Continuous Uniform Distribution",
     "subtopic": [
         "Truncated Uniform Distributions",
@@ -1447,7 +1447,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Statistical Modelling",
@@ -1491,7 +1491,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Finding Unknown Parameters",
@@ -1533,7 +1533,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Normal Approximation to Binomial",
@@ -1575,7 +1575,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Hypothesis Testing for the Mean",
@@ -1617,7 +1617,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
         "Linear Combinations of Normal Variables",
@@ -1659,7 +1659,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
         "Interpretation of PMCC",
@@ -1700,7 +1700,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
         "Impact of Outliers",
@@ -1742,7 +1742,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
         "Non-linear Models",
@@ -1783,7 +1783,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Linear Regression",
     "subtopic": [
         "Interpretation of Coefficients",
@@ -1827,7 +1827,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
         "Calculation from Summary Statistics",

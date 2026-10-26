@@ -165,7 +165,7 @@
     "board": "OCR MEI",
     "branch": "Comprehension",
     "level": "A",
-    "major_area": "Geometry and Proof",
+    "major_area": "Proof",
     "topic": "Pick's Theorem",
     "subtopic": [
       "Lattice Polygons",
@@ -365,7 +365,7 @@
     "board": "OCR MEI",
     "branch": "Comprehension",
     "level": "A",
-    "major_area": "Geometry and Proof",
+    "major_area": "Proof",
     "topic": "Pick's Theorem",
     "subtopic": [
       "Formula Inversion",
@@ -565,7 +565,7 @@
     "board": "OCR MEI",
     "branch": "Comprehension",
     "level": "A",
-    "major_area": "Geometry and Proof",
+    "major_area": "Proof",
     "topic": "Pick's Theorem",
     "subtopic": [
       "Deductive Proof",
@@ -765,7 +765,7 @@
     "board": "OCR MEI",
     "branch": "Comprehension",
     "level": "A",
-    "major_area": "Geometry and Proof",
+    "major_area": "Proof",
     "topic": "Pick's Theorem",
     "subtopic": [
       "Modelling",
@@ -965,7 +965,7 @@
     "board": "OCR MEI",
     "branch": "Comprehension",
     "level": "A",
-    "major_area": "Geometry and Proof",
+    "major_area": "Proof",
     "topic": "Pick's Theorem",
     "subtopic": [
       "Proof by Contradiction",
@@ -1005,7 +1005,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Constant Acceleration",
@@ -1046,7 +1046,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Constant Acceleration",
@@ -1087,7 +1087,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Constant Acceleration",
@@ -1130,7 +1130,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Constant Acceleration",
@@ -1171,7 +1171,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Variable Acceleration",
@@ -1213,8 +1213,8 @@
     "group_id": "012006",
     "board": "AQA",
     "branch": "Mechanics",
-    "level": "AS",
-    "major_area": "Mechanics",
+    "level": "A",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Static Equilibrium",
@@ -1254,8 +1254,8 @@
     "group_id": "012006",
     "board": "AQA",
     "branch": "Mechanics",
-    "level": "AS",
-    "major_area": "Mechanics",
+    "level": "A",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Static Equilibrium",
@@ -1296,8 +1296,8 @@
     "group_id": "012006",
     "board": "AQA",
     "branch": "Mechanics",
-    "level": "AS",
-    "major_area": "Mechanics",
+    "level": "A",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Static Equilibrium",
@@ -1337,8 +1337,8 @@
     "group_id": "012006",
     "board": "AQA",
     "branch": "Mechanics",
-    "level": "AS",
-    "major_area": "Mechanics",
+    "level": "A",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Static Equilibrium",
@@ -1379,8 +1379,8 @@
     "group_id": "012006",
     "board": "AQA",
     "branch": "Mechanics",
-    "level": "AS",
-    "major_area": "Mechanics",
+    "level": "A",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Static Equilibrium",
@@ -1422,7 +1422,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Velocity-Time Graphs",
@@ -1467,7 +1467,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Velocity-Time Graphs",
@@ -1509,7 +1509,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Velocity-Time Graphs",
@@ -1552,7 +1552,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Velocity-Time Graphs",
@@ -1594,7 +1594,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Variable Acceleration",
@@ -1636,7 +1636,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces and Friction",
     "subtopic": [
       "Friction Limits",
@@ -1681,7 +1681,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces and Friction",
     "subtopic": [
       "Friction Limits",
@@ -1726,7 +1726,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces and Friction",
     "subtopic": [
       "Inclined Planes",
@@ -1773,7 +1773,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces and Friction",
     "subtopic": [
       "Friction Limits",
@@ -1817,7 +1817,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces and Friction",
     "subtopic": [
       "Connected Particles",
@@ -1861,7 +1861,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Variable Acceleration",
@@ -1906,7 +1906,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Variable Acceleration",
@@ -1949,7 +1949,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Variable Acceleration",
@@ -1993,7 +1993,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Variable Acceleration",
@@ -2037,7 +2037,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Variable Acceleration",
@@ -2078,7 +2078,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Vectors",
     "subtopic": [
       "3D Coordinate Geometry",
@@ -2122,7 +2122,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Vectors",
     "subtopic": [
       "3D Coordinate Geometry",
@@ -2168,7 +2168,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Vectors",
     "subtopic": [
       "3D Coordinate Geometry",
@@ -2213,7 +2213,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Vectors",
     "subtopic": [
       "3D Coordinate Geometry",
@@ -2256,7 +2256,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Vectors",
     "subtopic": [
       "3D Coordinate Geometry",
@@ -2298,7 +2298,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Projectiles",
@@ -2343,7 +2343,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Projectiles",
@@ -2386,7 +2386,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Projectiles",
@@ -2428,7 +2428,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Projectiles",
@@ -2472,7 +2472,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
       "Projectiles",
@@ -2516,7 +2516,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Horizontal Towing",
@@ -2559,7 +2559,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Inclined Towing",
@@ -2601,7 +2601,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Vertical Motion",
@@ -2641,7 +2641,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Pulleys",
@@ -2682,7 +2682,7 @@
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Pulleys on Inclined Planes",
@@ -2936,7 +2936,7 @@
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Motion graphs",
+    "topic": "Motion Graphs",
     "subtopic": [
       "Velocity-time graphs",
       "Constant acceleration"
@@ -2979,7 +2979,7 @@
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Motion graphs",
+    "topic": "Motion Graphs",
     "subtopic": [
       "Velocity-time graphs",
       "Constant acceleration"
@@ -3022,7 +3022,7 @@
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Motion graphs",
+    "topic": "Motion Graphs",
     "subtopic": [
       "Velocity-time graphs",
       "Relative motion",
@@ -3065,7 +3065,7 @@
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Motion graphs",
+    "topic": "Motion Graphs",
     "subtopic": [
       "Velocity-time graphs",
       "Variable acceleration",
@@ -3107,7 +3107,7 @@
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Motion graphs",
+    "topic": "Motion Graphs",
     "subtopic": [
       "Velocity-time graphs",
       "Constant acceleration",
@@ -3152,7 +3152,7 @@
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
       "Differentiation in kinematics",
       "Displacement and distance"
@@ -3194,7 +3194,7 @@
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
       "Integration in kinematics",
       "Displacement and distance"
@@ -3236,7 +3236,7 @@
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
       "Differentiation in kinematics",
       "Displacement and distance"
@@ -3278,7 +3278,7 @@
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
       "Differentiation in kinematics",
       "Relative motion"
@@ -3320,7 +3320,7 @@
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
       "Integration in kinematics",
       "Differentiation in kinematics"
@@ -3361,8 +3361,8 @@
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Forces and Newton's laws",
-    "topic": "Connected particles",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
     "subtopic": [
       "Fixed pulley systems",
       "Newton's second law"
@@ -3404,8 +3404,8 @@
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Forces and Newton's laws",
-    "topic": "Connected particles",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
     "subtopic": [
       "Pulley on a horizontal table",
       "Newton's second law",
@@ -3447,8 +3447,8 @@
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Forces and Newton's laws",
-    "topic": "Connected particles",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
     "subtopic": [
       "Pulley on a rough table",
       "Friction",
@@ -3490,8 +3490,8 @@
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Forces and Newton's laws",
-    "topic": "Connected particles",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
     "subtopic": [
       "Pulley on an inclined plane",
       "Resolving forces",
@@ -3531,8 +3531,8 @@
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Kinematics",
-    "topic": "Connected particles",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
     "subtopic": [
       "Fixed pulley systems",
       "Multi-stage motion",
@@ -3577,7 +3577,7 @@
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
       "Integration in kinematics",
       "2D motion with vectors"
@@ -3618,7 +3618,7 @@
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
       "Integration in kinematics",
       "2D motion with vectors"
@@ -3661,7 +3661,7 @@
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
       "Integration in kinematics",
       "2D motion with vectors"
@@ -3703,7 +3703,7 @@
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
       "Differentiation in kinematics",
       "2D motion with vectors",
@@ -3747,7 +3747,7 @@
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
       "Collisions in 2D",
       "2D motion with vectors",
@@ -3791,7 +3791,7 @@
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Friction",
     "subtopic": [
       "Newton's second law",
@@ -3835,7 +3835,7 @@
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Friction",
     "subtopic": [
       "Newton's second law",
@@ -3878,7 +3878,7 @@
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Friction",
     "subtopic": [
       "Newton's second law",
@@ -3921,7 +3921,7 @@
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Friction",
     "subtopic": [
       "Pulley on an inclined plane",
@@ -3965,7 +3965,7 @@
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Friction",
     "subtopic": [
       "Resolving forces",
@@ -4010,7 +4010,7 @@
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Constant acceleration",
+    "topic": "Constant Acceleration",
     "subtopic": [
       "2D motion with vectors",
       "Kinematics equations (SUVAT)"
@@ -4053,7 +4053,7 @@
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Constant acceleration",
+    "topic": "Constant Acceleration",
     "subtopic": [
       "2D motion with vectors",
       "Kinematics equations (SUVAT)"
@@ -4096,7 +4096,7 @@
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Constant acceleration",
+    "topic": "Constant Acceleration",
     "subtopic": [
       "2D motion with vectors",
       "Kinematics equations (SUVAT)"
@@ -4137,7 +4137,7 @@
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Constant acceleration",
+    "topic": "Constant Acceleration",
     "subtopic": [
       "2D motion with vectors",
       "Bearings in kinematics"
@@ -4178,7 +4178,7 @@
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Constant acceleration",
+    "topic": "Constant Acceleration",
     "subtopic": [
       "Collisions in 2D",
       "2D motion with vectors",
@@ -4753,7 +4753,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors",
     "subtopic": [
       "Static equilibrium",
@@ -4835,7 +4835,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Newton's Laws of Motion",
@@ -4876,7 +4876,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Newton's Laws of Motion",
@@ -4918,7 +4918,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Newton's Laws of Motion",
@@ -4960,7 +4960,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Newton's Laws of Motion",
@@ -5004,7 +5004,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Newton's Laws of Motion",
@@ -5047,7 +5047,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Constant Acceleration",
@@ -5089,7 +5089,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Constant Acceleration",
@@ -5132,7 +5132,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Constant Acceleration",
@@ -5175,7 +5175,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Constant Acceleration",
@@ -5218,7 +5218,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Constant Acceleration",
@@ -5261,7 +5261,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Kinematics",
     "topic": "Vectors in kinematics",
     "subtopic": [
       "Newton's second law with vectors",
@@ -5342,7 +5342,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces in 2 dimensions",
     "subtopic": [
       "Newton's second law with vectors",
@@ -5384,7 +5384,7 @@
     "board": "OCR",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
       "Variable force with vectors",
       "Integration in kinematics",
@@ -5467,7 +5467,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Rigid Bodies in Equilibrium",
     "subtopic": [
       "Parallel Forces",
@@ -5509,7 +5509,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Rigid Bodies in Equilibrium",
     "subtopic": [
       "Non-Uniform Rods",
@@ -5550,7 +5550,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Rigid Bodies in Equilibrium",
     "subtopic": [
       "Moving Loads",
@@ -5592,7 +5592,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Rigid Bodies in Equilibrium",
     "subtopic": [
       "Cables",
@@ -5633,7 +5633,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Rigid Bodies in Equilibrium",
     "subtopic": [
       "Smooth Hinge",
@@ -5675,7 +5675,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Forces and Equilibrium",
     "subtopic": [
       "Coplanar Forces",
@@ -5717,7 +5717,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Forces and Equilibrium",
     "subtopic": [
       "Non-Perpendicular Forces",
@@ -5759,7 +5759,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Forces and Equilibrium",
     "subtopic": [
       "Inclined Planes",
@@ -5800,7 +5800,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Forces and Equilibrium",
     "subtopic": [
       "Suspended Particles",
@@ -5841,7 +5841,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Dynamics and Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces and Newton's Second Law",
     "subtopic": [
       "Coplanar Forces",
@@ -6093,7 +6093,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Dynamics and Statics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles and Friction",
     "subtopic": [
       "Inclined Plane",
@@ -6134,7 +6134,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Inclined Plane",
@@ -6175,7 +6175,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Kinematics",
     "topic": "Connected Particles and Multi-Stage Motion",
     "subtopic": [
       "Horizontal Surface",
@@ -6216,7 +6216,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Double Inclined Plane",
@@ -6257,7 +6257,7 @@
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Smooth Inclined Plane",
@@ -6381,7 +6381,7 @@
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and Vector Kinematics",
     "subtopic": [
       "Column Vectors",
@@ -6464,7 +6464,7 @@
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and 2D Motion",
     "subtopic": [
       "Resultant Force",
@@ -6631,7 +6631,7 @@
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Multi-Stage Motion",
@@ -6716,7 +6716,7 @@
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and Motion in a Straight Line",
     "subtopic": [
       "Multi-Stage Motion",
@@ -6758,7 +6758,7 @@
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and Motion in a Straight Line",
     "subtopic": [
       "Driving Force",
@@ -6801,7 +6801,7 @@
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and Motion in a Straight Line",
     "subtopic": [
       "Multi-Stage Kinematics",
@@ -6843,7 +6843,7 @@
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Motion under Gravity and Newton's Second Law",
     "subtopic": [
       "Powered Vertical Ascent",
@@ -6885,7 +6885,7 @@
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and Stopping Distances",
     "subtopic": [
       "Reaction Time",
@@ -7448,7 +7448,7 @@
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Forces and Newton's Laws",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and Multi-Stage Motion",
     "subtopic": [
       "Acceleration under Driving Force",
@@ -7790,7 +7790,7 @@
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments and Rigid Bodies",
     "subtopic": [
       "Parallel forces",
@@ -7830,7 +7830,7 @@
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments and Rigid Bodies",
     "subtopic": [
       "Uniform beams",
@@ -7870,7 +7870,7 @@
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments and Rigid Bodies",
     "subtopic": [
       "Non-uniform rod",
@@ -7910,7 +7910,7 @@
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments and Rigid Bodies",
     "subtopic": [
       "Hinged rods",
@@ -7950,7 +7950,7 @@
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments and Rigid Bodies",
     "subtopic": [
       "Ladder problems",
@@ -8193,7 +8193,7 @@
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Double inclined plane",
@@ -8233,7 +8233,7 @@
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Newton's second law",
@@ -8273,7 +8273,7 @@
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Inclined plane with hanging mass",
@@ -8313,7 +8313,7 @@
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Resultant force on a pulley",
@@ -8353,7 +8353,7 @@
     "branch": "Mechanics",
     "board": "OCR B (MEI)",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Motion under gravity",
@@ -8803,7 +8803,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Smooth horizontal table",
@@ -8843,7 +8843,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Rough horizontal table",
@@ -8883,7 +8883,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Multi-stage motion",
@@ -8923,7 +8923,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Resultant force on a pulley",
@@ -8963,7 +8963,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Double-pulley system",
@@ -9003,7 +9003,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics & Statics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Forces",
     "subtopic": [
       "Resultant force",
@@ -9043,7 +9043,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics & Statics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Forces",
     "subtopic": [
       "Newton's second law in vector form",
@@ -9083,7 +9083,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics & Statics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Forces",
     "subtopic": [
       "Resultant force",
@@ -9123,7 +9123,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics & Statics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Forces",
     "subtopic": [
       "Parallel vectors",
@@ -9163,7 +9163,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics & Statics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Forces",
     "subtopic": [
       "2D constant acceleration",
@@ -9204,7 +9204,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Newton's Laws & Connected Bodies",
     "subtopic": [
       "Vertical motion",
@@ -9245,7 +9245,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Newton's Laws & Connected Bodies",
     "subtopic": [
       "Descending lifts",
@@ -9286,7 +9286,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Newton's Laws & Connected Bodies",
     "subtopic": [
       "Stacked bodies in a lift",
@@ -9327,7 +9327,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Newton's Laws & Connected Bodies",
     "subtopic": [
       "Broken cable",
@@ -9368,7 +9368,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Newton's Laws & Connected Bodies",
     "subtopic": [
       "Multi-stage motion",
@@ -9614,7 +9614,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Central pivot",
@@ -9654,7 +9654,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Off-centre pivot",
@@ -9694,7 +9694,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Beam on two supports",
@@ -9734,7 +9734,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Tilting beam",
@@ -9775,7 +9775,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Non-uniform beam",
@@ -9815,7 +9815,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Dynamics & Calculus",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Differential Equations",
     "subtopic": [
       "Upward vertical motion",
@@ -9856,7 +9856,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Dynamics & Calculus",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Differential Equations",
     "subtopic": [
       "Downward motion from rest",
@@ -9897,7 +9897,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Dynamics & Calculus",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Differential Equations",
     "subtopic": [
       "Quadratic resistance",
@@ -9938,7 +9938,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Dynamics & Calculus",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Differential Equations",
     "subtopic": [
       "Acceleration as v dv/dx",
@@ -9979,7 +9979,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Dynamics & Calculus",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Differential Equations",
     "subtopic": [
       "Driving force with air resistance",
@@ -10020,7 +10020,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Inclined Planes & Friction",
     "subtopic": [
       "Angled force on an incline",
@@ -10061,7 +10061,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Inclined Planes & Friction",
     "subtopic": [
       "Horizontal applied force",
@@ -10102,7 +10102,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Inclined Planes & Friction",
     "subtopic": [
       "Newton's second law on an incline",
@@ -10143,7 +10143,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Inclined Planes & Friction",
     "subtopic": [
       "Optimisation of pulling angle",
@@ -10184,7 +10184,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Statics & Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Inclined Planes & Friction",
     "subtopic": [
       "Pushing into the plane",
@@ -10428,7 +10428,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Newton's Second Law",
     "subtopic": [
       "Newton's Second Law in 3D",
@@ -10469,7 +10469,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Newton's Second Law",
     "subtopic": [
       "Resultant Force",
@@ -10509,7 +10509,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Newton's Second Law",
     "subtopic": [
       "Variable Force",
@@ -10549,7 +10549,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Newton's Second Law",
     "subtopic": [
       "Relative Motion",
@@ -10589,7 +10589,7 @@
     "branch": "Mechanics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors & Newton's Second Law",
     "subtopic": [
       "Work-Energy Principle",
@@ -10631,7 +10631,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Concurrent Forces",
     "subtopic": [
       "Resolving Forces",
@@ -10671,7 +10671,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Concurrent Forces",
     "subtopic": [
       "Equilibrium of a Particle",
@@ -10711,7 +10711,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Concurrent Forces",
     "subtopic": [
       "Suspended Particles",
@@ -10750,7 +10750,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Concurrent Forces",
     "subtopic": [
       "Inclined Planes",
@@ -10789,7 +10789,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Concurrent Forces",
     "subtopic": [
       "Bearings",
@@ -11232,7 +11232,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Pulleys",
@@ -11274,7 +11274,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Pulleys",
@@ -11316,7 +11316,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Pulleys",
@@ -11358,7 +11358,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Atwood Machine",
@@ -11400,7 +11400,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
       "Pulleys",
@@ -11442,7 +11442,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Rigid Body Equilibrium",
@@ -11483,7 +11483,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Rigid Body Equilibrium",
@@ -11524,7 +11524,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Knife-Edge Supports",
@@ -11565,7 +11565,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Smooth Hinges",
@@ -11606,7 +11606,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Ladders",
@@ -11647,7 +11647,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Moments",
     "topic": "Momentum and Impulse",
     "subtopic": [
       "Conservation of Momentum",
@@ -11687,7 +11687,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Moments",
     "topic": "Momentum and Impulse",
     "subtopic": [
       "Opposing Collisions",
@@ -11728,7 +11728,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Moments",
     "topic": "Momentum and Impulse",
     "subtopic": [
       "Non-Coalescing Collisions",
@@ -11769,7 +11769,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Moments",
     "topic": "Momentum and Impulse",
     "subtopic": [
       "Newton's Law of Restitution",
@@ -11810,7 +11810,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Moments",
     "topic": "Momentum and Impulse",
     "subtopic": [
       "Rebound from Wall",
@@ -12258,7 +12258,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Ladders",
@@ -12300,7 +12300,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Ladders",
@@ -12340,7 +12340,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Non-Uniform Ladders",
@@ -12380,7 +12380,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Ladders",
@@ -12421,7 +12421,7 @@
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
       "Rough Wall and Floor",
@@ -12669,10 +12669,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
-    "topic": [
-      "Trigonometric Functions",
-      "Numerical Methods"
-    ],
+    "topic": "Trigonometric Functions and Numerical Methods",
     "subtopic": [
       "Location of Roots",
       "Small Angle Approximation"
@@ -12714,10 +12711,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
-    "topic": [
-      "Trigonometric Functions",
-      "Numerical Methods"
-    ],
+    "topic": "Trigonometric Functions and Numerical Methods",
     "subtopic": [
       "Location of Roots",
       "Small Angle Approximation"
@@ -12759,10 +12753,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
-    "topic": [
-      "Trigonometric Functions",
-      "Numerical Methods"
-    ],
+    "topic": "Trigonometric Functions and Numerical Methods",
     "subtopic": [
       "Location of Roots",
       "Small Angle Approximation"
@@ -12805,10 +12796,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
-    "topic": [
-      "Exponential Functions",
-      "Numerical Methods"
-    ],
+    "topic": "Exponential Functions and Numerical Methods",
     "subtopic": [
       "Location of Roots",
       "Small Angle Approximation"
@@ -12849,10 +12837,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Algebra and Functions",
-    "topic": [
-      "Trigonometric Functions",
-      "Numerical Methods"
-    ],
+    "topic": "Trigonometric Functions and Numerical Methods",
     "subtopic": [
       "Location of Roots",
       "Small Angle Approximation"
@@ -15642,7 +15627,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
-    "topic": "Differentiatial Equations",
+    "topic": "Differential Equations",
     "subtopic": [
       "Separation of Variables"
     ],
@@ -15683,7 +15668,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
-    "topic": "Differentiatial Equations",
+    "topic": "Differential Equations",
     "subtopic": [
       "Separation of Variables"
     ],
@@ -15723,7 +15708,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
-    "topic": "Differentiatial Equations",
+    "topic": "Differential Equations",
     "subtopic": [
       "Separation of Variables"
     ],
@@ -15764,7 +15749,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
-    "topic": "Differentiatial Equations",
+    "topic": "Differential Equations",
     "subtopic": [
       "Separation of Variables"
     ],
@@ -15804,7 +15789,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Integration",
-    "topic": "Differentiatial Equations",
+    "topic": "Differential Equations",
     "subtopic": [
       "Separation of Variables"
     ],
@@ -19491,7 +19476,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Differentiation",
-    "topic": "logarithms",
+    "topic": "Logarithms",
     "subtopic": [
       "Quotient Rule"
     ],
@@ -19571,7 +19556,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Differentiation",
-    "topic": "Product rule",
+    "topic": "Product Rule",
     "subtopic": [
       "Limits"
     ],
@@ -19775,7 +19760,7 @@
     "board": "OCR",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry",
@@ -21175,7 +21160,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Coordinate Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometry",
     "subtopic": [
       "Cosine Rule"
@@ -21215,8 +21200,8 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Coordinate Geometry",
-    "topic": "Trigonometry",
+    "major_area": "Trigonometry",
+    "topic": "Trigonometric Functions",
     "subtopic": [
       "Cosine Rule",
       "Trig Area Formula"
@@ -21256,7 +21241,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Coordinate Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometric Functions",
     "subtopic": [
       "Sine Rule",
@@ -21299,7 +21284,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Coordinate Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometry",
     "subtopic": [
       "Pythagoras",
@@ -21342,7 +21327,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Coordinate Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometric Functions",
     "subtopic": [
       "Bearings",
@@ -21582,7 +21567,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Coordinate Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometric Functions",
     "subtopic": [
       "Small Angle Approximation"
@@ -21621,7 +21606,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Coordinate Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometric Functions",
     "subtopic": [
       "Small Angle Approximation"
@@ -21663,7 +21648,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Coordinate Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometric Functions",
     "subtopic": [
       "Small Angle Approximation"
@@ -21702,7 +21687,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Coordinate Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometric Functions",
     "subtopic": [
       "Small Angle Approximation"
@@ -21743,7 +21728,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Coordinate Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometric Functions",
     "subtopic": [
       "Small Angle Approximation"
@@ -22562,7 +22547,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Straight Lines",
     "subtopic": [
       "Tangents and Normals"
@@ -22604,7 +22589,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Straight Lines",
     "subtopic": [
       "Tangents and Normals"
@@ -22687,7 +22672,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Coordinate Geometry",
+    "major_area": "Trigonometry",
     "topic": "Parametric Equations",
     "subtopic": [
       "Trigonometry"
@@ -22727,7 +22712,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Coordinate Geometry",
+    "major_area": "Trigonometry",
     "topic": "Parametric Equations",
     "subtopic": [
       "Exponential and Logarithmic Functions and Graphs"
@@ -22769,7 +22754,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Coordinate Geometry",
+    "major_area": "Trigonometry",
     "topic": "Parametric Equations",
     "subtopic": [
       "Algebraic Methods"
@@ -22809,7 +22794,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Coordinate Geometry",
+    "major_area": "Trigonometry",
     "topic": "Parametric Equations",
     "subtopic": [
       "Trigonometry"
@@ -23476,7 +23461,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Circular Measure",
     "subtopic": [
       "Arc Length and Sector Area"
@@ -23516,7 +23501,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Circular Measure",
     "subtopic": [
       "Sector Perimeter and Area"
@@ -23558,7 +23543,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Circular Measure",
     "subtopic": [
       "Chord Length and Segment Area"
@@ -23600,7 +23585,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Circular Measure",
     "subtopic": [
       "Cone Geometry",
@@ -23642,7 +23627,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Circular Measure",
     "subtopic": [
       "Intersecting Circles",
@@ -24295,7 +24280,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and Functions",
+    "major_area": "Sequences and Series",
     "topic": "Binomial Expansion",
     "subtopic": [
       "Negative Fractional Indices",
@@ -24338,7 +24323,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and Functions",
+    "major_area": "Sequences and Series",
     "topic": "Binomial Expansion",
     "subtopic": [
       "Fractional Indices",
@@ -24380,7 +24365,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and Functions",
+    "major_area": "Sequences and Series",
     "topic": "Binomial Expansion",
     "subtopic": [
       "Negative Indices",
@@ -24422,7 +24407,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and Functions",
+    "major_area": "Sequences and Series",
     "topic": "Binomial Expansion",
     "subtopic": [
       "Partial Fractions",
@@ -24465,7 +24450,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and Functions",
+    "major_area": "Sequences and Series",
     "topic": "Binomial Expansion",
     "subtopic": [
       "Negative Indices",
@@ -25303,7 +25288,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Integration",
+    "major_area": "Coordinate Geometry",
     "topic": "Parametric Curves",
     "subtopic": [
       "Parametric Integration",
@@ -26400,7 +26385,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -26441,7 +26426,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -26483,7 +26468,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -26525,7 +26510,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -26567,7 +26552,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -26818,7 +26803,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation"
@@ -26856,7 +26841,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -26896,7 +26881,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -26936,7 +26921,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -26976,7 +26961,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -27215,7 +27200,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometry",
     "subtopic": [
       "Circular Measure",
@@ -27256,7 +27241,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometry",
     "subtopic": [
       "Circular Measure",
@@ -27298,7 +27283,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometry",
     "subtopic": [
       "Circular Measure",
@@ -27339,7 +27324,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometry",
     "subtopic": [
       "Circular Measure",
@@ -27380,7 +27365,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometry",
     "subtopic": [
       "Circular Measure",
@@ -27422,7 +27407,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Pure Mathematics",
+    "major_area": "Algebra and Functions",
     "topic": "Trigonometry",
     "subtopic": [
       "Double-Angle Identities",
@@ -27462,7 +27447,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Pure Mathematics",
+    "major_area": "Algebra and Functions",
     "topic": "Trigonometry",
     "subtopic": [
       "Double-Angle Identities",
@@ -27503,7 +27488,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Pure Mathematics",
+    "major_area": "Algebra and Functions",
     "topic": "Trigonometry",
     "subtopic": [
       "Trigonometric Identities",
@@ -27543,7 +27528,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Pure Mathematics",
+    "major_area": "Algebra and Functions",
     "topic": "Trigonometry",
     "subtopic": [
       "Trigonometric Identities",
@@ -27583,7 +27568,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Pure Mathematics",
+    "major_area": "Algebra and Functions",
     "topic": "Trigonometry",
     "subtopic": [
       "Trigonometric Identities",
@@ -28468,7 +28453,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Differential Equations",
+    "major_area": "Integration",
     "topic": "First Order Differential Equations",
     "subtopic": [
       "Separation of Variables",
@@ -28510,7 +28495,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Differential Equations",
+    "major_area": "Integration",
     "topic": "First Order Differential Equations",
     "subtopic": [
       "Separation of Variables",
@@ -28552,7 +28537,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Differential Equations",
+    "major_area": "Integration",
     "topic": "First Order Differential Equations",
     "subtopic": [
       "Separation of Variables",
@@ -29529,7 +29514,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences & Series",
+    "major_area": "Sequences and Series",
     "topic": "Series",
     "subtopic": [
       "Geometric Series"
@@ -29573,7 +29558,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences & Series",
+    "major_area": "Sequences and Series",
     "topic": "Series",
     "subtopic": [
       "Geometric Series"
@@ -29617,7 +29602,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences & Series",
+    "major_area": "Sequences and Series",
     "topic": "Series",
     "subtopic": [
       "Geometric Series"
@@ -29661,7 +29646,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences & Series",
+    "major_area": "Sequences and Series",
     "topic": "Series",
     "subtopic": [
       "Geometric Series"
@@ -29705,7 +29690,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences & Series",
+    "major_area": "Sequences and Series",
     "topic": "Series",
     "subtopic": [
       "Geometric Series"
@@ -29749,7 +29734,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Product Rule",
@@ -29792,7 +29777,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Product Rule",
@@ -29835,7 +29820,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Product Rule",
@@ -29878,7 +29863,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Product Rule",
@@ -29920,7 +29905,7 @@
     "branch": "Pure",
     "group_id": "004056",
     "board": "Edexcel",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "level": "A",
     "topic": "Differentiation",
     "subtopic": [
@@ -29964,7 +29949,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Integration",
     "topic": "Integration",
     "subtopic": [
       "Area Under a Curve",
@@ -30013,7 +29998,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Integration",
     "topic": "Integration",
     "subtopic": [
       "Area Under a Curve",
@@ -30062,7 +30047,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Integration",
     "topic": "Integration",
     "subtopic": [
       "Area Under a Curve",
@@ -30111,7 +30096,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Integration",
     "topic": "Integration",
     "subtopic": [
       "Area Under a Curve",
@@ -30160,7 +30145,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Integration",
     "topic": "Integration",
     "subtopic": [
       "Area Under a Curve",
@@ -30209,7 +30194,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -30255,7 +30240,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -30301,7 +30286,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -30347,7 +30332,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -30393,7 +30378,7 @@
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -30439,7 +30424,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Power Rule"
@@ -30478,7 +30463,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Power Rule"
@@ -30517,7 +30502,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Power Rule"
@@ -30556,7 +30541,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Power Rule"
@@ -30595,7 +30580,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Power Rule"
@@ -30634,7 +30619,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra and functions",
+    "major_area": "Algebra and Functions",
     "topic": "Graph transformations",
     "subtopic": [
       "Transformations of Graphs"
@@ -30673,7 +30658,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra and functions",
+    "major_area": "Algebra and Functions",
     "topic": "Graph transformations",
     "subtopic": [
       "Transformations of Graphs"
@@ -30712,7 +30697,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra and functions",
+    "major_area": "Algebra and Functions",
     "topic": "Graph transformations",
     "subtopic": [
       "Transformations of Graphs"
@@ -30751,7 +30736,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra and functions",
+    "major_area": "Algebra and Functions",
     "topic": "Graph transformations",
     "subtopic": [
       "Transformations of Graphs"
@@ -30790,7 +30775,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra and functions",
+    "major_area": "Algebra and Functions",
     "topic": "Graph transformations",
     "subtopic": [
       "Transformations of Graphs"
@@ -30829,7 +30814,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences and series",
+    "major_area": "Sequences and Series",
     "topic": "Sequences",
     "subtopic": [
       "Periodic Sequences"
@@ -30868,7 +30853,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences and series",
+    "major_area": "Sequences and Series",
     "topic": "Sequences",
     "subtopic": [
       "Periodic Sequences"
@@ -30907,7 +30892,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences and series",
+    "major_area": "Sequences and Series",
     "topic": "Sequences",
     "subtopic": [
       "Periodic Sequences"
@@ -30946,7 +30931,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences and series",
+    "major_area": "Sequences and Series",
     "topic": "Sequences",
     "subtopic": [
       "Periodic Sequences"
@@ -30985,7 +30970,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences and series",
+    "major_area": "Sequences and Series",
     "topic": "Sequences",
     "subtopic": [
       "Periodic Sequences"
@@ -31024,7 +31009,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and functions",
+    "major_area": "Algebra and Functions",
     "topic": "Functions",
     "subtopic": [
       "Inverse Functions"
@@ -31064,7 +31049,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and functions",
+    "major_area": "Algebra and Functions",
     "topic": "Functions",
     "subtopic": [
       "Inverse Functions"
@@ -31104,7 +31089,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and functions",
+    "major_area": "Algebra and Functions",
     "topic": "Functions",
     "subtopic": [
       "Inverse Functions"
@@ -31144,7 +31129,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and functions",
+    "major_area": "Algebra and Functions",
     "topic": "Functions",
     "subtopic": [
       "Inverse Functions"
@@ -31184,7 +31169,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and functions",
+    "major_area": "Algebra and Functions",
     "topic": "Functions",
     "subtopic": [
       "Inverse Functions"
@@ -31224,7 +31209,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Parametric Differentiation",
@@ -31265,7 +31250,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Parametric Differentiation",
@@ -31306,7 +31291,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Parametric Differentiation",
@@ -31347,7 +31332,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Parametric Differentiation",
@@ -31388,7 +31373,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Parametric Differentiation",
@@ -31429,8 +31414,8 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences and series",
-    "topic": "Binomial expansion",
+    "major_area": "Sequences and Series",
+    "topic": "Binomial Expansion",
     "subtopic": [
       "Binomial Expansion",
       "Numerical Integration"
@@ -31471,8 +31456,8 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences and series",
-    "topic": "Binomial expansion",
+    "major_area": "Sequences and Series",
+    "topic": "Binomial Expansion",
     "subtopic": [
       "Binomial Expansion",
       "Numerical Integration"
@@ -31513,8 +31498,8 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences and series",
-    "topic": "Binomial expansion",
+    "major_area": "Sequences and Series",
+    "topic": "Binomial Expansion",
     "subtopic": [
       "Binomial Expansion",
       "Numerical Integration"
@@ -31555,8 +31540,8 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences and series",
-    "topic": "Binomial expansion",
+    "major_area": "Sequences and Series",
+    "topic": "Binomial Expansion",
     "subtopic": [
       "Binomial Expansion",
       "Numerical Integration"
@@ -31597,8 +31582,8 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Sequences and series",
-    "topic": "Binomial expansion",
+    "major_area": "Sequences and Series",
+    "topic": "Binomial Expansion",
     "subtopic": [
       "Binomial Expansion",
       "Numerical Integration"
@@ -31639,7 +31624,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry"
@@ -31817,7 +31802,7 @@
     "board": "AQA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry"
@@ -32090,7 +32075,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Sequences and Series",
-    "topic": "Arithmetic series",
+    "topic": "Arithmetic Series",
     "subtopic": [
       "Sum of an AP"
     ],
@@ -32137,7 +32122,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Sequences and Series",
-    "topic": "Arithmetic series",
+    "topic": "Arithmetic Series",
     "subtopic": [
       "Sum of an AP"
     ],
@@ -32182,7 +32167,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Sequences and Series",
-    "topic": "Arithmetic series",
+    "topic": "Arithmetic Series",
     "subtopic": [
       "Sum of an AP"
     ],
@@ -32227,7 +32212,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Sequences and Series",
-    "topic": "Arithmetic series",
+    "topic": "Arithmetic Series",
     "subtopic": [
       "Sum of an AP"
     ],
@@ -32273,7 +32258,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Sequences and Series",
-    "topic": "Arithmetic series",
+    "topic": "Arithmetic Series",
     "subtopic": [
       "Sum of an AP"
     ],
@@ -34531,7 +34516,7 @@
     "board": "OCR",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry",
@@ -34664,7 +34649,7 @@
     "board": "OCR",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry",
@@ -34708,7 +34693,7 @@
     "board": "OCR",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry",
@@ -37176,7 +37161,7 @@
     "branch": "Pure",
     "level": "A",
     "major_area": "Sequences and Series",
-    "topic": "Geometric Seqquence",
+    "topic": "Geometric Sequence",
     "subtopic": [
       "Sum to infinity of a GP"
     ],
@@ -37712,7 +37697,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry",
@@ -37758,7 +37743,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry",
@@ -37800,7 +37785,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry",
@@ -37883,7 +37868,7 @@
     "board": "OCR MEI",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Algebraic Methods",
@@ -40430,11 +40415,8 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation and Integration",
-    "topic": [
-      "Differentiation",
-      "Integration"
-    ],
+    "major_area": "Differentiation",
+    "topic": "Differentiation and Integration",
     "subtopic": [
       "Power Rule",
       "Indefinite Integration",
@@ -40982,7 +40964,7 @@
     "branch": "Pure",
     "level": "AS",
     "major_area": "Integration",
-    "topic": "DefiniteIntegration",
+    "topic": "Definite Integration",
     "subtopic": [
       "Curved Graphs",
       "Area between a Curve and a Line"
@@ -41602,7 +41584,7 @@
     "branch": "Pure",
     "level": "AS",
     "major_area": "Trigonometry",
-    "topic": "3 D Trigonometry",
+    "topic": "3D Trigonometry",
     "subtopic": [
       "Angle between a line and a plane"
     ],
@@ -41683,7 +41665,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra",
+    "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
     "subtopic": [
       "Binomial Expansion"
@@ -41723,7 +41705,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra",
+    "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
     "subtopic": [
       "Binomial Expansion"
@@ -41764,7 +41746,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra",
+    "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
     "subtopic": [
       "Binomial Expansion"
@@ -41804,7 +41786,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra",
+    "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
     "subtopic": [
       "Binomial Expansion"
@@ -41846,7 +41828,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra",
+    "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
     "subtopic": [
       "Binomial Expansion",
@@ -43344,7 +43326,7 @@
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry",
@@ -43750,7 +43732,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation",
+    "major_area": "Vectors",
     "topic": "Vectors",
     "subtopic": [
       "Vector Properties"
@@ -45381,7 +45363,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Trigonometry",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry",
@@ -45424,7 +45406,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Trigonometry",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Proof"
@@ -45466,7 +45448,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Tangents and Normals",
@@ -45507,7 +45489,7 @@
     "board": "CCEA",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Trigonometry",
+    "major_area": "Coordinate Geometry",
     "topic": "Circles",
     "subtopic": [
       "Circle Geometry",
@@ -47609,7 +47591,7 @@
     "branch": "Statistics",
     "board": "AQA",
     "level": "A",
-    "major_area": "Statistical Hypothesis Testing",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "The Large Data Set",
     "subtopic": [
       "Normal Hypothesis Testing",
@@ -47733,7 +47715,7 @@
     "branch": "Statistics",
     "board": "AQA",
     "level": "A",
-    "major_area": "The Large Data Set",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "The Large Data Set",
     "subtopic": [
       "Data Limitations",
@@ -48020,7 +48002,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "The Large Data Set",
+    "major_area": "Statistical Distributions",
     "topic": "Discrete Probability Distributions",
     "subtopic": [
       "Discrete Uniform Distribution",
@@ -48145,7 +48127,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "The Large Data Set",
+    "major_area": "Statistical Distributions",
     "topic": "Discrete Probability Distributions",
     "subtopic": [
       "Beaufort Scale",
@@ -48227,7 +48209,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Hypothesis Testing",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Linear Regression",
     "subtopic": [
       "PMCC Hypothesis Test",
@@ -48270,7 +48252,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Hypothesis Testing",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Linear Regression",
     "subtopic": [
       "Regression Predictions",
@@ -48312,7 +48294,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Hypothesis Testing",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Linear Regression",
     "subtopic": [
       "Invariance of PMCC",
@@ -48353,7 +48335,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Distributions",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Linear Regression",
     "subtopic": [
       "Exponential Models",
@@ -48395,7 +48377,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Hypothesis Testing",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Linear Regression",
     "subtopic": [
       "Regression Directionality",
@@ -48647,7 +48629,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Data Presentation and Interpretation",
+    "major_area": "Statistical Sampling",
     "topic": "Statistical Sampling and Box Plots",
     "subtopic": [
       "Opportunity Sampling",
@@ -48692,7 +48674,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Data Presentation and Interpretation",
+    "major_area": "Statistical Sampling",
     "topic": "Statistical Sampling and Box Plots",
     "subtopic": [
       "Comparative Box Plots",
@@ -48734,7 +48716,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Data Presentation and Interpretation",
+    "major_area": "Statistical Sampling",
     "topic": "Statistical Sampling and Box Plots",
     "subtopic": [
       "Quartiles from Discrete Data",
@@ -48775,7 +48757,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Data Presentation and Interpretation",
+    "major_area": "Statistical Sampling",
     "topic": "Statistical Sampling and Box Plots",
     "subtopic": [
       "Linear Interpolation",
@@ -48817,7 +48799,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Data Presentation and Interpretation",
+    "major_area": "Statistical Sampling",
     "topic": "Statistical Sampling and Box Plots",
     "subtopic": [
       "Correcting Summary Statistics",
@@ -48858,7 +48840,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Distributions",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "The Normal Distribution and Hypothesis Testing",
     "subtopic": [
       "Conditional Normal Probability",
@@ -48900,7 +48882,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Distributions",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "The Normal Distribution and Hypothesis Testing",
     "subtopic": [
       "Parallel System Reliability",
@@ -48985,7 +48967,7 @@
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Distributions",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "The Normal Distribution and Hypothesis Testing",
     "subtopic": [
       "Sum of Normal Variables",
@@ -49659,7 +49641,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
       "One-Tailed Test",
@@ -49699,7 +49681,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
       "Upper-Tailed Test",
@@ -49739,7 +49721,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
       "Critical Region",
@@ -49780,7 +49762,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
       "Two-Tailed Test",
@@ -49821,7 +49803,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
       "Two-Tailed Critical Region",
@@ -50227,7 +50209,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Distributions",
     "topic": "The Normal Distribution",
     "subtopic": [
       "Sample Mean Distribution",
@@ -50269,7 +50251,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
       "Rejection Region",
@@ -50309,7 +50291,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
       "Lower-Tailed Rejection Region",
@@ -50350,7 +50332,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
       "Two-Tailed Rejection Region",
@@ -50391,7 +50373,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
       "Normal Approximation to Rejection Region",
@@ -50431,7 +50413,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
       "Type II Error",
@@ -50472,7 +50454,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing for Mean",
     "subtopic": [
       "Central Limit Theorem",
@@ -50513,7 +50495,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing for Mean",
     "subtopic": [
       "Systematic vs Random Sampling",
@@ -50553,7 +50535,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing for Mean",
     "subtopic": [
       "Stratified Sampling",
@@ -50594,7 +50576,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing for Mean",
     "subtopic": [
       "Sample Size Determination",
@@ -50634,7 +50616,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing for Mean",
     "subtopic": [
       "Summary Statistics",
@@ -50676,7 +50658,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Bivariate Data",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Regression",
     "subtopic": [
       "PMCC Interpretation",
@@ -50718,7 +50700,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Bivariate Data",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Regression",
     "subtopic": [
       "PMCC Calculation",
@@ -50759,7 +50741,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Bivariate Data",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Regression",
     "subtopic": [
       "Non-Linear Correlation",
@@ -50799,7 +50781,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Bivariate Data",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Regression",
     "subtopic": [
       "Residual Plots",
@@ -50841,7 +50823,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Bivariate Data",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Regression",
     "subtopic": [
       "Influential Outliers",
@@ -51089,7 +51071,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution & Normal Approximation",
     "subtopic": [
       "Normal Approximation to Binomial",
@@ -51131,7 +51113,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution & Normal Approximation",
     "subtopic": [
       "Normal Approximation to Binomial",
@@ -51173,7 +51155,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution & Normal Approximation",
     "subtopic": [
       "Normal Approximation to Binomial",
@@ -51215,7 +51197,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution & Normal Approximation",
     "subtopic": [
       "General Modal Condition Proof",
@@ -51257,7 +51239,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution & Normal Approximation",
     "subtopic": [
       "Normal Approximation to Binomial",
@@ -51299,7 +51281,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Data Presentation & Interpretation",
     "subtopic": [
       "Histograms",
@@ -51339,7 +51321,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Data Presentation & Interpretation",
     "subtopic": [
       "Unequal Class Widths",
@@ -51380,7 +51362,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Data Presentation & Interpretation",
     "subtopic": [
       "Histogram Scaling on Graph Paper",
@@ -51420,7 +51402,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Data Presentation & Interpretation",
     "subtopic": [
       "Linear Interpolation",
@@ -51463,7 +51445,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Data Presentation & Interpretation",
     "subtopic": [
       "Outliers",
@@ -51506,7 +51488,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Discrete Random Variables",
     "subtopic": [
       "Probability Distributions",
@@ -51546,7 +51528,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Discrete Random Variables",
     "subtopic": [
       "Two Unknown Probabilities",
@@ -51586,7 +51568,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Discrete Random Variables",
     "subtopic": [
       "Algebraic PMF",
@@ -51627,7 +51609,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Discrete Random Variables",
     "subtopic": [
       "Negative Supports",
@@ -51668,7 +51650,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Discrete Random Variables",
     "subtopic": [
       "Exact Fractions",
@@ -51709,7 +51691,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Mean",
@@ -51750,7 +51732,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Moving Averages",
@@ -51791,7 +51773,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Linear Coding",
@@ -51833,7 +51815,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Updating Mean and Standard Deviation",
@@ -51875,7 +51857,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Quartiles",
@@ -51918,7 +51900,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing",
     "subtopic": [
       "Binomial Hypothesis Test",
@@ -51959,7 +51941,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing",
     "subtopic": [
       "One-Tailed Lower Test",
@@ -52000,7 +51982,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing",
     "subtopic": [
       "Two-Tailed Test",
@@ -52042,7 +52024,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing",
     "subtopic": [
       "One-Tailed Upper Test",
@@ -52085,7 +52067,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing",
     "subtopic": [
       "Binomial Modelling Assumptions",
@@ -52126,7 +52108,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Sampling",
     "topic": "Data Presentation, Correlation & Sampling",
     "subtopic": [
       "Chart Critiques",
@@ -52171,7 +52153,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Sampling",
     "topic": "Bivariate Data & Sampling",
     "subtopic": [
       "Scatter Diagrams",
@@ -52215,7 +52197,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Linear Regression & Correlation",
     "subtopic": [
       "Interpretation of Coefficients",
@@ -52260,7 +52242,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Data Presentation & Large Data Set Anomalies",
     "subtopic": [
       "Cleaning Data",
@@ -52306,7 +52288,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Sampling",
     "topic": "Correlation & Stratified Sampling",
     "subtopic": [
       "PMCC Hypothesis Test",
@@ -52349,7 +52331,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Probability",
     "subtopic": [
       "Independent Events",
@@ -52389,7 +52371,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Probability",
     "subtopic": [
       "Discrete Outcome Modelling",
@@ -52430,7 +52412,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Probability",
     "subtopic": [
       "Addition Law",
@@ -52471,7 +52453,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Probability",
     "subtopic": [
       "Conditional Probability",
@@ -52512,7 +52494,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Probability",
     "subtopic": [
       "Exhaustive Events",
@@ -52554,7 +52536,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Mean and Standard Deviation",
@@ -52593,7 +52575,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Linear Coding",
@@ -52634,7 +52616,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Frequency Table with Unknown",
@@ -52676,7 +52658,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Pooled Mean",
@@ -52718,7 +52700,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Expected Value",
@@ -52760,7 +52742,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "Binomial Probability Formula",
@@ -52799,7 +52781,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "Interval Probabilities",
@@ -52841,7 +52823,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "Conditional Binomial Probability",
@@ -52881,7 +52863,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "Finding Minimum Sample Size n",
@@ -52922,7 +52904,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "Nested Binomial Models",
@@ -52964,7 +52946,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Stem-and-Leaf Diagrams",
@@ -53007,7 +52989,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Back-to-Back Stem-and-Leaf",
@@ -53049,7 +53031,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Decimal Stem-and-Leaf",
@@ -53091,7 +53073,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Measures of Central Tendency",
@@ -53134,7 +53116,7 @@
     "branch": "Statistics",
     "board": "OCR MEI",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Statistical Measures",
     "subtopic": [
       "Five-Number Summary",
@@ -53177,7 +53159,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Normal Distribution",
     "subtopic": [
       "Distribution Parameters",
@@ -53218,7 +53200,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Normal Distribution",
     "subtopic": [
       "Inverse Normal",
@@ -53258,7 +53240,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Normal Distribution",
     "subtopic": [
       "Sampling Distributions",
@@ -53299,7 +53281,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Normal Distribution",
     "subtopic": [
       "Sampling Distributions",
@@ -53340,7 +53322,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Normal Distribution",
     "subtopic": [
       "Normal Approximation",
@@ -53381,7 +53363,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Discrete Random Variables",
     "subtopic": [
       "Probability Mass Functions",
@@ -53421,7 +53403,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Discrete Random Variables",
     "subtopic": [
       "Expectation",
@@ -53463,7 +53445,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Discrete Random Variables",
     "subtopic": [
       "Sum of Random Variables",
@@ -53504,7 +53486,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Discrete Random Variables",
     "subtopic": [
       "Expectation",
@@ -53544,7 +53526,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Discrete Random Variables",
     "subtopic": [
       "Reciprocal Distribution",
@@ -53790,7 +53772,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Normal Distribution",
     "subtopic": [
       "Model Evaluation",
@@ -53830,7 +53812,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Normal Distribution",
     "subtopic": [
       "Inverse Normal",
@@ -53870,7 +53852,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing",
     "subtopic": [
       "Statistical Power",
@@ -53910,7 +53892,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing",
     "subtopic": [
       "Confidence Intervals",
@@ -53950,7 +53932,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing",
     "subtopic": [
       "Difference of Two Means",
@@ -53989,7 +53971,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Data Presentation and Bivariate Data",
     "subtopic": [
       "Cumulative Frequency",
@@ -54031,7 +54013,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Data Presentation and Bivariate Data",
     "subtopic": [
       "Histograms",
@@ -54071,7 +54053,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Data Presentation and Bivariate Data",
     "subtopic": [
       "Box Plots",
@@ -54111,7 +54093,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Data Presentation and Bivariate Data",
     "subtopic": [
       "Scatter Diagrams",
@@ -54152,7 +54134,7 @@
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Data Presentation and Bivariate Data",
     "subtopic": [
       "Cumulative Frequency",
@@ -54193,7 +54175,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Binomial Distribution",
     "subtopic": [
       "Binomial Probability",
@@ -54232,7 +54214,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Binomial Distribution",
     "subtopic": [
       "Cumulative Probability",
@@ -54273,7 +54255,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Binomial Distribution",
     "subtopic": [
       "Modelling Assumptions",
@@ -54313,7 +54295,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Binomial Distribution",
     "subtopic": [
       "Mean and Variance",
@@ -54352,7 +54334,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Binomial Distribution",
     "subtopic": [
       "Two-Stage Binomial",
@@ -54392,7 +54374,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Venn Diagrams and Probability",
     "subtopic": [
       "Set Notation",
@@ -54433,7 +54415,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Venn Diagrams and Probability",
     "subtopic": [
       "Conditional Probability",
@@ -54474,7 +54456,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Venn Diagrams and Probability",
     "subtopic": [
       "Algebraic Venn Diagrams",
@@ -54515,7 +54497,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Venn Diagrams and Probability",
     "subtopic": [
       "Mutually Exclusive Events",
@@ -54557,7 +54539,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Probability",
     "topic": "Venn Diagrams and Probability",
     "subtopic": [
       "Subset Relationships",
@@ -54598,7 +54580,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Poisson Distribution",
     "subtopic": [
       "Rate Scaling",
@@ -54637,7 +54619,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Poisson Distribution",
     "subtopic": [
       "Modelling Assumptions",
@@ -54678,7 +54660,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Poisson Distribution",
     "subtopic": [
       "Sum of Poisson Variables",
@@ -54718,7 +54700,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Poisson Distribution",
     "subtopic": [
       "Parameter Determination",
@@ -54758,7 +54740,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Distributions",
     "topic": "The Poisson Distribution",
     "subtopic": [
       "Poisson Approximation",
@@ -54799,7 +54781,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Statistical Hypothesis Testing",
     "subtopic": [
       "Binomial Test",
@@ -54840,7 +54822,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Statistical Hypothesis Testing",
     "subtopic": [
       "Lower-Tail Test",
@@ -54881,7 +54863,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Statistical Hypothesis Testing",
     "subtopic": [
       "Two-Tailed Binomial Test",
@@ -54922,7 +54904,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Statistical Hypothesis Testing",
     "subtopic": [
       "p-value Method",
@@ -54963,7 +54945,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Statistical Hypothesis Testing",
     "subtopic": [
       "Type I and Type II Errors",
@@ -55004,7 +54986,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Linear Regression and Correlation",
     "subtopic": [
       "Scatter Diagrams",
@@ -55044,7 +55026,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Linear Regression and Correlation",
     "subtopic": [
       "Interpreting Coefficients",
@@ -55085,7 +55067,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Linear Regression and Correlation",
     "subtopic": [
       "Influential Outliers",
@@ -55126,7 +55108,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Linear Regression and Correlation",
     "subtopic": [
       "Least Squares Principles",
@@ -55166,7 +55148,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Linear Regression and Correlation",
     "subtopic": [
       "Evaluating Linear Models",
@@ -55206,7 +55188,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Measures of Location, Spread, and Box Plots",
     "subtopic": [
       "Outlier Boundaries",
@@ -55247,7 +55229,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Measures of Location, Spread, and Box Plots",
     "subtopic": [
       "Parallel Box Plots",
@@ -55287,7 +55269,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Measures of Location, Spread, and Box Plots",
     "subtopic": [
       "Two-Sided Outliers",
@@ -55328,7 +55310,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Measures of Location, Spread, and Box Plots",
     "subtopic": [
       "Cumulative Frequency and Box Plots",
@@ -55369,7 +55351,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "AS",
-    "major_area": "Statistics",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Measures of Location, Spread, and Box Plots",
     "subtopic": [
       "Linear Coding",
@@ -55824,7 +55806,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Continuous Uniform Distribution",
     "subtopic": [
       "Uniform Distribution Parameters",
@@ -55867,7 +55849,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Continuous Uniform Distribution",
     "subtopic": [
       "Probability Density Function",
@@ -55910,7 +55892,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Continuous Uniform Distribution",
     "subtopic": [
       "Symmetric Uniform Distributions",
@@ -55954,7 +55936,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Continuous Uniform Distribution",
     "subtopic": [
       "Uniform to Binomial Bridge",
@@ -55998,7 +55980,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Continuous Uniform Distribution",
     "subtopic": [
       "Truncated Uniform Distributions",
@@ -56040,7 +56022,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Statistical Modelling",
@@ -56084,7 +56066,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Finding Unknown Parameters",
@@ -56126,7 +56108,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Normal Approximation to Binomial",
@@ -56168,7 +56150,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Hypothesis Testing for the Mean",
@@ -56210,7 +56192,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Linear Combinations of Normal Variables",
@@ -56252,7 +56234,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
       "Interpretation of PMCC",
@@ -56293,7 +56275,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
       "Impact of Outliers",
@@ -56335,7 +56317,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
       "Non-linear Models",
@@ -56376,7 +56358,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Linear Regression",
     "subtopic": [
       "Interpretation of Coefficients",
@@ -56420,7 +56402,7 @@
     "branch": "Statistics",
     "board": "WJEC",
     "level": "A",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
       "Calculation from Summary Statistics",
@@ -56882,7 +56864,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
       "Calculation of PMCC",
@@ -56922,7 +56904,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
       "Coded Summary Statistics",
@@ -56963,7 +56945,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Product Moment Correlation",
     "subtopic": [
       "Hypothesis Testing for Correlation",
@@ -57005,7 +56987,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Spearman's Rank Correlation",
     "subtopic": [
       "Ranking Data",
@@ -57046,7 +57028,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Correlation and Regression",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Linear Regression and Correlation",
     "subtopic": [
       "Regression Slope",
@@ -57087,7 +57069,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "Algebraic Binomial Ratios",
@@ -57128,7 +57110,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "Algebraic Parameter Derivation",
@@ -57170,7 +57152,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "One-Tailed Hypothesis Testing",
@@ -57212,7 +57194,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "Two-Tailed Hypothesis Testing",
@@ -57254,7 +57236,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "AS",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "Mean and Variance Formulas",
@@ -57716,7 +57698,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Finding Unknown Parameters",
@@ -57757,7 +57739,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Linear Combinations of Normal Variables",
@@ -57798,7 +57780,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Sample Mean Hypothesis Testing",
@@ -57841,7 +57823,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Normal Approximation to Poisson",
@@ -57884,7 +57866,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Symmetric Tolerance Intervals",
@@ -57925,7 +57907,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "At Least One Probability",
@@ -57966,7 +57948,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "Lower-Tail Hypothesis Testing",
@@ -58007,7 +57989,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "Two-Tailed Hypothesis Testing",
@@ -58048,7 +58030,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "Sample Size Inequalities",
@@ -58088,7 +58070,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Probability Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Binomial Distribution",
     "subtopic": [
       "Acceptance Sampling",
@@ -58130,7 +58112,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Hypothesis Testing for the Mean",
@@ -58170,7 +58152,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "One-Tailed Test for the Mean",
@@ -58212,7 +58194,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Central Limit Theorem",
@@ -58253,7 +58235,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Critical Regions",
@@ -58294,7 +58276,7 @@
     "branch": "Statistics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Continuous Distributions",
+    "major_area": "Statistical Distributions",
     "topic": "Normal Distribution",
     "subtopic": [
       "Difference of Two Sample Means",

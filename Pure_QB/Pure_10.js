@@ -1043,7 +1043,7 @@ window.ALEVEL_QUESTIONS = [
         "branch": "Pure",
         "level": "A",
         "major_area": "Integration",
-        "topic": "Differentiatial Equations",
+        "topic": "Differential Equations",
         "subtopic": [
                 "Separation of Variables"
         ],
@@ -1084,7 +1084,7 @@ window.ALEVEL_QUESTIONS = [
         "branch": "Pure",
         "level": "A",
         "major_area": "Integration",
-        "topic": "Differentiatial Equations",
+        "topic": "Differential Equations",
         "subtopic": [
                 "Separation of Variables"
         ],
@@ -1124,7 +1124,7 @@ window.ALEVEL_QUESTIONS = [
         "branch": "Pure",
         "level": "A",
         "major_area": "Integration",
-        "topic": "Differentiatial Equations",
+        "topic": "Differential Equations",
         "subtopic": [
                 "Separation of Variables"
         ],
@@ -1165,7 +1165,7 @@ window.ALEVEL_QUESTIONS = [
         "branch": "Pure",
         "level": "A",
         "major_area": "Integration",
-        "topic": "Differentiatial Equations",
+        "topic": "Differential Equations",
         "subtopic": [
                 "Separation of Variables"
         ],
@@ -1205,7 +1205,7 @@ window.ALEVEL_QUESTIONS = [
         "branch": "Pure",
         "level": "A",
         "major_area": "Integration",
-        "topic": "Differentiatial Equations",
+        "topic": "Differential Equations",
         "subtopic": [
                 "Separation of Variables"
         ],

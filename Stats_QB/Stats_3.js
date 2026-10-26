@@ -5,7 +5,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing for Mean",
     "subtopic": [
         "Central Limit Theorem",
@@ -46,7 +46,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing for Mean",
     "subtopic": [
         "Systematic vs Random Sampling",
@@ -86,7 +86,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing for Mean",
     "subtopic": [
         "Stratified Sampling",
@@ -127,7 +127,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing for Mean",
     "subtopic": [
         "Sample Size Determination",
@@ -167,7 +167,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Hypothesis Testing for Mean",
     "subtopic": [
         "Summary Statistics",
@@ -209,7 +209,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Bivariate Data",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Regression",
     "subtopic": [
         "PMCC Interpretation",
@@ -251,7 +251,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Bivariate Data",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Regression",
     "subtopic": [
         "PMCC Calculation",
@@ -292,7 +292,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Bivariate Data",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Regression",
     "subtopic": [
         "Non-Linear Correlation",
@@ -332,7 +332,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Bivariate Data",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Regression",
     "subtopic": [
         "Residual Plots",
@@ -374,7 +374,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Bivariate Data",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Regression",
     "subtopic": [
         "Influential Outliers",
@@ -622,7 +622,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "Binomial Distribution & Normal Approximation",
   "subtopic": [
     "Normal Approximation to Binomial",
@@ -664,7 +664,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "Binomial Distribution & Normal Approximation",
   "subtopic": [
     "Normal Approximation to Binomial",
@@ -706,7 +706,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "Binomial Distribution & Normal Approximation",
   "subtopic": [
     "Normal Approximation to Binomial",
@@ -748,7 +748,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "Binomial Distribution & Normal Approximation",
   "subtopic": [
     "General Modal Condition Proof",
@@ -790,7 +790,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "Binomial Distribution & Normal Approximation",
   "subtopic": [
     "Normal Approximation to Binomial",
@@ -832,7 +832,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Data Presentation & Interpretation",
   "subtopic": [
     "Histograms",
@@ -872,7 +872,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Data Presentation & Interpretation",
   "subtopic": [
     "Unequal Class Widths",
@@ -913,7 +913,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Data Presentation & Interpretation",
   "subtopic": [
     "Histogram Scaling on Graph Paper",
@@ -953,7 +953,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Data Presentation & Interpretation",
   "subtopic": [
     "Linear Interpolation",
@@ -996,7 +996,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Data Presentation & Interpretation",
   "subtopic": [
     "Outliers",
@@ -1039,7 +1039,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Discrete Random Variables",
   "subtopic": [
     "Probability Distributions",
@@ -1079,7 +1079,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Discrete Random Variables",
   "subtopic": [
     "Two Unknown Probabilities",
@@ -1119,7 +1119,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Discrete Random Variables",
   "subtopic": [
     "Algebraic PMF",
@@ -1160,7 +1160,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Discrete Random Variables",
   "subtopic": [
     "Negative Supports",
@@ -1201,7 +1201,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Discrete Random Variables",
   "subtopic": [
     "Exact Fractions",
@@ -1242,7 +1242,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Mean",
@@ -1283,7 +1283,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Moving Averages",
@@ -1324,7 +1324,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Linear Coding",
@@ -1366,7 +1366,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Updating Mean and Standard Deviation",
@@ -1408,7 +1408,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Quartiles",
@@ -1451,7 +1451,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Hypothesis Testing",
   "topic": "Hypothesis Testing",
   "subtopic": [
     "Binomial Hypothesis Test",
@@ -1492,7 +1492,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Hypothesis Testing",
   "topic": "Hypothesis Testing",
   "subtopic": [
     "One-Tailed Lower Test",
@@ -1533,7 +1533,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Hypothesis Testing",
   "topic": "Hypothesis Testing",
   "subtopic": [
     "Two-Tailed Test",
@@ -1575,7 +1575,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Hypothesis Testing",
   "topic": "Hypothesis Testing",
   "subtopic": [
     "One-Tailed Upper Test",
@@ -1618,7 +1618,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Hypothesis Testing",
   "topic": "Hypothesis Testing",
   "subtopic": [
     "Binomial Modelling Assumptions",
@@ -1659,7 +1659,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Sampling",
   "topic": "Data Presentation, Correlation & Sampling",
   "subtopic": [
     "Chart Critiques",
@@ -1704,7 +1704,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Sampling",
   "topic": "Bivariate Data & Sampling",
   "subtopic": [
     "Scatter Diagrams",
@@ -1748,7 +1748,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Linear Regression & Correlation",
   "subtopic": [
     "Interpretation of Coefficients",
@@ -1793,7 +1793,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Data Presentation & Large Data Set Anomalies",
   "subtopic": [
     "Cleaning Data",
@@ -1839,7 +1839,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Sampling",
   "topic": "Correlation & Stratified Sampling",
   "subtopic": [
     "PMCC Hypothesis Test",
@@ -1882,7 +1882,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Probability",
   "subtopic": [
     "Independent Events",
@@ -1922,7 +1922,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Probability",
   "subtopic": [
     "Discrete Outcome Modelling",
@@ -1963,7 +1963,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Probability",
   "subtopic": [
     "Addition Law",
@@ -2004,7 +2004,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Probability",
   "subtopic": [
     "Conditional Probability",
@@ -2045,7 +2045,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Probability",
   "subtopic": [
     "Exhaustive Events",

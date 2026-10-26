@@ -5,7 +5,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Constant Acceleration",
@@ -46,7 +46,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Constant Acceleration",
@@ -87,7 +87,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Constant Acceleration",
@@ -130,7 +130,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Constant Acceleration",
@@ -171,7 +171,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Variable Acceleration",
@@ -213,8 +213,8 @@ window.ALEVEL_QUESTIONS = [
     "group_id": "012006",
     "board": "AQA",
     "branch": "Mechanics",
-    "level": "AS",
-    "major_area": "Mechanics",
+    "level": "A",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Static Equilibrium",
@@ -254,8 +254,8 @@ window.ALEVEL_QUESTIONS = [
     "group_id": "012006",
     "board": "AQA",
     "branch": "Mechanics",
-    "level": "AS",
-    "major_area": "Mechanics",
+    "level": "A",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Static Equilibrium",
@@ -296,8 +296,8 @@ window.ALEVEL_QUESTIONS = [
     "group_id": "012006",
     "board": "AQA",
     "branch": "Mechanics",
-    "level": "AS",
-    "major_area": "Mechanics",
+    "level": "A",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Static Equilibrium",
@@ -337,8 +337,8 @@ window.ALEVEL_QUESTIONS = [
     "group_id": "012006",
     "board": "AQA",
     "branch": "Mechanics",
-    "level": "AS",
-    "major_area": "Mechanics",
+    "level": "A",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Static Equilibrium",
@@ -379,8 +379,8 @@ window.ALEVEL_QUESTIONS = [
     "group_id": "012006",
     "board": "AQA",
     "branch": "Mechanics",
-    "level": "AS",
-    "major_area": "Mechanics",
+    "level": "A",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Static Equilibrium",
@@ -422,7 +422,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Velocity-Time Graphs",
@@ -467,7 +467,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Velocity-Time Graphs",
@@ -509,7 +509,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Velocity-Time Graphs",
@@ -552,7 +552,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Velocity-Time Graphs",
@@ -594,7 +594,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Variable Acceleration",
@@ -636,7 +636,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces and Friction",
     "subtopic": [
         "Friction Limits",
@@ -681,7 +681,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces and Friction",
     "subtopic": [
         "Friction Limits",
@@ -726,7 +726,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces and Friction",
     "subtopic": [
         "Inclined Planes",
@@ -773,7 +773,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces and Friction",
     "subtopic": [
         "Friction Limits",
@@ -817,7 +817,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces and Friction",
     "subtopic": [
         "Connected Particles",
@@ -861,7 +861,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Variable Acceleration",
@@ -906,7 +906,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Variable Acceleration",
@@ -949,7 +949,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Variable Acceleration",
@@ -993,7 +993,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Variable Acceleration",
@@ -1037,7 +1037,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Variable Acceleration",
@@ -1078,7 +1078,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Vectors",
     "subtopic": [
         "3D Coordinate Geometry",
@@ -1122,7 +1122,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Vectors",
     "subtopic": [
         "3D Coordinate Geometry",
@@ -1168,7 +1168,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Vectors",
     "subtopic": [
         "3D Coordinate Geometry",
@@ -1213,7 +1213,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Vectors",
     "subtopic": [
         "3D Coordinate Geometry",
@@ -1256,7 +1256,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Vectors",
     "subtopic": [
         "3D Coordinate Geometry",
@@ -1298,7 +1298,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Projectiles",
@@ -1343,7 +1343,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Projectiles",
@@ -1386,7 +1386,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Projectiles",
@@ -1428,7 +1428,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Projectiles",
@@ -1472,7 +1472,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "A",
-    "major_area": "Mechanics",
+    "major_area": "Kinematics",
     "topic": "Kinematics",
     "subtopic": [
         "Projectiles",
@@ -1516,7 +1516,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Horizontal Towing",
@@ -1559,7 +1559,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Inclined Towing",
@@ -1601,7 +1601,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Vertical Motion",
@@ -1641,7 +1641,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Pulleys",
@@ -1682,7 +1682,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "AQA",
     "branch": "Mechanics",
     "level": "AS",
-    "major_area": "Mechanics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Pulleys on Inclined Planes",
@@ -1936,7 +1936,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Motion graphs",
+    "topic": "Motion Graphs",
     "subtopic": [
         "Velocity-time graphs",
         "Constant acceleration"
@@ -1979,7 +1979,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Motion graphs",
+    "topic": "Motion Graphs",
     "subtopic": [
         "Velocity-time graphs",
         "Constant acceleration"
@@ -2022,7 +2022,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Motion graphs",
+    "topic": "Motion Graphs",
     "subtopic": [
         "Velocity-time graphs",
         "Relative motion",
@@ -2065,7 +2065,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Motion graphs",
+    "topic": "Motion Graphs",
     "subtopic": [
         "Velocity-time graphs",
         "Variable acceleration",
@@ -2107,7 +2107,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Motion graphs",
+    "topic": "Motion Graphs",
     "subtopic": [
         "Velocity-time graphs",
         "Constant acceleration",

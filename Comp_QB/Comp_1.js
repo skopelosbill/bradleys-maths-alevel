@@ -165,7 +165,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "OCR MEI",
     "branch": "Comprehension",
     "level": "A",
-    "major_area": "Geometry and Proof",
+    "major_area": "Proof",
     "topic": "Pick's Theorem",
     "subtopic": [
         "Lattice Polygons",
@@ -365,7 +365,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "OCR MEI",
     "branch": "Comprehension",
     "level": "A",
-    "major_area": "Geometry and Proof",
+    "major_area": "Proof",
     "topic": "Pick's Theorem",
     "subtopic": [
         "Formula Inversion",
@@ -565,7 +565,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "OCR MEI",
     "branch": "Comprehension",
     "level": "A",
-    "major_area": "Geometry and Proof",
+    "major_area": "Proof",
     "topic": "Pick's Theorem",
     "subtopic": [
         "Deductive Proof",
@@ -765,7 +765,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "OCR MEI",
     "branch": "Comprehension",
     "level": "A",
-    "major_area": "Geometry and Proof",
+    "major_area": "Proof",
     "topic": "Pick's Theorem",
     "subtopic": [
         "Modelling",
@@ -965,7 +965,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "OCR MEI",
     "branch": "Comprehension",
     "level": "A",
-    "major_area": "Geometry and Proof",
+    "major_area": "Proof",
     "topic": "Pick's Theorem",
     "subtopic": [
         "Proof by Contradiction",

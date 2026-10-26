@@ -6,7 +6,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
         "Differentiation in kinematics",
         "Displacement and distance"
@@ -48,7 +48,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
         "Integration in kinematics",
         "Displacement and distance"
@@ -90,7 +90,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
         "Differentiation in kinematics",
         "Displacement and distance"
@@ -132,7 +132,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
         "Differentiation in kinematics",
         "Relative motion"
@@ -174,7 +174,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "AS",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
         "Integration in kinematics",
         "Differentiation in kinematics"
@@ -215,8 +215,8 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Forces and Newton's laws",
-    "topic": "Connected particles",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
     "subtopic": [
         "Fixed pulley systems",
         "Newton's second law"
@@ -258,8 +258,8 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Forces and Newton's laws",
-    "topic": "Connected particles",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
     "subtopic": [
         "Pulley on a horizontal table",
         "Newton's second law",
@@ -301,8 +301,8 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Forces and Newton's laws",
-    "topic": "Connected particles",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
     "subtopic": [
         "Pulley on a rough table",
         "Friction",
@@ -344,8 +344,8 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Forces and Newton's laws",
-    "topic": "Connected particles",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
     "subtopic": [
         "Pulley on an inclined plane",
         "Resolving forces",
@@ -385,8 +385,8 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Kinematics",
-    "topic": "Connected particles",
+    "major_area": "Forces and Newton's Laws",
+    "topic": "Connected Particles",
     "subtopic": [
         "Fixed pulley systems",
         "Multi-stage motion",
@@ -431,7 +431,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
         "Integration in kinematics",
         "2D motion with vectors"
@@ -472,7 +472,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
         "Integration in kinematics",
         "2D motion with vectors"
@@ -515,7 +515,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
         "Integration in kinematics",
         "2D motion with vectors"
@@ -557,7 +557,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
         "Differentiation in kinematics",
         "2D motion with vectors",
@@ -601,7 +601,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
         "Collisions in 2D",
         "2D motion with vectors",
@@ -645,7 +645,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Friction",
     "subtopic": [
         "Newton's second law",
@@ -689,7 +689,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Friction",
     "subtopic": [
         "Newton's second law",
@@ -732,7 +732,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Friction",
     "subtopic": [
         "Newton's second law",
@@ -775,7 +775,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Friction",
     "subtopic": [
         "Pulley on an inclined plane",
@@ -819,7 +819,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Friction",
     "subtopic": [
         "Resolving forces",
@@ -864,7 +864,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Constant acceleration",
+    "topic": "Constant Acceleration",
     "subtopic": [
         "2D motion with vectors",
         "Kinematics equations (SUVAT)"
@@ -907,7 +907,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Constant acceleration",
+    "topic": "Constant Acceleration",
     "subtopic": [
         "2D motion with vectors",
         "Kinematics equations (SUVAT)"
@@ -950,7 +950,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Constant acceleration",
+    "topic": "Constant Acceleration",
     "subtopic": [
         "2D motion with vectors",
         "Kinematics equations (SUVAT)"
@@ -991,7 +991,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Constant acceleration",
+    "topic": "Constant Acceleration",
     "subtopic": [
         "2D motion with vectors",
         "Bearings in kinematics"
@@ -1032,7 +1032,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Constant acceleration",
+    "topic": "Constant Acceleration",
     "subtopic": [
         "Collisions in 2D",
         "2D motion with vectors",
@@ -1607,7 +1607,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Vectors",
     "subtopic": [
         "Static equilibrium",
@@ -1689,7 +1689,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Newton's Laws of Motion",
@@ -1730,7 +1730,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Newton's Laws of Motion",
@@ -1772,7 +1772,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Newton's Laws of Motion",
@@ -1814,7 +1814,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Newton's Laws of Motion",
@@ -1858,7 +1858,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Newton's Laws of Motion",
@@ -1901,7 +1901,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Constant Acceleration",
@@ -1943,7 +1943,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Constant Acceleration",
@@ -1986,7 +1986,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Constant Acceleration",
@@ -2029,7 +2029,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Constant Acceleration",
@@ -2072,7 +2072,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Constant Acceleration",

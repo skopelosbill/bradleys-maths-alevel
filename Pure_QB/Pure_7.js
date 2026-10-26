@@ -220,11 +220,8 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Differentiation and Integration",
-    "topic": [
-        "Differentiation",
-        "Integration"
-    ],
+    "major_area": "Differentiation",
+    "topic": "Differentiation and Integration",
     "subtopic": [
       "Power Rule",
       "Indefinite Integration",
@@ -772,7 +769,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Pure",
     "level": "AS",
     "major_area": "Integration",
-    "topic": "DefiniteIntegration",
+    "topic": "Definite Integration",
     "subtopic": [
       "Curved Graphs",
       "Area between a Curve and a Line"
@@ -1392,7 +1389,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Pure",
     "level": "AS",
     "major_area": "Trigonometry",
-    "topic": "3 D Trigonometry",
+    "topic": "3D Trigonometry",
     "subtopic": [
       "Angle between a line and a plane"
     ],
@@ -1473,7 +1470,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra",
+    "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
     "subtopic": [
       "Binomial Expansion"
@@ -1513,7 +1510,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
-   "major_area": "Algebra",
+   "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
     "subtopic": [
       "Binomial Expansion"
@@ -1554,7 +1551,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra",
+    "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
     "subtopic": [
       "Binomial Expansion"
@@ -1594,7 +1591,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra",
+    "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
     "subtopic": [
       "Binomial Expansion"
@@ -1636,7 +1633,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "AS",
-    "major_area": "Algebra",
+    "major_area": "Algebra and Functions",
     "topic": "Sequences and Series",
     "subtopic": [
       "Binomial Expansion",

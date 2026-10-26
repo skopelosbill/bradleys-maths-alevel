@@ -440,7 +440,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Trigonometry",
         "subtopic": [
                 "Cosine Rule"
@@ -480,9 +480,9 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Trigonometric Functions",
-        "topic": "Trigonometry",
+        "topic": "Trigonometric Functions",
         "subtopic": [
                 "Cosine Rule",
                 "Trig Area Formula"
@@ -522,7 +522,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Trigonometric Functions",
         "subtopic": [
                 "Sine Rule",
@@ -565,7 +565,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Trigonometry",
         "subtopic": [
                 "Pythagoras",
@@ -608,7 +608,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Trigonometric Functions",
         "subtopic": [
                 "Bearings",
@@ -848,7 +848,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Trigonometric Functions",
         "subtopic": [
                 "Small Angle Approximation"
@@ -887,7 +887,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Trigonometric Functions",
         "subtopic": [
                "Small Angle Approximation"
@@ -929,7 +929,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Trigonometric Functions",
         "subtopic": [
                 "Small Angle Approximation"
@@ -968,7 +968,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Trigonometric Functions",
         "subtopic": [
                 "Small Angle Approximation"
@@ -1009,7 +1009,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "AS",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Trigonometric Functions",
         "subtopic": [
                 "Small Angle Approximation"
@@ -1828,7 +1828,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Differentiation",
+        "major_area": "Coordinate Geometry",
         "topic": "Straight Lines",
         "subtopic": [
                 "Tangents and Normals"
@@ -1870,7 +1870,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Differentiation",
+        "major_area": "Coordinate Geometry",
         "topic": "Straight Lines",
         "subtopic": [
                 "Tangents and Normals"
@@ -1953,7 +1953,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Parametric Equations",
         "subtopic": [
                 "Trigonometry"
@@ -1993,7 +1993,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Parametric Equations",
         "subtopic": [
                 "Exponential and Logarithmic Functions and Graphs"
@@ -2035,7 +2035,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Parametric Equations",
         "subtopic": [
                 "Algebraic Methods"
@@ -2075,7 +2075,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "OCR MEI",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Coordinate Geometry",
+        "major_area": "Trigonometry",
         "topic": "Parametric Equations",
         "subtopic": [
                 "Trigonometry"

@@ -1228,7 +1228,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "AQA",
     "level": "A",
-    "major_area": "Statistical Hypothesis Testing",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "The Large Data Set",
     "subtopic": [
         "Normal Hypothesis Testing",
@@ -1352,7 +1352,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "AQA",
     "level": "A",
-    "major_area": "The Large Data Set",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "The Large Data Set",
     "subtopic": [
         "Data Limitations",
@@ -1639,7 +1639,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "The Large Data Set",
+    "major_area": "Statistical Distributions",
     "topic": "Discrete Probability Distributions",
     "subtopic": [
         "Discrete Uniform Distribution",
@@ -1764,7 +1764,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "The Large Data Set",
+    "major_area": "Statistical Distributions",
     "topic": "Discrete Probability Distributions",
     "subtopic": [
         "Beaufort Scale",
@@ -1846,7 +1846,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Hypothesis Testing",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Linear Regression",
     "subtopic": [
         "PMCC Hypothesis Test",
@@ -1889,7 +1889,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Hypothesis Testing",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Linear Regression",
     "subtopic": [
         "Regression Predictions",
@@ -1931,7 +1931,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Hypothesis Testing",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Linear Regression",
     "subtopic": [
         "Invariance of PMCC",
@@ -1972,7 +1972,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Distributions",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Linear Regression",
     "subtopic": [
         "Exponential Models",
@@ -2014,7 +2014,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Hypothesis Testing",
+    "major_area": "Data Presentation and Interpretation",
     "topic": "Correlation and Linear Regression",
     "subtopic": [
         "Regression Directionality",

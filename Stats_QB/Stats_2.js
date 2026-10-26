@@ -216,7 +216,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Data Presentation and Interpretation",
+    "major_area": "Statistical Sampling",
     "topic": "Statistical Sampling and Box Plots",
     "subtopic": [
         "Opportunity Sampling",
@@ -261,7 +261,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Data Presentation and Interpretation",
+    "major_area": "Statistical Sampling",
     "topic": "Statistical Sampling and Box Plots",
     "subtopic": [
         "Comparative Box Plots",
@@ -303,7 +303,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Data Presentation and Interpretation",
+    "major_area": "Statistical Sampling",
     "topic": "Statistical Sampling and Box Plots",
     "subtopic": [
         "Quartiles from Discrete Data",
@@ -344,7 +344,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Data Presentation and Interpretation",
+    "major_area": "Statistical Sampling",
     "topic": "Statistical Sampling and Box Plots",
     "subtopic": [
         "Linear Interpolation",
@@ -386,7 +386,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "AS",
-    "major_area": "Data Presentation and Interpretation",
+    "major_area": "Statistical Sampling",
     "topic": "Statistical Sampling and Box Plots",
     "subtopic": [
         "Correcting Summary Statistics",
@@ -427,7 +427,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Distributions",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "The Normal Distribution and Hypothesis Testing",
     "subtopic": [
         "Conditional Normal Probability",
@@ -469,7 +469,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Distributions",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "The Normal Distribution and Hypothesis Testing",
     "subtopic": [
         "Parallel System Reliability",
@@ -554,7 +554,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "Edexcel",
     "level": "A",
-    "major_area": "Statistical Distributions",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "The Normal Distribution and Hypothesis Testing",
     "subtopic": [
         "Sum of Normal Variables",
@@ -1228,7 +1228,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
         "One-Tailed Test",
@@ -1268,7 +1268,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
         "Upper-Tailed Test",
@@ -1308,7 +1308,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
         "Critical Region",
@@ -1349,7 +1349,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
         "Two-Tailed Test",
@@ -1390,7 +1390,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "AS",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
         "Two-Tailed Critical Region",
@@ -1796,7 +1796,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Distributions",
     "topic": "The Normal Distribution",
     "subtopic": [
         "Sample Mean Distribution",
@@ -1838,7 +1838,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
         "Rejection Region",
@@ -1878,7 +1878,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
         "Lower-Tailed Rejection Region",
@@ -1919,7 +1919,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
         "Two-Tailed Rejection Region",
@@ -1960,7 +1960,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
         "Normal Approximation to Rejection Region",
@@ -2000,7 +2000,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Statistics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Hypothesis Testing",
+    "major_area": "Statistical Hypothesis Testing",
     "topic": "Binomial Hypothesis Testing",
     "subtopic": [
         "Type II Error",

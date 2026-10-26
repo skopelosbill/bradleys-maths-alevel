@@ -5,7 +5,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Mean and Standard Deviation",
@@ -44,7 +44,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Linear Coding",
@@ -85,7 +85,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Frequency Table with Unknown",
@@ -127,7 +127,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Pooled Mean",
@@ -169,7 +169,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Expected Value",
@@ -211,7 +211,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "Binomial Distribution",
   "subtopic": [
     "Binomial Probability Formula",
@@ -250,7 +250,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "Binomial Distribution",
   "subtopic": [
     "Interval Probabilities",
@@ -292,7 +292,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "Binomial Distribution",
   "subtopic": [
     "Conditional Binomial Probability",
@@ -332,7 +332,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "Binomial Distribution",
   "subtopic": [
     "Finding Minimum Sample Size n",
@@ -373,7 +373,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "Binomial Distribution",
   "subtopic": [
     "Nested Binomial Models",
@@ -415,7 +415,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Stem-and-Leaf Diagrams",
@@ -458,7 +458,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Back-to-Back Stem-and-Leaf",
@@ -500,7 +500,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Decimal Stem-and-Leaf",
@@ -542,7 +542,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Measures of Central Tendency",
@@ -585,7 +585,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR MEI",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Statistical Measures",
   "subtopic": [
     "Five-Number Summary",
@@ -628,7 +628,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Normal Distribution",
   "subtopic": [
     "Distribution Parameters",
@@ -669,7 +669,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Normal Distribution",
   "subtopic": [
     "Inverse Normal",
@@ -709,7 +709,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Normal Distribution",
   "subtopic": [
     "Sampling Distributions",
@@ -750,7 +750,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Normal Distribution",
   "subtopic": [
     "Sampling Distributions",
@@ -791,7 +791,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Normal Distribution",
   "subtopic": [
     "Normal Approximation",
@@ -832,7 +832,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Discrete Random Variables",
   "subtopic": [
     "Probability Mass Functions",
@@ -872,7 +872,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Discrete Random Variables",
   "subtopic": [
     "Expectation",
@@ -914,7 +914,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Discrete Random Variables",
   "subtopic": [
     "Sum of Random Variables",
@@ -955,7 +955,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Discrete Random Variables",
   "subtopic": [
     "Expectation",
@@ -995,7 +995,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Discrete Random Variables",
   "subtopic": [
     "Reciprocal Distribution",
@@ -1241,7 +1241,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Normal Distribution",
   "subtopic": [
     "Model Evaluation",
@@ -1281,7 +1281,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Normal Distribution",
   "subtopic": [
     "Inverse Normal",
@@ -1321,7 +1321,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Hypothesis Testing",
   "topic": "Hypothesis Testing",
   "subtopic": [
     "Statistical Power",
@@ -1361,7 +1361,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Hypothesis Testing",
   "topic": "Hypothesis Testing",
   "subtopic": [
     "Confidence Intervals",
@@ -1401,7 +1401,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Statistical Hypothesis Testing",
   "topic": "Hypothesis Testing",
   "subtopic": [
     "Difference of Two Means",
@@ -1440,7 +1440,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Data Presentation and Bivariate Data",
   "subtopic": [
     "Cumulative Frequency",
@@ -1482,7 +1482,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Data Presentation and Bivariate Data",
   "subtopic": [
     "Histograms",
@@ -1522,7 +1522,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Data Presentation and Bivariate Data",
   "subtopic": [
     "Box Plots",
@@ -1562,7 +1562,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Data Presentation and Bivariate Data",
   "subtopic": [
     "Scatter Diagrams",
@@ -1603,7 +1603,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "OCR",
   "level": "A",
-  "major_area": "Statistics",
+  "major_area": "Data Presentation and Interpretation",
   "topic": "Data Presentation and Bivariate Data",
   "subtopic": [
     "Cumulative Frequency",
@@ -1644,7 +1644,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Binomial Distribution",
   "subtopic": [
     "Binomial Probability",
@@ -1683,7 +1683,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Binomial Distribution",
   "subtopic": [
     "Cumulative Probability",
@@ -1724,7 +1724,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Binomial Distribution",
   "subtopic": [
     "Modelling Assumptions",
@@ -1764,7 +1764,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Binomial Distribution",
   "subtopic": [
     "Mean and Variance",
@@ -1803,7 +1803,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Statistical Distributions",
   "topic": "The Binomial Distribution",
   "subtopic": [
     "Two-Stage Binomial",
@@ -1843,7 +1843,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Venn Diagrams and Probability",
   "subtopic": [
     "Set Notation",
@@ -1884,7 +1884,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Venn Diagrams and Probability",
   "subtopic": [
     "Conditional Probability",
@@ -1925,7 +1925,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Venn Diagrams and Probability",
   "subtopic": [
     "Algebraic Venn Diagrams",
@@ -1966,7 +1966,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Venn Diagrams and Probability",
   "subtopic": [
     "Mutually Exclusive Events",
@@ -2008,7 +2008,7 @@ window.ALEVEL_QUESTIONS = [
   "branch": "Statistics",
   "board": "WJEC",
   "level": "AS",
-  "major_area": "Statistics",
+  "major_area": "Probability",
   "topic": "Venn Diagrams and Probability",
   "subtopic": [
     "Subset Relationships",

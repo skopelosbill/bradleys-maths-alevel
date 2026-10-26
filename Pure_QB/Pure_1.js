@@ -211,10 +211,7 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
-                "topic": [
-                        "Trigonometric Functions",
-                        "Numerical Methods"
-                ],
+                "topic": "Trigonometric Functions and Numerical Methods",
                 "subtopic": [
                         "Location of Roots",
                         "Small Angle Approximation"
@@ -256,10 +253,7 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
-                "topic": [
-                        "Trigonometric Functions",
-                        "Numerical Methods"
-                ],
+                "topic": "Trigonometric Functions and Numerical Methods",
                 "subtopic": [
                         "Location of Roots",
                         "Small Angle Approximation"
@@ -301,10 +295,7 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
-                "topic": [
-                        "Trigonometric Functions",
-                        "Numerical Methods"
-                ],
+                "topic": "Trigonometric Functions and Numerical Methods",
                 "subtopic": [
                         "Location of Roots",
                         "Small Angle Approximation"
@@ -347,10 +338,7 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
-                "topic": [
-                        "Exponential Functions",
-                        "Numerical Methods"
-                ],
+                "topic": "Exponential Functions and Numerical Methods",
                 "subtopic": [
                         "Location of Roots",
                         "Small Angle Approximation"
@@ -391,10 +379,7 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Algebra and Functions",
-                "topic": [
-                        "Trigonometric Functions",
-                        "Numerical Methods"
-                ],
+                "topic": "Trigonometric Functions and Numerical Methods",
                 "subtopic": [
                         "Location of Roots",
                         "Small Angle Approximation"

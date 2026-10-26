@@ -646,7 +646,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Differentiation",
+                "major_area": "Coordinate Geometry",
                 "topic": "Circles",
                 "subtopic": [
                         "Circle Geometry",
@@ -779,7 +779,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Differentiation",
+                "major_area": "Coordinate Geometry",
                 "topic": "Circles",
                 "subtopic": [
                         "Circle Geometry",
@@ -823,7 +823,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Differentiation",
+                "major_area": "Coordinate Geometry",
                 "topic": "Circles",
                 "subtopic": [
                         "Circle Geometry",

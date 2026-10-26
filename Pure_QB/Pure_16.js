@@ -204,7 +204,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometry",
     "subtopic": [
         "Circular Measure",
@@ -245,7 +245,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometry",
     "subtopic": [
         "Circular Measure",
@@ -287,7 +287,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometry",
     "subtopic": [
         "Circular Measure",
@@ -328,7 +328,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometry",
     "subtopic": [
         "Circular Measure",
@@ -369,7 +369,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Geometry",
+    "major_area": "Trigonometry",
     "topic": "Trigonometry",
     "subtopic": [
         "Circular Measure",
@@ -411,7 +411,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Pure Mathematics",
+    "major_area": "Algebra and Functions",
     "topic": "Trigonometry",
     "subtopic": [
         "Double-Angle Identities",
@@ -451,7 +451,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Pure Mathematics",
+    "major_area": "Algebra and Functions",
     "topic": "Trigonometry",
     "subtopic": [
         "Double-Angle Identities",
@@ -492,7 +492,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Pure Mathematics",
+    "major_area": "Algebra and Functions",
     "topic": "Trigonometry",
     "subtopic": [
         "Trigonometric Identities",
@@ -532,7 +532,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Pure Mathematics",
+    "major_area": "Algebra and Functions",
     "topic": "Trigonometry",
     "subtopic": [
         "Trigonometric Identities",
@@ -572,7 +572,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Pure Mathematics",
+    "major_area": "Algebra and Functions",
     "topic": "Trigonometry",
     "subtopic": [
         "Trigonometric Identities",
@@ -1457,7 +1457,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Differential Equations",
+    "major_area": "Integration",
     "topic": "First Order Differential Equations",
     "subtopic": [
         "Separation of Variables",
@@ -1499,7 +1499,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Differential Equations",
+    "major_area": "Integration",
     "topic": "First Order Differential Equations",
     "subtopic": [
         "Separation of Variables",
@@ -1541,7 +1541,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "CCEA",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Differential Equations",
+    "major_area": "Integration",
     "topic": "First Order Differential Equations",
     "subtopic": [
         "Separation of Variables",

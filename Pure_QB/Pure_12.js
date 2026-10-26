@@ -798,7 +798,7 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
-                "topic": "logarithms",
+                "topic": "Logarithms",
                 "subtopic": [
                         "Quotient Rule"
                 ],
@@ -878,7 +878,7 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Differentiation",
-                "topic": "Product rule",
+                "topic": "Product Rule",
                 "subtopic": [
                         "Limits"
                 ],
@@ -1082,7 +1082,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Differentiation",
+                "major_area": "Coordinate Geometry",
                 "topic": "Circles",
                 "subtopic": [
                         "Circle Geometry",

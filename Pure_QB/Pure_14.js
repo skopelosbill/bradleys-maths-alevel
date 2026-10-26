@@ -630,7 +630,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "WJEC",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Geometry",
+        "major_area": "Trigonometry",
         "topic": "Circular Measure",
         "subtopic": [
                 "Arc Length and Sector Area"
@@ -670,7 +670,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "WJEC",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Geometry",
+        "major_area": "Trigonometry",
         "topic": "Circular Measure",
         "subtopic": [
                 "Sector Perimeter and Area"
@@ -712,7 +712,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "WJEC",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Geometry",
+        "major_area": "Trigonometry",
         "topic": "Circular Measure",
         "subtopic": [
                 "Chord Length and Segment Area"
@@ -754,7 +754,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "WJEC",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Geometry",
+        "major_area": "Trigonometry",
         "topic": "Circular Measure",
         "subtopic": [
                 "Cone Geometry",
@@ -796,7 +796,7 @@ window.ALEVEL_QUESTIONS = [
         "board": "WJEC",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Geometry",
+        "major_area": "Trigonometry",
         "topic": "Circular Measure",
         "subtopic": [
                 "Intersecting Circles",
@@ -1449,7 +1449,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and Functions",
+    "major_area": "Sequences and Series",
     "topic": "Binomial Expansion",
     "subtopic": [
         "Negative Fractional Indices",
@@ -1492,7 +1492,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and Functions",
+    "major_area": "Sequences and Series",
     "topic": "Binomial Expansion",
     "subtopic": [
         "Fractional Indices",
@@ -1534,7 +1534,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and Functions",
+    "major_area": "Sequences and Series",
     "topic": "Binomial Expansion",
     "subtopic": [
         "Negative Indices",
@@ -1576,7 +1576,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and Functions",
+    "major_area": "Sequences and Series",
     "topic": "Binomial Expansion",
     "subtopic": [
         "Partial Fractions",
@@ -1619,7 +1619,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "WJEC",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Algebra and Functions",
+    "major_area": "Sequences and Series",
     "topic": "Binomial Expansion",
     "subtopic": [
         "Negative Indices",

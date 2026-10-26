@@ -5,7 +5,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Sequences & Series",
+                "major_area": "Sequences and Series",
                 "topic": "Series",
                 "subtopic": [
                         "Geometric Series"
@@ -49,7 +49,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Sequences & Series",
+                "major_area": "Sequences and Series",
                 "topic": "Series",
                 "subtopic": [
                         "Geometric Series"
@@ -93,7 +93,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Sequences & Series",
+                "major_area": "Sequences and Series",
                 "topic": "Series",
                 "subtopic": [
                         "Geometric Series"
@@ -137,7 +137,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Sequences & Series",
+                "major_area": "Sequences and Series",
                 "topic": "Series",
                 "subtopic": [
                         "Geometric Series"
@@ -181,7 +181,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Sequences & Series",
+                "major_area": "Sequences and Series",
                 "topic": "Series",
                 "subtopic": [
                         "Geometric Series"
@@ -225,7 +225,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Product Rule",
@@ -268,7 +268,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Product Rule",
@@ -311,7 +311,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Product Rule",
@@ -354,7 +354,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Product Rule",
@@ -396,7 +396,7 @@ window.ALEVEL_QUESTIONS = [
         "branch": "Pure",
                 "group_id": "004056",
                 "board": "Edexcel",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "level": "A",
                 "topic": "Differentiation",
                 "subtopic": [
@@ -440,7 +440,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Integration",
                 "topic": "Integration",
                 "subtopic": [
                         "Area Under a Curve",
@@ -489,7 +489,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Integration",
                 "topic": "Integration",
                 "subtopic": [
                         "Area Under a Curve",
@@ -538,7 +538,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Integration",
                 "topic": "Integration",
                 "subtopic": [
                         "Area Under a Curve",
@@ -587,7 +587,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Integration",
                 "topic": "Integration",
                 "subtopic": [
                         "Area Under a Curve",
@@ -636,7 +636,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "Edexcel",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Integration",
                 "topic": "Integration",
                 "subtopic": [
                         "Area Under a Curve",
@@ -685,7 +685,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -731,7 +731,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -777,7 +777,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -823,7 +823,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -869,7 +869,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "Edexcel",
     "branch": "Pure",
     "level": "A",
-    "major_area": "Calculus",
+    "major_area": "Differentiation",
     "topic": "Differentiation",
     "subtopic": [
       "Implicit Differentiation",
@@ -915,7 +915,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Power Rule"
@@ -954,7 +954,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Power Rule"
@@ -993,7 +993,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Power Rule"
@@ -1032,7 +1032,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Power Rule"
@@ -1071,7 +1071,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Power Rule"
@@ -1110,7 +1110,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Algebra and functions",
+                "major_area": "Algebra and Functions",
                 "topic": "Graph transformations",
                 "subtopic": [
                         "Transformations of Graphs"
@@ -1149,7 +1149,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Algebra and functions",
+                "major_area": "Algebra and Functions",
                 "topic": "Graph transformations",
                 "subtopic": [
                         "Transformations of Graphs"
@@ -1188,7 +1188,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Algebra and functions",
+                "major_area": "Algebra and Functions",
                 "topic": "Graph transformations",
                 "subtopic": [
                         "Transformations of Graphs"
@@ -1227,7 +1227,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Algebra and functions",
+                "major_area": "Algebra and Functions",
                 "topic": "Graph transformations",
                 "subtopic": [
                         "Transformations of Graphs"
@@ -1266,7 +1266,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Algebra and functions",
+                "major_area": "Algebra and Functions",
                 "topic": "Graph transformations",
                 "subtopic": [
                         "Transformations of Graphs"
@@ -1305,7 +1305,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Sequences and series",
+                "major_area": "Sequences and Series",
                 "topic": "Sequences",
                 "subtopic": [
                         "Periodic Sequences"
@@ -1344,7 +1344,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Sequences and series",
+                "major_area": "Sequences and Series",
                 "topic": "Sequences",
                 "subtopic": [
                         "Periodic Sequences"
@@ -1383,7 +1383,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Sequences and series",
+                "major_area": "Sequences and Series",
                 "topic": "Sequences",
                 "subtopic": [
                         "Periodic Sequences"
@@ -1422,7 +1422,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Sequences and series",
+                "major_area": "Sequences and Series",
                 "topic": "Sequences",
                 "subtopic": [
                         "Periodic Sequences"
@@ -1461,7 +1461,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Sequences and series",
+                "major_area": "Sequences and Series",
                 "topic": "Sequences",
                 "subtopic": [
                         "Periodic Sequences"
@@ -1500,7 +1500,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Algebra and functions",
+                "major_area": "Algebra and Functions",
                 "topic": "Functions",
                 "subtopic": [
                         "Inverse Functions"
@@ -1540,7 +1540,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Algebra and functions",
+                "major_area": "Algebra and Functions",
                 "topic": "Functions",
                 "subtopic": [
                         "Inverse Functions"
@@ -1580,7 +1580,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Algebra and functions",
+                "major_area": "Algebra and Functions",
                 "topic": "Functions",
                 "subtopic": [
                         "Inverse Functions"
@@ -1620,7 +1620,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Algebra and functions",
+                "major_area": "Algebra and Functions",
                 "topic": "Functions",
                 "subtopic": [
                         "Inverse Functions"
@@ -1660,7 +1660,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Algebra and functions",
+                "major_area": "Algebra and Functions",
                 "topic": "Functions",
                 "subtopic": [
                         "Inverse Functions"
@@ -1700,7 +1700,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Parametric Differentiation",
@@ -1741,7 +1741,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Parametric Differentiation",
@@ -1782,7 +1782,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Parametric Differentiation",
@@ -1823,7 +1823,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Parametric Differentiation",
@@ -1864,7 +1864,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "AQA",
                 "branch": "Pure",
                 "level": "A",
-                "major_area": "Calculus",
+                "major_area": "Differentiation",
                 "topic": "Differentiation",
                 "subtopic": [
                         "Parametric Differentiation",
@@ -1905,8 +1905,8 @@ window.ALEVEL_QUESTIONS = [
         "board": "AQA",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Sequences and series",
-        "topic": "Binomial expansion",
+        "major_area": "Sequences and Series",
+        "topic": "Binomial Expansion",
         "subtopic": [
                 "Binomial Expansion",
                 "Numerical Integration"
@@ -1947,8 +1947,8 @@ window.ALEVEL_QUESTIONS = [
         "board": "AQA",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Sequences and series",
-        "topic": "Binomial expansion",
+        "major_area": "Sequences and Series",
+        "topic": "Binomial Expansion",
         "subtopic": [
                 "Binomial Expansion",
                 "Numerical Integration"
@@ -1989,8 +1989,8 @@ window.ALEVEL_QUESTIONS = [
         "board": "AQA",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Sequences and series",
-        "topic": "Binomial expansion",
+        "major_area": "Sequences and Series",
+        "topic": "Binomial Expansion",
         "subtopic": [
                 "Binomial Expansion",
                 "Numerical Integration"
@@ -2031,8 +2031,8 @@ window.ALEVEL_QUESTIONS = [
         "board": "AQA",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Sequences and series",
-        "topic": "Binomial expansion",
+        "major_area": "Sequences and Series",
+        "topic": "Binomial Expansion",
         "subtopic": [
                 "Binomial Expansion",
                 "Numerical Integration"
@@ -2073,8 +2073,8 @@ window.ALEVEL_QUESTIONS = [
         "board": "AQA",
         "branch": "Pure",
         "level": "A",
-        "major_area": "Sequences and series",
-        "topic": "Binomial expansion",
+        "major_area": "Sequences and Series",
+        "topic": "Binomial Expansion",
         "subtopic": [
                 "Binomial Expansion",
                 "Numerical Integration"

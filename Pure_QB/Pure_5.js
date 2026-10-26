@@ -1139,7 +1139,7 @@ window.ALEVEL_QUESTIONS = [
                 "branch": "Pure",
                 "level": "A",
                 "major_area": "Sequences and Series",
-                "topic": "Geometric Seqquence",
+                "topic": "Geometric Sequence",
                 "subtopic": [
                         "Sum to infinity of a GP"
                 ],
@@ -1676,7 +1676,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Differentiation",
+                "major_area": "Coordinate Geometry",
                 "topic": "Circles",
                 "subtopic": [
                         "Circle Geometry",
@@ -1722,7 +1722,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Differentiation",
+                "major_area": "Coordinate Geometry",
                 "topic": "Circles",
                 "subtopic": [
                         "Circle Geometry",
@@ -1764,7 +1764,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Differentiation",
+                "major_area": "Coordinate Geometry",
                 "topic": "Circles",
                 "subtopic": [
                         "Circle Geometry",
@@ -1847,7 +1847,7 @@ window.ALEVEL_QUESTIONS = [
                 "board": "OCR MEI",
                 "branch": "Pure",
                 "level": "AS",
-                "major_area": "Differentiation",
+                "major_area": "Coordinate Geometry",
                 "topic": "Circles",
                 "subtopic": [
                         "Algebraic Methods",

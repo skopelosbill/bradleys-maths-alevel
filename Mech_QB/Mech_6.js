@@ -5,7 +5,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Rigid Body Equilibrium",
@@ -46,7 +46,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Rigid Body Equilibrium",
@@ -87,7 +87,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Knife-Edge Supports",
@@ -128,7 +128,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Smooth Hinges",
@@ -169,7 +169,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Ladders",
@@ -210,7 +210,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Moments",
     "topic": "Momentum and Impulse",
     "subtopic": [
         "Conservation of Momentum",
@@ -250,7 +250,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Moments",
     "topic": "Momentum and Impulse",
     "subtopic": [
         "Opposing Collisions",
@@ -291,7 +291,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Moments",
     "topic": "Momentum and Impulse",
     "subtopic": [
         "Non-Coalescing Collisions",
@@ -332,7 +332,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Moments",
     "topic": "Momentum and Impulse",
     "subtopic": [
         "Newton's Law of Restitution",
@@ -373,7 +373,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Moments",
     "topic": "Momentum and Impulse",
     "subtopic": [
         "Rebound from Wall",
@@ -821,7 +821,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Ladders",
@@ -863,7 +863,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Ladders",
@@ -903,7 +903,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Non-Uniform Ladders",
@@ -943,7 +943,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Ladders",
@@ -984,7 +984,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "CCEA",
     "level": "A",
-    "major_area": "Statics",
+    "major_area": "Moments",
     "topic": "Moments",
     "subtopic": [
         "Rough Wall and Floor",

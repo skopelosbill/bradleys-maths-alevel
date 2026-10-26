@@ -49,17 +49,23 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   }
 
   Future<void> _loadTaxonomy() async {
-    final areas = await _dbHelper.getMajorAreas(branch: _filter.branch);
-    final topics = await _dbHelper.getTopics(
-      branch: _filter.branch,
-      majorArea: _filter.majorArea,
-    );
+  final areas = await _dbHelper.getMajorAreas(
+    branch: _filter.branch,
+    level: _filter.level, // <--- Pass the level!
+    board: _filter.board, // <--- Pass the board!
+  );
+  final topics = await _dbHelper.getTopics(
+    branch: _filter.branch,
+    level: _filter.level, // <--- Pass the level!
+    board: _filter.board, // <--- Pass the board!
+    majorArea: _filter.majorArea,
+  );
 
-    setState(() {
-      _majorAreas = ['Random', ...areas];
-      _topics = ['Random', ...topics];
-    });
-  }
+  setState(() {
+    _majorAreas = ['Random', ...areas];
+    _topics = ['Random', ...topics];
+  });
+}
 
   void _onBranchSelected(String branchName) async {
     setState(() {
@@ -156,6 +162,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                       setState(() {
                         _filter.board = b == 'Random' ? null : b;
                       });
+                       _loadTaxonomy();
                     }
                    },
                  );

@@ -5,7 +5,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Kinematics",
     "topic": "Vectors in kinematics",
     "subtopic": [
         "Newton's second law with vectors",
@@ -86,7 +86,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Forces and Newton's laws",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces in 2 dimensions",
     "subtopic": [
         "Newton's second law with vectors",
@@ -128,7 +128,7 @@ window.ALEVEL_QUESTIONS = [
     "board": "OCR",
     "level": "A",
     "major_area": "Kinematics",
-    "topic": "Variable acceleration",
+    "topic": "Variable Acceleration",
     "subtopic": [
         "Variable force with vectors",
         "Integration in kinematics",
@@ -212,7 +212,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Rigid Bodies in Equilibrium",
     "subtopic": [
         "Parallel Forces",
@@ -254,7 +254,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Rigid Bodies in Equilibrium",
     "subtopic": [
         "Non-Uniform Rods",
@@ -295,7 +295,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Rigid Bodies in Equilibrium",
     "subtopic": [
         "Moving Loads",
@@ -337,7 +337,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Rigid Bodies in Equilibrium",
     "subtopic": [
         "Cables",
@@ -378,7 +378,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Rigid Bodies in Equilibrium",
     "subtopic": [
         "Smooth Hinge",
@@ -420,7 +420,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Forces and Equilibrium",
     "subtopic": [
         "Coplanar Forces",
@@ -461,7 +461,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Forces and Equilibrium",
     "subtopic": [
         "Non-Perpendicular Forces",
@@ -503,7 +503,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Forces and Equilibrium",
     "subtopic": [
         "Inclined Planes",
@@ -544,7 +544,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Statics and Moments",
+    "major_area": "Moments",
     "topic": "Forces and Equilibrium",
     "subtopic": [
         "Suspended Particles",
@@ -585,7 +585,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Dynamics and Equilibrium",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Forces and Newton's Second Law",
     "subtopic": [
         "Coplanar Forces",
@@ -837,7 +837,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Dynamics and Statics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles and Friction",
     "subtopic": [
         "Inclined Plane",
@@ -878,7 +878,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Inclined Plane",
@@ -919,7 +919,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Kinematics",
     "topic": "Connected Particles and Multi-Stage Motion",
     "subtopic": [
         "Horizontal Surface",
@@ -960,7 +960,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Dynamics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Double Inclined Plane",
@@ -1001,7 +1001,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR",
     "level": "A",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Smooth Inclined Plane",
@@ -1125,7 +1125,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and Vector Kinematics",
     "subtopic": [
         "Column Vectors",
@@ -1208,7 +1208,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and 2D Motion",
     "subtopic": [
         "Resultant Force",
@@ -1375,7 +1375,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Forces and Newton's Laws",
     "topic": "Connected Particles",
     "subtopic": [
         "Multi-Stage Motion",
@@ -1460,7 +1460,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and Motion in a Straight Line",
     "subtopic": [
         "Multi-Stage Motion",
@@ -1502,7 +1502,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and Motion in a Straight Line",
     "subtopic": [
         "Driving Force",
@@ -1545,7 +1545,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and Motion in a Straight Line",
     "subtopic": [
         "Multi-Stage Kinematics",
@@ -1587,7 +1587,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Motion under Gravity and Newton's Second Law",
     "subtopic": [
         "Powered Vertical Ascent",
@@ -1629,7 +1629,7 @@ window.ALEVEL_QUESTIONS = [
     "branch": "Mechanics",
     "board": "OCR MEI",
     "level": "AS",
-    "major_area": "Dynamics and Kinematics",
+    "major_area": "Kinematics",
     "topic": "Newton's Second Law and Stopping Distances",
     "subtopic": [
         "Reaction Time",
