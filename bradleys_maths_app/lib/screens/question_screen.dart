@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../models/filter_state.dart';
 import '../database_helper.dart';
 
@@ -123,12 +124,42 @@ class _QuestionScreenState extends State<QuestionScreen> {
     if (nextQ != null) _loadQuestionData(nextQ);
   }
 
+  bool _hasDedicatedImage(dynamic img) {
+    if (img == null) return false;
+    if (img is bool) return img;
+    if (img is String) {
+      final s = img.trim().toLowerCase();
+      return s.isNotEmpty && s != 'false';
+    }
+    return false;
+  }
+
+  Widget _buildVectorImage(String imgPath) {
+    final cleanPath = imgPath.startsWith('assets/') ? imgPath : 'assets/$imgPath';
+    return Center(
+      child: Container(
+        margin: const EdgeInsets.symmetric(vertical: 12),
+        constraints: const BoxConstraints(maxWidth: 320),
+        padding: const EdgeInsets.all(8.0),
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.grey.shade300),
+          borderRadius: BorderRadius.circular(10),
+          color: Colors.white,
+        ),
+        child: cleanPath.toLowerCase().endsWith('.svg')
+            ? SvgPicture.asset(cleanPath, fit: BoxFit.contain)
+            : Image.asset(cleanPath, fit: BoxFit.contain),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final qId = _currentQuestion['id']?.toString() ?? '------';
     final branch = _currentQuestion['branch'] ?? 'Maths';
     final board = _currentQuestion['board'] ?? '';
     final level = _currentQuestion['level'] ?? '';
+    final rawImg = _currentQuestion['img'];
 
     return Scaffold(
       appBar: AppBar(
@@ -181,7 +212,17 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(18.0),
-                  child: _renderMixedContent(_currentQuestion['question'] ?? ''),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      _renderMixedContent(_currentQuestion['question'] ?? ''),
+                      // Dedicated Question Image (placed after question text)
+                      if (_hasDedicatedImage(rawImg) && rawImg is String) ...[
+                        const SizedBox(height: 12),
+                        _buildVectorImage(rawImg),
+                      ],
+                    ],
+                  ),
                 ),
               ),
 
@@ -398,19 +439,19 @@ class _QuestionScreenState extends State<QuestionScreen> {
     IconData icon;
 
     if (type.contains('caution')) {
-      bgColor = const Color(0xFFFEFCE8);      // Soft yellow
-      borderColor = const Color(0xFFFACC15);  // Amber border
-      textColor = const Color(0xFF854D0E);    // Deep browny orange
+      bgColor = const Color(0xFFFEFCE8);
+      borderColor = const Color(0xFFFACC15);
+      textColor = const Color(0xFF854D0E);
       icon = Icons.warning_amber_rounded;
     } else if (type.contains('deeper')) {
-      bgColor = const Color(0xFFFAF5FF);      // Soft purple
-      borderColor = const Color(0xFFC084FC);  // Purple border
-      textColor = const Color(0xFF581C87);    // Deep purple
+      bgColor = const Color(0xFFFAF5FF);
+      borderColor = const Color(0xFFC084FC);
+      textColor = const Color(0xFF581C87);
       icon = Icons.psychology;
     } else {
-      bgColor = const Color(0xFFEFF6FF);      // Soft blue
-      borderColor = const Color(0xFF93C5FD);  // Blue border
-      textColor = const Color(0xFF1E40AF);    // Deep blue
+      bgColor = const Color(0xFFEFF6FF);
+      borderColor = const Color(0xFF93C5FD);
+      textColor = const Color(0xFF1E40AF);
       icon = Icons.lightbulb_outline;
     }
 
@@ -449,13 +490,23 @@ class _QuestionScreenState extends State<QuestionScreen> {
   }
 
   // ----------------------------------------------------
-  // HTML + TEXTBOOK LATEX RENDERER (MOBILE-FIRST)
+  // HTML + TEXTBOOK LATEX + VECTOR SVG RENDERER
   // ----------------------------------------------------
   Widget _renderMixedContent(String rawData) {
     return HtmlWidget(
       rawData,
       factoryBuilder: () => _MathWidgetFactory(),
       textStyle: const TextStyle(fontSize: 15, height: 1.5, color: Colors.black87),
+      customWidgetBuilder: (el) {
+        // Intercept inline <img> tags to render vectors cleanly
+        if (el.localName == 'img') {
+          final src = el.attributes['src'] ?? '';
+          if (src.isNotEmpty) {
+            return _buildVectorImage(src);
+          }
+        }
+        return null;
+      },
       customStylesBuilder: (el) {
         if (el.localName == 'table') {
           return {
@@ -493,19 +544,16 @@ class _QuestionScreenState extends State<QuestionScreen> {
 // Separates Display/Aligned Block Math from Inline Math
 // --------------------------------------------------------
 class _MathWidgetFactory extends WidgetFactory {
-  // Regex to isolate Display Blocks ($$...$$ and \begin{...}...\end{...})
   static final RegExp _blockPattern = RegExp(
     r'(\$\$[\s\S]*?\$\$|\\begin\{[a-zA-Z*]+\}[\s\S]*?\\end\{[a-zA-Z*]+\})',
   );
 
-  // Regex for standard inline math ($...$)
   static final RegExp _inlineMathPattern = RegExp(r'\$([^\$]+?)\$');
 
   @override
   Widget? buildText(BuildMetadata meta, TextStyleHtml tsh, InlineSpan span) {
     final text = span.toPlainText();
 
-    // If there is no block math (no $$ and no \begin), handle purely with inline parser
     if (!_blockPattern.hasMatch(text)) {
       if (_inlineMathPattern.hasMatch(text)) {
         return _renderInlineSpan(text, tsh);
@@ -513,13 +561,11 @@ class _MathWidgetFactory extends WidgetFactory {
       return super.buildText(meta, tsh, span);
     }
 
-    // Split text into English paragraphs and Centered Block Equations
     final matches = _blockPattern.allMatches(text);
     List<Widget> blockWidgets = [];
     int lastEnd = 0;
 
     for (final match in matches) {
-      // 1. Text appearing BEFORE the aligned block equation
       if (match.start > lastEnd) {
         final leadingText = text.substring(lastEnd, match.start).trim();
         if (leadingText.isNotEmpty) {
@@ -527,12 +573,10 @@ class _MathWidgetFactory extends WidgetFactory {
         }
       }
 
-      // 2. The Aligned / Display Math Block (Centered on its own line)
       String mathContent = match.group(0)!;
       if (mathContent.startsWith(r'$$') && mathContent.endsWith(r'$$')) {
         mathContent = mathContent.substring(2, mathContent.length - 2).trim();
       }
-      // Standardize TeX carriage returns (\cr) to (\\)
       mathContent = mathContent.replaceAll(r'\cr', r'\\').trim();
 
       if (mathContent.isNotEmpty) {
@@ -559,7 +603,6 @@ class _MathWidgetFactory extends WidgetFactory {
       lastEnd = match.end;
     }
 
-    // 3. Any trailing text appearing AFTER the aligned block equation
     if (lastEnd < text.length) {
       final trailingText = text.substring(lastEnd).trim();
       if (trailingText.isNotEmpty) {
@@ -574,7 +617,6 @@ class _MathWidgetFactory extends WidgetFactory {
     );
   }
 
-  // Helper method for rendering text that may contain inline $...$ math
   Widget _renderInlineSpan(String content, TextStyleHtml tsh) {
     if (!_inlineMathPattern.hasMatch(content)) {
       return Text(content, style: tsh.style);

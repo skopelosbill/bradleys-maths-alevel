@@ -2,8 +2,13 @@ import os
 import re
 import sqlite3
 import json
+import shutil
 
-DB_FILE = "bradleys_maths.db"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_FILE = os.path.join(BASE_DIR, "bradleys_maths.db")
+APP_ASSETS_DIR = os.path.join(BASE_DIR, "bradleys_maths_app", "assets")
+TARGET_DB_ASSET = os.path.join(APP_ASSETS_DIR, "bradleys_maths.db")
+TARGET_JSON_ASSET = os.path.join(APP_ASSETS_DIR, "questions.json")
 
 def clean_str(val):
     if isinstance(val, list):
@@ -39,6 +44,7 @@ def init_db(conn):
         major_area TEXT NOT NULL,
         topic TEXT NOT NULL,
         subtopics TEXT,
+        img TEXT,
         has_image INTEGER DEFAULT 0,
         question_text TEXT NOT NULL
     );
@@ -130,9 +136,7 @@ def extract_question_objects(content):
 
         if end_idx != -1:
             raw_obj = content[start_idx:end_idx]
-            # 1. Clean trailing commas
             cleaned = re.sub(r',\s*([\}\]])', r'\1', raw_obj)
-            # 2. Safeguard: Auto-double any unescaped LaTeX single backslashes
             cleaned = re.sub(r'(?<!\\)\\(?!["\\])', r'\\\\', cleaned)
             try:
                 obj = json.loads(cleaned, strict=False)
@@ -147,11 +151,13 @@ def extract_question_objects(content):
 def parse_and_insert(conn, root_dir="."):
     cursor = conn.cursor()
     total_inserted = 0
-    file_count = 0
+    all_json_questions = []
 
-    # Sort files to load cleanly
     all_files = []
     for root, _, files in os.walk(root_dir):
+        # Exclude app build, node_modules, and git folders
+        if "bradleys_maths_app" in root or ".git" in root:
+            continue
         for file in files:
             if file.endswith(".js") and not file.endswith(".bak") and not file.startswith("audit"):
                 all_files.append((root, file))
@@ -171,7 +177,6 @@ def parse_and_insert(conn, root_dir="."):
         if not questions:
             continue
 
-        file_count += 1
         inserted_this_file = 0
 
         for q in questions:
@@ -179,11 +184,17 @@ def parse_and_insert(conn, root_dir="."):
             if not q_id:
                 continue
 
+            all_json_questions.append(q)
+
             # 1. Insert into questions
             subtopics_str = clean_json_list(q.get("subtopic") or q.get("subtopics"))
+            img_val = q.get("img")
+            img_str = clean_str(img_val) if img_val and img_val is not False else ""
+            has_img = 1 if img_str else 0
+
             cursor.execute("""
-                INSERT OR REPLACE INTO questions (id, group_id, board, branch, level, major_area, topic, subtopics, has_image, question_text)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                INSERT OR REPLACE INTO questions (id, group_id, board, branch, level, major_area, topic, subtopics, img, has_image, question_text)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 clean_str(q_id),
                 clean_str(q.get("group_id", q_id)),
@@ -193,16 +204,16 @@ def parse_and_insert(conn, root_dir="."):
                 clean_str(q.get("major_area", "")),
                 clean_str(q.get("topic", "")),
                 subtopics_str,
-                1 if q.get("img") else 0,
+                img_str,
+                has_img,
                 clean_str(q.get("question", ""))
             ))
 
-          # 2. Insert Steps
+            # 2. Insert Steps
             steps = q.get("steps", [])
             final_ans_text = ""
             for idx, step_text in enumerate(steps, 1):
                 step_str = clean_str(step_text)
-                # Robust regex match for "Final Answer" with optional HTML tags, spaces, or cases
                 match_final = re.search(r'Final\s+Answer\s*[:\-\—]\s*(.*)', step_str, re.IGNORECASE | re.DOTALL)
                 is_final = 1 if match_final or idx == len(steps) and "final" in step_str.lower() else 0
                 if match_final:
@@ -216,14 +227,12 @@ def parse_and_insert(conn, root_dir="."):
                 """, (q_id, idx, step_str, is_final))
 
             # 3. Insert Options
-            # First, correct option
             if final_ans_text:
                 cursor.execute("""
                     INSERT INTO question_options (question_id, ans_text, feedback_text, is_correct)
                     VALUES (?, ?, ?, 1)
-                """, (q_id, final_ans_text, "Correct! Excellent work."))
+                """, (q_id, final_ans_text, "Outstanding! That is spot on."))
 
-            # Next, distractors
             for opt in q.get("pi_options", []):
                 cursor.execute("""
                     INSERT INTO question_options (question_id, ans_text, feedback_text, is_correct)
@@ -249,6 +258,13 @@ def parse_and_insert(conn, root_dir="."):
         print(f"Loaded: {file:<18} -> {inserted_this_file} questions")
 
     conn.commit()
+
+    # 5. Export all questions to questions.json in assets
+    os.makedirs(APP_ASSETS_DIR, exist_ok=True)
+    with open(TARGET_JSON_ASSET, "w", encoding="utf-8") as jf:
+        json.dump(all_json_questions, jf, indent=2, ensure_ascii=False)
+    print(f"\n[OK] Exported all {len(all_json_questions)} questions to: {TARGET_JSON_ASSET}")
+
     return total_inserted
 
 if __name__ == "__main__":
@@ -257,17 +273,21 @@ if __name__ == "__main__":
             os.remove(DB_FILE)
         except Exception:
             pass
-    
+
     conn = sqlite3.connect(DB_FILE)
     print("Initialising database tables...")
     init_db(conn)
     print("Parsing files and populating database...\n")
-    count = parse_and_insert(conn, ".")
-    print(f"\n=======================================================")
-    print(f"SUCCESS! Populated {count} questions into '{DB_FILE}'")
-    print(f"=======================================================")
-    
-    cursor = conn.cursor()
+    count = parse_and_insert(conn, BASE_DIR)
+    conn.close()
+
+    # Copy the newly built database into app assets
+    shutil.copy2(DB_FILE, TARGET_DB_ASSET)
+    print(f"[OK] Copied {DB_FILE} to: {TARGET_DB_ASSET}")
+
+    # Reconnect to run sanity checks
+    chk_conn = sqlite3.connect(DB_FILE)
+    cursor = chk_conn.cursor()
     cursor.execute("SELECT COUNT(*) FROM questions;")
     q_count = cursor.fetchone()[0]
     cursor.execute("SELECT COUNT(*) FROM question_options;")
@@ -276,10 +296,14 @@ if __name__ == "__main__":
     step_count = cursor.fetchone()[0]
     cursor.execute("SELECT COUNT(*) FROM bradley_insights;")
     ins_count = cursor.fetchone()[0]
+    chk_conn.close()
 
-    print("\n--- DATABASE SANITY CHECK ---")
+    print("\n" + "=" * 60)
+    print("  DATABASE & JSON BUILD COMPLETE")
+    print("=" * 60)
     print(f"Questions stored:    {q_count} (Target: 1400)")
-    print(f"Options stored:      {opt_count} (Expect ~5600: 4 per question)")
+    print(f"Options stored:      {opt_count} (~4 per question)")
     print(f"Steps stored:        {step_count}")
     print(f"Insights stored:     {ins_count} (Target: 1400)")
-    conn.close()
+    print(f"JSON export:         {TARGET_JSON_ASSET}")
+    print("=" * 60)
