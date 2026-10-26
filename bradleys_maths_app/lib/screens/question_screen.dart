@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
-import 'package:flutter_html/flutter_html.dart';
-import 'package:flutter_html_math/flutter_html_math.dart';
+import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 import '../models/filter_state.dart';
 import '../database_helper.dart';
 
@@ -27,15 +26,12 @@ class _QuestionScreenState extends State<QuestionScreen> {
   List<String> _steps = [];
   Map<String, dynamic>? _insight;
 
-  // Flow State
   bool _optionsUnlocked = false; 
   int? _selectedOptionIndex;
   bool _isSubmitted = false;
   int _attemptCount = 0; 
   String? _feedbackText;
   bool _isCorrect = false;
-
-  // Step-through Model Answer State
   bool _showModelAnswer = false;
   int _revealedStepsCount = 1;
 
@@ -47,29 +43,24 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
   void _loadQuestionData(Map<String, dynamic> q) {
     _currentQuestion = q;
-
-    // 1. Parse steps
     final List<dynamic> rawSteps = q['steps'] ?? [];
     _steps = rawSteps.map((s) => s.toString()).toList();
 
-    // 2. Extract Correct Answer from the last step
-    // We keep the tags so the HTML renderer can handle formatting
+    // Strip out 'Final Answer' label if present in the last step
     String correctAnswer = "";
     if (_steps.isNotEmpty) {
       correctAnswer = _steps.last
-          .replaceAll('<strong>Final Answer</strong>', '')
-          .replaceAll('Final Answer', '')
+          .replaceFirst(RegExp(r'<strong>Final Answer</strong>\s*[:\-\—]?\s*', caseSensitive: false), '')
+          .replaceFirst(RegExp(r'Final Answer\s*[:\-\—]?\s*', caseSensitive: false), '')
           .trim();
     }
 
-    // 3. Extract 3 Distractors from pi_options
     final List<dynamic> piList = q['pi_options'] ?? [];
     List<Map<String, dynamic>> choices = [];
-
     choices.add({
       'ans': correctAnswer,
       'is_correct': 1,
-      'feedback': 'Correct! Textbook derivation.',
+      'feedback': 'Outstanding! That is spot on.',
     });
 
     for (var pi in piList) {
@@ -79,19 +70,15 @@ class _QuestionScreenState extends State<QuestionScreen> {
         'feedback': pi['feedback']?.toString() ?? 'Check your paper working carefully.',
       });
     }
-
-    choices.shuffle();
-
+    choices.shuffle(); // Shuffle the 4 choices
     choices.add({
       'ans': 'None of the Above',
       'is_correct': 0,
-      'feedback': 'None of the Above selected. Targeted coaching: Concept revision is recommended.',
+      'feedback': 'Concept revision is recommended. Study the model answer below.',
     });
 
-    if (q['bradley_insight'] != null && q['bradley_insight'] is Map) {
+    if (q['bradley_insight'] != null) {
       _insight = Map<String, dynamic>.from(q['bradley_insight']);
-    } else {
-      _insight = null;
     }
 
     setState(() {
@@ -109,253 +96,289 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
   void _submitChoice() {
     if (_selectedOptionIndex == null) return;
-
     final selected = _options[_selectedOptionIndex!];
-    final isNoneOfAbove = _selectedOptionIndex == _options.length - 1;
     final isCorrectChoice = selected['is_correct'] == 1;
 
     setState(() {
       if (isCorrectChoice) {
         _isCorrect = true;
         _isSubmitted = true;
-        _feedbackText = "Outstanding! That is spot on. Study the textbook model answer below.";
-        _showModelAnswer = true;
-      } else if (isNoneOfAbove) {
-        _isCorrect = false;
-        _isSubmitted = true;
         _feedbackText = selected['feedback'];
         _showModelAnswer = true;
+      } else if (_attemptCount == 0) {
+        _attemptCount = 1;
+        _feedbackText = "${selected['feedback']}\n\nCheck your working and take a Second Chance!";
+        _selectedOptionIndex = null;
       } else {
-        if (_attemptCount == 0) {
-          _attemptCount = 1;
-          _feedbackText = "${selected['feedback']}\n\nCheck your paper working carefully and take a Second Chance!";
-          _selectedOptionIndex = null;
-        } else {
-          _isCorrect = false;
-          _isSubmitted = true;
-          _feedbackText = "${selected['feedback']}\n\nHere is the full step-by-step model answer to guide your revision.";
-          _showModelAnswer = true;
-        }
+        _isCorrect = false;
+        _isSubmitted = true;
+        _feedbackText = "${selected['feedback']}\n\nStudy the textbook model answer below.";
+        _showModelAnswer = true;
       }
     });
   }
 
   void _loadNextQuestion() async {
     final nextQ = await widget.dbHelper.fetchQuestion(widget.filterState);
-    if (nextQ != null) {
-      _loadQuestionData(nextQ);
-    } else {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('No further questions found for this topic.')),
-        );
-      }
-    }
+    if (nextQ != null) _loadQuestionData(nextQ);
   }
 
   @override
   Widget build(BuildContext context) {
+    final qId = _currentQuestion['id']?.toString() ?? '------';
+    final branch = _currentQuestion['branch'] ?? 'Maths';
+    final board = _currentQuestion['board'] ?? '';
+    final level = _currentQuestion['level'] ?? '';
+
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "${_currentQuestion['branch'] ?? 'Maths'} • ${_currentQuestion['topic'] ?? 'Topic'}",
+          "$branch • ID: $qId",
           style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
-        centerTitle: true,
+        elevation: 0,
       ),
       body: Center(
         child: Container(
-          constraints: const BoxConstraints(maxWidth: 420),
+          constraints: const BoxConstraints(maxWidth: 420), // 360-420px mobile viewport
           child: ListView(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
             children: [
-              Wrap(
-                spacing: 6,
-                children: [
-                  Chip(
-                    visualDensity: VisualDensity.compact,
-                    backgroundColor: Colors.blue.shade50,
-                    label: Text(
-                      _currentQuestion['board']?.toString() ?? 'UK Board',
-                      style: TextStyle(fontSize: 11, color: Colors.blue.shade900, fontWeight: FontWeight.bold),
+              // Metadata Header Badge
+              Padding(
+                padding: const EdgeInsets.only(bottom: 8.0),
+                child: Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      decoration: BoxDecoration(
+                        color: Colors.indigo.shade50,
+                        borderRadius: BorderRadius.circular(6),
+                        border: Border.all(color: Colors.indigo.shade200),
+                      ),
+                      child: Text(
+                        "ID: $qId  |  $board $level",
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.indigo.shade800,
+                        ),
+                      ),
                     ),
-                  ),
-                  Chip(
-                    visualDensity: VisualDensity.compact,
-                    backgroundColor: Colors.purple.shade50,
-                    label: Text(
-                      _currentQuestion['level'] == 'A' ? 'A Level' : 'AS Level',
-                      style: TextStyle(fontSize: 11, color: Colors.purple.shade900, fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
 
-              const SizedBox(height: 12),
-
+              // ------------------------------------
+              // STEP 7: QUESTION PRESENTATION
+              // ------------------------------------
               Card(
                 elevation: 1,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                color: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                  side: BorderSide(color: Colors.grey.shade200),
+                ),
                 child: Padding(
                   padding: const EdgeInsets.all(18.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text(
-                        "QUESTION",
-                        style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.grey, letterSpacing: 1.2),
-                      ),
-                      const SizedBox(height: 10),
-                      _renderMixedContent(_currentQuestion['question'] ?? ''),
-                    ],
-                  ),
+                  child: _renderMixedContent(_currentQuestion['question'] ?? ''),
                 ),
               ),
 
               const SizedBox(height: 16),
 
+              // ------------------------------------
+              // STEP 8: THE PAPER-FIRST MANDATE
+              // ------------------------------------
               if (!_optionsUnlocked) ...[
                 Container(
-                  padding: const EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
-                    color: Colors.amber.shade50,
+                    color: const Color(0xFFF0FDF4),
+                    border: Border.all(color: const Color(0xFF86EFAC)),
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Colors.amber.shade400, width: 1.5),
                   ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  child: const Row(
                     children: [
-                      Icon(Icons.edit_note, color: Colors.amber.shade900, size: 28),
-                      const SizedBox(width: 12),
+                      Icon(Icons.edit_note, color: Color(0xFF15803D), size: 28),
+                      SizedBox(width: 12),
                       Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "PAPER FIRST MANDATE",
-                              style: TextStyle(fontWeight: FontWeight.bold, color: Colors.amber.shade900, fontSize: 13),
-                            ),
-                            const SizedBox(height: 4),
-                            const Text(
-                              "Work through the entire question on paper with full method before looking at options.",
-                              style: TextStyle(fontSize: 13, height: 1.35),
-                            ),
-                          ],
+                        child: Text(
+                          "Work through the complete solution on paper before inspecting the options.",
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w600,
+                            color: Color(0xFF166534),
+                          ),
                         ),
                       ),
                     ],
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 14),
+
+                // ------------------------------------
+                // STEP 9: READINESS GATE
+                // ------------------------------------
                 SizedBox(
-                  height: 52,
-                  child: ElevatedButton.icon(
+                  height: 50,
+                  child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.teal.shade700,
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     ),
-                    icon: const Icon(Icons.lock_open, size: 20),
-                    label: const Text(
+                    onPressed: () => setState(() => _optionsUnlocked = true),
+                    child: const Text(
                       "I've worked it out on paper — Show Options",
                       style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                     ),
-                    onPressed: () => setState(() => _optionsUnlocked = true),
                   ),
                 ),
               ],
 
+              // ------------------------------------
+              // STEP 10: 5-BOX OPTION GRID
+              // ------------------------------------
               if (_optionsUnlocked) ...[
-                const Text(
-                  "Select your answer",
-                  style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Colors.black87),
-                ),
-                const SizedBox(height: 10),
                 ...List.generate(_options.length, (index) {
-                  final opt = _options[index];
                   final isSelected = _selectedOptionIndex == index;
                   final isNoneOfAbove = index == _options.length - 1;
 
-                  Color borderColor = isSelected ? Colors.indigo : Colors.grey.shade300;
-                  Color bgColor = isSelected ? Colors.indigo.shade50 : Colors.white;
-
-                  if (_isSubmitted) {
-                    if (opt['is_correct'] == 1) {
-                      borderColor = Colors.green;
-                      bgColor = Colors.green.shade50;
-                    } else if (isSelected) {
-                      borderColor = Colors.red;
-                      bgColor = Colors.red.shade50;
-                    }
-                  }
-
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 10.0),
-                    child: InkWell(
-                      onTap: _isSubmitted ? null : () => setState(() => _selectedOptionIndex = index),
+                    child: Material(
+                      color: isSelected ? Colors.indigo.shade50 : Colors.white,
+                      borderRadius: BorderRadius.circular(12),
                       child: Container(
-                        padding: const EdgeInsets.all(14),
                         decoration: BoxDecoration(
-                          color: bgColor,
+                          border: Border.all(
+                            color: isSelected
+                                ? Colors.indigo.shade600
+                                : (isNoneOfAbove ? Colors.grey.shade400 : Colors.grey.shade300),
+                            width: isSelected ? 2.0 : 1.0,
+                          ),
                           borderRadius: BorderRadius.circular(12),
-                          border: Border.all(color: borderColor, width: isSelected ? 2 : 1),
                         ),
-                        child: Row(
-                          children: [
-                            Text(isNoneOfAbove ? "5" : String.fromCharCode(65 + index), style: const TextStyle(fontWeight: FontWeight.bold)),
-                            const SizedBox(width: 12),
-                            Expanded(child: _renderMixedContent(opt['ans'] ?? '')),
-                          ],
+                        child: RadioListTile<int>(
+                          value: index,
+                          groupValue: _selectedOptionIndex,
+                          activeColor: Colors.indigo.shade700,
+                          title: _renderMixedContent(_options[index]['ans']),
+                          onChanged: _isSubmitted
+                              ? null
+                              : (v) => setState(() => _selectedOptionIndex = v),
                         ),
                       ),
                     ),
                   );
                 }),
 
-                if (!_isSubmitted)
+                if (!_isSubmitted) ...[
+                  const SizedBox(height: 6),
                   SizedBox(
-                    width: double.infinity,
+                    height: 48,
                     child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(backgroundColor: Colors.indigo.shade700, foregroundColor: Colors.white),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.indigo.shade700,
+                        foregroundColor: Colors.white,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      ),
                       onPressed: _selectedOptionIndex == null ? null : _submitChoice,
-                      child: Text(_attemptCount == 1 ? "Submit Second Chance" : "Submit Answer"),
+                      child: const Text(
+                        "Submit Answer",
+                        style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
+                ],
               ],
 
+              // ------------------------------------
+              // STEP 11: DIAGNOSTIC FEEDBACK
+              // ------------------------------------
               if (_feedbackText != null) ...[
                 const SizedBox(height: 18),
                 Container(
                   padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
-                    color: _isCorrect ? Colors.green.shade50 : Colors.orange.shade50,
+                    color: _isCorrect ? const Color(0xFFF0FDF4) : const Color(0xFFFFFBEB),
+                    border: Border.all(
+                      color: _isCorrect ? const Color(0xFF86EFAC) : const Color(0xFFFCD34D),
+                    ),
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: _isCorrect ? Colors.green : Colors.orange),
                   ),
                   child: _renderMixedContent(_feedbackText!),
                 ),
               ],
 
+              // ------------------------------------
+              // STEP 11: MODEL ANSWER & INSIGHT
+              // ------------------------------------
               if (_showModelAnswer) ...[
                 const SizedBox(height: 24),
-                const Text("Model Answer", style: TextStyle(fontWeight: FontWeight.bold)),
+                const Text(
+                  "Textbook Model Answer",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black87),
+                ),
+                const SizedBox(height: 10),
+
                 ...List.generate(_revealedStepsCount.clamp(0, _steps.length), (i) {
                   return Container(
-                    margin: const EdgeInsets.symmetric(vertical: 4),
-                    padding: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(border: Border.all(color: Colors.grey.shade300), borderRadius: BorderRadius.circular(8)),
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.all(14),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade50,
+                      border: Border.all(color: Colors.grey.shade300),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                     child: _renderMixedContent(_steps[i]),
                   );
                 }),
+
                 if (_revealedStepsCount < _steps.length)
-                  TextButton(onPressed: () => setState(() => _revealedStepsCount++), child: const Text("Reveal Next Step")),
-                
-                if (_revealedStepsCount >= _steps.length && _insight != null) 
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 4.0),
+                    child: OutlinedButton.icon(
+                      icon: const Icon(Icons.add_circle_outline, size: 18),
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: Colors.indigo.shade700,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                      ),
+                      onPressed: () => setState(() => _revealedStepsCount++),
+                      label: Text(
+                        "Reveal Next Step (${_revealedStepsCount + 1}/${_steps.length})",
+                        style: const TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+
+                if (_revealedStepsCount >= _steps.length && _insight != null)
                   _renderInsightCard(_insight!),
 
+                const SizedBox(height: 28),
+
+                // ------------------------------------
+                // STEP 12: SMART RECOMMENDATIONS
+                // ------------------------------------
+                SizedBox(
+                  height: 50,
+                  child: ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.indigo.shade700,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                    ),
+                    icon: const Icon(Icons.arrow_forward),
+                    onPressed: _loadNextQuestion,
+                    label: const Text(
+                      "Next Question",
+                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
                 const SizedBox(height: 20),
-                ElevatedButton(onPressed: _loadNextQuestion, child: const Text("Next Question")),
-              ],
+              ]
             ],
           ),
         ),
@@ -363,34 +386,229 @@ class _QuestionScreenState extends State<QuestionScreen> {
     );
   }
 
+  // ----------------------------------------------------
+  // BRADLEY INSIGHT CARD (Deeper, Pro-tip, Caution)
+  // ----------------------------------------------------
   Widget _renderInsightCard(Map<String, dynamic> insight) {
     final type = insight['type']?.toString().toLowerCase() ?? 'pro-tip';
-    Color themeColor = type.contains('caution') ? Colors.orange : (type.contains('deeper') ? Colors.purple : Colors.blue);
-    
+
+    Color bgColor;
+    Color borderColor;
+    Color textColor;
+    IconData icon;
+
+    if (type.contains('caution')) {
+      bgColor = const Color(0xFFFEFCE8);      // Soft yellow
+      borderColor = const Color(0xFFFACC15);  // Amber border
+      textColor = const Color(0xFF854D0E);    // Deep browny orange
+      icon = Icons.warning_amber_rounded;
+    } else if (type.contains('deeper')) {
+      bgColor = const Color(0xFFFAF5FF);      // Soft purple
+      borderColor = const Color(0xFFC084FC);  // Purple border
+      textColor = const Color(0xFF581C87);    // Deep purple
+      icon = Icons.psychology;
+    } else {
+      bgColor = const Color(0xFFEFF6FF);      // Soft blue
+      borderColor = const Color(0xFF93C5FD);  // Blue border
+      textColor = const Color(0xFF1E40AF);    // Deep blue
+      icon = Icons.lightbulb_outline;
+    }
+
     return Container(
-      margin: const EdgeInsets.only(top: 16),
+      margin: const EdgeInsets.only(top: 14),
       padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(color: themeColor.withOpacity(0.1), border: Border.all(color: themeColor), borderRadius: BorderRadius.circular(12)),
+      decoration: BoxDecoration(
+        color: bgColor,
+        border: Border.all(color: borderColor, width: 1.5),
+        borderRadius: BorderRadius.circular(14),
+      ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(insight['title'] ?? "Insight", style: TextStyle(fontWeight: FontWeight.bold, color: themeColor)),
-          const Divider(),
+          Row(
+            children: [
+              Icon(icon, color: textColor, size: 20),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  insight['title'] ?? "The Head Teacher's Eye",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: textColor,
+                    fontSize: 14,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const Divider(height: 18),
           _renderMixedContent(insight['content'] ?? ''),
         ],
       ),
     );
   }
 
-  Widget _renderMixedContent(String raw) {
-    return Html(
-      data: raw,
-      extensions: const [MathHtmlExtension()],
-      style: {
-        "body": Style(margin: Margins.zero, padding: HtmlPaddings.zero, fontSize: FontSize(15)),
-        "table": Style(width: Width(100, Unit.percent), border: Border.all(color: Colors.black54)),
-        "td": Style(padding: HtmlPaddings.all(4), border: Border.all(color: Colors.black54), textAlign: TextAlign.center),
-        "th": Style(padding: HtmlPaddings.all(4), border: Border.all(color: Colors.black54), backgroundColor: Colors.grey.shade200),
+  // ----------------------------------------------------
+  // HTML + TEXTBOOK LATEX RENDERER (MOBILE-FIRST)
+  // ----------------------------------------------------
+  Widget _renderMixedContent(String rawData) {
+    return HtmlWidget(
+      rawData,
+      factoryBuilder: () => _MathWidgetFactory(),
+      textStyle: const TextStyle(fontSize: 15, height: 1.5, color: Colors.black87),
+      customStylesBuilder: (el) {
+        if (el.localName == 'table') {
+          return {
+            'width': '100%',
+            'max-width': '300px',
+            'margin': '12px auto',
+            'border-collapse': 'collapse',
+            'border': '1px solid #999',
+          };
+        }
+        if (el.localName == 'th') {
+          return {
+            'font-weight': 'bold',
+            'background-color': '#eef2f6',
+            'border': '1px solid #999',
+            'padding': '6px 8px',
+            'text-align': 'center',
+          };
+        }
+        if (el.localName == 'td') {
+          return {
+            'border': '1px solid #ccc',
+            'padding': '6px 8px',
+            'text-align': 'center',
+          };
+        }
+        return null;
       },
     );
+  }
+}
+
+// --------------------------------------------------------
+// SMART LATEX WIDGET FACTORY
+// Separates Display/Aligned Block Math from Inline Math
+// --------------------------------------------------------
+class _MathWidgetFactory extends WidgetFactory {
+  // Regex to isolate Display Blocks ($$...$$ and \begin{...}...\end{...})
+  static final RegExp _blockPattern = RegExp(
+    r'(\$\$[\s\S]*?\$\$|\\begin\{[a-zA-Z*]+\}[\s\S]*?\\end\{[a-zA-Z*]+\})',
+  );
+
+  // Regex for standard inline math ($...$)
+  static final RegExp _inlineMathPattern = RegExp(r'\$([^\$]+?)\$');
+
+  @override
+  Widget? buildText(BuildMetadata meta, TextStyleHtml tsh, InlineSpan span) {
+    final text = span.toPlainText();
+
+    // If there is no block math (no $$ and no \begin), handle purely with inline parser
+    if (!_blockPattern.hasMatch(text)) {
+      if (_inlineMathPattern.hasMatch(text)) {
+        return _renderInlineSpan(text, tsh);
+      }
+      return super.buildText(meta, tsh, span);
+    }
+
+    // Split text into English paragraphs and Centered Block Equations
+    final matches = _blockPattern.allMatches(text);
+    List<Widget> blockWidgets = [];
+    int lastEnd = 0;
+
+    for (final match in matches) {
+      // 1. Text appearing BEFORE the aligned block equation
+      if (match.start > lastEnd) {
+        final leadingText = text.substring(lastEnd, match.start).trim();
+        if (leadingText.isNotEmpty) {
+          blockWidgets.add(_renderInlineSpan(leadingText, tsh));
+        }
+      }
+
+      // 2. The Aligned / Display Math Block (Centered on its own line)
+      String mathContent = match.group(0)!;
+      if (mathContent.startsWith(r'$$') && mathContent.endsWith(r'$$')) {
+        mathContent = mathContent.substring(2, mathContent.length - 2).trim();
+      }
+      // Standardize TeX carriage returns (\cr) to (\\)
+      mathContent = mathContent.replaceAll(r'\cr', r'\\').trim();
+
+      if (mathContent.isNotEmpty) {
+        blockWidgets.add(
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
+            child: Center(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Math.tex(
+                  mathContent,
+                  mathStyle: MathStyle.display,
+                  textStyle: tsh.style.copyWith(
+                    fontSize: 16,
+                    fontWeight: tsh.style.fontWeight ?? FontWeight.normal,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        );
+      }
+
+      lastEnd = match.end;
+    }
+
+    // 3. Any trailing text appearing AFTER the aligned block equation
+    if (lastEnd < text.length) {
+      final trailingText = text.substring(lastEnd).trim();
+      if (trailingText.isNotEmpty) {
+        blockWidgets.add(_renderInlineSpan(trailingText, tsh));
+      }
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisSize: MainAxisSize.min,
+      children: blockWidgets,
+    );
+  }
+
+  // Helper method for rendering text that may contain inline $...$ math
+  Widget _renderInlineSpan(String content, TextStyleHtml tsh) {
+    if (!_inlineMathPattern.hasMatch(content)) {
+      return Text(content, style: tsh.style);
+    }
+
+    final inlineMatches = _inlineMathPattern.allMatches(content);
+    List<InlineSpan> spans = [];
+    int lastIndex = 0;
+
+    for (final m in inlineMatches) {
+      if (m.start > lastIndex) {
+        spans.add(TextSpan(text: content.substring(lastIndex, m.start), style: tsh.style));
+      }
+      final mathStr = m.group(1)?.trim() ?? '';
+      if (mathStr.isNotEmpty) {
+        spans.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Math.tex(
+            mathStr,
+            mathStyle: MathStyle.text,
+            textStyle: tsh.style.copyWith(
+              fontSize: 15,
+              fontWeight: tsh.style.fontWeight ?? FontWeight.normal,
+            ),
+          ),
+        ));
+      }
+      lastIndex = m.end;
+    }
+
+    if (lastIndex < content.length) {
+      spans.add(TextSpan(text: content.substring(lastIndex), style: tsh.style));
+    }
+
+    return Text.rich(TextSpan(children: spans));
   }
 }
