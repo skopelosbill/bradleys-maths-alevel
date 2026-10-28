@@ -130,6 +130,98 @@ class DatabaseHelper {
     return res.map((row) => row['topic']?.toString() ?? '').toList();
   }
 
+  Future<List<String>> getSubtopics({String? board, String? level, String? branch, String? majorArea, String? topic}) async {
+    final String? targetLevel = (level == null || level == 'Random')
+        ? null
+        : (level == 'A Level' ? 'A' : (level == 'AS Level' ? 'AS' : level));
+
+    if (kIsWeb) {
+      final data = await _loadWebData();
+      final Set<String> subtopics = {};
+      for (var q in data) {
+        if (branch != null && branch != 'Random' && q['branch'] != branch) continue;
+        if ((branch == null || branch == 'Random') && q['branch'] == 'Comprehension') continue;
+        if (targetLevel != null && q['level'] != targetLevel) continue;
+        if (board != null && board != 'Random' && q['board'] != board) continue;
+        if (majorArea != null && majorArea != 'Random' && q['major_area'] != majorArea) continue;
+        if (topic != null && topic != 'Random' && q['topic'] != topic) continue;
+
+        final raw = q['subtopic'] ?? q['subtopics'];
+        if (raw is List) {
+          for (var item in raw) {
+            final s = item?.toString().trim() ?? '';
+            if (s.isNotEmpty) subtopics.add(s);
+          }
+        } else if (raw is String && raw.isNotEmpty) {
+          try {
+            final decoded = json.decode(raw);
+            if (decoded is List) {
+              for (var item in decoded) {
+                final s = item?.toString().trim() ?? '';
+                if (s.isNotEmpty) subtopics.add(s);
+              }
+            }
+          } catch (_) {}
+        }
+      }
+      return subtopics.toList()..sort();
+    }
+
+    final db = await database;
+    List<String> whereClauses = [];
+    List<dynamic> whereArgs = [];
+
+    if (branch != null && branch != 'Random') {
+      whereClauses.add("branch = ?");
+      whereArgs.add(branch);
+    } else {
+      whereClauses.add("branch != 'Comprehension'");
+    }
+    if (targetLevel != null) {
+      whereClauses.add("level = ?");
+      whereArgs.add(targetLevel);
+    }
+    if (board != null && board != 'Random') {
+      whereClauses.add("board = ?");
+      whereArgs.add(board);
+    }
+    if (majorArea != null && majorArea != 'Random') {
+      whereClauses.add("major_area = ?");
+      whereArgs.add(majorArea);
+    }
+    if (topic != null && topic != 'Random') {
+      whereClauses.add("topic = ?");
+      whereArgs.add(topic);
+    }
+
+    final whereString = whereClauses.isNotEmpty ? "WHERE ${whereClauses.join(' AND ')}" : "";
+    final res = await db.rawQuery('SELECT subtopics FROM questions $whereString', whereArgs);
+
+    final Set<String> subtopics = {};
+    for (var row in res) {
+      final raw = row['subtopics']?.toString() ?? '';
+      if (raw.isNotEmpty) {
+        try {
+          final decoded = json.decode(raw);
+          if (decoded is List) {
+            for (var item in decoded) {
+              final s = item?.toString().trim() ?? '';
+              if (s.isNotEmpty) subtopics.add(s);
+            }
+          }
+        } catch (_) {
+          // If not valid JSON, treat as comma-separated or single string
+          final parts = raw.split(',');
+          for (var p in parts) {
+            final s = p.trim();
+            if (s.isNotEmpty) subtopics.add(s);
+          }
+        }
+      }
+    }
+    return subtopics.toList()..sort();
+  }
+
   // ==========================================
   // FETCH QUESTION (STRICT MATCHING, NO SILENT FALLBACK)
   // ==========================================
@@ -150,6 +242,19 @@ class DatabaseHelper {
         if (filter.isRandomBranch && q['branch'] == 'Comprehension') return false;
         if (!filter.isRandomMajorArea && q['major_area'] != filter.majorArea) return false;
         if (!filter.isRandomTopic && q['topic'] != filter.topic) return false;
+        if (!filter.isRandomSubtopic && filter.subtopic != null) {
+          final raw = q['subtopic'] ?? q['subtopics'];
+          List<String> list = [];
+          if (raw is List) {
+            list = raw.map((e) => e.toString().trim()).toList();
+          } else if (raw is String && raw.isNotEmpty) {
+            try {
+              final dec = json.decode(raw);
+              if (dec is List) list = dec.map((e) => e.toString().trim()).toList();
+            } catch (_) {}
+          }
+          if (!list.contains(filter.subtopic!.trim())) return false;
+        }
         return true;
       }).toList();
 
@@ -187,6 +292,10 @@ class DatabaseHelper {
     if (!filter.isRandomTopic) {
       whereClauses.add("topic = ?");
       whereArgs.add(filter.topic);
+    }
+    if (!filter.isRandomSubtopic && filter.subtopic != null) {
+      whereClauses.add("subtopics LIKE ?");
+      whereArgs.add('%"${filter.subtopic!.trim()}"%');
     }
 
     final res = await db.query(

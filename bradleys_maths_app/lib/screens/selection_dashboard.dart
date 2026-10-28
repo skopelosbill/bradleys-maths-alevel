@@ -14,7 +14,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   final DatabaseHelper _dbHelper = DatabaseHelper();
   final FilterState _filter = FilterState();
 
-  // Current Step: 0 = Board, 1 = Level, 2 = Branch, 3 = Major Area, 4 = Topic
+  // Current Step: 0 = Board, 1 = Level, 2 = Branch, 3 = Major Area, 4 = Topic, 5 = Subtopic
   int _currentStep = 0;
 
   final List<String> _boards = [
@@ -43,6 +43,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
 
   List<String> _majorAreas = ['Random'];
   List<String> _topics = ['Random'];
+  List<String> _subtopics = ['Random'];
   bool _isLoading = false;
 
   @override
@@ -73,10 +74,23 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
       _filter.topic = null;
     }
 
+    final subs = await _dbHelper.getSubtopics(
+      board: _filter.board,
+      level: _filter.level,
+      branch: _filter.branch,
+      majorArea: _filter.majorArea,
+      topic: _filter.topic,
+    );
+
+    if (_filter.subtopic != null && !subs.contains(_filter.subtopic)) {
+      _filter.subtopic = null;
+    }
+
     if (mounted) {
       setState(() {
         _majorAreas = ['Random', ...areas];
         _topics = ['Random', ...topics];
+        _subtopics = ['Random', ...subs];
       });
     }
   }
@@ -129,8 +143,29 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
     }
   }
 
-  void _onTopicTapped(String topicName) {
-    _filter.topic = topicName == 'Random' ? null : topicName;
+  void _onTopicTapped(String topicName) async {
+    setState(() {
+      _filter.setTopic(topicName == 'Random' ? null : topicName);
+      _currentStep = 5; // Instant cut to Subtopic
+    });
+
+    final subs = await _dbHelper.getSubtopics(
+      board: _filter.board,
+      level: _filter.level,
+      branch: _filter.branch,
+      majorArea: _filter.majorArea,
+      topic: _filter.topic,
+    );
+
+    if (mounted) {
+      setState(() {
+        _subtopics = ['Random', ...subs];
+      });
+    }
+  }
+
+  void _onSubtopicTapped(String subtopicName) {
+    _filter.subtopic = subtopicName == 'Random' ? null : subtopicName;
     _launchQuestion(); // Final step: Launch straight into question!
   }
 
@@ -141,11 +176,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   }
 
   void _quickRandomAll() {
-    _filter.board = null;
-    _filter.level = null;
-    _filter.setBranch(null);
-    _filter.majorArea = null;
-    _filter.topic = null;
+    _filter.reset();
     _launchQuestion();
   }
 
@@ -248,6 +279,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
     if (_currentStep > 1) crumbs.add(_filter.level ?? 'Any Level');
     if (_currentStep > 2) crumbs.add(_filter.branch ?? 'Any Branch');
     if (_currentStep > 3) crumbs.add(_filter.majorArea ?? 'Any Area');
+    if (_currentStep > 4) crumbs.add(_filter.topic ?? 'Any Topic');
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -293,7 +325,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
     switch (_currentStep) {
       case 0:
         return _buildStep(
-          stepNumber: "Step 1 of 5",
+          stepNumber: "Step 1 of 6",
           title: "Choose Exam Board",
           subtitle: "Select your board or 'Random' for cross-board practice",
           items: _boards,
@@ -302,7 +334,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
         );
       case 1:
         return _buildStep(
-          stepNumber: "Step 2 of 5",
+          stepNumber: "Step 2 of 6",
           title: "Choose Level",
           subtitle: "Select AS Level, A Level, or Random",
           items: _levels,
@@ -313,7 +345,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
         return _buildBranchStep();
       case 3:
         return _buildStep(
-          stepNumber: "Step 4 of 5",
+          stepNumber: "Step 4 of 6",
           title: "Choose Major Area",
           subtitle: "Filtered by your chosen Branch",
           items: _majorAreas,
@@ -322,12 +354,21 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
         );
       case 4:
         return _buildStep(
-          stepNumber: "Step 5 of 5",
+          stepNumber: "Step 5 of 6",
           title: "Choose Topic",
-          subtitle: "Tap a topic to launch your question immediately",
+          subtitle: "Filtered by your chosen Major Area",
           items: _topics,
           onSelected: _onTopicTapped,
           activeItem: _filter.topic,
+        );
+      case 5:
+        return _buildStep(
+          stepNumber: "Step 6 of 6",
+          title: "Choose Subtopic",
+          subtitle: "Select a laser-focused subtopic or 'All' to launch",
+          items: _subtopics,
+          onSelected: _onSubtopicTapped,
+          activeItem: _filter.subtopic,
         );
       default:
         return const SizedBox.shrink();
@@ -428,7 +469,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Text(
-          "STEP 3 OF 5",
+          "STEP 3 OF 6",
           style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.indigo.shade600, letterSpacing: 1),
         ),
         const SizedBox(height: 2),
