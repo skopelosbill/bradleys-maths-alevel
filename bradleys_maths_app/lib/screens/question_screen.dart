@@ -22,6 +22,8 @@ class QuestionScreen extends StatefulWidget {
 }
 
 class _QuestionScreenState extends State<QuestionScreen> {
+  final ScrollController _scrollController = ScrollController();
+
   late Map<String, dynamic> _currentQuestion;
   List<Map<String, dynamic>> _options = [];
   List<String> _steps = [];
@@ -36,10 +38,31 @@ class _QuestionScreenState extends State<QuestionScreen> {
   bool _showModelAnswer = false;
   int _revealedStepsCount = 1;
 
+  Set<int> _expandedStepIndices = <int>{0};
+  bool _allExpanded = false;
+
   @override
   void initState() {
     super.initState();
     _loadQuestionData(widget.question);
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  void _scrollToBottom() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (_scrollController.hasClients) {
+        _scrollController.animateTo(
+          _scrollController.position.maxScrollExtent,
+          duration: const Duration(milliseconds: 400),
+          curve: Curves.easeOutCubic,
+        );
+      }
+    });
   }
 
   void _loadQuestionData(Map<String, dynamic> q) {
@@ -92,6 +115,15 @@ class _QuestionScreenState extends State<QuestionScreen> {
       _isCorrect = false;
       _showModelAnswer = false;
       _revealedStepsCount = 1;
+      _expandedStepIndices = <int>{0};
+      _allExpanded = false;
+    });
+
+    // Reset scroll to top for new question
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (_scrollController.hasClients) {
+        _scrollController.jumpTo(0);
+      }
     });
   }
 
@@ -117,11 +149,34 @@ class _QuestionScreenState extends State<QuestionScreen> {
         _showModelAnswer = true;
       }
     });
+
+    _scrollToBottom();
   }
 
-  void _loadNextQuestion() async {
-    final nextQ = await widget.dbHelper.fetchQuestion(widget.filterState);
-    if (nextQ != null) _loadQuestionData(nextQ);
+  void _loadDifferentBoardQuestion() async {
+    final nextQ = await widget.dbHelper.fetchDifferentBoardQuestion(_currentQuestion);
+    if (nextQ != null) {
+      _loadQuestionData(nextQ);
+    } else {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('No alternative exam board question available for this topic.')),
+        );
+      }
+    }
+  }
+
+  void _loadGroupProgressionQuestion() async {
+    final nextQ = await widget.dbHelper.fetchGroupProgressionQuestion(_currentQuestion);
+    if (nextQ != null) {
+      _loadQuestionData(nextQ);
+    } else {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('No further progression questions in this group.')),
+        );
+      }
+    }
   }
 
   bool _hasDedicatedImage(dynamic img) {
@@ -153,6 +208,59 @@ class _QuestionScreenState extends State<QuestionScreen> {
     );
   }
 
+  void _showDiagramSheet(BuildContext context, String imgPath) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) {
+        return Container(
+          constraints: BoxConstraints(
+            maxHeight: MediaQuery.of(context).size.height * 0.75,
+          ),
+          decoration: const BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+          ),
+          padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                width: 40,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: Colors.grey.shade400,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+              const SizedBox(height: 12),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    "Figure 1: Problem Diagram",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.close, size: 20),
+                    onPressed: () => Navigator.pop(ctx),
+                  ),
+                ],
+              ),
+              const Divider(height: 8),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: _buildVectorImage(imgPath),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final qId = _currentQuestion['id']?.toString() ?? '------';
@@ -168,11 +276,32 @@ class _QuestionScreenState extends State<QuestionScreen> {
           style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
         elevation: 0,
+        actions: [
+          if (_hasDedicatedImage(rawImg) && rawImg is String)
+            Padding(
+              padding: const EdgeInsets.only(right: 8.0),
+              child: TextButton.icon(
+                style: TextButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.indigo.shade800,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                ),
+                icon: const Icon(Icons.image_outlined, size: 16),
+                label: const Text(
+                  "Diagram",
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                ),
+                onPressed: () => _showDiagramSheet(context, rawImg),
+              ),
+            ),
+        ],
       ),
       body: Center(
         child: Container(
           constraints: const BoxConstraints(maxWidth: 420), // 360-420px mobile viewport
           child: ListView(
+            controller: _scrollController,
             padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
             children: [
               // Metadata Header Badge
@@ -215,12 +344,12 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      _renderMixedContent(_currentQuestion['question'] ?? ''),
-                      // Dedicated Question Image (placed after question text)
+                      // Dedicated Question Image (Placed FIRST like "Figure 1")
                       if (_hasDedicatedImage(rawImg) && rawImg is String) ...[
-                        const SizedBox(height: 12),
                         _buildVectorImage(rawImg),
+                        const SizedBox(height: 14),
                       ],
+                      _renderMixedContent(_currentQuestion['question'] ?? ''),
                     ],
                   ),
                 ),
@@ -269,7 +398,10 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     ),
-                    onPressed: () => setState(() => _optionsUnlocked = true),
+                    onPressed: () {
+                      setState(() => _optionsUnlocked = true);
+                      _scrollToBottom();
+                    },
                     child: const Text(
                       "I've worked it out on paper — Show Options",
                       style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
@@ -354,29 +486,123 @@ class _QuestionScreenState extends State<QuestionScreen> {
               ],
 
               // ------------------------------------
-              // STEP 11: MODEL ANSWER & INSIGHT
+              // STEP 11: MODEL ANSWER & ACCORDION DRAWERS
               // ------------------------------------
               if (_showModelAnswer) ...[
                 const SizedBox(height: 24),
-                const Text(
-                  "Textbook Model Answer",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black87),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      "Textbook Model Answer",
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black87),
+                    ),
+                    // Unfold / Fold Complete Proof Button
+                    TextButton.icon(
+                      style: TextButton.styleFrom(
+                        foregroundColor: Colors.indigo.shade700,
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      ),
+                      icon: Icon(_allExpanded ? Icons.unfold_less : Icons.unfold_more, size: 18),
+                      label: Text(
+                        _allExpanded ? "Collapse" : "Unfold All",
+                        style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                      ),
+                      onPressed: () {
+                        setState(() {
+                          _allExpanded = !_allExpanded;
+                          if (_allExpanded) {
+                            _expandedStepIndices = List.generate(_revealedStepsCount, (i) => i).toSet();
+                          } else {
+                            _expandedStepIndices = <int>{_revealedStepsCount - 1};
+                          }
+                        });
+                      },
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 8),
 
+                // Step Drawers
                 ...List.generate(_revealedStepsCount.clamp(0, _steps.length), (i) {
+                  final isExpanded = (_expandedStepIndices ?? <int>{}).contains(i);
+                  final isFinal = i == _steps.length - 1;
+
                   return Container(
-                    margin: const EdgeInsets.only(bottom: 10),
-                    padding: const EdgeInsets.all(14),
+                    margin: const EdgeInsets.only(bottom: 8),
                     decoration: BoxDecoration(
-                      color: Colors.grey.shade50,
-                      border: Border.all(color: Colors.grey.shade300),
+                      color: isFinal ? const Color(0xFFF0FDF4) : Colors.white,
+                      border: Border.all(
+                        color: isFinal
+                            ? const Color(0xFF86EFAC)
+                            : (isExpanded ? Colors.indigo.shade300 : Colors.grey.shade300),
+                        width: isExpanded ? 1.5 : 1.0,
+                      ),
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    child: _renderMixedContent(_steps[i]),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        // Drawer Header (Tap to Open / Close)
+                        InkWell(
+                          onTap: () {
+                            setState(() {
+                              if (_expandedStepIndices.contains(i)) {
+                                _expandedStepIndices.remove(i);
+                              } else {
+                                _expandedStepIndices.add(i);
+                              }
+                            });
+                          },
+                          borderRadius: BorderRadius.circular(10),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 10.0),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  isFinal ? Icons.check_circle : (isExpanded ? Icons.expand_circle_down : Icons.radio_button_checked),
+                                  size: 18,
+                                  color: isFinal ? const Color(0xFF16A34A) : Colors.indigo.shade700,
+                                ),
+                                const SizedBox(width: 10),
+                                Expanded(
+                                  child: Text(
+                                    isFinal ? "Final Answer" : "Step ${i + 1} of ${_steps.length}",
+                                    style: TextStyle(
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.bold,
+                                      color: isFinal ? const Color(0xFF166534) : Colors.black87,
+                                    ),
+                                  ),
+                                ),
+                                Icon(
+                                  isExpanded ? Icons.keyboard_arrow_up : Icons.keyboard_arrow_down,
+                                  size: 20,
+                                  color: Colors.grey.shade600,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+
+                        // Drawer Content (Visible only when expanded)
+                        if (isExpanded)
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(14, 0, 14, 14),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: [
+                                const Divider(height: 12),
+                                _renderMixedContent(_steps[i]),
+                              ],
+                            ),
+                          ),
+                      ],
+                    ),
                   );
                 }),
 
+                // Reveal Next Step Button
                 if (_revealedStepsCount < _steps.length)
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 4.0),
@@ -385,15 +611,27 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       style: OutlinedButton.styleFrom(
                         foregroundColor: Colors.indigo.shade700,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                        padding: const EdgeInsets.symmetric(vertical: 12),
                       ),
-                      onPressed: () => setState(() => _revealedStepsCount++),
+                      onPressed: () {
+                        setState(() {
+                          _revealedStepsCount++;
+                          if (!_allExpanded) {
+                            _expandedStepIndices = <int>{_revealedStepsCount - 1};
+                          } else {
+                            _expandedStepIndices.add(_revealedStepsCount - 1);
+                          }
+                        });
+                        _scrollToBottom();
+                      },
                       label: Text(
-                        "Reveal Next Step (${_revealedStepsCount + 1}/${_steps.length})",
-                        style: const TextStyle(fontWeight: FontWeight.bold),
+                        "Reveal Step ${_revealedStepsCount + 1} of ${_steps.length}",
+                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
                       ),
                     ),
                   ),
 
+                // Bradley Insight
                 if (_revealedStepsCount >= _steps.length && _insight != null)
                   _renderInsightCard(_insight!),
 
@@ -402,23 +640,71 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 // ------------------------------------
                 // STEP 12: SMART RECOMMENDATIONS
                 // ------------------------------------
+                const Text(
+                  "Smart Next Steps",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black87),
+                ),
+                const SizedBox(height: 12),
+
+                // Option A: Cross-Board Mastery
                 SizedBox(
-                  height: 50,
+                  width: double.infinity,
+                  height: 48,
                   child: ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.indigo.shade700,
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     ),
-                    icon: const Icon(Icons.arrow_forward),
-                    onPressed: _loadNextQuestion,
+                    icon: const Icon(Icons.swap_horiz, size: 20),
+                    onPressed: _loadDifferentBoardQuestion,
                     label: const Text(
-                      "Next Question",
-                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                      "Option A: Try a Different Board",
+                      style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 10),
+
+                // Option B: Progression in Same ID Group (Twin / Cousin)
+                SizedBox(
+                  width: double.infinity,
+                  height: 48,
+                  child: ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade700,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                    ),
+                    icon: const Icon(Icons.trending_up, size: 20),
+                    onPressed: _loadGroupProgressionQuestion,
+                    label: const Text(
+                      "Option B: Progression (Twin / Cousin)",
+                      style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 10),
+
+                // Option C: Dashboard / Change Topic
+                SizedBox(
+                  width: double.infinity,
+                  height: 48,
+                  child: OutlinedButton.icon(
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: Colors.grey.shade800,
+                      side: BorderSide(color: Colors.grey.shade400),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                    ),
+                    icon: const Icon(Icons.dashboard_outlined, size: 20),
+                    onPressed: () => Navigator.pop(context),
+                    label: const Text(
+                      "Option C: Return to Dashboard",
+                      style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 24),
               ]
             ],
           ),
@@ -498,7 +784,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
       factoryBuilder: () => _MathWidgetFactory(),
       textStyle: const TextStyle(fontSize: 15, height: 1.5, color: Colors.black87),
       customWidgetBuilder: (el) {
-        // Intercept inline <img> tags to render vectors cleanly
         if (el.localName == 'img') {
           final src = el.attributes['src'] ?? '';
           if (src.isNotEmpty) {
@@ -541,7 +826,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
 // --------------------------------------------------------
 // SMART LATEX WIDGET FACTORY
-// Separates Display/Aligned Block Math from Inline Math
 // --------------------------------------------------------
 class _MathWidgetFactory extends WidgetFactory {
   static final RegExp _blockPattern = RegExp(

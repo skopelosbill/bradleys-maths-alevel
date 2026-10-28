@@ -723,47 +723,47 @@ window.ALEVEL_QUESTIONS = [
     }
   },
   {
-    "id": "004369",
-    "group_id": "004366",
-    "board": "WJEC",
-    "branch": "Pure",
-    "level": "AS",
-    "major_area": "Differentiation",
-    "topic": "Power Rule",
-    "subtopic": [
-      "Tangents and Normals"
-    ],
-    "img": false,
-    "question": "A curve $C$ has the equation:$$y = \\dfrac{8}{x} + 2x$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$.<br><br><strong>(b)</strong> The tangent to $C$ at a point $P$ in the first quadrant has a gradient of $0$. Find the coordinates of $P$.<br><br><strong>(c)</strong> Find the equation of the normal to $C$ at the point where $x = 4$.",
-    "steps": [
-      "<strong>Part (a): Differentiating the expression</strong><br><br>Rewrite the curve's equation using negative indices:\\begin{aligned} y = 8x^{-1} + 2x \\end{aligned}Now, apply the power rule of differentiation:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= -8x^{-2} + 2 \\cr &= -\\dfrac{8}{x^2} + 2 \\end{aligned}",
-      "<strong>Part (b): Finding the point $P$</strong><br><br>Since the gradient of the tangent at $P$ is $0$, we set our derivative equal to $0$:\\begin{aligned} -\\dfrac{8}{x^2} + 2 &= 0 \\cr \\dfrac{8}{x^2} &= 2 \\cr 2x^2 &= 8 \\cr x^2 &= 4 \\cr x &= \\pm 2 \\end{aligned}Since $P$ is in the first quadrant, the $x$-coordinate must be positive, so we take $x = 2$.",
-      "Substitute $x = 2$ back into the curve's original equation to find the $y$-coordinate of $P$:\\begin{aligned} y &= \\dfrac{8}{2} + 2(2) \\cr &= 4 + 4 \\cr &= 8 \\end{aligned}Thus, the coordinates of $P$ are $P(2, 8)$.",
-      "<strong>Part (c): Finding the equation of the normal at $x = 4$</strong><br><br>First, find the point on the curve when $x = 4$:\\begin{aligned} y &= \\dfrac{8}{4} + 2(4) \\cr &= 2 + 8 \\cr &= 10 \\end{aligned}So, the point on the curve is $(4, 10)$.",
-      "Next, find the gradient of the tangent at $x = 4$ by evaluating the derivative:\\begin{aligned} m_t &= -\\dfrac{8}{4^2} + 2 \\cr &= -\\dfrac{8}{16} + 2 \\cr &= -0.5 + 2 \\cr &= \\dfrac{3}{2} \\end{aligned}",
-      "The gradient of the normal is the negative reciprocal of the tangent gradient:\\begin{aligned} m_n &= -\\dfrac{1}{m_t} \\cr &= -\\dfrac{2}{3} \\end{aligned}Use the point-slope formula with point $(4, 10)$ and gradient $m_n = -\\dfrac{2}{3}$ to write the normal equation:\\begin{aligned} y - 10 &= -\\dfrac{2}{3}(x - 4) \\cr 3(y - 10) &= -2(x - 4) \\cr 3y - 30 &= -2x + 8 \\cr 2x + 3y - 38 &= 0 \\end{aligned}",
-      "Final Answer:\\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{8}{x^2} + 2 \\cr &P(2, 8) \\cr &2x + 3y - 38 = 0 \\end{aligned}"
-    ],
-    "pi_options": [
-      {
-        "ans": "\\begin{aligned} &P(-2, -8) \\cr &\\text{Normal: } 2x + 3y - 38 = 0 \\end{aligned}",
-        "feedback": "This error occurs if you ignore the restriction that $P$ must lie in the first quadrant. In the first quadrant, both coordinates must be positive, which means you must choose $x = 2$ instead of $x = -2$."
-      },
-      {
-        "ans": "\\begin{aligned} &P(2, 8) \\cr &\\text{Normal: } y = 1.5x + 4 \\end{aligned}",
-        "feedback": "This error occurs if you use the gradient of the tangent ($m_t = 1.5$) instead of the perpendicular gradient of the normal ($m_n = -\\dfrac{2}{3}$) to find the equation of the normal."
-      },
-      {
-        "ans": "\\begin{aligned} &P(2, 8) \\cr &\\text{Normal: } 2x + 3y - 26 = 0 \\end{aligned}",
-        "feedback": "This is the result of using the correct normal gradient but mistakenly using the coordinates of point $P(2, 8)$ instead of the coordinates at $x = 4$ (which are $(4, 10)$) to write the normal equation."
-      }
-    ],
-    "bradley_insight": {
-      "type": "deeper",
-      "title": "Understanding Perpendicular Gradients",
-      "content": "Always distinguish carefully between the tangent and the normal. The tangent gradient is given by the derivative $m_t = \\dfrac{\\text{d}y}{\\text{d}x}$. The normal is perpendicular to the tangent, so its gradient is the negative reciprocal: $m_n = -\\dfrac{1}{m_t}$. Verify that $m_t \\times m_n = -1$."
+  "id": "004369",
+  "group_id": "004366",
+  "board": "WJEC",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Differentiation",
+  "topic": "Power Rule",
+  "subtopic": [
+    "Tangents and Normals"
+  ],
+  "img": false,
+  "question": "A curve $C$ has the equation:$$y = \\dfrac{8}{x} + 2x$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$.<br><br><strong>(b)</strong> The tangent to $C$ at a point $P$ in the first quadrant has a gradient of $0$. Find the coordinates of $P$.<br><br><strong>(c)</strong> Find the equation of the normal to $C$ at the point where $x = 4$.",
+  "steps": [
+    "<strong>Part (a): Differentiating the expression</strong><br><br>Rewrite the curve's equation using negative indices:\\begin{aligned} y = 8x^{-1} + 2x \\end{aligned}Now, apply the power rule of differentiation:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= -8x^{-2} + 2 \\cr &= -\\dfrac{8}{x^2} + 2 \\end{aligned}",
+    "<strong>Part (b): Finding the point $P$</strong><br><br>Since the gradient of the tangent at $P$ is $0$, we set our derivative equal to $0$:\\begin{aligned} -\\dfrac{8}{x^2} + 2 &= 0 \\cr \\dfrac{8}{x^2} &= 2 \\cr 2x^2 &= 8 \\cr x^2 &= 4 \\cr x &= \\pm 2 \\end{aligned}Since $P$ is in the first quadrant, the $x$-coordinate must be positive, so we take $x = 2$.",
+    "Substitute $x = 2$ back into the curve's original equation to find the $y$-coordinate of $P$:\\begin{aligned} y &= \\dfrac{8}{2} + 2(2) \\cr &= 4 + 4 \\cr &= 8 \\end{aligned}Thus, the coordinates of $P$ are $P(2, 8)$.",
+    "<strong>Part (c): Finding the equation of the normal at $x = 4$</strong><br><br>First, find the point on the curve when $x = 4$:\\begin{aligned} y &= \\dfrac{8}{4} + 2(4) \\cr &= 2 + 8 \\cr &= 10 \\end{aligned}So, the point on the curve is $(4, 10)$.",
+    "Next, find the gradient of the tangent at $x = 4$ by evaluating the derivative:\\begin{aligned} m_t &= -\\dfrac{8}{4^2} + 2 \\cr &= -\\dfrac{8}{16} + 2 \\cr &= -0.5 + 2 \\cr &= \\dfrac{3}{2} \\end{aligned}",
+    "The gradient of the normal is the negative reciprocal of the tangent gradient:\\begin{aligned} m_n &= -\\dfrac{1}{m_t} \\cr &= -\\dfrac{2}{3} \\end{aligned}Use the point-slope formula with point $(4, 10)$ and gradient $m_n = -\\dfrac{2}{3}$ to write the normal equation:\\begin{aligned} y - 10 &= -\\dfrac{2}{3}(x - 4) \\cr 3(y - 10) &= -2(x - 4) \\cr 3y - 30 &= -2x + 8 \\cr 2x + 3y - 38 &= 0 \\end{aligned}",
+    "<strong>Final Answer:</strong>\\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{8}{x^2} + 2 \\cr &P(2, 8) \\cr &2x + 3y - 38 = 0 \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{8}{x^2} + 2 \\cr &P(2, 8) \\cr &2x + 5y - 58 = 0 \\end{aligned}",
+      "feedback": "This error occurs if you forget the negative sign when differentiating $8x^{-1}$. Multiplying by the power $-1$ gives $-8x^{-2} = -\\dfrac{8}{x^2}$. A sign slip here carries through to give an incorrect tangent gradient of $\\dfrac{5}{2}$ and normal gradient of $-\\dfrac{2}{5}$."
+    },
+    {
+      "ans": "\\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{8}{x^2} + 2 \\cr &P(-2, -8) \\cr &2x + 3y - 38 = 0 \\end{aligned}",
+      "feedback": "This error occurs if you ignore the restriction that $P$ must lie in the first quadrant. In the first quadrant, both coordinates must be positive, which means you must choose $x = 2$ instead of $x = -2$."
+    },
+    {
+      "ans": "\\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{8}{x^2} + 2 \\cr &P(2, 8) \\cr &3x - 2y + 8 = 0 \\end{aligned}",
+      "feedback": "This error occurs if you use the gradient of the tangent ($m_t = \\dfrac{3}{2}$) instead of the perpendicular gradient of the normal ($m_n = -\\dfrac{2}{3}$) to find the equation of the line."
     }
-  },
+  ],
+  "bradley_insight": {
+    "type": "deeper",
+    "title": "The Head Teacher's Eye: Understanding Perpendicular Gradients",
+    "content": "Always distinguish carefully between the tangent and the normal. The tangent gradient is given by the derivative $m_t = \\dfrac{\\text{d}y}{\\text{d}x}$. The normal is perpendicular to the tangent, so its gradient is the negative reciprocal: $m_n = -\\dfrac{1}{m_t}$. Verify that $m_t \\times m_n = -1$."
+  }
+},
   {
     "id": "004370",
     "group_id": "004366",

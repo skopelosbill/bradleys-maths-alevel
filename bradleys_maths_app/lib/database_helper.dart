@@ -189,12 +189,122 @@ class DatabaseHelper {
       whereArgs.add(filter.topic);
     }
 
-    final whereString = whereClauses.isNotEmpty ? "WHERE ${whereClauses.join(' AND ')}" : "";
     final res = await db.query(
       'questions',
       where: whereClauses.join(' AND '),
       whereArgs: whereArgs,
       orderBy: 'RANDOM()',
+      limit: 1,
+    );
+    return res.isNotEmpty ? res.first : null;
+  }
+
+  // ==========================================
+  // STEP 12: SMART BRANCHING QUERIES
+  // ==========================================
+
+  // Option A: Similar question from a DIFFERENT exam board (Subtopic Priority with Topic Fallback)
+  Future<Map<String, dynamic>?> fetchDifferentBoardQuestion(Map<String, dynamic> currentQ) async {
+    final currentId = currentQ['id']?.toString() ?? '';
+    final currentBoard = currentQ['board']?.toString() ?? '';
+    final branch = currentQ['branch']?.toString() ?? '';
+    final level = currentQ['level']?.toString() ?? '';
+    final topic = currentQ['topic']?.toString() ?? '';
+
+    // Extract the primary subtopic if available
+    final List<dynamic> rawSubtopics = currentQ['subtopic'] is List ? currentQ['subtopic'] : [];
+    final String? primarySubtopic = rawSubtopics.isNotEmpty ? rawSubtopics.first.toString() : null;
+
+    if (kIsWeb) {
+      final data = await _loadWebData();
+
+      // Base candidate filter: different ID, different Board, same Branch & Level
+      var baseCandidates = data.where((q) {
+        if (q['id']?.toString() == currentId) return false;
+        if (q['board']?.toString() == currentBoard) return false;
+        if (q['branch'] != branch) return false;
+        if (q['level'] != level) return false;
+        return true;
+      }).toList();
+
+      // Priority 1: Exact Subtopic Match across different boards
+      if (primarySubtopic != null && primarySubtopic.isNotEmpty) {
+        var subtopicMatches = baseCandidates.where((q) {
+          final qSubtopics = q['subtopic'] is List ? q['subtopic'] as List : [];
+          return qSubtopics.any((s) => s.toString().toLowerCase() == primarySubtopic.toLowerCase());
+        }).toList();
+
+        if (subtopicMatches.isNotEmpty) {
+          subtopicMatches.shuffle();
+          return subtopicMatches.first;
+        }
+      }
+
+      // Priority 2 (Fallback): Match by Topic across different boards
+      var topicMatches = baseCandidates.where((q) => q['topic'] == topic).toList();
+      if (topicMatches.isNotEmpty) {
+        topicMatches.shuffle();
+        return topicMatches.first;
+      }
+
+      return null;
+    }
+
+    // Native SQLite implementation
+    final db = await database;
+
+    // Priority 1: Exact Subtopic Match
+    if (primarySubtopic != null && primarySubtopic.isNotEmpty) {
+      final subtopicRes = await db.query(
+        'questions',
+        where: 'id != ? AND board != ? AND branch = ? AND level = ? AND subtopics LIKE ?',
+        whereArgs: [currentId, currentBoard, branch, level, '%$primarySubtopic%'],
+        orderBy: 'RANDOM()',
+        limit: 1,
+      );
+      if (subtopicRes.isNotEmpty) return subtopicRes.first;
+    }
+
+    // Priority 2 (Fallback): Match by Topic
+    final topicRes = await db.query(
+      'questions',
+      where: 'id != ? AND board != ? AND branch = ? AND level = ? AND topic = ?',
+      whereArgs: [currentId, currentBoard, branch, level, topic],
+      orderBy: 'RANDOM()',
+      limit: 1,
+    );
+    return topicRes.isNotEmpty ? topicRes.first : null;
+  }
+
+  // Option B: Progression question from the SAME ID group (Twin / Cousin)
+  Future<Map<String, dynamic>?> fetchGroupProgressionQuestion(Map<String, dynamic> currentQ) async {
+    final currentId = currentQ['id']?.toString() ?? '';
+    final groupId = currentQ['group_id']?.toString() ?? '';
+
+    if (groupId.isEmpty) return null;
+
+    if (kIsWeb) {
+      final data = await _loadWebData();
+      var matches = data.where((q) {
+        if (q['id']?.toString() == currentId) return false;
+        if (q['group_id']?.toString() != groupId) return false;
+        return true;
+      }).toList();
+
+      if (matches.isNotEmpty) {
+        // Return the next sequential question in this group if possible
+        matches.sort((a, b) => (a['id']?.toString() ?? '').compareTo(b['id']?.toString() ?? ''));
+        return matches.first;
+      }
+      return null;
+    }
+
+    final db = await database;
+    final res = await db.query(
+      'questions',
+      where: 'id != ? AND group_id = ?',
+      whereArgs: [currentId, groupId],
+      orderBy: 'id ASC',
       limit: 1,
     );
     return res.isNotEmpty ? res.first : null;
