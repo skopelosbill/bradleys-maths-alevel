@@ -48,24 +48,50 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
     _loadTaxonomy();
   }
 
+  // Reloads both Major Areas and Topics based on ALL current filters
   Future<void> _loadTaxonomy() async {
-  final areas = await _dbHelper.getMajorAreas(
-    branch: _filter.branch,
-    level: _filter.level, // <--- Pass the level!
-    board: _filter.board, // <--- Pass the board!
-  );
-  final topics = await _dbHelper.getTopics(
-    branch: _filter.branch,
-    level: _filter.level, // <--- Pass the level!
-    board: _filter.board, // <--- Pass the board!
-    majorArea: _filter.majorArea,
-  );
+    final areas = await _dbHelper.getMajorAreas(
+      board: _filter.board,
+      level: _filter.level,
+      branch: _filter.branch,
+    );
 
-  setState(() {
-    _majorAreas = ['Random', ...areas];
-    _topics = ['Random', ...topics];
-  });
-}
+    // Safeguard: If the currently selected Major Area is not in the new valid list, reset it
+    if (_filter.majorArea != null && !areas.contains(_filter.majorArea)) {
+      _filter.majorArea = null;
+    }
+
+    final topics = await _dbHelper.getTopics(
+      board: _filter.board,
+      level: _filter.level,
+      branch: _filter.branch,
+      majorArea: _filter.majorArea,
+    );
+
+    // Safeguard: If the currently selected Topic is not in the new valid list, reset it
+    if (_filter.topic != null && !topics.contains(_filter.topic)) {
+      _filter.topic = null;
+    }
+
+    setState(() {
+      _majorAreas = ['Random', ...areas];
+      _topics = ['Random', ...topics];
+    });
+  }
+
+  void _onBoardSelected(String boardName) async {
+    setState(() {
+      _filter.board = boardName == 'Random' ? null : boardName;
+    });
+    await _loadTaxonomy();
+  }
+
+  void _onLevelSelected(String levelName) async {
+    setState(() {
+      _filter.level = levelName == 'Random' ? null : levelName;
+    });
+    await _loadTaxonomy();
+  }
 
   void _onBranchSelected(String branchName) async {
     setState(() {
@@ -78,12 +104,19 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
     setState(() {
       _filter.setMajorArea(areaName == 'Random' ? null : areaName);
     });
+
     final topics = await _dbHelper.getTopics(
+      board: _filter.board,
+      level: _filter.level,
       branch: _filter.branch,
       majorArea: _filter.majorArea,
     );
+
     setState(() {
       _topics = ['Random', ...topics];
+      if (_filter.topic != null && !topics.contains(_filter.topic)) {
+        _filter.topic = null;
+      }
     });
   }
 
@@ -147,27 +180,22 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               // ------------------------------------
               // STEP 2: EXAM BOARD SELECTOR
               // ------------------------------------
-             _buildSectionHeader("Step 2: Choose Board"),
-             Wrap(
-               alignment: WrapAlignment.center, // Centralises buttons within the Wrap
-               spacing: 8.0, // Horizontal space between chips
-               runSpacing: 4.0, // Vertical space if they wrap to a new line
-               children: _boards.map((b) {
-                final isSelected = (_filter.board ?? 'Random') == b;
-                return ChoiceChip(
-                  label: Text(b),
-                  selected: isSelected,
-                   onSelected: (selected) {
-                    if (selected) {
-                      setState(() {
-                        _filter.board = b == 'Random' ? null : b;
-                      });
-                       _loadTaxonomy();
-                    }
-                   },
-                 );
-              }).toList(),
-            ),
+              _buildSectionHeader("Step 2: Choose Board"),
+              Wrap(
+                alignment: WrapAlignment.center,
+                spacing: 8.0,
+                runSpacing: 4.0,
+                children: _boards.map((b) {
+                  final isSelected = (_filter.board ?? 'Random') == b;
+                  return ChoiceChip(
+                    label: Text(b),
+                    selected: isSelected,
+                    onSelected: (selected) {
+                      if (selected) _onBoardSelected(b);
+                    },
+                  );
+                }).toList(),
+              ),
 
               const SizedBox(height: 16),
 
@@ -185,11 +213,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                         label: Center(child: Text(lvl)),
                         selected: isSelected,
                         onSelected: (selected) {
-                          if (selected) {
-                            setState(() {
-                              _filter.level = lvl == 'Random' ? null : lvl;
-                            });
-                          }
+                          if (selected) _onLevelSelected(lvl);
                         },
                       ),
                     ),
@@ -207,7 +231,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                 subtext: "Rule: 'Random' automatically excludes Comprehension",
               ),
               Wrap(
-                alignment: WrapAlignment.center, // Centralises buttons within the Wrap
+                alignment: WrapAlignment.center,
                 spacing: 8.0,
                 runSpacing: 8.0,
                 children: _branches.map((br) {
