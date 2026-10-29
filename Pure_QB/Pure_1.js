@@ -1927,15 +1927,15 @@ window.ALEVEL_QUESTIONS = [
   ],
   "pi_options": [
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Always true} \\cr &\\text {(squaring any real number makes it larger)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Always true} \\cr &\\text {(squaring any real number} \\cr &\\text { makes it larger)} \\end{aligned}",
       "feedback": "Squaring only increases the value for numbers strictly greater than 1 or negative numbers. For numbers between 0 and 1 (such as $x = 0.5$), squaring actually makes the value smaller: $0.5^2 = 0.25 < 0.5$."
     },
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true } \\cr &\\text {(testing } x = 0 \\text{ and } x = 1 } \\cr &\\text{ both fail the strict inequality)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true } \\cr &\\text {(testing } x = 0 \\text{ and } x = 1 \\cr &\\text{ both fail the} \\cr &\\text { strict inequality)} \\end{aligned}",
       "feedback": "While it is true that $x = 0$ and $x = 1$ fail because $0 > 0$ and $1 > 1$ are false, the statement is not 'never true'. It holds for many values, such as any $x > 1$ (e.g. $3^2 = 9 > 3$) and all negative numbers (e.g. $(-2)^2 = 4 > -2$)."
     },
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by mathematical} } \\cr &\\text {induction completed} \\cr &\\textbf{(ii) } \\text{Sometimes true} \\cr &\\text {(e.g. holds for } x = 2 \\text{, but fails for } x = 0.5\\text{)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by mathematical}  \\cr &\\text {induction completed} \\cr &\\textbf{(ii) } \\text{Sometimes true} \\cr &\\text {(e.g. holds for } x = 2 \\text{,} \\cr &\\text { but fails for } x = 0.5\\text{)} \\end{aligned}",
       "feedback": "Part (i) is a proof by exhaustion because we test every possible remainder category ($3k, 3k+1, 3k+2$) to cover all natural numbers. Mathematical induction is a different technique used to prove statements for $n$ and $n+1$ sequences."
     }
   ],
