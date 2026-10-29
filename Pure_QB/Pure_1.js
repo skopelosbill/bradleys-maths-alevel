@@ -1902,227 +1902,217 @@ window.ALEVEL_QUESTIONS = [
                         "content": "Do not let high powers like $b^5$ or $b^3$ intimidate you. The algebraic rules for logarithm subtraction, factoring, and inequality boundaries remain completely identical to simple linear cases. Trust your core algebraic rules."
                 }
         },
-        {
-                "id": "004046",
-                "group_id": "004046",
-                "board": "Edexcel",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Proof",
-                "topic": "Proof",
-                "subtopic": [
-                        "Inequalities",
-                        "Proof"
-                ],
-                "img": false,
-                "question": "<strong>(i)</strong> Prove that for all $n \\in \\mathbb{N}$, $n^2 + 1$ is not divisible by 3.<br><br><strong>(ii)</strong> \"Given $x \\in \\mathbb{R}$, the value of |2x - 12| is greater than or equal to the value of (x - 5).\"<br>State, giving a reason, if the above statement is always true, sometimes true, or never true.",
-                "steps": [
-                        "<strong>Part (i):</strong> We use <strong>proof by exhaustion</strong> by splitting the natural numbers into three cases based on their divisibility by 3. Any natural number n can be written as 3k, 3k+1, or 3k+2 for some non-negative integer k.",
-                        "<strong>Case 1: $n = 3k$ (multiples of 3)</strong><br>\\begin{aligned}n^2 + 1 &= (3k)^2 + 1 \\cr&= 9k^2 + 1 \\cr&= 3(3k^2) + 1\\end{aligned}<br>Since $3(3k^2)$ is divisible by 3, $n^2+1$ leaves a remainder of 1 when divided by 3, so it is not divisible.",
-                        "<strong>Case 2: $n = 3k + 1$</strong><br>\\begin{aligned}n^2 + 1 &= (3k+1)^2 + 1 \\cr&= 9k^2 + 6k + 1 + 1 \\cr&= 3(3k^2 + 2k) + 2\\end{aligned}<br>This leaves a remainder of 2 when divided by 3, so it is not divisible.",
-                        "<strong>Case 3: $n = 3k + 2$</strong><br>\\begin{aligned}n^2 + 1 &= (3k+2)^2 + 1 \\cr&= 9k^2 + 12k + 4 + 1 \\cr&= 9k^2 + 12k + 5 \\cr&= 3(3k^2 + 4k + 1) + 2\\end{aligned}<br>This also leaves a remainder of 2 when divided by 3, so it is not divisible.<br>Therefore, since all possible cases have been exhausted, $n^2 + 1$ is never divisible by 3 for any $n \\in \\mathbb{N}$.",
-                        "<strong>Part (ii):</strong> To determine the validity of the statement $|2x - 12| \\ge x - 5$, we analyze the critical values by splitting the absolute value into two intervals at the boundary $x = 6$:",
-                        "<strong>Case A: For $x \\ge 6$</strong>, the term inside the absolute value is positive, so $|2x - 12| = 2x - 12$. Our inequality becomes:\\begin{aligned}2x - 12 &\\ge x - 5 \\cr\\implies x &\\ge 7\\end{aligned}<br>This means that in the interval $6 \\le x < 7$, the inequality is <strong>false</strong> (for example, at $x = 6$, we get $0 \\ge 1$, which is false).",
-                        "<strong>Case B: For $x < 6$</strong>, the term inside the absolute value is negative, so \\begin{aligned}|2x - 12| &= -(2x - 12) \\cr &= 12 - 2x\\end{aligned}. Our inequality becomes:\\begin{aligned}12 - 2x &\\ge x - 5\\cr \\implies 17 &\\ge 3x \\cr \\implies x &\\le 5.67\\end{aligned}<br>This means the inequality is true for $x \\le 5.67$ and $x \\ge 7$, but fails in the gap $5.67 < x < 7$.",
-                        "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $12 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 6$, where $|2(6)-12| = 0$ is not greater than or equal to $6-5 = 1$).",
-                        "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$ $$\\text{fails in the interval }5.67 < x < 7\\text{)}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "<strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Always true}$$",
-                                "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $5.67 < x < 7$, the value of the linear expression x-5 is actually larger than the absolute value |2x-12|, making the statement false in this range."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Never true}$$",
-                                "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-12| \\ge -5 \\implies 12 \\ge -5$, which is a true statement."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $$\\text{Proof by algebraic induction}$$ $$\\text{(is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$",
-                                "feedback": "Part (i) is a proof by exhaustion (cases), not mathematical induction. Induction is used when a statement depends on n and n+1 sequences, whereas here we exhaust all possible algebraic remainders of n directly."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Absolute Value Gaps",
-                        "content": "For this question, when evaluating inequalities of the form $|Ax - B| \\ge x - C$, always check if the line $y = x - C$ passes above the vertex of the absolute value graph. If it does, there will always be a small 'gap' interval where the absolute value function dips below the line, rendering the statement only sometimes true."
-                }
-        },
-        {
-                "id": "004047",
-                "group_id": "004046",
-                "board": "Edexcel",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Proof",
-                "topic": "Proof",
-                "subtopic": [
-                        "Inequalities",
-                        "Proof"
-                ],
-                "img": false,
-                "question": "<strong>(i)</strong> Prove that for all $n \\in \\mathbb{N}$, $n^2 + 1$ is not divisible by 4.<br><br><strong>(ii)</strong> \"Given $x \\in \\mathbb{R}$, the value of |3x - 14| is greater than or equal to the value of (x - 4).\"<br>State, giving a reason, if the above statement is always true, sometimes true, or never true.",
-                "steps": [
-                        "<strong>Part (i):</strong> We use <strong>proof by exhaustion</strong> by splitting the natural numbers into two cases: even numbers ($n = 2k$) and odd numbers ($n = 2k + 1$) for some non-negative integer k.",
-                        "<strong>Case 1: n is even ($n = 2k$)</strong>\\begin{aligned}n^2 + 1 &= (2k)^2 + 1 \\cr&= 4k^2 + 1 \\cr&= 4(k^2) + 1\\end{aligned}<br>Since $4(k^2)$ is divisible by 4, $n^2+1$ leaves a remainder of 1 when divided by 4, so it is not divisible.",
-                        "<strong>Case 2: n is odd ($n = 2k + 1$)</strong><br>\\begin{aligned}n^2 + 1 &= (2k+1)^2 + 1 \\cr&= 4k^2 + 4k + 1 + 1 \\cr&= 4(k^2 + k) + 2\\end{aligned}<br>This leaves a remainder of 2 when divided by 4, so it is not divisible.<br>Therefore, since all possible cases have been exhausted, $n^2 + 1$ is never divisible by 4 for any $n \\in \\mathbb{N}$.",
-                        "<strong>Part (ii):</strong> To determine the validity of the statement $|3x - 14| \\ge x - 4$, we analyze the critical values by splitting the absolute value into two intervals at the boundary $x = \\frac{14}{3} \\approx 4.67$:",
-                        "<strong>Case A: For $x \\ge 4.67$</strong>, the term inside the absolute value is positive, so $|3x - 14| = 3x - 14$. Our inequality becomes:\\begin{aligned}3x - 14 &\\ge x - 4\\cr \\implies 2x & \\ge 10 \\cr\\implies x &\\ge 5\\end{aligned} This means that in the interval $4.67 \\le x < 5$, the inequality is <strong>false</strong> (for example, at $x = 4.8$, we get $0.4 \\ge 0.8$, which is false).",
-                        "<strong>Case B: For $x < 4.67$</strong>, the term inside the absolute value is negative, so $|3x - 14| = 14 - 3x$. Our inequality becomes:\\begin{aligned}14 - 3x & \\ge x - 4 \\cr \\implies 18 &\\ge 4x \\cr \\implies x & \\le 4.5\\end{aligned}>This means the inequality is true for $x \\le 4.5$ and $x \\ge 5$, but fails in the gap $4.5 < x < 5$.",
-                        "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $14 \\ge -4$), but fails for a small range of values (with a counterexample of $x = 4.8$, where $|3(4.8)-14| = 0.4$ is not greater than or equal to $4.8-4 = 0.8$).",
-                        "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$ $$\\text{fails in the interval } 4.5 < x < 5\\text{)}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "<strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Always true}$$",
-                                "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $4.5 < x < 5$, the value of the linear expression x-4 is actually larger than the absolute value |3x-14|, making the statement false in this range."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Never true}$$",
-                                "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-14| \\ge -4 \\implies 14 \\ge -4$, which is a true statement."
-                        },
-                        {
-                                "ans": "<strong>(i)</strong> $$\\text{Proof by contradiction is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$",
-                                "feedback": "Part (i) is a proof by exhaustion (cases), not a proof by contradiction. A proof by contradiction starts by assuming the opposite statement is true and finding a mathematical impossibility, whereas here we systematically test all even and odd possibilities."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Divisibility by 4",
-                        "content": "For this question, when proving divisibility or non-divisibility by 4, splitting your integers into even (2k) and odd (2k+1) is the most efficient method. This is because any even number squared yields a term strictly divisible by 4, and any odd number squared yields $4(k^2+k)+1$, making the remainder analysis very straightforward."
-                }
-        },
-        {
-                "id": "004048",
-                "group_id": "004046",
-                "board": "Edexcel",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Proof",
-                "topic": "Proof",
-                "subtopic": [
-                        "Inequalities",
-                        "Proof"
-                ],
-                "img": false,
-                "question": "<strong>(i)</strong> Prove that for all $n \\in \\mathbb{N}$, $n^2 + 5$ is not divisible by 4.<br><br><strong>(ii)</strong> \"Given $x \\in \\mathbb{R}$, the value of |2x - 8| is greater than or equal to the value of (x - 3).\"<br>State, giving a reason, if the above statement is always true, sometimes true, or never true.",
-                "steps": [
-                        "<strong>Part (i):</strong> We use <strong>proof by exhaustion</strong> by splitting the natural numbers into two cases: even numbers ($n = 2k$) and odd numbers ($n = 2k + 1$) for some non-negative integer k.",
-                        "<strong>Case 1: n is even ($n = 2k$)</strong><br>\\begin{aligned}n^2 + 5 &= (2k)^2 + 5 \\cr&= 4k^2 + 5 \\cr&= 4(k^2 + 1) + 1\\end{aligned}<br>Since $4(k^2+1)$ is divisible by 4, $n^2+5$ leaves a remainder of 1 when divided by 4, so it is not divisible.",
-                        "<strong>Case 2: n is odd ($n = 2k + 1$)</strong><br>\\begin{aligned}n^2 + 5 &= (2k+1)^2 + 5 \\cr&= 4k^2 + 4k + 1 + 5 \\cr&= 4k^2 + 4k + 6 \\cr&= 4(k^2 + k + 1) + 2\\end{aligned}<br>This leaves a remainder of 2 when divided by 4, so it is not divisible.<br>Therefore, since all possible cases have been exhausted, $n^2 + 5$ is never divisible by 4 for any $n \\in \\mathbb{N}$.",
-                        "<strong>Part (ii):</strong> To determine the validity of the statement $|2x - 8| \\ge x - 3$, we analyze the critical values by splitting the absolute value into two intervals at the boundary $x = 4$:",
-                        "<strong>Case A: For $x \\ge 4$</strong>, the term inside the absolute value is positive, so $|2x - 8| = 2x - 8$. Our inequality becomes:<br>$$2x - 8 \\ge x - 3 \\implies x \\ge 5$$<br>This means that in the interval $4 \\le x < 5$, the inequality is <strong>false</strong> (for example, at $x = 4$, we get $0 \\ge 1$, which is false).",
-                        "<strong>Case B: For $x < 4$</strong>, the term inside the absolute value is negative, so $|2x - 8| = 8 - 2x$. Our inequality becomes:\\begin{aligned}8 - 2x & \\ge x - 3 \\cr \\implies 11 & \\ge 3x\\cr \\implies x & \\le 3.67\\end{aligned} This means the inequality is true for $x \\le 3.67$ and $x \\ge 5$, but fails in the gap $3.67 < x < 5$.",
-                        "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $8 \\ge -3$), but fails for a small range of values (with a counterexample of $x = 4$, where $|2(4)-8| = 0$ is not greater than or equal to $4-3 = 1$).",
-                        "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$ $$\\text{(fails in the interval } 3.67 < x < 5\\text{)}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Always true}$$",
-                                "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $3.67 < x < 5$, the value of the linear expression x-3 is actually larger than the absolute value |2x-8|, making the statement false in this range."
-                        },
-                        {
-                                "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Never true}$$",
-                                "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-8| \\ge -3 \\implies 8 \\ge -3$, which is a true statement."
-                        },
-                        {
-                                "ans": "<strong>(a)</strong> $$\\text{Proof by counter example}$$ $$\\text{is completed}$$ <strong>(b)</strong> $$\\text{Sometimes true}$$",
-                                "feedback": "Part (i) requires a general proof showing the statement is true for *all* $n \\in \\mathbb{N}$, which requires a proof by exhaustion (cases). A proof by counterexample is only used to disprove a statement, not to prove one."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Remainder Equivalents",
-                        "content": "In this question, when working with $n^2 + 5$ and dividing by 4, remember that you can simplify the maths by rewriting 5 as 4 + 1. This makes $n^2 + 5$ equivalent to $n^2 + 1 \\pmod 4$, meaning the remainders will be identical to those found when expanding $n^2+1$."
-                }
-        },
-        {
-                "id": "004049",
-                "group_id": "004046",
-                "board": "Edexcel",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Proof",
-                "topic": "Proof",
-                "subtopic": [
-                        "Inequalities",
-                        "Proof"
-                ],
-                "img": false,
-                "question": "<strong>(i)</strong> Prove that for all $n \\in \\mathbb{N}$, $n^2 + 2$ is not divisible by 5.<br><br><strong>(ii)</strong> \"Given $x \\in \\mathbb{R}$, the value of |4x - 22| is greater than or equal to the value of (x - 5).\"<br>State, giving a reason, if the above statement is always true, sometimes true, or never true.",
-                "steps": [
-                        "<strong>Part (i):</strong> We use <strong>proof by exhaustion</strong> by splitting the natural numbers into five cases based on their divisibility by 5. Any natural number n can be written as 5k, $5k \\pm 1$, or $5k \\pm 2$ for some non-negative integer k.",
-                        "<strong>Case 1: $n = 5k$ (multiples of 5)</strong><br>\\begin{aligned}n^2 + 2 &= (5k)^2 + 2 \\cr&= 25k^2 + 2 \\cr&= 5(5k^2) + 2\\end{aligned}<br>This leaves a remainder of 2 when divided by 5, so it is not divisible.",
-                        "<strong>Case 2: $n = 5k \\pm 1$</strong><br>\\begin{aligned}n^2 + 2 &= (5k \\pm 1)^2 + 2 \\cr&= 25k^2 \\pm 10k + 1 + 2 \\cr&= 5(5k^2 \\pm 2k) + 3\\end{aligned}<br>This leaves a remainder of 3 when divided by 5, so it is not divisible.",
-                        "<strong>Case 3: $n = 5k \\pm 2$</strong><br>\\begin{aligned}n^2 + 2 &= (5k \\pm 2)^2 + 2 \\cr&= 25k^2 \\pm 20k + 4 + 2 \\cr&= 25k^2 \\pm 20k + 6 \\cr&= 5(5k^2 \\pm 4k + 1) + 1\\end{aligned}<br>This leaves a remainder of 1 when divided by 5, so it is not divisible.<br>Therefore, since all possible cases have been exhausted, $n^2 + 2$ is never divisible by 5 for any $n \\in \\mathbb{N}$.",
-                        "<strong>Part (ii):</strong> To determine the validity of the statement $|4x - 22| \\ge x - 5$, we analyze the critical values by splitting the absolute value into two intervals at the boundary $x = 5.5$:",
-                        "<strong>Case A: For $x \\ge 5.5$</strong>, the term inside the absolute value is positive, so $|4x - 22| = 4x - 22$. Our inequality becomes:\\begin{aligned}4x - 22 & \\ge x - 5\\cr \\implies 3x &\\ge 17\\cr \\implies x &\\ge 5.67\\end{aligned} This means that in the interval $5.5 \\le x < 5.67$, the inequality is <strong>false</strong> (for example, at $x = 5.5$, we get $2 \\ge 0.5$, which is true, but at $x = 5.6$ we get $0.4 \\ge 0.6$, which is false).",
-                        "<strong>Case B: For $x < 5.5$</strong>, the term inside the absolute value is negative, so $|4x - 22| = 22 - 4x$. Our inequality becomes:\\begin{aligned}22 - 4x &\\ge x - 5 \\cr \\implies 27 &\\ge 5x \\cr \\implies x &\\le 5.4\\end{aligned} This means the inequality is true for $x \\le 5.4$ and $x \\ge 5.67$, but fails in the gap $5.4 < x < 5.67$.",
-                        "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $22 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 5.55$, where $|4(5.55)-22| = 0.2$ is not greater than or equal to $5.55-5 = 0.55$).",
-                        "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$ $$\\text {(fails in the interval } 5.4 < x < 5.67\\text{)}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Always true}$$",
-                                "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $5.4 < x < 5.67$, the value of the linear expression x-5 is actually larger than the absolute value |4x-22|, making the statement false in this range."
-                        },
-                        {
-                                "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Never true}$$",
-                                "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-22| \\ge -5 \\implies 22 \\ge -5$, which is a true statement."
-                        },
-                        {
-                                "ans": "<strong>(a)</strong> $$\\text{Proof by deduction is completed}$$ <strong>(b)</strong> $$\\text{Sometimes true}$$",
-                                "feedback": "Part (i) requires a general proof for all n, which must be handled by exhaustion (testing all possible remainder cases). A simple algebraic deduction is not enough because n is discrete and can have various remainder properties."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Modulo 5 Groupings",
-                        "content": "In this question, when proving divisibility by 5, we can group our cases into $5k \\pm 1$ and $5k \\pm 2$. Because squaring negative terms yields positive terms, this grouping handles two cases at once, saving you significant time and writing on your exam paper."
-                }
-        },
-        {
-                "id": "004050",
-                "group_id": "004046",
-                "major_area": "Proof",
-                "board": "Edexcel",
-                "branch": "Pure",
-                "level": "AS",
-                "topic": "Proof",
-                "subtopic": [
-                        "Inequalities",
-                        "Proof"
-                ],
-                "img": false,
-                "question": "<strong>(i)</strong> Prove that for all $n \\in \\mathbb{N}$, $n^2 + 3$ is not divisible by 5.<br><br><strong>(ii)</strong> \"Given $x \\in \\mathbb{R}$, the value of |3x - 17| is greater than or equal to the value of (x - 5).\"<br>State, giving a reason, if the above statement is always true, sometimes true, or never true.",
-                "steps": [
-                        "<strong>Part (i):</strong> We use <strong>proof by exhaustion</strong> by splitting the natural numbers into five cases based on their divisibility by 5. Any natural number n can be written as 5k, $5k \\pm 1$, or $5k \\pm 2$ for some non-negative integer k.",
-                        "<strong>Case 1: $n = 5k$ (multiples of 5)</strong><br>\\begin{aligned}n^2 + 3 &= (5k)^2 + 3 \\cr&= 25k^2 + 3 \\cr&= 5(5k^2) + 3\\end{aligned}<br>This leaves a remainder of 3 when divided by 5, so it is not divisible.",
-                        "<strong>Case 2: $n = 5k \\pm 1$</strong><br>\\begin{aligned}n^2 + 3 &= (5k \\pm 1)^2 + 3 \\cr&= 25k^2 \\pm 10k + 1 + 3 \\cr&= 5(5k^2 \\pm 2k) + 4\\end{aligned}<br>This leaves a remainder of 4 when divided by 5, so it is not divisible.",
-                        "<strong>Case 3: $n = 5k \\pm 2$</strong><br>\\begin{aligned}n^2 + 3 &= (5k \\pm 2)^2 + 3 \\cr&= 25k^2 \\pm 20k + 4 + 3 \\cr&= 25k^2 \\pm 20k + 7 \\cr&= 5(5k^2 \\pm 4k + 1) + 2\\end{aligned}<br>This leaves a remainder of 2 when divided by 5, so it is not divisible.<br>Therefore, since all possible cases have been exhausted, $n^2 + 3$ is never divisible by 5 for any $n \\in \\mathbb{N}$.",
-                        "<strong>Part (ii):</strong> To determine the validity of the statement $|3x - 17| \\ge x - 5$, we analyze the critical values by splitting the absolute value into two intervals at the boundary $x = 5.67$:",
-                        "<strong>Case A: For $x \\ge 5.67$</strong>, the term inside the absolute value is positive, so $|3x - 17| = 3x - 17$. Our inequality becomes:\\begin{aligned}3x - 17 & \\ge x - 5 \\cr \\implies 2x & \\ge 12 \\cr \\implies x & \\ge 6\\end{aligned} This means that in the interval $5.67 \\le x < 6$, the inequality is <strong>false</strong> (for example, at $x = 5.8$, we get $0.4 \\ge 0.8$, which is false).",
-                        "<strong>Case B: For $x < 5.67$</strong>, the term inside the absolute value is negative, so $|3x - 17| = 17 - 3x$. Our inequality becomes:\\begin{aligned}17 - 3x & \\ge x - 5 \\cr \\implies 22 & \\ge 4x \\cr \\implies x &\\le 5.5\\end{aligned} This means the inequality is true for $x \\le 5.5$ and $x \\ge 6$, but fails in the gap $5.5 < x < 6$.",
-                        "Therefore, the statement is <strong>sometimes true</strong>, as it holds for most real values (such as $x=0$, giving $17 \\ge -5$), but fails for a small range of values (with a counterexample of $x = 5.8$, where $|3(5.8)-17| = 0.4$ is not greater than or equal to $5.8-5 = 0.8$).",
-                        "Final Answer: <strong>(i)</strong> $$\\text{Proof by cases is completed}$$ <strong>(ii)</strong> $$\\text{Sometimes true}$$ $$\\text{(fails in the interval } 5.5 < x < 6\\text{)}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Always true}$$",
-                                "feedback": "You probably assumed the inequality is always true because absolute values are always positive. However, you must test the critical interval. In the region $5.5 < x < 6$, the value of the linear expression x-5 is actually larger than the absolute value |3x-17|, making the statement false in this range."
-                        },
-                        {
-                                "ans": "<strong>(a)</strong> $$\\text{Proof by cases is completed}$$ <strong>(b)</strong> $$\\text{Never true}$$",
-                                "feedback": "The statement is not 'never true'. It holds for the vast majority of real numbers. For example, substituting $x = 0$ yields $|-17| \\ge -5 \\implies 17 \\ge -5$, which is a true statement."
-                        },
-                        {
-                                "ans": "<strong>(a)</strong> $$\\text{Proof by exhaustion of bounds}$$ $$\\text{is completed}$$ <strong>(b)</strong> $$\\text{Sometimes true}$$",
-                                "feedback": "The standard mathematical name for testing integer remainder cases is a proof by exhaustion (or proof by cases). Avoid using non-standard terms like 'exhaustion of bounds' on your exam script."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Visualising Inequalities",
-                        "content": "When analyzing whether an absolute value statement is always, sometimes, or never true, a quick mental sketch of the two functions $y = |Ax - B|$ and $y = x - C$ is incredibly helpful. It instantly reveals if the linear function ever crosses above the v-shaped absolute value boundary."
-                }
-        }
+       {
+  "id": "004046",
+  "group_id": "004046",
+  "board": "Edexcel",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Proof",
+  "topic": "Proof",
+  "subtopic": [
+    "Proof by Exhaustion",
+    "Counterexample"
+  ],
+  "img": false,
+  "question": "<strong>(i)</strong> Prove that for all $n \\in \\mathbb{N}$, $n^2 + 1$ is not divisible by $3$.<br><br><strong>(ii)</strong> \"For all real numbers $x$, $x^2 > x$.\"<br>State, giving a reason, whether the above statement is always true, sometimes true, or never true.",
+  "steps": [
+    "<strong>Part (i): Proof by Exhaustion</strong><br><br>Any natural number $n$ can be expressed in one of three forms depending on its remainder when divided by $3$:\\begin{aligned} n = 3k, \\quad n = 3k + 1, \\quad \\text{or} \\quad n = 3k + 2 \\end{aligned}where $k$ is a non-negative integer. We test each case systematically.",
+    "<strong>Case 1: $n = 3k$ (multiples of 3)</strong>\\begin{aligned} n^2 + 1 &= (3k)^2 + 1 \\cr &= 9k^2 + 1 \\cr &= 3(3k^2) + 1 \\end{aligned}This leaves a remainder of $1$ when divided by $3$, so it is not divisible by $3$.",
+    "<strong>Case 2: $n = 3k + 1$</strong>\\begin{aligned} n^2 + 1 &= (3k + 1)^2 + 1 \\cr &= 9k^2 + 6k + 1 + 1 \\cr &= 3(3k^2 + 2k) + 2 \\end{aligned}This leaves a remainder of $2$ when divided by $3$, so it is not divisible by $3$.",
+    "<strong>Case 3: $n = 3k + 2$</strong>\\begin{aligned} n^2 + 1 &= (3k + 2)^2 + 1 \\cr &= 9k^2 + 12k + 4 + 1 \\cr &= 9k^2 + 12k + 5 \\cr &= 3(3k^2 + 4k + 1) + 2 \\end{aligned}This also leaves a remainder of $2$ when divided by $3$.<br><br>Since all possible forms of $n \\in \\mathbb{N}$ have been exhausted and none leave a remainder of $0$, $n^2 + 1$ is never divisible by $3$.",
+    "<strong>Part (ii): Always, Sometimes, or Never True</strong><br><br>To determine whether $x^2 > x$ holds for all real numbers $x$, test a few values of $x$ across different regions on the number line:<br><br>• For $x = 2$: $2^2 = 4 > 2$ (the inequality <strong>holds</strong>).<br>• For $x = -2$: $(-2)^2 = 4 > -2$ (the inequality <strong>holds</strong>).<br>• For $x = 0.5$: $(0.5)^2 = 0.25 \\ngtr 0.5$ (the inequality <strong>fails</strong>).<br>• For $x = 1$: $1^2 = 1 \\ngtr 1$ (the inequality <strong>fails</strong>).",
+    "Since the inequality holds for some values of $x$ (namely $x < 0$ and $x > 1$) but fails for others (namely $0 \\le x \\le 1$), the statement is <strong>sometimes true</strong>.",
+    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (e.g. holds for } x = 2 \\text{, but fails for } x = 0.5\\text{)} \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Always true (squaring any real number makes it larger)} \\end{aligned}",
+      "feedback": "Squaring only increases the value for numbers strictly greater than 1 or negative numbers. For numbers between 0 and 1 (such as $x = 0.5$), squaring actually makes the value smaller: $0.5^2 = 0.25 < 0.5$."
+    },
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true (testing } x = 0 \\text{ and } x = 1 \\text{ both fail the strict inequality)} \\end{aligned}",
+      "feedback": "While it is true that $x = 0$ and $x = 1$ fail because $0 > 0$ and $1 > 1$ are false, the statement is not 'never true'. It holds for many values, such as any $x > 1$ (e.g. $3^2 = 9 > 3$) and all negative numbers (e.g. $(-2)^2 = 4 > -2$)."
+    },
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by mathematical induction completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (e.g. holds for } x = 2 \\text{, but fails for } x = 0.5\\text{)} \\end{aligned}",
+      "feedback": "Part (i) is a proof by exhaustion because we test every possible remainder category ($3k, 3k+1, 3k+2$) to cover all natural numbers. Mathematical induction is a different technique used to prove statements for $n$ and $n+1$ sequences."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: The Unit Interval Trap",
+    "content": "Students often fall into the trap of assuming that squaring a number always makes it larger ($x^2 > x$). Always test values in the unit interval $0 < x < 1$ (such as $x = \\frac{1}{2}$ or $x = 0.1$), where squaring actually diminishes the value, as well as boundary points like $0$ and $1$."
+  }
+},
+{
+  "id": "004047",
+  "group_id": "004046",
+  "board": "Edexcel",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Proof",
+  "topic": "Proof",
+  "subtopic": [
+    "Proof by Exhaustion",
+    "Counterexample"
+  ],
+  "img": false,
+  "question": "<strong>(i)</strong> Prove that for all $n \\in \\mathbb{N}$, $n^2 + 1$ is not divisible by $4$.<br><br><strong>(ii)</strong> \"For all real numbers $x$ and $y$, $(x + y)^2 \\ge x^2 + y^2$.\"<br>State, giving a reason, whether the above statement is always true, sometimes true, or never true.",
+  "steps": [
+    "<strong>Part (i): Proof by Exhaustion</strong><br><br>Any natural number $n$ is either even or odd. We split the proof into these two exhaustive cases:",
+    "<strong>Case 1: $n$ is even ($n = 2k$)</strong><br>For some non-negative integer $k$:\\begin{aligned} n^2 + 1 &= (2k)^2 + 1 \\cr &= 4k^2 + 1 \\cr &= 4(k^2) + 1 \\end{aligned}Since $4(k^2)$ is divisible by $4$, $n^2 + 1$ leaves a remainder of $1$, so it is not divisible by $4$.",
+    "<strong>Case 2: $n$ is odd ($n = 2k + 1$)</strong><br>For some non-negative integer $k$:\\begin{aligned} n^2 + 1 &= (2k + 1)^2 + 1 \\cr &= 4k^2 + 4k + 1 + 1 \\cr &= 4(k^2 + k) + 2 \\end{aligned}This leaves a remainder of $2$ when divided by $4$, so it is not divisible by $4$.<br><br>Since all natural numbers are either even or odd and neither case leaves a remainder of $0$, $n^2 + 1$ is never divisible by $4$ for any $n \\in \\mathbb{N}$.",
+    "<strong>Part (ii): Always, Sometimes, or Never True</strong><br><br>Expand the left-hand side of the inequality:\\begin{aligned} (x + y)^2 &= x^2 + 2xy + y^2 \\end{aligned}Comparing this to $x^2 + y^2$, the statement $(x + y)^2 \\ge x^2 + y^2$ is equivalent to:\\begin{aligned} 2xy \\ge 0 \\end{aligned}Now test values with different signs:<br><br>• Let $x = 2$ and $y = 3$: $(2 + 3)^2 = 25$ and $2^2 + 3^2 = 13$. Since $25 \\ge 13$, the statement <strong>holds</strong>.<br>• Let $x = 2$ and $y = -3$: $(2 - 3)^2 = 1$ and $2^2 + (-3)^2 = 13$. Since $1 \\ngtr 13$, the statement <strong>fails</strong>.",
+    "Because the inequality holds when $x$ and $y$ have the same sign (or either is zero) but fails when $x$ and $y$ have opposite signs, the statement is <strong>sometimes true</strong>.",
+    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (e.g. holds for } x = 2, y = 3\\text{, but fails for } x = 2, y = -3\\text{)} \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Always true (expanding gives } x^2 + 2xy + y^2 \\text{ which always exceeds } x^2 + y^2\\text{)} \\end{aligned}",
+      "feedback": "Expanding gives $(x+y)^2 = x^2 + 2xy + y^2$. This only exceeds $x^2 + y^2$ if the cross-term $2xy$ is non-negative. If $x$ and $y$ have opposite signs (such as $x = 2$ and $y = -3$), $2xy$ is negative, causing the statement to fail."
+    },
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true (since expanding brackets can never create a larger quantity)} \\end{aligned}",
+      "feedback": "The statement is not 'never true'. Whenever $x$ and $y$ share the same sign (such as $x = 2, y = 3$), the cross term $2xy$ is strictly positive ($2(2)(3) = 12 > 0$), making $(x+y)^2 > x^2 + y^2$ readily hold."
+    },
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by contradiction completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (e.g. holds for } x = 2, y = 3\\text{, but fails for } x = 2, y = -3\\text{)} \\end{aligned}",
+      "feedback": "Part (i) is a proof by exhaustion because all integers were partitioned into even and odd sets and tested. Proof by contradiction would require assuming $n^2 + 1 = 4m$ and arriving at a logical impossibility."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Algebraic Equivalences in Proof",
+    "content": "When asked if an algebraic inequality like $(x+y)^2 \\ge x^2 + y^2$ is always, sometimes, or never true, simplify it algebraically first. Subtracting $x^2 + y^2$ from both sides immediately reduces the problem to analyzing the sign of $2xy$, making the required counterexample ($xy < 0$) obvious."
+  }
+},
+{
+  "id": "004048",
+  "group_id": "004046",
+  "board": "Edexcel",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Proof",
+  "topic": "Proof",
+  "subtopic": [
+    "Proof by Deduction",
+    "Algebraic Proof"
+  ],
+  "img": false,
+  "question": "<strong>(i)</strong> Prove by deduction that the difference between the squares of any two consecutive odd integers is always a multiple of $8$.<br><br><strong>(ii)</strong> \"For all positive real numbers $x$ and $y$, $\\sqrt{x + y} = \\sqrt{x} + \\sqrt{y}$.\"<br>State, giving a reason, whether the above statement is always true, sometimes true, or never true.",
+  "steps": [
+    "<strong>Part (i): Proof by Deduction</strong><br><br>Let two consecutive odd integers be represented algebraically as $(2k + 1)$ and $(2k + 3)$, where $k$ is an integer.",
+    "Form the difference between their squares and expand the brackets:\\begin{aligned} (2k + 3)^2 - (2k + 1)^2 &= (4k^2 + 12k + 9) - (4k^2 + 4k + 1) \\cr &= 4k^2 + 12k + 9 - 4k^2 - 4k - 1 \\cr &= 8k + 8 \\end{aligned}",
+    "Factor out the common factor of $8$:\\begin{aligned} 8k + 8 &= 8(k + 1) \\end{aligned}Since $k$ is an integer, $(k + 1)$ must also be an integer. Therefore, $8(k + 1)$ is strictly divisible by $8$.<br><br>The proof by deduction is complete.",
+    "<strong>Part (ii): Always, Sometimes, or Never True</strong><br><br>Square both sides of the proposed equation $\\sqrt{x + y} = \\sqrt{x} + \\sqrt{y}$:\\begin{aligned} \\left(\\sqrt{x + y}\\right)^2 &= x + y \\cr \\left(\\sqrt{x} + \\sqrt{y}\\right)^2 &= x + 2\\sqrt{xy} + y \\end{aligned}",
+    "For the two sides to be equal, we would require:\\begin{aligned} x + y &= x + 2\\sqrt{xy} + y \\cr 0 &= 2\\sqrt{xy} \\cr \\sqrt{xy} &= 0 \\end{aligned}However, we are given that $x$ and $y$ are <strong>positive</strong> real numbers ($x > 0$ and $y > 0$). This guarantees that $\\sqrt{xy} > 0$, so equality is impossible for any positive reals.",
+    "We can confirm this with a counterexample: choose $x = 9$ and $y = 16$:\\begin{aligned} \\text{LHS} &= \\sqrt{9 + 16} = \\sqrt{25} = 5 \\cr \\text{RHS} &= \\sqrt{9} + \\sqrt{16} = 3 + 4 = 7 \\end{aligned}Since $5 \\ne 7$ and no positive pair satisfies the condition, the statement is <strong>never true</strong>.",
+    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Never true (e.g. for } x = 9, y = 16\\text{, } \\sqrt{25} = 5 \\ne 3 + 4 = 7\\text{)} \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Always true (square root distributes across addition)} \\end{aligned}",
+      "feedback": "A classic algebra trap! The square root operation does NOT distribute over addition: $\\sqrt{x+y} \\ne \\sqrt{x} + \\sqrt{y}$. Squaring the right-hand side produces an extra cross-term $2\\sqrt{xy}$ that prevents the two sides from ever being equal for positive numbers."
+    },
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (holds when } x \\text{ and } y \\text{ are perfect squares, fails otherwise)} \\end{aligned}",
+      "feedback": "Even when $x$ and $y$ are perfect squares, the statement fails! For instance, if $x = 9$ and $y = 16$, $\\sqrt{9+16} = \\sqrt{25} = 5$, but $\\sqrt{9} + \\sqrt{16} = 3 + 4 = 7$. Because $2\\sqrt{xy} > 0$ for all positive numbers, equality can never occur."
+    },
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true (e.g. for } x = 9, y = 16\\text{, } \\sqrt{25} = 5 \\ne 3 + 4 = 7\\text{)} \\end{aligned}",
+      "feedback": "Part (i) is a proof by deduction, not proof by exhaustion. Proof by deduction starts from general algebraic definitions ($2k+1$ and $2k+3$) and applies logical steps to reach the result for all integers at once."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: The 'Freshman's Dream' Fallacy",
+    "content": "Assuming that $\\sqrt{x + y} = \\sqrt{x} + \\sqrt{y}$ (or that $(x+y)^2 = x^2 + y^2$) is one of the most penalised algebraic blunders at A Level. Always test simple square numbers (like $9$ and $16$) to verify identities before proceeding with a proof."
+  }
+},
+{
+  "id": "004049",
+  "group_id": "004046",
+  "board": "Edexcel",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Proof",
+  "topic": "Proof",
+  "subtopic": [
+    "Proof by Exhaustion",
+    "Proof by Deduction"
+  ],
+  "img": false,
+  "question": "<strong>(i)</strong> Prove by exhaustion that the sum of the cubes of any two consecutive integers from the set $\\{1, 2, 3, 4\\}$ is always an odd number.<br><br><strong>(ii)</strong> \"For all real numbers $x$, $x^2 + 4x + 5 > 0$.\"<br>State, giving a reason, whether the above statement is always true, sometimes true, or never true.",
+  "steps": [
+    "<strong>Part (i): Proof by Exhaustion</strong><br><br>The set is $\\{1, 2, 3, 4\\}$. There are three possible pairs of consecutive integers from this finite set. We test each pair systematically:",
+    "<strong>Case 1: $n = 1$ and $n = 2$</strong>\\begin{aligned} 1^3 + 2^3 &= 1 + 8 \\cr &= 9 \\quad (\\text{odd}) \\end{aligned}",
+    "<strong>Case 2: $n = 2$ and $n = 3$</strong>\\begin{aligned} 2^3 + 3^3 &= 8 + 27 \\cr &= 35 \\quad (\\text{odd}) \\end{aligned}",
+    "<strong>Case 3: $n = 3$ and $n = 4$</strong>\\begin{aligned} 3^3 + 4^3 &= 27 + 64 \\cr &= 91 \\quad (\\text{odd}) \\end{aligned}<br>All possible consecutive pairs from the set have been tested, and each produces an odd sum. The proof by exhaustion is complete.",
+    "<strong>Part (ii): Always, Sometimes, or Never True</strong><br><br>To determine whether $x^2 + 4x + 5 > 0$ holds for all $x \\in \\mathbb{R}$, complete the square:\\begin{aligned} x^2 + 4x + 5 &= (x + 2)^2 - 2^2 + 5 \\cr &= (x + 2)^2 - 4 + 5 \\cr &= (x + 2)^2 + 1 \\end{aligned}",
+    "For any real number $x$, the square of a real number is always non-negative:\\begin{aligned} (x + 2)^2 &\\ge 0 \\cr \\implies (x + 2)^2 + 1 &\\ge 1 \\end{aligned}Since the minimum value is $1$, it follows that:\\begin{aligned} x^2 + 4x + 5 \\ge 1 > 0 \\end{aligned}Therefore, the statement is <strong>always true</strong> for all real numbers $x$.",
+    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Always true (completing the square gives } (x+2)^2 + 1 \\ge 1 > 0\\text{)} \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (holds for positive } x \\text{, but fails when } x \\text{ is negative)} \\end{aligned}",
+      "feedback": "Testing negative values shows that the inequality still holds! For example, if $x = -2$, $(-2)^2 + 4(-2) + 5 = 4 - 8 + 5 = 1 > 0$. Because the completed square form is $(x+2)^2 + 1$, the expression has a global minimum of 1 and is never negative."
+    },
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true (quadratics always take negative values for some interval)} \\end{aligned}",
+      "feedback": "A quadratic only takes negative values if its discriminant $b^2 - 4ac > 0$. Here, $b^2 - 4ac = 4^2 - 4(1)(5) = 16 - 20 = -4 < 0$. With a positive $x^2$ coefficient, the parabola sits entirely above the $x$-axis and is strictly positive for all real $x$."
+    },
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by contradiction completed} \\cr &\\textbf{(ii) } \\text{Always true (completing the square gives } (x+2)^2 + 1 \\ge 1 > 0\\text{)} \\end{aligned}",
+      "feedback": "Part (i) is a proof by exhaustion because every single consecutive pair in the finite set was enumerated and evaluated directly. Proof by contradiction would begin by assuming the sum is even."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Completing the Square in Proof",
+    "content": "Whenever you need to prove that a quadratic expression is strictly positive (or non-negative), always complete the square. Because any real squared bracket $(x + p)^2 \\ge 0$, the constant remainder immediately proves the global minimum of the expression."
+  }
+},
+{
+  "id": "004050",
+  "group_id": "004046",
+  "board": "Edexcel",
+  "branch": "Pure",
+  "level": "AS",
+  "major_area": "Proof",
+  "topic": "Proof",
+  "subtopic": [
+    "Proof by Deduction",
+    "Counterexample"
+  ],
+  "img": false,
+  "question": "<strong>(i)</strong> Prove by deduction that for all $x > 0$,$$x + \\dfrac{1}{x} \\ge 2$$<br><strong>(ii)</strong> \"For all real numbers $x$ and $y$, if $x > y$, then $x^2 > y^2$.\"<br>State, giving a reason, whether the above statement is always true, sometimes true, or never true.",
+  "steps": [
+    "<strong>Part (i): Proof by Deduction</strong><br><br>For any positive real number $x$, both $\\sqrt{x}$ and $\\dfrac{1}{\\sqrt{x}}$ are defined real numbers. Consider the square of their difference:\\begin{aligned} \\left(\\sqrt{x} - \\dfrac{1}{\\sqrt{x}}\\right)^2 \\end{aligned}",
+    "Because the square of any real number is always greater than or equal to zero:\\begin{aligned} \\left(\\sqrt{x} - \\dfrac{1}{\\sqrt{x}}\\right)^2 &\\ge 0 \\cr \\left(\\sqrt{x}\\right)^2 - 2\\left(\\sqrt{x}\\right)\\left(\\dfrac{1}{\\sqrt{x}}\\right) + \\left(\\dfrac{1}{\\sqrt{x}}\\right)^2 &\\ge 0 \\cr x - 2 + \\dfrac{1}{x} &\\ge 0 \\end{aligned}",
+    "Add $2$ to both sides of the inequality:\\begin{aligned} x + \\dfrac{1}{x} \\ge 2 \\end{aligned}Since this deduction relies strictly on the fundamental property that a squared real number is non-negative, the proof is complete for all $x > 0$.",
+    "<strong>Part (ii): Always, Sometimes, or Never True</strong><br><br>To analyze the statement \"if $x > y$, then $x^2 > y^2$\", test numbers across positive and negative values:<br><br>• Let $x = 3$ and $y = 2$: here $3 > 2$, and $3^2 = 9 > 2^2 = 4$. The statement <strong>holds</strong>.<br>• Let $x = 1$ and $y = -3$: here $1 > -3$, but $1^2 = 1$ and $(-3)^2 = 9$. Since $1 \\ngtr 9$, the statement <strong>fails</strong>.",
+    "Because the statement holds when both values are positive (with $x > y > 0$) but fails whenever $y$ is a negative number with a larger absolute magnitude than $x$, the statement is <strong>sometimes true</strong>.",
+    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (e.g. holds for } x = 3, y = 2\\text{, but fails for } x = 1, y = -3\\text{)} \\end{aligned}"
+  ],
+  "pi_options": [
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Always true (squaring both sides of an inequality preserves the inequality sign)} \\end{aligned}",
+      "feedback": "Squaring both sides of an inequality is ONLY valid if both sides are known to be non-negative! If negative numbers are involved, squaring can reverse the inequality. For example, $1 > -3$, but squaring gives $1 < 9$."
+    },
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Never true (squaring operations always invert inequalities)} \\end{aligned}",
+      "feedback": "Squaring does not always invert inequalities. For all positive real numbers where $x > y > 0$, squaring strictly preserves the inequality (e.g. $4 > 3 \\implies 16 > 9$). Therefore, the statement is not 'never true'."
+    },
+    {
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (e.g. holds for } x = 3, y = 2\\text{, but fails for } x = 1, y = -3\\text{)} \\end{aligned}",
+      "feedback": "Part (i) is a proof by deduction, not proof by exhaustion. The algebraic inequality $(\\sqrt{x} - \\frac{1}{\\sqrt{x}})^2 \\ge 0$ proves the relationship for all infinitely many positive reals at once, rather than testing a finite list of cases."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Never Blindly Square Inequalities",
+    "content": "One of the most penalised algebraic blunders at A Level is squaring both sides of an inequality. You can only square an inequality if you are 100% sure that BOTH sides are strictly positive. If either side can be negative, always provide a counterexample like $1 > -3$ where $1^2 < (-3)^2$."
+  }
+}
 ];
