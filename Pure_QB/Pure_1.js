@@ -1923,7 +1923,7 @@ window.ALEVEL_QUESTIONS = [
     "<strong>Case 3: $n = 3k + 2$</strong>\\begin{aligned} n^2 + 1 &= (3k + 2)^2 + 1 \\cr &= 9k^2 + 12k + 4 + 1 \\cr &= 9k^2 + 12k + 5 \\cr &= 3(3k^2 + 4k + 1) + 2 \\end{aligned}This also leaves a remainder of $2$ when divided by $3$.<br><br>Since all possible forms of $n \\in \\mathbb{N}$ have been exhausted and none leave a remainder of $0$, $n^2 + 1$ is never divisible by $3$.",
     "<strong>Part (ii): Always, Sometimes, or Never True</strong><br><br>To determine whether $x^2 > x$ holds for all real numbers $x$, test a few values of $x$ across different regions on the number line:<br><br>• For $x = 2$: $2^2 = 4 > 2$ (the inequality <strong>holds</strong>).<br>• For $x = -2$: $(-2)^2 = 4 > -2$ (the inequality <strong>holds</strong>).<br>• For $x = 0.5$: $(0.5)^2 = 0.25 \\ngtr 0.5$ (the inequality <strong>fails</strong>).<br>• For $x = 1$: $1^2 = 1 \\ngtr 1$ (the inequality <strong>fails</strong>).",
     "Since the inequality holds for some values of $x$ (namely $x < 0$ and $x > 1$) but fails for others (namely $0 \\le x \\le 1$), the statement is <strong>sometimes true</strong>.",
-    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (e.g. holds for } x = 2 \\text{, but fails for } x = 0.5\\text{)} \\end{aligned}"
+    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Sometimes true} \\cr &\\text {(e.g. holds for } x = 2 \\text{,} \\cr &\\text { but fails for } x = 0.5\\text{)} \\end{aligned}"
   ],
   "pi_options": [
     {
@@ -1931,7 +1931,7 @@ window.ALEVEL_QUESTIONS = [
       "feedback": "Squaring only increases the value for numbers strictly greater than 1 or negative numbers. For numbers between 0 and 1 (such as $x = 0.5$), squaring actually makes the value smaller: $0.5^2 = 0.25 < 0.5$."
     },
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true } \\cr &\\text {(testing } x = 0 \\text{ and } x = 1 \\cr &\\text{ both fail the} \\cr &\\text { strict inequality)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true } \\cr &\\text {(testing } x = 0 \\text{ and } x = 1 \\cr &\\text{ both fail the strict inequality)} \\end{aligned}",
       "feedback": "While it is true that $x = 0$ and $x = 1$ fail because $0 > 0$ and $1 > 1$ are false, the statement is not 'never true'. It holds for many values, such as any $x > 1$ (e.g. $3^2 = 9 > 3$) and all negative numbers (e.g. $(-2)^2 = 4 > -2$)."
     },
     {
@@ -1965,19 +1965,19 @@ window.ALEVEL_QUESTIONS = [
     "<strong>Case 2: $n$ is odd ($n = 2k + 1$)</strong><br>For some non-negative integer $k$:\\begin{aligned} n^2 + 1 &= (2k + 1)^2 + 1 \\cr &= 4k^2 + 4k + 1 + 1 \\cr &= 4(k^2 + k) + 2 \\end{aligned}This leaves a remainder of $2$ when divided by $4$, so it is not divisible by $4$.<br><br>Since all natural numbers are either even or odd and neither case leaves a remainder of $0$, $n^2 + 1$ is never divisible by $4$ for any $n \\in \\mathbb{N}$.",
     "<strong>Part (ii): Always, Sometimes, or Never True</strong><br><br>Expand the left-hand side of the inequality:\\begin{aligned} (x + y)^2 &= x^2 + 2xy + y^2 \\end{aligned}Comparing this to $x^2 + y^2$, the statement $(x + y)^2 \\ge x^2 + y^2$ is equivalent to:\\begin{aligned} 2xy \\ge 0 \\end{aligned}Now test values with different signs:<br><br>• Let $x = 2$ and $y = 3$: $(2 + 3)^2 = 25$ and $2^2 + 3^2 = 13$. Since $25 \\ge 13$, the statement <strong>holds</strong>.<br>• Let $x = 2$ and $y = -3$: $(2 - 3)^2 = 1$ and $2^2 + (-3)^2 = 13$. Since $1 \\ngtr 13$, the statement <strong>fails</strong>.",
     "Because the inequality holds when $x$ and $y$ have the same sign (or either is zero) but fails when $x$ and $y$ have opposite signs, the statement is <strong>sometimes true</strong>.",
-    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (e.g. holds for } x = 2, y = 3\\text{, but fails for } x = 2, y = -3\\text{)} \\end{aligned}"
+    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Sometimes true} \\cr &\\text{(e.g. holds for } x = 2, y = 3\\text{,} \\cr &\\text{ but fails for } x = 2, y = -3\\text{)} \\end{aligned}"
   ],
   "pi_options": [
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Always true (expanding gives } x^2 + 2xy + y^2 \\text{ which always exceeds } x^2 + y^2\\text{)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Always true} \\cr &\\text{(expanding gives } x^2 + 2xy + y^2 \\cr &\\text{ which always exceeds } x^2 + y^2\\text{)} \\end{aligned}",
       "feedback": "Expanding gives $(x+y)^2 = x^2 + 2xy + y^2$. This only exceeds $x^2 + y^2$ if the cross-term $2xy$ is non-negative. If $x$ and $y$ have opposite signs (such as $x = 2$ and $y = -3$), $2xy$ is negative, causing the statement to fail."
     },
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true (since expanding brackets can never create a larger quantity)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true} \\cr &\\text{(since expanding brackets can} \\cr &\\text{ never create a larger quantity)} \\end{aligned}",
       "feedback": "The statement is not 'never true'. Whenever $x$ and $y$ share the same sign (such as $x = 2, y = 3$), the cross term $2xy$ is strictly positive ($2(2)(3) = 12 > 0$), making $(x+y)^2 > x^2 + y^2$ readily hold."
     },
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by contradiction completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (e.g. holds for } x = 2, y = 3\\text{, but fails for } x = 2, y = -3\\text{)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by contradiction} \\cr &\\text{completed} \\cr &\\textbf{(ii) } \\text{Sometimes true} \\cr &\\text{(e.g. holds for } x = 2, y = 3\\text{,} \\cr &\\text{ but fails for } x = 2, y = -3\\text{)} \\end{aligned}",
       "feedback": "Part (i) is a proof by exhaustion because all integers were partitioned into even and odd sets and tested. Proof by contradiction would require assuming $n^2 + 1 = 4m$ and arriving at a logical impossibility."
     }
   ],
@@ -2008,19 +2008,19 @@ window.ALEVEL_QUESTIONS = [
     "<strong>Part (ii): Always, Sometimes, or Never True</strong><br><br>Square both sides of the proposed equation $\\sqrt{x + y} = \\sqrt{x} + \\sqrt{y}$:\\begin{aligned} \\left(\\sqrt{x + y}\\right)^2 &= x + y \\cr \\left(\\sqrt{x} + \\sqrt{y}\\right)^2 &= x + 2\\sqrt{xy} + y \\end{aligned}",
     "For the two sides to be equal, we would require:\\begin{aligned} x + y &= x + 2\\sqrt{xy} + y \\cr 0 &= 2\\sqrt{xy} \\cr \\sqrt{xy} &= 0 \\end{aligned}However, we are given that $x$ and $y$ are <strong>positive</strong> real numbers ($x > 0$ and $y > 0$). This guarantees that $\\sqrt{xy} > 0$, so equality is impossible for any positive reals.",
     "We can confirm this with a counterexample: choose $x = 9$ and $y = 16$:\\begin{aligned} \\text{LHS} &= \\sqrt{9 + 16} = \\sqrt{25} = 5 \\cr \\text{RHS} &= \\sqrt{9} + \\sqrt{16} = 3 + 4 = 7 \\end{aligned}Since $5 \\ne 7$ and no positive pair satisfies the condition, the statement is <strong>never true</strong>.",
-    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Never true (e.g. for } x = 9, y = 16\\text{, } \\sqrt{25} = 5 \\ne 3 + 4 = 7\\text{)} \\end{aligned}"
+    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Never true} \\cr &\\text{(e.g. for } x = 9, y = 16\\text{,} \\cr &\\sqrt{25} = 5 \\ne 3 + 4 = 7\\text{)} \\end{aligned}"
   ],
   "pi_options": [
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Always true (square root distributes across addition)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Always true} \\cr &\\text{(square root distributes} \\cr &\\text{ across addition)} \\end{aligned}",
       "feedback": "A classic algebra trap! The square root operation does NOT distribute over addition: $\\sqrt{x+y} \\ne \\sqrt{x} + \\sqrt{y}$. Squaring the right-hand side produces an extra cross-term $2\\sqrt{xy}$ that prevents the two sides from ever being equal for positive numbers."
     },
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (holds when } x \\text{ and } y \\text{ are perfect squares, fails otherwise)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Sometimes true} \\cr &\\text{(holds when } x \\text{ and } y \\text{ are} \\cr &\\text{ perfect squares, fails otherwise)} \\end{aligned}",
       "feedback": "Even when $x$ and $y$ are perfect squares, the statement fails! For instance, if $x = 9$ and $y = 16$, $\\sqrt{9+16} = \\sqrt{25} = 5$, but $\\sqrt{9} + \\sqrt{16} = 3 + 4 = 7$. Because $2\\sqrt{xy} > 0$ for all positive numbers, equality can never occur."
     },
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true (e.g. for } x = 9, y = 16\\text{, } \\sqrt{25} = 5 \\ne 3 + 4 = 7\\text{)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true} \\cr &\\text{(e.g. for } x = 9, y = 16\\text{,} \\cr &\\sqrt{25} = 5 \\ne 3 + 4 = 7\\text{)} \\end{aligned}",
       "feedback": "Part (i) is a proof by deduction, not proof by exhaustion. Proof by deduction starts from general algebraic definitions ($2k+1$ and $2k+3$) and applies logical steps to reach the result for all integers at once."
     }
   ],
@@ -2051,19 +2051,19 @@ window.ALEVEL_QUESTIONS = [
     "<strong>Case 3: $n = 3$ and $n = 4$</strong>\\begin{aligned} 3^3 + 4^3 &= 27 + 64 \\cr &= 91 \\quad (\\text{odd}) \\end{aligned}<br>All possible consecutive pairs from the set have been tested, and each produces an odd sum. The proof by exhaustion is complete.",
     "<strong>Part (ii): Always, Sometimes, or Never True</strong><br><br>To determine whether $x^2 + 4x + 5 > 0$ holds for all $x \\in \\mathbb{R}$, complete the square:\\begin{aligned} x^2 + 4x + 5 &= (x + 2)^2 - 2^2 + 5 \\cr &= (x + 2)^2 - 4 + 5 \\cr &= (x + 2)^2 + 1 \\end{aligned}",
     "For any real number $x$, the square of a real number is always non-negative:\\begin{aligned} (x + 2)^2 &\\ge 0 \\cr \\implies (x + 2)^2 + 1 &\\ge 1 \\end{aligned}Since the minimum value is $1$, it follows that:\\begin{aligned} x^2 + 4x + 5 \\ge 1 > 0 \\end{aligned}Therefore, the statement is <strong>always true</strong> for all real numbers $x$.",
-    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Always true (completing the square gives } (x+2)^2 + 1 \\ge 1 > 0\\text{)} \\end{aligned}"
+   "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Always true} \\cr &\\text{(completing the square gives} \\cr &(x+2)^2 + 1 \\ge 1 > 0\\text{)} \\end{aligned}"
   ],
   "pi_options": [
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (holds for positive } x \\text{, but fails when } x \\text{ is negative)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Sometimes true} \\cr &\\text{(holds for positive } x \\text{, but} \\cr &\\text{fails when } x \\text{ is negative)} \\end{aligned}",
       "feedback": "Testing negative values shows that the inequality still holds! For example, if $x = -2$, $(-2)^2 + 4(-2) + 5 = 4 - 8 + 5 = 1 > 0$. Because the completed square form is $(x+2)^2 + 1$, the expression has a global minimum of 1 and is never negative."
     },
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true (quadratics always take negative values for some interval)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true} \\cr &\\text{(quadratics always take negative} \\cr &\\text{values for some interval)} \\end{aligned}",
       "feedback": "A quadratic only takes negative values if its discriminant $b^2 - 4ac > 0$. Here, $b^2 - 4ac = 4^2 - 4(1)(5) = 16 - 20 = -4 < 0$. With a positive $x^2$ coefficient, the parabola sits entirely above the $x$-axis and is strictly positive for all real $x$."
     },
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by contradiction completed} \\cr &\\textbf{(ii) } \\text{Always true (completing the square gives } (x+2)^2 + 1 \\ge 1 > 0\\text{)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by contradiction} \\cr &\\text{completed} \\cr &\\textbf{(ii) } \\text{Always true} \\cr &\\text{(completing the square gives} \\cr &(x+2)^2 + 1 \\ge 1 > 0\\text{)} \\end{aligned}",
       "feedback": "Part (i) is a proof by exhaustion because every single consecutive pair in the finite set was enumerated and evaluated directly. Proof by contradiction would begin by assuming the sum is even."
     }
   ],
@@ -2093,19 +2093,19 @@ window.ALEVEL_QUESTIONS = [
     "Add $2$ to both sides of the inequality:\\begin{aligned} x + \\dfrac{1}{x} \\ge 2 \\end{aligned}Since this deduction relies strictly on the fundamental property that a squared real number is non-negative, the proof is complete for all $x > 0$.",
     "<strong>Part (ii): Always, Sometimes, or Never True</strong><br><br>To analyze the statement \"if $x > y$, then $x^2 > y^2$\", test numbers across positive and negative values:<br><br>• Let $x = 3$ and $y = 2$: here $3 > 2$, and $3^2 = 9 > 2^2 = 4$. The statement <strong>holds</strong>.<br>• Let $x = 1$ and $y = -3$: here $1 > -3$, but $1^2 = 1$ and $(-3)^2 = 9$. Since $1 \\ngtr 9$, the statement <strong>fails</strong>.",
     "Because the statement holds when both values are positive (with $x > y > 0$) but fails whenever $y$ is a negative number with a larger absolute magnitude than $x$, the statement is <strong>sometimes true</strong>.",
-    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (e.g. holds for } x = 3, y = 2\\text{, but fails for } x = 1, y = -3\\text{)} \\end{aligned}"
+   "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Sometimes true} \\cr &\\text{(e.g. holds for } x = 3, y = 2\\text{,} \\cr &\\text{ but fails for } x = 1, y = -3\\text{)} \\end{aligned}"
   ],
   "pi_options": [
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Always true (squaring both sides of an inequality preserves the inequality sign)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Always true} \\cr &\\text{(squaring both sides of an} \\cr &\\text{ inequality preserves the sign)} \\end{aligned}",
       "feedback": "Squaring both sides of an inequality is ONLY valid if both sides are known to be non-negative! If negative numbers are involved, squaring can reverse the inequality. For example, $1 > -3$, but squaring gives $1 < 9$."
     },
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Never true (squaring operations always invert inequalities)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by deduction completed} \\cr &\\textbf{(ii) } \\text{Never true} \\cr &\\text{(squaring operations always} \\cr &\\text{ invert inequalities)} \\end{aligned}",
       "feedback": "Squaring does not always invert inequalities. For all positive real numbers where $x > y > 0$, squaring strictly preserves the inequality (e.g. $4 > 3 \\implies 16 > 9$). Therefore, the statement is not 'never true'."
     },
     {
-      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Sometimes true (e.g. holds for } x = 3, y = 2\\text{, but fails for } x = 1, y = -3\\text{)} \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Sometimes true} \\cr &\\text{(e.g. holds for } x = 3, y = 2\\text{,} \\cr &\\text{ but fails for } x = 1, y = -3\\text{)} \\end{aligned}",
       "feedback": "Part (i) is a proof by deduction, not proof by exhaustion. The algebraic inequality $(\\sqrt{x} - \\frac{1}{\\sqrt{x}})^2 \\ge 0$ proves the relationship for all infinitely many positive reals at once, rather than testing a finite list of cases."
     }
   ],
