@@ -1917,7 +1917,7 @@ window.ALEVEL_QUESTIONS = [
   "img": false,
   "question": "<strong>(i)</strong> Prove that for all $n \\in \\mathbb{N}$, $n^2 + 1$ is not divisible by $3$.<br><br><strong>(ii)</strong> \"For all real numbers $x$, $x^2 > x$.\"<br>State, giving a reason, whether the above statement is always true, sometimes true, or never true.",
   "steps": [
-    "<strong>Part (i): Proof by Exhaustion</strong><br><br>Any natural number $n$ can be expressed in one of three forms depending on its remainder when divided by $3$:\\begin{aligned} n = 3k, \\quad n = 3k + 1, \\quad \\text{or} \\quad n = 3k + 2 \\end{aligned}where $k$ is a non-negative integer. We test each case systematically.",
+    "<strong>Part (i): Proof by Exhaustion</strong><br><br>Any natural number $n$ can be expressed in one of three forms depending on its remainder when divided by $3$:\\begin{aligned} n = 3k, \\cr & = 3k + 1, \\quad \\text{or} \\cr & n = 3k + 2 \\end{aligned}where $k$ is a non-negative integer. We test each case systematically.",
     "<strong>Case 1: $n = 3k$ (multiples of 3)</strong>\\begin{aligned} n^2 + 1 &= (3k)^2 + 1 \\cr &= 9k^2 + 1 \\cr &= 3(3k^2) + 1 \\end{aligned}This leaves a remainder of $1$ when divided by $3$, so it is not divisible by $3$.",
     "<strong>Case 2: $n = 3k + 1$</strong>\\begin{aligned} n^2 + 1 &= (3k + 1)^2 + 1 \\cr &= 9k^2 + 6k + 1 + 1 \\cr &= 3(3k^2 + 2k) + 2 \\end{aligned}This leaves a remainder of $2$ when divided by $3$, so it is not divisible by $3$.",
     "<strong>Case 3: $n = 3k + 2$</strong>\\begin{aligned} n^2 + 1 &= (3k + 2)^2 + 1 \\cr &= 9k^2 + 12k + 4 + 1 \\cr &= 9k^2 + 12k + 5 \\cr &= 3(3k^2 + 4k + 1) + 2 \\end{aligned}This also leaves a remainder of $2$ when divided by $3$.<br><br>Since all possible forms of $n \\in \\mathbb{N}$ have been exhausted and none leave a remainder of $0$, $n^2 + 1$ is never divisible by $3$.",
@@ -2003,7 +2003,7 @@ window.ALEVEL_QUESTIONS = [
   "question": "<strong>(i)</strong> Prove by deduction that the difference between the squares of any two consecutive odd integers is always a multiple of $8$.<br><br><strong>(ii)</strong> \"For all positive real numbers $x$ and $y$, $\\sqrt{x + y} = \\sqrt{x} + \\sqrt{y}$.\"<br>State, giving a reason, whether the above statement is always true, sometimes true, or never true.",
   "steps": [
     "<strong>Part (i): Proof by Deduction</strong><br><br>Let two consecutive odd integers be represented algebraically as $(2k + 1)$ and $(2k + 3)$, where $k$ is an integer.",
-    "Form the difference between their squares and expand the brackets:\\begin{aligned} (2k + 3)^2 - (2k + 1)^2 &= (4k^2 + 12k + 9) - (4k^2 + 4k + 1) \\cr &= 4k^2 + 12k + 9 - 4k^2 - 4k - 1 \\cr &= 8k + 8 \\end{aligned}",
+    "Form the difference between their squares and expand the brackets:\\begin{aligned} &(2k + 3)^2 - (2k + 1)^2 \\cr &\\qquad= (4k^2 + 12k + 9) - (4k^2 + 4k + 1) \\cr &\\qquad= 4k^2 + 12k + 9 - 4k^2 - 4k - 1 \\cr &\\qquad= 8k + 8 \\end{aligned}",
     "Factor out the common factor of $8$:\\begin{aligned} 8k + 8 &= 8(k + 1) \\end{aligned}Since $k$ is an integer, $(k + 1)$ must also be an integer. Therefore, $8(k + 1)$ is strictly divisible by $8$.<br><br>The proof by deduction is complete.",
     "<strong>Part (ii): Always, Sometimes, or Never True</strong><br><br>Square both sides of the proposed equation $\\sqrt{x + y} = \\sqrt{x} + \\sqrt{y}$:\\begin{aligned} \\left(\\sqrt{x + y}\\right)^2 &= x + y \\cr \\left(\\sqrt{x} + \\sqrt{y}\\right)^2 &= x + 2\\sqrt{xy} + y \\end{aligned}",
     "For the two sides to be equal, we would require:\\begin{aligned} x + y &= x + 2\\sqrt{xy} + y \\cr 0 &= 2\\sqrt{xy} \\cr \\sqrt{xy} &= 0 \\end{aligned}However, we are given that $x$ and $y$ are <strong>positive</strong> real numbers ($x > 0$ and $y > 0$). This guarantees that $\\sqrt{xy} > 0$, so equality is impossible for any positive reals.",
@@ -2056,11 +2056,11 @@ window.ALEVEL_QUESTIONS = [
   "pi_options": [
     {
       "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Sometimes true} \\cr &\\text{(holds for positive } x \\text{, but} \\cr &\\text{fails when } x \\text{ is negative)} \\end{aligned}",
-      "feedback": "Testing negative values shows that the inequality still holds! For example, if $x = -2$, $(-2)^2 + 4(-2) + 5 = 4 - 8 + 5 = 1 > 0$. Because the completed square form is $(x+2)^2 + 1$, the expression has a global minimum of 1 and is never negative."
+      "feedback": "Testing negative values shows that the inequality still holds! For example, if $x = -2$, $$(-2)^2 + 4(-2) + 5$$ $$= 4 - 8 + 5$$ $$= 1 > 0$$ Because the completed square form is $(x+2)^2 + 1$, the expression has a global minimum of 1 and is never negative."
     },
     {
       "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by exhaustion completed} \\cr &\\textbf{(ii) } \\text{Never true} \\cr &\\text{(quadratics always take negative} \\cr &\\text{values for some interval)} \\end{aligned}",
-      "feedback": "A quadratic only takes negative values if its discriminant $b^2 - 4ac > 0$. Here, $b^2 - 4ac = 4^2 - 4(1)(5) = 16 - 20 = -4 < 0$. With a positive $x^2$ coefficient, the parabola sits entirely above the $x$-axis and is strictly positive for all real $x$."
+      "feedback": "A quadratic only takes negative values if its discriminant $b^2 - 4ac > 0$. Here, $$b^2 - 4ac = 4^2 - 4(1)(5)$$ $$= 16 - 20$$ $$= -4 < 0$$ With a positive $x^2$ coefficient, the parabola sits entirely above the $x$-axis and is strictly positive for all real $x$."
     },
     {
       "ans": "\\begin{aligned} &\\textbf{(i) } \\text{Proof by contradiction} \\cr &\\text{completed} \\cr &\\textbf{(ii) } \\text{Always true} \\cr &\\text{(completing the square gives} \\cr &(x+2)^2 + 1 \\ge 1 > 0\\text{)} \\end{aligned}",
@@ -2089,7 +2089,7 @@ window.ALEVEL_QUESTIONS = [
   "question": "<strong>(i)</strong> Prove by deduction that for all $x > 0$,$$x + \\dfrac{1}{x} \\ge 2$$<br><strong>(ii)</strong> \"For all real numbers $x$ and $y$, if $x > y$, then $x^2 > y^2$.\"<br>State, giving a reason, whether the above statement is always true, sometimes true, or never true.",
   "steps": [
     "<strong>Part (i): Proof by Deduction</strong><br><br>For any positive real number $x$, both $\\sqrt{x}$ and $\\dfrac{1}{\\sqrt{x}}$ are defined real numbers. Consider the square of their difference:\\begin{aligned} \\left(\\sqrt{x} - \\dfrac{1}{\\sqrt{x}}\\right)^2 \\end{aligned}",
-    "Because the square of any real number is always greater than or equal to zero:\\begin{aligned} \\left(\\sqrt{x} - \\dfrac{1}{\\sqrt{x}}\\right)^2 &\\ge 0 \\cr \\left(\\sqrt{x}\\right)^2 - 2\\left(\\sqrt{x}\\right)\\left(\\dfrac{1}{\\sqrt{x}}\\right) + \\left(\\dfrac{1}{\\sqrt{x}}\\right)^2 &\\ge 0 \\cr x - 2 + \\dfrac{1}{x} &\\ge 0 \\end{aligned}",
+    "Because the square of any real number is always greater than or equal to zero:\\begin{aligned} &\\left(\\sqrt{x} - \\dfrac{1}{\\sqrt{x}}\\right)^2 \\ge 0 \\cr &\\left(\\sqrt{x}\\right)^2 - 2\\left(\\sqrt{x}\\right)\\left(\\dfrac{1}{\\sqrt{x}}\\right)\\cr & \\qquad \\qquad + \\left(\\dfrac{1}{\\sqrt{x}}\\right)^2 \\ge 0 \\cr & x - 2 + \\dfrac{1}{x} \\ge 0 \\end{aligned}",
     "Add $2$ to both sides of the inequality:\\begin{aligned} x + \\dfrac{1}{x} \\ge 2 \\end{aligned}Since this deduction relies strictly on the fundamental property that a squared real number is non-negative, the proof is complete for all $x > 0$.",
     "<strong>Part (ii): Always, Sometimes, or Never True</strong><br><br>To analyze the statement \"if $x > y$, then $x^2 > y^2$\", test numbers across positive and negative values:<br><br>• Let $x = 3$ and $y = 2$: here $3 > 2$, and $3^2 = 9 > 2^2 = 4$. The statement <strong>holds</strong>.<br>• Let $x = 1$ and $y = -3$: here $1 > -3$, but $1^2 = 1$ and $(-3)^2 = 9$. Since $1 \\ngtr 9$, the statement <strong>fails</strong>.",
     "Because the statement holds when both values are positive (with $x > y > 0$) but fails whenever $y$ is a negative number with a larger absolute magnitude than $x$, the statement is <strong>sometimes true</strong>.",
