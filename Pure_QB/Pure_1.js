@@ -1165,7 +1165,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "pro-tip",
                         "title": "Quadratics in Disguise",
-                        "content": "Whenever you see cos2θ or sin2θ, try rewriting everything in terms of sinθ or cosθ. It often collapses into a clean quadratic."
+                        "content": "Whenever you see $\\cos2\\theta$ or $\\sin2\\theta$, try rewriting everything in terms of $\\sin\\theta$ or $\\cos\\theta$. It often collapses into a clean quadratic."
                 }
         },
         {
@@ -1203,7 +1203,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "caution",
                         "title": "Check Validity of Roots",
-                        "content": "Quadratics in sinθ or cosθ often produce invalid roots outside the range −1 to 1. Always check before taking inverse trig values."
+                        "content": "Quadratics in $\\sin\\theta$ or $\\cos\\theta$ often produce invalid roots outside the range −1 to 1. Always check before taking inverse trig values."
                 }
         },
         {
@@ -1284,7 +1284,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "pro-tip",
                         "title": "The Head Teacher's Eye: Base Multipliers",
-                        "content": "In GCE exponential modeling, the base of the exponent (b in $A b^t$) always represents the proportion of value retained each year. If an asset depreciates by $20\\%$, it retains $80\\%$ of its value, so $b = 0.8$. If it depreciates more slowly, it retains more value, so b must increase closer to 1."
+                        "content": "In GCE exponential modeling, the base of the exponent ($b$ in $A b^t$) always represents the proportion of value retained each year. If an asset depreciates by $20\\%$, it retains $80\\%$ of its value, so $b = 0.8$. If it depreciates more slowly, it retains more value, so b must increase closer to 1."
                 }
         },
         {
@@ -1648,14 +1648,14 @@ window.ALEVEL_QUESTIONS = [
                         "Signed Areas"
                 ],
                 "img": "images/Pure_SVGs/004040.svg",
-                "question": "The diagram shows a sketch of part of the curve with equation:<br>$$y = x(x+2)(x-5)$$<br>The region $R_1$, shown shaded in the diagram, is bounded by the curve and the negative x-axis.<br><strong>(a)</strong> Show that the exact area of $R_1$ is 8.<br><br>The region $R_2$, also shown shaded in the diagram, is bounded by the curve, the positive x-axis, and the line with equation $x = b$, where b is a positive constant and $0 < b < 5$.<br>Given that the area of $R_1$ is equal to the area of $R_2$:<br><strong>(b)</strong> Verify that b satisfies the equation:<br>$$(b+2)^2(3b^2 - 24b + 24) = 0$$<br>The roots of the equation $3b^2 - 24b + 24 = 0$ are 1.172 and 6.828 to 3 decimal places. The value of b is therefore 1.172 to 3 decimal places.<br><strong>(c)</strong> Explain, with the aid of a diagram, the significance of the root 6.828.",
+                "question": "The diagram shows a sketch of part of the curve with equation:<br>$$y = x(x+2)(x-5)$$<br>The region $R_1$, shown shaded in the diagram, is bounded by the curve and the negative x-axis.<br><strong>(a)</strong> Show that the exact area of $R_1$ is 8.<br><br>The region $R_2$, also shown shaded in the diagram, is bounded by the curve, the positive x-axis, and the line with equation $x = b$, where $b$ is a positive constant and $0 < b < 5$.<br>Given that the area of $R_1$ is equal to the area of $R_2$:<br><strong>(b)</strong> Verify that $b$ satisfies the equation:<br>$$(b+2)^2(3b^2 - 24b + 24) = 0$$<br>The roots of the equation $3b^2 - 24b + 24 = 0$ are 1.172 and 6.828 to 3 decimal places. The value of $b$ is therefore 1.172 to 3 decimal places.<br><strong>(c)</strong> Explain, with the aid of a diagram, the significance of the root 6.828.",
                 "steps": [
                         "<strong>Part (a):</strong> First, we expand the cubic equation to make it easy to integrate:<br>\\begin{aligned}y &= x(x+2)(x-5) \\cr&= x(x^2 - 3x - 10) \\cr&= x^3 - 3x^2 - 10x\\end{aligned}",
                         "Since the region $R_1$ lies entirely above the $x$-axisbetween $x = -2$ and $x = 0$, its exact area is given by the definite integral:<br>$$\\text{Area } R_1 = \\int_{ -2 }^{0} (x^3 - 3x^2 - 10x) \\text{ d}x$$<br>$$\\text{Area } R_1 = \\left[ \\frac{ x^4 }{4} - x^3 - 5x^2 \\right]_{ -2 }^{0}$$",
                         "Evaluating this at the limits 0 and -2:\\begin{aligned} & \\text{Area } R_1 \\cr & \\quad = 0 - \\left( \\frac{ (-2)^4 }{4} - (-2)^3 - 5(-2)^2 \\right)\\cr & \\quad = - \\left( 4 + 8 - 20 \\right) \\cr & \\quad = - \\left( -8 \\right) \\cr & \\quad = 8\\end{aligned}",
                         "<strong>Part (b):</strong> Since $R_2$ lies entirely below the $x$-axisin the interval $0 < b < 5$, its area is given by the negative integral:<br>\\begin{aligned}\\cr &  \\text{Area } R_2 \\cr & \\quad = -\\int_{0}^{b} (x^3 - 3x^2 - 10x) \\text{ d}x\\cr & \\quad = -\\left[ \\frac{ x^4 }{4} - x^3 - 5x^2 \\right]_{0}^{b}\\cr & \\quad  = -\\left( \\frac{ b^4 }{4} - b^3 - 5b^2 \\right)\\end{aligned}",
                         "Setting $\\text{Area } R_1 = \\text{Area } R_2$ gives:\\begin{aligned} & 8 = -\\left( \\frac{ b^4 }{4} - b^3 - 5b^2 \\right) \\cr & \\Rightarrow\\frac{ b^4 }{4} - b^3 - 5b^2 + 8 = 0\\end{aligned}<br>Multiplying the entire equation by 4 to clear the fractions:<br>$$b^4 - 4b^3 - 20b^2 + 32 = 0$$",
-                        "We can verify that this factorises to $(b+2)^2(b^2 - 8b + 8) = 0$ (which is equivalent to $(b+2)^2(3b^2 - 24b + 24) = 0$ upon multiplying the quadratic by 3) by expanding the brackets:\\begin{aligned} & (b^2 + 4b + 4)(3b^2 - 24b + 24)\\cr & \\quad  = b^2(3b^2 - 24b + 24)\\cr & \\quad \\quad + 4b(3b^2 - 24b + 24)\\cr & \\quad \\quad \\quad + 4(3b^2 - 24b + 24)\\cr & \\quad = 3b^4 - 24b^3 + 24b^2 + 12b^3 \\cr & \\quad \\quad- 96b^2 + 96b + 12b^2 - 96b + 96\\cr & \\quad = 3b^4 - 12b^3 - 60b^2 + 96 \\cr & \\quad = 3(b^4 - 4b^3 - 20b^2 + 32) = 0  \\text{ (verified)}\\end{aligned}",
+                        "We can verify that this factorises to $(b+2)^2(b^2 - 8b + 8) = 0$ (which is equivalent to $(b+2)^2(3b^2 - 24b + 24) = 0$ upon multiplying the quadratic by 3) by expanding the brackets:\\begin{aligned} & (b^2 + 4b + 4)(3b^2 - 24b + 24)\\cr & \\quad  = b^2(3b^2 - 24b + 24)\\cr & \\quad \\quad + 4b(3b^2 - 24b + 24)\\cr & \\quad \\quad \\quad + 4(3b^2 - 24b + 24)\\cr & \\quad = 3b^4 - 24b^3 + 24b^2 + 12b^3 \\cr & \\quad \\quad- 96b^2 + 96b + 12b^2 - 96b + 96\\cr & \\quad = 3b^4 - 12b^3 - 60b^2 + 96 \\cr & \\quad = 3(b^4 - 4b^3 - 20b^2 + 32) = 0 \\cr & \\qquad \\text{ (verified)}\\end{aligned}",
                         "<strong>Part (c):</strong> The root $b \\approx 6.828$ lies to the right of the root $x = 5$, which is outside our interval of validity $0 < b < 5$.<br>Geometrically, this value represents an upper limit where the total net signed area from 0 to 6.828 integrates to -8. This occurs because the negative area of the lower lobe (between 0 and 5) is partially cancelled out by the positive area of the upper lobe (between 5 and 6.828).<br><br>Here is the diagram showing this relationship:<br><img src='images/Pure_SVGs/004040_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
                         "Final Answer: <strong>(a)</strong> $$\\text{Area } R_1 = 8$$ <strong>(b)</strong> $$(b+2)^2(3b^2 - 24b + 24) = 0\\text{ verified}$$ <strong>(c)</strong> $$b \\approx 6.828 \\text{ signed area cancellation}$$"
                 ],
@@ -1700,7 +1700,7 @@ window.ALEVEL_QUESTIONS = [
                         "Dividing both sides of the equation by (b - 1) gives our target proof:<br>$$a = \\dfrac{b}{ b - 1 }$$",
                         "<strong>Part (b):</strong> For the logarithmic terms to be defined in the original equation, we are given that $a > 0$ and $b > 0$.",
                         "Looking at our equation $a = \\dfrac{b}{ b - 1 }$, since a must be strictly positive ($a > 0$) and the numerator is positive ($b > 0$), the denominator must also be positive to ensure a positive quotient:<br>$$b - 1 > 0 \\implies b > 1$$",
-                        "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b}{ b - 1 }\\\\\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
+                        "Final Answer: <strong>(a)</strong> $$a = \\dfrac{b}{ b - 1 } $$ <strong>(b)</strong> $$b > 1$$"
                 ],
                 "pi_options": [
                         {
@@ -1745,7 +1745,7 @@ window.ALEVEL_QUESTIONS = [
                         "Dividing both sides of the equation by $(b^2 - 1)$ gives our target proof:<br>$$a = \\dfrac{ b^3 }{ b^2 - 1 }$$",
                         "<strong>Part (b):</strong> For the logarithmic terms to be defined, we require $a > b > 0$ and $a - b > 0$.",
                         "Looking at our equation $a = \\dfrac{ b^3 }{ b^2 - 1 }$, since a must be strictly positive ($a > 0$) and the numerator is positive ($b^3 > 0$, as $b > 0$), the denominator must also be positive to ensure a positive quotient:<br>$$b^2 - 1 > 0 \\implies b^2 > 1$$<br>Since $b > 0$, this yields the strict restriction:<br>$$b > 1$$",
-                        "Final Answer: <strong>(a)</strong> $$a = \\dfrac{ b^3 }{ b^2 - 1 }\\\\\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
+                        "Final Answer: <strong>(a)</strong> $$a = \\dfrac{ b^3 }{ b^2 - 1 }$$ <strong>(b)</strong> $$b > 1$$"
                 ],
                 "pi_options": [
                         {
@@ -1791,7 +1791,7 @@ window.ALEVEL_QUESTIONS = [
                         "First, since $a > 0$ and the numerator is positive ($b^2 > 0$), our denominator must be strictly positive to ensure a positive quotient:<br>$$2b - 1 > 0 \\implies b > 0.5$$",
                         "Second, we must satisfy the initial condition that $a > b$:<br>$$\\dfrac{ b^2 }{ 2b - 1 } > b$$<br>Since $2b-1 > 0$, we can multiply both sides by (2b-1) safely without swapping the inequality sign:<br>$$b^2 > b(2b - 1) \\implies b^2 > 2b^2 - b$$<br>$$b > b^2$$<br>Since $b > 0$, we can divide by b:<br>$$1 > b \\implies b < 1$$",
                         "Combining both inequalities yields our full, strict restriction on b:<br>$$\\frac{1}{2} < b < 1$$",
-                        "Final Answer: <strong>(a)</strong> $$a = \\dfrac{ b^2 }{ 2b - 1 }\\\\\\ \\text{is verified}$$ <strong>(b)</strong> $$\\dfrac{1}{2} < b < 1$$"
+                        "Final Answer: <strong>(a)</strong> $$a = \\dfrac{ b^2 }{ 2b - 1 }$$ <strong>(b)</strong> $$\\dfrac{1}{2} < b < 1$$"
                 ],
                 "pi_options": [
                         {
@@ -1835,7 +1835,7 @@ window.ALEVEL_QUESTIONS = [
                         "Dividing both sides of the equation by (b - 1) gives our target proof:<br>$$a = \\dfrac{ 2b^2 }{ b - 1 }$$",
                         "<strong>Part (b):</strong> For the logarithmic terms to be defined, we are given that $a > 2b > 0$.",
                         "Looking at our equation $a = \\dfrac{ 2b^2 }{ b - 1 }$, since a must be strictly positive ($a > 0$) and the numerator is positive ($2b^2 > 0$), the denominator must also be positive to ensure a positive quotient:<br>$$b - 1 > 0 \\implies b > 1$$",
-                        "Final Answer: <strong>(a)</strong> $$a = \\dfrac{ 2b^2 }{ b - 1 }\\\\\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
+                        "Final Answer: <strong>(a)</strong> $$a = \\dfrac{ 2b^2 }{ b - 1 }$$ <strong>(b)</strong> $$b > 1$$"
                 ],
                 "pi_options": [
                         {
@@ -1880,7 +1880,7 @@ window.ALEVEL_QUESTIONS = [
                         "Dividing both sides of the equation by $(b^3 - 1)$ gives our target proof:<br>$$a = \\dfrac{ b^5 }{ b^3 - 1 }$$",
                         "<strong>Part (b):</strong> For the logarithmic terms to be defined, we are given $a > b^2 > 0$ and $b > 0$.",
                         "Looking at our equation $a = \\dfrac{ b^5 }{ b^3 - 1 }$, since a must be strictly positive ($a > 0$) and the numerator is positive ($b^5 > 0$, as $b > 0$), the denominator must also be positive to ensure a positive quotient:<br>$$b^3 - 1 > 0 \\implies b^3 > 1 \\implies b > 1$$",
-                        "Final Answer: <strong>(a)</strong> $$a = \\dfrac{ b^5 }{ b^3 - 1 }\\\\\\ \\text{is verified}$$ <strong>(b)</strong> $$b > 1$$"
+                        "Final Answer: <strong>(a)</strong> $$a = \\dfrac{ b^5 }{ b^3 - 1 }$$ <strong>(b)</strong> $$b > 1$$"
                 ],
                 "pi_options": [
                         {
