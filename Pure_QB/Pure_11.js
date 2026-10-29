@@ -1243,7 +1243,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "caution",
                         "title": "The Head Teacher's Eye: Boundary Case Rejections",
-                        "content": "For a cubic equation to have three distinct roots, the local maximum and local minimum must be on opposite sides of the x-axis (meaning $y_{\\text{max}} > 0$ and $y_{\\text{min}} < 0$). If they were equal to zero, the equation would have a repeated root, resulting in only two distinct roots."
+                        "content": "For a cubic equation to have three distinct roots, the local maximum and local minimum must be on opposite sides of the $x$-axis(meaning $y_{\\text{max}} > 0$ and $y_{\\text{min}} < 0$). If they were equal to zero, the equation would have a repeated root, resulting in only two distinct roots."
                 }
         },
         {
@@ -1367,7 +1367,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "pro-tip",
                         "title": "The Head Teacher's Eye: Symmetric Ranges",
-                        "content": "For cubic functions of the form $f(x) = x^3 - kx + q$, the turning points are symmetrically located around the y-axis at $x = \\pm\\sqrt{\\dfrac{k}{3}}$. Because of this symmetry, the range of $q$ required to produce three distinct roots will always be symmetrical around zero (i.e., $-M < q < M$)."
+                        "content": "For cubic functions of the form $f(x) = x^3 - kx + q$, the turning points are symmetrically located around the $y$-axis  at $x = \\pm\\sqrt{\\dfrac{k}{3}}$. Because of this symmetry, the range of $q$ required to produce three distinct roots will always be symmetrical around zero (i.e., $-M < q < M$)."
                 }
         },
         {
