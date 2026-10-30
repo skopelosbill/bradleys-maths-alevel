@@ -660,32 +660,32 @@ window.ALEVEL_QUESTIONS = [
     "Parallel Box Plots",
     "Consistency and Spread"
   ],
-  "img": "images/Statistics_SVGs/050217.svg",
-  "question": "A logistics manager monitors the delivery times (in minutes) for urgent packages dispatched by two rival courier firms, Courier A and Courier B. Random samples of delivery times are displayed in the parallel box plots below.<br><br><strong>(a)</strong> Using the summary values from the box plot for Courier B, show that the delivery time of $58\\text{ minutes}$ is an outlier according to the standard $1.5 \\times \\text{IQR}$ rule.<br><br><strong>(b)</strong> A medical laboratory requires predictable, consistent delivery times for blood samples. Advise the laboratory on which courier to select, justifying your choice using appropriate statistical measures of location and spread.<br><br><strong>(c)</strong> Describe the skewness of the delivery times for Courier A, justifying your answer using the quartiles.",
+  "img": false,
+  "question": "A logistics manager monitors the delivery times (in minutes) for urgent packages dispatched by two rival courier firms, Courier A and Courier B. Random samples of delivery times are summarised in the table below:$$\\begin{array}{lcc} \\hline \\textbf{Summary Statistic} & \\textbf{Courier A} & \\textbf{Courier B} \\cr \\hline \\text{Minimum} & 18 & 20 \\cr \\text{Lower Quartile } (Q_1) & 26 & 28 \\cr \\text{Median } (Q_2) & 30 & 32 \\cr \\text{Upper Quartile } (Q_3) & 34 & 38 \\cr \\text{Maximum (non-outlier)} & 42 & 54 \\cr \\hline \\end{array}$$A single anomalous delivery time of $58\\text{ minutes}$ was also recorded for Courier B.<br><br><strong>(a)</strong> Using the summary values for Courier B, show that the delivery time of $58\\text{ minutes}$ is an outlier according to the standard $1.5 \\times \\text{IQR}$ rule.<br><br><strong>(b)</strong> A medical laboratory requires predictable, consistent delivery times for blood samples. Advise the laboratory on which courier to select, justifying your choice using appropriate statistical measures of location and spread.<br><br><strong>(c)</strong> Describe the skewness of the delivery times for Courier A, justifying your answer using the quartiles.",
   "steps": [
-    "<strong>(a) Outlier Calculation for Courier B:</strong><br><br>From the box plot for Courier B, $Q_1 = 28$ and $Q_3 = 38$:\\begin{aligned} \\text{IQR} &= 38 - 28 \\cr &= 10 \\end{aligned}Calculating the upper outlier boundary:\\begin{aligned} \\text{Upper} &= Q_3 + 1.5(\\text{IQR}) \\cr &= 38 + 1.5(10) \\cr &= 38 + 15 \\cr &= 53 \\end{aligned}Since $58 > 53$, the delivery time of $58\\text{ minutes}$ is an <strong>outlier</strong>.",
-    "<strong>(b) Courier Recommendation:</strong><br><br>The laboratory should choose <strong>Courier A</strong>.<br><br>Although Courier A has a slightly higher median ($30\\text{ minutes}$ compared to $28\\text{ minutes}$ for Courier B), Courier A has a smaller interquartile range ($34 - 26 = 8\\text{ minutes}$ compared to $10\\text{ minutes}$ for Courier B) and no extreme outliers, indicating more consistent and predictable delivery times.",
-    "<strong>(c) Skewness of Courier A:</strong><br><br>Evaluating quartile distances:\\begin{aligned} Q_2 - Q_1 &= 30 - 26 \\cr &= 4 \\end{aligned}\\begin{aligned} Q_3 - Q_2 &= 34 - 30 \\cr &= 4 \\end{aligned}Since $Q_3 - Q_2 = Q_2 - Q_1 = 4$, the distribution of delivery times for Courier A is <strong>approximately symmetrical</strong>.",
-    "Final Answer: (a) $58 > 53$, (b) Courier A due to lower IQR and no outliers, (c) Symmetrical as $Q_3 - Q_2 = Q_2 - Q_1 = 4$"
+    "<strong>(a) Outlier Calculation for Courier B:</strong><br><br>Calculate the interquartile range for Courier B:\\begin{aligned} \\text{IQR} &= Q_3 - Q_1 \\cr &= 38 - 28 \\cr &= 10 \\end{aligned}Calculate the upper outlier boundary:\\begin{aligned} \\text{Upper Boundary} &= Q_3 + 1.5(\\text{IQR}) \\cr &= 38 + 1.5(10) \\cr &= 38 + 15 \\cr &= 53 \\end{aligned}Since $58 > 53$, the delivery time of $58\\text{ minutes}$ is strictly confirmed as an <strong>outlier</strong>.",
+    "<strong>(b) Courier Recommendation:</strong><br><br>The laboratory should choose <strong>Courier A</strong>.<br><br>• <strong>Location:</strong> Courier A has a lower median delivery time ($30\\text{ min}$ vs $32\\text{ min}$), meaning packages generally arrive faster.<br>• <strong>Spread & Consistency:</strong> Courier A has a smaller interquartile range ($34 - 26 = 8\\text{ min}$ compared to $10\\text{ min}$ for Courier B) and has no extreme outliers, indicating more consistent and reliable delivery times.",
+    "<strong>(c) Skewness of Courier A:</strong><br><br>Evaluate the quartile differences for Courier A:\\begin{aligned} Q_2 - Q_1 &= 30 - 26 \\cr &= 4 \\cr Q_3 - Q_2 &= 34 - 30 \\cr &= 4 \\end{aligned}Since $Q_3 - Q_2 = Q_2 - Q_1 = 4$, the distribution of delivery times for Courier A is <strong>symmetrical</strong>.",
+    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } 58 > 53 \\text{ (confirmed outlier)} \\cr &\\textbf{(b) } \\text{Courier A (lower median } 30 \\text{ vs } 32\\text{,} \\cr &\\quad \\text{smaller IQR } 8 \\text{ vs } 10\\text{, no outliers)} \\cr &\\textbf{(c) } \\text{Symmetrical (} Q_3 - Q_2 = Q_2 - Q_1 = 4\\text{)} \\end{aligned}"
   ],
   "pi_options": [
     {
-      "ans": "(a) $58 > 53$, (b) Courier B due to higher median, (c) Symmetrical as $Q_3 - Q_2 = Q_2 - Q_1 = 4$",
-      "feedback": "For a laboratory requiring predictability, consistency is measured by spread (IQR). Courier A has a smaller IQR and no outliers, making it more reliable."
+      "ans": "\\begin{aligned} &\\textbf{(a) } 58 > 53 \\text{ (confirmed outlier)} \\cr &\\textbf{(b) } \\text{Courier B (higher median indicates} \\cr &\\quad \\text{greater delivery capacity)} \\cr &\\textbf{(c) } \\text{Symmetrical (} Q_3 - Q_2 = Q_2 - Q_1 = 4\\text{)} \\end{aligned}",
+      "feedback": "For a laboratory requiring urgent deliveries, a higher median means deliveries take longer on average, not faster. Furthermore, consistency is measured by spread (IQR), where Courier A is superior ($8$ vs $10$) with no outliers."
     },
     {
-      "ans": "(a) $58 \\le 53$, (b) Courier A due to lower IQR and no outliers, (c) Symmetrical as $Q_3 - Q_2 = Q_2 - Q_1 = 4$",
-      "feedback": "Calculating the upper limit gives $38 + 1.5(10) = 53$. Because $58$ exceeds $53$, it lies outside the boundary and is an outlier."
+      "ans": "\\begin{aligned} &\\textbf{(a) } 58 \\le 53 \\text{ (not an outlier)} \\cr &\\textbf{(b) } \\text{Courier A (lower median } 30 \\text{ vs } 32\\text{,} \\cr &\\quad \\text{smaller IQR } 8 \\text{ vs } 10\\text{, no outliers)} \\cr &\\textbf{(c) } \\text{Symmetrical (} Q_3 - Q_2 = Q_2 - Q_1 = 4\\text{)} \\end{aligned}",
+      "feedback": "Calculating the upper boundary gives $38 + 1.5(10) = 53$. Because $58$ is strictly greater than $53$, it lies beyond the boundary and is an outlier."
     },
     {
-      "ans": "(a) $58 > 53$, (b) Courier A due to lower IQR and no outliers, (c) Positive skew as upper whisker is longer",
-      "feedback": "Inside the box, the median ($30$) is situated exactly halfway between $Q_1 = 26$ and $Q_3 = 34$, indicating approximate symmetry."
+      "ans": "\\begin{aligned} &\\textbf{(a) } 58 > 53 \\text{ (confirmed outlier)} \\cr &\\textbf{(b) } \\text{Courier A (lower median } 30 \\text{ vs } 32\\text{,} \\cr &\\quad \\text{smaller IQR } 8 \\text{ vs } 10\\text{, no outliers)} \\cr &\\textbf{(c) } \\text{Positive skew (upper values extend further)} \\end{aligned}",
+      "feedback": "Check the quartile spacing: $Q_3 - Q_2 = 34 - 30 = 4$ and $Q_2 - Q_1 = 30 - 26 = 4$. Because the median is located exactly halfway between the quartiles, the distribution is symmetrical, not positively skewed."
     }
   ],
   "bradley_insight": {
     "type": "pro-tip",
-    "title": "The Head Teacher's Eye: Consistency Means Smaller Spread",
-    "content": "In examination questions, the words 'consistent', 'reliable', or 'predictable' always direct you to compare a measure of spread (the IQR or standard deviation). The distribution with the smaller spread is the more consistent one."
+    "title": "The Head Teacher's Eye: Location vs Spread in Context",
+    "content": "When comparing two distributions, always address both location and spread in context: state the median (average speed) and the IQR (consistency). A lower IQR indicates greater reliability and predictability."
   }
 },
 {
