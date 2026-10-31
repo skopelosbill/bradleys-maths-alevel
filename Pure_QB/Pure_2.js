@@ -889,7 +889,7 @@ window.ALEVEL_QUESTIONS = [
       },
       {
         "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{1}{12} \\cr &\\textbf{(b) } y = \\dfrac{1}{12}x \\cr &\\textbf{(c) } 12x + y = 0 \\cr &\\textbf{(d) } \\dfrac{8 - 3\\sqrt{2}}{50} \\end{aligned}",
-        "feedback": "Check the difference of two squares in Part (d): $(8 + 3\\sqrt{2})(8 - 3\\sqrt{2}) = 8^2 - (3\\sqrt{2})^2 = 64 - 18 = 46$. Subtracting $14$ instead of $18$ gives an incorrect denominator of $50$."
+        "feedback": "Check the difference of two squares in Part (d): $$(8 + 3\\sqrt{2})(8 - 3\\sqrt{2})$$ $$ = 8^2 - (3\\sqrt{2})^2$$ $$ = 64 - 18 = 46$$ Subtracting $14$ instead of $18$ gives an incorrect denominator of $50$."
       }
     ],
     "bradley_insight": {
