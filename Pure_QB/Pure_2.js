@@ -747,7 +747,7 @@ window.ALEVEL_QUESTIONS = [
     "<strong>Part (c): Expressing derivative in terms of $x$</strong><br><br>Recall the derivative from Part (a):\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{1}{6\\sec^2 3y} \\end{aligned}Use the Pythagorean identity $\\sec^2 3y = 1 + \\tan^2 3y$:\\begin{aligned} \\sec^2 3y &= 1 + \\tan^2 3y \\end{aligned}",
     "From the curve equation, $\\tan 3y = \\dfrac{x}{2}$. Substitute this in:\\begin{aligned} \\sec^2 3y &= 1 + \\left(\\dfrac{x}{2}\\right)^2 \\cr &= 1 + \\dfrac{x^2}{4} \\cr &= \\dfrac{4 + x^2}{4} \\end{aligned}",
     "Substitute $\\sec^2 3y$ into the derivative:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{1}{6\\left(\\dfrac{4 + x^2}{4}\\right)} \\cr &= \\dfrac{4}{6(4 + x^2)} \\cr &= \\dfrac{2}{3(4 + x^2)} \\cr &= \\dfrac{2}{12 + 3x^2} \\end{aligned}Comparing with $\\dfrac{a}{b + cx^2}$ gives $a = 2$, $b = 12$, and $c = 3$.",
-    "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } \\dfrac{1}{6} \\cr &\\textbf{(b)(i) } y \\approx \\dfrac{1}{6}x \\cr &\\textbf{(b)(ii) } \\text{Linear approximation gradient equals} \\cr &\\quad \\text{exact derivative at the origin} \\cr &\\textbf{(c) } a = 2, \\, b = 12, \\, c = 3 \\end{aligned}"
+        "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } \\dfrac{1}{6} \\cr &\\textbf{(b)(i) } y \\approx \\dfrac{1}{6}x \\cr &\\textbf{(b)(ii) } \\text{Linear approximation} \\cr &\\quad \\text{ gradient equals exact derivative \\cr &\\quad \\text{at the origin} \\cr &\\textbf{(c) } a = 2, \\, b = 12, \\, c = 3 \\end{aligned}"
   ],
   "pi_options": [
     {
